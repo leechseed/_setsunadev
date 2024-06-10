@@ -1,0 +1,3 @@
+
+**Section 7: Economy and Resources**
+- **How do scarcity and abundance of resources shape societies and conflicts?** (Rationale: Economic factors are powerful drivers of interaction, conflict, and exploration, influencing the plot and character motivations.)

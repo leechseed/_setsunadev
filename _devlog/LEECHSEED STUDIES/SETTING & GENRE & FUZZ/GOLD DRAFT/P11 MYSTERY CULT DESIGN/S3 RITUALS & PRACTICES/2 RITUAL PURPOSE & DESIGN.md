@@ -1,0 +1,1 @@
+- **Ritual Purpose & Design:** Explain the significance of each ritual or practice in reinforcing the cult's beliefs, bonding members together, or achieving their goals. (Rationale: Giving rituals a clear purpose ensures they contribute meaningfully to the cult's culture and objectives, deepening the world's complexity.)

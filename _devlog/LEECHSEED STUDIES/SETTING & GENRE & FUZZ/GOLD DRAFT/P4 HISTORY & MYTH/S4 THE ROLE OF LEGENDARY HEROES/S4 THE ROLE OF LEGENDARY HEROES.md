@@ -1,0 +1,3 @@
+
+**SECTION 4: The Role of Legendary Heroes**
+- **Who are the legendary figures in your world, and how do they influence current events?** Detail the deeds and misdeeds of these figures, exploring how their legacies live on through stories, cultural practices, or even magical legacies. (Rationale: This direction encourages authors to create characters whose historical actions continue to ripple through time, affecting current events and cultural perceptions. These legendary figures can serve as the basis for quests, conflicts, or moral lessons within the narrative.)

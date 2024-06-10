@@ -1,0 +1,2 @@
+**SECTION 6: Navigating Challenges & Limitations**
+- **Address Creative Limitations:** Recognize the creative challenges posed by licensing restrictions and use them as an opportunity to innovate within the bounds of the agreement. This approach can lead to unique and unexpected storytelling paths. (Rationale: The constraints of a license can serve as a catalyst for creativity, pushing creators to explore new narrative techniques and ideas that respect the universe's parameters.)

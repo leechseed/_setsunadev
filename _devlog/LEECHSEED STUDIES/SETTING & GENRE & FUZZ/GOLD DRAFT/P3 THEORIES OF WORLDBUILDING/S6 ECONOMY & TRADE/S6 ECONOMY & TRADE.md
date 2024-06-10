@@ -1,0 +1,3 @@
+
+**SECTION 6: Economy and Trade**
+- **Describe the economic foundation of your initial setting.** Discuss the critical resources, trade practices, and economic challenges facing your society, and how these shape the lives of its inhabitants. (Rationale: This question underlines the economic drivers and challenges within your world. A well-thought-out economic foundation is crucial for creating a believable world where the motivations of societies and individuals are influenced by economic realities, offering a backdrop for conflict and cooperation.)

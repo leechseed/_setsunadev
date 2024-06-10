@@ -1,0 +1,2 @@
+**SECTION 2 The World**
+- **Geography and Environment**: Detail the landscapes, climate zones, and natural landmarks that define the physical setting of your world. (Rationale: The geography and environment not only form the backdrop for storytelling but also fundamentally influence the cultures, lifestyles, and narratives that develop within the world, making it a key component of worldbuilding.)

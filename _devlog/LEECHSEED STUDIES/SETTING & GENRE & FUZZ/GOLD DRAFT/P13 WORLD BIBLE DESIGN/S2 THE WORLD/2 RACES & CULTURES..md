@@ -1,0 +1,1 @@
+- **Races & Cultures**: Describe the various races or cultures, their languages, customs, governance, and beliefs. (Rationale: Outlining the diversity within your world enriches the narrative with complex social dynamics, conflicts, and alliances, offering a wide range of perspectives and character experiences.)

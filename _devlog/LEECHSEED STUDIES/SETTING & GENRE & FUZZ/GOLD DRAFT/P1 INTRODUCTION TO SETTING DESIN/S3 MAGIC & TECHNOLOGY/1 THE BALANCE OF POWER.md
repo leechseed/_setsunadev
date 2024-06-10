@@ -1,0 +1,2 @@
+>**Section 3: Magic and Technology**
+>- **How do magic or technological advancements affect the balance of power in your world?** (Rationale: The distribution and control of power are central to world dynamics, influencing societal hierarchies and conflicts.)

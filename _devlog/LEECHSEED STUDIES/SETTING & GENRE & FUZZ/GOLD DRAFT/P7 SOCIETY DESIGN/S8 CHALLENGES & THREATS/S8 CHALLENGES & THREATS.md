@@ -1,0 +1,3 @@
+
+**SECTION 8: Challenges & Threats**
+- **What internal and external challenges does your society face?** Consider the social, political, economic, and environmental threats to stability. (Rationale: Identifying the challenges and threats confronting a society sets the stage for central or background conflicts, offering narrative tension and obstacles for characters to overcome. It serves as a catalyst for change, growth, and the testing of characters' resolve and ingenuity.)

@@ -1,0 +1,1 @@
+- **Economy & Currency**: Elaborate on the economic structures, key resources, trade mechanisms, and types of currency. (Rationale: The economy influences the daily lives of characters, the stakes in various conflicts, and the motivations behind alliances and rivalries, serving as a driving force in both plot development and character behavior.)

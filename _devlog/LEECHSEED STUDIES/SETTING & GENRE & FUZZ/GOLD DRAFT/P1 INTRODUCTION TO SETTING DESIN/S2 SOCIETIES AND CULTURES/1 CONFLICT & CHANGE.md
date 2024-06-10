@@ -1,0 +1,2 @@
+>**Section 2: Societies and Cultures**
+>- **How do the inhabitants of your world deal with conflict and change?** (Rationale: Understanding societal reactions to conflict and change can deepen the world's complexity and realism.)

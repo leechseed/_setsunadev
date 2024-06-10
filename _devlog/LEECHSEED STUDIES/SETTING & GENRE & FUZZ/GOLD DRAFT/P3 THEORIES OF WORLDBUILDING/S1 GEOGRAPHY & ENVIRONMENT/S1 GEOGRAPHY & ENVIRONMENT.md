@@ -1,0 +1,3 @@
+
+**SECTION 1: Geography and Environment**
+- **Start with a focal point in your world.** Identify the initial setting that anchors your narrative or gameplay, such as a bustling city, a secluded village, or an enchanted forest. This specific location serves as the narrative seed from which your world's geography and environmental storytelling will grow. (Rationale: This approach helps ground your narrative in a tangible place, allowing for organic expansion. It ensures that readers or players have a clear starting point to engage with your world, making the subsequent exploration of your setting more meaningful and coherent.)

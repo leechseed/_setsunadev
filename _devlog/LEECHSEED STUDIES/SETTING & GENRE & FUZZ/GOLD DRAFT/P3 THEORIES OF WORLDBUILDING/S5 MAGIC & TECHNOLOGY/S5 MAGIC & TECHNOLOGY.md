@@ -1,0 +1,3 @@
+
+**SECTION 5: Magic and Technology**
+- **Detail the role of magic or technology in your focal point.** Explore how these elements influence everyday life, governance, and cultural practices, setting the stage for their broader implications across your world. (Rationale: This sets the stage for its influence on the world. Establishing the significance of magic or technology early on ensures that its presence is integral to the world's identity, influencing societal development, conflict, and the characters' interactions with their environment.)

@@ -1,0 +1,2 @@
+**SECTION 6: Conflicts & Challenges**
+- **Cult Challenges:** Identify both internal and external obstacles the cult faces, such as dissent within the ranks, resource limitations, or opposition from society and other power structures. (Rationale: These challenges introduce complexity and drama, providing characters with obstacles to overcome and driving the story forward.)

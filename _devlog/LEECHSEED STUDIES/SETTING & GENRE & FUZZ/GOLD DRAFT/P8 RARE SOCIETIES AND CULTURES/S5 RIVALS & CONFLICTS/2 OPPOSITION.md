@@ -1,0 +1,1 @@
+- **How does the guild manage opposition or threats?** Discuss strategies, alliances, or defenses employed by the guild. (Rationale: The guild's response to threats reveals its strategic mindset, resourcefulness, and ethical boundaries. This not only propels the narrative through conflicts and resolutions but also deepens the world's political and social complexities.)

@@ -1,0 +1,3 @@
+
+**SECTION 2: Cultural Identity**
+- **What are the defining cultural practices of your society?** Explore traditions, rituals, languages, and beliefs that are unique to your society. (Rationale: Articulating the cultural practices provides characters with a rich, immersive background, influencing their behaviors, beliefs, and interactions. It adds depth to the world, enabling diverse storytelling opportunities through the exploration of cultural conflicts, identity crises, and the celebration of heritage.)

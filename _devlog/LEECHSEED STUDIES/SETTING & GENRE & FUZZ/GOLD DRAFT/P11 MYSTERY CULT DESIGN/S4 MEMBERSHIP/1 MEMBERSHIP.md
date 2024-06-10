@@ -1,0 +1,2 @@
+**SECTION 4: Membership**
+- **Criteria for Joining:** Detail the requirements for initiation into the cult, which might include specific tasks, demonstrations of loyalty, or personal sacrifices. (Rationale: The initiation process can reflect the cult's values and seriousness, affecting its exclusivity and cohesion.)

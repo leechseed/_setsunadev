@@ -1,0 +1,1 @@
+- **A: Timelines and Histories**: Construct a detailed timeline of significant historical events, cultural shifts, and eras. (Rationale: A chronological account provides context for current events, influences character backstories, and adds depth to the world, allowing for a richer narrative fabric.)

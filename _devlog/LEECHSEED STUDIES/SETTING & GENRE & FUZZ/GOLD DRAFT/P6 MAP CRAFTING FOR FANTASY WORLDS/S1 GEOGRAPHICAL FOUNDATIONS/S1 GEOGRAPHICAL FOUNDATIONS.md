@@ -1,0 +1,3 @@
+
+**SECTION 1: Geographical Foundations**
+- **Outline the major geographical features of your world.** Describe landscapes such as mountains, rivers, and oceans to establish the world's physical context. (Rationale: Identifying these features not only sets the physical stage for your narrative but also directly influences the layout of nations, cultures, and the potential for conflict or cooperation between them. It grounds your world in a sense of realism and dictates the natural barriers and pathways for movement and exploration.)

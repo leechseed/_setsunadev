@@ -1,0 +1,1 @@
+- **Set Clear Boundaries:** Establish limits on what will be explored, such as specific geographic areas, historical periods, or aspects of culture and technology, to maintain a focused approach in your worldbuilding. (Rationale: Prevents the world from becoming overloaded with unnecessary details, ensuring clarity and coherence for the audience.)

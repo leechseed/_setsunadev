@@ -1,0 +1,2 @@
+**SECTION 7: Professionalism in Licensed Worldbuilding**
+- **Advocating for Your Vision:** Present and defend your creative proposals effectively, while being mindful of the licensor's authority and vision for the universe. A balanced approach can lead to more impactful and harmonious contributions. (Rationale: Skillful advocacy for creative ideas, coupled with respect for the licensor's decisions, enhances the likelihood of approval and ensures that contributions are both meaningful and aligned with the universe's ethos.)

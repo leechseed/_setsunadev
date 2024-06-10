@@ -1,0 +1,1 @@
+- **Narrative Opportunities:** Explore how the cult's goals, practices, and challenges can create opportunities for engaging storylines, character arcs, and worldbuilding depth. (Rationale: Leveraging the cult's dynamics for narrative purposes enriches the storytelling, offering a wealth of plots and themes to explore.)

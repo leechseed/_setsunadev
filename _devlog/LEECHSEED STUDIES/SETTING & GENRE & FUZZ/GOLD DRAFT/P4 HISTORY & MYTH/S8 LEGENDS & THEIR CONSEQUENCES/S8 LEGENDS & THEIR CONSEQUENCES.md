@@ -1,0 +1,3 @@
+
+**SECTION 8: Legends & Their Consequences**
+- **What are the consequences of disturbing ancient sites or artifacts?** Explore the potential repercussions of such actions, ranging from awakening ancient evils to triggering political upheaval or environmental disasters. (Rationale: This adds a layer of caution and consequence to the exploration and interaction with the ancient world, challenging characters to weigh the risks and rewards of delving into the past. It serves as a narrative device to introduce tension, conflict, and moral dilemmas into the story.)

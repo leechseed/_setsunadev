@@ -1,0 +1,3 @@
+
+**SECTION 2: Religious Diversity & Sects**
+- **Are there multiple sects or interpretations within the main religion?** Yes, the Path of the Eternal Light encompasses several sects, each with its interpretation of the sacred texts and emphasis on different aspects of the sun's power. The most notable sects include the Dawnbringers, who focus on the sun's role in enlightenment, and the Duskwardens, who interpret the sunset as a time for reflection and penance. (Rationale: Diverse sects and interpretations within a single religion introduce rich opportunities for internal conflict, power struggles, and personal dilemmas. These divisions can drive significant plotlines, influence character motivations, and provide a nuanced exploration of faith and belief.)

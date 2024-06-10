@@ -1,0 +1,3 @@
+
+**SECTION 1: Foundations of Ruin**
+- **Identify a fallen civilization in your world.** What was the cause of its downfall? Exploring the downfall provides a historical context that enriches the world's backstory, offering narratives of warning or inspiration drawn from the civilization's fate. (Rationale: Delving into a civilization's downfall encourages authors to consider complex historical factors such as environmental catastrophes, societal decay, or war. This background creates a rich narrative soil from which current stories grow, offering a historical lens through which characters and readers understand the world.)

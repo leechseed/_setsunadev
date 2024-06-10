@@ -1,0 +1,3 @@
+
+**SECTION 7: Incorporating Real-World Inspirations**
+- **How can real-world historical events inspire the events in your world?** Look at how parallels with real history can provide a foundation of realism and relatability, while also allowing for creative adaptation and the exploration of "what if" scenarios. (Rationale: This encourages authors to draw on the rich tapestry of real-world history to inform their worldbuilding, providing a sense of realism and depth while offering the flexibility to adapt and reimagine historical outcomes in a fantasy setting.)

@@ -1,0 +1,3 @@
+
+**SECTION 5: Map as a Storytelling Tool**
+- **How does your map convey history and conflict?** Use geographical scars, borders, and landmarks to hint at past wars, migrations, or events. (Rationale: A map can serve as a visual narrative, telling stories of ancient conflicts, cultural shifts, and historical legacies through its features. It enriches the backstory and sets the stage for current and future conflicts, guiding readers or players through the world's history and its impact on the present.)

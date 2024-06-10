@@ -1,0 +1,3 @@
+
+**SECTION 1: Societal Basics**
+- **What is the basic unit of your society (tribe, city-state, nation, empire)?** Describe its structure and governance to set a foundational understanding of the society's organization and scale. (Rationale: Identifying the fundamental unit of society establishes a framework for the social, political, and economic interactions within your world. It helps to delineate the scope of governance, cultural cohesion, and the societal norms that characters navigate, laying the groundwork for complex societal dynamics and narrative development.)

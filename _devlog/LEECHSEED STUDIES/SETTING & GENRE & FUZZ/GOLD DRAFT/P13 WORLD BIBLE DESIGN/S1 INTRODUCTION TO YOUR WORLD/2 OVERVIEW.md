@@ -1,0 +1,1 @@
+- **Overview**: Offer a brief synopsis that highlights the world's unique aspects, central conflicts, and overarching themes, inviting readers into a distinct universe. (Rationale: This initial overview serves as a crucial entry point, summarizing the world's premise and what makes it stand out, thus setting expectations and drawing in the audience.)

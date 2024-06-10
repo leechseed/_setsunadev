@@ -1,0 +1,1 @@
+- **B: Cartography**: Include maps to visually depict the geography, political territories, and points of interest. (Rationale: Maps are not just navigational aids but also storytelling tools, offering insights into the world's layout, cultural divisions, and potential areas for adventure and conflict.)

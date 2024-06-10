@@ -1,0 +1,2 @@
+**SECTION 3: Rituals & Practices**
+- **Outline Secret Rituals:** Develop unique ceremonies, rituals, or practices that are central to the cult's activities. These could involve specific rites of passage, sacrificial ceremonies, or esoteric practices unknown to outsiders. (Rationale: Secretive or distinctive rituals add an element of mystery and intrigue to the cult, enriching the world with unique cultural practices.)

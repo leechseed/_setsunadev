@@ -1,0 +1,3 @@
+
+**SECTION 6: Cultural Artifacts & Relics**
+- **What artifacts from past civilizations or legendary figures are still significant?** Examine the origins, powers, and roles of these artifacts in the current setting, considering how they influence power dynamics, cultural values, or quests. (Rationale: This discussion helps authors create plot hooks and objectives deeply embedded in the world's history, offering tangible links to the past that characters can discover, utilize, or fight over, thereby driving the narrative forward.)

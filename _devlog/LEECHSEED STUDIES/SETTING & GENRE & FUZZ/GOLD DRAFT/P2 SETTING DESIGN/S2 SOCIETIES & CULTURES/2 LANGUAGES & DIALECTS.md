@@ -1,0 +1,2 @@
+
+- **How do languages and dialects vary across your world?** Consider the historical and cultural influences on language development. (Rationale: Language diversity reflects the historical migrations, cultural exchanges, and social stratification within a world, offering insight into its complexities.)

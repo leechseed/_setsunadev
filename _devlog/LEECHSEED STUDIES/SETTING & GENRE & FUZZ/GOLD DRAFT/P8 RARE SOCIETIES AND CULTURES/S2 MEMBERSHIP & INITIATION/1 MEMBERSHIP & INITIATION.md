@@ -1,0 +1,3 @@
+
+**SECTION 2: Membership & Initiation**
+- **What are the criteria for membership?** Detail the requirements and qualities sought in potential members. (Rationale: The membership criteria reflect the guild's values and culture, setting a benchmark for characters' aspirations or conflicts. This aspect influences plot development by presenting challenges for characters seeking to join, thereby driving personal growth and narrative tension.)

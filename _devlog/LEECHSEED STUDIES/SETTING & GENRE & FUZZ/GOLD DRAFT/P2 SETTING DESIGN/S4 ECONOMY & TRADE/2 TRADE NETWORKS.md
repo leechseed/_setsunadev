@@ -1,0 +1,2 @@
+
+- **Describe the trade networks and economic interactions.** How do these networks influence political and social relationships? (Rationale: Trade networks facilitate economic interdependence and cultural exchange but can also lead to conflicts and rivalries, revealing the interconnectedness of different regions and societies.)

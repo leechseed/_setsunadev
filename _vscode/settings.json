@@ -1,0 +1,62 @@
+{
+    "journal.base": "H:\\My Google Drive\\.OBSIDIAN VAULT\\.DevLog\\.devlog.entries\\.entries",
+    "journal.dev": false,
+    "journal.templates": [
+        {
+            "name": "memo",
+            "template": "- MEMO ${localTime}: ${input}"
+        },
+        {
+            "name": "entry",
+            "template": "# ${d:dddd, DD MMMM YYYY} - ${localTime}\n Mood -\n Weather -\n Girl -\n\n ## LET ME TELL YOU SOMETHING \n\n ## PRE-MEAL \n\n### FROM YESTERDAY'S POST\n\n ## NOTES\n\n # stimmy",
+            "after": "## NOTES"
+        },
+        {
+            "name": "time",
+            "template": "${localTime}"
+        },
+        {
+            "name": "notes",
+            "template": "# ${input}\n\n${tags}\n"
+        },
+        {
+            "name": "files",
+            "template": "- NOTE: [${title}](${link})",
+            "after": "## Notes"
+        },
+        {
+            "name": "weekly",
+            "template": "# Week ${week}\n\n"
+        },
+        {
+            "name": "pre.meal",
+            "template": "# Pre-Meal (created: ${localDate}, ${localTime})\n\n",
+            "after": "## Pre-Meal"
+        },
+        {
+            "name": "content.draft",
+            "template": "# ${input}\ncontent.draft\n(created: ${localDate}, ${localTime})\n\n",
+            "scope": "${scope}"
+        }
+    ],
+    "journal.patterns": {
+
+        "notes": {
+            "path": "${base}/.notes",
+            "file": "${day}${month}${year}.${localTime}.${input}.${ext}"
+        },
+        "entries": {
+            "path": "${base}/.entries",
+            "file": "${day}${month}${year}.journal.${ext}"
+        },
+        "weeks": {
+            "path": "${base}/${year}",
+            "file": "week_${week}.${ext}"
+        },
+        "content.draft": {
+            "path": "${base}/.content.draft",
+            "file": "week_${week}.${ext}"
+        }
+    },
+    "files.autoSave": "onFocusChange"
+}
