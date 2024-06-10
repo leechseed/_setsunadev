@@ -1,0 +1,53 @@
+{
+    "journal.base": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_devlog\\.devlog.entries\\.entries\\.entries",
+    "journal.dev": false,
+    "journal.locale": "en-US",
+    "journal.patterns": {
+      "notes": {
+        "path": "${base}/${day}/${month}/${year}",
+        "file": "${input}.${ext}"
+      },
+      "entries": {
+        "path": "${base}/${day}/${month}/${year}",
+        "file": "${day}.${ext}"
+      },
+      "weeks": {
+        "path": "${base}/${day}/${month}/${year}",
+        "file": "week_${week}.${ext}"
+      }
+    },
+    "journal.templates": [
+      {
+        "name": "memo",
+        "template": "- MEMO ${localTime}: ${input}"
+      },
+      {
+        "name": "task",
+        "template": "- [] ${d:DD MMMM YYYY} - Task: ${input}",
+        "after": "## Tasks"
+      },
+      {
+        "name": "entry",
+        "template": "# ${d:dddd, DD MMMM YYYY} - ${localTime}\n Mood -\n Weather -\n Girl -\n\n ## LET ME TELL YOU SOMETHING \n\n ## PRE-MEAL \n\n### FROM YESTERDAY'S POST\n\n ## NOTES\n\n #stimmy",
+        "after": "## NOTES"
+      },
+      {
+        "name": "time",
+        "template": "${localTime}"
+      },
+      {
+        "name": "note",
+        "template": "# ${input}\n\n${tags}\n"
+      },
+      {
+        "name": "files",
+        "template": "- NOTE: [${title}](${link})",
+        "after": "## Notes"
+      },
+      {
+        "name": "weekly",
+        "template": "# Week ${week}\n\n"
+      }
+    ]
+  }
+  
