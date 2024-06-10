@@ -1,0 +1,2 @@
+
+- **How is magic or technology integrated into everyday life and warfare?** Consider both the benefits and potential challenges. (Rationale: The integration of magic or technology into daily activities and military strategies adds depth to the worldbuilding, driving plot development and character growth.)

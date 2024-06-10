@@ -1,0 +1,1 @@
+- **External Relations:** Define how the cult interacts with the wider society, including any alliances, enemies, or neutral parties. Consider how it conceals its activities or engages in public relations. (Rationale: The cult's external relationships shape its strategies and influence how it is perceived and can operate within the world, impacting the narrative.)

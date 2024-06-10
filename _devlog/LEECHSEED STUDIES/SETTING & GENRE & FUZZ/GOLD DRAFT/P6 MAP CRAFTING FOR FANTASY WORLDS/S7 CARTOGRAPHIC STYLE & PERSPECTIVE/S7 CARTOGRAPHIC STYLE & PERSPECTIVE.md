@@ -1,0 +1,3 @@
+
+**SECTION 7: Cartographic Style & Perspective**
+- **Decide on the style and detail level of your map.** Choose a presentation that enhances the world's lore and atmosphere. (Rationale: The cartographic style and level of detail you choose can significantly affect the atmosphere and immersion of your world. Whether opting for an ancient, hand-drawn map or a detailed, topographical overview, the style reflects the world's technological or magical sophis

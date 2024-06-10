@@ -1,0 +1,3 @@
+
+**SECTION 4: History & Lore**
+- **Craft a key historical event that shaped your initial setting.** Delve into an event that has left a lasting impact on the current state of your world, influencing its culture, politics, and societal norms. (Rationale: This event should have a tangible impact on the current state of your world, offering depth and backstory. It acts as a pivotal point around which the historical and cultural identity of your world can be explored, enriching the narrative with a sense of time and evolution.)

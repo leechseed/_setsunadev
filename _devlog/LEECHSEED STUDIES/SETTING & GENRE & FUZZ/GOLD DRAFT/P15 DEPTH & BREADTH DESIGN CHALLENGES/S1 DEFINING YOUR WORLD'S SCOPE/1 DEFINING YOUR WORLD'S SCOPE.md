@@ -1,0 +1,3 @@
+
+**SECTION 1: Defining Your World's Scope**
+- **Identify the Core Themes and Elements:** Pinpoint the essential themes, such as freedom vs. control, the nature of power, or the exploration of diversity, that will drive the world's narrative and design. This helps in creating a cohesive and immersive experience. (Rationale: Establishes the thematic and narrative direction, ensuring a unified and engaging world that resonates with audiences.)

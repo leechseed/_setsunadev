@@ -1,0 +1,3 @@
+
+**SECTION 3: Cities, Towns, & Roads**
+- **Identify the locations of major cities.** Consider their strategic importance, such as access to trade routes or natural defenses. (Rationale: The placement of cities, towns, and the roads connecting them forms the backbone of your world's infrastructure. Strategic factors in their locations reveal much about the society's priorities, historical migrations, and economic centers, influencing character journeys and the flow of goods and information.)

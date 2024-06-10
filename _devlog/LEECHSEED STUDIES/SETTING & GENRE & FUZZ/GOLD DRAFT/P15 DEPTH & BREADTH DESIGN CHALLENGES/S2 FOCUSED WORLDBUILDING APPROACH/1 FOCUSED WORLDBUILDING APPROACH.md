@@ -1,0 +1,2 @@
+**SECTION 2: Focused Worldbuilding Approach**
+- **Choose Your World's Key Features:** Select a handful of aspects, like a unique magic system, a set of diverse cultures, or groundbreaking technologies, to develop in detail. This allows for the creation of a world that feels lived-in and real. (Rationale: Concentrating on a few key features allows for a deeper exploration of each, enhancing the world's richness and believability through detailed development.)

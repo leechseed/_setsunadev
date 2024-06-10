@@ -1,0 +1,3 @@
+
+**SECTION 1: Foundations of Faith**
+- **What is the dominant belief system in your world?** The dominant belief system, known as the Path of the Eternal Light, is a monotheistic religion that venerates the Sun as the ultimate source of life and truth. Followers believe in living a life that mirrors the sun's journey, emphasizing rebirth, growth, and enlightenment. (Rationale: Establishing the primary religion sets the foundational beliefs and moral compass that govern societal norms, cultural rituals, and potentially, the legal system. It influences every aspect of daily life, from individual behaviors to collective societal actions, shaping the overall culture and societal tensions.)

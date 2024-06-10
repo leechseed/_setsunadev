@@ -1,0 +1,3 @@
+
+**SECTION 2: Nations & Cultures**
+- **Define the borders of your world's nations.** Determine how geographical features and natural resources dictate these boundaries. (Rationale: The delineation of national borders based on geography and resources shapes the political landscape of your world. It impacts the dynamics between neighboring nations, including trade relationships, cultural exchanges, and potential conflicts, thereby adding complexity to the socio-political fabric of your world.)

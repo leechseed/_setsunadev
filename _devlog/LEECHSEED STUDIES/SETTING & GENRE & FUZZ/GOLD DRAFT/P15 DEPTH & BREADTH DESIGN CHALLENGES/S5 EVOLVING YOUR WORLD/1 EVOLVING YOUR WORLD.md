@@ -1,0 +1,2 @@
+**SECTION 5: Evolving Your World**
+- **Managing World Updates and Expansions:** Plan for incremental additions that align with the world's core themes and narrative arcs, ensuring that each update enriches the world without diluting its essence. (Rationale: Allows the world to develop in a way that remains true to its core themes, avoiding dilution of its unique aspects.)

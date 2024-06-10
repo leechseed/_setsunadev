@@ -1,0 +1,2 @@
+**SECTION 2: Cult Goals**
+- **Define the Cult's Objectives:** Specify what the cult aims to achieve, such as societal change, the awakening of an ancient power, or enlightenment of its members. Goals can range from world domination to complete seclusion from society. (Rationale: Clearly defined objectives dictate the cult's actions and strategies, affecting its interactions with the world and driving the narrative forward.)

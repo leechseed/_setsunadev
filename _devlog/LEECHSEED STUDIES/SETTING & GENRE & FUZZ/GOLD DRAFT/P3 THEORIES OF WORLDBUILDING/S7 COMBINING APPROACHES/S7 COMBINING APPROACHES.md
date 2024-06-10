@@ -1,0 +1,3 @@
+
+**SECTION 7: Combining Approaches**
+- **Reflect on how combining inside out and outside in approaches can enrich your worldbuilding.** Consider the benefits of starting with a detailed exploration of local settings before expanding to broader world dynamics, and vice versa. (Rationale: Consider starting with detailed local settings and expanding to a broader scope, or vice versa. This mixed approach ensures flexibility and depth in developing a rich, interconnected world, allowing authors to create a comprehensive setting that feels authentic and engaging from every angle.)

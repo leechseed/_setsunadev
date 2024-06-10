@@ -1,0 +1,3 @@
+
+**SECTION 3: Governance & Politics**
+- **What is the governance structure in your focal area?** Describe the political system, its leaders, and any existing factions or political conflicts. This will reveal the power dynamics and governance challenges within your initial setting. (Rationale: This provides insight into the power dynamics at play. Understanding these dynamics is essential for constructing believable conflicts and alliances, shaping the motivations and obstacles that characters face within your world.)

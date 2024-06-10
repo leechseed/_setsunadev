@@ -1,0 +1,2 @@
+**SECTION 3: Avoiding Overcomplexity**
+- **Strategies to Prevent Feature Creep:** Develop a structured outline or a set of guidelines for worldbuilding that limits the addition of new features unless they fulfill a specific narrative or thematic need. (Rationale: Maintains narrative clarity and prevents the world from becoming confusing or unwieldy for both the creator and the audience, ensuring a focused development process.)

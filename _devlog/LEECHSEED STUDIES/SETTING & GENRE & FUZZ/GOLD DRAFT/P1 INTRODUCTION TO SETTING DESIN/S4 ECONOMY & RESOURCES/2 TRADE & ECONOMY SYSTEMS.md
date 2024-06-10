@@ -1,0 +1,1 @@
+>- **Describe the trade systems and economic relationships between different regions or societies.** (Rationale: Trade systems and economic relationships can reveal the interconnectedness of the world, highlighting potential conflicts and alliances.)

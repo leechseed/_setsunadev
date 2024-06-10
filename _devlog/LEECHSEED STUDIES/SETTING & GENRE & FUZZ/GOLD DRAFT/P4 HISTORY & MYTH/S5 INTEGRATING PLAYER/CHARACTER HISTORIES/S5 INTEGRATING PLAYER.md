@@ -1,0 +1,3 @@
+
+**SECTION 5: Integrating Player/Character Histories**
+- **How can characters’ personal histories be intertwined with world history?** Discuss how characters' ancestries, past actions, or affiliations with historical events or figures significantly impact their roles in the current world. (Rationale: This aims to make characters feel integral to the world, fostering deeper connections and a sense of belonging or conflict with the setting. It enriches character development by tying personal stories to larger historical narratives and societal currents.)

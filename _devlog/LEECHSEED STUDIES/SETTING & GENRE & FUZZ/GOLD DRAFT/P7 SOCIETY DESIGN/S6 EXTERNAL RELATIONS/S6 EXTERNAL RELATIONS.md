@@ -1,0 +1,3 @@
+
+**SECTION 6: External Relations**
+- **What is your society's relationship with neighboring entities?** Outline the nature of diplomatic, economic, and military interactions with other societies. (Rationale: The external relationships of a society shape its foreign policy, economic dependencies, and security strategies. These interactions provide a rich context for narratives involving diplomacy, war, trade disputes, and cultural exchanges, influencing characters' perceptions and engagements with the broader world.)

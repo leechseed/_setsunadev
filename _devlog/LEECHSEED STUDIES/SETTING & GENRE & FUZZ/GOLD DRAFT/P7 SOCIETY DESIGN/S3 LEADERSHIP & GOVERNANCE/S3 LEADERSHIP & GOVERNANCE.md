@@ -1,0 +1,3 @@
+
+**SECTION 3: Leadership & Governance**
+- **How is leadership established and maintained within your society?** Examine the systems of power, methods of leader selection, and governance models. (Rationale: Understanding the mechanisms behind leadership and governance offers insights into potential sources of conflict, societal stability, or upheaval. It creates a backdrop for political intrigue, power struggles, and personal ambitions, affecting characters' alliances and oppositions.)

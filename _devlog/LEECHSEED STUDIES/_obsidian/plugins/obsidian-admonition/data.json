@@ -1,0 +1,122 @@
+{
+  "userAdmonitions": {
+    "yellow": {
+      "type": "yellow",
+      "color": "239, 243, 27",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "violet": {
+      "type": "violet",
+      "color": "255, 36, 226",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "red": {
+      "type": "red",
+      "color": "253, 28, 28",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "indigo": {
+      "type": "indigo",
+      "color": "145, 51, 240",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "blue": {
+      "type": "blue",
+      "color": "104, 154, 253",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "teal": {
+      "type": "teal",
+      "color": "20, 194, 191",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "orange": {
+      "type": "orange",
+      "color": "249, 131, 52",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "green": {
+      "type": "green",
+      "color": "28, 253, 54",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "10.1.1",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "icons": [],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.e16453"
+}

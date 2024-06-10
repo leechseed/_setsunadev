@@ -1,0 +1,2 @@
+**SECTION 3: Licensing Dynamics**
+- **Familiarize Yourself with Licensing Terms:** Understand the specific legal and creative boundaries set by the licensing agreement, including what is permissible in terms of character development, story arcs, and world expansion. (Rationale: Understanding the legal framework is essential for creating content that respects contractual limitations and identifies creative freedoms, ensuring compliance and fostering innovation within defined parameters.)

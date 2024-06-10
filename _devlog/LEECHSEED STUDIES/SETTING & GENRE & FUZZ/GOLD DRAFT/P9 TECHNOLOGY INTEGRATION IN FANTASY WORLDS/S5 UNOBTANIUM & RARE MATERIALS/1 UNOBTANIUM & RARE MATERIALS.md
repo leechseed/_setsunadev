@@ -1,0 +1,2 @@
+**SECTION 5: Unobtainium & Rare Materials**
+- **Identify any unique substances in your world.** Detail the extraordinary materials that exist within your world, discussing their properties, origins, and roles in society, technology, and magic. (Rationale: Discussing rare materials adds wonder and drives quests or conflicts, considering their properties and uses. The introduction of unique, powerful substances can serve as a focal point for quests, power struggles, and scientific or magical breakthroughs, enriching the world with elements of mystery and contention.)

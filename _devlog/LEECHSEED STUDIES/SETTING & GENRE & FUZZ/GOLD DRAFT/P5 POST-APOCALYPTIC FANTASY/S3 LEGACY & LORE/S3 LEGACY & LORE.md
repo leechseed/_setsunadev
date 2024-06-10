@@ -1,0 +1,3 @@
+
+**SECTION 3: Legacy & Lore**
+- **What myths or legends have emerged from past apocalypses?** These narratives might serve as cautionary tales, sources of hope, or explanations for the world's current state, deeply embedded in the cultural psyche. (Rationale: Myths and legends born from cataclysms serve as cultural memory, warning or inspiring societies. They provide a narrative framework for exploring themes of survival, renewal, and the cyclical nature of history, enriching the story's thematic depth.)

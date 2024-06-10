@@ -1,0 +1,1 @@
+- **Simplification without Sacrificing Depth:** Use archetypes, common cultural references, or simplified systems that are easy to understand while layering in complexity through storytelling, character development, or player discovery. (Rationale: Balances the need for an immersive, detailed world with the accessibility for newcomers and coherence for long-term fans.)

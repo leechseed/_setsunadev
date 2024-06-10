@@ -1,0 +1,3 @@
+
+**SECTION 1: Geography & Environmental History**
+- **How have the geographical features of your world been shaped by historical events?** Consider how natural disasters, wars, or magical events have permanently altered the landscape, serving as a testament to the world's history and affecting its future development. (Rationale: This encourages authors to weave a rich tapestry of history into the very geography of their world, creating a more immersive setting by linking geography and history. It allows for the exploration of how past events continue to influence present and future societal and environmental conditions.)

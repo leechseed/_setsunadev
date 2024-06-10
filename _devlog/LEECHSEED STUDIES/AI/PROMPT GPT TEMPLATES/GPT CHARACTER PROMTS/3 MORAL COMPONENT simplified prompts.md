@@ -1,0 +1,23 @@
+- As a type eight what type of core fear does Kali have? 
+- As a type eight, how does Kali's core fear manifest in her decision making? 
+- As a type eight, what is Kali's Poison?
+- How does Kali's poison manifest in her decision making?
+- As a type eight, what is Kali's desire?
+- How does Kali's desire manifest in her decision making?
+- As a type eight, what is Kali's distortion? 
+- How does Kali's distortion manifest in her decision making? 
+- What is Kali's de-evolution as a type eight? 
+- How does Kali's type eight de-evolution style manifest in her decision making?
+- As a type eight, what is Kali's low point?
+
+# Moral Blind Spot Process
+- State Kali's moral blind spot?
+- As a type 8, what would Kali have to believe about other people [their worldview] to justify acting badly in the world?
+- What would Kali, as a type 8 on the enneagram, have to believe [incorrectly] about themselves to justify that particular world view [view of people]? 
+- What is Kali's immoral effect? definition 'Immoral Effect: (The behavioral strategy the character uses to express the blind spot in action on the page.) How are they acting badly in the world, hurting others?
+- What Interrogative Verbs are conjugated by Kali's Immoral Effect?
+- What is Kali's Dynamic Moral Tension?
+- What will Kali learn about herself at the end of the story?” Reference her moral blind spot, immoral effect, and dynamic moral tension
+- What is Kali's speaking style?
+- What is Kali's conflict style?
+- What is Kali's Physical Description?

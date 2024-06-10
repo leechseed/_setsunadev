@@ -1,0 +1,2 @@
+**SECTION 3: The Cast**
+- **Key Characters**: Provide detailed profiles for principal characters, including their backgrounds, ambitions, and relationships. (Rationale: Fleshing out the characters with clear motivations and histories allows for deeper narrative engagement, driving the story forward and faci

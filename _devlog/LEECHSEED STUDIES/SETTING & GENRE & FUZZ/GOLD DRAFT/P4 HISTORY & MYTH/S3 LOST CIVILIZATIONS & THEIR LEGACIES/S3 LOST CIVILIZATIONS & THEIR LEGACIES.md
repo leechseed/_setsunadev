@@ -1,0 +1,3 @@
+
+**SECTION 3: Lost Civilizations & Their Legacies**
+- **Can you identify a lost civilization in your world, and what led to its downfall?** Explore the reasons behind the civilization's demise, such as environmental catastrophe, war, or societal collapse, and how its legacy continues to influence the world. (Rationale: This prompts authors to incorporate elements of mystery and exploration into their world, offering readers and characters alike the chance to uncover the past and its impact on the present. It allows for the exploration of themes like the cyclical nature of history and the lessons that might be learned from past societies.)

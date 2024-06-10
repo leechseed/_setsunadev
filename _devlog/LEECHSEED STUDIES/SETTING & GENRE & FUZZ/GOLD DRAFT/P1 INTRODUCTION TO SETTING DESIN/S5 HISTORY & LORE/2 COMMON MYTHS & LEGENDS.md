@@ -1,0 +1,1 @@
+>- **What is a commonly held myth or legend, and how does it influence the present?** (Rationale: Myths and legends can shape cultural identities and motivations, offering a rich layer of storytelling potential.)

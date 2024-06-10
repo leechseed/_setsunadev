@@ -1,0 +1,3 @@
+
+**SECTION 4: Accessibility & Engagement**
+- **Ensuring Accessibility for Newcomers:** Design the introduction to the world—whether through a story, game tutorial, or guidebook—in a manner that gradually unfolds the complexity of the world, allowing newcomers to easily grasp the basics while becoming intrigued by its depth. (Rationale: Makes the world welcoming to new readers or players, encouraging exploration and investment in the setting.)

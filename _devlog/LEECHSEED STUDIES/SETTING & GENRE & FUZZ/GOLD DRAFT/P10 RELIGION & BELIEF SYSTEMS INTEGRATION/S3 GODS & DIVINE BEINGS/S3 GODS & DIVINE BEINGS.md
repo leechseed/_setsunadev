@@ -1,0 +1,3 @@
+
+**SECTION 3: Gods & Divine Beings**
+- **For monotheistic or other systems, how is the divine presence manifested?** In the Path of the Eternal Light, the divine is manifested through the sun itself, considered a living deity. Prophets, known as Solar Oracles, receive visions in the light of dawn, and miraculous healings are attributed to sunlit waters. Sacred texts, believed to be divinely inspired, offer guidance and commandments. (Rationale: The manifestation of divine presence through prophets, miracles, or sacred texts defines the nature of the divine-human relationship. It shapes believers' behaviors, societal norms, and potentially, the plot itself, through divine interventions or the interpretation of sacred texts.)

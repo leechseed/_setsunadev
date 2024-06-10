@@ -1,0 +1,1 @@
+>- **What limitations exist for magic or technology, and how do characters overcome them?** (Rationale: Limitations introduce challenges and opportunities for creativity, driving plot development and character growth.)

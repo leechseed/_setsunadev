@@ -1,0 +1,2 @@
+- **Decision to Proceed or Withdraw:** Set clear criteria for evaluating whether the project aligns
+ with your creative goals and professional standards. This helps in making informed decisions about your level of involvement and commitment to the project. (Rationale: Understanding when to continue with or withdraw from a project is crucial for maintaining professional integrity and ensuring that contributions are fulfilling and in line with personal and creative objectives.)

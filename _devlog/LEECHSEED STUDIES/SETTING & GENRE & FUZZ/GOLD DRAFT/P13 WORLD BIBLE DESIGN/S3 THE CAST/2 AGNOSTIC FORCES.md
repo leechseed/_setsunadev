@@ -1,0 +1,1 @@
+- **Antagonistic Forces**: Detail the main adversaries, their origins, objectives, and methods. (Rationale: A compelling antagonist or opposing force introduces necessary conflict and tension, challenging the protagonists and enriching the story's complexity.)

@@ -1,0 +1,3 @@
+
+**SECTION 2: Societies & Cultures**
+- **Define the culture of your initial setting.** Examine its norms, values, traditions, and how these influence the behavior and beliefs of its inhabitants. This deep dive into a specific culture provides a textured understanding of its people and practices. (Rationale: Focusing on a specific culture allows for a deep, nuanced understanding of its people. It enriches the narrative with cultural depth, making the setting feel lived-in and real, which in turn facilitates more complex character development and social dynamics.)

@@ -1,0 +1,2 @@
+**SECTION 4: Creative Exploration within Limits**
+- **Identify Less Explored Aspects:** Look for areas within the universe that have not been fully developed or explored. Focusing on these can provide opportunities for creative expansion that adds to the universe without altering its core elements. (Rationale: Targeting underdeveloped areas of the universe offers room for creativity and innovation, allowing for expansion that enriches the narrative landscape without conflicting with primary storylines.)

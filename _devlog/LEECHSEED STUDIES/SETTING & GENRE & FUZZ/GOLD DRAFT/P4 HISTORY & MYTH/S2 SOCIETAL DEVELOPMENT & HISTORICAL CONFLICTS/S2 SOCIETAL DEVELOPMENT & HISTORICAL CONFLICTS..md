@@ -1,0 +1,3 @@
+
+**SECTION 2: Societal Development & Historical Conflicts**
+- **What major historical conflicts have shaped the societies in your world?** Reflect on the wars, revolutions, or major disputes that have defined cultural values, social structures, or alliances/enmities within your societies. (Rationale: This approach helps create a world where current tensions and alliances are deeply rooted in historical conflicts, enriching the narrative depth and providing characters with complex backgrounds and motivations shaped by their society's history.)

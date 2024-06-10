@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "d59975f957aebb7b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e13b68a79eb6599",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b37796267597f2ad",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5c28933d12d205fa",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "857120b7eb7547a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SETTING & GENRE & FUZZ/RESEARCH/INSPIRATIONS/REPOSITORY OF ART ASSETS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d7fa17bfb2a5f25",
+    "type": "split",
+    "children": [
+      {
+        "id": "f918b67af1471447",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76d300cf245e9b81",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "202cd9f9e780d818",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9d7ca0e01c646bb1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 380
+  },
+  "right": {
+    "id": "5c463fde51b9cd8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "683e735ef8807a3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30b71bab4d4cf458",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SETTING & GENRE & FUZZ/RESEARCH/INSPIRATIONS/REPOSITORY OF ART ASSETS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e4251ebdaf178c73",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SETTING & GENRE & FUZZ/RESEARCH/INSPIRATIONS/REPOSITORY OF ART ASSETS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "24535d5407e99bb3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bb118fda928d2f4d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SETTING & GENRE & FUZZ/RESEARCH/INSPIRATIONS/REPOSITORY OF ART ASSETS.md"
+              }
+            }
+          },
+          {
+            "id": "e662a1763f5e800e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "857120b7eb7547a1",
+  "lastOpenFiles": [
+    "Pasted image 20240302002019.png",
+    "Pasted image 20240302002012.png",
+    "Pasted image 20240302001949.png",
+    "Pasted image 20240302001935.png",
+    "Pasted image 20240302001928.png",
+    "Pasted image 20240302001920.png",
+    "Pasted image 20240302001909.png",
+    "Pasted image 20240302001900.png",
+    "Pasted image 20240302001846.png",
+    "Pasted image 20240302001827.png",
+    "Pasted image 20240302001751.png",
+    "SETTING & GENRE & FUZZ/RESEARCH/LITERATURE REVIEW/1ASBRIDGE.md",
+    "SETTING & GENRE & FUZZ/RESEARCH/INSPIRATIONS/REPOSITORY OF ART ASSETS.md",
+    "SETTING & GENRE & FUZZ/RESEARCH/INSPIRATIONS",
+    "SETTING & GENRE & FUZZ/WORKSHEET TEMPLATES/1 prompt.md",
+    "SETTING & GENRE & FUZZ/RESEARCH/LITERATURE REVIEW/1JONES.md",
+    "PROMPT GPT TEMPLATES/1 MORAL COMPONENT GPT PROMPTS.md",
+    "DIRECTORY README.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S5 HISTORY & LORE/1 HISTORY & LORE.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S1 GEOGRAPHY & ENVIRONMENT/1 LANDSCAPES.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S1 GEOGRAPHY & ENVIRONMENT/2 CLIMATIC ZONES.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S2 SOCIETIES & CULTURES/1 SOCIETIES & CULTURES.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S3 GOVERNACE AND POLITICS/1 GOVERNACE & POLITICS.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S4 ECONOMY & TRADE/2 TRADE NETWORKS.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S6 MAGIC & TECHNOLOGY/1 MAGIC & TECHNOLOGY.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S7 ECONOMY & RESOURCES/S7 ECONOMY & RESOURCES.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S7 ECONOMY & RESOURCES/2 REGIONS & SOCIETIES.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S5 HISTORY & LORE/2 PERVASIVE INFLUENCE.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S3 GOVERNACE AND POLITICS/2 POLITICAL INTERACTIONS.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S4 ECONOMY & TRADE/1 ECONOMY & TRADE.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S6 MAGIC & TECHNOLOGY/2 LIFE & WARFARE.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S2 SOCIETIES & CULTURES/2 LANGUAGES & DIALECTS.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S7 ECONOMY & RESOURCES/1 ECONOMY & RESOURCES.md",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S1 GEOGRAPHY & ENVIRONMENT",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S5 HISTORY & LORE",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S3 GOVERNACE AND POLITICS",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S6 MAGIC & TECHNOLOGY",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S2 SOCIETIES & CULTURES",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S4 ECONOMY & TRADE",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P2 SETTING DESIGN/S7 ECONOMY & RESOURCES",
+    "SETTING & GENRE & FUZZ/GOLD DRAFT/P1 INTRODUCTION TO SETTING DESIN/S5 HISTORY & LORE/desktop.ini",
+    "SETTING & GENRE & FUZZ/SGF readme.md",
+    "CHARACTERS/TWO-STRIKES FLENSEFOOT - 4/1 MORAL FOUNDATION TWO-STRIKES FLENSEFOOT.md",
+    "SETTING & GENRE & FUZZ/RESEARCH/GOLD DRAFT/P1 INTRODUCTION TO SETTING DESIN/S4 ECONOMY & RESOURCES/1 SCARCITY & ABUNDANCE.md",
+    "SETTING & GENRE & FUZZ/RESEARCH/GOLD DRAFT/P1 INTRODUCTION TO SETTING DESIN/S4 ECONOMY & RESOURCES/2 TRADE & ECONOMY SYSTEMS.md",
+    "SETTING & GENRE & FUZZ/RESEARCH/GOLD DRAFT/P1 INTRODUCTION TO SETTING DESIN/S3 MAGIC & TECHNOLOGY"
+  ]
+}
