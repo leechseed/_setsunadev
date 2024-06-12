@@ -1,0 +1,1 @@
+Stellar Beauman are a central element in Math, particularly in the context of The Twenty Ots. They are a group of Men descended from Kudzu who were granted The Place as a reward for their aid with The Forum and the High Coalition of Friendship in the battles against Hormonalor. Here's a detailed look at Stellar Beauman:
