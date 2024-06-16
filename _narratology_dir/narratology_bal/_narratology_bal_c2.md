@@ -53,3 +53,98 @@ Chapter 2: Text and Story
     ├── Text
     ├── Story
     └── Fabula
+
+
+
+    
+```plaintext
+                +-------------------+
+                |   The Narrator    |
+                +-------------------+
+                         |
+                         |
+         +---------------+-----------------+
+         |               |                 |
+         |               |                 |
+   +------------+  +------------+   +-------------+
+   | Identity   |  | Focalization |  | Narrative  |
+   | of Narrator|  |              |  | Situation  |
+   +------------+  +------------+   +-------------+
+         |               |                 |
+         |               |                 |
+   +------------+  +------------+   +-------------+
+   | Indication |  | Point of   |   |  Narrator   |
+   | in Text    |  | View       |   | & Focalizer |
+   +------------+  +------------+   +-------------+
+         |               |                 |
+         |               |                 |
++-------------------+    |       +---------------+
+| First-Person (I)  |    |       | External      |
+| Third-Person (He) |    |       | Character     |
++-------------------+    |       +---------------+
+                         |
+                  +--------------+
+                  | Layers of    |
+                  | Narration    |
+                  +--------------+
+                         |
+                         |
+             +--------------------+
+             | Forms of Narration |
+             +--------------------+
+                         |
+                         |
++-------------------+  +-----------------+
+| First-Person (I)  |  | Third-Person    |
+| Narratives        |  | (He) Narratives |
++-------------------+  +-----------------+
+                         |
+                         |
+      +-----------------------------+
+      | Examples of Narration Types |
+      +-----------------------------+
+                         |
+         +----------------+-------------------+
+         |                |                   |
+ +------------------+ +-----------------+  +----------------+
+ | Character-Bound  | | External Narr.  |  | Focalizer Role |
+ | Narrator (CN)    | |                 |  |                |
+ +------------------+ +-----------------+  +----------------+
+         |                     |                  |
+         |                     |                  |
+ +----------------+    +----------------+  +----------------+
+ | Examples from  |    | Examples from  |  | Examples from  |
+ | Literature     |    | Literature     |  | Literature     |
+ +----------------+    +----------------+  +----------------+
+         |                     |                  |
+         |                     |                  |
++-------------------+ +-------------------+ +-------------------+
+| "Axolotl" by      | | "Of Old People"   | | "Budapest Diary"  |
+| Julio Cortázar    | | by Louis Couperus | | by Susan Rubin    |
++-------------------+ +-------------------+ +-------------------+
+         |                     |                  |
+         |                     |                  |
++-------------------+ +-------------------+ +-------------------+
+| Internal vs       | | Internal vs       | | Child vs. Adult   |
+| External          | | External          | | Narrators         |
+| Perspective       | | Perspective       | |                   |
++-------------------+ +-------------------+ +-------------------+
+```
+
+| Concept                           | Definition                                                                                                                                                           |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The Narrator                      | The identity of the narrator, the degree to which and the manner in which that identity is indicated in the text, lending the text its specific character.             |
+| Focalization                      | The represented coloring of the fabula by an agent of perception, the holder of the point of view.                                                                    |
+| Narrative Situation               | The combination of narrator and focalizer that determines how a story is told and perceived.                                                                          |
+| Forms of Narration                | Different types of narratives based on the "voice" of the narrator, traditionally categorized as first-person, second-person, or third-person narratives.              |
+| First-Person (I) Narratives       | Narratives where the narrator refers to themselves using "I" and is often a character in the story.                                                                   |
+| Third-Person (He) Narratives      | Narratives where the narrator refers to characters using "he," "she," or "they" and is usually external to the story.                                                 |
+| Character-Bound Narrator (CN)     | A narrator who is also a character within the fabula, recounting events from their own perspective.                                                                   |
+| External Narrator                 | A narrator who does not appear as a character within the fabula and tells the story from an outside perspective.                                                      |
+| Internal Perspective              | When the focalization comes from within the story, typically through the eyes of a character.                                                                         |
+| External Perspective              | When the focalization comes from an external narrator who is not a character within the story.                                                                        |
+| Point of View                     | The perspective from which the story is told, determined by the focalizer.                                                                                            |
+| Layers of Narration               | The different levels at which narration occurs, involving the narrator, focalizer, and actor, and their possible overlaps.                                            |
+| Examples from Literature          | Specific instances or excerpts from literary works that illustrate different types of narrators, focalization, and narrative situations.                              |
+| Internal vs. External Perspective | Comparison of narration from within the story by a character (internal) versus from outside the story by an external narrator (external).                             |
+| Child vs. Adult Narrators         | The distinction between narrators who are children, often with a limited understanding, versus adult narrators who may have a more comprehensive view of events.        |
