@@ -21,7 +21,7 @@
     },
     {
       "entity_name": "{{Entity Name 3}}",
-      "entity_description": "{{Description of Entity 3}}",
+      "entity_description": "{{Description of Entsuity 3}}",
       "relationship_type": "{{Relationship Type 3}}",
       "relationship_description": "{{Description of Relationship 3}}"
     }
