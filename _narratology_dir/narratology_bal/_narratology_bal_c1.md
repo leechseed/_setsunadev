@@ -59,3 +59,107 @@ Chapter 1: What is Narratology?
     ├── Text
     ├── Story
     └── Fabula
+
+
+---
+
+Certainly! Below are the graphic organizers based on the provided text from "Introduction to Narratology" by Mieke Bal.
+
+---
+
+## Concept Map for "Chapter 1: What is Narratology?"
+
+```plaintext
+                          Narratology
+                                |
+                                |
+     +--------------------------+--------------------------+
+     |                          |                          |
+  Narrative                  Text                        Story
+     |                          |                          |
+Definition:                   Definition:                 Definition:
+Sequence of                   Any medium                  Chronological
+events or                     conveying                   sequence of
+experiences                   narrative                   events
+     |                          |                          |
+     |                          |                          |
+     +--------------------------+--------------------------+
+                                |
+                                |
+                             Fabula
+                                |
+                         Definition:
+              Raw elements of story in
+              natural time sequence
+```
+
+---
+
+## Flowchart for "Key Concepts in Chapter 1: What is Narratology?"
+
+```plaintext
+Key Concepts
+      |
+      v
+Narrative
+      |
+      v
+Narratology
+      |
+      v
+Text
+      |
+      v
+Story
+      |
+      v
+Fabula
+```
+
+---
+
+## Hierarchical Diagram for "Main Focus Areas in Chapter 1: What is Narratology?"
+
+```plaintext
+Chapter 1: What is Narratology?
+├── Main Focus Areas
+│   ├── Introduction to Narrative Studies
+│   ├── Scope of Narratology
+│   └── Interdisciplinary Applications
+└── Key Concepts
+    ├── Narrative
+    │   └── Definition: A sequence of events or actions that are connected and presented by a narrator.
+    ├── Narratology
+    │   └── Definition: The study of narrative structures and the ways these structures contribute to our perception.
+    ├── Text
+    │   └── Definition: The actual written or spoken content that comprises a narrative.
+    ├── Story
+    │   └── Definition: The chronological sequence of events that the reader reconstructs from the text.
+    └── Fabula
+        └── Definition: A term used to refer to the raw material of a story, or the series of events that occur in the chronological order in which they would occur in reality.
+```
+
+---
+
+## Venn Diagram for "Narrative and Narratology"
+
+```plaintext
+                   +-------------------------+
+                   |      Narrative          |
+                   |    Sequence of events   |
+                   |    and experiences      |
+                   |    +--------+--------+  |
+                   |    |        |        |  |
+        +----------+----+ Narratology +-----------+
+        |          |    | Study of    |           |
+        |    Text  +----+ Narrative   |
+        |    Medium      | Structures |
+        +----------+----+--------+-----------+
+                   +--------+--------+
+                            |
+                          Fabula
+```
+
+---
+
+These diagrams help break down and visualize the complex relationships and concepts introduced in the first chapter of Mieke Bal's "Introduction to Narratology," making it easier to understand the foundational elements of narrative studies.

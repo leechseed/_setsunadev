@@ -56,3 +56,145 @@ Chapter 10: Beyond Textual Narratives
     ├── Transmedia Storytelling
     ├── Digital Narratives
     └── Interactive Narratives
+
+Here are several graphic organizers to encapsulate the core elements and their interactions from Chapter 10 of Mieke Bal's "Introduction to Narratology."
+
+### 1. Concept Map for "Beyond Textual Narratives"
+
+**Purpose:** To show the relationships between key concepts and their applications in non-traditional narratives.
+
+```plaintext
+# Concept Map for "Beyond Textual Narratives"
+
+                      Beyond Textual Narratives
+                                |
+          +---------------------+----------------------+
+          |                     |                      |
+  Adaptation of Narrative  User Experience       Theoretical Challenges
+        Techniques               |                      |
+          |                     +------------+          |
++---------+---------+           |            |          |
+|                   |           |            |          |
+Transmedia     Digital      Audience   Interactivity  Extending
+Storytelling   Narratives   Choices      Impact       Theories
+          |                     |            |          |
++---------+---------+   +-------+------+     |   +------|------+
+|                   |   |              |     |   |             |
+Star Wars       Online   Multimedia  Nonlinear Video   New Frameworks
+Franchise      Interactive Elements  Pathways  Games  for Analysis
+                Documentary
+```
+
+### 2. Flowchart for "Analyzing Non-Traditional Narratives"
+
+**Purpose:** To illustrate the steps for analyzing different types of non-traditional narratives.
+
+```plaintext
+# Flowchart for "Analyzing Non-Traditional Narratives"
+
+Start Analysis
+      |
+      v
+Identify Narrative Type
+      |
+      v
+Choose Analysis Techniques
+      |
+      v
+Apply Techniques to Analyze Structure and Elements
+      |
+      v
+Interpret Findings Based on User Interaction
+      |
+      v
+Draw Conclusions on Narrative Impact and Experience
+      |
+      v
+Propose Theoretical Adaptations
+```
+
+### 3. Venn Diagram for "Transmedia, Digital, and Interactive Narratives"
+
+**Purpose:** To compare and contrast the application of narratology in transmedia storytelling, digital narratives, and interactive narratives.
+
+```plaintext
+# Venn Diagram for "Transmedia, Digital, and Interactive Narratives"
+
+                    +----------------------------+
+                    |      Transmedia            |
+                    |     Storytelling           |
+                    | - Multiple Platforms       |
+                    | - Unified Narrative        |
+                    +------------+---------------+
+                                 |
+                                 | Common Techniques
+                                 |
++-------------------------------+---------------------------+
+|                              |                            |
+|          Digital              |    Interactive             |
+|         Narratives            |    Narratives              |
+|  - Hyperlinks                |  - Audience Participation  |
+|  - Multimedia Elements       |  - Decision-making Impact  |
+|  - Nonlinear Pathways        |  - Emotional and Ethical   |
+|                              |    Dimensions              |
++-------------------------------+
+```
+
+### 4. Timeline for "Steps in Analyzing Non-Traditional Narratives"
+
+**Purpose:** To chronologically arrange the steps in conducting narratological analysis on non-traditional narratives.
+
+```plaintext
+# Timeline for "Steps in Analyzing Non-Traditional Narratives"
+
+Identify Narrative Type  ->  Choose Techniques  ->  Apply Analysis  ->  Interpret Findings  ->  Draw Conclusions
+      |                       |                       |                   |                    |
+Transmedia Storytelling  Digital Narratives  Multimedia Elements Audience Interaction  Theoretical Extensions
+      |                       |                       |                   |                    |
+Multiple Platforms        Hyperlinks           Nonlinear Pathways  Decision-making      New Analytical Frameworks
+      |                       |                       |                   |                    |
+Unified Narrative        Interactive Features  User Experience    Emotional Impact     Evolving Narratology
+```
+
+### 5. Matrix Diagram for "Analysis Techniques and Their Applications in Non-Traditional Narratives"
+
+**Purpose:** To organize different analysis techniques used in narratology and their specific applications in various non-traditional narratives.
+
+```plaintext
+# Matrix Diagram for "Analysis Techniques and Their Applications in Non-Traditional Narratives"
+
+| Analysis Technique        | Transmedia Storytelling            | Digital Narratives                   | Interactive Narratives                |
+|---------------------------|------------------------------------|-------------------------------------|---------------------------------------|
+| Textual Analysis          | Narrative Consistency              | Hyperlink Integration               | User Decision Impact                 |
+| Comparative Analysis      | Across Media Platforms             | Between Digital and Traditional     | Between Choices and Outcomes         |
+| Contextual Analysis       | Cultural Context Across Media      | Digital Context and User Behavior   | Interactive Context and User Role    |
+| Narrative Level Analysis  | Identifying Unified Story Levels   | Analyzing Multimedia Elements       | Analyzing Decision Points            |
+```
+
+### 6. Concept Map for "Bal's Application of Narratology to Non-Traditional Narratives"
+
+**Purpose:** To show the relationships between key concepts and entities in Bal's application of narratology to non-traditional narratives.
+
+```plaintext
+# Concept Map for "Bal's Application of Narratology to Non-Traditional Narratives"
+
+              Bal's Application of Narratology to Non-Traditional Narratives
+                                      |
+          +---------------------------+---------------------------+
+          |                           |                           |
+  Adaptation of Narrative       User Experience             Theoretical Challenges
+         Techniques                    |                           |
+          |                     +-----+-----+                     |
++---------+---------+           |           |                     |
+|                   |           |           |                     |
+Transmedia     Digital      Audience   Interactivity            Extending
+Storytelling   Narratives   Choices      Impact                Theories
+          |                     |            |                     |
++---------+---------+   +-------+------+     |                     |
+|                   |   |              |     |                     |
+Star Wars       Online   Multimedia  Nonlinear Video         New Analytical
+Franchise      Interactive Elements  Pathways  Games        Frameworks
+                Documentary
+```
+
+These graphic organizers help visualize the core concepts and relationships discussed in Chapter 10, making it easier to understand and apply narratological analysis in the context of non-traditional narratives.

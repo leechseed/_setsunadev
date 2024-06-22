@@ -125,3 +125,144 @@ This chapter examines the distinction between narrative and non-narrative commen
 
 #### Conclusion
 Understanding the interplay between narrative and non-narrative comments enriches the reading experience and deepens comprehension of the text's ideological layers. This study guide aims to equip you with the tools to analyze these elements critically.
+
+
+---
+
+Certainly! Here’s how you can turn the provided text about Chapter 3 from Mieke Bal's "Introduction to Narratology" into graphic organizers to visualize the relationships and concepts.
+
+### 1. Concept Map for "Time and Order in Narratology"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "Time and Order in Narratology"
+
+                 Time and Order
+                       |
+        +--------------+------------------+
+        |              |                  |
+  Chronology       Anachrony           Frequency
+        |              |                  |
++-------+-------+  +---+---+         +---+---+
+|               |  |       |         |       |
+Story Time   Fabula Flashback    Flashforward |
+                       |             |        |
+                  Analepsis    Prolepsis      |
+                                             |
+                                      Repetition
+```
+
+### 2. Flowchart for "Manipulation of Time in Narrative"
+
+**Purpose:** To illustrate the progression of arguments and concepts.
+
+```plaintext
+# Flowchart for "Manipulation of Time in Narrative"
+
+Narrative Time
+      |
+      v
+Chronology and Order
+      |
+      v
+Anachrony
+      |
+      v
+- Flashback (Analepsis)
+- Flashforward (Prolepsis)
+      |
+      v
+Pace and Duration
+      |
+      v
+Frequency
+```
+
+### 3. Venn Diagram for "Chronology vs. Anachrony"
+
+**Purpose:** To compare and contrast the concepts of chronology and anachrony.
+
+```plaintext
+# Venn Diagram for "Chronology vs. Anachrony"
+
+    +--------------------------+-------------------------+
+    |                          |                         |
+    |       Chronology         |        Anachrony        |
+    |      (Fabula Order)      |     (Non-linear Order)  |
+    |                          |                         |
+    |  - Sequential Events     |  - Flashback (Analepsis)|
+    |  - Real-life Order       |  - Flashforward (Prolepsis)|
+    |                          |                         |
+    +--------------------------+-------------------------+
+                            |
+                            |
+                    +-----------------+
+                    |  Manipulation of|
+                    |  Narrative Time |
+                    +-----------------+
+```
+
+### 4. Timeline for "Order and Duration in Narrative"
+
+**Purpose:** To chronologically arrange the concepts and their development in narrative.
+
+```plaintext
+# Timeline for "Order and Duration in Narrative"
+
+Chronology          Anachrony          Pace and Duration
+     |                  |                     |
+     v                  v                     v
+Real-life Order     Flashback (Analepsis)    Speed of Narrative
+     |                  |                     |
+     v                  v                     v
+Story Time          Flashforward (Prolepsis) Perceived Time
+     |                  |                     |
+     v                  v                     v
+Narrative Order     Non-linear Events        Narrative Pace
+```
+
+### 5. Matrix Diagram for "Elements of Time Manipulation in Narratology"
+
+**Purpose:** To organize different arguments and their proponents.
+
+```plaintext
+# Matrix Diagram for "Elements of Time Manipulation in Narratology"
+
+| Element              | Description                                                                                 | Example                       |
+|----------------------|---------------------------------------------------------------------------------------------|-------------------------------|
+| Chronology           | The actual time sequence of events in the story, as they would happen in real life.         | Fabula                        |
+| Anachrony            | A deviation from strict chronological order.                                                | Flashback (Analepsis)         |
+| Flashback (Analepsis)| Depicts events that have occurred earlier than the current point in the narrative timeline. | Past events affecting present |
+| Flashforward (Prolepsis) | Moves forward in time from the current point in the story to preview future events.       | Future events impacting present|
+| Pace                 | The speed at which the narrative progresses.                                                | Slow-paced descriptions       |
+| Frequency            | Describes how often certain events are recounted in the narrative.                          | Repeated events               |
+```
+
+### 6. Concept Map for "Bal's Analysis of Time in Narrative"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "Bal's Analysis of Time in Narrative"
+
+                    Bal's Analysis of Time
+                            |
+          +-----------------+-----------------+
+          |                 |                 |
+     Order of Events    Duration           Frequency
+          |                 |                 |
+   +------+-------+     +---+---+         +---+---+
+   |              |     |       |         |       |
+Chronology    Anachrony Pace of  Story    Repetition
+   |          |              |             |
+Fabula  Flashback   Flashforward           |
+             Analepsis    Prolepsis       |
+                                            |
+                                     +------+------+
+                                     | Narrative   |
+                                     | Complexity  |
+                                     +-------------+
+```
+
+These diagrams will help break down the complex relationships and arguments in the provided texts, making the concepts easier to understand and analyze.
