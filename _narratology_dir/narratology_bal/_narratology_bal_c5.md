@@ -55,3 +55,145 @@ Chapter 5: Actors in the Narrative
     └── Character Development
 
 
+---
+
+Certainly! Here are several graphic organizers that encapsulate the core elements and their interactions from Chapter 5 of Mieke Bal's "Introduction to Narratology."
+
+### 1. Concept Map for "Actors in the Narrative"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "Actors in the Narrative"
+
+                    Actors in the Narrative
+                             |
+            +----------------+---------------+
+            |                                |
+       Character                         Actor
+            |                                |
+   +--------+--------+                      |
+   |                 |                      |
+Flat Characters  Round Characters     Role in Story's Action
+   |                 |                      |
+Simple and          Complex and           Functional
+One-dimensional     Multi-dimensional     Aspect of Characters
+```
+
+### 2. Flowchart for "Character Functions and Development"
+
+**Purpose:** To illustrate the progression and roles of characters in narrative development.
+
+```plaintext
+# Flowchart for "Character Functions and Development"
+
+Character Introduction
+      |
+      v
+Character Function
+      |
+      v
+Character Actions and Dialogue
+      |
+      v
+Character Interaction with Others
+      |
+      v
+Character Development
+      |
+      v
+Static or Dynamic Character
+```
+
+### 3. Venn Diagram for "Flat vs. Round Characters"
+
+**Purpose:** To compare and contrast flat and round characters.
+
+```plaintext
+# Venn Diagram for "Flat vs. Round Characters"
+
+           +-------------------------------+
+           |          Flat Characters      |
+           |  - Simple                     |
+           |  - One-dimensional            |
+           |  - Do not change              |
+           |                               |
++---------+--------------------------------+-----------+
+|         |                                |           |
+|         |                                |           |
+|         |                                |           |
+|         |                                |           |
+|         |                                |           |
+|         |                                |           |
+|  - Serve specific narrative functions    |           |
+|         |                                |           |
+|         |                                |           |
+|         |                                |           |
++---------+--------------------------------+-----------+
+           |          Round Characters     |
+           |  - Complex                    |
+           |  - Multi-dimensional          |
+           |  - Change and develop         |
+           +-------------------------------+
+```
+
+### 4. Timeline for "Character Development"
+
+**Purpose:** To chronologically arrange the development of characters in a narrative.
+
+```plaintext
+# Timeline for "Character Development"
+
+Introduction        Conflict                Resolution
+    |                   |                       |
+    v                   v                       v
+Initial Traits   Development through    Final Traits or
+and Background   Actions and Dialogue   Transformation
+    |                   |                       |
+    v                   v                       v
+Protagonist    Interaction with Other   Conclusion of Character Arc
+and Antagonist  Characters
+    |                   |                       |
+    v                   v                       v
+Static or Dynamic Character
+```
+
+### 5. Matrix Diagram for "Characterization Methods"
+
+**Purpose:** To organize different methods of characterization and their effects.
+
+```plaintext
+# Matrix Diagram for "Characterization Methods"
+
+| Method                | Description                                     | Example                       |
+|-----------------------|-------------------------------------------------|-------------------------------|
+| Direct Description    | Author directly describes the character's traits| "He was tall and brooding."   |
+| Actions               | Character's behavior and actions reveal traits  | "She helped the old man."     |
+| Thoughts              | Internal monologues that reveal character traits| "He wondered if he could do it." |
+| Dialogue              | Conversations that reveal traits                | "I am always honest," he said.|
+| Reactions of Others   | How other characters react to the character     | "Everyone trusted her."       |
+```
+
+### 6. Concept Map for "Bal's Analysis of Character Functions"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "Bal's Analysis of Character Functions"
+
+                     Bal's Analysis of Character Functions
+                                     |
+             +-----------------------+---------------------+
+             |                       |                     |
+        Character                Character             Character
+        Functions               Development          Role in Story
+             |                       |                     |
+     +-------+-------+         +-----+-----+       +-------+--------+
+     |               |         |           |       |                |
+Protagonist      Antagonist   Static    Dynamic   Narrator       Supporting
+                Characters   Characters Characters Characters   Characters
+```
+
+These diagrams help visualize the core concepts and relationships discussed in Chapter 5, making it easier to understand and analyze the roles and development of characters in narratives.
+
+

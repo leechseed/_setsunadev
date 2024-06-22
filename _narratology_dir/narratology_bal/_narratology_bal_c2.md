@@ -148,3 +148,139 @@ Chapter 2: Text and Story
 | Examples from Literature          | Specific instances or excerpts from literary works that illustrate different types of narrators, focalization, and narrative situations.                              |
 | Internal vs. External Perspective | Comparison of narration from within the story by a character (internal) versus from outside the story by an external narrator (external).                             |
 | Child vs. Adult Narrators         | The distinction between narrators who are children, often with a limited understanding, versus adult narrators who may have a more comprehensive view of events.        |
+
+Certainly! Below are graphic organizers that visualize the relationships and concepts from Chapter 2 of Mieke Bal's "Introduction to Narratology." These diagrams encapsulate the core elements and their interactions as described.
+
+### Chapter 2: Text and Story
+
+#### 1. Concept Map for "Text and Story"
+
+```plaintext
+                               Text and Story
+                                    |
+        +---------------------------+---------------------------+
+        |                           |                           |
+      Text                        Story                       Fabula
+    (Narrative Content)  (Reconstructed Events)  (Chronological Sequence)
+        |                           |                           |
++-------+-------+           +-------+-------+           +-------+-------+
+|               |           |               |           |               |
+Written      Spoken     Logical Sequence   Narrative Manipulation    Real Life Order
+```
+
+---
+
+#### 2. Flowchart for "Text, Story, and Fabula"
+
+```plaintext
+Start
+   |
+   v
+Text (Written or Spoken Content)
+   |
+   v
+Story (Chronological Sequence of Events as Reconstructed)
+   |
+   v
+Fabula (Raw Sequence of Events in Real Life Order)
+   |
+   v
+Plot (How the Story is Narrated)
+   |
+   v
+End
+```
+
+---
+
+#### 3. Venn Diagram for "Text, Story, and Fabula"
+
+```plaintext
++---------------------------+---------------------------+
+|                           |                           |
+|           Text            |           Story           |
+|  (Narrative Content)      | (Reconstructed Events)    |
+|                           |                           |
++---------------------------+---------------------------+
+                          |
+                          v
+         +-------------------+-------------------+
+         |                  Fabula               |
+         |  (Chronological Sequence of Events)   |
+         +-------------------+-------------------+
+```
+
+---
+
+#### 4. Hierarchical Diagram for "Narrative Techniques"
+
+```plaintext
+                +-------------------+
+                |   Narrative       |
+                |   Techniques      |
+                +-------------------+
+                         |
+         +---------------+---------------+
+         |                               |
+  Flashbacks                         Flash-forwards
+         |                               |
++--------+--------+           +----------+---------+
+|                 |           |                    |
+Selective     Non-linear   Multiple            In Media
+Omission     Narration    Perspectives          Res
+```
+
+---
+
+#### 5. Matrix Diagram for "Key Concepts"
+
+| Concept  | Definition                                                                                               |
+|----------|----------------------------------------------------------------------------------------------------------|
+| Text     | The physical form of the narrative, which could be written, spoken, or depicted through other media.     |
+| Story    | The logical sequence of events that the reader or viewer constructs in their mind as they engage with the text. |
+| Fabula   | The raw sequence of events in the order they would logically occur in real life, stripped of any narrative manipulation. |
+| Plot     | The structure of the narrative, including the sequence and arrangement of events as presented by the narrator. |
+
+---
+
+#### 6. Flowchart for "Interpretation of Text"
+
+```plaintext
+Start
+   |
+   v
+Text (Narrative Content)
+   |
+   v
+Reader Engagement
+   |
+   v
+Story (Reconstructed Events)
+   |
+   v
+Analysis of Fabula (Chronological Events)
+   |
+   v
+Interpretation (Themes, Bias, Reliability)
+   |
+   v
+End
+```
+
+---
+
+#### 7. Concept Map for "Mechanics of Narrative Construction"
+
+```plaintext
+              Mechanics of Narrative Construction
+                                  |
+                +-----------------+-----------------+
+                |                                   |
+            Textual Analysis                   Structural Analysis
+                |                                   |
+                +-----------------+-----------------+
+                                  |
+                            Interpretive Frameworks
+```
+
+These graphic organizers provide a visual summary of the key concepts and relationships discussed in Chapter 2 of "Introduction to Narratology" by Mieke Bal, aiding in the comprehension and analysis of narrative structures.

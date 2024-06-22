@@ -59,3 +59,163 @@ Chapter 6: Perspective and Focalization
     ├── External Focalization
     └── Narrator
 
+---
+
+Certainly! Here are several graphic organizers that encapsulate the core elements and their interactions from Chapter 6 of Mieke Bal's "Introduction to Narratology."
+
+### 1. Concept Map for "Perspective and Focalization"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "Perspective and Focalization"
+
+                    Perspective and Focalization
+                             |
+             +---------------+-----------------+
+             |                                 |
+        Focalization                       Narrator
+             |                                 |
+   +---------+-----------+                     |
+   |                     |                     |
+Internal Focalization   External Focalization  Reliability
+   |                     |                     |
+   |                     |             +-------+--------+
+Subjective View      Objective View    |               |
+   |                     |             |               |
+   |                     |        Control of Information
+   |                     |             |               |
+   |                     |   Emotional Engagement   Subjectivity and Objectivity
+   |                     |             |               |
+   +---------------------+-------------+---------------+
+```
+
+### 2. Flowchart for "Narrative Perspective and Focalization"
+
+**Purpose:** To illustrate the progression and interplay between different perspectives and focalization types.
+
+```plaintext
+# Flowchart for "Narrative Perspective and Focalization"
+
+Narrative Perspective
+      |
+      v
+Choice of Narrator
+      |
+      v
+First Person | Second Person | Third Person
+      |
+      v
+Focalization
+      |
+      v
+Internal Focalization | External Focalization
+      |
+      v
+Subjective View | Objective View
+      |
+      v
+Impact on Narrative
+      |
+      v
+Control of Information | Emotional Engagement | Subjectivity and Objectivity
+```
+
+### 3. Venn Diagram for "Internal vs. External Focalization"
+
+**Purpose:** To compare and contrast internal and external focalization.
+
+```plaintext
+# Venn Diagram for "Internal vs. External Focalization"
+
+                   +-------------------------------+
+                   |        Internal Focalization  |
+                   |  - Story seen through a       |
+                   |    character's eyes           |
+                   |  - Subjective view            |
+                   |                               |
++-----------------+-------------------------------+-------------------+
+|                 |                               |                   |
+|  Provides       |                               | Provides          |
+|  psychological  |                               | a more objective  |
+|  depth and      |                               | perspective       |
+|  character      |                               |                   |
+|  insight        |                               |                   |
+|                 |                               |                   |
++-----------------+-------------------------------+-------------------+
+                   |        External Focalization  |
+                   |  - Story seen from an outside |
+                   |    perspective                |
+                   |  - Objective view             |
+                   +-------------------------------+
+```
+
+### 4. Timeline for "Narrative Techniques and Focalization"
+
+**Purpose:** To chronologically arrange the development and application of narrative techniques and focalization in a story.
+
+```plaintext
+# Timeline for "Narrative Techniques and Focalization"
+
+Start of Narrative          Middle of Narrative          End of Narrative
+    |                              |                            |
+    v                              v                            v
+Introduction of Characters   Use of Internal and External   Resolution with Final
+and Initial Focalization     Focalization to Build Tension  Perspective and Closure
+    |                              |                            |
+    v                              v                            v
+Establishment of                Shifts in Perspective         Final Reflection and
+Narrative Perspective           to Reveal Information         Emotional Engagement
+    |                              |                            |
+    v                              v                            v
+Impact on Reader's               Manipulation of               Concluding Themes
+Understanding and                Emotional Response            and Insights
+Engagement
+```
+
+### 5. Matrix Diagram for "Narrative Elements and Focalization"
+
+**Purpose:** To organize different narrative elements and their relation to focalization types.
+
+```plaintext
+# Matrix Diagram for "Narrative Elements and Focalization"
+
+| Narrative Element      | Internal Focalization               | External Focalization               |
+|------------------------|-------------------------------------|-------------------------------------|
+| Perspective            | Through a character's eyes          | Outside view of events              |
+| Reliability            | Potentially biased or subjective    | More objective and neutral          |
+| Emotional Engagement   | High due to character's inner thoughts | Moderate due to distance           |
+| Information Control    | Limited to character's knowledge    | Broader view, can reveal more       |
+| Example                | "Catcher in the Rye"                | "The Great Gatsby"                  |
+```
+
+### 6. Concept Map for "Bal's Analysis of Focalization"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "Bal's Analysis of Focalization"
+
+                     Bal's Analysis of Focalization
+                                     |
+             +-----------------------+---------------------+
+             |                       |                     |
+        Focalization             Narrative              Perspective
+             |                  Techniques                   |
+   +---------+-----------+        |                        | 
+   |                     |        |                        |
+Internal Focalization   External Focalization      Control of Information
+             |                     |                        |
+             |                     |                        |
+   +---------+--------+    +-------+------+         +-------+-------+
+   |                  |    |              |         |               |
+Subjective         Through an          Objective  Emotional     Subjectivity
+Perspective        Outside View        Perspective Engagement  and Objectivity
+             |
+      Psychological
+      Depth and Insight
+```
+
+These diagrams help visualize the core concepts and relationships discussed in Chapter 6, making it easier to understand and analyze the roles and impacts of perspective and focalization in narratives.
+
+

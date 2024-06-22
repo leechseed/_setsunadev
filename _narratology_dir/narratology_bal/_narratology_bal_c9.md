@@ -54,3 +54,135 @@ Chapter 9: Narratology in Practice
     ├── Analysis Techniques
     └── Practical Examples
 
+Here are several graphic organizers to encapsulate the core elements and their interactions from Chapter 9 of Mieke Bal's "Introduction to Narratology."
+
+### 1. Concept Map for "Narratology in Practice"
+
+**Purpose:** To show the relationships between key concepts and their applications.
+
+```plaintext
+# Concept Map for "Narratology in Practice"
+
+                     Narratology in Practice
+                               |
+           +-------------------+------------------+
+           |                                      |
+   Application of Theory                  Analysis Techniques
+           |                                      |
++----------+-----------+             +------------+------------+
+|                      |             |                         |
+Literary Analysis   Film Analysis  Textual Analysis     Comparative Analysis
+           |                      |                         |
+Classic Novels       Modern Films      Narrative Levels       Between Texts
+           |                      |                         |
+Character Development Editing Choices  Narrative Voices    Contextual Analysis
+           |                      |                         |
+Focalization Techniques Camera Angles Cultural Settings     Historical Settings
+```
+
+### 2. Flowchart for "Applying Narratology in Different Media"
+
+**Purpose:** To illustrate the steps for applying narratological analysis to different types of texts.
+
+```plaintext
+# Flowchart for "Applying Narratology in Different Media"
+
+Start Analysis
+      |
+      v
+Identify Text Type
+      |
+      v
+Choose Appropriate Analysis Techniques
+      |
+      v
+Apply Analysis Techniques
+      |
+      v
+Interpret Findings
+      |
+      v
+Conclude with Insights and Implications
+```
+
+### 3. Venn Diagram for "Literary, Film, and Everyday Narratives"
+
+**Purpose:** To compare and contrast the application of narratology in literary works, films, and everyday narratives.
+
+```plaintext
+# Venn Diagram for "Literary, Film, and Everyday Narratives"
+
+                    +----------------------------+
+                    |        Literary Works      |
+                    |  - Narrative Structure     |
+                    |  - Character Development   |
+                    |  - Focalization Techniques |
+                    +------------+---------------+
+                                 |
+                                 | Common Techniques
+                                 |
++-------------------------------+---------------------------+
+|                              |                            |
+|             Films             |    Everyday Narratives    |
+|  - Editing Choices           |  - Narrative Construction |
+|  - Camera Angles             |  - Inform, Persuade       |
+|  - Screenplay Structures     |  - Cultural Norms         |
++-------------------------------+
+```
+
+### 4. Timeline for "Steps in Narratological Analysis"
+
+**Purpose:** To chronologically arrange the steps in conducting narratological analysis on different media.
+
+```plaintext
+# Timeline for "Steps in Narratological Analysis"
+
+Identify Text Type  ->  Choose Techniques  ->  Apply Analysis  ->  Interpret Findings  ->  Draw Conclusions
+      |                       |                       |                   |                    |
+Literary Works         Textual Analysis        Narrative Levels     Cultural Insights   Thematic Insights
+      |                       |                       |                   |                    |
+Films                  Comparative Analysis   Editing Choices       Historical Insights Character Development
+      |                       |                       |                   |                    |
+Everyday Narratives    Contextual Analysis    Narrative Voices      Societal Norms       Audience Impact
+```
+
+### 5. Matrix Diagram for "Analysis Techniques and Their Applications"
+
+**Purpose:** To organize different analysis techniques used in narratology and their specific applications in various media.
+
+```plaintext
+# Matrix Diagram for "Analysis Techniques and Their Applications"
+
+| Analysis Technique        | Literary Works                        | Films                                  | Everyday Narratives                    |
+|---------------------------|---------------------------------------|---------------------------------------|---------------------------------------|
+| Textual Analysis          | Narrative Structure                   | Screenplay Structures                 | Narrative Construction                |
+| Comparative Analysis      | Between Classic and Modern Texts      | Between Films of Different Eras       | Comparing News Stories                |
+| Contextual Analysis       | Cultural and Historical Settings      | Historical Contexts                   | Cultural Norms and Societal Insights  |
+| Narrative Level Analysis  | Identifying Narrative Voices          | Editing and Camera Angles             | Perspectives and Biases               |
+```
+
+### 6. Concept Map for "Bal's Practical Applications of Narratology"
+
+**Purpose:** To show the relationships between key concepts and entities in Bal's application of narratology.
+
+```plaintext
+# Concept Map for "Bal's Practical Applications of Narratology"
+
+                   Bal's Practical Applications of Narratology
+                                       |
+           +---------------------------+---------------------------+
+           |                           |                           |
+   Application of Theory        Analysis Techniques          Practical Examples
+           |                           |                           |
++----------+-----------+    +----------+-----------+    +----------+-----------+
+|                      |    |                      |    |                      |
+Literary Analysis   Film Analysis      Textual Analysis       Comparative Analysis Everyday Narratives
+           |                      |                      |                      |                      |
+Classic Novels      Modern Films    Narrative Levels  Between Texts    Personal Stories Media Reports
+           |                      |                      |                      |                      |
+Character Development Editing Choices   Narrative Voices  Cultural Settings      Inform, Persuade, Entertain
+           |                      |                      |                      |                      |
+Focalization Techniques Camera Angles Historical Settings     Societal Norms
+```
+
+These diagrams help visualize the core concepts and relationships discussed in Chapter 9, making it easier to understand and apply narratological analysis in various contexts.

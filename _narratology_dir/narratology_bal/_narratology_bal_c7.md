@@ -55,3 +55,141 @@ Chapter 7: The Narrator
     ├── Reliable Narrator
     └── Unreliable Narrator
 
+Sure! Here are several graphic organizers that encapsulate the core elements and their interactions from Chapter 7 of Mieke Bal's "Introduction to Narratology."
+
+### 1. Concept Map for "The Narrator"
+
+**Purpose:** To show the relationships between key concepts and entities.
+
+```plaintext
+# Concept Map for "The Narrator"
+
+                   The Narrator
+                        |
+                        |
+          +-------------+--------------+
+          |                            |
+      Narrator Types               Reliability
+          |                            |
++---------+---------+         +---------+--------+
+|                   |         |                  |
+First-Person    Third-Person  Reliable        Unreliable
+Narrator        Narrator      Narrator        Narrator
+   |                |             |               |
+   |        +-------+-------+     |               |
+   |        |               |     |               |
+ Limited  Omniscient    Objective |          Biased
+   |        |               |     |               |
+   +--------+---------------+     +---------------+
+```
+
+### 2. Flowchart for "Types of Narrators"
+
+**Purpose:** To illustrate the progression and characteristics of different narrator types.
+
+```plaintext
+# Flowchart for "Types of Narrators"
+
+Choose Narrator Type
+      |
+      v
+First-Person Narrator   Third-Person Narrator
+      |                         |
+      v                         v
+Intimate Insight        Limited View | Omniscient View
+      |                         |
+      v                         v
+Bias | Subjectivity      Single Character Focus | Multiple Characters
+      |                         |
+      v                         v
+Reliability Questioned | Full Access to Thoughts
+```
+
+### 3. Venn Diagram for "Reliable vs. Unreliable Narrator"
+
+**Purpose:** To compare and contrast reliable and unreliable narrators.
+
+```plaintext
+# Venn Diagram for "Reliable vs. Unreliable Narrator"
+
+                 +------------------------------+
+                 |        Reliable Narrator     |
+                 |  - Trustworthy               |
+                 |  - Credible account of events|
+                 |  - Aligned with author’s     |
+                 |    perspective                |
++---------------+------------------------------+------------------+
+|               |                              |                  |
+| Provides      |                              | Causes reader to |
+| a clear and   |                              | question the     |
+| consistent    |                              | narrative        |
+| perspective   |                              |                  |
+|               |                              |                  |
++---------------+------------------------------+------------------+
+                 |     Unreliable Narrator      |
+                 |  - Compromised credibility   |
+                 |  - Biased or subjective      |
+                 |  - Distorts events           |
+                 +------------------------------+
+```
+
+### 4. Timeline for "Narrative Reliability and Impact"
+
+**Purpose:** To chronologically arrange the development and impact of narrative reliability.
+
+```plaintext
+# Timeline for "Narrative Reliability and Impact"
+
+Beginning of Narrative  Middle of Narrative  End of Narrative
+      |                       |                     |
+      v                       v                     v
+Introduction of Narrator   Development of Bias   Revelation of Truth
+      |                       |                     |
+      v                       v                     v
+Establishment of           Questioning Events    Final Assessment of
+Credibility                and Motives           Reliability
+      |                       |                     |
+      v                       v                     v
+Impact on Reader’s          Shifts in Perception   Overall Understanding
+Engagement and Trust        of Narrator            of the Story
+```
+
+### 5. Matrix Diagram for "Narrator Characteristics"
+
+**Purpose:** To organize different narrator characteristics and their relation to reliability.
+
+```plaintext
+# Matrix Diagram for "Narrator Characteristics"
+
+| Characteristic       | Reliable Narrator              | Unreliable Narrator           |
+|----------------------|---------------------------------|-------------------------------|
+| Perspective          | Objective, aligned with author | Subjective, biased            |
+| Insight              | Clear understanding of events  | Limited or distorted view     |
+| Emotional Connection | Builds trust with the reader   | Creates skepticism            |
+| Example              | "To Kill a Mockingbird"        | "The Catcher in the Rye"      |
+```
+
+### 6. Concept Map for "Bal's Analysis of Narrators"
+
+**Purpose:** To show the relationships between key concepts and entities in Bal's analysis.
+
+```plaintext
+# Concept Map for "Bal's Analysis of Narrators"
+
+                    Bal's Analysis of Narrators
+                                     |
+         +---------------------------+---------------------------+
+         |                           |                           |
+      Narrator                    Reliability                Perspective
+         |                           |                           |
+  +------+-----+               +-----+-----+               +-----+------+
+  |            |               |           |               |            |
+First-Person  Third-Person  Reliable   Unreliable    Narrative    Emotional
+  |               |         Narrator   Narrator      Authority    Connection
+  |               |            |           |               |            |
+Subjective     Limited     Trustworthy  Biased,        Perspective    Reader's
+View           or          Perspective  Distorted      and Bias      Engagement
+               Omniscient                 View
+```
+
+These diagrams help visualize the core concepts and relationships discussed in Chapter 7, making it easier to understand and analyze the roles and impacts of different types of narrators in narratives.
