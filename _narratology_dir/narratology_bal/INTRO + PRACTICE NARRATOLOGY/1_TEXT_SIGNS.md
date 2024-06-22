@@ -571,53 +571,96 @@ To visualize the relationships and concepts from the narratology text, you can c
      - Focalizer as Actor
 4. **Use colors and icons** to distinguish between different levels of information and to make the mind map visually engaging.
 
-### Example Descriptions for Creating Diagrams:
+# MODELING
 
-#### Venn Diagram:
+Got it! Here is the complete document with 'copy code' buttons for each section:
+
+# Narratology Diagrams
+
+## 1. Venn Diagram for Narrative Roles
+
+**Purpose:** To illustrate the overlapping and distinct roles of Narrators, Focalizers, and Actors.
+
 ```plaintext
-  ___________     ___________    ___________
- /           \   /           \  /           \
-|   Narrator  | |  Focalizer  | |   Actor    |
- \___________/   \___________/  \___________/
-```
-- Overlap between Narrator and Focalizer: Narrator with a specific viewpoint.
-- Overlap between Narrator and Actor: Narrator who is also a character.
-- Overlap between Focalizer and Actor: Character with a distinct viewpoint.
-
-#### Comparative Table:
-| Aspect                   | First-Person Narration        | Second-Person Narration       | Third-Person Narration         |
-|--------------------------|-------------------------------|-------------------------------|--------------------------------|
-| Effects on Storytelling  | Intimate, subjective          | Direct engagement             | Objective or omniscient        |
-| Audience Perception      | Personal connection           | Reader as character           | Broad view of events           |
-| Usage in Texts           | Common in autobiographies     | Rare, experimental            | Common in fiction              |
-| Example Authors/Works    | "To Kill a Mockingbird"       | "Bright Lights, Big City"     | "Harry Potter" series          |
-
-#### Flowchart:
-```
-Focalizer
-   |
-  -----
- /     \
-Internal External
-  |       |
-Emotion  Objectivity
-```
-- Internal: Emotional engagement, subjective viewpoint.
-- External: Objective viewpoint, broader narrative perspective.
-
-#### Mind Map:
-```
-                  Narrative Analysis
-                       /  |  \
-                      /   |   \
-       Narrator Identity Focalization Narrative Forms
-        /       |             \               \
-       /        |              \               \
-Shapes   Different Types       Internal vs.     First-Person
-Character (Visible, Abstract)  External          /  |  \
-                                           Second Third Character
+                   +-------------------------+
+                   |         Narrator        |
+                   |   Shapes the story's    |
+                   | perception and worldview|
+                   |        +--------+       |
+                   |        |        |       |
+        +----------+--------+  Focalizer     +-----------+
+        |          |        |   Agent of     |           |
+        |   Actor  +--------+ perception     +-----------+
+        |  Character within |                |
+        | the narrative     |  Distinct      |
+        |                   | viewpoint      |
+        +-------------------+                |
+                   +-------------------------+
 ```
 
-Using these diagrams will help you organize and visualize the complex relationships and concepts in narratology, making it easier to study and understand the material.
+## 2. Comparative Table for Narrative Forms
 
+**Purpose:** To compare the effects and characteristics of different narrative perspectives.
 
+```markdown
+| Aspect                      | First-Person Narration           | Second-Person Narration            | Third-Person Narration           |
+|-----------------------------|----------------------------------|------------------------------------|----------------------------------|
+| Effects on Storytelling     | Intimate, subjective             | Direct engagement                  | Objective or omniscient          |
+| Audience Perception         | Deep personal connection         | Reader becomes the character       | Broader view of events           |
+| Usage in Texts              | Common in autobiographical texts | Rare, often experimental           | Common in fiction                |
+| Example Authors/Works       | "Catcher in the Rye" by Salinger | "Bright Lights, Big City" by McInerney | "Harry Potter" by Rowling        |
+```
+
+## 3. Flowchart for Focalization Impact
+
+**Purpose:** To demonstrate how focalization affects the narrative delivery and audience perception.
+
+```plaintext
+            +------------------+
+            |    Focalizer     |
+            +------------------+
+                   |
+       +-----------+-----------+
+       |                       |
++------v------+         +------v-------+
+|   Internal  |         |   External   |
+| Focalization|         | Focalization |
++-------------+         +--------------+
+       |                       |
++------v-----------+   +-------v----------+
+| Emotional        |   | Objective        |
+| Engagement       |   | Viewpoint        |
+| "Closer to       |   | "Unbiased        |
+| Characters"      |   | View"            |
+| "Character's     |   | "Multiple        |
+| Thoughts"        |   | Perspectives"    |
++------------------+   +------------------+
+```
+
+## 4. Mind Map for Key Concepts and Arguments
+
+**Purpose:** To connect the main arguments and concepts in a visual and hierarchical manner.
+
+```plaintext
+                         +-------------------+
+                         | Narrative Analysis|
+                         +---------+---------+
+                                   |
+        +--------------------------+----------------------------+
+        |                           |                            |
++-------v--------+         +--------v--------+           +-------v--------+
+| Narrator       |         | Focalization    |           | Narrative Forms|
+| Identity       |         +-----------------+           +----------------+
++----------------+                 |                            |
+       |                           |                            |
+       v                           v                            v
++----------------+      +-------------------+          +-------------------+
+| Shapes narrative|      | Internal vs.     |          | First-Person      |
+| character       |      | External         |          | Second-Person     |
+| Different types |      | Influences story |          | Third-Person      |
+| (visible,       |      | perception       |          | Effects on        |
+| abstract)       |      +------------------+          | storytelling      |
++-----------------+                                     +-------------------+
+```
+
+This should be easier to copy and paste as a single block of text, and each section is enclosed in a code block for clarity.
