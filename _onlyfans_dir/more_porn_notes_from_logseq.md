@@ -1,0 +1,57 @@
+# porn notes
+
+- # holly randall podcast
+- ## who to listen to still
+	- lisa ann
+	- august ames
+	- dana dearmond
+	- asa akira
+	- joanna angel
+	- dani daniels
+	- angela white
+	- chanel preston
+	- lena paul
+	- tera patrick
+	- katrina jade
+	- angela white
+	- dana vespoli
+	- kira noir
+	- maddy oreiley
+	- charlotte sartre
+	- mia malkova
+	- honey gold
+	- karma rx
+	- carter cruise
+	- violet myers
+	- june lovejoy
+	- kimmy granger
+	- aiden ashley
+
+
+- ## who to get a poster of
+- abella danger
+- **adriana chechik**
+	- https://www.ebay.com/itm/225551583377
+	- https://www.ebay.com/itm/325852480553
+- ana foxxx
+- asa akira
+- **casey calvert**
+	- https://www.back9galleries.com/search.asp?keyword=casey+calvert&search=
+- riley reid
+	- https://www.ebay.com/itm/256210818876
+	- https://www.ebay.com/itm/294823085850
+- cory chase
+- **eliza ibarra**
+- **emily bloom**
+- evelynn claire
+- jewelz blu
+- **leah gotti**
+- london river
+- maitland ward
+- **nina heartly**
+- **SASHA GREY**
+- sara jay
+- kenzie reeves
+	- https://www.ebay.com/itm/255382444615
+- joanna angel
+	- https://www.ebay.com/itm/256209784036
