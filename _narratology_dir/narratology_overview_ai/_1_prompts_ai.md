@@ -84,3 +84,8 @@ Provide an extensive and highly detailed overview of H. Beam Piper's contributio
 
 ### 20. Kim Stanley Robinson
 **Provide an extensive and highly detailed overview of Kim Stanley Robinson's contribution to Narratology, focusing specifically on his "Mars Trilogy." Also, provide topics of interest regarding his other contributions. format in markdown as a knowledgebase entry. place in a codebox for easy copy and paste**
+
+
+21. Claude Lévi-Strauss
+Provide an extensive and highly detailed overview of Claude Lévi-Strauss ontribution to Narratology focusing on his most influential work. 
+Also, provide topics of interest regarding his other contributions. format in markdown as a knowledgebase entry. place in a codebox for easy copy and paste
