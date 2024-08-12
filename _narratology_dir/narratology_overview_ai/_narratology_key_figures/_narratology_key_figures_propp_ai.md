@@ -8,6 +8,9 @@
 
 *"Morphology of the Folktale"* is Propp’s most influential work, where he systematically analyzed the structure of Russian folktales to uncover a universal pattern underlying their narratives. The term "morphology" here refers to the study of forms and structures, similar to its usage in biology.
 
+
+
+
 ## 1.3 Key Concepts and Contributions
 
 ### 1.3.1 Narrative Functions
