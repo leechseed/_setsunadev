@@ -42,7 +42,7 @@
 
 - Propp's concept of narrative functions has been highly influential in the field of narratology, particularly in the structural analysis of narratives. By identifying a set of universal functions that recur in folktales, Propp provided a framework for understanding the common structural elements that underlie many different stories. His work is particularly important for the study of oral traditions and folk literature, where these narrative patterns are often most clearly observed. Additionally, Propp's ideas have influenced broader narrative theory, including the study of modern literature, film, and other forms of storytelling. By analyzing how these functions manifest in various narratives, scholars can gain insights into the universal structures that shape human storytelling and cultural expression.
 
-### 1.3.2 Character Roles or "Spheres of Action"
+### 1.3.2 Character Roles or "Archetypes of Action"
    - Propp categorized characters into seven broad types based on their roles in the narrative:
      - **The Villain**: Opposes the hero.
      - **The Donor**: Prepares the hero or gives the hero some magical object.
@@ -55,11 +55,11 @@
 
 #### Definition
 
-- **Character roles**: Categories of characters identified by Vladimir Propp in his analysis of folktales. These roles define the functions that characters play within the narrative structure, each contributing to the progression of the story.
+- **Archetypes of Action**: Categories of characters identified by Vladimir Propp in his analysis of folktales. These roles define the functions that characters play within the narrative structure, each contributing to the progression of the story.
 
 #### Explanation
 
-- Propp identified seven distinct character roles or "spheres of action" that recur across various folktales. These roles are not limited to single characters but represent functions that can be fulfilled by one or more characters within the narrative. The seven roles are:
+- Propp identified seven distinct character roles or "Archetypes of Action" that recur across various folktales. These roles are not limited to single characters but represent functions that can be fulfilled by one or more characters within the narrative. The seven roles are:
      - **The Villain:** The antagonist who opposes the hero and creates obstacles.
      - **The Donor:** A character who prepares the hero or provides the hero with a magical object necessary for success in the quest.
      - **The Helper:** An ally who assists the hero throughout the journey, often providing support or guidance.
