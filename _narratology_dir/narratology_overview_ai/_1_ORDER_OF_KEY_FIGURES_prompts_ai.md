@@ -89,3 +89,16 @@ Provide an extensive and highly detailed overview of H. Beam Piper's contributio
 21. Claude Lévi-Strauss
 Provide an extensive and highly detailed overview of Claude Lévi-Strauss ontribution to Narratology focusing on his most influential work. 
 Also, provide topics of interest regarding his other contributions. format in markdown as a knowledgebase entry. place in a codebox for easy copy and paste
+
+
+---
+
+prompt  for key figures marked 2
+
+
+1 can you elaborate, define, and contextualize the following text regarding Marie-Laure Ryan's Contributions to Narratology. please focus on the topic. use bulletpoint formatting for legibility
+
+2 provide a title according to the appropriate academic structure (eg ' Genette's Metalepsis Model') (eg framework, model, etc)
+3 format each title according to this template: ### Title: **Genette's Architextual Model**
+
+3 format for markdown and put in a codebox
