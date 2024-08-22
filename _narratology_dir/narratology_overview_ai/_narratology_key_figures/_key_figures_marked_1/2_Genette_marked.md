@@ -18,24 +18,24 @@ One of Genette’s most influential works, *"Narrative Discourse: An Essay in Me
 2. **Five Key Narrative Categories**:
    Genette identified five central aspects of narrative that form the basis of his analysis:
 
-   - **Order**: The sequence in which events are presented in the narrative, which may differ from the chronological order of the story. This includes concepts like *anachrony*, *prolepsis* (flashforward), and *analepsis* (flashback).
+   - **Order**: The sequence in which events are presented in the narrative, which may differ from the chronological order of the story. This includes concepts like {== anachrony, prolepsis, analepsis ==}{>> find more concepts that fit, also define <<}*anachrony*, *prolepsis* (flashforward), and *analepsis* (flashback).
    
-   - **Duration**: The relationship between the time span covered by the story and the time taken to narrate it. This involves narrative techniques such as *ellipsis* (omitting periods of time), *summary* (condensing events), *scene* (direct depiction of events), and *pause* (interrupting the story to provide description or commentary).
+   - **Duration**: {== elaborate and find more techniques that fall under duration ==}{>> comment <<} The relationship between the time span covered by the story and the time taken to narrate it. This involves narrative techniques such as *ellipsis* (omitting periods of time), *summary* (condensing events), *scene* (direct depiction of events), and *pause* (interrupting the story to provide description or commentary).
    
-   - **Frequency**: How often events are narrated. Genette distinguishes between *singulative narration* (an event narrated once for each time it occurs), *repeating narration* (an event repeated several times in the narrative but occurring once in the story), and *iterative narration* (an event occurring multiple times but narrated only once).
+   - **Frequency**: {== find more concepts ==}{>> comment <<} How often events are narrated. Genette distinguishes between *singulative narration* (an event narrated once for each time it occurs), *repeating narration* (an event repeated several times in the narrative but occurring once in the story), and *iterative narration* (an event occurring multiple times but narrated only once).
    
-   - **Mood**: This refers to the perspective and distance between the narrator and the story. It includes the concept of *focalization*, which describes who sees or perceives the events of the story. Genette distinguishes between *zero focalization* (omniscient narrator), *internal focalization* (narrator knows only what a character knows), and *external focalization* (narrator knows less than the characters).
+   - **Mood**: {== find more concepts ==}{>> comment <<} This refers to the perspective and distance between the narrator and the story. It includes the concept of *focalization*, which describes who sees or perceives the events of the story. Genette distinguishes between *zero focalization* (omniscient narrator), *internal focalization* (narrator knows only what a character knows), and *external focalization* (narrator knows less than the characters).
    
-   - **Voice**: The narrative voice or the "who speaks" in the narrative. Genette's analysis of voice includes considerations of narrative levels (such as extradiegetic and intradiegetic narrators) and distinctions between *homodiegetic* (narrator is a character in the story) and *heterodiegetic* (narrator is not a character in the story) narration.
+   - **Voice**: {== find more concepts ==}{>> comment <<} The narrative voice or the "who speaks" in the narrative. Genette's analysis of voice includes considerations of narrative levels (such as extradiegetic and intradiegetic narrators) and distinctions between *homodiegetic* (narrator is a character in the story) and *heterodiegetic* (narrator is not a character in the story) narration.
 
 3. **Narrative Instances**:
-   - Genette introduced the concept of narrative instances to discuss the various positions a narrator can occupy relative to the narrative. These include the *extradiegetic* (narrator exists outside the story world) and *intradiegetic* (narrator exists within the story world) levels, as well as the *metadiegetic* level (a story within a story).
+   - {== needs more elaboration ==}{>> comment <<} Genette introduced the concept of narrative instances to discuss the various positions a narrator can occupy relative to the narrative. These include the *extradiegetic* (narrator exists outside the story world) and *intradiegetic* (narrator exists within the story world) levels, as well as the *metadiegetic* level (a story within a story).
 
 4. **Focalization**:
-   - Genette’s concept of focalization is a crucial element in his theory, where he differentiates between the *focus* (what is perceived) and the *focalizer* (who perceives). This approach allows for a nuanced analysis of narrative perspective, going beyond the traditional binary of first-person and third-person narration.
+   - {== define focalization ==}{>> comment <<} Genette’s concept of focalization is a crucial element in his theory, where he differentiates between the *focus* (what is perceived) and the *focalizer* (who perceives). This approach allows for a nuanced analysis of narrative perspective, going beyond the traditional binary of first-person and third-person narration.
 
 5. **Metalepsis**:
-   - Genette also introduced the concept of *metalepsis*, which refers to the transgression between different narrative levels (e.g., when a narrator from one level interferes with another). This concept has been particularly influential in the analysis of postmodern and experimental narratives.
+   - {== needs more elaboration on metalepsis ==}{>> comment <<} Genette also introduced the concept of *metalepsis*, which refers to the transgression between different narrative levels (e.g., when a narrator from one level interferes with another). This concept has been particularly influential in the analysis of postmodern and experimental narratives.
 
 ## "Narrative Discourse Revisited" (1983)
 
@@ -69,7 +69,7 @@ While *"Narrative Discourse"* and *"Narrative Discourse Revisited"* are central 
    - Genette's work is deeply rooted in structuralism, and he contributed to the development of structuralist poetics. He applied structuralist methods to literary analysis, seeking to uncover the underlying structures that govern narrative and textual production.
 
 4. **The Concept of "Architext"**:
-   - Genette coined the term *"architext"* to describe the set of generic expectations that guide the interpretation of a text. This concept, which he developed in *"The Architext: An Introduction"* (1992), explores how readers' assumptions about genre influence their understanding of a narrative.
+   - {== elaborate more on architext ==}{>> comment <<} Genette coined the term *"architext"* to describe the set of generic expectations that guide the interpretation of a text. This concept, which he developed in *"The Architext: An Introduction"* (1992), explores how readers' assumptions about genre influence their understanding of a narrative.
 
 5. **Temporal Structures in Narrative**:
    - Beyond the concepts of order, duration, and frequency, Genette also explored how narratives manipulate time. His analysis of temporal structures has been applied to various narrative forms, including film, where the manipulation of time plays a crucial role in storytelling.
