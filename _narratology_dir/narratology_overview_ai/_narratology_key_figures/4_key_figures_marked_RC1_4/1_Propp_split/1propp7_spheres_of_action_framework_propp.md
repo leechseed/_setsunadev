@@ -1,3 +1,12 @@
+---
+UID: "1propp7"
+Title: "Spheres of Action Framework"
+Author: "Propp"
+Date: "22/08/2024"
+Prima-Forma: "Artifex"
+Summary: "Seven broad character archetypes based on their roles and narrative functions"
+---
+
 ### Title: **Propp's Spheres of Action Framework**
 Vladimir Propp categorized characters in folktales into seven broad types based on their roles and functions within the narrative. These roles, or "Spheres of Action," are essential to understanding the structure of the tale and the relationship between characters.
 

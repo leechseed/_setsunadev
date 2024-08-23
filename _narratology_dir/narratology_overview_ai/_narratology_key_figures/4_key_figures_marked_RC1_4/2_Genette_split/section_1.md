@@ -1,3 +1,12 @@
+---
+UID: "2Genette5Key"
+Title: "Five Key Narrative Categories Framework"
+Author: "Genette"
+Date: "22/08/2024"
+Prima-Forma: "Organum"
+Summary: "Five Central Narrative Functions - Order, Duration, Frequency, Mood, Voice"
+---
+
 ### Title: **Genette's Five Key Narrative Categories Framework**
 
 Gérard Genette's approach to narratology is structured around five central narrative categories, which he meticulously analyzed to better understand how narratives function. These categories—Order, Duration, Frequency, Mood, and Voice—serve as foundational concepts in his analysis and have significantly influenced literary theory.
