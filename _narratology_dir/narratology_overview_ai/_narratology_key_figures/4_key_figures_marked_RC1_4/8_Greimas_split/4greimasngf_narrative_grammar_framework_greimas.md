@@ -4,8 +4,8 @@ Title: "Narrative Grammar Framework"
 Author: "Greimas"
 Date: "27/08/2024"
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
+  - "lexis"
+  - "syntax"
 Summary: "Narratives have a deep structure that can be analyzed using similar principals."
 ---
 
