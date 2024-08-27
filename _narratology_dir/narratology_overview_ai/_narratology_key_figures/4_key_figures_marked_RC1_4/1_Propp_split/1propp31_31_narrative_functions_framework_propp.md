@@ -3,7 +3,9 @@ UID: "1propp31"
 Title: "31 Narrative Functions Framework"
 Author: "Propp"
 Date: "22/08/2024"
-Prima-Forma: "Organum"
+Prima-Forma: 
+    - "corpus" 
+    - "narrative function"
 Summary: "31 narrative functions that follow a specific order in folktales, starting with an initial situation moving through subsequent stages"
 ---
 
