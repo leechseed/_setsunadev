@@ -8,13 +8,10 @@ Prima-Forma:
   - "meaning"
 Summary: "Isotopy is the coherence of meaning within a narrative."
 ---
-
-
-### Title: **Greimas's Isotopy Framework**
-
-- **Isotopy**:
-  - **Definition**: Greimas introduces the concept of *isotopy* to describe the coherence of meaning within a narrative. Isotopy refers to the repetition of semantic categories throughout a text, creating a consistent and unified interpretation.
+### Title: **Ryan's Interdisciplinary Approaches Framework**
+- **Interdisciplinary Approaches**:
+  - **Definition**: Ryan’s work is characterized by its interdisciplinary approach, drawing on insights from literature, cognitive science, media studies, and philosophy.
   - **Key Concepts**:
-    - **Semantic Coherence**:
-      - **Definition**: Isotopy ensures that different elements of a narrative contribute to a coherent overall meaning by repeating similar semantic categories.
-      - **Contextualization**: Analyzing isotopies within a narrative reveals how meaning is reinforced and maintained throughout the text, providing insights into the narrative’s thematic unity.
+    - **Cognitive Narratology**:
+      - **Definition**: She has contributed significantly to cognitive narratology, which explores how narratives engage and reflect human cognitive processes.
+      - **Contextualization**: This interdisciplinary framework enhances our understanding of narrative by integrating diverse perspectives, providing a holistic view of how narratives operate across different domains.
