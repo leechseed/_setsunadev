@@ -8,13 +8,13 @@ Prima-Forma:
   - "character"
 Summary: "Flat and Round characters describe different types of character development in narrative."
 ---
-
 ### Title: **Forster's Flat and Round Characters Model**
 
 - **Flat and Round Characters**:
   - **Definition**: E.M. Forster, in his influential work *Aspects of the Novel* (1927), introduces the concepts of *flat* and *round* characters to distinguish between different types of character development in narratives. This distinction is crucial for understanding how characters function within a story and how they contribute to its overall impact. Forster’s model remains a foundational concept in literary studies, offering a framework for analyzing character complexity and its effect on narrative dynamics.
 
   - **Key Concepts**:
+  
     - **Flat Characters**:
       - **Definition**: Flat characters are simple, one-dimensional figures who can be summed up in a single sentence or phrase. They are typically defined by a single trait or characteristic and do not undergo significant development or change throughout the story. Flat characters are often static, remaining consistent from beginning to end.
       - **Characteristics**:
