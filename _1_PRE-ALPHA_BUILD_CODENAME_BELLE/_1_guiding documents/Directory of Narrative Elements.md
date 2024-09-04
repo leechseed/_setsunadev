@@ -11,21 +11,7 @@
        - **Principal functions**: Actions that drive the narrative forward (e.g., the hero’s journey, confrontation with the villain).
        - **Resultative functions**: Actions leading to the resolution or conclusion of the story.
 
-## 2. **Space**
-   - **Narrative Space**
-     - **Spatialization**: The use of space within the narrative, not just as a setting but as a dynamic element that influences the plot and character actions. Gérard Genette's concept of "narrative space" explores how space functions within the narrative structure.
-
-## 3. **Character Dynamics**
-   - **Characterization**
-     - **Actants**: In narratology, characters are often analyzed as "actants," performing specific roles within the narrative structure, as seen in the work of A.J. Greimas.
-       - **Subject**: The protagonist or main actor.
-       - **Object**: The goal or desire that drives the narrative.
-       - **Sender**: The force that sends the subject on their quest.
-       - **Receiver**: Who or what the subject’s actions are directed towards.
-       - **Helper**: Allies that assist the subject.
-       - **Opponent**: Forces or characters that oppose the subject.
-
-## 4. **Rhetoric**
+## 2. **Rhetoric**
    - **Narrative Levels**
      - **Story (Histoire)**: The events, characters, and settings of the narrative—the content or raw material.
      - **Discourse (Discours)**: The expression or narration of the story—how the narrative is presented to the audience, including the point of view, style, and narrative voice.
@@ -45,7 +31,7 @@
      - **Narrative Tension**: The suspense or emotional intensity created by the narrative.
      - **Narrative Closure**: The degree to which a narrative resolves its conflicts and questions, providing a sense of completion.
 
-## 5. **Narrative Semantics**
+## 3. **Semantics**
    - **Genre and Narrative Codes**
      - **Genre**: The categorization of narrative based on its thematic, structural, and stylistic characteristics.
        - **Narrative Codes**: The conventions and norms that govern specific genres. Roland Barthes identified narrative codes such as the **hermeneutic code** (creating mystery and suspense) and the **proairetic code** (actions that imply further action or consequences).
@@ -57,6 +43,20 @@
    - **Theme**
      - **Definition**: The underlying message, central idea, or insight into life that the story conveys.
      - **Examples**: Love, revenge, power, fate, freedom, etc.
+
+## 4. **Character**
+   - **Characterization**
+     - **Actants**: In narratology, characters are often analyzed as "actants," performing specific roles within the narrative structure, as seen in the work of A.J. Greimas.
+       - **Subject**: The protagonist or main actor.
+       - **Object**: The goal or desire that drives the narrative.
+       - **Sender**: The force that sends the subject on their quest.
+       - **Receiver**: Who or what the subject’s actions are directed towards.
+       - **Helper**: Allies that assist the subject.
+       - **Opponent**: Forces or characters that oppose the subject.
+
+## 5. **Space**
+   - **Narrative Space**
+     - **Spatialization**: The use of space within the narrative, not just as a setting but as a dynamic element that influences the plot and character actions. Gérard Genette's concept of "narrative space" explores how space functions within the narrative structure.
 
 ## 6. **Time**
    - **Temporal Structures**
