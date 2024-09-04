@@ -1,15 +1,14 @@
 ---
+UID: 4BoothRFWM
+Title: Rhetoric of Fictional Worlds Model
 Author: Booth
 Date: 27/08/2024
-ELEMENT: SPACE
 Prima-Forma:
 - lexis
 - syntax
-Summary: The creation of a believable and coherent fictional world is a rhetorical
-  act, designed to immerse ther eader and make the narrative's events and characters
-  convincing.
-Title: Rhetoric of Fictional Worlds Model
-UID: 4BoothRFWM
+Summary: The creation of a believable and coherent fictional world is a rhetorical act, designed to immerse ther eader and make the narrative's events and characters convincing.
+ELEMENT: SPACE
+
 ---
 ### Title: **Booth's Rhetoric of Fictional Worlds Model**
 

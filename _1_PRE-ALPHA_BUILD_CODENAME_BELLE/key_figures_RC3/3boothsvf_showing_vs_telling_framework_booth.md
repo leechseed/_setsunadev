@@ -1,15 +1,15 @@
 ---
+UID: 3BoothSVF
+Title: 'Showing vs. Telling Framework '
 Author: Booth
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Two fundamental techniques in the discourse of narrative are showing and
-  telling.
-Title: 'Showing vs. Telling Framework '
-UID: 3BoothSVF
+Summary: Two fundamental techniques in the discourse of narrative are showing and telling.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Booth's Showing vs. Telling Framework**
 

@@ -1,14 +1,14 @@
 ---
+UID: 7HermanNWF
+Title: Narrative Worlds Framework
 Author: Herman
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Narrative Worlds are the imagined environments that narratives create, housing
-  characters and events.
-Title: Narrative Worlds Framework
-UID: 7HermanNWF
+Summary: Narrative Worlds are the imagined environments that narratives create, housing characters and events.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Herman's Narrative Worlds Framework**
 

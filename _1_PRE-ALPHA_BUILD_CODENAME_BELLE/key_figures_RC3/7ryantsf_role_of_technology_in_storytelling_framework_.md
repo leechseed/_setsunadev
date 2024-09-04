@@ -1,18 +1,15 @@
 ---
+UID: 7RyanTSF
+Title: Role of Technology in Storytelling Framework
 Author: Ryan
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 3:34:55 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: "Marie-Laure Ryan\u2019s *Role of Technology in Storytelling Framework* explores\
-  \ how technological advancements have transformed narrative forms, audience engagement,\
-  \ and storytelling practices. Her work examines the shift from print to digital\
-  \ media, highlighting how interactive and immersive technologies offer new storytelling\
-  \ possibilities and reshape the relationship between authors and audiences."
-Title: Role of Technology in Storytelling Framework
-UID: 7RyanTSF
+Summary: "Marie-Laure Ryans *Role of Technology in Storytelling Framework* explores  how technological advancements have transformed narrative forms, audience engagement,  and storytelling practices. Her work examines the shift from print to digital  media, highlighting how interactive and immersive technologies offer new storytelling  possibilities and reshape the relationship between authors and audiences."
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Ryan's Role of Technology in Storytelling Framework**
 

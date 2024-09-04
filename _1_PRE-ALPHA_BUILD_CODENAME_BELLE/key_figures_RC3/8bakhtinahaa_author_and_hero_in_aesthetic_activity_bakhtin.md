@@ -1,14 +1,14 @@
 ---
+UID: 8BakhtinAHAA
+Title: Author and Hero in Aesthetic Activity
 Author: Bakhtin
 Date: 27/08/2024
-ELEMENT: SPACE
 Prima-Forma:
 - taberna
 - perspective
-Summary: The designer's role is to construct the hero's world and the ethical implications
-  of this construction.
-Title: Author and Hero in Aesthetic Activity
-UID: 8BakhtinAHAA
+Summary: The designer's role is to construct the hero's world and the ethical implications of this construction.
+ELEMENT: SPACE
+
 ---
 ### Title: **Bakhtin's Author and Hero in Aesthetic Activity Concept**
 
@@ -36,4 +36,3 @@ UID: 8BakhtinAHAA
     - **Examples in Literature**:
       - **Fyodor Dostoevsky’s *Crime and Punishment***: Dostoevsky’s portrayal of Raskolnikov reflects deep ethical concerns, where the author’s control over the narrative serves to explore themes of guilt, redemption, and moral ambiguity. Bakhtin’s concept of authorial control is evident in how Dostoevsky constructs the hero’s psychological and moral journey.
       - **Leo Tolstoy’s *Anna Karenina***: Tolstoy’s narrative decisions, particularly in the portrayal of Anna’s fate, reveal the author’s ethical considerations in shaping the character’s world. The balance between aesthetic beauty and moral lessons in Tolstoy’s work aligns with Bakhtin’s exploration of the ethical responsibilities of the author.
-

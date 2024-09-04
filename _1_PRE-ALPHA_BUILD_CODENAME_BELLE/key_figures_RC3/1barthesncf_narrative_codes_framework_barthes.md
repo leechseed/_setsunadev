@@ -1,18 +1,15 @@
 ---
+UID: 1BarthesNCF
+Title: Narrative Codes Framework
 Author: Barthes
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 2:42:49 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: "Roland Barthes's *narrative codes* framework identifies five systems\u2014\
-  hermeneutic, proairetic, semantic, symbolic, and cultural\u2014that shape how readers\
-  \ interpret narratives. These codes allow readers to decode layers of meaning, revealing\
-  \ deeper symbolic and cultural significance while maintaining narrative tension\
-  \ and momentum, offering a multi-level engagement with the text."
-Title: Narrative Codes Framework
-UID: 1BarthesNCF
+Summary: "Roland Barthes's *narrative codes* framework identifies five systems hermeneutic, proairetic, semantic, symbolic, and culturalthat shape how readers  interpret narratives. These codes allow readers to decode layers of meaning, revealing  deeper symbolic and cultural significance while maintaining narrative tension  and momentum, offering a multi-level engagement with the text."
+ELEMENT: SEMANTICS
+  
 ---
 ### Title: **Barthes's Narrative Codes Framework**
 

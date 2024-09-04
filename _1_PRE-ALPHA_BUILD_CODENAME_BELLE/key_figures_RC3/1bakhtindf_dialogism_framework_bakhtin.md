@@ -1,14 +1,13 @@
 ---
+UID: 1BakhtinDF
+Title: Dialogism Framework
 Author: Bakhtin
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Prima-Forma:
 - syntax
 - lexis
-Summary: Dialogism is the concept that narrative is shaped by the interaction of multiple
-  voices each representing different perspectives, ideologies, and social positions.
-Title: Dialogism Framework
-UID: 1BakhtinDF
+Summary: Dialogism is the concept that narrative is shaped by the interaction of multiple voices each representing different perspectives, ideologies, and social positions.
+ELEMENT: SEMANTICS
 ---
 ### Title: **Bakhtin's Dialogism Framework**
 

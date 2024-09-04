@@ -1,18 +1,15 @@
 ---
+UID: 3ChatmanCEF
+Title: Character and Event Framework
 Author: Chatman
 Date: 27/08/2024
-ELEMENT: CHARACTER
 Last Edited: 9/4/2024, 3:40:36 AM
 Prima-Forma:
 - artifex
 - character
-Summary: Seymour Chatman's Character and Event Framework distinguishes between *kernel*
-  and *satellite* characters and events, identifying *kernel* elements as crucial
-  to the plot's progression, while *satellites* provide additional context and enrichment.
-  This model is vital for analyzing narrative structure and understanding how different
-  components contribute to the story's development and thematic depth.
-Title: Character and Event Framework
-UID: 3ChatmanCEF
+Summary: Seymour Chatman's Character and Event Framework distinguishes between *kernel* and *satellite* characters and events, identifying *kernel* elements as crucial to the plot's progression, while *satellites* provide additional context and enrichment. This model is vital for analyzing narrative structure and understanding how different components contribute to the story's development and thematic depth.
+ELEMENT: CHARACTER
+
 ---
 ### Title: **Chatman's Character and Event Framework**
 

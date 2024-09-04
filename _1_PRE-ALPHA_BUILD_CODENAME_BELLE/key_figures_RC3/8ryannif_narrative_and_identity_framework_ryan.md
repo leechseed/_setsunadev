@@ -1,15 +1,14 @@
 ---
+UID: 8RyanNIF
+Title: Narrative and Identity Framework
 Author: Ryan
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Narratives contribute to the construction of personal and collective identities
-  and how digital environments offer new possibillities for self-representation and
-  identity formation.
-Title: Narrative and Identity Framework
-UID: 8RyanNIF
+Summary: Narratives contribute to the construction of personal and collective identities and how digital environments offer new possibillities for self-representation and identity formation.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Tomashevsky's Narrative Devices Framework**
 

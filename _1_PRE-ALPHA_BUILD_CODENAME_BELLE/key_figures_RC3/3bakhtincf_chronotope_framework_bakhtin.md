@@ -1,14 +1,14 @@
 ---
+UID: 3BakhtinCF
+Title: Chronotope Framework
 Author: Bakhtin
 Date: 27/08/2024
-ELEMENT: TIME
 Prima-Forma:
 - fluus
 - time
-Summary: Chronotape refers to the way in which narratives structure time and space,
-  and how these structures shape the meaning and development of story.
-Title: Chronotope Framework
-UID: 3BakhtinCF
+Summary: Chronotape refers to the way in which narratives structure time and space, and how these structures shape the meaning and development of story.
+ELEMENT: TIME
+
 ---
 ### Title: **Bakhtin's Chronotope Framework**
 

@@ -1,14 +1,14 @@
 ---
+UID: 5GenetteArchitext
+Title: Architextual Model
 Author: Genette
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - taberna
 - perspective
-Summary: 'The 3 overarching set of generic conventions or expectations that influence
-  how a reader interprets text. '
-Title: Architextual Model
-UID: 5GenetteArchitext
+Summary: 'The 3 overarching set of generic conventions or expectations that influence how a reader interprets text. '
+ELEMENT: PERSPECTIVES
+
 ---
 ### Title: **Genette's Architextual Model**
 
@@ -52,4 +52,3 @@ UID: 5GenetteArchitext
     - **Application in Narrative Analysis**:
       - **Definition**: By applying the concept of architext, scholars can analyze how texts play with or adhere to genre conventions, offering insights into the broader cultural and literary context in which a text is situated. This can lead to a richer understanding of the narrative's place within its genre and its impact on the reader.
       - **Contextualization**: The architextual model is particularly useful in analyzing texts that blend or cross genres, creating hybrid forms that challenge traditional genre boundaries. For example, a text that combines elements of fantasy and historical fiction might be analyzed through its architextual cues to understand how it navigates the conventions of both genres and how it redefines the reader’s expectations. Additionally, the model can be applied to contemporary media, such as film and television, where genre blending and subversion are common techniques used to engage and surprise audiences.
-

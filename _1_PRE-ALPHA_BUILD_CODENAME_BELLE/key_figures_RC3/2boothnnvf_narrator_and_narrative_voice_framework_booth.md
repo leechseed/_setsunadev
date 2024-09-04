@@ -1,14 +1,14 @@
 ---
+UID: 2BoothNNVF
+Title: Narrator and Narrative Voice Framework
 Author: Booth
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - lexis
 - syntax
-Summary: 'Narrative voice affects the reader''s interpretation of the story: reliable
-  and unreliable narrator.'
-Title: Narrator and Narrative Voice Framework
-UID: 2BoothNNVF
+Summary: 'Narrative voice affects the reader''s interpretation of the story: reliable and unreliable narrator.'
+ELEMENT: PERSPECTIVES
+
 ---
 ### Title: **Booth's Narrator and Narrative Voice Framework**
 

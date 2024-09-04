@@ -1,14 +1,14 @@
 ---
+UID: 7BoothMDRAF
+Title: Modern Dogma and Rhetoric of Assent Framework
 Author: Booth
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: 'Rhetoric in narrative is used to persuade and how readers and audiences
-  navigate the complexities of rhetorical argumentation. '
-Title: Modern Dogma and Rhetoric of Assent Framework
-UID: 7BoothMDRAF
+Summary: 'Rhetoric in narrative is used to persuade and how readers and audiences navigate the complexities of rhetorical argumentation. '
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Booth's Modern Dogma and Rhetoric of Assent Framework**
 

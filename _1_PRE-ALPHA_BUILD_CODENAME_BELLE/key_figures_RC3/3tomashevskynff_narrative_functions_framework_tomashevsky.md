@@ -1,15 +1,15 @@
 ---
+UID: 3TomashevskyNFF
+Title: Narrative Functions Framework
 Author: Tomashevsky
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: 'Motif plays an essential function in advancing and/or developing the theme.
-  A motif is either a: bound motif or free motif.'
-Title: Narrative Functions Framework
-UID: 3TomashevskyNFF
+Summary: 'Motif plays an essential function in advancing and/or developing the theme. A motif is either a: bound motif or free motif.'
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Tomashevsky's Narrative Functions Framework**
 

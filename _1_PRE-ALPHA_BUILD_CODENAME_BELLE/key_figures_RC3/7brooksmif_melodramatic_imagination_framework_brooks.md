@@ -1,14 +1,14 @@
 ---
+UID: 7BrooksMIF
+Title: Melodramatic Imagination Framework
 Author: Brooks
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: 'Melodrama heightens emotional stakes and moral polarization and is central
-  to the development of the modern narrative: emotional stakes and moral polarization.'
-Title: Melodramatic Imagination Framework
-UID: 7BrooksMIF
+Summary: 'Melodrama heightens emotional stakes and moral polarization and is central to the development of the modern narrative: emotional stakes and moral polarization.'
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Brooks's Melodramatic Imagination Framework**
 

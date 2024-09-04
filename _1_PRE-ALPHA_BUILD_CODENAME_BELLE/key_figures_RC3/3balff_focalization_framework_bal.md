@@ -1,15 +1,14 @@
 ---
+UID: 3BalFF
+Title: Focalization Framework
 Author: Bal
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - taberna
 - perspective
-Summary: 'Focalization is the concept that destinguishes between agents who manipulate
-  narrative and agents who are manipulated and participate in the narrative: focalizer
-  and focalized.'
-Title: Focalization Framework
-UID: 3BalFF
+Summary: 'Focalization is the concept that destinguishes between agents who manipulate narrative and agents who are manipulated and participate in the narrative: focalizer and focalized.'
+ELEMENT: PERSPECTIVES
+
 ---
 ### Title: **Bal's Focalization Framework**
 

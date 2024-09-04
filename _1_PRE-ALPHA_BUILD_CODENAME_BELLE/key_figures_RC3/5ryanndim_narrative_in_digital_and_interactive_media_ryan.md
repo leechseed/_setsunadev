@@ -1,18 +1,15 @@
 ---
+UID: 5RyanNDIM
+Title: Narrative in Digital and Interactive Media
 Author: Ryan
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 3:31:49 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: Marie-Laure Ryan's *Narrative in Digital and Interactive Media* framework
-  explores how digital narratives, such as video games and hypertexts, challenge traditional
-  storytelling through interactivity, non-linearity, and immersion. Her work redefines
-  narrative forms in digital environments and influences media and game studies by
-  analyzing how user interactions shape narrative experiences.
-Title: Narrative in Digital and Interactive Media
-UID: 5RyanNDIM
+Summary: Marie-Laure Ryan's *Narrative in Digital and Interactive Media* framework explores how digital narratives, such as video games and hypertexts, challenge traditional storytelling through interactivity, non-linearity, and immersion. Her work redefines narrative forms in digital environments and influences media and game studies by analyzing how user interactions shape narrative experiences.
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Ryan's Narrative in Digital and Interactive Media Framework**
 

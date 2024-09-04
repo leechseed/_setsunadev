@@ -1,13 +1,13 @@
 ---
+UID: 7BakhtinSGF
+Title: Speech Genres Framework
 Author: Bakhtin
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Prima-Forma:
 - lexis
 - syntax
 Summary: Speech genres are the different forms of speech used in various social contexts
-Title: Speech Genres Framework
-UID: 7BakhtinSGF
+ELEMENT: SEMANTICS
 ---
 ### Title: **Bakhtin's Speech Genres Framework**
 

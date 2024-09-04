@@ -1,18 +1,15 @@
 ---
+UID: 4RyanPWTF
+Title: Possible Worlds Theory Framework
 Author: Ryan
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 3:24:32 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: Marie-Laure Ryan's *Possible Worlds Theory* explores how narratives create
-  and engage with alternative realities, allowing readers to imagine hypothetical
-  scenarios and counterfactual histories. This framework highlights the role of narrative
-  fiction in expanding cognitive and imaginative capacities by transcending the boundaries
-  of the real world.
-Title: Possible Worlds Theory Framework
-UID: 4RyanPWTF
+Summary: Marie-Laure Ryan's *Possible Worlds Theory* explores how narratives create and engage with alternative realities, allowing readers to imagine hypothetical scenarios and counterfactual histories. This framework highlights the role of narrative fiction in expanding cognitive and imaginative capacities by transcending the boundaries of the real world.
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Ryan's Possible Worlds Theory Framework**
 

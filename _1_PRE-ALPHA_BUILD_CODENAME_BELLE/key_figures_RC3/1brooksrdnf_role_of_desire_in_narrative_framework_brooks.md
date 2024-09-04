@@ -1,16 +1,17 @@
 ---
-UID: "1BrooksRDNF"
-Title: "Role of Desire in Narrative Framework"
-Author: "Brooks"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:45:41 AM"
+UID: 1BrooksRDNF
+Title: Role of Desire in Narrative Framework
+Author: Brooks
+Date: 27/08/2024
+Elaborated: 'True'
+Last Edited: 9/4/2024, 3:45:41 AM
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-  CAT: "FABULA"
-Summary: "Peter Brooks’ narrative theory, drawing from Freudian psychoanalysis, explores the underlying psychological drives such as the desire for closure, death drive (Thanatos), and pleasure principle (Eros) that propel stories toward their conclusion, shaping narrative structure and reader engagement."
-Elaborated: "True"---
+- corpus
+- narrative function
+Summary: "Peter Brooks narrative theory, drawing from Freudian psychoanalysis,  explores the underlying psychological drives such as the desire for closure, death  drive (Thanatos), and pleasure principle (Eros) that propel stories toward their  conclusion, shaping narrative structure and reader engagement."
+ELEMENT: STRUCTURE
+
+---
 ### **The Role of Desire in Narrative**
 
 - **Peter Brooks' Focus**:
@@ -140,17 +141,14 @@ Elaborated: "True"---
     - **Examples**: In *Breaking Bad* (the television series), the slow reveal of Walter White’s transformation into a criminal mastermind builds anticipation, making the moments of revelation and action more impactful.
 
 - **Context**:
-  - Anticipation drives the reader’s engagement with the narrative. It creates a sense of urgency and curiosity, motivating the reader to continue through the story to see how it resolves. The interplay between tension and anticipation is crucial for sustaining reader interest, as anticipation is both a response to and a product of narrative tension. As the plot progresses, anticipation builds, keeping the reader focused on the eventual resolution of the narrative’s conflicts.
----
+  - Anticipation drives the reader’s engagement with the narrative. It creates a sense of urgency and curiosity, motivating the reader to continue through the story to see how it resolves. The interplay between tension and anticipation is crucial for sustaining reader interest, as anticipation is both a response to and a product of narrative tension. As the plot progresses, anticipation builds, keeping the reader focused on the eventual resolution of the narrative’s conflicts.---
 ### **Contextualization**
 
 - **Brooks’ Theory**:
   - Provides a framework for understanding both the structural and psychological aspects of narratives. Brooks' use of psychoanalytic theory, particularly the concepts of the death drive and the pleasure principle, offers a deeper understanding of why narratives are structured the way they are and how they engage audiences on an emotional level.
   - Emphasizes how the quest for closure influences narrative pacing and reader experience. The movement toward closure is what drives the narrative forward, creating tension, anticipation, and ultimately satisfaction when the story concludes.
   - Explains why certain stories captivate audiences, with the tension and resolution driving the narrative’s effectiveness. By understanding the psychological underpinnings of narrative structure, we can see how stories are designed to evoke specific emotional responses from their audiences.
-
 ---
-
 ### **Conclusion**
 
 - **Peter Brooks’ Concept**:

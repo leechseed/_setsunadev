@@ -1,16 +1,15 @@
 ---
+UID: 2AbbottNGRI
+Title: Narrative Gaps and Reader Involvement
 Author: Abbott
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Narrative Gaps in a narrative are deliberate omissions or ambiguities that
-  invite the reader to actively participate in the story by filling in the missing
-  pieces.
-Title: Narrative Gaps and Reader Involvement
-UID: 2AbbottNGRI
+Summary: Narrative Gaps in a narrative are deliberate omissions or ambiguities that invite the reader to actively participate in the story by filling in the missing pieces.
+ELEMENT: STRUCTURE
+
 ---
 ### **Abbott's Narrative Gaps and Reader Involvement Framework**
 

@@ -1,17 +1,15 @@
 ---
+UID: 5GreimasIF
+Title: Isotopy Framework
 Author: Greimas
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 3:31:17 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: Greimas's *Isotopy Framework* explains how the repetition of semantic categories
-  throughout a narrative creates coherence and thematic unity. By reinforcing key
-  ideas and meanings, isotopy ensures consistency, guiding the reader to a unified
-  interpretation and helping clarify complex or ambiguous elements in the story.
-Title: Isotopy Framework
-UID: 5GreimasIF
+Summary: Greimas's *Isotopy Framework* explains how the repetition of semantic categories throughout a narrative creates coherence and thematic unity. By reinforcing key ideas and meanings, isotopy ensures consistency, guiding the reader to a unified interpretation and helping clarify complex or ambiguous elements in the story.
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Greimas's Isotopy Framework**
 

@@ -1,14 +1,14 @@
 ---
+UID: 1AbbottNPF
+Title: Narrative Perspective Framework
 Author: Abbott
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - taberna
 - perspective
 Summary: Focalization and Narrative Voice are two aspects crucial for understanding
+ELEMENT: PERSPECTIVES
   how stories are told and how they shape the reader's engagement with the narrative.
-Title: Narrative Perspective Framework
-UID: 1AbbottNPF
 ---
 ### Title: **Abbott's Narrative Perspective Framework**
 

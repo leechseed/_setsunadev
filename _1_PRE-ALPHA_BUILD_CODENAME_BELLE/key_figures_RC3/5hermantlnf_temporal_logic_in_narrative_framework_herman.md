@@ -1,14 +1,14 @@
 ---
+UID: 5HermanTLNF
+Title: Temporal Logic in Narrative Framework
 Author: Herman
 Date: 27/08/2024
-ELEMENT: TIME
 Prima-Forma:
 - fluus
 - time
-Summary: Temporal manipulation is a narrative technique which affects the reader's
-  perception of time within the narrative.
-Title: Temporal Logic in Narrative Framework
-UID: 5HermanTLNF
+Summary: Temporal manipulation is a narrative technique which affects the reader's perception of time within the narrative.
+ELEMENT: TIME
+
 ---
 ### Title: **Herman's Temporal Logic in Narrative Framework**
 
