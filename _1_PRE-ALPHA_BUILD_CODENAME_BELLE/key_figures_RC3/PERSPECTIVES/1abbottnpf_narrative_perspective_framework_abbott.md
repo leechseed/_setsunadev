@@ -6,9 +6,9 @@ Date: 27/08/2024
 Prima-Forma:
 - taberna
 - perspective
-Summary: Focalization and Narrative Voice are two aspects crucial for understanding
+Summary: Focalization and Narrative Voice are two aspects crucial for understanding how stories are told and how they shape the reader's engagement with the narrative.
 ELEMENT: PERSPECTIVES
-  how stories are told and how they shape the reader's engagement with the narrative.
+
 ---
 ### Title: **Abbott's Narrative Perspective Framework**
 
