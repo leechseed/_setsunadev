@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "fluus"
   - "time"
+DIR: "TIME"
 Summary: "Temporal manipulation is a technique that designers use to create suspense and delay resolution: analepsis and prolepsis."
 ---
 ### Title: **Brooks's Narrative Temporality Framework**

@@ -3,10 +3,12 @@ UID: "1BrooksRDNF"
 Title: "Role of Desire in Narrative Framework"
 Author: "Brooks"
 Date: "27/08/2024"
+Last Edited: "9/4/2024, 3:45:41 AM"
 Prima-Forma:
   - "corpus"
   - "narrative function"
-Summary: "Narratives are propelled by a deep-seated desire for closure."
+DIR: "STRUCTURE"
+Summary: "Peter Brooks’ narrative theory, drawing from Freudian psychoanalysis, explores the underlying psychological drives such as the desire for closure, death drive (Thanatos), and pleasure principle (Eros) that propel stories toward their conclusion, shaping narrative structure and reader engagement."
 Elaborated: "True"
 ---
 

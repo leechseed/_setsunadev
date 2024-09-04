@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "lexis"
   - "syntax"
+DIR: "SEMANTICS"
 Summary: "Heteroglossia is the coexistence of multiple forms of speech or social languages within a single text."
 Elaborated: "True"
 ---

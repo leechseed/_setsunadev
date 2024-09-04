@@ -3,12 +3,15 @@ UID: "1TodorovNSM"
 Title: "Narrative Syntax Model"
 Author: "Todorov"
 Date: "27/08/2024"
+Last Edited: "9/4/2024, 3:45:41 AM"
 Prima-Forma:
   - "corpus"
   - "narrative function"
-Summary: "Narrative has a formal progression that repeats thru three concepts: equilibrium, disequilibrium, restoration, and repeat"
+Summary: "Tzvetan Todorov’s Narrative Syntax Model outlines how stories progress through three stages: equilibrium, disequilibrium, and restoration of equilibrium, forming a foundational structure that helps analyze narrative progression and character development."
+
 Elaborated: "True"
 ---
+
 ### **Todorov's Narrative Syntax Model**
 
 - **Narrative Syntax**:

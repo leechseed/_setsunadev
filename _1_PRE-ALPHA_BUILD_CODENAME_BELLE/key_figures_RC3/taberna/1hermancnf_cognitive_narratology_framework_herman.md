@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "taberna"
   - "perspective"
+DIR: "SPACE"
 Summary: "Narrative is a fundamental cognitive tool that humans use to make sense of the world: organize experiences, construct identities, navigate social realties"
 ---
 

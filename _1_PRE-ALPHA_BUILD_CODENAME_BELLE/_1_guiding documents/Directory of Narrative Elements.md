@@ -11,7 +11,7 @@
        - **Principal functions**: Actions that drive the narrative forward (e.g., the hero’s journey, confrontation with the villain).
        - **Resultative functions**: Actions leading to the resolution or conclusion of the story.
 
-## 2. **Rhetoric**
+## 2. **Perspectives**
    - **Narrative Levels**
      - **Story (Histoire)**: The events, characters, and settings of the narrative—the content or raw material.
      - **Discourse (Discours)**: The expression or narration of the story—how the narrative is presented to the audience, including the point of view, style, and narrative voice.

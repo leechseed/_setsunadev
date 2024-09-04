@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "taberna"
   - "perspective"
+DIR: "PERSPECTIVES"
 Summary: "The implied author is distinct from the real author and the narrator. It represents the version of the author that the reader constructs based on the narrative's tone, style, and ethical stance."
 ---
 

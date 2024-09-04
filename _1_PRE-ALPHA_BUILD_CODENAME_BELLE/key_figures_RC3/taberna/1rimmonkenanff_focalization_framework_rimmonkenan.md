@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "taberna"
   - "perspective"
+DIR: "PERSPECTIVES"
 Summary: "The perspective through which a narrative is presented, focusing on who sees or perceives the events within the story."
 ---
 

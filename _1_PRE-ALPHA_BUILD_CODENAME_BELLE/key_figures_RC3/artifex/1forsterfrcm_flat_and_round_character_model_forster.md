@@ -3,11 +3,15 @@ UID: "1ForsterFRCM"
 Title: "Flat and Round Character Model"
 Author: "Forster"
 Date: "27/08/2024"
+Last Edited: "9/4/2024, 3:40:36 AM"
 Prima-Forma:
   - "artifex"
   - "character"
-Summary: "Flat and Round characters describe different types of character development in narrative."
+DIR: "CHARACTER"
+Summary: "E.M. Forster's *Flat and Round Characters* model distinguishes between flat characters, who are simple and unchanging, and round characters, who are complex and capable of growth. This distinction helps analyze character development in narratives and remains a foundational concept in literary studies."
+
 ---
+
 ### Title: **Forster's Flat and Round Characters Model**
 
 - **Flat and Round Characters**:
