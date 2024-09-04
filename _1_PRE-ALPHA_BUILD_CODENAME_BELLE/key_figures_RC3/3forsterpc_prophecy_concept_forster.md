@@ -1,14 +1,15 @@
 ---
-UID: "3ForsterPC"
-Title: "Prophecy Concept"
-Author: "Forster"
-Date: "27/08/2024"
+Author: Forster
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Prophecy is the deeper or often spiritual or philosophical dimension of certain novels."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Prophecy is the deeper or often spiritual or philosophical dimension of certain
+  novels.
+Title: Prophecy Concept
+UID: 3ForsterPC
 ---
 ### Title: **Forster's Prophecy Concept**
 

@@ -1,13 +1,14 @@
 ---
-UID: "5BrooksTEEM"
-Title: "Textual Energy and Entropy Model"
-Author: "Brooks"
-Date: "27/08/2024"
+Author: Brooks
+Date: 27/08/2024
+ELEMENT: STRUCTURE
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Textual Energy and Entropy describe the dispersal or dissipation towards the drive to narrative closure."
+- corpus
+- narrative function
+Summary: Textual Energy and Entropy describe the dispersal or dissipation towards
+  the drive to narrative closure.
+Title: Textual Energy and Entropy Model
+UID: 5BrooksTEEM
 ---
 ### Title: **Brooks's Textual Energy and Entropy Model**
 

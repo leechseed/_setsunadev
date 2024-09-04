@@ -1,17 +1,19 @@
 ---
-UID: "2GreimasSSM"
-Title: "Semiotic Square Model"
-Author: "Greimas"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:17:12 AM"
+Author: Greimas
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 3:17:12 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Greimas's *semiotic square* is a conceptual tool for mapping relationships between binary oppositions, contradictions, and complementary ideas within narratives. It visualizes how opposing concepts interact, providing a deeper understanding of thematic structures and their meaning-making processes, significantly influencing literary theory, cultural studies, and structuralism."
-
+- animus
+- meaning
+Summary: Greimas's *semiotic square* is a conceptual tool for mapping relationships
+  between binary oppositions, contradictions, and complementary ideas within narratives.
+  It visualizes how opposing concepts interact, providing a deeper understanding of
+  thematic structures and their meaning-making processes, significantly influencing
+  literary theory, cultural studies, and structuralism.
+Title: Semiotic Square Model
+UID: 2GreimasSSM
 ---
-
 ### Title: **Greimas's Semiotic Square Model**
 
 - **The Semiotic Square**:

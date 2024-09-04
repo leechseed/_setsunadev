@@ -1,17 +1,19 @@
 ---
-UID: "3GreimasAM"
-Title: "Actantial Model"
-Author: "Greimas"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:40:36 AM"
+Author: Greimas
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
+Last Edited: 9/4/2024, 3:40:36 AM
 Prima-Forma:
-  - "artifex"
-  - "character"
-DIR: "PERSPECTIVES"
-Summary: "Greimas's Actantial Model is a structuralist framework that identifies six key roles in narratives—Subject, Object, Sender, Receiver, Helper, and Opponent—allowing for the analysis of how characters and abstract entities interact to drive the story. This model offers a systematic way to examine narrative structures and is widely applied across various media and disciplines."
-
+- artifex
+- character
+Summary: "Greimas's Actantial Model is a structuralist framework that identifies six\
+  \ key roles in narratives\u2014Subject, Object, Sender, Receiver, Helper, and Opponent\u2014\
+  allowing for the analysis of how characters and abstract entities interact to drive\
+  \ the story. This model offers a systematic way to examine narrative structures\
+  \ and is widely applied across various media and disciplines."
+Title: Actantial Model
+UID: 3GreimasAM
 ---
-
 ### Title: **Greimas's Actantial Model**
 
 - **Actantial Model**:

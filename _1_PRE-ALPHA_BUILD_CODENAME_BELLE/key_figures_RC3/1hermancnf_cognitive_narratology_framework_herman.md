@@ -1,15 +1,15 @@
 ---
-UID: "1HermanCNF"
-Title: "Cognitive Narratology Framework"
-Author: "Herman"
-Date: "27/08/2024"
+Author: Herman
+Date: 27/08/2024
+ELEMENT: SPACE
 Prima-Forma:
-  - "taberna"
-  - "perspective"
-DIR: "SPACE"
-Summary: "Narrative is a fundamental cognitive tool that humans use to make sense of the world: organize experiences, construct identities, navigate social realties"
+- taberna
+- perspective
+Summary: 'Narrative is a fundamental cognitive tool that humans use to make sense
+  of the world: organize experiences, construct identities, navigate social realties'
+Title: Cognitive Narratology Framework
+UID: 1HermanCNF
 ---
-
 ### Title: **Herman's Cognitive Narratology Framework**
 
 - **Cognitive Narratology**:

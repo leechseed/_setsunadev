@@ -1,15 +1,15 @@
 ---
-UID: "2BoothNNVF"
-Title: "Narrator and Narrative Voice Framework"
-Author: "Booth"
-Date: "27/08/2024"
+Author: Booth
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
 Prima-Forma:
-  - "lexis"
-  - "syntax"
-DIR: "PERSPECTIVES"
-Summary: "Narrative voice affects the reader's interpretation of the story: reliable and unreliable narrator."
+- lexis
+- syntax
+Summary: 'Narrative voice affects the reader''s interpretation of the story: reliable
+  and unreliable narrator.'
+Title: Narrator and Narrative Voice Framework
+UID: 2BoothNNVF
 ---
-
 ### Title: **Booth's Narrator and Narrative Voice Framework**
 
 - **Narrator and Narrative Voice**:

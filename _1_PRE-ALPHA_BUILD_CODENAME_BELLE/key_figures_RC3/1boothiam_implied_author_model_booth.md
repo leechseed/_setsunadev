@@ -1,15 +1,16 @@
 ---
-UID: "1BoothIAM"
-Title: "Implied Author Model"
-Author: "Booth"
-Date: "27/08/2024"
+Author: Booth
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
 Prima-Forma:
-  - "taberna"
-  - "perspective"
-DIR: "PERSPECTIVES"
-Summary: "The implied author is distinct from the real author and the narrator. It represents the version of the author that the reader constructs based on the narrative's tone, style, and ethical stance."
+- taberna
+- perspective
+Summary: The implied author is distinct from the real author and the narrator. It
+  represents the version of the author that the reader constructs based on the narrative's
+  tone, style, and ethical stance.
+Title: Implied Author Model
+UID: 1BoothIAM
 ---
-
 ### Title: **Booth's Implied Author Model**
 
 - **Implied Author**:

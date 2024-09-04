@@ -1,15 +1,15 @@
 ---
-UID: "2Genette3NIF"
-Title: "Three Narrative Instances Framework"
-Author: "Genette"
-Date: "22/08/2024"
-Prima-Forma: 
-  - "taberna" 
-  - "perspective"
-DIR: "PERSPECTIVES"
-Summary: "The Narrator can operate at 3 different levels of narrative instances: extradiegetic, intradiegetic, or metadiagetic. "
+Author: Genette
+Date: 22/08/2024
+ELEMENT: PERSPECTIVES
+Prima-Forma:
+- taberna
+- perspective
+Summary: 'The Narrator can operate at 3 different levels of narrative instances: extradiegetic,
+  intradiegetic, or metadiagetic. '
+Title: Three Narrative Instances Framework
+UID: 2Genette3NIF
 ---
-
 ```markdown
 ### Title: **Genette's Narrative Instances Framework**
 

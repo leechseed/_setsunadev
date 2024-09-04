@@ -1,14 +1,15 @@
 ---
-UID: "2TodorovSANF"
-Title: "Deep Structures Framework"
-Author: "Todorov"
-Date: "27/08/2024"
+Author: Todorov
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Deep structures underpin narratives. Those deep structures are: Plot Functions, Character Functions, and Thematic Oppositions"
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: 'Deep structures underpin narratives. Those deep structures are: Plot Functions,
+  Character Functions, and Thematic Oppositions'
+Title: Deep Structures Framework
+UID: 2TodorovSANF
 ---
 ### **Todorov's Deep Structures Framework**
 

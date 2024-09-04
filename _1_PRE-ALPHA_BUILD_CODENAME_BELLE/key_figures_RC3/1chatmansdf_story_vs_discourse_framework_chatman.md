@@ -10,22 +10,15 @@ Prima-Forma:
 DIR: "STRUCTURE"
   CAT: "SZU"
 Summary: "Chatman’s Story vs. Discourse framework distinguishes between *story* (the content: events, characters, and settings) and *discourse* (the presentation: narrative voice, order of events, and style), providing a crucial tool for analyzing how narratives are structured and experienced across different media."
-Elaborated: "True"
----
-
+Elaborated: "True"---
 ### **Chatman's Story vs. Discourse Framework**
 
 - **Author**: Seymour Chatman
-- **Title**: Chatman's Story vs. Discourse Framework
-
----
-
+- **Title**: Chatman's Story vs. Discourse Framework---
 ### **Story vs. Discourse**
 
 - **Definition**: Seymour Chatman, a prominent narratologist, introduces a critical distinction between *story* and *discourse* in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.
-
 ---
-
 ### **Key Concepts**
 
 #### **Story**

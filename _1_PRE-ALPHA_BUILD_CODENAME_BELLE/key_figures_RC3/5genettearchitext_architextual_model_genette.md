@@ -1,13 +1,14 @@
 ---
-UID: "5GenetteArchitext"
-Title: "Architextual Model"
-Author: "Genette"
-Date: "27/08/2024"
-Prima-Forma: 
-  - "taberna" 
-  - "perspective"
-DIR: "PERSPECTIVES"
-Summary: "The 3 overarching set of generic conventions or expectations that influence how a reader interprets text. "
+Author: Genette
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
+Prima-Forma:
+- taberna
+- perspective
+Summary: 'The 3 overarching set of generic conventions or expectations that influence
+  how a reader interprets text. '
+Title: Architextual Model
+UID: 5GenetteArchitext
 ---
 ### Title: **Genette's Architextual Model**
 

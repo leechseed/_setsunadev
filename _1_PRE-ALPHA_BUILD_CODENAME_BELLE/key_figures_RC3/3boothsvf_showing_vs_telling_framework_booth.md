@@ -1,14 +1,15 @@
 ---
-UID: "3BoothSVF"
-Title: "Showing vs. Telling Framework "
-Author: "Booth"
-Date: "27/08/2024"
+Author: Booth
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Two fundamental techniques in the discourse of narrative are showing and telling."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Two fundamental techniques in the discourse of narrative are showing and
+  telling.
+Title: 'Showing vs. Telling Framework '
+UID: 3BoothSVF
 ---
 ### Title: **Booth's Showing vs. Telling Framework**
 

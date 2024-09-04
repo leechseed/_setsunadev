@@ -1,17 +1,19 @@
 ---
-UID: "3BarthesCLF"
-Title: "Camera Lucida Framework"
-Author: "Barthes"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:21:49 AM"
+Author: Barthes
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 3:21:49 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Roland Barthes's *Camera Lucida* explores photography's connection to memory, time, and mortality through two key concepts: *studium*, the intellectual engagement with a photograph, and *punctum*, the personal, emotional response it evokes. This framework distinguishes between universal and individual reactions to images, making it influential in photography criticism and visual media studies."
-
+- animus
+- meaning
+Summary: 'Roland Barthes''s *Camera Lucida* explores photography''s connection to
+  memory, time, and mortality through two key concepts: *studium*, the intellectual
+  engagement with a photograph, and *punctum*, the personal, emotional response it
+  evokes. This framework distinguishes between universal and individual reactions
+  to images, making it influential in photography criticism and visual media studies.'
+Title: Camera Lucida Framework
+UID: 3BarthesCLF
 ---
-
 Last Edited: "9/4/2024, 3:21:49 AM"
 ### Title: **Barthes's Camera Lucida Framework**
 

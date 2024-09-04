@@ -1,14 +1,15 @@
 ---
-UID: "4TomashevskyRIM"
-Title: "Reader Interaction Model"
-Author: "Tomashevsky"
-Date: "27/08/2024"
+Author: Tomashevsky
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Sjuzhet is constructed to guide the reader's attention and create specific effects such as suspense, surprise, or emotional engagement."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Sjuzhet is constructed to guide the reader's attention and create specific
+  effects such as suspense, surprise, or emotional engagement.
+Title: Reader Interaction Model
+UID: 4TomashevskyRIM
 ---
 ### Title: **Tomashevsky's Reader Interaction Model**
 

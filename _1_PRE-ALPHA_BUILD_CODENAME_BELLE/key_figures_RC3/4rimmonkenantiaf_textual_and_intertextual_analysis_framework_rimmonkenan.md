@@ -1,18 +1,19 @@
 ---
-UID: "4RimmonKenanTIAF"
-Title: "Textual and Intertextual Analysis Framework"
-Author: "Rimmon-Kenan"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:24:01 AM "
+Author: Rimmon-Kenan
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: '9/4/2024, 3:24:01 AM '
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Shlomith Rimmon-Kenan's *Textual and Intertextual Analysis* framework examines narratives both internally and in relation to other texts. By integrating textual analysis with intertextual connections, her approach uncovers deeper layers of meaning, offering a comprehensive understanding of how narratives function within literary and cultural contexts."
-
+- animus
+- meaning
+Summary: Shlomith Rimmon-Kenan's *Textual and Intertextual Analysis* framework examines
+  narratives both internally and in relation to other texts. By integrating textual
+  analysis with intertextual connections, her approach uncovers deeper layers of meaning,
+  offering a comprehensive understanding of how narratives function within literary
+  and cultural contexts.
+Title: Textual and Intertextual Analysis Framework
+UID: 4RimmonKenanTIAF
 ---
-
-
 ### Title: **Rimmon-Kenan's Textual and Intertextual Analysis Framework**
 
 - **Textual and Intertextual Analysis**:

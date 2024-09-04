@@ -1,15 +1,14 @@
 ---
-UID: "6BakhtinPF"
-Title: "Polyphony Framework"
-Author: "Bakhtin"
-Date: "27/08/2024"
+Author: Bakhtin
+Date: 27/08/2024
+ELEMENT: SEMANTICS
 Prima-Forma:
-  - "lexis"
-  - "syntax"
-DIR: "SEMANTICS"
-Summary: "Polyphony is the presence of multiple independent voices within the text."
+- lexis
+- syntax
+Summary: Polyphony is the presence of multiple independent voices within the text.
+Title: Polyphony Framework
+UID: 6BakhtinPF
 ---
-
 ### Title: **Bakhtin's Polyphony Framework**
 
 - **Polyphony**:

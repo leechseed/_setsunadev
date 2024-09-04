@@ -1,16 +1,15 @@
 ---
-UID: "3BrooksMSMF"
-Title: "Middle as a Site of Meaning Framework"
-Author: "Brooks"
-Date: "27/08/2024"
+Author: Brooks
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Prioritizing the middle of stories is crucial for the development of meaning."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Prioritizing the middle of stories is crucial for the development of meaning.
+Title: Middle as a Site of Meaning Framework
+UID: 3BrooksMSMF
 ---
-
 ### Title: **Brooks's Middle as a Site of Meaning Framework**
 
 - **The Middle as a Site of Meaning**:

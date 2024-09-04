@@ -1,15 +1,14 @@
 ---
-UID: "7BakhtinSGF"
-Title: "Speech Genres Framework"
-Author: "Bakhtin"
-Date: "27/08/2024"
+Author: Bakhtin
+Date: 27/08/2024
+ELEMENT: SEMANTICS
 Prima-Forma:
-  - "lexis"
-  - "syntax"
-DIR: "SEMANTICS"
-Summary: "Speech genres are the different forms of speech used in various social contexts"
+- lexis
+- syntax
+Summary: Speech genres are the different forms of speech used in various social contexts
+Title: Speech Genres Framework
+UID: 7BakhtinSGF
 ---
-
 ### Title: **Bakhtin's Speech Genres Framework**
 
 - **Speech Genres**:

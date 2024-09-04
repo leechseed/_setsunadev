@@ -1,17 +1,19 @@
 ---
-UID: "1GreimasSNSF"
-Title: "Semio-Narrative Structure Framework"
-Author: "Greimas"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 2:43:17 AM"
+Author: Greimas
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 2:43:17 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Algirdas Julien Greimas's *semio-narrative structure* framework explains how meaning is generated through semes, the smallest units of meaning, which form complex structures in narratives. His structural analysis examines relationships between semes, revealing the underlying logic and thematic cohesion, with significant influence on narrative theory, semiotics, and media studies."
-
+- animus
+- meaning
+Summary: Algirdas Julien Greimas's *semio-narrative structure* framework explains
+  how meaning is generated through semes, the smallest units of meaning, which form
+  complex structures in narratives. His structural analysis examines relationships
+  between semes, revealing the underlying logic and thematic cohesion, with significant
+  influence on narrative theory, semiotics, and media studies.
+Title: Semio-Narrative Structure Framework
+UID: 1GreimasSNSF
 ---
-
 ### Title: **Greimas's Semio-Narrative Structure Framework**
 
 - **The Semio-Narrative Structure**:

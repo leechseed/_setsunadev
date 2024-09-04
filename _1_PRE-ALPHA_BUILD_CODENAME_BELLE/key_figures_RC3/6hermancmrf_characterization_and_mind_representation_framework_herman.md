@@ -1,16 +1,18 @@
 ---
-UID: "6HermanCMRF"
-Title: "Characterization and Mind Representation Framework"
-Author: "Herman"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:40:36 AM"
+Author: Herman
+Date: 27/08/2024
+ELEMENT: CHARACTER
+Last Edited: 9/4/2024, 3:40:36 AM
 Prima-Forma:
-  - "artifex"
-  - "character"
-DIR: "CHARACTER"
-Summary: "David Herman’s *Characterization and Mind Representation Framework* explores how narratives depict characters' mental states, emotions, and motivations through techniques like interior monologue and stream of consciousness, offering insights into character complexity and reader empathy."
+- artifex
+- character
+Summary: "David Herman\u2019s *Characterization and Mind Representation Framework*\
+  \ explores how narratives depict characters' mental states, emotions, and motivations\
+  \ through techniques like interior monologue and stream of consciousness, offering\
+  \ insights into character complexity and reader empathy."
+Title: Characterization and Mind Representation Framework
+UID: 6HermanCMRF
 ---
-
 ### Title: **Herman's Characterization and Mind Representation Framework**
 
 - **Characterization and Mind Representation**:

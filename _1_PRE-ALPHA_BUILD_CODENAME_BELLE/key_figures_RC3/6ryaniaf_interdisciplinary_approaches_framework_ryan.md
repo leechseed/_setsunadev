@@ -1,19 +1,19 @@
 ---
-UID: "6RyanIAF"
-Title: "Interdisciplinary Approaches Framework"
-Author: "Ryan"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:32:31 AM"
+Author: Ryan
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 3:32:31 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Marie-Laure Ryan’s *Interdisciplinary Approaches Framework* integrates insights from literature, cognitive science, media studies, and philosophy to provide a nuanced understanding of narrative. Her work, particularly in cognitive narratology, explores how narratives engage human cognitive processes, enriching narrative theory by blending diverse disciplinary perspectives."
-
-
+- animus
+- meaning
+Summary: "Marie-Laure Ryan\u2019s *Interdisciplinary Approaches Framework* integrates\
+  \ insights from literature, cognitive science, media studies, and philosophy to\
+  \ provide a nuanced understanding of narrative. Her work, particularly in cognitive\
+  \ narratology, explores how narratives engage human cognitive processes, enriching\
+  \ narrative theory by blending diverse disciplinary perspectives."
+Title: Interdisciplinary Approaches Framework
+UID: 6RyanIAF
 ---
-
-
 ### Title: **Ryan's Interdisciplinary Approaches Framework**
 
 - **Interdisciplinary Approaches**:

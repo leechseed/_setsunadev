@@ -1,17 +1,19 @@
 ---
-UID: "1propp7"
-Title: "Spheres of Action Framework"
-Author: "Propp"
-Date: "22/08/2024"
-Last Edited: "9/4/2024, 3:40:36 AM"
-Prima-Forma: 
-   - "artifex" 
-   - "character"
-DIR: "CHARACTER"
-Summary: "Vladimir Propp’s *Spheres of Action* framework categorizes characters in folktales into seven archetypal roles, such as the hero, villain, and donor, to reveal their function in driving the narrative. This model highlights the universal structure of storytelling by showing how these roles contribute to the plot and thematic depth."
-
+Author: Propp
+Date: 22/08/2024
+ELEMENT: CHARACTER
+Last Edited: 9/4/2024, 3:40:36 AM
+Prima-Forma:
+- artifex
+- character
+Summary: "Vladimir Propp\u2019s *Spheres of Action* framework categorizes characters\
+  \ in folktales into seven archetypal roles, such as the hero, villain, and donor,\
+  \ to reveal their function in driving the narrative. This model highlights the universal\
+  \ structure of storytelling by showing how these roles contribute to the plot and\
+  \ thematic depth."
+Title: Spheres of Action Framework
+UID: 1propp7
 ---
-
 ### Title: **Propp's Spheres of Action Framework**
 
 Vladimir Propp, in his seminal work *Morphology of the Folktale* (1928), developed a framework for categorizing characters in folktales into seven broad types based on their roles and functions within the narrative. These roles, or "Spheres of Action," are fundamental to understanding the structure of folktales and the interactions between characters. Propp's analysis reveals that despite the diversity of characters across different tales, their roles within the narrative often conform to these archetypal functions, which are essential for driving the plot and fulfilling the narrative’s thematic goals.

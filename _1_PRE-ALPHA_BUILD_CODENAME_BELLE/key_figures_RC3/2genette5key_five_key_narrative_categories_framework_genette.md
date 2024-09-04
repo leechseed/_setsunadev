@@ -1,14 +1,14 @@
 ---
-UID: "2Genette5Key"
-Title: "Five Key Narrative Categories Framework"
-Author: "Genette"
-Date: "22/08/2024"
-Prima-Forma: 
-  - "corpus" 
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Five Central Narrative Functions - Order, Duration, Frequency, Mood, Voice"
-Elaborated: "True"
+Author: Genette
+Date: 22/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
+Prima-Forma:
+- corpus
+- narrative function
+Summary: Five Central Narrative Functions - Order, Duration, Frequency, Mood, Voice
+Title: Five Key Narrative Categories Framework
+UID: 2Genette5Key
 ---
 ### **Genette's Five Key Narrative Categories Framework**
 

@@ -1,15 +1,15 @@
 ---
-UID: "7TomashevskyNDF"
-Title: "Narrative Devices Framework"
-Author: "Tomashevsky"
-Date: "27/08/2024"
+Author: Tomashevsky
+Date: 27/08/2024
+ELEMENT: STRUCTURE
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Narrative devices such as irony, allegory, and symbolism contribute to shaping the reader's experience."
+- corpus
+- narrative function
+Summary: Narrative devices such as irony, allegory, and symbolism contribute to shaping
+  the reader's experience.
+Title: Narrative Devices Framework
+UID: 7TomashevskyNDF
 ---
-
 ### Title: **Herman's Narrative Worlds Framework**
 
 - **Narrative Worlds**:

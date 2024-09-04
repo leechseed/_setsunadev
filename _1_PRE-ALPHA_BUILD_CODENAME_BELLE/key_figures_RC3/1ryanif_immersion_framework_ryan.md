@@ -1,19 +1,19 @@
 ---
-UID: "1RyanIF"
-Title: "Immersion Framework"
-Author: "Ryan"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:45:41 AM"
+Author: Ryan
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
+Last Edited: 9/4/2024, 3:45:41 AM
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Marie-Laure Ryan's Immersion Framework analyzes how traditional and digital narratives create immersive experiences, highlighting the role of sensory engagement, interactivity, and narrative techniques in transporting readers or viewers into fictional worlds."
-
-
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Marie-Laure Ryan's Immersion Framework analyzes how traditional and digital
+  narratives create immersive experiences, highlighting the role of sensory engagement,
+  interactivity, and narrative techniques in transporting readers or viewers into
+  fictional worlds.
+Title: Immersion Framework
+UID: 1RyanIF
 ---
-
 ### **Ryan's Immersion Framework**
 
 - **Immersion**:
