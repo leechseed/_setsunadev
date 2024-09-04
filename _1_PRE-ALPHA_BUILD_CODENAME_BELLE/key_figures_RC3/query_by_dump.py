@@ -9,27 +9,33 @@ base_directory = script_directory
 # Directory where all the Markdown files will be dumped
 target_directory = script_directory
 
-# Iterate over each item in the base directory
-for subdir in os.listdir(base_directory):
-    subdir_path = os.path.join(base_directory, subdir)
+# Walk through the base directory recursively
+for root, subdirs, files in os.walk(base_directory):
+    if root == target_directory:
+        continue  # Skip the target directory
     
-    if os.path.isdir(subdir_path) and subdir_path != target_directory:  # Check if it's a directory and not the target directory
-        # Iterate over each file in the subdirectory
-        for filename in os.listdir(subdir_path):
-            if filename.endswith(".md"):
-                file_path = os.path.join(subdir_path, filename)
-                
-                # Handle filename conflicts
-                target_path = os.path.join(target_directory, filename)
-                if os.path.exists(target_path):
-                    base, ext = os.path.splitext(filename)
-                    target_path = os.path.join(target_directory, f"{base}_{subdir}{ext}")
-                
-                # Move the file to the target directory
-                shutil.move(file_path, target_path)
-                print(f'Moved: {filename} from {subdir_path} to {target_directory}')
+    for filename in files:
+        if filename.endswith(".md"):
+            file_path = os.path.join(root, filename)
+            
+            # Handle filename conflicts
+            target_path = os.path.join(target_directory, filename)
+            if os.path.exists(target_path):
+                base, ext = os.path.splitext(filename)
+                # Append the folder name from where the file is coming to avoid conflicts
+                target_path = os.path.join(target_directory, f"{base}_{os.path.basename(root)}{ext}")
+            
+            # Move the file to the target directory
+            shutil.move(file_path, target_path)
+            print(f'Moved: {filename} from {root} to {target_directory}')
 
-        # After moving files, delete the now-empty subdirectory
-        if not os.listdir(subdir_path):  # Check if the directory is empty
-            os.rmdir(subdir_path)
-            print(f'Deleted empty directory: {subdir_path}')
+# After moving all files, clean up empty subdirectories
+for root, subdirs, files in os.walk(base_directory, topdown=False):
+    # Skip the target directory
+    if root == target_directory:
+        continue
+    
+    # Remove subdirectories if they are empty
+    if not os.listdir(root):
+        os.rmdir(root)
+        print(f'Deleted empty directory: {root}')

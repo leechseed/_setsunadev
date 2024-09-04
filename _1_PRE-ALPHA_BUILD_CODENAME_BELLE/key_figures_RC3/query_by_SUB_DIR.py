@@ -10,17 +10,8 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 input_directory = script_directory
 base_output_directory = script_directory
 
-# YAML frontmatter category and subcategories
-query_categories = {
-    "STRUCTURE": ["ARCHITECTURE", "DESIGN"],
-    "PERSPECTIVES": ["VIEWPOINTS", "ANGLES"],
-    "SEMANTICS": ["MEANING", "INTERPRETATION"],
-    "CHARACTER": ["PERSONALITY", "TRAITS"],
-    "SPACE": ["DIMENSION", "LOCATION"],
-    "TIME": ["HISTORICAL", "TEMPORAL"]
-}
-
-# Special case handling for STRUCTURE and CAT
+# YAML frontmatter valid categories
+valid_categories = ["STRUCTURE", "PERSPECTIVES", "SEMANTICS", "CHARACTER", "SPACE", "TIME"]
 special_structure_subcategories = ["FABULA", "SZU"]
 
 # Function to extract YAML frontmatter
@@ -48,33 +39,31 @@ for filename in os.listdir(input_directory):
 
         # Extract the YAML frontmatter
         yaml_data = extract_yaml_frontmatter(content)
-        
-        if yaml_data and 'DIR' in yaml_data:
-            # Extract category and subcategory
-            dir_data = yaml_data['DIR']
-            category = dir_data.get('category', '').strip().upper()
-            subcategory = dir_data.get('subcategory', '').strip().upper()
 
-            # Handle special case for STRUCTURE and CAT
-            if category == "STRUCTURE" and 'CAT' in dir_data:
-                cat_value = dir_data.get('CAT', '').strip().upper()
-                if cat_value in special_structure_subcategories:
-                    output_directory = os.path.join(base_output_directory, category, cat_value)
-                    os.makedirs(output_directory, exist_ok=True)
+        # Debug print
+        print(f'Processing file: {filename}')
+        print(f'YAML data: {yaml_data}')
+        
+        if yaml_data:
+            dir_value = yaml_data.get('DIR', '').strip().upper()
+            subcategory = yaml_data.get('SUBCATEGORY', '').strip().upper()
+
+            # Handle special case for STRUCTURE with subcategories
+            if dir_value == "STRUCTURE" and subcategory:
+                if subcategory in special_structure_subcategories:
+                    output_directory = os.path.join(base_output_directory, dir_value, subcategory)
                 else:
-                    output_directory = os.path.join(base_output_directory, category)
+                    output_directory = os.path.join(base_output_directory, dir_value)
             else:
                 # Handle general categories and subcategories
-                if category in query_categories:
-                    if subcategory in query_categories[category]:
-                        output_directory = os.path.join(base_output_directory, category, subcategory)
-                        os.makedirs(output_directory, exist_ok=True)
-                    else:
-                        print(f'Unrecognized subcategory in file: {filename}')
-                        continue
+                if dir_value in valid_categories:
+                    output_directory = os.path.join(base_output_directory, dir_value)
                 else:
                     print(f'Unrecognized category in file: {filename}')
                     continue
+
+            # Create the output directory if it does not exist
+            os.makedirs(output_directory, exist_ok=True)
 
             # Move the file to the appropriate output directory
             try:
@@ -83,4 +72,4 @@ for filename in os.listdir(input_directory):
             except Exception as e:
                 print(f"Error moving file {filename}: {e}")
         else:
-            print(f'No DIR field in file: {filename}')
+            print(f'No valid YAML data in file: {filename}')
