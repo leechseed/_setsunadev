@@ -6,7 +6,7 @@ Date: "27/08/2024"
 Prima-Forma: 
   - "taberna" 
   - "perspective"
-DIR: "DIR: "PERSPECTIVE"
+DIR: "PERSPECTIVES"
 Summary: "The 3 overarching set of generic conventions or expectations that influence how a reader interprets text. "
 ---
 ### Title: **Genette's Architextual Model**

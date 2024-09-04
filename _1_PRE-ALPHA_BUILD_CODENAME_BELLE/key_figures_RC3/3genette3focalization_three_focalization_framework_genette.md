@@ -6,7 +6,7 @@ Date: "27/08/2024"
 Prima-Forma: 
   - "taberna" 
   - "perspective"
-DIR: "PERSPECTIVE"
+DIR: "PERSPECTIVES"
 Summary: "Focalization is the relationship between the narrative and the perspective from which events are perceived. Those three focalizations are: zero, internal, external."
 ---
 
