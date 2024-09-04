@@ -8,6 +8,7 @@ Prima-Forma:
   - "corpus"
   - "narrative function"
 DIR: "STRUCTURE"
+  CAT: "SZU"
 Summary: "Chatman’s Story vs. Discourse framework distinguishes between *story* (the content: events, characters, and settings) and *discourse* (the presentation: narrative voice, order of events, and style), providing a crucial tool for analyzing how narratives are structured and experienced across different media."
 Elaborated: "True"
 ---
