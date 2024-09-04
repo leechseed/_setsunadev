@@ -32,17 +32,27 @@
      - **Narrative Closure**: The degree to which a narrative resolves its conflicts and questions, providing a sense of completion.
 
 ## 3. **Rhetoric**
-   - **Genre and Narrative Codes**
-     - **Genre**: The categorization of narrative based on its thematic, structural, and stylistic characteristics.
-       - **Narrative Codes**: The conventions and norms that govern specific genres. Roland Barthes identified narrative codes such as the **hermeneutic code** (creating mystery and suspense) and the **proairetic code** (actions that imply further action or consequences).
-   - **Intertextuality**
-     - **Intertextuality**: The relationship between this narrative and other texts. Narratives often reference, echo, or transform other narratives, creating layers of meaning.
-       - **Allusion**: Direct or indirect references to other texts.
-       - **Parody**: Imitation with a critical or humorous twist.
-       - **Pastiche**: A work that imitates the style or character of the works of one or more other artists, often celebrating rather than mocking the original.
-   - **Theme**
-     - **Definition**: The underlying message, central idea, or insight into life that the story conveys.
-     - **Examples**: Love, revenge, power, fate, freedom, etc.
+- **Genre Codes**
+  - **Definition**: The set of conventions, norms, and structures that govern specific genres, shaping how narratives are constructed and interpreted.
+  - **Examples**:
+    - **Tropal Code**: Specific narrative conventions that guide the progression of stories within particular genres.
+    - **Hermeneutic Code**: Creating mystery and suspense.
+    - **Proairetic Code**: Actions that imply further action or consequences.
+    - **Symbolic Code**: Use of symbols to represent ideas and concepts.
+    - **Cultural Code**: References to knowledge shared within a specific culture.
+    - **Fantasy Code**: The deliberate use of genre-specific elements that audiences expect and enjoy, such as magical systems, epic quests, and mythical creatures, offering familiar tropes for fan satisfaction.
+
+- **Intertextuality**
+  - **Definition**: The relationship between this narrative and other texts.
+  - **Subtypes**:
+    - **Allusion**: Direct or indirect references to other texts.
+    - **Parody**: Imitation with a critical or humorous twist.
+    - **Pastiche**: A work that imitates the style or character of other works, often celebrating rather than mocking the original.
+
+- **Theme**
+  - **Definition**: The underlying message, central idea, or insight into life that the story conveys.
+  - **Examples**: Love, revenge, power, fate, freedom, etc.
+
 
 ## 4. **Character**
    - **Characterization**

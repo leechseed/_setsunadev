@@ -7,7 +7,7 @@ Last Edited: 9/4/2024, 2:42:49 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: "Roland Barthes's *narrative codes* framework identifies five systems hermeneutic, proairetic, semantic, symbolic, and culturalthat shape how readers  interpret narratives. These codes allow readers to decode layers of meaning, revealing  deeper symbolic and cultural significance while maintaining narrative tension  and momentum, offering a multi-level engagement with the text."
+Summary: "Roland Barthes's *narrative codes* framework identifies five systems hermeneutic, proairetic, semantic, symbolic, and cultural that shape how readers  interpret narratives. These codes allow readers to decode layers of meaning, revealing  deeper symbolic and cultural significance while maintaining narrative tension  and momentum, offering a multi-level engagement with the text."
 ELEMENT: RHETORIC
   
 ---
