@@ -8,7 +8,7 @@ Prima-Forma:
 - animus
 - meaning
 Summary: Marie-Laure Ryan's *Possible Worlds Theory* explores how narratives create and engage with alternative realities, allowing readers to imagine hypothetical scenarios and counterfactual histories. This framework highlights the role of narrative fiction in expanding cognitive and imaginative capacities by transcending the boundaries of the real world.
-ELEMENT: RHETORIC
+ELEMENT: SPACE
 
 ---
 ### Title: **Ryan's Possible Worlds Theory Framework**
