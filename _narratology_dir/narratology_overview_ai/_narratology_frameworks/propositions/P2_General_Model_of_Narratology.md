@@ -1,3 +1,5 @@
+# P2_General_Model_of_Narratology
+
 **TL;DR:**
 - The "General Model of Narratology" offers the most effective, standardized framework for studying narratives across all disciplines.
 

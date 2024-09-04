@@ -1,3 +1,5 @@
+# P5_Modern_Entertainment_Demands
+
 **TL;DR:** The modern entertainment market requires multi-dimensional narratives that transcend single-medium storytelling, captivating audiences by operating across multiple platforms for a richer, more immersive experience.
 
 **Proposition:**  

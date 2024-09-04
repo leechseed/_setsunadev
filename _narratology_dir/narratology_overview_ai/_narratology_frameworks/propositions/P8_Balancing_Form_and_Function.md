@@ -1,4 +1,5 @@
 
+# P8_Balancing_Form_and_Function
 
 **TL;DR:** A universal model is essential to balance market demands with artistic creativity in creating acclaimed intellectual properties. The General Model of Narrativity achieves this by leveraging modern data methodologies, including graph modeling, vector modeling, and NoSQL, to support complex contemporary narratives.
 
