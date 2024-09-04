@@ -1,4 +1,5 @@
 
+# P6_Narrative_Intellectual_Property
 
 **TL;DR:** Modern narratives, better termed "intellectual property," must evolve to meet the demands of a rapidly changing technological, consumer, and cultural landscape. Unlike traditional single-medium stories, today's market requires complex, multi-dimensional narratives that engage across multiple platforms, ensuring relevance and audience engagement.
 

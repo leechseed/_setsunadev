@@ -1,4 +1,4 @@
-### The Value of Analyzing Narratives Across Intertextual Fields
+# p3 The Value of Analyzing Narratives Across Intertextual Fields
 
 ---
 **TL;DR**: Analyzing narratives across intertextual fields uncovers universal structures, enhances cultural and social insights, and drives innovation and problem-solving across disciplines.
