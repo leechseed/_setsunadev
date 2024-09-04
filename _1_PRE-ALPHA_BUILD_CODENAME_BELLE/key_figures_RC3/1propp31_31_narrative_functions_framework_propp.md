@@ -8,7 +8,7 @@ Prima-Forma:
     - "corpus" 
     - "narrative function"
 DIR: "STRUCTURE"
-SUBCATEGORY: "FABULA"
+SUB: "FABULA"
 Summary: "Propp's 31 Narrative Functions outline a sequence of recurring plot elements in folktales, highlighting the typical progression from an initial situation through conflict, action, and resolution. These functions provide a framework for understanding the universal structure of narrative storytelling across cultures."
 Elaborated: "True"
 ---
