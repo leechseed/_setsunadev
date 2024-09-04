@@ -6,7 +6,7 @@ Date: "22/08/2024"
 Prima-Forma: 
   - "taberna" 
   - "perspective"
-DIR: "PERSPECTIVE"
+DIR: "PERSPECTIVES"
 Summary: "The Narrator can operate at 3 different levels of narrative instances: extradiegetic, intradiegetic, or metadiagetic. "
 ---
 

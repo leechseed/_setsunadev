@@ -6,7 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "syntax"
   - "lexis"
-DIR: "PERSPECTIVE"
+DIR: "PERSPECTIVES"
 Summary: "Designers use narrative discourse to shape the reader's interpretation and understanding of narrative: unreliable narration, stream of consciousness, and free indirect discourse."
 ---
 

@@ -6,7 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "taberna"
   - "perspective"
-  DIR: "PERSPECTIVE"
+DIR: "PERSPECTIVES"
 Summary: "Narrative Communication highlights the complext relationship between various agents involved in creation and reception of the narrative. These agents are: real author, implied author, narrator, narratee, implied reader, and real reader."
 ---
 

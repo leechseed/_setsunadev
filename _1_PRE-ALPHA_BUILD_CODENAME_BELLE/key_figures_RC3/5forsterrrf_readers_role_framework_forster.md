@@ -6,7 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "taberna"
   - "perspective"
-DIR: "PERSPECTIVE"
+DIR: "PERSPECTIVES"
 Summary: "Novels should be judged not only by their formal qualities but also by the emotional and intellectual responses they evoke in readers."
 ---
 ### Title: **Forster's Reader's Role Framework**
