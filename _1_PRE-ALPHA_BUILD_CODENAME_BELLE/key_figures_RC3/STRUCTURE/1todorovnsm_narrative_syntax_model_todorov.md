@@ -10,7 +10,7 @@ Prima-Forma:
 - narrative function
 Summary: "Tzvetan Todorovs Narrative Syntax Model outlines how stories progress  through three stages: equilibrium, disequilibrium, and restoration of equilibrium,  forming a foundational structure that helps analyze narrative progression and  character development."
 ELEMENT: STRUCTURE
-ROPERTY: SYUZHET
+PROPERTY: SYUZHET
 
 ---
 ### **Todorov's Narrative Syntax Model**
