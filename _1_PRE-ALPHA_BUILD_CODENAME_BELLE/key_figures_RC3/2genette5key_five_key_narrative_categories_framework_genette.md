@@ -8,7 +8,8 @@ Prima-Forma:
 - corpus
 - narrative function
 Summary: Five Central Narrative Functions - Order, Duration, Frequency, Mood, Voice
-ELEMENT: RHETORIC
+ELEMENT: STRUCTURE
+PROPERTY: RHETORIC
 ---
 ### **Genette's Five Key Narrative Categories Framework**
 
