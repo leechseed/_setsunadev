@@ -8,6 +8,7 @@ Prima-Forma:
   - "corpus"
   - "narrative function"
 DIR: "STRUCTURE"
+  CAT: "FABULA"
 Summary: "Peter Brooks’ narrative theory, drawing from Freudian psychoanalysis, explores the underlying psychological drives such as the desire for closure, death drive (Thanatos), and pleasure principle (Eros) that propel stories toward their conclusion, shaping narrative structure and reader engagement."
 Elaborated: "True"
 ---
