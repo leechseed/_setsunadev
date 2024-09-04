@@ -1,15 +1,16 @@
 ---
-UID: "3Genette3Focalization"
-Title: "Three Focalization Framework"
-Author: "Genette"
-Date: "27/08/2024"
-Prima-Forma: 
-  - "taberna" 
-  - "perspective"
-DIR: "PERSPECTIVES"
-Summary: "Focalization is the relationship between the narrative and the perspective from which events are perceived. Those three focalizations are: zero, internal, external."
+Author: Genette
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
+Prima-Forma:
+- taberna
+- perspective
+Summary: 'Focalization is the relationship between the narrative and the perspective
+  from which events are perceived. Those three focalizations are: zero, internal,
+  external.'
+Title: Three Focalization Framework
+UID: 3Genette3Focalization
 ---
-
 ### Title: **Genette's Focalization Framework**
 
 - **Focalization**:

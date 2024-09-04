@@ -1,18 +1,18 @@
 ---
-UID: "6GreimasMF"
-Title: "Modalities Framework"
-Author: "Greimas"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:40:36 AM"
+Author: Greimas
+Date: 27/08/2024
+ELEMENT: CHARACTER
+Last Edited: 9/4/2024, 3:40:36 AM
 Prima-Forma:
-  - "artifex"
-  - "character"
-DIR: "CHARACTER"
-Summary: "Greimas's Modalities Framework analyzes character motivations by categorizing their actions into necessity, desire, possibility, and obligation. These modalities reveal the forces that drive narrative progression, offering insight into internal and external constraints affecting characters' decisions and behaviors."
-
-
+- artifex
+- character
+Summary: Greimas's Modalities Framework analyzes character motivations by categorizing
+  their actions into necessity, desire, possibility, and obligation. These modalities
+  reveal the forces that drive narrative progression, offering insight into internal
+  and external constraints affecting characters' decisions and behaviors.
+Title: Modalities Framework
+UID: 6GreimasMF
 ---
-
 ### Title: **Greimas's Modalities Framework**
 
 - **Modalities**:

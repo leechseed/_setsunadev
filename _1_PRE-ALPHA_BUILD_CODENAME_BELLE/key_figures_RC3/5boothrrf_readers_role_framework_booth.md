@@ -1,18 +1,19 @@
 ---
-UID: "5BoothRRF"
-Title: "Reader's Role Framework"
-Author: "Booth"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:25:28 AM"
+Author: Booth
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
+Last Edited: 9/4/2024, 3:25:28 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "PERSPECTIVES"
-Summary: "Wayne C. Booth's *Reader’s Role* framework highlights the active role of the reader in shaping a narrative's meaning through a collaborative process with the implied author. This interaction allows readers to bring their own experiences to the text, influencing interpretation and emphasizing the dynamic nature of meaning-making in literature."
-
+- animus
+- meaning
+Summary: "Wayne C. Booth's *Reader\u2019s Role* framework highlights the active role\
+  \ of the reader in shaping a narrative's meaning through a collaborative process\
+  \ with the implied author. This interaction allows readers to bring their own experiences\
+  \ to the text, influencing interpretation and emphasizing the dynamic nature of\
+  \ meaning-making in literature."
+Title: Reader's Role Framework
+UID: 5BoothRRF
 ---
-
-
 ### Title: **Booth's Reader's Role Framework**
 
 - **The Reader’s Role**:

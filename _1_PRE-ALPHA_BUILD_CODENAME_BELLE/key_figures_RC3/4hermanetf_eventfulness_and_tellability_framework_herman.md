@@ -1,16 +1,16 @@
 ---
-UID: "4HermanETF"
-Title: "Eventfulness and Tellability Framework"
-Author: "Herman"
-Date: "27/08/2024"
+Author: Herman
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Eventfullness and Tellability are qualities that make a story worth telling and engaging to an audience."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Eventfullness and Tellability are qualities that make a story worth telling
+  and engaging to an audience.
+Title: Eventfulness and Tellability Framework
+UID: 4HermanETF
 ---
-
 ### Title: **Herman's Eventfulness and Tellability Framework**
 
 - **Eventfulness and Tellability**:

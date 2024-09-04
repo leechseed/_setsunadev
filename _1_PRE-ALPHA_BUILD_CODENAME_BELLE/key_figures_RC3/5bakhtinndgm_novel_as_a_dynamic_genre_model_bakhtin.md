@@ -1,16 +1,16 @@
 ---
-UID: "5BakhtinNDGM"
-Title: "Novel as a Dynamic Genre Model"
-Author: "Bakhtin"
-Date: "27/08/2024"
+Author: Bakhtin
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Dynamic Genre occurs in modern mediums characterized by its openness to change, diversity of voices, and capacity to engage with contemporary life."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Dynamic Genre occurs in modern mediums characterized by its openness to change,
+  diversity of voices, and capacity to engage with contemporary life.
+Title: Novel as a Dynamic Genre Model
+UID: 5BakhtinNDGM
 ---
-
 ### Title: **Bakhtin's Novel as a Dynamic Genre Model**
 
 - **The Novel as a Dynamic Genre**:

@@ -1,14 +1,15 @@
 ---
-UID: "2HermanSLF"
-Title: "Story Logic Framework"
-Author: "Herman"
-Date: "27/08/2024"
+Author: Herman
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Story logic are the underlying principles that govern the organization and coherence of narratives."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Story logic are the underlying principles that govern the organization and
+  coherence of narratives.
+Title: Story Logic Framework
+UID: 2HermanSLF
 ---
 ### **Herman's Story Logic Framework**
 

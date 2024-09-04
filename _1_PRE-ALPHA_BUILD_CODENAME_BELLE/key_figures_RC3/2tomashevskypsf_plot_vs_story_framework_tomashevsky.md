@@ -1,14 +1,14 @@
 ---
-UID: "2TomashevskyPSF"
-Title: "Plot vs Story Framework"
-Author: "Tomashevsky"
-Date: "27/08/2024"
+Author: Tomashevsky
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Narrative is split between two concepts: fabula and sjuzhet."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: 'Narrative is split between two concepts: fabula and sjuzhet.'
+Title: Plot vs Story Framework
+UID: 2TomashevskyPSF
 ---
 ### **Tomashevsky's Plot vs. Story Framework**
 

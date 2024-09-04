@@ -1,13 +1,13 @@
 ---
-UID: "5TomashevskyTPF"
-Title: "Thematics Framework"
-Author: "Tomashevsky"
-Date: "27/08/2024"
+Author: Tomashevsky
+Date: 27/08/2024
+ELEMENT: STRUCTURE
 Prima-Forma:
-  - "corpus"
-  - "narrative framework"
-DIR: "STRUCTURE"
-Summary: "Theme is crucial component of narrative."
+- corpus
+- narrative framework
+Summary: Theme is crucial component of narrative.
+Title: Thematics Framework
+UID: 5TomashevskyTPF
 ---
 ### Title: **Tomashevsky's Thematics and Poetics Framework**
 

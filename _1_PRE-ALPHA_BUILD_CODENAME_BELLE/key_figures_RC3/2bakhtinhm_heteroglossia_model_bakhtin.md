@@ -1,16 +1,16 @@
 ---
-UID: "2BakhtinHM"
-Title: "Heteroglossia Model"
-Author: "Bakhtin"
-Date: "27/08/2024"
+Author: Bakhtin
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Elaborated: 'True'
 Prima-Forma:
-  - "lexis"
-  - "syntax"
-DIR: "SEMANTICS"
-Summary: "Heteroglossia is the coexistence of multiple forms of speech or social languages within a single text."
-Elaborated: "True"
+- lexis
+- syntax
+Summary: Heteroglossia is the coexistence of multiple forms of speech or social languages
+  within a single text.
+Title: Heteroglossia Model
+UID: 2BakhtinHM
 ---
-
 ### **Bakhtin's Heteroglossia Model**
 
 - **Heteroglossia**:

@@ -1,18 +1,19 @@
 ---
-UID: "7GreimasS"
-Title: "Greimasian Semiotics"
-Author: "Greimas"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:33:49 AM"
+Author: Greimas
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 3:33:49 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Greimasian semiotics, developed by Algirdas Julien Greimas, focuses on analyzing the deep structures that generate meaning in texts, using tools like the semiotic square and actantial model. This framework uncovers the underlying relationships within narratives, influencing literary studies, anthropology, and communication through its systematic approach to understanding meaning."
-
+- animus
+- meaning
+Summary: Greimasian semiotics, developed by Algirdas Julien Greimas, focuses on analyzing
+  the deep structures that generate meaning in texts, using tools like the semiotic
+  square and actantial model. This framework uncovers the underlying relationships
+  within narratives, influencing literary studies, anthropology, and communication
+  through its systematic approach to understanding meaning.
+Title: Greimasian Semiotics
+UID: 7GreimasS
 ---
-
-
 ### Title: **Greimasian Semiotics**
 
 - **Greimasian Semiotics**:

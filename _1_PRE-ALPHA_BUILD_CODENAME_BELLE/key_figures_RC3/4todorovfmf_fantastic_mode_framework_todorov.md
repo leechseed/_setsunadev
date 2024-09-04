@@ -1,14 +1,16 @@
 ---
-UID: "4TodorovFMF"
-Title: "Fantastic Mode Framework"
-Author: "Todorov"
-Date: "27/08/2024"
+Author: Todorov
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Fantastic is a property of narrative that hesitates between the natural and supernatural. Fantastic creates narrative tension thru the uncertainty of events being explained by natural law or supernatural elements."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Fantastic is a property of narrative that hesitates between the natural and
+  supernatural. Fantastic creates narrative tension thru the uncertainty of events
+  being explained by natural law or supernatural elements.
+Title: Fantastic Mode Framework
+UID: 4TodorovFMF
 ---
 ### Title: **Todorov's Fantastic Mode Framework**
 

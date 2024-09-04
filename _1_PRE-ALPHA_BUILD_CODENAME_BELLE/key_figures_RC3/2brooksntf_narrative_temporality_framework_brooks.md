@@ -1,13 +1,14 @@
 ---
-UID: "2BrooksNTF"
-Title: "Narrative Temporality Framework"
-Author: "Brooks"
-Date: "27/08/2024"
+Author: Brooks
+Date: 27/08/2024
+ELEMENT: TIME
 Prima-Forma:
-  - "fluus"
-  - "time"
-DIR: "TIME"
-Summary: "Temporal manipulation is a technique that designers use to create suspense and delay resolution: analepsis and prolepsis."
+- fluus
+- time
+Summary: 'Temporal manipulation is a technique that designers use to create suspense
+  and delay resolution: analepsis and prolepsis.'
+Title: Narrative Temporality Framework
+UID: 2BrooksNTF
 ---
 ### Title: **Brooks's Narrative Temporality Framework**
 

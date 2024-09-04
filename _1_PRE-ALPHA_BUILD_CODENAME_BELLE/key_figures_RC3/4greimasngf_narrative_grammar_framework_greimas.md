@@ -1,15 +1,14 @@
 ---
-UID: "4GreimasNGF"
-Title: "Narrative Grammar Framework"
-Author: "Greimas"
-Date: "27/08/2024"
+Author: Greimas
+Date: 27/08/2024
+ELEMENT: STRUCTURE
 Prima-Forma:
-  - "lexis"
-  - "syntax"
-DIR: "STRUCTURE"
-Summary: "Narratives have a deep structure that can be analyzed using similar principals."
+- lexis
+- syntax
+Summary: Narratives have a deep structure that can be analyzed using similar principals.
+Title: Narrative Grammar Framework
+UID: 4GreimasNGF
 ---
-
 ### Title: **Greimas's Narrative Grammar Framework**
 
 - **Narrative Grammar**:

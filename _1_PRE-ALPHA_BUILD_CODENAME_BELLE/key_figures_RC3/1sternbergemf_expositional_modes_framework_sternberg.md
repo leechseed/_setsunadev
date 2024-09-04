@@ -1,17 +1,19 @@
 ---
-UID: "1SternbergEMF"
-Title: "Expositional Modes Framework"
-Author: "Sternberg"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:45:41 AM"
+Author: Sternberg
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
+Last Edited: 9/4/2024, 3:45:41 AM
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Meir Sternberg's Expositional Modes Framework categorizes how information is presented in narratives through direct, delayed, and suspended exposition, shaping the reader's experience by controlling the timing and method of revealing critical details."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Meir Sternberg's Expositional Modes Framework categorizes how information
+  is presented in narratives through direct, delayed, and suspended exposition, shaping
+  the reader's experience by controlling the timing and method of revealing critical
+  details.
+Title: Expositional Modes Framework
+UID: 1SternbergEMF
 ---
-
 ### **Sternberg's Expositional Modes Framework**
 
 - **Expositional Modes**:

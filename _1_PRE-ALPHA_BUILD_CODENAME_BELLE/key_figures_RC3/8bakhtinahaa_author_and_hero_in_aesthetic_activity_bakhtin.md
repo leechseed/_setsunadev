@@ -1,13 +1,14 @@
 ---
-UID: "8BakhtinAHAA"
-Title: "Author and Hero in Aesthetic Activity"
-Author: "Bakhtin"
-Date: "27/08/2024"
+Author: Bakhtin
+Date: 27/08/2024
+ELEMENT: SPACE
 Prima-Forma:
-  - "taberna"
-  - "perspective"
-DIR: "SPACE"
-Summary: "The designer's role is to construct the hero's world and the ethical implications of this construction."
+- taberna
+- perspective
+Summary: The designer's role is to construct the hero's world and the ethical implications
+  of this construction.
+Title: Author and Hero in Aesthetic Activity
+UID: 8BakhtinAHAA
 ---
 ### Title: **Bakhtin's Author and Hero in Aesthetic Activity Concept**
 

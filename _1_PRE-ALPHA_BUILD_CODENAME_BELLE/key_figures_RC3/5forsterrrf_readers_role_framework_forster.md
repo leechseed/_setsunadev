@@ -1,13 +1,14 @@
 ---
-UID: "5ForsterRRF"
-Title: "Reader's Role Framework"
-Author: "Forster"
-Date: "27/08/2024"
+Author: Forster
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
 Prima-Forma:
-  - "taberna"
-  - "perspective"
-DIR: "PERSPECTIVES"
-Summary: "Novels should be judged not only by their formal qualities but also by the emotional and intellectual responses they evoke in readers."
+- taberna
+- perspective
+Summary: Novels should be judged not only by their formal qualities but also by the
+  emotional and intellectual responses they evoke in readers.
+Title: Reader's Role Framework
+UID: 5ForsterRRF
 ---
 ### Title: **Forster's Reader's Role Framework**
 

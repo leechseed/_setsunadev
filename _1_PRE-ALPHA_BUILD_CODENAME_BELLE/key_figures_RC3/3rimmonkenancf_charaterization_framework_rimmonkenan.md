@@ -1,18 +1,18 @@
 ---
-UID: "3RimmonKenanCF"
-Title: "Charaterization Framework"
-Author: "Rimmon-Kenan"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:40:36 AM"
+Author: Rimmon-Kenan
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
+Last Edited: 9/4/2024, 3:40:36 AM
 Prima-Forma:
-  - "artifex"
-  - "character"
-DIR: "PERSPECTIVES"
-Summary: "Shlomith Rimmon-Kenan's characterization framework explores how authors use direct and indirect methods to shape readers' perceptions of characters. It examines explicit descriptions, actions, and narrative voice, revealing how focalization and bias influence character construction and interpretation."
-
-
+- artifex
+- character
+Summary: Shlomith Rimmon-Kenan's characterization framework explores how authors use
+  direct and indirect methods to shape readers' perceptions of characters. It examines
+  explicit descriptions, actions, and narrative voice, revealing how focalization
+  and bias influence character construction and interpretation.
+Title: Charaterization Framework
+UID: 3RimmonKenanCF
 ---
-
 ### Title: **Rimmon-Kenan's Characterization Framework**
 
 - **Characterization**:

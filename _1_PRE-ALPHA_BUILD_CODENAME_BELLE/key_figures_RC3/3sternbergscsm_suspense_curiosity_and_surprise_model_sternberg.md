@@ -1,15 +1,15 @@
 ---
-UID: "3SternbergSCSM"
-Title: "Suspense, Curiosity, and Surprise Model"
-Author: "Sternberg"
-Date: "27/08/2024"
+Author: Sternberg
+Date: 27/08/2024
+ELEMENT: SEMANTICS
 Prima-Forma:
-  - "taberna"
-  - "perspective"
-DIR: "SEMANTICS"
-Summary: "Three key responses are central to a reader's engagement: suspense, curiosity, and surprise."
+- taberna
+- perspective
+Summary: 'Three key responses are central to a reader''s engagement: suspense, curiosity,
+  and surprise.'
+Title: Suspense, Curiosity, and Surprise Model
+UID: 3SternbergSCSM
 ---
-
 ### Title: **Sternberg's Suspense, Curiosity, and Surprise Model**
 
 - **Suspense, Curiosity, and Surprise**:

@@ -1,13 +1,14 @@
 ---
-UID: "4GenetteMetalepsis"
-Title: "Metalepsis Model"
-Author: "Genette"
-Date: "27/08/2024"
-Prima-Forma: 
-  - "taberna" 
-  - "perspective"
-DIR: "SEMANTICS"
-Summary: "Metalepsis is the transgression or blending between of boundaries between different narrative levels"
+Author: Genette
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Prima-Forma:
+- taberna
+- perspective
+Summary: Metalepsis is the transgression or blending between of boundaries between
+  different narrative levels
+Title: Metalepsis Model
+UID: 4GenetteMetalepsis
 ---
 ### Title: **Genette's Metalepsis Model**
 

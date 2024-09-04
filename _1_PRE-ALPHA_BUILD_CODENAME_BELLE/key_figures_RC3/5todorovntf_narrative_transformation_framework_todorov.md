@@ -1,13 +1,14 @@
 ---
-UID: "5TodorovNTF"
-Title: "Narrative Transformation Framework"
-Author: "Todorov"
-Date: "27/08/2024"
+Author: Todorov
+Date: 27/08/2024
+ELEMENT: STRUCTURE
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Narrative structure can evolve into other forms within single texts or across texts. The two methods are in-text transformations or cross-text transformations"
+- corpus
+- narrative function
+Summary: Narrative structure can evolve into other forms within single texts or across
+  texts. The two methods are in-text transformations or cross-text transformations
+Title: Narrative Transformation Framework
+UID: 5TodorovNTF
 ---
 ### Title: **Todorov's Narrative Transformation Framework**
 

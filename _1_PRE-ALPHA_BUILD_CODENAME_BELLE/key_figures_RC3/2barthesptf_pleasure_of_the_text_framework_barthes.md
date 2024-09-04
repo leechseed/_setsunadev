@@ -1,17 +1,19 @@
 ---
-UID: "2BarthesPTF"
-Title: "Pleasure of the Text Framework"
-Author: "Barthes"
-Date: "27/08/2024"
-Last Edited: 9/4/2024, 2:45:19 AM 
+Author: Barthes
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 2:45:19 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "Roland Barthes's *Pleasure of the Text* framework contrasts readerly texts, which are straightforward and passive, with writerly texts, which invite active reader participation in meaning-making. He explores how different types of texts offer diverse reading experiences, emphasizing the pleasure derived from both ease of understanding and the intellectual challenge of interpretation."
-
+- animus
+- meaning
+Summary: Roland Barthes's *Pleasure of the Text* framework contrasts readerly texts,
+  which are straightforward and passive, with writerly texts, which invite active
+  reader participation in meaning-making. He explores how different types of texts
+  offer diverse reading experiences, emphasizing the pleasure derived from both ease
+  of understanding and the intellectual challenge of interpretation.
+Title: Pleasure of the Text Framework
+UID: 2BarthesPTF
 ---
-
 ### Title: **Barthes's Pleasure of the Text Framework**
 
 - **The Pleasure of the Text**:

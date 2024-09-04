@@ -1,15 +1,14 @@
 ---
-UID: "2BalTSF"
-Title: "Temporal Structures Framework"
-Author: "Bal"
-Date: "27/08/2024"
+Author: Bal
+Date: 27/08/2024
+ELEMENT: TIME
 Prima-Forma:
-  - "time"
-  - "fluus"
-DIR: "TIME"
-Summary: "Time is manipulated in narrative in three ways: order, duration, and frequency."
+- time
+- fluus
+Summary: 'Time is manipulated in narrative in three ways: order, duration, and frequency.'
+Title: Temporal Structures Framework
+UID: 2BalTSF
 ---
-
 ### Title: **Bal's Temporal Structures Framework**
 
 - **Temporal Structures**:

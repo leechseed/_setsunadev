@@ -1,15 +1,15 @@
 ---
-UID: "1RimmonKenanFF"
-Title: "Focalization Framework"
-Author: "Rimmon-Kenan"
-Date: "27/08/2024"
+Author: Rimmon-Kenan
+Date: 27/08/2024
+ELEMENT: PERSPECTIVES
 Prima-Forma:
-  - "taberna"
-  - "perspective"
-DIR: "PERSPECTIVES"
-Summary: "The perspective through which a narrative is presented, focusing on who sees or perceives the events within the story."
+- taberna
+- perspective
+Summary: The perspective through which a narrative is presented, focusing on who sees
+  or perceives the events within the story.
+Title: Focalization Framework
+UID: 1RimmonKenanFF
 ---
-
 ### Title: **Rimmon-Kenan's Focalization Framework**
 
 - **Focalization**:

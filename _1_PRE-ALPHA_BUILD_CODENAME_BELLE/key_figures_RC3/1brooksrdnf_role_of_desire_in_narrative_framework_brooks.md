@@ -10,16 +10,11 @@ Prima-Forma:
 DIR: "STRUCTURE"
   CAT: "FABULA"
 Summary: "Peter Brooks’ narrative theory, drawing from Freudian psychoanalysis, explores the underlying psychological drives such as the desire for closure, death drive (Thanatos), and pleasure principle (Eros) that propel stories toward their conclusion, shaping narrative structure and reader engagement."
-Elaborated: "True"
----
-
+Elaborated: "True"---
 ### **The Role of Desire in Narrative**
 
 - **Peter Brooks' Focus**:
-  - Brooks explores narrative theory through **psychoanalysis**, drawing on Freudian concepts to explain narrative structure. He uses these psychological theories to delve into how narratives function, particularly focusing on the underlying drives that propel stories toward their conclusions.
-
----
-
+  - Brooks explores narrative theory through **psychoanalysis**, drawing on Freudian concepts to explain narrative structure. He uses these psychological theories to delve into how narratives function, particularly focusing on the underlying drives that propel stories toward their conclusions.---
 ### **Key Concepts**
 
 #### **Desire for Closure**
@@ -146,9 +141,7 @@ Elaborated: "True"
 
 - **Context**:
   - Anticipation drives the reader’s engagement with the narrative. It creates a sense of urgency and curiosity, motivating the reader to continue through the story to see how it resolves. The interplay between tension and anticipation is crucial for sustaining reader interest, as anticipation is both a response to and a product of narrative tension. As the plot progresses, anticipation builds, keeping the reader focused on the eventual resolution of the narrative’s conflicts.
-
 ---
-
 ### **Contextualization**
 
 - **Brooks’ Theory**:

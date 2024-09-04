@@ -1,16 +1,16 @@
 ---
-UID: "4BakhtinCC"
-Title: "Carnivalesque Concept"
-Author: "Bakhtin"
-Date: "27/08/2024"
+Author: Bakhtin
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Carnivalesque are moments in literature and culture where traditional higherarchies and norms are subverted, creating a space for alternative voices and ideas to emerge."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Carnivalesque are moments in literature and culture where traditional higherarchies
+  and norms are subverted, creating a space for alternative voices and ideas to emerge.
+Title: Carnivalesque Concept
+UID: 4BakhtinCC
 ---
-
 ### Title: **Bakhtin's Carnivalesque Concept**
 - **Carnivalesque**:
   - **Definition**: The concept of the *carnivalesque* refers to moments in literature and culture where traditional hierarchies and norms are subverted, creating a space for alternative voices and ideas to emerge. 

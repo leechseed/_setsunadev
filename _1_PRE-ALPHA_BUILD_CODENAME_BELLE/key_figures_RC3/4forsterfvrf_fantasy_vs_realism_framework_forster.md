@@ -1,14 +1,15 @@
 ---
-UID: "4ForsterFVRF"
-Title: "Fantasy vs Realism Framework"
-Author: "Forster"
-Date: "27/08/2024"
+Author: Forster
+Date: 27/08/2024
+ELEMENT: STRUCTURE
+Elaborated: 'True'
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-Summary: "Realism seeks to depict life as it is, fantasy allows for the creation of worlds and scenarios beyond the constraints of reality."
-Elaborated: "True"
+- corpus
+- narrative function
+Summary: Realism seeks to depict life as it is, fantasy allows for the creation of
+  worlds and scenarios beyond the constraints of reality.
+Title: Fantasy vs Realism Framework
+UID: 4ForsterFVRF
 ---
 ### Title: **Forster's Fantasy vs. Realism Framework**
 

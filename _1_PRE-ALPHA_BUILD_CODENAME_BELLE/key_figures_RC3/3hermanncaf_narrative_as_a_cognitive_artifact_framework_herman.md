@@ -1,19 +1,19 @@
 ---
-UID: "3HermanNCAF"
-Title: "Narrative as a Cognitive Artifact Framework"
-Author: "Herman"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:22:22 AM"
+Author: Herman
+Date: 27/08/2024
+ELEMENT: SEMANTICS
+Last Edited: 9/4/2024, 3:22:22 AM
 Prima-Forma:
-  - "animus"
-  - "meaning"
-DIR: "SEMANTICS"
-Summary: "David Herman's *Narrative as a Cognitive Artifact* framework views narratives as tools for organizing, structuring, and communicating experiences, emphasizing their role in cognitive processes such as sense-making, problem-solving, and social interaction. This approach bridges narrative theory with cognitive science, highlighting how storytelling shapes and facilitates human thought and decision-making."
-
+- animus
+- meaning
+Summary: David Herman's *Narrative as a Cognitive Artifact* framework views narratives
+  as tools for organizing, structuring, and communicating experiences, emphasizing
+  their role in cognitive processes such as sense-making, problem-solving, and social
+  interaction. This approach bridges narrative theory with cognitive science, highlighting
+  how storytelling shapes and facilitates human thought and decision-making.
+Title: Narrative as a Cognitive Artifact Framework
+UID: 3HermanNCAF
 ---
-
-
-
 ### Title: **Herman's Narrative as a Cognitive Artifact Framework**
 
 - **Narrative as a Cognitive Artifact**:

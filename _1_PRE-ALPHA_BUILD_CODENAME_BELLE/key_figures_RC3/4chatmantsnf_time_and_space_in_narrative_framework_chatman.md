@@ -1,15 +1,14 @@
 ---
-UID: "4ChatmanTSNF"
-Title: "Time and Space in Narrative Framework"
-Author: "Chatman"
-Date: "27/08/2024"
+Author: Chatman
+Date: 27/08/2024
+ELEMENT: TIME
 Prima-Forma:
-  - "fluus"
-  - "time"
-DIR: "TIME"
-Summary: "The manipulation of time exists either temporally or spatially."
+- fluus
+- time
+Summary: The manipulation of time exists either temporally or spatially.
+Title: Time and Space in Narrative Framework
+UID: 4ChatmanTSNF
 ---
-
 ### Title: **Chatman's Time and Space in Narrative Framework**
 
 - **Time and Space in Narrative**:
