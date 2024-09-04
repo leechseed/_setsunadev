@@ -1,19 +1,15 @@
 ---
+UID: 1propp31
+Title: 31 Narrative Functions Framework
 Author: Propp
 Date: 22/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Last Edited: 9/4/2024, 3:45:41 AM
 Prima-Forma:
 - corpus
 - narrative function
-SUB: FABULA
-Summary: Propp's 31 Narrative Functions outline a sequence of recurring plot elements
-  in folktales, highlighting the typical progression from an initial situation through
-  conflict, action, and resolution. These functions provide a framework for understanding
-  the universal structure of narrative storytelling across cultures.
-Title: 31 Narrative Functions Framework
-UID: 1propp31
+ELEMENT: STRUCTURE
+Summary: Propp's 31 Narrative Functions outline a sequence of recurring plot elements in folktales, highlighting the typical progression from an initial situation through conflict, action, and resolution. These functions provide a framework for understanding the universal structure of narrative storytelling across cultures.
 ---
 ### **Propp's 31 Narrative Functions Framework**
 

@@ -1,14 +1,14 @@
 ---
+UID: 6BoothRIF
+Title: Rhetoric of Irony Framework
 Author: Booth
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Irony is a technique where designers create layers of meaning and engage
-  readers in complex interpretive tasks.
-Title: Rhetoric of Irony Framework
-UID: 6BoothRIF
+Summary: Irony is a technique where designers create layers of meaning and engage readers in complex interpretive tasks.
+ELEMENT: STRUCTURE
+
 ---
 #### Title: **Booth's Rhetoric of Irony Framework**
 

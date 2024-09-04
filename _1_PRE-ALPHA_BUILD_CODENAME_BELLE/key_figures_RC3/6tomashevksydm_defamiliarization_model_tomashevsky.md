@@ -1,14 +1,14 @@
 ---
+UID: 6TomashevksyDM
+Title: Defamiliarization Model
 Author: Tomashevsky
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Defamiliariation is a technique of presenting objects or events in unfamiliar
-  ways to make the reader perceive them differently
-Title: Defamiliarization Model
-UID: 6TomashevksyDM
+Summary: Defamiliariation is a technique of presenting objects or events in unfamiliar ways to make the reader perceive them differently
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Tomashevsky's Defamiliarization Model**
 

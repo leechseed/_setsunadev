@@ -1,15 +1,14 @@
 ---
+UID: 5RimmonkenanNSF
+Title: Narrative Discourse Strategies Framework
 Author: Rimmon-Kenan
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - syntax
 - lexis
-Summary: 'Designers use narrative discourse to shape the reader''s interpretation
-  and understanding of narrative: unreliable narration, stream of consciousness, and
-  free indirect discourse.'
-Title: Narrative Discourse Strategies Framework
-UID: 5RimmonkenanNSF
+Summary: 'Designers use narrative discourse to shape the reader''s interpretation and understanding of narrative: unreliable narration, stream of consciousness, and free indirect discourse.'
+ELEMENT: PERSPECTIVES
+
 ---
 ### Title: **Rimmon-Kenan's Narrative Discourse Strategies Framework**
 

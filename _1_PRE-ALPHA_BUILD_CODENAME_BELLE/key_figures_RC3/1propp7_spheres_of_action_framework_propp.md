@@ -1,18 +1,15 @@
 ---
+UID: 1propp7
+Title: Spheres of Action Framework
 Author: Propp
 Date: 22/08/2024
-ELEMENT: CHARACTER
 Last Edited: 9/4/2024, 3:40:36 AM
 Prima-Forma:
 - artifex
 - character
-Summary: "Vladimir Propp\u2019s *Spheres of Action* framework categorizes characters\
-  \ in folktales into seven archetypal roles, such as the hero, villain, and donor,\
-  \ to reveal their function in driving the narrative. This model highlights the universal\
-  \ structure of storytelling by showing how these roles contribute to the plot and\
-  \ thematic depth."
-Title: Spheres of Action Framework
-UID: 1propp7
+Summary: "Vladimir Propps *Spheres of Action* framework categorizes characters  in folktales into seven archetypal roles, such as the hero, villain, and donor,  to reveal their function in driving the narrative. This model highlights the universal  structure of storytelling by showing how these roles contribute to the plot and  thematic depth."
+ELEMENT: CHARACTER
+
 ---
 ### Title: **Propp's Spheres of Action Framework**
 

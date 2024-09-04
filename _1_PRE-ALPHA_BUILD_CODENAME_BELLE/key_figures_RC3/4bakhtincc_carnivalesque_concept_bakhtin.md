@@ -1,15 +1,15 @@
 ---
+UID: 4BakhtinCC
+Title: Carnivalesque Concept
 Author: Bakhtin
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Carnivalesque are moments in literature and culture where traditional higherarchies
-  and norms are subverted, creating a space for alternative voices and ideas to emerge.
-Title: Carnivalesque Concept
-UID: 4BakhtinCC
+Summary: Carnivalesque are moments in literature and culture where traditional higherarchies and norms are subverted, creating a space for alternative voices and ideas to emerge.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Bakhtin's Carnivalesque Concept**
 - **Carnivalesque**:

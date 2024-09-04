@@ -1,15 +1,15 @@
 ---
+UID: 2RimmonKenanNLF
+Title: Narrative Levels Framework
 Author: Rimmon-Kenan
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: 'Narrative Levels refer to the different layers or planes of narration within
-  a story: extradiagetic, intradiegetic, and metalepsis'
-Title: Narrative Levels Framework
-UID: 2RimmonKenanNLF
+Summary: 'Narrative Levels refer to the different layers or planes of narration within a story: extradiagetic, intradiegetic, and metalepsis'
+ELEMENT: STRUCTURE
+
 ---
 ### **Rimmon-Kenan's Narrative Levels Framework**
 

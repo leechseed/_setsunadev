@@ -1,14 +1,14 @@
 ---
+UID: 6BrooksIND
+Title: Intertextuality and Narrative Design Framework
 Author: Brooks
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Narratives reference and respond to other works to create a network of meaning
-  that influence reader's understanding of the plot.
-Title: Intertextuality and Narrative Design Framework
-UID: 6BrooksIND
+Summary: Narratives reference and respond to other works to create a network of meaning that influence reader's understanding of the plot.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Brooks's Intertextuality and Narrative Design Framework**
 

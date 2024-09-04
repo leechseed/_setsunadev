@@ -1,14 +1,14 @@
 ---
+UID: 4BrooksNRSF
+Title: Narrative as a Rhetorical Structure Framework
 Author: Brooks
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Prima-Forma:
 - lexis
 - syntax
-Summary: 'Narrative is inherently rhetorical, the discourse is designed to produce
-  specific effects on the reader: repetition, foreshadowing, framing. '
-Title: Narrative as a Rhetorical Structure Framework
-UID: 4BrooksNRSF
+Summary: 'Narrative is inherently rhetorical, the discourse is designed to produce specific effects on the reader: repetition, foreshadowing, framing. '
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Brooks's Narrative as a Rhetorical Structure Framework**
 

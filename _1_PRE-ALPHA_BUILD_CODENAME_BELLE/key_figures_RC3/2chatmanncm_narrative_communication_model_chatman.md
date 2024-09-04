@@ -1,15 +1,14 @@
 ---
+UID: 2ChatmanNCM
+Title: Narrative Communication Model
 Author: Chatman
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - taberna
 - perspective
-Summary: 'Narrative Communication highlights the complext relationship between various
-  agents involved in creation and reception of the narrative. These agents are: real
-  author, implied author, narrator, narratee, implied reader, and real reader.'
-Title: Narrative Communication Model
-UID: 2ChatmanNCM
+Summary: 'Narrative Communication highlights the complext relationship between various agents involved in creation and reception of the narrative. These agents are: real author, implied author, narrator, narratee, implied reader, and real reader.'
+ELEMENT: PERSPECTIVES
+
 ---
 ### Title: **Chatman's Narrative Communication Model**
 

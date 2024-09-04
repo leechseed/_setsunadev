@@ -1,18 +1,16 @@
 ---
+UID: 1TodorovNSM
+Title: Narrative Syntax Model
 Author: Todorov
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Last Edited: 9/4/2024, 3:45:41 AM
 Prima-Forma:
 - corpus
 - narrative function
-Summary: "Tzvetan Todorov\u2019s Narrative Syntax Model outlines how stories progress\
-  \ through three stages: equilibrium, disequilibrium, and restoration of equilibrium,\
-  \ forming a foundational structure that helps analyze narrative progression and\
-  \ character development."
-Title: Narrative Syntax Model
-UID: 1TodorovNSM
+Summary: "Tzvetan Todorovs Narrative Syntax Model outlines how stories progress  through three stages: equilibrium, disequilibrium, and restoration of equilibrium,  forming a foundational structure that helps analyze narrative progression and  character development."
+ELEMENT: STRUCTURE
+
 ---
 ### **Todorov's Narrative Syntax Model**
 

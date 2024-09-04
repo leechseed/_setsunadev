@@ -1,18 +1,15 @@
 ---
+UID: 3RyanMSF
+Title: Medium Specificity Framework
 Author: Ryan
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 3:22:59 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: "Marie-Laure Ryan's *Medium Specificity* framework emphasizes that each storytelling\
-  \ medium has unique capabilities and constraints that shape how narratives are constructed\
-  \ and experienced. This framework is key in analyzing narrative adaptations and\
-  \ transmedia storytelling, highlighting how each medium\u2019s strengths and limitations\
-  \ impact the storytelling process."
-Title: Medium Specificity Framework
-UID: 3RyanMSF
+Summary: "Marie-Laure Ryan's *Medium Specificity* framework emphasizes that each storytelling  medium has unique capabilities and constraints that shape how narratives are constructed  and experienced. This framework is key in analyzing narrative adaptations and  transmedia storytelling, highlighting how each mediums strengths and limitations  impact the storytelling process."
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Ryan's Medium Specificity Framework**
 

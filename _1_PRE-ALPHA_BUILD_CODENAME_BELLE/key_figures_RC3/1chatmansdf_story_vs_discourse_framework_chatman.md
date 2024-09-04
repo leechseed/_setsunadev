@@ -1,24 +1,23 @@
 ---
-UID: "1ChatmanSDF"
-Title: "Story vs. Discourse Framework"
-Author: "Chatman"
-Date: "27/08/2024"
-Last Edited: "9/4/2024, 3:45:41 AM"
+UID: 1ChatmanSDF
+Title: Story vs. Discourse Framework
+Author: Chatman
+Date: 27/08/2024
+Elaborated: 'True'
+Last Edited: 9/4/2024, 3:45:41 AM
 Prima-Forma:
-  - "corpus"
-  - "narrative function"
-DIR: "STRUCTURE"
-  CAT: "SZU"
-Summary: "Chatman’s Story vs. Discourse framework distinguishes between *story* (the content: events, characters, and settings) and *discourse* (the presentation: narrative voice, order of events, and style), providing a crucial tool for analyzing how narratives are structured and experienced across different media."
-Elaborated: "True"---
+- corpus
+- narrative function
+Summary: "Chatmans Story vs. Discourse framework distinguishes between *story*  (the content: events, characters, and settings) and *discourse* (the presentation:  narrative voice, order of events, and style), providing a crucial tool for analyzing  how narratives are structured and experienced across different media."
+ELEMENT: STRUCTURE
+---
 ### **Chatman's Story vs. Discourse Framework**
 
 - **Author**: Seymour Chatman
 - **Title**: Chatman's Story vs. Discourse Framework---
 ### **Story vs. Discourse**
 
-- **Definition**: Seymour Chatman, a prominent narratologist, introduces a critical distinction between *story* and *discourse* in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.
----
+- **Definition**: Seymour Chatman, a prominent narratologist, introduces a critical distinction between *story* and *discourse* in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.---
 ### **Key Concepts**
 
 #### **Story**
@@ -52,9 +51,7 @@ Elaborated: "True"---
     - In a film, the choice of camera angles, editing, and sound design are elements of discourse.
     - In literature, the use of stream-of-consciousness, unreliable narrators, or non-linear timelines are discourse strategies that alter the audience’s engagement with the story.
   - **Importance**: Understanding discourse is crucial for analyzing narrative strategies. It reveals how narratives guide interpretation, evoke emotions, and convey themes beyond the basic events of the story.
-
 ---
-
 ### **Importance of the Distinction**
 
 - **Narrative Analysis**:

@@ -1,14 +1,14 @@
 ---
+UID: 2SternbergTOF
+Title: Temporal Ordering Framework
 Author: Sternberg
 Date: 27/08/2024
-ELEMENT: TIME
 Prima-Forma:
 - fluus
 - time
-Summary: 'Temporal ordering refers to the sequence in which the events are presented
-  in the narrative: analepsis and prolepsis '
-Title: Temporal Ordering Framework
-UID: 2SternbergTOF
+Summary: 'Temporal ordering refers to the sequence in which the events are presented in the narrative: analepsis and prolepsis '
+ELEMENT: TIME
+
 ---
 ### Title: **Sternberg's Temporal Ordering Framework**
 

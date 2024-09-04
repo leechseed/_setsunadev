@@ -1,15 +1,15 @@
 ---
+UID: 4ForsterFVRF
+Title: Fantasy vs Realism Framework
 Author: Forster
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Realism seeks to depict life as it is, fantasy allows for the creation of
-  worlds and scenarios beyond the constraints of reality.
-Title: Fantasy vs Realism Framework
-UID: 4ForsterFVRF
+Summary: Realism seeks to depict life as it is, fantasy allows for the creation of worlds and scenarios beyond the constraints of reality.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Forster's Fantasy vs. Realism Framework**
 

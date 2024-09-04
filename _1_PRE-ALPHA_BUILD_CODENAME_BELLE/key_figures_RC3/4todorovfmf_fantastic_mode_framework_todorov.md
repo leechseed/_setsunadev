@@ -1,16 +1,15 @@
 ---
+UID: 4TodorovFMF
+Title: Fantastic Mode Framework
 Author: Todorov
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Fantastic is a property of narrative that hesitates between the natural and
-  supernatural. Fantastic creates narrative tension thru the uncertainty of events
-  being explained by natural law or supernatural elements.
-Title: Fantastic Mode Framework
-UID: 4TodorovFMF
+Summary: Fantastic is a property of narrative that hesitates between the natural and supernatural. Fantastic creates narrative tension thru the uncertainty of events being explained by natural law or supernatural elements.
+ELEMENT: STRUCTURE
+
 ---
 ### Title: **Todorov's Fantastic Mode Framework**
 
@@ -85,4 +84,3 @@ UID: 4TodorovFMF
   - **Suspense and Anxiety**: The unresolved nature of the fantastic creates a persistent sense of suspense and anxiety. The reader is aware that something is off, but they are unable to pinpoint exactly what it is, which intensifies the narrative’s emotional impact.
   - **Philosophical Reflection**: The tension in the fantastic mode often leads to deeper philosophical reflections on the nature of reality, perception, and belief. By refusing to resolve the supernatural elements, the fantastic invites readers to contemplate the limits of human understanding and the possibility of multiple realities.
   - **Examples**: In Kafka’s *The Metamorphosis*, the transformation of Gregor Samsa into a giant insect is presented without explanation or resolution, creating a tension that drives the narrative and forces the reader to grapple with the absurdity of the situation and its implications for human identity and reality.
-

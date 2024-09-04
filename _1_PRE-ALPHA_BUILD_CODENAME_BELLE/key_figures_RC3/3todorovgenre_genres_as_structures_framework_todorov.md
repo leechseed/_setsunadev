@@ -1,14 +1,14 @@
 ---
+UID: 3TodorovGenre
+Title: Genres as Structures Framework
 Author: Todorov
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
 Summary: Genre exists as structure in narrative either as dynamic or static
-Title: Genres as Structures Framework
-UID: 3TodorovGenre
+ELEMENT: STRUCTURE
 ---
 ### **Todorov's Genres as Structures Framework**
 

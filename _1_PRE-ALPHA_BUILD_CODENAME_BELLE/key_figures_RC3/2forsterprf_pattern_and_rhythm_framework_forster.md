@@ -1,16 +1,15 @@
 ---
+UID: 2ForsterPRF
+Title: Pattern and Rhythm Framework
 Author: Forster
 Date: 27/08/2024
-ELEMENT: STRUCTURE
 Elaborated: 'True'
 Prima-Forma:
 - corpus
 - narrative function
-Summary: Pattern is the overall design or structure of the novel. Rhythm is the reocurrence
-  of certain themes, motifs, or narrative elements that create a sense of continuity
-  and flow.
-Title: Pattern and Rhythm Framework
-UID: 2ForsterPRF
+Summary: Pattern is the overall design or structure of the novel. Rhythm is the reocurrence of certain themes, motifs, or narrative elements that create a sense of continuity and flow.
+ELEMENT: STRUCTURE
+
 ---
 ### **Forster's Pattern and Rhythm Framework**
 

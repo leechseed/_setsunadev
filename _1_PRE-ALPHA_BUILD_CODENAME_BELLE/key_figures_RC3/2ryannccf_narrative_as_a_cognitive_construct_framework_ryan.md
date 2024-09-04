@@ -1,18 +1,15 @@
 ---
+UID: 2RyanNCCF
+Title: Narrative as a Cognitive Construct Framework
 Author: Ryan
 Date: 27/08/2024
-ELEMENT: SEMANTICS
 Last Edited: 9/4/2024, 3:21:01 AM
 Prima-Forma:
 - animus
 - meaning
-Summary: Marie-Laure Ryan's *Narrative as a Cognitive Construct* framework views narrative
-  as a mental model shaped by reader interaction with the text. In digital narratives,
-  this engagement is heightened through interactivity and non-linear structures, positioning
-  the reader as a co-creator of meaning, a concept that bridges narrative theory and
-  cognitive science.
-Title: Narrative as a Cognitive Construct Framework
-UID: 2RyanNCCF
+Summary: Marie-Laure Ryan's *Narrative as a Cognitive Construct* framework views narrative as a mental model shaped by reader interaction with the text. In digital narratives, this engagement is heightened through interactivity and non-linear structures, positioning the reader as a co-creator of meaning, a concept that bridges narrative theory and cognitive science.
+ELEMENT: SEMANTICS
+
 ---
 ### Title: **Ryan's Narrative as a Cognitive Construct Framework**
 

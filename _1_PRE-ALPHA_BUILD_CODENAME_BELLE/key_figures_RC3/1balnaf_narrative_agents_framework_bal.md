@@ -1,14 +1,13 @@
 ---
+UID: 1BalNAF
+Title: Narrative Agents Framework
 Author: Bal
 Date: 27/08/2024
-ELEMENT: PERSPECTIVES
 Prima-Forma:
 - taberna
 - perspective
-Summary: 'Narrative agents are the key participants in the construction and delivery
-  of a narrative: narrator, focalizer, actor.'
-Title: Narrative Agents Framework
-UID: 1BalNAF
+Summary: 'Narrative agents are the key participants in the construction and delivery of a narrative: narrator, focalizer, actor.'
+ELEMENT: PERSPECTIVES
 ---
 ### Title: **Bal's Narrative Agents Framework**
 
