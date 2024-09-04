@@ -31,7 +31,7 @@
      - **Narrative Tension**: The suspense or emotional intensity created by the narrative.
      - **Narrative Closure**: The degree to which a narrative resolves its conflicts and questions, providing a sense of completion.
 
-## 3. **Semantics**
+## 3. **Rhetoric**
    - **Genre and Narrative Codes**
      - **Genre**: The categorization of narrative based on its thematic, structural, and stylistic characteristics.
        - **Narrative Codes**: The conventions and norms that govern specific genres. Roland Barthes identified narrative codes such as the **hermeneutic code** (creating mystery and suspense) and the **proairetic code** (actions that imply further action or consequences).
