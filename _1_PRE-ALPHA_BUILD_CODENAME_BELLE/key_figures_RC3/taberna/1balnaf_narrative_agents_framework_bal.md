@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "taberna"
   - "perspective"
+DIR: "PERSPECTIVES"
 Summary: "Narrative agents are the key participants in the construction and delivery of a narrative: narrator, focalizer, actor."
 ---
 

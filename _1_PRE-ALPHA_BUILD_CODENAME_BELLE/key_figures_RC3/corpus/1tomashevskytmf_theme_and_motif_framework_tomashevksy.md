@@ -3,12 +3,16 @@ UID: "1TomashevskyTMF"
 Title: "Theme and Motif Framework"
 Author: "Tomashevsky"
 Date: "27/08/2024"
+Last Edited: "9/4/2024, 3:45:41 AM"
 Prima-Forma:
   - "narrative function"
   - "corpus"
-Summary: "Theme and Motif are two crucial components of narrative that convey meaning and structure of story."
+DIR: "STRUCTURE"
+Summary: "Boris Tomashevsky's theme and motif framework differentiates between themes, the overarching ideas or messages in narratives, and motifs, the recurring elements that reinforce those themes, helping readers understand how stories convey meaning through repeated symbols, actions, or imagery."
 Elaborated: "True"
 ---
+
+
 ### **Tomashevsky's Theme and Motif Framework**
 
 - **Theme and Motif**:

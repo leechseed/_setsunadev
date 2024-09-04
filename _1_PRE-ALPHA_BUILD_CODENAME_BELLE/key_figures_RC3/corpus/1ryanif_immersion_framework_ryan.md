@@ -3,12 +3,17 @@ UID: "1RyanIF"
 Title: "Immersion Framework"
 Author: "Ryan"
 Date: "27/08/2024"
+Last Edited: "9/4/2024, 3:45:41 AM"
 Prima-Forma:
   - "corpus"
   - "narrative function"
-Summary: "Immersion is the experience of being transported into a fictional world, where the reader becomes fully absorbed in the narrative."
+DIR: "STRUCTURE"
+Summary: "Marie-Laure Ryan's Immersion Framework analyzes how traditional and digital narratives create immersive experiences, highlighting the role of sensory engagement, interactivity, and narrative techniques in transporting readers or viewers into fictional worlds."
+
+
 Elaborated: "True"
 ---
+
 ### **Ryan's Immersion Framework**
 
 - **Immersion**:

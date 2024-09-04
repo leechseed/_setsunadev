@@ -3,10 +3,12 @@ UID: "1ChatmanSDF"
 Title: "Story vs. Discourse Framework"
 Author: "Chatman"
 Date: "27/08/2024"
+Last Edited: "9/4/2024, 3:45:41 AM"
 Prima-Forma:
   - "corpus"
   - "narrative function"
-Summary: "Story is the raw material of narrative. Discourse is the structure and technique of how a story is told."
+DIR: "STRUCTURE"
+Summary: "Chatman’s Story vs. Discourse framework distinguishes between *story* (the content: events, characters, and settings) and *discourse* (the presentation: narrative voice, order of events, and style), providing a crucial tool for analyzing how narratives are structured and experienced across different media."
 Elaborated: "True"
 ---
 

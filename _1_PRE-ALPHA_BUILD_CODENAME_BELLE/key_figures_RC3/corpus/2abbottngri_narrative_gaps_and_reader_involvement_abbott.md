@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "corpus"
   - "narrative function"
+DIR: "STRUCTURE"
 Summary: "Narrative Gaps in a narrative are deliberate omissions or ambiguities that invite the reader to actively participate in the story by filling in the missing pieces."
 Elaborated: "True"
 ---

@@ -3,13 +3,14 @@ UID: "1BarthesNCF"
 Title: "Narrative Codes Framework"
 Author: "Barthes"
 Date: "27/08/2024"
+Last Edited: "
 Prima-Forma:
   - "animus"
   - "meaning"
 Summary: "Narrative codes are a system of meaning that define the purpose of a section of text. The five narrative codes are: hermeneurtic, proairetic, semantic, symbolic, cultural"
 ---
 ### Title: **Barthes's Narrative Codes Framework**
-
+"
 - **Narrative Codes**:
   - **Definition**: Roland Barthes introduces the concept of *narrative codes* as systems of meaning that guide the interpretation of narratives. These codes function as the underlying structures that shape how a narrative is understood, allowing readers to decode various layers of meaning within a text.
   - **Types of Narrative Codes**:

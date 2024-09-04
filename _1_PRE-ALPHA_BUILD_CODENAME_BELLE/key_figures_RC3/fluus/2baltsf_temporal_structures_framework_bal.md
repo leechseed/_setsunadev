@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "time"
   - "fluus"
+DIR: "TIME"
 Summary: "Time is manipulated in narrative in three ways: order, duration, and frequency."
 ---
 

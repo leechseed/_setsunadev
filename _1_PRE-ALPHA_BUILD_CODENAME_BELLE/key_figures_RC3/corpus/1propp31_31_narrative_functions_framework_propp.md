@@ -3,12 +3,15 @@ UID: "1propp31"
 Title: "31 Narrative Functions Framework"
 Author: "Propp"
 Date: "22/08/2024"
+Last Edited: "9/4/2024, 3:45:41 AM"
 Prima-Forma: 
     - "corpus" 
     - "narrative function"
-Summary: "31 narrative functions that follow a specific order in folktales, starting with an initial situation moving through subsequent stages"
+DIR: "STRUCTURE"
+Summary: "Propp's 31 Narrative Functions outline a sequence of recurring plot elements in folktales, highlighting the typical progression from an initial situation through conflict, action, and resolution. These functions provide a framework for understanding the universal structure of narrative storytelling across cultures."
 Elaborated: "True"
 ---
+
 ### **Propp's 31 Narrative Functions Framework**
 
 - **Vladimir Propp's 31 Narrative Functions**:

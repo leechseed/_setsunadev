@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "syntax"
   - "lexis"
+DIR: "SEMANTICS"
 Summary: "Dialogism is the concept that narrative is shaped by the interaction of multiple voices each representing different perspectives, ideologies, and social positions."
 ---
 

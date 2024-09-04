@@ -6,6 +6,7 @@ Date: "27/08/2024"
 Prima-Forma:
   - "lexis"
   - "syntax"
+DIR: "PERSPECTIVES"
 Summary: "Narrative voice affects the reader's interpretation of the story: reliable and unreliable narrator."
 ---
 
