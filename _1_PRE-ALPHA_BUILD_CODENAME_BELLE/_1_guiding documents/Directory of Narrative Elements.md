@@ -41,6 +41,8 @@
     - **Symbolic Code**: The symbolic meanings that emerge from binary oppositions such as good vs. evil, rich vs. poor, etc. 
     - **Cultural Code**: References to external knowledge, cultural references, or shared understanding within a given society of the reader. 
 
+- **Genre Codes**
+    - **Tropal Code**: Specific narrative conventions that guide the progression of stories within particular genres.
     - **Fantasy Code**: The deliberate use of genre-specific elements that audiences expect and enjoy, such as magical systems, epic quests, and mythical creatures, offering familiar tropes for fan satisfaction.
 
 - **Intertextuality**
