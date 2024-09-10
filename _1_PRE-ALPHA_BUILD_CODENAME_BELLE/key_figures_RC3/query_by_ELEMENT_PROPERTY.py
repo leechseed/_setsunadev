@@ -14,7 +14,7 @@ base_output_directory = script_directory
 valid_elements = ["STRUCTURE", "PERSPECTIVES", "RHETORIC", "CHARACTER", "SPACE", "TIME"]
 
 # Valid PROPERTY values
-valid_properties = ["FABULA", "SYUZHET", "FUNCTION"]
+valid_properties = ["FABULA", "SYUZHET", "FUNCTION", "SZ CODES", "GENRE CODE", "INTERTEXTUALITY", "SEMIOTICS"]
 
 # Function to extract YAML frontmatter
 def extract_yaml_frontmatter(content):

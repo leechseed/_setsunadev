@@ -32,14 +32,15 @@
      - **Narrative Closure**: The degree to which a narrative resolves its conflicts and questions, providing a sense of completion.
 
 ## 3. **Rhetoric**
-- **Genre Codes**
+- **S/Z Codes**
   - **Definition**: The set of conventions, norms, and structures that govern specific genres, shaping how narratives are constructed and interpreted.
-  - **Examples**:
-    - **Tropal Code**: Specific narrative conventions that guide the progression of stories within particular genres.
+  - **CODES**:
     - **Hermeneutic Code**: Creating mystery and suspense.
     - **Proairetic Code**: Actions that imply further action or consequences.
-    - **Symbolic Code**: Use of symbols to represent ideas and concepts.
-    - **Cultural Code**: References to knowledge shared within a specific culture.
+    - **Semic Code**: Elements within the narrative that contribute to the characterization and meaning by connotation. He's a 'cold' character. 
+    - **Symbolic Code**: The symbolic meanings that emerge from binary oppositions such as good vs. evil, rich vs. poor, etc. 
+    - **Cultural Code**: References to external knowledge, cultural references, or shared understanding within a given society of the reader. 
+
     - **Fantasy Code**: The deliberate use of genre-specific elements that audiences expect and enjoy, such as magical systems, epic quests, and mythical creatures, offering familiar tropes for fan satisfaction.
 
 - **Intertextuality**
