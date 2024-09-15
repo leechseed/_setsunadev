@@ -12,25 +12,64 @@ ELEMENT: STRUCTURE
 PROPERTY: FABULA
 
 ---
-### **Todorov's Deep Structures Framework**
+
+- [1. **Todorov's Deep Structures Framework**](#1-todorovs-deep-structures-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Deep Structures**](#21-deep-structures)
+  - [2.2. **Categorization of Narratives**](#22-categorization-of-narratives)
+  - [2.3. **Plot Functions**](#23-plot-functions)
+  - [2.4. **Character Functions**](#24-character-functions)
+- [3. **Deep Structures**](#3-deep-structures)
+  - [3.1. **Components of Deep Structures**](#31-components-of-deep-structures)
+    - [3.1.1. **Underlying Patterns**](#311-underlying-patterns)
+    - [3.1.2. **Element Relationships**](#312-element-relationships)
+    - [3.1.3. **Narrative Rules**](#313-narrative-rules)
+- [4. **Categorization of Narratives**](#4-categorization-of-narratives)
+  - [4.1. **Components of Narrative Categorization**](#41-components-of-narrative-categorization)
+    - [4.1.1. **Plot Dynamics**](#411-plot-dynamics)
+    - [4.1.2. **Character Functions**](#412-character-functions)
+    - [4.1.3. **Thematic Oppositions**](#413-thematic-oppositions)
+- [5. **Plot Functions**](#5-plot-functions)
+  - [5.1. **Components of Plot Functions**](#51-components-of-plot-functions)
+    - [5.1.1. **Causality**](#511-causality)
+    - [5.1.2. **Conflict**](#512-conflict)
+    - [5.1.3. **Resolution**](#513-resolution)
+- [6. **Character Functions**](#6-character-functions)
+  - [6.1. **Components of Character Functions**](#61-components-of-character-functions)
+    - [6.1.1. **Protagonist**](#611-protagonist)
+    - [6.1.2. **Antagonist**](#612-antagonist)
+    - [6.1.3. **Supporting Characters**](#613-supporting-characters)
+- [7. **Theoretical Significance**](#7-theoretical-significance)
+
+
+
+
+
+
+
+### 1. **Todorov's Deep Structures Framework**
 
 - **The Structural Analysis of Narrative**:
   - **Definition**: Tzvetan Todorov’s approach to narratology is deeply rooted in structuralism, a theoretical perspective that emphasizes the underlying structures that shape narratives. Todorov focuses on identifying and analyzing the fundamental elements that govern narrative forms, allowing for a systematic exploration of how stories are constructed and how they convey meaning.
 
 ---
 
-### **Key Concepts**
-
-#### **Deep Structures**
-
-- **Definition**:
-  - Todorov’s structural analysis examines the deep, often hidden, structures that underpin narratives. These structures include recurring patterns, relationships between elements, and the rules that govern the organization of narrative components.
+### 2. **Key Concepts**
+#### 2.1. **Deep Structures**
+#### 2.2. **Categorization of Narratives**
+#### 2.3. **Plot Functions**
+#### 2.4. **Character Functions**
 
 ---
 
-### **Components of Deep Structures**
+### 3. **Deep Structures**
 
-#### **Underlying Patterns**
+- **Definition**:
+  - Todorov’s structural analysis examines the deep, often hidden, structures that underpin narratives. These structures include recurring patterns, relationships between elements, and the rules that govern the organization of narrative components.
+  
+#### 3.1. **Components of Deep Structures**
+
+##### 3.1.1. **Underlying Patterns**
 
 - **Definition**:
   - Recurring patterns within narratives that shape the way stories are told, such as the progression from equilibrium to disequilibrium and back to equilibrium.
@@ -43,7 +82,7 @@ PROPERTY: FABULA
 - **Examples**:
   - The hero’s journey, as identified by Joseph Campbell, is an underlying pattern present in many narratives.
 
-#### **Element Relationships**
+##### 3.1.2. **Element Relationships**
 
 - **Definition**:
   - The relationships between different narrative elements, such as characters, settings, and events, that work together to create a coherent and meaningful story.
@@ -56,7 +95,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *Romeo and Juliet*, the relationship between the feuding families and the young lovers drives the story forward.
 
-#### **Narrative Rules**
+##### 3.1.3. **Narrative Rules**
 
 - **Definition**:
   - The implicit rules that govern how narratives are structured, including the sequencing of events, character development, and thematic progression.
@@ -71,16 +110,16 @@ PROPERTY: FABULA
 
 ---
 
-### **Categorization of Narratives**
+### 4. **Categorization of Narratives**
 
 - **Definition**:
   - Todorov categorizes narratives based on their structural elements, such as plot dynamics, character functions, and thematic oppositions. This categorization enables a more precise analysis of different narrative types and their distinctive characteristics.
 
 ---
 
-### **Components of Narrative Categorization**
+#### 4.1. **Components of Narrative Categorization**
 
-#### **Plot Dynamics**
+##### 4.1.1. **Plot Dynamics**
 
 - **Definition**:
   - The specific ways in which the plot unfolds, including the sequence of events, the introduction of conflict, and the resolution of the story.
@@ -93,7 +132,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *Oedipus Rex*, the plot's dynamics center around the discovery of Oedipus' identity, leading to his downfall.
 
-#### **Character Functions**
+##### 4.1.2. **Character Functions**
 
 - **Definition**:
   - The roles that characters play within the narrative, such as the hero, villain, or mentor, and how these roles contribute to the overall structure of the story.
@@ -106,7 +145,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *Harry Potter*, the character functions are clear: Harry is the hero, Voldemort is the villain, and Dumbledore serves as the mentor.
 
-#### **Thematic Oppositions**
+##### 4.1.3. **Thematic Oppositions**
 
 - **Definition**:
   - The fundamental oppositions, such as good vs. evil or freedom vs. oppression, that structure the narrative’s central conflict and contribute to its thematic depth.
@@ -121,16 +160,16 @@ PROPERTY: FABULA
 
 ---
 
-### **Plot Functions**
+### 5. **Plot Functions**
 
 - **Definition**:
   - Plot functions refer to the specific roles that events and actions within a narrative serve in advancing the story. In Todorov’s framework, these functions are essential for maintaining the coherence and progression of the narrative, ensuring that each plot point contributes to the overall structure of the story.
 
 ---
 
-### **Components of Plot Functions**
+#### 5.1. **Components of Plot Functions**
 
-#### **Causality**
+##### 5.1.1. **Causality**
 
 - **Definition**:
   - The cause-and-effect relationships between events that drive the narrative forward. Each action or event within the plot is connected to subsequent actions, creating a logical progression of the story.
@@ -143,7 +182,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *Macbeth*, the murder of King Duncan leads directly to Macbeth's downfall.
 
-#### **Conflict**
+##### 5.1.2. **Conflict**
 
 - **Definition**:
   - The struggle between opposing forces, typically between the protagonist and antagonist, that drives the plot forward.
@@ -156,7 +195,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *The Great Gatsby*, the conflict between Gatsby and Tom Buchanan over Daisy creates the central tension that drives the narrative.
 
-#### **Resolution**
+##### 5.1.3. **Resolution**
 
 - **Definition**:
   - The point in the narrative where the central conflict is resolved, and the story reaches its conclusion.
@@ -171,16 +210,16 @@ PROPERTY: FABULA
 
 ---
 
-### **Character Functions**
+### 6. **Character Functions**
 
 - **Definition**:
   - Character functions refer to the roles that characters play within the narrative, particularly how they contribute to the development and resolution of the plot. In Todorov’s framework, characters are not just individuals but serve specific functions that advance the story.
 
 ---
 
-### **Components of Character Functions**
+#### 6.1. **Components of Character Functions**
 
-#### **Protagonist**
+##### 6.1.1. **Protagonist**
 
 - **Definition**:
   - The main character who drives the action of the narrative, often facing challenges and conflicts that need to be resolved.
@@ -193,7 +232,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *Harry Potter*, Harry’s role as the protagonist is central to the narrative, with his quest to defeat Voldemort driving the plot.
 
-#### **Antagonist**
+##### 6.1.2. **Antagonist**
 
 - **Definition**:
   - The character or force that opposes the protagonist, creating the central conflict in the narrative.
@@ -206,7 +245,7 @@ PROPERTY: FABULA
 - **Examples**:
   - In *The Dark Knight*, the Joker serves as the antagonist, whose actions drive the narrative’s exploration of order versus chaos.
 
-#### **Supporting Characters**
+##### 6.1.3. **Supporting Characters**
 
 - **Definition**:
   - Characters who assist the protagonist or antagonist, contributing to the development of the plot and the thematic depth of the narrative.
@@ -221,7 +260,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Theoretical Significance**
+### 7. **Theoretical Significance**
 
 - **Todorov's Contribution to Structural Analysis**:
   - Todorov's structural analysis of narrative provides a comprehensive framework for understanding the essential components of storytelling. By breaking down narratives into their fundamental elements and exploring their deep structures, Todorov offers a method for systematically analyzing how stories are built and how they function to produce meaning.
