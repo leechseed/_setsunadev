@@ -12,63 +12,127 @@ Summary: "Chatmans Story vs. Discourse framework distinguishes between *story*  
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 ---
+
 ### **Chatman's Story vs. Discourse Framework**
 
 - **Author**: Seymour Chatman
-- **Title**: Chatman's Story vs. Discourse Framework---
+- **Title**: Chatman's Story vs. Discourse Framework
+
 ### **Story vs. Discourse**
 
-- **Definition**: Seymour Chatman, a prominent narratologist, introduces a critical distinction between *story* and *discourse* in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.---
+- **Definition**: 
+  - Seymour Chatman, a prominent narratologist, introduces a critical distinction between *story* and *discourse* in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.
+
+---
+
 ### **Key Concepts**
 
 #### **Story**
 
 - **Definition**: 
-  - The *story* is the content of the narrative—essentially the *what* of the narrative. It includes all the events, characters, settings, and actions that make up the plot. The story is the raw material, existing independently of how it is narrated or presented to the audience.
+  - The *story* refers to the content or the *what* of the narrative. It includes the events, characters, settings, and actions that form the basic structure of the narrative. The story is the raw material, existing independently of how it is presented to the audience.
+
 - **Components of Story**:
-  - **Events**: The incidents or occurrences that drive the narrative forward.
-  - **Characters**: The individuals or entities that participate in the events.
-  - **Settings**: The time and place where the events occur.
-  - **Actions**: The behaviors and decisions made by characters that influence the course of events.
+  - **Events**:
+    - **Definition**: Incidents or occurrences that move the plot forward and form the backbone of the narrative.
+    - **Characteristics**:
+      - **Pivotal**: Drive the central plot forward.
+      - **Sequential**: Follow a logical or thematic order to maintain coherence.
+  
+  - **Characters**:
+    - **Definition**: Individuals or entities that participate in the narrative events.
+    - **Characteristics**:
+      - **Complex**: Contain depth, showing growth or change over time.
+      - **Relatable**: Often designed to evoke emotional connection or sympathy from the audience.
+  
+  - **Settings**:
+    - **Definition**: The time and place where the narrative events occur.
+    - **Characteristics**:
+      - **Grounded**: Provides a believable and immersive context for the story.
+      - **Descriptive**: Richly detailed to enhance the world-building.
+  
+  - **Actions**:
+    - **Definition**: Behaviors, decisions, or deeds performed by the characters that affect the narrative’s direction.
+    - **Characteristics**:
+      - **Purposeful**: Drive the plot through intentional decisions or reactions.
+      - **Consequential**: Lead to important developments or shifts in the story's trajectory.
+
 - **Contextualization**:
-  - The *story* provides the fundamental building blocks of a narrative. It is the *substratum* of the narrative, the series of events and elements that can be arranged and rearranged to form different narratives. 
-  - In different adaptations (e.g., from novel to film), the story remains constant while the discourse might change. For example, the story of "Cinderella" includes her life with her stepmother, the prince’s ball, and the lost slipper—these remain the same across versions, but the way the story is told (the discourse) varies.
-  - **Importance**: The story is what allows different versions of a narrative to share a common thread despite differences in presentation, medium, or style.
+  - The *story* forms the foundation of any narrative. It provides the building blocks of the plot, character arcs, and thematic developments, regardless of the medium through which it is presented. For instance, the story of *Cinderella* remains consistent across different adaptations, such as books, films, and plays, though the *discourse* or the presentation can vary.
+
+---
 
 #### **Discourse**
 
-- **Definition**:
-  - *Discourse* refers to the *how* of the narrative—the structure and technique used to tell the story. It encompasses the narrative voice, the order of events, the focalization, the style, and the medium used to convey the narrative.
+- **Definition**: 
+  - *Discourse* refers to the *how* of the narrative, encompassing the methods and techniques used to present the story. It includes narrative structure, voice, perspective, style, and the medium through which the narrative is conveyed.
+
 - **Components of Discourse**:
-  - **Narrative Voice**: Who tells the story and how it is narrated (first-person, third-person, omniscient, etc.).
-  - **Focalization**: The perspective from which the story is viewed or narrated (whose eyes we see the events through).
-  - **Order of Events**: How the events are sequenced in the narrative (chronologically, through flashbacks, etc.).
-  - **Style**: The language, tone, and literary devices used in the narrative.
-  - **Medium**: The format through which the story is conveyed (text, film, graphic novel, etc.).
+  - **Narrative Voice**:
+    - **Definition**: The entity or narrator that tells the story, shaping how the audience perceives the events.
+    - **Characteristics**:
+      - **Distinctive**: Unique to each story, offering a particular tone or attitude.
+      - **Guiding**: Directs how the audience interprets the events and emotions within the story.
+  
+  - **Focalization**:
+    - **Definition**: The perspective or point of view from which the narrative is told, determining what the audience sees and knows.
+    - **Characteristics**:
+      - **Focused**: Provides insight into the subjective experiences of characters.
+      - **Selective**: Chooses what details or events to emphasize, shaping the narrative’s angle.
+  
+  - **Order of Events**:
+    - **Definition**: The sequence in which the story’s events are presented, whether chronological, non-linear, or through flashbacks.
+    - **Characteristics**:
+      - **Structured**: Follows a deliberate pattern to control the flow of information.
+      - **Manipulative**: Alters time and sequence to create tension or reveal key details strategically.
+  
+  - **Style**:
+    - **Definition**: The author’s choice of language, tone, and literary devices that contribute to the unique voice of the narrative.
+    - **Characteristics**:
+      - **Expressive**: Utilizes a distinct linguistic style to evoke emotions and thoughts.
+      - **Evocative**: Uses literary tools like metaphor, symbolism, and irony to add depth.
+  
+  - **Medium**:
+    - **Definition**: The form or platform through which the story is conveyed, such as text, film, or visual art.
+    - **Characteristics**:
+      - **Adaptable**: Adjusts the narrative techniques to suit the medium.
+      - **Interactive**: Engages the audience through visual, auditory, or textual elements, depending on the medium.
+
 - **Contextualization**:
-  - The *discourse* shapes the audience’s experience of the story. It controls not just what the audience knows but also how and when they learn it, thereby influencing the interpretation and emotional response to the narrative.
-  - Discourse can manipulate time, alter perspectives, and create suspense or surprise by controlling the flow of information.
-  - **Examples**:
-    - In a film, the choice of camera angles, editing, and sound design are elements of discourse.
-    - In literature, the use of stream-of-consciousness, unreliable narrators, or non-linear timelines are discourse strategies that alter the audience’s engagement with the story.
-  - **Importance**: Understanding discourse is crucial for analyzing narrative strategies. It reveals how narratives guide interpretation, evoke emotions, and convey themes beyond the basic events of the story.
+  - Discourse influences how the audience interacts with the story, guiding their emotional response and intellectual interpretation. It shapes the delivery of the narrative through techniques like non-linear timelines, shifting perspectives, or the use of symbolism and metaphor. By manipulating discourse, storytellers can create tension, surprise, or multiple layers of meaning.
+
 ---
+
 ### **Importance of the Distinction**
 
 - **Narrative Analysis**:
-  - Chatman’s distinction between story and discourse allows for a deeper analysis of how narratives function. By separating the *what* from the *how*, critics and scholars can explore the effects of different narrative techniques on the audience’s experience and understanding of the narrative.
-  - It highlights the versatility of narrative content—how the same story can be transformed through various discursive techniques to produce different meanings and effects.
+  - **Definition**: The separation of story and discourse is essential for narrative analysis, as it allows critics to dissect how content (story) is shaped by presentation (discourse).
+  - **Characteristics**:
+      - **Insightful**: Enables deeper understanding of storytelling methods.
+      - **Detailed**: Focuses on how specific choices in discourse affect the audience's perception.
   
 - **Media Adaptation**:
-  - The story vs. discourse distinction is particularly relevant in the study of media adaptations (e.g., from book to film). While the story may remain consistent, the discourse changes significantly, impacting how the narrative is received and interpreted in different media.
+  - **Definition**: When adapting a narrative from one medium to another (e.g., from novel to film), the story may remain unchanged while the discourse undergoes significant transformation.
+  - **Characteristics**:
+      - **Transformative**: Alters the experience by introducing new narrative techniques.
+      - **Evolving**: Adapts narrative style to fit the strengths of each medium.
   
 - **Broader Implications**:
-  - This framework can be applied beyond literature and film to any form of storytelling, including oral narratives, video games, and digital media, making it a universal tool for narrative analysis.
+  - **Definition**: The story vs. discourse distinction has broad applicability across multiple narrative forms, from traditional literature to modern media such as video games and digital storytelling.
+  - **Characteristics**:
+      - **Versatile**: Applies to any narrative medium, from written to visual storytelling.
+      - **Universal**: Reveals the common underlying structures of diverse narratives.
 
 ---
 
 ### **Conclusion**
 
 - **Seymour Chatman’s Framework**:
-  - The distinction between story and discourse is fundamental to understanding narrative structure. It allows for a clear analysis of the *content* versus the *presentation* of a narrative, providing insights into how different storytelling techniques shape the audience’s experience.
-  - By recognizing this distinction, one can better appreciate the artistry involved in storytelling across various media and how narratives engage, influence, and affect their audiences.
+  - The distinction between *story* and *discourse* is essential for understanding the mechanics of narrative across different forms and media. By recognizing the *what* (story) and the *how* (discourse), Chatman’s framework provides a foundation for analyzing how narratives are constructed and experienced.
+  - **Characteristics**:
+      - **Illuminating**: Highlights the artistry involved in narrative construction.
+      - **Analytical**: Encourages critical thinking about narrative choices and their effects.
+  - This framework highlights the complexity of storytelling, demonstrating how the same story can take on new meanings and emotional resonances through different discursive strategies.
+  - **Characteristics**:
+      - **Comprehensive**: Encompasses all aspects of narrative theory.
+      - **Applicable**: Can be used across various types of narrative media, from literature to film and beyond.
