@@ -13,25 +13,51 @@ PROPERTY: FABULA
 
 ---
 
-### **Herman's Story Logic Framework**
+- [1. **Herman's Story Logic Framework**](#1-hermans-story-logic-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Narrative Coherence**](#21-narrative-coherence)
+  - [2.2. **Narrative Sense-Making**](#22-narrative-sense-making)
+- [3. **Narrative Coherence**](#3-narrative-coherence)
+  - [3.1. **Components of Narrative Coherence**](#31-components-of-narrative-coherence)
+    - [3.1.1. **Causal Relationships**](#311-causal-relationships)
+    - [3.1.2. **Thematic Connections**](#312-thematic-connections)
+    - [3.1.3. **Narrative Structure**](#313-narrative-structure)
+    - [3.1.4. **Character Consistency**](#314-character-consistency)
+    - [3.1.5. **Temporal Coherence**](#315-temporal-coherence)
+    - [3.1.6. **Spatial Coherence**](#316-spatial-coherence)
+- [4. **Narrative Sense-Making**](#4-narrative-sense-making)
+  - [4.1. **Components of Narrative Sense-making**](#41-components-of-narrative-sense-making)
+    - [4.1.1. **Inference-Making**](#411-inference-making)
+    - [4.1.2. **Pattern Recognition**](#412-pattern-recognition)
+    - [4.1.3. **Expectation**](#413-expectation)
+    - [4.1.4. **Anticipation**](#414-anticipation)
+    - [4.1.5. **Gap-Filling**](#415-gap-filling)
+    - [4.1.6. **Narrative Framing**](#416-narrative-framing)
+- [5. **Conclusion**](#5-conclusion)
+
+
+### 1. **Herman's Story Logic Framework**
 
 - **Story Logic**:
   - **Definition**: The concept of *story logic* refers to the underlying principles that govern the organization and coherence of narratives. David Herman examines how stories are structured to create logical connections between events, characters, and settings, facilitating the narrative's intelligibility and impact.
 
 ---
 
-### **Key Concepts**
+### 2. **Key Concepts**
 
-#### **Narrative Coherence**
+#### 2.1. **Narrative Coherence**
+#### 2.2. **Narrative Sense-Making**
+
+---
+
+### 3. **Narrative Coherence**
 
 - **Definition**: 
   - Story logic involves understanding how different elements of a narrative fit together to form a coherent whole. This includes recognizing causal relationships, thematic connections, and the narrative's overall structure.
 
----
+#### 3.1. **Components of Narrative Coherence**
 
-### **Components of Narrative Coherence**
-
-#### **Causal Relationships**
+##### 3.1.1. **Causal Relationships**
 
 - **Definition**: 
   - The logical connections between events in a story, where one event leads to another, creating a cause-and-effect sequence that drives the narrative forward.
@@ -46,7 +72,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Thematic Connections**
+##### 3.1.2. **Thematic Connections**
 
 - **Definition**: 
   - The recurring ideas or motifs that link different parts of the narrative, providing a sense of unity and reinforcing the story's central themes.
@@ -61,7 +87,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Narrative Structure**
+##### 3.1.3. **Narrative Structure**
 
 - **Definition**: 
   - The overall organization of a narrative, including its plot, pacing, and the arrangement of events.
@@ -76,7 +102,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Character Consistency**
+##### 3.1.4. **Character Consistency**
 
 - **Definition**: 
   - The logical development of characters' actions, decisions, and behaviors throughout the narrative, ensuring they act in ways that align with their established personalities and motivations.
@@ -91,7 +117,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Temporal Coherence**
+##### 3.1.5. **Temporal Coherence**
 
 - **Definition**: 
   - Temporal coherence refers to the logical progression of time within a narrative, ensuring that the sequence of events and their placement in the timeline are clear and consistent.
@@ -106,7 +132,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Spatial Coherence**
+##### 3.1.6. **Spatial Coherence**
 
 - **Definition**: 
   - Spatial coherence refers to the logical consistency of space within the narrative, ensuring that the story’s setting is clearly defined and the characters’ movements and interactions within the space make sense.
@@ -121,9 +147,13 @@ PROPERTY: FABULA
 
 ---
 
-### **Cognitive Strategies in Narrative Understanding**
+### 4. **Narrative Sense-Making**
+- **Definition**: 
+  - Story logic is not only about the narrative's formal elements but also about how readers use cognitive strategies to make sense of these elements. This involves interpreting the story's coherence, anticipating outcomes, and filling in gaps.
 
-#### **Inference-Making**
+#### 4.1. **Components of Narrative Sense-making**
+
+##### 4.1.1. **Inference-Making**
 
 - **Definition**: 
   - The reader’s ability to draw conclusions about the narrative based on the information provided, even when some details are not explicitly stated.
@@ -138,7 +168,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Pattern Recognition**
+##### 4.1.2. **Pattern Recognition**
 
 - **Definition**: 
   - The process of identifying recurring patterns, themes, or structures within a narrative that contribute to its overall coherence.
@@ -153,7 +183,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Expectation**
+##### 4.1.3. **Expectation**
 
 - **Definition**: 
   - Expectation is the cognitive strategy where readers form predictions about future events based on the narrative’s established logic, patterns, and foreshadowing.
@@ -168,7 +198,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Anticipation**
+##### 4.1.4. **Anticipation**
 
 - **Definition**: 
   - Anticipation is the reader’s emotional or intellectual readiness for future events, based on narrative foreshadowing or established themes.
@@ -183,7 +213,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Gap-Filling**
+##### 4.1.5. **Gap-Filling**
 
 - **Definition**: 
   - The reader’s ability to fill in missing information or connect narrative gaps by using their imagination or drawing on contextual clues.
@@ -198,7 +228,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Narrative Framing**
+##### 4.1.6. **Narrative Framing**
 
 - **Definition**: 
   - The mental framework or schema that readers use to understand and organize narrative information, influenced by cultural, social, and personal experiences.
@@ -213,7 +243,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Conclusion**
+### 5. **Conclusion**
 
 - **Herman’s Contribution to Narrative Theory**:
   - David Herman's *story logic* framework offers a comprehensive approach to understanding how narratives achieve coherence and how readers cognitively engage with them. His work bridges narrative theory with cognitive science, making it a valuable tool for analyzing storytelling across genres and media.
