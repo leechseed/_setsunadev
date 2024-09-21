@@ -10,14 +10,24 @@ Summary: 'Temporal ordering refers to the sequence in which the events are prese
 ELEMENT: TIME
 
 ---
-### Title: **Sternberg's Temporal Ordering Framework**
+
+- [1. Title: **Sternberg's Temporal Ordering Framework**](#1-title-sternbergs-temporal-ordering-framework)
+- [2. **Key Concepts**:](#2-key-concepts)
+  - [2.1. **Anachrony**:](#21-anachrony)
+  - [2.2. **Duration**:](#22-duration)
+  - [2.3. **Frequency**:](#23-frequency)
+- [3. **Theoretical Significance**:](#3-theoretical-significance)
+
+
+---
+### 1. Title: **Sternberg's Temporal Ordering Framework**
 
 - **Temporal Ordering**:
   - **Definition**: Meir Sternberg’s Temporal Ordering Framework focuses on the sequence in which events are presented within a narrative, a concept that significantly influences how readers experience and interpret the story. Temporal ordering refers to how time is structured in the narrative, including whether events are presented in chronological order or manipulated through various techniques to enhance narrative effect. Sternberg’s analysis delves into the ways in which the manipulation of time can affect the pacing, suspense, and thematic depth of a narrative, making it a central component of storytelling.
 
-  - **Key Concepts**:
+### 2. **Key Concepts**:
   
-    - **Anachrony**:
+#### 2.1. **Anachrony**:
       - **Definition**: Anachrony refers to the reordering of events in a non-chronological sequence within a narrative. This includes techniques such as *analepsis* (flashbacks) and *prolepsis* (flashforwards), which allow the story to present events out of their natural time sequence.
       - **Characteristics**:
         - **Analepsis (Flashbacks)**: The narrative technique of revisiting past events, providing background information or context that enriches the current storyline.
@@ -30,7 +40,7 @@ ELEMENT: TIME
           - **Gabriel García Márquez’s *One Hundred Years of Solitude***: The novel frequently employs anachrony, using flashbacks and flashforwards to weave a complex, non-linear narrative that explores the cyclical nature of time and history in the Buendía family.
           - **William Faulkner’s *The Sound and the Fury***: Faulkner uses anachrony extensively, particularly through the fragmented and non-linear narrative structure that reflects the disordered mental states of the characters.
 
-    - **Duration**:
+####  2.2. **Duration**:
       - **Definition**: Duration in narrative refers to the relationship between the actual time span covered by the events in the story and the time taken to narrate these events. Duration affects how events are experienced by the reader, particularly in terms of pacing and the narrative’s focus on specific moments.
       - **Characteristics**:
         - **Summary**: A narrative technique where events that span a long period are condensed into a brief account, speeding up the pacing and covering significant amounts of time quickly.
@@ -43,7 +53,7 @@ ELEMENT: TIME
           - **Leo Tolstoy’s *War and Peace***: Tolstoy uses duration strategically, often summarizing long periods of historical events while providing detailed scenes of personal interactions, balancing the grand historical scope with intimate character moments.
           - **Ian McEwan’s *Atonement***: The novel plays with duration by compressing years into a few pages in one part, while another part focuses in great detail on a single day, highlighting the significance of certain moments over others.
 
-    - **Frequency**:
+####  2.3. **Frequency**:
       - **Definition**: Frequency in narrative concerns how often certain events are narrated within the story. Sternberg identifies different types of narrative frequency, including *singulative* (one event narrated once), *repeating* (one event narrated multiple times), and *iterative* (multiple similar events narrated as if they happened once).
       - **Characteristics**:
         - **Singulative Narration**: An event is narrated exactly once, corresponding to the one time it occurred in the story’s timeline.
@@ -56,7 +66,7 @@ ELEMENT: TIME
           - **Toni Morrison’s *Beloved***: The event of Sethe’s traumatic decision to kill her child is revisited multiple times throughout the novel, each repetition adding new layers of meaning and emotional depth.
           - **Marcel Proust’s *In Search of Lost Time***: Proust frequently uses iterative narration to capture the recurring nature of social rituals and personal experiences, emphasizing the themes of memory and time.
 
-  - **Theoretical Significance**:
+### 3. **Theoretical Significance**:
     - **Impact on Narrative Theory**: Sternberg’s Temporal Ordering Framework has had a profound impact on narrative theory, particularly in understanding how the manipulation of time influences the structure and meaning of a story. By analyzing how time is ordered, paced, and repeated, Sternberg provides tools for dissecting the complexities of narrative time and its effects on reader engagement and interpretation.
     - **Application Across Media**: Sternberg’s concepts are applicable across various narrative forms, including literature, film, television, and video games. The manipulation of time is a fundamental aspect of storytelling in these media, and Sternberg’s framework offers valuable tools for analyzing how temporal structures shape the narrative experience across different formats.
     - **Supporting Information**:

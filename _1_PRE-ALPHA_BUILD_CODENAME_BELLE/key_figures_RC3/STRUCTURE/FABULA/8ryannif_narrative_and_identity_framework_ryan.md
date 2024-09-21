@@ -12,16 +12,28 @@ PROPERTY: FABULA
 
 ---
 
-### Title: **Tomashevsky's Narrative Devices Framework**
+- [1. Title: **Tomashevsky's Narrative Devices Framework**](#1-title-tomashevskys-narrative-devices-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Irony**](#21-irony)
+  - [2.2. **Allegory**](#22-allegory)
+  - [2.3. **Symbolism**](#23-symbolism)
+- [3. **Implications of Tomashevsky’s Framework**](#3-implications-of-tomashevskys-framework)
+
+
+
+
+---
+
+### 1. Title: **Tomashevsky's Narrative Devices Framework**
 
 - **Narrative Devices**:
   - **Definition**: Boris Tomashevsky explored the various narrative devices that authors employ to enhance their storytelling. Devices such as irony, allegory, and symbolism are key tools that shape the reader’s interpretation and emotional response, adding layers of meaning and complexity to a narrative.
 
 ---
 
-### **Key Concepts**
+### 2. **Key Concepts**
 
-#### **Irony**
+#### 2.1. **Irony**
 
 - **Definition**:
   - Irony is a narrative device that creates a contrast between expectations and reality, often revealing deeper truths by highlighting the gap between appearance and what actually occurs.
@@ -39,7 +51,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Allegory**
+#### 2.2. **Allegory**
 
 - **Definition**:
   - Allegory is a narrative device where characters, events, or settings symbolize broader moral, political, or philosophical meanings. It allows authors to embed deeper messages within seemingly simple or straightforward narratives.
@@ -57,7 +69,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Symbolism**
+#### 2.3. **Symbolism**
 
 - **Definition**:
   - Symbolism involves the use of objects, characters, or actions that carry deeper meanings beyond their literal sense, representing abstract ideas or concepts within the narrative.
@@ -75,7 +87,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Implications of Tomashevsky’s Framework**
+### 3. **Implications of Tomashevsky’s Framework**
 
 - **Understanding Narrative Complexity**:
   - Tomashevsky’s exploration of narrative devices like irony, allegory, and symbolism underscores their central role in shaping how readers engage with a text. These devices create complexity within narratives, inviting multiple interpretations and enhancing the reader’s emotional and intellectual involvement.
