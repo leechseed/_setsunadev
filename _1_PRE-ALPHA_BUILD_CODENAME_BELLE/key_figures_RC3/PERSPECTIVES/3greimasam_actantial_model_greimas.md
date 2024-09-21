@@ -11,51 +11,142 @@ Summary: "Greimas's Actantial Model is a structuralist framework that identifies
 ELEMENT: PERSPECTIVES
 
 ---
-### Title: **Greimas's Actantial Model**
+---
 
-- **Actantial Model**:
-  - **Definition**: Algirdas Julien Greimas developed the *actantial model*, a theoretical framework for analyzing the roles and functions of characters in a narrative. The model identifies six essential actants—Subject, Object, Sender, Receiver, Helper, and Opponent—that together form the core of any narrative structure. These actants are not limited to individual characters but can also represent abstract entities or collective groups, making the model versatile for analyzing various types of narratives across different media. Greimas’s model emphasizes the relationships between these actants, revealing the underlying structure of the narrative and how its meaning is generated through the interactions of these roles.
+##### Title: **Greimas's Actantial Model**
 
-  - **Key Concepts**:
-    - **Subject and Object**:
-      - **Definition**: In Greimas's model, the Subject is the main character or entity that actively seeks to achieve a goal, which is represented by the Object. The Subject's quest to obtain or achieve the Object is the driving force of the narrative. The Object can be a person, an item, a state of being, or an abstract concept, depending on the story.
-      - **Characteristics**:
-        - **Subject**: The Subject is central to the narrative, often depicted as the protagonist or hero who embarks on a journey or mission. The Subject’s pursuit of the Object drives the plot and determines the narrative’s progression.
-        - **Object**: The Object is the goal that the Subject aims to obtain or achieve. It represents the ultimate desire or end-point of the Subject’s quest and is essential for the resolution of the narrative.
-      - **Contextualization**:
-        - The relationship between the Subject and Object forms the core of the narrative’s action. This pursuit typically involves various obstacles, conflicts, and challenges that the Subject must overcome. The Object’s nature often defines the narrative’s genre and themes, such as love (romantic narratives), power (political dramas), or truth (mysteries). The Subject’s journey toward the Object is what engages the audience, as it creates tension and anticipation for how the narrative will resolve.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Frodo Baggins and the One Ring in *The Lord of the Rings***: Frodo (Subject) seeks to destroy the One Ring (Object) to save Middle-earth from Sauron’s power.
-          - **Sherlock Holmes and the Solution to a Mystery**: Holmes (Subject) seeks the truth or solution to the mystery (Object) in each case he investigates.
+**Actantial Model**:
+   **Definition**: Algirdas Julien Greimas’s *Actantial Model* is a structuralist framework for analyzing the roles and functions of characters in a narrative. The model identifies six essential actants—Subject, Object, Sender, Receiver, Helper, and Opponent—that interact to form the core of the narrative. These actants can represent characters, abstract concepts, or collective entities, making the model versatile for analyzing diverse narrative structures across various media.
 
-    - **Sender and Receiver**:
-      - **Definition**: The Sender is the entity that initiates or motivates the Subject's quest by sending them on their journey or assigning the mission. The Receiver is the entity that ultimately benefits from the successful completion of the quest. In many narratives, the Sender and Receiver can be the same entity, but they can also be distinct.
-      - **Characteristics**:
-        - **Sender**: The Sender sets the narrative in motion by defining the quest or goal. This actant represents the motivating force behind the Subject’s actions, often embodying authority, tradition, or necessity.
-        - **Receiver**: The Receiver is the entity that gains from the Subject’s success. This could be the Subject themselves, another character, or society as a whole, depending on the narrative’s structure and themes.
-      - **Contextualization**:
-        - The roles of Sender and Receiver highlight the narrative’s purpose and the distribution of outcomes. By examining these actants, one can gain insight into the moral or thematic resolution of the narrative. The Sender often represents a force of good or duty, while the Receiver’s benefit often aligns with the narrative’s resolution, such as justice being served, love being fulfilled, or order being restored.
-      - **Supporting Information**:
-        - **Examples**:
-          - **King Arthur and the Quest for the Holy Grail**: In Arthurian legends, King Arthur (Sender) sends his knights on the quest for the Holy Grail. The knights, particularly Galahad (Subject), seek the Grail (Object) for the spiritual and physical well-being of Camelot (Receiver).
-          - **The Fairy Godmother and Cinderella**: The Fairy Godmother (Sender) equips Cinderella (Subject) to attend the ball. Cinderella’s success (Receiver) brings her happiness and a better life.
+---
 
-    - **Helper and Opponent**:
-      - **Definition**: The Helper is the character or entity that aids the Subject in their quest, providing support, resources, or guidance. The Opponent, on the other hand, is the character or entity that opposes the Subject, creating obstacles and conflicts that the Subject must overcome to achieve their goal.
-      - **Characteristics**:
-        - **Helper**: Helpers can be individuals, groups, or even magical objects that assist the Subject in overcoming challenges. They often symbolize friendship, loyalty, or divine intervention.
-        - **Opponent**: The Opponent is the primary source of conflict within the narrative. This actant can be an antagonist, a rival, or even an internal struggle that hinders the Subject’s progress toward the Object.
-      - **Contextualization**:
-        - The dynamic between Helpers and Opponents adds complexity to the narrative, creating tension and shaping the story’s progression. Helpers contribute to the Subject’s success by providing crucial assistance at key moments, often turning the tide in the Subject’s favor. Opponents, on the other hand, create the necessary conflict that drives the narrative, forcing the Subject to demonstrate their worthiness, resilience, or cleverness. The interplay between these actants is central to the narrative’s pacing and the development of its themes, such as the triumph of good over evil or the importance of perseverance.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Samwise Gamgee and Sauron in *The Lord of the Rings***: Sam (Helper) supports Frodo (Subject) throughout his quest, while Sauron (Opponent) represents the ultimate evil that must be overcome.
-          - **The Genie and Jafar in *Aladdin***: The Genie (Helper) assists Aladdin (Subject) in his quest, while Jafar (Opponent) tries to thwart his efforts to win Jasmine and the kingdom.
+##### Key Concepts
 
-  - **Theoretical Significance**:
-    - **Impact on Structuralist Narratology**: Greimas’s Actantial Model has been a cornerstone of structuralist narratology, offering a clear and systematic way to analyze the roles and functions of characters within a narrative. By reducing characters to their functional roles, Greimas’s model allows for a more abstract and universal understanding of narrative structures, applicable across a wide range of stories and genres.
-    - **Application Across Various Media**: The actantial model is not limited to literary analysis; it is also widely applicable to film, theater, video games, and other forms of narrative media. Its flexibility in identifying actants as either characters or abstract entities makes it a powerful tool for dissecting the underlying mechanics of any narrative.
-    - **Supporting Information**:
-      - **Interdisciplinary Influence**: Beyond narratology, the Actantial Model has influenced fields such as semiotics, anthropology, and communication studies. Its emphasis on the roles and functions of narrative elements makes it a versatile framework for understanding how stories operate in different cultural and social contexts.
-      - **Criticism and Adaptation**: While Greimas’s model is highly influential, some critics argue that it can oversimplify complex characters by reducing them to mere functions within the narrative. Subsequent theorists have expanded on Greimas’s ideas, incorporating more nuanced approaches that account for character development and multi-dimensionality. Despite these critiques, the Actantial Model remains a foundational tool in narrative analysis.
+##### Subject and Object
+
+**Definition**:
+   The *Subject* is the character or entity pursuing a goal, while the *Object* is the goal or desire that the Subject seeks to obtain or achieve.
+
+**Types**:
+   - **Subject**: The protagonist or main character that actively pursues the Object.
+   - **Object**: The desired goal or endpoint of the Subject’s quest.
+
+**Characteristics**:
+   - **Centrality**: The Subject’s pursuit of the Object drives the narrative forward.
+   - **Goal-Oriented**: The Object defines the purpose and direction of the Subject’s actions.
+   - **Narrative Tension**: The relationship between Subject and Object creates the primary tension in the narrative, as the Subject overcomes obstacles to achieve the Object.
+
+**Contextualization**:
+   The Subject’s journey to obtain the Object is the foundation of the narrative, shaping its progression and structure. The nature of the Object often defines the genre and themes of the narrative, such as love, power, or truth.
+
+**Examples**:
+   - **Frodo and the One Ring in *The Lord of the Rings***: Frodo (Subject) seeks to destroy the One Ring (Object).
+   - **Sherlock Holmes and the Solution to a Mystery**: Holmes (Subject) seeks to solve the mystery (Object).
+
+---
+
+##### Sender
+
+**Definition**:
+   The *Sender* is the entity that initiates or motivates the Subject’s quest by assigning a mission, desire, or challenge.
+
+**Types**:
+   - **External Sender**: A character, group, or authority outside the Subject’s inner world that provides the objective or quest.
+   - **Internal Sender**: An internal force, such as personal desire, conscience, or morality, that motivates the Subject to pursue the Object.
+
+**Characteristics**:
+   - **Initiating Force**: The Sender sets the narrative in motion by motivating the Subject’s actions.
+   - **Authority**: The Sender often holds a position of authority or influence over the Subject.
+   - **Mission Definition**: The Sender defines the goal or mission that the Subject must complete.
+
+**Contextualization**:
+   The Sender’s role is critical for establishing the purpose behind the Subject’s quest, whether it’s an external command or an internal drive. By analyzing the Sender, readers can understand the source of motivation for the narrative and the relationship between the Subject and the forces guiding their journey.
+
+**Examples**:
+   - **King Arthur in the Quest for the Holy Grail**: King Arthur (Sender) initiates the quest by assigning his knights to search for the Holy Grail.
+   - **The Fairy Godmother in *Cinderella***: The Fairy Godmother (Sender) provides Cinderella with the means to pursue happiness and attend the ball.
+
+---
+
+##### Receiver
+
+**Definition**:
+   The *Receiver* is the entity that ultimately benefits from the success of the Subject's quest. It is the target or beneficiary of the successful resolution of the narrative’s main goal.
+
+**Types**:
+   - **External Receiver**: A person, community, or society that stands to gain from the Subject's success.
+   - **Internal Receiver**: The Subject themselves, who may benefit directly from completing their own quest.
+
+**Characteristics**:
+   - **Beneficiary**: The Receiver gains something from the Subject's achievement, whether it be tangible or intangible.
+   - **Alignment with Themes**: The Receiver’s gain often aligns with the overall message or resolution of the narrative.
+   - **Moral Reward**: The Receiver’s benefit may reflect the moral, ethical, or societal gains inherent in the story’s resolution.
+
+**Contextualization**:
+   The Receiver’s role determines who or what gains from the Subject’s successful quest, influencing the moral or thematic resolution of the story. Whether the Receiver is the Subject or another entity, their gain reinforces the narrative’s purpose and outcome.
+
+**Examples**:
+   - **Camelot in the Quest for the Holy Grail**: Camelot (Receiver) benefits spiritually and politically from the success of the quest.
+   - **Cinderella in *Cinderella***: Cinderella (Receiver) benefits by gaining freedom and a better life after attending the ball.
+
+---
+
+##### Helper
+
+**Definition**:
+   The *Helper* is the character, force, or entity that assists the Subject in achieving their goal. Helpers offer support, resources, or guidance that aid the Subject in overcoming obstacles.
+
+**Types**:
+   - **Character Helper**: A person or group that directly aids the Subject in their quest.
+   - **Abstract Helper**: Forces such as luck, destiny, or magical items that indirectly assist the Subject.
+
+**Characteristics**:
+   - **Supportive Role**: The Helper provides essential assistance, often at critical moments, to ensure the Subject’s progress.
+   - **Loyalty**: Helpers are often loyal allies of the Subject, embodying friendship, trust, or divine intervention.
+   - **Key Aid**: The Helper’s actions may change the course of the narrative, providing the Subject with vital aid.
+
+**Contextualization**:
+   Helpers are essential for illustrating the positive forces in the narrative that support the Subject. Their involvement showcases the theme of cooperation, loyalty, or destiny, helping the Subject overcome obstacles and reach their goal.
+
+**Examples**:
+   - **Samwise Gamgee in *The Lord of the Rings***: Sam (Helper) loyally supports Frodo throughout the journey to destroy the One Ring.
+   - **The Genie in *Aladdin***: The Genie (Helper) aids Aladdin by providing magical assistance in his quest to win Jasmine’s heart.
+
+---
+
+##### Opponent
+
+**Definition**:
+   The *Opponent* is the entity that creates obstacles, conflicts, or opposition to the Subject’s quest. Opponents hinder the Subject’s progress and serve as the primary source of narrative tension.
+
+**Types**:
+   - **Antagonist Opponent**: A specific character or group that directly opposes the Subject.
+   - **Abstract Opponent**: Forces such as fate, internal conflict, or societal norms that indirectly create challenges for the Subject.
+
+**Characteristics**:
+   - **Conflict Creator**: The Opponent actively works to prevent the Subject from achieving their goal.
+   - **Source of Tension**: The Opponent’s actions generate the primary obstacles and conflicts that drive the plot forward.
+   - **Challenge to Overcome**: Defeating or outmaneuvering the Opponent is often necessary for the Subject’s success.
+
+**Contextualization**:
+   The Opponent’s role is essential for creating conflict and tension in the narrative, driving the Subject to overcome challenges and proving their worthiness or determination. The interaction between the Subject and the Opponent highlights the thematic struggles within the story.
+
+**Examples**:
+   - **Sauron in *The Lord of the Rings***: Sauron (Opponent) represents the dark force opposing Frodo’s mission to destroy the One Ring.
+   - **Jafar in *Aladdin***: Jafar (Opponent) seeks to thwart Aladdin’s plans and take control of the kingdom.
+
+---
+
+##### Implications of **Actantial Model**
+
+**Impact on Structuralist Narratology**:
+   Greimas’s Actantial Model has significantly influenced structuralist narratology by providing a systematic way to analyze the functions and roles of characters in narratives. It emphasizes the underlying structure of stories and highlights the relationships between different narrative elements.
+
+**Application Across Media**:
+   The actantial model applies to various forms of media, including literature, film, theater, and video games. Its ability to represent characters and abstract entities as actants makes it adaptable for diverse narratives.
+
+**Supporting Information**:
+   - **Interdisciplinary Influence**: The model has influenced fields such as semiotics and communication studies by offering a universal framework for understanding how stories operate in different cultural contexts.
+   - **Critiques**: Some argue that the model oversimplifies characters by reducing them to functional roles, but it remains a foundational tool for analyzing narrative structures.
+
+---

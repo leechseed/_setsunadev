@@ -9,64 +9,98 @@ Summary: 'Time is manipulated in narrative in three ways: order, duration, and f
 ELEMENT: TIME
 ---
 
-- [1. Title: **Bal's Temporal Structures Framework**](#1-title-bals-temporal-structures-framework)
-  - [1.1. **Key Concepts**:](#11-key-concepts)
-    - [1.1.1. **Order**:](#111-order)
-    - [1.1.2. **Duration**:](#112-duration)
-    - [1.1.3. **Frequency**:](#113-frequency)
-  - [1.2. **Theoretical Significance**:](#12-theoretical-significance)
-
-
 ---
-### 1. Title: **Bal's Temporal Structures Framework**
+
+### 1. **Title: Bal's Temporal Structures Framework**
 
 - **Temporal Structures**:
-  - **Definition**: Mieke Bal’s framework on temporal structures in narrative examines how time is manipulated and represented within a story. By focusing on the concepts of *order*, *duration*, and *frequency*, Bal provides a comprehensive approach to understanding the temporal dynamics of narratives. Her analysis reveals how the manipulation of time influences the way stories are told and how readers interpret and experience them. Bal’s framework is crucial for analyzing the complexities of narrative time, offering tools to dissect how authors structure their stories and the effects these structures have on narrative meaning.
+  - **Definition**: Mieke Bal’s framework examines how time is manipulated and represented within narratives, focusing on *order*, *duration*, and *frequency*. This analysis highlights the impact of temporal structures on narrative meaning, pacing, and the reader's experience. 
 
-#### 1.1. **Key Concepts**:
+---
 
-##### 1.1.1. **Order**:
-      - **Definition**: Order refers to the arrangement of events in the narrative, which may differ from their chronological sequence. Bal explores how anachronies, such as flashbacks (analepsis) and flashforwards (prolepsis), alter the chronological flow of the story, influencing the reader’s interpretation and understanding of the narrative.
-      - **Characteristics**:
-        - **Flashbacks (Analepsis)**: A narrative technique where events from the past are inserted into the current timeline of the story. Flashbacks provide background information, reveal character motivations, or explain current situations.
-        - **Flashforwards (Prolepsis)**: A technique where future events are presented before they occur in the story’s primary timeline. Flashforwards can create suspense, foreshadow events, or provide insight into the narrative’s outcome.
-        - **Non-linear Narratives**: Bal’s concept of order also encompasses non-linear narratives, where the events are not presented in a straightforward chronological sequence but are rearranged to create different effects or highlight specific themes.
-      - **Contextualization**:
-        - The manipulation of narrative order significantly affects how a story is understood, particularly in how past and future events are revealed to the reader. By disrupting the chronological sequence, authors can control the flow of information, create suspense, and deepen the emotional impact of the narrative. Bal’s framework emphasizes the importance of these temporal shifts in shaping the reader’s experience and understanding of the story. The strategic use of anachronies allows authors to play with the reader’s expectations and to emphasize particular themes or character developments by revealing information at key moments.
-      - **Supporting Information**:
-        - **Examples**:
-          - **William Faulkner’s *The Sound and the Fury***: The novel’s non-linear structure, with its frequent use of flashbacks, reflects the fragmented consciousness of the characters and adds depth to the narrative’s exploration of memory and time.
-          - **Gabriel García Márquez’s *Chronicle of a Death Foretold***: The novel begins with the announcement of Santiago Nasar’s death, and the story is told through a series of flashbacks that gradually reveal the circumstances leading up to the event.
+### 2. **Key Concepts**
 
-##### 1.1.2. **Duration**:
-      - **Definition**: Duration describes the relationship between the time of the events in the story and the time it takes to narrate them. This concept includes narrative techniques such as summary, scene, and ellipsis, which control the pacing and focus of the narrative. Duration influences how much time the narrative devotes to particular events and how quickly or slowly the story unfolds.
-      - **Characteristics**:
-        - **Summary**: A technique where events that take a long time in the story are condensed into a brief narration, speeding up the pace of the narrative.
-        - **Scene**: A narrative technique where the time of the story and the time of the narration are equal, allowing for detailed, moment-by-moment recounting of events. Scenes often slow down the narrative to focus on critical moments.
-        - **Ellipsis**: The omission of events or periods of time from the narrative, creating gaps that the reader must fill in. Ellipsis can speed up the narrative by skipping over less important events or periods.
-      - **Contextualization**:
-        - Duration is a key factor in narrative pacing and focus. By analyzing how time is compressed (through summary or ellipsis) or expanded (through scene), Bal’s framework helps to understand the narrative’s emphasis on certain events and the overall rhythm of the story. Duration affects how readers experience the flow of the narrative and how they interpret the significance of different events. For example, an extended scene may suggest the importance of a particular event, while an ellipsis may indicate that certain events are less crucial to the overall narrative.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Leo Tolstoy’s *War and Peace***: Tolstoy uses summary to quickly cover large swathes of historical events, while scenes are used to delve into the personal lives of the characters, providing a balance between the grand and the intimate.
-          - **Ernest Hemingway’s *The Old Man and the Sea***: The novella’s duration is carefully controlled, with detailed scenes focusing on the old man’s struggle with the marlin, while ellipses are used to skip over less dramatic moments.
+#### 2.1. **Order**
 
-##### 1.1.3. **Frequency**:
-      - **Definition**: Frequency refers to the number of times an event is narrated within the story. Bal distinguishes between *singulative* (one event narrated once), *repeating* (one event narrated multiple times), and *iterative* (multiple similar events narrated as if they happened once) narration. Frequency helps to highlight the significance of certain events or actions by repeating them or condensing multiple occurrences into a single narrative moment.
-      - **Characteristics**:
-        - **Singulative Narration**: An event is narrated exactly once, corresponding to the one time it occurred in the story.
-        - **Repeating Narration**: An event is narrated more than once, often from different perspectives or with varying levels of detail, to emphasize its importance or to explore different aspects of it.
-        - **Iterative Narration**: Multiple similar events are narrated as a single occurrence, suggesting that they are representative of a repeated or habitual action within the story.
-      - **Contextualization**:
-        - The concept of frequency allows for the analysis of repetition and emphasis within a narrative. By repeating certain events or actions, authors can draw attention to their significance, explore their impact from multiple angles, or build thematic resonance. Alternatively, the use of iterative narration can suggest the routine or cyclical nature of certain actions, creating a sense of inevitability or emphasizing patterns in behavior or events. Bal’s framework provides insights into how these narrative techniques affect the story’s thematic development and the reader’s perception of its significance.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Toni Morrison’s *Beloved***: The event of Sethe’s killing of her child is narrated multiple times from different perspectives, each repetition adding layers of meaning and understanding to the traumatic event.
-          - **Marcel Proust’s *In Search of Lost Time***: Proust frequently uses iterative narration to convey the habitual nature of certain social rituals and the protagonist’s experiences, highlighting the recurring themes of memory and time.
+- **Definition**:
+  - Order refers to the arrangement of events in a narrative, which may not follow chronological sequence. Bal explores anachronies like flashbacks (analepsis) and flashforwards (prolepsis), altering the story's flow.
 
-####  1.2. **Theoretical Significance**:
-    - **Impact on Narrative Theory**: Bal’s Temporal Structures Framework has significantly influenced narrative theory, particularly in the analysis of how time functions within a story. By breaking down the complex ways in which time is manipulated, Bal provides a systematic approach to understanding the temporal dynamics of narratives. Her framework is essential for analyzing how authors control the flow of information, manage pacing, and create meaning through the strategic manipulation of time.
-    - **Application Across Media**: While originally developed for literary analysis, Bal’s concepts are widely applicable across various narrative forms, including film, television, theater, and even video games. The manipulation of time is a fundamental aspect of storytelling in these media, and Bal’s framework offers valuable tools for analyzing how temporal structures shape the narrative experience across different formats.
-    - **Supporting Information**:
-      - **Interdisciplinary Influence**: Bal’s exploration of temporal structures has had an impact beyond literary studies, influencing fields such as film studies, media studies, and even cognitive science, where the perception of time and narrative structure is of significant interest. Her work provides insights into how temporal manipulation affects audience engagement and the cognitive processing of narrative information.
-      - **Critiques and Further Development**: While Bal’s framework is highly influential, some critics argue that it may focus too narrowly on structural aspects of narrative time, potentially overlooking other important elements such as character development or thematic depth. However, her work continues to be developed and expanded by scholars who integrate temporal analysis with other aspects of narrative study, providing a more holistic understanding of storytelling.
+- **Types**:
+  - **Flashbacks (Analepsis)**: Inserts past events into the present timeline to provide background or reveal character motivations.
+  - **Flashforwards (Prolepsis)**: Presents future events before they occur, creating suspense or foreshadowing.
+  - **Non-linear Narratives**: Events are presented out of sequence to highlight themes or alter effects.
+
+- **Characteristics**:
+  - **Disruptive**: Alters the normal flow of time, creating a non-chronological sequence.
+  - **Informative**: Provides background or future insight that reshapes the reader’s understanding of events.
+  - **Suspense-Building**: Manipulating order creates anticipation by revealing or withholding information.
+
+- **Contextualization**:
+  - Manipulating narrative order allows authors to control information flow, creating suspense or enhancing emotional impact. It enables the reader to view past and future events in new ways, shaping expectations and thematic focus.
+
+- **Examples**:
+  - **William Faulkner’s *The Sound and the Fury***: Uses non-linear structure and flashbacks to mirror characters' fragmented consciousness.
+  - **Gabriel García Márquez’s *Chronicle of a Death Foretold***: Opens with Santiago Nasar’s death, then reveals events through flashbacks.
+
+---
+
+#### 2.2. **Duration**
+
+- **Definition**:
+  - Duration refers to the relationship between the time of events and how long they take to narrate. Techniques like summary, scene, and ellipsis manage the pacing and focus of the narrative.
+
+- **Types**:
+  - **Summary**: Condenses long events into brief narration, speeding up the story.
+  - **Scene**: Provides moment-by-moment recounting, where narrative and story time are equal.
+  - **Ellipsis**: Omits events, allowing the narrative to skip over less important periods.
+
+- **Characteristics**:
+  - **Pace-Controlling**: Determines the speed at which the narrative unfolds.
+  - **Selective**: Focuses on key events while omitting or summarizing less critical moments.
+  - **Impactful**: Extended scenes emphasize importance, while ellipses create narrative gaps.
+
+- **Contextualization**:
+  - Duration influences narrative pacing. Summary and ellipsis speed up the story, while detailed scenes slow it down to emphasize significant moments, shaping how readers perceive event importance.
+
+- **Examples**:
+  - **Leo Tolstoy’s *War and Peace***: Balances historical events (summary) with personal lives (scenes).
+  - **Ernest Hemingway’s *The Old Man and the Sea***: Uses detailed scenes for dramatic struggle and ellipses for less important moments.
+
+---
+
+#### 2.3. **Frequency**
+
+- **Definition**:
+  - Frequency describes how often an event is narrated. Bal identifies *singulative* (one event narrated once), *repeating* (one event narrated multiple times), and *iterative* (similar events narrated as one) narration types.
+
+- **Types**:
+  - **Singulative Narration**: Narrating an event exactly once as it happened.
+  - **Repeating Narration**: Narrating the same event multiple times to emphasize significance.
+  - **Iterative Narration**: Compressing multiple similar events into a single narrative instance.
+
+- **Characteristics**:
+  - **Repetitive**: Repetition highlights significant events or emphasizes thematic elements.
+  - **Condensed**: Iterative narration condenses repeated events into a singular description.
+  - **Perspective-Shifting**: Repetition often presents different viewpoints or additional details.
+
+- **Contextualization**:
+  - Frequency highlights repetition and thematic resonance. Repeating narration emphasizes an event’s importance, while iterative narration suggests routine or habitual actions, creating patterns in narrative structure.
+
+- **Examples**:
+  - **Toni Morrison’s *Beloved***: The repeated narration of Sethe’s child’s death adds layers of meaning to the event.
+  - **Marcel Proust’s *In Search of Lost Time***: Uses iterative narration to depict social rituals and memory.
+
+---
+
+### 3. **Implications of Bal's Temporal Structures Framework**
+
+- **Impact on Narrative Theory**:
+  - Bal’s framework has significantly influenced narrative theory, offering systematic tools to analyze how time functions in storytelling. It highlights how manipulating temporal structures affects pacing, flow of information, and narrative meaning.
+
+- **Application Across Media**:
+  - Although originally for literary analysis, this framework applies to film, TV, theater, and video games, where time manipulation shapes narrative experience.
+
+- **Interdisciplinary Influence**:
+  - Bal's work extends into fields like film studies and cognitive science, influencing how audiences process narrative time. It offers insights into how temporal dynamics engage readers or viewers cognitively and emotionally.
+
+---
