@@ -11,49 +11,121 @@ Summary: Seymour Chatman's Character and Event Framework distinguishes between *
 ELEMENT: CHARACTER
 
 ---
-### Title: **Chatman's Character and Event Framework**
 
-- **Character and Event**:
-  - **Definition**: In *"Story and Discourse"* (1978), Seymour Chatman presents a comprehensive framework for analyzing narratives, focusing on the roles of characters and events within a story. He categorizes characters into *kernel* and *satellite* types and distinguishes between *kernels* (major plot events) and *satellites* (minor events). This framework is crucial for understanding the hierarchical structure of narratives and how different components contribute to the overall development and progression of the story.
+---
 
-  - **Key Concepts**:
-    - **Kernel Characters**:
-      - **Definition**: Kernel characters are those who are essential to the progression of the plot. These characters are central to the story’s main events and are crucial in driving the narrative forward. Kernel characters are involved in critical turning points and major decisions that shape the course of the narrative.
-      - **Characteristics**:
-        - **Central to the Plot**: Kernel characters are often the protagonists, antagonists, or other primary figures whose actions and decisions significantly impact the narrative’s direction.
-        - **Involved in Major Events**: These characters are directly involved in the key events that define the narrative structure, such as pivotal conflicts, resolutions, and turning points.
-        - **Essential for Story Progression**: The actions of kernel characters are necessary for the narrative to move forward. Without these characters, the story would lose its primary driving force.
-      - **Contextualization**:
-        - The identification of kernel characters is crucial for understanding the core dynamics of a narrative. By focusing on these characters, one can trace the main plotline and understand the key drivers of the story’s progression. Kernel characters are typically the ones who experience significant development, face major challenges, and undergo transformations that are central to the narrative’s resolution.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Jay Gatsby in *The Great Gatsby***: Gatsby’s pursuit of Daisy and the events surrounding his rise and fall are central to the plot, making him a kernel character.
-          - **Hamlet in *Hamlet***: Hamlet’s actions, decisions, and internal struggles drive the narrative, making him essential to the story’s progression.
+##### Title: Chatman's Character and Event Framework
 
-    - **Satellite Characters**:
-      - **Definition**: Satellite characters serve supplementary roles within the narrative. While they add depth, context, and complexity to the story, their actions are not critical to the plot’s forward movement. Satellite characters often support the kernel characters, provide subplots, or enhance the thematic richness of the narrative.
-      - **Characteristics**:
-        - **Supportive Role**: Satellite characters typically support the main characters or the narrative’s themes. They might provide background information, comic relief, or additional perspectives on the central events.
-        - **Not Essential to the Plot**: The narrative could theoretically proceed without the involvement of satellite characters. Their actions and decisions do not significantly alter the main storyline.
-        - **Enrichment of the Narrative**: These characters contribute to the overall texture of the story, making it more layered and complex. They help to flesh out the world of the narrative, providing a richer context for the main events and characters.
-      - **Contextualization**:
-        - Satellite characters are important for adding depth to the narrative, even though they are not central to the plot. By exploring the roles of satellite characters, one can gain a deeper understanding of the narrative’s thematic elements, secondary plots, and character interactions. These characters often help to build the world of the story and provide a fuller picture of the social, cultural, or emotional landscape in which the main events unfold.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Jordan Baker in *The Great Gatsby***: Jordan provides context for the main plot and offers insight into the social world of the novel, but her actions are not central to the story’s progression.
-          - **Rosencrantz and Guildenstern in *Hamlet***: These characters serve to provide additional context and thematic exploration, but their presence does not directly impact the main plot trajectory.
+**Character and Event**:
+   **Definition**: In *"Story and Discourse"* (1978), Seymour Chatman presents a framework for analyzing narratives by categorizing characters and events. He introduces the concepts of *kernel* and *satellite* characters, as well as *kernel* and *satellite* events, to differentiate between those that are central to the plot and those that provide additional context. This framework helps to understand how different components of a narrative contribute to the overall development and progression of the story.
 
-    - **Kernel and Satellite Events**:
-      - **Definition**: Chatman also categorizes events within a narrative as either kernels or satellites. Kernels are major plot events that are crucial to the narrative’s forward movement. They represent the turning points or essential actions that define the structure of the story. Satellites, in contrast, are minor events that provide additional context, background, or elaboration but do not significantly impact the main plot.
-      - **Characteristics**:
-        - **Kernel Events**: These events are the backbone of the narrative. They are the moments where significant decisions are made, conflicts are introduced or resolved, and the direction of the story is determined. Kernel events are indispensable to the narrative’s structure and progression.
-        - **Satellite Events**: Satellite events offer supplementary details that enhance the narrative but are not crucial to the plot. These events might explore character backstories, develop subplots, or provide thematic richness, but the removal of these events would not disrupt the main storyline.
-      - **Contextualization**:
-        - Understanding the distinction between kernel and satellite events is vital for a nuanced analysis of how narratives are structured. Kernels dictate the pace and trajectory of the story, while satellites enrich the narrative by adding layers of meaning, character development, or thematic depth. This distinction allows for a more detailed examination of how different events contribute to the overall narrative, helping to identify which moments are pivotal and which serve more supportive, albeit still significant, roles.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Kernel Event**: In *Hamlet* by William Shakespeare, Hamlet’s decision to stage the play "The Mousetrap" is a kernel event that significantly advances the plot by confirming Claudius’s guilt and setting the course for the tragic conclusion.
-          - **Satellite Event**: In the same play, the gravedigger scene serves as a satellite event. While it provides thematic depth and explores the concept of mortality, it does not directly impact the main plot.
+---
+
+##### Key Concepts
+
+##### Kernel Characters
+
+**Definition**:
+   Kernel characters are essential to the plot’s progression. They are central figures involved in major events that shape the narrative’s direction and drive the story forward.
+
+**Types**:
+   - **Protagonists**: Characters who lead the narrative, making pivotal decisions.
+   - **Antagonists**: Characters who oppose the protagonist and create conflict.
+   - **Key Decision Makers**: Those whose actions result in significant turning points in the story.
+
+**Characteristics**:
+   - **Central to the Plot**: Kernel characters are involved in major events that define the structure and movement of the narrative.
+   - **Involved in Major Events**: They participate in key conflicts, resolutions, and decisions that move the story forward.
+   - **Essential for Story Progression**: Their actions and decisions are critical to advancing the narrative.
+
+**Contextualization**:
+   Kernel characters are integral to understanding the core dynamics of a narrative. They are usually the ones experiencing significant development, and their decisions shape the trajectory of the story. Without them, the narrative would lack direction and purpose.
+
+**Examples**:
+   - **Jay Gatsby in *The Great Gatsby***: His actions, pursuit of Daisy, and eventual downfall are central to the plot, making him a kernel character.
+   - **Hamlet in *Hamlet***: His internal struggles and decisions drive the narrative and are essential to the plot’s progression.
+
+---
+
+##### Satellite Characters
+
+**Definition**:
+   Satellite characters serve supplementary roles. While they add depth and complexity to the story, their actions are not critical to the plot’s main progression.
+
+**Types**:
+   - **Supporting Figures**: Characters who provide context or enhance the main characters’ journeys.
+   - **Secondary Characters**: Those who add depth to the narrative but are not directly involved in the core conflicts or resolutions.
+
+**Characteristics**:
+   - **Supportive Role**: Satellite characters typically support kernel characters or contribute to the narrative’s themes.
+   - **Not Essential to the Plot**: Their actions do not significantly affect the main storyline.
+   - **Enrichment of the Narrative**: These characters add layers of complexity, background, and texture to the story.
+
+**Contextualization**:
+   Satellite characters are important for providing context and enriching the world of the narrative. While they do not drive the plot, they help to flesh out the story’s setting, offer subplots, or enhance thematic exploration. 
+
+**Examples**:
+   - **Jordan Baker in *The Great Gatsby***: While she adds insight into the social world of the novel, her actions are not central to the main plot.
+   - **Rosencrantz and Guildenstern in *Hamlet***: These characters provide additional thematic exploration but are not essential to the plot’s progression.
+
+---
+
+##### Kernel Events
+
+**Definition**:
+   Kernel events are major plot points that drive the narrative forward. These events represent turning points or essential actions that define the structure of the story.
+
+**Types**:
+   - **Decisive Actions**: Events where characters make key decisions that impact the direction of the narrative.
+   - **Conflicts and Resolutions**: Moments where central conflicts are introduced, escalated, or resolved.
+   - **Turning Points**: Pivotal moments that significantly change the course of the story.
+
+**Characteristics**:
+   - **Crucial to the Plot**: Kernel events are indispensable to the story’s progression.
+   - **Determine Narrative Trajectory**: These events set the direction of the story, introducing or resolving the main conflicts.
+   - **High Impact**: Kernel events typically involve high stakes and have lasting effects on the characters and plot.
+
+**Contextualization**:
+   Kernel events form the backbone of the narrative, shaping its pace and trajectory. These are the moments where the most significant changes and decisions take place, making them essential to the narrative’s structure.
+
+**Examples**:
+   - **Hamlet’s Decision to Stage "The Mousetrap" in *Hamlet***: This kernel event confirms Claudius’s guilt and sets the course for the tragic conclusion.
+   - **Gatsby’s Reunion with Daisy in *The Great Gatsby***: This pivotal moment reignites the central conflict and propels the narrative toward its climax.
+
+---
+
+##### Satellite Events
+
+**Definition**:
+   Satellite events are minor occurrences that provide additional context or background but do not significantly alter the story’s main plotline.
+
+**Types**:
+   - **Character Backstory**: Events that delve into a character’s past, providing depth but not driving the main narrative.
+   - **Thematic Exploration**: Events that explore the narrative’s themes without impacting the core plot.
+   - **Subplots**: Minor storylines that run parallel to the main plot, enriching the overall narrative.
+
+**Characteristics**:
+   - **Supplementary to the Plot**: While enriching the story, satellite events are not critical to the plot’s progression.
+   - **Provide Depth and Texture**: These events help to flesh out characters, explore themes, and build the world of the story.
+   - **Non-Essential to Main Plot**: Removing these events would not disrupt the overall structure of the narrative.
+
+**Contextualization**:
+   Satellite events enhance the story by adding layers of complexity, character development, and thematic exploration. While they are not crucial to the plot’s progression, they help to create a richer narrative experience.
+
+**Examples**:
+   - **The Gravedigger Scene in *Hamlet***: This satellite event provides thematic depth by exploring mortality but does not affect the main plot.
+   - **Gatsby’s Parties in *The Great Gatsby***: These events explore the themes of excess and social ambition but are not central to the plot’s progression.
+
+---
+
+##### Implications of Chatman's Character and Event Framework
+
+**Impact on Narrative Theory**:
+   Chatman’s framework has been influential in narrative theory, particularly in distinguishing between major and minor elements of a story. By categorizing characters and events as kernels or satellites, Chatman provides a clear structure for analyzing how different components of a narrative contribute to its overall progression and thematic depth.
+
+**Collaborative or Future-Oriented Insight**:
+   Chatman’s ideas are applicable across various narrative forms, including literature, film, theater, and interactive media. His framework helps to analyze how both core and supplementary elements of a story work together to create a cohesive narr
+
 
   - **Theoretical Significance**:
     - **Impact on Narrative Theory**: Chatman’s Character and Event Framework has had a significant impact on narrative theory, particularly in the analysis of plot structure and character development. By distinguishing between kernel and satellite elements, Chatman’s framework provides a systematic way to analyze the complexity and hierarchy within narratives. This approach has been influential in both literary studies and media analysis, offering tools to dissect how stories are constructed and how different components interact to create meaning.

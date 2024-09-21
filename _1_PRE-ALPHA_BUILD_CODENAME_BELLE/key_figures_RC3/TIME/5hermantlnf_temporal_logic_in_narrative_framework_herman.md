@@ -10,51 +10,79 @@ Summary: Temporal manipulation is a narrative technique which affects the reader
 ELEMENT: TIME
 
 ---
+---
 
-- [1. Title: **Herman's Temporal Logic in Narrative Framework**](#1-title-hermans-temporal-logic-in-narrative-framework)
-- [2. **Key Concepts**:](#2-key-concepts)
-  - [2.1. **Temporal Manipulation**:](#21-temporal-manipulation)
-  - [2.2. **Cognitive Dimensions of Temporal Logic**:](#22-cognitive-dimensions-of-temporal-logic)
-- [3. **Theoretical Significance**:](#3-theoretical-significance)
+##### Title: Herman's Temporal Logic in Narrative Framework
 
+**Temporal Logic in Narrative**:
+   **Definition**: David Herman’s framework explores how narratives manipulate time to shape meaning and influence the reader’s experience. Through techniques like anachrony, foreshadowing, and flashbacks, narratives enhance thematic and emotional impact. Herman's approach connects narrative structures with cognitive processes, examining how readers understand and interpret time in storytelling.
 
 ---
-### 1. Title: **Herman's Temporal Logic in Narrative Framework**
 
-- **Temporal Logic in Narrative**:
-  - **Definition**: David Herman’s framework on temporal logic in narrative delves into the intricate ways in which stories manipulate time to create meaning and influence the reader’s experience. Herman examines how narratives employ various temporal techniques, such as anachrony (non-chronological storytelling), foreshadowing, and flashbacks, to shape the reader’s perception of time and to enhance the thematic and emotional impact of the story. By exploring these techniques, Herman provides insights into the cognitive processes involved in understanding and interpreting narrative time, highlighting the connection between narrative structures and human cognition.
+##### Key Concepts
+
+##### Temporal Manipulation
+
+**Definition**:
+   Temporal manipulation involves altering the sequence, duration, or frequency of events in a narrative to shape how the story unfolds and is experienced by the reader.
+
+**Types**:
+   - **Anachrony**: The reordering of events in a non-linear sequence through flashbacks (*analepsis*) or flashforwards (*prolepsis*).
+   - **Foreshadowing**: Hints or clues about future events, creating suspense and anticipation.
+   - **Flashbacks (Analepsis)**: Revisiting past events to provide essential background or context.
+   - **Non-linear Narratives**: Disjointed timelines that challenge readers to reconstruct the chronological order.
+
+**Characteristics**:
+   - **Strategic Information Release**: Manipulates the order of events to reveal information at pivotal moments.
+   - **Suspense Creation**: Builds anticipation through techniques like foreshadowing or flashforwards.
+   - **Emphasis on Themes**: Temporal manipulation highlights themes such as memory, fate, or inevitability.
+
+**Contextualization**:
+   Temporal manipulation is crucial in how stories reveal information and engage readers. Herman links these techniques to cognitive processes, demonstrating how they help readers interpret complex narratives, form inferences, and engage with themes such as memory and causality.
+
+**Examples**:
+   - **Kurt Vonnegut’s *Slaughterhouse-Five***: Uses non-linear time jumps to explore trauma and fatalism.
+   - **Emily Brontë’s *Wuthering Heights***: Flashbacks create a layered narrative, deepening character motivations and conflicts.
+
+---
+
+##### Cognitive Dimensions of Temporal Logic
+
+**Definition**:
+   Herman also examines the cognitive aspects of how readers process and understand narrative time, focusing on how readers mentally reconstruct timelines and infer relationships between events.
+
+**Types**:
+   - **Mental Time Travel**: Readers mentally move through the story’s timeline, recalling past events and anticipating future ones.
+   - **Temporal Inferences**: Readers infer the significance and order of events based on temporal cues.
+   - **Temporal Cohesion**: Successful narratives maintain coherence despite temporal manipulation, allowing readers to reconstruct a unified timeline.
+
+**Characteristics**:
+   - **Active Reader Engagement**: Readers must actively reconstruct the timeline and connect different moments.
+   - **Inference-Making**: Temporal cues guide the reader in understanding the sequence and significance of events.
+   - **Cognitive Challenge**: Non-linear structures invite readers to engage more deeply with narrative logic and meaning.
+
+**Contextualization**:
+   Herman’s cognitive approach highlights how readers mentally engage with the manipulation of time in narratives. This framework emphasizes the active role of the reader in piecing together fragmented timelines and making sense of how temporal structures affect themes, character development, and plot.
+
+**Examples**:
+   - **Kazuo Ishiguro’s *The Remains of the Day***: Flashbacks reveal the protagonist’s regrets and inner journey, requiring readers to piece together the timeline.
+   - **Christopher Nolan’s *Memento***: The reverse chronology challenges viewers to reconstruct the timeline, reflecting the protagonist’s memory loss.
+
+---
+
+##### Implications of Herman's Temporal Logic in Narrative Framework
+
+**Impact on Narrative Theory**:
+   Herman’s framework has significantly influenced narrative theory by integrating cognitive perspectives into the analysis of how time manipulation shapes story structure. His approach highlights the connection between narrative techniques and mental processes, offering tools for exploring how complex temporal structures engage readers and convey thematic depth.
+
+**Collaborative or Future-Oriented Insight**:
+   Herman’s concepts apply across literature, film, theater, and interactive media like video games. His work provides valuable insights into how temporal structures influence audience engagement and interpretation across different formats. Additionally, his interdisciplinary influence extends to cognitive science and psychology, exploring how humans perceive and process time in storytelling.
+
+---
 
 
-### 2. **Key Concepts**:
 
-#### 2.1. **Temporal Manipulation**:
-      - **Definition**: Temporal manipulation refers to the deliberate alteration of the sequence, duration, or frequency of events within a narrative. This manipulation can involve techniques such as anachrony, where events are presented out of their chronological order; foreshadowing, which hints at future events; and flashbacks, which revisit past events to provide context or background. These techniques are used to create suspense, emphasize certain aspects of the narrative, or convey complex ideas and themes.
-      - **Characteristics**:
-        - **Anachrony**: The reordering of events in a non-linear sequence, allowing the narrative to reveal information strategically. Anachrony can take the form of *analepsis* (flashback) or *prolepsis* (flashforward), each serving different narrative purposes.
-        - **Foreshadowing**: A technique that involves giving hints or clues about events that will occur later in the narrative, creating anticipation and building suspense. Foreshadowing can also establish thematic connections and prepare the reader for upcoming developments.
-        - **Flashbacks (Analepsis)**: The narrative technique of revisiting past events within the current timeline of the story. Flashbacks provide essential background information that deepens the reader’s understanding of the present events and character motivations.
-        - **Non-linear Narratives**: Temporal manipulation often results in non-linear narratives, where the story’s timeline is fragmented or disjointed. These narratives challenge readers to actively reconstruct the chronological order and piece together the narrative’s underlying structure.
-      - **Contextualization**:
-        - Herman’s exploration of temporal manipulation extends beyond the mere technical aspects of narrative construction. He links these narrative techniques to the cognitive processes involved in reading and understanding stories, particularly how readers mentally organize and interpret temporal information. By manipulating time, narratives can engage readers on a deeper level, encouraging them to think critically about the sequence of events and the relationships between them. Temporal manipulation also allows authors to convey complex themes, such as memory, fate, or the inevitability of certain outcomes, by playing with the reader’s expectations and perceptions of time.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Kurt Vonnegut’s *Slaughterhouse-Five***: The novel’s non-linear structure, characterized by frequent time jumps (anachrony), reflects the protagonist’s disoriented mental state and underscores the themes of trauma and fatalism.
-          - **Emily Brontë’s *Wuthering Heights***: The use of flashbacks is central to the novel’s narrative structure, providing a layered understanding of the characters’ pasts and how these past events shape the present conflicts.
-
-#### 2.2. **Cognitive Dimensions of Temporal Logic**:
-      - **Definition**: Herman’s framework also considers the cognitive dimensions of temporal logic in narrative, exploring how readers process and understand the manipulation of time within a story. This involves examining how narrative time corresponds to mental time—the way in which readers mentally reconstruct the sequence and duration of events as they engage with the narrative.
-      - **Characteristics**:
-        - **Mental Time Travel**: Readers engage in mental time travel as they follow a narrative, moving back and forth through the story’s timeline, recalling past events, anticipating future ones, and connecting different moments in the narrative.
-        - **Temporal Inferences**: As readers encounter temporal manipulations, they make inferences about the order and significance of events. These inferences are crucial for understanding the plot, character development, and thematic content of the narrative.
-        - **Temporal Cohesion**: Despite the manipulation of time, successful narratives maintain temporal cohesion, allowing readers to construct a coherent understanding of the story’s timeline and its causal relationships.
-      - **Contextualization**:
-        - Herman’s analysis of temporal logic not only focuses on how narratives manipulate time but also on how readers cognitively process these manipulations. This cognitive approach emphasizes the active role of the reader in reconstructing the narrative’s timeline and making sense of its temporal structure. By understanding how narratives play with time, readers can gain deeper insights into the story’s themes and underlying messages. This framework is particularly relevant in complex or experimental narratives, where the manipulation of time challenges traditional notions of linear storytelling and invites readers to engage more deeply with the narrative’s structure and meaning.
-      - **Supporting Information**:
-        - **Examples**:
-          - **Kazuo Ishiguro’s *The Remains of the Day***: The novel’s use of flashbacks and non-linear narration reflects the protagonist’s introspection and the gradual revelation of his regrets and unspoken emotions, requiring readers to piece together the timeline and understand the character’s internal journey.
-          - **Christopher Nolan’s *Memento***: The film’s reverse chronology (temporal manipulation) demands that viewers reconstruct the narrative timeline as they watch, mirroring the protagonist’s struggle with memory loss and creating a unique viewing experience that blurs the lines between past and present.
-
-### 3. **Theoretical Significance**:
+### **Theoretical Significance**:
     - **Impact on Narrative Theory**: Herman’s Temporal Logic in Narrative Framework has significantly influenced narrative theory, particularly in understanding how the manipulation of time shapes the structure and meaning of a story. By integrating cognitive perspectives, Herman’s framework offers a comprehensive approach to analyzing narrative time, highlighting the interplay between narrative techniques and the reader’s mental processes. His work provides valuable tools for exploring how narratives create complex temporal structures that engage readers and convey deeper thematic content.
     - **Application Across Media**: Herman’s concepts are applicable across various narrative forms, including literature, film, theater, and interactive media such as video games. The manipulation of time is a fundamental aspect of storytelling in these media, and Herman’s framework offers insights into how these temporal structures influence the audience’s engagement and interpretation across different formats.
     - **Supporting Information**:

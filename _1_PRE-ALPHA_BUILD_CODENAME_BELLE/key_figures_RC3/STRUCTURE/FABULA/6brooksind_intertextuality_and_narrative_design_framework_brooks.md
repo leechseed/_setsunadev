@@ -26,6 +26,7 @@ PROPERTY: FABULA
 
 
 ---
+
 ### 1. Title: **Brooks's Intertextuality and Narrative Design Framework**
 
 - **Intertextuality and Narrative Design**:
