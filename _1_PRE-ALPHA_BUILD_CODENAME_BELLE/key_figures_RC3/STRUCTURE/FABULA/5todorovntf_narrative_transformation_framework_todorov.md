@@ -11,16 +11,26 @@ ELEMENT: STRUCTURE
 PROPERTY: FABULA
 ---
 
-### Title: **Todorov's Narrative Transformation Framework**
+- [1. Title: **Todorov's Narrative Transformation Framework**](#1-title-todorovs-narrative-transformation-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **In-Text Transformation**](#21-in-text-transformation)
+  - [2.2. **Cross-Text Transformation**](#22-cross-text-transformation)
+
+
+
+
+---
+
+### 1. Title: **Todorov's Narrative Transformation Framework**
 
 - **Narrative Transformation**:
   - **Definition**: Tzvetan Todorov's concept of *narrative transformation* examines how narrative structures evolve within a single text or across different texts within a genre. It provides insight into how stories adapt, change, and reflect shifts in cultural and literary contexts, highlighting the fluidity and dynamism of narrative forms.
 
 ---
 
-### **Key Concepts**
+### 2. **Key Concepts**
 
-#### **In-Text Transformation**
+#### 2.1. **In-Text Transformation**
 
 - **Definition**:
   - In-text transformation refers to the evolution of a narrative’s structure, tone, or focus as the story progresses within a single text. This shift can alter the reader’s experience by introducing unexpected changes in genre, tone, or perspective.
@@ -38,7 +48,7 @@ PROPERTY: FABULA
 
 ---
 
-#### **Cross-Text Transformation**
+#### 2.2. **Cross-Text Transformation**
 
 - **Definition**:
   - Cross-text transformation refers to the evolution of narrative structures across different works within a genre. Over time, genres adapt, change, or even merge to reflect broader cultural, historical, and literary shifts.

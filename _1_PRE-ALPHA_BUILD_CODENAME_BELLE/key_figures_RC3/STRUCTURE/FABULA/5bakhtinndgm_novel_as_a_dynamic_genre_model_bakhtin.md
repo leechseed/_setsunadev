@@ -13,16 +13,29 @@ PROPERTY: FABULA
 
 ---
 
-### Title: **Bakhtin's Novel as a Dynamic Genre Model**
+- [1. Title: **Bakhtin's Novel as a Dynamic Genre Model**](#1-title-bakhtins-novel-as-a-dynamic-genre-model)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Flexibility**](#21-flexibility)
+  - [2.2. **Openness**](#22-openness)
+  - [2.3. **Dialogism**](#23-dialogism)
+  - [2.4. **Chronotope**](#24-chronotope)
+  - [2.5. **Engagement with Contemporary Life**](#25-engagement-with-contemporary-life)
+- [3. **Examples of the Dynamic Novel**](#3-examples-of-the-dynamic-novel)
+
+
+
+---
+
+### 1. Title: **Bakhtin's Novel as a Dynamic Genre Model**
 
 - **The Novel as a Dynamic Genre**:
   - **Definition**: In his essay *"Epic and Novel,"* Mikhail Bakhtin characterizes the novel as a dynamic, evolving genre, distinct from the epic. The novel is open to change, embraces multiple perspectives, and engages with contemporary life, while the epic is fixed, rooted in a distant past, and reflects an idealized history.
 
 ---
 
-### **Key Concepts**
+### 2. **Key Concepts**
 
-#### **Flexibility**
+#### 2.1. **Flexibility**
 
 - **Definition**: 
   - Bakhtin highlights the novel’s ability to adapt and evolve, reflecting diverse voices, ideas, and experiences. Unlike the rigid structure of the epic, the novel is open to new forms, allowing it to stay relevant.
@@ -38,7 +51,7 @@ PROPERTY: FABULA
   - **Dialogism**: The novel fosters *dialogism,* the interaction between multiple voices and perspectives, contrasting the singular voice of the epic.
   - **Examples**: *Don Quixote* by Miguel de Cervantes showcases the flexibility of the novel, combining satire, adventure, and romance, allowing for a rich, layered narrative.
 
-#### **Openness**
+#### 2.2. **Openness**
 
 - **Definition**: 
   - The novel’s openness refers to its capacity to incorporate diverse elements and engage with contemporary issues, making it a genre that is constantly interacting with the present rather than glorifying the past.
@@ -56,7 +69,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Dialogism**
+#### 2.3. **Dialogism**
 
 - **Definition**: 
   - *Dialogism* is a key feature of the novel, according to Bakhtin. It refers to the interplay of different voices, ideas, and perspectives within the narrative, allowing for a multiplicity of viewpoints rather than a single, authoritative voice.
@@ -74,7 +87,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Chronotope**
+#### 2.4. **Chronotope**
 
 - **Definition**: 
   - Bakhtin’s concept of the *chronotope* refers to the intrinsic connection between time and space in the novel. The novel's chronotope allows for a more varied and realistic representation of life, where characters and events can be situated across different temporal and spatial contexts.
@@ -92,7 +105,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Engagement with Contemporary Life**
+#### 2.5. **Engagement with Contemporary Life**
 
 - **Definition**: 
   - Bakhtin emphasizes that the novel engages directly with the realities of contemporary life, incorporating current social, political, and cultural concerns into its narrative structure.
@@ -110,7 +123,7 @@ PROPERTY: FABULA
 
 ---
 
-### **Examples of the Dynamic Novel**
+### 3. **Examples of the Dynamic Novel**
 
 - **Definition**: 
   - The novel’s flexibility and openness have allowed it to evolve continuously, exemplified in works that incorporate multiple genres, voices, and experimental forms, pushing the boundaries of traditional storytelling.

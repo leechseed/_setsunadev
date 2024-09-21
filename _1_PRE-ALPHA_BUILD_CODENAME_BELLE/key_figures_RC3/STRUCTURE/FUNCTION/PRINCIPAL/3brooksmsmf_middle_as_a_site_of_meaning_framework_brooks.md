@@ -12,21 +12,32 @@ PROPERTY: FUNCTION
 TYPE: PRINCIPAL
 ---
 
-### **Brooks's Middle as a Site of Meaning Framework**
+- [1. **Brooks's Middle as a Site of Meaning Framework**](#1-brookss-middle-as-a-site-of-meaning-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Narrative Development**](#21-narrative-development)
+    - [2.1.1. **Components of Narrative Development**:](#211-components-of-narrative-development)
+      - [2.1.1.1. **Character Development**:](#2111-character-development)
+      - [2.1.1.2. **Plot Complication**:](#2112-plot-complication)
+      - [2.1.1.3. **Thematic Exploration**:](#2113-thematic-exploration)
+- [3. **Brooks's Perspective on the Middle as a Narrative Focus**](#3-brookss-perspective-on-the-middle-as-a-narrative-focus)
+
+
+---
+### 1. **Brooks's Middle as a Site of Meaning Framework**
 
 - **The Middle as a Site of Meaning**:
   - **Definition**: Peter Brooks challenges traditional plot structures that emphasize the beginning and ending of a narrative, arguing that the middle is where a story's true meaning is developed. He highlights that the middle is crucial for deepening conflicts, characters, and themes, making it the core of narrative complexity.
 
 ---
 
-### **Key Concepts**
+### 2. **Key Concepts**
 
-#### **Narrative Development**
+#### 2.1. **Narrative Development**
 
 - **Definition**:
   - The middle of a narrative is the site of major conflict, character growth, and plot complication. It represents the phase where foundational elements from the beginning are tested and expanded upon, leading to greater depth and tension.
 
-- **Components of Narrative Development**:
+##### 2.1.1. **Components of Narrative Development**:
 
   - **Conflict Intensification**:
     - **Definition**: In the middle, conflicts grow more serious and complex, with the stakes raised for characters and outcomes.
@@ -35,21 +46,21 @@ TYPE: PRINCIPAL
       - **Urgent**: The pressure on the characters becomes more immediate and challenging.
     - **Examples**: In *The Lord of the Rings*, the conflicts of *The Two Towers* heighten the stakes with the Battle of Helm's Deep and Frodo’s burden with the Ring.
 
-  - **Character Development**:
+###### 2.1.1.1. **Character Development**:
     - **Definition**: Characters face trials and dilemmas in the middle of the narrative that reveal their deeper complexities and catalyze their growth.
     - **Characteristics**:
       - **Dynamic**: Characters evolve and change as they confront new challenges.
       - **Transformative**: The middle is where significant internal shifts occur in characters.
     - **Examples**: In *Jane Eyre*, Jane’s emotional and moral development at Thornfield Hall deepens as her relationship with Mr. Rochester grows more complicated.
 
-  - **Plot Complication**:
+###### 2.1.1.2. **Plot Complication**:
     - **Definition**: The middle introduces twists, new subplots, or unexpected developments that complicate the narrative.
     - **Characteristics**:
       - **Disruptive**: These complications challenge the trajectory set in the beginning.
       - **Layered**: New narrative elements enrich the story's complexity.
     - **Examples**: In *Pride and Prejudice*, complications like Mr. Darcy’s first proposal and Lydia’s elopement shift Elizabeth’s journey in unexpected directions.
 
-  - **Thematic Exploration**:
+###### 2.1.1.3. **Thematic Exploration**:
     - **Definition**: The middle of the narrative is where central themes are thoroughly examined and expanded through character actions and plot events.
     - **Characteristics**:
       - **Deepening**: Themes are explored in greater detail and complexity.
@@ -58,7 +69,7 @@ TYPE: PRINCIPAL
 
 ---
 
-### **Brooks's Perspective on the Middle as a Narrative Focus**
+### 3. **Brooks's Perspective on the Middle as a Narrative Focus**
 
 - **Reframing Narrative Structure**:
   - **Definition**: Brooks suggests a shift in narrative analysis, emphasizing the middle as the focal point where the story's true depth is realized. Rather than seeing it as a bridge between the beginning and end, the middle should be considered the heart of the narrative.

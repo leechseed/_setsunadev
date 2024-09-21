@@ -9,14 +9,24 @@ Prima-Forma:
 Summary: The manipulation of time exists either temporally or spatially.
 ELEMENT: TIME
 ---
-### Title: **Chatman's Time and Space in Narrative Framework**
+
+- [1. Title: **Chatman's Time and Space in Narrative Framework**](#1-title-chatmans-time-and-space-in-narrative-framework)
+  - [1.1. **Key Concepts**:](#11-key-concepts)
+    - [1.1.1. **Temporal Techniques**:](#111-temporal-techniques)
+    - [1.1.2. **Spatial Techniques**:](#112-spatial-techniques)
+- [2. **Theoretical Significance**:](#2-theoretical-significance)
+
+
+
+---
+### 1. Title: **Chatman's Time and Space in Narrative Framework**
 
 - **Time and Space in Narrative**:
   - **Definition**: Seymour Chatman’s framework on time and space in narrative discourse examines how these two fundamental elements are manipulated to structure the narrative and shape the reader or viewer's experience. Chatman explores various techniques that alter the chronological flow and spatial arrangement within a story, emphasizing how these manipulations impact the pacing, structure, and overall meaning of the narrative. His work provides insight into the complex ways in which time and space are used to control the narrative experience, making them crucial tools for storytelling in both literature and film.
 
-  - **Key Concepts**:
+#### 1.1. **Key Concepts**:
 
-    - **Temporal Techniques**:
+##### 1.1.1. **Temporal Techniques**:
       - **Definition**: Temporal techniques refer to the methods used to manipulate the chronological sequence of events within a narrative. These include *flashbacks* (analepsis) and *flashforwards* (prolepsis), which reorder the narrative timeline, as well as *ellipsis* and *summary*, which compress or expand the narrative time, respectively. These techniques are essential for controlling the pacing and progression of the narrative, allowing the storyteller to emphasize specific events, create suspense, or efficiently provide background information.
       - **Characteristics**:
         - **Flashbacks (Analepsis)**: Revisiting past events to provide context or background information that enriches the current storyline. Flashbacks can reveal crucial details that affect the understanding of the narrative’s present.
@@ -30,7 +40,7 @@ ELEMENT: TIME
           - **Christopher Nolan’s *Inception***: The film frequently uses flashbacks to reveal crucial information about the protagonist’s past, deepening the audience’s understanding of his motivations and the story’s emotional stakes.
           - **Virginia Woolf’s *Mrs. Dalloway***: Woolf employs ellipsis to move through different periods of the characters’ lives, focusing on significant moments while skipping over less important ones, creating a narrative that feels both expansive and intimate.
 
-    - **Spatial Techniques**:
+##### 1.1.2. **Spatial Techniques**:
       - **Definition**: Spatial techniques involve the arrangement and depiction of space within a narrative, influencing how the audience perceives movement, setting, and the relationships between characters and their environment. In both literary and cinematic narratives, spatial manipulation is used to create a sense of place, guide the audience’s focus, and enhance the thematic or emotional impact of the story. These techniques include the use of setting descriptions, the organization of scenes, and the visual composition in films.
       - **Characteristics**:
         - **Setting Description**: Detailed descriptions of the setting help to establish the spatial environment of the narrative, influencing how the audience visualizes and interprets the story’s world. The setting can reflect the themes of the narrative or the inner states of the characters.
@@ -43,7 +53,7 @@ ELEMENT: TIME
           - **F. Scott Fitzgerald’s *The Great Gatsby***: The opulent settings and stark contrasts between East Egg, West Egg, and the Valley of Ashes serve to highlight the social and moral divisions in the narrative, reflecting the characters’ inner lives and the novel’s critique of the American Dream.
           - **Alfred Hitchcock’s *Rear Window***: The film’s use of a single, confined space (the protagonist’s apartment and the view from his window) creates a claustrophobic atmosphere, enhancing the suspense and tension as the protagonist pieces together the mystery unfolding across the courtyard.
 
-  - **Theoretical Significance**:
+### 2. **Theoretical Significance**:
     - **Impact on Narrative and Film Theory**: Chatman’s Time and Space in Narrative Framework has significantly influenced both narrative and film theory by providing a detailed analysis of how time and space are manipulated to shape the storytelling experience. His work bridges the gap between literary and cinematic narratives, offering insights into the universal techniques used to control pacing, structure, and audience engagement across different media.
     - **Application Across Media**: Chatman’s concepts are applicable to a wide range of narrative forms, including literature, film, theater, and video games. The manipulation of time and space is a fundamental aspect of storytelling in these media, and Chatman’s framework offers valuable tools for analyzing how these elements are used to create compelling and immersive narratives.
     - **Supporting Information**:

@@ -14,16 +14,24 @@ PROPERTY: FUNCTION
 TYPE: PREPARATORY
 ---
 
-### **Propp's 31 Narrative Functions Framework**
+- [1. **Propp's 31 Narrative Functions Framework**](#1-propps-31-narrative-functions-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Fixed Sequence of Events**](#21-fixed-sequence-of-events)
+- [3. **Propp's 31 Narrative Functions**](#3-propps-31-narrative-functions)
+
+
+
+---
+### 1. **Propp's 31 Narrative Functions Framework**
 
 - **Vladimir Propp's 31 Narrative Functions**:
   - **Definition**: Vladimir Propp identified 31 narrative functions in his seminal work *"Morphology of the Folktale."* These functions represent essential narrative elements that typically occur in a fixed sequence in folktales.
   
 ---
 
-### **Key Concepts**
+### 2. **Key Concepts**
 
-#### **Fixed Sequence of Events**
+#### 2.1. **Fixed Sequence of Events**
 
 - **Definition**:
   - Propp’s 31 functions follow a specific order, outlining the stages of conflict, action, and resolution in folktales. The functions build the narrative structure, particularly focused on the hero’s journey.
@@ -35,7 +43,7 @@ TYPE: PREPARATORY
 
 ---
 
-### **Propp's 31 Narrative Functions**
+### 3. **Propp's 31 Narrative Functions**
 
 1. **Absentation**:
    - A family member leaves the home or is otherwise absent.

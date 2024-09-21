@@ -10,14 +10,26 @@ Summary: 'Temporal manipulation is a technique that designers use to create susp
 ELEMENT: TIME
 
 ---
-### Title: **Brooks's Narrative Temporality Framework**
+
+- [1. Title: **Brooks's Narrative Temporality Framework**](#1-title-brookss-narrative-temporality-framework)
+  - [1.1. **Key Concepts**:](#11-key-concepts)
+    - [1.1.1. **Prolepsis (Flashforward)**:](#111-prolepsis-flashforward)
+    - [1.1.2. **Analepsis (Flashback)**:](#112-analepsis-flashback)
+  - [1.2. **Theoretical Significance**:](#12-theoretical-significance)
+  - [1.3. **Application Across Media**:](#13-application-across-media)
+  - [1.4. **Supporting Information**:](#14-supporting-information)
+
+
+
+---
+### 1. Title: **Brooks's Narrative Temporality Framework**
 
 - **Narrative Temporality**:
   - **Definition**: Peter Brooks’s framework on narrative temporality examines how narratives manipulate time to create suspense and delay resolution. Brooks focuses on the use of temporal techniques such as *prolepsis* (flashforward) and *analepsis* (flashback) to control the flow of the narrative and influence the reader’s experience of time within the story. By analyzing these techniques, Brooks provides insight into how the manipulation of narrative time shapes the structure and impact of a story.
 
-  - **Key Concepts**:
+#### 1.1. **Key Concepts**:
 
-    - **Prolepsis (Flashforward)**:
+##### 1.1.1. **Prolepsis (Flashforward)**:
       - **Definition**: Prolepsis, also known as flashforward, is a narrative technique that involves the anticipation or foreshadowing of future events within the story. It allows the narrative to provide glimpses of what is to come, creating a sense of anticipation and suspense as readers are made aware of future developments before they unfold in the chronological sequence of the plot.
       - **Characteristics**:
         - **Foreshadowing**: Prolepsis is often used to hint at future events, creating suspense and encouraging readers to continue reading to discover how these events will come to pass.
@@ -30,7 +42,7 @@ ELEMENT: TIME
           - **Charles Dickens’s *A Christmas Carol***: The vision of Scrooge’s lonely death (prolepsis) serves as a powerful motivator for his transformation, creating suspense as readers wonder if he will change his ways.
           - **George R.R. Martin’s *A Song of Ice and Fire***: The series frequently uses prophetic visions and dreams (prolepsis) to foreshadow future events, adding layers of suspense and anticipation.
 
-    - **Analepsis (Flashback)**:
+##### 1.1.2. **Analepsis (Flashback)**:
       - **Definition**: Analepsis, commonly referred to as flashback, is a narrative technique that involves recounting past events within the story. This technique is used to provide essential background information, context, or character development that enriches the current storyline. Flashbacks allow the narrative to explore earlier events that have a significant impact on the present or future within the story.
       - **Characteristics**:
         - **Backstory Development**: Analepsis is often used to fill in gaps in the narrative, offering insights into a character’s past or previous events that shape their present actions and motivations.
@@ -43,9 +55,11 @@ ELEMENT: TIME
           - **F. Scott Fitzgerald’s *The Great Gatsby***: The novel uses flashbacks to reveal Gatsby’s past, providing context for his current obsession with Daisy and his pursuit of the American Dream.
           - **Harper Lee’s *To Kill a Mockingbird***: The narrative frequently shifts back to Scout’s childhood memories (analepsis), offering insights into the events that shaped her understanding of justice and morality.
 
-  - **Theoretical Significance**:
+####  1.2. **Theoretical Significance**:
     - **Impact on Narrative Theory**: Brooks’s Narrative Temporality Framework has significantly influenced narrative theory by highlighting the importance of temporal manipulation in storytelling. His analysis of prolepsis and analepsis provides a deeper understanding of how time can be structured within a narrative to enhance suspense, build tension, and enrich the overall storytelling experience. Brooks’s work underscores the idea that time in a narrative is not merely a backdrop but a dynamic element that actively shapes the reader’s engagement with the story.
-    - **Application Across Media**: Brooks’s concepts are widely applicable across various narrative forms, including literature, film, television, and video games. The manipulation of time is a fundamental aspect of storytelling in these media, and Brooks’s framework offers valuable tools for analyzing how temporal structures influence the narrative experience across different formats.
-    - **Supporting Information**:
+#### 1.3. **Application Across Media**: 
+    - Brooks’s concepts are widely applicable across various narrative forms, including literature, film, television, and video games. The manipulation of time is a fundamental aspect of storytelling in these media, and Brooks’s framework offers valuable tools for analyzing how temporal structures influence the narrative experience across different formats.
+
+#### 1.4. **Supporting Information**:
       - **Interdisciplinary Influence**: Brooks’s exploration of narrative temporality has had an impact beyond literary studies, influencing fields such as film studies, where the manipulation of time is a critical aspect of cinematic storytelling. His work also informs studies in psychology and cognitive science, particularly in understanding how readers and viewers process non-linear narratives.
       - **Critiques and Further Development**: While Brooks’s framework is highly influential, some critics argue that it may focus too narrowly on suspense and tension, potentially overlooking other narrative elements such as character development or thematic depth. However, his work continues to be developed and expanded by scholars who integrate temporal analysis with other aspects of narrative study, providing a more holistic understanding of storytelling.

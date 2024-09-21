@@ -10,27 +10,39 @@ Prima-Forma:
 Summary: Fantastic is a property of narrative that hesitates between the natural and supernatural. Fantastic creates narrative tension thru the uncertainty of events being explained by natural law or supernatural elements.
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
+---
+
+- [1. Title: **Todorov's Fantastic Mode Framework**](#1-title-todorovs-fantastic-mode-framework)
+- [2. **Narrative Mode**](#2-narrative-mode)
+- [3. **Key Components**](#3-key-components)
+  - [3.1. **Point of View**](#31-point-of-view)
+  - [3.2. **Narrative Style**](#32-narrative-style)
+  - [3.3. **Temporal Structure**](#33-temporal-structure)
+  - [3.4. **Hesitation Between the Natural and Supernatural**](#34-hesitation-between-the-natural-and-supernatural)
+  - [3.5. **Narrative Tension**](#35-narrative-tension)
+
+
+
 
 ---
-### Title: **Todorov's Fantastic Mode Framework**
 
-### Title: **Todorov's Fantastic Mode Framework**
+### 1. Title: **Todorov's Fantastic Mode Framework**
 
 - **The Fantastic**:
   - **Definition**: In *"The Poetics of Prose,"* Tzvetan Todorov defines the *fantastic* as a narrative mode that exists in a space of hesitation between the natural and the supernatural. This mode creates a unique tension where readers are left uncertain whether the events described can be explained by natural laws or involve supernatural elements, blurring the lines between reality and fantasy.
 
 ---
 
-### **Narrative Mode**
+### 2. **Narrative Mode**
 
 - **Definition**: 
   - Narrative mode refers to the specific method or approach that a story employs to convey its content. It includes both the point of view and stylistic choices that shape how the story is presented and experienced by the reader.
 
 ---
 
-### **Key Components**
+### 3. **Key Components**
 
-#### **Point of View**
+#### 3.1. **Point of View**
 
 - **Definition**: 
   - Point of view (POV) is the perspective from which the narrative is told, influencing how much the reader knows about characters' thoughts, feelings, and motivations.
@@ -49,7 +61,7 @@ PROPERTY: FABULA
 - **Examples**: 
   - *Jane Eyre* by Charlotte Brontë uses first-person POV for deep emotional insight, while *War and Peace* by Leo Tolstoy uses third-person omniscient to cover a vast, multi-character epic.
 
-#### **Narrative Style**
+#### 3.2. **Narrative Style**
 
 - **Definition**: 
   - Narrative style refers to the author’s choice of language, tone, and pacing, as well as the use of literary devices like symbolism and metaphor, shaping the emotional and intellectual experience of the narrative.
@@ -68,7 +80,7 @@ PROPERTY: FABULA
 - **Examples**: 
   - *The Great Gatsby* uses a lyrical style to mirror themes of aspiration, while *The Road* by Cormac McCarthy employs sparse prose to reflect a desolate post-apocalyptic world.
 
-#### **Temporal Structure**
+#### 3.3. **Temporal Structure**
 
 - **Definition**: 
   - Temporal structure refers to the organization of time in the narrative, such as the use of flashbacks or nonlinear timelines.
@@ -87,11 +99,8 @@ PROPERTY: FABULA
 - **Examples**: 
   - *Slaughterhouse-Five* by Kurt Vonnegut uses a nonlinear structure to reflect trauma, while *A Christmas Carol* by Charles Dickens uses flashbacks to show character growth.
 
----
 
-### **Key Concepts**
-
-#### **Hesitation Between the Natural and Supernatural**
+#### 3.4. **Hesitation Between the Natural and Supernatural**
 
 - **Definition**: 
   - The fantastic hinges on ambiguity between the natural and supernatural, preventing the reader from fully accepting either explanation. This uncertainty creates narrative tension as the reader is left in a state of hesitation.
@@ -110,7 +119,7 @@ PROPERTY: FABULA
 - **Examples**: 
   - In *The Turn of the Screw* by Henry James, the reader is left unsure whether the ghosts are real or imagined, creating ongoing ambiguity.
 
-#### **Narrative Tension**
+#### 3.5. **Narrative Tension**
 
 - **Definition**: 
   - Narrative tension in the fantastic mode arises from the reader’s and characters’ inability to reconcile strange events with reality. This tension is sustained throughout the story, keeping the reader in suspense.
