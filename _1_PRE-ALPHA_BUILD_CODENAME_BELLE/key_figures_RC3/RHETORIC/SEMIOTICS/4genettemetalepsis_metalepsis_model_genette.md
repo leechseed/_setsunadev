@@ -13,6 +13,7 @@ TYPE: SEMS
 SUBTYPE: STRUCTURE
 
 ---
+
 ### Title: **Genette's Metalepsis Model**
 
 - **Metalepsis**:

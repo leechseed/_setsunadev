@@ -11,6 +11,8 @@ ELEMENT: RHETORIC
 PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: SPEECH
+
+
 ---
 ### Title: **Bakhtin's Polyphony Framework**
 

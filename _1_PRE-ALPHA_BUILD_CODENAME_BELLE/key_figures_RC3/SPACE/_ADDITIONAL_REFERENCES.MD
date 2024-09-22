@@ -76,3 +76,12 @@ Ways of worldmaking (Goodman, Nelson)9780915144518 (Z-Library).pdf
 
 Fact fiction and forecast goodman, nelson 
 
+
+
+## additional research that is not in zotero
+
+9780429242915 Exploring Imaginary Worlds: Essays on Media, Structure, and Subcreation
+9782012016675 Building Imaginary Worlds: The Theory and History of Subcreation
+9780367873974 Revisiting Imaginary Worlds: A Subcreation Studies Anthology
+9780814212998 Narrating Space/Spatializing Narrative: Where Narrative Theory and Geography Meet
+9780253037701 Topophrenia: Place, Narrative, and the Spatial Imagination
