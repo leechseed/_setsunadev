@@ -1,3 +1,9 @@
+- apply the template to the following data. reference author's seminal works if the provided data does not accurately and completely fill the template 
+- the data in 'characteristics' are not characteristics. create a separate heading called 'types' and correctly fill in characteristics according to its proper definition 
+- format for markdown with headings and put into a codebox for easy copy paste
+
+
+
 ---
 
 ##### Title: [Your Title Here]
@@ -66,10 +72,3 @@
 
 ---
 
-
-
-
-
----
-
-the data in 'characteristics' are not characteristics. create a separate heading called 'types' and correctly fill in characteristics according to its proper definition 

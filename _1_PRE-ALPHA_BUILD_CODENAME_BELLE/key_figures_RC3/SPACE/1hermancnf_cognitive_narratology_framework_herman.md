@@ -10,6 +10,7 @@ Summary: 'Narrative is a fundamental cognitive tool that humans use to make sens
 ELEMENT: SPACE
 
 ---
+
 ### Title: **Herman's Cognitive Narratology Framework**
 
 - **Cognitive Narratology**:

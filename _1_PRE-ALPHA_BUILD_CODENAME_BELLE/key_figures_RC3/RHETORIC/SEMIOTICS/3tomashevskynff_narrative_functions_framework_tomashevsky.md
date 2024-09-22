@@ -14,35 +14,69 @@ TYPE: SEMS
 SUBTYPE: MOTIF
 
 ---
-### Title: **Tomashevsky's Narrative Functions Framework**
+---
 
-- **Narrative Functions**:
-  - **Definition**: Tomashevsky’s analysis of narrative functions focuses on the role that different elements of the narrative play in advancing the plot and developing the theme. He categorizes these functions into two types: *bound motifs* and *free motifs*.
+##### Title: **Tomashevsky's Narrative Functions Framework**
+
+**Narrative Functions**:
+   **Definition**: Tomashevsky’s framework categorizes narrative elements into two main types: *bound motifs* and *free motifs*. These motifs serve distinct purposes within a narrative: bound motifs are crucial for advancing the plot, while free motifs enhance the thematic and emotional layers of the story without being essential to its progression.
 
 ---
 
-### **Key Concepts**
+##### Key Concepts
 
-#### **Bound Motifs**
+##### Bound Motifs
 
-- **Definition**:
-  - Bound motifs are essential to the progression of the narrative. They are necessary for the development of the plot and cannot be removed without altering the narrative’s core structure.
+**Definition**:
+   Bound motifs are narrative elements essential for the progression of the plot. These motifs are necessary for advancing the storyline and maintaining its core structure.
 
-- **Contextualization**:
-  - Bound motifs drive the story forward, ensuring that the narrative maintains its logical sequence and coherence. They are the key events or actions that shape the narrative’s trajectory. Without these motifs, the story would lose its fundamental structure, leading to a breakdown in the narrative’s logical flow.
+**Types**:
+   - **Plot-Driving Events**: Key events or actions that significantly affect the outcome of the story.
+   - **Turning Points**: Critical moments that shift the direction of the narrative.
+   - **Character Actions**: Essential actions taken by main characters that influence the narrative’s resolution.
 
-- **Examples**:
-  - In *Macbeth* by William Shakespeare, the prophecies of the witches are bound motifs, as they are critical to Macbeth's actions and the overall progression of the plot. Removing these prophecies would fundamentally alter the narrative, as they are central to Macbeth's descent into tyranny and madness.
+**Characteristics**:
+   - **Integral to Plot**: Bound motifs cannot be removed without altering the core structure of the narrative.
+   - **Advance the Storyline**: They ensure the logical sequence and flow of the plot.
+   - **Key Events**: Often represent major events, decisions, or turning points that directly shape the narrative.
+
+**Contextualization**:
+   Bound motifs form the backbone of the story, ensuring that the plot develops logically and cohesively. These motifs are indispensable to the narrative's progression, as they drive the action forward and are directly tied to the resolution of the story’s central conflict.
+
+**Examples**:
+   - In *Macbeth* by William Shakespeare, the witches' prophecies are bound motifs. They directly influence Macbeth’s decisions and actions, ultimately determining the course of the narrative. Removing these prophecies would completely alter the story.
 
 ---
 
-#### **Free Motifs**
+##### Free Motifs
 
-- **Definition**:
-  - Free motifs are not essential to the plot but contribute to the atmosphere, characterization, or thematic depth of the narrative. They enrich the story by adding layers of meaning and emotional resonance.
+**Definition**:
+   Free motifs are narrative elements that are not essential for plot development but enrich the narrative by contributing to its atmosphere, themes, or characterization.
 
-- **Contextualization**:
-  - Free motifs enhance the narrative’s aesthetic and thematic qualities, providing additional context or emotional impact without altering the main plotline. These motifs can include symbolic elements, background details, or subplots that deepen the reader's understanding of the characters or themes. While they do not drive the narrative forward, they add richness and texture, making the story more engaging and multifaceted.
+**Types**:
+   - **Symbolic Motifs**: Recurring symbols or images that reinforce the story's themes.
+   - **Subplots**: Minor narrative arcs that add depth without affecting the main storyline.
+   - **Background Details**: Descriptions or elements that contribute to the setting or mood, without directly influencing the plot.
 
-- **Examples**:
-  - In *The Great Gatsby* by F. Scott Fitzgerald, the recurring motif of the green light at the end of Daisy's dock is a free motif. While it is not essential to the plot's progression, it adds symbolic meaning, representing Gatsby's unattainable dreams and the broader themes of desire and the American Dream. Removing this motif would not change the sequence of events, but it would diminish the thematic depth of the narrative.
+**Characteristics**:
+   - **Non-Essential to Plot**: Free motifs can be removed without changing the sequence or outcome of the narrative.
+   - **Thematic Depth**: They enhance the thematic layers and symbolic meanings of the story.
+   - **Atmospheric and Emotional Resonance**: These motifs contribute to the story’s emotional tone and aesthetic richness, adding complexity to the reader’s experience.
+
+**Contextualization**:
+   Free motifs serve to enrich the narrative beyond its basic plot structure. These elements add depth and texture to the story, creating layers of meaning, symbolism, or emotional impact. While not necessary for advancing the plot, free motifs make the story more engaging and thematically resonant.
+
+**Examples**:
+   - In *The Great Gatsby* by F. Scott Fitzgerald, the green light at the end of Daisy’s dock is a free motif. Although it is not essential to the narrative’s progression, it symbolizes Gatsby’s unattainable dreams and adds thematic depth to the story.
+
+---
+
+##### Implications of Narrative Functions
+
+**Understanding Story Structure**:
+   Tomashevsky’s framework helps distinguish between elements that are structurally essential to the plot and those that enhance the thematic and emotional layers of the narrative. By recognizing bound and free motifs, readers gain insight into the mechanics of storytelling and can better appreciate the craftsmanship involved in narrative construction.
+
+**Applications in Literary Analysis**:
+   This framework is valuable for identifying which elements drive the plot and which serve to enrich the narrative’s meaning and atmosphere. Analyzing both bound and free motifs allows for a deeper understanding of how authors create complex, multi-layered stories that balance essential events with symbolic or thematic details.
+
+---
