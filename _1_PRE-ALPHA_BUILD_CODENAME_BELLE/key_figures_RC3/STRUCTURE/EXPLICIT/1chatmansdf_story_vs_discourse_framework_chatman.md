@@ -14,118 +14,129 @@ PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
 ---
 
-- [1. **Chatman's Story vs. Discourse Framework**](#1-chatmans-story-vs-discourse-framework)
-- [2. **Story vs. Discourse**](#2-story-vs-discourse)
-- [3. **Key Concepts**](#3-key-concepts)
-  - [3.1. **Story**](#31-story)
-    - [3.1.1. **Components of Story**:](#311-components-of-story)
-      - [3.1.1.1. **Characters**:](#3111-characters)
-      - [3.1.1.2. **Settings**:](#3112-settings)
-      - [3.1.1.3. **Actions**:](#3113-actions)
-  - [3.2. **Discourse**](#32-discourse)
-    - [3.2.1. **Components of Discourse**:](#321-components-of-discourse)
-      - [3.2.1.1. **Narrative Voice**:](#3211-narrative-voice)
-      - [3.2.1.2. **Focalization**:](#3212-focalization)
-      - [3.2.1.3. **Order of Events**:](#3213-order-of-events)
-      - [3.2.1.4. **Style**:](#3214-style)
-      - [3.2.1.5. **Medium**:](#3215-medium)
-- [4. **Importance of the Distinction**](#4-importance-of-the-distinction)
-- [5. **Conclusion**](#5-conclusion)
-
+- [](#)
+    - [1.0.1. **Discourse**](#101-discourse)
+      - [1.0.1.1. **Components of Discourse**:](#1011-components-of-discourse)
+        - [1.0.1.1.1. **Focalization**:](#10111-focalization)
+        - [1.0.1.1.2. **Order of Events**:](#10112-order-of-events)
+        - [1.0.1.1.3. **Narrative Voice**:](#10113-narrative-voice)
+        - [1.0.1.1.4. **Style**:](#10114-style)
+        - [1.0.1.1.5. **Medium**:](#10115-medium)
+  - [1.1. **Importance of the Distinction**](#11-importance-of-the-distinction)
+  - [1.2. **Conclusion**](#12-conclusion)
 
 
 ---
-### 1. **Chatman's Story vs. Discourse Framework**
+
+---
+### 0.1. **Chatman's Story vs. Discourse Framework**
 
 - **Author**: Seymour Chatman
 - **Title**: Chatman's Story vs. Discourse Framework
 
-### 2. **Story vs. Discourse**
+### 0.2. **Story vs. Discourse**
+
+![Chatman Image](../../../assets/1ChatmanSDF_model_overview.jpg "chatman model overview")
 
 - **Definition**: 
   - Seymour Chatman, a prominent narratologist, introduces a critical distinction between *story* and *discourse* in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.
 
 ---
 
-### 3. **Key Concepts**
+### 0.3. **Key Concepts**
 
-#### 3.1. **Story**
-
+#### 0.3.1. **Story**
+![Chatman Image](../../../assets/1ChatmanSDF_story.jpg "story")
 - **Definition**: 
   - The *story* refers to the content or the *what* of the narrative. It includes the events, characters, settings, and actions that form the basic structure of the narrative. The story is the raw material, existing independently of how it is presented to the audience.
 
-##### 3.1.1. **Components of Story**:
+##### 0.3.1.1. **Components of Story**:
+![Chatman Image](../../../assets/1ChatmanSDF_events.jpg "events")
   - **Events**:
     - **Definition**: Incidents or occurrences that move the plot forward and form the backbone of the narrative.
     - **Characteristics**:
       - **Pivotal**: Drive the central plot forward.
       - **Sequential**: Follow a logical or thematic order to maintain coherence.
   
-###### 3.1.1.1. **Characters**:
-    - **Definition**: Individuals or entities that participate in the narrative events.
-    - **Characteristics**:
+###### 0.3.1.1.1. **Characters**:
+![Chatman Image](../../../assets/1ChatmanSDF_characters.jpg "characters")
+  - **Definition**: Individuals or entities that participate in the narrative events.
+  - **Characteristics**:
       - **Complex**: Contain depth, showing growth or change over time.
       - **Relatable**: Often designed to evoke emotional connection or sympathy from the audience.
   
-###### 3.1.1.2. **Settings**:
-    - **Definition**: The time and place where the narrative events occur.
-    - **Characteristics**:
+###### 0.3.1.1.2. **Settings**:
+![Chatman Image](../../../assets/1ChatmanSDF_setting.jpg "setting")
+  - **Definition**: The time and place where the narrative events occur.
+  - **Characteristics**:
       - **Grounded**: Provides a believable and immersive context for the story.
       - **Descriptive**: Richly detailed to enhance the world-building.
   
-###### 3.1.1.3. **Actions**:
-    - **Definition**: Behaviors, decisions, or deeds performed by the characters that affect the narrative’s direction.
-    - **Characteristics**:
+###### 0.3.1.1.3. **Actions**:
+![Chatman Image](../../../assets/1ChatmanSDF_actions.jpg "actions")
+  - **Definition**: Behaviors, decisions, or deeds performed by the characters that affect the narrative’s direction.
+  - **Characteristics**:
       - **Purposeful**: Drive the plot through intentional decisions or reactions.
       - **Consequential**: Lead to important developments or shifts in the story's trajectory.
 
 - **Contextualization**:
   - The *story* forms the foundation of any narrative. It provides the building blocks of the plot, character arcs, and thematic developments, regardless of the medium through which it is presented. For instance, the story of *Cinderella* remains consistent across different adaptations, such as books, films, and plays, though the *discourse* or the presentation can vary.
 
+![Chatman Image](../../../assets/1ChatmanSDF_story_expressed.jpg "story expressed")
 ---
 
-#### 3.2. **Discourse**
+#### 1.0.1. **Discourse**
+![Chatman Image](../../../assets/1ChatmanSDF_discourse.jpg "discourse")
 
 - **Definition**: 
   - *Discourse* refers to the *how* of the narrative, encompassing the methods and techniques used to present the story. It includes narrative structure, voice, perspective, style, and the medium through which the narrative is conveyed.
 
-##### 3.2.1. **Components of Discourse**:
-###### 3.2.1.1. **Narrative Voice**:
-    - **Definition**: The entity or narrator that tells the story, shaping how the audience perceives the events.
-    - **Characteristics**:
-      - **Distinctive**: Unique to each story, offering a particular tone or attitude.
-      - **Guiding**: Directs how the audience interprets the events and emotions within the story.
+##### 1.0.1.1. **Components of Discourse**:
   
-###### 3.2.1.2. **Focalization**:
-    - **Definition**: The perspective or point of view from which the narrative is told, determining what the audience sees and knows.
-    - **Characteristics**:
+
+###### 1.0.1.1.1. **Focalization**:
+![Chatman Image](../../../assets/1ChatmanSDF_focalization.jpg "focalization")
+  - **Definition**: The perspective or point of view from which the narrative is told, determining what the audience sees and knows.
+  - **Characteristics**:
       - **Focused**: Provides insight into the subjective experiences of characters.
       - **Selective**: Chooses what details or events to emphasize, shaping the narrative’s angle.
   
-###### 3.2.1.3. **Order of Events**:
-    - **Definition**: The sequence in which the story’s events are presented, whether chronological, non-linear, or through flashbacks.
-    - **Characteristics**:
+###### 1.0.1.1.2. **Order of Events**:
+![Chatman Image](../../../assets/1ChatmanSDF_order_of_events.jpg "order of events")
+  - **Definition**: The sequence in which the story’s events are presented, whether chronological, non-linear, or through flashbacks.
+  - **Characteristics**:
       - **Structured**: Follows a deliberate pattern to control the flow of information.
       - **Manipulative**: Alters time and sequence to create tension or reveal key details strategically.
+
+###### 1.0.1.1.3. **Narrative Voice**:
+![Chatman Image](../../../assets/1ChatmanSDF_narrative_voice.jpg "narrative voice")
+  - **Definition**: The entity or narrator that tells the story, shaping how the audience perceives the events.
+  - **Characteristics**:
+      - **Distinctive**: Unique to each story, offering a particular tone or attitude.
+      - **Guiding**: Directs how the audience interprets the events and emotions within the story.
   
-###### 3.2.1.4. **Style**:
-    - **Definition**: The author’s choice of language, tone, and literary devices that contribute to the unique voice of the narrative.
-    - **Characteristics**:
+###### 1.0.1.1.4. **Style**:
+![Chatman Image](../../../assets/1ChatmanSDF_style.jpg "style")
+  - **Definition**: The author’s choice of language, tone, and literary devices that contribute to the unique voice of the narrative.
+  - **Characteristics**:
       - **Expressive**: Utilizes a distinct linguistic style to evoke emotions and thoughts.
       - **Evocative**: Uses literary tools like metaphor, symbolism, and irony to add depth.
   
-###### 3.2.1.5. **Medium**:
-    - **Definition**: The form or platform through which the story is conveyed, such as text, film, or visual art.
-    - **Characteristics**:
+###### 1.0.1.1.5. **Medium**:
+![Chatman Image](../../../assets/1ChatmanSDF_medium.jpg "medium")
+  - **Definition**: The form or platform through which the story is conveyed, such as text, film, or visual art.
+  - **Characteristics**:
       - **Adaptable**: Adjusts the narrative techniques to suit the medium.
       - **Interactive**: Engages the audience through visual, auditory, or textual elements, depending on the medium.
 
 - **Contextualization**:
   - Discourse influences how the audience interacts with the story, guiding their emotional response and intellectual interpretation. It shapes the delivery of the narrative through techniques like non-linear timelines, shifting perspectives, or the use of symbolism and metaphor. By manipulating discourse, storytellers can create tension, surprise, or multiple layers of meaning.
 
+![Chatman Image](../../../assets/1ChatmanSDF_discourse_expressed.jpg "discourse expressed")
+
 ---
 
-### 4. **Importance of the Distinction**
+### 1.1. **Importance of the Distinction**
 
 - **Narrative Analysis**:
   - **Definition**: The separation of story and discourse is essential for narrative analysis, as it allows critics to dissect how content (story) is shaped by presentation (discourse).
@@ -147,7 +158,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-### 5. **Conclusion**
+### 1.2. **Conclusion**
 
 - **Seymour Chatman’s Framework**:
   - The distinction between *story* and *discourse* is essential for understanding the mechanics of narrative across different forms and media. By recognizing the *what* (story) and the *how* (discourse), Chatman’s framework provides a foundation for analyzing how narratives are constructed and experienced.
@@ -158,3 +169,5 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Characteristics**:
       - **Comprehensive**: Encompasses all aspects of narrative theory.
       - **Applicable**: Can be used across various types of narrative media, from literature to film and beyond.
+
+![Chatman Image](../../../assets/1ChatmanSDF_model_expressed.jpg "model expressed")
