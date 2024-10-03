@@ -46,6 +46,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 
 ---
+
+---
 ### 1. **Sternberg's Expositional Modes Framework**
 
 - **Expositional Modes**:
@@ -96,11 +98,10 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Atmospheric**: Establishes the mood or tone of the story by providing rich sensory details about the surroundings.
   - **Contextual**: Provides essential background information that helps the reader understand the relevance of the setting to the plot and characters.
 
-
 ###### 2.1.1.3. **Background Information**:
-    - **Definition**: Information about past events or circumstances that shape the current story.
-    - **Examples**: In *1984* by George Orwell, direct exposition explains the political structure of Oceania and the role of Big Brother.
-    - **Characteristics**:
+  - **Definition**: Information about past events or circumstances that shape the current story.
+  - **Examples**: In *1984* by George Orwell, direct exposition explains the political structure of Oceania and the role of Big Brother.
+  - **Characteristics**:
       - **Contextual**: Connects past events to the present narrative.
       - **Informative**: Focuses on delivering crucial details to enhance understanding.
 
@@ -160,30 +161,30 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ##### 2.2.1. **Components of Delayed Exposition**:
 ###### 2.2.1.1. **Gradual Revelation**:
-    - **Definition**: Information is revealed slowly as the plot unfolds.
-    - **Examples**: In *Rebecca* by Daphne du Maurier, details about Rebecca’s life and death are revealed piece by piece, deepening the mystery.
-    - **Characteristics**:
+  - **Definition**: Information is revealed slowly as the plot unfolds.
+  - **Examples**: In *Rebecca* by Daphne du Maurier, details about Rebecca’s life and death are revealed piece by piece, deepening the mystery.
+  - **Characteristics**:
       - **Incremental**: Information is given in small amounts over time.
       - **Engaging**: Keeps the reader curious and attentive, encouraging them to continue reading.
 
 ###### 2.2.1.2. **Building Suspense**:
-    - **Definition**: Withholding information creates suspense and tension as readers anticipate the revelation of critical details.
-    - **Examples**: In *Gone Girl* by Gillian Flynn, the true story behind Amy’s disappearance is revealed gradually, keeping readers on edge.
-    - **Characteristics**:
+  - **Definition**: Withholding information creates suspense and tension as readers anticipate the revelation of critical details.
+  - **Examples**: In *Gone Girl* by Gillian Flynn, the true story behind Amy’s disappearance is revealed gradually, keeping readers on edge.
+  - **Characteristics**:
       - **Tension-Building**: Enhances reader anticipation and anxiety.
       - **Suspenseful**: Maintains uncertainty, leaving key questions unanswered until later.
 
 ###### 2.2.1.3. **Enhancing Emotional Impact**:
-    - **Definition**: Delaying exposition can heighten the emotional payoff when key details are finally revealed.
-    - **Examples**: In *The Sixth Sense*, the delayed revelation of the protagonist’s true condition enhances the emotional weight of the twist.
-    - **Characteristics**:
+  - **Definition**: Delaying exposition can heighten the emotional payoff when key details are finally revealed.
+  - **Examples**: In *The Sixth Sense*, the delayed revelation of the protagonist’s true condition enhances the emotional weight of the twist.
+  - **Characteristics**:
       - **Impactful**: The eventual revelation delivers a powerful emotional or thematic conclusion.
       - **Rewarding**: Provides a sense of fulfillment when the reader uncovers the hidden information.
 
 ###### 2.2.1.4. **Reader Engagement**:
-    - **Definition**: Readers are invited to piece together clues as information is revealed slowly, engaging them more actively with the narrative.
-    - **Examples**: In *Lost*, the gradual revelation of each character’s backstory keeps viewers engaged through speculation.
-    - **Characteristics**:
+  - **Definition**: Readers are invited to piece together clues as information is revealed slowly, engaging them more actively with the narrative.
+  - **Examples**: In *Lost*, the gradual revelation of each character’s backstory keeps viewers engaged through speculation.
+  - **Characteristics**:
       - **Interactive**: Invites readers to interpret clues and form their own conclusions.
       - **Speculative**: Encourages theories and discussions about the narrative.
 
@@ -206,23 +207,23 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ##### 2.3.1. **Components of Suspended Exposition**:
 ###### 2.3.1.1. **Strategic Withholding of Information**:
-    - **Definition**: Critical details are kept hidden until a pivotal moment in the narrative.
-    - **Examples**: In *Fight Club*, the true nature of the protagonist’s relationship with Tyler Durden is withheld until a climactic reveal.
-    - **Characteristics**:
+  - **Definition**: Critical details are kept hidden until a pivotal moment in the narrative.
+  - **Examples**: In *Fight Club*, the true nature of the protagonist’s relationship with Tyler Durden is withheld until a climactic reveal.
+  - **Characteristics**:
       - **Calculated**: Information is concealed with clear narrative intent.
       - **Transformative**: The withheld details significantly alter the reader’s understanding of prior events.
 
 ###### 2.3.1.2. **Control of Narrative Pacing**:
-    - **Definition**: Suspended exposition allows the author to control the pacing of the story by delaying major reveals until key moments.
-    - **Examples**: In *The Usual Suspects*, the identity of Keyser Söze is suspended until the final moments, controlling the narrative flow.
-    - **Characteristics**:
+  - **Definition**: Suspended exposition allows the author to control the pacing of the story by delaying major reveals until key moments.
+  - **Examples**: In *The Usual Suspects*, the identity of Keyser Söze is suspended until the final moments, controlling the narrative flow.
+  - **Characteristics**:
       - **Measured**: Pacing is controlled to build toward significant moments.
       - **Purposeful**: The reveal is aligned with the story’s climax for maximum impact.
 
 ###### 2.3.1.3. **Maximizing Narrative Impact**:
-    - **Definition**: By withholding key information, the eventual reveal can be made more dramatic and impactful.
-    - **Examples**: In *The Village*, the truth about the village’s isolation is withheld until the final act, reshaping the audience’s perception of the story.
-    - **Characteristics**:
+  - **Definition**: By withholding key information, the eventual reveal can be made more dramatic and impactful.
+  - **Examples**: In *The Village*, the truth about the village’s isolation is withheld until the final act, reshaping the audience’s perception of the story.
+  - **Characteristics**:
       - **Dramatic**: Creates a sense of shock or surprise when the information is disclosed.
       - **Subversive**: Can redefine the narrative, challenging the reader’s previous assumptions.
 
@@ -267,9 +268,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Reader Reengagement**:
   - **Definition**: Twist endings often require the audience to reconsider previous events, effectively making them "re-read" the narrative through a new lens, enhancing the complexity of the plot.
 
+---
 
-
-  
 #### 2.5. **Contextualization**:
   - **Maintaining Tension**: Suspended exposition is particularly effective in keeping the reader engaged by controlling when key information is disclosed.
   - **Strategic in Complex Narratives**: Often used in narratives with intersecting plotlines, where withholding information can increase the complexity of the story.
