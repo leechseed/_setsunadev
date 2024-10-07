@@ -19,6 +19,7 @@ KNOWLEDGE TYPE: EXPLICIT
   - [2.3. **Narrative States**](#23-narrative-states)
 - [3. **Theoretical Significance**](#3-theoretical-significance)
 - [4. **Impact on Narrative Theory**](#4-impact-on-narrative-theory)
+  - [4.1. **Components of Theoretical Impact**:](#41-components-of-theoretical-impact)
 - [5. **Conclusion**](#5-conclusion)
 
 
@@ -99,7 +100,7 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Greimas’s Narrative Grammar Framework provides a structural approach to understanding how narratives function, focusing on the deep rules that govern storytelling.
 
-- **Components of Theoretical Impact**:
+#### 4.1. **Components of Theoretical Impact**:
   - **Structural Analysis**:
     - **Definition**: Greimas’s framework allows for the dissection of stories into their fundamental components, showing how the arrangement of events, characters, and themes follows an underlying logic.
     - **Examples**: In *The Odyssey*, each phase of Odysseus’s journey represents a carefully structured series of transformations.

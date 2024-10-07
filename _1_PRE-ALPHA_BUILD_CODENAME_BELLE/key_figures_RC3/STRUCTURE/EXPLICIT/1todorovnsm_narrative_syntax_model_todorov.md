@@ -15,31 +15,31 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-- [**Todorov's Narrative Syntax Model**](#todorovs-narrative-syntax-model)
-- [**Key Elements of Narrative Syntax**](#key-elements-of-narrative-syntax)
-  - [**Equilibrium**](#equilibrium)
-    - [**Components of Equilibrium**](#components-of-equilibrium)
-      - [**Establishment of Normalcy**:](#establishment-of-normalcy)
-      - [**Character Introduction**:](#character-introduction)
-      - [**Setting Introduction**:](#setting-introduction)
-      - [**Implicit Expectations**:](#implicit-expectations)
-      - [**Explicit Expectations**:](#explicit-expectations)
-  - [**Disequilibrium**](#disequilibrium)
-    - [**Components of Disequilibrium**](#components-of-disequilibrium)
-      - [**Catalyst Event**:](#catalyst-event)
-      - [**Introduction of Conflict**:](#introduction-of-conflict)
-      - [**Character Reaction**:](#character-reaction)
-      - [**Character Adaptation**:](#character-adaptation)
-      - [**Escalation of Tension**:](#escalation-of-tension)
-  - [**Restoration of Equilibrium**](#restoration-of-equilibrium)
-    - [**Components of Restoration of Equilibrium**](#components-of-restoration-of-equilibrium)
-      - [**Resolution of Conflict**:](#resolution-of-conflict)
-      - [**Establishment of a New Normal**:](#establishment-of-a-new-normal)
-      - [**Character Growth**:](#character-growth)
-      - [**Character Change**:](#character-change)
-      - [**Thematic Closure**:](#thematic-closure)
-- [**Theoretical Significance**](#theoretical-significance)
-- [**Conclusion**](#conclusion)
+- [1. **Todorov's Narrative Syntax Model**](#1-todorovs-narrative-syntax-model)
+- [2. **Key Elements of Narrative Syntax**](#2-key-elements-of-narrative-syntax)
+  - [2.1. **Equilibrium**](#21-equilibrium)
+    - [2.1.1. **Components of Equilibrium**](#211-components-of-equilibrium)
+      - [2.1.1.1. **Establishment of Normalcy**:](#2111-establishment-of-normalcy)
+      - [2.1.1.2. **Character Introduction**:](#2112-character-introduction)
+      - [2.1.1.3. **Setting Introduction**:](#2113-setting-introduction)
+      - [2.1.1.4. **Implicit Expectations**:](#2114-implicit-expectations)
+      - [2.1.1.5. **Explicit Expectations**:](#2115-explicit-expectations)
+  - [2.2. **Disequilibrium**](#22-disequilibrium)
+    - [2.2.1. **Components of Disequilibrium**](#221-components-of-disequilibrium)
+      - [2.2.1.1. **Catalyst Event**:](#2211-catalyst-event)
+      - [2.2.1.2. **Introduction of Conflict**:](#2212-introduction-of-conflict)
+      - [2.2.1.3. **Character Reaction**:](#2213-character-reaction)
+      - [2.2.1.4. **Character Adaptation**:](#2214-character-adaptation)
+      - [2.2.1.5. **Escalation of Tension**:](#2215-escalation-of-tension)
+  - [2.3. **Restoration of Equilibrium**](#23-restoration-of-equilibrium)
+    - [2.3.1. **Components of Restoration of Equilibrium**](#231-components-of-restoration-of-equilibrium)
+      - [2.3.1.1. **Resolution of Conflict**:](#2311-resolution-of-conflict)
+      - [2.3.1.2. **Establishment of a New Normal**:](#2312-establishment-of-a-new-normal)
+      - [2.3.1.3. **Character Growth**:](#2313-character-growth)
+      - [2.3.1.4. **Character Change**:](#2314-character-change)
+      - [2.3.1.5. **Thematic Closure**:](#2315-thematic-closure)
+- [3. **Theoretical Significance**](#3-theoretical-significance)
+- [4. **Conclusion**](#4-conclusion)
 
 
 
@@ -49,25 +49,25 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-### **Todorov's Narrative Syntax Model**
+### 1. **Todorov's Narrative Syntax Model**
 
 - **Narrative Syntax**:
   - **Definition**: Tzvetan Todorov posits that narratives can be analyzed through a syntax-like structure, analogous to how sentences are constructed in language. This approach views narratives as having a formal structure that can be broken down into key elements, each contributing to the overall progression of the story. Todorov's model identifies a pattern of equilibrium, disequilibrium, and restoration of equilibrium as the foundational structure of many narratives.
 
 ---
 
-### **Key Elements of Narrative Syntax**
+### 2. **Key Elements of Narrative Syntax**
 
-#### **Equilibrium**
+#### 2.1. **Equilibrium**
 
 - **Definition**: 
   - The narrative begins with a state of equilibrium, where the story world is in a condition of balance or normalcy. This initial state serves as a baseline from which the story’s events will deviate.
 
 ![todorov_photo](../../../assets/1TodorovNSM_equilibrium.jpg "equilibrium")
 
-##### **Components of Equilibrium**
+##### 2.1.1. **Components of Equilibrium**
 
-###### **Establishment of Normalcy**:
+###### 2.1.1.1. **Establishment of Normalcy**:
 
   - **Definition**: The story world is introduced as stable, with characters living in routine or expected ways. This normalcy sets the stage for understanding the significance of the upcoming disruption.
 
@@ -78,7 +78,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Stable**: Presents a calm, balanced environment for characters.
     - **Predictable**: Events and character actions follow a routine or expected pattern.
 
-###### **Character Introduction**:
+###### 2.1.1.2. **Character Introduction**:
   - **Definition**: Key characters are introduced, offering insight into their backgrounds, personalities, and relationships with others.
 
 ![todorov_photo](../../../assets/1TodorovNSM_character_introduction.jpg "character introduction")
@@ -89,7 +89,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Informative**: Provides essential details about the characters, their roles, and relationships.
     - **Contextual**: Offers background that helps the audience understand the characters' motives and actions.
 
-###### **Setting Introduction**:
+###### 2.1.1.3. **Setting Introduction**:
   - **Definition**: The environment or world in which the characters operate is established, setting the stage for the narrative’s unfolding events.
 
 ![todorov_photo](../../../assets/1TodorovNSM_setting_introduction.jpg "setting introduction")
@@ -100,7 +100,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Atmospheric**: Establishes the mood and tone that will influence the story's progression.
 
 
-###### **Implicit Expectations**:
+###### 2.1.1.4. **Implicit Expectations**:
   - **Definition**: Unstated or subtly conveyed norms that the characters and audience come to understand through context and subtext.
 
 ![todorov_photo](../../../assets/1TodorovNSM_implicit_expectations.jpg "implicit expectations")
@@ -110,7 +110,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Subtle**: Norms are conveyed through actions, dialogue, or societal behaviors rather than being directly stated.
     - **Cultural**: Reflects underlying cultural or societal norms that characters are influenced by.
 
-###### **Explicit Expectations**:
+###### 2.1.1.5. **Explicit Expectations**:
   - **Definition**: Clearly stated norms or rules that are presented directly to the characters and audience, often setting up future challenges.
 
 ![todorov_photo](../../../assets/1TodorovNSM_explicit_expectations.jpg "explicit expectations")
@@ -136,7 +136,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-#### **Disequilibrium**
+#### 2.2. **Disequilibrium**
 
 - **Definition**: 
   - Disequilibrium occurs when an event disrupts the initial balance, introducing conflict or tension into the narrative. This disruption is the catalyst for the story, driving the plot forward.
@@ -145,9 +145,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 
 
-##### **Components of Disequilibrium**
+##### 2.2.1. **Components of Disequilibrium**
 
-###### **Catalyst Event**:
+###### 2.2.1.1. **Catalyst Event**:
   - **Definition**: The specific event or action that disrupts the equilibrium and introduces conflict.
 
 ![todorov_photo](../../../assets/1TodorovNSM_catalyst_event.jpg "catalyst event")
@@ -159,7 +159,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Disruptive**: Causes an immediate change or upset in the story’s world.
     - **Initiatory**: Begins the central conflict or problem of the narrative.
 
-###### **Introduction of Conflict**:
+###### 2.2.1.2. **Introduction of Conflict**:
   - **Definition**: The disruption introduces conflict or tension that drives the story forward.
 
 ![todorov_photo](../../../assets/1TodorovNSM_introduction_of_conflict.jpg "introduction of conflict")
@@ -171,7 +171,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Challenging**: Presents obstacles or problems the characters must face.
     - **Tense**: Raises the stakes and introduces tension into the narrative.
 
-###### **Character Reaction**:
+###### 2.2.1.3. **Character Reaction**:
   - **Definition**: How characters respond emotionally, mentally, or physically to disruptions or challenges within the narrative.
 
 ![todorov_photo](../../../assets/1TodorovNSM_character_reaction.jpg "character reaction")
@@ -183,7 +183,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Character-Defining**: These reactions often showcase core personality traits, values, or motivations.
     - **Immediate Consequences**: The character’s reactions usually lead to immediate effects on the plot or other characters.
 
-###### **Character Adaptation**:
+###### 2.2.1.4. **Character Adaptation**:
   - **Definition**: How characters adjust their behavior, strategies, or mindset to overcome challenges or disruptions, leading to growth or development.
 
 ![todorov_photo](../../../assets/1TodorovNSM_character_adaptation.jpg "character adaptation")
@@ -196,7 +196,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Problem-Solving**: Adaptation highlights a character’s resourcefulness and ability to navigate difficult situations.
     - **Long-Term Consequences**: The character’s ability to adapt often drives long-term changes in the plot and character arc.
 
-###### **Escalation of Tension**:
+###### 2.2.1.5. **Escalation of Tension**:
   - **Definition**: As the disequilibrium progresses, the conflict intensifies, building toward a climax.
 
 ![todorov_photo](../../../assets/1TodorovNSM_escalation_of_tension.jpg "escalation of tension")
@@ -223,7 +223,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-#### **Restoration of Equilibrium**
+#### 2.3. **Restoration of Equilibrium**
 
 - **Definition**: 
   - The narrative concludes with a restoration of equilibrium, where a new balance is achieved. This new state may either mirror the original equilibrium or reflect a transformed reality.
@@ -231,9 +231,9 @@ KNOWLEDGE TYPE: EXPLICIT
 ![todorov_photo](../../../assets/1TodorovNSM_restoration_of_equilibrium.jpg "restoration of equilibrium")
 
 
-##### **Components of Restoration of Equilibrium**
+##### 2.3.1. **Components of Restoration of Equilibrium**
 
-###### **Resolution of Conflict**:
+###### 2.3.1.1. **Resolution of Conflict**:
   - **Definition**: The central conflict is resolved, bringing closure to the story’s tension.
 
 ![todorov_photo](../../../assets/1TodorovNSM_resolution_of_conflict.jpg "resolution of conflict")
@@ -243,7 +243,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Resolving**: Puts an end to the conflict that drives the narrative.
     - **Conclusive**: Marks the finality of the story’s primary challenges.
 
-###### **Establishment of a New Normal**:
+###### 2.3.1.2. **Establishment of a New Normal**:
   - **Definition**: The story concludes with a new, often transformed, state of balance.
 
 ![todorov_photo](../../../assets/1TodorovNSM_establishment_of_a_new_normal.jpg "establishment of new normal")
@@ -253,7 +253,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Stabilizing**: Brings the story world back to a stable state.
     - **Transformed**: Reflects changes that have occurred throughout the narrative.
 
-###### **Character Growth**:
+###### 2.3.1.3. **Character Growth**:
   - **Definition**: The character evolves, gaining new insights or developing emotionally and mentally as a result of the events in the story.
 
 ![todorov_photo](../../../assets/1TodorovNSM_character_growth.jpg "character growth")
@@ -263,7 +263,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Developmental**: The character undergoes personal growth or maturation.
     - **Gradual**: The change often occurs over time as the character processes their experiences.
 
-###### **Character Change**:
+###### 2.3.1.4. **Character Change**:
   - **Definition**: The character undergoes a transformation, often resulting in a significant shift in their beliefs, behaviors, or outlook on life.
 
 ![todorov_photo](../../../assets/1TodorovNSM_character_change.jpg "character change")
@@ -273,7 +273,7 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Lasting**: The impact of the change is enduring, affecting the character long after the story’s conclusion.
 
 
-###### **Thematic Closure**:
+###### 2.3.1.5. **Thematic Closure**:
   - **Definition**: The narrative concludes with thematic closure, often reinforcing the central ideas or messages.
 
 ![todorov_photo](../../../assets/1TodorovNSM_thematic_closure.jpg "thematic closure")
@@ -298,7 +298,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-### **Theoretical Significance**
+### 3. **Theoretical Significance**
 
 - **Todorov’s Model in Narrative Theory**:
   - Todorov's narrative syntax model is essential for distilling stories into a formal structure. By identifying equilibrium, disequilibrium, and restoration, it provides a foundational framework for understanding narrative progression.
@@ -323,7 +323,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-### **Conclusion**
+### 4. **Conclusion**
 
 - **Tzvetan Todorov’s Lasting Influence**:
   - Todorov’s model remains foundational for understanding narrative structure. Its ability to distill stories into three key elements—equilibrium, disequilibrium, and restoration—continues to provide a powerful tool for analysis across media and genres.
