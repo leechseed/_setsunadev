@@ -36,7 +36,11 @@ KNOWLEDGE TYPE: EXPLICIT
     - [4.1.6. **Narrative Framing**](#416-narrative-framing)
 - [5. **Conclusion**](#5-conclusion)
 
+---
 
+![herman_photo](../../../assets/2HermanSLF_model_start.jpg "herman start")
+
+---
 ### 1. **Herman's Story Logic Framework**
 
 - **Story Logic**:
@@ -56,12 +60,16 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - Story logic involves understanding how different elements of a narrative fit together to form a coherent whole. This includes recognizing causal relationships, thematic connections, and the narrative's overall structure.
 
+![herman_photo](../../../assets/2HermanSLF_narrative_coherence_start.jpg "narrative coherence")
+
 #### 3.1. **Components of Narrative Coherence**
 
 ##### 3.1.1. **Causal Relationships**
 
 - **Definition**: 
   - The logical connections between events in a story, where one event leads to another, creating a cause-and-effect sequence that drives the narrative forward.
+
+![herman_photo](../../../assets/2HermanSLF_causal_relationships.jpg "causal relationships")
 
 - **Characteristics**:
   - **Sequential**: Events occur in a logical sequence.
@@ -78,6 +86,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - The recurring ideas or motifs that link different parts of the narrative, providing a sense of unity and reinforcing the story's central themes.
 
+![herman_photo](../../../assets/2HermanSLF_thematic_connections.jpg "thematic connections")
+
 - **Characteristics**:
   - **Unifying**: Themes serve as central threads connecting different parts of the narrative.
   - **Recurring**: Key ideas or motifs appear throughout the story.
@@ -92,6 +102,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: 
   - The overall organization of a narrative, including its plot, pacing, and the arrangement of events.
+
+![herman_photo](../../../assets/2HermanSLF_narrative_structure.jpg "narrative structure")
 
 - **Characteristics**:
   - **Organized**: Events are structured in a clear, deliberate sequence.
@@ -108,6 +120,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - The logical development of characters' actions, decisions, and behaviors throughout the narrative, ensuring they act in ways that align with their established personalities and motivations.
 
+![herman_photo](../../../assets/2HermanSLF_character_consistency.jpg "character consistency")
+
 - **Characteristics**:
   - **Stable**: Characters’ traits remain consistent.
   - **Logical**: Actions reflect established motivations.
@@ -122,6 +136,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: 
   - Temporal coherence refers to the logical progression of time within a narrative, ensuring that the sequence of events and their placement in the timeline are clear and consistent.
+
+
+![herman_photo](../../../assets/2HermanSLF_temporal_coherence.jpg "temporal coherence")
 
 - **Characteristics**:
   - **Chronological**: Time progresses logically from past to present.
@@ -138,6 +155,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - Spatial coherence refers to the logical consistency of space within the narrative, ensuring that the story’s setting is clearly defined and the characters’ movements and interactions within the space make sense.
 
+
+![herman_photo](../../../assets/2HermanSLF_spatial_coherence.jpg "spatial coherence")
+
 - **Characteristics**:
   - **Defined**: Settings are clearly described and maintained.
   - **Consistent**: Characters’ movements are logical within the space.
@@ -148,9 +168,16 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+![herman_photo](../../../assets/2HermanSLF_narrative_coherence_final.jpg "narrative coherence final")
+
+---
+
 ### 4. **Narrative Sense-Making**
 - **Definition**: 
   - Story logic is not only about the narrative's formal elements but also about how readers use cognitive strategies to make sense of these elements. This involves interpreting the story's coherence, anticipating outcomes, and filling in gaps.
+
+![herman_photo](../../../assets/2HermanSLF_narrative_sense-making_start.jpg "narrative sense-making start")
+
 
 #### 4.1. **Components of Narrative Sense-making**
 
@@ -158,6 +185,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: 
   - The reader’s ability to draw conclusions about the narrative based on the information provided, even when some details are not explicitly stated.
+
+![herman_photo](../../../assets/2HermanSLF_inference-making.jpg "inference-making")
 
 - **Characteristics**:
   - **Logical**: Readers infer connections between events.
@@ -174,6 +203,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - The process of identifying recurring patterns, themes, or structures within a narrative that contribute to its overall coherence.
 
+![herman_photo](../../../assets/2HermanSLF_pattern_recognition.jpg "pattern recognition")
+
 - **Characteristics**:
   - **Familiar**: Patterns aid understanding by creating predictability.
   - **Repetitive**: Recurring motifs solidify themes.
@@ -188,6 +219,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: 
   - Expectation is the cognitive strategy where readers form predictions about future events based on the narrative’s established logic, patterns, and foreshadowing.
+
+![herman_photo](../../../assets/2HermanSLF_expectation.jpg "expectation")
 
 - **Characteristics**:
   - **Predictive**: Readers develop ideas about upcoming events.
@@ -204,6 +237,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - Anticipation is the reader’s emotional or intellectual readiness for future events, based on narrative foreshadowing or established themes.
 
+![herman_photo](../../../assets/2HermanSLF_anticipation.jpg "anticipation")
+
 - **Characteristics**:
   - **Emotional**: Readers experience heightened tension or excitement.
   - **Ready**: Readers prepare for upcoming plot points.
@@ -218,6 +253,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: 
   - The reader’s ability to fill in missing information or connect narrative gaps by using their imagination or drawing on contextual clues.
+
+![herman_photo](../../../assets/2HermanSLF_gap-filling.jpg "gap-filling")
 
 - **Characteristics**:
   - **Imaginative**: Readers use context to complete the narrative.
@@ -234,6 +271,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - The mental framework or schema that readers use to understand and organize narrative information, influenced by cultural, social, and personal experiences.
 
+![herman_photo](../../../assets/2HermanSLF_narrative_framing.jpg "narrative framing")
+
 - **Characteristics**:
   - **Cultural**: Readers rely on prior knowledge and experiences.
   - **Contextual**: Frames shape interpretations of characters and themes.
@@ -244,7 +283,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+![herman_photo](../../../assets/2HermanSLF_narrative_sense-making_final.jpg "narrative sense-making final")
+---
+
 ### 5. **Conclusion**
 
 - **Herman’s Contribution to Narrative Theory**:
   - David Herman's *story logic* framework offers a comprehensive approach to understanding how narratives achieve coherence and how readers cognitively engage with them. His work bridges narrative theory with cognitive science, making it a valuable tool for analyzing storytelling across genres and media.
+
+
+![herman_photo](../../../assets/2HermanSLF_model_final.jpg "herman final")
