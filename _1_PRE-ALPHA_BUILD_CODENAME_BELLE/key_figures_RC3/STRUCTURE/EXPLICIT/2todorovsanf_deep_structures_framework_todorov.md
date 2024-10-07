@@ -13,39 +13,43 @@ PROPERTY: FABULA
 KNOWLEDGE TYPE: EXPLICIT
 ---
 
-- [1. **Todorov's Deep Structures Framework**](#1-todorovs-deep-structures-framework)
-- [2. **Key Concepts**](#2-key-concepts)
-  - [2.1. **Deep Structures**](#21-deep-structures)
-  - [2.2. **Categorization of Narratives**](#22-categorization-of-narratives)
-  - [2.3. **Plot Functions**](#23-plot-functions)
-  - [2.4. **Character Functions**](#24-character-functions)
-- [3. **Deep Structures**](#3-deep-structures)
-  - [3.1. **Components of Deep Structures**](#31-components-of-deep-structures)
-    - [3.1.1. **Underlying Patterns**](#311-underlying-patterns)
-    - [3.1.2. **Element Relationships**](#312-element-relationships)
-    - [3.1.3. **Narrative Rules**](#313-narrative-rules)
-- [4. **Categorization of Narratives**](#4-categorization-of-narratives)
-  - [4.1. **Components of Narrative Categorization**](#41-components-of-narrative-categorization)
-    - [4.1.1. **Plot Dynamics**](#411-plot-dynamics)
-    - [4.1.2. **Character Functions**](#412-character-functions)
-    - [4.1.3. **Thematic Oppositions**](#413-thematic-oppositions)
-- [5. **Plot Functions**](#5-plot-functions)
-  - [5.1. **Components of Plot Functions**](#51-components-of-plot-functions)
-    - [5.1.1. **Causality**](#511-causality)
-    - [5.1.2. **Conflict**](#512-conflict)
-    - [5.1.3. **Resolution**](#513-resolution)
-- [6. **Character Functions**](#6-character-functions)
-  - [6.1. **Components of Character Functions**](#61-components-of-character-functions)
-    - [6.1.1. **Protagonist**](#611-protagonist)
-    - [6.1.2. **Antagonist**](#612-antagonist)
-    - [6.1.3. **Supporting Characters**](#613-supporting-characters)
-- [7. **Theoretical Significance**](#7-theoretical-significance)
+- [](#)
+  - [1. **Todorov's Deep Structures Framework**](#1-todorovs-deep-structures-framework)
+  - [2. **Key Concepts**](#2-key-concepts)
+    - [2.1. **Deep Structures**](#21-deep-structures)
+    - [2.2. **Categorization of Narratives**](#22-categorization-of-narratives)
+    - [2.3. **Plot Functions**](#23-plot-functions)
+    - [2.4. **Character Functions**](#24-character-functions)
+  - [3. **Deep Structures**](#3-deep-structures)
+    - [3.1. **Components of Deep Structures**](#31-components-of-deep-structures)
+      - [3.1.1. **Underlying Patterns**](#311-underlying-patterns)
+      - [3.1.2. **Element Relationships**](#312-element-relationships)
+      - [3.1.3. **Narrative Rules**](#313-narrative-rules)
+  - [4. **Categorization of Narratives**](#4-categorization-of-narratives)
+    - [4.1. **Components of Narrative Categorization**](#41-components-of-narrative-categorization)
+      - [4.1.1. **Plot Dynamics**](#411-plot-dynamics)
+      - [4.1.2. **Character Functions**](#412-character-functions)
+      - [4.1.3. **Thematic Oppositions**](#413-thematic-oppositions)
+  - [5. **Plot Functions**](#5-plot-functions)
+    - [5.1. **Components of Plot Functions**](#51-components-of-plot-functions)
+      - [5.1.1. **Causality**](#511-causality)
+      - [5.1.2. **Conflict**](#512-conflict)
+      - [5.1.3. **Resolution**](#513-resolution)
+  - [6. **Character Functions**](#6-character-functions)
+    - [6.1. **Components of Character Functions**](#61-components-of-character-functions)
+      - [6.1.1. **Protagonist**](#611-protagonist)
+      - [6.1.2. **Antagonist**](#612-antagonist)
+      - [6.1.3. **Supporting Characters**](#613-supporting-characters)
+  - [7. **Theoretical Significance**](#7-theoretical-significance)
 
 
 
 
 
+---
 
+![herman_photo](../../../assets/2HermanSLF_narrative_coherence_final.jpg "narrative coherence final")
+---
 
 ### 1. **Todorov's Deep Structures Framework**
 
