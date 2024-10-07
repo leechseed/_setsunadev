@@ -51,6 +51,11 @@ KNOWLEDGE TYPE: EXPLICIT
 
 
 ---
+
+![Propp Image](../../../assets/1propp31_total.jpg "propp")
+
+
+---
 ### 1. **Propp's 31 Narrative Functions Framework**
 
 - **Vladimir Propp's 31 Narrative Functions**:

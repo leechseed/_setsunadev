@@ -47,6 +47,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+![sternberg_photo](../../../assets/1SternbergEMF_model_start.jpg "sternberg start")
+
 ---
 ### 1. **Sternberg's Expositional Modes Framework**
 
@@ -62,6 +64,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - Direct exposition involves the immediate and explicit presentation of information, such as character descriptions, setting details, or background context, without delay. The information is provided upfront to ensure clarity and ease of understanding for the reader.
 
+![sternberg_photo](../../../assets/1SternbergEMF_direct_exposition.jpg "direct exposition")
+
 ##### 2.1.1. **Components of Direct Exposition**:
   - **Immediate Contextualization**:
     - **Definition**: Information provided at the onset of the narrative, giving the reader a clear understanding of the context.
@@ -74,6 +78,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - A clear and direct presentation of characters, providing essential information about their traits, background, and role in the narrative.
+
+![sternberg_photo](../../../assets/1SternbergEMF_explicit_character_introduction.jpg "explicit character introduction")
 
 - **Examples**:
   - In *The Hobbit* by J.R.R. Tolkien, Bilbo Baggins is introduced as a quiet, unadventurous hobbit, living a peaceful life in the Shire.
@@ -89,6 +95,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - A clear and detailed introduction of the environment where the narrative takes place, establishing the physical and emotional context for the story.
 
+![sternberg_photo](../../../assets/1SternbergEMF_explicit_setting_introduction.jpg "explicit setting introduction")
+
 - **Examples**:
   - In *The Hobbit*, Tolkien introduces the Shire as a peaceful, rural setting where Bilbo lives a contented life, providing a vivid image of the environment.
 
@@ -100,6 +108,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Background Information**:
   - **Definition**: Information about past events or circumstances that shape the current story.
+
   - **Examples**: In *1984* by George Orwell, direct exposition explains the political structure of Oceania and the role of Big Brother.
   - **Characteristics**:
       - **Contextual**: Connects past events to the present narrative.
@@ -109,6 +118,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Clarity in exposition refers to the clear communication of key narrative details, ensuring that the reader fully understands the story’s premise, characters, and setting.
+
+![sternberg_photo](../../../assets/1SternbergEMF_clarity.jpg "clarity")
 
 - **Examples**:
   - In *Harry Potter and the Philosopher’s Stone*, the opening chapters provide clear exposition about Harry’s upbringing and mysterious origins, allowing readers to grasp the story's foundation.
@@ -123,6 +134,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Efficiency in exposition refers to the quick and concise delivery of narrative information, ensuring the reader receives the necessary background knowledge without unnecessary elaboration.
+
+![sternberg_photo](../../../assets/1SternbergEMF_efficiency.jpg "efficiency")
 
 - **Examples**:
   - In *Harry Potter and the Philosopher’s Stone*, the background information on Harry’s life with the Dursleys is efficiently delivered, giving the reader essential context without excessive detail.
@@ -152,12 +165,17 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Historical Context**: A staple in classical literature, where authors often directly addressed the reader to introduce settings and characters.
   - **Potential Drawbacks**: Direct exposition, while clear, can feel didactic or overwhelming if not blended with more subtle narrative techniques.
 
+
+![sternberg_photo](../../../assets/1SternbergEMF_direct_exposition_final.jpg "direct exposition final")
+
 ---
 
 #### 2.2. **Delayed Exposition**
 
 - **Definition**: 
   - Delayed exposition refers to withholding key information and gradually revealing it throughout the narrative. This mode is used to create suspense, mystery, or build emotional engagement as the reader uncovers important details.
+
+![sternberg_photo](../../../assets/1SternbergEMF_delayed_exposition.jpg "delayed exposition")
 
 ##### 2.2.1. **Components of Delayed Exposition**:
 ###### 2.2.1.1. **Gradual Revelation**:
@@ -169,6 +187,10 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Building Suspense**:
   - **Definition**: Withholding information creates suspense and tension as readers anticipate the revelation of critical details.
+
+![sternberg_photo](../../../assets/1SternbergEMF_building_suspense.jpg "building suspense")
+
+
   - **Examples**: In *Gone Girl* by Gillian Flynn, the true story behind Amy’s disappearance is revealed gradually, keeping readers on edge.
   - **Characteristics**:
       - **Tension-Building**: Enhances reader anticipation and anxiety.
@@ -176,6 +198,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Enhancing Emotional Impact**:
   - **Definition**: Delaying exposition can heighten the emotional payoff when key details are finally revealed.
+
+![sternberg_photo](../../../assets/1SternbergEMF_enhancing_emotional_impact.jpg "enhancing emotional impact")
+
   - **Examples**: In *The Sixth Sense*, the delayed revelation of the protagonist’s true condition enhances the emotional weight of the twist.
   - **Characteristics**:
       - **Impactful**: The eventual revelation delivers a powerful emotional or thematic conclusion.
@@ -183,6 +208,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.4. **Reader Engagement**:
   - **Definition**: Readers are invited to piece together clues as information is revealed slowly, engaging them more actively with the narrative.
+
+![sternberg_photo](../../../assets/1SternbergEMF_reader_engagement.jpg "reader engagement")
   - **Examples**: In *Lost*, the gradual revelation of each character’s backstory keeps viewers engaged through speculation.
   - **Characteristics**:
       - **Interactive**: Invites readers to interpret clues and form their own conclusions.
@@ -198,6 +225,9 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Reader Involvement**: Encourages the reader to actively participate in understanding the story by piecing together fragments of information.
   - **Risks**: Can frustrate readers if information is withheld too long without satisfying narrative progression.
 
+![sternberg_photo](../../../assets/1SternbergEMF_delayed_exposition_final.jpg "delayed exposition final")
+
+
 ---
 
 #### 2.3. **Suspended Exposition**
@@ -205,9 +235,18 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**: 
   - Suspended exposition involves deliberately withholding key information until it is absolutely necessary for the plot. It is often used to create major twists or dramatic reveals that reshape the reader’s understanding of the story.
 
+
+![sternberg_photo](../../../assets/1SternbergEMF_suspended_exposition.jpg "suspended exposition")
+
+
+
 ##### 2.3.1. **Components of Suspended Exposition**:
+
 ###### 2.3.1.1. **Strategic Withholding of Information**:
   - **Definition**: Critical details are kept hidden until a pivotal moment in the narrative.
+
+![sternberg_photo](../../../assets/1SternbergEMF_strategic_withholding_of_information.jpg "strategic withholding of information")
+
   - **Examples**: In *Fight Club*, the true nature of the protagonist’s relationship with Tyler Durden is withheld until a climactic reveal.
   - **Characteristics**:
       - **Calculated**: Information is concealed with clear narrative intent.
@@ -215,6 +254,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.2. **Control of Narrative Pacing**:
   - **Definition**: Suspended exposition allows the author to control the pacing of the story by delaying major reveals until key moments.
+
+![sternberg_photo](../../../assets/1SternbergEMF_control_of_narrative_pacing.jpg "control of narrative pacing")
+
   - **Examples**: In *The Usual Suspects*, the identity of Keyser Söze is suspended until the final moments, controlling the narrative flow.
   - **Characteristics**:
       - **Measured**: Pacing is controlled to build toward significant moments.
@@ -222,6 +264,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.3. **Maximizing Narrative Impact**:
   - **Definition**: By withholding key information, the eventual reveal can be made more dramatic and impactful.
+
+![sternberg_photo](../../../assets/1SternbergEMF_maximizing_narrative_impact.jpg "maximizing narrative impact")
+
   - **Examples**: In *The Village*, the truth about the village’s isolation is withheld until the final act, reshaping the audience’s perception of the story.
   - **Characteristics**:
       - **Dramatic**: Creates a sense of shock or surprise when the information is disclosed.
@@ -231,6 +276,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Surprise endings involve the sudden revelation of new information or a dramatic plot shift that significantly alters the reader’s or audience’s understanding of the story’s trajectory.
+
+![sternberg_photo](../../../assets/1SternbergEMF_surprise_ending.jpg "surprise endings")
 
 - **Examples**:
   - In *Psycho*, the shocking truth about Norman Bates is revealed only at the end, upending the audience’s assumptions.
@@ -246,6 +293,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Twist endings involve a narrative technique where the story concludes with a reversal of expectations, often through the revelation of previously hidden details or a radical change in character or plot direction.
 
+![sternberg_photo](../../../assets/1SternbergEMF_twist_endings.jpg "twist endings")
+
 - **Examples**:
   - In *The Sixth Sense*, the twist that the protagonist is unaware of his own death redefines the entire narrative for the audience.
 
@@ -255,6 +304,7 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Narrative Reversal**: Often inverts the reader’s assumptions, changing the perceived trajectory of the story.
   - **Foreshadowing**: While the twist is surprising, subtle clues may be embedded throughout the story, making the ending both unexpected and retrospectively logical.
 
+![sternberg_photo](../../../assets/1SternbergEMF_suspended_exposition_final.jpg "suspended exposition final")
 ---
 
 #### 2.4. **Purpose and Function**
@@ -288,3 +338,5 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Characteristics**:
       - **Insightful**: Enhances understanding of narrative structure and strategy.
       - **Engaging**: Helps explain why certain narratives captivate readers and keep them invested.
+
+![sternberg_photo](../../../assets/1SternbergEMF_model_final.jpg "model final")
