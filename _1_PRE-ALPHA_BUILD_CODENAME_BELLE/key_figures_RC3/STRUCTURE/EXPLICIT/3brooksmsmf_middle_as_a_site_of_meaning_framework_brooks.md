@@ -34,6 +34,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 
 ---
+
+![tomashevsky_photo](../../../assets/2TomashevskyPSF_selective_information_disclosure_start.jpg "selective information disclosure")
+
 ---
 ### 1. **Brooks's Middle as a Site of Meaning Framework**
 

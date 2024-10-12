@@ -247,4 +247,4 @@ KNOWLEDGE TYPE: EXPLICIT
   - Tomashevsky’s ideas have broad applications across literary criticism, film studies, and even game design. Understanding how the *fabula* is transformed into a *sjuzhet* is crucial for analyzing complex narratives where chronology is manipulated or fragmented for artistic purposes.
 
 
-![tomashevsky_photo](../../../assets/2TomashevskyPSF_model_final.jpg "model final")
+C
