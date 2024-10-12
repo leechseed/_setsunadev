@@ -48,7 +48,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-![herman_photo](../../../assets/2HermanSLF_narrative_coherence_final.jpg "narrative coherence final")
+![todorov_photo](../../../assets/2TodorovSANF_deep_structures_model_start.jpg "deep structures framework")
 ---
 
 ### 1. **Todorov's Deep Structures Framework**
@@ -70,13 +70,23 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Todorov’s structural analysis examines the deep, often hidden, structures that underpin narratives. These structures include recurring patterns, relationships between elements, and the rules that govern the organization of narrative components.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_deep_structures_sub_start.jpg "deep structures sub start")
   
 #### 3.1. **Components of Deep Structures**
 
-##### 3.1.1. **Underlying Patterns**
 
+
+##### 3.1.1. **Underlying Patterns**
+Dee
 - **Definition**:
   - Recurring patterns within narratives that shape the way stories are told, such as the progression from equilibrium to disequilibrium and back to equilibrium.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_underlying_patterns.jpg "underlying patterns")
+
+
 
 - **Characteristics**:
   - **Repetitive**: Patterns often recur throughout a narrative.
@@ -91,6 +101,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The relationships between different narrative elements, such as characters, settings, and events, that work together to create a coherent and meaningful story.
 
+
+![todorov_photo](../../../assets/2TodorovSANF_element_relationships.jpg "element relationshiops")
+
 - **Characteristics**:
   - **Interdependent**: Elements rely on each other to move the plot forward.
   - **Dynamic**: Relationships between elements evolve over the course of the narrative.
@@ -104,6 +117,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The implicit rules that govern how narratives are structured, including the sequencing of events, character development, and thematic progression.
 
+
+![todorov_photo](../../../assets/2TodorovSANF_narrative_rules.jpg "narrative rules")
+
 - **Characteristics**:
   - **Formalized**: Specific rules shape the organization of narrative elements.
   - **Consistent**: Rules are generally followed within a genre.
@@ -112,12 +128,20 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Examples**:
   - The rule of three in folktales, where events or elements are grouped in sets of three.
 
+
+
+![todorov_photo](../../../assets/2TodorovSANF_deep_structures_sub_final.jpg "deep structures final")
+
 ---
 
-### 4. **Categorization of Narratives**
+### 4. **Narrative Categorization**
 
 - **Definition**:
   - Todorov categorizes narratives based on their structural elements, such as plot dynamics, character functions, and thematic oppositions. This categorization enables a more precise analysis of different narrative types and their distinctive characteristics.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_narrative_categorization_start.jpg "narrative categorization")
+
 
 ---
 
@@ -127,6 +151,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - The specific ways in which the plot unfolds, including the sequence of events, the introduction of conflict, and the resolution of the story.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_plot_dynamics.jpg "plot dynamics")
 
 - **Characteristics**:
   - **Sequential**: Plot events follow a defined order.
@@ -141,6 +168,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The roles that characters play within the narrative, such as the hero, villain, or mentor, and how these roles contribute to the overall structure of the story.
 
+
+![todorov_photo](../../../assets/2TodorovSANF_sub_character_functions.jpg "sub character functions")
+
 - **Characteristics**:
   - **Fixed Roles**: Characters fulfill specific narrative roles.
   - **Functional**: Each character drives a specific part of the plot.
@@ -154,6 +184,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The fundamental oppositions, such as good vs. evil or freedom vs. oppression, that structure the narrative’s central conflict and contribute to its thematic depth.
 
+
+![todorov_photo](../../../assets/2TodorovSANF_thematic_oppositions.jpg "thematic oppositions")
+
 - **Characteristics**:
   - **Dualistic**: Themes are often presented in binary oppositions.
   - **Conflict-oriented**: Thematic oppositions are central to the story's tension.
@@ -162,12 +195,21 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Examples**:
   - In *Star Wars*, the opposition between the light side and the dark side of the Force drives the story’s central conflict.
 
+
+
+
+![todorov_photo](../../../assets/2TodorovSANF_narrative_categorization_final.jpg "narrative categorization final")
+
 ---
 
 ### 5. **Plot Functions**
 
 - **Definition**:
   - Plot functions refer to the specific roles that events and actions within a narrative serve in advancing the story. In Todorov’s framework, these functions are essential for maintaining the coherence and progression of the narrative, ensuring that each plot point contributes to the overall structure of the story.
+
+
+
+![todorov_photo](../../../assets/2TodorovSANF_plot_functions_start.jpg "plot functions")
 
 ---
 
@@ -177,6 +219,10 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - The cause-and-effect relationships between events that drive the narrative forward. Each action or event within the plot is connected to subsequent actions, creating a logical progression of the story.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_causality.jpg "causality")
+
 
 - **Characteristics**:
   - **Sequential**: Events occur in a logical sequence.
@@ -191,6 +237,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The struggle between opposing forces, typically between the protagonist and antagonist, that drives the plot forward.
 
+![todorov_photo](../../../assets/2TodorovSANF_conflict.jpg "conflict")
+
 - **Characteristics**:
   - **Central**: Conflict is key to plot progression.
   - **Tension-filled**: It creates emotional stakes.
@@ -204,6 +252,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The point in the narrative where the central conflict is resolved, and the story reaches its conclusion.
 
+
+![todorov_photo](../../../assets/2TodorovSANF_resolution.jpg "resolution")
+
 - **Characteristics**:
   - **Definitive**: Brings the story to a clear conclusion.
   - **Satisfying**: Provides closure to narrative conflicts.
@@ -212,12 +263,19 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Examples**:
   - In *Pride and Prejudice*, the resolution occurs when Elizabeth Bennet and Mr. Darcy overcome their misunderstandings and societal obstacles, leading to their marriage.
 
+
+
+![todorov_photo](../../../assets/2TodorovSANF_plot_functions_final.jpg "plot functions final")
+
 ---
 
 ### 6. **Character Functions**
 
 - **Definition**:
   - Character functions refer to the roles that characters play within the narrative, particularly how they contribute to the development and resolution of the plot. In Todorov’s framework, characters are not just individuals but serve specific functions that advance the story.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_character_functions_start.jpg "character functions")
 
 ---
 
@@ -227,6 +285,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - The main character who drives the action of the narrative, often facing challenges and conflicts that need to be resolved.
+
+![todorov_photo](../../../assets/2TodorovSANF_protagonist.jpg "protagonist")
 
 - **Characteristics**:
   - **Central**: The protagonist is the focus of the narrative.
@@ -241,6 +301,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The character or force that opposes the protagonist, creating the central conflict in the narrative.
 
+![todorov_photo](../../../assets/2TodorovSANF_antagonist.jpg "antagonist")
+
 - **Characteristics**:
   - **Oppositional**: The antagonist stands in the way of the protagonist’s goals.
   - **Conflict-generating**: Their actions create the central tension.
@@ -254,6 +316,9 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Characters who assist the protagonist or antagonist, contributing to the development of the plot and the thematic depth of the narrative.
 
+
+![todorov_photo](../../../assets/2TodorovSANF_supporting_characters.jpg "supporting characters")
+
 - **Characteristics**:
   - **Auxiliary**: Support the primary characters’ actions.
   - **Enhancing**: Add depth to the narrative through interactions.
@@ -261,6 +326,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Examples**:
   - In *The Lord of the Rings*, characters like Samwise Gamgee play critical supporting roles, helping the protagonist achieve his goals.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_character_functions_final.jpg "character functions final")
 
 ---
 
@@ -270,3 +338,6 @@ KNOWLEDGE TYPE: EXPLICIT
   - Todorov's structural analysis of narrative provides a comprehensive framework for understanding the essential components of storytelling. By breaking down narratives into their fundamental elements and exploring their deep structures, Todorov offers a method for systematically analyzing how stories are built and how they function to produce meaning.
   - **Application in Literary Studies**: This framework is particularly valuable in literary studies for dissecting the architecture of narratives and for exploring how different structural elements contribute to the overall impact of a story. It allows scholars to approach narratives with a focus on the underlying rules and patterns that govern their construction.
   - **Continued Relevance**: Todorov’s deep structures framework remains influential in contemporary narrative analysis, offering tools to explore not just the content of stories but the formal structures that give them shape. His work continues to inform critical approaches to literature, enabling a deeper understanding of the universal principles underlying narrative forms.
+
+
+![todorov_photo](../../../assets/2TodorovSANF_deep_structures_model_final.jpg "deep structures model final")
