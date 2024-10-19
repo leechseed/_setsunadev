@@ -215,5 +215,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - Peter Brooks's concept of the middle as the central site of narrative meaning offers a profound shift in how narratives are analyzed. Rather than viewing the middle as a transitional phase, Brooks highlights its importance in deepening conflicts, character arcs, and themes. His theoretical framework not only adds complexity to traditional plot structures but also opens up new avenues for exploring the intricate mechanics of storytelling, ensuring that the middle is recognized as a crucial element of narrative architecture.
 
+
+![3brooks_photo](../../../assets/3BrooksMSMF_final.jpg "brooks final")
+
 ---
 

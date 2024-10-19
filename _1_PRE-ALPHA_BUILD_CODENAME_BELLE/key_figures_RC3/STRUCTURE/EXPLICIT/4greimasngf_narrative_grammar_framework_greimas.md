@@ -41,7 +41,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-![brooks_photo](../../../assets/3BrooksMSMF_model_start.jpg "model start")
+![greimas_photo](../../../assets/4GreimasNGF_model_start.jpg "model start")
 
 ---
 ### 1. **Greimas's Narrative Grammar Framework**
@@ -58,19 +58,19 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Transformations refer to the process by which a narrative moves from one state or situation to another. These changes often involve shifts in character roles, plot direction, or the resolution of conflicts.
 
-- **Examples**:
-  - In *A Christmas Carol* by Charles Dickens, Scrooge's transformation from greed to generosity is a key narrative shift.
+
+![greimas_photo](../../../assets/4GreimasNGF_transformations_start.jpg "transformations")
+
 
 ##### 2.1.1. **Components of Transformations**
 
 ###### 2.1.1.1. **Sequential**
 
 - **Definition**: Follows a logical and chronological progression, ensuring that events unfold in an orderly manner, guiding the reader through the narrative’s stages step by step.
-  
-- **Examples**:
-  - **Linear Narratives**: Stories that follow a straightforward, time-ordered structure, where one event naturally leads to the next.
-  - **Cause and Effect**: Each action or decision in the story leads to consequences that shape future events, ensuring a clear, sequential flow.
-  - **Step-by-Step Development**: Narratives that focus on a journey, quest, or process where each phase builds upon the previous one, such as in *The Odyssey*.
+
+![greimas_photo](../../../assets/4GreimasNGF_sequential.jpg "sequential")
+
+
 
 - **Characteristics**:
   - **Chronological**: The events occur in the order they happen in time, without jumping back or forward.
@@ -82,10 +82,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Involves significant changes, developments, or shifts in the story, creating a sense of movement and evolution as the narrative progresses.
   
-- **Examples**:
-  - **Plot Twists**: Sudden changes in the narrative that alter the course of the story, such as revelations or unexpected events.
-  - **Shifting Alliances**: Characters or groups may change their goals or loyalties, creating dynamic tension and development.
-  - **Evolving Conflicts**: Conflicts that become more complex or intense as the story moves forward, raising the stakes for the characters.
+![greimas_photo](../../../assets/4GreimasNGF_dynamic.jpg "dynamic")
+
 
 - **Characteristics**:
   - **Unpredictable**: The narrative can shift in unexpected ways, keeping the reader engaged and uncertain about the outcome.
@@ -96,11 +94,9 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.1.1.3. **Character Evolution**
 
 - **Definition**: A process in which a character undergoes profound changes in their identity, motivations, beliefs, or values as they face challenges and grow throughout the narrative.
-  
-- **Examples**:
-  - **Coming-of-Age Stories**: Characters grow from adolescence into adulthood, such as in *The Catcher in the Rye*.
-  - **Moral Transformation**: Characters may experience a change in their core beliefs or ethics, such as in *A Christmas Carol* where Scrooge transforms from miserly to generous.
-  - **Identity Shifts**: Characters who grapple with their sense of self or place in the world, like in *Fight Club* where the protagonist undergoes a radical shift in understanding his identity.
+
+![greimas_photo](../../../assets/4GreimasNGF_character_evolution.jpg "character evolution")
+
 
 - **Characteristics**:
   - **Internal Growth**: The character develops emotionally, mentally, or spiritually as the story progresses.
@@ -111,16 +107,20 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.1.1.4. **Plot Resolution**
 
 - **Definition**: The process of resolving or complicating the central conflicts of the narrative, bringing the story to a satisfying or thought-provoking conclusion.
+
+
+![greimas_photo](../../../assets/4GreimasNGF_plot_resolution.jpg "plot resolution")
+
   
-- **Examples**:
-  - **Final Confrontation**: A climactic battle or confrontation that resolves the primary conflict, such as in *Harry Potter and the Deathly Hallows*.
-  - **Twists in the Ending**: Resolutions that provide an unexpected conclusion, complicating the expected outcome, such as in *The Sixth Sense*.
-  - **Moral or Philosophical Resolution**: The narrative may resolve its thematic conflicts, providing insight or commentary on the central moral dilemma, such as in *To Kill a Mockingbird*.
 
 - **Characteristics**:
   - **Definitive**: Provides clear closure to the primary conflict or story arc.
   - **Ambiguous**: Some narratives leave the resolution open-ended, inviting interpretation from the audience.
-  - **Satisfying or Complicating**: The resolution can either tie up loose ends or introduce new questions, adding complexity to the narrative’s conclusion.
+  - **Satisfying**: The resolution ties up loose ends, providing closure to the narrative and answering the central questions or conflicts in a way that satisfies the reader.
+  - **Complicating**: The resolution introduces new questions or adds complexity, complicating the narrative’s conclusion and leaving the reader with deeper reflections or open-ended possibilities.
+  
+
+![greimas_photo](../../../assets/4GreimasNGF_transformations_final.jpg "transformations final")
 
 
 ---
@@ -130,19 +130,19 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Transitions refer to the linkages between narrative states that facilitate movement from one phase of the story to the next, often marked by key events or turning points.
 
-- **Examples**:
-  - In *The Lord of the Rings*, Frodo’s decision to leave the Shire marks a transition into the broader conflict of the narrative.
+![greimas_photo](../../../assets/4GreimasNGF_transitions_start.jpg "transitions")
+
 
 ##### 2.2.1. **Components of Transitions**
 
 ###### 2.2.1.1. **Temporal Shift**
 
 - **Definition**: A change in time that moves the narrative forward or backward, providing insight into different time periods or character stages.
+
+
+![greimas_photo](../../../assets/4GreimasNGF_temporal_shift.jpg "temporal shift")
+
   
-- **Examples**:
-  - **Flashbacks**: Provide background information, revealing a character’s past that influences the present narrative.
-  - **Time Jumps**: Move the story forward to key moments in the future, often omitting less significant events.
-  - **Time Loops**: The narrative may circle back to earlier points in time, creating layers of meaning and repetition.
 
 - **Characteristics**:
   - **Non-linear**: The plot may shift unpredictably between time periods.
@@ -156,11 +156,10 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.2.1.2. **Spatial Shift**
 
 - **Definition**: A change in the setting or location that often signifies a shift in mood, conflict, or narrative stage.
-  
-- **Examples**:
-  - **Journey Narratives**: Characters moving from one place to another, often reflecting internal transformations.
-  - **Scene Transitions**: Change in physical location, signaling a shift in action or tension.
-  - **World-Building**: Introducing new locations within the story world that add depth and variety to the narrative.
+
+![greimas_photo](../../../assets/4GreimasNGF_spatial_shift.jpg "spatial shift")
+
+
 
 - **Characteristics**:
   - **Expansive**: Allows the narrative to explore different locations and their impact on characters and plot.
@@ -174,11 +173,9 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.2.1.3. **Connecting**
 
 - **Definition**: The function of linking different parts of the narrative, ensuring a coherent and smooth progression from one scene, chapter, or event to the next.
-  
-- **Examples**:
-  - **Narrative Threads**: Subplots or thematic elements that weave through the story, tying together seemingly separate events.
-  - **Character Arcs**: Developments in a character’s journey that maintain continuity between different stages of the plot.
-  - **Transitions**: Smooth shifts between scenes, times, or settings, ensuring the reader follows the narrative flow seamlessly.
+
+![greimas_photo](../../../assets/4GreimasNGF_connecting.jpg "connecting")
+
 
 - **Characteristics**:
   - **Seamless**: Ensures the story moves naturally without abrupt shifts or breaks in continuity.
@@ -190,12 +187,11 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.2.1.4. **Pivotal**
 
 - **Definition**: Critical moments or events in the narrative that play a decisive role in determining the direction or outcome of the story.
-  
-- **Examples**:
-  - **Climactic Battles**: Central conflicts that determine the fate of characters or the resolution of the plot.
-  - **Turning Points**: Key decisions or revelations that alter the trajectory of the narrative.
-  - **Revelations**: Moments of truth or discovery that shift the reader's understanding of the story or its characters.
 
+![greimas_photo](../../../assets/4GreimasNGF_pivotal.jpg "pivotal")
+
+
+ 
 - **Characteristics**:
   - **Decisive**: These events or moments dramatically change the course of the narrative.
   - **High Stakes**: The outcomes of pivotal moments often have significant consequences for the characters or the plot.
@@ -203,12 +199,16 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Direction-Shifting**: Alters the narrative's course, steering it toward resolution or deeper complexity.
 ---
 
+![greimas_photo](../../../assets/4GreimasNGF_transitions_final.jpg "transitions final")
 
 
 #### 2.3. **Narrative States**
 
 - **Definition**:
   - Narrative states are the distinct conditions or moments within the story that are connected by transformations and transitions. Each state represents a specific phase in the story’s development.
+
+![greimas_photo](../../../assets/4GreimasNGF_narrative_states_start.jpg "narrative states")
+
 
 - **Examples**:
   - In *Harry Potter and the Philosopher’s Stone*, the shift from Harry’s life with the Dursleys to his time at Hogwarts represents a transition between narrative states.
@@ -218,11 +218,9 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.3.1.1. **Defined**
 
 - **Definition**: Represents a distinct and clear stage in the progression of the narrative, marking key phases where the story takes a specific direction.
+
   
-- **Examples**:
-  - **Acts in a Play**: Each act represents a well-defined phase in the plot, such as in *Hamlet*, where the narrative moves through exposition, rising action, climax, and resolution.
-  - **Chapters in a Novel**: Chapters often serve as distinct stages within the story, each focusing on a particular event or theme.
-  - **Story Arcs in TV Shows**: Long-running shows like *Breaking Bad* have clearly defined story arcs that span across multiple episodes, each contributing to the overarching narrative.
+![greimas_photo](../../../assets/4GreimasNGF_defined.jpg "defined")
 
 - **Characteristics**:
   - **Distinct Stages**: The narrative is broken into clear phases or points, each with its own role in advancing the story.
@@ -234,11 +232,8 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.3.1.2. **Stable**
 
 - **Definition**: Represents a state of internal consistency within the narrative, where characters, settings, and conflicts remain constant until disrupted by a transformative event or action.
-  
-- **Examples**:
-  - **Balanced Conflicts**: A story may maintain stable conflicts that are balanced between opposing forces until a key event disrupts the equilibrium, such as the tense peace before the Battle of Helm's Deep in *The Lord of the Rings*.
-  - **Routine States**: In slice-of-life narratives, stability is maintained in the character's everyday life, only to be disrupted by a pivotal event, such as in *My Neighbor Totoro*.
-  - **Character Stability**: A character’s emotional or moral state may remain stable until a major conflict forces them to change, such as the steady resolve of Atticus Finch in *To Kill a Mockingbird*.
+
+![greimas_photo](../../../assets/4GreimasNGF_stable.jpg "stable")
 
 - **Characteristics**:
   - **Consistent**: The characters and plot maintain a steady course, with few deviations until the narrative requires a shift.
@@ -249,11 +244,8 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.3.1.3. **Self-contained**
 
 - **Definition**: Each state or phase of the narrative operates as a mini-resolution or steady point within the broader story, offering temporary closure before the next phase begins.
-  
-- **Examples**:
-  - **Episodic Structure**: In episodic stories like *Sherlock Holmes*, each episode or chapter resolves its central mystery while contributing to the larger narrative arc.
-  - **Mini-Climaxes**: Each section of the narrative may have its own smaller climax, such as individual conflicts in *The Hunger Games* that are resolved before moving toward the larger plot resolution.
-  - **Standalone Stories**: Anthology shows like *Black Mirror* feature self-contained episodes that explore unique themes while building toward broader questions about technology and society.
+
+![greimas_photo](../../../assets/4GreimasNGF_self-contained.jpg "self-contained")
 
 - **Characteristics**:
   - **Complete in Itself**: Each phase or section feels like a complete unit within the larger narrative.
@@ -265,10 +257,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: A phase in the narrative where the characters’ personal goals and motivations are clearly defined and align with their development, often propelling their actions forward in a logical direction.
 
-- **Examples**:
-  - **Hero’s Journey**: In *The Hobbit*, Bilbo’s desire for adventure aligns with his call to join the quest, marking a key phase in his character development.
-  - **Character Partnerships**: In *The Lord of the Rings*, Frodo and Sam share a common goal of destroying the ring, which aligns their individual motivations and strengthens their relationship.
-  - **Personal Conflicts**: In *Breaking Bad*, Walter White’s personal motives for providing for his family initially align with his transformation into a drug lord, driving his character arc.
+![greimas_photo](../../../assets/4GreimasNGF_character_alignment.jpg "character alignment")
 
 - **Characteristics**:
   - **Consistent**: Character actions are consistent with their internal goals and desires.
@@ -280,15 +269,16 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: A phase in the narrative where the overall state of the plot and its developments align with the goals of the characters, advancing the story in a coherent and focused manner.
 
-- **Examples**:
-  - **Shared Objectives**: In *Ocean’s Eleven*, the entire plot revolves around the team executing a heist, with the characters’ objectives perfectly aligning with the plot’s progression.
-  - **Antagonistic Alignment**: In *The Dark Knight*, Batman and Joker’s goals, though opposing, align with the escalating conflict, pushing the plot forward.
-  - **Quest Narratives**: In *The Fellowship of the Ring*, the plot of destroying the One Ring aligns with the journey of the fellowship, advancing the narrative as they encounter obstacles.
+![greimas_photo](../../../assets/4GreimasNGF_plot_alignment.jpg "plot alignment")
+
 
 - **Characteristics**:
   - **Goal-Oriented**: The plot moves forward efficiently when characters’ actions align with the overall story, reducing unnecessary detours.
   - **Cohesive**: The plot remains focused, with characters’ actions and developments driving it in a unified direction.
   - **Focused Momentum**: The alignment between characters and plot creates momentum, propelling the narrative forward with clear intent.
+
+
+![greimas_photo](../../../assets/4GreimasNGF_transitions_final.jpg "transitions")
 ---
 
 
