@@ -13,34 +13,27 @@ TYPE: PRINCIPAL
 KNOWLEDGE TYPE: EXPLICIT
 ---
 
-- [1. **Brooks's Middle as a Site of Meaning Framework**](#1-brookss-middle-as-a-site-of-meaning-framework)
-- [2. **Key Concepts**](#2-key-concepts)
-  - [2.1. **Narrative Development**](#21-narrative-development)
-    - [2.1.1. **Components of Narrative Development**](#211-components-of-narrative-development)
-      - [2.1.1.1. **Conflict Intensification**:](#2111-conflict-intensification)
-      - [2.1.1.2. **Character Development**](#2112-character-development)
-      - [2.1.1.3. **Plot Complication**](#2113-plot-complication)
-      - [2.1.1.4. **Thematic Exploration**](#2114-thematic-exploration)
-  - [2.2. **The Role of Tension**](#22-the-role-of-tension)
-    - [2.2.1. **Components of The Role of Tension**](#221-components-of-the-role-of-tension)
-      - [2.2.1.1. **Heightened Stakes**](#2211-heightened-stakes)
-      - [2.2.1.2. **Urgency**](#2212-urgency)
-      - [2.2.1.3. **Suspense**](#2213-suspense)
-  - [2.3. **The Role of Complexity**](#23-the-role-of-complexity)
-    - [2.3.1. **Components of the Role of Complexity**](#231-components-of-the-role-of-complexity)
-      - [2.3.1.1. **Multiple Plot Lines**](#2311-multiple-plot-lines)
-      - [2.3.1.2. **Character Depth**](#2312-character-depth)
-      - [2.3.1.3. **Thematic Layers**](#2313-thematic-layers)
-- [3. **Brooks's Perspective on the Middle as a Narrative Focus**](#3-brookss-perspective-on-the-middle-as-a-narrative-focus)
-- [4. **Theoretical Significance in Narratology**](#4-theoretical-significance-in-narratology)
-- [5. **Conclusion**](#5-conclusion)
+- [](#)
+    - [2.2. **The Role of Tension**](#22-the-role-of-tension)
+      - [2.2.1. **Components of The Role of Tension**](#221-components-of-the-role-of-tension)
+        - [2.2.1.1. **Heightened Stakes**](#2211-heightened-stakes)
+        - [2.2.1.2. **Urgency**](#2212-urgency)
+        - [2.2.1.3. **Suspense**](#2213-suspense)
+    - [2.3. **The Role of Complexity**](#23-the-role-of-complexity)
+      - [2.3.1. **Components of the Role of Complexity**](#231-components-of-the-role-of-complexity)
+        - [2.3.1.1. **Multiple Plot Lines**](#2311-multiple-plot-lines)
+        - [2.3.1.2. **Character Depth**](#2312-character-depth)
+        - [2.3.1.3. **Thematic Layers**](#2313-thematic-layers)
+  - [3. **Brooks's Perspective on the Middle as a Narrative Focus**](#3-brookss-perspective-on-the-middle-as-a-narrative-focus)
+  - [4. **Theoretical Significance in Narratology**](#4-theoretical-significance-in-narratology)
+  - [5. **Conclusion**](#5-conclusion)
 
 
 
 
 ---
 
-![brooks_photo](../../../assets/3BrooksMSMF_model_start.jpg "model start")
+![3brooks_photo](../../../assets/3BrooksMSMF_start.jpg "brooks start")
 
 ---
 ---
@@ -58,11 +51,15 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The middle of a narrative is the site of major conflict, character growth, and plot complication. It represents the phase where foundational elements from the beginning are tested and expanded upon, leading to greater depth and tension.
 
+![3brooks_photo](../../../assets/3BrooksMSMF_narrative_development_start.jpg "narrative development")
+
 
 ##### 2.1.1. **Components of Narrative Development**
 
 ###### 2.1.1.1. **Conflict Intensification**:
   - **Definition**: In the middle, conflicts grow more serious and complex, with the stakes raised for characters and outcomes.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_conflict_intensification.jpg "conflict intensification")
   - **Components of Conflict Intensification**:
     - **Escalating**: Tensions increase, putting characters in more difficult situations.
     - **Urgent**: The pressure on the characters becomes more immediate and challenging.
@@ -70,7 +67,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Character Development**
 - **Definition**: Characters face trials and dilemmas in the middle of the narrative that reveal their deeper complexities and catalyze their growth.
-
+![3brooks_photo](../../../assets/3BrooksMSMF_character_development.jpg "character development")
 
 - **Characteristics**:
   - **Dynamic**: Characters evolve and change as they confront new challenges.
@@ -79,7 +76,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Plot Complication**
 - **Definition**: The middle introduces twists, new subplots, or unexpected developments that complicate the narrative.
-
+![3brooks_photo](../../../assets/3BrooksMSMF_plot_complication.jpg "plot complication")
 
 - **Characteristics**:
   - **Disruptive**: These complications challenge the trajectory set in the beginning.
@@ -88,7 +85,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.4. **Thematic Exploration**
 - **Definition**: The middle of the narrative is where central themes are thoroughly examined and expanded through character actions and plot events.
-
+![3brooks_photo](../../../assets/3BrooksMSMF_thematic_exploration.jpg "thematic exploration")
 
 - **Characteristics**:
   - **Deepening**: Themes are explored in greater detail and complexity.
@@ -96,6 +93,7 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Examples**: In *The Great Gatsby*, the middle focuses on Gatsby's pursuit of the American Dream, exploring themes of wealth, ambition, and disillusionment.
 
 
+![3brooks_photo](../../../assets/3BrooksMSMF_narrative_development_final.jpg "narrative development final")
 ---
 
 ---
@@ -103,12 +101,15 @@ KNOWLEDGE TYPE: EXPLICIT
 #### 2.2. **The Role of Tension**
 - **Definition**: Tension in the middle of a narrative is a critical factor in driving the story forward. It keeps the audience engaged by heightening stakes and creating a sense of urgency as characters face increasingly challenging obstacles.
 
-
+![3brooks_photo](../../../assets/3BrooksMSMF_the_role_of_tension_start.jpg "the role of tension start")
 
 ##### 2.2.1. **Components of The Role of Tension**
 
 ###### 2.2.1.1. **Heightened Stakes**
 - **Definition**: As the narrative develops, the consequences of characters' actions grow more significant, often leading to moments where the outcome could drastically alter the course of the story. These increased stakes add tension and bring the narrative closer to a climactic turning point.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_hightened_stakes.jpg "hightened stakes")
+
 - **Characteristics**:
   - **Life-or-Death**: Characters often face life-threatening situations as the stakes reach their peak.
   - **World-Altering**: Outcomes may have large-scale effects on the world or setting, impacting many people.
@@ -117,6 +118,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Urgency**
 - **Definition**: Urgency in the narrative accelerates the pace of events, pushing characters to make critical decisions under increasing pressure. The sense of urgency drives the plot forward, often leading to moments where time is of the essence.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_urgency.jpg "urgency")
+
 - **Characteristics**:
   - **Time Pressure**: The plot introduces a time-sensitive element, forcing characters to act quickly and make decisions with limited time.
   - **Critical Decision-Making**: Characters must make important, often irreversible decisions quickly, heightening the stakes and driving the narrative toward its resolution.
@@ -127,11 +131,17 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Suspense**
   - **Definition**: Suspense keeps the audience on edge by creating a sense of anticipation and uncertainty about how the narrative’s conflicts and challenges will be resolved. The feeling of suspense heightens the emotional engagement of the reader or viewer.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_suspense.jpg "suspense")
+
+
   - **Characteristics**:
     - **Anticipation**: The audience anticipates an outcome but is unsure when or how it will happen, creating a sense of uncertainty and tension.
     - **Delayed Resolution**: Suspense often involves stretching out the time before a conflict or danger is resolved, building anticipation.
     - **Uncertainty**: The outcome remains unclear, keeping the audience guessing and increasing tension.
     - **Emotional Engagement**: Suspense draws the audience deeper into the story by making them emotionally invested in the characters’ fates.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_the_role_of_tension_final.jpg "the role of tension final")
 
 ---
 
@@ -139,12 +149,15 @@ KNOWLEDGE TYPE: EXPLICIT
 #### 2.3. **The Role of Complexity**
   - **Definition**: Complexity in the middle of a narrative involves the intertwining of multiple plot lines, character arcs, and thematic elements. It adds depth to the story, making it richer and more layered, and allowing for intricate development of the narrative.
 
-
+![3brooks_photo](../../../assets/3BrooksMSMF_the_role_of_complexity_start.jpg "role of complexity")
 
 ##### 2.3.1. **Components of the Role of Complexity**
 
 ###### 2.3.1.1. **Multiple Plot Lines**
   - **Definition**: The narrative includes several subplots or parallel storylines that intersect and contribute to the overall plot, creating a more intricate and engaging story world. These subplots often enhance the complexity of the main plot by adding depth, tension, and variety.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_multiple_plot_lines.jpg "multiple plot lines")
+
   - **Characteristics**: 
     - **Intersecting Subplots**: Different subplots run parallel but intersect at key moments, enhancing the central narrative by weaving together various 
     - **Parallel Storylines**: Different plot threads develop in tandem, offering diverse perspectives and adding richness to the narrative without necessarily intersecting immediately.
@@ -152,18 +165,26 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.2. **Character Depth**
   - **Definition**: Characters become more complex and multi-dimensional as the narrative progresses, with their motivations, flaws, and growth explored in greater detail. The middle of the story often provides opportunities for deeper character development, allowing for a richer emotional and psychological portrayal.
+
+![3brooks_photo](../../../assets/3BrooksMSMF_character_depth.jpg "character depth")
+
   - **Characteristics**:
     - **Motivational Complexity**: Characters are driven by a range of motivations that go beyond simple goals, reflecting inner conflicts, desires, and moral dilemmas.
-    - **Flaws and Growth**: Characters exhibit personal flaws that hinder their progress, but these flaws often lead to growth and transformation throughout the narrative.
+    - **Flaws**: Characters exhibit personal flaws that hinder their progress, creating obstacles within the narrative that affect their decisions, relationships, and overall journey.
+    - **Growth**: These personal flaws often lead to growth and transformation throughout the narrative, as characters confront their weaknesses and learn from their experiences.
+  
 
 
 ###### 2.3.1.3. **Thematic Layers**
   - **Definition**: The middle of the narrative provides space for a deeper exploration of central themes, presenting different perspectives and conflicts that enrich the story's meaning. These thematic layers often reflect on the broader questions or ideas the narrative seeks to address.
 
+![3brooks_photo](../../../assets/3BrooksMSMF_thematic_layers.jpg "thematic exploration")
+
   - **Characteristics**:
     - **Multi-Faceted Themes**: Themes are explored from multiple angles, often through the actions of different characters or subplots, adding richness and complexity to the narrative.
     - **Central Conflicts**: Thematic exploration is often tied to the central conflicts of the story, with characters' actions and decisions reflecting the broader themes at play.
 
+![3brooks_photo](../../../assets/3BrooksMSMF_the_role_of_complexity_final.jpg "the role of complexity final")
 
 ---
 
