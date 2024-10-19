@@ -40,6 +40,10 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Eventfulness and Tellability**:
   - **Definition**: In *"Story Logic,"* David Herman introduces the concepts of *eventfulness* and *tellability,* central to understanding why certain narratives capture an audience's interest. *Eventfulness* refers to the significance and impact of events within a story—those moments that alter the narrative's course. *Tellability* concerns the qualities that make a story engaging, thought-provoking, or worth sharing with others.
 
+
+![herman_photo](../../../assets/4HermanETF_start.jpg "herman start")
+
+
 ---
 
 ### 2. **Key Concepts**
@@ -49,32 +53,44 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Eventfulness measures the pivotal significance of events within a narrative. An event is eventful if it alters the narrative’s trajectory, deeply impacts characters, or shapes the plot in memorable ways.
 
+![herman_photo](../../../assets/4HermanETF_eventfulness_start.jpg "eventfulness start")
+
+
 ##### 2.1.1. **Components of Eventfulness**
 
 ###### 2.1.1.1. **Plot Development**:
   - **Definition**: Highly eventful moments are those that propel the story forward, altering its direction or leading to a major turning point.
+
+![herman_photo](../../../assets/4HermanETF_plot_development.jpg "plot development")
+
   - **Examples**: In *The Great Gatsby*, Gatsby's confrontation with Tom Buchanan in the hotel scene is a highly eventful moment, as it changes the dynamic between the characters.
   - **Characteristics**:
     - **Critical**: Drives the narrative toward major developments or turning points.
     - **Influential**: Impacts characters' decisions and the story’s trajectory.
 
----
 
 ###### 2.1.1.2. **Character Transformation**:
   - **Definition**: Eventful moments often result in character development or transformation, leading to shifts in their motivations, relationships, or personal growth.
+
+![herman_photo](../../../assets/4HermanETF_character_transformation.jpg "character transformation")
+
   - **Examples**: In *Jane Eyre*, the revelation of Mr. Rochester’s marriage alters Jane's perception of him and propels her to make a life-altering decision.
   - **Characteristics**:
     - **Catalytic**: Serves as a trigger for major changes in character behavior or personality.
     - **Formative**: Shapes the character's growth, identity, or evolution throughout the narrative.
 
----
 
 ###### 2.1.1.3. **Cultural Specificity**:
   - **Definition**: The eventfulness of certain moments can vary across cultural contexts, as different societies assign varying levels of significance to different themes.
-  - **Examples**: In *The Joy Luck Club* by Amy Tan, the eventfulness of family obligations may resonate more strongly in cultures with deep familial ties, such as in Chinese-American communities.
+
+![herman_photo](../../../assets/4HermanETF_cultural_specificity.jpg "cultural specificity")
+
   - **Characteristics**:
     - **Contextual**: The significance of events is shaped by cultural values and historical background.
     - **Variable**: Eventfulness may be perceived differently depending on the audience's cultural context.
+
+
+![herman_photo](../../../assets/4HermanETF_eventfulness_final.jpg "herman start")
 
 ---
 
@@ -83,10 +99,15 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Tellability refers to the qualities that make a story engaging and worth narrating. It measures how a narrative captures the audience’s interest through its structure, themes, emotional resonance, or uniqueness.
 
+![herman_photo](../../../assets/4HermanETF_tellability_start.jpg "tellability start")
+
 ##### 2.2.1. **Components of Tellability**
 
 ###### 2.2.1.1. **Audience Engagement**:
   - **Definition**: Stories that captivate the audience through dynamic plots, compelling characters, or suspenseful moments are considered highly tellable.
+
+![herman_photo](../../../assets/4HermanETF_audience_engagement.jpg "audience engagement")
+
   - **Examples**: In *The Da Vinci Code* by Dan Brown, the use of cliffhangers and unfolding mysteries sustains reader engagement.
   - **Characteristics**:
     - **Engrossing**: Keeps the audience invested in the story’s outcome.
@@ -96,6 +117,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Social Relevance**:
   - **Definition**: A story’s relevance to contemporary issues or themes increases its tellability, particularly if it resonates with the audience’s experiences or societal concerns.
+
+![herman_photo](../../../assets/4HermanETF_social_relevance.jpg "social relevance")
+
   - **Examples**: In *To Kill a Mockingbird*, the narrative’s exploration of racial injustice during the Great Depression makes it tellable within the context of social justice movements.
   - **Characteristics**:
     - **Relatable**: Reflects issues or concerns that are meaningful to the audience.
@@ -105,6 +129,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Narrative Innovation**:
   - **Definition**: Stories that employ unique or unconventional narrative techniques, such as non-linear timelines or experimental structures, can enhance tellability by offering a fresh experience.
+
+![herman_photo](../../../assets/4HermanETF_narrative_innovation.jpg "narrative innovation")
+
   - **Examples**: In *Slaughterhouse-Five* by Kurt Vonnegut, the use of a non-linear narrative enhances its tellability by challenging conventional storytelling forms.
   - **Characteristics**:
     - **Creative**: Employs inventive structures or styles that differentiate it from traditional narratives.
@@ -116,6 +143,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Cultural influence refers to the ways societal norms, values, and traditions shape what is considered eventful and tellable within a particular cultural setting.
+
+![herman_photo](../../../assets/4HermanETF_cultural_influence.jpg "cultural influence")
 
 - **Examples**:
   - In Western culture, stories that emphasize individualism and personal achievement, such as *The Pursuit of Happyness*, resonate with audiences due to their alignment with societal values.
@@ -132,6 +161,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Contextual influence refers to the role historical circumstances or specific events play in shaping the relevance and tellability of a narrative.
 
+![herman_photo](../../../assets/4HermanETF_contextual_influence.jpg "contextual influence")
+
 - **Examples**:
   - During the civil rights movement, *The Autobiography of Malcolm X* gained tellability by addressing the struggles and triumphs of Black Americans fighting for justice.
 
@@ -146,6 +177,8 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Societal values influence the tellability of a story by reflecting the dominant cultural priorities, with narratives that align with these values more likely to engage an audience.
+
+![herman_photo](../../../assets/4HermanETF_societal_values.jpg "societal values")
 
 - **Examples**:
   - Stories like *The Pursuit of Happyness*, which emphasizes individualism and success, resonate in cultures that prioritize personal achievement.
@@ -162,6 +195,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Historical context amplifies the eventfulness and tellability of a narrative, particularly when the story directly engages with significant historical events or movements.
 
+![herman_photo](../../../assets/4HermanETF_historical_context.jpg "historical context")
+
 - **Examples**:
   - *The Autobiography of Malcolm X* became highly relevant in the context of the civil rights movement.
 
@@ -177,6 +212,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Cultural narratives reflect a society’s collective histories, values, or moral lessons, often passed down through storytelling traditions.
 
+![herman_photo](../../../assets/4HermanETF_cultural_narratives.jpg "cultural narratives")
+
 - **Examples**:
   - Indigenous oral traditions, like the Dreamtime stories of Aboriginal Australians, pass on cultural knowledge and explain natural phenomena.
 
@@ -187,9 +224,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+
+![herman_photo](../../../assets/4HermanETF_tellability_final.jpg "tellability final")
+
 ### 3. **Conclusion**
 
 - **David Herman’s Contribution**:
   - Herman’s *Eventfulness and Tellability Framework* provides essential insights into why certain stories captivate audiences. By distinguishing between the narrative significance of events (eventfulness) and the qualities that make a story engaging (tellability), Herman offers a structured way to understand the dynamics of storytelling.
   - **Cultural Resonance**: The framework highlights the influence of cultural and historical contexts on what is considered eventful or tellable, emphasizing the importance of understanding a narrative’s audience and environment.
   - **Application in Analysis**: This framework can be applied across various media to analyze how stories resonate with different audiences, contributing to a deeper understanding of narrative impact in both literary and cultural contexts.
+
+![herman_photo](../../../assets/4HermanETF_final.jpg "herman final")
