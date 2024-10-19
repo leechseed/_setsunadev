@@ -45,6 +45,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Textual Energy and Entropy**:
   - **Definition**: Peter Brooks, in his analysis of narrative dynamics, introduces the concepts of *textual energy* and *entropy,* drawing parallels to both psychoanalytic theory and thermodynamics. Textual energy refers to the driving force of a narrative, propelling it forward through tension, conflict, and character development. Entropy, on the other hand, describes the dissipation of that energy as the narrative reaches resolution, allowing the story to come to a natural end.
 
+![brooks_photo](../../../assets/5BrooksTEEM_start.jpg "brooks start")
+
 ---
 
 ### 2. **Key Concepts**
@@ -54,10 +56,15 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Textual energy is the momentum or force within a narrative that pushes it toward its resolution. It arises from the interaction of plot, character conflict, and thematic development, keeping the narrative in motion.
 
+![brooks_photo](../../../assets/5BrooksTEEM_textual_energy_start.jpg "textual energy")
+
 ##### 2.1.1. **Components of Textual Energy**
 
 ###### 2.1.1.1. **Narrative Progression**:
   - **Definition**: The continuous movement of the plot toward its climax and resolution. Textual energy sustains this progression, ensuring that the reader remains engaged.
+
+![brooks_photo](../../../assets/5BrooksTEEM_narrative_progression.jpg "narrative progression")
+
   - **Characteristics**:
     - **Forward-Thrust**: The story moves forward, avoiding stagnation.
     - **Building Tension**: Conflicts and stakes increase, propelling the plot.
@@ -65,6 +72,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Psychoanalytic Drive**:
   - **Definition**: Textual energy can be linked to the Freudian concept of the pleasure principle, which suggests that narratives strive toward the alleviation of tension and the fulfillment of desires.
+
+![brooks_photo](../../../assets/5BrooksTEEM_psychoanalytic_drive.jpg "psychoanalytic drive")
+
   - **Characteristics**:
     - **Pleasure-Seeking**: The narrative pursues resolution to satisfy desires.
     - **Tension-Building**: Conflicts and desires push the plot forward.
@@ -72,6 +82,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Peaks**:
   - **Definition**: Peaks represent moments of high tension or intense action within the narrative, often occurring during climactic events.
+
+![brooks_photo](../../../assets/5BrooksTEEM_peaks.jpg "peaks")
+
   - **Characteristics**:
     - **High-Intensity**: These moments are marked by heightened narrative energy, action, or emotion.
     - **Climactic**: Peaks typically occur at crucial turning points in the story where key events unfold.
@@ -81,12 +94,18 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.4. **Troughs**:
   - **Definition**: Troughs represent moments of lower tension, providing a period of calm or reflection between major plot developments.
+
+![brooks_photo](../../../assets/5BrooksTEEM_troughs.jpg "troughs")
+
   - **Characteristics**:
     - **Low-Intensity**: These moments allow the narrative to slow down, focusing on character development, exposition, or reflection.
     - **Reflective**: Often involves characters processing previous events or preparing for future action.
     - **Balanced**: Troughs balance the intensity of peaks, preventing the narrative from becoming overwhelming.
     - **Transitionary**: Serves as a bridge between climactic events, helping to reset the pace of the story.
   - **Examples**: In *The Two Towers*, the moments after the battle at Helm’s Deep, where characters reflect on the outcome, serve as a narrative trough.
+
+
+![brooks_photo](../../../assets/5BrooksTEEM_textual_energy_final.jpg "textual energy final")
 
 ---
 
@@ -95,10 +114,15 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Entropy refers to the gradual dissipation of narrative energy as conflicts are resolved and tensions are released. This concept describes how the momentum built up throughout the narrative gradually decreases as the story approaches its conclusion.
 
+![brooks_photo](../../../assets/5BrooksTEEM_entropy_start.jpg "entropy start")
+
 ##### 2.2.1. **Components of Entropy**
 
 ###### 2.2.1.1. **Narrative Resolution**:
   - **Definition**: The release of narrative tension as the story’s conflicts are resolved, leading to closure.
+
+![brooks_photo](../../../assets/5BrooksTEEM_narrative_resolution.jpg "narrative resolution")
+
   - **Characteristics**:
     - **Release of Tension**: The conflicts introduced earlier are addressed and settled.
     - **Conclusive**: The narrative reaches a satisfying end, with all plot points resolved.
@@ -106,6 +130,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Dissipation of Energy**:
   - **Definition**: As the narrative moves toward its end, the high-energy conflicts that propelled the story forward begin to lose momentum, and the narrative winds down.
+
+![brooks_photo](../../../assets/5BrooksTEEM_dissipation_of_energy.jpg "dissipation of energy")
+
   - **Characteristics**:
     - **Slowing Down**: The plot’s intensity decreases.
     - **Resolution-Oriented**: Focus shifts from conflict to resolution.
@@ -113,6 +140,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Balance of Forces**:
   - **Definition**: A narrative must balance textual energy with entropy to achieve a satisfying conclusion. Too much energy without enough entropy can result in an unresolved ending, while too much entropy without sufficient buildup can lead to anticlimax.
+
+![brooks_photo](../../../assets/5BrooksTEEM_balance_of_forces.jpg "balance of forces")
+
   - **Characteristics**:
     - **Equilibrium**: The story resolves the built-up tension in a balanced way.
     - **Satisfying Closure**: Both the plot and character arcs are completed in a manner that satisfies the narrative’s internal logic.
@@ -120,6 +150,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+![brooks_photo](../../../assets/5BrooksTEEM_final.jpg "brooks final")
+
+---
 ### 3. **Brooks’s Perspective on Narrative Dynamics**
 
 #### 3.1. **Textual Energy as a Narrative Force**
