@@ -297,6 +297,9 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+![greimas_photo](../../../assets/4GreimasNGF_final.jpg "final")
+
+
 ### 3. **Theoretical Significance**
 
 ### 4. **Impact on Narrative Theory**
