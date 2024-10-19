@@ -70,6 +70,8 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Intertextuality and Narrative Design**:
   - **Definition**: Peter Brooks explores how narratives are intricately connected to other texts through intertextuality. He argues that stories are not created in isolation but are shaped by their relationships with other works, enhancing the reader’s understanding and engagement through a rich tapestry of interconnected meanings.
 
+![todorov_photo](../../../assets/5TodorovNTF_start.jpg "todorov start")
+
 ---
 
 ### 2. **Key Concepts**
