@@ -62,6 +62,8 @@ KNOWLEDGE TYPE: EXPLICIT
       - [2.8.1.4. **Creative Freedom**](#2814-creative-freedom)
 - [3. **Implications of Brooks’s Intertextuality and Narrative Design Framework**](#3-implications-of-brookss-intertextuality-and-narrative-design-framework)
 
+---
+
 
 ---
 
@@ -70,9 +72,23 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Intertextuality and Narrative Design**:
   - **Definition**: Peter Brooks explores how narratives are intricately connected to other texts through intertextuality. He argues that stories are not created in isolation but are shaped by their relationships with other works, enhancing the reader’s understanding and engagement through a rich tapestry of interconnected meanings.
 
-![todorov_photo](../../../assets/5TodorovNTF_start.jpg "todorov start")
+```mermaid
+mindmap
+  root((Intertextual Design))
+    Intertextuality
+    Influence of Preceding Texts
+    Allusion
+    Quotation
+    Parody
+    Pastiche
+    Reinterpretation
+    Transformation
 
----
+```
+
+
+
+
 
 ### 2. **Key Concepts**
 
@@ -81,27 +97,87 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Intertextuality refers to the ways in which a narrative draws upon, references, or responds to other texts. This interaction creates a network of meanings that informs and enriches the reader's experience, making the narrative part of a broader literary dialogue.
 
+```mermaid
+mindmap
+  root(Intertextual Design)
+    [**Intertextuality**]
+ 
+
+```
+
 ##### 2.1.1. **Components of Intertextuality**:
+
+
+```mermaid
+flowchart TD
+  A[**Intertextuality**] --> B(Networked)
+  A --> C(Layered)
+  A --> D(Relational)
+
+```
+
 
 ###### 2.1.1.1. **Networked**
   - **Definition**: Refers to how texts are interconnected and influence each other within a literary tradition.
+
+```mermaid
+flowchart TD;
+  C[**Networked**] --> E[**Intertextual Influence**];
+  C --> F[**Textual Resonance**];
+```
+
+
+
   - **Characteristics**
     - **Intertextual Influence**: Texts are shaped by the influences of other narratives, drawing on existing conventions, themes, or motifs, and simultaneously contributing to the ongoing development of these elements within a literary tradition.
     - **Textual Resonance**: The interconnectedness of texts allows for resonance, where ideas, themes, or motifs from one text echo across others, creating a sense of continuity or expansion within a literary tradition.
 
 ###### 2.1.1.2. **Layered**
   - **Definition**: Describes how texts contain multiple levels of meaning, often derived from references to earlier works.
+
+
+```mermaid
+flowchart TD;
+  D[**Layered**] --> G[**Symbolic Depth**];
+  D --> H[**Intertextual Layers**];
+```
+
+
   - **Characteristics**
     - **Intertextual Layers**: Texts draw upon earlier works to create additional layers of meaning, where references or allusions to prior stories contribute to a richer, more complex reading experience.
     - **Symbolic Depth**: Layered texts often use symbolism drawn from other works, where symbols or motifs take on additional meanings because of their connection to earlier stories or cultural narratives.
 
 ###### 2.1.1.3. **Relational**
   - **Definition**: Focuses on how the meaning of a text is shaped by its connection and interaction with other works.
+
+
   - **Characteristics**
     - **Contextual Dependency**: The meaning of a text is dependent on its relationship with other texts, where its themes, structure, or motifs are informed by external narratives that help define or contrast its message.
     - **Textual Dialogue**: Relational texts engage in a dialogue with other works, where they respond to, critique, or expand upon earlier narratives.
 
 
+
+```mermaid
+flowchart TD;
+    A[**Relational**] --> B[**Textual Dialogue**];
+    A --> C[**Contextual Dependency**];
+```
+
+
+---
+```mermaid
+mindmap
+  root [**Intertextuality**]
+    **Networked**
+      Intertextual Influence
+      Textual Resonance
+    **Layered**
+      Intertextual Layers
+      Symbolic Depth
+    **Relational**
+      Contextual Dependency
+      Textual Dialogue
+```
 ---
 
 #### 2.2. **Influence of Preceding Texts**
@@ -109,13 +185,38 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - A narrative often borrows themes, motifs, or stylistic elements from earlier works, entering into a dialogue with those texts. This can be a direct influence (as in adaptation) or a subtle echo through allusion.
 
+```mermaid
+mindmap
+  root(Intertextual Design)
+    [**Influence of the Preceding Texts**]
+      
+``` 
+
+
+
 ##### 2.2.1. **Components of Influence of Preceding Texts**
+
+```mermaid
+flowchart TD;
+    A[**Influence of Preceding Texts**] --> B[**Dialogic**];
+    A --> C[**Cumulative**];
+```
+
+
 
 ###### 2.2.1.1. **Dialogic**
   - **Definition**: Refers to how texts engage in a conversation with previous works, either reflecting upon or critiquing them, creating a layered interaction across literary traditions.
   - **Characteristics**
     - **Reflective Engagement**: Texts engage with earlier works by reflecting their themes, structures, or ideas, contributing to an ongoing literary dialogue.
     - **Critical Interaction**: Through critique or reinterpretation, a text can challenge or subvert the messages of earlier works, offering new perspectives or deeper analysis.
+  
+```mermaid
+flowchart TD;
+    A[**Dialogic**] --> B[**Reflective Engagement**];
+    A --> C[**Critical Interaction**];
+```
+
+
 
 ###### 2.2.1.2. **Cumulative**
   - **Definition**: Successive works build on earlier narratives, adding complexity and depth to the ongoing literary tradition.
@@ -123,31 +224,93 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Narrative Expansion**: Each new work contributes to and expands upon the stories, ideas, or themes introduced in previous texts, enriching the broader narrative context.
     - **Layered Complexity**: As more works are added to the literary conversation, the complexity of ideas, motifs, and themes grows, creating a richer and more intricate intertextual web.
 
+```mermaid
+flowchart TD;
+    A[**Cumulative**] --> B[**Narrative Expansion**];
+    A --> C[**Layered Complexity**];
+```
+
+---
+
+```mermaid
+mindmap
+  root[**Influence of Preceding Texts**]
+    **Dialogic**
+      Reflective Engagement
+      Critical Interaction
+    **Cumulative**
+      Narrative Expansion
+      Layered Complexity
+```
+
 ---
 #### 2.3. **Allusion**
 
 - **Definition**:
   - Allusion subtly references another work, expecting the reader to recognize the connection.
 
+```mermaid
+mindmap
+  root(Intertextual Design)
+    [**Allusion**]
+      
+``` 
+
 ##### 2.3.1. **Components of Allusion**
+
+```mermaid
+flowchart TD;
+    A[**Allusion**] --> B[**Subtle**];
+    A --> C[**Intertextual**];
+    A --> D[**Suggestive**];
+    A --> E[**Cultural Resonance**];
+```
+
+
 
 ###### 2.3.1.1. **Subtle**
   - **Definition**: Refers to allusions that are indirect or understated, requiring careful or close reading to uncover their full significance and meaning.
   - **Characteristics**
     - **Hidden References**: These allusions are not immediately obvious and require the reader to actively engage with the text to recognize the underlying reference.
     - **Layered Interpretation**: The meaning may unfold slowly, with additional readings or knowledge revealing deeper significance.
+
+```mermaid
+flowchart TD;
+    A[**Subtle**] --> B[**Hidden References**];
+    A --> C[**Layered Interpretation**];
+```
+
+
+
   
 ###### 2.3.1.2. **Intertextual**
   - **Definition**: Relies on the reader’s familiarity with other works or concepts to fully understand the significance of the reference.
   - **Characteristics**
     - **Contextual Dependency**: The allusion’s meaning is enhanced or fully realized only if the reader has prior knowledge of the referenced work or idea.
     - **Cultural Knowledge**: Familiarity with the cultural, historical, or literary context enriches the reader’s experience and deepens their understanding of the text.
+
+```mermaid
+flowchart TD;
+    A[**Intertextual**] --> B[**Contextual Dependency**];
+    A --> C[**Cultural Knowledge**];
+```
+
+
+
   
 ###### 2.3.1.3. **Suggestive**
   - **Definition**: Implies deeper meaning through subtle hints, without explicitly stating the connection to other works or concepts.
   - **Characteristics**
     - **Implied Meaning**: The text hints at deeper ideas or references without making them explicit, allowing the reader to infer the connections.
     - **Ambiguity**: The allusion leaves room for interpretation, encouraging the reader to draw their own conclusions about its significance.
+
+```mermaid
+flowchart TD;
+    A[**Suggestive**] --> B[**Implied Meaning**];
+    A --> C[**Ambiguity**];
+```
+
+
   
 ###### 2.3.1.4. **Cultural Resonance**
   - **Definition**: Allusions that draw on shared cultural or literary knowledge to enhance the reader’s understanding and connection to the text.
@@ -156,10 +319,45 @@ KNOWLEDGE TYPE: EXPLICIT
     - **Collective Memory**: By invoking well-known cultural or literary references, the allusion enhances the emotional or intellectual engagement of the reader.
 
 
+```mermaid
+flowchart TD;
+    A[**Cultural Resonance**] --> B[**Familiar References**];
+    A --> C[**Collective Memory**];
+```
+---
+
+```mermaid
+mindmap
+  root((Allusion))
+    Subtle
+      Hidden References
+      Layered Interpretation
+    Intertextual
+      Contextual Dependency
+      Cultural Knowledge
+    Suggestive
+      Implied Meaning
+      Ambiguity
+    Cultural Resonance
+      Familiar References
+      Collective Memory
+```
+---
+
+
 #### 2.4. **Quotation**
 
 - **Definition**:
   - Quotation directly cites another text, often to draw a thematic parallel or contrast.
+
+
+```mermaid
+mindmap
+  root(Intertextual Design)
+    [**Quotation**]
+      
+``` 
+
 
 ##### 2.4.1. **Components of Quotation**:
 ###### 2.4.1.1. **Direct**
