@@ -48,6 +48,7 @@
         "name": "weekly",
         "template": "# Week ${week}\n\n"
       }
-    ]
+    ],
+    "a-file-icon-vscode.arrowTheme": "plusMinus"
   }
   
