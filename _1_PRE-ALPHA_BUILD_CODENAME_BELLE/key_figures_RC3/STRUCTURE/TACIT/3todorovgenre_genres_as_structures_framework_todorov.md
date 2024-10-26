@@ -77,35 +77,109 @@ KNOWLEDGE TYPE: TACIT
  **Genres as a System**
 - **Definition**: Tzvetan Todorov’s structuralist approach views genres as dynamic systems that evolve over time rather than fixed categories. This concept emphasizes that genres are not static; they adapt and respond to changing literary, cultural, and social environments. Genres should be analyzed based on how they change over time and how their forms influence readers' interpretations of texts.
 
+```mermaid
+mindmap
+  root((**Dynamic Genre Theory**))
+    **Theory**
+    **Mechanisms**
+    **Application**
+```
+
+
 ---
 
 ### 2. **Theory: Genre Evolution and Adaptation.**
 
+
+```mermaid
+mindmap
+  root((**Theory**))
+    **Dynamic Nature of Genres**
+    **Evolution of Genres**
+    **Adaptation of Genres**
+```
+
+
 #### 2.1. **Dynamic Nature of Genres**
 - **Definition**: Genres continuously evolve in response to shifts in culture, history, and reader expectations.
+
+```mermaid
+mindmap
+  root((**Dynamic Nature of Genres**))
+    **Flexible**
+    **Responsive**
+    **Adaptive**
+```
+
 
 ##### 2.1.1. **Components of Dynamic Nature of Genres**:
 ###### 2.1.1.1. **Flexible**
   - **Definition**: Genres shift to incorporate new storytelling methods, demonstrating their ability to evolve and accommodate different narrative techniques and forms.
+
+```mermaid
+flowchart TD;
+    A[**Flexible**] --> B[**Narrative Evolution**];
+    A --> C[**Incorporation of Innovation**];
+```
+
   - **Characteristics**:
     - **Narrative Evolution**: The genre adjusts to include new styles, formats, and techniques, ensuring that it remains fresh and relevant.
     - **Incorporation of Innovation**: Flexibility allows genres to absorb experimental storytelling methods, such as non-linear plots, mixed media, or interactive elements, while still retaining their core identity.
+
 ###### 2.1.1.2. **Responsive**
   - **Definition**: Genres reflect changes in societal values and trends, evolving to address contemporary issues, concerns, and cultural shifts.
+
+```mermaid
+flowchart TD;
+    D[**Responsive**] --> E[**Cultural Reflection**];
+    D --> F[**Trend Awareness**];
+```
+
   - **Characteristics**:
     - **Cultural Reflection**: Genres respond to shifts in societal norms, adapting their themes and messages to resonate with modern audiences and contemporary debates.
     - **Trend Awareness**: Genres incorporate emerging trends, such as new technologies, political movements, or social changes, making the stories more relevant to their time.
+
 ###### 2.1.1.3. **Adaptive**
   - **Definition**: Genres morph to remain pertinent and engaging, ensuring they continue to captivate audiences by transforming alongside cultural and artistic developments.
+
+```mermaid
+flowchart TD;
+    G[**Adaptive**] --> H[**Reinvention**];
+    G --> I[**Sustained Relevance**];
+```
+
   - **Characteristics**:
     - **Reinvention**: Through adaptation, genres find new ways to stay engaging, often reinventing themselves to meet the needs of current audiences and to reflect the zeitgeist.
     - **Sustained Relevance**: By adapting, genres maintain their cultural significance, blending tradition with modernity to keep their narratives fresh and appealing over time.
 
+---
+```mermaid
+mindmap
+  root((**Dynamic Nature of Genres**))
+    **Flexible**
+      Narrative Evolution
+      Incorporation of Innovation
+    **Responsive**
+      Cultural Reflection
+      Trend Awareness
+    **Adaptive**
+      Reinvention
+      Sustained Relevance
+```
+---
 
 
 
 #### 2.2. **Evolution of Genres**
 - **Definition**: The gradual transformation of genres over time as they adapt to new cultural, historical, and technological developments.
+
+```mermaid
+mindmap
+  root((**Evolution of Genres**))
+    **Gradual**
+    **Reflective**
+    **Expansive**
+```
 
 ##### 2.2.1. **Components of Evolution of Genres**:
 ###### 2.2.1.1. **Gradual**
@@ -129,6 +203,15 @@ KNOWLEDGE TYPE: TACIT
 
 #### 2.3. **Adaptation of Genres**
 - **Definition**: The way genres transform in response to external forces like technological advancements, audience preferences, or cross-genre influences.
+
+
+```mermaid
+mindmap
+  root((**Adaptation of Genres**))
+    **Transformative**
+    **Innovative**
+    **Subversive**
+```
 
 ##### 2.3.1. **Components of Adaptation of Genres**:
 ###### 2.3.1.1. **Transformative**
@@ -161,9 +244,26 @@ KNOWLEDGE TYPE: TACIT
 
 ### 3. **Mechanisms: Factors Shaping and Transforming Genres**
 
+```mermaid
+mindmap
+  root((**Mechanisms**))
+    **Inter-Genre Influence**
+    **Cultural Context**
+    **Historical Context**
+```
+
+
 #### 3.1. **Inter-Genre Influence**
 - **Definition**: Genres borrow elements from one another, leading to blending and the creation of hybrid genres.
 
+```mermaid
+mindmap
+  root((**Inter-Genre Influence**))
+    **Blended**
+    **Interactive**
+    **Hybrid**
+```
+---
 ##### 3.1.1. **Components of Inter-Genre Influence**:
 ###### 3.1.1.1. **Blended**
   - **Definition**: Elements from different genres are combined, creating a narrative that draws from multiple traditions, styles, or conventions to form a unique storytelling experience.
@@ -193,6 +293,17 @@ KNOWLEDGE TYPE: TACIT
 #### 3.2. **Cultural Context**
 - **Definition**: Genres reflect and respond to the societal norms, values, and beliefs of their cultural context.
 
+
+```mermaid
+mindmap
+  root((**Cultural Context**))
+    **Contextual**
+    **Relevant**
+    **Shaping**
+```
+---
+
+
 ##### 3.2.1. **Components of Cultural Context**:
 ###### 3.2.1.1. **Contextual**
   - **Definition**: Reflects the society in which it is produced, with its themes, characters, and conflicts shaped by the social, political, and cultural environment of the time.
@@ -219,6 +330,15 @@ KNOWLEDGE TYPE: TACIT
 
 #### 3.3. **Historical Context**
 - **Definition**: The influence of the specific time period in which a genre or narrative is produced, shaping its themes and structures.
+
+```mermaid
+mindmap
+  root((**Historical Context**))
+    **Timely**
+    **Situational**
+    **Influential**
+```
+---
 
 ##### 3.3.1. **Components of Historical Context**:
 ###### 3.3.1.1. **Timely**
@@ -253,8 +373,29 @@ KNOWLEDGE TYPE: TACIT
 
 ### 4. **Application: Practical Aspects of Genre Operation**
 
+```mermaid
+mindmap
+  root((**Application**))
+    **Genre-Specific Narrative Forms**
+    **Common Plot Structures**
+    **Character Archetypes**
+    **Thematic Elements**
+```
+
+
 #### 4.1. **Genre-Specific Narrative Forms**
 - **Definition**: Genres are defined by specific narrative forms that guide the structure, characters, and themes expected by readers or viewers.
+
+```mermaid
+mindmap
+  root((**Genre-Specific Narrative Forms**))
+    **Conventional Structure**
+    **Recognizable Themes**
+    **Reader Expectations**
+    **Viewer Expectations**
+```
+
+---
 
 ##### 4.1.1. **Components of Genre-Specific Narrative Forms**:
 ###### 4.1.1.1. **Conventional Structure**
