@@ -45,6 +45,14 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Narrative Devices**:
   - **Definition**: Boris Tomashevsky explored the various narrative devices that authors employ to enhance their storytelling. Devices such as irony, allegory, and symbolism are key tools that shape the reader’s interpretation and emotional response, adding layers of meaning and complexity to a narrative.
 
+```mermaid
+mindmap
+  root((**Narrative Devices Framework**))
+    **Irony**
+    **Allegory**
+    **Symbolism**
+```
+
 ---
 
 ### 2. **Key Concepts**
@@ -54,21 +62,54 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Irony is a narrative device that creates a contrast between expectations and reality, often revealing deeper truths by highlighting the gap between appearance and what actually occurs.
 
+
+```mermaid
+mindmap
+  root((**Irony**))
+    **Contrast**
+    **Subversion**
+    **Humor**
+    **Tragedy**
+```
+
 ##### 2.1.1. **Components of Irony**
 ###### 2.1.1.1. **Contrast**
   - **Definition**: Irony highlights the difference between what is expected to happen and what actually transpires, creating a striking contrast between appearance and reality.
+
+```mermaid
+flowchart TD;
+    A[**Contrast**] --> B[**Expectation vs. Reality**];
+    A --> C[**Dramatic Tension**];
+```
+
+
   - **Characteristics**:
     - **Expectation vs. Reality**: The narrative sets up a particular expectation, only for events to unfold in a way that starkly contrasts with what was anticipated.
     - **Dramatic Tension**: This contrast heightens the dramatic tension by playing with the audience's assumptions, leading to surprising and impactful moments in the story.
 
 ###### 2.1.1.2. **Subversion**
   - **Definition**: Irony often subverts the reader’s assumptions or a character’s intentions, undermining expectations to create unexpected outcomes or revelations.
+
+```mermaid
+flowchart TD;
+    D[**Subversion**] --> E[**Undermining Expectations**];
+    D --> F[**Character Irony**];
+```
+
   - **Characteristics**:
     - **Undermining Expectations**: By twisting the expected outcome, irony leads to moments where preconceived notions are turned on their head, surprising both characters and readers.
     - **Character Irony**: A character's intentions or beliefs may be directly contradicted by their actions or by the unfolding of events, exposing the gap between their understanding and reality.
 
 ###### 2.1.1.3. **Humor**
   - **Definition**: Irony can be used to create comedic effects by playing on misunderstandings or gaps in knowledge between the audience and characters, leading to amusing situations.
+
+```mermaid
+flowchart TD;
+    G[**Humor**] --> H[**Comedic Irony**];
+    G --> I[**Playful Misunderstandings**];
+    G --> J[**Lighthearted Tone**];
+```
+
   - **Characteristics**:
     - **Comedic Irony**: Often occurs when the audience is aware of something the characters are not, resulting in humorous situations or dialogue.
     - **Playful Misunderstandings**: The humor stems from the characters acting on incomplete or incorrect information, leading to unexpected and funny outcomes.
@@ -77,12 +118,39 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.4. **Tragedy**
   - **Definition**: Irony can produce tragic effects by highlighting the contrast between the audience’s knowledge and the characters’ ignorance, often resulting in unavoidable catastrophe.
+
+```mermaid
+flowchart TD;
+    K[**Tragedy**] --> L[**Tragic Irony**];
+    K --> M[**Inevitability of Fate**];
+    K --> N[**Emotional Impact**];
+```
+
   - **Characteristics**:
     - **Tragic Irony**: The audience is aware of an impending disaster that the characters are oblivious to, creating a sense of dread and inevitability.
     - **Inevitability of Fate**: The tragedy is intensified as characters unknowingly contribute to their downfall, unable to escape the fate that the audience sees coming.
     - **Emotional Impact**: The irony enhances the tragic effect, deepening the audience’s emotional response by contrasting hope or intent with the grim reality of the situation.
 
+---
 
+```mermaid
+mindmap
+  root((**Irony**))
+    **Contrast**
+      Expectation vs. Reality
+      Dramatic Tension
+    **Subversion**
+      Undermining Expectations
+      Character Irony
+    **Humor**
+      Comedic Irony
+      Playful Misunderstandings
+      Lighthearted Tone
+    **Tragedy**
+      Tragic Irony
+      Inevitability of Fate
+      Emotional Impact
+```
 
 ---
 
@@ -91,8 +159,24 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Allegory is a narrative device where characters, events, or settings symbolize broader moral, political, or philosophical meanings. It allows authors to embed deeper messages within seemingly simple or straightforward narratives.
 
+```mermaid
+mindmap
+  root((**Allegory**))
+    **Symbolic Representation**
+    **Moral Commentary**
+    **Political Commentary**
+    **Dual Meaning**
+```
+
 ##### 2.2.1. **Components of Allegory**
 ###### 2.2.1.1. **Symbolic Representation**
+
+```mermaid
+flowchart TD;
+    A[**Symbolic Representation**] --> B[**Abstract Concepts**];
+    A --> C[**Personification of Ideas**];
+```
+
   - **Definition**: Characters and events in allegories are used to represent broader concepts, ideas, or ideologies, often standing in for abstract principles or societal issues.
   - **Characteristics**:
     - **Abstract Concepts**: The characters and events symbolize larger themes such as justice, freedom, or oppression, turning the narrative into a deeper exploration of these ideas.
@@ -100,12 +184,26 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Moral Commentary**
   - **Definition**: Allegories often serve as tools to convey moral lessons, using symbolic characters and events to communicate ethical guidance or explore moral dilemmas.
+
+```mermaid
+flowchart TD;
+    D[**Moral Commentary**] --> E[**Didactic Purpose**];
+    D --> F[**Illustration of Virtues and Vices**];
+```
+
   - **Characteristics**:
     - **Didactic Purpose**: Allegories are designed to teach a moral lesson, helping readers reflect on right versus wrong, or the consequences of ethical decisions.
     - **Illustration of Virtues and Vices**: Characters may represent virtues like honesty or vices like greed, guiding the reader to a clear moral conclusion through the narrative.
 
 ###### 2.2.1.3. **Political Commentary**
   - **Definition**: Allegories are frequently used to critique societal structures, political systems, or cultural norms, representing larger political ideologies or conflicts through symbolic narrative elements.
+
+```mermaid
+flowchart TD;
+    G[**Political Commentary**] --> H[**Critique of Power**];
+    G --> I[**Social Injustice**];
+```
+
   - **Characteristics**:
     - **Critique of Power**: Allegories often expose and critique political systems or abuses of power, using symbolic characters or institutions to represent oppressive forces or flawed governance.
     - **Social Injustice**: The narrative may highlight social issues like inequality or corruption, offering a critical reflection on political hierarchies or societal imbalances through symbolism.
@@ -113,12 +211,36 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.4. **Dual Meaning**
   - **Definition**: Allegories operate on two levels, providing both a literal narrative and a symbolic meaning, where characters and events represent deeper, often hidden, ideas.
+
+```mermaid
+flowchart TD;
+    J[**Dual Meaning**] --> K[**Literal vs. Symbolic**];
+    J --> L[**Layered Interpretation**];
+    J --> M[**Deeper Insight**];
+```
   - **Characteristics**:
     - **Literal vs. Symbolic**: On the surface, the narrative functions like any other story, but at a deeper level, it conveys symbolic meanings that require interpretation.
     - **Layered Interpretation**: Readers engage with the allegory on multiple levels, deciphering the symbolic meanings beneath the literal events to uncover the underlying message.
     - **Deeper Insight**: The dual nature of allegory allows for a richer reading experience, offering both an engaging story and a platform for philosophical or ideological reflection.
 
-
+---
+```mermaid
+mindmap
+  root((**Allegory**))
+    **Symbolic Representation**
+      Abstract Concepts
+      Personification of Ideas
+    **Moral Commentary**
+      Didactic Purpose
+      Illustration of Virtues and Vices
+    **Political Commentary**
+      Critique of Power
+      Social Injustice
+    **Dual Meaning**
+      Literal vs. Symbolic
+      Layered Interpretation
+      Deeper Insight
+```
 ---
 
 #### 2.3. **Symbolism**
@@ -126,9 +248,26 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Symbolism involves the use of objects, characters, or actions that carry deeper meanings beyond their literal sense, representing abstract ideas or concepts within the narrative.
 
+```mermaid
+mindmap
+  root((**Symbolism**))
+    **Layered Meaning**
+    **Concrete**
+    **Abstract**
+    **Thematic Resonance**
+```
+
 ##### 2.3.1. **Components of Symbolism**
 ###### 2.3.1.1. **Layered Meaning**
   - **Definition**: Symbols can be interpreted in multiple ways, offering different layers of meaning depending on the context in which they appear, allowing for deeper engagement with the narrative.
+
+```mermaid
+flowchart TD;
+    A[**Layered Meaning**] --> B[**Multiple Interpretations**];
+    A --> C[**Contextual Flexibility**];
+    A --> D[**Subtextual Depth**];
+```
+
   - **Characteristics**:
     - **Multiple Interpretations**: A single symbol can represent different ideas to different readers or in different contexts, enriching the narrative with varying layers of meaning.
     - **Contextual Flexibility**: The meaning of a symbol may shift based on the surrounding events, themes, or character development, encouraging a dynamic interpretation.
@@ -137,12 +276,26 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.2. **Concrete**
   - **Definition**: In the narrative, a concrete object or event refers to a tangible, physical entity that represents a significant part of the plot or setting while symbolizing deeper meanings.
+
+```mermaid
+flowchart TD;
+    E[**Concrete**] --> F[**Physical Presence**];
+    E --> G[**Literal Role**];
+```
   - **Characteristics**:
     - **Physical Presence**: The symbol takes the form of something tangible, like an object, event, or character within the story, grounding abstract ideas in the physical world.
     - **Literal Role**: The concrete element has a direct, literal function within the plot but also carries metaphorical weight, representing more than its surface appearance.
 
 ###### 2.3.1.3. **Abstract**
   - **Definition**: The abstract concept represented by the concrete object or event in the narrative often refers to intangible ideas, such as freedom, despair, love, or justice.
+
+```mermaid
+flowchart TD;
+    H[**Abstract**] --> I[**Symbolic Representation**];
+    H --> J[**Universal Ideas**];
+    H --> K[**Conceptual Focus**];
+```
+
   - **Characteristics**:
     - **Symbolic Representation**: The concrete object or event stands for a larger, intangible concept that transcends its literal presence, offering deeper thematic meaning.
     - **Universal Ideas**: The abstract concept is often universal, addressing larger philosophical, emotional, or moral themes that resonate with the audience on a deeper level.
@@ -150,12 +303,89 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.4. **Thematic Resonance**
   - **Definition**: Symbols reflect and reinforce the broader themes of the narrative, creating a deeper sense of unity and coherence by echoing the central ideas of the story.
+
+```mermaid
+flowchart TD;
+    L[**Thematic Resonance**] --> M[**Reinforcement of Themes**];
+    L --> N[**Echoing Central Motifs**];
+    L --> O[**Unifying Element**];
+```
+
   - **Characteristics**:
     - **Reinforcement of Themes**: Symbols align with the story’s main themes, helping to emphasize key ideas and adding to the emotional or intellectual impact of the narrative.
     - **Echoing Central Motifs**: Symbols are often used to repeatedly highlight and enhance the central motifs of the story, providing thematic consistency across the narrative.
     - **Unifying Element**: The use of symbols ties together various narrative strands, creating a sense of thematic unity that resonates with the reader as the story unfolds.
 
-
+---
+```mermaid
+mindmap
+  root((**Symbolism**))
+    **Layered Meaning**
+      Multiple Interpretations
+      Contextual Flexibility
+      Subtextual Depth
+    **Concrete**
+      Physical Presence
+      Literal Role
+    **Abstract**
+      Symbolic Representation
+      Universal Ideas
+      Conceptual Focus
+    **Thematic Resonance**
+      Reinforcement of Themes
+      Echoing Central Motifs
+      Unifying Element
+```
+---
+```mermaid
+mindmap
+  root((**Narrative Devices Framework**))
+    **Irony**
+      Contrast
+        Expectation vs. Reality
+        Dramatic Tension
+      Subversion
+        Undermining Expectations
+        Character Irony
+      Humor
+        Comedic Irony
+        Playful Misunderstandings
+        Lighthearted Tone
+      Tragedy
+        Tragic Irony
+        Inevitability of Fate
+        Emotional Impact
+    **Allegory**
+      Symbolic Representation
+        Abstract Concepts
+        Personification of Ideas
+      Moral Commentary
+        Didactic Purpose
+        Illustration of Virtues and Vices
+      Political Commentary
+        Critique of Power
+        Social Injustice
+      Dual Meaning
+        Literal vs. Symbolic
+        Layered Interpretation
+        Deeper Insight
+    **Symbolism**
+      Layered Meaning
+        Multiple Interpretations
+        Contextual Flexibility
+        Subtextual Depth
+      Concrete
+        Physical Presence
+        Literal Role
+      Abstract
+        Symbolic Representation
+        Universal Ideas
+        Conceptual Focus
+      Thematic Resonance
+        Reinforcement of Themes
+        Echoing Central Motifs
+        Unifying Element
+```
 ---
 
 ### 3. **Implications of Tomashevsky’s Framework**
