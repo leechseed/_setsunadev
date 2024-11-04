@@ -17,7 +17,7 @@ KNOWLEDGE TYPE: TACIT
 - [1. Title: **Tomashevsky's Reader Interaction Model**](#1-title-tomashevskys-reader-interaction-model)
 - [2. **Key Concepts**](#2-key-concepts)
   - [2.1. **Guided Interpretation**](#21-guided-interpretation)
-    - [2.1.1. **Components of Guided Interpretation**:](#211-components-of-guided-interpretation)
+    - [2.1.1. **Components of Guided Interpretation**](#211-components-of-guided-interpretation)
       - [2.1.1.1. **Narrative Devices**:](#2111-narrative-devices)
       - [2.1.1.2. **Reader Expectations**:](#2112-reader-expectations)
       - [2.1.1.3. **Control of Information**:](#2113-control-of-information)
@@ -30,6 +30,15 @@ KNOWLEDGE TYPE: TACIT
 - **The Role of the Reader**:  
   - **Definition**: Boris Tomashevsky explores how the *syuzhet* (plot) is deliberately structured to influence the reader’s engagement, shaping their emotional responses and guiding their interpretation of events. By carefully arranging themes, motifs, and narrative elements, the *syuzhet* directs the reader’s attention and creates suspense, surprise, or deeper emotional resonance.
 
+
+```mermaid
+mindmap
+  root((**Reader Interaction Model**))
+    **Guided Interpretation**
+```
+
+
+
 ---
 
 ### 2. **Key Concepts**
@@ -39,28 +48,78 @@ KNOWLEDGE TYPE: TACIT
 - **Definition**:  
   Guided interpretation refers to the intentional design of the *syuzhet* that leads the reader to certain perceptions, interpretations, and emotional responses. Through careful control of narrative pacing and information delivery, the author can guide how the reader understands characters, themes, and events.
 
+
+```mermaid
+mindmap
+  root((**Reader Interaction Model**))
+    **Guided Interpretation**
+```
+
+
+
+
 ##### 2.1.1. **Components of Guided Interpretation**
 
 ###### 2.1.1.1. **Narrative Devices**:
-  - **Definition**: Techniques such as foreshadowing, red herrings, and dramatic irony are employed to steer the reader’s interpretation and expectations.  
-  - **Examples**: In *Romeo and Juliet*, Shakespeare uses dramatic irony to guide the audience's understanding—knowing that the lovers will meet a tragic end while the characters remain unaware.  
+  - **Definition**: Techniques such as foreshadowing, red herrings, and dramatic irony are employed to steer the reader’s interpretation and expectations. 
+
+```mermaid
+flowchart TD
+    A[**Narrative Devices**] --> B[Strategic]
+    A --> C[Subtle]
+```
+
+
   - **Characteristics**:  
     - **Strategic**: Devices are purposefully used to manipulate reader expectations.  
     - **Subtle**: These tools often work in the background, influencing interpretation without being overt.
 
 ###### 2.1.1.2. **Reader Expectations**:
-  - **Definition**: The *syuzhet* plays with what the reader anticipates by either fulfilling or subverting their expectations, enhancing engagement and emotional payoff.  
-  - **Examples**: In *Gone Girl* by Gillian Flynn, the reader’s expectations are consistently manipulated, creating unexpected twists that reshape their understanding of the characters and plot.  
+  - **Definition**: The *syuzhet* plays with what the reader anticipates by either fulfilling or subverting their expectations, enhancing engagement and emotional payoff. 
+
+```mermaid
+flowchart TD
+    D[**Reader Expectations**] --> E[Manipulative]
+    D --> F[Engaging]
+```
+
+
   - **Characteristics**:  
     - **Manipulative**: Fulfills or subverts reader predictions to create surprise.  
     - **Engaging**: Keeps the reader emotionally and intellectually invested in the unfolding narrative.
 
 ###### 2.1.1.3. **Control of Information**:
-  - **Definition**: The pacing and release of critical information are carefully timed to maintain suspense and guide reader interpretation, ensuring they draw specific conclusions at particular moments in the narrative.  
-  - **Examples**: In *The Sixth Sense*, the delayed revelation of the protagonist’s true condition alters the reader’s understanding of the entire story.  
+  - **Definition**: The pacing and release of critical information are carefully timed to maintain suspense and guide reader interpretation, ensuring they draw specific 
+
+```mermaid
+flowchart TD
+    G[**Control of Information**] --> H[Selective]
+    G --> I[Orchestrated]
+```
+
+    
   - **Characteristics**:  
     - **Selective**: Information is revealed gradually to maintain narrative tension.  
     - **Orchestrated**: The timing of revelations is key to influencing reader perception.
+
+---
+
+```mermaid
+mindmap
+  root((**Guided Interpretation**))
+    **Narrative Devices**
+      Strategic
+      Subtle
+    **Reader Expectations**
+      Manipulative
+      Engaging
+    **Control of Information**
+      Selective
+      Orchestrated
+
+```
+
+---
 
 - **Purpose and Function**:
   - **Engagement Through Involvement**: The *syuzhet* requires active participation from the reader, who must make inferences, anticipate plot developments, and reconsider previous assumptions. This dynamic interaction between the reader and the narrative heightens engagement.  
