@@ -11,46 +11,69 @@ Summary: Greimas's Modalities Framework analyzes character motivations by catego
 ELEMENT: CHARACTER
 KNOWLEDGE TYPE: EXPLICIT
 ---
+
+- [1. Title: Greimas's Modalities Framework](#1-title-greimass-modalities-framework)
+- [2. Key Concepts](#2-key-concepts)
+  - [2.1. Expression of Modality](#21-expression-of-modality)
+    - [2.1.1. **Components of Expression of Modality**](#211-components-of-expression-of-modality)
+      - [2.1.1.1. **Necessity**](#2111-necessity)
+      - [2.1.1.2. **Desire**](#2112-desire)
+      - [2.1.1.3. **Possibility**](#2113-possibility)
+      - [2.1.1.4. **Obligation**](#2114-obligation)
+    - [2.1.2. Theoretical Significance](#212-theoretical-significance)
+
+
 ---
 
-##### Title: Greimas's Modalities Framework
+### 1. Title: Greimas's Modalities Framework
 
 **Modalities**:
    **Definition**: Algirdas Julien Greimas introduces the concept of *modalities* as key components in narrative structure. Modalities refer to expressions of necessity, possibility, desire, or obligation that guide characters' actions and decisions. These forces shape both the internal and external motivations of characters, influencing the direction of the narrative and its thematic elements. Greimas’s Modalities Framework helps in analyzing how these forces interact within the story, revealing deeper layers of character development and narrative progression.
 
 ---
 
-##### Key Concepts
+### 2. Key Concepts
 
-##### Expression of Modality
+#### 2.1. Expression of Modality
 
 **Definition**:
    Modalities represent the forces that dictate what characters *must* do (necessity), *want* to do (desire), *can* do (possibility), or *should* do (obligation). These modalities shape the narrative by influencing characters' intentions, decisions, and actions, driving the plot forward and enriching its themes.
 
-**Types**:
-   - **Necessity**: What a character *must* do, often driven by external pressures or unavoidable duties.
-   - **Desire**: What a character *wants* to do, reflecting their personal ambitions or emotional needs.
-   - **Possibility**: What a character *can* do, highlighting the range of actions available based on abilities or circumstances.
-   - **Obligation**: What a character *should* do, influenced by moral, ethical, or social expectations.
+##### 2.1.1. **Components of Expression of Modality**   
 
-**Characteristics**:
-   - **Necessity**: Compels the character to act, often regardless of personal desires, due to external circumstances.
-   - **Desire**: Represents internal motivation, driving the character toward personal goals or ambitions.
-   - **Possibility**: Highlights limitations or opportunities available to the character based on their circumstances or abilities.
-   - **Obligation**: Creates internal conflict as characters balance personal desires against moral or social expectations.
+###### 2.1.1.1. **Necessity**
+  - **Definition**: What a character *must* do, often driven by external pressures or unavoidable duties.
+  - **Characteristics**
+    - **External Pressure**: Compelled by factors outside their control, such as societal demands, urgent situations, or responsibilities that leave no alternative.
+    - **High Stakes**: Often associated with serious consequences if not fulfilled, creating tension and urgency in the narrative.
+    - **Driving Force**: Propels the character’s actions, making them move forward despite personal reluctance or sacrifice.
 
-**Contextualization**:
-   Modalities are essential for understanding the driving forces behind characters' actions. By analyzing how characters navigate between necessity, desire, possibility, and obligation, we can gain deeper insights into their internal struggles and the narrative’s thematic development. The interaction of these modalities reveals complex character dynamics, shaping the narrative’s progression and offering insight into broader themes such as duty, freedom, and personal agency.
+###### 2.1.1.2. **Desire**
+  - **Definition**: What a character *wants* to do, reflecting their personal ambitions or emotional needs.
+  - **Characteristics**
+    - **Personal Motivation**: Represents the character’s inner goals and dreams, adding depth and relatability to their journey.
+    - **Emotional Resonance**: Evokes empathy from readers as they connect with the character’s longings and aspirations.
+    - **Potential Conflict**: Can clash with necessity or obligation, creating internal struggles that enrich character development and plot.
 
-**Examples**:
-   - **Necessity in *The Lord of the Rings***: Frodo must destroy the One Ring to save Middle-earth, a task driven by necessity despite its heavy burden.
-   - **Desire in *The Great Gatsby***: Jay Gatsby’s desire to rekindle his romance with Daisy drives his actions and fuels the narrative’s central conflict.
-   - **Possibility in *The Hunger Games***: Katniss Everdeen’s decisions are guided by what she can realistically achieve within the confines of the Games.
-   - **Obligation in *To Kill a Mockingbird***: Atticus Finch’s moral obligation to defend Tom Robinson reflects his internal conflict between duty and societal pressure.
+###### 2.1.1.3. **Possibility**
+  - **Definition**: What a character *can* do, highlighting the range of actions available based on abilities or circumstances.
+  - **Characteristics**
+    - **Circumstantial Boundaries**: Defined by the character’s current situation, resources, or environment, showcasing the practical limits of their choices.
+    - **Character Agency**: Demonstrates their capacity to act and make decisions, revealing strengths and adaptability.
+    - **Influence on Plot**: Shapes the direction of the story based on what actions are feasible, impacting the character’s decisions and outcomes.
+
+###### 2.1.1.4. **Obligation**
+  - **Definition**: What a character *should* do, influenced by moral, ethical, or social expectations.
+  - **Characteristics**
+    - **Moral Compass**: Reflects the character’s principles or societal norms, guiding their choices and highlighting their integrity or dilemmas.
+    - **Potential for Sacrifice**: Often requires putting aside personal desires for the greater good or upholding a higher standard, creating tension and conflict.
+    - **Character Conflict**: Can create internal or external struggles when obligation conflicts with desire or necessity, adding complexity to the character’s decisions.
+
+
 
 ---
 
-##### Theoretical Significance
+##### 2.1.2. Theoretical Significance
 
 **Impact on Narrative Theory**:
    Greimas’s Modalities Framework has significantly shaped narrative theory, offering a detailed approach to understanding character motivations and narrative progression. By focusing on modalities, Greimas provides a nuanced method for analyzing the forces that drive characters and plot, highlighting the intricate balance between internal desires and external constraints.

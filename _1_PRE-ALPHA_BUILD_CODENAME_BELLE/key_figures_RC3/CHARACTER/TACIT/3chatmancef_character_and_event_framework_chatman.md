@@ -14,111 +14,144 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Title: Chatman's Character and Event Framework
+### Title: Chatman's Character and Event Framework
 
 **Character and Event**:
    **Definition**: In *"Story and Discourse"* (1978), Seymour Chatman presents a framework for analyzing narratives by categorizing characters and events. He introduces the concepts of *kernel* and *satellite* characters, as well as *kernel* and *satellite* events, to differentiate between those that are central to the plot and those that provide additional context. This framework helps to understand how different components of a narrative contribute to the overall development and progression of the story.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Kernel Characters
+#### Kernel Characters
 
 **Definition**:
    Kernel characters are essential to the plot’s progression. They are central figures involved in major events that shape the narrative’s direction and drive the story forward.
 
-**Types**:
-   - **Protagonists**: Characters who lead the narrative, making pivotal decisions.
-   - **Antagonists**: Characters who oppose the protagonist and create conflict.
-   - **Key Decision Makers**: Those whose actions result in significant turning points in the story.
+##### **Components of Kernel Characters**
 
-**Characteristics**:
-   - **Central to the Plot**: Kernel characters are involved in major events that define the structure and movement of the narrative.
-   - **Involved in Major Events**: They participate in key conflicts, resolutions, and decisions that move the story forward.
-   - **Essential for Story Progression**: Their actions and decisions are critical to advancing the narrative.
+###### **Protagonists**
+  - **Definition**: Characters who lead the narrative, making pivotal decisions.
+  - **Characteristics**
+    - **Central Role**: Drive the main storyline and are the primary focus of the narrative, guiding the plot with their actions and choices.
+    - **Character Growth**: Typically undergo development, facing internal and external challenges that contribute to their evolution throughout the story.
+    - **Relatable Motivations**: Possess goals and values that resonate with readers, fostering connection and emotional investment in their journey.
 
-**Contextualization**:
-   Kernel characters are integral to understanding the core dynamics of a narrative. They are usually the ones experiencing significant development, and their decisions shape the trajectory of the story. Without them, the narrative would lack direction and purpose.
+###### **Antagonists**
+  - **Definition**: Characters who oppose the protagonist and create conflict.
+  - **Characteristics**
+    - **Source of Conflict**: Challenge the protagonist by introducing obstacles and opposition, fueling the central tension in the narrative.
+    - **Complex Motives**: Can have motivations and backstories that add depth, making them more than one-dimensional villains.
+    - **Driving Force**: Propel the story forward by pushing the protagonist to grow, adapt, or confront their own flaws.
 
-**Examples**:
-   - **Jay Gatsby in *The Great Gatsby***: His actions, pursuit of Daisy, and eventual downfall are central to the plot, making him a kernel character.
-   - **Hamlet in *Hamlet***: His internal struggles and decisions drive the narrative and are essential to the plot’s progression.
+###### **Key Decision Makers**
+  - **Definition**: Those whose actions result in significant turning points in the story.
+  - **Characteristics**
+    - **Catalysts for Change**: Make choices that dramatically alter the course of the plot, creating pivotal moments in the story.
+    - **Influence on Outcomes**: Their decisions often have far-reaching consequences, impacting not just the protagonist but the entire narrative landscape.
+    - **Complex Choices**: Face dilemmas that highlight themes or moral questions, adding depth and intrigue to the narrative as they navigate tough decisions.
+
 
 ---
 
-##### Satellite Characters
+#### Satellite Characters
 
 **Definition**:
    Satellite characters serve supplementary roles. While they add depth and complexity to the story, their actions are not critical to the plot’s main progression.
 
-**Types**:
-   - **Supporting Figures**: Characters who provide context or enhance the main characters’ journeys.
-   - **Secondary Characters**: Those who add depth to the narrative but are not directly involved in the core conflicts or resolutions.
 
-**Characteristics**:
-   - **Supportive Role**: Satellite characters typically support kernel characters or contribute to the narrative’s themes.
-   - **Not Essential to the Plot**: Their actions do not significantly affect the main storyline.
-   - **Enrichment of the Narrative**: These characters add layers of complexity, background, and texture to the story.
+##### **Components of Satellite Characters**   
 
-**Contextualization**:
-   Satellite characters are important for providing context and enriching the world of the narrative. While they do not drive the plot, they help to flesh out the story’s setting, offer subplots, or enhance thematic exploration. 
+###### **Supporting Figures**
+  - **Definition**: Characters who provide context or enhance the main characters’ journeys.
+  - **Characteristics**
+    - **Contextual Enhancers**: Offer background information or additional perspectives that help develop the protagonist and the story world.
+    - **Character Development Aid**: Support the main characters’ growth by being confidants, helpers, or contrasting figures that highlight key traits.
+    - **Story Enrichment**: Add layers to the narrative through their interactions and subplots, making the world more immersive and realistic.
 
-**Examples**:
-   - **Jordan Baker in *The Great Gatsby***: While she adds insight into the social world of the novel, her actions are not central to the main plot.
-   - **Rosencrantz and Guildenstern in *Hamlet***: These characters provide additional thematic exploration but are not essential to the plot’s progression.
+###### **Secondary Characters**
+  - **Definition**: Those who add depth to the narrative but are not directly involved in the core conflicts or resolutions.
+  - **Characteristics**
+    - **Subplot Contributors**: Participate in side stories that enhance the main plot and add complexity without taking center stage.
+    - **Atmosphere Builders**: Help create a rich setting and contribute to the story’s tone by representing various aspects of the world or community.
+    - **Character Foils**: Serve to contrast or complement the main characters, providing insights into their behavior or beliefs through indirect comparison.
+
+
 
 ---
 
-##### Kernel Events
+#### Kernel Events
 
 **Definition**:
    Kernel events are major plot points that drive the narrative forward. These events represent turning points or essential actions that define the structure of the story.
 
-**Types**:
-   - **Decisive Actions**: Events where characters make key decisions that impact the direction of the narrative.
-   - **Conflicts and Resolutions**: Moments where central conflicts are introduced, escalated, or resolved.
-   - **Turning Points**: Pivotal moments that significantly change the course of the story.
+##### **Components of Kernel Events**
 
-**Characteristics**:
-   - **Crucial to the Plot**: Kernel events are indispensable to the story’s progression.
-   - **Determine Narrative Trajectory**: These events set the direction of the story, introducing or resolving the main conflicts.
-   - **High Impact**: Kernel events typically involve high stakes and have lasting effects on the characters and plot.
+###### **Decisive Actions**
+  - **Definition**: Events where characters make key decisions that impact the direction of the narrative.
+  - **Characteristics**
+    - **Character Agency**: Highlight the ability of characters to make choices that drive the story, showcasing their motivations and values.
+    - **Plot Advancement**: Propel the narrative forward by setting new paths or initiating major events that alter the status quo.
+    - **Consequential Outcomes**: Lead to significant changes in the story, impacting characters’ fates and the overall plot trajectory.
 
-**Contextualization**:
-   Kernel events form the backbone of the narrative, shaping its pace and trajectory. These are the moments where the most significant changes and decisions take place, making them essential to the narrative’s structure.
+###### **Conflicts**
+  - **Definition**: Moments where central conflicts are introduced or escalated.
+  - **Characteristics**
+    - **Narrative Tension**: Create suspense and engage the reader by presenting obstacles that challenge characters and test their resolve.
+    - **Character Development**: Push characters to adapt and grow as they face and confront challenges.
+    - **Thematic Exploration**: Emphasize key themes by illustrating how characters react to and manage conflict.
 
-**Examples**:
-   - **Hamlet’s Decision to Stage "The Mousetrap" in *Hamlet***: This kernel event confirms Claudius’s guilt and sets the course for the tragic conclusion.
-   - **Gatsby’s Reunion with Daisy in *The Great Gatsby***: This pivotal moment reignites the central conflict and propels the narrative toward its climax.
+###### **Resolutions**
+  - **Definition**: Moments where central conflicts are resolved.
+  - **Characteristics**
+    - **Character Growth**: Showcase the development and transformation of characters as they reach a resolution.
+    - **Narrative Closure**: Provide a sense of completion or satisfaction by tying up plotlines and answering major questions.
+    - **Thematic Reinforcement**: Reinforce the core messages of the story through the outcomes of the conflicts and how they are resolved.
+
+
+###### **Turning Points**
+  - **Definition**: Pivotal moments that significantly change the course of the story.
+  - **Characteristics**
+    - **Shift in Direction**: Mark a departure from the existing trajectory of the narrative, leading to new developments or revelations.
+    - **Heightened Stakes**: Often raise the tension and importance of the plot, ensuring that the outcome becomes more uncertain or significant.
+    - **Character Impact**: Influence characters’ decisions, beliefs, or relationships, making these moments transformative within the story.
+
+
 
 ---
 
-##### Satellite Events
+#### Satellite Events
 
 **Definition**:
    Satellite events are minor occurrences that provide additional context or background but do not significantly alter the story’s main plotline.
 
-**Types**:
-   - **Character Backstory**: Events that delve into a character’s past, providing depth but not driving the main narrative.
-   - **Thematic Exploration**: Events that explore the narrative’s themes without impacting the core plot.
-   - **Subplots**: Minor storylines that run parallel to the main plot, enriching the overall narrative.
+##### **Components of Sattelite Events**
 
-**Characteristics**:
-   - **Supplementary to the Plot**: While enriching the story, satellite events are not critical to the plot’s progression.
-   - **Provide Depth and Texture**: These events help to flesh out characters, explore themes, and build the world of the story.
-   - **Non-Essential to Main Plot**: Removing these events would not disrupt the overall structure of the narrative.
+###### **Character Backstory**
+  - **Definition**: Events that delve into a character’s past, providing depth but not driving the main narrative.
+  - **Characteristics**
+    - **Character Depth**: Adds layers to the character by revealing their past experiences, motivations, and formative moments.
+    - **Emotional Connection**: Helps readers empathize with or understand the character’s current behavior and decisions.
+    - **Narrative Enrichment**: Provides context that enhances the main story, offering explanations for character dynamics and relationships.
 
-**Contextualization**:
-   Satellite events enhance the story by adding layers of complexity, character development, and thematic exploration. While they are not crucial to the plot’s progression, they help to create a richer narrative experience.
+###### **Thematic Exploration**
+  - **Definition**: Events that explore the narrative’s themes without impacting the core plot.
+  - **Characteristics**
+    - **Conceptual Emphasis**: Focuses on illustrating and expanding the story’s central themes, deepening the narrative’s message.
+    - **Subtle Integration**: Weaves thematic ideas through scenes and dialogue without altering the primary storyline.
+    - **Reflective Moments**: Encourages readers to think about broader concepts and questions posed by the story, adding intellectual depth.
 
-**Examples**:
-   - **The Gravedigger Scene in *Hamlet***: This satellite event provides thematic depth by exploring mortality but does not affect the main plot.
-   - **Gatsby’s Parties in *The Great Gatsby***: These events explore the themes of excess and social ambition but are not central to the plot’s progression.
+###### **Subplots**
+  - **Definition**: Minor storylines that run parallel to the main plot, enriching the overall narrative.
+  - **Characteristics**
+    - **Character Development**: Allows secondary characters to grow and evolve, adding complexity to the story world.
+    - **Plot Diversification**: Provides additional layers of interest and variety, preventing the main plot from becoming monotonous.
+    - **Interconnected Themes**: Often tie back to the main narrative, reinforcing its themes and contributing to the story’s resolution.
+
 
 ---
 
-##### Implications of Chatman's Character and Event Framework
+### Implications of Chatman's Character and Event Framework
 
 **Impact on Narrative Theory**:
    Chatman’s framework has been influential in narrative theory, particularly in distinguishing between major and minor elements of a story. By categorizing characters and events as kernels or satellites, Chatman provides a clear structure for analyzing how different components of a narrative contribute to its overall progression and thematic depth.

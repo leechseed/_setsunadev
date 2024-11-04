@@ -8,65 +8,65 @@ Prima-Forma:
 - time
 Summary: Temporal manipulation is a narrative technique which affects the reader's perception of time within the narrative.
 ELEMENT: TIME
-KNOWLEDGE TYPE: TACIT
+KNOWLEDGE TYPE: EXPLICIT
 ---
 ---
 
-##### Title: Herman's Temporal Logic in Narrative Framework
+### Title: Herman's Temporal Logic in Narrative Framework
 
 **Temporal Logic in Narrative**:
    **Definition**: David Herman’s framework explores how narratives manipulate time to shape meaning and influence the reader’s experience. Through techniques like anachrony, foreshadowing, and flashbacks, narratives enhance thematic and emotional impact. Herman's approach connects narrative structures with cognitive processes, examining how readers understand and interpret time in storytelling.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Temporal Manipulation
+#### Temporal Manipulation
 
 **Definition**:
    Temporal manipulation involves altering the sequence, duration, or frequency of events in a narrative to shape how the story unfolds and is experienced by the reader.
 
-**Types**:
-   - **Anachrony**: The reordering of events in a non-linear sequence through flashbacks (*analepsis*) or flashforwards (*prolepsis*).
-   - **Foreshadowing**: Hints or clues about future events, creating suspense and anticipation.
-   - **Flashbacks (Analepsis)**: Revisiting past events to provide essential background or context.
-   - **Non-linear Narratives**: Disjointed timelines that challenge readers to reconstruct the chronological order.
+##### **Components of Temporal Manipulation**
 
-**Characteristics**:
-   - **Strategic Information Release**: Manipulates the order of events to reveal information at pivotal moments.
-   - **Suspense Creation**: Builds anticipation through techniques like foreshadowing or flashforwards.
-   - **Emphasis on Themes**: Temporal manipulation highlights themes such as memory, fate, or inevitability.
+###### **Anachrony**
+  - **Definition**: The reordering of events in a non-linear sequence through flashbacks (*analepsis*) or flashforwards (*prolepsis*).
+  - **Characteristics**
+    - **Temporal Complexity**: Creates a layered narrative structure that deepens the plot by revealing events out of sequence.
+    - **Enhanced Engagement**: Encourages readers to piece together the timeline, promoting active reading and interpretation.
+    - **Dramatic Impact**: Heightens suspense and emotional effect by revealing pivotal moments in a non-linear fashion.
 
-**Contextualization**:
-   Temporal manipulation is crucial in how stories reveal information and engage readers. Herman links these techniques to cognitive processes, demonstrating how they help readers interpret complex narratives, form inferences, and engage with themes such as memory and causality.
+###### **Foreshadowing**
+  - **Definition**: Hints or clues about future events, creating suspense and anticipation.
+  - **Characteristics**
+    - **Anticipatory Tension**: Builds suspense by hinting at significant future developments, keeping readers intrigued.
+    - **Symbolic Layers**: Incorporates symbols or subtle details that take on greater meaning as the story progresses.
+    - **Narrative Continuity**: Connects different parts of the story cohesively, ensuring events unfold with a sense of purpose and inevitability.
 
-**Examples**:
-   - **Kurt Vonnegut’s *Slaughterhouse-Five***: Uses non-linear time jumps to explore trauma and fatalism.
-   - **Emily Brontë’s *Wuthering Heights***: Flashbacks create a layered narrative, deepening character motivations and conflicts.
+###### **Flashbacks (Analepsis)**
+  - **Definition**: Revisiting past events to provide essential background or context.
+  - **Characteristics**
+    - **Character Revelation**: Offers insight into characters' pasts, explaining motivations and shaping present actions.
+    - **Narrative Enrichment**: Adds depth by blending past and present, allowing for multi-dimensional storytelling.
+    - **Emotional Weight**: Strengthens the narrative by invoking past events that resonate emotionally with current scenes.
+
+###### **Non-linear Narratives**
+  - **Definition**: Disjointed timelines that challenge readers to reconstruct the chronological order.
+  - **Characteristics**
+    - **Reader Engagement**: Promotes an active reading experience by requiring readers to organize and interpret events themselves.
+    - **Thematic Exploration**: Emphasizes recurring themes or motifs by contrasting different time periods and their impacts on the narrative.
+    - **Structural Innovation**: Breaks from conventional storytelling to present a more dynamic, complex plot, often enhancing mystery and suspense.
+
 
 ---
 
-##### Cognitive Dimensions of Temporal Logic
+#### Cognitive Dimensions of Temporal Logic
 
 **Definition**:
    Herman also examines the cognitive aspects of how readers process and understand narrative time, focusing on how readers mentally reconstruct timelines and infer relationships between events.
 
-**Types**:
-   - **Mental Time Travel**: Readers mentally move through the story’s timeline, recalling past events and anticipating future ones.
-   - **Temporal Inferences**: Readers infer the significance and order of events based on temporal cues.
-   - **Temporal Cohesion**: Successful narratives maintain coherence despite temporal manipulation, allowing readers to reconstruct a unified timeline.
+##### **Components of Cognitive Dimensions of Temporal Logic**
 
-**Characteristics**:
-   - **Active Reader Engagement**: Readers must actively reconstruct the timeline and connect different moments.
-   - **Inference-Making**: Temporal cues guide the reader in understanding the sequence and significance of events.
-   - **Cognitive Challenge**: Non-linear structures invite readers to engage more deeply with narrative logic and meaning.
 
-**Contextualization**:
-   Herman’s cognitive approach highlights how readers mentally engage with the manipulation of time in narratives. This framework emphasizes the active role of the reader in piecing together fragmented timelines and making sense of how temporal structures affect themes, character development, and plot.
-
-**Examples**:
-   - **Kazuo Ishiguro’s *The Remains of the Day***: Flashbacks reveal the protagonist’s regrets and inner journey, requiring readers to piece together the timeline.
-   - **Christopher Nolan’s *Memento***: The reverse chronology challenges viewers to reconstruct the timeline, reflecting the protagonist’s memory loss.
 
 ---
 
