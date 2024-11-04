@@ -48,9 +48,9 @@ KNOWLEDGE TYPE: TACIT
 ```mermaid
 mindmap
   root((**Prophecy Concept**))
-    **Forester's Prophecy**
+    **Forester`s Prophecy**
     **Deeper Meaning**
-    **Forester's Perspective on Prophetic Literature**
+    **Forester`s Perspective on Prophetic Literature**
 ```
 
 ---

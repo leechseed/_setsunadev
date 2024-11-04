@@ -64,6 +64,15 @@ KNOWLEDGE TYPE: TACIT
 - **Definition**: 
   - Narrative mode refers to the specific method or approach that a story employs to convey its content. It includes both the point of view and stylistic choices that shape how the story is presented and experienced by the reader.
 
+```mermaid
+mindmap
+  root((**Todorov`s Fantastic Mode Framework**))
+    **Point of View**
+    **Narrative Style**
+    **Temporal Structure**
+    **Hesitation Between the Natural and Supernatural**
+    **Narrative Tension**
+```
 ---
 
 ### 3. **Key Components**
@@ -73,10 +82,25 @@ KNOWLEDGE TYPE: TACIT
 - **Definition**: 
   - Point of view (POV) is the perspective from which the narrative is told, influencing how much the reader knows about characters' thoughts, feelings, and motivations.
 
+```mermaid
+mindmap
+  root((**Todorov`s Fantastic Mode Framework**))
+    **Point of View**
+```
+
+
 ##### 3.1.1. **Key Components of Point of View**
 
 ###### 3.1.1.1. **Subjective**
   - **Definition**: First-person point of view (POV) offers a personal and limited perspective, where the narrative is filtered through the eyes, emotions, and thoughts of a single character, providing an intimate but potentially biased understanding of events.
+
+```mermaid
+flowchart TD;
+    A[**Subjective**] --> B[**Personal Insight**];
+    A --> C[**Limited Perspective**];
+    A --> D[**Emotional Depth**];
+```
+
   - **Characteristics**:
     - **Personal Insight**: The reader gains direct access to the character's inner thoughts and feelings, allowing for a deep emotional connection.
     - **Limited Perspective**: The narrative is confined to what the character knows or perceives, creating a subjective view of the world that may not always reflect the broader reality.
@@ -84,6 +108,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.1.1.2. **Omniscient**
   - **Definition**: Third-person omniscient POV provides a god-like view, where the narrator knows the thoughts, feelings, and motivations of all characters, as well as all events in the story, offering a complete and comprehensive understanding of the narrative.
+
+```mermaid
+flowchart TD;
+    E[**Omniscient**] --> F[**All-Knowing Narrator**];
+    E --> G[**Multiple Perspectives**];
+    E --> H[**Objective Overview**];
+```
+
   - **Characteristics**:
     - **All-Knowing Narrator**: The narrator has unlimited knowledge of the story's characters, settings, and events, giving readers a broad and detailed perspective on the entire narrative.
     - **Multiple Perspectives**: The third-person omniscient POV allows the story to shift between different characters' thoughts and experiences, offering a holistic view of the plot and its developments.
@@ -92,6 +124,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.1.1.3. **First-Person**
   - **Definition**: Creates a subjective experience by presenting events through a single character's eyes, giving the reader direct insight into that character's thoughts, feelings, and perceptions.
+
+```mermaid
+flowchart TD;
+    I[**First-Person**] --> J[**Narrative Intimacy**];
+    I --> K[**Unreliable Narrator**];
+    I --> L[**Immersive Storytelling**];
+```
+
   - **Characteristics**:
     - **Narrative Intimacy**: The reader is brought closer to the protagonist's internal world, experiencing their emotions and thoughts firsthand.
     - **Unreliable Narrator**: First-person narrators can sometimes be unreliable, as their personal biases and limited knowledge influence the way events are described.
@@ -99,12 +139,44 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.1.1.4. **Third-Person Omniscient**
   - **Definition**: Offers a comprehensive view, revealing information about multiple characters and events, enabling the reader to understand the broader scope of the narrative beyond any single character's experience.
+
+```mermaid
+flowchart TD;
+    M[**Third-Person Omniscient**] --> N[**Multiple Character Insights**];
+    M --> O[**Expansive Worldview**];
+    M --> P[**Objective and Informed**];
+```
+
   - **Characteristics**:
     - **Multiple Character Insights**: The third-person omniscient narrator can delve into the thoughts, emotions, and motivations of various characters, providing a richer, multi-faceted view of the story.
     - **Expansive Worldview**: This POV allows for a sweeping, overarching narrative that can shift between different locations, timelines, and characters without the limitations of a single perspective.
     - **Objective and Informed**: The narrator often presents events with an objective tone, offering a balanced view of the narrative and providing readers with a complete understanding of the story’s unfolding.
 
+---
 
+```mermaid
+mindmap
+  root((**Point of View**))
+    **Subjective**
+      Personal Insight
+      Limited Perspective
+      Emotional Depth
+    **Omniscient**
+      All-Knowing Narrator
+      Multiple Perspectives
+      Objective Overview
+    **First-Person**
+      Narrative Intimacy
+      Unreliable Narrator
+      Immersive Storytelling
+    **Third-Person Omniscient**
+      Multiple Character Insights
+      Expansive Worldview
+      Objective and Informed
+```
+
+
+---
 
 
 #### 3.2. **Narrative Style**
@@ -112,11 +184,25 @@ KNOWLEDGE TYPE: TACIT
 - **Definition**: 
   - Narrative style refers to the author’s choice of language, tone, and pacing, as well as the use of literary devices like symbolism and metaphor, shaping the emotional and intellectual experience of the narrative.
 
+```mermaid
+mindmap
+  root((**Todorov`s Fantastic Mode Framework**))
+    **Narrative Style**
+```
+
 
 ##### 3.2.1. **Key Components of Narrative Style**
 
 ###### 3.2.1.1. **Descriptive**
   - **Definition**: A lyrical style creates vivid, atmospheric imagery, using rich, detailed descriptions to paint a picture of the world, characters, and emotions, immersing readers in the narrative’s setting.
+
+```mermaid
+flowchart TD;
+    A[**Descriptive**] --> B[Vivid Imagery];
+    A --> C[Atmospheric];
+    A --> D[Figurative Language];
+```
+
   - **Characteristics**:
     - **Vivid Imagery**: The narrative employs detailed and sensory language to evoke clear, evocative mental images that heighten the reader's experience.
     - **Atmospheric**: Through lush, descriptive passages, the story's mood and setting are enhanced, drawing the reader deeper into the narrative world.
@@ -124,6 +210,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.2.1.2. **Sparse**
   - **Definition**: Minimalist prose heightens tension and urgency, using simple, concise language to focus on key plot points and emotions, creating a sense of immediacy.
+
+```mermaid
+flowchart TD;
+    A[**Sparse**] --> B[Economy of Words];
+    A --> C[Tension and Urgency];
+    A --> D[Direct and Unembellished];
+```
+
   - **Characteristics**:
     - **Economy of Words**: The prose is stripped down to its essentials, leaving only what is necessary for the narrative, which intensifies the impact of each word or sentence.
     - **Tension and Urgency**: By reducing extraneous detail, the minimalist style places greater emphasis on the unfolding action, dialogue, or emotions, generating suspense or a heightened sense of pace.
@@ -132,6 +226,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.2.1.3. **Language and Diction**
   - **Definition**: Word choice can enhance mood, using figurative language to explore abstract themes, contributing to the overall tone, atmosphere, and thematic depth of the narrative.
+
+```mermaid
+flowchart TD;
+    A[**Language and Diction**] --> B[Precise Word Choice];
+    A --> C[Figurative Language];
+    A --> D[Theme Exploration];
+```
+
   - **Characteristics**:
     - **Precise Word Choice**: The use of specific and well-chosen words can shape the reader’s perception of the narrative, influencing mood and character dynamics.
     - **Figurative Language**: Tools such as metaphors, symbolism, and alliteration are employed to convey abstract or complex ideas, adding layers of meaning to the text.
@@ -140,13 +242,42 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.2.1.4. **Tone**
   - **Definition**: The tone, whether serious, ironic, or melancholic, guides how readers interpret events, shaping the emotional and psychological resonance of the narrative.
+
+```mermaid
+flowchart TD;
+    A[**Tone**] --> B[Emotional Guide];
+    A --> C[Consistency or Variation];
+    A --> D[Reader Perception];
+```
+
   - **Characteristics**:
     - **Emotional Guide**: The tone provides readers with cues on how to emotionally engage with the story, whether it’s through lightheartedness, gravity, or satire.
     - **Consistency or Variation**: The tone may remain consistent throughout the narrative or shift to reflect changes in mood, plot, or character development.
     - **Reader Perception**: Through tone, the narrative can evoke specific emotional responses from readers, influencing how they interpret character actions, themes, and the overall message of the story.
 
 ---
+```mermaid
+mindmap
+  root((**Narrative Style**))
+    **Descriptive**
+      Vivid Imagery
+      Atmospheric
+      Figurative Language
+    **Sparse**
+      Economy of Words
+      Tension and Urgency
+      Direct and Unembellished
+    **Language and Diction**
+      Precise Word Choice
+      Figurative Language
+      Theme Exploration
+    **Tone**
+      Emotional Guide
+      Consistency or Variation
+      Reader Perception
 
+```
+---
 
 
 #### 3.3. **Temporal Structure**
@@ -154,10 +285,24 @@ KNOWLEDGE TYPE: TACIT
 - **Definition**: 
   - Temporal structure refers to the organization of time in the narrative, such as the use of flashbacks or nonlinear timelines.
 
+```mermaid
+mindmap
+  root((**Todorov`s Fantastic Mode Framework**))
+    **Temporal Structure**
+```
+
 ##### 3.3.1. **Key Components of Temporal Structure**
 
 ###### 3.3.1.1. **Sequential**
   - **Definition**: Events unfold chronologically, following a logical and linear progression from one moment to the next, mirroring the natural flow of time.
+
+```mermaid
+flowchart TD;
+    A[**Sequential**] --> B[**Clear Timeline**];
+    A --> C[**Easy to Follow**];
+    A --> D[**Building Momentum**];
+```
+
   - **Characteristics**:
     - **Clear Timeline**: The story is structured in a straightforward manner, where events occur in a direct, cause-and-effect sequence.
     - **Easy to Follow**: The linear progression allows readers to track the development of the plot and characters without disruption or confusion.
@@ -165,6 +310,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.3.1.2. **Nonlinear**
   - **Definition**: Time jumps disrupt the linear flow, creating complexity by presenting events out of chronological order, often to reveal new layers of the narrative.
+
+```mermaid
+flowchart TD;
+    E[**Nonlinear**] --> F[**Time Shifts**];
+    E --> G[**Puzzle-Like Structure**];
+    E --> H[**Increased Narrative Depth**];
+```
+
   - **Characteristics**:
     - **Time Shifts**: The narrative moves backward and forward in time, providing glimpses of past or future events that add depth to the present moment.
     - **Puzzle-Like Structure**: Nonlinear narratives challenge readers to piece together the timeline, often creating a more immersive and interactive experience.
@@ -173,6 +326,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.3.1.3. **Flashbacks**
   - **Definition**: Provide backstory and reveal motivations by taking the reader back to earlier events, often to explain a character’s past or give context to their present actions.
+
+```mermaid
+flowchart TD;
+    I[**Flashbacks**] --> J[**Character Development**];
+    I --> K[**Filling in Gaps**];
+    I --> L[**Emotional Depth**];
+```
+
   - **Characteristics**:
     - **Character Development**: Flashbacks offer insights into a character’s history, revealing key experiences that have shaped their personality, decisions, or motivations.
     - **Filling in Gaps**: The narrative uses flashbacks to answer questions or resolve mysteries by showing events that occurred before the main timeline.
@@ -182,6 +343,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.3.1.4. **Nonlinear Narratives**
   - **Definition**: Create intricate, layered storytelling by weaving together multiple timelines or events that occur out of sequence, allowing for a more complex and multifaceted narrative experience.
+
+```mermaid
+flowchart TD;
+    M[**Nonlinear Narratives**] --> N[**Interconnected Storylines**];
+    M --> O[**Fragmented Structure**];
+    M --> P[**Thematic Exploration**];
+```
+
   - **Characteristics**:
     - **Interconnected Storylines**: Nonlinear narratives often juggle different timelines or perspectives, creating a rich, layered narrative where events in one timeline inform or reflect upon another.
     - **Fragmented Structure**: The plot may appear disjointed or fragmented, requiring readers to actively piece together the sequence of events and how they relate to each other.
@@ -189,15 +358,57 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
+```mermaid
+mindmap
+  root((**Temporal Structure**))
+    **Sequential**
+      Clear Timeline
+      Easy to Follow
+      Building Momentum
+    **Nonlinear**
+      Time Shifts
+      Puzzle-Like Structure
+      Increased Narrative Depth
+    **Flashbacks**
+      Character Development
+      Filling in Gaps
+      Emotional Depth
+    **Nonlinear Narratives**
+      Interconnected Storylines
+      Fragmented Structure
+      Thematic Exploration
+
+```
+
+
+---
+
+
+
 #### 3.4. **Hesitation Between the Natural and Supernatural**
 
 - **Definition**: 
   - The fantastic hinges on ambiguity between the natural and supernatural, preventing the reader from fully accepting either explanation. This uncertainty creates narrative tension as the reader is left in a state of hesitation.
 
+```mermaid
+mindmap
+  root((**Todorov`s Fantastic Mode Framework**))
+    **Hesitation Between the Natural and Supernatural**
+```
+
+
 ##### 3.4.1. **Key Components of the Natural and Supernatural**
 
 ###### 3.4.1.1. **Sequential**
   - **Definition**: Events unfold chronologically, following a logical and linear progression from one moment to the next, mirroring the natural flow of time.
+
+```mermaid
+flowchart TD
+    A[**Sequential**] --> B[**Clear Timeline**]
+    A --> C[**Easy to Follow**]
+    A --> D[**Building Momentum**]
+```
+
   - **Characteristics**:
     - **Clear Timeline**: The story is structured in a straightforward manner, where events occur in a direct, cause-and-effect sequence.
     - **Easy to Follow**: The linear progression allows readers to track the development of the plot and characters without disruption or confusion.
@@ -206,6 +417,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.4.1.2. **Nonlinear**
   - **Definition**: Time jumps disrupt the linear flow, creating complexity by presenting events out of chronological order, often to reveal new layers of the narrative.
+
+```mermaid
+flowchart TD
+    E[**Nonlinear**] --> F[**Time Shifts**]
+    E --> G[**Puzzle-Like Structure**]
+    E --> H[**Increased Narrative Depth**]
+```
+
   - **Characteristics**:
     - **Time Shifts**: The narrative moves backward and forward in time, providing glimpses of past or future events that add depth to the present moment.
     - **Puzzle-Like Structure**: Nonlinear narratives challenge readers to piece together the timeline, often creating a more immersive and interactive experience.
@@ -214,6 +433,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.4.1.3. **Flashbacks**
   - **Definition**: Provide backstory and reveal motivations by taking the reader back to earlier events, often to explain a character’s past or give context to their present actions.
+
+```mermaid
+flowchart TD
+    I[**Flashbacks**] --> J[**Character Development**]
+    I --> K[**Filling in Gaps**]
+    I --> L[**Emotional Depth**]
+```
+
   - **Characteristics**:
     - **Character Development**: Flashbacks offer insights into a character’s history, revealing key experiences that have shaped their personality, decisions, or motivations.
     - **Filling in Gaps**: The narrative uses flashbacks to answer questions or resolve mysteries by showing events that occurred before the main timeline.
@@ -223,10 +450,41 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.4.1.4. **Nonlinear Narratives**
   - **Definition**: Create intricate, layered storytelling by weaving together multiple timelines or events that occur out of sequence, allowing for a more complex and multifaceted narrative experience.
+
+```mermaid
+flowchart TD
+    M[**Nonlinear Narratives**] --> N[**Interconnected Storylines**]
+    M --> O[**Fragmented Structure**]
+    M --> P[**Thematic Exploration**]
+```
+
   - **Characteristics**:
     - **Interconnected Storylines**: Nonlinear narratives often juggle different timelines or perspectives, creating a rich, layered narrative where events in one timeline inform or reflect upon another.
     - **Fragmented Structure**: The plot may appear disjointed or fragmented, requiring readers to actively piece together the sequence of events and how they relate to each other.
     - **Thematic Exploration**: Nonlinear storytelling allows for deeper exploration of themes like memory, time, or fate, as the disruption of time can reflect the inner workings of characters' minds or broader philosophical ideas.
+
+---
+
+```mermaid
+mindmap
+  root((**Hesitation Between the Natural and Supernatural**))
+    **Sequential**
+      **Clear Timeline**
+      **Easy to Follow**
+      **Building Momentum**
+    **Nonlinear**
+      **Time Shifts**
+      **Puzzle-Like Structure**
+      **Increased Narrative Depth**
+    **Flashbacks**
+      **Character Development**
+      **Filling in Gaps**
+      **Emotional Depth**
+    **Nonlinear Narratives**
+      **Interconnected Storylines**
+      **Fragmented Structure**
+      **Thematic Exploration**
+```
 
 ---
 
@@ -236,10 +494,26 @@ KNOWLEDGE TYPE: TACIT
 - **Definition**: 
   - Narrative tension in the fantastic mode arises from the reader’s and characters’ inability to reconcile strange events with reality. This tension is sustained throughout the story, keeping the reader in suspense.
 
+
+```mermaid
+mindmap
+  root((**Todorov`s Fantastic Mode Framework**))
+    **Narrative Tension**
+```
+
+
 ##### 3.5.1. **Components of Narrative Tension**
 
 ###### 3.5.1.1. **Unresolved**
   - **Definition**: Tension remains as no clear explanation is given, leaving readers with ambiguity or open-ended questions that challenge their understanding of the narrative.
+
+```mermaid
+flowchart TD
+    A[**Unresolved**] --> B[Ambiguous Ending]
+    A --> C[Lingering Tension]
+    A --> D[Open Interpretation]
+```
+
   - **Characteristics**:
     - **Ambiguous Ending**: The story may end without a definitive resolution, leaving certain plot points or character arcs unresolved, prompting readers to reflect on the meaning of the events.
     - **Lingering Tension**: The lack of closure creates an ongoing sense of tension or uncertainty, as readers are left to draw their own conclusions about the outcome or motivations of the characters.
@@ -248,6 +522,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.5.1.2. **Suspenseful**
   - **Definition**: The uncertainty keeps readers on edge, searching for answers as the narrative unfolds, maintaining a high level of tension and emotional engagement.
+
+```mermaid
+flowchart TD
+    E[**Suspenseful**] --> F[Constant Uncertainty]
+    E --> G[Building Tension]
+    E --> H[Emotional Investment]
+
+```
   - **Characteristics**:
     - **Constant Uncertainty**: The narrative withholds key information or outcomes, creating a sense of anticipation and anxiety about what will happen next.
     - **Building Tension**: As the story progresses, the suspense heightens, with readers becoming more invested in the characters’ fates or the resolution of central conflicts.
@@ -256,6 +538,14 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.5.1.3. **Suspense**
   - **Definition**: Keeps the reader emotionally invested by withholding explanations, using mystery or uncertainty to drive the narrative and compel readers to continue searching for answers.
+
+```mermaid
+flowchart TD
+    I[**Suspense**] --> J[Withheld Information]
+    I --> K[Emotional Engagement]
+    I --> L[Prolonged Mystery]
+```
+
   - **Characteristics**:
     - **Withheld Information**: The narrative deliberately keeps key details or revelations hidden, drawing out the tension and encouraging readers to speculate or anticipate the resolution.
     - **Emotional Engagement**: By creating uncertainty, suspense hooks the reader, making them eager to find out how the story will unfold and how conflicts will be resolved.
@@ -264,9 +554,71 @@ KNOWLEDGE TYPE: TACIT
 
 ###### 3.5.1.4. **Philosophical Reflection**
   - **Definition**: Encourages readers to consider deeper questions about reality and perception, often using ambiguity or complex themes to provoke thought about the nature of existence, truth, or human experience.
+
+```mermaid
+flowchart TD
+    M[**Philosophical Reflection**] --> N[Abstract Themes]
+    M --> O[Ambiguity as a Tool]
+    M --> P[Reflection on Perception]
+```
+
   - **Characteristics**:
     - **Abstract Themes**: The narrative introduces existential or philosophical questions that challenge conventional thinking, pushing readers to reflect on the deeper meaning of life, reality, or identity.
     - **Ambiguity as a Tool**: By leaving certain elements unresolved or open to interpretation, the story encourages readers to think critically about the concepts being explored, fostering philosophical engagement.
     - **Reflection on Perception**: The narrative often plays with the idea of subjective reality, encouraging readers to question what is real or true within the story and how perception shapes understanding.
 
+---
+```mermaid
+mindmap
+  root((**Narrative Tension**))
+    **Unresolved**
+      Ambiguous Ending
+      Lingering Tension
+      Open Interpretation
+    **Suspenseful**
+      Constant Uncertainty
+      Building Tension
+      Emotional Investment
+    **Suspense**
+      Withheld Information
+      Emotional Engagement
+      Prolonged Mystery
+    **Philosophical Reflection**
+      Abstract Themes
+      Ambiguity as a Tool
+      Reflection on Perception
+```
+---
 
+
+---
+```mermaid
+mindmap
+  root((**Todorov's Fantastic Mode Framework**))
+    **Point of View**
+      Subjective
+      Omniscient
+      First-Person
+      Third-Person Omniscient
+    **Narrative Style**
+      Descriptive
+      Sparse
+      Language and Diction
+      Tone
+    **Temporal Structure**
+      Sequential
+      Nonlinear
+      Flashbacks
+      Nonlinear Narratives
+    **Hesitation Between the Natural and Supernatural**
+      Uncertainty of Reality
+      Ambiguous Events
+      Reader's Doubt
+      Blurred Boundaries
+    **Narrative Tension**
+      Unresolved
+      Suspenseful
+      Suspense
+      Philosophical Reflection
+```
+---
