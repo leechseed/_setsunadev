@@ -8,7 +8,7 @@ Prima-Forma:
 - time
 Summary: Temporal manipulation is a narrative technique which affects the reader's perception of time within the narrative.
 ELEMENT: TIME
-
+KNOWLEDGE TYPE: EXPLICIT
 ---
 ---
 
