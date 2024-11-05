@@ -12,93 +12,129 @@ PROPERTY: SZ CODES
 TYPE: SEMIC CODE
 KNOWLEDGE TYPE: EXPLICIT
 ---
+
+- [1. Title: **Tomashevsky's Narrative Devices Framework**](#1-title-tomashevskys-narrative-devices-framework)
+- [2. Key Concepts](#2-key-concepts)
+  - [2.1. Irony](#21-irony)
+    - [2.1.1. **Components of Irony**](#211-components-of-irony)
+      - [2.1.1.1. **Verbal Irony**](#2111-verbal-irony)
+      - [2.1.1.2. **Situational Irony**](#2112-situational-irony)
+      - [2.1.1.3. **Dramatic Irony**](#2113-dramatic-irony)
+  - [2.2. Allegory](#22-allegory)
+    - [2.2.1. **Components of Allegory**](#221-components-of-allegory)
+      - [2.2.1.1. **Moral Allegory**](#2211-moral-allegory)
+      - [2.2.1.2. **Political Allegory**](#2212-political-allegory)
+      - [2.2.1.3. **Religious Allegory**](#2213-religious-allegory)
+  - [2.3. Symbolism](#23-symbolism)
+    - [2.3.1. **Components of Symbolism**](#231-components-of-symbolism)
+      - [2.3.1.1. **Personal Symbolism**](#2311-personal-symbolism)
+      - [2.3.1.2. **Cultural Symbolism**](#2312-cultural-symbolism)
+      - [2.3.1.3. **Universal Symbolism**](#2313-universal-symbolism)
+- [3. Implications of Tomashevsky’s Narrative Devices Framework](#3-implications-of-tomashevskys-narrative-devices-framework)
+
+
 ---
 
-##### Title: **Tomashevsky's Narrative Devices Framework**
+### 1. Title: **Tomashevsky's Narrative Devices Framework**
 
 **Narrative Devices**:
    **Definition**: Tomashevsky studied various narrative devices, such as irony, allegory, and symbolism, and analyzed how they shape the reader’s experience. These devices add layers of meaning, complexity, and depth to narratives, making them more engaging and open to interpretation.
 
 ---
 
-##### Key Concepts
+### 2. Key Concepts
 
-##### Irony
+#### 2.1. Irony
 
 **Definition**:
    Irony is a narrative device that creates a contrast between expectations and reality, or between what is said and what is meant. It often leads to humor, tension, or critique by highlighting discrepancies in the narrative.
 
-**Types**:
-   - **Verbal Irony**: When the intended meaning of a statement contrasts with its literal meaning.
-     - **Example**: In *Pride and Prejudice* by Jane Austen, Mr. Bennet’s sarcastic remarks often mask his true feelings, creating a contrast between his words and his actual intent.
-  
-   - **Situational Irony**: When there is a discrepancy between what is expected to happen and what actually occurs.
-     - **Example**: In *The Gift of the Magi* by O. Henry, a couple sacrifices their most valued possessions to buy gifts for each other, but the gifts become useless, highlighting the irony of their sacrifice.
-  
-   - **Dramatic Irony**: When the audience or reader knows something that the characters do not, creating tension or humor.
-     - **Example**: In *Romeo and Juliet* by Shakespeare, the audience knows Juliet is alive, but Romeo believes she is dead, leading to tragic consequences.
+##### 2.1.1. **Components of Irony**
 
-**Characteristics**:
-   - **Contrast between Appearance and Reality**: Irony relies on the reader’s awareness of a gap between expectations and reality.
-   - **Tension and Engagement**: Irony creates suspense or humor, making the narrative more engaging by involving the reader in deciphering hidden meanings.
-   - **Subversive Commentary**: Often, irony serves to critique societal norms or characters' actions by revealing contradictions.
+###### 2.1.1.1. **Verbal Irony**
+  - **Definition**: When the intended meaning of a statement contrasts with its literal meaning.
+  - **Characteristics**
+    - **Sarcasm**: Often used to mock or convey contempt, adding humor or tension to the dialogue.
+    - **Subtle Layering**: Creates an additional layer of meaning, prompting readers to think critically about what is truly being conveyed.
+    - **Context-Dependent**: The effectiveness of verbal irony relies on the context and the reader’s or character’s ability to recognize it.
 
-**Contextualization**:
-   Irony is a powerful tool for deepening narrative complexity, challenging readers to look beyond the surface of the text. By contrasting expectations with reality, irony encourages readers to engage more critically with the story and its themes.
+###### 2.1.1.2. **Situational Irony**
+  - **Definition**: When there is a discrepancy between what is expected to happen and what actually occurs.
+  - **Characteristics**
+    - **Surprise Element**: Evokes surprise or shock by subverting readers’ or characters’ expectations.
+    - **Plot Twists**: Often leads to unexpected outcomes that enhance the story’s complexity or thematic depth.
+    - **Reflective Insight**: Encourages readers to reconsider assumptions and the nature of fate or coincidence.
+
+###### 2.1.1.3. **Dramatic Irony**
+  - **Definition**: When the audience or reader knows something that the characters do not, creating tension or humor.
+  - **Characteristics**
+    - **Tension Creation**: Builds suspense as readers anticipate how and when characters will discover the truth.
+    - **Engagement**: Keeps readers invested as they watch events unfold with knowledge that the characters lack.
+    - **Emotional Reactions**: Elicits empathy, frustration, or humor as readers witness characters making uninformed decisions.
 
 ---
 
-##### Allegory
+#### 2.2. Allegory
 
 **Definition**:
    Allegory is a narrative technique in which characters, events, or settings symbolize broader abstract ideas or moral, political, or social messages. It often uses extended metaphors to convey a deeper or hidden meaning throughout the text.
 
-**Types**:
-   - **Moral Allegory**: A story that teaches a moral lesson.
-     - **Example**: In *The Pilgrim’s Progress* by John Bunyan, the protagonist’s journey represents the Christian path to salvation.
+##### 2.2.1. **Components of Allegory**
 
-   - **Political Allegory**: A narrative that represents political ideas or events.
-     - **Example**: George Orwell’s *Animal Farm* is a political allegory for the Russian Revolution and the rise of Stalinism, where the farm animals symbolize different political factions.
+###### 2.2.1.1. **Moral Allegory**
+  - **Definition**: A story that teaches a moral lesson.
+  - **Characteristics**
+    - **Ethical Teachings**: Focuses on imparting lessons related to right and wrong, guiding reader behavior or beliefs.
+    - **Symbolic Characters**: Uses characters and situations that embody moral virtues or vices.
+    - **Didactic Purpose**: Aims to instruct and inspire readers toward a better understanding of moral values.
 
-   - **Religious Allegory**: A story that represents religious principles or beliefs.
-     - **Example**: In C.S. Lewis’s *The Chronicles of Narnia*, Aslan’s sacrifice is an allegory for Christ’s death and resurrection.
+###### 2.2.1.2. **Political Allegory**
+  - **Definition**: A narrative that represents political ideas or events.
+  - **Characteristics**
+    - **Representation of Ideologies**: Portrays political figures, movements, or conflicts through metaphorical storytelling.
+    - **Critique and Commentary**: Often critiques political systems or leaders, offering insight into real-world issues.
+    - **Subtextual Layering**: Requires readers to draw parallels between the story and actual political contexts.
 
-**Characteristics**:
-   - **Extended Metaphor**: Allegories function through sustained metaphors that run throughout the entire narrative.
-   - **Multi-Layered Meaning**: The literal story represents a deeper, often hidden, level of meaning.
-   - **Didactic Purpose**: Allegories often aim to teach a lesson or convey a message beyond the plot.
-
-**Contextualization**:
-   Allegory allows authors to explore complex ideas, such as morality, politics, or religion, through symbolic storytelling. This device invites readers to think critically about the broader significance of the narrative and the lessons it imparts.
+###### 2.2.1.3. **Religious Allegory**
+  - **Definition**: A story that represents religious principles or beliefs.
+  - **Characteristics**
+    - **Spiritual Symbolism**: Uses characters and plot elements to symbolize religious themes or teachings.
+    - **Moral and Faith-Based Messages**: Encourages readers to reflect on spiritual principles and their application to life.
+    - **Cultural and Scriptural References**: Often incorporates elements familiar to specific religious traditions to resonate with readers.
 
 ---
 
-##### Symbolism
+#### 2.3. Symbolism
 
 **Definition**:
    Symbolism involves using objects, characters, or actions to represent abstract concepts or ideas, imbuing them with additional meaning beyond their literal interpretation. Symbols often carry thematic weight, contributing to the narrative’s depth and complexity.
 
-**Types**:
-   - **Personal Symbolism**: Objects or actions that carry significance for a specific character.
-     - **Example**: In *The Great Gatsby* by F. Scott Fitzgerald, the green light at the end of Daisy’s dock represents Gatsby’s unattainable dreams and the American Dream.
+##### 2.3.1. **Components of Symbolism**
 
-   - **Cultural Symbolism**: Symbols that represent larger cultural or societal themes.
-     - **Example**: In *Moby-Dick* by Herman Melville, the white whale symbolizes the destructive obsession and the unknowable forces of nature.
+###### 2.3.1.1. **Personal Symbolism**
+  - **Definition**: Objects or actions that carry significance for a specific character.
+  - **Characteristics**
+    - **Character-Driven Meaning**: Represents personal experiences or memories, adding depth to character development.
+    - **Emotional Resonance**: Elicits strong emotional responses in both characters and readers by linking objects to personal stories.
+    - **Symbolic Growth**: Evolves in meaning as the character’s journey progresses, reflecting their changes and growth.
 
-   - **Universal Symbolism**: Symbols that carry meaning across different cultures and contexts.
-     - **Example**: The tree is often a universal symbol of life, growth, and connection to the natural world.
+###### 2.3.1.2. **Cultural Symbolism**
+  - **Definition**: Symbols that represent larger cultural or societal themes.
+  - **Characteristics**
+    - **Shared Understanding**: Relies on readers’ knowledge of cultural references to convey meaning effectively.
+    - **Social Commentary**: Highlights societal values, struggles, or norms through symbolic representation.
+    - **Contextual Variability**: May carry different meanings depending on the cultural background of the audience.
 
-**Characteristics**:
-   - **Abstract Representation**: Symbols encapsulate broader themes or ideas, often standing in for complex concepts that transcend their literal function.
-   - **Thematic Enhancement**: Symbolism enriches the narrative by adding layers of meaning, allowing readers to engage with the text on a deeper level.
-   - **Evocative Imagery**: Symbols often use strong, vivid imagery to evoke emotional or intellectual responses from the reader.
-
-**Contextualization**:
-   Symbolism helps to add emotional and intellectual depth to a narrative. By linking specific objects or actions to larger themes, symbolism provides a way for authors to subtly communicate ideas and messages without explicitly stating them.
+###### 2.3.1.3. **Universal Symbolism**
+  - **Definition**: Symbols that carry meaning across different cultures and contexts.
+  - **Characteristics**
+    - **Timeless and Cross-Cultural**: Recognized and understood by people from diverse backgrounds.
+    - **Archetypal Themes**: Embodies universal human experiences or emotions, such as light symbolizing hope or darkness representing fear.
+    - **Broad Appeal**: Enhances the story’s relatability and thematic resonance by tapping into shared human understanding.
 
 ---
 
-##### Implications of Tomashevsky’s Narrative Devices Framework
+### 3. Implications of Tomashevsky’s Narrative Devices Framework
 
 - Tomashevsky’s exploration of irony, allegory, and symbolism shows how these devices enhance the depth and richness of narrative texts. They invite readers to interpret and engage with multiple layers of meaning, creating more complex and resonant stories. This framework demonstrates that narrative devices are not just stylistic choices but essential tools for shaping how readers experience and understand literary works.
 

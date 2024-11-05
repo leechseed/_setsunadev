@@ -15,32 +15,27 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Title: **Ryan's Role of Technology in Storytelling Framework**
+### Title: **Ryan's Role of Technology in Storytelling Framework**
 
 **The Role of Technology in Storytelling**:
    **Definition**: Marie-Laure Ryan’s framework on the role of technology in storytelling examines how technological advancements have fundamentally transformed the creation, dissemination, and experience of stories. Ryan explores the evolution of narrative forms as they have moved from traditional print media to digital platforms, and how these changes have affected the ways in which stories are told and received by audiences. Her work highlights the profound impact that technology has on the nature of storytelling, offering insights into the ongoing dialogue between narrative practices and technological innovation.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Technological Influence on Narrative
+#### Technological Influence on Narrative
 
 **Definition**:
    Ryan’s exploration of the technological influence on narrative focuses on how new media technologies present both challenges and opportunities for authors and audiences. These changes, brought about by advancements from print to digital media, have reshaped narrative forms, altered the dynamics of reader engagement, and introduced new modes of interaction with stories.
+
+##### **Components of Technological Influence on Narrative**
 
 **Characteristics**:
    - **Transformation of Narrative Forms**: Technology has led to the development of new narrative forms, such as hypertext fiction, interactive stories, and transmedia storytelling, which differ significantly from traditional linear narratives. These forms often involve non-linearity, interactivity, and multimedia integration, offering more dynamic and varied storytelling experiences.
    - **Expanded Reader Engagement**: The shift to digital media has expanded the ways in which readers engage with narratives. For example, in interactive digital stories, readers may have the ability to influence the outcome of the narrative, becoming active participants in the storytelling process rather than passive consumers.
    - **New Challenges for Authors**: While technology provides new tools for storytelling, it also introduces challenges for authors. These include the need to adapt to new narrative structures, the complexity of creating interactive content, and the necessity of considering how readers will navigate and interpret non-linear or multimodal narratives.
 
-**Contextualization**:
-   Ryan’s framework is crucial for understanding the evolution of storytelling practices in response to technological developments. As storytelling mediums have shifted from print to digital, the structure and nature of narratives have undergone significant transformations. Ryan’s analysis helps to contextualize these changes, offering insights into how technology influences not only the form and content of narratives but also the relationship between the story and its audience. Her work highlights the increasing complexity and potential of narrative in the digital age, where stories are no longer confined to traditional formats but are instead evolving to incorporate interactive and immersive elements that engage readers in new ways.
-
-**Examples**:
-   - **Hypertext Fiction**: Hypertext fiction, such as Michael Joyce’s *afternoon, a story*, exemplifies how digital technology has enabled non-linear narratives where readers can choose different paths through the story, leading to multiple possible endings and interpretations.
-   - **Transmedia Storytelling**: The *Star Wars* franchise is an example of transmedia storytelling, where the narrative is expanded across multiple platforms, including films, books, video games, and comics, each contributing to the overall story world in unique ways that engage different audiences.
-   - **Interactive Narratives**: Video games like *The Walking Dead* series allow players to make choices that affect the narrative’s progression, illustrating how technology can create more personalized and immersive storytelling experiences.
 
 ---
 
