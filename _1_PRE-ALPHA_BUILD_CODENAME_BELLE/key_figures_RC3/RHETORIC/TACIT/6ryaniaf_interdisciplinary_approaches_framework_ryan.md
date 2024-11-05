@@ -15,35 +15,28 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Title: **Ryan's Interdisciplinary Approaches Framework**
+### Title: **Ryan's Interdisciplinary Approaches Framework**
 
 **Interdisciplinary Approaches**:
    **Definition**: Marie-Laure Ryan’s work is distinguished by its interdisciplinary approach, which seamlessly integrates insights from various fields such as literature, cognitive science, media studies, and philosophy. This approach allows for a richer and more nuanced understanding of narrative, as it draws on the strengths and methodologies of multiple disciplines to explore how narratives function, how they are constructed, and how they are experienced by audiences.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Cognitive Narratology
+#### Cognitive Narratology
 
 **Definition**:
    Cognitive narratology is one of the key areas where Ryan has made significant contributions. This field examines how narratives engage with and reflect human cognitive processes, including perception, memory, imagination, and emotion. By understanding the cognitive mechanisms involved in narrative processing, cognitive narratology seeks to explain how stories shape and are shaped by the human mind.
 
+##### **Components of Cognitive **Narratology**
 **Characteristics**:
    - **Integration of Cognitive Science**: Cognitive narratology combines narrative theory with cognitive science, exploring how mental processes like memory, attention, and imagination interact with narrative structures.
    - **Narrative as a Cognitive Artifact**: Ryan and others in this field view narratives as cognitive artifacts—tools created by and for the human mind to organize, interpret, and communicate experiences.
    - **Impact on Reader Engagement**: This approach provides insights into how readers or audiences engage with narratives on a cognitive level, including how they construct mental models of story worlds and empathize with characters.
 
-**Contextualization**:
-   Ryan’s interdisciplinary framework, particularly through cognitive narratology, enhances our understanding of narrative by integrating perspectives from diverse fields. This approach provides a holistic view of how narratives operate across different domains, from traditional literature to digital media, and how they resonate with human cognitive functions. By applying cognitive principles to narrative theory, Ryan offers a deeper analysis of how narratives are processed by the mind, leading to more effective storytelling techniques and a better understanding of audience engagement.
 
----
 
-##### Examples
-
-**Examples**:
-   - **Memory and Narrative**: In cognitive narratology, memory is seen as crucial to narrative understanding. For example, a reader’s ability to recall earlier events in a novel influences their interpretation of later events, which is essential for creating suspense or surprise.
-   - **Imagination in Fiction**: Cognitive narratology also explores how narratives engage the reader’s imagination, allowing them to visualize characters and settings, anticipate plot developments, and immerse themselves in fictional worlds.
 
 ---
 

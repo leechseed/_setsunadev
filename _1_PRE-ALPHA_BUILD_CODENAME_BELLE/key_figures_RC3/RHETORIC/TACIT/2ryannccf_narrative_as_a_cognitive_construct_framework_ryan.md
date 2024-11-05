@@ -15,34 +15,34 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Title: **Ryan's Narrative as a Cognitive Construct Framework**
+### Title: **Ryan's Narrative as a Cognitive Construct Framework**
 
 **Narrative as a Cognitive Construct**:
    **Definition**: Marie-Laure Ryan proposes that narrative is fundamentally a cognitive construct, meaning that it is not just a text but also a mental model formed in the reader’s mind. This model is shaped by the interaction between the narrative's structure and the reader’s cognitive processes, including perception, memory, and imagination. According to Ryan, the act of reading or experiencing a narrative involves the construction of a mental simulation or world, where the reader actively participates in the creation of meaning.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Cognitive Engagement in Digital Narratives
+#### Cognitive Engagement in Digital Narratives
 
 **Definition**:
    Ryan explores how digital narratives, with their interactive and immersive features, engage the reader’s cognitive faculties in new ways. Unlike traditional linear narratives, digital narratives often allow readers to influence the direction of the story, thus creating a more dynamic and participatory relationship between the narrative and its audience.
 
+##### **Components of Cognitive Engagement in Digital Narritives**
 **Characteristics**:
    - **Interactivity**: Digital narratives often require the reader to make choices that influence the story's outcome, making the reading experience more engaging and personalized.
    - **Immersion**: The use of multimedia elements, such as visuals, sound, and hypertext, can create a more immersive experience, drawing the reader deeper into the narrative world.
    - **Non-Linear Structure**: Many digital narratives feature non-linear structures, where the sequence of events can vary based on the reader's decisions, leading to multiple possible storylines or endings.
 
-**Contextualization**:
-   Ryan's framework highlights the cognitive dimension of narrative interaction, particularly in digital contexts where the reader's active participation can significantly shape the story's progression and meaning. This cognitive engagement goes beyond mere interpretation, involving decision-making, problem-solving, and the use of imagination to navigate complex narrative environments. The reader becomes a co-creator of the narrative, and their mental model of the story evolves as they interact with the text.
 
 ---
 
-##### Theoretical Significance
+### Theoretical Significance
 
 **Definition**:
    Ryan’s model emphasizes the active role of the reader in the creation of narrative meaning. It challenges traditional views of narrative as a fixed structure that the reader passively consumes, instead proposing that narrative is an interactive and dynamic process shaped by the reader's cognitive engagement.
+
 
 **Characteristics**:
    - **Reader-Text Interaction**: Ryan’s model suggests that readers actively construct meaning by engaging with the narrative structure, involving decision-making, problem-solving, and the use of imagination.
@@ -58,7 +58,7 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Implications of Narrative as a Cognitive Construct
+### Implications of Narrative as a Cognitive Construct
 
 **Key Insight or Implication**:
    Ryan's framework offers crucial insights into how narratives are shaped by cognitive processes, showing that narrative meaning is constructed through an interaction between the text and the reader's perception, memory, and imagination. This concept applies strongly in digital contexts, where readers actively co-create meaning.

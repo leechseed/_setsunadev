@@ -15,20 +15,21 @@ KNOWLEDGE TYPE: TACIT
 ---
 ---
 
-##### Title: **Rimmon-Kenan's Narrative Levels Framework**
+### Title: **Rimmon-Kenan's Narrative Levels Framework**
 
 **Narrative Levels**:
    **Definition**: Shlomith Rimmon-Kenan explores the concept of narrative levels, which refer to the different layers or planes of narration within a story. This framework includes the distinction between extradiegetic and intradiegetic levels, as well as the phenomenon of metalepsis, which complicates the relationship between these levels.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Extradiegetic Level
+#### Extradiegetic Level
 
 **Definition**:
    The extradiegetic level refers to narration that occurs outside the story world. This is typically the primary level of narration, where the narrator is not a character within the narrative but exists externally to tell the story.
 
+##### **Components of Extradiegetic Level**
 **Characteristics**:
    - **Narrative Authority**: The extradiegetic narrator holds authority, controlling the flow of information and influencing the reader’s understanding of the story.
    - **Framing Device**: The extradiegetic level often serves as a framing device, introducing the intradiegetic narrative and setting its context.
@@ -39,11 +40,12 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Intradiegetic Level
+#### Intradiegetic Level
 
 **Definition**:
    The intradiegetic level refers to narration that occurs within the story world, often involving characters who narrate stories inside the main narrative. These embedded narratives add layers to the storytelling.
 
+##### **Components of Intradiegetic Level**
 **Characteristics**:
    - **Embedded Narratives**: These are stories told by characters within the story, contributing backstory or parallel plotlines.
    - **Character Perspective**: The intradiegetic narrator, being a character within the narrative, often provides a subjective or biased account of events.
@@ -54,11 +56,12 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Metalepsis
+#### Metalepsis
 
 **Definition**:
    Metalepsis occurs when the boundaries between different narrative levels are transgressed, such as when a character interacts with the narrator or steps outside their narrative world.
 
+##### **Components of Metalepsis**
 **Characteristics**:
    - **Boundary Transgression**: This involves breaking the narrative "fourth wall" by crossing between narrative levels.
    - **Narrative Playfulness**: Metalepsis introduces a playful or experimental quality to the narrative, making the reader aware of its constructed nature.

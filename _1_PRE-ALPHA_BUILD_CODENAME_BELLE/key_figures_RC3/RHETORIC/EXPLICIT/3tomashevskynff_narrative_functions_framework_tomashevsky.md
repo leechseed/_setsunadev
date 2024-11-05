@@ -14,64 +14,95 @@ TYPE: SEMS
 SUBTYPE: MOTIF
 KNOWLEDGE TYPE: EXPLICIT
 ---
+- [1. Title: **Tomashevsky's Narrative Functions Framework**](#1-title-tomashevskys-narrative-functions-framework)
+- [2. Key Concepts](#2-key-concepts)
+  - [2.1. Bound Motifs](#21-bound-motifs)
+    - [2.1.1. **Components of Bound Motifs**](#211-components-of-bound-motifs)
+      - [2.1.1.1. **Plot-Driving Events**](#2111-plot-driving-events)
+      - [2.1.1.2. **Turning Points**](#2112-turning-points)
+      - [2.1.1.3. **Character Actions**](#2113-character-actions)
+  - [2.2. Free Motifs](#22-free-motifs)
+    - [2.2.1. **Components of Free Motifs**](#221-components-of-free-motifs)
+      - [2.2.1.1. **Symbolic Motifs**](#2211-symbolic-motifs)
+      - [2.2.1.2. **Subplots**](#2212-subplots)
+      - [2.2.1.3. **Background Details**](#2213-background-details)
+    - [2.2.2. Implications of Narrative Functions](#222-implications-of-narrative-functions)
+
 ---
 
-##### Title: **Tomashevsky's Narrative Functions Framework**
+### 1. Title: **Tomashevsky's Narrative Functions Framework**
 
 **Narrative Functions**:
    **Definition**: Tomashevsky’s framework categorizes narrative elements into two main types: *bound motifs* and *free motifs*. These motifs serve distinct purposes within a narrative: bound motifs are crucial for advancing the plot, while free motifs enhance the thematic and emotional layers of the story without being essential to its progression.
 
 ---
 
-##### Key Concepts
+### 2. Key Concepts
 
-##### Bound Motifs
+#### 2.1. Bound Motifs
 
 **Definition**:
    Bound motifs are narrative elements essential for the progression of the plot. These motifs are necessary for advancing the storyline and maintaining its core structure.
 
-**Types**:
-   - **Plot-Driving Events**: Key events or actions that significantly affect the outcome of the story.
-   - **Turning Points**: Critical moments that shift the direction of the narrative.
-   - **Character Actions**: Essential actions taken by main characters that influence the narrative’s resolution.
+##### 2.1.1. **Components of Bound Motifs**
 
-**Characteristics**:
-   - **Integral to Plot**: Bound motifs cannot be removed without altering the core structure of the narrative.
-   - **Advance the Storyline**: They ensure the logical sequence and flow of the plot.
-   - **Key Events**: Often represent major events, decisions, or turning points that directly shape the narrative.
+###### 2.1.1.1. **Plot-Driving Events**
+  - **Definition**: Key events or actions that significantly affect the outcome of the story.
+  - **Characteristics**
+    - **High Stakes**: Involves events that dramatically change the course of the narrative or set up major conflicts.
+    - **Catalyst for Change**: Acts as a trigger that propels the plot forward and influences character decisions.
+    - **Resolution Impact**: Directly contributes to how the story concludes, shaping the ultimate outcome.
 
-**Contextualization**:
-   Bound motifs form the backbone of the story, ensuring that the plot develops logically and cohesively. These motifs are indispensable to the narrative's progression, as they drive the action forward and are directly tied to the resolution of the story’s central conflict.
+###### 2.1.1.2. **Turning Points**
+  - **Definition**: Critical moments that shift the direction of the narrative.
+  - **Characteristics**
+    - **Pivotal Moments**: Represents a significant change in the story, altering its trajectory and reader expectations.
+    - **Character Development**: Often leads to important growth or change in characters as they respond to new challenges.
+    - **Plot Momentum**: Transitions the narrative from one phase to another, maintaining reader engagement and interest.
 
-**Examples**:
-   - In *Macbeth* by William Shakespeare, the witches' prophecies are bound motifs. They directly influence Macbeth’s decisions and actions, ultimately determining the course of the narrative. Removing these prophecies would completely alter the story.
+###### 2.1.1.3. **Character Actions**
+  - **Definition**: Essential actions taken by main characters that influence the narrative’s resolution.
+  - **Characteristics**
+    - **Agency**: Demonstrates characters taking control of their fate, impacting the story’s progression.
+    - **Consequential Choices**: The decisions made by main characters carry significant weight and affect the outcome.
+    - **Moral and Ethical Dimensions**: Reflects the values and inner struggles of the characters, adding depth to the narrative.
+
+
 
 ---
 
-##### Free Motifs
+#### 2.2. Free Motifs
 
 **Definition**:
    Free motifs are narrative elements that are not essential for plot development but enrich the narrative by contributing to its atmosphere, themes, or characterization.
 
-**Types**:
-   - **Symbolic Motifs**: Recurring symbols or images that reinforce the story's themes.
-   - **Subplots**: Minor narrative arcs that add depth without affecting the main storyline.
-   - **Background Details**: Descriptions or elements that contribute to the setting or mood, without directly influencing the plot.
+##### 2.2.1. **Components of Free Motifs**
 
-**Characteristics**:
-   - **Non-Essential to Plot**: Free motifs can be removed without changing the sequence or outcome of the narrative.
-   - **Thematic Depth**: They enhance the thematic layers and symbolic meanings of the story.
-   - **Atmospheric and Emotional Resonance**: These motifs contribute to the story’s emotional tone and aesthetic richness, adding complexity to the reader’s experience.
+###### 2.2.1.1. **Symbolic Motifs**
+  - **Definition**: Recurring symbols or images that reinforce the story's themes.
+  - **Characteristics**
+    - **Thematic Consistency**: Supports and highlights the central themes, weaving them throughout the narrative.
+    - **Visual and Conceptual Reinforcement**: Uses symbols to create a layered and cohesive story that resonates with readers.
+    - **Subtextual Meaning**: Adds depth by prompting readers to look beyond the literal to understand the broader implications.
 
-**Contextualization**:
-   Free motifs serve to enrich the narrative beyond its basic plot structure. These elements add depth and texture to the story, creating layers of meaning, symbolism, or emotional impact. While not necessary for advancing the plot, free motifs make the story more engaging and thematically resonant.
+###### 2.2.1.2. **Subplots**
+  - **Definition**: Minor narrative arcs that add depth without affecting the main storyline.
+  - **Characteristics**
+    - **Character Exploration**: Provides opportunities to explore secondary characters and their development.
+    - **Enhanced World-Building**: Expands on the story’s universe, giving context and richness to the main plot.
+    - **Thematic Echoes**: Often reflects or contrasts with the main plot, enhancing the overall narrative complexity.
 
-**Examples**:
-   - In *The Great Gatsby* by F. Scott Fitzgerald, the green light at the end of Daisy’s dock is a free motif. Although it is not essential to the narrative’s progression, it symbolizes Gatsby’s unattainable dreams and adds thematic depth to the story.
+###### 2.2.1.3. **Background Details**
+  - **Definition**: Descriptions or elements that contribute to the setting or mood, without directly influencing the plot.
+  - **Characteristics**
+    - **Atmospheric Enhancement**: Builds a vivid world that draws readers into the story through sensory details.
+    - **Contextual Support**: Frames the main narrative, providing a sense of realism and depth without altering the plot.
+    - **Mood Creation**: Shapes the emotional tone of the story, setting the stage for how scenes are perceived.
+
 
 ---
 
-##### Implications of Narrative Functions
+##### 2.2.2. Implications of Narrative Functions
 
 **Understanding Story Structure**:
    Tomashevsky’s framework helps distinguish between elements that are structurally essential to the plot and those that enhance the thematic and emotional layers of the narrative. By recognizing bound and free motifs, readers gain insight into the mechanics of storytelling and can better appreciate the craftsmanship involved in narrative construction.

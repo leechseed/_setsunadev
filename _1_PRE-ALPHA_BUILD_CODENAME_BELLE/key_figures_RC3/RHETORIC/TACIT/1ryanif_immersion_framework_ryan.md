@@ -18,23 +18,25 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Title: **Ryan's Immersion Framework**
+### Title: **Ryan's Immersion Framework**
 
 **Immersion**:
    **Definition**: Marie-Laure Ryan defines *immersion* as the experience of being transported into a fictional world, where the reader or viewer becomes fully absorbed in the narrative. In her work *"Narrative as Virtual Reality,"* she explores how different media—literature, film, video games, and virtual reality—create immersive experiences.
 
 ---
 
-##### Key Concepts
+### Key Concepts
 
-##### Traditional vs. Digital Narratives
+#### Traditional vs. Digital Narratives
 
 **Definition**:
    Ryan differentiates between traditional and digital narratives in how they achieve immersion. Traditional narratives, such as those found in literature, rely heavily on the reader’s imagination to create a sense of immersion. In contrast, digital and virtual narratives, such as those in video games or virtual reality, achieve immersion through sensory engagement and interactivity, allowing the audience to experience the fictional world more directly.
 
 ---
 
-##### Traditional Narratives
+#### Traditional Narratives
+
+##### **Components of Traditional Narratives**
 
 **Imaginative Immersion**:
    Traditional narratives rely on language to evoke images, emotions, and sensations. Readers engage with the text, visualizing the world and characters through imagination. This process allows for personal engagement as each reader’s interpretation is unique.
@@ -54,7 +56,10 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Digital Narratives
+#### Digital Narratives
+
+
+##### **Components of Digital Narratives**
 
 **Sensory Engagement**:
    Digital narratives, like those found in video games, engage multiple senses. Visual and auditory stimuli create more immediate immersion, allowing users to explore fully realized environments.
@@ -82,7 +87,9 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Virtual Narratives
+#### Virtual Narratives
+
+##### **Components of Virtual Narratives**
 
 **Sensory Engagement**:
    Virtual narratives, particularly in virtual reality (VR), elevate sensory engagement to a new level by providing an immersive, 360-degree environment that users can physically navigate and explore.
@@ -110,7 +117,7 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-##### Implications of Immersion Framework
+### Implications of Immersion Framework
 
 **Key Insight or Implication**:
    Ryan’s work on immersion provides a comprehensive framework for analyzing how different media engage audiences. Her distinction between traditional, digital, and virtual narratives underscores the diverse methods through which stories capture our imagination.
