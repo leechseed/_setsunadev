@@ -20,12 +20,31 @@ KNOWLEDGE TYPE: TACIT
 
 ### **Key Concepts**:
 
-  - **Socially Situated Language**:
-      - **Definition**: Socially situated language refers to the idea that language use is deeply embedded in the social environment in which it occurs. Each speech genre has its own set of rules, conventions, and expectations that guide how language is produced and understood in a given context. These rules govern everything from the choice of vocabulary and tone to the structure of sentences and the forms of address. For example, the language used in a legal setting, a scientific conference, or a casual conversation with friends will differ significantly, reflecting the social norms and communicative goals of each context.
-      - **Characteristics**:
-        - **Context-Specific Rules**: Each speech genre has unique conventions that dictate appropriate language use, including formality, terminology, and structure. These rules are often implicit and are learned through social interaction and cultural immersion.
-        - **Functionality**: Speech genres are functional, meaning they are designed to fulfill specific purposes within a social context. For instance, the genre of a business meeting is oriented towards decision-making and information exchange, while a wedding toast is geared towards celebration and emotional expression.
-        - **Adaptability**: While speech genres have established conventions, they are also adaptable. Speakers can modify their language to suit different audiences or purposes, demonstrating the flexibility of language within social contexts.
+#### **Socially Situated Language**:
+  - **Definition**: Socially situated language refers to the idea that language use is deeply embedded in the social environment in which it occurs. Each speech genre has its own set of rules, conventions, and expectations that guide how language is produced and understood in a given context. These rules govern everything from the choice of vocabulary and tone to the structure of sentences and the forms of address. For example, the language used in a legal setting, a scientific conference, or a casual conversation with friends will differ significantly, reflecting the social norms and communicative goals of each context.
+
+##### **Components of Socially Situated Language**
+###### **Context-Specific Rules**
+  - **Definition**: Each speech genre has unique conventions that dictate appropriate language use, including formality, terminology, and structure. These rules are often implicit and are learned through social interaction and cultural immersion.
+  - **Characteristics**
+    - **Conventional Language Use**: Follows established norms specific to the context, such as professional jargon or casual language.
+    - **Cultural Relevance**: Reflects cultural practices and social expectations, guiding how speakers communicate effectively.
+    - **Implicit Learning**: Acquired through social exposure and participation, often without formal instruction.
+
+###### **Functionality**
+  - **Definition**: Speech genres are functional, meaning they are designed to fulfill specific purposes within a social context. For instance, the genre of a business meeting is oriented towards decision-making and information exchange, while a wedding toast is geared towards celebration and emotional expression.
+  - **Characteristics**
+    - **Purpose-Driven**: Each genre has a clear goal, such as informing, persuading, or entertaining, that shapes the language and structure used.
+    - **Audience-Centric**: Tailored to meet the needs and expectations of the intended audience, enhancing communication effectiveness.
+    - **Goal-Oriented Structure**: Organized in a way that best achieves its intended function, like a logical order in presentations or an emotive flow in speeches.
+
+###### **Adaptability**
+  - **Definition**: While speech genres have established conventions, they are also adaptable. Speakers can modify their language to suit different audiences or purposes, demonstrating the flexibility of language within social contexts.
+  - **Characteristics**
+    - **Audience Awareness**: Adjusts language, tone, and formality based on the audience’s background and expectations.
+    - **Contextual Flexibility**: Adapts to shifts in social or situational context, showing the speaker’s ability to navigate different communicative needs.
+    - **Innovative Expression**: Allows for creative modifications while maintaining the core characteristics of the speech genre.
+
 
 ### **Theoretical Significance**:
   - **Impact on Discourse Analysis**: Bakhtin’s Speech Genres Framework has had a profound influence on discourse analysis, a field that studies how language is used in social contexts. By introducing the concept of speech genres, Bakhtin provided a tool for understanding how language functions differently across various social settings. This framework has been particularly useful in analyzing how power dynamics, social roles, and cultural norms are reflected in and reinforced by language use. Speech genres offer a way to categorize and analyze the diverse forms of communication that occur in everyday life, professional environments, and cultural practices, revealing the underlying social structures that shape discourse.

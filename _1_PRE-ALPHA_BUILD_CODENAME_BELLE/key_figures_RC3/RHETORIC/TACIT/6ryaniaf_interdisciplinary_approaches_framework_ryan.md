@@ -30,10 +30,27 @@ KNOWLEDGE TYPE: TACIT
    Cognitive narratology is one of the key areas where Ryan has made significant contributions. This field examines how narratives engage with and reflect human cognitive processes, including perception, memory, imagination, and emotion. By understanding the cognitive mechanisms involved in narrative processing, cognitive narratology seeks to explain how stories shape and are shaped by the human mind.
 
 ##### **Components of Cognitive **Narratology**
-**Characteristics**:
-   - **Integration of Cognitive Science**: Cognitive narratology combines narrative theory with cognitive science, exploring how mental processes like memory, attention, and imagination interact with narrative structures.
-   - **Narrative as a Cognitive Artifact**: Ryan and others in this field view narratives as cognitive artifacts—tools created by and for the human mind to organize, interpret, and communicate experiences.
-   - **Impact on Reader Engagement**: This approach provides insights into how readers or audiences engage with narratives on a cognitive level, including how they construct mental models of story worlds and empathize with characters.
+###### **Integration of Cognitive Science**
+  - **Definition**: Cognitive narratology combines narrative theory with cognitive science, exploring how mental processes like memory, attention, and imagination interact with narrative structures.
+  - **Characteristics**
+    - **Interdisciplinary Approach**: Bridges the gap between cognitive psychology and literary analysis, enriching the understanding of how stories are processed.
+    - **Mental Process Exploration**: Investigates how cognitive functions such as memory recall and mental imagery are activated by narratives.
+    - **Theoretical Frameworks**: Utilizes theories from cognitive science to explain reader interpretation and narrative comprehension.
+
+###### **Narrative as a Cognitive Artifact**
+  - **Definition**: Ryan and others in this field view narratives as cognitive artifacts—tools created by and for the human mind to organize, interpret, and communicate experiences.
+  - **Characteristics**
+    - **Organizational Tool**: Narratives help structure chaotic experiences into understandable sequences, aiding in memory and understanding.
+    - **Meaning-Making**: Serves as a method for individuals to make sense of life events by framing them in narrative form.
+    - **Adaptive Function**: Highlights how storytelling has evolved as a means for humans to convey complex information efficiently.
+
+###### **Impact on Reader Engagement**
+  - **Definition**: This approach provides insights into how readers or audiences engage with narratives on a cognitive level, including how they construct mental models of story worlds and empathize with characters.
+  - **Characteristics**
+    - **Empathy and Perspective-Taking**: Examines how readers emotionally connect with characters, leading to deeper engagement and understanding.
+    - **Mental Model Construction**: Explores how readers build internal representations of story worlds, characters, and plot developments.
+    - **Engagement Analysis**: Studies how elements like suspense, surprise, and relatability affect readers’ cognitive and emotional involvement.
+
 
 
 

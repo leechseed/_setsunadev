@@ -30,10 +30,28 @@ KNOWLEDGE TYPE: TACIT
 
 
 ##### **Components of Analyzing Narrative Across Media**
-**Characteristics**:
-   - **Unique Capabilities**: Each medium—whether it be literature, film, video games, or virtual reality—has its own set of tools and techniques that shape how stories are told and received. For example, literature can explore interior monologues and detailed descriptions, while film relies on visual storytelling and sound design.
-   - **Limitations**: Just as each medium has strengths, it also has limitations that impact narrative construction. For instance, while literature can delve deeply into a character’s thoughts, it cannot visually represent actions or environments in the same way that film can.
-   - **Narrative Adaptation**: When narratives are adapted from one medium to another, understanding the specificities of each medium is critical. The adaptation process often involves significant changes to the narrative structure, pacing, and style to suit the new medium's strengths and overcome its limitations.
+
+###### **Unique Capabilities**
+  - **Definition**: Each medium—whether it be literature, film, video games, or virtual reality—has its own set of tools and techniques that shape how stories are told and received.
+  - **Characteristics**
+    - **Medium-Specific Techniques**: Literature can use interior monologues and detailed descriptions, film employs visual storytelling and sound, and video games offer interactive decision-making.
+    - **Sensory Engagement**: Each medium engages different senses; for instance, film and virtual reality use both sight and sound, while literature depends on imagination.
+    - **Narrative Depth**: The ability to explore complex themes varies, with literature often providing introspection and virtual reality offering immersive, experiential storytelling.
+
+###### **Limitations**
+  - **Definition**: Just as each medium has strengths, it also has limitations that impact narrative construction.
+  - **Characteristics**
+    - **Expressive Constraints**: Literature can’t visually represent scenes, while film may struggle to portray deep internal monologues.
+    - **Interaction Limits**: Video games may face challenges in pacing due to player choices, unlike the fixed flow in films or books.
+    - **Technological Dependence**: Mediums like virtual reality require advanced hardware, limiting accessibility and narrative consistency.
+
+###### **Narrative Adaptation**
+  - **Definition**: When narratives are adapted from one medium to another, understanding the specificities of each medium is critical.
+  - **Characteristics**
+    - **Structural Modifications**: Adaptations often require altering the story’s pacing or scenes to fit the new medium’s strengths (e.g., more visual scenes in film).
+    - **Emphasis Shifts**: Adapting literature to film may shift from internal thoughts to visual cues, impacting how the story is perceived.
+    - **Creative Reinterpretation**: Adaptations might introduce new elements or condense parts of the original story to better align with the capabilities of the new medium.
+
 
 
 

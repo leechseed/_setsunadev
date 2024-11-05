@@ -27,17 +27,28 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Metalepsis**
 
-  - **Extradiegetic Level**:
-    - **Definition**: The outermost level of the narrative, where the narrator exists outside the story world. The extradiegetic narrator typically provides the overarching voice that frames the narrative, offering commentary, description, or guidance to the reader.
-    - **Example**: An author’s commentary that provides context or interpretation of the events in the story, separate from the narrative action.
+###### **Extradiegetic Level**
+  - **Definition**: The outermost level of the narrative, where the narrator exists outside the story world. The extradiegetic narrator typically provides the overarching voice that frames the narrative, offering commentary, description, or guidance to the reader.
+  - **Characteristics**
+    - **Narrative Authority**: The extradiegetic narrator holds control over the story’s presentation and provides context, commentary, or framing for the intradiegetic narrative.
+    - **Detached Perspective**: Maintains an external viewpoint that allows for a broader overview and objective commentary on the story.
+    - **Guiding Voice**: Acts as a mediator between the story and the reader, influencing how the narrative is interpreted and understood.
 
-  - **Intradiegetic Level**:
-    - **Definition**: The level within the story world, where the characters and events take place. The intradiegetic level is the primary narrative layer where the plot unfolds and where characters interact with one another.
-    - **Example**: A character within a novel experiencing and reacting to the events of the plot.
+###### **Intradiegetic Level**
+  - **Definition**: The level within the story world, where the characters and events take place. The intradiegetic level is the primary narrative layer where the plot unfolds and where characters interact with one another.
+  - **Characteristics**
+    - **Character Interaction**: The intradiegetic level encompasses the events and dialogues that occur among characters within the story.
+    - **Plot Development**: This level serves as the main stage for the narrative, where the storyline progresses and conflicts arise.
+    - **Subjective Experiences**: Events are experienced from the perspectives of characters, allowing for direct engagement with their thoughts, feelings, and actions.
 
-  - **Metadiegetic Level**:
-    - **Definition**: A story within a story, creating an additional layer of narrative. The metadiegetic level involves narratives that are embedded within the primary story, often told by a character within the intradiegetic level.
-    - **Example**: A character recounting a past event or telling a story within the main narrative, creating a nested narrative structure.
+###### **Metadiegetic Level**
+  - **Definition**: A story within a story, creating an additional layer of narrative. The metadiegetic level involves narratives that are embedded within the primary story, often told by a character within the intradiegetic level.
+  - **Characteristics**
+    - **Embedded Narratives**: Provides a nested storytelling structure that can add depth and context to the main plot.
+    - **Reflective or Paralleled Themes**: Often mirrors or contrasts the main narrative, enriching the overall story with additional layers of meaning.
+    - **Character as Narrator**: A character within the intradiegetic level acts as the narrator of the metadiegetic story, adding subjectivity and potentially unreliable narration to the embedded tale.
+
+
 
 ### **Transgressions**
   - **Metalepsis Transgressions**:

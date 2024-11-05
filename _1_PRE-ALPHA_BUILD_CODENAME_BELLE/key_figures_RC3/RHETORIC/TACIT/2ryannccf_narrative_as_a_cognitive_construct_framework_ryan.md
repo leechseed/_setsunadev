@@ -30,10 +30,26 @@ KNOWLEDGE TYPE: TACIT
    Ryan explores how digital narratives, with their interactive and immersive features, engage the reader’s cognitive faculties in new ways. Unlike traditional linear narratives, digital narratives often allow readers to influence the direction of the story, thus creating a more dynamic and participatory relationship between the narrative and its audience.
 
 ##### **Components of Cognitive Engagement in Digital Narritives**
-**Characteristics**:
-   - **Interactivity**: Digital narratives often require the reader to make choices that influence the story's outcome, making the reading experience more engaging and personalized.
-   - **Immersion**: The use of multimedia elements, such as visuals, sound, and hypertext, can create a more immersive experience, drawing the reader deeper into the narrative world.
-   - **Non-Linear Structure**: Many digital narratives feature non-linear structures, where the sequence of events can vary based on the reader's decisions, leading to multiple possible storylines or endings.
+###### **Interactivity**
+  - **Definition**: Digital narratives often require the reader to make choices that influence the story's outcome, making the reading experience more engaging and personalized.
+  - **Characteristics**
+    - **Reader Agency**: Empowers the reader to direct the story, influencing plot development and character actions.
+    - **Dynamic Story Paths**: Multiple paths and outcomes are created based on reader input, enhancing replayability.
+    - **Engagement Enhancement**: Increases reader investment by making them an active participant in the narrative.
+
+###### **Immersion**
+  - **Definition**: The use of multimedia elements, such as visuals, sound, and hypertext, can create a more immersive experience, drawing the reader deeper into the narrative world.
+  - **Characteristics**
+    - **Multisensory Stimulation**: Combines visual, auditory, and sometimes interactive elements to create a rich narrative atmosphere.
+    - **Enhanced Realism**: Multimedia details contribute to a believable world that feels more tangible.
+    - **Deepened Emotional Connection**: Sensory cues reinforce emotional scenes, intensifying reader involvement.
+
+###### **Non-Linear Structure**
+  - **Definition**: Many digital narratives feature non-linear structures, where the sequence of events can vary based on the reader's decisions, leading to multiple possible storylines or endings.
+  - **Characteristics**
+    - **Flexible Plotlines**: Readers experience the story in different ways based on the paths they choose, creating unique story arcs.
+    - **Exploratory Reading**: Encourages readers to navigate through the narrative in a non-sequential manner.
+    - **Multiple Endings**: Offers various conclusions that depend on the reader’s choices, fostering curiosity and exploration.
 
 
 ---

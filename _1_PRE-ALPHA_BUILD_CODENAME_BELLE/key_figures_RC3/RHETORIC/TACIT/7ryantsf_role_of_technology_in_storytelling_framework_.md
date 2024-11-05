@@ -32,9 +32,27 @@ KNOWLEDGE TYPE: TACIT
 ##### **Components of Technological Influence on Narrative**
 
 **Characteristics**:
-   - **Transformation of Narrative Forms**: Technology has led to the development of new narrative forms, such as hypertext fiction, interactive stories, and transmedia storytelling, which differ significantly from traditional linear narratives. These forms often involve non-linearity, interactivity, and multimedia integration, offering more dynamic and varied storytelling experiences.
-   - **Expanded Reader Engagement**: The shift to digital media has expanded the ways in which readers engage with narratives. For example, in interactive digital stories, readers may have the ability to influence the outcome of the narrative, becoming active participants in the storytelling process rather than passive consumers.
-   - **New Challenges for Authors**: While technology provides new tools for storytelling, it also introduces challenges for authors. These include the need to adapt to new narrative structures, the complexity of creating interactive content, and the necessity of considering how readers will navigate and interpret non-linear or multimodal narratives.
+###### **Transformation of Narrative Forms**
+  - **Definition**: Technology has led to the development of new narrative forms, such as hypertext fiction, interactive stories, and transmedia storytelling, which differ significantly from traditional linear narratives.
+  - **Characteristics**
+    - **Non-Linearity**: Introduces non-linear structures where readers can choose different paths, resulting in multiple possible storylines and outcomes.
+    - **Multimedia Integration**: Combines text, visuals, audio, and video to create a richer and more immersive narrative experience.
+    - **Interactivity**: Allows readers to engage directly with the story, influencing its progression and adding a participatory element to the storytelling process.
+
+###### **Expanded Reader Engagement**
+  - **Definition**: The shift to digital media has expanded the ways in which readers engage with narratives, enabling more active participation.
+  - **Characteristics**
+    - **User Influence**: Empowers readers to make choices that shape the story’s direction, making them co-creators of the narrative.
+    - **Immersive Interaction**: Enhances engagement through interactive elements, such as clickable story paths, decision-making, and multimedia experiences.
+    - **Dynamic Participation**: Moves readers from being passive consumers to active participants, fostering a deeper connection with the content.
+
+###### **New Challenges for Authors**
+  - **Definition**: While technology provides new tools for storytelling, it also introduces challenges for authors, such as adapting to new narrative structures and the complexity of interactive content.
+  - **Characteristics**
+    - **Adaptation to Complexity**: Requires authors to learn and implement complex storytelling techniques that cater to non-linear and interactive formats.
+    - **Reader Navigation**: Challenges authors to design stories that guide readers through interactive or non-linear narratives without causing confusion or disorientation.
+    - **Technical Considerations**: Involves integrating technology effectively, balancing creative storytelling with technical capabilities and limitations.
+
 
 
 ---

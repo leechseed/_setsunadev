@@ -29,11 +29,26 @@ KNOWLEDGE TYPE: TACIT
    Narrative defamiliarization refers to the use of unconventional narrative structures to challenge the reader’s usual way of understanding stories. By altering familiar storytelling conventions, such as chronology or perspective, authors disrupt expectations and encourage readers to engage with the narrative in new ways.
 
 ##### **Components of Narrative Defamiliariation**
+###### **Non-Linear Storytelling**
+  - **Definition**: Breaks the chronological sequence of events, creating a fragmented or layered narrative that prompts readers to piece together the story themselves.
+  - **Characteristics**
+    - **Chronological Disruption**: Alters the traditional time flow to create suspense or thematic depth.
+    - **Reader Involvement**: Requires active participation as readers reconstruct the narrative order and meaning.
+    - **Complex Plot Structure**: Uses flashbacks, flash-forwards, or parallel timelines to enrich the narrative’s complexity.
 
-**Characteristics**:
-   - **Non-Linear Storytelling**: Breaks the chronological sequence of events, creating a fragmented or layered narrative that prompts readers to piece together the story themselves.
-   - **Shifts in Perspective**: Employs changes in narrative voice or point of view to create disorientation or highlight different interpretations of the story.
-   - **Structural Innovation**: Uses experimental formats or structures, such as stream-of-consciousness or nested narratives, to engage readers in a unique storytelling experience.
+###### **Shifts in Perspective**
+  - **Definition**: Employs changes in narrative voice or point of view to create disorientation or highlight different interpretations of the story.
+  - **Characteristics**
+    - **Multiple Viewpoints**: Presents the story through various characters’ eyes, offering diverse interpretations.
+    - **Narrative Complexity**: Adds depth by showing how different perspectives impact the understanding of events.
+    - **Disorientation and Insight**: Creates a sense of mystery or challenges readers to assess the reliability of each viewpoint.
+
+###### **Structural Innovation**
+  - **Definition**: Uses experimental formats or structures, such as stream-of-consciousness or nested narratives, to engage readers in a unique storytelling experience.
+  - **Characteristics**
+    - **Experimental Formats**: Utilizes unique storytelling techniques that may break traditional conventions.
+    - **Reader Challenge**: Encourages active engagement as readers adapt to unconventional structures.
+    - **Enhanced Creativity**: Allows authors to express ideas in innovative ways that resonate differently with readers.
 
 ---
 
@@ -44,11 +59,26 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Thematic Defamiliarization**
 
-**Characteristics**:
-   - **Subversion of Expectations**: Introduces themes that go against conventional norms, prompting readers to question established beliefs or perspectives.
-   - **Layered Meaning**: Integrates complex or abstract themes that require deeper analysis and interpretation, moving beyond simple or familiar ideas.
-   - **Reflective Engagement**: Encourages readers to critically think about the narrative’s themes, fostering a more active and contemplative reading experience.
+###### **Subversion of Expectations**
+  - **Definition**: Introduces themes that go against conventional norms, prompting readers to question established beliefs or perspectives.
+  - **Characteristics**
+    - **Unconventional Themes**: Challenges societal norms or conventional story tropes, adding depth and originality.
+    - **Surprising Developments**: Keeps readers engaged by presenting unexpected narrative turns or outcomes.
+    - **Thought-Provoking Content**: Pushes readers to reconsider preconceived ideas and think critically about the narrative.
 
+###### **Layered Meaning**
+  - **Definition**: Integrates complex or abstract themes that require deeper analysis and interpretation, moving beyond simple or familiar ideas.
+  - **Characteristics**
+    - **Symbolic Elements**: Employs motifs and symbols that carry multiple interpretations and add thematic depth.
+    - **Complex Narratives**: Uses subtle hints and interwoven themes to encourage deeper exploration.
+    - **Abstract Concepts**: Introduces themes that challenge readers to engage in analytical thinking to fully grasp the narrative’s meaning.
+
+###### **Reflective Engagement**
+  - **Definition**: Encourages readers to critically think about the narrative’s themes, fostering a more active and contemplative reading experience.
+  - **Characteristics**
+    - **Active Reading**: Requires readers to reflect on the narrative’s implications and connect them to broader contexts.
+    - **Intellectual Stimulation**: Promotes analytical thought and interpretation, deepening the reader’s interaction with the text.
+    - **Thematic Exploration**: Invites readers to consider moral, philosophical, or social themes in the story, enhancing their involvement.
 
 
 ---
