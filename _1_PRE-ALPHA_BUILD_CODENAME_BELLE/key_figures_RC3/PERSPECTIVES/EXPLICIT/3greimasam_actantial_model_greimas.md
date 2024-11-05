@@ -11,133 +11,207 @@ Summary: "Greimas's Actantial Model is a structuralist framework that identifies
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
 ---
+
+- [1. Title: **Greimas's Actantial Model**](#1-title-greimass-actantial-model)
+- [2. Key Concepts](#2-key-concepts)
+  - [2.1. Subject](#21-subject)
+    - [2.1.1. **Components of Subject**](#211-components-of-subject)
+      - [2.1.1.1. **Central Role**](#2111-central-role)
+      - [2.1.1.2. **Agency**](#2112-agency)
+      - [2.1.1.3. **Development**](#2113-development)
+  - [2.2. Object](#22-object)
+    - [2.2.1. **Components of Object**](#221-components-of-object)
+      - [2.2.1.1. **Motivational Force**](#2211-motivational-force)
+      - [2.2.1.2. **Symbolic Meaning**](#2212-symbolic-meaning)
+      - [2.2.1.3. **Conflict Catalyst**](#2213-conflict-catalyst)
+  - [2.3. Sender](#23-sender)
+    - [2.3.1. **Components of Sender**](#231-components-of-sender)
+      - [2.3.1.1. **External Sender**](#2311-external-sender)
+      - [2.3.1.2. **Internal Sender**](#2312-internal-sender)
+  - [2.4. Receiver](#24-receiver)
+    - [2.4.1. **Components of Receiver**](#241-components-of-receiver)
+      - [2.4.1.1. **External Receiver**](#2411-external-receiver)
+      - [2.4.1.2. **Internal Receiver**](#2412-internal-receiver)
+  - [2.5. Helper](#25-helper)
+    - [2.5.1. **Components of Helper**](#251-components-of-helper)
+      - [2.5.1.1. **Character Helper**](#2511-character-helper)
+      - [2.5.1.2. **Abstract Helper**](#2512-abstract-helper)
+  - [2.6. Opponent](#26-opponent)
+    - [2.6.1. **Components of Opponent**](#261-components-of-opponent)
+      - [2.6.1.1. **Antagonist Opponent**](#2611-antagonist-opponent)
+      - [2.6.1.2. **Abstract Opponent**](#2612-abstract-opponent)
+  - [2.7. Implications of **Actantial Model**](#27-implications-of-actantial-model)
+
+
 ---
 
-##### Title: **Greimas's Actantial Model**
+### 1. Title: **Greimas's Actantial Model**
 
 **Actantial Model**:
    **Definition**: Algirdas Julien Greimas’s *Actantial Model* is a structuralist framework for analyzing the roles and functions of characters in a narrative. The model identifies six essential actants—Subject, Object, Sender, Receiver, Helper, and Opponent—that interact to form the core of the narrative. These actants can represent characters, abstract concepts, or collective entities, making the model versatile for analyzing diverse narrative structures across various media.
 
 ---
 
-##### Key Concepts
+### 2. Key Concepts
 
-##### Subject and Object
+#### 2.1. Subject
 
 **Definition**:
-   The *Subject* is the character or entity pursuing a goal, while the *Object* is the goal or desire that the Subject seeks to obtain or achieve.
+   The *Subject* is the character or entity pursuing a goal.
 
-**Types**:
-   - **Subject**: The protagonist or main character that actively pursues the Object.
-   - **Object**: The desired goal or endpoint of the Subject’s quest.
 
-**Characteristics**:
-   - **Centrality**: The Subject’s pursuit of the Object drives the narrative forward.
-   - **Goal-Oriented**: The Object defines the purpose and direction of the Subject’s actions.
-   - **Narrative Tension**: The relationship between Subject and Object creates the primary tension in the narrative, as the Subject overcomes obstacles to achieve the Object.
+##### 2.1.1. **Components of Subject**
 
-**Contextualization**:
-   The Subject’s journey to obtain the Object is the foundation of the narrative, shaping its progression and structure. The nature of the Object often defines the genre and themes of the narrative, such as love, power, or truth.
+###### 2.1.1.1. **Central Role**
+  - **Definition**: The Subject’s actions and decisions are crucial to moving the plot forward, forming the core of the narrative.
+  - **Characteristics**
+    - **Plot Driver**: The Subject’s choices and actions set the story in motion and keep it progressing, establishing the foundation for conflict and resolution.
+    - **Narrative Focus**: The story often revolves around the Subject’s journey, making them the focal point for character interactions and key events.
+    - **Core Connection**: The Subject’s involvement ensures that their motivations and goals are closely tied to the main themes and direction of the narrative.
 
-**Examples**:
-   - **Frodo and the One Ring in *The Lord of the Rings***: Frodo (Subject) seeks to destroy the One Ring (Object).
-   - **Sherlock Holmes and the Solution to a Mystery**: Holmes (Subject) seeks to solve the mystery (Object).
+###### 2.1.1.2. **Agency**
+  - **Definition**: Demonstrates active pursuit and determination, embodying the drive to overcome challenges in reaching their goal.
+  - **Characteristics**
+    - **Proactive Behavior**: Takes initiative rather than passively reacting to events, showing strength and commitment in the face of obstacles.
+    - **Decision-Making Power**: Exercises control over their path, influencing the story through their choices and adaptability.
+    - **Resilience and Drive**: Embodies perseverance, displaying the determination needed to push forward despite setbacks and challenges.
+
+###### 2.1.1.3. **Development**
+  - **Definition**: Often experiences growth or change throughout the pursuit, reflecting personal evolution and resilience.
+  - **Characteristics**
+    - **Character Arc**: Shows progression, with the Subject learning from experiences and evolving in response to their journey.
+    - **Emotional Growth**: Develops deeper emotional awareness or maturity, adding complexity to their character.
+    - **Transformational Impact**: The pursuit shapes the Subject, leaving them changed by the end of the narrative, reinforcing themes of resilience and transformation.
 
 ---
 
-##### Sender
+#### 2.2. Object
+
+**Definition**:
+   The *Object* is the goal or desire that the Subject seeks to obtain or achieve.
+
+
+##### 2.2.1. **Components of Object**  
+###### 2.2.1.1. **Motivational Force**
+  - **Definition**: Serves as the primary purpose behind the Subject’s actions, giving the narrative direction and focus.
+  - **Characteristics**
+    - **Guides the Plot**: Provides the reason for the Subject’s journey or actions, setting the story in motion and maintaining its momentum.
+    - **Clarity of Purpose**: Offers the Subject a clear goal, ensuring that their actions align with the overall direction of the narrative.
+    - **Driving Ambition**: Instills a sense of urgency and passion in the Subject, making their pursuit compelling and engaging for the reader.
+
+###### 2.2.1.2. **Symbolic Meaning**
+  - **Definition**: Can represent more than just a physical goal, embodying themes such as love, power, freedom, or knowledge.
+  - **Characteristics**
+    - **Layered Significance**: Holds deeper thematic value, reinforcing the narrative’s underlying messages or moral questions.
+    - **Emotional Resonance**: Adds richness to the story by connecting the Object to universal themes that resonate with the reader.
+    - **Metaphorical Representation**: Transcends its literal definition, symbolizing broader concepts that reflect the protagonist’s journey or personal growth.
+
+###### 2.2.1.3. **Conflict Catalyst**
+  - **Definition**: The pursuit of the Object often leads to challenges, rivalries, and obstacles that create narrative tension and drive character interaction.
+  - **Characteristics**
+    - **Obstacle Creation**: Introduces conflicts or challenges that test the Subject’s resolve and add complexity to the plot.
+    - **Character Dynamics**: Sparks interactions, alliances, and rivalries among characters, shaping relationships and narrative depth.
+    - **Heightened Stakes**: Amplifies the tension and risk within the story, making the outcome of the pursuit crucial to the Subject and those around them.
+
+
+---
+
+#### 2.3. Sender
 
 **Definition**:
    The *Sender* is the entity that initiates or motivates the Subject’s quest by assigning a mission, desire, or challenge.
 
-**Types**:
-   - **External Sender**: A character, group, or authority outside the Subject’s inner world that provides the objective or quest.
-   - **Internal Sender**: An internal force, such as personal desire, conscience, or morality, that motivates the Subject to pursue the Object.
+##### 2.3.1. **Components of Sender**  
 
-**Characteristics**:
-   - **Initiating Force**: The Sender sets the narrative in motion by motivating the Subject’s actions.
-   - **Authority**: The Sender often holds a position of authority or influence over the Subject.
-   - **Mission Definition**: The Sender defines the goal or mission that the Subject must complete.
+###### 2.3.1.1. **External Sender**
+  - **Definition**: A character, group, or authority outside the Subject’s inner world that provides the objective or quest.
+  - **Characteristics**
+    - **Directive Influence**: Acts as a catalyst for the Subject’s journey by assigning or initiating the quest, giving structure to the plot.
+    - **Source of Authority**: Often holds a position of power or significance, lending legitimacy and importance to the Subject’s pursuit.
+    - **External Motivation**: Provides an objective that is separate from the Subject’s inner desires, creating a sense of duty or obligation that propels the narrative forward.
 
-**Contextualization**:
-   The Sender’s role is critical for establishing the purpose behind the Subject’s quest, whether it’s an external command or an internal drive. By analyzing the Sender, readers can understand the source of motivation for the narrative and the relationship between the Subject and the forces guiding their journey.
+###### 2.3.1.2. **Internal Sender**
+  - **Definition**: An internal force, such as personal desire, conscience, or morality, that motivates the Subject to pursue the Object.
+  - **Characteristics**
+    - **Intrinsic Motivation**: The Subject’s pursuit is driven by their own internal desires, beliefs, or emotional needs, giving depth to their character.
+    - **Moral or Emotional Weight**: Adds complexity as the motivation often stems from personal values, guilt, ambition, or a sense of justice.
+    - **Character Development**: Encourages growth and introspection as the Subject confronts their inner conflicts and aligns their actions with their principles or goals.
 
-**Examples**:
-   - **King Arthur in the Quest for the Holy Grail**: King Arthur (Sender) initiates the quest by assigning his knights to search for the Holy Grail.
-   - **The Fairy Godmother in *Cinderella***: The Fairy Godmother (Sender) provides Cinderella with the means to pursue happiness and attend the ball.
 
 ---
 
-##### Receiver
+#### 2.4. Receiver
 
 **Definition**:
    The *Receiver* is the entity that ultimately benefits from the success of the Subject's quest. It is the target or beneficiary of the successful resolution of the narrative’s main goal.
 
-**Types**:
-   - **External Receiver**: A person, community, or society that stands to gain from the Subject's success.
-   - **Internal Receiver**: The Subject themselves, who may benefit directly from completing their own quest.
+##### 2.4.1. **Components of Receiver**  
 
-**Characteristics**:
-   - **Beneficiary**: The Receiver gains something from the Subject's achievement, whether it be tangible or intangible.
-   - **Alignment with Themes**: The Receiver’s gain often aligns with the overall message or resolution of the narrative.
-   - **Moral Reward**: The Receiver’s benefit may reflect the moral, ethical, or societal gains inherent in the story’s resolution.
+###### 2.4.1.1. **External Receiver**
+  - **Definition**: A person, community, or society that stands to gain from the Subject's success.
+  - **Characteristics**
+    - **Broader Impact**: The Subject’s actions have consequences that extend beyond personal gain, affecting others and adding stakes to the narrative.
+    - **Motivational Force**: Provides the Subject with additional reasons to pursue the quest, driven by a sense of duty, responsibility, or altruism.
+    - **Symbol of Achievement**: Represents the larger purpose or goal of the Subject’s quest, showing that success benefits more than just the protagonist, often reinforcing themes of unity or social justice.
 
-**Contextualization**:
-   The Receiver’s role determines who or what gains from the Subject’s successful quest, influencing the moral or thematic resolution of the story. Whether the Receiver is the Subject or another entity, their gain reinforces the narrative’s purpose and outcome.
-
-**Examples**:
-   - **Camelot in the Quest for the Holy Grail**: Camelot (Receiver) benefits spiritually and politically from the success of the quest.
-   - **Cinderella in *Cinderella***: Cinderella (Receiver) benefits by gaining freedom and a better life after attending the ball.
+###### 2.4.1.2. **Internal Receiver**
+  - **Definition**: The Subject themselves, who may benefit directly from completing their own quest.
+  - **Characteristics**
+    - **Personal Fulfillment**: Highlights the Subject’s emotional or psychological growth, emphasizing self-discovery, redemption, or personal victory.
+    - **Character Arc Closure**: Marks the culmination of the Subject’s journey, showing how achieving their goal leads to transformation or resolution.
+    - **Self-Centric Motivation**: Centers the quest on the Subject’s own needs or desires, adding depth by exploring their inner motivations and how they evolve through the story.
 
 ---
 
-##### Helper
+#### 2.5. Helper
 
 **Definition**:
    The *Helper* is the character, force, or entity that assists the Subject in achieving their goal. Helpers offer support, resources, or guidance that aid the Subject in overcoming obstacles.
 
-**Types**:
-   - **Character Helper**: A person or group that directly aids the Subject in their quest.
-   - **Abstract Helper**: Forces such as luck, destiny, or magical items that indirectly assist the Subject.
+##### 2.5.1. **Components of Helper**  
 
-**Characteristics**:
-   - **Supportive Role**: The Helper provides essential assistance, often at critical moments, to ensure the Subject’s progress.
-   - **Loyalty**: Helpers are often loyal allies of the Subject, embodying friendship, trust, or divine intervention.
-   - **Key Aid**: The Helper’s actions may change the course of the narrative, providing the Subject with vital aid.
+###### 2.5.1.1. **Character Helper**
+  - **Definition**: A person or group that directly aids the Subject in their quest.
+  - **Characteristics**
+    - **Supportive Role**: Provides practical assistance, guidance, or companionship, reinforcing the Subject’s ability to overcome obstacles.
+    - **Development Catalyst**: Influences the Subject’s growth by challenging or inspiring them, adding depth to character interactions and relationships.
+    - **Loyalty and Trust**: Often embodies traits of loyalty, friendship, or mentorship, contributing to the emotional richness of the narrative and strengthening the hero’s resolve.
 
-**Contextualization**:
-   Helpers are essential for illustrating the positive forces in the narrative that support the Subject. Their involvement showcases the theme of cooperation, loyalty, or destiny, helping the Subject overcome obstacles and reach their goal.
+###### 2.5.1.2. **Abstract Helper**
+  - **Definition**: Forces such as luck, destiny, or magical items that indirectly assist the Subject.
+  - **Characteristics**
+    - **Mystical Influence**: Operates beyond the Subject’s control, suggesting that fate or supernatural elements play a role in their success.
+    - **Symbolic Power**: Represents larger themes such as divine intervention, the balance of good and evil, or the hero’s worthiness.
+    - **Unpredictable Assistance**: Adds an element of surprise and intrigue, as these forces can manifest at unexpected times to alter the course of the quest.
 
-**Examples**:
-   - **Samwise Gamgee in *The Lord of the Rings***: Sam (Helper) loyally supports Frodo throughout the journey to destroy the One Ring.
-   - **The Genie in *Aladdin***: The Genie (Helper) aids Aladdin by providing magical assistance in his quest to win Jasmine’s heart.
 
 ---
 
-##### Opponent
+#### 2.6. Opponent
 
 **Definition**:
    The *Opponent* is the entity that creates obstacles, conflicts, or opposition to the Subject’s quest. Opponents hinder the Subject’s progress and serve as the primary source of narrative tension.
 
-**Types**:
-   - **Antagonist Opponent**: A specific character or group that directly opposes the Subject.
-   - **Abstract Opponent**: Forces such as fate, internal conflict, or societal norms that indirectly create challenges for the Subject.
+##### 2.6.1. **Components of Opponent**  
 
-**Characteristics**:
-   - **Conflict Creator**: The Opponent actively works to prevent the Subject from achieving their goal.
-   - **Source of Tension**: The Opponent’s actions generate the primary obstacles and conflicts that drive the plot forward.
-   - **Challenge to Overcome**: Defeating or outmaneuvering the Opponent is often necessary for the Subject’s success.
+###### 2.6.1.1. **Antagonist Opponent**
+  - **Definition**: A specific character or group that directly opposes the Subject.
+  - **Characteristics**
+    - **Direct Conflict**: Engages in overt actions to thwart the Subject’s progress, creating clear and tangible obstacles in the narrative.
+    - **Character Complexity**: Often has their own motivations, backstory, and goals, which can make them compelling and multi-dimensional adversaries.
+    - **Catalyst for Growth**: Forces the Subject to adapt, grow, and push their limits, driving the character’s development and contributing to the overall tension of the story.
 
-**Contextualization**:
-   The Opponent’s role is essential for creating conflict and tension in the narrative, driving the Subject to overcome challenges and proving their worthiness or determination. The interaction between the Subject and the Opponent highlights the thematic struggles within the story.
+###### 2.6.1.2. **Abstract Opponent**
+  - **Definition**: Forces such as fate, internal conflict, or societal norms that indirectly create challenges for the Subject.
+  - **Characteristics**
+    - **Symbolic Challenge**: Represents broader themes like destiny, existential dilemmas, or cultural expectations, adding layers to the story’s meaning.
+    - **Internal Struggle**: Often involves the Subject battling their own fears, doubts, or moral dilemmas, highlighting character depth and inner conflict.
+    - **Subtle Influence**: Operates in the background, shaping the Subject’s journey and choices through less direct means, such as environmental factors or societal pressure.
 
-**Examples**:
-   - **Sauron in *The Lord of the Rings***: Sauron (Opponent) represents the dark force opposing Frodo’s mission to destroy the One Ring.
-   - **Jafar in *Aladdin***: Jafar (Opponent) seeks to thwart Aladdin’s plans and take control of the kingdom.
 
 ---
 
-##### Implications of **Actantial Model**
+#### 2.7. Implications of **Actantial Model**
 
 **Impact on Structuralist Narratology**:
    Greimas’s Actantial Model has significantly influenced structuralist narratology by providing a systematic way to analyze the functions and roles of characters in narratives. It emphasizes the underlying structure of stories and highlights the relationships between different narrative elements.
