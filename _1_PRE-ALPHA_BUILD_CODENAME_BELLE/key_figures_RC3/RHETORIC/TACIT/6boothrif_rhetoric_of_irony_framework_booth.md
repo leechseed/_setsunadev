@@ -30,15 +30,27 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Types of Irony**
 
-**Types**:
-   - **Verbal Irony**: Where the intended meaning of a statement is opposite to its literal meaning.
-     - **Example**: In *Pride and Prejudice* by Jane Austen, Mr. Bennet’s sarcastic remarks often convey the opposite of what he literally says, requiring the reader to recognize the underlying critique of societal norms.
-   
-   - **Situational Irony**: Where there is a discrepancy between what is expected to happen and what actually occurs.
-     - **Example**: In *O. Henry’s* "The Gift of the Magi," the situational irony of the couple’s sacrifice, where each sells their prized possession to buy a gift for the other, poignantly underscores the theme of love and sacrifice.
-   
-   - **Dramatic Irony**: Where the audience knows something that the characters do not, creating tension or humor.
-     - **Example**: In *Oedipus Rex* by Sophocles, the audience knows Oedipus’s true identity and fate long before he does, heightening the sense of impending doom.
+###### **Verbal Irony**
+  - **Definition**: Where the intended meaning of a statement is opposite to its literal meaning.
+  - **Characteristics**
+    - **Dual Interpretation**: The literal meaning contrasts with the underlying, intended message, creating a nuanced layer of understanding.
+    - **Humor and Wit**: Often used to add humor or sarcasm, making dialogue or narration more engaging.
+    - **Character Insight**: Provides insight into a character’s true thoughts or intentions, revealing deeper aspects of their personality.
+
+###### **Situational Irony**
+  - **Definition**: Where there is a discrepancy between what is expected to happen and what actually occurs.
+  - **Characteristics**
+    - **Unexpected Outcomes**: Creates surprise and engages readers by subverting their expectations.
+    - **Thematic Depth**: Highlights contrasts between human intentions and uncontrollable outcomes, emphasizing themes like fate or unpredictability.
+    - **Reflective Insight**: Prompts readers to reflect on the unpredictability of life or events within the narrative.
+
+###### **Dramatic Irony**
+  - **Definition**: Where the audience knows something that the characters do not, creating tension or humor.
+  - **Characteristics**
+    - **Audience Engagement**: Creates suspense or humor as readers anticipate characters’ reactions to the revealed information.
+    - **Emotional Connection**: Builds empathy or frustration as readers watch characters navigate situations with incomplete knowledge.
+    - **Narrative Complexity**: Enhances the plot by adding layers of meaning, making the story more intricate and compelling.
+
 
 
 ---
@@ -50,10 +62,26 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Rhetorical Function of Irony**
 
-**Characteristics**:
-   - **Subversion**: Irony often subverts established norms, challenging societal or cultural expectations.
-   - **Critique**: Irony allows for indirect criticism of characters, events, or broader thematic concerns.
-   - **Engagement**: Irony increases reader involvement by demanding a more active interpretive process.
+###### **Subversion**
+  - **Definition**: Irony often subverts established norms, challenging societal or cultural expectations.
+  - **Characteristics**
+    - **Unexpected Twists**: Changes familiar scenarios by adding ironic elements, making the story unpredictable.
+    - **Cultural Commentary**: Uses irony to question or satirize societal norms, adding a layer of critique.
+    - **Creative Depth**: Enhances storytelling by diverging from conventional plot developments, keeping readers intrigued.
+
+###### **Critique**
+  - **Definition**: Irony allows for indirect criticism of characters, events, or broader thematic concerns.
+  - **Characteristics**
+    - **Subtle Commentary**: Offers a nuanced way to critique without overtly stating an opinion.
+    - **Layered Meanings**: Enables multiple interpretations, allowing readers to discern underlying criticisms.
+    - **Character and Theme Examination**: Highlights flaws or contradictions within characters or societal structures.
+
+###### **Engagement**
+  - **Definition**: Irony increases reader involvement by demanding a more active interpretive process.
+  - **Characteristics**
+    - **Cognitive Challenge**: Encourages readers to read between the lines and grasp implied meanings.
+    - **Interactive Reading**: Involves readers in discovering the true intentions behind ironic statements or situations.
+    - **Heightened Interest**: Keeps readers engaged as they look for deeper significance and appreciate the layers of meaning.
 
 ---
 

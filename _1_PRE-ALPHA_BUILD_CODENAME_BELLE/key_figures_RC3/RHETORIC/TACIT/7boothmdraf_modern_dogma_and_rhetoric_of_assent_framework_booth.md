@@ -30,12 +30,34 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Rhetoric**
 
-**Characteristics**:
-   - **Language and Argumentation**: Rhetoric uses carefully chosen language and structured arguments to build a case for the speaker or writer's position.
-   - **Appeal to Emotions (Pathos)**: Effective rhetoric often appeals to the audience's emotions to create a connection or sway their opinion.
-   - **Ethical Appeal (Ethos)**: Rhetoric involves establishing the speaker or writer's credibility and trustworthiness to persuade the audience.
+###### **Language**
+  - **Definition**: Rhetoric uses carefully chosen language to convey a position and persuade the audience.
+  - **Characteristics**
+    - **Precision in Language**: Chooses words deliberately to convey the desired impact and strengthen the argument.
+    - **Emotive Power**: Utilizes words and phrases that resonate with the audience’s emotions to amplify engagement.
+    - **Adaptability**: Adjusts tone and diction to suit different audiences and contexts for maximum effectiveness.
+
+###### **Argumentation**
+  - **Definition**: Structured arguments are used to build a case for the speaker or writer’s position, ensuring that ideas are presented in a coherent and logical way.
+  - **Characteristics**
+    - **Structured Presentation**: Organizes ideas in a coherent manner to present a compelling argument.
+    - **Logical Flow**: Ensures that each point builds on the previous one, leading to a well-reasoned conclusion.
+    - **Supportive Evidence**: Incorporates facts, data, and examples to substantiate claims and strengthen the argument.
 
 
+###### **Appeal to Emotions (Pathos)**
+  - **Definition**: Effective rhetoric often appeals to the audience's emotions to create a connection or sway their opinion.
+  - **Characteristics**
+    - **Emotional Resonance**: Engages the audience’s feelings to foster empathy and connection.
+    - **Storytelling**: Incorporates anecdotes or illustrative examples that evoke emotional responses.
+    - **Persuasive Tone**: Uses language that stirs the audience’s emotions, such as passion, urgency, or compassion.
+
+###### **Ethical Appeal (Ethos)**
+  - **Definition**: Rhetoric involves establishing the speaker or writer's credibility and trustworthiness to persuade the audience.
+  - **Characteristics**
+    - **Authority**: Demonstrates the speaker’s or writer’s expertise or knowledge in the subject area.
+    - **Integrity and Trustworthiness**: Builds confidence by showing honesty and strong moral character.
+    - **Relatability**: Connects with the audience by presenting a persona that aligns with their values and beliefs.
 ---
 
 #### Persuasion
@@ -45,11 +67,26 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Persuasion**
 
-**Characteristics**:
-   - **Influencing Beliefs**: Persuasion works by presenting arguments that appeal to the audience's sense of reason, emotion, and ethics.
-   - **Building Consensus**: Effective persuasion often leads to the audience reaching a consensus or assent, aligning their views with the speaker or writer.
-   - **Strategic Use of Evidence**: Persuasion involves presenting evidence, logic, and reasoning to strengthen the argument and encourage agreement.
+###### **Influencing Beliefs**
+  - **Definition**: Persuasion works by presenting arguments that appeal to the audience's sense of reason, emotion, and ethics.
+  - **Characteristics**
+    - **Balanced Appeal**: Combines logical reasoning, emotional connections, and ethical credibility to influence the audience.
+    - **Adaptable Argumentation**: Adjusts the style of argument to suit different types of audiences and contexts.
+    - **Targeted Messaging**: Tailors messages to address the audience's beliefs, attitudes, or concerns.
 
+###### **Building Consensus**
+  - **Definition**: Effective persuasion often leads to the audience reaching a consensus or assent, aligning their views with the speaker or writer.
+  - **Characteristics**
+    - **Collaborative Approach**: Engages the audience as participants in finding common ground.
+    - **Unified Vision**: Focuses on shared values or goals to create a collective agreement.
+    - **Incremental Persuasion**: Progresses gradually to bring the audience along toward the final viewpoint.
+
+###### **Strategic Use of Evidence**
+  - **Definition**: Persuasion involves presenting evidence, logic, and reasoning to strengthen the argument and encourage agreement.
+  - **Characteristics**
+    - **Empirical Support**: Uses facts, data, and examples to substantiate claims and lend credibility.
+    - **Logical Reasoning**: Structures arguments with sound logic to ensure conclusions are well-founded.
+    - **Reinforcement of Points**: Integrates evidence throughout to build and support the case consistently.
 
 
 ---

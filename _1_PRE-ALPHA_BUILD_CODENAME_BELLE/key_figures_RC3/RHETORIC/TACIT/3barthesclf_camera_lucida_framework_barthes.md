@@ -32,11 +32,26 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Studium**
 
-**Characteristics**:
-   - **Intellectual Engagement**: *Studium* involves the viewer’s intellectual engagement with the photograph, interpreting it based on cultural and social knowledge.
-   - **Cultural and Social Context**: The response is informed by shared cultural codes, contributing to a collective understanding of the photograph's significance.
-   - **General Interest**: *Studium* reflects a more detached, analytical appreciation of a photograph, focusing on the subject matter and context.
+###### **Intellectual Engagement (*Studium*)**
+  - **Definition**: *Studium* involves the viewer’s intellectual engagement with the photograph, interpreting it based on cultural and social knowledge.
+  - **Characteristics**
+    - **Analytical Response**: Encourages viewers to analyze and understand the photograph by relating it to shared knowledge and context.
+    - **Objective Appreciation**: Focuses on understanding the content, composition, and subject matter from an informed perspective.
+    - **Cognitive Involvement**: Promotes thoughtful reflection on the photograph's themes and the context in which it was taken.
 
+###### **Cultural and Social Context**
+  - **Definition**: The response is informed by shared cultural codes, contributing to a collective understanding of the photograph's significance.
+  - **Characteristics**
+    - **Contextual Interpretation**: Viewers derive meaning based on cultural symbols, norms, and historical knowledge.
+    - **Collective Recognition**: Prompts an understanding shared by a wider audience, highlighting the photograph’s relevance within a societal framework.
+    - **Educational Value**: Serves as a medium for exploring cultural and social narratives embedded in the photograph.
+
+###### **General Interest (*Studium*)**
+  - **Definition**: *Studium* reflects a more detached, analytical appreciation of a photograph, focusing on the subject matter and context.
+  - **Characteristics**
+    - **Observational Engagement**: Encourages a general interest that doesn’t evoke a deep emotional response.
+    - **Intellectual Curiosity**: Sparks interest in the photograph’s details, such as historical context or subject portrayal.
+    - **Informative Reaction**: Allows the viewer to appreciate the photograph for its informational and representational qualities.
 
 ---
 
@@ -46,10 +61,27 @@ KNOWLEDGE TYPE: TACIT
    *Punctum* refers to the personal, emotional response that a photograph evokes in the viewer. It is the detail in the photograph that "pricks" or "wounds" the viewer, creating a personal and emotional connection to the image.
 
 ##### **Components of Punctum**
-**Characteristics**:
-   - **Emotional Impact**: *Punctum* provokes a strong, often visceral emotional response in the viewer, unrelated to the broader context of the photograph.
-   - **Subjectivity**: The experience of *punctum* is unique to each viewer, influenced by personal memories and emotions.
-   - **Involuntary Reaction**: *Punctum* triggers an unexpected emotional response, creating a deep personal connection with the photograph.
+
+###### **Emotional Impact (*Punctum*)**
+  - **Definition**: *Punctum* provokes a strong, often visceral emotional response in the viewer, unrelated to the broader context of the photograph.
+  - **Characteristics**
+    - **Personal Connection**: Elicits a deeply emotional reaction that resonates beyond intellectual analysis.
+    - **Immediate Resonance**: Strikes the viewer in an unanticipated way, creating a lasting impression.
+    - **Affective Engagement**: Transforms the experience from observation to feeling, heightening the photograph’s impact.
+
+###### **Subjectivity**
+  - **Definition**: The experience of *punctum* is unique to each viewer, influenced by personal memories and emotions.
+  - **Characteristics**
+    - **Individual Interpretation**: Each viewer’s response is different, shaped by personal history and experiences.
+    - **Selective Response**: The aspect that provokes *punctum* might be unnoticed by others, emphasizing its subjective nature.
+    - **Memory Trigger**: Often connects to past events or emotions specific to the viewer, making the photograph highly personal.
+
+###### **Involuntary Reaction**
+  - **Definition**: *Punctum* triggers an unexpected emotional response, creating a deep personal connection with the photograph.
+  - **Characteristics**
+    - **Spontaneous Impact**: The response is not deliberate; it occurs naturally and without anticipation.
+    - **Profound Engagement**: Draws the viewer into an unplanned relationship with the image, altering their perception of it.
+    - **Lasting Effect**: Leaves a strong, memorable impression that may linger long after viewing.
 
 
 ---

@@ -31,10 +31,26 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Interplay of Voices**
 
-**Characteristics**:
-   - **Polyphony**: A key feature of dialogism, polyphony refers to the presence of multiple, distinct voices within a narrative, each with its own perspective, ideology, and worldview. In a polyphonic narrative, no single voice dominates; instead, meaning emerges from the interaction and conflict between these voices.
-   - **Heteroglossia**: Another important aspect of dialogism, heteroglossia refers to the diversity of voices and languages within a text, reflecting the social, cultural, and ideological differences in society. This diversity of voices contributes to the richness and complexity of the narrative.
-   - **Authorial Voice vs. Character Voices**: In dialogic narratives, the author’s voice is not monolithic or authoritative but interacts with the voices of the characters. The author’s voice may be one among many, participating in the dialogue rather than dictating a singular meaning.
+###### **Polyphony**
+  - **Definition**: A key feature of dialogism, polyphony refers to the presence of multiple, distinct voices within a narrative, each with its own perspective, ideology, and worldview. In a polyphonic narrative, no single voice dominates; instead, meaning emerges from the interaction and conflict between these voices.
+  - **Characteristics**
+    - **Diverse Perspectives**: Presents varied viewpoints that interact with one another, contributing to a richer, multifaceted narrative.
+    - **Ideological Tension**: Highlights conflicts and contrasts between different worldviews, deepening the complexity of the story.
+    - **Dynamic Interaction**: Encourages readers to engage with the narrative as an ongoing dialogue where voices respond to and challenge each other.
+
+###### **Heteroglossia**
+  - **Definition**: Another important aspect of dialogism, heteroglossia refers to the diversity of voices and languages within a text, reflecting the social, cultural, and ideological differences in society. This diversity of voices contributes to the richness and complexity of the narrative.
+  - **Characteristics**
+    - **Cultural Representation**: Mirrors the social and cultural fabric by including various speech patterns, dialects, and registers.
+    - **Narrative Depth**: Adds layers to the story by showing how language differences shape characters’ identities and social roles.
+    - **Authentic Portrayal**: Reflects real-world diversity, making the narrative feel more realistic and relatable.
+
+###### **Authorial Voice vs. Character Voices**
+  - **Definition**: In dialogic narratives, the author’s voice is not monolithic or authoritative but interacts with the voices of the characters. The author’s voice may be one among many, participating in the dialogue rather than dictating a singular meaning.
+  - **Characteristics**
+    - **Participatory Presence**: The author’s voice blends with characters’ voices, creating a shared narrative space where no single perspective is dominant.
+    - **Interactive Meaning**: Meaning emerges from the interplay between the author’s and characters’ voices, fostering an open narrative environment.
+    - **Subtle Guidance**: While the author’s perspective is present, it coexists with other voices, allowing readers to explore different angles without a fixed interpretation.
 
 
 ---
@@ -46,10 +62,27 @@ KNOWLEDGE TYPE: TACIT
 
 ##### **Components of Dynamic Nature of Meaning**   
 
-**Characteristics**:
-   - **Relational Meaning**: Meaning in a dialogic narrative is relational, shaped by the interactions between voices rather than by any single voice. Each voice contributes to the overall meaning by responding to, challenging, or complementing other voices.
-   - **Open-endedness**: Because meaning is generated through dialogue, it is inherently open-ended and subject to change. A dialogic narrative resists closure, allowing for multiple interpretations and ongoing reinterpretation by readers.
-   - **Social and Ideological Dimensions**: Dialogism highlights the social and ideological dimensions of narrative meaning, showing how different voices represent different social positions, values, and worldviews. The interaction of these voices within the narrative reflects broader social and ideological conflicts and negotiations.
+###### **Relational Meaning**
+  - **Definition**: Meaning in a dialogic narrative is relational, shaped by the interactions between voices rather than by any single voice. Each voice contributes to the overall meaning by responding to, challenging, or complementing other voices.
+  - **Characteristics**
+    - **Interdependent Voices**: Each voice builds on or reacts to others, creating a layered understanding of the narrative.
+    - **Dynamic Interpretation**: Readers must interpret the story by considering the relationships and tensions between various voices.
+    - **Collaborative Construction**: Meaning is co-constructed through dialogue, requiring active engagement from readers.
+
+###### **Open-endedness**
+  - **Definition**: Because meaning is generated through dialogue, it is inherently open-ended and subject to change. A dialogic narrative resists closure, allowing for multiple interpretations and ongoing reinterpretation by readers.
+  - **Characteristics**
+    - **Ambiguous Resolution**: Avoids definitive conclusions, leaving room for continuous discussion and varied interpretations.
+    - **Reader Engagement**: Invites readers to contribute their own perspectives and draw unique conclusions.
+    - **Adaptable Meaning**: Allows the narrative to evolve over time as different readers and contexts bring new insights.
+
+###### **Social and Ideological Dimensions**
+  - **Definition**: Dialogism highlights the social and ideological dimensions of narrative meaning, showing how different voices represent different social positions, values, and worldviews. The interaction of these voices within the narrative reflects broader social and ideological conflicts and negotiations.
+  - **Characteristics**
+    - **Representation of Diversity**: Illustrates varied social and ideological standpoints, mirroring real-life debates and interactions.
+    - **Conflict and Negotiation**: Emphasizes the interplay of opposing ideas, reflecting societal struggles and compromises.
+    - **Cultural Commentary**: Uses narrative dialogue to comment on social norms and ideologies, prompting readers to think critically about cultural dynamics.
+
 
 ---
 

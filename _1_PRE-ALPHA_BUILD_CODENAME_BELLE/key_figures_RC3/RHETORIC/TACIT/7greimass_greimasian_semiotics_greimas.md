@@ -25,10 +25,27 @@ KNOWLEDGE TYPE: TACIT
   - **Definition**: Deep structure analysis is a central concept in Greimasian semiotics, involving the examination of the fundamental structures that shape meaning within texts. This analysis looks beyond the superficial narrative elements—such as plot and character—to explore the underlying logic and relationships that organize and produce meaning. Greimasian semiotics often employs tools like the semiotic square and isotopy to reveal these deep structures.
 
 ##### **Components of Deep Structure Analysis**
-  - **Characteristics**:
-        - **Semiotic Square**: One of the key tools in Greimasian semiotics, the semiotic square, is used to map out the logical relationships between opposing and complementary concepts within a narrative. It helps to illustrate the complex interplay of meanings that underlie the surface text.
-        - **Isotopy**: Another important concept, isotopy refers to the repetition of semantic categories within a text, which creates coherence and helps to stabilize meaning across the narrative.
-        - **Actantial Model**: Greimas also introduced the actantial model, a framework that identifies the fundamental roles (or actants) that characters and forces assume within a narrative, such as the hero, the opponent, the object of desire, and so forth. This model helps to analyze the dynamics of action and interaction within the story.
+###### **Semiotic Square**
+  - **Definition**: One of the key tools in Greimasian semiotics, the semiotic square, is used to map out the logical relationships between opposing and complementary concepts within a narrative. It helps to illustrate the complex interplay of meanings that underlie the surface text.
+  - **Characteristics**
+    - **Mapping Oppositions**: Visualizes the binary oppositions and mediating terms, clarifying complex relationships within a narrative.
+    - **Conceptual Interplay**: Shows how seemingly contradictory or complementary ideas can coexist and interact.
+    - **Thematic Depth**: Reveals underlying meanings and structures, contributing to a deeper analysis of the text.
+
+###### **Isotopy**
+  - **Definition**: Another important concept, isotopy refers to the repetition of semantic categories within a text, which creates coherence and helps to stabilize meaning across the narrative.
+  - **Characteristics**
+    - **Reinforcement of Meaning**: Uses repetition of semantic elements to ensure thematic consistency.
+    - **Narrative Cohesion**: Provides a stable structure that helps unify the text by connecting different parts through repeated ideas or motifs.
+    - **Interpretative Clarity**: Assists readers in identifying the main themes and interpretations by highlighting recurring semantic fields.
+
+###### **Actantial Model**
+  - **Definition**: Greimas introduced the actantial model, a framework that identifies the fundamental roles (or actants) that characters and forces assume within a narrative, such as the hero, the opponent, the object of desire, and so forth. This model helps to analyze the dynamics of action and interaction within the story.
+  - **Characteristics**
+    - **Role Identification**: Defines key narrative roles like the hero, opponent, helper, and object, making it easier to understand character dynamics.
+    - **Interaction Mapping**: Outlines how different actants relate and contribute to the narrative’s progression.
+    - **Analytical Framework**: Provides a structured method for analyzing how actions and motivations drive the story forward.
+
 
 
 ### **Theoretical Significance**:

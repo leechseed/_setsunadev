@@ -30,13 +30,28 @@ KNOWLEDGE TYPE: TACIT
    The extradiegetic level refers to narration that occurs outside the story world. This is typically the primary level of narration, where the narrator is not a character within the narrative but exists externally to tell the story.
 
 ##### **Components of Extradiegetic Level**
-**Characteristics**:
-   - **Narrative Authority**: The extradiegetic narrator holds authority, controlling the flow of information and influencing the reader’s understanding of the story.
-   - **Framing Device**: The extradiegetic level often serves as a framing device, introducing the intradiegetic narrative and setting its context.
-   - **Narrative Distance**: The extradiegetic narrator typically maintains a certain distance from the events of the story, providing an overarching perspective.
 
-**Contextualization**:
-   Rimmon-Kenan emphasizes that the extradiegetic level is where the narrative voice establishes its reliability or potential biases. It shapes how the reader perceives the intradiegetic events, providing a context or frame through which the narrative is filtered.
+###### **Narrative Authority**
+  - **Definition**: The extradiegetic narrator holds authority, controlling the flow of information and influencing the reader’s understanding of the story.
+  - **Characteristics**
+    - **Omniscient Control**: Provides comprehensive insights, often knowing more than any character in the story.
+    - **Information Management**: Decides what details to reveal or withhold, guiding reader perception.
+    - **Objective Perspective**: Often maintains a neutral, authoritative tone that influences how the reader interprets the narrative.
+
+###### **Framing Device**
+  - **Definition**: The extradiegetic level often serves as a framing device, introducing the intradiegetic narrative and setting its context.
+  - **Characteristics**
+    - **Contextual Setup**: Establishes the setting and background for the main story.
+    - **Narrative Transition**: Provides a bridge between different narrative levels, enhancing structure.
+    - **Perspective Control**: Offers a broader view that frames the main story within a larger narrative.
+
+###### **Narrative Distance**
+  - **Definition**: The extradiegetic narrator typically maintains a certain distance from the events of the story, providing an overarching perspective.
+  - **Characteristics**
+    - **Detached Viewpoint**: Observes the story from outside, offering an unbiased account.
+    - **Comprehensive Overview**: Presents a complete view of the story, beyond the characters’ subjective experiences.
+    - **Analytical Tone**: Often allows for reflective or interpretative commentary on the story’s events.
+
 
 ---
 
@@ -46,13 +61,29 @@ KNOWLEDGE TYPE: TACIT
    The intradiegetic level refers to narration that occurs within the story world, often involving characters who narrate stories inside the main narrative. These embedded narratives add layers to the storytelling.
 
 ##### **Components of Intradiegetic Level**
-**Characteristics**:
-   - **Embedded Narratives**: These are stories told by characters within the story, contributing backstory or parallel plotlines.
-   - **Character Perspective**: The intradiegetic narrator, being a character within the narrative, often provides a subjective or biased account of events.
-   - **Narrative Depth and Multiplicity**: Multiple intradiegetic layers create depth, where stories within stories can reflect or contradict each other.
 
-**Contextualization**:
-   Intradiegetic narratives allow for multiple perspectives, offering readers a complex narrative structure. Rimmon-Kenan highlights how these layers enrich the story by introducing diverse voices and viewpoints.
+###### **Embedded Narratives**
+  - **Definition**: These are stories told by characters within the story, contributing backstory or parallel plotlines.
+  - **Characteristics**
+    - **Story Within a Story**: Adds layers by having characters narrate sub-stories.
+    - **Expanded World-Building**: Deepens the main narrative by introducing subplots or histories.
+    - **Reflective Elements**: May echo or contrast the main plot, adding thematic richness.
+
+###### **Character Perspective**
+  - **Definition**: The intradiegetic narrator, being a character within the narrative, often provides a subjective or biased account of events.
+  - **Characteristics**
+    - **Personal Bias**: Narration reflects the character’s beliefs, motivations, and limitations.
+    - **Limited Knowledge**: The character only recounts events they are aware of, influencing reliability.
+    - **Emotional Insight**: Provides an intimate view of the character’s internal world and emotions.
+
+###### **Narrative Depth and Multiplicity**
+  - **Definition**: Multiple intradiegetic layers create depth, where stories within stories can reflect or contradict each other.
+  - **Characteristics**
+    - **Complex Structure**: Introduces layers that require readers to piece together the overall narrative.
+    - **Thematic Mirrors**: Sub-narratives can parallel or oppose the main story, adding thematic complexity.
+    - **Reader Engagement**: Encourages active participation as readers interpret and connect different layers.
+
+
 
 ---
 
@@ -62,13 +93,28 @@ KNOWLEDGE TYPE: TACIT
    Metalepsis occurs when the boundaries between different narrative levels are transgressed, such as when a character interacts with the narrator or steps outside their narrative world.
 
 ##### **Components of Metalepsis**
-**Characteristics**:
-   - **Boundary Transgression**: This involves breaking the narrative "fourth wall" by crossing between narrative levels.
-   - **Narrative Playfulness**: Metalepsis introduces a playful or experimental quality to the narrative, making the reader aware of its constructed nature.
-   - **Thematic Implications**: Metalepsis often explores themes like reality vs. fiction, the power of storytelling, and narrative limits.
 
-**Contextualization**:
-   Rimmon-Kenan suggests that metalepsis challenges the reader’s perception of the narrative’s reality, often creating a surreal or self-reflective reading experience. It can also emphasize themes related to the nature of storytelling itself.
+###### **Boundary Transgression**
+  - **Definition**: This involves breaking the narrative "fourth wall" by crossing between narrative levels.
+  - **Characteristics**
+    - **Narrative Disruption**: Blurs the line between different narrative layers, creating surprise or intrigue.
+    - **Reader Awareness**: Makes readers conscious of the narrative as a constructed work.
+    - **Innovative Technique**: Often used for experimental storytelling or postmodern effects.
+
+###### **Narrative Playfulness**
+  - **Definition**: Metalepsis introduces a playful or experimental quality to the narrative, making the reader aware of its constructed nature.
+  - **Characteristics**
+    - **Self-Referential Elements**: Highlights the fictionality of the narrative through breaking conventions.
+    - **Creative Freedom**: Encourages an unconventional approach to storytelling.
+    - **Reader Engagement**: Invites readers to question the nature of the story and its boundaries.
+
+###### **Thematic Implications**
+  - **Definition**: Metalepsis often explores themes like reality vs. fiction, the power of storytelling, and narrative limits.
+  - **Characteristics**
+    - **Reality Examination**: Challenges the reader’s understanding of what is real within the story.
+    - **Storytelling Power**: Highlights the control the narrator or author has over the story world.
+    - **Philosophical Inquiry**: Raises questions about narrative construction and perception.
+
 
 ---
 

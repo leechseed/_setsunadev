@@ -31,12 +31,36 @@ KNOWLEDGE TYPE: TACIT
 **Definition**:
    Readerly texts present a straightforward, conventional narrative that is easy to understand and follow. They are designed to be accessible, offering clear and unambiguous meaning, requiring little interpretive effort from the reader. The reader receives the content passively, without the need for deep analysis or engagement.
 
+
 ##### **Components of Readerly (Lisible) Texts**
-**Characteristics**:
-   - **Linear Narrative**: Follows a traditional, chronological structure that is easy to follow.
-   - **Fixed Meaning**: The meaning is predetermined by the author, leaving little room for ambiguity or alternative interpretations.
-   - **Predictability**: Often adhere to genre conventions, providing satisfaction through familiarity.
-   - **Passive Consumption**: The reader decodes the message with minimal need for reflection or reinterpretation.
+
+###### **Linear Narrative**
+  - **Definition**: Follows a traditional, chronological structure that is easy to follow.
+  - **Characteristics**
+    - **Clear Sequence**: Events unfold in a straightforward, logical order, aiding comprehension.
+    - **Cohesive Plot**: Provides a seamless story progression with a beginning, middle, and end.
+    - **Ease of Understanding**: Readers can follow the story without needing to reconstruct timelines or piece together events.
+
+###### **Fixed Meaning**
+  - **Definition**: The meaning is predetermined by the author, leaving little room for ambiguity or alternative interpretations.
+  - **Characteristics**
+    - **Authorial Control**: The narrative’s message is clearly communicated, aligning with the author’s intended meaning.
+    - **Direct Themes**: Presents themes in an unambiguous way, ensuring readers grasp the core message.
+    - **Limited Interpretation**: Reduces the scope for subjective readings, as the meaning is explicit.
+
+###### **Predictability**
+  - **Definition**: Often adhere to genre conventions, providing satisfaction through familiarity.
+  - **Characteristics**
+    - **Genre Adherence**: Sticks to established tropes and patterns, creating a sense of reliability.
+    - **Comfort for Readers**: Provides a familiar experience that meets expectations.
+    - **Expected Outcomes**: Readers can anticipate key plot points and resolutions based on genre norms.
+
+###### **Passive Consumption**
+  - **Definition**: The reader decodes the message with minimal need for reflection or reinterpretation.
+  - **Characteristics**
+    - **Minimal Cognitive Demand**: Requires less critical thinking or analysis from the reader.
+    - **Straightforward Message**: Presents the narrative in a way that doesn’t invite deep reflection.
+    - **Linear Engagement**: The reader follows along passively, receiving the story as it unfolds.
 
 ---
 
@@ -46,11 +70,34 @@ KNOWLEDGE TYPE: TACIT
    Writerly texts challenge the reader to engage actively with the narrative, constructing meaning rather than passively receiving it. They are complex, open-ended, and resist easy interpretation, requiring the reader to navigate multiple layers of meaning and participate in the creation of the text’s significance.
 
 ##### **Components of Writerly (Scriptable) Texts**
-**Characteristics**:
-   - **Non-Linear Narrative**: May use fragmented or non-chronological structures, requiring the reader to piece together the story.
-   - **Multiple Interpretations**: Rich in ambiguity, inviting various readings and personal interpretations.
-   - **Unpredictability**: Defy genre conventions, challenging reader expectations.
-   - **Active Participation**: The reader becomes a co-creator of meaning, engaging in a reflective and interpretative process.
+
+###### **Non-Linear Narrative**
+  - **Definition**: May use fragmented or non-chronological structures, requiring the reader to piece together the story.
+  - **Characteristics**
+    - **Complex Structure**: Events are presented out of order, challenging readers to reconstruct the timeline.
+    - **Narrative Depth**: Offers layers of storytelling that require active engagement to understand fully.
+    - **Reader Involvement**: Demands attention and cognitive effort to grasp the overall plot and connections.
+
+###### **Multiple Interpretations**
+  - **Definition**: Rich in ambiguity, inviting various readings and personal interpretations.
+  - **Characteristics**
+    - **Ambiguous Elements**: Contains open-ended or unclear details that prompt reader interpretation.
+    - **Subjectivity**: Readers bring their own perspectives, leading to unique and varied understandings.
+    - **Reflective Reading**: Encourages deeper thought and analysis to uncover different meanings.
+
+###### **Unpredictability**
+  - **Definition**: Defy genre conventions, challenging reader expectations.
+  - **Characteristics**
+    - **Innovative Plot Twists**: Surprises readers with unexpected developments.
+    - **Genre Subversion**: Breaks traditional storytelling patterns to create original narratives.
+    - **Dynamic Experience**: Keeps readers guessing, enhancing engagement through uncertainty.
+
+###### **Active Participation**
+  - **Definition**: The reader becomes a co-creator of meaning, engaging in a reflective and interpretative process.
+  - **Characteristics**
+    - **Interpretative Involvement**: Requires readers to make sense of the narrative through active thinking.
+    - **Reconstructive Effort**: Readers piece together clues and narrative fragments to form a coherent story.
+    - **Personal Meaning-Making**: Invites readers to shape the story’s interpretation based on their own reflections and insights.
 
 ---
 
