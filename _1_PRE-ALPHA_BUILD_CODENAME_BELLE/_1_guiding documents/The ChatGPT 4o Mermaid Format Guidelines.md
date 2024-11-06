@@ -1,44 +1,27 @@
----
-UID: 3RimmonKenanCF
-Title: Charaterization Framework
-Author: Rimmon-Kenan
-Date: 27/08/2024
-Last Edited: 9/4/2024, 3:40:36 AM
-Prima-Forma:
-- artifex
-- character
-Summary: Shlomith Rimmon-Kenan's characterization framework explores how authors use direct and indirect methods to shape readers' perceptions of characters. It examines explicit descriptions, actions, and narrative voice, revealing how focalization and bias influence character construction and interpretation.
-ELEMENT: CHARACTER
-KNOWLEDGE TYPE: TACIT
----
 
-- [1. **Title: Rimmon-Kenan's Characterization Framework**](#1-title-rimmon-kenans-characterization-framework)
-- [2. **Key Concepts**](#2-key-concepts)
-  - [2.1. **Direct Characterization**](#21-direct-characterization)
-    - [2.1.1. **Components of Direct Characterization**](#211-components-of-direct-characterization)
-      - [2.1.1.1. **Narrator-Provided**](#2111-narrator-provided)
-      - [2.1.1.2. **Character-Provided**](#2112-character-provided)
-  - [2.2. **Indirect Characterization**](#22-indirect-characterization)
-    - [2.2.1. **Components of Indirect Characterization**](#221-components-of-indirect-characterization)
-      - [2.2.1.1. **Action-Based**](#2211-action-based)
-      - [2.2.1.2. **Dialogue-Based**](#2212-dialogue-based)
-      - [2.2.1.3. **Thought-Based**](#2213-thought-based)
-      - [2.2.1.4. **Interaction-Based**](#2214-interaction-based)
-  - [2.3. **Narrative Voice**](#23-narrative-voice)
-    - [2.3.1. **Components of Narrative Voice**](#231-components-of-narrative-voice)
-      - [2.3.1.1. **Omniscient Narrator**](#2311-omniscient-narrator)
-      - [2.3.1.2. **Limited Narrator**](#2312-limited-narrator)
-      - [2.3.1.3. **Unreliable Narrator**](#2313-unreliable-narrator)
-  - [2.4. **Focalization**](#24-focalization)
-    - [2.4.1. **Components of Focalization**](#241-components-of-focalization)
-      - [2.4.1.1. **Internal Focalization**](#2411-internal-focalization)
-      - [2.4.1.2. **External Focalization**](#2412-external-focalization)
-      - [2.4.1.3. **Variable Focalization**](#2413-variable-focalization)
-- [3. Implications of **Characterization Framework**](#3-implications-of-characterization-framework)
+The "Mermaid Format" consists of the following structure:
+
+1. **Title** section:
+   - A bolded title and description.
+
+2. **Key Concepts** section:
+   - Organized with nested headings for each main concept and its subcomponents.
+   - Definitions and characteristics for each concept are provided.
+
+3. **Component Sections**:
+   - Each component has its own **flowchart** in mermaid syntax, representing its internal structure.
+   - Flowcharts are placed directly after the relevant component section with **no codeboxes around text** except for the mermaid charts.
+
+4. **Mindmap**:
+   - Placed at the **bottom of the document**.
+   - Summarizes the main concept and subcategories using mermaid syntax.
 
 
 
 ---
+Template Example
+---
+
 ### 1. **Title: Rimmon-Kenan's Characterization Framework**
 
 **Characterization**:
@@ -377,16 +360,10 @@ mindmap
         Narrative Complexity
         Enhanced Plot Understanding
 ```
+---
 
+Prompt
 
 ---
 
-### 3. Implications of **Characterization Framework**
-
-**Reader Engagement**:
-   Rimmon-Kenan’s framework emphasizes how direct and indirect characterization, narrative voice, and focalization contribute to deeper reader engagement. These elements work together to shape the reader’s understanding of characters and the narrative as a whole.
-
-**Narrative Structure**:
-   The interaction between characterization techniques, narrative voice, and focalization reveals how stories guide the reader’s emotional and intellectual responses. Analyzing these elements provides insight into the complexity of characters and their roles in the narrative.
-
----
+apply the mermaid framework to the entire document posted below

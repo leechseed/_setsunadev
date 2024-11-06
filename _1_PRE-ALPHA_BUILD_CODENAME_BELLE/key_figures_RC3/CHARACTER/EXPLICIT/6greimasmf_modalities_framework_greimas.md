@@ -12,9 +12,9 @@ ELEMENT: CHARACTER
 KNOWLEDGE TYPE: EXPLICIT
 ---
 
-- [1. Title: Greimas's Modalities Framework](#1-title-greimass-modalities-framework)
-- [2. Key Concepts](#2-key-concepts)
-  - [2.1. Expression of Modality](#21-expression-of-modality)
+- [1. **Title: Greimas's Modalities Framework**](#1-title-greimass-modalities-framework)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Expression of Modality**](#21-expression-of-modality)
     - [2.1.1. **Components of Expression of Modality**](#211-components-of-expression-of-modality)
       - [2.1.1.1. **Necessity**](#2111-necessity)
       - [2.1.1.2. **Desire**](#2112-desire)
@@ -24,51 +24,130 @@ KNOWLEDGE TYPE: EXPLICIT
 
 
 ---
-
-### 1. Title: Greimas's Modalities Framework
+### 1. **Title: Greimas's Modalities Framework**
 
 **Modalities**:
    **Definition**: Algirdas Julien Greimas introduces the concept of *modalities* as key components in narrative structure. Modalities refer to expressions of necessity, possibility, desire, or obligation that guide characters' actions and decisions. These forces shape both the internal and external motivations of characters, influencing the direction of the narrative and its thematic elements. Greimas’s Modalities Framework helps in analyzing how these forces interact within the story, revealing deeper layers of character development and narrative progression.
 
+```mermaid
+mindmap
+  root((**Modalities**))
+    **Expression of Modality**
+      **Necessity**
+      **Desire**
+      **Possibility**
+      **Obligation**
+```
+
 ---
 
-### 2. Key Concepts
+### 2. **Key Concepts**
 
-#### 2.1. Expression of Modality
+#### 2.1. **Expression of Modality**
 
 **Definition**:
    Modalities represent the forces that dictate what characters *must* do (necessity), *want* to do (desire), *can* do (possibility), or *should* do (obligation). These modalities shape the narrative by influencing characters' intentions, decisions, and actions, driving the plot forward and enriching its themes.
 
-##### 2.1.1. **Components of Expression of Modality**   
+```mermaid
+mindmap
+  root((**Expression of Modality**))
+    **Necessity**
+    **Desire**
+    **Possibility**
+    **Obligation**
+```
+
+##### 2.1.1. **Components of Expression of Modality**
 
 ###### 2.1.1.1. **Necessity**
   - **Definition**: What a character *must* do, often driven by external pressures or unavoidable duties.
+
+```mermaid
+flowchart TD
+    A[**Necessity**] --> B[External Pressure]
+    A --> C[High Stakes]
+    A --> D[Driving Force]
+```
+
   - **Characteristics**
     - **External Pressure**: Compelled by factors outside their control, such as societal demands, urgent situations, or responsibilities that leave no alternative.
     - **High Stakes**: Often associated with serious consequences if not fulfilled, creating tension and urgency in the narrative.
     - **Driving Force**: Propels the character’s actions, making them move forward despite personal reluctance or sacrifice.
 
+---
+
 ###### 2.1.1.2. **Desire**
   - **Definition**: What a character *wants* to do, reflecting their personal ambitions or emotional needs.
+
+```mermaid
+flowchart TD
+    E[**Desire**] --> F[Personal Motivation]
+    E --> G[Emotional Resonance]
+    E --> H[Potential Conflict]
+```
+
   - **Characteristics**
     - **Personal Motivation**: Represents the character’s inner goals and dreams, adding depth and relatability to their journey.
     - **Emotional Resonance**: Evokes empathy from readers as they connect with the character’s longings and aspirations.
     - **Potential Conflict**: Can clash with necessity or obligation, creating internal struggles that enrich character development and plot.
 
+---
+
 ###### 2.1.1.3. **Possibility**
   - **Definition**: What a character *can* do, highlighting the range of actions available based on abilities or circumstances.
+
+```mermaid
+flowchart TD
+    I[**Possibility**] --> J[Circumstantial Boundaries]
+    I --> K[Character Agency]
+    I --> L[Influence on Plot]
+```
+
   - **Characteristics**
     - **Circumstantial Boundaries**: Defined by the character’s current situation, resources, or environment, showcasing the practical limits of their choices.
     - **Character Agency**: Demonstrates their capacity to act and make decisions, revealing strengths and adaptability.
     - **Influence on Plot**: Shapes the direction of the story based on what actions are feasible, impacting the character’s decisions and outcomes.
 
+---
+
 ###### 2.1.1.4. **Obligation**
   - **Definition**: What a character *should* do, influenced by moral, ethical, or social expectations.
+
+```mermaid
+flowchart TD
+    M[**Obligation**] --> N[Moral Compass]
+    M --> O[Potential for Sacrifice]
+    M --> P[Character Conflict]
+```
+
   - **Characteristics**
     - **Moral Compass**: Reflects the character’s principles or societal norms, guiding their choices and highlighting their integrity or dilemmas.
     - **Potential for Sacrifice**: Often requires putting aside personal desires for the greater good or upholding a higher standard, creating tension and conflict.
     - **Character Conflict**: Can create internal or external struggles when obligation conflicts with desire or necessity, adding complexity to the character’s decisions.
 
+---
+
+```mermaid
+mindmap
+  root((**Modalities**))
+    **Expression of Modality**
+      **Necessity**
+        External Pressure
+        High Stakes
+        Driving Force
+      **Desire**
+        Personal Motivation
+        Emotional Resonance
+        Potential Conflict
+      **Possibility**
+        Circumstantial Boundaries
+        Character Agency
+        Influence on Plot
+      **Obligation**
+        Moral Compass
+        Potential for Sacrifice
+        Character Conflict
+```
 
 
 ---
