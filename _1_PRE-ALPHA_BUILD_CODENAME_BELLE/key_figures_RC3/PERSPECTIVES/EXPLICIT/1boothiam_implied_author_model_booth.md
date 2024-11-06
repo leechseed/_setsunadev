@@ -10,60 +10,144 @@ Summary: The implied author is distinct from the real author and the narrator. I
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
 ---
-- [1. Title: Booth's Implied Author Model](#1-title-booths-implied-author-model)
-- [2. Key Concepts](#2-key-concepts)
-  - [2.1. Constructed Author](#21-constructed-author)
+- [1. **Title: Booth's Implied Author Model**](#1-title-booths-implied-author-model)
+- [2. **Key Concepts**](#2-key-concepts)
+  - [2.1. **Constructed Author**](#21-constructed-author)
     - [2.1.1. **Components of Constructed Author**](#211-components-of-constructed-author)
-      - [2.1.1.1. **Narrative Voice and Tone**](#2111-narrative-voice-and-tone)
-      - [2.1.1.2. **Ethical Stance**](#2112-ethical-stance)
-      - [2.1.1.3. **Reader’s Construction**](#2113-readers-construction)
-  - [2.2. Implications of Implied Author](#22-implications-of-implied-author)
+      - [2.1.1.1. **Narrative Voice**](#2111-narrative-voice)
+      - [2.1.1.2. **Narrative Tone**](#2112-narrative-tone)
+      - [2.1.1.3. **Ethical Stance**](#2113-ethical-stance)
+      - [2.1.1.4. **Reader’s Construction**](#2114-readers-construction)
+- [3. Implications of Implied Author](#3-implications-of-implied-author)
 
-
----
-
-### 1. Title: Booth's Implied Author Model
+### 1. **Title: Booth's Implied Author Model**
 
 **Implied Author**:
    **Definition**: Wayne C. Booth’s concept of the *implied author* refers to the narrative persona that emerges from the text, distinct from both the real author and the narrator. The implied author reflects the version of the author that the reader perceives through the narrative’s tone, style, and ethical stance, acting as a mediator between the author’s intentions and the reader’s interpretation.
 
+```mermaid
+mindmap
+  root((**Implied Author**))
+    **Constructed Author**
+      Narrative Voice
+      Narrative Tone
+      Ethical Stance
+      Reader’s Construction
+```
+
 ---
 
-### 2. Key Concepts
+### 2. **Key Concepts**
 
-#### 2.1. Constructed Author
+#### 2.1. **Constructed Author**
 
 **Definition**:
    The implied author is the construct the reader infers from the narrative elements, such as tone, style, and character presentation. It represents the values and intentions conveyed through the story and is distinct from the real author’s personal views.
 
+```mermaid
+mindmap
+  root((**Constructed Author**))
+    **Narrative Voice**
+    **Narrative Tone**
+    **Ethical Stance**
+    **Reader’s Construction**
+```
+
 ##### 2.1.1. **Components of Constructed Author**
 
+###### 2.1.1.1. **Narrative Voice**
 
-###### 2.1.1.1. **Narrative Voice and Tone**
-  - **Definition**: The implied author is closely linked with the narrative’s voice and tone, which provide clues about the ethical and ideological stance of the narrative.
+- **Definition**: The unique perspective and style through which the story is told, often reflecting the narrator’s personality, background, and reliability.
+
+```mermaid
+flowchart TD
+    A[**Narrative Voice**] --> B[First-person Perspective]
+    A --> C[Third-person Omniscient]
+    A --> D[Unreliable Narrator]
+```
+
   - **Characteristics**
-    - **Consistent Style**: Establishes a coherent voice and tone throughout the narrative, shaping how the story is perceived by the reader.
-    - **Guided Interpretation**: Influences the reader’s understanding and emotional response by aligning with the implied author’s perspective and values.
-    - **Subtle Clues**: Uses nuances in language and tone to reveal underlying beliefs or opinions, adding depth to the narrative’s message.
-
-###### 2.1.1.2. **Ethical Stance**
-  - **Definition**: The implied author embodies the moral and ethical framework of the narrative, guiding the reader’s interpretation of the characters and events.
-  - **Characteristics**
-    - **Moral Guiding Force**: Reflects the narrative’s principles and ethical views, subtly directing readers toward specific judgments or interpretations.
-    - **Character Judgment**: Positions the implied author as an observer whose silent commentary influences how readers view the characters’ actions and motivations.
-    - **Thematic Reinforcement**: Strengthens the story’s moral and ethical themes by consistently presenting actions and outcomes that align with the implied author’s values.
-
-###### 2.1.1.3. **Reader’s Construction**
-  - **Definition**: The implied author is inferred by the reader based on the cumulative effect of the narrative elements, and different readers may construct different versions of the implied author.
-  - **Characteristics**
-    - **Subjective Perception**: Allows readers to form their own idea of the implied author based on how they interpret the narrative’s elements, such as plot, dialogue, and descriptions.
-    - **Diverse Interpretations**: Leads to variations in how different readers understand the implied author, influenced by their personal beliefs, experiences, and biases.
-    - **Holistic Analysis**: Emerges from the combined impact of narrative voice, tone, and structure, requiring readers to piece together clues and make connections.
-
+    - **First-person Perspective**: Provides a personal, subjective view from the narrator’s point of view.
+    - **Third-person Omniscient**: Offers insight into multiple characters’ thoughts and experiences.
+    - **Unreliable Narrator**: Adds complexity by presenting a narrator whose perspective may be biased or misleading.
 
 ---
 
-#### 2.2. Implications of Implied Author
+###### 2.1.1.2. **Narrative Tone**
+
+- **Definition**: The mood or attitude conveyed by the narrator’s voice, setting the emotional framework for readers.
+
+```mermaid
+flowchart TD
+    E[**Narrative Tone**] --> F[Optimistic]
+    E --> G[Sarcastic]
+    E --> H[Melancholic]
+```
+
+  - **Characteristics**
+    - **Optimistic**: Imbues the story with a hopeful outlook.
+    - **Sarcastic**: Conveys irony or humor, often critiquing characters or situations.
+    - **Melancholic**: Creates a reflective or sorrowful atmosphere.
+
+---
+
+###### 2.1.1.3. **Ethical Stance**
+  - **Definition**: The implied author embodies the moral and ethical framework of the narrative.
+
+```mermaid
+flowchart TD
+    I[**Ethical Stance**] --> J[Moral Guiding Force]
+    I --> K[Character Judgment]
+    I --> L[Thematic Reinforcement]
+```
+
+  - **Characteristics**
+    - **Moral Guiding Force**: Reflects the narrative’s principles.
+    - **Character Judgment**: Influences how readers perceive character actions.
+    - **Thematic Reinforcement**: Aligns actions with the implied author’s values.
+
+---
+
+###### 2.1.1.4. **Reader’s Construction**
+  - **Definition**: The implied author is inferred by the reader based on the narrative elements.
+
+```mermaid
+flowchart TD
+    M[**Reader’s Construction**] --> N[Subjective Perception]
+    M --> O[Diverse Interpretations]
+    M --> P[Holistic Analysis]
+```
+
+  - **Characteristics**
+    - **Subjective Perception**: Allows readers to form their own idea of the implied author.
+    - **Diverse Interpretations**: Leads to varied reader understandings.
+    - **Holistic Analysis**: Emerges from narrative voice, tone, and structure.
+
+---
+
+```mermaid
+mindmap
+  root((**Implied Author**))
+    **Constructed Author**
+      Narrative Voice
+        First-person Perspective
+        Third-person Omniscient
+        Unreliable Narrator
+      Narrative Tone
+        Optimistic
+        Sarcastic
+        Melancholic
+      Ethical Stance
+        Moral Guiding Force
+        Character Judgment
+        Thematic Reinforcement
+      Reader’s Construction
+        Subjective Perception
+        Diverse Interpretations
+        Holistic Analysis
+```
+
+### 3. Implications of Implied Author
 
 
 **Impact on Narrative Theory**:
