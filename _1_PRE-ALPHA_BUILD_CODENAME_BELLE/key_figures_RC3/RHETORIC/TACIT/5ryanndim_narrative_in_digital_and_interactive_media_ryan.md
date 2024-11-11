@@ -58,6 +58,14 @@ mindmap
 ###### 2.1.1.1. **Interactivity**
 
 - **Definition**: Digital narratives often allow the audience to make choices that affect the narrative outcome, leading to a personalized and dynamic experience.
+
+```mermaid
+flowchart TD;
+    A[**Interactivity**] --> B[**User Agency**];
+    A --> C[**Branching Paths**];
+    A --> D[**Enhanced Engagement**];
+```
+
 - **Characteristics**
   - **User Agency**: Empowers the audience to influence the direction and outcome of the story.
   - **Branching Paths**: Offers multiple storylines or endings based on user decisions, making each experience unique.
@@ -66,6 +74,14 @@ mindmap
 ###### 2.1.1.2. **Non-linearity**
 
 - **Definition**: Many digital narratives break away from the linear storytelling structure, allowing multiple paths or endings based on user decisions.
+
+```mermaid
+flowchart TD;
+    E[**Non-linearity**] --> F[**Flexible Story Progression**];
+    E --> G[**Multiple Outcomes**];
+    E --> H[**User-Driven Exploration**];
+```
+
 - **Characteristics**
   - **Flexible Story Progression**: Allows users to explore different parts of the narrative in various orders.
   - **Multiple Outcomes**: Provides diverse story conclusions, increasing replayability and depth.
@@ -74,6 +90,14 @@ mindmap
 ###### 2.1.1.3. **Immersion**
 
 - **Definition**: Advanced digital narratives aim to fully immerse the audience in the narrative, particularly through technologies like virtual reality.
+
+```mermaid
+flowchart TD;
+    I[**Immersion**] --> J[**Sensory Engagement**];
+    I --> K[**Presence and Realism**];
+    I --> L[**Emotional Connection**];
+```
+
 - **Characteristics**
   - **Sensory Engagement**: Utilizes sound, visuals, and interactive elements to draw the audience into the story world.
   - **Presence and Realism**: Creates a feeling of being inside the narrative, enhancing the experience through realistic simulations.
@@ -82,6 +106,14 @@ mindmap
 ###### 2.1.1.4. **Multimodality**
 
 - **Definition**: These narratives often combine text, audio, video, and interactive elements to create a rich, multifaceted experience.
+
+```mermaid
+flowchart TD;
+    M[**Multimodality**] --> N[**Integrated Media**];
+    M --> O[**Layered Storytelling**];
+    M --> P[**Dynamic Presentation**];
+```
+
 - **Characteristics**
   - **Integrated Media**: Blends different forms of media to convey the story, offering a comprehensive sensory experience.
   - **Layered Storytelling**: Uses various modalities to provide depth and context, enriching the narrative.
@@ -96,3 +128,25 @@ Ryan’s framework is instrumental in redefining what constitutes a narrative in
 Her insights have significant implications across various fields, including media studies, game studies, and virtual reality development. Future research can continue to explore how digital narratives innovate storytelling and challenge existing paradigms, opening up new possibilities for interactive and immersive storytelling experiences.
 
 ---
+
+```mermaid
+mindmap
+  root((**Ryan's Narrative in Digital and Interactive Media Framework**))
+    **Digital Narratology**
+      **Interactivity**
+        User Agency
+        Branching Paths
+        Enhanced Engagement
+      **Non-linearity**
+        Flexible Story Progression
+        Multiple Outcomes
+        User-Driven Exploration
+      **Immersion**
+        Sensory Engagement
+        Presence and Realism
+        Emotional Connection
+      **Multimodality**
+        Integrated Media
+        Layered Storytelling
+        Dynamic Presentation
+```

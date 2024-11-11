@@ -16,7 +16,7 @@ KNOWLEDGE TYPE: TACIT
 - [1. Title: **Ryan's Interdisciplinary Approaches Framework**](#1-title-ryans-interdisciplinary-approaches-framework)
 - [2. Key Concepts](#2-key-concepts)
   - [2.1. Cognitive Narratology](#21-cognitive-narratology)
-    - [2.1.1. \*\*Components of Cognitive **Narratology**](#211-components-of-cognitive-narratology)
+    - [2.1.1. \*\*Components of Cognitive \*\*Narratology\*\*](#211-components-of-cognitive-narratology)
       - [2.1.1.1. **Integration of Cognitive Science**](#2111-integration-of-cognitive-science)
       - [2.1.1.2. **Narrative as a Cognitive Artifact**](#2112-narrative-as-a-cognitive-artifact)
       - [2.1.1.3. **Impact on Reader Engagement**](#2113-impact-on-reader-engagement)
@@ -57,6 +57,14 @@ mindmap
 ###### 2.1.1.1. **Integration of Cognitive Science**
 
 - **Definition**: Cognitive narratology combines narrative theory with cognitive science, exploring how mental processes like memory, attention, and imagination interact with narrative structures.
+
+```mermaid
+flowchart TD;
+    A[**Integration of Cognitive Science**] --> B[**Interdisciplinary Approach**];
+    A --> C[**Mental Process Exploration**];
+    A --> D[**Theoretical Frameworks**];
+```
+
 - **Characteristics**
   - **Interdisciplinary Approach**: Bridges the gap between cognitive psychology and literary analysis, enriching the understanding of how stories are processed.
   - **Mental Process Exploration**: Investigates how cognitive functions such as memory recall and mental imagery are activated by narratives.
@@ -65,6 +73,14 @@ mindmap
 ###### 2.1.1.2. **Narrative as a Cognitive Artifact**
 
 - **Definition**: Ryan and others in this field view narratives as cognitive artifacts—tools created by and for the human mind to organize, interpret, and communicate experiences.
+
+```mermaid
+flowchart TD;
+    E[**Narrative as a Cognitive Artifact**] --> F[**Organizational Tool**];
+    E --> G[**Meaning-Making**];
+    E --> H[**Adaptive Function**];
+```
+
 - **Characteristics**
   - **Organizational Tool**: Narratives help structure chaotic experiences into understandable sequences, aiding in memory and understanding.
   - **Meaning-Making**: Serves as a method for individuals to make sense of life events by framing them in narrative form.
@@ -73,8 +89,18 @@ mindmap
 ###### 2.1.1.3. **Impact on Reader Engagement**
 
 - **Definition**: This approach provides insights into how readers or audiences engage with narratives on a cognitive level, including how they construct mental models of story worlds and empathize with characters.
+
+```mermaid
+flowchart TD;
+    I[**Impact on Reader Engagement**] --> J[**Empathy**];
+    I --> K[**Perspective-Taking**];
+    I --> L[**Mental Model Construction**];
+    I --> M[**Engagement Analysis**];
+```
+
 - **Characteristics**
-  - **Empathy and Perspective-Taking**: Examines how readers emotionally connect with characters, leading to deeper engagement and understanding.
+  - **Empathy**: Explores how readers emotionally connect with characters, fostering a deeper emotional engagement.
+  - **Perspective-Taking**: Encourages readers to understand and consider characters' viewpoints, enhancing narrative comprehension and connection.
   - **Mental Model Construction**: Explores how readers build internal representations of story worlds, characters, and plot developments.
   - **Engagement Analysis**: Studies how elements like suspense, surprise, and relatability affect readers’ cognitive and emotional involvement.
 
@@ -89,3 +115,22 @@ Ryan’s interdisciplinary approach is significant because it provides a compreh
 Ryan’s contributions have had a profound impact on various fields, including literature, media studies, and cognitive science. Her work has influenced how scholars approach the study of narrative, encouraging them to adopt interdisciplinary perspectives that consider the cognitive and emotional dimensions of storytelling.
 
 ---
+
+```mermaid
+mindmap
+  root((**Ryan's Interdisciplinary Approaches Framework**))
+    **Cognitive Narratology**
+      Integration of Cognitive Science
+        Interdisciplinary Approach
+        Mental Process Exploration
+        Theoretical Frameworks
+      Narrative as a Cognitive Artifact
+        Organizational Tool
+        Meaning-Making
+        Adaptive Function
+      Impact on Reader Engagement
+        Empathy
+        Perspective-Taking
+        Mental Model Construction
+        Engagement Analysis
+```

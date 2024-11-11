@@ -63,6 +63,14 @@ mindmap
 ###### 2.1.1.1. **Language**
 
 - **Definition**: Rhetoric uses carefully chosen language to convey a position and persuade the audience.
+
+```mermaid
+flowchart TD;
+    A[**Language**] --> B[**Precision in Language**];
+    A --> C[**Emotive Power**];
+    A --> D[**Adaptability**];
+```
+
 - **Characteristics**
   - **Precision in Language**: Chooses words deliberately to convey the desired impact and strengthen the argument.
   - **Emotive Power**: Utilizes words and phrases that resonate with the audience’s emotions to amplify engagement.
@@ -71,6 +79,14 @@ mindmap
 ###### 2.1.1.2. **Argumentation**
 
 - **Definition**: Structured arguments are used to build a case for the speaker or writer’s position, ensuring that ideas are presented in a coherent and logical way.
+
+```mermaid
+flowchart TD;
+    E[**Argumentation**] --> F[**Structured Presentation**];
+    E --> G[**Logical Flow**];
+    E --> H[**Supportive Evidence**];
+```
+
 - **Characteristics**
   - **Structured Presentation**: Organizes ideas in a coherent manner to present a compelling argument.
   - **Logical Flow**: Ensures that each point builds on the previous one, leading to a well-reasoned conclusion.
@@ -79,6 +95,14 @@ mindmap
 ###### 2.1.1.3. **Appeal to Emotions (Pathos)**
 
 - **Definition**: Effective rhetoric often appeals to the audience's emotions to create a connection or sway their opinion.
+
+```mermaid
+flowchart TD;
+    I[**Appeal to Emotions 'Pathos'**] --> J[**Emotional Resonance**];
+    I --> K[**Storytelling**];
+    I --> L[**Persuasive Tone**];
+```
+
 - **Characteristics**
   - **Emotional Resonance**: Engages the audience’s feelings to foster empathy and connection.
   - **Storytelling**: Incorporates anecdotes or illustrative examples that evoke emotional responses.
@@ -87,9 +111,19 @@ mindmap
 ###### 2.1.1.4. **Ethical Appeal (Ethos)**
 
 - **Definition**: Rhetoric involves establishing the speaker or writer's credibility and trustworthiness to persuade the audience.
+
+```mermaid
+flowchart TD;
+    M[**Ethical Appeal 'Ethos'**] --> N[**Authority**];
+    M --> O[**Integrity**];
+    M --> P[**Trustworthiness**];
+    M --> Q[**Relatability**];
+```
+
 - **Characteristics**
   - **Authority**: Demonstrates the speaker’s or writer’s expertise or knowledge in the subject area.
-  - **Integrity and Trustworthiness**: Builds confidence by showing honesty and strong moral character.
+  - **Integrity**: Builds confidence by demonstrating honesty and adherence to strong moral principles.
+  - **Trustworthiness**: Establishes reliability and dependability, fostering a sense of confidence in the speaker or writer.
   - **Relatability**: Connects with the audience by presenting a persona that aligns with their values and beliefs.
 
 ---
@@ -110,6 +144,14 @@ mindmap
 ###### 2.2.1.1. **Influencing Beliefs**
 
 - **Definition**: Persuasion works by presenting arguments that appeal to the audience's sense of reason, emotion, and ethics.
+
+```mermaid
+flowchart TD;
+    A[**Influencing Beliefs**] --> B[**Balanced Appeal**];
+    A --> C[**Adaptable Argumentation**];
+    A --> D[**Targeted Messaging**];
+```
+
 - **Characteristics**
   - **Balanced Appeal**: Combines logical reasoning, emotional connections, and ethical credibility to influence the audience.
   - **Adaptable Argumentation**: Adjusts the style of argument to suit different types of audiences and contexts.
@@ -118,6 +160,14 @@ mindmap
 ###### 2.2.1.2. **Building Consensus**
 
 - **Definition**: Effective persuasion often leads to the audience reaching a consensus or assent, aligning their views with the speaker or writer.
+
+```mermaid
+flowchart TD;
+    E[**Building Consensus**] --> F[**Collaborative Approach**];
+    E --> G[**Unified Vision**];
+    E --> H[**Incremental Persuasion**];
+```
+
 - **Characteristics**
   - **Collaborative Approach**: Engages the audience as participants in finding common ground.
   - **Unified Vision**: Focuses on shared values or goals to create a collective agreement.
@@ -126,6 +176,14 @@ mindmap
 ###### 2.2.1.3. **Strategic Use of Evidence**
 
 - **Definition**: Persuasion involves presenting evidence, logic, and reasoning to strengthen the argument and encourage agreement.
+
+```mermaid
+flowchart TD;
+    I[**Strategic Use of Evidence**] --> J[**Empirical Support**];
+    I --> K[**Logical Reasoning**];
+    I --> L[**Reinforcement of Points**];
+```
+
 - **Characteristics**
   - **Empirical Support**: Uses facts, data, and examples to substantiate claims and lend credibility.
   - **Logical Reasoning**: Structures arguments with sound logic to ensure conclusions are well-founded.
@@ -142,3 +200,39 @@ Booth’s _"Modern Dogma and the Rhetoric of Assent"_ provides a comprehensive a
 By examining the ethics of persuasion, Booth challenges communicators to consider the integrity of their rhetorical efforts. He advocates for a rhetoric that respects the audience’s critical thinking abilities, emphasizing the importance of ethical persuasion that fosters informed consent rather than manipulation.
 
 ---
+
+```mermaid
+mindmap
+  root((**Booth's Modern Dogma and Rhetoric of Assent Framework**))
+    **Rhetoric**
+      Language
+        Precision in Language
+        Emotive Power
+        Adaptability
+      Argumentation
+        Structured Presentation
+        Logical Flow
+        Supportive Evidence
+      Appeal to Emotions (Pathos)
+        Emotional Resonance
+        Storytelling
+        Persuasive Tone
+      Ethical Appeal (Ethos)
+        Authority
+        Integrity
+        Trustworthiness
+        Relatability
+    **Persuasion**
+      Influencing Beliefs
+        Balanced Appeal
+        Adaptable Argumentation
+        Targeted Messaging
+      Building Consensus
+        Collaborative Approach
+        Unified Vision
+        Incremental Persuasion
+      Strategic Use of Evidence
+        Empirical Support
+        Logical Reasoning
+        Reinforcement of Points
+```

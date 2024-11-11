@@ -55,6 +55,14 @@ mindmap
 ###### 2.1.1.1. **Context-Specific Rules**
 
 - **Definition**: Each speech genre has unique conventions that dictate appropriate language use, including formality, terminology, and structure. These rules are often implicit and are learned through social interaction and cultural immersion.
+
+```mermaid
+flowchart TD;
+    A[**Context-Specific Rules**] --> B[**Conventional Language Use**];
+    A --> C[**Cultural Relevance**];
+    A --> D[**Implicit Learning**];
+```
+
 - **Characteristics**
   - **Conventional Language Use**: Follows established norms specific to the context, such as professional jargon or casual language.
   - **Cultural Relevance**: Reflects cultural practices and social expectations, guiding how speakers communicate effectively.
@@ -63,6 +71,14 @@ mindmap
 ###### 2.1.1.2. **Functionality**
 
 - **Definition**: Speech genres are functional, meaning they are designed to fulfill specific purposes within a social context. For instance, the genre of a business meeting is oriented towards decision-making and information exchange, while a wedding toast is geared towards celebration and emotional expression.
+
+```mermaid
+flowchart TD;
+    E[**Functionality**] --> F[**Purpose-Driven**];
+    E --> G[**Audience-Centric**];
+    E --> H[**Goal-Oriented Structure**];
+```
+
 - **Characteristics**
   - **Purpose-Driven**: Each genre has a clear goal, such as informing, persuading, or entertaining, that shapes the language and structure used.
   - **Audience-Centric**: Tailored to meet the needs and expectations of the intended audience, enhancing communication effectiveness.
@@ -71,6 +87,14 @@ mindmap
 ###### 2.1.1.3. **Adaptability**
 
 - **Definition**: While speech genres have established conventions, they are also adaptable. Speakers can modify their language to suit different audiences or purposes, demonstrating the flexibility of language within social contexts.
+
+```mermaid
+flowchart TD;
+    I[**Adaptability**] --> J[**Audience Awareness**];
+    I --> K[**Contextual Flexibility**];
+    I --> L[**Innovative Expression**];
+```
+
 - **Characteristics**
   - **Audience Awareness**: Adjusts language, tone, and formality based on the audience’s background and expectations.
   - **Contextual Flexibility**: Adapts to shifts in social or situational context, showing the speaker’s ability to navigate different communicative needs.
@@ -83,3 +107,23 @@ mindmap
 - **Supporting Information**:
   - **Interdisciplinary Influence**: Bakhtin’s framework has influenced fields such as cultural studies and media studies, where the analysis of speech genres is used to understand how language and communication practices vary across different cultural and media contexts. For example, the way language is used in political speeches, advertising, or news reporting can be studied as distinct speech genres, each with its own conventions and effects on the audience. In addition, speech genres are relevant in the study of multilingualism and cross-cultural communication, where different linguistic and cultural norms interact and sometimes clash.
   - **Critiques and Further Development**: While Bakhtin’s Speech Genres Framework is highly influential, some critics argue that it may overemphasize the stability and predictability of genres, potentially overlooking the fluid and evolving nature of language use. However, Bakhtin himself acknowledged that speech genres are not static; they are subject to change as social contexts evolve. Further developments in the study of speech genres have focused on how these genres adapt to new forms of communication, such as digital and hybrid genres that blend elements from different contexts. Despite these critiques, Bakhtin’s framework remains a foundational concept in the study of language and communication, offering valuable insights into the social dimensions of language use.
+
+---
+
+```mermaid
+mindmap
+  root((**Bakhtin's Speech Genres Framework**))
+    **Socially Situated Language**
+      Context-Specific Rules
+        Conventional Language Use
+        Cultural Relevance
+        Implicit Learning
+      Functionality
+        Purpose-Driven
+        Audience-Centric
+        Goal-Oriented Structure
+      Adaptability
+        Audience Awareness
+        Contextual Flexibility
+        Innovative Expression
+```

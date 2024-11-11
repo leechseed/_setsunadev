@@ -55,6 +55,14 @@ mindmap
 ###### 2.1.1.1. **Extradiegetic Level**
 
 - **Definition**: The outermost level of the narrative, where the narrator exists outside the story world. The extradiegetic narrator typically provides the overarching voice that frames the narrative, offering commentary, description, or guidance to the reader.
+
+```mermaid
+flowchart TD;
+    A[**Extradiegetic Level**] --> B[**Narrative Authority**];
+    A --> C[**Detached Perspective**];
+    A --> D[**Guiding Voice**];
+```
+
 - **Characteristics**
   - **Narrative Authority**: The extradiegetic narrator holds control over the story’s presentation and provides context, commentary, or framing for the intradiegetic narrative.
   - **Detached Perspective**: Maintains an external viewpoint that allows for a broader overview and objective commentary on the story.
@@ -63,6 +71,14 @@ mindmap
 ###### 2.1.1.2. **Intradiegetic Level**
 
 - **Definition**: The level within the story world, where the characters and events take place. The intradiegetic level is the primary narrative layer where the plot unfolds and where characters interact with one another.
+
+```mermaid
+flowchart TD;
+    E[**Intradiegetic Level**] --> F[**Character Interaction**];
+    E --> G[**Plot Development**];
+    E --> H[**Subjective Experiences**];
+```
+
 - **Characteristics**
   - **Character Interaction**: The intradiegetic level encompasses the events and dialogues that occur among characters within the story.
   - **Plot Development**: This level serves as the main stage for the narrative, where the storyline progresses and conflicts arise.
@@ -71,6 +87,14 @@ mindmap
 ###### 2.1.1.3. **Metadiegetic Level**
 
 - **Definition**: A story within a story, creating an additional layer of narrative. The metadiegetic level involves narratives that are embedded within the primary story, often told by a character within the intradiegetic level.
+
+```mermaid
+flowchart TD;
+    I[**Metadiegetic Level**] --> J[**Embedded Narratives**];
+    I --> K[**Reflective or Paralleled Themes**];
+    I --> L[**Character as Narrator**];
+```
+
 - **Characteristics**
   - **Embedded Narratives**: Provides a nested storytelling structure that can add depth and context to the main plot.
   - **Reflective or Paralleled Themes**: Often mirrors or contrasts the main narrative, enriching the overall story with additional layers of meaning.
@@ -91,3 +115,23 @@ mindmap
     - **Example**: A story within a story that changes the narrative framework of the overarching story.
   - **Metadiegetic/Intradiegetic**: When elements from a metadiegetic narrative interact with or influence the intradiegetic level.
     - **Example**: Characters in the main narrative being influenced by events or revelations from a nested story.
+
+---
+
+```mermaid
+mindmap
+  root((**Genette's Metalepsis Model**))
+    **Metalepsis**
+      **Extradiegetic Level**
+        Narrative Authority
+        Detached Perspective
+        Guiding Voice
+      **Intradiegetic Level**
+        Character Interaction
+        Plot Development
+        Subjective Experiences
+      **Metadiegetic Level**
+        Embedded Narratives
+        Reflective or Paralleled Themes
+        Character as Narrator
+```

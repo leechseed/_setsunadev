@@ -63,14 +63,32 @@ mindmap
 ###### 2.1.1.1. **Verbal Irony**
 
 - **Definition**: Where the intended meaning of a statement is opposite to its literal meaning.
+
+```mermaid
+flowchart TD;
+    A[**Verbal Irony**] --> B[**Dual Interpretation**];
+    A --> C[**Humor**];
+    A --> D[**Wit**];
+    A --> E[**Character Insight**];
+```
+
 - **Characteristics**
   - **Dual Interpretation**: The literal meaning contrasts with the underlying, intended message, creating a nuanced layer of understanding.
-  - **Humor and Wit**: Often used to add humor or sarcasm, making dialogue or narration more engaging.
+  - **Humor**: Light-hearted or amusing elements introduced to make dialogue or narration more engaging and enjoyable.
+  - **Wit**: Clever or sharp remarks that add sarcasm or intellectual playfulness, enhancing the appeal of dialogue or narration.
   - **Character Insight**: Provides insight into a character’s true thoughts or intentions, revealing deeper aspects of their personality.
 
 ###### 2.1.1.2. **Situational Irony**
 
 - **Definition**: Where there is a discrepancy between what is expected to happen and what actually occurs.
+
+```mermaid
+flowchart TD;
+    F[**Situational Irony**] --> G[**Unexpected Outcomes**];
+    F --> H[**Thematic Depth**];
+    F --> I[**Reflective Insight**];
+```
+
 - **Characteristics**
   - **Unexpected Outcomes**: Creates surprise and engages readers by subverting their expectations.
   - **Thematic Depth**: Highlights contrasts between human intentions and uncontrollable outcomes, emphasizing themes like fate or unpredictability.
@@ -79,6 +97,14 @@ mindmap
 ###### 2.1.1.3. **Dramatic Irony**
 
 - **Definition**: Where the audience knows something that the characters do not, creating tension or humor.
+
+```mermaid
+flowchart TD;
+    J[**Dramatic Irony**] --> K[**Audience Engagement**];
+    J --> L[**Emotional Connection**];
+    J --> M[**Narrative Complexity**];
+```
+
 - **Characteristics**
   - **Audience Engagement**: Creates suspense or humor as readers anticipate characters’ reactions to the revealed information.
   - **Emotional Connection**: Builds empathy or frustration as readers watch characters navigate situations with incomplete knowledge.
@@ -102,6 +128,14 @@ mindmap
 ###### 2.2.1.1. **Subversion**
 
 - **Definition**: Irony often subverts established norms, challenging societal or cultural expectations.
+
+```mermaid
+flowchart TD;
+    A[**Subversion**] --> B[**Unexpected Twists**];
+    A --> C[**Cultural Commentary**];
+    A --> D[**Creative Depth**];
+```
+
 - **Characteristics**
   - **Unexpected Twists**: Changes familiar scenarios by adding ironic elements, making the story unpredictable.
   - **Cultural Commentary**: Uses irony to question or satirize societal norms, adding a layer of critique.
@@ -110,14 +144,32 @@ mindmap
 ###### 2.2.1.2. **Critique**
 
 - **Definition**: Irony allows for indirect criticism of characters, events, or broader thematic concerns.
+
+```mermaid
+flowchart TD;
+    E[**Critique**] --> F[**Subtle Commentary**];
+    E --> G[**Layered Meanings**];
+    E --> H[**Character Examination**];
+    E --> I[**Theme Examination**];
+```
+
 - **Characteristics**
   - **Subtle Commentary**: Offers a nuanced way to critique without overtly stating an opinion.
   - **Layered Meanings**: Enables multiple interpretations, allowing readers to discern underlying criticisms.
-  - **Character and Theme Examination**: Highlights flaws or contradictions within characters or societal structures.
+  - **Character Examination**: Focuses on revealing flaws or contradictions within individual characters, adding depth to their portrayal.
+  - **Theme Examination**: Explores flaws or contradictions within societal structures, emphasizing underlying messages in the narrative.
 
 ###### 2.2.1.3. **Engagement**
 
 - **Definition**: Irony increases reader involvement by demanding a more active interpretive process.
+
+```mermaid
+flowchart TD;
+    J[**Engagement**] --> K[**Cognitive Challenge**];
+    J --> L[**Interactive Reading**];
+    J --> M[**Heightened Interest**];
+```
+
 - **Characteristics**
   - **Cognitive Challenge**: Encourages readers to read between the lines and grasp implied meanings.
   - **Interactive Reading**: Involves readers in discovering the true intentions behind ironic statements or situations.
@@ -134,3 +186,26 @@ Booth’s framework shows that irony is a crucial rhetorical tool in narrative f
 As narratives evolve, especially in modern and postmodern literature, Booth’s framework remains relevant for understanding how irony functions to challenge reader expectations and foster deeper engagement with the text.
 
 ---
+
+```mermaid
+mindmap
+  root((**Booth's Rhetoric of Irony Framework**))
+    **Types of Irony**
+      Verbal Irony
+      Situational Irony
+      Dramatic Irony
+    **Rhetorical Function of Irony**
+      Subversion
+        Unexpected Twists
+        Cultural Commentary
+        Creative Depth
+      Critique
+        Subtle Commentary
+        Layered Meanings
+        Character Examination
+        Theme Examination
+      Engagement
+        Cognitive Challenge
+        Interactive Reading
+        Heightened Interest
+```

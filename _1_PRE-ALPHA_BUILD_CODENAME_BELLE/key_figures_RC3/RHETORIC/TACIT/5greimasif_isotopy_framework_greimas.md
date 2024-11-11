@@ -66,6 +66,14 @@ mindmap
 ###### 2.1.1.1. **Repetition of Themes**
 
 - **Definition**: Isotopy ensures that key themes or ideas are revisited and reinforced multiple times, providing clarity and consistency to the narrative.
+
+```mermaid
+flowchart TD;
+    A[**Repetition of Themes**] --> B[**Consistent Reinforcement**];
+    A --> C[**Clarity of Message**];
+    A --> D[**Narrative Coherence**];
+```
+
 - **Characteristics**
   - **Consistent Reinforcement**: Maintains thematic focus by revisiting key ideas throughout the text.
   - **Clarity of Message**: Helps readers grasp the narrative’s central themes through repetition.
@@ -74,6 +82,14 @@ mindmap
 ###### 2.1.1.2. **Unity of Meaning**
 
 - **Definition**: By using isotopy, the narrative avoids disjointed or conflicting interpretations, maintaining a harmonious flow of meaning from beginning to end.
+
+```mermaid
+flowchart TD;
+    E[**Unity of Meaning**] --> F[**Thematic Consistency**];
+    E --> G[**Seamless Narrative**];
+    E --> H[**Integrated Interpretation**];
+```
+
 - **Characteristics**
   - **Thematic Consistency**: Keeps the story’s message uniform and prevents contradictory interpretations.
   - **Seamless Narrative**: Supports a cohesive narrative structure, making the story easier to follow.
@@ -82,6 +98,14 @@ mindmap
 ###### 2.1.1.3. **Reader’s Interpretation**
 
 - **Definition**: Isotopy guides the reader toward a unified interpretation of the narrative by continuously presenting related semantic elements, helping them make sense of the story’s core themes.
+
+```mermaid
+flowchart TD;
+    I[**Reader’s Interpretation**] --> J[**Directed Understanding**];
+    I --> K[**Contextual Clarity**];
+    I --> L[**Enhanced Interpretation**];
+```
+
 - **Characteristics**
   - **Directed Understanding**: Steers the reader’s comprehension by using consistent semantic cues.
   - **Contextual Clarity**: Provides repeated elements that create a sense of familiarity and deeper understanding.
@@ -101,15 +125,33 @@ mindmap
 
 ###### 2.2.1.1. **Linking Narrative Elements**
 
-- **Definition**: Isotopy connects various narrative elements—such as characters, plot points, and symbols—under a shared thematic umbrella, ensuring they contribute to a unified interpretation.
+- **Definition**: Isotopy connects various narrative elements—such as characters, plot points, and symbols—under a shared thematic umbrella, ensuring they contribute to a unified interpretation
+
+```mermaid
+flowchart TD;
+    A[**Linking Narrative Elements**] --> B[**Integrated Plot**];
+    A --> C[**Integrated Characters**];
+    A --> D[**Coherent Symbolism**];
+    A --> E[**Unified Interpretation**];
+```
+
 - **Characteristics**
-  - **Integrated Plot and Characters**: Aligns different story components to reinforce the overarching theme.
+  - **Integrated Plot:** A storyline where events are tightly connected, each advancing the overarching theme and contributing to a cohesive narrative.
+  - **Integrated Characters:** Characters whose actions, development, and relationships are closely aligned with the story’s central theme, enhancing the narrative’s coherence.
   - **Coherent Symbolism**: Uses thematic links to create a unified and interconnected narrative structure.
   - **Unified Interpretation**: Helps readers see connections between seemingly disparate parts of the story.
 
 ###### 2.2.1.2. **Symbolic Reinforcement**
 
 - **Definition**: Key symbols or motifs are repeated in different contexts within the narrative, contributing to the overall theme and solidifying the text’s message.
+
+```mermaid
+flowchart TD;
+    F[**Symbolic Reinforcement**] --> G[**Recurring Motifs**];
+    F --> H[**Contextual Variation**];
+    F --> I[**Thematic Strengthening**];
+```
+
 - **Characteristics**
   - **Recurring Motifs**: Emphasizes certain symbols to reinforce the story’s themes and ideas.
   - **Contextual Variation**: Uses the same symbols in different situations to create deeper meaning and layered interpretations.
@@ -118,10 +160,20 @@ mindmap
 ###### 2.2.1.3. **Prevention of Ambiguity**
 
 - **Definition**: Thematic unity through isotopy minimizes interpretative ambiguity by consistently repeating semantic categories that reinforce the central theme.
+
+```mermaid
+flowchart TD;
+    J[**Prevention of Ambiguity**] --> K[**Consistent Cues**];
+    J --> L[**Focused Reading Experience**];
+    J --> M[**Clear Thematic Direction**];
+```
+
 - **Characteristics**
   - **Consistent Cues**: Uses repeating elements to prevent multiple conflicting interpretations.
   - **Focused Reading Experience**: Ensures that the reader’s attention remains on the main theme.
   - **Clear Thematic Direction**: Reduces ambiguity by establishing clear connections between narrative elements.
+
+---
 
 #### 2.3. **Reinforcement of Meaning**:
 
@@ -138,6 +190,14 @@ mindmap
 ###### 2.3.1.1. **Consistency of Interpretation**
 
 - **Definition**: Repetition of specific words, motifs, or themes helps ensure that the reader consistently interprets the narrative in line with the author’s intended message.
+
+```mermaid
+flowchart TD;
+    A[**Consistency of Interpretation**] --> B[**Thematic Reinforcement**];
+    A --> C[**Coherent Reading**];
+    A --> D[**Authorial Control**];
+```
+
 - **Characteristics**
   - **Thematic Reinforcement**: Uses repetition to align the reader’s interpretation with the central themes of the narrative.
   - **Coherent Reading**: Maintains a consistent narrative voice and focus, ensuring that readers follow the intended message.
@@ -146,6 +206,14 @@ mindmap
 ###### 2.3.1.2. **Clarification of Ambiguity**
 
 - **Definition**: In cases where a narrative may introduce ambiguity or complexity, isotopy helps to clarify these elements by grounding the text in repeated, familiar semantic categories.
+
+```mermaid
+flowchart TD;
+    E[**Clarification of Ambiguity**] --> F[**Simplifies Complexity**];
+    E --> G[**Anchors Meaning**];
+    E --> H[**Cohesive Storytelling**];
+```
+
 - **Characteristics**
   - **Simplifies Complexity**: Breaks down ambiguous or complex sections of the text through repeated themes or symbols.
   - **Anchors Meaning**: Uses recurring elements to anchor the reader’s interpretation and prevent confusion.
@@ -154,7 +222,54 @@ mindmap
 ###### 2.3.1.3. **Engagement with the Reader**
 
 - **Definition**: By offering repeated cues and reinforcing key themes, isotopy engages the reader in a continuous process of thematic recognition and interpretation.
+
+```mermaid
+flowchart TD;
+    I[**Engagement with the Reader**] --> J[**Interactive Reading**];
+    I --> K[**Heightened Awareness**];
+    I --> L[**Thematic Connection**];
+```
+
 - **Characteristics**
   - **Interactive Reading**: Encourages readers to actively recognize and interpret repeated motifs or themes.
   - **Heightened Awareness**: Keeps readers engaged by prompting them to notice thematic repetitions.
   - **Thematic Connection**: Fosters a deeper understanding as readers identify and connect recurring elements across the narrative.
+
+---
+
+```mermaid
+mindmap
+  root((**Greimas' Isotopy Framework**))
+    **Semantic Coherence**
+      **Repetition of Themes**
+        Consistent Reinforcement
+        Clarity of Message
+        Narrative Coherence
+      **Unity of Meaning**
+        Thematic Consistency
+        Seamless Narrative
+        Integrated Interpretation
+    **Thematic Unity**
+      **Linking Narrative Elements**
+        Integrated Plot
+        Integrated Characters
+        Coherent Symbolism
+        Unified Interpretation
+      **Symbolic Reinforcement**
+        Recurring Motifs
+        Contextual Variation
+        Thematic Strengthening
+    **Reinforcement of Meaning**
+      **Consistency of Interpretation**
+        Thematic Reinforcement
+        Coherent Reading
+        Authorial Control
+      **Clarification of Ambiguity**
+        Simplifies Complexity
+        Anchors Meaning
+        Cohesive Storytelling
+      **Engagement with the Reader**
+        Interactive Reading
+        Heightened Awareness
+        Thematic Connection
+```

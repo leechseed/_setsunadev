@@ -53,6 +53,14 @@ Ryan’s exploration of the technological influence on narrative focuses on how 
 ###### 2.1.1.1. **Transformation of Narrative Forms**
 
 - **Definition**: Technology has led to the development of new narrative forms, such as hypertext fiction, interactive stories, and transmedia storytelling, which differ significantly from traditional linear narratives.
+
+```mermaid
+flowchart TD;
+    A[**Transformation of Narrative Forms**] --> B[**Non-Linearity**];
+    A --> C[**Multimedia Integration**];
+    A --> D[**Interactivity**];
+```
+
 - **Characteristics**
   - **Non-Linearity**: Introduces non-linear structures where readers can choose different paths, resulting in multiple possible storylines and outcomes.
   - **Multimedia Integration**: Combines text, visuals, audio, and video to create a richer and more immersive narrative experience.
@@ -61,6 +69,14 @@ Ryan’s exploration of the technological influence on narrative focuses on how 
 ###### 2.1.1.2. **Expanded Reader Engagement**
 
 - **Definition**: The shift to digital media has expanded the ways in which readers engage with narratives, enabling more active participation.
+
+```mermaid
+flowchart TD;
+    E[**Expanded Reader Engagement**] --> F[**User Influence**];
+    E --> G[**Immersive Interaction**];
+    E --> H[**Dynamic Participation**];
+```
+
 - **Characteristics**
   - **User Influence**: Empowers readers to make choices that shape the story’s direction, making them co-creators of the narrative.
   - **Immersive Interaction**: Enhances engagement through interactive elements, such as clickable story paths, decision-making, and multimedia experiences.
@@ -69,6 +85,14 @@ Ryan’s exploration of the technological influence on narrative focuses on how 
 ###### 2.1.1.3. **New Challenges for Authors**
 
 - **Definition**: While technology provides new tools for storytelling, it also introduces challenges for authors, such as adapting to new narrative structures and the complexity of interactive content.
+
+```mermaid
+flowchart TD;
+    I[**New Challenges for Authors**] --> J[**Adaptation to Complexity**];
+    I --> K[**Reader Navigation**];
+    I --> L[**Technical Considerations**];
+```
+
 - **Characteristics**
   - **Adaptation to Complexity**: Requires authors to learn and implement complex storytelling techniques that cater to non-linear and interactive formats.
   - **Reader Navigation**: Challenges authors to design stories that guide readers through interactive or non-linear narratives without causing confusion or disorientation.
@@ -90,3 +114,21 @@ Ryan’s insights have had a considerable impact on media studies and narrative 
 - **Challenges and Future Directions**: While Ryan’s framework offers valuable insights, it also raises questions about the future of storytelling in an increasingly digital world. These include concerns about the accessibility of digital narratives, the preservation of interactive content, and the implications of technology for traditional literary forms. As technology continues to advance, Ryan’s work provides a foundation for ongoing discussions about the future of narrative and its relationship with emerging media.
 
 ---
+
+```mermaid
+mindmap
+  root((**Ryan's Role of Technology in Storytelling Framework**))
+    **Technological Influence on Narrative**
+      Transformation of Narrative Forms
+        Non-Linearity
+        Multimedia Integration
+        Interactivity
+      Expanded Reader Engagement
+        User Influence
+        Immersive Interaction
+        Dynamic Participation
+      New Challenges for Authors
+        Adaptation to Complexity
+        Reader Navigation
+        Technical Considerations
+```
