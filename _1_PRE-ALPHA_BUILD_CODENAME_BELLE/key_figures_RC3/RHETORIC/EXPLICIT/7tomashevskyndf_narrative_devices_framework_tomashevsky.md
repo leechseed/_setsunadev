@@ -35,6 +35,21 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+---
+
+
+```mermaid
+mindmap
+  root((**Narrative Devices Framework**))
+    **Irony**
+    **Allegory**
+    **Symbolism**
+```
+
+
+
+---
+
 ### 1. Title: **Tomashevsky's Narrative Devices Framework**
 
 **Narrative Devices**:
@@ -49,10 +64,27 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Irony is a narrative device that creates a contrast between expectations and reality, or between what is said and what is meant. It often leads to humor, tension, or critique by highlighting discrepancies in the narrative.
 
+```mermaid
+mindmap
+  root((**Irony**))
+    **Verbal Irony**
+    **Situational Irony**
+    **Dramatic Irony**
+```
+
+
 ##### 2.1.1. **Components of Irony**
 
 ###### 2.1.1.1. **Verbal Irony**
   - **Definition**: When the intended meaning of a statement contrasts with its literal meaning.
+
+```mermaid
+flowchart TD
+    A[**Verbal Irony**] --> B[**Sarcasm**]
+    A --> C[**Subtle Layering**]
+    A --> D[**Context-Dependent**]
+```
+
   - **Characteristics**
     - **Sarcasm**: Often used to mock or convey contempt, adding humor or tension to the dialogue.
     - **Subtle Layering**: Creates an additional layer of meaning, prompting readers to think critically about what is truly being conveyed.
@@ -60,6 +92,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Situational Irony**
   - **Definition**: When there is a discrepancy between what is expected to happen and what actually occurs.
+
+```mermaid
+flowchart TD
+    E[**Situational Irony**] --> F[**Surprise Element**]
+    E --> G[**Plot Twists**]
+    E --> H[**Reflective Insight**]
+```
+
   - **Characteristics**
     - **Surprise Element**: Evokes surprise or shock by subverting readers’ or characters’ expectations.
     - **Plot Twists**: Often leads to unexpected outcomes that enhance the story’s complexity or thematic depth.
@@ -67,6 +107,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Dramatic Irony**
   - **Definition**: When the audience or reader knows something that the characters do not, creating tension or humor.
+
+```mermaid
+flowchart TD
+    I[**Dramatic Irony**] --> J[**Tension Creation**]
+    I --> K[**Engagement**]
+    I --> L[**Emotional Reactions**]
+```
+
   - **Characteristics**
     - **Tension Creation**: Builds suspense as readers anticipate how and when characters will discover the truth.
     - **Engagement**: Keeps readers invested as they watch events unfold with knowledge that the characters lack.
@@ -79,10 +127,28 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Allegory is a narrative technique in which characters, events, or settings symbolize broader abstract ideas or moral, political, or social messages. It often uses extended metaphors to convey a deeper or hidden meaning throughout the text.
 
+```mermaid
+mindmap
+  root((**Allegory**))
+    **Moral Allegory**
+    **Political Allegory**
+    **Religious Allegory**
+```
+
 ##### 2.2.1. **Components of Allegory**
 
 ###### 2.2.1.1. **Moral Allegory**
   - **Definition**: A story that teaches a moral lesson.
+
+
+```mermaid
+flowchart TD
+    A[**Moral Allegory**] --> B[**Ethical Teachings**]
+    A --> C[**Symbolic Characters**]
+    A --> D[**Didactic Purpose**]
+```
+
+
   - **Characteristics**
     - **Ethical Teachings**: Focuses on imparting lessons related to right and wrong, guiding reader behavior or beliefs.
     - **Symbolic Characters**: Uses characters and situations that embody moral virtues or vices.
@@ -90,6 +156,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Political Allegory**
   - **Definition**: A narrative that represents political ideas or events.
+
+```mermaid
+flowchart TD
+    E[**Political Allegory**] --> F[**Representation of Ideologies**]
+    E --> G[**Critique and Commentary**]
+    E --> H[**Subtextual Layering**]
+```
+
   - **Characteristics**
     - **Representation of Ideologies**: Portrays political figures, movements, or conflicts through metaphorical storytelling.
     - **Critique and Commentary**: Often critiques political systems or leaders, offering insight into real-world issues.
@@ -97,6 +171,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Religious Allegory**
   - **Definition**: A story that represents religious principles or beliefs.
+
+```mermaid
+flowchart TD
+    I[**Religious Allegory**] --> J[**Spiritual Symbolism**]
+    I --> K[**Moral and Faith-Based Messages**]
+    I --> L[**Cultural and Scriptural References**]
+```
+
   - **Characteristics**
     - **Spiritual Symbolism**: Uses characters and plot elements to symbolize religious themes or teachings.
     - **Moral and Faith-Based Messages**: Encourages readers to reflect on spiritual principles and their application to life.
@@ -109,10 +191,27 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Symbolism involves using objects, characters, or actions to represent abstract concepts or ideas, imbuing them with additional meaning beyond their literal interpretation. Symbols often carry thematic weight, contributing to the narrative’s depth and complexity.
 
+```mermaid
+mindmap
+  root((**Symbolism**))
+    **Personal Symbolism**
+    **Cultural Symbolism**
+    **Universal Symbolism**
+```
+
+
 ##### 2.3.1. **Components of Symbolism**
 
 ###### 2.3.1.1. **Personal Symbolism**
   - **Definition**: Objects or actions that carry significance for a specific character.
+
+```mermaid
+flowchart TD
+    A[**Personal Symbolism**] --> B[**Character-Driven Meaning**]
+    A --> C[**Emotional Resonance**]
+    A --> D[**Symbolic Growth**]
+```
+
   - **Characteristics**
     - **Character-Driven Meaning**: Represents personal experiences or memories, adding depth to character development.
     - **Emotional Resonance**: Elicits strong emotional responses in both characters and readers by linking objects to personal stories.
@@ -120,6 +219,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.2. **Cultural Symbolism**
   - **Definition**: Symbols that represent larger cultural or societal themes.
+
+```mermaid
+flowchart TD
+    E[**Cultural Symbolism**] --> F[**Shared Understanding**]
+    E --> G[**Social Commentary**]
+    E --> H[**Contextual Variability**]
+```
+
   - **Characteristics**
     - **Shared Understanding**: Relies on readers’ knowledge of cultural references to convey meaning effectively.
     - **Social Commentary**: Highlights societal values, struggles, or norms through symbolic representation.
@@ -127,11 +234,38 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.3.1.3. **Universal Symbolism**
   - **Definition**: Symbols that carry meaning across different cultures and contexts.
+
+```mermaid
+flowchart TD
+    I[**Universal Symbolism**] --> J[**Timeless and Cross-Cultural**]
+    I --> K[**Archetypal Themes**]
+    I --> L[**Broad Appeal**]
+```
+
   - **Characteristics**
     - **Timeless and Cross-Cultural**: Recognized and understood by people from diverse backgrounds.
     - **Archetypal Themes**: Embodies universal human experiences or emotions, such as light symbolizing hope or darkness representing fear.
     - **Broad Appeal**: Enhances the story’s relatability and thematic resonance by tapping into shared human understanding.
 
+---
+
+```mermaid
+mindmap
+  root((**Narrative Devices Framework**))
+    **Irony**
+      Verbal Irony
+      Situational Irony
+      Dramatic Irony
+    **Allegory**
+      Moral Allegory
+      Political Allegory
+      Religious Allegory
+    **Symbolism**
+      Personal Symbolism
+      Cultural Symbolism
+      Universal Symbolism
+```
+---
 ---
 
 ### 3. Implications of Tomashevsky’s Narrative Devices Framework

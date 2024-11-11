@@ -13,33 +13,45 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: TACIT
+
 ---
-### Title: **Greimasian Semiotics**
+- [1. Title: **Greimasian Semiotics**](#1-title-greimasian-semiotics)
+- [2. **Key Concepts**:](#2-key-concepts)
+  - [2.1. **Deep Structure Analysis**:](#21-deep-structure-analysis)
+    - [2.1.1. **Components of Deep Structure Analysis**](#211-components-of-deep-structure-analysis)
+      - [2.1.1.1. **Semiotic Square**](#2111-semiotic-square)
+      - [2.1.1.2. **Isotopy**](#2112-isotopy)
+      - [2.1.1.3. **Actantial Model**](#2113-actantial-model)
+- [3. **Theoretical Significance**:](#3-theoretical-significance)
+
+
+---
+### 1. Title: **Greimasian Semiotics**
 
 - **Greimasian Semiotics**:
   - **Definition**: Greimasian semiotics, developed by Algirdas Julien Greimas, is a school of thought within semiotic theory that focuses on the analysis of the deep structures that underpin language and texts. Unlike approaches that concentrate solely on the surface-level content of narratives, Greimasian semiotics seeks to uncover the underlying frameworks and systems that govern the generation of meaning. This methodology has been widely influential across various fields, including literary studies, anthropology, and communication studies, due to its rigorous and systematic approach to understanding how meaning is constructed and communicated.
 
-### **Key Concepts**:
+### 2. **Key Concepts**:
 
-#### **Deep Structure Analysis**:
+#### 2.1. **Deep Structure Analysis**:
   - **Definition**: Deep structure analysis is a central concept in Greimasian semiotics, involving the examination of the fundamental structures that shape meaning within texts. This analysis looks beyond the superficial narrative elements—such as plot and character—to explore the underlying logic and relationships that organize and produce meaning. Greimasian semiotics often employs tools like the semiotic square and isotopy to reveal these deep structures.
 
-##### **Components of Deep Structure Analysis**
-###### **Semiotic Square**
+##### 2.1.1. **Components of Deep Structure Analysis**
+###### 2.1.1.1. **Semiotic Square**
   - **Definition**: One of the key tools in Greimasian semiotics, the semiotic square, is used to map out the logical relationships between opposing and complementary concepts within a narrative. It helps to illustrate the complex interplay of meanings that underlie the surface text.
   - **Characteristics**
     - **Mapping Oppositions**: Visualizes the binary oppositions and mediating terms, clarifying complex relationships within a narrative.
     - **Conceptual Interplay**: Shows how seemingly contradictory or complementary ideas can coexist and interact.
     - **Thematic Depth**: Reveals underlying meanings and structures, contributing to a deeper analysis of the text.
 
-###### **Isotopy**
+###### 2.1.1.2. **Isotopy**
   - **Definition**: Another important concept, isotopy refers to the repetition of semantic categories within a text, which creates coherence and helps to stabilize meaning across the narrative.
   - **Characteristics**
     - **Reinforcement of Meaning**: Uses repetition of semantic elements to ensure thematic consistency.
     - **Narrative Cohesion**: Provides a stable structure that helps unify the text by connecting different parts through repeated ideas or motifs.
     - **Interpretative Clarity**: Assists readers in identifying the main themes and interpretations by highlighting recurring semantic fields.
 
-###### **Actantial Model**
+###### 2.1.1.3. **Actantial Model**
   - **Definition**: Greimas introduced the actantial model, a framework that identifies the fundamental roles (or actants) that characters and forces assume within a narrative, such as the hero, the opponent, the object of desire, and so forth. This model helps to analyze the dynamics of action and interaction within the story.
   - **Characteristics**
     - **Role Identification**: Defines key narrative roles like the hero, opponent, helper, and object, making it easier to understand character dynamics.
@@ -48,7 +60,7 @@ KNOWLEDGE TYPE: TACIT
 
 
 
-### **Theoretical Significance**:
+### 3. **Theoretical Significance**:
   - **Impact on Semiotics and Structuralism**: Greimasian semiotics has had a profound impact on the field of semiotics, particularly within the structuralist tradition. Greimas’s work helped to advance the idea that meaning is not inherent in words or symbols themselves but is produced through the relationships and structures that connect them. His approach has influenced a wide range of disciplines, encouraging scholars to look beyond surface-level interpretations and to consider the deeper systems that govern meaning.
     - **Applications Across Disciplines**: The principles of Greimasian semiotics have been applied in various fields, from literary and cultural studies to anthropology and communication. In each of these areas, Greimas’s methods provide a framework for analyzing how meaning is constructed, transmitted, and understood within different contexts, making it a versatile and powerful tool for scholarly analysis.
     - **Supporting Information**:

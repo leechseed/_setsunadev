@@ -12,40 +12,52 @@ ELEMENT: RHETORIC
 PROPERTY: INTERTEXTUALITY
 KNOWLEDGE TYPE: TACIT
 ---
+
+- [1. Title: **Ryan's Medium Specificity Framework**](#1-title-ryans-medium-specificity-framework)
+- [2. Key Concepts](#2-key-concepts)
+  - [2.1. Analyzing Narrative Across Media](#21-analyzing-narrative-across-media)
+    - [2.1.1. **Components of Analyzing Narrative Across Media**](#211-components-of-analyzing-narrative-across-media)
+      - [2.1.1.1. **Unique Capabilities**](#2111-unique-capabilities)
+      - [2.1.1.2. **Limitations**](#2112-limitations)
+      - [2.1.1.3. **Narrative Adaptation**](#2113-narrative-adaptation)
+- [3. Theoretical Significance](#3-theoretical-significance)
+- [4. Implications of Medium Specificity](#4-implications-of-medium-specificity)
+
+
 ---
 
-### Title: **Ryan's Medium Specificity Framework**
+### 1. Title: **Ryan's Medium Specificity Framework**
 
 **Medium Specificity**:
    **Definition**: In *"Narrative as Virtual Reality,"* Marie-Laure Ryan introduces and emphasizes the concept of *medium specificity*, which refers to the idea that each storytelling medium possesses its own unique capabilities, constraints, and modes of expression. This concept suggests that the effectiveness and nature of a narrative are deeply influenced by the medium through which it is conveyed. Understanding these unique properties is essential for analyzing and appreciating how narratives are constructed and experienced differently across various media.
 
 ---
 
-### Key Concepts
+### 2. Key Concepts
 
-#### Analyzing Narrative Across Media
+#### 2.1. Analyzing Narrative Across Media
 
 **Definition**:
    Ryan argues that a thorough understanding of *medium specificity* is crucial for analyzing how narratives function across different platforms. Recognizing the distinct characteristics of each medium allows for a deeper appreciation of the unique experiences they offer and the specific narrative techniques that are most effective within each medium.
 
 
-##### **Components of Analyzing Narrative Across Media**
+##### 2.1.1. **Components of Analyzing Narrative Across Media**
 
-###### **Unique Capabilities**
+###### 2.1.1.1. **Unique Capabilities**
   - **Definition**: Each medium—whether it be literature, film, video games, or virtual reality—has its own set of tools and techniques that shape how stories are told and received.
   - **Characteristics**
     - **Medium-Specific Techniques**: Literature can use interior monologues and detailed descriptions, film employs visual storytelling and sound, and video games offer interactive decision-making.
     - **Sensory Engagement**: Each medium engages different senses; for instance, film and virtual reality use both sight and sound, while literature depends on imagination.
     - **Narrative Depth**: The ability to explore complex themes varies, with literature often providing introspection and virtual reality offering immersive, experiential storytelling.
 
-###### **Limitations**
+###### 2.1.1.2. **Limitations**
   - **Definition**: Just as each medium has strengths, it also has limitations that impact narrative construction.
   - **Characteristics**
     - **Expressive Constraints**: Literature can’t visually represent scenes, while film may struggle to portray deep internal monologues.
     - **Interaction Limits**: Video games may face challenges in pacing due to player choices, unlike the fixed flow in films or books.
     - **Technological Dependence**: Mediums like virtual reality require advanced hardware, limiting accessibility and narrative consistency.
 
-###### **Narrative Adaptation**
+###### 2.1.1.3. **Narrative Adaptation**
   - **Definition**: When narratives are adapted from one medium to another, understanding the specificities of each medium is critical.
   - **Characteristics**
     - **Structural Modifications**: Adaptations often require altering the story’s pacing or scenes to fit the new medium’s strengths (e.g., more visual scenes in film).
@@ -57,7 +69,7 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-### Theoretical Significance
+### 3. Theoretical Significance
 
 **Definition**:
    Ryan’s *medium specificity* framework is critical for analyzing and understanding narratives that are created and experienced within different media. It provides a lens through which the strengths and weaknesses of each medium can be evaluated, offering insights into how narratives can be effectively crafted to leverage these unique attributes.
@@ -76,7 +88,7 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-### Implications of Medium Specificity
+### 4. Implications of Medium Specificity
 
 **Key Insight or Implication**:
    Ryan’s *medium specificity* framework offers critical insights into how different media shape storytelling. It helps identify both the unique capabilities and limitations of each medium, guiding creators in how to best leverage these aspects in narrative construction.

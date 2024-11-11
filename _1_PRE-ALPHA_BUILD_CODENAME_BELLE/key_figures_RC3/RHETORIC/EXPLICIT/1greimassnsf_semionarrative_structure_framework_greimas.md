@@ -30,8 +30,14 @@ KNOWLEDGE TYPE: EXPLICIT
 - [3. Theoretical Significance](#3-theoretical-significance)
 
 ---
-
-
+---
+```mermaid
+mindmap
+  root((**Semio-Narrative Structure Framework**))
+    **Semes**
+    **Structural Analysis**
+```
+---
 ### 1. Title: **Greimas's Semio-Narrative Structure Framework**
 
 **The Semio-Narrative Structure**:
@@ -46,10 +52,25 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Semes are the smallest indivisible units of meaning within a narrative. They function as the fundamental building blocks or atoms of the narrative’s semantic content, with each seme contributing a specific meaning or connotation to the larger narrative structure.
 
+```mermaid
+flowchart TD;
+    A[**Semes**] --> B[**Minimal Units of Meaning**];
+    A --> C[**Context-Dependent**];
+    A --> D[**Building Blocks of Semantics**];
+```
+
 ##### 2.1.1. **Components of Semes**
 
 ###### 2.1.1.1. **Minimal Units of Meaning**
   - **Definition**: Semes are the most basic elements that carry meaning in a narrative, often manifesting as single words, images, or phrases.
+
+```mermaid
+flowchart TD
+    A[**Minimal Units of Meaning**] --> B[**Foundational Elements**]
+    A --> C[**Symbolic Function**]
+    A --> D[**Repetitive Presence**]
+```
+
   - **Characteristics**
     - **Foundational Elements**: Serve as the smallest meaningful components that combine to form a coherent narrative.
     - **Symbolic Function**: Can represent ideas or emotions that add depth to the story when interpreted collectively.
@@ -57,6 +78,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Context-Dependent**
   - **Definition**: The meaning of a seme is not fixed; it can vary depending on its context within the narrative.
+
+```mermaid
+flowchart TD
+    E[**Context-Dependent**] --> F[**Flexible Interpretation**]
+    E --> G[**Dynamic Usage**]
+    E --> H[**Situational Impact**]
+```
+
   - **Characteristics**
     - **Flexible Interpretation**: Changes in meaning based on the surrounding text or plot developments.
     - **Dynamic Usage**: Shifts its significance as the story evolves, contributing to the reader’s understanding of character or plot.
@@ -64,6 +93,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Building Blocks of Semantics**
   - **Definition**: Semes combine to create more complex units of meaning, contributing to the overall thematic and semantic coherence of a narrative.
+
+```mermaid
+flowchart TD
+    I[**Building Blocks of Semantics**] --> J[**Constructive Role**]
+    I --> K[**Thematic Reinforcement**]
+    I --> L[**Narrative Depth**]
+```
+
   - **Characteristics**
     - **Constructive Role**: Combine with other semes to build larger narrative units, like themes or symbols.
     - **Thematic Reinforcement**: Help create consistent themes by appearing in varied forms throughout the story.
@@ -77,10 +114,26 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Structural analysis in the semio-narrative framework examines the relationships and interactions between semes to understand how they contribute to the overall meaning of the narrative.
 
+
+```mermaid
+flowchart TD;
+    A[**Structural Analysis**] --> B[**Relational Patterns**];
+    A --> C[**Binary Oppositions**];
+    A --> D[**Thematic Cohesion**];
+```
+
 ##### 2.2.1. **Components of Structural Analysis**
 
 ###### 2.2.1.1. **Relational Patterns**
   - **Definition**: Structural analysis looks at how semes relate to one another, forming larger narrative structures like themes, motifs, and symbols.
+
+```mermaid
+flowchart TD
+    A[**Relational Patterns**] --> B[**Interconnected Elements**]
+    A --> C[**Narrative Mapping**]
+    A --> D[**Holistic Perspective**]
+```
+
   - **Characteristics**
     - **Interconnected Elements**: Examines how individual semes connect to create cohesive themes or motifs within the narrative.
     - **Narrative Mapping**: Identifies relationships among various components to understand the structure of the story.
@@ -88,6 +141,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Binary Oppositions**
   - **Definition**: A key aspect is identifying binary oppositions (e.g., life/death, good/evil) that organize the narrative into contrasting elements.
+
+```mermaid
+flowchart TD
+    E[**Binary Oppositions**] --> F[**Structural Tension**]
+    E --> G[**Symbolic Contrast**]
+    E --> H[**Framework for Analysis**]
+```
+
   - **Characteristics**
     - **Structural Tension**: Creates conflicts and contrasts that drive the narrative forward and deepen the reader’s engagement.
     - **Symbolic Contrast**: Highlights themes by positioning ideas or characters against each other to create meaning.
@@ -95,11 +156,34 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Thematic Cohesion**
   - **Definition**: Structural analysis reveals the underlying logic and thematic cohesion of the narrative.
+
+```mermaid
+flowchart TD
+    I[**Thematic Cohesion**] --> J[**Logical Consistency**]
+    I --> K[**Unified Meaning**]
+    I --> L[**Insight into Structure**]
+```
+
+
   - **Characteristics**
     - **Logical Consistency**: Shows how different narrative elements work together to reinforce a central theme.
     - **Unified Meaning**: Demonstrates how recurring motifs and patterns contribute to a seamless narrative experience.
     - **Insight into Structure**: Offers an understanding of how narrative elements align to present a coherent and compelling story.
 
+---
+```mermaid
+mindmap
+  root((**Semio-Narrative Structure Framework**))
+    **Semes**
+      Minimal Units of Meaning
+      Context-Dependent
+      Building Blocks of Semantics
+    **Structural Analysis**
+      Relational Patterns
+      Binary Oppositions
+      Thematic Cohesion
+```
+---
 
 ### 3. Theoretical Significance
 
