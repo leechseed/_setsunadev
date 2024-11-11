@@ -16,27 +16,69 @@ SUBTYPE: TEXT
 KNOWLEDGE TYPE: TACIT
 ---
 
+- [1. Title: **Ryan's Immersion Framework**](#1-title-ryans-immersion-framework)
+- [2. Key Concepts](#2-key-concepts)
+  - [2.1. Traditional vs. Digital Narratives](#21-traditional-vs-digital-narratives)
+  - [2.2. Traditional Narratives](#22-traditional-narratives)
+    - [2.2.1. **Components of Traditional Narratives**](#221-components-of-traditional-narratives)
+  - [2.3. Digital Narratives](#23-digital-narratives)
+    - [2.3.1. **Components of Digital Narratives**](#231-components-of-digital-narratives)
+      - [2.3.1.1. **Sensory Engagement**](#2311-sensory-engagement)
+      - [2.3.1.2. **Visual Realism**](#2312-visual-realism)
+      - [2.3.1.3. **Sound Design**](#2313-sound-design)
+      - [2.3.1.4. **Interactivity**](#2314-interactivity)
+      - [2.3.1.5. **Immersive Techniques**](#2315-immersive-techniques)
+  - [2.4. Virtual Narratives](#24-virtual-narratives)
+    - [2.4.1. **Components of Virtual Narratives**](#241-components-of-virtual-narratives)
+      - [2.4.1.1. **Sensory Engagement**](#2411-sensory-engagement)
+      - [2.4.1.2. **Immersive Environment**](#2412-immersive-environment)
+      - [2.4.1.3. **Tactile Feedback**](#2413-tactile-feedback)
+      - [2.4.1.4. **Interactivity**](#2414-interactivity)
+      - [2.4.1.5. **Immersive Techniques**](#2415-immersive-techniques)
+- [3. Implications of Immersion Framework](#3-implications-of-immersion-framework)
+
+
+
 ---
 
-### Title: **Ryan's Immersion Framework**
+```mermaid
+mindmap
+  root((**Ryan's Immersion Framework**))
+    **Traditional Narratives**
+    **Digital Narratives**
+    **Virtual Narratives**
+```
+
+
+---
+### 1. Title: **Ryan's Immersion Framework**
 
 **Immersion**:
    **Definition**: Marie-Laure Ryan defines *immersion* as the experience of being transported into a fictional world, where the reader or viewer becomes fully absorbed in the narrative. In her work *"Narrative as Virtual Reality,"* she explores how different media—literature, film, video games, and virtual reality—create immersive experiences.
 
 ---
 
-### Key Concepts
+### 2. Key Concepts
 
-#### Traditional vs. Digital Narratives
+#### 2.1. Traditional vs. Digital Narratives
 
 **Definition**:
    Ryan differentiates between traditional and digital narratives in how they achieve immersion. Traditional narratives, such as those found in literature, rely heavily on the reader’s imagination to create a sense of immersion. In contrast, digital and virtual narratives, such as those in video games or virtual reality, achieve immersion through sensory engagement and interactivity, allowing the audience to experience the fictional world more directly.
 
 ---
 
-#### Traditional Narratives
+#### 2.2. Traditional Narratives
 
-##### **Components of Traditional Narratives**
+
+```mermaid
+mindmap
+  root((**Ryan's Immersion Framework**))
+    **Traditional Narratives**
+
+```
+
+
+##### 2.2.1. **Components of Traditional Narratives**
 
 **Imaginative Immersion**:
    Traditional narratives rely on language to evoke images, emotions, and sensations. Readers engage with the text, visualizing the world and characters through imagination. This process allows for personal engagement as each reader’s interpretation is unique.
@@ -56,41 +98,50 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-#### Digital Narratives
+#### 2.3. Digital Narratives
 
 
-##### **Components of Digital Narratives**
+```mermaid
+mindmap
+  root((**Ryan's Immersion Framework**))
+    **Digital Narratives**
+
+```
 
 
-###### **Sensory Engagement**
+
+##### 2.3.1. **Components of Digital Narratives**
+
+
+###### 2.3.1.1. **Sensory Engagement**
   - **Definition**: Digital narratives, like those found in video games, engage multiple senses. Visual and auditory stimuli create more immediate immersion, allowing users to explore fully realized environments.
   - **Characteristics**
     - **Multi-Sensory Experience**: Integrates visuals and audio to create a cohesive and immersive narrative environment.
     - **Immediate Engagement**: Captures user attention quickly through dynamic sensory input, fostering deeper involvement in the story.
     - **Enhanced Realism**: Utilizes sensory details to simulate a believable world that feels more tangible and interactive.
 
-###### **Visual Realism**
+###### 2.3.1.2. **Visual Realism**
    - **Definition**: High-quality graphics enhance the realism of the narrative world.
    - **Characteristics**
       - **Detailed Environments**: Provides intricate visual details that make the setting more lifelike.
       - **Character Lifelikeness**: Realistic graphics contribute to relatable and expressive characters.
       - **Immersive Worldbuilding**: Creates a believable atmosphere where users feel fully immersed in the narrative space.
 
-###### **Sound Design**
+###### 2.3.1.3. **Sound Design**
    - **Definition**: Audio effects and dynamic soundscapes enhance immersion.
    - **Characteristics**
       - **Atmospheric Audio**: Background sounds and music set the mood, enhancing the narrative's tone.
       - **Interactive Sound Cues**: Audio reacts to player actions, deepening the sense of agency.
       - **Spatial Awareness**: Surround sound effects contribute to the realism of the environment and user orientation.
 
-###### **Interactivity**
+###### 2.3.1.4. **Interactivity**
   - **Definition**: Users interact with the narrative, influencing its progression and outcomes.
   - **Characteristics**
     - **Player Agency**: Users make choices that shape the narrative and character development.
     - **Adaptive Storylines**: The plot changes based on user decisions, leading to unique experiences.
     - **Active Participation**: Engages users by allowing them to contribute to the unfolding story through their actions.
 
-###### **Immersive Techniques**
+###### 2.3.1.5. **Immersive Techniques**
   - **Definition**: Methods employed to deepen user engagement within the digital narrative.
   - **Characteristics**
     - **First-Person Perspective**: Enhances immersion by placing users directly in the protagonist's viewpoint.
@@ -100,39 +151,47 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-#### Virtual Narratives
+#### 2.4. Virtual Narratives
 
-##### **Components of Virtual Narratives**
 
-###### **Sensory Engagement**
+```mermaid
+mindmap
+  root((**Ryan's Immersion Framework**))
+    **Virtual Narratives**
+```
+
+
+##### 2.4.1. **Components of Virtual Narratives**
+
+###### 2.4.1.1. **Sensory Engagement**
   - **Definition**: Virtual narratives, particularly in virtual reality (VR), elevate sensory engagement to a new level by providing an immersive, 360-degree environment that users can physically navigate and explore.
   - **Characteristics**
     - **Total Immersion**: Offers users a complete sensory experience that mimics reality, deepening engagement.
     - **Multi-Sensory Stimulation**: Engages sight, sound, and sometimes touch to create a comprehensive narrative environment.
     - **Heightened Presence**: Allows users to feel as if they are inside the story, enhancing emotional and cognitive connections.
 
-###### **Immersive Environment**
+###### 2.4.1.2. **Immersive Environment**
    - **Definition**: VR offers a fully immersive environment that places users directly inside the narrative world.
    - **Characteristics**
       - **360-Degree View**: Users can look around and interact with the world in all directions, enhancing realism.
       - **Interactive Elements**: Users engage with objects and characters as if they were physically present.
       - **Dynamic Surroundings**: The virtual world reacts to user movement and decisions, reinforcing immersion.
 
-###### **Tactile Feedback**
+###### 2.4.1.3. **Tactile Feedback**
    - **Definition**: Advanced VR systems provide tactile or haptic feedback, enhancing the sense of presence and interaction within the narrative.
    - **Characteristics**
       - **Physical Sensation**: Simulates touch or pressure, making interactions with the environment more realistic.
       - **Enhanced Engagement**: Increases user involvement by adding a sensory dimension beyond visuals and audio.
       - **Interactive Realism**: Reinforces the user’s belief in the reality of the narrative space through touch.
 
-###### **Interactivity**
+###### 2.4.1.4. **Interactivity**
   - **Definition**: Users interact with the VR narrative, influencing the environment and outcomes in real time.
   - **Characteristics**
     - **Active Participation**: Users’ actions and decisions directly affect the story, fostering a sense of agency.
     - **Explorative Freedom**: Allows users to navigate and discover elements within the narrative world at their own pace.
     - **Responsive Environment**: The narrative world changes and reacts based on user behavior, enhancing immersion.
 
-###### **Immersive Techniques**
+###### 2.4.1.5. **Immersive Techniques**
   - **Definition**: Methods used to create a fully immersive VR experience that responds to user input.
   - **Characteristics**
     - **Full-Body Engagement**: Utilizes body tracking to mirror user movements, making interactions feel authentic.
@@ -142,7 +201,7 @@ KNOWLEDGE TYPE: TACIT
 
 ---
 
-### Implications of Immersion Framework
+### 3. Implications of Immersion Framework
 
 **Key Insight or Implication**:
    Ryan’s work on immersion provides a comprehensive framework for analyzing how different media engage audiences. Her distinction between traditional, digital, and virtual narratives underscores the diverse methods through which stories capture our imagination.

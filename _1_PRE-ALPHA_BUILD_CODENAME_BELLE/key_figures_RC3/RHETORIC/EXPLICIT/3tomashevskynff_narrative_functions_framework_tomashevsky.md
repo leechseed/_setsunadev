@@ -30,6 +30,18 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+
+```mermaid
+mindmap
+  root((**Narrative Functions Framework**))
+    **Bound Motifs**
+    **Free Motifs**
+```
+
+
+
+---
+
 ### 1. Title: **Tomashevsky's Narrative Functions Framework**
 
 **Narrative Functions**:
@@ -46,8 +58,24 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ##### 2.1.1. **Components of Bound Motifs**
 
+```mermaid
+mindmap
+  root((**Bound Motifs**))
+    **Plot-Driving Events**
+    **Turning Points**
+    **Character Actions**
+```
+
 ###### 2.1.1.1. **Plot-Driving Events**
   - **Definition**: Key events or actions that significantly affect the outcome of the story.
+
+```mermaid
+flowchart TD;
+    A[**Plot-Driving Events**] --> B[**High Stakes**];
+    A --> C[**Catalyst for Change**];
+    A --> D[**Resolution Impact**];
+```
+
   - **Characteristics**
     - **High Stakes**: Involves events that dramatically change the course of the narrative or set up major conflicts.
     - **Catalyst for Change**: Acts as a trigger that propels the plot forward and influences character decisions.
@@ -55,6 +83,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Turning Points**
   - **Definition**: Critical moments that shift the direction of the narrative.
+
+```mermaid
+flowchart TD;
+    E[**Turning Points**] --> F[**Pivotal Moments**];
+    E --> G[**Character Development**];
+    E --> H[**Plot Momentum**];
+```
+
   - **Characteristics**
     - **Pivotal Moments**: Represents a significant change in the story, altering its trajectory and reader expectations.
     - **Character Development**: Often leads to important growth or change in characters as they respond to new challenges.
@@ -62,6 +98,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Character Actions**
   - **Definition**: Essential actions taken by main characters that influence the narrative’s resolution.
+
+```mermaid
+flowchart TD;
+    I[**Character Actions**] --> J[**Agency**];
+    I --> K[**Consequential Choices**];
+    I --> L[**Moral and Ethical Dimensions**];
+```
+
   - **Characteristics**
     - **Agency**: Demonstrates characters taking control of their fate, impacting the story’s progression.
     - **Consequential Choices**: The decisions made by main characters carry significant weight and affect the outcome.
@@ -73,6 +117,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 #### 2.2. Free Motifs
 
+```mermaid
+mindmap
+  root((**Free Motifs**))
+    **Symbolic Motifs**
+    **Subplots**
+    **Background Details**
+```
+
 **Definition**:
    Free motifs are narrative elements that are not essential for plot development but enrich the narrative by contributing to its atmosphere, themes, or characterization.
 
@@ -80,6 +132,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.1. **Symbolic Motifs**
   - **Definition**: Recurring symbols or images that reinforce the story's themes.
+
+```mermaid
+flowchart TD
+    A[**Symbolic Motifs**] --> B[Thematic Consistency]
+    A --> C[Visual and Conceptual Reinforcement]
+    A --> D[Subtextual Meaning]
+```
+
   - **Characteristics**
     - **Thematic Consistency**: Supports and highlights the central themes, weaving them throughout the narrative.
     - **Visual and Conceptual Reinforcement**: Uses symbols to create a layered and cohesive story that resonates with readers.
@@ -87,6 +147,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Subplots**
   - **Definition**: Minor narrative arcs that add depth without affecting the main storyline.
+
+```mermaid
+flowchart TD
+    E[**Subplots**] --> F[Character Exploration]
+    E --> G[Enhanced World-Building]
+    E --> H[Thematic Echoes]
+```
+
   - **Characteristics**
     - **Character Exploration**: Provides opportunities to explore secondary characters and their development.
     - **Enhanced World-Building**: Expands on the story’s universe, giving context and richness to the main plot.
@@ -94,11 +162,36 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Background Details**
   - **Definition**: Descriptions or elements that contribute to the setting or mood, without directly influencing the plot.
+
+```mermaid
+flowchart TD
+    I[**Background Details**] --> J[Atmospheric Enhancement]
+    I --> K[Contextual Support]
+    I --> L[Mood Creation]
+```
+
   - **Characteristics**
     - **Atmospheric Enhancement**: Builds a vivid world that draws readers into the story through sensory details.
     - **Contextual Support**: Frames the main narrative, providing a sense of realism and depth without altering the plot.
     - **Mood Creation**: Shapes the emotional tone of the story, setting the stage for how scenes are perceived.
 
+
+---
+
+```mermaid
+mindmap
+  root((**Narrative Functions Framework**))
+    **Bound Motifs**
+      Plot-Driving Events
+      Turning Points
+      Character Actions
+    **Free Motifs**
+      Symbolic Motifs
+      Subplots
+      Background Details
+```
+
+---
 
 ---
 

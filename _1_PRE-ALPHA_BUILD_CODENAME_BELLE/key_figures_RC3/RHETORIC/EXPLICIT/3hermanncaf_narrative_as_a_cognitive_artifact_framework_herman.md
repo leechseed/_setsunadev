@@ -26,6 +26,12 @@ KNOWLEDGE TYPE: EXPLICIT
 
 
 ---
+```mermaid
+mindmap
+  root((**Narrative as a Cognitive Artifact Framework**))
+    **Narratives as Tools for Thinking**
+```
+---
 
 ### 1. Title: **Herman's Narrative as a Cognitive Artifact Framework**
 
@@ -41,10 +47,26 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Herman posits that narratives serve as cognitive artifacts that allow people to structure their thoughts, make sense of events, and convey meaning to others. Through storytelling, individuals can organize disparate experiences into coherent sequences, making it easier to interpret and communicate complex ideas.
 
+```mermaid
+mindmap
+  root((**Narratives as Tools for Thinking**))
+    **Sense-Making**
+    **Problem-Solving**
+    **Communication**
+```
+
 ##### 2.1.1. **Components of Narratives as Tools for Thinking**
 
 ###### 2.1.1.1. **Sense-Making**
   - **Definition**: Narratives provide a framework for interpreting and making sense of events, especially those that are complex or ambiguous, organizing them into a coherent structure.
+
+```mermaid
+flowchart TD
+    A[**Sense-Making**] --> B[**Organizational Structure**]
+    A --> C[**Clarification of Ambiguity**]
+    A --> D[**Thematic Consistency**]
+```
+
   - **Characteristics**
     - **Organizational Structure**: Arranges events in a way that makes them easier to understand, linking cause and effect.
     - **Clarification of Ambiguity**: Helps make sense of unclear or confusing situations by framing them within a familiar context.
@@ -52,6 +74,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Problem-Solving**
   - **Definition**: Narratives function as tools for problem-solving by allowing individuals to explore perspectives, evaluate outcomes, and devise strategies.
+
+```mermaid
+flowchart TD
+    E[**Problem-Solving**] --> F[**Exploratory Space**]
+    E --> G[**Outcome Evaluation**]
+    E --> H[**Strategic Insights**]
+```
+
   - **Characteristics**
     - **Exploratory Space**: Provides a safe environment to consider different scenarios and solutions without real-world risks.
     - **Outcome Evaluation**: Enables characters and readers to learn from decisions made within the story, fostering critical thinking.
@@ -59,12 +89,28 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Communication**
   - **Definition**: Narratives are essential for transmitting information, values, and experiences, making complex ideas relatable and easier to remember.
+
+```mermaid
+flowchart TD
+    I[**Communication**] --> J[**Relatability**]
+    I --> K[**Cultural Transmission**]
+    I --> L[**Memory Retention**]
+```
+
   - **Characteristics**
     - **Relatability**: Uses stories to present ideas in a way that resonates emotionally with readers or listeners.
     - **Cultural Transmission**: Shares values, traditions, and experiences across generations and communities.
     - **Memory Retention**: Engages the audience in a format that enhances recall and understanding of complex concepts.
 
-
+---
+```mermaid
+mindmap
+  root((**Narrative as a Cognitive Artifact Framework**))
+    **Narratives as Tools for Thinking**
+      Sense-Making
+      Problem-Solving
+      Communication
+```
 ---
 
 ### 3. Theoretical Significance

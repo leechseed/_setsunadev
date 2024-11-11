@@ -14,6 +14,9 @@ TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: EXPLICIT
 ---
+- [**Greimas's Semiotic Square Model**](#greimass-semiotic-square-model)
+  - [**Binary Oppositions**](#binary-oppositions)
+  - [**Conceptual Relationships**](#conceptual-relationships)
 - [1. Title: **Greimas's Semiotic Square Model**](#1-title-greimass-semiotic-square-model)
 - [2. Key Concepts](#2-key-concepts)
   - [2.1. Binary Oppositions](#21-binary-oppositions)
@@ -33,6 +36,57 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+
+```mermaid
+mindmap
+  root((**Semiotic Square Model**))
+    **Binary Oppositions**
+    **Conceptual Relationships**
+```
+
+
+---
+
+### **Greimas's Semiotic Square Model**
+
+**The Semiotic Square**:
+   **Definition**: Algirdas Julien Greimas's *semiotic square* is a tool in semiotics used to map relationships between contrasting and complementary concepts in a narrative. It represents oppositions, contradictions, and complementarities, facilitating an analytical exploration of the semantic structures that inform narratives.
+
+---
+
+#### **Binary Oppositions**
+- **Definition**: Pairs of opposing concepts that structure narratives. The semiotic square analyzes these oppositions to highlight how they generate meaning and conflict.
+
+```mermaid
+flowchart TD;
+    A[**Binary Oppositions**] --> B[**Dualistic Nature**];
+    A --> C[**Structural Function**];
+    A --> D[**Resolution**];
+    A --> E[**Maintenance**];
+```
+
+---
+
+#### **Conceptual Relationships**
+- **Definition**: Beyond binary oppositions, the semiotic square examines relationships between contradictory, contrary, and complementary concepts, identifying mediating concepts that bridge opposites.
+
+```mermaid
+flowchart TD;
+    A[**Conceptual Relationships**] --> B[**Contradictory Relationships**];
+    A --> C[**Contrary Relationships**];
+    A --> D[**Complementary Relationships**];
+    A --> E[**Mediation**];
+```
+
+---
+```mermaid
+mindmap
+  root((**Semiotic Square Model**))
+    **Binary Oppositions**
+    **Conceptual Relationships**
+```
+---
+
 ### 1. Title: **Greimas's Semiotic Square Model**
 
 **The Semiotic Square**:
@@ -47,11 +101,28 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Binary oppositions are pairs of opposing concepts that drive the structure of narratives. The semiotic square is effective in analyzing these oppositions—such as good vs. evil or life vs. death—and highlights how these pairs generate meaning and conflict in the story.
 
+```mermaid
+mindmap
+  root((**Binary Oppositions**))
+    **Dualistic Nature**
+    **Structural Function**
+    **Resolution**
+    **Maintenance**
+```
+
 ##### 2.1.1. **Components of Binary Oppositions**
 
 
 ###### 2.1.1.1. **Dualistic Nature**
   - **Definition**: Binary oppositions represent contrasting extremes of a spectrum, with each concept defined in relation to its opposite (e.g., good vs. evil).
+
+```mermaid
+flowchart TD
+    A[**Dualistic Nature**] --> B[**Conceptual Pairing**]
+    A --> C[**Mutual Definition**]
+    A --> D[**Clear Delineation**]
+```
+
   - **Characteristics**
     - **Conceptual Pairing**: Establishes two opposing ideas that help frame the narrative’s themes and conflicts.
     - **Mutual Definition**: Each concept’s identity is dependent on its relationship with its counterpart, enhancing thematic depth.
@@ -59,6 +130,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.2. **Structural Function**
   - **Definition**: Binary oppositions often shape the plot, character development, and themes of a narrative, creating the tension necessary for conflict and resolution.
+
+```mermaid
+flowchart TD
+    E[**Structural Function**] --> F[**Conflict Creation**]
+    E --> G[**Thematic Development**]
+    E --> H[**Character Dynamics**]
+```
+
   - **Characteristics**
     - **Conflict Creation**: Drives the narrative by setting opposing forces against each other, fueling the story’s central tension.
     - **Thematic Development**: Helps to explore complex themes by positioning contrasting ideas, encouraging deeper analysis.
@@ -68,6 +147,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.3. **Resolution**
   - **Definition**: The process by which binary oppositions in a narrative are resolved, often leading to a definitive conclusion (e.g., good triumphs over evil).
+
+```mermaid
+flowchart TD
+    I[**Resolution**] --> J[**Conclusive Outcome**]
+    I --> K[**Thematic Fulfillment**]
+    I --> L[**Character Development**]
+```
+
   - **Characteristics**
     - **Conclusive Outcome**: Provides a clear end to the conflict, offering closure for the narrative and its characters.
     - **Thematic Fulfillment**: Reinforces the narrative’s central message by resolving the opposition in a way that aligns with the story’s moral or philosophical stance.
@@ -76,6 +163,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.1.1.4. **Maintenance**
   - **Definition**: The narrative choice to sustain the tension between binary oppositions without definitive resolution, portraying an ongoing struggle (e.g., the continuous battle between life and death).
+
+```mermaid
+flowchart TD
+    M[**Maintenance**] --> N[**Persistent Tension**]
+    M --> O[**Dynamic Balance**]
+    M --> P[**Open-Ended Interpretation**]
+```
+
   - **Characteristics**
     - **Persistent Tension**: Keeps the conflict alive, adding complexity and realism to the narrative by reflecting life’s unresolved struggles.
     - **Dynamic Balance**: Illustrates the coexistence of opposing forces, showing how characters or themes are influenced by their interactions.
@@ -89,10 +184,27 @@ KNOWLEDGE TYPE: EXPLICIT
 **Definition**:
    Beyond binary oppositions, the semiotic square explores the relationships between contradictory, contrary, and complementary concepts. It identifies mediating concepts that bridge opposites, providing insight into how interconnected ideas contribute to a narrative’s complexity.
 
+```mermaid
+mindmap
+  root((**Conceptual Relationships**))
+    **Contradictory Relationships**
+    **Contrary Relationships**
+    **Complementary Relationships**
+    **Mediation**
+```
+
 ##### 2.2.1. **Components of Conceptual Relationships**
 
 ###### 2.2.1.1. **Contradictory Relationships**
   - **Definition**: These involve mutually exclusive concepts (e.g., life vs. death) that cannot coexist within the same context.
+
+```mermaid
+flowchart TD
+    A[**Contradictory Relationships**] --> B[**Absolute Opposition**]
+    A --> C[**Narrative Tension**]
+    A --> D[**Definitive Outcomes**]
+```
+
   - **Characteristics**
     - **Absolute Opposition**: Presents concepts that are fundamentally incompatible, creating a stark conflict.
     - **Narrative Tension**: Drives strong narrative stakes as characters or events embody one extreme over the other.
@@ -100,6 +212,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.2. **Contrary Relationships**
   - **Definition**: These represent opposing ideas that are not entirely contradictory, allowing for intermediary states (e.g., life vs. non-life).
+
+```mermaid
+flowchart TD
+    E[**Contrary Relationships**] --> F[**Intermediate Possibilities**]
+    E --> G[**Subtle Conflicts**]
+    E --> H[**Complex Characterization**]
+```
+
   - **Characteristics**
     - **Intermediate Possibilities**: Allows for shades of meaning or states that lie between the two opposites.
     - **Subtle Conflicts**: Creates more nuanced conflicts or themes that can explore the spectrum between the opposing ideas.
@@ -107,6 +227,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.3. **Complementary Relationships**
   - **Definition**: Concepts that enhance or complete each other (e.g., light and shadow) and function together to create balance.
+
+```mermaid
+flowchart TD
+    I[**Complementary Relationships**] --> J[**Mutual Enhancement**]
+    I --> K[**Balanced Themes**]
+    I --> L[**Symbolic Interplay**]
+```
+
   - **Characteristics**
     - **Mutual Enhancement**: Each concept strengthens the significance of the other, adding richness to the narrative.
     - **Balanced Themes**: Portrays interdependence, emphasizing how opposing forces are necessary for a cohesive whole.
@@ -114,11 +242,35 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ###### 2.2.1.4. **Mediation**
   - **Definition**: A mediating term that reconciles or synthesizes opposites, offering a more nuanced understanding of how these relationships operate within the narrative.
+
+```mermaid
+flowchart TD
+    M[**Mediation**] --> N[**Synthesis of Opposites**]
+    M --> O[**Narrative Resolution**]
+    M --> P[**Thematic Depth**]
+```
   - **Characteristics**
     - **Synthesis of Opposites**: Introduces elements or ideas that bridge the gap between two conflicting forces.
     - **Narrative Resolution**: Provides a way to resolve tension without completely eliminating either side of the opposition.
     - **Thematic Depth**: Adds layers to the story by showcasing how apparent opposites can be reconciled or coexist within a larger framework.
 
+
+---
+
+```mermaid
+mindmap
+  root((**Semiotic Square Model**))
+    **Binary Oppositions**
+      Dualistic Nature
+      Structural Function
+      Resolution
+      Maintenance
+    **Conceptual Relationships**
+      Contradictory Relationships
+      Contrary Relationships
+      Complementary Relationships
+      Mediation
+```
 
 
 
