@@ -67,6 +67,14 @@ mindmap
 ###### 2.1.1.1. **Direct Action**
 
 - **Definition**: Events are depicted as they happen in real-time, without interruption or commentary.
+
+```mermaid
+flowchart TD;
+    A[**Direct Action**] --> B[**Immediate Engagement**];
+    A --> C[**Show, Don’t Tell**];
+    A --> D[**Authentic Flow**];
+```
+
 - **Characteristics**
   - **Immediate Engagement**: Creates a sense of urgency and immediacy, pulling readers into the action.
   - **Show, Don’t Tell**: Demonstrates events through direct depiction, allowing readers to experience the story firsthand.
@@ -75,6 +83,16 @@ mindmap
 ###### 2.1.1.2. **Dialogue**
 
 - **Definition**: Conversations are presented as they occur, allowing readers to infer meaning and subtext.
+
+```mermaid
+
+flowchart TD;
+    E[**Dialogue**] --> F[**Character Voice**];
+    E --> G[**Subtextual Meaning**];
+    E --> H[**Dynamic Interaction**];
+
+```
+
 - **Characteristics**
   - **Character Voice**: Provides insight into characters’ personalities and relationships through their speech.
   - **Subtextual Meaning**: Allows readers to read between the lines and understand deeper motivations or conflicts.
@@ -83,6 +101,14 @@ mindmap
 ###### 2.1.1.3. **Character Actions**
 
 - **Definition**: Characters’ behaviors and decisions are shown directly, allowing readers to interpret them based on their actions.
+
+```mermaid
+flowchart TD;
+    I[**Character Actions**] --> J[**Behavioral Clues**];
+    I --> K[**Moral Judgments**];
+    I --> L[**Active Development**];
+```
+
 - **Characteristics**
   - **Behavioral Clues**: Offers readers hints about character traits through their actions.
   - **Moral Judgments**: Enables readers to form opinions about characters based on what they do, not just what they say.
@@ -91,6 +117,14 @@ mindmap
 ###### 2.1.1.4. **Sensory Descriptions**
 
 - **Definition**: Detailed depictions of sensory experiences (sight, sound, smell, taste, touch) create vivid, immersive settings.
+
+```mermaid
+flowchart TD;
+    M[**Sensory Descriptions**] --> N[**Enhanced Imagery**];
+    M --> O[**Atmospheric Depth**];
+    M --> P[**Immersive Experience**];
+```
+
 - **Characteristics**
   - **Enhanced Imagery**: Brings scenes to life by appealing to the reader’s senses.
   - **Atmospheric Depth**: Builds the mood and tone through rich, descriptive language.
@@ -114,6 +148,14 @@ mindmap
 ###### 2.2.1.1. **Narrative Commentary**
 
 - **Definition**: The narrator provides insights or explanations about characters, events, or settings.
+
+```mermaid
+flowchart TD;
+    A[**Narrative Commentary**] --> B[**Clarification**];
+    A --> C[**Narrative Voice**];
+    A --> D[**Guided Interpretation**];
+```
+
 - **Characteristics**
   - **Clarification**: Offers readers a clearer understanding of complex events or motivations.
   - **Narrative Voice**: Establishes the tone and perspective of the story through the narrator’s insights.
@@ -122,6 +164,14 @@ mindmap
 ###### 2.2.1.2. **Direct Characterization**
 
 - **Definition**: The narrator explicitly describes a character’s traits, motivations, or inner thoughts.
+
+```mermaid
+flowchart TD;
+    E[**Direct Characterization**] --> F[**Explicit Details**];
+    E --> G[**Reader Guidance**];
+    E --> H[**Insight into Motivation**];
+```
+
 - **Characteristics**
   - **Explicit Details**: Provides straightforward information about a character’s nature or intentions.
   - **Reader Guidance**: Helps readers understand characters without ambiguity.
@@ -130,6 +180,14 @@ mindmap
 ###### 2.2.1.3. **Expository Passages**
 
 - **Definition**: The author provides background information or context to help readers understand the narrative.
+
+```mermaid
+flowchart TD;
+    I[**Expository Passages**] --> J[**World-Building**];
+    I --> K[**Contextual Support**];
+    I --> L[**Slower Pace**];
+```
+
 - **Characteristics**
   - **World-Building**: Introduces setting, history, or background that enriches the story’s context.
   - **Contextual Support**: Offers explanations that enhance readers’ comprehension of the plot or characters.
@@ -138,6 +196,14 @@ mindmap
 ###### 2.2.1.4. **Thematic Explication**
 
 - **Definition**: The narrator or author explicitly states the themes or moral lessons of the narrative.
+
+```mermaid
+flowchart TD;
+    M[**Thematic Explication**] --> N[**Clear Message**];
+    M --> O[**Authorial Insight**];
+    M --> P[**Focused Reflection**];
+```
+
 - **Characteristics**
   - **Clear Message**: Ensures readers understand the story’s central themes or morals.
   - **Authorial Insight**: Highlights the author’s intent or interpretation of the narrative’s meaning.
@@ -161,3 +227,42 @@ mindmap
 Booth emphasizes that showing and telling are not opposing techniques, but complementary tools that authors use to shape the reader’s experience. A balanced approach, where both methods are applied thoughtfully, can enhance narrative complexity and ensure the reader remains engaged while still grasping the author’s intended meaning.
 
 ---
+
+```mermaid
+mindmap
+  root((**Booth's Showing vs. Telling Framework**))
+    **Showing**
+      **Direct Action**
+        Immediate Engagement
+        Show, Don’t Tell
+        Authentic Flow
+      **Dialogue**
+        Character Voice
+        Subtextual Meaning
+        Dynamic Interaction
+      **Character Actions**
+        Behavioral Clues
+        Moral Judgments
+        Active Development
+      **Sensory Descriptions**
+        Enhanced Imagery
+        Atmospheric Depth
+        Immersive Experience
+    **Telling**
+      **Narrative Commentary**
+        Clarification
+        Narrative Voice
+        Guided Interpretation
+      **Direct Characterization**
+        Explicit Details
+        Reader Guidance
+        Insight into Motivation
+      **Expository Passages**
+        World-Building
+        Contextual Support
+        Slower Pace
+      **Thematic Explication**
+        Clear Message
+        Authorial Insight
+        Focused Reflection
+```

@@ -58,6 +58,14 @@ mindmap
 ###### 2.1.1.1. **Unique Capabilities**
 
 - **Definition**: Each medium—whether it be literature, film, video games, or virtual reality—has its own set of tools and techniques that shape how stories are told and received.
+
+```mermaid
+flowchart TD;
+    A[**Unique Capabilities**] --> B[**Medium-Specific Techniques**];
+    A --> C[**Sensory Engagement**];
+    A --> D[**Narrative Depth**];
+```
+
 - **Characteristics**
   - **Medium-Specific Techniques**: Literature can use interior monologues and detailed descriptions, film employs visual storytelling and sound, and video games offer interactive decision-making.
   - **Sensory Engagement**: Each medium engages different senses; for instance, film and virtual reality use both sight and sound, while literature depends on imagination.
@@ -66,6 +74,14 @@ mindmap
 ###### 2.1.1.2. **Limitations**
 
 - **Definition**: Just as each medium has strengths, it also has limitations that impact narrative construction.
+
+```mermaid
+flowchart TD;
+    E[**Limitations**] --> F[**Expressive Constraints**];
+    E --> G[**Interaction Limits**];
+    E --> H[**Technological Dependence**];
+```
+
 - **Characteristics**
   - **Expressive Constraints**: Literature can’t visually represent scenes, while film may struggle to portray deep internal monologues.
   - **Interaction Limits**: Video games may face challenges in pacing due to player choices, unlike the fixed flow in films or books.
@@ -74,6 +90,14 @@ mindmap
 ###### 2.1.1.3. **Narrative Adaptation**
 
 - **Definition**: When narratives are adapted from one medium to another, understanding the specificities of each medium is critical.
+
+```mermaid
+flowchart TD;
+    I[**Narrative Adaptation**] --> J[**Structural Modifications**];
+    I --> K[**Emphasis Shifts**];
+    I --> L[**Creative Reinterpretation**];
+```
+
 - **Characteristics**
   - **Structural Modifications**: Adaptations often require altering the story’s pacing or scenes to fit the new medium’s strengths (e.g., more visual scenes in film).
   - **Emphasis Shifts**: Adapting literature to film may shift from internal thoughts to visual cues, impacting how the story is perceived.
@@ -111,3 +135,21 @@ Ryan’s _medium specificity_ framework offers critical insights into how differ
 As digital and transmedia storytelling continue to evolve, understanding medium specificity will be crucial in shaping future narratives across diverse platforms. This framework supports innovation in storytelling by encouraging creators to adapt their narratives to the strengths of emerging media.
 
 ---
+
+```mermaid
+mindmap
+  root((**Ryan's Medium Specificity Framework**))
+    **Analyzing Narrative Across Media**
+      **Unique Capabilities**
+        Medium-Specific Techniques
+        Sensory Engagement
+        Narrative Depth
+      **Limitations**
+        Expressive Constraints
+        Interaction Limits
+        Technological Dependence
+      **Narrative Adaptation**
+        Structural Modifications
+        Emphasis Shifts
+        Creative Reinterpretation
+```

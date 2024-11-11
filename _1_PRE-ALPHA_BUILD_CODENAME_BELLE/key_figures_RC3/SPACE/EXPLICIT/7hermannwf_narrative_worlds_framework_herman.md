@@ -104,7 +104,8 @@ mindmap
 
 - **Definition**: The inclusion of social norms, traditions, languages, and belief systems that define how characters interact and how societies function within the narrative world.
 - **Characteristics**
-  - **Authenticity and Depth**: Detailed cultural elements create an immersive environment that feels believable and lived-in.
+  - **Authenticity**: Detailed cultural elements lend believability, making the environment feel genuine and true to life.
+  - **Depth**: Rich cultural details add layers to the setting, creating an immersive and complex world that feels lived-in.
   - **Diverse Societies**: Multiple cultures or groups within the world provide complexity and a range of perspectives.
   - **Cultural Tensions**: Conflicts and interactions between different cultures can drive plotlines and enrich character development.
 

@@ -69,6 +69,14 @@ mindmap
 ###### 2.1.1.1. **Thematic Emphasis**
 
 - **Definition**: Highlights key themes or ideas by repeating them, making them more prominent in the reader's mind.
+
+```mermaid
+flowchart TD;
+    A[**Thematic Emphasis**] --> B[**Reinforced Understanding**];
+    A --> C[**Consistent Focus**];
+    A --> D[**Depth of Analysis**];
+```
+
 - **Characteristics**
   - **Reinforced Understanding**: Repetition ensures readers grasp and reflect on the narrative’s primary themes.
   - **Consistent Focus**: Keeps the reader’s attention on central ideas throughout the story.
@@ -77,6 +85,14 @@ mindmap
 ###### 2.1.1.2. **Symbolic Significance**
 
 - **Definition**: Reinforces the importance of symbols or motifs that contribute to the narrative’s deeper meanings.
+
+```mermaid
+flowchart TD;
+    E[**Symbolic Significance**] --> F[**Layered Interpretation**];
+    E --> G[**Unified Theme**];
+    E --> H[**Reader Insight**];
+```
+
 - **Characteristics**
   - **Layered Interpretation**: Enhances the narrative’s complexity by giving weight to recurring symbols or motifs.
   - **Unified Theme**: Ties various parts of the story together through consistent symbolic representation.
@@ -85,6 +101,14 @@ mindmap
 ###### 2.1.1.3. **Memory Retention**
 
 - **Definition**: Helps readers remember important aspects of the story, ensuring that key concepts are not forgotten.
+
+```mermaid
+flowchart TD;
+    I[**Memory Retention**] --> J[**Repetition Techniques**];
+    I --> K[**Lasting Impressions**];
+    I --> L[**Cognitive Anchoring**];
+```
+
 - **Characteristics**
   - **Repetition Techniques**: Uses reiteration to reinforce major plot points or character traits.
   - **Lasting Impressions**: Ensures important details stay with the reader, aiding comprehension and recall.
@@ -106,6 +130,14 @@ mindmap
 ###### 2.2.1.1. **Subtle Clues**
 
 - **Definition**: Integrates hints that may not be immediately obvious but become significant as the story progresses.
+
+```mermaid
+flowchart TD;
+    A[**Subtle Clues**] --> B[**Foreshadowing**];
+    A --> C[**Hidden Details**];
+    A --> D[**Plot Complexity**];
+```
+
 - **Characteristics**
   - **Foreshadowing**: Plants early hints that contribute to the payoff later in the story.
   - **Hidden Details**: Encourages attentive reading to pick up on nuances that foreshadow later developments.
@@ -114,6 +146,14 @@ mindmap
 ###### 2.2.1.2. **Suspense Creation**
 
 - **Definition**: Builds tension and keeps readers engaged by making them anticipate future developments.
+
+```mermaid
+flowchart TD;
+    E[**Suspense Creation**] --> F[**Heightened Interest**];
+    E --> G[**Pacing Control**];
+    E --> H[**Emotional Connection**];
+```
+
 - **Characteristics**
   - **Heightened Interest**: Maintains reader engagement by introducing elements of uncertainty.
   - **Pacing Control**: Manipulates the speed of the story to increase anticipation.
@@ -122,6 +162,14 @@ mindmap
 ###### 2.2.1.3. **Expectation Management**
 
 - **Definition**: Prepares readers for upcoming events that can either align with or defy their predictions, enhancing the impact of the narrative.
+
+```mermaid
+flowchart TD;
+    I[**Expectation Management**] --> J[**Reader Engagement**];
+    I --> K[**Plot Twists**];
+    I --> L[**Narrative Balance**];
+```
+
 - **Characteristics**
   - **Reader Engagement**: Keeps readers on their toes by hinting at possible events.
   - **Plot Twists**: Can defy established expectations, creating surprise and excitement.
@@ -143,6 +191,14 @@ mindmap
 ###### 2.3.1.1. **Narrative Perspective**
 
 - **Definition**: The point of view from which the story is told (first-person, third-person, etc.) shapes how the reader understands the events and characters.
+
+```mermaid
+flowchart TD;
+    A[**Narrative Perspective**] --> B[**Subjective Insight**];
+    A --> C[**Omniscient Overview**];
+    A --> D[**Bias and Reliability**];
+```
+
 - **Characteristics**
   - **Subjective Insight**: Offers an intimate look at characters’ thoughts and emotions in first-person narration.
   - **Omniscient Overview**: Provides a broad understanding of the story and characters with third-person omniscient narration.
@@ -151,6 +207,14 @@ mindmap
 ###### 2.3.1.2. **Structural Framing**
 
 - **Definition**: The way the story is organized (e.g., starting in medias res, using flashbacks) influences the reader’s experience of the plot.
+
+```mermaid
+flowchart TD;
+    E[**Structural Framing**] --> F[**Non-Linear Storytelling**];
+    E --> G[**Pacing and Tension**];
+    E --> H[**Layered Understanding**];
+```
+
 - **Characteristics**
   - **Non-Linear Storytelling**: Uses techniques like flashbacks or shifting timelines to create intrigue.
   - **Pacing and Tension**: Adjusts the narrative flow to emphasize critical moments.
@@ -159,6 +223,14 @@ mindmap
 ###### 2.3.1.3. **Contextual Framing**
 
 - **Definition**: The broader historical, cultural, or social context frames the reader’s interpretation of the narrative’s themes and messages.
+
+```mermaid
+flowchart TD;
+    I[**Contextual Framing**] --> J[**Cultural Relevance**];
+    I --> K[**Reader Perspective**];
+    I --> L[**Thematic Resonance**];
+```
+
 - **Characteristics**
   - **Cultural Relevance**: Adds depth by relating the narrative to a particular social or historical backdrop.
   - **Reader Perspective**: Shapes interpretation based on knowledge of the time or setting in which the story takes place.
@@ -174,3 +246,47 @@ mindmap
   - **Interdisciplinary Influence**: Brooks’s framework has influenced film studies, psychology, and cognitive science, showing how narrative structure affects perception, memory, and emotional response.
 
 ---
+
+```mermaid
+mindmap
+  root((**Brooks' Narrative as a Rhetorical Structure Framework**))
+    **Repetition**
+      **Thematic Emphasis**
+        Reinforced Understanding
+        Consistent Focus
+        Depth of Analysis
+      **Symbolic Significance**
+        Layered Interpretation
+        Unified Theme
+        Reader Insight
+      **Memory Retention**
+        Repetition Techniques
+        Lasting Impressions
+        Cognitive Anchoring
+    **Foreshadowing**
+      **Subtle Clues**
+        Foreshadowing
+        Hidden Details
+        Plot Complexity
+      **Suspense Creation**
+        Heightened Interest
+        Pacing Control
+        Emotional Connection
+      **Expectation Management**
+        Reader Engagement
+        Plot Twists
+        Narrative Balance
+    **Framing**
+      **Narrative Perspective**
+        Subjective Insight
+        Omniscient Overview
+        Bias and Reliability
+      **Structural Framing**
+        Non-Linear Storytelling
+        Pacing and Tension
+        Layered Understanding
+      **Contextual Framing**
+        Cultural Relevance
+        Reader Perspective
+        Thematic Resonance
+```
