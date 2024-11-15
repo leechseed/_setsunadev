@@ -18,18 +18,20 @@ KNOWLEDGE TYPE: EXPLICIT
 - [2. **Key Concepts**](#2-key-concepts)
   - [2.1. **Direct Exposition**](#21-direct-exposition)
     - [2.1.1. **Components of Direct Exposition**:](#211-components-of-direct-exposition)
-      - [2.1.1.1. **Explicit Character Introduction**](#2111-explicit-character-introduction)
-      - [2.1.1.2. **Explicit Setting Introduction**](#2112-explicit-setting-introduction)
-      - [2.1.1.3. **Background Information**:](#2113-background-information)
-      - [2.1.1.4. **Clarity**](#2114-clarity)
-      - [2.1.1.5. **Efficiency**](#2115-efficiency)
-      - [2.1.1.6. **Purpose and Function**](#2116-purpose-and-function)
+      - [2.1.1.1. **Immediate Contextualization**:](#2111-immediate-contextualization)
+      - [2.1.1.2. **Explicit Character Introduction**](#2112-explicit-character-introduction)
+      - [2.1.1.3. **Explicit Setting Introduction**](#2113-explicit-setting-introduction)
+      - [2.1.1.4. **Background Information**:](#2114-background-information)
+      - [2.1.1.5. **Clarity**](#2115-clarity)
+      - [2.1.1.6. **Efficiency**](#2116-efficiency)
+    - [2.1.2. **Purpose and Function**](#212-purpose-and-function)
   - [2.2. **Delayed Exposition**](#22-delayed-exposition)
     - [2.2.1. **Components of Delayed Exposition**:](#221-components-of-delayed-exposition)
       - [2.2.1.1. **Gradual Revelation**:](#2211-gradual-revelation)
       - [2.2.1.2. **Building Suspense**:](#2212-building-suspense)
       - [2.2.1.3. **Enhancing Emotional Impact**:](#2213-enhancing-emotional-impact)
       - [2.2.1.4. **Reader Engagement**:](#2214-reader-engagement)
+    - [2.2.2. **Purpose and Function**:](#222-purpose-and-function)
   - [2.3. **Suspended Exposition**](#23-suspended-exposition)
     - [2.3.1. **Components of Suspended Exposition**:](#231-components-of-suspended-exposition)
       - [2.3.1.1. **Strategic Withholding of Information**:](#2311-strategic-withholding-of-information)
@@ -37,11 +39,19 @@ KNOWLEDGE TYPE: EXPLICIT
       - [2.3.1.3. **Maximizing Narrative Impact**:](#2313-maximizing-narrative-impact)
       - [2.3.1.4. **Surprise Endings**](#2314-surprise-endings)
       - [2.3.1.5. **Twist Endings**](#2315-twist-endings)
-  - [2.4. **Purpose and Function**](#24-purpose-and-function)
-  - [2.5. **Contextualization**:](#25-contextualization)
+    - [2.3.2. **Purpose and Function**](#232-purpose-and-function)
+  - [2.4. **Contextualization**:](#24-contextualization)
 - [3. **Conclusion**](#3-conclusion)
 
 ---
+
+```mermaid
+mindmap
+  root((**Sternberg's Expositional Modes Framework**))
+    **Direct Exposition**
+    **Delayed Exposition**
+    **Suspended Exposition**
+```
 
 ---
 
@@ -59,24 +69,44 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Direct exposition involves the immediate and explicit presentation of information, such as character descriptions, setting details, or background context, without delay. The information is provided upfront to ensure clarity and ease of understanding for the reader.
 
+```mermaid
+mindmap
+  root((**Sternberg's Expositional Modes Framework**))
+    **Direct Exposition**
+
+```
+
 ##### 2.1.1. **Components of Direct Exposition**:
 
-- **Immediate Contextualization**:
-  - **Definition**: Information provided at the onset of the narrative, giving the reader a clear understanding of the context.
-  - **Examples**: In _Pride and Prejudice_ by Jane Austen, the opening establishes the societal norms surrounding marriage, setting the stage for the entire narrative.
-  - **Characteristics**:
-    - **Straightforward**: Directly introduces the story's premise or setting.
-    - **Comprehensive**: Provides all necessary details upfront to avoid confusion.
+###### 2.1.1.1. **Immediate Contextualization**:
 
-###### 2.1.1.1. **Explicit Character Introduction**
+- **Definition**: Information provided at the onset of the narrative, giving the reader a clear understanding of the context.
+
+```mermaid
+flowchart TD;
+    A[**Immediate Contextualization**]
+    A --> B[**Straightforward**];
+    A --> C[**Comprehensive**];
+```
+
+- **Characteristics**:
+  - **Straightforward**: Directly introduces the story's premise or setting.
+  - **Comprehensive**: Provides all necessary details upfront to avoid confusion.
+
+###### 2.1.1.2. **Explicit Character Introduction**
 
 - **Definition**:
 
   - A clear and direct presentation of characters, providing essential information about their traits, background, and role in the narrative.
 
-- **Examples**:
-
-  - In _The Hobbit_ by J.R.R. Tolkien, Bilbo Baggins is introduced as a quiet, unadventurous hobbit, living a peaceful life in the Shire.
+```mermaid
+flowchart TD;
+    D[**Explicit Character Introduction**]
+    D --> E[**Unambiguous**];
+    D --> F[**Comprehensive**];
+    D --> G[**Engaging**];
+    D --> H[**Direct**];
+```
 
 - **Characteristics**:
   - **Unambiguous**: Provides detailed and straightforward descriptions of the character's appearance, personality, and background.
@@ -84,15 +114,20 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Engaging**: Captures the reader’s attention by providing enough detail to spark interest in the character’s journey.
   - **Direct**: Avoids subtlety or inference, ensuring the reader has a clear understanding of who the character is from the start.
 
-###### 2.1.1.2. **Explicit Setting Introduction**
+###### 2.1.1.3. **Explicit Setting Introduction**
 
 - **Definition**:
 
   - A clear and detailed introduction of the environment where the narrative takes place, establishing the physical and emotional context for the story.
 
-- **Examples**:
-
-  - In _The Hobbit_, Tolkien introduces the Shire as a peaceful, rural setting where Bilbo lives a contented life, providing a vivid image of the environment.
+```mermaid
+flowchart TD;
+    I[**Explicit Setting Introduction**]
+    I --> J[**Descriptive**];
+    I --> K[**Concrete**];
+    I --> L[**Atmospheric**];
+    I --> M[**Contextual**];
+```
 
 - **Characteristics**:
   - **Descriptive**: Offers vivid imagery and detailed descriptions to clearly define the setting.
@@ -100,24 +135,35 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Atmospheric**: Establishes the mood or tone of the story by providing rich sensory details about the surroundings.
   - **Contextual**: Provides essential background information that helps the reader understand the relevance of the setting to the plot and characters.
 
-###### 2.1.1.3. **Background Information**:
+###### 2.1.1.4. **Background Information**:
 
 - **Definition**: Information about past events or circumstances that shape the current story.
 
-- **Examples**: In _1984_ by George Orwell, direct exposition explains the political structure of Oceania and the role of Big Brother.
+```mermaid
+flowchart TD;
+    N[**Background Information**]
+    N --> O[**Contextual**];
+    N --> P[**Informative**];
+```
+
 - **Characteristics**:
   - **Contextual**: Connects past events to the present narrative.
   - **Informative**: Focuses on delivering crucial details to enhance understanding.
 
-###### 2.1.1.4. **Clarity**
+###### 2.1.1.5. **Clarity**
 
 - **Definition**:
 
   - Clarity in exposition refers to the clear communication of key narrative details, ensuring that the reader fully understands the story’s premise, characters, and setting.
 
-- **Examples**:
-
-  - In _Harry Potter and the Philosopher’s Stone_, the opening chapters provide clear exposition about Harry’s upbringing and mysterious origins, allowing readers to grasp the story's foundation.
+```mermaid
+flowchart TD;
+    Q[**Clarity**]
+    Q --> R[**Precise**];
+    Q --> S[**Unambiguous**];
+    Q --> T[**Transparent**];
+    Q --> U[**Informative**];
+```
 
 - **Characteristics**:
   - **Precise**: Focuses on delivering key facts without digression or ambiguity.
@@ -125,15 +171,20 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Transparent**: Presents information in a straightforward manner, allowing readers to follow the plot without difficulty.
   - **Informative**: Ensures that essential background knowledge is conveyed effectively to the reader.
 
-###### 2.1.1.5. **Efficiency**
+###### 2.1.1.6. **Efficiency**
 
 - **Definition**:
 
   - Efficiency in exposition refers to the quick and concise delivery of narrative information, ensuring the reader receives the necessary background knowledge without unnecessary elaboration.
 
-- **Examples**:
-
-  - In _Harry Potter and the Philosopher’s Stone_, the background information on Harry’s life with the Dursleys is efficiently delivered, giving the reader essential context without excessive detail.
+```mermaid
+flowchart TD;
+    V[**Efficiency**]
+    V --> W[**Concise**];
+    V --> X[**Purposeful**];
+    V --> Y[**Time-Saving**];
+    V --> Z[**Direct**];
+```
 
 - **Characteristics**:
   - **Concise**: Communicates necessary information in a brief and focused manner.
@@ -143,7 +194,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-###### 2.1.1.6. **Purpose and Function**
+##### 2.1.2. **Purpose and Function**
 
 - **Clarity and Orientation**:
 
@@ -172,7 +223,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.2.1.1. **Gradual Revelation**:
 
 - **Definition**: Information is revealed slowly as the plot unfolds.
-- **Examples**: In _Rebecca_ by Daphne du Maurier, details about Rebecca’s life and death are revealed piece by piece, deepening the mystery.
+
+```mermaid
+flowchart TD;
+    A[**Gradual Revelation**]
+    A --> B[**Incremental**];
+    A --> C[**Engaging**];
+```
+
 - **Characteristics**:
   - **Incremental**: Information is given in small amounts over time.
   - **Engaging**: Keeps the reader curious and attentive, encouraging them to continue reading.
@@ -181,7 +239,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Withholding information creates suspense and tension as readers anticipate the revelation of critical details.
 
-- **Examples**: In _Gone Girl_ by Gillian Flynn, the true story behind Amy’s disappearance is revealed gradually, keeping readers on edge.
+```mermaid
+flowchart TD;
+    D[**Building Suspense**]
+    D --> E[**Tension-Building**];
+    D --> F[**Suspenseful**];
+```
+
 - **Characteristics**:
   - **Tension-Building**: Enhances reader anticipation and anxiety.
   - **Suspenseful**: Maintains uncertainty, leaving key questions unanswered until later.
@@ -190,7 +254,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Delaying exposition can heighten the emotional payoff when key details are finally revealed.
 
-- **Examples**: In _The Sixth Sense_, the delayed revelation of the protagonist’s true condition enhances the emotional weight of the twist.
+```mermaid
+flowchart TD;
+    G[**Enhancing Emotional Impact**]
+    G --> H[**Impactful**];
+    G --> I[**Rewarding**];
+```
+
 - **Characteristics**:
   - **Impactful**: The eventual revelation delivers a powerful emotional or thematic conclusion.
   - **Rewarding**: Provides a sense of fulfillment when the reader uncovers the hidden information.
@@ -199,16 +269,23 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Readers are invited to piece together clues as information is revealed slowly, engaging them more actively with the narrative.
 
-- **Examples**: In _Lost_, the gradual revelation of each character’s backstory keeps viewers engaged through speculation.
+```mermaid
+flowchart TD;
+    J[**Reader Engagement**]
+    J --> K[**Interactive**];
+    J --> L[**Speculative**];
+```
+
 - **Characteristics**:
 
   - **Interactive**: Invites readers to interpret clues and form their own conclusions.
   - **Speculative**: Encourages theories and discussions about the narrative.
 
-- **Purpose and Function**:
-  - **Building Suspense**: The delayed release of information heightens anticipation and tension.
-  - **Creating Mystery**: Essential for mystery genres where the gradual reveal is part of the enjoyment.
-  - **Enhancing Impact**: The longer the wait, the more emotionally rewarding the eventual disclosure.
+##### 2.2.2. **Purpose and Function**:
+
+- **Building Suspense**: The delayed release of information heightens anticipation and tension.
+- **Creating Mystery**: Essential for mystery genres where the gradual reveal is part of the enjoyment.
+- **Enhancing Impact**: The longer the wait, the more emotionally rewarding the eventual disclosure.
 - **Contextualization**:
   - **Strategic Use**: Often used in serialized fiction or mystery narratives to maintain long-term reader engagement.
   - **Reader Involvement**: Encourages the reader to actively participate in understanding the story by piecing together fragments of information.
@@ -227,7 +304,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Critical details are kept hidden until a pivotal moment in the narrative.
 
-- **Examples**: In _Fight Club_, the true nature of the protagonist’s relationship with Tyler Durden is withheld until a climactic reveal.
+```mermaid
+flowchart TD;
+    A[**Strategic Withholding of Information**]
+    A --> B[**Calculated**];
+    A --> C[**Transformative**];
+```
+
 - **Characteristics**:
   - **Calculated**: Information is concealed with clear narrative intent.
   - **Transformative**: The withheld details significantly alter the reader’s understanding of prior events.
@@ -236,7 +319,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Suspended exposition allows the author to control the pacing of the story by delaying major reveals until key moments.
 
-- **Examples**: In _The Usual Suspects_, the identity of Keyser Söze is suspended until the final moments, controlling the narrative flow.
+```mermaid
+flowchart TD;
+    D[**Control of Narrative Pacing**]
+    D --> E[**Measured**];
+    D --> F[**Purposeful**];
+```
+
 - **Characteristics**:
   - **Measured**: Pacing is controlled to build toward significant moments.
   - **Purposeful**: The reveal is aligned with the story’s climax for maximum impact.
@@ -244,7 +333,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.3.1.3. **Maximizing Narrative Impact**:
 
 - **Definition**: By withholding key information, the eventual reveal can be made more dramatic and impactful.
-- **Examples**: In _The Village_, the truth about the village’s isolation is withheld until the final act, reshaping the audience’s perception of the story.
+
+```mermaid
+flowchart TD;
+    G[**Maximizing Narrative Impact**]
+    G --> H[**Dramatic**];
+    G --> I[**Subversive**];
+```
+
 - **Characteristics**:
   - **Dramatic**: Creates a sense of shock or surprise when the information is disclosed.
   - **Subversive**: Can redefine the narrative, challenging the reader’s previous assumptions.
@@ -255,9 +351,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
   - Surprise endings involve the sudden revelation of new information or a dramatic plot shift that significantly alters the reader’s or audience’s understanding of the story’s trajectory.
 
-- **Examples**:
-
-  - In _Psycho_, the shocking truth about Norman Bates is revealed only at the end, upending the audience’s assumptions.
+```mermaid
+flowchart TD;
+    J[**Surprise Endings**]
+    J --> K[**Unpredictable**];
+    J --> L[**Shocking**];
+    J --> M[**Delayed Revelation**];
+    J --> N[**Cognitive Reframing**];
+```
 
 - **Characteristics**:
   - **Unpredictable**: The narrative direction is obscured, keeping the reader in suspense until the final moments.
@@ -269,17 +370,23 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**:
   - Twist endings involve a narrative technique where the story concludes with a reversal of expectations, often through the revelation of previously hidden details or a radical change in character or plot direction.
-- **Examples**:
 
-  - In _The Sixth Sense_, the twist that the protagonist is unaware of his own death redefines the entire narrative for the audience.
+```mermaid
+flowchart TD;
+    O[**Twist Endings**]
+    O --> P[**Memorable**];
+    O --> Q[**Strategic Withholding**];
+    O --> R[**Narrative Reversal**];
+    O --> S[**Foreshadowing**];
+```
 
 - **Characteristics**:
   - **Memorable**: The twist leaves a strong, lasting impression on the reader or viewer due to its unexpected nature.
   - **Strategic Withholding**: Critical information is deliberately kept from the audience to maintain suspense.
   - **Narrative Reversal**: Often inverts the reader’s assumptions, changing the perceived trajectory of the story.
-  - ## **Foreshadowing**: While the twist is surprising, subtle clues may be embedded throughout the story, making the ending both unexpected and retrospectively logical.
+  - **Foreshadowing**: While the twist is surprising, subtle clues may be embedded throughout the story, making the ending both unexpected and retrospectively logical.
 
-#### 2.4. **Purpose and Function**
+##### 2.3.2. **Purpose and Function**
 
 - **Suspense Generation**:
 
@@ -294,7 +401,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-#### 2.5. **Contextualization**:
+#### 2.4. **Contextualization**:
 
 - **Maintaining Tension**: Suspended exposition is particularly effective in keeping the reader engaged by controlling when key information is disclosed.
 - **Strategic in Complex Narratives**: Often used in narratives with intersecting plotlines, where withholding information can increase the complexity of the story.
@@ -313,3 +420,28 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Characteristics**:
     - **Insightful**: Enhances understanding of narrative structure and strategy.
     - **Engaging**: Helps explain why certain narratives captivate readers and keep them invested.
+
+---
+
+```mermaid
+mindmap
+  root((**Sternberg's Expositional Modes Framework**))
+    **Direct Exposition**
+      Immediate Contextualization
+      Explicit Character Introduction
+      Explicit Setting Introduction
+      Background Information
+      Clarity
+      Efficiency
+    **Delayed Exposition**
+      Gradual Revelation
+      Building Suspense
+      Enhancing Emotional Impact
+      Reader Engagement
+    **Suspended Exposition**
+      Strategic Withholding of Information
+      Control of Narrative Pacing
+      Maximizing Narrative Impact
+      Surprise Endings
+      Twist Endings
+```
