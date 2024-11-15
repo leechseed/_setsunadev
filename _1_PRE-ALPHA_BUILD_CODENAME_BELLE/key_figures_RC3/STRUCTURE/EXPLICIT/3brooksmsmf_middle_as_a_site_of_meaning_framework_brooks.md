@@ -37,6 +37,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+```mermaid
+mindmap
+  root((**Brook's Middle as a Site of Meaning Framework**))
+    **Narrative Development**
+    **The Role of Tension**
+    **The Role of Complexity**
+```
+
 ---
 
 ### 1. **Brooks's Middle as a Site of Meaning Framework**
@@ -53,43 +61,69 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The middle of a narrative is the site of major conflict, character growth, and plot complication. It represents the phase where foundational elements from the beginning are tested and expanded upon, leading to greater depth and tension.
 
+```mermaid
+mindmap
+  root((**Brook's Middle as a Site of Meaning Framework**))
+    **Narrative Development**
+```
+
 ##### 2.1.1. **Components of Narrative Development**
 
 ###### 2.1.1.1. **Conflict Intensification**:
 
 - **Definition**: In the middle, conflicts grow more serious and complex, with the stakes raised for characters and outcomes.
 
-  - **Components of Conflict Intensification**:
-    - **Escalating**: Tensions increase, putting characters in more difficult situations.
-    - **Urgent**: The pressure on the characters becomes more immediate and challenging.
-  - **Examples**: In _The Lord of the Rings_, the conflicts of _The Two Towers_ heighten the stakes with the Battle of Helm's Deep and Frodo’s burden with the Ring.
+```mermaid
+flowchart TD;
+    A[**Conflict Intensification**] --> B[**Escalating**];
+    A --> C[**Urgent**];
+```
+
+- **Components of Conflict Intensification**:
+  - **Escalating**: Tensions increase, putting characters in more difficult situations.
+  - **Urgent**: The pressure on the characters becomes more immediate and challenging.
 
 ###### 2.1.1.2. **Character Development**
 
 - **Definition**: Characters face trials and dilemmas in the middle of the narrative that reveal their deeper complexities and catalyze their growth.
 
+```mermaid
+flowchart TD;
+    A[**Character Development**] --> B[**Dynamic**];
+    A --> C[**Transformative**];
+```
+
 - **Characteristics**:
   - **Dynamic**: Characters evolve and change as they confront new challenges.
   - **Transformative**: The middle is where significant internal shifts occur in characters.
-- **Examples**: In _Jane Eyre_, Jane’s emotional and moral development at Thornfield Hall deepens as her relationship with Mr. Rochester grows more complicated.
 
 ###### 2.1.1.3. **Plot Complication**
 
 - **Definition**: The middle introduces twists, new subplots, or unexpected developments that complicate the narrative.
 
+```mermaid
+flowchart TD;
+    A[**Plot Complication**] --> B[**Disruptive**];
+    A --> C[**Layered**];
+```
+
 - **Characteristics**:
   - **Disruptive**: These complications challenge the trajectory set in the beginning.
   - **Layered**: New narrative elements enrich the story's complexity.
-- **Examples**: In _Pride and Prejudice_, complications like Mr. Darcy’s first proposal and Lydia’s elopement shift Elizabeth’s journey in unexpected directions.
 
 ###### 2.1.1.4. **Thematic Exploration**
 
 - **Definition**: The middle of the narrative is where central themes are thoroughly examined and expanded through character actions and plot events.
 
+```mermaid
+flowchart TD;
+    A[**Thematic Exploration**] --> B[**Deepening**];
+    A --> C[**Multi-layered**];
+```
+
 - **Characteristics**:
   - **Deepening**: Themes are explored in greater detail and complexity.
   - **Multi-layered**: The narrative uses different events to address multiple facets of its central themes.
-- **Examples**: In _The Great Gatsby_, the middle focuses on Gatsby's pursuit of the American Dream, exploring themes of wealth, ambition, and disillusionment.
 
 ---
 
@@ -97,37 +131,67 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Tension in the middle of a narrative is a critical factor in driving the story forward. It keeps the audience engaged by heightening stakes and creating a sense of urgency as characters face increasingly challenging obstacles.
 
+```mermaid
+mindmap
+  root((**Brook's Middle as a Site of Meaning Framework**))
+    **The Role of Tension**
+```
+
 ##### 2.2.1. **Components of The Role of Tension**
 
 ###### 2.2.1.1. **Heightened Stakes**
 
 - **Definition**: As the narrative develops, the consequences of characters' actions grow more significant, often leading to moments where the outcome could drastically alter the course of the story. These increased stakes add tension and bring the narrative closer to a climactic turning point.
 
-  - **Characteristics**:
-    - **Life-or-Death**: Characters often face life-threatening situations as the stakes reach their peak.
-    - **World-Altering**: Outcomes may have large-scale effects on the world or setting, impacting many people.
-    - **Irreversible**: Decisions made during these moments often cannot be undone, making the consequences permanent.
+```mermaid
+flowchart TD;
+    A[**Heightened Stakes**] --> B[**Life-or-Death**];
+    A --> C[**World-Altering**];
+    A --> D[**Irreversible**];
+```
+
+- **Characteristics**:
+  - **Life-or-Death**: Characters often face life-threatening situations as the stakes reach their peak.
+  - **World-Altering**: Outcomes may have large-scale effects on the world or setting, impacting many people.
+  - **Irreversible**: Decisions made during these moments often cannot be undone, making the consequences permanent.
 
 ###### 2.2.1.2. **Urgency**
 
 - **Definition**: Urgency in the narrative accelerates the pace of events, pushing characters to make critical decisions under increasing pressure. The sense of urgency drives the plot forward, often leading to moments where time is of the essence.
 
-  - **Characteristics**:
-    - **Time Pressure**: The plot introduces a time-sensitive element, forcing characters to act quickly and make decisions with limited time.
-    - **Critical Decision-Making**: Characters must make important, often irreversible decisions quickly, heightening the stakes and driving the narrative toward its resolution.
-    - **High Stakes**: The urgency of the moment forces characters to act without fully considering the consequences, amplifying the risk.
-    - **Tension-Building**: The rapid pace and pressure create tension that builds toward a climactic moment.
-    - **Decisive Action**: Characters are forced into action without delay, often determining the success or failure of their goals.
+```mermaid
+flowchart TD;
+    A[**Urgency**] --> B[**Time Pressure**];
+    A --> C[**Critical Decision-Making**];
+    A --> D[**High Stakes**];
+    A --> E[**Tension-Building**];
+    A --> F[**Decisive Action**];
+```
+
+- **Characteristics**:
+  - **Time Pressure**: The plot introduces a time-sensitive element, forcing characters to act quickly and make decisions with limited time.
+  - **Critical Decision-Making**: Characters must make important, often irreversible decisions quickly, heightening the stakes and driving the narrative toward its resolution.
+  - **High Stakes**: The urgency of the moment forces characters to act without fully considering the consequences, amplifying the risk.
+  - **Tension-Building**: The rapid pace and pressure create tension that builds toward a climactic moment.
+  - **Decisive Action**: Characters are forced into action without delay, often determining the success or failure of their goals.
 
 ###### 2.2.1.3. **Suspense**
 
 - **Definition**: Suspense keeps the audience on edge by creating a sense of anticipation and uncertainty about how the narrative’s conflicts and challenges will be resolved. The feeling of suspense heightens the emotional engagement of the reader or viewer.
 
-  - **Characteristics**:
-    - **Anticipation**: The audience anticipates an outcome but is unsure when or how it will happen, creating a sense of uncertainty and tension.
-    - **Delayed Resolution**: Suspense often involves stretching out the time before a conflict or danger is resolved, building anticipation.
-    - **Uncertainty**: The outcome remains unclear, keeping the audience guessing and increasing tension.
-    - **Emotional Engagement**: Suspense draws the audience deeper into the story by making them emotionally invested in the characters’ fates.
+```mermaid
+flowchart TD;
+    A[**Suspense**] --> B[**Anticipation**];
+    A --> C[**Delayed Resolution**];
+    A --> D[**Uncertainty**];
+    A --> E[**Emotional Engagement**];
+```
+
+- **Characteristics**:
+  - **Anticipation**: The audience anticipates an outcome but is unsure when or how it will happen, creating a sense of uncertainty and tension.
+  - **Delayed Resolution**: Suspense often involves stretching out the time before a conflict or danger is resolved, building anticipation.
+  - **Uncertainty**: The outcome remains unclear, keeping the audience guessing and increasing tension.
+  - **Emotional Engagement**: Suspense draws the audience deeper into the story by making them emotionally invested in the characters’ fates.
 
 ---
 
@@ -135,32 +199,57 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Complexity in the middle of a narrative involves the intertwining of multiple plot lines, character arcs, and thematic elements. It adds depth to the story, making it richer and more layered, and allowing for intricate development of the narrative.
 
+```mermaid
+mindmap
+  root((**Brook's Middle as a Site of Meaning Framework**))
+    **The Role of Complexity**
+```
+
 ##### 2.3.1. **Components of the Role of Complexity**
 
 ###### 2.3.1.1. **Multiple Plot Lines**
 
 - **Definition**: The narrative includes several subplots or parallel storylines that intersect and contribute to the overall plot, creating a more intricate and engaging story world. These subplots often enhance the complexity of the main plot by adding depth, tension, and variety.
 
-  - **Characteristics**:
-    - **Intersecting Subplots**: Different subplots run parallel but intersect at key moments, enhancing the central narrative by weaving together various
-    - **Parallel Storylines**: Different plot threads develop in tandem, offering diverse perspectives and adding richness to the narrative without necessarily intersecting immediately.
+```mermaid
+flowchart TD;
+    A[**Multiple Plot Lines**] --> B[**Intersecting Subplots**];
+    A --> C[**Parallel Storylines**];
+```
+
+- **Characteristics**:
+  - **Intersecting Subplots**: Different subplots run parallel but intersect at key moments, enhancing the central narrative by weaving together various
+  - **Parallel Storylines**: Different plot threads develop in tandem, offering diverse perspectives and adding richness to the narrative without necessarily intersecting immediately.
 
 ###### 2.3.1.2. **Character Depth**
 
 - **Definition**: Characters become more complex and multi-dimensional as the narrative progresses, with their motivations, flaws, and growth explored in greater detail. The middle of the story often provides opportunities for deeper character development, allowing for a richer emotional and psychological portrayal.
 
-  - **Characteristics**:
-    - **Motivational Complexity**: Characters are driven by a range of motivations that go beyond simple goals, reflecting inner conflicts, desires, and moral dilemmas.
-    - **Flaws**: Characters exhibit personal flaws that hinder their progress, creating obstacles within the narrative that affect their decisions, relationships, and overall journey.
-    - **Growth**: These personal flaws often lead to growth and transformation throughout the narrative, as characters confront their weaknesses and learn from their experiences.
+```mermaid
+flowchart TD;
+    A[**Character Depth**] --> B[**Motivational Complexity**];
+    A --> C[**Flaws**];
+    A --> D[**Growth**];
+```
+
+- **Characteristics**:
+  - **Motivational Complexity**: Characters are driven by a range of motivations that go beyond simple goals, reflecting inner conflicts, desires, and moral dilemmas.
+  - **Flaws**: Characters exhibit personal flaws that hinder their progress, creating obstacles within the narrative that affect their decisions, relationships, and overall journey.
+  - **Growth**: These personal flaws often lead to growth and transformation throughout the narrative, as characters confront their weaknesses and learn from their experiences.
 
 ###### 2.3.1.3. **Thematic Layers**
 
 - **Definition**: The middle of the narrative provides space for a deeper exploration of central themes, presenting different perspectives and conflicts that enrich the story's meaning. These thematic layers often reflect on the broader questions or ideas the narrative seeks to address.
 
-  - **Characteristics**:
-    - **Multi-Faceted Themes**: Themes are explored from multiple angles, often through the actions of different characters or subplots, adding richness and complexity to the narrative.
-    - **Central Conflicts**: Thematic exploration is often tied to the central conflicts of the story, with characters' actions and decisions reflecting the broader themes at play.
+```mermaid
+flowchart TD;
+    A[**Thematic Layers**] --> B[**Multi-Faceted Themes**];
+    A --> C[**Central Conflicts**];
+```
+
+- **Characteristics**:
+  - **Multi-Faceted Themes**: Themes are explored from multiple angles, often through the actions of different characters or subplots, adding richness and complexity to the narrative.
+  - **Central Conflicts**: Thematic exploration is often tied to the central conflicts of the story, with characters' actions and decisions reflecting the broader themes at play.
 
 ---
 
@@ -171,7 +260,6 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Characteristics**:
     - **Central**: The middle is the primary site of meaning, where the story’s complexity is most evident.
     - **Crucial**: The middle holds the key to the narrative’s ultimate impact.
-  - **Examples**: In _Crime and Punishment_, the middle intensifies Raskolnikov’s inner turmoil, exploring themes of guilt, morality, and redemption with deep psychological insight.
 
 ### 4. **Theoretical Significance in Narratology**
 
@@ -189,4 +277,20 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-_Note: If there's additional content you'd like to include or if you need further assistance, feel free to let me know!_
+```mermaid
+mindmap
+  root((**Brook's Middle as a Site of Meaning Framework**))
+    **Narrative Development**
+      **Conflict Escalation**
+      **Character Arcs**
+      **Plot Complications**
+    **The Role of Tension**
+      **Suspense Building**
+      **Conflict Intensification**
+      **Emotional Stakes**
+    **The Role of Complexity**
+      **Multiple Plot Lines**
+      **Character Depth**
+      **Thematic Layers**
+
+```

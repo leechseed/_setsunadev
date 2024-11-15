@@ -1,5 +1,5 @@
 ---
-UID: 2TomashevskyPSF
+kUID: 2TomashevskyPSF
 Title: Plot vs. Story Framework
 Author: Tomashevsky
 Date: 27/08/2024
@@ -38,6 +38,15 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+```mermaid
+mindmap
+  root((**Tomashevsky's Pot vs. Story Framework**))
+    **Fabula**
+    **Sjuzhet**
+    **Pacing**
+    **Selective Information Disclosure**
+```
+
 ---
 
 ### 1. **Tomashevsky's Plot vs. Story Framework**
@@ -54,13 +63,31 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - _Fabula_ refers to the chronological, logical sequence of events as they unfold in the narrative world. It is the story in its most basic, unmanipulated form, detailing events in the order in which they would happen in real time.
 
+```mermaid
+mindmap
+  root((**Tomashevsky's Pot vs. Story Framework**))
+    **Fabula**
+```
+
 ##### 2.1.1. **Components of Fabula**
 
 ###### 2.1.1.1. **Chronological Events**:
 
 - **Definition**: The sequence of events presented in the order they actually occur in the story’s timeline.
 
-- **Examples**: In _The Odyssey_ by Homer, the fabula would include Odysseus’ journey from the Trojan War to Ithaca, in a clear, linear fashion.
+```mermaid
+flowchart TD
+    A[**Chronological Events**]
+    A --> B[**Sequential**]
+    A --> C[**Linear**]
+    A --> D[**Cause-and-Effect Clarity**]
+    A --> E[**Consistent Time Flow**]
+    A --> F[**Predictable Structure**]
+    A --> G[**Real-Time Representation**]
+    A --> H[**Stable**]
+    A --> I[**Objective**]
+```
+
 - **Characteristics**:
   - **Sequential**: The events follow a strict temporal order.
   - **Linear**: Events proceed in a logical, unaltered sequence from beginning to end.
@@ -75,7 +102,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Causality refers to the logical relationship between events in a narrative, where one event directly leads to another through cause and effect.
 
-- **Examples**: In _Hamlet_, the death of Hamlet’s father causes Hamlet to seek revenge, creating a direct chain of events.
+```mermaid
+flowchart TD
+    A[**Causality**]
+    A --> B[**Causal**]
+    A --> C[**Direct Impact**]
+    A --> D[**Consequence-Driven**]
+```
+
 - **Characteristics**:
   - **Causal**: Events are connected by clear cause-and-effect relationships.
   - **Direct Impact**: One event directly influences the occurrence of the next.
@@ -85,7 +119,14 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Continuity refers to the unbroken flow of events within a narrative, ensuring that each event naturally follows from the previous one without disruption.
 
-- **Examples**: In _Hamlet_, the continuity of events, from the ghost’s appearance to Hamlet’s decision for revenge, maintains an unbroken narrative flow.
+```mermaid
+flowchart TD
+    A[**Continuity**]
+    A --> B[**Unbroken**]
+    A --> C[**Consistent**]
+    A --> D[**Sequential**]
+```
+
 - **Characteristics**:
   - **Unbroken**: Each event naturally follows from the one before it, maintaining a seamless progression.
   - **Consistent**: Ensures that the narrative remains coherent and logical throughout its progression.
@@ -95,7 +136,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: The _fabula_ exists independently of how it is told, remaining constant regardless of the order or style in which it is narrated.
 
-- **Examples**: In _The Godfather_, the chronological rise of Michael Corleone’s power forms the fabula, regardless of how the film cuts between timelines.
+```mermaid
+flowchart TD
+    A[**Independence from Presentation**]
+    A --> B[**Invariant**]
+    A --> C[**Universal**]
+```
+
 - **Characteristics**:
   - **Invariant**: The underlying sequence remains unchanged no matter how the story is told.
   - **Universal**: The same fabula can be used across multiple adaptations or retellings.
@@ -107,13 +154,25 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - _Sjuzhet_ refers to the way the fabula is presented, often manipulating the chronological order for artistic, thematic, or emotional effects. It shapes how the audience experiences the story.
 
+```mermaid
+mindmap
+  root((**Tomashevsky's Pot vs. Story Framework**))
+    **Sjuzhet**
+```
+
 ##### 2.2.1. **Components of Sjuzhet**
 
 ###### 2.2.1.1. **Narrative Order**:
 
 - **Definition**: The arrangement of events in the narrative, which may not match their chronological sequence.
 
-- **Examples**: In _Pulp Fiction_, events are presented out of chronological order, creating suspense and surprise.
+```mermaid
+flowchart TD
+    A[**Narrative Order**]
+    A --> B[**Manipulated**]
+    A --> C[**Purposeful**]
+```
+
 - **Characteristics**:
   - **Manipulated**: Events are deliberately re-ordered for specific effects.
   - **Purposeful**: The presentation enhances themes, character development, or audience engagement.
@@ -122,7 +181,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: A technique where the narrative shifts backward in time to reveal past events that provide context or deepen the story.
 
-- **Examples**: In _The Godfather Part II_, Michael Corleone’s actions are contrasted with flashbacks to Vito Corleone’s rise, enhancing the film's thematic depth.
+```mermaid
+flowchart TD
+    A[**Flashbacks (Analepsis)**]
+    A --> B[**Retrospective**]
+    A --> C[**Explanatory**]
+```
+
 - **Characteristics**:
   - **Retrospective**: Provides insight into past events that impact the present.
   - **Explanatory**: Fills in gaps in the audience’s understanding of characters or plot.
@@ -131,7 +196,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: The projection of the narrative into the future, revealing events that occur after the present timeline.
 
-- **Examples**: In _Atonement_, the flashforward to Briony’s later life reframes her entire narrative.
+```mermaid
+flowchart TD
+    A[**Flashforwards (Prolepsis)**]
+    A --> B[**Anticipatory**]
+    A --> C[**Thematic**]
+```
+
 - **Characteristics**:
   - **Anticipatory**: Reveals future events that shape the current narrative.
   - **Thematic**: Often used to underscore larger thematic messages about fate or inevitability.
@@ -140,7 +211,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: Beginning the narrative in the middle of the action, with context and background filled in later.
 
-- **Examples**: _The Iliad_ opens in media res, during the Trojan War, with earlier events explained through flashbacks and dialogue.
+```mermaid
+flowchart TD
+    A[**In Media Res**]
+    A --> B[**Immediate**]
+    A --> C[**Expository**]
+```
+
 - **Characteristics**:
   - **Immediate**: Thrusts the audience directly into the middle of the conflict.
   - **Expository**: Background information is gradually revealed as the story progresses.
@@ -152,13 +229,25 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The speed at which events are presented within the _sjuzhet_, influencing how quickly or slowly the audience experiences the narrative.
 
+```mermaid
+mindmap
+  root((**Tomashevsky's Pot vs. Story Framework**))
+    **Pacing**
+```
+
 ##### 2.3.1. **Components of Pacing**
 
 ###### 2.3.1.1. **Scene Length**:
 
 - **Definition**: The duration of specific scenes or sequences, which can either quicken or slow the narrative flow.
 
-- **Examples**: In _Breaking Bad_, long, tense scenes build suspense, while shorter, faster scenes propel the action.
+```mermaid
+flowchart TD
+    A[**Scene Length**]
+    A --> B[**Variable**]
+    A --> C[**Tension-Building**]
+```
+
 - **Characteristics**:
   - **Variable**: Scene lengths can fluctuate, depending on the intended emotional impact.
   - **Tension-Building**: Longer scenes often create suspense or introspection.
@@ -167,7 +256,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: The use of different sentence lengths and patterns to control the pace at which the audience reads or absorbs information.
 
-- **Examples**: In _Beloved_ by Toni Morrison, short, fragmented sentences intensify moments of trauma, while longer, flowing prose creates reflection.
+```mermaid
+flowchart TD
+    A[**Sentence Structure**]
+    A --> B[**Rhythmic**]
+    A --> C[**Dynamic**]
+```
+
 - **Characteristics**:
   - **Rhythmic**: Sentence structures establish the narrative’s tempo.
   - **Dynamic**: Varying sentence lengths enhance the emotional and intellectual engagement of the reader.
@@ -179,13 +274,25 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The intentional release or withholding of information within the _sjuzhet_, designed to influence how the audience perceives the narrative at different stages.
 
+```mermaid
+mindmap
+  root((**Tomashevsky's Pot vs. Story Framework**))
+    **Selective Information Disclosure**
+```
+
 ##### 2.4.1. **Components of Selective Information Disclosure**
 
 ###### 2.4.1.1. **Withholding Information**:
 
 - **Definition**: The delay in revealing certain details or truths, creating suspense or mystery.
 
-- **Examples**: In _Rebecca_ by Daphne du Maurier, the mystery of Rebecca’s death is withheld until the climax, intensifying suspense.
+```mermaid
+flowchart TD
+    A[**Withholding Information**]
+    A --> B[**Suspenseful**]
+    A --> C[**Anticipatory**]
+```
+
 - **Characteristics**:
   - **Suspenseful**: Holds back key information to maintain audience engagement.
   - **Anticipatory**: Builds the audience’s expectations for a later reveal.
@@ -194,7 +301,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Definition**: A situation where the audience knows more about the events of the narrative than the characters, creating tension and emotional depth.
 
-- **Examples**: In _Oedipus Rex_, the audience knows Oedipus’ true parentage long before he does, heightening the tragedy.
+```mermaid
+flowchart TD
+    A[**Dramatic Irony**]
+    A --> B[**Tension-Driven**]
+    A --> C[**Foreshadowing**]
+```
+
 - **Characteristics**:
   - **Tension-Driven**: The gap between character knowledge and audience awareness intensifies emotions.
   - **Foreshadowing**: Often used to hint at inevitable future events or consequences.
@@ -207,3 +320,28 @@ KNOWLEDGE TYPE: EXPLICIT
 
 - **Application in Literary and Media Studies**:
   - Tomashevsky’s ideas have broad applications across literary criticism, film studies, and even game design. Understanding how the _fabula_ is transformed into a _sjuzhet_ is crucial for analyzing complex narratives where chronology is manipulated or fragmented for artistic purposes.
+
+---
+
+```mermaid
+mindmap
+  root((**Tomashevsky's Plot vs. Story Framework**))
+    **Fabula**
+      Chronological Events
+      Cause-and-Effect Relationships
+      Narrative Continuity
+    **Sjuzhet**
+      Narrative Order
+      Flashbacks (Analepsis)
+      Flashforwards (Prolepsis)
+      In Media Res
+    **Pacing**
+      Scene Length
+      Sentence Structure
+      Narrative Tempo
+    **Selective Information Disclosure**
+      Withholding Information
+      Dramatic Irony
+      Narrative Suspense
+      Gradual Revelation
+```
