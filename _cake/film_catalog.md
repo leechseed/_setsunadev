@@ -103,3 +103,7 @@
 - Gran Turismo
 - The Covenant
 - Nymphomaniac
+- Forrest Gump
+- Superbad
+- Logan
+-
