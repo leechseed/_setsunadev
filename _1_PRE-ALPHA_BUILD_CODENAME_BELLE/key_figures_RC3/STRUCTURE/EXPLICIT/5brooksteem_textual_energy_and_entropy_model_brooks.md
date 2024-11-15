@@ -39,6 +39,15 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+```mermaid
+mindmap
+  root((**Brooks' Textual Energy and Entropy Model**))
+    **Textual Energy**
+    **Entropy**
+```
+
+---
+
 ### 1. **Brooks's Textual Energy and Entropy Model**
 
 - **Textual Energy and Entropy**:
@@ -53,47 +62,81 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Textual energy is the momentum or force within a narrative that pushes it toward its resolution. It arises from the interaction of plot, character conflict, and thematic development, keeping the narrative in motion.
 
+```mermaid
+mindmap
+  root((**Brooks' Textual Energy and Entropy Model**))
+    **Textual Energy**
+```
+
 ##### 2.1.1. **Components of Textual Energy**
 
 ###### 2.1.1.1. **Narrative Progression**:
 
 - **Definition**: The continuous movement of the plot toward its climax and resolution. Textual energy sustains this progression, ensuring that the reader remains engaged.
 
+```mermaid
+flowchart TD
+    A[**Narrative Progression**]
+    A --> B[**Forward-Thrust**]
+    A --> C[**Building Tension**]
+```
+
 - **Characteristics**:
   - **Forward-Thrust**: The story moves forward, avoiding stagnation.
   - **Building Tension**: Conflicts and stakes increase, propelling the plot.
-- **Examples**: In _Crime and Punishment_, Raskolnikov’s guilt and paranoia build tension, creating a strong textual energy that drives the narrative toward his confession.
 
 ###### 2.1.1.2. **Psychoanalytic Drive**:
 
 - **Definition**: Textual energy can be linked to the Freudian concept of the pleasure principle, which suggests that narratives strive toward the alleviation of tension and the fulfillment of desires.
 
+```mermaid
+flowchart TD
+    A[**Psychoanalytic Drive**]
+    A --> B[**Pleasure-Seeking**]
+    A --> C[**Tension-Building**]
+```
+
 - **Characteristics**:
   - **Pleasure-Seeking**: The narrative pursues resolution to satisfy desires.
   - **Tension-Building**: Conflicts and desires push the plot forward.
-- **Examples**: In _Jane Eyre_, Jane’s emotional growth and pursuit of love create a narrative drive that keeps the story moving toward resolution.
 
 ###### 2.1.1.3. **Peaks**:
 
 - **Definition**: Peaks represent moments of high tension or intense action within the narrative, often occurring during climactic events.
+
+```mermaid
+flowchart TD
+    A[**Peaks**]
+    A --> B[**High-Intensity**]
+    A --> C[**Climactic**]
+    A --> D[**Engaging**]
+    A --> E[**Resolution-Building**]
+```
 
 - **Characteristics**:
   - **High-Intensity**: These moments are marked by heightened narrative energy, action, or emotion.
   - **Climactic**: Peaks typically occur at crucial turning points in the story where key events unfold.
   - **Engaging**: Peaks capture the reader’s attention and drive the plot forward.
   - **Resolution-Building**: Often contributes to the build-up or resolution of major conflicts.
-- **Examples**: In _The Two Towers_, the battle at Helm’s Deep represents a peak of narrative energy, filled with tension and action.
 
 ###### 2.1.1.4. **Troughs**:
 
 - **Definition**: Troughs represent moments of lower tension, providing a period of calm or reflection between major plot developments.
+
+```mermaid
+flowchart TD
+    A[**Troughs**]
+    A --> B[**Low-Intensity**]
+    A --> C[**Reflective**]
+    A --> D[**Balanced**]
+    A --> E[**Transitionary**]
+```
 
 - **Characteristics**:
   - **Low-Intensity**: These moments allow the narrative to slow down, focusing on character development, exposition, or reflection.
   - **Reflective**: Often involves characters processing previous events or preparing for future action.
   - **Balanced**: Troughs balance the intensity of peaks, preventing the narrative from becoming overwhelming.
   - **Transitionary**: Serves as a bridge between climactic events, helping to reset the pace of the story.
-- **Examples**: In _The Two Towers_, the moments after the battle at Helm’s Deep, where characters reflect on the outcome, serve as a narrative trough.
 
 ---
 
@@ -102,34 +145,58 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - Entropy refers to the gradual dissipation of narrative energy as conflicts are resolved and tensions are released. This concept describes how the momentum built up throughout the narrative gradually decreases as the story approaches its conclusion.
 
+```mermaid
+mindmap
+  root((**Brooks' Textual Energy and Entropy Model**))
+    **Entropy**
+```
+
 ##### 2.2.1. **Components of Entropy**
 
 ###### 2.2.1.1. **Narrative Resolution**:
 
 - **Definition**: The release of narrative tension as the story’s conflicts are resolved, leading to closure.
 
+```mermaid
+flowchart TD
+    A[**Narrative Resolution**]
+    A --> B[**Release of Tension**: Conflicts are addressed and settled]
+    A --> C[**Conclusive**: All plot points are resolved]
+```
+
 - **Characteristics**:
   - **Release of Tension**: The conflicts introduced earlier are addressed and settled.
   - **Conclusive**: The narrative reaches a satisfying end, with all plot points resolved.
-- **Examples**: In _The Great Gatsby_, the narrative energy dissipates after Gatsby’s death, as the remaining characters reflect on the futility of his dreams.
 
 ###### 2.2.1.2. **Dissipation of Energy**:
 
 - **Definition**: As the narrative moves toward its end, the high-energy conflicts that propelled the story forward begin to lose momentum, and the narrative winds down.
 
+```mermaid
+flowchart TD
+    A[**Dissipation of Energy**]
+    A --> B[**Slowing Down**: The plot's intensity decreases]
+    A --> C[**Resolution-Oriented**: Focus shifts from conflict to resolution]
+```
+
 - **Characteristics**:
   - **Slowing Down**: The plot’s intensity decreases.
   - **Resolution-Oriented**: Focus shifts from conflict to resolution.
-- **Examples**: In _Moby-Dick_, after Ahab’s obsession reaches its peak in the final confrontation, the narrative rapidly winds down as the ship sinks, bringing the story to a somber close.
 
 ###### 2.2.1.3. **Balance of Forces**:
 
 - **Definition**: A narrative must balance textual energy with entropy to achieve a satisfying conclusion. Too much energy without enough entropy can result in an unresolved ending, while too much entropy without sufficient buildup can lead to anticlimax.
 
+```mermaid
+flowchart TD
+    A[**Balance of Forces**]
+    A --> B[**Equilibrium**: Tension resolves in a balanced way]
+    A --> C[**Satisfying Closure**: Plot and character arcs are logically completed]
+```
+
 - **Characteristics**:
   - **Equilibrium**: The story resolves the built-up tension in a balanced way.
   - **Satisfying Closure**: Both the plot and character arcs are completed in a manner that satisfies the narrative’s internal logic.
-- **Examples**: In _The Odyssey_, after the climactic battle with the suitors, the story concludes with Odysseus reclaiming his home and family, balancing the epic’s high energy with a peaceful resolution.
 
 ---
 
@@ -145,18 +212,32 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 3.1.1.1. **Building Momentum**:
 
 - **Definition**: Textual energy builds as the plot progresses, with conflicts becoming more intense and character dynamics evolving.
+
+```mermaid
+flowchart TD
+    A[**Building Momentum**]
+    A --> B[**Increasing Tension**: Stakes rise as the story unfolds]
+    A --> C[**Character Development**: Characters grow and change]
+```
+
 - **Characteristics**:
   - **Increasing Tension**: Stakes rise as the story unfolds.
   - **Character Development**: Characters grow and change, driving the narrative forward.
-- **Examples**: In _Pride and Prejudice_, the relationship between Elizabeth and Darcy creates narrative energy through their evolving misunderstandings and eventual resolution.
 
 ###### 3.1.1.2. **Drive for Completion**:
 
 - **Definition**: The need for resolution drives the narrative toward its conclusion, with textual energy pushing the plot forward until the story reaches its end.
+
+```mermaid
+flowchart TD
+    A[**Drive for Completion**]
+    A --> B[**Purpose-Driven**: Clear goal or endpoint in sight]
+    A --> C[**Focused**: Plot threads directed toward closure]
+```
+
 - **Characteristics**:
   - **Purpose-Driven**: The narrative moves with a clear goal or endpoint in sight.
   - **Focused**: Plot threads are directed toward closure.
-- **Examples**: In _Harry Potter and the Deathly Hallows_, the pursuit of the Horcruxes and final confrontation with Voldemort maintain the story’s forward momentum.
 
 ---
 
@@ -170,21 +251,56 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 3.2.1.1. **Winding Down**:
 
 - **Definition**: As the narrative approaches its conclusion, the energy built up throughout the story begins to dissipate, leading to the resolution of conflicts and closure.
+
+```mermaid
+flowchart TD
+    A[**Winding Down**]
+    A --> B[**Calming**: Gradual decrease in intensity]
+    A --> C[**Resolution-Oriented**: Focus shifts to resolving conflicts]
+```
+
 - **Characteristics**:
   - **Calming**: The narrative gradually decreases in intensity.
   - **Resolution-Oriented**: The focus shifts to resolving the central conflicts.
-- **Examples**: In _Wuthering Heights_, the final chapters focus on the resolution of the long-standing tensions between the families, bringing the tumultuous narrative to a close.
 
 ###### 3.2.1.2. **Equilibrium**:
 
 - **Definition**: The state of balance achieved once the narrative has resolved its conflicts and reached a satisfying conclusion.
+
+```mermaid
+flowchart TD
+    A[**Equilibrium**]
+    A --> B[**Stable**: Tensions are diffused]
+    A --> C[**Complete**: All major plotlines are resolved]
+```
+
 - **Characteristics**:
   - **Stable**: The story’s tensions are diffused.
   - **Complete**: All major plotlines are resolved.
-- **Examples**: In _The Catcher in the Rye_, Holden’s reflective ending achieves a sense of calm after the emotional upheavals throughout the novel, representing narrative entropy.
 
 ---
 
 ### 4. **Conclusion**
 
 - **Brooks’s Textual Energy and Entropy Model** offers a framework for understanding the balance between the forces that drive narratives forward and those that lead them to their conclusion. By conceptualizing stories in terms of energy and entropy, Brooks provides a dynamic model for analyzing how narratives maintain momentum, build tension, and ultimately achieve closure. His integration of psychoanalytic theory into narrative analysis deepens our understanding of the emotional and psychological investment that narratives elicit from readers.
+
+---
+
+```mermaid
+mindmap
+  root((**Brooks' Textual Energy and Entropy Model**))
+    **Textual Energy**
+      **Building Momentum**
+        **Increasing Tension**
+        **Character Development**
+      **Drive for Completion**
+        **Purpose-Driven**
+        **Focused**
+    **Entropy**
+      **Winding Down**
+        **Calming**
+        **Resolution-Oriented**
+      **Equilibrium**
+        **Stable**
+        **Complete**
+```
