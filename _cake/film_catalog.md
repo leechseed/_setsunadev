@@ -106,4 +106,20 @@
 - Forrest Gump
 - Superbad
 - Logan
--
+- Wanted
+- Gravity
+- Sin City
+- Black Swan
+- Bad Boys 2
+- The Last Samurai
+- The Wave
+- The King
+- Straight Out of Compton
+- Akira
+- Inside Out
+
+## Movies to Add
+
+- Mean Girls
+- The Lego Movie
+- Minority Report
