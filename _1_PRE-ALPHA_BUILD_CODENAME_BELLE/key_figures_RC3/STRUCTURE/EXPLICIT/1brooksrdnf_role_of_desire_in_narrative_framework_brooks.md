@@ -34,7 +34,8 @@ KNOWLEDGE TYPE: EXPLICIT
       - [2.3.1.1. **Pursuit of Happiness**:](#2311-pursuit-of-happiness)
       - [2.3.1.2. **Avoidance of Pain**:](#2312-avoidance-of-pain)
       - [2.3.1.3. **Creative Expression**:](#2313-creative-expression)
-      - [2.3.1.4. **Romantic and Familial Love**:](#2314-romantic-and-familial-love)
+      - [2.3.1.4. **Romantic Love**](#2314-romantic-love)
+      - [2.3.1.5. **Familial Love**](#2315-familial-love)
   - [2.4. **Narrative Tension**](#24-narrative-tension)
     - [2.4.1. **Components of Narrative Tension**:](#241-components-of-narrative-tension)
       - [2.4.1.1. **Conflict**:](#2411-conflict)
@@ -54,6 +55,16 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Desire for Closure**
+    **Death Drive 'Thanatos'**
+    **Pleasure Principle 'Eros'**
+    **Narrative Tension**
+    **Anticipation**
+```
+
 ---
 
 ### 1. **The Role of Desire in Narrative**
@@ -70,11 +81,24 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The inherent drive within a narrative that moves it toward resolution. This desire propels the plot toward an ending where conflicts, tensions, and questions raised throughout the story are resolved.
 
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Desire for Closure**
+```
+
 ##### 2.1.1. **Components of Desire for Closure**:
 
 ###### 2.1.1.1. **Narrative Drive**:
 
 **Definition**: The force that propels the story forward, urging it toward its conclusion.
+
+```mermaid
+flowchart TD;
+    A[**Narrative Drive**]
+    A --> B[**Goal-Oriented**];
+    A --> C[**Progressive**];
+```
 
 - **Characteristics**:
   - **Goal-Oriented**: Driven by characters’ goals or objectives.
@@ -85,6 +109,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 **Definition**: The central conflicts in the narrative are resolved, providing a sense of completion.
 
+```mermaid
+flowchart TD;
+    D[**Resolution of Conflict**]
+    D --> E[**Conclusive**];
+    D --> F[**Satisfying**];
+```
+
 - **Characteristics**:
   - **Conclusive**: Ends the primary conflict.
   - **Satisfying**: Provides closure for the reader.
@@ -94,6 +125,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 **Definition**: The fulfillment of the reader’s desire to know the outcome of the narrative’s events and conflicts.
 
+```mermaid
+flowchart TD;
+    G[**Satisfaction of Curiosity**]
+    G --> H[**Revelatory**];
+    G --> I[**Engaging**];
+```
+
 - **Characteristics**:
   - **Revelatory**: Answers lingering questions.
   - **Engaging**: Keeps the reader interested until the end.
@@ -102,6 +140,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.1.1.4. **Narrative Completion**:
 
 - **Definition**: The sense of wholeness achieved when all plot threads are tied up, bringing the story to a definitive conclusion.
+
+```mermaid
+flowchart TD;
+    J[**Narrative Completion**]
+    J --> K[**Final**];
+    J --> L[**Fulfilling**];
+```
+
 - **Characteristics**:
   - **Final**: The story ends with no loose ends.
   - **Fulfilling**: Provides intellectual and emotional closure.
@@ -114,11 +160,26 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - A Freudian concept representing an unconscious desire for a return to nonexistence, calm, or rest. The death drive is a counterpoint to life-preserving instincts (Eros) and is reflected in narrative tendencies toward termination or self-destruction.
 
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Desire for Closure**
+    **Death Drive 'Thanatos'**
+```
+
 ##### 2.2.1. **Components of Death Drive (Thanatos)**:
 
 ###### 2.2.1.1. **Return to Equilibrium**:
 
 - **Definition**: The narrative’s movement toward resolution, where conflicts cease, and the story reaches a state of rest.
+
+```mermaid
+flowchart TD;
+    A[**Return to Equilibrium**]
+    A --> B[**Restorative**];
+    A --> C[**Final**];
+```
+
 - **Characteristics**:
   - **Restorative**: Seeks an end to tension.
   - **Final**: Leads to narrative termination.
@@ -127,6 +188,13 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.2.1.2. **Self-Destructive Behavior**:
 
 **Definition**: Actions that lead characters toward their downfall, often driven by unconscious desires that reflect the death drive.
+
+```mermaid
+flowchart TD;
+    D[**Self-Destructive Behavior**]
+    D --> E[**Self-Sabotaging**];
+    D --> F[**Fatalistic**];
+```
 
 - **Characteristics**:
   - **Self-Sabotaging**: Characters make choices that lead to ruin.
@@ -137,6 +205,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 **Definition**: The narrative’s inevitable conclusion, where the story reaches its endpoint, often linked to the death drive.
 
+```mermaid
+flowchart TD;
+    G[**Narrative Termination**]
+    G --> H[**Definitive**];
+    G --> I[**Inevitable**];
+```
+
 - **Characteristics**:
   - **Definitive**: The story ends, ceasing further development.
   - **Inevitable**: The end is seen as unavoidable.
@@ -145,6 +220,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.2.1.4. **Existential Reflection**:
 
 - **Definition**: Characters’ reflections on mortality and the meaning of life deepen the exploration of the death drive.
+
+```mermaid
+flowchart TD;
+    J[**Existential Reflection**]
+    J --> K[**Philosophical**];
+    J --> L[**Reflective**];
+```
+
 - **Characteristics**:
   - **Philosophical**: Characters question life’s purpose.
   - **Reflective**: Themes of death and existence dominate.
@@ -157,11 +240,25 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - A Freudian concept representing life-affirming instincts, including the pursuit of happiness, love, and creative expression. In narrative, the pleasure principle drives characters toward fulfilling and life-preserving actions.
 
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Pleasure Principle 'Eros'**
+```
+
 ##### 2.3.1. **Components of Pleasure Principle (Eros)**:
 
 ###### 2.3.1.1. **Pursuit of Happiness**:
 
 - **Definition**: Characters are motivated by a desire to achieve happiness or fulfillment.
+
+```mermaid
+flowchart TD;
+    A[**Pursuit of Happiness**]
+    A --> B[**Optimistic**];
+    A --> C[**Hopeful**];
+```
+
 - **Characteristics**:
   - **Optimistic**: Characters aim for positive outcomes.
   - **Hopeful**: Actions are geared toward joy and contentment.
@@ -170,6 +267,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.3.1.2. **Avoidance of Pain**:
 
 - **Definition**: Characters’ efforts to avoid suffering or hardship, driving the plot away from negative outcomes.
+
+```mermaid
+flowchart TD;
+    D[**Avoidance of Pain**]
+    D --> E[**Protective**];
+    D --> F[**Defensive**];
+```
+
 - **Characteristics**:
   - **Protective**: Characters seek to avoid harm.
   - **Defensive**: Decisions are made to prevent discomfort.
@@ -178,20 +283,62 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.3.1.3. **Creative Expression**:
 
 - **Definition**: Characters engage in life-affirming creative activities that embody the pleasure principle.
+
+```mermaid
+flowchart TD;
+    G[**Creative Expression**]
+    G --> H[**Artistic**];
+    G --> I[**Life-Affirming**];
+```
+
 - **Characteristics**:
   - **Artistic**: Characters express themselves through creative pursuits.
   - **Life-Affirming**: These actions add vitality to the narrative.
 - **Examples**: Jane Eyre’s pursuit of art and love represents her creative and emotional fulfillment in _Jane Eyre_.
 
-###### 2.3.1.4. **Romantic and Familial Love**:
+###### 2.3.1.4. **Romantic Love**
 
-- **Definition**: Love and relationships that fulfill emotional needs are central to the pleasure principle.
+- **Definition**: A type of love characterized by deep emotional connection, passion, and intimacy between individuals.
+
+```mermaid
+flowchart TD;
+    J[**Romantic Love**]
+    J --> K[**Nurturing**];
+    J --> L[**Satisfying**];
+    J --> M[**Intense Relationships**];
+```
+
 - **Characteristics**:
-  - **Nurturing**: Love provides emotional support.
-  - **Satisfying**: Relationships lead to personal happiness.
-- **Examples**: Catherine and Heathcliff’s intense love in _Wuthering Heights_ reflects the powerful drive of Eros.
+  - **Nurturing**: Provides emotional support and growth for partners.
+  - **Satisfying**: Leads to personal happiness and fulfillment.
+  - **Intense Relationships**: Often marked by passion and profound emotional attachment.
+- **Examples**: Catherine and Heathcliff’s tumultuous love in _Wuthering Heights_ exemplifies romantic love's consuming nature.
+
+###### 2.3.1.5. **Familial Love**
+
+- **Definition**: A type of love based on kinship, loyalty, and support within family relationships.
+
+```mermaid
+flowchart TD;
+    N[**Familial Love**]
+    N --> O[**Nurturing**];
+    N --> P[**Satisfying**];
+    N --> Q[**Supportive Bonds**];
+```
+
+- **Characteristics**:
+  - **Nurturing**: Creates a foundation of emotional and physical care within families.
+  - **Satisfying**: Strengthens family bonds and provides stability.
+  - **Supportive Bonds**: Emphasizes loyalty and mutual support among family members.
+- **Examples**: The relationship between Scout and Atticus Finch in _To Kill a Mockingbird_ reflects the strength of familial love.v
 
 #### 2.4. **Narrative Tension**
+
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Narrative Tension**
+```
 
 - **Definition**:
   - The emotional and psychological strain created by unresolved conflicts or obstacles within the story. Narrative tension keeps readers engaged, building suspense as they anticipate resolution.
@@ -201,6 +348,15 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.4.1.1. **Conflict**:
 
 - **Definition**: The clash of opposing forces, motivations, or desires, driving the narrative forward through tension.
+
+```mermaid
+flowchart TD;
+    A[**Conflict**]
+    A --> B[**Internal Conflict**];
+    A --> C[**External Conflict**];
+    A --> D[**Emotional Intensity**];
+```
+
 - **Characteristics**:
   - **Internal Conflict**: Characters struggle within themselves, such as moral dilemmas or personal fears.
   - **External Conflict**: Characters face opposition from other characters, society, or nature.
@@ -210,6 +366,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.4.1.2. **Obstacles**:
 
 - **Definition**: Physical, social, or psychological barriers that characters must navigate or overcome to achieve their goals.
+
+```mermaid
+flowchart TD;
+    E[**Obstacles**]
+    E --> F[**Challenging**];
+    E --> G[**Cumulative**];
+```
+
 - **Characteristics**:
   - **Challenging**: Characters encounter difficult trials that test their abilities and resilience.
   - **Cumulative**: Obstacles often build upon one another, increasing difficulty as the narrative progresses.
@@ -218,6 +382,15 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.4.1.3. **Suspense**:
 
 - **Definition**: A state of excitement or anxious anticipation regarding the outcome of a story's conflict, driven by the delay of expected results.
+
+```mermaid
+flowchart TD;
+    H[**Suspense**]
+    H --> I[**Tension-Building**];
+    H --> J[**Foreshadowing**];
+    H --> K[**Emotional Engagement**];
+```
+
 - **Characteristics**:
   - **Tension-Building**: Suspense is created by delaying the resolution, keeping readers on edge.
   - **Foreshadowing**: Hints and clues are often provided, heightening anticipation of what might happen.
@@ -227,6 +400,15 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.4.1.4. **Uncertainty**:
 
 - **Definition**: The lack of clarity or predictability in a narrative, often leaving both characters and readers unsure of future events or outcomes.
+
+```mermaid
+flowchart TD;
+    L[**Uncertainty**]
+    L --> M[**Unpredictability**];
+    L --> N[**Ambiguity**];
+    L --> O[**Mental Conflict**];
+```
+
 - **Characteristics**:
   - **Unpredictability**: The plot avoids clear direction, keeping outcomes unknown.
   - **Ambiguity**: Key details may remain hidden or left open to interpretation, fueling confusion or doubt.
@@ -236,6 +418,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.4.1.5. **Rising Stakes**:
 
 - **Definition**: The gradual increase in consequences, making the outcomes of the narrative more significant.
+
+```mermaid
+flowchart TD;
+    P[**Rising Stakes**]
+    P --> Q[**Intensifying**];
+    P --> R[**High-Risk**];
+```
+
 - **Characteristics**:
   - **Intensifying**: The importance of outcomes increases.
   - **High-Risk**: Characters face greater risks as the story progresses.
@@ -244,6 +434,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.4.1.6. **Climactic Build-Up**:
 
 - **Definition**: The culmination of tension at the narrative’s climax, where conflicts are at their most intense.
+
+```mermaid
+flowchart TD;
+    S[**Climactic Build-Up**]
+    S --> T[**Pinnacle**];
+    S --> U[**Explosive**];
+```
+
 - **Characteristics**:
   - **Pinnacle**: The highest point of tension.
   - **Explosive**: The conflict is resolved in a dramatic way.
@@ -256,11 +454,25 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Definition**:
   - The reader’s expectation or prediction of future events, fueled by foreshadowing and the buildup of narrative tension.
 
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Anticipation**
+```
+
 ##### 2.5.1. **Components of Anticipation**:
 
 ###### 2.5.1.1. **Foreshadowing**:
 
 - **Definition**: Hints or clues about future events create anticipation as readers try to predict the story’s outcome.
+
+```mermaid
+flowchart TD;
+    A[**Foreshadowing**]
+    A --> B[**Subtle**];
+    A --> C[**Intriguing**];
+```
+
 - **Characteristics**:
   - **Subtle**: Clues hint at future developments.
   - **Intriguing**: Engages readers’ curiosity.
@@ -269,6 +481,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.5.1.2. **Reader Predictions**:
 
 - **Definition**: Readers actively speculate about the story’s direction based on narrative clues.
+
+```mermaid
+flowchart TD;
+    D[**Reader Predictions**]
+    D --> E[**Interactive**];
+    D --> F[**Speculative**];
+```
+
 - **Characteristics**:
   - **Interactive**: Readers engage with the narrative by forming predictions.
   - **Speculative**: Future outcomes are anticipated.
@@ -277,6 +497,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.5.1.3. **Narrative Hooks**:
 
 - **Definition**: Key moments in the narrative that grab attention and create a desire to know what happens next.
+
+```mermaid
+flowchart TD;
+    G[**Narrative Hooks**]
+    G --> H[**Gripping**];
+    G --> I[**Engaging**];
+```
+
 - **Characteristics**:
   - **Gripping**: Dramatic moments that demand continuation.
   - **Engaging**: Keeps the reader interested through pivotal points.
@@ -285,6 +513,14 @@ KNOWLEDGE TYPE: EXPLICIT
 ###### 2.5.1.4. **Delayed Gratification**:
 
 - **Definition**: The postponement of resolution or answers, increasing the reader’s anticipation for the eventual payoff.
+
+```mermaid
+flowchart TD;
+    J[**Delayed Gratification**]
+    J --> K[**Teasing**];
+    J --> L[**Rewarding**];
+```
+
 - **Characteristics**:
   - **Teasing**: The outcome is withheld, building anticipation.
   - **Rewarding**: The final reveal or resolution feels more satisfying.
@@ -303,3 +539,38 @@ KNOWLEDGE TYPE: EXPLICIT
 - **Brooks’ Framework**:
   - Peter Brooks’ exploration of narrative desire reveals the psychological drives that shape narrative structure. His focus on the pleasure principle, death drive, and the role of narrative tension offers a deeper understanding of how stories captivate and engage audiences.
   - By framing narratives through these psychoanalytic lenses, Brooks demonstrates how the desire for closure, the interplay of tension, and anticipation are essential for creating compelling stories that resonate with readers on both emotional and intellectual levels.
+
+---
+
+```mermaid
+mindmap
+  root((**Role of Desire Framework**))
+    **Desire for Closure**
+      **Narrative Drive**
+      **Resolution of Conflict**
+      **Satisfaction of Curiosity**
+      **Narrative Completion**
+    **Death Drive 'Thanatos'**
+      **Return to Equilibrium**
+      **Self-Destructive Behavior**
+      **Narrative Termination**
+      **Existential Reflection**
+    **Pleasure Principle 'Eros'**
+      **Pursuit of Happiness**
+      **Avoidance of Pain**
+      **Creative Expression**
+      **Romantic Love**
+      **Familial Love**
+    **Narrative Tension**
+      **Conflict**
+      **Obstacles**
+      **Suspense**
+      **Uncertainty**
+      **Rising Stakes**
+      **Climactic Build-Up**
+    **Anticipation**
+      **Foreshadowing**
+      **Reader Predictions**
+      **Narrative Hooks**
+      **Delayed Gratification**
+```

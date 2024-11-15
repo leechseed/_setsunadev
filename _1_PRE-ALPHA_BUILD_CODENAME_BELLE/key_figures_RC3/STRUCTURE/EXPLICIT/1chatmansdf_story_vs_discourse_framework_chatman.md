@@ -14,124 +14,242 @@ PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
 ---
 
-- [](#)
-  - [1.0.1. **Discourse**](#101-discourse)
-    - [1.0.1.1. **Components of Discourse**:](#1011-components-of-discourse)
-      - [1.0.1.1.1. **Focalization**:](#10111-focalization)
-      - [1.0.1.1.2. **Order of Events**:](#10112-order-of-events)
-      - [1.0.1.1.3. **Narrative Voice**:](#10113-narrative-voice)
-      - [1.0.1.1.4. **Style**:](#10114-style)
-      - [1.0.1.1.5. **Medium**:](#10115-medium)
-  - [1.1. **Importance of the Distinction**](#11-importance-of-the-distinction)
-  - [1.2. **Conclusion**](#12-conclusion)
+- [1. **Chatman's Story vs. Discourse Framework**](#1-chatmans-story-vs-discourse-framework)
+- [2. **Story vs. Discourse**](#2-story-vs-discourse)
+- [3. **Key Concepts**](#3-key-concepts)
+  - [3.1. **Story**](#31-story)
+    - [3.1.1. **Components of Story**:](#311-components-of-story)
+      - [3.1.1.1. **Events**](#3111-events)
+      - [3.1.1.2. **Characters**](#3112-characters)
+      - [3.1.1.3. **Settings**](#3113-settings)
+      - [3.1.1.4. **Actions**](#3114-actions)
+  - [3.2. **Discourse**](#32-discourse)
+    - [3.2.1. **Components of Discourse**:](#321-components-of-discourse)
+      - [3.2.1.1. **Focalization**](#3211-focalization)
+      - [3.2.1.2. **Order of Events**](#3212-order-of-events)
+      - [3.2.1.3. **Narrative Voice**](#3213-narrative-voice)
+      - [3.2.1.4. **Style**](#3214-style)
+      - [3.2.1.5. **Medium**](#3215-medium)
+- [4. **Importance of the Distinction**](#4-importance-of-the-distinction)
+- [5. **Conclusion**](#5-conclusion)
 
 ---
 
----
+```mermaid
+mindmap
+  root((**Chatman's Story vs. Discourse Framework**))
+    **Story**
+    **Discourse**
+```
 
-### 0.1. **Chatman's Story vs. Discourse Framework**
+--
+
+### 1. **Chatman's Story vs. Discourse Framework**
 
 - **Author**: Seymour Chatman
 - **Title**: Chatman's Story vs. Discourse Framework
 
-### 0.2. **Story vs. Discourse**
+### 2. **Story vs. Discourse**
 
 - **Definition**:
   - Seymour Chatman, a prominent narratologist, introduces a critical distinction between _story_ and _discourse_ in his analysis of narrative. This distinction is foundational for understanding how narratives function across different media, particularly in literature and film.
 
 ---
 
-### 0.3. **Key Concepts**
+### 3. **Key Concepts**
 
-#### 0.3.1. **Story**
+#### 3.1. **Story**
 
 - **Definition**:
   - The _story_ refers to the content or the _what_ of the narrative. It includes the events, characters, settings, and actions that form the basic structure of the narrative. The story is the raw material, existing independently of how it is presented to the audience.
 
-##### 0.3.1.1. **Components of Story**:
+```mermaid
+mindmap
+  root((**Chatman's Story vs. Discourse Framework**))
+    **Story**
+```
 
-- **Events**:
-  - **Definition**: Incidents or occurrences that move the plot forward and form the backbone of the narrative.
-  - **Characteristics**:
-    - **Pivotal**: Drive the central plot forward.
-    - **Sequential**: Follow a logical or thematic order to maintain coherence.
+##### 3.1.1. **Components of Story**:
 
-###### 0.3.1.1.1. **Characters**:
+###### 3.1.1.1. **Events**
 
-- **Definition**: Individuals or entities that participate in the narrative events.
+- **Definition**: Incidents or occurrences that form the foundation of the narrative, driving the plot forward by introducing challenges, resolutions, and key turning points.
+
+```mermaid
+flowchart TD;
+    A[**Events**]
+    A --> B[**Pivotal**];
+    A --> C[**Sequential**];
+    A --> D[**Transformative**];
+```
+
 - **Characteristics**:
-  - **Complex**: Contain depth, showing growth or change over time.
-  - **Relatable**: Often designed to evoke emotional connection or sympathy from the audience.
+  - **Pivotal**: Serve as crucial moments that significantly influence the narrative’s progression and outcome.
+  - **Sequential**: Occur in a logical or thematic order, ensuring coherence and flow within the story.
+  - **Transformative**: Often result in changes to characters, settings, or conflicts, shaping the overall narrative arc.
 
-###### 0.3.1.1.2. **Settings**:
+###### 3.1.1.2. **Characters**
 
-- **Definition**: The time and place where the narrative events occur.
+- **Definition**: The individuals, entities, or forces that interact within the narrative, bringing it to life through their actions, emotions, and development.
+
+```mermaid
+flowchart TD;
+    E[**Characters**]
+    E --> F[**Complex**];
+    E --> G[**Relatable**];
+    E --> H[**Integral**];
+```
+
 - **Characteristics**:
-  - **Grounded**: Provides a believable and immersive context for the story.
-  - **Descriptive**: Richly detailed to enhance the world-building.
+  - **Complex**: Possess depth, exhibiting growth, change, or contradictions that make them feel real and multidimensional.
+  - **Relatable**: Designed to resonate emotionally with the audience, fostering empathy, identification, or understanding.
+  - **Integral**: Play essential roles in driving the narrative, influencing events, and interacting with other elements like settings and themes.
 
-###### 0.3.1.1.3. **Actions**:
+###### 3.1.1.3. **Settings**
 
-- **Definition**: Behaviors, decisions, or deeds performed by the characters that affect the narrative’s direction.
+- **Definition**: The physical, temporal, and social environment in which the narrative takes place, providing context and grounding the story.
+
+```mermaid
+flowchart TD;
+    I[**Settings**]
+    I --> J[**Grounded**];
+    I --> K[**Descriptive**];
+    I --> L[**Interactive**];
+```
+
+- **Characteristics**:
+  - **Grounded**: Creates a believable and immersive context, anchoring the events and characters within a tangible world.
+  - **Descriptive**: Incorporates vivid and rich details to enhance the story’s atmosphere and world-building.
+  - **Interactive**: Interacts with characters and events, influencing their actions and the story’s direction, such as through weather, societal norms, or historical periods.
+
+###### 3.1.1.4. **Actions**
+
+- **Definition**: The behaviors, decisions, or deeds performed by characters that propel the narrative and influence its outcomes.
+
+```mermaid
+flowchart TD;
+    M[**Actions**]
+    M --> N[**Purposeful**];
+    M --> O[**Consequential**];
+    M --> P[**Dynamic**];
+```
+
 - **Characteristics**:
 
-  - **Purposeful**: Drive the plot through intentional decisions or reactions.
-  - **Consequential**: Lead to important developments or shifts in the story's trajectory.
+  - **Purposeful**: Serve as intentional acts that align with characters’ goals or respond to challenges, driving the plot forward.
+  - **Consequential**: Lead to significant developments, shifting relationships, resolving conflicts, or creating new tensions.
+  - **Dynamic**: Reflect the characters’ emotions, motivations, and decisions, adding depth and momentum to the narrative.
 
 - **Contextualization**:
   - The _story_ forms the foundation of any narrative. It provides the building blocks of the plot, character arcs, and thematic developments, regardless of the medium through which it is presented. For instance, the story of _Cinderella_ remains consistent across different adaptations, such as books, films, and plays, though the _discourse_ or the presentation can vary.
 
 ---
 
-#### 1.0.1. **Discourse**
+#### 3.2. **Discourse**
 
 - **Definition**:
   - _Discourse_ refers to the _how_ of the narrative, encompassing the methods and techniques used to present the story. It includes narrative structure, voice, perspective, style, and the medium through which the narrative is conveyed.
 
-##### 1.0.1.1. **Components of Discourse**:
+```mermaid
+mindmap
+  root((**Chatman's Story vs. Discourse Framework**))
+    **Discourse**
+```
 
-###### 1.0.1.1.1. **Focalization**:
+##### 3.2.1. **Components of Discourse**:
 
-- **Definition**: The perspective or point of view from which the narrative is told, determining what the audience sees and knows.
+###### 3.2.1.1. **Focalization**
+
+- **Definition**: The perspective or point of view from which the narrative is told, controlling what the audience sees, hears, and knows within the story.
+
+```mermaid
+flowchart TD;
+    A[**Focalization**]
+    A --> B[**Focused**];
+    A --> C[**Selective**];
+    A --> D[**Perspective-Shaping**];
+```
+
 - **Characteristics**:
-  - **Focused**: Provides insight into the subjective experiences of characters.
-  - **Selective**: Chooses what details or events to emphasize, shaping the narrative’s angle.
+  - **Focused**: Offers insight into the subjective experiences of characters, exploring their thoughts, emotions, and motivations.
+  - **Selective**: Determines which details or events are emphasized, shaping the audience’s interpretation of the narrative.
+  - **Perspective-Shaping**: Controls the flow of information by presenting events from specific vantage points, influencing perception and engagement.
 
-###### 1.0.1.1.2. **Order of Events**:
+###### 3.2.1.2. **Order of Events**
 
-- **Definition**: The sequence in which the story’s events are presented, whether chronological, non-linear, or through flashbacks.
+- **Definition**: The sequence in which the story’s events are presented to the audience, whether chronologically, non-linearly, or through techniques like flashbacks.
+
+```mermaid
+flowchart TD;
+    E[**Order of Events**]
+    E --> F[**Structured**];
+    E --> G[**Manipulative**];
+    E --> H[**Temporal Variety**];
+```
+
 - **Characteristics**:
-  - **Structured**: Follows a deliberate pattern to control the flow of information.
-  - **Manipulative**: Alters time and sequence to create tension or reveal key details strategically.
+  - **Structured**: Follows a deliberate pattern to control the flow and coherence of the story.
+  - **Manipulative**: Alters the natural sequence of events to create suspense, highlight contrasts, or strategically reveal key details.
+  - **Temporal Variety**: Incorporates techniques like anachrony, flashbacks, or parallel timelines to enhance complexity and depth.
 
-###### 1.0.1.1.3. **Narrative Voice**:
+###### 3.2.1.3. **Narrative Voice**
 
-- **Definition**: The entity or narrator that tells the story, shaping how the audience perceives the events.
+- **Definition**: The entity or narrator that communicates the story, shaping how the audience perceives the events, characters, and themes.
+
+```mermaid
+flowchart TD;
+    I[**Narrative Voice**]
+    I --> J[**Distinctive**];
+    I --> K[**Guiding**];
+    I --> L[**Reliability**];
+```
+
 - **Characteristics**:
-  - **Distinctive**: Unique to each story, offering a particular tone or attitude.
-  - **Guiding**: Directs how the audience interprets the events and emotions within the story.
+  - **Distinctive**: Reflects a unique tone, style, or attitude that differentiates the story’s voice from others.
+  - **Guiding**: Directs the audience’s understanding and emotional response to the narrative through commentary or framing.
+  - **Reliability**: Varies in trustworthiness, with narrators being omniscient, limited, or unreliable, which impacts audience interpretation.
 
-###### 1.0.1.1.4. **Style**:
+###### 3.2.1.4. **Style**
 
-- **Definition**: The author’s choice of language, tone, and literary devices that contribute to the unique voice of the narrative.
+- **Definition**: The author’s deliberate use of language, tone, and literary devices to create a unique and evocative narrative voice.
+
+```mermaid
+flowchart TD;
+    M[**Style**]
+    M --> N[**Expressive**];
+    M --> O[**Evocative**];
+    M --> P[**Consistent**];
+```
+
 - **Characteristics**:
-  - **Expressive**: Utilizes a distinct linguistic style to evoke emotions and thoughts.
-  - **Evocative**: Uses literary tools like metaphor, symbolism, and irony to add depth.
+  - **Expressive**: Uses language creatively to evoke emotions, moods, and imagery.
+  - **Evocative**: Employs literary techniques like metaphor, symbolism, and irony to deepen thematic resonance and meaning.
+  - **Consistent**: Maintains a cohesive linguistic and tonal approach throughout the narrative to reinforce its identity.
 
-###### 1.0.1.1.5. **Medium**:
+###### 3.2.1.5. **Medium**
 
-- **Definition**: The form or platform through which the story is conveyed, such as text, film, or visual art.
+- **Definition**: The form or platform through which the narrative is delivered, such as text, film, visual art, or digital media.
+
+```mermaid
+flowchart TD;
+    Q[**Medium**]
+    Q --> R[**Adaptable**];
+    Q --> S[**Interactive**];
+    Q --> T[**Influential**];
+```
+
 - **Characteristics**:
 
-  - **Adaptable**: Adjusts the narrative techniques to suit the medium.
-  - **Interactive**: Engages the audience through visual, auditory, or textual elements, depending on the medium.
+  - **Adaptable**: Adjusts narrative techniques to suit the specific medium’s strengths and limitations.
+  - **Interactive**: Engages the audience through visual, auditory, or textual elements that enhance immersion and participation.
+  - **Influential**: Shapes the story’s pacing, structure, and accessibility based on the medium’s inherent characteristics.
 
 - **Contextualization**:
   - Discourse influences how the audience interacts with the story, guiding their emotional response and intellectual interpretation. It shapes the delivery of the narrative through techniques like non-linear timelines, shifting perspectives, or the use of symbolism and metaphor. By manipulating discourse, storytellers can create tension, surprise, or multiple layers of meaning.
 
 ---
 
-### 1.1. **Importance of the Distinction**
+### 4. **Importance of the Distinction**
 
 - **Narrative Analysis**:
   - **Definition**: The separation of story and discourse is essential for narrative analysis, as it allows critics to dissect how content (story) is shaped by presentation (discourse).
@@ -151,7 +269,7 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
-### 1.2. **Conclusion**
+### 5. **Conclusion**
 
 - **Seymour Chatman’s Framework**:
   - The distinction between _story_ and _discourse_ is essential for understanding the mechanics of narrative across different forms and media. By recognizing the _what_ (story) and the _how_ (discourse), Chatman’s framework provides a foundation for analyzing how narratives are constructed and experienced.
@@ -162,3 +280,44 @@ KNOWLEDGE TYPE: EXPLICIT
   - **Characteristics**:
     - **Comprehensive**: Encompasses all aspects of narrative theory.
     - **Applicable**: Can be used across various types of narrative media, from literature to film and beyond.
+
+---
+
+```mermaid
+mindmap
+  root((**Chatman's Story vs. Discourse Framework**))
+    **Story**
+      **Events**
+        Pivotal
+        Sequential
+        Transformative
+      **Characters**
+        Complex
+        Relatable
+        Integral
+      **Settings**
+        Grounded
+        Descriptive
+        Interactive
+    **Discourse**
+      **Focalization**
+        Focused
+        Selective
+        Perspective-Shaping
+      **Order of Events**
+        Structured
+        Manipulative
+        Temporal Variety
+      **Narrative Voice**
+        Distinctive
+        Guiding
+        Reliability
+      **Style**
+        Expressive
+        Evocative
+        Consistent
+      **Medium**
+        Adaptable
+        Interactive
+        Influential
+```

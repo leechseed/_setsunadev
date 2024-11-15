@@ -67,6 +67,15 @@ mindmap
 ###### 2.1.1.1. **Characters**
 
 - **Definition**: Characters in possible worlds serve as the agents who experience, influence, and navigate different realities within the narrative, shaped by the unique contexts of their respective worlds.
+
+```mermaid
+flowchart TD;
+    A[**Characters**]
+    A --> B[**Complex Motivations**];
+    A --> C[**Identity Formation**];
+    A --> D[**Relational Dynamics**];
+```
+
 - **Characteristics**
   - **Complex Motivations**: The motivations of characters are often shaped by the unique conditions of their world, influencing how they act and respond across alternate realities.
   - **Identity Formation**: Characters’ identities are crafted in relation to the specific rules, cultural norms, and environments of their world, creating a diverse cast across possible worlds.
@@ -75,6 +84,15 @@ mindmap
 ###### 2.1.1.2. **Agency**
 
 - **Definition**: Agency in possible worlds refers to the capacity of characters to make decisions and take actions that impact the course of events, both within their own world and across multiple realities.
+
+```mermaid
+flowchart TD;
+    E[**Agency**]
+    E --> F[**Autonomous Actions**];
+    E --> G[**Inter-Reality Influence**];
+    E --> H[**Moral Responsibility**];
+```
+
 - **Characteristics**
   - **Autonomous Actions**: Characters exercise agency by making choices that shift the trajectory of events, often setting off ripple effects that influence other worlds.
   - **Inter-Reality Influence**: Some characters have the ability to traverse or impact multiple worlds, amplifying the reach and consequences of their decisions.
@@ -83,6 +101,15 @@ mindmap
 ###### 2.1.1.3. **Alternate Realities**
 
 - **Definition**: In Possible Worlds Theory, alternate realities refer to the different versions of reality created within a narrative, each with its own unique set of rules, characters, and outcomes.
+
+```mermaid
+flowchart TD;
+    I[**Alternate Realities**]
+    I --> J[**Distinct Worldbuilding**];
+    I --> K[**Narrative Divergence**];
+    I --> L[**Internal Consistency**];
+```
+
 - **Characteristics**
   - **Distinct Worldbuilding**: Each alternate reality is meticulously constructed with unique settings, histories, and societal norms that differentiate it from the primary world.
   - **Narrative Divergence**: Events within alternate realities may follow paths that diverge significantly from the main story, allowing exploration of “what-if” scenarios.
@@ -103,6 +130,16 @@ mindmap
 ###### 2.2.1.1. **Cultural Frameworks**
 
 - **Definition**: The inclusion of social norms, traditions, languages, and belief systems that define how characters interact and how societies function within the narrative world.
+
+```mermaid
+flowchart TD;
+    A[**Cultural Frameworks**]
+    A --> B[**Authenticity**];
+    A --> C[**Depth**];
+    A --> D[**Diverse Societies**];
+    A --> E[**Cultural Tensions**];
+```
+
 - **Characteristics**
   - **Authenticity**: Detailed cultural elements lend believability, making the environment feel genuine and true to life.
   - **Depth**: Rich cultural details add layers to the setting, creating an immersive and complex world that feels lived-in.
@@ -112,6 +149,15 @@ mindmap
 ###### 2.2.1.2. **Geographical Environment**
 
 - **Definition**: The depiction of landscapes, regions, and natural features within a narrative that create a sense of place and shape the interactions of characters and events.
+
+```mermaid
+flowchart TD;
+    F[**Geographical Environment**]
+    F --> G[**Topographical Details**];
+    F --> H[**Regional Diversity**];
+    F --> I[**Impact on Plot**];
+```
+
 - **Characteristics**
   - **Topographical Details**: Incorporates mountains, rivers, forests, and other landforms to create a realistic and immersive setting.
   - **Regional Diversity**: Includes varied geographical areas that influence cultures, travel, and conflicts within the story.
@@ -120,6 +166,15 @@ mindmap
 ###### 2.2.1.3. **Physical Environment**
 
 - **Definition**: The immediate physical surroundings, including climate, architecture, and constructed spaces that characters inhabit and navigate within the narrative.
+
+```mermaid
+flowchart TD;
+    J[**Physical Environment**]
+    J --> K[**Climate and Weather**];
+    J --> L[**Urban and Rural Settings**];
+    J --> M[**Symbolic Use of Space**];
+```
+
 - **Characteristics**
   - **Climate and Weather**: Descriptions of weather conditions and climate add atmosphere and can symbolize thematic elements.
   - **Urban and Rural Settings**: Differentiates between cityscapes, villages, and wilderness, affecting character interactions and plot development.
@@ -128,6 +183,15 @@ mindmap
 ###### 2.2.1.4. **Historical Background**
 
 - **Definition**: The backstory and timeline of events that have shaped the current state of the narrative world, including significant moments, influential figures, and societal shifts.
+
+```mermaid
+flowchart TD;
+    N[**Historical Background**]
+    N --> O[**Continuity and Coherence**];
+    N --> P[**Myths and Legends**];
+    N --> Q[**Plot Foreshadowing**];
+```
+
 - **Characteristics**
   - **Continuity and Coherence**: A well-crafted history ensures that the world’s present state makes sense and adds depth to the narrative.
   - **Myths and Legends**: Inclusion of stories or myths within the world’s history can enrich its culture and influence character beliefs and actions.
@@ -148,6 +212,15 @@ mindmap
 ###### 2.3.1.1. **Descriptive Language**
 
 - **Definition**: The use of detailed and vivid descriptions that appeal to the senses to create a rich narrative environment.
+
+```mermaid
+flowchart TD;
+    A[**Descriptive Language**]
+    A --> B[**Sensory Details**];
+    A --> C[**Evocative Imagery**];
+    A --> D[**Atmosphere Creation**];
+```
+
 - **Characteristics**
   - **Sensory Details**: Incorporates sight, sound, smell, taste, and touch to make scenes come alive and feel tangible.
   - **Evocative Imagery**: Utilizes metaphor and simile to paint pictures in the reader’s mind, enhancing the narrative's depth and engagement.
@@ -156,6 +229,15 @@ mindmap
 ###### 2.3.1.2. **Character Development**
 
 - **Definition**: The process of creating complex, relatable characters whose motivations, backstories, and evolution draw readers deeper into the story.
+
+```mermaid
+flowchart TD;
+    E[**Character Development**]
+    E --> F[**Relatability**];
+    E --> G[**Growth and Change**];
+    E --> H[**Distinct Voices**];
+```
+
 - **Characteristics**
   - **Relatability**: Characters have flaws, desires, and emotions that resonate with readers, making them feel authentic.
   - **Growth and Change**: Characters evolve throughout the story, showing development that keeps readers invested.
@@ -164,7 +246,67 @@ mindmap
 ###### 2.3.1.3. **Consistent Narrative Logic**
 
 - **Definition**: A coherent and believable narrative structure that follows its own rules and internal logic, enabling readers to become fully immersed without being distracted by inconsistencies.
+
+```mermaid
+flowchart TD;
+    I[**Consistent Narrative Logic**]
+    I --> J[**World Consistency**];
+    I --> K[**Plausible Consequences**];
+    I --> L[**Thematic Cohesion**];
+```
+
 - **Characteristics**
   - **World Consistency**: Ensures that the rules of the narrative world remain constant, helping maintain suspension of disbelief.
   - **Plausible Consequences**: Events in the story logically follow from character actions and world conditions, creating believable outcomes.
   - **Thematic Cohesion**: Aligns the narrative’s events and character arcs with overarching themes, reinforcing the immersive experience.
+
+---
+
+```mermaid
+mindmap
+  root((**Herman's Narrative Worlds Framework**))
+    **Possible Worlds Theory**
+      **Characters**
+        Complex Motivations
+        Identity Formation
+        Relational Dynamics
+      **Agency**
+        Autonomous Actions
+        Inter-Reality Influence
+        Moral Responsibility
+      **Alternate Realities**
+        Distinct Worldbuilding
+        Narrative Divergence
+        Internal Consistency
+    **World-Building**
+      **Cultural Frameworks**
+        Authenticity
+        Depth
+        Diverse Societies
+        Cultural Tensions
+      **Geographical Environment**
+        Topographical Details
+        Regional Diversity
+        Impact on Plot
+      **Physical Environment**
+        Climate and Weather
+        Urban and Rural Settings
+        Symbolic Use of Space
+      **Historical Background**
+        Continuity and Coherence
+        Myths and Legends
+        Plot Foreshadowing
+    **Immersive Storytelling**
+      **Descriptive Language**
+        Sensory Details
+        Evocative Imagery
+        Atmosphere Creation
+      **Character Development**
+        Relatability
+        Growth and Change
+        Distinct Voices
+      **Consistent Narrative Logic**
+        World Consistency
+        Plausible Consequences
+        Thematic Cohesion
+```
