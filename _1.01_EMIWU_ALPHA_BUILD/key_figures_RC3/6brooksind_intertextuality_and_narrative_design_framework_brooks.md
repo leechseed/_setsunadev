@@ -63,6 +63,13 @@ KNOWLEDGE TYPE: EXPLICIT
 
 ---
 
+```mermaid
+mindmap
+  root((**Brook's Intertextuality and Narrative Design Framework**))
+    **In-Text Transformation**
+    **Cross-Text Transformation**
+```
+
 ---
 
 ### 1. Title: **Brooks's Intertextuality and Narrative Design Framework**
