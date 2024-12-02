@@ -13,6 +13,11 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Utilizes semiotic squares to analyze narrative structures, aligning with semiotics.
+
+
 ---
 - [**Greimas's Semiotic Square Model**](#greimass-semiotic-square-model)
   - [**Binary Oppositions**](#binary-oppositions)

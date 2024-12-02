@@ -12,6 +12,9 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: SPEECH
 KNOWLEDGE TYPE: TACIT
+CORE: NA-3402 Narration and Narrator Analysis
+TIER: Tier 2
+REASON: Polyphony emphasizes multiple voices and perspectives within a narrative, aligning with narration and narrator analysis.
 ---
 
 - [1. Title: **Bakhtin's Polyphony Framework**](#1-title-bakhtins-polyphony-framework)
@@ -208,3 +211,533 @@ mindmap
         Reflective of Reality
         Interpretative Freedom
 ```
+
+# YAML
+
+- UID: 1AbbottNPF
+  Framework: Narrative Perspective Framework
+  CORE: NV-3405 Narrative Voice and Point of View
+  TIER: Tier 2
+  REASON: This framework examines the perspectives from which a narrative is presented, focusing on the narrator's voice and the point of view, aligning with the "Narrative Voice and Point of View" category.
+
+- UID: 1BakhtinDF
+  Framework: Dialogism Framework
+  CORE: NV-3405 Narrative Voice and Point of View
+  TIER: Tier 2
+  REASON: This framework examines the perspectives from which a narrative is presented, focusing on the narrator's voice and the point of view, aligning with the "Narrative Voice and Point of View" category.
+
+- UID: 1BalNAF
+  Framework: Bal's Narrative Agents Framework
+  CORE: CH-3302 Characterization
+  TIER: Tier 1
+  REASON: Bal's Narrative Agents Framework focuses on the development and portrayal of characters as narrative agents, fitting within the "Characterization" category.
+
+- UID: 1BarthesNCF
+  Framework: Barthes's Narrative Codes Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: This framework explores the codes and signs within narratives, aligning with the study of semiotics in narratives.
+
+- UID: 1BoothIAM
+  Framework: Booth's Implied Author Model
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Booth's model examines the role of the implied author in shaping the narrative, which falls under narration and narrator analysis.
+
+- UID: 1BrooksRDNF
+  Framework: The Role of Desire in Narrative
+  CORE: NE-3509 Narrative Ethics and Ideology
+  TIER: Tier 3
+  REASON: This framework explores the ethical and ideological dimensions of desire within narratives, fitting into "Narrative Ethics and Ideology".
+
+- UID: 1ChatmanSDF
+  Framework: Chatman's Story vs. Discourse Framework
+  CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+  TIER: Tier 2
+  REASON: Differentiates between the raw events of a story and how they are presented, directly aligning with the "Story vs. Discourse" category.
+
+- UID: 1ForsterFRCM
+  Framework: Forster's Flat and Round Characters Model
+  CORE: CH-3302 Characterization
+  TIER: Tier 1
+  REASON: Forster's model classifies characters based on their depth and complexity, fitting within "Characterization".
+
+- UID: 1GreimasSNSF
+  Framework: Greimas's Semio-Narrative Structure Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Focuses on the semiotic structures within narratives, aligning with the study of semiotics.
+
+- UID: 1HermanCNF
+  Framework: Herman's Cognitive Narratology Framework
+  CORE: HN-3701 Holistic Narrative Analysis
+  TIER: Tier 5
+  REASON: Combines various narrative elements from a cognitive perspective, fitting into a holistic analysis.
+
+- UID: 1propp7
+  Framework: Propp's Spheres of Action Framework
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Analyzes specific narrative functions that drive the plot, aligning with function and motif analysis.
+
+- UID: 1propp31
+  Framework: Propp's 31 Narrative Functions Framework
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Outlines specific narrative functions that advance the plot, fitting within function and motif analysis.
+
+- UID: 1RimmonKenanFF
+  Framework: Rimmon-Kenan's Focalization Framework
+  CORE: FO-3403 Focalization
+  TIER: Tier 2
+  REASON: Focuses on the narrative perspective and focalization, aligning with the "Focalization" category.
+
+- UID: 1RyanIF
+  Framework: Ryan's Immersion Framework
+  CORE: NV-3405 Narrative Voice and Point of View
+  TIER: Tier 2
+  REASON: Examines how narratives immerse the reader through voice and perspective, fitting within "Narrative Voice and Point of View".
+
+- UID: 1SternbergEMF
+  Framework: Sternberg's Expositional Modes Framework
+  CORE: NS-3301 Narrative Structure
+  TIER: Tier 1
+  REASON: Analyzes the modes of exposition in narrative structure, fitting within "Narrative Structure".
+
+- UID: 1TodorovNSM
+  Framework: Todorov's Narrative Syntax Model
+  CORE: NS-3301 Narrative Structure
+  TIER: Tier 1
+  REASON: Explores the syntactic organization of narratives, aligning with "Narrative Structure".
+
+- UID: 1TomashevskyTMF
+  Framework: Tomashevsky's Theme and Motif Framework
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Focuses on themes and motifs, aligning with function and motif analysis.
+
+- UID: 2AbbottNGRI
+  Framework: Abbott's Narrative Gaps and Reader Involvement Framework
+  CORE: NR-3507 Narratee and Implied Reader
+  TIER: Tier 3
+  REASON: Examines narrative gaps and how they engage the reader, fitting within "Narratee and Implied Reader".
+
+- UID: 2BakhtinHM
+  Framework: Bakhtin's Heteroglossia Model
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Heteroglossia involves multiple voices and social languages, aligning with narration and narrator analysis.
+
+- UID: 2BalTSF
+  Framework: Bal's Temporal Structures Framework
+  CORE: TT-3404 Time and Temporality
+  TIER: Tier 2
+  REASON: Focuses on the structuring of time within narratives, fitting into "Time and Temporality".
+
+- UID: 2BarthesPTF
+  Framework: Barthes's Pleasure of the Text Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Analyzes the interplay of signifiers in creating pleasure in narratives, aligning with semiotics.
+
+- UID: 2BoothNNVF
+  Framework: Booth's Narrator and Narrative Voice Framework
+  CORE: NV-3405 Narrative Voice and Point of View
+  TIER: Tier 2
+  REASON: Directly examines the narrator's voice and narrative perspective, fitting within "Narrative Voice and Point of View".
+
+- UID: 2BrooksNTF
+  Framework: Brooks's Narrative Temporality Framework
+  CORE: TT-3404 Time and Temporality
+  TIER: Tier 2
+  REASON: Studies how temporality is structured in narratives, aligning with "Time and Temporality".
+
+- UID: 2ChatmanNCM
+  Framework: Chatman's Narrative Communication Model
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Focuses on the communication aspects of narration, fitting within "Narration and Narrator Analysis".
+
+- UID: 2ForsterPRF
+  Framework: Forster's Pattern and Rhythm Framework
+  CORE: NS-3301 Narrative Structure
+  TIER: Tier 1
+  REASON: Analyzes narrative patterns and rhythms, fitting within "Narrative Structure".
+
+- UID: 2Genette3NIF
+  Framework: Genette's Narrative Instances Framework
+  CORE: NLE-3501 Narrative Levels and Embedding
+  TIER: Tier 3
+  REASON: Examines narrative instances and their levels within stories, aligning with narrative levels and embedding.
+
+- UID: 2Genette5Key
+  Framework: Genette's Five Key Narrative Categories Framework
+  CORE: NLE-3501 Narrative Levels and Embedding
+  TIER: Tier 3
+  REASON: Categorizes key narrative elements, fitting within narrative levels and embedding.
+
+- UID: 2GreimasSSM
+  Framework: Greimas's Semiotic Square Mode
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Utilizes semiotic squares to analyze narrative structures, aligning with semiotics.
+
+- UID: 2HermanSLF
+  Framework: Herman's Story Logic Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Explores the logic of storytelling, fitting within diegesis and mimesis.
+
+- UID: 2RimmonKenanNLF
+  Framework: Rimmon-Kenan's Narrative Levels Framework
+  CORE: NLE-3501 Narrative Levels and Embedding
+  TIER: Tier 3
+  REASON: Studies different narrative levels within stories, aligning with narrative levels and embedding.
+
+- UID: 2RyanNCCF
+  Framework: Ryan's Narrative as a Cognitive Construct Framework
+  CORE: HN-3701 Holistic Narrative Analysis
+  TIER: Tier 5
+  REASON: Approaches narrative from a cognitive perspective, combining various elements for holistic analysis.
+
+- UID: 2SternbergTOF
+  Framework: Sternberg's Temporal Ordering Framework
+  CORE: TT-3404 Time and Temporality
+  TIER: Tier 2
+  REASON: Focuses on the ordering of temporal events within narratives, fitting into "Time and Temporality".
+
+- UID: 2TodorovSANF
+  Framework: Todorov's Deep Structures Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Explores deep narrative structures, aligning with diegesis and mimesis.
+
+- UID: 2TomashevskyPSF
+  Framework: Tomashevsky's Plot vs. Story Framework
+  CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+  TIER: Tier 2
+  REASON: Differentiates between plot and story elements, fitting into "Story vs. Discourse".
+
+- UID: 3BakhtinCF
+  Framework: Bakhtin's Chronotope Framework
+  CORE: TT-3404 Time and Temporality
+  TIER: Tier 2
+  REASON: Chronotope integrates time and space in narratives, aligning with "Time and Temporality".
+
+- UID: 3BalFF
+  Framework: Bal's Focalization Framework
+  CORE: FO-3403 Focalization
+  TIER: Tier 2
+  REASON: Focuses on the narrative perspective and focalization, aligning with the "Focalization" category.
+
+- UID: 3BarthesCLF
+  Framework: Barthes's Camera Lucida Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Analyzes the use of the camera and imagery in narrative structures, aligning with semiotics.
+
+- UID: 3BoothSVF
+  Framework: Booth's Showing vs. Telling Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Differentiates between showing and telling in narratives, aligning with diegesis and mimesis.
+
+- UID: 3BrooksMSMF
+  Framework: Brooks's Middle as a Site of Meaning Framework
+  CORE: NS-3301 Narrative Structure
+  TIER: Tier 1
+  REASON: Analyzes the central part of narratives as a meaningful structure, fitting within "Narrative Structure".
+
+- UID: 3ChatmanCEF
+  Framework: Chatman's Character and Event Framework
+  CORE: PA-3303 Plot and Event Analysis
+  TIER: Tier 1
+  REASON: Examines character and events within the plot, aligning with plot and event analysis.
+
+- UID: 3ForsterPC
+  Framework: Forster's Prophecy Concept
+  CORE: PA-3303 Plot and Event Analysis
+  TIER: Tier 1
+  REASON: Focuses on the plot and prophecy elements within narratives, fitting into plot and event analysis.
+
+- UID: 3Genette3Focalization
+  Framework: Genette's Focalization Framework
+  CORE: FO-3403 Focalization
+  TIER: Tier 2
+  REASON: Analyzes the perspective through which the narrative is presented, aligning with "Focalization".
+
+- UID: 3GreimasAM
+  Framework: Greimas's Actantial Model
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Analyzes narrative roles and functions, fitting within function and motif analysis.
+
+- UID: 3HermanNCAF
+  Framework: Herman's Narrative as a Cognitive Artifact Framework
+  CORE: HN-3701 Holistic Narrative Analysis
+  TIER: Tier 5
+  REASON: Integrates cognitive aspects into narrative analysis, fitting into holistic analysis.
+
+- UID: 3RimmonKenanCF
+  Framework: Rimmon-Kenan's Characterization Framework
+  CORE: CH-3302 Characterization
+  TIER: Tier 1
+  REASON: Focuses on character development and portrayal, aligning with "Characterization".
+
+- UID: 3RyanMSF
+  Framework: Ryan's Medium Specificity Framework
+  CORE: AS-3601 Advanced Semiotics and Symbolic Interpretation
+  TIER: Tier 4
+  REASON: Examines how the medium influences narrative interpretation, fitting into advanced semiotics.
+
+- UID: 3SternbergSCSM
+  Framework: Sternberg's Suspense, Curiosity, and Surprise Model
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Analyzes elements that drive audience engagement and plot, fitting within function and motif analysis.
+
+- UID: 3TodorovGenre
+  Framework: Todorov's Dynamic Genre Theory
+  CORE: GT-3505 Genre and Narrative Typology
+  TIER: Tier 3
+  REASON: Classifies narratives based on genre conventions and typologies, aligning with genre and narrative typology.
+
+- UID: 3TomashevskyNFF
+  Framework: Tomashevsky's Narrative Functions Framework
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Focuses on narrative functions that advance the plot, aligning with function and motif analysis.
+
+- UID: 4BakhtinCC
+  Framework: Bakhtin's Carnivalesque Concept
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Examines the carnivalesque as a narrative technique, aligning with semiotics.
+
+- UID: 4BoothRFWM
+  Framework: Booth's Rhetoric of Fictional Worlds Model
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Analyzes the rhetoric used in constructing fictional worlds, fitting into narration and narrator analysis.
+
+- UID: 4BrooksNRSF
+  Framework: Brooks's Narrative as a Rhetorical Structure Framework
+  CORE: CL-3406 Narrative Coherence and Logic
+  TIER: Tier 2
+  REASON: Studies narrative coherence and logical structures, aligning with narrative coherence and logic.
+
+- UID: 4ChatmanTSNF
+  Framework: Chatman's Time and Space in Narrative Framework
+  CORE: TT-3404 Time and Temporality
+  TIER: Tier 2
+  REASON: Focuses on how time and space are managed within narratives, aligning with "Time and Temporality".
+
+- UID: 4ForsterFVRF
+  Framework: Forster's Fantasy vs. Realism Framework
+  CORE: GT-3505 Genre and Narrative Typology
+  TIER: Tier 3
+  REASON: Differentiates between fantasy and realism, aligning with genre and narrative typology.
+
+- UID: 4GenetteMetalepsis
+  Framework: Genette's Metalepsis Model
+  CORE: MT-3508 Metalepsis and Narrative Transgression
+  TIER: Tier 3
+  REASON: Analyzes narrative shifts and transgressions, fitting into metalepsis and narrative transgression.
+
+- UID: 4GreimasNGF
+  Framework: Greimas's Narrative Grammar Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Examines the grammatical structures of narratives, aligning with semiotics.
+
+- UID: 4HermanETF
+  Framework: Herman's Eventfulness and Tellability Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Focuses on event representation in narratives, aligning with diegesis and mimesis.
+
+- UID: 4RimmonKenanTIAF
+  Framework: Rimmon-Kenan's Textual and Intertextual Analysis Framework
+  CORE: INT-3502 Intertextuality
+  TIER: Tier 3
+  REASON: Studies textual and intertextual relationships within narratives, aligning with intertextuality.
+
+- UID: 4RyanPWTF
+  Framework: Ryan's Possible Worlds Theory Framework
+  CORE: AS-3601 Advanced Semiotics and Symbolic Interpretation
+  TIER: Tier 4
+  REASON: Examines narrative possibilities and their symbolic meanings, aligning with advanced semiotics.
+
+- UID: 4TodorovFMF
+  Framework: Todorov's Fantastic Mode Framework
+  CORE: GT-3505 Genre and Narrative Typology
+  TIER: Tier 3
+  REASON: Analyzes the fantastic genre, aligning with genre and narrative typology.
+
+- UID: 4TomashevskyRIM
+  Framework: Tomashevsky's Reader Interaction Model
+  CORE: NR-3507 Narratee and Implied Reader
+  TIER: Tier 3
+  REASON: Focuses on reader interaction and engagement, aligning with narratee and implied reader.
+
+- UID: 5BakhtinNDGM
+  Framework: Bakhtin's Novel as a Dynamic Genre Model
+  CORE: GT-3505 Genre and Narrative Typology
+  TIER: Tier 3
+  REASON: Classifies novels as dynamic genres, aligning with genre and narrative typology.
+
+- UID: 5BoothRRF
+  Framework: Booth's Reader's Role Framework
+  CORE: NR-3507 Narratee and Implied Reader
+  TIER: Tier 3
+  REASON: Analyzes the role of the reader within narratives, fitting within "Narratee and Implied Reader".
+
+- UID: 5BrooksTEEM
+  Framework: Brooks's Textual Energy and Entropy Model
+  CORE: CL-3406 Narrative Coherence and Logic
+  TIER: Tier 2
+  REASON: Examines narrative coherence through the lens of energy and entropy, aligning with narrative coherence and logic.
+
+- UID: 5ForsterRRF
+  Framework: Forster's Reader's Role Framework
+  CORE: NR-3507 Narratee and Implied Reader
+  TIER: Tier 3
+  REASON: Explores the role of the reader in constructing narrative meaning, aligning with "Narratee and Implied Reader".
+
+- UID: 5GenetteArchitext
+  Framework: Genette's Architextual Model
+  CORE: INT-3502 Intertextuality
+  TIER: Tier 3
+  REASON: Studies architextual relations between texts, aligning with intertextuality.
+
+- UID: 5GreimasIF
+  Framework: Greimas's Isotopy Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Uses isotopy to analyze narrative meanings, aligning with semiotics.
+
+- UID: 5HermanTLNF
+  Framework: Herman's Temporal Logic in Narrative Framework
+  CORE: TT-3404 Time and Temporality
+  TIER: Tier 2
+  REASON: Analyzes how temporal logic structures narratives, aligning with "Time and Temporality".
+
+- UID: 5RimmonkenanNSF
+  Framework: Rimmon-Kenan's Narrative Discourse Strategies Framework
+  CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+  TIER: Tier 2
+  REASON: Focuses on discourse strategies within the narrative, aligning with "Story vs. Discourse".
+
+- UID: 5RyanNDIM
+  Framework: Ryan's Narrative in Digital and Interactive Media Framework
+  CORE: TN-3602 Transmedia Narratology
+  TIER: Tier 5
+  REASON: Studies narrative across digital and interactive media platforms, aligning with transmedia narratology.
+
+- UID: 5TodorovNTF
+  Framework: Todorov's Narrative Transformation Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Explores how narratives transform through diegesis and mimesis.
+
+- UID: 5TomashevskyTPF
+  Framework: Tomashevsky's Thematics and Poetics Framework
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Analyzes thematic and poetic elements in narratives, aligning with function and motif analysis.
+
+- UID: 6BakhtinPF
+  Framework: Bakhtin's Polyphony Framework
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Polyphony emphasizes multiple voices and perspectives within a narrative, aligning with narration and narrator analysis.
+
+- UID: 6BoothRIF
+  Framework: Booth's Rhetoric of Irony Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Analyzes the use of irony as a rhetorical device in narratives, aligning with semiotics.
+
+- UID: 6BrooksIND
+  Framework: Brooks's Intertextuality and Narrative Design Framework
+  CORE: INT-3502 Intertextuality
+  TIER: Tier 3
+  REASON: Studies intertextuality and its role in narrative design, aligning with intertextuality.
+
+- UID: 6GreimasMF
+  Framework: Greimas's Modalities Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Analyzes narrative modalities through semiotic approaches, aligning with semiotics.
+
+- UID: 6HermanCMRF
+  Framework: Herman's Characterization and Mind Representation Framework
+  CORE: CH-3302 Characterization
+  TIER: Tier 1
+  REASON: Focuses on character development and psychological representation, aligning with "Characterization".
+
+- UID: 6RyanIAF
+  Framework: Ryan's Interdisciplinary Approaches Framework
+  CORE: TI-3702 Theoretical Integration
+  TIER: Tier 5
+  REASON: Integrates multiple narratological theories for comprehensive analysis, aligning with theoretical integration.
+
+- UID: 6TomashevskyDM
+  Framework: Tomashevsky's Defamiliarization Model
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Explores how narratives make the familiar strange to engage the audience, aligning with diegesis and mimesis.
+
+- UID: 7BakhtinSGF
+  Framework: Bakhtin's Speech Genres Framework
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Analyzes speech genres within narratives, aligning with semiotics.
+
+- UID: 7BoothMDRAF
+  Framework: Booth's Modern Dogma and Rhetoric of Assent
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Examines the rhetorical aspects of narration in modern dogma, aligning with narration and narrator analysis.
+
+- UID: 7BrooksMIF
+  Framework: Brooks's Melodramatic Imagination Framework
+  CORE: FM-3506 Function and Motif Analysis
+  TIER: Tier 3
+  REASON: Analyzes the function of melodrama in narratives, aligning with function and motif analysis.
+
+- UID: 7GreimasS
+  Framework: Greimasian Semiotics
+  CORE: SN-3504 Semiotics of Narrative
+  TIER: Tier 3
+  REASON: Broad study of semiotic principles in narratives, aligning with semiotics.
+
+- UID: 7HermanNWF
+  Framework: Herman's Narrative Worlds Framework
+  CORE: HN-3701 Holistic Narrative Analysis
+  TIER: Tier 5
+  REASON: Studies the construction of narrative worlds in a holistic manner, aligning with holistic narrative analysis.
+
+- UID: 7RyanTSF
+  Framework: Ryan's Role of Technology in Storytelling Framework
+  CORE: TN-3602 Transmedia Narratology
+  TIER: Tier 4
+  REASON: Analyzes the impact of technology on storytelling across media, aligning with transmedia narratology.
+
+- UID: 7TomashevskyNDF
+  Framework: Tomashevsky's Narrative Devices Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Explores narrative devices and their role in storytelling, aligning with diegesis and mimesis.
+
+- UID: 8BakhtinAHAA
+  Framework: Bakhtin's Author and Hero in Aesthetic Activity Concept
+  CORE: NA-3402 Narration and Narrator Analysis
+  TIER: Tier 2
+  REASON: Examines the roles of author and hero within narrative aesthetics, aligning with narration and narrator analysis.
+
+- UID: 8RyanNIF
+  Framework: Tomashevsky's Narrative Devices Framework
+  CORE: DM-3503 Diegesis and Mimesis
+  TIER: Tier 3
+  REASON: Mismatched theorist and framework; already covered under `7TomashevskyNDF`.

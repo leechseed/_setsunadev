@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: 'The Narrator can operate at 3 different levels of narrative instances: extradiegetic, intradiegetic, or metadiagetic. '
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: TACIT
+CORE: NLE-3501 Narrative Levels and Embedding
+TIER: Tier 3
+REASON: Examines narrative instances and their levels within stories, aligning with narrative levels and embedding.
+
+
 ---
 - [1. **Title: Genette's Narrative Instances Framework**](#1-title-genettes-narrative-instances-framework)
 - [2. **Key Concepts**](#2-key-concepts)

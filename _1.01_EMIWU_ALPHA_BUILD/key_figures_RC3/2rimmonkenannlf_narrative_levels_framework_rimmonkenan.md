@@ -12,6 +12,11 @@ ELEMENT: RHETORIC
 PROPERTY: SEMIOTICS
 TYPE: ARC
 KNOWLEDGE TYPE: TACIT
+CORE: NLE-3501 Narrative Levels and Embedding
+TIER: Tier 3
+REASON: Studies different narrative levels within stories, aligning with narrative levels and embedding.
+
+
 ---
 
 - [1. Title: **Rimmon-Kenan's Narrative Levels Framework**](#1-title-rimmon-kenans-narrative-levels-framework)

@@ -13,6 +13,11 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: This framework explores the codes and signs within narratives, aligning with the study of semiotics in narratives.
+
+
 ---
 - [1. Title: **Barthes's Narrative Codes Framework**](#1-title-barthess-narrative-codes-framework)
 - [2. Key Concepts](#2-key-concepts)

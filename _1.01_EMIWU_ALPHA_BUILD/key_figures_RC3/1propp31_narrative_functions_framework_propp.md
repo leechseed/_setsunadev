@@ -13,6 +13,9 @@ ELEMENT: STRUCTURE
 PROPERTY: FUNCTION
 TYPE: PREPARATORY
 KNOWLEDGE TYPE: EXPLICIT
+CORE: FM-3506 Function and Motif Analysis
+TIER: Tier 3
+REASON: Outlines specific narrative functions that advance the plot, fitting within function and motif analysis.
 ---
 
 - [1. **Propp's 31 Narrative Functions Framework**](#1-propps-31-narrative-functions-framework)

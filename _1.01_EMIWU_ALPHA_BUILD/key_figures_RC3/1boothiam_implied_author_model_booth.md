@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: The implied author is distinct from the real author and the narrator. It represents the version of the author that the reader constructs based on the narrative's tone, style, and ethical stance.
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NA-3402 Narration and Narrator Analysis
+TIER: Tier 2
+REASON: Booth's model examines the role of the implied author in shaping the narrative, which falls under narration and narrator analysis.
+
+
 ---
 
 - [1. **Title: Booth's Implied Author Model**](#1-title-booths-implied-author-model)

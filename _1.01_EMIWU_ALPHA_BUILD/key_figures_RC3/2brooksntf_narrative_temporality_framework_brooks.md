@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: 'Temporal manipulation is a technique that designers use to create suspense and delay resolution: analepsis and prolepsis.'
 ELEMENT: TIME
 KNOWLEDGE TYPE: EXPLICIT
+CORE: TT-3404 Time and Temporality
+TIER: Tier 2
+REASON: Studies how temporality is structured in narratives, aligning with "Time and Temporality".
+
+
 ---
 
 - [1. **Title: Brooks's Narrative Temporality Framework**](#1-title-brookss-narrative-temporality-framework)

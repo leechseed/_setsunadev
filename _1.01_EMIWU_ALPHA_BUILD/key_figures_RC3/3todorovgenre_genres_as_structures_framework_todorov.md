@@ -11,6 +11,11 @@ Summary: Genre exists as structure in narrative either as dynamic or static
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: TACIT
+CORE: GT-3505 Genre and Narrative Typology
+TIER: Tier 3
+REASON: Classifies narratives based on genre conventions and typologies, aligning with genre and narrative typology.
+
+
 ---
 
 - [1. **Todorov's Dynamic Genre Theory**](#1-todorovs-dynamic-genre-theory)

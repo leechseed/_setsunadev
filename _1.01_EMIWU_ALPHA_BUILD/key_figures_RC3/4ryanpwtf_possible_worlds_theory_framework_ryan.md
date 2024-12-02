@@ -10,6 +10,11 @@ Prima-Forma:
 Summary: Marie-Laure Ryan's *Possible Worlds Theory* explores how narratives create and engage with alternative realities, allowing readers to imagine hypothetical scenarios and counterfactual histories. This framework highlights the role of narrative fiction in expanding cognitive and imaginative capacities by transcending the boundaries of the real world.
 ELEMENT: SPACE
 KNOWLEDGE TYPE: TACIT
+CORE: AS-3601 Advanced Semiotics and Symbolic Interpretation
+TIER: Tier 4
+REASON: Examines narrative possibilities and their symbolic meanings, aligning with advanced semiotics.
+
+
 ---
 
 - [1. Title: **Ryan's Possible Worlds Theory Framework**](#1-title-ryans-possible-worlds-theory-framework)

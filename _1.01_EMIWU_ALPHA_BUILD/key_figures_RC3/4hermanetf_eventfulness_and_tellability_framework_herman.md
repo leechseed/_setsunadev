@@ -11,7 +11,13 @@ Summary: Eventfullness and Tellability are qualities that make a story worth tel
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
+CORE: DM-3503 Diegesis and Mimesis
+TIER: Tier 3
+REASON: Focuses on event representation in narratives, aligning with diegesis and mimesis.
+
+
 ---
+
 
 - [1. Title: **Herman's Eventfulness and Tellability Framework**](#1-title-hermans-eventfulness-and-tellability-framework)
 - [2. **Key Concepts**](#2-key-concepts)

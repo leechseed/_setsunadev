@@ -13,6 +13,9 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: TACIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Broad study of semiotic principles in narratives, aligning with semiotics.
 ---
 
 - [1. Title: **Greimasian Semiotics**](#1-title-greimasian-semiotics)

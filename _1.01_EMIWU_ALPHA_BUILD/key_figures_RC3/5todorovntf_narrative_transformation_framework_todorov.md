@@ -10,6 +10,9 @@ Summary: Narrative structure can evolve into other forms within single texts or 
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: EXPLICIT
+CORE: DM-3503 Diegesis and Mimesis
+TIER: Tier 3
+REASON: Explores how narratives transform through diegesis and mimesis.
 ---
 
 - [1. Title: **Todorov's Narrative Transformation Framework**](#1-title-todorovs-narrative-transformation-framework)

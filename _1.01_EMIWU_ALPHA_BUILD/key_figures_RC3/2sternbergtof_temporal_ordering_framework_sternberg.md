@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: 'Temporal ordering refers to the sequence in which the events are presented in the narrative: analepsis and prolepsis '
 ELEMENT: TIME
 KNOWLEDGE TYPE: EXPLICIT
+CORE: TT-3404 Time and Temporality
+TIER: Tier 2
+REASON: Focuses on the ordering of temporal events within narratives, fitting into "Time and Temporality".
+
+
 ---
 
 - [1. **Title: Sternberg's Temporal Ordering Framework**](#1-title-sternbergs-temporal-ordering-framework)

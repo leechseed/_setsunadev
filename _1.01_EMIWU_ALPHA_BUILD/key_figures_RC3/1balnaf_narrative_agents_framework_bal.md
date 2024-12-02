@@ -9,6 +9,9 @@ Prima-Forma:
 Summary: 'Narrative agents are the key participants in the construction and delivery of a narrative: narrator, focalizer, actor.'
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
+CORE: CH-3302 Characterization
+TIER: Tier 1
+REASON: Bal's Narrative Agents Framework focuses on the development and portrayal of characters as narrative agents, fitting within the "Characterization" category.
 ---
 
 - [1. **Title: Bal's Narrative Agents Framework**](#1-title-bals-narrative-agents-framework)

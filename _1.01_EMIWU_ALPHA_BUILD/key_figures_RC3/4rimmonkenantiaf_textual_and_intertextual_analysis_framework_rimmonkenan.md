@@ -11,6 +11,11 @@ Summary: Shlomith Rimmon-Kenan's *Textual and Intertextual Analysis* framework e
 ELEMENT: RHETORIC
 PROPERTY: INTERTEXTUALITY
 KNOWLEDGE TYPE: TACIT
+CORE: INT-3502 Intertextuality
+TIER: Tier 3
+REASON: Studies textual and intertextual relationships within narratives, aligning with intertextuality.
+
+
 ---
 
 - [1. Title: **Rimmon-Kenan's Textual and Intertextual Analysis Framework**](#1-title-rimmon-kenans-textual-and-intertextual-analysis-framework)

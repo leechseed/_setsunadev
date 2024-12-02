@@ -12,6 +12,9 @@ ELEMENT: RHETORIC
 PROPERTY: SEMIOTICS
 TYPE: THEME
 KNOWLEDGE TYPE: TACIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Uses isotopy to analyze narrative meanings, aligning with semiotics.
 ---
 
 - [1. Title: **Greimas's Isotopy Framework**](#1-title-greimass-isotopy-framework)

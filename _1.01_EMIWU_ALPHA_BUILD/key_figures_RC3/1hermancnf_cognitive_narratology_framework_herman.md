@@ -9,6 +9,9 @@ Prima-Forma:
 Summary: "Narrative is a fundamental cognitive tool that humans use to make sense of the world: organize experiences, construct identities, navigate social realties"
 ELEMENT: SPACE
 KNOWLEDGE TYPE: TACIT
+CORE: HN-3701 Holistic Narrative Analysis
+TIER: Tier 5
+REASON: Combines various narrative elements from a cognitive perspective, fitting into a holistic analysis.
 ---
 
 - [1. Title: **Herman's Cognitive Narratology Framework**](#1-title-hermans-cognitive-narratology-framework)

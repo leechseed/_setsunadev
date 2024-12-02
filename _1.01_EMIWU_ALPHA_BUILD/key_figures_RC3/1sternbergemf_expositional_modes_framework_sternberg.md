@@ -12,6 +12,9 @@ Summary: Meir Sternberg's Expositional Modes Framework categorizes how informati
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NS-3301 Narrative Structure
+TIER: Tier 1
+REASON: Analyzes the modes of exposition in narrative structure, fitting within "Narrative Structure".
 ---
 
 - [1. **Sternberg's Expositional Modes Framework**](#1-sternbergs-expositional-modes-framework)

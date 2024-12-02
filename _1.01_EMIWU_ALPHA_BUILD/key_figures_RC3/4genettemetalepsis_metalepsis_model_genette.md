@@ -12,6 +12,11 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: TACIT
+CORE: MT-3508 Metalepsis and Narrative Transgression
+TIER: Tier 3
+REASON: Analyzes narrative shifts and transgressions, fitting into metalepsis and narrative transgression.
+
+
 ---
 
 - [1. Title: **Genette's Metalepsis Model**](#1-title-genettes-metalepsis-model)

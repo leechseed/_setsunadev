@@ -11,6 +11,9 @@ ELEMENT: RHETORIC
 PROPERTY: SZ CODES
 TYPE: SEMIC CODE
 KNOWLEDGE TYPE: TACIT
+CORE: DM-3503 Diegesis and Mimesis
+TIER: Tier 3
+REASON: Explores how narratives make the familiar strange to engage the audience, aligning with diegesis and mimesis.
 ---
 
 - [1. Title: **Tomashevsky's Defamiliarization Model**](#1-title-tomashevskys-defamiliarization-model)

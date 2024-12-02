@@ -13,6 +13,11 @@ ELEMENT: STRUCTURE
 PROPERTY: FUNCTION
 TYPE: RESULTATIVE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NE-3509 Narrative Ethics and Ideology
+TIER: Tier 3
+REASON: This framework explores the ethical and ideological dimensions of desire within narratives, fitting into "Narrative Ethics and Ideology".
+
+
 ---
 
 - [1. **The Role of Desire in Narrative**](#1-the-role-of-desire-in-narrative)

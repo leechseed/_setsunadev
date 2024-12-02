@@ -4,11 +4,14 @@ Title: Narrative Discourse Strategies Framework
 Author: Rimmon-Kenan
 Date: 27/08/2024
 Prima-Forma:
-- syntax
-- lexis
-Summary: 'Designers use narrative discourse to shape the reader''s interpretation and understanding of narrative: unreliable narration, stream of consciousness, and free indirect discourse.'
+  - syntax
+  - lexis
+Summary: "Designers use narrative discourse to shape the reader's interpretation and understanding of narrative: unreliable narration, stream of consciousness, and free indirect discourse."
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: TACIT
+CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+TIER: Tier 2
+REASON: Focuses on discourse strategies within the narrative, aligning with "Story vs. Discourse".
 ---
 
 - [1. **Title: Rimmon-Kenan's Narrative Discourse Strategies Framework**](#1-title-rimmon-kenans-narrative-discourse-strategies-framework)
@@ -31,16 +34,16 @@ KNOWLEDGE TYPE: TACIT
       - [2.3.1.3. **Intimacy**](#2313-intimacy)
 - [3. Theoretical Significance](#3-theoretical-significance)
 
-
 ---
+
 ### 1. **Title: Rimmon-Kenan's Narrative Discourse Strategies Framework**
 
 ---
 
 #### 1.1. **Narrative Discourse Strategies**
 
-**Definition**: 
-Shlomith Rimmon-Kenan’s *Narrative Discourse Strategies Framework* examines the techniques authors use to shape readers' understanding and emotional engagement with a narrative. These strategies, such as unreliable narration, stream of consciousness, and free indirect discourse, are fundamental in constructing how a narrative communicates its themes, develops its characters, and involves its audience. Rimmon-Kenan’s work highlights the complexity and depth of narrative voice in shaping the reader’s interaction with the text.
+**Definition**:
+Shlomith Rimmon-Kenan’s _Narrative Discourse Strategies Framework_ examines the techniques authors use to shape readers' understanding and emotional engagement with a narrative. These strategies, such as unreliable narration, stream of consciousness, and free indirect discourse, are fundamental in constructing how a narrative communicates its themes, develops its characters, and involves its audience. Rimmon-Kenan’s work highlights the complexity and depth of narrative voice in shaping the reader’s interaction with the text.
 
 ---
 
@@ -50,12 +53,13 @@ Shlomith Rimmon-Kenan’s *Narrative Discourse Strategies Framework* examines th
 
 #### 2.1. **Unreliable Narration**
 
-**Definition**: 
+**Definition**:
 Unreliable narration involves a narrator whose credibility is compromised, leading the reader to question the truth or accuracy of the story being told. The narrator’s unreliability might arise from dishonesty, bias, or psychological instability, creating ambiguity in the narrative.
 
 ##### 2.1.1. **Components of Unreliable Narration**
 
 ###### 2.1.1.1. **Ambiguity**
+
 - **Definition**: Readers must critically interpret the narrator's account, often recognizing conflicting or misleading information.
 
 ```mermaid
@@ -65,12 +69,13 @@ flowchart TD
     A --> D[Clue-Based Analysis]
 ```
 
-  - **Characteristics**
-    - **Contradictory Details**: Presents conflicting versions of events or subtle inconsistencies, prompting readers to question the narrator’s reliability.
-    - **Open-Ended Interpretations**: Leaves room for multiple readings and interpretations, making the narrative complex and thought-provoking.
-    - **Clue-Based Analysis**: Encourages readers to search for hidden meanings and piece together hints to form a more accurate understanding of the story.
+- **Characteristics**
+  - **Contradictory Details**: Presents conflicting versions of events or subtle inconsistencies, prompting readers to question the narrator’s reliability.
+  - **Open-Ended Interpretations**: Leaves room for multiple readings and interpretations, making the narrative complex and thought-provoking.
+  - **Clue-Based Analysis**: Encourages readers to search for hidden meanings and piece together hints to form a more accurate understanding of the story.
 
 ###### 2.1.1.2. **Multiple Interpretations**
+
 - **Definition**: The unreliable narration invites various readings of the story, challenging readers to uncover the truth.
 
 ```mermaid
@@ -80,12 +85,13 @@ flowchart TD
     E --> H[Interactive Engagement]
 ```
 
-  - **Characteristics**
-    - **Subjective Truth**: Different readers may come to different conclusions about what is true based on their analysis of the narrative.
-    - **Complex Themes**: The potential for various interpretations can highlight the story’s thematic richness, encouraging deeper thought.
-    - **Interactive Engagement**: Requires readers to actively engage with the text, moving beyond surface-level understanding to explore potential meanings.
+- **Characteristics**
+  - **Subjective Truth**: Different readers may come to different conclusions about what is true based on their analysis of the narrative.
+  - **Complex Themes**: The potential for various interpretations can highlight the story’s thematic richness, encouraging deeper thought.
+  - **Interactive Engagement**: Requires readers to actively engage with the text, moving beyond surface-level understanding to explore potential meanings.
 
 ###### 2.1.1.3. **Reader Engagement**
+
 - **Definition**: The narrative requires active reader participation, as the reader must piece together the underlying reality from the unreliable account.
 
 ```mermaid
@@ -95,21 +101,22 @@ flowchart TD
     I --> L[Reconstructed Narrative]
 ```
 
-  - **Characteristics**
-    - **Critical Thinking**: Demands that readers evaluate and question the information presented, forming their own conclusions about the story.
-    - **Suspense and Curiosity**: Maintains reader interest as they seek to uncover the truth hidden behind the unreliable narrative.
-    - **Reconstructed Narrative**: Challenges readers to piece together a coherent story from disjointed or unreliable fragments provided by the narrator.
+- **Characteristics**
+  - **Critical Thinking**: Demands that readers evaluate and question the information presented, forming their own conclusions about the story.
+  - **Suspense and Curiosity**: Maintains reader interest as they seek to uncover the truth hidden behind the unreliable narrative.
+  - **Reconstructed Narrative**: Challenges readers to piece together a coherent story from disjointed or unreliable fragments provided by the narrator.
 
 ---
 
 #### 2.2. **Stream of Consciousness**
 
-**Definition**: 
+**Definition**:
 Stream of consciousness is a narrative technique that presents the continuous, often chaotic flow of a character’s thoughts, emotions, and memories. It depicts the non-linear, fragmented nature of human consciousness, giving readers an intimate look into the character’s psyche.
 
 ##### 2.2.1. **Components of Stream of Consciousness**
 
 ###### 2.2.1.1. **Fragmentation**
+
 - **Definition**: The technique reflects the disordered nature of thought, often lacking clear structure or logic.
 
 ```mermaid
@@ -119,12 +126,13 @@ flowchart TD
     M --> P[Reflects Mental State]
 ```
 
-  - **Characteristics**
-    - **Discontinuous Flow**: Presents scenes or thoughts in a fragmented manner, mirroring the randomness of memory or consciousness.
-    - **Jumps in Time and Space**: Frequently shifts between different moments or ideas, creating a non-linear narrative.
-    - **Reflects Mental State**: Can represent a character’s psychological state, such as confusion, trauma, or stream of consciousness.
+- **Characteristics**
+  - **Discontinuous Flow**: Presents scenes or thoughts in a fragmented manner, mirroring the randomness of memory or consciousness.
+  - **Jumps in Time and Space**: Frequently shifts between different moments or ideas, creating a non-linear narrative.
+  - **Reflects Mental State**: Can represent a character’s psychological state, such as confusion, trauma, or stream of consciousness.
 
 ###### 2.2.1.2. **Psychological Depth**
+
 - **Definition**: Provides insight into the character's inner world, revealing emotions, fears, and desires.
 
 ```mermaid
@@ -134,12 +142,13 @@ flowchart TD
     Q --> T[Emotive Language]
 ```
 
-  - **Characteristics**
-    - **Intimate Portrayal**: Dives into the character’s deepest thoughts, offering readers a window into their mental and emotional landscape.
-    - **Character Complexity**: Adds layers to the character by revealing hidden aspects of their personality and motivations.
-    - **Emotive Language**: Utilizes expressive and introspective language to convey the character’s internal experiences.
+- **Characteristics**
+  - **Intimate Portrayal**: Dives into the character’s deepest thoughts, offering readers a window into their mental and emotional landscape.
+  - **Character Complexity**: Adds layers to the character by revealing hidden aspects of their personality and motivations.
+  - **Emotive Language**: Utilizes expressive and introspective language to convey the character’s internal experiences.
 
 ###### 2.2.1.3. **Narrative Challenge**
+
 - **Definition**: The non-linear, fragmented nature of the narrative can make it difficult for readers to piece together the character’s experience within the broader context.
 
 ```mermaid
@@ -149,21 +158,22 @@ flowchart TD
     U --> X[Multiple Reinterpretations]
 ```
 
-  - **Characteristics**
-    - **Demanding Structure**: Requires readers to actively piece together disparate elements to form a cohesive understanding.
-    - **Heightened Engagement**: Keeps readers involved as they try to make sense of the disordered narrative.
-    - **Multiple Reinterpretations**: Allows for new insights with each reading, as readers piece together and reinterpret the character’s story.
+- **Characteristics**
+  - **Demanding Structure**: Requires readers to actively piece together disparate elements to form a cohesive understanding.
+  - **Heightened Engagement**: Keeps readers involved as they try to make sense of the disordered narrative.
+  - **Multiple Reinterpretations**: Allows for new insights with each reading, as readers piece together and reinterpret the character’s story.
 
 ---
 
 #### 2.3. **Free Indirect Discourse**
 
-**Definition**: 
+**Definition**:
 Free indirect discourse blends a character’s internal thoughts and speech with the narrator's voice, creating a fluid transition between the character’s perspective and the external narrative without clear markers. This allows the narrative to move between the subjective and objective seamlessly.
 
 ##### 2.3.1. **Components of Free Indirect Discourse**
 
 ###### 2.3.1.1. **Blurring of Voices**
+
 - **Definition**: Free indirect discourse merges the character’s thoughts with the narrator’s perspective, creating ambiguity between subjective and objective views.
 
 ```mermaid
@@ -173,12 +183,13 @@ flowchart TD
     Y --> AB[Subtle Ambiguity]
 ```
 
-  - **Characteristics**
-    - **Seamless Shifts**: Transitions fluidly between the narrator’s observations and the character’s inner thoughts without clear markers.
-    - **Dual Perspective**: Combines external narrative insight with the subjective mind of the character, adding depth to both viewpoints.
-    - **Subtle Ambiguity**: Creates moments where it is unclear whether the thoughts belong to the narrator or the character, enriching the narrative complexity.
+- **Characteristics**
+  - **Seamless Shifts**: Transitions fluidly between the narrator’s observations and the character’s inner thoughts without clear markers.
+  - **Dual Perspective**: Combines external narrative insight with the subjective mind of the character, adding depth to both viewpoints.
+  - **Subtle Ambiguity**: Creates moments where it is unclear whether the thoughts belong to the narrator or the character, enriching the narrative complexity.
 
 ###### 2.3.1.2. **Narrative Flexibility**
+
 - **Definition**: The technique enables a seamless shift between the narrator’s external account and the character’s internal thoughts.
 
 ```mermaid
@@ -188,12 +199,13 @@ flowchart TD
     AC --> AF[Engagement with Thoughts]
 ```
 
-  - **Characteristics**
-    - **Dynamic Transitions**: Moves easily between descriptive narrative and intimate character insights, keeping the story fluid.
-    - **Expanded Storytelling**: Offers both an objective overview and subjective interpretation without changing narrative mode.
-    - **Engagement with Thoughts**: Allows readers to enter the character’s mind without breaking from the overall narrative flow.
+- **Characteristics**
+  - **Dynamic Transitions**: Moves easily between descriptive narrative and intimate character insights, keeping the story fluid.
+  - **Expanded Storytelling**: Offers both an objective overview and subjective interpretation without changing narrative mode.
+  - **Engagement with Thoughts**: Allows readers to enter the character’s mind without breaking from the overall narrative flow.
 
 ###### 2.3.1.3. **Intimacy**
+
 - **Definition**: It creates a deeper connection between readers and characters by integrating the character’s internal perspective with the broader narrative.
 
 ```mermaid
@@ -203,10 +215,10 @@ flowchart TD
     AG --> AJ[Subtle Character Insights]
 ```
 
-  - **Characteristics**
-    - **Enhanced Empathy**: Fosters a closer bond with the character, as readers experience both external events and internal reactions simultaneously.
-    - **Rich Characterization**: Deepens the portrayal of characters by blending their internal reflections with their actions and speech.
-    - **Subtle Character Insights**: Provides glimpses into characters’ true emotions and thoughts without overt exposition, creating a more immersive experience.
+- **Characteristics**
+  - **Enhanced Empathy**: Fosters a closer bond with the character, as readers experience both external events and internal reactions simultaneously.
+  - **Rich Characterization**: Deepens the portrayal of characters by blending their internal reflections with their actions and speech.
+  - **Subtle Character Insights**: Provides glimpses into characters’ true emotions and thoughts without overt exposition, creating a more immersive experience.
 
 ---
 
@@ -253,6 +265,7 @@ mindmap
         Rich Characterization
         Subtle Character Insights
 ```
+
 ---
 
 ### 3. Theoretical Significance

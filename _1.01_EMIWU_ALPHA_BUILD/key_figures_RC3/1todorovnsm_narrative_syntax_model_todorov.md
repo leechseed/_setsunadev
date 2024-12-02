@@ -12,6 +12,9 @@ Summary: "Tzvetan Todorovs Narrative Syntax Model outlines how stories progress 
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NS-3301 Narrative Structure
+TIER: Tier 1
+REASON: Explores the syntactic organization of narratives, aligning with "Narrative Structure".
 ---
 
 - [1. **Todorov's Narrative Syntax Model**](#1-todorovs-narrative-syntax-model)

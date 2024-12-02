@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: Chronotape refers to the way in which narratives structure time and space, and how these structures shape the meaning and development of story.
 ELEMENT: TIME
 KNOWLEDGE TYPE: TACIT
+CORE: TT-3404 Time and Temporality
+TIER: Tier 2
+REASON: Chronotope integrates time and space in narratives, aligning with "Time and Temporality".
+
+
 ---
 
 - [1. **Title: Bakhtin's Chronotope Framework**](#1-title-bakhtins-chronotope-framework)

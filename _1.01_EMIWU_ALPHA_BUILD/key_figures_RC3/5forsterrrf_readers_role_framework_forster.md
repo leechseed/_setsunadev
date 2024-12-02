@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: Novels should be judged not only by their formal qualities but also by the emotional and intellectual responses they evoke in readers.
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: TACIT
+CORE: NR-3507 Narratee and Implied Reader
+TIER: Tier 3
+REASON: Explores the role of the reader in constructing narrative meaning, aligning with "Narratee and Implied Reader".
+
+
 ---
 
 - [1. **Title: Forster's Reader's Role Framework**](#1-title-forsters-readers-role-framework)

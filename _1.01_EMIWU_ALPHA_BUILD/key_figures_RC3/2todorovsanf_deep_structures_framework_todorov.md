@@ -11,6 +11,11 @@ Summary: "Deep structures underpin narratives. Those deep structures are: Plot F
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: EXPLICIT
+CORE: DM-3503 Diegesis and Mimesis
+TIER: Tier 3
+REASON: Explores deep narrative structures, aligning with diegesis and mimesis.
+
+
 ---
 
 - [**Todorov's Deep Structures Framework**](#todorovs-deep-structures-framework)

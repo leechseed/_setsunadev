@@ -11,6 +11,11 @@ Summary: syuzhet is constructed to guide the reader's attention and create speci
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 KNOWLEDGE TYPE: TACIT
+CORE: NR-3507 Narratee and Implied Reader
+TIER: Tier 3
+REASON: Focuses on reader interaction and engagement, aligning with narratee and implied reader.
+
+
 
 ---
 
