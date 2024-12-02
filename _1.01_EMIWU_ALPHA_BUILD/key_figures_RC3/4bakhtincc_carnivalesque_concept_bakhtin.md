@@ -11,6 +11,10 @@ Summary: Carnivalesque are moments in literature and culture where traditional h
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: TACIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Examines the carnivalesque as a narrative technique, aligning with semiotics.
+
 
 ---
 

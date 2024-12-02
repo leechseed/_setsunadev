@@ -11,7 +11,13 @@ Summary: Marie-Laure Ryan's *Narrative as a Cognitive Construct* framework views
 ELEMENT: RHETORIC
 PROPERTY: INTERTEXTUALITY
 KNOWLEDGE TYPE: TACIT
+CORE: HN-3701 Holistic Narrative Analysis
+TIER: Tier 5
+REASON: Approaches narrative from a cognitive perspective, combining various elements for holistic analysis.
+
+
 ---
+
 
 - [1. Title: **Ryan's Narrative as a Cognitive Construct Framework**](#1-title-ryans-narrative-as-a-cognitive-construct-framework)
 - [2. Key Concepts](#2-key-concepts)

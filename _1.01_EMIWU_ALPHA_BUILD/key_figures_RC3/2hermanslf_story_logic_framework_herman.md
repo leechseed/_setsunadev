@@ -11,6 +11,11 @@ Summary: Story logic are the underlying principles that govern the organization 
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: EXPLICIT
+CORE: DM-3503 Diegesis and Mimesis
+TIER: Tier 3
+REASON: Explores the logic of storytelling, fitting within diegesis and mimesis.
+
+
 ---
 
 - [1. **Herman's Story Logic Framework**](#1-hermans-story-logic-framework)

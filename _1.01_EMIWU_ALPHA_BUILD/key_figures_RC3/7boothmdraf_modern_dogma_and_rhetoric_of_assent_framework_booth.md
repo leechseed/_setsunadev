@@ -10,6 +10,9 @@ Summary: "Rhetoric in narrative is used to persuade and how readers and audience
 ELEMENT: RHETORIC
 PROPERTY: INTERTEXTUALITY
 KNOWLEDGE TYPE: TACIT
+CORE: NA-3402 Narration and Narrator Analysis
+TIER: Tier 2
+REASON: Examines the rhetorical aspects of narration in modern dogma, aligning with narration and narrator analysis.
 ---
 
 - [1. Title: **Booth's Modern Dogma and Rhetoric of Assent Framework**](#1-title-booths-modern-dogma-and-rhetoric-of-assent-framework)

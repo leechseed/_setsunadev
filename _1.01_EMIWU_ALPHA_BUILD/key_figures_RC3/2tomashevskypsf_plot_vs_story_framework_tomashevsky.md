@@ -10,6 +10,11 @@ Prima-Forma:
 Summary: "Narrative is split between two concepts: fabula and sjuzhet."
 ELEMENT: STRUCTURE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+TIER: Tier 2
+REASON: Differentiates between plot and story elements, fitting into "Story vs. Discourse".
+
+
 ---
 
 - [1. **Tomashevsky's Plot vs. Story Framework**](#1-tomashevskys-plot-vs-story-framework)

@@ -11,6 +11,9 @@ ELEMENT: RHETORIC
 PROPERTY: SEMIOTICS
 TYPE: THEME
 KNOWLEDGE TYPE: TACIT
+CORE: FM-3506 Function and Motif Analysis
+TIER: Tier 3
+REASON: Analyzes thematic and poetic elements in narratives, aligning with function and motif analysis.
 ---
 
 - [1. Title: **Tomashevsky's Thematics and Poetics Framework**](#1-title-tomashevskys-thematics-and-poetics-framework)

@@ -9,6 +9,9 @@ Prima-Forma:
 Summary: The manipulation of time exists either temporally or spatially.
 ELEMENT: TIME
 KNOWLEDGE TYPE: TACIT
+CORE: TT-3404 Time and Temporality
+TIER: Tier 2
+REASON: Focuses on how time and space are managed within narratives, aligning with "Time and Temporality".
 ---
 - [1. Title: Chatman's Time and Space in Narrative Framework](#1-title-chatmans-time-and-space-in-narrative-framework)
 - [2. Key Concepts](#2-key-concepts)

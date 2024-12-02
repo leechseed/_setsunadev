@@ -11,6 +11,10 @@ Summary: Dynamic Genre occurs in modern mediums characterized by its openness to
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: TACIT
+CORE: GT-3505 Genre and Narrative Typology
+TIER: Tier 3
+REASON: Classifies novels as dynamic genres, aligning with genre and narrative typology.
+
 
 
 ---

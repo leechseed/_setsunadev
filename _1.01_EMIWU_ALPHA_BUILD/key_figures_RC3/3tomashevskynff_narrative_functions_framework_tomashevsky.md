@@ -13,6 +13,11 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: MOTIF
 KNOWLEDGE TYPE: EXPLICIT
+CORE: FM-3506 Function and Motif Analysis
+TIER: Tier 3
+REASON: Focuses on narrative functions that advance the plot, aligning with function and motif analysis.
+
+
 ---
 - [1. Title: **Tomashevsky's Narrative Functions Framework**](#1-title-tomashevskys-narrative-functions-framework)
 - [2. Key Concepts](#2-key-concepts)

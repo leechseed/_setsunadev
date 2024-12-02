@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: The creation of a believable and coherent fictional world is a rhetorical act, designed to immerse ther eader and make the narrative's events and characters convincing.
 ELEMENT: SPACE
 KNOWLEDGE TYPE: TACIT
+CORE: NA-3402 Narration and Narrator Analysis
+TIER: Tier 2
+REASON: Analyzes the rhetoric used in constructing fictional worlds, fitting into narration and narrator analysis.
+
+
 ---
 
 - [1. Title: **Booth's Rhetoric of Fictional Worlds Model**](#1-title-booths-rhetoric-of-fictional-worlds-model)

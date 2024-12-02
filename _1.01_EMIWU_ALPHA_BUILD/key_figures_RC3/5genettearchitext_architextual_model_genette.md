@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: 'The 3 overarching set of generic conventions or expectations that influence how a reader interprets text. '
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: TACIT
+CORE: INT-3502 Intertextuality
+TIER: Tier 3
+REASON: Studies architextual relations between texts, aligning with intertextuality.
+
+
 ---
 
 - [1. **Title: Genette's Architextual Model**](#1-title-genettes-architextual-model)

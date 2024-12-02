@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: 'Narrative Communication highlights the complext relationship between various agents involved in creation and reception of the narrative. These agents are: real author, implied author, narrator, narratee, implied reader, and real reader.'
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: TACIT
+CORE: NA-3402 Narration and Narrator Analysis
+TIER: Tier 2
+REASON: Focuses on the communication aspects of narration, fitting within "Narration and Narrator Analysis".
+
+
 ---
 - [1. **Title: Chatman's Narrative Communication Model**](#1-title-chatmans-narrative-communication-model)
 - [2. **Key Concepts**](#2-key-concepts)

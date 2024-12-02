@@ -10,6 +10,11 @@ Prima-Forma:
 Summary: "Wayne C. Booth's *Readers Role* framework highlights the active role  of the reader in shaping a narrative's meaning through a collaborative process  with the implied author. This interaction allows readers to bring their own experiences  to the text, influencing interpretation and emphasizing the dynamic nature of  meaning-making in literature."
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: TACIT
+CORE: NR-3507 Narratee and Implied Reader
+TIER: Tier 3
+REASON: Analyzes the role of the reader within narratives, fitting within "Narratee and Implied Reader".
+
+
 ---
 - [1. **Title: Booth's Reader's Role Framework**](#1-title-booths-readers-role-framework)
 - [2. **Key Concepts**](#2-key-concepts)

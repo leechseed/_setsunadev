@@ -13,6 +13,11 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: STRUCTURE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NS-3301 Narrative Structure
+TIER: Tier 1
+REASON: Analyzes narrative patterns and rhythms, fitting within "Narrative Structure".
+
+
 ---
 - [1. Title: **Forster's Pattern and Rhythm Framework**](#1-title-forsters-pattern-and-rhythm-framework)
 - [2. Key Concepts](#2-key-concepts)

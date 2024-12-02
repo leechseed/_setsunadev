@@ -12,6 +12,9 @@ ELEMENT: RHETORIC
 PROPERTY: SZ CODES
 TYPE: HERMENEUTIC CODE
 KNOWLEDGE TYPE: TACIT
+CORE: NR-3507 Narratee and Implied Reader
+TIER: Tier 3
+REASON: Examines narrative gaps and how they engage the reader, fitting within "Narratee and Implied Reader".
 ---
 
 - [1. Title: **Abbott's Narrative Gaps and Reader Involvement Framework**](#1-title-abbotts-narrative-gaps-and-reader-involvement-framework)

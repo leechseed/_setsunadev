@@ -12,6 +12,11 @@ ELEMENT: RHETORIC
 PROPERTY: GENRE CODE
 TYPE: TROPAL CODE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NLE-3501 Narrative Levels and Embedding
+TIER: Tier 3
+REASON: Categorizes key narrative elements, fitting within narrative levels and embedding.
+
+
 ---
 - [1. Title: **Genette's Five Key Narrative Categories Framework**](#1-title-genettes-five-key-narrative-categories-framework)
 - [2. Key Concepts](#2-key-concepts)

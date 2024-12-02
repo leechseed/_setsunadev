@@ -9,6 +9,11 @@ Prima-Forma:
 Summary: 'Focalization is the concept that destinguishes between agents who manipulate narrative and agents who are manipulated and participate in the narrative: focalizer and focalized.'
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
+CORE: FO-3403 Focalization
+TIER: Tier 2
+REASON: Focuses on the narrative perspective and focalization, aligning with the "Focalization" category.
+
+
 ---
 
 - [1. **Title: Bal's Focalization Framework**](#1-title-bals-focalization-framework)

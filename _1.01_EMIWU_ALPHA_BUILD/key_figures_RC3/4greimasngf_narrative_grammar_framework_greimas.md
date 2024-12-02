@@ -10,6 +10,11 @@ Summary: Narratives have a deep structure that can be analyzed using similar pri
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Examines the grammatical structures of narratives, aligning with semiotics.
+
+
 ---
 
 - [1. **Greimas's Narrative Grammar Framework**](#1-greimass-narrative-grammar-framework)

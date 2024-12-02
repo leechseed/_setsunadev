@@ -11,6 +11,11 @@ ELEMENT: RHETORIC
 PROPERTY: NARRATIVE CODE
 TYPE: HERMENEUTIC CODE
 KNOWLEDGE TYPE: TACIT
+CORE: CL-3406 Narrative Coherence and Logic
+TIER: Tier 2
+REASON: Studies narrative coherence and logical structures, aligning with narrative coherence and logic.
+
+
 ---
 
 - [1. Title: **Brooks's Narrative as a Rhetorical Structure Framework**](#1-title-brookss-narrative-as-a-rhetorical-structure-framework)

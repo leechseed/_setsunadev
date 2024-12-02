@@ -11,6 +11,10 @@ Summary: Realism seeks to depict life as it is, fantasy allows for the creation 
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: TACIT
+CORE: GT-3505 Genre and Narrative Typology
+TIER: Tier 3
+REASON: Differentiates between fantasy and realism, aligning with genre and narrative typology.
+
 
 ---
 

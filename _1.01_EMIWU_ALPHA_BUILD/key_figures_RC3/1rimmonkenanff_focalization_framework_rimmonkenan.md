@@ -9,6 +9,9 @@ Prima-Forma:
 Summary: The perspective through which a narrative is presented, focusing on who sees or perceives the events within the story.
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
+CORE: FO-3403 Focalization
+TIER: Tier 2
+REASON: Focuses on the narrative perspective and focalization, aligning with the "Focalization" category.
 ---
 
 - [1. **Title: Rimmon-Kenan's Focalization Framework**](#1-title-rimmon-kenans-focalization-framework)

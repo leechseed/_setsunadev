@@ -13,6 +13,9 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: TEXT
 KNOWLEDGE TYPE: TACIT
+CORE: TT-3404 Time and Temporality
+TIER: Tier 2
+REASON: Focuses on the structuring of time within narratives, fitting into "Time and Temporality".
 ---
 
 - [1. Title: **Barthes's Pleasure of the Text Framework**](#1-title-barthess-pleasure-of-the-text-framework)

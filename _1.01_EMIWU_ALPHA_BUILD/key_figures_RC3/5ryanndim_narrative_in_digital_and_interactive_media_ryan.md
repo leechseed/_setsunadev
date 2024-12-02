@@ -11,6 +11,9 @@ Summary: Marie-Laure Ryan's *Narrative in Digital and Interactive Media* framewo
 ELEMENT: RHETORIC
 PROPERTY: INTERTEXTUALITY
 KNOWLEDGE TYPE: TACIT
+CORE: TN-3602 Transmedia Narratology
+TIER: Tier 5
+REASON: Studies narrative across digital and interactive media platforms, aligning with transmedia narratology.
 ---
 
 - [1. Title: **Ryan's Narrative in Digital and Interactive Media Framework**](#1-title-ryans-narrative-in-digital-and-interactive-media-framework)

@@ -11,6 +11,9 @@ ELEMENT: RHETORIC
 PROPERTY: SZ CODES
 TYPE: PROAIRETIC CODE
 KNOWLEDGE TYPE: TACIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Analyzes the use of irony as a rhetorical device in narratives, aligning with semiotics.
 ---
 
 - [1. Title: **Booth's Rhetoric of Irony Framework**](#1-title-booths-rhetoric-of-irony-framework)

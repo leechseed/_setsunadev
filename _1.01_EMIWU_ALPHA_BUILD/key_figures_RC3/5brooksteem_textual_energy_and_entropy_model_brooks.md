@@ -11,6 +11,11 @@ ELEMENT: STRUCTURE
 PROPERTY: FUNCTION
 TYPE: RESULTATIVE
 KNOWLEDGE TYPE: EXPLICIT
+CORE: CL-3406 Narrative Coherence and Logic
+TIER: Tier 2
+REASON: Examines narrative coherence through the lens of energy and entropy, aligning with narrative coherence and logic.
+
+
 ---
 
 - [1. **Brooks's Textual Energy and Entropy Model**](#1-brookss-textual-energy-and-entropy-model)

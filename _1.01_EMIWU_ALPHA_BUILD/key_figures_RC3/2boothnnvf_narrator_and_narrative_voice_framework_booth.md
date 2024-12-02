@@ -9,6 +9,10 @@ Prima-Forma:
 Summary: 'Narrative voice affects the reader''s interpretation of the story: reliable and unreliable narrator.'
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NV-3405 Narrative Voice and Point of View
+TIER: Tier 2
+REASON: Directly examines the narrator's voice and narrative perspective, fitting within "Narrative Voice and Point of View".
+
 ---
 
 - [1. **Title: Booth's Narrator and Narrative Voice Framework**](#1-title-booths-narrator-and-narrative-voice-framework)

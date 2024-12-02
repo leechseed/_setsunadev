@@ -10,7 +10,13 @@ Prima-Forma:
 Summary: E.M. Forster's *Flat and Round Characters* model distinguishes between flat characters, who are simple and unchanging, and round characters, who are complex and capable of growth. This distinction helps analyze character development in narratives and remains a foundational concept in literary studies.
 ELEMENT: CHARACTER
 KNOWLEDGE TYPE: EXPLICIT
+CORE: CH-3302 Characterization
+TIER: Tier 1
+REASON: Forster's model classifies characters based on their depth and complexity, fitting within "Characterization".
+
+
 ---
+
 - [1. **Title: Forster's Flat and Round Characters Model**](#1-title-forsters-flat-and-round-characters-model)
 - [2. **Key Concepts**](#2-key-concepts)
   - [2.1. **Flat Characters**](#21-flat-characters)

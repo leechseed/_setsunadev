@@ -13,6 +13,11 @@ PROPERTY: SEMIOTICS
 TYPE: SEMS
 SUBTYPE: VISUAL
 KNOWLEDGE TYPE: TACIT
+CORE: SN-3504 Semiotics of Narrative
+TIER: Tier 3
+REASON: Analyzes the use of the camera and imagery in narrative structures, aligning with semiotics.
+
+
 ---
 
 - [1. **Definition**:](#1-definition)

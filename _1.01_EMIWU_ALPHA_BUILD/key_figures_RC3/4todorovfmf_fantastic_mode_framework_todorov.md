@@ -11,6 +11,11 @@ Summary: Fantastic is a property of narrative that hesitates between the natural
 ELEMENT: STRUCTURE
 PROPERTY: FABULA
 KNOWLEDGE TYPE: TACIT
+CORE: GT-3505 Genre and Narrative Typology
+TIER: Tier 3
+REASON: Analyzes the fantastic genre, aligning with genre and narrative typology.
+
+
 ---
 
 - [1. Title: **Todorov's Fantastic Mode Framework**](#1-title-todorovs-fantastic-mode-framework)

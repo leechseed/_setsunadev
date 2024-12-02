@@ -12,6 +12,11 @@ Summary: "Chatmans Story vs. Discourse framework distinguishes between *story*  
 ELEMENT: STRUCTURE
 PROPERTY: SYUZHET
 KNOWLEDGE TYPE: EXPLICIT
+CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+TIER: Tier 2
+REASON: Differentiates between the raw events of a story and how they are presented, directly aligning with the "Story vs. Discourse" category.
+
+
 ---
 
 - [1. **Chatman's Story vs. Discourse Framework**](#1-chatmans-story-vs-discourse-framework)

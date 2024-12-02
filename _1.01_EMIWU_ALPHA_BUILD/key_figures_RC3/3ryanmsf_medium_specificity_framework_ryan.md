@@ -11,6 +11,11 @@ Summary: "Marie-Laure Ryan's *Medium Specificity* framework emphasizes that each
 ELEMENT: RHETORIC
 PROPERTY: INTERTEXTUALITY
 KNOWLEDGE TYPE: TACIT
+CORE: AS-3601 Advanced Semiotics and Symbolic Interpretation
+TIER: Tier 4
+REASON: Examines how the medium influences narrative interpretation, fitting into advanced semiotics.
+
+
 ---
 
 - [1. Title: **Ryan's Medium Specificity Framework**](#1-title-ryans-medium-specificity-framework)

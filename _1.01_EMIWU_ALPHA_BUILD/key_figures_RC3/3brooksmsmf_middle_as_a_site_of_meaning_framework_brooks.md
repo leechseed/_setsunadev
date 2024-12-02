@@ -11,6 +11,10 @@ ELEMENT: STRUCTURE
 PROPERTY: FUNCTION
 TYPE: PRINCIPAL
 KNOWLEDGE TYPE: EXPLICIT
+CORE: NS-3301 Narrative Structure
+TIER: Tier 1
+REASON: Analyzes the central part of narratives as a meaningful structure, fitting within "Narrative Structure".
+
 ---
 
 - [1. **Brooks's Middle as a Site of Meaning Framework**](#1-brookss-middle-as-a-site-of-meaning-framework)

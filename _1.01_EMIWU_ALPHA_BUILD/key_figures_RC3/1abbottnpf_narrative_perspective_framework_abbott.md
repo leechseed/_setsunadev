@@ -9,7 +9,11 @@ Prima-Forma:
 Summary: Focalization and Narrative Voice are two aspects crucial for understanding how stories are told and how they shape the reader's engagement with the narrative.
 ELEMENT: PERSPECTIVES
 KNOWLEDGE TYPE: EXPLICIT
-CORE: FO-3403_FOCALIZATION
+CORE: NV-3405 Narrative Voice and Point of View
+TIER: Tier 2
+REASON: This framework examines the perspectives from which a narrative is presented, focusing on the narrator's voice and the point of view, aligning with the "Narrative Voice and Point of View" category.
+
+
 ---
 
 - [1. **Title: Abbott's Narrative Perspective Framework**](#1-title-abbotts-narrative-perspective-framework)
