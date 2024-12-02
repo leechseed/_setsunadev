@@ -34,7 +34,10 @@ query_core_values = [
     "FM-3506 Function and Motif Analysis",  # Duplicate entries can be removed if necessary
     "SN-3504 Semiotics of Narrative",
     "HN-3701 Holistic Narrative Analysis",
-    ""
+    "NLE-3501 Narrative Levels and Embedding",
+    "PA-3303 Plot and Event Analysis",
+    "GT-3505 Genre and Narrative Typology",
+    
     # Add all other CORE values from your data here
     # ...
 ]

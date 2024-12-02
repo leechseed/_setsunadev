@@ -1,0 +1,903 @@
+2024-12-02 07:36:03,319 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,320 - INFO - [Dry Run] Would move: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,321 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,321 - INFO - [Dry Run] Would move: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,322 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,323 - INFO - [Dry Run] Would move: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,324 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,325 - INFO - [Dry Run] Would move: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,326 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,326 - INFO - [Dry Run] Would move: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,327 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509
+2024-12-02 07:36:03,327 - INFO - [Dry Run] Would move: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509
+2024-12-02 07:36:03,329 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401
+2024-12-02 07:36:03,329 - INFO - [Dry Run] Would move: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401
+2024-12-02 07:36:03,330 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,331 - INFO - [Dry Run] Would move: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,332 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,332 - INFO - [Dry Run] Would move: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,334 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,334 - INFO - [Dry Run] Would move: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,335 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,336 - INFO - [Dry Run] Would move: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,337 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,337 - INFO - [Dry Run] Would move: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,338 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403
+2024-12-02 07:36:03,338 - INFO - [Dry Run] Would move: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403
+2024-12-02 07:36:03,340 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,340 - INFO - [Dry Run] Would move: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,341 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,342 - INFO - [Dry Run] Would move: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,343 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,343 - INFO - [Dry Run] Would move: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,344 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,345 - INFO - [Dry Run] Would move: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,346 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,346 - INFO - [Dry Run] Would move: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,347 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,348 - INFO - [Dry Run] Would move: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,348 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,349 - INFO - [Dry Run] Would move: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,350 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,350 - INFO - [Dry Run] Would move: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,351 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,352 - INFO - [Dry Run] Would move: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405
+2024-12-02 07:36:03,353 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,353 - INFO - [Dry Run] Would move: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,354 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,354 - INFO - [Dry Run] Would move: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,356 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,356 - INFO - [Dry Run] Would move: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,357 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501
+2024-12-02 07:36:03,357 - INFO - [Dry Run] Would move: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501
+2024-12-02 07:36:03,358 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501
+2024-12-02 07:36:03,358 - INFO - [Dry Run] Would move: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501
+2024-12-02 07:36:03,360 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,360 - INFO - [Dry Run] Would move: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,361 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,361 - INFO - [Dry Run] Would move: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,362 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501
+2024-12-02 07:36:03,362 - INFO - [Dry Run] Would move: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501
+2024-12-02 07:36:03,364 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,364 - INFO - [Dry Run] Would move: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,365 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,365 - INFO - [Dry Run] Would move: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,367 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,367 - INFO - [Dry Run] Would move: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,368 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401
+2024-12-02 07:36:03,368 - INFO - [Dry Run] Would move: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401
+2024-12-02 07:36:03,369 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,369 - INFO - [Dry Run] Would move: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,370 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403
+2024-12-02 07:36:03,370 - INFO - [Dry Run] Would move: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403
+2024-12-02 07:36:03,372 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,372 - INFO - [Dry Run] Would move: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,373 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,373 - INFO - [Dry Run] Would move: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,374 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,375 - INFO - [Dry Run] Would move: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301
+2024-12-02 07:36:03,376 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303
+2024-12-02 07:36:03,376 - INFO - [Dry Run] Would move: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303
+2024-12-02 07:36:03,377 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303
+2024-12-02 07:36:03,377 - INFO - [Dry Run] Would move: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303
+2024-12-02 07:36:03,378 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403
+2024-12-02 07:36:03,379 - INFO - [Dry Run] Would move: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403
+2024-12-02 07:36:03,380 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,380 - INFO - [Dry Run] Would move: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,381 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,382 - INFO - [Dry Run] Would move: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,383 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,383 - INFO - [Dry Run] Would move: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,384 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601
+2024-12-02 07:36:03,384 - INFO - [Dry Run] Would move: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601
+2024-12-02 07:36:03,386 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,386 - INFO - [Dry Run] Would move: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,387 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,387 - INFO - [Dry Run] Would move: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,389 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,389 - INFO - [Dry Run] Would move: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,390 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,390 - INFO - [Dry Run] Would move: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,391 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,391 - INFO - [Dry Run] Would move: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,393 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406
+2024-12-02 07:36:03,393 - INFO - [Dry Run] Would move: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406
+2024-12-02 07:36:03,394 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,394 - INFO - [Dry Run] Would move: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,395 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,395 - INFO - [Dry Run] Would move: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,396 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508
+2024-12-02 07:36:03,397 - INFO - [Dry Run] Would move: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508
+2024-12-02 07:36:03,398 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,398 - INFO - [Dry Run] Would move: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,399 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,399 - INFO - [Dry Run] Would move: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,401 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502
+2024-12-02 07:36:03,401 - INFO - [Dry Run] Would move: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502
+2024-12-02 07:36:03,402 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601
+2024-12-02 07:36:03,402 - INFO - [Dry Run] Would move: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601
+2024-12-02 07:36:03,403 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,404 - INFO - [Dry Run] Would move: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,405 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,405 - INFO - [Dry Run] Would move: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,406 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,406 - INFO - [Dry Run] Would move: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505
+2024-12-02 07:36:03,408 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,408 - INFO - [Dry Run] Would move: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,408 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406
+2024-12-02 07:36:03,409 - INFO - [Dry Run] Would move: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406
+2024-12-02 07:36:03,410 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,410 - INFO - [Dry Run] Would move: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507
+2024-12-02 07:36:03,411 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502
+2024-12-02 07:36:03,411 - INFO - [Dry Run] Would move: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502
+2024-12-02 07:36:03,412 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,413 - INFO - [Dry Run] Would move: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,414 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,414 - INFO - [Dry Run] Would move: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404
+2024-12-02 07:36:03,415 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401
+2024-12-02 07:36:03,415 - INFO - [Dry Run] Would move: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401
+2024-12-02 07:36:03,416 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602
+2024-12-02 07:36:03,417 - INFO - [Dry Run] Would move: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602
+2024-12-02 07:36:03,418 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,418 - INFO - [Dry Run] Would move: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,419 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,419 - INFO - [Dry Run] Would move: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,421 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,421 - INFO - [Dry Run] Would move: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,422 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,422 - INFO - [Dry Run] Would move: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,423 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502
+2024-12-02 07:36:03,423 - INFO - [Dry Run] Would move: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502
+2024-12-02 07:36:03,425 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,425 - INFO - [Dry Run] Would move: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,426 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,426 - INFO - [Dry Run] Would move: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302
+2024-12-02 07:36:03,427 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702
+2024-12-02 07:36:03,427 - INFO - [Dry Run] Would move: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702
+2024-12-02 07:36:03,429 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,429 - INFO - [Dry Run] Would move: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,430 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,430 - INFO - [Dry Run] Would move: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,431 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,431 - INFO - [Dry Run] Would move: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,433 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,433 - INFO - [Dry Run] Would move: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506
+2024-12-02 07:36:03,434 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,434 - INFO - [Dry Run] Would move: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504
+2024-12-02 07:36:03,436 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,436 - INFO - [Dry Run] Would move: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701
+2024-12-02 07:36:03,437 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602
+2024-12-02 07:36:03,437 - INFO - [Dry Run] Would move: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602
+2024-12-02 07:36:03,439 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,439 - INFO - [Dry Run] Would move: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,440 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,440 - INFO - [Dry Run] Would move: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402
+2024-12-02 07:36:03,441 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:36:03,441 - INFO - [Dry Run] Would move: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503
+2024-12-02 07:42:41,406 - INFO - Processing file: 1abbottnpf_narrative_perspective_framework_abbott.md
+2024-12-02 07:42:41,406 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,406 - INFO - [Dry Run] Would move: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,408 - INFO - Processing file: 1bakhtindf_dialogism_framework_bakhtin.md
+2024-12-02 07:42:41,408 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,408 - INFO - [Dry Run] Would move: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,409 - INFO - Processing file: 1balnaf_narrative_agents_framework_bal.md
+2024-12-02 07:42:41,409 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,410 - INFO - [Dry Run] Would move: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,411 - INFO - Processing file: 1barthesncf_narrative_codes_framework_barthes.md
+2024-12-02 07:42:41,411 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,411 - INFO - [Dry Run] Would move: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,413 - INFO - Processing file: 1boothiam_implied_author_model_booth.md
+2024-12-02 07:42:41,413 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,413 - INFO - [Dry Run] Would move: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,414 - INFO - Processing file: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+2024-12-02 07:42:41,415 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-02 07:42:41,415 - INFO - [Dry Run] Would move: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-02 07:42:41,416 - INFO - Processing file: 1chatmansdf_story_vs_discourse_framework_chatman.md
+2024-12-02 07:42:41,416 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:41,416 - INFO - [Dry Run] Would move: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:41,418 - INFO - Processing file: 1forsterfrcm_flat_and_round_character_model_forster.md
+2024-12-02 07:42:41,418 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,418 - INFO - [Dry Run] Would move: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,419 - INFO - Processing file: 1greimassnsf_semionarrative_structure_framework_greimas.md
+2024-12-02 07:42:41,420 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,420 - INFO - [Dry Run] Would move: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,421 - INFO - Processing file: 1hermancnf_cognitive_narratology_framework_herman.md
+2024-12-02 07:42:41,421 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,421 - INFO - [Dry Run] Would move: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,423 - INFO - Processing file: 1propp31_narrative_functions_framework_propp.md
+2024-12-02 07:42:41,423 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,423 - INFO - [Dry Run] Would move: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,424 - INFO - Processing file: 1propp7_spheres_of_action_framework_propp.md
+2024-12-02 07:42:41,424 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,424 - INFO - [Dry Run] Would move: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,426 - INFO - Processing file: 1rimmonkenanff_focalization_framework_rimmonkenan.md
+2024-12-02 07:42:41,426 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:41,426 - INFO - [Dry Run] Would move: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:41,427 - INFO - Processing file: 1ryanif_immersion_framework_ryan.md
+2024-12-02 07:42:41,427 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,428 - INFO - [Dry Run] Would move: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,429 - INFO - Processing file: 1sternbergemf_expositional_modes_framework_sternberg.md
+2024-12-02 07:42:41,429 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,429 - INFO - [Dry Run] Would move: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,431 - INFO - Processing file: 1todorovnsm_narrative_syntax_model_todorov.md
+2024-12-02 07:42:41,431 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,431 - INFO - [Dry Run] Would move: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,432 - INFO - Processing file: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+2024-12-02 07:42:41,432 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,433 - INFO - [Dry Run] Would move: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,434 - INFO - Processing file: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+2024-12-02 07:42:41,434 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,434 - INFO - [Dry Run] Would move: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,435 - INFO - Processing file: 2bakhtinhm_heteroglossia_model_bakhtin.md
+2024-12-02 07:42:41,435 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,436 - INFO - [Dry Run] Would move: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,437 - INFO - Processing file: 2baltsf_temporal_structures_framework_bal.md
+2024-12-02 07:42:41,437 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,437 - INFO - [Dry Run] Would move: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,439 - INFO - Processing file: 2barthesptf_pleasure_of_the_text_framework_barthes.md
+2024-12-02 07:42:41,439 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,439 - INFO - [Dry Run] Would move: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,441 - INFO - Processing file: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+2024-12-02 07:42:41,441 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,441 - INFO - [Dry Run] Would move: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:41,442 - INFO - Processing file: 2brooksntf_narrative_temporality_framework_brooks.md
+2024-12-02 07:42:41,442 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,442 - INFO - [Dry Run] Would move: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,444 - INFO - Processing file: 2chatmanncm_narrative_communication_model_chatman.md
+2024-12-02 07:42:41,444 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,444 - INFO - [Dry Run] Would move: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,445 - INFO - Processing file: 2forsterprf_pattern_and_rhythm_framework_forster.md
+2024-12-02 07:42:41,445 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,445 - INFO - [Dry Run] Would move: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,447 - INFO - Processing file: 2genette3nif_three_narrative_instances_framework_genette.md
+2024-12-02 07:42:41,447 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:41,447 - INFO - [Dry Run] Would move: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:41,448 - INFO - Processing file: 2genette5key_five_key_narrative_categories_framework_genette.md
+2024-12-02 07:42:41,448 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:41,448 - INFO - [Dry Run] Would move: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:41,450 - INFO - Processing file: 2greimasssm_semiotic_square_model_greimas.md
+2024-12-02 07:42:41,450 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,450 - INFO - [Dry Run] Would move: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,451 - INFO - Processing file: 2hermanslf_story_logic_framework_herman.md
+2024-12-02 07:42:41,451 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,451 - INFO - [Dry Run] Would move: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,453 - INFO - Processing file: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+2024-12-02 07:42:41,453 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:41,453 - INFO - [Dry Run] Would move: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:41,454 - INFO - Processing file: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+2024-12-02 07:42:41,455 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,455 - INFO - [Dry Run] Would move: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,456 - INFO - Processing file: 2sternbergtof_temporal_ordering_framework_sternberg.md
+2024-12-02 07:42:41,456 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,456 - INFO - [Dry Run] Would move: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,457 - INFO - Processing file: 2todorovsanf_deep_structures_framework_todorov.md
+2024-12-02 07:42:41,457 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,457 - INFO - [Dry Run] Would move: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,459 - INFO - Processing file: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+2024-12-02 07:42:41,459 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:41,459 - INFO - [Dry Run] Would move: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:41,460 - INFO - Processing file: 3bakhtincf_chronotope_framework_bakhtin.md
+2024-12-02 07:42:41,460 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,460 - INFO - [Dry Run] Would move: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,462 - INFO - Processing file: 3balff_focalization_framework_bal.md
+2024-12-02 07:42:41,462 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:41,462 - INFO - [Dry Run] Would move: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:41,463 - INFO - Processing file: 3barthesclf_camera_lucida_framework_barthes.md
+2024-12-02 07:42:41,464 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,464 - INFO - [Dry Run] Would move: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,465 - INFO - Processing file: 3boothsvf_showing_vs_telling_framework_booth.md
+2024-12-02 07:42:41,465 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,465 - INFO - [Dry Run] Would move: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,466 - INFO - Processing file: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+2024-12-02 07:42:41,466 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,467 - INFO - [Dry Run] Would move: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:41,468 - INFO - Processing file: 3chatmancef_character_and_event_framework_chatman.md
+2024-12-02 07:42:41,468 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:41,468 - INFO - [Dry Run] Would move: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:41,469 - INFO - Processing file: 3forsterpc_prophecy_concept_forster.md
+2024-12-02 07:42:41,470 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:41,470 - INFO - [Dry Run] Would move: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:41,471 - INFO - Processing file: 3genette3focalization_three_focalization_framework_genette.md
+2024-12-02 07:42:41,471 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:41,471 - INFO - [Dry Run] Would move: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:41,472 - INFO - Processing file: 3greimasam_actantial_model_greimas.md
+2024-12-02 07:42:41,472 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,473 - INFO - [Dry Run] Would move: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,474 - INFO - Processing file: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+2024-12-02 07:42:41,474 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,474 - INFO - [Dry Run] Would move: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,476 - INFO - Processing file: 3rimmonkenancf_charaterization_framework_rimmonkenan.md
+2024-12-02 07:42:41,476 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,476 - INFO - [Dry Run] Would move: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,477 - INFO - Processing file: 3ryanmsf_medium_specificity_framework_ryan.md
+2024-12-02 07:42:41,477 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:41,477 - INFO - [Dry Run] Would move: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:41,479 - INFO - Processing file: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+2024-12-02 07:42:41,479 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,479 - INFO - [Dry Run] Would move: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,480 - INFO - Processing file: 3todorovgenre_genres_as_structures_framework_todorov.md
+2024-12-02 07:42:41,480 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,481 - INFO - [Dry Run] Would move: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,482 - INFO - Processing file: 3tomashevskynff_narrative_functions_framework_tomashevsky.md
+2024-12-02 07:42:41,482 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,482 - INFO - [Dry Run] Would move: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,483 - INFO - Processing file: 4bakhtincc_carnivalesque_concept_bakhtin.md
+2024-12-02 07:42:41,483 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,484 - INFO - [Dry Run] Would move: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,485 - INFO - Processing file: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+2024-12-02 07:42:41,485 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,485 - INFO - [Dry Run] Would move: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,486 - INFO - Processing file: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+2024-12-02 07:42:41,486 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:41,486 - INFO - [Dry Run] Would move: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:41,488 - INFO - Processing file: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+2024-12-02 07:42:41,488 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,488 - INFO - [Dry Run] Would move: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,489 - INFO - Processing file: 4forsterfvrf_fantasy_vs_realism_framework_forster.md
+2024-12-02 07:42:41,489 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,489 - INFO - [Dry Run] Would move: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,490 - INFO - Processing file: 4genettemetalepsis_metalepsis_model_genette.md
+2024-12-02 07:42:41,491 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-02 07:42:41,491 - INFO - [Dry Run] Would move: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-02 07:42:41,492 - INFO - Processing file: 4greimasngf_narrative_grammar_framework_greimas.md
+2024-12-02 07:42:41,492 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,492 - INFO - [Dry Run] Would move: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,493 - INFO - Processing file: 4hermanetf_eventfulness_and_tellability_framework_herman.md
+2024-12-02 07:42:41,494 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,494 - INFO - [Dry Run] Would move: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,495 - INFO - Processing file: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+2024-12-02 07:42:41,495 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:41,495 - INFO - [Dry Run] Would move: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:41,497 - INFO - Processing file: 4ryanpwtf_possible_worlds_theory_framework_ryan.md
+2024-12-02 07:42:41,497 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:41,497 - INFO - [Dry Run] Would move: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:41,498 - INFO - Processing file: 4todorovfmf_fantastic_mode_framework_todorov.md
+2024-12-02 07:42:41,499 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,499 - INFO - [Dry Run] Would move: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,500 - INFO - Processing file: 4tomashevskyrim_reader_interaction_model_tomashevsky.md
+2024-12-02 07:42:41,500 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,500 - INFO - [Dry Run] Would move: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,501 - INFO - Processing file: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+2024-12-02 07:42:41,502 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,502 - INFO - [Dry Run] Would move: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:41,503 - INFO - Processing file: 5boothrrf_readers_role_framework_booth.md
+2024-12-02 07:42:41,503 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,503 - INFO - [Dry Run] Would move: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,504 - INFO - Processing file: 5brooksteem_textual_energy_and_entropy_model_brooks.md
+2024-12-02 07:42:41,504 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:41,505 - INFO - [Dry Run] Would move: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:41,506 - INFO - Processing file: 5forsterrrf_readers_role_framework_forster.md
+2024-12-02 07:42:41,506 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,506 - INFO - [Dry Run] Would move: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:41,507 - INFO - Processing file: 5genettearchitext_architextual_model_genette.md
+2024-12-02 07:42:41,507 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:41,507 - INFO - [Dry Run] Would move: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:41,509 - INFO - Processing file: 5greimasif_isotopy_framework_greimas.md
+2024-12-02 07:42:41,509 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,509 - INFO - [Dry Run] Would move: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,510 - INFO - Processing file: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+2024-12-02 07:42:41,510 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,510 - INFO - [Dry Run] Would move: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:41,512 - INFO - Processing file: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+2024-12-02 07:42:41,512 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:41,512 - INFO - [Dry Run] Would move: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:41,513 - INFO - Processing file: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+2024-12-02 07:42:41,513 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-02 07:42:41,514 - INFO - [Dry Run] Would move: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-02 07:42:41,515 - INFO - Processing file: 5todorovntf_narrative_transformation_framework_todorov.md
+2024-12-02 07:42:41,515 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,515 - INFO - [Dry Run] Would move: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,516 - INFO - Processing file: 5tomashevskytpf_thematics_framework_tomashevsky.md
+2024-12-02 07:42:41,516 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,517 - INFO - [Dry Run] Would move: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,518 - INFO - Processing file: 6bakhtinpf_polyphony_framework_bakhtin.md
+2024-12-02 07:42:41,518 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,518 - INFO - [Dry Run] Would move: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,520 - INFO - Processing file: 6boothrif_rhetoric_of_irony_framework_booth.md
+2024-12-02 07:42:41,520 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,520 - INFO - [Dry Run] Would move: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,521 - INFO - Processing file: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+2024-12-02 07:42:41,521 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:41,521 - INFO - [Dry Run] Would move: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:41,522 - INFO - Processing file: 6greimasmf_modalities_framework_greimas.md
+2024-12-02 07:42:41,523 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,523 - INFO - [Dry Run] Would move: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,524 - INFO - Processing file: 6hermancmrf_characterization_and_mind_representation_framework_herman.md
+2024-12-02 07:42:41,524 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,524 - INFO - [Dry Run] Would move: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:41,526 - INFO - Processing file: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+2024-12-02 07:42:41,526 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-02 07:42:41,526 - INFO - [Dry Run] Would move: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-02 07:42:41,527 - INFO - Processing file: 6tomashevksydm_defamiliarization_model_tomashevsky.md
+2024-12-02 07:42:41,527 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,528 - INFO - [Dry Run] Would move: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,529 - INFO - Processing file: 7bakhtinsgf_speech_genres_framework_bakhtin.md
+2024-12-02 07:42:41,529 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,529 - INFO - [Dry Run] Would move: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,530 - INFO - Processing file: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+2024-12-02 07:42:41,530 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,531 - INFO - [Dry Run] Would move: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,532 - INFO - Processing file: 7brooksmif_melodramatic_imagination_framework_brooks.md
+2024-12-02 07:42:41,532 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,532 - INFO - [Dry Run] Would move: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:41,534 - INFO - Processing file: 7greimass_greimasian_semiotics_greimas.md
+2024-12-02 07:42:41,534 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,534 - INFO - [Dry Run] Would move: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:41,535 - INFO - Processing file: 7hermannwf_narrative_worlds_framework_herman.md
+2024-12-02 07:42:41,535 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,535 - INFO - [Dry Run] Would move: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:41,537 - INFO - Processing file: 7ryantsf_role_of_technology_in_storytelling_framework_.md
+2024-12-02 07:42:41,537 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-02 07:42:41,537 - INFO - [Dry Run] Would move: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-02 07:42:41,538 - INFO - Processing file: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+2024-12-02 07:42:41,538 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,538 - INFO - [Dry Run] Would move: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,539 - INFO - Processing file: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+2024-12-02 07:42:41,539 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,539 - INFO - [Dry Run] Would move: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:41,541 - INFO - Processing file: 8ryannif_narrative_and_identity_framework_ryan.md
+2024-12-02 07:42:41,541 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:41,541 - INFO - [Dry Run] Would move: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,457 - INFO - Processing file: 1abbottnpf_narrative_perspective_framework_abbott.md
+2024-12-02 07:42:55,458 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,458 - INFO - [Dry Run] Would move: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,459 - INFO - Processing file: 1bakhtindf_dialogism_framework_bakhtin.md
+2024-12-02 07:42:55,459 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,459 - INFO - [Dry Run] Would move: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,461 - INFO - Processing file: 1balnaf_narrative_agents_framework_bal.md
+2024-12-02 07:42:55,461 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,461 - INFO - [Dry Run] Would move: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,462 - INFO - Processing file: 1barthesncf_narrative_codes_framework_barthes.md
+2024-12-02 07:42:55,462 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,463 - INFO - [Dry Run] Would move: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,463 - INFO - Processing file: 1boothiam_implied_author_model_booth.md
+2024-12-02 07:42:55,464 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,464 - INFO - [Dry Run] Would move: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,465 - INFO - Processing file: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+2024-12-02 07:42:55,465 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-02 07:42:55,465 - INFO - [Dry Run] Would move: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-02 07:42:55,467 - INFO - Processing file: 1chatmansdf_story_vs_discourse_framework_chatman.md
+2024-12-02 07:42:55,467 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:55,467 - INFO - [Dry Run] Would move: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:55,469 - INFO - Processing file: 1forsterfrcm_flat_and_round_character_model_forster.md
+2024-12-02 07:42:55,469 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,469 - INFO - [Dry Run] Would move: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,471 - INFO - Processing file: 1greimassnsf_semionarrative_structure_framework_greimas.md
+2024-12-02 07:42:55,471 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,471 - INFO - [Dry Run] Would move: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,472 - INFO - Processing file: 1hermancnf_cognitive_narratology_framework_herman.md
+2024-12-02 07:42:55,472 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,472 - INFO - [Dry Run] Would move: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,474 - INFO - Processing file: 1propp31_narrative_functions_framework_propp.md
+2024-12-02 07:42:55,474 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,474 - INFO - [Dry Run] Would move: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,475 - INFO - Processing file: 1propp7_spheres_of_action_framework_propp.md
+2024-12-02 07:42:55,475 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,476 - INFO - [Dry Run] Would move: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,477 - INFO - Processing file: 1rimmonkenanff_focalization_framework_rimmonkenan.md
+2024-12-02 07:42:55,477 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:55,477 - INFO - [Dry Run] Would move: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:55,478 - INFO - Processing file: 1ryanif_immersion_framework_ryan.md
+2024-12-02 07:42:55,478 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,479 - INFO - [Dry Run] Would move: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,480 - INFO - Processing file: 1sternbergemf_expositional_modes_framework_sternberg.md
+2024-12-02 07:42:55,480 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,480 - INFO - [Dry Run] Would move: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,482 - INFO - Processing file: 1todorovnsm_narrative_syntax_model_todorov.md
+2024-12-02 07:42:55,482 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,482 - INFO - [Dry Run] Would move: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,483 - INFO - Processing file: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+2024-12-02 07:42:55,483 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,483 - INFO - [Dry Run] Would move: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,485 - INFO - Processing file: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+2024-12-02 07:42:55,485 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,485 - INFO - [Dry Run] Would move: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,486 - INFO - Processing file: 2bakhtinhm_heteroglossia_model_bakhtin.md
+2024-12-02 07:42:55,487 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,487 - INFO - [Dry Run] Would move: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,488 - INFO - Processing file: 2baltsf_temporal_structures_framework_bal.md
+2024-12-02 07:42:55,488 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,488 - INFO - [Dry Run] Would move: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,489 - INFO - Processing file: 2barthesptf_pleasure_of_the_text_framework_barthes.md
+2024-12-02 07:42:55,489 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,490 - INFO - [Dry Run] Would move: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,491 - INFO - Processing file: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+2024-12-02 07:42:55,491 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,491 - INFO - [Dry Run] Would move: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:42:55,492 - INFO - Processing file: 2brooksntf_narrative_temporality_framework_brooks.md
+2024-12-02 07:42:55,492 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,492 - INFO - [Dry Run] Would move: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,494 - INFO - Processing file: 2chatmanncm_narrative_communication_model_chatman.md
+2024-12-02 07:42:55,494 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,494 - INFO - [Dry Run] Would move: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,495 - INFO - Processing file: 2forsterprf_pattern_and_rhythm_framework_forster.md
+2024-12-02 07:42:55,495 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,495 - INFO - [Dry Run] Would move: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,496 - INFO - Processing file: 2genette3nif_three_narrative_instances_framework_genette.md
+2024-12-02 07:42:55,496 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:55,497 - INFO - [Dry Run] Would move: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:55,498 - INFO - Processing file: 2genette5key_five_key_narrative_categories_framework_genette.md
+2024-12-02 07:42:55,498 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:55,498 - INFO - [Dry Run] Would move: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:55,500 - INFO - Processing file: 2greimasssm_semiotic_square_model_greimas.md
+2024-12-02 07:42:55,500 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,500 - INFO - [Dry Run] Would move: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,501 - INFO - Processing file: 2hermanslf_story_logic_framework_herman.md
+2024-12-02 07:42:55,501 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,501 - INFO - [Dry Run] Would move: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,503 - INFO - Processing file: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+2024-12-02 07:42:55,503 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:55,503 - INFO - [Dry Run] Would move: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:42:55,505 - INFO - Processing file: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+2024-12-02 07:42:55,505 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,505 - INFO - [Dry Run] Would move: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,506 - INFO - Processing file: 2sternbergtof_temporal_ordering_framework_sternberg.md
+2024-12-02 07:42:55,506 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,506 - INFO - [Dry Run] Would move: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,507 - INFO - Processing file: 2todorovsanf_deep_structures_framework_todorov.md
+2024-12-02 07:42:55,507 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,508 - INFO - [Dry Run] Would move: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,509 - INFO - Processing file: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+2024-12-02 07:42:55,509 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:55,509 - INFO - [Dry Run] Would move: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:55,510 - INFO - Processing file: 3bakhtincf_chronotope_framework_bakhtin.md
+2024-12-02 07:42:55,510 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,510 - INFO - [Dry Run] Would move: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,512 - INFO - Processing file: 3balff_focalization_framework_bal.md
+2024-12-02 07:42:55,512 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:55,512 - INFO - [Dry Run] Would move: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:55,513 - INFO - Processing file: 3barthesclf_camera_lucida_framework_barthes.md
+2024-12-02 07:42:55,513 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,513 - INFO - [Dry Run] Would move: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,515 - INFO - Processing file: 3boothsvf_showing_vs_telling_framework_booth.md
+2024-12-02 07:42:55,515 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,515 - INFO - [Dry Run] Would move: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,516 - INFO - Processing file: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+2024-12-02 07:42:55,516 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,517 - INFO - [Dry Run] Would move: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:42:55,518 - INFO - Processing file: 3chatmancef_character_and_event_framework_chatman.md
+2024-12-02 07:42:55,518 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:55,518 - INFO - [Dry Run] Would move: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:55,519 - INFO - Processing file: 3forsterpc_prophecy_concept_forster.md
+2024-12-02 07:42:55,519 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:55,520 - INFO - [Dry Run] Would move: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:42:55,521 - INFO - Processing file: 3genette3focalization_three_focalization_framework_genette.md
+2024-12-02 07:42:55,521 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:55,521 - INFO - [Dry Run] Would move: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:42:55,522 - INFO - Processing file: 3greimasam_actantial_model_greimas.md
+2024-12-02 07:42:55,522 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,523 - INFO - [Dry Run] Would move: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,524 - INFO - Processing file: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+2024-12-02 07:42:55,524 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,524 - INFO - [Dry Run] Would move: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,526 - INFO - Processing file: 3rimmonkenancf_charaterization_framework_rimmonkenan.md
+2024-12-02 07:42:55,526 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,526 - INFO - [Dry Run] Would move: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,527 - INFO - Processing file: 3ryanmsf_medium_specificity_framework_ryan.md
+2024-12-02 07:42:55,527 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:55,527 - INFO - [Dry Run] Would move: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:55,529 - INFO - Processing file: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+2024-12-02 07:42:55,529 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,529 - INFO - [Dry Run] Would move: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,530 - INFO - Processing file: 3todorovgenre_genres_as_structures_framework_todorov.md
+2024-12-02 07:42:55,530 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,530 - INFO - [Dry Run] Would move: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,532 - INFO - Processing file: 3tomashevskynff_narrative_functions_framework_tomashevsky.md
+2024-12-02 07:42:55,532 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,532 - INFO - [Dry Run] Would move: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,533 - INFO - Processing file: 4bakhtincc_carnivalesque_concept_bakhtin.md
+2024-12-02 07:42:55,533 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,533 - INFO - [Dry Run] Would move: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,535 - INFO - Processing file: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+2024-12-02 07:42:55,535 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,535 - INFO - [Dry Run] Would move: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,536 - INFO - Processing file: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+2024-12-02 07:42:55,536 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:55,537 - INFO - [Dry Run] Would move: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:55,538 - INFO - Processing file: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+2024-12-02 07:42:55,538 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,538 - INFO - [Dry Run] Would move: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,539 - INFO - Processing file: 4forsterfvrf_fantasy_vs_realism_framework_forster.md
+2024-12-02 07:42:55,539 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,539 - INFO - [Dry Run] Would move: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,541 - INFO - Processing file: 4genettemetalepsis_metalepsis_model_genette.md
+2024-12-02 07:42:55,541 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-02 07:42:55,541 - INFO - [Dry Run] Would move: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-02 07:42:55,542 - INFO - Processing file: 4greimasngf_narrative_grammar_framework_greimas.md
+2024-12-02 07:42:55,542 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,542 - INFO - [Dry Run] Would move: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,543 - INFO - Processing file: 4hermanetf_eventfulness_and_tellability_framework_herman.md
+2024-12-02 07:42:55,543 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,544 - INFO - [Dry Run] Would move: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,545 - INFO - Processing file: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+2024-12-02 07:42:55,545 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:55,545 - INFO - [Dry Run] Would move: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:55,547 - INFO - Processing file: 4ryanpwtf_possible_worlds_theory_framework_ryan.md
+2024-12-02 07:42:55,547 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:55,547 - INFO - [Dry Run] Would move: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:42:55,548 - INFO - Processing file: 4todorovfmf_fantastic_mode_framework_todorov.md
+2024-12-02 07:42:55,548 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,548 - INFO - [Dry Run] Would move: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,550 - INFO - Processing file: 4tomashevskyrim_reader_interaction_model_tomashevsky.md
+2024-12-02 07:42:55,550 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,550 - INFO - [Dry Run] Would move: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,551 - INFO - Processing file: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+2024-12-02 07:42:55,551 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,551 - INFO - [Dry Run] Would move: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:42:55,553 - INFO - Processing file: 5boothrrf_readers_role_framework_booth.md
+2024-12-02 07:42:55,553 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,553 - INFO - [Dry Run] Would move: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,554 - INFO - Processing file: 5brooksteem_textual_energy_and_entropy_model_brooks.md
+2024-12-02 07:42:55,554 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:55,554 - INFO - [Dry Run] Would move: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:42:55,555 - INFO - Processing file: 5forsterrrf_readers_role_framework_forster.md
+2024-12-02 07:42:55,556 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,556 - INFO - [Dry Run] Would move: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:42:55,557 - INFO - Processing file: 5genettearchitext_architextual_model_genette.md
+2024-12-02 07:42:55,557 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:55,557 - INFO - [Dry Run] Would move: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:55,558 - INFO - Processing file: 5greimasif_isotopy_framework_greimas.md
+2024-12-02 07:42:55,559 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,559 - INFO - [Dry Run] Would move: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,560 - INFO - Processing file: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+2024-12-02 07:42:55,560 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,560 - INFO - [Dry Run] Would move: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:42:55,561 - INFO - Processing file: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+2024-12-02 07:42:55,561 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:55,561 - INFO - [Dry Run] Would move: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:42:55,563 - INFO - Processing file: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+2024-12-02 07:42:55,563 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-02 07:42:55,563 - INFO - [Dry Run] Would move: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-02 07:42:55,565 - INFO - Processing file: 5todorovntf_narrative_transformation_framework_todorov.md
+2024-12-02 07:42:55,565 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,565 - INFO - [Dry Run] Would move: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,566 - INFO - Processing file: 5tomashevskytpf_thematics_framework_tomashevsky.md
+2024-12-02 07:42:55,566 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,566 - INFO - [Dry Run] Would move: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,568 - INFO - Processing file: 6bakhtinpf_polyphony_framework_bakhtin.md
+2024-12-02 07:42:55,568 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,568 - INFO - [Dry Run] Would move: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,569 - INFO - Processing file: 6boothrif_rhetoric_of_irony_framework_booth.md
+2024-12-02 07:42:55,570 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,570 - INFO - [Dry Run] Would move: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,571 - INFO - Processing file: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+2024-12-02 07:42:55,571 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:55,571 - INFO - [Dry Run] Would move: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:42:55,573 - INFO - Processing file: 6greimasmf_modalities_framework_greimas.md
+2024-12-02 07:42:55,573 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,573 - INFO - [Dry Run] Would move: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,574 - INFO - Processing file: 6hermancmrf_characterization_and_mind_representation_framework_herman.md
+2024-12-02 07:42:55,574 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,574 - INFO - [Dry Run] Would move: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:42:55,576 - INFO - Processing file: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+2024-12-02 07:42:55,576 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-02 07:42:55,576 - INFO - [Dry Run] Would move: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-02 07:42:55,577 - INFO - Processing file: 6tomashevksydm_defamiliarization_model_tomashevsky.md
+2024-12-02 07:42:55,578 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,578 - INFO - [Dry Run] Would move: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,579 - INFO - Processing file: 7bakhtinsgf_speech_genres_framework_bakhtin.md
+2024-12-02 07:42:55,579 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,579 - INFO - [Dry Run] Would move: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,581 - INFO - Processing file: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+2024-12-02 07:42:55,581 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,581 - INFO - [Dry Run] Would move: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,582 - INFO - Processing file: 7brooksmif_melodramatic_imagination_framework_brooks.md
+2024-12-02 07:42:55,582 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,582 - INFO - [Dry Run] Would move: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:42:55,584 - INFO - Processing file: 7greimass_greimasian_semiotics_greimas.md
+2024-12-02 07:42:55,584 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,584 - INFO - [Dry Run] Would move: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:42:55,585 - INFO - Processing file: 7hermannwf_narrative_worlds_framework_herman.md
+2024-12-02 07:42:55,585 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,585 - INFO - [Dry Run] Would move: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:42:55,587 - INFO - Processing file: 7ryantsf_role_of_technology_in_storytelling_framework_.md
+2024-12-02 07:42:55,587 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-02 07:42:55,587 - INFO - [Dry Run] Would move: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-02 07:42:55,588 - INFO - Processing file: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+2024-12-02 07:42:55,588 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,588 - INFO - [Dry Run] Would move: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,589 - INFO - Processing file: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+2024-12-02 07:42:55,589 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,590 - INFO - [Dry Run] Would move: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:42:55,591 - INFO - Processing file: 8ryannif_narrative_and_identity_framework_ryan.md
+2024-12-02 07:42:55,591 - INFO - [Dry Run] Would create directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:42:55,591 - INFO - [Dry Run] Would move: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,189 - INFO - Processing file: 1abbottnpf_narrative_perspective_framework_abbott.md
+2024-12-02 07:43:40,190 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:43:40,190 - INFO - Moved: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:43:40,192 - INFO - Processing file: 1bakhtindf_dialogism_framework_bakhtin.md
+2024-12-02 07:43:40,192 - INFO - Moved: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:43:40,194 - INFO - Processing file: 1balnaf_narrative_agents_framework_bal.md
+2024-12-02 07:43:40,194 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:43:40,195 - INFO - Moved: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:43:40,196 - INFO - Processing file: 1barthesncf_narrative_codes_framework_barthes.md
+2024-12-02 07:43:40,197 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,197 - INFO - Moved: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,198 - INFO - Processing file: 1boothiam_implied_author_model_booth.md
+2024-12-02 07:43:40,199 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,199 - INFO - Moved: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,201 - INFO - Processing file: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+2024-12-02 07:43:40,201 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-02 07:43:40,202 - INFO - Moved: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-02 07:43:40,203 - INFO - Processing file: 1chatmansdf_story_vs_discourse_framework_chatman.md
+2024-12-02 07:43:40,204 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:43:40,204 - INFO - Moved: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:43:40,206 - INFO - Processing file: 1forsterfrcm_flat_and_round_character_model_forster.md
+2024-12-02 07:43:40,206 - INFO - Moved: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:43:40,208 - INFO - Processing file: 1greimassnsf_semionarrative_structure_framework_greimas.md
+2024-12-02 07:43:40,208 - INFO - Moved: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,210 - INFO - Processing file: 1hermancnf_cognitive_narratology_framework_herman.md
+2024-12-02 07:43:40,210 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:43:40,211 - INFO - Moved: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:43:40,212 - INFO - Processing file: 1propp31_narrative_functions_framework_propp.md
+2024-12-02 07:43:40,212 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,213 - INFO - Moved: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,214 - INFO - Processing file: 1propp7_spheres_of_action_framework_propp.md
+2024-12-02 07:43:40,215 - INFO - Moved: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,216 - INFO - Processing file: 1rimmonkenanff_focalization_framework_rimmonkenan.md
+2024-12-02 07:43:40,217 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:43:40,217 - INFO - Moved: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:43:40,219 - INFO - Processing file: 1ryanif_immersion_framework_ryan.md
+2024-12-02 07:43:40,219 - INFO - Moved: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:43:40,220 - INFO - Processing file: 1sternbergemf_expositional_modes_framework_sternberg.md
+2024-12-02 07:43:40,221 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:43:40,221 - INFO - Moved: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:43:40,222 - INFO - Processing file: 1todorovnsm_narrative_syntax_model_todorov.md
+2024-12-02 07:43:40,223 - INFO - Moved: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:43:40,224 - INFO - Processing file: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+2024-12-02 07:43:40,225 - INFO - Moved: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,226 - INFO - Processing file: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+2024-12-02 07:43:40,226 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:43:40,227 - INFO - Moved: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:43:40,228 - INFO - Processing file: 2bakhtinhm_heteroglossia_model_bakhtin.md
+2024-12-02 07:43:40,229 - INFO - Moved: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,230 - INFO - Processing file: 2baltsf_temporal_structures_framework_bal.md
+2024-12-02 07:43:40,230 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,231 - INFO - Moved: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,232 - INFO - Processing file: 2barthesptf_pleasure_of_the_text_framework_barthes.md
+2024-12-02 07:43:40,233 - INFO - Moved: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,234 - INFO - Processing file: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+2024-12-02 07:43:40,235 - INFO - Moved: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-02 07:43:40,236 - INFO - Processing file: 2brooksntf_narrative_temporality_framework_brooks.md
+2024-12-02 07:43:40,236 - INFO - Moved: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,237 - INFO - Processing file: 2chatmanncm_narrative_communication_model_chatman.md
+2024-12-02 07:43:40,238 - INFO - Moved: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,239 - INFO - Processing file: 2forsterprf_pattern_and_rhythm_framework_forster.md
+2024-12-02 07:43:40,240 - INFO - Moved: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:43:40,241 - INFO - Processing file: 2genette3nif_three_narrative_instances_framework_genette.md
+2024-12-02 07:43:40,241 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:43:40,241 - INFO - Moved: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:43:40,243 - INFO - Processing file: 2genette5key_five_key_narrative_categories_framework_genette.md
+2024-12-02 07:43:40,244 - INFO - Moved: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:43:40,245 - INFO - Processing file: 2greimasssm_semiotic_square_model_greimas.md
+2024-12-02 07:43:40,246 - INFO - Moved: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,247 - INFO - Processing file: 2hermanslf_story_logic_framework_herman.md
+2024-12-02 07:43:40,247 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,248 - INFO - Moved: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,249 - INFO - Processing file: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+2024-12-02 07:43:40,249 - INFO - Moved: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-02 07:43:40,251 - INFO - Processing file: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+2024-12-02 07:43:40,251 - INFO - Moved: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:43:40,252 - INFO - Processing file: 2sternbergtof_temporal_ordering_framework_sternberg.md
+2024-12-02 07:43:40,253 - INFO - Moved: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,254 - INFO - Processing file: 2todorovsanf_deep_structures_framework_todorov.md
+2024-12-02 07:43:40,255 - INFO - Moved: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,256 - INFO - Processing file: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+2024-12-02 07:43:40,257 - INFO - Moved: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:43:40,258 - INFO - Processing file: 3bakhtincf_chronotope_framework_bakhtin.md
+2024-12-02 07:43:40,258 - INFO - Moved: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,259 - INFO - Processing file: 3balff_focalization_framework_bal.md
+2024-12-02 07:43:40,260 - INFO - Moved: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:43:40,261 - INFO - Processing file: 3barthesclf_camera_lucida_framework_barthes.md
+2024-12-02 07:43:40,262 - INFO - Moved: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,263 - INFO - Processing file: 3boothsvf_showing_vs_telling_framework_booth.md
+2024-12-02 07:43:40,263 - INFO - Moved: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,265 - INFO - Processing file: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+2024-12-02 07:43:40,265 - INFO - Moved: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-02 07:43:40,267 - INFO - Processing file: 3chatmancef_character_and_event_framework_chatman.md
+2024-12-02 07:43:40,267 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:43:40,267 - INFO - Moved: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:43:40,269 - INFO - Processing file: 3forsterpc_prophecy_concept_forster.md
+2024-12-02 07:43:40,270 - INFO - Moved: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-02 07:43:40,271 - INFO - Processing file: 3genette3focalization_three_focalization_framework_genette.md
+2024-12-02 07:43:40,271 - INFO - Moved: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-02 07:43:40,273 - INFO - Processing file: 3greimasam_actantial_model_greimas.md
+2024-12-02 07:43:40,273 - INFO - Moved: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,275 - INFO - Processing file: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+2024-12-02 07:43:40,275 - INFO - Moved: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:43:40,276 - INFO - Processing file: 3rimmonkenancf_charaterization_framework_rimmonkenan.md
+2024-12-02 07:43:40,277 - INFO - Moved: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:43:40,278 - INFO - Processing file: 3ryanmsf_medium_specificity_framework_ryan.md
+2024-12-02 07:43:40,278 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:43:40,279 - INFO - Moved: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:43:40,280 - INFO - Processing file: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+2024-12-02 07:43:40,281 - INFO - Moved: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,282 - INFO - Processing file: 3todorovgenre_genres_as_structures_framework_todorov.md
+2024-12-02 07:43:40,282 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:43:40,283 - INFO - Moved: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:43:40,284 - INFO - Processing file: 3tomashevskynff_narrative_functions_framework_tomashevsky.md
+2024-12-02 07:43:40,285 - INFO - Moved: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,286 - INFO - Processing file: 4bakhtincc_carnivalesque_concept_bakhtin.md
+2024-12-02 07:43:40,286 - INFO - Moved: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,288 - INFO - Processing file: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+2024-12-02 07:43:40,288 - INFO - Moved: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,289 - INFO - Processing file: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+2024-12-02 07:43:40,290 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:43:40,290 - INFO - Moved: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:43:40,291 - INFO - Processing file: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+2024-12-02 07:43:40,292 - INFO - Moved: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,293 - INFO - Processing file: 4forsterfvrf_fantasy_vs_realism_framework_forster.md
+2024-12-02 07:43:40,293 - INFO - Moved: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:43:40,294 - INFO - Processing file: 4genettemetalepsis_metalepsis_model_genette.md
+2024-12-02 07:43:40,294 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-02 07:43:40,295 - INFO - Moved: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-02 07:43:40,296 - INFO - Processing file: 4greimasngf_narrative_grammar_framework_greimas.md
+2024-12-02 07:43:40,296 - INFO - Moved: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,298 - INFO - Processing file: 4hermanetf_eventfulness_and_tellability_framework_herman.md
+2024-12-02 07:43:40,298 - INFO - Moved: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,300 - INFO - Processing file: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+2024-12-02 07:43:40,300 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:43:40,300 - INFO - Moved: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:43:40,302 - INFO - Processing file: 4ryanpwtf_possible_worlds_theory_framework_ryan.md
+2024-12-02 07:43:40,302 - INFO - Moved: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-02 07:43:40,304 - INFO - Processing file: 4todorovfmf_fantastic_mode_framework_todorov.md
+2024-12-02 07:43:40,304 - INFO - Moved: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:43:40,305 - INFO - Processing file: 4tomashevskyrim_reader_interaction_model_tomashevsky.md
+2024-12-02 07:43:40,306 - INFO - Moved: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:43:40,307 - INFO - Processing file: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+2024-12-02 07:43:40,308 - INFO - Moved: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-02 07:43:40,309 - INFO - Processing file: 5boothrrf_readers_role_framework_booth.md
+2024-12-02 07:43:40,310 - INFO - Moved: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:43:40,311 - INFO - Processing file: 5brooksteem_textual_energy_and_entropy_model_brooks.md
+2024-12-02 07:43:40,312 - INFO - Moved: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-02 07:43:40,313 - INFO - Processing file: 5forsterrrf_readers_role_framework_forster.md
+2024-12-02 07:43:40,314 - INFO - Moved: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-02 07:43:40,315 - INFO - Processing file: 5genettearchitext_architextual_model_genette.md
+2024-12-02 07:43:40,315 - INFO - Moved: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:43:40,317 - INFO - Processing file: 5greimasif_isotopy_framework_greimas.md
+2024-12-02 07:43:40,317 - INFO - Moved: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,319 - INFO - Processing file: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+2024-12-02 07:43:40,319 - INFO - Moved: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-02 07:43:40,320 - INFO - Processing file: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+2024-12-02 07:43:40,321 - INFO - Moved: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-02 07:43:40,322 - INFO - Processing file: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+2024-12-02 07:43:40,322 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-02 07:43:40,323 - INFO - Moved: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-02 07:43:40,324 - INFO - Processing file: 5todorovntf_narrative_transformation_framework_todorov.md
+2024-12-02 07:43:40,325 - INFO - Moved: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,326 - INFO - Processing file: 5tomashevskytpf_thematics_framework_tomashevsky.md
+2024-12-02 07:43:40,326 - INFO - Moved: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,327 - INFO - Processing file: 6bakhtinpf_polyphony_framework_bakhtin.md
+2024-12-02 07:43:40,328 - INFO - Moved: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,329 - INFO - Processing file: 6boothrif_rhetoric_of_irony_framework_booth.md
+2024-12-02 07:43:40,330 - INFO - Moved: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,331 - INFO - Processing file: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+2024-12-02 07:43:40,331 - INFO - Moved: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-02 07:43:40,333 - INFO - Processing file: 6greimasmf_modalities_framework_greimas.md
+2024-12-02 07:43:40,333 - INFO - Moved: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,334 - INFO - Processing file: 6hermancmrf_characterization_and_mind_representation_framework_herman.md
+2024-12-02 07:43:40,335 - INFO - Moved: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-02 07:43:40,336 - INFO - Processing file: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+2024-12-02 07:43:40,337 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-02 07:43:40,339 - INFO - Moved: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-02 07:43:40,340 - INFO - Processing file: 6tomashevksydm_defamiliarization_model_tomashevsky.md
+2024-12-02 07:43:40,341 - INFO - Moved: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,342 - INFO - Processing file: 7bakhtinsgf_speech_genres_framework_bakhtin.md
+2024-12-02 07:43:40,342 - INFO - Moved: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,344 - INFO - Processing file: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+2024-12-02 07:43:40,344 - INFO - Moved: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,346 - INFO - Processing file: 7brooksmif_melodramatic_imagination_framework_brooks.md
+2024-12-02 07:43:40,346 - INFO - Moved: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-02 07:43:40,347 - INFO - Processing file: 7greimass_greimasian_semiotics_greimas.md
+2024-12-02 07:43:40,348 - INFO - Moved: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-02 07:43:40,349 - INFO - Processing file: 7hermannwf_narrative_worlds_framework_herman.md
+2024-12-02 07:43:40,349 - INFO - Moved: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-02 07:43:40,351 - INFO - Processing file: 7ryantsf_role_of_technology_in_storytelling_framework_.md
+2024-12-02 07:43:40,351 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-02 07:43:40,352 - INFO - Moved: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-02 07:43:40,353 - INFO - Processing file: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+2024-12-02 07:43:40,354 - INFO - Moved: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-02 07:43:40,355 - INFO - Processing file: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+2024-12-02 07:43:40,355 - INFO - Moved: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-02 07:43:40,356 - INFO - Processing file: 8ryannif_narrative_and_identity_framework_ryan.md
+2024-12-02 07:43:40,357 - INFO - Moved: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
