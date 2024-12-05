@@ -1124,3 +1124,425 @@
 2024-12-05 17:50:48,004 - WARNING - No valid YAML data in file: tier5_CA-3705 Creative Application.md
 2024-12-05 17:50:48,004 - INFO - Processing file: tier5_cc_3704 Cultural and Contextual Analysis.md
 2024-12-05 17:50:48,004 - WARNING - No valid YAML data in file: tier5_cc_3704 Cultural and Contextual Analysis.md
+2024-12-05 17:54:06,028 - INFO - Processing file: 1abbottnpf_narrative_perspective_framework_abbott.md
+2024-12-05 17:54:06,029 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:54:06,030 - INFO - Moved: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:54:06,031 - INFO - Processing file: 1bakhtindf_dialogism_framework_bakhtin.md
+2024-12-05 17:54:06,032 - INFO - Moved: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:54:06,033 - INFO - Processing file: 1balnaf_narrative_agents_framework_bal.md
+2024-12-05 17:54:06,033 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:54:06,034 - INFO - Moved: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:54:06,035 - INFO - Processing file: 1barthesncf_narrative_codes_framework_barthes.md
+2024-12-05 17:54:06,036 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,036 - INFO - Moved: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,038 - INFO - Processing file: 1boothiam_implied_author_model_booth.md
+2024-12-05 17:54:06,038 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,038 - INFO - Moved: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,040 - INFO - Processing file: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+2024-12-05 17:54:06,040 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-05 17:54:06,041 - INFO - Moved: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-05 17:54:06,042 - INFO - Processing file: 1chatmansdf_story_vs_discourse_framework_chatman.md
+2024-12-05 17:54:06,043 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:54:06,043 - INFO - Moved: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:54:06,045 - INFO - Processing file: 1forsterfrcm_flat_and_round_character_model_forster.md
+2024-12-05 17:54:06,045 - INFO - Moved: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:54:06,047 - INFO - Processing file: 1greimassnsf_semionarrative_structure_framework_greimas.md
+2024-12-05 17:54:06,048 - INFO - Moved: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,049 - INFO - Processing file: 1hermancnf_cognitive_narratology_framework_herman.md
+2024-12-05 17:54:06,049 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:54:06,050 - INFO - Moved: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:54:06,052 - INFO - Processing file: 1propp31_narrative_functions_framework_propp.md
+2024-12-05 17:54:06,052 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,053 - INFO - Moved: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,054 - INFO - Processing file: 1propp7_spheres_of_action_framework_propp.md
+2024-12-05 17:54:06,055 - INFO - Moved: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,056 - INFO - Processing file: 1rimmonkenanff_focalization_framework_rimmonkenan.md
+2024-12-05 17:54:06,056 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:54:06,056 - INFO - Moved: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:54:06,058 - INFO - Processing file: 1ryanif_immersion_framework_ryan.md
+2024-12-05 17:54:06,058 - INFO - Moved: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:54:06,060 - INFO - Processing file: 1sternbergemf_expositional_modes_framework_sternberg.md
+2024-12-05 17:54:06,060 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:54:06,061 - INFO - Moved: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:54:06,061 - INFO - Processing file: 1tier2_tmv-3407.md
+2024-12-05 17:54:06,062 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TMV-3407 Tense, Mood, and Voice in Narrative Grammar
+2024-12-05 17:54:06,062 - INFO - Moved: 1tier2_tmv-3407.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TMV-3407 Tense, Mood, and Voice in Narrative Grammar
+2024-12-05 17:54:06,063 - INFO - Processing file: 1tier5-MN-3706 Meta-Narrative Awareness.md
+2024-12-05 17:54:06,063 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\MN-3706 Meta-Narrative Awareness
+2024-12-05 17:54:06,064 - INFO - Moved: 1tier5-MN-3706 Meta-Narrative Awareness.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\MN-3706 Meta-Narrative Awareness
+2024-12-05 17:54:06,064 - INFO - Processing file: 1tier5_CA-3705 Creative Application.md
+2024-12-05 17:54:06,065 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CA-3705 Creative Application
+2024-12-05 17:54:06,065 - INFO - Moved: 1tier5_CA-3705 Creative Application.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CA-3705 Creative Application
+2024-12-05 17:54:06,066 - INFO - Processing file: 1tier5_cc_3704 Cultural and Contextual Analysis.md
+2024-12-05 17:54:06,066 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CC-3704 Cultural and Contextual Analysis
+2024-12-05 17:54:06,066 - INFO - Moved: 1tier5_cc_3704 Cultural and Contextual Analysis.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CC-3704 Cultural and Contextual Analysis
+2024-12-05 17:54:06,068 - INFO - Processing file: 1todorovnsm_narrative_syntax_model_todorov.md
+2024-12-05 17:54:06,068 - INFO - Moved: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:54:06,070 - INFO - Processing file: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+2024-12-05 17:54:06,070 - INFO - Moved: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,071 - INFO - Processing file: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+2024-12-05 17:54:06,072 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:54:06,072 - INFO - Moved: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:54:06,073 - INFO - Processing file: 2bakhtinhm_heteroglossia_model_bakhtin.md
+2024-12-05 17:54:06,074 - INFO - Moved: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,076 - INFO - Processing file: 2baltsf_temporal_structures_framework_bal.md
+2024-12-05 17:54:06,076 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,076 - INFO - Moved: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,078 - INFO - Processing file: 2barthesptf_pleasure_of_the_text_framework_barthes.md
+2024-12-05 17:54:06,079 - INFO - Moved: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,080 - INFO - Processing file: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+2024-12-05 17:54:06,080 - INFO - Moved: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:54:06,081 - INFO - Processing file: 2brooksntf_narrative_temporality_framework_brooks.md
+2024-12-05 17:54:06,082 - INFO - Moved: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,083 - INFO - Processing file: 2chatmanncm_narrative_communication_model_chatman.md
+2024-12-05 17:54:06,083 - INFO - Moved: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,085 - INFO - Processing file: 2forsterprf_pattern_and_rhythm_framework_forster.md
+2024-12-05 17:54:06,085 - INFO - Moved: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:54:06,086 - INFO - Processing file: 2genette3nif_three_narrative_instances_framework_genette.md
+2024-12-05 17:54:06,087 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:54:06,087 - INFO - Moved: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:54:06,088 - INFO - Processing file: 2genette5key_five_key_narrative_categories_framework_genette.md
+2024-12-05 17:54:06,089 - INFO - Moved: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:54:06,091 - INFO - Processing file: 2greimasssm_semiotic_square_model_greimas.md
+2024-12-05 17:54:06,091 - INFO - Moved: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,092 - INFO - Processing file: 2hermanslf_story_logic_framework_herman.md
+2024-12-05 17:54:06,093 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,093 - INFO - Moved: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,094 - INFO - Processing file: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+2024-12-05 17:54:06,095 - INFO - Moved: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:54:06,096 - INFO - Processing file: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+2024-12-05 17:54:06,097 - INFO - Moved: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:54:06,098 - INFO - Processing file: 2sternbergtof_temporal_ordering_framework_sternberg.md
+2024-12-05 17:54:06,099 - INFO - Moved: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,100 - INFO - Processing file: 2todorovsanf_deep_structures_framework_todorov.md
+2024-12-05 17:54:06,101 - INFO - Moved: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,102 - INFO - Processing file: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+2024-12-05 17:54:06,102 - INFO - Moved: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:54:06,103 - INFO - Processing file: 3bakhtincf_chronotope_framework_bakhtin.md
+2024-12-05 17:54:06,104 - INFO - Moved: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,105 - INFO - Processing file: 3balff_focalization_framework_bal.md
+2024-12-05 17:54:06,105 - INFO - Moved: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:54:06,107 - INFO - Processing file: 3barthesclf_camera_lucida_framework_barthes.md
+2024-12-05 17:54:06,107 - INFO - Moved: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,109 - INFO - Processing file: 3boothsvf_showing_vs_telling_framework_booth.md
+2024-12-05 17:54:06,109 - INFO - Moved: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,110 - INFO - Processing file: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+2024-12-05 17:54:06,111 - INFO - Moved: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:54:06,113 - INFO - Processing file: 3chatmancef_character_and_event_framework_chatman.md
+2024-12-05 17:54:06,113 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-05 17:54:06,114 - INFO - Moved: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-05 17:54:06,115 - INFO - Processing file: 3forsterpc_prophecy_concept_forster.md
+2024-12-05 17:54:06,116 - INFO - Moved: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-05 17:54:06,117 - INFO - Processing file: 3genette3focalization_three_focalization_framework_genette.md
+2024-12-05 17:54:06,118 - INFO - Moved: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:54:06,119 - INFO - Processing file: 3greimasam_actantial_model_greimas.md
+2024-12-05 17:54:06,119 - INFO - Moved: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,121 - INFO - Processing file: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+2024-12-05 17:54:06,121 - INFO - Moved: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:54:06,123 - INFO - Processing file: 3rimmonkenancf_charaterization_framework_rimmonkenan.md
+2024-12-05 17:54:06,123 - INFO - Moved: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:54:06,124 - INFO - Processing file: 3ryanmsf_medium_specificity_framework_ryan.md
+2024-12-05 17:54:06,125 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-05 17:54:06,125 - INFO - Moved: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-05 17:54:06,127 - INFO - Processing file: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+2024-12-05 17:54:06,127 - INFO - Moved: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,129 - INFO - Processing file: 3todorovgenre_genres_as_structures_framework_todorov.md
+2024-12-05 17:54:06,129 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:54:06,130 - INFO - Moved: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:54:06,131 - INFO - Processing file: 3tomashevskynff_narrative_functions_framework_tomashevsky.md
+2024-12-05 17:54:06,132 - INFO - Moved: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,133 - INFO - Processing file: 4bakhtincc_carnivalesque_concept_bakhtin.md
+2024-12-05 17:54:06,134 - INFO - Moved: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,135 - INFO - Processing file: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+2024-12-05 17:54:06,135 - INFO - Moved: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,137 - INFO - Processing file: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+2024-12-05 17:54:06,137 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-05 17:54:06,137 - INFO - Moved: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-05 17:54:06,139 - INFO - Processing file: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+2024-12-05 17:54:06,139 - INFO - Moved: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,140 - INFO - Processing file: 4forsterfvrf_fantasy_vs_realism_framework_forster.md
+2024-12-05 17:54:06,141 - INFO - Moved: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:54:06,142 - INFO - Processing file: 4genettemetalepsis_metalepsis_model_genette.md
+2024-12-05 17:54:06,142 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-05 17:54:06,143 - INFO - Moved: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-05 17:54:06,144 - INFO - Processing file: 4greimasngf_narrative_grammar_framework_greimas.md
+2024-12-05 17:54:06,145 - INFO - Moved: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,146 - INFO - Processing file: 4hermanetf_eventfulness_and_tellability_framework_herman.md
+2024-12-05 17:54:06,146 - INFO - Moved: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,148 - INFO - Processing file: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+2024-12-05 17:54:06,148 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:54:06,149 - INFO - Moved: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:54:06,150 - INFO - Processing file: 4ryanpwtf_possible_worlds_theory_framework_ryan.md
+2024-12-05 17:54:06,151 - INFO - Moved: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-05 17:54:06,152 - INFO - Processing file: 4todorovfmf_fantastic_mode_framework_todorov.md
+2024-12-05 17:54:06,153 - INFO - Moved: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:54:06,154 - INFO - Processing file: 4tomashevskyrim_reader_interaction_model_tomashevsky.md
+2024-12-05 17:54:06,155 - INFO - Moved: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:54:06,156 - INFO - Processing file: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+2024-12-05 17:54:06,156 - INFO - Moved: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:54:06,158 - INFO - Processing file: 5boothrrf_readers_role_framework_booth.md
+2024-12-05 17:54:06,158 - INFO - Moved: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:54:06,160 - INFO - Processing file: 5brooksteem_textual_energy_and_entropy_model_brooks.md
+2024-12-05 17:54:06,160 - INFO - Moved: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-05 17:54:06,162 - INFO - Processing file: 5forsterrrf_readers_role_framework_forster.md
+2024-12-05 17:54:06,162 - INFO - Moved: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:54:06,163 - INFO - Processing file: 5genettearchitext_architextual_model_genette.md
+2024-12-05 17:54:06,164 - INFO - Moved: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:54:06,166 - INFO - Processing file: 5greimasif_isotopy_framework_greimas.md
+2024-12-05 17:54:06,166 - INFO - Moved: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,168 - INFO - Processing file: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+2024-12-05 17:54:06,168 - INFO - Moved: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:54:06,169 - INFO - Processing file: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+2024-12-05 17:54:06,170 - INFO - Moved: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:54:06,171 - INFO - Processing file: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+2024-12-05 17:54:06,172 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-05 17:54:06,172 - INFO - Moved: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-05 17:54:06,173 - INFO - Processing file: 5todorovntf_narrative_transformation_framework_todorov.md
+2024-12-05 17:54:06,174 - INFO - Moved: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,175 - INFO - Processing file: 5tomashevskytpf_thematics_framework_tomashevsky.md
+2024-12-05 17:54:06,176 - INFO - Moved: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,178 - INFO - Processing file: 6bakhtinpf_polyphony_framework_bakhtin.md
+2024-12-05 17:54:06,178 - INFO - Moved: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,180 - INFO - Processing file: 6boothrif_rhetoric_of_irony_framework_booth.md
+2024-12-05 17:54:06,180 - INFO - Moved: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,182 - INFO - Processing file: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+2024-12-05 17:54:06,182 - INFO - Moved: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:54:06,183 - INFO - Processing file: 6greimasmf_modalities_framework_greimas.md
+2024-12-05 17:54:06,184 - INFO - Moved: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,185 - INFO - Processing file: 6hermancmrf_characterization_and_mind_representation_framework_herman.md
+2024-12-05 17:54:06,185 - INFO - Moved: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:54:06,187 - INFO - Processing file: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+2024-12-05 17:54:06,187 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-05 17:54:06,187 - INFO - Moved: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-05 17:54:06,189 - INFO - Processing file: 6tomashevksydm_defamiliarization_model_tomashevsky.md
+2024-12-05 17:54:06,189 - INFO - Moved: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,190 - INFO - Processing file: 7bakhtinsgf_speech_genres_framework_bakhtin.md
+2024-12-05 17:54:06,191 - INFO - Moved: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,192 - INFO - Processing file: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+2024-12-05 17:54:06,193 - INFO - Moved: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,194 - INFO - Processing file: 7brooksmif_melodramatic_imagination_framework_brooks.md
+2024-12-05 17:54:06,195 - INFO - Moved: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:54:06,196 - INFO - Processing file: 7greimass_greimasian_semiotics_greimas.md
+2024-12-05 17:54:06,197 - INFO - Moved: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:54:06,198 - INFO - Processing file: 7hermannwf_narrative_worlds_framework_herman.md
+2024-12-05 17:54:06,198 - INFO - Moved: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:54:06,200 - INFO - Processing file: 7ryantsf_role_of_technology_in_storytelling_framework_.md
+2024-12-05 17:54:06,200 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-05 17:54:06,200 - INFO - Moved: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-05 17:54:06,202 - INFO - Processing file: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+2024-12-05 17:54:06,202 - INFO - Moved: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:54:06,203 - INFO - Processing file: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+2024-12-05 17:54:06,204 - INFO - Moved: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:54:06,205 - INFO - Processing file: 8ryannif_narrative_and_identity_framework_ryan.md
+2024-12-05 17:54:06,205 - INFO - Moved: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,762 - INFO - Processing file: 1abbottnpf_narrative_perspective_framework_abbott.md
+2024-12-05 17:55:36,762 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:55:36,763 - INFO - Moved: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:55:36,764 - INFO - Processing file: 1bakhtindf_dialogism_framework_bakhtin.md
+2024-12-05 17:55:36,765 - INFO - Moved: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:55:36,766 - INFO - Processing file: 1balnaf_narrative_agents_framework_bal.md
+2024-12-05 17:55:36,767 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:55:36,767 - INFO - Moved: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:55:36,769 - INFO - Processing file: 1barthesncf_narrative_codes_framework_barthes.md
+2024-12-05 17:55:36,769 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,770 - INFO - Moved: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,771 - INFO - Processing file: 1boothiam_implied_author_model_booth.md
+2024-12-05 17:55:36,771 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,772 - INFO - Moved: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,774 - INFO - Processing file: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+2024-12-05 17:55:36,774 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-05 17:55:36,774 - INFO - Moved: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-05 17:55:36,776 - INFO - Processing file: 1chatmansdf_story_vs_discourse_framework_chatman.md
+2024-12-05 17:55:36,777 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:55:36,777 - INFO - Moved: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:55:36,779 - INFO - Processing file: 1forsterfrcm_flat_and_round_character_model_forster.md
+2024-12-05 17:55:36,779 - INFO - Moved: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:55:36,781 - INFO - Processing file: 1greimassnsf_semionarrative_structure_framework_greimas.md
+2024-12-05 17:55:36,781 - INFO - Moved: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,783 - INFO - Processing file: 1hermancnf_cognitive_narratology_framework_herman.md
+2024-12-05 17:55:36,783 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:55:36,784 - INFO - Moved: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:55:36,785 - INFO - Processing file: 1propp31_narrative_functions_framework_propp.md
+2024-12-05 17:55:36,786 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,786 - INFO - Moved: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,787 - INFO - Processing file: 1propp7_spheres_of_action_framework_propp.md
+2024-12-05 17:55:36,788 - INFO - Moved: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,789 - INFO - Processing file: 1rimmonkenanff_focalization_framework_rimmonkenan.md
+2024-12-05 17:55:36,789 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:55:36,790 - INFO - Moved: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:55:36,792 - INFO - Processing file: 1ryanif_immersion_framework_ryan.md
+2024-12-05 17:55:36,792 - INFO - Moved: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:55:36,793 - INFO - Processing file: 1sternbergemf_expositional_modes_framework_sternberg.md
+2024-12-05 17:55:36,794 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:55:36,794 - INFO - Moved: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:55:36,795 - INFO - Processing file: 1tier2_tmv-3407.md
+2024-12-05 17:55:36,795 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TMV-3407 Tense, Mood, and Voice in Narrative Grammar
+2024-12-05 17:55:36,796 - INFO - Moved: 1tier2_tmv-3407.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TMV-3407 Tense, Mood, and Voice in Narrative Grammar
+2024-12-05 17:55:36,796 - INFO - Processing file: 1tier5-MN-3706 Meta-Narrative Awareness.md
+2024-12-05 17:55:36,796 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\MN-3706 Meta-Narrative Awareness
+2024-12-05 17:55:36,797 - INFO - Moved: 1tier5-MN-3706 Meta-Narrative Awareness.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\MN-3706 Meta-Narrative Awareness
+2024-12-05 17:55:36,797 - INFO - Processing file: 1tier5_CA-3705 Creative Application.md
+2024-12-05 17:55:36,798 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CA-3705 Creative Application
+2024-12-05 17:55:36,798 - INFO - Moved: 1tier5_CA-3705 Creative Application.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CA-3705 Creative Application
+2024-12-05 17:55:36,799 - INFO - Processing file: 1tier5_cc_3704 Cultural and Contextual Analysis.md
+2024-12-05 17:55:36,799 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CC-3704 Cultural and Contextual Analysis
+2024-12-05 17:55:36,799 - INFO - Moved: 1tier5_cc_3704 Cultural and Contextual Analysis.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CC-3704 Cultural and Contextual Analysis
+2024-12-05 17:55:36,801 - INFO - Processing file: 1todorovnsm_narrative_syntax_model_todorov.md
+2024-12-05 17:55:36,802 - INFO - Moved: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:55:36,803 - INFO - Processing file: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+2024-12-05 17:55:36,804 - INFO - Moved: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,805 - INFO - Processing file: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+2024-12-05 17:55:36,805 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:55:36,806 - INFO - Moved: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:55:36,807 - INFO - Processing file: 2bakhtinhm_heteroglossia_model_bakhtin.md
+2024-12-05 17:55:36,807 - INFO - Moved: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,808 - INFO - Processing file: 2baltsf_temporal_structures_framework_bal.md
+2024-12-05 17:55:36,809 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,809 - INFO - Moved: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,811 - INFO - Processing file: 2barthesptf_pleasure_of_the_text_framework_barthes.md
+2024-12-05 17:55:36,811 - INFO - Moved: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,812 - INFO - Processing file: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+2024-12-05 17:55:36,813 - INFO - Moved: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-05 17:55:36,814 - INFO - Processing file: 2brooksntf_narrative_temporality_framework_brooks.md
+2024-12-05 17:55:36,814 - INFO - Moved: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,816 - INFO - Processing file: 2chatmanncm_narrative_communication_model_chatman.md
+2024-12-05 17:55:36,816 - INFO - Moved: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,817 - INFO - Processing file: 2forsterprf_pattern_and_rhythm_framework_forster.md
+2024-12-05 17:55:36,818 - INFO - Moved: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:55:36,819 - INFO - Processing file: 2genette3nif_three_narrative_instances_framework_genette.md
+2024-12-05 17:55:36,819 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:55:36,820 - INFO - Moved: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:55:36,821 - INFO - Processing file: 2genette5key_five_key_narrative_categories_framework_genette.md
+2024-12-05 17:55:36,822 - INFO - Moved: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:55:36,823 - INFO - Processing file: 2greimasssm_semiotic_square_model_greimas.md
+2024-12-05 17:55:36,824 - INFO - Moved: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,825 - INFO - Processing file: 2hermanslf_story_logic_framework_herman.md
+2024-12-05 17:55:36,825 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,826 - INFO - Moved: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,827 - INFO - Processing file: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+2024-12-05 17:55:36,828 - INFO - Moved: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-05 17:55:36,829 - INFO - Processing file: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+2024-12-05 17:55:36,830 - INFO - Moved: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:55:36,831 - INFO - Processing file: 2sternbergtof_temporal_ordering_framework_sternberg.md
+2024-12-05 17:55:36,831 - INFO - Moved: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,833 - INFO - Processing file: 2todorovsanf_deep_structures_framework_todorov.md
+2024-12-05 17:55:36,833 - INFO - Moved: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,834 - INFO - Processing file: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+2024-12-05 17:55:36,835 - INFO - Moved: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:55:36,836 - INFO - Processing file: 3bakhtincf_chronotope_framework_bakhtin.md
+2024-12-05 17:55:36,837 - INFO - Moved: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,838 - INFO - Processing file: 3balff_focalization_framework_bal.md
+2024-12-05 17:55:36,838 - INFO - Moved: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:55:36,840 - INFO - Processing file: 3barthesclf_camera_lucida_framework_barthes.md
+2024-12-05 17:55:36,840 - INFO - Moved: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,842 - INFO - Processing file: 3boothsvf_showing_vs_telling_framework_booth.md
+2024-12-05 17:55:36,842 - INFO - Moved: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,844 - INFO - Processing file: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+2024-12-05 17:55:36,844 - INFO - Moved: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\NS-3301 Narrative Structure
+2024-12-05 17:55:36,846 - INFO - Processing file: 3chatmancef_character_and_event_framework_chatman.md
+2024-12-05 17:55:36,846 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-05 17:55:36,847 - INFO - Moved: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-05 17:55:36,848 - INFO - Processing file: 3forsterpc_prophecy_concept_forster.md
+2024-12-05 17:55:36,848 - INFO - Moved: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-05 17:55:36,850 - INFO - Processing file: 3genette3focalization_three_focalization_framework_genette.md
+2024-12-05 17:55:36,850 - INFO - Moved: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\FO-3403 Focalization
+2024-12-05 17:55:36,851 - INFO - Processing file: 3greimasam_actantial_model_greimas.md
+2024-12-05 17:55:36,852 - INFO - Moved: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,853 - INFO - Processing file: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+2024-12-05 17:55:36,854 - INFO - Moved: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:55:36,855 - INFO - Processing file: 3rimmonkenancf_charaterization_framework_rimmonkenan.md
+2024-12-05 17:55:36,855 - INFO - Moved: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:55:36,857 - INFO - Processing file: 3ryanmsf_medium_specificity_framework_ryan.md
+2024-12-05 17:55:36,857 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-05 17:55:36,858 - INFO - Moved: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-05 17:55:36,859 - INFO - Processing file: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+2024-12-05 17:55:36,860 - INFO - Moved: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,861 - INFO - Processing file: 3todorovgenre_genres_as_structures_framework_todorov.md
+2024-12-05 17:55:36,861 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:55:36,862 - INFO - Moved: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:55:36,863 - INFO - Processing file: 3tomashevskynff_narrative_functions_framework_tomashevsky.md
+2024-12-05 17:55:36,864 - INFO - Moved: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,865 - INFO - Processing file: 4bakhtincc_carnivalesque_concept_bakhtin.md
+2024-12-05 17:55:36,865 - INFO - Moved: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,867 - INFO - Processing file: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+2024-12-05 17:55:36,867 - INFO - Moved: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,868 - INFO - Processing file: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+2024-12-05 17:55:36,869 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-05 17:55:36,869 - INFO - Moved: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-05 17:55:36,871 - INFO - Processing file: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+2024-12-05 17:55:36,871 - INFO - Moved: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,872 - INFO - Processing file: 4forsterfvrf_fantasy_vs_realism_framework_forster.md
+2024-12-05 17:55:36,873 - INFO - Moved: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:55:36,875 - INFO - Processing file: 4genettemetalepsis_metalepsis_model_genette.md
+2024-12-05 17:55:36,875 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-05 17:55:36,876 - INFO - Moved: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-05 17:55:36,877 - INFO - Processing file: 4greimasngf_narrative_grammar_framework_greimas.md
+2024-12-05 17:55:36,877 - INFO - Moved: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,879 - INFO - Processing file: 4hermanetf_eventfulness_and_tellability_framework_herman.md
+2024-12-05 17:55:36,879 - INFO - Moved: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,881 - INFO - Processing file: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+2024-12-05 17:55:36,881 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:55:36,882 - INFO - Moved: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:55:36,883 - INFO - Processing file: 4ryanpwtf_possible_worlds_theory_framework_ryan.md
+2024-12-05 17:55:36,883 - INFO - Moved: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-05 17:55:36,885 - INFO - Processing file: 4todorovfmf_fantastic_mode_framework_todorov.md
+2024-12-05 17:55:36,885 - INFO - Moved: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:55:36,887 - INFO - Processing file: 4tomashevskyrim_reader_interaction_model_tomashevsky.md
+2024-12-05 17:55:36,887 - INFO - Moved: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:55:36,889 - INFO - Processing file: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+2024-12-05 17:55:36,889 - INFO - Moved: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-05 17:55:36,890 - INFO - Processing file: 5boothrrf_readers_role_framework_booth.md
+2024-12-05 17:55:36,891 - INFO - Moved: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:55:36,892 - INFO - Processing file: 5brooksteem_textual_energy_and_entropy_model_brooks.md
+2024-12-05 17:55:36,893 - INFO - Moved: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-05 17:55:36,894 - INFO - Processing file: 5forsterrrf_readers_role_framework_forster.md
+2024-12-05 17:55:36,894 - INFO - Moved: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-05 17:55:36,896 - INFO - Processing file: 5genettearchitext_architextual_model_genette.md
+2024-12-05 17:55:36,896 - INFO - Moved: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:55:36,898 - INFO - Processing file: 5greimasif_isotopy_framework_greimas.md
+2024-12-05 17:55:36,898 - INFO - Moved: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,899 - INFO - Processing file: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+2024-12-05 17:55:36,900 - INFO - Moved: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\TT-3404 Time and Temporality
+2024-12-05 17:55:36,901 - INFO - Processing file: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+2024-12-05 17:55:36,901 - INFO - Moved: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-05 17:55:36,903 - INFO - Processing file: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+2024-12-05 17:55:36,903 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-05 17:55:36,903 - INFO - Moved: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TN-3602 Transmedia Narratology
+2024-12-05 17:55:36,905 - INFO - Processing file: 5todorovntf_narrative_transformation_framework_todorov.md
+2024-12-05 17:55:36,905 - INFO - Moved: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,906 - INFO - Processing file: 5tomashevskytpf_thematics_framework_tomashevsky.md
+2024-12-05 17:55:36,907 - INFO - Moved: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,909 - INFO - Processing file: 6bakhtinpf_polyphony_framework_bakhtin.md
+2024-12-05 17:55:36,909 - INFO - Moved: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,911 - INFO - Processing file: 6boothrif_rhetoric_of_irony_framework_booth.md
+2024-12-05 17:55:36,911 - INFO - Moved: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,912 - INFO - Processing file: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+2024-12-05 17:55:36,913 - INFO - Moved: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\INT-3502 Intertextuality
+2024-12-05 17:55:36,914 - INFO - Processing file: 6greimasmf_modalities_framework_greimas.md
+2024-12-05 17:55:36,915 - INFO - Moved: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,916 - INFO - Processing file: 6hermancmrf_characterization_and_mind_representation_framework_herman.md
+2024-12-05 17:55:36,917 - INFO - Moved: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 1\CH-3302 Characterization
+2024-12-05 17:55:36,918 - INFO - Processing file: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+2024-12-05 17:55:36,918 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-05 17:55:36,919 - INFO - Moved: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\TI-3702 Theoretical Integration
+2024-12-05 17:55:36,920 - INFO - Processing file: 6tomashevksydm_defamiliarization_model_tomashevsky.md
+2024-12-05 17:55:36,921 - INFO - Moved: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,922 - INFO - Processing file: 7bakhtinsgf_speech_genres_framework_bakhtin.md
+2024-12-05 17:55:36,922 - INFO - Moved: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,924 - INFO - Processing file: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+2024-12-05 17:55:36,924 - INFO - Moved: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,926 - INFO - Processing file: 7brooksmif_melodramatic_imagination_framework_brooks.md
+2024-12-05 17:55:36,926 - INFO - Moved: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-05 17:55:36,928 - INFO - Processing file: 7greimass_greimasian_semiotics_greimas.md
+2024-12-05 17:55:36,928 - INFO - Moved: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-05 17:55:36,929 - INFO - Processing file: 7hermannwf_narrative_worlds_framework_herman.md
+2024-12-05 17:55:36,930 - INFO - Moved: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-05 17:55:36,931 - INFO - Processing file: 7ryantsf_role_of_technology_in_storytelling_framework_.md
+2024-12-05 17:55:36,931 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-05 17:55:36,932 - INFO - Moved: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 4\TN-3602 Transmedia Narratology
+2024-12-05 17:55:36,933 - INFO - Processing file: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+2024-12-05 17:55:36,934 - INFO - Moved: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-05 17:55:36,935 - INFO - Processing file: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+2024-12-05 17:55:36,935 - INFO - Moved: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-05 17:55:36,937 - INFO - Processing file: 8ryannif_narrative_and_identity_framework_ryan.md
+2024-12-05 17:55:36,937 - INFO - Moved: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 3\DM-3503 Diegesis and Mimesis
