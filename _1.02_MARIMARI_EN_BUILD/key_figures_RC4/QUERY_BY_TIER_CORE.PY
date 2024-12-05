@@ -45,6 +45,11 @@ valid_cores = {
     "NLE-3501 Narrative Levels and Embedding",
     "PA-3303 Plot and Event Analysis",
     "GT-3505 Genre and Narrative Typology",
+    "TMV-3407 Tense, Mood, and Voice in Narrative Grammar",
+    "CMS-3703 Cross-Media Narrative Study",
+    "CC-3704 Cultural and Contextual Analysis",
+    "CA-3705 Creative Application",
+    "MN-3706 Meta-Narrative Awareness",
 }
 
 # Enable dry run mode (set to False to perform actual file moves)
