@@ -1,4 +1,4 @@
-Provide a comprehensive and detailed overview of the above text using the Summary_Template
+remember the data below as a template. save the template for future use under the title Summary_Template
 
 # Mieke Bal's Contributions to Narratology
 
