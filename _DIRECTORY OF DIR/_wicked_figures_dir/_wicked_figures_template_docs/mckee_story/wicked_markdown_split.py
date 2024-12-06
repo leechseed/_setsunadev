@@ -1,21 +1,38 @@
 import os
 import re
 
-def split_markdown_file(input_file_path, delimiter='---', output_prefix='section_'):
+def sanitize_filename(title):
     """
-    Splits a Markdown file into separate files based on a specified delimiter.
+    Sanitizes the section title to create a valid filename.
+    
+    Args:
+        title (str): The section title extracted from the Markdown file.
+        
+    Returns:
+        str: A sanitized string suitable for use in a filename.
+    """
+    # Remove any characters that are not alphanumeric, spaces, underscores, or hyphens
+    sanitized = re.sub(r'[^\w\s-]', '', title)
+    # Replace spaces and hyphens with underscores
+    sanitized = re.sub(r'[\s-]+', '_', sanitized)
+    return sanitized
 
+def split_markdown_file(input_file_path, delimiter='---', output_prefix='mckee_'):
+    """
+    Splits a Markdown file into separate files based on a specified delimiter,
+    using the section titles in filenames.
+    
     Args:
         input_file_path (str): The full path to the input Markdown file.
         delimiter (str): The delimiter string to split the document. Default is '---'.
-        output_prefix (str): The prefix for the output files. Default is 'section_'.
-
+        output_prefix (str): The prefix for the output files. Default is 'mckee_'.
+    
     Returns:
         None
     """
     # Ensure the input file exists
     if not os.path.isfile(input_file_path):
-        print(f"Error: The file {input_file_path} does not exist.")
+        print(f"Error: The file '{input_file_path}' does not exist.")
         return
 
     # Get the directory of the input file
@@ -42,25 +59,27 @@ def split_markdown_file(input_file_path, delimiter='---', output_prefix='section
 
     # Save each section to a new file in the same directory as the input file
     for i, section in enumerate(sections, start=1):
-        # Optionally, extract a title from the section to use in the filename
-        # Here, we'll use the first heading in the section if available
+        # Extract the first Markdown heading (e.g., # Definition of Story)
         title_match = re.search(r'^#\s+(.*)', section, re.MULTILINE)
         if title_match:
-            # Clean the title to create a valid filename
-            title = title_match.group(1).strip().replace(' ', '_').replace('/', '_')
-            filename = os.path.join(output_dir, f"{output_prefix}{i}_{title}.md")
+            # Get the title text
+            title = title_match.group(1).strip()
+            # Sanitize the title to create a valid filename
+            sanitized_title = sanitize_filename(title)
+            filename = os.path.join(output_dir, f"{output_prefix}{sanitized_title}.md")
         else:
             # Fallback to numbered filenames if no title is found
-            filename = os.path.join(output_dir, f"{output_prefix}{i}.md")
+            filename = os.path.join(output_dir, f"{output_prefix}section_{i}.md")
+            print(f"Warning: No title found for section {i}. Using default filename '{filename}'.")
 
         try:
             # Write the section to a new file
             with open(filename, 'w', encoding='utf-8') as output_file:
                 output_file.write(section + '\n')  # Add a newline at the end for consistency
 
-            print(f"Section {i} saved as {filename}")
+            print(f"Section {i} saved as '{os.path.basename(filename)}'")
         except Exception as e:
-            print(f"Failed to write section {i} to {filename}: {e}")
+            print(f"Failed to write section {i} to '{filename}': {e}")
 
 if __name__ == "__main__":
     # Define the input Markdown file
