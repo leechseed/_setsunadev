@@ -1,0 +1,13 @@
+---
+UID:
+Title:
+Author:
+ISBN10:
+Source:
+Date:
+TYPE: WICKED
+KNOWLEDGE TYPE:
+CORE:
+TIER:
+REASON:
+---

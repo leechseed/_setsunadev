@@ -1,3 +1,5 @@
+Sure! Here's the document with all instances of `---` replaced with `***`:
+
 # Robert McKee's _Story: Substance, Structure, Style, and the Principles of Screenwriting_
 
 ## Overview
