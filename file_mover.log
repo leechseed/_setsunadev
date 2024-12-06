@@ -3033,3 +3033,253 @@
 2024-12-05 18:05:17,931 - INFO - Processing file: tier5_ca-3705.md
 2024-12-05 18:05:17,931 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CA-3705 Creative Application
 2024-12-05 18:05:17,932 - INFO - Moved: tier5_ca-3705.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.02_MARIMARI_EN_BUILD\key_figures_RC4\Tier 5\CA-3705 Creative Application
+2024-12-06 11:58:54,114 - INFO - Processing file: 10mckeeaef_audience_expectation_framework.md
+2024-12-06 11:58:54,115 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NR-3507 Narratee and Implied Reader\WICKED
+2024-12-06 11:58:54,116 - INFO - Moved: 10mckeeaef_audience_expectation_framework.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NR-3507 Narratee and Implied Reader\WICKED
+2024-12-06 11:58:54,117 - INFO - Processing file: 11mckeewpm_writers_process_model.md
+2024-12-06 11:58:54,118 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis\WICKED
+2024-12-06 11:58:54,118 - INFO - Moved: 11mckeewpm_writers_process_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis\WICKED
+2024-12-06 11:58:54,119 - INFO - Processing file: 12mckeegm_gap_model.md
+2024-12-06 11:58:54,120 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\PA-3303 Plot and Event Analysis\WICKED
+2024-12-06 11:58:54,120 - INFO - Moved: 12mckeegm_gap_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\PA-3303 Plot and Event Analysis\WICKED
+2024-12-06 11:58:54,121 - INFO - Processing file: 13mckeeasamf_adapting_stories_across_media_framework.md
+2024-12-06 11:58:54,121 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\TN-3602 Transmedia Narratology\WICKED
+2024-12-06 11:58:54,121 - INFO - Moved: 13mckeeasamf_adapting_stories_across_media_framework.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\TN-3602 Transmedia Narratology\WICKED
+2024-12-06 11:58:54,124 - INFO - Processing file: 14mckeeaosm_art_of_subtext_model.md
+2024-12-06 11:58:54,124 - WARNING - Unrecognized CORE value in file: 14mckeeaosm_art_of_subtext_model.md
+2024-12-06 11:58:54,125 - INFO - Processing file: 15mckeebosm_business_of_storytelling_model.md
+2024-12-06 11:58:54,125 - INFO - Moved: 15mckeebosm_business_of_storytelling_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis\WICKED
+2024-12-06 11:58:54,127 - INFO - Processing file: 1abbottnpf_narrative_perspective_framework_abbott.md
+2024-12-06 11:58:54,127 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-06 11:58:54,128 - INFO - Moved: 1abbottnpf_narrative_perspective_framework_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-06 11:58:54,129 - INFO - Processing file: 1bakhtindf_dialogism_framework_bakhtin.md
+2024-12-06 11:58:54,130 - INFO - Moved: 1bakhtindf_dialogism_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-06 11:58:54,131 - INFO - Processing file: 1balnaf_narrative_agents_framework_bal.md
+2024-12-06 11:58:54,131 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization
+2024-12-06 11:58:54,132 - INFO - Moved: 1balnaf_narrative_agents_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization
+2024-12-06 11:58:54,133 - INFO - Processing file: 1barthesncf_narrative_codes_framework_barthes.md
+2024-12-06 11:58:54,133 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,134 - INFO - Moved: 1barthesncf_narrative_codes_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,135 - INFO - Processing file: 1boothiam_implied_author_model_booth.md
+2024-12-06 11:58:54,135 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,136 - INFO - Moved: 1boothiam_implied_author_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,137 - INFO - Processing file: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md
+2024-12-06 11:58:54,138 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-06 11:58:54,138 - INFO - Moved: 1brooksrdnf_role_of_desire_in_narrative_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NE-3509 Narrative Ethics and Ideology
+2024-12-06 11:58:54,140 - INFO - Processing file: 1chatmansdf_story_vs_discourse_framework_chatman.md
+2024-12-06 11:58:54,140 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-06 11:58:54,141 - INFO - Moved: 1chatmansdf_story_vs_discourse_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-06 11:58:54,143 - INFO - Processing file: 1forsterfrcm_flat_and_round_character_model_forster.md
+2024-12-06 11:58:54,143 - INFO - Moved: 1forsterfrcm_flat_and_round_character_model_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization
+2024-12-06 11:58:54,145 - INFO - Processing file: 1greimassnsf_semionarrative_structure_framework_greimas.md
+2024-12-06 11:58:54,145 - INFO - Moved: 1greimassnsf_semionarrative_structure_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,147 - INFO - Processing file: 1hermancnf_cognitive_narratology_framework_herman.md
+2024-12-06 11:58:54,147 - INFO - Moved: 1hermancnf_cognitive_narratology_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-06 11:58:54,148 - INFO - Processing file: 1mckeedosf_definition_of_story_framework.md
+2024-12-06 11:58:54,149 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure\WICKED
+2024-12-06 11:58:54,149 - INFO - Moved: 1mckeedosf_definition_of_story_framework.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure\WICKED
+2024-12-06 11:58:54,151 - INFO - Processing file: 1propp31_narrative_functions_framework_propp.md
+2024-12-06 11:58:54,151 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,152 - INFO - Moved: 1propp31_narrative_functions_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,153 - INFO - Processing file: 1propp7_spheres_of_action_framework_propp.md
+2024-12-06 11:58:54,153 - INFO - Moved: 1propp7_spheres_of_action_framework_propp.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,154 - INFO - Processing file: 1rimmonkenanff_focalization_framework_rimmonkenan.md
+2024-12-06 11:58:54,155 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\FO-3403 Focalization
+2024-12-06 11:58:54,155 - INFO - Moved: 1rimmonkenanff_focalization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\FO-3403 Focalization
+2024-12-06 11:58:54,157 - INFO - Processing file: 1ryanif_immersion_framework_ryan.md
+2024-12-06 11:58:54,157 - INFO - Moved: 1ryanif_immersion_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-06 11:58:54,158 - INFO - Processing file: 1sternbergemf_expositional_modes_framework_sternberg.md
+2024-12-06 11:58:54,159 - INFO - Moved: 1sternbergemf_expositional_modes_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure
+2024-12-06 11:58:54,160 - INFO - Processing file: 1tier2_tmv-3407.md
+2024-12-06 11:58:54,160 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TMV-3407 Tense, Mood, and Voice in Narrative Grammar
+2024-12-06 11:58:54,160 - INFO - Moved: 1tier2_tmv-3407.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TMV-3407 Tense, Mood, and Voice in Narrative Grammar
+2024-12-06 11:58:54,161 - INFO - Processing file: 1tier5-MN-3706 Meta-Narrative Awareness.md
+2024-12-06 11:58:54,161 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\MN-3706 Meta-Narrative Awareness
+2024-12-06 11:58:54,161 - INFO - Moved: 1tier5-MN-3706 Meta-Narrative Awareness.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\MN-3706 Meta-Narrative Awareness
+2024-12-06 11:58:54,163 - INFO - Processing file: 1tier5_cc_3704 Cultural and Contextual Analysis.md
+2024-12-06 11:58:54,163 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CC-3704 Cultural and Contextual Analysis
+2024-12-06 11:58:54,164 - INFO - Moved: 1tier5_cc_3704 Cultural and Contextual Analysis.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CC-3704 Cultural and Contextual Analysis
+2024-12-06 11:58:54,164 - INFO - Processing file: 1tier5_cms-3703.md
+2024-12-06 11:58:54,165 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CMS-3703 Cross-Media Narrative Study
+2024-12-06 11:58:54,165 - INFO - Moved: 1tier5_cms-3703.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CMS-3703 Cross-Media Narrative Study
+2024-12-06 11:58:54,166 - INFO - Processing file: 1tier5_cms-3703_CA-3705 Creative Application.md
+2024-12-06 11:58:54,166 - INFO - Moved: 1tier5_cms-3703_CA-3705 Creative Application.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CMS-3703 Cross-Media Narrative Study
+2024-12-06 11:58:54,167 - INFO - Processing file: 1todorovnsm_narrative_syntax_model_todorov.md
+2024-12-06 11:58:54,168 - INFO - Moved: 1todorovnsm_narrative_syntax_model_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure
+2024-12-06 11:58:54,169 - INFO - Processing file: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md
+2024-12-06 11:58:54,170 - INFO - Moved: 1tomashevskytmf_theme_and_motif_framework_tomashevksy.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,171 - INFO - Processing file: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md
+2024-12-06 11:58:54,172 - INFO - Moved: 2abbottngri_narrative_gaps_and_reader_involvement_abbott.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-06 11:58:54,173 - INFO - Processing file: 2bakhtinhm_heteroglossia_model_bakhtin.md
+2024-12-06 11:58:54,174 - INFO - Moved: 2bakhtinhm_heteroglossia_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,175 - INFO - Processing file: 2baltsf_temporal_structures_framework_bal.md
+2024-12-06 11:58:54,175 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,176 - INFO - Moved: 2baltsf_temporal_structures_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,177 - INFO - Processing file: 2barthesptf_pleasure_of_the_text_framework_barthes.md
+2024-12-06 11:58:54,178 - INFO - Moved: 2barthesptf_pleasure_of_the_text_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,179 - INFO - Processing file: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md
+2024-12-06 11:58:54,180 - INFO - Moved: 2boothnnvf_narrator_and_narrative_voice_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NV-3405 Narrative Voice and Point of View
+2024-12-06 11:58:54,181 - INFO - Processing file: 2brooksntf_narrative_temporality_framework_brooks.md
+2024-12-06 11:58:54,182 - INFO - Moved: 2brooksntf_narrative_temporality_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,183 - INFO - Processing file: 2chatmanncm_narrative_communication_model_chatman.md
+2024-12-06 11:58:54,183 - INFO - Moved: 2chatmanncm_narrative_communication_model_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,184 - INFO - Processing file: 2forsterprf_pattern_and_rhythm_framework_forster.md
+2024-12-06 11:58:54,185 - INFO - Moved: 2forsterprf_pattern_and_rhythm_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure
+2024-12-06 11:58:54,186 - INFO - Processing file: 2genette3nif_three_narrative_instances_framework_genette.md
+2024-12-06 11:58:54,186 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-06 11:58:54,187 - INFO - Moved: 2genette3nif_three_narrative_instances_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-06 11:58:54,188 - INFO - Processing file: 2genette5key_five_key_narrative_categories_framework_genette.md
+2024-12-06 11:58:54,189 - INFO - Moved: 2genette5key_five_key_narrative_categories_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-06 11:58:54,190 - INFO - Processing file: 2greimasssm_semiotic_square_model_greimas.md
+2024-12-06 11:58:54,191 - INFO - Moved: 2greimasssm_semiotic_square_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,191 - INFO - Processing file: 2hermanslf_story_logic_framework_herman.md
+2024-12-06 11:58:54,193 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,193 - INFO - Moved: 2hermanslf_story_logic_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,194 - INFO - Processing file: 2mckeetlosm_three_levels_of_storytelling_model.md
+2024-12-06 11:58:54,195 - INFO - Moved: 2mckeetlosm_three_levels_of_storytelling_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure\WICKED
+2024-12-06 11:58:54,196 - INFO - Processing file: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md
+2024-12-06 11:58:54,197 - INFO - Moved: 2rimmonkenannlf_narrative_levels_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NLE-3501 Narrative Levels and Embedding
+2024-12-06 11:58:54,198 - INFO - Processing file: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md
+2024-12-06 11:58:54,199 - INFO - Moved: 2ryannccf_narrative_as_a_cognitive_construct_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-06 11:58:54,200 - INFO - Processing file: 2sternbergtof_temporal_ordering_framework_sternberg.md
+2024-12-06 11:58:54,200 - INFO - Moved: 2sternbergtof_temporal_ordering_framework_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,202 - INFO - Processing file: 2todorovsanf_deep_structures_framework_todorov.md
+2024-12-06 11:58:54,202 - INFO - Moved: 2todorovsanf_deep_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,203 - INFO - Processing file: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md
+2024-12-06 11:58:54,204 - INFO - Moved: 2tomashevskypsf_plot_vs_story_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-06 11:58:54,205 - INFO - Processing file: 3bakhtincf_chronotope_framework_bakhtin.md
+2024-12-06 11:58:54,205 - INFO - Moved: 3bakhtincf_chronotope_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,206 - INFO - Processing file: 3balff_focalization_framework_bal.md
+2024-12-06 11:58:54,207 - INFO - Moved: 3balff_focalization_framework_bal.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\FO-3403 Focalization
+2024-12-06 11:58:54,208 - INFO - Processing file: 3barthesclf_camera_lucida_framework_barthes.md
+2024-12-06 11:58:54,209 - INFO - Moved: 3barthesclf_camera_lucida_framework_barthes.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,211 - INFO - Processing file: 3boothsvf_showing_vs_telling_framework_booth.md
+2024-12-06 11:58:54,211 - INFO - Moved: 3boothsvf_showing_vs_telling_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,213 - INFO - Processing file: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md
+2024-12-06 11:58:54,213 - INFO - Moved: 3brooksmsmf_middle_as_a_site_of_meaning_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure
+2024-12-06 11:58:54,215 - INFO - Processing file: 3chatmancef_character_and_event_framework_chatman.md
+2024-12-06 11:58:54,215 - INFO - Moved: 3chatmancef_character_and_event_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-06 11:58:54,217 - INFO - Processing file: 3forsterpc_prophecy_concept_forster.md
+2024-12-06 11:58:54,217 - INFO - Moved: 3forsterpc_prophecy_concept_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\PA-3303 Plot and Event Analysis
+2024-12-06 11:58:54,219 - INFO - Processing file: 3genette3focalization_three_focalization_framework_genette.md
+2024-12-06 11:58:54,219 - INFO - Moved: 3genette3focalization_three_focalization_framework_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\FO-3403 Focalization
+2024-12-06 11:58:54,220 - INFO - Processing file: 3greimasam_actantial_model_greimas.md
+2024-12-06 11:58:54,220 - INFO - Moved: 3greimasam_actantial_model_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,221 - INFO - Processing file: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md
+2024-12-06 11:58:54,223 - INFO - Moved: 3hermanncaf_narrative_as_a_cognitive_artifact_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-06 11:58:54,224 - INFO - Processing file: 3mckeessf_story_structure_framework.md
+2024-12-06 11:58:54,224 - INFO - Moved: 3mckeessf_story_structure_framework.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure\WICKED
+2024-12-06 11:58:54,226 - INFO - Processing file: 3rimmonkenancf_charaterization_framework_rimmonkenan.md
+2024-12-06 11:58:54,226 - INFO - Moved: 3rimmonkenancf_charaterization_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization
+2024-12-06 11:58:54,227 - INFO - Processing file: 3ryanmsf_medium_specificity_framework_ryan.md
+2024-12-06 11:58:54,228 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-06 11:58:54,229 - INFO - Moved: 3ryanmsf_medium_specificity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-06 11:58:54,230 - INFO - Processing file: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md
+2024-12-06 11:58:54,230 - INFO - Moved: 3sternbergscsm_suspense_curiosity_and_surprise_model_sternberg.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,232 - INFO - Processing file: 3todorovgenre_genres_as_structures_framework_todorov.md
+2024-12-06 11:58:54,232 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-06 11:58:54,233 - INFO - Moved: 3todorovgenre_genres_as_structures_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-06 11:58:54,234 - INFO - Processing file: 3tomashevskynff_narrative_functions_framework_tomashevsky.md
+2024-12-06 11:58:54,234 - INFO - Moved: 3tomashevskynff_narrative_functions_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,236 - INFO - Processing file: 4bakhtincc_carnivalesque_concept_bakhtin.md
+2024-12-06 11:58:54,236 - INFO - Moved: 4bakhtincc_carnivalesque_concept_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,237 - INFO - Processing file: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md
+2024-12-06 11:58:54,238 - INFO - Moved: 4boothrfwm_rhetoric_of_fictional_worlds_model_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,239 - INFO - Processing file: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md
+2024-12-06 11:58:54,239 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-06 11:58:54,240 - INFO - Moved: 4brooksnrsf_narrative_as_a_rhetorical_structure_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-06 11:58:54,241 - INFO - Processing file: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md
+2024-12-06 11:58:54,241 - INFO - Moved: 4chatmantsnf_time_and_space_in_narrative_framework_chatman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,242 - INFO - Processing file: 4forsterfvrf_fantasy_vs_realism_framework_forster.md
+2024-12-06 11:58:54,243 - INFO - Moved: 4forsterfvrf_fantasy_vs_realism_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-06 11:58:54,244 - INFO - Processing file: 4genettemetalepsis_metalepsis_model_genette.md
+2024-12-06 11:58:54,244 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-06 11:58:54,245 - INFO - Moved: 4genettemetalepsis_metalepsis_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\MT-3508 Metalepsis and Narrative Transgression
+2024-12-06 11:58:54,246 - INFO - Processing file: 4greimasngf_narrative_grammar_framework_greimas.md
+2024-12-06 11:58:54,247 - INFO - Moved: 4greimasngf_narrative_grammar_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,248 - INFO - Processing file: 4hermanetf_eventfulness_and_tellability_framework_herman.md
+2024-12-06 11:58:54,248 - INFO - Moved: 4hermanetf_eventfulness_and_tellability_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,249 - INFO - Processing file: 4mckeetam_three_acts_model.md
+2024-12-06 11:58:54,250 - INFO - Moved: 4mckeetam_three_acts_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure\WICKED
+2024-12-06 11:58:54,251 - INFO - Processing file: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md
+2024-12-06 11:58:54,251 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\INT-3502 Intertextuality
+2024-12-06 11:58:54,251 - INFO - Moved: 4rimmonkenantiaf_textual_and_intertextual_analysis_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\INT-3502 Intertextuality
+2024-12-06 11:58:54,254 - INFO - Processing file: 4ryanpwtf_possible_worlds_theory_framework_ryan.md
+2024-12-06 11:58:54,254 - INFO - Moved: 4ryanpwtf_possible_worlds_theory_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 4\AS-3601 Advanced Semiotics and Symbolic Interpretation
+2024-12-06 11:58:54,256 - INFO - Processing file: 4todorovfmf_fantastic_mode_framework_todorov.md
+2024-12-06 11:58:54,256 - INFO - Moved: 4todorovfmf_fantastic_mode_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-06 11:58:54,257 - INFO - Processing file: 4tomashevskyrim_reader_interaction_model_tomashevsky.md
+2024-12-06 11:58:54,258 - INFO - Moved: 4tomashevskyrim_reader_interaction_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-06 11:58:54,259 - INFO - Processing file: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md
+2024-12-06 11:58:54,259 - INFO - Moved: 5bakhtinndgm_novel_as_a_dynamic_genre_model_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology
+2024-12-06 11:58:54,261 - INFO - Processing file: 5boothrrf_readers_role_framework_booth.md
+2024-12-06 11:58:54,261 - INFO - Moved: 5boothrrf_readers_role_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-06 11:58:54,263 - INFO - Processing file: 5brooksteem_textual_energy_and_entropy_model_brooks.md
+2024-12-06 11:58:54,263 - INFO - Moved: 5brooksteem_textual_energy_and_entropy_model_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\CL-3406 Narrative Coherence and Logic
+2024-12-06 11:58:54,264 - INFO - Processing file: 5forsterrrf_readers_role_framework_forster.md
+2024-12-06 11:58:54,265 - INFO - Moved: 5forsterrrf_readers_role_framework_forster.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\NR-3507 Narratee and Implied Reader
+2024-12-06 11:58:54,266 - INFO - Processing file: 5genettearchitext_architextual_model_genette.md
+2024-12-06 11:58:54,266 - INFO - Moved: 5genettearchitext_architextual_model_genette.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\INT-3502 Intertextuality
+2024-12-06 11:58:54,268 - INFO - Processing file: 5greimasif_isotopy_framework_greimas.md
+2024-12-06 11:58:54,268 - INFO - Moved: 5greimasif_isotopy_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,269 - INFO - Processing file: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md
+2024-12-06 11:58:54,270 - INFO - Moved: 5hermantlnf_temporal_logic_in_narrative_framework_herman_EXPLICIT.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\TT-3404 Time and Temporality
+2024-12-06 11:58:54,271 - INFO - Processing file: 5mckeeposdm_princples_of_story_design_model.md
+2024-12-06 11:58:54,271 - INFO - Moved: 5mckeeposdm_princples_of_story_design_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\NS-3301 Narrative Structure\WICKED
+2024-12-06 11:58:54,273 - INFO - Processing file: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md
+2024-12-06 11:58:54,273 - INFO - Moved: 5rimmonkenannsf_narrative_discourse_strategies_framework_rimmonkenan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
+2024-12-06 11:58:54,275 - INFO - Processing file: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md
+2024-12-06 11:58:54,275 - INFO - Moved: 5ryanndim_narrative_in_digital_and_interactive_media_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\TN-3602 Transmedia Narratology
+2024-12-06 11:58:54,276 - INFO - Processing file: 5todorovntf_narrative_transformation_framework_todorov.md
+2024-12-06 11:58:54,277 - INFO - Moved: 5todorovntf_narrative_transformation_framework_todorov.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,278 - INFO - Processing file: 5tomashevskytpf_thematics_framework_tomashevsky.md
+2024-12-06 11:58:54,279 - INFO - Moved: 5tomashevskytpf_thematics_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,280 - INFO - Processing file: 6bakhtinpf_polyphony_framework_bakhtin.md
+2024-12-06 11:58:54,281 - INFO - Moved: 6bakhtinpf_polyphony_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,282 - INFO - Processing file: 6boothrif_rhetoric_of_irony_framework_booth.md
+2024-12-06 11:58:54,283 - INFO - Moved: 6boothrif_rhetoric_of_irony_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,284 - INFO - Processing file: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md
+2024-12-06 11:58:54,284 - INFO - Moved: 6brooksind_intertextuality_and_narrative_design_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\INT-3502 Intertextuality
+2024-12-06 11:58:54,285 - INFO - Processing file: 6greimasmf_modalities_framework_greimas.md
+2024-12-06 11:58:54,286 - INFO - Moved: 6greimasmf_modalities_framework_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,287 - INFO - Processing file: 6hermancmrf_characterization_and_mind_representation_framework_herman.md
+2024-12-06 11:58:54,288 - INFO - Moved: 6hermancmrf_characterization_and_mind_representation_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization
+2024-12-06 11:58:54,289 - INFO - Processing file: 6mckeecacm_character_and_conflict_model.md
+2024-12-06 11:58:54,289 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization\WICKED
+2024-12-06 11:58:54,289 - INFO - Moved: 6mckeecacm_character_and_conflict_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\CH-3302 Characterization\WICKED
+2024-12-06 11:58:54,291 - INFO - Processing file: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md
+2024-12-06 11:58:54,291 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\TI-3702 Theoretical Integration
+2024-12-06 11:58:54,291 - INFO - Moved: 6ryaniaf_interdisciplinary_approaches_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\TI-3702 Theoretical Integration
+2024-12-06 11:58:54,294 - INFO - Processing file: 6tomashevksydm_defamiliarization_model_tomashevsky.md
+2024-12-06 11:58:54,294 - INFO - Moved: 6tomashevksydm_defamiliarization_model_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,295 - INFO - Processing file: 7bakhtinsgf_speech_genres_framework_bakhtin.md
+2024-12-06 11:58:54,296 - INFO - Moved: 7bakhtinsgf_speech_genres_framework_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,297 - INFO - Processing file: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md
+2024-12-06 11:58:54,298 - INFO - Moved: 7boothmdraf_modern_dogma_and_rhetoric_of_assent_framework_booth.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,299 - INFO - Processing file: 7brooksmif_melodramatic_imagination_framework_brooks.md
+2024-12-06 11:58:54,299 - INFO - Moved: 7brooksmif_melodramatic_imagination_framework_brooks.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\FM-3506 Function and Motif Analysis
+2024-12-06 11:58:54,301 - INFO - Processing file: 7greimass_greimasian_semiotics_greimas.md
+2024-12-06 11:58:54,301 - INFO - Moved: 7greimass_greimasian_semiotics_greimas.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\SN-3504 Semiotics of Narrative
+2024-12-06 11:58:54,302 - INFO - Processing file: 7hermannwf_narrative_worlds_framework_herman.md
+2024-12-06 11:58:54,303 - INFO - Moved: 7hermannwf_narrative_worlds_framework_herman.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\HN-3701 Holistic Narrative Analysis
+2024-12-06 11:58:54,303 - INFO - Processing file: 7mckeescf_story_climax_framework.md
+2024-12-06 11:58:54,304 - INFO - Moved: 7mckeescf_story_climax_framework.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\PA-3303 Plot and Event Analysis\WICKED
+2024-12-06 11:58:54,305 - INFO - Processing file: 7ryantsf_role_of_technology_in_storytelling_framework_.md
+2024-12-06 11:58:54,306 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 4\TN-3602 Transmedia Narratology
+2024-12-06 11:58:54,306 - INFO - Moved: 7ryantsf_role_of_technology_in_storytelling_framework_.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 4\TN-3602 Transmedia Narratology
+2024-12-06 11:58:54,307 - INFO - Processing file: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md
+2024-12-06 11:58:54,308 - INFO - Moved: 7tomashevskyndf_narrative_devices_framework_tomashevsky.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,309 - INFO - Processing file: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md
+2024-12-06 11:58:54,309 - INFO - Moved: 8bakhtinahaa_author_and_hero_in_aesthetic_activity_bakhtin.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 2\NA-3402 Narration and Narrator Analysis
+2024-12-06 11:58:54,310 - INFO - Processing file: 8mckeetpm_turning_points_model.md
+2024-12-06 11:58:54,311 - INFO - Moved: 8mckeetpm_turning_points_model.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 1\PA-3303 Plot and Event Analysis\WICKED
+2024-12-06 11:58:54,313 - INFO - Processing file: 8ryannif_narrative_and_identity_framework_ryan.md
+2024-12-06 11:58:54,313 - INFO - Moved: 8ryannif_narrative_and_identity_framework_ryan.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\DM-3503 Diegesis and Mimesis
+2024-12-06 11:58:54,314 - INFO - Processing file: 9mckeegf_genre_framework.md
+2024-12-06 11:58:54,315 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology\WICKED
+2024-12-06 11:58:54,315 - INFO - Moved: 9mckeegf_genre_framework.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 3\GT-3505 Genre and Narrative Typology\WICKED
+2024-12-06 11:58:54,316 - INFO - Processing file: tier5_ca-3705.md
+2024-12-06 11:58:54,316 - INFO - Created directory: c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CA-3705 Creative Application
+2024-12-06 11:58:54,317 - INFO - Moved: tier5_ca-3705.md to c:\Users\U01_LEECHSEED\Desktop\_setsunadev\_1.03_GOONIRU_BUILD\bin\Tier 5\CA-3705 Creative Application
+2024-12-06 11:59:42,898 - INFO - Processing file: 14mckeeaosm_art_of_subtext_model.md
+2024-12-06 11:59:42,898 - WARNING - Unrecognized CORE value in file: 14mckeeaosm_art_of_subtext_model.md
