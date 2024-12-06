@@ -7,7 +7,7 @@ Source: "Story: Substance, Structure, Style and the Principles of Screenwriting"
 Date: 06/12/2024
 TYPE: WICKED
 KNOWLEDGE TYPE: EXPLICIT
-CORE: AS-3601 Advanced Semionics and Symbolic Interpretation
+CORE: AS-3601 Advanced Semiotics and Symbolic Interpretation
 TIER: Tier 4
 REASON: Focuses on underlying meanings, symbolic depth, and semiotic interpretation of narrative elements.
 ---
