@@ -1,7 +1,8 @@
 # Here is a draft of the process order of taking wicked sources and processing them for the purpose of placing them into the next edition of the X_1 build
 
 1. Generate a full and comprehensive summary of the book
-   1. Provide an extensive and highly detailed overview of...
+   1. Provide an extensive and highly detailed overview of _book_
+      1. use chatgpt's standard summarizer
 2. Generate a full and comprehensive summary of the book using Summary_Template
    1. Provide a comprehensive and detailed overview of the above text using the Summary_Template
 3. Combine the two summaries
@@ -15,7 +16,7 @@
 6. rename each .md file properly
 7. From that summary, extract propositions and models
 
-   1. Provide a comprehensive and detailed overview of the data below using the wicked_model_template. just provide the document. do not clutter with your conversational replies.
+   1. Provide a comprehensive and detailed overview of the data below using the **wicked_model_template**. just provide the document. do not clutter with your conversational replies.
 
 8. Add YAML data
    1.
@@ -24,5 +25,6 @@
 10. clean up meta data (titles, YAML, etc)
 11. create table of contents
 12. create visual aides
-    1. create flowcharts
-    2. fill out mindmaps
+    1. Repost the entire document below with all the mermaid diagrams. keeping consistent structure and formatting. just provide the document. do not clutter with your conversational replies.
+    2. use **mermaid_notation_template**
+    3. fill out mindmaps
