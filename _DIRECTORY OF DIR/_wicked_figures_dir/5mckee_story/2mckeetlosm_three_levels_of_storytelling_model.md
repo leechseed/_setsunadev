@@ -45,6 +45,14 @@ REASON: Explores layered narrative construction, fitting into fundamental struct
 
 McKee's Three Levels of Storytelling Model delineates storytelling into three distinct yet interdependent levels: Substance, Structure, and Style. Each level contributes to the overall impact and effectiveness of the narrative. This model emphasizes that mastering these three levels enables writers to create stories that are well-constructed, rich in meaning, and emotionally resonant.
 
+```mermaid
+mindmap
+  root((**McKee's Three Levels of Storytelling Model**))
+    **Substance**
+    **Structure**
+    **Style**
+```
+
 ### **2. Key Concepts**
 
 Outline the primary concepts or components that make up the framework. These should be broad enough to accommodate various subjects.
@@ -53,6 +61,15 @@ Outline the primary concepts or components that make up the framework. These sho
 
 - **Definition:**
   Substance pertains to the **content** of the story. It encompasses the characters, conflicts, themes, and the underlying ideas that drive the narrative forward. Substance is about the "what" of the story—the elements that provide depth and meaning.
+
+```mermaid
+mindmap
+  root((**Substance**))
+    **Characters**
+    **Conflicts**
+    **Themes**
+    **Underlying Ideas**
+```
 
 ##### **2.1.1. Components of Substance**
 
@@ -99,6 +116,14 @@ Outline the primary concepts or components that make up the framework. These sho
 - **Definition:**
   Structure refers to the **framework** that organizes the story’s events into a coherent and compelling sequence. It involves the arrangement of plot points, pacing, and the overall architecture that ensures the story unfolds in a logical and engaging manner.
 
+```mermaid
+mindmap
+  root((**Structure**))
+    **Plot Points**
+    **Pacing**
+    **Architectural Framework**
+```
+
 ##### **2.2.1. Components of Structure**
 
 ###### **2.2.1.1. Plot Points**
@@ -134,6 +159,14 @@ Outline the primary concepts or components that make up the framework. These sho
 
 - **Definition:**
   Style is the **unique voice, tone, and presentation** that distinguish one story from another. It includes the narrative techniques, dialogue, and aesthetic choices that give the story its distinctive identity and flavor.
+
+```mermaid
+mindmap
+  root((**Style**))
+    **Narrative Techniques**
+    **Dialogue**
+    **Aesthetic Choices**
+```
 
 ##### **2.3.1. Components of Style**
 
