@@ -1,7 +1,7 @@
 # Here is a draft of the process order of taking wicked sources and processing them for the purpose of placing them into the next edition of the X_1 build
 
 1. Generate a full and comprehensive summary of the book
-   1. Provide an extensive and highly detailed overview of _book_
+   1. Provide an extensive and highly detailed overview of _book_. The summary must cover the most important concept of each chapter. Each important concept must be broken down into its most finite of parts.
       1. use chatgpt's standard summarizer
 2. Generate a full and comprehensive summary of the book using Summary_Template
    1. Provide a comprehensive and detailed overview of the above text using the Summary_Template
