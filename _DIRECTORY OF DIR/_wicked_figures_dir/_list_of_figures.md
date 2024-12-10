@@ -324,589 +324,581 @@ Title: Structuring Your Novel
 Author: Weiland, K.M.
 ISBN: 9780385780401
 
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
+Title: Fiction is Folks
+Author: Peck, Robert Newton
+ISBN: 0898792665
 
-Title:
-Author:
-ISBN:
+Title: Pixar Storytelling
+Author: Movshovitz, Dean
+ISBN: 9781717736406
 
-Title:
-Author:
-ISBN:
+Title: Outlining Your Novel
+Author: Weiland, K.M.
+ISBN: 9780978924621
 
-Title:
-Author:
-ISBN:
+Title: How to Write a Damn Good Novel 2
+Author: Frey, James N.
+ISBN: 0312104782
 
-Title:
-Author:
-ISBN:
+Title: Inside Story: The Power of the Transformational Arc
+Author: Marks, Dara
+ISBN: 9780978812904
 
-Title:
-Author:
-ISBN:
+Title: Writing Your Story's Theme
+Author: Weiland, K.M.
+ISBN: 9781944936105
 
-Title:
-Author:
-ISBN:
+Title: Writing Sci-Fi, Fantasy, & Horror for Dummies
+Author: Dakan, Rick
+ISBN: 9781119839095
 
-Title:
-Author:
-ISBN:
+Title: The 21st Century Screenplay
+Author: Aronson, Linda
+ISBN: 9781742371368
 
-Title:
-Author:
-ISBN:
+Title: How to Write a Series
+Author: Rosett, Sara
+ISBN: 9781950054329
 
-Title:
-Author:
-ISBN:
+Title: Digital Character Development
+Author: O'Neill, Rob
+ISBN: 9781482250787
 
-Title:
-Author:
-ISBN:
+Title: Creating Compelling Characters for Film, TV, Theatre and Radio
+Author: Davis, Rib
+ISBN: 9781474260206
 
-Title:
-Author:
-ISBN:
+Title: Rhetorics of Fantasy
+Author: Mendlesohn, Farah
+ISBN: 9780819568670
 
-Title:
-Author:
-ISBN:
+Title: The Epic Hero
+Author: Miller, Dean A.
+ISBN: 0801862396
 
-Title:
-Author:
-ISBN:
+Title: The Routledge Creative Writing Coursebook
+Author: Mills, Paul
+ISBN: 0203499018
 
-Title:
-Author:
-ISBN:
+Title: The Philosophy of Horror
+Author: Carroll, Noel
+ISBN: 0415901456
 
-Title:
-Author:
-ISBN:
+Title: Monsters A Fan's Dilemma
+Author: Dederer, Claire
+ISBN: 9780525655114
 
-Title:
-Author:
-ISBN:
+Title: Story Machines
+Author: Sharples, Mike
+ISBN: 9780367751951
 
-Title:
-Author:
-ISBN:
+Title: Visual Character Development in Film and Television
+Author: Hanley, Michael
+ISBN: 9781138186545
 
-Title:
-Author:
-ISBN:
+Title: The Noir Thriller
+Author: Bloom, Clive
+ISBN: 9780333714713
 
-Title:
-Author:
-ISBN:
+Title: The Science of Writing Characters
+Author: Pelican, Kira-Anne
+ISBN: 9781501357251
 
-Title:
-Author:
-ISBN:
+Title: Save the Cat! The Last Book on Screenwriting That You'll Ever Need!
+Author: Snyder, Blake
+ISBN: 9781932907001
 
-Title:
-Author:
-ISBN:
+Title: Anatomy of a Premise Line
+Author: Lyons, Jeff
+ISBN: 9781138917583
 
-Title:
-Author:
-ISBN:
+Title: The First 50 Pages
+Author: Gerke, Jeff
+ISBN: 9781599632834
 
-Title:
-Author:
+Title: How to Write Great Characters
+Author: Wisehart, David
 ISBN:
 
-Title:
-Author:
-ISBN:
+Title: Society of the Spectacle
+Author: Debord, Guy
+ISBN: 0946061122
 
-Title:
-Author:
-ISBN:
+Title: From Fairytale to Film Screenplay
+Author: Murphy, Terence Patrick
+ISBN: 9781349561292
+
+Title: The Architecture of Drama
+Author: Letwin, David
+ISBN: 9780810861299
+
+Title: Character, Scene, and Story: New Tools from the Dramatic Writer's Companion
+Author: Dunne, Will
+ISBN: 9780226393476
+
+Title: Loving Fanfiction
+Author: Kelley, Brit
+ISBN: 9780367896850
+
+Title: Jungian Theory for Storytellers
+Author: Bassil-Morozow, Helena
+ISBN: 9780815356196
+
+Title: Characters in Fictional Worlds
+Author: Eder, Jens
+ISBN: 9783110232417
+
+Title: The Chicago Guide to Copyediting Fiction
+Author: Schneider, Amy J.
+ISBN: 9780226823041
+
+Title: The Dramatic Writer's Companion
+Author: Dunne, Will
+ISBN: 9780226172538
+
+Title: The Fantastic
+Author: Todorov, Tzvetan
+ISBN: 0829502459
+
+Title: Three Story Method
+Author: Thorn, J.
+ISBN: 9781393009894
+
+Title: Three Story Method: Cowriting with ChatGPT
+Author: Thorn, J.
+ISBN: 9798850103989
+
+Title: The Secrets to Creating Character Arcs
+Author: Warner, John S.
+ISBN: 9798415440931
+
+Title: The Secrets of Character
+Author: Bird, Matt
+ISBN: 9780593331224
+
+Title: The Architecture of Story
+Author: Dunne, Will
+ISBN: 9780226181882
+
+Title: Sweet Violence
+Author: Eagleton, Terry
+ISBN: 0631233598
+
+Title: How to Tell a Story
+Author: Bowles, Meg
+ISBN: 9780593139028
+
+Title: Building a Character
+Author: Stanislavski, Constantin
+ISBN: 9780878309825
+
+Title: Paratexts Thresholds of Interpretation
+Author: Lewin, Jane E.
+ISBN: 052141350
+
+Title: Writer's Guide to Character Traits
+Author: Edelstein, Linda N.
+ISBN: 9781582973906
+
+Title: Rapid Story Development
+Author: Lyons, Jeff
+ISBN: 9781138929708
+
+Title: Wired for Story
+Author: Cron, Lisa
+ISBN: 9781607742463
+
+Title: Understanding Show, Don't Tell
+Author: Hardy, Janice
+ISBN: 9780991536443
+
+Title: The Psychology Workbook for Writers
+Author: Smith, Darian
+ISBN: 9780473334475
+
+Title: Crafting the Character Arc
+Author: Jarvis, Jennie
+ISBN: 9781940761138
+
+Title: Meander Spiral Explode
+Author: Alison, Jane
+ISBN: 9781948226134
 
-Title:
-Author:
-ISBN:
+Title: The Ultimate RPG Character Backstory Guide
+Author: D'amato, James
+ISBN: 9781507208373
 
-Title:
-Author:
-ISBN:
+Title: Writing About Villans
+Author: Hall, Rayne
+ISBN: 9781519356406
 
-Title:
-Author:
-ISBN:
+Title: The Science of Storytelling
+Author: Storr, Will
+ISBN: 9780008276935
 
-Title:
-Author:
-ISBN:
+Title: The Anatomy of Prose
+Author: Black, Sacha
+ISBN: 9781913236007
 
-Title:
-Author:
-ISBN:
+Title: The Anatomy of a Best Seller
+Author: Black, Sacha
+ISBN: 9781913236168
 
-Title:
-Author:
-ISBN:
+Title: 8 Steps to Side Characters
+Author: Black, Sacha
+ISBN: 9781913236120
 
-Title:
-Author:
-ISBN:
+Title: 10 Steps to Hero
+Author: Black, Sacha
+ISBN: 9781999722548
 
-Title:
-Author:
-ISBN:
+Title: 13 Steps to Evil
+Author: Black, Sacha
+ISBN: 9781999722517
 
-Title:
-Author:
-ISBN:
+Title: How to Plot Romance Fiction
+Author: Harrington, Nina
+ISBN: 9781093321197
 
-Title:
-Author:
-ISBN:
+Title: Mastering Character Arcs
+Author: Jorstad, Lewis
+ISBN: 9781955157063
 
-Title:
-Author:
-ISBN:
+Title: Creating Characters
+Author: Lauther, Howard
+ISBN: 0786420316
 
-Title:
-Author:
-ISBN:
+Title: Writing Deep Viewpoint
+Author: Tyres, Kathy
+ISBN: 9781621840855
 
-Title:
-Author:
-ISBN:
+Title: A Straightforward Guide to Writing Romantic Fiction
+Author: Walker, Kate
+ISBN: 9781847162557
 
-Title:
-Author:
-ISBN:
+Title: Writing the Intimate Character
+Author: Rosenfield, Jordan
+ISBN: 9781440346026
 
-Title:
-Author:
-ISBN:
+Title: The Irresistible Novel
+Author: Gerke, Jeff
+ISBN: 9781599638256
 
-Title:
-Author:
-ISBN:
+Title: The Writer's Process
+Author: Janzer, Anne H.
+ISBN: 9780986406249
 
-Title:
-Author:
-ISBN:
+Title: Writing Deep Point of View
+Author: Hall, Rayne
+ISBN: 9781519231758
 
-Title:
-Author:
-ISBN:
+Title: The Idea: the Seven Elements of a Viable Story for Screen, Stage, or Fiction
+Author: Bork, Erik
+ISBN: 9781732753013
 
-Title:
-Author:
-ISBN:
+Title: The Art of Character
+Author: Corbett, David
+ISBN: 9780143121572
 
-Title:
-Author:
-ISBN:
+Title: The Road to Character
+Author: Brooks, David
+ISBN: 9780812993257
 
-Title:
-Author:
-ISBN:
+Title: Mastering Suspense Structure & Plot
+Author: Cleland, Jane K.
+ISBN: 9781599639673
 
-Title:
-Author:
-ISBN:
+Title: Writing Scary Scenes
+Author: Hall, Rayne
+ISBN: 9781519356093
 
-Title:
-Author:
-ISBN:
+Title: Writing Book Blurbs and Synopses
+Author: Hall, Rayne
+ISBN: 9781537280677
 
-Title:
-Author:
-ISBN:
+Title: Writing Fight Scenes
+Author: Hall, Rayne
+ISBN: 9781507891407
 
-Title:
-Author:
+Title: Writing Short Stories to Promote your Novel
+Author: Hall, Rayne
 ISBN:
 
-Title:
-Author:
-ISBN:
+Title: Writing About Magic
+Author: Hall, Rayne
+ISBN: 9781508830016
 
-Title:
-Author:
-ISBN:
+Title: The Word-Loss Diet
+Author: Hall, Rayne
+ISBN: 9781500604448
 
-Title:
-Author:
-ISBN:
+Title: Writing Dark Stories
+Author: Hall, Rayne
+ISBN: 9781499324891
 
-Title:
-Author:
-ISBN:
+Title: Make a Scene
+Author: Rosenfeld, Jordan
+ISBN: 9781440351419
 
-Title:
-Author:
-ISBN:
+Title: Writing Vivid Settings
+Author: Hall, Rayne
+ISBN: 9781508589563
 
-Title:
-Author:
-ISBN:
+Title: Writing Vivid Plots
+Author: Hall, Rayne
+ISBN: 9781537740225
 
-Title:
-Author:
-ISBN:
+Title: Writing Vivid Emotions
+Author: Hall, Rayne
+ISBN: 9781542578028
 
-Title:
-Author:
-ISBN:
+Title: Sound and Music for the Theatre
+Author: Kaye, Deena
+ISBN: 9780240810119
 
-Title:
-Author:
-ISBN:
+Title: Dramatic Storytelling & Narrative Design
+Author: Berger, Ross
+ISBN: 9781138319790
 
-Title:
-Author:
-ISBN:
+Title: Building Imaginary Worlds
+Author: Wolf, Mark J.P.
+ISBN: 9780415631198
 
-Title:
-Author:
-ISBN:
+Title: Writing for Emotional Impact
+Author: Iglesias, Karl
+ISBN: 9781595940285
 
-Title:
-Author:
+Title: The Essential Worldbuilding Blueprint and Workbook
+Author: Forge, Scribe
 ISBN:
 
-Title:
-Author:
-ISBN:
+Title: The Hero With a Thousand Faces
+Author: Campbell, Joseph
+ISBN: 9781577315933
 
-Title:
-Author:
-ISBN:
+Title: Film Genre for the Screenwriter
+Author: Selbo, Jule
+ISBN: 9781138020818
 
-Title:
-Author:
-ISBN:
+Title: Cinema Genre
+Author: Moine, Raphaelle
+ISBN: 9781405156509
 
-Title:
-Author:
-ISBN:
+Title: The Writer's Journey
+Author: Vogler, Christopher
+ISBN: 9781932907360
 
-Title:
-Author:
-ISBN:
+Title: The Oxford Essential Guide to Writing
+Author: Kane, Thomas S.
+ISBN: 0425176401
 
-Title:
-Author:
-ISBN:
+Title: Dialogue
+Author: McKee, Robert
+ISBN: 9781455591916
 
-Title:
-Author:
+Title: Developing a Series with a Series Bible
+Author: Pena, Wade T.
 ISBN:
 
-Title:
-Author:
-ISBN:
+Title: Storytelling for Film and Television
+Author: Dancyger, Ken
+ISBN: 9780815371786
 
-Title:
-Author:
-ISBN:
+Title: Integrated Storytelling by Design
+Author: Paulsen, Klaus Sommer
+ISBN: 9780367856991
 
-Title:
-Author:
-ISBN:
+Title: Expressive Space
+Author: Whistance-Smith, Gregory
+ISBN: 9783110723731
 
-Title:
-Author:
-ISBN:
+Title: Writing Deep Scenes
+Author: Alderson, Martha
+ISBN: 9781599638836
 
-Title:
-Author:
-ISBN:
+Title: Spellbinding Sentences
+Author: Baig, Barbara
+ISBN: 9781599639208
 
-Title:
-Author:
-ISBN:
+Title: The Compass of Character
+Author: Corbett, David
+ISBN: 9781440300868
 
-Title:
-Author:
-ISBN:
+Title: The Story Template
+Author: Deardon, Amy
+ISBN: 9780981899749
 
-Title:
-Author:
-ISBN:
+Title: The Story Solution
+Author: Edson, Eric
+ISBN: 9781615930845
 
-Title:
-Author:
-ISBN:
+Title: New Worlds Year One
+Author: Brennan, Marie
+ISBN: 9781611387292
 
-Title:
-Author:
-ISBN:
+Title: Actions & Goals
+Author: Dotson, Marshall L.
+ISBN: 9781537001401
 
-Title:
-Author:
-ISBN:
+Title: A Writer's Guide to Active Setting
+Author: Buckham, M.E.
+ISBN: 9781599639321
 
-Title:
-Author:
-ISBN:
+Title: Writing Active Hooks Book 1
+Author: Buckham, Mary
+ISBN: 9781939210241
 
-Title:
-Author:
-ISBN:
+Title: Writing Active Hooks Book 2
+Author: Buckham, Mary
+ISBN: 9781939210258
 
-Title:
-Author:
-ISBN:
+Title: Writing Active Setting Book 1
+Author: Buckham, Mary
+ISBN: 9781939210005
 
-Title:
-Author:
-ISBN:
+Title: Writing Active Setting Book 2
+Author: Buckham, Mary
+ISBN: 9781939210012
 
-Title:
-Author:
-ISBN:
+Title: Writing Active Setting Book 3
+Author: Buckham, Mary
+ISBN: 9781939210098
 
-Title:
-Author:
-ISBN:
+Title: The First Five Pages
+Author: Lukeman, Noah
+ISBN: 9780684857435
 
-Title:
-Author:
-ISBN:
+Title: The Authentic Swing
+Author: Pressfield, Steven
+ISBN: 9781936891139
 
-Title:
-Author:
-ISBN:
+Title: Writing Archetypal Character Arcs
+Author: Weiland, K.M.
+ISBN: 9781944936143
 
-Title:
-Author:
-ISBN:
+Title: Plot Perfect
+Author: Munier, Paula
+ISBN: 9781599638140
 
-Title:
-Author:
-ISBN:
+Title: The Plot Whisperer
+Author: Alderson, Martha
+ISBN: 9781440525889
 
-Title:
-Author:
-ISBN:
+Title: Dramatic Story Structure
+Author: Fink, Edward J.
+ISBN: 9780415813693
 
-Title:
-Author:
-ISBN:
+Title: Exploring Imaginary Worlds
+Author: Wolf, Mark J.P.
+ISBN: 9780367197308
 
-Title:
-Author:
-ISBN:
+Title: Deixis in Narrative
+Author: Duchan, Judith F.
+ISBN: 0805814639
 
-Title:
-Author:
-ISBN:
+Title: Text World Theory
+Author: Gavins, Joanna
+ISBN: 9780748622993
 
-Title:
-Author:
-ISBN:
+Title: Write Your Novel From the Middle
+Author: Bell, James Scott
+ISBN: 9780910355117
 
-Title:
-Author:
-ISBN:
+Title: Word Up!
+Author: Johnston, Marcia Riefer
+ISBN: 9789385152610
 
-Title:
-Author:
-ISBN:
+Title: The Anatomy of Genres
+Author: Truby, John
+ISBN: 9780374722814
 
-Title:
-Author:
-ISBN:
+Title: The Anatomy of Story
+Author: Truby, John
+ISBN: 9781429923705
 
-Title:
-Author:
-ISBN:
+Title: Rapid Story Development
+Author: Lyons, Jeff
+ISBN: 9781138929715
 
-Title:
-Author:
-ISBN:
+Title: Story Engineering
+Author: Brooks, Larry
+ISBN: 9781582979984
 
-Title:
-Author:
-ISBN:
+Title: Sizzling Story Outlines
+Author: D'Costa, H.R.
+ISBN: 9798502799775
 
-Title:
-Author:
-ISBN:
+Title: The Complete Handbook of Novel Writing
+Author: Hill, Joe
+ISBN: 9781440348396
 
-Title:
-Author:
-ISBN:
+Title: Storynomics
+Author: McKee, Robert
+ISBN: 9781538727935
 
-Title:
-Author:
-ISBN:
+Title: Action
+Author: McKee, Robert
+ISBN: 9781538726914
 
-Title:
-Author:
-ISBN:
+Title: Story Structure Architect
+Author: Schmidt, Victoria Lynn
+ISBN: 1582973253
 
-Title:
-Author:
-ISBN:
+Title: The Story Grid
+Author: Coyne, Shawn
+ISBN: 9781936891351
 
-Title:
-Author:
-ISBN:
+Title: Story Physics
+Author: Brooks, Larry
+ISBN: 9781599636894
 
-Title:
-Author:
-ISBN:
+Title: Gotham Writers' Workshop
+Author: Steele, Alexander
+ISBN: 9781582343303
 
-Title:
-Author:
-ISBN:
+Title: Character
+Author: McKee, Robert
+ISBN: 9781455591954
 
-Title:
-Author:
-ISBN:
+Title: Emotional Structure
+Author: Dunne, Peter
+ISBN: 188495653X
 
-Title:
-Author:
-ISBN:
+Title: The Longman Writer
+Author: Nadell, Judith
+ISBN: 9780321914132
 
-Title:
-Author:
-ISBN:
+Title: The Routledge Handbook of Language and Creativity
+Author: Jones, Rodney
+ISBN: 9781317439967
 
-Title:
-Author:
-ISBN:
+Title: The Coffee Break Screenwriter
+Author: Alessandra, Pilar
+ISBN: 9781615932429
 
-Title:
-Author:
-ISBN:
+Title: Tabletop Role-Playing Games and the Experience of Imagined Worlds
+Author: Mizer, Nicholas J.
+ISBN: 9783030291266
 
-Title:
-Author:
-ISBN:
+Title: The Art and Craft of Narrative Design: Writing for Games
+Author: Breault, Mike
+ISBN: 9780367191535
 
-Title:
-Author:
-ISBN:
+Title: Writing for Games: Theory and Practice
+Author: Nicklin, Hannah
+ISBN: 9781003182832
 
-Title:
-Author:
-ISBN:
+Title: Professional Techniques for Video Game Writing
+Author: Despain, Wendy
+ISBN: 9780367184780
 
-Title:
-Author:
-ISBN:
+Title: Quests: Design, Theory, and History in Games and Narratives
+Author: Howard, Jeff
+ISBN: 9781003138266
 
-Title:
-Author:
-ISBN:
+Title: Against Worldbuilding
+Author: Kennedy, Alexis
+ISBN: 9781916902404
 
 Title:
 Author:
