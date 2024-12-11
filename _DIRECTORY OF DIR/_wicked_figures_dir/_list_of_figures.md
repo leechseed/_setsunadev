@@ -900,134 +900,33 @@ Title: Against Worldbuilding
 Author: Kennedy, Alexis
 ISBN: 9781916902404
 
-Title:
-Author:
-ISBN:
+"Style and Structure in Literature" by Roman Jakobson
+"The Art of Dramatic Writing" by Lajos Egri
+"Acts of Meaning" by Jerome Bruner
+"Writing Fiction: Creative and Critical Approaches" by Amanda Boulter
+"Time and Narrative" by Paul Ricoeur
 
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
-
-Title:
-Author:
-ISBN:
+Mastering Plot Twists: How to Use Suspense, Targeted Storytelling Strategies, and Structure to Captivate Your Readers ISBN: 9781440352331
+Style: An Introduction to History, Theory, Research, and Pedagogy by Ray Brian 9781602356146
+The Symbolism of Evil by Paul Ricoeur 9780807015674
+The Emotional Craft of Fiction by Donald Maass 9781440348433
+Next Level Plot Structure: How to Write a Better Novel Using Advanced Storytelling Techniques K.M. Weiland 978-1944936181
+Zen in the Art of Writing Ray Brandbury 1877741094
+Kurt Vonnegut Pity the ReadersOn Writing Stephen King
+Sin and Syntax How to Create Wicked Good Prose by Constance Hanle
+Snow Leopard: How Legendary Writers Create A Category Of One 978-1956934458
+Voice First: A Writer's Manifesto by Sonya Huber
+Styling Your Writing by Jen McConnel
+Refuse to Be Done: How to Write and Rewrite a Novel in Three Drafts by Matt Bell
+Literary Simulation and the Digital Humanities: Reading, Editing, Writing by Manuel Portela
+Editing for the Digital Age: Mastering the Art of Online Content by Emanuele M. Barboni Dalla Costa 9798337838670
+Developmental Editing: A Handbook for Freelancers, Authors, and Publishers by Scott Norton 9780226793771
+Out of Silence, Sound. Out of Nothing, Something by Susan Griffin 9781640094109
+The Fiction Writer’s Guide to Alternate History: A Handbook on Craft, Art, and History by Jack Dann 9781350351394
+The Scholarship of Creative Writing Practice by Marshall Moore 9781350290990
+Screenwriting: The Sequence Approach by Paul Joseph Gulino 9798765104620
+Bird by Bird
+Flash!: writing the very short story by John Dufresne 9780393352368
+Write Like the Masters by Wlliam Cane 9781582975924
+Writing Short Stories Ailsa Cox 9781138955431
+"Aspects of the Novel" by E.M. Forster
