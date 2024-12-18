@@ -1,0 +1,4 @@
+- **Elements (Character and Problem-Solving Building Blocks):**
+  - **Fundamental Motivations:** Describes the smallest units of story structure that define characters' motivations, methodologies, evaluations, and purposes. These Elements are the building blocks of character psychology and behavior.
+  - **Quad-Based Arrangement:** Elements are organized into quads of four interrelated terms, ensuring complex and balanced conflict through diverse character motivations and problem-solving approaches. This structure promotes multifaceted character interactions and prevents oversimplification.
+  - **Character Atoms:** Characters embody these Elements, making them the "atoms" of personality and viewpoint within the Storymind framework. This atomic approach ensures that each character contributes uniquely to the narrative’s overall structure and thematic development.

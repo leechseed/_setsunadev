@@ -930,3 +930,8 @@ Flash!: writing the very short story by John Dufresne 9780393352368
 Write Like the Masters by Wlliam Cane 9781582975924
 Writing Short Stories Ailsa Cox 9781138955431
 "Aspects of the Novel" by E.M. Forster
+
+Diane Taylor - Repitoire and the Archive
+John Dewey - Art as Experice
+William S. Burroughs - Naked Lunch
+Charles Bukowski - Post Office
