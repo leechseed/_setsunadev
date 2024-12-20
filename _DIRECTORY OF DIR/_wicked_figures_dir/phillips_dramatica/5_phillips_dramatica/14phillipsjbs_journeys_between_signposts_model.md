@@ -37,6 +37,13 @@ REASON: Focuses on transitions between key narrative moments, enhancing temporal
 
 The **Journeys Between Signposts Framework** examines the transitions that occur between narrative Signposts within a plot, emphasizing the flow of problem-solving through distinct stages and transitions. This framework focuses on the dynamic movement and change of characters and throughlines as they navigate from one Signpost to another, highlighting the narrative's fluidity and the underlying thought processes. By analyzing how these journeys facilitate cognitive continuity and integrate emotional and logical flows, the framework provides a comprehensive understanding of narrative progression and conflict resolution. It is essential for writers, storytellers, and literary analysts aiming to create engaging, coherent, and intellectually rich narratives that effectively balance character development and plot advancement.
 
+```mermaid
+mindmap
+  root((**Journeys Between Signposts Framework**))
+    **Transition Dynamics**
+    **Thought Process Emphasis**
+```
+
 ---
 
 ### **2. Key Concepts**

@@ -37,6 +37,12 @@ REASON: Examines the narrative interplay between characters, critical to plot pr
 
 The **Relationship Story Throughline** explores the evolving relationship between the Main Character and the Influence Character, highlighting personal and emotional tensions. It examines how their interactions and conflicts shape the narrative’s emotional landscape and drive the story’s thematic elements. By focusing on the dynamics between these two central characters, this throughline adds depth to the narrative, fostering emotional resonance and enhancing the exploration of complex themes.
 
+```mermaid
+mindmap
+  root((**Replationship Story Throughline Framework**))
+    **Relationship Story Throughline**
+```
+
 ### **2. Key Concepts**
 
 Outline the primary concepts or components that make up the framework. These should be broad enough to accommodate various subjects.

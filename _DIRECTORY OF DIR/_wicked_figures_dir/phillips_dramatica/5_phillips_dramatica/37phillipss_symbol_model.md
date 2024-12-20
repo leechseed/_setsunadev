@@ -35,6 +35,12 @@ REASON: Examines the role of symbols within narrative, critical to semiotic anal
 
 "Symbols Model" is a narrative framework component that utilizes specific objects, personalities, and events to represent and convey deeper meanings within a story. Symbols operate on both visual and linguistic levels, reinforcing thematic elements and adding layers of significance to the narrative. This component ensures that abstract themes and conflicts are effectively communicated, resonating emotionally and intellectually with the audience.
 
+```mermaid
+mindmap
+  root((**Symbols Model**))
+    **Symbolic Elements**
+```
+
 ---
 
 ### **2. Key Concepts**

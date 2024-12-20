@@ -37,6 +37,13 @@ REASON: Examines the spectrum from archetypal to complex characters, critical fo
 
 The **Archetypes vs. Complex Characters Framework** delineates the contrasting approaches to character development in narrative structures. This framework explores the utilization of archetypal roles—simplified, iconic representations—and complex characters—nuanced, multifaceted personalities—to drive storytelling. Its purpose is to provide writers, storytellers, and literary analysts with a structured understanding of how different character types influence narrative dynamics, depth, and audience engagement. By examining the roles and interactions of both archetypes and complex characters, the framework underscores their significance in crafting compelling and emotionally resonant narratives.
 
+```mermaid
+mindmap
+  root((**Archetypes vs. Complex Characters Framework**))
+    **Archetypes**
+    **Complex Characters**
+```
+
 ---
 
 ### **2. Key Concepts**

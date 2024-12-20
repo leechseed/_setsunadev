@@ -35,6 +35,12 @@ REASON: Focuses on achieving emotional resonance with ethical and ideological co
 
 "Emotional Satisfaction Model" is a narrative framework component that ensures the story provides a fulfilling and resonant emotional resolution to its central conflicts. This involves delivering emotionally impactful conclusions and developments that meet the audience's expectations for closure and fulfillment. By achieving narrative closure and earned outcomes, the framework enhances the story’s ability to evoke strong emotional responses, fostering a deeper connection and lasting impression on the audience.
 
+```mermaid
+mindmap
+  root((**Emotional Satisfaction Model**))
+    **Emotional Satisfaction**
+```
+
 ---
 
 ### **2. Key Concepts**

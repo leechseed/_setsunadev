@@ -36,6 +36,12 @@ REASON: Categorizes narrative elements into types, contributing to structural an
 
 "Types" categorize the conflicts within each Fundamental Conflict Area into more specific contexts, allowing for a detailed and precise exploration of narrative challenges. This subdivision facilitates targeted storytelling and thematic alignment within each Class, enhancing the narrative’s thematic clarity and coherence by providing structured contexts for conflict exploration.
 
+```mermaid
+mindmap
+  root((**Dramatica Types Model**))
+    **Types**
+```
+
 ---
 
 ### **2. Key Concepts**

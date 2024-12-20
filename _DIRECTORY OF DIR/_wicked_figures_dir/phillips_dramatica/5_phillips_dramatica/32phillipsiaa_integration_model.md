@@ -35,6 +35,12 @@ REASON: Aligns Dramatica theory with broader narrative theories for academic and
 
 "Dramatica Integration Model" is a comprehensive framework designed to harmoniously blend structural elements with an author's unique storytelling style. This framework emphasizes the seamless amalgamation of various narrative components to ensure that the story remains methodically sound while allowing for creative expression. By balancing structural coherence with artistic innovation, Integration fosters a unified and compelling narrative construction that aligns with both the Storymind’s logical and emotional components and the author's creative vision.
 
+```mermaid
+mindmap
+  root((**Dramatica Integration Model**))
+    **Holistic Narrative Construction**
+```
+
 ---
 
 ### **2. Key Concepts**

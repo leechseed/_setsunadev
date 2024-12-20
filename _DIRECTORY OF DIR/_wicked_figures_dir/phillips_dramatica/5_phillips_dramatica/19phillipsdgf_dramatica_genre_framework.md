@@ -33,6 +33,12 @@ REASON: Maps narrative to genre, supporting typological categorization.
 
 The **Genre Framework** delineates how genre functions as the foundational element that provides the overall feel, personality, and context of a story. This framework explores the role of genre in shaping audience expectations, defining the narrative’s contextual backdrop, and influencing the Storymind’s personality. By understanding and leveraging genre conventions, authors can craft stories that either meet or creatively subvert audience expectations, establish a coherent narrative identity, and imbue the story with a distinct emotional tone and stylistic approach. The Genre Framework is essential for writers, storytellers, and literary analysts aiming to create engaging and contextually rich narratives that resonate with their intended audience.
 
+```mermaid
+mindmap
+  root((**Genre Framework**))
+    **Genre as Contextual Framework**
+```
+
 ---
 
 ### **2. Key Concepts**

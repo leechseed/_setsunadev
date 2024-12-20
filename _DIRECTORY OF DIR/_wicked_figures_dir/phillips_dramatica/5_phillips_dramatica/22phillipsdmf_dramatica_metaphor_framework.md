@@ -35,6 +35,11 @@ REASON: Explores the use of metaphor in deepening narrative meaning.
 
 "Dramatica Metaphor Framework" is a narrative framework component that employs figurative language to represent and convey deeper meanings within a story. By creating vivid and relatable comparisons, metaphors bridge the gap between abstract concepts and the audience's understanding, enhancing the emotional and intellectual impact of the narrative. This component ensures that complex ideas are communicated effectively, fostering a deeper connection between the story and its audience.
 
+```mermaid
+mindmap
+  root((**Dramatica Metaphor Framework**))
+```
+
 ---
 
 ### **2. Key Concepts**

@@ -37,6 +37,13 @@ REASON: Analyzes interconnected themes, enriching symbolic interpretation.
 
 The **Thematic Web Framework** examines how themes function as the value-bearing dimensions of a story by exploring them through interlocking and multi-dimensional contrasts. This framework emphasizes the integration of themes across multiple throughlines, ensuring comprehensive thematic exploration and the presentation of complex, multi-dimensional problems. By weaving intricate thematic strands, the framework enhances the richness and depth of storytelling, providing a layered and multifaceted narrative experience. It is essential for writers, storytellers, and literary analysts aiming to create intellectually stimulating and emotionally engaging narratives through cohesive and consistent thematic development.
 
+```mermaid
+mindmap
+  root((**Thematic Web Framework**))
+    **Thematic Web**
+    **Value Interaction**
+```
+
 ---
 
 ### **2. Key Concepts**

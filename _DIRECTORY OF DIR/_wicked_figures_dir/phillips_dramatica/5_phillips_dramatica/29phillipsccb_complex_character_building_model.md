@@ -39,6 +39,13 @@ REASON: Focuses on creating multi-dimensional, relatable characters.
 
 "Complex Character Building" is a comprehensive framework designed to enhance the depth and realism of characters within a narrative. This framework focuses on developing intricate relationships and ensuring characters exhibit realistic and dynamic interactions. By encouraging multifaceted interactions and multiple layers of opposition, as well as fostering realistic and dynamic character behaviors, the framework aims to create characters that are both relatable and compelling. This depth in character development enriches the narrative, adding layers of complexity to interpersonal dynamics and enhancing the overall emotional connection with the audience.
 
+```mermaid
+mindmap
+  root((**Complex Character Building**))
+    **Intricite Relationships**
+    **Enhanced Realism**
+```
+
 ---
 
 ### **2. Key Concepts**

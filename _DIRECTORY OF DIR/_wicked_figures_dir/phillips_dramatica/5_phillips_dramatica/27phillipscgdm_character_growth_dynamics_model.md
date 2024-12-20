@@ -39,6 +39,13 @@ REASON: Examines how characters grow and evolve, central to character analysis.
 
 "Character Growth Dynamics" is a comprehensive framework that explores the evolution of characters within a narrative. It examines the interplay between dynamic and steadfast characters, as well as the directions of their growth. This framework aims to enhance the emotional depth and thematic richness of a story by analyzing how characters change or remain consistent in response to the narrative's central conflicts and themes. By understanding and implementing these dynamics, authors can create more engaging and resonant characters that contribute meaningfully to the overall storytelling experience.
 
+```mermaid
+mindmap
+  root((**Character Growth Dynamics**))
+    **Change vs Steadfast Characters**
+    **Growth Direction**
+```
+
 ---
 
 ### **2. Key Concepts**

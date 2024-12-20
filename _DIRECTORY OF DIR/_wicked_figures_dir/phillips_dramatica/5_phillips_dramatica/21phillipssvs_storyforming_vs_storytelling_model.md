@@ -39,6 +39,13 @@ REASON: Differentiates between raw story creation and its presentation, critical
 
 "Translating Structural Meaning into Concrete Storytelling Choices" is a comprehensive framework designed to bridge the gap between the abstract structural elements of a narrative and their tangible expressions within a story. This framework guides authors through the process of defining the internal logic of their narratives (Storyforming) and effectively bringing those structures to life through detailed storytelling (Encoding). The purpose of this framework is to ensure narrative coherence, thematic depth, and emotional resonance, making stories both engaging and impactful for audiences.
 
+```mermaid
+mindmap
+  root((**Storyforming vs Storytelling Framework**))
+    **Storyforming**
+    **Storytelling**
+```
+
 ---
 
 ### **2. Key Concepts**

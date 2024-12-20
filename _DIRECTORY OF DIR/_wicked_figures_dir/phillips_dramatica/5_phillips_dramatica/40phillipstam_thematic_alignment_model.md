@@ -34,6 +34,12 @@ REASON: Ensures thematic elements align with the narrative’s logical structure
 
 **Thematic Alignment** involves the strategic alignment of a story’s themes with genre-specific conventions. This ensures that the narrative maintains coherence and appeal within its chosen genre by emphasizing relevant thematic elements and reinforcing the story’s identity. By aligning thematic content with genre norms, authors can create stories that resonate deeply with audience expectations and deliver a compelling thematic experience.
 
+```mermaid
+mindmap
+  root((**Thematic Alignment Model**))
+    **Thematic Alignment**
+```
+
 ---
 
 ### **2. Key Concepts**

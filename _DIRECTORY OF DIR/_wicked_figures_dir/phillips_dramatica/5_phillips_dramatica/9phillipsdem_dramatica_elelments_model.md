@@ -43,6 +43,12 @@ REASON: Breaks down narrative into elemental units, aligning with structural the
 
 **Elements (Character and Problem-Solving Building Blocks)** are the foundational components that define a character's motivations, methodologies, evaluations, and purposes. These Elements form the core of character psychology and behavior, enabling the construction of complex and balanced characters within the narrative. By assigning specific motivational and functional traits to each character, Elements ensure diversity in problem-solving approaches and narrative perspectives, enriching the story’s depth and complexity.
 
+```mermaid
+mindmap
+  root((**Dramatica Elements Model**))
+    **Elements**
+```
+
 ---
 
 ### **2. Key Concepts**

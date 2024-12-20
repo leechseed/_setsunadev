@@ -43,6 +43,14 @@ REASON: Provides a high-level structural breakdown of narrative elements into di
 
 Dramatica Classes Model is a comprehensive framework that defines characters based on their intrinsic motivations and functional attributes. This model emphasizes the role of characters in addressing and resolving central conflicts within a narrative through diverse problem-solving approaches and functional diversity. By organizing character elements into structured components, the framework ensures multifaceted character interactions and prevents oversimplification, thereby enriching storytelling and thematic development.
 
+```mermaid
+mindmap
+  root((**Dramatica Classes Model**))
+    **Character as Problem-Solvers**
+    **Elements -Character and Problem-Solving Building Blocks-**
+    **Classes -Domains-**
+```
+
 ---
 
 ### **2. Key Concepts**

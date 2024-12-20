@@ -39,6 +39,13 @@ REASON: Provides a cohesive model for structuring and driving narrative progress
 
 "The Story Engine" is a comprehensive framework designed to enhance narrative construction by providing authors with tools to maintain structural harmony and narrative consistency. This framework introduces mechanisms such as Storyform Calculation and Compatibility Assessment to ensure internal consistency and balanced narrative conflict. By assessing the compatibility of various story elements, the Story Engine aids authors in creating cohesive and compelling storytelling experiences, preventing narrative dissonance and fostering a unified narrative structure.
 
+```mermaid
+mindmap
+  root((**The Story Engine Model**))
+    **Conceptual Tool**
+    **Narrative Consistency**
+```
+
 ---
 
 ### **2. Key Concepts**
