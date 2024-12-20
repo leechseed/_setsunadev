@@ -1,12 +1,16 @@
-### **1. Title: The Four Throughlines Framework**
+---
+### **Overall Story Throughline**
+
+#### **1. Title: Overall Story Throughline**
 
 #### **1.1. Definition**
 
-The Four Throughlines Framework posits that every complete story comprises four interrelated perspectives, known as throughlines. These throughlines represent distinct narrative viewpoints that collectively provide a comprehensive and multi-dimensional structure to the narrative. By integrating these perspectives, the framework ensures that a story addresses universal conflicts, individual character arcs, and thematic elements, thereby enhancing the depth and coherence of the storytelling process. Its significance lies in offering a structured approach to crafting narratives that are both engaging and logically consistent across multiple dimensions.
-
+The Overall Story Throughline encompasses the primary conflict that involves all characters, setting the stage for the narrative’s main tension. It represents the universal challenge that the story’s characters must collectively address and resolve. This throughline establishes the central tension that drives the narrative forward, ensuring that all character arcs and plot developments are aligned with the overarching conflict.
 ---
 
 ### **2. Key Concepts**
+
+Outline the primary concepts or components that make up the framework. These should be broad enough to accommodate various subjects.
 
 #### **2.1. Overall Story Throughline**
 
@@ -52,10 +56,7 @@ The Four Throughlines Framework posits that every complete story comprises four 
 ### **Core Components Overview**
 
 - **Overall Story Throughline**
-
   - Big Picture Conflict
   - Collective Perspective
-
-<!-- Additional Throughlines can be added here as more information becomes available -->
 
 ---

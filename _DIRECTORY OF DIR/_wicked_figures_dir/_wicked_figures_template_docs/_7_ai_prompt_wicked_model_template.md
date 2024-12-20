@@ -1,3 +1,5 @@
+Save the following template as wicked_model_template
+
 ### **1. Title: [Your Framework/Model Title Here]**
 
 #### **1.1. Definition**
@@ -13,7 +15,7 @@ Outline the primary concepts or components that make up the framework. These sho
 #### **2.1. [First Key Concept]**
 
 - **Definition:**
-  Provide a definition for this key concept, explaining its role within the framework.
+  Provide a definition for this key concept, explaining its role within the framework. Add additional components as needed.
 
 ##### **2.1.1. Components of [First Key Concept]**
 
