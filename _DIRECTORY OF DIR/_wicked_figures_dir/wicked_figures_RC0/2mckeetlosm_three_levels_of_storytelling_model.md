@@ -1,6 +1,6 @@
 ---
 UID: McKeeTLOSM
-Title: "McKee's Three Levels of Storytelling MOdel"
+Title: "McKee's Three Levels of Storytelling Model"
 Author: McKee
 ISBN10: 9780060391683
 Source: "Story: Substance, Structure, Style and the Principles of Screenwriting"
