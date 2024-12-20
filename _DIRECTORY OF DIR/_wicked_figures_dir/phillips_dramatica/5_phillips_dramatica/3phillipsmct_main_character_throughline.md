@@ -27,6 +27,13 @@ REASON: Focuses on the main character's journey and role within the narrative.
 
 ---
 
+```mermaid
+mindmap
+  root((**Main Character Throughline Framework**))
+    **Main Character Throughline**
+
+```
+
 ### **Main Character Throughline Model**
 
 #### **1. Title: Main Character Throughline**

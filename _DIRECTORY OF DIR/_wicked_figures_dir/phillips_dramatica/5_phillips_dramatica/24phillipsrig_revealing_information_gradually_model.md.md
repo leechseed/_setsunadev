@@ -39,6 +39,13 @@ REASON: Focuses on the gradual revelation of narrative details, central to reade
 
 "Revealing Information Gradually" is a narrative framework designed to manage the timing and manner in which information is disclosed within a story. This approach ensures sustained tension, engagement, and clarity by preventing information overload and maintaining suspense. By strategically unfolding critical plot points and character developments, and allowing the audience’s understanding to grow organically, this framework fosters a deeper emotional and intellectual connection between the audience and the narrative.
 
+```mermaid
+mindmap
+  root((**Revealing Information Gradually Model**))
+    **Controlled Discourse**
+    **Storytelling**
+```
+
 ---
 
 ### **2. Key Concepts**

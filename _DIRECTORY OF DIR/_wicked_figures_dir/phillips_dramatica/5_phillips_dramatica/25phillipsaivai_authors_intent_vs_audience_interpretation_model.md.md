@@ -35,6 +35,12 @@ REASON: Explores the interaction between authorial intent and audience interpret
 
 "Authors Intent vs Audience Interpretation Model" is a comprehensive framework that explores the dynamic relationship between an author's intentions and the audience's perceptions and reactions. This framework examines how narratives are received, understood, and emotionally engaged with by audiences. By analyzing the interplay between guided interpretation and consistent storyform, the framework aims to enhance narrative effectiveness, ensuring that stories resonate deeply and meaningfully with diverse audiences.
 
+```mermaid
+mindmap
+  root((**Authors Intent vs Audience Interpretation Model**))
+
+```
+
 ---
 
 ### **2. Key Concepts**

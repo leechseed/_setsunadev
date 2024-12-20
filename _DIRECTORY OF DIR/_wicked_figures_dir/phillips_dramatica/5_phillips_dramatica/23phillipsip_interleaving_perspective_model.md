@@ -35,6 +35,11 @@ REASON: Examines how perspectives are layered within the narrative.
 
 "Interleaving Perspective Model" is a narrative framework designed to integrate multiple narrative threads—Overall, Main, Influence, and Relationship—into a unified and engaging story. This framework ensures that each throughline contributes meaningfully to the story's progression without causing narrative dissonance. By interleaving perspectives and maintaining balanced pacing, the framework enhances the story’s complexity, depth, and audience engagement, making the multifaceted narrative accessible and compelling.
 
+```mermaid
+mindmap
+  root((**Interleaving Perspective Model**))
+```
+
 ---
 
 ### **2. Key Concepts**

@@ -40,6 +40,13 @@ REASON: Focuses on aligning character arcs with overarching thematic elements.
 
 **Aligning Theme with Character Model** involves strategically integrating a story’s themes into its characters’ motivations, behaviors, and development. This alignment ensures that characters embody and reflect the story’s thematic elements, making their actions and growth deeply rooted in the narrative’s central messages. By aligning themes with character development, authors can create more meaningful and resonant characters whose personal journeys reinforce and explore the story’s underlying themes.
 
+```mermaid
+mindmap
+  root((**Aligning Theme with Character Model**))
+    **Informed Motivations**
+    **Thematic Consistency**
+```
+
 ---
 
 ### **2. Key Concepts**

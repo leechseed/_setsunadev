@@ -39,6 +39,13 @@ REASON: Takes a comprehensive approach to representing narrative structure.
 
 "Dramatica Holistic Representation Model" is a comprehensive framework designed to mirror the complexities of the human mental process within a narrative structure. This framework emphasizes the use of comprehensive symbolism and the interdependence of narrative elements to create a cohesive and cognitively rich storytelling experience. By treating every narrative component—such as characters, plot points, themes, and conflicts—as symbolic facets of the human mind, Holistic Representation ensures that the story operates as an integrated unit. This approach fosters narrative coherence, depth, and thematic richness, enabling the audience to engage deeply with the story's intellectual and emotional dimensions.
 
+```mermaid
+mindmap
+  root((**Dramatica Holistic Representation Model**))
+    **Facets of the Mental Process-**
+    **Balanced Storytelling**
+```
+
 ---
 
 ### **2. Key Concepts**

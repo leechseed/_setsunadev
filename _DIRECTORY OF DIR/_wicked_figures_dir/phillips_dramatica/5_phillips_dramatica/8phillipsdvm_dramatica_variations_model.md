@@ -37,6 +37,12 @@ REASON: Focuses on variations within narrative elements, enriching story structu
 
 **Variations (Theme Elements)** are components that introduce thematic depth and complexity to characters by embodying opposing and nuanced concepts. This ensures that characters not only contribute to the narrative's conflict resolution but also enhance its thematic exploration. By incorporating Variations, the narrative gains layers of meaning, allowing for a more sophisticated and engaging storytelling experience that resonates with diverse audience perspectives.
 
+```mermaid
+mindmap
+  root((**Dramatica Variations Model**))
+    **Variations -Theme Elements-**
+```
+
 ---
 
 ### **2. Key Concepts**

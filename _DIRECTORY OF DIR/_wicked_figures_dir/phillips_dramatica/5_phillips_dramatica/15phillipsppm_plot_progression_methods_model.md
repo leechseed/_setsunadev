@@ -37,6 +37,13 @@ REASON: Explores methods of advancing plot, critical for narrative progression.
 
 The **Plot Progression Methods Framework** delineates the strategies employed to advance a narrative through balanced rhythms and sustained momentum. This framework emphasizes the importance of harmonizing static Signposts with dynamic Journeys to mirror the complexities of real-life problem-solving. By integrating Rhythmic Balance and Narrative Momentum, the framework ensures that the story maintains its momentum while allowing for reflection and development. It serves as a guide for writers, storytellers, and literary analysts to construct narratives that are both engaging and coherent, preventing stagnation and fostering continuous audience investment.
 
+```mermaid
+mindmap
+  root((**Plot Progression Methods Framework**))
+    **Rhythmic Balance**
+    **Narrative Momentum**
+```
+
 ---
 
 ### **2. Key Concepts**

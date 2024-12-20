@@ -41,6 +41,13 @@ REASON: Explores time markers in narrative progression, aiding in temporal struc
 
 **Signposts** are fixed points in the narrative that represent significant stages of growth or change within each throughline. They function as narrative milestones that track the progression of the story’s conflict and thematic development, providing a structured progression for the plot. By establishing clear milestones, Signposts ensure that the narrative maintains a coherent and methodical advancement, guiding both the characters and the audience through the story’s transformative journey.
 
+```mermaid
+mindmap
+  root((**Signposts Model**))
+    **Signposts**
+    **Plotflow**
+```
+
 ---
 
 ### **2. Key Concepts**

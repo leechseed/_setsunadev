@@ -34,6 +34,12 @@ REASON: Ensures alignment of structural elements for narrative integrity.
 
 **Structural Alignment** involves the strategic alignment of a story’s structure with genre-specific conventions. This ensures that the narrative maintains coherence and appeal within its chosen genre by emphasizing relevant structural classes and elements. By aligning structural components with genre norms, authors can create stories that resonate with audience expectations and deliver a satisfying genre-specific experience.
 
+```mermaid
+mindmap
+  root((**Structural Alignment Model**))
+    **Structural Alignment**
+```
+
 ---
 
 ### **2. Key Concepts**

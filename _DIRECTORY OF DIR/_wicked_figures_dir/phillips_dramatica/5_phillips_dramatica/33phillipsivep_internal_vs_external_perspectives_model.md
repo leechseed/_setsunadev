@@ -39,6 +39,13 @@ REASON: Contrasts internal and external perspectives in narrative delivery.
 
 "Internal vs. External Perspectives" is a comprehensive framework that explores the dual viewpoints through which a narrative can be experienced and analyzed. This framework delineates the subjective, character-focused internal perspective and the objective, broader conflict-oriented external perspective. By balancing these two viewpoints, the framework ensures a multifaceted and balanced storytelling approach that fosters deep audience engagement and a holistic understanding of the narrative's central conflicts and themes.
 
+```mermaid
+mindmap
+  root((**Internal vs. External Perspectives Framework**))
+    **Internal View -Subjective-**
+    **External View -Objective-**
+```
+
 ---
 
 ### **2. Key Concepts**

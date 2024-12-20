@@ -33,6 +33,12 @@ REASON: Highlights characters' roles as agents of problem-solving, central to na
 
 Character Construction as Problem-Solvers is a framework that defines characters based on their essential motivational and functional elements. This model emphasizes the role of characters in addressing and resolving central conflicts within a narrative through diverse problem-solving approaches and functional diversity. The framework aims to enrich storytelling by ensuring that each character contributes uniquely to conflict resolution, fostering a dynamic and multifaceted narrative.
 
+```mermaid
+mindmap
+  root((**Character Construction as Problem-Solvers**))
+    **Character as Problem-Solvers**
+```
+
 ---
 
 ### **2. Key Concepts**

@@ -37,6 +37,13 @@ REASON: Examines thematic oppositions, contributing to deeper symbolic analysis.
 
 The **Thematic Contrast Framework** explores how themes function as the value-bearing dimensions of a story, primarily through the use of contrasts and opposing concepts. This framework emphasizes the role of thematic conflicts—where paired variations of opposing values create narrative tension—and the interaction of these values to deepen the story’s moral and philosophical dimensions. By analyzing how themes clash and interact, the framework provides a structured approach for writers, storytellers, and literary analysts to enhance narrative depth and engage audiences on an intellectual and emotional level. The framework is significant for its ability to enrich storytelling by embedding complex moral and ethical debates within the narrative structure.
 
+```mermaid
+mindmap
+  root((**Thematic Contrast Framework**))
+    **Thematic Conflict -Counterpoint-**
+    **Value Interaction**
+```
+
 ---
 
 ### **2. Key Concepts**
