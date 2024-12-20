@@ -21,7 +21,7 @@
 8. Add YAML data
    1.
 9. Properly align model/framework to core competency
-   1. Which category does the following belong best?
+   1. "map Author's frameworks/models to the provided CORE categories based on the primary focus of each framework, aligning it with the domain that best captures its narrative function"
 10. clean up meta data (titles, YAML, etc)
 11. create table of contents
 12. create visual aides
