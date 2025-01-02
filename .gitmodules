@@ -1,0 +1,3 @@
+[submodule "hugo-dramatica-draft-v1/themes/hugo-book"]
+	path = hugo-dramatica-draft-v1/themes/hugo-book
+	url = https://github.com/alex-shpak/hugo-book
