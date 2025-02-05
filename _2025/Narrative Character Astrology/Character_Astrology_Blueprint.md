@@ -26,7 +26,7 @@ Below is a **revised, expanded version** of the original reference text, with al
 
 ---
 
-## 1. Identify the Character’s Astrological “Core”
+## 1. Identify the Character’s Astrological “Core”whwh
 
 ### 1.1 Pick Three Essential Placements
 
