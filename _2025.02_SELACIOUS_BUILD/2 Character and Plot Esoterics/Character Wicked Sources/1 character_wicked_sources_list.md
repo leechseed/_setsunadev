@@ -1,13 +1,13 @@
 - **Writing Unforgettable Characters** – Bell, James Scott
-- Character - McKee
-- Stanislavsky - An Actor Prepares
-- Building A Character - Stanislavski
-- The Art of Character - Corbett, David
+- **Character - McKee**
+- **Stanislavsky - An Actor Prepares**
+- **Building A Character - Stanislavski**
+- **The Art of Character - Corbett, David**
 - - **The Compass of Character** – Corbett, David
-- - **Writing the Intimate Character** – Rosenfield, Jordan
+- - Writing the Intimate Character – Rosenfield, Jordan
 - The Complete Guide to Populating Your Fiction - Writers Digjest
 - Weiland - Character Arcs
-- A Writer's Guide to Characterization - Schmidt, Victoria Lynn
+- **A Writer's Guide to Characterization**- Schmidt, Victoria Lynn
 
 ON WOMEN
 
