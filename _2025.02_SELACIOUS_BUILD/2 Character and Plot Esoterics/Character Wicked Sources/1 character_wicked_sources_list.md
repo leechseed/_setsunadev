@@ -4,9 +4,9 @@
 - **Building A Character - Stanislavski**
 - **The Art of Character - Corbett, David**
 - - **The Compass of Character** – Corbett, David
-- - Writing the Intimate Character – Rosenfield, Jordan
-- The Complete Guide to Populating Your Fiction - Writers Digjest
-- Weiland - Character Arcs
+    **- - Writing the Intimate Character – Rosenfield, Jordan**
+    **- The Complete Guide to Populating Your Fiction - Writers Digjest**
+    **- Weiland - Character Arcs**
 - **A Writer's Guide to Characterization**- Schmidt, Victoria Lynn
 
 ON WOMEN
