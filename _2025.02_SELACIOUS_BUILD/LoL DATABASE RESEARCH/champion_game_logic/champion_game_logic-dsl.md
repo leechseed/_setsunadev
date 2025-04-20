@@ -1,0 +1,35 @@
+champion_game_logic {
+logic_id integer pk increments unique
+champion_id integer > champion.champion_id
+base_role varchar
+sub_role varchar
+attack_type varchar
+damage_type varchar
+resource_type varchar
+primary_scaling_stat varchar
+secondary_scaling_stat varchar
+mobility_rating integer
+crowd_control_rating integer
+burst_rating integer
+sustain_rating integer
+utility_rating integer
+difficulty_rating integer
+base_hp integer
+base_mp integer
+base_attack_damage integer
+base_armor integer
+base_magic_resist integer
+base_attack_speed float
+base_move_speed integer
+hp_per_level float
+mp_per_level float
+attack_damage_per_level float
+armor_per_level float
+magic_resist_per_level float
+attack_speed_per_level float
+scaling_notes varchar
+behavior_profile varchar
+kit_synergy_tags varchar
+anti_synergy_tags varchar
+design_flags varchar
+}

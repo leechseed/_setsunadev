@@ -1,0 +1,66 @@
+{
+  "id": {
+    "type": "INTEGER",
+    "description": "Primary key"
+  },
+  "name": {
+    "type": "TEXT",
+    "description": "Full character name"
+  },
+  "age": {
+    "type": "INTEGER",
+    "description": "Approximate or precise chronological age"
+  },
+  "gender": {
+    "type": "TEXT",
+    "description": "Character's identified gender"
+  },
+  "role": {
+    "type": "TEXT",
+    "description": "Narrative or world function"
+  },
+  "tags": {
+    "type": "TEXT (CSV)",
+    "description": "CSV of general-purpose labels"
+  },
+  "emotional_state": {
+    "type": "TEXT",
+    "description": "Current dominant emotional tone"
+  },
+  "desire": {
+    "type": "TEXT",
+    "description": "What the character actively wants"
+  },
+  "truth": {
+    "type": "TEXT",
+    "description": "Deeper reality they must embrace"
+  },
+  "lie_they_believe": {
+    "type": "TEXT",
+    "description": "False belief holding them back"
+  },
+  "arc_type": {
+    "type": "TEXT",
+    "description": "Character arc: Positive, Negative, or Flat"
+  },
+  "occupation": {
+    "type": "TEXT",
+    "description": "Primary job or societal function"
+  },
+  "relationship_web": {
+    "type": "JSON",
+    "description": "Serialized map of key relational ties"
+  },
+  "is_active": {
+    "type": "BOOLEAN",
+    "description": "Simulation on/off switch"
+  },
+  "created_at": {
+    "type": "TIMESTAMP",
+    "description": "Creation time"
+  },
+  "updated_at": {
+    "type": "TIMESTAMP",
+    "description": "Last modification time"
+  }
+}

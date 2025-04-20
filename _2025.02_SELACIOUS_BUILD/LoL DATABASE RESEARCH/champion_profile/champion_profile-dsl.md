@@ -1,0 +1,29 @@
+champion_profile {
+champion_profile_id integer pk increments unique
+champion_id integer > champion.champion_id
+sex_gender integer > sex_gender.sex_gender_id
+game_logic_id integer > champion_game_logic.logic_id
+region_of_origin varchar
+current_allegiance varchar
+species_race varchar
+life_stage varchar
+narrative_archetype varchar
+personality_trait_dominants varchar
+narrative_status varchar
+occupation_function varchar
+motivations varchar
+backstory_summary varchar
+key_relationships varchar
+transformations_or_evolutions varchar
+affiliated_events varchar
+mythic_or_cosmic_role varchar
+thematic_keywords varchar
+visual_theme varchar
+cultural_influence varchar
+quote_lines varchar
+alternate_universe_alignments varchar
+role_in_crossmedia varchar
+sexual_archetype varchar
+mental_sexual_theme varchar
+visual_sexual_theme varchar
+}

@@ -1,0 +1,20 @@
+field_name,canonical_category,description,sources,type,status
+name,core_identity,Full character name.,"['WritersDigest', 'ScottBell', 'McKee']",text,✅ merged
+age,core_identity,Approximate or precise chronological age.,"['WritersDigest', 'Corbett', 'Edelstein']",integer,✅ merged
+fatal_flaw,psych_profile,Deep-seated weakness that drives destructive behavior.,"['Schmidt', 'ScottBell']",text,🔄 in review
+desire,motivation_arc,What the character actively wants in the story.,"['Corbett', 'Weiland', 'CompassOfCharacter']",text,✅ merged
+emotional_state,psych_profile,Current dominant emotional tone.,"['McKee', 'WriterDigest', 'Astrology']",text,✅ merged
+wound,backstory_trauma,Backstory injury that shapes worldview and fear.,"['Weiland', 'Corbett', 'Schmidt']",text,✅ merged
+arc_type,narrative_arc,"Character’s transformational arc: Positive, Negative, or Flat.","['Weiland', 'ScottBell']",text,✅ merged
+tags,metadata,Arbitrary labels for filtering or organizing characters.,"['WriterDigest', 'Overview', 'Astrology']",csv_text,✅ merged
+created_at,system_metadata,Timestamp for when this character record was created.,['Internal Standard'],timestamp,✅ merged
+truth,motivation_arc,The deeper reality the character must embrace to grow.,"['Weiland', 'CompassOfCharacter']",text,✅ merged
+lie_they_believe,motivation_arc,False belief holding the character back from growth.,"['Weiland', 'Schmidt']",text,✅ merged
+ghost,backstory_trauma,Past wound or event that haunts the character.,"['Weiland', 'ScottBell']",text,✅ merged
+empathy_hooks,reader_engagement,Traits designed to provoke empathy from the reader.,['ScottBell'],list,✅ merged
+transformation,narrative_arc,End result of the character’s arc or change.,"['Weiland', 'ScottBell', 'Schmidt']",text,✅ merged
+values_and_beliefs,psych_profile,Ideological or moral system that drives behavior.,"['ScottBell', 'Corbett', 'McKee']",text,✅ merged
+personality_traits,psych_profile,Descriptive traits that define baseline behavior.,"['WritersDigest', 'Edelstein']",list,✅ merged
+occupation,social_context,Job or societal function within the story world.,"['ScottBell', 'Edelstein', 'WriterDigest']",text,✅ merged
+relationship_web,relational_dynamics,Structural map of character’s close connections.,"['CompassOfCharacter', 'Corbett', 'Schmidt']",json,✅ merged
+subtextual_layering,pov_depth,Hidden emotional or narrative meaning beneath dialogue and action.,"['Rosenfeld', 'Stanislavski']",boolean,✅ merged

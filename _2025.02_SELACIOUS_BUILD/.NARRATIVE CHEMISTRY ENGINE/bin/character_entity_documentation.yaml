@@ -1,0 +1,42 @@
+Name: 
+Arc_Type: Positive / Negative / Flat
+Voice: 
+Core_Identity:
+  Age: 
+  Gender: 
+  Role: 
+  Affiliation: 
+  Backstory: 
+Psych_Profile:
+  Personality_Traits: []
+  Flaws: 
+  Fears: 
+  Desire: {'Outer_Goal': '', 'Inner_Need': ''}
+  Values_and_Beliefs: 
+  Contradictions: 
+  Self_Image: 
+Narrative_Arc:
+  Ghost: 
+  Lie_They_Believe: 
+  Truth: 
+  Transformation: 
+  Driving_Conflict: 
+  Climactic_Choice: 
+POV_Characterization:
+  Voice_Tone: 
+  Subtextual_Layering: True
+  Sensory_Anchoring: 
+  Bias_and_Subjectivity: 
+Relational_Logic:
+  Family_Dynamics: 
+  Romantic_Life: 
+  Relationship_Web: {}
+Story_Function:
+  Archetype: 
+  Empathy_Hooks: []
+  Tags: []
+Metadata:
+  UID: 
+  Created_At: 
+  Updated_At: 
+  Templates_Used: []
