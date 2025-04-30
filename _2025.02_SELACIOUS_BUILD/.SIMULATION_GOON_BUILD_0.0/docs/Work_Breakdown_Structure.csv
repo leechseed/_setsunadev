@@ -1,0 +1,11 @@
+﻿Group,Task Name,Assignee,Sprint,Status,Tags,Dependencies,Docs
+Initiation,Create Project Charter,Hubertimus,Sprint 0,Not Started,"charter,documentation",,simulation_manifesto.md
+Initiation,Document Stakeholder Goals,Hubertimus,Sprint 0,Not Started,"stakeholder,documentation",,stakeholder_goals_system_implications.md
+Planning,Work Breakdown Structure,Hubertimus,Sprint 0,Not Started,"planning,wbs",,development_roadmap.md
+Execution,Develop TickEngine Core,AI Agent,Sprint 1,Not Started,"engine,tick,timeline",Work Breakdown Structure,tick_cycle_flow_and_execution_lifecycle.md
+Execution,Integrate GURPSCore Logic,AI Agent,Sprint 2,Not Started,"stat,logic,core",Develop TickEngine Core,system_architecture_overview.md
+Execution,Plugin Loader + Archetype Framework,AI Agent,Sprint 3,Not Started,"plugin,archetype",Integrate GURPSCore Logic,plugin_extension_framework.md
+Execution,Timeline Forking Engine,AI Agent,Sprint 4,Not Started,"timeline,fork",Plugin Loader + Archetype Framework,timeline_forking_replay_engine.md
+Monitoring,QA Symbolic Tagging System,AI Agent,Sprint 5,Not Started,"QA,symbolic,tagging",Timeline Forking Engine,conceptual_layer.md
+Closure,Export Output System (YAML/MD),TBD,Sprint 6,Not Started,"export,yaml,markdown",QA Symbolic Tagging System,output_system_specification.md
+Closure,Project Closure Summary,Hubertimus,Sprint 6,Not Started,"summary,closure",Export Output System (YAML/MD),

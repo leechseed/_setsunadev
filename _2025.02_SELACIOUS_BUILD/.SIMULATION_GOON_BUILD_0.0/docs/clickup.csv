@@ -1,0 +1,127 @@
+# Rebuild the full expanded task list with full support for: dependencies, sprints, parent tasks, and cleaned text
+
+full_tasks = [
+    # INITIATION
+    {
+        "Task Name": "Create Project Charter",
+        "Phase": "Initiation",
+        "Assignee": "Hubertimus",
+        "Tags": "charter,documentation",
+        "Description": "Define project purpose, scope, and vision. Ref: simulation_manifesto.md",
+        "Parent Task": "",
+        "Sprint": "Sprint 0",
+        "Dependencies": ""
+    },
+    {
+        "Task Name": "Document Stakeholder Goals",
+        "Phase": "Initiation",
+        "Assignee": "Hubertimus",
+        "Tags": "stakeholder,documentation",
+        "Description": "Map stakeholder intentions to system outcomes. Ref: stakeholder_goals_system_implications.md",
+        "Parent Task": "",
+        "Sprint": "Sprint 0",
+        "Dependencies": ""
+    },
+    {
+        "Task Name": "Work Breakdown Structure",
+        "Phase": "Planning",
+        "Assignee": "Hubertimus",
+        "Tags": "planning,wbs,roadmap",
+        "Description": "Outline core domains and components. Ref: development_roadmap.md",
+        "Parent Task": "",
+        "Sprint": "Sprint 0",
+        "Dependencies": ""
+    },
+
+    # EXECUTION
+    {
+        "Task Name": "Develop TickEngine Core",
+        "Phase": "Execution",
+        "Assignee": "AI Agent",
+        "Tags": "engine,tick,timeline",
+        "Description": "Implement tick-based simulation cycle and timeline logging.",
+        "Parent Task": "",
+        "Sprint": "Sprint 1",
+        "Dependencies": "Work Breakdown Structure"
+    },
+    {
+        "Task Name": "Integrate GURPSCore Logic",
+        "Phase": "Execution",
+        "Assignee": "AI Agent",
+        "Tags": "stat,logic,core",
+        "Description": "Stat-based outcome resolver using GURPS framework.",
+        "Parent Task": "",
+        "Sprint": "Sprint 2",
+        "Dependencies": "Develop TickEngine Core"
+    },
+    {
+        "Task Name": "Plugin Loader + Archetype Framework",
+        "Phase": "Execution",
+        "Assignee": "AI Agent",
+        "Tags": "plugin,archetype,modular",
+        "Description": "Enable narrative extensions via symbolic plugin architecture.",
+        "Parent Task": "",
+        "Sprint": "Sprint 3",
+        "Dependencies": "Integrate GURPSCore Logic"
+    },
+    {
+        "Task Name": "Timeline Forking Engine",
+        "Phase": "Execution",
+        "Assignee": "AI Agent",
+        "Tags": "timeline,fork,replay",
+        "Description": "Allow simulation to branch, reverse, and replay alternate realities.",
+        "Parent Task": "",
+        "Sprint": "Sprint 4",
+        "Dependencies": "Plugin Loader + Archetype Framework"
+    },
+
+    # MONITORING
+    {
+        "Task Name": "QA Symbolic Tagging System",
+        "Phase": "Monitoring",
+        "Assignee": "AI Agent",
+        "Tags": "QA,symbolic,tagging",
+        "Description": "Validate coverage and coherence of symbolic metadata.",
+        "Parent Task": "",
+        "Sprint": "Sprint 5",
+        "Dependencies": "Timeline Forking Engine"
+    },
+
+    # CLOSURE
+    {
+        "Task Name": "Export Output System (YAML/MD)",
+        "Phase": "Closure",
+        "Assignee": "TBD",
+        "Tags": "export,yaml,markdown",
+        "Description": "Finalize and lock export schemas. Ref: output_system_specification.md",
+        "Parent Task": "",
+        "Sprint": "Sprint 6",
+        "Dependencies": "QA Symbolic Tagging System"
+    },
+    {
+        "Task Name": "Project Closure Summary",
+        "Phase": "Closure",
+        "Assignee": "Hubertimus",
+        "Tags": "summary,closure,archive",
+        "Description": "Conduct retrospective and lock simulation v1 outputs and schema.",
+        "Parent Task": "",
+        "Sprint": "Sprint 6",
+        "Dependencies": "Export Output System (YAML/MD)"
+    }
+]
+
+# Convert to DataFrame and clean fields
+df_full = pd.DataFrame(full_tasks)
+clean_df_full = df_full.applymap(clean_field)
+
+# Export the full version safely
+final_path = "/mnt/data/ClickUp_Import_Tasks_FULL_FIXED.csv"
+clean_df_full.to_csv(
+    final_path,
+    index=False,
+    encoding="utf-8-sig",           # BOM for Windows/ClickUp compatibility
+    quoting=csv.QUOTE_MINIMAL,      # Only quote when needed
+    lineterminator="\n"
+)
+
+final_path
