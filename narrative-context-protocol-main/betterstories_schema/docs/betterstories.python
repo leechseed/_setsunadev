@@ -1,0 +1,1559 @@
+from enum import Enum
+from typing import List, Any, Optional, TypeVar, Callable, Type, cast
+
+
+T = TypeVar("T")
+EnumT = TypeVar("EnumT", bound=Enum)
+
+
+def from_list(f: Callable[[Any], T], x: Any) -> List[T]:
+    assert isinstance(x, list)
+    return [f(y) for y in x]
+
+
+def from_str(x: Any) -> str:
+    assert isinstance(x, str)
+    return x
+
+
+def to_enum(c: Type[EnumT], x: Any) -> EnumT:
+    assert isinstance(x, c)
+    return x.value
+
+
+def to_class(c: Type[T], x: Any) -> dict:
+    assert isinstance(x, c)
+    return cast(Any, x).to_dict()
+
+
+def from_none(x: Any) -> Any:
+    assert x is None
+    return x
+
+
+def from_union(fs, x):
+    for f in fs:
+        try:
+            return f(x)
+        except:
+            pass
+    assert False
+
+
+def from_bool(x: Any) -> bool:
+    assert isinstance(x, bool)
+    return x
+
+
+def from_int(x: Any) -> int:
+    assert isinstance(x, int) and not isinstance(x, bool)
+    return x
+
+
+class TypeEnum(Enum):
+    INTEGER = "integer"
+    STRING = "string"
+
+
+class AppreciationBeatEnum:
+    type: TypeEnum
+    enum: List[str]
+
+    def __init__(self, type: TypeEnum, enum: List[str]) -> None:
+        self.type = type
+        self.enum = enum
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'AppreciationBeatEnum':
+        assert isinstance(obj, dict)
+        type = TypeEnum(obj.get("type"))
+        enum = from_list(from_str, obj.get("enum"))
+        return AppreciationBeatEnum(type, enum)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = to_enum(TypeEnum, self.type)
+        result["enum"] = from_list(from_str, self.enum)
+        return result
+
+
+class Story:
+    ref: str
+
+    def __init__(self, ref: str) -> None:
+        self.ref = ref
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Story':
+        assert isinstance(obj, dict)
+        ref = from_str(obj.get("$ref"))
+        return Story(ref)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["$ref"] = from_str(self.ref)
+        return result
+
+
+class PurpleProperties:
+    dynamic: Story
+    vector: Story
+
+    def __init__(self, dynamic: Story, vector: Story) -> None:
+        self.dynamic = dynamic
+        self.vector = vector
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'PurpleProperties':
+        assert isinstance(obj, dict)
+        dynamic = Story.from_dict(obj.get("dynamic"))
+        vector = Story.from_dict(obj.get("vector"))
+        return PurpleProperties(dynamic, vector)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["dynamic"] = to_class(Story, self.dynamic)
+        result["vector"] = to_class(Story, self.vector)
+        return result
+
+
+class DynamicAllOf:
+    ref: Optional[str]
+    type: Optional[str]
+    properties: Optional[PurpleProperties]
+    required: Optional[List[str]]
+    additional_properties: Optional[bool]
+
+    def __init__(self, ref: Optional[str], type: Optional[str], properties: Optional[PurpleProperties], required: Optional[List[str]], additional_properties: Optional[bool]) -> None:
+        self.ref = ref
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'DynamicAllOf':
+        assert isinstance(obj, dict)
+        ref = from_union([from_str, from_none], obj.get("$ref"))
+        type = from_union([from_str, from_none], obj.get("type"))
+        properties = from_union([PurpleProperties.from_dict, from_none], obj.get("properties"))
+        required = from_union([lambda x: from_list(from_str, x), from_none], obj.get("required"))
+        additional_properties = from_union([from_bool, from_none], obj.get("additionalProperties"))
+        return DynamicAllOf(ref, type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        if self.ref is not None:
+            result["$ref"] = from_union([from_str, from_none], self.ref)
+        if self.type is not None:
+            result["type"] = from_union([from_str, from_none], self.type)
+        if self.properties is not None:
+            result["properties"] = from_union([lambda x: to_class(PurpleProperties, x), from_none], self.properties)
+        if self.required is not None:
+            result["required"] = from_union([lambda x: from_list(from_str, x), from_none], self.required)
+        if self.additional_properties is not None:
+            result["additionalProperties"] = from_union([from_bool, from_none], self.additional_properties)
+        return result
+
+
+class Dynamic:
+    all_of: List[DynamicAllOf]
+
+    def __init__(self, all_of: List[DynamicAllOf]) -> None:
+        self.all_of = all_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Dynamic':
+        assert isinstance(obj, dict)
+        all_of = from_list(DynamicAllOf.from_dict, obj.get("allOf"))
+        return Dynamic(all_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["allOf"] = from_list(lambda x: to_class(DynamicAllOf, x), self.all_of)
+        return result
+
+
+class ID:
+    type: TypeEnum
+
+    def __init__(self, type: TypeEnum) -> None:
+        self.type = type
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'ID':
+        assert isinstance(obj, dict)
+        type = TypeEnum(obj.get("type"))
+        return ID(type)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = to_enum(TypeEnum, self.type)
+        return result
+
+
+class IDSummaryProperties:
+    id: ID
+    name: ID
+    summary: ID
+    storytelling: ID
+
+    def __init__(self, id: ID, name: ID, summary: ID, storytelling: ID) -> None:
+        self.id = id
+        self.name = name
+        self.summary = summary
+        self.storytelling = storytelling
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'IDSummaryProperties':
+        assert isinstance(obj, dict)
+        id = ID.from_dict(obj.get("id"))
+        name = ID.from_dict(obj.get("name"))
+        summary = ID.from_dict(obj.get("summary"))
+        storytelling = ID.from_dict(obj.get("storytelling"))
+        return IDSummaryProperties(id, name, summary, storytelling)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["id"] = to_class(ID, self.id)
+        result["name"] = to_class(ID, self.name)
+        result["summary"] = to_class(ID, self.summary)
+        result["storytelling"] = to_class(ID, self.storytelling)
+        return result
+
+
+class IDSummary:
+    type: str
+    properties: IDSummaryProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: IDSummaryProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'IDSummary':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = IDSummaryProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return IDSummary(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(IDSummaryProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class TentacledProperties:
+    type: AppreciationBeatEnum
+    limit: ID
+
+    def __init__(self, type: AppreciationBeatEnum, limit: ID) -> None:
+        self.type = type
+        self.limit = limit
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'TentacledProperties':
+        assert isinstance(obj, dict)
+        type = AppreciationBeatEnum.from_dict(obj.get("type"))
+        limit = ID.from_dict(obj.get("limit"))
+        return TentacledProperties(type, limit)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = to_class(AppreciationBeatEnum, self.type)
+        result["limit"] = to_class(ID, self.limit)
+        return result
+
+
+class FabricItems:
+    type: str
+    properties: TentacledProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: TentacledProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'FabricItems':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = TentacledProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return FabricItems(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(TentacledProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class Fabric:
+    type: str
+    items: FabricItems
+
+    def __init__(self, type: str, items: FabricItems) -> None:
+        self.type = type
+        self.items = items
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Fabric':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        items = FabricItems.from_dict(obj.get("items"))
+        return Fabric(type, items)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["items"] = to_class(FabricItems, self.items)
+        return result
+
+
+class StickyProperties:
+    sequence: ID
+    storybeat_id: ID
+
+    def __init__(self, sequence: ID, storybeat_id: ID) -> None:
+        self.sequence = sequence
+        self.storybeat_id = storybeat_id
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StickyProperties':
+        assert isinstance(obj, dict)
+        sequence = ID.from_dict(obj.get("sequence"))
+        storybeat_id = ID.from_dict(obj.get("storybeat_id"))
+        return StickyProperties(sequence, storybeat_id)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["sequence"] = to_class(ID, self.sequence)
+        result["storybeat_id"] = to_class(ID, self.storybeat_id)
+        return result
+
+
+class StorybeatsItems:
+    type: str
+    properties: StickyProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: StickyProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StorybeatsItems':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = StickyProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return StorybeatsItems(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(StickyProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class Storybeats:
+    type: str
+    items: StorybeatsItems
+
+    def __init__(self, type: str, items: StorybeatsItems) -> None:
+        self.type = type
+        self.items = items
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Storybeats':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        items = StorybeatsItems.from_dict(obj.get("items"))
+        return Storybeats(type, items)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["items"] = to_class(StorybeatsItems, self.items)
+        return result
+
+
+class FluffyProperties:
+    synopsis: ID
+    setting: ID
+    timing: ID
+    imperatives: ID
+    fabric: Fabric
+    audience_experiential_pov: AppreciationBeatEnum
+    storybeats: Storybeats
+
+    def __init__(self, synopsis: ID, setting: ID, timing: ID, imperatives: ID, fabric: Fabric, audience_experiential_pov: AppreciationBeatEnum, storybeats: Storybeats) -> None:
+        self.synopsis = synopsis
+        self.setting = setting
+        self.timing = timing
+        self.imperatives = imperatives
+        self.fabric = fabric
+        self.audience_experiential_pov = audience_experiential_pov
+        self.storybeats = storybeats
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'FluffyProperties':
+        assert isinstance(obj, dict)
+        synopsis = ID.from_dict(obj.get("synopsis"))
+        setting = ID.from_dict(obj.get("setting"))
+        timing = ID.from_dict(obj.get("timing"))
+        imperatives = ID.from_dict(obj.get("imperatives"))
+        fabric = Fabric.from_dict(obj.get("fabric"))
+        audience_experiential_pov = AppreciationBeatEnum.from_dict(obj.get("audience_experiential_pov"))
+        storybeats = Storybeats.from_dict(obj.get("storybeats"))
+        return FluffyProperties(synopsis, setting, timing, imperatives, fabric, audience_experiential_pov, storybeats)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["synopsis"] = to_class(ID, self.synopsis)
+        result["setting"] = to_class(ID, self.setting)
+        result["timing"] = to_class(ID, self.timing)
+        result["imperatives"] = to_class(ID, self.imperatives)
+        result["fabric"] = to_class(Fabric, self.fabric)
+        result["audience_experiential_pov"] = to_class(AppreciationBeatEnum, self.audience_experiential_pov)
+        result["storybeats"] = to_class(Storybeats, self.storybeats)
+        return result
+
+
+class MomentAllOf:
+    ref: Optional[str]
+    type: Optional[str]
+    properties: Optional[FluffyProperties]
+    required: Optional[List[str]]
+    additional_properties: Optional[bool]
+
+    def __init__(self, ref: Optional[str], type: Optional[str], properties: Optional[FluffyProperties], required: Optional[List[str]], additional_properties: Optional[bool]) -> None:
+        self.ref = ref
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'MomentAllOf':
+        assert isinstance(obj, dict)
+        ref = from_union([from_str, from_none], obj.get("$ref"))
+        type = from_union([from_str, from_none], obj.get("type"))
+        properties = from_union([FluffyProperties.from_dict, from_none], obj.get("properties"))
+        required = from_union([lambda x: from_list(from_str, x), from_none], obj.get("required"))
+        additional_properties = from_union([from_bool, from_none], obj.get("additionalProperties"))
+        return MomentAllOf(ref, type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        if self.ref is not None:
+            result["$ref"] = from_union([from_str, from_none], self.ref)
+        if self.type is not None:
+            result["type"] = from_union([from_str, from_none], self.type)
+        if self.properties is not None:
+            result["properties"] = from_union([lambda x: to_class(FluffyProperties, x), from_none], self.properties)
+        if self.required is not None:
+            result["required"] = from_union([lambda x: from_list(from_str, x), from_none], self.required)
+        if self.additional_properties is not None:
+            result["additionalProperties"] = from_union([from_bool, from_none], self.additional_properties)
+        return result
+
+
+class Moment:
+    all_of: List[MomentAllOf]
+
+    def __init__(self, all_of: List[MomentAllOf]) -> None:
+        self.all_of = all_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Moment':
+        assert isinstance(obj, dict)
+        all_of = from_list(MomentAllOf.from_dict, obj.get("allOf"))
+        return Moment(all_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["allOf"] = from_list(lambda x: to_class(MomentAllOf, x), self.all_of)
+        return result
+
+
+class PerspectiveArray:
+    type: str
+    items: Story
+
+    def __init__(self, type: str, items: Story) -> None:
+        self.type = type
+        self.items = items
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'PerspectiveArray':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        items = Story.from_dict(obj.get("items"))
+        return PerspectiveArray(type, items)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["items"] = to_class(Story, self.items)
+        return result
+
+
+class NarrativeProperties:
+    id: ID
+    title: ID
+    perspectives: Story
+    players: PerspectiveArray
+    dynamics: PerspectiveArray
+    storypoints: PerspectiveArray
+    storybeats: PerspectiveArray
+    storytelling: Story
+
+    def __init__(self, id: ID, title: ID, perspectives: Story, players: PerspectiveArray, dynamics: PerspectiveArray, storypoints: PerspectiveArray, storybeats: PerspectiveArray, storytelling: Story) -> None:
+        self.id = id
+        self.title = title
+        self.perspectives = perspectives
+        self.players = players
+        self.dynamics = dynamics
+        self.storypoints = storypoints
+        self.storybeats = storybeats
+        self.storytelling = storytelling
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'NarrativeProperties':
+        assert isinstance(obj, dict)
+        id = ID.from_dict(obj.get("id"))
+        title = ID.from_dict(obj.get("title"))
+        perspectives = Story.from_dict(obj.get("perspectives"))
+        players = PerspectiveArray.from_dict(obj.get("players"))
+        dynamics = PerspectiveArray.from_dict(obj.get("dynamics"))
+        storypoints = PerspectiveArray.from_dict(obj.get("storypoints"))
+        storybeats = PerspectiveArray.from_dict(obj.get("storybeats"))
+        storytelling = Story.from_dict(obj.get("storytelling"))
+        return NarrativeProperties(id, title, perspectives, players, dynamics, storypoints, storybeats, storytelling)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["id"] = to_class(ID, self.id)
+        result["title"] = to_class(ID, self.title)
+        result["perspectives"] = to_class(Story, self.perspectives)
+        result["players"] = to_class(PerspectiveArray, self.players)
+        result["dynamics"] = to_class(PerspectiveArray, self.dynamics)
+        result["storypoints"] = to_class(PerspectiveArray, self.storypoints)
+        result["storybeats"] = to_class(PerspectiveArray, self.storybeats)
+        result["storytelling"] = to_class(Story, self.storytelling)
+        return result
+
+
+class Narrative:
+    type: str
+    properties: NarrativeProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: NarrativeProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Narrative':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = NarrativeProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return Narrative(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(NarrativeProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class IndigoProperties:
+    author_structural_pov: Story
+
+    def __init__(self, author_structural_pov: Story) -> None:
+        self.author_structural_pov = author_structural_pov
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'IndigoProperties':
+        assert isinstance(obj, dict)
+        author_structural_pov = Story.from_dict(obj.get("author_structural_pov"))
+        return IndigoProperties(author_structural_pov)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["author_structural_pov"] = to_class(Story, self.author_structural_pov)
+        return result
+
+
+class PerspectiveAllOf:
+    ref: Optional[str]
+    type: Optional[str]
+    properties: Optional[IndigoProperties]
+    required: Optional[List[str]]
+    additional_properties: Optional[bool]
+
+    def __init__(self, ref: Optional[str], type: Optional[str], properties: Optional[IndigoProperties], required: Optional[List[str]], additional_properties: Optional[bool]) -> None:
+        self.ref = ref
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'PerspectiveAllOf':
+        assert isinstance(obj, dict)
+        ref = from_union([from_str, from_none], obj.get("$ref"))
+        type = from_union([from_str, from_none], obj.get("type"))
+        properties = from_union([IndigoProperties.from_dict, from_none], obj.get("properties"))
+        required = from_union([lambda x: from_list(from_str, x), from_none], obj.get("required"))
+        additional_properties = from_union([from_bool, from_none], obj.get("additionalProperties"))
+        return PerspectiveAllOf(ref, type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        if self.ref is not None:
+            result["$ref"] = from_union([from_str, from_none], self.ref)
+        if self.type is not None:
+            result["type"] = from_union([from_str, from_none], self.type)
+        if self.properties is not None:
+            result["properties"] = from_union([lambda x: to_class(IndigoProperties, x), from_none], self.properties)
+        if self.required is not None:
+            result["required"] = from_union([lambda x: from_list(from_str, x), from_none], self.required)
+        if self.additional_properties is not None:
+            result["additionalProperties"] = from_union([from_bool, from_none], self.additional_properties)
+        return result
+
+
+class Perspective:
+    all_of: List[PerspectiveAllOf]
+
+    def __init__(self, all_of: List[PerspectiveAllOf]) -> None:
+        self.all_of = all_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Perspective':
+        assert isinstance(obj, dict)
+        all_of = from_list(PerspectiveAllOf.from_dict, obj.get("allOf"))
+        return Perspective(all_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["allOf"] = from_list(lambda x: to_class(PerspectiveAllOf, x), self.all_of)
+        return result
+
+
+class IndecentProperties:
+    role: ID
+    visual: ID
+    audio: ID
+    perspectives: Story
+
+    def __init__(self, role: ID, visual: ID, audio: ID, perspectives: Story) -> None:
+        self.role = role
+        self.visual = visual
+        self.audio = audio
+        self.perspectives = perspectives
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'IndecentProperties':
+        assert isinstance(obj, dict)
+        role = ID.from_dict(obj.get("role"))
+        visual = ID.from_dict(obj.get("visual"))
+        audio = ID.from_dict(obj.get("audio"))
+        perspectives = Story.from_dict(obj.get("perspectives"))
+        return IndecentProperties(role, visual, audio, perspectives)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["role"] = to_class(ID, self.role)
+        result["visual"] = to_class(ID, self.visual)
+        result["audio"] = to_class(ID, self.audio)
+        result["perspectives"] = to_class(Story, self.perspectives)
+        return result
+
+
+class PlayerAllOf:
+    ref: Optional[str]
+    type: Optional[str]
+    properties: Optional[IndecentProperties]
+    required: Optional[List[str]]
+    additional_properties: Optional[bool]
+
+    def __init__(self, ref: Optional[str], type: Optional[str], properties: Optional[IndecentProperties], required: Optional[List[str]], additional_properties: Optional[bool]) -> None:
+        self.ref = ref
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'PlayerAllOf':
+        assert isinstance(obj, dict)
+        ref = from_union([from_str, from_none], obj.get("$ref"))
+        type = from_union([from_str, from_none], obj.get("type"))
+        properties = from_union([IndecentProperties.from_dict, from_none], obj.get("properties"))
+        required = from_union([lambda x: from_list(from_str, x), from_none], obj.get("required"))
+        additional_properties = from_union([from_bool, from_none], obj.get("additionalProperties"))
+        return PlayerAllOf(ref, type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        if self.ref is not None:
+            result["$ref"] = from_union([from_str, from_none], self.ref)
+        if self.type is not None:
+            result["type"] = from_union([from_str, from_none], self.type)
+        if self.properties is not None:
+            result["properties"] = from_union([lambda x: to_class(IndecentProperties, x), from_none], self.properties)
+        if self.required is not None:
+            result["required"] = from_union([lambda x: from_list(from_str, x), from_none], self.required)
+        if self.additional_properties is not None:
+            result["additionalProperties"] = from_union([from_bool, from_none], self.additional_properties)
+        return result
+
+
+class Player:
+    all_of: List[PlayerAllOf]
+
+    def __init__(self, all_of: List[PlayerAllOf]) -> None:
+        self.all_of = all_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Player':
+        assert isinstance(obj, dict)
+        all_of = from_list(PlayerAllOf.from_dict, obj.get("allOf"))
+        return Player(all_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["allOf"] = from_list(lambda x: to_class(PlayerAllOf, x), self.all_of)
+        return result
+
+
+class Appreciation:
+    const: str
+
+    def __init__(self, const: str) -> None:
+        self.const = const
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Appreciation':
+        assert isinstance(obj, dict)
+        const = from_str(obj.get("const"))
+        return Appreciation(const)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["const"] = from_str(self.const)
+        return result
+
+
+class Sequence:
+    type: TypeEnum
+    minimum: int
+    maximum: int
+
+    def __init__(self, type: TypeEnum, minimum: int, maximum: int) -> None:
+        self.type = type
+        self.minimum = minimum
+        self.maximum = maximum
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Sequence':
+        assert isinstance(obj, dict)
+        type = TypeEnum(obj.get("type"))
+        minimum = from_int(obj.get("minimum"))
+        maximum = from_int(obj.get("maximum"))
+        return Sequence(type, minimum, maximum)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = to_enum(TypeEnum, self.type)
+        result["minimum"] = from_int(self.minimum)
+        result["maximum"] = from_int(self.maximum)
+        return result
+
+
+class OneOfProperties:
+    appreciation: Appreciation
+    sequence: Sequence
+
+    def __init__(self, appreciation: Appreciation, sequence: Sequence) -> None:
+        self.appreciation = appreciation
+        self.sequence = sequence
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'OneOfProperties':
+        assert isinstance(obj, dict)
+        appreciation = Appreciation.from_dict(obj.get("appreciation"))
+        sequence = Sequence.from_dict(obj.get("sequence"))
+        return OneOfProperties(appreciation, sequence)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["appreciation"] = to_class(Appreciation, self.appreciation)
+        result["sequence"] = to_class(Sequence, self.sequence)
+        return result
+
+
+class OneOf:
+    properties: OneOfProperties
+
+    def __init__(self, properties: OneOfProperties) -> None:
+        self.properties = properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'OneOf':
+        assert isinstance(obj, dict)
+        properties = OneOfProperties.from_dict(obj.get("properties"))
+        return OneOf(properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["properties"] = to_class(OneOfProperties, self.properties)
+        return result
+
+
+class SequenceRules:
+    one_of: List[OneOf]
+
+    def __init__(self, one_of: List[OneOf]) -> None:
+        self.one_of = one_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'SequenceRules':
+        assert isinstance(obj, dict)
+        one_of = from_list(OneOf.from_dict, obj.get("oneOf"))
+        return SequenceRules(one_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["oneOf"] = from_list(lambda x: to_class(OneOf, x), self.one_of)
+        return result
+
+
+class CreatedAt:
+    type: TypeEnum
+    format: str
+
+    def __init__(self, type: TypeEnum, format: str) -> None:
+        self.type = type
+        self.format = format
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'CreatedAt':
+        assert isinstance(obj, dict)
+        type = TypeEnum(obj.get("type"))
+        format = from_str(obj.get("format"))
+        return CreatedAt(type, format)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = to_enum(TypeEnum, self.type)
+        result["format"] = from_str(self.format)
+        return result
+
+
+class StoryProperties:
+    id: ID
+    title: ID
+    genre: ID
+    logline: ID
+    created_at: CreatedAt
+    narratives: PerspectiveArray
+
+    def __init__(self, id: ID, title: ID, genre: ID, logline: ID, created_at: CreatedAt, narratives: PerspectiveArray) -> None:
+        self.id = id
+        self.title = title
+        self.genre = genre
+        self.logline = logline
+        self.created_at = created_at
+        self.narratives = narratives
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StoryProperties':
+        assert isinstance(obj, dict)
+        id = ID.from_dict(obj.get("id"))
+        title = ID.from_dict(obj.get("title"))
+        genre = ID.from_dict(obj.get("genre"))
+        logline = ID.from_dict(obj.get("logline"))
+        created_at = CreatedAt.from_dict(obj.get("created_at"))
+        narratives = PerspectiveArray.from_dict(obj.get("narratives"))
+        return StoryProperties(id, title, genre, logline, created_at, narratives)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["id"] = to_class(ID, self.id)
+        result["title"] = to_class(ID, self.title)
+        result["genre"] = to_class(ID, self.genre)
+        result["logline"] = to_class(ID, self.logline)
+        result["created_at"] = to_class(CreatedAt, self.created_at)
+        result["narratives"] = to_class(PerspectiveArray, self.narratives)
+        return result
+
+
+class StoryClass:
+    type: str
+    properties: StoryProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: StoryProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StoryClass':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = StoryProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return StoryClass(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(StoryProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class TonesProperties:
+    abstraction: Story
+    spatial: Story
+    temporal: Story
+
+    def __init__(self, abstraction: Story, spatial: Story, temporal: Story) -> None:
+        self.abstraction = abstraction
+        self.spatial = spatial
+        self.temporal = temporal
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'TonesProperties':
+        assert isinstance(obj, dict)
+        abstraction = Story.from_dict(obj.get("abstraction"))
+        spatial = Story.from_dict(obj.get("spatial"))
+        temporal = Story.from_dict(obj.get("temporal"))
+        return TonesProperties(abstraction, spatial, temporal)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["abstraction"] = to_class(Story, self.abstraction)
+        result["spatial"] = to_class(Story, self.spatial)
+        result["temporal"] = to_class(Story, self.temporal)
+        return result
+
+
+class Tones:
+    type: str
+    properties: TonesProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: TonesProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Tones':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = TonesProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return Tones(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(TonesProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class HilariousProperties:
+    appreciation: Story
+    sequence: Story
+    method: Story
+    illustration: ID
+    tones: Tones
+    perspectives: Story
+
+    def __init__(self, appreciation: Story, sequence: Story, method: Story, illustration: ID, tones: Tones, perspectives: Story) -> None:
+        self.appreciation = appreciation
+        self.sequence = sequence
+        self.method = method
+        self.illustration = illustration
+        self.tones = tones
+        self.perspectives = perspectives
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'HilariousProperties':
+        assert isinstance(obj, dict)
+        appreciation = Story.from_dict(obj.get("appreciation"))
+        sequence = Story.from_dict(obj.get("sequence"))
+        method = Story.from_dict(obj.get("method"))
+        illustration = ID.from_dict(obj.get("illustration"))
+        tones = Tones.from_dict(obj.get("tones"))
+        perspectives = Story.from_dict(obj.get("perspectives"))
+        return HilariousProperties(appreciation, sequence, method, illustration, tones, perspectives)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["appreciation"] = to_class(Story, self.appreciation)
+        result["sequence"] = to_class(Story, self.sequence)
+        result["method"] = to_class(Story, self.method)
+        result["illustration"] = to_class(ID, self.illustration)
+        result["tones"] = to_class(Tones, self.tones)
+        result["perspectives"] = to_class(Story, self.perspectives)
+        return result
+
+
+class StoryBeatAllOf:
+    ref: Optional[str]
+    type: Optional[str]
+    properties: Optional[HilariousProperties]
+    required: Optional[List[str]]
+    additional_properties: Optional[bool]
+
+    def __init__(self, ref: Optional[str], type: Optional[str], properties: Optional[HilariousProperties], required: Optional[List[str]], additional_properties: Optional[bool]) -> None:
+        self.ref = ref
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StoryBeatAllOf':
+        assert isinstance(obj, dict)
+        ref = from_union([from_str, from_none], obj.get("$ref"))
+        type = from_union([from_str, from_none], obj.get("type"))
+        properties = from_union([HilariousProperties.from_dict, from_none], obj.get("properties"))
+        required = from_union([lambda x: from_list(from_str, x), from_none], obj.get("required"))
+        additional_properties = from_union([from_bool, from_none], obj.get("additionalProperties"))
+        return StoryBeatAllOf(ref, type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        if self.ref is not None:
+            result["$ref"] = from_union([from_str, from_none], self.ref)
+        if self.type is not None:
+            result["type"] = from_union([from_str, from_none], self.type)
+        if self.properties is not None:
+            result["properties"] = from_union([lambda x: to_class(HilariousProperties, x), from_none], self.properties)
+        if self.required is not None:
+            result["required"] = from_union([lambda x: from_list(from_str, x), from_none], self.required)
+        if self.additional_properties is not None:
+            result["additionalProperties"] = from_union([from_bool, from_none], self.additional_properties)
+        return result
+
+
+class StoryBeat:
+    all_of: List[StoryBeatAllOf]
+
+    def __init__(self, all_of: List[StoryBeatAllOf]) -> None:
+        self.all_of = all_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StoryBeat':
+        assert isinstance(obj, dict)
+        all_of = from_list(StoryBeatAllOf.from_dict, obj.get("allOf"))
+        return StoryBeat(all_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["allOf"] = from_list(lambda x: to_class(StoryBeatAllOf, x), self.all_of)
+        return result
+
+
+class AmbitiousProperties:
+    squad: ID
+    platoon: ID
+    company: ID
+    battalion: ID
+    regiment: ID
+    division: ID
+    appreciation: Story
+    method: Story
+    illustration: ID
+    perspectives: Story
+
+    def __init__(self, squad: ID, platoon: ID, company: ID, battalion: ID, regiment: ID, division: ID, appreciation: Story, method: Story, illustration: ID, perspectives: Story) -> None:
+        self.squad = squad
+        self.platoon = platoon
+        self.company = company
+        self.battalion = battalion
+        self.regiment = regiment
+        self.division = division
+        self.appreciation = appreciation
+        self.method = method
+        self.illustration = illustration
+        self.perspectives = perspectives
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'AmbitiousProperties':
+        assert isinstance(obj, dict)
+        squad = ID.from_dict(obj.get("squad"))
+        platoon = ID.from_dict(obj.get("platoon"))
+        company = ID.from_dict(obj.get("company"))
+        battalion = ID.from_dict(obj.get("battalion"))
+        regiment = ID.from_dict(obj.get("regiment"))
+        division = ID.from_dict(obj.get("division"))
+        appreciation = Story.from_dict(obj.get("appreciation"))
+        method = Story.from_dict(obj.get("method"))
+        illustration = ID.from_dict(obj.get("illustration"))
+        perspectives = Story.from_dict(obj.get("perspectives"))
+        return AmbitiousProperties(squad, platoon, company, battalion, regiment, division, appreciation, method, illustration, perspectives)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["squad"] = to_class(ID, self.squad)
+        result["platoon"] = to_class(ID, self.platoon)
+        result["company"] = to_class(ID, self.company)
+        result["battalion"] = to_class(ID, self.battalion)
+        result["regiment"] = to_class(ID, self.regiment)
+        result["division"] = to_class(ID, self.division)
+        result["appreciation"] = to_class(Story, self.appreciation)
+        result["method"] = to_class(Story, self.method)
+        result["illustration"] = to_class(ID, self.illustration)
+        result["perspectives"] = to_class(Story, self.perspectives)
+        return result
+
+
+class StoryPointAllOf:
+    ref: Optional[str]
+    type: Optional[str]
+    properties: Optional[AmbitiousProperties]
+    required: Optional[List[str]]
+    additional_properties: Optional[bool]
+
+    def __init__(self, ref: Optional[str], type: Optional[str], properties: Optional[AmbitiousProperties], required: Optional[List[str]], additional_properties: Optional[bool]) -> None:
+        self.ref = ref
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StoryPointAllOf':
+        assert isinstance(obj, dict)
+        ref = from_union([from_str, from_none], obj.get("$ref"))
+        type = from_union([from_str, from_none], obj.get("type"))
+        properties = from_union([AmbitiousProperties.from_dict, from_none], obj.get("properties"))
+        required = from_union([lambda x: from_list(from_str, x), from_none], obj.get("required"))
+        additional_properties = from_union([from_bool, from_none], obj.get("additionalProperties"))
+        return StoryPointAllOf(ref, type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        if self.ref is not None:
+            result["$ref"] = from_union([from_str, from_none], self.ref)
+        if self.type is not None:
+            result["type"] = from_union([from_str, from_none], self.type)
+        if self.properties is not None:
+            result["properties"] = from_union([lambda x: to_class(AmbitiousProperties, x), from_none], self.properties)
+        if self.required is not None:
+            result["required"] = from_union([lambda x: from_list(from_str, x), from_none], self.required)
+        if self.additional_properties is not None:
+            result["additionalProperties"] = from_union([from_bool, from_none], self.additional_properties)
+        return result
+
+
+class StoryPoint:
+    all_of: List[StoryPointAllOf]
+
+    def __init__(self, all_of: List[StoryPointAllOf]) -> None:
+        self.all_of = all_of
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StoryPoint':
+        assert isinstance(obj, dict)
+        all_of = from_list(StoryPointAllOf.from_dict, obj.get("allOf"))
+        return StoryPoint(all_of)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["allOf"] = from_list(lambda x: to_class(StoryPointAllOf, x), self.all_of)
+        return result
+
+
+class StorytellingProperties:
+    overviews: PerspectiveArray
+    moments: PerspectiveArray
+
+    def __init__(self, overviews: PerspectiveArray, moments: PerspectiveArray) -> None:
+        self.overviews = overviews
+        self.moments = moments
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StorytellingProperties':
+        assert isinstance(obj, dict)
+        overviews = PerspectiveArray.from_dict(obj.get("overviews"))
+        moments = PerspectiveArray.from_dict(obj.get("moments"))
+        return StorytellingProperties(overviews, moments)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["overviews"] = to_class(PerspectiveArray, self.overviews)
+        result["moments"] = to_class(PerspectiveArray, self.moments)
+        return result
+
+
+class Storytelling:
+    type: str
+    properties: StorytellingProperties
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: StorytellingProperties, additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Storytelling':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = StorytellingProperties.from_dict(obj.get("properties"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return Storytelling(type, properties, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(StorytellingProperties, self.properties)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class Defs:
+    id_summary: IDSummary
+    pov_enum: AppreciationBeatEnum
+    perspective: Perspective
+    perspective_array: PerspectiveArray
+    player: Player
+    dynamic_enum: AppreciationBeatEnum
+    vector_enum: AppreciationBeatEnum
+    dynamic: Dynamic
+    appreciation_enum: AppreciationBeatEnum
+    method_enum: AppreciationBeatEnum
+    story_point: StoryPoint
+    appreciation_beat_enum: AppreciationBeatEnum
+    sequence_rules: SequenceRules
+    tone_abstraction_enum: AppreciationBeatEnum
+    tone_spatial_enum: AppreciationBeatEnum
+    tone_temporal_enum: AppreciationBeatEnum
+    story_beat: StoryBeat
+    moment: Moment
+    storytelling: Storytelling
+    narrative: Narrative
+    story: StoryClass
+
+    def __init__(self, id_summary: IDSummary, pov_enum: AppreciationBeatEnum, perspective: Perspective, perspective_array: PerspectiveArray, player: Player, dynamic_enum: AppreciationBeatEnum, vector_enum: AppreciationBeatEnum, dynamic: Dynamic, appreciation_enum: AppreciationBeatEnum, method_enum: AppreciationBeatEnum, story_point: StoryPoint, appreciation_beat_enum: AppreciationBeatEnum, sequence_rules: SequenceRules, tone_abstraction_enum: AppreciationBeatEnum, tone_spatial_enum: AppreciationBeatEnum, tone_temporal_enum: AppreciationBeatEnum, story_beat: StoryBeat, moment: Moment, storytelling: Storytelling, narrative: Narrative, story: StoryClass) -> None:
+        self.id_summary = id_summary
+        self.pov_enum = pov_enum
+        self.perspective = perspective
+        self.perspective_array = perspective_array
+        self.player = player
+        self.dynamic_enum = dynamic_enum
+        self.vector_enum = vector_enum
+        self.dynamic = dynamic
+        self.appreciation_enum = appreciation_enum
+        self.method_enum = method_enum
+        self.story_point = story_point
+        self.appreciation_beat_enum = appreciation_beat_enum
+        self.sequence_rules = sequence_rules
+        self.tone_abstraction_enum = tone_abstraction_enum
+        self.tone_spatial_enum = tone_spatial_enum
+        self.tone_temporal_enum = tone_temporal_enum
+        self.story_beat = story_beat
+        self.moment = moment
+        self.storytelling = storytelling
+        self.narrative = narrative
+        self.story = story
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Defs':
+        assert isinstance(obj, dict)
+        id_summary = IDSummary.from_dict(obj.get("IDSummary"))
+        pov_enum = AppreciationBeatEnum.from_dict(obj.get("PovEnum"))
+        perspective = Perspective.from_dict(obj.get("Perspective"))
+        perspective_array = PerspectiveArray.from_dict(obj.get("PerspectiveArray"))
+        player = Player.from_dict(obj.get("Player"))
+        dynamic_enum = AppreciationBeatEnum.from_dict(obj.get("DynamicEnum"))
+        vector_enum = AppreciationBeatEnum.from_dict(obj.get("VectorEnum"))
+        dynamic = Dynamic.from_dict(obj.get("Dynamic"))
+        appreciation_enum = AppreciationBeatEnum.from_dict(obj.get("AppreciationEnum"))
+        method_enum = AppreciationBeatEnum.from_dict(obj.get("MethodEnum"))
+        story_point = StoryPoint.from_dict(obj.get("StoryPoint"))
+        appreciation_beat_enum = AppreciationBeatEnum.from_dict(obj.get("AppreciationBeatEnum"))
+        sequence_rules = SequenceRules.from_dict(obj.get("SequenceRules"))
+        tone_abstraction_enum = AppreciationBeatEnum.from_dict(obj.get("ToneAbstractionEnum"))
+        tone_spatial_enum = AppreciationBeatEnum.from_dict(obj.get("ToneSpatialEnum"))
+        tone_temporal_enum = AppreciationBeatEnum.from_dict(obj.get("ToneTemporalEnum"))
+        story_beat = StoryBeat.from_dict(obj.get("StoryBeat"))
+        moment = Moment.from_dict(obj.get("Moment"))
+        storytelling = Storytelling.from_dict(obj.get("Storytelling"))
+        narrative = Narrative.from_dict(obj.get("Narrative"))
+        story = StoryClass.from_dict(obj.get("Story"))
+        return Defs(id_summary, pov_enum, perspective, perspective_array, player, dynamic_enum, vector_enum, dynamic, appreciation_enum, method_enum, story_point, appreciation_beat_enum, sequence_rules, tone_abstraction_enum, tone_spatial_enum, tone_temporal_enum, story_beat, moment, storytelling, narrative, story)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["IDSummary"] = to_class(IDSummary, self.id_summary)
+        result["PovEnum"] = to_class(AppreciationBeatEnum, self.pov_enum)
+        result["Perspective"] = to_class(Perspective, self.perspective)
+        result["PerspectiveArray"] = to_class(PerspectiveArray, self.perspective_array)
+        result["Player"] = to_class(Player, self.player)
+        result["DynamicEnum"] = to_class(AppreciationBeatEnum, self.dynamic_enum)
+        result["VectorEnum"] = to_class(AppreciationBeatEnum, self.vector_enum)
+        result["Dynamic"] = to_class(Dynamic, self.dynamic)
+        result["AppreciationEnum"] = to_class(AppreciationBeatEnum, self.appreciation_enum)
+        result["MethodEnum"] = to_class(AppreciationBeatEnum, self.method_enum)
+        result["StoryPoint"] = to_class(StoryPoint, self.story_point)
+        result["AppreciationBeatEnum"] = to_class(AppreciationBeatEnum, self.appreciation_beat_enum)
+        result["SequenceRules"] = to_class(SequenceRules, self.sequence_rules)
+        result["ToneAbstractionEnum"] = to_class(AppreciationBeatEnum, self.tone_abstraction_enum)
+        result["ToneSpatialEnum"] = to_class(AppreciationBeatEnum, self.tone_spatial_enum)
+        result["ToneTemporalEnum"] = to_class(AppreciationBeatEnum, self.tone_temporal_enum)
+        result["StoryBeat"] = to_class(StoryBeat, self.story_beat)
+        result["Moment"] = to_class(Moment, self.moment)
+        result["Storytelling"] = to_class(Storytelling, self.storytelling)
+        result["Narrative"] = to_class(Narrative, self.narrative)
+        result["Story"] = to_class(StoryClass, self.story)
+        return result
+
+
+class SchemaVersion:
+    type: TypeEnum
+    description: str
+
+    def __init__(self, type: TypeEnum, description: str) -> None:
+        self.type = type
+        self.description = description
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'SchemaVersion':
+        assert isinstance(obj, dict)
+        type = TypeEnum(obj.get("type"))
+        description = from_str(obj.get("description"))
+        return SchemaVersion(type, description)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = to_enum(TypeEnum, self.type)
+        result["description"] = from_str(self.description)
+        return result
+
+
+class CunningProperties:
+    id: ID
+    name: ID
+    squad: ID
+    platoon: ID
+    company: ID
+    battalion: ID
+    regiment: ID
+    division: ID
+
+    def __init__(self, id: ID, name: ID, squad: ID, platoon: ID, company: ID, battalion: ID, regiment: ID, division: ID) -> None:
+        self.id = id
+        self.name = name
+        self.squad = squad
+        self.platoon = platoon
+        self.company = company
+        self.battalion = battalion
+        self.regiment = regiment
+        self.division = division
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'CunningProperties':
+        assert isinstance(obj, dict)
+        id = ID.from_dict(obj.get("id"))
+        name = ID.from_dict(obj.get("name"))
+        squad = ID.from_dict(obj.get("squad"))
+        platoon = ID.from_dict(obj.get("platoon"))
+        company = ID.from_dict(obj.get("company"))
+        battalion = ID.from_dict(obj.get("battalion"))
+        regiment = ID.from_dict(obj.get("regiment"))
+        division = ID.from_dict(obj.get("division"))
+        return CunningProperties(id, name, squad, platoon, company, battalion, regiment, division)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["id"] = to_class(ID, self.id)
+        result["name"] = to_class(ID, self.name)
+        result["squad"] = to_class(ID, self.squad)
+        result["platoon"] = to_class(ID, self.platoon)
+        result["company"] = to_class(ID, self.company)
+        result["battalion"] = to_class(ID, self.battalion)
+        result["regiment"] = to_class(ID, self.regiment)
+        result["division"] = to_class(ID, self.division)
+        return result
+
+
+class StorypointTableItems:
+    type: str
+    properties: CunningProperties
+    required: List[str]
+    additional_properties: bool
+
+    def __init__(self, type: str, properties: CunningProperties, required: List[str], additional_properties: bool) -> None:
+        self.type = type
+        self.properties = properties
+        self.required = required
+        self.additional_properties = additional_properties
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StorypointTableItems':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        properties = CunningProperties.from_dict(obj.get("properties"))
+        required = from_list(from_str, obj.get("required"))
+        additional_properties = from_bool(obj.get("additionalProperties"))
+        return StorypointTableItems(type, properties, required, additional_properties)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["properties"] = to_class(CunningProperties, self.properties)
+        result["required"] = from_list(from_str, self.required)
+        result["additionalProperties"] = from_bool(self.additional_properties)
+        return result
+
+
+class StorypointTable:
+    type: str
+    description: str
+    items: StorypointTableItems
+
+    def __init__(self, type: str, description: str, items: StorypointTableItems) -> None:
+        self.type = type
+        self.description = description
+        self.items = items
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'StorypointTable':
+        assert isinstance(obj, dict)
+        type = from_str(obj.get("type"))
+        description = from_str(obj.get("description"))
+        items = StorypointTableItems.from_dict(obj.get("items"))
+        return StorypointTable(type, description, items)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["type"] = from_str(self.type)
+        result["description"] = from_str(self.description)
+        result["items"] = to_class(StorypointTableItems, self.items)
+        return result
+
+
+class WelcomeProperties:
+    schema_version: SchemaVersion
+    story: Story
+    storypoint_table: StorypointTable
+
+    def __init__(self, schema_version: SchemaVersion, story: Story, storypoint_table: StorypointTable) -> None:
+        self.schema_version = schema_version
+        self.story = story
+        self.storypoint_table = storypoint_table
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'WelcomeProperties':
+        assert isinstance(obj, dict)
+        schema_version = SchemaVersion.from_dict(obj.get("schema_version"))
+        story = Story.from_dict(obj.get("story"))
+        storypoint_table = StorypointTable.from_dict(obj.get("storypointTable"))
+        return WelcomeProperties(schema_version, story, storypoint_table)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["schema_version"] = to_class(SchemaVersion, self.schema_version)
+        result["story"] = to_class(Story, self.story)
+        result["storypointTable"] = to_class(StorypointTable, self.storypoint_table)
+        return result
+
+
+class Welcome:
+    schema: str
+    title: str
+    description: str
+    type: str
+    required: List[str]
+    properties: WelcomeProperties
+    defs: Defs
+
+    def __init__(self, schema: str, title: str, description: str, type: str, required: List[str], properties: WelcomeProperties, defs: Defs) -> None:
+        self.schema = schema
+        self.title = title
+        self.description = description
+        self.type = type
+        self.required = required
+        self.properties = properties
+        self.defs = defs
+
+    @staticmethod
+    def from_dict(obj: Any) -> 'Welcome':
+        assert isinstance(obj, dict)
+        schema = from_str(obj.get("$schema"))
+        title = from_str(obj.get("title"))
+        description = from_str(obj.get("description"))
+        type = from_str(obj.get("type"))
+        required = from_list(from_str, obj.get("required"))
+        properties = WelcomeProperties.from_dict(obj.get("properties"))
+        defs = Defs.from_dict(obj.get("$defs"))
+        return Welcome(schema, title, description, type, required, properties, defs)
+
+    def to_dict(self) -> dict:
+        result: dict = {}
+        result["$schema"] = from_str(self.schema)
+        result["title"] = from_str(self.title)
+        result["description"] = from_str(self.description)
+        result["type"] = from_str(self.type)
+        result["required"] = from_list(from_str, self.required)
+        result["properties"] = to_class(WelcomeProperties, self.properties)
+        result["$defs"] = to_class(Defs, self.defs)
+        return result
+
+
+def welcome_from_dict(s: Any) -> Welcome:
+    return Welcome.from_dict(s)
+
+
+def welcome_to_dict(x: Welcome) -> Any:
+    return to_class(Welcome, x)
