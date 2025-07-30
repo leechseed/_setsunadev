@@ -1,0 +1,65 @@
+from typing import List, Literal, Optional
+from dataclasses import dataclass
+
+@dataclass
+class IDSummary:
+    id: str
+    name: str
+    summary: str
+    storytelling: str
+
+@dataclass
+class Perspective(IDSummary):
+    author_structural_pov: Literal["i", "you", "we", "they"]
+
+@dataclass
+class Player(IDSummary):
+    role: str
+    visual: str
+    audio: str
+    perspectives: List[Perspective]
+
+@dataclass
+class Dynamic(IDSummary):
+    dynamic: Literal[
+        "i_perspective_resolve", "you_perspective_resolve", "growth", "approach", "alignment",
+        "fabric", "driver", "ending", "attunement", "outcome", "judgment", "balance", "vibes"
+    ]
+    vector: Literal[
+        "change", "steadfast", "released", "sustained", "stop", "start",
+        "do_er", "be_er", "linear", "holistic", "options", "time",
+        "action", "decision", "success", "failure", "harmony",
+        "discord", "good", "bad", "higher", "lower"
+    ]
+
+@dataclass
+class StoryPoint(IDSummary):
+    squad: str
+    platoon: str
+    company: str
+    battalion: str
+    regiment: str
+    division: str
+    appreciation: Literal[
+        "domain","concern","issue","problem","solution","focus",
+        "direction","condition","adjustment","resistance","flow",
+        "catalyst","inhibitor","unique_ability","critical_flaw","benchmark"
+    ]
+    method: Literal[
+        "past","present","future","understanding","memory","progress",
+        "action","conditioning","fantasy","responsibility","choice",
+        "strategy","evaluation","trust","temptation","support"
+    ]
+    illustration: str
+    perspectives: List[Perspective]
+
+@dataclass
+class StorypointTableEntry:
+    id: str
+    name: str
+    squad: str
+    platoon: str
+    company: str
+    battalion: str
+    regiment: str
+    division: str
