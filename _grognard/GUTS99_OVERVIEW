@@ -1,0 +1,128 @@
+# 🧠 GUTS99 — Grand Unified Tone & Style
+
+> A Master System for Mapping the Aesthetic, Emotional, and Structural DNA of All Media
+
+---
+
+## 📘 Overview
+
+**GUTS99 (Grand Unified Tone & Style)** is a recursive, modular framework for analyzing, cataloging, and deploying your personal media influences across _all_ forms of input: film, anime, games, porn, art, sound, and beyond. It transforms vague inspiration into structured metadata. Solo creators, archivists, and stylistic obsessives alike can build a personal _Style Engine_ from the ground up—with enough depth for grognards and enough elegance for obsessive minimalists.
+
+---
+
+## 🧩 Core System Architecture
+
+Each major media domain is interpreted through a _subsystem_—a name derived from the metaphorical body part it expresses. Every subsystem is tagged using `#SUBSYSTEM` for fast querying and cross-referencing.
+
+| Subsystem Name | Tag           | Domain / Media Type                         | Backronym                                                             | Name Origin Context                                                                |
+| -------------- | ------------- | ------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| VISCERA        | `#VISCERA`    | Film / TV                                   | Visual Identity System for Cinematic Expression, Rhythm, and Affect   | Evokes guts, rawness, and emotional core of cinema                                 |
+| NEOGUTS        | `#NEOGUTS`    | Anime                                       | Narrative-Emotional Otaku Grammar Using Tonal Schemata                | "Neo" for modern anime grammar; "Guts" nods to visceral anime like _Berserk_       |
+| LYMPH          | `#LYMPH`      | Literature                                  | Lexical Yield Mapping for Prose and Hermeneutics                      | Like lymphatic system: slow, distributed, nourishing hidden systems like footnotes |
+| LUDOVORE       | `#LUDOVORE`   | Games                                       | Ludonarrative Dynamics of Velocity, Objectives, Ritual, and Emergence | A ‘game-eater’; metaphor for deep consumption of play systems                      |
+| AUDIVA         | `#AUDIVA`     | Music / Sound Design                        | Aural Dynamics of Identity, Voice, and Affect                         | Portmanteau of “audio” + “diva,” implying sonic seduction                          |
+| LUSTRA         | `#LUSTRA`     | Porn / Erotica                              | Libidinal Unification of Style, Tone, Ritual, and Anatomy             | Derived from "lust" and "illustra" (Latin: illuminate)—porn as sacred light        |
+| OCULON         | `#OCULON`     | Visual Art / Symbolism                      | Optical Composition Underlying Line, Order, and Narrative             | Sounds like ocular + cyclotron—vision in motion, spiraling meaning                 |
+| TENDRA         | `#TENDRA`     | Web Lore / Meme Culture / Network Theory    | Temporal Expression of Networked Discourse, Ritual, and Affect        | From "tendril," spreading, rhizomatic discourse systems                            |
+| EPOCHE         | `#EPOCHE`     | Theater / Live Performance / Actor Ritual   | Embodied Performance Of Conflict, Hysteria, and Emotion               | From phenomenology: “epoché” = suspension of judgment; pure performance            |
+| PANELOS        | `#PANELOS`    | Manga / Comics / Sequential Narrative       | Panel Aesthetics and Narrative Encoding for Layout, Order, and Symbol | From “panel” + “logos”; comics as symbolic arrangement                             |
+| MYOFLEX        | `#MYOFLEX`    | Movement / Choreography / Kinesthetic Logic | Myographic Yield Of Form, Limb, Expression, and Xpression             | "Myo" = muscle; "Flex" = kinetic motion and signal                                 |
+| VERBOMANCY     | `#VERBOMANCY` | Voice / Rhetoric / Linguistic Design        | Verbal Encoding for Rhetoric, Body, Oratory, Manipulation, and Syntax | “Word magic”; power of speech to conjure ideology or seduction                     |
+
+---
+
+## 🧱 Logging a Media Entry
+
+Each piece of media gets logged in Markdown (or JSON) with shared metadata. You may apply one or multiple subsystems per entry:
+
+```markdown
+## 🎞️ Title: [Media Title Here]
+
+- **Medium**: (Film, Game, Anime, Porn, etc.)
+- **Primary Influence Type**: (Aesthetic / Structural / Emotional / Erotic / Philosophical / Technical)
+- **Core Imprint**: [Short one-liner on what it injected into your psyche]
+- **Tags**: [#VISCERA #NEOGUTS #tonal-collapse #looped-affect]
+- **Subsystem Profiles**:
+  - VISCERA: [optional notes]
+  - NEOGUTS: [...]
+  - LUSTRA: [...]
+```
+
+---
+
+## 🧬 Style Archetypes
+
+Once media is accumulated, recurring combinations form **Style Archetypes**:
+
+```markdown
+### 🦠 Archetype: Erotic Dread Collapse
+
+- **Core Mood**: Erotic submission amid metaphysical horror
+- **Works**: _Silent Hill 2_, _Neon Genesis Evangelion_, _Antichrist_
+- **Best Used For**: Psychological degeneration, submissive hauntings, faith-as-pain
+- **Dominant Subsystems**: #LUSTRA + #NEOGUTS + #AUDIVA + #OCULON
+```
+
+---
+
+## 🧠 Personal Style Engine
+
+When the database hits critical mass, you may synthesize your full creative imprint:
+
+```markdown
+# 🧠 Style Engine: [Your Handle or Persona]
+
+- **Dominant Narrative Forms**: Recursive collapse, fragment drift, ritualized decision
+- **Mood Signatures**: Grief looped as sex, silence as tension, grotesque reverence
+- **Erotic Signaling**: Prolonged edging, gape as worship, totalizing submission
+- **Stylistic Dependencies**: #VISCERA + #LUSTRA + #LYMPH
+- **Top Referenced Works**: [insert media titles]
+```
+
+---
+
+## 📁 Suggested File Structure (if using folders)
+
+```bash
+GUTS99/
+├── VISCERA/
+├── NEOGUTS/
+├── LYMPH/
+├── LUDOVORE/
+├── AUDIVA/
+├── LUSTRA/
+├── OCULON/
+├── TENDRA/
+├── EPOCHE/
+├── PANELOS/
+├── MYOFLEX/
+├── VERBOMANCY/
+├── archetypes/
+├── style-engines/
+├── templates/
+└── README.md
+```
+
+Or, skip the folders and log everything as flat Markdown with **#tag-based filtering** in Obsidian, Notion, or your own terminal viewer.
+
+---
+
+## ✅ Use Cases
+
+- 🔬 Reverse-engineering tone for new stories
+- 💀 Cataloging pornographic influence for character sexuality systems
+- 🧪 Generating new works from archetype fusions
+- 🗂 Building a private database of all personal aesthetic influence
+
+---
+
+## 🏁 Next Actions
+
+- [ ] Continue populating entries for each subsystem
+- [ ] Begin tagging emerging archetypes from clusters
+- [ ] Cross-ref with project timelines (e.g. **ASTRO7EX**, **Lustration**)
+- [ ] Build personal graph of cross-subsystem affect (e.g., using Mermaid or Obsidian)
+
+---
+
+Let me know if you'd like this converted into `.md`, `.json`, Mermaid mindmap, or injected into your VS Code structure via script.
