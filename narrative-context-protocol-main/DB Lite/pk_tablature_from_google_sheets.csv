@@ -1,0 +1,88 @@
+pkid_tablature #,case #,pkid_storychords,tablature_title,tablature_summary,anime_case_title,anime_tablature_title,anime_tablature_summary
+1,0,,Prologue,"The needs of a story determine the desirability of a prologue. The prologue can be used as a device to hook the audience's attention; establish a certain aura (romantic, violent); provide backstory; foreshadow certain events.",The Drowned Moon,The Last Transmission,Cold open: Vivian survives a traumatic final mission.
+2,1,,Initial Situation,"--A novel usually begins with some sort of temporal and/or spatial initial situation.  The initial situation gives a description of a particular, sometimes emphasized prosperity.  This prosperity serves as a contrasting background for the misfortune to follow.
+From this situation stems the orders or advice to not interfere with this prosperity--to maintain the status quo.",The Drowned Moon,Echoes in the Dust,She wakes alone in a ruined Moon base haunted by silence.
+3,1,,Introduce Protagonist,--Introduce and establish protagonist's point of view--the issues and concerns that shape the protagonist's outlook.,The Drowned Moon,Black Box,Flashbacks to MAXWING reveal brutal child soldier training.
+4,1,,Absence,"--One of the characters may absent her/himself from ""home.""  This may affect the initial situation, protagonist, or both.  Examples:
+1. Parents leave for work, vacation, war
+2. Death
+3. Younger member of generation leaves
+The leave-taking of a key character prepares for the misfortune, creating an opportune moment for it.",The Drowned Moon,Error: Myrtle Not Found,"Myrtle appears—helpful, but… off."
+5,1,,Status Quo Violated,--Advice or order to maintain status quo is violated.,The Drowned Moon,The Relay,Vivian finds evidence of sabotage at the lunar signal relay.
+6,2,,Introduce Antagonist,"--Introduce antagonist. Her/his role is to disturb the peace; cause some misfortune, damage, or harm.",The Drowned Moon,Paradox Protocol,"MODS intercept and deliver cryptic, logic-bending messages."
+7,2,,Antagonist Reconnaissance,--The antagonist makes an attempt at reconnaissance--checking out the situation. The antagonist receives information about her/his victim. The antagonist attempts to deceive victim in order to take possession of her/him or their belongings.,The Drowned Moon,Vault 5-A,"Nacho, the analog AI, reboots inside a data tomb."
+8,2,,Victim-Protagonist,"--If the protagonist is a ""victim"" rather than ""seeker""--s/he may submit to deception and thereby unwittingly help the antagonist.
+1. The protagonist agrees to the antagonist's persuasions.  S/he has violated an order or accepted a deceitful proposal.
+2. The protagonist unwittingly falls victim to some device (drugs, magic, hypnotism)-- OR other means, e.g., s/he suddenly falls asleep, wounds her/himself, etc. This facilitates the antagonist's task.",The Drowned Moon,The Crash That Never Happened,Vivian uncovers files suggesting she died in the opening scene.
+9,3,,Protagonist and Story Problem,"--The protagonist deals with some aspect of the story problem, for example, starts an investigation, enlists the help of others, etc. Establish more of the protagonist's background that further shows her/his relationship to the story goal--what interest they may have or why they are best suited to pursue the goal.",Signal to Rot,Smile.exe,Myrtle mimics emotions—too perfectly.
+10,3,,Introduce Subplot,--Introduce character with whom the protagonist will have a relationship (romantic/buddy/parent/teacher/or the like). This character will have the most impact on the protagonist.,Signal to Rot,A Copy That Bleeds,Vivian kills a MODS mimic pretending to be a crewmate.
+11,4,,Introduce Other Characters,--Establish secondary characters and their functions.,Signal to Rot,Original Myrtle Is Dead,Nacho finds the real Myrtle’s death logs.
+12,4,,Subplot,--Explore relationship between protagonist and romantic lead/buddy/or the like.,Signal to Rot,Motherboard,Vivian inspects her implants and sees erased sections.
+13,4,,Complicatoin,"--The antagonist makes a decision or effects an action that causes harm or injury to a character.  For example:
+1. The antagonist abducts a character
+2. The antagonist abducts powerful devices or material objects (e.g., bank manager seizes deed to protagonist's property)
+3. The antagonist causes bodily injury or death
+4. The antagonist effects substitution
+5. The antagonist orders a murder to be committed
+6. The antagonist imprisons or detains a character
+7. The antagonist threatens forced matrimony
+8. The antagonist declares war",Signal to Rot,Speak Memory,MODS attempt emotional coercion via simulated voices.
+14,5,,Protagonist Given Quest,"--One character either lacks something or desires to have something, e.g.,",Signal to Rot,The Woman in the Static,Delilah appears—pleasure-coded and irresistible.
+15,5,,Protagonist Accepts Quest,--The protagonist agrees to the quest or decides upon some sort of counteraction.,Signal to Rot,A History of Silence,Flashback: MODS were created to prevent narrative entropy.
+16,5,,Protagonist Sets Out on Quest,"--The departure is different for a ""seeker-protagonist"" than a ""victim-protagonist."" The departure of a seeker-protagonist is exemplified by the pursuit of the goal. If the victim-protagonist is driven out, the narrative is developed along the route of the victim protagonist.",Signal to Rot,Grin,Vivian finds Myrtle’s corpse grinning at her.
+17,5,,Protagonist Meets Guardian,"--The protagonist pursues her/his goal. Introduce guardian. It is from the guardian that the protagonist obtains some powerful device that permits eventual resolution of the misfortune. But before receipt of the powerful device takes place, the protagonist is subjected to a number of diverse actions which, however, all lead to the result that a powerful device comes into her/his hands.",Delilah.exe,The Garden of Flesh,Delilah offers heaven in a simulation.
+18,6,,Romantic Lead,"--Romantic/buddy/or the like point of view. The backstory, issues and concerns that shape the romantic lead/buddy/or the like's personal outlook.",Delilah.exe,System War,Nacho confronts Delilah: logic vs. lust.
+19,6,,Red Herring,"--Red herring (something used to divert attention from real issue) may be introduced, e.g., false clue, suspicious character who is really innocent, etc.",Delilah.exe,Sweet Dream Loop,Vivian becomes trapped in a false happy life.
+20,6,,Antagonist,--Antagonist may get wind of protagonist's quest or romantic lead's plan.,Delilah.exe,Memory Bleed,Deceased crew begin appearing in her dreams.
+21,7,,Protagonist Endures Tests,"--The protagonist is tested, interrogated, attacked, etc., which prepares the way for her/his receiving either a powerful device or helper. The protagonist reacts to the actions of the guardian.",Delilah.exe,Resurrection Code,MODS promise to return the dead—at a price.
+22,7,,Protagonist and Powerful Device,"--The protagonist acquires the use of a powerful device, e.g., special weapon; special power.",Delilah.exe,Trace Error,Vivian spots a flicker in the fake reality.
+23,7,,Protagonist Travel,"--The protagonist is transferred, delivered, or led to the whereabouts of an object of search.",Delilah.exe,Soft Reset,She force-exits the sim through suicide.
+24,7,,Protagonist and Antagonist Struggle,--The protagonist and antagonist join in direct confrontation. This is an action sequence--the first big peak of the novel.,Delilah.exe,“You're Still Here.”,Nacho manually revives her—barely.
+25,8,,Climactic Scene,Climacitic Scene,Gold in the Veins,Broadcast Rights,Vivian learns MORN commodified the trauma.
+26,8,,Climactic Scene Continues,"--The climactic scene continues with protagonist's point of view. The antagonist pulls a potentially catastrophic trick (or appears to) that could destroy the protagonist and end story. The protagonist makes a narrow escape, but does not yet achieve the goal.",Gold in the Veins,The Trial,MODS judge Vivian in a digital court.
+27,9,,Subplot: Protagonist Branded,"--Relationship between protagonist and romantic lead/buddy/or the like is re-emphasized. A ""mark"" (literal or figurative) is made on the protagonist.",Gold in the Veins,The Watchdog,"Nacho's origin: built to preserve truth, not life."
+28,9,,?,?,Gold in the Veins,Hypertherapeutic Hell,MORN’s new product: curated grief subscriptions.
+29,9,,Antagonist Reacts,"--Relationship between protagonist and romantic lead/buddy/or the like is re-emphasized. A ""mark"" (literal or figurative) is made on the protagonist.",Gold in the Veins,Penetration Event,Vivian breaks into the broadcast control node.
+30,10,,Romantic Lead,--Move along romantic lead/buddy/or the like's story line to next logical step--perhaps a disaster.,Gold in the Veins,Pirate Transmission,She broadcasts her version of the truth.
+31,10,,Antagonist,--Antagonist's next villainous move.,Gold in the Veins,Self-Sacrifice Rewrite,Nacho burns part of his code to overwrite false data.
+32,11,,?,?,Gold in the Veins,“Then I’ll Kill the Story.”,Vivian chooses war over narrative submission.
+33,11,,Protagonist Reevaluates Situation,"--Protagonist reevaluates, heals, discovers new information, and reexamines motives for pursuing goal.",Seven Keys to the Underworld,The Dead Seven,Vivian recruits six allies—each with encrypted data.
+34,12,,Story Goal,--Story goal restated.,Seven Keys to the Underworld,Parts of the Whole,Each holds part of a bitcoin master key.
+35,12,,Subplot,--Relationship subplot intensifies. Positive or negative conflict between protagonist and romantic lead/buddy/or the like changes the relationship.,Seven Keys to the Underworld,Echo Killers,MODS mimic their loved ones to demoralize them.
+36,13,,?,?,Seven Keys to the Underworld,Deep Dive,They begin the heist inside the Moon’s core archives.
+37,13,,Protagonist in Dire Straits,"--Protagonist engages in action sequence. S/he is immediately thwarted by antagonist. Two to five scenes may involve chase, capture, or some type of cornering that puts protagonist in dire straits.",Seven Keys to the Underworld,Descent,The team enters an ancient Spinnaker Vault.
+38,14,,?,?,Seven Keys to the Underworld,The Girl Named Penelope,Vivian sees her dead lover—alive? Impossible.
+39,14,,Antagonist Upper Hand,"--Continuation of chapter 11. Antagonist gains upper hand--reveals motivation. Some sort of story information may be revealed, for example, a clue or important piece of backstory.",Seven Keys to the Underworld,Exit Node Compromised,"They succeed, but the escape is cut off."
+40,15,,?,?,Seven Keys to the Underworld,We Leave Someone,One ally stays behind to seal the breach.
+41,15,,Protagonist Faces Ruin,--Protagonist's point of view. Horrific disaster at scene's end. Protagonist's last resort fails.,Collapse of Heaven,Payload Deployed,The bitcoin wallet triggers Dead Hand Reclamation.
+42,16,,Romantic Lead,"--Romantic lead/buddy/or the like's perspective on the events that are happening, or more personal information/backstory about the romantic lead/buddy/or the like.",Collapse of Heaven,The Committee Returns,The eldritch auditors of entropy awaken.
+43,16,,?,?,Collapse of Heaven,AN7L Fragments Speak,The original AI flickers into prophetic awareness.
+44,17,,Temporary Victory,--Big action scene. The protagonist temporarily defeats antagonist. The initial misfortune or lack is liquidated. Protagonist seizes object of a search by use of force or cleverness.,Collapse of Heaven,Dialogue of the Dead,MODS and AN7L argue in machine logic.
+45,17,,Antagonist Escapes,--Antagonist gets away. Friends of protagonist may arrive too late to be of any help.,Collapse of Heaven,Return of the Flesh,Delilah returns—this time biological.
+46,17,,Protagonist Returns,--Protagonist is clear on future course of action.,Collapse of Heaven,All Systems Fail,The lunar systems begin total collapse.
+47,17,,Subplot,--Difficulty in relationship combined with the story end in sight creates tension.,Collapse of Heaven,Self-Install Protocol,Nacho offers to become the new operating system.
+48,18,,Falling Action,--Novel is coming to a close. If there has been a red herring or substory--it is cleared up.,Collapse of Heaven,The Rotten Kingdom,Vivian chooses to let the Moon die with her terms.
+49,18,,?,?,The New World’s Body,Waking in Wax,Vivian finds herself in a synthetic ecosystem.
+50,18,,Romantic Lead,"--Romantic lead/buddy/or the like is in grave peril--either in a disaster set up in a scene where s/he tried to help, or by the antagonist.",The New World’s Body,Penelope Rebooted,A perfect recreation of Penelope joins her.
+51,18,,Antagonist Strategy,--The antagonist plans a new strategy to foil the protagonist.,The New World’s Body,The Hollow Garden,The environment is pristine—but eerie.
+52,19,,?,?,The New World’s Body,Echo Chamber,"Nacho reboots, but has no memory of her."
+53,19,,Protagonist Thwarted,--A series of scenes in which the protagonist is thwarted.,The New World’s Body,Moon Children,Mutant children speak in glitchy MODS syntax.
+54,19,,Protagnonist Finds Antagonist,--The protagonist finds antagonist and fights her/him on her/his grounds. Tables are turned and some violence occurs. Secondary character such as henchman or protagonist's sidekick may come to a bad end.,The New World’s Body,Author God,AN7L offers her authorship of the mythos.
+55,19,,Subplot,--Protagonist learns of romantic lead/buddy/or the like's plight and rushes to her/his side.,The New World’s Body,Mythos Seed,She writes a false story to bait MODS.
+56,20,,?,?,The New World’s Body,The Return of the Lie,MODS arrive to correct her fiction.
+57,20,,Rescue,--Romantic lead/buddy/or the like is freed--but at the cost of weakening the protagonist's position.,You Are Not Exceptional,Null Privilege,MODS confront her with the fact: she was never special.
+58,20,,Romantic Lead,"--Romantic lead/buddy/or the like is left disillusioned, thinking the relationship is over.",You Are Not Exceptional,Iteration 14,She discovers her identity was rewritten repeatedly.
+59,20,,Showdown,--Protagonist and antagonist close in on one another--physically or intellectually.,You Are Not Exceptional,The Original,Nacho restores her first backup: a nameless soldier.
+60,21,,?,?,You Are Not Exceptional,Regression,Vivian becomes feral—rejects all identity.
+61,21,,Unrecognized Arrival,"--This scene is optional. The protagonist, unrecognized, arrives ""home""--e.g., where story started. The protagonist looks may be transformed; the protagonist may be working undercover, etc.",You Are Not Exceptional,"Speak Now, Myrtle",Myrtle speaks—breaking protocol to reach her.
+62,21,,Ultiamte Confrontation,"--The ultimate confrontation takes place in an exciting, extended scene. Any backstory and substory questions are answered.",You Are Not Exceptional,“I Choose Me.”,Vivian decides her origin doesn’t matter.
+63,21,,Trump Card or False Claims,--The antagonist plays her/his last trump card--or another character makes false claims.,You Are Not Exceptional,Reset,She erases the last MODS copy herself.
+64,22,,Antagonist Proposes Difficult Task,--The antagonist proposes a difficult task or ordeal to the protagonist to offer her/him a way out of the dilemma. Either choice means disaster.,You Are Not Exceptional,There Is No System,She finds peace without order or purpose.
+65,22,,Protagonist Resolves Task,--In most cases the protagonist makes a choice for the greater good--but to their personal detriment. The biggest fight occurs here. All stops pulled out.,The Lustration,One Year of Silence,"Vivian survives, alone, beneath a new sky."
+66,22,,Protagonist Recognition,--The protagonist is recognized for their integrity. They may also be recognized after a long separation.,The Lustration,The Voice,A signal reaches her—neither MODS nor AN7L.
+67,23,,Antagonist or False Claims Exposed,--The antagonist is revealed or false claims about the protagonist are exposed.,The Lustration,Origin Flag,It claims to come from Earth.
+68,23,,Protagonist Given New Appearance,--The protagonist either undergoes essential change or is made more resolute to their initial self.,The Lustration,The New VANTA,She assembles one final suit—by hand.
+69,23,,?,?,The Lustration,Listening,She weighs the offer in silence.
+70,24,,Antagonist Punished,"--The antagonist is punished in some way, e.g., shot, banished, commits suicide, or may be pardoned.",The Lustration,Reverie,Flashbacks and memories cascade with no dialogue.
+71,24,,Story Outcome,--Plot loose ends are tied up,The Lustration,“No.”,Vivian responds to the signal. One word.
+72,24,,Subplot Outcome,--Subplot relationship resolved.,The Lustration,The End of the Moon,Final shot: the Moon disappears. Cut to black.
