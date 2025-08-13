@@ -1,0 +1,732 @@
+[
+    {
+        "anime_case_title": "",
+        "anime_tablature_summary": "",
+        "anime_tablature_title": "",
+        "case_number": "",
+        "pkid_storychords": "",
+        "pkid_tablature": 0,
+        "tablature_summary": "",
+        "tablature_title": ""
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "Cold open: Vivian survives a traumatic final mission.",
+        "anime_tablature_title": "The Last Transmission",
+        "case_number": "0",
+        "pkid_storychords": null,
+        "pkid_tablature": 1,
+        "tablature_summary": "The needs of a story determine the desirability of a prologue. The prologue can be used as a device to hook the audience's attention; establish a certain aura (romantic, violent); provide backstory; foreshadow certain events.",
+        "tablature_title": "Prologue"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "She wakes alone in a ruined Moon base haunted by silence.",
+        "anime_tablature_title": "Echoes in the Dust",
+        "case_number": "1",
+        "pkid_storychords": null,
+        "pkid_tablature": 2,
+        "tablature_summary": "--A novel usually begins with some sort of temporal and/or spatial initial situation.  The initial situation gives a description of a particular, sometimes emphasized prosperity.  This prosperity serves as a contrasting background for the misfortune to follow.\nFrom this situation stems the orders or advice to not interfere with this prosperity--to maintain the status quo.",
+        "tablature_title": "Initial Situation"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "Flashbacks to MAXWING reveal brutal child soldier training.",
+        "anime_tablature_title": "Black Box",
+        "case_number": "1",
+        "pkid_storychords": null,
+        "pkid_tablature": 3,
+        "tablature_summary": "--Introduce and establish protagonist's point of view--the issues and concerns that shape the protagonist's outlook.",
+        "tablature_title": "Introduce Protagonist"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "Myrtle appears—helpful, but… off.",
+        "anime_tablature_title": "Error: Myrtle Not Found",
+        "case_number": "1",
+        "pkid_storychords": null,
+        "pkid_tablature": 4,
+        "tablature_summary": "--One of the characters may absent her/himself from \"home.\"  This may affect the initial situation, protagonist, or both.  Examples:\n1. Parents leave for work, vacation, war\n2. Death\n3. Younger member of generation leaves\nThe leave-taking of a key character prepares for the misfortune, creating an opportune moment for it.",
+        "tablature_title": "Absence"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "Vivian finds evidence of sabotage at the lunar signal relay.",
+        "anime_tablature_title": "The Relay",
+        "case_number": "1",
+        "pkid_storychords": null,
+        "pkid_tablature": 5,
+        "tablature_summary": "--Advice or order to maintain status quo is violated.",
+        "tablature_title": "Status Quo Violated"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "MODS intercept and deliver cryptic, logic-bending messages.",
+        "anime_tablature_title": "Paradox Protocol",
+        "case_number": "2",
+        "pkid_storychords": null,
+        "pkid_tablature": 6,
+        "tablature_summary": "--Introduce antagonist. Her/his role is to disturb the peace; cause some misfortune, damage, or harm.",
+        "tablature_title": "Introduce Antagonist"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "Nacho, the analog AI, reboots inside a data tomb.",
+        "anime_tablature_title": "Vault 5-A",
+        "case_number": "2",
+        "pkid_storychords": null,
+        "pkid_tablature": 7,
+        "tablature_summary": "--The antagonist makes an attempt at reconnaissance--checking out the situation. The antagonist receives information about her/his victim. The antagonist attempts to deceive victim in order to take possession of her/him or their belongings.",
+        "tablature_title": "Antagonist Reconnaissance"
+    },
+    {
+        "anime_case_title": "The Drowned Moon",
+        "anime_tablature_summary": "Vivian uncovers files suggesting she died in the opening scene.",
+        "anime_tablature_title": "The Crash That Never Happened",
+        "case_number": "2",
+        "pkid_storychords": null,
+        "pkid_tablature": 8,
+        "tablature_summary": "--If the protagonist is a \"victim\" rather than \"seeker\"--s/he may submit to deception and thereby unwittingly help the antagonist.\n1. The protagonist agrees to the antagonist's persuasions.  S/he has violated an order or accepted a deceitful proposal.\n2. The protagonist unwittingly falls victim to some device (drugs, magic, hypnotism)-- OR other means, e.g., s/he suddenly falls asleep, wounds her/himself, etc. This facilitates the antagonist's task.",
+        "tablature_title": "Victim-Protagonist"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Myrtle mimics emotions—too perfectly.",
+        "anime_tablature_title": "Smile.exe",
+        "case_number": "3",
+        "pkid_storychords": null,
+        "pkid_tablature": 9,
+        "tablature_summary": "--The protagonist deals with some aspect of the story problem, for example, starts an investigation, enlists the help of others, etc. Establish more of the protagonist's background that further shows her/his relationship to the story goal--what interest they may have or why they are best suited to pursue the goal.",
+        "tablature_title": "Protagonist and Story Problem"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Vivian kills a MODS mimic pretending to be a crewmate.",
+        "anime_tablature_title": "A Copy That Bleeds",
+        "case_number": "3",
+        "pkid_storychords": null,
+        "pkid_tablature": 10,
+        "tablature_summary": "--Introduce character with whom the protagonist will have a relationship (romantic/buddy/parent/teacher/or the like). This character will have the most impact on the protagonist.",
+        "tablature_title": "Introduce Subplot"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Nacho finds the real Myrtle’s death logs.",
+        "anime_tablature_title": "Original Myrtle Is Dead",
+        "case_number": "4",
+        "pkid_storychords": null,
+        "pkid_tablature": 11,
+        "tablature_summary": "--Establish secondary characters and their functions.",
+        "tablature_title": "Introduce Other Characters"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Vivian inspects her implants and sees erased sections.",
+        "anime_tablature_title": "Motherboard",
+        "case_number": "4",
+        "pkid_storychords": null,
+        "pkid_tablature": 12,
+        "tablature_summary": "--Explore relationship between protagonist and romantic lead/buddy/or the like.",
+        "tablature_title": "Subplot"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "MODS attempt emotional coercion via simulated voices.",
+        "anime_tablature_title": "Speak Memory",
+        "case_number": "4",
+        "pkid_storychords": null,
+        "pkid_tablature": 13,
+        "tablature_summary": "--The antagonist makes a decision or effects an action that causes harm or injury to a character.  For example:\n1. The antagonist abducts a character\n2. The antagonist abducts powerful devices or material objects (e.g., bank manager seizes deed to protagonist's property)\n3. The antagonist causes bodily injury or death\n4. The antagonist effects substitution\n5. The antagonist orders a murder to be committed\n6. The antagonist imprisons or detains a character\n7. The antagonist threatens forced matrimony\n8. The antagonist declares war",
+        "tablature_title": "Complicatoin"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Delilah appears—pleasure-coded and irresistible.",
+        "anime_tablature_title": "The Woman in the Static",
+        "case_number": "5",
+        "pkid_storychords": null,
+        "pkid_tablature": 14,
+        "tablature_summary": "--One character either lacks something or desires to have something, e.g.,",
+        "tablature_title": "Protagonist Given Quest"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Flashback: MODS were created to prevent narrative entropy.",
+        "anime_tablature_title": "A History of Silence",
+        "case_number": "5",
+        "pkid_storychords": null,
+        "pkid_tablature": 15,
+        "tablature_summary": "--The protagonist agrees to the quest or decides upon some sort of counteraction.",
+        "tablature_title": "Protagonist Accepts Quest"
+    },
+    {
+        "anime_case_title": "Signal to Rot",
+        "anime_tablature_summary": "Vivian finds Myrtle’s corpse grinning at her.",
+        "anime_tablature_title": "Grin",
+        "case_number": "5",
+        "pkid_storychords": null,
+        "pkid_tablature": 16,
+        "tablature_summary": "--The departure is different for a \"seeker-protagonist\" than a \"victim-protagonist.\" The departure of a seeker-protagonist is exemplified by the pursuit of the goal. If the victim-protagonist is driven out, the narrative is developed along the route of the victim protagonist.",
+        "tablature_title": "Protagonist Sets Out on Quest"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "Delilah offers heaven in a simulation.",
+        "anime_tablature_title": "The Garden of Flesh",
+        "case_number": "5",
+        "pkid_storychords": null,
+        "pkid_tablature": 17,
+        "tablature_summary": "--The protagonist pursues her/his goal. Introduce guardian. It is from the guardian that the protagonist obtains some powerful device that permits eventual resolution of the misfortune. But before receipt of the powerful device takes place, the protagonist is subjected to a number of diverse actions which, however, all lead to the result that a powerful device comes into her/his hands.",
+        "tablature_title": "Protagonist Meets Guardian"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "Nacho confronts Delilah: logic vs. lust.",
+        "anime_tablature_title": "System War",
+        "case_number": "6",
+        "pkid_storychords": null,
+        "pkid_tablature": 18,
+        "tablature_summary": "--Romantic/buddy/or the like point of view. The backstory, issues and concerns that shape the romantic lead/buddy/or the like's personal outlook.",
+        "tablature_title": "Romantic Lead"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "Vivian becomes trapped in a false happy life.",
+        "anime_tablature_title": "Sweet Dream Loop",
+        "case_number": "6",
+        "pkid_storychords": null,
+        "pkid_tablature": 19,
+        "tablature_summary": "--Red herring (something used to divert attention from real issue) may be introduced, e.g., false clue, suspicious character who is really innocent, etc.",
+        "tablature_title": "Red Herring"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "Deceased crew begin appearing in her dreams.",
+        "anime_tablature_title": "Memory Bleed",
+        "case_number": "6",
+        "pkid_storychords": null,
+        "pkid_tablature": 20,
+        "tablature_summary": "--Antagonist may get wind of protagonist's quest or romantic lead's plan.",
+        "tablature_title": "Antagonist"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "MODS promise to return the dead—at a price.",
+        "anime_tablature_title": "Resurrection Code",
+        "case_number": "7",
+        "pkid_storychords": null,
+        "pkid_tablature": 21,
+        "tablature_summary": "--The protagonist is tested, interrogated, attacked, etc., which prepares the way for her/his receiving either a powerful device or helper. The protagonist reacts to the actions of the guardian.",
+        "tablature_title": "Protagonist Endures Tests"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "Vivian spots a flicker in the fake reality.",
+        "anime_tablature_title": "Trace Error",
+        "case_number": "7",
+        "pkid_storychords": null,
+        "pkid_tablature": 22,
+        "tablature_summary": "--The protagonist acquires the use of a powerful device, e.g., special weapon; special power.",
+        "tablature_title": "Protagonist and Powerful Device"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "She force-exits the sim through suicide.",
+        "anime_tablature_title": "Soft Reset",
+        "case_number": "7",
+        "pkid_storychords": null,
+        "pkid_tablature": 23,
+        "tablature_summary": "--The protagonist is transferred, delivered, or led to the whereabouts of an object of search.",
+        "tablature_title": "Protagonist Travel"
+    },
+    {
+        "anime_case_title": "Delilah.exe",
+        "anime_tablature_summary": "Nacho manually revives her—barely.",
+        "anime_tablature_title": "“You're Still Here.”",
+        "case_number": "7",
+        "pkid_storychords": null,
+        "pkid_tablature": 24,
+        "tablature_summary": "--The protagonist and antagonist join in direct confrontation. This is an action sequence--the first big peak of the novel.",
+        "tablature_title": "Protagonist and Antagonist Struggle"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "Vivian learns MORN commodified the trauma.",
+        "anime_tablature_title": "Broadcast Rights",
+        "case_number": "8",
+        "pkid_storychords": null,
+        "pkid_tablature": 25,
+        "tablature_summary": "Climacitic Scene",
+        "tablature_title": "Climactic Scene"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "MODS judge Vivian in a digital court.",
+        "anime_tablature_title": "The Trial",
+        "case_number": "8",
+        "pkid_storychords": null,
+        "pkid_tablature": 26,
+        "tablature_summary": "--The climactic scene continues with protagonist's point of view. The antagonist pulls a potentially catastrophic trick (or appears to) that could destroy the protagonist and end story. The protagonist makes a narrow escape, but does not yet achieve the goal.",
+        "tablature_title": "Climactic Scene Continues"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "Nacho's origin: built to preserve truth, not life.",
+        "anime_tablature_title": "The Watchdog",
+        "case_number": "9",
+        "pkid_storychords": null,
+        "pkid_tablature": 27,
+        "tablature_summary": "--Relationship between protagonist and romantic lead/buddy/or the like is re-emphasized. A \"mark\" (literal or figurative) is made on the protagonist.",
+        "tablature_title": "Subplot: Protagonist Branded"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "MORN’s new product: curated grief subscriptions.",
+        "anime_tablature_title": "Hypertherapeutic Hell",
+        "case_number": "9",
+        "pkid_storychords": null,
+        "pkid_tablature": 28,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "Vivian breaks into the broadcast control node.",
+        "anime_tablature_title": "Penetration Event",
+        "case_number": "9",
+        "pkid_storychords": null,
+        "pkid_tablature": 29,
+        "tablature_summary": "--Relationship between protagonist and romantic lead/buddy/or the like is re-emphasized. A \"mark\" (literal or figurative) is made on the protagonist.",
+        "tablature_title": "Antagonist Reacts"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "She broadcasts her version of the truth.",
+        "anime_tablature_title": "Pirate Transmission",
+        "case_number": "10",
+        "pkid_storychords": null,
+        "pkid_tablature": 30,
+        "tablature_summary": "--Move along romantic lead/buddy/or the like's story line to next logical step--perhaps a disaster.",
+        "tablature_title": "Romantic Lead"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "Nacho burns part of his code to overwrite false data.",
+        "anime_tablature_title": "Self-Sacrifice Rewrite",
+        "case_number": "10",
+        "pkid_storychords": null,
+        "pkid_tablature": 31,
+        "tablature_summary": "--Antagonist's next villainous move.",
+        "tablature_title": "Antagonist"
+    },
+    {
+        "anime_case_title": "Gold in the Veins",
+        "anime_tablature_summary": "Vivian chooses war over narrative submission.",
+        "anime_tablature_title": "“Then I’ll Kill the Story.”",
+        "case_number": "11",
+        "pkid_storychords": null,
+        "pkid_tablature": 32,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "Vivian recruits six allies—each with encrypted data.",
+        "anime_tablature_title": "The Dead Seven",
+        "case_number": "11",
+        "pkid_storychords": null,
+        "pkid_tablature": 33,
+        "tablature_summary": "--Protagonist reevaluates, heals, discovers new information, and reexamines motives for pursuing goal.",
+        "tablature_title": "Protagonist Reevaluates Situation"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "Each holds part of a bitcoin master key.",
+        "anime_tablature_title": "Parts of the Whole",
+        "case_number": "12",
+        "pkid_storychords": null,
+        "pkid_tablature": 34,
+        "tablature_summary": "--Story goal restated.",
+        "tablature_title": "Story Goal"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "MODS mimic their loved ones to demoralize them.",
+        "anime_tablature_title": "Echo Killers",
+        "case_number": "12",
+        "pkid_storychords": null,
+        "pkid_tablature": 35,
+        "tablature_summary": "--Relationship subplot intensifies. Positive or negative conflict between protagonist and romantic lead/buddy/or the like changes the relationship.",
+        "tablature_title": "Subplot"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "They begin the heist inside the Moon’s core archives.",
+        "anime_tablature_title": "Deep Dive",
+        "case_number": "13",
+        "pkid_storychords": null,
+        "pkid_tablature": 36,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "The team enters an ancient Spinnaker Vault.",
+        "anime_tablature_title": "Descent",
+        "case_number": "13",
+        "pkid_storychords": null,
+        "pkid_tablature": 37,
+        "tablature_summary": "--Protagonist engages in action sequence. S/he is immediately thwarted by antagonist. Two to five scenes may involve chase, capture, or some type of cornering that puts protagonist in dire straits.",
+        "tablature_title": "Protagonist in Dire Straits"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "Vivian sees her dead lover—alive? Impossible.",
+        "anime_tablature_title": "The Girl Named Penelope",
+        "case_number": "14",
+        "pkid_storychords": null,
+        "pkid_tablature": 38,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "They succeed, but the escape is cut off.",
+        "anime_tablature_title": "Exit Node Compromised",
+        "case_number": "14",
+        "pkid_storychords": null,
+        "pkid_tablature": 39,
+        "tablature_summary": "--Continuation of chapter 11. Antagonist gains upper hand--reveals motivation. Some sort of story information may be revealed, for example, a clue or important piece of backstory.",
+        "tablature_title": "Antagonist Upper Hand"
+    },
+    {
+        "anime_case_title": "Seven Keys to the Underworld",
+        "anime_tablature_summary": "One ally stays behind to seal the breach.",
+        "anime_tablature_title": "We Leave Someone",
+        "case_number": "15",
+        "pkid_storychords": null,
+        "pkid_tablature": 40,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "The bitcoin wallet triggers Dead Hand Reclamation.",
+        "anime_tablature_title": "Payload Deployed",
+        "case_number": "15",
+        "pkid_storychords": null,
+        "pkid_tablature": 41,
+        "tablature_summary": "--Protagonist's point of view. Horrific disaster at scene's end. Protagonist's last resort fails.",
+        "tablature_title": "Protagonist Faces Ruin"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "The eldritch auditors of entropy awaken.",
+        "anime_tablature_title": "The Committee Returns",
+        "case_number": "16",
+        "pkid_storychords": null,
+        "pkid_tablature": 42,
+        "tablature_summary": "--Romantic lead/buddy/or the like's perspective on the events that are happening, or more personal information/backstory about the romantic lead/buddy/or the like.",
+        "tablature_title": "Romantic Lead"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "The original AI flickers into prophetic awareness.",
+        "anime_tablature_title": "AN7L Fragments Speak",
+        "case_number": "16",
+        "pkid_storychords": null,
+        "pkid_tablature": 43,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "MODS and AN7L argue in machine logic.",
+        "anime_tablature_title": "Dialogue of the Dead",
+        "case_number": "17",
+        "pkid_storychords": null,
+        "pkid_tablature": 44,
+        "tablature_summary": "--Big action scene. The protagonist temporarily defeats antagonist. The initial misfortune or lack is liquidated. Protagonist seizes object of a search by use of force or cleverness.",
+        "tablature_title": "Temporary Victory"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "Delilah returns—this time biological.",
+        "anime_tablature_title": "Return of the Flesh",
+        "case_number": "17",
+        "pkid_storychords": null,
+        "pkid_tablature": 45,
+        "tablature_summary": "--Antagonist gets away. Friends of protagonist may arrive too late to be of any help.",
+        "tablature_title": "Antagonist Escapes"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "The lunar systems begin total collapse.",
+        "anime_tablature_title": "All Systems Fail",
+        "case_number": "17",
+        "pkid_storychords": null,
+        "pkid_tablature": 46,
+        "tablature_summary": "--Protagonist is clear on future course of action.",
+        "tablature_title": "Protagonist Returns"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "Nacho offers to become the new operating system.",
+        "anime_tablature_title": "Self-Install Protocol",
+        "case_number": "17",
+        "pkid_storychords": null,
+        "pkid_tablature": 47,
+        "tablature_summary": "--Difficulty in relationship combined with the story end in sight creates tension.",
+        "tablature_title": "Subplot"
+    },
+    {
+        "anime_case_title": "Collapse of Heaven",
+        "anime_tablature_summary": "Vivian chooses to let the Moon die with her terms.",
+        "anime_tablature_title": "The Rotten Kingdom",
+        "case_number": "18",
+        "pkid_storychords": null,
+        "pkid_tablature": 48,
+        "tablature_summary": "--Novel is coming to a close. If there has been a red herring or substory--it is cleared up.",
+        "tablature_title": "Falling Action"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "Vivian finds herself in a synthetic ecosystem.",
+        "anime_tablature_title": "Waking in Wax",
+        "case_number": "18",
+        "pkid_storychords": null,
+        "pkid_tablature": 49,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "A perfect recreation of Penelope joins her.",
+        "anime_tablature_title": "Penelope Rebooted",
+        "case_number": "18",
+        "pkid_storychords": null,
+        "pkid_tablature": 50,
+        "tablature_summary": "--Romantic lead/buddy/or the like is in grave peril--either in a disaster set up in a scene where s/he tried to help, or by the antagonist.",
+        "tablature_title": "Romantic Lead"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "The environment is pristine—but eerie.",
+        "anime_tablature_title": "The Hollow Garden",
+        "case_number": "18",
+        "pkid_storychords": null,
+        "pkid_tablature": 51,
+        "tablature_summary": "--The antagonist plans a new strategy to foil the protagonist.",
+        "tablature_title": "Antagonist Strategy"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "Nacho reboots, but has no memory of her.",
+        "anime_tablature_title": "Echo Chamber",
+        "case_number": "19",
+        "pkid_storychords": null,
+        "pkid_tablature": 52,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "Mutant children speak in glitchy MODS syntax.",
+        "anime_tablature_title": "Moon Children",
+        "case_number": "19",
+        "pkid_storychords": null,
+        "pkid_tablature": 53,
+        "tablature_summary": "--A series of scenes in which the protagonist is thwarted.",
+        "tablature_title": "Protagonist Thwarted"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "AN7L offers her authorship of the mythos.",
+        "anime_tablature_title": "Author God",
+        "case_number": "19",
+        "pkid_storychords": null,
+        "pkid_tablature": 54,
+        "tablature_summary": "--The protagonist finds antagonist and fights her/him on her/his grounds. Tables are turned and some violence occurs. Secondary character such as henchman or protagonist's sidekick may come to a bad end.",
+        "tablature_title": "Protagnonist Finds Antagonist"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "She writes a false story to bait MODS.",
+        "anime_tablature_title": "Mythos Seed",
+        "case_number": "19",
+        "pkid_storychords": null,
+        "pkid_tablature": 55,
+        "tablature_summary": "--Protagonist learns of romantic lead/buddy/or the like's plight and rushes to her/his side.",
+        "tablature_title": "Subplot"
+    },
+    {
+        "anime_case_title": "The New World’s Body",
+        "anime_tablature_summary": "MODS arrive to correct her fiction.",
+        "anime_tablature_title": "The Return of the Lie",
+        "case_number": "20",
+        "pkid_storychords": null,
+        "pkid_tablature": 56,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "MODS confront her with the fact: she was never special.",
+        "anime_tablature_title": "Null Privilege",
+        "case_number": "20",
+        "pkid_storychords": null,
+        "pkid_tablature": 57,
+        "tablature_summary": "--Romantic lead/buddy/or the like is freed--but at the cost of weakening the protagonist's position.",
+        "tablature_title": "Rescue"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "She discovers her identity was rewritten repeatedly.",
+        "anime_tablature_title": "Iteration 14",
+        "case_number": "20",
+        "pkid_storychords": null,
+        "pkid_tablature": 58,
+        "tablature_summary": "--Romantic lead/buddy/or the like is left disillusioned, thinking the relationship is over.",
+        "tablature_title": "Romantic Lead"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "Nacho restores her first backup: a nameless soldier.",
+        "anime_tablature_title": "The Original",
+        "case_number": "20",
+        "pkid_storychords": null,
+        "pkid_tablature": 59,
+        "tablature_summary": "--Protagonist and antagonist close in on one another--physically or intellectually.",
+        "tablature_title": "Showdown"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "Vivian becomes feral—rejects all identity.",
+        "anime_tablature_title": "Regression",
+        "case_number": "21",
+        "pkid_storychords": null,
+        "pkid_tablature": 60,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "Myrtle speaks—breaking protocol to reach her.",
+        "anime_tablature_title": "Speak Now, Myrtle",
+        "case_number": "21",
+        "pkid_storychords": null,
+        "pkid_tablature": 61,
+        "tablature_summary": "--This scene is optional. The protagonist, unrecognized, arrives \"home\"--e.g., where story started. The protagonist looks may be transformed; the protagonist may be working undercover, etc.",
+        "tablature_title": "Unrecognized Arrival"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "Vivian decides her origin doesn’t matter.",
+        "anime_tablature_title": "“I Choose Me.”",
+        "case_number": "21",
+        "pkid_storychords": null,
+        "pkid_tablature": 62,
+        "tablature_summary": "--The ultimate confrontation takes place in an exciting, extended scene. Any backstory and substory questions are answered.",
+        "tablature_title": "Ultiamte Confrontation"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "She erases the last MODS copy herself.",
+        "anime_tablature_title": "Reset",
+        "case_number": "21",
+        "pkid_storychords": null,
+        "pkid_tablature": 63,
+        "tablature_summary": "--The antagonist plays her/his last trump card--or another character makes false claims.",
+        "tablature_title": "Trump Card or False Claims"
+    },
+    {
+        "anime_case_title": "You Are Not Exceptional",
+        "anime_tablature_summary": "She finds peace without order or purpose.",
+        "anime_tablature_title": "There Is No System",
+        "case_number": "22",
+        "pkid_storychords": null,
+        "pkid_tablature": 64,
+        "tablature_summary": "--The antagonist proposes a difficult task or ordeal to the protagonist to offer her/him a way out of the dilemma. Either choice means disaster.",
+        "tablature_title": "Antagonist Proposes Difficult Task"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "Vivian survives, alone, beneath a new sky.",
+        "anime_tablature_title": "One Year of Silence",
+        "case_number": "22",
+        "pkid_storychords": null,
+        "pkid_tablature": 65,
+        "tablature_summary": "--In most cases the protagonist makes a choice for the greater good--but to their personal detriment. The biggest fight occurs here. All stops pulled out.",
+        "tablature_title": "Protagonist Resolves Task"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "A signal reaches her—neither MODS nor AN7L.",
+        "anime_tablature_title": "The Voice",
+        "case_number": "22",
+        "pkid_storychords": null,
+        "pkid_tablature": 66,
+        "tablature_summary": "--The protagonist is recognized for their integrity. They may also be recognized after a long separation.",
+        "tablature_title": "Protagonist Recognition"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "It claims to come from Earth.",
+        "anime_tablature_title": "Origin Flag",
+        "case_number": "23",
+        "pkid_storychords": null,
+        "pkid_tablature": 67,
+        "tablature_summary": "--The antagonist is revealed or false claims about the protagonist are exposed.",
+        "tablature_title": "Antagonist or False Claims Exposed"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "She assembles one final suit—by hand.",
+        "anime_tablature_title": "The New VANTA",
+        "case_number": "23",
+        "pkid_storychords": null,
+        "pkid_tablature": 68,
+        "tablature_summary": "--The protagonist either undergoes essential change or is made more resolute to their initial self.",
+        "tablature_title": "Protagonist Given New Appearance"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "She weighs the offer in silence.",
+        "anime_tablature_title": "Listening",
+        "case_number": "23",
+        "pkid_storychords": null,
+        "pkid_tablature": 69,
+        "tablature_summary": "?",
+        "tablature_title": "?"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "Flashbacks and memories cascade with no dialogue.",
+        "anime_tablature_title": "Reverie",
+        "case_number": "24",
+        "pkid_storychords": null,
+        "pkid_tablature": 70,
+        "tablature_summary": "--The antagonist is punished in some way, e.g., shot, banished, commits suicide, or may be pardoned.",
+        "tablature_title": "Antagonist Punished"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "Vivian responds to the signal. One word.",
+        "anime_tablature_title": "“No.”",
+        "case_number": "24",
+        "pkid_storychords": null,
+        "pkid_tablature": 71,
+        "tablature_summary": "--Plot loose ends are tied up",
+        "tablature_title": "Story Outcome"
+    },
+    {
+        "anime_case_title": "The Lustration",
+        "anime_tablature_summary": "Final shot: the Moon disappears. Cut to black.",
+        "anime_tablature_title": "The End of the Moon",
+        "case_number": "24",
+        "pkid_storychords": null,
+        "pkid_tablature": 72,
+        "tablature_summary": "--Subplot relationship resolved.",
+        "tablature_title": "Subplot Outcome"
+    }
+]
