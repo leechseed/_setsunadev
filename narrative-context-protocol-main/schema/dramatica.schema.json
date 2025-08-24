@@ -1,0 +1,287 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/schemas/dramatica.schema.json",
+  "title": "Dramatica Story Schema",
+  "description": "Canonical Dramatica storyform + plot progression + character web, suitable for agentic/NCP use.",
+  "type": "object",
+  "required": ["version", "storyform", "throughlines", "plot_progression", "characters"],
+  "properties": {
+    "version": { "type": "string" },
+
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "logline": { "type": "string" },
+        "author": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+
+    "storyform": {
+      "type": "object",
+      "required": ["dynamics", "appreciations"],
+      "properties": {
+        "dynamics": {
+          "type": "object",
+          "required": ["driver", "limit", "outcome", "judgment"],
+          "properties": {
+            "driver": { "type": "string", "enum": ["Action", "Decision"] },
+            "limit": { "type": "string", "enum": ["Optionlock", "Timelock"] },
+            "outcome": { "type": "string", "enum": ["Success", "Failure"] },
+            "judgment": { "type": "string", "enum": ["Good", "Bad"] }
+          },
+          "additionalProperties": false
+        },
+        "appreciations": {
+          "type": "object",
+          "properties": {
+            "goal": { "type": "string" },
+            "consequence": { "type": "string" },
+            "requirements": { "type": "string" },
+            "prerequisites": { "type": "string" },
+            "forewarnings": { "type": "string" },
+            "cost": { "type": "string" },
+            "dividend": { "type": "string" },
+            "focus": { "type": "string" },
+            "direction": { "type": "string" },
+            "problem": { "type": "string" },
+            "solution": { "type": "string" },
+            "unique_ability": { "type": "string" },
+            "critical_flaw": { "type": "string" },
+            "benchmark": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "throughlines": {
+      "type": "object",
+      "required": ["overall_story", "main_character", "impact_character", "relationship_story"],
+      "properties": {
+        "overall_story": { "$ref": "#/$defs/Throughline" },
+        "main_character": { "$ref": "#/$defs/Throughline" },
+        "impact_character": { "$ref": "#/$defs/Throughline" },
+        "relationship_story": { "$ref": "#/$defs/Throughline" }
+      },
+      "additionalProperties": false
+    },
+
+    "plot_progression": {
+      "type": "object",
+      "required": ["overall_story", "main_character", "impact_character", "relationship_story"],
+      "properties": {
+        "overall_story": { "$ref": "#/$defs/PlotTrack" },
+        "main_character": { "$ref": "#/$defs/PlotTrack" },
+        "impact_character": { "$ref": "#/$defs/PlotTrack" },
+        "relationship_story": { "$ref": "#/$defs/PlotTrack" }
+      },
+      "additionalProperties": false
+    },
+
+    "characters": {
+      "type": "object",
+      "required": ["players"],
+      "properties": {
+        "players": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Character" },
+          "minItems": 1
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["ids", "type"],
+            "properties": {
+              "ids": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 2,
+                "maxItems": 3
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "Main_vs_Impact",
+                  "Protagonist_vs_Antagonist",
+                  "Mentor_Student",
+                  "Rivals",
+                  "Allies",
+                  "Family",
+                  "Romance",
+                  "Other"
+                ]
+              },
+              "label": { "type": "string" },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "$defs": {
+    "Throughline": {
+      "type": "object",
+      "required": ["domain", "concern", "issue", "problem", "solution", "symptom", "response"],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "enum": ["Activity", "Situation", "Psychology", "Mind"]
+        },
+        "concern": { "type": "string", "allOf": [{ "$ref": "#/$defs/TypeName" }] },
+        "issue": { "type": "string", "allOf": [{ "$ref": "#/$defs/VariationName" }] },
+        "counterpoint": { "type": "string", "allOf": [{ "$ref": "#/$defs/VariationName" }] },
+        "problem": { "type": "string", "allOf": [{ "$ref": "#/$defs/ElementName" }] },
+        "solution": { "type": "string", "allOf": [{ "$ref": "#/$defs/ElementName" }] },
+        "symptom": { "type": "string", "allOf": [{ "$ref": "#/$defs/ElementName" }] },
+        "response": { "type": "string", "allOf": [{ "$ref": "#/$defs/ElementName" }] },
+        "benchmark": { "type": "string", "allOf": [{ "$ref": "#/$defs/TypeName" }] },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "PlotTrack": {
+      "type": "object",
+      "required": ["signposts"],
+      "properties": {
+        "signposts": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "type": "string", "allOf": [{ "$ref": "#/$defs/TypeName" }] },
+              "title": { "type": "string" },
+              "summary": { "type": "string" },
+              "beats": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string" },
+                    "label": { "type": "string" },
+                    "text": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "journeys": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["from_index", "to_index"],
+            "properties": {
+              "from_index": { "type": "integer", "minimum": 0, "maximum": 2 },
+              "to_index": { "type": "integer", "minimum": 1, "maximum": 3 },
+              "summary": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Character": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "archetype": {
+          "type": "string",
+          "enum": [
+            "Protagonist","Antagonist","Contagonist","Guardian",
+            "Reason","Emotion","Sidekick","Skeptic","Complex","Other"
+          ]
+        },
+        "is_main_character": { "type": "boolean", "default": false },
+        "is_impact_character": { "type": "boolean", "default": false },
+        "dramatic_functions": { "type": "array", "items": { "type": "string" } },
+        "element_assignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["slot", "element"],
+            "properties": {
+              "slot": { "type": "string", "enum": ["Motivation","Methodology","Evaluation","Purpose"] },
+              "element": { "type": "string", "allOf": [{ "$ref": "#/$defs/ElementName" }] },
+              "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "TypeName": {
+      "type": "string",
+      "enum": [
+        "Understanding","Doing","Obtaining","Learning",
+        "Past","Progress","Future","Present",
+        "Conceiving","Conceptualizing","Being","Becoming",
+        "Memory","Conscious","Subconscious","Preconscious"
+      ]
+    },
+
+    "VariationName": {
+      "type": "string",
+      "enum": [
+        "Knowledge","Thought","Ability","Desire",
+        "Skill","Experience","Worry","Worth",
+        "Fact","Security","Threat","Fantasy",
+        "Truth","Evidence","Suspicion","Falsehood",
+        "Senses","Interpretation","Conditioning","Instinct",
+        "Wisdom","Enlightenment","Morality","Self-Interest",
+        "Approach","Attitude","Self-Aware","Aware",
+        "Permission","Need","Expediency","Deficiency",
+        "Strategy","Analysis","Inaction","Reaction",
+        "State of Being","Sense of Self","Situation","Circumstances",
+        "Openness","Preconception","Delay","Choice",
+        "Rationalization","Obligation","Commitment","Responsibility"
+      ]
+    },
+
+    "ElementName": {
+      "type": "string",
+      "enum": [
+        "Logic","Feeling","Control","Uncontrolled",
+        "Help","Hinder","Conscience","Temptation",
+        "Pursuit","Avoid","Support","Oppose",
+        "Trust","Test","Consider","Reconsider",
+        "Faith","Disbelief","Acceptance","Non-acceptance",
+        "Accurate","Non-Accurate","Cause","Effect",
+        "Unproven","Proven","Theory","Hunch",
+        "Result","Process","Expectation","Determination",
+        "Prerequisite","Preconditions","Forethought","Afterthought",
+        "Self-Aware","Aware","State of Being","Sense of Self",
+        "Knowledge","Thought","Ability","Desire",
+        "Skill","Experience","Worry","Worth",
+        "Chance","Design","Attraction","Repulsion",
+        "Order","Chaos","Self-Interest","Morality"
+      ]
+    }
+  }
+}

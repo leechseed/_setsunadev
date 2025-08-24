@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "shots": [
+    { "id": "shot:1a", "chapter": 1, "slug": "Cold open crash", "type": "wide",
+      "camera": { "movement": "handheld", "lens_mm": 24, "fps": 24 },
+      "duration_sec": 5.2, "location_id": "loc:vault-5A" }
+  ]
+}

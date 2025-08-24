@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>ASTRO7EX Chapter Map Viewer — Pro (Grid+Stripes)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root {
+    --bg:#0b0f14; --fg:#e6eef7; --muted:#9bb0c8;
+    --os:#4c8bf5; --mc:#f59e0b; --ic:#22c55e; --rs:#a855f7; --frame:#94a3b8;
+    --grid:#223049; --gridMajor:#3b5378; --band:#0f172a; --accent:#38bdf8;
+    --panel:#0d1520; --panelBr:#1f2a37;
+  }
+  .cb :root, .cb {
+    --os:#0072b2; --mc:#e69f00; --ic:#009e73; --rs:#cc79a7; --frame:#999999;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+  header{padding:14px 16px;border-bottom:1px solid #111827;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  header h1{margin:0;font-size:18px;font-weight:650;letter-spacing:.3px}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .btn{background:#111827;color:var(--fg);border:1px solid #1f2937;padding:8px 12px;border-radius:8px;cursor:pointer}
+  .btn:hover{border-color:#374151}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#0d1520;border:1px solid #1f2a37;font-size:12px}
+  .legend{display:flex;gap:10px;align-items:center}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .dot.os{background:var(--os)} .dot.mc{background:var(--mc)} .dot.ic{background:var(--ic)} .dot.rs{background:var(--rs)} .dot.frame{background:var(--frame)}
+  main{display:grid;grid-template-columns: 1fr 340px; gap:12px; padding:12px}
+  #left{min-width:0}
+  #right{background:var(--panel);border:1px solid var(--panelBr);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px}
+  #dropzone{border:1px dashed #334155;border-radius:12px;padding:16px;text-align:center;color:var(--muted)}
+  #chartWrap{margin-top:12px;background:#0a1220;border:1px solid #152238;border-radius:12px;padding:12px}
+  svg{width:100%;height:420px;display:block;background:linear-gradient(180deg,#0c1425 0%,#0b1321 100%);border-radius:10px}
+  .lane-label{font-size:12px;fill:var(--muted)}
+  .axis{stroke:#1e293b;stroke-width:1}
+  .band{stroke:#3a4b6a;stroke-dasharray:4 4}
+  .actband{fill:#0d1930;opacity:.35}
+  .lanestripe{fill:#0b162a;opacity:.35}
+  .epgrid{stroke:var(--grid);stroke-width:1;opacity:.45}
+  .epgrid.major{stroke:var(--gridMajor);opacity:.7}
+  .ticklbl{fill:#9fb4cc;font-size:10px}
+  .pt{cursor:pointer}
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13px}
+  thead th{position:sticky;top:0;background:#0d1525;text-align:left;padding:8px;border-bottom:1px solid #1e2a3e}
+  tbody td{padding:7px 8px;border-bottom:1px solid #111827;color:#dbe7f2}
+  tbody tr:hover{background:#0d1520}
+  .filters{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 10px}
+  select,input[type="text"],input[type="number"],textarea{background:#0d1520;color:var(--fg);border:1px solid #1f2a37;padding:7px 9px;border-radius:8px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .hidden{display:none!important}
+  .foot{color:#93a7bf;font-size:12px;margin-top:6px}
+  .stat{display:flex;justify-content:space-between;border:1px solid var(--panelBr);background:#0c1220;padding:8px;border-radius:8px;font-size:13px}
+  .warn{color:#fca5a5}
+  .good{color:#86efac}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+  .crosshair{stroke:#79a6ff;stroke-width:1;opacity:.6;pointer-events:none}
+  .tooltip{
+    position:fixed; pointer-events:none; transform:translate(-50%,-115%);
+    background:#0b1220; border:1px solid #233043; color:#e6eef7;
+    padding:6px 8px; border-radius:8px; font-size:12px; display:none; max-width:320px; white-space:nowrap;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ASTRO7EX — Chapter Map Viewer</h1>
+  <div class="controls">
+    <label class="btn">Open JSON<input id="fileInput" type="file" accept=".json" style="display:none"></label>
+    <label class="btn">Open Pack (folder)<input id="dirInput" type="file" webkitdirectory directory multiple style="display:none"></label>
+    <div id="chosenPath" class="pill">No file loaded</div>
+    <button id="exportCsv" class="btn" disabled>Export CSV</button>
+    <button id="exportJson" class="btn" disabled>Export JSON</button>
+    <label class="pill"><input type="checkbox" id="cbToggle"> Colorblind palette</label>
+  </div>
+</header>
+
+<main>
+  <section id="left">
+    <div id="dropzone">Drop your <code>astro7ex_chapter_map.json</code> here — or use “Open JSON”.</div>
+
+    <div id="chartWrap" class="hidden">
+      <div class="filters">
+        <label class="pill"><input type="checkbox" class="laneToggle" value="OS" checked> OS</label>
+        <label class="pill"><input type="checkbox" class="laneToggle" value="MC" checked> MC</label>
+        <label class="pill"><input type="checkbox" class="laneToggle" value="IC" checked> IC</label>
+        <label class="pill"><input type="checkbox" class="laneToggle" value="RS" checked> RS</label>
+        <label class="pill"><input type="checkbox" class="laneToggle" value="FRAME" checked> Frame</label>
+
+        <select id="filterTL"><option value="">TL (all)</option><option>OS</option><option>MC</option><option>IC</option><option>RS</option></select>
+        <select id="filterSP"><option value="">SP (all)</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <select id="filterApp"><option value="">Appreciation (all)</option><option>event</option><option>progression</option><option>transit</option></select>
+        <input id="searchBox" type="text" placeholder="Search title/method…" />
+
+        <!-- new: grid controls -->
+        <label class="pill"><input type="checkbox" id="gridEpisodes" checked> Episode grid</label>
+        <label class="pill"><input type="checkbox" id="gridLanes" checked> Lane stripes</label>
+        <label class="pill">Label every
+          <select id="gridLabelEvery">
+            <option value="auto" selected>auto</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="8">8</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <label class="pill">Start Ch <input id="rangeStart" type="range" min="1" max="72" step="1" value="1" /></label>
+        <label class="pill">Span <input id="rangeSpan" type="range" min="12" max="72" step="1" value="72" /></label>
+        <span class="pill" id="rangeLbl">Showing 1–72</span>
+      </div>
+
+      <svg id="chart"></svg>
+      <div class="foot">Vertical lines = episodes (thicker + labels at major ticks). Lane stripes improve horizontal scanning. Click any point/square to inspect and annotate on the right.</div>
+    </div>
+
+    <div id="tableWrap" class="hidden">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>Ch</th><th>Title</th><th>Case</th><th>Anime Title</th>
+            <th>App</th><th>Seq</th><th>Method</th><th>TL</th><th>SP</th><th>E</th><th>Tags</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <aside id="right">
+    <div class="stat"><span>Story</span><span id="storyId" class="mono">—</span></div>
+    <div class="stat"><span>Events placed</span><span id="evCount">—</span></div>
+    <div class="stat"><span>Frames (progression/transit)</span><span id="frameCount">—</span></div>
+    <div class="stat"><span>Act × TL counts</span><span id="gridMini" class="mono">—</span></div>
+    <div class="stat"><span>Health</span><span id="health" class="mono">—</span></div>
+
+    <div id="detail" class="hidden" style="border:1px solid var(--panelBr);background:#0c1220;padding:10px;border-radius:8px">
+      <div id="detailHdr" style="font-weight:650;margin-bottom:6px">Chapter —</div>
+      <div id="detailMeta" class="foot"></div>
+      <div style="margin-top:8px">
+        <label>Notes (local, exported with JSON)</label>
+        <textarea id="noteBox" rows="4" placeholder="Your notes…"></textarea>
+      </div>
+      <div class="row" style="margin-top:6px">
+        <label class="pill">Tags <input id="tagInput" type="text" placeholder="comma,separated"/></label>
+        <label class="pill"><input type="checkbox" id="flagPersonal"> personal_candidate</label>
+        <button id="saveNote" class="btn">Save</button>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<div id="tooltip" class="tooltip"></div>
+
+<script>
+(function(){
+  const fileInput = document.getElementById('fileInput');
+  const dirInput  = document.getElementById('dirInput');
+  const dropzone  = document.getElementById('dropzone');
+  const chosen    = document.getElementById('chosenPath');
+  const svg       = document.getElementById('chart');
+  const chartWrap = document.getElementById('chartWrap');
+  const tableWrap = document.getElementById('tableWrap');
+  const tbody     = document.querySelector('#tbl tbody');
+  const toggles   = Array.from(document.querySelectorAll('.laneToggle'));
+  const filterTL  = document.getElementById('filterTL');
+  const filterSP  = document.getElementById('filterSP');
+  const filterApp = document.getElementById('filterApp');
+  const searchBox = document.getElementById('searchBox');
+  const rangeStart= document.getElementById('rangeStart');
+  const rangeSpan = document.getElementById('rangeSpan');
+  const rangeLbl  = document.getElementById('rangeLbl');
+  const exportCsv = document.getElementById('exportCsv');
+  const exportJson= document.getElementById('exportJson');
+  const cbToggle  = document.getElementById('cbToggle');
+  const gridEpisodes = document.getElementById('gridEpisodes');
+  const gridLanes    = document.getElementById('gridLanes');
+  const gridLabelEvery = document.getElementById('gridLabelEvery');
+  const tip        = document.getElementById('tooltip');
+
+  // right panel widgets
+  const storyId   = document.getElementById('storyId');
+  const evCount   = document.getElementById('evCount');
+  const frameCount= document.getElementById('frameCount');
+  const gridMini  = document.getElementById('gridMini');
+  const health    = document.getElementById('health');
+  const detailBox = document.getElementById('detail');
+  const detailHdr = document.getElementById('detailHdr');
+  const detailMeta= document.getElementById('detailMeta');
+  const noteBox   = document.getElementById('noteBox');
+  const tagInput  = document.getElementById('tagInput');
+  const flagPersonal = document.getElementById('flagPersonal');
+  const saveNote  = document.getElementById('saveNote');
+
+  let DATA=null, rows=[], notes={}; // notes keyed by chapter
+  let viewStart=1, viewEnd=72;
+
+  function show(el){ el.classList.remove('hidden'); }
+  function hide(el){ el.classList.add('hidden'); }
+
+  function flatten(data){
+    return data.chapters.map(ch=>{
+      const b = ch.ncp_storybeat;
+      const d = ch.dramatica || {};
+      const lane = b.appreciation==='event' ? (d.throughline || 'OS') : 'FRAME';
+      const tags = (ch.tags||[]).join(", ");
+      return {
+        chapter: ch.chapter_index,
+        title: ch.titles?.tablature || "",
+        case:  ch.titles?.anime?.case || "",
+        atitle:ch.titles?.anime?.tablature || "",
+        appreciation: b.appreciation,
+        sequence: b.sequence,
+        method: b.method || "",
+        tl: d.throughline || null,
+        sp: d.signpost || null,
+        e:  d.event || null,
+        lane: lane,
+        illustration: b.illustration || "",
+        summary: b.summary || "",
+        storytelling: b.storytelling || "",
+        tags: tags,
+        personal: !!(ch.flags && ch.flags.personal_candidate)
+      };
+    }).sort((a,b)=>a.chapter-b.chapter);
+  }
+
+  function buildTable(rows){
+    tbody.innerHTML='';
+    const frag = document.createDocumentFragment();
+    rows.forEach(r=>{
+      const tr = document.createElement('tr');
+      tr.dataset.lane = r.lane; tr.dataset.tl = r.tl || ''; tr.dataset.sp = r.sp || ''; tr.dataset.app = r.appreciation;
+      tr.innerHTML = `
+        <td class="mono">${r.chapter}</td>
+        <td>${escapeHtml(r.title||'')}</td>
+        <td>${escapeHtml(r.case||'')}</td>
+        <td><i>${escapeHtml(r.atitle||'')}</i></td>
+        <td>${r.appreciation}</td>
+        <td class="mono">${r.sequence}</td>
+        <td>${escapeHtml(r.method||'')}</td>
+        <td>${r.tl||'—'}</td>
+        <td>${r.sp||'—'}</td>
+        <td>${r.e||'—'}</td>
+        <td>${escapeHtml(r.tags||'')}</td>
+      `;
+      tr.addEventListener('click', ()=> openDetail(r.chapter));
+      if (!r.title || r.title.trim()==='?' ) tr.style.color = '#fca5a5';
+      frag.appendChild(tr);
+    });
+    tbody.appendChild(frag);
+  }
+
+  // geometry helpers shared with overlays
+  const lanes = ["OS","MC","IC","RS","FRAME"];
+  const laneY = {"OS":80,"MC":150,"IC":220,"RS":290,"FRAME":360}; // shift down to leave room for labels
+  const laneH = 40; // stripe height
+
+  function drawChart(rowsAll){
+    svg.innerHTML='';
+    const W = svg.clientWidth || svg.parentElement.clientWidth;
+    const H = 420, left=60, right=18, top=30, bottom=38;
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+    const colors = {"OS":"var(--os)","MC":"var(--mc)","IC":"var(--ic)","RS":"var(--rs)","FRAME":"var(--frame)"};
+    const width = W - left - right;
+
+    const x = ch => {
+      if (ch < viewStart || ch > viewEnd) return null;
+      const r = (ch - viewStart) / (viewEnd - viewStart);
+      return left + r * width;
+    };
+
+    // background lane stripes
+    if (gridLanes.checked){
+      const gStripes = document.createElementNS("http://www.w3.org/2000/svg","g");
+      lanes.forEach((l,i)=>{
+        const y = laneY[l]-laneH/2;
+        const rect = rectEl(left, y, width, laneH, 'lanestripe');
+        // alternate subtle intensity
+        rect.setAttribute('opacity', i%2===0 ? .30 : .18);
+        gStripes.appendChild(rect);
+      });
+      svg.appendChild(gStripes);
+    }
+
+    // axis lines + labels
+    const axis = document.createElementNS("http://www.w3.org/2000/svg","g");
+    lanes.forEach(l=>{
+      const y = laneY[l];
+      axis.appendChild(lineEl(left, y, W-right, y, 'axis'));
+      svg.appendChild(textEl(10, y+4, l, 'lane-label'));
+    });
+    svg.appendChild(axis);
+
+    // Ableton-like episode grid
+    if (gridEpisodes.checked){
+      const gGrid = document.createElementNS("http://www.w3.org/2000/svg","g");
+      const gTicks= document.createElementNS("http://www.w3.org/2000/svg","g");
+      // determine label cadence
+      let every = gridLabelEvery.value;
+      if (every === 'auto'){
+        const span = (viewEnd - viewStart + 1);
+        every = span <= 24 ? 2 : (span <= 48 ? 4 : 8);
+      } else {
+        every = parseInt(every,10) || 4;
+      }
+      for (let ch=viewStart; ch<=viewEnd; ch++){
+        const xx = x(ch); if (xx==null) continue;
+        const major = ((ch-1) % every) === 0;
+        const line = lineEl(xx, top, xx, H-bottom, major ? 'epgrid major' : 'epgrid');
+        gGrid.appendChild(line);
+        if (major){
+          const lbl = textEl(xx+2, H-12, String(ch), 'ticklbl');
+          gTicks.appendChild(lbl);
+        }
+      }
+      svg.appendChild(gGrid);
+      svg.appendChild(gTicks);
+    }
+
+    // Act bands (SP boundaries from event sequences 1,17,33,49)
+    const eventRows = rowsAll.filter(r=>r.appreciation==='event');
+    const seqBoundaries = [1,17,33,49].map(s => {
+      const r = eventRows.find(rr => rr.sequence===s);
+      return r ? r.chapter : null;
+    }).filter(Boolean);
+
+    const shade = document.createElementNS("http://www.w3.org/2000/svg","g");
+    const bandCh = [...seqBoundaries, viewEnd+1].filter(ch=> ch>=viewStart && ch<=viewEnd+1);
+    let prev = viewStart;
+    bandCh.forEach(b=>{
+      const x1 = x(prev), x2 = x(b)-1;
+      if (x1!=null && x2!=null && x2>x1){
+        shade.appendChild(rectEl(x1, top, x2-x1, 8, 'actband')); // small cap at top for act viz
+      }
+      prev = b;
+    });
+    svg.appendChild(shade);
+
+    // vertical dashed lines at SP boundary chapters
+    seqBoundaries.forEach(ch=>{
+      if (ch>=viewStart && ch<=viewEnd){
+        const xx = x(ch);
+        if (xx!=null) svg.appendChild(lineEl(xx, top+8, xx, H-bottom, 'band'));
+      }
+    });
+
+    // points
+    rowsAll.forEach(r=>{
+      if (r.chapter<viewStart || r.chapter>viewEnd) return;
+      if (!document.querySelector(`.laneToggle[value="${r.lane}"]`).checked) return;
+
+      const xx = x(r.chapter), yy = laneY[r.lane];
+      if (xx==null) return;
+
+      let el;
+      if (r.appreciation==='event'){
+        el = document.createElementNS("http://www.w3.org/2000/svg","circle");
+        el.setAttribute('cx', xx); el.setAttribute('cy', yy); el.setAttribute('r', 6.5);
+        el.setAttribute('fill', colors[r.lane]);
+      } else {
+        el = document.createElementNS("http://www.w3.org/2000/svg","rect");
+        el.setAttribute('x', xx-6); el.setAttribute('y', yy-6); el.setAttribute('width', 12); el.setAttribute('height', 12);
+        el.setAttribute('fill', colors['FRAME']);
+      }
+      el.setAttribute('class','pt');
+      el.dataset.ch = r.chapter;
+
+      el.addEventListener('mouseenter', (ev)=>showTip(ev, r));
+      el.addEventListener('mousemove', moveTip);
+      el.addEventListener('mouseleave', hideTip);
+      el.addEventListener('click', ()=> openDetail(r.chapter));
+
+      svg.appendChild(el);
+    });
+
+    // crosshair readout over the grid
+    addCrosshair(svg, x, top, H-bottom);
+  }
+
+  function addCrosshair(svg, xfn, yTop, yBottom){
+    // remove previous
+    Array.from(svg.querySelectorAll('.crosshair')).forEach(n=>n.remove());
+    // element
+    const v = lineEl(0, yTop, 0, yBottom, 'crosshair'); v.style.display='none';
+    svg.appendChild(v);
+
+    const W = svg.viewBox.baseVal.width || svg.clientWidth;
+    const left=60, right=18; const width = W - left - right;
+
+    function nearestChapter(px){
+      const r = (px - left) / width;
+      const ch = Math.round(viewStart + r * (viewEnd - viewStart));
+      return Math.min(Math.max(ch, viewStart), viewEnd);
+    }
+
+    svg.onmousemove = (ev)=>{
+      const pt = svg.createSVGPoint();
+      pt.x = ev.clientX; pt.y = ev.clientY;
+      const ctm = svg.getScreenCTM().inverse();
+      const loc = pt.matrixTransform(ctm);
+      const ch = nearestChapter(loc.x);
+      const xx = xfn(ch);
+      if (xx==null) { v.style.display='none'; hideTip(); return; }
+      v.setAttribute('x1', xx); v.setAttribute('x2', xx);
+      v.style.display='';
+      // lightweight readout on hover (no data lookup unless near a point)
+      tip.innerHTML = `<b>Ch ${ch}</b>`;
+      tip.style.display='block';
+      moveTip(ev);
+    };
+    svg.onmouseleave = ()=>{ v.style.display='none'; hideTip(); };
+  }
+
+  function showTip(ev, r){
+    tip.innerHTML = `
+      <b>Ch ${r.chapter}</b> — ${escapeHtml(r.title)}<br/>
+      <span style="color:#9bb0c8">Beat:</span> ${r.appreciation} · seq ${r.sequence} · ${escapeHtml(r.method)}<br/>
+      <span style="color:#9bb0c8">TL/SP/E:</span> ${r.tl||'—'}/${r.sp||'—'}/${r.e||'—'}
+    `;
+    tip.style.display='block';
+    moveTip(ev);
+  }
+  function moveTip(ev){ tip.style.left = (ev.clientX)+'px'; tip.style.top  = (ev.clientY)+'px'; }
+  function hideTip(){ tip.style.display='none'; }
+
+  function openDetail(ch){
+    const r = rows.find(x=>x.chapter===ch);
+    if (!r) return;
+    show(detailBox);
+    detailHdr.textContent = `Chapter ${r.chapter} — ${r.title||'—'}`;
+    detailMeta.innerHTML = `
+      <div><b>Case:</b> ${escapeHtml(r.case)} — <i>${escapeHtml(r.atitle)}</i></div>
+      <div><b>Beat:</b> ${r.appreciation} · seq ${r.sequence} · ${escapeHtml(r.method)}</div>
+      <div><b>TL/SP/E:</b> ${r.tl||'—'}/${r.sp||'—'}/${r.e||'—'}</div>
+      <div style="margin-top:6px"><b>Illustration:</b> ${escapeHtml(r.illustration)}</div>
+      <div><b>Storytelling:</b> ${escapeHtml(r.storytelling)}</div>
+    `;
+    const n = notes[ch] || {};
+    noteBox.value = n.text || '';
+    tagInput.value = (n.tags||[]).join(', ');
+    flagPersonal.checked = (n.personal !== undefined) ? !!n.personal : !!r.personal;
+    saveNote.onclick = ()=>{
+      notes[ch] = {
+        text: noteBox.value.trim(),
+        tags: tagInput.value.split(',').map(s=>s.trim()).filter(Boolean),
+        personal: flagPersonal.checked
+      };
+      const trow = Array.from(tbody.children).find(tr=> +tr.children[0].innerText===ch);
+      if (trow) {
+        trow.children[10].innerText = notes[ch].tags.join(', ');
+        trow.style.fontStyle = notes[ch].personal ? 'italic' : '';
+      }
+    };
+  }
+
+  function calcStats(rowsAll){
+    const ev = rowsAll.filter(r=>r.appreciation==='event');
+    const act = (seq)=> Math.floor((seq-1)/16)+1;
+    const grid = {1:{OS:0,MC:0,IC:0,RS:0},2:{OS:0,MC:0,IC:0,RS:0},3:{OS:0,MC:0,IC:0,RS:0},4:{OS:0,MC:0,IC:0,RS:0}};
+    ev.forEach(r=> grid[act(r.sequence)][r.tl]++);
+    const mini = Object.keys(grid).map(a=>`A${a}[${grid[a].OS}/${grid[a].MC}/${grid[a].IC}/${grid[a].RS}]`).join(' ');
+    gridMini.textContent = mini;
+
+    evCount.textContent = ev.length;
+    frameCount.textContent = rowsAll.length - ev.length;
+
+    const issues = [];
+    const missingTitle = rowsAll.filter(r=>!r.title || r.title.trim()==='?').map(r=>r.chapter);
+    if (missingTitle.length) issues.push(`titles? ch ${missingTitle.join(',')}`);
+    const badSeq = ev.filter(r=> r.sequence<1 || r.sequence>64).length;
+    if (badSeq) issues.push(`seq out of range (${badSeq})`);
+    const frameWithDramatica = rowsAll.filter(r=>r.appreciation!=='event' && r.tl).length;
+    if (frameWithDramatica) issues.push(`frames w/ TL data (${frameWithDramatica})`);
+    health.textContent = issues.length ? issues.join(' · ') : 'clean';
+    health.className = issues.length ? 'warn mono' : 'good mono';
+  }
+
+  function lineEl(x1,y1,x2,y2,cls){ const l=document.createElementNS("http://www.w3.org/2000/svg","line"); l.setAttribute('x1',x1);l.setAttribute('y1',y1);l.setAttribute('x2',x2);l.setAttribute('y2',y2); l.setAttribute('class',cls); return l; }
+  function rectEl(x,y,w,h,cls){ const r=document.createElementNS("http://www.w3.org/2000/svg","rect"); r.setAttribute('x',x);r.setAttribute('y',y);r.setAttribute('width',w);r.setAttribute('height',h);r.setAttribute('class',cls); return r; }
+  function textEl(x,y,txt,cls){ const t=document.createElementNS("http://www.w3.org/2000/svg","text"); t.setAttribute('x',x);t.setAttribute('y',y); if(cls) t.setAttribute('class',cls); t.textContent=txt; return t; }
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])); }
+
+  function applyFilters(){
+    const tl = filterTL.value, sp = filterSP.value, app = filterApp.value;
+    const q = searchBox.value.trim().toLowerCase();
+
+    Array.from(tbody.children).forEach(tr=>{
+      let ok = true;
+      if (tl && tr.children[7].innerText !== tl) ok=false;
+      if (sp && tr.children[8].innerText !== sp) ok=false;
+      if (app && tr.children[4].innerText !== app) ok=false;
+      if (q) {
+        const text = tr.innerText.toLowerCase();
+        if (!text.includes(q)) ok=false;
+      }
+      tr.style.display = ok ? '' : 'none';
+    });
+
+    drawChart(rows);
+  }
+
+  function download(name, content, mime="text/plain"){
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([content], {type:mime}));
+    a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  function exportCSV(){
+    const visible = Array.from(tbody.children).filter(tr=> tr.style.display !== 'none');
+    const cols = ["Ch","Title","Case","Anime Title","App","Seq","Method","TL","SP","E","Tags"];
+    const lines = [cols.join(",")];
+    visible.forEach(tr=>{
+      const cells = Array.from(tr.children).map(td=>{
+        const t = td.innerText.replace(/"/g,'""');
+        return `"${t}"`;
+      });
+      lines.push(cells.join(","));
+    });
+    download("astro7ex_chapters_filtered.csv", lines.join("\n"), "text/csv");
+  }
+  function exportJSON(){
+    DATA.chapters = DATA.chapters.map(ch=>{
+      const chIdx = ch.chapter_index;
+      const n = notes[chIdx] || null;
+      const base = {...ch};
+      if (n){
+        base.tags = n.tags || [];
+        base.flags = base.flags || {};
+        base.flags.personal_candidate = !!n.personal;
+        base.notes = n.text || "";
+      }
+      return base;
+    });
+    download("astro7ex_chapter_map_annotated.json", JSON.stringify(DATA, null, 2), "application/json");
+  }
+
+  function initWithData(data){
+    DATA = data;
+    rows = flatten(DATA);
+    window.rows = rows; // expose for overlays
+    storyId.textContent = DATA.story_id || '(unknown)';
+    buildTable(rows);
+    calcStats(rows);
+    show(chartWrap); show(tableWrap);
+    drawChart(rows);
+    exportCsv.disabled = false;
+    exportJson.disabled = false;
+  }
+  window.initWithData = initWithData;
+
+  fileInput.addEventListener('change', e=>{
+    const f = e.target.files[0]; if (!f) return;
+    chosen.textContent = f.name;
+    const reader = new FileReader();
+    reader.onload = evt=>{
+      try { initWithData(JSON.parse(evt.target.result)); }
+      catch(err){ alert("Invalid JSON: "+err.message); }
+    };
+    reader.readAsText(f);
+  });
+
+  dropzone.addEventListener('dragover', e=>{ e.preventDefault(); dropzone.style.borderColor='var(--accent)'; });
+  dropzone.addEventListener('dragleave', e=>{ dropzone.style.borderColor='#334155'; });
+  dropzone.addEventListener('drop', e=>{
+    e.preventDefault(); dropzone.style.borderColor='#334155';
+    const f = e.dataTransfer.files[0]; if(!f) return;
+    chosen.textContent = f.name;
+    const reader = new FileReader();
+    reader.onload = evt=>{
+      try { initWithData(JSON.parse(evt.target.result)); }
+      catch(err){ alert("Invalid JSON: "+err.message); }
+    };
+    reader.readAsText(f);
+  });
+
+  toggles.forEach(cb => cb.addEventListener('change', applyFilters));
+  [filterTL, filterSP, filterApp, gridLabelEvery].forEach(sel => sel.addEventListener('change', applyFilters));
+  [gridEpisodes, gridLanes].forEach(cb => cb.addEventListener('change', ()=>drawChart(rows)));
+  searchBox.addEventListener('input', applyFilters);
+
+  function updateRange(){
+    viewStart = Math.min(+rangeStart.value, 72);
+    const span = Math.max(+rangeSpan.value, 12);
+    viewEnd = Math.min(viewStart + span - 1, 72);
+    if (viewEnd - viewStart + 1 < 12) viewEnd = viewStart + 11;
+    rangeLbl.textContent = `Showing ${viewStart}–${viewEnd}`;
+    drawChart(rows);
+  }
+  rangeStart.addEventListener('input', updateRange);
+  rangeSpan.addEventListener('input', updateRange);
+
+  exportCsv.addEventListener('click', exportCSV);
+  exportJson.addEventListener('click', exportJSON);
+
+  cbToggle.addEventListener('change', ()=> {
+    document.body.classList.toggle('cb', cbToggle.checked);
+  });
+
+  window.drawChart = drawChart;
+})();
+</script>
+
+<script>
+// ---- PACK LOADER (manifest + modules) + ARC OVERLAY ----
+(function(){
+  const dirInput = document.getElementById('dirInput');
+  const chosen   = document.getElementById('chosenPath');
+  if (!dirInput) return;
+
+  dirInput.addEventListener('change', async (e)=>{
+    const files = Array.from(e.target.files);
+    const byRel  = Object.fromEntries(files.map(f => [f.webkitRelativePath.replace(/\\/g,'/'), f]));
+    const read = f => new Promise((res,rej)=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.onerror=rej; r.readAsText(f); });
+
+    const manifestPath = Object.keys(byRel).find(p => /manifest\.json$/i.test(p));
+    if (!manifestPath) { alert("No manifest.json in selected folder."); return; }
+
+    const manifest = JSON.parse(await read(byRel[manifestPath]));
+    const baseDir  = manifestPath.replace(/manifest\.json$/i, "");
+    chosen.textContent = baseDir.replace(/\/$/, '') || '(pack)';
+
+    function pick(path){
+      const full = (baseDir + path).replace(/\\/g,'/');
+      const key  = Object.keys(byRel).find(p => p.endsWith(path));
+      return byRel[key || full];
+    }
+
+    const chaptersFile = pick(manifest.modules.chapters.path);
+    const chaptersJSON = JSON.parse(await read(chaptersFile));
+
+    const arcsDefs   = manifest.modules.arcs?.defs   ? JSON.parse(await read(pick(manifest.modules.arcs.defs)))   : null;
+    const arcsLinks  = manifest.modules.arcs?.links  ? JSON.parse(await read(pick(manifest.modules.arcs.links)))  : null;
+    const locDefs    = manifest.modules.locations?.defs ? JSON.parse(await read(pick(manifest.modules.locations.defs))) : null;
+    const locUses    = manifest.modules.locations?.uses ? JSON.parse(await read(pick(manifest.modules.locations.uses))) : null;
+
+    if (window.initWithData) window.initWithData(chaptersJSON);
+    window.__PACK_ARCS = { defs: arcsDefs, links: arcsLinks };
+    window.__PACK_LOCS = { defs: locDefs, uses: locUses };
+
+    if (window.drawChart) setTimeout(()=>window.drawChart(window.rows || []), 50);
+  });
+
+  const prevDraw = window.drawChart;
+  window.drawChart = function(rowsAll){
+    if (typeof prevDraw === 'function') prevDraw(rowsAll);
+    const svg = document.getElementById('chart');
+    if (!svg) return;
+
+    const arcs = (window.__PACK_ARCS?.defs?.arcs)||[];
+    const links= (window.__PACK_ARCS?.links?.arc_links)||[];
+    if (!arcs.length || !links.length) return;
+
+    const W = svg.viewBox.baseVal.width || svg.clientWidth;
+    const left=60, right=18, top=30, bottom=38;
+    const width = W - left - right;
+
+    const viewLbl = document.getElementById('rangeLbl')?.textContent || "Showing 1–72";
+    const m = viewLbl.match(/(\d+)[^\d]+(\d+)/);
+    const viewStart = m ? +m[1] : 1, viewEnd = m ? +m[2] : 72;
+    const x = ch => {
+      if (ch < viewStart || ch > viewEnd) return null;
+      const r = (ch - viewStart) / (viewEnd - viewStart);
+      return left + r * width;
+    };
+
+    Array.from(svg.querySelectorAll('.arcband, .arclabel')).forEach(n=>n.remove());
+
+    function spanForLink(link){
+      let chapters = [];
+      if (link.applies_to?.chapters) chapters = chapters.concat(link.applies_to.chapters);
+      if (link.applies_to?.ranges) link.applies_to.ranges.forEach(r=>{ for(let i=r[0]; i<=r[1]; i++) chapters.push(i); });
+      chapters = [...new Set(chapters)].sort((a,b)=>a-b);
+      if (!chapters.length) return null;
+      return [chapters[0], chapters[chapters.length-1]];
+    }
+
+    links.forEach(l=>{
+      const span = spanForLink(l); if (!span) return;
+      const arc  = arcs.find(a=>a.id===l.arc_id); if (!arc) return;
+      const x1 = x(span[0]), x2 = x(span[1]);
+      if (x1==null || x2==null) return;
+
+      const rect = document.createElementNS("http://www.w3.org/2000/svg","rect");
+      rect.setAttribute('x', x1); rect.setAttribute('y', top+6);
+      rect.setAttribute('width', Math.max(4, x2-x1)); rect.setAttribute('height', 14);
+      rect.setAttribute('fill', arc.color || '#888'); rect.setAttribute('opacity', 0.22);
+      rect.setAttribute('rx', 4); rect.setAttribute('class','arcband');
+      svg.appendChild(rect);
+
+      const label = document.createElementNS("http://www.w3.org/2000/svg","text");
+      label.setAttribute('x', x1+4); label.setAttribute('y', top+18);
+      label.setAttribute('fill', '#e6eef7'); label.setAttribute('font-size', '11');
+      label.setAttribute('class','arclabel');
+      label.textContent = arc.name;
+      svg.appendChild(label);
+    });
+  };
+})();
+</script>
+</body>
+</html>

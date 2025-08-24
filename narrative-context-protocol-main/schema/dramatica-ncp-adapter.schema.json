@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/schemas/dramatica-ncp-adapter.schema.json",
+  "title": "NCP + Dramatica Composite",
+  "description": "Extends the existing NCP story object with a Dramatica payload under story.dramatica.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "ncp-schema.json#" },
+    {
+      "type": "object",
+      "properties": {
+        "story": {
+          "allOf": [
+            { "$ref": "ncp-schema.json#/properties/story" },
+            {
+              "type": "object",
+              "properties": {
+                "dramatica": {
+                  "$ref": "https://example.org/schemas/dramatica.schema.json"
+                }
+              },
+              "required": ["dramatica"],
+              "additionalProperties": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

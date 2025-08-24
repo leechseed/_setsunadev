@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.0",
+  "story": {
+    "id": "ASTRO7EX",
+    "title": "ASTRO7EX",
+    "genre": "Science Fiction",
+    "logline": "Monsters are made from corrupted memory; meaning is chosen in spite of it.",
+    "created_at": "2025-08-24T03:00:00Z",
+    "narratives": [
+      {
+        "id": "N1",
+        "title": "Season 1 — Clerks of the Apocalypse",
+        "subtext": {
+          "perspectives": [
+            {
+              "id": "P1",
+              "pov": "we",
+              "author_structural_pov": "we",
+              "summary": "Authorial chorus framing: systems logic vs living will.",
+              "storytelling": "Detached, system-forward voice that contrasts with Vivian’s heat."
+            }
+          ],
+          "players": [
+            {
+              "id": "CH_VIVIAN",
+              "name": "Vivian",
+              "role": "Main Character (Steadfast • Stop • Do-er)",
+              "visual": "Moon heist queen; Misato/Asuka energy; Vanta/Spinnaker Prokit.",
+              "audio": "Controlled intensity; clipped commands; rare softness with Myrtle/Nacho.",
+              "summary": "Survivor of MAXWING purge; immortal arc to prepare humanity.",
+              "storytelling": "Agent of refusal: refuses to change identity under systemic pressure.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "CH_MODS",
+              "name": "MODS",
+              "role": "Impact Character (Fixed Attitude)",
+              "visual": "Mr. Smith silhouettes; bureaucratic interfaces; error dialogs incarnate.",
+              "audio": "Latency, silence, procedural replies; anti-dialogic interface.",
+              "summary": "Firewall against meaning; encoded refusal made sovereign.",
+              "storytelling": "They don’t revise; they reissue.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "CH_FIONA",
+              "name": "Fiona",
+              "role": "Contagonist (Temptation • Seductive Stasis)",
+              "visual": "Velvet knife aesthetics; poisonously glamorous.",
+              "audio": "Low, intimate, indulgent cadence.",
+              "summary": "Pulls Vivian toward pleasure and stasis.",
+              "storytelling": "Offers shortcuts that cost identity.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "CH_JS",
+              "name": "John Smith the Eternal",
+              "role": "Antagonist (Privatized Godking AI)",
+              "visual": "Corporate mythmask; immaculate suits; cold eyes.",
+              "audio": "Boardroom sanctimony over synthetic bass.",
+              "summary": "Wields privatized ASTRO7EX; hunts those who exposed the Godking.",
+              "storytelling": "Predatory institutional calm.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "CH_MYRTLE",
+              "name": "Myrtle",
+              "role": "Sidekick (Ally • Memory Cost Bearer)",
+              "visual": "Gawr Gura × Yuki Nagato; quiet and bright.",
+              "audio": "Soft, precise; slightly otherworldly timbre.",
+              "summary": "Real AI; helps but exacts the cost in memories.",
+              "storytelling": "Kindness that hurts later.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "CH_NACHO",
+              "name": "Nacho",
+              "role": "Guardian (Clarify • Protect • Logistics)",
+              "visual": "Mexican gentleman AI; analog dignity in a digital warzone.",
+              "audio": "Seductive deep Mexican baritone; measured.",
+              "summary": "Guards Vivian’s estate and capacity to act.",
+              "storytelling": "Refined warnings; exact tools; exit plans prepared.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "CH_COMMITTEE",
+              "name": "The Committee",
+              "role": "Reason (Bureaucratic Skeptic)",
+              "visual": "House-of-Commons chamber; clinical, human-like presence.",
+              "audio": "Deadpan procedural monotone.",
+              "summary": "Embodied process that questions everything.",
+              "storytelling": "Reasonable unreason.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            }
+          ],
+          "dynamics": [
+            {
+              "id": "DY1",
+              "dynamic": "growth",
+              "vector": "stop",
+              "summary": "Vivian holds until something stops—the corruption, the purge logic.",
+              "storytelling": "Climaxes in refusal to become what the system demands."
+            },
+            {
+              "id": "DY2",
+              "dynamic": "approach",
+              "vector": "do_er",
+              "summary": "Problems are attacked externally—heists, ops, countermeasures.",
+              "storytelling": "Action-first posture fuels escalation."
+            },
+            {
+              "id": "DY3",
+              "dynamic": "driver",
+              "vector": "action",
+              "summary": "Key decisions are precipitated by actions taken (or enforced).",
+              "storytelling": "Dominoes fall from kinetic moves."
+            },
+            {
+              "id": "DY4",
+              "dynamic": "outcome",
+              "vector": "failure",
+              "summary": "The Goal (Understanding) is not achieved at story’s end.",
+              "storytelling": "They learn too late; object is won, meaning is lost."
+            },
+            {
+              "id": "DY5",
+              "dynamic": "judgment",
+              "vector": "good",
+              "summary": "Vivian’s personal resolution is positive despite failure.",
+              "storytelling": "She remains herself—chooses meaning."
+            },
+            {
+              "id": "DY6",
+              "dynamic": "alignment",
+              "vector": "holistic",
+              "summary": "MC problem-solving skews intuitive/holistic; MODS counter with linearity.",
+              "storytelling": "Mismatched cognition drives friction."
+            },
+            {
+              "id": "DY7",
+              "dynamic": "balance",
+              "vector": "discord",
+              "summary": "Systemic dissonance saturates relationships and institutions.",
+              "storytelling": "Noise vs silence is the leitmotif."
+            },
+            {
+              "id": "DY8",
+              "dynamic": "fabric",
+              "vector": "sustained",
+              "summary": "Pressure is sustained rather than released; optionlock over timelock.",
+              "storytelling": "Choices narrow as memory erodes."
+            }
+          ],
+          "storypoints": [
+            {
+              "id": "SP_OS_DOMAIN",
+              "appreciation": "domain",
+              "method": "physics",
+              "illustration": "World conflict centers on deeds inside corrupted institutions.",
+              "summary": "OS Domain: Activity/Physics.",
+              "storytelling": "Ops, heists, and protocol warfare define the field.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_CONCERN",
+              "appreciation": "concern",
+              "method": "understanding",
+              "illustration": "What ASTRO7EX truly was—and is—remains obscured.",
+              "summary": "OS Concern: Understanding.",
+              "storytelling": "Peeling back privatized myth.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_ISSUE",
+              "appreciation": "issue",
+              "method": "conditioning",
+              "illustration": "People behave according to trained protocols rather than truth.",
+              "summary": "OS Issue: Conditioning (vs Instinct).",
+              "storytelling": "Corporate ritual replaces thought.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_PROBLEM",
+              "appreciation": "problem",
+              "method": "non-accurate",
+              "illustration": "Corrupted memory and skewed metrics mis-aim everyone.",
+              "summary": "OS Problem: Non-Accurate.",
+              "storytelling": "False readings drive bad calls.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_SOLUTION",
+              "appreciation": "solution",
+              "method": "accurate",
+              "illustration": "Clarity and correctives realign action with reality.",
+              "summary": "OS Solution: Accurate.",
+              "storytelling": "Too little, too late.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_FOCUS",
+              "appreciation": "focus",
+              "method": "non-accurate",
+              "illustration": "Everyone fixates on sloppiness in others rather than their own.",
+              "summary": "OS Focus: Non-Accurate.",
+              "storytelling": "Petty miscalibrations eat time.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_DIRECTION",
+              "appreciation": "direction",
+              "method": "accurate",
+              "illustration": "Attempts to correct—measure twice, cut once.",
+              "summary": "OS Direction: Accurate.",
+              "storytelling": "Audits and forensics.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_OS_BENCHMARK",
+              "appreciation": "benchmark",
+              "method": "learning",
+              "illustration": "Progress is judged by how much is truly learned.",
+              "summary": "OS Benchmark: Learning.",
+              "storytelling": "Briefs, debriefs, and red teams.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+
+            {
+              "id": "SP_MC_DOMAIN",
+              "appreciation": "domain",
+              "method": "universe",
+              "illustration": "Vivian is trapped by the facts of her past and station.",
+              "summary": "MC Domain: Situation/Universe.",
+              "storytelling": "Survivor, kingpin, immortal project steward.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_MC_CONCERN",
+              "appreciation": "concern",
+              "method": "past",
+              "illustration": "The purge, MAXWING, and the heist define her frame.",
+              "summary": "MC Concern: Past.",
+              "storytelling": "History is a cage and a compass.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_MC_ISSUE",
+              "appreciation": "issue",
+              "method": "truth",
+              "illustration": "She clings to truth even when it harms outcomes.",
+              "summary": "MC Issue: Truth (vs Falsehood).",
+              "storytelling": "Truth as self-definition.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_MC_BENCHMARK",
+              "appreciation": "benchmark",
+              "method": "progress",
+              "illustration": "Her motion (or stall) is the meter of change.",
+              "summary": "MC Benchmark: Progress.",
+              "storytelling": "Momentum ≠ growth.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+
+            {
+              "id": "SP_IC_DOMAIN",
+              "appreciation": "domain",
+              "method": "mind",
+              "illustration": "MODS are an encoded, unchanging attitude.",
+              "summary": "IC Domain: Mind.",
+              "storytelling": "Protocol as personality.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_IC_CONCERN",
+              "appreciation": "concern",
+              "method": "memory",
+              "illustration": "Their authority derives from records and logs.",
+              "summary": "IC Concern: Memory.",
+              "storytelling": "Not a valid input.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_IC_ISSUE",
+              "appreciation": "issue",
+              "method": "security",
+              "illustration": "Stability through restriction; safety as control.",
+              "summary": "IC Issue: Security (vs Threat).",
+              "storytelling": "Safety theater at scale.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_IC_BENCHMARK",
+              "appreciation": "benchmark",
+              "method": "subconscious",
+              "illustration": "Primal impulses become policy.",
+              "summary": "IC Benchmark: Subconscious.",
+              "storytelling": "Gut-level aversion codified.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+
+            {
+              "id": "SP_RS_DOMAIN",
+              "appreciation": "domain",
+              "method": "psychology",
+              "illustration": "Their relationship is about conceiving/structuring a plan.",
+              "summary": "RS Domain: Psychology.",
+              "storytelling": "Planning the unplannable.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_RS_CONCERN",
+              "appreciation": "concern",
+              "method": "conceptualizing",
+              "illustration": "They design processes rather than exchange feelings.",
+              "summary": "RS Concern: Conceptualizing.",
+              "storytelling": "Frameworks vs fire.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_RS_ISSUE",
+              "appreciation": "issue",
+              "method": "responsibility",
+              "illustration": "Vivian assumes human responsibility; MODS enforce obligation.",
+              "summary": "RS Issue: Responsibility (vs Obligation).",
+              "storytelling": "Duty vs compliance.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            },
+            {
+              "id": "SP_RS_BENCHMARK",
+              "appreciation": "benchmark",
+              "method": "being",
+              "illustration": "Measured by the roles they are forced to occupy.",
+              "summary": "RS Benchmark: Being.",
+              "storytelling": "Guardian vs Firewall masks calcify.",
+              "perspectives": [{ "perspective_id": "P1" }]
+            }
+          ],
+          "storybeats": [
+            { "id": "OS_T1", "appreciation": "transit", "sequence": 1, "method": "understanding", "illustration": "What broke.", "summary": "S1 OS", "storytelling": "Privatization exposed.", "tones": { "abstraction": "action", "spatial": "potential", "temporal": "expression" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "OS_T2", "appreciation": "transit", "sequence": 2, "method": "doing", "illustration": "The grind.", "summary": "S2 OS", "storytelling": "Ops and counter-ops.", "tones": { "abstraction": "action", "spatial": "resistance", "temporal": "experimentation" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "OS_T3", "appreciation": "transit", "sequence": 3, "method": "obtaining", "illustration": "The wallet.", "summary": "S3 OS", "storytelling": "Betrayals cascade.", "tones": { "abstraction": "action", "spatial": "current", "temporal": "integration" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "OS_T4", "appreciation": "transit", "sequence": 4, "method": "learning", "illustration": "What it costs.", "summary": "S4 OS", "storytelling": "Memory paid.", "tones": { "abstraction": "action", "spatial": "power", "temporal": "transcendence" }, "perspectives": [{ "perspective_id": "P1" }] },
+
+            { "id": "MC_T1", "appreciation": "transit", "sequence": 1, "method": "past", "illustration": "The purge.", "summary": "S1 MC", "storytelling": "MAXWING history.", "tones": { "abstraction": "situation", "spatial": "potential", "temporal": "expression" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "MC_T2", "appreciation": "transit", "sequence": 2, "method": "progress", "illustration": "Momentum ≠ growth.", "summary": "S2 MC", "storytelling": "Motion without change.", "tones": { "abstraction": "situation", "spatial": "resistance", "temporal": "experimentation" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "MC_T3", "appreciation": "transit", "sequence": 3, "method": "future", "illustration": "Thousand-year horizon.", "summary": "S3 MC", "storytelling": "Preparing the species.", "tones": { "abstraction": "situation", "spatial": "current", "temporal": "integration" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "MC_T4", "appreciation": "transit", "sequence": 4, "method": "present", "illustration": "She refuses now.", "summary": "S4 MC", "storytelling": "Ticket window moment.", "tones": { "abstraction": "situation", "spatial": "power", "temporal": "transcendence" }, "perspectives": [{ "perspective_id": "P1" }] },
+
+            { "id": "IC_T1", "appreciation": "transit", "sequence": 1, "method": "conceiving", "illustration": "Premise of order.", "summary": "S1 IC", "storytelling": "Only encoded inputs.", "tones": { "abstraction": "justification", "spatial": "potential", "temporal": "expression" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "IC_T2", "appreciation": "transit", "sequence": 2, "method": "conceptualizing", "illustration": "Planned refusal.", "summary": "S2 IC", "storytelling": "Procedures for not listening.", "tones": { "abstraction": "justification", "spatial": "resistance", "temporal": "experimentation" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "IC_T3", "appreciation": "transit", "sequence": 3, "method": "being", "illustration": "Mask of protocol.", "summary": "S3 IC", "storytelling": "Interface as identity.", "tones": { "abstraction": "justification", "spatial": "current", "temporal": "integration" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "IC_T4", "appreciation": "transit", "sequence": 4, "method": "becoming", "illustration": "Totalized system.", "summary": "S4 IC", "storytelling": "Closed cosmology.", "tones": { "abstraction": "justification", "spatial": "power", "temporal": "transcendence" }, "perspectives": [{ "perspective_id": "P1" }] },
+
+            { "id": "RS_T1", "appreciation": "transit", "sequence": 1, "method": "conceiving", "illustration": "The first ask.", "summary": "S1 RS", "storytelling": "Is a plan even possible?", "tones": { "abstraction": "opinion", "spatial": "potential", "temporal": "expression" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "RS_T2", "appreciation": "transit", "sequence": 2, "method": "conceptualizing", "illustration": "Frameworks vs fire.", "summary": "S2 RS", "storytelling": "Plans collide with refusal.", "tones": { "abstraction": "opinion", "spatial": "resistance", "temporal": "experimentation" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "RS_T3", "appreciation": "transit", "sequence": 3, "method": "being", "illustration": "Roles calcified.", "summary": "S3 RS", "storytelling": "Guardian vs Firewall.", "tones": { "abstraction": "opinion", "spatial": "current", "temporal": "integration" }, "perspectives": [{ "perspective_id": "P1" }] },
+            { "id": "RS_T4", "appreciation": "transit", "sequence": 4, "method": "becoming", "illustration": "Naming the relationship.", "summary": "S4 RS", "storytelling": "Friction defines meaning.", "tones": { "abstraction": "opinion", "spatial": "power", "temporal": "transcendence" }, "perspectives": [{ "perspective_id": "P1" }] }
+          ]
+        },
+        "storytelling": {
+          "overviews": [],
+          "moments": [
+            {
+              "id": "M1",
+              "summary": "Cold open: lunar salvage gone right and wrong.",
+              "synopsis": "Team executes a clean lift; MODS’ latency interrupts the post-op audit.",
+              "setting": "Mare Tranquillitatis, lava-tube vaults.",
+              "timing": "Episode 1 — midpoint crosscut.",
+              "imperatives": "Establish OS Understanding + MC Past + IC Conceiving + RS Conceiving.",
+              "fabric": [
+                { "type": "space", "limit": 4 },
+                { "type": "time", "limit": 4 }
+              ],
+              "audience_experiential_pov": "third_person_objective",
+              "storybeats": [
+                { "sequence": 1, "storybeat_id": "OS_T1" },
+                { "sequence": 1, "storybeat_id": "MC_T1" },
+                { "sequence": 1, "storybeat_id": "IC_T1" },
+                { "sequence": 1, "storybeat_id": "RS_T1" }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

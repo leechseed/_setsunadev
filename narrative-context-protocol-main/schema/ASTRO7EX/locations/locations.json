@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "locations": [
+    {
+      "id": "loc:luna-base",
+      "name": "Luna Base",
+      "type": "facility",
+      "attrs": { "gravity": "0.16g", "era": "post-collapse" },
+      "subspaces": [
+        { "id": "loc:vault-5A", "name": "Vault 5-A", "type": "archive", "attrs": { "security": "air-gapped" } }
+      ]
+    }
+  ]
+}
