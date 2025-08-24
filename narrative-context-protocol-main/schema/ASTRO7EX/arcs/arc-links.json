@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "arc_links": [
+    { "id": "arcl:alpha-1", "arc_id": "arc:alpha", "applies_to": { "chapters": [1, 2, 3] } },
+    { "id": "arcl:beta-1",  "arc_id": "arc:beta",  "applies_to": { "ranges": [[4, 9]] } }
+  ]
+}

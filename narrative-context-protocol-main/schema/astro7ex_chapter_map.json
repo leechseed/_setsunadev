@@ -1,0 +1,2578 @@
+{
+  "story_id": "ASTRO7EX",
+  "weave": {
+    "order": ["OS", "MC", "IC", "RS"],
+    "signposts": {
+      "OS": ["understanding", "doing", "obtaining", "learning"],
+      "MC": ["past", "progress", "future", "present"],
+      "IC": ["conceiving", "conceptualizing", "being", "becoming"],
+      "RS": ["conceiving", "conceptualizing", "being", "becoming"]
+    }
+  },
+  "reserved_chapters": {
+    "progression": [1, 32, 65, 72],
+    "transit": [2, 26, 48, 71]
+  },
+  "chapters": [
+    {
+      "chapter_index": 1,
+      "titles": {
+        "tablature": "Prologue",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "The Last Transmission"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "progression",
+        "sequence": 1,
+        "method": "understanding",
+        "illustration": "The needs of a story determine the desirability of a prologue. The prologue can be used as a device to hook the audience's attention; establish a certain aura; provide backstory; foreshadow events.",
+        "summary": "The Last Transmission",
+        "storytelling": "Cold open: Vivian survives a traumatic final mission.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "potential",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 2,
+      "titles": {
+        "tablature": "Initial Situation",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "Echoes in the Dust"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "transit",
+        "sequence": 1,
+        "method": "understanding",
+        "illustration": "A temporal/spatial initial situation of prosperity that contrasts the misfortune to follow; advice to maintain the status quo.",
+        "summary": "Echoes in the Dust",
+        "storytelling": "She wakes alone in a ruined Moon base haunted by silence.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "potential",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 3,
+      "titles": {
+        "tablature": "Introduce Protagonist",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "Black Box"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 1,
+        "method": "understanding",
+        "illustration": "Introduce and establish protagonist's POV—the issues and concerns shaping outlook.",
+        "summary": "Black Box",
+        "storytelling": "Flashbacks to MAXWING reveal brutal child soldier training.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "potential",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 1,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 4,
+      "titles": {
+        "tablature": "Absence",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "Error: Myrtle Not Found"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 2,
+        "method": "past",
+        "illustration": "A key character departs (work, war, death, etc.), preparing misfortune and creating an opportune moment.",
+        "summary": "Error: Myrtle Not Found",
+        "storytelling": "Myrtle appears—helpful, but… off.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "potential",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 1,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 5,
+      "titles": {
+        "tablature": "Status Quo Violated",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "The Relay"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 3,
+        "method": "conceiving",
+        "illustration": "An order to maintain the status quo is violated.",
+        "summary": "The Relay",
+        "storytelling": "Vivian finds evidence of sabotage at the lunar signal relay.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "potential",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 1,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 6,
+      "titles": {
+        "tablature": "Introduce Antagonist",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "Paradox Protocol"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 4,
+        "method": "conceiving",
+        "illustration": "Introduce the antagonist who disturbs the peace and causes misfortune.",
+        "summary": "Paradox Protocol",
+        "storytelling": "MODS intercept and deliver cryptic, logic-bending messages.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "potential",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 1,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 7,
+      "titles": {
+        "tablature": "Antagonist Reconnaissance",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "Vault 5-A"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 5,
+        "method": "understanding",
+        "illustration": "Antagonist scouts, deceives, and gathers information to take possession of the victim or belongings.",
+        "summary": "Vault 5-A",
+        "storytelling": "Nacho, the analog AI, reboots inside a data tomb.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "resistance",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 1,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 8,
+      "titles": {
+        "tablature": "Victim-Protagonist",
+        "anime": {
+          "case": "The Drowned Moon",
+          "tablature": "The Crash That Never Happened"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 6,
+        "method": "past",
+        "illustration": "Victim-protagonist submits to deception or falls prey to a device; facilitates antagonist's task.",
+        "summary": "The Crash That Never Happened",
+        "storytelling": "Vivian uncovers files suggesting she died in the opening scene.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "resistance",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 1,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 9,
+      "titles": {
+        "tablature": "Protagonist and Story Problem",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "Smile.exe"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 7,
+        "method": "conceiving",
+        "illustration": "Protagonist begins engaging the story problem—investigates, enlists help; further background ties to story goal.",
+        "summary": "Smile.exe",
+        "storytelling": "Myrtle mimics emotions—too perfectly.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "resistance",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 1,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 10,
+      "titles": {
+        "tablature": "Introduce Subplot",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "A Copy That Bleeds"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 8,
+        "method": "conceiving",
+        "illustration": "Introduce the relationship character (romantic/buddy/mentor) with the greatest impact on the protagonist.",
+        "summary": "A Copy That Bleeds",
+        "storytelling": "Vivian kills a MODS mimic pretending to be a crewmate.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "resistance",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 1,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 11,
+      "titles": {
+        "tablature": "Introduce Other Characters",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "Original Myrtle Is Dead"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 9,
+        "method": "understanding",
+        "illustration": "Establish secondary characters and their functions.",
+        "summary": "Original Myrtle Is Dead",
+        "storytelling": "Nacho finds the real Myrtle’s death logs.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "current",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 1,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 12,
+      "titles": {
+        "tablature": "Subplot",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "Motherboard"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 10,
+        "method": "past",
+        "illustration": "Explore the relationship between protagonist and the romantic/buddy character.",
+        "summary": "Motherboard",
+        "storytelling": "Vivian inspects her implants and sees erased sections.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "current",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 1,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 13,
+      "titles": {
+        "tablature": "Complicatoin",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "Speak Memory"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 11,
+        "method": "conceiving",
+        "illustration": "Antagonist harms or detains; coercive actions escalate (abduction, substitution, imprisonment, threats, war).",
+        "summary": "Speak Memory",
+        "storytelling": "MODS attempt emotional coercion via simulated voices.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "current",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 1,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 14,
+      "titles": {
+        "tablature": "Protagonist Given Quest",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "The Woman in the Static"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 12,
+        "method": "conceiving",
+        "illustration": "A character lacks/desires something; the quest premise is given.",
+        "summary": "The Woman in the Static",
+        "storytelling": "Delilah appears—pleasure-coded and irresistible.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "current",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 1,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 15,
+      "titles": {
+        "tablature": "Protagonist Accepts Quest",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "A History of Silence"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 13,
+        "method": "understanding",
+        "illustration": "Protagonist agrees to the quest or decides on counteraction.",
+        "summary": "A History of Silence",
+        "storytelling": "Flashback: MODS were created to prevent narrative entropy.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 1,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 16,
+      "titles": {
+        "tablature": "Protagonist Sets Out on Quest",
+        "anime": {
+          "case": "Signal to Rot",
+          "tablature": "Grin"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 14,
+        "method": "past",
+        "illustration": "Seeker-protagonist pursues the goal; victim-protagonist forced along the route.",
+        "summary": "Grin",
+        "storytelling": "Vivian finds Myrtle’s corpse grinning at her.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "power",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 1,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 17,
+      "titles": {
+        "tablature": "Protagonist Meets Guardian",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "The Garden of Flesh"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 15,
+        "method": "conceptualizing",
+        "illustration": "Guardian provides/points to a powerful device after trials; protagonist endures tests leading to it.",
+        "summary": "The Garden of Flesh",
+        "storytelling": "Delilah offers heaven in a simulation.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "power",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 2,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 18,
+      "titles": {
+        "tablature": "Romantic Lead",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "System War"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 16,
+        "method": "conceptualizing",
+        "illustration": "Romantic/buddy POV—backstory, issues, concerns that shape their outlook.",
+        "summary": "System War",
+        "storytelling": "Nacho confronts Delilah: logic vs. lust.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "power",
+          "temporal": "expression"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 2,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 19,
+      "titles": {
+        "tablature": "Red Herring",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "Sweet Dream Loop"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 17,
+        "method": "doing",
+        "illustration": "Introduce a false clue or suspicious innocent to divert attention.",
+        "summary": "Sweet Dream Loop",
+        "storytelling": "Vivian becomes trapped in a false happy life.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "potential",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 2,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 20,
+      "titles": {
+        "tablature": "Antagonist",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "Memory Bleed"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 18,
+        "method": "progress",
+        "illustration": "Antagonist learns of the quest or the romantic lead's plan.",
+        "summary": "Memory Bleed",
+        "storytelling": "Deceased crew begin appearing in her dreams.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "potential",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 2,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 21,
+      "titles": {
+        "tablature": "Protagonist Endures Tests",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "Resurrection Code"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 19,
+        "method": "conceptualizing",
+        "illustration": "Protagonist is tested/attacked, prepping them for receiving a device/helper; reacts to the guardian.",
+        "summary": "Resurrection Code",
+        "storytelling": "MODS promise to return the dead—at a price.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "potential",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 2,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 22,
+      "titles": {
+        "tablature": "Protagonist and Powerful Device",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "Trace Error"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 20,
+        "method": "conceptualizing",
+        "illustration": "Protagonist acquires a powerful device or capability.",
+        "summary": "Trace Error",
+        "storytelling": "Vivian spots a flicker in the fake reality.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "potential",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 2,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 23,
+      "titles": {
+        "tablature": "Protagonist Travel",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "Soft Reset"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 21,
+        "method": "doing",
+        "illustration": "Protagonist is led or transferred to the object of the search.",
+        "summary": "Soft Reset",
+        "storytelling": "She force-exits the sim through suicide.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "resistance",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 2,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 24,
+      "titles": {
+        "tablature": "Protagonist and Antagonist Struggle",
+        "anime": {
+          "case": "Delilah.exe",
+          "tablature": "“You're Still Here.”"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 22,
+        "method": "progress",
+        "illustration": "First big confrontation/action peak.",
+        "summary": "“You're Still Here.”",
+        "storytelling": "Nacho manually revives her—barely.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "resistance",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 2,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 25,
+      "titles": {
+        "tablature": "Climactic Scene",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "Broadcast Rights"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 23,
+        "method": "conceptualizing",
+        "illustration": "Climactic scene begins.",
+        "summary": "Broadcast Rights",
+        "storytelling": "Vivian learns MORN commodified the trauma.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "resistance",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 2,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 26,
+      "titles": {
+        "tablature": "Climactic Scene Continues",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "The Trial"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "transit",
+        "sequence": 2,
+        "method": "doing",
+        "illustration": "Antagonist's catastrophic trick; narrow escape; goal not yet achieved.",
+        "summary": "The Trial",
+        "storytelling": "MODS judge Vivian in a digital court.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "resistance",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 27,
+      "titles": {
+        "tablature": "Subplot: Protagonist Branded",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "The Watchdog"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 24,
+        "method": "conceptualizing",
+        "illustration": "Relationship re-emphasized; a literal/figurative mark is made on the protagonist.",
+        "summary": "The Watchdog",
+        "storytelling": "Nacho's origin: built to preserve truth, not life.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "resistance",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 2,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 28,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "Hypertherapeutic Hell"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 25,
+        "method": "doing",
+        "illustration": "Unknown/To be determined.",
+        "summary": "Hypertherapeutic Hell",
+        "storytelling": "MORN’s new product: curated grief subscriptions.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "current",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 2,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 29,
+      "titles": {
+        "tablature": "Antagonist Reacts",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "Penetration Event"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 26,
+        "method": "progress",
+        "illustration": "Antagonist reaction escalates stakes.",
+        "summary": "Penetration Event",
+        "storytelling": "Vivian breaks into the broadcast control node.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "current",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 2,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 30,
+      "titles": {
+        "tablature": "Romantic Lead",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "Pirate Transmission"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 27,
+        "method": "conceptualizing",
+        "illustration": "Advance romantic/buddy line—likely a disaster.",
+        "summary": "Pirate Transmission",
+        "storytelling": "She broadcasts her version of the truth.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "current",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 2,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 31,
+      "titles": {
+        "tablature": "Antagonist",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "Self-Sacrifice Rewrite"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 28,
+        "method": "conceptualizing",
+        "illustration": "Antagonist's next villainous move.",
+        "summary": "Self-Sacrifice Rewrite",
+        "storytelling": "Nacho burns part of his code to overwrite false data.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "current",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 2,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 32,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "Gold in the Veins",
+          "tablature": "“Then I’ll Kill the Story.”"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "progression",
+        "sequence": 8,
+        "method": "obtaining",
+        "illustration": "Unknown/To be determined.",
+        "summary": "“Then I’ll Kill the Story.”",
+        "storytelling": "Vivian chooses war over narrative submission.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "current",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 33,
+      "titles": {
+        "tablature": "Protagonist Reevaluates Situation",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "The Dead Seven"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 29,
+        "method": "obtaining",
+        "illustration": "Reevaluate, heal, discover info; reexamine motives for pursuing the goal.",
+        "summary": "The Dead Seven",
+        "storytelling": "Vivian recruits six allies—each with encrypted data.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 3,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 34,
+      "titles": {
+        "tablature": "Story Goal",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "Parts of the Whole"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 30,
+        "method": "future",
+        "illustration": "Story goal restated.",
+        "summary": "Parts of the Whole",
+        "storytelling": "Each holds part of a bitcoin master key.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 3,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 35,
+      "titles": {
+        "tablature": "Subplot",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "Echo Killers"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 31,
+        "method": "being",
+        "illustration": "Relationship subplot intensifies; conflict changes the relationship.",
+        "summary": "Echo Killers",
+        "storytelling": "MODS mimic their loved ones to demoralize them.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 3,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 36,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "Deep Dive"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 32,
+        "method": "being",
+        "illustration": "Unknown/To be determined.",
+        "summary": "Deep Dive",
+        "storytelling": "They begin the heist inside the Moon’s core archives.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 3,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 37,
+      "titles": {
+        "tablature": "Protagonist in Dire Straits",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "Descent"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 33,
+        "method": "obtaining",
+        "illustration": "Action sequence; protagonist thwarted; chase/capture/cornering.",
+        "summary": "Descent",
+        "storytelling": "The team enters an ancient Spinnaker Vault.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 3,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 38,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "The Girl Named Penelope"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 34,
+        "method": "future",
+        "illustration": "Unknown/To be determined.",
+        "summary": "The Girl Named Penelope",
+        "storytelling": "Vivian sees her dead lover—alive? Impossible.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 3,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 39,
+      "titles": {
+        "tablature": "Antagonist Upper Hand",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "Exit Node Compromised"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 35,
+        "method": "being",
+        "illustration": "Antagonist gains upper hand; motivations revealed; key info disclosed.",
+        "summary": "Exit Node Compromised",
+        "storytelling": "They succeed, but the escape is cut off.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 3,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 40,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "Seven Keys to the Underworld",
+          "tablature": "We Leave Someone"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 36,
+        "method": "being",
+        "illustration": "Unknown/To be determined.",
+        "summary": "We Leave Someone",
+        "storytelling": "One ally stays behind to seal the breach.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 3,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 41,
+      "titles": {
+        "tablature": "Protagonist Faces Ruin",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "Payload Deployed"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 37,
+        "method": "obtaining",
+        "illustration": "Disaster from protagonist POV; last resort fails.",
+        "summary": "Payload Deployed",
+        "storytelling": "The bitcoin wallet triggers Dead Hand Reclamation.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 3,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 42,
+      "titles": {
+        "tablature": "Romantic Lead",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "The Committee Returns"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 38,
+        "method": "future",
+        "illustration": "Romantic/buddy perspective or backstory amid current events.",
+        "summary": "The Committee Returns",
+        "storytelling": "The eldritch auditors of entropy awaken.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 3,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 43,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "AN7L Fragments Speak"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 39,
+        "method": "being",
+        "illustration": "Unknown/To be determined.",
+        "summary": "AN7L Fragments Speak",
+        "storytelling": "The original AI flickers into prophetic awareness.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 3,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 44,
+      "titles": {
+        "tablature": "Temporary Victory",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "Dialogue of the Dead"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 40,
+        "method": "being",
+        "illustration": "Big action scene; temporary defeat of antagonist; initial lack liquidated.",
+        "summary": "Dialogue of the Dead",
+        "storytelling": "MODS and AN7L argue in machine logic.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 3,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 45,
+      "titles": {
+        "tablature": "Antagonist Escapes",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "Return of the Flesh"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 41,
+        "method": "obtaining",
+        "illustration": "Antagonist gets away; friends arrive too late.",
+        "summary": "Return of the Flesh",
+        "storytelling": "Delilah returns—this time biological.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 3,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 46,
+      "titles": {
+        "tablature": "Protagonist Returns",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "All Systems Fail"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 42,
+        "method": "future",
+        "illustration": "Protagonist clear on future course of action.",
+        "summary": "All Systems Fail",
+        "storytelling": "The lunar systems begin total collapse.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 3,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 47,
+      "titles": {
+        "tablature": "Subplot",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "Self-Install Protocol"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 43,
+        "method": "being",
+        "illustration": "Relationship difficulties intensify as the end nears.",
+        "summary": "Self-Install Protocol",
+        "storytelling": "Nacho offers to become the new operating system.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 3,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 48,
+      "titles": {
+        "tablature": "Falling Action",
+        "anime": {
+          "case": "Collapse of Heaven",
+          "tablature": "The Rotten Kingdom"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "transit",
+        "sequence": 3,
+        "method": "obtaining",
+        "illustration": "Substories cleared up; descent toward resolution.",
+        "summary": "The Rotten Kingdom",
+        "storytelling": "Vivian chooses to let the Moon die with her terms.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "current",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 49,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "Waking in Wax"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 44,
+        "method": "learning",
+        "illustration": "Unknown/To be determined.",
+        "summary": "Waking in Wax",
+        "storytelling": "Vivian finds herself in a synthetic ecosystem.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 4,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 50,
+      "titles": {
+        "tablature": "Romantic Lead",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "Penelope Rebooted"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 45,
+        "method": "present",
+        "illustration": "Romantic/buddy in grave peril.",
+        "summary": "Penelope Rebooted",
+        "storytelling": "A perfect recreation of Penelope joins her.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 4,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 51,
+      "titles": {
+        "tablature": "Antagonist Strategy",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "The Hollow Garden"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 46,
+        "method": "becoming",
+        "illustration": "Antagonist plans a new strategy.",
+        "summary": "The Hollow Garden",
+        "storytelling": "The environment is pristine—but eerie.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 4,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 52,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "Echo Chamber"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 47,
+        "method": "becoming",
+        "illustration": "Unknown/To be determined.",
+        "summary": "Echo Chamber",
+        "storytelling": "Nacho reboots, but has no memory of her.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "power",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 4,
+        "event": 1
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 53,
+      "titles": {
+        "tablature": "Protagonist Thwarted",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "Moon Children"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 48,
+        "method": "learning",
+        "illustration": "Series of scenes where protagonist is thwarted.",
+        "summary": "Moon Children",
+        "storytelling": "Mutant children speak in glitchy MODS syntax.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "potential",
+          "temporal": "integration"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 4,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 54,
+      "titles": {
+        "tablature": "Protagnonist Finds Antagonist",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "Author God"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 49,
+        "method": "present",
+        "illustration": "Protagonist finds and fights antagonist on their ground; violence; side character may fall.",
+        "summary": "Author God",
+        "storytelling": "AN7L offers her authorship of the mythos.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 4,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 55,
+      "titles": {
+        "tablature": "Subplot",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "Mythos Seed"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 50,
+        "method": "becoming",
+        "illustration": "Protagonist learns of romantic/buddy plight and rushes to help.",
+        "summary": "Mythos Seed",
+        "storytelling": "She writes a false story to bait MODS.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 4,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 56,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "The New World’s Body",
+          "tablature": "The Return of the Lie"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 51,
+        "method": "becoming",
+        "illustration": "Unknown/To be determined.",
+        "summary": "The Return of the Lie",
+        "storytelling": "MODS arrive to correct her fiction.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "potential",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 4,
+        "event": 2
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 57,
+      "titles": {
+        "tablature": "Rescue",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "Null Privilege"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 52,
+        "method": "learning",
+        "illustration": "Romantic/buddy freed at cost to protagonist.",
+        "summary": "Null Privilege",
+        "storytelling": "MODS confront her with the fact: she was never special.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 4,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 58,
+      "titles": {
+        "tablature": "Romantic Lead",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "Iteration 14"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 53,
+        "method": "present",
+        "illustration": "Romantic/buddy left disillusioned; relationship appears over.",
+        "summary": "Iteration 14",
+        "storytelling": "She discovers her identity was rewritten repeatedly.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 4,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 59,
+      "titles": {
+        "tablature": "Showdown",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "The Original"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 54,
+        "method": "becoming",
+        "illustration": "Protagonist and antagonist close in on each other.",
+        "summary": "The Original",
+        "storytelling": "Nacho restores her first backup: a nameless soldier.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 4,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 60,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "Regression"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 55,
+        "method": "becoming",
+        "illustration": "Unknown/To be determined.",
+        "summary": "Regression",
+        "storytelling": "Vivian becomes feral—rejects all identity.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "resistance",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 4,
+        "event": 3
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 61,
+      "titles": {
+        "tablature": "Unrecognized Arrival",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "Speak Now, Myrtle"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 56,
+        "method": "learning",
+        "illustration": "Protagonist arrives “home” unrecognized; transformed or undercover.",
+        "summary": "Speak Now, Myrtle",
+        "storytelling": "Myrtle speaks—breaking protocol to reach her.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "current",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 4,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 62,
+      "titles": {
+        "tablature": "Ultiamte Confrontation",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "“I Choose Me.”"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 57,
+        "method": "present",
+        "illustration": "The ultimate confrontation; backstory/substory questions answered.",
+        "summary": "“I Choose Me.”",
+        "storytelling": "Vivian decides her origin doesn’t matter.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "current",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 4,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 63,
+      "titles": {
+        "tablature": "Trump Card or False Claims",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "Reset"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 58,
+        "method": "becoming",
+        "illustration": "Antagonist plays last trump or false claims are made.",
+        "summary": "Reset",
+        "storytelling": "She erases the last MODS copy herself.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "current",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 4,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 64,
+      "titles": {
+        "tablature": "Antagonist Proposes Difficult Task",
+        "anime": {
+          "case": "You Are Not Exceptional",
+          "tablature": "There Is No System"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 59,
+        "method": "becoming",
+        "illustration": "Antagonist offers a dilemma—both choices disastrous.",
+        "summary": "There Is No System",
+        "storytelling": "She finds peace without order or purpose.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "current",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 4,
+        "event": 4
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 65,
+      "titles": {
+        "tablature": "Protagonist Resolves Task",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "One Year of Silence"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "progression",
+        "sequence": 12,
+        "method": "learning",
+        "illustration": "Choice for greater good at personal cost; biggest fight.",
+        "summary": "One Year of Silence",
+        "storytelling": "Vivian survives, alone, beneath a new sky.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "resistance",
+          "temporal": "experimentation"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 66,
+      "titles": {
+        "tablature": "Protagonist Recognition",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "The Voice"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 60,
+        "method": "learning",
+        "illustration": "Protagonist recognized for integrity or after separation.",
+        "summary": "The Voice",
+        "storytelling": "A signal reaches her—neither MODS nor AN7L.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 4,
+        "event": 5
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 67,
+      "titles": {
+        "tablature": "Antagonist or False Claims Exposed",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "Origin Flag"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 61,
+        "method": "present",
+        "illustration": "Antagonist revealed or false claims about protagonist exposed.",
+        "summary": "Origin Flag",
+        "storytelling": "It claims to come from Earth.",
+        "tones": {
+          "abstraction": "situation",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "MC",
+        "signpost": 4,
+        "event": 5
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 68,
+      "titles": {
+        "tablature": "Protagonist Given New Appearance",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "The New VANTA"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 62,
+        "method": "becoming",
+        "illustration": "Protagonist undergoes essential change or is more resolute.",
+        "summary": "The New VANTA",
+        "storytelling": "She assembles one final suit—by hand.",
+        "tones": {
+          "abstraction": "justification",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "IC",
+        "signpost": 4,
+        "event": 5
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 69,
+      "titles": {
+        "tablature": "?",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "Listening"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 63,
+        "method": "becoming",
+        "illustration": "Unknown/To be determined.",
+        "summary": "Listening",
+        "storytelling": "She weighs the offer in silence.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "RS",
+        "signpost": 4,
+        "event": 5
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 70,
+      "titles": {
+        "tablature": "Antagonist Punished",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "Reverie"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "event",
+        "sequence": 64,
+        "method": "learning",
+        "illustration": "Antagonist punished (shot, banished, suicide, or pardoned).",
+        "summary": "Reverie",
+        "storytelling": "Flashbacks and memories cascade with no dialogue.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": {
+        "throughline": "OS",
+        "signpost": 4,
+        "event": 6
+      },
+      "flags": {
+        "personal_candidate": false
+      }
+    },
+    {
+      "chapter_index": 71,
+      "titles": {
+        "tablature": "Story Outcome",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "“No.”"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "transit",
+        "sequence": 4,
+        "method": "learning",
+        "illustration": "Plot loose ends tied up.",
+        "summary": "“No.”",
+        "storytelling": "Vivian responds to the signal. One word.",
+        "tones": {
+          "abstraction": "action",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    },
+    {
+      "chapter_index": 72,
+      "titles": {
+        "tablature": "Subplot Outcome",
+        "anime": {
+          "case": "The Lustration",
+          "tablature": "The End of the Moon"
+        }
+      },
+      "ncp_storybeat": {
+        "appreciation": "progression",
+        "sequence": 16,
+        "method": "ending",
+        "illustration": "Subplot relationship resolved.",
+        "summary": "The End of the Moon",
+        "storytelling": "Final shot: the Moon disappears. Cut to black.",
+        "tones": {
+          "abstraction": "opinion",
+          "spatial": "power",
+          "temporal": "transcendence"
+        },
+        "perspectives": [
+          {
+            "perspective_id": "P1"
+          }
+        ]
+      },
+      "dramatica": null,
+      "flags": {
+        "personal_candidate": true
+      }
+    }
+  ]
+}

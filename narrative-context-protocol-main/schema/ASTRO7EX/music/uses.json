@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "cue_uses": [
+    { "id": "use:ch3-vivian", "cue_id": "cue:vivian-theme", "chapter": 3, "mix": "non-diegetic", "intensity": 0.7 },
+    { "id": "use:ch25-morn",  "cue_id": "cue:morn-brand",  "chapter": 25, "mix": "diegetic" }
+  ]
+}

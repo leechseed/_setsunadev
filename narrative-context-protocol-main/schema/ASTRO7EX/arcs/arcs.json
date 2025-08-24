@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "arcs": [
+    { "id": "arc:alpha", "name": "Alpha Arc", "kind": "character", "color": "#8fd3ff", "summary": "Vivian’s isolation → agency." },
+    { "id": "arc:beta",  "name": "Beta Arc",  "kind": "investigation", "color": "#ffb86b", "summary": "MORN commodification plot." }
+  ]
+}

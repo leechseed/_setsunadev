@@ -1,0 +1,6 @@
+{ "schema_version": "1.0",
+  "cues": [
+    { "id": "cue:vivian-theme", "name": "Vivian Theme", "composer": "AA", "motifs": ["minor tetrachord","m3"] },
+    { "id": "cue:morn-brand", "name": "MORN Brand Tone", "diegetic": true }
+  ]
+}

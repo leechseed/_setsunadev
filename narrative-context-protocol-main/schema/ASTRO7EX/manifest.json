@@ -1,0 +1,12 @@
+{
+  "pack_id": "ASTRO7EX",
+  "version": "1.0.0",
+  "modules": {
+    "chapters":  { "path": "chapters/astro7ex_chapters.json", "schema": "ncp://chapters/1.0" },
+    "arcs":      { "defs": "arcs/arcs.json", "links": "arcs/arc-links.json", "schema": "ncp://arcs/1.0" },
+    "locations": { "defs": "locations/locations.json", "uses": "locations/placements.json", "schema": "ncp://locations/1.0" },
+    "music":     { "defs": "music/cues.json", "uses": "music/uses.json", "schema": "ncp://music/1.0" },
+    "shots":     { "defs": "shots/shots.json", "schema": "ncp://shots/1.0" },
+    "notes":     { "path": "notes/tags.json", "schema": "ncp://notes/1.0" }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "chapter_notes": [
+    { "chapter": 1, "tags": ["cold-open","vault"], "text": "Try alternate read of line 12." }
+  ]
+}
