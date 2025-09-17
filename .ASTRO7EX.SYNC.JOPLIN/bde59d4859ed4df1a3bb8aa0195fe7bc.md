@@ -1,0 +1,13 @@
+id: bde59d4859ed4df1a3bb8aa0195fe7bc
+parent_id: 4a9cfcd2a7ab4d6b9d7e3ab5130c4816
+item_type: 1
+item_id: 11d3945f93a64d0783c3902a8e093e81
+item_updated_time: 1758086241818
+title_diff: "[]"
+body_diff: "[{\"diffs\":[[0,\"--\\\n\\\n\"],[-1,\"EXERCISE W\\\nCHARACTER FLAW CREATES SCENE ACTIVITY\"],[1,\"# Exercise W — Character Flaw Creates Scene Activity\\\n\"],[0,\"\\\nBui\"]],\"start1\":112,\"start2\":112,\"length1\":56,\"length2\":61},{\"diffs\":[[0,\"a scene \"],[1,\"by \"],[0,\"answerin\"]],\"start1\":176,\"start2\":176,\"length1\":16,\"length2\":19},{\"diffs\":[[0,\"ring the\"],[-1,\"se\"],[1,\" following\"],[0,\" questio\"]],\"start1\":192,\"start2\":192,\"length1\":18,\"length2\":26},{\"diffs\":[[0,\"s:\\\n\\\n\"],[-1,\"1. \"],[1,\"---\\\n\\\n### **1. Setting**\\\n- **\"],[0,\"Wher\"]],\"start1\":219,\"start2\":219,\"length1\":11,\"length2\":36},{\"diffs\":[[0,\"ace?\"],[-1,\"\\\n2. Who are the characters?\\\n3. What are their flaws?\\\n4. List the traditional things that each character would have to do in that setting\\\n5. \"],[1,\"**  \\\n  [Describe the location.]\\\n\\\n---\\\n\\\n### **2. Characters**\\\n- **Who are the characters in this scene?**  \\\n  [List the key players.]\\\n\\\n---\\\n\\\n### **3. Flaws**\\\n- **What are their flaws?**  \\\n  [Identify each character’s core flaw.]\\\n\\\n---\\\n\\\n### **4. Traditional Activities**\\\n- **List the traditional things that each character would have to do in that setting:**  \\\n  - [Activity 1]  \\\n  - [Activity 2]  \\\n  - [Activity 3]  \\\n\\\n---\\\n\\\n### **5. Complications**\\\n- **\"],[0,\"Add \"]],\"start1\":280,\"start2\":280,\"length1\":148,\"length2\":456},{\"diffs\":[[0,\"their fl\"],[-1,\"o\"],[1,\"a\"],[0,\"ws to th\"]],\"start1\":762,\"start2\":762,\"length1\":17,\"length2\":17},{\"diffs\":[[0,\"tivi\"],[1,\"t\"],[0,\"ies:\"],[-1,\"\\\n6. What entertaining or dramatic moments emerge?\\\n7. How might this scene further the story?\\\n\"],[1,\"**  \\\n  [Describe how flaws distort the expected actions.]\\\n\\\n---\\\n\\\n### **6. Entertainment / Drama**\\\n- **What entertaining or dramatic moments emerge?**  \\\n  [Describe the resulting tension, humor, or conflict.]\\\n\\\n---\\\n\\\n### **7. Story Advancement**\\\n- **How might this scene further the story?**  \\\n  [Explain its narrative purpose.]  \"],[0,\"\\\n\"]],\"start1\":785,\"start2\":785,\"length1\":102,\"length2\":336}]"
+metadata_diff: {"new":{},"deleted":[]}
+encryption_cipher_text: 
+encryption_applied: 0
+updated_time: 2025-09-17T05:25:19.834Z
+created_time: 2025-09-17T05:25:19.834Z
+type_: 13
