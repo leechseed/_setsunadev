@@ -1,0 +1,116 @@
+public:: true
+
+- # Ezreal and Varus Opener
+	- Ezreal and Varus are web savvy drug dealers/addicts that run on the downlow. They're high off addreall and dabs 24/7.
+	- But they're 'smart.'
+	- They're downlow, to a certain degree, but they live out of a decked out school bus which they rent out for cheap to college kids who want to get fucked up, pre-gamed, and shit-faced in between classes.
+	- They buy their drugs off the darkweb, ordering from the public library.
+	- They then get alerts to their phone to go pick up the drugs from an apartment complex drop box.
+	- They go to several apartment complexes and exchange the cash they got from the party kids and gives the apartment a cut for the drugs.
+	- *Eventually it all becomes numb*
+		- When your phone says your rich and not the cash buried in the ground by the pound.
+		- When your source is 'top rated,' and the pure comes dosed, and you don't even know how you got it.
+		- When the one thing you want is real, but the close is the all you can hope for.
+	- Ezreal becomes obsessed with Judy, he whales on her every night on cam.
+	- He tosses thousands of her. He communicates with her. He feels like he's in love with her.
+	- Ezreal tells Varus about a new crypto Judy is shilling, says they should go all in. Before he can say anything, Ezreal says he's already all in.
+	- *This is where it all goes south*
+		- The guys load up a bus full of fuckin college undergrads on their way to PC.
+		- They get pulled over.
+		- Before the cop even gets out, the kids fucking DIP leaving only Ezreal and Varus in the car.
+		- A cop comes into the bus. Its the *crooked cop.*
+		- He's decked out in riot gear.
+		- "you don't...look"
+		- Another cop gets into the back of the bus. Same gear.
+		- Big fight.
+		- One of the cops gets mortally wounded. The other cop manages to knock them both out.
+	- *When they wake up*
+		- Everything is trashed. But everything is still there. They wake up in a parking lot by the beach. Some college kids line up by the door, waiting for drugs, but they're closed.
+		- They dose up.
+		- Varus asks Ezreal to load up a card so they can get cash.
+		- Ezreal ignores him and only notices that Judy has dissapeard from the internet.
+		- And her crypto has been pumped and dumped.
+		- They're broke.
+	- *Their account has been margin called. They're actually in the hole.*
+		- They have to dump everything. Or else someone is coming after them. The internet.
+		- They sell the rest of their drugs, spend the rest on gas, and light their bus on fire.
+	- *They take an uber back to town*
+		- Back at the public library. They're paranoid af. They don't know if its the drugs or if its real.
+		- **They owe upwards of *$1,000,000*
+		- That part is easy. They just gotta do it the old fashioned way. Stay off the internet. They just need to get drugs to stay high and figure something out.
+	- *Ezreal is mainly concerned about Judy, while Varus is concerned about getting back on their feet*
+		- There is a homeless man at the public library. He has like 30x screens around him. Each one has a gatcha game, the same one, playing different instances.
+		- Ezreal and Varus agree to approach him.
+		- He is the archetype of the 'all knowing' wizard.
+		- The Homeless Man named 'Funker' agrees to talk to them. But for each question, they have to 'pull' an SSR champ on one of the phones. If they don't roll an SSR, they must roll again.
+		- After a few times, they fail to roll a good champ.
+		- The Homeless man says he will not answer the questions unless they get the roll. There's a cool down, so it takes a while for each phone. The odds are against them.
+		- 3 hours later, Ezreal gets an SSR. Varus tries to convince Ezreal to ask about the cop. Instead, Ezreal asks *Do you know Judy Salamanca or FitJudyCutie?*
+		- Funker says, yes.
+		- Ezreal: *Do you know what happened to her?*
+		- Funker points to another phone.
+		- Ezreal grabs another phone and keeps going. Varus, pissed, asks what the odds are.
+		- Funker says: *1 in 0.0002%*
+		- Another hour passes. Varus rolls an SSR. Varus asks: *Is there corruption on the police force, if so, is there a buff Captain America type with a mustache....etc*
+			- Funker says: *Compound questions do not count. But I will answer the first. Yes*
+			- Frustration builds. Both Ezreal and Varus are at the end of their rope.
+			- Funker says: *There are two of you. By the way.*
+		- Ezreal and Varus decide to work together. Instead of asking the quetsions right away, they decide to stack as many as they can.
+		- The two follow Funker to his shitty old econovan where he sets up his gatcha games again.
+		- Hours pass. A library person comes to shoo them away. Collectively, together, they have 3 questions.
+		- Outside, Ezreal begins with the first question.
+			- Ezreal asks *Is Judy ok?*
+			- Funker scoffs. *You surprise me. Yes she is, and just for your persistance, I'll give you this, she works at the Milk Den off 6th Avenue.*
+			- Varus: *What is the cop's name?*
+			- Funker: *I don't know. If I did, would not tell you. That man is dangerous. If you are alive, then you are guranteed to see him again. He will find you, and he will kill you.*
+			- Ezreal and Varus: *Where can we get, drugs, hard drugs?*
+			- Funker: *The Milk Den.*
+		- Funker shuts the door on them.
+			- Ezreal: *Will you be back in the library tomorrow?*
+		- Funker: *NO! You've roped me into this now. The cop will come for you. He'll make you talk. And he'll come for me. NO!*
+	- On the way to a gas station......
+		- The boys discuss how the bad cop wanting them dead doesn't make any sense. Why didn't he just kill them? They walk into the gas station....
+			- Ezreal mentions that his pipe is busted and that they need some foil. Wish there was a head shop open at this time...probably is but the gas station is right here and he needs a lift pronto.
+		- The grab a shit ton of sugary, salty, foods. Energy drinks, sodas, anything with max flavor. That and a roll of foil. Weird interaction with the cashier.
+	- The gas station is right next to a bumpin club. Shit is busy, cars, people crossing the street, etc.
+	- Ezreal and Varus step outside, their arms full of food.
+	- A guy gets rowdy round a girl at the crosswalk to the busy intersection. He pushes her into the crosswalk. She trips and falls to the ground. She stops traffic. The guy spits at her and says something like 'fuck off slut.'
+	- Ezreal goes to intervene. Varus tells him its a bad idea. Ezreal comes back with a *we may be junkies, we may sell drugs, but we ain't all bad yet, karma and everything.*
+	- The situation escalates. The car she fell in front of, slams on the horn and inches forward. The guy laughs that pushes her down. The car in the left lane speeds ahead barely missing the girl on the ground.
+	- Ezreal *comeon Varus.*
+	- The girl slams her hand on the hood of the car. she limps back to the side of the street. One heel on. In a fell swoop, she rips out a derringer from her purse and points it at the dude.
+	- Ezreal and Varus stop in their tracks. They watch the girl order the dude to get on his knees as the crowd scatters.
+	- A squad car spawns out of nowhere, and stops in the middle of the intersection. Two cops open their doors and order the girl to drop the gun.
+	- Ezreal and Varus begin to step out, they have entered a situation they shouldn't have.
+	- A squad car pulls up, blocking their path. It shines a spotlight on them.
+	- A cop, a shadowy figure steps out.
+	- A cop: *Jesus fucking Christ. They live*
+	- The boys stutter
+	- A cop: *STOP RESISTING!*
+	- The boy stutter.
+	- A cop: *GUN GUN!*
+	- A gun shot rings out. Just as a drunk driver t-bones the cop car, which sent the cop flying.
+	- Meanwhile, at the intersection, a set of cops sees what happens. The drunk driver starts to pull away, but not before another set of cops starts firing in his direction.
+	- The abusive boyfriend grabs the derringer off the ground, rolls up and points it at the girl. *Later bitch*
+		- He pulls the trigger. Its pepper spray. It gets in the girl and his eyes.
+		- The dude gets up off the ground in pain, gun still in hand. The cops fucking tear him apart.
+	- Ezreal and Varus take off in the other direction
+		- Varus *We don't get paid to be good people, Ez!*
+	- A cop car comes down the street towards them.
+	- Ezreal and Varus slow down and try not to look suspicious.
+	- The cop car does a fast U-turn and stops in the middle of the street. *Its him.*
+	- The cop car goes lights and sirens.
+	- Ezreal *Varus this way!*
+	- They duck into an alley way. The cop car follows them.
+	- Chase scene.
+	- It ends as ezreal and varus walk across a pedestrian crosswalk with like a hundred other drunk kids, and they pour into a night bus.
+	- They got away.
+	- On the bus, everyone recognizes them. *Ez! V! Yall brought fuckin SNACKS?! Always on POINT!*
+	- The bus erupts in guffaw. They can't disappoint.  They keep the foil.
+	- The bus closes its door and rolls away. Ezreal looks out the window. He sees a glint of plat/blonde blue hair. She sees him too. Just a glance. *Its her.*
+	- As the bus pulls off, Ezreal weaves his way though the bus isle to grab another look at her. What sees is the bad cop standing above her, shining his massive mag light in her face. She raises an arm to block the light.
+	- Ezreal: *NO!*
+	-
+	-
+	-
+	-

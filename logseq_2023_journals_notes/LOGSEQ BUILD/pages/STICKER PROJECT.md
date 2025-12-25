@@ -1,0 +1,13 @@
+- {{embed ((62674929-447d-4ac8-bea2-67acceed32e1))}}
+	- # 1 - I need to first model the value delivery/creation model.
+		- After that I can start attaching major start up costs and roughly estimate **how long I can run with the remaining capital I have.**
+			- The second step would be to validate the market through a short business analysis type thing.
+				- **Output Indicators:**
+					- End to End Value Cycle
+					- Project Charter and all associated documentation
+					- Scope Management and all other Documentation.
+	-
+- # 1.1 - Using scrum to manage the development of the Sticker Project
+	- I'll basically put all documentation here in this specific logseq graph.
+	- Syntax will be relatively simple. Any important _baseline_ documentation will be marked with a COCK emoji. #
+	-
