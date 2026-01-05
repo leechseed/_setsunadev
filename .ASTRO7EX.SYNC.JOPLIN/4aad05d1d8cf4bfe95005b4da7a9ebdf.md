@@ -3,7 +3,8 @@
 # 📘 Knowledgebase Entry: *Wind River* — Non-Negotiable Invariants
 
 ---
-
+tags: [oxo, inspiration]
+---
 ## Table of Contents
 1. [Overview](#overview)
 2. [Project Scope](#project-scope)
@@ -187,7 +188,7 @@ The film works because **it refuses to pretend that solving a crime fixes a plac
 id: 4aad05d1d8cf4bfe95005b4da7a9ebdf
 parent_id: 73707f606eaf4be5b486b1b0aade82bb
 created_time: 2025-12-24T06:48:52.879Z
-updated_time: 2025-12-24T06:48:56.673Z
+updated_time: 2026-01-05T08:12:47.237Z
 is_conflict: 0
 latitude: 30.43825590
 longitude: -84.28073290
@@ -202,7 +203,7 @@ source_application: net.cozic.joplin-desktop
 application_data: 
 order: 0
 user_created_time: 2025-12-24T06:48:52.879Z
-user_updated_time: 2025-12-24T06:48:56.673Z
+user_updated_time: 2026-01-05T08:12:47.237Z
 encryption_cipher_text: 
 encryption_applied: 0
 markup_language: 1

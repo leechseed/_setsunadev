@@ -1,9 +1,13 @@
 📘 Ontological Layer 0 — Foundational Reality
 
+---
+tags: oxo
+---
 # 📘 Knowledgebase Entry  
 ## Ontological Layer 0 — Foundational Reality (Complete Component List)
 
 ---
+
 
 ## 📑 Table of Contents
 
@@ -272,7 +276,7 @@ The next entry should formalize **Layer 1 — Value & Meaning Logic**, building 
 id: a8aba9766a844c12ad7fee9ffcfbc29c
 parent_id: 23fd7f8586c645928d9b460e6072d918
 created_time: 2025-12-29T23:40:19.770Z
-updated_time: 2025-12-29T23:40:31.018Z
+updated_time: 2026-01-05T08:25:32.178Z
 is_conflict: 0
 latitude: 30.43825590
 longitude: -84.28073290
@@ -287,7 +291,7 @@ source_application: net.cozic.joplin-desktop
 application_data: 
 order: 0
 user_created_time: 2025-12-29T23:40:19.770Z
-user_updated_time: 2025-12-29T23:40:31.018Z
+user_updated_time: 2026-01-05T08:25:32.178Z
 encryption_cipher_text: 
 encryption_applied: 0
 markup_language: 1
