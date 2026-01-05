@@ -2,7 +2,8 @@
 
 # 📘 Knowledgebase Entry: Non-Negotiable Invariants — 
 ---
-
+tags: [oxo, inspiration]
+---
 ## Table of Contents
 1. [Overview](#overview)
 2. [Project Scope](#project-scope)
@@ -186,7 +187,7 @@ The series works because **the universe survives on attention, not law**.
 id: c4acb56ca4044285ae7baa74fce27bee
 parent_id: 73707f606eaf4be5b486b1b0aade82bb
 created_time: 2025-12-24T05:52:20.580Z
-updated_time: 2025-12-24T05:52:32.432Z
+updated_time: 2026-01-05T08:12:20.771Z
 is_conflict: 0
 author: 
 source_url: 
@@ -198,7 +199,7 @@ source_application: net.cozic.joplin-desktop
 application_data: 
 order: 0
 user_created_time: 2025-12-24T05:52:20.580Z
-user_updated_time: 2025-12-24T05:52:32.432Z
+user_updated_time: 2026-01-05T08:12:20.771Z
 encryption_cipher_text: 
 encryption_applied: 0
 markup_language: 1
