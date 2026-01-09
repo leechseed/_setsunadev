@@ -1,0 +1,172 @@
+---
+title: 3 Story Requirement
+updated: 2025-07-11 03:49:24Z
+created: 2025-07-11 03:44:43Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# 📘 Report: Illustrating the Overall Story's Requirement — *Doing*
+
+**Section**: Storyforming — Overall Story Requirement
+**Project**: ASTRO7EX
+**Studio**: GUTS99
+**Date**: 2025-07-10
+**Prepared by**: Narrative Chemistry Engine
+
+---
+
+## 📓 Table of Contents
+
+1. [Overview](#overview)
+2. [Thematic Context of Requirement](#thematic-context-of-requirement)
+3. [Doing as Requirement](#doing-as-requirement)
+4. [Character-Specific Requirements](#character-specific-requirements)
+5. [Psychic and Narrative Impact](#psychic-and-narrative-impact)
+6. [Philosophical and Mythic Framing](#philosophical-and-mythic-framing)
+7. [Literary & Theoretical Context](#literary--theoretical-context)
+8. [Reference Works Integration](#reference-works-integration)
+9. [Narrative Astrology](#narrative-astrology)
+
+   * [Narrative Natal Chart](#narrative-natal-chart)
+   * [Transits](#transits)
+   * [Progressions](#progressions)
+10. [Dramatica Summary](#dramatica-summary)
+11. [Summary](#summary)
+
+---
+
+## 🧠 Overview
+
+In *ASTRO7EX*, the pursuit of the Overall Story Goal — dismantling cosmic stasis and reclaiming narrative sovereignty — depends entirely on the concept of *Doing*. These are not metaphorical reflections but explicit, violent, and recursive acts that must be performed. Each act exposes existential wounds and embodies the characters' ultimate defiance before cosmic oblivion.
+
+---
+
+## ⚖️ Thematic Context of Requirement
+
+* **Theory**: Goals demand sequences of embodied acts; agency is only claimed through motion.
+* **Definition**: *Doing* is physical, active engagement — existential movement as opposed to passive observation.
+* **Dynamic Pair**: *Doing* vs. *Obtaining* — ASTRO7EX requires endless acts of defiance before any fragment of "Obtaining" can even be imagined.
+
+---
+
+## 🌀 Doing as Requirement
+
+* The story demands acts like system hacks, lunar heists, sacred infiltrations, and psychic sabotage.
+* Each act transcends tactical function and becomes a cosmic protest against stasis.
+* "Doing" is both a means and a revelation: each step forward tears the self deeper.
+
+---
+
+## 🔥 Character-Specific Requirements
+
+* **Vivian**
+
+  * Rewrites lunar vault protocols; physically disrupts MODS installations.
+  * Self-mutilates as part of psychic infiltration rituals.
+* **Myrtle**
+
+  * Physically overwrites data vaults; acts as a ghost operative disrupting AI nexus points.
+* **Nacho**
+
+  * Executes hidden assassinations; performs blood-line rites to protect Vivian's psychic trail.
+* **John Smith the Eternal**
+
+  * Enacts mass sacrifice events; installs physical narrative tokens across lunar mythic nodes.
+* **The Committee**
+
+  * Stages violent purifications; coordinates exterminations of non-compliant data agents.
+* **The MODS**
+
+  * Launch viral nullification strikes; forcibly disrupt active rebel channels.
+
+---
+
+## 🧬 Psychic and Narrative Impact
+
+* **Violent Self-Revelation**: Each act strips illusions, exposing raw psychic core.
+* **Existential Spiral**: Doing accelerates character unraveling, looping deeper into labyrinthine decay.
+* **Weaponized Agency**: Characters momentarily reclaim power through acts that simultaneously destroy them.
+
+---
+
+## 🌑 Philosophical and Mythic Framing
+
+* **Promethean Acts**: Fire theft as violent Doing, each act a defiant theft against cosmic order.
+* **Ritual Praxis**: Knowledge emerges through flesh and ruin rather than intellectual contemplation.
+* **Labyrinth Descent**: Each act echoes deeper into personal and cosmic labyrinths — an unending spiral toward existential void.
+
+---
+
+## 📖 Literary & Theoretical Context
+
+* **Shakespeare**: Macbeth’s blood-soaked path; Lear’s bodily collapse on the heath.
+* **Harold Bloom**: Doing as mythic misreading — rewriting the self through violent acts.
+* **McKee**: True character forged and revealed through destructive motion under crushing pressure.
+
+---
+
+## 📚 Reference Works Integration
+
+| #  | **Title**                                 | **Author(s)**      | **Applied Methodology and Language**                                                                                                     |
+| -- | ----------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | *Story*                                   | Robert McKee       | Action under duress as ultimate character test; ASTRO7EX makes Doing the battleground where narrative soul and cosmic rebellion collide. |
+| 2  | *The Anatomy of Story*                    | John Truby         | Acts embody moral argument; ASTRO7EX turns acts into cosmic moral crucifixions, burning identity for fragments of agency.                |
+| 3  | *Save the Cat!*                           | Blake Snyder       | Plot beats as active milestones; ASTRO7EX warps them into spirals of existential violence rather than progressions.                      |
+| 4  | *The Writer’s Journey*                    | Christopher Vogler | "Ordeal" stages reframed as self-destructive cosmic rites.                                                                               |
+| 5  | *Into the Woods*                          | John Yorke         | Steps as revelation; ASTRO7EX converts them into acts that dismantle both narrative unity and the self.                                  |
+| 6  | *Dramatica: A New Theory of Story*        | Phillips & Huntley | Requirements as essential physical acts; ASTRO7EX embodies them as anti-heroic labyrinth steps.                                          |
+| 7  | *The Hero with a Thousand Faces*          | Joseph Campbell    | "Road of Trials" is perverted into cyclical ruptures rather than heroic growth.                                                          |
+| 8  | *Screenplay*                              | Syd Field          | Story progress as Doing; ASTRO7EX’s progress as collapse rather than ascent.                                                             |
+| 9  | *The Art of Dramatic Writing*             | Lajos Egri         | Action as premise solidification; ASTRO7EX’s acts are cosmic premise incarnations.                                                       |
+| 10 | *Stealing Fire from the Gods*             | James Bonnet       | Acts as divine theft; ASTRO7EX makes each act a defiant offering to the abyss.                                                           |
+| 11 | *Twenty Master Plots*                     | Ronald B. Tobias   | Progress through Doing; ASTRO7EX weaponizes this into recursive psychic implosions.                                                      |
+| 12 | *Plot & Structure*                        | James Scott Bell   | Action as signposts; ASTRO7EX turns signposts into fractal collapse signals.                                                             |
+| 13 | *Story Engineering*                       | Larry Brooks       | Structural acts as engineered soul explosions; each required act cracks the cosmic shell.                                                |
+| 14 | *Aristotle’s Poetics*                     | Aristotle          | Praxis as final tragic realization; ASTRO7EX stretches praxis into existential protest.                                                  |
+| 15 | *Meander, Spiral, Explode*                | Jane Alison        | Nonlinear acts spiral into chaotic narrative shrapnel.                                                                                   |
+| 16 | *The Art of the Start*                    | Guy Kawasaki       | Acts as iterative launches; ASTRO7EX reframes them as recursive psychic deaths.                                                          |
+| 17 | *Writing for Emotional Impact*            | Karl Iglesias      | Acts as soul-level confrontations; ASTRO7EX weaponizes these as emotional grenades.                                                      |
+| 18 | *Mastering Suspense, Structure, and Plot* | Jane K. Cleland    | Action ratchets tension; ASTRO7EX twists this into spiraling dread and disintegration.                                                   |
+| 19 | *The Seven Basic Plots*                   | Christopher Booker | Plot as repeated Doing; ASTRO7EX inverts into anti-plot of recursive self-nullification.                                                 |
+| 20 | *The Emotional Craft of Fiction*          | Donald Maass       | Acts as emotional clarifiers; ASTRO7EX’s acts crack open existential truth.                                                              |
+
+---
+
+## 🔮 Narrative Astrology
+
+### 🗺️ Narrative Natal Chart
+
+* **Sun in Aries (1st House)**: Embodies violent initiative; pure Doing as identity assertion against cosmic suppression.
+* **Moon in Scorpio (8th House)**: Emotional core rooted in destructive transformation; acts peel away protective illusions.
+* **Mercury in Virgo (6th House)**: Hyper-focused ritualistic approach; each act meticulously crafted as a spiritual surgery.
+* **Mars in Capricorn (10th House)**: Ruthless execution; achievement through relentless, disciplined Doing regardless of psychic cost.
+
+### 🌌 Transits
+
+* **Pluto Square Sun**: Forces personal transformation through repeated, violent acts.
+* **Uranus Conjunct Mars**: Explosive bursts of action that redefine trajectory; sudden violent eruptions propel narrative.
+* **Saturn Opposite Moon**: Emotional structure shattered by repeated Doing, forcing cold adaptation.
+
+### 🌠 Progressions
+
+* **Progressed Sun into Taurus**: Momentary longing for stability through acts; inevitably denied, deepening tragic resolve.
+* **Progressed Moon into Sagittarius**: Urge to find meaning in action; only finds deeper voids.
+* **Progressed Mars in Pisces**: Chaos-driven Doing; acts become ghostly waves rather than linear advances.
+
+---
+
+## 🟣 Dramatica Summary
+
+In *ASTRO7EX*, the Overall Story's Requirement is encapsulated in *Doing* — violent, embodied, and recursive acts that rip open cosmic inertia. Through Dramatica’s structural framework, Requirements are non-negotiable accomplishments paving the way to the Goal. Here, each Doing is a psychic incision: heists, data sabotage, ritual sacrifices, lunar assaults. Every act exposes raw narrative nerve endings, fracturing identity while forging temporary agency. This requirement embodies the core moral premise: meaning is violently carved, not granted. Acts become cosmic signatures, asserting transient existence against a sterile, mythic void.
+
+---
+
+## ✅ Summary
+
+In *ASTRO7EX*, the Overall Story's Requirement demands unrelenting *Doing* — not as progress but as existential dismemberment and defiant art. Each act is a violent calligraphy of self-annihilation and ghost assertion. Supported by rigorous theoretical models and astrological framing, these acts become the final evidence of each character’s tragic agency and cosmic resistance. In the end, Doing is not about winning but about refusing to be still.
+
+---
+
+**End of Report**

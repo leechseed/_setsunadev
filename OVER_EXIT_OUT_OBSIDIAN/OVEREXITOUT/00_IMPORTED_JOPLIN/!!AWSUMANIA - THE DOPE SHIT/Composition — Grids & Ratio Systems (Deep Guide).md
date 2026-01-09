@@ -1,0 +1,454 @@
+---
+title: Composition — Grids & Ratio Systems (Deep Guide)
+updated: 2025-09-07 00:51:49Z
+created: 2025-09-07 00:51:36Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+---
+title: "Composition — Grids & Ratio Systems (Deep Guide)"
+author: "KnowledgeBase"
+version: "1.0"
+tags: ["art", "composition", "design", "photography", "visual-theory", "grids", "ratios"]
+created: "2025-09-06"
+---
+
+# 📘 Composition — Grids & Ratio Systems (Deep Guide)
+
+> Practical, no-myth guidance on the geometric scaffolds that actually help you place subjects, control balance, and steer the eye.
+
+---
+
+## 📑 Table of Contents
+1. [Terminology Primer (Read First)](#terminology-primer-read-first)
+2. [How to Use This Guide](#how-to-use-this-guide)
+3. [Choosing a System (Decision Guide)](#choosing-a-system-decision-guide)
+4. [Systems — Construction, Use, & Fixes](#systems--construction-use--fixes)
+   - 4.1 [Rule of Thirds](#41-rule-of-thirds)
+   - 4.2 [Phi Grid (Golden Sections)](#42-phi-grid-golden-sections)
+   - 4.3 [Golden Rectangle & Spiral (Fibonacci / Whirling Squares)](#43-golden-rectangle--spiral-fibonacci--whirling-squares)
+   - 4.4 [Golden Triangle](#44-golden-triangle)
+   - 4.5 [Dynamic Symmetry (Root Rectangles √2, √3, √5)](#45-dynamic-symmetry-root-rectangles-2-3-5)
+   - 4.6 [Armature of the Rectangle (Baroque/Sinister Diagonals + Reciprocals)](#46-armature-of-the-rectangle-baroquesinister-diagonals--reciprocals)
+   - 4.7 [Rabatment of the Rectangle](#47-rabatment-of-the-rectangle)
+   - 4.8 [Grids of Fourths & Fifths; Rule of Odds](#48-grids-of-fourths--fifths-rule-of-odds)
+   - 4.9 [Format Notes: Square, Classic, Widescreen, Panoramic](#49-format-notes-square-classic-widescreen-panoramic)
+   - 4.10 [Modular & Baseline Grids (Graphic/UI)](#410-modular--baseline-grids-graphicui)
+5. [Diagnostics & Stress Tests](#diagnostics--stress-tests)
+6. [Workflow & Setup (Overlays, Apps, Cameras)](#workflow--setup-overlays-apps-cameras)
+7. [Exercises That Build Skill Fast](#exercises-that-build-skill-fast)
+8. [Common Pitfalls (and the Cure)](#common-pitfalls-and-the-cure)
+9. [Cheat Sheet Summary](#cheat-sheet-summary)
+10. [Extended Glossary](#extended-glossary)
+
+---
+
+## Terminology Primer (Read First)
+
+- **Aspect Ratio** → Width:height of your frame (e.g., 3:2, 4:3, 16:9, 1:1, 2.39:1). Affects how grids land and where “hot spots” feel right.  
+- **Phi (φ)** → The golden ratio ≈ **1.618**. Its inverse ≈ **0.618**. Use 0.618× and 0.382× to place “golden section” lines.  
+- **Phi Grid** → A grid like thirds, but lines sit at **38.2% / 61.8%** (not 33% / 66%).  
+- **Golden Rectangle** → A rectangle whose sides are in the ratio 1:1.618. Subdividing it generates **whirling squares** and the **golden spiral**.  
+- **Fibonacci Sequence** → 1, 1, 2, 3, 5, 8, 13… Ratios between adjacent numbers tend toward φ; used to approximate golden spirals.  
+- **Root Rectangle (√n)** → A rectangle whose side ratio is √n:1 (e.g., √2 ≈ 1.414). Foundation of **dynamic symmetry**.  
+- **Dynamic Symmetry** → A proportional armature system using diagonals and **reciprocals** inside root rectangles to create placement guides.  
+- **Reciprocal (line)** → In dynamic symmetry, a line drawn **perpendicular** to a diagonal, anchored at key points; intersections are high-value placement nodes.  
+- **Armature of the Rectangle** → The basic diagonal network of a frame (corner-to-corner diagonals + reciprocals), often called **Baroque (↗)** and **Sinister (↘)** thrusts.  
+- **Rabatment** → “Squaring” the rectangle: a construction that drops a perfect square inside a rectangle to create strong compositional sub-frames.  
+- **Hot Spot / Power Point** → Intersections or nodes where attention naturally gathers (e.g., thirds intersections, phi intersections, diagonal–reciprocal crossings).  
+- **Grid Drift** → Misalignment between grid and subject that creates tension—use intentionally or fix it.  
+- **Value Contrast / Edge Sharpness** → (From Core Principles) The **difference in light/dark** and the **crispness of edges**; these still dominate read even when using grids.
+
+> Grids help you **place** things. **Values and edges** still determine whether the placement reads.
+
+---
+
+## How to Use This Guide
+- **Pick one armature** per image. Stacking multiple grids usually muddies intent.  
+- **Use grids to decide placement**, then enforce **value hierarchy** and **edge control** to make the placement work.  
+- **Adjust for aspect ratio**: the same rule feels different in 1:1 vs 2.39:1 frames.  
+- **When in doubt**: thirds for speed, diagonals for energy, spiral for flow, root rectangles for complex multi-figure order.
+
+---
+
+## Choosing a System (Decision Guide)
+
+- **Fast, safe, versatile** → **Rule of Thirds**.  
+- **Subtle, classical spacing** → **Phi Grid** or **Golden Rectangle/Spiral**.  
+- **Dynamic, directional energy** → **Golden Triangle** or **Armature diagonals**.  
+- **Complex scenes / multi-figure layouts** → **Dynamic Symmetry (root rectangles)**.  
+- **Center-driven or rectangle-within-rectangle** → **Rabatment**.  
+- **Precision product/typography** → **Fourths/Fifths** or **Modular/Baseline grids**.  
+- **Square or ultra-wide formats** → See **Format Notes** before choosing.
+
+---
+
+## Systems — Construction, Use, & Fixes
+
+### 4.1 Rule of Thirds
+**What**  
+Divide frame into **3×3**; place subjects on **intersections** or along lines.
+
+**Construction**  
+Lines at **33.33%** and **66.67%** of width/height.
+
+**Where to place**  
+- Focal on a **power point** (intersection).  
+- Horizons on top/bottom third.  
+- Eyes of a portrait near the upper third.
+
+**Use when**  
+Quick balance, general-purpose photography/film/storyboards, beginner-friendly.
+
+**Typical mistakes**  
+Formulaic “grid-following” with no value hierarchy; horizon barely off third (reads sloppy).
+
+**Quick fixes**  
+- Commit: snap horizon **exactly** to a line.  
+- Boost value contrast at the focal; soften elsewhere.  
+- If it looks generic, break the rule on purpose (center or diagonal).
+
+**Context**  
+- *Landscape*: Foreground anchor → horizon on top third.  
+- *UI*: Hero image aligned to thirds; CTA sits near a power point.
+
+**Checklist**  
+- Is the subject on/near a node or line with **clear value emphasis**?
+
+---
+
+### 4.2 Phi Grid (Golden Sections)
+**What**  
+A variant of thirds using the **golden sections** instead of equal thirds.
+
+**Construction**  
+Verticals at **0.382W** and **0.618W**; horizontals at **0.382H** and **0.618H**.
+
+**Where to place**  
+- Focal on a phi intersection.  
+- Secondary masses aligned to opposing phi line for asymmetrical balance.
+
+**Use when**  
+You want subtler spacing and a more “natural” feel than thirds; product, portrait, fine art.
+
+**Typical mistakes**  
+Treating phi like a magic spell; forcing awkward placements to “hit the math.”
+
+**Quick fixes**  
+- If the phi line placement weakens the read, slide toward thirds or center; **values first**.  
+- Keep backgrounds simpler to let subtle offsets shine.
+
+**Context**  
+- *Portrait/Fashion*: Eye near upper phi; shoulder line along lower phi.  
+- *Product*: Key feature sits on a phi node; label aligns to a phi line.
+
+**Checklist**  
+- Does the image still read in grayscale with the focal at/near a phi node?
+
+---
+
+### 4.3 Golden Rectangle & Spiral (Fibonacci / Whirling Squares)
+**What**  
+Use a **golden rectangle** and its **whirling squares** to lay a **logarithmic spiral** that curls into a focal.
+
+**Construction**  
+- Start with a 1:1.618 rectangle.  
+- Subdivide the larger side into a square; repeat to create descending squares.  
+- Draw quarter-circle arcs through square corners to form the spiral.
+
+**Where to place**  
+- Put the **focal point in the tight coil** of the spiral.  
+- Align major edges and curves to the spiral’s arm.
+
+**Use when**  
+You want **guided flow** into a single dominant subject; classic paintings, hero shots, title cards.
+
+**Typical mistakes**  
+Cargo-cult overlays not matching the actual **aspect ratio**; spiral forced against subject gesture.
+
+**Quick fixes**  
+- Mirror/rotate the spiral to match the gesture.  
+- If the flow fights the subject, switch to **Golden Triangle** or **Armature**.
+
+**Context**  
+- *Key Art*: Spiral sweeps from background elements into the face/hands.  
+- *Landscape*: River bends along the spiral arm into a lighthouse.
+
+**Checklist**  
+- Do leading lines **follow** the spiral, and is the focal **inside the coil**, not outside it?
+
+---
+
+### 4.4 Golden Triangle
+**What**  
+A diagonal-based composition: one main **corner-to-corner diagonal**, plus a **perpendicular** line from the opposite corner.
+
+**Construction**  
+- Draw a diagonal from one corner to the opposite.  
+- From one of the remaining corners, draw a line **perpendicular** to that diagonal until it hits it.  
+- You now have two large acute triangles and one smaller right triangle.
+
+**Where to place**  
+- Align strong edges/gestures along the **long diagonal**.  
+- Put the focal at the **intersection** or near the acute corners.
+
+**Use when**  
+Action, dynamic slopes, strong gestural poses, landscapes with hills.
+
+**Typical mistakes**  
+Minor elements parallel to the main diagonal (creates monotony), or everything crammed at one corner.
+
+**Quick fixes**  
+- Use **counter-diagonal** accents (shorter lines crossing the main).  
+- Add negative space opposite the focal to breathe.
+
+**Context**  
+- *Sports*: Runner’s lean aligns with the long diagonal; finish line perpendicular.  
+- *Architecture*: Staircase diagonal + handrail/perpendiculars.
+
+**Checklist**  
+- Does the long diagonal carry energy **into** the focal, not out of frame?
+
+---
+
+### 4.5 Dynamic Symmetry (Root Rectangles √2, √3, √5)
+**What**  
+A proportional system (popularized by Jay Hambidge; modern usage refined by George Bell et al.) using **root rectangles**, diagonals, and **reciprocals** to create **placement nodes** and implied rhythms.
+
+**Construction (√2 example)**  
+- Start with a rectangle of ratio **√2:1 (~1.414:1)**.  
+- Draw both corner-to-corner **diagonals**.  
+- From midpoints/corners, draw **reciprocals**: lines **perpendicular to a diagonal** that land on the opposite side.  
+- Intersections of diagonals/reciprocals become **nodes**.
+
+**Where to place**  
+- Put focal/anchors at **node intersections**.  
+- Run edges/gestures along **diagonals** and **reciprocal** lines.
+
+**Use when**  
+Multi-figure scenes, architecture, product boards, complex balance problems.
+
+**Typical mistakes**  
+Over-constructing (grid worship), ignoring **value/edge hierarchy**, using the wrong **root** for your aspect.
+
+**Quick fixes**  
+- Prune: keep only the **few lines** that actually support your subject.  
+- Switch root to better fit your frame (**√2** suits ISO paper 1:√2; **√3/√5** for other wide/tall feels).
+
+**Context**  
+- *Editorial spread*: Photos and text blocks snap to node grid with rhythm.  
+- *Figurative*: Figure mass on one node; counter-mass (prop/light) on a reciprocal node.
+
+**Checklist**  
+- Are you using **line-of-force nodes** to place subjects, **then** enforcing values/edges?
+
+---
+
+### 4.6 Armature of the Rectangle (Baroque/Sinister Diagonals + Reciprocals)
+**What**  
+The fundamental diagonal scaffolding of any rectangle: **Baroque** (↗) and **Sinister** (↘) diagonals plus **reciprocals** (perpendiculars to those diagonals).
+
+**Construction**  
+- Draw both corner-to-corner diagonals.  
+- From each corner, drop **reciprocal** lines at right angles to the diagonal.  
+- The mesh yields natural **power nodes**.
+
+**Where to place**  
+- Align primary thrust to either Baroque ↗ or Sinister ↘.  
+- Place focal near **diagonal–reciprocal intersections**.
+
+**Use when**  
+You want **directional energy** with a light grid; quick alternative to full dynamic symmetry.
+
+**Typical mistakes**  
+Fighting diagonals with horizontal/vertical subject lines; crowding the intersection with clutter.
+
+**Quick fixes**  
+- Rotate the subject/props to echo the chosen diagonal.  
+- Simplify around the focal node; let the diagonal breathe.
+
+**Context**  
+- *Cinematic frame*: Character stride on Baroque line; light beam reciprocal.  
+- *Poster*: Title block on a reciprocal; actor’s gaze along the diagonal.
+
+**Checklist**  
+- Is one diagonal clearly dominant, and do supporting elements **echo** it?
+
+---
+
+### 4.7 Rabatment of the Rectangle
+**What**  
+“Squaring” inside the frame to create **sub-frames** that feel naturally stable.
+
+**Construction**  
+- In a horizontal rectangle, swing a square from left or right side across the height (same height as the frame).  
+- The leftover strip is a secondary zone. Repeat on both sides to get symmetrical squares.
+
+**Where to place**  
+- Focal **inside the square**; secondary elements in the remainder.  
+- Vertical compositions: square from top/bottom.
+
+**Use when**  
+Poster layouts, portraits, still life, when a centered-but-not-really centered feel is desired.
+
+**Typical mistakes**  
+Placing the focal straddling the square boundary (feels indecisive).
+
+**Quick fixes**  
+- Nudge focal fully **into** the square or clearly into the remainder strip.  
+- Use value contrast to strengthen the square’s dominance.
+
+**Context**  
+- *Poster/UI hero*: Main image in the square; tagline in the leftover strip.  
+- *Portrait*: Head/torso in square; background texture in strip.
+
+**Checklist**  
+- Does the square hold the subject cleanly with **clear separation** from the strip?
+
+---
+
+### 4.8 Grids of Fourths & Fifths; Rule of Odds
+**What**  
+Equal subdivisions finer than thirds. **Fourths** (25/50/75%) and **Fifths** (20/40/60/80%) give tighter control.
+
+**Construction**  
+Divide width/height by 4 or 5; draw guides.
+
+**Where to place**  
+- Product seams, typography baselines, architectural rhythms.  
+- Use **Rule of Odds** (3, 5, 7 items) for natural groupings along these lines.
+
+**Use when**  
+You need precision spacing; UI/print grids; still life/product.
+
+**Typical mistakes**  
+Even, lifeless spacing without a dominant beat.
+
+**Quick fixes**  
+- Promote one line as dominant; vary spacing/size to create **rhythm**.  
+- Keep focal on a **dominant line**; support with weaker lines.
+
+**Context**  
+- *Catalog/Product*: Hero product on 40% line; accessories on 60/80%.  
+- *UI*: Baseline grid in fourths; modules snap cleanly.
+
+**Checklist**  
+- Is there a **dominant** line/beat, or is everything evenly meh?
+
+---
+
+### 4.9 Format Notes: Square, Classic, Widescreen, Panoramic
+**Square (1:1)**  
+- Symmetry and **central** designs thrive; diagonals must work harder.  
+- Prefer **Rabatment** or **Armature**; thirds feel cramped.
+
+**3:2 (35mm), 4:3 (micro four-thirds)**  
+- Thirds and phi grid feel natural; diagonals read well.  
+- Dynamic symmetry: **√5** often suits 3:2; **√3** suits 4:3.
+
+**16:9 (widescreen)**  
+- Great for **Golden Triangle** and **Armature**; horizon management crucial.  
+- Spiral can feel stretched—use only if flow truly matches.
+
+**2.39:1 (cinemascope/pano)**  
+- Embrace **diagonals** and **layered depth**; thirds become very far apart.  
+- Use **multiple anchors** along a diagonal; Rabatment can split center vs wings.
+
+**Checklist**  
+- Did you choose a grid that **fits the aspect** rather than force-fitting the subject?
+
+---
+
+### 4.10 Modular & Baseline Grids (Graphic/UI)
+**What**  
+Column and baseline systems for typography and UI components.
+
+**Construction**  
+- Columns (e.g., 12-col grid), gutters, margins; **baseline grid** (e.g., 8px rhythm).  
+- Modules = column × row units.
+
+**Where to place**  
+- Headlines snap to columns; body text to baselines; CTAs align to module edges.
+
+**Use when**  
+Designing layouts, dashboards, multi-screen systems; ensuring **consistency** and scannability.
+
+**Typical mistakes**  
+Centering everything in columns but ignoring **visual hierarchy** (no primary).
+
+**Quick fixes**  
+- Assign a **dominant column span** to the hero module; keep others subordinate.  
+- Preserve baseline rhythm; avoid orphaned lines.
+
+**Checklist**  
+- Do modules align while still giving the hero **clear dominance**?
+
+---
+
+## Diagnostics & Stress Tests
+- **Grid Fit Check** → Do key edges/focals **actually** coincide with lines/nodes?  
+- **Value Override Test** → Toggle grayscale: does the focal still win? If not, fix values.  
+- **Edge Audit** → Are the **sharpest edges** clustered near a node/line (not random)?  
+- **Exit Vectors** → Do diagonals/lines lead **into** the frame and focal, not out?  
+- **Aspect Compliance** → Is the chosen system appropriate for the frame ratio?
+
+---
+
+## Workflow & Setup (Overlays, Apps, Cameras)
+- **Photoshop/Krita**: Save templates with **thirds, phi, armature**, and **dynamic symmetry** overlays on separate layers; assign toggles.  
+- **Procreate**: Actions → Canvas → Drawing Guide; import PNG overlays (spiral/armature).  
+- **Affinity/Illustrator/InDesign**: Use column/baseline grids; make **phi guides** via percentage guides (38.2%, 61.8%).  
+- **Cameras**: Enable **grid** and **level**; some bodies offer rule-of-thirds/diagonal grids.  
+- **Naming overlays**: `thirds.png`, `phi_grid.png`, `spiral_whirling.png`, `armature.png`, `root2_dynamic.png`, `rabatment.png`.
+
+---
+
+## Exercises That Build Skill Fast
+1. **12-Overlay Drill** → Take one scene; compose 3 versions each with **thirds**, **phi**, **triangle**, **armature**. Compare reads in grayscale.  
+2. **Spiral Match** → Sketch a subject gesture; rotate/mirror the spiral until it truly matches; place focal in the coil.  
+3. **Diagonal Day** → Shoot/paint five frames driven by **Baroque ↗** and five by **Sinister ↘**. Study mood change.  
+4. **Root Node Placement** → Build a **√2** and a **√3** grid; place figures/props only on **node intersections**.  
+5. **Rabatment Portraits** → Place the head/torso inside the square; use the leftover strip for story props.  
+6. **Fourth/Fifth Precision** → Lay a product board on **fifths**; create one **dominant** line and two minors.  
+7. **Format Switch** → Reframe a piece from 3:2 to 1:1 and 2.39:1; pick the best-fitting grid each time.
+
+---
+
+## Common Pitfalls (and the Cure)
+- **Grid Worship** → Pretty lines, bad read. **Cure**: values/edges decide legibility; grid only helps placement.  
+- **Wrong Grid for Aspect** → Spiral in 1:1 looks cramped. **Cure**: choose per **format**.  
+- **Over-Construction** → 30 lines, zero focus. **Cure**: keep 3–5 operative lines; hide the rest.  
+- **Parallel Monotony** → Everything follows the same diagonal. **Cure**: add **reciprocals** and counters.  
+- **Sloppy “Almost”** → Horizon almost on a line. **Cure**: snap or break decisively.  
+- **Ignoring Flow** → Focal on a node but lines point out. **Cure**: bend vectors **inward**.
+
+---
+
+## Cheat Sheet Summary
+- **Thirds for speed**, **phi** for subtlety, **spiral** for flow, **triangles/armature** for energy, **dynamic symmetry** for complexity, **rabatment** for stable sub-frames.  
+- Choose per **aspect ratio**; don’t force.  
+- Use grids to **place**, then win with **value contrast** and **edge sharpness**.  
+- Limit active lines; guard nodes from clutter; keep exits blocked.
+
+---
+
+## Extended Glossary
+
+- **Armature** → The core diagonal scaffold (diagonals + reciprocals) of a rectangle.  
+- **Baroque Diagonal** → The rising ↗ diagonal (bottom-left → top-right); often feels uplifting/forward.  
+- **Sinister Diagonal** → The falling ↘ diagonal (top-left → bottom-right); often feels descending/foreboding.  
+- **Baseline Grid (Design)** → Evenly spaced horizontal guides (e.g., 8px) that text lines snap to.  
+- **Geometric Center vs Visual Center** → The exact center vs where a centered subject *feels* centered (usually a touch above).  
+- **Hot Spot / Power Point** → Intersection of guides (thirds, phi, diagonal–reciprocal) with high placement value.  
+- **Rabatment** → Constructing an internal square inside a rectangle to create dominant sub-frames.  
+- **Reciprocal (Dynamic Symmetry)** → A line dropped at a right angle to a diagonal from a key point; crossings build nodes.  
+- **Root 2 / Root 3 / Root 5** → Rectangles with side ratios √2 (~1.414), √3 (~1.732), √5 (~2.236); each generates different internal rhythms.  
+- **Whirling Squares** → The nested squares inside a golden rectangle used to trace a golden spiral.  
+- **Grid Drift** → Intentional or accidental slight misalignment that creates tension.  
+- **Node** → Intersection point of significant armature lines used for placement.  
+- **Value Contrast** → Difference in light/dark between adjacent shapes; strongest driver of first read.  
+- **Edge Sharpness** → Speed of transition at edges; sharp draws attention, soft recedes.
+
+---

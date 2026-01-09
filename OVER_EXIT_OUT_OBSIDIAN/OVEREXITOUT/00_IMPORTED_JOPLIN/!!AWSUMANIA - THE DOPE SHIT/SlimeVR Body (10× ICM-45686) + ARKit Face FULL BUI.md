@@ -1,0 +1,314 @@
+---
+title: SlimeVR Body (10× ICM-45686) + ARKit Face FULL BUILD GUIDE
+updated: 2025-10-06 19:58:10Z
+created: 2025-10-06 18:44:52Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# 🧭 Full Build Guide — SlimeVR Body (10× ICM-45686) + ARKit Face
+
+> **Scope:** Complete **hardware + firmware + network + workflow** for a **10-node SlimeVR** suit using **ESP32-S3-DevKitC-1** and **ICM-45686** IMUs, plus **ARKit facial capture** (iPhone TrueDepth).
+> **Position tracking:** none (IMU rotations only). **Face:** ARKit blendshapes.
+> **Tone:** straight facts; no mystery meat.
+
+---
+
+## Table of Contents
+
+1. [System Overview](#system-overview)
+2. [What Each Part Owns](#what-each-part-owns)
+3. [Bill of Materials](#bill-of-materials)
+
+   * 3.1 [Per-Node BOM (x1)](#per-node-bom-x1)
+   * 3.2 [Fleet BOM (x10)](#fleet-bom-x10)
+   * 3.3 [Tools & Printables](#tools--printables)
+4. [Electronics & Wiring](#electronics--wiring)
+
+   * 4.1 [Power Topology](#power-topology)
+   * 4.2 [ESP32-S3 ⇄ ICM-45686 (SPI)](#esp32s3--icm45686-spi)
+   * 4.3 [ESP32-S3 ⇄ ICM-45686 (I²C alternative)](#esp32s3--icm45686-i²c-alternative)
+5. [Firmware & Config](#firmware--config)
+6. [Networking (must-do)](#networking-mustdo)
+7. [Enclosures & Mounting](#enclosures--mounting)
+8. [ARKit Face Setup](#arkit-face-setup)
+9. [Session Workflow](#session-workflow)
+10. [Troubleshooting](#troubleshooting)
+11. [Maintenance & Safety](#maintenance--safety)
+12. [Appendix A — Cost Reality](#appendix-a--cost-reality)
+13. [Appendix B — Checklists](#appendix-b--checklists)
+
+---
+
+## 1) System Overview
+
+```mermaid
+flowchart LR
+  subgraph Wearer
+    N[10× IMU Nodes\nESP32-S3 + ICM-45686]
+    P[iPhone TrueDepth\nARKit Face]
+  end
+
+  N -- UDP 2.4 GHz --> S[SlimeVR Server (PC)]
+  P -- 5 GHz/Wi-Fi --> F[Face Receiver (Live Link/OSC)]
+
+  S -- Body quats --> E[Engine (Unreal/Unity/Blender)]
+  F -- Blendshapes --> E
+  E --> R[Character Rig\n(Retarget + Facial Rig)]
+```
+
+* **Body:** IMUs stream **quaternions** at 100–200 Hz → SlimeVR Server → Engine.
+* **Face:** iPhone streams **ARKit blendshapes** (and *optional* head pose) → Engine.
+
+---
+
+## 2) What Each Part Owns
+
+| Subsystem         | Owns                        | Notes                                          |
+| ----------------- | --------------------------- | ---------------------------------------------- |
+| **SlimeVR nodes** | **All body bone rotations** | Root/feet position are IK; expect some skate.  |
+| **ARKit**         | **Facial blendshapes**      | Disable ARKit head pose if it fights head IMU. |
+| **Engine**        | **IK, retarget, export**    | One rig. Keep bone names/axes consistent.      |
+
+**Head rule:** head **IMU** dictates head rotation. **ARKit** only drives face shapes (local offsets).
+
+---
+
+## 3) Bill of Materials
+
+### 3.1 Per-Node BOM (x1)
+
+| Category    | Item                                          | Notes                                                                                   |
+| ----------- | --------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **MCU**     | **ESP32-S3-DevKitC-1-N8R2**                   | Native USB, 8 MB flash, 2 MB PSRAM.                                                     |
+| **IMU**     | **ICM-45686** breakout                        | Get SPI-capable board; exposes VCC, GND, SCK, MOSI, MISO, CS, INT (or SCL/SDA for I²C). |
+| **Battery** | LiPo **3.7 V 750–1000 mAh** (JST-PH 2.0)      | 6–10 h typical.                                                                         |
+| **Charger** | **TP4056** Li-ion charger **with protection** | IN via USB; OUT+ / OUT- to boost.                                                       |
+| **Boost**   | **MT3608** 5.0 V step-up                      | Trim to **5.0 V** before connecting.                                                    |
+| **Switch**  | Mini slide switch (≥500 mA @ 5 V)             | Inline between boost and DevKit **5V**.                                                 |
+| **Wiring**  | 26–28 AWG silicone; JST-PH pigtails           | Battery & power harness.                                                                |
+| **Mount**   | M2 standoffs + screws                         | Rigid mounting to case/plate.                                                           |
+| **Case**    | 3D-printed PETG/ABS                           | Mark **UP/FWD** on lid.                                                                 |
+| **Cap**     | **0.1 µF** ceramic at IMU VCC/GND             | Decoupling for power cleanliness.                                                       |
+
+> **Alt power (prototype):** USB power bank → DevKit USB-C. Bulky, but fast to bring up.
+
+### 3.2 Fleet BOM (x10)
+
+* **ESP32-S3-DevKitC-1-N8R2** ×10
+* **ICM-45686** breakout ×10
+* **LiPo 750–1000 mAh** ×10 + **spares 2–4**
+* **TP4056 (with protection)** ×10
+* **MT3608** ×10
+* Mini slide switch ×10
+* M2 standoffs/screws kit (assortment)
+* PETG/ABS filament (cases)
+* **Router/AP** with solid 2.4 GHz + 5 GHz (see Networking)
+* Multi-port USB-C charger (6–12 ports) + short cables
+* Labels (HIPS, CHEST, HEAD, etc.), storage bins
+
+### 3.3 Tools & Printables
+
+* Fine-tip soldering iron, 63/37 solder, flux, heat-shrink
+* Precision drivers, flush cutters, tweezers
+* Perfboard **or** printed internal plate for strain relief
+* SlimeVR tracker case STLs (or your own)
+
+---
+
+## 4) Electronics & Wiring
+
+### 4.1 Power Topology
+
+```text
+[LiPo 3.7 V]
+   │
+   └─> [TP4056 Charger (with protection)]
+           OUT+ / OUT−
+              │
+              └─> [MT3608 Boost 5.0 V] ── [Slide SW] ──> ESP32 5V pin
+                                        GND ───────────> ESP32 GND
+ESP32 3V3  ─────────> IMU VCC
+ESP32 GND  ─────────> IMU GND
+```
+
+* **Do NOT** feed raw LiPo into 5V.
+* **Do NOT** power via USB **and** external 5 V at the same time (unless you add diode OR / ideal-diode mux).
+* Keep boost module **physically away** from the IMU to minimize switching noise coupling.
+
+### 4.2 ESP32-S3 ⇄ ICM-45686 (SPI)
+
+| ICM-45686 | ESP32-S3 (example) | Note          |
+| --------- | ------------------ | ------------- |
+| VCC       | 3V3                | 3.3 V only    |
+| GND       | GND                | Common ground |
+| **SCK**   | **GPIO 18**        | SPI clock     |
+| **MOSI**  | **GPIO 11**        | Master out    |
+| **MISO**  | **GPIO 13**        | Master in     |
+| **CS**    | **GPIO 10**        | Chip select   |
+| INT       | GPIO 9 (optional)  | Data-ready    |
+
+> SPI = **lower jitter**, better timing at 100–200 Hz.
+
+### 4.3 ESP32-S3 ⇄ ICM-45686 (I²C alternative)
+
+| ICM-45686 | ESP32-S3          | Note      |
+| --------- | ----------------- | --------- |
+| VCC       | 3V3               |           |
+| GND       | GND               |           |
+| **SCL**   | **GPIO 22**       | I²C clock |
+| **SDA**   | **GPIO 21**       | I²C data  |
+| INT       | GPIO 4 (optional) |           |
+
+> Keep I²C wires **<10 cm**. Use **4.7 kΩ pull-ups** if the breakout doesn’t include them.
+
+---
+
+## 5) Firmware & Config
+
+* **Firmware:** SlimeVR Tracker Firmware **0.7.x+** (or current).
+* **Target board:** ESP32-S3 (Arduino/PlatformIO).
+* **IMU type:** **ICM-45686**.
+* **Fusion:** **VQF** (gyro+accel). **Magnetometer OFF** indoors.
+* **Rate:** **100–200 Hz** output quaternions.
+* **Transport:** **UDP over 2.4 GHz Wi-Fi**.
+* **Node IDs:** Hard-code names matching mount (HIPS, CHEST, HEAD, UARM_L, …).
+
+Example PlatformIO (works for many DevKitC-1 variants):
+
+```ini
+[env:esp32s3]
+platform = espressif32
+board = esp32-s3-devkitc-1
+framework = arduino
+board_build.flash_size = 8MB
+board_build.psram = enabled
+build_flags =
+  -D ARDUINO_USB_CDC_ON_BOOT=1
+monitor_speed = 115200
+upload_speed = 921600
+```
+
+---
+
+## 6) Networking (must-do)
+
+* **ESP32 = 2.4 GHz only.**
+* Create **two SSIDs** on the same LAN/VLAN:
+
+  * `suit-2g` → **2.4 GHz only** (trackers)
+  * `studio-5g` → **5 GHz only** (iPhone ARKit)
+* **PC on Ethernet** to the same router/AP.
+
+**2.4 GHz settings (trackers):**
+
+* Channel **1/6/11** (pick quietest).
+* **20 MHz** width.
+* WPA2-PSK (no WPA3-only).
+* Disable band-steering/“Smart Connect”.
+
+**5 GHz (phone):**
+
+* Non-DFS channel (36/40/44/48) to avoid radar channel hops.
+* 80 MHz width is fine.
+
+Optional: give PC and nodes **DHCP reservations**.
+
+---
+
+## 7) Enclosures & Mounting
+
+* **Rigid** case. No wobble.
+* **Mark axes** on lids (**UP** arrow, **FWD** arrow).
+* **M2 standoffs** in case; don’t let boards touch plastic ribs or screws.
+* **Cable strain relief** for JST and USB-C.
+* **Battery pocket** or strap inside case; insulate the LiPo.
+* **Node placement (10):** HIPS, LOWER_SPINE, CHEST, HEAD, UARM_L/R, FOREARM_L/R, FOOT_L/R.
+
+---
+
+## 8) ARKit Face Setup
+
+* **Device:** any FaceID iPhone (X or newer).
+* **App:** Live Link Face (Unreal) or an OSC/UDP face streamer (Unity/Blender).
+* **Network:** join `studio-5g`.
+* **Engine mapping:**
+
+  * Use **head IMU** for head rotation.
+  * Apply ARKit **blendshapes** to facial rig (disable ARKit head pose if it double-drives).
+
+---
+
+## 9) Session Workflow
+
+1. **Power on; warm up 60–120 s.**
+2. Launch **SlimeVR Server**; confirm 10 trackers online.
+3. Strap nodes (same spots, same orientation).
+4. **T-pose alignment** in SlimeVR; verify elbow/knee bend directions.
+5. Start ARKit app; confirm blendshapes; ensure head pose is **off** (if conflicting).
+6. **Walk/arm-swing test**; let **stillness rebias** settle when idle.
+7. Record (raw optional) + final animation in engine.
+8. Between takes: short idle lets rebias tame yaw drift. Long breaks: power cycle.
+
+---
+
+## 10) Troubleshooting
+
+| Symptom            | Cause                     | Fix                                                           |
+| ------------------ | ------------------------- | ------------------------------------------------------------- |
+| Slow yaw drift     | Gyro bias, mag off        | Let stillness rebias; keep takes sane; power-cycle if needed. |
+| Stutter/lag        | Wi-Fi congestion          | Lock 2.4 GHz to 1/6/11 @ 20 MHz; wire PC; drop to 100 Hz.     |
+| One limb reversed  | Wrong mount orientation   | Re-do mounting; fix axis mapping; mark lids clearly.          |
+| Noisy/jumpy        | Loose strap / power noise | Tighten, shorten leads, add 0.1 µF at IMU, move boost away.   |
+| Head fights face   | Double-driven             | IMU owns head rot; ARKit shapes only.                         |
+| Random disconnects | Weak router / bad channel | New AP or different channel; give DHCP reservations.          |
+
+---
+
+## 11) Maintenance & Safety
+
+* **LiPo:** replace yearly under heavy use; store ~50% if shelved weeks.
+* Inspect straps, JSTs, and case screws **weekly**.
+* Keep IMUs **away from magnets** (headphones, buck inductors).
+* Don’t crush or crease LiPo; retire any pack that swells or sags.
+
+---
+
+## 12) Appendix A — Cost Reality
+
+**Per node:** ~$45–$70 in parts (DevKitC-1, ICM-45686, LiPo + power path, case).
+**10 nodes:** ~$450–$700 for nodes + ~$90–$180 shared gear (router/AP, charger, labels) → **~$540–$880 total** (you already own PC/iPhone).
+
+---
+
+## 13) Appendix B — Checklists
+
+**Build (per node)**
+
+* [ ] ESP32-S3 mounted on M2 standoffs
+* [ ] ICM-45686 wired (SPI preferred) + 0.1 µF cap
+* [ ] LiPo → TP4056 → MT3608 (5.0 V set) → switch → ESP32 5V
+* [ ] ESP32 3V3 → IMU VCC; common GND
+* [ ] Firmware flashed; ID set; 100–200 Hz; VQF fusion
+* [ ] Case closed; UP/FWD arrows visible
+
+**Session**
+
+* [ ] Trackers charged; router on; PC wired Ethernet
+* [ ] Nodes on `suit-2g`; phone on `studio-5g`
+* [ ] SlimeVR Server sees 10 nodes
+* [ ] T-pose alignment ok
+* [ ] ARKit blendshapes streaming; head pose not fighting
+* [ ] Quick walk test; stillness rebias confirmed
+* [ ] Record
+
+---
+
+### Bottom Line
+
+* Use **ICM-45686** + **ESP32-S3**.
+* **SPI**, short leads, rigid cases.
+* **Dedicated 2.4 GHz** for trackers, **5 GHz** for iPhone, **Ethernet** for PC.
+* **Mag OFF** indoors; rely on **VQF + stillness rebias**.
+* Keep it consistent and you’ll get **clean, portable body rotations** and **great facial capture** with minimal drama.

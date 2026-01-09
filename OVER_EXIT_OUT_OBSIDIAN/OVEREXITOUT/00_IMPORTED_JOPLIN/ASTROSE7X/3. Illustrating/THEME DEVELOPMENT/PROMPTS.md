@@ -1,0 +1,78 @@
+---
+title: PROMPTS
+updated: 2025-06-26 10:19:01Z
+created: 2025-06-15 19:01:37Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+> what 2000s media echoes Inertia as the overall story problem. anime, sci-fi, thriller, etc. explain
+
+> using these influences, create and explain a multitude of possible Overall Story problems that best fit the Dramatica format as well as the vibe of ASTRO7EX and the insipration
+
+
+> ok lets syntehsize it all into several sentences that illustrate how inertia is the source of the Overall Story's Problems
+
+
+ 
+> ok i need you to reference the data below as well as the next post to pick up where we were. Remember what astro7ex is and that we are developing in dramatica. we are going to next illustrate the Concerns. below are two reports which should catch you up with everything and with that you can reference your memory you already have
+
+
+ > can you answer the following question fully "What is the Optionlock that brings ASTRO7EX to a climax?" its to enter into the Dramatica Story Limit section
+
+
+
+> ok please create a report of what we have accomplished with CONCERNS. elaborate on OS Concern, MC Concern, IC Concern, M/I Concern
+
+> OK, now we are moving on to the next step in Theme Development in the Dramatica methodology. That step is Main vs Impact Story Theme. Please familiarize yourself with this step since you are an expert, and provide a review report for me to prepare for what is to come
+
+
+---
+
+
+> Create a comprehensive report for the following Main vs. Impact Story Plot Progression development prompt. **follow the structure and language style of the “Understanding” report template** Remember to be thorough and use methods that facilitate easy understanding, such as bolding, italicizing, formatting, and bulleting. In addition to a summary section for each component, which provides an overview of the section using several sentences. Also, remember the Table of Contents. MOST IMPORTANTLY, WE ARE USING DRAMATICA and ASTRO7EX 
+>
+> Main vs. Impact Story Plot Signpost 4
+> IMPORTANT: THIS ENTIRE REPORT IS the M/I Signpost  4 - this needs to be ANSWERED SPECIFICALLY DUDE
+> Describe how the Main (Vivian) vs Impact Story (MODS) centers around issues regarding 'Changing One's Nature:'
+
+> Explanation:  The relationship between the Main Character, Vivian, and Impact Characters, MODS, will climax and conclude  with an exploration of Changing One's Nature listed here as M/I Signpost 4. 
+>
+>
+> Create a comprehensive report for the following M/I Theme Development prompt. **follow the structure and language style of the “Understanding” report template** Remember to be thorough and use methods that facilitate easy understanding, such as bolding, italicizing, formatting, and bulleting. In addition to a summary section for each component, which provides an overview of the section using several sentences. Also, remember the Table of Contents. MOST IMPORTANTLY, WE ARE USING DRAMATICA and ASTRO7EX 
+>
+> Illustrate the Main (Vivian) Story vs. Impact Character (MODS) Story's Issue
+> IMPORTANT: THIS ENTIRE REPORT IS the  *M/I Issue* - this needs to be ANSWERED SPECIFICALLY DUDE
+> Describe how thematic issues regarding *Sense of Self* affect the relationship between Vivian and MODS.
+
+> How do you want the audience to feel about *Sense of Self*?
+> On an 11 point spectrum scale ranging from on the left most side side *Advantageous*, in the middle, Neutral, and on the right most side, *Disadvantageous* 
+ 
+
+> Explanation:  The Main vs Impact Story Issue is the value standard most centrally applied to and called into question by the relationship between the Main and Impact Characters. 
+>
+>
+> THEORY: Pitting the Main Character's Thematic Issue directly against the Impact Character's Thematic Issue is much too binary to represent real life. 
+> Definition:   *Sense of Self*: one's perception of oneself
+> Dynamic Pair:  *State of Being*: one's true nature 
+> 
+> Context: *Sense of Self* as the *Issue*-- The thematic focus of the main vs. impact story explores the meaning of Sense of Self. 
+> ----
+>
+> - Harold Bloom's Themes in American Literature 
+> - Joseph Campbell's studies of myth
+> - Early 2000s sci-fi anime archetypes and tropes
+> 
+>- Robert McKee
+	- Story
+	- Character
+>
+> - Narrative Astrology 
+	- Narrative Natal Chart
+	- Transits 
+	- Progressions
+
+
+
+> REMEMBER: *That the mods are split up into different personalities. Please fill out accordingly*

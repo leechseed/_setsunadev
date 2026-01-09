@@ -1,0 +1,277 @@
+---
+title: MCDP 1-3 — Tactics (Knowledgebase Summary)
+updated: 2025-12-18 18:51:50Z
+created: 2025-12-18 18:51:49Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# MCDP 1-3 — Tactics (Knowledgebase Summary)
+
+## Abstract
+MCDP 1-3, *Tactics*, establishes the Marine Corps’ philosophy for winning engagements and battles through decisive action under conditions of uncertainty, friction, and violence. It argues that tactical success derives from the creative integration of maneuver warfare concepts with disciplined technical proficiency. The publication defines how Marines achieve decisions, gain advantage, maintain tempo, adapt, cooperate, and exploit success in combat. It demands leaders at all levels develop military judgment, think probabilistically, and act boldly to translate tactical action into operational and strategic success.
+
+## TL;DR
+- Tactics is the art and science of winning engagements and battles through decisive action.
+- Tactical success depends on military judgment rather than fixed rules or checklists.
+- Decisiveness, not incremental gain, is the central objective of tactical action.
+- Advantage is created by leverage, not by attrition or symmetrical contests.
+- Speed and tempo are relative and must be sustained to dislocate the enemy.
+- Adaptation is essential in a chaotic, changing combat environment.
+- Cooperation and discipline enable decentralized action and initiative.
+- Exploiting success is required to turn advantage into decisive victory.
+- Tactical excellence is the responsibility of leaders at every level.
+
+---
+
+## Table of Contents
+1. [Abstract](#abstract)
+2. [TL;DR](#tldr)
+3. [Section-by-Section Breakdown](#section-by-section-breakdown)
+   - [Foreword / Preface](#foreword--preface)
+   - [Chapter 1 — Understanding Tactics](#chapter-1--understanding-tactics)
+     - [An Art and a Science](#an-art-and-a-science)
+     - [The Environment](#the-environment)
+     - [How We View Combat and How We Fight](#how-we-view-combat-and-how-we-fight)
+     - [Marine Corps Tactics](#marine-corps-tactics)
+   - [Chapter 2 — Achieving a Decision](#chapter-2--achieving-a-decision)
+     - [Understanding Decisiveness](#understanding-decisiveness)
+     - [Military Judgment](#military-judgment)
+     - [Acting Decisively](#acting-decisively)
+   - [Chapter 3 — Gaining Advantage](#chapter-3--gaining-advantage)
+     - [Combined Arms](#combined-arms)
+     - [Maneuver](#maneuver)
+     - [Exploiting the Environment](#exploiting-the-environment)
+     - [Surprise](#surprise)
+     - [Trapping the Enemy](#trapping-the-enemy)
+     - [Asymmetry](#asymmetry)
+   - [Chapter 4 — Being Faster](#chapter-4--being-faster)
+     - [Speed and Tempo](#speed-and-tempo)
+     - [Relative Speed](#relative-speed)
+     - [Continuing Speed](#continuing-speed)
+   - [Chapter 5 — Adapting](#chapter-5--adapting)
+     - [Anticipation and Improvisation](#anticipation-and-improvisation)
+     - [Flexible Plans and Decentralization](#flexible-plans-and-decentralization)
+   - [Chapter 6 — Cooperating](#chapter-6--cooperating)
+     - [Control and Cooperation](#control-and-cooperation)
+     - [Discipline](#discipline)
+   - [Chapter 7 — Exploiting Success and Finishing](#chapter-7--exploiting-success-and-finishing)
+     - [Building on Advantage](#building-on-advantage)
+     - [Finishing the Enemy](#finishing-the-enemy)
+   - [Chapter 8 — Making It Happen](#chapter-8--making-it-happen)
+     - [Doctrine, Education, and Training](#doctrine-education-and-training)
+4. [Mental Models](#mental-models)
+5. [Argument Map](#argument-map)
+6. [Key Concepts & Definitions](#key-concepts--definitions)
+
+---
+
+## Section-by-Section Breakdown
+
+### Foreword / Preface
+- Tactical success depends on focusing effort toward a decisive end.
+- Excellence in technique alone is insufficient without judgment and integration.
+- The publication guides professional development for leaders at all levels.
+
+### Chapter 1 — Understanding Tactics
+This chapter defines tactics and frames combat as a complex, uncertain, and human endeavor requiring judgment and creativity.
+
+#### An Art and a Science
+- Tactics combines creative application of force with technical proficiency.
+- Mastery of basic skills enables effective tactical artistry.
+- Tactics links strategic and operational aims to battlefield action.
+
+#### The Environment
+- Combat is chaotic, violent, and unpredictable.
+- Outcomes can only be anticipated probabilistically.
+- Technology alters but does not remove uncertainty.
+
+#### How We View Combat and How We Fight
+- Deterministic views lead to rigidity and overcentralization.
+- Probabilistic views emphasize initiative and decentralization.
+- Marine Corps tactics are based on accepting uncertainty.
+
+#### Marine Corps Tactics
+- Tactical concepts must be combined for cumulative effect.
+- No concept is fixed or universally dominant.
+- Tactical thinking is a developed professional skill.
+
+### Chapter 2 — Achieving a Decision
+This chapter establishes decisiveness as the purpose of tactics and explains how leaders create decisive outcomes.
+
+#### Understanding Decisiveness
+- Indecisive battles waste effort and lives.
+- Decisive action must contribute to larger success.
+- Decisiveness is sought only when conditions favor success.
+
+#### Military Judgment
+- Judgment enables identification of decisive action.
+- Situational understanding is central to command.
+- Pattern recognition under uncertainty is critical.
+
+#### Acting Decisively
+- Critical vulnerabilities must be identified and attacked.
+- Shaping the operating area enables decisive action.
+- Main effort focuses combat power.
+- Boldness and ruthlessness exploit advantage.
+
+### Chapter 3 — Gaining Advantage
+This chapter explains how leverage is created to defeat the enemy.
+
+#### Combined Arms
+- Combined arms impose dilemmas on the enemy.
+- Arms complement strengths and offset weaknesses.
+- Integration is essential at all levels.
+
+#### Maneuver
+- Maneuver seeks advantage in space and time.
+- Attrition-based contests are avoided.
+- Maneuver reduces cost and increases effectiveness.
+
+#### Exploiting the Environment
+- Terrain, weather, and visibility shape combat.
+- Prepared forces can turn environmental constraints into advantage.
+- Night and adverse conditions can create tempo and shock.
+
+#### Surprise
+- Surprise multiplies combat power.
+- Deception, stealth, and ambiguity generate surprise.
+- Ambiguity complicates enemy decisionmaking.
+
+#### Trapping the Enemy
+- Trapping prevents enemy recovery and counteraction.
+- Decisive battles isolate and destroy enemy capability.
+- Initiative is maintained through pressure.
+
+#### Asymmetry
+- Strength is applied against enemy weakness.
+- Dissimilar methods create imbalance.
+- Fighting on favorable terms reduces risk.
+
+### Chapter 4 — Being Faster
+This chapter emphasizes tempo as a decisive factor in combat.
+
+#### Speed and Tempo
+- Speed is the ability to act effectively over time.
+- Tempo disrupts enemy decision cycles.
+- Speed includes thought, decision, and action.
+
+#### Relative Speed
+- Advantage comes from being faster than the enemy.
+- Relative speed compounds initiative.
+- Slowing the enemy increases relative advantage.
+
+#### Continuing Speed
+- Speed must be sustained throughout operations.
+- Momentum is preserved through exploitation.
+- Pauses risk loss of initiative.
+
+### Chapter 5 — Adapting
+This chapter addresses responsiveness to change.
+
+#### Anticipation and Improvisation
+- Anticipation reduces surprise.
+- Improvisation exploits unforeseen opportunities.
+- Learning occurs during action.
+
+#### Flexible Plans and Decentralization
+- Plans provide direction, not scripts.
+- Decentralization enables rapid adaptation.
+- Initiative is encouraged within commander’s intent.
+
+### Chapter 6 — Cooperating
+This chapter focuses on coordination among forces.
+
+#### Control and Cooperation
+- Control enables cooperation, not micromanagement.
+- Mutual understanding aligns effort.
+- Cooperation multiplies combat effectiveness.
+
+#### Discipline
+- Discipline underpins decentralized action.
+- Shared standards enable trust.
+- Discipline enables freedom of action.
+
+### Chapter 7 — Exploiting Success and Finishing
+This chapter explains how advantage is converted into victory.
+
+#### Building on Advantage
+- Success must be rapidly exploited.
+- Consolidation prevents enemy recovery.
+- Reserves enable continued pressure.
+
+#### Finishing the Enemy
+- Finishing removes enemy capacity to resist.
+- Pursuit prevents reconstitution.
+- Decisive victory ends resistance.
+
+### Chapter 8 — Making It Happen
+This chapter addresses institutional development of tactical skill.
+
+#### Doctrine, Education, and Training
+- Doctrine provides a common framework.
+- Education develops judgment.
+- Training builds technical and tactical competence.
+- Professional study reinforces tactical excellence.
+
+---
+
+## Mental Models
+
+### Model 1 — Decisive Action
+- **Model:** Tactical effort focused on achieving outcomes beyond the engagement.
+- **Use:** Guides leaders to seek results that shape the larger conflict.
+
+### Model 2 — Probabilistic Combat
+- **Model:** Combat as an uncertain, adaptive system.
+- **Use:** Encourages initiative and flexibility under uncertainty.
+
+### Model 3 — Main Effort
+- **Model:** Concentration of combat power at the decisive point.
+- **Use:** Aligns subordinate action toward decisive results.
+
+### Model 4 — Tempo
+- **Model:** Sustained relative speed in decision and action.
+- **Use:** Disrupts enemy cohesion and seizes initiative.
+
+### Model 5 — Asymmetry
+- **Model:** Applying strength against enemy weakness.
+- **Use:** Achieves advantage without numerical superiority.
+
+---
+
+## Argument Map
+- **Claim 1:** Combat is uncertain and cannot be controlled through rigid rules.
+  - **Therefore:** Leaders must rely on judgment and initiative.
+- **Claim 2:** Incremental gains rarely lead to decisive victory.
+  - **Therefore:** Tactical actions must aim at decisive outcomes.
+- **Claim 3:** Advantage is created through leverage, not attrition.
+  - **Therefore:** Maneuver, surprise, and asymmetry are essential.
+- **Claim 4:** Speed and adaptation disrupt enemy decisionmaking.
+  - **Therefore:** Tempo must be generated and sustained.
+- **Conclusion:** Tactical excellence arises from disciplined judgment applied boldly to achieve decisive victory.
+
+---
+
+## Key Concepts & Definitions
+- **Tactics**: The art and science of winning engagements and battles.
+- **Combat Power**: The total destructive force applied against the enemy.
+- **Decisiveness**: Achieving results that lead beyond the engagement.
+- **Military Judgment**: The ability to understand situations and act effectively.
+- **Critical Vulnerability**: A weakness that undermines enemy capability.
+- **Main Effort**: The focus of combat power for decisive action.
+- **Maneuver**: Movement to gain advantage in space or time.
+- **Combined Arms**: Integration of multiple capabilities to create dilemmas.
+- **Tempo**: The rhythm and pace of operations.
+- **Relative Speed**: Acting faster than the enemy can respond.
+- **Initiative**: The ability to dictate the course of action.
+- **Surprise**: Striking the enemy unprepared.
+- **Deception**: Misleading the enemy about intentions or capabilities.
+- **Asymmetry**: Applying dissimilar means to exploit weakness.
+- **Exploitation**: Using success to achieve greater advantage.
+- **Consolidation**: Securing gains to prevent enemy recovery.
+- **Discipline**: Adherence to standards enabling decentralized action.
+- **Adaptation**: Adjusting actions in response to change.
+- **Probabilistic View**: Acceptance of uncertainty in combat.
+- **Commander's Intent**: The purpose guiding subordinate initiative.

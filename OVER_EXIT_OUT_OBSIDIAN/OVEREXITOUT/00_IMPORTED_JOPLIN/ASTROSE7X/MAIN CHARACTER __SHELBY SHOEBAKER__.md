@@ -1,0 +1,10 @@
+---
+title: MAIN CHARACTER **SHELBY SHOEBAKER**
+updated: 2025-05-11 07:56:27Z
+created: 2025-05-11 07:56:00Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+MAIN CHARACTER **SHELBY SHOEBAKER**

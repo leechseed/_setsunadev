@@ -1,0 +1,130 @@
+---
+title: PROMPTS
+updated: 2025-07-11 03:16:00Z
+created: 2025-07-06 04:45:12Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# step 1 
+
+> **PLEASE REFRAIN FROM SPEAKING I NEED TO JUST COPY AND PASTE THIS SHIT IN**
+>
+> Create a comprehensive report for the following  prompt. **follow the structure and language style of the “Understanding” report template** Remember to be thorough and use methods that facilitate easy understanding, such as bolding, italicizing, formatting, and bulleting. In addition to a summary section for each component, which provides an overview of the section using several sentences. Also, remember the Table of Contents. MOST IMPORTANTLY, WE ARE USING DRAMATICA and ASTRO7EX 
+> **REMEMBER: There must be a Dramatica Summary in paragraph form as well.**
+> Physical Traits and Mannerisms - John Smith the Eternal
+> IMPORTANT: THIS ENTIRE REPORT IS the Physical Traits and Mannerisms - John Smith the Eternal  -  this needs to be ANSWERED SPECIFICALLY DUDE
+>  Desrcibe John Smith the Eternal's physical traits and distinctive mannerisms:
+> REMEMBER: What we've developed since we've last explored this topic. 
+> Explained: Characters do not live by structure alone. 
+
+# step 2
+
+ >please add a section that details > - Narrative Astrology 
+	- Narrative Natal Chart
+	- Transits 
+	- Progressions
+> modify the report to properly reflect the changes
+> but KEEP the Dramatica Summary the same. do not adjust it. 
+
+
+
+
+
+
+
+Use the following refrence materials' models and methodologies to reinforce the prompt's validity:
+| #  | **Title**                                                   | **Author(s)**                              | **Focus**                                        |
+| -- | ----------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------ |
+| 1  | *Building a Character*                                      | Konstantin Stanislavski                    | Embodied movement, psychology in physical traits |
+| 2  | *The Art of Character*                                      | David Corbett                              | Narrative-driven character design                |
+| 3  | *What Every BODY is Saying*                                 | Joe Navarro                                | Nonverbal tells, micro-behavioral cues           |
+| 4  | *The Definitive Book of Body Language*                      | Allan & Barbara Pease                      | Broad body language catalog                      |
+| 5  | *Emotions Revealed*                                         | Paul Ekman                                 | Micro-expressions, emotion leakage               |
+| 6  | *Personality Types: Using the Enneagram for Self-Discovery* | Don Riso & Russ Hudson                     | Enneagram-based behavioral logic                 |
+| 7  | *Please Understand Me II*                                   | David Keirsey                              | MBTI framework and personality expressions       |
+| 8  | *Different Loving*                                          | Gloria Brame, William D. Brame, Jon Jacobs | Sexual archetypes, BDSM psychology               |
+| 9  | *SM 101*                                                    | Jay Wiseman                                | BDSM, physical control, fetish logic             |
+| 10 | *The Erotic Mind*                                           | Jack Morin                                 | Erotic templates, core erotic conflicts          |
+| 11 | *The Erotic Doll*                                           | Marquard Smith                             | Objectification, fetish symbolism                |
+| 12 | *Fetish Style*                                              | Valerie Steele                             | Fashion as fetish, aesthetic coding              |
+| 13 | *Sexual Personae*                                           | Camille Paglia                             | Mythic sexual archetypes, Western canon          |
+| 14 | *Encyclopedia of Body Adornment*                            | Margo DeMello                              | Tattoos, piercings, body modifications           |
+| 15 | *The Tattoo History Source Book*                            | Steve Gilbert                              | Tattoo symbolism and cultural context            |
+| 16 | *Otaku: Japan’s Database Animals*                           | Hiroki Azuma                               | Modular anime character design, fetish logic     |
+| 17 | *A Billion Wicked Thoughts*                                 | Ogi Ogas & Sai Gaddam                      | Porn consumption data, sexual preferences        |
+| 18 | *Goddesses in Everywoman*                                   | Jean Shinoda Bolen                         | Mythic female archetypes, psychological roots    |
+
+
+
+Use the following report below to reference as well as what you have in your memory 
+
+# 📘 Report: Introducing Fiona — *The Velvet Knife*
+
+
+
+
+
+i need the books that are good to reference with sexuality considered for Affiliations & Beliefs in narrative character design. please present in a table similar to this:
+
+
+
+---
+
+# physical traits prompt
+
+what are some good reference books and sources to understand when developing physical traits and distinctive mannerisms for characters in narrative design? please present in a table similar to this:
+
+| #  | **Title**                                                   | **Author(s)**                              | **Focus**                                        |
+| -- | ----------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------ |
+| 1  | *Building a Character*                                      | Konstantin Stanislavski                    | Embodied movement, psychology in physical traits 
+
+
+
+
+
+
+# affiliations prompt
+
+ i need the books that are good to reference with sexuality considered for Affiliations & Beliefs in narrative character design. Consider video game character design (in terms of skills) and TTRPG character creation for occupations held
+ 
+ please present in a table similar to this:
+
+| #  | **Title**                                                   | **Author(s)**                              | **Focus**                                        |
+| -- | ----------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------ |
+| 1  | *Building a Character*                                      | Konstantin Stanislavski                    | Embodied movement, psychology in physical traits 
+
+
+
+
+# skills prompt
+
+i need the books that are good to reference with sexuality considered for special skills (or lack of them) and occupations held  in narrative character design. please present in a table similar to this:
+
+| #  | **Title**                                                   | **Author(s)**                              | **Focus**                                        |
+| -- | ----------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------ |
+| 1  | *Building a Character*                                      | Konstantin Stanislavski                    | Embodied movement, psychology in physical traits 
+
+
+# interests prompt
+ i need the books that are good to reference with sexuality considered for interests, specifically,  Likes and Dislikes in narrative character design.
+ 
+ please present in a table similar to this:
+
+
+| #  | **Title**                                                   | **Author(s)**                              | **Focus**                                        |
+| -- | ----------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------ |
+| 1  | *Building a Character*                                      | Konstantin Stanislavski                    | Embodied movement, psychology in physical traits 
+
+
+ please add a section that details > - Narrative Astrology 
+	- Narrative Natal Chart
+	- Transits 
+	- Progressions
+
+to the following report and modify the report to properly reflect the changes
+
+
+
+ok now i need you to create a comprehensive status report on the development of Astro7ex with Dramatica and all that we have accomplished. Providee all information that is needed for the next chatbot to pick up where you left off. The chatbot will be in the same project as this, but please fully brief it on what has happened entirely so that they can seamlessly slide in

@@ -1,0 +1,160 @@
+---
+title: 📘 Layer 5 — Structural Argument
+updated: 2026-01-05 08:25:17Z
+created: 2026-01-01 00:04:50Z
+latitude: 30.4382559
+longitude: -84.2807329
+altitude: 0
+tags:
+  - oxo
+---
+
+# 📘 Layer 5 — Structural Argument  
+## Claim Types (Canonical Set)
+
+---
+
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Claim Types](#claim-types)
+   - [1. Constraint Claims](#1-constraint-claims)
+   - [2. Cost Claims](#2-cost-claims)
+   - [3. Power Claims](#3-power-claims)
+   - [4. Legibility Claims](#4-legibility-claims)
+   - [5. Agency Claims](#5-agency-claims)
+   - [6. Persistence Claims](#6-persistence-claims)
+   - [7. Meaning Claims](#7-meaning-claims)
+   - [8. Collapse Claims](#8-collapse-claims)
+3. [Usage Rules](#usage-rules)
+4. [Integrity Check](#integrity-check)
+5. [Status](#status)
+
+---
+
+## Overview
+
+**Claim Types define what kinds of truths this system is capable of proving.**  
+They are not themes, morals, or messages.
+
+Each claim must be demonstrated through **repetition**, **consequence**, and **risk of falsification**.  
+If a claim cannot survive contradiction, it is not structurally proven.
+
+---
+
+## Claim Types
+
+---
+
+### 1. Constraint Claims  
+**What systems make impossible, regardless of intent.**
+
+- **Claim Form**: “Under these conditions, **no choice allows X to happen**.”
+- **Proof Method**: Repeated attempts fail for structural reasons, not personal flaws.
+- **Typical Evidence**: Enforcement persists; isolation holds; accumulation outpaces resistance.
+- **Disproof Risk**: A single clean escape invalidates the claim.
+- **Common Failure**: Blaming individuals instead of structures.
+
+---
+
+### 2. Cost Claims  
+**What survival or action permanently costs.**
+
+- **Claim Form**: “To achieve or endure X, Y is lost forever.”
+- **Proof Method**: Irreversible residue compounds across arcs.
+- **Typical Evidence**: Relationships degrade; identities narrow; options close.
+- **Disproof Risk**: Restoration, forgiveness-as-reset, costless victory.
+- **Common Failure**: Treating suffering as seasoning instead of structural loss.
+
+---
+
+### 3. Power Claims  
+**How power behaves when challenged.**
+
+- **Claim Form**: “When confronted, power does Z.”
+- **Proof Method**: Resistance consistently triggers predictable responses.
+- **Typical Evidence**: Outsourcing; isolation; enforcement without legitimacy.
+- **Disproof Risk**: Exposure alone halting enforcement.
+- **Common Failure**: Treating power as a moral actor instead of a mechanism.
+
+---
+
+### 4. Legibility Claims  
+**What the system can and cannot recognize.**
+
+- **Claim Form**: “Only X is visible, rewarded, or punished.”
+- **Proof Method**: Repeated invisibility of sincere but illegible acts.
+- **Typical Evidence**: Inputs matter; beliefs do not. Pain is ignored.
+- **Disproof Risk**: Internal states producing outcomes directly.
+- **Common Failure**: Smuggling justice through recognition.
+
+---
+
+### 5. Agency Claims  
+**What choice can and cannot accomplish.**
+
+- **Claim Form**: “Choice affects outcomes **without altering constraints**.”
+- **Proof Method**: Outcomes follow choices, but rules remain unchanged.
+- **Typical Evidence**: Different choices yield different costs, not different systems.
+- **Disproof Risk**: Exceptional choices bypassing constraint.
+- **Common Failure**: Confusing agency with freedom.
+
+---
+
+### 6. Persistence Claims  
+**What survives over time.**
+
+- **Claim Form**: “Left unattended, X grows, decays, or dominates.”
+- **Proof Method**: Accumulation outpaces opposition across acts.
+- **Typical Evidence**: Power consolidates; integrity erodes without upkeep.
+- **Disproof Risk**: Stability without maintenance.
+- **Common Failure**: Treating time as neutral.
+
+---
+
+### 7. Meaning Claims  
+**Where meaning exists—and where it does not.**
+
+- **Claim Form**: “Meaning can exist without effect.”
+- **Proof Method**: Characters retain dignity without altering outcomes.
+- **Typical Evidence**: Layer 3 expressions persist under isolation.
+- **Disproof Risk**: Meaning producing leverage, immunity, or altered enforcement **by default**.
+- **Common Failure**: Letting inner resolution equal external change.
+
+---
+
+### 8. Collapse Claims  
+**How and where systems fail.**
+
+- **Claim Form**: “Systems fail only when X occurs.”
+- **Proof Method**: Near-failures accumulate but do not break the system until a specific condition fails.
+- **Typical Evidence**: Leakage; overload; contradiction; unsustainable maintenance.
+- **Disproof Risk**: Arbitrary collapse or villain defeat.
+- **Common Failure**: Treating collapse as catharsis instead of consequence **and condition**.
+
+---
+
+## Usage Rules
+
+- A story may prove **multiple claim types**, but must prioritize **one dominant claim**.
+- Claims must be **risked repeatedly**; counterexamples are required.
+- Proof occurs through **structure**, not dialogue or declaration.
+- Claims must remain valid even if the protagonist fails.
+
+---
+
+## Integrity Check
+
+- Can the claim be stated in one sentence without moral language?
+- Does the story attempt to disprove it before proving it?
+- Would the claim still hold if the protagonist died or was wrong?
+
+If any answer is **NO**, the claim is not structurally proven.
+
+---
+
+## Status
+
+**Canonical Claim Type Set — Locked**  
+All Layer 5 arguments must map to one or more claim types above.

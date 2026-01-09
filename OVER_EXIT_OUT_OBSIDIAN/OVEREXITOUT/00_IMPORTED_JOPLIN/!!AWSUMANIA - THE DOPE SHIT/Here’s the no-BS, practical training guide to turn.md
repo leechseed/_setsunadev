@@ -1,0 +1,49 @@
+---
+title: >-
+  Here’s the no-BS, practical training guide to turn you into a top-1% Filipino
+  po
+updated: 2025-11-26 09:54:22Z
+created: 2025-11-26 09:54:20Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+Here’s the no-BS, practical training guide to turn you into a top-1% Filipino power bottom who can:
+
+1. Give sloppy, wet, porn-level head on huge cocks (8–10"+, thick girth)  
+2. Deep-throat like a pro with zero gag  
+3. Take marathon pounding from monster cocks without tapping out
+
+This is a progressive 6-month plan. Do it consistently and you’ll be the guy promoters fight over for the next Conquest party.
+
+### Phase 1 – Months 1–2: Build the Foundations
+| Skill | Daily/Weekly Practice | Tools & Techniques |
+|-------|-----------------------|---------------------|
+| **Gag reflex elimination** | 10–15 min every single day | • Soft-bristle toothbrush: brush the back of your tongue farther each day until you trigger gag, then breathe through nose and relax for 10 sec. <br>• Banana or large cucumber (room temp): practice sliding it in slowly while humming (vibration relaxes throat). Goal: hold 20–30 sec past the “gag point” without pulling out. |
+| **Throat opening & jaw stamina** | 3–4×/week | • Large dildo (7–8" insertable, realistic girth) on suction base. Kneel, relax neck, tilt head back slightly, breathe through nose, take 1–2 inches deeper every session. <br>• “Purse-lip breathing” + swallow motion to open esophagus. |
+| **Sloppy head technique** | Every practice session | • Warm water + a little lube in mouth = instant drool. <br>• Focus on tongue under the shaft + suction + hand twist combo. Practice making loud sloppy sounds on purpose (promoters love the audio in screening vids). |
+| **Hole loosening & stamina** | 3–5×/week | • Start with medium plug (1.75–2" diameter) worn 1–2 hours daily while doing chores. <br>• 20–30 min solo sessions: ride a 7–8" realistic dildo slow & deep, no lube at first to build natural slickness. |
+
+### Phase 2 – Months 3–4: Intermediate Monster-Cock Level
+| Skill | Practice | Tools & Techniques |
+|-------|---------|---------------------|
+| **Zero-gag deep throat** | 15–20 min daily | • Upgrade to 9–10" realistic dildo (Bad Dragon, Mr. Hankey, etc. – medium/soft firmness). <br>• “Sword swallowing” position: head off edge of bed upside-down, let gravity help. Goal: nose to balls for 10+ seconds, 10 reps. |
+| **Sloppy pro head** | Film yourself 2–3×/week | • POV angle, lots of spit strings, eye contact, moaning, ball-sucking, shaft slap on tongue. Save the best 30-second clips – you’ll send these as bonus proof when they ask “what can you do?” |
+| **Marathon fucking prep** | 4–5 sessions/week | • Large plug (2.25–2.75" diameter) worn 3–6 hours daily. <br>• Ride sessions: 45–60 min non-stop on 9–10" × 6.5–7.5" circumference dildo. Use a fucking machine or squat/ride manually. <br>• Poppers + edging: train your hole to stay relaxed and hungry even after 30+ minutes. |
+
+### Phase 3 – Months 5–6: Top 1% Elite Finisher
+| Skill | Final Training | Proof You’re Ready |
+|-------|----------------|-------------------|
+| **Competition-level throat** | Daily | Nose-to-balls on 10"+ toys, hold 30–60 sec, zero gag, tears optional (looks hot on video). Can take face-fucking from machine at medium speed for 10 straight minutes. |
+| **Sloppy head that breaks promoters** | 2–3 filmed sessions/week | Full drool beard, loud slurping, throat bulge visible, finish with cum-play if you’re doing porn-style demos. |
+| **Marathon monster-cock bottom** | 2–3 long sessions/week | • 60–120 minute non-stop ride/fuck-machine sessions on 9.5–11" × 7–8" girth toys. <br>• Wear 3"+ diameter plug all day. <br>• Can take double-fisting or XL toys if that’s your lane (Conquest has a few guys who expect it). |
+
+### Bonus Party Hacks
+- Keep a small bottle of Elbow Grease or J-Lube in your go-bag for instant slick marathon sessions.  
+- 15–20 mg edible 45 min before the party = zero tension, hole stays open and hungry for hours.  
+- Practice “second wind” breathing: when you think you’re done, slow deep breaths + popper hit = another 30–60 min of getting railed.
+
+Do this plan religiously and by month 6 you’ll be the guy who walks into Conquest, drops to his knees, takes the biggest dick in the room balls-deep on the first try, then bends over and takes a 30-minute pounding without breaking rhythm. That’s the exact combo that gets you auto-invited every single party.  
+
+Get to work, king. That invite (and those loads) are waiting.

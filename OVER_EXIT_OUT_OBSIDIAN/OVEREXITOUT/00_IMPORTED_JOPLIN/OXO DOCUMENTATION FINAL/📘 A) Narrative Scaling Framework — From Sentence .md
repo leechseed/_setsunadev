@@ -1,0 +1,246 @@
+---
+title: 📘 A) Narrative Scaling Framework — From Sentence to World
+updated: 2026-01-05 08:24:52Z
+created: 2025-12-29 01:58:15Z
+latitude: 30.4382559
+longitude: -84.2807329
+altitude: 0
+tags:
+  - oxo
+---
+
+# 📘 Knowledgebase Entry  
+## Narrative Scaling Framework — From Sentence to World
+
+---
+---
+
+
+## 📑 Table of Contents
+
+1. [Purpose of Scaling in Narrative Design](#purpose-of-scaling-in-narrative-design)
+2. [What “Scaling” Actually Means](#what-scaling-actually-means)
+3. [The Narrative Scale Ladder](#the-narrative-scale-ladder)
+4. [Responsibilities at Each Scale](#responsibilities-at-each-scale)
+5. [What Scaling Does *Not* Do](#what-scaling-does-not-do)
+6. [Common Scaling Failures](#common-scaling-failures)
+7. [Scaling Diagnostic Questions](#scaling-diagnostic-questions)
+8. [Relationship to Invariants (Preview)](#relationship-to-invariants-preview)
+
+---
+
+## Purpose of Scaling in Narrative Design
+
+Scaling defines **how narrative meaning expands without mutating**.
+
+It exists to prevent:
+- Thematic drift  
+- Power inflation  
+- Character exceptionalism  
+- Structural incoherence  
+
+Scaling ensures that **the same rules remain true**, while their **consequence radius increases**.
+
+---
+
+## What “Scaling” Actually Means
+
+Scaling is **not**:
+- Adding lore  
+- Raising stakes arbitrarily  
+- Making things “bigger”  
+- Introducing new rules  
+
+Scaling **is**:
+- Increasing consequence scope  
+- Activating deeper constraints  
+- Allowing effects to propagate farther and longer  
+
+> Scaling widens impact; it does not change logic.
+
+---
+
+## The Narrative Scale Ladder
+
+Canonical progression:
+
+> **Sentence → Beat → Scene → Episode → Arc → Season → World**
+
+Each rung:
+- Contains all lower rungs  
+- Introduces broader consequence  
+- Activates more persistent effects  
+
+---
+
+## Responsibilities at Each Scale
+
+### 1. **Sentence**
+**Unit of pressure**
+
+Responsible for:
+- Intent
+- Implication
+- Micro power shifts
+- Tone consistency
+
+Must ensure:
+- Every line *does something*
+
+Must not:
+- Explain the world
+- State theme
+- Resolve conflict
+
+---
+
+### 2. **Beat**
+**Unit of change**
+
+Responsible for:
+- Micro cause → effect
+- Decision or realization
+- Momentum
+
+Must ensure:
+- A before/after difference
+
+Must not:
+- Reset emotional state
+- Stall motion
+
+---
+
+### 3. **Scene**
+**Unit of conflict**
+
+Responsible for:
+- Opposing goals
+- Escalation
+- Cost
+
+Must ensure:
+- Someone loses something
+- Resistance is present
+
+Must not:
+- Introduce new world rules
+- End cleanly for all parties
+
+---
+
+### 4. **Episode**
+**Unit of inquiry**
+
+Responsible for:
+- Testing a belief or assumption
+- Revealing behavioral patterns
+- Consequence propagation
+
+Must ensure:
+- A question is pressured, not solved
+
+Must not:
+- Restore the status quo
+- Deliver final answers
+
+---
+
+### 5. **Arc**
+**Unit of transformation**
+
+Responsible for:
+- Irreversible change
+- Closed-off options
+- Compounded consequence
+
+Must ensure:
+- Characters or systems are no longer the same
+
+Must not:
+- Allow cost-free growth
+- Undo prior damage
+
+---
+
+### 6. **Season**
+**Unit of argument**
+
+Responsible for:
+- Making a claim about how the world works
+- Stress-testing that claim
+- Clarifying cost or failure
+
+Must ensure:
+- A coherent thematic stance emerges
+
+Must not:
+- Introduce new moral physics
+- Contradict prior invariants
+
+---
+
+### 7. **World**
+**Unit of permanence**
+
+Responsible for:
+- History
+- Systems
+- Rule enforcement beyond characters
+
+Must ensure:
+- The world functions without protagonists
+
+Must not:
+- Bend rules for favorites
+- Retcon consequences
+
+---
+
+## What Scaling Does *Not* Do
+
+Scaling must never:
+- Introduce exceptions  
+- Rewrite causality  
+- Change moral logic  
+- Override systemic power  
+
+If scaling requires new rules, the foundation is broken.
+
+---
+
+## Common Scaling Failures
+
+- **Lore dump at scene scale** → world logic introduced too early  
+- **Theme stated in dialogue** → season logic forced into sentence  
+- **Reset episodes** → arc consequences avoided  
+- **Hero fixes the system** → world scale violated  
+
+Most “writing problems” are actually **scale violations**.
+
+---
+
+## Scaling Diagnostic Questions
+
+Use these to debug fast:
+
+- What changed at this scale that could not change at a lower one?
+- Did consequence radius increase?
+- Did any rule appear that was not already enforced below?
+- Is this moment too small or too large for its scale?
+
+If it feels “off,” it’s almost always a scale mismatch.
+
+---
+
+## Relationship to Invariants (Preview)
+
+Scaling does **not** create invariants.  
+It **activates** them across wider territory.
+
+- Invariants define *what is always true*  
+- Scaling defines *how far the truth reaches*  
+
+The next knowledgebase entry will formalize how **scaling interacts with narrative layers and invariants**.
+
+---

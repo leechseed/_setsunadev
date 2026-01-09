@@ -1,0 +1,233 @@
+---
+title: RVC voice changer setup guide
+updated: 2025-11-18 23:20:58Z
+created: 2025-11-18 23:20:48Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+RVC voice changer setup guide
+
+# Realtime Voice Changer + Voicemeeter + Discord Setup Guide
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Signal Flow Cheat Sheet](#signal-flow-cheat-sheet)
+3. [Step 1 – Conceptual Devices](#step-1--conceptual-devices)
+4. [Step 2 – Realtime Voice Changer](#step-2--realtime-voice-changer)
+5. [Step 3 – Voicemeeter Routing](#step-3--voicemeeter-routing)
+6. [Step 4 – Discord Settings](#step-4--discord-settings)
+7. [Step 5 – Test & Fine-Tune](#step-5--test--fine-tune)
+8. [Common Issues](#common-issues)
+
+---
+
+## Overview
+
+Goal:
+**Mic → Realtime Voice Changer → Voicemeeter → Discord**
+
+You talk into your mic, the AI changes your voice, Voicemeeter routes that processed voice into Discord as your “mic.”
+
+---
+
+## Signal Flow Cheat Sheet
+
+1. **Realtime Voice Changer**
+
+   * Input: **Your Microphone**
+   * Output: **Virtual Cable** (e.g., `CABLE Input`) *or* `Voicemeeter VAIO/AUX`
+
+2. **Voicemeeter**
+
+   * Input: **That same virtual device** (CABLE Output / VAIO / AUX)
+   * Output (B1 or B2): **Virtual “mic” for Discord**
+
+3. **Discord**
+
+   * Input Device: **Voicemeeter virtual output** (e.g., `Voicemeeter Output (VB-Audio Voicemeeter VAIO)`)
+
+---
+
+## Step 1 – Conceptual Devices
+
+Name them in your head so you don’t get lost:
+
+* **Mic** – your actual microphone (whatever Windows shows: USB mic, interface, etc.).
+* **Virtual Cable** – software cable like `CABLE Input / CABLE Output (VB-Audio Virtual Cable)`.
+* **Voicemeeter Inputs**
+
+  * **Hardware Input**: where you can bring in physical or virtual devices.
+  * **Virtual Input (VAIO/AUX)**: software inputs from Windows apps.
+* **Voicemeeter Outputs**
+
+  * **A1/A2/A3**: outputs to headphones/speakers.
+  * **B1/B2/B3**: virtual outputs shown to other apps as “mics.”
+
+Pick **ONE** B-bus (usually **B1**) to be “Discord mic.”
+
+---
+
+## Step 2 – Realtime Voice Changer
+
+1. **Open Realtime Voice Changer.**
+
+2. **Set Input Device**:
+
+   * Choose your **actual mic** (whatever you normally use).
+
+3. **Set Output Device** – pick ONE of these strategies:
+
+   **Strategy A (with VB-Cable):**
+
+   * Output Device = `CABLE Input (VB-Audio Virtual Cable)`
+
+   **Strategy B (direct to Voicemeeter):**
+
+   * Output Device = `Voicemeeter VAIO` or `Voicemeeter AUX`
+
+4. **Load your model/preset** inside Realtime Voice Changer.
+
+5. Speak and confirm:
+
+   * You see **input activity** and **output activity** meters moving inside the app.
+
+---
+
+## Step 3 – Voicemeeter Routing
+
+### 3.1 If You Used Strategy A (VB-Cable)
+
+Realtime VC Output → `CABLE Input` → (`CABLE Output` appears in Voicemeeter)
+
+1. In **Voicemeeter**:
+
+   * Set **Hardware Input 1** (or any free hardware input) to:
+     `CABLE Output (VB-Audio Virtual Cable)`
+2. On that input strip:
+
+   * Enable **B1** (or whichever B-bus you decided is your “Discord mic”).
+   * OPTIONAL: enable **A1** so you can hear yourself through your headphones.
+
+Result:
+**Processed voice from Realtime VC** now goes into Voicemeeter, then out via **B1**.
+
+---
+
+### 3.2 If You Used Strategy B (Direct to Voicemeeter VAIO/AUX)
+
+Realtime VC Output → `Voicemeeter VAIO` (or AUX)
+
+1. In **Voicemeeter**:
+
+   * Look at the **Virtual Input** strip labeled `Voicemeeter VAIO` (or AUX).
+   * This strip should now receive audio when you talk.
+2. On that virtual input strip:
+
+   * Enable **B1** (or your chosen B-bus).
+   * OPTIONAL: enable **A1** to monitor yourself.
+
+Result:
+**Processed voice from Realtime VC** hits the VAIO/AUX strip and is sent out via **B1**.
+
+---
+
+### 3.3 Make B1 the “Discord Mic”
+
+In Voicemeeter:
+
+* Confirm at the top/right section that **B1** is mapped to:
+  `Voicemeeter Output (VB-Audio Voicemeeter VAIO)` or similar name.
+
+This is what Discord will see as your microphone.
+
+---
+
+## Step 4 – Discord Settings
+
+In **Discord → User Settings → Voice & Video**:
+
+1. **Input Device**:
+
+   * Set to: `Voicemeeter Output (VB-Audio Voicemeeter VAIO)`
+     (or `Voicemeeter AUX Output` if you used AUX/B2).
+
+2. **Output Device**:
+
+   * Whatever you normally use to hear Discord (headphones, Voicemeeter, etc.).
+
+3. Under **Input Sensitivity**:
+
+   * Turn OFF “Automatically determine input sensitivity.”
+   * Set the slider so normal speech passes easily, but background noise does not cut in/out.
+
+4. Under **Advanced**:
+
+   * Echo cancellation, noise reduction, etc. may **distort AI voices**.
+   * If your voice sounds crushed or unstable, try disabling:
+
+     * Noise Suppression
+     * Echo Cancellation
+     * Automatic Gain Control
+
+---
+
+## Step 5 – Test & Fine-Tune
+
+1. In Discord:
+
+   * Use **“Let’s Check” / “Mic Test”** or join a private voice channel alone.
+2. Speak:
+
+   * Check meters in **Realtime Voice Changer → Voicemeeter → Discord**:
+
+     * Realtime VC: input + output meters move.
+     * Voicemeeter: chosen input strip shows signal; B1 bus shows signal.
+     * Discord: input level bar moves.
+3. Adjust:
+
+   * Use **Voicemeeter’s fader** on the AI input strip to set loudness.
+   * Do **NOT** crank Windows mic levels and Voicemeeter both to 100%; balance them.
+
+If friends say you’re too loud/quiet:
+
+* Adjust the **strip fader in Voicemeeter**, not Discord input sensitivity.
+
+---
+
+## Common Issues
+
+* **No sound in Discord, but Realtime VC works:**
+
+  * Check Voicemeeter:
+
+    * Is the correct input strip active (CABLE/VAIO)?
+    * Is **B1** lit on that strip?
+  * Check Discord:
+
+    * Input Device = **Voicemeeter Output**, not your raw mic or CABLE.
+
+* **You hear yourself twice / with echo:**
+
+  * Disable any **“Listen to this device”** in Windows Sound settings.
+  * Make sure only **ONE path** is monitoring to your headphones (e.g., just A1 from Voicemeeter).
+
+* **Latency feels bad:**
+
+  * Lower buffer sizes in Voicemeeter and Realtime VC **gradually** until you get crackling, then bump it slightly back up.
+  * Keep all sample rates consistent (e.g., 48 kHz everywhere).
+
+* **Friends say your voice is cutting in/out:**
+
+  * In Discord, loosen input sensitivity or disable noise suppression.
+  * Make sure your AI output isn’t too quiet before it hits Discord (raise in Voicemeeter).
+
+RVC git: fyi chinese dev https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
+
+voice models hugging face: https://huggingface.co/models?other=rvc&sort=downloads
+
+voicemeeter: https://vb-audio.com/Voicemeeter/banana.htm
+
+vb audio (virtual audio cables): https://vb-audio.com/Cable/

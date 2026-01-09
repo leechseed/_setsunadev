@@ -1,0 +1,44 @@
+---
+title: 'BOOK REF- PHYSICAL TRAITS - FEMALE - '
+updated: 2025-07-11 03:15:37Z
+created: 2025-07-06 04:49:40Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+| #  | **Title**                                                   | **Author(s)**                              | **Focus**                                         |
+| -- | ----------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------- |
+| 1  | *Building a Character*                                      | Konstantin Stanislavski                    | Embodied movement, psychology in physical traits  |
+| 2  | *The Actor’s Art and Craft*                                 | William Esper & Damon DiMarco              | Meisner, behavioral truth, instinct-based actions |
+| 3  | *Character Animation Crash Course!*                         | Eric Goldberg                              | Exaggeration, silhouette clarity, animation logic |
+| 4  | *The Power of the Actor*                                    | Ivana Chubbuck                             | Objective-driven physicalization                  |
+| 5  | *The Art of Character*                                      | David Corbett                              | Narrative-driven character design                 |
+| 6  | *What Every BODY is Saying*                                 | Joe Navarro                                | Nonverbal tells, micro-behavioral cues            |
+| 7  | *The Definitive Book of Body Language*                      | Allan & Barbara Pease                      | Broad body language catalog                       |
+| 8  | *Emotions Revealed*                                         | Paul Ekman                                 | Micro-expressions, emotion leakage                |
+| 9  | *Movement for Actors*                                       | Nicole Potter et al.                       | Movement techniques for performers                |
+| 10 | *Physical Expression and the Performing Artist*             | Alexandra Pierce                           | Expressive movement, intention-based design       |
+| 11 | *The Expressive Body in Life, Art, and Therapy*             | Daria Halprin                              | Somatic expression, embodied narrative            |
+| 12 | *Personality Types: Using the Enneagram for Self-Discovery* | Don Riso & Russ Hudson                     | Enneagram-based behavioral logic                  |
+| 13 | *Please Understand Me II*                                   | David Keirsey                              | MBTI framework and personality expressions        |
+| 14 | *Different Loving*                                          | Gloria Brame, William D. Brame, Jon Jacobs | Sexual archetypes, BDSM psychology                |
+| 15 | *SM 101*                                                    | Jay Wiseman                                | BDSM, physical control, fetish logic              |
+| 16 | *A Lover’s Pinch*                                           | Peter Tupper                               | Sadomasochism cultural history                    |
+| 17 | *The Erotic Mind*                                           | Jack Morin                                 | Erotic templates, core erotic conflicts           |
+| 18 | *The Erotic Doll*                                           | Marquard Smith                             | Objectification, fetish symbolism                 |
+| 19 | *Voluptuous Panic*                                          | Mel Gordon                                 | Fetish fashion history, Weimar erotic world       |
+| 20 | *Fetish Style*                                              | Valerie Steele                             | Fashion as fetish, aesthetic coding               |
+| 21 | *The Psychology of the Transference*                        | Carl Jung                                  | Projection, symbolic relationships                |
+| 22 | *Sexual Personae*                                           | Camille Paglia                             | Mythic sexual archetypes, Western canon           |
+| 23 | *Anatomy of Criticism*                                      | Northrop Frye                              | Archetypal literary structures                    |
+| 24 | *Encyclopedia of Body Adornment*                            | Margo DeMello                              | Tattoos, piercings, body modifications            |
+| 25 | *The Tattoo History Source Book*                            | Steve Gilbert                              | Tattoo symbolism and cultural context             |
+| 26 | *Otaku: Japan’s Database Animals*                           | Hiroki Azuma                               | Modular anime character design, fetish logic      |
+| 27 | *Beautiful Fighting Girl*                                   | Saitō Tamaki                               | Bishōjo psychology, anime girl archetypes         |
+| 28 | *The Moe Manifesto*                                         | Patrick W. Galbraith                       | Moe culture, vulnerable feminine coding           |
+| 29 | *A Billion Wicked Thoughts*                                 | Ogi Ogas & Sai Gaddam                      | Porn consumption data, sexual preferences         |
+| 30 | *Pornography: The Production and Consumption of Inequality* | Gail Dines                                 | Porn industry archetype critique                  |
+| 31 | *Camgirls*                                                  | Theresa Senft                              | E-girl, online muse construction                  |
+| 32 | *Gaming Sexism*                                             | Amanda Cote                                | Gamer girl, internet feminine archetypes          |
+| 33 | *Goddesses in Everywoman*                                   | Jean Shinoda Bolen                         | Mythic female archetypes, psychological roots     |

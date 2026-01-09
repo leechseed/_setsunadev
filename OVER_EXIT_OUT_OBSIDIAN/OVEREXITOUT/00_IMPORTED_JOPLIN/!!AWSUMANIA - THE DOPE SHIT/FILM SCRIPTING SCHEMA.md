@@ -1,0 +1,441 @@
+---
+title: FILM SCRIPTING SCHEMA
+updated: 2025-11-26 03:32:03Z
+created: 2025-11-26 03:31:27Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+
+# 📚 Knowledgebase Entry — Script ERD for TV/Anime Series
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Core Concept](#core-concept)
+3. [Entities & Relationships](#entities--relationships)
+   - [Show Structure](#show-structure)
+   - [Script Structure](#script-structure)
+   - [Context Entities](#context-entities)
+4. [ERD Diagram (Mermaid)](#erd-diagram-mermaid)
+5. [Data Structures (SQL-Level)](#data-structures-sql-level)
+   - [Series / Season / Episode](#series--season--episode)
+   - [Script Versions & Scenes](#script-versions--scenes)
+   - [Beats & Lines](#beats--lines)
+   - [Characters, Locations, Tags](#characters-locations-tags)
+6. [Alternative: Node-Based Class Structure](#alternative-node-based-class-structure)
+7. [Mental Model](#mental-model)
+8. [Example: Neon Genesis Evangelion vs Generation Kill](#example-neon-genesis-evangelion-vs-generation-kill)
+
+---
+
+## 1. Overview
+
+This entry defines an **Entity–Relationship Model (ERD)** and **data structures** for storing the scripts of every episode in one or more TV/anime series (e.g. *Neon Genesis Evangelion*, *Generation Kill*).
+
+The goal:
+
+- Capture **every script draft** for **every episode**.
+- Track **scenes, beats, and individual lines**.
+- Attach **characters, locations, and tags** for analysis, search, and modeling.
+
+---
+
+## 2. Core Concept
+
+You are modeling:
+
+- **Series → Season → Episode → Script Version → Scene → Beat → Line**
+
+Plus:
+
+- **Character**, **Location**, and **Tag** to contextualize and classify content.
+
+This gives you design space for:
+
+- Version history of scripts.
+- Structural analysis (beats, motifs, themes).
+- Character and location tracking.
+- Cross-series comparative work (e.g. Evangelion vs Generation Kill).
+
+---
+
+## 3. Entities & Relationships
+
+### 3.1 Show Structure
+
+- **SERIES**
+  - One per show (e.g., *Neon Genesis Evangelion*, *Generation Kill*).
+  - Attributes:
+    - `id`
+    - `title`
+    - `type` (anime, miniseries, drama)
+    - `start_year`, `end_year`
+    - `description`
+
+- **SEASON**
+  - One per season.
+  - Relationship: `SERIES 1 — n SEASON`
+  - Attributes:
+    - `id`
+    - `series_id` (FK → SERIES)
+    - `season_number`
+    - `title`
+    - `release_year`
+
+- **EPISODE**
+  - One per episode.
+  - Relationship: `SEASON 1 — n EPISODE`
+  - Attributes:
+    - `id`
+    - `season_id` (FK → SEASON)
+    - `episode_number_in_season`
+    - `episode_number_overall`
+    - `title`
+    - `air_date`
+    - `logline`
+    - `runtime_minutes`
+
+---
+
+### 3.2 Script Structure
+
+- **SCRIPT_VERSION**
+  - Every draft/revision of an episode’s script.
+  - Relationship: `EPISODE 1 — n SCRIPT_VERSION`
+  - Attributes:
+    - `id`
+    - `episode_id` (FK → EPISODE)
+    - `version_label` (Outline, Draft 1, Shooting, etc.)
+    - `status` (draft, locked, archived)
+    - `author`
+    - `created_at`
+    - `notes`
+
+- **SCENE**
+  - A scene in a specific script version.
+  - Relationship: `SCRIPT_VERSION 1 — n SCENE`
+  - Attributes:
+    - `id`
+    - `script_version_id` (FK → SCRIPT_VERSION)
+    - `scene_number`
+    - `slugline` (e.g. `INT. NERV HQ – NIGHT`)
+    - `summary`
+    - `location_id` (FK → LOCATION)
+    - `page_start`, `page_end`
+    - `sequence_label` (A-plot, B-plot, etc.)
+
+- **BEAT** (optional but powerful)
+  - Micro-unit inside a scene.
+  - Relationship: `SCENE 1 — n BEAT`
+  - Attributes:
+    - `id`
+    - `scene_id` (FK → SCENE)
+    - `beat_number`
+    - `type` (setup, turn, payoff, etc.)
+    - `summary`
+
+- **LINE**
+  - Dialogue line, action line, parenthetical, or transition.
+  - Relationships:
+    - `SCENE 1 — n LINE`
+    - `BEAT 1 — n LINE` (optional refinement)
+    - `CHARACTER 1 — n LINE` (who speaks)
+  - Attributes:
+    - `id`
+    - `scene_id` (FK → SCENE)
+    - `beat_id` (FK → BEAT, nullable)
+    - `character_id` (FK → CHARACTER, nullable for action lines)
+    - `line_index` (order within scene/beat)
+    - `kind` (`dialogue`, `action`, `parenthetical`, `transition`)
+    - `text`
+    - `is_voice_over` (bool)
+    - `is_off_screen` (bool)
+
+---
+
+### 3.3 Context Entities
+
+- **CHARACTER**
+  - Relationship: `SERIES 1 — n CHARACTER`
+  - Attributes:
+    - `id`
+    - `series_id` (FK → SERIES)
+    - `name`
+    - `alias`
+    - `is_main_cast`
+    - `archetype`
+    - `description`
+
+- **LOCATION**
+  - Relationship: `SERIES 1 — n LOCATION`
+  - Attributes:
+    - `id`
+    - `series_id` (FK → SERIES)
+    - `name`
+    - `type` (ship, base, city, room, etc.)
+    - `description`
+
+- **TAG**
+  - Used for themes, motifs, arcs, or custom metadata.
+  - Attributes:
+    - `id`
+    - `name`
+    - `tag_type` (theme, motif, plotline, character_arc, etc.)
+    - `description`
+
+- **TAG_LINK**
+  - Polymorphic join table: attaches tags to arbitrary entities.
+  - Attributes:
+    - `tag_id` (FK → TAG)
+    - `entity_type` (e.g. `EPISODE`, `SCENE`, `BEAT`, `LINE`)
+    - `entity_id` (the primary key of the target entity)
+  - Primary key: `(tag_id, entity_type, entity_id)`
+
+---
+
+## 4. ERD Diagram (Mermaid)
+
+```mermaid
+erDiagram
+    SERIES ||--o{ SEASON : has
+    SEASON ||--o{ EPISODE : has
+    EPISODE ||--o{ SCRIPT_VERSION : "has drafts"
+    SCRIPT_VERSION ||--o{ SCENE : contains
+    SCENE ||--o{ BEAT : contains
+    SCENE ||--o{ LINE : contains
+    BEAT ||--o{ LINE : refines
+
+    SERIES ||--o{ CHARACTER : features
+    SERIES ||--o{ LOCATION : uses
+
+    CHARACTER ||--o{ LINE : speaks
+    LOCATION ||--o{ SCENE : "set in"
+
+    TAG ||--o{ TAG_LINK : applies
+    TAG_LINK }o--|| SCENE : "tag scene"
+    TAG_LINK }o--|| BEAT : "tag beat"
+    TAG_LINK }o--|| LINE : "tag line"
+    TAG_LINK }o--|| EPISODE : "tag episode"
+````
+
+---
+
+## 5. Data Structures (SQL-Level)
+
+### 5.1 Series / Season / Episode
+
+```sql
+CREATE TABLE series (
+    id              SERIAL PRIMARY KEY,
+    title           VARCHAR(255) NOT NULL,
+    type            VARCHAR(50),        -- 'anime', 'miniseries', etc.
+    start_year      INT,
+    end_year        INT,
+    description     TEXT
+);
+
+CREATE TABLE season (
+    id              SERIAL PRIMARY KEY,
+    series_id       INT NOT NULL REFERENCES series(id),
+    season_number   INT NOT NULL,
+    title           VARCHAR(255),
+    release_year    INT
+);
+
+CREATE TABLE episode (
+    id                          SERIAL PRIMARY KEY,
+    season_id                   INT NOT NULL REFERENCES season(id),
+    episode_number_in_season    INT NOT NULL,
+    episode_number_overall      INT NOT NULL,
+    title                       VARCHAR(255) NOT NULL,
+    air_date                    DATE,
+    logline                     TEXT,
+    runtime_minutes             INT
+);
+```
+
+---
+
+### 5.2 Script Versions & Scenes
+
+```sql
+CREATE TABLE script_version (
+    id              SERIAL PRIMARY KEY,
+    episode_id      INT NOT NULL REFERENCES episode(id),
+    version_label   VARCHAR(50) NOT NULL,   -- 'Outline', 'Draft 1', 'Shooting'
+    status          VARCHAR(50),            -- 'draft', 'locked', 'archived'
+    author          VARCHAR(255),
+    created_at      TIMESTAMP NOT NULL DEFAULT NOW(),
+    notes           TEXT
+);
+
+CREATE TABLE location (
+    id              SERIAL PRIMARY KEY,
+    series_id       INT NOT NULL REFERENCES series(id),
+    name            VARCHAR(255) NOT NULL,
+    type            VARCHAR(50),            -- 'ship', 'room', 'city', etc.
+    description     TEXT
+);
+
+CREATE TABLE scene (
+    id                  SERIAL PRIMARY KEY,
+    script_version_id   INT NOT NULL REFERENCES script_version(id),
+    scene_number        INT NOT NULL,
+    slugline            VARCHAR(255) NOT NULL,
+    summary             TEXT,
+    location_id         INT REFERENCES location(id),
+    page_start          NUMERIC(4,1),
+    page_end            NUMERIC(4,1),
+    sequence_label      VARCHAR(50)          -- e.g. 'A', 'B', 'C-story'
+);
+```
+
+---
+
+### 5.3 Beats & Lines
+
+```sql
+CREATE TABLE beat (
+    id              SERIAL PRIMARY KEY,
+    scene_id        INT NOT NULL REFERENCES scene(id),
+    beat_number     INT NOT NULL,
+    type            VARCHAR(50),           -- 'setup', 'turn', 'payoff', etc.
+    summary         TEXT
+);
+
+CREATE TABLE character (
+    id              SERIAL PRIMARY KEY,
+    series_id       INT NOT NULL REFERENCES series(id),
+    name            VARCHAR(255) NOT NULL,
+    alias           VARCHAR(255),
+    is_main_cast    BOOLEAN NOT NULL DEFAULT FALSE,
+    archetype       VARCHAR(100),
+    description     TEXT
+);
+
+CREATE TABLE line (
+    id              SERIAL PRIMARY KEY,
+    scene_id        INT NOT NULL REFERENCES scene(id),
+    beat_id         INT REFERENCES beat(id),
+    character_id    INT REFERENCES character(id),
+    line_index      INT NOT NULL,
+    kind            VARCHAR(20) NOT NULL,  -- 'dialogue','action','parenthetical','transition'
+    text            TEXT NOT NULL,
+    is_voice_over   BOOLEAN NOT NULL DEFAULT FALSE,
+    is_off_screen   BOOLEAN NOT NULL DEFAULT FALSE
+);
+```
+
+---
+
+### 5.4 Characters, Locations, Tags
+
+```sql
+CREATE TABLE tag (
+    id              SERIAL PRIMARY KEY,
+    name            VARCHAR(100) NOT NULL,
+    tag_type        VARCHAR(50),
+    description     TEXT
+);
+
+CREATE TABLE tag_link (
+    tag_id          INT NOT NULL REFERENCES tag(id),
+    entity_type     VARCHAR(50) NOT NULL,   -- 'EPISODE','SCENE','BEAT','LINE', etc.
+    entity_id       INT NOT NULL,
+    PRIMARY KEY (tag_id, entity_type, entity_id)
+);
+```
+
+---
+
+## 6. Alternative: Node-Based Class Structure
+
+You can collapse **Scene / Beat / Line** into a single **ScriptElement** table/class and treat it like a tree.
+
+**Conceptual hierarchy:**
+
+* `ScriptElement` (abstract)
+
+  * `element_type`: `"scene" | "beat" | "dialogue" | "action"`
+  * `parent_id`: `NULL` for scenes, otherwise the containing node.
+  * `order_index`: position among siblings.
+  * Optional fields depending on type.
+
+**Python-style dataclass:**
+
+```python
+from dataclasses import dataclass
+from typing import Optional, Literal
+
+ScriptElementType = Literal["scene", "beat", "dialogue", "action"]
+
+@dataclass
+class ScriptElement:
+    id: int
+    script_version_id: int
+    parent_id: Optional[int]   # None for top-level scenes
+    order_index: int
+    element_type: ScriptElementType
+
+    # Optional content fields; enforced by element_type at app level
+    slugline: Optional[str] = None          # scenes
+    summary: Optional[str] = None           # scenes/beats
+    text: Optional[str] = None              # dialogue/action
+    character_id: Optional[int] = None      # dialogue
+    is_voice_over: bool = False
+    is_off_screen: bool = False
+```
+
+You’d then enforce:
+
+* `scene` → requires `slugline`.
+* `dialogue` → requires `text` + `character_id`.
+* `action` → requires `text`.
+
+---
+
+## 7. Mental Model
+
+Think of it like **a library of heavily annotated scripts**:
+
+* **Series** = a **bookshelf**.
+* **Season** = a **book** on that shelf.
+* **Episode** = a **chapter** in the book.
+* **ScriptVersion** = different **drafts of that chapter**.
+* **Scenes** = **sections** of the chapter.
+* **Beats** = macro-level **sentences/turns** inside sections.
+* **Lines** = **individual sentences or actions** on the page.
+
+Then:
+
+* **Characters** = the **cast** that appears across the whole shelf.
+* **Locations** = the **sets/stages**.
+* **Tags** = the **sticky notes** you slap anywhere to track themes, arcs, motifs, or meta (Dramatica, astrology, whatever).
+
+---
+
+## 8. Example: Neon Genesis Evangelion vs Generation Kill
+
+Using the same schema:
+
+* **Neon Genesis Evangelion**
+
+  * `series` row: `("Neon Genesis Evangelion", "anime", 1995, 1996, ...)`
+  * `season`: single season row.
+  * `episode`: 26 rows with titles and air dates.
+  * `character`: Shinji, Rei, Asuka, Misato, Gendo, etc.
+  * `tag`: “Instrumentality”, “Angel fight”, “Psychic breakdown”.
+  * `scene/beat/line`: dialog-heavy introspection vs action beats tagged separately.
+
+* **Generation Kill**
+
+  * `series` row: `("Generation Kill", "miniseries", 2008, 2008, ...)`
+  * `season`: single season row.
+  * `episode`: 7 rows.
+  * `character`: Wright, officers, squads.
+  * `location`: Kuwait, Iraqi cities, bases.
+  * `tag`: “Logistics failure”, “ROE conflict”, “Moral injury”.
+  * `scene`: convoy sequences, firefights, downtime — all using the same structural system as Evangelion.
+
+Same ERD, different shows. You just swap the data.

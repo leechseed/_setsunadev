@@ -1,0 +1,153 @@
+---
+title: >-
+  Here’s exactly what I need from you to move forward cleanly, plus every
+  open-end
+updated: 2025-12-18 13:12:27Z
+created: 2025-12-18 13:12:26Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+Here’s exactly what I need from you to move forward cleanly, plus every open-ended question that affects the design. If you answer these (or upload the files that implicitly answer them), we can stop guessing and just build.
+
+## What to upload (minimum)
+
+1. **Your repo as a zip** (preferred), or at least these files:
+
+   * `app.py` (or whatever runs Streamlit)
+   * `db.py` / `database.py` (anything that connects to Postgres)
+   * `schema.sql` / `migrations/` folder if it exists
+   * `archetype_text.py` (the big dictionaries)
+   * any “logic” module: `astro_logic.py`, `bfas_logic.py`, etc.
+   * `requirements.txt` or `pyproject.toml`
+2. **A database dump OR schema + seed**
+
+   * Best: `pg_dump --schema-only` and `pg_dump --data-only` (sanitized)
+   * Or: the SQL that creates tables + the SQL that inserts reference rows
+
+If you can’t zip the repo, upload the folder contents as multiple files—still workable, just more annoying.
+
+## What I need from your environment (facts, not vibes)
+
+* What OS are you on (Windows/macOS/Linux)?
+* How are you running Postgres (local install / Docker / cloud)?
+* Postgres version?
+* Python version?
+* What’s the *one command* you run to start the app?
+
+## The real fork in the road (you must pick one direction)
+
+* Do you want to **stabilize the current V1 app first** (so it runs correctly today)?
+* Or do you want to **jump to Schema V2 immediately** (ref tables + library tables, less Python dict reliance)?
+
+Both are valid. But mixing them mid-flight causes chaos.
+
+## Open-ended questions I need answered
+
+### A) Scope & “definition of done”
+
+1. What’s the next milestone you actually want?
+
+   * “App runs and shows planet/sign descriptions correctly”
+   * “Schema V2 exists + seeded + app reads from it”
+   * “Full migration: all lore + wiring + character data”
+2. What is the *minimum feature set* you consider “working”?
+3. What parts are “nice to have later” vs “must ship now”?
+
+### B) Source-of-truth rules
+
+4. In the end state, is the **source of truth**:
+
+   * Python dictionaries, or
+   * the Postgres tables?
+5. Are you okay with the DB being editable and becoming canon (meaning text changes live in DB)?
+6. Do you want versioning of lore text (history of changes) or just overwrite?
+
+### C) Data model decisions (this is where migrations succeed or die)
+
+7. What are the *canonical entities*?
+
+   * Planets only? Planets + nodes (SN) + Chiron + asteroids?
+8. Are things like `SN_...` and `CHIRON_...` treated as “planets” or a different category (“bodies/points”)?
+9. Do your variable keys always follow a strict pattern like `SUN_IDENTITY_AXIS`?
+10. Is `variable_key` globally unique forever, or can it change?
+11. Do you need to support multiple “libraries” (different lore packs / styles / tones)?
+12. Do you need multi-project support (ASTRO7EX vs other projects) inside the same DB?
+
+### D) Lore structure specifics
+
+13. For each zodiac sign, do you want to store:
+
+* just a sign description
+* plus the huge per-variable lore text
+* plus additional metadata (tags, tone, style, difficulty)
+
+14. Is lore text expected to be:
+
+* one paragraph per (planet, sign, variable)
+* or multiple entries per slot (variants)?
+
+15. Do you need templating in lore text (like `{character_name}` substitutions), or is it plain text?
+
+### E) Wiring / trait math specifics
+
+16. Where does the “wiring” currently live (which file/table)?
+17. Are weights static, or do you want them tunable by the user?
+18. Are weights per:
+
+* variable_key only
+* or variable_key + planet
+* or variable_key + sign
+* or variable_key + planet + sign
+
+19. Do you want resonance to scale linearly (volume/6) or something else?
+20. What is the authoritative list of BFAS traits/facets you support?
+
+### F) Character workflow (how users create/edit a character)
+
+21. How do you choose placements right now?
+
+* dropdowns? sliders? computed from birth time?
+
+22. Do you plan to compute placements from real natal chart data eventually?
+23. Can a user override placements manually?
+24. Do you need multiple characters, and do characters belong to “users” (auth/multi-user), or is this local solo?
+
+### G) Migration constraints
+
+25. Do you need to preserve existing character data from V1 tables?
+26. Is it okay if we wipe and reseed (dev-only), or must this be a safe migration?
+27. Do you want idempotent seeding (safe to run repeatedly without duplicates)?
+
+### H) UI expectations
+
+28. What must the UI show on the “planet card” / “sign card”?
+
+* title
+* description
+* variable breakdown
+* resonance controls
+
+29. Should the UI be able to **edit** lore text, or read-only?
+
+### I) Security / deployment
+
+30. Is this strictly local, or will you deploy it anywhere?
+31. Are you okay moving all credentials to `.env` and never hardcoding them again?
+32. Do you want Docker support?
+
+---
+
+## If you want the fastest path
+
+Answer just these 6 first (everything else can follow):
+
+1. V1 stabilize or V2 migrate?
+2. Repo zip uploaded? (yes/no)
+3. Postgres version + how it’s running
+4. Where is the wiring currently defined? (file/table name)
+5. Are `SN` and `CHIRON` “planets” in your mental model?
+6. Must preserve existing DB character data or can we wipe dev DB?
+
+If you upload the repo zip + a schema dump, I can stop asking most of this because the code will answer it.

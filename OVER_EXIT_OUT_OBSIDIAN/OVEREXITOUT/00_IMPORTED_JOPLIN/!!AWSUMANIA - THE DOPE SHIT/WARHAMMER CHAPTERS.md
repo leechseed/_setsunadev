@@ -1,0 +1,199 @@
+---
+title: WARHAMMER CHAPTERS
+updated: 2025-11-09 14:26:44Z
+created: 2025-11-09 14:04:13Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# Space Marine 2 – Chapter Shortlist RP Guide
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Loyalist First Founding Chapters](#loyalist-first-founding-chapters)
+   - [Dark Angels](#dark-angels)
+   - [Salamanders](#salamanders)
+   - [Black Templars](#black-templars)
+3. [“Weirdos & Orphans” Loyalists](#weirdos--orphans-loyalists)
+   - [Blood Ravens](#blood-ravens)
+   - [Carcharodons (Space Sharks)](#carcharodons-space-sharks)
+   - [Red Scorpions](#red-scorpions)
+   - [Storm Giants](#storm-giants)
+4. [Ultramarine Successors](#ultramarine-successors)
+   - [Doom Eagles](#doom-eagles)
+   - [Tome Keepers](#tome-keepers)
+   - [Hawk Lords](#hawk-lords)
+5. [Chaos Warbands](#chaos-warbands)
+   - [Black Legion](#black-legion)
+   - [Death Guard](#death-guard)
+   - [Night Lords](#night-lords)
+6. [Quick RP Choice Cheat Sheet](#quick-rp-choice-cheat-sheet)
+
+---
+
+## Overview
+
+Shortlist of chapters/warbands you actually care about for **Space Marine 2** RP:
+
+- Each entry = **Lore Vibe** + **Pick for RP if…**
+- No mechanical differences, just **archetype and flavor**.
+
+---
+
+## Loyalist First Founding Chapters
+
+### Dark Angels
+
+- **Lore Vibe:**  
+  Secretive monk-knights with a gigantic shame kink about past heresy. Hooded robes, gothic cathedral aesthetic, permanent redacted files.
+- **Pick for RP if:**  
+  You like **“Catholic guilt: the faction.”** Crusading knights hunting their own fallen brothers, brooding, and hiding classified sins from everyone.
+
+---
+
+### Salamanders
+
+- **Lore Vibe:**  
+  Fire-loving, hammer-wielding blacksmith-philosophers; unusually compassionate toward humans compared to other Astartes.
+- **Pick for RP if:**  
+  You like **“gentle giant who turns people into ash with a flamer.”** Protector of civilians, artisan, charismatic big brother energy.
+
+---
+
+### Black Templars
+
+- **Lore Vibe:**  
+  Zealous crusader-paladins permanently on holy war. Zero psykers, max religious fervor, everything is a crusade.
+- **Pick for RP if:**  
+  You want to be an **unhinged paladin** – chanting litanies, hating witches, never taking off your armor, and always, always charging.
+
+---
+
+## “Weirdos & Orphans” Loyalists
+
+### Blood Ravens
+
+- **Lore Vibe:**  
+  Knowledge-obsessed mystery collectors with suspiciously good luck around relics (Dawn of War fame). “We didn’t steal it, we found it.”
+- **Pick for RP if:**  
+  You want to play a **librarian-leaning relic hoarder** – always “finding” sacred artifacts, half-suspected of being secretly cursed.
+
+---
+
+### Carcharodons (Space Sharks)
+
+- **Lore Vibe:**  
+  Semi-mythical void predators; brutal, silent, tribal. They show up from the dark, butcher everything, then vanish back into the deep.
+- **Pick for RP if:**  
+  You want **shark horror energy** – quiet, distant, super-violent, treating campaigns as migratory hunts.
+
+---
+
+### Red Scorpions
+
+- **Lore Vibe:**  
+  Gene-purity fanatics, snobby, obsessed with regulations and “true” Astartes standards.
+- **Pick for RP if:**  
+  You like **rules-lawyer space marines** – constantly judging other chapters, sneering at anyone not up to your standards.
+
+---
+
+### Storm Giants
+
+- **Lore Vibe:**  
+  Massive, slow, durable marines; patient, methodical, rarely speak. Walking fortresses.
+- **Pick for RP if:**  
+  You want to be a **living fortress** – towering, quiet, and terrifying when you finally move.
+
+---
+
+## Ultramarine Successors
+
+### Doom Eagles
+
+- **Lore Vibe:**  
+  Death-obsessed paratrooper types; convinced they’re already dead, so they fear nothing.
+- **Pick for RP if:**  
+  You want **emo stoic jump troops** – fatalistic, fearless, grim but oddly calm while dropping out of the sky into hell.
+
+---
+
+### Tome Keepers
+
+- **Lore Vibe:**  
+  Archivist-warriors, dedicated to preserving history and stories of the Imperium.
+- **Pick for RP if:**  
+  You want a **combat historian** – the squad scribe who records every battle obsessively and quotes past campaigns like scripture.
+
+---
+
+### Hawk Lords
+
+- **Lore Vibe:**  
+  Aero-assault junkies; jump packs, fast drops, loud colors (purple flex), and high-speed strikes.
+- **Pick for RP if:**  
+  You want **high-style aerial murder** – screaming in from the skies in flashy colors, living for momentum and spectacle.
+
+---
+
+## Chaos Warbands
+
+### Black Legion
+
+- **Lore Vibe:**  
+  Abaddon’s main legion; ex-Luna Wolves/Sons of Horus. Generic, central Chaos poster boys of the Long War.
+- **Pick for RP if:**  
+  You want to be the **face of Chaos** – ambitious warlord type, framing every action as part of a grand crusade against the Imperium.
+
+---
+
+### Death Guard
+
+- **Lore Vibe:**  
+  Plague-marines of Nurgle; unstoppable rot, obscene resilience, and surprisingly chill gallows humor.
+- **Pick for RP if:**  
+  You like **body horror + weirdly chill camaraderie** – talking about decay like it’s just weather, shrugging off mutilation with a laugh.
+
+---
+
+### Night Lords
+
+- **Lore Vibe:**  
+  Terror troops; Batman if Batman skinned people and worshipped fear instead of justice. No real ideology beyond punishment and dread.
+- **Pick for RP if:**  
+  You enjoy **psychological horror** – intimidation, threats over ideology, “we broke them before we shot them.”
+
+---
+
+## Quick RP Choice Cheat Sheet
+
+- **Guilty, secretive knight-monk:**  
+  → Dark Angels  
+- **Gentle giant protector with industrial flamethrower energy:**  
+  → Salamanders  
+- **Unhinged religious paladin:**  
+  → Black Templars  
+
+- **Relic-hoarding scholar / occult nerd:**  
+  → Blood Ravens  
+- **Void predator, shark horror, minimal talking:**  
+  → Carcharodons  
+- **Gene-purity rules lawyer:**  
+  → Red Scorpions  
+- **Slow, colossal “walks through artillery” fortress:**  
+  → Storm Giants  
+
+- **Emo, fatalistic jump assault boy:**  
+  → Doom Eagles  
+- **In-universe war reporter / archivist:**  
+  → Tome Keepers  
+- **Flashy aerial murder-gremlin:**  
+  → Hawk Lords  
+
+- **Big-picture Chaos warlord:**  
+  → Black Legion  
+- **Rotting but jovial plague tank:**  
+  → Death Guard  
+- **Serial-killer horror show in power armor:**  
+  → Night Lords

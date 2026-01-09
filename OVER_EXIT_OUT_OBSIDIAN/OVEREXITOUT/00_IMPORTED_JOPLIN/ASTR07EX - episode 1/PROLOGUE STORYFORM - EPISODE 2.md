@@ -1,0 +1,88 @@
+---
+title: 'PROLOGUE STORYFORM - EPISODE 2 '
+updated: 2025-08-29 17:48:52Z
+created: 2025-08-29 17:48:39Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+	# PROLOGUE STORYFORM — EPISODE 2
+**Working Title:** The Ancient Wallet Job  
+**Function:** Shift from situation to *manipulation & planning*, introduce MODS as the standing IC force, and light the countdown that Ep. 3 must execute against.
+
+## Story Dynamics
+- **Driver:** Action → MODS protocols hit first; choices follow
+- **Limit:** Timelock → DHR ping initializes a silent countdown
+- **Outcome:** Success → the plan is conceived and the lead secured
+- **Judgment:** Bad → personal cost deepens; trust corrodes
+- **MC Resolve/Growth/Approach/Style:** Steadfast • Stop • Do-er • Linear
+
+## Throughlines
+
+### Overall Story (OS)
+- **Domain:** Psychology (Manipulation)
+- **Concern:** Conceptualizing (engineering the heist schema)
+- **Issue:** State of Being vs. Sense of Self
+- **Problem / Solution:** **Avoid** → **Pursuit**
+- **Symptom / Response:** **Support** ↔ **Oppose**
+- **Goal:** Design a viable plan to recover the ancient bitcoin wallet
+- **Consequence:** Being co-opted into MODS compliance protocols
+- **Requirements:** Secure access routes; procure analog failsafes
+- **Forewarnings:** Prototype plans keep collapsing under surveillance
+- **Catalyst / Inhibitor:** Responsibility / Commitment
+- **Benchmark:** Becoming (crew “becomes” criminals or martyrs)
+
+### Main Character (MC) — *Vivian*
+- **Domain:** Universe (Situation) — outlawed, resource-strapped exile
+- **Concern:** Present (today’s scarcity and exposure)
+- **Issue:** Openness vs. Prejudice
+- **Problem / Solution:** **Uncontrolled** → **Control**
+- **Unique Ability:** Approach (decisive strikes)
+- **Critical Flaw:** Attitude (contempt that burns bridges)
+
+### Impact Character (IC) — *MODS* (the System)
+- **Domain:** Mind (Fixed Attitude) — encoded refusal to change
+- **Concern:** Memory (immutable records; protocol over truth)
+- **Issue:** Closure vs. Denial
+- **Problem / Solution:** **Non-Accurate** → **Accurate**  
+  *(their brittle “exactness” exposes itself when reality doesn't fit)*
+- **IC Function:** Impose static definitions; nullify her premises
+
+### Relationship (RS) — *Vivian ↔ MODS*
+- **Domain:** Physics (Activity)
+- **Concern:** Obtaining (access, keys, clearance)
+- **Issue:** Morality vs. Self-Interest
+- **Problem / Solution:** **Hinder** → **Help**
+- **Benchmark:** Doing (workarounds, analog rituals, dirty ops)
+
+## Plot Progressions (Signposts → brief beats)
+
+### OS (Psychology / Conceptualizing)
+1. **Conceiving:** Rumor of the ancient wallet resurfaces  
+2. **Being:** Crew adopt false roles; social engineering runs  
+3. **Becoming:** Masks stick; lines blur; temptation rises  
+4. **Conceptualizing:** The final heist design “clicks” under pressure
+
+### MC (Universe)
+1. **Past:** Debrief of what the purge cost  
+2. **Progress:** Scavenging improves…then a setback  
+3. **Present:** Pinpoint the live window before DHR trips  
+4. **Future:** Choose to risk everything on the plan
+
+### IC (Mind)
+1. **Memory:** MODS cites immutable logs to deny access  
+2. **Conscious:** Their “concerns” are policy flags, not ethics  
+3. **Preconscious:** Automated blocks trigger without debate  
+4. **Subconscious:** Their bedrock motive is stasis, not safety
+
+### RS (Physics)
+1. **Learning:** She maps how to “talk” around protocols  
+2. **Understanding:** Realizes silence is their weapon  
+3. **Doing:** She builds an analog ritual to bypass them  
+4. **Obtaining:** First shard of access secured
+
+## Bridge to Ep. 3
+- Flips the series into **OS: Physics** with a live **heist-in-motion**.
+- Hard-introduces **MODS as the standing IC** that Ep. 3 will fully oppose.
+- Starts the **DHR countdown**—Ep. 3 must *act* under **Understanding/Conditioning** pressure.

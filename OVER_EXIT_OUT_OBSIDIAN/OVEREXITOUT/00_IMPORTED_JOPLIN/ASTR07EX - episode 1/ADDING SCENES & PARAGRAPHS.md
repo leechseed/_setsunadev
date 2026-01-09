@@ -1,0 +1,149 @@
+---
+title: ADDING SCENES & PARAGRAPHS
+updated: 2025-09-06 09:19:03Z
+created: 2025-09-06 09:18:54Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# ☕ Coffee Break Scenes & Paragraphs Kit — Ep.1 “Slumside Core”
+**Purpose:** Build scenes that *drive story* and paragraphs that *carry charge*, using fast sprints you can reuse across the pilot.
+
+---
+
+## A) The 5 Commandments of **Scenes**
+1) **Job** — Each scene does at least one: advance plot • reveal character • deepen theme.  
+2) **Micro-Arc** — Setup → disruption → shift (the next choice changes).  
+3) **Anchor** — First lines orient POV • place • time • objective.  
+4) **Friction** — Even quiet scenes carry tension (goal vs. obstacle in the frame).  
+5) **Exit on Change** — Leave on a hook or reversal; status ≠ start.
+
+### Scene Quality Gates (tick before moving on)
+- [ ] I can name the scene’s **job** in 1 line.  
+- [ ] There’s a **visible objective** and **present opposition**.  
+- [ ] A **shift** occurs (stakes, knowledge, power, plan).  
+- [ ] POV is **consistent**; no camera/voice wobble.  
+- [ ] Exit beat **forces** a new decision.
+
+---
+
+## B) The 5 Commandments of **Paragraphs**
+1) **One Thought** — Each paragraph executes a single beat/idea.  
+2) **Lead Line = Anchor** — Orient action/idea immediately.  
+3) **Strong Verbs > Adjectives** — Cut mush; pick concrete actions.  
+4) **Rhythm** — Vary sentence length; end on impact.  
+5) **Carry-Through** — Last line pushes momentum into the next unit.
+
+### Paragraph Quality Gates
+- [ ] First sentence **anchors** the beat.  
+- [ ] Nouns are **specific**; verbs **do work**.  
+- [ ] No two long sentences in a row in action blocks.  
+- [ ] Last line **tilts** forward (question, image, threat).  
+- [ ] Zero filler (every word earns its keep).
+
+---
+
+## C) Coffee-Break **Scene** Sprints (5–7 min each)
+1) **Job-in-1** — Write the scene’s job in **11 words or fewer**.  
+2) **Objective/Obstacle** — List the MC’s **visible objective** and **present obstacle** (no abstracts).  
+3) **Disruption Beat** — Draft 1 line that *breaks* the status quo **on the page**.  
+4) **Exit Hook** — Write 2 alt exit beats; pick the sharper one.  
+5) **Friction Pass** — Add a small, **complicating force** (weather, witness, timer, noise) that pressures action.  
+6) **POV Lock** — One sentence defining what the POV can/can’t perceive this scene.  
+7) **Concrete Five** — Add 5 sensory specifics (sound, touch, light, texture, smell).
+
+---
+
+## D) Coffee-Break **Paragraph** Sprints (3–5 min each)
+1) **Anchor Line Swap** — Replace a soft opener with a crystal anchor (who/doing/where).  
+2) **Verb Hunt (×10)** — Swap 10 weak verbs for precise actions (strap, pry, wedge, wick, cinch).  
+3) **Trim 10%** — Cut 10% of words without losing meaning.  
+4) **Pulse Maker** — Break one long block into **punch + breath** rhythm (short line, then glide).  
+5) **Image Button** — End a paragraph on a concrete image (not an idea).  
+6) **Echo Kill** — Remove repeated info already shown on-screen.
+
+---
+
+## E) Pilot Scene Card (printable)
+**SCENE #:** ___  
+**JOB:** (plot / character / theme) — ___  
+**POV:** ___  
+**OBJECTIVE vs. OBSTACLE:** ___ vs. ___  
+**SETUP (2–3 beats):**  
+- ___  
+- ___  
+**DISRUPTION (1 beat):** ___  
+**CONFLICT (2–4 beats):**  
+- ___  
+- ___  
+**SHIFT (exit beat):** ___ (what’s different?)  
+**HOOK:** ___ (what compels next scene?)  
+**CONCRETE FIVE:** (sound/light/touch/texture/smell)  
+1) ___  2) ___  3) ___  4) ___  5) ___  
+**DRAMATICA TIE:** (OS/MC/IC/RS) ___  
+**RUN TIME / PAGES:** ___
+
+---
+
+## F) Paragraph Tune Card (micro)
+**PARA PURPOSE:** ___ (what beat does this paragraph deliver?)  
+**ANCHOR LINE:** ___ (who/doing/where)  
+**KEY IMAGE/VERB:** ___ / ___  
+**RHYTHM PLAN:** short–short–long / long–short–short / staccato burst  
+**BUTTON IMAGE:** ___ (last word should be concrete)  
+**CUT TEST:** Remove it; does the scene still work? If yes, fold or cut.
+
+---
+
+## G) Montage/Reflection Integration (scene-safe)
+Use reflection beats as **scenes that obey the rules** (they still shift).
+
+- **RB Scene Job:** reveal world rule • externalize inner cost • reframe plan.  
+- **RB Scene Disruption:** music drop / visual glitch / timer tick alters intent.  
+- **RB Exit:** new readiness or new doubt → pushes next action.
+
+**RB Scene Card (mini):**  
+- **JOB:** ___  
+- **IMAGES (6–12):** line list  
+- **SOUND BED (3):** ___ / ___ / ___  
+- **SHIFT:** ___ (what changes in Vivian’s readiness/plan?)  
+- **HOOK:** ___
+
+---
+
+## H) Pacing Controls (fast toggles)
+- **Speed up:** shorter lines, concrete verbs, cut conjunctions, punchy paragraphing.  
+- **Slow down:** longer syntax, sensory layering, space between actions.  
+- **Tension without speed:** withhold micro-info (what’s behind the door?) while action continues.  
+- **Clarity rescue:** “who/doing/where” rewrite on first line of any muddy block.
+
+---
+
+## I) Dramatica Alignment (per scene)
+- **OS (Physics/Obtaining):** Is the **work** visible? (tethers, burns, bribes)  
+- **MC (Universe/Present):** Is **constraint** on-screen? (paperless, ration caps)  
+- **IC (Fisherman/Mind):** One **correction** or value test in-frame.  
+- **RS (Psychology/Becoming):** Does this interaction **nudge** ward→operator?
+
+---
+
+## J) Two Fast Examples (form only; fill with your details)
+**Action Paragraph (fast):**  
+> She straps. Breath clouds. Cable sings. A green tie flutters—the warning—then the hull kicks.
+
+**Reflective Paragraph (slow):**  
+> The tannoy lies in a warm hiss, counting tides that never match the dock. Her gloves remember the seam where the patch won’t hold.
+
+*(Swap with your images; keep the rhythm logic.)*
+
+---
+
+## K) Session Flow (30–40 min loop)
+1) Fill **Scene Card** (5 min).  
+2) Run **Scene Sprints** 1–4 (15 min).  
+3) Draft scene (10–15 min).  
+4) Run **Paragraph Sprints** 2–3 + **Quality Gates** (5 min).  
+5) If reflective: fill **RB mini-card** (3 min) and ensure a **shift**.
+
+> Output: Scenes that turn. Paragraphs that carry charge. A beginning that doesn’t stall.

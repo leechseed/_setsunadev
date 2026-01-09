@@ -1,0 +1,242 @@
+---
+title: MCDP 2 — Intelligence (Knowledgebase Summary)
+updated: 2025-12-18 18:53:55Z
+created: 2025-12-18 18:53:54Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# MCDP 2 — Intelligence (Knowledgebase Summary)
+
+## Abstract
+MCDP 2, *Intelligence*, establishes the Marine Corps’ philosophy and theory of intelligence as a fundamental component of command and control. It argues that intelligence is inseparable from operations and exists to support decisionmaking under conditions of uncertainty and hostile opposition. The publication defines intelligence as both knowledge and process, explains how intelligence reduces—but never eliminates—uncertainty, and frames intelligence as a command responsibility rather than a specialized technical function alone. It demands disciplined judgment, integration with operations, and a realistic understanding of intelligence’s capabilities and limitations.
+
+## TL;DR
+- Intelligence exists to support command decisionmaking, not to achieve certainty.
+- Intelligence is inseparable from command and operations.
+- Intelligence is both a product (knowledge) and a process.
+- Uncertainty is inherent and unavoidable in intelligence.
+- Understanding the enemy requires insight into both tangible and intangible factors.
+- Intelligence estimates deal in probabilities, not certainties.
+- Intelligence must be focused by commander-driven requirements.
+- Good intelligence depends more on judgment than on technology.
+- Intelligence is a responsibility shared by all Marines, not only specialists.
+
+---
+
+## Table of Contents
+1. [Abstract](#abstract)
+2. [TL;DR](#tldr)
+3. [Section-by-Section Breakdown](#section-by-section-breakdown)
+   - [Foreword / Preface](#foreword--preface)
+   - [Chapter 1 — The Nature of Intelligence](#chapter-1--the-nature-of-intelligence)
+     - [How Important Is Intelligence](#how-important-is-intelligence)
+     - [The Objectives of Intelligence](#the-objectives-of-intelligence)
+     - [Intelligence as Knowledge](#intelligence-as-knowledge)
+     - [Intelligence as a Process](#intelligence-as-a-process)
+     - [What Makes Intelligence Different](#what-makes-intelligence-different)
+     - [Expectations of Intelligence](#expectations-of-intelligence)
+     - [Intelligence in the Information Age](#intelligence-in-the-information-age)
+   - [Chapter 2 — Intelligence Theory](#chapter-2--intelligence-theory)
+     - [Understanding the Enemy](#understanding-the-enemy)
+     - [Characteristics of Good Intelligence](#characteristics-of-good-intelligence)
+     - [Classes of Intelligence](#classes-of-intelligence)
+     - [Capabilities Versus Intentions](#capabilities-versus-intentions)
+     - [Signals and Noise](#signals-and-noise)
+     - [Levels of Intelligence](#levels-of-intelligence)
+     - [Intelligence Requirements](#intelligence-requirements)
+     - [Sources of Intelligence](#sources-of-intelligence)
+     - [Functions of Intelligence](#functions-of-intelligence)
+   - [Chapter 3 — Creating Effective Intelligence](#chapter-3--creating-effective-intelligence)
+     - [Intelligence as a Command Responsibility](#intelligence-as-a-command-responsibility)
+     - [The Intelligence-Operations Connection](#the-intelligence-operations-connection)
+     - [Focusing the Intelligence Effort](#focusing-the-intelligence-effort)
+     - [Generating Tempo Through Intelligence](#generating-tempo-through-intelligence)
+     - [Intelligence Education and Training](#intelligence-education-and-training)
+4. [Mental Models](#mental-models)
+5. [Argument Map](#argument-map)
+6. [Key Concepts & Definitions](#key-concepts--definitions)
+
+---
+
+## Section-by-Section Breakdown
+
+### Foreword / Preface
+- Intelligence provides the conceptual framework for understanding and conducting intelligence activities.
+- Intelligence is grounded in the Marine Corps’ warfighting philosophy.
+- Intelligence reduces uncertainty but can never eliminate it.
+
+### Chapter 1 — The Nature of Intelligence
+This chapter defines intelligence, its purpose, and its relationship to command and operations.
+
+#### How Important Is Intelligence
+- Maneuver warfare depends on understanding the enemy and environment.
+- Judgment cannot substitute for accurate and timely intelligence.
+- Intelligence contributes directly to combat power.
+
+#### The Objectives of Intelligence
+- Intelligence supports decisionmaking by reducing uncertainty.
+- Intelligence identifies enemy capabilities, vulnerabilities, and possible actions.
+- Intelligence protects friendly forces through counterintelligence.
+
+#### Intelligence as Knowledge
+- Intelligence is knowledge derived from information.
+- Intelligence is distinct from raw data or information.
+- Intelligence exists to support action, not study.
+
+#### Intelligence as a Process
+- Intelligence is part of the command and control cycle.
+- Intelligence supports observation, orientation, decision, and action.
+- All Marines contribute to intelligence through operations.
+
+#### What Makes Intelligence Different
+- Intelligence deals with an independent, hostile will.
+- The enemy actively denies, conceals, and deceives.
+- Intelligence faces greater uncertainty than other functions.
+
+#### Expectations of Intelligence
+- Intelligence is expected to be detailed, accurate, and predictive.
+- Intelligence operates under inherent limitations.
+- Intelligence produces estimates, not certainties.
+
+#### Intelligence in the Information Age
+- Technology increases access to information.
+- Information does not equal understanding.
+- Human judgment remains decisive.
+
+### Chapter 2 — Intelligence Theory
+This chapter develops a theoretical framework for understanding intelligence.
+
+#### Understanding the Enemy
+- Intelligence seeks understanding of tangible and intangible factors.
+- Cultural, moral, and psychological factors shape enemy behavior.
+- Intelligence must view the enemy from the enemy’s perspective.
+
+#### Characteristics of Good Intelligence
+- Intelligence should be objective.
+- Intelligence should be thorough but not exhaustive.
+- Intelligence should be accurate, timely, usable, relevant, and available.
+
+#### Classes of Intelligence
+- Descriptive intelligence explains past and present conditions.
+- Estimative intelligence anticipates future possibilities.
+- Both classes are required for understanding.
+
+#### Capabilities Versus Intentions
+- Capabilities define what the enemy can do.
+- Intentions define what the enemy is likely to do.
+- Intentions are harder to assess than capabilities.
+
+#### Signals and Noise
+- Signals provide meaningful insight.
+- Noise obscures understanding.
+- Mindsets shape interpretation of information.
+
+#### Levels of Intelligence
+- Intelligence operates at tactical, operational, and strategic levels.
+- Marine Corps intelligence focuses primarily on the tactical level.
+- Higher-level intelligence provides essential context.
+
+#### Intelligence Requirements
+- Intelligence gaps drive intelligence effort.
+- Priority intelligence requirements focus resources.
+- Commanders direct intelligence priorities.
+
+#### Sources of Intelligence
+- Intelligence draws from diverse sources.
+- Source selection depends on the requirement.
+- All available sources should be integrated.
+
+#### Functions of Intelligence
+- Intelligence supports situational understanding.
+- Intelligence supports planning and execution.
+- Intelligence supports force protection and security.
+
+### Chapter 3 — Creating Effective Intelligence
+This chapter explains how intelligence effectiveness is achieved.
+
+#### Intelligence as a Command Responsibility
+- Commanders are responsible for intelligence effectiveness.
+- Intelligence cannot be delegated entirely to specialists.
+- Command guidance shapes intelligence focus.
+
+#### The Intelligence-Operations Connection
+- Intelligence and operations are mutually reinforcing.
+- Operations generate information for intelligence.
+- Intelligence shapes operational decisions.
+
+#### Focusing the Intelligence Effort
+- Resources are limited and must be prioritized.
+- Intelligence effort must align with commander intent.
+- Focus enables relevance and timeliness.
+
+#### Generating Tempo Through Intelligence
+- Intelligence enables faster decisionmaking.
+- Rapid understanding creates advantage.
+- Tempo depends on timely intelligence.
+
+#### Intelligence Education and Training
+- Education develops judgment.
+- Training develops skills and processes.
+- Professional development sustains effectiveness.
+
+---
+
+## Mental Models
+
+### Model 1 — Intelligence as Decision Support
+- **Model:** Intelligence exists to inform decisions, not to eliminate uncertainty.
+- **Use:** Guides commanders to act with imperfect knowledge.
+
+### Model 2 — Intelligence as a Cycle
+- **Model:** Intelligence continuously feeds command and operations.
+- **Use:** Reinforces integration with planning and execution.
+
+### Model 3 — Signals and Noise
+- **Model:** Valuable insight is hidden among misleading information.
+- **Use:** Encourages disciplined analysis and judgment.
+
+### Model 4 — Capabilities vs. Intentions
+- **Model:** What the enemy can do differs from what the enemy will do.
+- **Use:** Supports balanced estimation.
+
+### Model 5 — Intelligence as a Command Responsibility
+- **Model:** Intelligence effectiveness depends on leadership involvement.
+- **Use:** Prevents intelligence isolation.
+
+---
+
+## Argument Map
+- **Claim 1:** War is characterized by uncertainty and hostile opposition.
+  - **Therefore:** Intelligence can only reduce uncertainty, not remove it.
+- **Claim 2:** Decisions require understanding of the enemy and environment.
+  - **Therefore:** Intelligence must support command decisionmaking.
+- **Claim 3:** Information alone does not create understanding.
+  - **Therefore:** Intelligence requires analysis and judgment.
+- **Claim 4:** Intelligence resources are limited.
+  - **Therefore:** Commanders must focus intelligence effort.
+- **Conclusion:** Effective intelligence integrates judgment, process, and leadership to support decisive action under uncertainty.
+
+---
+
+## Key Concepts & Definitions
+- **Intelligence**: Knowledge of the enemy and environment supporting decisionmaking.
+- **Information**: Unevaluated data from any source.
+- **Uncertainty**: Inherent lack of complete knowledge in war.
+- **Decisionmaking**: The core purpose intelligence supports.
+- **Counterintelligence**: Actions to deny information to the enemy.
+- **Descriptive Intelligence**: Intelligence describing past and present conditions.
+- **Estimative Intelligence**: Intelligence assessing future possibilities.
+- **Capabilities**: What the enemy can do.
+- **Intentions**: What the enemy is likely to do.
+- **Signals**: Information indicating meaningful insight.
+- **Noise**: Misleading or irrelevant information.
+- **Mindset**: Assumptions shaping interpretation.
+- **Intelligence Requirements**: Questions commanders need answered.
+- **Priority Intelligence Requirements**: Intelligence critical to mission success.
+- **Sources**: Means of obtaining information.
+- **Judgment**: Human ability to interpret and decide.
+- **Integration**: Intelligence combined with operations.
+- **Tempo**: Speed of decision and action.
+- **Command Responsibility**: Leadership ownership of intelligence effectiveness.

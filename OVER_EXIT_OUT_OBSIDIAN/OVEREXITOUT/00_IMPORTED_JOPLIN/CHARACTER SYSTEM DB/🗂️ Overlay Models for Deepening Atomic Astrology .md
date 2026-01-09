@@ -1,0 +1,743 @@
+---
+title: 🗂️ Overlay Models for Deepening Atomic Astrology Variable
+updated: 2025-12-10 14:47:19Z
+created: 2025-12-03 17:48:13Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+Here is your updated Knowledgebase Entry. I have surgically removed the standard "OCEAN" model and replaced it with the **Big Five Aspects Scale (BFAS)** to match your new database structure.
+
+I also updated the **Table of Contents** to reflect the change.
+
+-----
+
+# 🗂️ Knowledgebase Entry — Overlay Models for Deepening Atomic Astrology Variables
+
+-----
+
+## 📑 Table of Contents
+
+1.  [Overview](https://www.google.com/search?q=%23overview)
+2.  [Core Identity / Ego Models](https://www.google.com/search?q=%231-core-identity--ego-models)
+      * [1.1 Big Five Aspects Scale (BFAS)](https://www.google.com/search?q=%2311-big-five-aspects-scale-bfas) **\<-- UPDATED**
+      * [1.2 Enneagram](https://www.google.com/search?q=%2312-enneagram)
+      * [1.3 Jungian / Mythic Archetypes](https://www.google.com/search?q=%2313-jungian--mythic-archetypes)
+3.  [Emotional & Attachment Models](https://www.google.com/search?q=%232-emotional--attachment-models)
+      * [2.1 Attachment Styles](https://www.google.com/search?q=%2321-attachment-styles)
+      * [2.2 Polyvagal / Fight–Flight–Freeze–Fawn](https://www.google.com/search?q=%2322-polyvagal--fightflightfreezefawn)
+      * [2.3 Emotion Regulation & Coping Styles](https://www.google.com/search?q=%2323-emotion-regulation--coping-styles)
+4.  [Cognition & Communication Models](https://www.google.com/search?q=%233-cognition--communication-models)
+      * [3.1 System 1 / System 2](https://www.google.com/search?q=%2331-system-1--system-2)
+      * [3.2 Cognitive Distortions](https://www.google.com/search?q=%2332-cognitive-distortions)
+      * [3.3 Social Intelligence / Political Skill](https://www.google.com/search?q=%2333-social-intelligence--political-skill)
+5.  [Desire, Love & Erotic Patterning](https://www.google.com/search?q=%234-desire-love--erotic-patterning)
+      * [4.1 Sternberg’s Triangular Theory of Love](https://www.google.com/search?q=%2341-sternbergs-triangular-theory-of-love)
+      * [4.2 Love Languages](https://www.google.com/search?q=%2342-love-languages)
+      * [4.3 Erotic Blueprints / Sexual Archetypes](https://www.google.com/search?q=%2343-erotic-blueprints--sexual-archetypes)
+6.  [Action, Conflict & Power Models](https://www.google.com/search?q=%235-action-conflict--power-models)
+      * [5.1 Thomas–Kilmann Conflict Modes](https://www.google.com/search?q=%2351-thomaskilmann-conflict-modes)
+      * [5.2 Karpman Drama Triangle](https://www.google.com/search?q=%2352-karpman-drama-triangle)
+      * [5.3 Grit & Growth Mindset](https://www.google.com/search?q=%2353-grit--growth-mindset)
+7.  [Growth, Meaning & Destiny Models](https://www.google.com/search?q=%236-growth-meaning--destiny-models)
+      * [6.1 Maslow’s Hierarchy of Needs](https://www.google.com/search?q=%2361-maslows-hierarchy-of-needs)
+      * [6.2 Self-Determination Theory](https://www.google.com/search?q=%2362-self-determination-theory)
+      * [6.3 Character Arc Types](https://www.google.com/search?q=%2363-character-arc-types)
+8.  [Shadow, Wounds & Parts Models](https://www.google.com/search?q=%237-shadow-wounds--parts-models)
+      * [7.1 Jungian Shadow](https://www.google.com/search?q=%2371-jungian-shadow)
+      * [7.2 Internal Family Systems (IFS)](https://www.google.com/search?q=%2372-internal-family-systems-ifs)
+      * [7.3 Schema Therapy](https://www.google.com/search?q=%2373-schema-therapy)
+9.  [Persona, Social Role & Group Dynamics](https://www.google.com/search?q=%238-persona-social-role--group-dynamics)
+      * [8.1 Goffman’s Dramaturgy](https://www.google.com/search?q=%2381-goffmans-dramaturgy)
+      * [8.2 Group Role Models](https://www.google.com/search?q=%2382-group-role-models)
+10. [Chart Shape & Aspect Web Models](https://www.google.com/search?q=%239-chart-shape--aspect-web-models)
+      * [9.1 Temperaments & Elemental Typology](https://www.google.com/search?q=%2391-temperaments--elemental-typology)
+      * [9.2 Dialectical Tension Models](https://www.google.com/search?q=%2392-dialectical-tension-models)
+11. [Implementation Cheatsheet](https://www.google.com/search?q=%23implementation-cheatsheet-per-subsystem)
+
+-----
+
+## Overview
+
+This entry defines a **set of overlay models** you can attach to your **atomic astrology variables** (Sun, Moon, planets, houses, aspects, nodes, etc.) to deepen characterization and narrative behavior.
+
+Each section:
+
+  * Names the external model.
+  * Specifies **where it plugs into your atomic variables**.
+  * Explains **how to use it operationally**.
+  * Gives a quick **example mental mapping**.
+
+You can treat each external model as a **pack of sliders** you attach to specific variable clusters.
+
+-----
+
+## 1\. Core Identity / Ego Models
+
+*Applies to:*
+**Sun**, **Ascendant**, **Midheaven**, **House 1**, **House 10**, and related identity variables like:
+
+  * `SUN_IDENTITY_AXIS`, `SUN_MOTIVATION_VECTOR`, `SUN_EGO_STYLE`, `SUN_PRIDE_CENTER`, `ARCHETYPE_CATEGORY`
+  * `ASC_SURFACE_IMAGE`, `ASC_MASK_VS_CORE_GAP`, `SOCIAL_POWER_LEVEL`
+  * `MC_PUBLIC_IMAGE`, `MC_PROFESSIONAL_ARCHETYPE`, `MC_MYTHIC_ROLE`
+
+-----
+
+### 1.1 Big Five Aspects Scale (BFAS)
+
+**What it is:**
+A high-resolution evolution of the Big Five that splits the 5 traits into **10 functional aspects**. This separates "Agency" from "Sociability" and "Anger" from "Fear," allowing for precise RPG mechanics.
+
+**The 10 Aspects:**
+
+1.  **Neuroticism:** *Volatility* (Anger/Impulse) vs *Withdrawal* (Anxiety/Depression).
+2.  **Agreeableness:** *Compassion* (Empathy) vs *Politeness* (Social Norms).
+3.  **Conscientiousness:** *Industriousness* (Drive/Grit) vs *Orderliness* (Structure/Clean).
+4.  **Extraversion:** *Enthusiasm* (Sociability/Joy) vs *Assertiveness* (Dominance/Leadership).
+5.  **Openness:** *Intellect* (Logic/Ideas) vs *Openness* (Aesthetics/Fantasy).
+
+**Plug into:**
+
+  * **Assertiveness:** `SUN_MOTIVATION_VECTOR`, `SOCIAL_POWER_LEVEL`, `MARS_ACTION_STYLE`
+  * **Enthusiasm:** `SUN_EGO_STYLE`, `ASC_INTERACTION_STYLE`
+  * **Volatility:** `MOON_TRIGGER_SET`, `MARS_CONFLICT_TRIGGER`
+  * **Withdrawal:** `MOON_NEED_CORE`, `MOON_SURVIVAL_SCRIPT`
+  * **Compassion:** `MOON_ATTACHMENT_PATTERN`, `VENUS_LOVE_STYLE`
+  * **Industriousness:** `SUN_PRIDE_CENTER`, `SATURN_DISCIPLINE_MODE`
+
+**How to use:**
+
+  * Give each of the 10 aspects a **0–100 score**.
+  * Use them to distinguish characters who look similar on the surface.
+
+**Example:**
+
+  * **The "Cold Commander" (Saturnian/Martial):**
+      * **High Assertiveness** (Commanding) but **Low Enthusiasm** (Not fun at parties).
+      * **High Industriousness** (Grinds hard) but **Low Compassion** (Ruthless).
+      * *Standard Big Five would confusingly rate this person "Medium Extraversion," blurring the nuance.*
+
+-----
+
+### 1.2 Enneagram
+
+**What it is:**
+9 core types (with wings), each with **core fear & desire**.
+
+**Plug into:**
+
+  * `SUN_MOTIVATION_VECTOR`
+  * `SUN_THEMATIC_QUESTION`
+  * `SUN_PRIDE_CENTER`
+  * `CONFLICT_STANCE`
+
+**How to use:**
+
+  * Choose **1 core type + wing**.
+  * Core fear/desire defines:
+      * What they chase.
+      * What they defend.
+      * What the plot attacks.
+
+**Example:**
+
+  * Type 3 (Achiever):
+      * Fear: worthlessness. Desire: to be valuable/successful.
+      * `SUN_THEMATIC_QUESTION = "Am I anything without my achievements?"`
+      * `SUN_PRIDE_CENTER = "status and performance"`.
+
+-----
+
+### 1.3 Jungian / Mythic Archetypes
+
+**What it is:**
+Hero, Mentor, Trickster, Ruler, etc.
+
+**Plug into:**
+
+  * `SUN_ROLE_ARCHETYPE`
+  * `ARCHETYPE_CATEGORY`
+  * `MC_MYTHIC_ROLE`
+
+**How to use:**
+
+  * Pick a **mythic slot**:
+      * Hero, Ruler, Outlaw, Sage, etc.
+  * Hybridize with Enneagram/BFAS to avoid cliché.
+
+**Example:**
+
+  * Enneagram 8 + Ruler → “Warlord-CEO”
+      * `SUN_ROLE_ARCHETYPE = "Warlord-CEO"`
+      * `MC_MYTHIC_ROLE = "Conqueror of [Domain]"`.
+
+-----
+
+## 2\. Emotional & Attachment Models
+
+*Applies to:*
+**Moon**, **IC**, **Chiron**, **House 4**, **House 8**, **House 12**, and variables like:
+
+  * `MOON_NEED_CORE`, `MOON_ATTACHMENT_PATTERN`, `MOON_SURVIVAL_SCRIPT`
+  * `CRISIS_RESPONSE_MODE`, `EMOTIONAL_CONFLICT_PATTERN`, `COPING_STRATEGY`
+  * `IC_ORIGIN_WOUND`, `CHIRON_CORE_WOUND`, `H8_TRAUMA_VECTOR`, `H12_HIDDEN_WOUNDS`
+
+-----
+
+### 2.1 Attachment Styles
+
+**What it is:**
+Secure, Anxious, Avoidant, Disorganized.
+
+**Plug into:**
+
+  * `MOON_ATTACHMENT_PATTERN`
+  * `RELATIONSHIP_GLITCH`
+  * `MOON_SURVIVAL_SCRIPT`
+  * `IC_ORIGIN_WOUND` / `IC_FIELD_OF_ROOTS`
+
+**How to use:**
+
+  * Choose 1 main style.
+  * Use it to define:
+      * How they bond.
+      * How they panic in relationships.
+      * How childhood set that pattern.
+
+**Example:**
+
+  * Anxious-avoidant:
+      * Chases, then withdraws hard.
+      * `RELATIONSHIP_GLITCH = "pursue-then-ghost pattern"`.
+
+-----
+
+### 2.2 Polyvagal / Fight–Flight–Freeze–Fawn
+
+**What it is:**
+Nervous-system modes under threat.
+
+**Plug into:**
+
+  * `CRISIS_RESPONSE_MODE`
+  * `MOON_SURVIVAL_SCRIPT`
+  * `H12_CONFINEMENT_FIELD`
+
+**How to use:**
+
+  * Pick **primary** and **secondary** response.
+  * That becomes their canonical meltdown behavior.
+
+**Example:**
+
+  * Fight → Freeze:
+      * Starts confrontational, ends dissociated.
+      * `MOON_EMOTIONAL_STYLE = "volcanic then numb"`.
+
+-----
+
+### 2.3 Emotion Regulation & Coping Styles
+
+**What it is:**
+Problem-focused, emotion-focused, avoidance, maladaptive.
+
+**Plug into:**
+
+  * `COPING_STRATEGY`
+  * `EMOTIONAL_CONFLICT_PATTERN`
+  * `CHIRON_WOUND_REPETITION_PATTERN`
+
+**How to use:**
+
+  * Assign main coping modes (e.g. avoidant + fantasy).
+  * Use them to specify **post-trigger routines**.
+
+**Example:**
+
+  * Avoidance + fantasy:
+      * `NEPTUNE_ESCAPISM_STYLE = "drugs + MMO binges"`
+      * `COPING_STRATEGY = "disappear, binge media, ignore messages"`.
+
+-----
+
+## 3\. Cognition & Communication Models
+
+*Applies to:*
+**Mercury**, **House 3**, **House 6**, and:
+
+  * `MERCURY_COGNITION_STYLE`, `MERCURY_DECISION_PROCESS`
+  * `MERCURY_COMMUNICATION_STYLE`, `MERCURY_SOCIAL_INTELLIGENCE_PROFILE`
+  * `DEFAULT_DECISION_BIASES`, `H3_MIND_ARCHETYPE`
+
+-----
+
+### 3.1 System 1 / System 2
+
+**What it is:**
+Fast intuitive vs slow analytic thinking.
+
+**Plug into:**
+
+  * `MERCURY_COGNITION_STYLE`
+  * `MERCURY_DECISION_PROCESS`
+  * `DEFAULT_DECISION_BIASES`
+
+**How to use:**
+
+  * Set a **ratio** (e.g. 80% S1 / 20% S2).
+  * Use this to explain:
+      * How quickly they decide.
+      * How often they’re right for the wrong reasons.
+
+-----
+
+### 3.2 Cognitive Distortions
+
+**What it is:**
+Catastrophizing, mind-reading, black-and-white, etc.
+
+**Plug into:**
+
+  * `DEFAULT_DECISION_BIASES`
+  * `EMOTIONAL_CONFLICT_PATTERN`
+  * `H3_MIND_ARCHETYPE`
+
+**How to use:**
+
+  * Pick 2–3 signature distortions.
+  * Use them as **rules** for wrong conclusions.
+
+**Example:**
+
+  * Catastrophizing + mind-reading:
+      * Reads one delayed text as total rejection.
+      * Generates recurring romance disasters by design.
+
+-----
+
+### 3.3 Social Intelligence / Political Skill
+
+**What it is:**
+Reading, influencing, and navigating people/systems.
+
+**Plug into:**
+
+  * `MERCURY_SOCIAL_INTELLIGENCE_PROFILE`
+  * `H11_GROUP_ARCHETYPE`
+  * `SOCIAL_POWER_LEVEL`
+
+**How to use:**
+
+  * Rate them:
+      * Oblivious / Average / Savvy / Apex.
+  * Use that to script meetings, councils, heists.
+
+-----
+
+## 4\. Desire, Love & Erotic Patterning
+
+*Applies to:*
+**Venus**, **Mars**, **House 5**, **House 7**, **House 8** and:
+
+  * `VENUS_LOVE_STYLE`, `VENUS_ATTRACTION_PROFILE`, `VENUS_PLEASURE_METRICS`
+  * `MARS_SEXUAL_DRIVE_MODE`
+  * `H5_ROMANCE_EXPRESSION`
+  * `H7_PARTNERSHIP_ARCHETYPE`
+  * `H8_MERGING_MODE`, `H8_OBSESSION_FIELD`
+
+-----
+
+### 4.1 Sternberg’s Triangular Theory of Love
+
+**What it is:**
+Three vertices: **Intimacy**, **Passion**, **Commitment**.
+
+**Plug into:**
+
+  * `VENUS_LOVE_STYLE`
+  * `H5_ROMANCE_EXPRESSION`
+  * `H7_PARTNERSHIP_ARCHETYPE`
+
+**How to use:**
+
+  * Give each vertex a **0–10 score**.
+  * Use the resulting shape as their **default relationship template**.
+
+-----
+
+### 4.2 Love Languages
+
+**What it is:**
+Words, Gifts, Acts, Time, Touch.
+
+**Plug into:**
+
+  * `VENUS_RELATIONAL_VALUES`
+  * `H5_PLEASURE_MODE`
+  * `H11_FRIENDSHIP_MODE`
+
+**How to use:**
+
+  * Choose primary + secondary language.
+  * That gives precise **micro-beats** of affection or neglect.
+
+-----
+
+### 4.3 Erotic Blueprints / Sexual Archetypes
+
+**What it is:**
+Your bespoke erotic system (sensual, kinky, energetic, etc.).
+
+**Plug into:**
+
+  * `VENUS_PLEASURE_METRICS`
+  * `MARS_SEXUAL_DRIVE_MODE`
+  * `H8_MERGING_MODE` / `H8_OBSESSION_FIELD`
+
+**How to use:**
+
+  * Pick a core erotic type.
+  * Use it to define:
+      * What counts as “real sex” to them.
+      * What qualifies as peak performance or failure.
+      * Where they are easiest to break or addict.
+
+-----
+
+## 5\. Action, Conflict & Power Models
+
+*Applies to:*
+**Mars**, **Saturn**, **Uranus**, **Pluto**, **House 7**, **House 8**, and:
+
+  * `CONFLICT_STANCE`, `MARS_ACTION_STYLE`, `MARS_CONFLICT_TRIGGER`
+  * `SATURN_DISCIPLINE_MODE`, `SATURN_LIMITATION_STYLE`
+  * `PLUTO_POWER_ARCHETYPE`
+  * `H7_RELATIONAL_STRATEGY`, `H8_TRAUMA_VECTOR`
+
+-----
+
+### 5.1 Thomas–Kilmann Conflict Modes
+
+**What it is:**
+Competing, Collaborating, Compromising, Avoiding, Accommodating.
+
+**Plug into:**
+
+  * `CONFLICT_STANCE`
+  * `MARS_CONFLICT_TRIGGER`
+  * `H7_RELATIONAL_STRATEGY`
+
+**How to use:**
+
+  * Choose default + stress fallback.
+  * Use that as template for **every argument**.
+
+-----
+
+### 5.2 Karpman Drama Triangle
+
+**What it is:**
+Victim, Persecutor, Rescuer cycle.
+
+**Plug into:**
+
+  * `PLUTO_POWER_ARCHETYPE`
+  * `H8_MERGING_MODE` / `H8_OBSESSION_FIELD`
+  * `H12_SHADOW_ARCHETYPE`
+
+**How to use:**
+
+  * Decide their **entry-role**.
+  * Track how they rotate roles in toxic loops.
+
+-----
+
+### 5.3 Grit & Growth Mindset
+
+**What it is:**
+Persistence + belief in improvability.
+
+**Plug into:**
+
+  * `SATURN_DISCIPLINE_MODE`
+  * `SATURN_LONG_TERM_ARC`
+  * `SATURN_LIMITATION_STYLE`
+
+**How to use:**
+
+  * Rate grit and growth mindset.
+  * Controls:
+      * When they quit.
+      * When they grind.
+      * Whether failures become evolution or scars.
+
+-----
+
+## 6\. Growth, Meaning & Destiny Models
+
+*Applies to:*
+**Jupiter**, **North Node**, **South Node**, **House 9**, **House 11**, **Midheaven**, and:
+
+  * `JUPITER_GROWTH_STRATEGY`, `JUPITER_EXPANSION_FIELD`
+  * `NN_LIFE_PATH_AXIS`, `NN_GROWTH_REQUIREMENT`
+  * `SN_KARMIC_MEMORY`
+  * `H9_BELIEF_SYSTEM`, `H11_FUTURE_VISION`
+  * `MC_LEGACY_VECTOR`
+
+-----
+
+### 6.1 Maslow’s Hierarchy of Needs
+
+**What it is:**
+Need tiers: physiological → safety → love → esteem → self-actualization → transcendence.
+
+**Plug into:**
+
+  * `MAIN_GOAL_TYPE`
+  * `JUPITER_EXPANSION_FIELD`
+  * `NN_GROWTH_REQUIREMENT`
+  * `H9_MEANING_SEEKING`
+
+**How to use:**
+
+  * Decide what tier they’re **actually stuck on** vs what tier they claim to chase.
+  * Conflict = chasing transcendence while lacking basic safety or love.
+
+-----
+
+### 6.2 Self-Determination Theory
+
+**What it is:**
+Autonomy, Competence, Relatedness.
+
+**Plug into:**
+
+  * `JUPITER_GROWTH_STRATEGY`
+  * `NN_LIFE_PATH_AXIS` / `NN_DESTINY_VECTOR`
+  * `H11_FUTURE_VISION`
+
+**How to use:**
+
+  * Score each A/C/R.
+  * Destiny path = the narrative that finally feeds the **starved** one.
+
+-----
+
+### 6.3 Character Arc Types
+
+**What it is:**
+Positive change arc, negative/fall arc, flat arc.
+
+**Plug into:**
+
+  * `PLUTO_TRANSFORMATION_FIELD`
+  * `NN_SOUL_EVOLUTION_ARCHETYPE`
+  * `MC_LEGACY_VECTOR`
+
+**How to use:**
+
+  * Decide:
+      * Do they grow?
+      * Do they collapse?
+      * Do they hold their ground while others change?
+  * Attach arc type explicitly to Pluto + Nodes.
+
+-----
+
+## 7\. Shadow, Wounds & Parts Models
+
+*Applies to:*
+**Pluto**, **Chiron**, **House 8**, **House 12**, critical **aspects**, and:
+
+  * `PLUTO_SHADOW_PATTERN`, `PLUTO_OBSESSION_VECTOR`
+  * `CHIRON_CORE_WOUND`, `CHIRON_WOUND_REPETITION_PATTERN`
+  * `H12_SHADOW_ARCHETYPE`, `H12_UNCONSCIOUS_DRIVE`
+
+-----
+
+### 7.1 Jungian Shadow
+
+**What it is:**
+Unowned traits that get projected.
+
+**Plug into:**
+
+  * `PLUTO_SHADOW_PATTERN`
+  * `H12_SHADOW_ARCHETYPE`
+  * `SN_PAST_LIFE_SHADOW`
+
+**How to use:**
+
+  * Pick 3–4 traits they refuse to admit (cowardice, greed, tenderness, etc.).
+  * Put those traits into:
+      * Antagonists.
+      * Lovers.
+      * Nightmares.
+
+-----
+
+### 7.2 Internal Family Systems (IFS)
+
+**What it is:**
+Psyche as parts: Managers, Firefighters, Exiles.
+
+**Plug into:**
+
+  * `ASPECT_PLANET_A` / `ASPECT_PLANET_B` (each planet = part)
+  * `ASPECT_TENSION_PATTERN` / `ASPECT_REINFORCEMENT_PATTERN`
+  * `CHIRON_CORE_WOUND`, `CHIRON_TRIGGER_FIELD`
+
+**How to use:**
+
+  * Map planets to parts:
+      * Saturn = Inner Critic (Manager)
+      * Mars = Defender (Firefighter)
+      * Moon/IC = Inner Child (Exile)
+  * Each hard aspect = two parts in open conflict.
+
+-----
+
+### 7.3 Schema Therapy
+
+**What it is:**
+Early maladaptive schemas (Abandonment, Defectiveness, Dependence, etc.).
+
+**Plug into:**
+
+  * `IC_ORIGIN_WOUND`
+  * `CHIRON_CORE_WOUND`
+  * `SN_KARMIC_MEMORY`
+
+**How to use:**
+
+  * Choose 1–2 core schemas as **sentence-level beliefs**:
+      * “Everyone leaves.”
+      * “If I’m not useful, I’m nothing.”
+  * Use them as the grammar of:
+      * Their worst decisions.
+      * Their deepest Pluto/North Node turning points.
+
+-----
+
+## 8\. Persona, Social Role & Group Dynamics
+
+*Applies to:*
+**Ascendant**, **Midheaven**, **House 10**, **House 11**, and:
+
+  * `ASC_SURFACE_IMAGE`, `ASC_MASK_VS_CORE_GAP`
+  * `IC_PRIVATE_SELF`
+  * `MC_PUBLIC_IMAGE`, `H10_PUBLIC_SELF`
+  * `H11_GROUP_ARCHETYPE`, `H11_COMMUNITY_ROLE`, `SOCIAL_POWER_LEVEL`
+
+-----
+
+### 8.1 Goffman’s Dramaturgy
+
+**What it is:**
+Front stage vs back stage; life as performance.
+
+**Plug into:**
+
+  * `ASC_MASK_VS_CORE_GAP`
+  * `ASC_SURFACE_IMAGE` vs `IC_PRIVATE_SELF`
+  * `MC_PUBLIC_IMAGE`
+
+**How to use:**
+
+  * Define:
+      * Front-stage script: how they behave in public.
+      * Back-stage script: how they act when safe.
+  * The **gap** is your main reveal engine.
+
+-----
+
+### 8.2 Group Role Models
+
+**What it is:**
+Team roles (Leader, Strategist, Face, Wildcard, Support, etc.).
+
+**Plug into:**
+
+  * `H11_GROUP_ARCHETYPE`
+  * `H11_COMMUNITY_ROLE`
+  * `SOCIAL_POWER_LEVEL`
+
+**How to use:**
+
+  * Assign a default role they fall into in **any group**.
+  * Use to quickly block ensembles, parties, squads.
+
+-----
+
+## 9\. Chart Shape & Aspect Web Models
+
+*Applies to:*
+Global chart features:
+
+  * `SHAPE_ELEMENT_DISTRIBUTION`, `DOMINANT_ELEMENT`
+  * `SHAPE_MODALITY_DISTRIBUTION`, `DOMINANT_MODE`
+  * `HEMISPHERE_EMPHASIS`, `QUADRANT_EMPHASIS`
+  * `DOMINANT_PLANET`, `OUTLIER_PLANETS`
+  * `ASPECT_TENSION_PATTERN`, `ASPECT_RESOLUTION_ARCHETYPE`
+
+-----
+
+### 9.1 Temperaments & Elemental Typology
+
+**What it is:**
+Choleric, Melancholic, Sanguine, Phlegmatic mapped to elements.
+
+**Plug into:**
+
+  * `DOMINANT_ELEMENT`
+  * `DOMINANT_MODE`
+  * `SHAPE_ELEMENT_DISTRIBUTION`
+
+**How to use:**
+
+  * Map dominant element → temperament:
+      * Fire → Choleric
+      * Water → Melancholic
+      * Air → Sanguine
+      * Earth → Phlegmatic
+  * This sets the **emotional climate** of the character.
+
+-----
+
+### 9.2 Dialectical Tension Models
+
+**What it is:**
+Paired tensions (freedom vs security, truth vs belonging, etc.).
+
+**Plug into:**
+
+  * `ASPECT_RESOLUTION_ARCHETYPE`
+  * `ASPECT_CONFLICT_MODE`
+  * `SHAPE_PSYCHIC_LIMITS` / `SHAPE_OBSESSION_LEVEL`
+
+**How to use:**
+
+  * For each major aspect, name its **core tension** as a phrase:
+      * “Control vs Surrender”
+      * “Truth vs Loyalty”
+  * Store that as a narrative label for the aspect.
+
+-----
+
+## Implementation Cheatsheet (Per Subsystem)
+
+**Rule of thumb:**
+For each major subsystem (Sun, Moon, Asc, Venus, Mars, Jupiter, Saturn, Nodes, Pluto), attach **1–2 external models** max:
+
+  * **Sun / Asc / MC (Identity):** **BFAS** + Enneagram + Archetype.
+  * **Moon / IC / Chiron (Emotional):** Attachment + Polyvagal + Coping.
+  * **Mercury (Mind):** System 1/2 + Cognitive Distortions.
+  * **Venus / Mars / H5/7/8 (Erotic/Relational):** Sternberg + Love Languages + Erotic Blueprint.
+  * **Mars / Saturn / Pluto (Conflict/Power):** Thomas–Kilmann + Drama Triangle + Grit.
+  * **Jupiter / Nodes / H9/11 (Meaning/Destiny):** Maslow + Self-Determination + Arc Type.
+  * **Pluto / Chiron / H8/12 (Shadow):** Shadow + IFS + Schemas.
+  * **Asc / MC / H10/11 (Social):** Goffman + Group Roles.
+  * **Global Shape / Aspects:** Temperament + Dialectical Tensions (+ IFS for parts).
+
+This gives you a **finite, repeatable overlay stack** that can be applied to every chart without bloat, while still letting each atomic variable blow out into full psycho-narrative depth.

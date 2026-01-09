@@ -1,0 +1,348 @@
+---
+title: 📝 **Atomic Astrology — CHARACTER QUESTIONNAIRE**
+updated: 2025-11-25 15:38:53Z
+created: 2025-11-25 15:31:26Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+
+
+# 📝 **Atomic Astrology — CHARACTER QUESTIONNAIRE**
+
+*(For generating a full narrative character from the Atomic Astrology Model.)*
+
+---
+
+## 1. Chart Skeleton — Basic Astrological Frame
+
+**1.1 Sun, Moon, Rising**
+
+1. **Sun sign** (identity / ego)
+
+   * ☐ Aries
+   * ☐ Taurus
+   * ☐ Gemini
+   * ☐ Cancer
+   * ☐ Leo
+   * ☐ Virgo
+   * ☐ Libra
+   * ☐ Scorpio
+   * ☐ Sagittarius
+   * ☐ Capricorn
+   * ☐ Aquarius
+   * ☐ Pisces
+   * Or: “Choose for me based on vibe: `__________________________`”
+
+2. **Moon sign** (emotional system)
+
+   * (Same options as above)
+   * Or: “Choose for me based on emotional vibe: `__________________________`”
+
+3. **Rising / Ascendant sign** (persona / mask / body)
+
+   * (Same options as above)
+   * Or: “Choose for me based on aesthetic: `__________________________`”
+
+---
+
+**1.2 Chart Shape & Scope**
+
+4. What **scope** do you want this character to feel like?
+
+   * ☐ Intimate, psychological, small-scale
+   * ☐ Focused but impactful, mission-driven
+   * ☐ Big, wide, many domains of life
+   * ☐ Let astrology decide
+
+5. What **chart shape archetype** calls to you?
+
+   * ☐ Bowl (intense, self-contained, specialist)
+   * ☐ Splash (scattered, many interests, chaotic)
+   * ☐ Locomotive (single driving mission, steady push)
+   * ☐ Don’t care / pick what fits
+
+---
+
+## 2. Core Identity — Sun Block
+
+**2.1 Identity Axis & Archetype**
+
+6. Which **identity statements** fit this character best? (Pick 1–3 or write your own.)
+
+   * ☐ “I am the initiator / first mover.”
+   * ☐ “I am the protector / shield.”
+   * ☐ “I am the observer / analyst.”
+   * ☐ “I am the healer / caretaker.”
+   * ☐ “I am the rebel / rule-breaker.”
+   * ☐ “I am the mystic / seer.”
+   * ☐ CUSTOM: `__________________________`
+
+7. What **role archetype** do you want them to naturally gravitate toward?
+
+   * ☐ Protagonist / hero
+   * ☐ Antagonist / destroyer
+   * ☐ Mentor / guide
+   * ☐ Trickster / chaos agent
+   * ☐ Healer / support
+   * ☐ Outsider / exile
+
+---
+
+**2.2 Motivation & Goal Type**
+
+8. What do they **want most** at the start of the story? (Pick 1–3.)
+
+   * ☐ Power / influence
+   * ☐ Freedom / escape
+   * ☐ Security / stability
+   * ☐ Redemption / forgiveness
+   * ☐ Knowledge / understanding
+   * ☐ Love / belonging
+
+9. How do they **approach conflict by default**?
+
+   * ☐ Attack directly
+   * ☐ Strategize and outmaneuver
+   * ☐ Negotiate / placate
+   * ☐ Withdraw / avoid
+   * ☐ Endure / tank until it passes
+   * ☐ Flip the table / escalate unpredictably
+
+10. How do you want their **decision-making bias** to feel?
+
+* ☐ Impulsive, gut-first
+* ☐ Rational, data-first
+* ☐ Idealistic / moral-first
+* ☐ Pragmatic / outcome-first
+* ☐ Emotion-driven
+* ☐ Fear-driven / risk-averse
+
+---
+
+## 3. Emotional Engine — Moon Block
+
+**3.1 Emotional Style & Core Need**
+
+11. Which **emotional style** fits best?
+
+* ☐ Slow-burning, rarely shows emotion
+* ☐ Intense, explosive, volcanic
+* ☐ Nervous, restless, anxious
+* ☐ Detached, numb, dissociated
+* ☐ Warm, nurturing, open
+* ☐ Mercurial, mood swings
+
+12. Their **core emotional need** (MOON_NEED_CORE):
+
+* ☐ Safety / protection
+* ☐ Control / predictability
+* ☐ Intimacy / fusion with another
+* ☐ Autonomy / space
+* ☐ Admiration / validation
+* ☐ Purpose / significance
+
+---
+
+**3.2 Triggers, Wounds & Attachment**
+
+13. Pick 2–3 **triggers** that really set them off:
+
+* ☐ Betrayal
+* ☐ Abandonment / being ignored
+* ☐ Humiliation
+* ☐ Being controlled
+* ☐ Chaos / unpredictability
+* ☐ Feeling useless / powerless
+
+14. What’s their **attachment pattern** in relationships?
+
+* ☐ Clingy, afraid of being left
+* ☐ Avoidant, pushes people away
+* ☐ On-off, chaotic, hot/cold
+* ☐ Mostly secure but with specific cracks
+* ☐ Let the chart decide based on Moon sign
+
+15. Their **go-to survival script** when emotionally cornered:
+
+* ☐ Attack / lash out
+* ☐ Shut down / go silent
+* ☐ Run away / ghost
+* ☐ Please everyone / fawn
+* ☐ Self-destruct / sabotage
+* ☐ Dissociate / fantasy
+
+16. What **wound type** is central?
+
+* ☐ “I was not protected.”
+* ☐ “I was not seen.”
+* ☐ “I was not chosen.”
+* ☐ “I was only valued for performance.”
+* ☐ “I was controlled / never allowed to be myself.”
+* ☐ CUSTOM: `__________________________`
+
+---
+
+## 4. Persona, Aesthetic & Social Interface — Ascendant
+
+**4.1 Surface Image & Power Level**
+
+17. When they walk into a room, the **vibe** is:
+
+* ☐ Soft / harmless / easily ignored
+* ☐ Elegant / composed / intimidating
+* ☐ Chaotic / unpredictable / disruptive
+* ☐ Charming / magnetic / social
+* ☐ Blank / unreadable / uncanny
+* ☐ Cold / clinical
+
+18. Their **social power level** should feel:
+
+* ☐ Low (overlooked, underestimated)
+* ☐ Medium (respected peer)
+* ☐ High (people orbit them)
+* ☐ Volatile (power shifts situationally)
+
+---
+
+**4.2 Costume & Entry Behavior**
+
+19. Visual **aesthetic lane** (COSTUME_AESTHETIC):
+
+* ☐ Militaristic / tactical
+* ☐ Corporate / tailored / severe
+* ☐ Street / punk / DIY
+* ☐ Ethereal / mystical / otherworldly
+* ☐ Academic / nerd / archivist
+* ☐ Messy goblin / feral
+* ☐ CUSTOM: `__________________________`
+
+20. **Default social move** when interacting with others:
+
+* ☐ Ask questions
+* ☐ Crack a joke
+* ☐ Observe silently
+* ☐ Challenge / test the other person
+* ☐ Offer help
+* ☐ Flirt
+
+21. **Scene entry behavior**: how do they tend to enter scenes?
+
+* ☐ Loud, announces presence
+* ☐ Quiet, just appears
+* ☐ Late, dramatic timing
+* ☐ Already there when the scene starts
+* ☐ Through crisis (bursting in on chaos)
+
+---
+
+## 5. Shadow, Trauma & Fate — Pluto / Nodes / 8th / 12th
+
+**5.1 Shadow & Obsession**
+
+22. What are they **secretly obsessed with** (PLUTO_OBSESSION_VECTOR)?
+
+* ☐ Control over others
+* ☐ Uncovering truth / secrets
+* ☐ Revenge against a person/system
+* ☐ Absolute safety / invulnerability
+* ☐ Transcendence / becoming more-than-human
+* ☐ A specific person / relationship
+
+23. Their **shadow pattern** under extreme stress:
+
+* ☐ Tyrant (dominate and punish)
+* ☐ Coward (betray or abandon)
+* ☐ Addict (sink into escape)
+* ☐ Fanatic (ideology over people)
+* ☐ Martyr (self-erase for “the cause”)
+
+---
+
+**5.2 Life Path & Regression**
+
+24. What direction should their **life path** pull them toward (NN_LIFE_PATH_AXIS)?
+
+* ☐ From isolation → into community
+* ☐ From passivity → into leadership
+* ☐ From selfishness → into service
+* ☐ From chaos → into discipline
+* ☐ From obedience → into rebellion
+* ☐ From materialism → into meaning/spirit
+
+25. What’s their **regression pattern** when they backslide (SN_REGRESSION_PATTERN)?
+
+* ☐ Hiding and numbing out
+* ☐ Going back to toxic relationships
+* ☐ Overworking / grinding to oblivion
+* ☐ Cruel, cutting behavior
+* ☐ Blind loyalty to a harmful system
+
+---
+
+## 6. Role in Story & Output Constraints
+
+**6.1 Story Position**
+
+26. In this story, they should function as:
+
+* ☐ Main Character / POV core
+* ☐ Deuteragonist (second main)
+* ☐ Antagonist
+* ☐ Impact Character (the one who pushes change)
+* ☐ Support / side character
+* ☐ NPC / encounter unit
+
+27. What **tone/genre** do you want them tuned for?
+
+* ☐ Gritty sci-fi
+* ☐ Cosmic horror
+* ☐ Dark fantasy
+* ☐ Slice-of-life / grounded drama
+* ☐ Comedy / satire
+* ☐ High-concept sci-fi metaphysics
+
+---
+
+**6.2 Hard No’s / Must-Haves**
+
+28. Any **hard NOs** for this character?
+    Answer: `__________________________`
+
+29. Any **must-have elements**?
+    Answer: `__________________________`
+
+30. Do you want them to **change** or remain mostly **fixed** by the end?
+
+* ☐ Significant change / transformation
+* ☐ Partial growth but still flawed
+* ☐ Tragic failure / regression
+* ☐ Mostly fixed attitude; the world changes around them
+
+---
+
+## 7. Optional: Real Birth Data (If You Want Strict Astrology)
+
+31. Date of birth (YYYY-MM-DD):
+32. Time of birth (with timezone if known):
+33. Place of birth (city, country):
+
+---
+
+### How to Use This
+
+1. Copy this questionnaire.
+2. Fill it out however you like.
+3. Paste your answers back to me.
+
+I will then generate:
+
+* A complete atomic astrology character
+* Psychological profile
+* Emotional engine
+* Persona aesthetic
+* Narrative role
+* Fate, wounds, and arc
+
+Whenever you’re ready, fill it out.

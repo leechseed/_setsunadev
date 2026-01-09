@@ -1,0 +1,508 @@
+---
+title: Flicker Strike Champion - PSTO
+updated: 2025-11-20 08:36:01Z
+created: 2025-11-20 08:35:38Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+# 📘 Knowledgebase Entry: Flicker Strike Champion – Policy → Strategy → Tactics → Operations
+
+---
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Policy Layer (What This Build *Is For*)](#policy-layer-what-this-build-is-for)
+   - [Core Policy 1 – Currency First](#core-policy-1--currency-first)
+   - [Core Policy 2 – Level 100 As a Design Constraint](#core-policy-2--level-100-as-a-design-constraint)
+   - [Core Policy 3 – Tankiness Over Ego DPS](#core-policy-3--tankiness-over-ego-dps)
+   - [Core Policy 4 – Automation Over APM](#core-policy-4--automation-over-apm)
+3. [Strategy Layer (How We Intend to Achieve It)](#strategy-layer-how-we-intend-to-achieve-it)
+   - [Strategy A – Phase-Based Economic Scaling](#strategy-a--phase-based-economic-scaling)
+   - [Strategy B – Weapon-First DPS Scaling](#strategy-b--weapon-first-dps-scaling)
+   - [Strategy C – Charge Ecosystem for Flicker Stability](#strategy-c--charge-ecosystem-for-flicker-stability)
+   - [Strategy D – Defensive Layer Stacking](#strategy-d--defensive-layer-stacking)
+   - [Strategy E – Atlas & Content Targeting](#strategy-e--atlas--content-targeting)
+4. [Tactics Layer (Concrete Choices and Configurations)](#tactics-layer-concrete-choices-and-configurations)
+   - [Tactics: Gear by Phase](#tactics-gear-by-phase)
+   - [Tactics: Skill Gems & Links](#tactics-skill-gems--links)
+   - [Tactics: Passive Tree, Ascendancy, and Clusters](#tactics-passive-tree-ascendancy-and-clusters)
+   - [Tactics: Flask and Utility Setup](#tactics-flask-and-utility-setup)
+5. [Operations Layer (What You Actually Do Per Session)](#operations-layer-what-you-actually-do-per-session)
+   - [Ops 1 – 70c → 3 Divines](#ops-1--70c--3-divines)
+   - [Ops 2 – 3 Divines → 15 Divines](#ops-2--3-divines--15-divines)
+   - [Ops 3 – 15 Divines → 50 Divines](#ops-3--15-divines--50-divines)
+   - [Ops 4 – 50+ Divines → Top 1% State](#ops-4--50-divines--top-1-state)
+6. [Risk Management & Failure Modes](#risk-management--failure-modes)
+7. [KPIs and Milestones](#kpis-and-milestones)
+8. [Upgrade Order Cheat Sheet](#upgrade-order-cheat-sheet)
+
+---
+
+## Overview
+
+This entry breaks your Flicker Strike Champion plan into four stacked layers:
+
+- **Policy** – non-negotiable high-level rules of the build.
+- **Strategy** – long-range plans to satisfy those rules.
+- **Tactics** – specific setups, items, and configurations.
+- **Operations** – what you physically do in a mapping session or upgrade cycle.
+
+You can read top-down for understanding, or bottom-up if you just want “what to do today” and then trace the logic upward.
+
+---
+
+## Policy Layer (What This Build *Is For*)
+
+### Core Policy 1 – Currency First
+
+- **Statement**: The build exists to print currency first, flex into completion and bossing after.
+- **Implications**:
+  - Mapping performance and uptime are prioritized over boss one-shots.
+  - Content choice is evaluated primarily by **profit per unit effort**, not prestige.
+  - You do not invest heavily into “flex” gear that does not pay itself back in farm speed or survivability.
+  - Early and mid-game decisions are judged by their impact on **div/hour**.
+
+---
+
+### Core Policy 2 – Level 100 As a Design Constraint
+
+- **Statement**: The build must be capable of reaching 100 without feeling like self-harm.
+- **Implications**:
+  - No “glass cannon” bullshit. You don’t trade all defenses for DPS.
+  - Mapping focus on **safe layouts**, **predictable threats**, and **repeatable routes**.
+  - You avoid mechanics that spike RNG death (deep delirium, rippy expedition combos) until your defenses are appropriate.
+  - XP loss on death is treated as an economic loss, not just “oops”.
+
+---
+
+### Core Policy 3 – Tankiness Over Ego DPS
+
+- **Statement**: You will sacrifice theoretical DPS for **real-world uptime** and death avoidance.
+- **Implications**:
+  - Capped resists, spell suppression, and defenses are *non-negotiable* before big DPS spikes.
+  - Flask automation and defenses get bought before shiny damage jewels.
+  - If PoB says you lose 5% DPS to gain 20% effective HP, you take the tank.
+
+---
+
+### Core Policy 4 – Automation Over APM
+
+- **Statement**: The build’s ceiling is defined by **how much you can automate**, not how fast you can mash buttons.
+- **Implications**:
+  - Charge generation is automated via Farrul’s ecosystem + gem setup, not manual generation.
+  - Flasks are automated with “used at full charges” and similar enchants.
+  - You focus on **positioning and macro decisions**, not piano mechanics.
+  - Any manual input that doesn’t significantly increase survival or div/hour is suspect.
+
+---
+
+## Strategy Layer (How We Intend to Achieve It)
+
+### Strategy A – Phase-Based Economic Scaling
+
+Break progression into economic phases:
+
+1. **Phase 1 – 70c → 3d**
+   - Objective: stabilize mapping, fix scuff gear, get a decent axe.
+   - Play: mid-tier maps, basic mechanics (essence, strongboxes, shrines, abyss).
+
+2. **Phase 2 – 3d → 15d**
+   - Objective: secure 600–700 PDPS axe, fix accuracy/crit, stabilize Flicker sustain.
+   - Play: T14–T16 maps, basic atlas tree tuned for consistent juice.
+
+3. **Phase 3 – 15d → 50d**
+   - Objective: acquire **Farrul’s Fur**, core clusters, first big flasks.
+   - Play: targeted currency engines (Legion / Harbinger / Abyss depending on taste).
+
+4. **Phase 4 – 50d → 120d+**
+   - Objective: Replica Farrul’s, insane axe, double-influenced jewelry.
+   - Play: fully juiced mapping or bossing as chosen; maintain high uptime with low death count.
+
+**Reasoning**:  
+This prevents “I have 5 div, time to yolo a mirror-tier craft” and instead forces structured capital growth.
+
+---
+
+### Strategy B – Weapon-First DPS Scaling
+
+- **Premise**: For 2H Flicker, your axe is the biggest DPS lever by a mile.
+- **Order of priority**:
+  1. **Axe PDPS** (400 → 600 → 800+)
+  2. **Crit consistency** (base + diamond flask + tree + jewels)
+  3. **Attack speed**
+  4. Secondary DPS sources (jewels, amulet, clusters, etc.)
+
+- **Why**:
+  - Every other offensive upgrade’s value scales with the raw PDPS of the weapon.
+  - Early currency invested into a good axe gives multiplicative returns across all other systems.
+
+---
+
+### Strategy C – Charge Ecosystem for Flicker Stability
+
+Flicker Strike is worthless if you desync or de-charge.
+
+- **Goal**: Never think about charges. They just exist.
+- **Layers**:
+  - Aspect of the Cat (Farrul’s / Replica Farrul’s).
+  - Frenzy on hit (rings, gems, or corrupts).
+  - Blood Rage + Poacher’s Mark / other frenzies.
+  - Endurance charges from Ascendancy / Cat’s Agility interactions.
+
+**Policy**: You don’t try to “play well” to sustain Flicker; you buy/build systems so that **even bad play** doesn’t break the chain.
+
+---
+
+### Strategy D – Defensive Layer Stacking
+
+For Champion Flicker:
+
+- **Armor** → mitigates physical hits.
+- **Evasion** → avoids hits entirely.
+- **Spell Suppression** → halves spell damage.
+- **Block (if used)** → extra layer, but not mandatory.
+- **Endurance Charges** → phys reduction + ele res.
+- **Fortify** → flat % damage reduction.
+
+**Strategic rule**:  
+You layer at least **3** of these defenses before pushing into really rippy content. Champion is chosen exactly because it stacks these easily.
+
+---
+
+### Strategy E – Atlas & Content Targeting
+
+- Your atlas tree is not “whatever is fun”, it’s built around:
+  - **Profit density per map**.
+  - **Low time-to-clear per map** (Flicker loves open layouts).
+  - **Low mechanical complexity** (no long time-stop mechanics).
+
+- Preferred mapping:
+  - Open maps: **Dunes, Strand, Tropical Island, Burial, Beach, Waste Pool**.
+  - Mechanics with fast payoff: **Harbinger, Legion, Strongbox, Abyss, Essences**.
+  - Avoid early: deep Delirium, high-risk Expedition, super rippy altars if defenses are not ready.
+
+---
+
+## Tactics Layer (Concrete Choices and Configurations)
+
+### Tactics: Gear by Phase
+
+#### Phase 1 (70c → 3d)
+
+- **Weapon**
+  - 2H Axe, 400–500 PDPS.
+  - Don’t obsess over perfect affixes; just get decent PDPS and crit.
+
+- **Rings**
+  - Must-have: **accuracy + flat phys + life + resists**.
+  - Optional: attack speed.
+
+- **Amulet**
+  - Flat phys, crit multi, attributes.
+  - Anoint something cheap but useful (e.g., life/attack nodes).
+
+- **Body Armour**
+  - Anything with life + resists that allows a decent 5L/6L.
+  - Bronn’s is fine early if you own it; don’t overvalue it relative to life/res.
+
+#### Phase 2 (3d → 15d)
+
+- **Weapon**
+  - Move to 600–700 PDPS.
+  - Look for T2–T1 flat + % phys and some crit/AS.
+
+- **Helmet/Gloves/Boots**
+  - Cap resists.
+  - Get spell suppression started.
+  - Some life and movement speed.
+
+- **Jewels**
+  - Simple damage + life combos.
+  - Attack speed with axes, multi, etc.
+
+#### Phase 3 (15d → 50d)
+
+- **Body Armour**
+  - Buy **Farrul’s Fur**.
+  - This is non-negotiable for the “real” build identity.
+
+- **Cluster Jewels**
+  - Large: 8-passive, with Fuel the Fight + Martial Prowess + 3rd damage notable.
+  - Medium: generic attack or crit clusters as needed.
+
+- **Flasks**
+  - Taste of Hate, Lion’s Roar, Diamond with good suffixes.
+
+#### Phase 4 (50d → 120d+)
+
+- **Body Armour**
+  - Upgrade to **Replica Farrul’s Fur**.
+
+- **Axe**
+  - 900+ PDPS, ideally influenced, with T1 phys, hybrid phys, AS, crit.
+
+- **Rings & Amulet**
+  - Influence combos:
+    - Vulnerability on hit.
+    - Assassin’s Mark.
+    - Huge crit multi and phys rolls.
+
+---
+
+### Tactics: Skill Gems & Links
+
+Core 6L Flicker Strike link (example structure):
+
+- **Flicker Strike**
+- Multistrike
+- Melee Physical Damage
+- Rage / Brutality / Close Combat (depends on final config)
+- Fortify / Impale (build-dependent)
+- Increased Crit Damage / Nightblade / other DPS support as per PoB
+
+Utility skills:
+
+- **Blood Rage** – frenzies + attack speed.
+- **Ancestral Protector / Warchief** – extra damage on bosses.
+- **Auras** – Pride / Precision / Determination / Defiance Banner / etc. as allowed by mana.
+- **Movement** – Leap Slam / Dash for when Flicker is unsafe.
+
+---
+
+### Tactics: Passive Tree, Ascendancy, and Clusters
+
+- **Ascendancy** (Champion):
+  - Fortitude → Unstoppable Hero → Conqueror → Worthy Foe / First to Strike, Last to Fall (depending on PoB).
+- **Tree priorities**:
+  - Life + life% near Marauder/Duelist.
+  - Axe damage and 2H cluster wheels.
+  - Crit chance + multi near Duelist/Ranger side.
+  - Spell suppression where efficient.
+- **Clusters**:
+  - Large (Attacks): Fuel the Fight + Martial Prowess + damage notable.
+  - Medium: Crit or area/strike if relevant.
+  - Small: Life or utility (res/suppression).
+
+---
+
+### Tactics: Flask and Utility Setup
+
+Core flask lineup:
+
+1. **Diamond Flask**
+   - Suffix: crit/movespeed/curse reduction.
+   - Auto-use at full charges.
+
+2. **Silver Flask**
+   - Onslaught uptime.
+   - Auto-use at full charges.
+
+3. **Granite / Jade**
+   - For armour/evasion.
+   - Suffix: increased armour/evasion, reduced crit damage taken, etc.
+
+4. **Life Flask**
+   - Instant recovery.
+   - Bleed removal.
+
+5. **Unique flasks (Phase 3+)**
+   - Taste of Hate.
+   - Lion’s Roar.
+   - Bottled Faith (later).
+
+You configure everything to minimize manual keypresses and maximize uptime.
+
+---
+
+## Operations Layer (What You Actually Do Per Session)
+
+### Ops 1 – 70c → 3 Divines
+
+**Objective**: Stabilize the build so mapping doesn’t feel like a bar fight with a spoon.
+
+**Operational loop**:
+
+1. **Buy upgrades in this exact order**:
+   - 400–500 PDPS axe.
+   - Two rings with accuracy + flat phys + life + res.
+   - Amulet with any mix of phys/crit/attributes.
+   - Basic flasks with correct automation.
+
+2. **Run mid-tier maps (T8–T12)** with:
+   - Essences.
+   - Strongboxes.
+   - Shrines.
+   - Harbinger/Abyss when available.
+
+3. **Vendor hygiene**:
+   - Pick up and sell 6-socket items.
+   - Pick up currencies, scarabs, essences, jewels, maps.
+   - Filter out obvious dogshit; do not loot hoard.
+
+4. **Stop Phase 1** once:
+   - You have **3 divines** or equivalent in liquid + easily sold items.
+   - Your hit chance and resists are reasonable (close to capped).
+
+---
+
+### Ops 2 – 3 Divines → 15 Divines
+
+**Objective**: Turn the build into “real Flicker”.
+
+**Operational steps**:
+
+1. **Buy 600–700 PDPS 2H Axe**.
+2. **Recheck PoB**:
+   - Hit chance → push close to 100%.
+   - Crit chance → 50–70% pre-flask.
+3. **Fix charge sustain**:
+   - Ensure Blood Rage is active.
+   - Get at least one extra source of frenzies (ring, corrupted item, etc.).
+4. **Mapping routine**:
+   - Move into T14–T16.
+   - Run consistent mechanics (Harbinger, Essence, Strongboxes).
+   - Ignore niche/slow mechanics that pause your flicker tempo.
+5. **Stop Phase 2** when:
+   - You have **15 divines**+
+   - Mapping feels fast and stable, few or no desyncs in charges.
+
+---
+
+### Ops 3 – 15 Divines → 50 Divines
+
+**Objective**: Snap the build into its intended identity.
+
+**Operational steps**:
+
+1. **Buy Farrul’s Fur**.
+2. **Adjust skills / auras** to integrate Aspect of the Cat.
+3. **Buy large cluster jewel(s)** with correct notables.
+4. **Start using at least one unique flask** (Taste of Hate, Lion’s Roar).
+5. **Atlas**:
+   - Specialize into your preferred high-value mechanic (Legion/Harbinger/Abyss).
+   - Run the same 1–2 layouts repeatedly for muscle memory and speed.
+6. **Stop Phase 3** at:
+   - **50 divines**+
+   - Flicker feels “hands-off” with charges and you can ignore most micro-decisions.
+
+---
+
+### Ops 4 – 50+ Divines → Top 1% State
+
+**Objective**: Convert wealth into obscene gear without bricking your sanity.
+
+**Operational steps**:
+
+1. **Upgrade armour** to Replica Farrul’s.
+2. **Plan the axe**:
+   - Either buy high-end crafted 900+ PDPS Fleshripper.
+   - Or buy an in-progress craft and finish with meta-mods (if you’re comfortable).
+
+3. **Upgrade jewelry**:
+   - Prioritize rings with on-hit curses and phys/crit.
+   - Upgrade amulet to heavy crit multi and phys.
+
+4. **Perfect clusters and jewels**:
+   - Add life and multi everywhere.
+   - Get specific damage mods that synergize with your final tree.
+
+5. **Shift content**:
+   - Mix high-juice mapping with occasional boss rotations (Shaper/Elder/Feared) to “test”.
+   - Stay away from dumb death content when close to 100.
+
+---
+
+## Risk Management & Failure Modes
+
+### Failure Mode 1 – “I Die Too Much”
+
+- **Likely causes**:
+  - No suppression.
+  - Low life pool.
+  - No armour/evasion flasks.
+  - Brute forcing too high juice too early.
+
+- **Mitigation**:
+  - Temporarily downgrade map juice.
+  - Buy cheap defensive upgrades (suppression/res gear).
+  - Fix flask suffixes.
+
+---
+
+### Failure Mode 2 – “Flicker Keeps Stopping”
+
+- **Likely causes**:
+  - Inconsistent frenzies.
+  - No Blood Rage uptime.
+  - Poor Poacher’s/Farrul’s integration.
+
+- **Mitigation**:
+  - Prioritize charge sources over pure DPS.
+  - Check if you’re overwriting Cat buffs.
+  - Simplify aura setup if you’re mana-starving links.
+
+---
+
+### Failure Mode 3 – “I’m Broke But My Build Is Fine”
+
+- **Likely causes**:
+  - Running low-value mechanics.
+  - Looting too much trash.
+  - Not leveraging consistent atlas tree.
+
+- **Mitigation**:
+  - Refocus on 1–2 chosen mechanics.
+  - Tighten loot filter.
+  - Measure div/hour and adjust.
+
+---
+
+## KPIs and Milestones
+
+### Key Performance Indicators
+
+- **Div/hour**
+- **Deaths per 10 maps**
+- **Average map clear time**
+- **XP/hour at high level**
+
+### Milestones
+
+- **M1** – 3d: Functional Flicker, no scuffed white maps.
+- **M2** – 15d: 600–700 PDPS axe, mapping in T16.
+- **M3** – 30–35d: Farrul’s Fur, big clusters, stable Flicker.
+- **M4** – 50d+: Replica Farrul’s or near endgame armour.
+- **M5** – 90–100d+: endgame axe + jewelry.
+- **M6** – Level 95–100 with stable XP/h and low deaths.
+
+---
+
+## Upgrade Order Cheat Sheet
+
+**If you are broke (≤ 1d)**:
+1. Cheap high-PDPS axe.
+2. Rings with accuracy + phys + life.
+3. Basic flask roll and trigger automation.
+
+**If you are in mid-range (3–15d)**:
+1. 600–700 PDPS axe.
+2. Crit/accuracy fixed via gear + tree.
+3. Early cluster(s).
+4. Basic unique flasks.
+
+**If you are rich (15–50d)**:
+1. Farrul’s Fur.
+2. Proper large cluster(s).
+3. Taste of Hate, Lion’s Roar, Bottled Faith.
+
+**If you are pushing top 1% (50d+)**:
+1. Replica Farrul’s Fur.
+2. 900+ PDPS axe.
+3. Double-influenced rings + amulet.
+4. Perfect clusters and rare jewels.
+
+Use this doc as your **single source of truth**:  
+Policy tells you *why*, Strategy tells you *how*, Tactics tell you *what*, Operations tell you *when* and *in what order*.

@@ -1,0 +1,149 @@
+---
+title: legs conditioning
+updated: 2025-12-19 11:05:03Z
+created: 2025-12-19 11:04:57Z
+latitude: 30.43825590
+longitude: -84.28073290
+altitude: 0.0000
+---
+
+legs conditioning
+
+# Park Glute Program (No Machines) — Glute Lab–Style
+
+## What you need (pick your load options)
+**Bring 1–2 of these in your car:**
+- **Adjustable dumbbells** OR **kettlebell**
+- **Long loop band** + **mini band**
+- **Backpack** you can load (plates/books/water jugs)
+- **Yoga mat** (thrusts/bridges/floor work)
+- Optional: **hip thrust pad** / towel
+
+**Park “equipment” you’ll use:**
+- Bench / picnic table / low wall (for hip thrusts, split squats, step-ups)
+
+---
+
+## Weekly schedule (simple)
+- **Day A (Heavy Thrust + Squat pattern)**
+- **Day B (Hinge + Unilateral)**
+- **Day C (Pump + Abduction + Conditioning-ish)**
+
+**Session length:** 35–55 min
+
+---
+
+## Warm-up (5–8 min, every day)
+1–2 rounds:
+- **Banded lateral walk**: 10–15 steps each way
+- **Glute bridge iso-hold**: 20–30 sec
+- **Frog pumps**: 15–25
+- **Hip hinge patterning** (bodyweight good-morning): 10 reps
+
+---
+
+## Day A — “Heavy” Thrust + Squat Pattern
+### 1) Hip Thrust (bench/table)
+Choose one:
+- **DB/KB Hip Thrust**: 4 x 6–12
+- **Backpack Hip Thrust**: 4 x 10–20
+**Rules:** 2-sec squeeze at the top, full lockout, no bouncing. Rest 90–150 sec.
+
+### 2) Bulgarian Split Squat (rear foot on bench)
+- 3 x 8–12 / leg  
+**Glute bias:** slight forward torso, drive through midfoot/heel. Rest 90–120 sec.
+
+### 3) Step-Ups (high step if safe)
+- 3 x 8–12 / leg  
+Hold DBs or wear loaded backpack.
+
+### 4) Band Abductions (mini band above knees)
+Pick one:
+- **Standing abduction**: 2–3 x 20–30 / side
+- **Lateral walk burnout**: 2 rounds of 15–20 steps each way
+
+### 5) Finisher (optional)
+- **Frog pumps**: 2 x 25–40
+
+---
+
+## Day B — Hinge + Unilateral (glute stretch day)
+### 1) Romanian Deadlift (DB/KB/backpack)
+- 4 x 6–12  
+**Rules:** hips back, soft knees, keep the weight close, stretch in glutes/hamstrings. Rest 2 min.
+
+### 2) Single-Leg RDL (DB/KB)
+- 3 x 8–12 / leg  
+Go slow. Balance matters more than weight.
+
+### 3) Reverse Lunge (glute friendly)
+- 3 x 10–15 / leg  
+DBs or backpack. Rest 90 sec.
+
+### 4) B-stance Hip Thrust (one foot slightly forward)
+- 3 x 10–15 / side  
+2-sec squeeze at top.
+
+### 5) Band Kickbacks (anchor band around bench leg if possible)
+- 2–3 x 15–25 / side  
+If you can’t anchor: do **quadruped kickbacks** with a mini band.
+
+---
+
+## Day C — Pump + Upper-Glute + “work capacity”
+### 1) Hip Thrust (lighter, high reps)
+- 3 x 12–25  
+Shorter rest: 60–90 sec.
+
+### 2) Walking Lunges (or stationary if space sucks)
+- 3 x 20–40 total steps  
+Add DBs/backpack if you can keep form.
+
+### 3) 45° “Park Hamstring/Glute” Substitute
+Pick one:
+- **Single-leg hip hinge good-morning** (bodyweight or backpack): 3 x 12–20
+- **Bench-supported back extension substitute** (hands on bench, hinge pattern): 3 x 15–25
+(If this feels sketchy, skip it—don’t be a hero.)
+
+### 4) Abduction Giant Set (no rest)
+- **Lateral walks**: 15–20 steps each way
+- **Side-lying abduction**: 15–25 / side
+- **Frog pumps**: 20–40  
+Do 2–3 rounds.
+
+---
+
+## Progression (how you get bigger glutes without machines)
+Use this rule for each main move (thrust, split squat, RDL):
+- Stay in the rep range.
+- When you hit the **top reps on all sets**, make it harder next time by ONE of:
+  - Add weight (DBs/backpack)
+  - Add reps
+  - Add a set (max +1 set per exercise)
+  - Add tempo: **3 sec down**
+  - Add a pause: **2 sec at stretch** (bottom of split squat/RDL) or **2 sec at lockout** (thrust)
+
+**If you’re stuck with light weights:** use unilateral + tempo + pauses + high reps. That works.
+
+---
+
+## “Tell it like it is” form priorities
+- **Hip thrusts:** if you’re not fully locking out and squeezing, you’re wasting sets.
+- **Split squats/lunges:** control the bottom. If knees hate it, shorten range and do reverse lunges/step-ups.
+- **RDLs:** if you feel it in low back more than glutes/hamstrings, lighten the load and hinge correctly.
+
+---
+
+## Packing list (so you actually do it)
+- DBs/KB or backpack + load
+- 2 bands (mini + long)
+- mat + towel (thrust pad)
+- water + timer (phone)
+
+---
+
+## Optional: 2-day version (if you want it simpler)
+**Day 1:** Day A  
+**Day 2:** Day B  
+Add Day C stuff as a 10-min finisher twice/week (abduction giant set).
+
