@@ -1,0 +1,133 @@
+---
+title: 📘 Narrative Layer Stack — Cheatsheet (Layers 0–6)
+updated: 2026-01-05 08:25:25Z
+created: 2026-01-01 00:26:05Z
+tags:
+  - oxo
+---
+
+# 📘 Narrative Layer Stack — Cheatsheet (Layers 0–6)
+
+> This document is a **rapid-reference cheatsheet**.  
+> Each layer answers **one specific question** and forbids specific kinds of narrative cheating.  
+> Layers are **hierarchical and one-way**: higher layers express, test, or reveal lower layers—never override them.
+
+---
+
+
+## Layer 0 — Ontology  
+### *What can exist*
+
+- **Defines**: The total set of entities, forces, states, and relationships that are possible.
+- **Primary Question**: *What exists in this world at all?*
+- **Scope**: Physics, metaphysics, institutions, technologies, entities.
+- **Cannot Do**: Resolve conflict, assign meaning, or imply justice.
+- **Failure Mode**: Introducing entities or forces ad hoc to solve problems.
+
+> If it doesn’t exist at Layer 0, it cannot matter later.
+
+---
+
+## Layer 1 — Invariants  
+### *What is always true*
+
+- **Defines**: Non-negotiable truths that never change.
+- **Primary Question**: *What rules cannot be broken?*
+- **Scope**: Limits, impossibilities, asymmetries, constants.
+- **Cannot Do**: Bend for characters, emotions, or revelations.
+- **Failure Mode**: Exceptions, loopholes, or “this time is different.”
+
+> Invariants constrain all outcomes, including endings.
+
+---
+
+## Layer 2 — Systemic Force  
+### *How power acts*
+
+- **Defines**: How authority, enforcement, and dominance behave.
+- **Primary Question**: *What does power do when challenged?*
+- **Scope**: Enforcement, delegation, isolation, containment.
+- **Cannot Do**: Care about truth, fairness, or intention.
+- **Failure Mode**: Power stopping because it is exposed or persuaded.
+
+> Truth does not interrupt enforcement.
+
+---
+
+## Layer 3 — Human Interface  
+### *How it feels to live under constraint*
+
+- **Defines**: Subjective experience of the system.
+- **Primary Question**: *What does this reality feel like to inhabit?*
+- **Scope**: Identity, emotion, coping, dignity, trauma.
+- **Cannot Do**: Create leverage or alter systems by itself.
+- **Failure Mode**: Emotion substituting for action or causality.
+
+> Layer 3 provides meaning, not power.
+
+---
+
+## Layer 4 — Expression Mechanics  
+### *What moves moment to moment*
+
+- **Defines**: Mechanical actions that transmit pressure.
+- **Primary Question**: *What changed in this beat?*
+- **Scope**: Commit, Refuse, Reveal, Delay, Escalate, Isolate, Transfer Risk, Close.
+- **Cannot Do**: Guarantee success, justice, or resolution.
+- **Failure Mode**: Dialogue or emotion with no pressure movement.
+
+> If no move occurred, the scene is decorative.
+
+---
+
+## Layer 5 — Structural Argument  
+### *What the story can prove*
+
+- **Defines**: The kinds of truths the narrative demonstrates.
+- **Primary Question**: *What remains true even if the protagonist fails?*
+- **Scope**: Constraint, Cost, Power, Legibility, Agency, Persistence, Meaning, Collapse.
+- **Cannot Do**: Rely on declarations, morals, or one-off events.
+- **Failure Mode**: Claims that collapse under counterexample.
+
+> A story argues through consequence, not assertion.
+
+---
+
+## Layer 6 — Terminal States  
+### *How it can end*
+
+- **Defines**: Structurally possible end conditions.
+- **Primary Question**: *Given everything proven, what outcomes are reachable?*
+- **Scope**: Containment, Attrition, Exhaustion, Displacement, Adaptation, Fragmentation, Collapse, Replacement.
+- **Cannot Do**: Deliver justice by default or reward effort automatically.
+- **Failure Mode**: Cathartic endings without mechanical cause.
+
+> Endings express structure; they do not redeem it.
+
+---
+
+## Stack Rules (Non-Negotiable)
+
+- Causality flows **downward only**.
+- Higher layers may **express or test**, never **override**.
+- Meaning never converts to power by default.
+- Collapse requires a **specific failed condition**, not narrative satisfaction.
+
+---
+
+## One-Line Diagnostic
+
+- **If it changes reality** → check Layer 2 or below.  
+- **If it changes feeling** → Layer 3.  
+- **If it changes options** → Layer 4.  
+- **If it proves something** → Layer 5.  
+- **If it ends something** → Layer 6.
+
+If you can’t place an element cleanly, it’s leaking across layers.
+
+---
+
+## Status
+
+**Canonical Cheatsheet — Locked**  
+Use this document for fast validation, onboarding, and narrative debugging.

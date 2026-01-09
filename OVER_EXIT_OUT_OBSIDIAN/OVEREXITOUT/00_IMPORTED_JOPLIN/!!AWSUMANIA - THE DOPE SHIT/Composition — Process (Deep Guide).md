@@ -1,0 +1,363 @@
+---
+title: Composition — Process (Deep Guide)
+updated: 2025-09-07 03:58:12Z
+created: 2025-09-07 03:58:05Z
+---
+
+---
+title: "Composition — Process (Deep Guide)"
+author: "KnowledgeBase"
+version: "1.0"
+tags: ["art", "composition", "workflow", "design", "photography", "process", "pipeline"]
+created: "2025-09-06"
+---
+
+# 📘 Composition — Process (Deep Guide)
+
+> Outcome = **intent × constraints × iteration**. This is the end-to-end pipeline that gets you from idea to shippable image without hand-waving.
+
+---
+
+## 📑 Table of Contents
+1. [Terminology Primer (Read First)](#terminology-primer-read-first)
+2. [Why Process Matters](#why-process-matters)
+3. [Pipeline Overview (10 Stages)](#pipeline-overview-10-stages)
+4. [Stages — Step by Step](#stages--step-by-step)  
+   - 4.1 [Brief & Intent](#41-brief--intent)  
+   - 4.2 [Constraints & Success Criteria](#42-constraints--success-criteria)  
+   - 4.3 [Research & Reference System](#43-research--reference-system)  
+   - 4.4 [Ideation & Thumbnails](#44-ideation--thumbnails)  
+   - 4.5 [Armature & Layout Selection](#45-armature--layout-selection)  
+   - 4.6 [Notan & Value Key](#46-notan--value-key)  
+   - 4.7 [Perspective, Depth & Scale](#47-perspective-depth--scale)  
+   - 4.8 [Focal Strategy (Hierarchy, Edges, Emphasis)](#48-focal-strategy-hierarchy-edges-emphasis)  
+   - 4.9 [Color Plan & Temperature Story](#49-color-plan--temperature-story)  
+   - 4.10 [Lighting Design](#410-lighting-design)  
+   - 4.11 [Detail, Texture & Material Pass](#411-detail-texture--material-pass)  
+   - 4.12 [Type/UI/Graphic Elements (If Any)](#412-typeuigraphic-elements-if-any)  
+   - 4.13 [Tangent Hunt, Flow Audit & Border Control](#413-tangent-hunt-flow-audit--border-control)  
+   - 4.14 [Feedback Loop & Note Triage](#414-feedback-loop--note-triage)  
+   - 4.15 [Output, Variants & Delivery](#415-output-variants--delivery)  
+   - 4.16 [Postmortem & Knowledge Capture](#416-postmortem--knowledge-capture)
+5. [Decision Trees & Heuristics](#decision-trees--heuristics)
+6. [Schedules: Timeboxing & Pass Structure](#schedules-timeboxing--pass-structure)
+7. [Collaboration Protocols](#collaboration-protocols)
+8. [Quality Gates (Preflight Checklists)](#quality-gates-preflight-checklists)
+9. [Troubleshooting: When It’s Not Working](#troubleshooting-when-its-not-working)
+10. [Exercises & Routines](#exercises--routines)
+11. [Templates & File Hygiene](#templates--file-hygiene)
+12. [Cheat Sheet Summary](#cheat-sheet-summary)
+13. [Extended Glossary](#extended-glossary)
+
+---
+
+## Terminology Primer (Read First)
+
+- **Brief** → One-page statement of goal, audience, deliverables, constraints, and success criteria.  
+- **Success Criteria** → Observable checks that define “done” (e.g., “subject readable at 200 px,” “CTA clicked first in usability test”).  
+- **Constraint Stack** → All fixed requirements (aspect ratio, brand palette, copy, print/web spec, deadline).  
+- **Moodboard** → Curated reference grid that sets palette, lighting, texture, and attitude (not a dumping ground).  
+- **Thumbnail** → 30–120-second micro-sketch to test composition ideas (values first, no details).  
+- **Armature** → Geometric scaffold (thirds, phi, diagonal, spiral, dynamic symmetry) used to place subjects.  
+- **Notan** → 2–3 flat values that encode the read (black/gray/white).  
+- **Value Key** → Overall lightness bias (high-key, mid-key, low-key) that dictates plane stepping.  
+- **Flow Audit** → Markup pass to trace entry→focal→secondary→loop-back and kill outward arrows.  
+- **Tangent Hunt** → Systematic search for kissing edges/mergers; fix by overlap or separation.  
+- **Preflight** → Final quality gate checklists before export (values, edges, crops, specs, accessibility).  
+- **Note Triage (MoSCoW)** → Classify feedback as **Must**, **Should**, **Could**, **Won’t** (this round).  
+- **Soft Proof** → Simulate print/target color space on your screen to catch gamut/exposure issues.  
+- **Source of Truth (SoT)** → The file that defines the latest approved design; everything else derives from it.
+
+> Non-negotiable order of operations: **Values → Edges → Color → Details**. Color will not rescue bad values.
+
+---
+
+## Why Process Matters
+- Saves you from *infinite noodling*.  
+- Makes critique actionable (“fails Notan,” not “vibe is off”).  
+- Scales to teams and deadlines.  
+- Produces reusable assets (overlays, checklists, templates) so the next job starts at level 3, not level 0.
+
+---
+
+## Pipeline Overview (10 Stages)
+
+1) **Brief & Intent** → what, who, why.  
+2) **Constraints & Success Criteria** → aspect, platform, proof points.  
+3) **Research & Reference** → gather *curated* targets.  
+4) **Ideation** → 20+ thumbnails across 2–3 armatures.  
+5) **Notan & Value Key** → lock the read in 3 values.  
+6) **Depth & Perspective** → horizon/VPs, plane stepping.  
+7) **Focal Strategy** → hierarchy, edge plan, emphasis.  
+8) **Color & Light** → palette + temperature + lighting logic.  
+9) **Detail & Integration** → materials, type/UI, props.  
+10) **QA → Export → Variants → Archive**.
+
+---
+
+## Stages — Step by Step
+
+### 4.1 Brief & Intent
+- Write **one sentence**: *“The viewer must see ______ first and feel ______.”*  
+- Audience, platform, size, tone.  
+- Deliverables list (ratios, print/web, language variants).
+
+**Checklist**: If you can’t say it in one line, you don’t know the picture yet.
+
+---
+
+### 4.2 Constraints & Success Criteria
+- **Aspect ratios** (primary + alternates), **resolution/DPI**, **color space** (sRGB / CMYK / P3).  
+- **Brand limits** (palette, type), **legal** (logos, disclaimers), **copy length**.  
+- **Performance tests**: thumbnail readability at 120×120, WCAG contrast for text, print soft-proof OK.
+
+**Write success checks** now; they’re your green lights later.
+
+---
+
+### 4.3 Research & Reference System
+- Build a **moodboard**: 12–20 images max; label why each is here (palette, edge plan, flow, lighting).  
+- Pull **negative references** (“do not do” pile) to prevent drift.  
+- For photo: shot list + props + location + lens plan.
+
+---
+
+### 4.4 Ideation & Thumbnails
+- 20–40 thumbnails, **90 seconds each**.  
+- Vary **armature** (thirds, diagonal, spiral) and **flow** (S, Z, L).  
+- Work in **2–3 values** only.
+
+**Select 3** to advance. Kill the rest.
+
+---
+
+### 4.5 Armature & Layout Selection
+- Pick **one** system that fits subject + aspect.  
+- Snap horizon/major edges to the grid; place focal on **node**.  
+- Rough in **lead room/walk room** if there’s motion.
+
+---
+
+### 4.6 Notan & Value Key
+- Choose **high-/mid-/low-key**.  
+- Paint the whole frame as **three flats**.  
+- Ensure focal owns the **largest value jump**.
+
+**Gate**: If it doesn’t read at this stage, restart. Don’t detail a corpse.
+
+---
+
+### 4.7 Perspective, Depth & Scale
+- Set **eye level** and **vanishing points**.  
+- Stage **Fore/Mid/Back** with value stepping, saturation falloff, and edge hierarchy.  
+- Include **scale references** (door, figure) if needed.
+
+---
+
+### 4.8 Focal Strategy (Hierarchy, Edges, Emphasis)
+- Stack cues at the focal: **value contrast + edge sharpness + micro-contrast**.  
+- Demote competitors: soften, desaturate, simplify.  
+- Add **blockers** at leaky corners; bend vectors inward.
+
+---
+
+### 4.9 Color Plan & Temperature Story
+- Choose **one** harmony (analogous, complementary, split-comp).  
+- Assign **Dominant (60%) / Sub (30%) / Accent (≤10%)**.  
+- Map warm/cool by plane (warm near, cool far unless story says otherwise).
+
+---
+
+### 4.10 Lighting Design
+- Pick **key** direction + **fill** strategy + optional **rim**.  
+- Use **falloff** to brighten toward the subject; kill background hotspots.  
+- For photo: pre-light diagram; inverse-square distance notes; flag/gobo plan.
+
+---
+
+### 4.11 Detail, Texture & Material Pass
+- Material recipes (metal specular ranges, skin micro-contrast, fabric sheen).  
+- Add detail **only** where the eye should linger; elsewhere simplify.  
+- Watch **specular discipline**—don’t let highlights outrank the focal.
+
+---
+
+### 4.12 Type/UI/Graphic Elements (If Any)
+- Snap to **modular/baseline grids**; clear **CTA** hierarchy.  
+- Check **WCAG-ish** contrast; no text on noisy zones.  
+- Keep copy out of **danger areas** (gutter, bleed edge, mobile crops).
+
+---
+
+### 4.13 Tangent Hunt, Flow Audit & Border Control
+- **Tangent Hunt**: fix kissing edges with overlap or air.  
+- **Flow Audit**: draw arrows; delete or re-aim any outward vectors.  
+- **Border Control**: darken/soften corners unless tension is intentional; remove hot corners.
+
+---
+
+### 4.14 Feedback Loop & Note Triage
+- Collect notes in one list. Classify **Must/Should/Could/Won’t**.  
+- Timebox **two passes** max per round.  
+- Protect **Source of Truth**; version like `proj_slug_v023_master`.
+
+---
+
+### 4.15 Output, Variants & Delivery
+- **Alt ratios** art-directed (not auto-crop): 1:1, 4:5, 16:9, 2.39:1 as required.  
+- **Color management**: convert to **sRGB** for web; soft-proof CMYK for print; embed profiles.  
+- **Accessibility**: grayscale preview, contrast checks, thumbnail test.  
+- Package: finals + layered source + overlays + license/readme.
+
+---
+
+### 4.16 Postmortem & Knowledge Capture
+- 10-minute write-up: what worked, what failed, *which checklist caught the bug*.  
+- Save overlays, grids, and presets to your library.  
+- Update **personal style guide** with new heuristics.
+
+---
+
+## Decision Trees & Heuristics
+
+- **Center vs Thirds vs Diagonal**  
+  - Iconic/confrontational → **Center**.  
+  - General-purpose → **Thirds/Phi**.  
+  - Energy/motion → **Diagonal/Golden Triangle**.
+
+- **High-Key vs Low-Key**  
+  - Skin/beauty/product → **High-key**.  
+  - Mood/noir/spotlight → **Low-key**.
+
+- **Wide vs Tele**  
+  - Need foreground/lines/exaggeration → **Wide**.  
+  - Need compression/isolation → **Tele**.
+
+- **Color Scheme**  
+  - Need calm cohesion → **Analogous**.  
+  - Need punch contrast → **Complementary / Split-Comp**.  
+  - Multi-brand chaos → keep **Monochrome** with accent.
+
+---
+
+## Schedules: Timeboxing & Pass Structure
+
+**45–90 minute cycles** with hard gates:
+
+1) **Explore (15–30 min)**: 12–20 thumbnails.  
+2) **Commit (10 min)**: choose armature + Notan.  
+3) **Build (20–30 min)**: planes, perspective, focal stack.  
+4) **Polish (10–20 min)**: edges, color, blockers.  
+5) **QA (5–10 min)**: run checklists, export WIP.
+
+**Rule**: never skip the Notan gate. That’s how you waste days.
+
+---
+
+## Collaboration Protocols
+
+- **One SoT file**; branch for experiments; merge back after review.  
+- **Redline feedback**: reviewers mark **specific** issues (values, tangents, exits), not vibes.  
+- **Decision log** in the file (Notes layer): date, change, reason.  
+- **Handoff** includes: fonts, profiles, LUTs, export presets, license info.
+
+---
+
+## Quality Gates (Preflight Checklists)
+
+**Composition Gate**  
+- Focal wins in **grayscale** and **blur**.  
+- Clear **entry→focal→loop** path; exits blocked.  
+- No **kissing tangents**; silhouette clean.
+
+**Depth Gate**  
+- Fore/Mid/Back distinct (values/edges/saturation).  
+- Perspective lines converge correctly; horizon sane.
+
+**Color Gate**  
+- Palette obeys **Dominant/Sub/Accent**.  
+- No hot corners; saturation localized near focal.
+
+**Type/UI Gate**  
+- CTA obvious; baseline grid aligned; safe areas respected.  
+- Contrast passes a reasonable accessibility check.
+
+**Output Gate**  
+- Correct color space & profiles; alt ratios art-directed; filenames/versioning clean.
+
+---
+
+## Troubleshooting: When It’s Not Working
+
+- **“I can’t tell what to look at.”**  
+  - Increase value jump + edge sharpness at focal; demote competitors; add vignette/blockers.
+
+- **“Feels flat.”**  
+  - Add foreground anchor; push atmospheric perspective; sharpen only on subject plane.
+
+- **“Boring.”**  
+  - Switch armature to diagonal or triangle; change value key; add asymmetry/counterweight.
+
+- **“Color is fighting me.”**  
+  - Desaturate globally; rebuild values; re-introduce a single accent.
+
+- **“Edges are noisy.”**  
+  - Cap hard edges to ≤10 spots clustered at focal; soften the rest.
+
+- **“Crop feels wrong.”**  
+  - Check safe zones; add lead room; eliminate edge kisses; try a decisive tighter crop.
+
+---
+
+## Exercises & Routines
+
+1) **30-Min Sprint**  
+   - 5 min brief + constraints, 15 min thumbnails/Notan, 5 min build, 5 min QA.
+
+2) **Armature Roulette**  
+   - Same subject through Thirds, Diagonal, Spiral, Rabatment. Pick winner in grayscale.
+
+3) **Notan or Die**  
+   - 10 refs → 3-value repaints. No color allowed.
+
+4) **Edge Budget**  
+   - Limit hard edges to 10. Place them; move one and watch the read break.
+
+5) **QA Speedrun**  
+   - Run all five gates in 3 minutes on a near-final. Fix the first failing gate only; repeat.
+
+---
+
+## Templates & File Hygiene
+
+- **Overlays**: `thirds.png`, `phi.png`, `spiral.png`, `armature.png`, `root2_dynamic.png`, `safe_areas.png`, `alt_ratios_masks.png`.  
+- **File Naming**: `projSlug_scene_desc_v###_master.ext` (e.g., `orion_posterA_v023_master.psd`).  
+- **Layer Discipline**: groups for `01_Notan`, `02_Armature`, `03_Depth`, `04_Focal`, `05_Color`, `06_Type`, `07_QA`.  
+- **Presets**: export actions for common ratios and color spaces; soft-proof presets for CMYK targets.  
+- **Backups**: daily snapshot to cloud; keep last 3 masters.
+
+---
+
+## Cheat Sheet Summary
+- Start with a **real brief**.  
+- Choose **one armature**, lock **Notan**, then build **depth**, **focal**, **color**.  
+- Audit **flow**, **tangents**, **borders**.  
+- Timebox passes; triage notes; protect your **Source of Truth**.  
+- Ship with **preflight gates** and **alt ratios**; archive learnings.
+
+---
+
+## Extended Glossary
+
+- **Blocker** → Dark/soft mass near edges that stops outward eye travel.  
+- **Gobo** → “Go-between object” used to shape or block light.  
+- **Inverse-Square Law** → Light falls off proportional to 1/d²; move lights, don’t just dim.  
+- **LUT (Look-Up Table)** → Color transform preset; use sparingly and re-check values.  
+- **MoSCoW** → Must/Should/Could/Won’t—prioritization scheme for notes.  
+- **Negative Reference** → Example of what *not* to do; keeps team aligned.  
+- **Safe Zones** → Crop/typographic margins where important content won’t be cut.  
+- **Soft Proof** → On-screen simulation of a printer/profile to catch gamut errors.  
+- **Source of Truth** → Authoritative file/version everyone relies on.  
+- **Timeboxing** → Fixed time slots per task to stop infinite tweaking.  
+
+---

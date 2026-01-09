@@ -1,0 +1,257 @@
+{
+  "main": {
+    "id": "d12050ea7ac65814",
+    "type": "split",
+    "children": [
+      {
+        "id": "4926e60a5dea6650",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "123f4884a83bd2de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Four Powers Framework (Grace • Gnosis • Techna"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8abc6691242c8da6",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "d7b839c7a41ec469",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 8 Layer 4 Expression Mechanics.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 8 Layer 4 Expression Mechanics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1792da01df6b7287",
+    "type": "split",
+    "children": [
+      {
+        "id": "65480557cd67664c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "42c3776fd713ef38",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8426a6a9db4f9700",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "201252a8e2c37d03",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "02df78bea90e4574",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb477de67bd03c74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a7ccb4488786936",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for The Four Powers Framework (Grace • Gnosis • Techna"
+            }
+          },
+          {
+            "id": "cd749f1852c6285b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from The Four Powers Framework (Grace • Gnosis • Techna"
+            }
+          },
+          {
+            "id": "5f630db4ce3536bc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "acf39229c490b735",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a49ae3e1ede02419",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of The Four Powers Framework (Grace • Gnosis • Techna"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "123f4884a83bd2de",
+  "lastOpenFiles": [
+    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/Untitled.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/📘 Knowledgebase Entry_ Six-Force Invariants — Sys.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/📘 1 Knowledgebase Entry_ _Systems Thinking Made S.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/✅ COPY_PASTE PROMPT (Fill in placeholders).md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 1 Pilot Knowledgebase Entry — _Victoria Midnigh.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 Invariant Layers Framework.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/2 Narrative Invariants (Two-Tier Model).md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/Fill In Pilot Episode Development — Layer-Bound Me.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/Locked End to Pilot.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/Pilot Episode Development — Layer-Bound Method.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/To - DO.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Prompt Template v2_ Systems-First Knowledgebase.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Grand Theft Auto V_ Non-Ne.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Fight Club_ Non-Negotiable.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Cyberpunk 2077_ Non-Negoti.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Arcane_ Non-Negotiable Inv.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ Non-Negotiable Invariants .md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Wind River_ — Non-Negotia.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Whirlybird_ — Non-Negotia.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Westworld_ Non-Negotiable.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Watchmen_ — Non-Negotiabl.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Tombstone_ — Non-Negotiab.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Tom Clancy’s The Division.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _There Will Be Blood_ — No.md",
+    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _The Wire_ — Non-Negotiabl.md",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/5 Theme Illustrating",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/4 Plot Illustrating",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/3 Relationships",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/2 Character Illustrating",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/1 Setting the Stage",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/4. STORYWEAVING/4 SCENE CREATION",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/4. STORYWEAVING/3 THEME EXPOSITION",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/4. STORYWEAVING/2 PLOT EXPOSITION",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/4. STORYWEAVING/1 CHARACTER STORYWEAVING",
+    "00_IMPORTED_JOPLIN/ASTROSE7X/3. Illustrating/THROUGHLINE ILLUSTRATING",
+    "00_IMPORTED_JOPLIN/_resources/fd7e095cda6714cceef77fdb0ec64ed5.png",
+    "00_IMPORTED_JOPLIN/_resources/eaaabf8d9665756da6a33b38c91b2c74.png",
+    "00_IMPORTED_JOPLIN/_resources/e769663e65915f4e665cd314e084c62c.png",
+    "00_IMPORTED_JOPLIN/_resources/e3150457a697861cfff3cf1e5f00acaf.png",
+    "00_IMPORTED_JOPLIN/_resources/d2fba683008d5e0b1d7c358b3f7712e5.png",
+    "00_IMPORTED_JOPLIN/_resources/b5684efc26b3e0466eb89799ec4d333c.png",
+    "00_IMPORTED_JOPLIN/_resources/b21715ef6efb5c48f7acb46d62ff98ae.png",
+    "00_IMPORTED_JOPLIN/_resources/9c38cb70518c5e98fbb5ee6d0afa2489.png",
+    "00_IMPORTED_JOPLIN/_resources/9a4a33f40cee92925ed18813a2a72b75.png",
+    "00_IMPORTED_JOPLIN/_resources/91911b83b1a50b59eeab8b958575f59b.png"
+  ]
+}
