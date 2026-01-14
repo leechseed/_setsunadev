@@ -337,16 +337,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE.md",
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀 The Outliers - Production Roadmap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE"
+              "title": "🚀 The Outliers - Production Roadmap"
+            }
+          },
+          {
+            "id": "4936a4b3cdf5d76b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀KB_S1_PHASE_2_MICRO_COMPONENT_MAP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🚀KB_S1_PHASE_2_MICRO_COMPONENT_MAP"
+            }
+          },
+          {
+            "id": "0a4538567d3706e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🚀MOVEMENT 1 (PURPLE) EXTRACTION LIST.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🚀MOVEMENT 1 (PURPLE) EXTRACTION LIST"
             }
           }
         ],
-        "currentTab": 23
+        "currentTab": 25
       },
       {
         "id": "84d8375b41e17072",
@@ -530,15 +558,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "0646c71faede9b57",
+  "active": "0a4538567d3706e8",
   "lastOpenFiles": [
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_CHRONOLOGY_AUDIT_PROTOCOL.md",
-    "📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_PSTO_FRAMEWORK.md",
+    "Untitled.md",
     "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀 The Outliers - Production Roadmap.md",
+    "🚀MOVEMENT 1 (PURPLE) EXTRACTION LIST.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀KB_S1_PHASE_2_MICRO_COMPONENT_MAP.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_PSTO_FRAMEWORK.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_CHRONOLOGY_AUDIT_PROTOCOL.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE.md",
     "updating google gemini.md",
     "AI Docs Agent — Operational README.md",
-    "Untitled.md",
     "copy.md",
     "00_IMPORTED_JOPLIN/Pilot Episode Development/Locked End to Pilot.md",
     "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_MASTER_The_Outliers_Series_Bible (Updated).md",
@@ -556,8 +586,6 @@
     "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Timeline_Architecture_Dual_Anchors.md",
     "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Title_Logic_The_Outliers.md",
     "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Season 1 North Star The Architecture of Erasure.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Ontological Layer 0 — Foundational Reality.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Knowledgebase — The Four Powers as a Narrative .md",
     "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/5 Theme Illustrating",
     "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/4 Plot Illustrating",
     "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/3 Relationships",
