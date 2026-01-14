@@ -35,28 +35,338 @@
               "icon": "lucide-file",
               "title": "AI Docs Agent — Operational README"
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "8abc6691242c8da6",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
+          },
           {
-            "id": "d7b839c7a41ec469",
+            "id": "d180d8ef201262c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 8 Layer 4 Expression Mechanics.md",
+                "file": "updating google gemini.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "updating google gemini"
+            }
+          },
+          {
+            "id": "0be0bbf5f62e72b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Season 1 North Star The Architecture of Erasure.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 Season 1 North Star The Architecture of Erasure"
+            },
+            "group": "fb34f4477e584712"
+          },
+          {
+            "id": "e32c8ed6afc68200",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Knowledgebase — The Four Powers as a Narrative .md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 Knowledgebase — The Four Powers as a Narrative"
+            }
+          },
+          {
+            "id": "1c2a00280803a412",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Character_Invariant_Pillars.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_Character_Invariant_Pillars"
+            }
+          },
+          {
+            "id": "a4cb7c5389333550",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "updating google gemini.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "updating google gemini"
+            }
+          },
+          {
+            "id": "462711c9159ea949",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "copy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "copy"
+            }
+          },
+          {
+            "id": "ae044f55f8ccfe92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Master_Structural_Engine.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_Master_Structural_Engine"
+            }
+          },
+          {
+            "id": "f4a2f11f695fbeb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Timeline_Architecture_Dual_Anchors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_Timeline_Architecture_Dual_Anchors"
+            }
+          },
+          {
+            "id": "6fe302abd1ff8ab1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Six_Movements_of_Radicalization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_The_Six_Movements_of_Radicalization"
+            }
+          },
+          {
+            "id": "51e608942110ed07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Six_Movements_of_Radicalization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_The_Six_Movements_of_Radicalization"
+            }
+          },
+          {
+            "id": "dcd755220239db00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Quinn_Bishop_The_Reason_Instrument.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_Quinn_Bishop_The_Reason_Instrument"
+            }
+          },
+          {
+            "id": "22b889379273e7ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Phase1_Movement_Briefs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_Phase1_Movement_Briefs"
+            }
+          },
+          {
+            "id": "d2596096ce0ce9ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Phase1_Movement_Briefs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_Phase1_Movement_Briefs"
+            }
+          },
+          {
+            "id": "1d13fca3357604e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Outliers_Production_Phases.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_The_Outliers_Production_Phases"
+            }
+          },
+          {
+            "id": "ef9a4b694a7a65be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Outliers_Production_Phases.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_The_Outliers_Production_Phases"
+            }
+          },
+          {
+            "id": "511a4bdcf7378ac3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Outliers_Production_Phases.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_The_Outliers_Production_Phases"
+            }
+          },
+          {
+            "id": "d1399b54f560a988",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_MASTER_The_Outliers_Series_Bible (Updated).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_MASTER_The_Outliers_Series_Bible (Updated)"
+            }
+          },
+          {
+            "id": "54fa1285df6155fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "updating google gemini.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "updating google gemini"
+            }
+          },
+          {
+            "id": "1f03527d00e6f4a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀 The Outliers - Production Roadmap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🚀 The Outliers - Production Roadmap"
+            }
+          },
+          {
+            "id": "c575546d4faa09ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_PSTO_FRAMEWORK.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_PHASE_2_PSTO_FRAMEWORK"
+            }
+          },
+          {
+            "id": "4fe2536fc15536e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_CHRONOLOGY_AUDIT_PROTOCOL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_PHASE_2_CHRONOLOGY_AUDIT_PROTOCOL"
+            }
+          },
+          {
+            "id": "0646c71faede9b57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE"
+            }
+          }
+        ],
+        "currentTab": 23
+      },
+      {
+        "id": "84d8375b41e17072",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "67fb1deb51072c0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Season 1 North Star The Architecture of Erasure.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📘 8 Layer 4 Expression Mechanics"
-            }
+              "title": "📘 Season 1 North Star The Architecture of Erasure"
+            },
+            "group": "fb34f4477e584712"
           }
         ]
       }
@@ -115,7 +425,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 508.5
   },
   "right": {
     "id": "02df78bea90e4574",
@@ -220,34 +530,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "1bd3e32484b1ad8f",
+  "active": "0646c71faede9b57",
   "lastOpenFiles": [
-    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_CHRONOLOGY_AUDIT_PROTOCOL.md",
+    "📘 KB_S1_PHASE_2_FINAL_DRAFT_TIMELINE_STRUCTURE.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_PSTO_FRAMEWORK.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀 The Outliers - Production Roadmap.md",
+    "updating google gemini.md",
     "AI Docs Agent — Operational README.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/Untitled.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/📘 Knowledgebase Entry_ Six-Force Invariants — Sys.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/📘 1 Knowledgebase Entry_ _Systems Thinking Made S.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/✅ COPY_PASTE PROMPT (Fill in placeholders).md",
-    "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 1 Pilot Knowledgebase Entry — _Victoria Midnigh.md",
-    "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 Invariant Layers Framework.md",
-    "00_IMPORTED_JOPLIN/Pilot Episode Development/2 Narrative Invariants (Two-Tier Model).md",
-    "00_IMPORTED_JOPLIN/Pilot Episode Development/Fill In Pilot Episode Development — Layer-Bound Me.md",
+    "Untitled.md",
+    "copy.md",
     "00_IMPORTED_JOPLIN/Pilot Episode Development/Locked End to Pilot.md",
-    "00_IMPORTED_JOPLIN/Pilot Episode Development/Pilot Episode Development — Layer-Bound Method.md",
-    "00_IMPORTED_JOPLIN/Pilot Episode Development/To - DO.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Prompt Template v2_ Systems-First Knowledgebase.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Grand Theft Auto V_ Non-Ne.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Fight Club_ Non-Negotiable.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Cyberpunk 2077_ Non-Negoti.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry__Arcane_ Non-Negotiable Inv.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ Non-Negotiable Invariants .md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Wind River_ — Non-Negotia.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Whirlybird_ — Non-Negotia.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Westworld_ Non-Negotiable.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Watchmen_ — Non-Negotiabl.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Tombstone_ — Non-Negotiab.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _Tom Clancy’s The Division.md",
-    "00_IMPORTED_JOPLIN/oxo invariant model inspirations/📘 Knowledgebase Entry_ _There Will Be Blood_ — No.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_MASTER_The_Outliers_Series_Bible (Updated).md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Outliers_Production_Phases.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Outliers_Master_System_Bible.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Phase1_Movement_Briefs.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Systemic_Archetypes_Master.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_North_Star_Architecture_of_Erasure.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Master_Structural_Engine.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Quinn_Bishop_The_Reason_Instrument.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 B) Ontological Narrative Layers — A Hierarchy o.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Character_Invariant_Pillars.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Dramatica_Story_Engine_Refined.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Six_Movements_of_Radicalization.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Timeline_Architecture_Dual_Anchors.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Title_Logic_The_Outliers.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Season 1 North Star The Architecture of Erasure.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Ontological Layer 0 — Foundational Reality.md",
+    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Knowledgebase — The Four Powers as a Narrative .md",
     "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/5 Theme Illustrating",
     "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/4 Plot Illustrating",
     "00_IMPORTED_JOPLIN/ASTROSE7X/5. POST STORYGUIDE/3 Relationships",
