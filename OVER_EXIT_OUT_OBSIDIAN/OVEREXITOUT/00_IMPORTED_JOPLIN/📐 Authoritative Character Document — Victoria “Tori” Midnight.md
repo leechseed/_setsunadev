@@ -1,5 +1,6 @@
-Got it — Obsidian-ready, no email wrapper, clean Markdown.
-
+---
+tags:
+  - oxo
 ---
 
 # 📘 Character Authority Document — Victoria “Tori” Midnight

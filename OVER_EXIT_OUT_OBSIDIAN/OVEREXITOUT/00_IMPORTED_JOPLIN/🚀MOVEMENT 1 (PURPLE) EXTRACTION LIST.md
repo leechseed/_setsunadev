@@ -1,3 +1,7 @@
+---
+tags:
+  - oxo
+---
 
 # 📋 MOVEMENT 1 (PURPLE) EXTRACTION LIST
 
