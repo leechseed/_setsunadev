@@ -1,6 +1,7 @@
 ---
 tags:
   - oxo
+  - authoritative
 ---
 # 📘 Authoritative Narrative Invariant Stack
 

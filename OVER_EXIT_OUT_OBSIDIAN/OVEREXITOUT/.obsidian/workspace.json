@@ -4,39 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "d789872fde1d8263",
-        "type": "tabs",
+        "id": "209783b80df1ca5c",
+        "type": "split",
         "children": [
           {
-            "id": "7102aafb22477f1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_IMPORTED_JOPLIN/📐 Authoritative Character Document — Victoria “Tori” Midnight.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📐 Authoritative Character Document — Victoria “Tori” Midnight"
-            }
+            "id": "d789872fde1d8263",
+            "type": "tabs",
+            "dimension": 80.03992015968063,
+            "children": [
+              {
+                "id": "11b94bdd5f1f164a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "copy1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "copy1"
+                }
+              }
+            ]
           },
           {
-            "id": "232a902db6fe7815",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_IMPORTED_JOPLIN/📐 Authoritative Character Document — Victoria “Tori” Midnight.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📐 Authoritative Character Document — Victoria “Tori” Midnight"
-            }
+            "id": "c7acf4b73360f9cd",
+            "type": "tabs",
+            "dimension": 19.96007984031936,
+            "children": [
+              {
+                "id": "2d5a01b9c5bd7f43",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "🧠👅🫦 1A Development Dump.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "🧠👅🫦 1A Development Dump"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -93,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 378.5
+    "width": 501.5
   },
   "right": {
     "id": "02df78bea90e4574",
@@ -198,34 +212,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "232a902db6fe7815",
+  "active": "11b94bdd5f1f164a",
   "lastOpenFiles": [
-    "Untitled.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative Character Document — Victoria “Tori” Midnight.md",
-    "00_IMPORTED_JOPLIN/copy.md",
+    "copy2.md",
+    "🧠👅🫦 1A Development Dump.md",
+    "copy1.md",
+    "copy3.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT Invariant Sheet.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Hunter Reed.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Anna Colson Conway.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Quinn Bishop.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT Movement 1 — Victoria Midnight Origin.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Penelope “Penny” Lane.md",
+    "00_IMPORTED_JOPLIN/📐 SSOT Movement Architecture System.md",
+    "00_IMPORTED_JOPLIN/📐 SSOT Narrative Astrology - Modular Toolkit.md",
+    "TODO.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT NARRATIVE ASTROLOGY - VICTORIA MIDNIGHT.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Victoria Midnight.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA The Student Diaspora.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA The Administration.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Shane Doucet.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Riley Moss.md",
+    "00_IMPORTED_JOPLIN/📐 SSOT Character Origins vs. Narrative Movements.md",
+    "00_IMPORTED_JOPLIN/🚀 MOVEMENT 1 DEVELOPMENT - PURPLE TORI ORIGINS.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 Invariant Layers Framework.md",
+    "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 1 Pilot Knowledgebase Entry — _Victoria Midnigh.md",
+    "00_IMPORTED_JOPLIN/updating google gemini.md",
     "00_IMPORTED_JOPLIN/oxo invariant model systems thinking studies/The Four Powers Framework (Grace • Gnosis • Techna.md",
     "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Season 1 North Star The Architecture of Erasure.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 Knowledgebase — The Four Powers as a Narrative .md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Character_Invariant_Pillars.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Master_Structural_Engine.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Timeline_Architecture_Dual_Anchors.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Six_Movements_of_Radicalization.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Quinn_Bishop_The_Reason_Instrument.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Phase1_Movement_Briefs.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_The_Outliers_Production_Phases.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_MASTER_The_Outliers_Series_Bible (Updated).md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀 The Outliers - Production Roadmap.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_PSTO_FRAMEWORK.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_PHASE_2_CHRONOLOGY_AUDIT_PROTOCOL.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/📘 KB_S1_Character_Invariant_Narrative Astrology.md",
-    "00_IMPORTED_JOPLIN/OXO DOCUMENTATION FINAL/🚀KB_S1_PHASE_2_MICRO_COMPONENT_MAP.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative Invariant Sheet.md",
-    "TODO.md",
-    "00_IMPORTED_JOPLIN/AI Docs Agent — Operational README.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative Movement 1 — Origin Authority Document.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative Movement Architecture.md",
-    "00_IMPORTED_JOPLIN/🚀 MOVEMENT 1 DEVELOPMENT - PURPLE TORI ORIGINS.md",
-    "00_IMPORTED_JOPLIN/🚀MOVEMENT 1 (PURPLE) EXTRACTION LIST.md",
     "Untitled 3.base",
     "Untitled 2.base",
     "Untitled 1.base",

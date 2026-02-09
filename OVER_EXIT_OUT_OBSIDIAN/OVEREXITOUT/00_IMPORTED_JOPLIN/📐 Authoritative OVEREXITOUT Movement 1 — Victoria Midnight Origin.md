@@ -1,6 +1,7 @@
 ---
 tags:
   - oxo
+  - authoritative
 ---
 
 # 📘 Movement 1 — Origin Authority Document
