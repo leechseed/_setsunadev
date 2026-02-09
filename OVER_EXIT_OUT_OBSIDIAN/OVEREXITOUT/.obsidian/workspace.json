@@ -4,68 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "209783b80df1ca5c",
-        "type": "split",
+        "id": "d789872fde1d8263",
+        "type": "tabs",
         "children": [
           {
-            "id": "d789872fde1d8263",
-            "type": "tabs",
-            "dimension": 80.03992015968063,
-            "children": [
-              {
-                "id": "11b94bdd5f1f164a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "copy1.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "copy1"
-                }
+            "id": "11b94bdd5f1f164a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "copy1.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "e9ab5ab42d926047",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "🧠👅🫦 1A Development Dump.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "🧠👅🫦 1A Development Dump"
-                }
-              }
-            ],
-            "currentTab": 1
+              "icon": "lucide-file",
+              "title": "copy1"
+            }
           },
           {
-            "id": "c7acf4b73360f9cd",
-            "type": "tabs",
-            "dimension": 19.96007984031936,
-            "children": [
-              {
-                "id": "2d5a01b9c5bd7f43",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "🧠👅🫦 1A Development Dump.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "🧠👅🫦 1A Development Dump"
-                }
-              }
-            ]
+            "id": "e9ab5ab42d926047",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_IMPORTED_JOPLIN/📐 SSOT Narrative Astrology - Modular Toolkit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📐 SSOT Narrative Astrology - Modular Toolkit"
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,26 +200,26 @@
   },
   "active": "e9ab5ab42d926047",
   "lastOpenFiles": [
-    "copy2.md",
     "🧠👅🫦 1A Development Dump.md",
+    "00_IMPORTED_JOPLIN/📐 SSOT Movement Architecture System.md",
+    "00_IMPORTED_JOPLIN/📐 SSOT Character Origins vs. Narrative Movements.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Hunter Reed.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT NARRATIVE ASTROLOGY - VICTORIA MIDNIGHT.md",
+    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT Movement 1 — Victoria Midnight Origin.md",
+    "copy2.md",
     "copy1.md",
     "copy3.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT Invariant Sheet.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Hunter Reed.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Anna Colson Conway.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Quinn Bishop.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT Movement 1 — Victoria Midnight Origin.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Penelope “Penny” Lane.md",
-    "00_IMPORTED_JOPLIN/📐 SSOT Movement Architecture System.md",
     "00_IMPORTED_JOPLIN/📐 SSOT Narrative Astrology - Modular Toolkit.md",
     "TODO.md",
-    "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT NARRATIVE ASTROLOGY - VICTORIA MIDNIGHT.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Victoria Midnight.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA The Student Diaspora.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA The Administration.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Shane Doucet.md",
     "00_IMPORTED_JOPLIN/📐 Authoritative OVEREXITOUT DRAMATICA Riley Moss.md",
-    "00_IMPORTED_JOPLIN/📐 SSOT Character Origins vs. Narrative Movements.md",
     "00_IMPORTED_JOPLIN/🚀 MOVEMENT 1 DEVELOPMENT - PURPLE TORI ORIGINS.md",
     "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 Invariant Layers Framework.md",
     "00_IMPORTED_JOPLIN/Pilot Episode Development/📘 1 Pilot Knowledgebase Entry — _Victoria Midnigh.md",
