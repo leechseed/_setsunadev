@@ -2,9 +2,6 @@
 tags:
   - oxo
 ---
-Here is the complete, drop-in Authoritative Knowledgebase entry. It covers all 15 categories, fully expanded and formatted for Obsidian/Markdown.
-
----
 
 # 📘 Authoritative Knowledgebase: Narrative Astrology (Omni-Reference SSOT)
 

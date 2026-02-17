@@ -44,3 +44,5 @@ Example: `2026-02-10_mars_aspects_research.md`
 - Capturing ideas
 - Following creative flow
 - Tagging for later retrieval
+
+[[📐_ssot_narrative_astrology_framework]]

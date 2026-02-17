@@ -9,7 +9,6 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 ---
 
-Here is the complete, drop-in Authoritative Knowledgebase entry. It covers all 15 categories, fully expanded and formatted for Obsidian/Markdown.
 
 ---
 

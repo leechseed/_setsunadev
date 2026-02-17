@@ -218,3 +218,5 @@ Her transformation begins the moment she decides:
 
 **Tori Midnight — Structural Origin: LOCKED**  
 Ready for the next character.
+
+[[📐_ssot_character_astrology]]
