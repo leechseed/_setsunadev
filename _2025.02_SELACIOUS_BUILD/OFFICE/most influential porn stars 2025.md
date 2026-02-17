@@ -39,3 +39,5 @@ Coco Lovecock
 Elsa Jean
 Cory Chase
 Mia Khalifa
+LexaLite
+Ellexxaurus

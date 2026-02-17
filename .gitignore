@@ -2,3 +2,4 @@ venv/
 .venv/
 bin/
 leechseed2/
+.obsidian/
