@@ -9,7 +9,6 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 ---
 
-
 ---
 
 # 📘 Authoritative Knowledgebase: Narrative Astrology (Omni-Reference SSOT)
@@ -22,7 +21,7 @@ status: canonical
 
 ## Table of Contents
 
-1. [[#1. Systemic Core Philosophy]]
+1. [[#1. Systemiec Core Philosophy]]
 2. [[#2. The Dramatica-Astrology Interface (DAI)]]
 3. [[#3. Atomic Variables: Personal Stack (The Hardware)]]
 4. [[#4. Atomic Variables: Structural Stack (The Limit)]]

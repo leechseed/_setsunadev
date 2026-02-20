@@ -14,6 +14,7 @@ status: canonical
 # 🎯 AUTH: Victoria "Tori" Midnight - OVEREXITOUT
 
 ## Table of Contents
+
 1. [Identity & Narrative Function](#identity--narrative-function)
 2. [Dramatica Structural Spine](#dramatica-structural-spine)
 3. [Movement 1 Origin Commitments](#movement-1-origin-commitments)
@@ -30,35 +31,39 @@ status: canonical
 
 ## Identity & Narrative Function
 
-| Field | Value |
-|-------|-------|
-| **Full Name** | Victoria "Tori" Midnight |
-| **Primary Bond** | Jebb Midnight (older brother) |
-| **Narrative Role** | Main Character / Protagonist |
-| **Resolve** | Change |
-| **MC Domain** | Situation |
-| **MC Issue** | Interdiction |
-| **Problem → Solution** | Equity → Inequity |
-| **Focus → Direction** | Desire → Ability |
-| **Unique Ability / Critical Flaw** | Destiny / Truth |
+| Field                              | Value                         |
+| ---------------------------------- | ----------------------------- |
+| **Full Name**                      | Victoria "Tori" Midnight      |
+| **Primary Bond**                   | Jebb Midnight (older brother) |
+| **Narrative Role**                 | Main Character / Protagonist  |
+| **Resolve**                        | Change                        |
+| **MC Domain**                      | Situation                     |
+| **MC Issue**                       | Interdiction                  |
+| **Problem → Solution**             | Equity → Inequity             |
+| **Focus → Direction**              | Desire → Ability              |
+| **Unique Ability / Critical Flaw** | Destiny / Truth               |
 
 ---
 
 ## Dramatica Structural Spine
 
 ### Motivation
+
 - Consider
 - Pursuit
 
 ### Methodology
+
 - Certainty
 - Proaction
 
 ### Evaluation
+
 - Proven
 - Effect
 
 ### Purpose
+
 - Knowledge
 - Actuality
 
@@ -73,6 +78,7 @@ status: canonical
 ### System Illusion (Pre-Break)
 
 **Victoria believes**:
+
 - Success provides freedom
 - System rewards hard work
 - Merit determines outcomes
@@ -95,6 +101,7 @@ The system notices Victoria before racing fame—as a statistical irregularity i
 - Beauty that reads as striking but nonconforming to elite grooming norms
 
 This combination creates:
+
 - High survivability
 - High adaptability
 - High asset value
@@ -127,6 +134,7 @@ Victoria demonstrates the following behavioral patterns when stressed:
 ## Relationship to the System
 
 **Evolution**:
+
 - Begins as merit believer inside the system
 - Learns the system functions as filter, not judge
 - Recognizes legibility control as primary systemic weapon
@@ -138,11 +146,11 @@ Victoria demonstrates the following behavioral patterns when stressed:
 
 ## Core Bond - Jebb Midnight
 
-| Attribute | Value |
-|-----------|-------|
-| Older / Younger | Older brother |
-| Risk Profile | More reckless than Victoria |
-| System Belief | Believes in system more than Victoria does |
+| Attribute         | Value                                                                                   |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| Older / Younger   | Older brother                                                                           |
+| Risk Profile      | More reckless than Victoria                                                             |
+| System Belief     | Believes in system more than Victoria does                                              |
 | His Dream for Her | That she succeeds "the right way" and does not ruin her life chasing dreams like he did |
 
 ### Pace Notes
@@ -150,6 +158,7 @@ Victoria demonstrates the following behavioral patterns when stressed:
 **Type B**: Technical + Human Noise
 
 Jebb's pace notes include:
+
 - Inside jokes
 - Emotional shorthand
 - Personal rhythm indicators
@@ -161,6 +170,7 @@ Jebb's pace notes include:
 ## Non-Negotiables
 
 Victoria will not:
+
 - Trust institutional protection
 - Stop seeking truth of what happened to Jebb
 - Remain "fair" when fairness becomes a cage
@@ -172,6 +182,7 @@ These principles remain constant across all narrative developments.
 ## Signature Imagery
 
 **Visual Aesthetic**:
+
 - Neon blue "verified" aesthetic of early success period
 - Grease, sweat, improvised gear indicating physical competence
 - Body shaped by labor rather than prestige training
@@ -179,6 +190,7 @@ These principles remain constant across all narrative developments.
 - Motion under pressure—never ornamental
 
 **Thematic Associations**:
+
 - Kinetic energy
 - Practical functionality
 - Earned capability
@@ -192,9 +204,9 @@ These principles remain constant across all narrative developments.
 
 Movement 1 consists of two acquisition phases:
 
-| Phase | Function |
-|-------|----------|
-| **M1A - Salvage Economy** | System notices Victoria through economic output anomaly |
+| Phase                        | Function                                                 |
+| ---------------------------- | -------------------------------------------------------- |
+| **M1A - Salvage Economy**    | System notices Victoria through economic output anomaly  |
 | **M1B - Delta Coast Racing** | System escalates from labor tracking to identity capture |
 
 **Unified Law of Movement 1**: The system's attention is acquisition, not admiration.
@@ -217,8 +229,8 @@ This decision establishes her trajectory through all six movements of OVEREXITOU
 
 ## Version History
 
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2024-09-15 | Initial character authority document |
-| 1.1.0 | 2025-01-20 | Added Movement 1 origin commitments detail |
-| 1.2.0 | 2026-02-10 | Extracted from legacy Joplin, standardized frontmatter, added SSOT dependencies |
+| Version | Date       | Changes                                                                         |
+| ------- | ---------- | ------------------------------------------------------------------------------- |
+| 1.0.0   | 2024-09-15 | Initial character authority document                                            |
+| 1.1.0   | 2025-01-20 | Added Movement 1 origin commitments detail                                      |
+| 1.2.0   | 2026-02-10 | Extracted from legacy Joplin, standardized frontmatter, added SSOT dependencies |
