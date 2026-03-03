@@ -69,10 +69,19 @@
 - Violet Myers
 - Yhivi
 - Demon Mika
-
-</details>
-
+- hannahowo
+- soogz
+- Lana Rhoades 
+- Scarlett Chase
+- Dolly Dyson
+- Dolly Little
+- Mary Jane Auryn
+- Faye Reagan
 - Yhivi
+- Little Caprice
+- Belle Delphine
+- Lily Philips
+- 
 
 # dudes so far
 

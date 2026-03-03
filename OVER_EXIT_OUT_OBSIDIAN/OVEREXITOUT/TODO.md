@@ -1,103 +1,33 @@
-Do it in **two passes**: **(A) extract canon from Dramatica**, then **(B) fuse in your loose notes** _only where they don’t contradict_. Step-by-step, no fluff.
+## Updated Plan
 
----
+Based on all 12 answers, the revised build sequence:
 
-## Step 1 — Pick the cast list (4–7 names)
+### Phase 1: Dramatica Integration
 
-Reply with the **exact list** of characters you want to “core-doc” first.
+**1A. SSOT: Dramatica Integration Protocol** — What Dramatica is in the system, how storyforms relate to characters, the `storyform_id` keying system, Pattern 1 nested storyform support.
 
-Example: `Tori, Anna, Quinn, Hunter, Penny, [Brother name], Montgomery`
+**1B. L12 Architecture Decision** — Implement Option C (core L12 + `L12_DRAMATICA_EXTENDED` sub-table). Define which variables live where.
 
-(No bios. Just names.)
+**1C. Tier 2 Character System** — Implement Approach 3 (element signature + relational roles). Define the L12 block format for Tier 2 characters.
 
-Victoria 'Tori' Midnight, 
----
+**1D. Dramatica Ingest Template (.md)** — The canonical intake form for Tier 3 characters. Covers full storyform position, throughline variables, element quads. Includes the `storyform_id` field.
 
-## Step 2 — For Character #1 only, paste the Dramatica outputs that are actually structural
+### Phase 2: Character Astrology Integration
 
-For the first character on your list, paste **only** these Dramatica fields (copy/paste from the program):
+**2A. SSOT: Character Astrology** — Renamed, relocated to 02_CHARACTER. Defines the system's role as a deterministic character rendering engine. Separates the 15 categories into character-level (natal chart, dignities, personal stack, structural stack, aspects, houses, interface layer) and story-level (progressions, transits, synastry, movements, reset protocol).
 
-1. **Archetype / Role** (Protagonist / Antagonist / Guardian / Contagonist / Reason / Emotion / Sidekick / Skeptic — or whatever you set)
-    
-2. **Motivation** (the 4 items: _Pursuit, Avoid, Consider, Reconsider_)
-    
-3. **Methodology** (_Proaction, Reaction, Inaction, Protection_)
-    
-4. **Evaluation** (_Logic, Feeling, Control, Uncontrolled_)
-    
-5. **Purpose** (_Knowledge, Thought, Ability, Desire_)
-    
-6. **Problem + Solution** (the pair)
-    
-7. **Focus + Direction** (the pair)
-    
-8. **Unique Ability + Critical Flaw** (if you assigned them)
-    
+**2B. DAI Expansion (Dramatica-Astrology Interface)** — The full translation table from Dramatica variables to astrological configurations. This is the API spec. Narrative-first derivation rules for each planet from Dramatica inputs.
 
-That’s it.
+**2C. Character Astrology Ingest Template (.md)** — The canonical intake form for astrological character data. Captures natal chart, planetary positions, aspects, dignities, house placements — all derived from the locked Dramatica ingest via the DAI.
 
-If you don’t have one of those set, write `UNSET`.
+### Phase 3: Integration Architecture
 
----
+**3A. Character Astrology ↔ 12-Layer Mapping** — Which astrological variables feed which layers. Where they are independent. The formal interface between the parallel datasets.
 
-## Step 3 — Paste your loose notes for that same character (but only in 5 buckets)
+**3B. Character State Architecture** — The static core + state diff system. Defines how progressions, transits, and narrative-moment snapshots overlay on the static character record without modifying it.
 
-Under the same character, paste your loose notes **sorted** into these buckets (even if messy):
+**3C. Step 1 Source Verification Protocol (revised)** — Formal definition of "canonical documentation exists and is locked." Requires: Dramatica Ingest Template [LOCKED] + Character Astrology Ingest Template [LOCKED] + both validated against interface spec.
 
-- **Behavior under pressure** (what they do)
-    
-- **Relationship to the system** (how they relate to power/enforcement)
-    
-- **Core bond / attachment** (who they orbit, who they replace)
-    
-- **Non-negotiables** (what they won’t do / what they must do)
-    
-- **Signature imagery / vibe** (optional)
-    
+### Phase 4: Validation
 
-If you can’t sort it fast, paste raw and label it `RAW NOTES`.
-
----
-
-## Step 4 — I produce the “Minimum Authoritative Character Doc”
-
-I will output a **single canonical document** for that character that includes:
-
-- Dramatica alignment summary (no invention)
-    
-- Your “7-field minimum authority” spine
-    
-- Contradictions list (if any) with a **tie-break rule**
-    
-- What Movement-origins are plausible (not locked yet)
-    
-
----
-
-## Step 5 — Repeat for Character #2
-
-Same exact process. One at a time.
-
----
-
-### Tie-break rule (important, so we don’t drift)
-
-- **Dramatica fields win** for _role/function/psychodynamics_ **unless you explicitly say “override Dramatica.”**
-    
-- **Your invariants win** over everything.
-    
-- Loose notes fill in **expression**, not structure.
-    
-
----
-
-## Your next message should be ONLY Step 1 + Step 2 for Character #1
-
-So reply with:
-
-1. The cast list (Step 1)
-    
-2. Character #1 Dramatica fields (Step 2)
-    
-
-And we start.
+Run Victoria Midnight through the new pipeline. Produce both ingest templates from her authoritative document. Confirm the existing vertical slice is reproducible from those templates. Identify any gaps where the authoritative document does not contain enough data to complete a template field.
