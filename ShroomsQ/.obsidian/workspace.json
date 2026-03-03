@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_03_character_systems_vertical_slice.md",
+                "file": "_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📐 ssot_03_character_systems_vertical_slice"
+              "title": "📐ssot_SSOT_CREATION"
             }
           }
         ]
@@ -188,15 +188,18 @@
   },
   "active": "c64088fd9f18f193",
   "lastOpenFiles": [
+    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_writing_guide.md",
+    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_ops_goon_room_usage_guide.md.md",
+    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_ai_instruction_protocol.md",
+    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_retrieval_dossier_protocol.md",
+    "_GOON_ROOM/IDEAS_DUMP.md",
+    "_GOON_ROOM/sessions/2026-02/2026-02-10_getting_started.md.md",
+    "_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_03_character_systems_vertical_slice.md",
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot narrative astrology framework.md",
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot Narrative Astrology - Modular Toolkit.md",
     "_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot narrative astrology framework.md",
     "_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot Narrative Astrology - Modular Toolkit.md",
-    "_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_03_character_systems_vertical_slice.md",
     "_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/-3-atomic-variables-personal-stack-the-hardware.md",
-    "_GOON_ROOM/IDEAS_DUMP.md",
-    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_writing_guide.md",
-    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_retrieval_dossier_protocol.md",
     "_CANON/_SSOT/05_OPERATIONS/Untitled.md",
     "_CANON/_TEMPLATES/ssot/📐ssot_SSOT_CREATION.md",
     "_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md",
@@ -204,13 +207,10 @@
     "_CANON/_TEMPLATES/ssot/📐 ssot_05_operations_standard_structure_template.md",
     "_CANON/_TEMPLATES/ssot/SSOT.MD",
     "_CANON/_TEMPLATES/ssot/📐 ssot_ai_instruction_protocol.md",
-    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_ai_instruction_protocol.md",
     "_CANON/_SSOT/05_OPERATIONS/SSOT.MD",
-    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_ops_goon_room_usage_guide.md.md",
     "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md",
     "_CANON/_TEMPLATES/ssot/📋_template_generate_ssot_properties.md.md",
     "_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/🎯 auth overexitout victoria midnight.md",
-    "_GOON_ROOM/sessions/2026-02/2026-02-10_getting_started.md.md",
     "_STAGED/ssot_candidates/2026-02-10_auto_mover_test.md.md",
     "_CANON/_SSOT/00_EPISTEMOLOGY/2_on_ascertaining_truth.md",
     "_STAGED/review/⚙️_ops_goon_room_workflow.md.md",

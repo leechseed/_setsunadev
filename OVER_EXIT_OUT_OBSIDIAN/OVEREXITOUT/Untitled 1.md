@@ -1,19 +1,15 @@
 ---
-
-title: "📛 Adventure Scaffolding – Designing for Player Rebelliousness"  
-type: knowledgebase_entry  
-category: ttrpg_design  
-version: 1.0.0  
-last_updated: 2026-02-12  
-tags: oxo  
-status: draft  
+title: "📛 Adventure Scaffolding – Designing for Player Rebelliousness"
+type: knowledgebase_entry
+category: ttrpg_design
+version: 1.0.0
+last_updated: 2026-02-12
+tags: oxo
+status: draft
 source:
+  - "Adventure Writing: Scaffolding for Player Rebelliousness"
 
-- "Adventure Writing: Scaffolding for Player Rebelliousness"
-    
-- "YouTube Video – VGOD0udz5qU"
-    
-
+  - "YouTube Video – VGOD0udz5qU"
 ---
 
 # 📛 Adventure Scaffolding – Designing for Player Rebelliousness
@@ -29,17 +25,11 @@ Scaffolding solves this by separating **theme and world state** from **scene ord
 ## Table of Contents
 
 1. [[#The Jenga Tower Problem|The Jenga Tower Problem]]
-    
 2. [[#NPC Responsiveness|NPC Responsiveness]]
-    
 3. [[#The Scaffolding Model|The Scaffolding Model]]
-    
 4. [[#Application to Corruption Arcs|Application to Corruption Arcs]]
-    
 5. [[#Design Integrity Checklist|Design Integrity Checklist]]
-    
 6. [[#Core Takeaway|Core Takeaway]]
-    
 
 ---
 
@@ -54,22 +44,16 @@ When plot advancement depends on specific events occurring in a fixed sequence, 
 The structural correction is to shift from **event-dependent design** to **condition-dependent design**.
 
 - **Event-dependent design** means the story advances because Scene B follows Scene A.
-    
 - **Condition-dependent design** means the story advances because the world has changed state, regardless of how that state was reached.
-    
 
 In condition-dependent design, corruption spreads because trust erodes, not because a specific speech was delivered. A war begins because alliances fracture, not because a particular meeting occurred. This allows player agency to influence the path without invalidating progression.
 
 Resilient modules therefore:
 
 - Avoid tying advancement to a single required NPC.
-    
 - Provide multiple vectors for critical information.
-    
 - Separate world truths from scene order.
-    
 - Design escalation as changes in state rather than scripted reveals.
-    
 
 ---
 
@@ -82,35 +66,24 @@ In a novel, character reactions are authored. In a TTRPG, character reactions ar
 Adventures that rely on omniscient exposition—declaring hidden truths directly to the reader—reduce interpretive flexibility at the table. Instead, information should be embedded within the fiction through partial perspectives:
 
 - Character quotes
-    
 - Rumors
-    
 - Biased testimony
-    
 - In-fiction theories
-    
 
 For example, rather than stating, “The Duke is secretly corrupt and fears exposure,” the module may include:
 
 - A defensive public speech.
-    
 - A rival’s accusation of financial misconduct.
-    
 - A servant’s suspicion about late-night meetings.
-    
 
 These elements create interpretive space. If players misread the situation, the world remains stable. The Game Master can escalate suspicion, clarify details, or introduce contradictory evidence without contradicting a rigid script.
 
 Effective NPC responsiveness requires:
 
 - Defined motivations.
-    
 - Identifiable pressures and fears.
-    
 - Clear negotiation boundaries.
-    
 - Escalation triggers when threatened.
-    
 
 This transforms NPCs into reactive systems. Their behavior emerges from incentives and constraints rather than scripted plot functions.
 
@@ -123,33 +96,24 @@ Scaffolding defines a durable structural frame that supports improvisation.
 Using Laban Movement terminology, scaffolding balances **Free flow** and **Bound flow**:
 
 - **Free flow** refers to unrestricted player action. Players may choose violence, diplomacy, subterfuge, or withdrawal.
-    
 - **Bound flow** refers to controlled tonal and thematic constraints. The world responds in consistent patterns aligned with the campaign’s tone.
-    
 
 Players can move freely. The thematic field remains bounded.
 
 For example, in a corruption-focused campaign:
 
 - Aggressive solutions may deepen moral compromise.
-    
 - Diplomatic strategies may reveal systemic decay.
-    
 - Passive choices may allow hidden influence to spread.
-    
 
 The scaffolding is not a predetermined fall. It is a structured pressure field that ensures engagement with the theme manifests coherently, regardless of approach.
 
 Mechanically, scaffolding requires:
 
 - Defined thematic states (e.g., corruption tiers).
-    
 - Reaction matrices keyed to those states.
-    
 - Multiple entry points to critical information.
-    
 - Encounters that can occur in varied order without logical contradiction.
-    
 
 The Game Master does not push players toward a specific scene. Instead, the world reacts predictably according to defined conditions.
 
@@ -164,13 +128,9 @@ In a campaign involving a defined “Corruption” state (such as Movement 3 in 
 Implementation requires:
 
 1. A clear operational definition of Corruption (e.g., compromised alliances, moral erosion, secrecy escalation).
-    
 2. Triggers that advance the corruption state (alliances with unstable factions, repeated ethical compromise, systemic neglect).
-    
 3. Reaction matrices that alter NPC behavior, resource access, and political stability at each tier.
-    
 4. Viable resistance pathways, even if costly or risky.
-    
 
 This ensures that the arc is responsive rather than prescriptive. The fall is possible, but not mandatory. The direction is structured, but not forced.
 
@@ -181,15 +141,10 @@ This ensures that the arc is responsive rather than prescriptive. The fall is po
 Before finalizing an adventure, evaluate the following:
 
 - Does progression rely on a single required scene?
-    
 - Can critical information be discovered through multiple channels?
-    
 - Are NPC motivations defined independently of specific plot beats?
-    
 - Does escalation occur through state change rather than scene sequence?
-    
 - Can players meaningfully resist the thematic trajectory?
-    
 
 If any answer is negative, structural fragility remains.
 
@@ -202,18 +157,12 @@ Scaffolding is a structural approach to adventure design that preserves player a
 It prevents:
 
 - Plot collapse under deviation.
-    
 - Overdependence on linear sequencing.
-    
 - Railroading disguised as narrative necessity.
-    
 
 It enables:
 
 - Condition-based progression.
-    
 - Responsive NPC systems.
-    
 - Multi-vector information flow.
-    
 - Durable modules capable of absorbing rebellion without breaking.
