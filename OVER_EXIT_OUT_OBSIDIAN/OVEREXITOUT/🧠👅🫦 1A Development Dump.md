@@ -322,7 +322,6 @@ The visual layer is governed by rigid, axis-bound movement to simulate "Constrai
 
 # dudes and girls so far
 Daisy Ridley
-Drake
 Emiru
 Dee Williams
 Kristen Bell

@@ -9,7 +9,7 @@ purpose: "Defines the mandatory structural payload for all SSOT documents to ens
 dependencies: ["[[📐_ssot_05_operations_writing_guide]]"]
 ---
 
-# 📐 ssot_05_operations_standard_structure_template
+# ♨️_template_ssot_05_operations_standard_structure_template
 
 ## Table of Contents
 

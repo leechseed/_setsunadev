@@ -1,5 +1,4 @@
 # girls so far
-
 - Abella Danger
 - Adriana Chechik
 - Alice Delish
@@ -11,8 +10,8 @@
 - Arabella Raphael
 - Aria Alexander
 - Ava Taylor
-- Bonnie Blue
-- Bonnie Streamer
+- Belle Delphine
+- Bonnie twitch
 - Charlotte Sartre
 - Chloe Grace Moretz
 - Cinna
@@ -21,6 +20,8 @@
 - Daisy Ridley
 - Dakota Tyler
 - Dee Williams
+- Demon Mika
+- Dolly Dyson
 - Dolly Little
 - Eden Ivy
 - Eliza Ibarra
@@ -32,6 +33,7 @@
 - Evelyn Claire
 - Faye Reagan
 - Gianna Michaels
+- hannahowo
 - Iggy Azalea
 - Janice Griffith
 - Joanna Angel
@@ -41,48 +43,38 @@
 - Kenzie Reeves
 - Kimmy Granger
 - Kristen Bell
+- Lana Rhoades
 - Larkin Love
 - Leah Gotti
+- Lily Philips
 - Little Caprice
 - Lola Faye
 - Mandy Muse
-- Mia Khalifa
+- Mary Jane Auryn
 - Matty Mila Perez
 - Megan Rain
 - Megan Thee Stallion
 - Mewslut
+- Mia Khalifa
 - Molly Little
 - Natasha Teen
 - Nina Hartley
 - Piper Perri
-- Remy LaCroix
 - Rae lil Black
-- Skin Diamond
+- Remy LaCroix
 - Sara Jay
 - Sasha Grey
+- Scarlett Chase
 - Sensi Pearl
 - Shrooms Q
 - siswet
+- Skin Diamond
 - Skyler Valentine
 - Sno Tha Product
+- soogz
 - Syren De Mer
 - Violet Myers
 - Yhivi
-- Demon Mika
-- hannahowo
-- soogz
-- Lana Rhoades 
-- Scarlett Chase
-- Dolly Dyson
-- Dolly Little
-- Mary Jane Auryn
-- Faye Reagan
-- Yhivi
-- Little Caprice
-- Belle Delphine
-- Lily Philips
-- 
-
 # dudes so far
 
 master cheif
@@ -99,3 +91,10 @@ retrousse tits
 ### 3D print business
 
 - find 30 beta product prototypes
+
+
+# reddit indexed NSFW subs
+
+https://nsfwdog.com/browse?sort=relevance&dir=desc&subscriber_range=10k%E2%80%93100k%2C100k%E2%80%931m%2C1m%2B%2C5k%E2%80%9310k
+
+https://www.reddit.com/r/TheoryOfReddit/comments/1pm9d8r/i_indexed_89000_nsfw_subreddits_and_accidentally/
