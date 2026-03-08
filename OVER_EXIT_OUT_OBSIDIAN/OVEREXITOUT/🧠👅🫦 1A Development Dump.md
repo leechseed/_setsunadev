@@ -320,17 +320,3 @@ The visual layer is governed by rigid, axis-bound movement to simulate "Constrai
 ---
 
 
-# dudes and girls so far
-Daisy Ridley
-Emiru
-Dee Williams
-Kristen Bell
-Allison Brie
-Anna Kendrick 
-Emma Watson
-Chloe Grace Moretz
-Katy Perry
-Elsa Jean
-Shrooms Q
-Amy Faye
-Ava Taylor

@@ -28,6 +28,7 @@
 - Elsa Jean
 - Emily Willis
 - Emiru
+- Emma Stone
 - Emma Watson
 - Eva Sweet
 - Evelyn Claire
@@ -50,6 +51,7 @@
 - Little Caprice
 - Lola Faye
 - Mandy Muse
+- Margot Robie
 - Mary Jane Auryn
 - Matty Mila Perez
 - Megan Rain
