@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md",
+                "file": "_GOON_ROOM/IDEAS_DUMP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📐 ssot_00_base_60_number_system"
+              "title": "IDEAS_DUMP"
             }
           }
         ]
@@ -186,12 +186,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d4a6fa887a10fc0d",
+  "active": "d6380aebade9f9ea",
   "lastOpenFiles": [
+    "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md",
+    "_GOON_ROOM/IDEAS_DUMP.md",
+    "_CANON/_TEMPLATES/ssot/♨️_template_ssot_dramatica_ingest_template.md",
+    "_CANON/_TEMPLATES/authoritative/📋_template_generate_auth_properties.md.md",
+    "_CANON/_TEMPLATES/ssot/♨️_template_ssot_05_operations_standard_structure_template.md",
+    "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md",
     "_EXECUTABLES/leechseed_system_explorer.jsx",
     "_EXECUTABLES",
     "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md",
-    "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md",
     "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md",
     "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_process_illustration_character_pipeline.md",
     "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md",
@@ -210,11 +215,7 @@
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md",
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md",
     "_CANON/_SSOT/05_OPERATIONS/Untitled.md",
-    "_GOON_ROOM/IDEAS_DUMP.md",
     "_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/📐 Authoritative Character Astrology Ingest — Victoria Midnight.md",
-    "_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/📐 Authoritative Dramatica Ingest — Victoria Midnight.md",
-    "_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/📐 Authoritative Victoria Midnight Validation Report.md",
-    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_ops_goon_room_usage_guide.md.md",
     "_CANON/_TEMPLATES 1",
     "_STAGED/review",
     "_CANON/_SSOT/05_OPERATIONS/fe",
@@ -222,7 +223,6 @@
     "_CANON/_TEMPLATES/authoritative",
     "_CANON/_TEMPLATES/ssot",
     "_CANON/_TEMPLATES",
-    "_CANON/_SSOT/05_OPERATIONS/ef",
-    "_CANON/_SSOT/05_OPERATIONS"
+    "_CANON/_SSOT/05_OPERATIONS/ef"
   ]
 }
