@@ -2,7 +2,7 @@
 
 ## type: ssot_02_character_systems category: character_astrology version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the 12-Layer Character Database." dependencies: ["ssot_02_character_dramatica_integration", "ssot_03_character_systems_vertical_slice"] supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_modular_toolkit"]
 ---
-# 🔮 SSOT: Character Astrology
+# 📐 SSOT: Character Astrology
 
 ## Table of Contents
 
