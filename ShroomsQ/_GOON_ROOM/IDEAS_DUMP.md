@@ -90,6 +90,7 @@
 - Kendra Southerland 
 - Lena Paul
 - Tori Black
+- Leana Lovings
 # dudes so far
 
 master cheif
