@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_GOON_ROOM/IDEAS_DUMP.md",
+                "file": "_CANON/_TEMPLATES/authoritative/📋_template_generate_auth_properties.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IDEAS_DUMP"
+              "title": "📋_template_generate_auth_properties.md"
             }
           }
         ]
@@ -186,10 +186,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d6380aebade9f9ea",
+  "active": "d4a6fa887a10fc0d",
   "lastOpenFiles": [
-    "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md",
+    "_GOON_ROOM/tree_structure.txt",
+    "_GOON_ROOM/tree_structure.md",
+    "_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md",
+    "_CANON/_SSOT/05_OPERATIONS/📐 ssot_writing_guide.md",
     "_GOON_ROOM/IDEAS_DUMP.md",
+    "_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md",
     "_CANON/_TEMPLATES/ssot/♨️_template_ssot_dramatica_ingest_template.md",
     "_CANON/_TEMPLATES/authoritative/📋_template_generate_auth_properties.md.md",
     "_CANON/_TEMPLATES/ssot/♨️_template_ssot_05_operations_standard_structure_template.md",
@@ -212,10 +216,6 @@
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/Untitled 1.md",
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/Untitled.md",
     "_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md",
-    "_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md",
-    "_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md",
-    "_CANON/_SSOT/05_OPERATIONS/Untitled.md",
-    "_CANON/_AUTHORITATIVE/OVEREXITOUT/characters/📐 Authoritative Character Astrology Ingest — Victoria Midnight.md",
     "_CANON/_TEMPLATES 1",
     "_STAGED/review",
     "_CANON/_SSOT/05_OPERATIONS/fe",
