@@ -1,4 +1,5 @@
 # girls so far
+
 - Abella Danger
 - Adriana Chechik
 - Alice Delish
@@ -87,10 +88,13 @@
 - Ella Hughes
 - Teannna Trump
 - Jia Lissa
-- Kendra Southerland 
+- Kendra Southerland
 - Lena Paul
 - Tori Black
 - Leana Lovings
+- Elena Koshka
+- Solomia Majevska
+
 # dudes so far
 
 master cheif
@@ -107,7 +111,6 @@ retrousse tits
 ### 3D print business
 
 - find 30 beta product prototypes
-
 
 # reddit indexed NSFW subs
 
