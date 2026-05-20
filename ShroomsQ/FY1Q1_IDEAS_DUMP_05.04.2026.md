@@ -117,3 +117,27 @@ retrousse tits
 https://nsfwdog.com/browse?sort=relevance&dir=desc&subscriber_range=10k%E2%80%93100k%2C100k%E2%80%931m%2C1m%2B%2C5k%E2%80%9310k
 
 https://www.reddit.com/r/TheoryOfReddit/comments/1pm9d8r/i_indexed_89000_nsfw_subreddits_and_accidentally/
+
+
+# BAD DRAGON CHOICES 
+
+|Product|Size|Firmness|Color|Add-On|Price|Qty|
+|---|---|---|---|---|---|---|
+|Chance the Unflared Stallion®|XL|Medium|Chance's Natural|Suction cup|$220.00|1|
+|Taurion the Minotaur®|Medium|Soft Shaft, Firm Base|Taurion's Signature|—|$160.00|1|
+|Vector® the Cyber-Unicorn|XL|Medium|Vector's Natural|Dragon Mount™|$220.00|1|
+|Ika® the Tentacle|XL|Medium|Ika's Signature|Suction cup|$240.00|1|
+|**Total**|||||**$840.00**|**4**|
+
+
+
+# pinapple support therapist team
+To become a listed therapist with Pineapple Support, you’ll need:
+
+- Licensure from a state board or accreditation from a recognized counselling/psychotherapy organisation
+- Experience providing online counselling for adults
+- Professional liability insurance
+- Experience with individual adult counselling
+- Strong written communication skills
+- A reliable internet connection
+- Full ADA compliance if registered int he US
