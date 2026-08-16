@@ -190,7 +190,7 @@ Every system below should trace to one of these gates. Systems that trace to not
 5. **Radical disclosure over sponsorship purity** — integrity through transparency, not abstinence.
 6. **Engagement quality over follower count** — outreach gates measure conversion, not vanity.
 7. **The naming layer is the IP** — machines cluster; Papi names. Derived systems outvalue source material.
-8. **Non-race niche is a compliance constraint** — categorical, not stylistic.
+8. ~~**Non-race niche is a compliance constraint** — categorical, not stylistic.~~ **RESCINDED 2026-08-16** by Papi: the interaction-economy ecosystem (feeder/findom/caption/PMV accounts) is a new venture surface the constraint predates. Niche selection reopened.
 9. **Chats are working memory** — end-of-session delta gets distilled to canon, always.
 
 ---
