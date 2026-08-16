@@ -37,6 +37,16 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 ---
 
+## ⛔ Do not push yet
+
+**Two commits pending, and they contain the full claude.ai archive** — 552 files, 319 conversations, including the ~712k personal cluster. `git push` publishes all of it to a public repo.
+
+Tabled 2026-08-16: the **pseudonymization filter**. Decision was to stay public and build it. Design constraint found — git pushes commits, not working files, so this needs a **scrubbed mirror branch** (`main` local-only as truth, generated `public` branch carries the transform), not a push-time filter. `_tools/scan_sensitive.py` is written and **unrun**; it's read-only and finds structured identifiers + codebook entity seeds across the tracked tree. Run it first when this resumes — no codebook without knowing the corpus.
+
+Separately approved: the **pseudonym codebook as a fiction device** (roman à clef, real → in-world entities, feeding the character system). Judged on craft, not on concealment.
+
+---
+
 ## 🟡 Live
 
 ### BLACK — creative, IP, systems

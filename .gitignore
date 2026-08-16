@@ -17,3 +17,6 @@ _PRIVATE/
 *.epub
 *.mobi
 *.azw3
+
+# local claude config (personal, not for the public repo)
+.claude/settings.local.json
