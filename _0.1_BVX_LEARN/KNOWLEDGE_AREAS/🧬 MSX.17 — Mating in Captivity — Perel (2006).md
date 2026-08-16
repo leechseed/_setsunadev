@@ -19,6 +19,27 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [MSX]
+primary_subject: MSX
+trunk: ORANGE
+legacy_name: true
+feeds:
+  - layer: L9
+    variable: intimacy_mode
+    strength: primary
+    note: "Eroticism requires separateness — a synapse to cross. Reframes parallel_presence as structural requirement, not deficit."
+  - layer: L9
+    variable: desire_vector
+    strength: primary
+    note: "Desire is fuelled by the unknown; anticipation and incompleteness generate wanting."
+  - layer: L6
+    variable: drive_texture
+    strength: supporting
+    note: "Security and passion pull in opposite directions — control-seeking is structurally anti-erotic."
+  - layer: L11
+    variable: growth_requirement
+    strength: supporting
+    note: "The bounded space of eroticism — submission as reclamation of disowned parts, not capitulation."
 ---
 
 # 🧬 MSX.17 — Mating in Captivity — Perel (2006)

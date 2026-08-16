@@ -19,6 +19,10 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [CRE]
+primary_subject: CRE
+trunk: BLACK
+legacy_name: true
 ---
 
 # 🧬 CRE.01 — Bloom's Literary Themes: Human Sexuality — Bloom & Hobby, eds. (2009)

@@ -16,6 +16,11 @@ related: []
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [MSX]
+primary_subject: MSX
+trunk: ORANGE
+legacy_name: true
+zotero_duplicate: true
 ---
 
 # 🧬 MSX.11 — How to Suck Cock Like a Pro — FagMasterPDX (2018)

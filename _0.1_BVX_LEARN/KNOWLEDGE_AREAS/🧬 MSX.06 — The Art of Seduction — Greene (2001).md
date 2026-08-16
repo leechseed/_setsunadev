@@ -19,6 +19,10 @@ related:
 source_type: published-book
 date_created: 2026-03-28
 status: draft
+subjects: [MSX]
+primary_subject: MSX
+trunk: ORANGE
+legacy_name: true
 ---
 
 # 🧬 MSX.06 — The Art of Seduction — Greene (2001)

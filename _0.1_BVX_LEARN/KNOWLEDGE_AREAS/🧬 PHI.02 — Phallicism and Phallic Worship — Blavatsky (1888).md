@@ -18,6 +18,10 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: draft
+subjects: [PHI]
+primary_subject: PHI
+trunk: BLACK
+legacy_name: true
 ---
 
 # 🧬 PHI.02 — Phallicism and Phallic Worship — Blavatsky (1888)

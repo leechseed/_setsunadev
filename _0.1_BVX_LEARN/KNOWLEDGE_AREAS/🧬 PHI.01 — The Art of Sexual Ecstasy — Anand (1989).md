@@ -16,6 +16,11 @@ related: []
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [PHI]
+primary_subject: PHI
+trunk: BLACK
+legacy_name: true
+zotero_duplicate: true
 ---
 
 # 🧬 PHI.01 — The Art of Sexual Ecstasy — Anand (1989)

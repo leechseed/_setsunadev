@@ -17,6 +17,11 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [MSX]
+primary_subject: MSX
+trunk: ORANGE
+legacy_name: true
+zotero_duplicate: true
 ---
 
 # 🧬 MSX.12 — The Faggot Bible — FagMasterPDX (2018)

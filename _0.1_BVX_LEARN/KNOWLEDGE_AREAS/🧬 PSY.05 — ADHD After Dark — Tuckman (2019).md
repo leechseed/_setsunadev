@@ -17,6 +17,11 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [PSY]
+primary_subject: PSY
+trunk: BLACK
+legacy_name: true
+zotero_duplicate: true
 ---
 
 # 🧬 PSY.05 — ADHD After Dark — Tuckman (2019)

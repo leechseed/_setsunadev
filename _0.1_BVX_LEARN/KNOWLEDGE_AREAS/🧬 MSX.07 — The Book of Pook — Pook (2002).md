@@ -19,6 +19,10 @@ related:
 source_type: pdf
 date_created: 2026-03-28
 status: draft
+subjects: [MSX]
+primary_subject: MSX
+trunk: ORANGE
+legacy_name: true
 ---
 
 # 🧬 MSX.07 — The Book of Pook — Pook (2002)

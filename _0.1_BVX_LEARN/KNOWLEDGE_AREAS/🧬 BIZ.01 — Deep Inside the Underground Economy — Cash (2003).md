@@ -16,6 +16,10 @@ related: []
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [BIZ]
+primary_subject: BIZ
+trunk: BOTH
+legacy_name: true
 ---
 
 # 🧬 BIZ.01 — Deep Inside the Underground Economy — Cash (2003)

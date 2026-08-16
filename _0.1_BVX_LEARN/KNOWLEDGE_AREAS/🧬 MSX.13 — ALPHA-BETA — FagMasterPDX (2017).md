@@ -18,6 +18,10 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [MSX]
+primary_subject: MSX
+trunk: ORANGE
+legacy_name: true
 ---
 
 # 🧬 MSX.13 — ALPHA-BETA — FagMasterPDX (2017)

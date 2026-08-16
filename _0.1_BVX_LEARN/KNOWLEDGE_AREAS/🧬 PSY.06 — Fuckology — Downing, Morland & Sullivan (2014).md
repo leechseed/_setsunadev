@@ -19,6 +19,10 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [PSY]
+primary_subject: PSY
+trunk: BLACK
+legacy_name: true
 ---
 
 # 🧬 PSY.06 — Fuckology — Downing, Morland & Sullivan (2014)

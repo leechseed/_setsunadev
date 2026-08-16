@@ -17,6 +17,32 @@ related:
 source_type: published-book
 date_created: 2026-04-04
 status: complete
+subjects: [PSY]
+primary_subject: PSY
+trunk: BLACK
+legacy_name: true
+zotero_duplicate: true
+feeds:
+  - layer: L9
+    variable: erotic_blueprint_type
+    strength: primary
+    note: "Somatic/kinesthetic blueprint is the book's whole thesis — the erotic self lives in sensation and movement, not cognition."
+  - layer: L9
+    variable: intimacy_mode
+    strength: primary
+    note: "Entrainment — two nervous systems synchronising heartbeat, breath, cadence. The mechanism underneath parallel_presence."
+  - layer: L9
+    variable: shame_index
+    strength: primary
+    note: "Shame is located somatically (muscle pattern), not cognitively. Distinguishes shame from armor."
+  - layer: L5
+    variable: wound_texture
+    strength: primary
+    note: "Satisfaction cycle (yield-push-reach-grasp-pull-yield); developmental wounding truncates a specific phase."
+  - layer: L10
+    variable: shadow_content
+    strength: supporting
+    note: "Divided sexual self — cognitive belief severed from felt experience."
 ---
 
 # 🧬 PSY.01 — Whole-Body Sex — Walker (2020)

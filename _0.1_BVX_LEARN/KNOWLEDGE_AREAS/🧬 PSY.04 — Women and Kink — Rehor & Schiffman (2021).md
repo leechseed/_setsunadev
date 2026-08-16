@@ -20,6 +20,24 @@ related:
 source_type: research-paper
 date_created: 2026-04-04
 status: complete
+subjects: [PSY]
+primary_subject: PSY
+trunk: BLACK
+legacy_name: true
+zotero_duplicate: true
+feeds:
+  - layer: L9
+    variable: shame_index
+    strength: primary
+    note: "1,580-woman dataset: 70% participate for self-discovery, not partner compliance. Low shame with high agency is empirically normal, not exceptional."
+  - layer: L9
+    variable: erotic_blueprint_type
+    strength: supporting
+    note: "Kink-sex spectrum — power exchange and sensation are separable from genital sexuality."
+  - layer: L11
+    variable: soul_evolution_archetype
+    strength: contextual
+    note: "Kink identity progression: fantasy-only to integrated lifestyle."
 ---
 
 # 🧬 PSY.04 — Women and Kink — Rehor & Schiffman (2021)

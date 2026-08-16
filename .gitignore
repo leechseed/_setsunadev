@@ -4,3 +4,16 @@ bin/
 leechseed2/
 .obsidian/
 sherlock/
+
+# --- PII / never publish (repo is public) ---
+_PRIVATE/
+**/users.json
+**/account-memory.md
+*.env
+.env
+
+# --- source binaries never enter the repo (public + copyright + size) ---
+*.pdf
+*.epub
+*.mobi
+*.azw3
