@@ -4,5 +4,19 @@
       "Bash(find:*)",
       "Bash(claude config set:*)"
     ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"c:/Users/U01_LEECHSEED/Desktop/_setsunadev/_tools/autocommit.sh\"",
+            "timeout": 30,
+            "statusMessage": "Autosaving to git…"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -8,7 +8,13 @@ read_first: true
 
 # STATE
 
-**This is the answer to "what have we been working on."** Read this first, every session, before anything else.
+**This is the answer to "what have we been working on."** Read this first, every session, before anything else. The ranked project board lives in [PROJECTS.md](PROJECTS.md).
+
+> **Challenge:** *"Americans are not born. They are forged in the chaos and dysfunction of American life."*
+> **Countersign:** *"The Asset is acquired. The Noise is archived. The Feed is stable."*
+> → then the board. Equivalents: "set me up" · "where did we leave off" · "the board".
+
+**Autosave is on.** A Stop hook (`_tools/autocommit.sh`) commits every change to git when a session ends. Local only — it never pushes. Run `git push` yourself when you mean to publish.
 
 It is an **index, not a store**. Detail lives in the registries below; this file says what's live, what moved, and who's blocking. If it's not here, it isn't active.
 
