@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-15
+updated: 2026-08-16
 read_first: true
 ---
 
@@ -34,6 +34,8 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | 4 | `motivation_element` — holds MC Problem (`Equity`) or Motivation quad primary (`Consider`)? | TRUTH_VULNERABILITY flag trigger |
 | 5 | Name the fused school — Inner Spiral / Red Hills | Movements 2–4, i.e. most of Tori |
 | 6 | BVX ↔ Ultrasin firewall structure | Public launch (Ultrasin ledger #1) |
+
+> **Leverage check** ([PROJECTS.md](PROJECTS.md#the-same-ten-ranked-by-leverage)): #1 and #6 are the only two entries with a whole trunk behind them — #1 releases BLACK, #6 releases the money track. Neither requires building anything. **#6 is ranked last here and gates the most revenue.** The other four are propagation work that follows #1.
 
 ---
 

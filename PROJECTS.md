@@ -34,6 +34,31 @@ Not projects but large: **~712k personal** (self-regulation, interpersonal, admi
 
 ---
 
+## The same ten, ranked by leverage
+
+Volume measures thought already spent. Leverage measures what moves if you touch it. **The two orders disagree, and the disagreement is the finding.**
+
+| Leverage | Project | Vol rank | Cost to unblock | What it releases |
+|---|---|---|---|---|
+| 1 | **Character system** | 5 🔴 | One afternoon in Dramatica | OXO, Tori, every downstream character. The whole BLACK trunk. |
+| 2 | **Adult content venture** | 3 | One ruling — BVX↔Ultrasin firewall | Public launch. The entire money track. |
+| 3 | **OVEREXITOUT** | 1 | Nothing of its own | Waits on #1. Cannot be worked around. |
+| 4 | **BVIPDS / LEECHSEED** | 2 | Unblocked — absorbs work anytime | Supply line to #1. Never blocks others. |
+| 5 | **ULTRASIN / GDP** | 8 | P1, 60-second squeeze hold | Self-contained. Physical, immediate. |
+| 6 | **Desire Profile** | 4 | Tool 1 Step 1 checkoff | Feeds L9 EROS. No dependents. |
+| 7 | **Social channels** | 6 | — | 25 conversations, zero artifacts. Nothing downstream. |
+| 8 | **Food ventures** | 7 | — | Cooling. |
+| 9 | **Tooling** | 9 | — | Support only. |
+| 10 | **Business ops** | 10 | — | Dormant. |
+
+**What the two orders reveal:**
+
+1. **The most-developed project is the most blocked one.** OXO carries ~880k — the largest volume on the board — and cannot advance a step until the character system moves. The thing you have thought about hardest is downstream of the thing you abandoned in April.
+2. **Both top blockers are single decisions, not projects.** An afternoon with the Dramatica software and one firewall ruling. Neither needs new building. Together they release ranks 1–4, roughly 2.4M of accumulated work.
+3. **Volume is not progress.** Ranks 6 and 7 hold ~843k combined and have produced zero artifacts between them.
+
+---
+
 ## What each one is, and what it's waiting on
 
 ### 1 · OVEREXITOUT / The Outliers — 🟢
