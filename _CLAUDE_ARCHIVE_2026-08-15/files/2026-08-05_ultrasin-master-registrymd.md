@@ -209,6 +209,8 @@ Every system below should trace to one of these gates. Systems that trace to not
 | 8 | Primed Protocol doc production | Paused by choice |
 | 9 | Persona character bible | Parked by choice |
 | 10 | Basic legal docs execution | Yes — Year-1 critical path |
+| 11 | Interaction-economy niche selection (post-P8 rescission) — which lanes, what order | Yes — gates §N strategy; see `ULTRASIN-interaction-economy.md` |
+| 12 | Practice productization — guided-session product + session logs | No — tabled by choice 2026-08-16; see §N doc item 6 |
 
 ---
 

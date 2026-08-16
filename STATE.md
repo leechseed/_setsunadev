@@ -70,9 +70,17 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
 | **Erotic Range** | ✅ Live, phone-ready, two profiles, local-only. | `Desktop/erotic-range.html` · [artifact](https://claude.ai/code/artifact/c78a1e6a-1f43-467b-a74e-7e7e66df41c1) |
 | **Taxonomic-aesthetic practice** | Practice-first. Engine-vs-voice fork asked in June, never answered. | Registry §L |
-| **Birthday 2026** | Space Coast run, early Oct. Transit spine locked (bus→rental→bus). 4 open decisions. | [BIRTHDAY-2026.md](BIRTHDAY-2026.md) |
+| **Birthday 2026** | Space Coast run, early Oct — **Atlanta now contending** (decision 5). Transit spine locked. 5 open decisions. | [BIRTHDAY-2026.md](BIRTHDAY-2026.md) |
+| **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-16
+
+- **PROJECTS.md leverage ranking added** — volume order vs leverage order; the two blockers releasing ~2.4M of work are both single decisions
+- **BIRTHDAY-2026.md created** — Space Coast plan, transit spine locked (rail confirmed dead from [CITY]); Atlanta option opened, recon pending
+- **§N Interaction Economy** — 3-agent research sweep distilled to `ULTRASIN-interaction-economy.md`; registry Principle 8 rescinded (dated strike); ledger items 11 + 12 added
+- **Queued next: OSSM build consultation** — Open Source Sex Machine on the Kobra S1. Buy-vs-build fork, smooth-stroke progression ("taper," ceiling ~14"), community upgrades. Papi called the topic; research not yet run.
 
 ## ✅ Moved 2026-08-15
 

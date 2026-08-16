@@ -24,6 +24,7 @@ Stated priorities, in your words: pool · sun · saunas · cock · beach · heat
 | 2 | **Which beach.** You said "not Playalinda, in Miami" — but Playalinda *is* Space Coast. Miami's is Haulover. | Destination. Everything downstream. |
 | 3 | **Bathhouse: in or out?** | Whether the trip needs an Orlando night or is pure Space Coast. |
 | 4 | **Your actual birthday date.** Never stated. | Which day is the centerpiece. |
+| 5 | **Atlanta instead of Space Coast?** Floated 2026-08-16 — better infrastructure, car-free (bus + Uber), Korean spa (Jeju), bathhouse scene, iconic retail, scene fit. Beach demoted. | Entire destination. 7-agent recon died with a session restart — resumable, not run. Key open question: does the scene hold up Sun–Tue nights? |
 
 ---
 
