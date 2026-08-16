@@ -50,5 +50,6 @@
     }
   ],
   "a-file-icon-vscode.arrowTheme": "plusMinus",
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "workbench.settings.openDefaultKeybindings": true
 }
