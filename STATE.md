@@ -70,6 +70,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
 | **Erotic Range** | ✅ Live, phone-ready, two profiles, local-only. | `Desktop/erotic-range.html` · [artifact](https://claude.ai/code/artifact/c78a1e6a-1f43-467b-a74e-7e7e66df41c1) |
 | **Taxonomic-aesthetic practice** | Practice-first. Engine-vs-voice fork asked in June, never answered. | Registry §L |
+| **Birthday 2026** | Space Coast run, early Oct. Transit spine locked (bus→rental→bus). 4 open decisions. | [BIRTHDAY-2026.md](BIRTHDAY-2026.md) |
 
 ---
 
