@@ -77,6 +77,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ## ✅ Moved 2026-08-16
 
+- **BERLIN PIVOT dossier built** — [BERLIN-PIVOT.md](BERLIN-PIVOT.md): four routes out (Merseburg M.A. / Charité (physicians-only, wrong door) / English-taught alternates / Berlin freelance-artist visa). Real gates: the bachelor's question + German C1. Blocked account €11,904/yr verified. Sexual-fields reading list in doc. Nexus sweep parked — converges with birthday decision 5 (Atlanta).
 - **Forgotten-generation thesis captured** — [ULTRASIN-forgotten-generation.md](ULTRASIN-forgotten-generation.md): the 1-in-12 bereavement cohort as §N's audience context (numbers verified — CBEM, JAMA 2024); PMV call-and-response series concept (gates on ledger 11); sexology research leads incl. Merseburg/Charité. Candidate for the empty §N naming layer.
 - **PROJECTS.md leverage ranking added** — volume order vs leverage order; the two blockers releasing ~2.4M of work are both single decisions
 - **BIRTHDAY-2026.md created** — Space Coast plan, transit spine locked (rail confirmed dead from [CITY]); Atlanta option opened, recon pending
