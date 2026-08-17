@@ -77,6 +77,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ## ✅ Moved 2026-08-16
 
+- **Ride-gear taxonomy logged** — [ULTRASIN-ride-gear.md](ULTRASIN-ride-gear.md): 6 tiers (powered saddles → Marius stool), clear-chair/camera argument, folding-chair fixes (rug pad, zip-tied braces), taper-vs-wide resolved as two setups. Purchase order unruled; folds into OSSM consult.
 - **BERLIN PIVOT dossier built, Gate 0 answered** — [BERLIN-PIVOT.md](BERLIN-PIVOT.md): world top-5 sexology programs ranked (UQAM · Leuven · Kinsey/IU · Curtin · Widener); Germany = the soul + field site, not the academic apex. **Bachelor's exists ([SCHOOL] multidisciplinary humanities, 2.9, ~2011 + culinary AA) — every door open.** Route E named: the Bourdain–Banksy play — literary autoethnography of the interaction economy; the empty seat next to Jones' *Camming* / Berg's *Porn Work*. Degree = tool not prerequisite. Nexus sweep parked — converges with birthday decision 5 (Atlanta).
 - **Forgotten-generation thesis captured** — [ULTRASIN-forgotten-generation.md](ULTRASIN-forgotten-generation.md): the 1-in-12 bereavement cohort as §N's audience context (numbers verified — CBEM, JAMA 2024); PMV call-and-response series concept (gates on ledger 11); sexology research leads incl. Merseburg/Charité. Candidate for the empty §N naming layer.
 - **PROJECTS.md leverage ranking added** — volume order vs leverage order; the two blockers releasing ~2.4M of work are both single decisions
