@@ -83,11 +83,34 @@ Ranked for "go be the best," 2026-08-16. The finding first: **Germany invented t
 - Rails migration observed: creators moving to menus/encrypted channels/crypto (decoded: **Monero**), touring city-to-city. Ruled for self: **no meets** — restated, stands.
 - Siswet as the German-systematization case study — solo-practice-as-discipline model.
 
+## ✅ Gate 0 — ANSWERED 2026-08-16
+
+**The bachelor's exists.** [SCHOOL], multidisciplinary studies (humanities), ~2011, GPA 2.9. Plus AA in culinary (~2.9).
+
+What it opens:
+- **Merseburg**: the "comparable social/humanities degree + documented competencies" clause fits a multidisciplinary humanities B.A. A 4-yr US bachelor's ≈ 240 ECTS (needs 180). GPA converts via Bavarian formula to a workable German grade. §N corpus + creator practice = the "documented competencies."
+- **Curtin**: "related disciplines" entry + interview. Arguable and winnable.
+- **Leuven**: schakelprogramma is *designed* for this profile.
+- **Widener**: broad-background admissions; 15 years out, portfolio and essays outweigh a 2.9.
+- Transcript logistics: order [SCHOOL] + culinary transcripts (cheap, do regardless); Germany runs through uni-assist evaluation.
+
+## Route E — the Bourdain–Banksy route (the one that fits)
+
+The refined posture: **not clinical, not psych-101 tutelage. Cultural examination with color — poetics, editorials, personality, the visual.** Autoethnography of the solo practice (the Siswet lane) and the scene around it, written like literature, not like a methods section.
+
+**The precedent is exact.** Bourdain: culinary AA, zero academic credentials, wrote the insider account of a closed world with literary voice — and became that world's interpreter. The institutions came to *him*. (The user holds the same culinary AA. The parallel is not decoration.) Banksy: no credential, no permission, work undeniable, anonymity as armor — the field comes looking.
+
+**The vacuum is real, and it has a mechanism.** The scene's insiders don't publish — stigma is the silence machine (the forgotten-generation thesis again: nobody taught this cohort to narrate itself). The neighboring seats are taken: Angela Jones' *Camming* (2020) and Heather Berg's *Porn Work* (2021) hold the academy-side chairs; Jiz Lee's *Coming Out Like a Porn Star* and Stoya's essays hold the performer-memoir chairs. **The empty seat: literary autoethnography from inside the OnlyFans-era interaction economy — the Kitchen Confidential of the creator scene.** Nobody holds it.
+
+**What a degree actually buys on this route** (a tool, not a prerequisite): a visa vehicle, method training, and institutional armor for writing about a stigmatized scene. It can be picked up mid-route (Leuven bridging year, Merseburg) — *after* the work has made the name.
+
+**Assets already in hand:** §N corpus + interaction-economy research (proto-book spine) · scene position (embedded, active) · culinary AA (the literal Bourdain rhyme) · [SCHOOL] B.A. (keeps every academic door open) · the Annalist commentary-layer architecture (the legally defensible publishing posture — already designed).
+
 ## Open
 
-1. **Gate 0**: does the bachelor's exist / what counts? This decides Route A vs Route D first move.
-2. Verify Merseburg program fees + next application window (uni-assist vs direct).
-3. Watch EMSEX launch status.
-4. Language plan: C1 timeline + cost if Route A.
-5. Immigration-lawyer question list for Route D.
+1. ~~Gate 0~~ **Answered — degree exists.** New first question: **Route E first piece** — what's the first published field essay, and where does it live (the codebook/pseudonym device from the do-not-push decision is the natural container)?
+2. Order [SCHOOL] + culinary transcripts — cheap, keeps all doors open. (uni-assist for Germany when/if.)
+3. Verify Merseburg fees + application window · watch EMSEX launch.
+4. Language plan: C1 timeline if Route A ever fires.
+5. Immigration-lawyer question list for Route D/E (Berlin freelance-writer visa).
 6. Nexus sweep — run before Atlanta ruling (birthday decision 5).
