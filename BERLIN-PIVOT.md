@@ -59,6 +59,20 @@ The theory that already describes what you're doing:
 6. **Catherine Hakim — *Erotic Capital*** (2011). Pop and contested, but it's the mainstream articulation of "if you have it, use it" — know it to argue with it.
 7. **Journal: *Porn Studies*** (Routledge, 2014–). Where this conversation is happening academically.
 
+## The world top five — prowess ranking (language barrier ignored)
+
+Ranked for "go be the best," 2026-08-16. The finding first: **Germany invented the discipline, then burned it (1933), and the academic crown scattered** — to Quebec, Flanders, Indiana, Perth. Germany today is the *soul* and the best *field site* (Berlin), not the academic apex. Degree elsewhere + Berlin as the field is the power combination.
+
+| # | Institution | What it is | Language | The prowess |
+|---|---|---|---|---|
+| 1 | **UQAM — Département de sexologie**, Montréal | The **only complete sexology department in the world**: BA → clinical MA → research MA → **PhD in Sexology** as its own named discipline. Sexologist is a *regulated profession* in Quebec. | French | The deepest credential on earth: "Doctorat en sexologie." Nobody out-titles you. |
+| 2 | **KU Leuven — Institute for Family and Sexuality Studies**, Belgium | Only academic sexology master's in Flanders/NL; bio-psycho-legal-philosophical-cultural spread; Erick Janssen (ex-Kinsey) on faculty. Has a *schakelprogramma* (bridging year) for non-matching bachelors — a Gate-0 workaround. | Dutch | Europe's academic sexology capital. Oldest university in the Low Countries. |
+| 3 | **Kinsey Institute / Indiana University**, USA | The research Everest. No "sexology degree" — PhD in an allied department + Kinsey affiliation. | English | The single most recognizable name in sex research on the planet. Brand prowess unmatched; structured training weakest. |
+| 4 | **Curtin University**, Perth, Australia | **Master of Sexology (Professional)** — an actual named degree, biopsychosocial, online coursework + block teaching + placement. Entry: related bachelor's incl. sociology/anthropology/theology(!). ~AUD 37,400/yr intl. | English | The most accessible elite title. English + the literal words "Master of Sexology" on the parchment. |
+| 5 | **Widener University — Center for Human Sexuality Studies**, PA, USA | M.Ed → PhD in Human Sexuality; the AASECT practitioner pipeline. (Honorable mention: U Minnesota's Institute for Sexual and Gender Health — clinical research juggernaut.) | English | The US degree machine — most working American sexologists' lineage. |
+
+**Fit note (your profile — field researcher/writer, not clinician):** UQAM's research stream → PhD is the true "become the discipline" path; Kinsey is the brand play; Curtin is the fastest English-language title. Leuven's bridging year matters if Gate 0 is shaky. All four degree schools still require *a* bachelor's — the PhD paths require more. **Gate 0 governs everything.**
+
 ## Parked — the nexus-mapping question
 
 "Where is the global destination for the scene" is a real ethnographic question (sexual fields theory is literally *about* mapping scene geographies) and deserves its own multi-agent sweep — event circuits, migration of performers, platform-era de-territorialization. **Noted convergence:** Atlanta is already on the board for birthday decision 5 recon. If the US nexus answer is Atlanta, the birthday trip and the fieldwork scouting are the same trip. Do not resolve this from vibes — run the sweep before ruling.
