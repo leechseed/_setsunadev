@@ -81,11 +81,19 @@ Target: **Island House** (clothing-optional gay resort, Old Town) — pool, sund
 
 **Transit (cheapest, timing deprioritized):** bus both ways — TLH→Miami (RedCoach/Flix, from ~$48–56, ~9.5h) + Miami→Key West (Greyhound/Flix, from ~$18–23, ~4.5h). **RT ~$140–180, ~30h total seat time.** Flying TLH→EYW: ~$227–271 RT — bussing saves only ~$60–120. No rail; RedCoach doesn't serve the Keys.
 
-**The real lever — stay-at vs day-pass:**
-- Stay AT Island House ~1 week: est. $1,800–2,400+ lodging alone. ~2× the ceiling.
-- **Day-pass play:** budget guesthouse/hostel (~$600–900/wk, Key West floor is high) + Island House day passes (~$30/day older data — **verify by phone**, ask about weekly) + bus + food ≈ **$1,150–1,450**. In range, barely.
+**Revised 2026-08-16: 3–4 nights AT the resort, three tiers (all-in from [CITY]):**
 
-**Gates:** PTO for a week at the new Amazon job (decision 6) · ceiling ruling · **avoid Fantasy Fest (late Oct)** — early-Oct window only.
+| Tier | Total | Shape |
+|---|---|---|
+| 🟢 Conservative | **~$1,000–1,300** | 3 nights base room (from ~$99/nt listed — verify Oct actuals), bus RT, Blu Q group snorkel, walk everywhere. **Fits the existing ceiling.** Free daily happy hour subsidizes bar budget. |
+| 🟡 Realistic | ~$2,100–2,400 | 4 nights mid room (~$250/nt), both boats (snorkel + sunset), massage, nightlife, scooter day. Needs ~2× ceiling. |
+| 🔴 No-holds | ~$4,500–5,500 | Fly, poolside suite, private 6-pax Blu Q charter, spa day, unrestricted. |
+
+**Reality note:** no legal public nude beach on Key West — nudity lives at the resort complex (guest = 24hr access), the Blu Q boats, and clothing-optional garden/rooftop bars. Fort Zachary Taylor = the (clothed) beach day.
+
+**Verify by phone/site:** Island House October rates by room class · Blu Q current tour prices (sailbluq.com).
+
+**Gates:** PTO at the new Amazon job (decision 6) · tier ruling = ceiling ruling · **avoid Fantasy Fest (late Oct)** — early-Oct window only.
 
 ---
 
