@@ -24,7 +24,7 @@ Stated priorities, in your words: pool · sun · saunas · cock · beach · heat
 | 2 | **Which beach.** You said "not Playalinda, in Miami" — but Playalinda *is* Space Coast. Miami's is Haulover. | Destination. Everything downstream. |
 | 3 | **Bathhouse: in or out?** | Whether the trip needs an Orlando night or is pure Space Coast. |
 | 4 | **Your actual birthday date.** Never stated. | Which day is the centerpiece. |
-| 5 | **Destination — now three-way.** (A) Space Coast baseline. (B) Atlanta — infrastructure, car-free, Jeju, scene fit; recon resumable. (C) **Key West / Island House** — floated 2026-08-16, energy front-runner. | Entire destination. C reopens the window question below. |
+| 5 | **Destination — four-way.** (A) Space Coast baseline. (B) Atlanta — recon resumable. (C) Key West / Island House — the scene IS the resort. (D) **Fort Lauderdale / Pineapple Point** — luxury base + city provides the scene (Haulover = real legal nude beach, Wilton Manors, Club FLL). | Entire destination. C/D reopen the window question below. |
 | 6 | **Key West version only: week vs shift-to-shift.** A full week needs PTO from the new Amazon job (month 1–2 — real gate) and moves the $1,200 ceiling or forces the day-pass play. | Whether C is even feasible. |
 
 ---
@@ -94,6 +94,20 @@ Target: **Island House** (clothing-optional gay resort, Old Town) — pool, sund
 **Verify by phone/site:** Island House October rates by room class · Blu Q current tour prices (sailbluq.com).
 
 **Gates:** PTO at the new Amazon job (decision 6) · tier ruling = ceiling ruling · **avoid Fantasy Fest (late Oct)** — early-Oct window only.
+
+---
+
+## Option D — Fort Lauderdale / Pineapple Point (added 2026-08-16)
+
+Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the scene: Sebastian St gay beach · **Haulover legal nude beach** (35–45 min — the item no other option has) · Wilton Manors strip · Club Fort Lauderdale sauna.
+
+**Transit — the best of any option:** direct TLH→FLL bus from ~$62, **8.5–9h, no transfer**. ⚠️ Direct runs **Mon/Tue/Fri/Sat/Sun only** — no Wednesday. **Monday-to-Monday is the aligned window:** off-day travel both ends, exactly 4 shifts PTO (Thu–Sun), Tue/Wed home recovery before Thursday shift. Wed-to-Wed requires Orlando connection or Brightline hybrid (FLL has a Brightline station, ~10 min from resort; +$50–80/leg).
+
+**Rates:** listed $331–469/nt (avg ~$417); September drops to ~$115 → October shoulder unknown, **call: +1 954 527 0094**. 7 nights at listed = $2,300–3,300 lodging alone.
+
+**Week estimate:** PP all week ~$2,300–3,500 · mid-tier guesthouse alternative ~$1,600–1,800 · split-stay (PP 3–4 nights + cheaper house) lands between.
+
+**Product contrast vs C:** Island House = the resort IS the scene (24hr cruise complex, $99 base rooms). Pineapple Point = luxury base in a scene-rich city. Same week, different center of gravity.
 
 ---
 
