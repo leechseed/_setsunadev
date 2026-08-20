@@ -24,8 +24,8 @@ Stated priorities, in your words: pool · sun · saunas · cock · beach · heat
 | 2 | **Which beach.** You said "not Playalinda, in Miami" — but Playalinda *is* Space Coast. Miami's is Haulover. | Destination. Everything downstream. |
 | 3 | **Bathhouse: in or out?** | Whether the trip needs an Orlando night or is pure Space Coast. |
 | 4 | **Your actual birthday date.** Never stated. | Which day is the centerpiece. |
-| 5 | **Destination — four-way.** (A) Space Coast baseline. (B) Atlanta — recon resumable. (C) Key West / Island House — the scene IS the resort. (D) **Fort Lauderdale / Pineapple Point** — luxury base + city provides the scene (Haulover = real legal nude beach, Wilton Manors, Club FLL). | Entire destination. C/D reopen the window question below. |
-| 6 | **Key West version only: week vs shift-to-shift.** A full week needs PTO from the new Amazon job (month 1–2 — real gate) and moves the $1,200 ceiling or forces the day-pass play. | Whether C is even feasible. |
+| 5 | ~~Destination~~ **RULED 2026-08-16: Fort Lauderdale — Cabanas Guesthouse & Spa (Wilton Manors), Monday-to-Monday.** Atlanta recon shelved; Key West shelved for a better day; Space Coast demoted to baseline fallback. Full itinerary below. | — |
+| 6 | **PTO — the last gate.** One work week (4 shifts, Thu–Sun) at the new Amazon job. Target window: Mon Oct 5 → Mon Oct 12 (early Oct, clear of Fantasy Fest). | Everything. Book nothing before this clears. |
 
 ---
 
@@ -109,7 +109,32 @@ Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the 
 
 **Product contrast vs C:** Island House = the resort IS the scene (24hr cruise complex, $99 base rooms). Pineapple Point = luxury base in a scene-rich city. Same week, different center of gravity.
 
-**Candidate shortlist (rated 2026-08-16, from Papi's app list):** ① **Cabanas Guesthouse & Spa** (Wilton Manors) — front-runner: on-site clothing-optional pool + sauna, walk to the strip, zero-Uber days. ② **Grand Resort & Spa** — beach-first alternative: walk to Sebastian St, best on-site spa. ③ Pineapple Point — best grounds, pays twice (rate + rides). ④ Big Coconut — budget seat, Uber-dependent. ⑤ ~~Hôtel Gaythering (Miami Beach)~~ — only viable by overturning the standing Miami veto; Haulover closest here, noted. **Key West (C) shelved for a better day, per Papi.**
+**Candidate shortlist (rated 2026-08-16, from Papi's app list):** ① **Cabanas Guesthouse & Spa** (Wilton Manors) — **RULED PLAN A**: on-site clothing-optional pool + sauna, walk to the strip, zero-Uber days. ② **Grand Resort & Spa** — beach-first alternative, first fallback. ③ Pineapple Point — best grounds, pays twice (rate + rides). ④ Big Coconut — budget seat, Uber-dependent. ⑤ ~~Hôtel Gaythering (Miami Beach)~~ — standing Miami veto holds. **Key West (C) shelved for a better day, per Papi.**
+
+---
+
+## PLAN A — THE WEEK (ruled 2026-08-16)
+
+**Cabanas Guesthouse & Spa, Wilton Manors · Mon Oct 5 → Mon Oct 12 (pending PTO) · direct bus both ways**
+
+**The Full Experience checklist:** pool/sun/saunas/cock (on-site) · Haulover nude day (full setup) · Sebastian St gay beach · Club Fort Lauderdale (gym-in-bathhouse — converges the naked-gym itch) · massage · cruising (apps + first-night bartender recon on the Drive) · Wilton strip nights · souvenir at Fetish Factory + Pride Factory · show night (Boardwalk/Lips) · Sunday Funday finale · wear program vacation edition. `[QoS targeting — bracket pending Papi confirm]`
+
+| Day | Anchor | Night A / B |
+|---|---|---|
+| Mon | Bus ~8:30→17:30, check in, deck + happy hour | Strip recon: Alibi/Hunters — ask what's on this week |
+| Tue | Deck AM → Sebastian St beach PM | Ramrod / quiet |
+| Wed | **HAULOVER** — all-day setup, north end | Recovery by design, early |
+| Thu | **Club Fort Lauderdale** — gym → sauna → the works | Covered / Cubby nightcap |
+| Fri | Fetish Factory + Pride Factory → massage (pre-book) | Big Friday on the Drive |
+| Sat | Beach round 2 (winner of Tue/Wed) | Boardwalk dancers / club |
+| Sun | Slow deck, partial pack | **SUNDAY FUNDAY** finale |
+| Mon | Morning bus home ~18:00; Tue/Wed recovery, work Thu | — |
+
+**Rhythm rule:** every big-output day is followed by a designed low day (recovery-spacing doctrine runs the itinerary). Full rest slot: Wed night → Thu AM. Wear program: travel days comfort-size, deck days = protocol days.
+
+**Booking order:** ① PTO ② Cabanas 7 nights (call for Oct rates) ③ bus both ways early ($62–63 floor) ④ Friday massage ⑤ rest is walk-up.
+
+**Budget frame (7 nights):** bus ~$130 + Cabanas (Oct rate TBD — mid-tier class, call) + food ~$350 + scene/covers/Ubers ~$250 + souvenir $100–200 → **realistic ~$1,800–2,400 depending on room rate.** Tier ruling = ceiling ruling, still open.
 
 ---
 
