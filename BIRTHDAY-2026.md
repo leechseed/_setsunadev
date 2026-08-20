@@ -24,7 +24,8 @@ Stated priorities, in your words: pool · sun · saunas · cock · beach · heat
 | 2 | **Which beach.** You said "not Playalinda, in Miami" — but Playalinda *is* Space Coast. Miami's is Haulover. | Destination. Everything downstream. |
 | 3 | **Bathhouse: in or out?** | Whether the trip needs an Orlando night or is pure Space Coast. |
 | 4 | **Your actual birthday date.** Never stated. | Which day is the centerpiece. |
-| 5 | **Atlanta instead of Space Coast?** Floated 2026-08-16 — better infrastructure, car-free (bus + Uber), Korean spa (Jeju), bathhouse scene, iconic retail, scene fit. Beach demoted. | Entire destination. 7-agent recon died with a session restart — resumable, not run. Key open question: does the scene hold up Sun–Tue nights? |
+| 5 | **Destination — now three-way.** (A) Space Coast baseline. (B) Atlanta — infrastructure, car-free, Jeju, scene fit; recon resumable. (C) **Key West / Island House** — floated 2026-08-16, energy front-runner. | Entire destination. C reopens the window question below. |
+| 6 | **Key West version only: week vs shift-to-shift.** A full week needs PTO from the new Amazon job (month 1–2 — real gate) and moves the $1,200 ceiling or forces the day-pass play. | Whether C is even feasible. |
 
 ---
 
@@ -71,6 +72,20 @@ Atlantic-side, clothing-optional, ranked by the axis you said you'd optimize on 
 | ~~Haulover~~ | North Miami Beach | **Out** — ~7h from [CITY]. Kills the no-driving constraint. |
 
 Playalinda is the default unless #2 rules otherwise. It is the closest, has the best cruising reputation, and is a legitimate full-day setup beach.
+
+---
+
+## Option C — Key West / Island House (added 2026-08-16)
+
+Target: **Island House** (clothing-optional gay resort, Old Town) — pool, sundeck, gym, sauna, steam, scene. The full "pool, sun, saunas, cock" list under one roof.
+
+**Transit (cheapest, timing deprioritized):** bus both ways — TLH→Miami (RedCoach/Flix, from ~$48–56, ~9.5h) + Miami→Key West (Greyhound/Flix, from ~$18–23, ~4.5h). **RT ~$140–180, ~30h total seat time.** Flying TLH→EYW: ~$227–271 RT — bussing saves only ~$60–120. No rail; RedCoach doesn't serve the Keys.
+
+**The real lever — stay-at vs day-pass:**
+- Stay AT Island House ~1 week: est. $1,800–2,400+ lodging alone. ~2× the ceiling.
+- **Day-pass play:** budget guesthouse/hostel (~$600–900/wk, Key West floor is high) + Island House day passes (~$30/day older data — **verify by phone**, ask about weekly) + bus + food ≈ **$1,150–1,450**. In range, barely.
+
+**Gates:** PTO for a week at the new Amazon job (decision 6) · ceiling ruling · **avoid Fantasy Fest (late Oct)** — early-Oct window only.
 
 ---
 
