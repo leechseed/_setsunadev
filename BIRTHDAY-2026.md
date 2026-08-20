@@ -115,7 +115,7 @@ Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the 
 
 ## PLAN A — THE WEEK (ruled 2026-08-16)
 
-**Cabanas Guesthouse & Spa, Wilton Manors · Mon Oct 5 → Mon Oct 12 (pending PTO) · direct bus both ways**
+**Cabanas Guesthouse & Spa, Wilton Manors · Mon Oct 5 → Tue Oct 13 — 8 nights, GOLD ruling 2026-08-16 (pending PTO) · direct bus both ways (Mon out / Tue back) · Sunday Oct 4 = home rest day post-shift**
 
 **The Full Experience checklist:** pool/sun/saunas/cock (on-site) · Haulover nude day (full setup) · Sebastian St gay beach · Club Fort Lauderdale (gym-in-bathhouse — converges the naked-gym itch) · massage · cruising (apps + first-night bartender recon on the Drive) · Wilton strip nights · souvenir at Fetish Factory + Pride Factory · show night (Boardwalk/Lips) · Sunday Funday finale · wear program vacation edition. `[QoS targeting — bracket pending Papi confirm]`
 
@@ -127,8 +127,9 @@ Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the 
 | Thu | **Club Fort Lauderdale** — gym → sauna → the works | Covered / Cubby nightcap |
 | Fri | Fetish Factory + Pride Factory → massage (pre-book) | Big Friday on the Drive |
 | Sat | Beach round 2 (winner of Tue/Wed) | Boardwalk dancers / club |
-| Sun | Slow deck, partial pack | **SUNDAY FUNDAY** finale |
-| Mon | Morning bus home ~18:00; Tue/Wed recovery, work Thu | — |
+| Sun | Slow deck morning | **SUNDAY FUNDAY** finale |
+| Mon | Decompress: deck, last swim, pack | Easy last strip night / quiet |
+| Tue | Morning bus home ~18:00; work Wed/Thu | — |
 
 **Rhythm rule:** every big-output day is followed by a designed low day (recovery-spacing doctrine runs the itinerary). Full rest slot: Wed night → Thu AM. Wear program: travel days comfort-size, deck days = protocol days.
 
