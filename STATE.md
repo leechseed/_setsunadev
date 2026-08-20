@@ -75,6 +75,13 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ---
 
+## ✅ Moved 2026-08-19/20
+
+- **Birthday RULED: Plan A locked** — Cabanas Guesthouse & Spa, Wilton Manors, **Mon Oct 5 → Tue Oct 13 (8 nights, gold window)**. Full-experience checklist + day grid + venue playbook in [BIRTHDAY-2026.md](BIRTHDAY-2026.md). Last gate: PTO. BBRT profile drafted in-chat (fill-ins pending).
+- **Kobra S1 BOM promoted to live** — [KOBRA-S1-BOM.md](KOBRA-S1-BOM.md) (BVX-BOM-0001 v1.1, color specs locked: black/gray/OD green) + xlsx/csv twins at root. Phase 1 = $137, ready to order. SlimeVR line now has a live artifact.
+- **MAsT: [CITY] pathway mapped** — 12–18 month sequence (Oct FLL recon → visit chapters → munch first → co-found → petition). Contact: membership@mast.net. Route E ethics line drawn: confidential rooms are never material.
+- **Rail-month ideation banked** — Crescent line (DC→ATL→NOLA) + USA Rail Pass format, 3-tier manifest priced ($4.5k / $10k / $25k). Ideation only, per Papi.
+
 ## ✅ Moved 2026-08-16
 
 - **Ride-gear taxonomy logged** — [ULTRASIN-ride-gear.md](ULTRASIN-ride-gear.md): 6 tiers (powered saddles → Marius stool), clear-chair/camera argument, folding-chair fixes (rug pad, zip-tied braces), taper-vs-wide resolved as two setups. Purchase order unruled; folds into OSSM consult.
