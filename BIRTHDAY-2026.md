@@ -109,6 +109,8 @@ Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the 
 
 **Product contrast vs C:** Island House = the resort IS the scene (24hr cruise complex, $99 base rooms). Pineapple Point = luxury base in a scene-rich city. Same week, different center of gravity.
 
+**Candidate shortlist (rated 2026-08-16, from Papi's app list):** ① **Cabanas Guesthouse & Spa** (Wilton Manors) — front-runner: on-site clothing-optional pool + sauna, walk to the strip, zero-Uber days. ② **Grand Resort & Spa** — beach-first alternative: walk to Sebastian St, best on-site spa. ③ Pineapple Point — best grounds, pays twice (rate + rides). ④ Big Coconut — budget seat, Uber-dependent. ⑤ ~~Hôtel Gaythering (Miami Beach)~~ — only viable by overturning the standing Miami veto; Haulover closest here, noted. **Key West (C) shelved for a better day, per Papi.**
+
 ---
 
 ## Budget — $1,200 ceiling
