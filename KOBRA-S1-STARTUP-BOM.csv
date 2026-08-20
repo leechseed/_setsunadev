@@ -1,22 +1,25 @@
-﻿Phase,Category,Item,Exact spec,Qty,Est $ each,Est $ line,Vendor examples,Feed path,Notes
-CONST,Machine,Anycubic Kobra S1 Combo,Enclosed CoreXY + ACE Pro 4-slot. FILAMENT DIAMETER: 1.75mm (everything below). Stock nozzle 0.4mm. Hotend max 320C. ACE Pro dry max 55C.,owned,,,,,Quick-release hotend cartridges ONLY - generic MK8/V6 nozzles do NOT fit
-1,Filament,PLA - calibration/iteration,"1.75mm, +/-0.02mm tolerance, 1kg PLASTIC spool (no cardboard in ACE), regular gloss finish - NO matte (ACE false-tangle), NO silk. Black or gray.",2,14,28,Elegoo / Sunlu / Anycubic,ACE Pro,"Calibration cubes, tolerance tests, shape drafts. Never ships."
-1,Filament,PETG - v1 enclosure material,"1.75mm, +/-0.03mm, 1kg plastic spool. 2x black + 1x production color candidate.",3,17,51,Overture / Polymaker PolyLite,ACE Pro,Dry 6-8h @ 55C in ACE before first run - new spools are never dry
-1,Adhesion,Glue stick 2-pack,"Plain PVP stick, 22g (disappearing purple fine)",1,4,4,Elmer's,-,RELEASE layer for PETG (bonds too hard to PEI); adhesion aid for ASA later
-1,Plate prep,IPA 91%+ 1qt + microfiber cloths 6pk,91% or higher isopropyl,1,8,8,any pharmacy,-,Degrease plate between prints. Skip if stocked.
-1,Storage,Vacuum filament storage kit,~10 bags w/ one-way valves + hand pump + rechargeable silica gel + mini hygrometers,1,28,28,SUNLU kit or generic,-,[CITY] humidity = enemy #1. Every spool not in the ACE lives sealed.
-1,Spares,Spare 0.4mm hotend unit,"Anycubic Kobra S1 official quick-release cartridge, brass 0.4mm",1,18,18,Anycubic store,-,60-second clog recovery mid-run. Buy official only.
-2,Filament,ASA - production enclosures,"1.75mm, 1kg plastic spool, black (OD/army green optional for palette)",2,23,46,Polymaker PolyLite ASA,ACE Pro (dry separately first),"95C heat resist, UV stable, satin finish. Dry @ 70C in S2 BEFORE loading - ALWAYS in FL. Ventilate room during runs."
-2,Drying,Standalone filament dryer,"Single-spool, reaches 70C (ACE maxes at 55C - cannot dry ASA)",1,45,45,Sunlu FilaDryer S2,-,Upgrade path: S4 quad if throughput demands
-2,Hardware,Heat-set insert kit M3,"Brass knurled inserts, ~5.0mm OD x 4.0mm length (std 3D-print spec), 100+ pcs",1,18,18,ruthex / CNC Kitchen style,-,Threads into printed bosses; the pro answer for enclosures that open
-2,Tools,M3 heat-set installation tips,Tip set fitting standard soldering iron,1,12,12,ruthex / generic,-,Assumes iron owned; add basic 60W adjustable +$20 if not
-2,Hardware,M3 screw assortment,"Socket-head + button-head, 6/8/10/12/16/20mm + nuts + washers, black-oxide or stainless",1,18,18,any assortment box,-,Button-head on visible exterior faces
-2,Spares,0.6mm hotend unit,"Anycubic official quick-release, brass 0.6mm",1,20,20,Anycubic store,-,Draft iterations ~40% faster; keep 0.4 for final surfaces
-2,Maintenance,Super Lube 21030,"Synthetic grease w/ PTFE, 3oz tube",1,10,10,Super Lube,-,Rails + lead screws every 1-2 months heavy use
-2,Spares,PTFE tube + cutter + couplings,2m tube 1.9mm ID x 4.0mm OD (Capricorn-class) + tube cutter + PC4-M6 quick couplings 4pk,1,15,15,Capricorn / generic,-,ACE feed paths are wear items; couplings = known community fix
-3,Spares,Hardened-steel 0.4mm hotend,Anycubic official all-metal hardened quick-release,1,28,28,Anycubic store,-,REQUIRED before any carbon-fiber filament touches the machine
-3,Filament,PETG-CF - premium tier,"1.75mm, 1kg",1,28,28,Polymaker / eSun,DIRECT FEED ONLY,Never through ACE (wears channels). Hardened hotend only. Dry @ 70C.
-3,Filament,TPU 95A - gaskets/soft parts,"1.75mm, 1kg",1,22,22,Overture / Polymaker,DIRECT FEED ONLY,Single-color direct only - cannot run through ACE
-3,Plates,Second build plate,"Official Kobra S1 plate, OPPOSITE finish to shipped one (smooth vs textured PEI)",1,28,28,Anycubic store,-,Two product surface finishes + hot-swap throughput
-3,Safety,Smart plug + smoke detector,Kasa-class wifi plug + basic detector near printer,1,25,25,TP-Link Kasa,-,Remote kill + fire sense for unattended production runs
-3,Air,Carbon filter (BentoBox style),Activated carbon pellets ~$10 + printable box (free),1,10,10,print it,-,Scrubs ASA styrene smell in-chamber; still ventilate
+﻿Phase,Category,Item,Exact spec,Color,Qty,Est $ each,Est $ line,Vendor examples,Feed path,Notes
+CONST,Machine,Anycubic Kobra S1 Combo,Enclosed CoreXY + ACE Pro 4-slot. FILAMENT DIAMETER: 1.75mm (everything below). Stock nozzle 0.4mm. Hotend max 320C. ACE Pro dry max 55C.,-,owned,,,,,"Quick-release hotend cartridges ONLY - generic MK8/V6 nozzles do NOT fit. Color doctrine: black + gray + OD green accent, nothing else."
+1,Filament,PLA - calibration,"1.75mm, +/-0.02mm, 1kg PLASTIC spool, regular gloss - NO matte (ACE false-tangle), NO silk",LIGHT GRAY - calibration standard: max defect/layer-line visibility,1,14,14,Elegoo / Sunlu / Anycubic,ACE Pro,Tuning spool. Gray shows what white blows out and black hides.
+1,Filament,PLA - shape drafts,same spec as above,BLACK - previews product look,1,14,14,Elegoo / Sunlu / Anycubic,ACE Pro,Iteration drafts in product color. Never ships.
+1,Filament,PETG - v1 production,"1.75mm, +/-0.03mm, 1kg plastic spool","BLACK - production primary (hides seams/layers, photographs clean)",2,17,34,Overture / Polymaker PolyLite,ACE Pro,Dry 6-8h @ 55C in ACE before first run. SlimeVR is IMU-based - black has zero tracking penalty.
+1,Filament,PETG - palette accent,same spec,OD / ARMY GREEN - on-palette accent candidate,1,17,17,Polymaker PolyLite,ACE Pro,One production color + one accent = product line. Rainbow = hobbyist.
+1,Adhesion,Glue stick 2-pack,"Plain PVP stick, 22g (disappearing purple fine)",-,1,4,4,Elmer's,-,RELEASE layer for PETG (bonds too hard to PEI); adhesion aid for ASA later
+1,Plate prep,IPA 91%+ 1qt + microfiber 6pk,91% or higher isopropyl,-,1,8,8,any pharmacy,-,Degrease plate between prints. Skip if stocked.
+1,Storage,Vacuum filament storage kit,~10 bags w/ valves + hand pump + rechargeable silica + mini hygrometers,-,1,28,28,SUNLU or generic,-,FL humidity = enemy #1. Every spool not in the ACE lives sealed.
+1,Spares,Spare 0.4mm hotend unit,"Anycubic Kobra S1 official quick-release cartridge, brass 0.4mm",-,1,18,18,Anycubic store,-,60-second clog recovery. Official only.
+2,Filament,ASA - production primary,"1.75mm, 1kg plastic spool",BLACK - carbon-black pigment = most dimensionally consistent + most UV-proven,1,23,23,Polymaker PolyLite ASA,ACE Pro (dry separately),"Dry @ 70C in S2 BEFORE loading, always. Ventilate during runs. 95C heat resist, satin premium finish."
+2,Filament,ASA - palette accent,same spec,OD / ARMY GREEN,1,23,23,Polymaker PolyLite ASA,ACE Pro (dry separately),Second production colorway once black is dialed
+2,Drying,Standalone filament dryer,"Single-spool, reaches 70C (ACE maxes at 55C)",-,1,45,45,Sunlu FilaDryer S2,-,Covers ASA/CF drying the ACE cannot. Upgrade path: S4 quad.
+2,Hardware,Heat-set insert kit M3,"Brass knurled, ~5.0mm OD x 4.0mm length, 100+ pcs",brass,1,18,18,ruthex / CNC Kitchen style,-,Threads into printed bosses
+2,Tools,M3 heat-set installation tips,Tip set for standard soldering iron,-,1,12,12,ruthex / generic,-,+$20 basic 60W iron if not owned
+2,Hardware,M3 screw assortment,"Socket + button head, 6/8/10/12/16/20mm + nuts/washers",BLACK-OXIDE - matches black enclosures; button-head on visible faces,1,18,18,assortment box,-,
+2,Spares,0.6mm hotend unit,"Anycubic official quick-release, brass 0.6mm",-,1,20,20,Anycubic store,-,Drafts ~40% faster; 0.4 for final surfaces
+2,Maintenance,Super Lube 21030,"Synthetic PTFE grease, 3oz",-,1,10,10,Super Lube,-,"Rails + lead screws, every 1-2 months heavy use"
+2,Spares,PTFE tube + cutter + couplings,2m tube 1.9mm ID x 4.0mm OD (Capricorn-class) + cutter + PC4-M6 couplings 4pk,-,1,15,15,Capricorn / generic,-,ACE feed paths are wear items
+3,Spares,Hardened-steel 0.4mm hotend,Anycubic official all-metal hardened quick-release,-,1,28,28,Anycubic store,-,REQUIRED before any CF filament
+3,Filament,PETG-CF - premium tier,"1.75mm, 1kg","BLACK - CF is inherently black, no choice exists; dead-matte",1,28,28,Polymaker / eSun,DIRECT FEED ONLY,Never through ACE. Hardened hotend only. Dry @ 70C.
+3,Filament,TPU 95A - gaskets/soft parts,"1.75mm, 1kg",BLACK - wear parts hide service grime,1,22,22,Overture / Polymaker,DIRECT FEED ONLY,Cannot run through ACE
+3,Plates,Second build plate,"Official Kobra S1, OPPOSITE finish to shipped (smooth vs textured PEI)",-,1,28,28,Anycubic store,-,Textured face-down = uniform premium bottom surface
+3,Safety,Smart plug + smoke detector,Kasa-class wifi plug + detector near printer,-,1,25,25,TP-Link Kasa,-,Remote kill + fire sense for unattended runs
+3,Air,Carbon filter (BentoBox style),"Activated carbon pellets + printable box (free, print in black PETG)",-,1,10,10,print it,-,Scrubs ASA styrene; still ventilate
