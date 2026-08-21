@@ -33,7 +33,7 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT | Stops the character schema forking |
 | 4 | `motivation_element` — holds MC Problem (`Equity`) or Motivation quad primary (`Consider`)? | TRUTH_VULNERABILITY flag trigger |
 | 5 | Name the fused school — Inner Spiral / Red Hills | Movements 2–4, i.e. most of Tori |
-| 6 | BVX ↔ Ultrasin firewall structure | Public launch (Ultrasin ledger #1) |
+| 6 | BVX ↔ Ultrasin firewall structure — **prepared ground now exists: [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md)** (3-layer sort; §N data leans SEPARATE entities + imprint-style brand) | Public launch (Ultrasin ledger #1) |
 
 > **Leverage check** ([PROJECTS.md](PROJECTS.md#the-same-ten-ranked-by-leverage)): #1 and #6 are the only two entries with a whole trunk behind them — #1 releases BLACK, #6 releases the money track. Neither requires building anything. **#6 is ranked last here and gates the most revenue.** The other four are propagation work that follows #1.
 
@@ -84,6 +84,9 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 - **Leather/sling/Germany curriculum delivered in-chat** — Route E material (Rubin, Hirschfeld institute lineage, sling-as-architecture thesis). Candidate for BVX-LEARN distill.
 - **Pyramid Principle audit** — book NOT in any library (0/1,106); already ratified as BVX doctrine (Feb 2026 four-domains artifact: answer-first documentation + MECE). Third recall loop closed. **Acquisition → BVX.1107 candidate.**
 - **Z-lib cross-reference pipeline built** — walker script saved to [`_tools/zlib_favorites_walker.js`](_tools/zlib_favorites_walker.js); drop zone `Desktop\_BVX_INBOX\zlib\`; parser + fuzzy-diff vs catalog.json on standby. **Awaiting Papi's export run.**
+- **Birthday RULED OFF (2026-08-21)** — Plan A cancelled, no PTO in new-job months. File → shelved project + **BLACK/ORANGE fiction candidate** ("the researched trip that never happened"). Plan B = off-day corridor, zero PTO; original Space Coast plan qualifies as-is.
+- **Twin-Track Doctrine consolidated** — [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md): three-layer sort (brand=imprint · ops=BLACK/ORANGE dual-track, already running · legal=OPEN), June 8 BVMC rediscovery, Feb 9 Marine standard confirmed canon, MCDP acquisition queue, firm-isomorphic-to-OXO rhyme recorded. **Ancient #2 now has prepared ground; ruling remains.**
+- **To-do added:** orthodontist call (retainer advising).
 
 ## ✅ Moved 2026-08-19/20
 
