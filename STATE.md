@@ -28,6 +28,7 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 | # | Decision | Unblocks |
 |---|---|---|
+| **0** | **Public-repo exposure** — archive is live on origin/main incl. personal cluster. Flip private / strip / accept. | Nothing downstream, but it is the only item that gets worse with time |
 | 1 | **Extract the OVEREXITOUT storyform from Dramatica** (~65 fields — 9 dynamics, 2 role, 8 MC, and the entire IC/OS/RS throughlines) | Tori's pipeline locks. Every downstream character. **Highest leverage in BLACK.** |
 | 2 | **Anna Colson Conway as Impact Character?** — derived via [[BVX.0064]] | 17 IC fields, the RS throughline, Movements 2–4 |
 | 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT | Stops the character schema forking |
@@ -39,9 +40,15 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 ---
 
-## ⛔ Do not push yet
+## ⚠️ ALREADY PUSHED — status corrected 2026-08-21
 
-**Two commits pending, and they contain the full claude.ai archive** — 552 files, 319 conversations, including the ~712k personal cluster. `git push` publishes all of it to a public repo.
+**The claude.ai archive is live on the public repo.** 552 files, 319 conversations, on `origin/main`. Verified: `"private": false`. This includes the personal cluster — medical, OSINT, trauma-adjacent, interpersonal.
+
+**`_PRIVATE/` held.** Zero files on the remote. Employer, income, physical description are not exposed. The gitignore worked.
+
+The earlier "do not push yet" warning in this file was **stale and gave false assurance** — the push happened during the 8/19–21 stretch. Corrected.
+
+**Decision now open (see Blocked on you #0):** flip the repo private, strip the archive going forward, or accept it. Flipping private stops future indexing but retracts nothing already fetched, forked, or cached.
 
 Tabled 2026-08-16: the **pseudonymization filter**. Decision was to stay public and build it. Design constraint found — git pushes commits, not working files, so this needs a **scrubbed mirror branch** (`main` local-only as truth, generated `public` branch carries the transform), not a push-time filter. `_tools/scan_sensitive.py` is written and **unrun**; it's read-only and finds structured identifiers + codebook entity seeds across the tracked tree. Run it first when this resumes — no codebook without knowing the corpus.
 
@@ -72,6 +79,14 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 | **Taxonomic-aesthetic practice** | Practice-first. Engine-vs-voice fork asked in June, never answered. | Registry §L |
 | **Birthday 2026** | 🔴 **SHELVED 2026-08-21** — Plan A cancelled (no PTO, new-job standing). Research preserved as revisit-project + **BLACK/ORANGE fiction candidate**. Plan B (off-day corridor, zero PTO) open — original Space Coast plan qualifies as-is. | [BIRTHDAY-2026.md](BIRTHDAY-2026.md) |
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
+
+---
+
+## ✅ Moved 2026-08-21 (close-out)
+
+- **Gluteal morphology taxonomy specced** → [_CANON_NODES/L2b-morphology-gluteal.md](_CANON_NODES/L2b-morphology-gluteal.md). L2b MORPHOLOGY is no longer unspecced — its first module is done. Contreras's causal mechanism extracted from the 996-page *Glute Lab* text (ilium width × femoral neck × trochanter prominence = 27 cells), extended into **two sexed taxonomies, thirteen named types**, architectural naming register. Three views: character-generation, aesthetic IP, training targets. Hip dips named as a positive type (`The Corbel`) rather than a defect.
+- **Push status corrected** — the archive is public; the stale warning in this file was removed. New blocker #0.
+- **Multi-instance answered:** yes, multiple Claude Code sessions run concurrently; same filesystem and memory, so use git worktrees for genuinely parallel work and expect autocommit to interleave.
 
 ---
 

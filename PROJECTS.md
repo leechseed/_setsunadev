@@ -111,7 +111,7 @@ Real work with no volume, because it's new or buried:
 | | State |
 |---|---|
 | **Leechseed Manifesto** — 10 doctrine docs, May 2025 | 🔴 found, not in canon |
-| **L2b MORPHOLOGY** — frame/tissue/condition/line/archetype | designed 2026-08-16, unspecced |
+| **L2b MORPHOLOGY** — frame/tissue/condition/line/archetype | 🟢 **gluteal module specced 2026-08-21** — 27-cell substrate, 13 named types, two sexed taxonomies. Next module: population signatures. |
 | **Taxonomic-aesthetic practice** — the archive as revealed-preference data | engine-vs-voice fork unanswered since June |
 | **SlimeVR tracker line** — Kobra S1 BOM, enclosures | product venture, scattered across Tooling |
 
