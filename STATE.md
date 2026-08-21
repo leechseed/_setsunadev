@@ -40,6 +40,20 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 ---
 
+## 🩺 PMCS — Preventive Maintenance Checks & Services
+
+**The operator is equipment.** Body, medical, and life-admin readiness — the military category is Individual Medical Readiness (IMR). Not a project; never mixes with the project board. Surfaces in every sit rep.
+
+| Item | Status | Next action |
+|---|---|---|
+| **Dental** — retainer advising | 🔴 open since 8/19 | Call the orthodontist. ⚠️ Dictation has twice produced "periodontist" — confirm which specialist; if there is also a gum concern, that is a **second** appointment |
+| **PCP — establish care + physical** | 🔴 open | Book the physical. Sexual-health consult sequences after it: PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral. Timing decoupled from October — book now |
+| **Pelvic-floor PT** | ⬜ gated | Referral comes out of the PCP consult above |
+
+> Add items here the moment they are spoken. A PMCS item that is not written down did not happen.
+
+---
+
 ## ⚠️ ALREADY PUSHED — status corrected 2026-08-21
 
 **The claude.ai archive is live on the public repo.** 552 files, 319 conversations, on `origin/main`. Verified: `"private": false`. This includes the personal cluster — medical, OSINT, trauma-adjacent, interpersonal.
@@ -87,6 +101,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 - **DOCTRINE 0 drafted** — [DOCTRINE-0-INVARIANTS.md](DOCTRINE-0-INVARIANTS.md): the invariants about invariants. Seven meta-rules (earned-not-declared · written-only · names-what-it-forbids · holds-at-every-scale · names-derivation · few · dies-by-countermand), census of the existing invariant corpus (8 locations federated), rename ruling open (**Standing Order** recommended over Law / Non-Negotiable / Keel; schema fields hold until decision #3 propagates). Awaiting ratification.
 - **MCDP acquisition executed** — twin-track ledger 3 approved. 4 of 11 PDFs landed in `Desktop\_BVX_INBOX\mcdp\` (Warfighting · Campaigning · Tactics · Planning, all verified); remaining 7 need a browser grab (marines.mil blocks scripts; archive.org degraded). Take ID block after BVX.1107 on catalog.
 - **Sit rep format ruled** — "set me up" retired, **"sit rep"** is the trigger; board now delivers three time-sorted blocks: Fresh Ten (recency + context + next step) → **The Ancients** (staleness tiers) → Deep Stacks (volume).
+- **PMCS category created** — personal readiness (medical/dental/life-admin) is its own block in STATE and in every sit rep, never mixed with projects. Seeded from the journal: dental call (retainer — specialist to confirm, ortho vs perio) + PCP physical → sexual-health consult chain. "The operator is equipment."
 
 ## ✅ Moved 2026-08-21 (close-out)
 
