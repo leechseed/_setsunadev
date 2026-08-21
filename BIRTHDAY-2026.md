@@ -2,11 +2,14 @@
 title: BIRTHDAY 2026 — the October run
 type: project
 trunk: ORANGE
-status: planning
-updated: 2026-08-16
-window: 2026-10-04 → 2026-10-08 (pending shift-math ruling)
+status: SHELVED 2026-08-21 — revisit later
+updated: 2026-08-21
 budget: 1200 USD
 ---
+
+> **RULING 2026-08-21:** Plan A (Cabanas, Oct 5–13) **cancelled by Papi** — no PTO request in the first months of the new job; best-standing doctrine wins. **All research below is preserved deliberately**: this file is now (a) the pickup point for whenever a real window opens, and (b) **source material for a possible BLACK/ORANGE fictional tale** — a researched trip that never happened, narrative model crafted after Papi's own. (Converges with the approved pseudonym-codebook-as-fiction device and Route E's research↔fiction axis.)
+>
+> **Plan B is open:** something inside the natural off-day corridor (Sun ~04:30 → Wed ~18:00, zero PTO). Note: the *original* Space Coast shift-to-shift plan in this file was designed for exactly that corridor and needs no PTO — it's a live Plan B candidate as-is.
 
 # BIRTHDAY 2026
 
