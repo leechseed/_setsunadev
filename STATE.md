@@ -75,6 +75,16 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ---
 
+## ✅ Moved 2026-08-19/21
+
+- **Wear/training program designed** (in-chat, distill to registry §G next): PNF session card, 4-part size-up gate + half-inch increment rule, weekly split (4 wear work-days / stretch day / prostate days / 1 hard rest day), Topped Toys shortlist verdicts (Tail Raiser = work plug · Mare Maker = stretch tool · Grip = 2nd rotation · Breaker = dildo, not wear), gym traffic-light (no plug under Valsalva). High-volume recovery architecture + PCP consult list (PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral).
+- **Kata rename pending** — 10 candidates delivered (RINGCRAFT recommended); Papi hasn't ruled. Registry strike-through waits.
+- **Germany field month ideated** — verdict: **September, Folsom Europe as anchor** (only month where the full mild→extreme ladder overlaps the international calendar); solo-contact infrastructure mapped (PlanetRomeo, Recon, Telegram, Folsom volunteering, munches); $8–10k disciplined / $12–18k definitive. FKK double-meaning trap documented. **Fold into [BERLIN-PIVOT.md](BERLIN-PIVOT.md) next session.**
+- **US circuit ladder ideated** — IML Chicago (late May) = the anchor answer; the ladder: FLL Oct → MAL Jan → CLAW Apr → IML May → Folsom Europe Sept. Preference-matched alternative: Atlanta Black Pride (Labor Day). Florida-month composite (Wilton base + Key West week, Wicked Manors anchor) named best ground-only month. Leather/protocol entry: **Thebans MC (Miami, 1975) · Florida Leather Week · Mr. Eagle contest at Eagle Wilton Manors** — October trip is the doorway.
+- **Leather/sling/Germany curriculum delivered in-chat** — Route E material (Rubin, Hirschfeld institute lineage, sling-as-architecture thesis). Candidate for BVX-LEARN distill.
+- **Pyramid Principle audit** — book NOT in any library (0/1,106); already ratified as BVX doctrine (Feb 2026 four-domains artifact: answer-first documentation + MECE). Third recall loop closed. **Acquisition → BVX.1107 candidate.**
+- **Z-lib cross-reference pipeline built** — walker script saved to [`_tools/zlib_favorites_walker.js`](_tools/zlib_favorites_walker.js); drop zone `Desktop\_BVX_INBOX\zlib\`; parser + fuzzy-diff vs catalog.json on standby. **Awaiting Papi's export run.**
+
 ## ✅ Moved 2026-08-19/20
 
 - **Birthday RULED: Plan A locked** — Cabanas Guesthouse & Spa, Wilton Manors, **Mon Oct 5 → Tue Oct 13 (8 nights, gold window)**. Full-experience checklist + day grid + venue playbook in [BIRTHDAY-2026.md](BIRTHDAY-2026.md). Last gate: PTO. BBRT profile drafted in-chat (fill-ins pending).
