@@ -60,14 +60,19 @@ The term is already load-bearing across the repo. Nothing below is new; this doc
 
 ## 3 · Open ruling — the name
 
-"Invariant" is doing the work but the word is disliked. Candidates, in recommended order:
+"Invariant" is doing the work but the word is disliked. Papi's spec (2026-08-21): not a saying, not a motto — the way a unit conducts itself; the purpose and reason a unit exists. Doctrine splits that into **two slots**: the rule that never changes (tenet / general order) and the identity-and-purpose of the unit (ethos / mission / intent). The ruling may fill both.
 
-| Candidate | Register | Case |
-|---|---|---|
-| **Standing Order** ⭐ | Marine | An order that remains in effect until countermanded. Invariant VII falls out of the name for free. Fits BVMC frame and The Administration's voice. |
-| **Law** | Ecclesial | Precedent exists (Ecclesial Laws). Short. Risks colliding with legal-layer language in the twin-track ruling. |
-| **Non-Negotiable** | House | Already in use for the media extractions. Reads as adjective, awkward as a noun at scale. |
-| **Keel** | Nautical/metaphor | The thing that keeps the ship upright and is invisible above the waterline. Evocative, zero precedent in-repo. |
+| Candidate | Slot | Register | Case |
+|---|---|---|---|
+| **Tenet** ⭐ | rule | Doctrinal | The actual term for a permanent operating truth inside a doctrine ("tenets of maneuver warfare"). "The Seven Tenets" reads as doctrine. Strongest pure rename. |
+| **Ethos** ⭐ | set/identity | Doctrinal (warrior ethos) | The way a unit conducts itself because of what it is — the concept Papi described. Works as the name for the *set*: each rule a Tenet, the whole an Ethos. |
+| **Commander's Intent** | identity | Doctrinal | The purpose that survives contact — plans die, intent endures. Precisely the invariant-vs-content relation. Two words, role-bound. |
+| **General Order** | rule | Marine | Memorized, universal, never changes — fixes the standing-order objection (standing orders get countermanded; the eleven General Orders do not). |
+| **Standing Order** | rule | Marine | Remains in effect until countermanded — Invariant VII for free. Papi's objection: implies eventual change. |
+| **Creed** | identity | Marine (Rifleman's Creed) | Identity stated as operating truths. Saying-adjacent — Papi excluded sayings. |
+| **Covenant** | rule/identity | Ecclesial | Fits The Administration's Ecclesial Laws register; a binding that defines both parties and does not expire. |
+| **Mandate** | identity | Institutional | The reason-for-existing word. Clean noun, corporate at the edges. |
+| **Law** | rule | Ecclesial | Precedent exists (Ecclesial Laws). Collides with legal-layer language in the twin-track ruling. |
 
 **Constraint on the ruling:** machine fields (`narrative_invariant`, one-sheet `Invariants:`) keep the old term until schema-propagation decision #3 executes — renaming prose and schema in separate moments forks the SSOT. One ruling, one propagation pass.
 
