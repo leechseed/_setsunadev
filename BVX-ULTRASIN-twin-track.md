@@ -39,4 +39,4 @@ Papi's three metaphors (music-label imprint · military-academy dual-track · se
 |---|---|---|
 | 1 | **The legal ruling** (subsidiary / sister / separate) | §N data leans SEPARATE. This is Ancient #2 itself — the prepared ground is now this doc. |
 | 2 | **BVMC** — adopt, rename, or discard the June coinage | Holding-structure name for the conglomerate frame |
-| 3 | MCDP acquisitions into BVX-LEARN | Approve → they take the next ID block after BVX.1107 |
+| 3 | MCDP acquisitions into BVX-LEARN | ✅ **APPROVED 2026-08-21** — 4 of 11 PDFs in `Desktop\_BVX_INBOX\mcdp\` (1 · 1-2 · 1-3 · 5); remainder pending browser grab from marines.mil. ID block after BVX.1107 on catalog. Meta-doctrine drafted: [DOCTRINE-0-INVARIANTS.md](DOCTRINE-0-INVARIANTS.md) |

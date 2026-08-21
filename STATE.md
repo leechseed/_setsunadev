@@ -82,6 +82,12 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ---
 
+## ✅ Moved 2026-08-21 (evening session)
+
+- **DOCTRINE 0 drafted** — [DOCTRINE-0-INVARIANTS.md](DOCTRINE-0-INVARIANTS.md): the invariants about invariants. Seven meta-rules (earned-not-declared · written-only · names-what-it-forbids · holds-at-every-scale · names-derivation · few · dies-by-countermand), census of the existing invariant corpus (8 locations federated), rename ruling open (**Standing Order** recommended over Law / Non-Negotiable / Keel; schema fields hold until decision #3 propagates). Awaiting ratification.
+- **MCDP acquisition executed** — twin-track ledger 3 approved. 4 of 11 PDFs landed in `Desktop\_BVX_INBOX\mcdp\` (Warfighting · Campaigning · Tactics · Planning, all verified); remaining 7 need a browser grab (marines.mil blocks scripts; archive.org degraded). Take ID block after BVX.1107 on catalog.
+- **Sit rep format ruled** — "set me up" retired, **"sit rep"** is the trigger; board now delivers three time-sorted blocks: Fresh Ten (recency + context + next step) → **The Ancients** (staleness tiers) → Deep Stacks (volume).
+
 ## ✅ Moved 2026-08-21 (close-out)
 
 - **Gluteal morphology taxonomy specced** → [_CANON_NODES/L2b-morphology-gluteal.md](_CANON_NODES/L2b-morphology-gluteal.md). L2b MORPHOLOGY is no longer unspecced — its first module is done. Contreras's causal mechanism extracted from the 996-page *Glute Lab* text (ilium width × femoral neck × trochanter prominence = 27 cells), extended into **two sexed taxonomies, thirteen named types**, architectural naming register. Three views: character-generation, aesthetic IP, training targets. Hip dips named as a positive type (`The Corbel`) rather than a defect.
