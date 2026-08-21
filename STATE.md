@@ -12,7 +12,7 @@ read_first: true
 
 > **Challenge:** *"Americans are not born. They are forged in the chaos and dysfunction of American life."*
 > **Countersign:** *"The Asset is acquired. The Noise is archived. The Feed is stable."*
-> → then the board. Equivalents: "set me up" · "where did we leave off" · "the board".
+> → then the board. Equivalents: "sit rep" · "where did we leave off" · "the board".
 
 **Autosave is on.** A Stop hook (`_tools/autocommit.sh`) commits every change to git when a session ends. Local only — it never pushes. Run `git push` yourself when you mean to publish.
 
