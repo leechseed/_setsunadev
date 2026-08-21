@@ -14,6 +14,8 @@ read_first: true
 > **Countersign:** *"The Asset is acquired. The Noise is archived. The Feed is stable."*
 > → then the board. Equivalents: "sit rep" · "where did we leave off" · "the board".
 
+**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [FRAGO.md](FRAGO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep, Oscar Mike, how copy, FRAGO capture) are canonical in SOP.md.
+
 **Autosave is on.** A Stop hook (`_tools/autocommit.sh`) commits every change to git when a session ends. Local only — it never pushes. Run `git push` yourself when you mean to publish.
 
 It is an **index, not a store**. Detail lives in the registries below; this file says what's live, what moved, and who's blocking. If it's not here, it isn't active.
@@ -40,17 +42,9 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 ---
 
-## 🩺 PMCS — Preventive Maintenance Checks & Services
+## 📋 The watchlist → [FRAGO.md](FRAGO.md)
 
-**The operator is equipment.** Body, medical, and life-admin readiness — the military category is Individual Medical Readiness (IMR). Not a project; never mixes with the project board. Surfaces in every sit rep.
-
-| Item | Status | Next action |
-|---|---|---|
-| **Dental** — retainer advising | 🔴 open since 8/19 | Call the orthodontist. ⚠️ Dictation has twice produced "periodontist" — confirm which specialist; if there is also a gum concern, that is a **second** appointment |
-| **PCP — establish care + physical** | 🔴 open | Book the physical. Sexual-health consult sequences after it: PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral. Timing decoupled from October — book now |
-| **Pelvic-floor PT** | ⬜ gated | Referral comes out of the PCP consult above |
-
-> Add items here the moment they are spoken. A PMCS item that is not written down did not happen.
+Active taskings + the PMCS readiness table live in their own capture-fast file. Sit rep Block IV. Protocol: [SOP.md](SOP.md) §1 — spoken taskings are written there the turn they are spoken.
 
 ---
 
@@ -101,7 +95,10 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 - **DOCTRINE 0 drafted** — [DOCTRINE-0-INVARIANTS.md](DOCTRINE-0-INVARIANTS.md): the invariants about invariants. Seven meta-rules (earned-not-declared · written-only · names-what-it-forbids · holds-at-every-scale · names-derivation · few · dies-by-countermand), census of the existing invariant corpus (8 locations federated), rename ruling open (**Standing Order** recommended over Law / Non-Negotiable / Keel; schema fields hold until decision #3 propagates). Awaiting ratification.
 - **MCDP acquisition executed** — twin-track ledger 3 approved. 4 of 11 PDFs landed in `Desktop\_BVX_INBOX\mcdp\` (Warfighting · Campaigning · Tactics · Planning, all verified); remaining 7 need a browser grab (marines.mil blocks scripts; archive.org degraded). Take ID block after BVX.1107 on catalog.
 - **Sit rep format ruled** — "set me up" retired, **"sit rep"** is the trigger; board now delivers three time-sorted blocks: Fresh Ten (recency + context + next step) → **The Ancients** (staleness tiers) → Deep Stacks (volume).
-- **PMCS category created** — personal readiness (medical/dental/life-admin) is its own block in STATE and in every sit rep, never mixed with projects. Seeded from the journal: dental call (retainer — specialist to confirm, ortho vs perio) + PCP physical → sexual-health consult chain. "The operator is equipment."
+- **PMCS category created** — personal readiness (medical/dental/life-admin), never mixed with projects. Seeded from the journal: dental call (retainer — specialist to confirm, ortho vs perio) + PCP physical → sexual-health consult chain. "The operator is equipment."
+- **SOP stood up** — [SOP.md](SOP.md): canonical comms codes (sit rep · Oscar Mike · **how copy** ack protocol · FRAGO capture), six-block sit rep order, cache doctrine. Agent memory mirrors it; the file wins on conflict.
+- **FRAGO board stood up** — [FRAGO.md](FRAGO.md): the watchlist (3 active taskings + PMCS moved in from this file). Name provisional; bench WARNO / Fire Watch / BOLO.
+- **Ready Rack / Magazine built** — `_CACHE/` session notes flush to `_LOG/` on every sit rep; first session note staged. Sit rep now opens with Block 0 "last session" from the Rack.
 
 ## ✅ Moved 2026-08-21 (close-out)
 
