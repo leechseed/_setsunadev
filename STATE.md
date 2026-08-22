@@ -85,6 +85,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
 | **Erotic Range** | ✅ Live, phone-ready, two profiles, local-only. | `Desktop/erotic-range.html` · [artifact](https://claude.ai/code/artifact/c78a1e6a-1f43-467b-a74e-7e7e66df41c1) |
 | **Taxonomic-aesthetic practice** | Practice-first. Engine-vs-voice fork asked in June, never answered. | Registry §L |
+| **Manufacturer watchlist** | ✅ Stood up 2026-08-21. Dildo/toy makers to track, sourced via X. First entry: Fantasticocks. | [ULTRASIN-mfg-watchlist.md](ULTRASIN-mfg-watchlist.md) |
 | **Birthday 2026** | 🔴 **SHELVED 2026-08-21** — Plan A cancelled (no PTO, new-job standing). Research preserved as revisit-project + **BLACK/ORANGE fiction candidate**. Plan B (off-day corridor, zero PTO) open — original Space Coast plan qualifies as-is. | [BIRTHDAY-2026.md](BIRTHDAY-2026.md) |
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
