@@ -1,16 +1,18 @@
 ---
-title: FRAGO — the watchlist
+title: BOLO — the watchlist
 type: tasking board
 status: living document — capture-fast, sit rep Block IV
 updated: 2026-08-21
 protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is spoken
 ---
 
-# FRAGO — THE WATCHLIST
+# BOLO — THE WATCHLIST
 
-Fragmentary orders: what needs doing in the immediate-to-near future, captured the moment it is said. Not projects, not rulings — taskings. (Name provisional; bench: WARNO · Fire Watch · BOLO.)
+**Be On the Lookout.** What needs doing in the immediate-to-near future, captured the moment it is said. Not projects, not rulings — taskings.
 
-## Active taskings
+> **Name RULED 2026-08-21.** Chosen for the bolas — the gaucho throwing weapon: thrown the moment the target is sighted, wraps it, holds it until you get there. That is the list. Retired bench: FRAGO · WARNO · Fire Watch.
+
+## Active BOLOs
 
 | # | Order | Issued | Status |
 |---|---|---|---|
@@ -18,7 +20,7 @@ Fragmentary orders: what needs doing in the immediate-to-near future, captured t
 | 2 | **Run the z-lib favorites export** → drop in `Desktop\_BVX_INBOX\zlib\` → walker produces the gap-list | 2026-08-19 | 🔴 open |
 | 3 | **BBRT profile fill-ins** (QoS bracket + [Blunt Plug]/[taper] confirms) | 2026-08-19 | 🟡 open |
 
-Completed taskings get a dated strike-through, then move to the bottom under **Done** on the next pass.
+Completed BOLOs get a dated strike-through, then move to the bottom under **Done** on the next pass.
 
 ## PMCS — Preventive Maintenance Checks & Services
 
@@ -32,4 +34,4 @@ Completed taskings get a dated strike-through, then move to the bottom under **D
 
 ## Done
 
-*(empty — completed taskings archive here with dates)*
+*(empty — completed BOLOs archive here with dates)*

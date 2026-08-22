@@ -4,7 +4,7 @@ type: doctrine
 status: living document — canonical home of the verbal protocol
 updated: 2026-08-21
 read_first: true
-read_with: STATE.md · FRAGO.md · PROJECTS.md · _CACHE/
+read_with: STATE.md · BOLO.md · PROJECTS.md · _CACHE/
 ---
 
 # SOP — THE WAY THIS OPERATION RUNS
@@ -21,7 +21,7 @@ Canonical home of every comms code and session protocol. If a code is not writte
 | **The challenge phrase** (see STATE.md header) | Formal challenge | Countersign, first line, exact — then the sit rep. Never explain the ritual. |
 | **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. |
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
-| **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | FRAGO capture | Write it into [FRAGO.md](FRAGO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
+| **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | BOLO capture | Write it into [BOLO.md](BOLO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
 
 ---
 
@@ -33,7 +33,7 @@ Canonical home of every comms code and session protocol. If a code is not writte
 | **I** | **The Fresh Ten** | Ten projects touched most recently, newest first — last-touched date, one line of context, concrete next step | STATE.md + git log |
 | **II** | **The Ancients** | Longest-untouched work, tiered: true ancients → going quiet → recently parked; each with what it is waiting on | STATE.md + PROJECTS.md |
 | **III** | **The Deep Stacks** | Volume ranking — content mass per project | PROJECTS.md |
-| **IV** | **The FRAGO board** | Active taskings + the PMCS readiness table | FRAGO.md |
+| **IV** | **The BOLO board** | Active BOLOs + the PMCS readiness table | BOLO.md |
 | **V** | **Blocked on you** | Numbered decisions in priority order | STATE.md |
 | **VI** | **The leverage line** | One line naming the single highest-leverage next action | derived |
 
@@ -56,7 +56,7 @@ STATE.md remains the **index** (what is live, what is blocked); the Ready Rack i
 
 1. **SOP.md** — this file. The protocol itself.
 2. **STATE.md** — the index.
-3. **FRAGO.md** — the watchlist.
+3. **BOLO.md** — the watchlist.
 4. **`_CACHE/`** — the Ready Rack (flush on sit rep).
 5. **PROJECTS.md** — the volume board.
 
@@ -66,5 +66,5 @@ A session that answers "sit rep" without all five has not answered it.
 
 ## 5 · Open naming rulings on this doc
 
-- **"FRAGO"** for the watchlist — ruled-in provisionally 2026-08-21 (each spoken tasking = a fragmentary order modifying the standing plan). Bench: WARNO · Fire Watch · BOLO.
+- **"BOLO"** for the watchlist — **RULED 2026-08-21.** Be On the Lookout, chosen for the bolas echo (the gaucho throwing weapon: thrown on sighting, wraps the target, holds it until you arrive). Retired bench: FRAGO · WARNO · Fire Watch.
 - Ready Rack / Magazine — provisional, same session.

@@ -14,7 +14,7 @@ read_first: true
 > **Countersign:** *"The Asset is acquired. The Noise is archived. The Feed is stable."*
 > → then the board. Equivalents: "sit rep" · "where did we leave off" · "the board".
 
-**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [FRAGO.md](FRAGO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep, Oscar Mike, how copy, FRAGO capture) are canonical in SOP.md.
+**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [BOLO.md](BOLO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep, Oscar Mike, how copy, BOLO capture) are canonical in SOP.md.
 
 **Autosave is on.** A Stop hook (`_tools/autocommit.sh`) commits every change to git when a session ends. Local only — it never pushes. Run `git push` yourself when you mean to publish.
 
@@ -42,9 +42,9 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 ---
 
-## 📋 The watchlist → [FRAGO.md](FRAGO.md)
+## 📋 The watchlist → [BOLO.md](BOLO.md)
 
-Active taskings + the PMCS readiness table live in their own capture-fast file. Sit rep Block IV. Protocol: [SOP.md](SOP.md) §1 — spoken taskings are written there the turn they are spoken.
+Active BOLOs + the PMCS readiness table live in their own capture-fast file. Sit rep Block IV. Protocol: [SOP.md](SOP.md) §1 — spoken taskings are written there the turn they are spoken.
 
 ---
 
@@ -96,8 +96,8 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 - **MCDP acquisition executed** — twin-track ledger 3 approved. 4 of 11 PDFs landed in `Desktop\_BVX_INBOX\mcdp\` (Warfighting · Campaigning · Tactics · Planning, all verified); remaining 7 need a browser grab (marines.mil blocks scripts; archive.org degraded). Take ID block after BVX.1107 on catalog.
 - **Sit rep format ruled** — "set me up" retired, **"sit rep"** is the trigger; board now delivers three time-sorted blocks: Fresh Ten (recency + context + next step) → **The Ancients** (staleness tiers) → Deep Stacks (volume).
 - **PMCS category created** — personal readiness (medical/dental/life-admin), never mixed with projects. Seeded from the journal: dental call (retainer — specialist to confirm, ortho vs perio) + PCP physical → sexual-health consult chain. "The operator is equipment."
-- **SOP stood up** — [SOP.md](SOP.md): canonical comms codes (sit rep · Oscar Mike · **how copy** ack protocol · FRAGO capture), six-block sit rep order, cache doctrine. Agent memory mirrors it; the file wins on conflict.
-- **FRAGO board stood up** — [FRAGO.md](FRAGO.md): the watchlist (3 active taskings + PMCS moved in from this file). Name provisional; bench WARNO / Fire Watch / BOLO.
+- **SOP stood up** — [SOP.md](SOP.md): canonical comms codes (sit rep · Oscar Mike · **how copy** ack protocol · BOLO capture), seven-block sit rep order, cache doctrine. Agent memory mirrors it; the file wins on conflict.
+- **BOLO board stood up** — [BOLO.md](BOLO.md): the watchlist (3 active BOLOs + PMCS moved in from this file). Name **RULED**: BOLO — Be On the Lookout, for the bolas echo (thrown on sighting, wraps, holds). Retired bench: FRAGO / WARNO / Fire Watch.
 - **Ready Rack / Magazine built** — `_CACHE/` session notes flush to `_LOG/` on every sit rep; first session note staged. Sit rep now opens with Block 0 "last session" from the Rack.
 
 ## ✅ Moved 2026-08-21 (close-out)
