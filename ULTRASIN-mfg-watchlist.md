@@ -8,7 +8,7 @@ updated: 2026-08-21
 
 # Manufacturer Watchlist
 
-Dildo/toy manufacturers to keep an eye on. Primary sourcing channel: **X (Twitter)** — the X column is the follow target. Add rows as sighted; never delete, strike through if dead.
+Dildo/toy manufacturers to keep an eye on. Primary sourcing channel: **X (Twitter)** — the X column is the follow target. Add rows as sighted; never delete, strike through if dead. Sibling list: [ULTRASIN-resource-watchlist.md](ULTRASIN-resource-watchlist.md) (resources — education, tools, advocacy).
 
 | Name | What they do | Site | X |
 |---|---|---|---|
