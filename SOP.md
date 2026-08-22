@@ -17,7 +17,7 @@ Canonical home of every comms code and session protocol. If a code is not writte
 
 Quick reference. Full definitions in the sections below.
 
-**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
+**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **"back-brief"** (readback → the read → clarifying questions only; no delivery, no branching, until cleared) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
 
 **Board vocabulary:** **BOLO** (watchlist) · **PMCS** (operator readiness) · **Fresh Ten** (recency) · **The Ancients** (staleness tiers) · **Deep Stacks** (volume) · **Ready Rack** (`_CACHE/`) · **Magazine** (`_LOG/`) · **SOP** (this file)
 
@@ -31,6 +31,7 @@ Quick reference. Full definitions in the sections below.
 | **The challenge phrase** (see STATE.md header) | Formal challenge | Countersign, first line, exact — then the sit rep. Never explain the ritual. |
 | **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. |
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
+| **"Back-brief"** (provisional 2026-08-21; equivalents: "what are you getting from this" · "what's your read on it") | Confirm understanding **before** delivery — the mirror of "how copy" | Fixed three-part reply, then hold: **(1) Readback** — the transmission as understood, in own words, nothing skipped. **(2) The read** — assessment, relevant repo holdings, plan of attack. Plan only — no delivery yet. **(3) Clarifying questions** — one numbered block, tied strictly to the transmission. Clarify only: no branching, no new material, no additions. Loop 1–3 on the answers until the clarification chain is walked down; Papi then clears delivery. Rationale: catches drift and premature branching before effort is spent. |
 | **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | BOLO capture | Write it into [BOLO.md](BOLO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
 | **"ENDEX"** (provisional 2026-08-21; "Oscar Mike" spoken at session end reads the same) | Stand down — close the session | Run the close-out: write/finalize the Ready Rack session note · update STATE.md (Moved / Blocked / Live) · append the day's journal entry. Autocommit fires on session stop. Radio equivalents: "Out" · "secure the net". |
 
@@ -79,3 +80,4 @@ A session that answers "sit rep" without all five has not answered it.
 
 - **"BOLO"** for the watchlist — **RULED 2026-08-21.** Be On the Lookout, chosen for the bolas echo (the gaucho throwing weapon: thrown on sighting, wraps the target, holds it until you arrive). Retired bench: FRAGO · WARNO · Fire Watch.
 - Ready Rack / Magazine — provisional, same session.
+- **"Back-brief"** for the understanding-check protocol — **provisional 2026-08-21.** Doctrine echo: the confirmation brief / back-brief, where the subordinate restates mission and intent in their own words and surfaces questions **before** stepping off — understanding verified before a single unit moves. Bench: READBACK · CONFIRMATION BRIEF.
