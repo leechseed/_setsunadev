@@ -17,7 +17,7 @@ Canonical home of every comms code and session protocol. If a code is not writte
 
 Quick reference. Full definitions in the sections below.
 
-**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **"back-brief"** (readback → the read → clarifying questions only; no delivery, no branching, until cleared) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
+**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **the understanding check — proword under ruling** (readback → the read → clarifying questions only; no delivery, no branching, until cleared; runs **only when spoken**) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
 
 **Board vocabulary:** **BOLO** (watchlist) · **PMCS** (operator readiness) · **Fresh Ten** (recency) · **The Ancients** (staleness tiers) · **Deep Stacks** (volume) · **Ready Rack** (`_CACHE/`) · **Magazine** (`_LOG/`) · **SOP** (this file)
 
@@ -31,7 +31,7 @@ Quick reference. Full definitions in the sections below.
 | **The challenge phrase** (see STATE.md header) | Formal challenge | Countersign, first line, exact — then the sit rep. Never explain the ritual. |
 | **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. |
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
-| **"Back-brief"** (provisional 2026-08-21; equivalents: "what are you getting from this" · "what's your read on it") | Confirm understanding **before** delivery — the mirror of "how copy" | Fixed three-part reply, then hold: **(1) Readback** — the transmission as understood, in own words, nothing skipped. **(2) The read** — assessment, relevant repo holdings, plan of attack. Plan only — no delivery yet. **(3) Clarifying questions** — one numbered block, tied strictly to the transmission. Clarify only: no branching, no new material, no additions. Loop 1–3 on the answers until the clarification chain is walked down; Papi then clears delivery. Rationale: catches drift and premature branching before effort is spent. |
+| **The understanding check** — proword OPEN ("back-brief" STRUCK 2026-08-21; ten candidates fielded, INTEL is Papi's seed). Equivalents while unnamed: "what are you getting from this" · "what's your read on it" | Confirm understanding **before** delivery — the mirror of "how copy". **Only when spoken, never automatic** (ruled 2026-08-21) — the standing cadence stays clean so Papi can get straight to the point | Fixed three-part reply, then hold: **(1) Readback** — the transmission as understood, in own words, nothing skipped. Proof of copy comes before anything else. **(2) The read** — assessment, relevant repo holdings, plan of attack — built answer-first per the Pyramid Principle (ratified BVX doctrine). Plan only, no delivery. **(3) Clarifying questions** — one numbered block, tied strictly to the transmission. Clarify only: no branching, no new material. Loop 1–3 until the chain is walked down; Papi then clears delivery. Rationale: catches drift and premature branching before effort is spent. |
 | **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | BOLO capture | Write it into [BOLO.md](BOLO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
 | **"ENDEX"** (provisional 2026-08-21; "Oscar Mike" spoken at session end reads the same) | Stand down — close the session | Run the close-out: write/finalize the Ready Rack session note · update STATE.md (Moved / Blocked / Live) · append the day's journal entry. Autocommit fires on session stop. Radio equivalents: "Out" · "secure the net". |
 
@@ -47,7 +47,9 @@ Quick reference. Full definitions in the sections below.
 | **III** | **The Deep Stacks** | Volume ranking — content mass per project | PROJECTS.md |
 | **IV** | **The BOLO board** | Active BOLOs + the PMCS readiness table | BOLO.md |
 | **V** | **Blocked on you** | Numbered decisions in priority order | STATE.md |
-| **VI** | **The leverage line** | One line naming the single highest-leverage next action | derived |
+| **VI** | **The leverage line** *(provisional rename pending: "The Main Effort" — MCDP 1's term for the one point everything else supports)* | One line naming the single highest-leverage next action | derived |
+
+**Trunk discipline — coded 2026-08-21, non-negotiable.** Every item on every block carries its trunk: **BLACK** (creative, IP, systems) · **ORANGE** (venture, body, sexuality) · **OPERATOR** (PMCS — the operator is equipment). The board is never delivered trunk-blind. This is how Papi's head sorts; the protocol upholds it everywhere, always.
 
 ---
 
@@ -80,4 +82,11 @@ A session that answers "sit rep" without all five has not answered it.
 
 - **"BOLO"** for the watchlist — **RULED 2026-08-21.** Be On the Lookout, chosen for the bolas echo (the gaucho throwing weapon: thrown on sighting, wraps the target, holds it until you arrive). Retired bench: FRAGO · WARNO · Fire Watch.
 - Ready Rack / Magazine — provisional, same session.
-- **"Back-brief"** for the understanding-check protocol — **provisional 2026-08-21.** Doctrine echo: the confirmation brief / back-brief, where the subordinate restates mission and intent in their own words and surfaces questions **before** stepping off — understanding verified before a single unit moves. Bench: READBACK · CONFIRMATION BRIEF.
+- **The understanding-check proword — OPEN.** "Back-brief" **STRUCK 2026-08-21** (Papi: lame). The concept stands (readback → read → clarify only, only when spoken); the word awaits ruling. Ten candidates fielded 2026-08-21: **BORESIGHT** ⭐ · AZIMUTH · ZERO · BACK-AZIMUTH · OVERLAY · ECHO · SQUAWK · FIVE-BY · RECON · **INTEL** (Papi's seed). Earlier bench retired: READBACK · CONFIRMATION BRIEF.
+- **"Main effort"** as a command proword — **provisional 2026-08-21.** MCDP 1's answer to "this is the main thing, focus here": the designated main effort is the one task everything else supports; all else is supporting effort. Spoken, it names or asks for the single priority. Sit rep Block VI rename to "The Main Effort" rides on the same ruling.
+
+---
+
+## 6 · Lexicon doctrine — the Corps is the bootstrap
+
+**Coded 2026-08-21.** The USMC proword and doctrine vocabulary is a **starting library, not the end-state.** It is adopted wholesale as the bootstrap; native coinages are expected to replace and extend it as the operation matures. The drift into an own language is **intended** — the lexicon is a worldbuilding asset that bleeds into the culture. The model is the Disney effect: code language plus uniform makes the separation between inside-the-operation and the rest of the world clean and total. Ten borrowed words today, ten coined words tomorrow, a house tongue eventually.
