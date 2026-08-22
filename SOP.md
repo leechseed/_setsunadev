@@ -13,6 +13,16 @@ Canonical home of every comms code and session protocol. If a code is not writte
 
 ---
 
+## 0 · SOI — the proword card
+
+Quick reference. Full definitions in the sections below.
+
+**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **"BOLO that" / "put that down"** (tasking captured same turn) · the challenge phrase (→ countersign → sit rep)
+
+**Board vocabulary:** **BOLO** (watchlist) · **PMCS** (operator readiness) · **Fresh Ten** (recency) · **The Ancients** (staleness tiers) · **Deep Stacks** (volume) · **Ready Rack** (`_CACHE/`) · **Magazine** (`_LOG/`) · **SOP** (this file)
+
+---
+
 ## 1 · Comms codes
 
 | Transmission | Meaning | Response protocol |
