@@ -99,6 +99,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 - **SOP stood up** — [SOP.md](SOP.md): canonical comms codes (sit rep · Oscar Mike · **how copy** ack protocol · BOLO capture), seven-block sit rep order, cache doctrine. Agent memory mirrors it; the file wins on conflict.
 - **BOLO board stood up** — [BOLO.md](BOLO.md): the watchlist (3 active BOLOs + PMCS moved in from this file). Name **RULED**: BOLO — Be On the Lookout, for the bolas echo (thrown on sighting, wraps, holds). Retired bench: FRAGO / WARNO / Fire Watch.
 - **Ready Rack / Magazine built** — `_CACHE/` session notes flush to `_LOG/` on every sit rep; first session note staged. Sit rep now opens with Block 0 "last session" from the Rack.
+- **SOI proword card pinned** — SOP §0: every comms code and board noun on one glance. **"ENDEX"** coded provisionally as the session close-out proword ("Out" / "secure the net" on the bench).
 
 ## ✅ Moved 2026-08-21 (close-out)
 

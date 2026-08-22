@@ -17,7 +17,7 @@ Canonical home of every comms code and session protocol. If a code is not writte
 
 Quick reference. Full definitions in the sections below.
 
-**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **"BOLO that" / "put that down"** (tasking captured same turn) · the challenge phrase (→ countersign → sit rep)
+**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
 
 **Board vocabulary:** **BOLO** (watchlist) · **PMCS** (operator readiness) · **Fresh Ten** (recency) · **The Ancients** (staleness tiers) · **Deep Stacks** (volume) · **Ready Rack** (`_CACHE/`) · **Magazine** (`_LOG/`) · **SOP** (this file)
 
@@ -32,6 +32,7 @@ Quick reference. Full definitions in the sections below.
 | **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. |
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
 | **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | BOLO capture | Write it into [BOLO.md](BOLO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
+| **"ENDEX"** (provisional 2026-08-21; "Oscar Mike" spoken at session end reads the same) | Stand down — close the session | Run the close-out: write/finalize the Ready Rack session note · update STATE.md (Moved / Blocked / Live) · append the day's journal entry. Autocommit fires on session stop. Radio equivalents: "Out" · "secure the net". |
 
 ---
 
