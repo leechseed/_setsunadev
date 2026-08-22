@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-16
+updated: 2026-08-22
 read_first: true
 ---
 
@@ -14,7 +14,7 @@ read_first: true
 > **Countersign:** *"The Asset is acquired. The Noise is archived. The Feed is stable."*
 > → then the board. Equivalents: "sit rep" · "where did we leave off" · "the board".
 
-**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [BOLO.md](BOLO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep, Oscar Mike, how copy, BOLO capture) are canonical in SOP.md.
+**Session-open reading order ([SOP.md](SOP.md) §4):** SOP.md → this file → [BOLO.md](BOLO.md) (watchlist) → `_CACHE/` (Ready Rack — flush to `_LOG/` on sit rep) → [PROJECTS.md](PROJECTS.md). All comms codes (sit rep · Oscar Mike · how copy · BOLO capture · **boresight** · break-break/buttonhook back · ivory tower · ENDEX) are canonical in SOP.md, house format included (§7).
 
 **Autosave is on.** A Stop hook (`_tools/autocommit.sh`) commits every change to git when a session ends. Local only — it never pushes. Run `git push` yourself when you mean to publish.
 
@@ -95,6 +95,17 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 ## ✅ Moved 2026-08-21 (night session — watchlists)
 
 - **Both ORANGE watchlists stood up** — [ULTRASIN-mfg-watchlist.md](ULTRASIN-mfg-watchlist.md) (26 makers, indie artisan → mass-market → machines/e-stim/prostate, X handles verified per row) + [ULTRASIN-resource-watchlist.md](ULTRASIN-resource-watchlist.md) (industry education/advocacy; SexWork CEO → §N). Sorting rule for mixed drops ruled; retailer/novelty entries flagged in-row. Notable intel: Funkit migrated to Bluesky; Bad Dragon's X is @bad_dragon not @BadDragonToys; four sites are fetch-opaque — X is the watch channel.
+
+## ✅ Moved 2026-08-21→22 (night session — the lexicon session)
+
+- **BORESIGHT ruled** — the understanding-check proword ([SOP.md](SOP.md) §1): readback → the read → clarifying questions only, no delivery until cleared, **only when spoken**. "Back-brief" struck; INTEL returned to the pool. Directed form: "boresight in on [target]".
+- **Detour pair ruled** — **break-break** opens, **buttonhook back** closes; main thread restored unprompted.
+- **"Ivory tower" coded** — academic mode: published literature only, cited inline, established vs contested marked.
+- **House format coded** — SOP §7, after the readback-wall callout: bulleted readbacks · one-idea paragraphs · bold signposts · ten-second scan test. Grounded in the literature (NN/g F-pattern scanning, Cowan chunking, Mayer signaling/segmenting, Sweller load).
+- **Trunk discipline coded** — SOP §2: every board item carries **BLACK / ORANGE / OPERATOR**; the board is never delivered trunk-blind.
+- **Lexicon doctrine coded** — SOP §6: USMC vocabulary is the bootstrap library; native coinage intended; the house tongue bleeds into the culture. "Main effort" provisional (MCDP 1), Block VI rename rides its ruling.
+- **BOLOs 4–6 captured** — **Focus doctrine** [OPERATOR] (staged: science + snap-in protocol + training; "The Zone" already in MSX.11/12/14; goalie layer own section; **fires on go**) · **Papi↔Claude interface** (docs are Claude's retrieval layer, conversation is the interface, prioritize speed) · **Transmission pedagogy** (v0.1 live as §7).
+- **z-lib drop zone created** — `Desktop\_BVX_INBOX\zlib\` was missing despite the standby note; walker verified; parser fresh-builds at go. BOLO 2 still waits on the browser export run.
 
 ## ✅ Moved 2026-08-21 (evening session)
 

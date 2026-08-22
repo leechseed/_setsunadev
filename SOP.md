@@ -2,7 +2,7 @@
 title: SOP — Standing Operating Procedure
 type: doctrine
 status: living document — canonical home of the verbal protocol
-updated: 2026-08-21
+updated: 2026-08-22
 read_first: true
 read_with: STATE.md · BOLO.md · PROJECTS.md · _CACHE/
 ---
