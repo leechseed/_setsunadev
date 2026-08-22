@@ -92,6 +92,10 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ---
 
+## ✅ Moved 2026-08-21 (night session — watchlists)
+
+- **Both ORANGE watchlists stood up** — [ULTRASIN-mfg-watchlist.md](ULTRASIN-mfg-watchlist.md) (26 makers, indie artisan → mass-market → machines/e-stim/prostate, X handles verified per row) + [ULTRASIN-resource-watchlist.md](ULTRASIN-resource-watchlist.md) (industry education/advocacy; SexWork CEO → §N). Sorting rule for mixed drops ruled; retailer/novelty entries flagged in-row. Notable intel: Funkit migrated to Bluesky; Bad Dragon's X is @bad_dragon not @BadDragonToys; four sites are fetch-opaque — X is the watch channel.
+
 ## ✅ Moved 2026-08-21 (evening session)
 
 - **DOCTRINE 0 drafted** — [DOCTRINE-0-INVARIANTS.md](DOCTRINE-0-INVARIANTS.md): the invariants about invariants. Seven meta-rules (earned-not-declared · written-only · names-what-it-forbids · holds-at-every-scale · names-derivation · few · dies-by-countermand), census of the existing invariant corpus (8 locations federated), rename ruling open (**Standing Order** recommended over Law / Non-Negotiable / Keel; schema fields hold until decision #3 propagates). Awaiting ratification.
