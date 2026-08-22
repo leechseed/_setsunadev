@@ -17,7 +17,7 @@ Canonical home of every comms code and session protocol. If a code is not writte
 
 Quick reference. Full definitions in the sections below.
 
-**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **the understanding check — proword under ruling** (readback → the read → clarifying questions only; no delivery, no branching, until cleared; runs **only when spoken**) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
+**Commands:** **"sit rep"** (full board) · **"Oscar Mike"** (park it, move on) · **"sweep"** (promote & clear the parked) · **"how copy?"** (end of orders → Good/Solid/Bad copy + execute) · **the understanding check — proword under ruling** (readback → the read → clarifying questions only; no delivery, no branching, until cleared; runs **only when spoken**) · **"BOLO that" / "put that down"** (tasking captured same turn) · **"ivory tower"** (academic mode — published literature only, cited inline) · **"break-break"** (provisional — open a detour; **"as you were"** closes it, main thread restored unprompted) · **"ENDEX"** (session close-out: cache note, STATE, journal) · the challenge phrase (→ countersign → sit rep)
 
 **Board vocabulary:** **BOLO** (watchlist) · **PMCS** (operator readiness) · **Fresh Ten** (recency) · **The Ancients** (staleness tiers) · **Deep Stacks** (volume) · **Ready Rack** (`_CACHE/`) · **Magazine** (`_LOG/`) · **SOP** (this file)
 
@@ -33,6 +33,8 @@ Quick reference. Full definitions in the sections below.
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
 | **The understanding check** — proword OPEN ("back-brief" STRUCK 2026-08-21; ten candidates fielded, INTEL is Papi's seed). Equivalents while unnamed: "what are you getting from this" · "what's your read on it" | Confirm understanding **before** delivery — the mirror of "how copy". **Only when spoken, never automatic** (ruled 2026-08-21) — the standing cadence stays clean so Papi can get straight to the point | Fixed three-part reply, then hold: **(1) Readback** — the transmission as understood, in own words, nothing skipped. Proof of copy comes before anything else. **(2) The read** — assessment, relevant repo holdings, plan of attack — built answer-first per the Pyramid Principle (ratified BVX doctrine). Plan only, no delivery. **(3) Clarifying questions** — one numbered block, tied strictly to the transmission. Clarify only: no branching, no new material. Loop 1–3 until the chain is walked down; Papi then clears delivery. Rationale: catches drift and premature branching before effort is spent. |
 | **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | BOLO capture | Write it into [BOLO.md](BOLO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
+| **"Ivory tower"** ("what's the ivory tower on this?") — coded 2026-08-21 | Academic mode — answer from the published literature only | Every claim carries its source inline: researcher, year, field. Peer-reviewed beats books beats everything else; pop-sci gets flagged as pop-sci. Mark established vs emerging vs contested. Name the controlling field. Still house format (§7) — the rigor is in the sourcing, never in walls of prose. |
+| **"Break-break"** (provisional 2026-08-21) | Detour — step off the current thread for a moment | Park the main thread exactly where it stands, run the detour. **"As you were"** closes it: return to the parked thread **unprompted**, restating where we were. Radio lineage: break-break cuts into ongoing net traffic; the net resumes after. |
 | **"ENDEX"** (provisional 2026-08-21; "Oscar Mike" spoken at session end reads the same) | Stand down — close the session | Run the close-out: write/finalize the Ready Rack session note · update STATE.md (Moved / Blocked / Live) · append the day's journal entry. Autocommit fires on session stop. Radio equivalents: "Out" · "secure the net". |
 
 ---
@@ -84,9 +86,24 @@ A session that answers "sit rep" without all five has not answered it.
 - Ready Rack / Magazine — provisional, same session.
 - **The understanding-check proword — OPEN.** "Back-brief" **STRUCK 2026-08-21** (Papi: lame). The concept stands (readback → read → clarify only, only when spoken); the word awaits ruling. Ten candidates fielded 2026-08-21: **BORESIGHT** ⭐ · AZIMUTH · ZERO · BACK-AZIMUTH · OVERLAY · ECHO · SQUAWK · FIVE-BY · RECON · **INTEL** (Papi's seed). Earlier bench retired: READBACK · CONFIRMATION BRIEF.
 - **"Main effort"** as a command proword — **provisional 2026-08-21.** MCDP 1's answer to "this is the main thing, focus here": the designated main effort is the one task everything else supports; all else is supporting effort. Spoken, it names or asks for the single priority. Sit rep Block VI rename to "The Main Effort" rides on the same ruling.
+- **"Break-break" / "as you were"** for the detour pair — **provisional 2026-08-21.** Bench: DOGLEG (planned bend that returns to course) · EXCURSION (wargaming: branch off the base scenario, return to baseline) · BUTTONHOOK (hook off the axis, come back on it) · HERRINGBONE (convoy angles off the road, halts, resumes march).
 
 ---
 
 ## 6 · Lexicon doctrine — the Corps is the bootstrap
 
 **Coded 2026-08-21.** The USMC proword and doctrine vocabulary is a **starting library, not the end-state.** It is adopted wholesale as the bootstrap; native coinages are expected to replace and extend it as the operation matures. The drift into an own language is **intended** — the lexicon is a worldbuilding asset that bleeds into the culture. The model is the Disney effect: code language plus uniform makes the separation between inside-the-operation and the rest of the world clean and total. Ten borrowed words today, ten coined words tomorrow, a house tongue eventually.
+
+---
+
+## 7 · House format — how transmissions are written
+
+**Coded 2026-08-21 after the readback-wall incident.** The rhetoric stays; the formatting serves scanning. This is v0.1 — the full learning-science distill is BOLO 6.
+
+1. **Readbacks are bulleted.** One order per bullet, bold anchor up front. Never a prose wall.
+2. **One idea per paragraph, three sentences max.** Working memory holds about four items; the format respects that.
+3. **Bold is a signpost, not decoration** — the first words of the point, so the bolds alone tell the story on a scan.
+4. **Parallel items go in bullets or tables,** never buried in prose.
+5. **Answer-first everywhere** (Pyramid Principle, ratified doctrine).
+6. **The Spartan dial: trim words, not meaning.** Complete sentences, nothing ornamental — Laconic, but the message survives whole.
+7. **The ten-second test:** headers plus bolds alone must carry the message. If a scan doesn't tell the story, the format failed.
