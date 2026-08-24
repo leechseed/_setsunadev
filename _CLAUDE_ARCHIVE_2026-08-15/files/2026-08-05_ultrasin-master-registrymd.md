@@ -65,7 +65,7 @@ Every system below should trace to one of these gates. Systems that trace to not
 | Item | Status | Notes |
 |---|---|---|
 | Florida LLC | 🟡 In progress | Structural prerequisite to public presence |
-| BVX ↔ Ultrasin firewall | 🔴 Open | Subsidiary vs. sister entity vs. fully separate — the biggest unresolved structural decision |
+| BVX ↔ Ultrasin firewall | 🟢 RULED 2026-08-24 | **Subsidiary** — Ultrasin as child entity of BVX. §N lean (fully separate) overridden; ownership-chain exposure accepted. BVMC = doctrine name only, no legal entity. Attorney consult (basic legal docs, below) papers it. Full walk: `BVX-ULTRASIN-twin-track.md` |
 | Payment processors | 🟢 Identified | CCBill, Segpay, Paxum, Verotel |
 | Banking | 🟢 Identified | Mercury, NorthOne |
 | Basic legal docs | 🔴 Open | Flagged in Year-1 critical path, not yet executed |
@@ -199,7 +199,7 @@ Every system below should trace to one of these gates. Systems that trace to not
 
 | # | Decision | Blocking? |
 |---|---|---|
-| 1 | BVX firewall structure (subsidiary / sister / separate) | Yes — blocks public launch |
+| 1 | ~~BVX firewall structure (subsidiary / sister / separate)~~ ✅ RULED 2026-08-24: **subsidiary** | Cleared — launch now blocked by #3 (handle) + #4 (register) + #10 (legal docs) |
 | 2 | 3-year financial target quantification | No, but Goal Layer incomplete |
 | 3 | Performer handle final lock | Blocks public presence |
 | 4 | Commentary register | Blocks first flagship episode edit |

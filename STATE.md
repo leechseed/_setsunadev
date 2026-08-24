@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-22
+updated: 2026-08-24
 read_first: true
 ---
 
@@ -36,9 +36,10 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT | Stops the character schema forking |
 | 4 | `motivation_element` — holds MC Problem (`Equity`) or Motivation quad primary (`Consider`)? | TRUTH_VULNERABILITY flag trigger |
 | 5 | Name the fused school — Inner Spiral / Red Hills | Movements 2–4, i.e. most of Tori |
-| 6 | BVX ↔ Ultrasin firewall structure — **prepared ground now exists: [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md)** (3-layer sort; §N data leans SEPARATE entities + imprint-style brand) | Public launch (Ultrasin ledger #1) |
 
-> **Leverage check** ([PROJECTS.md](PROJECTS.md#the-same-ten-ranked-by-leverage)): #1 and #6 are the only two entries with a whole trunk behind them — #1 releases BLACK, #6 releases the money track. Neither requires building anything. **#6 is ranked last here and gates the most revenue.** The other four are propagation work that follows #1.
+> **#6 (BVX↔Ultrasin firewall) RULED 2026-08-24: subsidiary** — cleared from this table; record in [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md).
+>
+> **Leverage check** ([PROJECTS.md](PROJECTS.md#the-same-ten-ranked-by-leverage)): #1 is now the only entry with a whole trunk behind it — the BLACK release, one Dramatica afternoon. The money track's structural blocker is cleared; **launch now waits on performer handle + commentary register + legal-docs execution (Ultrasin ledger #3 · #4 · #10).** The other four are propagation work that follows #1.
 
 ---
 
@@ -80,7 +81,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 | System | State | Where |
 |---|---|---|
-| **Ultrasin venture** | Full registry v0.1, 32-chat sweep. 10 open decisions. | `_CLAUDE_ARCHIVE_2026-08-15/files/2026-08-05_ultrasin-master-registrymd.md` |
+| **Ultrasin venture** | Full registry v0.1, 32-chat sweep. **Firewall RULED 8/24 (subsidiary)** — launch blockers now handle · register · legal docs. | `_CLAUDE_ARCHIVE_2026-08-15/files/2026-08-05_ultrasin-master-registrymd.md` |
 | **Primed Protocol** | ✅ Documented today. Ledger item 8 closed, §H 🟡→🟢. | `Desktop/ULTRASIN-primed-protocol.md` |
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
 | **Erotic Range** | ✅ Live, phone-ready, two profiles, local-only. | `Desktop/erotic-range.html` · [artifact](https://claude.ai/code/artifact/c78a1e6a-1f43-467b-a74e-7e7e66df41c1) |
@@ -91,6 +92,10 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-24 (the firewall session)
+
+- **Blocker #6 RULED — BVX↔Ultrasin firewall: SUBSIDIARY.** Ultrasin as child entity of BVX. Ruled against the §N lean (fully separate) with the ownership-chain exposure explicitly on the table — **risk accepted, not overlooked.** Brand layer stays imprint (no visible bridge); operational stays BLACK/ORANGE dual-track. **BVMC ruled doctrine-name only** — internal/fictional conglomerate frame, no legal entity carries it. Propagated: [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md) (status + legal row + spawned decisions 1–2 closed) · registry §A 🔴→🟢 + ledger #1 struck · this file. **Launch chain now waits on:** performer handle (ledger #3) · commentary register (ledger #4) · FL LLC + attorney consult that papers the subsidiary (ledger #10).
 
 ## ✅ Moved 2026-08-21 (night session — watchlists)
 
