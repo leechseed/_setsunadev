@@ -12,7 +12,7 @@ The repo was searched exhaustively. Three commonly-used working names **do not e
 
 | Working name | Reality |
 |---|---|
-| "UltraSchool" | Does not exist in any spelling. See the two real names below. |
+| "UltraSchool" | Did not exist in any *pre-ruling* source doc. **Superseded 2026-08-24: "Ultra School" (two words) is now canon by deliberate ruling — see the DCUS banner below.** |
 | "Quinton" | No such character. The real character is **Quinn Bishop**. |
 | "Barnes" | No such character anywhere. (All hits were "Barnes & Noble" in an unrelated publishing note.) The canonical surname paired with Quinn is **Bishop**. |
 | "The Outsiders" | **Wrong title.** The series is **The Outliers** — always. Never write "The Outsiders" (that's the S.E. Hinton novel). The word *Outlier* is load-bearing in this world: an "Outlier" is a high-value statistical anomaly the system acquires and rebuilds, and Victoria's arc is becoming a true Outlier. "Outsider" destroys that meaning. |
@@ -23,6 +23,8 @@ The repo was searched exhaustively. Three commonly-used working names **do not e
 2. **Red Hills Academy** — legacy canon (2022–23), later variant name *Red Stick Creek* (from North Florida Red Stick Creek Native American history). Far richer institutional detail.
 
 **The task: fuse these two lineages.** Section 4 explains why they fuse cleanly.
+
+> ✅ **RULED 2026-08-24 — the fused school's name: the Delta Coast Ultra School ("DCUS").** Chosen from an 8-name Ultra bench on Papi's directive that "Ultra School" carry the title, Southern Gothic register. Recommended connective tissue, still unruled: Red Hills Academy → DCUS as the Bishop-acquisition rebrand · "Inner Spiral" reverts to pure geography (the school's Middle-Bands address; retcons the Bible's single mention) · "Ultra School" as an institutional class (a Bishop chain, DCUS the flagship) · the Red Stick Creek stratum beneath Red Hills. Node: `_CANON_NODES/delta-coast-ultra-school.md` (in the repo; not in this self-contained bundle).
 
 ---
 
@@ -181,7 +183,7 @@ Note the corroboration: current canon says Movement 3's focus is **"Anna Colson'
 
 ## 5. WHAT TO WORK ON — open problems
 
-1. **Name the fused school.** "Inner Spiral Academy" and "Red Hills Academy" both exist; the fusion needs one name, or a formal renaming event in the timeline (note: *Red Stick Creek* already exists as a renaming variant).
+1. ~~**Name the fused school.**~~ ✅ **RULED 2026-08-24: the Delta Coast Ultra School ("DCUS").** The renaming-event mechanism (Red Hills → DCUS on Bishop acquisition) is the recommended tissue, unruled; *Red Stick Creek* remains a bench stratum.
 2. **Build the faculty.** Zero named educators exist. Who teaches at a school where the curriculum is conformity ranking? Are they human holdovers from Red Hills, or Administration constructs?
 3. **Build the actual curriculum.** What are the classes? What does a Year 1 timetable look like? How is "Sync" literally taught, measured, and examined?
 4. **Specify the Star-Rating mechanics.** How are ranks assigned, displayed, raised, lost? What does a 1-star student's uniform look like vs. a 5-star?

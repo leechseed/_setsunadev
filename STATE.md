@@ -35,8 +35,9 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | 2 | **Anna Colson Conway as Impact Character?** — derived via [[BVX.0064]] | 17 IC fields, the RS throughline, Movements 2–4 |
 | 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT | Stops the character schema forking |
 | 4 | `motivation_element` — holds MC Problem (`Equity`) or Motivation quad primary (`Consider`)? | TRUTH_VULNERABILITY flag trigger |
-| 5 | Name the fused school — Inner Spiral / Red Hills | Movements 2–4, i.e. most of Tori |
 
+> **#5 (the fused school name) RULED 2026-08-24: the Delta Coast Ultra School — "DCUS"** — cleared from this table; record in [_CANON_NODES/delta-coast-ultra-school.md](_CANON_NODES/delta-coast-ultra-school.md).
+>
 > **#6 (BVX↔Ultrasin firewall) RULED 2026-08-24: subsidiary** — cleared from this table; record in [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md).
 >
 > **Leverage check** ([PROJECTS.md](PROJECTS.md#the-same-ten-ranked-by-leverage)): #1 is now the only entry with a whole trunk behind it — the BLACK release, one Dramatica afternoon. The money track's structural blocker is cleared; **launch now waits on performer handle + commentary register + legal-docs execution (Ultrasin ledger #3 · #4 · #10).** The other four are propagation work that follows #1.
@@ -71,7 +72,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 | System | State | Where |
 |---|---|---|
-| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED, IC candidate derived. Storyform blocked. | `_CANON_NODES/` |
+| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED, IC candidate derived. **School named 8/24: the Delta Coast Ultra School (DCUS).** Storyform blocked. | `_CANON_NODES/` |
 | **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. Stalled since April on the storyform extraction. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. 1,106 sources indexed, classifier 99%. Next ID `BVX.1107`. | `_0.1_BVX_LEARN/_meta/` |
 | **Leechseed Manifesto** | 🔴 **Found, not in canon.** 10 docs, May 2025, buried in imported-Joplin. | `OVER_EXIT_OUT_OBSIDIAN/.../manifesto/` |
@@ -93,8 +94,9 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ---
 
-## ✅ Moved 2026-08-24 (the firewall session)
+## ✅ Moved 2026-08-24 (the rulings session — firewall + school name)
 
+- **Blocker #5 RULED — the fused school is the Delta Coast Ultra School ("DCUS").** Papi's directive: "Ultra School" in the title, Southern Gothic register; Delta Coast pick off an 8-name bench (bench retired in the node). "Ultra School" is canon by deliberate ruling — supersedes the old "UltraSchool isn't a repo term" correction, which stands for pre-ruling sources. Node stood up: [_CANON_NODES/delta-coast-ultra-school.md](_CANON_NODES/delta-coast-ultra-school.md). Provisional tissue recorded, unruled: Red Hills → DCUS as Bishop-acquisition rebrand · "Inner Spiral" reverts to geography · Ultra-School-as-class · Red Stick Creek stratum. Tori's remaining blocks: storyform (#1) + IC (#2).
 - **Blocker #6 RULED — BVX↔Ultrasin firewall: SUBSIDIARY.** Ultrasin as child entity of BVX. Ruled against the §N lean (fully separate) with the ownership-chain exposure explicitly on the table — **risk accepted, not overlooked.** Brand layer stays imprint (no visible bridge); operational stays BLACK/ORANGE dual-track. **BVMC ruled doctrine-name only** — internal/fictional conglomerate frame, no legal entity carries it. Propagated: [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md) (status + legal row + spawned decisions 1–2 closed) · registry §A 🔴→🟢 + ledger #1 struck · this file. **Launch chain now waits on:** performer handle (ledger #3) · commentary register (ledger #4) · FL LLC + attorney consult that papers the subsidiary (ledger #10).
 
 ## ✅ Moved 2026-08-21 (night session — watchlists)

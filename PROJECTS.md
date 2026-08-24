@@ -63,7 +63,7 @@ Volume measures thought already spent. Leverage measures what moves if you touch
 
 ### 1 · OVEREXITOUT / The Outliers — 🟢
 The IP. Anchors: `THE OUTSIDERS SYSTEM` (304k), `MAIN SONNET` (192k). Six movements, tri-state Delta Coast Spiral, death-as-boot-sequence. Tori node built, L9 authored, IC candidate derived.
-**Waiting on:** the Dramatica storyform (~65 fields) · IC ruling · the school fusion name.
+**Waiting on:** the Dramatica storyform (~65 fields) · IC ruling. ~~The school fusion name~~ **RULED 2026-08-24: the Delta Coast Ultra School (DCUS).**
 → `_CANON_NODES/` · `_OXO_SCHOOL_HANDOFF/`
 
 ### 2 · BVIPDS / LEECHSEED — 🟢
