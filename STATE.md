@@ -31,11 +31,14 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | # | Decision | Unblocks |
 |---|---|---|
 | **0** | **Public-repo exposure** — archive is live on origin/main incl. personal cluster. Flip private / strip / accept. | Nothing downstream, but it is the only item that gets worse with time |
-| 1 | **Extract the OVEREXITOUT storyform from Dramatica** (~65 fields — 9 dynamics, 2 role, 8 MC, and the entire IC/OS/RS throughlines) | Tori's pipeline locks. Every downstream character. **Highest leverage in BLACK.** |
-| 2 | **Anna Colson Conway as Impact Character?** — derived via [[BVX.0064]] | 17 IC fields, the RS throughline, Movements 2–4 |
-| 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT | Stops the character schema forking |
-| 4 | `motivation_element` — holds MC Problem (`Equity`) or Motivation quad primary (`Consider`)? | TRUTH_VULNERABILITY flag trigger |
+| 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT — **now also carries the `motivation_element` → `mc_problem_element` rename (ruled #4)** | Stops the character schema forking |
 
+> **#1 (the storyform) RULED 2026-08-24 — every creative decision closed in-chat:** [_CANON_NODES/oxo-storyform.md](_CANON_NODES/oxo-storyform.md). Dynamics: Change · Stop · Do-er · Linear · Action · Optionlock · **Failure/Good**. Residue = ~30-min engine-verify pass, **BOLO 7** — zero decisions in it.
+>
+> **#2 (Impact Character) RULED 2026-08-24: Anna Colson Conway** — BVX.0064 derivation confirmed; **RS = Tori↔Anna** in Activity.
+>
+> **#4 (`motivation_element`) RULED 2026-08-24: renamed `mc_problem_element`, holds the MC Problem (Equity)** — `Consider` relocates to the extended sub-table; execution rides #3.
+>
 > **#5 (the fused school name) RULED 2026-08-24: the Delta Coast Ultra School — "DCUS"** — cleared from this table; record in [_CANON_NODES/delta-coast-ultra-school.md](_CANON_NODES/delta-coast-ultra-school.md).
 >
 > **#6 (BVX↔Ultrasin firewall) RULED 2026-08-24: subsidiary** — cleared from this table; record in [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md).
@@ -72,8 +75,8 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 | System | State | Where |
 |---|---|---|
-| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED, IC candidate derived. **School named 8/24: the Delta Coast Ultra School (DCUS).** Storyform blocked. | `_CANON_NODES/` |
-| **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. Stalled since April on the storyform extraction. | `ShroomsQ/_CANON/_SSOT/02_*` |
+| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24: storyform RULED · IC = Anna Colson Conway · school = DCUS.** Verify pass = BOLO 7. | `_CANON_NODES/` |
+| **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **UNSTALLED 8/24** — storyform decisions closed; Tori reaches full LOCKED after BOLO 7 + the #3 propagation. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. 1,106 sources indexed, classifier 99%. Next ID `BVX.1107`. | `_0.1_BVX_LEARN/_meta/` |
 | **Leechseed Manifesto** | 🔴 **Found, not in canon.** 10 docs, May 2025, buried in imported-Joplin. | `OVER_EXIT_OUT_OBSIDIAN/.../manifesto/` |
 | **L2b MORPHOLOGY** | Designed this session, unspecced. Frame → Tissue → **Condition** → Line → Archetype. | — |
@@ -94,8 +97,9 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 ---
 
-## ✅ Moved 2026-08-24 (the rulings session — firewall + school name)
+## ✅ Moved 2026-08-24 (the rulings session — firewall · school · storyform)
 
+- **Blockers #1, #2, #4 RULED — the storyform session, the April stall broken.** Every creative decision in the OXO storyform closed in-chat: [_CANON_NODES/oxo-storyform.md](_CANON_NODES/oxo-storyform.md). Dynamics locked: Change · **Stop** · Do-er · **Linear** · **Action** · Optionlock · Failure/Good — the Personal Triumph shape. All four domains forced by the model: MC Situation · IC Fixed Attitude · OS Manipulation · RS Activity. MC Concern corrected to **The Future** (Interdiction vs. Prediction — "the system forecasts her; she intervenes"). **IC = Anna Colson Conway** (#2 closed); **RS = Tori↔Anna**, the rivalry as Activity. **`motivation_element` → `mc_problem_element` = Equity** (#4 closed; execution rides #3). Residue = **BOLO 7**, the ~30-min engine-verify pass.
 - **Blocker #5 RULED — the fused school is the Delta Coast Ultra School ("DCUS").** Papi's directive: "Ultra School" in the title, Southern Gothic register; Delta Coast pick off an 8-name bench (bench retired in the node). "Ultra School" is canon by deliberate ruling — supersedes the old "UltraSchool isn't a repo term" correction, which stands for pre-ruling sources. Node stood up: [_CANON_NODES/delta-coast-ultra-school.md](_CANON_NODES/delta-coast-ultra-school.md). Provisional tissue recorded, unruled: Red Hills → DCUS as Bishop-acquisition rebrand · "Inner Spiral" reverts to geography · Ultra-School-as-class · Red Stick Creek stratum. Tori's remaining blocks: storyform (#1) + IC (#2).
 - **Blocker #6 RULED — BVX↔Ultrasin firewall: SUBSIDIARY.** Ultrasin as child entity of BVX. Ruled against the §N lean (fully separate) with the ownership-chain exposure explicitly on the table — **risk accepted, not overlooked.** Brand layer stays imprint (no visible bridge); operational stays BLACK/ORANGE dual-track. **BVMC ruled doctrine-name only** — internal/fictional conglomerate frame, no legal entity carries it. Propagated: [BVX-ULTRASIN-twin-track.md](BVX-ULTRASIN-twin-track.md) (status + legal row + spawned decisions 1–2 closed) · registry §A 🔴→🟢 + ledger #1 struck · this file. **Launch chain now waits on:** performer handle (ledger #3) · commentary register (ledger #4) · FL LLC + attorney consult that papers the subsidiary (ledger #10).
 

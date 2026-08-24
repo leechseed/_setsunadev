@@ -8,7 +8,7 @@ trunk: BLACK
 role: Main Character / Protagonist
 resolve: Change
 status: authoritative-locked / pipeline-minimum-viable
-blocking: Dramatica storyform extraction (~65 fields)
+blocking: none — storyform RULED 2026-08-24 ([[oxo-storyform]]); engine-verify = BOLO 7
 aliases: [Tori, Victoria Midnight, "Tori (Red Hills legacy)"]
 links:
   - "[[jebb-midnight]]"

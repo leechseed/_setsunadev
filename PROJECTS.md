@@ -21,7 +21,7 @@ Every project, ranked by how much development actually went into it. Volume = ch
 | 2 | **BVIPDS / LEECHSEED** — system architecture, SSOT | BLACK | ~580k | 25 | Feb→Jul | 🟢 live |
 | 3 | **Adult content venture** — brand, model, monetisation | ORANGE | ~504k | 16 | Feb→Aug | 🟢 live |
 | 4 | **Desire Profile** — sexuality research & profiling | ORANGE | ~492k | 19 | Feb→Aug | 🟢 live |
-| 5 | **Character system** — Dramatica × astrology × 12-layer | BLACK | ~489k | 8 | Feb→**Apr** | 🔴 **stalled** |
+| 5 | **Character system** — Dramatica × astrology × 12-layer | BLACK | ~489k | 8 | Feb→**Apr** | 🟢 **unstalled 8/24** |
 | 6 | **Social channels** — TikTok / YouTube growth | BOTH | ~432k | 25 | Feb→Aug | 🟢 live |
 | 7 | **Food ventures** — bakery, takeout, eating show | BLACK | ~411k | 17 | Mar→Jul | 🟡 cooling |
 | 8 | **ULTRASIN / GDP** — physique, gym build, training | ORANGE | ~400k | 11 | Feb→Aug | 🟢 live |
@@ -40,7 +40,7 @@ Volume measures thought already spent. Leverage measures what moves if you touch
 
 | Leverage | Project | Vol rank | Cost to unblock | What it releases |
 |---|---|---|---|---|
-| 1 | **Character system** | 5 🔴 | One afternoon in Dramatica | OXO, Tori, every downstream character. The whole BLACK trunk. |
+| 1 | **Character system** | 5 🟢 | ~~One afternoon in Dramatica~~ → 30-min verify pass (BOLO 7); **decisions closed 8/24** | OXO, Tori, every downstream character. The whole BLACK trunk. |
 | 2 | **Adult content venture** | 3 | One ruling — BVX↔Ultrasin firewall | Public launch. The entire money track. |
 | 3 | **OVEREXITOUT** | 1 | Nothing of its own | Waits on #1. Cannot be worked around. |
 | 4 | **BVIPDS / LEECHSEED** | 2 | Unblocked — absorbs work anytime | Supply line to #1. Never blocks others. |
@@ -63,7 +63,7 @@ Volume measures thought already spent. Leverage measures what moves if you touch
 
 ### 1 · OVEREXITOUT / The Outliers — 🟢
 The IP. Anchors: `THE OUTSIDERS SYSTEM` (304k), `MAIN SONNET` (192k). Six movements, tri-state Delta Coast Spiral, death-as-boot-sequence. Tori node built, L9 authored, IC candidate derived.
-**Waiting on:** the Dramatica storyform (~65 fields) · IC ruling. ~~The school fusion name~~ **RULED 2026-08-24: the Delta Coast Ultra School (DCUS).**
+**Waiting on:** the engine-verify pass only (BOLO 7). **All three former blocks RULED 2026-08-24:** the storyform ([_CANON_NODES/oxo-storyform.md](_CANON_NODES/oxo-storyform.md)) · IC = Anna Colson Conway · the school = the Delta Coast Ultra School (DCUS).
 → `_CANON_NODES/` · `_OXO_SCHOOL_HANDOFF/`
 
 ### 2 · BVIPDS / LEECHSEED — 🟢
@@ -80,9 +80,9 @@ Ultrasin. Registry v0.1 covers systems A–M. Fiscal anchor May 4. Exit gate: 2�
 The research spine. *Mating in Captivity* review (187k), D/s dynamics guide (96k), profiling questionnaires. **Six artifacts — the most of any project.** Erotic Range shipped from it.
 → `_CLAUDE_ARCHIVE_2026-08-15/projects/desire-profile/`
 
-### 5 · Character system — 🔴 **STALLED SINCE APRIL**
+### 5 · Character system — 🟢 **UNSTALLED 2026-08-24**
 Dramatica → Character Astrology → 12-Layer. Validated 11/11 layers, zero contradictions. 259k in one conversation.
-**This is the one that matters.** It went quiet in April and everything else depends on it. The block is a single afternoon with the Dramatica software.
+**The April stall broke 2026-08-24:** every storyform decision closed in-chat (`_CANON_NODES/oxo-storyform.md`) — dynamics, domains, IC (Anna Colson Conway), RS, schema. Residue is a ~30-min engine-verify pass (BOLO 7), zero decisions in it.
 → `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/`
 
 ### 6 · Social channels — 🟢
