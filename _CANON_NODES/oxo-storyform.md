@@ -7,8 +7,8 @@ series: The Outliers
 trunk: BLACK
 storyform_id: oxo_primary_v1
 storyform_version: 1.1
-status: ALL DECISIONS RULED 2026-08-24 — engine-verify pass pending (BOLO 7)
-blocking: none — residue is mechanical (Dramatica software data entry, ~30 min, zero decisions)
+status: ENGINE PASS RUN 2026-08-24 — one storyform locked, transcribed in §9; ⚠️ perspective-rotation conflict OPEN
+blocking: §9 conflict — the entered form rotates the four ruled domain assignments; Papi rules accept-as-canon vs 2-min redo
 links:
   - "[[victoria-midnight]]"
   - "[[anna-colson-conway]]"
@@ -56,7 +56,7 @@ ruled: 2026-08-24
 | Field | Value | Tag |
 |---|---|---|
 | mc_domain | Situation | LOCKED |
-| mc_concern | **The Future** — Issue (Interdiction) and UA (Destiny) both live in the Fate/Destiny/Prediction/Interdiction quad; the ingest's "Present" guess is superseded | DERIVED |
+| mc_concern | **The Past** — **CORRECTED 2026-08-24, engine pass:** the software's chart nests Interdiction under The Past, falsifying the "Future" derivation (and the ingest's "Present" guess before it). The thematic conflict Interdiction vs. Prediction is quad-internal and unaffected | CHART |
 | mc_issue | Interdiction | LOCKED |
 | mc_counterpoint | **Prediction** — Interdiction's dynamic pair | DERIVED |
 | mc_thematic_conflict | **Interdiction vs. Prediction** — the system forecasts her; she intervenes | DERIVED |
@@ -136,3 +136,51 @@ L12_DRAMATICA_EXTENDED:
 ## 8 · The verify pass — BOLO 7, the residue
 
 Every decision is made. What remains is data entry: open Dramatica, answer the eight dynamics + the domain/concern/issue/problem assignments above, confirm the engine resolves to **one storyform**, then transcribe into this doc's VERIFY and ENGINE cells: benchmarks, all sixteen signposts, the plot-appreciation table, and the OS/IC/RS deep cells. ~30 minutes, zero creative load. If the engine contradicts a VERIFY cell, the engine wins and the cell gets a dated correction here — the RULED and LOCKED cells are not negotiable inputs, they are the constraints the storyform must satisfy.
+
+**Pass run 2026-08-24 — result in §9.** One storyform reached; perspective-rotation conflict flagged there, open.
+
+---
+
+## 9 · ENGINE PASS — 2026-08-24, the form as entered (BOLO 7)
+
+**The engine resolved to ONE storyform.** Entered live by Papi in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `story_engine_settings.TXT` · `plot_sequence.TXT`.
+
+### ⚠️ CONFLICT FLAG — OPEN, awaiting Papi's ruling
+
+The entered form **rotates the four ruled perspective assignments**: every ruled thematic block landed in the right *class* but the wrong *throughline slot* (the "MC Dynamics"-labeled screen was the OS). Papi's standing order at the keyboard — **"we're sticking with what we got"** — is recorded; this flag stays until he strikes it (rotation becomes canon, superseding the 8/24 domain ruling) or the form is redone (~2 min from the saved `.dsf`: OS → Manipulation, MC → Situation, re-enter Past/Interdiction/Equity on the MC side, re-export).
+
+| Slot (engine) | Engine holds | The 8/24 ruling puts this content on |
+|---|---|---|
+| **OS** | Situation / The Past / Interdiction vs. Prediction / Equity | **MC — Tori** (LOCKED domain, issue, problem) |
+| **IC** | Manipulation / Developing a Plan | **OS — the Factions** (LOCKED; "Developing a Plan" was the Master Bible's own Concern gloss) |
+| **RS (MvI)** | Fixed Attitude / Memories | **IC — Anna** (DERIVED) |
+| **MC** | Activity / Understanding, Obtaining signposts | **RS — Tori↔Anna** (DERIVED; "Obtaining" was the expected Concern) |
+
+**What the pass validated regardless of frame:** Interdiction vs. Prediction rides with Equity→Inequity in Situation ✓ · Manipulation carries Developing a Plan ✓ · Fixed Attitude carries Memories ✓ · Activity carries the Obtaining/Understanding cluster ✓ · all eight dynamics + IC Resolve **Steadfast** ✓ · **mc_concern corrects to The Past** (chart fact, frame-independent — §3 amended).
+
+**LOCKED cells contradicted or untested in this frame:** mc_domain Situation · os_domain Manipulation · UA Destiny / CF Truth (no UA/CF is computed for a slot holding the OS — untestable until a redo) · Symptom/Response came out **Ability/Desire** against LOCKED Focus/Direction **Desire/Ability** — flipped independent of the rotation; retest on any redo.
+
+### Full transcription — engine output, engine's own labels
+
+**Dynamics:** MC Resolve **Change** · Growth **Stop** · Approach **Do-er** · PSS **Logical** · IC Resolve **Steadfast** · Driver **Action** · Limit **Optionlock** · Outcome **Failure** · Judgment **Good**
+
+| Appreciation | OS | IC | MC | RS (MvI) |
+|---|---|---|---|---|
+| Throughline | Situation | Manipulation | Activity | Fixed Attitude |
+| Concern | The Past | Developing a Plan | Understanding | Memories |
+| Issue (vs. counterpoint) | Interdiction vs. Prediction | Circumstances vs. Situation | Interpretation vs. Senses | Suspicion vs. Evidence |
+| Problem | Equity | Projection | Equity | Equity |
+| Solution | Inequity | Speculation | Inequity | Inequity |
+| Symptom | Ability | Ability | Order | Projection |
+| Response | Desire | Desire | Chaos | Speculation |
+| Catalyst / UA | Catalyst: Prediction | UA: Situation | UA: Senses | Catalyst: Evidence |
+| Inhibitor / CF | Inhibitor: Suspicion | CF: Interpretation | CF: Circumstances | Inhibitor: Interdiction |
+| Benchmark | The Present | Conceiving an Idea | Gathering Information | Contemplation |
+| Signpost 1 | The Past | Conceiving an Idea | Obtaining | Impulsive Responses |
+| Signpost 2 | The Present | Developing a Plan | Understanding | Innermost Desires |
+| Signpost 3 | How Things are Changing | Playing a Role | Doing | Contemplation |
+| Signpost 4 | The Future | Changing One's Nature | Gathering Information | Memories |
+
+**Plot appreciations:** Goal **The Past** · Consequence **Memories** · Cost **Developing a Plan** · Dividend **Understanding** · Requirement **The Present** · Prerequisite **Contemplation** · Precondition **Conceiving an Idea** · Forewarnings **Gathering Information**
+
+**Noted:** even rotated, the engine handed back the story's own poetry — Goal = The Past, Consequence = Memories: fail to reclaim the past and the memories are forfeit. The Master Bible's LOCKED cost ("Memories — personal history deleted for programming space") surfaces here as the **Consequence**, one slot over. Act-by-act variation quads per throughline live in `plot_sequence.TXT`.

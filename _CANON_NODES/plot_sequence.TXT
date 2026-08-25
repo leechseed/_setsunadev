@@ -1,0 +1,202 @@
+Plot Sequence Report for "Your Story"
+
+This report shows how dramatic tension makes itself manifest in a series of discrepancies between plot and theme, act by act.
+
+Information about the relationship between plot and theme comes in two forms in Dramatica.  When you begin creating your Storyform, you are presented with a "perfect world" view of your story in which plot is completely aligned with theme.  There is no discrepancy between the two, and therefore no dramatic tension.  This balanced view is most easily seen in the Theme Browser, available through a tile on the Dramatica Desktop.
+
+Once you arrive at a Storyform, however, you have input information about how that "perfect world" is twisted and warped by problems and conflicting perspectives.  As a result, plot no longer matches theme, and the two are often quite out of step with one another.
+
+As your story unfolds, it is the discrepancy between plot and theme that clues the audience in on the nature of the problem at the heart of your story and tells them much about the ways in which such a screwed up situation might be resolved.
+
+Use this report as a guideline to the kinds of thematic considerations which should be addressed in your plot, act by act for each of the four throughlines.  By developing this series of plot/theme discrepancies, the progress of your story will reflect the dramatic tension of the effort to unwind all the tentacles of the central problem.
+
+
+THE OVERALL STORYLINE
+
+The Overall Storyline deals with the kinds of activities the Overall characters will be engaged in, act by act.  In "Your Story," act one deals primarily with The Past, act two with The Present, act three with How Things are Changing and act four concentrates on The Future.  Each of these acts is made richer by the thematic topics that are explored within it.  In act one, "what has already happened" (The Past) is explored in terms of Work, Attraction, Repulsion, and Attempt.  Act two concentrates on "the current situation and circumstances" (The Present) and is explored in terms of Prediction, Interdiction, Fate, and Destiny.  Act three focuses on "the way things are going" (How Things are Changing) and is explored in terms of Openness, Delay, Choice, and Preconception.  And act four illustrates "what will happen or what will be" (The Future) and is explored in terms of Fact, Security, Threat, and Fantasy.
+
+
+_________________________
+
+THE MAIN VS. IMPACT STORYLINE
+
+The Main vs. Impact Storyline deals with the interactions that occur between the main and impact characters, act by act.  In "Your Story," act one deals primarily with Impulsive Responses, act two with Innermost Desires, act three with Contemplation and act four concentrates on Memories.  Each of these acts is made richer by the thematic topics that are explored within it.  In act one, "innate responses" (Impulsive Responses) is explored in terms of Approach, Self Interest, Morality, and Attitude.  Act two concentrates on "basic drives and desires" (Innermost Desires) and is explored in terms of Wisdom, Skill, Experience, and Enlightenment.  Act three focuses on "present considerations" (Contemplation) and is explored in terms of Prerequisites, Strategy, Analysis, and Preconditions.  And act four illustrates "recollections" (Memories) and is explored in terms of Conditioning, Senses, Interpretation, and Instinct.
+
+
+_________________________
+
+THE MAIN CHARACTER THROUGHLINE
+
+The Main Character Storyline deals with the areas that most concern the main character, act by act.  In "Your Story," act one deals primarily with Obtaining, act two with Understanding, act three with Doing and act four concentrates on Gathering Information.  Each of these acts is made richer by the thematic topics that are explored within it.  In act one, "achieving or possessing something" (Obtaining) is explored in terms of Permission, Need, Expediency, and Deficiency.  Act two concentrates on "appreciating the meaning of something" (Understanding) and is explored in terms of Situation, Circumstances, State of Being, and Sense of Self.  Act three focuses on "engaging in a physical activity" (Doing) and is explored in terms of Knowledge, Ability, Desire, and Thought.  And act four illustrates "gathering information or experience" (Gathering Information) and is explored in terms of Rationalization, Commitment, Responsibility, and Obligation.
+
+
+_________________________
+
+THE IMPACT CHARACTER THROUGHLINE
+
+The Overall Character Storyline deals with the areas most affected by the impact character, act by act.  In "Your Story," act one deals primarily with Conceiving an Idea, act two with Developing a Plan, act three with Playing a Role and act four concentrates on Changing One's Nature.  Each of these acts is made richer by the thematic topics that are explored within it.  In act one, "coming up with an idea" (Conceiving an Idea) is explored in terms of Evidence, Suspicion, Falsehood, and Truth.  Act two concentrates on "visualizing how an existing idea might be implemented" (Developing a Plan) and is explored in terms of Value, Confidence, Worry, and Worth.  Act three focuses on "temporarily adopting a lifestyle" (Playing a Role) and is explored in terms of Closure, Hope, Dream, and Denial.  And act four illustrates "transforming one's nature" (Changing One's Nature) and is explored in terms of Investigation, Appraisal, Reappraisal, and Doubt.
+
+______________________________
+
+VOCABULARY:
+
+Ability:  being suited to handle a task; the innate capacity to do or be
+
+Analysis:  evaluation of the situation and/or circumstances
+
+Appraisal:  a limited initial assessment
+
+Approach:  one's methodology of doing or being
+
+Attempt:  applying oneself to something not known to be within one's ability
+
+Attitude:  demeanor or outlook
+
+Attraction:  drawing or being drawn to something
+
+Changing One's Nature:  transforming one's nature
+
+Choice:  making a decision
+
+Circumstances:  an emotional assessment of one's environment
+
+Closure:  bringing something to an end or to completion
+
+Commitment:  a decision to stick with something regardless of the consequences
+
+Conceiving an Idea:  coming up with an idea
+
+Conditioning:  responses based on experience or training
+
+Confidence:  belief in the accuracy of expectations
+
+Contemplation:  present considerations
+
+Deficiency:  appraisal of what is lacking
+
+Delay:  putting off until later
+
+Denial:  the refusal to admit to oneself or others that a previously held view is no longer true
+
+Desire:  the motivation toward something better
+
+Destiny:  the future path an individual must take
+
+Developing a Plan:  visualizing how an existing idea might be implemented
+
+Doing:  engaging in a physical activity
+
+Doubt:  questioning validity without investigating to be sure
+
+Dream:  a desired future that does not fall within reasonable expectations
+
+Enlightenment:  an understanding that transcends knowledge
+
+Evidence:  information supporting a belief
+
+Expediency:  most efficient course considering repercussions
+
+Experience:  the gaining of familiarity
+
+Fact:  belief in something real
+
+Falsehood:  that which has been shown to be erroneous
+
+Fantasy:  belief in something unreal
+
+Fate:  a future situation that will befall an individual
+
+Gathering Information:  gathering information or experience
+
+Hope:  a desired future that falls within reasonable expectations
+
+How Things are Changing:  the way things are going
+
+Impulsive Responses:  innate responses
+
+Innermost Desires:  basic drives and desires
+
+Instinct:  intrinsic unconditioned responses
+
+Interdiction:  an effort to change a predetermined course
+
+Interpretation:  determination of possible meaning
+
+Investigation:  gathering evidence to resolve questions of validity
+
+Knowledge:  that which one holds to be true
+
+Memories:  recollections
+
+Morality:  doing or being based on what is best for others
+
+Need:  that which is required
+
+Obligation:  accepting a task or situation in exchange for someone's earlier or potential favors
+
+Obtaining:  achieving or possessing something
+
+Openness:  willingness to reevaluate
+
+Permission:  what is allowed
+
+Playing a Role:  temporarily adopting a lifestyle
+
+Preconception:  adhering to a previous held view; unwillingness to reevaluate
+
+Preconditions:  restrictions imposed on an effort
+
+Prediction:  a predetermination of a future state of affairs
+
+Prerequisites:  the essential preliminaries that must be met
+
+Rationalization:  an alternative explanation used to mask the real reason
+
+Reappraisal:  reconsideration of a previous determination
+
+Repulsion:  pushing or being pushed away from
+
+Responsibility:  taking, accepting, or assuming control to the exclusion of others
+
+Security:  an evaluation of one's defenses and protections
+
+Self Interest:  doing or being based on what is best for oneself
+
+Sense of Self:  one's perception of oneself
+
+Senses:  sensory observations
+
+Situation:  a logistic assessment of one's environment
+
+Skill:  aptitude or innate ability
+
+State of Being:  one's true nature
+
+Strategy:  a plan to achieve one's purpose or a plan of response
+
+Suspicion:  questioning or forming a belief based on new evidence
+
+The Future:  what will happen or what will be
+
+The Past:  what has already happened
+
+The Present:  the current situation and circumstances
+
+Thought:  the process of consideration
+
+Threat:  an evaluation of potential negative forces
+
+Truth:  that which is actually correct
+
+Understanding:  appreciating the meaning of something
+
+Value:  the objective usefulness of something in general
+
+Wisdom:  understanding how to apply Knowledge
+
+Work:  applying oneself to something known to be within one's ability
+
+Worry:  concern for the future
+
+Worth:  a rating of usefulness or desirability to oneself personally
+

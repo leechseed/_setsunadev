@@ -1,0 +1,189 @@
+STORY ENGINE SETTINGS:  "Your Story"
+
+CHARACTER DYNAMICS:
+MC RESOLVE:  Change
+MC GROWTH:   Stop
+MC APPROACH:  Do-er
+MC PROBLEM-SOLVING STYLE:  Logical
+IC RESOLVE:  Steadfast
+
+PLOT DYNAMICS:
+DRIVER:  Action
+LIMIT:  Optionlock
+OUTCOME:  Failure
+JUDGMENT:  Good
+
+OVERALL STORY
+(The Overall Story)
+THROUGHLINE:  Situation
+CONCERN:  The Past
+ISSUE:  Interdiction vs. Prediction
+PROBLEM:  Equity
+SOLUTION:  Inequity
+SYMPTOM:  Ability
+RESPONSE:  Desire
+CATALYST:  Prediction
+INHIBITOR:  Suspicion
+BENCHMARK:  The Present
+SIGNPOST 1:  The Past
+SIGNPOST 2:  The Present
+SIGNPOST 3:  How Things are Changing
+SIGNPOST 4:  The Future
+
+IMPACT CHARACTER
+(the Impact Character)
+THROUGHLINE:  Manipulation
+CONCERN:  Developing a Plan
+ISSUE:  Circumstances vs. Situation
+PROBLEM:  Projection
+SOLUTION:  Speculation
+SYMPTOM:  Ability
+RESPONSE:  Desire
+UNIQUE ABILITY:  Situation
+CRITICAL FLAW:  Interpretation
+BENCHMARK:  Conceiving an Idea
+SIGNPOST 1:  Conceiving an Idea
+SIGNPOST 2:  Developing a Plan
+SIGNPOST 3:  Playing a Role
+SIGNPOST 4:  Changing One's Nature
+
+MAIN CHARACTER
+(the Main Character)
+THROUGHLINE:  Activity
+CONCERN:  Understanding
+ISSUE:  Interpretation vs. Senses
+PROBLEM:  Equity
+SOLUTION:  Inequity
+SYMPTOM:  Order
+RESPONSE:  Chaos
+UNIQUE ABILITY:  Senses
+CRITICAL FLAW:  Circumstances
+BENCHMARK:  Gathering Information
+SIGNPOST 1:  Obtaining
+SIGNPOST 2:  Understanding
+SIGNPOST 3:  Doing
+SIGNPOST 4:  Gathering Information
+
+MAIN VS. IMPACT STORY
+(The Main vs. Impact Story)
+THROUGHLINE:  Fixed Attitude
+CONCERN:  Memories
+ISSUE:  Suspicion vs. Evidence
+PROBLEM:  Equity
+SOLUTION:  Inequity
+SYMPTOM:  Projection
+RESPONSE:  Speculation
+CATALYST:  Evidence
+INHIBITOR:  Interdiction
+BENCHMARK:  Contemplation
+SIGNPOST 1:  Impulsive Responses
+SIGNPOST 2:  Innermost Desires
+SIGNPOST 3:  Contemplation
+SIGNPOST 4:  Memories
+
+ADDITIONAL STORY POINTS
+
+GOAL:  The Past
+CONSEQUENCE:  Memories
+COST:  Developing a Plan
+DIVIDEND:  Understanding
+
+REQUIREMENT:  The Present
+PREREQUISITE:  Contemplation
+PRECONDITION:  Conceiving an Idea
+FOREWARNINGS:  Gathering Information
+
+______________________________
+
+VOCABULARY:
+
+Ability:  being suited to handle a task; the innate capacity to do or be
+
+Action:  in terms of the Overall plot, actions force decisions
+
+Activity:  an activity or endeavor
+
+Change:  the Main Character changes her essential nature while attempting to solve the problem
+
+Changing One's Nature:  transforming one's nature
+
+Chaos:  random change or a lack of order
+
+Circumstances:  an emotional assessment of one's environment
+
+Conceiving an Idea:  coming up with an idea
+
+Contemplation:  present considerations
+
+Desire:  the motivation toward something better
+
+Developing a Plan:  visualizing how an existing idea might be implemented
+
+Do-er:  the Main Character looks for a physical solution to her problem
+
+Doing:  engaging in a physical activity
+
+Equity:  a balance, fairness, or stability
+
+Evidence:  information supporting a belief
+
+Failure:  the original goal is not achieved
+
+Fixed Attitude:  a fixed attitude or outlook
+
+Gathering Information:  gathering information or experience
+
+Good:  the Main Character ultimately succeeds in resolving her personal problems
+
+How Things are Changing:  the way things are going
+
+Impulsive Responses:  innate responses
+
+Inequity:  an unbalance, unfairness, or lack or equality
+
+Innermost Desires:  basic drives and desires
+
+Interdiction:  an effort to change a predetermined course
+
+Interpretation:  determination of possible meaning
+
+Logical:  the Main Character uses inherently logical (linear) problem solving techniques
+
+Manipulation:  a manner of thinking or demeanor
+
+Memories:  recollections
+
+Obtaining:  achieving or possessing something
+
+Optionlock:  the story climax occurs because all options have been exhausted
+
+Order:  a patterned arrangement
+
+Playing a Role:  temporarily adopting a lifestyle
+
+Prediction:  a predetermination of a future state of affairs
+
+Projection:  an extension of probability into the future
+
+Senses:  sensory observations
+
+Situation:  a situation or environment
+
+Situation:  a logistic assessment of one's environment
+
+Speculation:  an extension of possibilities into the future
+
+Steadfast:  the Main Character ultimately retains her essential nature
+
+Stop:  regarding the Main Character, the audience is waiting for something to end
+
+Suspicion:  questioning or forming a belief based on new evidence
+
+The Future:  what will happen or what will be
+
+The Past:  what has already happened
+
+The Present:  the current situation and circumstances
+
+Understanding:  appreciating the meaning of something
+
