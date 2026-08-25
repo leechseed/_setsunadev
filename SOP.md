@@ -50,6 +50,7 @@ Quick reference. Full definitions in the sections below.
 | **IV** | **The BOLO board** | Active BOLOs + the PMCS readiness table | BOLO.md |
 | **V** | **Blocked on you** | Numbered decisions in priority order | STATE.md |
 | **VI** | **The leverage line** *(provisional rename pending: "The Main Effort" — MCDP 1's term for the one point everything else supports)* | One line naming the single highest-leverage next action | derived |
+| **VII** | **The SOI card** *(added by order 2026-08-25)* | The proword shortlist closes every board — commands one-per-bullet with a clause of meaning, board nouns on one line | §0 |
 
 **Trunk discipline — coded 2026-08-21, non-negotiable.** Every item on every block carries its trunk: **BLACK** (creative, IP, systems) · **ORANGE** (venture, body, sexuality) · **OPERATOR** (PMCS — the operator is equipment). The board is never delivered trunk-blind. This is how Papi's head sorts; the protocol upholds it everywhere, always.
 
