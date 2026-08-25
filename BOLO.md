@@ -2,7 +2,7 @@
 title: BOLO — the watchlist
 type: tasking board
 status: living document — capture-fast, sit rep Block IV
-updated: 2026-08-24
+updated: 2026-08-25
 protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is spoken
 ---
 
@@ -25,6 +25,7 @@ protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is
 | 7 | ~~**Dramatica engine-verify pass** [BLACK] — enter the ruled storyform, confirm it resolves to ONE storyform, transcribe the ENGINE/VERIFY cells back~~ | 2026-08-24 | ✅ **done 2026-08-24** — ONE storyform, transcribed ([oxo-storyform.md](_CANON_NODES/oxo-storyform.md) §9); mc_concern → **The Past**; **flag struck same session: the rotated engine form RULED canon**, superseding the morning domain assignments |
 | 8 | **GitHub Support purge ticket** [BLACK/ORANGE, strip follow-on] — file from the account owner: ask GitHub to run garbage collection on `leechseed/_setsunadev` and purge cached views/unreachable objects from the pre-strip history (support.github.com → sensitive-data removal). Old SHAs already fail to resolve via the API; the ticket makes it guaranteed instead of eventual | 2026-08-24 | 🟡 open — Papi files (owner-only action) |
 | 9 | **Google outdated-content removal** [BLACK/ORANGE, strip follow-on] — run removed/changed repo URLs through search.google.com/search-console/remove-outdated-content so cached snippets of the pre-strip pages drop out of search | 2026-08-24 | 🟡 open |
+| 10 | **Bongobabe v0 build** [ORANGE] — the clicker: one girl · click + idle · toy-size ladder + one act track + cosmetics · paper-doll chibi · single HTML file (Erotic Range pattern). First swing = the art-style test (base doll + three layers, prove the rig). Registry: `Desktop\BONGOBABE\BONGOBABE.md` — **project home is outside this repo, keep it that way** | 2026-08-25 | 🟡 staged — fires on Papi's go |
 
 Completed BOLOs get a dated strike-through, then move to the bottom under **Done** on the next pass.
 

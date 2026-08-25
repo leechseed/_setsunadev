@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-24
+updated: 2026-08-25
 read_first: true
 ---
 
@@ -94,6 +94,7 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **Primed Protocol** | ✅ Documented today. Ledger item 8 closed, §H 🟡→🟢. | `Desktop/ULTRASIN-primed-protocol.md` |
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
 | **Erotic Range** | ✅ Live, phone-ready, two profiles, local-only. | `Desktop/erotic-range.html` · [artifact](https://claude.ai/code/artifact/c78a1e6a-1f43-467b-a74e-7e7e66df41c1) |
+| **Bongobabe** | ✅ **Stood up 2026-08-25.** NSFW clicker/idle companion (Bongo Cat × e-girl: input-reactive pet, clicks → part upgrades). Registry v0.1 written; BOLO 10 staged for v0 build; first swing = art-style test. | `Desktop\BONGOBABE\` — **outside this repo**, local git, no remote |
 | **Taxonomic-aesthetic practice** | Practice-first. Engine-vs-voice fork asked in June, never answered. | Registry §L |
 | **Manufacturer watchlist** | ✅ Stood up 2026-08-21. Dildo/toy makers to track, sourced via X. 11 entries — indie artisan → mass-market → machines. | [ULTRASIN-mfg-watchlist.md](ULTRASIN-mfg-watchlist.md) |
 | **Resource watchlist** | ✅ Stood up 2026-08-21. Industry education/tools/advocacy, sourced via X. First entry: SexWork CEO (feeds §N). | [ULTRASIN-resource-watchlist.md](ULTRASIN-resource-watchlist.md) |
@@ -101,6 +102,11 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-25 (the h-game session — Bongobabe stood up)
+
+- **Bongobabe RULED + stood up as a total project** — the NSFW clicker/idle companion: Bongo Cat × e-girl, input-reactive pet, clicks → upgrades (toy-size ladder · act tracks · cosmetics). Name ruled (retired bench: Bongoguner · BongoWifu). Home: `Desktop\BONGOBABE\` — **outside the public repo**, local git, no remote. Registry v0.1 carries concept, loop, paper-doll chibi art doctrine, browser-v0/desktop-pet-v1 fork, six-item open-decisions ledger. **BOLO 10 staged** for the v0 build.
+- **The h-game ideation board banked — eleven concepts, one ruled.** The other ten (BOOTYCAMP · The Trip That Never Happened · Circuit · The Field Guide · Rig · The Workshop · The Review Desk · Inheritance · The Archive · Field Month, bench: MAsT chapter sim) recorded in the session note, keepers unruled.
 
 ## ✅ Moved 2026-08-24 (the engine session — BOLO 7 · the rotation ruling · #3 executed)
 
