@@ -31,6 +31,8 @@ protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is
 | 13 | **Corpus intake — favorites pull** [ORANGE, feeds the taxonomy engine] — IG saved-posts pull into the corpus folder (account + URL + paths in the `_PRIVATE/` design doc). gallery-dl 1.32.9 · Firefox cookies (verified live) · `archive.db` incremental · `--sleep 2-6` · videos off · metadata sidecars on. Full pull chosen over the 3/21 date filter: saved lists carry post-date not save-date — pipeline dedupe absorbs the overlap | 2026-08-25 | 🟢 **RELAUNCHED 8/25 (pass 2)** — pass 1 stopped at session end 19:07 with 775 images + 772 sidecars in; `archive.db` resuming incrementally; log: `_pull.log` in the corpus folder |
 | 14 | **The taxonomy engine — build** [ORANGE, feeds BLACK at girl-gen] — Stage 1 hygiene + lattice derivation + tagging passes per the boresighted design. **19 rulings locked 8/25**, full design: `_PRIVATE/ULTRASIN-taxonomy-engine-DRAFT.md` (gitignored). Project name unruled | 2026-08-25 | 🟡 staged — fires on Papi's clear-to-build (boresight chain open) |
 
+| 15 | **BVX multimedia ingestion system** [BLACK] — spoken want: a multimedia ingestion system for the BVX reference system (media beyond books). Deferred mid-sentence by Papi — the story-tree boresight fires first. Specs unstated; captured as seed | 2026-08-25 | 🔵 seed — resumes on Papi's call |
+
 Completed BOLOs get a dated strike-through, then move to the bottom under **Done** on the next pass.
 
 ## PMCS — Preventive Maintenance Checks & Services
