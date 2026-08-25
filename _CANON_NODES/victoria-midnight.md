@@ -8,7 +8,7 @@ trunk: BLACK
 role: Main Character / Protagonist
 resolve: Change
 status: authoritative-locked / pipeline-minimum-viable
-blocking: none — storyform RULED 2026-08-24 ([[oxo-storyform]]); engine-verify = BOLO 7
+blocking: none — storyform CANON 2026-08-24 ([[oxo-storyform]] §9, BOLO 7 done). ⚠️ The §9 rotation supersedes this node's Structure-table Dramatica cells (MC now Activity/Understanding) — reconciliation pending
 aliases: [Tori, Victoria Midnight, "Tori (Red Hills legacy)"]
 links:
   - "[[jebb-midnight]]"
@@ -194,7 +194,7 @@ Missing: 9 storyform dynamics (driver, goal, consequence, cost, dividend, forewa
 
 1. **Extract the storyform.** Sit down with Dramatica, open OVEREXITOUT, pull the ~65 fields. Everything downstream unblocks. *This is the single highest-leverage task in BLACK.*
 2. **Who is the Impact Character?** ⬅ **candidate derived: [[anna-colson-conway]].** McKee's cast-design method ([[BVX.0064]]) holds the IC must embody, as a lived and *successful* premise, the thing the MC must accept. Tori's Solution is **Inequity** — and Colson ascends through institutional power with no fairness premise at all. Movement 3 is simultaneously "Anna Colson's ascent begins" and Tori's rot: two women, same institution, opposite premises, running at once. Riley sits on the Truth axis and Quinn on Legibility — both strong first-circle, wrong axle for IC. Jebb is pre-story. **Needs your ruling before the 17 IC fields get filled.**
-3. **Resolve `motivation_element`.** The Vertical Slice holds `Equity` (MC Problem); the auto-generated L12 block would produce `Consider` (Motivation quad primary). Recommendation on file: rename the core field to `mc_problem_element` and move the quad primary into `L12_DRAMATICA_EXTENDED`. Unresolved — and the TRUTH_VULNERABILITY flag trigger depends on it.
+3. ~~**Resolve `motivation_element`.**~~ **RESOLVED 2026-08-24** — #4 ruled, #3 executed: core field renamed `mc_problem_element` (holds the MC Problem, Equity); quad primary relocated to `L12_DRAMATICA_EXTENDED.motivation_quad`. Propagated: vertical slice · integration protocol · ingest template (both variable registries already carried it). TRUTH_VULNERABILITY now fires off `mc_problem_element`.
 4. **Tori ↔ Quinn.** Both are Outliers; the Bishops rule the Core; Quinn is "The Reason Instrument." No documented relation. Given Quinn's surname, this is probably load-bearing.
 5. **The school fusion** ([[inner-spiral-academy]] / [[red-hills-academy]]) governs Movements 2–4 — her three densest movements. Unresolved school = unresolved Tori.
 6. **She attends a school with no teachers.** Zero named faculty exist in current canon. Net-new writing required, or import the Red Hills faculty-politics layer.

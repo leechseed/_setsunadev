@@ -30,7 +30,9 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 | # | Decision | Unblocks |
 |---|---|---|
-| 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT — **now also carries the `motivation_element` → `mc_problem_element` rename (ruled #4)** | Stops the character schema forking |
+| — | *(empty — no standing decisions)* | |
+
+> **#3 (schema propagation) EXECUTED 2026-08-24 (engine session):** `armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition` · Expressive Range + the `mc_problem_element` rename written across the vertical slice, integration protocol, ingest template, and both variable registries. **The Blocked table is empty for the first time.**
 
 > **#0 (repo exposure) RULED + EXECUTED 2026-08-24: strip in place, repo stays public.** History rewritten (all 329 commits), force-pushed same session — record in the STRIPPED IN PLACE section below. Follow-ons = BOLO 8 · 9.
 >
@@ -78,8 +80,8 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 | System | State | Where |
 |---|---|---|
-| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24: storyform RULED · IC = Anna Colson Conway · school = DCUS.** Verify pass = BOLO 7. | `_CANON_NODES/` |
-| **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **UNSTALLED 8/24** — storyform decisions closed; Tori reaches full LOCKED after BOLO 7 + the #3 propagation. | `ShroomsQ/_CANON/_SSOT/02_*` |
+| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24 evening: storyform CANON v2.0 (§9 rotation ruled, BOLO 7 done) · IC = Anna · school = DCUS.** Ripple: Tori node's Structure table pre-rotation, reconciliation pending. | `_CANON_NODES/` |
+| **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **8/24 evening: BOLO 7 done + #3 propagated — the schema fork is closed.** Remaining: reconcile Tori's Dramatica cells to the §9 rotation; armor_index scale-class. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. 1,106 sources indexed, classifier 99%. Next ID `BVX.1107`. | `_0.1_BVX_LEARN/_meta/` |
 | **Leechseed Manifesto** | 🔴 **Found, not in canon.** 10 docs, May 2025, buried in imported-Joplin. | `OVER_EXIT_OUT_OBSIDIAN/.../manifesto/` |
 | **L2b MORPHOLOGY** | Designed this session, unspecced. Frame → Tissue → **Condition** → Line → Archetype. | — |
@@ -99,6 +101,12 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-24 (the engine session — BOLO 7 · the rotation ruling · #3 executed)
+
+- **BOLO 7 RUN — the engine resolved to ONE storyform**, every cell transcribed: [oxo-storyform.md](_CANON_NODES/oxo-storyform.md) §9. Exports archived beside it (`oxo-storyform-engine.dsf` + two report TXTs). **`mc_concern` corrected to The Past** — the chart nests Interdiction under Past; Interdiction vs. Prediction meaning untouched.
+- **THE ROTATION RULED CANON — flag struck same session.** The form as entered rotates the morning's four domain assignments: **OS = Situation/The Past · MC (Tori) = Activity/Understanding · IC (Anna) = Manipulation/Developing a Plan · RS = Fixed Attitude/Memories.** Supersedes the morning domain ruling; storyform doc now v2.0. Engine's own poetry: Goal = The Past, Consequence = Memories. **Ripple pending:** victoria-midnight.md's Structure table still shows the pre-rotation frame (flagged in its frontmatter); the authoritative Dramatica ingest + handoff sources likewise historical.
+- **#3 EXECUTED — the schema propagation, the last blocker cleared.** L9 v2 fields (`armor_index` 8 · `satisfaction_cycle_truncation` reach · `erotic_safety_precondition` control) + `Expressive Range` derived stat (Tori: 2) + the `mc_problem_element` rename, written across: vertical slice v1.1.0 · integration protocol v1.1.0 · ingest template v1.1.0 · both variable registries v1.1.0 (they already carried the rename from Phase 4). TRUTH_VULNERABILITY fires off `mc_problem_element` everywhere. Residue, minor: armor_index Base-60 scale-class assignment pending. Note: the vertical slice file carries a **read-only flag** — cleared for the edit, restored after.
 
 ## ✅ Moved 2026-08-24 (the strip session — #0 ruled + executed)
 

@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_03_character_systems category: character_systems version: 1.0.0 last_updated: 2026-02-17 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Establishes the authoritative standard for the 12-Layer Character Database Vertical Slice, including tier structure, numeric variable definitions, derived statistic formulas, and flag trigger conditions." dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]"]
+## type: ssot_03_character_systems category: character_systems version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Establishes the authoritative standard for the 12-Layer Character Database Vertical Slice, including tier structure, numeric variable definitions, derived statistic formulas, and flag trigger conditions." dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]"]
 ---
 # 📐 ssot_03_character_systems_vertical_slice
 
@@ -56,7 +56,7 @@ Each layer governs one and only one domain. Overlap between layers constitutes a
 
 **L8 — IMPRINT:** Formative emotional conditioning. Attachment architecture, emotional range, and operational belief patterns established prior to story entry.
 
-**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, and intimacy mode.
+**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode.
 
 **L10 — SHADOW:** Repressed, projected, and denied content. High SHADOW values generate active disadvantage clusters and modify stress-state behavior.
 
@@ -78,8 +78,11 @@ Derived statistics are computed columns. They are not entered — they are calcu
 |Stress Threshold|`WILL - WOUND`|
 |Collapse Risk|`(WOUND + SHADOW.shadow_density) / 2`|
 |Truth Exposure Index|`SOCIAL + (10 - EROS.shame_index)`|
+|Expressive Range|`10 - EROS.armor_index`|
 
 **Truth Exposure Index** is the primary systemic legibility metric. A score above 15 indicates a character who cannot effectively manage their own signal visibility. This metric directly feeds antagonist targeting logic and systemic response escalation.
+
+**Expressive Range** (added 2026-08-24, L9 v2 propagation) is the deliberate-signal metric. TEI measures what leaks; Expressive Range measures what the character can intentionally send. Low Expressive Range with high TEI is the armored-but-readable paradox: the system gets everything and the character gets nothing out.
 
 ---
 
@@ -210,16 +213,19 @@ Her primary attachment object was her brother. He functioned as navigator to her
 
 ---
 
-**L9 EROS**
+**L9 EROS** — v2, AUTHORED 2026-08-15 · propagated 2026-08-24
 
 |Variable|Value|
 |---|---|
 |`erotic_blueprint_type`|kinesthetic|
 |`desire_vector`|3|
 |`shame_index`|2|
+|`armor_index`|8|
+|`satisfaction_cycle_truncation`|reach|
+|`erotic_safety_precondition`|control|
 |`intimacy_mode`|parallel_presence|
 
-Source: Inferred from aesthetic documentation ("beauty that is earned, not curated; motion under pressure, never ornamental"). This layer requires a follow-up extraction query: `Victoria Midnight sexuality intimacy desire relationships OVEREXITOUT`. Current values stand until contradicted by canonical source.
+Source: AUTHORED against catalogued sources (PSY.01 Walker · MSX.17 Perel · PSY.04 Rehor & Schiffman) — full derivation in [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md), which supersedes the v1 INFERRED block. The load-bearing distinction: low shame with high armor. She cannot be shamed into compliance, so the system reads her instead.
 
 ---
 
@@ -255,7 +261,7 @@ Her Destiny vector points toward a specific disillusionment that becomes precisi
 |Variable|Value|
 |---|---|
 |`dramatica_archetype`|Protagonist|
-|`motivation_element`|Equity|
+|`mc_problem_element`|Equity|
 |`methodology_element`|Proaction|
 |`evaluation_element`|Result|
 |`purpose_element`|Actuality|
@@ -264,6 +270,8 @@ Her Destiny vector points toward a specific disillusionment that becomes precisi
 |`story_judgement`|Good|
 |`limit_type`|Optionlock|
 |`resolve`|Change|
+
+*Renamed 2026-08-24 (STATE #4 ruling): `motivation_element` → `mc_problem_element`, holding the MC Problem. The Motivation-quad primary (`Consider`) relocates to `L12_DRAMATICA_EXTENDED.motivation_quad`.*
 
 The Optionlock fires because her wound and resistance index combination systematically eliminates exits. The Truth-is-Enough Veto, the Heroic Recognition Veto, and the Reset Veto are narrative invariants that correspond directly to flag logic — each veto closes one option class permanently.
 
@@ -279,6 +287,7 @@ The Optionlock fires because her wound and resistance index combination systemat
 |Stress Threshold|`14 - 8`|**6**|
 |Collapse Risk|`(8 + 7) / 2`|**8**|
 |Truth Exposure Index|`10 + (10 - 2)`|**18**|
+|Expressive Range|`10 - 8`|**2**|
 
 Truth Exposure Index 18 is the primary diagnostic value. It quantifies why the Ban activates against her and not against other characters with equivalent capability profiles. She is maximally legible to the system because she carries low shame and average social masking. The system cannot categorize a signal it can read completely and that refuses to self-regulate.
 
@@ -296,7 +305,7 @@ She routes causal responsibility for the crash toward systemic injustice. "The i
 
 **FLAG: TRUTH_VULNERABILITY — ACTIVE**
 
-Trigger: `SOCIAL < 12 AND FUNCTION.motivation_element = "Equity" AND SHADOW.shadow_density > 6`
+Trigger: `SOCIAL < 12 AND FUNCTION.mc_problem_element = "Equity" AND SHADOW.shadow_density > 6`
 
 When she speaks truth, wound content surfaces through her social interface. She does not code-switch, does not manage her signal, does not perform legibility. The Ban is the system's response to this flag firing in a public context. Truth is not her virtue — it is her exploit vector.
 
@@ -364,8 +373,11 @@ L9_EROS:
   erotic_blueprint_type: kinesthetic
   desire_vector: 3
   shame_index: 2
+  armor_index: 8
+  satisfaction_cycle_truncation: reach
+  erotic_safety_precondition: control
   intimacy_mode: parallel_presence
-  source_confidence: [INFERRED]
+  source_confidence: canonical   # AUTHORED 2026-08-15 — victoria-midnight-L9-eros v2
 
 L10_SHADOW:
   shadow_density: 7
@@ -382,7 +394,7 @@ L11_DESTINY:
 
 L12_FUNCTION:
   dramatica_archetype: Protagonist
-  motivation_element: Equity
+  mc_problem_element: Equity      # renamed from motivation_element 2026-08-24 (STATE #4)
   methodology_element: Proaction
   evaluation_element: Result
   purpose_element: Actuality
@@ -392,6 +404,9 @@ L12_FUNCTION:
   limit_type: Optionlock
   resolve: Change
 
+L12_DRAMATICA_EXTENDED:
+  motivation_quad: [Consider, Pursuit]   # quad primary relocated here 2026-08-24 (STATE #4)
+
 DERIVED:
   basic_damage_resistance: 10
   social_legibility: 8
@@ -399,6 +414,7 @@ DERIVED:
   stress_threshold: 6
   collapse_risk: 8
   truth_exposure_index: 18
+  expressive_range: 2
 
 FLAGS:
   SHADOW_DENIAL: ACTIVE
@@ -415,3 +431,4 @@ FLAGS:
 |Version|Date|Changes|
 |:--|:--|:--|
 |1.0.0|2026-02-17|Initial vertical slice protocol with Victoria Midnight as canonical example.|
+|1.1.0|2026-08-24|STATE #3 executed: L9 v2 propagation (`armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition`; L9 AUTHORED via victoria-midnight-L9-eros). Expressive Range derived stat added. L12 rename `motivation_element` → `mc_problem_element` (STATE #4 ruling); `motivation_quad` → L12_DRAMATICA_EXTENDED. TRUTH_VULNERABILITY trigger updated.|

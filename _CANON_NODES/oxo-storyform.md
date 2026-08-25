@@ -6,9 +6,9 @@ ip: OVEREXITOUT
 series: The Outliers
 trunk: BLACK
 storyform_id: oxo_primary_v1
-storyform_version: 1.1
-status: ENGINE PASS RUN 2026-08-24 — one storyform locked, transcribed in §9; ⚠️ perspective-rotation conflict OPEN
-blocking: §9 conflict — the entered form rotates the four ruled domain assignments; Papi rules accept-as-canon vs 2-min redo
+storyform_version: 2.0
+status: CANON — RULED 2026-08-24: flag struck, the §9 engine form IS the storyform; the rotation supersedes the morning domain assignments
+blocking: none
 links:
   - "[[victoria-midnight]]"
   - "[[anna-colson-conway]]"
@@ -42,14 +42,18 @@ ruled: 2026-08-24
 
 **The shape:** Change · Stop · Do-er · Linear · Action · Optionlock · **Failure/Good — the Personal Triumph ending.** The system wins the board; Tori wins herself. This is the Grand Argument the whole series makes.
 
-## 2 · Throughline Domains — all four forced
+## 2 · Throughline Domains — SUPERSEDED 2026-08-24 by the §9 ruling
 
-| Throughline | Domain | Tag |
+**RULED 2026-08-24 (evening, flag struck): the engine form as entered is canon.** The four perspectives now sit:
+
+| Throughline | Domain (canon, §9) | Superseded morning value |
 |---|---|---|
-| MC (Tori) | **Situation** | LOCKED |
-| IC (Anna) | **Fixed Attitude** | DERIVED — MC in Situation forces IC into its dynamic-pair class. The Administration doc's "Fixed Attitude" label was this wall, unnamed |
-| OS (the Factions) | **Manipulation** | LOCKED (Master Bible §5) |
-| RS (Tori↔Anna) | **Activity** | DERIVED — OS in Manipulation forces RS into Activity |
+| MC (Tori) | **Activity** — Concern: Understanding | ~~Situation~~ |
+| IC (Anna) | **Manipulation** — Concern: Developing a Plan | ~~Fixed Attitude~~ |
+| OS (the Factions) | **Situation** — Concern: The Past | ~~Manipulation~~ |
+| RS (Tori↔Anna) | **Fixed Attitude** — Concern: Memories | ~~Activity~~ |
+
+§§3–6 below record the pre-rotation frame and its rationale — historical record, not canon where they conflict with §9. **§9's transcription is the storyform.**
 
 ## 3 · MC Throughline — Victoria "Tori" Midnight
 
@@ -145,9 +149,9 @@ Every decision is made. What remains is data entry: open Dramatica, answer the e
 
 **The engine resolved to ONE storyform.** Entered live by Papi in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `story_engine_settings.TXT` · `plot_sequence.TXT`.
 
-### ⚠️ CONFLICT FLAG — OPEN, awaiting Papi's ruling
+### ✅ FLAG STRUCK — RULED 2026-08-24: this form IS canon
 
-The entered form **rotates the four ruled perspective assignments**: every ruled thematic block landed in the right *class* but the wrong *throughline slot* (the "MC Dynamics"-labeled screen was the OS). Papi's standing order at the keyboard — **"we're sticking with what we got"** — is recorded; this flag stays until he strikes it (rotation becomes canon, superseding the 8/24 domain ruling) or the form is redone (~2 min from the saved `.dsf`: OS → Manipulation, MC → Situation, re-enter Past/Interdiction/Equity on the MC side, re-export).
+The entered form rotates the morning's four perspective assignments — every ruled thematic block in the right *class*, ownership rotated one frame. **Papi ruled same session ("we're sticking with what we got" → "strike the flag"): the rotation is canon**, superseding the morning domain ruling and the LOCKED cells listed below; §2 amended. The frame this buys: the *world* carries the Situation war over The Past; Tori's personal story is Activity/Understanding; Anna's impact is Manipulation/Developing a Plan; the rivalry lives in Fixed Attitude/Memories — the war over what is remembered.
 
 | Slot (engine) | Engine holds | The 8/24 ruling puts this content on |
 |---|---|---|
@@ -158,7 +162,7 @@ The entered form **rotates the four ruled perspective assignments**: every ruled
 
 **What the pass validated regardless of frame:** Interdiction vs. Prediction rides with Equity→Inequity in Situation ✓ · Manipulation carries Developing a Plan ✓ · Fixed Attitude carries Memories ✓ · Activity carries the Obtaining/Understanding cluster ✓ · all eight dynamics + IC Resolve **Steadfast** ✓ · **mc_concern corrects to The Past** (chart fact, frame-independent — §3 amended).
 
-**LOCKED cells contradicted or untested in this frame:** mc_domain Situation · os_domain Manipulation · UA Destiny / CF Truth (no UA/CF is computed for a slot holding the OS — untestable until a redo) · Symptom/Response came out **Ability/Desire** against LOCKED Focus/Direction **Desire/Ability** — flipped independent of the rotation; retest on any redo.
+**LOCKED cells superseded by the ruling (dated 2026-08-24, historical record):** mc_domain Situation · os_domain Manipulation · mc_issue Interdiction (now the OS Issue; Tori's is **Interpretation vs. Senses**) · mc UA Destiny / CF Truth (Tori's are now **Senses / Circumstances**) · mc Focus/Direction Desire/Ability (Tori's Symptom/Response: **Order/Chaos**; the Desire/Ability pair survives as OS Response/Symptom).
 
 ### Full transcription — engine output, engine's own labels
 

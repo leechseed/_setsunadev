@@ -1,5 +1,5 @@
 ---
-## type: ingest_template category: dramatica version: 1.0.0 last_updated: 2026-03-02 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Canonical intake form for Dramatica storyform data per Tier 3 character. Completion of this template is required before a Vertical Slice can proceed past Step 1 Source Verification." dependencies: ["ssot_02_character_dramatica_integration"]
+## type: ingest_template category: dramatica version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Canonical intake form for Dramatica storyform data per Tier 3 character. Completion of this template is required before a Vertical Slice can proceed past Step 1 Source Verification." dependencies: ["ssot_02_character_dramatica_integration"]
 ---
 # ♨️ Dramatica Ingest Template
 
@@ -19,7 +19,7 @@
 |`storyform_id`|`[STORYFORM_ID]`|
 |`storyform_version`|`[VERSION]`|
 |`storyform_status`|`locked` / `draft`|
-|`template_version`|`1.0.0`|
+|`template_version`|`1.1.0`|
 |`template_status`|`locked` / `draft`|
 |`completed_by`|`[NAME_OR_HANDLE]`|
 |`completion_date`|`[YYYY-MM-DD]`|
@@ -260,7 +260,7 @@ This section is populated automatically from the data above. It represents the v
 ```
 L12_FUNCTION:
   dramatica_archetype: [FROM Section 2]
-  motivation_element: [FROM Section 3 — motivation_primary]
+  mc_problem_element: [FROM Section 4 — mc_problem; non-MC roles use the problem element of their governing throughline]
   methodology_element: [FROM Section 3 — methodology_primary]
   evaluation_element: [FROM Section 3 — evaluation_primary]
   purpose_element: [FROM Section 3 — purpose_primary]
@@ -269,7 +269,12 @@ L12_FUNCTION:
   story_judgement: [FROM Section 1]
   limit_type: [FROM Section 1 — Timelock or Optionlock]
   resolve: [FROM Section 2]
+
+L12_DRAMATICA_EXTENDED:
+  motivation_quad: [FROM Section 3 — motivation_primary, motivation_secondary]
 ```
+
+*Renamed 2026-08-24 (STATE #4 ruling): the core field is `mc_problem_element` (was `motivation_element`) and sources from the throughline problem, not the Motivation quad — the quad primary now rides the extended sub-table.*
 
 ---
 
@@ -293,3 +298,4 @@ Before locking this template, confirm:
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-02|Initial template. Covers storyform dynamics, structural role, element quads, all four throughlines, relationships, narrative invariants, L12 core block generation, and downstream handoff checklist.|
+|1.1.0|2026-08-24|Section 10: `motivation_element` → `mc_problem_element`, sourced from Section 4 `mc_problem` (STATE #4 ruling); `L12_DRAMATICA_EXTENDED.motivation_quad` added to the auto-generated output.|

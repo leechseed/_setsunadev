@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_00_foundations category: variable_registry version: 1.0.0 last_updated: 2026-03-08 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "The complete code library index for every variable in the LEECHSEED character system. Defines canonical names, namespace paths, data types, scale classes, valid ranges, sources, consumers, and behavioral descriptions for all layer variables, derived statistics, flags, astrology variables, and state diff fields." dependencies: ["ssot_00_base60_number_system"]
+## type: ssot_00_foundations category: variable_registry version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "The complete code library index for every variable in the LEECHSEED character system. Defines canonical names, namespace paths, data types, scale classes, valid ranges, sources, consumers, and behavioral descriptions for all layer variables, derived statistics, flags, astrology variables, and state diff fields." dependencies: ["ssot_00_base60_number_system"]
 ---
 # 📐 SSOT: Variable Registry / Code Library Index
 
@@ -454,6 +454,52 @@ Each variable entry contains:
 |Tier Min|3|
 |Behavior|At 0 the character experiences no shame around desire or sexuality and broadcasts freely; at 12 shame is the dominant filter on all intimate expression and the character cannot access desire without triggering self-punishment.|
 
+### T3.EROS.armor_index
+
+|Field|Value|
+|---|---|
+|Canonical Path|`T3.EROS.armor_index`|
+|Display Name|Armor Index|
+|Type|`int`|
+|Scale Class|Pending Base 60 assignment — adopted at 0–10 (L9 v2 convention)|
+|Display Range|0–10|
+|Constraint|None|
+|Default|None|
+|Source|`authored` (adopted 2026-08-15, L9 v2 ingest — Walker PSY.01; propagated 2026-08-24)|
+|Feeds|`DRV.expressive_range`|
+|Tier Min|3|
+|Behavior|Chronic protective constriction — at 0 the character is unarmored and fully expressive; at 10 the character is maximally defended and can deliberately send almost nothing. Independent of shame: low shame with high armor is the armored-but-readable paradox.|
+
+### T3.EROS.satisfaction_cycle_truncation
+
+|Field|Value|
+|---|---|
+|Canonical Path|`T3.EROS.satisfaction_cycle_truncation`|
+|Display Name|Satisfaction Cycle Truncation|
+|Type|`enum`|
+|Scale Class|N/A|
+|Valid Values|`{none, yield, push, reach, grasp, pull}`|
+|Default|`none`|
+|Source|`authored` (adopted 2026-08-15, L9 v2 ingest — Walker / Bainbridge-Cohen)|
+|Feeds|Contextual — somatic mechanism for `T2.WOUND.wound_score`|
+|Tier Min|3|
+|Behavior|Names the phase of the yield→push→reach→grasp→pull cycle where the character's engagement breaks — locates any documented wound on a somatic sequence.|
+
+### T3.EROS.erotic_safety_precondition
+
+|Field|Value|
+|---|---|
+|Canonical Path|`T3.EROS.erotic_safety_precondition`|
+|Display Name|Erotic Safety Precondition|
+|Type|`str`|
+|Scale Class|N/A|
+|Valid Values|Freeform (e.g., `control`, `privacy`, `trust`, `ritual`)|
+|Default|None|
+|Source|`authored` (introduced 2026-08-15, L9 v2 ingest — Walker Invariant 4)|
+|Feeds|Contextual for intimacy behavior and arc design|
+|Tier Min|3|
+|Behavior|What the nervous system must register before pleasure is accessible — when the story makes this precondition structurally unavailable, pleasure is architecturally foreclosed.|
+
 ### T3.EROS.intimacy_mode
 
 |Field|Value|
@@ -871,6 +917,17 @@ All derived stats compute in internal (0-60) space per Base 60 SSOT.
 |Source|`computed`|
 |Behavior|Values exceeding 60 indicate the character's signal legibility exceeds the system's maximum containment threshold — the system cannot ignore this character.|
 
+### DRV.expressive_range
+
+|Field|Value|
+|---|---|
+|Canonical Path|`DRV.expressive_range`|
+|Formula (display)|`10 - T3.EROS.armor_index`|
+|Input Constraints|None|
+|Output Space|Display (0–10); Base 60 internal mapping pending armor_index scale-class assignment|
+|Source|`computed`|
+|Behavior|The deliberate-signal metric — `DRV.truth_exposure_index` measures what leaks; this measures what the character can intentionally send. Low range with high TEI marks a character the system reads completely while they can express almost nothing.|
+
 ---
 
 ## Status Flags
@@ -1017,3 +1074,4 @@ State diffs use the `STT` prefix and mirror the variable they modify, with addit
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-08|Initial registry. 50+ layer variables, 6 derived statistics, 5 status flags, 25+ astrology variables, state diff fields, character metadata. Full namespace convention. All numeric variables assigned to base 60 scale classes with constraints.|
+|1.1.0|2026-08-24|STATE #3 executed: added `T3.EROS.armor_index`, `T3.EROS.satisfaction_cycle_truncation`, `T3.EROS.erotic_safety_precondition`, `DRV.expressive_range` (L9 v2 propagation). `mc_problem_element` rename was already present (Phase 4). armor_index scale-class assignment pending.|

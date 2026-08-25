@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_02_character_systems category: dramatica_integration version: 1.0.0 last_updated: 2026-03-02 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest." dependencies: ["ssot_03_character_systems_vertical_slice"]
+## type: ssot_02_character_systems category: dramatica_integration version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest." dependencies: ["ssot_03_character_systems_vertical_slice"]
 ---
 # 🔮 SSOT: Dramatica Integration Protocol
 
@@ -128,7 +128,7 @@ Tier 2 characters receive:
 - One or more **relational role tags** specifying their narrative function relative to specific Tier 3 characters.
 - No storyform binding record. No throughline assignment. No full L12_DRAMATICA_EXTENDED sub-table.
 
-The element signature uses the same vocabulary as Tier 3 elements, enabling cross-tier database queries. A query for "all characters carrying the Faith element" returns both Tier 3 characters with `motivation_element: Faith` and Tier 2 characters with `element_signature` containing `Faith`.
+The element signature uses the same vocabulary as Tier 3 elements, enabling cross-tier database queries. A query for "all characters carrying the Faith element" returns both Tier 3 characters with `mc_problem_element: Faith` and Tier 2 characters with `element_signature` containing `Faith`.
 
 **Relational role taxonomy:**
 
@@ -169,7 +169,7 @@ The core block contains the variables that the 12-layer system actively uses for
 |Variable|Source|Used By|
 |---|---|---|
 |`dramatica_archetype`|Storyform|Flag triggers|
-|`motivation_element`|Character element set|Flag triggers, derived stats|
+|`mc_problem_element`|Storyform — MC Problem *(renamed from `motivation_element` 2026-08-24, STATE #4 ruling)*|Flag triggers, derived stats|
 |`methodology_element`|Character element set|Behavioral reference|
 |`evaluation_element`|Character element set|Behavioral reference|
 |`purpose_element`|Character element set|Behavioral reference|
@@ -322,3 +322,4 @@ Reports not listed in the extraction priority are consulted as needed but do not
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-02|Initial SSOT. Establishes Dramatica role, storyform architecture, tier integration, L12 Option C structure, report manifest, pipeline position.|
+|1.1.0|2026-08-24|L12 core rename: `motivation_element` → `mc_problem_element` (holds the MC Problem; STATE #4 ruling, #3 execution). Motivation-quad primary lives in `L12_DRAMATICA_EXTENDED.motivation_quad`.|
