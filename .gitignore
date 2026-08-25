@@ -20,3 +20,4 @@ _PRIVATE/
 
 # local claude config (personal, not for the public repo)
 .claude/settings.local.json
+_tools/scan_sensitive.py
