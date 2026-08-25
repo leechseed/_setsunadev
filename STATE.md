@@ -30,9 +30,10 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 | # | Decision | Unblocks |
 |---|---|---|
-| **0** | **Public-repo exposure** — archive is live on origin/main incl. personal cluster. Flip private / strip / accept. | Nothing downstream, but it is the only item that gets worse with time |
 | 3 | Propagate `armor_index` · `Expressive Range` · `satisfaction_cycle_truncation` into the vertical slice SSOT — **now also carries the `motivation_element` → `mc_problem_element` rename (ruled #4)** | Stops the character schema forking |
 
+> **#0 (repo exposure) RULED + EXECUTED 2026-08-24: strip in place, repo stays public.** History rewritten (all 329 commits), force-pushed same session — record in the STRIPPED IN PLACE section below. Follow-ons = BOLO 8 · 9.
+>
 > **#1 (the storyform) RULED 2026-08-24 — every creative decision closed in-chat:** [_CANON_NODES/oxo-storyform.md](_CANON_NODES/oxo-storyform.md). Dynamics: Change · Stop · Do-er · Linear · Action · Optionlock · **Failure/Good**. Residue = ~30-min engine-verify pass, **BOLO 7** — zero decisions in it.
 >
 > **#2 (Impact Character) RULED 2026-08-24: Anna Colson Conway** — BVX.0064 derivation confirmed; **RS = Tori↔Anna** in Activity.
@@ -53,19 +54,21 @@ Active BOLOs + the PMCS readiness table live in their own capture-fast file. Sit
 
 ---
 
-## ⚠️ ALREADY PUSHED — status corrected 2026-08-21
+## ✅ STRIPPED IN PLACE — #0 ruled + executed 2026-08-24
 
-**The claude.ai archive is live on the public repo.** 552 files, 319 conversations, on `origin/main`. Verified: `"private": false`. This includes the personal cluster — medical, OSINT, trauma-adjacent, interpersonal.
+**Papi's ruling: the repo stays public, period; sensitive content stripped from the working tree and from every commit.** Executed same session — five `git filter-repo` passes over all 329 commits, force-pushed to `origin/main`. Backup of the pre-strip history: `Desktop/_setsunadev-PRE-STRIP-2026-08-24.bundle` (all refs, 214MB — **never commit or push it**).
 
-**`_PRIVATE/` held.** Zero files on the remote. Employer, income, physical description are not exposed. The gitignore worked.
+**What came out (all four classes, ruled via manifest):**
+- **Geolocation** — ~1,400 Joplin/Obsidian frontmatter lat/long/altitude lines + the home-fix coordinate + one Logseq coord pair. Zero in tree, zero in history.
+- **The third party (cc)** — name redacted to `[CC]`/`[CC-HANDLE]` everywhere; **24 conversations removed** (the interpersonal set, the OSINT set, medical/substance/mental-health) plus `projects/cc/`, five cc-centric generated files, the MBFF OSINT report + its generating conversation, `godhates._.cece.txt`, and the `## cc` section of PROJECT-MEMORIES. Originals preserved locally in `_PRIVATE/stripped-2026-08-24/`.
+- **Employer / school / city** — redacted to `[EMPLOYER]` / `[SCHOOL]` / `[CITY]` in content and filenames (incl. `fsu.edu` URLs → `school.edu`).
+- **`_tools/scan_sensitive.py`** — removed from repo + history (its patterns necessarily contain the real names); lives on locally, gitignored.
 
-The earlier "do not push yet" warning in this file was **stale and gave false assurance** — the push happened during the 8/19–21 stretch. Corrected.
+**Verified on the remote:** removed paths 404 · old filenames 404 · STATE.md shows `[CITY]` with zero real-city hits · Joplin files carry no latitude · pre-strip commit SHAs no longer resolve via the API. Archive INDEX rebuilt (295 conversations, 11 projects), dead rows dropped.
 
-**Decision now open (see Blocked on you #0):** flip the repo private, strip the archive going forward, or accept it. Flipping private stops future indexing but retracts nothing already fetched, forked, or cached.
+**Accepted residue (in scope, by ruling):** the `leechseed` handle (it's the account) · "Papi" as address · ~60 emails (mostly service/own) · researched-business phone numbers · benign `fsu`/`FSU` substrings inside vendored binaries · whatever crawlers cached during the 8/19–24 public window. **Follow-ons: BOLO 8 (GitHub Support purge ticket) · BOLO 9 (Google outdated-content removal).**
 
-Tabled 2026-08-16: the **pseudonymization filter**. Decision was to stay public and build it. Design constraint found — git pushes commits, not working files, so this needs a **scrubbed mirror branch** (`main` local-only as truth, generated `public` branch carries the transform), not a push-time filter. `_tools/scan_sensitive.py` is written and **unrun**; it's read-only and finds structured identifiers + codebook entity seeds across the tracked tree. Run it first when this resumes — no codebook without knowing the corpus.
-
-Separately approved: the **pseudonym codebook as a fiction device** (roman à clef, real → in-world entities, feeding the character system). Judged on craft, not on concealment.
+The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. Still standing: the **pseudonym codebook as a fiction device** (roman à clef, real → in-world entities) — the `[CC]`/`[CITY]`/`[EMPLOYER]` markers are its placeholder layer, ready to be replaced with in-world names when the codebook lands.
 
 ---
 
@@ -96,6 +99,11 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-24 (the strip session — #0 ruled + executed)
+
+- **Blocker #0 RULED: strip in place, stay public — and EXECUTED same session.** Scanner run first per standing order (21,040 hits triaged; the critical kinds all false positives; the real leak was the home-fix coordinate ×~1,400 files + the cc identity lattice). Manifest locked at all four classes; five filter-repo passes; force-pushed; remote verified clean. Full record in the STRIPPED IN PLACE section above. **The Blocked table is down to #3 — the last standing decision.**
+- **Execution intel worth keeping:** `--replace-text` skips binary-detected blobs (the Logseq `index.html` carriers) — a `--blob-callback` pass catches them; regex `\b` word-boundaries died in the callback command path (backslash mangling) — plain-bytes `replace()` or file-based rules are the robust forms; filter-repo hard-resets the working tree, so **uncommitted edits do not survive a pass** (bit us once: the scanner briefly got committed; caught pre-push, soft-reset, redone clean).
 
 ## ✅ Moved 2026-08-24 (the rulings session — firewall · school · storyform)
 
@@ -198,7 +206,7 @@ Separately approved: the **pseudonym codebook as a fiction device** (roman à cl
 
 - **`_devlog/`** is mostly a vendored copy of the vscode-journal extension repo — 464 files, 587 MB of third-party docs. Only `_devlog_docs/_devlog_journals/` is yours.
 - **Six competing PKM systems on disk** — Logseq (5,194 tracked), Obsidian, Joplin ×2, ShroomsQ, claude.ai. Consolidation not started.
-- **Joplin geolocation metadata** — imported vault files carry home-adjacent lat/long in a public repo. One-pass strip pending.
+- ~~**Joplin geolocation metadata** — imported vault files carry home-adjacent lat/long in a public repo.~~ **Stripped 2026-08-24** (tree + full history).
 - **10-item review queue** — `_0.1_BVX_LEARN/_meta/REVIEW-QUEUE.md`
 - `OUTLIERS_FINAL_DRAFT/outliers.fdx` is **empty**. No script pages exist.
 

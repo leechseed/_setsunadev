@@ -2,7 +2,7 @@
 title: BOLO — the watchlist
 type: tasking board
 status: living document — capture-fast, sit rep Block IV
-updated: 2026-08-22
+updated: 2026-08-24
 protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is spoken
 ---
 
@@ -23,6 +23,8 @@ protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is
 | 5 | **Optimize the Papi↔Claude interface** [BLACK, feeds both trunks] — stand up the doctrine: conversation is Papi's primary interface; **docs are for Claude's retrieval, not for Papi's reading**; external-facing documents (blog etc.) are downstream transfers, not the point. Build toward trusted recall + one-pass doc-while-replying. **Prioritize speed.** | 2026-08-21 | 🔴 open |
 | 6 | **Transmission pedagogy** [BLACK, feeds 4 & 5] — distill the learning-science method for how Claude teaches in-chat at max understanding, tuned to Papi's preference (instructional design · cognitive load theory · multimedia learning · tutoring-dialogue research). Becomes the standard walkthrough format. **House format v0.1 coded same day (SOP §7)** — full distill still open. | 2026-08-21 | 🟡 open — v0.1 live |
 | 7 | **Dramatica engine-verify pass** [BLACK] — open the software, enter the ruled storyform ([oxo-storyform.md](_CANON_NODES/oxo-storyform.md): 8 dynamics + domain/concern/issue/problem assignments), confirm it resolves to **one** storyform, transcribe the ENGINE/VERIFY cells back into the doc (benchmarks · 16 signposts · plot-appreciation table · IC/OS/RS deep cells) | 2026-08-24 | 🔴 open — Papi's machine has the software; ~30 min data entry, **zero decisions** |
+| 8 | **GitHub Support purge ticket** [BLACK/ORANGE, strip follow-on] — file from the account owner: ask GitHub to run garbage collection on `leechseed/_setsunadev` and purge cached views/unreachable objects from the pre-strip history (support.github.com → sensitive-data removal). Old SHAs already fail to resolve via the API; the ticket makes it guaranteed instead of eventual | 2026-08-24 | 🟡 open — Papi files (owner-only action) |
+| 9 | **Google outdated-content removal** [BLACK/ORANGE, strip follow-on] — run removed/changed repo URLs through search.google.com/search-console/remove-outdated-content so cached snippets of the pre-strip pages drop out of search | 2026-08-24 | 🟡 open |
 
 Completed BOLOs get a dated strike-through, then move to the bottom under **Done** on the next pass.
 
