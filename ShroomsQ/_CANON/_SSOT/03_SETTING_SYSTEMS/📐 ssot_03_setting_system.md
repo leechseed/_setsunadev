@@ -91,6 +91,7 @@ duration:       scene | summary | stretch | pause | ellipsis   (Genette)
 telling:        voice + focalization for this scene            (per-scene override of the Telling Profile — Module 3)
 threads:        tori.arc · rs.rivalry         (what advances through this container)
 invariants:     in-scope set, checked          (a breach means the scene is wrong, not the invariant)
+collision:      seeding row(s), e.g. L9×S9     (a scene seeded by no row should justify itself — Module 5)
 exit state:     what is now true that wasn't  (feeds the next card)
 ```
 
