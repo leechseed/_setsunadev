@@ -88,6 +88,7 @@ sensorium:      3 details max                 (Buckham's telling-detail discipli
 commandments:   II / TP / CR / CL / RES       (Coyne's five, one line each)
 value turn:     safety + → −                  (McKee; no turn, no scene)
 duration:       scene | summary | stretch | pause | ellipsis   (Genette)
+telling:        voice + focalization for this scene            (per-scene override of the Telling Profile — Module 3)
 threads:        tori.arc · rs.rivalry         (what advances through this container)
 invariants:     in-scope set, checked          (a breach means the scene is wrong, not the invariant)
 exit state:     what is now true that wasn't  (feeds the next card)
