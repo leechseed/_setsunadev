@@ -148,6 +148,22 @@ Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoi
 - **plot_systems** (future domain): owns everything below L4's floor — scenes, beats, sequences. The spine constrains; it never authors.
 - **BOLO 15** (multimedia ingestion, seed): non-book media enter by the same addresses when built.
 
+## THE LATTICE — the spine's four limbs (RULED 2026-08-25)
+
+The spine covers the STRUCTURE axis. Papi ordered the full milieu same session; four sibling modules grow off this trunk, delivered in ruled order, one module per session (same-session continuation on Papi's call):
+
+| # | Limb | Doc | Status |
+|---|---|---|---|
+| 1 | **THE SCALE LADDER** — beat → universe nesting; containers vs threads | [📐 ssot_01_scale_ladder.md](📐%20ssot_01_scale_ladder.md) | ✅ delivered 2026-08-25 |
+| 2 | **THE SETTING SYSTEM** — character-grade place: taxonomy → schema → DCUS instance (B→A→instance, RULED) | — | next |
+| 3 | **THE TEXTURE LAYER** — narratology: narration, focalization, pacing (Genette duration), voice, mood | — | queued |
+| 4 | **THE MEDIUM GRAMMARS** — film · TV/serial · prose · games · TTRPGs · music video · social/short-form · PMV/HMV/porn (ORANGE rides the firewall) · theatre | — | queued; gaps via BOLO 16 research pass |
+
+**Cross-cutting, ruled same session:**
+- **Trope register** — not a limb; tropes are named recurring patterns keyed to lattice addresses. TV Tropes: hand-picked articles distilled to house-vocabulary summaries (no mining, no full ingestion) — BOLO 15.
+- **Domain lexicons** — subject-matter shelves (not tree nodes) keyed to the setting schema. **Starter shelf RULED: weaponology (seed: MIL's 46) · food · cars**; grows as tagging hits.
+- **TTRPG scaffolding** — feeds Setting (the sourcebook/gazetteer format is a candidate setting-slice notation) as well as Mediums.
+
 ## OPEN
 
 - Spine-address notation (`SPINE.Lx`) — provisional, awaiting Papi's ruling.
