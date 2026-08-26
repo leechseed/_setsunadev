@@ -90,6 +90,14 @@ A thread is a tracked line of change with a span, not a boundary:
 | **Thematic motif** | an Issue/Counterpoint recurrence | any |
 | **Trope instance** | a register entry playing out (lattice trope register) | any |
 
+## THE CONSTRAINT CHECK — invariants over the ladder (wired 2026-08-25)
+
+Invariants are neither containers nor threads — a thread changes, an invariant forbids. They are the standing constraint layer, governed by [DOCTRINE-0-INVARIANTS.md](../../../../DOCTRINE-0-INVARIANTS.md), and DOCTRINE 0's meta-rule IV ("holds at every scale — line, scene, movement, series") is literally this ladder's dimension.
+
+**The enforcement rule:** every rung's completion test carries one final implicit clause — ***…and no in-scope invariant is breached.*** A scene that turns beautifully while violating a standing invariant is not a whole scene; it is a breach (meta-rule VII), and it invalidates downstream units that trusted it.
+
+**The census, scope-mapped to rungs:** Layer 0 Invariants 1–5 (world physics) → R8 · Invariants of Power (KLK) → R7 · `narrative_invariant` (e.g. `cost_and_meaning`) → R5 · Six Movements set (one per movement: Equity → Collapse) → R4 · Ecclesial Laws (place-scoped) → the setting slice S12 · per-character sets (Tori ×4) → character threads. An invariant declares its scope as a ladder address span — the lattice gives the corpus the address system it never had.
+
 Threads are **addressed by their span** across rungs — which requires:
 
 ## THE ADDRESS SCHEME (provisional, rulable)

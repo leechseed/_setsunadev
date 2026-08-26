@@ -66,7 +66,7 @@ Same architecture as the 12-Layer Character Database: surface → depth → stru
 | **S9** | **ALLURE** | the place's erotics: what it promises, what draws people in, its glamour and seduction | L9 EROS |
 | **S10** | **UNDERSIDE** | what it represses: hidden zones, the unspoken, basements literal and social, what surfaces under pressure | L10 SHADOW |
 | **S11** | **VECTOR** | trajectory: where the place is going — bloom, rot, collapse, redemption; feeds the setting arc | L11 DESTINY |
-| **S12** | **FUNCTION** | storyform binding, fed from the spine, independent of S1–S11: which throughline Domain the place embodies, its argument role, its charge | L12 FUNCTION |
+| **S12** | **FUNCTION** | storyform binding, fed from the spine, independent of S1–S11: which throughline Domain the place embodies, its argument role, its charge — **and its `narrative_invariant` set** (place-scoped invariants, e.g. Ecclesial Laws; mirrors L12's `narrative_invariant` field) | L12 FUNCTION |
 
 **Slice header (machinery, not a layer):** `place_id` · names/aliases (the rename lattice) · scale class · parent/child places · canon node link · state track (dated overlays per Axis 4).
 
@@ -89,6 +89,7 @@ commandments:   II / TP / CR / CL / RES       (Coyne's five, one line each)
 value turn:     safety + → −                  (McKee; no turn, no scene)
 duration:       scene | summary | stretch | pause | ellipsis   (Genette)
 threads:        tori.arc · rs.rivalry         (what advances through this container)
+invariants:     in-scope set, checked          (a breach means the scene is wrong, not the invariant)
 exit state:     what is now true that wasn't  (feeds the next card)
 ```
 
@@ -115,7 +116,7 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 | S9 ALLURE | **the meritocratic promise** — the exact premise Tori must stop believing (Growth: Stop); flagship-Ultra prestige; the Feed's glamour |
 | S10 UNDERSIDE | the first name under the second (Movement 3's forensic mode); what the rebrand-as-Boot-Sequence overwrote; the disruption→collapse skeleton |
 | S11 VECTOR | the six-movement descent: clean → NEON-ROT → hunt; collapse trajectory |
-| S12 FUNCTION | `storyform_id: oxo_primary_v1` — **the OS Domain embodied: Situation / The Past.** Goal = The Past, story_cost = Memories: the campus IS personal history deleted for programming space, done to a place. The rebrand is the world's Boot Sequence at institutional scale |
+| S12 FUNCTION | `storyform_id: oxo_primary_v1` — **the OS Domain embodied: Situation / The Past.** Goal = The Past, story_cost = Memories: the campus IS personal history deleted for programming space, done to a place. The rebrand is the world's Boot Sequence at institutional scale. **Invariant set: the Institutional Invariants (Ecclesial Laws)** — `THE_ADMINISTRATION.md`, place-scoped |
 
 **The proof reads:** every layer filled from canon on the first try, one authorable gap surfaced (S2), and S12 snapped onto the storyform without force — the schema fits the house.
 
