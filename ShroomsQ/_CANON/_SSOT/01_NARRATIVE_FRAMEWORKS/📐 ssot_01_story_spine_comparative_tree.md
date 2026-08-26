@@ -152,12 +152,14 @@ Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoi
 
 The spine covers the STRUCTURE axis. Papi ordered the full milieu same session; four sibling modules grow off this trunk, delivered in ruled order, one module per session (same-session continuation on Papi's call):
 
+> **Standing doctrine (Papi, 2026-08-26): the lattice is IP-agnostic — built to create ANY story. The Outliers (OXO) is the test bed: the guinea-pig instance every module validates against, not the lattice's owner.**
+
 | # | Limb | Doc | Status |
 |---|---|---|---|
 | 1 | **THE SCALE LADDER** — beat → universe nesting; containers vs threads | [📐 ssot_01_scale_ladder.md](📐%20ssot_01_scale_ladder.md) | ✅ delivered 2026-08-25 |
 | 2 | **THE SETTING SYSTEM** — character-grade place: taxonomy → schema → DCUS instance (B→A→instance, RULED) | [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) | ✅ delivered 2026-08-25 |
 | 3 | **THE TEXTURE LAYER** — the discourse side: the Ten Questions of the Telling, craft translation grid, TELLING PROFILE | [📐 ssot_01_texture_layer.md](📐%20ssot_01_texture_layer.md) | ✅ delivered 2026-08-26 |
-| 4 | **THE MEDIUM GRAMMARS** — film · TV/serial · prose · games · TTRPGs · music video · social/short-form · PMV/HMV/porn (ORANGE rides the firewall) · theatre | — | queued; gaps via BOLO 16 research pass |
+| 4 | **THE MEDIUM GRAMMARS** — ten channel contracts; story-side survives adaptation, texture re-instruments per medium | [📐 ssot_01_medium_grammars.md](📐%20ssot_01_medium_grammars.md) | ✅ delivered 2026-08-26 — **THE LATTICE IS COMPLETE**; M6–M8 scaffolds await BOLO 16 |
 
 **Cross-cutting, ruled same session:**
 - **THE CONSTRAINT LAYER — narrative invariants (wired 2026-08-25, break-break).** Invariants are not a level of the tree — they are the prescriptive register *over* the whole lattice: constraints that hold at every scale (DOCTRINE 0, meta-rule IV). Governance: [DOCTRINE-0-INVARIANTS.md](../../../../DOCTRINE-0-INVARIANTS.md) (v0.1, **awaiting ratification**). The lattice's contribution: **scope gets a canonical address** — universe-scoped (Layer 0 Invariants 1–5) · IP-scoped (Invariants of Power) · story-scoped (`narrative_invariant`, e.g. `cost_and_meaning`) · movement-scoped (Six Movements set) · place-scoped (Ecclesial Laws → S12) · character-scoped (per-character sets, Tori ×4). Enforcement rides the ladder's completion tests. Polarity vs tropes: **tropes describe, invariants forbid.** Rename ruling (Tenet/Ethos leading) was gated on decision #3 — **#3 executed 8/24, the gate is open.**
