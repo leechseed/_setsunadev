@@ -114,7 +114,7 @@ Tree addresses (`SPINE.Lx`) locate *concepts*; ladder addresses locate *instance
 - **Address notation** — provisional (`IP.form.M.q.s.b`), awaiting Papi.
 - **Movement↔Signpost mapping table** (OXO: 6 movements × 4 signposts ×4 throughlines) — plot_systems work, flagged.
 - **IP-level / cross-IP meta-forms** — architecturally supported, not designed.
-- **SCENE CARD notation** — slot reserved at R2; delivered with Module 2 (needs setting-state fields).
+- ~~**SCENE CARD notation** — slot reserved at R2~~ ✅ delivered same session with Module 2: [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md).
 
 ## Version history
 

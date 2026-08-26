@@ -155,7 +155,7 @@ The spine covers the STRUCTURE axis. Papi ordered the full milieu same session; 
 | # | Limb | Doc | Status |
 |---|---|---|---|
 | 1 | **THE SCALE LADDER** — beat → universe nesting; containers vs threads | [📐 ssot_01_scale_ladder.md](📐%20ssot_01_scale_ladder.md) | ✅ delivered 2026-08-25 |
-| 2 | **THE SETTING SYSTEM** — character-grade place: taxonomy → schema → DCUS instance (B→A→instance, RULED) | — | next |
+| 2 | **THE SETTING SYSTEM** — character-grade place: taxonomy → schema → DCUS instance (B→A→instance, RULED) | [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) | ✅ delivered 2026-08-25 |
 | 3 | **THE TEXTURE LAYER** — narratology: narration, focalization, pacing (Genette duration), voice, mood | — | queued |
 | 4 | **THE MEDIUM GRAMMARS** — film · TV/serial · prose · games · TTRPGs · music video · social/short-form · PMV/HMV/porn (ORANGE rides the firewall) · theatre | — | queued; gaps via BOLO 16 research pass |
 
