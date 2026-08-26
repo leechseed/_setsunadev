@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-25
+updated: 2026-08-26
 read_first: true
 ---
 
@@ -80,7 +80,8 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 | System | State | Where |
 |---|---|---|
-| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24 evening: storyform CANON v2.0 (§9 rotation ruled, BOLO 7 done) · IC = Anna · school = DCUS.** Ripple: Tori node's Structure table pre-rotation, reconciliation pending. | `_CANON_NODES/` |
+| **THE STORY LATTICE** | ✅ **Built 8/25–26, COMPLETE** — IP-agnostic story-creation system, The Outliers = test bed (ruled). Spine (comparative tree, 14 rivals) · Scale Ladder (8 rungs) · Setting System (12-layer slice mirroring the character stack; **new domain `03_SETTING_SYSTEMS/`**; DCUS instanced; SCENE CARD) · Texture (Ten Questions, TELLING PROFILE) · Medium Grammars (10 contracts) · constraint layer (invariants) wired throughout. Module 5 (collision engine) parked decision-free → BOLO 17. Rulings queue in the 8/26 session note. | `01_NARRATIVE_FRAMEWORKS/` + `03_SETTING_SYSTEMS/` |
+| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24 evening: storyform CANON v2.0 (§9 rotation ruled, BOLO 7 done) · IC = Anna · school = DCUS.** Ripple: Tori node's Structure table pre-rotation, reconciliation pending. **8/26: DCUS setting slice instanced; OXO Telling Profile identified as open decision set (fires when prose opens).** | `_CANON_NODES/` |
 | **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **8/24 evening: BOLO 7 done + #3 propagated — the schema fork is closed.** Remaining: reconcile Tori's Dramatica cells to the §9 rotation; armor_index scale-class. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. 1,106 sources indexed, classifier 99%. Next ID `BVX.1107`. | `_0.1_BVX_LEARN/_meta/` |
 | **Leechseed Manifesto** | 🔴 **Found, not in canon.** 10 docs, May 2025, buried in imported-Joplin. | `OVER_EXIT_OUT_OBSIDIAN/.../manifesto/` |
@@ -102,6 +103,14 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-25/26 (the lattice session — the story system built end to end)
+
+- **THE STORY LATTICE BUILT AND COMPLETE** — five canonical docs delivered on walked-down boresight chains, all IP-agnostic (**test-bed doctrine ruled: the lattice creates ANY story; The Outliers is the guinea pig**): the **Spine** (comparative tree — Dramatica canonical, 14 rivals mapped to BVX holdings, `feeds: SPINE.Lx` keying) · the **Scale Ladder** (beat→universe, completion tests, containers-vs-threads, 4 series patterns) · the **Setting System** (**`03_SETTING_SYSTEMS/` stood up**; 12-layer SETTING SLICE mirroring the character stack layer-for-layer; SCENE CARD; **DCUS instanced as proof** — one gap: S2 WEATHER) · the **Texture Layer** (Ten Questions of the Telling; TELLING PROFILE; finding: OXO has none yet) · the **Medium Grammars** (10 channel contracts; M6–M8 scaffolds await BOLO 16).
+- **The constraint layer wired** (Papi's break-break catch): narrative invariants = the prescriptive register over the whole lattice; enforcement rides the ladder's completion tests; S12 + scene card carry invariant fields. **Flagged: DOCTRINE 0 still awaits ratification; the Tenet/Ethos rename gate is OPEN (was gated on #3, which executed 8/24).**
+- **The Collision Engine designed + parked decision-free** (Oscar Mike → `oscar-mike/collision-engine.md`, **BOLO 17**): generalized synastry — C×C (Cat 11 exists, unrun) · **C×S via the Lx↔Sx mirror diagonal** (new; Tori×DCUS proof staged) · C×Situation (Cat 13 transits) · C×Group. Architecture ruled: layer above entities, feeds back as overlays, time keyed to ladder addresses.
+- **BOLO 13 rescued twice:** relaunched at sit rep, then **detached to Windows Task Scheduler** (`BVX_corpus_pull`) so it survives session close. **36,916 files in** (18,458 images) after ~22h of unnoticed runtime; remaining unknowable until the list end.
+- **BOLOs 15–17 captured** (multimedia ingestion seed w/ TV Tropes distill ruling · medium-grammar research pass · collision engine). Full rulings queue + resume order: `_CACHE/2026-08-26.session.md` → `_LOG/` after next sit rep.
 
 ## ✅ Moved 2026-08-25 (the h-game session — Bongobabe stood up)
 
