@@ -1,0 +1,501 @@
+<title>The Story Lattice</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --ground:#100d0a; --panel:#1b1611; --panel2:#241d15; --inset:#0c0a07;
+    --ink:#e6d9bd; --muted:#9a8a6d; --faint:#6e6249;
+    --gold:#c9a54a; --gold-dim:#77622e; --gold-line:#4c3f1e;
+    --blood:#a8493d; --blood-dim:#5e2b24;
+    --ok:#7d9c5f; --warn:#c98b3a;
+    --serif:'Alegreya',Georgia,serif; --disp:'Cinzel','Times New Roman',serif; --sans:'Alegreya Sans','Gill Sans',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important}}
+  body{background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:16.5px;line-height:1.55;
+    background-image:radial-gradient(ellipse 90% 60% at 50% -10%,#1d160e 0%,transparent 60%)}
+  .frame{max-width:1220px;margin:0 auto;padding:0 16px 60px}
+
+  /* ── header ── */
+  header{padding:34px 8px 22px;text-align:center;border-bottom:1px solid var(--gold-line);position:relative}
+  header::after{content:"";display:block;height:3px;max-width:520px;margin:20px auto 0;
+    background:linear-gradient(90deg,transparent,var(--gold-dim) 20%,var(--gold) 50%,var(--gold-dim) 80%,transparent)}
+  .over{font-family:var(--sans);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  h1{font-family:var(--disp);font-weight:900;font-size:clamp(30px,5vw,52px);letter-spacing:.08em;color:var(--gold);
+    text-wrap:balance;margin-top:8px;text-shadow:0 0 28px rgba(201,165,74,.18)}
+  .sub{margin-top:10px;color:var(--muted);font-style:italic;font-size:17px}
+  .sub b{color:var(--ink);font-style:normal}
+
+  /* ── shell: sidebar + panel ── */
+  .shell{display:flex;gap:22px;margin-top:26px;align-items:flex-start}
+  nav{width:230px;flex:none;position:sticky;top:14px;display:flex;flex-direction:column;gap:2px;
+    border:1px solid var(--gold-line);background:var(--panel);padding:10px;box-shadow:0 0 0 1px #000,inset 0 0 40px rgba(0,0,0,.5)}
+  nav .rail{font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);
+    padding:8px 10px 4px;border-bottom:1px solid #2a2318;margin-bottom:4px}
+  nav button{all:unset;cursor:pointer;display:flex;align-items:baseline;gap:9px;padding:9px 10px;
+    font-family:var(--disp);font-size:13.5px;font-weight:700;letter-spacing:.06em;color:var(--muted);
+    border-left:3px solid transparent;transition:background .15s,color .15s}
+  nav button .rn{font-family:var(--sans);font-size:10.5px;color:var(--faint);letter-spacing:.12em;min-width:20px}
+  nav button:hover{background:#252017;color:var(--ink)}
+  nav button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+  nav button.on{background:linear-gradient(90deg,#2c2413,#1f1a12);color:var(--gold);border-left-color:var(--gold)}
+  main{flex:1;min-width:0}
+
+  section{display:none}
+  section.on{display:block}
+  .panel{border:1px solid var(--gold-line);background:var(--panel);box-shadow:0 0 0 1px #000,inset 0 0 60px rgba(0,0,0,.45);
+    padding:26px 28px;margin-bottom:20px}
+  .panel h2{font-family:var(--disp);font-weight:700;font-size:24px;letter-spacing:.09em;color:var(--gold);margin-bottom:4px}
+  .kicker{font-family:var(--sans);font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .lede{color:var(--muted);font-style:italic;margin:8px 0 18px;max-width:68ch}
+  .lede b{color:var(--ink);font-style:normal}
+  h3{font-family:var(--disp);font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--ink);margin:22px 0 10px}
+  p{max-width:70ch;margin-bottom:10px}
+
+  /* ── chips & pills ── */
+  .chip{display:inline-block;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.14em;
+    padding:2px 8px 1px;border:1px solid;border-radius:2px;vertical-align:middle;text-transform:uppercase}
+  .black{color:#cfc3a6;border-color:#55492f;background:#191510}
+  .orange{color:#e0a173;border-color:#7a4a2a;background:#221410}
+  .ruled{color:var(--ok);border-color:#3d4f2e;background:#141a0f}
+  .prov{color:var(--warn);border-color:#6a4a20;background:#1e1509}
+  .gap{color:var(--blood);border-color:var(--blood-dim);background:#1c0f0d}
+  .parked{color:#b9a8d6;border-color:#4a3d63;background:#161221}
+
+  /* ── tables ── */
+  .tw{overflow-x:auto;border:1px solid #2c2416;background:var(--inset)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px}
+  th{font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+    text-align:left;padding:9px 12px;border-bottom:1px solid var(--gold-line);background:#171310;white-space:nowrap}
+  td{padding:8px 12px;border-bottom:1px solid #221c12;vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  tbody tr:hover td{background:#1d1811}
+  td.key{font-family:var(--disp);font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--gold);white-space:nowrap}
+  td.dim{color:var(--muted)}
+
+  /* ── accordions ── */
+  details{border:1px solid #2c2416;background:var(--panel2);margin-bottom:8px}
+  details summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px;padding:11px 14px;user-select:none}
+  details summary::-webkit-details-marker{display:none}
+  details summary:hover{background:#2a2318}
+  details summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+  details[open] summary{border-bottom:1px solid #2c2416;background:#211b12}
+  .rk{font-family:var(--disp);font-weight:900;font-size:14px;color:var(--gold);min-width:38px;letter-spacing:.04em}
+  .rt{font-family:var(--disp);font-weight:700;font-size:14.5px;letter-spacing:.05em}
+  .rs{color:var(--muted);font-style:italic;font-size:14px;margin-left:auto;text-align:right}
+  details .bd{padding:13px 16px 15px;font-size:15px}
+  details .bd p{margin-bottom:8px}
+  .test{border-left:3px solid var(--gold-dim);background:#171208;padding:8px 12px;margin-top:8px;font-size:14.5px}
+  .test b{color:var(--gold)}
+
+  /* ── tooltips (the CK3 move) ── */
+  .tip{border-bottom:1px dotted var(--gold-dim);cursor:help;position:relative}
+  .tip:hover::after,.tip:focus::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 8px);z-index:30;
+    width:min(340px,72vw);background:#0e0b07;color:var(--ink);border:1px solid var(--gold);padding:10px 12px;
+    font-size:13.5px;font-style:normal;font-family:var(--serif);line-height:1.45;box-shadow:0 6px 24px #000,0 0 0 1px #000}
+
+  /* ── callouts ── */
+  .decree{border:1px solid var(--gold);background:linear-gradient(180deg,#221b0e,#191309);padding:14px 18px;margin:16px 0;
+    box-shadow:inset 0 0 30px rgba(0,0,0,.4)}
+  .decree .dk{font-family:var(--disp);font-size:12px;font-weight:700;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}
+  .alarm{border:1px solid var(--blood);background:#180e0c;padding:12px 16px;margin:14px 0}
+  .alarm .dk{font-family:var(--disp);font-size:12px;font-weight:700;letter-spacing:.22em;color:var(--blood);text-transform:uppercase}
+
+  /* ── overview map ── */
+  .realm{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+  .realm .side{border:1px solid #2c2416;background:var(--inset);padding:14px}
+  .side h4{font-family:var(--sans);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);
+    text-align:center;padding-bottom:9px;border-bottom:1px solid #241d12;margin-bottom:10px}
+  .mod{all:unset;display:block;width:100%;cursor:pointer;border:1px solid var(--gold-line);background:var(--panel2);
+    padding:11px 13px;margin-bottom:8px;transition:border-color .15s,background .15s}
+  .mod:hover{border-color:var(--gold);background:#282013}
+  .mod:focus-visible{outline:2px solid var(--gold)}
+  .mod .mt{font-family:var(--disp);font-weight:700;font-size:14px;letter-spacing:.06em;color:var(--gold)}
+  .mod .md{font-size:13.5px;color:var(--muted);margin-top:2px}
+  .crossbar{border:1px solid #3a3050;background:#151122;padding:11px 13px;margin-top:12px}
+  .crossbar .mt{color:#b9a8d6}
+  .statrow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 4px}
+  .stat{flex:1;min-width:120px;border:1px solid #2c2416;background:var(--inset);padding:10px 12px;text-align:center}
+  .stat .n{font-family:var(--disp);font-weight:900;font-size:26px;color:var(--gold);font-variant-numeric:tabular-nums}
+  .stat .l{font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+  /* ── setting slice toggle ── */
+  .tog{display:inline-flex;border:1px solid var(--gold-line);margin-bottom:12px}
+  .tog button{all:unset;cursor:pointer;font-family:var(--disp);font-size:12.5px;font-weight:700;letter-spacing:.1em;
+    padding:8px 18px;color:var(--muted)}
+  .tog button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+  .tog button.on{background:var(--gold);color:#141006}
+  .mirror{font-family:var(--sans);font-size:11px;color:var(--faint);letter-spacing:.1em;white-space:nowrap}
+
+  /* ── scene card ── */
+  .scroll{border:1px solid var(--gold-dim);background:#171208;padding:18px 22px;font-family:var(--serif);
+    box-shadow:inset 0 0 40px rgba(0,0,0,.5);max-width:640px}
+  .scroll .sc-t{font-family:var(--disp);font-weight:700;letter-spacing:.18em;color:var(--gold);font-size:13px;
+    text-align:center;border-bottom:1px solid var(--gold-line);padding-bottom:8px;margin-bottom:10px}
+  .scroll dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;font-size:14px}
+  .scroll dt{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+  .scroll dd{color:var(--ink)}
+
+  /* ── ten questions grid ── */
+  .tq{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px}
+
+  .qrow{display:flex;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px solid #221c12;font-size:15px}
+  .qrow:last-child{border-bottom:none}
+  .qn{font-family:var(--disp);font-weight:900;color:var(--gold);min-width:26px;font-size:13px}
+
+  footer{margin-top:26px;border-top:1px solid var(--gold-line);padding-top:14px;text-align:center;
+    color:var(--faint);font-size:13px;font-style:italic}
+
+  @media (max-width:900px){
+    .shell{flex-direction:column}
+    nav{position:static;width:100%;flex-direction:row;flex-wrap:wrap}
+    nav .rail{width:100%;border-bottom:none}
+    nav button{border-left:none;border-bottom:3px solid transparent;padding:7px 9px}
+    nav button.on{border-left-color:transparent;border-bottom-color:var(--gold)}
+    .realm{grid-template-columns:1fr}
+    .panel{padding:18px 14px}
+  }
+</style>
+
+<div class="frame">
+<header>
+  <div class="over">Bold Venture · Narrative Doctrine · Black Trunk</div>
+  <h1>The Story Lattice</h1>
+  <div class="sub">The complete machinery for creating any story. <b>The Outliers</b> is the test bed, not the owner.</div>
+</header>
+
+<div class="shell">
+<nav aria-label="Lattice sections">
+  <div class="rail">The Ledger</div>
+  <button class="on" data-s="overview"><span class="rn">◆</span>The Realm</button>
+  <button data-s="spine"><span class="rn">I</span>The Spine</button>
+  <button data-s="ladder"><span class="rn">II</span>The Ladder</button>
+  <button data-s="setting"><span class="rn">III</span>The Setting</button>
+  <button data-s="texture"><span class="rn">IV</span>The Texture</button>
+  <button data-s="mediums"><span class="rn">V</span>The Mediums</button>
+  <button data-s="law"><span class="rn">VI</span>The Law</button>
+  <button data-s="collision"><span class="rn">VII</span>The Collision</button>
+</nav>
+
+<main>
+<!-- ═══════════ OVERVIEW ═══════════ -->
+<section id="overview" class="on">
+  <div class="panel">
+    <div class="kicker">The realm at a glance</div>
+    <h2>Two Sides, One Argument</h2>
+    <p class="lede">Everything divides along <span class="tip" data-tip="Chatman's story/discourse distinction (BVX.0167): story = WHAT is told (events + existents); discourse = HOW it is told.">Chatman's line</span>: <b>story</b> is what is told; <b>discourse</b> is how. The constraint layer and the collision engine govern both.</p>
+    <div class="realm">
+      <div class="side">
+        <h4>Story-side · what is told</h4>
+        <button class="mod" data-go="spine"><div class="mt">I · The Spine</div><div class="md">The comparative tree of what a story is — Dramatica canonical, fourteen rivals mapped.</div></button>
+        <button class="mod" data-go="ladder"><div class="mt">II · The Scale Ladder</div><div class="md">Eight containers, beat to universe, each with a completion test. Arcs are threads, not rungs.</div></button>
+        <button class="mod" data-go="setting"><div class="mt">III · The Setting System</div><div class="md">Place at character grade — the twelve-layer slice, proven on the DCUS.</div></button>
+      </div>
+      <div class="side">
+        <h4>Discourse-side · how it is told</h4>
+        <button class="mod" data-go="texture"><div class="mt">IV · The Texture Layer</div><div class="md">The Ten Questions of the Telling. Pacing, voice, focalization — formalized.</div></button>
+        <button class="mod" data-go="mediums"><div class="mt">V · The Medium Grammars</div><div class="md">Ten channel contracts. Story survives adaptation; texture re-instruments.</div></button>
+      </div>
+    </div>
+    <button class="mod crossbar" data-go="law"><div class="mt">VI · The Law — narrative invariants</div><div class="md">The prescriptive register over the whole lattice. Tropes describe; invariants forbid. Enforcement rides every completion test.</div></button>
+    <button class="mod crossbar" data-go="collision"><div class="mt">VII · The Collision Engine <span class="chip parked">Parked</span></div><div class="md">Generalized synastry — any slice against any slice. Friction is dramatic material. Fires on "go."</div></button>
+    <div class="statrow">
+      <div class="stat"><div class="n">8</div><div class="l">Tree levels</div></div>
+      <div class="stat"><div class="n">8</div><div class="l">Ladder rungs</div></div>
+      <div class="stat"><div class="n">12</div><div class="l">Slice layers</div></div>
+      <div class="stat"><div class="n">10</div><div class="l">Questions</div></div>
+      <div class="stat"><div class="n">10</div><div class="l">Mediums</div></div>
+      <div class="stat"><div class="n">14</div><div class="l">Rivals mapped</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SPINE ═══════════ -->
+<section id="spine">
+  <div class="panel">
+    <div class="kicker">Limb I · the trunk</div>
+    <h2>The Spine — the Comparative Tree</h2>
+    <p class="lede"><b>A story is a Grand Argument</b> — proof, airtight from every angle, that one approach to a problem succeeds or fails, and was worth it or not. Dramatica is the ruled spine because it alone is a <b>tree</b>; every rival is a subset, a template on one branch, or a lens on the audience.</p>
+
+    <details><summary><span class="rk">L0</span><span class="rt">The Root — what a story is</span><span class="rs">the Grand Argument</span></summary>
+      <div class="bd"><p>One complete argument made through a single <span class="tip" data-tip="Dramatica's claim: a complete story models one mind solving one problem — every throughline is a perspective of that mind.">Story Mind</span>. Rival root claims: Aristotle (mimesis of complete action) · Egri (proof of a premise — the direct ancestor) · McKee (character revealed by choice under pressure) · the neuro school (a simulation the brain runs — models the <i>audience</i>).</p></div></details>
+    <details><summary><span class="rk">L1</span><span class="rt">Four Throughlines</span><span class="rs">one problem, four seats</span></summary>
+      <div class="bd"><p><b>OS</b> (they — the problem among everyone) · <b>MC</b> (I — inside one skin) · <b>IC</b> (you — the pressure to change) · <b>RS</b> (we — the argument between them). <b>No rival model has all four.</b> The hero's journey is the MC line in mythic dress; the "B-story" is the RS unnamed.</p></div></details>
+    <details><summary><span class="rk">L2</span><span class="rt">The Structural Nesting</span><span class="rs">Domain → Concern → Issue → Problem</span></summary>
+      <div class="bd"><p>Each throughline descends four <span class="tip" data-tip="Four elements in dynamic tension — pairs of pairs, never a flat list. The quad is Dramatica's atomic geometry.">quad</span> levels: 4 Domains (Situation · Activity · Fixed Attitude · Manipulation) → 16 Concerns → 64 Issues (each with a Counterpoint) → the atomic quad: <b>Problem / Solution / Symptom / Response</b>. Each throughline claims one Domain exclusively — the OXO §9 rotation is this exclusivity in action. The chart itself is held: BVX.0091.</p></div></details>
+    <details><summary><span class="rk">L3</span><span class="rt">The Eight Dynamics</span><span class="rs">how it moves and ends</span></summary>
+      <div class="bd"><p>Resolve · Growth · Approach · Style · Driver · Limit · <b>Outcome · Judgment</b>. Outcome × Judgment is the four-ending matrix; OXO's Failure/Good is the <b>Personal Triumph</b> cell. Weiland's positive/flat/negative arcs are this matrix renamed.</p>
+      <div class="test"><b>OXO instance:</b> Change · Stop · Do-er · Linear · Action · Optionlock · Failure/Good.</div></div></details>
+    <details><summary><span class="rk">L4</span><span class="rt">Plot</span><span class="rs">the argument in time</span></summary>
+      <div class="bd"><p>8 static appreciations (Goal, Consequence, Cost, Dividend…) + 4 Signposts and 3 Journeys per throughline, acts turned by Drivers. <b>Below this floor the spine stops</b> — scenes and beats belong to plot_systems. The rivals live down there: three-act = the OS skeleton · Save the Cat = a timed template · Story Grid = the fractal scene grammar · McKee = the beat engine.</p></div></details>
+    <details><summary><span class="rk">L5</span><span class="rt">Character</span><span class="rs">functions before persons</span></summary>
+      <div class="bd"><p>64 elements distributed so the Story Mind is complete; the 8 archetypes are pre-bundled sets. <b>Protagonist ≠ MC</b> — function and perspective are independent axes. House binding: L12 FUNCTION / <code>mc_problem_element</code>. Persons — psychology, body, sexuality — are L1–L11, downstream, never in the spine.</p></div></details>
+    <details><summary><span class="rk">L6</span><span class="rt">Theme</span><span class="rs">structural, not a message</span></summary>
+      <div class="bd"><p>Issue vs Counterpoint argued through the throughline; Problem vs Solution at the atom; Outcome + Judgment pass the verdict. McKee's controlling idea = the same, compressed to a sentence.</p></div></details>
+    <details><summary><span class="rk">L7</span><span class="rt">Genre &amp; Audience</span><span class="rs">the outermost ring</span></summary>
+      <div class="bd"><p>Dramatica's weakest ring; the library carries the strength: Coyne's genre conventions (the reader-contract) and Truby's Anatomy of Genres (moral-argument traditions). The four production stages: storyforming → storyencoding → storyweaving → reception.</p></div></details>
+
+    <h3>The Rival Map</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Model</th><th>Holdings</th><th>What it actually models</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td class="key">Dramatica</td><td class="dim">0089 · 0090 · 0091</td><td>the whole tree</td><td><span class="chip ruled">Canonical</span></td></tr>
+        <tr><td class="key">Aristotle</td><td class="dim">0603 (guidebook)</td><td>first taxonomy — plot·character·thought·diction·melody·spectacle</td><td>root ancestor <span class="chip gap">Poetics not held</span></td></tr>
+        <tr><td class="key">Egri</td><td class="dim">—</td><td>premise-as-proof; character dimensions</td><td><span class="chip gap">Not held</span></td></tr>
+        <tr><td class="key">Campbell / Vogler</td><td class="dim">0616 · 0244</td><td>MC throughline in mythic dress</td><td>one line mistaken for the whole</td></tr>
+        <tr><td class="key">McKee</td><td class="dim">0175 · 0064 · 0050</td><td>scene/beat value mechanics; cast design</td><td>the engine below the floor</td></tr>
+        <tr><td class="key">Truby</td><td class="dim">0193 · 0191</td><td>22 steps; character web; moral argument; genres</td><td>best rival synthesis</td></tr>
+        <tr><td class="key">Field / three-act</td><td class="dim">via 0188 · 0092</td><td>OS plot skeleton</td><td>subset of L4</td></tr>
+        <tr><td class="key">Snyder / Brody</td><td class="dim">0163 · 0164</td><td>timed beat template</td><td>template, not theory</td></tr>
+        <tr><td class="key">Coyne / Story Grid</td><td class="dim">0236 · 0049 · 0103</td><td>fractal scene grammar; genre conventions</td><td>strongest below-floor complement</td></tr>
+        <tr><td class="key">Yorke</td><td class="dim">0127</td><td>fractal five acts; change as universal</td><td>corroboration</td></tr>
+        <tr><td class="key">Weiland</td><td class="dim">7 volumes</td><td>arcs, outlining, theme — craft translation</td><td>the workbook shelf</td></tr>
+        <tr><td class="key">Storr / Cron</td><td class="dim">0232 · 0257</td><td>audience neuroscience</td><td>explains WHY the spine works</td></tr>
+        <tr><td class="key">Propp lineage</td><td class="dim">0105</td><td>function-sequence grammar</td><td>signpost ancestor</td></tr>
+        <tr><td class="key">Mittell</td><td class="dim">0565</td><td>seriality, episodic architecture</td><td>maps to nested storyforms</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- ═══════════ LADDER ═══════════ -->
+<section id="ladder">
+  <div class="panel">
+    <div class="kicker">Limb II · the containers</div>
+    <h2>The Scale Ladder</h2>
+    <p class="lede">Narrative comes in eight container sizes. <b>Containers hold; threads change.</b> A character arc, a setting arc, a rivalry — those are <b>threads</b> running <i>through</i> containers at any span. "Arc" was never between sequence and story; it runs across all of them.</p>
+
+    <details><summary><span class="rk">R1</span><span class="rt">Beat</span><span class="rs">one action, one reaction</span></summary>
+      <div class="bd"><p>The smallest dramatic exchange — one micro-shift in a value or intention.</p><div class="test"><b>Whole when:</b> something tried, something answered, something changed.</div></div></details>
+    <details><summary><span class="rk">R2</span><span class="rt">Scene</span><span class="rs">the smallest container that turns</span></summary>
+      <div class="bd"><p>A unit of continuous dramatic attention completing a miniature arc. Pacing formally lives here — see the Texture Layer's duration machinery. Its notation is the <b>Scene Card</b> (Setting section).</p><div class="test"><b>Whole when:</b> a value flips polarity (McKee) <b>and</b> the five commandments are present (Coyne). No turn, no scene.</div></div></details>
+    <details><summary><span class="rk">R3</span><span class="rt">Sequence</span><span class="rs">one dramatic question</span></summary>
+      <div class="bd"><p>A chain of scenes under one question, raised at the head, answered at the tail. Coyne's fractal rule is the load-bearing beam: the five commandments recur at every rung.</p><div class="test"><b>Whole when:</b> the question is answered — usually replaced by a worse one.</div></div></details>
+    <details><summary><span class="rk">R4</span><span class="rt">Act / Movement</span><span class="rs">one span of the argument</span></summary>
+      <div class="bd"><p>Each throughline consumes one <span class="tip" data-tip="Dramatica: each throughline runs 4 Signposts + 3 Journeys — a fixed four-act order. Sixteen signposts across the form.">Signpost</span>; a Driver turns the story. House note: OXO's six Movements are <i>presentation</i> containers; the four signposts are <i>structural</i> order. The mapping table is flagged plot_systems work.</p><div class="test"><b>Whole when:</b> all four throughlines advance one signpost; a driver has turned the story.</div></div></details>
+    <details><summary><span class="rk">R5</span><span class="rt">Story</span><span class="rs">the storyform</span></summary>
+      <div class="bd"><p>One complete Grand Argument — the spine's whole tree, satisfied. Instance: <code>oxo_primary_v1</code>.</p><div class="test"><b>Whole when:</b> all four throughlines close; Outcome and Judgment are delivered.</div></div></details>
+    <details><summary><span class="rk">R6</span><span class="rt">Nested Storyform</span><span class="rs">story within story</span></summary>
+      <div class="bd"><p>A complete argument inside a parent — already canon (integration protocol Pattern 1): own <code>storyform_id</code>; characters may switch roles across forms; <b>the parent wins conflicts</b>.</p><div class="test"><b>Whole when:</b> whole as a story <i>and</i> consistent with the parent.</div></div></details>
+    <details><summary><span class="rk">R7</span><span class="rt">IP / Series</span><span class="rs">many stories, one container</span></summary>
+      <div class="bd"><p>Four canonical patterns for stories inside one series: <b>anthology</b> (independent forms, shared world) · <b>serialized</b> (one form stretched — OXO's shape) · <b>episodic-with-mythology</b> (nested episode-arguments under a parent) · <b>braided</b> (parallel forms sharing one OS).</p><div class="test"><b>Whole when:</b> every member form closed; the shared canon uncontradicted.</div></div></details>
+    <details><summary><span class="rk">R8</span><span class="rt">Universe / Canon</span><span class="rs">multiple IPs, shared substrate</span></summary>
+      <div class="bd"><p>The LEECHSEED level — the canon-node and SSOT machinery <i>are</i> this rung's implementation.</p><div class="test"><b>Whole when:</b> never — a universe stays <b>consistent</b>, not finished.</div></div></details>
+
+    <div class="decree"><span class="dk">Standing addendum</span><br>Every completion test carries one final clause: <b><i>…and no in-scope invariant is breached.</i></b> A scene that turns beautifully while violating a standing invariant is not a whole scene — it is a breach. See The Law.</div>
+
+    <h3>Addresses</h3>
+    <p>Tree addresses locate <i>concepts</i> (<code>SPINE.L4</code>); ladder addresses locate <i>instances</i> (<code>OXO.primary.M2.q3.s12.b4</code>). Threads are spans: <code>tori.arc[OXO.primary.M1–M6]</code>. <span class="chip prov">Notation provisional</span></p>
+  </div>
+</section>
+
+<!-- ═══════════ SETTING ═══════════ -->
+<section id="setting">
+  <div class="panel">
+    <div class="kicker">Limb III · place at character grade</div>
+    <h2>The Setting System</h2>
+    <p class="lede"><b>Setting is the pressure field</b> — a place that pressures nothing is scenery. The Setting Slice mirrors the 12-Layer Character Database row for row, ending the same way: S12 fed from the storyform, exactly as L12 is fed from the Dramatica ingest.</p>
+
+    <h3>The Four Axes</h3>
+    <div class="qrow"><span class="qn">A1</span><span><b>Scale</b> — places nest: spot → room → site → locale → settlement → region → world → cosmos. <code>DCUS.campus.hall3</code></span></div>
+    <div class="qrow"><span class="qn">A2</span><span><b>Strata</b> — the twelve layers below.</span></div>
+    <div class="qrow"><span class="qn">A3</span><span><b>Function</b> — six deployment modes (Buckham): Anchor · Characterize · Pressure · Mood · Argue · Afford. A scene runs one or two, never all six.</span></div>
+    <div class="qrow"><span class="qn">A4</span><span><b>Time</b> — the slice is the baseline; <b>states</b> are dated overlays keyed to ladder addresses. <code>DCUS[M1] → DCUS[M4]</code> is the setting arc.</span></div>
+
+    <h3 style="margin-top:26px">The Twelve-Layer Slice</h3>
+    <div class="tog" role="group" aria-label="Slice view">
+      <button class="on" id="tg-schema">The Schema</button>
+      <button id="tg-dcus">DCUS · the proof</button>
+    </div>
+    <div class="tw"><table id="slicetable">
+      <thead><tr><th>Layer</th><th id="slicehead">Holds</th><th>Mirrors</th></tr></thead>
+      <tbody>
+        <tr><td class="key">S1 Body</td><td data-a="physical fabric — geography, architecture, dimensions, materials, layout" data-b="century-old Southern prestige campus, Delta Coast, Middle-Bands address">physical fabric — geography, architecture, dimensions, materials, layout</td><td class="dim mirror">L1 CORE</td></tr>
+        <tr><td class="key">S2 Weather</td><td data-a="climate, seasons, light, temperature; the place's rhythms" data-b="Gulf-South heat, hurricane season, Southern Gothic light — CANON-THIN, first authorable gap">climate, seasons, light, temperature; the place's rhythms</td><td class="dim mirror">L2 VITAL</td></tr>
+        <tr><td class="key">S3 Sensorium</td><td data-a="how it meets the senses — soundscape, smellscape, texture, palette" data-b="Southern Gothic register: brick and moss carrying a retrofit — Feed-linked clothing glow; palette descent clean → NEON-ROT">how it meets the senses — soundscape, smellscape, texture, palette</td><td class="dim mirror">L3 SOCIAL</td></tr>
+        <tr><td class="key">S4 Law</td><td data-a="the rules that bind — governance, institutional mechanics, permission and forbiddance" data-b="the Administration as depersonalized OS · Star-Rating · Sync Cult mechanics · clothing as enforced legibility">the rules that bind — governance, institutional mechanics, permission and forbiddance</td><td class="dim mirror">L4 WILL</td></tr>
+        <tr><td class="key">S5 Scar</td><td data-a="damage in the fabric — ruins, erasures, renames, sanded-off strata" data-b="the rename lattice: Red Stick Creek → Red Hills → DCUS. Erasure done twice; saying &quot;Red Hills&quot; is a small legibility violation">damage in the fabric — ruins, erasures, renames, sanded-off strata</td><td class="dim mirror">L5 WOUND</td></tr>
+        <tr><td class="key">S6 Economy</td><td data-a="what fuels it — resources, money, flows, who feeds and powers it" data-b="Bishop acquisition capital; prestige converted to product; the ownership war">what fuels it — resources, money, flows, who feeds and powers it</td><td class="dim mirror">L6 DRIVE</td></tr>
+        <tr><td class="key">S7 Founding</td><td data-a="origin — who built it, why, the founding stack, the deep history" data-b="100+ years of private prestige; the founding name sanded off a century before the Bishops arrived">origin — who built it, why, the founding stack, the deep history</td><td class="dim mirror">L7 ORIGIN</td></tr>
+        <tr><td class="key">S8 Habit</td><td data-a="attachment architecture — rituals, routines, belonging gradients" data-b="alumni-legacy bloc vs Sync-era students; split faculty loyalties; the ritual life of the Star-Rating">attachment architecture — rituals, routines, belonging gradients</td><td class="dim mirror">L8 IMPRINT</td></tr>
+        <tr><td class="key">S9 Allure</td><td data-a="the place's erotics — what it promises, what draws people, its glamour" data-b="the meritocratic promise — the exact premise Tori must stop believing (Growth: Stop); the Feed's glamour">the place's erotics — what it promises, what draws people, its glamour</td><td class="dim mirror">L9 EROS</td></tr>
+        <tr><td class="key">S10 Underside</td><td data-a="what it represses — hidden zones, the unspoken, what surfaces under pressure" data-b="the first name under the second — Movement 3's forensic mode; what the rebrand-as-Boot-Sequence overwrote">what it represses — hidden zones, the unspoken, what surfaces under pressure</td><td class="dim mirror">L10 SHADOW</td></tr>
+        <tr><td class="key">S11 Vector</td><td data-a="trajectory — bloom, rot, collapse, redemption; feeds the setting arc" data-b="the six-movement descent: clean → NEON-ROT → hunt; collapse trajectory">trajectory — bloom, rot, collapse, redemption; feeds the setting arc</td><td class="dim mirror">L11 DESTINY</td></tr>
+        <tr><td class="key">S12 Function</td><td data-a="storyform binding, fed from the spine — the Domain embodied, argument role, invariant set" data-b="OS Domain embodied: Situation / The Past. Cost = Memories — history deleted for programming space, done to a place. Invariants: the Ecclesial Laws">storyform binding, fed from the spine — the Domain embodied, argument role, invariant set</td><td class="dim mirror">L12 FUNCTION</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:8px"><span class="chip prov">Layer names provisional</span> <span class="chip ruled">DCUS proof: every layer filled from canon</span></p>
+
+    <h3>The Scene Card — the R2 notation</h3>
+    <div class="scroll">
+      <div class="sc-t">SCENE CARD</div>
+      <dl>
+        <dt>address</dt><dd><code>OXO.primary.M2.q3.s12</code></dd>
+        <dt>setting</dt><dd><code>DCUS.campus.hall3 @ M2</code> — slice + state</dd>
+        <dt>active strata</dt><dd>S3 Sensorium · S4 Law</dd>
+        <dt>function</dt><dd>Pressure + Mood <i>(max two)</i></dd>
+        <dt>sensorium</dt><dd>three telling details, no more</dd>
+        <dt>commandments</dt><dd>inciting · turn · crisis · climax · resolution</dd>
+        <dt>value turn</dt><dd>safety + → − <i>(no turn, no scene)</i></dd>
+        <dt>duration</dt><dd>scene | summary | stretch | pause | ellipsis</dd>
+        <dt>telling</dt><dd>voice + focalization for this scene</dd>
+        <dt>threads</dt><dd><code>tori.arc</code> · <code>rs.rivalry</code></dd>
+        <dt>invariants</dt><dd>in-scope set, checked — a breach means the scene is wrong</dd>
+        <dt>exit state</dt><dd>what is now true that wasn't</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TEXTURE ═══════════ -->
+<section id="texture">
+  <div class="panel">
+    <div class="kicker">Limb IV · the discourse side</div>
+    <h2>The Texture Layer</h2>
+    <p class="lede">Every telling is a configuration of ten answers. The one law worth tattooing: <b>who speaks ≠ who sees.</b></p>
+    <div class="tq">
+      <details><summary><span class="rk">T1</span><span class="rt">Who speaks</span></summary><div class="bd"><p>Narrator in/outside the story; frame levels (nest like R6); <span class="tip" data-tip="Booth: the gap between the narrator's account and the implied author's truth.">reliability</span>; when the telling happens (after, during, before, interleaved).</p></div></details>
+      <details><summary><span class="rk">T2</span><span class="rt">Who sees</span></summary><div class="bd"><p><span class="tip" data-tip="Genette's term for the perspective filter — who perceives, as distinct from who narrates.">Focalization</span>: zero (unrestricted) · internal (through a character) · external (surfaces only).</p></div></details>
+      <details><summary><span class="rk">T3</span><span class="rt">In what order</span></summary><div class="bd"><p>Story-time vs telling-time. <span class="tip" data-tip="Analepsis = flashback; prolepsis = flashforward. Each has reach (how far) and extent (how long).">Anachronies</span>, formalized.</p></div></details>
+      <details><summary><span class="rk">T4</span><span class="rt">At what speed</span></summary><div class="bd"><p><b>Pacing, formalized</b> — five speeds: scene (1:1) · summary · stretch · pause · ellipsis. Pacing is the <i>pattern</i> of speeds.</p></div></details>
+      <details><summary><span class="rk">T5</span><span class="rt">How often</span></summary><div class="bd"><p>Once-for-once · n-times-for-once (trauma's signature) · once-for-n-times (habit's — how S8 renders).</p></div></details>
+      <details><summary><span class="rk">T6</span><span class="rt">In what words</span></summary><div class="bd"><p>Register, syntax rhythm, <span class="tip" data-tip="Free indirect discourse — narrator and character voice fused. The novel's signature instrument.">FID</span>; the distance dial — "show don't tell" is a dial, not a commandment.</p></div></details>
+      <details><summary><span class="rk">T7</span><span class="rt">With what feeling</span></summary><div class="bd"><p>Tone (author attitude) vs mood (reader atmosphere). Hogan: emotion as structure, not decoration.</p></div></details>
+      <details><summary><span class="rk">T8</span><span class="rt">Through what thresholds</span></summary><div class="bd"><p><span class="tip" data-tip="Genette's Paratexts: titles, epigraphs, chapter heads, covers — the apparatus the reader crosses around the text.">Paratext</span> — a design surface for an IP builder: episode titles, movement names, in-world documents.</p></div></details>
+      <details><summary><span class="rk">T9</span><span class="rt">Breaking which frames</span></summary><div class="bd"><p><span class="tip" data-tip="A violation between narrative levels — a narrator entering the story, a character addressing the reader.">Metalepsis</span>; the unnatural catalogued, not forbidden.</p></div></details>
+      <details><summary><span class="rk">T10</span><span class="rt">Aimed at whom</span></summary><div class="bd"><p>Narratee and implied reader. In games, the player-narratee fusion.</p></div></details>
+    </div>
+
+    <h3>The Translation Grid</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Workshop term</th><th>Actual configuration</th></tr></thead>
+      <tbody>
+        <tr><td class="key">First person</td><td>narrator inside the story + internal fixed focalization</td></tr>
+        <tr><td class="key">Third limited</td><td>narrator outside + internal fixed</td></tr>
+        <tr><td class="key">Third omniscient</td><td>narrator outside + zero focalization</td></tr>
+        <tr><td class="key">Head-hopping</td><td>internal <i>variable</i>, unmanaged</td></tr>
+        <tr><td class="key">Camera-eye</td><td>narrator outside + external</td></tr>
+        <tr><td class="key">Second person</td><td>narratee-as-protagonist</td></tr>
+        <tr><td class="key">Epistolary</td><td>narrator inside + interleaved telling</td></tr>
+        <tr><td class="key">Unreliable narrator</td><td>any inside narrator + reliability gap</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="alarm"><span class="dk">House finding</span><br><b>OXO has no Telling Profile.</b> No prose exists — whose voice tells it, who focalizes, what the movements' paratext apparatus is: an unmade decision set. One rulable artifact when prose opens.</div>
+  </div>
+</section>
+
+<!-- ═══════════ MEDIUMS ═══════════ -->
+<section id="mediums">
+  <div class="panel">
+    <div class="kicker">Limb V · the channel contracts</div>
+    <h2>The Medium Grammars</h2>
+    <p class="lede"><b>Story-side is medium-independent; texture is where the medium bites.</b> A storyform survives adaptation; a Telling Profile gets re-instrumented per medium. One IP at R7, many instantiations.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Medium</th><th>Time regime</th><th>Agency</th><th>Native narrator</th><th>The signature move</th></tr></thead>
+      <tbody>
+        <tr><td class="key">Prose</td><td class="dim">reader-paced</td><td class="dim">none</td><td>the sentence voice</td><td>full interiority; FID native</td></tr>
+        <tr><td class="key">Film</td><td class="dim">fixed-flow</td><td class="dim">none</td><td>the camera</td><td>focalization = shot selection; <b>the cut is ellipsis</b></td></tr>
+        <tr><td class="key">TV / serial</td><td class="dim">installment-gapped</td><td class="dim">none</td><td>series voice + paratext</td><td>"previously on" = frequency as apparatus; seasons = nested forms</td></tr>
+        <tr><td class="key">Games</td><td class="dim">player-paced</td><td><b>co-authorship</b></td><td>the system + environment</td><td><span class="tip" data-tip="Mechanics ARE meaning; dissonance = the rules arguing against the story — a constraint-layer event.">ludonarrative</span>; the setting slice narrates; order becomes topology</td></tr>
+        <tr><td class="key">TTRPG</td><td class="dim">table-paced</td><td><b>collective</b></td><td>the GM, live</td><td><b>rulebooks are DOCTRINE 0 artifacts with dice</b>; sourcebooks are printed slices</td></tr>
+        <tr><td class="key">Music video <span class="chip prov">scaffold</span></td><td class="dim">track-locked</td><td class="dim">none</td><td>the track</td><td>duration dictated by the beat grid; lyric–image counterpoint</td></tr>
+        <tr><td class="key">Short-form <span class="chip prov">scaffold</span></td><td class="dim">seconds-scale</td><td>swipe</td><td>the creator-persona</td><td>the first second is the inciting incident or death; the algorithm is paratext</td></tr>
+        <tr><td class="key">PMV / HMV <span class="chip orange">Orange</span> <span class="chip prov">scaffold</span></td><td class="dim">track-locked</td><td class="dim">none</td><td>the edit itself</td><td>an escalation ladder cut to a beat grid; curation is the authorship</td></tr>
+        <tr><td class="key">Porn <span class="chip orange">Orange</span></td><td class="dim">viewer-scrubbed</td><td>scrub</td><td>direct address</td><td><b>normalized metalepsis</b> — parasocial second person is the contract</td></tr>
+        <tr><td class="key">Theatre</td><td class="dim">co-present</td><td class="dim">live loop</td><td>embodied ensemble</td><td>duration cannot cut; setting is physically real; every show a variant text</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:10px" class="dim">Orange rows carry craft grammar only here; surfaces ride the subsidiary firewall. Scaffolds deepen via the BOLO 16 research pass (Vernallis anchors the music-video shelf).</p>
+  </div>
+</section>
+
+<!-- ═══════════ LAW ═══════════ -->
+<section id="law">
+  <div class="panel">
+    <div class="kicker">Cross-cutting · the prescriptive register</div>
+    <h2>The Law — Narrative Invariants</h2>
+    <p class="lede"><b>Tropes describe; invariants forbid.</b> The constraint layer sits over the whole lattice, and enforcement rides every completion test: <i>…and no in-scope invariant is breached.</i></p>
+    <h3>Doctrine 0 — the seven meta-rules</h3>
+    <div class="qrow"><span class="qn">I</span><span><b>Earned, not declared</b> — two concrete uses before promotion.</span></div>
+    <div class="qrow"><span class="qn">II</span><span><b>Exists only in writing</b> — held in memory, it's a mood.</span></div>
+    <div class="qrow"><span class="qn">III</span><span><b>Names what it forbids</b> — falsifiable in-scene, or it's decoration.</span></div>
+    <div class="qrow"><span class="qn">IV</span><span><b>Holds at every scale</b> — coherence is the invariant surviving zoom. This is the ladder's dimension.</span></div>
+    <div class="qrow"><span class="qn">V</span><span><b>Names its derivation</b> — no lineage, no audit, no trust.</span></div>
+    <div class="qrow"><span class="qn">VI</span><span><b>Few</b> — more than seven in a layer is a preference list.</span></div>
+    <div class="qrow"><span class="qn">VII</span><span><b>Dies by countermand, never by neglect</b> — a quiet violation is a breach.</span></div>
+
+    <h3>The Census, scope-mapped</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Corpus</th><th>Scope</th><th>Rides at</th></tr></thead>
+      <tbody>
+        <tr><td class="key">Layer 0 Invariants 1–5</td><td>world physics — Ontology · Causality · Time · Irreversibility · Entropy</td><td>R8 universe</td></tr>
+        <tr><td class="key">Invariants of Power</td><td>series power framework (KLK)</td><td>R7 IP</td></tr>
+        <tr><td class="key">narrative_invariant</td><td>story argument — e.g. <code>cost_and_meaning</code>: meaning survives systemic defeat</td><td>R5 story</td></tr>
+        <tr><td class="key">Six Movements set</td><td>one per movement: Equity → Collapse</td><td>R4 act</td></tr>
+        <tr><td class="key">Ecclesial Laws</td><td>the Administration's fixed laws</td><td>S12 place</td></tr>
+        <tr><td class="key">Per-character sets</td><td>Tori ×4, validated</td><td>character threads</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alarm"><span class="dk">Open before the throne</span><br>DOCTRINE 0 awaits <b>ratification</b>. The rename (Tenet ⭐ / Ethos ⭐ leading the bench) was gated on schema decision #3 — <b>#3 executed, the gate stands open.</b> One ruling, one propagation pass.</div>
+  </div>
+</section>
+
+<!-- ═══════════ COLLISION ═══════════ -->
+<section id="collision">
+  <div class="panel">
+    <div class="kicker">Module V · the analysis layer <span class="chip parked">Parked · fires on "go"</span></div>
+    <h2>The Collision Engine</h2>
+    <p class="lede">Generalized <span class="tip" data-tip="Astrology's comparison discipline: two charts read against each other, aspect by aspect. Here generalized to any slice vs any slice.">synastry</span> — any slice against any slice. <b>Friction is dramatic material.</b> A layer above the entities that feeds back down as overlays, keyed to ladder time. Zero open decisions.</p>
+    <div class="tw"><table>
+      <thead><tr><th>Class</th><th>Example</th><th>Machinery</th></tr></thead>
+      <tbody>
+        <tr><td class="key">C × C</td><td>Tori × Anna · Tori × her dad</td><td><b>exists, unrun</b> — Character Astrology Cat 11: aspect mesh, relationship tables, composite chart (= the RS throughline, rhymed)</td></tr>
+        <tr><td class="key">C × S</td><td>Tori × DCUS · Tori × home</td><td><b>new</b> — the mirror makes it a straight diagonal: Lx vs Sx down twelve rows</td></tr>
+        <tr><td class="key">C × Situation</td><td>the uncomfortable new situation</td><td><b>exists</b> — Cat 13 transits: external pings → state diffs; the scene card is the firing site</td></tr>
+        <tr><td class="key">C × Group</td><td>family, the social field</td><td><b>half-exists</b> — network mesh scales to N; L7 Origin + L8 Imprint receive</td></tr>
+      </tbody>
+    </table></div>
+    <h3>The Diagonal, sampled — Tori × DCUS</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Row</th><th>Collision</th></tr></thead>
+      <tbody>
+        <tr><td class="key">L4 Will × S4 Law</td><td>her will against the Star-Rating and the Administration OS — the compliance collision, mechanized</td></tr>
+        <tr><td class="key">L5 Wound × S5 Scar</td><td>her damage resonating with a campus erased twice — why the place gets under her skin</td></tr>
+        <tr><td class="key">L9 Eros × S9 Allure</td><td>the meritocratic promise seducing <i>exactly her</i> — and Growth: Stop says the story is her un-falling for it</td></tr>
+        <tr><td class="key">L10 Shadow × S10 Underside</td><td>what she represses against what the school hides — Movement 3's forensic mode is this row firing</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:10px">The full twelve-row table is functionally a <b>scene-generation menu</b> for Movements 2–4. Build plan parked in <code>oscar-mike/collision-engine.md</code> · BOLO 17.</p>
+  </div>
+</section>
+
+<footer>The lattice is IP-agnostic. The Outliers is the guinea pig, not the owner. · Canon lives in <code>_SSOT/01_NARRATIVE_FRAMEWORKS</code> &amp; <code>03_SETTING_SYSTEMS</code></footer>
+</main>
+</div>
+</div>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('nav button');
+  var secs=document.querySelectorAll('main section');
+  function go(id){
+    secs.forEach(function(s){s.classList.toggle('on',s.id===id)});
+    btns.forEach(function(b){b.classList.toggle('on',b.dataset.s===id)});
+    window.scrollTo({top:0});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){go(b.dataset.s)})});
+  document.querySelectorAll('.mod').forEach(function(m){m.addEventListener('click',function(){go(m.dataset.go)})});
+
+  var tgA=document.getElementById('tg-schema'),tgB=document.getElementById('tg-dcus');
+  var head=document.getElementById('slicehead');
+  var cells=document.querySelectorAll('#slicetable td[data-a]');
+  function slice(mode){
+    tgA.classList.toggle('on',mode==='a');tgB.classList.toggle('on',mode==='b');
+    head.textContent=mode==='a'?'Holds':'DCUS — filled from canon';
+    cells.forEach(function(c){c.textContent=c.dataset[mode]});
+  }
+  tgA.addEventListener('click',function(){slice('a')});
+  tgB.addEventListener('click',function(){slice('b')});
+})();
+</script>
