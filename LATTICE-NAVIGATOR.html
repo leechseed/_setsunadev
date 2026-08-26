@@ -1,181 +1,192 @@
 <title>The Story Lattice</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,800;0,900;1,800;1,900&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
   :root{
-    --ground:#100d0a; --panel:#1b1611; --panel2:#241d15; --inset:#0c0a07;
-    --ink:#e6d9bd; --muted:#9a8a6d; --faint:#6e6249;
-    --gold:#c9a54a; --gold-dim:#77622e; --gold-line:#4c3f1e;
-    --blood:#a8493d; --blood-dim:#5e2b24;
-    --ok:#7d9c5f; --warn:#c98b3a;
-    --serif:'Alegreya',Georgia,serif; --disp:'Cinzel','Times New Roman',serif; --sans:'Alegreya Sans','Gill Sans',system-ui,sans-serif;
+    --ground:#0c0e13; --panel:#141720; --panel2:#1a1e2a; --inset:#0f1118;
+    --line:#262c3b; --line2:#323a4e;
+    --ink:#edf0f7; --muted:#939bad; --faint:#5c6478;
+    --mag:#ff2d78; --vio:#8b5cf6; --cyan:#22d3ee;
+    --grad:linear-gradient(100deg,var(--mag),var(--vio) 55%,var(--cyan));
+    --ok:#34d399; --warn:#fbbf24; --bad:#f87171;
+    --sans:'Archivo',system-ui,sans-serif; --mono:'JetBrains Mono',Consolas,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important}}
-  body{background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:16.5px;line-height:1.55;
-    background-image:radial-gradient(ellipse 90% 60% at 50% -10%,#1d160e 0%,transparent 60%)}
-  .frame{max-width:1220px;margin:0 auto;padding:0 16px 60px}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important;animation:none!important}}
+  body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;
+    background-image:radial-gradient(ellipse 70% 45% at 18% -8%,rgba(139,92,246,.14),transparent 60%),
+                     radial-gradient(ellipse 55% 40% at 92% -6%,rgba(255,45,120,.10),transparent 55%),
+                     radial-gradient(ellipse 60% 50% at 70% 110%,rgba(34,211,238,.06),transparent 60%)}
+  .frame{max-width:1200px;margin:0 auto;padding:0 18px 70px}
+  code{font-family:var(--mono);font-size:.86em;background:#0a0c11;border:1px solid var(--line);padding:1px 6px;border-radius:4px;color:#a5e6f5}
 
   /* ── header ── */
-  header{padding:34px 8px 22px;text-align:center;border-bottom:1px solid var(--gold-line);position:relative}
-  header::after{content:"";display:block;height:3px;max-width:520px;margin:20px auto 0;
-    background:linear-gradient(90deg,transparent,var(--gold-dim) 20%,var(--gold) 50%,var(--gold-dim) 80%,transparent)}
-  .over{font-family:var(--sans);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
-  h1{font-family:var(--disp);font-weight:900;font-size:clamp(30px,5vw,52px);letter-spacing:.08em;color:var(--gold);
-    text-wrap:balance;margin-top:8px;text-shadow:0 0 28px rgba(201,165,74,.18)}
-  .sub{margin-top:10px;color:var(--muted);font-style:italic;font-size:17px}
-  .sub b{color:var(--ink);font-style:normal}
+  header{padding:42px 4px 6px}
+  .over{font-size:11.5px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+  .over b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-style:italic;font-weight:900;font-size:clamp(40px,7vw,76px);letter-spacing:-.02em;text-transform:uppercase;
+    line-height:.95;margin:10px 0 12px;text-wrap:balance}
+  h1 .gx{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:17px;max-width:62ch}
+  .sub b{color:var(--ink)}
+  .speedline{height:4px;background:var(--grad);border-radius:2px;margin:24px 0 0;transform:skewX(-20deg);transform-origin:left}
 
-  /* ── shell: sidebar + panel ── */
-  .shell{display:flex;gap:22px;margin-top:26px;align-items:flex-start}
-  nav{width:230px;flex:none;position:sticky;top:14px;display:flex;flex-direction:column;gap:2px;
-    border:1px solid var(--gold-line);background:var(--panel);padding:10px;box-shadow:0 0 0 1px #000,inset 0 0 40px rgba(0,0,0,.5)}
-  nav .rail{font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);
-    padding:8px 10px 4px;border-bottom:1px solid #2a2318;margin-bottom:4px}
-  nav button{all:unset;cursor:pointer;display:flex;align-items:baseline;gap:9px;padding:9px 10px;
-    font-family:var(--disp);font-size:13.5px;font-weight:700;letter-spacing:.06em;color:var(--muted);
-    border-left:3px solid transparent;transition:background .15s,color .15s}
-  nav button .rn{font-family:var(--sans);font-size:10.5px;color:var(--faint);letter-spacing:.12em;min-width:20px}
-  nav button:hover{background:#252017;color:var(--ink)}
-  nav button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
-  nav button.on{background:linear-gradient(90deg,#2c2413,#1f1a12);color:var(--gold);border-left-color:var(--gold)}
-  main{flex:1;min-width:0}
+  /* ── top nav ── */
+  .nav{position:sticky;top:0;z-index:40;background:rgba(12,14,19,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);margin:0 -18px;padding:0 18px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .nav button{all:unset;cursor:pointer;font-style:italic;font-weight:800;font-size:13.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--muted);padding:15px 13px 12px;border-bottom:3px solid transparent;white-space:nowrap;
+    transition:color .15s}
+  .nav button:hover{color:var(--ink)}
+  .nav button:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+  .nav button.on{color:var(--ink);border-image:var(--grad) 1;border-bottom:3px solid}
+  .nav .rn{font-style:normal;font-weight:600;font-family:var(--mono);font-size:10px;color:var(--faint);margin-right:6px}
 
+  main{margin-top:26px}
   section{display:none}
-  section.on{display:block}
-  .panel{border:1px solid var(--gold-line);background:var(--panel);box-shadow:0 0 0 1px #000,inset 0 0 60px rgba(0,0,0,.45);
-    padding:26px 28px;margin-bottom:20px}
-  .panel h2{font-family:var(--disp);font-weight:700;font-size:24px;letter-spacing:.09em;color:var(--gold);margin-bottom:4px}
-  .kicker{font-family:var(--sans);font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
-  .lede{color:var(--muted);font-style:italic;margin:8px 0 18px;max-width:68ch}
-  .lede b{color:var(--ink);font-style:normal}
-  h3{font-family:var(--disp);font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--ink);margin:22px 0 10px}
+  section.on{display:block;animation:rise .25s ease}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  .panel{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--inset));border-radius:14px;
+    padding:28px 30px;margin-bottom:20px;position:relative;overflow:hidden}
+  .panel::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--grad)}
+  .kicker{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  h2{font-style:italic;font-weight:900;font-size:clamp(24px,3.4vw,34px);text-transform:uppercase;letter-spacing:-.01em;margin:4px 0 6px}
+  .lede{color:var(--muted);margin:6px 0 20px;max-width:68ch;font-size:16.5px}
+  .lede b{color:var(--ink)}
+  h3{font-style:italic;font-weight:800;font-size:15px;letter-spacing:.1em;text-transform:uppercase;margin:26px 0 12px}
+  h3::after{content:"";display:inline-block;width:44px;height:3px;background:var(--grad);margin-left:12px;vertical-align:middle;
+    transform:skewX(-20deg)}
   p{max-width:70ch;margin-bottom:10px}
 
-  /* ── chips & pills ── */
-  .chip{display:inline-block;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.14em;
-    padding:2px 8px 1px;border:1px solid;border-radius:2px;vertical-align:middle;text-transform:uppercase}
-  .black{color:#cfc3a6;border-color:#55492f;background:#191510}
-  .orange{color:#e0a173;border-color:#7a4a2a;background:#221410}
-  .ruled{color:var(--ok);border-color:#3d4f2e;background:#141a0f}
-  .prov{color:var(--warn);border-color:#6a4a20;background:#1e1509}
-  .gap{color:var(--blood);border-color:var(--blood-dim);background:#1c0f0d}
-  .parked{color:#b9a8d6;border-color:#4a3d63;background:#161221}
+  /* ── chips ── */
+  .chip{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    padding:3px 9px;border-radius:99px;border:1px solid;vertical-align:middle}
+  .black{color:#c6cddc;border-color:#3a4256;background:#1a1f2c}
+  .orange{color:#ffab73;border-color:#7a4a2a;background:#231410}
+  .ruled{color:var(--ok);border-color:#1d5c44;background:#0d1f18}
+  .prov{color:var(--warn);border-color:#6d5314;background:#211a08}
+  .gap{color:var(--bad);border-color:#6e2727;background:#200f0f}
+  .parked{color:#c4b5fd;border-color:#4c3d8f;background:#171232}
 
   /* ── tables ── */
-  .tw{overflow-x:auto;border:1px solid #2c2416;background:var(--inset)}
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--inset)}
   table{border-collapse:collapse;width:100%;font-size:14.5px}
-  th{font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
-    text-align:left;padding:9px 12px;border-bottom:1px solid var(--gold-line);background:#171310;white-space:nowrap}
-  td{padding:8px 12px;border-bottom:1px solid #221c12;vertical-align:top}
+  th{font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+    text-align:left;padding:10px 14px;border-bottom:1px solid var(--line2);background:#12151d;white-space:nowrap}
+  td{padding:9px 14px;border-bottom:1px solid #1c212e;vertical-align:top}
   tr:last-child td{border-bottom:none}
-  tbody tr:hover td{background:#1d1811}
-  td.key{font-family:var(--disp);font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--gold);white-space:nowrap}
+  tbody tr{transition:background .12s}
+  tbody tr:hover td{background:#181c28}
+  td.key{font-style:italic;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
   td.dim{color:var(--muted)}
 
   /* ── accordions ── */
-  details{border:1px solid #2c2416;background:var(--panel2);margin-bottom:8px}
-  details summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px;padding:11px 14px;user-select:none}
+  details{border:1px solid var(--line);border-radius:10px;background:var(--panel2);margin-bottom:8px;overflow:hidden}
+  details summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:13px;padding:12px 16px;user-select:none;
+    transition:background .12s}
   details summary::-webkit-details-marker{display:none}
-  details summary:hover{background:#2a2318}
-  details summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
-  details[open] summary{border-bottom:1px solid #2c2416;background:#211b12}
-  .rk{font-family:var(--disp);font-weight:900;font-size:14px;color:var(--gold);min-width:38px;letter-spacing:.04em}
-  .rt{font-family:var(--disp);font-weight:700;font-size:14.5px;letter-spacing:.05em}
-  .rs{color:var(--muted);font-style:italic;font-size:14px;margin-left:auto;text-align:right}
-  details .bd{padding:13px 16px 15px;font-size:15px}
+  details summary:hover{background:#212636}
+  details summary:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+  details[open] summary{border-bottom:1px solid var(--line);background:#1e2331}
+  .rk{font-family:var(--mono);font-weight:600;font-size:12px;min-width:36px;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .rt{font-style:italic;font-weight:800;font-size:14.5px;text-transform:uppercase;letter-spacing:.03em}
+  .rs{color:var(--faint);font-size:13.5px;margin-left:auto;text-align:right}
+  details .bd{padding:14px 18px 16px;font-size:15px}
   details .bd p{margin-bottom:8px}
-  .test{border-left:3px solid var(--gold-dim);background:#171208;padding:8px 12px;margin-top:8px;font-size:14.5px}
-  .test b{color:var(--gold)}
+  .test{border-left:3px solid;border-image:var(--grad) 1;background:#12151f;padding:9px 13px;margin-top:8px;font-size:14.5px;border-radius:0 8px 8px 0}
+  .test b{color:var(--cyan)}
 
-  /* ── tooltips (the CK3 move) ── */
-  .tip{border-bottom:1px dotted var(--gold-dim);cursor:help;position:relative}
-  .tip:hover::after,.tip:focus::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 8px);z-index:30;
-    width:min(340px,72vw);background:#0e0b07;color:var(--ink);border:1px solid var(--gold);padding:10px 12px;
-    font-size:13.5px;font-style:normal;font-family:var(--serif);line-height:1.45;box-shadow:0 6px 24px #000,0 0 0 1px #000}
+  /* ── tooltips ── */
+  .tip{border-bottom:1px dotted var(--vio);cursor:help;position:relative}
+  .tip:hover::after,.tip:focus::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 9px);z-index:50;
+    width:min(340px,72vw);background:#0b0d13;color:var(--ink);border:1px solid var(--vio);border-radius:10px;padding:10px 13px;
+    font-size:13.5px;font-style:normal;font-weight:400;text-transform:none;letter-spacing:0;line-height:1.5;
+    box-shadow:0 10px 30px rgba(0,0,0,.7)}
 
   /* ── callouts ── */
-  .decree{border:1px solid var(--gold);background:linear-gradient(180deg,#221b0e,#191309);padding:14px 18px;margin:16px 0;
-    box-shadow:inset 0 0 30px rgba(0,0,0,.4)}
-  .decree .dk{font-family:var(--disp);font-size:12px;font-weight:700;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}
-  .alarm{border:1px solid var(--blood);background:#180e0c;padding:12px 16px;margin:14px 0}
-  .alarm .dk{font-family:var(--disp);font-size:12px;font-weight:700;letter-spacing:.22em;color:var(--blood);text-transform:uppercase}
+  .decree{border:1px solid transparent;border-radius:12px;padding:15px 19px;margin:18px 0;
+    background:linear-gradient(var(--panel2),var(--panel2)) padding-box,var(--grad) border-box}
+  .decree .dk{font-style:italic;font-weight:800;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .alarm{border:1px solid #6e2727;border-radius:12px;background:#1c1013;padding:13px 17px;margin:16px 0}
+  .alarm .dk{font-style:italic;font-weight:800;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--bad)}
 
-  /* ── overview map ── */
+  /* ── overview ── */
   .realm{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
-  .realm .side{border:1px solid #2c2416;background:var(--inset);padding:14px}
-  .side h4{font-family:var(--sans);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);
-    text-align:center;padding-bottom:9px;border-bottom:1px solid #241d12;margin-bottom:10px}
-  .mod{all:unset;display:block;width:100%;cursor:pointer;border:1px solid var(--gold-line);background:var(--panel2);
-    padding:11px 13px;margin-bottom:8px;transition:border-color .15s,background .15s}
-  .mod:hover{border-color:var(--gold);background:#282013}
-  .mod:focus-visible{outline:2px solid var(--gold)}
-  .mod .mt{font-family:var(--disp);font-weight:700;font-size:14px;letter-spacing:.06em;color:var(--gold)}
-  .mod .md{font-size:13.5px;color:var(--muted);margin-top:2px}
-  .crossbar{border:1px solid #3a3050;background:#151122;padding:11px 13px;margin-top:12px}
-  .crossbar .mt{color:#b9a8d6}
-  .statrow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 4px}
-  .stat{flex:1;min-width:120px;border:1px solid #2c2416;background:var(--inset);padding:10px 12px;text-align:center}
-  .stat .n{font-family:var(--disp);font-weight:900;font-size:26px;color:var(--gold);font-variant-numeric:tabular-nums}
-  .stat .l{font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .side{border:1px solid var(--line);border-radius:12px;background:var(--inset);padding:15px}
+  .side h4{font-size:10.5px;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);
+    text-align:center;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:11px}
+  .mod{all:unset;display:block;width:100%;cursor:pointer;border:1px solid var(--line);border-radius:10px;background:var(--panel2);
+    padding:12px 15px;margin-bottom:8px;transition:transform .15s,border-color .15s,box-shadow .15s}
+  .mod:hover{border-color:var(--vio);transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,92,246,.15)}
+  .mod:focus-visible{outline:2px solid var(--cyan)}
+  .mod .mt{font-style:italic;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.03em}
+  .mod .md{font-size:13.5px;color:var(--muted);margin-top:3px}
+  .crossbar{margin-top:12px;background:linear-gradient(var(--panel2),var(--panel2)) padding-box,
+    linear-gradient(100deg,rgba(255,45,120,.55),rgba(139,92,246,.55),rgba(34,211,238,.55)) border-box;border-color:transparent}
+  .statrow{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 2px}
+  .stat{flex:1;min-width:110px;border:1px solid var(--line);border-radius:10px;background:var(--inset);padding:12px;text-align:center;
+    transform:skewX(-6deg)}
+  .stat>div{transform:skewX(6deg)}
+  .stat .n{font-style:italic;font-weight:900;font-size:30px;font-variant-numeric:tabular-nums;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .l{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:2px}
 
-  /* ── setting slice toggle ── */
-  .tog{display:inline-flex;border:1px solid var(--gold-line);margin-bottom:12px}
-  .tog button{all:unset;cursor:pointer;font-family:var(--disp);font-size:12.5px;font-weight:700;letter-spacing:.1em;
-    padding:8px 18px;color:var(--muted)}
-  .tog button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
-  .tog button.on{background:var(--gold);color:#141006}
-  .mirror{font-family:var(--sans);font-size:11px;color:var(--faint);letter-spacing:.1em;white-space:nowrap}
+  /* ── slice toggle ── */
+  .tog{display:inline-flex;border:1px solid var(--line2);border-radius:99px;overflow:hidden;margin-bottom:14px;background:var(--inset)}
+  .tog button{all:unset;cursor:pointer;font-style:italic;font-weight:800;font-size:12.5px;letter-spacing:.08em;
+    text-transform:uppercase;padding:9px 20px;color:var(--muted);transition:color .15s}
+  .tog button:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+  .tog button.on{background:var(--grad);color:#0b0d12}
+  .mirror{font-family:var(--mono);font-size:10.5px;color:var(--faint);white-space:nowrap}
 
   /* ── scene card ── */
-  .scroll{border:1px solid var(--gold-dim);background:#171208;padding:18px 22px;font-family:var(--serif);
-    box-shadow:inset 0 0 40px rgba(0,0,0,.5);max-width:640px}
-  .scroll .sc-t{font-family:var(--disp);font-weight:700;letter-spacing:.18em;color:var(--gold);font-size:13px;
-    text-align:center;border-bottom:1px solid var(--gold-line);padding-bottom:8px;margin-bottom:10px}
-  .scroll dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;font-size:14px}
-  .scroll dt{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+  .scroll{border:1px solid transparent;border-radius:14px;padding:20px 24px;max-width:640px;
+    background:linear-gradient(180deg,#141824,#10131c) padding-box,var(--grad) border-box}
+  .scroll .sc-t{font-style:italic;font-weight:900;letter-spacing:.2em;font-size:13px;text-transform:uppercase;text-align:center;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+    border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:12px}
+  .scroll dl{display:grid;grid-template-columns:auto 1fr;gap:5px 18px;font-size:14px}
+  .scroll dt{font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:3px}
   .scroll dd{color:var(--ink)}
 
-  /* ── ten questions grid ── */
   .tq{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px}
-
-  .qrow{display:flex;gap:10px;align-items:baseline;padding:7px 0;border-bottom:1px solid #221c12;font-size:15px}
+  .qrow{display:flex;gap:12px;align-items:baseline;padding:8px 0;border-bottom:1px solid #1c212e;font-size:15px}
   .qrow:last-child{border-bottom:none}
-  .qn{font-family:var(--disp);font-weight:900;color:var(--gold);min-width:26px;font-size:13px}
+  .qn{font-family:var(--mono);font-weight:600;font-size:12px;min-width:26px;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-  footer{margin-top:26px;border-top:1px solid var(--gold-line);padding-top:14px;text-align:center;
-    color:var(--faint);font-size:13px;font-style:italic}
+  footer{margin-top:30px;border-top:1px solid var(--line);padding-top:16px;text-align:center;color:var(--faint);font-size:13px}
 
   @media (max-width:900px){
-    .shell{flex-direction:column}
-    nav{position:static;width:100%;flex-direction:row;flex-wrap:wrap}
-    nav .rail{width:100%;border-bottom:none}
-    nav button{border-left:none;border-bottom:3px solid transparent;padding:7px 9px}
-    nav button.on{border-left-color:transparent;border-bottom-color:var(--gold)}
     .realm{grid-template-columns:1fr}
-    .panel{padding:18px 14px}
+    .panel{padding:20px 16px}
+    h1{font-size:clamp(34px,10vw,52px)}
   }
 </style>
 
 <div class="frame">
 <header>
-  <div class="over">Bold Venture · Narrative Doctrine · Black Trunk</div>
-  <h1>The Story Lattice</h1>
+  <div class="over">Bold Venture · Narrative Doctrine · <b>Black Trunk</b></div>
+  <h1>The Story <span class="gx">Lattice</span></h1>
   <div class="sub">The complete machinery for creating any story. <b>The Outliers</b> is the test bed, not the owner.</div>
+  <div class="speedline"></div>
 </header>
 
-<div class="shell">
-<nav aria-label="Lattice sections">
-  <div class="rail">The Ledger</div>
-  <button class="on" data-s="overview"><span class="rn">◆</span>The Realm</button>
-  <button data-s="spine"><span class="rn">I</span>The Spine</button>
-  <button data-s="ladder"><span class="rn">II</span>The Ladder</button>
-  <button data-s="setting"><span class="rn">III</span>The Setting</button>
-  <button data-s="texture"><span class="rn">IV</span>The Texture</button>
-  <button data-s="mediums"><span class="rn">V</span>The Mediums</button>
-  <button data-s="law"><span class="rn">VI</span>The Law</button>
-  <button data-s="collision"><span class="rn">VII</span>The Collision</button>
-</nav>
+<div class="nav" role="navigation" aria-label="Lattice sections">
+  <button class="on" data-s="overview"><span class="rn">00</span>The Realm</button>
+  <button data-s="spine"><span class="rn">01</span>Spine</button>
+  <button data-s="ladder"><span class="rn">02</span>Ladder</button>
+  <button data-s="setting"><span class="rn">03</span>Setting</button>
+  <button data-s="texture"><span class="rn">04</span>Texture</button>
+  <button data-s="mediums"><span class="rn">05</span>Mediums</button>
+  <button data-s="law"><span class="rn">06</span>The Law</button>
+  <button data-s="collision"><span class="rn">07</span>Collision</button>
+</div>
 
 <main>
 <!-- ═══════════ OVERVIEW ═══════════ -->
@@ -187,25 +198,25 @@
     <div class="realm">
       <div class="side">
         <h4>Story-side · what is told</h4>
-        <button class="mod" data-go="spine"><div class="mt">I · The Spine</div><div class="md">The comparative tree of what a story is — Dramatica canonical, fourteen rivals mapped.</div></button>
-        <button class="mod" data-go="ladder"><div class="mt">II · The Scale Ladder</div><div class="md">Eight containers, beat to universe, each with a completion test. Arcs are threads, not rungs.</div></button>
-        <button class="mod" data-go="setting"><div class="mt">III · The Setting System</div><div class="md">Place at character grade — the twelve-layer slice, proven on the DCUS.</div></button>
+        <button class="mod" data-go="spine"><div class="mt">01 · The Spine</div><div class="md">The comparative tree of what a story is — Dramatica canonical, fourteen rivals mapped.</div></button>
+        <button class="mod" data-go="ladder"><div class="mt">02 · The Scale Ladder</div><div class="md">Eight containers, beat to universe, each with a completion test. Arcs are threads, not rungs.</div></button>
+        <button class="mod" data-go="setting"><div class="mt">03 · The Setting System</div><div class="md">Place at character grade — the twelve-layer slice, proven on the DCUS.</div></button>
       </div>
       <div class="side">
         <h4>Discourse-side · how it is told</h4>
-        <button class="mod" data-go="texture"><div class="mt">IV · The Texture Layer</div><div class="md">The Ten Questions of the Telling. Pacing, voice, focalization — formalized.</div></button>
-        <button class="mod" data-go="mediums"><div class="mt">V · The Medium Grammars</div><div class="md">Ten channel contracts. Story survives adaptation; texture re-instruments.</div></button>
+        <button class="mod" data-go="texture"><div class="mt">04 · The Texture Layer</div><div class="md">The Ten Questions of the Telling. Pacing, voice, focalization — formalized.</div></button>
+        <button class="mod" data-go="mediums"><div class="mt">05 · The Medium Grammars</div><div class="md">Ten channel contracts. Story survives adaptation; texture re-instruments.</div></button>
       </div>
     </div>
-    <button class="mod crossbar" data-go="law"><div class="mt">VI · The Law — narrative invariants</div><div class="md">The prescriptive register over the whole lattice. Tropes describe; invariants forbid. Enforcement rides every completion test.</div></button>
-    <button class="mod crossbar" data-go="collision"><div class="mt">VII · The Collision Engine <span class="chip parked">Parked</span></div><div class="md">Generalized synastry — any slice against any slice. Friction is dramatic material. Fires on "go."</div></button>
+    <button class="mod crossbar" data-go="law"><div class="mt">06 · The Law — narrative invariants</div><div class="md">The prescriptive register over the whole lattice. Tropes describe; invariants forbid. Enforcement rides every completion test.</div></button>
+    <button class="mod crossbar" data-go="collision"><div class="mt">07 · The Collision Engine <span class="chip parked">Parked</span></div><div class="md">Generalized synastry — any slice against any slice. Friction is dramatic material. Fires on "go."</div></button>
     <div class="statrow">
-      <div class="stat"><div class="n">8</div><div class="l">Tree levels</div></div>
-      <div class="stat"><div class="n">8</div><div class="l">Ladder rungs</div></div>
-      <div class="stat"><div class="n">12</div><div class="l">Slice layers</div></div>
-      <div class="stat"><div class="n">10</div><div class="l">Questions</div></div>
-      <div class="stat"><div class="n">10</div><div class="l">Mediums</div></div>
-      <div class="stat"><div class="n">14</div><div class="l">Rivals mapped</div></div>
+      <div class="stat"><div><div class="n">8</div><div class="l">Tree levels</div></div></div>
+      <div class="stat"><div><div class="n">8</div><div class="l">Ladder rungs</div></div></div>
+      <div class="stat"><div><div class="n">12</div><div class="l">Slice layers</div></div></div>
+      <div class="stat"><div><div class="n">10</div><div class="l">Questions</div></div></div>
+      <div class="stat"><div><div class="n">10</div><div class="l">Mediums</div></div></div>
+      <div class="stat"><div><div class="n">14</div><div class="l">Rivals mapped</div></div></div>
     </div>
   </div>
 </section>
@@ -213,7 +224,7 @@
 <!-- ═══════════ SPINE ═══════════ -->
 <section id="spine">
   <div class="panel">
-    <div class="kicker">Limb I · the trunk</div>
+    <div class="kicker">Limb 01 · the trunk</div>
     <h2>The Spine — the Comparative Tree</h2>
     <p class="lede"><b>A story is a Grand Argument</b> — proof, airtight from every angle, that one approach to a problem succeeds or fails, and was worth it or not. Dramatica is the ruled spine because it alone is a <b>tree</b>; every rival is a subset, a template on one branch, or a lens on the audience.</p>
 
@@ -261,7 +272,7 @@
 <!-- ═══════════ LADDER ═══════════ -->
 <section id="ladder">
   <div class="panel">
-    <div class="kicker">Limb II · the containers</div>
+    <div class="kicker">Limb 02 · the containers</div>
     <h2>The Scale Ladder</h2>
     <p class="lede">Narrative comes in eight container sizes. <b>Containers hold; threads change.</b> A character arc, a setting arc, a rivalry — those are <b>threads</b> running <i>through</i> containers at any span. "Arc" was never between sequence and story; it runs across all of them.</p>
 
@@ -292,7 +303,7 @@
 <!-- ═══════════ SETTING ═══════════ -->
 <section id="setting">
   <div class="panel">
-    <div class="kicker">Limb III · place at character grade</div>
+    <div class="kicker">Limb 03 · place at character grade</div>
     <h2>The Setting System</h2>
     <p class="lede"><b>Setting is the pressure field</b> — a place that pressures nothing is scenery. The Setting Slice mirrors the 12-Layer Character Database row for row, ending the same way: S12 fed from the storyform, exactly as L12 is fed from the Dramatica ingest.</p>
 
@@ -302,7 +313,7 @@
     <div class="qrow"><span class="qn">A3</span><span><b>Function</b> — six deployment modes (Buckham): Anchor · Characterize · Pressure · Mood · Argue · Afford. A scene runs one or two, never all six.</span></div>
     <div class="qrow"><span class="qn">A4</span><span><b>Time</b> — the slice is the baseline; <b>states</b> are dated overlays keyed to ladder addresses. <code>DCUS[M1] → DCUS[M4]</code> is the setting arc.</span></div>
 
-    <h3 style="margin-top:26px">The Twelve-Layer Slice</h3>
+    <h3 style="margin-top:28px">The Twelve-Layer Slice</h3>
     <div class="tog" role="group" aria-label="Slice view">
       <button class="on" id="tg-schema">The Schema</button>
       <button id="tg-dcus">DCUS · the proof</button>
@@ -324,11 +335,11 @@
         <tr><td class="key">S12 Function</td><td data-a="storyform binding, fed from the spine — the Domain embodied, argument role, invariant set" data-b="OS Domain embodied: Situation / The Past. Cost = Memories — history deleted for programming space, done to a place. Invariants: the Ecclesial Laws">storyform binding, fed from the spine — the Domain embodied, argument role, invariant set</td><td class="dim mirror">L12 FUNCTION</td></tr>
       </tbody>
     </table></div>
-    <p style="margin-top:8px"><span class="chip prov">Layer names provisional</span> <span class="chip ruled">DCUS proof: every layer filled from canon</span></p>
+    <p style="margin-top:10px"><span class="chip prov">Layer names provisional</span> <span class="chip ruled">DCUS proof: every layer filled from canon</span></p>
 
     <h3>The Scene Card — the R2 notation</h3>
     <div class="scroll">
-      <div class="sc-t">SCENE CARD</div>
+      <div class="sc-t">Scene Card</div>
       <dl>
         <dt>address</dt><dd><code>OXO.primary.M2.q3.s12</code></dd>
         <dt>setting</dt><dd><code>DCUS.campus.hall3 @ M2</code> — slice + state</dd>
@@ -350,7 +361,7 @@
 <!-- ═══════════ TEXTURE ═══════════ -->
 <section id="texture">
   <div class="panel">
-    <div class="kicker">Limb IV · the discourse side</div>
+    <div class="kicker">Limb 04 · the discourse side</div>
     <h2>The Texture Layer</h2>
     <p class="lede">Every telling is a configuration of ten answers. The one law worth tattooing: <b>who speaks ≠ who sees.</b></p>
     <div class="tq">
@@ -388,7 +399,7 @@
 <!-- ═══════════ MEDIUMS ═══════════ -->
 <section id="mediums">
   <div class="panel">
-    <div class="kicker">Limb V · the channel contracts</div>
+    <div class="kicker">Limb 05 · the channel contracts</div>
     <h2>The Medium Grammars</h2>
     <p class="lede"><b>Story-side is medium-independent; texture is where the medium bites.</b> A storyform survives adaptation; a Telling Profile gets re-instrumented per medium. One IP at R7, many instantiations.</p>
     <div class="tw"><table>
@@ -437,14 +448,14 @@
         <tr><td class="key">Per-character sets</td><td>Tori ×4, validated</td><td>character threads</td></tr>
       </tbody>
     </table></div>
-    <div class="alarm"><span class="dk">Open before the throne</span><br>DOCTRINE 0 awaits <b>ratification</b>. The rename (Tenet ⭐ / Ethos ⭐ leading the bench) was gated on schema decision #3 — <b>#3 executed, the gate stands open.</b> One ruling, one propagation pass.</div>
+    <div class="alarm"><span class="dk">Open rulings</span><br>DOCTRINE 0 awaits <b>ratification</b>. The rename (Tenet ⭐ / Ethos ⭐ leading the bench) was gated on schema decision #3 — <b>#3 executed, the gate stands open.</b> One ruling, one propagation pass.</div>
   </div>
 </section>
 
 <!-- ═══════════ COLLISION ═══════════ -->
 <section id="collision">
   <div class="panel">
-    <div class="kicker">Module V · the analysis layer <span class="chip parked">Parked · fires on "go"</span></div>
+    <div class="kicker">Module 07 · the analysis layer <span class="chip parked">Parked · fires on "go"</span></div>
     <h2>The Collision Engine</h2>
     <p class="lede">Generalized <span class="tip" data-tip="Astrology's comparison discipline: two charts read against each other, aspect by aspect. Here generalized to any slice vs any slice.">synastry</span> — any slice against any slice. <b>Friction is dramatic material.</b> A layer above the entities that feeds back down as overlays, keyed to ladder time. Zero open decisions.</p>
     <div class="tw"><table>
@@ -470,14 +481,13 @@
   </div>
 </section>
 
-<footer>The lattice is IP-agnostic. The Outliers is the guinea pig, not the owner. · Canon lives in <code>_SSOT/01_NARRATIVE_FRAMEWORKS</code> &amp; <code>03_SETTING_SYSTEMS</code></footer>
+<footer>The lattice is IP-agnostic. The Outliers is the guinea pig, not the owner. · Canon: <code>_SSOT/01_NARRATIVE_FRAMEWORKS</code> &amp; <code>03_SETTING_SYSTEMS</code></footer>
 </main>
-</div>
 </div>
 
 <script>
 (function(){
-  var btns=document.querySelectorAll('nav button');
+  var btns=document.querySelectorAll('.nav button');
   var secs=document.querySelectorAll('main section');
   function go(id){
     secs.forEach(function(s){s.classList.toggle('on',s.id===id)});
