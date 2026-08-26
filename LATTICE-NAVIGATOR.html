@@ -164,6 +164,25 @@
   .qrow:last-child{border-bottom:none}
   .qn{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--amber);min-width:26px}
 
+  /* ── codex ── */
+  .cdx-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:4px 0 14px}
+  .cdx-search{flex:1;min-width:220px;font-family:var(--mono);font-size:13px;color:var(--ink);background:var(--inset);
+    border:1px solid var(--line2);padding:9px 13px;letter-spacing:.06em}
+  .cdx-search::placeholder{color:var(--faint)}
+  .cdx-search:focus{outline:none;border-color:var(--amber);box-shadow:0 0 14px var(--amber-glow)}
+  .fchip{all:unset;cursor:pointer;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);border:1px solid var(--line2);padding:5px 10px;transition:color .12s,border-color .12s}
+  .fchip:hover{color:var(--ink);border-color:var(--faint)}
+  .fchip:focus-visible{outline:1px solid var(--amber);outline-offset:-1px}
+  .fchip.on{color:#0b0a08;background:var(--amber);border-color:var(--amber)}
+  .cdx-count{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--faint);text-transform:uppercase;margin-left:auto}
+  .entry{border-bottom:1px solid #1a1a1e;padding:10px 2px}
+  .entry:last-child{border-bottom:none}
+  .entry .et{font-family:var(--cond);font-weight:500;font-size:16.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+  .entry .et .chip{margin-left:9px;position:relative;top:-1px}
+  .entry .ed{color:var(--muted);font-size:14px;max-width:78ch;margin-top:2px}
+  .entry .ed b{color:var(--ink);font-weight:500}
+
   footer{margin-top:30px;border-top:1px solid var(--line);padding-top:16px;text-align:center;color:var(--faint);
     font-family:var(--mono);font-size:11px;letter-spacing:.08em}
 
@@ -199,6 +218,7 @@
   <button data-s="mediums"><span class="rn">05</span>The Mediums</button>
   <button data-s="law"><span class="rn">06</span>The Law</button>
   <button data-s="collision"><span class="rn">07</span>The Collision</button>
+  <button data-s="codex"><span class="rn">08</span>The Codex</button>
 </nav>
 
 <main>
@@ -494,6 +514,147 @@
   </div>
 </section>
 
+<!-- ═══════════ CODEX ═══════════ -->
+<section id="codex">
+  <div class="panel">
+    <div class="kicker">08 // reference // <b>every term in the lattice</b></div>
+    <h2>The Codex</h2>
+    <p class="lede">The full vocabulary — searchable, filterable, cross-tagged to its limb. Type to filter; chips narrow by domain.</p>
+    <div class="cdx-bar">
+      <input class="cdx-search" id="cdx-q" type="search" placeholder="SEARCH // term or concept…" aria-label="Search the codex">
+      <button class="fchip on" data-cat="all">All</button>
+      <button class="fchip" data-cat="spine">Spine</button>
+      <button class="fchip" data-cat="ladder">Ladder</button>
+      <button class="fchip" data-cat="setting">Setting</button>
+      <button class="fchip" data-cat="texture">Texture</button>
+      <button class="fchip" data-cat="mediums">Mediums</button>
+      <button class="fchip" data-cat="law">Law</button>
+      <button class="fchip" data-cat="collision">Collision</button>
+      <button class="fchip" data-cat="house">House</button>
+      <span class="cdx-count" id="cdx-count"></span>
+    </div>
+    <div id="cdx-list">
+      <div class="entry" data-cat="ladder"><div class="et">Act / Movement<span class="chip black">Ladder</span></div><div class="ed">One span of the argument (R4): every throughline consumes a Signpost, a Driver turns the story. OXO's six Movements are <b>presentation</b> containers riding the four <b>structural</b> signposts.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Address — ladder<span class="chip black">Ladder</span></div><div class="ed">Instance coordinates: <b>OXO.primary.M2.q3.s12.b4</b> — storyform → movement → sequence → scene → beat. Threads take spans. Notation provisional.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Address — spine<span class="chip black">Spine</span></div><div class="ed">Concept coordinates, SPINE.L0–L7. Library sources key here through the <b>feeds:</b> field.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Afford<span class="chip black">Setting</span></div><div class="ed">Function mode: the space as <b>action surface</b> — what it permits and forbids. Games call it level design.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Allure — S9<span class="chip black">Setting</span></div><div class="ed">The place's erotics: what it promises, what draws people in. Mirrors L9 EROS. DCUS: the meritocratic promise.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Anachrony<span class="chip black">Texture</span></div><div class="ed">Any divergence between story order and telling order. Two species: analepsis and prolepsis.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Analepsis<span class="chip black">Texture</span></div><div class="ed">Flashback, formalized — with <b>reach</b> (how far back) and <b>extent</b> (how long).</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Anchor<span class="chip black">Setting</span></div><div class="ed">Function mode: orienting the reader — where and when they stand.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Anthology<span class="chip black">Ladder</span></div><div class="ed">Series pattern (R7): independent storyforms sharing only a premise or world.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Arc<span class="chip black">Ladder</span></div><div class="ed"><b>A thread, never a container.</b> A tracked line of change running through containers at any span — character arc, setting arc, relationship arc.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Archetype<span class="chip black">Spine</span></div><div class="ed">One of eight pre-bundled element sets: Protagonist · Antagonist · Guardian · Contagonist · Reason · Emotion · Sidekick · Skeptic. Complex characters are custom bundles.</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Aspect mesh<span class="chip black">Collision</span></div><div class="ed">Category 11's collision table between two charts — which variables aspect which, each producing a behavioral dynamic.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Beat — R1<span class="chip black">Ladder</span></div><div class="ed">The smallest dramatic exchange: one action, one reaction, one micro-shift in a value or intention.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Beat grid<span class="chip black">Mediums</span></div><div class="ed">The track's rhythmic skeleton. In music-video-family mediums it dictates the edit — duration surrendered to the song.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Body — S1<span class="chip black">Setting</span></div><div class="ed">The place's physical fabric: geography, architecture, dimensions, materials. Mirrors L1 CORE.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Braided<span class="chip black">Ladder</span></div><div class="ed">Series pattern (R7): parallel storyforms sharing one OS, different MC seats — the multi-protagonist shape.</div></div>
+      <div class="entry" data-cat="law"><div class="et">Breach<span class="chip black">Law</span></div><div class="ed">A violated invariant. The unit is wrong, not the invariant — and every downstream unit that trusted it is invalidated.</div></div>
+      <div class="entry" data-cat="house"><div class="et">BVX-LEARN<span class="chip black">House</span></div><div class="ed">The reference library: 1,106+ catalogued sources under subject codes, keyed into the lattice by the <b>feeds:</b> field.</div></div>
+      <div class="entry" data-cat="house"><div class="et">Canon node<span class="chip black">House</span></div><div class="ed">An entity's authoritative file in <b>_CANON_NODES/</b> — the working implementation of rung R8's consistency machinery.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Channel contract<span class="chip black">Mediums</span></div><div class="ed">What a medium <b>is</b>: its signal, time regime, audience agency, and production apparatus.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Characterize<span class="chip black">Setting</span></div><div class="ed">Function mode: revelation through place — the room tells who lives in it.</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Collision Engine<span class="chip parked">Parked</span></div><div class="ed">Generalized synastry: any slice against any slice. Outputs friction; writes overlays, never mutates baselines. BOLO 17, fires on "go."</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Completion test<span class="chip black">Ladder</span></div><div class="ed">Per rung: what makes one unit whole. Every test ends with the same clause — <i>…and no in-scope invariant is breached.</i></div></div>
+      <div class="entry" data-cat="collision"><div class="et">Composite chart<span class="chip black">Collision</span></div><div class="ed">A virtual third chart built from two characters' midpoints — the relationship as its own entity. Rhymes exactly with the RS throughline.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Concern<span class="chip black">Spine</span></div><div class="ed">Nesting level two (16 Types): what the throughline is <i>about</i>. OXO: MC=Understanding · IC=Developing a Plan · OS=The Past · RS=Memories.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Container<span class="chip black">Ladder</span></div><div class="ed">A bounded unit of presentation — the eight rungs. <b>Containers hold; threads change.</b></div></div>
+      <div class="entry" data-cat="spine"><div class="et">Controlling idea<span class="chip black">Spine</span></div><div class="ed">McKee: the whole argument compressed to one sentence — OS Problem/Solution plus Outcome.</div></div>
+      <div class="entry" data-cat="law"><div class="et">cost_and_meaning<span class="chip black">Law</span></div><div class="ed">OXO's story-scoped invariant: <b>meaning survives systemic defeat.</b> The reason Judgment is Good under a Failure outcome.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Counterpoint<span class="chip black">Spine</span></div><div class="ed">Every Issue's dynamic pair. Theme is the argument conducted between an Issue and its Counterpoint.</div></div>
+      <div class="entry" data-cat="house"><div class="et">DCUS<span class="chip black">House</span></div><div class="ed">The Delta Coast Ultra School — OXO's campus, the first setting-slice instance, the OS Domain embodied (Situation / The Past). Lineage: Red Stick Creek → Red Hills → DCUS.</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Diagonal, the<span class="chip black">Collision</span></div><div class="ed">Character-versus-setting comparison read straight down the mirror: Lx against Sx, twelve rows. Astrology analog: relocation.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Diegesis vs mimesis<span class="chip black">Texture</span></div><div class="ed">Telling vs showing. "Show, don't tell" is this distance dial — a dial, not a commandment.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Direct address<span class="chip black">Mediums</span></div><div class="ed">Speaking straight to the camera or reader. In porn it is the normalized contract; in games, the tutorial voice.</div></div>
+      <div class="entry" data-cat="law"><div class="et">DOCTRINE 0<span class="chip black">Law</span></div><div class="ed">The invariants about invariants — seven meta-rules governing what qualifies as a rule. Status: awaiting ratification.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Domain<span class="chip black">Spine</span></div><div class="ed">Nesting level one: where the problem lives — Situation · Activity · Fixed Attitude · Manipulation. Each throughline claims one, exclusively.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Driver<span class="chip black">Spine</span></div><div class="ed">Action or Decision — the force that turns acts. OXO: Action (crashes, removals, acquisitions open every movement).</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Duration<span class="chip black">Texture</span></div><div class="ed">T4 — the ratio of story-time to telling-time. Five speeds: scene · summary · stretch · pause · ellipsis. <b>Pacing is the pattern of speeds.</b></div></div>
+      <div class="entry" data-cat="spine"><div class="et">Dynamics, the eight<span class="chip black">Spine</span></div><div class="ed">Resolve · Growth · Approach · Style · Driver · Limit · Outcome · Judgment — how the story moves and how it ends.</div></div>
+      <div class="entry" data-cat="law"><div class="et">Ecclesial Laws<span class="chip black">Law</span></div><div class="ed">The Administration's fixed institutional invariants — the DCUS slice's S12 set. Place-scoped.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Economy — S6<span class="chip black">Setting</span></div><div class="ed">What fuels the place: resources, money, flows, traffic. Mirrors L6 DRIVE. DCUS: Bishop acquisition capital.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Environmental storytelling<span class="chip black">Mediums</span></div><div class="ed">The setting slice narrating: S5 Scar and S10 Underside read as level design, the player focalizing by walking the strata.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Episodic-with-mythology<span class="chip black">Ladder</span></div><div class="ed">Series pattern (R7): nested episode-arguments under a parent series-argument — case-of-the-week plus season arc.</div></div>
+      <div class="entry" data-cat="house"><div class="et">feeds:<span class="chip black">House</span></div><div class="ed">The BVX-LEARN field wiring a source into the lattice by address — the mechanism that makes the library organize onto the spine.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">FID — free indirect discourse<span class="chip black">Texture</span></div><div class="ed">Narrator and character voice fused in one sentence — prose's signature instrument, native to no other medium.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Five commandments<span class="chip black">Ladder</span></div><div class="ed">Coyne: inciting incident → complication → crisis → climax → resolution. <b>The fractal rule:</b> they recur at scene, sequence, act, and global scale.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Focalization<span class="chip black">Texture</span></div><div class="ed">T2 — who <i>sees</i>: zero (unrestricted) · internal (through a character) · external (surfaces only). Independent of who speaks.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Founding — S7<span class="chip black">Setting</span></div><div class="ed">The place's origin: who built it and why, the founding stack. Mirrors L7 ORIGIN.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Frequency<span class="chip black">Texture</span></div><div class="ed">T5 — singulative (once for once) · repetitive (n times for once — trauma's signature) · iterative (once for n times — habit's).</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Friction<span class="chip black">Collision</span></div><div class="ed">The engine's output: predicted conflict between two slices. <b>Friction is dramatic material</b> — the collision table is a scene menu.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Function — S12<span class="chip black">Setting</span></div><div class="ed">The slice's storyform binding: which Domain the place embodies, its argument role, its invariant set. Empty is legal; filled is load-bearing.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Function modes<span class="chip black">Setting</span></div><div class="ed">The six deployments of setting in a scene: Anchor · Characterize · Pressure · Mood · Argue · Afford. One or two per scene, never all six.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Gazetteer<span class="chip black">Mediums</span></div><div class="ed">The TTRPG sourcebook format — functionally a printed setting slice. The scaffolding runs both directions.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Grand Argument<span class="chip black">Spine</span></div><div class="ed">What a story <b>is</b>: complete proof, from all four seats, that one approach to a problem succeeds or fails — and was worth it or not.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Growth — Start/Stop<span class="chip black">Spine</span></div><div class="ed">Does the MC start something new or stop something old? OXO: <b>Stop</b> — she stops believing the meritocratic premise.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Habit — S8<span class="chip black">Setting</span></div><div class="ed">The place's attachment architecture: rituals, routines, belonging gradients. Mirrors L8 IMPRINT. Renders iteratively (T5).</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Heterodiegetic / homodiegetic<span class="chip black">Texture</span></div><div class="ed">Narrator outside the story vs inside it — the first axis of T1.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Hook economy<span class="chip black">Mediums</span></div><div class="ed">Short-form law: retention is won per second. The first second is the inciting incident, or death.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">IC — Influence Character<span class="chip black">Spine</span></div><div class="ed">The "you" perspective — the pressure on the MC to change, argued by living the counter-premise successfully. OXO: <b>Anna Colson Conway</b>.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Implied author / reader<span class="chip black">Texture</span></div><div class="ed">The author-image the text projects; the reader-shape the text assumes. Two stations on Chatman's communication pipeline.</div></div>
+      <div class="entry" data-cat="law"><div class="et">Invariant<span class="chip black">Law</span></div><div class="ed">A written, falsifiable, scale-holding constraint with a named derivation, dying only by countermand. Rename pending: <b>Tenet / Ethos</b>, gate open.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Issue<span class="chip black">Spine</span></div><div class="ed">Nesting level three (64 Variations): the thematic axis, always paired with a Counterpoint.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Journey<span class="chip black">Spine</span></div><div class="ed">The transit between Signposts — three per throughline, absorbing the difference between structural acts and presentation containers.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Judgment<span class="chip black">Spine</span></div><div class="ed">Good or Bad: was the effort worth it? With Outcome, forms the four-ending matrix. OXO: <b>Good</b>.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Law — S4<span class="chip black">Setting</span></div><div class="ed">The rules that bind a place: governance, mechanics, permission and forbiddance. Mirrors L4 WILL. DCUS: Star-Rating, the Administration OS.</div></div>
+      <div class="entry" data-cat="law"><div class="et">Layer 0 Invariants<span class="chip black">Law</span></div><div class="ed">Story-world physics, universe-scoped: Ontology · Causality · Time/Accumulation · Irreversibility/Cost · Entropy/Decay.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Limit — Optionlock / Timelock<span class="chip black">Spine</span></div><div class="ed">What closes the story's options: running out of choices, or of time. OXO: Optionlock — exits close because of who she is.</div></div>
+      <div class="entry" data-cat="mediums"><div class="et">Ludonarrative<span class="chip black">Mediums</span></div><div class="ed">Mechanics as meaning. Dissonance — the rules arguing against the story — is a constraint-layer event: a mechanic can breach a narrative invariant.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">MC — Main Character<span class="chip black">Spine</span></div><div class="ed">The "I" perspective — the problem from inside one skin. OXO: <b>Victoria "Tori" Midnight</b>. Not necessarily the Protagonist.</div></div>
+      <div class="entry" data-cat="house"><div class="et">mc_problem_element<span class="chip black">House</span></div><div class="ed">The L12 core field holding the MC Problem. OXO: <b>Equity</b>. Renamed from motivation_element by ruling; TRUTH_VULNERABILITY fires off it.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Metalepsis<span class="chip black">Texture</span></div><div class="ed">A violation between narrative levels — a narrator stepping into the story, a character addressing the reader.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Mood vs tone<span class="chip black">Texture</span></div><div class="ed">Tone is the implied author's attitude; mood is the reader-side atmosphere. Setting's Mood function mode plays to the second.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Narratee<span class="chip black">Texture</span></div><div class="ed">Whom the telling addresses <i>inside</i> the text. In games, fused with the player.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Nested storyform — R6<span class="chip black">Ladder</span></div><div class="ed">A complete argument inside a parent argument. Own storyform_id; characters may switch roles across forms; <b>the parent wins conflicts</b>.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">OS — Overall Story<span class="chip black">Spine</span></div><div class="ed">The "they" perspective: the problem among everyone. OXO: the Factions, in Situation / The Past.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Outcome<span class="chip black">Spine</span></div><div class="ed">Success or Failure of the effort toward the Goal. OXO: <b>Failure</b> — the system wins the board.</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Overlay<span class="chip black">Collision</span></div><div class="ed">Analysis output written <i>over</i> a baseline — a state diff, a relationship table. Natal records and slices never mutate.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Pacing<span class="chip black">Texture</span></div><div class="ed">The pattern of duration speeds across units — formalized at T4, recorded per scene on the card.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Paratext<span class="chip black">Texture</span></div><div class="ed">T8 — the thresholds around the text: titles, epigraphs, chapter heads, in-world documents. A design surface for an IP builder.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Personal Triumph<span class="chip black">Spine</span></div><div class="ed">The Failure/Good ending: the system wins the board; the character wins herself. <b>OXO's shape.</b></div></div>
+      <div class="entry" data-cat="setting"><div class="et">Pressure field<span class="chip black">Setting</span></div><div class="ed">What setting <b>is</b>: the total state of the world at a story address, exerting force. A place that pressures nothing is scenery.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Problem / Solution<span class="chip black">Spine</span></div><div class="ed">The atomic pair: the source of the conflict and the element that would dissolve it. OXO: Equity → Inequity.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Prolepsis<span class="chip black">Texture</span></div><div class="ed">Flashforward, formalized — reach and extent, like its twin.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Protagonist ≠ MC<span class="chip black">Spine</span></div><div class="ed">Function and perspective are independent axes — the archetype who pursues the goal need not be the "I" seat.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Quad<span class="chip black">Spine</span></div><div class="ed">Four elements in dynamic tension — pairs of pairs, never a flat list. Dramatica's atomic geometry at every nesting level.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Resolve — Change/Steadfast<span class="chip black">Spine</span></div><div class="ed">Does the MC adopt the IC's premise, or hold? OXO: <b>Change</b>.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">RS — Relationship Story<span class="chip black">Spine</span></div><div class="ed">The "we" perspective: the argument between MC and IC. OXO: Tori ↔ Anna — the rivalry conducted through doing.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Scar — S5<span class="chip black">Setting</span></div><div class="ed">Damage in the fabric: ruins, erasures, renames. Mirrors L5 WOUND. DCUS: the rename lattice — erasure done twice.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Scene — R2<span class="chip black">Ladder</span></div><div class="ed">The smallest container that <b>turns</b>. Whole when a value flips polarity and the five commandments are present. No turn, no scene.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Scene Card<span class="chip black">Setting</span></div><div class="ed">The R2 notation, one screen: address · slice+state · active strata · function mode · sensorium · commandments · value turn · duration · telling · threads · invariants · exit state.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Sensorium — S3<span class="chip black">Setting</span></div><div class="ed">How the place meets the senses: soundscape, smellscape, palette. Mirrors L3 SOCIAL. On the card: three telling details, no more.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Sequence — R3<span class="chip black">Ladder</span></div><div class="ed">A scene chain under one dramatic question — raised at the head, answered at the tail, usually replaced by a worse one.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Serialized<span class="chip black">Ladder</span></div><div class="ed">Series pattern (R7): one storyform stretched across installments. <b>OXO's shape</b> — the primary form across six movements.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Setting arc<span class="chip black">Setting</span></div><div class="ed">A place's sequence of states across ladder time: DCUS[M1] → DCUS[M4]. A thread, like any arc.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Setting Slice<span class="chip black">Setting</span></div><div class="ed">The twelve-layer place schema mirroring the 12-Layer Character Database row for row, S12 storyform-fed like L12.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Signpost<span class="chip black">Spine</span></div><div class="ed">One of four fixed structural stations per throughline — sixteen across the form. The act's structural content.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Static appreciations<span class="chip black">Spine</span></div><div class="ed">The eight plot constants: Goal · Consequence · Cost · Dividend · Requirements · Prerequisites · Preconditions · Forewarnings. OXO: Goal = The Past, Cost = Memories.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Story / discourse<span class="chip black">Texture</span></div><div class="ed">Chatman's line, the lattice's east–west divide: story is WHAT is told (events + existents); discourse is HOW.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Story Mind<span class="chip black">Spine</span></div><div class="ed">The single mind a complete story models — why all four throughlines exist and all 64 elements must be distributed.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Storyform<span class="chip black">Spine</span></div><div class="ed">One complete Grand Argument's full settings — R5's governing artifact. Deterministic once locked. OXO: <b>oxo_primary_v1</b>, canon v2.0.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Storyforming → reception<span class="chip black">Spine</span></div><div class="ed">The four production stages: decide the argument (storyforming) · clothe it in subject matter (storyencoding) · order its exposure (storyweaving) · the audience runs it (reception).</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Synastry<span class="chip black">Collision</span></div><div class="ed">Astrology's chart-versus-chart comparison discipline — generalized by the engine to any slice versus any slice.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Telling Profile<span class="chip black">Texture</span></div><div class="ed">A work's fixed configuration of the ten answers — the storyform's discourse twin, recorded at a ladder address. <b>OXO's: unmade.</b></div></div>
+      <div class="entry" data-cat="house"><div class="et">Test-bed doctrine<span class="chip black">House</span></div><div class="ed">The lattice is IP-agnostic — built to create <b>any</b> story. The Outliers is the guinea pig, not the owner. Ruled 2026-08-26.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Thread<span class="chip black">Ladder</span></div><div class="ed">A tracked line of change spanning containers: character arc, setting arc, relationship arc, motif, trope instance.</div></div>
+      <div class="entry" data-cat="spine"><div class="et">Throughline<span class="chip black">Spine</span></div><div class="ed">One of four perspectives on the one problem: OS (they) · MC (I) · IC (you) · RS (we). No rival model has all four.</div></div>
+      <div class="entry" data-cat="collision"><div class="et">Transit<span class="chip black">Collision</span></div><div class="ed">An external event pinging a static chart, producing a state diff. Category 13 machinery; plot_systems decides when they fire; the scene card is the firing site.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Translation grid<span class="chip black">Texture</span></div><div class="ed">Workshop POV vocabulary decoded into exact voice × focalization configurations — "third limited" = outside narrator + internal fixed.</div></div>
+      <div class="entry" data-cat="law"><div class="et">Trope<span class="chip black">Law</span></div><div class="ed">A named recurring pattern keyed to a lattice address. <b>Tropes describe; invariants forbid.</b> TV Tropes enters by hand-picked, house-vocabulary distills only.</div></div>
+      <div class="entry" data-cat="house"><div class="et">Trunk<span class="chip black">House</span></div><div class="ed">Every item carries one: <b>BLACK</b> (creative, IP, systems) · <b>ORANGE</b> (venture, body, sexuality). The lattice is BLACK; ORANGE medium grammar rides the firewall.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Underside — S10<span class="chip black">Setting</span></div><div class="ed">What the place represses: hidden zones, the unspoken, what surfaces under pressure. Mirrors L10 SHADOW.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Universe — R8<span class="chip black">Ladder</span></div><div class="ed">Multiple IPs on shared substrate — the LEECHSEED level. The test is consistency; a universe never completes.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Unreliable narrator<span class="chip black">Texture</span></div><div class="ed">Booth: the reliability gap between the narrator's account and the implied author's truth.</div></div>
+      <div class="entry" data-cat="ladder"><div class="et">Value turn<span class="chip black">Ladder</span></div><div class="ed">McKee: a scene must flip at least one value's polarity (+→− or −→+). The first half of R2's completion test.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Vector — S11<span class="chip black">Setting</span></div><div class="ed">The place's trajectory: bloom, rot, collapse, redemption. Mirrors L11 DESTINY. DCUS: clean → NEON-ROT → hunt.</div></div>
+      <div class="entry" data-cat="house"><div class="et">Vertical Slice<span class="chip black">House</span></div><div class="ed">The character pipeline's terminal artifact — the machine-readable seed record every Tier 3 character resolves to.</div></div>
+      <div class="entry" data-cat="setting"><div class="et">Weather — S2<span class="chip black">Setting</span></div><div class="ed">Climate, light, temperature, the place's rhythms. Mirrors L2 VITAL. The DCUS slice's one canon-thin gap — first authorable target.</div></div>
+      <div class="entry" data-cat="texture"><div class="et">Who speaks ≠ who sees<span class="chip black">Texture</span></div><div class="ed">The law separating narration (T1) from focalization (T2). A narrator outside the story can still see only through Tori.</div></div>
+    </div>
+  </div>
+</section>
+
 <footer>THE LATTICE IS IP-AGNOSTIC // THE OUTLIERS IS THE GUINEA PIG, NOT THE OWNER // CANON: _SSOT/01 + 03</footer>
 </main>
 </div>
@@ -521,5 +682,24 @@
   }
   tgA.addEventListener('click',function(){slice('a')});
   tgB.addEventListener('click',function(){slice('b')});
+
+  var q=document.getElementById('cdx-q');
+  var fchips=document.querySelectorAll('.fchip');
+  var entries=document.querySelectorAll('.entry');
+  var count=document.getElementById('cdx-count');
+  var cat='all';
+  function filt(){
+    var t=(q.value||'').toLowerCase(),n=0;
+    entries.forEach(function(e){
+      var ok=(cat==='all'||e.dataset.cat===cat)&&(!t||e.textContent.toLowerCase().indexOf(t)>-1);
+      e.style.display=ok?'':'none';if(ok)n++;
+    });
+    count.textContent=n+' / '+entries.length+' entries';
+  }
+  q.addEventListener('input',filt);
+  fchips.forEach(function(c){c.addEventListener('click',function(){
+    cat=c.dataset.cat;fchips.forEach(function(x){x.classList.toggle('on',x===c)});filt();
+  })});
+  filt();
 })();
 </script>
