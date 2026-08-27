@@ -132,7 +132,7 @@ Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoi
 
 ## THE BRANCHES — first layer down (breadth pass, RULED + delivered 2026-08-26)
 
-Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is the next candidate (→ the long-flagged plot_systems, 04). Full source sweeps: BOLO 18.
+Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is next. Full source sweeps: BOLO 18; **stage 1 banked** → [📐 ssot_01_spine_house_inventory.md](📐%20ssot_01_spine_house_inventory.md), the whole house corpus keyed by level. ⚠️ **Numbering collision surfaced by the sweep:** an empty `03_PLOT_SYSTEMS/` was already reserved before `03_SETTING_SYSTEMS/` was stood up (and `04_STYLE_GUIDES/` exists empty) — domain numbers await Papi's ruling.
 
 ### L0 · Root — theories of what story is
 **Branches:** argument theory (Dramatica/Egri lineage — the ruled position) · mimesis theory (Aristotle) · audience-simulation theory (the neuro school — explains reception, not structure) · myth/transmission theory (Campbell).
