@@ -117,6 +117,55 @@ Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoi
 
 ---
 
+## THE SETTING TOUCHPOINT MAP — RULED 2026-08-26
+
+**The ruling:** setting stays an **entity** (the 03 domain), never a spine level — and this map answers the traditional grouping (plot/character/setting/theme as siblings) with links instead of membership. The plain version: the old textbooks put setting on the ingredient list; the lattice makes it a *person* — a place has its own 12-layer sheet, changes over time, and can be compared against characters. A bullet point can't do any of that. This map says where the person stands when you're at each spine level:
+
+| Spine level | Where setting plugs in |
+|---|---|
+| **L2 Nesting** | S12 FUNCTION — a load-bearing place *embodies* a throughline's Domain (DCUS = OS Situation/The Past) |
+| **L3 Dynamics** | S11 VECTOR — a place's trajectory can run the ending's geometry (DCUS collapse = the Failure/Good corridor) |
+| **L4 Plot** | scene cards (setting + state per scene) · setting states keyed to acts · the setting arc as a plot thread |
+| **L5 Character** | the collision diagonal — Lx × Sx (Module 5); C×Situation transits fire through place-states |
+| **L6 Theme** | the **Argue** function mode — the place makes the argument in matter |
+| **L7 Genre** | **genre-setting contracts** — the join tradition half-sees: "Southern Gothic," "western," "space opera" are genres that ARE setting promises |
+
+## THE BRANCHES — first layer down (breadth pass, RULED + delivered 2026-08-26)
+
+Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is the next candidate (→ the long-flagged plot_systems, 04). Full source sweeps: BOLO 18.
+
+### L0 · Root — theories of what story is
+**Branches:** argument theory (Dramatica/Egri lineage — the ruled position) · mimesis theory (Aristotle) · audience-simulation theory (the neuro school — explains reception, not structure) · myth/transmission theory (Campbell).
+**Shelf:** BVX.0089 · 0603 · 0232 · 0257 · 0616 · *Egri + Poetics = acquisition gaps.* House: this doc; the BVX four-domains artifact (answer-first doctrine).
+
+### L1 · Throughlines — the four seats, each its own anatomy
+**Branches:** OS anatomy · MC anatomy · IC anatomy (impact mechanics — the BVX.0064 derivation method is house canon) · RS anatomy (+ the composite-chart join, Module 5) · perspective theory (I/you/they/we) · cross-form roles (a character MC here, IC there — R6).
+**Shelf:** 0064 (distilled) · 0193. House: oxo-storyform §§2–6 · victoria-midnight · the Anna IC derivation · integration protocol (binding records).
+
+### L2 · Nesting — the chart itself
+**Branches:** the four Domains, one node each (with their 4 Concerns) · quad theory (pairs-of-pairs mechanics) · Issue/Counterpoint mechanics · the atomic quad (Problem/Solution/Symptom/Response) · chart navigation.
+**Shelf:** 0089 · 0090 (the Dictionary) · **0091 — the structure chart, this level's literal map.** House: oxo-storyform §9 (a fully populated descent).
+
+### L3 · Dynamics — the eight switches, one node each
+**Branches:** Resolve · Growth · Approach · Style · Driver · Limit · Outcome · Judgment · the ending matrix · the arc-taxonomy translation (positive/flat/negative = matrix + Resolve).
+**Shelf:** 0071/0072 (Weiland arcs) · 0127 (Yorke, change-as-universal). House: storyform §1 (the ruled instance with rationales).
+
+### L4 · Plot — the richest branch; next domain candidate (plot_systems, 04)
+**Branches:** static appreciations · signposts & journeys · drivers & act turns · act theory (3/4/5-act compared) · sequence method · scene grammar (five commandments + value turn — the ladder R2/R3 join) · beat mechanics · **the Movement↔Signpost mapping (standing flag — lands here)** · plot templates as instances (StC beats, monomyth stations) · pacing of events (T4's story-side twin).
+**Shelf:** 0175 · 0236 · 0154 · 0226 · 0274 · 0238 · 0188 · 0092 · 0228 · 0163/0164 · 0127 · 0105 · 0244. House: plot_sequence.TXT + story_engine_settings.TXT (engine exports) · the Six Movements sources · Character Astrology Cat 10 (lifecycle) + Cat 13 (transit firing).
+
+### L5 · Character — already a domain
+**Branches:** → **`02_CHARACTER_SYSTEMS/` is this level's branch-down**: archetypes/64 elements · the 12-layer stack · the DAI (Dramatica→astrology derivation) · state architecture · vertical slice · collision Cat 11.
+**Shelf:** 0064 · 0071/0072 · 0193 (character web) · *Egri gap.* House: the entire 02 domain + victoria-midnight (the worked instance).
+
+### L6 · Theme — the value layer
+**Branches:** premise lineage (Egri → controlling idea) · Issue/Counterpoint argumentation · value spectrums (Coyne) · moral argument (Truby) · theme-craft (Weiland) · **the invariants join — `cost_and_meaning` is theme with enforcement teeth (the Law).**
+**Shelf:** 0289 · 0193 · 0236 · 0175. House: DOCTRINE-0 · the storyform's Judgment rationale.
+
+### L7 · Genre & Audience — the outer ring
+**Branches:** genre as reader-contract (conventions owed) · genre as moral tradition · commercial compression (wheels/beats) · audience appreciations · reception neuroscience · **genre-setting contracts (the touchpoint)** · seriality as TV-genre poetics · the four production stages.
+**Shelf:** 0191 (Anatomy of Genres) · 0236 + 0103 (Story Grid + Four Core) · 0163 · 0232 · 0257 · 0554 · 0565. House: the Southern Gothic register ruling (DCUS) · medium grammars doc (M3).
+
 ## THE RIVAL MAP — one row per model
 
 | Model | Holdings | What it actually models | Verdict vs the spine |
