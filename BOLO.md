@@ -2,7 +2,7 @@
 title: BOLO — the watchlist
 type: tasking board
 status: living document — capture-fast, sit rep Block IV
-updated: 2026-08-25
+updated: 2026-08-31
 protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is spoken
 ---
 
@@ -36,6 +36,8 @@ protocol: SOP.md §1 — a spoken tasking is written here in the same turn it is
 | 19 | **Strip remnant — Joplin sync-metadata coordinates** [BLACK/ORANGE, strip follow-on] — found 8/26 during an unrelated search: the 8/24 strip caught `latitude` in the sync stores' metadata_diff JSON but **194 numeric longitudes (193 files) + 6 full lat/long pairs survived** in `.ASTRO7EX.SYNC.JOPLIN` + `.FACTORIO.SYNC.JOPLIN` — live on the remote since before the force-push. **Working tree redacted 8/26 (192 files → `[COORD]`), verified zero.** REMAINS FOR PAPI: (a) history carries the values → another filter-repo pass + force-push, or accept-and-monitor; (b) folds into BOLO 8 (GitHub purge ticket — not yet filed) + BOLO 9 (Google removal); (c) push the tree fix | 2026-08-26 | 🔴 open — tree clean, history + remote decision is Papi's |
 | 18 | **The two-stage spine sweep** [BLACK] — RULED 8/26, ordered sequence: **(1) FIRST the house-corpus sweep** — map the repo's own processed materials (_SSOT · _CANON_NODES · _OXO_SCHOOL_HANDOFF · KNOWLEDGE_AREAS one-sheets · archive INDEX) to spine addresses (Explore agent pass launched 8/26, results fold in here); **(2) THEN the full library sweep** — `feeds: SPINE.Lx` assignment over all 353 CRE/LIT sources (scriptable). Output: the catalog + the repo both spine-addressed. Starter shelves already live in the spine doc's BRANCHES section | 2026-08-26 | 🟡 open — **stage 1 ✅ done 8/26** (banked: `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_spine_house_inventory.md` — incl. the 03/03 numbering collision + the 0.6% distill stat); stage 2 (353-source `feeds:` sweep) remains |
 | 16 | **Music-video + short-form grammar research pass** [BLACK/ORANGE, feeds the mediums module] — RULED 8/25: the medium-grammar gaps get filled by research, not acquisition. Scope: music videos · TikTok/short-form · PMV/HMV/porn grammar (ORANGE side rides the firewall) | 2026-08-25 | 🟡 open — mediums module delivered 8/26 with M6/M7/M8 as v1 scaffolds; this pass deepens them to sourced grammar (Vernallis = anchor candidate) |
+
+| 20 | **Forza wheelspin tracker — owned-car callout** [OPERATOR] — full 104-car wheelspin-exclusive list compiled to [FORZA-WHEELSPIN.md](FORZA-WHEELSPIN.md); Papi calls out owned cars → they get checked + struck, NEEDED section regenerates to unowned-only | 2026-08-31 | 🟡 open — awaiting the callout |
 
 Completed BOLOs get a dated strike-through, then move to the bottom under **Done** on the next pass.
 
