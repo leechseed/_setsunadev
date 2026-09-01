@@ -12,3 +12,4 @@
 | `lab venture` | The Lab Venture | 2026-08-31 | venture, persona, content-strategy, physique, ORANGE | parked — full session of ideation, zero rulings; six open decisions queued in-file |
 | `wheelspin` | The Forza Wheelspin Tracker | 2026-08-31 | gaming, collection, OPERATOR | parked — 104-car list compiled, first callout logged (25 owned / 79 needed); resumes on next callout; ⚠️ one confirm rides in-file (Sierra RS500 vs the called "RS200 Evolution") |
 | `darkroom radar` | The Darkroom & Reject Radar | 2026-09-01 | corpus, tooling, ORANGE, pointer-only (tooling in `_PRIVATE/`) | parked — Stage 1 done (55,841 live), DARKROOM 1.0-hardened + NOIR livery, radar HOT; resume = suspicion-sort → verdict → Retrain loop; 1.0 acceptance pass awaits Papi's word |
+| `run the darkroom` | The "Run the Darkroom" Proword | 2026-09-01 | proword, SOP, protocol | ✅ **already promoted** → SOP §0/§1 + session memory same day; card is the receipt; clears on next sweep |
