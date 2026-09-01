@@ -9,3 +9,4 @@
 | `collision engine` | The Collision Engine | 2026-08-26 | lattice Module 5, synastry, BLACK | ✅ **promoted 2026-08-26** → `_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_collision_engine.md` (BOLO 17 done); park file clears on next sweep |
 | `cleaning service` | The Cleaning Service | 2026-08-30 | household, budget, personal | parked |
 | `glute reference` | The Glute Enhancement Reference | 2026-08-30 | body, surgery, ORANGE, worst-side | parked — scope locked via boresight, delivery uncleared |
+| `lab venture` | The Lab Venture | 2026-08-31 | venture, persona, content-strategy, physique, ORANGE | parked — full session of ideation, zero rulings; six open decisions queued in-file |
