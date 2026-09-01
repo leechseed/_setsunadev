@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-26
+updated: 2026-08-31
 read_first: true
 ---
 
@@ -30,7 +30,9 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 | # | Decision | Unblocks |
 |---|---|---|
-| — | *(empty — no standing decisions)* | |
+| **7** | **The corpus floor** — keep 768px min-side (recommended: quarantines 9.2%, keeps 60,750) / lower to 512 / raise. Census: `_census.json` in the corpus folder | Taxonomy engine Stage 1b–d (dedupe → quarantine → normalize) — fully automated after the word |
+| **8** | **The 03/03 domain numbering** — `03_SETTING_SYSTEMS/` (stood up 8/25) vs pre-reserved empty `03_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` also reserved. One rename either way | plot_systems' home; clean SSOT numbering before the L4 deepening lands |
+| **9** | **BOLO 19 history** — the coordinate remnant survives in git history: filter-repo re-pass + force-push, or accept-and-monitor. Also: `git push` the cleaned tree; BOLO 8 (GitHub purge ticket) still unfiled | closes the strip for real |
 
 > **#3 (schema propagation) EXECUTED 2026-08-24 (engine session):** `armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition` · Expressive Range + the `mc_problem_element` rename written across the vertical slice, integration protocol, ingest template, and both variable registries. **The Blocked table is empty for the first time.**
 
@@ -104,6 +106,15 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-08-26→31 (the post-lattice stretch — collision · sweeps · the leak · the census)
+
+- **THE COLLISION ENGINE BUILT** (BOLO 17 ✅, same day it parked) — `📐 ssot_01_collision_engine.md`: four classes, contact vocabulary, **Tori×DCUS twelve-row proof** (7 hot rows = the M2–4 scene menu; the L9×S9 trine-as-trap; row 6 re-derived the economic-tracker beat; S2 gap surfaced). Next proof: Tori×Anna, needs Anna's chart.
+- **THE LATTICE NAVIGATOR + CODEX shipped** — one artifact, four versions; ruled skin: CK3 UX × Death Stranding UI; ~110-term searchable Codex. `LATTICE-NAVIGATOR.html` at root. Parked.
+- **The spine breadth pass** — SETTING TOUCHPOINT MAP (entity-stays ruling, explained elementary) + THE BRANCHES (8 levels × first sub-layer × starter shelves) in the spine doc; **BOLO 18 stage 1 ✅** (house inventory doc; findings: the 03/03 collision → decision #8; craft shelf 0.6% distilled).
+- **⚠️ Strip remnant found + tree-fixed (BOLO 19)** — 194 longitudes + 6 full coordinate pairs survived 8/24 in Joplin sync metadata; all redacted 8/26, repo-wide verify zero. History/push = decision #9.
+- **The Drop captured** — `_CANON_NODES/oxo-the-drop-seed.md`; **tone RULED: 007/Kojima blockbuster sincerity**. The 2023 **FUZZ intertext tree found** (films + anime lists = the tone register's canon); promotion unruled.
+- **The corpus pipeline** — BOLO 13 ✅ (pull done 8/27: 24,310) · `_manual\` intake conventions ruled by use · **BOLO 14 FIRED 8/30: Stage 1a census done — corpus 66,892 images**, 9.2% below floor → **decision #7 gates Stage 1b**.
 
 ## ✅ Moved 2026-08-25/26 (the lattice session — the story system built end to end)
 
