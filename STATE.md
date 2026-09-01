@@ -87,7 +87,7 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24 evening: storyform CANON v2.0 (§9 rotation ruled, BOLO 7 done) · IC = Anna · school = DCUS.** Ripple: Tori node's Structure table pre-rotation, reconciliation pending. **8/26: DCUS setting slice instanced; OXO Telling Profile identified as open decision set (fires when prose opens).** | `_CANON_NODES/` |
 | **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **8/24 evening: BOLO 7 done + #3 propagated — the schema fork is closed.** Remaining: reconcile Tori's Dramatica cells to the §9 rotation; armor_index scale-class. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. 1,106 sources indexed, classifier 99%. Next ID `BVX.1107`. | `_0.1_BVX_LEARN/_meta/` |
-| **Leechseed Manifesto** | 🔴 **Found, not in canon.** 10 docs, May 2025, buried in imported-Joplin. | `OVER_EXIT_OUT_OBSIDIAN/.../manifesto/` |
+| **Modern Poetics** (was: Leechseed Manifesto) | ✅ **CANONIZED 2026-08-31** — the oldest True Ancient integrated: 16 docs (record said 10) dispositioned 7-canonize/9-fold, ratified; **+ 3 native checks coined same session (P8 Fantasy Drive · P9 Sexy Check · P10 Aesthetic Check)**. The lattice's prescriptive half. Application pass = BOLO 21; DOCTRINE 0 entry deferred | `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md` (sources stay in imported-Joplin) |
 | **L2b MORPHOLOGY** | Designed this session, unspecced. Frame → Tissue → **Condition** → Line → Archetype. | — |
 
 ### ORANGE — venture, body, sexuality
