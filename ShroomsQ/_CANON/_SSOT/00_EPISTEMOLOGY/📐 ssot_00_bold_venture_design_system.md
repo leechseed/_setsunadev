@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_00_foundations category: design_system version: 1.0.0 last_updated: 2026-03-09 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BOLD_VENTURE] status: canonical purpose: Defines the Bold Venture Design System as the mandatory visual and interaction standard for all Bold Venture digital output. Adapted wholesale from the Astro UXDS v7 military-grade design system with Bold Venture naming conventions. dependencies: [] source_system: Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force) compliance: [MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA]
+## type: ssot_00_foundations category: design_system version: 2.0.0 last_updated: 2026-09-01 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BOLD_VENTURE] status: canonical purpose: Defines the Bold Venture Design System as the mandatory visual and interaction standard for all Bold Venture digital output. Adapted wholesale from the Astro UXDS v7 military-grade design system with Bold Venture naming conventions. dependencies: [] source_system: Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force) compliance: [MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA]
 ---
 # 📐 ssot_00_bold_venture_design_system
 
@@ -36,6 +36,70 @@
 
 This document defines the **Bold Venture Design System** as the mandatory visual and interaction standard for all digital output produced under the Bold Venture umbrella. Every application, dashboard, tool, template renderer, and interactive artifact conforms to this system. The system is adapted wholesale from the **Astro UXDS v7**, a military-grade, open-source design system built by **Rocket Communications Inc.** for the **U.S. Space Force**. Astro UXDS is compliant with **MIL-STD-1472H**, **MIL-STD-2525D**, and **WCAG 2.1 AA**. The Bold Venture Design System inherits all compliance properties, color science, typography specifications, spacing scales, component APIs, and UX patterns from Astro UXDS and rebrands them under Bold Venture naming conventions.
 
+**v2.0.0 (2026-09-01): the brand color layer is proprietary — see THE ROSTER below.** The Astro reference palettes further down remain as legacy infrastructure (the grey ramp for chrome, the status system untouched and sacred); the blues are retired from brand duty.
+
+---
+
+## THE BOLD VENTURE ROSTER — the brand color layer (RULED 2026-09-01)
+
+**Doctrine:** one identity, four registers, every surface assigned — a total identity system across the gamut of the brand: labels, packaging, uniforms, signage, interiors, UI, content. The Disney principle from the lexicon doctrine (SOP §6), in color: one castle, many lands.
+
+### Layer 0 · THE IDENTITY — present on every surface, every hour
+
+| Family | Tokens (reference: `--color-palette-{hue}-{shade}`) |
+|---|---|
+| **ROSE** (the anchor) | 100 `#F7D9E2` · 200 `#EFB3C6` · 300 `#E38AA6` · 400 `#D06184` · 500 `#B03A5B` (wet) · 600 `#9C2B4F` · **700 `#8A1F44` (BASE)** · 800 `#6E1C36` · 900 `#55112B` (bruise) · 950 `#2B0815` |
+| **ROSE tint ladder** (Berry Rose Pop donation — the social/pop light end) | blush `#FFD7E3` · pink `#FF8FB1` · raspberry `#E34D7C` |
+| **FLESH** | 100 `#FFF3EC` · 200 `#FFE7DA` · 300 `#FFDAC6` (light) · 400 `#FFD1BD` · **500 `#FFC8B5` (BASE)** · 600 `#EBAA9A` · 700 `#D68D8D` (flush) · 800 `#BF6B77` · 900 `#8F4A55` |
+| **GROUNDS** (rose-cast blacks) | 800 `#241018` · 900 `#140A0E` · 950 `#0E0307` · maroon `#3F0D12` (Noir Garnet donation) |
+| **GOLD** (core accent — ruled in via Ember) | deep `#D97706` · light `#FDE68A` |
+| **Neutrals** | pure `#FFFFFF` / `#000000` free agents; Astro grey ramp survives for chrome/disabled only |
+
+**The adhesive rule:** every surface in every register carries at least one identity element — the mark in rose, a rose-black ground, or a flesh moment. **The rose quota (panel-ratified):** a rose-family hue holds a top-two role on every branded surface, in every register. That is what makes the world one world.
+
+### The four registers
+
+| Register | Lineage | Palette | Home surfaces | The law |
+|---|---|---|---|---|
+| **EMBER** | Autumn Kiss (absorbs Sunset Romance's dusk end: salmon `#FB7185`, amber `#F59E0B`) | deep amber `#D97706` · gold `#FDE68A` · russet `#9A3412` · grounds from the rose-blacks | interiors, signage, labels, packaging, wardrobe base — **the all-hours ambient** (honey light by day, candlelight by night) | Warmth arrives as LIGHT, never as pigment on skin — see the Luminance Law |
+| **PUNCH** | Tropical Punch | punch `#FF2D55` · coral `#FB7185` · citrus `#F97316` · yellow `#FACC15` · teal `#052E2B` (legal only inside Punch artboards, as water/depth) | drops, events, promos, social bursts, motion, summer sets — **the live edge** | An energy state, never the resting state — detonates and recedes; barred from UI status surfaces (punch sits too near alarm red); yellow fails the Luminance Law on skin — props, type, and light only |
+| **DUST** | Dusty Drama | blush `#E5B8C2` · lavender `#C4B5FD` · cool greys `#4B5563`/`#F3F4F6` · white | light-theme UI, documents, lookbooks, editorial, daytime rooms — **the daylight** | Greys serve surfaces and type only — skin is never grayed, and dusty pink never touches skin; lavender capped at accent so violet never rivals rose |
+| **NOIR** | the rose's own deep end (Noir Garnet + Satin Berry donations) | garnet `#B11226` · maroon `#3F0D12` · bright berry `#D10F3A` · salmon `#FCA5A5` (the flesh bridge) · silver small-type `#CBD5E1` | dark UI (the default), premium packaging, the nightlife end — the Cabaret guest pair (`#FF1B6B` / `#6D28D9`) visits here only | The luxury register; silver for small/regulatory type on the darkest grounds |
+
+### THE LUMINANCE LAW (panel-derived, measurable — supersedes the vibe-rule)
+
+Warm color **flatters** skin when it outshines the brightest flesh token — gold `#FDE68A` (L≈92) above flesh-300 `#FFDAC6` (L≈91) reads as **key light**. Warm color **jaundices** when it sinks below flesh luminance inside the skin's hue band — yellow `#FACC15` (L≈86) reads as **stain**. Therefore: ambers and golds are legal ONLY (a) above flesh luminance, or (b) as small source-motivated accents on dark grounds (candle, lamp, foil). Never as midtone fill near skin. Skin itself always keeps the FLESH ramp with rose shadows — warmth is applied as a photographic grade over the scene, never by re-tokenizing skin.
+
+### The one-red ledger
+
+The system holds ONE deep red family. Campaign reds resolve inward: `#E11D48` (Kiss/Sunset) is a campaign accent that defers to ROSE on anything mark-adjacent; `#B91C1C` (Dust) snaps to garnet `#B11226`. Alarm red `#FF3838` remains the status system's alone — alarm stays bright and orange-leaning, brand rose stays deep and blue-leaning, and the two never trade lightness.
+
+### Semantic token remap — dark theme (the Noir default)
+
+| Token | v1 (Astro) | **v2 (Roster)** |
+|---|---|---|
+| `--color-background-base-default` | `#101923` | **`#140A0E`** (ground-900) |
+| `--color-background-base-header` | `#172635` | **`#0E0307`** (ground-950) |
+| `--color-background-surface-default` | `#1b2d3e` | **`#241018`** (ground-800) |
+| `--color-background-surface-hover` | `#1c3851` | **`#341820`** (ground-700, new) |
+| `--color-background-surface-selected` | `#1c3f5e` | **`#55112B`** (rose-900) |
+| `--color-background-interactive-default` | `#4dacff` | **`#B03A5B`** (rose-500) |
+| `--color-background-interactive-hover` | `#92cbff` | **`#D06184`** (rose-400) |
+| `--color-text-primary` | `#ffffff` | **`#F5EDE9`** (flesh-cast ink) |
+| `--color-text-interactive-default` | `#4dacff` | **`#E38AA6`** (rose-300) |
+| `--color-border-focus-default` | `#da9ce7` | **`#FDE68A`** (gold — contrasts the rose field) |
+| Status tokens | unchanged | **unchanged — sacred** |
+
+Light theme = the DUST register: base `#F3F4F6`, surface `#FFFFFF`, interactive rose-700 `#8A1F44`, text `#1F1B1E`, selected blush `#E5B8C2`, focus violet `#6D28D9`. Status light-theme fills + mandatory borders unchanged.
+
+### The surface map
+
+Labels/packaging → EMBER on NOIR grounds, rose mark · Uniforms → NOIR base, rose signature, gold detail · Signage → EMBER lit / NOIR unlit · UI → NOIR dark default, DUST light theme · Social → PUNCH bursts + the tint ladder · Shoots → register per scene, warmth as light per the Luminance Law · Buildings/interiors → EMBER ambient over rose-black architecture, rose identity moments.
+
+### Governance
+
+Guest colors admitted by the sing-rule, enforced as the rose quota. PUNCH ships time-boxed (an event skin, re-ratified per campaign). Register drift is the failure mode the quota exists to catch: if daylight goes corporate or golden-hour becomes the default voice, the rose has receded — restore it. Panel record: `starred-palette-panel` run wf_5b0af08b-c49, 2026-09-01.
+
 ---
 
 ## Core Methodology
@@ -63,6 +127,8 @@ The token system operates across three tiers. Each tier serves a distinct purpos
 The **Token Naming Convention** follows up to nine levels: `[group]-[component]-[element]-[category]-[property]-[concept]-[variant]-[state]-[scale]`. Not all tokens use every level.
 
 ### Color System — Reference Palettes
+
+> **v2.0.0 NOTE:** the palettes below are the Astro v7 legacy layer. **Brand duty now belongs to THE ROSTER (§above)** — rose/flesh/grounds/gold + the four registers. Retained from this section: the **Grey ramp** (chrome, disabled states) and the **Status System** (sacred, untouched). The blues, and every other hue below, are retired from brand use.
 
 Every hex value below is a **Reference Token** accessed via `var(--color-palette-{hue}-{shade})`. These values do not change between dark and light themes. They represent the complete color space of the design system.
 
@@ -787,4 +853,5 @@ The **Database Editor** (Phase 4 deliverable) applies the Bold Venture Design Sy
 
 |Version|Date|Changes|
 |---|---|---|
+|**2.0.0**|**2026-09-01**|**THE ROSTER ruled — the proprietary brand color layer.** Rose anchor (#8A1F44) + flesh family locked (flesh shadows through the rose, never gray); rose-cast grounds; gold enters the core accent roster. Four registers stood up: EMBER (all-hours ambient, Autumn Kiss lineage) · PUNCH (the live edge, Tropical Punch lineage, time-boxed) · DUST (daylight, Dusty Drama lineage) · NOIR (the deep default, Garnet/Satin Berry donations). The Luminance Law (warm = light above flesh luminance, never midtone fill), the one-red ledger, the adhesive rule + rose quota, the surface map (labels→buildings), semantic dark/light token remap. Astro palettes demoted to legacy (greys + status retained). Challenge bench of 11 palettes adjudicated; 4-lens panel record wf_5b0af08b-c49.|
 |1.0.0|2026-03-09|Initial Bold Venture Design System SSOT. Wholesale adaptation of Astro UXDS v7. Complete reference palettes (15 hues, 100+ hex values), dark and light theme semantic tokens, six-level status system, classification markings, data visualization palettes, 18 typography styles, 15-step spacing scale, 40-component inventory, component token specifications, 5 navigation patterns, 3 notification types, three-tier compliance framework, theming architecture, and Astro-to-Bold-Venture naming translation.|
