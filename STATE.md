@@ -30,10 +30,11 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 
 | # | Decision | Unblocks |
 |---|---|---|
-| **7** | **The corpus floor** — keep 768px min-side (recommended: quarantines 9.2%, keeps 60,750) / lower to 512 / raise. Census: `_census.json` in the corpus folder | Taxonomy engine Stage 1b–d (dedupe → quarantine → normalize) — fully automated after the word |
 | **8** | **The 03/03 domain numbering** — `03_SETTING_SYSTEMS/` (stood up 8/25) vs pre-reserved empty `03_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` also reserved. One rename either way | plot_systems' home; clean SSOT numbering before the L4 deepening lands |
 | **9** | **BOLO 19 history** — the coordinate remnant survives in git history: filter-repo re-pass + force-push, or accept-and-monitor. Also: `git push` the cleaned tree; BOLO 8 (GitHub purge ticket) still unfiled | closes the strip for real |
 
+> **#7 (the corpus floor) RULED 2026-08-31: 512** — coverage over cut, after the quarantine walkthrough; supersedes the provisional 768 (taxonomy-engine ruling 11). Quarantines only the <512 tail (933 images, 1.4%) + 337 unreadables; keeps ~65,600. **Stage 1b–d LAUNCHED same session** (hash → dedupe-cluster → quarantine → normalize; resumable pipeline at `_PRIVATE/taxonomy_engine/stage1.py`, all checkpoints in the corpus `_pipeline/` folder). Next human touch = the Stage 3 VERDICT pass.
+>
 > **#3 (schema propagation) EXECUTED 2026-08-24 (engine session):** `armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition` · Expressive Range + the `mc_problem_element` rename written across the vertical slice, integration protocol, ingest template, and both variable registries. **The Blocked table is empty for the first time.**
 
 > **#0 (repo exposure) RULED + EXECUTED 2026-08-24: strip in place, repo stays public.** History rewritten (all 329 commits), force-pushed same session — record in the STRIPPED IN PLACE section below. Follow-ons = BOLO 8 · 9.
