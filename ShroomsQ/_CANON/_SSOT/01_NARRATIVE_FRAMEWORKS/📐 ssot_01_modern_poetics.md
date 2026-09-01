@@ -71,9 +71,10 @@ trunk: BLACK (P3 and the three checks bridge ORANGE)
 
 ### P8 · THE FANTASY DRIVE
 **The law:** every element in the system — every character, place, object, scene, mechanic, every little tiny thing — carries its **intended fantasy**: what the audience gets to *be, feel, or do* through it. If no one can say the fantasy of a thing in one breath, the thing is not done.
-**The capture:** a voice-memo-style line per element — off the cuff, esoteric welcome, never systematized.
+**The capture (protocol RULED 2026-08-31):** spoken by Papi in-chat, dictation as-is — **Papi's voice is the line of quality and the canon form.** Claude may draft candidate lines, marked **⧗ draft**; a draft becomes canon only when Papi keeps it or speaks it over. Off the cuff, esoteric welcome, never systematized.
 **Rank:** Papi, on coining it: *"probably the most important thing."*
 **Address:** systemic — every spine level, every ladder rung, every 12-layer sheet, every plot element. No exceptions by design.
+**Sweep order (RULED 2026-08-31):** the three checks run as three full sweeps — fantasy across everything, then sexy across everything, then aesthetic across everything — never bundled per element.
 
 ### P9 · THE SEXY CHECK
 **The law:** at every address, up and down the spine and the plot: **is this sexy? Yes or no** — then one line of why (or why that's acceptable). Binary first, explanation second. Rides P3: saturation is the doctrine, this is its per-element enforcement.
