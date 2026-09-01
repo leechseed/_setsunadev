@@ -10,3 +10,4 @@
 | `cleaning service` | The Cleaning Service | 2026-08-30 | household, budget, personal | parked |
 | `glute reference` | The Glute Enhancement Reference | 2026-08-30 | body, surgery, ORANGE, worst-side | parked — scope locked via boresight, delivery uncleared |
 | `lab venture` | The Lab Venture | 2026-08-31 | venture, persona, content-strategy, physique, ORANGE | parked — full session of ideation, zero rulings; six open decisions queued in-file |
+| `wheelspin` | The Forza Wheelspin Tracker | 2026-08-31 | gaming, collection, OPERATOR | parked — 104-car list compiled, first callout logged (25 owned / 79 needed); resumes on next callout; ⚠️ one confirm rides in-file (Sierra RS500 vs the called "RS200 Evolution") |

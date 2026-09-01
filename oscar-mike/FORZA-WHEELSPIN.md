@@ -1,9 +1,10 @@
 ---
 title: Forza wheelspin-exclusive cars — collection tracker
 type: tracker
-status: living document — first callout logged 2026-08-31
+status: parked (Oscar Mike 2026-08-31) — resumes on next owned-car callout
 updated: 2026-08-31
 trunk: OPERATOR
+open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisionally vs the called "1985 RS200 Evolution"
 ---
 
 # FORZA WHEELSPIN TRACKER
