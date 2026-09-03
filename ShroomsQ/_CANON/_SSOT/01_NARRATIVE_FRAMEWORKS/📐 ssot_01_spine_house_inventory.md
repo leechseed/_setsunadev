@@ -91,3 +91,9 @@ The one-sheet template v2 + SPEC v3 (the distill instrument) · taxonomy proposa
 
 ## Version history
 - **1.0.0 — 2026-08-26.** Stage-1 sweep banked (Explore agent pass). Stage 2 = the library `feeds:` sweep.
+
+---
+
+## Addendum 2026-09-03 — the narratology shelf (correction to the craft-shelf finding)
+
+The stage-1 sweep scored the craft shelf **0.6% distilled (2 of 353)**. That missed **109 finished framework distills** sitting under the archived `X_`-prefixed build lineage. On the ancients ruling they were promoted to `01_NARRATIVE_FRAMEWORKS/_narratology_shelf/` (index: `📐 ssot_01_narratology_shelf.md`, UID key: `UID_index.md`). Stage 2 keys the shelf first; a provisional competency → spine-level map is in the shelf index. `_ARCHIVE/_DIRECTORY OF DIR/_narratology_dir` (3.5 MB) and `_wicked_figures_dir` (3.2 MB) were archived **uninventoried** and may hold more.

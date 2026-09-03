@@ -3,7 +3,7 @@
 > **Repository**: `_setsunadev`
 > **Author**: CHEF ZAKUZOKU / U01_LEECHSEED / ggrimace
 > **License**: MIT (2024)
-> **Generated**: 2026-02-09
+> **Generated**: 2026-02-09 · **Amended 2026-09-03**: the ancients pass — seventeen folders moved to `_ARCHIVE/` (index there); the 1.04 narratology curriculum promoted to the SSOT; GUTS99 retired. The live index is `STATE.md`; this brief is a snapshot.
 
 ---
 
@@ -44,11 +44,11 @@ This is not a typical codebase. It is a **narrative engineering environment** th
 
 | Framework | Role | Location(s) |
 |-----------|------|-------------|
-| **Dramatica** | Core story structure engine — provides the "storyform" (thematic argument, character dynamics, plot progression) | `.AIrefLIBRARY/`, `DRAMATICA V4 PROGRAM BUILDS/`, `_dramatica_OXO_builds/` |
+| **Dramatica** | Core story structure engine — provides the "storyform" (thematic argument, character dynamics, plot progression) | `.AIrefLIBRARY/`, `DRAMATICA V4 PROGRAM BUILDS/`, `_ARCHIVE/_dramatica_OXO_builds/` |
 | **Narrative Context Protocol (NCP)** | Open-source schema for structured narrative data with git-style attribution tracking | `narrative-context-protocol-main/` |
-| **Krebs Cycle of Creativity / Bermuda Quadrilateral** | Meta-framework for understanding creative energy flow between Science, Engineering, Design, and Art | `_broodengine/` |
-| **GUTS99** | Personal media influence analysis system — 12 subsystems cataloging aesthetic DNA across media types | `_grognard/` |
-| **Hugo** | Static site generator for publishing narrative documentation | `hugo-dramatica-draft-v1/` |
+| **Krebs Cycle of Creativity / Bermuda Quadrilateral** | Meta-framework for understanding creative energy flow between Science, Engineering, Design, and Art | `_ARCHIVE/_broodengine/` |
+| **GUTS99** | Personal media influence analysis system — 12 subsystems cataloging aesthetic DNA across media types | `_ARCHIVE/_grognard/` |
+| **Hugo** | Static site generator for publishing narrative documentation | `_ARCHIVE/hugo-dramatica-draft-v1/` |
 | **Obsidian** | Primary knowledge management tool — vaults for research, character work, manuscripts | `logseq_2023_journals_notes/leechseed2/`, `OVER_EXIT_OUT_OBSIDIAN/`, `_devlog/LEECHSEED STUDIES/` |
 | **Logseq / Joplin** | Secondary note-taking tools with sync integration | `logseq_2023_journals_notes/`, `.ASTRO7EX.SYNC.JOPLIN/` |
 | **Final Draft** | Professional screenwriting software | `OUTLIERS_FINAL_DRAFT/`, `.finaldraftfiles/` |
@@ -121,7 +121,7 @@ Hugo Static Site → Published Documentation
 
 ### Build Systems
 
-- **Hugo**: Static site generation (`hugo-dramatica-draft-v1/`)
+- **Hugo**: Static site generation (`_ARCHIVE/hugo-dramatica-draft-v1/`)
 - **Python scripts**: Batch processing for format conversion, media management
 - **NCP Python module**: Schema validation and story data processing (`narrative-context-protocol-main/python/`)
 
@@ -133,23 +133,23 @@ Hugo Static Site → Published Documentation
 
 | Directory | Purpose |
 |-----------|---------|
-| `_broodengine/` | **Creative theory vault** — Core frameworks (Krebs Cycle, Bermuda Quadrilateral), style guides, naming conventions, mathematical theory, studio design notes |
-| `_grognard/` | **GUTS99 media influence system** — 12 subsystems cataloging personal aesthetic DNA across film, anime, literature, games, music, art, comics, theater, web culture, and more |
+| `_ARCHIVE/_broodengine/` | **Creative theory vault** — Core frameworks (Krebs Cycle, Bermuda Quadrilateral), style guides, naming conventions, mathematical theory, studio design notes |
+| `_ARCHIVE/_grognard/` | **GUTS99 media influence system** — 12 subsystems cataloging personal aesthetic DNA across film, anime, literature, games, music, art, comics, theater, web culture, and more |
 | `_devlog/` | **Development journal** — Dated journal entries (2024), VS Code Journal integration guide, LEECHSEED STUDIES Obsidian vault with character/theme/setting research |
-| `_operations/` | **Standard Operating Procedures** — Technical how-tos (HDD installation, file transfer) for maintaining continuity |
-| `_DIRECTORY OF DIR/` | **Knowledge base index** — Subject-specific collections: narratology, game design, database systems, design patterns, metadata schemas, reference sources, writing prompts, Python scripts |
-| `_cake/` | **Miscellaneous research** — Film catalog, TTRPG interests, business ideas, utility scripts |
-| `_dramatica_OXO_builds/` | **Dramatica project variants** — Different story configurations |
+| `_ARCHIVE/_operations/` | **Standard Operating Procedures** — Technical how-tos (HDD installation, file transfer) for maintaining continuity |
+| `_ARCHIVE/_DIRECTORY OF DIR/` | **Knowledge base index** — Subject-specific collections: narratology, game design, database systems, design patterns, metadata schemas, reference sources, writing prompts, Python scripts |
+| `_ARCHIVE/_cake/` | **Miscellaneous research** — Film catalog, TTRPG interests, business ideas, utility scripts |
+| `_ARCHIVE/_dramatica_OXO_builds/` | **Dramatica project variants** — Different story configurations |
 | `.AIrefLIBRARY/` | **AI reference library** — 22 Dramatica PDF reports (theme, character, plot analyses) for LLM ingestion |
 | `narrative-context-protocol-main/` | **NCP framework** — Full specification, schema, examples (Anora, Shawshank Redemption), Python implementation, SQLite databases |
 | `_2025.02_SELACIOUS_BUILD/` | **Current active build** — Rapid prototyping, character esoterics (astrology, tarot), worldbuilding, plot databases |
-| `XX_2025.01_MCMARI_BUILD/` | **Previous build** — Similar structure, slightly less comprehensive |
-| `hugo-dramatica-draft-v1/` | **Hugo site** — Static site for publishing Dramatica-based narrative documentation |
+| `_ARCHIVE/XX_2025.01_MCMARI_BUILD/` | **Previous build** — Similar structure, slightly less comprehensive |
+| `_ARCHIVE/hugo-dramatica-draft-v1/` | **Hugo site** — Static site for publishing Dramatica-based narrative documentation |
 | `logseq_2023_journals_notes/` | **Legacy knowledge base** — Logseq journals (2022-2023), Obsidian vaults, Python script archive, Foundry RPG config |
 | `OUTLIERS_FINAL_DRAFT/` | **Screenplay project** — Final Draft screenplay file (outliers.fdx) |
-| `WORLDBUILIDNG THROUGHLINGE/` | **Worldbuilding reference** — Civilization-scale narrative throughlines |
+| `_ARCHIVE/WORLDBUILIDNG THROUGHLINGE/` | **Worldbuilding reference** — Civilization-scale narrative throughlines |
 | `lola-sama/` | **Ollama AI framework** — Local AI model data |
-| `football_qb_training/` | **Non-narrative reference** — Quarterback training methodology (likely research for writing sports scenes or personal interest) |
+| `_ARCHIVE/football_qb_training/` | **Non-narrative reference** — Quarterback training methodology (likely research for writing sports scenes or personal interest) |
 
 ### Content Types & Organization Philosophy
 
@@ -196,27 +196,28 @@ Hugo Static Site → Published Documentation
 
 **Active**:
 - `_2025.02_SELACIOUS_BUILD/` — Current build with character esoterics, worldbuilding, plot research
-- `_broodengine/` — Living theory documentation
-- `_grognard/` — GUTS99 system (actively being populated)
+- `ShroomsQ/_CANON/_SSOT/` — the SSOT domains 00–05 (theory lives here; the 2024 vault is archived at `_ARCHIVE/_broodengine/`)
+- `_CANON_NODES/` — canonical entity nodes and registers (GUTS99 retired and archived 2026-09-03)
 - `_devlog/` — Development journaling
 - `narrative-context-protocol-main/` — NCP framework
 - `.AIrefLIBRARY/` — AI reference materials
 
-**Archived / Deprecated** (prefix `X_` or `XX_`):
-- `X_1_PRE-ALPHA_BUILD_CODENAME_BELLE/`
-- `X_1.01_EMIWU_ALPHA_BUILD/`
-- `x_1.02_MARIMARI_EN_BUILD/`
-- `x_1.03_GOONIRU_BUILD/`
-- `XX_2025.01_MCMARI_BUILD/`
+**Archived / Deprecated** — all under `_ARCHIVE/` since 2026-09-03 (index: `_ARCHIVE/INDEX.md`); the narratology curriculum from 1.04 was promoted first to `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/`:
+- `_ARCHIVE/X_1_PRE-ALPHA_BUILD_CODENAME_BELLE/`
+- `_ARCHIVE/X_1.01_EMIWU_ALPHA_BUILD/`
+- `_ARCHIVE/x_1.02_MARIMARI_EN_BUILD/`
+- `_ARCHIVE/x_1.03_GOONIRU_BUILD/`
+- `_ARCHIVE/XX_2025.01_MCMARI_BUILD/`
+
+- `_ARCHIVE/_1.03.1 RC1_BUNNIRU_BUILD_HUGO/` — superseded by 1.04 (hash check 2026-09-03)
+- `_ARCHIVE/_1.04 RC1_MARIMARI_EN_BUILD/` — terminal build of the lineage; live content promoted to the narratology shelf
 
 **Uncertain Status**:
-- `_1.03.1 RC1_BUNNIRU_BUILD_HUGO/` — May be superseded
-- `_1.04 RC1_MARIMARI_EN_BUILD/` — May be superseded
 - `logseq_2023_journals_notes/` — Legacy but contains valuable script archive
 
 ### Roadmap Hints from Devlog & Structure
 
-1. **GUTS99 Expansion**: System is at baseline (12 entries) with a target of 30-40+ entries across all subsystems — significant cataloging work ahead
+1. **GUTS99 Expansion**: ~~System is at baseline (12 entries) with a target of 30-40+ entries~~ — **retired 2026-09-03**; the subsystem coinages fold into the BVX multimedia-ingestion design (BOLO 15)
 2. **Hugo Publication**: Hugo site skeleton exists, suggesting intent to publish narrative documentation as a static site
 3. **NCP Adoption**: Full specification imported with examples — likely planning to structure all story data through NCP schema
 4. **Character Esoterics Deepening**: The SELACIOUS build's astrology/tarot systems are comprehensive but appear to be research-stage, not yet applied to final characters
@@ -230,12 +231,12 @@ Hugo Static Site → Published Documentation
 
 ### Key Entry Points
 
-- **To understand the story theory**: Start with `_broodengine/brood.theory.bermuda.quadrilateral.md`
+- **To understand the story theory**: Start with `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/` (the story lattice) and the narratology shelf; the 2024 meta-framework essays are at `_ARCHIVE/_broodengine/` (BVX.1108–1110)
 - **To understand the story structure**: Read `.AIrefLIBRARY/` PDF reports (r1-r22)
 - **To understand the NCP schema**: Read `narrative-context-protocol-main/SPECIFICATION.md`
-- **To understand the creator's aesthetic**: Read `_grognard/` GUTS99 entries
+- **To understand the creator's aesthetic**: Read `_CANON_NODES/film-register.md` (GUTS99 retired; scaffold at `_ARCHIVE/_grognard/`)
 - **To understand current work**: Explore `_2025.02_SELACIOUS_BUILD/`
-- **To understand naming/style conventions**: Read `_broodengine/styleguide.md`
+- **To understand naming/style conventions**: Read `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md` (2024 original: `📐 ssot_05_operations_legacy_styleguide_2024.md`)
 
 ### Story Project Codename: ASTRO7EX
 

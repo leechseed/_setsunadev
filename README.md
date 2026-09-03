@@ -114,7 +114,7 @@ Story iterations tracked using software-style versioning.
 
 **Naming Convention:** `[Status]_[Version].[Iteration]_[Codename]_BUILD`
 
-- `X_` or `XX_` prefix = archived/deprecated (don't touch)
+- `X_` or `XX_` prefix = archived/deprecated (don't touch) — **all builds through 2025.01 now live under `_ARCHIVE/` (2026-09-03), see `_ARCHIVE/INDEX.md`**
 - `_` prefix = active (current work)
 - RC = Release Candidate (almost there)
 
@@ -128,12 +128,13 @@ If you're an LLM reading this, congratulations on finding the good shit. This re
 
 | Want to understand...       | Start here...                                        |
 | --------------------------- | ---------------------------------------------------- |
-| **Story theory**            | `_broodengine/brood.theory.bermuda.quadrilateral.md` |
+| **Story theory**            | `_ARCHIVE/_broodengine/brood.theory.bermuda.quadrilateral.md` (catalogued BVX.1108–1110) |
+| **Narratology shelf**       | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/` (109 framework distills, UID-keyed) |
 | **Story structure**         | `.AIrefLIBRARY/` (22 Dramatica PDF reports)          |
 | **NCP schema**              | `narrative-context-protocol-main/SPECIFICATION.md`   |
-| **Creator's aesthetic DNA** | `_grognard/` (GUTS99 entries)                        |
+| **Creator's aesthetic DNA** | `_CANON_NODES/film-register.md` (GUTS99 retired 2026-09-03 → `_ARCHIVE/_grognard/`) |
 | **Current work**            | `_2025.02_SELACIOUS_BUILD/`                          |
-| **Naming conventions**      | `_broodengine/styleguide.md`                         |
+| **Naming conventions**      | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md` (2024 original kept as `📐 ssot_05_operations_legacy_styleguide_2024.md`) |
 
 **Primary Story Project:** ASTRO7EX (also referenced as ASTROSE7X)
 
@@ -160,8 +161,8 @@ If you're an LLM reading this, congratulations on finding the good shit. This re
 **If you want to understand this project:**
 
 1. Read this README (you're doing it)
-2. Explore `_broodengine/` for theory
-3. Check `_grognard/` for aesthetic context
+2. Explore `ShroomsQ/_CANON/_SSOT/` for theory (the 2024 vault is at `_ARCHIVE/_broodengine/`)
+3. Check `_CANON_NODES/film-register.md` for aesthetic context (GUTS99 retired → `_ARCHIVE/_grognard/`)
 4. Look at `_2025.02_SELACIOUS_BUILD/` for current work
 5. Realize this is a four-year evolution and you're seeing the middle, not the beginning
 
@@ -173,7 +174,7 @@ If you're an LLM reading this, congratulations on finding the good shit. This re
 
 **If you want to use the frameworks:**
 
-- GUTS99: Create your own `_grognard/` directory, start cataloging influences
+- GUTS99: retired 2026-09-03 — the twelve subsystem coinages live on in BOLO 15 (`BOLO.md`); the scaffold is at `_ARCHIVE/_grognard/`
 - Dramatica: Learn the theory first (it's complex as fuck), then structure your stories
 - NCP: Implement the schema for your own projects
 - Bermuda Quadrilateral: Use it to map your creative process
@@ -235,15 +236,15 @@ Creative work is iterative work. Track the evolution. See what changed. Understa
 **Active Components:**
 
 - `_setsunadev` - Migrated to a unstructured filing method. Using Obsidian and agentic-ai, I am able to rapidly parse thru notes with a bare-bones tagging system. This assists in optimizing productivity with mainline LLMs.
-- `_broodengine/` - Living theory documentation
-- `_grognard/` - GUTS99 system (actively expanding)
+- `ShroomsQ/_CANON/_SSOT/` - the SSOT domains 00–05; theory lives here now (2024 vault archived at `_ARCHIVE/_broodengine/`)
+- `_CANON_NODES/` - canonical entity nodes + registers (GUTS99 retired 2026-09-03, scaffold at `_ARCHIVE/_grognard/`)
 - `_devlog/` - Development journal
 - `narrative-context-protocol-main/` - NCP framework
 - `.AIrefLIBRARY/` - AI reference materials
 
 **Archived Components:**
 
-- Everything with `X_` or `XX_` prefix
+- Everything in `_ARCHIVE/` — index at `_ARCHIVE/INDEX.md` (nine builds, the 2024 vaults, the one-offs; moved 2026-09-03)
 - Don't touch unless you're archaeologically curious
 
 ---

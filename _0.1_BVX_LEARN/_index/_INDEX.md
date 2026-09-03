@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1107
+next_id: BVX.1111
 ---
 
 # BVX-LEARN — master index
@@ -13,18 +13,18 @@ The node registry. **An entry not in this index is invisible to the next session
 
 | | |
 |---|---|
-| Indexed sources | **1,106** |
+| Indexed sources | **1,109** |
 | Duplicate groups collapsed | 147 |
 | Already in KNOWLEDGE_AREAS (legacy) | 14 |
 | Review queue | 10 |
 | Excluded (not books) | 60 |
-| Next free ID | `BVX.1107` |
+| Next free ID | `BVX.1111` — `BVX.1107` reserved (Pyramid Principle earmark, 8/21) |
 
 ## By trunk
 
 | Trunk | Count |
 |---|---|
-| BLACK | 891 |
+| BLACK | 894 |
 | BOTH | 45 |
 | ORANGE | 170 |
 
@@ -47,7 +47,7 @@ The node registry. **An entry not in this index is invisible to the next session
 | `PSY` | Psychology & typology | 20 |
 | `POL` | Politics, power, radicalization | 19 |
 | `PRF` | Theatre, acting, performance | 15 |
-| `DSN` | Design theory & systems | 11 |
+| `DSN` | Design theory & systems | 14 |
 | `SLF` | Learning, self-development | 4 |
 
 ## Legacy overlaps — already catalogued, now also found in Zotero
@@ -1179,3 +1179,8 @@ The node registry. **An entry not in this index is invisible to the next session
 | `BVX.1104` | `VIS` | BLACK | The Watercolor Fix-It Book |  | 152 |
 | `BVX.1105` | `VIS` | BLACK | Zarins, Uldis - Form of the Head and Neck |  | 224 |
 | `BVX.1106` | `VIS` | BLACK | Zelbel M. - The Art of Boudoir Photography with Speedlight |  | 75 |
+| `BVX.1108` | `DSN` `PHI` | BLACK | Age of Entanglement (Journal of Design and Science, 2016) | Oxman |  |
+| `BVX.1109` | `DSN` | BLACK | Design and Science (Journal of Design and Science, 2017) | Ito |  |
+| `BVX.1110` | `DSN` | BLACK | Currency, Creativity, and the Bermuda Quadrilateral (essay) | ParadoxPairs |  |
+
+**Ancients intake 2026-09-03 (`BVX.1108`–`1110`):** web essays, not books — `source_type: article`; Oxman and Ito are CC-BY (JoDS), ParadoxPairs is paradoxpairs.com/kcc. Markdown copies held at `_ARCHIVE/_broodengine/` (`krebs.cycle.of.creativity.md` · `brood.theory.design.and.science.md` · `brood.theory.bermuda.quadrilateral.md`). Distill one-sheets not yet written; `feeds:` pending. The trio is the source of the README's "Bermuda Quadrilateral / Krebs Cycle of Creativity" meta-framework.

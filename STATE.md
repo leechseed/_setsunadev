@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-08-31
+updated: 2026-09-03
 read_first: true
 ---
 
@@ -33,6 +33,8 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | **8** | **The 03/03 domain numbering** — `03_SETTING_SYSTEMS/` (stood up 8/25) vs pre-reserved empty `03_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` also reserved. One rename either way | plot_systems' home; clean SSOT numbering before the L4 deepening lands |
 
 > **#9 (BOLO 19 history) RULED + EXECUTED 2026-09-01: re-pass + force-push, Papi's hand on the trigger** (the permission layer required it — twice-blocked classifier, by design). Scope grew on prep: the batch scan found **1,064 historical blobs** with numeric coords (vs the 193-file tree count), three formats (quoted/unquoted JSON + YAML). Blob-callback pass over all history → **verified zero** (2,686 objects) → force-pushed → remote spot-check serves `[COORD]` only, old SHAs 422. Backup: `Desktop/_setsunadev-PRE-REPASS-2026-08-31.bundle` (never commit). Runbook preserved: `_PRIVATE/repass_2026-08-31/`. **BOLO 19 closed; BOLO 8 ticket now covers both strip layers in one filing.**
+>
+> **R1 (strip residue — class: personal ad + city pin) RULED 2026-09-03: keep all three, accepted residue.** Found on the ancients pass: `NSA.md` (a personal ad with neighborhood, body, and role) in `_ARCHIVE/XX_2025.01_MCMARI_BUILD/` and in the active `_2025.02_SELACIOUS_BUILD/`; the `[CITY]` token defeated by county / neighborhood / university names across ~30 tracked files (Leon County 6 · Killearn 3 · FAMU 19 · Apalachee 6 · Bradfordville 3 · Maclay, Klapp-Phipps, Lake Jackson, Crowder in one); the 6/16 discreet-outdoor-spots conversation surviving the 24-conversation removal. Papi's ruling: nothing deleted, nothing redacted, no ticket-scope change. Recorded so the finding is not re-derived.
 >
 > **#7 (the corpus floor) RULED 2026-08-31: 512** — coverage over cut, after the quarantine walkthrough; supersedes the provisional 768 (taxonomy-engine ruling 11). Quarantines only the <512 tail (933 images, 1.4%) + 337 unreadables; keeps ~65,600. **Stage 1b–d LAUNCHED same session** (hash → dedupe-cluster → quarantine → normalize; resumable pipeline at `_PRIVATE/taxonomy_engine/stage1.py`, all checkpoints in the corpus `_pipeline/` folder). Next human touch = the Stage 3 VERDICT pass.
 >
@@ -89,6 +91,7 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **8/24 evening: BOLO 7 done + #3 propagated — the schema fork is closed.** Remaining: reconcile Tori's Dramatica cells to the §9 rotation; armor_index scale-class. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **Bold Venture Design System** | ✅ **v2.0.0 — THE ROSTER RULED 2026-09-01.** The brand color layer locked: ROSE anchor #8A1F44 + FLESH (shadows through the rose) + rose-cast grounds + gold in core. Four registers: **EMBER** (all-hours ambient) · **PUNCH** (live edge, time-boxed) · **DUST** (daylight) · **NOIR** (night default). The Luminance Law (warm = light, never pigment on skin) · one-red ledger · adhesive rule + rose quota · surface map labels→buildings. 11-palette challenge bench adjudicated; 4-lens panel wf_5b0af08b-c49. Board: `Desktop/BOLD-VENTURE-PALETTE.html` | `00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. 1,106 sources indexed, classifier 99%. Next ID `BVX.1107`. | `_0.1_BVX_LEARN/_meta/` |
+| **The narratology shelf** | ✅ **PROMOTED 2026-09-03** (the ancients pass) — 109 framework distills (UID-keyed, Tier 1–4 × 21 competencies, 15 wicked/craft) + the UID index + 31 competency one-sheets + the General Model propositions P1–P8 + the Rulebook draft, recovered from the archived 1.04 build. **Supersedes the BOLO 18 stage-1 “craft shelf 0.6% distilled” finding.** Stage 2 keys these first (provisional `feeds: SPINE.Lx` map in the shelf index) | `01_NARRATIVE_FRAMEWORKS/_narratology_shelf/📐 ssot_01_narratology_shelf.md` |
 | **Modern Poetics** (was: Leechseed Manifesto) | ✅ **CANONIZED 2026-08-31** — the oldest True Ancient integrated: 16 docs (record said 10) dispositioned 7-canonize/9-fold, ratified; **+ 3 native checks coined same session (P8 Fantasy Drive · P9 Sexy Check · P10 Aesthetic Check)**. The lattice's prescriptive half. Application pass = BOLO 21; DOCTRINE 0 entry deferred | `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md` (sources stay in imported-Joplin) |
 | **L2b MORPHOLOGY** | Designed this session, unspecced. Frame → Tissue → **Condition** → Line → Archetype. | — |
 
@@ -109,6 +112,16 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-09-03 (the ancients pass — archive-or-keep RULED, R1–R5)
+
+- **`_ARCHIVE/` stood up at root** ([INDEX](_ARCHIVE/INDEX.md) · README carries the rule: archaeology only, promote-then-park, nothing deleted). **Seventeen folders moved in** (R4 · R5): the seven-build lineage BELLE → EMIWU → MARIMARI → GOONIRU → BUNNIRU → 1.04 → MCMARI · `_broodengine` · `_grognard` · `_cake` · `_operations` · `football_qb_training` · `WORLDBUILIDNG THROUGHLINGE` · `split_files` · `hugo-dramatica-draft-v1` (submodule path updated in `.gitmodules`) · `_dramatica_OXO_builds` · `_DIRECTORY OF DIR`. 1,982 tracked files, 39 MB. The `X_`/`XX_` prefix convention is superseded by the folder. README + PROJECT_BRIEF re-pointed.
+- **The hash pass on the lineage:** cumulative through 1.04, then MCMARI restarted; six of seven builds carry nothing the next lacks. **R3: 1.04 stands alone** — UID coverage check found 0 frameworks unique to BELLE/EMIWU/1.02, 16 unique to 1.04.
+- **THE NARRATOLOGY SHELF PROMOTED** (see Live) — the recovered 2024 curriculum, 165 files / 2.1 MB, at `01_NARRATIVE_FRAMEWORKS/_narratology_shelf/`. The house already held ~110 finished framework distills under an archived prefix; the 0.6% craft-shelf stat is superseded.
+- **Four more keepers promoted:** the three Bermuda Quadrilateral / Krebs Cycle essays → **BVX.1108–1110** (`DSN`; next free `BVX.1111`, `1107` reserved for the Pyramid Principle earmark) · the 2024 styleguide + naming conventions → `05_OPERATIONS/📐 ssot_05_operations_legacy_styleguide_2024.md` · the two film lists (2023 FUZZ + 2024 `_cake`) merged → [`_CANON_NODES/film-register.md`](_CANON_NODES/film-register.md) (123 titles, **40 on both lists = the stable core**) · the moon-societies list + the Civ V table → [`_CANON_NODES/moon-saga-seed.md`](_CANON_NODES/moon-saga-seed.md) (a separate IP, MOON/SAGA, not The Outliers; fabula in the archived `_g-on_dir`).
+- **R2: GUTS99 RETIRED.** Ten unfilled stubs since Jul 2025; the twelve subsystem coinages carried into BOLO 15 as the media-type register. For design time: the three source docs disagree (10 vs 12 subsystems; LUSTRA = porn vs visual art). 2024's “GUTS99” was the doc-site name for the narratology curriculum — a different thing under the same name.
+- **R1: the strip residue ruled** (see the Blocked notes) — keep, accept, no scope change.
+- **Housekeeping surfaced, not acted on:** `yolov8n.pt` (6.5 MB) committed at the public repo root 8/31, duplicate of the gitignored copy in `_PRIVATE/taxonomy_engine/`. → Known rot.
 
 ## ✅ Moved 2026-08-26→31 (the post-lattice stretch — collision · sweeps · the leak · the census)
 
@@ -235,7 +248,8 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | `_0.1_BVX_LEARN/_index/_INDEX.md` | 1,106 catalogued sources, subject + trunk |
 | `_0.1_BVX_LEARN/_meta/DECISIONS.md` | BVX-LEARN locked decisions (D1–D5) |
 | `.../files/2026-08-05_ultrasin-master-registrymd.md` | Ultrasin — all systems A–M, 10 open decisions |
-| `_CANON_NODES/` | Canonical entity nodes |
+| `_CANON_NODES/` | Canonical entity nodes + registers (film register · moon-saga seed) |
+| `_ARCHIVE/INDEX.md` | The ancients — seventeen archived folders, what each was, what was promoted out and to where |
 | `_devlog/_devlog_docs/_devlog_journals/` | Daily journal, `MMDDYYYY.journal.md` |
 
 ---
@@ -247,6 +261,8 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 - ~~**Joplin geolocation metadata** — imported vault files carry home-adjacent lat/long in a public repo.~~ **Stripped 2026-08-24** (tree + full history).
 - **10-item review queue** — `_0.1_BVX_LEARN/_meta/REVIEW-QUEUE.md`
 - `OUTLIERS_FINAL_DRAFT/outliers.fdx` is **empty**. No script pages exist.
+- **`yolov8n.pt` (6.5 MB) sits at the public repo root** (committed 8/31 by the cast pre-pass); the working copy is the gitignored one in `_PRIVATE/taxonomy_engine/`. Candidate for tree removal + `.gitignore` entry — not ruled.
+- **`_ARCHIVE/_DIRECTORY OF DIR/`** (823 files) was archived uninventoried; `_narratology_dir` and `_wicked_figures_dir` may hold more distills.
 
 ---
 
