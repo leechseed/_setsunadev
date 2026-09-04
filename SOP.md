@@ -109,3 +109,24 @@ A session that answers "sit rep" without all five has not answered it.
 5. **Answer-first everywhere** (Pyramid Principle, ratified doctrine).
 6. **The Spartan dial: trim words, not meaning.** Complete sentences, nothing ornamental — Laconic, but the message survives whole.
 7. **The ten-second test:** headers plus bolds alone must carry the message. If a scan doesn't tell the story, the format failed.
+
+---
+
+## 8 · Dictation codebook — standing garble table
+
+**Coded 2026-09-03.** Papi speaks; a speech-to-text layer types. Claude never hears audio. Proper nouns and numbers are what the recognizer gets wrong; common words come through clean. This table is the read-through. When a transmission contains one of these, read the right-hand column without asking. New garbles get a row the turn they are caught.
+
+| Heard | Read as |
+|---|---|
+| ultrasound · AutoSun · ultra sin | **Ultrasin** |
+| bold adventure · bone fracture · bold vnture | **Bold Venture** (BVX) |
+| blamer · blender | **Blender** |
+| Doctor NZero · doctor zero | **DOCTRINE 0** |
+| SLP (in a process context) | **SOP** |
+| hau copy · tell copy · hell copy | **how copy** |
+| black room · dark room | **DARKROOM** |
+| bolo · polo (in a tasking context) | **BOLO** |
+| break break (×2 or ×3) | **break-break** (nested detours stack) |
+| Quinton | Quinn Bishop |
+| The Outsiders | **The Outliers** |
+| year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |

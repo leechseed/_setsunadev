@@ -2,8 +2,8 @@
 title: DOCTRINE 0 — Invariants on Invariants
 type: doctrine
 trunk: BOTH
-status: v0.1 — drafted 2026-08-21, awaiting ratification
-updated: 2026-08-21
+status: v1.0 — RATIFIED 2026-09-03 (Papi, spoken: "doctrine zero is good"). The seven stand. The rename ruling (Tenet ⭐ · General Order · Standing Order bench) remains OPEN — ratification covers the rules, not the name
+updated: 2026-09-03
 sources: Quartermaster promotion rule · BVX-LEARN one-sheet Invariants field (20+ sets) · Layer 0 Invariants 1–5 · VICTORIA_MIDNIGHT ingest §9 · Non-Negotiable Invariants method (Arcane, Westworld) · SSOT Writing Guide — Marine Corps Doctrine Standard v1.0.0 (2026-02-09)
 related: BVX-ULTRASIN-twin-track.md
 ---
