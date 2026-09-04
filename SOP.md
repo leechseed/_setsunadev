@@ -127,6 +127,7 @@ A session that answers "sit rep" without all five has not answered it.
 | black room · dark room | **DARKROOM** |
 | bolo · polo (in a tasking context) | **BOLO** |
 | break break (×2 or ×3) | **break-break** (nested detours stack) |
+| ask her mic · oscar mic · Oscar Mike's | **Oscar Mike** |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
