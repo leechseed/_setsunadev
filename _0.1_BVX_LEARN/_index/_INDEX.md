@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1111
+next_id: BVX.1122
 ---
 
 # BVX-LEARN — master index
@@ -13,18 +13,18 @@ The node registry. **An entry not in this index is invisible to the next session
 
 | | |
 |---|---|
-| Indexed sources | **1,109** |
+| Indexed sources | **1,120** |
 | Duplicate groups collapsed | 147 |
 | Already in KNOWLEDGE_AREAS (legacy) | 14 |
 | Review queue | 10 |
 | Excluded (not books) | 60 |
-| Next free ID | `BVX.1111` — `BVX.1107` reserved (Pyramid Principle earmark, 8/21) |
+| Next free ID | `BVX.1122` — `BVX.1107` reserved (Pyramid Principle earmark, 8/21) |
 
 ## By trunk
 
 | Trunk | Count |
 |---|---|
-| BLACK | 894 |
+| BLACK | 905 |
 | BOTH | 45 |
 | ORANGE | 170 |
 
@@ -38,7 +38,7 @@ The node registry. **An entry not in this index is invisible to the next session
 | `LIT` | Literary theory & scholarship | 104 |
 | `VIS` | Visual art, photography, cinematography | 100 |
 | `TEC` | Programming, CS, engineering | 60 |
-| `MIL` | Military doctrine, tactics, firearms | 46 |
+| `MIL` | Military doctrine, tactics, firearms | 57 |
 | `BIZ` | Business, finance, property | 41 |
 | `FIT` | Fitness, physique, sport | 33 |
 | `PHI` | Philosophy, esoteric, religion | 28 |
@@ -1182,5 +1182,18 @@ The node registry. **An entry not in this index is invisible to the next session
 | `BVX.1108` | `DSN` `PHI` | BLACK | Age of Entanglement (Journal of Design and Science, 2016) | Oxman |  |
 | `BVX.1109` | `DSN` | BLACK | Design and Science (Journal of Design and Science, 2017) | Ito |  |
 | `BVX.1110` | `DSN` | BLACK | Currency, Creativity, and the Bermuda Quadrilateral (essay) | ParadoxPairs |  |
+| `BVX.1111` | `MIL` | BLACK | MCDP 1 Warfighting (1997) | U.S. Marine Corps | 109 |
+| `BVX.1112` | `MIL` | BLACK | MCDP 1-1 Strategy (1997) | U.S. Marine Corps | 115 |
+| `BVX.1113` | `MIL` | BLACK | MCDP 1-2 Campaigning (1997) | U.S. Marine Corps | 115 |
+| `BVX.1114` | `MIL` | BLACK | MCDP 1-3 Tactics (1997) | U.S. Marine Corps | 145 |
+| `BVX.1115` | `MIL` | BLACK | MCDP 2 Intelligence (1997) | U.S. Marine Corps | 107 |
+| `BVX.1116` | `MIL` | BLACK | MCDP 3 Expeditionary Operations (1998) | U.S. Marine Corps | 143 |
+| `BVX.1117` | `MIL` | BLACK | MCDP 4 Logistics (2023) | U.S. Marine Corps | 142 |
+| `BVX.1118` | `MIL` | BLACK | MCDP 5 Planning (1997) | U.S. Marine Corps | 105 |
+| `BVX.1119` | `MIL` | BLACK | MCDP 6 Command and Control (1996) | U.S. Marine Corps | 153 |
+| `BVX.1120` | `MIL` | BLACK | MCDP 7 Learning (2020) | U.S. Marine Corps | 81 |
+| `BVX.1121` | `MIL` | BLACK | MCDP 8 Information (2022) | U.S. Marine Corps | 126 |
 
 **Ancients intake 2026-09-03 (`BVX.1108`–`1110`):** web essays, not books — `source_type: article`; Oxman and Ito are CC-BY (JoDS), ParadoxPairs is paradoxpairs.com/kcc. Markdown copies held at `_ARCHIVE/_broodengine/` (`krebs.cycle.of.creativity.md` · `brood.theory.design.and.science.md` · `brood.theory.bermuda.quadrilateral.md`). Distill one-sheets not yet written; `feeds:` pending. The trio is the source of the README's "Bermuda Quadrilateral / Krebs Cycle of Creativity" meta-framework.
+
+**MCDP intake 2026-09-03 (`BVX.1111`–`1121`, BOLO 1 closed):** the eleven Marine Corps doctrinal publications, `source_type: doctrine-pdf`, U.S. Government work (public domain). One BVX ID per publication; edition pairs (1997 original + 2018 Change 1 for MCDP 1 · 1-2 · 1-3 · 5) share the ID, recorded in `x`. MCDP 1-0 Marine Corps Operations was already `BVX.0666`. Files: `Desktop\_BVX_INBOX\mcdp\`, normalized on intake (mapping in that folder's `_INTAKE-2026-09-03.md`). One-sheets `MIL.01`–`MIL.11` in `KNOWLEDGE_AREAS/`. Finding on intake: the Dec-2025 Joplin summaries titled *MCDP 4 — Security* and *MCDP 8 — Logistics* do not match the real MCDP 4 (Logistics) and MCDP 8 (Information); repair pass logged in the Joplin folder.
