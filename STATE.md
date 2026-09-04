@@ -99,6 +99,7 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 | System | State | Where |
 |---|---|---|
+| **Zero-budget launch — 3D erotica stills (Blender × DARKROOM)** | 🔴 **CAPTURED 2026-09-03 → BOLO 24.** The Amazon job fell through; Papi unemployed as of 9/3. Start now on what is in hand — $0 base, $100–200 stretch. Design pass staged, fires on go. The "new-job standing" assumption (Birthday shelving) no longer holds. | [BOLO.md](BOLO.md) #24 |
 | **Ultrasin venture** | Full registry v0.1, 32-chat sweep. **Firewall RULED 8/24 (subsidiary)** — launch blockers now handle · register · legal docs. | `_CLAUDE_ARCHIVE_2026-08-15/files/2026-08-05_ultrasin-master-registrymd.md` |
 | **Primed Protocol** | ✅ Documented today. Ledger item 8 closed, §H 🟡→🟢. | `Desktop/ULTRASIN-primed-protocol.md` |
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
