@@ -110,6 +110,7 @@ A session that answers "sit rep" without all five has not answered it.
 5. **Answer-first everywhere** (Pyramid Principle, ratified doctrine).
 6. **The Spartan dial: trim words, not meaning.** Complete sentences, nothing ornamental — Laconic, but the message survives whole.
 7. **The ten-second test:** headers plus bolds alone must carry the message. If a scan doesn't tell the story, the format failed.
+8. **One value, one block** — coded 2026-09-04. Anything Papi has to copy and paste (a path, a name, a command, an exact string) goes in its own fenced code block with nothing else in it, so the chat's copy button grabs exactly that value in one click. Inline backticks are for reading, never for pasting. Several values = several blocks, each labeled by the line above it.
 
 ---
 
