@@ -1,8 +1,15 @@
 ---
-title: MCDP 4 — Security (Knowledgebase Summary)
-updated: 2025-12-18 21:28:49Z
+title: MCDP 4 — Security (Knowledgebase Summary) — UNVERIFIED
+updated: 2026-09-04 02:50:13Z
 created: 2025-12-18 21:28:48Z
 ---
+
+> **PROVENANCE CORRECTION — 2026-09-03**
+>
+> - **What this file is:** a knowledgebase summary generated in December 2025 under the title "MCDP 4 — Security". Its chapters ("The Nature of Security", "Security in Operations", "Achieving Security", "Security Across the Spectrum of Conflict") correspond to no publication in the Marine Corps Doctrinal Publication series.
+> - **What it is not:** it is not a summary of MCDP 4. The real MCDP 4 is *Logistics* (1997; revised 21 March 2023). No MCDP titled *Security* exists.
+> - **Evidence:** the source PDF that sat on disk as "MCDP 4 (SECURITY).pdf" is, from its title page, *MCDP 4 Logistics*, 21 March 2023 (PCN 142 000003 01). Its chapters are: 1 The Nature of Logistics; 2 The Theory of Logistics; 3 The Logistics Enterprise; 4 Logistics Preparation; 5 Logistics Planning and Execution. None of this summary's chapter titles, subsection titles, or definitions appear in that text (the word "security" occurs eight times in 224 KB, incidentally). The chapter set also matches none of the other publications in the set (MCDP 1, 1-0, 1-1, 1-2, 1-3, 2, 3, 5, 6, 7, 8).
+> - **Ruling:** UNVERIFIED — the summary appears to have been generated from the filename, not from the document. Do not cite. The heading and body below are the original December 2025 text, retained unaltered for archaeology. The correct summary of the underlying document is "MCDP 4 — Logistics (Knowledgebase Summary).md" (generated 2026-09-03 from the 2023 text).
 
 # MCDP 4 — Security (Knowledgebase Summary)
 

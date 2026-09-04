@@ -1,8 +1,15 @@
 ---
-title: MCDP 8 — Logistics (Knowledgebase Summary)
-updated: 2025-12-18 21:36:27Z
+title: MCDP 8 — Logistics (Knowledgebase Summary) — UNVERIFIED
+updated: 2026-09-04 02:50:13Z
 created: 2025-12-18 21:36:26Z
 ---
+
+> **PROVENANCE CORRECTION — 2026-09-03**
+>
+> - **What this file is:** a knowledgebase summary generated in December 2025 under the title "MCDP 8 — Logistics". The title pairs a real publication number with the wrong subject: the real MCDP 8 is *Information* (21 June 2022); the real logistics publication is MCDP 4.
+> - **What it is not:** it is not a summary of MCDP 8 *Information*, and it is not a faithful summary of MCDP 4 *Logistics* in either edition. Its chapter set ("The Nature of Logistics" / "Principles of Logistics" / "Logistics in Operations" / "Command and Logistics") does not match the 2023 MCDP 4 (five chapters: The Nature of Logistics; The Theory of Logistics; The Logistics Enterprise; Logistics Preparation; Logistics Planning and Execution). Only the first chapter title coincides, and none of the 2023 Chapter 1 subsections (What is Logistics?; The Evolution of Logistics; Operational Context; Logistics Characteristics; Logistics as a Warfighting Function; Logistics and Maneuver Warfare) appear here. It lists five logistics principles where the source has seven (it omits Survivability and merges Attainability with Sustainability) and four logistics functions where the source has six (it omits General Engineering and Health Service Support). It contains none of the source's structural content: the logistics process (sourcing, distribution, sustainment, disposition), the logistics system (organizational construct, sourcing methods, distribution model), the levels of logistics, or the joint logistics enterprise. As recalled, the 1997 edition had three chapters (Logistics and War; Logistics Theory; Creating Effective Logistics) — that edition is not on disk and the recollection is unverified — and this summary does not match that structure either.
+> - **Evidence:** the source PDF on disk as "MCDP 8.pdf" is, from its title page, *MCDP 8 Information*, 21 June 2022 (PCN 142 000018 00); chapters: 1 Nature of Information; 2 Theory of Information; 3 Effective Use of Information; 4 Institutionalizing Information. Nothing in this summary derives from it.
+> - **Ruling:** UNVERIFIED — generic logistics content shaped to a four-chapter template, apparently generated from the filename/title rather than from a document. Do not cite. The heading and body below are the original December 2025 text, retained unaltered for archaeology. The correct summaries are "MCDP 4 — Logistics (Knowledgebase Summary).md" and "MCDP 8 — Information (Knowledgebase Summary).md" (both generated 2026-09-03 from the source texts).
 
 # MCDP 8 — Logistics (Knowledgebase Summary)
 
