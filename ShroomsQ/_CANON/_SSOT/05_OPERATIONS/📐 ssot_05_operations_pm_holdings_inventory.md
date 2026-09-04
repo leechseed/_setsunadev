@@ -41,11 +41,11 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 
 | Path | What it is | State | Reuse for the standard flow |
 |---|---|---|---|
-| `OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/MARINE CORPS DOCTRINAL PUBLICATIONS/` | **MCDP knowledgebase summaries (Dec 2025), one per publication**: 1 · 1-1 · 1-2 · 1-3 · 2 · 3 · "4 Security" · 5 · 6 · 7 · "8 Logistics". Abstract → TL;DR → section breakdown → TOC | finished distills | **biggest unexploited asset** — MCDP 5 Planning + 6 C2 are a PM method as written |
-| same folder | numbering drift: real series is 4 = Logistics, 8 = Information | needs a fix pass | fix before the board |
+| `OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/MARINE CORPS DOCTRINAL PUBLICATIONS/` | **MCDP knowledgebase summaries (Dec 2025), one per publication**: 1 · 1-1 · 1-2 · 1-3 · 2 · 3 · "4 Security" · 5 · 6 · 7 · "8 Logistics". Abstract → TL;DR → section breakdown → TOC | **UNVERIFIED (9/3 repair pass)** — the 4 and 8 summaries were generated from filenames, not texts; MCDP 7's chapter list does not match the real book either; the whole Dec-2025 set is suspect | **superseded by the MIL.01–MIL.11 one-sheets** (built 9/3 from the full PDFs, `KNOWLEDGE_AREAS/`); audit the remaining 9 summaries before citing any |
+| same folder | 4/8 repaired 9/3: both originals retagged `— UNVERIFIED`, real *MCDP 4 — Logistics (2023)* and *MCDP 8 — Information (2022)* summaries generated from source, index lists all 11 | done | — |
 | same folder, `1 PROMPT TEMPLATE spec.md` + `2 KNOWLEDGEBASE spec.md` | the summarizer prompt (exact-replication, no invention) + KB spec | finished template | a distill pipeline reusable for PMBOK |
 | `BVX-ULTRASIN-twin-track.md` §Doctrinal spine | the "Marine standard": Feb-9 SSOT Writing Guide canon · MCDP hierarchy ↔ doctrine stack · MCDP 7 ↔ BVX-LEARN · MAGTF ↔ full-stack company · acquisition queue (11 pubs, 4 PDFs in hand) | finished | the doctrine-to-operation mapping; its decision table is a ledger pattern |
-| `DOCTRINE-0-INVARIANTS.md` | seven rules for what qualifies as a rule (earned by 2+ uses · written-only · names what it forbids · every scale · names derivation · fewer than seven · dies by countermand) | drafted, unratified | the governance layer that authorises promoting a process to standard |
+| `DOCTRINE-0-INVARIANTS.md` | seven rules for what qualifies as a rule (earned by 2+ uses · written-only · names what it forbids · every scale · names derivation · fewer than seven · dies by countermand) | **RATIFIED 2026-09-03** (rename bench still open) | the governance layer; the project flow promotes under it |
 | `SOP.md` | **the de-facto PM operating system**: prowords · sit rep blocks · Ready Rack/Magazine handoff · reading order · house format | finished, enforced | already a project-control cadence; governs the *session*, not the *project* |
 | `STATE.md` | "Blocked on you" decision table (# · Decision · Unblocks) + dated Moved blocks | living | decision log + change log; "Unblocks" is a dependency field |
 | `BOLO.md` | numbered task register, issued date, status flags, in-place addenda | living | task register with audit trail |
@@ -92,5 +92,5 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 - **Missing:** one document that says how a project runs here · blank charter/gate/close-out templates (the charter is an instance) · a project lifecycle in the repo proper (SOP governs sessions) · a sprint/cadence layer beyond the CDPR paragraph · DOCTRINE-0 ratification (the promotion mechanic).
 - **Known gaps already flagged:** Pyramid Principle source text (BVX.1107 reserved) · 7 of 11 MCDP PDFs (BOLO 1) — **summaries exist for all 11; the PDFs feed the catalog, not the method** · DOCTRINE-0 unratified.
 
-## 7 · Cheapest path to a standard flow
+## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → `📐 ssot_05_operations_project_flow.md` v0.1
 Promote the four-domains six-phase lifecycle into a `05_OPERATIONS` SSOT · strip the BVIPDS charter + assumption log into blanks · generalise the G1/G2/G3 gate pattern · adopt the registry's five-flag status + `# | Decision | Blocking?` ledger as the schema. Every input is a finished artifact today.
