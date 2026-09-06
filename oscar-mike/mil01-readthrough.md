@@ -28,7 +28,7 @@ Papi is reading `KNOWLEDGE_AREAS/🧬 MIL.01 — MCDP 1 Warfighting — USMC (19
 
 ## Open
 
-- **The dropped clause.** Invariant 1 originally ended "…a product of continuous mutual adaptation, *not of one side's execution*." The tail fell out during the bolding pass. Restore or keep gone: Papi's call.
+- ~~The dropped clause~~ — **RESTORED 9/6** on Papi's call ("add the original"): Invariant 1 again ends "…continuous mutual adaptation, not of one side's execution."
 - **"Ask for my confidence."** Spoken at park, before "Oscar Mike." Read provisionally as: after each study block, Claude asks Papi for a confidence rating on the material (calibration, the learning-science move). Not yet ruled or worded. If ruled, it goes into SOP §1 as a step of the reading loop.
 
 ## Related

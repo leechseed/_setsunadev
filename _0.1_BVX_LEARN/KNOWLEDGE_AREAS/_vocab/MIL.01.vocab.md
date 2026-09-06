@@ -49,13 +49,13 @@ _Load-bearing terms as marked by the reader, in reading order, with their sense 
 - **counterforce** — the opposing will's answer to force
   - ↳ "The enemy is an independent will, not an object. War is a Zweikampf — two wrestlers, each exerting force and counterforce."
 - **plan** — a scheme of action; in war, always met by a counter-plan
-  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation."
+  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation, not of one side's execution."
 - **counter-plan** — the enemy's answering scheme; the reason no plan survives contact
-  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation."
+  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation, not of one side's execution."
 - **situation** — the state of affairs at a moment; produced jointly, owned by neither side
-  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation."
+  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation, not of one side's execution."
 - **continuous mutual adaptation** — each side changing in response to the other, without end
-  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation."
+  - ↳ "Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation, not of one side's execution."
 - **energy** — the capacity to act, which friction drains
   - ↳ "Friction is permanent. Friction resists all action and saps energy; it makes the simple difficult and the difficult seemingly impossible."
 - **Self-induced friction** — friction a force creates for itself: unclear goals, complicated plans, complex organization

@@ -80,7 +80,7 @@ War is a contest between ==independent wills== fought in permanent ==friction==,
 
 _These are the unchanging principles — true regardless of context._
 
-1. **The enemy is an independent will, not an object.** War is a ==Zweikampf== — two wrestlers, each exerting ==force== and ==counterforce==. Every ==plan== meets a ==counter-plan==; the ==situation== is a product of ==continuous mutual adaptation==.
+1. **The enemy is an independent will, not an object.** War is a ==Zweikampf== — two wrestlers, each exerting ==force== and ==counterforce==. Every ==plan== meets a ==counter-plan==; the ==situation== is a product of ==continuous mutual adaptation==, not of one side's execution.
 2. **Friction is permanent.** Friction resists all action and saps ==energy==; it makes the simple difficult and the difficult seemingly impossible. ==Self-induced friction== (==unclear goals==, ==complicated plans==, ==complex organization==) can be reduced; ==external friction== cannot be eliminated, only fought through by ==will== — while raising the enemy's.
 3. **Certainty is unattainable; every action rests on incomplete information.** The ==fog of war== is ==structural==. ==Nonlinearity== means ==minor incidents== produce ==decisive effects==. ==Judgment== estimates ==possibilities== and ==probabilities==; it never removes them.
 4. **Disorder increases over time; only a general framework of order can be imposed.** Plans go awry, ==communications== fail, and repeated ==improvisation== carries actions far from the ==original scheme==. The ==commander== ==influences== the ==general flow==; the commander does not ==control== each ==event==.
