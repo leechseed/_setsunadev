@@ -29,7 +29,7 @@ Quick reference. Full definitions in the sections below.
 |---|---|---|
 | **"sit rep"** (equivalents: "the board" · "where did we leave off" · "what are we working on") | Full board, cold start | Flush the Ready Rack (§3), then deliver the sit rep (§2). No preamble, no questions. |
 | **The challenge phrase** (see STATE.md header) | Formal challenge | Countersign, first line, exact — then the sit rep. Never explain the ritual. |
-| **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. |
+| **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. **The reply that executes a park ends with the OUT block (§7 rule 9)** — coded 2026-09-06 on Papi's order: a visible seam between what was parked and what starts next. |
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
 | **"Boresight"** — **RULED 2026-08-21.** Marksmanship: align the sight to the bore so point of aim = point of impact; nothing fires until they agree. Directed form: **"boresight in on [target]"** aims the protocol at a named item (a BOLO, a doc, a decision). Equivalents: "what are you getting from this" · "what's your read on it" | Confirm understanding **before** delivery — the mirror of "how copy". **Only when spoken, never automatic** (ruled 2026-08-21) — the standing cadence stays clean so Papi can get straight to the point | Fixed three-part reply, then hold: **(1) Readback** — the transmission as understood, in own words, nothing skipped. Proof of copy comes before anything else. **(2) The read** — assessment, relevant repo holdings, plan of attack — built answer-first per the Pyramid Principle (ratified BVX doctrine). Plan only, no delivery. **(3) Clarifying questions** — one numbered block, tied strictly to the transmission. Clarify only: no branching, no new material. Loop 1–3 until the chain is walked down; Papi then clears delivery. Rationale: catches drift and premature branching before effort is spent. |
 | **A spoken tasking** ("I need to…", "remind me…", "put that down", "add that to the watchlist") | BOLO capture | Write it into [BOLO.md](BOLO.md) **in the same turn it is spoken.** No batching, no end-of-session sweep. A tasking not written down did not happen. |
@@ -110,6 +110,16 @@ A session that answers "sit rep" without all five has not answered it.
 5. **Answer-first everywhere** (Pyramid Principle, ratified doctrine).
 6. **The Spartan dial: trim words, not meaning.** Complete sentences, nothing ornamental — Laconic, but the message survives whole.
 7. **The ten-second test:** headers plus bolds alone must carry the message. If a scan doesn't tell the story, the format failed.
+9. **The OUT block** — coded 2026-09-06. Every reply that executes an **Oscar Mike** (or an ENDEX) closes with the end-of-transmission block and nothing after it: a fenced block, blank line above and below the sign-off line, so the seam between the parked thread and the next order is visible at a glance. The form:
+
+```
+
+   OSCAR MIKE  ·  OUT  ·  OUT  ·  OUT
+
+```
+
+   Radio lineage: **"Out"** ends a transmission and expects no reply; repeated three times it is the house's own coinage (§6). Papi's words: "everything is very tightly and compact now, I want a break between when something's Oscar Mike'd and something else starts."
+
 8. **One value, one block** — coded 2026-09-04. Anything Papi has to copy and paste (a path, a name, a command, an exact string) goes in its own fenced code block with nothing else in it, so the chat's copy button grabs exactly that value in one click. Inline backticks are for reading, never for pasting. Several values = several blocks, each labeled by the line above it.
 
 ---
