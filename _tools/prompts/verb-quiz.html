@@ -1,0 +1,444 @@
+<title>Transitive or Not</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #F4ECE6;
+    --bg-2: #EADFD8;
+    --ink: #221619;
+    --ink-2: #5E4A50;
+    --ink-3: #8C7A80;
+    --line: #D9C9C3;
+    --rose: #8A1F44;
+    --rose-ink: #FFF4F7;
+    --rose-soft: #F1D9E1;
+    --good: #2F6B44;
+    --good-soft: #DCEBDF;
+    --bad: #A63D1F;
+    --bad-soft: #F3DCD2;
+    --gold: #9A7A2A;
+    --focus: #3F6BD9;
+    --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17111A;
+      --bg-2: #211822;
+      --ink: #F2E7EA;
+      --ink-2: #C3AEB6;
+      --ink-3: #8C7A83;
+      --line: #3A2C34;
+      --rose: #B03A62;
+      --rose-ink: #FFF4F7;
+      --rose-soft: #3B1E2B;
+      --good: #6FBF87;
+      --good-soft: #1D3324;
+      --bad: #E27A58;
+      --bad-soft: #3C2118;
+      --gold: #D2B15A;
+      --focus: #7FA3FF;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17111A;
+    --bg-2: #211822;
+    --ink: #F2E7EA;
+    --ink-2: #C3AEB6;
+    --ink-3: #8C7A83;
+    --line: #3A2C34;
+    --rose: #B03A62;
+    --rose-ink: #FFF4F7;
+    --rose-soft: #3B1E2B;
+    --good: #6FBF87;
+    --good-soft: #1D3324;
+    --bad: #E27A58;
+    --bad-soft: #3C2118;
+    --gold: #D2B15A;
+    --focus: #7FA3FF;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 28px 20px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  header h1 {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+  }
+  .count {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .bar {
+    height: 3px;
+    background: var(--line);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .bar > i {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: var(--rose);
+    transition: width 220ms ease;
+  }
+
+  .sentence {
+    font-family: var(--serif);
+    font-size: clamp(26px, 5.2vw, 34px);
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 6px 0 0;
+    text-wrap: balance;
+  }
+  .sentence .v {
+    font-style: normal;
+    color: var(--rose);
+    font-weight: 600;
+    border-bottom: 2px solid var(--rose-soft);
+  }
+  .claim {
+    font-size: 17px;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 58ch;
+  }
+  .claim b { color: var(--ink); font-weight: 600; }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 6px;
+  }
+  .btn {
+    appearance: none;
+    border: 2px solid var(--rose);
+    background: var(--rose);
+    color: var(--rose-ink);
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    padding: 26px 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: transform 80ms ease, opacity 120ms ease;
+  }
+  .btn.false { background: transparent; color: var(--rose); }
+  .btn:active { transform: translateY(1px); }
+  .btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .btn small {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    opacity: 0.75;
+  }
+  .btn[disabled] { opacity: 0.45; cursor: default; }
+  .btn.hit { opacity: 1; box-shadow: 0 0 0 3px var(--bg), 0 0 0 6px var(--gold); }
+
+  .result {
+    border-left: 4px solid var(--line);
+    background: var(--bg-2);
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .result.show { display: flex; }
+  .result.good { border-left-color: var(--good); }
+  .result.bad { border-left-color: var(--bad); }
+  .verdict {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .result.good .verdict { color: var(--good); }
+  .result.bad .verdict { color: var(--bad); }
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--rose-soft);
+    color: var(--rose);
+  }
+  .why { margin: 0; color: var(--ink); font-size: 15px; }
+  .why em { font-family: var(--serif); font-size: 16px; }
+  .next {
+    align-self: flex-end;
+    appearance: none;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .next:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .next kbd {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-3);
+    margin-left: 6px;
+  }
+
+  .end { display: none; flex-direction: column; gap: 18px; }
+  .end.show { display: flex; }
+  .score {
+    font-family: var(--serif);
+    font-size: clamp(40px, 9vw, 64px);
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .score span { font-size: 0.45em; color: var(--ink-3); font-weight: 400; }
+  .best { margin: 0; color: var(--ink-2); font-size: 14px; }
+  .misses { display: flex; flex-direction: column; gap: 10px; }
+  .miss {
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .miss .s { font-family: var(--serif); font-size: 18px; }
+  .miss .s .v { color: var(--rose); font-weight: 600; font-style: normal; }
+  .miss .c { font-size: 14px; color: var(--ink-2); }
+  .miss .w { font-size: 14px; }
+  .clean { color: var(--good); font-weight: 600; margin: 0; }
+
+  footer {
+    color: var(--ink-3);
+    font-size: 12px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  footer kbd { font-family: var(--mono); color: var(--ink-2); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bar > i, .btn { transition: none; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Transitive or Not</h1>
+    <div class="count" id="count">1 of 12</div>
+  </header>
+  <div class="bar"><i id="bar"></i></div>
+
+  <section id="quiz">
+    <p class="sentence" id="sentence"></p>
+    <p class="claim" id="claim"></p>
+    <div class="buttons">
+      <button class="btn true" id="bTrue" type="button">TRUE<small>T &nbsp;·&nbsp; ←</small></button>
+      <button class="btn false" id="bFalse" type="button">FALSE<small>F &nbsp;·&nbsp; →</small></button>
+    </div>
+    <div class="result" id="result">
+      <div class="verdict"><span id="verdictText"></span><span class="tag" id="step"></span></div>
+      <p class="why" id="why"></p>
+      <button class="next" id="next" type="button">Next<kbd>enter</kbd></button>
+    </div>
+  </section>
+
+  <section class="end" id="end">
+    <p class="score"><span id="scoreN"></span> <span>of 12</span></p>
+    <p class="best" id="best"></p>
+    <div class="misses" id="misses"></div>
+    <div class="buttons">
+      <button class="btn true" id="again" type="button">RUN IT AGAIN<small>enter</small></button>
+    </div>
+  </section>
+
+  <footer>
+    <span>Q1 swap for <em>is</em> · Q2 verb <em>what?</em> with no little word · Q3 flip to <em>was ___ed</em> · TRAP move the little word</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var BANK = [
+    { s: 'The kids <em class="v">devoured</em> the pizza.',
+      c: '<b>Devoured</b> is transitive here.',
+      a: true, step: 'Q3',
+      why: 'Devoured what? The pizza. Flip it: <em>the pizza was devoured</em>. Works. Transitive.' },
+    { s: 'She <em class="v">arrived</em> late.',
+      c: '<b>Arrived</b> is transitive, because “late” answers “arrived what?”',
+      a: false, step: 'Q2',
+      why: '“Late” answers <em>when</em>, not <em>what</em>. Scenery. Nothing to flip. Intransitive.' },
+    { s: 'He <em class="v">turned</em> off the lights.',
+      c: '<b>Turned</b> is intransitive, because “off” is a little word sitting in front of “the lights.”',
+      a: false, step: 'TRAP',
+      why: 'Move the little word: <em>turned the lights off</em>. Works, so “off” is part of the verb. Flip: <em>the lights were turned off</em>. Transitive.' },
+    { s: 'The milk <em class="v">turned</em> sour.',
+      c: '<b>Turned</b> is a linking verb here.',
+      a: true, step: 'Q1',
+      why: 'Swap: <em>the milk was sour</em>. Same meaning. Linking, which is neither transitive nor intransitive.' },
+    { s: 'The meeting <em class="v">lasted</em> two hours.',
+      c: '<b>Lasted</b> is transitive, because “two hours” answers “lasted what?”',
+      a: false, step: 'Q3',
+      why: 'It answers Q2, so keep going. Flip it: <em>two hours was lasted</em>. Fails. A measurement in an object costume. Intransitive.' },
+    { s: 'She <em class="v">ran</em> up the hill.',
+      c: '<b>Ran</b> is transitive here.',
+      a: false, step: 'TRAP',
+      why: 'Move the little word: <em>ran the hill up</em>. Fails, so “up” is a preposition and “up the hill” is scenery. Intransitive.' },
+    { s: 'She <em class="v">ran</em> up a huge bill.',
+      c: '<b>Ran</b> is transitive here.',
+      a: true, step: 'TRAP',
+      why: 'Move the little word: <em>ran a huge bill up</em>. Works. Flip: <em>a huge bill was run up</em>. Transitive. Same string as the hill, opposite answer.' },
+    { s: 'He <em class="v">felt</em> the wall for a switch.',
+      c: '<b>Felt</b> is a linking verb here.',
+      a: false, step: 'Q1',
+      why: 'Swap: <em>he was the wall</em>. Nonsense, so not linking. Felt what? The wall. Flip: <em>the wall was felt</em>. Transitive.' },
+    { s: 'The soup <em class="v">smells</em> amazing.',
+      c: '<b>Smells</b> is intransitive, because nothing follows it but a describing word.',
+      a: false, step: 'Q1',
+      why: 'Q1 comes first. Swap: <em>the soup is amazing</em>. Same meaning. Linking, not intransitive.' },
+    { s: 'They <em class="v">gave</em> the dog a bath.',
+      c: '<b>Gave</b> is transitive, even though two things follow the verb.',
+      a: true, step: 'Q3',
+      why: 'Flip either one: <em>a bath was given</em>, <em>the dog was given a bath</em>. Two things after the verb never change the answer. Transitive.' },
+    { s: 'The baby <em class="v">slept</em> all afternoon.',
+      c: '<b>Slept</b> is intransitive.',
+      a: true, step: 'Q2',
+      why: 'Slept what? Nothing. “All afternoon” is <em>when</em>. Intransitive.' },
+    { s: 'She <em class="v">read</em>.',
+      c: '<b>Read</b> is intransitive in this sentence, even though it usually takes an object.',
+      a: true, step: 'Q2',
+      why: 'Read what? No answer in the sentence. The verb is judged by this sentence, not by what it could take. Intransitive here.' }
+  ];
+
+  var order = [], i = 0, score = 0, misses = [], answered = false;
+  var $ = function (id) { return document.getElementById(id); };
+  var elSentence = $('sentence'), elClaim = $('claim'), elCount = $('count'), elBar = $('bar');
+  var elResult = $('result'), elVerdict = $('verdictText'), elStep = $('step'), elWhy = $('why');
+  var bTrue = $('bTrue'), bFalse = $('bFalse'), bNext = $('next'), bAgain = $('again');
+  var elQuiz = $('quiz'), elEnd = $('end');
+
+  function shuffle(n) {
+    var a = []; for (var k = 0; k < n; k++) a.push(k);
+    for (var j = a.length - 1; j > 0; j--) { var r = Math.floor(Math.random() * (j + 1)); var t = a[j]; a[j] = a[r]; a[r] = t; }
+    return a;
+  }
+  function readBest() { try { return parseInt(localStorage.getItem('ton_best') || '0', 10) || 0; } catch (e) { return 0; } }
+  function writeBest(n) { try { localStorage.setItem('ton_best', String(n)); } catch (e) {} }
+
+  function start() {
+    order = shuffle(BANK.length); i = 0; score = 0; misses = [];
+    elEnd.className = 'end'; elQuiz.style.display = '';
+    show();
+  }
+  function show() {
+    answered = false;
+    var q = BANK[order[i]];
+    elSentence.innerHTML = q.s;
+    elClaim.innerHTML = q.c;
+    elCount.textContent = (i + 1) + ' of ' + BANK.length;
+    elBar.style.width = (i / BANK.length * 100) + '%';
+    elResult.className = 'result';
+    bTrue.disabled = false; bFalse.disabled = false;
+    bTrue.classList.remove('hit'); bFalse.classList.remove('hit');
+    bTrue.focus();
+  }
+  function answer(val) {
+    if (answered) return;
+    answered = true;
+    var q = BANK[order[i]];
+    var ok = (val === q.a);
+    if (ok) score++; else misses.push(q);
+    bTrue.disabled = true; bFalse.disabled = true;
+    (q.a ? bTrue : bFalse).classList.add('hit');
+    elResult.className = 'result show ' + (ok ? 'good' : 'bad');
+    elVerdict.textContent = ok ? 'Right.' : ('Wrong. It is ' + (q.a ? 'true' : 'false') + '.');
+    elStep.textContent = q.step;
+    elWhy.innerHTML = q.why;
+    elBar.style.width = ((i + 1) / BANK.length * 100) + '%';
+    bNext.focus();
+  }
+  function next() {
+    if (!answered) return;
+    i++;
+    if (i >= BANK.length) return finish();
+    show();
+  }
+  function finish() {
+    var best = readBest();
+    if (score > best) { writeBest(score); best = score; }
+    $('scoreN').textContent = score;
+    $('best').textContent = best ? ('Best run: ' + best + ' of ' + BANK.length + '.') : '';
+    var m = $('misses'); m.innerHTML = '';
+    if (!misses.length) {
+      var p = document.createElement('p'); p.className = 'clean'; p.textContent = 'Clean sheet.'; m.appendChild(p);
+    } else {
+      misses.forEach(function (q) {
+        var d = document.createElement('div'); d.className = 'miss';
+        d.innerHTML = '<div class="s">' + q.s + '</div><div class="c">' + q.c + ' <span class="tag">' + q.step + ' · ' + (q.a ? 'true' : 'false') + '</span></div><div class="w">' + q.why + '</div>';
+        m.appendChild(d);
+      });
+    }
+    elQuiz.style.display = 'none';
+    elEnd.className = 'end show';
+    elCount.textContent = 'done';
+    bAgain.focus();
+  }
+
+  bTrue.addEventListener('click', function () { answer(true); });
+  bFalse.addEventListener('click', function () { answer(false); });
+  bNext.addEventListener('click', next);
+  bAgain.addEventListener('click', start);
+  document.addEventListener('keydown', function (e) {
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+    var k = e.key;
+    if (elEnd.className.indexOf('show') >= 0) { if (k === 'Enter' || k === ' ') { e.preventDefault(); start(); } return; }
+    if (k === 't' || k === 'T' || k === 'ArrowLeft' || k === '1') { e.preventDefault(); answer(true); }
+    else if (k === 'f' || k === 'F' || k === 'ArrowRight' || k === '2') { e.preventDefault(); answer(false); }
+    else if (k === 'Enter' || k === ' ') { e.preventDefault(); next(); }
+  });
+
+  start();
+})();
+</script>
