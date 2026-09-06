@@ -89,6 +89,7 @@ A session that answers "sit rep" without all five has not answered it.
 - Ready Rack / Magazine — provisional, same session.
 - **"Boresight"** for the understanding check — **RULED 2026-08-21.** Struck en route: "back-brief" (lame). Retired bench: AZIMUTH · ZERO · BACK-AZIMUTH · OVERLAY · ECHO · SQUAWK · FIVE-BY · RECON · READBACK · CONFIRMATION BRIEF. **INTEL returns to the pool** — Papi's seed, unassigned, likely future coinage.
 - **"Main effort"** as a command proword — **provisional 2026-08-21.** MCDP 1's answer to "this is the main thing, focus here": the designated main effort is the one task everything else supports; all else is supporting effort. Spoken, it names or asks for the single priority. Sit rep Block VI rename to "The Main Effort" rides on the same ruling.
+- **The outside-the-wire boresight + the pipeline prowords** — **provisional 2026-09-06**, spoken by Papi on BOLO 35/36 ("is there a word different than boresight… for anything that is on the web or outside of it… I want to be able to say napkin boresight"). **Boresight** stays the vault-facing form (the read draws on repo holdings). Wanted: the same three-part protocol aimed outside the wire (web + literature). Bench: **RECON** (recommended — Marine lineage, "napkin recon" scans, boresight/recon = inside/outside the wire) · **INTEL** (Papi's pooled seed; better as the noun for what recon brings back) · SCOUT · OTH (over the horizon). **NAPKIN** (modifier, provisional): back-of-the-napkin — one pass, rough numbers, no question loop, spoken as a prefix ("napkin boresight", "napkin recon"). Pipeline prowords, provisional: **SYLLABUS** ("pull the syllabus on X" = the tier-one 101 textbooks of a field, ivory tower, one per field to start) · **DISTILL** (make the BVX-LEARN one-sheet — the doctrine's own word, "distill, don't summarize") · **GRAMMAR** ("write the grammar" = derive a system's operating language from its sources). Rulings are Papi's; nothing here is on the SOI card until ruled.
 - **"Break-break" / "buttonhook back"** for the detour pair — **RULED 2026-08-21.** Open with break-break, close with buttonhook back. Retired bench: AS YOU WERE · DOGLEG · EXCURSION · HERRINGBONE.
 
 ---
@@ -140,6 +141,9 @@ A session that answers "sit rep" without all five has not answered it.
 | bolo · polo (in a tasking context) | **BOLO** |
 | break break (×2 or ×3) | **break-break** (nested detours stack) |
 | ask her mic · oscar mic · Oscar Mike's | **Oscar Mike** |
+| bore side · bore sight | **boresight** |
+| MDCP · MDP · CDP one (in a doctrine context) | **MCDP** (MCDP 1 = Warfighting, MIL.01) |
+| astrosex · ASTROSE7X | **ASTRO7EX** |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
