@@ -34,7 +34,7 @@ To maintain doctrinal authority, all SSOT documentation must adhere to the follo
 - **No Contractions**: All words must appear in complete form (e.g., "do not," "it is").
 - **No Hedging**: Qualifiers such as "basically," "perhaps," or "maybe" are prohibited.
 - **Present Tense**: Methodology is described as an active, perpetual reality.
-- **Technical Precision**: The first instance of a technical term must be **Bolded** and defined immediately.
+- **Technical Precision**: The first instance of a technical term must be **Bolded** and defined immediately. Bold belongs to the writer; a reader marking a document uses `==highlight==`, never bold. See [[📐 ssot_05_operations_markdown_marking]].
 - **Active Voice**: Subjects must perform specified actions without ambiguity.
 
 ---
