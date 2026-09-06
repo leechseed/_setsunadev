@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-09-03
+updated: 2026-09-06
 read_first: true
 ---
 
@@ -31,6 +31,8 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | # | Decision | Unblocks |
 |---|---|---|
 | **8** | **The 03/03 domain numbering** — `03_SETTING_SYSTEMS/` (stood up 8/25) vs pre-reserved empty `03_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` also reserved. One rename either way | plot_systems' home; clean SSOT numbering before the L4 deepening lands |
+| **10** | **D-9 — the BOLO 24 boresight HOLD converted 2026-09-04 and has no call yet.** Three legal answers under the flow: clear delivery · re-hold with a date · NO-GO. D-5 nut · D-6 frame · D-7 mother/year · D-8 refs · D-10 intent · D-11 lane ride with it | the studio design pass; the flow's own hold rule (an undated hold is the stall pattern) |
+| **11** | **BOLO 29 — confirm the reward-vs-risk reading and clear delivery.** Research banked `_PRIVATE/BOLO-29-research.md` | the three-way ranking 24 / 27 / 29 and the 90-day ballpark |
 
 > **#9 (BOLO 19 history) RULED + EXECUTED 2026-09-01: re-pass + force-push, Papi's hand on the trigger** (the permission layer required it — twice-blocked classifier, by design). Scope grew on prep: the batch scan found **1,064 historical blobs** with numeric coords (vs the 193-file tree count), three formats (quoted/unquoted JSON + YAML). Blob-callback pass over all history → **verified zero** (2,686 objects) → force-pushed → remote spot-check serves `[COORD]` only, old SHAs 422. Backup: `Desktop/_setsunadev-PRE-REPASS-2026-08-31.bundle` (never commit). Runbook preserved: `_PRIVATE/repass_2026-08-31/`. **BOLO 19 closed; BOLO 8 ticket now covers both strip layers in one filing.**
 >
@@ -87,10 +89,11 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | System | State | Where |
 |---|---|---|
 | **THE STORY LATTICE** | ✅ **Built 8/25–26, COMPLETE** — IP-agnostic story-creation system, The Outliers = test bed (ruled). Spine (comparative tree, 14 rivals) · Scale Ladder (8 rungs) · Setting System (12-layer slice mirroring the character stack; **new domain `03_SETTING_SYSTEMS/`**; DCUS instanced; SCENE CARD) · Texture (Ten Questions, TELLING PROFILE) · Medium Grammars (10 contracts) · constraint layer (invariants) wired throughout. Module 5 (collision engine) parked decision-free → BOLO 17. Rulings queue in the 8/26 session note. | `01_NARRATIVE_FRAMEWORKS/` + `03_SETTING_SYSTEMS/` |
-| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24 evening: storyform CANON v2.0 (§9 rotation ruled, BOLO 7 done) · IC = Anna · school = DCUS.** Ripple: Tori node's Structure table pre-rotation, reconciliation pending. **8/26: DCUS setting slice instanced; OXO Telling Profile identified as open decision set (fires when prose opens).** | `_CANON_NODES/` |
+| **OVEREXITOUT / The Outliers** | Tori node built, L9 AUTHORED. **8/24 evening: storyform CANON v2.0 (§9 rotation ruled, BOLO 7 done) · IC = Anna · school = DCUS.** Ripple: Tori node's Structure table pre-rotation, reconciliation pending. **8/26: DCUS setting slice instanced; OXO Telling Profile identified as open decision set (fires when prose opens).** **9/6: Trash Land region seed** ([oxo-trash-land-seed.md](_CANON_NODES/oxo-trash-land-seed.md)) — the Spiral's rim, seven rulings open. | `_CANON_NODES/` |
 | **Character system** (Dramatica × astrology × 12-layer) | Validated 11/11 layers. **8/24 evening: BOLO 7 done + #3 propagated — the schema fork is closed.** Remaining: reconcile Tori's Dramatica cells to the §9 rotation; armor_index scale-class. | `ShroomsQ/_CANON/_SSOT/02_*` |
 | **Bold Venture Design System** | ✅ **v2.0.0 — THE ROSTER RULED 2026-09-01.** The brand color layer locked: ROSE anchor #8A1F44 + FLESH (shadows through the rose) + rose-cast grounds + gold in core. Four registers: **EMBER** (all-hours ambient) · **PUNCH** (live edge, time-boxed) · **DUST** (daylight) · **NOIR** (night default). The Luminance Law (warm = light, never pigment on skin) · one-red ledger · adhesive rule + rose quota · surface map labels→buildings. 11-palette challenge bench adjudicated; 4-lens panel wf_5b0af08b-c49. Board: `Desktop/BOLD-VENTURE-PALETTE.html` | `00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md` |
 | **MCDP one-sheets MIL.01-MIL.11** | ✅ **BUILT 2026-09-03** from the eleven PDFs (BVX.1111-1121); each carries an APPLICATION section mapping doctrine onto the project flow and the prowords. Supersede the Dec-2025 Joplin summaries (unreliable, see Known rot) | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/` |
+| **Markdown marking SOP + VOCABULARY register** | ✅ **RULED 2026-09-06** (BOLO 32 / 31) — bold = writer · `==highlight==` = reader (load-bearing terms) · harvest tool `_tools/vocab_harvest.py` → per-source `_vocab/<ID>.vocab.md` + `_meta/VOCABULARY.md`. MIL.01 harvested (62 terms); reading resumes at HEURISTICS. End state = **BOLO 33**, the MCDP browser (CK3-derived information architecture) | `05_OPERATIONS/📐 ssot_05_operations_markdown_marking.md` |
 | **BVX-LEARN** | v3 spec recovered + decisions locked. **1,120 sources indexed** (MCDP intake 9/3: `BVX.1111`–`1121`, the eleven doctrinal pubs; one-sheets `MIL.01`–`MIL.11`), classifier 99%. Next free `BVX.1122` (`1107` reserved, Pyramid Principle). | `_0.1_BVX_LEARN/_meta/` |
 | **THE PROJECT FLOW** (working title) | 🟡 **v0.1 WRITTEN 2026-09-03** (BOLO 25) - how a project runs here: six event-gated phases · the eleven-section brief · the gate (GO / NO-GO / HOLD with a named blocker, decider, and conversion date) · instruments mapped to existing files · prowords as the control system · S/M/L tailoring · DOCTRINE 0 as promotion mechanic. First live instance: BOLO 24 brief. Promotes to canonical after two uses | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_project_flow.md` |
 | **The narratology shelf** | ✅ **PROMOTED 2026-09-03** (the ancients pass) — 109 framework distills (UID-keyed, Tier 1–4 × 21 competencies, 15 wicked/craft) + the UID index + 31 competency one-sheets + the General Model propositions P1–P8 + the Rulebook draft, recovered from the archived 1.04 build. **Supersedes the BOLO 18 stage-1 “craft shelf 0.6% distilled” finding.** Stage 2 keys these first (provisional `feeds: SPINE.Lx` map in the shelf index) | `01_NARRATIVE_FRAMEWORKS/_narratology_shelf/📐 ssot_01_narratology_shelf.md` |
@@ -102,6 +105,7 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | System | State | Where |
 |---|---|---|
 | **Zero-budget launch — 3D erotica stills (Blender × DARKROOM)** | 🔴 **CAPTURED 2026-09-03 → BOLO 24.** The Amazon job fell through; Papi unemployed as of 9/3. Start now on what is in hand — $0 base, $100–200 stretch. Design pass staged, fires on go. The "new-job standing" assumption (Birthday shelving) no longer holds. | [BOLO.md](BOLO.md) #24 |
+| **ULTRA DARK (BOLO 27) + the video engine (BOLO 28)** | 🟢 **Day 1 done 9/4** — 2,499 studio scenes flagged, UD pool 2,111, kit at `Q:un\_ULTRADARK\`, THE CUT method doc. Walkthrough parked at **Block C**: Papi marks 12–16 clips → "marked" → pull → Resolve → the 12-second blurb. **The main effort.** | `oscar-mike/ultradark-walkthrough.md` · `_PRIVATE/ULTRADARK-*.md` |
 | **Ultrasin venture** | Full registry v0.1, 32-chat sweep. **Firewall RULED 8/24 (subsidiary)** — launch blockers now handle · register · legal docs. | `_CLAUDE_ARCHIVE_2026-08-15/files/2026-08-05_ultrasin-master-registrymd.md` |
 | **Primed Protocol** | ✅ Documented today. Ledger item 8 closed, §H 🟡→🟢. | `Desktop/ULTRASIN-primed-protocol.md` |
 | **GDP-1 BOOTYCAMP** | P1 ready to run. Gate out = 60-second squeeze hold. | Registry §G |
@@ -115,6 +119,15 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-09-04→06 (sit rep · the TikTok boresight · Trash Land · the verb kit · the marking SOP)
+
+- **9/4 sit rep** on the 9/3 marathon note (flushed). DARKROOM found down at open (relaunch on proword); Stash live. Main effort named: the first ULTRA DARK blurb (Block C "marked"). **D-9 came due** → Blocked #10.
+- **BOLO 29 captured + boresighted** — the SFW TikTok channel: owned Fortnite skins doing the emotes (the TikTok dances), faceless, **BLACK**. Ruled on the loop: 60 s+ stitched for Creator Rewards · 90-day horizon · rank vs 24/27 on reward-vs-risk · audio = Claude's call. Research banked `_PRIVATE/BOLO-29-research.md` (rights green w/ caveats · Replay mode over UEFN Sequencer · CRP a day-60–90 unlock · creator code the early lever · lane crowded · 90-day money LOW-confidence). **HELD** → Blocked #11.
+- **BOLO 30 Trash Land** — region seed for the ASTRO7EX / Outliers world: the man-made trash DMZ between the southern and northern US, mountain-range scale → [_CANON_NODES/oxo-trash-land-seed.md](_CANON_NODES/oxo-trash-land-seed.md), full 12-layer setting slice (instance #2 after DCUS). Read: the rim of the Spiral; the archive of Noise. Name bench (recommend *The Midden*); seven rulings open (who built it · what the North is · what is in the pits).
+- **The verb kit** (Oscar Mike'd): argument-structure KB v2 · the 3-question tree + Mermaid · the quiz artifact *Transitive or Not* (24 items, TRANSITIVE / INTRANSITIVE). Lesson to memory: Papi-facing learning tools are the sentence and the buttons.
+- **BOLO 31 + 32 DONE, 33 seeded.** MIL.01 read-through: 63 reader bolds → `==marks==` (template bolds untouched), harvested by `_tools/vocab_harvest.py` → `KNOWLEDGE_AREAS/_vocab/MIL.01.vocab.md` (62 terms, sense-in-source + sentence) + `_meta/VOCABULARY.md` (register). **📐 markdown marking SOP v1.0.0 RULED** (bold = writer · `==highlight==` = reader · `_italic_` = captions · `[[wikilink]]` = promoted; Prettier-safe); writing-guide pointer added. **BOLO 33** = the MCDP browser, MIL.01–11 with CK3-derived information architecture (seed, Lattice Navigator lineage). Read-through parked at HEURISTICS → `oscar-mike/mil01-readthrough.md`.
+- **Discord intros** parked 9/4 (four drafts, none sent). SOP: "belay that" provisional; §7 rule 8 one-value-one-block (9/4).
 
 ## ✅ Moved 2026-09-03 (the ancients pass — archive-or-keep RULED, R1–R5)
 
