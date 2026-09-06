@@ -177,6 +177,8 @@ def main():
     ap.add_argument("--vocab-dir")
     ap.add_argument("--register")
     ap.add_argument("--dry", action="store_true")
+    ap.add_argument("--seed-key-vocab", action="store_true",
+                    help="also add the sheet's own KEY VOCABULARY table rows to the register (section 'KEY VOCABULARY (author)'); no VOCAB page is written for them")
     a = ap.parse_args()
 
     sheet = os.path.abspath(a.sheet)
@@ -196,10 +198,15 @@ def main():
     senses = {}
     if a.senses:
         senses = {k.lower(): v for k, v in json.load(io.open(a.senses, encoding="utf-8")).items()}
-    missing = [r["term"] for r in rows if r["term"].lower() not in senses]
-
     vocab_dir = a.vocab_dir or os.path.join(os.path.dirname(sheet), "_vocab")
     vpath = os.path.join(vocab_dir, sid + ".vocab.md")
+    # senses already written to an existing VOCAB page are kept unless the JSON overrides them
+    if os.path.exists(vpath):
+        for line in read(vpath).splitlines():
+            m = re.match(r"^- \*\*(.+?)\*\* — (.+)$", line)
+            if m and m.group(1).lower() not in senses:
+                senses[m.group(1).lower()] = m.group(2).strip()
+    missing = [r["term"] for r in rows if r["term"].lower() not in senses]
     page = vocab_page(fm, sheet_name, rows, senses)
 
     root = sheet
@@ -212,6 +219,40 @@ def main():
     rpath = a.register or os.path.join(root or os.path.dirname(sheet), "_meta", "VOCABULARY.md")
     reg, added = update_register(rpath, sid, rows, senses)
 
+    seeded = 0
+    if a.seed_key_vocab:
+        in_kv, kv = False, []
+        for line in text.splitlines():
+            if line.startswith("## "):
+                in_kv = line.upper().startswith("## KEY VOCABULARY")
+                continue
+            if in_kv and line.strip().startswith("|"):
+                cells = [c.strip() for c in line.strip().strip("|").split("|")]
+                if len(cells) >= 2 and cells[0].lower() != "term" and not re.match(r"^:?-{2,}:?$", cells[0]):
+                    kv.append({"term": clean(cells[0]), "section": "KEY VOCABULARY (author)", "sentence": ""})
+        kv_senses = {}
+        for line in text.splitlines():
+            if line.strip().startswith("|"):
+                cells = [c.strip() for c in line.strip().strip("|").split("|")]
+                if len(cells) >= 2:
+                    kv_senses[clean(cells[0]).lower()] = clean(cells[1])
+        have = set()
+        for line in reg.splitlines():
+            m = re.match(r"^\|\s*(.+?)\s*\|.*?\|\s*(\S+)\s*\|", line)
+            if m:
+                have.add((m.group(1).lower(), m.group(2)))
+        addk = []
+        for r in kv:
+            k = (r["term"].lower(), sid)
+            if k in have:
+                continue
+            have.add(k)
+            addk.append("| %s | %s | %s | %s |" % (r["term"], kv_senses.get(r["term"].lower(), ""), sid, r["section"]))
+        if addk:
+            reg = reg + "\n".join(addk) + "\n"
+        seeded = len(addk)
+        print("seeded %d author-defined rows from KEY VOCABULARY" % seeded)
+
     print("source: %s | marks: %d | sections: %d | senses missing: %d" % (
         sid, len(rows), len(set(r["section"] for r in rows)), len(missing)))
     if missing:
@@ -219,9 +260,12 @@ def main():
     if a.dry:
         print("dry run: nothing written")
         return
-    write(vpath, page)
+    if rows:
+        write(vpath, page)
+        print("wrote %s" % os.path.relpath(vpath))
+    else:
+        print("no reader marks: no VOCAB page written")
     write(rpath, reg)
-    print("wrote %s" % os.path.relpath(vpath))
     print("register %s (+%d rows)" % (os.path.relpath(rpath), added))
 
 
