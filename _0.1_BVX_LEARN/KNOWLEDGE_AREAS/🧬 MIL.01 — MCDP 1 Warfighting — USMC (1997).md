@@ -51,73 +51,75 @@ feeds:
 ---
 
 # 🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997)
+
 ### One-Sheet Knowledge Entry | BVX-LEARN v2
 
 ---
 
 ## TABLE OF CONTENTS
+
 - [Core Thesis](#core-thesis)
 - [Invariants](#invariants)
 - [Heuristics](#heuristics)
 - [Core Concepts](#core-concepts)
 - [Key Vocabulary](#key-vocabulary)
 - [Notable Quotes](#notable-quotes)
-- [What Doesn't Work](#what-doesnt-work)
+- [What Doesn&#39;t Work](#what-doesnt-work)
 - [Quick Self-Check](#quick-self-check)
 - [Application — The Operation](#application--the-operation)
 
 ---
 
 ## CORE THESIS
-War is a contest between independent wills fought in permanent friction, uncertainty, and disorder, so certainty and positive control are impossible; the side that wins is the side that stops trying to control events and instead generates superior tempo — decentralizing decisions to subordinates who act on the commander's intent, focusing strength against critical vulnerabilities, and shattering the enemy's cohesion rather than grinding down their mass.
+
+War is a contest between
+<u><wbr>independent wills</u>
+
+fought in permanent friction, uncertainty, and disorder, so certainty and positive control are impossible; the side that wins is the side that stops trying to control events and instead generates superior tempo — decentralizing decisions to subordinates who act on the commander's intent, focusing strength against critical vulnerabilities, and shattering the enemy's cohesion rather than grinding down their mass.
 
 ---
 
 ## INVARIANTS
-*These are the unchanging principles — true regardless of context.*
 
-1. **The enemy is an independent will, not an object.** War is a Zweikampf — two wrestlers, each exerting force and counterforce. Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation, not of one side's execution.
+_These are the unchanging principles — true regardless of context._
 
+1. **The enemy is an independent will, not an object.** War is a Zweikampf — two wrestlers, each exerting force and counterforce. Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation.
 2. **Friction is permanent.** Friction resists all action and saps energy; it makes the simple difficult and the difficult seemingly impossible. Self-induced friction (unclear goals, complicated plans, complex organization) can be reduced; external friction cannot be eliminated, only fought through by will — while raising the enemy's.
-
 3. **Certainty is unattainable; every action rests on incomplete information.** The fog of war is structural. Nonlinearity means minor incidents produce decisive effects. Judgment estimates possibilities and probabilities; it never removes them.
-
 4. **Disorder increases over time; only a general framework of order can be imposed.** Plans go awry, communications fail, and repeated improvisation carries actions far from the original scheme. The commander influences the general flow; the commander does not control each event.
-
 5. **War is a complex, distributed system; centralization contradicts its nature.** Outcomes emerge from countless local decisions made on local information. Full centralization under a single decisionmaker is inconsistent with what war is.
-
 6. **Moral and mental forces outweigh physical forces.** Material factors are easier to measure and less decisive. Any doctrine that reduces war to ratios of forces and equipment is inherently flawed. The greatest effect of fires is on the enemy's moral strength, not on their matériel.
-
 7. **War must serve policy.** Military action is a political instrument and its conduct must support political aims. Goals outside the means available must not be set; war tends to take its own course once begun.
-
 8. **Relative speed and focus are the universal generators of combat power.** Speed is a weapon; focus is the convergence of effects at the decisive time and place. Focus demands strict economy elsewhere and therefore the acceptance of prudent risk. Risk is inherent in action and inaction alike.
 
 ---
 
 ## HEURISTICS
-*Rules of thumb for real-time decision-making.*
 
-| Situation | Do This | Not This |
-|-----------|---------|----------|
-| Decision required, information incomplete | Select a promising course of action with acceptable risk and execute it now — "a good plan violently executed now is better than a perfect plan executed next week" | Wait for more information; agonize over a perfect solution that does not exist |
-| Assigning a task to a subordinate | Mission tactics: state the task and the intent ("...in order to..."), leave the method to the subordinate, intervene only by exception | Prescribe the method; require permission for every deviation |
-| Situation changes and the assigned task becomes obsolete | Act on the intent; intent outlasts the task and continues to guide action | Execute the obsolete task, or halt and wait for new orders |
-| Choosing where to apply strength | Seek gaps (weakness), avoid surfaces (strength); direct the main effort at a center of gravity through a critical vulnerability | Attack strength frontally because that is where the enemy is |
-| Main effort strikes a surface; another unit finds a gap | Redesignate the second unit as main effort and pull combat power through the gap (reconnaissance pull) | Reinforce failure; push per the original scheme (command push) |
-| Several efforts competing for support | Designate one main effort; everything else supports it; strict economy elsewhere; ask "How can I best support the main effort?" | Spread resources evenly; leave priority implicit |
-| Junior leader errs through over-boldness | Deal leniently; counsel and critique; keep encouraging boldness and initiative | Zero-defects punishment that stifles initiative |
-| Junior leader errs through inaction or timidity | Deal severely; lack of orders is never a justification for inaction | Treat inaction as the safe default |
-| Planning far ahead | Impose less precision the further out you look; lay groundwork and preserve several options | Build a detailed timetable for the whole operation |
-| Communicating between key people ("actuals") | Talk directly, orally, in person; rely on implicit communication built on shared philosophy and experience | Route through intermediaries; write long, detailed, explicit instructions |
-| Disagreeing with a senior | Give an honest professional opinion until the decision is made; then support the decision as your own | Yes-man compliance before the decision; undermining after it |
-| Training or rehearsing | Opposed, free-play exercises with real friction; critique immediately afterward; focus on why actions were taken and why they produced their results | Canned scenarios; no critique; critique of actions only |
-| New technology offers tighter control over subordinates | Exercise discipline; do not use it to over-supervise | Use information technology to reassert positive control |
-| Surprise or an opening is achieved | Exploit it fully and immediately; commit every ounce of available power | Half-measures; pause to consolidate; wait for confirmation |
+_Rules of thumb for real-time decision-making._
+
+| Situation                                                | Do This                                                                                                                                                             | Not This                                                                       |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Decision required, information incomplete                | Select a promising course of action with acceptable risk and execute it now — "a good plan violently executed now is better than a perfect plan executed next week" | Wait for more information; agonize over a perfect solution that does not exist |
+| Assigning a task to a subordinate                        | Mission tactics: state the task and the intent ("...in order to..."), leave the method to the subordinate, intervene only by exception                              | Prescribe the method; require permission for every deviation                   |
+| Situation changes and the assigned task becomes obsolete | Act on the intent; intent outlasts the task and continues to guide action                                                                                           | Execute the obsolete task, or halt and wait for new orders                     |
+| Choosing where to apply strength                         | Seek gaps (weakness), avoid surfaces (strength); direct the main effort at a center of gravity through a critical vulnerability                                     | Attack strength frontally because that is where the enemy is                   |
+| Main effort strikes a surface; another unit finds a gap  | Redesignate the second unit as main effort and pull combat power through the gap (reconnaissance pull)                                                              | Reinforce failure; push per the original scheme (command push)                 |
+| Several efforts competing for support                    | Designate one main effort; everything else supports it; strict economy elsewhere; ask "How can I best support the main effort?"                                     | Spread resources evenly; leave priority implicit                               |
+| Junior leader errs through over-boldness                 | Deal leniently; counsel and critique; keep encouraging boldness and initiative                                                                                      | Zero-defects punishment that stifles initiative                                |
+| Junior leader errs through inaction or timidity          | Deal severely; lack of orders is never a justification for inaction                                                                                                 | Treat inaction as the safe default                                             |
+| Planning far ahead                                       | Impose less precision the further out you look; lay groundwork and preserve several options                                                                         | Build a detailed timetable for the whole operation                             |
+| Communicating between key people ("actuals")             | Talk directly, orally, in person; rely on implicit communication built on shared philosophy and experience                                                          | Route through intermediaries; write long, detailed, explicit instructions      |
+| Disagreeing with a senior                                | Give an honest professional opinion until the decision is made; then support the decision as your own                                                               | Yes-man compliance before the decision; undermining after it                   |
+| Training or rehearsing                                   | Opposed, free-play exercises with real friction; critique immediately afterward; focus on why actions were taken and why they produced their results                | Canned scenarios; no critique; critique of actions only                        |
+| New technology offers tighter control over subordinates  | Exercise discipline; do not use it to over-supervise                                                                                                                | Use information technology to reassert positive control                        |
+| Surprise or an opening is achieved                       | Exploit it fully and immediately; commit every ounce of available power                                                                                             | Half-measures; pause to consolidate; wait for confirmation                     |
 
 ---
 
 ## CORE CONCEPTS (10)
-*The essential theories, solutions, and mechanics.*
+
+_The essential theories, solutions, and mechanics._
 
 **1. The Five Attributes of War**
 Friction, uncertainty, fluidity, disorder, and complexity are inherent, not incidental. Each episode is unique, merges with those before and after it, and tends toward greater disorder over time. Because war is a human enterprise, every attribute carries a psychological as well as a physical weight. A doctrine that pretends otherwise fails in contact.
@@ -153,31 +155,31 @@ Surfaces are enemy strengths, gaps are enemy weaknesses — in space, time, or c
 
 ## KEY VOCABULARY
 
-| Term | Definition |
-|------|-----------|
-| Friction | The force that resists all action and saps energy; external (enemy, terrain, chance) or self-induced (unclear goals, complicated plans, complex organization) |
-| Fog of war | The atmosphere of uncertainty in which all action takes place; reducible, never eliminable |
-| Nonlinearity | Causes and effects are disproportionate; minor incidents can decide outcomes |
-| Tempo | Speed over time — the consistent ability to operate quickly; a weapon measured relative to the enemy |
-| Focus | Convergence of effects in time and space on an objective; requires economy and risk elsewhere |
-| Surprise | A state of disorientation from an unexpected event that degrades the ability to resist; achieved by deception, ambiguity, or stealth |
-| Boldness | Unhesitating exploitation of uncertainty to pursue major rather than marginal results; tempered by judgment |
-| Center of gravity | Any important source of strength — capability, locality, relationship, or moral factor — without which a force cannot function |
-| Critical vulnerability | A vulnerability that, if exploited, does the most significant damage to the enemy's ability to resist; the pathway to a center of gravity |
-| Maneuver warfare | A philosophy that seeks to shatter the enemy's cohesion through rapid, focused, unexpected actions creating a situation with which the enemy cannot cope |
-| Attrition warfare | Victory through cumulative destruction of material by superior firepower; results proportionate to effort |
-| Mission tactics | Assigning a subordinate a mission without specifying how it must be accomplished; a contract between senior and subordinate |
-| Mission-type order | An order to perform a mission without specifying how it is to be accomplished |
-| Commander's intent | The purpose behind a task; the "why" that outlasts the "what" and permits initiative in harmony with the commander's aims |
-| Main effort | The unit assigned the mission most critical to success at that moment; the focal point of the force's combat power and priority for all support |
-| Surfaces and gaps | Enemy strengths and enemy weaknesses, in space, time, or capability |
-| Reconnaissance pull | Pulling combat power through gaps found by forward units, as opposed to command push from the rear |
-| Combined arms | Integration of arms such that to counter one the enemy must become more vulnerable to another — a dilemma |
-| Topsight | A grasp of how one's own action fits into the larger situation; the bird's-eye view that reveals the whole |
-| Implicit communication | Communication through mutual understanding using a minimum of key, well-understood phrases; built on shared philosophy and shared experience |
-| Culminating point | The point at which an offense can no longer sustain itself and must revert to the defense |
-| Shaping | Lethal and nonlethal actions that set the general conditions of war to advantage before the decisive moment |
-| Zero-defects mentality | Punishing errors of boldness so that initiative is stifled; expressly prohibited |
+| Term                   | Definition                                                                                                                                                    |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Friction               | The force that resists all action and saps energy; external (enemy, terrain, chance) or self-induced (unclear goals, complicated plans, complex organization) |
+| Fog of war             | The atmosphere of uncertainty in which all action takes place; reducible, never eliminable                                                                    |
+| Nonlinearity           | Causes and effects are disproportionate; minor incidents can decide outcomes                                                                                  |
+| Tempo                  | Speed over time — the consistent ability to operate quickly; a weapon measured relative to the enemy                                                          |
+| Focus                  | Convergence of effects in time and space on an objective; requires economy and risk elsewhere                                                                 |
+| Surprise               | A state of disorientation from an unexpected event that degrades the ability to resist; achieved by deception, ambiguity, or stealth                          |
+| Boldness               | Unhesitating exploitation of uncertainty to pursue major rather than marginal results; tempered by judgment                                                   |
+| Center of gravity      | Any important source of strength — capability, locality, relationship, or moral factor — without which a force cannot function                                |
+| Critical vulnerability | A vulnerability that, if exploited, does the most significant damage to the enemy's ability to resist; the pathway to a center of gravity                     |
+| Maneuver warfare       | A philosophy that seeks to shatter the enemy's cohesion through rapid, focused, unexpected actions creating a situation with which the enemy cannot cope      |
+| Attrition warfare      | Victory through cumulative destruction of material by superior firepower; results proportionate to effort                                                     |
+| Mission tactics        | Assigning a subordinate a mission without specifying how it must be accomplished; a contract between senior and subordinate                                   |
+| Mission-type order     | An order to perform a mission without specifying how it is to be accomplished                                                                                 |
+| Commander's intent     | The purpose behind a task; the "why" that outlasts the "what" and permits initiative in harmony with the commander's aims                                     |
+| Main effort            | The unit assigned the mission most critical to success at that moment; the focal point of the force's combat power and priority for all support               |
+| Surfaces and gaps      | Enemy strengths and enemy weaknesses, in space, time, or capability                                                                                           |
+| Reconnaissance pull    | Pulling combat power through gaps found by forward units, as opposed to command push from the rear                                                            |
+| Combined arms          | Integration of arms such that to counter one the enemy must become more vulnerable to another — a dilemma                                                     |
+| Topsight               | A grasp of how one's own action fits into the larger situation; the bird's-eye view that reveals the whole                                                    |
+| Implicit communication | Communication through mutual understanding using a minimum of key, well-understood phrases; built on shared philosophy and shared experience                  |
+| Culminating point      | The point at which an offense can no longer sustain itself and must revert to the defense                                                                     |
+| Shaping                | Lethal and nonlethal actions that set the general conditions of war to advantage before the decisive moment                                                   |
+| Zero-defects mentality | Punishing errors of boldness so that initiative is stifled; expressly prohibited                                                                              |
 
 ---
 
@@ -185,64 +187,66 @@ Surfaces are enemy strengths, gaps are enemy weaknesses — in space, time, or c
 
 > "Friction is the force that resists all action and saps energy. It makes the simple difficult and the difficult seemingly impossible."
 
-*Chapter 1, "Friction." The permanent condition every plan must survive.*
+_Chapter 1, "Friction." The permanent condition every plan must survive._
 
 > "The best we can hope for is to impose a general framework of order on the disorder, to influence the general flow of action rather than to try to control each event."
 
-*Chapter 1, "Disorder." The ceiling on control, stated flatly.*
+_Chapter 1, "Disorder." The ceiling on control, stated flatly._
 
 > "Any doctrine which attempts to reduce warfare to ratios of forces, weapons, and equipment neglects the impact of the human will on the conduct of war and is therefore inherently flawed."
 
-*Chapter 1, "The Human Dimension."*
+_Chapter 1, "The Human Dimension."_
 
 > "The single most important thought to understand about our theory is that war must serve policy."
 
-*Chapter 2, "War As an Act of Policy."*
+_Chapter 2, "War As an Act of Policy."_
 
 > "Tempo is itself a weapon—often the most important."
 
-*Chapter 2, "Styles of Warfare."*
+_Chapter 2, "Styles of Warfare."_
 
 > "Surprise is not what we do; it is the enemy's reaction to what we do."
 
-*Chapter 2, "Surprise and Boldness." Surprise is measured at the receiver.*
+_Chapter 2, "Surprise and Boldness." Surprise is measured at the receiver._
 
 > "In practical terms, this means that we must not strive for certainty before we act, for in so doing we will surrender the initiative and pass up opportunities."
 
-*Chapter 4, "Philosophy of Command."*
+_Chapter 4, "Philosophy of Command."_
 
 > "Thus, as a basis for action, any decision is generally better than no decision."
 
-*Chapter 4, "Decisionmaking." Postponement is itself a decision — usually the wrong one.*
+_Chapter 4, "Decisionmaking." Postponement is itself a decision — usually the wrong one._
 
 > "They inform the commander of what they have done, but they do not wait for permission."
 
-*Chapter 4, "Mission Tactics." The operating rule for subordinates under mission-type orders.*
+_Chapter 4, "Mission Tactics." The operating rule for subordinates under mission-type orders._
 
 > "Of the two, the intent is predominant. While a situation may change, making the task obsolete, the intent is more lasting and continues to guide our actions."
 
-*Chapter 4, "Commander's Intent."*
+_Chapter 4, "Commander's Intent."_
 
 > "Faced with a decision, we ask ourselves: How can I best support the main effort?"
 
-*Chapter 4, "Main Effort." The tiebreaker question for every subordinate.*
+_Chapter 4, "Main Effort." The tiebreaker question for every subordinate._
 
 > "The further ahead we think, the less our actual influence can be. Therefore, the further ahead we consider, the less precision we should attempt to impose."
 
-*Chapter 4, "Shaping the Action." The planning-horizon rule.*
+_Chapter 4, "Shaping the Action." The planning-horizon rule._
 
 > "We should deal with such errors leniently; there must be no 'zero defects' mentality."
 
-*Chapter 3, "Professionalism." Errors of over-boldness are a necessary part of learning; errors of inaction are dealt with severely.*
+_Chapter 3, "Professionalism." Errors of over-boldness are a necessary part of learning; errors of inaction are dealt with severely._
 
 ---
 
 ## WHAT DOESN'T WORK
+
 Striving for certainty before acting, centralized positive control, detailed timetables, formularistic approaches and set patterns, reducing war to force ratios, zero-defects mentality, yes-men, attacking strength frontally, reinforcing failure instead of exploiting success, prescribing method to subordinates, waiting for permission, inaction justified by lack of orders, timidity, agonizing over a perfect solution, half-measures after achieving surprise, dissipating combat power across unrelated efforts, over-reliance on technology, using information technology to over-supervise, canned training scenarios, critiques that examine what was done rather than why, over-supervision in garrison, rushing deliberate decisions when time is not the limiting factor.
 
 ---
 
 ## QUICK SELF-CHECK
+
 - [ ] Does every task I assign carry an explicit intent — the "in order to"?
 - [ ] Have I designated a single main effort right now, and does everything else support it?
 - [ ] Am I deciding on acceptable risk with the information I have, rather than waiting for certainty?
@@ -254,26 +258,19 @@ Striving for certainty before acting, centralized positive control, detailed tim
 - [ ] Do I critique immediately after each effort, focusing on why, in open dialogue?
 - [ ] Am I communicating through a shared vocabulary of key phrases rather than long explicit instructions?
 
-*If any box is unchecked, that's your next priority — in the order listed.*
+_If any box is unchecked, that's your next priority — in the order listed._
 
 ---
 
 ## APPLICATION — THE OPERATION
 
 - **Commander's intent → the intent line on every tasking.** Doctrine: every mission is a task plus an "...in order to..." and the intent is predominant. Operational translation: every phase brief and every order to the AI partner opens with the task and closes with the intent; when the task goes obsolete mid-session, the partner acts on the intent without a new order. The standard project flow (BOLO 25) makes the intent line mandatory at the top of each phase.
-
-- **Mission tactics → mission-type orders to the AI partner.** Doctrine: assign the mission, not the method; the senior intervenes only by exception; the subordinate informs but does not wait for permission. Translation: orders specify the outcome and the intent, leave the method open, and the partner reports what it did. The "how copy?" / "Good copy." exchange is the contract closing a mission-type order — a readback of the task *and* the why, confirming understanding two levels up before execution.
-
+- **Mission tactics → mission-type orders to the AI partner.** Doctrine: assign the mission, not the method; the senior intervenes only by exception; the subordinate informs but does not wait for permission. Translation: orders specify the outcome and the intent, leave the method open, and the partner reports what it did. The "how copy?" / "Good copy." exchange is the contract closing a mission-type order — a readback of the task _and_ the why, confirming understanding two levels up before execution.
 - **Main effort → one main effort per session, named in STATE.md.** Doctrine: recognize the one action most critical to success at this moment; give it priority for all support; shift it to exploit success, never to reinforce failure. Translation: the operation's proword "main effort" is this term unchanged. Every session names it; every other stream is a supporting effort under strict economy; the tiebreaker question is "How can I best support the main effort?"
-
 - **General framework of order, not positive control → the sit rep board.** Doctrine: influence the general flow, do not control each event; subordinates inform the commander of what they have done. Translation: the sit rep is the periodic report that replaces minute-by-minute supervision — situation, main effort, blockers, watchlist — a framework of order laid over the disorder rather than an attempt to eliminate it.
-
 - **Focus on the critical vulnerability → boresight.** Doctrine: focus is the convergence of effects at the decisive point; dissipation over several unrelated efforts violates focus and is counterproductive. Translation: "boresight" is the call to re-converge effort on the critical vulnerability of the current project — the one unanswered decision, the one blocking artifact — when effort has drifted across surfaces.
-
 - **Self-induced friction and "any decision is better than no decision" → the gate.** Doctrine names self-induced friction: lack of a clearly defined goal, unclear or complicated plans, complex task organization. Translation: the recurring stall pattern (finished designs blocked on one unanswered decision, then rebuilt) is self-induced friction. The gate at each phase is where that decision gets made on acceptable risk; postponing it is itself a decision, and the wrong one.
-
 - **Planning horizon → phase cadence.** Doctrine: the further ahead, the less precision. Translation: detail the current phase; carry only intent and options for later phases. No project-length timetable. This is the structural fix for designing every phase in full and then discarding the design.
-
 - **Critique and no zero-defects → the session cache.** Doctrine: critique immediately after, in open dialogue, focused on why; tolerate bold errors, censure inaction. Translation: the `_CACHE/` session note written at close is the critique — what was decided, why, what it produced — and its tone tolerates a bold miss while flagging a session that decided nothing.
 
 ---
