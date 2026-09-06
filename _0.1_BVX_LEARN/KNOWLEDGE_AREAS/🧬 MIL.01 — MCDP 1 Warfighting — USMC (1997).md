@@ -72,10 +72,7 @@ feeds:
 
 ## CORE THESIS
 
-War is a contest between
-<u><wbr>independent wills</u>
-
-fought in permanent friction, uncertainty, and disorder, so certainty and positive control are impossible; the side that wins is the side that stops trying to control events and instead generates superior tempo — decentralizing decisions to subordinates who act on the commander's intent, focusing strength against critical vulnerabilities, and shattering the enemy's cohesion rather than grinding down their mass.
+War is a contest between **independent wills** fought in permanent **friction**, **uncertainty**, and **disorder**, so **certainty** and **positive control** are impossible; the side that wins is the side that stops trying to control events and instead generates **superior tempo** — **decentralizing decisions** to **subordinates** who **act** on the **commander's intent**, focusing **strength** against **critical vulnerabilities**, and shattering the enemy's cohesion rather than grinding down their mass.
 
 ---
 
@@ -83,14 +80,14 @@ fought in permanent friction, uncertainty, and disorder, so certainty and positi
 
 _These are the unchanging principles — true regardless of context._
 
-1. **The enemy is an independent will, not an object.** War is a Zweikampf — two wrestlers, each exerting force and counterforce. Every plan meets a counter-plan; the situation is a product of continuous mutual adaptation.
-2. **Friction is permanent.** Friction resists all action and saps energy; it makes the simple difficult and the difficult seemingly impossible. Self-induced friction (unclear goals, complicated plans, complex organization) can be reduced; external friction cannot be eliminated, only fought through by will — while raising the enemy's.
-3. **Certainty is unattainable; every action rests on incomplete information.** The fog of war is structural. Nonlinearity means minor incidents produce decisive effects. Judgment estimates possibilities and probabilities; it never removes them.
-4. **Disorder increases over time; only a general framework of order can be imposed.** Plans go awry, communications fail, and repeated improvisation carries actions far from the original scheme. The commander influences the general flow; the commander does not control each event.
-5. **War is a complex, distributed system; centralization contradicts its nature.** Outcomes emerge from countless local decisions made on local information. Full centralization under a single decisionmaker is inconsistent with what war is.
-6. **Moral and mental forces outweigh physical forces.** Material factors are easier to measure and less decisive. Any doctrine that reduces war to ratios of forces and equipment is inherently flawed. The greatest effect of fires is on the enemy's moral strength, not on their matériel.
-7. **War must serve policy.** Military action is a political instrument and its conduct must support political aims. Goals outside the means available must not be set; war tends to take its own course once begun.
-8. **Relative speed and focus are the universal generators of combat power.** Speed is a weapon; focus is the convergence of effects at the decisive time and place. Focus demands strict economy elsewhere and therefore the acceptance of prudent risk. Risk is inherent in action and inaction alike.
+1. **The enemy is an independent will, not an object.** War is a **Zweikampf** — two wrestlers, each exerting **force** and **counterforce**. Every **plan** meets a **counter-plan**; the **situation** is a product of **continuous mutual adaptation**.
+2. **Friction is permanent.** Friction resists all action and saps **energy**; it makes the simple difficult and the difficult seemingly impossible. **Self-induced friction** (**unclear goals**, **complicated plans**, **complex organization**) can be reduced; **external friction** cannot be eliminated, only fought through by **will** — while raising the enemy's.
+3. **Certainty is unattainable; every action rests on incomplete information.** The **fog of war** is **structural**. **Nonlinearity** means **minor incidents** produce **decisive effects**. **Judgment** estimates **possibilities** and **probabilities**; it never removes them.
+4. **Disorder increases over time; only a general framework of order can be imposed.** Plans go awry, **communications** fail, and repeated **improvisation** carries actions far from the **original scheme**. The **commander** **influences** the **general flow**; the commander does not **control** each **event**.
+5. **War is a complex, distributed system; centralization contradicts its nature.** **Outcomes** emerge from countless **local decisions** made on **local information**. **Full centralization** under a **single decisionmaker** is inconsistent with what war is.
+6. **Moral and mental forces outweigh physical forces.** **Material factors** are easier to measure and less decisive. Any **doctrine** that reduces war to ratios of forces and equipment is inherently flawed. The greatest **effect of fires** is on the enemy's **moral strength**, not on their **matériel**.
+7. **War must serve policy.** **Military action** is a **political instrument** and its conduct must support **political aims**. Goals outside the means available must not be set; war tends to take its own course once begun.
+8. **Relative speed and focus are the universal generators of combat power.** **Speed** is a **weapon**; **focus** is the **convergence of effects** at the decisive time and place. **Focus** demands strict economy elsewhere and therefore the acceptance of **prudent risk**. **Risk** is inherent in action and inaction alike.
 
 ---
 
