@@ -145,6 +145,9 @@ A session that answers "sit rep" without all five has not answered it.
 | bore side · bore sight | **boresight** |
 | MDCP · MDP · CDP one (in a doctrine context) | **MCDP** (MCDP 1 = Warfighting, MIL.01) |
 | astrosex · ASTROSE7X | **ASTRO7EX** |
+| preserved stools (food context) | preserved **foods** |
+| tickling · kavas (food context) | **pickling** · **kvass** |
+| standing (in a canning context) | **canning** |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
