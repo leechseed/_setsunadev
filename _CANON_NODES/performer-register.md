@@ -34,6 +34,8 @@ updated: 2026-09-09
 
 **Sex.** **F** · **M** · **T** trans woman · **NB** non-binary (Stash's word, Lola Faye) · **F+M** a couple's channel · **—** not established. Filled from Stash's gender field where the name is in Stash (the StashDB identify pass), from the source lists' own words otherwise; a dash is a staged call, not a guess. Added 9/9 when the scope widened. It is a filter, never a ranking.
 
+**★.** Spoken emphasis by Papi, dated in the note. It does not change Listed or Sources (Shrooms Q set the precedent 9/8): the lists rank, the star marks. Carried by Shrooms Q · Cream Factory · BBXL · Natasha Teen.
+
 **Sources.** Codes in the Sources column: **A** CULT OF ADLAW 2022 · **B** the 2023 Obsidian entry "porn stars that i love" · **J** the 2023 journal updates · **X** the 2023 creator case studies · **K** "favorite stars on board" · **I** "pornstars i admire" · **H** Holly Randall guests to listen to · **P** who to get a poster of · **M** "most influential porn stars 2025" · **S** spoken by Papi, dated. K · I · H · P are undated archive files in `_ARCHIVE/_DIRECTORY OF DIR/_onlyfans_dir/`.
 
 **Stash columns.** Scenes = the performer's scene count in Stash (0.31.1, 15,492 scenes); 5★ = how many of Papi's five-star scenes name them. Stash carries no performer favorites or ratings, so this is the only watch-side signal. Watching and admiring are different registers; the gooner lane sits in its own section below.
@@ -80,7 +82,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Lisa Ann | P | F | 3 | B·H·J | 2023 | — | — |  | — |
 | Dakota Tyler | P | F | 3 | I·K·M | n.d. | 4 | 1 | bold in K | — |
 | Dana Vespoli | P | F | 3 | H·K·M | n.d. | 2 | 0 | bold in K | — |
-| Natasha Teen | P | F | 3 | I·K·M | n.d. | 21 | 6 | bold in K | — |
+| **Natasha Teen** ★ | P | F | 3 | I·K·M | n.d. | 21 | 6 | bold in K; starred by Papi 9/9 (spoken, spelled T-E-E-N); tied with Variety Itsol for the top five-star count on the roster (6) | — |
 | Anna Bell Peaks | P | F | 2 | A·M | 2022 | — | — | A tail list: 'Anna Bell Peaks VR' | — |
 | Arabelle Raphael | P | F | 2 | A·M | 2022 | 11 | 1 |  | — |
 | Cherry Crush | E | F | 2 | A·B | 2022 | — | — | on the A performer tail list and the e-girl roster; MyCherryCrush; influence order #4 | — |
