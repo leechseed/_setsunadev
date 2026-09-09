@@ -94,3 +94,7 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 
 ## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → `📐 ssot_05_operations_project_flow.md` v0.1
 Promote the four-domains six-phase lifecycle into a `05_OPERATIONS` SSOT · strip the BVIPDS charter + assumption log into blanks · generalise the G1/G2/G3 gate pattern · adopt the registry's five-flag status + `# | Decision | Blocking?` ledger as the schema. Every input is a finished artifact today.
+
+## 8 · Addendum 2026-09-09 — the Business-ops cluster, closed out (true-ancients R8)
+
+PROJECTS rank 10 "Business ops" retired as a label. Of its six conversations, four are already in §1 (PMBOK study guides · the BVI charter · WBS · the 3D-printing market entry) and one by output (the SPINDLE master plan). **Not previously cited, pointed here so it is never re-derived:** `_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-06-06_buying-and-reselling-unpublished-content-rights.md` (BOTH, 37k, 1 artifact) — the adult-industry entry consult: creator-led economics, LTV:CAC, §2257, Visa VAMP, three capital tiers, flagship→network, the third-party repository assessed as funnel-only. BOLO 27 / ULTRA DARK (9/3) reached the same funnel-only conclusion from §N + registry §E without this file; the next Ultrasin entry question starts here.

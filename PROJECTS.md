@@ -26,7 +26,7 @@ Every project, ranked by how much development actually went into it. Volume = ch
 | 7 | **Food ventures** — bakery, takeout, eating show | BLACK | ~411k | 17 | Mar→Jul | 🟡 cooling |
 | 8 | **ULTRASIN / GDP** — physique, gym build, training | ORANGE | ~400k | 11 | Feb→Aug | 🟢 live |
 | 9 | **Tooling** — scripts, scrapers, UI builds | BLACK | ~266k | 16 | Feb→Jul | ⚪ support |
-| 10 | **Business ops** — PM, charters, market entry | BLACK | ~203k | 6 | Feb→Jul | ⚪ dormant |
+| 10 | ~~**Business ops** — PM, charters, market entry~~ | BLACK | ~203k | 6 | Feb→Jul | ⚫ **RETIRED 2026-09-09 (R8)** — a keyword bucket, never a project; PM half → `05_OPERATIONS` (9/3), venture half dead or homed elsewhere |
 
 **BLACK ~2,830k · ORANGE ~1,400k · shared ~430k.** Black runs at roughly twice the volume of orange.
 
@@ -99,8 +99,8 @@ GDP-1 BOOTYCAMP four phases, Gate Keeper's Kata, FAC-1 NIGHTYARD build spec, tra
 ### 9 · Tooling — ⚪
 yt-dlp, clipboard monitors, JSX, debugging. Serves other projects, no independent goal.
 
-### 10 · Business ops — ⚪
-PMBOK, charters, market entry. Dormant since spring.
+### 10 · Business ops — ⚫ RETIRED 2026-09-09
+PMBOK, charters, market entry. Dormant since spring. **Ruled R8 on the true-ancients pass:** the PM material (PMBOK 6 study guides · the BVI charter + assumption log · the WBS note) was harvested into `05_OPERATIONS/📐 ssot_05_operations_pm_holdings_inventory.md` and THE PROJECT FLOW v0.1 on 9/3. The venture conversations were never PM: SPINDLE (dead), the anime snack box (→ Food ventures), the SlimeVR market-entry plan (→ the SlimeVR line below), the June content-rights briefing (→ pointed from the PM inventory for BOLO 27 / ULTRA DARK). Nothing deleted; the archive holds all six.
 
 ---
 
@@ -112,8 +112,8 @@ Real work with no volume, because it's new or buried:
 |---|---|
 | **Leechseed Manifesto** — 10 doctrine docs, May 2025 | 🔴 found, not in canon |
 | **L2b MORPHOLOGY** — frame/tissue/condition/line/archetype | 🟢 **gluteal module specced 2026-08-21** — 27-cell substrate, 13 named types, two sexed taxonomies. Next module: population signatures. |
-| **Taxonomic-aesthetic practice** — the archive as revealed-preference data | engine-vs-voice fork unanswered since June |
-| **SlimeVR tracker line** — Kobra S1 BOM, enclosures | product venture, scattered across Tooling |
+| ~~**Taxonomic-aesthetic practice** — the archive as revealed-preference data~~ | ⚫ **RETIRED 2026-09-09 (R6)** — fork closed 8/25 (engine first); engine = the taxonomy engine / DARKROOM (BOLO 14), voice = ULTRA DARK (BOLO 27) |
+| **SlimeVR tracker line** — Kobra S1 BOM, enclosures | product venture, scattered across Tooling. **9/9 (R8):** its market-entry sequence lives in `_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-12_3d-printing-business-models-and-market-entry.md` (complaint research → differentiation → limited-batch drop → unit economics $399/$549 · 12-week launch) — the only worked market-entry sequence in the vault; BOM at `KOBRA-S1-BOM.md` |
 
 ---
 

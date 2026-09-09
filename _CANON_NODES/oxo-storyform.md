@@ -4,6 +4,7 @@ entity_id: oxo_storyform
 kind: storyform
 ip: OVEREXITOUT
 series: The Outliers
+medium: SERIES — RULED 2026-09-09 (true-ancients pass R9; supersedes the .fdx feature assumption and the lattice's tacit prose default; the legacy ten-episode Season 1 shape stands as the working container until plot_systems maps Movements to episodes)
 trunk: BLACK
 storyform_id: oxo_primary_v1
 storyform_version: 2.0
