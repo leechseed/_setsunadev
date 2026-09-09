@@ -28,7 +28,7 @@ updated: 2026-09-09
 
 **What it is.** Every performer Papi has written down as admired — adult performers, e-girls, creators, idols, whoever comes next — merged from nine lists spanning 2022 → 2025 plus the names Papi speaks into it (source S) and deduplicated on name. **Scope ruled 9/9:** this is not a female-adult-star list. Adult performer is one lane of the register, and any sex rides in the same table on the same ranking; the men were already in it (the creator case studies, most of the gooner lane) and are now in it on purpose. Ranked by how many lists a name appears on: recurrence is the ranking Papi never wrote down. Sibling of the [film register](film-register.md), same merge-and-core method.
 
-**Counts.** 135 names · **21 in the stable core** (on four or more lists) · lanes: 105 performers · 17 e-girls · 12 creators · 1 other · sex: 120 F · 4 M · 2 T · 1 NB · 1 pair · 7 unestablished · 88 of the names exist as performers in Stash.
+**Counts.** 136 names · **21 in the stable core** (on four or more lists) · lanes: 106 performers · 17 e-girls · 12 creators · 1 other · sex: 120 F · 5 M · 2 T · 1 NB · 1 pair · 7 unestablished · 88 of the names exist as performers in Stash.
 
 **Lanes.** **P** adult performer (the admired roster, any sex) · **E** e-girl (the 2023 "Greatest Egirls of All Time" roster, influence order noted) · **C** creator case study (2023 journal: Pornhub channels read as business cases, Papi's notes verbatim) · **O** other performer (idol, dancer, athlete — the lane the widened scope grows into; Lisa Manoban was already here).
 
@@ -38,9 +38,9 @@ updated: 2026-09-09
 
 **Stash columns.** Scenes = the performer's scene count in Stash (0.31.1, 15,492 scenes); 5★ = how many of Papi's five-star scenes name them. Stash carries no performer favorites or ratings, so this is the only watch-side signal. Watching and admiring are different registers; the gooner lane sits in its own section below.
 
-**Staged passes, not run.** X handle verification, physique-watchlist style, one agent sweep. L2b morphology cell per performer, Papi's calls (BOLO 23 pattern, content-blind on Claude's side).
+**Staged passes, not run.** X handle verification, physique-watchlist style, one agent sweep (handles Papi supplies ride in ahead of it — BBXL was the first). A per-performer data pull from X is not a session job: x.com is unreadable from here and the API is paid, so it runs the BOLO 13 way (gallery-dl + Firefox cookies to disk, then Claude reads the disk). L2b morphology cell per performer, Papi's calls (BOLO 23 pattern, content-blind on Claude's side).
 
-**Dedupe calls, 9/8.** Skyler/Skylar Valentine one performer · Evelin/Evelyn/Evelynn Claire one · "dakota taylor" = Dakota Tyler · "Eva Sweet" = Eve Sweet · Cherry Crush = MyCherryCrush · "Katie Morgan VR" / "Anna Bell Peaks VR" folded into the name. **Ruled by Papi:** Dolly Dyson is separate from Dolly Little · Kazumi is a performer · Shrooms Q is a performer he really, really likes. **Ruled 9/9:** the register is any performer, any sex · Cream Factory is a P-lane performer, the first man added to the roster by name (the others arrived through the creator and Stash lanes).
+**Dedupe calls, 9/8.** Skyler/Skylar Valentine one performer · Evelin/Evelyn/Evelynn Claire one · "dakota taylor" = Dakota Tyler · "Eva Sweet" = Eve Sweet · Cherry Crush = MyCherryCrush · "Katie Morgan VR" / "Anna Bell Peaks VR" folded into the name. **Ruled by Papi:** Dolly Dyson is separate from Dolly Little · Kazumi is a performer · Shrooms Q is a performer he really, really likes. **Ruled 9/9:** the register is any performer, any sex · Cream Factory is a P-lane performer, the first man added to the roster by name (the others arrived through the creator and Stash lanes) · BBXL is a P-lane performer, named by handle (x.com/BButtXXL).
 
 ## The stable core
 
@@ -185,6 +185,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Lina Vesper | P | — | 1 | S | 2026 | — | — | spoken 9/8; spelling as heard, not in Stash | — |
 | Variety Itsol | P | T | 1 | S | 2026 | 8 | 6 | spoken 9/8; was the gooner lane's top trans name (6 five-star scenes), promoted to the roster by Papi's word | — |
 | **Cream Factory** ★ | P | M | 1 | S | 2026 | — | — | spoken 9/9: "a big booty fit white bottom that takes black dick — very inspirational"; the first man on the P roster by Papi's word; not in Stash under name, alias, tag, studio or title; male gluteal reference for BOLO 23 / L2b | — |
+| **BBXL** ★ | P | M | 1 | S | 2026 | — | — | spoken 9/9 as "BBXL", handle supplied by Papi (the X column's first filled cell); second man on the P roster; not in Stash under name, alias, tag, studio, title or URL — one unrated scene titled "Boybutt XXL compilation" (Stash id 20364) is a possible match, unattributed until Papi says so; X profile unreadable from the session (402), the data pull = the BOLO 13 pattern (gallery-dl + Firefox cookies) | @BButtXXL |
 
 ## The gooner lane (Stash, watched not listed)
 
