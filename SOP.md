@@ -138,7 +138,7 @@ A session that answers "sit rep" without all five has not answered it.
 | Doctor NZero · doctor zero | **DOCTRINE 0** |
 | SLP (in a process context) | **SOP** |
 | hau copy · tell copy · hell copy | **how copy** |
-| SIP rep · sip rep · sit rap | **sit rep** — the question form ("what is the sit rep") reads as the board, not a request for a definition |
+| SIP rep · sip rep · sit rap · set rep · this rep | **sit rep** — the question form ("what is the sit rep") reads as the board, not a request for a definition |
 | cornstars | **porn stars** |
 | AirSnova · there is nowhere · Aries Nova | **Eris Nova** (performer; spelled out by Papi 9/8) |
 | variety eats all | **Variety Itsol** (performer) |
