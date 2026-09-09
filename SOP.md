@@ -139,6 +139,10 @@ A session that answers "sit rep" without all five has not answered it.
 | SLP (in a process context) | **SOP** |
 | hau copy · tell copy · hell copy | **how copy** |
 | SIP rep · sip rep · sit rap | **sit rep** — the question form ("what is the sit rep") reads as the board, not a request for a definition |
+| cornstars | **porn stars** |
+| AirSnova · there is nowhere · Aries Nova | **Eris Nova** (performer; spelled out by Papi 9/8) |
+| variety eats all | **Variety Itsol** (performer) |
+| Lina Vesper (as heard) | **Lina Vesper** (performer; spelling unverified 9/8) |
 | black room · dark room | **DARKROOM** |
 | bolo · polo (in a tasking context) | **BOLO** |
 | break break (×2 or ×3) | **break-break** (nested detours stack) |

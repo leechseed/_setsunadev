@@ -15,6 +15,7 @@ sources:
   - "H — Holly Randall podcast · who to listen to still (_onlyfans_dir) (n.d.)"
   - "P — who to get a poster of (_onlyfans_dir) (n.d.)"
   - "M — most influential porn stars 2025 (SELACIOUS build) (2025)"
+  - "S — spoken by Papi, 2026-09-08 — live additions (2026)"
 links:
   - "[[film-register]]"
   - "[[L2b-morphology-gluteal]]"
@@ -24,13 +25,13 @@ captured: 2026-09-08
 
 # THE PERFORMER REGISTER
 
-**What it is.** Every adult performer, e-girl, and creator Papi has written down as admired, merged from nine lists spanning 2022 → 2025 and deduplicated on name. Ranked by how many lists a name appears on: recurrence is the ranking Papi never wrote down. Sibling of the [film register](film-register.md), same merge-and-core method.
+**What it is.** Every adult performer, e-girl, and creator Papi has written down as admired, merged from nine lists spanning 2022 → 2025 plus the names Papi speaks into it (source S) and deduplicated on name. Ranked by how many lists a name appears on: recurrence is the ranking Papi never wrote down. Sibling of the [film register](film-register.md), same merge-and-core method.
 
-**Counts.** 131 names · **21 in the stable core** (on four or more lists) · lanes: 101 performers · 17 e-girls · 12 creators · 87 of the names exist as performers in Stash.
+**Counts.** 134 names · **21 in the stable core** (on four or more lists) · lanes: 104 performers · 17 e-girls · 12 creators · 88 of the names exist as performers in Stash.
 
 **Lanes.** **P** performer (the admired roster) · **E** e-girl (the 2023 "Greatest Egirls of All Time" roster, influence order noted) · **C** creator case study (2023 journal: Pornhub channels read as business cases, Papi's notes verbatim) · **O** other.
 
-**Sources.** Codes in the Sources column: **A** CULT OF ADLAW 2022 · **B** the 2023 Obsidian entry "porn stars that i love" · **J** the 2023 journal updates · **X** the 2023 creator case studies · **K** "favorite stars on board" · **I** "pornstars i admire" · **H** Holly Randall guests to listen to · **P** who to get a poster of · **M** "most influential porn stars 2025". K · I · H · P are undated archive files in `_ARCHIVE/_DIRECTORY OF DIR/_onlyfans_dir/`.
+**Sources.** Codes in the Sources column: **A** CULT OF ADLAW 2022 · **B** the 2023 Obsidian entry "porn stars that i love" · **J** the 2023 journal updates · **X** the 2023 creator case studies · **K** "favorite stars on board" · **I** "pornstars i admire" · **H** Holly Randall guests to listen to · **P** who to get a poster of · **M** "most influential porn stars 2025" · **S** spoken by Papi, dated. K · I · H · P are undated archive files in `_ARCHIVE/_DIRECTORY OF DIR/_onlyfans_dir/`.
 
 **Stash columns.** Scenes = the performer's scene count in Stash (0.31.1, 15,492 scenes); 5★ = how many of Papi's five-star scenes name them. Stash carries no performer favorites or ratings, so this is the only watch-side signal. Watching and admiring are different registers; the gooner lane sits in its own section below.
 
@@ -177,10 +178,13 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Remy LaCroix | P | 1 | M | 2025 | 5 | 1 |  | — |
 | **Shrooms Q** ★ | P | 1 | M | 2025 | 13 | 2 | "a performer that I really really like" (spoken 9/8) | — |
 | Syren De Mer | P | 1 | M | 2025 | 20 | 1 |  | — |
+| Eris Nova | P | 1 | S | 2026 | — | — | spoken 9/8, spelled out E-R-I-S-N-O-V-A; not in Stash | — |
+| Lina Vesper | P | 1 | S | 2026 | — | — | spoken 9/8; spelling as heard, not in Stash | — |
+| Variety Itsol | P | 1 | S | 2026 | 8 | 6 | spoken 9/8; was the gooner lane's top trans name (6 five-star scenes), promoted to the roster by Papi's word | — |
 
 ## The gooner lane (Stash, watched not listed)
 
-Top performers by five-star scene count who are on none of the nine lists. 322 of 2,498 five-star scenes name a performer, so the signal is thin; it is here because Papi ruled the Stash names ride in the same table.
+Top performers by five-star scene count who are on none of the lists. 322 of 2,498 five-star scenes name a performer, so the signal is thin; it is here because Papi ruled the Stash names ride in the same table.
 
 | Performer | 5★ scenes |
 |---|---|
@@ -196,7 +200,6 @@ Top performers by five-star scene count who are on none of the nine lists. 322 o
 | Rebel Rhyder | 8 |
 | Lancelot Styles | 6 |
 | Mike Chapman | 6 |
-| Variety Itsol | 6 |
 | Freddy Gong | 5 |
 | Michael MadBros | 5 |
 | MrPover | 5 |
@@ -204,6 +207,7 @@ Top performers by five-star scene count who are on none of the nine lists. 322 o
 | thedongkinger | 5 |
 | Chris Cock | 4 |
 | Dredd | 4 |
+| Dylan Brown | 4 |
 
 ---
 
