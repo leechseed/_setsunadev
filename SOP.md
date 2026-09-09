@@ -154,6 +154,7 @@ A session that answers "sit rep" without all five has not answered it.
 | tickling · kavas (food context) | **pickling** · **kvass** |
 | standing (in a canning context) | **canning** |
 | College shelf · he and (after a code) | **CUL shelf** · **S8** — the BVX-LEARN food shelf and the setting layer, ruled 9/6 |
+| Braddy (a mood / attitude context) | **bratty** — spelled out by Papi 9/9 |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
