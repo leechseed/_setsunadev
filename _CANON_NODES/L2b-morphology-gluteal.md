@@ -171,6 +171,22 @@ The naming layer is the IP. Three claims this system makes that nothing else in 
 ## 10 · Open
 
 - Named types are unvalidated against any corpus. Decision was **axes first, code later** — so these are hypotheses about where the clusters sit, not observations that they do.
-- Population signatures (sprinter, gymnast, ballet, heels/twerk, powerlifter, bikini vs figure vs wellness, adult performer) are unmapped. That's the next module.
+- Population signatures → module 2, [L2b-morphology-population-signatures](L2b-morphology-population-signatures.md) (⧗ draft, 2026-09-10; selection filter × loading fingerprint per population on these 27 cells).
 - Ilium-to-socket vertical distance is in Contreras but the passage was truncated in extraction — re-read that section before locking the secondary modifiers.
 - No aging model. Fat redistribution and tissue quality shift the read substantially over decades and none of that is captured.
+
+## 11 · The chain, RULED 2026-09-09
+
+**The four-layer chain in §1 is canon:** SKELETON → MUSCLE → FAT → CONDITION. Ruled by Papi on the true-ancients pass (R7, "chain go"); STATE.md's older five-tier chain was never defined on disk and this one supersedes it.
+
+**The five abstract names map over it,** so either vocabulary can be used without ambiguity:
+
+| Abstract name | Layer |
+|---|---|
+| **Frame** | SKELETON · the 27 `I·F·T` cells |
+| **Tissue** | MUSCLE + FAT · PROJECTION / SHELF, then level × distribution |
+| **Condition** | CONDITION · skin · tone · line · carriage |
+| **Line** | the silhouette read · the output of the four layers at a glance |
+| **Archetype** | the 13 named types · Frame + Tissue + Condition resolved to a name where a cluster exists |
+
+Line and Archetype are reads, not layers: nothing is generated at them, they are what the chain produces. Module 2 ([population signatures](L2b-morphology-population-signatures.md)) adds selection and loading on top of this chain without changing it.
