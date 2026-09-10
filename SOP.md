@@ -27,7 +27,7 @@ Quick reference. Full definitions in the sections below.
 
 | Transmission | Meaning | Response protocol |
 |---|---|---|
-| **"sit rep"** (equivalents: "the board" · "where did we leave off" · "what are we working on") | Full board, cold start | Flush the Ready Rack (§3), then deliver the sit rep (§2). No preamble, no questions. |
+| **"sit rep"** (equivalents: "the board" · "where did we leave off" · "what are we working on") | Full board, cold start | Flush the Ready Rack (§3), then deliver the sit rep (§2). No preamble, no questions. **Since 2026-09-10 the board is also a page (BOLO 38):** write the board as data to `_tools/sitrep/boards/<date>.json`, run `python _tools/sitrep/build.py`, republish `SITREP.html` to the standing artifact https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a (pass it as `url` from any other session), and hand the link. The chat carries the link plus the leverage line; the page carries the eight blocks. |
 | **The challenge phrase** (see STATE.md header) | Formal challenge | Countersign, first line, exact — then the sit rep. Never explain the ritual. |
 | **"Oscar Mike"** | Park current work, move on | Save working state to `oscar-mike/`, update its INDEX, drop the task, take the next order. **"Sweep"** promotes keepers to their real homes and clears the folder. Repo is PUBLIC — nothing sensitive parks there. **The reply that executes a park ends with the OUT block (§7 rule 9)** — coded 2026-09-06 on Papi's order: a visible seam between what was parked and what starts next. |
 | **"How copy?"** | End of transmission — acknowledge and execute | Reply opens **"Good copy."** + a one-to-two-line readback of the orders as understood, then execute. **"Solid copy"** = received, nothing to add. Discrepancy or missing piece → **"Bad copy on [item]"** + the single question. Dictation garbles of the phrase ("tell copy", "hell copy") read as "how copy". |
@@ -53,6 +53,8 @@ Quick reference. Full definitions in the sections below.
 | **V** | **Blocked on you** | Numbered decisions in priority order | STATE.md |
 | **VI** | **The leverage line** *(provisional rename pending: "The Main Effort" — MCDP 1's term for the one point everything else supports)* | One line naming the single highest-leverage next action | derived |
 | **VII** | **The SOI card** *(added by order 2026-08-25)* | The proword shortlist closes every board — commands one-per-bullet with a clause of meaning, board nouns on one line | §0 |
+
+**The front page — coded 2026-09-10.** The board lands as a rendered dashboard, not a scroll: one panel per block, jumped to by key; the explainer register on every panel (what we did last · what the plan was · what you did · what's next, in plain words); every board noun and item a live term with nested tooltips (the CK3 rules, depth 3); the WATCH register for colour. Skin ruled: CK3 information architecture × Death Stranding surface. Pipeline and URL in §1.
 
 **Trunk discipline — coded 2026-08-21, non-negotiable.** Every item on every block carries its trunk: **BLACK** (creative, IP, systems) · **ORANGE** (venture, body, sexuality) · **OPERATOR** (PMCS — the operator is equipment). The board is never delivered trunk-blind. **House names (spoken 2026-09-03): BLACK = Bold Venture (BVX) · ORANGE = Ultrasin.** Everything Papi makes lands in one house or the other. This is how Papi's head sorts; the protocol upholds it everywhere, always.
 
@@ -155,6 +157,8 @@ A session that answers "sit rep" without all five has not answered it.
 | standing (in a canning context) | **canning** |
 | College shelf · he and (after a code) | **CUL shelf** · **S8** — the BVX-LEARN food shelf and the setting layer, ruled 9/6 |
 | Braddy (a mood / attitude context) | **bratty** — spelled out by Papi 9/9 |
+| desk training · death training (a UI / design context) | **Death Stranding** (the ruled skin: CK3 UX × Death Stranding UI) |
+| CK three · CK-3 | **CK3** (Crusader Kings III; the information-architecture study) |
 | Rebel Writer · Rebel Rider | **Rebel Rhyder** (performer — "the NASA girl", RULED 9/10; spelled out by Papi r-e-b-e-l r-h-y-d-e-r) |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |

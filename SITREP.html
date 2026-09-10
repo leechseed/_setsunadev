@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<title>SITREP</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* ---- WATCH register · DAY face (positive polarity, lit room) ---- */
+  :root {
+    --bg: #ECE5DF; --panel: #F5F0EC; --panel-2: #E2D9D3;
+    --ink: #372A2F; --ink-2: #5A4B51; --ink-3: #7E6E75;
+    --accent: #8A1F44; --accent-soft: #F1DDE4;
+    --link: #2B5F9E; --good: #2E6B3F; --warn: #7A5D06; --bad: #B03A22; --help: #55627A;
+    --mark: #F3E6B4;
+    --orange: #C4551A; --orange-soft: #F7DED0;
+    --line: color-mix(in srgb, var(--ink) 16%, var(--bg));
+    --line-2: color-mix(in srgb, var(--ink) 30%, var(--bg));
+    --grid: color-mix(in srgb, var(--ink) 7%, transparent);
+    --bar: color-mix(in srgb, var(--ink) 26%, transparent);
+    --bar-retired: repeating-linear-gradient(135deg, transparent 0 4px, color-mix(in srgb, var(--ink) 22%, transparent) 4px 6px);
+    --shadow: 0 10px 30px rgba(55,42,47,.14);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color-scheme: light;
+  }
+  /* ---- NIGHT face (negative polarity, dark room) ---- */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1C191B; --panel: #242022; --panel-2: #2D282B;
+      --ink: #CFC6C8; --ink-2: #A0959A; --ink-3: #7B7176;
+      --accent: #D25A82; --accent-soft: #3A1F2B;
+      --link: #6CC3D9; --good: #7EC38F; --warn: #D9B65A; --bad: #E58A70; --help: #9AA7B8;
+      --mark: #4A3F1E;
+      --orange: #F2A46B; --orange-soft: #3A2416;
+      --grid: color-mix(in srgb, var(--ink) 10%, transparent);
+      --bar: color-mix(in srgb, var(--link) 42%, transparent);
+      --shadow: 0 10px 30px rgba(0,0,0,.5);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1C191B; --panel: #242022; --panel-2: #2D282B;
+    --ink: #CFC6C8; --ink-2: #A0959A; --ink-3: #7B7176;
+    --accent: #D25A82; --accent-soft: #3A1F2B;
+    --link: #6CC3D9; --good: #7EC38F; --warn: #D9B65A; --bad: #E58A70; --help: #9AA7B8;
+    --mark: #4A3F1E;
+    --orange: #F2A46B; --orange-soft: #3A2416;
+    --grid: color-mix(in srgb, var(--ink) 10%, transparent);
+    --bar: color-mix(in srgb, var(--link) 42%, transparent);
+    --shadow: 0 10px 30px rgba(0,0,0,.5);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    background-image: radial-gradient(var(--grid) 1px, transparent 1px);
+    background-size: 22px 22px;
+    font-family: var(--body); font-size: 17px; line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow: hidden;
+  }
+  a { color: var(--link); }
+  strong { font-weight: 700; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  button:focus-visible, .t:focus-visible, input:focus-visible, .ol-row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ::selection { background: var(--mark); }
+
+  .mono { font-family: var(--mono); }
+  .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ---- concept links (CK3 R1) ---- */
+  .t { color: var(--link); text-decoration: none; border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+
+  /* ---- app frame ---- */
+  .app {
+    height: 100vh; display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 236px minmax(0, 1fr) 316px;
+    grid-template-areas: "head head head" "ol panel rail" "foot foot foot";
+  }
+  header.head {
+    grid-area: head; display: flex; align-items: stretch; gap: 0; border-bottom: 1px solid var(--line-2);
+    background: color-mix(in srgb, var(--panel) 80%, transparent); backdrop-filter: blur(6px);
+  }
+  .brand { display: flex; flex-direction: column; justify-content: center; padding: 10px 18px; border-right: 1px solid var(--line); min-width: 236px; }
+  .brand h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; letter-spacing: .02em; text-transform: uppercase; }
+  .brand h1 i { display: inline-block; width: 10px; height: 10px; background: var(--accent); margin-right: 8px; transform: translateY(-2px); }
+  .brand .sub { font-family: var(--mono); font-size: 12px; color: var(--ink-2); margin-top: 4px; letter-spacing: .04em; }
+  .stats { display: flex; align-items: stretch; flex: 1; overflow-x: auto; }
+  .stat { display: flex; flex-direction: column; justify-content: center; padding: 8px 18px; border-right: 1px solid var(--line); min-width: 120px; }
+  .stat b { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: 4px; white-space: nowrap; }
+  .stat.s-hot b { color: var(--accent); } .stat.s-warn b { color: var(--warn); } .stat.s-bad b { color: var(--bad); } .stat.s-good b { color: var(--good); }
+  .box { display: flex; align-items: center; gap: 16px; padding: 0 18px; border-left: 1px solid var(--line); }
+  .light { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12px; }
+  .light i { width: 9px; height: 9px; border-radius: 50%; background: var(--bad); box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 22%, transparent); }
+  .light.up i { background: var(--good); box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 22%, transparent); }
+  .light small { color: var(--ink-3); }
+  .theme { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .theme:hover { border-color: var(--accent); color: var(--ink); }
+  .effort { grid-column: 1 / -1; display: flex; gap: 22px; align-items: center; padding: 6px 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--ink-2); flex-wrap: wrap; }
+  .effort b { color: var(--bad); font-weight: 500; }
+  .effort .k { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; margin-right: 6px; }
+  header.head { flex-wrap: wrap; }
+  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; }
+
+  /* ---- outliner · the strand (CK3 R12) ---- */
+  nav.ol { grid-area: ol; border-right: 1px solid var(--line-2); padding: 18px 0 18px 0; overflow-y: auto; position: relative; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  nav.ol .lbl { padding: 0 18px 10px; display: block; }
+  .ol-row { display: grid; grid-template-columns: 30px 1fr auto; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 9px 14px 9px 18px; position: relative; color: var(--ink-2); border-left: 3px solid transparent; }
+  .ol-row .node { width: 30px; display: flex; align-items: center; justify-content: center; }
+  .ol-row .node i { width: 9px; height: 9px; border: 1.5px solid var(--ink-3); border-radius: 50%; background: var(--bg); position: relative; z-index: 1; }
+  .ol-row .name { font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.05; text-transform: uppercase; letter-spacing: .01em; }
+  .ol-row .id { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; color: var(--ink-3); display: block; margin-bottom: 2px; }
+  .ol-row .key { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); border: 1px solid var(--line-2); padding: 1px 5px; }
+  .ol-row:hover { color: var(--ink); background: color-mix(in srgb, var(--panel-2) 60%, transparent); }
+  .ol-row.on { color: var(--ink); background: var(--panel-2); border-left-color: var(--accent); }
+  .ol-row.on .node i { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  nav.ol .strand { position: absolute; left: 32.5px; top: 46px; bottom: 30px; width: 1px; background: var(--line-2); }
+  nav.ol .foot { padding: 18px 18px 0; font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-height: 1.7; }
+  nav.ol .foot b { color: var(--ink-2); font-weight: 500; }
+
+  /* ---- the block panel ---- */
+  main.panel { grid-area: panel; overflow-y: auto; padding: 26px 34px 40px; position: relative; }
+  .frame { position: relative; padding: 4px 0 0; }
+  .frame::before, .frame::after { content: ""; position: absolute; width: 16px; height: 16px; border: 1px solid var(--ink-3); pointer-events: none; }
+  .frame::before { top: -6px; left: -14px; border-right: 0; border-bottom: 0; }
+  .frame::after { bottom: -8px; right: -14px; border-left: 0; border-top: 0; }
+  .bh { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
+  .bh .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+  .bh .src { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-left: auto; }
+  h2.bt { margin: 0 0 12px; font-family: var(--display); font-weight: 800; font-size: clamp(36px, 4.2vw, 52px); line-height: .95; text-transform: uppercase; letter-spacing: .005em; text-wrap: balance; }
+  p.plain { margin: 0 0 22px; font-size: 18px; line-height: 1.5; color: var(--ink-2); max-width: 66ch; }
+
+  .grp { margin-top: 18px; }
+  .grp > .lbl { display: flex; align-items: center; gap: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line-2); margin-bottom: 4px; color: var(--ink-2); }
+  .grp > .lbl em { font-style: normal; color: var(--ink-3); letter-spacing: 0; text-transform: none; font-size: 12px; }
+  .items { list-style: none; margin: 0; padding: 0; }
+  .item { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .item:last-child { border-bottom: 0; }
+  .item.note { background: color-mix(in srgb, var(--bad) 8%, transparent); padding: 12px 14px; margin-top: 12px; border: 1px solid color-mix(in srgb, var(--bad) 40%, transparent); }
+  .item .n { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; color: var(--ink-3); min-width: 30px; text-align: right; padding-top: 2px; }
+  .item .body { min-width: 0; }
+  .item .text { font-size: 17px; line-height: 1.5; }
+  .item .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+  .item .next { margin-top: 6px; font-size: 15.5px; color: var(--ink-2); display: flex; gap: 8px; }
+  .item .next .lbl { padding-top: 4px; white-space: nowrap; color: var(--accent); }
+  .when { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+
+  /* chips: status carries a glyph + word, never color alone */
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px; border: 1px solid currentColor; line-height: 1.5; white-space: nowrap; }
+  .st-hot { color: var(--accent); } .st-hot i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulse 1.6s ease-in-out infinite; }
+  .st-open { color: var(--warn); } .st-held { color: var(--warn); border-style: dashed; }
+  .st-gated, .st-parked { color: var(--ink-3); }
+  .st-done, .st-ruled, .st-good { color: var(--good); }
+  .st-bad, .st-missing { color: var(--bad); }
+  .st-corrected, .st-new { color: var(--help); }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+  .tr { display: inline-flex; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; line-height: 1.5; }
+  .tr span { padding: 2px 7px; border: 1px solid var(--ink); }
+  .tr .b { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .tr .o { background: var(--orange-soft); color: var(--orange); border-color: var(--orange); }
+  .tr .p { color: var(--ink-2); border-color: var(--ink-3); border-style: dashed; }
+  .tr .both { background: linear-gradient(90deg, var(--ink) 50%, var(--orange-soft) 50%); color: var(--orange); border-color: var(--ink); text-shadow: none; }
+  .tr span + span { margin-left: -1px; }
+
+  /* deep stacks · single-series ranked bars */
+  .bars { margin-top: 10px; }
+  .bar-row { display: grid; grid-template-columns: 34px minmax(180px, 1.1fr) auto minmax(120px, 2fr) 64px 46px minmax(90px, .8fr); gap: 12px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--line); }
+  .bar-row.hd { border-bottom: 1px solid var(--line-2); padding-bottom: 6px; }
+  .bar-row .rk { font-family: var(--display); font-weight: 800; font-size: 22px; color: var(--ink-3); text-align: right; }
+  .bar-row .pj { font-size: 16px; }
+  .bar-row .pj.ret { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--bad); }
+  .bar-row .track { height: 14px; position: relative; }
+  .bar-row .track b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--bar); border-radius: 0 3px 3px 0; min-width: 4px; }
+  .bar-row .track b.ret { background: var(--bar-retired); }
+  .bar-row .v { font-family: var(--mono); font-size: 13px; text-align: right; }
+  .bar-row .c { font-family: var(--mono); font-size: 12px; color: var(--ink-3); text-align: right; }
+  .bar-row .s { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); }
+  .totals { display: flex; gap: 22px; margin-top: 16px; font-family: var(--mono); font-size: 13px; color: var(--ink-2); flex-wrap: wrap; }
+  .totals b { font-weight: 500; color: var(--ink); }
+  .barhover { pointer-events: none; }
+
+  /* pmcs table */
+  table.pmcs { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 15.5px; }
+  table.pmcs th { text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line-2); }
+  table.pmcs td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .tblwrap { overflow-x: auto; }
+
+  /* blocked · numbered */
+  .dec { display: grid; grid-template-columns: 52px 1fr; gap: 6px 16px; padding: 14px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .dec .n { font-family: var(--display); font-weight: 800; font-size: 40px; line-height: .9; color: var(--accent); }
+  .dec .n.dim { color: var(--ink-3); }
+  .dec h3 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 24px; line-height: 1.1; }
+  .dec .what { margin: 4px 0 0; font-size: 16.5px; }
+  .dec .un { margin-top: 6px; font-size: 15px; color: var(--ink-2); display: flex; gap: 8px; }
+  .dec .un .lbl { padding-top: 3px; color: var(--good); white-space: nowrap; }
+
+  /* leverage line */
+  .lev { margin-top: 18px; padding: 28px 30px; border: 1px solid var(--line-2); background: var(--panel); position: relative; max-width: 78ch; }
+  .lev::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
+  .lev .big { font-family: var(--display); font-weight: 800; font-size: clamp(44px, 6vw, 84px); line-height: .9; text-transform: uppercase; margin: 0 0 16px; }
+  .lev .big .t { border-bottom-width: 3px; }
+  .lev p { margin: 0; font-size: 18px; line-height: 1.5; }
+
+  /* soi card */
+  .soi { margin-top: 10px; display: grid; grid-template-columns: 1fr; }
+  .soi .row { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .soi .w { font-family: var(--display); font-weight: 700; font-size: 22px; text-transform: uppercase; letter-spacing: .01em; }
+  .soi .g { font-size: 16px; color: var(--ink-2); }
+  .nouns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .nouns .t { font-family: var(--mono); font-size: 12.5px; padding: 5px 10px; border: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); }
+  .nouns .t:hover { border-color: var(--link); }
+
+  /* ---- the context rail · the explainer register ---- */
+  aside.rail { grid-area: rail; border-left: 1px solid var(--line-2); overflow-y: auto; padding: 20px 20px 24px; background: color-mix(in srgb, var(--panel) 55%, transparent); display: flex; flex-direction: column; gap: 18px; }
+  .rail h4 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: .02em; }
+  .ctx { display: grid; gap: 14px; }
+  .ctx .c { padding-left: 12px; border-left: 2px solid var(--line-2); }
+  .ctx .c .lbl { display: block; margin-bottom: 4px; color: var(--accent); }
+  .ctx .c p { margin: 0; font-size: 15.5px; line-height: 1.5; }
+  .rail .sec { border-top: 1px solid var(--line); padding-top: 14px; }
+  .runs { display: grid; gap: 8px; margin-top: 8px; }
+  .run { display: grid; grid-template-columns: 14px 1fr; gap: 10px; align-items: start; font-size: 14.5px; }
+  .run i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-top: 7px; animation: pulse 1.6s ease-in-out infinite; }
+  .run small { display: block; color: var(--ink-3); font-family: var(--mono); font-size: 11px; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-family: var(--mono); font-size: 12px; margin-top: 8px; }
+  .kv dt { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; padding-top: 2px; }
+  .kv dd { margin: 0; color: var(--ink-2); overflow-wrap: anywhere; }
+
+  /* glossary panel (CK3 R13) replaces the rail */
+  aside.rail.gl .ctxwrap { display: none; }
+  .glos { display: none; flex-direction: column; gap: 12px; }
+  aside.rail.gl .glos { display: flex; }
+  .glos input { width: 100%; font: 15px var(--body); padding: 8px 10px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); }
+  .cats { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cats button { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .cats button.on { border-color: var(--accent); color: var(--accent); }
+  .gl-list { display: grid; gap: 2px; }
+  .gl-list button { text-align: left; display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  .gl-list button:hover { background: var(--panel-2); }
+  .gl-list button .k { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .gl-detail { padding: 12px 14px; border: 1px solid var(--line-2); background: var(--panel); }
+  .gl-detail h5 { margin: 0 0 6px; font-family: var(--display); font-size: 22px; font-weight: 700; text-transform: uppercase; }
+  .gl-detail p { margin: 0; font-size: 15px; line-height: 1.5; }
+  .gl-detail .w { margin-top: 8px; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .gl-hist { display: flex; gap: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .gl-hist button { color: var(--link); }
+
+  /* ---- footer key strip ---- */
+  footer.foot { grid-area: foot; border-top: 1px solid var(--line-2); padding: 8px 18px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); background: color-mix(in srgb, var(--panel) 80%, transparent); }
+  footer.foot kbd { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border: 1px solid var(--line-2); color: var(--ink-2); margin-right: 4px; }
+  footer.foot .r { margin-left: auto; }
+
+  /* ---- tooltips (CK3 R2–R4): bold term · def · where · lock bar ---- */
+  .tip { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 2px solid var(--link); box-shadow: var(--shadow); padding: 12px 14px 10px; font-size: 15px; line-height: 1.45; }
+  .tip .th { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .tip .th b { font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; }
+  .tip .th .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .tip .lock { height: 2px; background: var(--line); margin-top: 10px; position: relative; }
+  .tip .lock b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--accent); }
+  .tip.locked .lock b { width: 100%; }
+  .tip.locked { border-top-color: var(--accent); }
+  .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .06em; }
+  .tip.raw { width: auto; min-width: 200px; font-family: var(--mono); font-size: 12.5px; }
+
+  @media (prefers-reduced-motion: reduce) { .st-hot i, .run i { animation: none; } }
+
+  @media (max-width: 980px) {
+    body { overflow: auto; }
+    .app { height: auto; grid-template-columns: 1fr; grid-template-areas: "head" "ol" "panel" "rail" "foot"; }
+    nav.ol { border-right: 0; border-bottom: 1px solid var(--line-2); display: flex; overflow-x: auto; padding: 8px; gap: 4px; }
+    nav.ol .lbl, nav.ol .strand, nav.ol .foot { display: none; }
+    .ol-row { grid-template-columns: auto 1fr; padding: 8px 12px; border-left: 0; border-bottom: 3px solid transparent; white-space: nowrap; }
+    .ol-row.on { border-bottom-color: var(--accent); }
+    .ol-row .key, .ol-row .node { display: none; }
+    main.panel { padding: 22px 20px 30px; }
+    .frame::before, .frame::after { display: none; }
+    aside.rail { border-left: 0; border-top: 1px solid var(--line-2); }
+    .brand { min-width: 0; }
+    .bar-row { grid-template-columns: 30px 1fr 60px; }
+    .bar-row .tr, .bar-row .track, .bar-row .c, .bar-row .s { display: none; }
+    .soi .row { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+
+<div class="app" id="app">
+  <header class="head">
+    <div class="row">
+      <div class="brand">
+        <h1><i></i>Sitrep</h1>
+        <div class="sub" id="brandSub"></div>
+      </div>
+      <div class="stats" id="stats"></div>
+      <div class="box" id="box"></div>
+    </div>
+    <div class="effort" id="effort"></div>
+  </header>
+
+  <nav class="ol" id="ol" aria-label="Blocks">
+    <span class="lbl">The board · blocks</span>
+    <div class="strand"></div>
+    <div id="olRows"></div>
+    <div class="foot" id="olFoot"></div>
+  </nav>
+
+  <main class="panel" id="panel" tabindex="-1"></main>
+
+  <aside class="rail" id="rail">
+    <div class="ctxwrap" id="ctx"></div>
+    <div class="glos" id="glos">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><h4>Glossary</h4><button class="theme" id="glClose">Esc · close</button></div>
+      <input id="glSearch" type="search" placeholder="Search terms…" autocomplete="off">
+      <div class="cats" id="glCats"></div>
+      <div class="gl-hist" id="glHist"></div>
+      <div class="gl-detail" id="glDetail" hidden></div>
+      <div class="gl-list" id="glList"></div>
+    </div>
+  </aside>
+
+  <footer class="foot">
+    <span><kbd>0</kbd>–<kbd>7</kbd> block</span>
+    <span><kbd>←</kbd><kbd>→</kbd> prev · next</span>
+    <span><kbd>G</kbd> glossary</span>
+    <span><kbd>T</kbd> theme</span>
+    <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
+    <span class="r" id="footR"></span>
+  </footer>
+</div>
+
+<script>
+const DATA = {"board": {"meta": {"date": "2026-09-10", "when": "evening", "trigger": "\"me this it, rep. Give me the sit rep.\" — read as sit rep", "countersign": false, "version": "v0 · BOLO 38", "box": [{"name": "Stash", "port": ":9999", "up": true, "k": "stash"}, {"name": "DARKROOM", "port": ":8484", "up": true, "k": "darkroom"}], "rack": {"flushed": "2026-09-08-2.session.md → _LOG/", "staged": "2026-09-10.session.md"}, "tree": "clean at open", "stack": "empty", "agents": [{"name": "Rebel Rhyder case", "from": "this session", "s": "hot"}], "stats": [{"k": "blocked on you", "v": "10", "s": "warn"}, {"k": "main effort idle", "v": "6 d", "s": "bad"}, {"k": "agents in flight", "v": "1", "s": "hot"}, {"k": "BOLOs hot", "v": "5", "s": "hot"}, {"k": "landed since 9/8", "v": "14 files", "s": "good"}], "main_effort": "[[block-c|Block C]] \"marked\" + [[d9|D-9]] — untouched since 9/4", "build": {"files": "5 files + git", "read": "178 KB", "calls": "21 calls", "rounds": "6 rounds"}}, "blocks": [{"id": "0", "name": "Last session", "kind": "list", "plain": "Between 9/8 and this evening we closed four old questions, wrote the first pages of The Outliers, taught DARKROOM to tag, and studied seven creators. Then this board mistook two files for dead that had landed minutes earlier.", "strand": {"last": "The 9/8 board, then you said \"let's work on this\" and pointed at the four oldest untouched projects.", "plan": "Retire what was dead, rule the medium for The Outliers, keep building ORANGE's reference set.", "you": "Ruled five words (\"retired retired nodes chain go series\"), green-lit the tag rail, widened the register to any sex, ordered the creator cases and the synthesis, parked it, ordered BOLO 45, and named the NASA girl.", "next": "Rebel Rhyder's case lands. You rule R9. The main effort still has no clear."}, "items": [{"t": "**The true-ancients pass ruled in five words** — R6 and R8 retired, R7 the node's chain is canon, R9 [[outliers|The Outliers]] is a [[series|SERIES]].", "trunk": "BLACK/ORANGE", "s": "ruled", "when": "9/9"}, {"t": "**OXO produced its first pages** — the [[telling-profile|Telling Profile]] ⧗, scene card M2 row 9, ~3 Fountain pages of Tori's first Sync session. 12 rulings and 14 Movement-1 questions gate the pilot's page one. Anna still has no node.", "trunk": "BLACK", "s": "done", "when": "9/10 00:32"}, {"t": "**[[l2b|L2b]] module 2 landed** — nine population signatures, the override construct; seven decisions open in its §7 ([[bolo43|BOLO 43]]).", "trunk": "ORANGE", "s": "done", "when": "9/10 00:32"}, {"t": "**[[darkroom|DARKROOM]] 1.1 built and swept** — tag rail, TAGGING and CAPTCHA modules, 16,496 judged, [[tier2|Tier 2]] probes live and winning all six axes ([[bolo44|BOLO 44]]).", "trunk": "ORANGE", "s": "done", "when": "9/10"}, {"t": "**The [[register|performer register]] widened** — any sex, 138 names, first men on the P roster.", "trunk": "ORANGE", "s": "done", "when": "9/10 04:02"}, {"t": "**Seven [[creator-case|creator cases]] plus the synthesis** — only Siswet and Variety Itsol self-tell; nobody ships an arc; [[r9|R9]] proposed as the next gate. Parked.", "trunk": "ORANGE", "s": "parked", "when": "9/10 05:26"}, {"t": "**[[bolo45|BOLO 45]] captured and boresighted** — Natasha Teen the referent, everything public by standing rule, the management recon ordered. All three landed from the original session between 16:07 and 16:15 (the recon, 171 URLs · the voices catalog, 22 voices · the Natasha Teen case); this board had called them dead minutes too early. Duplicates stood down.", "trunk": "ORANGE", "s": "corrected", "when": "9/10 16:08"}, {"t": "**You named the [[nasa-girl|NASA girl]]: Rebel Rhyder.** Both candidates struck and kept as receipts; her case is running and will add her register row.", "trunk": "ORANGE", "s": "ruled", "when": "9/10 evening"}, {"t": "**[[the-box|The box]]:** Stash up, DARKROOM up. Tree clean. Detour stack empty.", "trunk": "OPERATOR", "s": "good", "when": "now"}]}, {"id": "I", "name": "The Fresh Ten", "kind": "list", "plain": "The ten things touched most recently, newest first. Each carries its house and the one next step. The main effort is not on this list, because nobody has touched it in six days.", "strand": {"last": "Everything here moved between 9/6 and this evening; seven of the ten moved today.", "plan": "Land the running files, then take the cheapest ruling on each ⧗ draft before anything new opens.", "you": "You touched items 1 through 7 today by speaking: rulings, additions, orders, one park.", "next": "Item 4 is ready the moment you say \"run the darkroom\": the 300-image calibration."}, "items": [{"n": 1, "t": "**[[bolo45|BOLO 45]] creator sweep + manager path** — ruled; all three files on disk as of 16:15.", "next": "Your scope and block-name call on the [[explainer|explainer page]]; defaults run if silent.", "trunk": "ORANGE", "s": "hot", "when": "9/10 16:08"}, {"n": 2, "t": "**The creator cases (BOLO 24 feed)** — seven nodes, the synthesis, the page. Parked.", "next": "[[r9|R9]] GO.", "trunk": "ORANGE", "s": "parked", "when": "9/10 05:26"}, {"n": 3, "t": "**[[register|Performer register]] (BOLO 42)** — 138 names, 21 core; Rebel Rhyder's row incoming.", "next": "The X-handle pass, fire or leave · the seven dash Sex cells.", "trunk": "ORANGE", "s": "open", "when": "9/10 04:02"}, {"n": 4, "t": "**[[darkroom|DARKROOM]] tagging ([[bolo44|BOLO 44]])** — Tier 2 live; the server is up.", "next": "The 300-image TAGGING calibration, then \"retrain\".", "trunk": "ORANGE", "s": "parked", "when": "9/10 02:38"}, {"n": 5, "t": "**[[outliers|OXO]] series follow-through** — profile, scene card, pages.", "next": "The 12 [[telling-profile|Telling Profile]] rulings; Anna's node.", "trunk": "BLACK", "s": "open", "when": "9/10 00:32"}, {"n": 6, "t": "**[[l2b|L2b]] population signatures ([[bolo43|BOLO 43]])** — module 2 landed ⧗.", "next": "Seven §7 calls; no Glute Lab text on disk.", "trunk": "ORANGE", "s": "open", "when": "9/10 00:32"}, {"n": 7, "t": "**The ancients pass** — STATE and PROJECTS corrected, R6–R9 ruled.", "next": "Tori's chart re-derivation (Known rot).", "trunk": "BLACK", "s": "done", "when": "9/9 18:33"}, {"n": 8, "t": "**Ableton rig** — plugin folders and the MPK Mini answered. Parked.", "next": "Native Access repair for the Massive library.", "trunk": "OPERATOR", "s": "parked", "when": "9/8 22:11"}, {"n": 9, "t": "**The 9/8 park stack** — story timeline ([[bolo35|BOLO 35]]/36) · [[trash-land|Trash Land]] · TikTok ([[bolo29|BOLO 29]]).", "next": "Each waits on a Block V ruling.", "trunk": "BLACK", "s": "held", "when": "9/8 17:23"}, {"n": 10, "t": "**[[warroom|WARROOM]] 1.1 + LOCI** — the WATCH register applied; food preservation delivered.", "next": "Q2 filing (fifth register vs WARROOM-only) · BOLO 40, Shephard first.", "trunk": "BLACK", "s": "open", "when": "9/6"}, {"t": "**Outside the ten by recency: [[main-effort|the main effort]].** [[ultra-dark|ULTRA DARK]] [[block-c|Block C]] \"marked\", untouched since 9/4.", "trunk": "ORANGE", "s": "bad", "when": "9/4", "note": true}]}, {"id": "II", "name": "The Ancients", "kind": "list", "plain": "What has gone quiet, oldest first, and what each one is waiting on. Nothing here is dead. Almost all of it is waiting on one word from you.", "strand": {"last": "The true-ancients tier was emptied on 9/9: two retired, two ruled.", "plan": "Keep the tier empty. Anything that sits three weeks gets named here until it is ruled or retired.", "you": "You ruled or retired everything that was in the oldest tier. The next tier up is now the oldest.", "next": "The cheapest three: the Kata name, the BBRT fill-ins, the Birthday re-rule. One word each."}, "groups": [{"label": "True ancients", "note": "tier empty since 9/9", "items": []}, {"label": "Longest untouched · three weeks or more", "items": [{"t": "**Berlin pivot + Germany field month** — waiting on the fold into BERLIN-PIVOT; converges on Atlanta, whose 9/1 dossier still awaits your ruling.", "trunk": "ORANGE", "s": "held", "when": "8/16–19"}, {"t": "**Kobra S1 / SlimeVR** — waiting on the Phase 1 order.", "trunk": "BLACK", "s": "held", "when": "8/20"}, {"t": "**Kata rename · BBRT fill-ins (BOLO 3)** — waiting on you.", "trunk": "ORANGE", "s": "held", "when": "8/19"}, {"t": "**Birthday 2026** — shelved on a new-job assumption that no longer holds; re-rule Plan B or leave shelved.", "trunk": "OPERATOR", "s": "held", "when": "8/21"}, {"t": "**Focus doctrine · interface · pedagogy (BOLO 4/5/6)** — waiting on your go.", "trunk": "OPERATOR", "s": "gated", "when": "8/21"}, {"t": "**DOCTRINE 0 rename** — Standing Order versus the bench.", "trunk": "BLACK", "s": "held", "when": "8/21"}]}, {"label": "Going quiet · two to three weeks", "items": [{"t": "**Strip follow-ons (BOLO 8/9)** — owner-only; you file the GitHub ticket and the Google removal.", "trunk": "BLACK/ORANGE", "s": "open", "when": "8/24"}, {"t": "**GBD plan · shoot set · Bongobabe (BOLO 10/11/12)** — the GBD answers · the §B ruling · your go.", "trunk": "ORANGE", "s": "held", "when": "8/25"}, {"t": "**Multimedia seed · grammar pass · spine sweep stage 2 (BOLO 15/16/18)** — your call, or scriptable.", "trunk": "BLACK", "s": "open", "when": "8/25–26"}, {"t": "**Tori×Anna collision proof** — needs Anna's chart; Anna needs a node.", "trunk": "BLACK", "s": "gated", "when": "8/26"}, {"t": "**Glute reference · cleaning service · Lab venture** — parked; the Lab venture holds six queued decisions.", "trunk": "ORANGE", "s": "parked", "when": "8/30–31"}, {"t": "**Three-check pass (BOLO 21)** — fired 8/31; waiting on your strike/keep over sweep 1.", "trunk": "BLACK/ORANGE", "s": "held", "when": "8/31"}, {"t": "**Physique set (BOLO 23) · Atlanta (BOLO 22)** — morphology-cell calls · the recommendation ruling.", "trunk": "ORANGE", "s": "held", "when": "9/1"}]}, {"label": "Recently parked · a week or less", "items": [{"t": "Project flow (BOLO 25) · dictation dictionary (BOLO 26) · directory-of-dir promote candidates · Discord intros (none sent) · [[block-c|ULTRA DARK Block C]] · [[d9|D-9]] · TikTok ([[bolo29|BOLO 29]]) · verb kit · MIL.01 read-through · [[warroom|WARROOM]] name · story timeline · [[trash-land|Trash Land]] (seven rulings) · Ableton.", "trunk": "BLACK/ORANGE", "s": "parked", "when": "9/3–9/8"}]}, {"label": "Wire gap · third board running", "items": [{"t": "**[[modmigrate]]** (9/7, the Minecraft modpack) has no STATE row, no BOLO, no journal. No journal exists for 9/9 or 9/10 either.", "trunk": "OPERATOR", "s": "missing", "when": "9/7"}]}]}, {"id": "III", "name": "The Deep Stacks", "kind": "bars", "plain": "How much thinking went into each project, measured as characters of conversation. It says where the thought has been spent, not what it is worth. Frozen at the August 15 export because the counting script is broken.", "strand": {"last": "Rank 10 was struck on 9/9: Business ops was a keyword bucket, never a project.", "plan": "Repair the cluster script, then rerun after the next export so the ranks move again.", "you": "You retired rank 10 with one word.", "next": "The script repair is a Known-rot item; nobody has ordered it."}, "unit": "k characters", "rows": [{"rank": 1, "p": "[[outliers|OVEREXITOUT / The Outliers]]", "trunk": "BLACK", "v": 880, "convs": 19, "state": "live"}, {"rank": 2, "p": "BVIPDS / LEECHSEED", "trunk": "BLACK", "v": 580, "convs": 25, "state": "live"}, {"rank": 3, "p": "Adult content venture", "trunk": "ORANGE", "v": 504, "convs": 16, "state": "live"}, {"rank": 4, "p": "Desire Profile", "trunk": "ORANGE", "v": 492, "convs": 19, "state": "live"}, {"rank": 5, "p": "Character system", "trunk": "BLACK", "v": 489, "convs": 8, "state": "unstalled 8/24"}, {"rank": 6, "p": "Social channels", "trunk": "BOTH", "v": 432, "convs": 25, "state": "live · zero artifacts"}, {"rank": 7, "p": "Food ventures", "trunk": "BLACK", "v": 411, "convs": 17, "state": "cooling"}, {"rank": 8, "p": "ULTRASIN / GDP", "trunk": "ORANGE", "v": 400, "convs": 11, "state": "live"}, {"rank": 9, "p": "Tooling", "trunk": "BLACK", "v": 266, "convs": 16, "state": "support"}, {"rank": 10, "p": "Business ops", "trunk": "BLACK", "v": 203, "convs": 6, "state": "retired 9/9", "retired": true}], "totals": [{"k": "BLACK", "v": "~2,830k"}, {"k": "ORANGE", "v": "~1,400k"}, {"k": "shared", "v": "~430k"}]}, {"id": "IV", "name": "The BOLO board", "kind": "board", "plain": "The watchlist. A BOLO is a tasking captured the moment you say it. Below it, PMCS: you as equipment.", "strand": {"last": "BOLOs 43 and 44 delivered; 45 captured, boresighted, and landed.", "plan": "Work the hot five. Everything held stays held until its ruling in Block V.", "you": "You opened BOLO 45 and ruled its second transmission. Nothing on PMCS moved.", "next": "Eleven done BOLOs still sit in the active table; moving them to Done is housekeeping I owe."}, "groups": [{"label": "Hot · moving or owed this week", "items": [{"t": "**45** [[bolo45|creator sweep + manager path]] — all three files down; your two calls open.", "trunk": "ORANGE", "s": "hot"}, {"t": "**24** [[bolo24|the zero-budget launch]] — design pass staged; [[d9|D-9]] undated.", "trunk": "ORANGE", "s": "hot"}, {"t": "**27 / 28** [[ultra-dark|ULTRA DARK]] + [[stash|Stash]] — [[block-c|Block C]] \"marked\", the main effort.", "trunk": "ORANGE", "s": "bad"}, {"t": "**44** [[bolo44|the tag rail]] — the 300-image calibration next.", "trunk": "ORANGE", "s": "hot"}, {"t": "**43** [[bolo43|population signatures]] — seven §7 calls.", "trunk": "ORANGE", "s": "hot"}]}, {"label": "Held on a ruling", "items": [{"t": "**29** TikTok ([[bolo29|BOLO 29]]) · **35 / 36** story timeline ([[bolo35|BOLO 35]]) · **37 / 38** the loop + this page ([[bolo37|BOLO 37]] · [[bolo38|38]]) · **41** LOCI ([[bolo41|BOLO 41]]) · **33 / 34** [[warroom|WARROOM]] name + Q2 · **30** [[trash-land|Trash Land]].", "trunk": "BLACK", "s": "held"}]}, {"label": "Fires on your go", "items": [{"t": "**4** focus doctrine · **10** Bongobabe · **15** multimedia seed · **25** project flow (accept / amend) · **26** dictation route · **40** Shephard first.", "trunk": "BLACK/ORANGE", "s": "gated"}]}, {"label": "Open, slow", "items": [{"t": "3 · 5 · 6 · 8 · 9 · 11 · 12 · 16 · 18 stage 2 · 20 · 21 · 23.", "trunk": "BLACK/ORANGE", "s": "open"}]}, {"label": "Done, not yet moved to Done", "items": [{"t": "1 · 2 · 7 · 13 · 17 · 19 · 22 · 31 · 32 · 39 · 42, plus 43 and 44 delivered.", "trunk": "OPERATOR", "s": "done"}]}], "pmcs": [{"item": "Dental — retainer", "s": "bad", "status": "open since 8/19", "next": "Call the orthodontist; confirm ortho vs perio"}, {"item": "PCP — establish care + physical", "s": "bad", "status": "open", "next": "Book it; the sexual-health chain sequences after"}, {"item": "Pelvic-floor PT", "s": "gated", "status": "gated", "next": "Out of the PCP consult"}, {"item": "Employment", "s": "bad", "status": "unemployed since 9/3", "next": "[[bolo24|BOLO 24]] is the answer; runway · claim · backstop still unspoken"}, {"item": "The box", "s": "good", "status": "both up", "next": "[[stash|Stash]] :9999 · [[darkroom|DARKROOM]] :8484"}]}, {"id": "V", "name": "Blocked on you", "kind": "numbered", "plain": "Ten decisions only you can make, in the order of what they unblock. Most are one word. Say it and the work moves the same turn.", "strand": {"last": "Blocked #15, #16, #17 cleared on 9/9 with five words. The NASA girl cleared this evening with one name.", "plan": "Top of the list first: D-9 is the one that has been open longest and gates the most.", "you": "You cleared four decisions in two days. Ten remain; three are cheap draft batches.", "next": "Say \"D-9 go\", \"D-9 hold to [date]\", or \"D-9 no-go\"."}, "items": [{"n": 1, "title": "[[d9|D-9]]", "what": "The BOLO 24 boresight HOLD, undated since 9/4. Clear delivery · re-hold with a date · NO-GO.", "unblocks": "The studio design pass; the whole ORANGE launch chain.", "trunk": "ORANGE"}, {"n": 2, "title": "[[r9|R9]] GO", "what": "Thirty days on a fresh X account before any platform commit. Zero cost. (The NASA girl is ruled: Rebel Rhyder.)", "unblocks": "The creator-cases resume; the first measured signal for BOLO 24.", "trunk": "ORANGE"}, {"n": 3, "title": "[[bolo45|BOLO 45]]'s two calls", "what": "Scope S / M / L · the lessons-block name ([[the-take|THE TAKE]] by default). Defaults run if silent.", "unblocks": "The next wave of cases and the block in all seven existing files.", "trunk": "ORANGE"}, {"n": 4, "title": "[[bolo29|BOLO 29]]", "what": "Confirm the reward-versus-risk reading.", "unblocks": "The 24 / 27 / 29 ranking.", "trunk": "BLACK"}, {"n": 5, "title": "[[bolo35|BOLO 35]]", "what": "The four story-timeline questions.", "unblocks": "The head version, then BOLO 36's syllabus.", "trunk": "BLACK"}, {"n": 6, "title": "[[bolo37|BOLO 37]]", "what": "Name the proword loop (MINT rec) and answer the two remaining spec gaps; gap 3 is answered by this page.", "unblocks": "The first build; RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR leave the bench.", "trunk": "BLACK"}, {"n": 7, "title": "[[bolo41|BOLO 41]]", "what": "Ratify the LOCI convention.", "unblocks": "Every non-book research question filed by neighborhood.", "trunk": "BLACK"}, {"n": 8, "title": "[[numbering|#8 the 03/03 numbering]]", "what": "One rename either way.", "unblocks": "Clean SSOT numbering before the L4 deepening.", "trunk": "BLACK"}, {"n": 9, "title": "The draft batches", "what": "[[bolo43|L2b module 2]]'s seven §7 calls · the [[telling-profile|Telling Profile]]'s 12 rulings · [[trash-land|Trash Land]]'s seven. All ⧗ drafts; strike or keep.", "unblocks": "Three canon nodes stop being drafts.", "trunk": "ORANGE/BLACK"}, {"n": 10, "title": "[[warroom|WARROOM]]", "what": "The name, and Q2: file the WATCH register as a fifth design-system register or keep it WARROOM-only.", "unblocks": "DARKROOM's own theme decision.", "trunk": "BLACK"}]}, {"id": "VI", "name": "The leverage line", "kind": "line", "plain": "The one action that moves the most. Not the biggest project, not the newest. The single word with the longest shadow.", "strand": {"last": "Two boards in a row named Block C and D-9 as the main effort. Neither moved.", "plan": "Name the one word instead of the two tasks, so the ask is unmistakable.", "you": "You built the entire ORANGE reference set around a launch that has no clear.", "next": "One word on D-9. Then Block C is the hands-on work behind it."}, "line": "Rule [[d9|D-9]].", "why": "One word (GO · a dated HOLD · NO-GO) turns everything ORANGE built since 9/3 — cases, synthesis, register, tags — into a launch with a clear. The undated hold is the [[stall-pattern|stall pattern]] by name. [[block-c|Block C]] \"marked\" is the hands-on work behind it."}, {"id": "VII", "name": "The SOI card", "kind": "card", "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens.", "strand": {"last": "Three garble rows added this evening: \"me this it, rep\" · \"Rebel Writer\" · \"desk training\".", "plan": "BOLO 37 moves proword rulings out of chat and into a daily selection loop; this page is where it will live.", "you": "You coined the OUT block, ruled boresight, ruled BOLO, and now ruled that the board is a page.", "next": "Name the loop (MINT is the recommendation) and the bench empties."}, "soi": [{"k": "sitrep", "w": "sit rep", "g": "the full board, cold start — and this page"}, {"k": "oscar-mike", "w": "Oscar Mike", "g": "park it, move on"}, {"k": "sweep", "w": "sweep", "g": "promote and clear the parked"}, {"k": "how-copy", "w": "how copy?", "g": "end of orders; Good / Solid / Bad copy, then execute"}, {"k": "boresight", "w": "boresight", "g": "understanding check; readback → the read → questions; no delivery until cleared"}, {"k": "bolo", "w": "BOLO that", "g": "tasking captured the same turn"}, {"k": "ivory-tower", "w": "ivory tower", "g": "published literature only, cited inline"}, {"k": "break-break", "w": "break-break · buttonhook back", "g": "open the detour · close it, main thread restored"}, {"k": "run-the-darkroom", "w": "run the darkroom", "g": "launch DARKROOM, no questions"}, {"k": "belay", "w": "belay that", "g": "cancel the preceding order"}, {"k": "endex", "w": "ENDEX", "g": "close the session: cache note · STATE · journal"}], "nouns": ["bolo", "pmcs", "fresh-ten", "ancients", "deep-stacks", "ready-rack", "magazine", "sop"]}]}, "glossary": {"sitrep": {"t": "sit rep", "k": "proword", "d": "The full board, cold start. Spoken, it flushes the [[ready-rack|Ready Rack]] and delivers blocks 0 to VII in fixed order. From 9/10 it also lands as this page.", "w": "SOP.md §1–2"}, "oscar-mike": {"t": "Oscar Mike", "k": "proword", "d": "Park the current work in oscar-mike/ and move on. [[sweep|Sweep]] later promotes the keepers. Every park ends with the OUT block.", "w": "SOP.md §1 · oscar-mike/INDEX.md"}, "sweep": {"t": "sweep", "k": "proword", "d": "Promote the parked keepers to their real homes and clear oscar-mike/.", "w": "SOP.md §1"}, "how-copy": {"t": "how copy?", "k": "proword", "d": "End of orders. The reply opens Good copy plus a readback, then executes. Solid copy means nothing to add. Bad copy on an item means one question.", "w": "SOP.md §1"}, "boresight": {"t": "boresight", "k": "proword", "d": "The understanding check before delivery: readback, the read, clarifying questions only. Nothing builds until you clear it. Boresight in on X aims it at one item.", "w": "SOP.md §1"}, "bolo": {"t": "BOLO", "k": "noun", "d": "Be On the Lookout. A tasking captured the turn it is spoken, in BOLO.md. Named for the bolas: thrown on sighting, wraps, holds.", "w": "BOLO.md"}, "pmcs": {"t": "PMCS", "k": "noun", "d": "Preventive Maintenance Checks and Services. The operator is equipment: body, medical, life admin. Never mixed with projects.", "w": "BOLO.md · PMCS table"}, "ivory-tower": {"t": "ivory tower", "k": "proword", "d": "Academic mode: published literature only, every claim cited inline, established versus contested marked.", "w": "SOP.md §1"}, "break-break": {"t": "break-break", "k": "proword", "d": "Open a detour; the main thread parks where it stands. [[buttonhook|Buttonhook back]] closes it.", "w": "SOP.md §1"}, "buttonhook": {"t": "buttonhook back", "k": "proword", "d": "Close the detour and return to the parked thread unprompted, restating where we were.", "w": "SOP.md §1"}, "run-the-darkroom": {"t": "run the darkroom", "k": "proword", "d": "Launch [[darkroom|DARKROOM]] in the background, no questions. The garbles black room and dark room read the same.", "w": "SOP.md §1"}, "belay": {"t": "belay that", "k": "proword", "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order.", "w": "SOP.md §1"}, "endex": {"t": "ENDEX", "k": "proword", "d": "Close the session: write the cache note, update STATE.md, append the journal. Autosave commits on stop.", "w": "SOP.md §1"}, "ready-rack": {"t": "Ready Rack", "k": "noun", "d": "_CACHE/. Session notes staged for the next sit rep. Flushed into the [[magazine|Magazine]] on every board; an empty Rack proves the handoff completed.", "w": "_CACHE/"}, "magazine": {"t": "Magazine", "k": "noun", "d": "_LOG/. Deep storage for flushed session notes. Append-only; nothing is deleted, it is stowed.", "w": "_LOG/"}, "fresh-ten": {"t": "Fresh Ten", "k": "noun", "d": "Block I: the ten projects touched most recently, newest first, each with its last-touched date and a concrete next step.", "w": "SOP.md §2"}, "ancients": {"t": "The Ancients", "k": "noun", "d": "Block II: the longest-untouched work in three tiers, each item with what it is waiting on.", "w": "SOP.md §2"}, "deep-stacks": {"t": "Deep Stacks", "k": "noun", "d": "Block III: projects ranked by volume of thought spent, from PROJECTS.md. Volume is characters of conversation, a proxy for thinking, not value.", "w": "PROJECTS.md"}, "leverage-line": {"t": "the leverage line", "k": "noun", "d": "Block VI: the single highest-leverage next action. Provisional rename pending: the Main Effort, MCDP 1's term for the one point everything else supports.", "w": "SOP.md §2"}, "soi": {"t": "SOI", "k": "noun", "d": "Signal Operating Instructions. The proword card, SOP §0. Closes every board as Block VII.", "w": "SOP.md §0"}, "sop": {"t": "SOP", "k": "noun", "d": "SOP.md, the canonical home of every comms code and session protocol. On any conflict with memory, the file wins.", "w": "SOP.md"}, "trunk-black": {"t": "BLACK", "k": "noun", "d": "BLACK = Bold Venture (BVX): creative, IP, systems. Everything you make lands in one of two houses; this is the first.", "w": "SOP.md §2"}, "trunk-orange": {"t": "ORANGE", "k": "noun", "d": "ORANGE = Ultrasin: venture, body, sexuality. The second house.", "w": "SOP.md §2"}, "trunk-operator": {"t": "OPERATOR", "k": "noun", "d": "OPERATOR = you as equipment: [[pmcs|PMCS]], tooling, readiness. Not a house; the person who runs both.", "w": "SOP.md §2"}, "stall-pattern": {"t": "the stall pattern", "k": "ruling", "d": "The recurring failure: a finished design blocked on one unanswered decision, then rebuilt from scratch later. The fix is the ruling, not more structure.", "w": "memory · STATE.md"}, "d9": {"t": "D-9", "k": "item", "d": "Ledger item D-9 on the [[bolo24|BOLO 24]] charter: the [[boresight]] HOLD from 9/3, converted 9/4, carrying no date. Three legal answers under the project flow: clear delivery · re-hold with a date · NO-GO. An undated hold is the [[stall-pattern|stall pattern]].", "w": "_PRIVATE/BOLO-24-charter.md · STATE Blocked #10"}, "bolo24": {"t": "BOLO 24", "k": "item", "d": "The zero-budget ORANGE launch: 3D erotica stills in Blender, DARKROOM-fed, Ultrasin as the studio, a first signing with an arc. Charter in _PRIVATE/. Gated by [[d9|D-9]]; the next proposed gate is [[r9|R9]].", "w": "BOLO.md #24"}, "r9": {"t": "R9", "k": "item", "d": "Synthesis recommendation 9: thirty days on a fresh X account before any platform commit. Zero cost. Metric: follower growth against Kirenes' no-funnel rate and Variety Itsol's studio-promoted year one.", "w": "_PRIVATE/BOLO-24-creator-cases-synthesis.md"}, "r10": {"t": "R10", "k": "item", "d": "Fill reference seats 4 to 8 with the same agent template: a disclosed-AI creator on Fanvue, a Patreon 3D still artist, a Reddit-native grower, the itsmemphishxe reference.", "w": "_PRIVATE/BOLO-24-creator-cases-synthesis.md"}, "cam-line": {"t": "the cam line", "k": "item", "d": "The Lab-venture question: live cam access is Siswet's moat, and a rendered persona cannot stand in a live room. Board it as the difference between the two ORANGE plays, or rule it irrelevant.", "w": "oscar-mike/creator-cases.md"}, "ultra-dark": {"t": "ULTRA DARK", "k": "system", "d": "BOLO 27: the curation imprint under Ultrasin. A rating scale plus a written line on every post; commissioned edits as the first-dollar line. A funnel, never the asset.", "w": "oscar-mike/ultradark-walkthrough.md · _PRIVATE/ULTRADARK-*.md"}, "block-c": {"t": "Block C", "k": "item", "d": "The [[ultra-dark|ULTRA DARK]] walkthrough's third step: you mark 12 to 16 clips in [[stash|Stash]], say marked, the pull script fires, Resolve builds the 12-second blurb. Blocks A and B have been done since 9/4.", "w": "oscar-mike/ultradark-walkthrough.md"}, "stash": {"t": "Stash", "k": "system", "d": "The video library app on :9999. 15,492 scenes, 2,499 flagged as studio content, the UD pool of 2,111 five-stars. BOLO 28 made it the video twin of [[darkroom|DARKROOM]].", "w": "Q:\\fun\\.StashApp"}, "darkroom": {"t": "DARKROOM", "k": "system", "d": "The corpus browser on :8484. 55,841 girls-only images, verdicts, and since 9/9 the tag rail plus the TAGGING and CAPTCHA modules. Stamped 1.0 on 9/6, 1.1 on 9/9.", "w": "_PRIVATE/taxonomy_engine/"}, "bolo44": {"t": "BOLO 44", "k": "item", "d": "The tag rail and zero-shot tagging in [[darkroom|DARKROOM]]. Six axes, 48 values, 16,496 judged records. [[tier2|Tier 2]] probes now make the proposals.", "w": "BOLO.md #44 · oscar-mike/darkroom-tagging.md"}, "tier2": {"t": "Tier 2", "k": "system", "d": "Per-axis logistic-regression probes trained on your CAPTCHA rulings. They beat zero-shot on all six axes (66 to 82 combined against 52 to 62). Retrain after each tagging session.", "w": "_PRIVATE/taxonomy_engine/probe_pass.py"}, "bolo43": {"t": "BOLO 43", "k": "item", "d": "[[l2b|L2b]] module 2: population signatures. Nine populations across the 27-cell gluteal substrate, the override construct for surgery, a three-line cell call. Seven decisions open in its §7.", "w": "_CANON_NODES/L2b-morphology-population-signatures.md"}, "l2b": {"t": "L2b MORPHOLOGY", "k": "system", "d": "The body-shape layer of the character system. Chain ruled 9/9: SKELETON → MUSCLE → FAT → CONDITION. Module 1 is gluteal (27 cells, 13 named types); module 2 is [[bolo43|population signatures]].", "w": "_CANON_NODES/L2b-morphology-gluteal.md"}, "telling-profile": {"t": "the Telling Profile", "k": "item", "d": "The Ten Questions of the Telling, answered for [[outliers|The Outliers]] as a [[series]]. Drafted 9/10 with 12 rulings queued. No human narrator; the Feed speaks, Tori sees.", "w": "_CANON_NODES/oxo-telling-profile.md"}, "series": {"t": "SERIES", "k": "ruling", "d": "Ruling R9 of 9/9: The Outliers is a series, not a feature and not prose. Recorded in the storyform frontmatter. It unblocked the first scene card and the first Fountain pages.", "w": "_CANON_NODES/oxo-storyform.md"}, "outliers": {"t": "The Outliers", "k": "system", "d": "OVEREXITOUT / The Outliers: the flagship BLACK IP. Storyform ruled 8/24, DCUS instanced 8/26, medium ruled [[series]] 9/9, first pages 9/10. Anna still has no node.", "w": "_CANON_NODES/ · OUTLIERS_FINAL_DRAFT/"}, "warroom": {"t": "WARROOM", "k": "system", "d": "The MCDP doctrine browser: MIL.01 to MIL.11 as a game encyclopedia on the [[ck3-rules|CK3 rules]]. Version 1.1 wears the [[watch-register|WATCH register]]. Name provisional; paused by you on 9/6.", "w": "MCDP-CODEX.html"}, "watch-register": {"t": "the WATCH register", "k": "system", "d": "One grammar, two faces keyed to room light: DAY paper for the lit desk, NIGHT near-black for the dark one. Seven hues, every ratio contrast-checked against the long-watch standards. This page wears it.", "w": "_0.1_BVX_LEARN/_meta/WATCH-REGISTER.md"}, "ck3-rules": {"t": "the CK3 rules", "k": "system", "d": "Nineteen rules derived from Crusader Kings III's interface: concept links with nested tooltips capped at depth 3, timer or key lock, a character-sheet layout, an outliner plus an encyclopedia, one semantic color set. This page runs on them.", "w": "_0.1_BVX_LEARN/_meta/CK3-IA-STUDY.md"}, "bolo45": {"t": "BOLO 45", "k": "item", "d": "The creator-case sweep and the manager path. Ruled 9/10: [[natasha-teen|Natasha Teen]] is the referent; everything public unless you specify; the management recon ordered. Its three files never landed; relaunched this evening.", "w": "BOLO.md #45"}, "the-take": {"t": "THE TAKE", "k": "item", "d": "Default name for the lessons block: section 10 of every [[creator-case|creator case]], four parts (the one mechanic · transferable tips · does not transfer · feeds). Bench: TRADECRAFT · THE PULL · GLEANINGS. Runs as the default if you say nothing.", "w": "explainer page · BOLO 45"}, "creator-case": {"t": "creator case", "k": "noun", "d": "One file about one creator: how they started, how they run it, how they get paid. Public record only, filed beside the [[register|performer register]]. Seven exist; two more are running.", "w": "_CANON_NODES/creator-case-*.md"}, "register": {"t": "the performer register", "k": "system", "d": "138 names, any sex, 21 in the stable core. Lanes: performer · e-girl · creator case · Stash name. Built 9/8 from nine of your lists; widened 9/9.", "w": "_CANON_NODES/performer-register.md"}, "nasa-girl": {"t": "the NASA girl", "k": "item", "d": "The performer you recalled by story (used to be an engineer, NASA, then did this). Two candidates were built on 9/10; you named her this evening: Rebel Rhyder. Her case is running; the candidates stay as receipts.", "w": "_CANON_NODES/creator-case-rebel-rhyder.md"}, "natasha-teen": {"t": "Natasha Teen", "k": "person", "d": "Register row, lane P, starred by you 9/9. The referent for like Natasha Teen did; her case verifies whether she built an agency or roster.", "w": "_CANON_NODES/performer-register.md"}, "explainer": {"t": "the explainer register", "k": "ruling", "d": "The elementary landing-page voice you liked on 9/10: what we did last, what the plan was, what you did, in plain words. This board's right rail speaks it on every block.", "w": "https://claude.ai/code/artifact/68adc31f-f644-45de-881f-6d17a355021f"}, "modmigrate": {"t": "modmigrate", "k": "item", "d": "_tools/modmigrate/: the 9/7 Minecraft modpack migration (Modrinth Fabric 1.21.11 to NeoForge 1.21.11). Real work with no STATE row, no BOLO, no journal. Surfaced on three boards running.", "w": "_tools/modmigrate/"}, "bolo37": {"t": "BOLO 37", "k": "item", "d": "The proword selection loop: five candidates, pick three ranked, ten a day, Claude's sealed pick revealed after. Name bench MINT (rec). Three spec gaps; gap 3, placement, is answered by this page.", "w": "BOLO.md #37 · SOP.md §5"}, "bolo38": {"t": "BOLO 38", "k": "item", "d": "The sit rep as a front page, the CK3 save-load screen. Captured 9/6; fired 9/10 evening on your order. This page is v0.", "w": "BOLO.md #38"}, "the-box": {"t": "the box", "k": "system", "d": "The machine's servers: [[stash|Stash]] on :9999 and [[darkroom|DARKROOM]] on :8484. Both up this evening, the first time at a board since 9/4.", "w": "localhost"}, "bolo29": {"t": "BOLO 29", "k": "item", "d": "The SFW TikTok channel: owned Fortnite skins doing the emotes, faceless, BLACK. Research banked; held on one question, the reward-versus-risk reading.", "w": "oscar-mike/bolo29-tiktok.md"}, "bolo35": {"t": "BOLO 35", "k": "item", "d": "The story timeline tool and its theory: sound synthesis against the conservatory score. Read delivered 9/6; four questions held.", "w": "oscar-mike/story-timeline.md"}, "bolo41": {"t": "BOLO 41", "k": "item", "d": "The locus system: research filed by neighborhood. Convention provisional in _0.1_BVX_LEARN/LOCI/; needs your ratification.", "w": "_0.1_BVX_LEARN/LOCI/README.md"}, "numbering": {"t": "the 03/03 numbering", "k": "item", "d": "Two domains share the 03 prefix: 03_SETTING_SYSTEMS (stood up 8/25) and the empty pre-reserved 03_PLOT_SYSTEMS. One rename either way.", "w": "ShroomsQ/_CANON/_SSOT/"}, "trash-land": {"t": "Trash Land", "k": "item", "d": "BOLO 30: the man-made trash DMZ between the southern and northern US, mountain-range scale. Seed node written 9/6; seven rulings open, name bench recommends The Midden.", "w": "_CANON_NODES/oxo-trash-land-seed.md"}, "main-effort": {"t": "the main effort", "k": "ruling", "d": "MCDP 1's term: the one task everything else supports. On this board it has been [[block-c|Block C]] plus [[d9|D-9]] since 9/4, and neither has moved.", "w": "SOP.md §5"}}};
+const B = DATA.board, G = DATA.glossary;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function md(s) {
+  s = esc(s);
+  s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, k, l) => {
+    const g = G[k]; const label = l || (g ? g.t : k);
+    return g ? `<a class="t" data-t="${k}" tabindex="0">${label}</a>` : label;
+  });
+  return s;
+}
+const ST = {
+  hot: ['●', 'hot'], open: ['○', 'open'], held: ['◐', 'held'], gated: ['◇', 'on your go'], parked: ['▭', 'parked'],
+  done: ['✓', 'done'], ruled: ['✓', 'ruled'], good: ['●', 'up'], bad: ['▲', 'stalled'], missing: ['▲', 'no record'],
+  corrected: ['↺', 'corrected'], new: ['✦', 'new']
+};
+const chip = s => { const d = ST[s] || ['·', s]; return `<span class="chip st-${s}">${s === 'hot' ? '<i></i>' : d[0]} ${d[1]}</span>`; };
+function trunk(t) {
+  if (!t) return '';
+  const parts = t.split('/');
+  const one = x => x === 'BLACK' ? `<span class="b">BLACK</span>` : x === 'ORANGE' ? `<span class="o">ORANGE</span>` : x === 'BOTH' ? `<span class="both">BOTH</span>` : `<span class="p">${esc(x)}</span>`;
+  return `<span class="tr" title="trunk">${parts.map(one).join('')}</span>`;
+}
+
+/* ---- header ---- */
+const M = B.meta;
+$('#brandSub').textContent = `${M.date} · ${M.when} · ${M.version}`;
+$('#stats').innerHTML = M.stats.map(s => `<div class="stat s-${s.s || ''}"><b class="num">${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join('');
+$('#box').innerHTML = M.box.map(b => `<div class="light ${b.up ? 'up' : ''}"><i></i><a class="t" data-t="${b.k}" tabindex="0">${esc(b.name)}</a><small>${esc(b.port)} · ${b.up ? 'UP' : 'DOWN'}</small></div>`).join('')
+  + `<button class="theme" id="themeBtn" title="T">theme</button>`;
+$('#effort').innerHTML = `<span><span class="k">main effort</span>${md(M.main_effort)}</span>`
+  + `<span><span class="k">rack</span>${esc(M.rack.flushed)} · staged ${esc(M.rack.staged)}</span>`
+  + `<span><span class="k">tree</span>${esc(M.tree)} · stack ${esc(M.stack)}</span>`
+  + `<span><span class="k">built from</span>${esc(M.build.files)} · ${esc(M.build.read)} · ${esc(M.build.calls)} · ${esc(M.build.rounds)}</span>`;
+$('#footR').textContent = `${M.date} · trigger: ${M.trigger}`;
+
+/* ---- outliner ---- */
+const blocks = B.blocks;
+const countOf = b => b.items ? b.items.length : b.groups ? b.groups.reduce((n, g) => n + g.items.length, 0) : b.rows ? b.rows.length : b.soi ? b.soi.length : 1;
+$('#olRows').innerHTML = blocks.map((b, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">Block ${esc(b.id)}</span><span class="name">${esc(b.name)}</span></span><span class="key">${i}</span></button>`).join('');
+$('#olFoot').innerHTML = `<b>${M.agents.length}</b> agents in flight<br><b>${countOf(blocks[4])}</b> decisions are yours`;
+
+/* ---- panel renderers ---- */
+function itemHTML(it) {
+  const n = it.n != null ? `<span class="n num">${it.n}</span>` : `<span class="n"></span>`;
+  return `<li class="item ${it.note ? 'note' : ''}">${n}<div class="body"><div class="text">${md(it.t)}</div>
+    <div class="meta">${it.s ? chip(it.s) : ''}${trunk(it.trunk)}${it.when ? `<span class="when">${esc(it.when)}</span>` : ''}</div>
+    ${it.next ? `<div class="next"><span class="lbl">next</span><span>${md(it.next)}</span></div>` : ''}</div></li>`;
+}
+function groupsHTML(groups) {
+  return groups.map(g => `<div class="grp"><span class="lbl">${esc(g.label)}${g.note ? `<em>· ${esc(g.note)}</em>` : ''}</span>
+    ${g.items.length ? `<ul class="items">${g.items.map(itemHTML).join('')}</ul>` : `<p class="plain" style="margin:8px 0 0;font-size:15px">Nothing here.</p>`}</div>`).join('');
+}
+function render(b) {
+  let body = '';
+  if (b.kind === 'list') body = b.groups ? groupsHTML(b.groups) : `<ul class="items">${b.items.map(itemHTML).join('')}</ul>`;
+  else if (b.kind === 'bars') {
+    const max = Math.max(...b.rows.map(r => r.v));
+    body = `<div class="bars"><div class="bar-row hd"><span class="lbl">#</span><span class="lbl">project</span><span class="lbl">trunk</span><span class="lbl">volume · ${esc(b.unit)}</span><span class="lbl" style="text-align:right">k chars</span><span class="lbl" style="text-align:right">convs</span><span class="lbl">state</span></div>`
+      + b.rows.map(r => `<div class="bar-row"><span class="rk">${r.rank}</span><span class="pj ${r.retired ? 'ret' : ''}">${md(r.p)}</span>${trunk(r.trunk)}
+        <span class="track t barhover-src" tabindex="0" data-raw="${esc(r.p.replace(/\[\[[^\]|]+\|?([^\]]*)\]\]/g, '$1'))} · ~${r.v}k characters across ${r.convs} conversations · ${esc(r.state)} · frozen at the 8/15 export"><b class="${r.retired ? 'ret' : ''}" style="width:${(r.v / max * 100).toFixed(1)}%"></b></span>
+        <span class="v num">${r.v}k</span><span class="c num">${r.convs}</span><span class="s">${esc(r.state)}</span></div>`).join('')
+      + `</div><div class="totals">${b.totals.map(t => `<span><b>${esc(t.k)}</b> ${esc(t.v)}</span>`).join('')}<span>Volume is characters of conversation: thought spent, not value.</span></div>`;
+  } else if (b.kind === 'board') {
+    body = groupsHTML(b.groups) + `<div class="grp"><span class="lbl"><a class="t" data-t="pmcs" tabindex="0">PMCS</a> <em>· the operator is equipment</em></span>
+      <div class="tblwrap"><table class="pmcs"><thead><tr><th>Item</th><th>Status</th><th>Next action</th></tr></thead><tbody>
+      ${b.pmcs.map(p => `<tr><td><strong>${esc(p.item)}</strong></td><td>${chip(p.s)} <span class="when">${esc(p.status)}</span></td><td>${md(p.next)}</td></tr>`).join('')}
+      </tbody></table></div></div>`;
+  } else if (b.kind === 'numbered') {
+    body = `<div class="decs">${b.items.map(d => `<div class="dec"><span class="n num ${d.n > 3 ? 'dim' : ''}">${d.n}</span><div><h3>${md(d.title)}</h3><p class="what">${md(d.what)}</p>
+      <div class="un"><span class="lbl">unblocks</span><span>${md(d.unblocks)}</span></div><div class="meta" style="margin-top:6px">${trunk(d.trunk)}</div></div></div>`).join('')}</div>`;
+  } else if (b.kind === 'line') {
+    body = `<div class="lev"><p class="big">${md(b.line)}</p><p>${md(b.why)}</p></div>`;
+  } else if (b.kind === 'card') {
+    body = `<div class="soi">${b.soi.map(s => `<div class="row"><span class="w"><a class="t" data-t="${s.k}" tabindex="0">${esc(s.w)}</a></span><span class="g">${md(s.g)}</span></div>`).join('')}</div>
+      <span class="lbl" style="display:block;margin-top:22px">Board nouns</span><div class="nouns">${b.nouns.map(k => `<a class="t" data-t="${k}" tabindex="0">${esc(G[k].t)}</a>`).join('')}</div>`;
+  }
+  $('#panel').innerHTML = `<div class="frame"><div class="bh"><span class="eyebrow">Block ${esc(b.id)}</span><span class="src">${esc(b.name)} · ${countOf(b)} entries</span></div>
+    <h2 class="bt">${esc(b.name)}</h2><p class="plain">${md(b.plain)}</p>${body}</div>`;
+  $('#panel').scrollTop = 0;
+  const s = b.strand;
+  $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
+    <div class="c"><span class="lbl">What we did last</span><p>${md(s.last)}</p></div>
+    <div class="c"><span class="lbl">What the plan was</span><p>${md(s.plan)}</p></div>
+    <div class="c"><span class="lbl">What you did</span><p>${md(s.you)}</p></div>
+    <div class="c"><span class="lbl">What's next</span><p>${md(s.next)}</p></div></div>
+    <div class="sec"><span class="lbl">In flight</span><div class="runs">${M.agents.map(a => `<div class="run"><i></i><div>${esc(a.name)}<small>${esc(a.from)}</small></div></div>`).join('')}</div></div>`;
+}
+let cur = 0;
+function go(i) {
+  cur = Math.max(0, Math.min(blocks.length - 1, i));
+  document.querySelectorAll('.ol-row').forEach((r, j) => r.classList.toggle('on', j === cur));
+  closeTips(0);
+  render(blocks[cur]);
+  try { localStorage.setItem('sitrep_block', String(cur)); } catch (e) {}
+}
+$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (r) go(+r.dataset.i); });
+
+/* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */
+let tips = [];
+let openTimer = null, closeTimer = null;
+function tipFor(target, depth) {
+  const k = target.dataset.t; const raw = target.dataset.raw;
+  const el = document.createElement('div');
+  el.className = 'tip' + (raw ? ' raw' : '');
+  el.dataset.depth = depth;
+  if (raw) { el.textContent = raw; }
+  else {
+    const g = G[k];
+    const deep = depth >= 3;
+    el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div>
+      <p>${deep ? esc(g.d.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, kk, l) => l || (G[kk] ? G[kk].t : kk))) : md(g.d)}</p>
+      ${deep ? `<div class="w"><a href="#" class="glopen" data-k="${k}">Open in glossary →</a></div>` : `<div class="w">${esc(g.w || '')}</div>`}
+      <div class="lock"><b></b></div><div class="hint">hold 1.5 s or press Space to lock · Esc closes · click opens the glossary</div>`;
+  }
+  document.body.appendChild(el);
+  // position: below the target, clamped to the viewport
+  const r = target.getBoundingClientRect(); const w = el.offsetWidth, h = el.offsetHeight;
+  let x = Math.min(Math.max(12, r.left), window.innerWidth - w - 12);
+  let y = r.bottom + 8; if (y + h > window.innerHeight - 12) y = Math.max(12, r.top - h - 8);
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+  const rec = { el, target, depth, locked: false, timer: null };
+  if (!raw) {
+    const bar = $('.lock b', el); requestAnimationFrame(() => { bar.style.transition = 'width 1.5s linear'; bar.style.width = '100%'; });
+    rec.timer = setTimeout(() => lock(rec), 1500);
+  }
+  el.addEventListener('mouseenter', () => { clearTimeout(closeTimer); });
+  el.addEventListener('mouseleave', () => scheduleClose(depth));
+  el.addEventListener('click', e => { const a = e.target.closest('.glopen'); if (a) { e.preventDefault(); openGlossary(a.dataset.k); } });
+  target.classList.add('on');
+  tips.push(rec);
+  return rec;
+}
+function lock(rec) { rec.locked = true; rec.el.classList.add('locked'); }
+function closeTips(fromDepth) {
+  // close every tip at depth >= fromDepth, unless a shallower one is locked and this is a hover-leave (handled by caller)
+  tips.filter(t => t.depth >= fromDepth).forEach(t => { clearTimeout(t.timer); t.el.remove(); t.target.classList.remove('on'); });
+  tips = tips.filter(t => t.depth < fromDepth);
+}
+function scheduleClose(depth) {
+  clearTimeout(closeTimer);
+  closeTimer = setTimeout(() => {
+    // close from the deepest unlocked tip at or above this depth
+    const unlocked = tips.filter(t => t.depth >= depth && !t.locked);
+    if (unlocked.length) closeTips(Math.min(...unlocked.map(t => t.depth)));
+  }, 220);
+}
+function depthOf(target) { const p = target.closest('.tip'); return p ? +p.dataset.depth + 1 : 1; }
+function onEnter(target) {
+  clearTimeout(openTimer); clearTimeout(closeTimer);
+  const d = depthOf(target);
+  openTimer = setTimeout(() => {
+    // one tip per depth: replace any existing tip at this depth or deeper
+    closeTips(d);
+    tipFor(target, d);
+  }, 120);
+}
+document.addEventListener('mouseover', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('mouseout', e => { const t = e.target.closest('.t'); if (t) { clearTimeout(openTimer); scheduleClose(depthOf(t)); } });
+document.addEventListener('focusin', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('focusout', e => { const t = e.target.closest('.t'); if (t) scheduleClose(depthOf(t)); });
+document.addEventListener('click', e => {
+  const t = e.target.closest('.t');
+  if (t && t.dataset.t) { e.preventDefault(); openGlossary(t.dataset.t); return; }
+  if (!e.target.closest('.tip')) closeTips(1);
+});
+
+/* ---- glossary panel ---- */
+const kinds = [...new Set(Object.values(G).map(g => g.k))];
+let glKind = null, glHist = [];
+$('#glCats').innerHTML = `<button data-k="" class="on">all</button>` + kinds.map(k => `<button data-k="${k}">${k}</button>`).join('');
+function glRender() {
+  const q = $('#glSearch').value.trim().toLowerCase();
+  const rows = Object.entries(G).filter(([k, g]) => (!glKind || g.k === glKind) && (!q || g.t.toLowerCase().includes(q) || g.d.toLowerCase().includes(q)))
+    .sort((a, b) => a[1].t.localeCompare(b[1].t));
+  $('#glList').innerHTML = rows.map(([k, g]) => `<button data-k="${k}"><span>${esc(g.t)}</span><span class="k">${esc(g.k)}</span></button>`).join('') || `<p class="plain" style="font-size:14px">No term matches.</p>`;
+  $('#glHist').innerHTML = glHist.length > 1 ? `<button id="glBack">← back (B)</button><span>${glHist.slice(-4).map(k => esc(G[k].t)).join(' · ')}</span>` : '';
+}
+function glShow(k) {
+  const g = G[k]; if (!g) return;
+  if (glHist[glHist.length - 1] !== k) glHist.push(k);
+  const d = $('#glDetail'); d.hidden = false;
+  d.innerHTML = `<h5>${esc(g.t)}</h5><p>${md(g.d)}</p><div class="w">${esc(g.k)} · ${esc(g.w || '')}</div>`;
+  glRender();
+}
+function openGlossary(k) { $('#rail').classList.add('gl'); closeTips(1); if (k) glShow(k); else glRender(); $('#glSearch').focus(); }
+function closeGlossary() { $('#rail').classList.remove('gl'); }
+$('#glClose').addEventListener('click', closeGlossary);
+$('#glSearch').addEventListener('input', glRender);
+$('#glCats').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; glKind = b.dataset.k || null; document.querySelectorAll('#glCats button').forEach(x => x.classList.toggle('on', x === b)); glRender(); });
+$('#glList').addEventListener('click', e => { const b = e.target.closest('button'); if (b) glShow(b.dataset.k); });
+$('#glHist').addEventListener('click', e => { if (e.target.id === 'glBack') { glHist.pop(); const k = glHist.pop(); if (k) glShow(k); else { $('#glDetail').hidden = true; glRender(); } } });
+
+/* ---- theme: auto → day → night (WATCH register) ---- */
+const themes = ['', 'light', 'dark'];
+const themeLabel = { '': 'theme · auto', light: 'day · lit room', dark: 'night · dark room' };
+function applyTheme(t) { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; $('#themeBtn').textContent = themeLabel[t]; try { localStorage.setItem('sitrep_theme', t); } catch (e) {} }
+let theme = ''; try { theme = localStorage.getItem('sitrep_theme') || ''; } catch (e) {}
+if (!themes.includes(theme)) theme = '';
+applyTheme(theme);
+$('#themeBtn').addEventListener('click', () => { theme = themes[(themes.indexOf(theme) + 1) % themes.length]; applyTheme(theme); });
+
+/* ---- keys ---- */
+document.addEventListener('keydown', e => {
+  if (e.target.matches('input')) { if (e.key === 'Escape') { e.target.blur(); closeGlossary(); } return; }
+  if (e.key >= '0' && e.key <= '7' && !e.metaKey && !e.ctrlKey && !e.altKey) { go(+e.key); return; }
+  if (e.key === 'ArrowRight') { go(cur + 1); return; }
+  if (e.key === 'ArrowLeft') { go(cur - 1); return; }
+  if (e.key === 'Escape') { if (tips.length) closeTips(1); else closeGlossary(); return; }
+  if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
+  if (e.key === 'g' || e.key === 'G') { $('#rail').classList.contains('gl') ? closeGlossary() : openGlossary(); return; }
+  if (e.key === 't' || e.key === 'T') { $('#themeBtn').click(); return; }
+  if ((e.key === 'b' || e.key === 'B') && $('#rail').classList.contains('gl')) { const bb = $('#glBack'); if (bb) bb.click(); }
+});
+
+let start = 0; try { start = +(localStorage.getItem('sitrep_block') || 0) || 0; } catch (e) {}
+go(0); /* every board opens on Block 0: last session first */
+</script>
+
+</body>
+</html>

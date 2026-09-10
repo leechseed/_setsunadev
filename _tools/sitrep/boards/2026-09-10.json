@@ -13,13 +13,12 @@
     "tree": "clean at open",
     "stack": "empty",
     "agents": [
-      {"name": "Rebel Rhyder case", "from": "this session", "s": "hot"},
-      {"name": "Natasha Teen case", "from": "the original session", "s": "hot"}
+      {"name": "Rebel Rhyder case", "from": "this session", "s": "hot"}
     ],
     "stats": [
       {"k": "blocked on you", "v": "10", "s": "warn"},
       {"k": "main effort idle", "v": "6 d", "s": "bad"},
-      {"k": "agents in flight", "v": "2", "s": "hot"},
+      {"k": "agents in flight", "v": "1", "s": "hot"},
       {"k": "BOLOs hot", "v": "5", "s": "hot"},
       {"k": "landed since 9/8", "v": "14 files", "s": "good"}
     ],
@@ -34,7 +33,7 @@
         "last": "The 9/8 board, then you said \"let's work on this\" and pointed at the four oldest untouched projects.",
         "plan": "Retire what was dead, rule the medium for The Outliers, keep building ORANGE's reference set.",
         "you": "Ruled five words (\"retired retired nodes chain go series\"), green-lit the tag rail, widened the register to any sex, ordered the creator cases and the synthesis, parked it, ordered BOLO 45, and named the NASA girl.",
-        "next": "Two agents land their files. You rule R9. The main effort still has no clear."
+        "next": "Rebel Rhyder's case lands. You rule R9. The main effort still has no clear."
       },
       "items": [
         {"t": "**The true-ancients pass ruled in five words** — R6 and R8 retired, R7 the node's chain is canon, R9 [[outliers|The Outliers]] is a [[series|SERIES]].", "trunk": "BLACK/ORANGE", "s": "ruled", "when": "9/9"},
@@ -43,7 +42,7 @@
         {"t": "**[[darkroom|DARKROOM]] 1.1 built and swept** — tag rail, TAGGING and CAPTCHA modules, 16,496 judged, [[tier2|Tier 2]] probes live and winning all six axes ([[bolo44|BOLO 44]]).", "trunk": "ORANGE", "s": "done", "when": "9/10"},
         {"t": "**The [[register|performer register]] widened** — any sex, 138 names, first men on the P roster.", "trunk": "ORANGE", "s": "done", "when": "9/10 04:02"},
         {"t": "**Seven [[creator-case|creator cases]] plus the synthesis** — only Siswet and Variety Itsol self-tell; nobody ships an arc; [[r9|R9]] proposed as the next gate. Parked.", "trunk": "ORANGE", "s": "parked", "when": "9/10 05:26"},
-        {"t": "**[[bolo45|BOLO 45]] captured and boresighted** — Natasha Teen the referent, everything public by standing rule, the management recon ordered. The recon (171 URLs) and the voices catalog (22 voices) landed at 16:07 from the original session; this board had called them dead seven minutes too early. Duplicates stood down.", "trunk": "ORANGE", "s": "corrected", "when": "9/10 16:08"},
+        {"t": "**[[bolo45|BOLO 45]] captured and boresighted** — Natasha Teen the referent, everything public by standing rule, the management recon ordered. All three landed from the original session between 16:07 and 16:15 (the recon, 171 URLs · the voices catalog, 22 voices · the Natasha Teen case); this board had called them dead minutes too early. Duplicates stood down.", "trunk": "ORANGE", "s": "corrected", "when": "9/10 16:08"},
         {"t": "**You named the [[nasa-girl|NASA girl]]: Rebel Rhyder.** Both candidates struck and kept as receipts; her case is running and will add her register row.", "trunk": "ORANGE", "s": "ruled", "when": "9/10 evening"},
         {"t": "**[[the-box|The box]]:** Stash up, DARKROOM up. Tree clean. Detour stack empty.", "trunk": "OPERATOR", "s": "good", "when": "now"}
       ]
@@ -58,7 +57,7 @@
         "next": "Item 4 is ready the moment you say \"run the darkroom\": the 300-image calibration."
       },
       "items": [
-        {"n": 1, "t": "**[[bolo45|BOLO 45]] creator sweep + manager path** — ruled; recon and voices on disk; Natasha Teen in flight.", "next": "Your scope and block-name call on the [[explainer|explainer page]]; defaults run if silent.", "trunk": "ORANGE", "s": "hot", "when": "9/10 16:08"},
+        {"n": 1, "t": "**[[bolo45|BOLO 45]] creator sweep + manager path** — ruled; all three files on disk as of 16:15.", "next": "Your scope and block-name call on the [[explainer|explainer page]]; defaults run if silent.", "trunk": "ORANGE", "s": "hot", "when": "9/10 16:08"},
         {"n": 2, "t": "**The creator cases (BOLO 24 feed)** — seven nodes, the synthesis, the page. Parked.", "next": "[[r9|R9]] GO.", "trunk": "ORANGE", "s": "parked", "when": "9/10 05:26"},
         {"n": 3, "t": "**[[register|Performer register]] (BOLO 42)** — 138 names, 21 core; Rebel Rhyder's row incoming.", "next": "The X-handle pass, fire or leave · the seven dash Sex cells.", "trunk": "ORANGE", "s": "open", "when": "9/10 04:02"},
         {"n": 4, "t": "**[[darkroom|DARKROOM]] tagging ([[bolo44|BOLO 44]])** — Tier 2 live; the server is up.", "next": "The 300-image TAGGING calibration, then \"retrain\".", "trunk": "ORANGE", "s": "parked", "when": "9/10 02:38"},
@@ -135,14 +134,14 @@
       "id": "IV", "name": "The BOLO board", "kind": "board",
       "plain": "The watchlist. A BOLO is a tasking captured the moment you say it. Below it, PMCS: you as equipment.",
       "strand": {
-        "last": "BOLOs 43 and 44 delivered; 45 captured, boresighted, and two-thirds landed.",
+        "last": "BOLOs 43 and 44 delivered; 45 captured, boresighted, and landed.",
         "plan": "Work the hot five. Everything held stays held until its ruling in Block V.",
         "you": "You opened BOLO 45 and ruled its second transmission. Nothing on PMCS moved.",
         "next": "Eleven done BOLOs still sit in the active table; moving them to Done is housekeeping I owe."
       },
       "groups": [
         {"label": "Hot · moving or owed this week", "items": [
-          {"t": "**45** [[bolo45|creator sweep + manager path]] — two files down, one in flight.", "trunk": "ORANGE", "s": "hot"},
+          {"t": "**45** [[bolo45|creator sweep + manager path]] — all three files down; your two calls open.", "trunk": "ORANGE", "s": "hot"},
           {"t": "**24** [[bolo24|the zero-budget launch]] — design pass staged; [[d9|D-9]] undated.", "trunk": "ORANGE", "s": "hot"},
           {"t": "**27 / 28** [[ultra-dark|ULTRA DARK]] + [[stash|Stash]] — [[block-c|Block C]] \"marked\", the main effort.", "trunk": "ORANGE", "s": "bad"},
           {"t": "**44** [[bolo44|the tag rail]] — the 300-image calibration next.", "trunk": "ORANGE", "s": "hot"},
