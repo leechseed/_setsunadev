@@ -168,7 +168,7 @@ Contest / award line: **none found.** Pornhub Awards nominee lists, AVN/XBIZ/Gra
 
 **Tooling note:** the Wayback `id_` fetches for Pornhub failed intermittently and needed up to four retries per stamp; FanHub captures came back gzip-compressed. Live pornhub.com redirects to the homepage from this box; onlyfans.com returns a 17 KB JS shell.
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic — the keyword-named second channel.** The thing worth studying is that Gape Game is not a brand; it is a *search term with a verified badge on it*. The operator already had a persona channel (KOZZYPRODUCTION, 3.5K subscribers by Oct 2021) and, instead of pushing more uploads into it, opened a second verified page whose name is the category buyers type, filled it with ~30 clips in three months, and pointed it at the same OnlyFans, X, and PayPal. Four years later the keyword page has 27.4K subscribers and 6.25M views, the persona page 39K and 14.2M, and the two together hold a rank position in the gay segment that neither would hold alone — the keyword page catches category search, the persona page catches the name, and the paid destination is single. Everything else in the record is the absence of everything else: no press, no socials worth counting, no storefront, a 16-word bio unchanged for thirty months. The mechanic is *duplicate the free surface, not the paid one.*
 

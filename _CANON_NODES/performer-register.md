@@ -135,7 +135,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Cherry Kiss | P | F | 1 | J | 2023 | 2 | 1 |  | — |
 | Emiru | E | F | 1 | B | 2023 | — | — | influence order #10 | — |
 | Emma Langevin | E | F | 1 | B | 2023 | — | — | influence order #9 | — |
-| Gape Game | C | — | 1 | X | 2023 | — | — | S++ tier channel; proven success in the space | — |
+| Gape Game | C | M | 1 | X | 2023 | — | — | S++ tier channel; proven success in the space; 9/10 study → verified 9/10 — the keyword-named second Pornhub channel of solo creator "Kozzy" (sibling KOZZYPRODUCTION 39K/14.2M); 3.3K→27.4K subs, 119K→6.25M views 2022–26, gay-segment rank ~250–380; OF eug_xxl, X 4.9K; no press, no earnings; durable, not S++ by rank — node [creator-case-gape-game](creator-case-gape-game.md) | @KozzyXl |
 | Hannah OwO | E | F | 1 | B | 2023 | — | — | chill bro next door; influence order #7 | — |
 | Harlow Harrison | P | F | 1 | B | 2023 | 1 | 0 |  | — |
 | Haruhi | E | F | 1 | B | 2023 | — | — | psychotic dork | — |
