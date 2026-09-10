@@ -4,7 +4,7 @@ entity_id: performer_register
 kind: register — revealed-preference data (taste), not canon prose
 ip: cross-IP (intertext input for the character system; reference layer for Ultrasin)
 trunk: ORANGE (feeds BLACK at intertext and girl-gen)
-status: MERGED 2026-09-08 — nine lists unified on BOLO 42 · SCOPE WIDENED 2026-09-09 — any performer Papi admires, any sex; adult performer is one lane of it, not the register; Sex column added; names are Papi's own picks, recurrence-ranked; handles and morphology cells are staged passes
+status: MERGED 2026-09-08 — nine lists unified on BOLO 42 · SCOPE WIDENED 2026-09-09 — any performer Papi admires, any sex; adult performer is one lane of it, not the register; Sex column added; names are Papi's own picks, recurrence-ranked; handles and morphology cells are staged passes · 2026-09-10 two solo creators added by voice (AlexBreeCooper · Kirenes), C lane, read as BOLO 24 business cases
 sources:
   - "A — CULT OF ADLAW §Favorite Adult Film Stars (Logseq) (2022)"
   - "B — 030002 porn stars that i love (Obsidian catalog, Bloodwork) (2023)"
@@ -15,22 +15,22 @@ sources:
   - "H — Holly Randall podcast · who to listen to still (_onlyfans_dir) (n.d.)"
   - "P — who to get a poster of (_onlyfans_dir) (n.d.)"
   - "M — most influential porn stars 2025 (SELACIOUS build) (2025)"
-  - "S — spoken by Papi, 2026-09-08 → 09-09 — live additions (2026)"
+  - "S — spoken by Papi, 2026-09-08 → 09-10 — live additions (2026)"
 links:
   - "[[film-register]]"
   - "[[L2b-morphology-gluteal]]"
   - "[[ULTRASIN-physique-watchlist]]"
 captured: 2026-09-08
-updated: 2026-09-09
+updated: 2026-09-10
 ---
 
 # THE PERFORMER REGISTER
 
 **What it is.** Every performer Papi has written down as admired — adult performers, e-girls, creators, idols, whoever comes next — merged from nine lists spanning 2022 → 2025 plus the names Papi speaks into it (source S) and deduplicated on name. **Scope ruled 9/9:** this is not a female-adult-star list. Adult performer is one lane of the register, and any sex rides in the same table on the same ranking; the men were already in it (the creator case studies, most of the gooner lane) and are now in it on purpose. Ranked by how many lists a name appears on: recurrence is the ranking Papi never wrote down. Sibling of the [film register](film-register.md), same merge-and-core method.
 
-**Counts.** 136 names · **21 in the stable core** (on four or more lists) · lanes: 106 performers · 17 e-girls · 12 creators · 1 other · sex: 120 F · 5 M · 2 T · 1 NB · 1 pair · 7 unestablished · 88 of the names exist as performers in Stash.
+**Counts.** 138 names · **21 in the stable core** (on four or more lists) · lanes: 106 performers · 17 e-girls · 14 creators · 1 other · sex: 121 F · 5 M · 2 T · 1 NB · 1 pair · 8 unestablished · 89 of the names exist as performers in Stash.
 
-**Lanes.** **P** adult performer (the admired roster, any sex) · **E** e-girl (the 2023 "Greatest Egirls of All Time" roster, influence order noted) · **C** creator case study (2023 journal: Pornhub channels read as business cases, Papi's notes verbatim) · **O** other performer (idol, dancer, athlete — the lane the widened scope grows into; Lisa Manoban was already here).
+**Lanes.** **P** adult performer (the admired roster, any sex) · **E** e-girl (the 2023 "Greatest Egirls of All Time" roster, influence order noted) · **C** creator case study (2023 journal: Pornhub channels read as business cases, Papi's notes verbatim; widened 9/10 to the solo creators Papi names as BOLO 24 models — how they started, how they monetize) · **O** other performer (idol, dancer, athlete — the lane the widened scope grows into; Lisa Manoban was already here).
 
 **Sex.** **F** · **M** · **T** trans woman · **NB** non-binary (Stash's word, Lola Faye) · **F+M** a couple's channel · **—** not established. Filled from Stash's gender field where the name is in Stash (the StashDB identify pass), from the source lists' own words otherwise; a dash is a staged call, not a guess. Added 9/9 when the scope widened. It is a filter, never a ranking.
 
@@ -188,6 +188,8 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Variety Itsol | P | T | 1 | S | 2026 | 8 | 6 | spoken 9/8; was the gooner lane's top trans name (6 five-star scenes), promoted to the roster by Papi's word | — |
 | **Cream Factory** ★ | P | M | 1 | S | 2026 | — | — | spoken 9/9: "a big booty fit white bottom that takes black dick — very inspirational"; the first man on the P roster by Papi's word; not in Stash under name, alias, tag, studio or title; male gluteal reference for BOLO 23 / L2b | — |
 | **BBXL** ★ | P | M | 1 | S | 2026 | — | — | spoken 9/9 as "BBXL", handle supplied by Papi (the X column's first filled cell); second man on the P roster; not in Stash under name, alias, tag, studio, title or URL — one unrated scene titled "Boybutt XXL compilation" (Stash id 20364) is a possible match, unattributed until Papi says so; X profile unreadable from the session (402), the data pull = the BOLO 13 pattern (gallery-dl + Firefox cookies) | @BButtXXL |
+| AlexBreeCooper | C | F | 1 | S | 2026 | 64 | 0 | spoken 9/10, spelled A-L-E-X-B-R-E-E-C-O-O-P-E-R; solo creator who started from the bottom — read as a BOLO 24 business case (origin + monetization research banked at `_PRIVATE/BOLO-24-solo-creator-cases.md`); in Stash as AlexBreeCooper (id 1240), 64 attributed scenes, none rated; the `AlexBreeCooper` folder holds 256 files, 192 still unattributed | — |
+| Kirenes | C | — | 1 | S | 2026 | — | — | spoken 9/10, spelled K-I-R-E-N-E-S, a Fansly creator (fansly.com/kirenes); solo creator, BOLO 24 business case, same research file; not a Stash performer — 159 unattributed, unrated files in the `.2026\Fansly - Kirenes (Video Pack)` folder, attribution staged | — |
 
 ## The gooner lane (Stash, watched not listed)
 
@@ -218,4 +220,4 @@ Top performers by five-star scene count who are on none of the lists. 322 of 2,4
 
 ---
 
-*Next uses:* the handle pass (one sweep, physique-watchlist columns) · BOLO 23 / L2b morphology cells on Papi's calls — **the male side of the physique set now has a seed (Cream Factory)** · the dash cells in the Sex column, Papi's calls · the taxonomy engine's attitude archetypes (Baddie is already one) keyed to the core · Modern Poetics P8–P10 over the core when a persona question needs data (BOLO 24) · the intertext pull for the character system, which is what the 2023 heading asked for.
+*Next uses:* the handle pass (one sweep, physique-watchlist columns; AlexBreeCooper and Kirenes ride in with whatever the 9/10 research verified) · BOLO 23 / L2b morphology cells on Papi's calls — **the male side of the physique set now has a seed (Cream Factory)** · the dash cells in the Sex column, Papi's calls · the taxonomy engine's attitude archetypes (Baddie is already one) keyed to the core · Modern Poetics P8–P10 over the core when a persona question needs data (BOLO 24) · the intertext pull for the character system, which is what the 2023 heading asked for.
