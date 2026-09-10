@@ -17,4 +17,4 @@ open-decision: none
 - **SOP.md §1** — full comms-table row, coded 2026-09-01: launch `_PRIVATE/taxonomy_engine/darkroom_server.py` (≡ the `DARKROOM.cmd` launcher); server opens the browser itself; single-instance guard makes repeat calls safe.
 - **Session memory** — cross-session trigger, works in any future session.
 
-Nothing left to promote — clears on next sweep.
+Nothing left to promote — clears on next RTB.

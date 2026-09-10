@@ -1,7 +1,7 @@
 ---
 title: The Creator Cases — seven studies, the synthesis, the ruling queue (BOLO 24 feed)
 type: parked work
-status: parked (Oscar Mike 2026-09-10) — delivered end to end; resumes on the ruling queue, R9 GO, or "sweep"
+status: parked (Oscar Mike 2026-09-10) — delivered end to end; resumes on the ruling queue, R9 GO, or "RTB"
 updated: 2026-09-10
 trunk: ORANGE (Ultrasin — BOLO 24 §3 reference set; the Lab venture's cam question)
 pointer-only: the synthesis and the venture read-across live in `_PRIVATE/` (gitignored); the seven case nodes are public canon in `_CANON_NODES/`
