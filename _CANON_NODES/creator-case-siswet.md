@@ -4,7 +4,7 @@ entity_id: creator_case_siswet
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; the niche-craft career model — "the Siswet lane" — in the lab-venture card; feeds the performer register)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); the one case with a real self-told record (Dutch media 2019–2026); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); the one case with a real self-told record (Dutch media 2019–2026); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Siswet · P · A · 2022 (on the register since CULT OF ADLAW 2022)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 correction: "BERLIN-PIVOT.md calls her the German-systematization case — she is Dutch (Achterhoek, Doetinchem), by her own bios and every press piece. The systematization read may stand; the nationality does not."
@@ -211,7 +211,7 @@ The tier ladder ($4.99 entry → $499 "boyfriend" / custom tiers) is the cleares
 
 **Tooling note for the next run:** WebFetch is hard-blocked on web.archive.org and manyvids.com, but `curl` to Wayback works (use the `id_` raw flag and `--compressed` for 2023+ snapshots; the archive intermittently returns "Temporarily Offline"). Medium and YouTube watch pages fetch via curl with a browser UA. Fansly `profileBadges` carry the leaderboard badges; avatar/banner `createdAt` are in seconds, not ms.
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** Daily presence as the moat, with a whale ladder built on top of it. Her own line, 2021: "I was literally online every day, so people couldn't go to another dealer." The funnel is a free cam room (linked from her Pornhub about text since 2018) → tube volume (1,000+ uploads) → paid subscriptions on eight-plus platforms → a tier ladder from $4.99 to $499 (customs, coaching, "no PPV", priority tiers) → products with her name on them (a lube and two toys made by manufacturers who put her name on the product; a rival cites one by name in her own video). Awards sit on every bio as credentials; the rights stay hers because she self-produces rather than shooting for studios (her stated reason, Regio8 2021); the home market's mainstream press has carried her story four times (2019, 2021, 2021, 2026). Thirteen years, and the only first-hand earnings figures in the set.
 

@@ -4,7 +4,7 @@ entity_id: creator_case_mercedes_carrera
 kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — HIGH confidence on identity as "the former aerospace engineer"; NOT confirmed by Papi; NOT on the performer register until he rules. The alternate candidate is [[creator-case-spaceghost]]. · §10 GOUGE added 9/10 (provisional name)
+status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — HIGH confidence on identity as "the former aerospace engineer"; NOT confirmed by Papi; NOT on the performer register until he rules. The alternate candidate is [[creator-case-spaceghost]]. · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 legal_note: "Arrested Feb 2019; pleaded not guilty; in pretrial custody with no verdict as of 2026-09-10. Charged, not convicted. Reported here as press reported it, nothing more."
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
@@ -149,7 +149,7 @@ updated: 2026-09-10
 
 Method: Stage 1 = 18 searches; Stage 2 = 9 searches, ~30 fetch attempts (about 12 succeeded; Daily Caller, IAFD, Podchaser, Podcast Addict 403; web.archive.org, archive.ph, pornhub.com blocked in this run).
 
-## 10 · GOUGE
+## 10 · TTP
 
 Struck 9/10 as the NASA-girl candidate; kept as a receipt. The gouge still stands.
 

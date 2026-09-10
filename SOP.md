@@ -164,6 +164,7 @@ A session that answers "sit rep" without all five has not answered it.
 | Braddy (a mood / attitude context) | **bratty** — spelled out by Papi 9/9 |
 | desk training · death training (a UI / design context) | **Death Stranding** (the ruled skin: CK3 UX × Death Stranding UI) |
 | CK three · CK-3 | **CK3** (Crusader Kings III; the information-architecture study) |
+| Frango · fragile order | **FRAGO** (fragmentary order; the benched name for the BOLO status page) |
 | Rebel Writer · Rebel Rider | **Rebel Rhyder** (performer — "the NASA girl", RULED 9/10; spelled out by Papi r-e-b-e-l r-h-y-d-e-r) |
 | the burning core · burning core (in a naming context) | **the Corps** — SOP §6, the lexicon bootstrap; "derivative of the SOP of the Corps" = a Marine-vocabulary name |
 | gauge · gouge (in a creator-case context) | **GOUGE** — the lessons block (section 10), provisional 9/10 |

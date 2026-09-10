@@ -4,7 +4,7 @@ entity_id: creator_case_natasha_teen
 kind: creator case study — business-side research on a public performer/creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane P; first roster/agency case)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (the starred P-lane row; his belief that she went creator-first and then built a network for other creators was the verification target); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
+status: DELIVERED 2026-09-10 — researched on Papi's order (the starred P-lane row; his belief that she went creator-first and then built a network for other creators was the verification target); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Natasha Teen ★ · P · F · 3 lists (I·K·M) · Stash 21 scenes / 6 five-star"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 pronouns: "no pronoun statement in any bio; X bio uses the feminine 'ACTRIZ'. She/her per the register's sex column."
@@ -215,7 +215,7 @@ Awards: **IAFD Spank Bank Awards 2020 — "Relentlessly Insatiable," winner** (f
 
 **Tooling note:** Wayback's CDX endpoint 504'd repeatedly on the Pornhub URL and only answered with `limit=300`; the `id_` raw snapshots came back gzip-compressed. The legacy twitter.com snapshots (2019–2021) carry the profile JSON inline — note that one of them also exposes a contact e-mail in the bio, which is deliberately not reproduced here. natashateen.studio fails DNS from every route (direct, TLS-relaxed, read proxy).
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** Brand-to-studio conversion, with distribution borrowed. The single thing worth studying is how she turned a performer brand that already had ~135K followers and a verified tube profile (2019) into the *name* of a studio-plus-agency (Nov 2020), then put the studio's output through channels she did not have to build: an aggregator-studio that assigns per-scene codes (AnalVids/LegalPorno, NT010 → NT082), a free tube channel with a paid tier (XVideos, 455 free + 474 RED), and a white-label fansite (Sheer). The roster's scenes carry her name in the title string, so every release the studio makes markets her brand, and her own on-camera volume (49 credits in 2021 → 8 in 2025) could fall without the audience falling — the studio channel added +91K subscribers and +269M views in the three years her personal output halved. The two-principal split (partner: direction / production / talent hunting; her: "vocational training") is stated in one sentence on Sheer, which is the closest thing to a business plan the whole record contains.
 

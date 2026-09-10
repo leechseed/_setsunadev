@@ -4,7 +4,7 @@ entity_id: creator_case_lexa_lite
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); half-blocked (Pornhub side unreadable from the session); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); half-blocked (Pornhub side unreadable from the session); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Lexa Lite · C · M·X · 2023 (on the register since the 2023 creator case studies)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -98,7 +98,7 @@ Blocked/failed: pornhub.com/model/lexalite · modelhub.com/lexalite (FL age-gate
 Collisions excluded: x.com/lexalite (Joe Gallegos) · alpadvantage.com/lexalite (lighting) · tiktok.com/@youcanrelatetosasha/video/7432068117951417643
 Method: 20 searches, ~35 fetch attempts, 3 primary sources succeeded.
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** A duration split as the funnel. The public wall carries sub-minute teasers (8 to 46 seconds), a pair of clips around two and a half minutes, and a few long pieces; the "Full videos" wall sits behind a $69 tier at 4.3× the $15.99 entry. That is the 2023 note — short one-to-two-minute uploads on Pornhub, re-cut into compilations — seen again on a second platform three years later, which is the strongest thing this thin record proves. Around it: one handle stacked across Pornhub → X → Fansly → OnlyFans so tube search resolves to the paid page by name, a one-use $6.99 first-month promo with a dated window, a 25/35% multi-month ladder, and roughly one post a week with a niche hashtag set in every caption. The yield is the other half of the lesson: 4,385 Fansly followers after five years.
 

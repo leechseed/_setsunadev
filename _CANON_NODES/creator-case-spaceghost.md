@@ -4,7 +4,7 @@ entity_id: creator_case_spaceghost
 kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom." · §10 GOUGE added 9/10 (provisional name)
+status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom." · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
   - "[[performer-register]]"
@@ -152,7 +152,7 @@ updated: 2026-09-10
 
 Method: 16 searches, ~35 fetch attempts (~16 returned content; x.com, fxtwitter status bodies, vxtwitter, oEmbed, Wayback, Leaguepedia, IMDb, OneLike bodies blocked this run).
 
-## 11 · GOUGE
+## 11 · TTP
 
 Struck 9/10 as the NASA-girl candidate; kept as a receipt. The gouge still stands.
 

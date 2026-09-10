@@ -4,7 +4,7 @@ entity_id: creator_case_alexbreecooper
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — AlexBreeCooper · C · S · 2026"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -157,7 +157,7 @@ Wayback, all as https://web.archive.org/web/<stamp>/<url>: 20210620023514 onlyfa
 Low-confidence: instagram.com/alexbreecooper (snippet ~4,056) · aajivanbiography.com/alexbreecooper (**wrong person — the podcaster; disregard**) · tiktok.com/discover/alex-bree-cooper-monster-can · tiktok.com/discover/alexbreecooper
 Method: ~34 searches (the podcaster swamps every query); Pornhub, OnlyFans, X, Reddit, Beacons, trackers blocked to WebFetch → public JSON endpoints + raw curl + Wayback.
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** A written fairness rule as the pitch, priced at the top of the market. The subscription runs $129.90–150 a month — roughly ten times a typical fansite sub — and what justifies it is not the catalog but a policy post from December 2021, still linked from the bio: no PPV while subscribed, "you'll never see a lock or price on any posts" if the sub is active. The only difference between the two tiers is chat with "the real Alex," $20 more. Everything else is discipline around that rule: one hook repeated verbatim on every platform, free tubes carrying teasers with a single CTA ("message me for the full video"), a catalog organized into 39 named walls, and five toy-brand affiliates so each unboxing is content, ad, and search hook at once. Built part-time around a full-time job over five years; Fansly Top 100 by the end of 2024, three years in; no interview anywhere — the whole business is legible from platform data alone.
 

@@ -4,7 +4,7 @@ entity_id: creator_case_kirenes
 kind: creator case study (light) — business-side lookup on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10, spelled K-I-R-E-N-E-S); light scope; every claim sourced · §10 GOUGE added 9/10 (provisional name)
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10, spelled K-I-R-E-N-E-S); light scope; every claim sourced · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Kirenes · C · S · 2026"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -86,7 +86,7 @@ Verified by fetch: https://apiv3.fansly.com/api/v1/account?usernames=kirenes (We
 Search-snippet only: https://x.com/kirenes?lang=en-GB ("Panos") · https://twitter.com/Kireneslt · https://x.com/kirinez · https://www.tiktok.com/tag/kirenes · price-unit docs: https://apifansly.com/pricing · https://www.fansly-api.com/pricing · https://rapidapi.com/apimirai/api/fansly-api · https://apify.com/powerai/fansly-full-profile-scraper
 Searches run (13): `kirenes fansly` · `"kirenes" creator` · `kirenez OR kirines OR kireness fansly` · `kirenes twitter OR linktree OR allmylinks` · `"kirenes" reddit` · `"kirenes" onlyfans OR pornhub OR manyvids OR "fansly.com/kirenes"` · site-restricted tracker search · `"kirenes" site:x.com OR site:twitter.com` · link-hub site search · `"kirenes" site:reddit.com` · `"kirenes" fansly followers tier …` · `"kirenes" site:pornhub.com OR site:manyvids.com OR site:instagram.com OR site:tiktok.com` · `"@kirenes" fansly OR "fansly.com/kirenes"`
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** The bare Fansly ladder — three stacked tiers whose benefit labels are the only copy the account has. No display name, no socials, no link hub, no off-platform funnel: just $5 → $7 → $16 for thirty days each, the video library gated at the top, 51 PPV bundles on the timeline, and a single 50%-off promo on the top tier in the first week (April 2024). On that alone the account reached 13,692 followers in about 29 months — roughly 470 a month — from in-platform discovery and volume (316 videos, 106 images). It is the set's control case: what a fansite account yields with nothing but a price stack and a library, and (a low-confidence read) what a lightly-managed or agency-run account looks like from outside.
 

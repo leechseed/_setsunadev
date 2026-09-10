@@ -4,7 +4,7 @@ entity_id: creator_case_variety_itsol
 kind: creator case study — business-side research on a public performer/creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane P)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order ("add another one to the list", spoken 9/10); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
+status: DELIVERED 2026-09-10 — researched on Papi's order ("add another one to the list", spoken 9/10); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Variety Itsol · P · S · 2026 (spoken 9/8; the roster's top five-star name after the 9/10 Stash recount, 9)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 pronouns: "her own bios: she/her (Fansly) · she/they (X). She/her used here."
@@ -183,7 +183,7 @@ Contest wins: none found. Pornhub Awards / TEA / XBIZ / AVN / Fleshbot nominee l
 
 **Tooling note:** WebFetch is blocked on web.archive.org and clips4sale.com, but plain `curl` works for both (Wayback `id_` raw snapshots come back gzip-compressed — decompress before grepping; the archive was intermittently "Temporarily Offline").
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** Studio attachment before ten uploads. Her first Pornhub bio (December 2022: 8 videos, 628 subscribers) already names Grooby's Omar Wax as her producer, and the studio relationship did the early work — a "Featured in" cross-link on the tube, promo posts from the studio's X account, Verified Pornstar status in about ten months, an AVN Fresh Faces slot in about eighteen — while she stayed an independent creator selling OnlyFans at $5.99 (2022), Fansly at $11.99, and Clips4Sale clips at $3.99–24.99. Pornhub went 628 → 65.7K subscribers in 3.7 years. The press ladder ran in order: a small YouTube show (2023), trade press (2024), a 1h47m podcast (2025), scene news (2025). Around it: 1.2 uploads a week in year one, then a third of that; a recurring collab partner so the clip catalog reads as a series; a SFW gaming stream for the audience that will not follow an 18+ account.
 
