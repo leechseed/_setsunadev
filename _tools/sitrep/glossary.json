@@ -475,7 +475,7 @@
   "t": "status on BOLO N",
   "k": "proword",
   "st": "ruled",
-  "d": "The plain-speech form of [[frago|FRAGO on N]]: \"give me the status on BOLO 45\" fires the same page. Dictation garble \"Frango\" reads as FRAGO.",
+  "d": "The plain-speech form of [[opord|OPORD N]]: \"give me the status on BOLO 45\" shows that BOLO's page. Dictation garble \"Frango\" reads as FRAGO, which is the update, not the page.",
   "w": "SOP.md §1 · §8"
  },
  "recon": {
@@ -559,7 +559,14 @@
   "t": "FRAGO",
   "k": "proword",
   "st": "ruled",
-  "d": "Fragmentary order. RULED 9/10 (\"let's move ahead on FRAGO, I like it\") as the name of the BOLO status page: \"FRAGO on 45\" or \"give me the status on BOLO 45\" builds and publishes that BOLO's update — the [[smeac|five-paragraph order]] with the next action on top, governed by [[speed]], [[focus]] and [[boldness]]. A FRAGO changes only what changed; everything not mentioned stands as ordered. Retired bench: STATUS · THE 411 · OPORD.",
+  "d": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Papi's clarification 9/10 late (\"FRAGO is just the update after we've made the BOLO status page\"). \"FRAGO 45\" folds what changed since the last build into [[opord|OPORD 45]] and republishes; only what changed, everything not mentioned stands as ordered; the page's Log keeps every FRAGO.",
   "w": "SOP.md §0–1 · _tools/bolostatus/"
+ },
+ "opord": {
+  "t": "OPORD N",
+  "k": "proword",
+  "st": "provisional",
+  "d": "Operations order: the standing status page for BOLO N — the [[smeac|five-paragraph order]] with the next action on top, plus the log. Built once, then changed by [[frago|FRAGOs]]. \"OPORD 45\" or \"status on BOLO 45\" shows it. Un-retired from the 9/10 bench on Papi's clarification; provisional until he confirms the word.",
+  "w": "SOP.md §1 · _tools/bolostatus/"
  }
 }

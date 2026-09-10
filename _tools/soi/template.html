@@ -1,0 +1,379 @@
+<title>SOI</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* ---- the BRIEF colorway (ruled 2026-09-10): the creator-cases explainer palette, the default for every internal board ---- */
+  :root {
+    --bg: #EEF0F3; --panel: #FFFFFF; --panel-2: #E4E7EC;
+    --ink: #14171C; --ink-2: #4B5260; --ink-3: #7A8291;
+    --accent: #FF5A1F; --accent-ink: #C23C0A; --accent-soft: #FFE6DB;
+    --link: #C23C0A; --good: #1F7A4D; --good-soft: #DDF3E6; --warn: #6B5A2A; --warn-soft: #F3E7C9; --bad: #A8323E; --bad-soft: #F8DEE1; --help: #4B5260;
+    --mark: #F3E7C9;
+    --line: #CFD4DC; --line-2: #B4BBC6;
+    --grid: color-mix(in srgb, var(--ink) 6%, transparent);
+    --shadow: 0 1px 2px rgba(20,23,28,.06), 0 8px 24px rgba(20,23,28,.10);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+      --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+      --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+      --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
+      --mark: #3A3320;
+      --line: #2B313B; --line-2: #3C4452;
+      --grid: color-mix(in srgb, var(--ink) 8%, transparent);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
+    --mark: #3A3320;
+    --line: #2B313B; --line-2: #3C4452;
+    --grid: color-mix(in srgb, var(--ink) 8%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); background-image: radial-gradient(var(--grid) 1px, transparent 1px); background-size: 22px 22px; font-family: var(--body); font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow: hidden; }
+  a { color: var(--link); }
+  strong { font-weight: 700; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  button:focus-visible, .t:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ::selection { background: var(--mark); }
+  .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+  .t { color: var(--link); text-decoration: none; border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px; border: 1px solid currentColor; line-height: 1.5; white-space: nowrap; }
+  .st-ruled { color: var(--good); } .st-provisional { color: var(--warn); } .st-benched { color: var(--ink-3); border-style: dashed; } .st-retired { color: var(--bad); text-decoration: line-through; text-decoration-color: currentColor; }
+
+  /* ---- frame ---- */
+  .app { height: 100vh; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 250px minmax(0, 1fr) 330px; grid-template-areas: "head head head" "ol panel rail" "foot foot foot"; }
+  header.head { grid-area: head; display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 80%, transparent); backdrop-filter: blur(6px); }
+  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; }
+  .brand { display: flex; flex-direction: column; justify-content: center; padding: 10px 18px; border-right: 1px solid var(--line); min-width: 250px; }
+  .brand h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; letter-spacing: .04em; text-transform: uppercase; }
+  .brand h1 i { display: inline-block; width: 10px; height: 10px; background: var(--accent); margin-right: 8px; transform: translateY(-3px); }
+  .brand .sub { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); margin-top: 4px; letter-spacing: .04em; }
+  .ident { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); flex: 1; }
+  .ident > div { padding: 8px 16px; border-right: 1px solid var(--line); min-width: 0; }
+  .ident b { display: block; font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.1; }
+  .ident span { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: 3px; }
+  .ident p { margin: 2px 0 0; font-size: 13px; color: var(--ink-2); line-height: 1.35; }
+  .box { display: flex; align-items: center; gap: 12px; padding: 0 18px; border-left: 1px solid var(--line); }
+  .theme, .back { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; white-space: nowrap; }
+  .theme:hover, .back:hover { border-color: var(--accent); color: var(--ink); }
+  .stats { display: flex; flex: 1 0 100%; border-top: 1px solid var(--line); }
+  .stat { display: flex; align-items: baseline; gap: 8px; padding: 6px 16px; border-right: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+  .stat b { font-family: var(--display); font-weight: 800; font-size: 20px; color: var(--ink); }
+  .stat.cls { margin-left: auto; border-right: 0; color: var(--ink-3); font-size: 11px; letter-spacing: .06em; }
+
+  /* ---- left rail: sections + mode ---- */
+  nav.ol { grid-area: ol; border-right: 1px solid var(--line-2); padding: 18px 0; overflow-y: auto; background: color-mix(in srgb, var(--panel) 55%, transparent); position: relative; }
+  nav.ol .lbl { padding: 0 18px 10px; display: block; }
+  .mode { display: grid; grid-template-columns: 1fr 1fr; margin: 0 18px 14px; border: 1px solid var(--line-2); }
+  .mode button { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 7px 0; color: var(--ink-2); }
+  .mode button.on { background: var(--ink); color: var(--bg); }
+  .ol-row { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 8px 14px 8px 18px; color: var(--ink-2); border-left: 3px solid transparent; }
+  .ol-row .n { font-family: var(--display); font-weight: 800; font-size: 22px; color: var(--ink-3); text-align: right; }
+  .ol-row .name { font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.05; text-transform: uppercase; }
+  .ol-row .cnt { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+  .ol-row:hover { color: var(--ink); background: color-mix(in srgb, var(--panel-2) 60%, transparent); }
+  .ol-row.on { color: var(--ink); background: var(--panel-2); border-left-color: var(--accent); }
+  .ol-row.on .n { color: var(--accent); }
+  nav.ol .foot { padding: 16px 18px 0; font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-height: 1.7; }
+
+  /* ---- panel ---- */
+  main.panel { grid-area: panel; overflow-y: auto; padding: 22px 34px 40px; position: relative; scroll-behavior: smooth; }
+  .tools { position: sticky; top: -22px; z-index: 5; background: var(--bg); padding: 8px 0 10px; margin: -8px 0 6px; border-bottom: 1px solid var(--line-2); }
+  .search { display: flex; gap: 10px; align-items: center; }
+  .search input { flex: 1; max-width: 560px; font: 17px var(--body); padding: 10px 14px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); }
+  .search .cnt { font-family: var(--mono); font-size: 12px; color: var(--ink-3); white-space: nowrap; }
+  .az { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 10px; }
+  .az button { font-family: var(--display); font-weight: 700; font-size: 17px; width: 30px; height: 30px; border: 1px solid var(--line); color: var(--ink-2); }
+  .az button:hover { border-color: var(--accent); color: var(--ink); }
+  .az button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .az button:disabled { color: var(--line-2); border-color: var(--line); cursor: default; }
+  .sec { margin-top: 26px; scroll-margin-top: 110px; }
+  .sec .sh { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 6px; margin-bottom: 4px; }
+  .sec .sh .sn { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; color: var(--accent); }
+  .sec .sh h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; }
+  .sec .sh .cnt { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .sec p.plain { margin: 6px 0 8px; font-size: 15.5px; color: var(--ink-2); max-width: 70ch; }
+  .letter { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: 1; color: var(--ink-3); margin: 26px 0 4px; border-bottom: 2px solid var(--ink); scroll-margin-top: 110px; }
+  .ent { display: grid; grid-template-columns: 62px 1fr; gap: 4px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .ent .no { font-family: var(--mono); font-size: 12px; color: var(--ink-3); padding-top: 8px; }
+  .ent .tw { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .ent .tw button.term { font-family: var(--display); font-weight: 700; font-size: 25px; line-height: 1; text-transform: uppercase; letter-spacing: .01em; text-align: left; color: var(--ink); padding: 0; border-bottom: 2px solid transparent; }
+  .ent .tw button.term:hover { border-bottom-color: var(--accent); }
+  .ent .tw .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .ent p { margin: 4px 0 0; font-size: 15.5px; line-height: 1.45; max-width: 78ch; }
+  .ent .w { margin-top: 5px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .ent.hit .tw button.term { background: var(--mark); }
+  .ent.retired .tw button.term { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--bad); }
+  table.cb { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 15px; }
+  table.cb th { text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line-2); }
+  table.cb td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.cb td.h { font-family: var(--mono); font-size: 13px; color: var(--ink-2); }
+  .tblwrap { overflow-x: auto; }
+  .chg { display: grid; grid-template-columns: 120px 1fr; gap: 14px; padding: 12px 0 12px 22px; border-bottom: 1px solid var(--line); border-left: 3px solid var(--line); position: relative; font-size: 15.5px; }
+  .chg::before { content: ""; position: absolute; left: -8px; top: 19px; width: 11px; height: 11px; background: var(--accent); border: 3px solid var(--bg); box-sizing: content-box; }
+  .chg .d { font-family: var(--mono); font-size: 12px; color: var(--ink-2); padding-top: 3px; }
+  .empty { padding: 30px 0; color: var(--ink-3); font-size: 15px; }
+
+  /* ---- rail: the term card ---- */
+  aside.rail { grid-area: rail; border-left: 1px solid var(--line-2); overflow-y: auto; padding: 20px 20px 24px; background: color-mix(in srgb, var(--panel) 55%, transparent); display: flex; flex-direction: column; gap: 18px; }
+  .rail h4 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: .02em; }
+  .ctx { display: grid; gap: 14px; }
+  .ctx .c { padding-left: 12px; border-left: 2px solid var(--line-2); }
+  .ctx .c .lbl { display: block; margin-bottom: 4px; color: var(--accent-ink); }
+  .ctx .c p { margin: 0; font-size: 15px; line-height: 1.5; }
+  .card { padding: 14px 16px; border: 1px solid var(--line-2); background: var(--panel); border-top: 3px solid var(--accent); }
+  .card h5 { margin: 0 0 6px; font-family: var(--display); font-size: 26px; font-weight: 700; text-transform: uppercase; line-height: 1; }
+  .card .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .card p { margin: 0; font-size: 15px; line-height: 1.5; }
+  .card .w { margin-top: 8px; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .card .used { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 14px; }
+  .card .used .lbl { display: block; margin-bottom: 4px; }
+  .card .used a { margin-right: 10px; }
+  .hist { display: flex; gap: 8px; align-items: center; font-family: var(--mono); font-size: 11px; color: var(--ink-3); flex-wrap: wrap; }
+  .hist button { color: var(--link); }
+
+  /* ---- footer ---- */
+  footer.foot { grid-area: foot; border-top: 1px solid var(--line-2); padding: 8px 18px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); background: color-mix(in srgb, var(--panel) 80%, transparent); }
+  footer.foot kbd { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border: 1px solid var(--line-2); color: var(--ink-2); margin-right: 4px; }
+  footer.foot .r { margin-left: auto; }
+
+  /* ---- tooltips (nested to depth 3, lock on hold or Space) ---- */
+  .tip { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 12px 14px 10px; font-size: 15px; line-height: 1.45; }
+  .tip .th { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .tip .th b { font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; }
+  .tip .th .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .tip .lock { height: 2px; background: var(--line); margin-top: 10px; position: relative; }
+  .tip .lock b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--accent); }
+  .tip.locked .lock b { width: 100%; }
+  .tip.locked { border-top-color: var(--ink); }
+  .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .06em; }
+
+  @media (max-width: 980px) {
+    body { overflow: auto; }
+    .app { height: auto; grid-template-columns: 1fr; grid-template-areas: "head" "ol" "panel" "rail" "foot"; }
+    nav.ol { border-right: 0; border-bottom: 1px solid var(--line-2); display: flex; flex-wrap: wrap; padding: 8px; gap: 4px; }
+    nav.ol .lbl, nav.ol .foot { display: none; }
+    .mode { margin: 0 8px 0 0; flex: 1 0 100%; }
+    .ol-row { grid-template-columns: auto 1fr; padding: 6px 10px; border-left: 0; border-bottom: 3px solid transparent; white-space: nowrap; width: auto; }
+    .ol-row.on { border-bottom-color: var(--accent); }
+    .ol-row .cnt { display: none; }
+    main.panel { padding: 18px 16px 30px; }
+    .tools { top: -18px; }
+    .ent { grid-template-columns: 1fr; }
+    .ent .no { padding-top: 0; }
+    .chg { grid-template-columns: 1fr; gap: 4px; }
+    aside.rail { border-left: 0; border-top: 1px solid var(--line-2); }
+    .brand { min-width: 0; }
+  }
+</style>
+
+<div class="app" id="app">
+  <header class="head">
+    <div class="row">
+      <div class="brand"><h1><i></i>SOI</h1><div class="sub" id="brandSub">Signal Operating Instructions · the house tongue</div></div>
+      <div class="ident" id="ident"></div>
+      <div class="box"><a class="back" id="backLink" href="#" target="_blank" rel="noopener">← the board</a><button class="theme" id="themeBtn" title="T">theme</button></div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="ol" id="ol" aria-label="Sections">
+    <span class="lbl">Browse</span>
+    <div class="mode"><button id="modeSec" class="on" title="1–9">By section</button><button id="modeAZ" title="A">A to Z</button></div>
+    <div id="olRows"></div>
+    <div class="foot" id="olFoot"></div>
+  </nav>
+
+  <main class="panel" id="panel" tabindex="-1">
+    <div class="tools">
+      <div class="search"><input id="q" type="search" placeholder="Search the tongue… (press / to focus)" autocomplete="off"><span class="cnt" id="qCnt"></span></div>
+      <div class="az" id="az"></div>
+    </div>
+    <div id="body"></div>
+  </main>
+
+  <aside class="rail" id="rail">
+    <div id="railBody"></div>
+  </aside>
+
+  <footer class="foot">
+    <span><kbd>/</kbd> search</span>
+    <span><kbd>1</kbd>–<kbd>9</kbd> section</span>
+    <span><kbd>A</kbd> A to Z</span>
+    <span><kbd>T</kbd> theme</span>
+    <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
+    <span class="r" id="footR"></span>
+  </footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const S = DATA.soi, G = DATA.glossary;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function md(s) {
+  s = esc(s);
+  s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, k, l) => { const g = G[k]; const label = l || (g ? g.t : k); return g ? `<a class="t" data-t="${k}" tabindex="0">${label}</a>` : label; });
+  return s;
+}
+const stChip = st => st ? `<span class="chip st-${st}">${st}</span>` : '';
+const BOARD_URL = 'https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a';
+$('#backLink').href = BOARD_URL;
+
+/* ---- header: the SOI's own identity block ---- */
+$('#ident').innerHTML = `<div><b class="num">${esc(S.edition)}</b><span>edition</span></div>
+  <div><b>${esc(S.effective)}</b><span>effective</span></div>
+  <div><span>prepared · approved</span><p>${esc(S.prepared_by)} · ${esc(S.approved_by)}</p></div>
+  <div><span>distribution</span><p>${esc(S.distribution)}</p></div>
+  <div><span>supersedes</span><p>${esc(S.supersedes)}</p></div>`;
+const entries = Object.entries(G);
+const nP = entries.filter(([k, g]) => g.k === 'proword').length;
+const nRuled = entries.filter(([k, g]) => g.k === 'proword' && g.st === 'ruled').length;
+$('#stats').innerHTML = `<div class="stat"><b class="num">${entries.length}</b> terms</div><div class="stat"><b class="num">${nP}</b> prowords · ${nRuled} ruled</div><div class="stat"><b class="num">${S.codebook.length}</b> codebook rows</div><div class="stat"><b class="num">${S.changes.length}</b> change dates</div><div class="stat cls">${esc(S.classification)}</div>`;
+$('#footR').textContent = `SOI · edition ${S.edition} · SOP.md is canonical on any conflict`;
+
+/* ---- numbering: section.index, alphabetical within section ---- */
+const bySec = {};
+S.sections.forEach(sec => { bySec[sec.n] = entries.filter(([k, g]) => g.k === sec.kind).sort((a, b) => a[1].t.localeCompare(b[1].t)); });
+const itemNo = {};
+S.sections.forEach(sec => (bySec[sec.n] || []).forEach(([k], i) => { itemNo[k] = `${sec.n}.${String(i + 1).padStart(2, '0')}`; }));
+const usedIn = {};
+entries.forEach(([k, g]) => { (g.d.match(/\[\[([^\]|]+)/g) || []).forEach(m => { const kk = m.slice(2); (usedIn[kk] = usedIn[kk] || []).push(k); }); });
+const firstLetter = t => { const c = t.replace(/^(the|a|an)\s+/i, '').trim()[0].toUpperCase(); return /[A-Z]/.test(c) ? c : '#'; };
+
+/* ---- left rail ---- */
+$('#olRows').innerHTML = S.sections.map(sec => { const n = sec.kind === 'auth' ? S.auth.length : sec.kind === 'codebook' ? S.codebook.length : sec.kind === 'changes' ? S.changes.length : (bySec[sec.n] || []).length;
+  return `<button class="ol-row" data-n="${sec.n}"><span class="n num">${sec.n}</span><span class="name">${esc(sec.name)}</span><span class="cnt num">${n}</span></button>`; }).join('');
+$('#olFoot').innerHTML = `A ruled word is law.<br>Provisional: in use, unruled.<br>Benched: waits in the loop.<br>Retired: stays listed, struck.`;
+
+/* ---- entries ---- */
+function entHTML(k, g, showSec) {
+  return `<article class="ent ${g.st === 'retired' ? 'retired' : ''}" data-k="${k}" data-letter="${firstLetter(g.t)}" data-text="${esc((g.t + ' ' + g.d + ' ' + (g.w || '')).toLowerCase())}">
+    <span class="no num">${itemNo[k] || ''}</span><div><div class="tw"><button class="term" data-open="${k}">${esc(g.t)}</button>${stChip(g.st)}<span class="k">${esc(g.k)}${showSec ? ' · §' + (itemNo[k] || '').split('.')[0] : ''}</span></div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div></div></article>`;
+}
+function secHTML(sec) {
+  let inner = '';
+  if (sec.kind === 'auth') inner = S.auth.map((a, i) => `<article class="ent" data-letter="${firstLetter(a.t)}" data-text="${esc((a.t + ' ' + a.d).toLowerCase())}"><span class="no num">${sec.n}.${String(i + 1).padStart(2, '0')}</span><div><div class="tw"><button class="term">${esc(a.t)}</button><span class="k">authentication</span></div><p>${md(a.d)}</p><div class="w">${esc(a.w)}</div></div></article>`).join('');
+  else if (sec.kind === 'codebook') inner = `<div class="tblwrap"><table class="cb"><thead><tr><th>Heard</th><th>Read as</th></tr></thead><tbody>${S.codebook.map(r => `<tr class="cbrow" data-text="${esc((r.heard + ' ' + r.read).toLowerCase())}"><td class="h">${md(r.heard)}</td><td>${md(r.read)}</td></tr>`).join('')}</tbody></table></div>`;
+  else if (sec.kind === 'changes') inner = S.changes.slice().reverse().map(c => `<div class="chg" data-text="${esc((c.date + ' ' + c.t).toLowerCase())}"><span class="d num">${esc(c.date)}</span><div>${md(c.t)}</div></div>`).join('');
+  else inner = (bySec[sec.n] || []).map(([k, g]) => entHTML(k, g, false)).join('') || `<div class="empty">Nothing filed here yet.</div>`;
+  return `<section class="sec" id="sec-${sec.n}" data-n="${sec.n}"><div class="sh"><span class="sn num">${sec.n}</span><h2>${esc(sec.name)}</h2><span class="cnt"></span></div><p class="plain">${md(sec.plain)}</p>${inner}</section>`;
+}
+let mode = 'sec';
+function renderBody() {
+  if (mode === 'sec') $('#body').innerHTML = S.sections.map(secHTML).join('');
+  else {
+    const all = entries.slice().sort((a, b) => a[1].t.replace(/^(the|a|an)\s+/i, '').localeCompare(b[1].t.replace(/^(the|a|an)\s+/i, '')));
+    let out = '', last = '';
+    all.forEach(([k, g]) => { const L = firstLetter(g.t); if (L !== last) { out += `<div class="letter" id="L-${L === '#' ? 'hash' : L}">${L}</div>`; last = L; } out += entHTML(k, g, true); });
+    $('#body').innerHTML = out;
+  }
+  const letters = new Set([...document.querySelectorAll('.ent')].map(e => e.dataset.letter));
+  $('#az').innerHTML = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ#'.split('').map(L => `<button data-l="${L}" ${letters.has(L) ? '' : 'disabled'}>${L}</button>`).join('');
+  applySearch();
+}
+function setMode(m) { mode = m; $('#modeSec').classList.toggle('on', m === 'sec'); $('#modeAZ').classList.toggle('on', m === 'az'); document.querySelectorAll('.ol-row').forEach(r => r.classList.remove('on')); renderBody(); $('#panel').scrollTop = 0; }
+function goSec(n) { if (mode !== 'sec') setMode('sec'); document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', +r.dataset.n === n)); const el = $(`#sec-${n}`); if (el) el.scrollIntoView({ block: 'start' }); }
+function goLetter(L) { if (mode !== 'az') setMode('az'); document.querySelectorAll('#az button').forEach(b => b.classList.toggle('on', b.dataset.l === L)); const el = $(`#L-${L === '#' ? 'hash' : L}`); if (el) el.scrollIntoView({ block: 'start' }); }
+function applySearch() {
+  const q = $('#q').value.trim().toLowerCase(); let n = 0, total = 0;
+  document.querySelectorAll('.ent, .cbrow, .chg').forEach(el => { total++; const hit = !q || el.dataset.text.includes(q); el.hidden = !hit; el.classList.toggle('hit', !!q && hit); if (hit) n++; });
+  document.querySelectorAll('.sec').forEach(sec => { const vis = [...sec.querySelectorAll('.ent, .cbrow, .chg')].filter(e => !e.hidden).length; $('.cnt', sec).textContent = q ? `${vis} match${vis === 1 ? '' : 'es'}` : ''; sec.hidden = !!q && vis === 0; });
+  document.querySelectorAll('.letter').forEach(L => { let e = L.nextElementSibling, any = false; while (e && !e.classList.contains('letter')) { if (!e.hidden) any = true; e = e.nextElementSibling; } L.hidden = !any; });
+  $('#qCnt').textContent = q ? `${n} of ${total}` : `${total} entries`;
+}
+$('#q').addEventListener('input', applySearch);
+$('#modeSec').addEventListener('click', () => setMode('sec'));
+$('#modeAZ').addEventListener('click', () => setMode('az'));
+$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (r) goSec(+r.dataset.n); });
+$('#az').addEventListener('click', e => { const b = e.target.closest('button'); if (b && !b.disabled) goLetter(b.dataset.l); });
+$('#body').addEventListener('click', e => { const b = e.target.closest('button.term'); if (b && b.dataset.open) openTerm(b.dataset.open); });
+
+/* ---- rail: explainer at rest, the term card on click ---- */
+let hist = [];
+function railRest() {
+  $('#railBody').innerHTML = `<h4>What this is</h4><div class="ctx">
+    <div class="c"><span class="lbl">The book</span><p>Signal Operating Instructions: the booklet a radio operator carries with the call signs, the frequencies, and the prowords. This is the house's. SOP.md §0 is its pocket extract.</p></div>
+    <div class="c"><span class="lbl">How to browse</span><p>Search from the top, go by letter on the A to Z rail, or by section on the left. Every blue term is live: hover, hold to lock, click to open its card here.</p></div>
+    <div class="c"><span class="lbl">What you did</span><p>Ruled the words marked RULED, one by one since 8/21, and on 9/10 ruled that the book is a page of its own.</p></div>
+    <div class="c"><span class="lbl">What's next</span><p>BOLO 37 moves proword rulings into a daily selection loop; the benched words wait in it. Name the loop and the bench empties.</p></div></div>`;
+}
+function openTerm(k) {
+  const g = G[k]; if (!g) return; closeTips(1);
+  if (hist[hist.length - 1] !== k) hist.push(k);
+  const used = (usedIn[k] || []).filter(x => G[x]);
+  $('#railBody').innerHTML = `<div class="hist">${hist.length > 1 ? `<button id="railBack">← back (B)</button>` : ''}<button id="railHome">explainer</button><span>item ${esc(itemNo[k] || '—')}</span></div>
+    <div class="card"><h5>${esc(g.t)}</h5><div class="meta">${stChip(g.st)}<span class="chip" style="color:var(--ink-3)">${esc(g.k)}</span></div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div>
+    ${used.length ? `<div class="used"><span class="lbl">Used in</span>${used.map(x => `<a class="t" data-t="${x}" tabindex="0">${esc(G[x].t)}</a>`).join('')}</div>` : ''}</div>`;
+  const el = document.querySelector(`.ent[data-k="${k}"]`); if (el && !el.hidden) el.scrollIntoView({ block: 'center' });
+}
+$('#railBody').addEventListener('click', e => { if (e.target.id === 'railBack') { hist.pop(); const k = hist.pop(); if (k) openTerm(k); else railRest(); } if (e.target.id === 'railHome') { hist = []; railRest(); } });
+
+/* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */
+let tips = [], openTimer = null, closeTimer = null;
+function tipFor(target, depth) {
+  const k = target.dataset.t; const g = G[k]; const el = document.createElement('div'); el.className = 'tip'; el.dataset.depth = depth;
+  const deep = depth >= 3;
+  el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div><p>${deep ? esc(g.d.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, kk, l) => l || (G[kk] ? G[kk].t : kk))) : md(g.d)}</p><div class="w">${esc(g.w || '')}</div><div class="lock"><b></b></div><div class="hint">hold 1.5 s or press Space to lock · Esc closes · click opens the card</div>`;
+  document.body.appendChild(el);
+  const r = target.getBoundingClientRect(); const w = el.offsetWidth, h = el.offsetHeight;
+  let x = Math.min(Math.max(12, r.left), window.innerWidth - w - 12); let y = r.bottom + 8; if (y + h > window.innerHeight - 12) y = Math.max(12, r.top - h - 8);
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+  const rec = { el, target, depth, locked: false, timer: null };
+  const bar = $('.lock b', el); requestAnimationFrame(() => { bar.style.transition = 'width 1.5s linear'; bar.style.width = '100%'; });
+  rec.timer = setTimeout(() => lock(rec), 1500);
+  el.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+  el.addEventListener('mouseleave', () => scheduleClose(depth));
+  target.classList.add('on'); tips.push(rec); return rec;
+}
+function lock(rec) { rec.locked = true; rec.el.classList.add('locked'); }
+function closeTips(d) { tips.filter(t => t.depth >= d).forEach(t => { clearTimeout(t.timer); t.el.remove(); t.target.classList.remove('on'); }); tips = tips.filter(t => t.depth < d); }
+function scheduleClose(depth) { clearTimeout(closeTimer); closeTimer = setTimeout(() => { const un = tips.filter(t => t.depth >= depth && !t.locked); if (un.length) closeTips(Math.min(...un.map(t => t.depth))); }, 220); }
+function depthOf(t) { const p = t.closest('.tip'); return p ? +p.dataset.depth + 1 : 1; }
+function onEnter(t) { clearTimeout(openTimer); clearTimeout(closeTimer); const d = depthOf(t); openTimer = setTimeout(() => { closeTips(d); tipFor(t, d); }, 120); }
+document.addEventListener('mouseover', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('mouseout', e => { const t = e.target.closest('.t'); if (t) { clearTimeout(openTimer); scheduleClose(depthOf(t)); } });
+document.addEventListener('focusin', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('focusout', e => { const t = e.target.closest('.t'); if (t) scheduleClose(depthOf(t)); });
+document.addEventListener('click', e => { const t = e.target.closest('.t'); if (t && t.dataset.t) { e.preventDefault(); openTerm(t.dataset.t); return; } if (!e.target.closest('.tip')) closeTips(1); });
+
+/* ---- theme ---- */
+const themes = ['', 'light', 'dark']; const themeLabel = { '': 'theme · auto', light: 'theme · light', dark: 'theme · dark' };
+function applyTheme(t) { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; $('#themeBtn').textContent = themeLabel[t]; try { localStorage.setItem('sitrep_theme', t); } catch (e) {} }
+let theme = ''; try { theme = localStorage.getItem('sitrep_theme') || ''; } catch (e) {} if (!themes.includes(theme)) theme = ''; applyTheme(theme);
+$('#themeBtn').addEventListener('click', () => { theme = themes[(themes.indexOf(theme) + 1) % themes.length]; applyTheme(theme); });
+
+/* ---- keys ---- */
+document.addEventListener('keydown', e => {
+  if (e.target.matches('input')) { if (e.key === 'Escape') { e.target.value = ''; applySearch(); e.target.blur(); } return; }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === '/') { e.preventDefault(); $('#q').focus(); return; }
+  if (e.key >= '1' && e.key <= '9') { goSec(+e.key); return; }
+  if (e.key === 'a' || e.key === 'A') { setMode(mode === 'az' ? 'sec' : 'az'); return; }
+  if (e.key === 'Escape') { if (tips.length) closeTips(1); else { hist = []; railRest(); } return; }
+  if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
+  if ((e.key === 'b' || e.key === 'B')) { const bb = $('#railBack'); if (bb) bb.click(); return; }
+  if (e.key === 't' || e.key === 'T') { $('#themeBtn').click(); }
+});
+renderBody(); railRest();
+const h = location.hash.replace('#', ''); if (h && G[h]) { openTerm(h); }
+</script>
