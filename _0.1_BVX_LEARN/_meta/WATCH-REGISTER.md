@@ -78,6 +78,8 @@ WARROOM 1.1 (`MCDP-CODEX.html`, `_tools/mcdp_codex_template.html`): both faces a
 
 ## Open
 
+0. **Scope narrowed 2026-09-10 (Papi, spoken, on the SITREP v0):** the rose-anchored faces read as "that purple one" and stay with DARKROOM and public-facing work. The default colorway for internal boards and tool pages is now the creator-cases explainer palette (slate `#EEF0F3` / white / ink `#14171C` / orange `#FF5A1F` accent, dark twin `#0F1216`), working name BRIEF. Papi said "we just keep using" it — WARROOM's adoption of it is implied but unspoken; ask before retinting WARROOM.
+
 1. **Filing** (BOLO 34 Q2): a fifth register in `📐 ssot_00_bold_venture_design_system.md`, or a WARROOM-only theme. The name WATCH is a working name.
 2. **DARKROOM.** Its NOIR livery is pure-black-adjacent with white-ish text; the same two faces would apply. Waits on Papi's word after living in WARROOM 1.1.
 3. **Viewing distance** assumed 60 cm; if the monitor sits farther, body type goes to 18–19 px.
