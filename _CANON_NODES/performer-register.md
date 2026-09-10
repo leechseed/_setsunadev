@@ -140,7 +140,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Harlow Harrison | P | F | 1 | B | 2023 | 1 | 0 |  | — |
 | Haruhi | E | F | 1 | B | 2023 | — | — | psychotic dork | — |
 | Helly Valentine | E | F | 1 | B | 2023 | — | — |  | — |
-| Hungryanuz | C | — | 1 | X | 2023 | — | — | unlockd.me; "I should look into it more" | — |
+| Hungryanuz | C | — | 1 | X | 2023 | — | — | unlockd.me; "I should look into it more"; 9/10 study → OF banned them late Oct 2021; rebuilt as Linktree → ManyVids (31 clips, $1.99 modal) + Fansly ($8.99) + unlockd within 7 weeks; tube 3.1K→6.5K subs, stores dormant since 2023-09; unlockd.me = Fans Media Ltd (UK, 2020), fee drifted 15→10→15→35 %; Pornhub self-set field says male, dash stands for Papi's call — node [creator-case-hungryanuz](creator-case-hungryanuz.md) | — |
 | Jennifer White | P | F | 1 | J | 2023 | 5 | 0 |  | — |
 | Jessica Drake | P | F | 1 | B | 2023 | — | — |  | — |
 | Julia and Lauren Burch | E | F | 1 | B | 2023 | — | — | the Gloom e-girls; influence order #3 | — |
