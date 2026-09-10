@@ -162,7 +162,7 @@ Contest wins: none found; not on any Pornhub Awards / TEA / XBIZ / AVN list sear
 
 **Tooling note:** the first batch fetch of Wayback `id_` snapshots wrote nothing for 15 of 16 URLs; a retry with `--retry 4 --retry-all-errors` and a 4-second pause between requests fetched all of them. Python on this box writes cp1252 to stdout — set `PYTHONIOENCODING=utf-8` before parsing bios that carry emoji.
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** A front-loaded free-tube catalog run as an unattended asset: ~16 items in the launch fortnight, ~11 more over the next sixteen months, then nothing — and the channel still nearly doubled its subscribers (5.5K → 10.4K) and tripled its views (452K → 1.35M) in the years after the last upload, with a one-sentence bio pointing the whole audience at a paid site. The same record shows the asset's shape: view share followed length (three clips ≥ 9 min ≈ 63% of views; five clips < 1 min ≈ 1%), the two paid items were the two longest things she made, and one ten-minute clip carried ~49% of everything — so when it was removed in 2024–25 the channel lost 46% of its lifetime view count in a single event, with no upload to replace it. Against Papi's note: the record can show "quality → value" only as *length and a single hit*; it says nothing about angle or setup, because she never wrote a word about how anything was made.
 

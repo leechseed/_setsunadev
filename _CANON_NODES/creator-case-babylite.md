@@ -173,7 +173,7 @@ Contest / award: none. Not in any Pornhub Awards, Fleshbot, Grabby or XBIZ list;
 
 **Tooling note:** Wayback returned empty bodies on most first attempts and needed three passes with delays; the `id_` bodies were plain HTML, not gzip. Pornhub `ph…` viewkeys carry a hex Unix timestamp in characters 3–10 — that is how the upload dates above were recovered. The scratchpad `ph/` folder is shared across agents; babylite's captures were isolated into `babylite/ph/` before parsing (one foreign snapshot, a different model, was excluded).
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** Per-upload leverage with a free-first catalogue. Seven uploads in 21 months, about 32 minutes of material, never more than six live at once, carried a Model Program page to 5.06M views, 23.2K subscribers and a rank inside Pornhub's top ~5,300 — roughly 700K–850K views per upload, versus the tens of thousands a cadence creator gets per video. He did it with no paywall, no tip link, no hub, no collab and no press, with the deal written into the bio ("free as in free beer, tips appreciated") and the work put into one thing: how the recordings sound. The subscriber line kept climbing for three years after the last upload (16.5K → 24.0K) on the strength of the catalogue alone. The second half of the mechanic is the failure: he asked the audience how to monetize in June 2024, opened a $10 tier in December 2024 with "content coming soon," put seven videos behind it, and the tier now reads switched off — a four-year free window converted into almost nothing because the paid catalogue was never built before the door opened.
 
