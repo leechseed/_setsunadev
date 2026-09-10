@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "date": "2026-09-10",
+    "when": "night · second board of the day",
+    "trigger": "\"Okay. What's a sit rep?\" — the question form reads as the board (SOP §8)",
+    "countersign": false,
+    "version": "v0.5 · BOLO 38",
+    "box": [
+      {"name": "Stash", "port": ":9999", "up": true, "k": "stash"},
+      {"name": "DARKROOM", "port": ":8484", "up": false, "k": "darkroom"}
+    ],
+    "rack": {"flushed": "2026-09-10.session.md → _LOG/", "staged": "2026-09-10-2.session.md"},
+    "tree": "clean at open",
+    "stack": "empty",
+    "agents": [],
+    "stats": [
+      {"k": "blocked on you", "v": "10", "s": "warn"},
+      {"k": "main effort idle", "v": "6 d", "s": "bad"},
+      {"k": "agents in flight", "v": "0", "s": "good"},
+      {"k": "case files on disk", "v": "15 of 20", "s": "warn"},
+      {"k": "parked cards", "v": "23", "s": "warn"}
+    ],
+    "main_effort": "[[block-c|Block C]] \"marked\" + [[d9|D-9]] — untouched since 9/4, third board in a row",
+    "build": {"files": "last board + cache note + git diff", "read": "~75 KB", "calls": "9 calls", "rounds": "3 rounds"}
+  },
+  "blocks": [
+    {
+      "id": "0", "name": "Last session", "kind": "list",
+      "plain": "Two sessions ran on the same tree all evening. One turned the board into pages and parked them. The other launched eleven creator cases, lost five when the process died, and stood down on your word. The box lost DARKROOM somewhere in between.",
+      "strand": {
+        "last": "The 16:45 board, then you said the board should be a page, and it was one within the hour.",
+        "plan": "Build the three pages, land wave one of the creator cases, rule the words as they came up.",
+        "you": "Ruled eight words (the colorway, FRAGO then OPORD, SOI, TTP, RTB, Charlie Mike, scope M, Rebel Rhyder), said \"don't restart anything\" when the wave died, then called Oscar Mike and RTB on both sessions.",
+        "next": "Nothing is running. Charlie Mike on the pages is mechanical for three steps. The five missing cases wait on your go."
+      },
+      "items": [
+        {"t": "**The board became a page** — [[sitrep|SITREP]] v0 through v0.4 in one evening: the explainer register, tooltips depth 3, keys 0–7, a GLOSSARY panel. Colorway ruled: the creator-cases palette for every internal board; the rose stays with [[darkroom|DARKROOM]].", "trunk": "BLACK", "s": "ruled", "when": "9/10 16:21–16:52"},
+        {"t": "**[[bolo45|BOLO 45]] got its own page** — the five-paragraph order ([[smeac|SMEAC]]) with the next action on top, governed by [[speed|SPEED]] · [[focus|FOCUS]] · [[boldness|BOLDNESS]]. You ruled [[frago|FRAGO]] as its name, then split it: **[[opord|OPORD]] is the page (provisional), FRAGO is the update pushed onto it (ruled).**", "trunk": "BLACK", "s": "ruled", "when": "9/10 16:36 → 18:38"},
+        {"t": "**[[soi|SOI]] ruled as the glossary's name** — and its own dashboard in the Marine SOI format (edition · effective · supersedes · authentication · codebook · changes). Built at `_tools/soi/`, never published. The pages then parked to `oscar-mike/pages.md` with a six-step resume order.", "trunk": "BLACK", "s": "parked", "when": "9/10 late"},
+        {"t": "**Wave one of the creator cases was cut short** — eleven agents launched at 16:28; the process exited mid-wave. Six landed (Ellexxaurus · Hungryanuz · Gape Game · PeggingOnlyOfficial · babylite · Bilbuana); five never did (Bad Dragon Slayer · BottomToys · Michael Vegas · Tweetney · Coco Lovecock). You said \"don't restart anything.\" 15 [[creator-case|case files]] on disk, every header [[ttp|TTP]].", "trunk": "ORANGE", "s": "corrected", "when": "9/10 18:38"},
+        {"t": "**Rulings on BOLO 45:** scope **M** (lane C, then the 21-name core) · the lessons block is **TTP**, singular, over [[gouge|GOUGE]] · [[rtb|RTB]] replaces sweep · [[charlie-mike|Charlie Mike]] resumes a card. Both of BOLO 45's open calls closed.", "trunk": "ORANGE", "s": "ruled", "when": "9/10 16:42"},
+        {"t": "**The [[register|performer register]] grew to 155 names / 30 creators** — the lane-C list of 15 added (two seats still nameless: a 3D still artist, a Reddit-native grower), LushianaFitness added at 18:39, [[rebel-rhyder|Rebel Rhyder]]'s row applied.", "trunk": "ORANGE", "s": "done", "when": "9/10 18:39"},
+        {"t": "**The [[nasa-girl|NASA girl]]'s case landed** — electrical engineer, two years in aerospace, in her own words; NASA was Rocco Siffredi's word only. Flag: she still sits in the gooner-lane table.", "trunk": "ORANGE", "s": "done", "when": "9/10 evening"},
+        {"t": "**RTB executed on one card** — the creator-cases card went home (STATE · BOLO 45 · the case nodes · `_tools/creator-cases/`); the three stale receipts cleared. 23 cards still parked. A 9/10 journal entry exists now; 9/9 still has none.", "trunk": "OPERATOR", "s": "done", "when": "9/10 18:38"},
+        {"t": "**[[the-box|The box]]:** [[stash|Stash]] up, **[[darkroom|DARKROOM]] down** (it was up at the 16:45 board). Tree clean. No agents in flight; all three peer sessions offline.", "trunk": "OPERATOR", "s": "bad", "when": "now"}
+      ]
+    },
+    {
+      "id": "I", "name": "The Fresh Ten", "kind": "list",
+      "plain": "The ten things touched most recently, newest first. Each carries its house and the one next step. Seven of the ten moved today. The main effort is still not on this list.",
+      "strand": {
+        "last": "Everything here moved between 9/6 and tonight.",
+        "plan": "Resume the parked pages, finish wave one, then take the cheapest ruling on each draft before anything new opens.",
+        "you": "You touched items 1 through 4 tonight by speaking. Items 5 and 6 are drafts waiting on you.",
+        "next": "\"Charlie Mike pages\" runs three mechanical steps with no ruling needed. \"Run the darkroom\" brings item 4's server back."
+      },
+      "items": [
+        {"n": 1, "t": "**The pages — [[sitrep|SITREP]] · [[opord|OPORD]]/[[frago|FRAGO]] · [[soi|SOI]] ([[bolo38|BOLO 38]] and siblings)** — three pipelines on one core; two published, one built. Parked.", "next": "Charlie Mike pages: retitle OPORD → rebuild BOLO 45 → publish the SOI. Names owed: [[readyroom|READYROOM]] · [[mint|MINT]] · OPORD.", "trunk": "BLACK", "s": "parked", "when": "9/10 late"},
+        {"n": 2, "t": "**[[bolo45|BOLO 45]] creator cases** — 15 files on disk, headers TTP; five wave-one files never landed; the manager-path pair delivered.", "next": "Your go on the five re-runs (brief at `_tools/creator-cases/case-brief.md`), then wave two: the 21-name core.", "trunk": "ORANGE", "s": "hot", "when": "9/10 18:38"},
+        {"n": 3, "t": "**[[register|Performer register]] ([[bolo42|BOLO 42]])** — 155 names / 30 creators; two lane-C seats nameless.", "next": "The X-handle pass, fire or leave · the seven dash Sex cells · the two nameless seats.", "trunk": "ORANGE", "s": "open", "when": "9/10 18:39"},
+        {"n": 4, "t": "**[[darkroom|DARKROOM]] tagging ([[bolo44|BOLO 44]])** — [[tier2|Tier 2]] live; the server is down tonight.", "next": "\"Run the darkroom\" → the 300-image TAGGING calibration → \"retrain\".", "trunk": "ORANGE", "s": "parked", "when": "9/10 02:38"},
+        {"n": 5, "t": "**[[outliers|OXO]] series follow-through** — profile, scene card, pages.", "next": "The 12 [[telling-profile|Telling Profile]] rulings; Anna's node.", "trunk": "BLACK", "s": "open", "when": "9/10 00:32"},
+        {"n": 6, "t": "**[[l2b|L2b]] population signatures ([[bolo43|BOLO 43]])** — module 2 landed ⧗.", "next": "Seven §7 calls; no Glute Lab text on disk.", "trunk": "ORANGE", "s": "open", "when": "9/10 00:32"},
+        {"n": 7, "t": "**The ancients pass** — STATE and PROJECTS corrected, R6–R9 ruled.", "next": "Tori's chart re-derivation (Known rot).", "trunk": "BLACK", "s": "done", "when": "9/9 18:33"},
+        {"n": 8, "t": "**Ableton rig** — plugin folders and the MPK Mini answered. Parked.", "next": "Native Access repair for the Massive library.", "trunk": "OPERATOR", "s": "parked", "when": "9/8 22:11"},
+        {"n": 9, "t": "**The 9/8 park stack** — story timeline ([[bolo35|BOLO 35]]/36) · [[trash-land|Trash Land]] · TikTok ([[bolo29|BOLO 29]]).", "next": "Each waits on a Block V ruling.", "trunk": "BLACK", "s": "held", "when": "9/8 17:23"},
+        {"n": 10, "t": "**[[warroom|WARROOM]] 1.1 + LOCI** — the [[watch-register|WATCH register]] applied; food preservation delivered.", "next": "Q2 filing (fifth register vs WARROOM-only) · [[bolo41|BOLO 41]] · BOLO 40, Shephard first.", "trunk": "BLACK", "s": "open", "when": "9/6"},
+        {"t": "**Outside the ten by recency: [[main-effort|the main effort]].** [[ultra-dark|ULTRA DARK]] [[block-c|Block C]] \"marked\", untouched since 9/4. Six days, three boards.", "trunk": "ORANGE", "s": "bad", "when": "9/4", "note": true}
+      ]
+    },
+    {
+      "id": "II", "name": "The Ancients", "kind": "list",
+      "plain": "What has gone quiet, oldest first, and what each one is waiting on. Nothing here is dead. Almost all of it is waiting on one word from you.",
+      "strand": {
+        "last": "The true-ancients tier was emptied on 9/9. Nothing aged into it since.",
+        "plan": "Keep the tier empty. Anything that sits three weeks gets named here until it is ruled or retired.",
+        "you": "Nothing on this block moved tonight; the evening went to pages and cases.",
+        "next": "The cheapest three: the Kata name, the BBRT fill-ins, the Birthday re-rule. One word each."
+      },
+      "groups": [
+        {"label": "True ancients", "note": "tier empty since 9/9", "items": []},
+        {"label": "Longest untouched · three weeks or more", "items": [
+          {"t": "**Berlin pivot + Germany field month** — waiting on the fold into BERLIN-PIVOT; converges on Atlanta, whose 9/1 dossier still awaits your ruling.", "trunk": "ORANGE", "s": "held", "when": "8/16–19"},
+          {"t": "**Kobra S1 / SlimeVR** — waiting on the Phase 1 order.", "trunk": "BLACK", "s": "held", "when": "8/20"},
+          {"t": "**Kata rename · BBRT fill-ins (BOLO 3)** — waiting on you.", "trunk": "ORANGE", "s": "held", "when": "8/19"},
+          {"t": "**Birthday 2026** — shelved on a new-job assumption that no longer holds; re-rule Plan B or leave shelved.", "trunk": "OPERATOR", "s": "held", "when": "8/21"},
+          {"t": "**Focus doctrine · interface · pedagogy (BOLO 4/5/6)** — waiting on your go.", "trunk": "OPERATOR", "s": "gated", "when": "8/21"},
+          {"t": "**DOCTRINE 0 rename** — Standing Order versus the bench.", "trunk": "BLACK", "s": "held", "when": "8/21"}
+        ]},
+        {"label": "Going quiet · two to three weeks", "items": [
+          {"t": "**Strip follow-ons (BOLO 8/9)** — owner-only; you file the GitHub ticket and the Google removal.", "trunk": "BLACK/ORANGE", "s": "open", "when": "8/24"},
+          {"t": "**GBD plan · shoot set · Bongobabe (BOLO 10/11/12)** — the GBD answers · the §B ruling · your go.", "trunk": "ORANGE", "s": "held", "when": "8/25"},
+          {"t": "**Multimedia seed · grammar pass · spine sweep stage 2 (BOLO 15/16/18)** — your call, or scriptable.", "trunk": "BLACK", "s": "open", "when": "8/25–26"},
+          {"t": "**Tori×Anna collision proof** — needs Anna's chart; Anna needs a node.", "trunk": "BLACK", "s": "gated", "when": "8/26"},
+          {"t": "**Glute reference · cleaning service · Lab venture** — parked; the Lab venture holds six queued decisions.", "trunk": "ORANGE", "s": "parked", "when": "8/30–31"},
+          {"t": "**Three-check pass (BOLO 21)** — fired 8/31; waiting on your strike/keep over sweep 1.", "trunk": "BLACK/ORANGE", "s": "held", "when": "8/31"},
+          {"t": "**Physique set (BOLO 23) · Atlanta (BOLO 22)** — morphology-cell calls · the recommendation ruling.", "trunk": "ORANGE", "s": "held", "when": "9/1"}
+        ]},
+        {"label": "Recently parked · a week or less", "items": [
+          {"t": "Project flow (BOLO 25) · dictation dictionary (BOLO 26) · directory-of-dir promote candidates · Discord intros (none sent) · [[block-c|ULTRA DARK Block C]] · [[d9|D-9]] · TikTok ([[bolo29|BOLO 29]]) · verb kit · MIL.01 read-through · [[warroom|WARROOM]] name · story timeline · [[trash-land|Trash Land]] (seven rulings) · Ableton · [[darkroom|DARKROOM]] tagging · the [[register|register]] · **the pages** (9/10 late).", "trunk": "BLACK/ORANGE", "s": "parked", "when": "9/3–9/10"}
+        ]},
+        {"label": "Wire gap · fourth board running", "items": [
+          {"t": "**[[modmigrate]]** (9/7, the Minecraft modpack) has no STATE row, no BOLO, no journal. 9/9 has no journal either; 9/10's was written tonight.", "trunk": "OPERATOR", "s": "missing", "when": "9/7"}
+        ]}
+      ]
+    },
+    {
+      "id": "III", "name": "The Deep Stacks", "kind": "bars",
+      "plain": "How much thinking went into each project, measured as characters of conversation. It says where the thought has been spent, not what it is worth. Frozen at the August 15 export because the counting script is broken.",
+      "strand": {
+        "last": "Rank 10 was struck on 9/9: Business ops was a keyword bucket, never a project.",
+        "plan": "Repair the cluster script, then rerun after the next export so the ranks move again.",
+        "you": "You retired rank 10 with one word.",
+        "next": "The script repair is a Known-rot item; nobody has ordered it."
+      },
+      "unit": "k characters",
+      "rows": [
+        {"rank": 1, "p": "[[outliers|OVEREXITOUT / The Outliers]]", "trunk": "BLACK", "v": 880, "convs": 19, "state": "live"},
+        {"rank": 2, "p": "BVIPDS / LEECHSEED", "trunk": "BLACK", "v": 580, "convs": 25, "state": "live"},
+        {"rank": 3, "p": "Adult content venture", "trunk": "ORANGE", "v": 504, "convs": 16, "state": "live"},
+        {"rank": 4, "p": "Desire Profile", "trunk": "ORANGE", "v": 492, "convs": 19, "state": "live"},
+        {"rank": 5, "p": "Character system", "trunk": "BLACK", "v": 489, "convs": 8, "state": "unstalled 8/24"},
+        {"rank": 6, "p": "Social channels", "trunk": "BOTH", "v": 432, "convs": 25, "state": "live · zero artifacts"},
+        {"rank": 7, "p": "Food ventures", "trunk": "BLACK", "v": 411, "convs": 17, "state": "cooling"},
+        {"rank": 8, "p": "ULTRASIN / GDP", "trunk": "ORANGE", "v": 400, "convs": 11, "state": "live"},
+        {"rank": 9, "p": "Tooling", "trunk": "BLACK", "v": 266, "convs": 16, "state": "support"},
+        {"rank": 10, "p": "Business ops", "trunk": "BLACK", "v": 203, "convs": 6, "state": "retired 9/9", "retired": true}
+      ],
+      "totals": [{"k": "BLACK", "v": "~2,830k"}, {"k": "ORANGE", "v": "~1,400k"}, {"k": "shared", "v": "~430k"}]
+    },
+    {
+      "id": "IV", "name": "The BOLO board", "kind": "board",
+      "plain": "The watchlist. A BOLO is a tasking captured the moment you say it. Below it, PMCS: you as equipment.",
+      "strand": {
+        "last": "BOLO 45 landed its manager-path pair and ten of its cases; BOLO 38 shipped and parked with two siblings.",
+        "plan": "Work the hot six. Everything held stays held until its ruling in Block V.",
+        "you": "You closed both of BOLO 45's open calls tonight. Nothing on PMCS moved. DARKROOM went down.",
+        "next": "Eleven done BOLOs still sit in the active table; moving them to Done is housekeeping I owe."
+      },
+      "groups": [
+        {"label": "Hot · moving or owed this week", "items": [
+          {"t": "**45** [[bolo45|creator sweep + manager path]] — 15 of 20 files down; scope M and TTP ruled; five re-runs wait on your go.", "trunk": "ORANGE", "s": "hot"},
+          {"t": "**38** [[bolo38|the sit rep as a page]] — v0.5 is this page; OPORD/FRAGO and the SOI parked with it, resume order in-card.", "trunk": "BLACK", "s": "parked"},
+          {"t": "**24** [[bolo24|the zero-budget launch]] — design pass staged; [[d9|D-9]] undated.", "trunk": "ORANGE", "s": "hot"},
+          {"t": "**27 / 28** [[ultra-dark|ULTRA DARK]] + [[stash|Stash]] — [[block-c|Block C]] \"marked\", the main effort.", "trunk": "ORANGE", "s": "bad"},
+          {"t": "**44** [[bolo44|the tag rail]] — the 300-image calibration next; the server is down.", "trunk": "ORANGE", "s": "hot"},
+          {"t": "**43** [[bolo43|population signatures]] — seven §7 calls.", "trunk": "ORANGE", "s": "hot"}
+        ]},
+        {"label": "Held on a ruling", "items": [
+          {"t": "**29** TikTok ([[bolo29|BOLO 29]]) · **35 / 36** story timeline ([[bolo35|BOLO 35]]) · **37** the loop ([[bolo37|BOLO 37]]) · **41** LOCI ([[bolo41|BOLO 41]]) · **33 / 34** [[warroom|WARROOM]] name + Q2 · **30** [[trash-land|Trash Land]].", "trunk": "BLACK", "s": "held"}
+        ]},
+        {"label": "Fires on your go", "items": [
+          {"t": "**4** focus doctrine · **10** Bongobabe · **15** multimedia seed · **25** project flow (accept / amend) · **26** dictation route · **40** Shephard first.", "trunk": "BLACK/ORANGE", "s": "gated"}
+        ]},
+        {"label": "Open, slow", "items": [
+          {"t": "3 · 5 · 6 · 8 · 9 · 11 · 12 · 16 · 18 stage 2 · 20 · 21 · 23.", "trunk": "BLACK/ORANGE", "s": "open"}
+        ]},
+        {"label": "Done, not yet moved to Done", "items": [
+          {"t": "1 · 2 · 7 · 13 · 17 · 19 · 22 · 31 · 32 · 39 · 42, plus 43 and 44 delivered.", "trunk": "OPERATOR", "s": "done"}
+        ]}
+      ],
+      "pmcs": [
+        {"item": "Dental — retainer", "s": "bad", "status": "open since 8/19", "next": "Call the orthodontist; confirm ortho vs perio"},
+        {"item": "PCP — establish care + physical", "s": "bad", "status": "open", "next": "Book it; the sexual-health chain sequences after"},
+        {"item": "Pelvic-floor PT", "s": "gated", "status": "gated", "next": "Out of the PCP consult"},
+        {"item": "Employment", "s": "bad", "status": "unemployed since 9/3", "next": "[[bolo24|BOLO 24]] is the answer; runway · claim · backstop still unspoken"},
+        {"item": "The box", "s": "bad", "status": "Stash up · DARKROOM down", "next": "\"Run the darkroom\" brings :8484 back; [[stash|Stash]] :9999 is serving"}
+      ]
+    },
+    {
+      "id": "V", "name": "Blocked on you", "kind": "numbered",
+      "plain": "Ten decisions only you can make, in the order of what they unblock. Most are one word. Say it and the work moves the same turn.",
+      "strand": {
+        "last": "BOLO 45's two calls cleared tonight (scope M, TTP). The NASA girl cleared with one name. D-9 did not move.",
+        "plan": "Top of the list first: D-9 has been open longest and gates the most.",
+        "you": "You cleared six decisions today. Ten remain; three are cheap draft batches, two are single words.",
+        "next": "Say \"D-9 go\", \"D-9 hold to [date]\", or \"D-9 no-go\"."
+      },
+      "items": [
+        {"n": 1, "title": "[[d9|D-9]]", "what": "The BOLO 24 boresight HOLD, undated since 9/4. Clear delivery · re-hold with a date · NO-GO.", "unblocks": "The studio design pass; the whole ORANGE launch chain.", "trunk": "ORANGE"},
+        {"n": 2, "title": "[[r9|R9]] GO", "what": "Thirty days on a fresh X account before any platform commit. Zero cost.", "unblocks": "The first measured signal for [[bolo24|BOLO 24]]; the creator cases stop being a reference set and start being a plan.", "trunk": "ORANGE"},
+        {"n": 3, "title": "[[bolo45|BOLO 45]]'s five re-runs", "what": "You said \"don't restart anything\" when the process died. Go on the five missing cases, or leave lane C at 15 and go straight to the 21-name core.", "unblocks": "Wave two; the lane-C table complete.", "trunk": "ORANGE"},
+        {"n": 4, "title": "[[opord|OPORD]] · [[readyroom|READYROOM]] · [[mint|MINT]]", "what": "Three words for the pages: OPORD as the BOLO page's name (provisional) · READYROOM for the sit rep program · MINT for the loop ([[bolo37|BOLO 37]]).", "unblocks": "The pages' masthead; the proword loop's first build; RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR leave the bench.", "trunk": "BLACK"},
+        {"n": 5, "title": "[[bolo29|BOLO 29]]", "what": "Confirm the reward-versus-risk reading.", "unblocks": "The 24 / 27 / 29 ranking.", "trunk": "BLACK"},
+        {"n": 6, "title": "[[bolo35|BOLO 35]]", "what": "The four story-timeline questions.", "unblocks": "The head version, then BOLO 36's syllabus.", "trunk": "BLACK"},
+        {"n": 7, "title": "[[bolo41|BOLO 41]]", "what": "Ratify the LOCI convention.", "unblocks": "Every non-book research question filed by neighborhood.", "trunk": "BLACK"},
+        {"n": 8, "title": "[[numbering|#8 the 03/03 numbering]]", "what": "One rename either way.", "unblocks": "Clean SSOT numbering before the L4 deepening.", "trunk": "BLACK"},
+        {"n": 9, "title": "The draft batches", "what": "[[bolo43|L2b module 2]]'s seven §7 calls · the [[telling-profile|Telling Profile]]'s 12 rulings · [[trash-land|Trash Land]]'s seven. All ⧗ drafts; strike or keep.", "unblocks": "Three canon nodes stop being drafts.", "trunk": "ORANGE/BLACK"},
+        {"n": 10, "title": "[[warroom|WARROOM]]", "what": "The name, and Q2: file the [[watch-register|WATCH register]] as a fifth design-system register or keep it WARROOM-only.", "unblocks": "DARKROOM's own theme decision.", "trunk": "BLACK"}
+      ]
+    },
+    {
+      "id": "VI", "name": "The leverage line", "kind": "line",
+      "plain": "The one action that moves the most. Not the biggest project, not the newest. The single word with the longest shadow.",
+      "strand": {
+        "last": "Three boards in a row have named D-9. Tonight you ruled eight other words and not that one.",
+        "plan": "Keep naming it until it is ruled or struck. A NO-GO is a legal answer and ends the stall as cleanly as a GO.",
+        "you": "You built fifteen creator cases, a register of 155, a tag rail, and three dashboards around a launch that has no clear.",
+        "next": "One word on D-9. Then Block C is the hands-on work behind it."
+      },
+      "line": "Rule [[d9|D-9]].",
+      "why": "One word (GO · a dated HOLD · NO-GO) turns everything ORANGE built since 9/3 into a launch with a clear. The undated hold is the [[stall-pattern|stall pattern]] by name, and it is now on its third board. [[block-c|Block C]] \"marked\" is the hands-on work behind it."
+    },
+    {
+      "id": "VII", "name": "The SOI card", "kind": "card",
+      "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens. The full book is the SOI, built tonight and waiting to publish.",
+      "strand": {
+        "last": "Ruled tonight: SOI (the glossary's name) · OPORD the page, FRAGO the update · TTP · RTB · Charlie Mike. Garble rows added: Frango, Ebola, TDP, teepee.",
+        "plan": "The SOI page replaces the in-page glossary once it publishes (Charlie Mike pages, step 4). BOLO 37 moves rulings into a daily loop.",
+        "you": "You clarified FRAGO on your own read of doctrine: the update, never the page.",
+        "next": "Confirm OPORD as the page's word. Name the loop; MINT is the recommendation."
+      },
+      "soi": [
+        {"k": "sitrep", "w": "sit rep", "g": "the full board, cold start — and this page; the question form reads the same"},
+        {"k": "oscar-mike", "w": "Oscar Mike", "g": "park it, move on"},
+        {"k": "charlie-mike", "w": "Charlie Mike", "g": "continue mission: resume a parked card at its resume order"},
+        {"k": "rtb", "w": "RTB", "g": "return to base: promote the parked keepers home, clear the folder (replaces sweep)"},
+        {"k": "how-copy", "w": "how copy?", "g": "end of orders; Good / Solid / Bad copy, then execute"},
+        {"k": "boresight", "w": "boresight", "g": "understanding check; readback → the read → questions; no delivery until cleared"},
+        {"k": "bolo", "w": "BOLO that", "g": "tasking captured the same turn"},
+        {"k": "ivory-tower", "w": "ivory tower", "g": "published literature only, cited inline"},
+        {"k": "break-break", "w": "break-break · buttonhook back", "g": "open the detour · close it, main thread restored"},
+        {"k": "run-the-darkroom", "w": "run the darkroom", "g": "launch DARKROOM, no questions"},
+        {"k": "belay", "w": "belay that", "g": "cancel the preceding order"},
+        {"k": "endex", "w": "ENDEX", "g": "close the session: cache note · STATE · journal"},
+        {"k": "opord", "w": "OPORD N", "g": "that BOLO's standing status page: the five-paragraph order, next action on top (provisional word)"},
+        {"k": "frago", "w": "FRAGO N", "g": "the update pushed onto a BOLO's page: only what changed; the Log keeps every one"},
+        {"k": "soi", "w": "SOI", "g": "the tongue's book: every proword and board word, its own page"}
+      ],
+      "nouns": ["bolo", "pmcs", "fresh-ten", "ancients", "deep-stacks", "ready-rack", "magazine", "sop", "ttp"]
+    }
+  ]
+}
