@@ -4,7 +4,7 @@ entity_id: creator_case_spaceghost
 kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom."
+status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom."
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
   - "[[performer-register]]"
@@ -13,7 +13,7 @@ captured: 2026-09-10
 updated: 2026-09-10
 ---
 
-# CREATOR CASE — SPACEGHOST, KARI KEONE (candidate)
+# CREATOR CASE — SPACEGHOST, KARI KEONE (candidate — struck 2026-09-10: the NASA girl is Rebel Rhyder)
 
 **The identification.** Kari "Space Ghost" Keone is a solo OnlyFans/Fansly creator who, in her own words (X, 2024-07-15): *"I'm an IT engineer and data analyst of 15 years. My last job was at Netflix. I make porn now instead of working 70 hour weeks."* **The NASA / aerospace / defense check is answered: no.** Not one first-party surface (two X bios, Bluesky bio, Tumblr résumé, Substack, the July 2024 tweet) nor any secondary source mentions NASA, aerospace, or a defense contractor. Everything "space" about her is the handle — Space Ghost is the Hanna-Barbera character; her display names ("Anung Un Drama", "Tad Ghostal"), her Fansly tiers (Brak / Zorak / Moltar) and her link-hub title ("Space Ghost Coast to Coast") are all that cartoon. The only government-adjacent claim is an unsourced aggregator line about the U.S. Forest Service. **Most likely a memory collision**: "engineer" + a handle with Space in it. (One more collision candidate surfaced: Kari Bingen, a former Deputy Under Secretary of Defense for Intelligence and space-policy analyst — a different person entirely, but a plausible "Kari + defense + space" source for the memory.)
 

@@ -21,3 +21,8 @@ _PRIVATE/
 # local claude config (personal, not for the public repo)
 .claude/settings.local.json
 _tools/scan_sensitive.py
+
+# agent scrape dumps at the repo root (9/10) — delete on sight, never commit
+/freeones.html
+/iafd.html
+/sintabu.html

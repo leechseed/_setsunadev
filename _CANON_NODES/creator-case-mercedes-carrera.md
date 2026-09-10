@@ -4,7 +4,7 @@ entity_id: creator_case_mercedes_carrera
 kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: CANDIDATE 2026-09-10 — HIGH confidence on identity as "the former aerospace engineer"; NOT confirmed by Papi; NOT on the performer register until he rules. The alternate candidate is [[creator-case-spaceghost]].
+status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — HIGH confidence on identity as "the former aerospace engineer"; NOT confirmed by Papi; NOT on the performer register until he rules. The alternate candidate is [[creator-case-spaceghost]].
 legal_note: "Arrested Feb 2019; pleaded not guilty; in pretrial custody with no verdict as of 2026-09-10. Charged, not convicted. Reported here as press reported it, nothing more."
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
@@ -14,7 +14,7 @@ captured: 2026-09-10
 updated: 2026-09-10
 ---
 
-# CREATOR CASE — MERCEDES CARRERA (candidate)
+# CREATOR CASE — MERCEDES CARRERA (candidate — struck 2026-09-10: the NASA girl is Rebel Rhyder)
 
 **The identification.** Papi recalled a woman who "used to be an engineer — NASA or a defense company — and then decided to do this." An 18-search sweep found **no woman whose employer is explicitly NASA**; the best fit is an *aerospace-industry* engineer. Mercedes Carrera (legal name Melinda Smith) is HIGH confidence on identity: Vice (2015-01-23) calls her a "California porn star and former aerospace engineer"; Holly Randall Unfiltered ep. 59 notes (2018-09-19): "Before she entered into the adult industry well into her 30s, she worked in aerospace engineering"; Wikipedia: "Before joining the adult film industry, Carrera worked as an aerospace engineer." **No source names the employer.** NASA / defense / satellites appear only on aggregator bio farms (LOW). The Holly Randall episode is the likeliest place Papi heard the story — that podcast is one of the register's sources (H).
 

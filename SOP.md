@@ -155,6 +155,7 @@ A session that answers "sit rep" without all five has not answered it.
 | standing (in a canning context) | **canning** |
 | College shelf · he and (after a code) | **CUL shelf** · **S8** — the BVX-LEARN food shelf and the setting layer, ruled 9/6 |
 | Braddy (a mood / attitude context) | **bratty** — spelled out by Papi 9/9 |
+| Rebel Writer · Rebel Rider | **Rebel Rhyder** (performer — "the NASA girl", RULED 9/10; spelled out by Papi r-e-b-e-l r-h-y-d-e-r) |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
