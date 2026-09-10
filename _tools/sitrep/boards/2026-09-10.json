@@ -57,7 +57,7 @@
         "next": "Item 4 is ready the moment you say \"run the darkroom\": the 300-image calibration."
       },
       "items": [
-        {"n": 1, "t": "**[[bolo45|BOLO 45]] creator sweep + manager path** — ruled; all three files on disk as of 16:15.", "next": "Your scope and block-name call on the [[explainer|explainer page]]; defaults run if silent.", "trunk": "ORANGE", "s": "hot", "when": "9/10 16:08"},
+        {"n": 1, "t": "**[[bolo45|BOLO 45]] creator sweep + manager path** — ruled; all three files on disk as of 16:15.", "next": "Your scope call on the [[explainer|explainer page]]; the block is ruled [[ttp|TTP]]. M runs if silent.", "trunk": "ORANGE", "s": "hot", "when": "9/10 16:08"},
         {"n": 2, "t": "**The creator cases (BOLO 24 feed)** — seven nodes, the synthesis, the page. Parked.", "next": "[[r9|R9]] GO.", "trunk": "ORANGE", "s": "parked", "when": "9/10 05:26"},
         {"n": 3, "t": "**[[register|Performer register]] (BOLO 42)** — 138 names, 21 core; Rebel Rhyder's row incoming.", "next": "The X-handle pass, fire or leave · the seven dash Sex cells.", "trunk": "ORANGE", "s": "open", "when": "9/10 04:02"},
         {"n": 4, "t": "**[[darkroom|DARKROOM]] tagging ([[bolo44|BOLO 44]])** — Tier 2 live; the server is up.", "next": "The 300-image TAGGING calibration, then \"retrain\".", "trunk": "ORANGE", "s": "parked", "when": "9/10 02:38"},
@@ -141,7 +141,7 @@
       },
       "groups": [
         {"label": "Hot · moving or owed this week", "items": [
-          {"t": "**45** [[bolo45|creator sweep + manager path]] — all three files down; your two calls open.", "trunk": "ORANGE", "s": "hot"},
+          {"t": "**45** [[bolo45|creator sweep + manager path]] — all three files down; TTP ruled; the scope call open.", "trunk": "ORANGE", "s": "hot"},
           {"t": "**24** [[bolo24|the zero-budget launch]] — design pass staged; [[d9|D-9]] undated.", "trunk": "ORANGE", "s": "hot"},
           {"t": "**27 / 28** [[ultra-dark|ULTRA DARK]] + [[stash|Stash]] — [[block-c|Block C]] \"marked\", the main effort.", "trunk": "ORANGE", "s": "bad"},
           {"t": "**44** [[bolo44|the tag rail]] — the 300-image calibration next.", "trunk": "ORANGE", "s": "hot"},
@@ -180,7 +180,7 @@
       "items": [
         {"n": 1, "title": "[[d9|D-9]]", "what": "The BOLO 24 boresight HOLD, undated since 9/4. Clear delivery · re-hold with a date · NO-GO.", "unblocks": "The studio design pass; the whole ORANGE launch chain.", "trunk": "ORANGE"},
         {"n": 2, "title": "[[r9|R9]] GO", "what": "Thirty days on a fresh X account before any platform commit. Zero cost. (The NASA girl is ruled: Rebel Rhyder.)", "unblocks": "The creator-cases resume; the first measured signal for BOLO 24.", "trunk": "ORANGE"},
-        {"n": 3, "title": "[[bolo45|BOLO 45]]'s two calls", "what": "Scope S / M / L · the lessons-block name ([[the-take|THE TAKE]] by default). Defaults run if silent.", "unblocks": "The next wave of cases and the block in all seven existing files.", "trunk": "ORANGE"},
+        {"n": 3, "title": "[[bolo45|BOLO 45]]'s scope call", "what": "Scope S / M / L. The lessons block is ruled: [[ttp|TTP]] (over GOUGE). M runs if silent.", "unblocks": "The next wave of cases and the block in all seven existing files.", "trunk": "ORANGE"},
         {"n": 4, "title": "[[bolo29|BOLO 29]]", "what": "Confirm the reward-versus-risk reading.", "unblocks": "The 24 / 27 / 29 ranking.", "trunk": "BLACK"},
         {"n": 5, "title": "[[bolo35|BOLO 35]]", "what": "The four story-timeline questions.", "unblocks": "The head version, then BOLO 36's syllabus.", "trunk": "BLACK"},
         {"n": 6, "title": "[[bolo37|BOLO 37]]", "what": "Name the proword loop (MINT rec) and answer the two remaining spec gaps; gap 3 is answered by this page.", "unblocks": "The first build; RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR leave the bench.", "trunk": "BLACK"},
@@ -206,7 +206,7 @@
       "id": "VII", "name": "The SOI card", "kind": "card",
       "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens.",
       "strand": {
-        "last": "Three garble rows added this evening: \"me this it, rep\" · \"Rebel Writer\" · \"desk training\".",
+        "last": "Ruled this evening: FRAGO (the BOLO page) · TTP (the lessons block, over GOUGE) · RTB (replaces sweep) · Charlie Mike (resume a card). Four garble rows added.",
         "plan": "BOLO 37 moves proword rulings out of chat and into a daily selection loop; this page is where it will live.",
         "you": "You coined the OUT block, ruled boresight, ruled BOLO, and now ruled that the board is a page.",
         "next": "Name the loop (MINT is the recommendation) and the bench empties."
@@ -214,7 +214,8 @@
       "soi": [
         {"k": "sitrep", "w": "sit rep", "g": "the full board, cold start — and this page"},
         {"k": "oscar-mike", "w": "Oscar Mike", "g": "park it, move on"},
-        {"k": "sweep", "w": "sweep", "g": "promote and clear the parked"},
+        {"k": "charlie-mike", "w": "Charlie Mike", "g": "continue mission: resume a parked card at its resume order"},
+        {"k": "rtb", "w": "RTB", "g": "return to base: promote the parked keepers home, clear the folder (replaces sweep)"},
         {"k": "how-copy", "w": "how copy?", "g": "end of orders; Good / Solid / Bad copy, then execute"},
         {"k": "boresight", "w": "boresight", "g": "understanding check; readback → the read → questions; no delivery until cleared"},
         {"k": "bolo", "w": "BOLO that", "g": "tasking captured the same turn"},
@@ -222,7 +223,8 @@
         {"k": "break-break", "w": "break-break · buttonhook back", "g": "open the detour · close it, main thread restored"},
         {"k": "run-the-darkroom", "w": "run the darkroom", "g": "launch DARKROOM, no questions"},
         {"k": "belay", "w": "belay that", "g": "cancel the preceding order"},
-        {"k": "endex", "w": "ENDEX", "g": "close the session: cache note · STATE · journal"}
+        {"k": "endex", "w": "ENDEX", "g": "close the session: cache note · STATE · journal"},
+        {"k": "frago", "w": "FRAGO on N", "g": "that BOLO's status page: the five-paragraph order, next action on top"}
       ],
       "nouns": ["bolo", "pmcs", "fresh-ten", "ancients", "deep-stacks", "ready-rack", "magazine", "sop"]
     }

@@ -313,7 +313,7 @@ function trunk(t) { if (!t) return ''; const one = x => x === 'BLACK' ? `<span c
 
 /* ---- header: identity block · the three · the FRAGO strip ---- */
 const K = B.bolo;
-$('#mono').innerHTML = `<small>BOLO</small>${K.n}`;
+$('#mono').innerHTML = `<small>FRAGO · BOLO</small>${K.n}`;
 $('#title').textContent = K.title;
 $('#meta').innerHTML = `${chip(K.s)} ${trunk(K.trunk)} <span><span class="k">issued</span>${esc(K.issued)}</span><span><span class="k">as of</span>${esc(K.asof)}</span><span><span class="k">decider</span>${esc(K.decider)}</span><span><span class="k">feeds</span>${md(K.feeds)}</span><span><span class="k">status</span>${esc(K.status)}</span>`;
 $('#mantra').innerHTML = B.mantra.map(m => `<div><span class="w"><a class="t" data-t="${m.k}" tabindex="0">${esc(m.w)}</a></span><p>${md(m.line)}</p></div>`).join('');

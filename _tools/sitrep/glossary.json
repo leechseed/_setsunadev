@@ -474,9 +474,9 @@
  "status-on-bolo": {
   "t": "status on BOLO N",
   "k": "proword",
-  "st": "provisional",
-  "d": "\"Give me the status on BOLO 45\": builds and publishes that BOLO's status page — the five-paragraph order ([[smeac|Situation · Mission · Execution · Admin · Command]]) with the next action on top, governed by [[speed]], [[focus]] and [[boldness]]. Coined 9/10 evening. Name bench for the page: FRAGO (rec) · STATUS · THE 411 · OPORD.",
-  "w": "SOP.md §1 · _tools/bolostatus/"
+  "st": "ruled",
+  "d": "The plain-speech form of [[frago|FRAGO on N]]: \"give me the status on BOLO 45\" fires the same page. Dictation garble \"Frango\" reads as FRAGO.",
+  "w": "SOP.md §1 · §8"
  },
  "recon": {
   "t": "recon",
@@ -554,5 +554,12 @@
   "d": "Navy and Marine slang for the essential distilled information. Recommended 9/10 as the name for the creator-case lessons block and used as its provisional header for a few hours; Papi ruled [[ttp|TTP]] instead. Bench only.",
   "w": "SOP.md §5",
   "st": "retired"
+ },
+ "frago": {
+  "t": "FRAGO",
+  "k": "proword",
+  "st": "ruled",
+  "d": "Fragmentary order. RULED 9/10 (\"let's move ahead on FRAGO, I like it\") as the name of the BOLO status page: \"FRAGO on 45\" or \"give me the status on BOLO 45\" builds and publishes that BOLO's update — the [[smeac|five-paragraph order]] with the next action on top, governed by [[speed]], [[focus]] and [[boldness]]. A FRAGO changes only what changed; everything not mentioned stands as ordered. Retired bench: STATUS · THE 411 · OPORD.",
+  "w": "SOP.md §0–1 · _tools/bolostatus/"
  }
 }
