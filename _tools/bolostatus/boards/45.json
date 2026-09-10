@@ -1,0 +1,188 @@
+{
+  "bolo": {
+    "n": 45,
+    "title": "The creator-case sweep + the manager path",
+    "trunk": "ORANGE",
+    "issued": "2026-09-10",
+    "asof": "2026-09-10 · evening",
+    "s": "hot",
+    "status": "boresight loop · second transmission ruled · three files landed · two calls open",
+    "decider": "Papi",
+    "feeds": "[[bolo24|BOLO 24]] · the [[register|performer register]] · the Ultrasin roster question",
+    "related": [{"n": 24, "why": "the launch this feeds"}, {"n": 42, "why": "the register"}, {"n": 38, "why": "the pages"}],
+    "home": "BOLO.md · row 45",
+    "card": "oscar-mike/creator-cases.md",
+    "version": "v0 · status page"
+  },
+  "mantra": [
+    {"k": "speed", "w": "Speed", "line": "Tempo is a weapon. This page reads in ten seconds: the order is on top, the story is underneath."},
+    {"k": "focus", "w": "Focus", "line": "One main effort: the scope call. Everything else on this page supports it and stays short."},
+    {"k": "boldness", "w": "Boldness", "line": "Do not wait for certainty. Every call carries a default that runs if you say nothing."}
+  ],
+  "frago": {
+    "mission": "Extend the [[creator-case|creator-case]] method across the register and read the manager path, **in order to** give the Ultrasin studio ([[bolo24|BOLO 24]]) a borrowed playbook for its first signing and a roster plan for its second.",
+    "order": "Say **S**, **M**, or **L**. Say the block's name, or say nothing.",
+    "default": "Silence runs **M** in two waves, with [[the-take|THE TAKE]] written into the seven existing files first.",
+    "calls": [
+      {"q": "Scope", "options": "S · lane C's 12 — M · plus the 21-name core — L · all 139 as light rows", "default": "M", "s": "open"},
+      {"q": "The lessons block", "options": "THE TAKE · TRADECRAFT · THE PULL · GLEANINGS", "default": "THE TAKE", "s": "open"}
+    ]
+  },
+  "paragraphs": [
+    {
+      "id": "S", "name": "Situation", "kind": "list",
+      "plain": "Where BOLO 45 stands, in plain words: what was asked, what was ruled, what came back.",
+      "strand": {
+        "last": "Seven creator cases and a synthesis were parked at 05:26. At 13:20 you opened BOLO 45 with three asks in one breath.",
+        "plan": "Boresight first and build nothing until cleared; then run the sourced outside-the-wire pass.",
+        "you": "You named Natasha Teen as the referent, ruled everything public by default, and ordered the management recon.",
+        "next": "The three files are on disk. The scope and the block name are yours."
+      },
+      "groups": [
+        {"label": "The ask · three parts", "items": [
+          {"t": "**The manager path** — the traditional way versus the new way of becoming a manager or agency for online creators, and whether creator-first (BOLO 24 as the seed → a network → a tiered agency, \"like Natasha Teen did\") beats agency-first.", "s": "done"},
+          {"t": "**Cases for everyone on the list** — the 9/10 method across your creator list. Scope unruled: lane C's 12 · the 21-name stable core · all 139.", "s": "open"},
+          {"t": "**The lessons block** — every case file gains a section: the one business mechanic worth studying plus the tips that transfer to your own ORANGE path.", "s": "open"}
+        ]},
+        {"label": "Ruled on the loop · second transmission", "items": [
+          {"t": "**[[natasha-teen|Natasha Teen]] is the referent** and gets a case beside the other seven.", "s": "ruled"},
+          {"t": "**Everything public unless you specify.** A standing rule from here; the public-or-private question is retired.", "s": "ruled"},
+          {"t": "**The sourced pass ordered:** commission norms, legal shape, and first-person accounts from podcasts, forums and creator communities → two files.", "s": "ruled"},
+          {"t": "**Scope and the block name** go to an elementary explainer page for your call after reading.", "s": "ruled"}
+        ]},
+        {"label": "What came back · three files, one line each", "items": [
+          {"t": "**[[management-recon|The recon]]** (171 URLs) — two businesses share the word agency: the licensed booker at 10 to 15 percent and the [[ofm|OFM]] operations vendor at 20 to 50 percent or more. Fanvue is the only platform with a real agency structure. Creator-first is the documented origin of the lane (Jameson 2000 · Angel 2002 · Reid's [[ash|A.S.H.]] 2021 · Autumn's Angels · Bop House 2024). Reputation, not capital, is the barrier. [[fla-468|Florida ch. 468]] goes live the moment a second human is booked.", "s": "done", "when": "16:07"},
+          {"t": "**[[management-voices|The voices]]** (22) — nobody credible started with a roster; they started with one relationship. Creator-first operators sell the thing they built for themselves first. The commission number is the ethics map: 10 to 15 licensed · 5 to 15 the creators' own standard · 25 to 70 in OFM reality. Account control is the line. Houses break on control, not money.", "s": "done", "when": "16:08"},
+          {"t": "**[[natasha-teen|Natasha Teen]]** — she did build it. Natasha Teen Films opened its studio account on 2020-11-17 (\"agencia / modelos y producción audiovisual\"), runs a 14-model roster on AnalVids and an XVideos channel at 166K subscribers. A co-fronted studio-plus-agency: her partner Lancelot runs production, her stated job is training the new talent. No pricing, split or earnings on record. Verdict: yes on the network, partial on the agency shape.", "s": "done", "when": "16:15"}
+        ]},
+        {"label": "The false alarm · corrected", "items": [
+          {"t": "At about 16:00 a second session read the three files as dead and relaunched duplicates. The original session landed them between 16:07 and 16:15. Duplicates stood down; BOLO row and session note corrected. Lesson banked: check the other sessions before declaring a file dead.", "s": "corrected", "when": "16:16"}
+        ]}
+      ]
+    },
+    {
+      "id": "M", "name": "Mission", "kind": "mission",
+      "plain": "A mission is a task plus the reason for it. The reason outlasts the task, so the work can go on without asking you twice.",
+      "strand": {
+        "last": "The seven cases proved the method in one evening.",
+        "plan": "The same method, wider, plus one outside-the-wire read.",
+        "you": "You gave the task and the why in one transmission; the boresight extracted the intent.",
+        "next": "The end state waits only on the scope letter."
+      },
+      "task": "Extend the [[creator-case|creator-case]] method across the [[register|register]] and read the manager path from sources,",
+      "intent": "in order to give the Ultrasin studio ([[bolo24|BOLO 24]]) a borrowed playbook for its first signing and a roster plan for its second.",
+      "spoken": "\"I want a case for everyone on the list, a lessons block in every file, and a read on the creator-first to agency path, like Natasha Teen did.\"",
+      "endstate": [
+        "Every case file ends with [[the-take|THE TAKE]]: the one mechanic, the transferable tips, what does not transfer, what it feeds.",
+        "The manager question is answered from sources, with the commission map and the licensing line written down.",
+        "You can choose the wave in one letter, and the default runs if you do not."
+      ]
+    },
+    {
+      "id": "E", "name": "Execution", "kind": "phases",
+      "plain": "How it gets done, in order. One main effort; everything else supports it. Phases 1 and 2 are done; phase 3 is one letter from you.",
+      "strand": {
+        "last": "Phases 1 and 2 ran in one afternoon across two sessions.",
+        "plan": "Phase 3 is your call; 4 through 6 run without you, each file on the seven-node template.",
+        "you": "You cleared phase 1 with three rulings.",
+        "next": "Say the letter; phase 4 starts the same turn."
+      },
+      "main_effort": "The scope call → wave one. Everything else on this BOLO supports it.",
+      "phases": [
+        {"n": 1, "t": "**Boresight** — readback, the read, five questions; second transmission ruled.", "s": "done", "when": "13:20 → 15:54"},
+        {"n": 2, "t": "**The sourced pass** — [[management-recon|recon]] · [[management-voices|voices]] · the [[natasha-teen|Natasha Teen]] case.", "s": "done", "when": "16:07 → 16:15"},
+        {"n": 3, "t": "**Your two calls** — scope S / M / L · the block name. Defaults run if silent.", "s": "open", "when": "now"},
+        {"n": 4, "t": "**[[the-take|THE TAKE]] into the seven existing files** — section 10, four parts, the Variety Itsol worked example as the template.", "s": "gated", "when": "on the call"},
+        {"n": 5, "t": "**Wave S** — lane C's 12 (babylite · Bilbuana · BottomToys · Gape Game · Tweetney · Michael Vegas and the rest; Coco Lovecock · Ellexxaurus). Several are tube-only and may come back thin.", "s": "gated", "when": "about two evenings"},
+        {"n": 6, "t": "**Wave M** — the 21-name stable core (Adriana Chechik · Asa Akira · Riley Reid · Joanna Angel · Sasha Grey · Nina Hartley and the rest). The creator-turned-owner cases live here.", "s": "gated", "when": "three or four evenings"},
+        {"n": 7, "t": "**L as light rows** — one line per remaining name: business model, one lesson, one source. Full files for 139 would be the [[stall-pattern|stall pattern]] in a new hat.", "s": "gated", "when": "after M, optional"}
+      ],
+      "coord": [
+        "Template = the seven published nodes; every claim sourced; every estimate marked EST.",
+        "Public record only, business side only, everything public unless you specify.",
+        "Working endpoints from the session: the Fansly public API · fxtwitter · Wayback, Clips4Sale and ManyVids via curl. Blocked: x.com · Reddit · OnlyFans · Pornhub.",
+        "Before declaring a file dead, check the other sessions. Two ran on this BOLO at once."
+      ],
+      "running": []
+    },
+    {
+      "id": "A", "name": "Admin & Logistics", "kind": "files",
+      "plain": "What the work runs on: the files, the tools, and what each size costs. Priced in evenings, not dollars.",
+      "strand": {
+        "last": "Eight agent runs produced seven files in one evening; three more files landed this afternoon.",
+        "plan": "Same cost per file; waves priced in evenings.",
+        "you": "You pay in rulings and reading, never in money.",
+        "next": "S costs about two evenings; M another three or four."
+      },
+      "files": [
+        {"path": "BOLO.md · row 45", "what": "the tasking and every ruling on it", "s": "done"},
+        {"path": "oscar-mike/creator-cases.md", "what": "the parked card and the resume order", "s": "done"},
+        {"path": "https://claude.ai/code/artifact/68adc31f-f644-45de-881f-6d17a355021f", "what": "the explainer page: sizes, the block, the worked example", "s": "done"},
+        {"path": "_CANON_NODES/creator-management-recon.md", "what": "58 KB · 171 URLs · the two agencies, the commission map, the licensing line", "s": "done"},
+        {"path": "_CANON_NODES/creator-management-voices.md", "what": "39 KB · 22 voices · the creator-first pattern", "s": "done"},
+        {"path": "_CANON_NODES/creator-case-natasha-teen.md", "what": "the referent's case · studio-plus-agency verified", "s": "done"},
+        {"path": "_CANON_NODES/creator-case-<handle>.md × 8", "what": "the seven 9/10 cases plus Rebel Rhyder", "s": "done"},
+        {"path": "_CANON_NODES/performer-register.md", "what": "139 names · 21 core · rows link the cases", "s": "done"},
+        {"path": "_PRIVATE/BOLO-24-creator-cases-synthesis.md", "what": "the seven read together, R1 to R12 (private: venture internals)", "s": "parked"}
+      ],
+      "cost": [
+        {"k": "seven files", "v": "8 agent runs · 1 evening"},
+        {"k": "wave S", "v": "12 files · about 2 evenings"},
+        {"k": "wave M", "v": "+21 files · 3 to 4 evenings"},
+        {"k": "wave L", "v": "light rows only"},
+        {"k": "dollars", "v": "0"}
+      ]
+    },
+    {
+      "id": "C", "name": "Command & Signal", "kind": "list",
+      "plain": "Who calls what, and where to look for the answer.",
+      "strand": {
+        "last": "Two sessions ran on this BOLO at once; the record now says which did what.",
+        "plan": "One decider, one gate, defaults that run.",
+        "you": "You are the gate.",
+        "next": "One letter, one name."
+      },
+      "groups": [
+        {"label": "Who decides", "items": [
+          {"t": "**Papi** — the scope · the block name · any public/private exception.", "s": "open"},
+          {"t": "**Claude** — the method, the order of waves, the agent template ([[mission-tactics|mission tactics]]: task and intent given, method left to the one doing it).", "s": "done"},
+          {"t": "**An attorney** — [[fla-468|Florida ch. 468]], the moment a second human creator is booked into anything with a third-party payer.", "s": "gated"}
+        ]},
+        {"label": "The gate", "items": [
+          {"t": "**HOLD on the two calls.** Converts on your word. Silence after this page is read as the defaults: M in two waves, [[the-take|THE TAKE]].", "s": "held"}
+        ]},
+        {"label": "Prowords in play", "items": [
+          {"t": "[[boresight]] — loop open, clears on the call · [[how-copy|how copy]] · [[oscar-mike|Oscar Mike]] — the card · **status on BOLO 45** — this page.", "s": "open"}
+        ]},
+        {"label": "Where status lives", "items": [
+          {"t": "BOLO.md row 45 · this page · the card · the [[sitrep|sit rep]]'s Block I and Block V.", "s": "done"}
+        ]}
+      ]
+    },
+    {
+      "id": "L", "name": "Log", "kind": "log",
+      "plain": "Every transmission on this BOLO, in order. Who said what, and what happened next.",
+      "strand": {
+        "last": "Thirteen entries in one day.",
+        "plan": "The log grows one line per transmission; nothing is rewritten, corrections are appended.",
+        "you": "Eight of the thirteen are your words.",
+        "next": "The next line is your letter."
+      },
+      "entries": [
+        {"when": "9/10 ~03:00", "who": "Papi", "t": "Order one: Kirenes and AlexBreeCooper to the register; cases on AlexBreeCooper, Lexa Lite, Kirenes."},
+        {"when": "9/10 ~03:50", "who": "Papi", "t": "Order two: Siswet, the NASA girl, Variety Itsol; publish each as its own file in the lexicon."},
+        {"when": "9/10 ~04:20", "who": "Papi", "t": "Order three: the synthesis; then \"go\" on the rendered page."},
+        {"when": "9/10 05:26", "who": "Papi", "t": "Oscar Mike → the creator-cases card, five-step resume order."},
+        {"when": "9/10 13:20", "who": "Papi", "t": "BOLO 45 spoken: the manager path · cases for everyone · the lessons block. Boresight called."},
+        {"when": "9/10 13:20", "who": "Claude", "t": "First transmission: readback, the read, five questions."},
+        {"when": "9/10 15:54", "who": "Papi", "t": "Second transmission ruled: Natasha Teen · everything public · the recon ordered · Q2 and Q4 to an explainer."},
+        {"when": "9/10 15:54", "who": "Claude", "t": "Explainer page published; three agents launched."},
+        {"when": "9/10 ~16:00", "who": "Claude · session 2", "t": "Sit rep reads the three files as missing; duplicates launched."},
+        {"when": "9/10 16:07 → 16:15", "who": "agents · session 1", "t": "Recon, voices, and the Natasha Teen case land."},
+        {"when": "9/10 16:16", "who": "Claude · session 2", "t": "Duplicates stood down on the peer's message; record corrected."},
+        {"when": "9/10 evening", "who": "Papi", "t": "The NASA girl ruled: [[rebel-rhyder|Rebel Rhyder]] (BOLO 24's lane). Her case landed the same night."},
+        {"when": "9/10 evening", "who": "Papi", "t": "\"Give me the status on BOLO 45\" → this page ordered, on the five-paragraph order and the three."}
+      ]
+    }
+  ]
+}

@@ -101,6 +101,20 @@
   .light small { color: var(--ink-3); }
   .theme { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; border: 1px solid var(--line-2); color: var(--ink-2); }
   .theme:hover { border-color: var(--accent); color: var(--ink); }
+  /* the big glossary button (Papi, 9/10: "a big button I can click on from the sit rep page") */
+  .gloss { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 6px 16px; margin-right: 12px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1; text-transform: uppercase; letter-spacing: .03em; border: 2px solid var(--accent); }
+  .gloss small { font-family: var(--mono); font-weight: 400; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; opacity: .9; margin-top: 3px; }
+  .gloss:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+  .gloss.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+  /* the glossary page view */
+  .gsearch { width: 100%; max-width: 520px; font: 16px var(--body); padding: 9px 12px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); margin-bottom: 6px; }
+  .gpage { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px 22px; margin-top: 6px; }
+  .gent { padding: 10px 0 12px; border-bottom: 1px solid var(--line); }
+  .gent .gw { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .gent .gw .t { font-family: var(--display); font-weight: 700; font-size: 22px; text-transform: uppercase; letter-spacing: .01em; border-bottom-width: 2px; }
+  .gent p { margin: 0; font-size: 15.5px; line-height: 1.45; }
+  .gent .w { margin-top: 6px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .ol-row.gl-row { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 14px; }
   .effort { grid-column: 1 / -1; display: flex; gap: 22px; align-items: center; padding: 6px 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--ink-2); flex-wrap: wrap; }
   .effort b { color: var(--bad); font-weight: 500; }
   .effort .k { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; margin-right: 6px; }
@@ -326,7 +340,7 @@
   <footer class="foot">
     <span><kbd>0</kbd>–<kbd>7</kbd> block</span>
     <span><kbd>←</kbd><kbd>→</kbd> prev · next</span>
-    <span><kbd>G</kbd> glossary</span>
+    <span><kbd>G</kbd> glossary page</span>
     <span><kbd>T</kbd> theme</span>
     <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
     <span class="r" id="footR"></span>
@@ -365,7 +379,7 @@ const M = B.meta;
 $('#brandSub').textContent = `${M.date} · ${M.when} · ${M.version}`;
 $('#stats').innerHTML = M.stats.map(s => `<div class="stat s-${s.s || ''}"><b class="num">${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join('');
 $('#box').innerHTML = M.box.map(b => `<div class="light ${b.up ? 'up' : ''}"><i></i><a class="t" data-t="${b.k}" tabindex="0">${esc(b.name)}</a><small>${esc(b.port)} · ${b.up ? 'UP' : 'DOWN'}</small></div>`).join('')
-  + `<button class="theme" id="themeBtn" title="T">theme</button>`;
+  + `<button class="gloss" id="glossBtn" title="G">Glossary<small>every proword</small></button><button class="theme" id="themeBtn" title="T">theme</button>`;
 $('#effort').innerHTML = `<span><span class="k">main effort</span>${md(M.main_effort)}</span>`
   + `<span><span class="k">rack</span>${esc(M.rack.flushed)} · staged ${esc(M.rack.staged)}</span>`
   + `<span><span class="k">tree</span>${esc(M.tree)} · stack ${esc(M.stack)}</span>`
@@ -375,7 +389,8 @@ $('#footR').textContent = `${M.date} · trigger: ${M.trigger}`;
 /* ---- outliner ---- */
 const blocks = B.blocks;
 const countOf = b => b.items ? b.items.length : b.groups ? b.groups.reduce((n, g) => n + g.items.length, 0) : b.rows ? b.rows.length : b.soi ? b.soi.length : 1;
-$('#olRows').innerHTML = blocks.map((b, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">Block ${esc(b.id)}</span><span class="name">${esc(b.name)}</span></span><span class="key">${i}</span></button>`).join('');
+$('#olRows').innerHTML = blocks.map((b, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">Block ${esc(b.id)}</span><span class="name">${esc(b.name)}</span></span><span class="key">${i}</span></button>`).join('')
+  + `<button class="ol-row gl-row" data-g="1"><span class="node"><i></i></span><span><span class="id">SOI</span><span class="name">Glossary</span></span><span class="key">G</span></button>`;
 $('#olFoot').innerHTML = `<b>${M.agents.length}</b> agents in flight<br><b>${countOf(blocks[4])}</b> decisions are yours`;
 
 /* ---- panel renderers ---- */
@@ -424,15 +439,47 @@ function render(b) {
     <div class="c"><span class="lbl">What's next</span><p>${md(s.next)}</p></div></div>
     <div class="sec"><span class="lbl">In flight</span><div class="runs">${M.agents.map(a => `<div class="run"><i></i><div>${esc(a.name)}<small>${esc(a.from)}</small></div></div>`).join('')}</div></div>`;
 }
-let cur = 0;
+let cur = 0, glossaryOpen = false;
 function go(i) {
   cur = Math.max(0, Math.min(blocks.length - 1, i));
-  document.querySelectorAll('.ol-row').forEach((r, j) => r.classList.toggle('on', j === cur));
+  glossaryOpen = false;
+  document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', !r.dataset.g && +r.dataset.i === cur));
+  $('#glossBtn').classList.remove('on');
   closeTips(0);
   render(blocks[cur]);
-  try { localStorage.setItem('sitrep_block', String(cur)); } catch (e) {}
+  try { localStorage.setItem('sitrep_block', String(cur)); history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
 }
-$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (r) go(+r.dataset.i); });
+/* ---- the glossary page: every proword and board word, from the same register the tooltips use ---- */
+const KIND_ORDER = ['proword', 'noun', 'ruling', 'system', 'item', 'person'];
+const KIND_LABEL = { proword: 'Prowords · say one and the protocol fires', noun: 'Board nouns', ruling: 'Rulings and doctrine', system: 'Systems and programs', item: 'Items on the board', person: 'People' };
+const stChip = st => st ? `<span class="chip st-${st === 'ruled' ? 'ruled' : st === 'benched' ? 'parked' : 'open'}">${st}</span>` : '';
+function showGlossaryPage() {
+  glossaryOpen = true;
+  document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', !!r.dataset.g));
+  $('#glossBtn').classList.add('on');
+  closeTips(0);
+  const entries = Object.entries(G);
+  const secs = KIND_ORDER.map(kind => {
+    const rows = entries.filter(([k, g]) => g.k === kind).sort((a, b) => a[1].t.localeCompare(b[1].t));
+    if (!rows.length) return '';
+    return `<div class="grp"><span class="lbl">${KIND_LABEL[kind]} <em>· ${rows.length}</em></span><div class="gpage">${rows.map(([k, g]) =>
+      `<div class="gent"><div class="gw"><a class="t" data-t="${k}" tabindex="0">${esc(g.t)}</a>${stChip(g.st)}</div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div></div>`).join('')}</div></div>`;
+  }).join('');
+  const np = entries.filter(([k, g]) => g.k === 'proword').length;
+  $('#panel').innerHTML = `<div class="frame"><div class="bh"><span class="eyebrow">SOI · the house tongue</span><span class="src">${entries.length} terms · ${np} prowords</span></div>
+    <h2 class="bt">Glossary</h2><p class="plain">Every proword and every board word, in one place. Say a proword and the protocol fires. Terms inside a definition are live: hover, hold, click.</p>
+    <input class="gsearch" id="gpageSearch" type="search" placeholder="Search the tongue…" autocomplete="off">${secs}</div>`;
+  $('#panel').scrollTop = 0;
+  $('#gpageSearch').addEventListener('input', e => { const v = e.target.value.trim().toLowerCase(); document.querySelectorAll('.gent').forEach(el => { el.hidden = !!v && !el.textContent.toLowerCase().includes(v); }); });
+  $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
+    <div class="c"><span class="lbl">What this is</span><p>The house tongue. The Marine Corps vocabulary is the bootstrap; native coinages replace it as the operation matures (SOP §6).</p></div>
+    <div class="c"><span class="lbl">Where it lives</span><p>SOP.md §0 is the card, §1 the definitions, §5 the open naming rulings, §8 the dictation codebook. This page is built from the same register the tooltips use.</p></div>
+    <div class="c"><span class="lbl">What you did</span><p>Ruled BOLO, boresight, break-break and buttonhook back, coined the OUT block, and ordered this page on 9/10.</p></div>
+    <div class="c"><span class="lbl">What's next</span><p>BOLO 37 moves proword rulings into a daily selection loop; the benched words wait in it. Name the loop and the bench empties.</p></div></div>`;
+  try { history.replaceState(null, '', '#glossary'); } catch (e) {}
+}
+$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (!r) return; if (r.dataset.g) showGlossaryPage(); else go(+r.dataset.i); });
+$('#glossBtn').addEventListener('click', () => glossaryOpen ? go(cur) : showGlossaryPage());
 
 /* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */
 let tips = [];
@@ -546,11 +593,10 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') { go(cur - 1); return; }
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else closeGlossary(); return; }
   if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
-  if (e.key === 'g' || e.key === 'G') { $('#rail').classList.contains('gl') ? closeGlossary() : openGlossary(); return; }
+  if (e.key === 'g' || e.key === 'G') { glossaryOpen ? go(cur) : showGlossaryPage(); return; }
   if (e.key === 't' || e.key === 'T') { $('#themeBtn').click(); return; }
   if ((e.key === 'b' || e.key === 'B') && $('#rail').classList.contains('gl')) { const bb = $('#glBack'); if (bb) bb.click(); }
 });
 
-let start = 0; try { start = +(localStorage.getItem('sitrep_block') || 0) || 0; } catch (e) {}
-go(0); /* every board opens on Block 0: last session first */
+if (location.hash === '#glossary') showGlossaryPage(); else go(0); /* every board opens on Block 0: last session first */
 </script>
