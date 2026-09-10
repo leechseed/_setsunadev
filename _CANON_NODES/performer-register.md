@@ -21,7 +21,7 @@ links:
   - "[[L2b-morphology-gluteal]]"
   - "[[ULTRASIN-physique-watchlist]]"
 captured: 2026-09-08
-updated: 2026-09-10
+updated: 2026-09-10 (evening — creator-case nodes published; Siswet · Variety Itsol · Natasha Teen rows revised)
 ---
 
 # THE PERFORMER REGISTER
@@ -84,7 +84,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Lisa Ann | P | F | 3 | B·H·J | 2023 | — | — |  | — |
 | Dakota Tyler | P | F | 3 | I·K·M | n.d. | 4 | 1 | bold in K | — |
 | Dana Vespoli | P | F | 3 | H·K·M | n.d. | 2 | 0 | bold in K | — |
-| **Natasha Teen** ★ | P | F | 3 | I·K·M | n.d. | 21 | 6 | bold in K; starred by Papi 9/9 (spoken, spelled T-E-E-N); tied with Variety Itsol for the top five-star count on the roster (6) | — |
+| **Natasha Teen** ★ | P | F | 3 | I·K·M | n.d. | 21 | 6 | bold in K; starred by Papi 9/9 (spoken, spelled T-E-E-N); was tied with Variety Itsol at 6 on 9/9 — the 9/10 Stash recount puts Variety Itsol at 9, Natasha Teen second | — |
 | Anna Bell Peaks | P | F | 2 | A·M | 2022 | — | — | A tail list: 'Anna Bell Peaks VR' | — |
 | Arabelle Raphael | P | F | 2 | A·M | 2022 | 11 | 1 |  | — |
 | Cherry Crush | E | F | 2 | A·B | 2022 | — | — | on the A performer tail list and the e-girl roster; MyCherryCrush; influence order #4 | — |
@@ -187,7 +187,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Syren De Mer | P | F | 1 | M | 2025 | 20 | 1 |  | — |
 | Eris Nova | P | — | 1 | S | 2026 | — | — | spoken 9/8, spelled out E-R-I-S-N-O-V-A; not in Stash | — |
 | Lina Vesper | P | — | 1 | S | 2026 | — | — | spoken 9/8; spelling as heard, not in Stash | — |
-| Variety Itsol | P | T | 1 | S | 2026 | 8 | 6 | spoken 9/8; was the gooner lane's top trans name (6 five-star scenes), promoted to the roster by Papi's word | — |
+| Variety Itsol | P | T | 1 | S | 2026 | 12 | 9 | spoken 9/8; was the gooner lane's top trans name, promoted to the roster by Papi's word; Stash recount 9/10: 12 attributed / **9 five-star — the top five-star name on the roster** (studios on the attributed scenes: Rodrigo Amor · AJ Fresh XXX · Tgirls.porn); 9/10 study → [creator-case-variety-itsol](creator-case-variety-itsol.md): US (Little Rock → Las Vegas), veteran, trans woman (she/her on Fansly · she/they on X), career 2021, solo + studio from day one (Grooby Girls · Bob's TGirls · Flourish Fetish); PH 65.7K subs / 24.7M views (Aug 2026), X 103.6K; OF $5.99 → Fansly $11.99, C4S $3.99–24.99; on record: AVN Fresh Faces 2024 · And Now We Drink ep. 426 (2025) · a 2023 YouTube show; no earnings anywhere | @Varietyitsol |
 | **Cream Factory** ★ | P | M | 1 | S | 2026 | — | — | spoken 9/9: "a big booty fit white bottom that takes black dick — very inspirational"; the first man on the P roster by Papi's word; not in Stash under name, alias, tag, studio or title; male gluteal reference for BOLO 23 / L2b | — |
 | **BBXL** ★ | P | M | 1 | S | 2026 | — | — | spoken 9/9 as "BBXL", handle supplied by Papi (the X column's first filled cell); second man on the P roster; not in Stash under name, alias, tag, studio, title or URL — one unrated scene titled "Boybutt XXL compilation" (Stash id 20364) is a possible match, unattributed until Papi says so; X profile unreadable from the session (402), the data pull = the BOLO 13 pattern (gallery-dl + Firefox cookies) | @BButtXXL |
 | AlexBreeCooper | C | F | 1 | S | 2026 | 64 | 0 | spoken 9/10, spelled A-L-E-X-B-R-E-E-C-O-O-P-E-R; solo, self-produced, part-time around a day job, Australia; persona live since Jun 2021, Fansly hub since Aug 2021 ($129.90–150/mo, the rule: no PPV while subscribed), tubes as the funnel (Pornhub 94.7K subs / 35.9M views, May 2026), Fansly Top-100 badge ×5; no interview or study exists — node [creator-case-alexbreecooper](creator-case-alexbreecooper.md); in Stash as AlexBreeCooper (id 1240), 64 attributed scenes, none rated; the `AlexBreeCooper` folder holds 256 files, 192 still unattributed | @alexbreecooper |
