@@ -9,16 +9,16 @@
  "oscar-mike": {
   "t": "Oscar Mike",
   "k": "proword",
-  "d": "Park the current work in oscar-mike/ and move on. [[sweep|Sweep]] later promotes the keepers. Every park ends with the OUT block.",
+  "d": "Park the current work in oscar-mike/ and move on. [[charlie-mike|Charlie Mike]] resumes a card; [[rtb|RTB]] later sends the keepers home and clears the folder. Every park ends with the OUT block.",
   "w": "SOP.md §1 · oscar-mike/INDEX.md",
   "st": "ruled"
  },
  "sweep": {
   "t": "sweep",
   "k": "proword",
-  "d": "Promote the parked keepers to their real homes and clear oscar-mike/.",
+  "d": "Retired 9/10, replaced by [[rtb|RTB]]. Was: promote the parked keepers to their real homes and clear oscar-mike/.",
   "w": "SOP.md §1",
-  "st": "ruled"
+  "st": "retired"
  },
  "how-copy": {
   "t": "how copy?",
@@ -284,8 +284,9 @@
  "the-take": {
   "t": "THE TAKE",
   "k": "item",
-  "d": "Default name for the lessons block: section 10 of every [[creator-case|creator case]], four parts (the one mechanic · transferable tips · does not transfer · feeds). Bench: TRADECRAFT · THE PULL · GLEANINGS. Runs as the default if you say nothing.",
-  "w": "explainer page · BOLO 45"
+  "d": "The placeholder name for the lessons block on each creator case. Ruled [[ttp|TTP]] on 9/10.",
+  "w": "explainer page · BOLO 45",
+  "st": "retired"
  },
  "creator-case": {
   "t": "creator case",
@@ -525,5 +526,33 @@
   "st": "benched",
   "d": "Recommended name for the sit rep front page program: the Navy's briefing room, sibling of DARKROOM and WARROOM. Bench: OPSROOM · FRONTPAGE · THE BOARD. Your ruling.",
   "w": "BOLO.md #38"
+ },
+ "ttp": {
+  "t": "TTP",
+  "k": "item",
+  "d": "Tactics, Techniques and Procedures. Section 10 of every [[creator-case|creator case]]: the one mechanic worth studying, three to five transferable tips, what does not transfer, and which venture it feeds. Named by Papi 9/10 from the Corps bench (GOUGE was the provisional header); struck alternatives THE TAKE, LESSONS LEARNED, HOT WASH.",
+  "w": "SOP.md §5 · _CANON_NODES/creator-case-*.md §10",
+  "st": "ruled"
+ },
+ "rtb": {
+  "t": "RTB",
+  "k": "proword",
+  "d": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, the folder cleared. Papi's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]].",
+  "w": "SOP.md §1",
+  "st": "ruled"
+ },
+ "charlie-mike": {
+  "t": "Charlie Mike",
+  "k": "proword",
+  "d": "Continue mission. Resume a parked card: open it, one line on where it stood, pick up at its resume order, no re-derivation. Ruled 9/10. The park trio is Oscar Mike (park), Charlie Mike (resume), [[rtb|RTB]] (return to base).",
+  "w": "SOP.md §1",
+  "st": "ruled"
+ },
+ "gouge": {
+  "t": "GOUGE",
+  "k": "item",
+  "d": "Navy and Marine slang for the essential distilled information. Recommended 9/10 as the name for the creator-case lessons block and used as its provisional header for a few hours; Papi ruled [[ttp|TTP]] instead. Bench only.",
+  "w": "SOP.md §5",
+  "st": "retired"
  }
 }
