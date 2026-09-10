@@ -170,6 +170,7 @@ A session that answers "sit rep" without all five has not answered it.
 | TDP · teepee · T T P · sucking (in a creator-case naming context, 9/10 garble) | **TTP** — the lessons block, section 10 of every creator case (RULED 9/10) |
 | our TB · R T B · return to base · sweep (spoken by habit) | **RTB** — return to base: promote the parked keepers, clear `oscar-mike/` (RULED 9/10) |
 | Charlie Mike · Charley Mike · CM (spoken alone) | **Charlie Mike** — continue mission, resume the parked card (RULED 9/10) |
+| Ebola · a bolo · the bolo (spoken) | **BOLO** — the watchlist / a BOLO row; "BOLO status page" = **FRAGO** |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |
