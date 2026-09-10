@@ -146,7 +146,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Julia and Lauren Burch | E | F | 1 | B | 2023 | — | — | the Gloom e-girls; influence order #3 | — |
 | Lisa Manoban | O | F | 1 | B | 2023 | — | — | K-pop; "and the way she moves" (B, closing line) | — |
 | Michael Vegas | C | M | 1 | X | 2023 | 2 | 0 | analyze how his content and business evolved from his first videos to his most recent; written 'Michael Vargas'; the link is michael-vegas | — |
-| PeggingOnlyOfficial | C | F+M | 1 | X | 2023 | — | — | a subniche to expand into; blur the gay gaze and the straight gaze | — |
+| PeggingOnlyOfficial | C | F+M | 1 | X | 2023 | — | — | a subniche to expand into; blur the gay gaze and the straight gaze; 9/10 study → solo US channel, not a couple (every bio first-person, self-set field male — F+M cell left for Papi's call); category-noun handle since 2018 (X 199K); Pornhub 8.2K→20.5K subs 2023–26; Fansly $5/$9.99/$50 + Top-500 badge; C4S 303 clips $27–40; the strap-on and B/G lines sold as two cross-linked stores under one owner — node [creator-case-peggingonlyofficial](creator-case-peggingonlyofficial.md) | @PeggingOnly |
 | Sadie Pop | P | F | 1 | B | 2023 | 2 | 0 |  | — |
 | Savannah Bond | P | F | 1 | J | 2023 | — | — |  | — |
 | Shirogane Sama | E | F | 1 | B | 2023 | — | — |  | — |
