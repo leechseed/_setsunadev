@@ -184,7 +184,7 @@ Read: **two uploads carry the entire page** — 36 → 22.7K subscribers in ~12 
 
 **Tooling note:** Wayback dropped the connection on roughly half the CDX and snapshot calls tonight; `--retry` plus a second pass recovered everything except the two 2026 X captures. Windows Python needs `PYTHONIOENCODING=utf-8` and explicit `encoding='utf-8'` or the emoji in these bios crash the parse.
 
-## 10 · GOUGE
+## 10 · TTP
 
 **The one mechanic.** The face is the top tier. Everything else in the record is a well-run version of the standard amateur stack, but the price card is unusual: the base subscription ($20) is explicitly the *complete* catalog — "NO PPV" is the brand, "ALL VIDEOS AND PICS FREE WHEN U SUBSCRIBE" is the bio — and the only thing withheld from it is her face, which is sold as "ELITES" at $50 with BTS and DM priority bundled in. The anonymity that lets her post as "under ur bed" with a struck-through name on a million-follower X account is not a cost of doing business; it is the inventory of the second tier. That makes a masked persona *more* monetizable than an unmasked one, provided the base tier is generous enough to feel complete — and the six leaderboard badges say the structure holds up against creators who sell the face for free.
 

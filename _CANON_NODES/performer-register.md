@@ -177,7 +177,7 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Tera Patrick | P | F | 1 | H | n.d. | — | — |  | — |
 | Veronica Avluv | P | F | 1 | K | n.d. | 13 | 5 | bold in K | — |
 | Coco Lovecock | C | F | 1 | M | 2025 | 5 | 0 |  | — |
-| Ellexxaurus | C | — | 1 | M | 2025 | — | — |  | — |
+| Ellexxaurus | C | F | 1 | M | 2025 | — | — | 9/10 study → from the 2025 list (M); real handle is two-x, verified 9/10; solo face-withheld amateur, UK per Pornhub self-set field; NO-PPV Fansly $20 / face-gated ELITES $50, six leaderboard badges; original X lost ~early 2025, rebuilt to 1.0M by 9/10 on pre-built backups; no press, no earnings; sex settles F — node [creator-case-ellexxaurus](creator-case-ellexxaurus.md) | @ellexxaurus |
 | Faye Reagan | P | F | 1 | M | 2025 | — | — |  | — |
 | Gianna Michaels | P | F | 1 | M | 2025 | 4 | 1 |  | — |
 | Lola Faye | P | NB | 1 | M | 2025 | 6 | 2 |  | — |
