@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<title>BOLO 45</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* ---- the BRIEF colorway (ruled 2026-09-10): the creator-cases explainer palette, the default for every internal board ---- */
+  :root {
+    --bg: #EEF0F3; --panel: #FFFFFF; --panel-2: #E4E7EC;
+    --ink: #14171C; --ink-2: #4B5260; --ink-3: #7A8291;
+    --accent: #FF5A1F; --accent-ink: #C23C0A; --accent-soft: #FFE6DB;
+    --link: #C23C0A; --good: #1F7A4D; --good-soft: #DDF3E6; --warn: #6B5A2A; --warn-soft: #F3E7C9; --bad: #A8323E; --bad-soft: #F8DEE1; --help: #4B5260;
+    --mark: #F3E7C9;
+    --orange: #C23C0A; --orange-soft: #FFE6DB;
+    --line: #CFD4DC; --line-2: #B4BBC6;
+    --grid: color-mix(in srgb, var(--ink) 6%, transparent);
+    --shadow: 0 1px 2px rgba(20,23,28,.06), 0 8px 24px rgba(20,23,28,.10);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+      --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+      --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+      --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
+      --mark: #3A3320;
+      --orange: #FF8F62; --orange-soft: #3A2117;
+      --line: #2B313B; --line-2: #3C4452;
+      --grid: color-mix(in srgb, var(--ink) 8%, transparent);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
+    --mark: #3A3320;
+    --orange: #FF8F62; --orange-soft: #3A2117;
+    --line: #2B313B; --line-2: #3C4452;
+    --grid: color-mix(in srgb, var(--ink) 8%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); background-image: radial-gradient(var(--grid) 1px, transparent 1px); background-size: 22px 22px; font-family: var(--body); font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow: hidden; }
+  a { color: var(--link); }
+  strong { font-weight: 700; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  button:focus-visible, .t:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ::selection { background: var(--mark); }
+  .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+  .t { color: var(--link); text-decoration: none; border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+
+  /* ---- frame: head (identity + mantra + frago) / ol · panel · rail / foot ---- */
+  .app { height: 100vh; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 236px minmax(0, 1fr) 316px; grid-template-areas: "head head head" "ol panel rail" "foot foot foot"; }
+  header.head { grid-area: head; display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 80%, transparent); backdrop-filter: blur(6px); }
+  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; }
+  .brand { display: flex; align-items: center; gap: 16px; padding: 10px 18px; border-right: 1px solid var(--line); min-width: 236px; }
+  .brand .mono-n { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: .01em; }
+  .brand .mono-n small { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-ink); font-weight: 500; margin-bottom: 2px; }
+  .ttl { display: flex; flex-direction: column; justify-content: center; padding: 10px 18px; flex: 1; min-width: 0; }
+  .ttl h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 28px; line-height: 1; text-transform: uppercase; letter-spacing: .01em; text-wrap: balance; }
+  .ttl .meta { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-top: 8px; font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+  .ttl .meta .k { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; margin-right: 4px; }
+  .box { display: flex; align-items: center; gap: 12px; padding: 0 18px; border-left: 1px solid var(--line); }
+  .theme { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .theme:hover { border-color: var(--accent); color: var(--ink); }
+  .gloss { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 6px 16px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1; text-transform: uppercase; letter-spacing: .03em; border: 2px solid var(--accent); }
+  .gloss small { font-family: var(--mono); font-weight: 400; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; opacity: .9; margin-top: 3px; }
+  .gloss:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+  .gloss.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+
+  /* the three: speed · focus · boldness */
+  .mantra { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+  .mantra > div { padding: 8px 18px; border-right: 1px solid var(--line); display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: baseline; }
+  .mantra > div:last-child { border-right: 0; }
+  .mantra .w { font-family: var(--display); font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; }
+  .mantra .w .t { border-bottom-width: 2px; }
+  .mantra p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.4; }
+
+  /* the FRAGO strip: mission · the order · your calls — always visible, action first */
+  .frago { display: grid; grid-template-columns: 1.2fr 1fr 1fr; border-top: 1px solid var(--line-2); background: var(--panel); }
+  .frago > div { padding: 14px 18px 16px; border-right: 1px solid var(--line); min-width: 0; }
+  .frago > div:last-child { border-right: 0; }
+  .frago .lbl { display: block; margin-bottom: 6px; color: var(--accent-ink); }
+  .frago .mission { font-size: 17px; line-height: 1.45; }
+  .frago .order { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; letter-spacing: .01em; margin: 2px 0 8px; }
+  .frago .default { font-size: 14.5px; color: var(--ink-2); line-height: 1.45; }
+  .frago .order strong { color: var(--accent-ink); }
+  .call { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: baseline; padding: 6px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
+  .call:last-child { border-bottom: 0; }
+  .call b { font-family: var(--display); font-weight: 700; font-size: 18px; text-transform: uppercase; }
+  .call .opts { color: var(--ink-2); font-size: 13.5px; }
+  .call .def { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .call .def em { font-style: normal; color: var(--accent-ink); font-weight: 500; }
+
+  /* ---- outliner (the five paragraphs + log + glossary) ---- */
+  nav.ol { grid-area: ol; border-right: 1px solid var(--line-2); padding: 18px 0; overflow-y: auto; position: relative; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  nav.ol .lbl { padding: 0 18px 10px; display: block; }
+  .ol-row { display: grid; grid-template-columns: 30px 1fr auto; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 9px 14px 9px 18px; position: relative; color: var(--ink-2); border-left: 3px solid transparent; }
+  .ol-row .node { width: 30px; display: flex; align-items: center; justify-content: center; }
+  .ol-row .node i { width: 9px; height: 9px; border: 1.5px solid var(--ink-3); border-radius: 50%; background: var(--bg); position: relative; z-index: 1; }
+  .ol-row .name { font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.05; text-transform: uppercase; letter-spacing: .01em; }
+  .ol-row .id { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; color: var(--ink-3); display: block; margin-bottom: 2px; }
+  .ol-row .key { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); border: 1px solid var(--line-2); padding: 1px 5px; }
+  .ol-row:hover { color: var(--ink); background: color-mix(in srgb, var(--panel-2) 60%, transparent); }
+  .ol-row.on { color: var(--ink); background: var(--panel-2); border-left-color: var(--accent); }
+  .ol-row.on .node i { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .ol-row.gl-row { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 14px; }
+  nav.ol .strand { position: absolute; left: 32.5px; top: 46px; bottom: 30px; width: 1px; background: var(--line-2); }
+  nav.ol .foot { padding: 18px 18px 0; font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-height: 1.7; }
+  nav.ol .foot b { color: var(--ink-2); font-weight: 500; }
+
+  /* ---- panel ---- */
+  main.panel { grid-area: panel; overflow-y: auto; padding: 26px 34px 40px; position: relative; }
+  .frame { position: relative; padding-top: 4px; }
+  .frame::before, .frame::after { content: ""; position: absolute; width: 16px; height: 16px; border: 1px solid var(--ink-3); pointer-events: none; }
+  .frame::before { top: -6px; left: -14px; border-right: 0; border-bottom: 0; }
+  .frame::after { bottom: -8px; right: -14px; border-left: 0; border-top: 0; }
+  .bh { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
+  .bh .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-ink); }
+  .bh .src { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-left: auto; }
+  h2.bt { margin: 0 0 12px; font-family: var(--display); font-weight: 800; font-size: clamp(36px, 4.2vw, 52px); line-height: .95; text-transform: uppercase; text-wrap: balance; }
+  p.plain { margin: 0 0 22px; font-size: 18px; line-height: 1.5; color: var(--ink-2); max-width: 66ch; }
+  .grp { margin-top: 18px; }
+  .grp > .lbl { display: flex; align-items: center; gap: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--line-2); margin-bottom: 4px; color: var(--ink-2); }
+  .grp > .lbl em { font-style: normal; color: var(--ink-3); letter-spacing: 0; text-transform: none; font-size: 12px; }
+  .items { list-style: none; margin: 0; padding: 0; }
+  .item { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .item:last-child { border-bottom: 0; }
+  .item .n { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; color: var(--ink-3); min-width: 30px; text-align: right; padding-top: 2px; }
+  .item .text { font-size: 17px; line-height: 1.5; }
+  .item .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+  .when { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px; border: 1px solid currentColor; line-height: 1.5; white-space: nowrap; }
+  .st-hot { color: var(--accent); } .st-hot i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulse 1.6s ease-in-out infinite; }
+  .st-open { color: var(--warn); } .st-held { color: var(--warn); border-style: dashed; }
+  .st-gated, .st-parked { color: var(--ink-3); }
+  .st-done, .st-ruled, .st-good { color: var(--good); }
+  .st-bad, .st-missing { color: var(--bad); }
+  .st-corrected, .st-new { color: var(--help); }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+  .tr { display: inline-flex; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; line-height: 1.5; }
+  .tr span { padding: 2px 7px; border: 1px solid var(--ink); }
+  .tr .b { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .tr .o { background: var(--orange-soft); color: var(--orange); border-color: var(--orange); }
+  .tr .p { color: var(--ink-2); border-color: var(--ink-3); border-style: dashed; }
+  .tr span + span { margin-left: -1px; }
+
+  /* mission paragraph */
+  .msn { margin-top: 8px; padding: 26px 30px; border: 1px solid var(--line-2); background: var(--panel); position: relative; max-width: 80ch; }
+  .msn::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
+  .msn .task { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.05; text-transform: uppercase; margin: 0; }
+  .msn .intent { font-family: var(--display); font-weight: 600; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.1; color: var(--accent-ink); margin: 8px 0 0; }
+  .msn .spoken { margin: 18px 0 0; padding-top: 14px; border-top: 1px dashed var(--line); font-style: italic; color: var(--ink-2); font-size: 16px; }
+  .end { margin-top: 20px; }
+  .end ol { margin: 6px 0 0; padding-left: 22px; display: grid; gap: 6px; font-size: 16.5px; }
+
+  /* execution: phases */
+  .me { margin: 6px 0 18px; padding: 14px 18px; border: 1px solid var(--accent); background: var(--accent-soft); font-size: 16.5px; }
+  .me .lbl { display: block; color: var(--accent-ink); margin-bottom: 4px; }
+  .ph { display: grid; grid-template-columns: 44px 1fr auto; gap: 8px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
+  .ph .n { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--ink-3); text-align: right; }
+  .ph.done .n { color: var(--good); } .ph.open .n { color: var(--accent); }
+  .ph .text { font-size: 16.5px; }
+  .ph .right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .coord { margin-top: 18px; }
+  .coord ul { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 5px; font-size: 15.5px; color: var(--ink-2); }
+
+  /* admin: files + cost */
+  .tblwrap { overflow-x: auto; }
+  table.files { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 15px; }
+  table.files th { text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line-2); }
+  table.files td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.files td.p { font-family: var(--mono); font-size: 12.5px; overflow-wrap: anywhere; }
+  .cost { display: flex; flex-wrap: wrap; gap: 0; margin-top: 18px; border-top: 2px solid var(--ink); }
+  .cost div { padding: 12px 26px 12px 0; margin-right: 26px; }
+  .cost b { display: block; font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; }
+  .cost span { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: 5px; }
+
+  /* log */
+  .log { border-left: 3px solid var(--line); margin-top: 8px; }
+  .lg { display: grid; grid-template-columns: 130px 130px 1fr; gap: 16px; padding: 12px 0 12px 22px; border-bottom: 1px solid var(--line); position: relative; font-size: 15.5px; }
+  .lg::before { content: ""; position: absolute; left: -8px; top: 19px; width: 11px; height: 11px; background: var(--accent); border: 3px solid var(--bg); box-sizing: content-box; }
+  .lg.claude::before { background: var(--ink-3); }
+  .lg .when { padding-top: 3px; }
+  .lg .who { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); padding-top: 3px; }
+
+  /* ---- rail ---- */
+  aside.rail { grid-area: rail; border-left: 1px solid var(--line-2); overflow-y: auto; padding: 20px 20px 24px; background: color-mix(in srgb, var(--panel) 55%, transparent); display: flex; flex-direction: column; gap: 18px; }
+  .rail h4 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: .02em; }
+  .ctx { display: grid; gap: 14px; }
+  .ctx .c { padding-left: 12px; border-left: 2px solid var(--line-2); }
+  .ctx .c .lbl { display: block; margin-bottom: 4px; color: var(--accent-ink); }
+  .ctx .c p { margin: 0; font-size: 15.5px; line-height: 1.5; }
+  .rail .sec { border-top: 1px solid var(--line); padding-top: 14px; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-family: var(--mono); font-size: 12px; margin-top: 8px; }
+  .kv dt { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; padding-top: 2px; }
+  .kv dd { margin: 0; color: var(--ink-2); overflow-wrap: anywhere; }
+  aside.rail.gl .ctxwrap { display: none; }
+  .glos { display: none; flex-direction: column; gap: 12px; }
+  aside.rail.gl .glos { display: flex; }
+  .gl-detail { padding: 12px 14px; border: 1px solid var(--line-2); background: var(--panel); }
+  .gl-detail h5 { margin: 0 0 6px; font-family: var(--display); font-size: 22px; font-weight: 700; text-transform: uppercase; }
+  .gl-detail p { margin: 0; font-size: 15px; line-height: 1.5; }
+  .gl-detail .w { margin-top: 8px; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); overflow-wrap: anywhere; }
+
+  /* glossary page view */
+  .gsearch { width: 100%; max-width: 520px; font: 16px var(--body); padding: 9px 12px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); margin-bottom: 6px; }
+  .gpage { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px 22px; margin-top: 6px; }
+  .gent { padding: 10px 0 12px; border-bottom: 1px solid var(--line); }
+  .gent .gw { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .gent .gw .t { font-family: var(--display); font-weight: 700; font-size: 22px; text-transform: uppercase; border-bottom-width: 2px; }
+  .gent p { margin: 0; font-size: 15.5px; line-height: 1.45; }
+  .gent .w { margin-top: 6px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+
+  /* ---- footer ---- */
+  footer.foot { grid-area: foot; border-top: 1px solid var(--line-2); padding: 8px 18px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); background: color-mix(in srgb, var(--panel) 80%, transparent); }
+  footer.foot kbd { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border: 1px solid var(--line-2); color: var(--ink-2); margin-right: 4px; }
+  footer.foot .r { margin-left: auto; }
+
+  /* ---- tooltips ---- */
+  .tip { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 12px 14px 10px; font-size: 15px; line-height: 1.45; }
+  .tip .th { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .tip .th b { font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; }
+  .tip .th .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .tip .lock { height: 2px; background: var(--line); margin-top: 10px; position: relative; }
+  .tip .lock b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--accent); }
+  .tip.locked .lock b { width: 100%; }
+  .tip.locked { border-top-color: var(--ink); }
+  .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .06em; }
+
+  @media (prefers-reduced-motion: reduce) { .st-hot i { animation: none; } }
+  @media (max-width: 980px) {
+    body { overflow: auto; }
+    .app { height: auto; grid-template-columns: 1fr; grid-template-areas: "head" "ol" "panel" "rail" "foot"; }
+    .mantra, .frago { grid-template-columns: 1fr; }
+    .mantra > div, .frago > div { border-right: 0; border-bottom: 1px solid var(--line); }
+    nav.ol { border-right: 0; border-bottom: 1px solid var(--line-2); display: flex; overflow-x: auto; padding: 8px; gap: 4px; }
+    nav.ol .lbl, nav.ol .strand, nav.ol .foot { display: none; }
+    .ol-row { grid-template-columns: auto 1fr; padding: 8px 12px; border-left: 0; border-bottom: 3px solid transparent; white-space: nowrap; }
+    .ol-row.on { border-bottom-color: var(--accent); }
+    .ol-row .key, .ol-row .node { display: none; }
+    .ol-row.gl-row { margin-top: 0; border-top: 0; padding-top: 8px; }
+    main.panel { padding: 22px 20px 30px; }
+    .frame::before, .frame::after { display: none; }
+    aside.rail { border-left: 0; border-top: 1px solid var(--line-2); }
+    .brand { min-width: 0; }
+    .lg { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>
+
+<div class="app" id="app">
+  <header class="head">
+    <div class="row">
+      <div class="brand"><div class="mono-n" id="mono"></div></div>
+      <div class="ttl"><h1 id="title"></h1><div class="meta" id="meta"></div></div>
+      <div class="box"><button class="gloss" id="glossBtn" title="G">Glossary<small>every proword</small></button><button class="theme" id="themeBtn" title="T">theme</button></div>
+    </div>
+    <div class="row"><div class="mantra" id="mantra" style="flex:1"></div></div>
+    <div class="row"><div class="frago" id="frago" style="flex:1"></div></div>
+  </header>
+
+  <nav class="ol" id="ol" aria-label="Paragraphs">
+    <span class="lbl">The five-paragraph order</span>
+    <div class="strand"></div>
+    <div id="olRows"></div>
+    <div class="foot" id="olFoot"></div>
+  </nav>
+
+  <main class="panel" id="panel" tabindex="-1"></main>
+
+  <aside class="rail" id="rail">
+    <div class="ctxwrap" id="ctx"></div>
+    <div class="glos" id="glos">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><h4>Term</h4><button class="theme" id="glClose">Esc · close</button></div>
+      <div class="gl-detail" id="glDetail"></div>
+    </div>
+  </aside>
+
+  <footer class="foot">
+    <span><kbd>S</kbd><kbd>M</kbd><kbd>E</kbd><kbd>A</kbd><kbd>C</kbd><kbd>L</kbd> paragraph</span>
+    <span><kbd>←</kbd><kbd>→</kbd> prev · next</span>
+    <span><kbd>G</kbd> glossary page</span>
+    <span><kbd>T</kbd> theme</span>
+    <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
+    <span class="r" id="footR"></span>
+  </footer>
+</div>
+
+<script>
+const DATA = {"board": {"bolo": {"n": 45, "title": "The creator-case sweep + the manager path", "trunk": "ORANGE", "issued": "2026-09-10", "asof": "2026-09-10 · evening", "s": "hot", "status": "boresight loop · second transmission ruled · three files landed · two calls open", "decider": "Papi", "feeds": "[[bolo24|BOLO 24]] · the [[register|performer register]] · the Ultrasin roster question", "related": [{"n": 24, "why": "the launch this feeds"}, {"n": 42, "why": "the register"}, {"n": 38, "why": "the pages"}], "home": "BOLO.md · row 45", "card": "oscar-mike/creator-cases.md", "version": "v0 · status page"}, "mantra": [{"k": "speed", "w": "Speed", "line": "Tempo is a weapon. This page reads in ten seconds: the order is on top, the story is underneath."}, {"k": "focus", "w": "Focus", "line": "One main effort: the scope call. Everything else on this page supports it and stays short."}, {"k": "boldness", "w": "Boldness", "line": "Do not wait for certainty. Every call carries a default that runs if you say nothing."}], "frago": {"mission": "Extend the [[creator-case|creator-case]] method across the register and read the manager path, **in order to** give the Ultrasin studio ([[bolo24|BOLO 24]]) a borrowed playbook for its first signing and a roster plan for its second.", "order": "Say **S**, **M**, or **L**. Say the block's name, or say nothing.", "default": "Silence runs **M** in two waves, with [[the-take|THE TAKE]] written into the seven existing files first.", "calls": [{"q": "Scope", "options": "S · lane C's 12 — M · plus the 21-name core — L · all 139 as light rows", "default": "M", "s": "open"}, {"q": "The lessons block", "options": "THE TAKE · TRADECRAFT · THE PULL · GLEANINGS", "default": "THE TAKE", "s": "open"}]}, "paragraphs": [{"id": "S", "name": "Situation", "kind": "list", "plain": "Where BOLO 45 stands, in plain words: what was asked, what was ruled, what came back.", "strand": {"last": "Seven creator cases and a synthesis were parked at 05:26. At 13:20 you opened BOLO 45 with three asks in one breath.", "plan": "Boresight first and build nothing until cleared; then run the sourced outside-the-wire pass.", "you": "You named Natasha Teen as the referent, ruled everything public by default, and ordered the management recon.", "next": "The three files are on disk. The scope and the block name are yours."}, "groups": [{"label": "The ask · three parts", "items": [{"t": "**The manager path** — the traditional way versus the new way of becoming a manager or agency for online creators, and whether creator-first (BOLO 24 as the seed → a network → a tiered agency, \"like Natasha Teen did\") beats agency-first.", "s": "done"}, {"t": "**Cases for everyone on the list** — the 9/10 method across your creator list. Scope unruled: lane C's 12 · the 21-name stable core · all 139.", "s": "open"}, {"t": "**The lessons block** — every case file gains a section: the one business mechanic worth studying plus the tips that transfer to your own ORANGE path.", "s": "open"}]}, {"label": "Ruled on the loop · second transmission", "items": [{"t": "**[[natasha-teen|Natasha Teen]] is the referent** and gets a case beside the other seven.", "s": "ruled"}, {"t": "**Everything public unless you specify.** A standing rule from here; the public-or-private question is retired.", "s": "ruled"}, {"t": "**The sourced pass ordered:** commission norms, legal shape, and first-person accounts from podcasts, forums and creator communities → two files.", "s": "ruled"}, {"t": "**Scope and the block name** go to an elementary explainer page for your call after reading.", "s": "ruled"}]}, {"label": "What came back · three files, one line each", "items": [{"t": "**[[management-recon|The recon]]** (171 URLs) — two businesses share the word agency: the licensed booker at 10 to 15 percent and the [[ofm|OFM]] operations vendor at 20 to 50 percent or more. Fanvue is the only platform with a real agency structure. Creator-first is the documented origin of the lane (Jameson 2000 · Angel 2002 · Reid's [[ash|A.S.H.]] 2021 · Autumn's Angels · Bop House 2024). Reputation, not capital, is the barrier. [[fla-468|Florida ch. 468]] goes live the moment a second human is booked.", "s": "done", "when": "16:07"}, {"t": "**[[management-voices|The voices]]** (22) — nobody credible started with a roster; they started with one relationship. Creator-first operators sell the thing they built for themselves first. The commission number is the ethics map: 10 to 15 licensed · 5 to 15 the creators' own standard · 25 to 70 in OFM reality. Account control is the line. Houses break on control, not money.", "s": "done", "when": "16:08"}, {"t": "**[[natasha-teen|Natasha Teen]]** — she did build it. Natasha Teen Films opened its studio account on 2020-11-17 (\"agencia / modelos y producción audiovisual\"), runs a 14-model roster on AnalVids and an XVideos channel at 166K subscribers. A co-fronted studio-plus-agency: her partner Lancelot runs production, her stated job is training the new talent. No pricing, split or earnings on record. Verdict: yes on the network, partial on the agency shape.", "s": "done", "when": "16:15"}]}, {"label": "The false alarm · corrected", "items": [{"t": "At about 16:00 a second session read the three files as dead and relaunched duplicates. The original session landed them between 16:07 and 16:15. Duplicates stood down; BOLO row and session note corrected. Lesson banked: check the other sessions before declaring a file dead.", "s": "corrected", "when": "16:16"}]}]}, {"id": "M", "name": "Mission", "kind": "mission", "plain": "A mission is a task plus the reason for it. The reason outlasts the task, so the work can go on without asking you twice.", "strand": {"last": "The seven cases proved the method in one evening.", "plan": "The same method, wider, plus one outside-the-wire read.", "you": "You gave the task and the why in one transmission; the boresight extracted the intent.", "next": "The end state waits only on the scope letter."}, "task": "Extend the [[creator-case|creator-case]] method across the [[register|register]] and read the manager path from sources,", "intent": "in order to give the Ultrasin studio ([[bolo24|BOLO 24]]) a borrowed playbook for its first signing and a roster plan for its second.", "spoken": "\"I want a case for everyone on the list, a lessons block in every file, and a read on the creator-first to agency path, like Natasha Teen did.\"", "endstate": ["Every case file ends with [[the-take|THE TAKE]]: the one mechanic, the transferable tips, what does not transfer, what it feeds.", "The manager question is answered from sources, with the commission map and the licensing line written down.", "You can choose the wave in one letter, and the default runs if you do not."]}, {"id": "E", "name": "Execution", "kind": "phases", "plain": "How it gets done, in order. One main effort; everything else supports it. Phases 1 and 2 are done; phase 3 is one letter from you.", "strand": {"last": "Phases 1 and 2 ran in one afternoon across two sessions.", "plan": "Phase 3 is your call; 4 through 6 run without you, each file on the seven-node template.", "you": "You cleared phase 1 with three rulings.", "next": "Say the letter; phase 4 starts the same turn."}, "main_effort": "The scope call → wave one. Everything else on this BOLO supports it.", "phases": [{"n": 1, "t": "**Boresight** — readback, the read, five questions; second transmission ruled.", "s": "done", "when": "13:20 → 15:54"}, {"n": 2, "t": "**The sourced pass** — [[management-recon|recon]] · [[management-voices|voices]] · the [[natasha-teen|Natasha Teen]] case.", "s": "done", "when": "16:07 → 16:15"}, {"n": 3, "t": "**Your two calls** — scope S / M / L · the block name. Defaults run if silent.", "s": "open", "when": "now"}, {"n": 4, "t": "**[[the-take|THE TAKE]] into the seven existing files** — section 10, four parts, the Variety Itsol worked example as the template.", "s": "gated", "when": "on the call"}, {"n": 5, "t": "**Wave S** — lane C's 12 (babylite · Bilbuana · BottomToys · Gape Game · Tweetney · Michael Vegas and the rest; Coco Lovecock · Ellexxaurus). Several are tube-only and may come back thin.", "s": "gated", "when": "about two evenings"}, {"n": 6, "t": "**Wave M** — the 21-name stable core (Adriana Chechik · Asa Akira · Riley Reid · Joanna Angel · Sasha Grey · Nina Hartley and the rest). The creator-turned-owner cases live here.", "s": "gated", "when": "three or four evenings"}, {"n": 7, "t": "**L as light rows** — one line per remaining name: business model, one lesson, one source. Full files for 139 would be the [[stall-pattern|stall pattern]] in a new hat.", "s": "gated", "when": "after M, optional"}], "coord": ["Template = the seven published nodes; every claim sourced; every estimate marked EST.", "Public record only, business side only, everything public unless you specify.", "Working endpoints from the session: the Fansly public API · fxtwitter · Wayback, Clips4Sale and ManyVids via curl. Blocked: x.com · Reddit · OnlyFans · Pornhub.", "Before declaring a file dead, check the other sessions. Two ran on this BOLO at once."], "running": []}, {"id": "A", "name": "Admin & Logistics", "kind": "files", "plain": "What the work runs on: the files, the tools, and what each size costs. Priced in evenings, not dollars.", "strand": {"last": "Eight agent runs produced seven files in one evening; three more files landed this afternoon.", "plan": "Same cost per file; waves priced in evenings.", "you": "You pay in rulings and reading, never in money.", "next": "S costs about two evenings; M another three or four."}, "files": [{"path": "BOLO.md · row 45", "what": "the tasking and every ruling on it", "s": "done"}, {"path": "oscar-mike/creator-cases.md", "what": "the parked card and the resume order", "s": "done"}, {"path": "https://claude.ai/code/artifact/68adc31f-f644-45de-881f-6d17a355021f", "what": "the explainer page: sizes, the block, the worked example", "s": "done"}, {"path": "_CANON_NODES/creator-management-recon.md", "what": "58 KB · 171 URLs · the two agencies, the commission map, the licensing line", "s": "done"}, {"path": "_CANON_NODES/creator-management-voices.md", "what": "39 KB · 22 voices · the creator-first pattern", "s": "done"}, {"path": "_CANON_NODES/creator-case-natasha-teen.md", "what": "the referent's case · studio-plus-agency verified", "s": "done"}, {"path": "_CANON_NODES/creator-case-<handle>.md × 8", "what": "the seven 9/10 cases plus Rebel Rhyder", "s": "done"}, {"path": "_CANON_NODES/performer-register.md", "what": "139 names · 21 core · rows link the cases", "s": "done"}, {"path": "_PRIVATE/BOLO-24-creator-cases-synthesis.md", "what": "the seven read together, R1 to R12 (private: venture internals)", "s": "parked"}], "cost": [{"k": "seven files", "v": "8 agent runs · 1 evening"}, {"k": "wave S", "v": "12 files · about 2 evenings"}, {"k": "wave M", "v": "+21 files · 3 to 4 evenings"}, {"k": "wave L", "v": "light rows only"}, {"k": "dollars", "v": "0"}]}, {"id": "C", "name": "Command & Signal", "kind": "list", "plain": "Who calls what, and where to look for the answer.", "strand": {"last": "Two sessions ran on this BOLO at once; the record now says which did what.", "plan": "One decider, one gate, defaults that run.", "you": "You are the gate.", "next": "One letter, one name."}, "groups": [{"label": "Who decides", "items": [{"t": "**Papi** — the scope · the block name · any public/private exception.", "s": "open"}, {"t": "**Claude** — the method, the order of waves, the agent template ([[mission-tactics|mission tactics]]: task and intent given, method left to the one doing it).", "s": "done"}, {"t": "**An attorney** — [[fla-468|Florida ch. 468]], the moment a second human creator is booked into anything with a third-party payer.", "s": "gated"}]}, {"label": "The gate", "items": [{"t": "**HOLD on the two calls.** Converts on your word. Silence after this page is read as the defaults: M in two waves, [[the-take|THE TAKE]].", "s": "held"}]}, {"label": "Prowords in play", "items": [{"t": "[[boresight]] — loop open, clears on the call · [[how-copy|how copy]] · [[oscar-mike|Oscar Mike]] — the card · **status on BOLO 45** — this page.", "s": "open"}]}, {"label": "Where status lives", "items": [{"t": "BOLO.md row 45 · this page · the card · the [[sitrep|sit rep]]'s Block I and Block V.", "s": "done"}]}]}, {"id": "L", "name": "Log", "kind": "log", "plain": "Every transmission on this BOLO, in order. Who said what, and what happened next.", "strand": {"last": "Thirteen entries in one day.", "plan": "The log grows one line per transmission; nothing is rewritten, corrections are appended.", "you": "Eight of the thirteen are your words.", "next": "The next line is your letter."}, "entries": [{"when": "9/10 ~03:00", "who": "Papi", "t": "Order one: Kirenes and AlexBreeCooper to the register; cases on AlexBreeCooper, Lexa Lite, Kirenes."}, {"when": "9/10 ~03:50", "who": "Papi", "t": "Order two: Siswet, the NASA girl, Variety Itsol; publish each as its own file in the lexicon."}, {"when": "9/10 ~04:20", "who": "Papi", "t": "Order three: the synthesis; then \"go\" on the rendered page."}, {"when": "9/10 05:26", "who": "Papi", "t": "Oscar Mike → the creator-cases card, five-step resume order."}, {"when": "9/10 13:20", "who": "Papi", "t": "BOLO 45 spoken: the manager path · cases for everyone · the lessons block. Boresight called."}, {"when": "9/10 13:20", "who": "Claude", "t": "First transmission: readback, the read, five questions."}, {"when": "9/10 15:54", "who": "Papi", "t": "Second transmission ruled: Natasha Teen · everything public · the recon ordered · Q2 and Q4 to an explainer."}, {"when": "9/10 15:54", "who": "Claude", "t": "Explainer page published; three agents launched."}, {"when": "9/10 ~16:00", "who": "Claude · session 2", "t": "Sit rep reads the three files as missing; duplicates launched."}, {"when": "9/10 16:07 → 16:15", "who": "agents · session 1", "t": "Recon, voices, and the Natasha Teen case land."}, {"when": "9/10 16:16", "who": "Claude · session 2", "t": "Duplicates stood down on the peer's message; record corrected."}, {"when": "9/10 evening", "who": "Papi", "t": "The NASA girl ruled: [[rebel-rhyder|Rebel Rhyder]] (BOLO 24's lane). Her case landed the same night."}, {"when": "9/10 evening", "who": "Papi", "t": "\"Give me the status on BOLO 45\" → this page ordered, on the five-paragraph order and the three."}]}]}, "glossary": {"sitrep": {"t": "sit rep", "k": "proword", "d": "The full board, cold start. Spoken, it flushes the [[ready-rack|Ready Rack]] and delivers blocks 0 to VII in fixed order. From 9/10 it also lands as this page.", "w": "SOP.md §1–2", "st": "ruled"}, "oscar-mike": {"t": "Oscar Mike", "k": "proword", "d": "Park the current work in oscar-mike/ and move on. [[sweep|Sweep]] later promotes the keepers. Every park ends with the OUT block.", "w": "SOP.md §1 · oscar-mike/INDEX.md", "st": "ruled"}, "sweep": {"t": "sweep", "k": "proword", "d": "Promote the parked keepers to their real homes and clear oscar-mike/.", "w": "SOP.md §1", "st": "ruled"}, "how-copy": {"t": "how copy?", "k": "proword", "d": "End of orders. The reply opens Good copy plus a readback, then executes. Solid copy means nothing to add. Bad copy on an item means one question.", "w": "SOP.md §1", "st": "ruled"}, "boresight": {"t": "boresight", "k": "proword", "d": "The understanding check before delivery: readback, the read, clarifying questions only. Nothing builds until you clear it. Boresight in on X aims it at one item.", "w": "SOP.md §1", "st": "ruled"}, "bolo": {"t": "BOLO", "k": "proword", "d": "\"BOLO that\" / \"put that down\": a tasking captured in BOLO.md the turn it is spoken. Be On the Lookout, named for the bolas: thrown on sighting, wraps, holds. The board noun is the watchlist itself.", "w": "BOLO.md", "st": "ruled"}, "pmcs": {"t": "PMCS", "k": "noun", "d": "Preventive Maintenance Checks and Services. The operator is equipment: body, medical, life admin. Never mixed with projects.", "w": "BOLO.md · PMCS table"}, "ivory-tower": {"t": "ivory tower", "k": "proword", "d": "Academic mode: published literature only, every claim cited inline, established versus contested marked.", "w": "SOP.md §1", "st": "ruled"}, "break-break": {"t": "break-break", "k": "proword", "d": "Open a detour; the main thread parks where it stands. [[buttonhook|Buttonhook back]] closes it.", "w": "SOP.md §1", "st": "ruled"}, "buttonhook": {"t": "buttonhook back", "k": "proword", "d": "Close the detour and return to the parked thread unprompted, restating where we were.", "w": "SOP.md §1", "st": "ruled"}, "run-the-darkroom": {"t": "run the darkroom", "k": "proword", "d": "Launch [[darkroom|DARKROOM]] in the background, no questions. The garbles black room and dark room read the same.", "w": "SOP.md §1", "st": "ruled"}, "belay": {"t": "belay that", "k": "proword", "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order.", "w": "SOP.md §1", "st": "provisional"}, "endex": {"t": "ENDEX", "k": "proword", "d": "Close the session: write the cache note, update STATE.md, append the journal. Autosave commits on stop.", "w": "SOP.md §1", "st": "provisional"}, "ready-rack": {"t": "Ready Rack", "k": "noun", "d": "_CACHE/. Session notes staged for the next sit rep. Flushed into the [[magazine|Magazine]] on every board; an empty Rack proves the handoff completed.", "w": "_CACHE/"}, "magazine": {"t": "Magazine", "k": "noun", "d": "_LOG/. Deep storage for flushed session notes. Append-only; nothing is deleted, it is stowed.", "w": "_LOG/"}, "fresh-ten": {"t": "Fresh Ten", "k": "noun", "d": "Block I: the ten projects touched most recently, newest first, each with its last-touched date and a concrete next step.", "w": "SOP.md §2"}, "ancients": {"t": "The Ancients", "k": "noun", "d": "Block II: the longest-untouched work in three tiers, each item with what it is waiting on.", "w": "SOP.md §2"}, "deep-stacks": {"t": "Deep Stacks", "k": "noun", "d": "Block III: projects ranked by volume of thought spent, from PROJECTS.md. Volume is characters of conversation, a proxy for thinking, not value.", "w": "PROJECTS.md"}, "leverage-line": {"t": "the leverage line", "k": "noun", "d": "Block VI: the single highest-leverage next action. Provisional rename pending: the Main Effort, MCDP 1's term for the one point everything else supports.", "w": "SOP.md §2"}, "soi": {"t": "SOI", "k": "noun", "d": "Signal Operating Instructions. The proword card, SOP §0. Closes every board as Block VII.", "w": "SOP.md §0"}, "sop": {"t": "SOP", "k": "noun", "d": "SOP.md, the canonical home of every comms code and session protocol. On any conflict with memory, the file wins.", "w": "SOP.md"}, "trunk-black": {"t": "BLACK", "k": "noun", "d": "BLACK = Bold Venture (BVX): creative, IP, systems. Everything you make lands in one of two houses; this is the first.", "w": "SOP.md §2"}, "trunk-orange": {"t": "ORANGE", "k": "noun", "d": "ORANGE = Ultrasin: venture, body, sexuality. The second house.", "w": "SOP.md §2"}, "trunk-operator": {"t": "OPERATOR", "k": "noun", "d": "OPERATOR = you as equipment: [[pmcs|PMCS]], tooling, readiness. Not a house; the person who runs both.", "w": "SOP.md §2"}, "stall-pattern": {"t": "the stall pattern", "k": "ruling", "d": "The recurring failure: a finished design blocked on one unanswered decision, then rebuilt from scratch later. The fix is the ruling, not more structure.", "w": "memory · STATE.md"}, "d9": {"t": "D-9", "k": "item", "d": "Ledger item D-9 on the [[bolo24|BOLO 24]] charter: the [[boresight]] HOLD from 9/3, converted 9/4, carrying no date. Three legal answers under the project flow: clear delivery · re-hold with a date · NO-GO. An undated hold is the [[stall-pattern|stall pattern]].", "w": "_PRIVATE/BOLO-24-charter.md · STATE Blocked #10"}, "bolo24": {"t": "BOLO 24", "k": "item", "d": "The zero-budget ORANGE launch: 3D erotica stills in Blender, DARKROOM-fed, Ultrasin as the studio, a first signing with an arc. Charter in _PRIVATE/. Gated by [[d9|D-9]]; the next proposed gate is [[r9|R9]].", "w": "BOLO.md #24"}, "r9": {"t": "R9", "k": "item", "d": "Synthesis recommendation 9: thirty days on a fresh X account before any platform commit. Zero cost. Metric: follower growth against Kirenes' no-funnel rate and Variety Itsol's studio-promoted year one.", "w": "_PRIVATE/BOLO-24-creator-cases-synthesis.md"}, "r10": {"t": "R10", "k": "item", "d": "Fill reference seats 4 to 8 with the same agent template: a disclosed-AI creator on Fanvue, a Patreon 3D still artist, a Reddit-native grower, the itsmemphishxe reference.", "w": "_PRIVATE/BOLO-24-creator-cases-synthesis.md"}, "cam-line": {"t": "the cam line", "k": "item", "d": "The Lab-venture question: live cam access is Siswet's moat, and a rendered persona cannot stand in a live room. Board it as the difference between the two ORANGE plays, or rule it irrelevant.", "w": "oscar-mike/creator-cases.md"}, "ultra-dark": {"t": "ULTRA DARK", "k": "system", "d": "BOLO 27: the curation imprint under Ultrasin. A rating scale plus a written line on every post; commissioned edits as the first-dollar line. A funnel, never the asset.", "w": "oscar-mike/ultradark-walkthrough.md · _PRIVATE/ULTRADARK-*.md"}, "block-c": {"t": "Block C", "k": "item", "d": "The [[ultra-dark|ULTRA DARK]] walkthrough's third step: you mark 12 to 16 clips in [[stash|Stash]], say marked, the pull script fires, Resolve builds the 12-second blurb. Blocks A and B have been done since 9/4.", "w": "oscar-mike/ultradark-walkthrough.md"}, "stash": {"t": "Stash", "k": "system", "d": "The video library app on :9999. 15,492 scenes, 2,499 flagged as studio content, the UD pool of 2,111 five-stars. BOLO 28 made it the video twin of [[darkroom|DARKROOM]].", "w": "Q:\\fun\\.StashApp"}, "darkroom": {"t": "DARKROOM", "k": "system", "d": "The corpus browser on :8484. 55,841 girls-only images, verdicts, and since 9/9 the tag rail plus the TAGGING and CAPTCHA modules. Stamped 1.0 on 9/6, 1.1 on 9/9.", "w": "_PRIVATE/taxonomy_engine/"}, "bolo44": {"t": "BOLO 44", "k": "item", "d": "The tag rail and zero-shot tagging in [[darkroom|DARKROOM]]. Six axes, 48 values, 16,496 judged records. [[tier2|Tier 2]] probes now make the proposals.", "w": "BOLO.md #44 · oscar-mike/darkroom-tagging.md"}, "tier2": {"t": "Tier 2", "k": "system", "d": "Per-axis logistic-regression probes trained on your CAPTCHA rulings. They beat zero-shot on all six axes (66 to 82 combined against 52 to 62). Retrain after each tagging session.", "w": "_PRIVATE/taxonomy_engine/probe_pass.py"}, "bolo43": {"t": "BOLO 43", "k": "item", "d": "[[l2b|L2b]] module 2: population signatures. Nine populations across the 27-cell gluteal substrate, the override construct for surgery, a three-line cell call. Seven decisions open in its §7.", "w": "_CANON_NODES/L2b-morphology-population-signatures.md"}, "l2b": {"t": "L2b MORPHOLOGY", "k": "system", "d": "The body-shape layer of the character system. Chain ruled 9/9: SKELETON → MUSCLE → FAT → CONDITION. Module 1 is gluteal (27 cells, 13 named types); module 2 is [[bolo43|population signatures]].", "w": "_CANON_NODES/L2b-morphology-gluteal.md"}, "telling-profile": {"t": "the Telling Profile", "k": "item", "d": "The Ten Questions of the Telling, answered for [[outliers|The Outliers]] as a [[series]]. Drafted 9/10 with 12 rulings queued. No human narrator; the Feed speaks, Tori sees.", "w": "_CANON_NODES/oxo-telling-profile.md"}, "series": {"t": "SERIES", "k": "ruling", "d": "Ruling R9 of 9/9: The Outliers is a series, not a feature and not prose. Recorded in the storyform frontmatter. It unblocked the first scene card and the first Fountain pages.", "w": "_CANON_NODES/oxo-storyform.md"}, "outliers": {"t": "The Outliers", "k": "system", "d": "OVEREXITOUT / The Outliers: the flagship BLACK IP. Storyform ruled 8/24, DCUS instanced 8/26, medium ruled [[series]] 9/9, first pages 9/10. Anna still has no node.", "w": "_CANON_NODES/ · OUTLIERS_FINAL_DRAFT/"}, "warroom": {"t": "WARROOM", "k": "system", "d": "The MCDP doctrine browser: MIL.01 to MIL.11 as a game encyclopedia on the [[ck3-rules|CK3 rules]]. Version 1.1 wears the [[watch-register|WATCH register]]. Name provisional; paused by you on 9/6.", "w": "MCDP-CODEX.html"}, "watch-register": {"t": "the WATCH register", "k": "system", "d": "One grammar, two faces keyed to room light: DAY paper for the lit desk, NIGHT near-black for the dark one. Seven hues, every ratio contrast-checked against the long-watch standards. WARROOM wears it; this page moved to the creator-cases colorway on 9/10 by your ruling.", "w": "_0.1_BVX_LEARN/_meta/WATCH-REGISTER.md"}, "ck3-rules": {"t": "the CK3 rules", "k": "system", "d": "Nineteen rules derived from Crusader Kings III's interface: concept links with nested tooltips capped at depth 3, timer or key lock, a character-sheet layout, an outliner plus an encyclopedia, one semantic color set. This page runs on them.", "w": "_0.1_BVX_LEARN/_meta/CK3-IA-STUDY.md"}, "bolo45": {"t": "BOLO 45", "k": "item", "d": "The creator-case sweep and the manager path. Ruled 9/10: [[natasha-teen|Natasha Teen]] is the referent; everything public unless you specify; the management recon ordered. Its three files never landed; relaunched this evening.", "w": "BOLO.md #45"}, "the-take": {"t": "THE TAKE", "k": "item", "d": "Default name for the lessons block: section 10 of every [[creator-case|creator case]], four parts (the one mechanic · transferable tips · does not transfer · feeds). Bench: TRADECRAFT · THE PULL · GLEANINGS. Runs as the default if you say nothing.", "w": "explainer page · BOLO 45"}, "creator-case": {"t": "creator case", "k": "noun", "d": "One file about one creator: how they started, how they run it, how they get paid. Public record only, filed beside the [[register|performer register]]. Seven exist; two more are running.", "w": "_CANON_NODES/creator-case-*.md"}, "register": {"t": "the performer register", "k": "system", "d": "138 names, any sex, 21 in the stable core. Lanes: performer · e-girl · creator case · Stash name. Built 9/8 from nine of your lists; widened 9/9.", "w": "_CANON_NODES/performer-register.md"}, "nasa-girl": {"t": "the NASA girl", "k": "item", "d": "The performer you recalled by story (used to be an engineer, NASA, then did this). Two candidates were built on 9/10; you named her this evening: Rebel Rhyder. Her case is running; the candidates stay as receipts.", "w": "_CANON_NODES/creator-case-rebel-rhyder.md"}, "natasha-teen": {"t": "Natasha Teen", "k": "person", "d": "Register row, lane P, starred by you 9/9. The referent for like Natasha Teen did; her case verifies whether she built an agency or roster.", "w": "_CANON_NODES/performer-register.md"}, "explainer": {"t": "the explainer register", "k": "ruling", "d": "The elementary landing-page voice you liked on 9/10: what we did last, what the plan was, what you did, in plain words. This board's right rail speaks it on every block.", "w": "https://claude.ai/code/artifact/68adc31f-f644-45de-881f-6d17a355021f"}, "modmigrate": {"t": "modmigrate", "k": "item", "d": "_tools/modmigrate/: the 9/7 Minecraft modpack migration (Modrinth Fabric 1.21.11 to NeoForge 1.21.11). Real work with no STATE row, no BOLO, no journal. Surfaced on three boards running.", "w": "_tools/modmigrate/"}, "bolo37": {"t": "BOLO 37", "k": "item", "d": "The proword selection loop: five candidates, pick three ranked, ten a day, Claude's sealed pick revealed after. Name bench MINT (rec). Three spec gaps; gap 3, placement, is answered by this page.", "w": "BOLO.md #37 · SOP.md §5"}, "bolo38": {"t": "BOLO 38", "k": "item", "d": "The sit rep as a front page, the CK3 save-load screen. Captured 9/6; fired 9/10 evening on your order. This page is v0.", "w": "BOLO.md #38"}, "the-box": {"t": "the box", "k": "system", "d": "The machine's servers: [[stash|Stash]] on :9999 and [[darkroom|DARKROOM]] on :8484. Both up this evening, the first time at a board since 9/4.", "w": "localhost"}, "bolo29": {"t": "BOLO 29", "k": "item", "d": "The SFW TikTok channel: owned Fortnite skins doing the emotes, faceless, BLACK. Research banked; held on one question, the reward-versus-risk reading.", "w": "oscar-mike/bolo29-tiktok.md"}, "bolo35": {"t": "BOLO 35", "k": "item", "d": "The story timeline tool and its theory: sound synthesis against the conservatory score. Read delivered 9/6; four questions held.", "w": "oscar-mike/story-timeline.md"}, "bolo41": {"t": "BOLO 41", "k": "item", "d": "The locus system: research filed by neighborhood. Convention provisional in _0.1_BVX_LEARN/LOCI/; needs your ratification.", "w": "_0.1_BVX_LEARN/LOCI/README.md"}, "numbering": {"t": "the 03/03 numbering", "k": "item", "d": "Two domains share the 03 prefix: 03_SETTING_SYSTEMS (stood up 8/25) and the empty pre-reserved 03_PLOT_SYSTEMS. One rename either way.", "w": "ShroomsQ/_CANON/_SSOT/"}, "trash-land": {"t": "Trash Land", "k": "item", "d": "BOLO 30: the man-made trash DMZ between the southern and northern US, mountain-range scale. Seed node written 9/6; seven rulings open, name bench recommends The Midden.", "w": "_CANON_NODES/oxo-trash-land-seed.md"}, "main-effort": {"t": "the main effort", "k": "proword", "d": "MCDP 1's term: the one task everything else supports. Spoken, it names or asks for the single priority. Provisional since 8/21; the sit rep's Block VI rename rides on it. On this board it has been [[block-c|Block C]] plus [[d9|D-9]] since 9/4.", "w": "SOP.md §5", "st": "provisional"}, "smeac": {"t": "the five-paragraph order", "k": "noun", "d": "The Marine Corps operations order: Situation · Mission · Execution · Administration and Logistics · Command and Signal. Mission first, then how. A BOLO status page is written in this shape.", "w": "MIL.05 · MCDP 5 Planning"}, "speed": {"t": "speed", "k": "ruling", "d": "MCDP 1: speed over time is tempo, and tempo is itself a weapon. On a page: read in ten seconds, the order on top, the story underneath. One of the three that govern the status page, with [[focus]] and [[boldness]].", "w": "MIL.01 §4 · invariant 8"}, "focus": {"t": "focus", "k": "ruling", "d": "MCDP 1: the convergence of effects at the decisive time and place, which demands strict economy everywhere else. On a page: one [[main-effort|main effort]] named, everything else supporting it and kept short.", "w": "MIL.01 §4 · invariant 8"}, "boldness": {"t": "boldness", "k": "ruling", "d": "MCDP 1: unhesitating exploitation of uncertainty to pursue major rather than marginal results; do not strive for certainty before you act. On a page: every call carries a default that runs if you say nothing.", "w": "MIL.01 §4 · quotes"}, "commanders-intent": {"t": "commander's intent", "k": "ruling", "d": "The purpose behind a task, stated as task plus in order to. The why outlasts the what, so a subordinate can act without asking. The Mission paragraph of every status page carries it.", "w": "MIL.01 §8"}, "mission-tactics": {"t": "mission tactics", "k": "ruling", "d": "Assign the task and the intent, leave the method to the one doing it, intervene only by exception. It is why a status page states defaults instead of asking questions.", "w": "MIL.01 §8"}, "ofm": {"t": "OFM agency", "k": "noun", "d": "The fansite-era management agency: an operations vendor running messages, traffic and posting on the creator's own account for 20 to 50 percent or more. A different business from the licensed booking agent of the studio era (10 to 15 percent).", "w": "_CANON_NODES/creator-management-recon.md §0"}, "ash": {"t": "A.S.H.", "k": "item", "d": "Riley Reid's creator-first agency, launched April 2021 because friends were paying up to 30 percent. The verified item behind the recon's creator-first list; the earlier Clubhouse Media Group line was a conflation and is corrected.", "w": "_CANON_NODES/creator-management-recon.md"}, "fla-468": {"t": "Florida ch. 468", "k": "item", "d": "Florida's talent-agency licensing statute: anyone who, for compensation, procures engagements for an artist, and artist includes a model. Running a creator's own account is not obviously procuring; booking that creator into a shoot or brand deal plainly is. An attorney question the moment a second human is booked.", "w": "_CANON_NODES/creator-management-recon.md §0"}, "management-recon": {"t": "the management recon", "k": "item", "d": "The sourced read on the manager path, 171 URLs: two businesses share the word agency; Fanvue is the only platform with a real agency structure; creator-first is the documented origin of the lane; reputation, not capital, is the barrier.", "w": "_CANON_NODES/creator-management-recon.md"}, "management-voices": {"t": "the management voices", "k": "item", "d": "Twenty-two first-person accounts of people who became managers, agency owners or house-builders. Nobody credible started with a roster; they started with one relationship. The commission number is the ethics map. Account control is the line.", "w": "_CANON_NODES/creator-management-voices.md"}, "bolo42": {"t": "BOLO 42", "k": "item", "d": "The admired-performers table, delivered 9/8 as the [[register|performer register]]; widened 9/9 to any sex; the creator-case nodes link from its rows.", "w": "BOLO.md #42"}, "rebel-rhyder": {"t": "Rebel Rhyder", "k": "person", "d": "The [[nasa-girl|NASA girl]], named by you 9/10 evening. Her case landed the same night: an electrical engineer who worked in aerospace for two years, in her own words; NASA is Rocco Siffredi's word only. Register row added, lane P, source S.", "w": "_CANON_NODES/creator-case-rebel-rhyder.md"}, "challenge": {"t": "the challenge phrase", "k": "proword", "st": "ruled", "d": "The formal challenge, spoken as written in STATE.md's header. The countersign follows, first line, exact, then the board. The ritual is never explained.", "w": "STATE.md header · SOP.md §1"}, "out-block": {"t": "the OUT block", "k": "proword", "st": "ruled", "d": "Every reply that executes an [[oscar-mike|Oscar Mike]] or an [[endex|ENDEX]] closes with the fenced end-of-transmission block and nothing after it: OSCAR MIKE · OUT · OUT · OUT. A visible seam between what was parked and what starts next. Coded 9/6 on your order.", "w": "SOP.md §7 rule 9"}, "status-on-bolo": {"t": "status on BOLO N", "k": "proword", "st": "provisional", "d": "\"Give me the status on BOLO 45\": builds and publishes that BOLO's status page — the five-paragraph order ([[smeac|Situation · Mission · Execution · Admin · Command]]) with the next action on top, governed by [[speed]], [[focus]] and [[boldness]]. Coined 9/10 evening. Name bench for the page: FRAGO (rec) · STATUS · THE 411 · OPORD.", "w": "SOP.md §1 · _tools/bolostatus/"}, "recon": {"t": "recon", "k": "proword", "st": "benched", "d": "Benched 9/6: the [[boresight]] protocol aimed outside the wire (web and literature) instead of at the vault. \"Napkin recon\" would be the one-pass form. Waits in the [[bolo37|selection loop]].", "w": "SOP.md §5"}, "napkin": {"t": "napkin", "k": "proword", "st": "benched", "d": "Benched 9/6 as a modifier: back-of-the-napkin, one pass, rough numbers, no question loop. Spoken as a prefix: \"napkin boresight\", \"napkin recon\".", "w": "SOP.md §5"}, "syllabus": {"t": "syllabus", "k": "proword", "st": "benched", "d": "Benched 9/6: \"pull the syllabus on X\" = the tier-one 101 textbooks of a field, [[ivory-tower|ivory tower]], one per field to start.", "w": "SOP.md §5"}, "distill": {"t": "distill", "k": "proword", "st": "benched", "d": "Benched 9/6: make the BVX-LEARN one-sheet. The doctrine's own word: distill, don't summarize.", "w": "SOP.md §5"}, "grammar": {"t": "grammar", "k": "proword", "st": "benched", "d": "Benched 9/6: \"write the grammar\" = derive a system's operating language from its sources.", "w": "SOP.md §5"}, "mint": {"t": "MINT", "k": "proword", "st": "benched", "d": "Recommended name for the proword selection loop ([[bolo37|BOLO 37]]): where the house tongue gets struck, beside DARKROOM and WARROOM. Bench: BREVITY · SOI · CALLSIGN · LEXICON. Your ruling.", "w": "BOLO.md #37 · SOP.md §5"}, "readyroom": {"t": "READYROOM", "k": "proword", "st": "benched", "d": "Recommended name for the sit rep front page program: the Navy's briefing room, sibling of DARKROOM and WARROOM. Bench: OPSROOM · FRONTPAGE · THE BOARD. Your ruling.", "w": "BOLO.md #38"}}};
+const B = DATA.board, G = DATA.glossary;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function md(s) {
+  s = esc(s);
+  s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, k, l) => { const g = G[k]; const label = l || (g ? g.t : k); return g ? `<a class="t" data-t="${k}" tabindex="0">${label}</a>` : label; });
+  return s;
+}
+const ST = { hot: ['●', 'hot'], open: ['○', 'open'], held: ['◐', 'held'], gated: ['◇', 'on your go'], parked: ['▭', 'parked'], done: ['✓', 'done'], ruled: ['✓', 'ruled'], good: ['●', 'up'], bad: ['▲', 'stalled'], missing: ['▲', 'no record'], corrected: ['↺', 'corrected'], new: ['✦', 'new'] };
+const chip = s => { const d = ST[s] || ['·', s]; return `<span class="chip st-${s}">${s === 'hot' ? '<i></i>' : d[0]} ${d[1]}</span>`; };
+function trunk(t) { if (!t) return ''; const one = x => x === 'BLACK' ? `<span class="b">BLACK</span>` : x === 'ORANGE' ? `<span class="o">ORANGE</span>` : `<span class="p">${esc(x)}</span>`; return `<span class="tr">${t.split('/').map(one).join('')}</span>`; }
+
+/* ---- header: identity block · the three · the FRAGO strip ---- */
+const K = B.bolo;
+$('#mono').innerHTML = `<small>BOLO</small>${K.n}`;
+$('#title').textContent = K.title;
+$('#meta').innerHTML = `${chip(K.s)} ${trunk(K.trunk)} <span><span class="k">issued</span>${esc(K.issued)}</span><span><span class="k">as of</span>${esc(K.asof)}</span><span><span class="k">decider</span>${esc(K.decider)}</span><span><span class="k">feeds</span>${md(K.feeds)}</span><span><span class="k">status</span>${esc(K.status)}</span>`;
+$('#mantra').innerHTML = B.mantra.map(m => `<div><span class="w"><a class="t" data-t="${m.k}" tabindex="0">${esc(m.w)}</a></span><p>${md(m.line)}</p></div>`).join('');
+const F = B.frago;
+$('#frago').innerHTML = `<div><span class="lbl">Mission · task, in order to</span><p class="mission">${md(F.mission)}</p></div>
+  <div><span class="lbl">The order · next action</span><p class="order">${md(F.order)}</p><p class="default">${md(F.default)}</p></div>
+  <div><span class="lbl">Your calls · defaults run if silent</span>${F.calls.map(c => `<div class="call"><b>${esc(c.q)}</b><span class="opts">${esc(c.options)}</span><span></span><span class="def">default <em>${esc(c.default)}</em> · ${chip(c.s)}</span></div>`).join('')}</div>`;
+$('#footR').textContent = `BOLO ${K.n} · ${K.home} · ${K.version}`;
+
+/* ---- outliner ---- */
+const P = B.paragraphs;
+const KEYS = P.map(p => p.id);
+$('#olRows').innerHTML = P.map((p, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">¶ ${esc(p.id)}</span><span class="name">${esc(p.name)}</span></span><span class="key">${esc(p.id)}</span></button>`).join('')
+  + `<button class="ol-row gl-row" data-g="1"><span class="node"><i></i></span><span><span class="id">SOI</span><span class="name">Glossary</span></span><span class="key">G</span></button>`;
+$('#olFoot').innerHTML = `related: ${K.related.map(r => `<b>BOLO ${r.n}</b> ${esc(r.why)}`).join('<br>')}`;
+
+/* ---- renderers ---- */
+function itemHTML(it) {
+  return `<li class="item"><span class="n num">${it.n != null ? it.n : ''}</span><div><div class="text">${md(it.t)}</div><div class="meta">${it.s ? chip(it.s) : ''}${it.when ? `<span class="when">${esc(it.when)}</span>` : ''}</div></div></li>`;
+}
+const groupsHTML = groups => groups.map(g => `<div class="grp"><span class="lbl">${esc(g.label)}</span><ul class="items">${g.items.map(itemHTML).join('')}</ul></div>`).join('');
+function render(p) {
+  let body = '';
+  if (p.kind === 'list') body = groupsHTML(p.groups);
+  else if (p.kind === 'mission') body = `<div class="msn"><p class="task">${md(p.task)}</p><p class="intent">${md(p.intent)}</p><p class="spoken">${md(p.spoken)}</p></div>
+    <div class="end"><span class="lbl">End state · done means</span><ol>${p.endstate.map(e => `<li>${md(e)}</li>`).join('')}</ol></div>`;
+  else if (p.kind === 'phases') body = `<div class="me"><span class="lbl">Main effort</span>${md(p.main_effort)}</div>
+    ${p.phases.map(ph => `<div class="ph ${ph.s}"><span class="n num">${ph.n}</span><div class="text">${md(ph.t)}</div><div class="right">${chip(ph.s)}<span class="when">${esc(ph.when)}</span></div></div>`).join('')}
+    <div class="coord"><span class="lbl">Coordinating instructions</span><ul>${p.coord.map(c => `<li>${md(c)}</li>`).join('')}</ul></div>
+    ${p.running.length ? `<div class="coord"><span class="lbl">Running now</span><ul>${p.running.map(c => `<li>${md(c)}</li>`).join('')}</ul></div>` : `<div class="coord"><span class="lbl">Running now</span><ul><li>Nothing on this BOLO. It waits on you.</li></ul></div>`}`;
+  else if (p.kind === 'files') body = `<div class="tblwrap"><table class="files"><thead><tr><th>Where</th><th>What</th><th>State</th></tr></thead><tbody>${p.files.map(f => `<tr><td class="p">${/^https?:/.test(f.path) ? `<a href="${esc(f.path)}" target="_blank" rel="noopener">${esc(f.path.replace('https://', ''))}</a>` : esc(f.path)}</td><td>${md(f.what)}</td><td>${chip(f.s)}</td></tr>`).join('')}</tbody></table></div>
+    <div class="cost">${p.cost.map(c => `<div><b>${esc(c.v)}</b><span>${esc(c.k)}</span></div>`).join('')}</div>`;
+  else if (p.kind === 'log') body = `<div class="log">${p.entries.map(e => `<div class="lg ${/claude|agent/i.test(e.who) ? 'claude' : ''}"><span class="when">${esc(e.when)}</span><span class="who">${esc(e.who)}</span><span>${md(e.t)}</span></div>`).join('')}</div>`;
+  $('#panel').innerHTML = `<div class="frame"><div class="bh"><span class="eyebrow">Paragraph ${esc(p.id)}</span><span class="src">${esc(p.name)}</span></div><h2 class="bt">${esc(p.name)}</h2><p class="plain">${md(p.plain)}</p>${body}</div>`;
+  $('#panel').scrollTop = 0;
+  const s = p.strand;
+  $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
+    <div class="c"><span class="lbl">What we did last</span><p>${md(s.last)}</p></div>
+    <div class="c"><span class="lbl">What the plan was</span><p>${md(s.plan)}</p></div>
+    <div class="c"><span class="lbl">What you did</span><p>${md(s.you)}</p></div>
+    <div class="c"><span class="lbl">What's next</span><p>${md(s.next)}</p></div></div>
+    <div class="sec"><span class="lbl">Where this lives</span><dl class="kv"><dt>row</dt><dd>${esc(K.home)}</dd><dt>card</dt><dd>${esc(K.card)}</dd><dt>page</dt><dd>_tools/bolostatus/out/BOLO-${K.n}.html</dd></dl></div>`;
+}
+let cur = 0, glossaryOpen = false;
+function go(i) {
+  cur = Math.max(0, Math.min(P.length - 1, i)); glossaryOpen = false;
+  document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', !r.dataset.g && +r.dataset.i === cur));
+  $('#glossBtn').classList.remove('on'); closeTips(0); render(P[cur]);
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+}
+const KIND_ORDER = ['proword', 'noun', 'ruling', 'system', 'item', 'person'];
+const KIND_LABEL = { proword: 'Prowords · say one and the protocol fires', noun: 'Board nouns', ruling: 'Rulings and doctrine', system: 'Systems and programs', item: 'Items on the board', person: 'People' };
+const stChip = st => st ? `<span class="chip st-${st === 'ruled' ? 'ruled' : st === 'benched' ? 'parked' : 'open'}">${st}</span>` : '';
+function showGlossaryPage() {
+  glossaryOpen = true;
+  document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', !!r.dataset.g));
+  $('#glossBtn').classList.add('on'); closeTips(0);
+  const entries = Object.entries(G);
+  const secs = KIND_ORDER.map(kind => { const rows = entries.filter(([k, g]) => g.k === kind).sort((a, b) => a[1].t.localeCompare(b[1].t)); if (!rows.length) return '';
+    return `<div class="grp"><span class="lbl">${KIND_LABEL[kind]} <em>· ${rows.length}</em></span><div class="gpage">${rows.map(([k, g]) => `<div class="gent"><div class="gw"><a class="t" data-t="${k}" tabindex="0">${esc(g.t)}</a>${stChip(g.st)}</div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div></div>`).join('')}</div></div>`; }).join('');
+  const np = entries.filter(([k, g]) => g.k === 'proword').length;
+  $('#panel').innerHTML = `<div class="frame"><div class="bh"><span class="eyebrow">SOI · the house tongue</span><span class="src">${entries.length} terms · ${np} prowords</span></div><h2 class="bt">Glossary</h2><p class="plain">Every proword and every board word, in one place. Say a proword and the protocol fires. Terms inside a definition are live: hover, hold, click.</p><input class="gsearch" id="gpageSearch" type="search" placeholder="Search the tongue…" autocomplete="off">${secs}</div>`;
+  $('#panel').scrollTop = 0;
+  $('#gpageSearch').addEventListener('input', e => { const v = e.target.value.trim().toLowerCase(); document.querySelectorAll('.gent').forEach(el => { el.hidden = !!v && !el.textContent.toLowerCase().includes(v); }); });
+  $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx"><div class="c"><span class="lbl">What this is</span><p>The house tongue. The Marine Corps vocabulary is the bootstrap; native coinages replace it as the operation matures (SOP §6).</p></div><div class="c"><span class="lbl">Where it lives</span><p>SOP.md §0 is the card, §1 the definitions, §5 the open naming rulings, §8 the dictation codebook. The same register feeds the sit rep page and every BOLO page.</p></div><div class="c"><span class="lbl">What's next</span><p>BOLO 37 moves proword rulings into a daily selection loop; the benched words wait in it.</p></div></div>`;
+  try { history.replaceState(null, '', '#glossary'); } catch (e) {}
+}
+$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (!r) return; if (r.dataset.g) showGlossaryPage(); else go(+r.dataset.i); });
+$('#glossBtn').addEventListener('click', () => glossaryOpen ? go(cur) : showGlossaryPage());
+
+/* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */
+let tips = [], openTimer = null, closeTimer = null;
+function tipFor(target, depth) {
+  const k = target.dataset.t; const g = G[k]; const el = document.createElement('div'); el.className = 'tip'; el.dataset.depth = depth;
+  const deep = depth >= 3;
+  el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div><p>${deep ? esc(g.d.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, kk, l) => l || (G[kk] ? G[kk].t : kk))) : md(g.d)}</p>${deep ? `<div class="w"><a href="#" class="glopen" data-k="${k}">Open in glossary →</a></div>` : `<div class="w">${esc(g.w || '')}</div>`}<div class="lock"><b></b></div><div class="hint">hold 1.5 s or press Space to lock · Esc closes · click opens the term</div>`;
+  document.body.appendChild(el);
+  const r = target.getBoundingClientRect(); const w = el.offsetWidth, h = el.offsetHeight;
+  let x = Math.min(Math.max(12, r.left), window.innerWidth - w - 12); let y = r.bottom + 8; if (y + h > window.innerHeight - 12) y = Math.max(12, r.top - h - 8);
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+  const rec = { el, target, depth, locked: false, timer: null };
+  const bar = $('.lock b', el); requestAnimationFrame(() => { bar.style.transition = 'width 1.5s linear'; bar.style.width = '100%'; });
+  rec.timer = setTimeout(() => lock(rec), 1500);
+  el.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+  el.addEventListener('mouseleave', () => scheduleClose(depth));
+  el.addEventListener('click', e => { const a = e.target.closest('.glopen'); if (a) { e.preventDefault(); openTerm(a.dataset.k); } });
+  target.classList.add('on'); tips.push(rec); return rec;
+}
+function lock(rec) { rec.locked = true; rec.el.classList.add('locked'); }
+function closeTips(d) { tips.filter(t => t.depth >= d).forEach(t => { clearTimeout(t.timer); t.el.remove(); t.target.classList.remove('on'); }); tips = tips.filter(t => t.depth < d); }
+function scheduleClose(depth) { clearTimeout(closeTimer); closeTimer = setTimeout(() => { const un = tips.filter(t => t.depth >= depth && !t.locked); if (un.length) closeTips(Math.min(...un.map(t => t.depth))); }, 220); }
+function depthOf(t) { const p = t.closest('.tip'); return p ? +p.dataset.depth + 1 : 1; }
+function onEnter(t) { clearTimeout(openTimer); clearTimeout(closeTimer); const d = depthOf(t); openTimer = setTimeout(() => { closeTips(d); tipFor(t, d); }, 120); }
+document.addEventListener('mouseover', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('mouseout', e => { const t = e.target.closest('.t'); if (t) { clearTimeout(openTimer); scheduleClose(depthOf(t)); } });
+document.addEventListener('focusin', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('focusout', e => { const t = e.target.closest('.t'); if (t) scheduleClose(depthOf(t)); });
+document.addEventListener('click', e => { const t = e.target.closest('.t'); if (t && t.dataset.t) { e.preventDefault(); openTerm(t.dataset.t); return; } if (!e.target.closest('.tip')) closeTips(1); });
+
+/* ---- term detail in the rail ---- */
+function openTerm(k) { const g = G[k]; if (!g) return; $('#rail').classList.add('gl'); closeTips(1); $('#glDetail').innerHTML = `<h5>${esc(g.t)}</h5>${stChip(g.st)}<p style="margin-top:6px">${md(g.d)}</p><div class="w">${esc(g.k)} · ${esc(g.w || '')}</div>`; }
+function closeTerm() { $('#rail').classList.remove('gl'); }
+$('#glClose').addEventListener('click', closeTerm);
+
+/* ---- theme ---- */
+const themes = ['', 'light', 'dark']; const themeLabel = { '': 'theme · auto', light: 'theme · light', dark: 'theme · dark' };
+function applyTheme(t) { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; $('#themeBtn').textContent = themeLabel[t]; try { localStorage.setItem('sitrep_theme', t); } catch (e) {} }
+let theme = ''; try { theme = localStorage.getItem('sitrep_theme') || ''; } catch (e) {} if (!themes.includes(theme)) theme = ''; applyTheme(theme);
+$('#themeBtn').addEventListener('click', () => { theme = themes[(themes.indexOf(theme) + 1) % themes.length]; applyTheme(theme); });
+
+/* ---- keys ---- */
+document.addEventListener('keydown', e => {
+  if (e.target.matches('input')) { if (e.key === 'Escape') { e.target.blur(); } return; }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const up = e.key.toUpperCase();
+  if (KEYS.includes(up) && e.key.length === 1) { go(KEYS.indexOf(up)); return; }
+  if (e.key === 'ArrowRight') { go(cur + 1); return; }
+  if (e.key === 'ArrowLeft') { go(cur - 1); return; }
+  if (e.key === 'Escape') { if (tips.length) closeTips(1); else if ($('#rail').classList.contains('gl')) closeTerm(); else if (glossaryOpen) go(cur); return; }
+  if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
+  if (up === 'G') { glossaryOpen ? go(cur) : showGlossaryPage(); return; }
+  if (up === 'T') { $('#themeBtn').click(); }
+});
+if (location.hash === '#glossary') showGlossaryPage(); else go(0);
+</script>
+
+</body>
+</html>

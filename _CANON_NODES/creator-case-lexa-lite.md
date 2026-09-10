@@ -4,7 +4,7 @@ entity_id: creator_case_lexa_lite
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); half-blocked (Pornhub side unreadable from the session); every claim sourced; confidence labeled
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); half-blocked (Pornhub side unreadable from the session); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
 register_row: "performer-register — Lexa Lite · C · M·X · 2023 (on the register since the 2023 creator case studies)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -97,3 +97,22 @@ Snippet only: https://lookedon.com/lexalite2 ("Top 0.83%"; DNS timeout ×3) · h
 Blocked/failed: pornhub.com/model/lexalite · modelhub.com/lexalite (FL age-gate) · onlyfans.com/lexalite · x.com/lexalite2 + publish.x.com oembed (402) · syndication.twitter.com (0 entries) · old.reddit.com/user/lexalite2 + /lexalite · web.archive.org + archive.ph (blocked in this run) · xhamster · xvideos/models/lexalite · freeones · fansmetrics · onlyfinder · hubite · onlyaccounts.io · babepedia (403) · linktr.ee/lexalite · allmylinks.com/lexalite · onlyfans.guide (404) · similar.fans (no DNS) · nitter/xcancel (down)
 Collisions excluded: x.com/lexalite (Joe Gallegos) · alpadvantage.com/lexalite (lighting) · tiktok.com/@youcanrelatetosasha/video/7432068117951417643
 Method: 20 searches, ~35 fetch attempts, 3 primary sources succeeded.
+
+## 10 · GOUGE
+
+**The one mechanic.** A duration split as the funnel. The public wall carries sub-minute teasers (8 to 46 seconds), a pair of clips around two and a half minutes, and a few long pieces; the "Full videos" wall sits behind a $69 tier at 4.3× the $15.99 entry. That is the 2023 note — short one-to-two-minute uploads on Pornhub, re-cut into compilations — seen again on a second platform three years later, which is the strongest thing this thin record proves. Around it: one handle stacked across Pornhub → X → Fansly → OnlyFans so tube search resolves to the paid page by name, a one-use $6.99 first-month promo with a dated window, a 25/35% multi-month ladder, and roughly one post a week with a niche hashtag set in every caption. The yield is the other half of the lesson: 4,385 Fansly followers after five years.
+
+**Transferable tips.**
+- Split free from paid by duration or version, not by subject: publish the sub-minute cut on the public wall and sell the long cut behind a second wall priced well above entry.
+- Cut once, publish many times — a short-clip library re-cut into compilations is a re-use pipeline at zero marginal cost, and it is the tactic that got her noticed in 2023.
+- Hold one handle on every platform and register it early so any tube discovery lands on the paid page by name; the Fansly account ties to the persona by handle alone.
+- Run a one-use entry promo with a dated window ($6.99 first month) over a multi-month discount ladder (25% at 90 days, 35% at 180) — the only conversion tooling she runs, and it is enough to run.
+- Do not mistake the funnel for the engine: weekly posts and in-app hashtags with no hook, no press, and no social layer produced 4.4K followers in five years.
+
+**Does not transfer.** The whole ladder rests on a free explicit tube as the discovery engine and on a catalog of solo video behind a fansite wall; a zero-budget operator with a disclosed rendered persona has no tube channel (tubes are irrelevant to stills and renders) and no settled home for rendered work on the fansite side, so the "second wall at 4.3×" has to be rebuilt on a different platform with a different unit — a set, not a duration. The record is also a caution rather than a model: the mechanic is verified, the growth is not, and nothing about her start, her prior work, or why she chose the format exists anywhere reachable.
+
+**Feeds.**
+- The studio launch (BOLO 24) — the free/paid split as a version split (short cut public, full cut gated) applied to a stills catalog; the dated entry promo plus multi-month ladder as the pricing template.
+- The curation funnel (BOLO 27, ULTRA DARK) — the re-cut pipeline: one source, many cuts, each a separate item; the 2023 "cross-utilizes as compilations" note is the set's closest example of curated re-use.
+- The masked-performer Lab venture — the teaser-to-full ladder and the handle-stacking rule apply as-is to a masked video performer on a tube.
+- The manager/agency path — nothing; solo, and no evidence of management or collaboration anywhere in the record.

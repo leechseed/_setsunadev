@@ -4,7 +4,7 @@ entity_id: creator_case_siswet
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; the niche-craft career model — "the Siswet lane" — in the lab-venture card; feeds the performer register)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); the one case with a real self-told record (Dutch media 2019–2026); every claim sourced; confidence labeled
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); the one case with a real self-told record (Dutch media 2019–2026); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
 register_row: "performer-register — Siswet · P · A · 2022 (on the register since CULT OF ADLAW 2022)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 correction: "BERLIN-PIVOT.md calls her the German-systematization case — she is Dutch (Achterhoek, Doetinchem), by her own bios and every press piece. The systematization read may stand; the nationality does not."
@@ -210,3 +210,22 @@ The tier ladder ($4.99 entry → $499 "boyfriend" / custom tiers) is the cleares
 - https://www.imdb.com/name/nm13042823/bio/ (snippet; 403) · https://wikiindetail.com/elise-siswet-biography/ (LOW) · https://celebritate.com/celebrity/elise-siswet/ (LOW) · https://www.youtube.com/watch?v=xxK4sOcubFU (bio-farm video, LOW) · https://www.manyvids.com/Profile/1000212866/Siswet19/ (unfetched)
 
 **Tooling note for the next run:** WebFetch is hard-blocked on web.archive.org and manyvids.com, but `curl` to Wayback works (use the `id_` raw flag and `--compressed` for 2023+ snapshots; the archive intermittently returns "Temporarily Offline"). Medium and YouTube watch pages fetch via curl with a browser UA. Fansly `profileBadges` carry the leaderboard badges; avatar/banner `createdAt` are in seconds, not ms.
+
+## 10 · GOUGE
+
+**The one mechanic.** Daily presence as the moat, with a whale ladder built on top of it. Her own line, 2021: "I was literally online every day, so people couldn't go to another dealer." The funnel is a free cam room (linked from her Pornhub about text since 2018) → tube volume (1,000+ uploads) → paid subscriptions on eight-plus platforms → a tier ladder from $4.99 to $499 (customs, coaching, "no PPV", priority tiers) → products with her name on them (a lube and two toys made by manufacturers who put her name on the product; a rival cites one by name in her own video). Awards sit on every bio as credentials; the rights stay hers because she self-produces rather than shooting for studios (her stated reason, Regio8 2021); the home market's mainstream press has carried her story four times (2019, 2021, 2021, 2026). Thirteen years, and the only first-hand earnings figures in the set.
+
+**Transferable tips.**
+- Be present every day in year one and put the free room's link in every about-text; presence, not price, is what she names as the reason the audience stayed.
+- Keep your rights: self-produce rather than shoot for studios — her stated reason, and why the 1,000-video back catalog is hers to resell across eight platforms.
+- Build a ladder with a real top: entry at $4.99, named top tiers at $369–499 for customs, coaching, and "no PPV" access; the top of the market pays for a name on a tier.
+- Choose a platform for how the home audience pays — F2F for iDEAL (Dutch bank transfer) is a payment-rail decision, not a content one.
+- Get named: awards on every bio, a product with your name on it, and the home-market press cycle (four Dutch pieces, each re-uploaded to her own YouTube channel); peers citing your product is the mark of owning the niche.
+
+**Does not transfer.** The moat is a live human in a room every day, and a disclosed rendered persona cannot stand in a cam room; the top tiers — customs, "be my boyfriend", the girlfriend-experience tier, coaching — all sell access to a real person; the thirteen-year clock, the two awards, and the regional-press biography are not reproducible from zero; and both earnings figures (year six, year eight) are a real performer's, not a rendered-persona benchmark. What survives is the daily-presence rule, the ladder shape, the rights principle, and the payment-rail question.
+
+**Feeds.**
+- The studio launch (BOLO 24) — the daily-presence rule; the ladder shape (entry at the norm, one whale tier anyway); the rights-retention principle; the home-market press mechanism.
+- The curation funnel (BOLO 27, ULTRA DARK) — themed walls with item counts on the wall name as a catalog the fan navigates by collection; one back catalog resold across eight storefronts.
+- The masked-performer Lab venture — primary: "the Siswet lane" is already that venture's niche-craft career model, and cam is its moat; a masked performer can stand in a room where a rendered persona cannot, and the rights rule and the products line are the masked lane's own.
+- The manager/agency path — a counter-example: solo, a partner on finances only, no agency; the stated 2021 ambition to own a club and the 2026 "Club Owner" bio are the creator-to-owner path, unverified.

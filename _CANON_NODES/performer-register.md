@@ -209,7 +209,6 @@ Top performers by five-star scene count who are on none of the lists. 322 of 2,4
 | Maestro | M | 9 |
 | Natalie Mars | T | 9 |
 | Tee Reel | M | 9 |
-| Rebel Rhyder | F | 8 |
 | Lancelot Styles | M | 6 |
 | Mike Chapman | M | 6 |
 | Freddy Gong | M | 5 |

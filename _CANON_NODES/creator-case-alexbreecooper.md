@@ -4,7 +4,7 @@ entity_id: creator_case_alexbreecooper
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); every claim sourced; confidence labeled
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
 register_row: "performer-register — AlexBreeCooper · C · S · 2026"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -156,3 +156,23 @@ Tweets (fxtwitter status API), all at https://x.com/alexbreecooper/status/<id>: 
 Wayback, all as https://web.archive.org/web/<stamp>/<url>: 20210620023514 onlyfans.com/alexbreecooper · 20210801075058 redgifs.com/users/alexbreecooper · 20211026200024 twitter.com/alexbreecooper · 20220213113329 fansly.com/alexbreecooper · 20220519194557 reddit.com/user/alexbreecooper · 20220601204448 pornhub.com/model/alexbreecooper · 20221204194250 manyvids.com/Profile/1005544720/AlexBreeCooper/About · 20230705202842 pornhub model · 20240207143208 pornhub model · 20240213044027 pornhub stream 281997021 · 20240419092642 pornhub model · 20240919065306 pornhub model/about · 20250404151522 chaturbate.com/alexbreecooper · 20250418033909 manyvids Followers · 20260328021132 pornhub model/stream · 20260512131452 pornhub stream 299693701
 Low-confidence: instagram.com/alexbreecooper (snippet ~4,056) · aajivanbiography.com/alexbreecooper (**wrong person — the podcaster; disregard**) · tiktok.com/discover/alex-bree-cooper-monster-can · tiktok.com/discover/alexbreecooper
 Method: ~34 searches (the podcaster swamps every query); Pornhub, OnlyFans, X, Reddit, Beacons, trackers blocked to WebFetch → public JSON endpoints + raw curl + Wayback.
+
+## 10 · GOUGE
+
+**The one mechanic.** A written fairness rule as the pitch, priced at the top of the market. The subscription runs $129.90–150 a month — roughly ten times a typical fansite sub — and what justifies it is not the catalog but a policy post from December 2021, still linked from the bio: no PPV while subscribed, "you'll never see a lock or price on any posts" if the sub is active. The only difference between the two tiers is chat with "the real Alex," $20 more. Everything else is discipline around that rule: one hook repeated verbatim on every platform, free tubes carrying teasers with a single CTA ("message me for the full video"), a catalog organized into 39 named walls, and five toy-brand affiliates so each unboxing is content, ad, and search hook at once. Built part-time around a full-time job over five years; Fansly Top 100 by the end of 2024, three years in; no interview anywhere — the whole business is legible from platform data alone.
+
+**Transferable tips.**
+- Write one rule into the bio and keep it. Her no-PPV policy answers the "will I be nickel-and-dimed" objection before it is asked; the rule is the differentiator, the price follows it.
+- Pick one line and paste it unchanged on every surface — the hook reads identically on Pornhub, ManyVids, Fansly, and X, so any discovery resolves to the same offer.
+- Treat free tubes as ads with one CTA phrase, never varied, and sell the full piece off-platform; the rank is a treadmill, the subscriber count is the asset.
+- Organize the catalog by named walls, not by date — 39 walls by brand and by format let a fan navigate a collection; five of the brands pay an affiliate cut on top.
+- Register on each new platform early and port the bio (Fansly 2021, Bluesky 2023, Chaturbate 2025); the sprawl is discoverability and insurance, and the link hub carries a DMCA service.
+- Keep the day job: five years part-time, cadence falling weekly → monthly, subscribers still climbing.
+
+**Does not transfer.** The premium sells a real person — "chat with me, and only me, it's just the real Alex here" is the $20 step and the entire justification for the top tier — and a disclosed rendered persona cannot sell that, so the ladder has to be priced on something else. The funnel is free explicit video on tubes feeding a Fansly hub, chosen because one platform's policy pushed her core content there; for a stills or rendered operator the tubes are irrelevant and the hub's stance on rendered work is unsettled, so the shape (free wall as ad, paid wall as checkout) carries and the platforms do not. The viral clip that seeded three years of tail was unplanned and cannot be scheduled. What survives is the rule-in-the-bio, the one-line hook, the walls, and the clock: five years, part-time, no press.
+
+**Feeds.**
+- The studio launch (BOLO 24) — the bio rule and the one-line hook; the slow-burn clock (five years, part-time) as the pace a launch with no audience and no funnel should expect.
+- The curation funnel (BOLO 27, ULTRA DARK) — walls-as-catalog (39 named collections) is the closest thing in the set to a curated collection sold by name; the teaser-with-one-CTA pattern for any free surface.
+- The masked-performer Lab venture — the affiliate layer (five brands, a DMCA service) shows how a body-on-camera niche earns beyond subs; the "real Alex" chat premium is a seat a masked performer can hold and a rendered persona cannot.
+- The manager/agency path — weak: self-run, no collabs, no management; the benchmark for what a solo account looks like with nobody managing it.

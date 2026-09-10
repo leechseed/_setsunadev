@@ -4,7 +4,7 @@ entity_id: creator_case_variety_itsol
 kind: creator case study — business-side research on a public performer/creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane P)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order ("add another one to the list", spoken 9/10); every claim sourced; confidence labeled
+status: DELIVERED 2026-09-10 — researched on Papi's order ("add another one to the list", spoken 9/10); every claim sourced; confidence labeled · §10 GOUGE added 9/10 (provisional name)
 register_row: "performer-register — Variety Itsol · P · S · 2026 (spoken 9/8; the roster's top five-star name after the 9/10 Stash recount, 9)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 pronouns: "her own bios: she/her (Fansly) · she/they (X). She/her used here."
@@ -182,3 +182,22 @@ Contest wins: none found. Pornhub Awards / TEA / XBIZ / AVN / Fleshbot nominee l
 - https://shibbydex.com/home (X-bio link; no Variety Itsol page there) · https://www.twitch.tv/varietyitsol/about (JS-only)
 
 **Tooling note:** WebFetch is blocked on web.archive.org and clips4sale.com, but plain `curl` works for both (Wayback `id_` raw snapshots come back gzip-compressed — decompress before grepping; the archive was intermittently "Temporarily Offline").
+
+## 10 · GOUGE
+
+**The one mechanic.** Studio attachment before ten uploads. Her first Pornhub bio (December 2022: 8 videos, 628 subscribers) already names Grooby's Omar Wax as her producer, and the studio relationship did the early work — a "Featured in" cross-link on the tube, promo posts from the studio's X account, Verified Pornstar status in about ten months, an AVN Fresh Faces slot in about eighteen — while she stayed an independent creator selling OnlyFans at $5.99 (2022), Fansly at $11.99, and Clips4Sale clips at $3.99–24.99. Pornhub went 628 → 65.7K subscribers in 3.7 years. The press ladder ran in order: a small YouTube show (2023), trade press (2024), a 1h47m podcast (2025), scene news (2025). Around it: 1.2 uploads a week in year one, then a third of that; a recurring collab partner so the clip catalog reads as a series; a SFW gaming stream for the audience that will not follow an 18+ account.
+
+**Transferable tips.**
+- Get a studio account promoting you before you have ten uploads — the cross-link and the studio's repost are worth more than any tactic run alone, and they bought Verified status in ten months.
+- Write the funnel into the tube bio in plain words ("I upload much longer videos on those but I also just love to share some really hot moments on Pornhub") — say where the full piece lives and why to go there.
+- Front-load volume: 1.2 uploads a week in year one took her from 628 to 13.8K subscribers in ten months; the rate can fall afterwards and subscribers still climb.
+- Climb the press ladder in order — small show, trade press, long podcast, scene news — and let each rung name the last.
+- Build the clip catalog as a series with a recurring partner and per-clip pricing, and keep one SFW surface for the audience that stays outside.
+
+**Does not transfer.** The studio relationship is a real producer shooting a real performer, and everything downstream — the "Featured in" link, Verified status, the trade-press slot, the clip catalog, the customs — depends on her being on camera; a disclosed rendered persona cannot be shot by a studio or verified by a tube, and the press hook (a veteran, a trans woman, an activist) is a biography, not a fiction. The audio and streaming surfaces need a voice and a live presence. What carries is the mechanism itself — a studio account promoting a performer account, and the order of the ladder — not the relationship.
+
+**Feeds.**
+- The studio launch (BOLO 24) — primary: the studio-account-promotes-the-performer mechanism, the year-one cadence, and the press ladder in order.
+- The curation funnel (BOLO 27, ULTRA DARK) — the series-style catalog (one recurring partner across most titles, $3.99–24.99 per clip) as a per-item pricing model.
+- The masked-performer Lab venture — a masked performer can take the studio-attached path (be shot, be featured, be verified) that a rendered persona cannot; the SFW stream is the masked lane's audience layer.
+- The manager/agency path — the producer-before-ten-uploads relationship is what a manager delivers; the clearest case in the set of what an attachment buys and how fast.

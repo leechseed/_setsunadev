@@ -4,7 +4,7 @@ entity_id: creator_case_mercedes_carrera
 kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — HIGH confidence on identity as "the former aerospace engineer"; NOT confirmed by Papi; NOT on the performer register until he rules. The alternate candidate is [[creator-case-spaceghost]].
+status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — HIGH confidence on identity as "the former aerospace engineer"; NOT confirmed by Papi; NOT on the performer register until he rules. The alternate candidate is [[creator-case-spaceghost]]. · §10 GOUGE added 9/10 (provisional name)
 legal_note: "Arrested Feb 2019; pleaded not guilty; in pretrial custody with no verdict as of 2026-09-10. Charged, not convicted. Reported here as press reported it, nothing more."
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
@@ -148,3 +148,24 @@ updated: 2026-09-10
 - Stage-1 alternates: https://api.fxtwitter.com/spaceghost · https://x.com/spaceghost/status/1812824002403991826 · https://www.vice.com/en/article/this-woman-abandoned-bioengineering-for-a-1-million-onlyfans-career/ · https://twitter.com/nypost/status/1758255970252108257 · https://face2faceafrica.com/article/aerospace-engineer-claims-he-lost-his-job-after-employers-learned-hes-also-a-sex-worker · https://mikesouth.com/mike-souths-life/how-i-got-into-porn-after-being-a-rocket-scientist-12291
 
 Method: Stage 1 = 18 searches; Stage 2 = 9 searches, ~30 fetch attempts (about 12 succeeded; Daily Caller, IAFD, Podchaser, Podcast Addict 403; web.archive.org, archive.ph, pornhub.com blocked in this run).
+
+## 10 · GOUGE
+
+Struck 9/10 as the NASA-girl candidate; kept as a receipt. The gouge still stands.
+
+**The one mechanic.** The "brains" hook as a press engine on top of a studio-scene backbone. Every blurb about her leads with the same biographical line — "former aerospace engineer" (Vice 2015, Holly Randall Unfiltered 2018, a YouTube show titled "Beauty + Brains") — and her first-year stunt tied it to a cause: a charity cam show for a STEM scholarship in January 2015 that brought Vice and Daily Caller coverage no scene release would have. Under the hook, the income was studio work — 200+ titles for the majors, 2016–2019 — with own sites, cam, and OnlyFans as side layers, an award-nomination cycle every year, and an X account posting at roughly 75 a day. She owned no platform; her own site is dead, and the record stops at the 2019 arrest (charged, not convicted).
+
+**Transferable tips.**
+- Lead with the one biographical fact the press can repeat; every interview blurb opens with hers, so put yours first in every bio.
+- Tie the first stunt to a cause with its own audience — the 2015 charity show for a STEM scholarship brought a press faction with it that a release never would.
+- Run the same hook through four formats — a podcast, a YouTube show, a radio-style interview, a print profile — each one a fresh audience for one line.
+- Keep an owned surface alive: her own site redirects to ad-parking and the case site does not resolve; the only asset still standing is the X account (177K).
+- Post at volume on the hub — about 129K posts in four and a half years — because when the studio catalog is not yours, the audience on the hub is the only thing you own.
+
+**Does not transfer.** The backbone was studio scene work for major labels, which a disclosed rendered persona cannot book, and the side layers — own sites shot with a partner, cam, OnlyFans — are undocumented in price and reach. The hook was a real résumé; a rendered persona's biography is fiction and earns no press on the strength of a credential. The culture-war alignment that carried the 2015 coverage is a channel a zero-budget operator should not want. And the way the record ends is the reason this is a receipt: nothing she built outlived the studio catalog she does not own, and the post-2019 podcast renounces the work.
+
+**Feeds.**
+- The studio launch (BOLO 24) — the hook-first bio rule, and a caution: a studio-era performer with no owned platform is left with nothing when the studio catalog is the only asset.
+- The curation funnel (BOLO 27, ULTRA DARK) — nothing usable; no catalog of her own is on record.
+- The masked-performer Lab venture — the "brains" positioning is the one hook in the set that does not need a face; a masked performer with a real prior career can carry a résumé line the way she did.
+- The manager/agency path — a studio-era comparandum: a performer with a press hook and no owned platform, where a booking email in the bio was the whole agency function.

@@ -4,7 +4,7 @@ entity_id: creator_case_kirenes
 kind: creator case study (light) — business-side lookup on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10, spelled K-I-R-E-N-E-S); light scope; every claim sourced
+status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10, spelled K-I-R-E-N-E-S); light scope; every claim sourced · §10 GOUGE added 9/10 (provisional name)
 register_row: "performer-register — Kirenes · C · S · 2026"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -85,3 +85,22 @@ Only the 30-day billing cycle is offered (no 60/90/180-day plans, unlike larger 
 Verified by fetch: https://apiv3.fansly.com/api/v1/account?usernames=kirenes (WebFetch ×2 + raw curl) · https://apiv3.fansly.com/api/v1/account?usernames=kirenez,kirines,kireness,kyrenes,kirenesx,kirenes_ (empty) · https://apiv3.fansly.com/api/v1/account?usernames=amouranth,fansly,cherrycrush (price-unit calibration) · https://apiv3.fansly.com/api/v1/timelinenew/633405447805607936?before=0&after=0 (empty without login) · https://apiv3.fansly.com/api/v1/accounts/search?query=kirenes&limit=10&offset=0 (404) · https://fansly.com/kirenes (SPA shell) · https://www.tumblr.com/kirenes (RP blog, unrelated) · https://api.fxtwitter.com/Kireneslt · https://x.com/kirenes (402) · syndication.twitter.com kirenes + Kireneslt (empty) · https://fansmetrics.com/search?q=kirenes (403)
 Search-snippet only: https://x.com/kirenes?lang=en-GB ("Panos") · https://twitter.com/Kireneslt · https://x.com/kirinez · https://www.tiktok.com/tag/kirenes · price-unit docs: https://apifansly.com/pricing · https://www.fansly-api.com/pricing · https://rapidapi.com/apimirai/api/fansly-api · https://apify.com/powerai/fansly-full-profile-scraper
 Searches run (13): `kirenes fansly` · `"kirenes" creator` · `kirenez OR kirines OR kireness fansly` · `kirenes twitter OR linktree OR allmylinks` · `"kirenes" reddit` · `"kirenes" onlyfans OR pornhub OR manyvids OR "fansly.com/kirenes"` · site-restricted tracker search · `"kirenes" site:x.com OR site:twitter.com` · link-hub site search · `"kirenes" site:reddit.com` · `"kirenes" fansly followers tier …` · `"kirenes" site:pornhub.com OR site:manyvids.com OR site:instagram.com OR site:tiktok.com` · `"@kirenes" fansly OR "fansly.com/kirenes"`
+
+## 10 · GOUGE
+
+**The one mechanic.** The bare Fansly ladder — three stacked tiers whose benefit labels are the only copy the account has. No display name, no socials, no link hub, no off-platform funnel: just $5 → $7 → $16 for thirty days each, the video library gated at the top, 51 PPV bundles on the timeline, and a single 50%-off promo on the top tier in the first week (April 2024). On that alone the account reached 13,692 followers in about 29 months — roughly 470 a month — from in-platform discovery and volume (316 videos, 106 images). It is the set's control case: what a fansite account yields with nothing but a price stack and a library, and (a low-confidence read) what a lightly-managed or agency-run account looks like from outside.
+
+**Transferable tips.**
+- Treat this as the floor. With no social account, no hub, and no press, a platform-only account made ~470 followers a month on volume and a tier ladder; measure any launch's first months against that number.
+- Label tiers by what each one unlocks, in plain words — the benefit labels are the only copy this account has and they do the selling; a name on a tier is optional, the label is not.
+- Stack a low entry under a mid and a top with the library gated at the top, and run a one-shot half-price promo on the top tier in week one to seed the first subscribers.
+- Ship volume from day one: 316 videos and 51 bundles in 29 months is about eleven videos a month, and the library is what makes in-platform discovery work.
+- Do not copy what is missing: no handle anywhere else means no way to move the audience if the platform goes. Register the name on every surface before it is needed.
+
+**Does not transfer.** This is a body-on-camera video account living entirely inside one platform's discovery feed, and that platform's stance on rendered work is unsettled; a disclosed rendered persona cannot count on the in-app feed to do the finding and has no 316-video library to gate at the top tier — a stills catalog is a different object with a different unit. The likely managed shape (templated bio, no personal surface, no name) is also the opposite of a disclosed persona, whose whole pitch is a stated frame. What carries is the arithmetic and the ladder, not the account.
+
+**Feeds.**
+- The studio launch (BOLO 24) — the base-case growth rate for a launch with no funnel and no hook; the three-tier stack as the entry template.
+- The curation funnel (BOLO 27, ULTRA DARK) — the volume signal only: 51 bundles as the packaged-catalog unit.
+- The masked-performer Lab venture — the no-face, no-name, no-socials shape works at a floor level; a masked performer with even one social account starts ahead of it.
+- The manager/agency path — the set's one example of what the managed shape looks like from outside (templated bio, benefit-label tiers, no personal surface), held at low confidence.

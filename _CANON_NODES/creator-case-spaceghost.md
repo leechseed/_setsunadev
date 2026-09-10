@@ -4,7 +4,7 @@ entity_id: creator_case_spaceghost
 kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom."
+status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom." · §10 GOUGE added 9/10 (provisional name)
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
   - "[[performer-register]]"
@@ -151,3 +151,24 @@ updated: 2026-09-10
 - https://lol.fandom.com/wiki/Space_Ghost (snippet) · https://www.imdb.com/name/nm4307769/ (snippet) · https://www.youtube.com/watch?v=sngSGeOJ8bo · https://en.wikipedia.org/wiki/Kari_Bingen (collision candidate)
 
 Method: 16 searches, ~35 fetch attempts (~16 returned content; x.com, fxtwitter status bodies, vxtwitter, oEmbed, Wayback, Leaguepedia, IMDb, OneLike bodies blocked this run).
+
+## 10 · GOUGE
+
+Struck 9/10 as the NASA-girl candidate; kept as a receipt. The gouge still stands.
+
+**The one mechanic.** A disclosed frame on a two-account funnel. The 18+ account, opened October 2023, states the deal in its bio — "this is a business, I'm a product, this is fantasy + I'm being paid to flirt" — and 84K followers have accepted it; the 2008 SFW account (146K, an esports audience) stays "SFW/don't be gross" and feeds it, after one announced migration in January 2024. The paid wall sells the same object as the free one in a second version ("sub for nude versions of all my tweets"), so the SFW feed is the ad and the fansite is the checkout; a free OnlyFans page fronts three Fansly tiers ($5 / $30 / $100) built on PPV discounts rather than on volume (16 videos, 293 images). "No management company — account is run by myself" is in the bio as a selling point; every handle, display name, tier, and link-hub title comes from one cartoon; the engineer line is on every surface and went viral once, in month nine.
+
+**Transferable tips.**
+- State the frame in the bio — business, product, fantasy — and let the audience opt in on those terms; it is the closest thing on record to a disclosed-persona contract with a working audience behind it.
+- Run two accounts: keep the SFW one clean and let the 18+ one sell; move the adult posts over in one announced step rather than a slow leak.
+- Make the paid item the same object as the free one, in a second version — one shoot, two cuts, no extra production; the free version is the ad for the paid one.
+- Build tiers on discounts to a PPV menu (10 / 30 / 50% off, a DM-fee waiver, a priority seat) rather than on library size; three tiers stand on 16 videos.
+- Keep one brand vocabulary on every surface — handles, names, tiers, the link-hub title from a single source — so every new surface is recognizable the day it opens.
+
+**Does not transfer.** The 84K came from a 146K audience she already had — a 2008 account and six years of broadcast work — plus one true résumé tweet that went viral; the prior-audience clock is not available to a launch from zero, and this growth rate should not be read as a launch-from-zero rate. The hook is a real biography (the VICE piece was built from her own life), the top tier sells a priority seat with a real person, and her 2026 essays record the cost — doxxing, harassment, stepping back — that a person behind an account absorbs and that a rendered persona's operator carries differently. The frame transfers; the audience and the person do not.
+
+**Feeds.**
+- The studio launch (BOLO 24) — primary: the stated-frame bio, the two-account split, the version-split funnel (SFW cut public, full version gated), tiers priced on discounts rather than volume; and the warning that this growth rate ran on a prior audience.
+- The curation funnel (BOLO 27, ULTRA DARK) — the single brand vocabulary across surfaces; a photo-led catalog with bundles (27) as the unit.
+- The masked-performer Lab venture — the SFW → 18+ two-account construction is the shape a masked performer with an existing SFW identity would use; her own account of harassment is the risk the mask exists for.
+- The manager/agency path — a stated counter-example: "run by myself" as a selling point in the bio; evidence that self-run is a positioning, not just a fact.
