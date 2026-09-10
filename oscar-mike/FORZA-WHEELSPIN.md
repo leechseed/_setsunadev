@@ -2,7 +2,7 @@
 title: Forza wheelspin-exclusive cars — collection tracker
 type: tracker
 status: parked (Oscar Mike 2026-08-31) — resumes on next owned-car callout
-updated: 2026-08-31
+updated: 2026-09-10
 trunk: OPERATOR
 open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisionally vs the called "1985 RS200 Evolution"
 ---
@@ -12,6 +12,8 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 **The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Papi calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
 
 **Total: 104 · Owned: 25 (1 ⚠️ confirm) · Needed: 79**
+
+> 2026-09-10: full list brought up on request (owned included). No callout made; counts unchanged. Oscar Mike'd ×3 same turn.
 
 > ⚠️ **Open confirm:** callout said *"1985 Ford RS200 Evolution"* — that car is not on this list; nearest list entry is the **1987 Ford Sierra Cosworth RS500**, marked owned provisionally. If you actually meant the RS200, the Sierra flips back to needed.
 
