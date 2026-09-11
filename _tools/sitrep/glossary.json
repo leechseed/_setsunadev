@@ -76,16 +76,16 @@
   "st": "ruled"
  },
  "belay": {
-  "t": "belay that",
+  "t": "belay (retired)",
   "k": "proword",
-  "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order. Papi 9/11: \"disregard or cancel works, but I need to sound cooler.\" Bench of ten on BOLO 48: KNOCK IT OFF (rec) · WAVE OFF · ABORT · CHECK FIRE · SCRUB · STAND DOWN · ALL STOP · TERMINATE · SCRATCH · AS YOU WERE. Not break contact (break-break is taken).",
-  "w": "SOP.md §1",
-  "st": "provisional"
+  "st": "retired",
+  "d": "Retired 9/11 for [[abort|ABORT]]. Was: cancel the preceding order. Naval lineage: belay = stop, make fast.",
+  "w": "SOP.md §5"
  },
  "endex": {
   "t": "ENDEX",
   "k": "proword",
-  "d": "Close the session: write the cache note, update STATE.md, append the journal. Autosave commits on stop.",
+  "d": "Close the session: write the cache note, update STATE.md, append the journal. Autosave commits on stop. 9/11: the word collides with \"index\" in dictation; the ENDEX was aborted and a bench of ten opened on BOLO 48 (LIBERTY CALL rec). ENDEX stands until ruled.",
   "w": "SOP.md §1",
   "st": "provisional"
  },
@@ -128,7 +128,7 @@
  "soi": {
   "t": "SOI",
   "k": "noun",
-  "d": "Signal Operating Instructions: the book of the house's words (subtitle unruled: bench of ten on BOLO 48, BREVITY rec). The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
+  "d": "Signal Operating Instructions: the [[brevity|BREVITY]]'s book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
   "w": "SOP.md §0 · _tools/soi/ · the SOI page",
   "st": "ruled"
  },
@@ -592,7 +592,7 @@
  "bolo48": {
   "t": "BOLO 48",
   "k": "item",
-  "d": "The name bench: every unruled word with its bench on one sheet. Open 9/11: the cancel word (ten, KNOCK IT OFF rec) · the SOI subtitle replacing \"the lexicon\" (ten, BREVITY rec) · the operator's callsign replacing \"you\" (ten, ACTUAL rec, provisional on the pages) · READYROOM · MINT. Ruled 9/11: DOPE SHEET · ADORNED. Pool: \"caught up\" · INTEL.",
+  "d": "The name bench: every unruled word with its bench on one sheet. Ruled 9/11: DOPE SHEET · ADORNED · ABORT (the cancel word) · BREVITY (what the SOI holds) · HOTLINE / HOTLINE ACTUAL (the operator's callsign). Open: the close-out word replacing ENDEX (ten, LIBERTY CALL rec) · READYROOM · MINT. Pool: \"caught up\" · INTEL.",
   "w": "BOLO.md #48 · SOP §5"
  },
  "bolo49": {
@@ -618,14 +618,35 @@
  "actual": {
   "t": "ACTUAL",
   "k": "proword",
-  "st": "provisional",
-  "d": "The operator's callsign on every page, in place of \"you\" — provisional 9/11. Radio lineage: ACTUAL is the proword for the commander in person on the net (\"Six Actual\"), as opposed to the radio operator speaking for him. Bench on BOLO 48: ACTUAL (rec) · SIX · BVCOM · BOLDCOM · OVERLORD · TREADSTONE · KINGPIN · ARCHANGEL · HIGHCOM · SIX ACTUAL.",
-  "w": "SOP §5 · the templates (const WHO)"
+  "st": "ruled",
+  "d": "The suffix for the commander in person on the net (\"Six Actual\"). RULED 9/11 as the formal form of the operator's callsign: [[hotline|HOTLINE ACTUAL]]. Never alone.",
+  "w": "SOP.md §5"
  },
  "bolo50": {
   "t": "BOLO 50",
   "k": "item",
   "d": "The standards campaign: every level of the operation as a standards organization; a networked library of outside and house-made standards. Research phase: the harvest banked as a locus, the register pulled by agent. Opened 9/11 on a break-break.",
   "w": "BOLO.md #50 · _0.1_BVX_LEARN/LOCI/standards.locus.md"
+ },
+ "abort": {
+  "t": "ABORT",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The cancel word, RULED 9/11: \"abort abort abort\" spoken three times, then the correction. Cancels the immediately preceding order; the record keeps the abort line, not the order. Aircrew and JTAC lineage: the call not to release. First live use the same minute: \"abort abort abort the index process\" (the ENDEX). Replaced belay.",
+  "w": "SOP.md §0–1 · §5"
+ },
+ "brevity": {
+  "t": "BREVITY",
+  "k": "noun",
+  "st": "ruled",
+  "d": "What the [[soi|SOI]] holds, RULED 9/11 (\"I do like brevity better\"): the house's word list, after the Multi-Service Brevity Codes, the list that makes radio short. The SOI's subtitle on every page. Replaced \"the lexicon\" (provisional) and \"the house tongue\" (retired). BREVITY leaves MINT's bench; MINT stands for the loop.",
+  "w": "SOP.md §0 · §6 · the SOI page"
+ },
+ "hotline": {
+  "t": "HOTLINE",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The operator's callsign, RULED 9/11. Casual: \"Hotline\", \"word from Hotline\". On the net and on every page: **HOTLINE ACTUAL**. The point: the word comes from on high, detached from the person, the way CENTCOM ACTUAL speaks for the command, not for a man (\"remove the artist from the art\"). Replaces \"you\" on the explainer rail.",
+  "w": "SOP.md §0–1 · §5 · const WHO in the templates"
  }
 }

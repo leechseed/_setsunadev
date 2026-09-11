@@ -4,10 +4,10 @@
     "title": "The name bench — every word waiting on a ruling, in one place",
     "trunk": "BLACK",
     "issued": "2026-09-11",
-    "asof": "2026-09-11 · second pass",
+    "asof": "2026-09-11 · night",
     "s": "hot",
-    "status": "ADORNED ruled · three benches of ten open: the cancel word · the SOI subtitle · the operator's callsign (ACTUAL provisional) · READYROOM · MINT",
-    "decider": "Papi",
+    "status": "ABORT · BREVITY · HOTLINE ruled tonight · one bench open: the close-out word (ENDEX collides with index) · READYROOM · MINT run as defaults",
+    "decider": "HOTLINE ACTUAL",
     "feeds": "SOP §0 · §5 · the [[soi|SOI]] · every page's masthead",
     "related": [
       {
@@ -25,7 +25,7 @@
     ],
     "home": "BOLO.md · row 48 · SOP §5",
     "card": "none",
-    "version": "v0.2 · DOPE SHEET"
+    "version": "v0.3 · DOPE SHEET"
   },
   "mantra": [
     {
@@ -46,26 +46,32 @@
   ],
   "frago": {
     "mission": "Hold every unruled word on one sheet with its bench, **in order to** stop naming from happening one interruption at a time in chat.",
-    "order": "**Three words.** The cancel word, the SOI subtitle, your callsign.",
-    "default": "Silence: belay stands; \"the lexicon\" stands; ACTUAL stays on the rail as provisional; READYROOM and MINT run as defaults.",
+    "order": "**One word: the close-out.** LIBERTY CALL is the recommendation.",
+    "default": "Silence: ENDEX stands and Oscar Mike at session end still closes. READYROOM and MINT run as defaults.",
     "calls": [
       {
-        "q": "The cancel word",
-        "options": "KNOCK IT OFF (rec) · WAVE OFF · ABORT · CHECK FIRE · SCRUB · STAND DOWN · ALL STOP · TERMINATE · SCRATCH · AS YOU WERE — not break contact",
-        "default": "belay stands",
+        "q": "The close-out word",
+        "options": "LIBERTY CALL (rec) · SECURE · KNOCK OFF · LIGHTS OUT · TAPS · TATTOO · COLORS · CLOSE THE NET · STAND DOWN · LAST CALL",
+        "default": "ENDEX stands",
         "s": "open"
+      },
+      {
+        "q": "The cancel word",
+        "options": "RULED: ABORT, spoken three times",
+        "default": "ABORT",
+        "s": "ruled"
       },
       {
         "q": "What the SOI holds",
-        "options": "BREVITY (rec; collides with MINT's bench) · COMM CARD · SMARTBOOK · CEOI · CODEBOOK · CALLSIGNS · SIGNAL PLAN · THE NET · PROWORDS · CRYPTO",
-        "default": "the lexicon stands",
-        "s": "open"
+        "options": "RULED: BREVITY",
+        "default": "BREVITY",
+        "s": "ruled"
       },
       {
         "q": "The operator's callsign",
-        "options": "ACTUAL (rec, on the rail now) · SIX · BVCOM · BOLDCOM · OVERLORD · TREADSTONE · KINGPIN · ARCHANGEL · HIGHCOM · SIX ACTUAL",
-        "default": "ACTUAL, provisional",
-        "s": "open"
+        "options": "RULED: HOTLINE · formal HOTLINE ACTUAL",
+        "default": "HOTLINE",
+        "s": "ruled"
       },
       {
         "q": "READYROOM · MINT",
@@ -114,6 +120,18 @@
             {
               "t": "**ADORNED ruled** (\"let's do adorned\"); applied on \"vocab go\": vocab edited, zero-shot rerun, probes retrained.",
               "s": "ruled"
+            },
+            {
+              "t": "**ABORT ruled** — the cancel word, spoken three times: \"abort abort abort\", then the correction. First live use the same minute, on the ENDEX. Belay retired.",
+              "s": "ruled"
+            },
+            {
+              "t": "**BREVITY ruled** — what the SOI holds; the subtitle on every page. \"The lexicon\" and \"the house tongue\" gone.",
+              "s": "ruled"
+            },
+            {
+              "t": "**HOTLINE ruled** — the operator's callsign, detached from the person: casual \"word from Hotline\", formal **HOTLINE ACTUAL** on the net and on every rail. \"You\" retired from the pages.",
+              "s": "ruled"
             }
           ]
         },
@@ -121,15 +139,7 @@
           "label": "On the bench",
           "items": [
             {
-              "t": "**The cancel word, ten:** KNOCK IT OFF (the air-combat call that ends the engagement instantly) · WAVE OFF · ABORT · CHECK FIRE · SCRUB · STAND DOWN · ALL STOP · TERMINATE · SCRATCH · AS YOU WERE. Sealed: KNOCK IT OFF · WAVE OFF · CHECK FIRE.",
-              "s": "open"
-            },
-            {
-              "t": "**What the SOI holds, ten:** BREVITY (the Multi-Service Brevity Codes, the word list that makes radio short) · COMM CARD · SMARTBOOK · CEOI · CODEBOOK · CALLSIGNS · SIGNAL PLAN · THE NET · PROWORDS · CRYPTO. Sealed: BREVITY · COMM CARD · SMARTBOOK.",
-              "s": "open"
-            },
-            {
-              "t": "**The operator's callsign, ten:** ACTUAL (the commander in person on the net, \"Six Actual\") · SIX · BVCOM · BOLDCOM · OVERLORD · TREADSTONE · KINGPIN · ARCHANGEL · HIGHCOM · SIX ACTUAL. Sealed: ACTUAL · SIX · BVCOM. ACTUAL is on the rail now, provisional.",
+              "t": "**The close-out word, ten** (ENDEX collides with \"index\"): LIBERTY CALL (the call that the working day is over, go ashore) · SECURE (secure from quarters, secure the net) · KNOCK OFF (knock off ship's work) · LIGHTS OUT · TAPS · TATTOO · COLORS · CLOSE THE NET · STAND DOWN · LAST CALL. Sealed: LIBERTY CALL · SECURE · KNOCK OFF.",
               "s": "open"
             },
             {
@@ -324,6 +334,16 @@
           "when": "9/11",
           "who": "Claude",
           "t": "ADORNED applied; three benches of ten delivered; ACTUAL on the rail provisionally; sheet layout fixed (calls to the left column)."
+        },
+        {
+          "when": "9/11 night",
+          "who": "HOTLINE ACTUAL",
+          "t": "\"The cancel word to be abort, three times in a row… I do like brevity better… my callsign can be actual, but… HOTLINE; HOTLINE ACTUAL in communications.\" Then: \"abort abort abort the index process… let's figure out the proword for that.\""
+        },
+        {
+          "when": "9/11 night",
+          "who": "Claude",
+          "t": "Three rulings written to SOP, the register and every page; the close-out bench of ten delivered."
         }
       ]
     }

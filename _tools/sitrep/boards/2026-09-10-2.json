@@ -4,7 +4,7 @@
     "when": "night · second board of the day",
     "trigger": "\"Okay. What's a sit rep?\" — the question form reads as the board (SOP §8)",
     "countersign": false,
-    "version": "v0.7 · DOPE SHEET · dark only",
+    "version": "v0.8 · HOTLINE ACTUAL",
     "box": [
       {
         "name": "Stash",
@@ -693,7 +693,7 @@
       "id": "VII",
       "name": "The SOI card",
       "kind": "card",
-      "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens. The full book is the SOI, built tonight and waiting to publish.",
+      "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens. The full book is the SOI: the BREVITY.",
       "strand": {
         "last": "Ruled 9/11: DOPE SHEET (the status page) · SOI is the book · \"the house tongue\" and \"glossary\" retired · dark is the only theme.",
         "plan": "The SOI page replaces the in-page glossary once it publishes (Charlie Mike pages, step 4). BOLO 37 moves rulings into a daily loop.",
@@ -752,9 +752,9 @@
           "g": "launch DARKROOM, no questions"
         },
         {
-          "k": "belay",
-          "w": "belay that",
-          "g": "cancel the preceding order"
+          "k": "abort",
+          "w": "abort abort abort",
+          "g": "cancel the preceding order, spoken three times; the correction follows (RULED 9/11)"
         },
         {
           "k": "endex",
@@ -774,7 +774,12 @@
         {
           "k": "soi",
           "w": "SOI",
-          "g": "the lexicon's book: every proword and board word, its own page"
+          "g": "the BREVITY's book: every proword and board word, its own page"
+        },
+        {
+          "k": "hotline",
+          "w": "HOTLINE ACTUAL",
+          "g": "the operator's callsign on the net; casual: word from Hotline (RULED 9/11)"
         }
       ],
       "nouns": [

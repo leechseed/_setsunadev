@@ -361,7 +361,7 @@
 <script>
 const DATA = /*__DATA__*/null;
 const B = DATA.board, G = DATA.glossary;
-const WHO = 'ACTUAL'; /* the operator's callsign on every page — provisional 9/11, bench on BOLO 48 */
+const WHO = 'HOTLINE ACTUAL'; /* the operator's callsign on the net — RULED 9/11: HOTLINE (casual: word from Hotline; formal: HOTLINE ACTUAL), detached from the person */
 const SOI_URL = "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5";
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -392,7 +392,7 @@ const M = B.meta;
 $('#brandSub').textContent = `${M.date} · ${M.when} · ${M.version}`;
 $('#stats').innerHTML = M.stats.map(s => `<div class="stat s-${s.s || ''}"><b class="num">${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join('');
 $('#box').innerHTML = M.box.map(b => `<div class="light ${b.up ? 'up' : ''}"><i></i><a class="t" data-t="${b.k}" tabindex="0">${esc(b.name)}</a><small>${esc(b.port)} · ${b.up ? 'UP' : 'DOWN'}</small></div>`).join('')
-  + `<a class="gloss" id="glossBtn" href="${SOI_URL}" target="_blank" rel="noopener" title="G">SOI<small>the lexicon</small></a>`;
+  + `<a class="gloss" id="glossBtn" href="${SOI_URL}" target="_blank" rel="noopener" title="G">SOI<small>the brevity</small></a>`;
 $('#effort').innerHTML = `<span><span class="k">main effort</span>${md(M.main_effort)}</span>`
   + `<span><span class="k">rack</span>${esc(M.rack.flushed)} · staged ${esc(M.rack.staged)}</span>`
   + `<span><span class="k">tree</span>${esc(M.tree)} · stack ${esc(M.stack)}</span>`
