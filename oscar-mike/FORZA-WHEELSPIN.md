@@ -11,10 +11,10 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 **The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Papi calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
 
-**Total: 104 · Owned: 31 (1 ⚠️ confirm) · Needed: 73**
+**Total: 104 · Owned: 32 (1 ⚠️ confirm) · Needed: 72**
 
 > 2026-09-10: full list brought up on request (owned included). No callout made; counts unchanged. Oscar Mike'd ×3 same turn.
-> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed.
+> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed. Third callout same day: Wuling Sunshine S FE → 32 owned / 72 needed.
 
 > ⚠️ **Open confirm:** callout said *"1985 Ford RS200 Evolution"* — that car is not on this list; nearest list entry is the **1987 Ford Sierra Cosworth RS500**, marked owned provisionally. If you actually meant the RS200, the Sierra flips back to needed.
 
@@ -151,14 +151,14 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - [ ] 1985 Toyota Sprinter Trueno GT-Apex Forza Edition
 - [ ] 1993 Toyota #1 T100 Baja Truck
 - [x] ~~1969 Toyota 2000GT~~
-- [ ] 2020 Wuling Sunshine S Forza Edition
+- [x] ~~2020 Wuling Sunshine S Forza Edition~~
 - [ ] 2019 Zenvo TSR-S
 
 ---
 
-## NEEDED — the chase list (73)
+## NEEDED — the chase list (72)
 
-*Only unowned cars appear here. Regenerated 2026-09-11 after the second callout.*
+*Only unowned cars appear here. Regenerated 2026-09-11 after the third callout.*
 
 **Alfa Romeo & AMG (2)**
 - 1968 Alfa Romeo 33 Stradale
@@ -252,7 +252,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 1973 Porsche 911 Carrera RS
 - 1970 Porsche #3 917 LH *(the non-FE one — you own the Forza Edition)*
 
-**Rimac, Shelby, Subaru, Toyota & Others (9)**
+**Rimac, Shelby, Subaru, Toyota & Others (8)**
 - 2021 Rimac Nevera
 - 1965 Shelby Cobra 427 S/C
 - 2022 Subaru BRZ Forza Edition
@@ -260,5 +260,4 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 2019 Toyota Tacoma TRD Pro Forza Edition
 - 1985 Toyota Sprinter Trueno GT-Apex Forza Edition
 - 1993 Toyota #1 T100 Baja Truck
-- 2020 Wuling Sunshine S Forza Edition
 - 2019 Zenvo TSR-S
