@@ -1,0 +1,106 @@
+{
+  "bolo": {
+    "n": 24, "title": "The zero-budget ORANGE launch — the studio, the first signing, and D-9", "trunk": "ORANGE/OPERATOR",
+    "issued": "2026-09-03", "asof": "2026-09-11 · the leverage line, worked", "s": "bad",
+    "status": "boresight walked over four transmissions · brief v0.1 written 9/3 · D-9 HOLD undated since 9/4 · seven decisions ride on it · three boards in a row named it",
+    "decider": "ACTUAL", "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
+    "related": [{"n": 27, "why": "ULTRA DARK, the funnel; Block C is the hands-on work behind this"}, {"n": 45, "why": "the borrowed playbook, fifteen cases"}, {"n": 42, "why": "the register, the source of taste"}, {"n": 44, "why": "the tag rail: the reference layer for the renders"}],
+    "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)", "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)", "version": "v0.1 · DOPE SHEET"
+  },
+  "mantra": [
+    {"k": "speed", "w": "Speed", "line": "Everything ORANGE built since 9/3 was built for this. The only thing missing is one word, and it has been missing for a week."},
+    {"k": "focus", "w": "Focus", "line": "One decision, D-9, gates seven. Rule it and the design pass runs the same session."},
+    {"k": "boldness", "w": "Boldness", "line": "A NO-GO is a legal answer and ends the stall as cleanly as a GO. An undated hold is the one answer the flow forbids."}
+  ],
+  "frago": {
+    "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
+    "order": "**Rule D-9.** GO · a dated HOLD · NO-GO. Recommendation: **STAGED CLEAR.**",
+    "default": "Silence keeps the hold and the stall. Staged clear, if you say the word: the three items with no dependency (the benchmark read · the Blender pipeline COA · the reference-pull spec) deliver now; the character sheet waits on D-6 and D-7; the gates table waits on D-5.",
+    "calls": [
+      {"q": "D-9 · the clear", "options": "GO (staged: no-dependency items now, the rest as their gates clear) · HOLD to a date · NO-GO (park with the AAR; the bible and the library stay as assets)", "default": "staged clear (rec)", "s": "held"},
+      {"q": "D-5 · the nut and the runway", "options": "your number: months of runway without income. Nine to twelve → run as briefed; four to eight → first-dollar-first plus a part-time search; under four → compress or park", "default": "none; only you have it", "s": "open"},
+      {"q": "D-6 · the disclosed-persona frame", "options": "yes, a disclosed 3D persona is the believability bar · no, another frame", "default": "yes (rec)", "s": "open"},
+      {"q": "D-7 · the loss", "options": "who, and the year; cause matters more than year for the spine", "default": "none; yours", "s": "open"},
+      {"q": "D-8 · the reference method", "options": "confirm: a fresh X account plus bookmarks, five core, twenty-five wide, pulled at zero cost", "default": "confirm (rec)", "s": "open"},
+      {"q": "D-10 · the intent", "options": "word the one sentence in §1 yourself", "default": "the draft stands until you do", "s": "open"},
+      {"q": "D-11 · the content lane", "options": "where her content sits relative to the funnel's lane; framing that processors and platforms ban downstream gates the platform pick", "default": "mainstream tag, no ideology framing (rec)", "s": "open"}
+    ]
+  },
+  "paragraphs": [
+    {"id": "S", "name": "Situation", "kind": "list",
+      "plain": "Where the launch stands: what was ruled on 9/3, what has been built around it since, and the one hold that stops all of it.",
+      "strand": {"last": "Three sit reps in a row named this the leverage line. Nothing moved.", "plan": "Boresight over four transmissions, a brief on the project flow, then design on the clear.", "you": "Ruled D-1 through D-4 on 9/3, converted the boresight to a HOLD on 9/4, and have built the reference set around it every day since.", "next": "One word on D-9."},
+      "groups": [
+        {"label": "Ruled · 9/3", "items": [
+          {"t": "**D-1 Ultrasin is the studio; she is the first signing.** Brand shape: a photo studio, not one person, launched persona-first.", "s": "ruled"},
+          {"t": "**D-2 canon age 21, chart-first birth date.** Rail: canon age 18 or over in every render, bio and beat.", "s": "ruled"},
+          {"t": "**D-3 the fictional arc mirrors the real arc.** The unbuffered-cohort baddie; the attitude is the product, not the X-rated value.", "s": "ruled"},
+          {"t": "**D-4 Season 1 = signed and shooting; Season 2 = the friend.** A storyline rides it: bottom to top is her season.", "s": "ruled"}
+        ]},
+        {"label": "Built around it since · nothing wasted", "items": [
+          {"t": "**Fifteen creator cases and a synthesis** ([[bolo45|BOLO 45]]): the borrowed playbook; [[r9|R9]] proposed as the first gate (thirty days on a fresh X account, zero cost).", "s": "done", "when": "9/10"},
+          {"t": "**The [[register|performer register]]**, 155 names, the source of taste ([[bolo42|BOLO 42]]).", "s": "done", "when": "9/10"},
+          {"t": "**[[darkroom|DARKROOM]] 1.1 with the tag rail** ([[bolo44|BOLO 44]]): the reference layer for pose, light and composition; ADORNED landed today.", "s": "done", "when": "9/11"},
+          {"t": "**The [[ultra-dark|ULTRA DARK]] funnel** ([[ultra-dark|BOLO 27]]): Blocks A and B done; [[block-c|Block C]] \"marked\" is the hands-on work behind this launch.", "s": "bad", "when": "9/4"},
+          {"t": "**The brief v0.1** on the project flow: end state, seven workstreams, seven gates, eight assumptions, the deny list. Becomes v1.0 when you word D-10 and clear D-9.", "s": "done", "when": "9/3"}
+        ]},
+        {"label": "The hold", "items": [
+          {"t": "**D-9 converted from a boresight to a HOLD on 9/4 with no date.** The flow allows three answers: clear, a dated hold, NO-GO. An undated hold is the [[stall-pattern|stall pattern]] by name: a finished design blocked on one unanswered decision.", "s": "bad", "when": "9/4 → today"},
+          {"t": "**Six decisions ride on it:** D-5 the nut · D-6 the frame · D-7 the loss · D-8 the reference method · D-10 the intent · D-11 the lane.", "s": "held"}
+        ]}
+      ]},
+    {"id": "M", "name": "Mission", "kind": "mission",
+      "plain": "A mission is a task plus the reason for it. This one's reason is the unemployment window.",
+      "strand": {"last": "The Amazon job fell through on 9/3; this BOLO was spoken the same day.", "plan": "Build the studio on what is in hand; no spend before the slice proves quality.", "you": "You gave the picture and the budget; the intent sentence is still drafted, not yours.", "next": "Word it, or let the draft stand."},
+      "task": "Stand up a paying creative operation on what is already in hand,",
+      "intent": "in order to convert the unemployment window into the studio's founding season.",
+      "spoken": "\"Start something now with what is already in hand: the machine, the AI stack, DARKROOM and the corpus, the design system, the character and morphology systems.\"",
+      "endstate": ["One persona canonical: sheet, chart-first birth date, sex-menu profile, command narrative, visual signature.", "Season 1 on paper and shot; the launch library banked before day one.", "Accounts live under the disclosed frame; the posting grammar derived from the reference set and followed.", "Monthly revenue at the on-target value three months running by month nine, or conservative with the trend.", "Season 2 seeded: the friend exists on paper before Season 1 closes."]},
+    {"id": "E", "name": "Execution", "kind": "phases",
+      "plain": "Seven gates from the brief. Gate 1 is the one you are standing on.",
+      "strand": {"last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.", "plan": "Gate by gate; no spend before Gate 3.", "you": "Gate 1 is your ruling and your sentence.", "next": "Staged clear and the design set starts the same session."},
+      "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
+      "phases": [
+        {"n": 0, "t": "**Boresight walked** over four transmissions; PIRs answered; holdings mapped.", "s": "done", "when": "9/3"},
+        {"n": 1, "t": "**The brief ruled** — D-9 cleared, D-10 worded. **Here.**", "s": "held", "when": "since 9/4"},
+        {"n": 2, "t": "**The design set** — character sheet (needs D-6, D-7) · beat sheet · Blender pipeline COA · gates table with the nut (needs D-5) · attainability stated.", "s": "gated", "when": "on the clear"},
+        {"n": 3, "t": "**The vertical slice** — one complete still set at target quality plus one week of posting to the grammar on a test account; AAR.", "s": "gated", "when": "after 2"},
+        {"n": 4, "t": "**Launch** — library banked (twenty to forty pieces plus a sixty-to-ninety-day buffer), accounts live, Season 1 begins.", "s": "gated", "when": "after 3"},
+        {"n": 5, "t": "**Monthly gates** for three months; first on-target month.", "s": "gated", "when": "after 4"},
+        {"n": 6, "t": "**Exit threshold or kill criterion**; AAR; the Season 2 decision.", "s": "gated", "when": "later"}
+      ],
+      "coord": ["Workstreams: W1 character · W2 season · W3 studio frame · W4 look · W5 pipeline · W6 numbers · W7 distribution.", "Out of scope: video, live streaming, any real-performer content, spend beyond the stretch, undisclosed passing as human, anyone under 18 in canon or render.", "Deny list: ACTUAL's identity, location, employer history, finances; the real reference accounts' identities (composite, never clone); the studio's internal tooling; anything under _PRIVATE/.", "Disruptions planned: platform action → second platform live from day one plus an owned hub; discovery throttle → SFW funnel account."],
+      "running": ["Nothing. Held."]},
+    {"id": "A", "name": "Admin & Logistics", "kind": "files",
+      "plain": "What the launch runs on. Zero dollars base; the numbers are the one thing the brief cannot derive.",
+      "strand": {"last": "The whole reference set was built in eight days.", "plan": "GPU time and attention; no money before Gate 3.", "you": "You pay in rulings first, then in full-time attention.", "next": "The nut and the runway are the first numbers the brief needs."},
+      "files": [
+        {"path": "_PRIVATE/BOLO-24-charter.md", "what": "the brief v0.1 on the project flow; the decision ledger D-1 to D-11", "s": "done"},
+        {"path": "_PRIVATE/BOLO-24-studio-launch.md", "what": "the walked state of the boresight; the decision context for D-5, D-7, D-9", "s": "done"},
+        {"path": "_PRIVATE/BOLO-24-benchmarks.md", "what": "the benchmark read, held until the clear", "s": "held"},
+        {"path": "_PRIVATE/BOLO-24-creator-cases-synthesis.md", "what": "the seven read together, R1 to R12", "s": "done"},
+        {"path": "_CANON_NODES/creator-case-*.md × 15", "what": "the playbook, public", "s": "done"},
+        {"path": "oscar-mike/lab-venture.md", "what": "the persona-to-studio endgame; six decisions queued", "s": "parked"}
+      ],
+      "cost": [{"k": "base", "v": "$0"}, {"k": "stretch", "v": "$100 to 200"}, {"k": "the design set", "v": "one session on the clear"}, {"k": "the slice", "v": "one week"}]},
+    {"id": "C", "name": "Command & Signal", "kind": "list",
+      "plain": "Who calls what. This whole sheet is one call.",
+      "strand": {"last": "The flow says an undated hold is illegal; the sit rep has said so three times.", "plan": "One decider, three legal answers.", "you": "You are the gate and the only one who can open it.", "next": "Say GO, a date, or NO-GO."},
+      "groups": [
+        {"label": "Who decides", "items": [{"t": "**ACTUAL** — D-9 and the six behind it; scope, money, persona, platform. **Claude** — drafts, research, pipeline, boards, the numbers; spends nothing, opens nothing, publishes nothing without the word.", "s": "held"}]},
+        {"label": "The gate", "items": [{"t": "**HOLD, undated, since 9/4.** Replan trigger in the brief: the hold converts to a call at the next sit rep. It has not. This sheet is that call, worked.", "s": "bad"}]},
+        {"label": "Prowords in play", "items": [{"t": "[[boresight]] — the loop this hold came from · [[d9|D-9]] — the item · **DOPE SHEET 24** — this page · the [[leverage-line|leverage line]] on every board since 9/8.", "s": "open"}]}
+      ]},
+    {"id": "L", "name": "Log", "kind": "log",
+      "plain": "Every transmission on the launch.",
+      "strand": {"last": "Six entries; the last three are boards naming the same word.", "plan": "One per transmission.", "you": "Two are yours; the rest are the board asking.", "next": "Your word."},
+      "entries": [
+        {"when": "9/3", "who": "ACTUAL", "t": "BOLO 24 spoken on a break-break: the zero-budget launch, 3D stills, DARKROOM-fed. The boresight addendum: the unbuffered-cohort baddie, the studio shape, the season."},
+        {"when": "9/3", "who": "Claude", "t": "Boresight walked over four transmissions; the brief v0.1 written on the project flow; D-1 to D-4 ruled; D-5 to D-11 opened."},
+        {"when": "9/4", "who": "ACTUAL", "t": "The boresight converted to a HOLD. No date."},
+        {"when": "9/8 · 9/10 · 9/10", "who": "the board", "t": "Three sit reps name D-9 as the leverage line. Fifteen cases, a register, a tag rail and three dashboards are built around it meanwhile."},
+        {"when": "9/11", "who": "ACTUAL", "t": "\"Let's go ahead and work on the leverage line. Give me a dope sheet on that.\""},
+        {"when": "9/11", "who": "Claude", "t": "DOPE SHEET 24 built. Recommendation: staged clear."}
+      ]}
+  ]
+}

@@ -78,7 +78,7 @@
  "belay": {
   "t": "belay that",
   "k": "proword",
-  "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order. Papi 9/11: \"I like belay, but something better\" — bench open on BOLO 48: AS YOU WERE (rec) · DISREGARD · SCRUB · WAVE OFF · CHECK FIRE.",
+  "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order. Papi 9/11: \"disregard or cancel works, but I need to sound cooler.\" Bench of ten on BOLO 48: KNOCK IT OFF (rec) · WAVE OFF · ABORT · CHECK FIRE · SCRUB · STAND DOWN · ALL STOP · TERMINATE · SCRATCH · AS YOU WERE. Not break contact (break-break is taken).",
   "w": "SOP.md §1",
   "st": "provisional"
  },
@@ -128,7 +128,7 @@
  "soi": {
   "t": "SOI",
   "k": "noun",
-  "d": "Signal Operating Instructions: the lexicon's book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
+  "d": "Signal Operating Instructions: the book of the house's words (subtitle unruled: bench of ten on BOLO 48, BREVITY rec). The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
   "w": "SOP.md §0 · _tools/soi/ · the SOI page",
   "st": "ruled"
  },
@@ -592,7 +592,7 @@
  "bolo48": {
   "t": "BOLO 48",
   "k": "item",
-  "d": "The name bench: every unruled word with its bench on one sheet — the cancel word (belay's successor), the dress-state value that replaces implied, READYROOM, MINT; \"caught up\" and INTEL in the pool.",
+  "d": "The name bench: every unruled word with its bench on one sheet. Open 9/11: the cancel word (ten, KNOCK IT OFF rec) · the SOI subtitle replacing \"the lexicon\" (ten, BREVITY rec) · the operator's callsign replacing \"you\" (ten, ACTUAL rec, provisional on the pages) · READYROOM · MINT. Ruled 9/11: DOPE SHEET · ADORNED. Pool: \"caught up\" · INTEL.",
   "w": "BOLO.md #48 · SOP §5"
  },
  "bolo49": {
@@ -607,5 +607,25 @@
   "st": "provisional",
   "d": "The light face of every internal page, provisional 9/11: Kindle-gray paper (#D8D8D2 ground, #E4E4DE surface), never white — \"like an old Kindle… digital ink.\" Shown only when a viewer forces light; DARK is the only theme and the toggle is gone.",
   "w": "SOP.md §2 · the three templates"
+ },
+ "adorned": {
+  "t": "ADORNED",
+  "k": "ruling",
+  "st": "ruled",
+  "d": "DARKROOM dress-state value, RULED 9/11 (\"let's do adorned\"): naked except for an accessory — socks, heels, jewelry, glasses, a hat, a harness; the r/WhyWearAnythingAtAll read. Replaced implied (retired 9/11: no garment and nothing shown). Vocab edited, zero-shot rerun, probes retrained the same morning; 42 old human confirmations still say implied and are left as Papi's record.",
+  "w": "_PRIVATE/taxonomy_engine/vocab.json · BOLO 44"
+ },
+ "actual": {
+  "t": "ACTUAL",
+  "k": "proword",
+  "st": "provisional",
+  "d": "The operator's callsign on every page, in place of \"you\" — provisional 9/11. Radio lineage: ACTUAL is the proword for the commander in person on the net (\"Six Actual\"), as opposed to the radio operator speaking for him. Bench on BOLO 48: ACTUAL (rec) · SIX · BVCOM · BOLDCOM · OVERLORD · TREADSTONE · KINGPIN · ARCHANGEL · HIGHCOM · SIX ACTUAL.",
+  "w": "SOP §5 · the templates (const WHO)"
+ },
+ "bolo50": {
+  "t": "BOLO 50",
+  "k": "item",
+  "d": "The standards campaign: every level of the operation as a standards organization; a networked library of outside and house-made standards. Research phase: the harvest banked as a locus, the register pulled by agent. Opened 9/11 on a break-break.",
+  "w": "BOLO.md #50 · _0.1_BVX_LEARN/LOCI/standards.locus.md"
  }
 }

@@ -1,90 +1,331 @@
 {
   "bolo": {
-    "n": 48, "title": "The name bench — every word waiting on a ruling, in one place", "trunk": "BLACK",
-    "issued": "2026-09-11", "asof": "2026-09-11", "s": "hot",
-    "status": "DOPE SHEET ruled 9/11 · four benches open: the cancel word · the dress-state value · READYROOM · MINT · one word in the pool",
-    "decider": "Papi", "feeds": "SOP §0 · §5 · the [[soi|SOI]] · every page's masthead",
-    "related": [{"n": 37, "why": "the selection loop this bench will run through once named"}, {"n": 44, "why": "the dress-state value lands in its vocab"}, {"n": 38, "why": "the pages carry the words"}],
-    "home": "BOLO.md · row 48 · SOP §5", "card": "none", "version": "v0.1 · DOPE SHEET"
+    "n": 48,
+    "title": "The name bench — every word waiting on a ruling, in one place",
+    "trunk": "BLACK",
+    "issued": "2026-09-11",
+    "asof": "2026-09-11 · second pass",
+    "s": "hot",
+    "status": "ADORNED ruled · three benches of ten open: the cancel word · the SOI subtitle · the operator's callsign (ACTUAL provisional) · READYROOM · MINT",
+    "decider": "Papi",
+    "feeds": "SOP §0 · §5 · the [[soi|SOI]] · every page's masthead",
+    "related": [
+      {
+        "n": 37,
+        "why": "the selection loop this bench will run through once named"
+      },
+      {
+        "n": 44,
+        "why": "the dress-state value lands in its vocab"
+      },
+      {
+        "n": 38,
+        "why": "the pages carry the words"
+      }
+    ],
+    "home": "BOLO.md · row 48 · SOP §5",
+    "card": "none",
+    "version": "v0.2 · DOPE SHEET"
   },
   "mantra": [
-    {"k": "speed", "w": "Speed", "line": "A word is ruled in one breath and written into SOP and the register the same turn."},
-    {"k": "focus", "w": "Focus", "line": "One bench per word. Five candidates, a recommendation, a sealed ranking. No branching."},
-    {"k": "boldness", "w": "Boldness", "line": "The Corps is the bootstrap; native coinages replace it as the operation matures. DOPE SHEET is the first cool one."}
+    {
+      "k": "speed",
+      "w": "Speed",
+      "line": "A word is ruled in one breath and written into SOP and the register the same turn."
+    },
+    {
+      "k": "focus",
+      "w": "Focus",
+      "line": "One bench per word. Five candidates, a recommendation, a sealed ranking. No branching."
+    },
+    {
+      "k": "boldness",
+      "w": "Boldness",
+      "line": "The Corps is the bootstrap; native coinages replace it as the operation matures. DOPE SHEET is the first cool one."
+    }
   ],
   "frago": {
     "mission": "Hold every unruled word on one sheet with its bench, **in order to** stop naming from happening one interruption at a time in chat.",
-    "order": "**Rule any of the four.** The cancel word is the one you asked for.",
-    "default": "Silence: belay stays provisional; the dress-state value goes in as ADORNED (provisional) when DARKROOM is idle; READYROOM and MINT run as defaults.",
+    "order": "**Three words.** The cancel word, the SOI subtitle, your callsign.",
+    "default": "Silence: belay stands; \"the lexicon\" stands; ACTUAL stays on the rail as provisional; READYROOM and MINT run as defaults.",
     "calls": [
-      {"q": "The cancel word", "options": "replaces belay (\"I like belay, but something better\"): AS YOU WERE (rec — the drill command that cancels the last order and restores the previous state) · DISREGARD (the radio proword: ignore my last transmission) · SCRUB (scrub the mission) · WAVE OFF (naval air: abort the approach) · CHECK FIRE (cease fire, immediately)", "default": "belay stands until ruled", "s": "open"},
-      {"q": "The dress-state value", "options": "nude except for an accessory (the r/WhyWearAnythingAtAll read; implied is retired): ADORNED (rec — wearing only adornment) · ACCENTED · TOKEN (a token garment) · ALL BUT · TRINKETS · BARE-PLUS", "default": "ADORNED, provisional", "s": "open"},
-      {"q": "READYROOM", "options": "the sit rep program's name — READYROOM (rec) · OPSROOM · FRONTPAGE · THE BOARD. Collision: READYROOM is also on the WARROOM bench (BOLO 33)", "default": "READYROOM", "s": "open"},
-      {"q": "MINT", "options": "the proword loop's name ([[bolo37|BOLO 37]]) — MINT (rec) · BREVITY · CALLSIGN · LEXICON", "default": "MINT", "s": "open"}
+      {
+        "q": "The cancel word",
+        "options": "KNOCK IT OFF (rec) · WAVE OFF · ABORT · CHECK FIRE · SCRUB · STAND DOWN · ALL STOP · TERMINATE · SCRATCH · AS YOU WERE — not break contact",
+        "default": "belay stands",
+        "s": "open"
+      },
+      {
+        "q": "What the SOI holds",
+        "options": "BREVITY (rec; collides with MINT's bench) · COMM CARD · SMARTBOOK · CEOI · CODEBOOK · CALLSIGNS · SIGNAL PLAN · THE NET · PROWORDS · CRYPTO",
+        "default": "the lexicon stands",
+        "s": "open"
+      },
+      {
+        "q": "The operator's callsign",
+        "options": "ACTUAL (rec, on the rail now) · SIX · BVCOM · BOLDCOM · OVERLORD · TREADSTONE · KINGPIN · ARCHANGEL · HIGHCOM · SIX ACTUAL",
+        "default": "ACTUAL, provisional",
+        "s": "open"
+      },
+      {
+        "q": "READYROOM · MINT",
+        "options": "the sit rep program · the loop",
+        "default": "both run",
+        "s": "open"
+      }
     ]
   },
   "paragraphs": [
-    {"id": "S", "name": "Situation", "kind": "list",
+    {
+      "id": "S",
+      "name": "Situation",
+      "kind": "list",
       "plain": "What was ruled today and what is still on the bench.",
-      "strand": {"last": "OPORD lasted twelve hours; you wanted something cooler.", "plan": "Bench from the Corps first, then military and games.", "you": "Ruled DOPE; reserved \"caught up\"; asked for a better cancel word; retired implied.", "next": "The cancel word."},
+      "strand": {
+        "last": "OPORD lasted twelve hours; you wanted something cooler.",
+        "plan": "Bench from the Corps first, then military and games.",
+        "you": "Ruled DOPE; reserved \"caught up\"; asked for a better cancel word; retired implied.",
+        "next": "The cancel word."
+      },
       "groups": [
-        {"label": "Ruled 9/11", "items": [
-          {"t": "**DOPE SHEET** — the standing status page for one BOLO. Header: DOPE SHEET N. Vernacular: \"give me the dope on N.\" \"Status report\" and \"the situation on N\" read the same. OPORD retired.", "s": "ruled"},
-          {"t": "**\"Glossary\" retired** — SOI everywhere.", "s": "ruled"},
-          {"t": "**Implied retired** from DARKROOM's dress axis; its opposite gets a value and a bench (below). Goes into vocab.json when DARKROOM is idle, then zeroshot rerun and retrain.", "s": "ruled"},
-          {"t": "**\"Caught up\" reserved** — a phrase you like, held in the pool for something other than the cancel word. INTEL sits there too.", "s": "ruled"},
-          {"t": "**The word for a rejected term:** you did not like \"struck\"; the bench for it was cancelled in the same breath. \"Retired\" (already SOP §5's word) is used from here.", "s": "ruled"}
-        ]},
-        {"label": "On the bench", "items": [
-          {"t": "**The cancel word** — see the calls. AS YOU WERE is the recommendation: it is the actual drill command for \"cancel that, go back to what you were doing,\" one breath, no collision.", "s": "open"},
-          {"t": "**The dress-state value** — the r/WhyWearAnythingAtAll read: naked except for an accessory (socks, heels, jewelry, glasses, a hat, a harness). ADORNED recommended: one word, reads as \"wearing only adornment,\" no collision with any axis.", "s": "open"},
-          {"t": "**READYROOM · MINT** — defaults run.", "s": "open"}
-        ]}
-      ]},
-    {"id": "M", "name": "Mission", "kind": "mission",
+        {
+          "label": "Ruled 9/11",
+          "items": [
+            {
+              "t": "**DOPE SHEET** — the standing status page for one BOLO. Header: DOPE SHEET N. Vernacular: \"give me the dope on N.\" \"Status report\" and \"the situation on N\" read the same. OPORD retired.",
+              "s": "ruled"
+            },
+            {
+              "t": "**\"Glossary\" retired** — SOI everywhere.",
+              "s": "ruled"
+            },
+            {
+              "t": "**Implied retired** from DARKROOM's dress axis; its opposite gets a value and a bench (below). Goes into vocab.json when DARKROOM is idle, then zeroshot rerun and retrain.",
+              "s": "ruled"
+            },
+            {
+              "t": "**\"Caught up\" reserved** — a phrase you like, held in the pool for something other than the cancel word. INTEL sits there too.",
+              "s": "ruled"
+            },
+            {
+              "t": "**The word for a rejected term:** you did not like \"struck\"; the bench for it was cancelled in the same breath. \"Retired\" (already SOP §5's word) is used from here.",
+              "s": "ruled"
+            },
+            {
+              "t": "**ADORNED ruled** (\"let's do adorned\"); applied on \"vocab go\": vocab edited, zero-shot rerun, probes retrained.",
+              "s": "ruled"
+            }
+          ]
+        },
+        {
+          "label": "On the bench",
+          "items": [
+            {
+              "t": "**The cancel word, ten:** KNOCK IT OFF (the air-combat call that ends the engagement instantly) · WAVE OFF · ABORT · CHECK FIRE · SCRUB · STAND DOWN · ALL STOP · TERMINATE · SCRATCH · AS YOU WERE. Sealed: KNOCK IT OFF · WAVE OFF · CHECK FIRE.",
+              "s": "open"
+            },
+            {
+              "t": "**What the SOI holds, ten:** BREVITY (the Multi-Service Brevity Codes, the word list that makes radio short) · COMM CARD · SMARTBOOK · CEOI · CODEBOOK · CALLSIGNS · SIGNAL PLAN · THE NET · PROWORDS · CRYPTO. Sealed: BREVITY · COMM CARD · SMARTBOOK.",
+              "s": "open"
+            },
+            {
+              "t": "**The operator's callsign, ten:** ACTUAL (the commander in person on the net, \"Six Actual\") · SIX · BVCOM · BOLDCOM · OVERLORD · TREADSTONE · KINGPIN · ARCHANGEL · HIGHCOM · SIX ACTUAL. Sealed: ACTUAL · SIX · BVCOM. ACTUAL is on the rail now, provisional.",
+              "s": "open"
+            },
+            {
+              "t": "**READYROOM · MINT** — defaults run.",
+              "s": "open"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "name": "Mission",
+      "kind": "mission",
       "plain": "The task and the reason.",
-      "strand": {"last": "Words got ruled mid-transmission, one at a time.", "plan": "One sheet, one loop.", "you": "You asked for this BOLO.", "next": "Four words."},
+      "strand": {
+        "last": "Words got ruled mid-transmission, one at a time.",
+        "plan": "One sheet, one loop.",
+        "you": "You asked for this BOLO.",
+        "next": "Four words."
+      },
       "task": "Hold every unruled word with its bench on one sheet,",
       "intent": "in order to stop naming from interrupting the work.",
       "spoken": "\"The name bench — go ahead and let's start a BOLO on that one too.\"",
-      "endstate": ["Every unruled word has a bench, a recommendation and a sealed ranking here.", "A ruling writes to SOP and the SOI the same turn.", "BOLO 37's loop, once named, runs this sheet daily."]},
-    {"id": "E", "name": "Execution", "kind": "phases",
+      "endstate": [
+        "Every unruled word has a bench, a recommendation and a sealed ranking here.",
+        "A ruling writes to SOP and the SOI the same turn.",
+        "BOLO 37's loop, once named, runs this sheet daily."
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Execution",
+      "kind": "phases",
       "plain": "The benches are built; the rulings are yours.",
-      "strand": {"last": "Four benches in one morning.", "plan": "Rule as you go.", "you": "Any word, any time.", "next": "The cancel word."},
+      "strand": {
+        "last": "Four benches in one morning.",
+        "plan": "Rule as you go.",
+        "you": "Any word, any time.",
+        "next": "The cancel word."
+      },
       "main_effort": "The cancel word, because you asked for it by name.",
       "phases": [
-        {"n": 1, "t": "**DOPE SHEET ruled**; mastheads, SOP, the SOI and the register updated.", "s": "done", "when": "9/11"},
-        {"n": 2, "t": "**The cancel word** — bench above.", "s": "open", "when": "yours"},
-        {"n": 3, "t": "**The dress-state value** — bench above; lands in vocab.json when DARKROOM is idle.", "s": "open", "when": "yours"},
-        {"n": 4, "t": "**READYROOM · MINT** — defaults run.", "s": "gated", "when": "yours"},
-        {"n": 5, "t": "**Fold this sheet into BOLO 37's loop** once the loop is named.", "s": "gated", "when": "after MINT"}
+        {
+          "n": 1,
+          "t": "**DOPE SHEET ruled**; mastheads, SOP, the SOI and the register updated.",
+          "s": "done",
+          "when": "9/11"
+        },
+        {
+          "n": 2,
+          "t": "**The cancel word** — bench above.",
+          "s": "open",
+          "when": "yours"
+        },
+        {
+          "n": 3,
+          "t": "**The dress-state value** — bench above; lands in vocab.json when DARKROOM is idle.",
+          "s": "open",
+          "when": "yours"
+        },
+        {
+          "n": 4,
+          "t": "**READYROOM · MINT** — defaults run.",
+          "s": "gated",
+          "when": "yours"
+        },
+        {
+          "n": 5,
+          "t": "**Fold this sheet into BOLO 37's loop** once the loop is named.",
+          "s": "gated",
+          "when": "after MINT"
+        }
       ],
-      "coord": ["Every ruled word → SOP §0/§1/§5 and _tools/sitrep/glossary.json in the same turn (standing order 9/10).", "Struck-on-sight for collisions: CODEX · JOURNAL · CARD · BRIEF · READYROOM double-benched."],
-      "running": ["Nothing."]},
-    {"id": "A", "name": "Admin & Logistics", "kind": "files",
+      "coord": [
+        "Every ruled word → SOP §0/§1/§5 and _tools/sitrep/glossary.json in the same turn (standing order 9/10).",
+        "Struck-on-sight for collisions: CODEX · JOURNAL · CARD · BRIEF · READYROOM double-benched."
+      ],
+      "running": [
+        "Nothing."
+      ]
+    },
+    {
+      "id": "A",
+      "name": "Admin & Logistics",
+      "kind": "files",
       "plain": "Where the words live.",
-      "strand": {"last": "SOP §5 is the record.", "plan": "This sheet mirrors it.", "you": "Rulings only.", "next": "Nothing to build."},
+      "strand": {
+        "last": "SOP §5 is the record.",
+        "plan": "This sheet mirrors it.",
+        "you": "Rulings only.",
+        "next": "Nothing to build."
+      },
       "files": [
-        {"path": "SOP.md §5", "what": "open naming rulings, canonical", "s": "done"},
-        {"path": "_tools/sitrep/glossary.json", "what": "the term register the pages read", "s": "done"},
-        {"path": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5", "what": "the SOI page", "s": "done"}
+        {
+          "path": "SOP.md §5",
+          "what": "open naming rulings, canonical",
+          "s": "done"
+        },
+        {
+          "path": "_tools/sitrep/glossary.json",
+          "what": "the term register the pages read",
+          "s": "done"
+        },
+        {
+          "path": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5",
+          "what": "the SOI page",
+          "s": "done"
+        }
       ],
-      "cost": [{"k": "a ruling", "v": "one breath"}, {"k": "dollars", "v": "0"}]},
-    {"id": "C", "name": "Command & Signal", "kind": "list",
+      "cost": [
+        {
+          "k": "a ruling",
+          "v": "one breath"
+        },
+        {
+          "k": "dollars",
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Command & Signal",
+      "kind": "list",
       "plain": "Who calls what.",
-      "strand": {"last": "Every word here is yours to rule.", "plan": "One decider.", "you": "Four words.", "next": "Say one."},
+      "strand": {
+        "last": "Every word here is yours to rule.",
+        "plan": "One decider.",
+        "you": "Four words.",
+        "next": "Say one."
+      },
       "groups": [
-        {"label": "Who decides", "items": [{"t": "**Papi** — every word. **Claude** — the benches, the recommendation, the sealed ranking, the records.", "s": "open"}]},
-        {"label": "Prowords in play", "items": [{"t": "**DOPE SHEET 48** — this page · belay (provisional) · the [[soi|SOI]].", "s": "open"}]}
-      ]},
-    {"id": "L", "name": "Log", "kind": "log",
+        {
+          "label": "Who decides",
+          "items": [
+            {
+              "t": "**Papi** — every word. **Claude** — the benches, the recommendation, the sealed ranking, the records.",
+              "s": "open"
+            }
+          ]
+        },
+        {
+          "label": "Prowords in play",
+          "items": [
+            {
+              "t": "**DOPE SHEET 48** — this page · belay (provisional) · the [[soi|SOI]].",
+              "s": "open"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "name": "Log",
+      "kind": "log",
       "plain": "Every transmission.",
-      "strand": {"last": "Four entries.", "plan": "One per transmission.", "you": "Three are yours.", "next": "A word."},
+      "strand": {
+        "last": "Four entries.",
+        "plan": "One per transmission.",
+        "you": "Three are yours.",
+        "next": "A word."
+      },
       "entries": [
-        {"when": "9/11", "who": "Papi", "t": "\"I do not like the word OPORD… something much cooler.\" Bench ordered."},
-        {"when": "9/11", "who": "Claude", "t": "Bench delivered: DOPE (rec) · TARGET FOLDER · CONOP · JACKET · INTSUM · DOSSIER · CONTRACT · BRIEFING · CASEFILE."},
-        {"when": "9/11", "who": "Papi", "t": "\"I like dope. BOLO 42 DOPE SHEET. Get me the dope sheet.\" Ruled. Also: a better cancel word than belay; \"caught up\" reserved; implied retired, its opposite to be named; BOLO 48 opened for the bench."},
-        {"when": "9/11", "who": "Claude", "t": "DOPE SHEET 48 built; cancel-word and dress-state benches delivered."}
-      ]}
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"I do not like the word OPORD… something much cooler.\" Bench ordered."
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "Bench delivered: DOPE (rec) · TARGET FOLDER · CONOP · JACKET · INTSUM · DOSSIER · CONTRACT · BRIEFING · CASEFILE."
+        },
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"I like dope. BOLO 42 DOPE SHEET. Get me the dope sheet.\" Ruled. Also: a better cancel word than belay; \"caught up\" reserved; implied retired, its opposite to be named; BOLO 48 opened for the bench."
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "DOPE SHEET 48 built; cancel-word and dress-state benches delivered."
+        },
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"Something better than the lexicon, give me ten. Vocab go. Disregard or cancel works but cooler, not break contact. Let's do adorned.\" Then: \"I don't like you being it… SPACECOM, CENTCOM, CYWAR… BOLDCOM… Jason Bourne type.\""
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "ADORNED applied; three benches of ten delivered; ACTUAL on the rail provisionally; sheet layout fixed (calls to the left column)."
+        }
+      ]
+    }
   ]
 }

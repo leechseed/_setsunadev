@@ -361,6 +361,7 @@
 <script>
 const DATA = /*__DATA__*/null;
 const B = DATA.board, G = DATA.glossary;
+const WHO = 'ACTUAL'; /* the operator's callsign on every page — provisional 9/11, bench on BOLO 48 */
 const SOI_URL = "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5";
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -447,7 +448,7 @@ function render(b) {
   $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
     <div class="c"><span class="lbl">What we did last</span><p>${md(s.last)}</p></div>
     <div class="c"><span class="lbl">What the plan was</span><p>${md(s.plan)}</p></div>
-    <div class="c"><span class="lbl">What you did</span><p>${md(s.you)}</p></div>
+    <div class="c"><span class="lbl">What ${WHO} did</span><p>${md(s.you)}</p></div>
     <div class="c"><span class="lbl">What's next</span><p>${md(s.next)}</p></div></div>
     <div class="sec"><span class="lbl">In flight</span><div class="runs">${M.agents.map(a => `<div class="run"><i></i><div>${esc(a.name)}<small>${esc(a.from)}</small></div></div>`).join('')}</div></div>`;
 }

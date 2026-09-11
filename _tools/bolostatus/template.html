@@ -71,7 +71,7 @@
   .t:hover, .t.on { border-bottom-style: solid; }
 
   /* ---- frame: head (identity + mantra + frago) / ol · panel · rail / foot ---- */
-  .app { height: 100vh; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 236px minmax(0, 1fr) 316px; grid-template-areas: "head head head" "ol panel rail" "foot foot foot"; }
+  .app { height: 100vh; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 300px minmax(0, 1fr) 300px; grid-template-areas: "head head head" "ol panel rail" "foot foot foot"; }
   header.head { grid-area: head; display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 80%, transparent); backdrop-filter: blur(6px); }
   header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; }
   .brand { display: flex; align-items: center; gap: 16px; padding: 10px 18px; border-right: 1px solid var(--line); min-width: 236px; }
@@ -99,7 +99,7 @@
   .mantra p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.4; }
 
   /* the FRAGO strip: mission · the order · your calls — always visible, action first */
-  .frago { display: grid; grid-template-columns: 1.2fr 1fr 1fr; border-top: 1px solid var(--line-2); background: var(--panel); }
+  .frago { display: grid; grid-template-columns: 1.3fr 1fr; border-top: 1px solid var(--line-2); background: var(--panel); }
   .frago > div { padding: 14px 18px 16px; border-right: 1px solid var(--line); min-width: 0; }
   .frago > div:last-child { border-right: 0; }
   .frago .lbl { display: block; margin-bottom: 6px; color: var(--accent-ink); }
@@ -127,6 +127,13 @@
   .ol-row.on { color: var(--ink); background: var(--panel-2); border-left-color: var(--accent); }
   .ol-row.on .node i { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
   .ol-row.gl-row { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 14px; }
+  nav.ol .calls { padding: 14px 18px 0; margin-top: 12px; border-top: 1px solid var(--line-2); }
+  nav.ol .calls > .lbl { display: block; margin-bottom: 4px; color: var(--accent-ink); padding: 0; }
+  nav.ol .call { display: block; padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+  nav.ol .call b { display: block; font-family: var(--display); font-weight: 700; font-size: 16px; text-transform: uppercase; line-height: 1.1; }
+  nav.ol .call .opts { display: block; color: var(--ink-2); font-size: 12.5px; line-height: 1.35; margin-top: 2px; }
+  nav.ol .call .def { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); margin-top: 4px; }
+  nav.ol .call .def em { font-style: normal; color: var(--accent-ink); }
   nav.ol .strand { position: absolute; left: 32.5px; top: 46px; bottom: 30px; width: 1px; background: var(--line-2); }
   nav.ol .foot { padding: 18px 18px 0; font-family: var(--mono); font-size: 11px; color: var(--ink-3); line-height: 1.7; }
   nav.ol .foot b { color: var(--ink-2); font-weight: 500; }
@@ -259,7 +266,7 @@
     .mantra, .frago { grid-template-columns: 1fr; }
     .mantra > div, .frago > div { border-right: 0; border-bottom: 1px solid var(--line); }
     nav.ol { border-right: 0; border-bottom: 1px solid var(--line-2); display: flex; overflow-x: auto; padding: 8px; gap: 4px; }
-    nav.ol .lbl, nav.ol .strand, nav.ol .foot { display: none; }
+    nav.ol .lbl, nav.ol .strand, nav.ol .foot, nav.ol .calls { display: none; }
     .ol-row { grid-template-columns: auto 1fr; padding: 8px 12px; border-left: 0; border-bottom: 3px solid transparent; white-space: nowrap; }
     .ol-row.on { border-bottom-color: var(--accent); }
     .ol-row .key, .ol-row .node { display: none; }
@@ -287,6 +294,7 @@
     <span class="lbl">The five-paragraph order</span>
     <div class="strand"></div>
     <div id="olRows"></div>
+    <div class="calls" id="olCalls"></div>
     <div class="foot" id="olFoot"></div>
   </nav>
 
@@ -312,6 +320,7 @@
 <script>
 const DATA = /*__DATA__*/null;
 const B = DATA.board, G = DATA.glossary;
+const WHO = 'ACTUAL'; /* the operator's callsign on every page — provisional 9/11, bench on BOLO 48 */
 const SOI_URL = "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5";
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -333,8 +342,8 @@ $('#meta').innerHTML = `${chip(K.s)} ${trunk(K.trunk)} <span><span class="k">iss
 $('#mantra').innerHTML = B.mantra.map(m => `<div><span class="w"><a class="t" data-t="${m.k}" tabindex="0">${esc(m.w)}</a></span><p>${md(m.line)}</p></div>`).join('');
 const F = B.frago;
 $('#frago').innerHTML = `<div><span class="lbl">Mission · task, in order to</span><p class="mission">${md(F.mission)}</p></div>
-  <div><span class="lbl">The order · next action</span><p class="order">${md(F.order)}</p><p class="default">${md(F.default)}</p></div>
-  <div><span class="lbl">Your calls · defaults run if silent</span>${F.calls.map(c => `<div class="call"><b>${esc(c.q)}</b><span class="opts">${esc(c.options)}</span><span></span><span class="def">default <em>${esc(c.default)}</em> · ${chip(c.s)}</span></div>`).join('')}</div>`;
+  <div><span class="lbl">The order · next action</span><p class="order">${md(F.order)}</p><p class="default">${md(F.default)}</p></div>`;
+$('#olCalls').innerHTML = `<span class="lbl">${WHO}'s calls · defaults run if silent</span>` + F.calls.map(c => `<div class="call"><b>${esc(c.q)}</b><span class="opts">${esc(c.options)}</span><span class="def">default <em>${esc(c.default)}</em> · ${chip(c.s)}</span></div>`).join('');
 $('#footR').textContent = `BOLO ${K.n} · ${K.home} · ${K.version}`;
 
 /* ---- outliner ---- */
@@ -367,7 +376,7 @@ function render(p) {
   $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
     <div class="c"><span class="lbl">What we did last</span><p>${md(s.last)}</p></div>
     <div class="c"><span class="lbl">What the plan was</span><p>${md(s.plan)}</p></div>
-    <div class="c"><span class="lbl">What you did</span><p>${md(s.you)}</p></div>
+    <div class="c"><span class="lbl">What ${WHO} did</span><p>${md(s.you)}</p></div>
     <div class="c"><span class="lbl">What's next</span><p>${md(s.next)}</p></div></div>
     <div class="sec"><span class="lbl">Where this lives</span><dl class="kv"><dt>row</dt><dd>${esc(K.home)}</dd><dt>card</dt><dd>${esc(K.card)}</dd><dt>page</dt><dd>_tools/bolostatus/out/BOLO-${K.n}.html</dd></dl></div>`;
 }
