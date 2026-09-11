@@ -11,10 +11,10 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 **The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Papi calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
 
-**Total: 104 · Owned: 35 (1 ⚠️ confirm) · Needed: 69**
+**Total: 104 · Owned: 36 (1 ⚠️ confirm) · Needed: 68**
 
 > 2026-09-10: full list brought up on request (owned included). No callout made; counts unchanged. Oscar Mike'd ×3 same turn.
-> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed. Third callout same day: Wuling Sunshine S FE → 32 owned / 72 needed. Fourth callout: 190E Evo II FE · 787B · BRZ FE (Wuling re-called, already struck) → 35 owned / 69 needed.
+> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed. Third callout same day: Wuling Sunshine S FE → 32 owned / 72 needed. Fourth callout: 190E Evo II FE · 787B · BRZ FE (Wuling re-called, already struck) → 35 owned / 69 needed. Fifth callout: Giulia TZ2 → 36 owned / 68 needed.
 
 > ⚠️ **Open confirm:** callout said *"1985 Ford RS200 Evolution"* — that car is not on this list; nearest list entry is the **1987 Ford Sierra Cosworth RS500**, marked owned provisionally. If you actually meant the RS200, the Sierra flips back to needed.
 
@@ -22,7 +22,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 ### Alfa Romeo & AMG (3)
 - [ ] 1968 Alfa Romeo 33 Stradale
-- [ ] 1965 Alfa Romeo Giulia TZ2
+- [x] ~~1965 Alfa Romeo Giulia TZ2~~
 - [x] ~~2554 AMG Transport Dynamics M12S Warthog CST~~
 
 ### Apollo & Aston Martin (5)
@@ -156,13 +156,12 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 ---
 
-## NEEDED — the chase list (69)
+## NEEDED — the chase list (68)
 
-*Only unowned cars appear here. Regenerated 2026-09-11 after the fourth callout.*
+*Only unowned cars appear here. Regenerated 2026-09-11 after the fifth callout.*
 
-**Alfa Romeo & AMG (2)**
+**Alfa Romeo (1)**
 - 1968 Alfa Romeo 33 Stradale
-- 1965 Alfa Romeo Giulia TZ2
 
 **Apollo & Aston Martin (5)**
 - 2019 Apollo Intensa Emozione
