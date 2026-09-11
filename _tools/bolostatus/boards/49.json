@@ -1,0 +1,300 @@
+{
+  "bolo": {
+    "n": 49,
+    "title": "The Massive presets — the best free libraries for Native Instruments Massive",
+    "trunk": "OPERATOR",
+    "issued": "2026-09-11",
+    "asof": "2026-09-11",
+    "s": "open",
+    "status": "shortlist delivered 9/11 · eight banks verified · Papi downloads",
+    "decider": "Papi",
+    "feeds": "the Ableton rig · [[bolo35|BOLO 35]] (the story timeline's synthesis half) · the ULTRA DARK track lineage",
+    "related": [
+      {
+        "n": 35,
+        "why": "synthesis as the theory source; the rig is the instrument"
+      },
+      {
+        "n": 27,
+        "why": "the one track on record, 123 BPM"
+      }
+    ],
+    "home": "BOLO.md · row 49",
+    "card": "none (the Ableton card RTB'd 9/11)",
+    "version": "v0.1 · DOPE SHEET"
+  },
+  "mantra": [
+    {
+      "k": "speed",
+      "w": "Speed",
+      "line": "One agent, one pass, one shortlist. Install is a folder drop and a rescan."
+    },
+    {
+      "k": "focus",
+      "w": "Focus",
+      "line": "Massive, not Massive X. Free, or free with an email. Twenty presets or more per bank."
+    },
+    {
+      "k": "boldness",
+      "w": "Boldness",
+      "line": "Defaults ran: general-purpose leaning dark and electronic; the four boresight questions answered by assumption."
+    }
+  ],
+  "frago": {
+    "mission": "Find the best free preset banks for Massive and get them into the rig, **in order to** make the instrument playable before the story-timeline theory work needs it.",
+    "order": "**Download the top three:** Cymatics Massive Gems · Sample Magic · Ghosthack.",
+    "default": "Silence: nothing installs itself; the browser downloads are yours. A FRAGO 49 records what went in.",
+    "calls": [
+      {
+        "q": "The sound target",
+        "options": "general (rec, running) · bass · leads · pads · the 123 BPM ULTRA DARK lineage",
+        "default": "general, leaning dark / electronic",
+        "s": "open"
+      },
+      {
+        "q": "Free-with-email",
+        "options": "acceptable · or no-signup only",
+        "default": "acceptable, noted per bank",
+        "s": "open"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "id": "S",
+      "name": "Situation",
+      "kind": "list",
+      "plain": "The rig is fixed; the instrument has only its factory sounds.",
+      "strand": {
+        "last": "The Ableton card closed this morning: the Massive library is installed.",
+        "plan": "One sourced pass, then a shortlist.",
+        "you": "You opened the boresight, then said \"just let's get on that.\"",
+        "next": "The shortlist."
+      },
+      "groups": [
+        {
+          "label": "Standing",
+          "items": [
+            {
+              "t": "**The rig:** Ableton Live 10 Standard 10.1.43 · NI VST2 in the 64-bit folder · Massive · Kontakt 6/7/8 · Reaktor 6 · MPK Mini mapped. Massive factory library installed (Papi, 9/11).",
+              "s": "done"
+            },
+            {
+              "t": "**The pass:** one background agent checking Cymatics, ADSR, Ghosthack, Function Loops, Black Octopus, Plugin Boutique, KVR, Reddit threads and producer giveaways; confirms live, Massive not X, count, free versus email, reputation.",
+              "s": "hot"
+            },
+            {
+              "t": "**Install:** .nmsv files go in Documents\\Native Instruments\\Massive\\Sounds (or a user folder set in Massive's browser), then rescan.",
+              "s": "open"
+            }
+          ]
+        },
+        {
+          "label": "The shortlist · verified 9/11",
+          "items": [
+            {
+              "t": "**1 · Cymatics — Massive Gems Vol. 1 + 2** · 40 presets · free with email · general bass, lead, pad · the most-cited source, vault live in 2026 · cymatics.fm/pages/free-download-vault",
+              "s": "done"
+            },
+            {
+              "t": "**2 · Sample Magic — Free Massive Pack** · 96 · free, likely email · trap, dubstep, techno, house · curated from a paid catalogue; the largest reputable single bank",
+              "s": "done"
+            },
+            {
+              "t": "**3 · Ghosthack — NI Massive presets** (Bassline · Bass · Deep Sci-Fi Pads) · about 26 · free, no email · dark bass and sci-fi pads · matches the lean directly · ghosthack.de/free_sample_packs/ni-massive-presets",
+              "s": "done"
+            },
+            {
+              "t": "**4 · Nyonyxx — Big 50** · 59 · free · futurestep and dubstep leads and basses · referenced across several independent lists",
+              "s": "done"
+            },
+            {
+              "t": "**5 · Virtual Riot bank** (via District FLP's mirror on ToneDen) · 64 (35 bass · 16 synth · 5 FX · 5 lead · 3 arp) · free · signature growls · fan mirror, not official: scan the zip first",
+              "s": "open"
+            },
+            {
+              "t": "**6 · ADSR — MassiveSynth tutorial presets** · 10 to 15 · ADSR account · arps, chord stabs, bounce bass · trusted educational vendor",
+              "s": "done"
+            },
+            {
+              "t": "**7 · Mad Massive Library** · 500+ · Mediafire, no email · bulk grab-bag, unverified quality",
+              "s": "open"
+            },
+            {
+              "t": "**8 · Multiplier's Collection** · 1,400 · Mediafire, no email · the largest free bank; same caveat",
+              "s": "open"
+            },
+            {
+              "t": "**Skipped:** five-preset demo teasers (Tunecraft / ADSR paid-pack demos) · Knife Party's six · Function Loops and Black Octopus have no standalone free Massive pack.",
+              "s": "ruled"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "name": "Mission",
+      "kind": "mission",
+      "plain": "The task and the reason.",
+      "strand": {
+        "last": "The rig sat unplayable for a month.",
+        "plan": "Sounds in, then play.",
+        "you": "You asked for the right ones, not the most.",
+        "next": "Download and drop."
+      },
+      "task": "Find and install the best free Massive preset banks,",
+      "intent": "in order to make the instrument playable before the theory work needs it.",
+      "spoken": "\"Create a BOLO to get the best Massive presets for Native Instruments. Just let's get on that.\"",
+      "endstate": [
+        "Six to ten verified free banks on the sheet with counts and links.",
+        "The ones you chose are in the Sounds folder and show in Massive's browser.",
+        "The song-with-chords BOLO is captured when you name it."
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Execution",
+      "kind": "phases",
+      "plain": "Three phases; the middle one is yours.",
+      "strand": {
+        "last": "Launched this morning.",
+        "plan": "Pass, drop, record.",
+        "you": "The download.",
+        "next": "The agent returns."
+      },
+      "main_effort": "The shortlist, verified live.",
+      "phases": [
+        {
+          "n": 1,
+          "t": "**The sourced pass** — running.",
+          "s": "done",
+          "when": "9/11"
+        },
+        {
+          "n": 2,
+          "t": "**Download and drop** — one subfolder per pack in Documents\\Native Instruments\\Massive\\Sounds\\ (or Add Library Path in Massive's browser), then the rescan icon; no DAW restart.",
+          "s": "gated",
+          "when": "after 1"
+        },
+        {
+          "n": 3,
+          "t": "**FRAGO 49** — record what went in; retire the sheet.",
+          "s": "gated",
+          "when": "after 2"
+        }
+      ],
+      "coord": [
+        "Massive, not Massive X: the formats are not compatible.",
+        "Scripts cannot download for you (browser gates); the agent verifies, you fetch."
+      ],
+      "running": [
+        "Nothing."
+      ]
+    },
+    {
+      "id": "A",
+      "name": "Admin & Logistics",
+      "kind": "files",
+      "plain": "Where it lives.",
+      "strand": {
+        "last": "The rig facts came off the Ableton card before it closed.",
+        "plan": "This sheet holds the shortlist.",
+        "you": "Zero dollars.",
+        "next": "Ten minutes of downloads."
+      },
+      "files": [
+        {
+          "path": "BOLO.md · row 49",
+          "what": "the tasking",
+          "s": "done"
+        },
+        {
+          "path": "Documents\\Native Instruments\\Massive\\Sounds",
+          "what": "where the .nmsv files go",
+          "s": "open"
+        },
+        {
+          "path": "C:\\Program Files\\Native Instruments\\VSTPlugins 64 bit\\",
+          "what": "the plugin, already found by Live",
+          "s": "done"
+        }
+      ],
+      "cost": [
+        {
+          "k": "the pass",
+          "v": "one agent"
+        },
+        {
+          "k": "the drop",
+          "v": "ten minutes"
+        },
+        {
+          "k": "dollars",
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Command & Signal",
+      "kind": "list",
+      "plain": "Who calls what.",
+      "strand": {
+        "last": "Fired on your word.",
+        "plan": "One decider.",
+        "you": "Which banks to take.",
+        "next": "The list."
+      },
+      "groups": [
+        {
+          "label": "Who decides",
+          "items": [
+            {
+              "t": "**Papi** — which banks. **Claude** — the pass, the verification, the install note.",
+              "s": "open"
+            }
+          ]
+        },
+        {
+          "label": "Prowords in play",
+          "items": [
+            {
+              "t": "**DOPE SHEET 49** — this page · [[boresight]] — opened 9/11, cleared by \"let's get on that.\"",
+              "s": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "name": "Log",
+      "kind": "log",
+      "plain": "Every transmission.",
+      "strand": {
+        "last": "Three entries.",
+        "plan": "One per transmission.",
+        "you": "Two are yours.",
+        "next": "The shortlist."
+      },
+      "entries": [
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "Ableton resolved; \"give me the boresight on really good free Massive presets.\""
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "Boresight: readback, the read, four questions."
+        },
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"Create a BOLO to get the best Massive presets. Just let's get on that.\" BOLO 49; the pass launched on the defaults."
+        }
+      ]
+    }
+  ]
+}

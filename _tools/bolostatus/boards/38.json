@@ -6,9 +6,9 @@
     "issued": "2026-09-06",
     "asof": "2026-09-11 · Charlie Mike on the pages",
     "s": "hot",
-    "status": "SITREP v0.6 live · status pages live · SOI published 9/11 · OPORD struck, name bench open",
+    "status": "SITREP v0.7 live · DOPE SHEET ruled · SOI published · dark-only, E-INK light face · two names still yours",
     "decider": "Papi",
-    "feeds": "SOP §2 · [[warroom|WARROOM]] · every board and every [[opord|OPORD]] page",
+    "feeds": "SOP §2 · [[warroom|WARROOM]] · every board and every [[dope-sheet|DOPE SHEET]] page",
     "related": [
       {
         "n": 37,
@@ -16,7 +16,7 @@
       },
       {
         "n": 45,
-        "why": "the first OPORD page"
+        "why": "the first DOPE SHEET page"
       },
       {
         "n": 33,
@@ -25,7 +25,7 @@
     ],
     "home": "BOLO.md · row 38",
     "card": "oscar-mike/pages.md — resumed 9/11 on Charlie Mike; steps 1–4 done, 5 yours, 6 deferred",
-    "version": "v0.1 · status page (name unruled)"
+    "version": "v0.1 · DOPE SHEET"
   },
   "mantra": [
     {
@@ -46,14 +46,14 @@
   ],
   "frago": {
     "mission": "Deliver every [[sitrep|sit rep]] and every BOLO status as a rendered page in the ruled register, **in order to** put the whole operation in front of you in ten seconds without a scroll, and to stop the board costing a session's worth of reading to build.",
-    "order": "One name for this page. **Then two more when you want them.**",
-    "default": "Silence: the masthead says STATUS · BOLO N. READYROOM for the sit rep program and MINT for the loop run as defaults. The dashboard consult's picks are in chat; a FRAGO 38 folds the ones you take onto this page.",
+    "order": "Nothing owed on the name. **READYROOM and MINT when you want them.**",
+    "default": "Silence: READYROOM for the sit rep program and MINT for the loop run as defaults. The theme is dark only; the light face is E-INK, provisional. The consult's picks live on DOPE SHEET 47.",
     "calls": [
       {
         "q": "The page's name",
-        "options": "OPORD STRUCK 9/11. Bench: DOPE (rec) · TARGET FOLDER · CONOP · JACKET · INTSUM · DOSSIER · CONTRACT · BRIEFING · CASEFILE — in chat and SOP §5",
-        "default": "masthead reads STATUS until you rule",
-        "s": "open"
+        "options": "RULED 9/11: DOPE SHEET — header DOPE SHEET N, spoken \"the dope on N\"",
+        "default": "DOPE SHEET",
+        "s": "ruled"
       },
       {
         "q": "READYROOM",
@@ -78,7 +78,7 @@
       "strand": {
         "last": "Spoken 9/6 with BOLO 37: the sit rep as the CK3 save-load screen, everything you need to see on one front page.",
         "plan": "Build v0 the moment you ruled the page is the board; then split the BOLO page and the tongue's book off the same core.",
-        "you": "Ruled the page is the board, the colorway, FRAGO then OPORD, SOI, and this morning: Charlie Mike, and 'glossary' retired as a word.",
+        "you": "Ruled the page is the board, the colorway, FRAGO then DOPE SHEET, SOI, and this morning: Charlie Mike, and 'glossary' retired as a word.",
         "next": "Three names. Then the refactor when a fourth page appears."
       },
       "groups": [
@@ -105,7 +105,7 @@
               "when": "9/10 evening"
             },
             {
-              "t": "**[[opord|OPORD]] is the BOLO page (provisional), [[frago|FRAGO]] is the update onto it (ruled).** Your read of doctrine: \"FRAGO is just the update after we've made the BOLO status page.\"",
+              "t": "**[[dope-sheet|DOPE SHEET]] is the BOLO page (provisional), [[frago|FRAGO]] is the update onto it (ruled).** Your read of doctrine: \"FRAGO is just the update after we've made the BOLO status page.\"",
               "s": "ruled",
               "when": "9/10 late"
             },
@@ -113,6 +113,11 @@
               "t": "**[[soi|SOI]] is the tongue's book** — its own dashboard, the Marine SOI format. And 9/11: **\"glossary\" is retired as a word.** Every button and key says SOI.",
               "s": "ruled",
               "when": "9/10 late · 9/11"
+            },
+            {
+              "t": "**Theme: DARK only.** The toggle and the T key are gone. The light face, when a viewer forces it, is **E-INK**: Kindle-gray paper, never white (provisional tokens). And **\"the house tongue\" is retired** — \"the lexicon\" stands, provisional.",
+              "s": "ruled",
+              "when": "9/11"
             }
           ]
         },
@@ -125,7 +130,7 @@
               "when": "9/10"
             },
             {
-              "t": "**OPORD 45** — the first BOLO page: the five-paragraph order, [[speed|SPEED]] · [[focus|FOCUS]] · [[boldness|BOLDNESS]] on the masthead, the FRAGO strip on top. Retitled and rebuilt 9/11 with the hold.",
+              "t": "**DOPE SHEET 45** — the first BOLO page: the five-paragraph order, [[speed|SPEED]] · [[focus|FOCUS]] · [[boldness|BOLDNESS]] on the masthead, the FRAGO strip on top. Retitled and rebuilt 9/11 with the hold.",
               "s": "done",
               "when": "9/10 → 9/11"
             },
@@ -135,7 +140,7 @@
               "when": "9/11"
             },
             {
-              "t": "**OPORD 38 and OPORD 42** — this page and the register's, both first builds 9/11.",
+              "t": "**DOPE SHEET 38 and DOPE SHEET 42** — this page and the register's, both first builds 9/11.",
               "s": "done",
               "when": "9/11"
             }
@@ -159,7 +164,7 @@
       "spoken": "\"Whenever I call for the sit rep, give it back to me in this format.\"",
       "endstate": [
         "Every sit rep lands on one standing URL; the chat carries the link and the leverage line.",
-        "Every BOLO has an OPORD page on demand; FRAGOs fold deltas onto it.",
+        "Every BOLO has an DOPE SHEET page on demand; FRAGOs fold deltas onto it.",
         "The tongue has one book, the SOI, and nothing on any page says glossary."
       ]
     },
@@ -174,17 +179,17 @@
         "you": "You said Charlie Mike and retired the word glossary in the same breath.",
         "next": "Step 5 is three words. Step 6 waits for the next page."
       },
-      "main_effort": "The pages stay current without a ruling: every sit rep republishes SITREP; every 'situation on N' builds or FRAGOs an OPORD.",
+      "main_effort": "The pages stay current without a ruling: every sit rep republishes SITREP; every 'situation on N' builds or FRAGOs an DOPE SHEET.",
       "phases": [
         {
           "n": 1,
-          "t": "**Retitle for the OPORD/FRAGO split** — masthead OPORD · BOLO; page title OPORD N; the 45 board versioned v0.3 · OPORD.",
+          "t": "**Retitle for the DOPE SHEET/FRAGO split** — masthead DOPE SHEET · BOLO; page title DOPE SHEET N; the 45 board versioned v0.3 · DOPE SHEET.",
           "s": "done",
           "when": "9/11"
         },
         {
           "n": 2,
-          "t": "**Rebuild and republish OPORD 45** with the hold and the five missing files folded in.",
+          "t": "**Rebuild and republish DOPE SHEET 45** with the hold and the five missing files folded in.",
           "s": "done",
           "when": "9/11"
         },
@@ -202,7 +207,7 @@
         },
         {
           "n": 5,
-          "t": "**Names** — the page's name (OPORD struck; bench: DOPE rec) · READYROOM · MINT. Defaults run if silent.",
+          "t": "**Names** — the page's name (DOPE SHEET struck; bench: DOPE rec) · READYROOM · MINT. Defaults run if silent.",
           "s": "gated",
           "when": "yours"
         },
@@ -236,7 +241,7 @@
       "kind": "files",
       "plain": "What the pages run on. Priced in build seconds and reading, not dollars.",
       "strand": {
-        "last": "Three pipelines written in one evening; the fourth board (OPORD 42) took one JSON file.",
+        "last": "Three pipelines written in one evening; the fourth board (DOPE SHEET 42) took one JSON file.",
         "plan": "Same cost per page; a new BOLO page is one JSON file and one build.",
         "you": "You pay in names and reading.",
         "next": "The refactor is the only cost still owed, and it is deferred."
@@ -264,7 +269,7 @@
         },
         {
           "path": "https://claude.ai/code/artifact/9d12db54-dc85-4221-8868-bc26d132e1f6",
-          "what": "OPORD 45",
+          "what": "DOPE SHEET 45",
           "s": "done"
         },
         {
@@ -274,7 +279,7 @@
         },
         {
           "path": "SOP.md §1 · §2 · §0",
-          "what": "the sit rep row, the OPORD/FRAGO row, the front-page rule, the colorway, the SOI line",
+          "what": "the sit rep row, the DOPE SHEET/FRAGO row, the front-page rule, the colorway, the SOI line",
           "s": "done"
         },
         {
@@ -289,7 +294,7 @@
           "v": "9 calls · 3 rounds (was 21 · 6)"
         },
         {
-          "k": "a new OPORD",
+          "k": "a new DOPE SHEET",
           "v": "1 JSON · 1 build · 1 publish"
         },
         {
@@ -322,7 +327,7 @@
           "label": "Who decides",
           "items": [
             {
-              "t": "**Papi** — the three names (OPORD · READYROOM · MINT) · any change to the register or the skin.",
+              "t": "**Papi** — the three names (DOPE SHEET · READYROOM · MINT) · any change to the register or the skin.",
               "s": "open"
             },
             {
@@ -344,7 +349,7 @@
           "label": "Prowords in play",
           "items": [
             {
-              "t": "[[sitrep|sit rep]] → SITREP · **[[opord|OPORD]] N** / \"the situation on BOLO N\" → the page · **[[frago|FRAGO]] N** → the update · [[soi|SOI]] → the book · [[charlie-mike|Charlie Mike]] pages → walked 9/11.",
+              "t": "[[sitrep|sit rep]] → SITREP · **[[dope-sheet|DOPE SHEET]] N** / \"the situation on BOLO N\" → the page · **[[frago|FRAGO]] N** → the update · [[soi|SOI]] → the book · [[charlie-mike|Charlie Mike]] pages → walked 9/11.",
               "s": "done"
             }
           ]
@@ -426,6 +431,16 @@
           "when": "9/11",
           "who": "Papi",
           "t": "\"I do not like the word OPORD… something much cooler.\" Struck; bench ordered from the Corps, then military and games. Masthead reads STATUS until ruled."
+        },
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"I like dope… get me the dope sheet.\" DOPE SHEET ruled. Then: the house tongue is not SOP; only one theme, dark; the light face should be Kindle-gray e-ink, not white. How copy."
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "Mastheads say DOPE SHEET; \"the lexicon\" replaces the house tongue; theme toggle removed from all three templates; E-INK light face written, provisional; everything rebuilt and republished."
         }
       ]
     }

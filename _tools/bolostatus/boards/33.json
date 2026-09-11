@@ -1,0 +1,93 @@
+{
+  "bolo": {
+    "n": 33, "title": "WARROOM 1.1 — the MCDP browser and the WATCH register (BOLO 33 + 34)", "trunk": "BLACK",
+    "issued": "2026-09-06", "asof": "2026-09-11", "s": "open",
+    "status": "1.0 accepted 9/6 · 1.1 live on the WATCH register · three rulings open · retint question open since the 9/10 colorway ruling",
+    "decider": "Papi", "feeds": "05_OPERATIONS · SOP · the Bold Venture design system · [[darkroom|DARKROOM]]'s theme",
+    "related": [{"n": 34, "why": "the palette, delivered as the WATCH register"}, {"n": 38, "why": "the pages share the CK3 rules"}, {"n": 41, "why": "LOCI browses on the WARROOM pattern"}],
+    "home": "BOLO.md · rows 33 · 34", "card": "oscar-mike/watch-register.md", "version": "v0.1 · DOPE SHEET"
+  },
+  "mantra": [
+    {"k": "speed", "w": "Speed", "line": "Delivered v0 the day it was spoken: \"just run it, run everything you need before me.\""},
+    {"k": "focus", "w": "Focus", "line": "Eleven one-sheets, one browser, the CK3 rules. The palette question is a token swap, not a redesign."},
+    {"k": "boldness", "w": "Boldness", "line": "The research overturned the dark-theme assumption: polarity follows room light. DAY is the working face."}
+  ],
+  "frago": {
+    "mission": "Browse MIL.01 to MIL.11 as a game encyclopedia on the CK3 information architecture, **in order to** make the doctrine a reference you live in rather than a shelf you visit.",
+    "order": "Nothing owed. **Three rulings and one question, none blocking.**",
+    "default": "Silence: WARROOM keeps its name and the WATCH register; DARKROOM keeps NOIR; the WATCH tokens stay WARROOM-only. The retint to the 9/10 colorway does not happen unless you say so.",
+    "calls": [
+      {"q": "Q2 · file the register", "options": "WATCH as the fifth register in the Bold Venture design system · or keep it WARROOM-only", "default": "WARROOM-only", "s": "open"},
+      {"q": "The name", "options": "WARROOM (provisional) · READYROOM · WARDROOM · MAPROOM · OPSROOM · THE ARMORY — note READYROOM is also benched for the sit rep program (BOLO 48)", "default": "WARROOM stands", "s": "open"},
+      {"q": "DARKROOM's faces", "options": "adopt DAY / NIGHT · or leave NOIR", "default": "leave NOIR", "s": "open"},
+      {"q": "The retint", "options": "the 9/10 ruling made the creator-cases colorway the default for every internal board; WARROOM was built before it — retint, or exempt as the long-watch exception", "default": "exempt until you say", "s": "open"}
+    ]
+  },
+  "paragraphs": [
+    {"id": "S", "name": "Situation", "kind": "list",
+      "plain": "What WARROOM is, what 1.1 added, and what the research found.",
+      "strand": {"last": "Spoken 9/6 as the final main objective behind the marking work; v0 the same day; 1.1 on the register two days later.", "plan": "Build, accept, retune the palette for hours at a monitor.", "you": "Accepted 1.0 (\"this is accepted\"), ordered the palette study, then paused it on Oscar Mike.", "next": "Live in it with the light on and off; rule the three when ready."},
+      "groups": [
+        {"label": "Built", "items": [
+          {"t": "**WARROOM 1.1** — MCDP-CODEX.html at root, built by _tools/mcdp_codex_build.py from its template; the eleven MIL one-sheets browsable on the [[ck3-rules|CK3 rules]] (concept links, nested tooltips depth 3, timer or key lock).", "s": "done", "when": "9/6 → 9/8"},
+          {"t": "**The [[watch-register|WATCH register]]** (working name) — one grammar, two faces keyed to room light: DAY positive-polarity for the lit desk, NIGHT near-black for the light off; seven hues, contrast-checked; type in the 16 to 22 arcmin window; a three-step contrast control. Spec in _0.1_BVX_LEARN/_meta/WATCH-REGISTER.md.", "s": "done", "when": "9/8"},
+          {"t": "**The finding that reshaped it:** no standard prefers dark themes for comfort; polarity is keyed to ambient light (MIL-STD-1472H 5.2.2.6; FAA HF-STD-001B 5.3.2.1.6). Your room is lit, so DAY is the working face. Research banked in LONG-WATCH-STANDARDS.md.", "s": "ruled", "when": "9/8"}
+        ]},
+        {"label": "Open since", "items": [
+          {"t": "Three rulings on the card (filing · name · DARKROOM), plus the retint question raised by the 9/10 colorway ruling: the pages went orange; WARROOM still wears WATCH.", "s": "open", "when": "9/8 · 9/10"}
+        ]}
+      ]},
+    {"id": "M", "name": "Mission", "kind": "mission",
+      "plain": "The task and the reason.",
+      "strand": {"last": "The one-sheets existed; nobody could browse them.", "plan": "A browser on the game rules, then a palette you can watch for hours.", "you": "You gave the picture: CK3's system, designed with intent, not a skin.", "next": "The end state holds; the rulings are refinements."},
+      "task": "Browse the eleven MCDP one-sheets as a game encyclopedia on the CK3 information architecture,",
+      "intent": "in order to make the doctrine a reference you live in.",
+      "spoken": "\"As if it was a game encyclopedia — information architecture derived from how Crusader Kings 3 organizes information, designed with intent.\"",
+      "endstate": ["Every MIL one-sheet is a page with live concept links.", "The palette is keyed to the room, contrast-checked, and filed once.", "DARKROOM and the pages either share the faces or are ruled exempt."]},
+    {"id": "E", "name": "Execution", "kind": "phases",
+      "plain": "Built and accepted; what remains is three rulings and an operator habit.",
+      "strand": {"last": "Two days from spoken to 1.1.", "plan": "Live in it, then rule.", "you": "Three words and one yes or no.", "next": "The retint is a token swap in one template if ordered."},
+      "main_effort": "The operator lives in WARROOM 1.1 for a few sessions, DAY and NIGHT, before ruling the palette.",
+      "phases": [
+        {"n": 1, "t": "**v0 delivered** the day it was spoken; CK3 IA study banked (R1–R19).", "s": "done", "when": "9/6"},
+        {"n": 2, "t": "**1.0 accepted**; the long-watch standards research launched (BOLO 34).", "s": "done", "when": "9/6"},
+        {"n": 3, "t": "**1.1 on the WATCH register** — DAY and NIGHT faces.", "s": "done", "when": "9/8"},
+        {"n": 4, "t": "**Live in it** with the light on and off. Standing note from the spec: face the monitor, keep the wall behind it within a third to three times the screen luminance, monitor white about 100 to 150 cd/m² lit, dim before warm.", "s": "open", "when": "ongoing"},
+        {"n": 5, "t": "**Rule the three** — filing · name · DARKROOM. Each is one line or one token swap.", "s": "gated", "when": "yours"},
+        {"n": 6, "t": "**The retint question** — orange (the 9/10 default) or exempt.", "s": "gated", "when": "yours"}
+      ],
+      "coord": ["Template: _tools/mcdp_codex_template.html · build: _tools/mcdp_codex_build.py · out: MCDP-CODEX.html.", "The vocabulary loop (MIL.01 read-through, BOLO 31) feeds WARROOM's term register; it is parked on its own card.", "LOCI (BOLO 41) browses on the WARROOM pattern: neighbors as links."],
+      "running": ["Nothing."]},
+    {"id": "A", "name": "Admin & Logistics", "kind": "files",
+      "plain": "Where it lives.",
+      "strand": {"last": "One page, one spec, two research files.", "plan": "Rebuild is one command.", "you": "Zero dollars.", "next": "A retint is one evening at most."},
+      "files": [
+        {"path": "https://claude.ai/code/artifact/d695b3f2-bb46-4c4a-a6e0-0d5bdf627da7", "what": "WARROOM 1.1, the standing artifact", "s": "done"},
+        {"path": "MCDP-CODEX.html", "what": "the same page at the repo root", "s": "done"},
+        {"path": "_0.1_BVX_LEARN/_meta/WATCH-REGISTER.md", "what": "the register spec: tokens, faces, type sizes", "s": "done"},
+        {"path": "_0.1_BVX_LEARN/_meta/LONG-WATCH-STANDARDS.md", "what": "the research: MIL-STD-1472 · MIL-STD-2525 · FAA HF-STD-001 and the rest", "s": "done"},
+        {"path": "_0.1_BVX_LEARN/_meta/CK3-IA-STUDY.md", "what": "the nineteen rules every page runs on", "s": "done"},
+        {"path": "oscar-mike/watch-register.md", "what": "the card: the three open rulings", "s": "parked"}
+      ],
+      "cost": [{"k": "a rebuild", "v": "one command"}, {"k": "a retint", "v": "one token swap"}, {"k": "dollars", "v": "0"}]},
+    {"id": "C", "name": "Command & Signal", "kind": "list",
+      "plain": "Who calls what.",
+      "strand": {"last": "Accepted on your word; paused on your word.", "plan": "One decider.", "you": "Three rulings and a yes or no.", "next": "Any order, any time."},
+      "groups": [
+        {"label": "Who decides", "items": [{"t": "**Papi** — filing · the name · DARKROOM's faces · the retint. **Claude** — the build and the research.", "s": "open"}]},
+        {"label": "The gate", "items": [{"t": "**No hold.** WARROOM is live; the rulings refine it.", "s": "done"}]},
+        {"label": "Prowords in play", "items": [{"t": "[[oscar-mike|Oscar Mike]] — the card · [[charlie-mike|Charlie Mike]] watch register — resumes it · **DOPE SHEET 33** — this page.", "s": "open"}]}
+      ]},
+    {"id": "L", "name": "Log", "kind": "log",
+      "plain": "Every transmission.",
+      "strand": {"last": "Six entries.", "plan": "One per transmission.", "you": "Four are yours.", "next": "A ruling."},
+      "entries": [
+        {"when": "9/6", "who": "Papi", "t": "BOLO 33 spoken: the MCDP browser as a game encyclopedia on CK3's system. \"Just run it.\""},
+        {"when": "9/6", "who": "Claude", "t": "v0 delivered; CK3 IA study banked."},
+        {"when": "9/6", "who": "Papi", "t": "\"This is accepted.\" BOLO 34 spoken: the long-watch palette, CIC-grade; boresight called, how copy."},
+        {"when": "9/8", "who": "Claude", "t": "WATCH register delivered; WARROOM 1.1 live on it. The polarity finding."},
+        {"when": "9/8", "who": "Papi", "t": "Oscar Mike everything — parked with three rulings open."},
+        {"when": "9/11", "who": "Papi", "t": "\"Give me the status report on WARROOM 1.1\" → DOPE SHEET 33 built; the retint question added."}
+      ]}
+  ]
+}

@@ -3,40 +3,25 @@
 <style>
   /* ---- the BRIEF colorway (working name) · RULED 2026-09-10: the creator-cases explainer's palette is the default for the boards we keep using; ROSE/WATCH stays with DARKROOM + public-facing work ---- */
   :root {
-    --bg: #EEF0F3; --panel: #FFFFFF; --panel-2: #E4E7EC;
-    --ink: #14171C; --ink-2: #4B5260; --ink-3: #7A8291;
-    --accent: #FF5A1F; --accent-ink: #C23C0A; --accent-soft: #FFE6DB;
-    --link: #C23C0A; --good: #1F7A4D; --good-soft: #DDF3E6; --warn: #6B5A2A; --warn-soft: #F3E7C9; --bad: #A8323E; --bad-soft: #F8DEE1; --help: #4B5260;
-    --mark: #F3E7C9;
-    --orange: #C23C0A; --orange-soft: #FFE6DB;
-    --line: #CFD4DC;
-    --line-2: #B4BBC6;
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --link: #A83409; --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE; --bad: #962C37; --bad-soft: #E6CCCF; --help: #44453F;
+    --mark: #E2D9BE;
+    --orange: #A83409; --orange-soft: #E9D5CA;
+    --line: #B5B5AE;
+    --line-2: #97978F;
     --grid: color-mix(in srgb, var(--ink) 6%, transparent);
     --bar: color-mix(in srgb, var(--ink) 22%, transparent);
     --bar-retired: repeating-linear-gradient(135deg, transparent 0 4px, color-mix(in srgb, var(--ink) 22%, transparent) 4px 6px);
-    --shadow: 0 1px 2px rgba(20,23,28,.06), 0 8px 24px rgba(20,23,28,.10);
+    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
     --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
     --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
     --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-    color-scheme: light;
+    color-scheme: light; /* E-INK: the light face, provisional 9/11 — Kindle gray, never white; shown only when the viewer forces light */
   }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
-      --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
-      --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
-      --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
-      --mark: #3A3320;
-      --orange: #FF8F62; --orange-soft: #3A2117;
-      --line: #2B313B;
-      --line-2: #3C4452;
-      --grid: color-mix(in srgb, var(--ink) 8%, transparent);
-      --bar: color-mix(in srgb, var(--ink) 30%, transparent);
-      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
+  /* DARK is the only theme (RULED 9/11: "there's only one theme, and that's dark"); the toggle is gone */
+  :root {
     --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
     --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
     --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
@@ -49,6 +34,32 @@
     --bar: color-mix(in srgb, var(--ink) 30%, transparent);
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #D8D8D2;
+    --panel: #E4E4DE;
+    --panel-2: #CBCBC4;
+    --ink: #1B1B19;
+    --ink-2: #44453F;
+    --ink-3: #6B6C65;
+    --accent: #E04E18;
+    --accent-ink: #A83409;
+    --accent-soft: #E9D5CA;
+    --link: #A83409;
+    --good: #1F6B45;
+    --good-soft: #CFE0D3;
+    --warn: #5E4F22;
+    --warn-soft: #E2D9BE;
+    --bad: #962C37;
+    --bad-soft: #E6CCCF;
+    --help: #44453F;
+    --mark: #E2D9BE;
+    --orange: #A83409;
+    --orange-soft: #E9D5CA;
+    --line: #B5B5AE;
+    --line-2: #97978F;
+    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
+    color-scheme: light;
   }
 
   * { box-sizing: border-box; }
@@ -342,7 +353,6 @@
     <span><kbd>0</kbd>–<kbd>7</kbd> block</span>
     <span><kbd>←</kbd><kbd>→</kbd> prev · next</span>
     <span><kbd>G</kbd> SOI</span>
-    <span><kbd>T</kbd> theme</span>
     <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
     <span class="r" id="footR"></span>
   </footer>
@@ -381,7 +391,7 @@ const M = B.meta;
 $('#brandSub').textContent = `${M.date} · ${M.when} · ${M.version}`;
 $('#stats').innerHTML = M.stats.map(s => `<div class="stat s-${s.s || ''}"><b class="num">${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join('');
 $('#box').innerHTML = M.box.map(b => `<div class="light ${b.up ? 'up' : ''}"><i></i><a class="t" data-t="${b.k}" tabindex="0">${esc(b.name)}</a><small>${esc(b.port)} · ${b.up ? 'UP' : 'DOWN'}</small></div>`).join('')
-  + `<a class="gloss" id="glossBtn" href="${SOI_URL}" target="_blank" rel="noopener" title="G">SOI<small>the house tongue</small></a><button class="theme" id="themeBtn" title="T">theme</button>`;
+  + `<a class="gloss" id="glossBtn" href="${SOI_URL}" target="_blank" rel="noopener" title="G">SOI<small>the lexicon</small></a>`;
 $('#effort').innerHTML = `<span><span class="k">main effort</span>${md(M.main_effort)}</span>`
   + `<span><span class="k">rack</span>${esc(M.rack.flushed)} · staged ${esc(M.rack.staged)}</span>`
   + `<span><span class="k">tree</span>${esc(M.tree)} · stack ${esc(M.stack)}</span>`
@@ -555,13 +565,7 @@ $('#glList').addEventListener('click', e => { const b = e.target.closest('button
 $('#glHist').addEventListener('click', e => { if (e.target.id === 'glBack') { glHist.pop(); const k = glHist.pop(); if (k) glShow(k); else { $('#glDetail').hidden = true; glRender(); } } });
 
 /* ---- theme: auto → light → dark ---- */
-const themes = ['', 'light', 'dark'];
-const themeLabel = { '': 'theme · auto', light: 'theme · light', dark: 'theme · dark' };
-function applyTheme(t) { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; $('#themeBtn').textContent = themeLabel[t]; try { localStorage.setItem('sitrep_theme', t); } catch (e) {} }
-let theme = ''; try { theme = localStorage.getItem('sitrep_theme') || ''; } catch (e) {}
-if (!themes.includes(theme)) theme = '';
-applyTheme(theme);
-$('#themeBtn').addEventListener('click', () => { theme = themes[(themes.indexOf(theme) + 1) % themes.length]; applyTheme(theme); });
+/* theme toggle removed 9/11: dark only */
 
 /* ---- keys ---- */
 document.addEventListener('keydown', e => {
@@ -572,7 +576,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else closeGlossary(); return; }
   if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
   if (e.key === 'g' || e.key === 'G') { showGlossaryPage(); return; }
-  if (e.key === 't' || e.key === 'T') { $('#themeBtn').click(); return; }
   if ((e.key === 'b' || e.key === 'B') && $('#rail').classList.contains('gl')) { const bb = $('#glBack'); if (bb) bb.click(); }
 });
 

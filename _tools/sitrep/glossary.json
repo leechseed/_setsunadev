@@ -78,7 +78,7 @@
  "belay": {
   "t": "belay that",
   "k": "proword",
-  "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order.",
+  "d": "Cancel the preceding order. Confirmed in three words or fewer; the record keeps the belay line, not the order. Papi 9/11: \"I like belay, but something better\" — bench open on BOLO 48: AS YOU WERE (rec) · DISREGARD · SCRUB · WAVE OFF · CHECK FIRE.",
   "w": "SOP.md §1",
   "st": "provisional"
  },
@@ -128,7 +128,7 @@
  "soi": {
   "t": "SOI",
   "k": "noun",
-  "d": "Signal Operating Instructions: the house tongue's book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
+  "d": "Signal Operating Instructions: the lexicon's book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
   "w": "SOP.md §0 · _tools/soi/ · the SOI page",
   "st": "ruled"
  },
@@ -518,7 +518,7 @@
   "t": "MINT",
   "k": "proword",
   "st": "benched",
-  "d": "Recommended name for the proword selection loop ([[bolo37|BOLO 37]]): where the house tongue gets struck, beside DARKROOM and WARROOM. Bench: BREVITY · SOI · CALLSIGN · LEXICON. Your ruling.",
+  "d": "Recommended name for the proword selection loop ([[bolo37|BOLO 37]]): where the lexicon gets struck, beside DARKROOM and WARROOM. Bench: BREVITY · SOI · CALLSIGN · LEXICON. Your ruling.",
   "w": "BOLO.md #37 · SOP.md §5"
  },
  "readyroom": {
@@ -564,16 +564,48 @@
   "w": "SOP.md §0–1 · _tools/bolostatus/"
  },
  "opord": {
-  "t": "OPORD (struck)",
+  "t": "OPORD (retired)",
   "k": "proword",
-  "st": "benched",
-  "d": "The word STRUCK by Papi 9/11 (\"there has to be a better name than that, something much cooler\"). The thing stands: the standing status page for BOLO N — the [[smeac|five-paragraph order]] with the next action on top, plus the log; changed by [[frago|FRAGOs]]. \"The situation on BOLO N\" builds or shows it. Name bench in SOP §5: DOPE (rec) · TARGET FOLDER · CONOP · JACKET · INTSUM · DOSSIER · CONTRACT · BRIEFING · CASEFILE.",
-  "w": "SOP.md §1 · _tools/bolostatus/"
+  "st": "retired",
+  "d": "Retired 9/11 after twelve hours (\"there has to be a better name than that, something much cooler\"). The thing it named is the [[dope-sheet|DOPE SHEET]].",
+  "w": "SOP.md §5"
  },
  "bolo46": {
   "t": "BOLO 46",
   "k": "item",
   "d": "The OXO series follow-through: the [[telling-profile|Telling Profile]]'s 12 rulings · Anna's node · the pilot's page one. Captured 9/11 at priority one on Papi's word; it had no BOLO before.",
   "w": "BOLO.md #46"
+ },
+ "dope-sheet": {
+  "t": "DOPE SHEET",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The standing status page for one BOLO — the [[smeac|five-paragraph order]] with the next action on top, plus the log; changed by [[frago|FRAGOs]]. RULED 9/11: header \"DOPE SHEET N\"; spoken \"give me the dope on N\", \"status report on N\", \"the situation on N\" all read the same. From the Scout Sniper's DOPE book: Data On Previous Engagements, everything known on the target and every prior engagement in one book. Replaced OPORD (retired the same morning).",
+  "w": "SOP.md §0–1 · _tools/bolostatus/"
+ },
+ "bolo47": {
+  "t": "BOLO 47",
+  "k": "item",
+  "d": "The dashboard consult: eight ranked ideas from current Claude Code / VS Code operator boards for the [[sitrep|sit rep]] page. Captured 9/11; none taken yet.",
+  "w": "BOLO.md #47"
+ },
+ "bolo48": {
+  "t": "BOLO 48",
+  "k": "item",
+  "d": "The name bench: every unruled word with its bench on one sheet — the cancel word (belay's successor), the dress-state value that replaces implied, READYROOM, MINT; \"caught up\" and INTEL in the pool.",
+  "w": "BOLO.md #48 · SOP §5"
+ },
+ "bolo49": {
+  "t": "BOLO 49",
+  "k": "item",
+  "d": "The Massive presets: the best free banks for Native Instruments Massive, verified 9/11; the shortlist is on its sheet.",
+  "w": "BOLO.md #49"
+ },
+ "eink": {
+  "t": "E-INK",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "The light face of every internal page, provisional 9/11: Kindle-gray paper (#D8D8D2 ground, #E4E4DE surface), never white — \"like an old Kindle… digital ink.\" Shown only when a viewer forces light; DARK is the only theme and the toggle is gone.",
+  "w": "SOP.md §2 · the three templates"
  }
 }

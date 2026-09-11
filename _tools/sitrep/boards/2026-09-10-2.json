@@ -4,7 +4,7 @@
     "when": "night · second board of the day",
     "trigger": "\"Okay. What's a sit rep?\" — the question form reads as the board (SOP §8)",
     "countersign": false,
-    "version": "v0.6 · BOLO 38 · SOI re-point",
+    "version": "v0.7 · DOPE SHEET · dark only",
     "box": [
       {
         "name": "Stash",
@@ -695,7 +695,7 @@
       "kind": "card",
       "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens. The full book is the SOI, built tonight and waiting to publish.",
       "strand": {
-        "last": "Ruled tonight: SOI (the glossary's name) · OPORD the page, FRAGO the update · TTP · RTB · Charlie Mike. Garble rows added: Frango, Ebola, TDP, teepee.",
+        "last": "Ruled 9/11: DOPE SHEET (the status page) · SOI is the book · \"the house tongue\" and \"glossary\" retired · dark is the only theme.",
         "plan": "The SOI page replaces the in-page glossary once it publishes (Charlie Mike pages, step 4). BOLO 37 moves rulings into a daily loop.",
         "you": "You clarified FRAGO on your own read of doctrine: the update, never the page.",
         "next": "Confirm OPORD as the page's word. Name the loop; MINT is the recommendation."
@@ -762,9 +762,9 @@
           "g": "close the session: cache note · STATE · journal"
         },
         {
-          "k": "opord",
-          "w": "OPORD N",
-          "g": "that BOLO's standing status page: the five-paragraph order, next action on top (provisional word)"
+          "k": "dope-sheet",
+          "w": "DOPE SHEET N",
+          "g": "that BOLO's standing status page: the five-paragraph order, next action on top; spoken \"the dope on N\" (RULED 9/11)"
         },
         {
           "k": "frago",
@@ -774,7 +774,7 @@
         {
           "k": "soi",
           "w": "SOI",
-          "g": "the tongue's book: every proword and board word, its own page"
+          "g": "the lexicon's book: every proword and board word, its own page"
         }
       ],
       "nouns": [

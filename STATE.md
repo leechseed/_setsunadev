@@ -146,6 +146,7 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 - **Situation reports given in chat** on the 9/8 park stack (story timeline · Trash Land · TikTok) and on WARROOM 1.1 + LOCI; the dashboard-norms consult delivered (one sonnet agent, 11 tool uses).
 - **BOLO 26 answered:** yes, the whisper/voice-library question is BOLO 26 (dictation dictionary), parked on the route ruling.
 - Garble rows added §8: shit rep · Charlie and Mike · below forty-five.
+- **Later 9/11 (spoken):** **DOPE SHEET ruled** for the status pages (OPORD retired) · **BOLOs 47 (dashboard consult) · 48 (the name bench) · 49 (Massive presets, shortlist delivered)** opened, each with a DOPE SHEET · DOPE SHEETs built for 26 and 33 on "status report" · **implied retired** from DARKROOM's dress axis, replacement benched (ADORNED rec; vocab edit waits for DARKROOM idle) · cancel-word bench opened (AS YOU WERE rec) · "caught up" reserved · **"the house tongue" retired → the lexicon** · **theme: DARK only, toggle gone; light face = E-INK (provisional)** — all three templates rebuilt, eleven pages republished.
 
 ## ✅ Moved 2026-09-10 evening (BOLO 45 — the creator-case sweep · the manager path · RTB + Charlie Mike)
 
