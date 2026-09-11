@@ -183,6 +183,9 @@ A session that answers "sit rep" without all five has not answered it.
 | Dorne · a Dorne · adorn | **ADORNED** — the dress-state value (RULED 9/11) |
 | vocab go | the order to apply a DARKROOM vocab edit: edit vocab.json → rerun zeroshot_pass.py → retrain (coded 9/11) |
 | JSON Warren · Jason Warren | **Jason Bourne** (the callsign bench's register) |
+| index · the index · "E N D EX" · end X | **ENDEX** — the session close-out (cache note · STATE · journal); "Oscar Mike" spoken at session end reads the same |
+| Fargo · Frago (spoken twice) | **FRAGO** — the update onto a DOPE SHEET |
+| Oscar Charlie · Oscar, Mike, and Oscar Charlie | the pair **Oscar Mike** (park) · **Charlie Mike** (resume); ENDEX is the third, the close-out |
 | dope sheet · dope on · "the dope" | **DOPE SHEET** — a BOLO's standing status page (RULED 9/11) |
 | why we're anything at all · why wear anything at all | **r/WhyWearAnythingAtAll** — the subreddit; the dress-state value benched 9/11 (ADORNED rec) |
 | buffalo · boat · below (with a number) | **BOLO** |
