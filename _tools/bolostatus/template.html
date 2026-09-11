@@ -74,6 +74,7 @@
   .gloss { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 6px 16px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1; text-transform: uppercase; letter-spacing: .03em; border: 2px solid var(--accent); }
   .gloss small { font-family: var(--mono); font-weight: 400; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; opacity: .9; margin-top: 3px; }
   .gloss:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+  a.gloss { text-decoration: none; }
   .gloss.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 
   /* the three: speed · focus · boldness */
@@ -263,7 +264,7 @@
     <div class="row">
       <div class="brand"><div class="mono-n" id="mono"></div></div>
       <div class="ttl"><h1 id="title"></h1><div class="meta" id="meta"></div></div>
-      <div class="box"><button class="gloss" id="glossBtn" title="G">Glossary<small>every proword</small></button><button class="theme" id="themeBtn" title="T">theme</button></div>
+      <div class="box"><a class="gloss" id="glossBtn" href="https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5" target="_blank" rel="noopener" title="G">SOI<small>the house tongue</small></a><button class="theme" id="themeBtn" title="T">theme</button></div>
     </div>
     <div class="row"><div class="mantra" id="mantra" style="flex:1"></div></div>
     <div class="row"><div class="frago" id="frago" style="flex:1"></div></div>
@@ -289,7 +290,7 @@
   <footer class="foot">
     <span><kbd>S</kbd><kbd>M</kbd><kbd>E</kbd><kbd>A</kbd><kbd>C</kbd><kbd>L</kbd> paragraph</span>
     <span><kbd>←</kbd><kbd>→</kbd> prev · next</span>
-    <span><kbd>G</kbd> glossary page</span>
+    <span><kbd>G</kbd> SOI</span>
     <span><kbd>T</kbd> theme</span>
     <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
     <span class="r" id="footR"></span>
@@ -299,6 +300,7 @@
 <script>
 const DATA = /*__DATA__*/null;
 const B = DATA.board, G = DATA.glossary;
+const SOI_URL = "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5";
 const $ = (s, el = document) => el.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function md(s) {
@@ -313,7 +315,7 @@ function trunk(t) { if (!t) return ''; const one = x => x === 'BLACK' ? `<span c
 
 /* ---- header: identity block · the three · the FRAGO strip ---- */
 const K = B.bolo;
-$('#mono').innerHTML = `<small>FRAGO · BOLO</small>${K.n}`;
+$('#mono').innerHTML = `<small>STATUS · BOLO</small>${K.n}`;
 $('#title').textContent = K.title;
 $('#meta').innerHTML = `${chip(K.s)} ${trunk(K.trunk)} <span><span class="k">issued</span>${esc(K.issued)}</span><span><span class="k">as of</span>${esc(K.asof)}</span><span><span class="k">decider</span>${esc(K.decider)}</span><span><span class="k">feeds</span>${md(K.feeds)}</span><span><span class="k">status</span>${esc(K.status)}</span>`;
 $('#mantra').innerHTML = B.mantra.map(m => `<div><span class="w"><a class="t" data-t="${m.k}" tabindex="0">${esc(m.w)}</a></span><p>${md(m.line)}</p></div>`).join('');
@@ -327,7 +329,7 @@ $('#footR').textContent = `BOLO ${K.n} · ${K.home} · ${K.version}`;
 const P = B.paragraphs;
 const KEYS = P.map(p => p.id);
 $('#olRows').innerHTML = P.map((p, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">¶ ${esc(p.id)}</span><span class="name">${esc(p.name)}</span></span><span class="key">${esc(p.id)}</span></button>`).join('')
-  + `<button class="ol-row gl-row" data-g="1"><span class="node"><i></i></span><span><span class="id">SOI</span><span class="name">Glossary</span></span><span class="key">G</span></button>`;
+  ;
 $('#olFoot').innerHTML = `related: ${K.related.map(r => `<b>BOLO ${r.n}</b> ${esc(r.why)}`).join('<br>')}`;
 
 /* ---- renderers ---- */
@@ -367,29 +369,16 @@ function go(i) {
 const KIND_ORDER = ['proword', 'noun', 'ruling', 'system', 'item', 'person'];
 const KIND_LABEL = { proword: 'Prowords · say one and the protocol fires', noun: 'Board nouns', ruling: 'Rulings and doctrine', system: 'Systems and programs', item: 'Items on the board', person: 'People' };
 const stChip = st => st ? `<span class="chip st-${st === 'ruled' ? 'ruled' : st === 'benched' ? 'parked' : 'open'}">${st}</span>` : '';
-function showGlossaryPage() {
-  glossaryOpen = true;
-  document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', !!r.dataset.g));
-  $('#glossBtn').classList.add('on'); closeTips(0);
-  const entries = Object.entries(G);
-  const secs = KIND_ORDER.map(kind => { const rows = entries.filter(([k, g]) => g.k === kind).sort((a, b) => a[1].t.localeCompare(b[1].t)); if (!rows.length) return '';
-    return `<div class="grp"><span class="lbl">${KIND_LABEL[kind]} <em>· ${rows.length}</em></span><div class="gpage">${rows.map(([k, g]) => `<div class="gent"><div class="gw"><a class="t" data-t="${k}" tabindex="0">${esc(g.t)}</a>${stChip(g.st)}</div><p>${md(g.d)}</p><div class="w">${esc(g.w || '')}</div></div>`).join('')}</div></div>`; }).join('');
-  const np = entries.filter(([k, g]) => g.k === 'proword').length;
-  $('#panel').innerHTML = `<div class="frame"><div class="bh"><span class="eyebrow">SOI · the house tongue</span><span class="src">${entries.length} terms · ${np} prowords</span></div><h2 class="bt">Glossary</h2><p class="plain">Every proword and every board word, in one place. Say a proword and the protocol fires. Terms inside a definition are live: hover, hold, click.</p><input class="gsearch" id="gpageSearch" type="search" placeholder="Search the tongue…" autocomplete="off">${secs}</div>`;
-  $('#panel').scrollTop = 0;
-  $('#gpageSearch').addEventListener('input', e => { const v = e.target.value.trim().toLowerCase(); document.querySelectorAll('.gent').forEach(el => { el.hidden = !!v && !el.textContent.toLowerCase().includes(v); }); });
-  $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx"><div class="c"><span class="lbl">What this is</span><p>The house tongue. The Marine Corps vocabulary is the bootstrap; native coinages replace it as the operation matures (SOP §6).</p></div><div class="c"><span class="lbl">Where it lives</span><p>SOP.md §0 is the card, §1 the definitions, §5 the open naming rulings, §8 the dictation codebook. The same register feeds the sit rep page and every BOLO page.</p></div><div class="c"><span class="lbl">What's next</span><p>BOLO 37 moves proword rulings into a daily selection loop; the benched words wait in it.</p></div></div>`;
-  try { history.replaceState(null, '', '#glossary'); } catch (e) {}
-}
+function showGlossaryPage() { window.open(SOI_URL, '_blank', 'noopener'); }
 $('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (!r) return; if (r.dataset.g) showGlossaryPage(); else go(+r.dataset.i); });
-$('#glossBtn').addEventListener('click', () => glossaryOpen ? go(cur) : showGlossaryPage());
+/* the SOI button is an outbound link */
 
 /* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */
 let tips = [], openTimer = null, closeTimer = null;
 function tipFor(target, depth) {
   const k = target.dataset.t; const g = G[k]; const el = document.createElement('div'); el.className = 'tip'; el.dataset.depth = depth;
   const deep = depth >= 3;
-  el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div><p>${deep ? esc(g.d.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, kk, l) => l || (G[kk] ? G[kk].t : kk))) : md(g.d)}</p>${deep ? `<div class="w"><a href="#" class="glopen" data-k="${k}">Open in glossary →</a></div>` : `<div class="w">${esc(g.w || '')}</div>`}<div class="lock"><b></b></div><div class="hint">hold 1.5 s or press Space to lock · Esc closes · click opens the term</div>`;
+  el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div><p>${deep ? esc(g.d.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, kk, l) => l || (G[kk] ? G[kk].t : kk))) : md(g.d)}</p>${deep ? `<div class="w"><a href="#" class="glopen" data-k="${k}">Open in SOI →</a></div>` : `<div class="w">${esc(g.w || '')}</div>`}<div class="lock"><b></b></div><div class="hint">hold 1.5 s or press Space to lock · Esc closes · click opens the term</div>`;
   document.body.appendChild(el);
   const r = target.getBoundingClientRect(); const w = el.offsetWidth, h = el.offsetHeight;
   let x = Math.min(Math.max(12, r.left), window.innerWidth - w - 12); let y = r.bottom + 8; if (y + h > window.innerHeight - 12) y = Math.max(12, r.top - h - 8);
@@ -434,8 +423,8 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') { go(cur - 1); return; }
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else if ($('#rail').classList.contains('gl')) closeTerm(); else if (glossaryOpen) go(cur); return; }
   if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
-  if (up === 'G') { glossaryOpen ? go(cur) : showGlossaryPage(); return; }
+  if (up === 'G') { showGlossaryPage(); return; }
   if (up === 'T') { $('#themeBtn').click(); }
 });
-if (location.hash === '#glossary') showGlossaryPage(); else go(0);
+go(0);
 </script>

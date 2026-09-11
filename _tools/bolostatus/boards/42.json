@@ -1,0 +1,398 @@
+{
+  "bolo": {
+    "n": 42,
+    "title": "The performer register — every performer and creator Papi admires, one table",
+    "trunk": "ORANGE",
+    "issued": "2026-09-08",
+    "asof": "2026-09-11",
+    "s": "open",
+    "status": "DELIVERED 9/8 · widened 9/9 · 155 names · 30 creators · 21 core · four calls open, none blocking",
+    "decider": "Papi",
+    "feeds": "[[l2b|L2b]] morphology · BOLO 23 physique set · the taxonomy engine · the [[creator-case|creator cases]] ([[bolo45|BOLO 45]]) · BLACK at intertext",
+    "related": [
+      {
+        "n": 45,
+        "why": "the cases link from its rows"
+      },
+      {
+        "n": 23,
+        "why": "the physique set draws on it"
+      },
+      {
+        "n": 44,
+        "why": "the tag rail's Tier 3 uses its cells"
+      }
+    ],
+    "home": "BOLO.md · row 42 · _CANON_NODES/performer-register.md",
+    "card": "oscar-mike/performer-register.md (parked 9/8; the node is the deliverable)",
+    "version": "v0.1 · status page (name unruled)"
+  },
+  "mantra": [
+    {
+      "k": "speed",
+      "w": "Speed",
+      "line": "A spoken name is one row with source S and today's date. No rebuild needed."
+    },
+    {
+      "k": "focus",
+      "w": "Focus",
+      "line": "One table, one lane column, everything in it. The register is the source of taste; every other ORANGE system reads from it."
+    },
+    {
+      "k": "boldness",
+      "w": "Boldness",
+      "line": "Widened to any sex on one word. The gooner lane sits in the open: watched, not admired."
+    }
+  ],
+  "frago": {
+    "mission": "Keep one recurrence-ranked table of every adult performer, e-girl and creator you have ever written down as admired, **in order to** give [[l2b|L2b]], the physique set, the taxonomy engine and the creator cases one source of taste.",
+    "order": "Nothing owed. **Four calls, none blocking; the cheap one is the Case column.**",
+    "default": "Silence: the handle pass stays unfired (token budget); the Case column goes on when BOLO 45's hold lifts; Lina Vesper stays as heard; the two nameless lane-C seats stay empty.",
+    "calls": [
+      {
+        "q": "The Case column",
+        "options": "add a column linking each row to its creator-case file — yes or no (raised on BOLO 45, 9/10)",
+        "default": "yes, when the 45 hold lifts",
+        "s": "open"
+      },
+      {
+        "q": "The X-handle pass",
+        "options": "one agent sweep over all rows, X + IG columns — fire or leave",
+        "default": "leave (budget)",
+        "s": "held"
+      },
+      {
+        "q": "The seven dash Sex cells",
+        "options": "seven rows still carry a dash in the Sex column — your calls",
+        "default": "leave",
+        "s": "open"
+      },
+      {
+        "q": "Lina Vesper",
+        "options": "spelling as heard, not in Stash — confirm or correct",
+        "default": "as heard",
+        "s": "open"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "id": "S",
+      "name": "Situation",
+      "kind": "list",
+      "plain": "What the register is, how it was built, and what changed since.",
+      "strand": {
+        "last": "Spoken 9/8 straight after the sit rep, boresight called. Delivered and accepted the same session.",
+        "plan": "Merge nine vault lists plus the spoken source on the film-register method; rank by recurrence; keep it public beside the film register.",
+        "you": "Ruled one table with a lane column, widened it to any sex, named the NASA girl, and added names by voice as they came.",
+        "next": "The Case column when 45 lifts. Everything else waits on a word or stays as is."
+      },
+      "groups": [
+        {
+          "label": "The ask · 9/8",
+          "items": [
+            {
+              "t": "**\"Get a boresight on all adult stars that I admire… bring that list up… create a table for it.\"** Surface every list ever made, then one table.",
+              "s": "ruled"
+            }
+          ]
+        },
+        {
+          "label": "Built · 9/8",
+          "items": [
+            {
+              "t": "**Nine sources merged:** CULT OF ADLAW 2022 · the 2023 Obsidian entry · the 2023 journal updates · the 2023 creator case studies · \"favorite stars on board\" · \"pornstars i admire\" · Holly Randall guests · the poster list · \"most influential 2025\" · plus S, spoken and dated.",
+              "s": "done",
+              "when": "9/8"
+            },
+            {
+              "t": "**Columns:** Name · Lane · Sex · Listed · Sources · First · Stash scenes · 5★ · Papi's note · X (staged, empty).",
+              "s": "done",
+              "when": "9/8"
+            },
+            {
+              "t": "**The stable core (four or more lists), rank order:** Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Riley Reid · Sensi Pearl · Leah Gotti · Abella Danger · Aria Alexander · Eliza Ibarra · Elsa Jean · Janice Griffith · Katie Morgan · Sasha Grey · Violet Myers · Yhivi · Charlotte Sartre · Evelyn Claire · Kimmy Granger · Joanna Angel.",
+              "s": "done",
+              "when": "9/8"
+            },
+            {
+              "t": "**The gooner lane** — Stash five-star names on no list, top 20, in their own section: watched, not admired. Variety Itsol promoted out of it; [[rebel-rhyder|Rebel Rhyder]] still sits in it (flag, 9/10).",
+              "s": "open",
+              "when": "9/8 → 9/10"
+            }
+          ]
+        },
+        {
+          "label": "Changed since",
+          "items": [
+            {
+              "t": "**Widened to any sex** (9/9, one word) — first men on the P roster; 138 names by 9/10 04:02.",
+              "s": "ruled",
+              "when": "9/9"
+            },
+            {
+              "t": "**The creator cases link from rows** — 15 case files by 9/10 night ([[bolo45|BOLO 45]]).",
+              "s": "done",
+              "when": "9/10"
+            },
+            {
+              "t": "**Lane-C list of 15 added** (source S; two seats nameless: a 3D still artist · a Reddit-native grower) · LushianaFitness added (handle unverified) · [[rebel-rhyder|Rebel Rhyder]]'s row applied. **155 names · 30 creators.**",
+              "s": "done",
+              "when": "9/10 18:39"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "name": "Mission",
+      "kind": "mission",
+      "plain": "The task and the reason.",
+      "strand": {
+        "last": "Nine lists over four years said the same names; nobody had put them in one place.",
+        "plan": "One table, recurrence-ranked, public, read by every ORANGE system.",
+        "you": "You asked for the table and ruled its shape on one loop.",
+        "next": "The end state holds; the open calls are refinements."
+      },
+      "task": "Keep one recurrence-ranked table of every performer, e-girl and creator you admire,",
+      "intent": "in order to give L2b, the physique set, the taxonomy engine and the creator cases one source of taste.",
+      "spoken": "\"Bring that list up… create a table for it.\"",
+      "endstate": [
+        "Every name you have ever written down as admired is a row, with its sources and its Stash count.",
+        "A spoken name lands as a row the same turn.",
+        "Every ORANGE system that needs taste reads this table and no other."
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Execution",
+      "kind": "phases",
+      "plain": "Done in one session; what remains is maintenance and four calls.",
+      "strand": {
+        "last": "Built, widened, and linked in three days.",
+        "plan": "Maintenance by voice; passes on your word.",
+        "you": "You cleared the shape on the boresight loop and have added names since by speaking.",
+        "next": "The Case column is a one-pass edit once 45 lifts."
+      },
+      "main_effort": "The register stays the single source of taste; nothing forks it.",
+      "phases": [
+        {
+          "n": 1,
+          "t": "**Boresight** — every prior list surfaced; shape ruled: one table, a lane column, the Shrooms question kept, Dolly Dyson separate from Dolly Little, Kazumi a performer.",
+          "s": "done",
+          "when": "9/8"
+        },
+        {
+          "n": 2,
+          "t": "**The merge** — nine lists plus S, dedupe map, Stash pulled over GraphQL on :9999; 134 names · 21 core.",
+          "s": "done",
+          "when": "9/8"
+        },
+        {
+          "n": 3,
+          "t": "**Widen to any sex** — 138 names.",
+          "s": "done",
+          "when": "9/9 → 9/10"
+        },
+        {
+          "n": 4,
+          "t": "**Link the creator cases** — rows point at `creator-case-<handle>.md`; lane-C list of 15 added; 155 names · 30 creators.",
+          "s": "done",
+          "when": "9/10"
+        },
+        {
+          "n": 5,
+          "t": "**The Case column** — one column, one pass, when [[bolo45|BOLO 45]]'s hold lifts.",
+          "s": "gated",
+          "when": "after the hold"
+        },
+        {
+          "n": 6,
+          "t": "**The X-handle pass** — one agent sweep, X + IG columns, physique-watchlist labeling discipline. Held on budget.",
+          "s": "held",
+          "when": "your word"
+        },
+        {
+          "n": 7,
+          "t": "**L2b cells per performer** — your calls, the BOLO 23 pattern; Tier 3 of the tag rail ([[bolo44|BOLO 44]]) uses them.",
+          "s": "gated",
+          "when": "with BOLO 44"
+        }
+      ],
+      "coord": [
+        "The build script lived in a session scratchpad and was not promoted; the lists are recoverable from the named source files and Stash is queried live. Edit the markdown directly for single rows.",
+        "Adding a spoken name = one row, source S, today's date.",
+        "Agents never touch the register; the session that runs them applies rows from the landed files."
+      ],
+      "running": [
+        "Nothing."
+      ]
+    },
+    {
+      "id": "A",
+      "name": "Admin & Logistics",
+      "kind": "files",
+      "plain": "Where it lives and what a pass costs.",
+      "strand": {
+        "last": "One node, one card, one build script that was not kept.",
+        "plan": "The node is the deliverable; the card only holds the open calls.",
+        "you": "You pay in calls, each one word.",
+        "next": "The handle pass is the only pass with a real cost; it is held."
+      },
+      "files": [
+        {
+          "path": "_CANON_NODES/performer-register.md",
+          "what": "the deliverable · 155 names · 30 creators · 21 core",
+          "s": "done"
+        },
+        {
+          "path": "oscar-mike/performer-register.md",
+          "what": "the card: the open calls and the rebuild note",
+          "s": "parked"
+        },
+        {
+          "path": "BOLO.md · row 42",
+          "what": "the tasking and the boresight rulings",
+          "s": "done"
+        },
+        {
+          "path": "_CANON_NODES/creator-case-*.md × 15",
+          "what": "the cases the rows link to",
+          "s": "done"
+        },
+        {
+          "path": "Stash :9999",
+          "what": "scene and five-star counts, queried live over GraphQL",
+          "s": "good"
+        }
+      ],
+      "cost": [
+        {
+          "k": "a spoken name",
+          "v": "one row, same turn"
+        },
+        {
+          "k": "the Case column",
+          "v": "one pass over 15 rows"
+        },
+        {
+          "k": "the handle pass",
+          "v": "one agent sweep · held"
+        },
+        {
+          "k": "dollars",
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Command & Signal",
+      "kind": "list",
+      "plain": "Who calls what.",
+      "strand": {
+        "last": "Every shape ruling came from you on one loop.",
+        "plan": "One decider; defaults that leave things as they are.",
+        "you": "You are the gate on the four calls; none blocks anything.",
+        "next": "Say \"Case column yes\" and it goes on with 45's lift."
+      },
+      "groups": [
+        {
+          "label": "Who decides",
+          "items": [
+            {
+              "t": "**Papi** — the four calls · every new name · the gooner-lane promotions.",
+              "s": "open"
+            },
+            {
+              "t": "**Claude** — the merge method, the columns, the ranking.",
+              "s": "done"
+            }
+          ]
+        },
+        {
+          "label": "The gate",
+          "items": [
+            {
+              "t": "**No hold on the register itself.** Names land by voice. The handle pass is held on budget; the Case column waits behind BOLO 45's hold.",
+              "s": "open"
+            }
+          ]
+        },
+        {
+          "label": "Prowords in play",
+          "items": [
+            {
+              "t": "[[boresight]] — cleared 9/8 · [[oscar-mike|Oscar Mike]] — the card · **[[opord|OPORD]] 42** — this page · \"fire the handle pass\" — the one phrase that starts phase 6.",
+              "s": "open"
+            }
+          ]
+        },
+        {
+          "label": "Where status lives",
+          "items": [
+            {
+              "t": "BOLO.md row 42 · the node's header · this page · the [[sitrep|sit rep]]'s Block I.",
+              "s": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "name": "Log",
+      "kind": "log",
+      "plain": "Every transmission on this BOLO.",
+      "strand": {
+        "last": "Eight entries.",
+        "plan": "One line per transmission.",
+        "you": "Six are yours.",
+        "next": "A name or a call."
+      },
+      "entries": [
+        {
+          "when": "9/8",
+          "who": "Papi",
+          "t": "BOLO 42 spoken after the sit rep; boresight called."
+        },
+        {
+          "when": "9/8",
+          "who": "Papi",
+          "t": "Shape ruled on the loop: one table, lane column, Shrooms kept, public home, Dolly Dyson ≠ Dolly Little, Kazumi a performer. Spoken adds: Lina Vesper · Eris Nova · Variety Itsol."
+        },
+        {
+          "when": "9/8",
+          "who": "Claude",
+          "t": "Delivered: 134 names · 21 core; accepted. Parked on Oscar Mike ×3."
+        },
+        {
+          "when": "9/9",
+          "who": "Papi",
+          "t": "Widened to any sex, one word."
+        },
+        {
+          "when": "9/10 04:02",
+          "who": "Claude",
+          "t": "138 names; first men on the P roster; seven creator-case nodes linked from rows."
+        },
+        {
+          "when": "9/10 evening",
+          "who": "Papi",
+          "t": "The NASA girl ruled: Rebel Rhyder. Mercedes Carrera and SpaceGhost struck, nodes kept."
+        },
+        {
+          "when": "9/10 18:39",
+          "who": "Claude",
+          "t": "Lane-C list of 15 added; LushianaFitness added; 155 names · 30 creators. The Case column raised on BOLO 45."
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "OPORD 42 built on Papi's \"situation on BOLO 42\"; handle pass held on budget."
+        }
+      ]
+    }
+  ]
+}

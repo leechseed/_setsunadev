@@ -1,7 +1,7 @@
 ---
 title: The Pages — SITREP · OPORD/FRAGO · SOI (BOLO 38 and its siblings)
 type: parked work
-status: parked (Oscar Mike 2026-09-10, late) — three pipelines on disk, two published, one built but unpublished; resumes on "Charlie Mike pages"
+status: CHARLIE MIKE'D 2026-09-11 — steps 1–4 done; step 5 (names) Papi's; step 6 (refactor) deferred to the next page. Card stays until step 6 lands or is struck; RTB then
 updated: 2026-09-10
 trunk: BLACK (the board's own tooling; every trunk rides on it)
 pointer-only: false — the resume order below is the whole handoff
@@ -15,7 +15,9 @@ open_on_resume: the OPORD/FRAGO retitle · the SOI publish + re-point · the sit
 **Standing links.**
 - Sit rep: https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a — v0.4 live (FRAGO · TTP · RTB · Charlie Mike in the SOI card; glossary still opens in-page).
 - BOLO 45 page: https://claude.ai/code/artifact/9d12db54-dc85-4221-8868-bc26d132e1f6 — v0.1 live (stale: does not yet show scope M or the five landed cases).
-- SOI: not yet published. `_tools/soi/` is written; `python _tools/soi/build.py` produces `SOI.html` at root; first publish needs a favicon.
+- SOI: **published 9/11** https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5 (edition 2026-09-11-1). Both page templates link to it; the in-page views are gone.
+- OPORD 38: https://claude.ai/code/artifact/414c9a5c-c320-4e09-9d3f-4d4c6bd0acbd · OPORD 42: https://claude.ai/code/artifact/134d6364-1825-4088-a737-ca7bf16ea557
+- (was) SOI: not yet published. `_tools/soi/` is written; `python _tools/soi/build.py` produces `SOI.html` at root; first publish needs a favicon.
 
 **Rulings that landed on this line, 9/10.**
 - The page becomes the board (BOLO 38). The explainer register on every panel. Skin: CK3 IA × Death Stranding surface.

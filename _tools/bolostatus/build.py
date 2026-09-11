@@ -33,7 +33,7 @@ def main():
     data = json.dumps({"board": board, "glossary": glossary}, ensure_ascii=False).replace("</script", "<\\/script")
     tpl = load(os.path.join(HERE, "template.html"))
     assert tpl.count("/*__DATA__*/null") == 1
-    frag = tpl.replace("/*__DATA__*/null", data).replace("<title>BOLO</title>", f"<title>FRAGO {n}</title>")
+    frag = tpl.replace("/*__DATA__*/null", data).replace("<title>BOLO</title>", f"<title>BOLO {n} · status</title>")
 
     os.makedirs(os.path.join(HERE, "out"), exist_ok=True)
     out = os.path.join(HERE, "out", f"BOLO-{n}.html")

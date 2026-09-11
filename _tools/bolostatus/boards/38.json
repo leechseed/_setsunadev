@@ -1,0 +1,433 @@
+{
+  "bolo": {
+    "n": 38,
+    "title": "The sit rep as a front page — and its two siblings",
+    "trunk": "BLACK",
+    "issued": "2026-09-06",
+    "asof": "2026-09-11 · Charlie Mike on the pages",
+    "s": "hot",
+    "status": "SITREP v0.6 live · status pages live · SOI published 9/11 · OPORD struck, name bench open",
+    "decider": "Papi",
+    "feeds": "SOP §2 · [[warroom|WARROOM]] · every board and every [[opord|OPORD]] page",
+    "related": [
+      {
+        "n": 37,
+        "why": "the proword loop, one panel of this"
+      },
+      {
+        "n": 45,
+        "why": "the first OPORD page"
+      },
+      {
+        "n": 33,
+        "why": "the CK3 IA source"
+      }
+    ],
+    "home": "BOLO.md · row 38",
+    "card": "oscar-mike/pages.md — resumed 9/11 on Charlie Mike; steps 1–4 done, 5 yours, 6 deferred",
+    "version": "v0.1 · status page (name unruled)"
+  },
+  "mantra": [
+    {
+      "k": "speed",
+      "w": "Speed",
+      "line": "The board reads in ten seconds because it is built from data, not prose. The next board reads the last board plus the diff, not 126 KB of files."
+    },
+    {
+      "k": "focus",
+      "w": "Focus",
+      "line": "One main effort: every status question answers itself on a page, in the same register, from the same term register. Everything else on this BOLO supports it."
+    },
+    {
+      "k": "boldness",
+      "w": "Boldness",
+      "line": "The pages shipped in one evening on your word and got rebuilt the next morning. Names are provisional until you say them; the defaults run."
+    }
+  ],
+  "frago": {
+    "mission": "Deliver every [[sitrep|sit rep]] and every BOLO status as a rendered page in the ruled register, **in order to** put the whole operation in front of you in ten seconds without a scroll, and to stop the board costing a session's worth of reading to build.",
+    "order": "One name for this page. **Then two more when you want them.**",
+    "default": "Silence: the masthead says STATUS · BOLO N. READYROOM for the sit rep program and MINT for the loop run as defaults. The dashboard consult's picks are in chat; a FRAGO 38 folds the ones you take onto this page.",
+    "calls": [
+      {
+        "q": "The page's name",
+        "options": "OPORD STRUCK 9/11. Bench: DOPE (rec) · TARGET FOLDER · CONOP · JACKET · INTSUM · DOSSIER · CONTRACT · BRIEFING · CASEFILE — in chat and SOP §5",
+        "default": "masthead reads STATUS until you rule",
+        "s": "open"
+      },
+      {
+        "q": "READYROOM",
+        "options": "the sit rep program's name — READYROOM (rec) · OPSROOM · FRONTPAGE · THE BOARD",
+        "default": "READYROOM",
+        "s": "open"
+      },
+      {
+        "q": "MINT",
+        "options": "the proword loop's name ([[bolo37|BOLO 37]]) — MINT (rec) · BREVITY · CALLSIGN · LEXICON",
+        "default": "MINT",
+        "s": "open"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "id": "S",
+      "name": "Situation",
+      "kind": "list",
+      "plain": "Where BOLO 38 stands: what was asked on 9/6, what you ruled on 9/10, and what shipped.",
+      "strand": {
+        "last": "Spoken 9/6 with BOLO 37: the sit rep as the CK3 save-load screen, everything you need to see on one front page.",
+        "plan": "Build v0 the moment you ruled the page is the board; then split the BOLO page and the tongue's book off the same core.",
+        "you": "Ruled the page is the board, the colorway, FRAGO then OPORD, SOI, and this morning: Charlie Mike, and 'glossary' retired as a word.",
+        "next": "Three names. Then the refactor when a fourth page appears."
+      },
+      "groups": [
+        {
+          "label": "The ask · 9/6",
+          "items": [
+            {
+              "t": "**The sit rep becomes a home window** — \"the first thing that pops up when you open a save file — everything you need to see, that front page type shit.\" Blocks 0–VII as a dashboard; the proword loop (BOLO 37) as one panel; the CK3 information architecture (R1–R19) as the design source.",
+              "s": "ruled"
+            }
+          ]
+        },
+        {
+          "label": "Ruled · 9/10",
+          "items": [
+            {
+              "t": "**The page becomes the board.** \"Whenever I call for the sit rep, give it back to me in this format.\" One panel per block, jumped to by key; the explainer register on every panel; the CK3 tooltip rules at depth 3.",
+              "s": "ruled",
+              "when": "9/10 evening"
+            },
+            {
+              "t": "**The colorway** — the creator-cases explainer palette (slate · white · orange) for every internal board and tool page. The rose stays with [[darkroom|DARKROOM]] and public-facing work.",
+              "s": "ruled",
+              "when": "9/10 evening"
+            },
+            {
+              "t": "**[[opord|OPORD]] is the BOLO page (provisional), [[frago|FRAGO]] is the update onto it (ruled).** Your read of doctrine: \"FRAGO is just the update after we've made the BOLO status page.\"",
+              "s": "ruled",
+              "when": "9/10 late"
+            },
+            {
+              "t": "**[[soi|SOI]] is the tongue's book** — its own dashboard, the Marine SOI format. And 9/11: **\"glossary\" is retired as a word.** Every button and key says SOI.",
+              "s": "ruled",
+              "when": "9/10 late · 9/11"
+            }
+          ]
+        },
+        {
+          "label": "Shipped",
+          "items": [
+            {
+              "t": "**SITREP** — v0 through v0.4 on 9/10 evening, v0.5 on 9/10 night (built the new way: last board + cache note + diff). Standing URL, republished every sit rep.",
+              "s": "done",
+              "when": "9/10"
+            },
+            {
+              "t": "**OPORD 45** — the first BOLO page: the five-paragraph order, [[speed|SPEED]] · [[focus|FOCUS]] · [[boldness|BOLDNESS]] on the masthead, the FRAGO strip on top. Retitled and rebuilt 9/11 with the hold.",
+              "s": "done",
+              "when": "9/10 → 9/11"
+            },
+            {
+              "t": "**SOI** — built 9/10 late, published 9/11: search, A to Z, by section, edition and authentication, the codebook parsed live from SOP §8. Both pages' buttons now point at it; the in-page views are gone.",
+              "s": "done",
+              "when": "9/11"
+            },
+            {
+              "t": "**OPORD 38 and OPORD 42** — this page and the register's, both first builds 9/11.",
+              "s": "done",
+              "when": "9/11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M",
+      "name": "Mission",
+      "kind": "mission",
+      "plain": "A mission is a task plus the reason for it. The reason outlasts the task.",
+      "strand": {
+        "last": "The chat board took 21 calls and 178 KB of reading to build. That was the reason.",
+        "plan": "Data in, page out; the same core under every page.",
+        "you": "You gave the picture (the save-load screen) and the register (the explainer).",
+        "next": "The end state is one name away on each of three fronts."
+      },
+      "task": "Render every sit rep and every BOLO status as a page from data,",
+      "intent": "in order to put the whole operation in front of you in ten seconds, and to cut what a board costs to build.",
+      "spoken": "\"Whenever I call for the sit rep, give it back to me in this format.\"",
+      "endstate": [
+        "Every sit rep lands on one standing URL; the chat carries the link and the leverage line.",
+        "Every BOLO has an OPORD page on demand; FRAGOs fold deltas onto it.",
+        "The tongue has one book, the SOI, and nothing on any page says glossary."
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Execution",
+      "kind": "phases",
+      "plain": "The six-step resume order from the parked card, walked this morning. Four done, one yours, one deferred.",
+      "strand": {
+        "last": "Parked 9/10 late with the order written; resumed 9/11 on your word.",
+        "plan": "Mechanical steps first, names last, the refactor when it earns its keep.",
+        "you": "You said Charlie Mike and retired the word glossary in the same breath.",
+        "next": "Step 5 is three words. Step 6 waits for the next page."
+      },
+      "main_effort": "The pages stay current without a ruling: every sit rep republishes SITREP; every 'situation on N' builds or FRAGOs an OPORD.",
+      "phases": [
+        {
+          "n": 1,
+          "t": "**Retitle for the OPORD/FRAGO split** — masthead OPORD · BOLO; page title OPORD N; the 45 board versioned v0.3 · OPORD.",
+          "s": "done",
+          "when": "9/11"
+        },
+        {
+          "n": 2,
+          "t": "**Rebuild and republish OPORD 45** with the hold and the five missing files folded in.",
+          "s": "done",
+          "when": "9/11"
+        },
+        {
+          "n": 3,
+          "t": "**Sit rep deltas** — folded on the 9/10 night board (v0.5); the SOI re-point republished as v0.6.",
+          "s": "done",
+          "when": "9/10 night · 9/11"
+        },
+        {
+          "n": 4,
+          "t": "**Publish the SOI; re-point both templates** — the button is an outbound SOI link, the in-page views and the G-page are gone, the rail panel says SOI. SOP §0 patched.",
+          "s": "done",
+          "when": "9/11"
+        },
+        {
+          "n": 5,
+          "t": "**Names** — the page's name (OPORD struck; bench: DOPE rec) · READYROOM · MINT. Defaults run if silent.",
+          "s": "gated",
+          "when": "yours"
+        },
+        {
+          "n": 6,
+          "t": "**Refactor** — three templates share ~300 lines of CSS and the tooltip engine by copy; extract house.css and house.js when the next page is added. Not urgent.",
+          "s": "parked",
+          "when": "next page"
+        },
+        {
+          "n": 7,
+          "t": "**The dashboard consult** — delivered 9/11 in chat: a budget bar, build-side diffs, cached static panels, Agent View status words, approval keys on Block V, local token parsing, a git-diff changelog, a reset countdown. Don't copy: agent fleets, live servers, enterprise approval machinery. A FRAGO 38 folds in what you take.",
+          "s": "done",
+          "when": "9/11"
+        }
+      ],
+      "coord": [
+        "Three pipelines, one core: _tools/sitrep · _tools/bolostatus · _tools/soi. Each is data + template + build.py; every double-bracket key must exist in the shared register or the build fails on purpose.",
+        "The register (_tools/sitrep/glossary.json) is shared; re-read before writing when two sessions run.",
+        "Every ruled word goes into SOP and the register in the same turn (standing order 9/10).",
+        "Long heredocs die in Git Bash; scripts go to the scratchpad."
+      ],
+      "running": [
+        "The dashboard-norms consult (one background agent, web only).",
+        "Nothing else. The pages build in seconds."
+      ]
+    },
+    {
+      "id": "A",
+      "name": "Admin & Logistics",
+      "kind": "files",
+      "plain": "What the pages run on. Priced in build seconds and reading, not dollars.",
+      "strand": {
+        "last": "Three pipelines written in one evening; the fourth board (OPORD 42) took one JSON file.",
+        "plan": "Same cost per page; a new BOLO page is one JSON file and one build.",
+        "you": "You pay in names and reading.",
+        "next": "The refactor is the only cost still owed, and it is deferred."
+      },
+      "files": [
+        {
+          "path": "_tools/sitrep/ → SITREP.html",
+          "what": "boards/<date>.json · glossary.json (the shared register) · template.html · build.py",
+          "s": "done"
+        },
+        {
+          "path": "_tools/bolostatus/ → out/BOLO-<n>.html",
+          "what": "boards/45 · 38 · 42.json · template.html · build.py",
+          "s": "done"
+        },
+        {
+          "path": "_tools/soi/ → SOI.html",
+          "what": "soi.json (edition · sections · changes) · template.html · build.py (parses SOP §8 live)",
+          "s": "done"
+        },
+        {
+          "path": "https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0a6ea28a",
+          "what": "SITREP — the one standing URL",
+          "s": "done"
+        },
+        {
+          "path": "https://claude.ai/code/artifact/9d12db54-dc85-4221-8868-bc26d132e1f6",
+          "what": "OPORD 45",
+          "s": "done"
+        },
+        {
+          "path": "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5",
+          "what": "SOI — the tongue's book",
+          "s": "done"
+        },
+        {
+          "path": "SOP.md §1 · §2 · §0",
+          "what": "the sit rep row, the OPORD/FRAGO row, the front-page rule, the colorway, the SOI line",
+          "s": "done"
+        },
+        {
+          "path": "oscar-mike/pages.md",
+          "what": "the parked card; resumed 9/11, RTB when step 6 lands or is struck",
+          "s": "parked"
+        }
+      ],
+      "cost": [
+        {
+          "k": "a sit rep",
+          "v": "9 calls · 3 rounds (was 21 · 6)"
+        },
+        {
+          "k": "a new OPORD",
+          "v": "1 JSON · 1 build · 1 publish"
+        },
+        {
+          "k": "a FRAGO",
+          "v": "patch the JSON · rebuild · republish"
+        },
+        {
+          "k": "the refactor",
+          "v": "one evening, deferred"
+        },
+        {
+          "k": "dollars",
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Command & Signal",
+      "kind": "list",
+      "plain": "Who calls what, and where to look.",
+      "strand": {
+        "last": "Two sessions built the pages in parallel on 9/10; one session walked the resume order on 9/11.",
+        "plan": "One decider, defaults that run.",
+        "you": "You are the gate on names only.",
+        "next": "Three words, any order, any time."
+      },
+      "groups": [
+        {
+          "label": "Who decides",
+          "items": [
+            {
+              "t": "**Papi** — the three names (OPORD · READYROOM · MINT) · any change to the register or the skin.",
+              "s": "open"
+            },
+            {
+              "t": "**Claude** — the build, the schema, the order of the resume; a new page whenever 'the situation on N' is spoken.",
+              "s": "done"
+            }
+          ]
+        },
+        {
+          "label": "The gate",
+          "items": [
+            {
+              "t": "**No hold.** The pages rebuild on every sit rep and every 'situation on N' without a word from you.",
+              "s": "done"
+            }
+          ]
+        },
+        {
+          "label": "Prowords in play",
+          "items": [
+            {
+              "t": "[[sitrep|sit rep]] → SITREP · **[[opord|OPORD]] N** / \"the situation on BOLO N\" → the page · **[[frago|FRAGO]] N** → the update · [[soi|SOI]] → the book · [[charlie-mike|Charlie Mike]] pages → walked 9/11.",
+              "s": "done"
+            }
+          ]
+        },
+        {
+          "label": "Where status lives",
+          "items": [
+            {
+              "t": "BOLO.md row 38 · this page · the card · the [[sitrep|sit rep]]'s Block I item 1.",
+              "s": "done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L",
+      "name": "Log",
+      "kind": "log",
+      "plain": "Every transmission on this BOLO, in order.",
+      "strand": {
+        "last": "Ten entries across three days.",
+        "plan": "One line per transmission; corrections appended, never rewritten.",
+        "you": "Six of the ten are your words.",
+        "next": "The next line is a name."
+      },
+      "entries": [
+        {
+          "when": "9/6",
+          "who": "Papi",
+          "t": "BOLO 38 spoken with 37: the sit rep as the CK3 save-load screen."
+        },
+        {
+          "when": "9/10 ~16:00",
+          "who": "Papi",
+          "t": "On seeing the creator-cases explainer: \"whenever I call for the sit rep, give it back to me in this format.\" BOLO 38 fired."
+        },
+        {
+          "when": "9/10 16:21",
+          "who": "Claude",
+          "t": "SITREP v0 published; pipeline _tools/sitrep/ written; SOP §1/§2 patched."
+        },
+        {
+          "when": "9/10 evening",
+          "who": "Papi",
+          "t": "The colorway ruled: the explainer palette for every internal board; the rose stays with DARKROOM."
+        },
+        {
+          "when": "9/10 evening",
+          "who": "Papi",
+          "t": "\"Status on BOLO 45\" → the first BOLO page; FRAGO ruled as its name. Then: a big glossary button on the sit rep page."
+        },
+        {
+          "when": "9/10 late",
+          "who": "Papi",
+          "t": "FRAGO is the update, not the page; the page is OPORD (provisional). SOI ruled as the tongue's name and its own dashboard."
+        },
+        {
+          "when": "9/10 late",
+          "who": "Papi",
+          "t": "Oscar Mike and RTB: the pages parked to oscar-mike/pages.md with a six-step resume order."
+        },
+        {
+          "when": "9/10 night",
+          "who": "Claude",
+          "t": "SITREP v0.5: the second board of the day, built from the last board + cache note + diff."
+        },
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"Charlie Mike those pages.\" And: glossary is not the word anymore. And: a consult on what other operator dashboards do."
+        },
+        {
+          "when": "9/11",
+          "who": "Claude",
+          "t": "Steps 1–4 walked: OPORD retitle · OPORD 45 rebuilt · SOI published · both templates re-pointed · OPORD 38 and 42 built. Consult launched."
+        },
+        {
+          "when": "9/11",
+          "who": "Papi",
+          "t": "\"I do not like the word OPORD… something much cooler.\" Struck; bench ordered from the Corps, then military and games. Masthead reads STATUS until ruled."
+        }
+      ]
+    }
+  ]
+}

@@ -128,8 +128,9 @@
  "soi": {
   "t": "SOI",
   "k": "noun",
-  "d": "Signal Operating Instructions. The proword card, SOP §0. Closes every board as Block VII.",
-  "w": "SOP.md §0"
+  "d": "Signal Operating Instructions: the house tongue's book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
+  "w": "SOP.md §0 · _tools/soi/ · the SOI page",
+  "st": "ruled"
  },
  "sop": {
   "t": "SOP",
@@ -333,7 +334,7 @@
  "bolo38": {
   "t": "BOLO 38",
   "k": "item",
-  "d": "The sit rep as a front page, the CK3 save-load screen. Captured 9/6; fired 9/10 evening on your order. This page is v0.",
+  "d": "The sit rep as a front page, the CK3 save-load screen. Captured 9/6; fired 9/10 evening on your order; v0.5 on 9/10 night. Charlie Mike'd 9/11: OPORD retitle, the SOI published, both pages re-pointed. Its OPORD page carries the rest.",
   "w": "BOLO.md #38"
  },
  "the-box": {
@@ -563,10 +564,16 @@
   "w": "SOP.md §0–1 · _tools/bolostatus/"
  },
  "opord": {
-  "t": "OPORD N",
+  "t": "OPORD (struck)",
   "k": "proword",
-  "st": "provisional",
-  "d": "Operations order: the standing status page for BOLO N — the [[smeac|five-paragraph order]] with the next action on top, plus the log. Built once, then changed by [[frago|FRAGOs]]. \"OPORD 45\" or \"status on BOLO 45\" shows it. Un-retired from the 9/10 bench on Papi's clarification; provisional until he confirms the word.",
+  "st": "benched",
+  "d": "The word STRUCK by Papi 9/11 (\"there has to be a better name than that, something much cooler\"). The thing stands: the standing status page for BOLO N — the [[smeac|five-paragraph order]] with the next action on top, plus the log; changed by [[frago|FRAGOs]]. \"The situation on BOLO N\" builds or shows it. Name bench in SOP §5: DOPE (rec) · TARGET FOLDER · CONOP · JACKET · INTSUM · DOSSIER · CONTRACT · BRIEFING · CASEFILE.",
   "w": "SOP.md §1 · _tools/bolostatus/"
+ },
+ "bolo46": {
+  "t": "BOLO 46",
+  "k": "item",
+  "d": "The OXO series follow-through: the [[telling-profile|Telling Profile]]'s 12 rulings · Anna's node · the pilot's page one. Captured 9/11 at priority one on Papi's word; it had no BOLO before.",
+  "w": "BOLO.md #46"
  }
 }

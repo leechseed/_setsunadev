@@ -1,32 +1,106 @@
 {
-  "edition": "2026-09-10-1",
-  "effective": "2026-09-10 · until superseded by the next edition",
-  "supersedes": "the in-page glossary views on the sit rep page (v0.3–0.4) and the FRAGO page (v0). The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
+  "edition": "2026-09-11-1",
+  "effective": "2026-09-11 · until superseded by the next edition",
+  "supersedes": "the in-page glossary views on the sit rep page (v0.3–0.5) and the BOLO 45 page (v0–0.2); the word \"glossary\" itself, retired by Papi 9/11. The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
   "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
   "prepared_by": "Claude (every session)",
   "approved_by": "Papi — every proword marked RULED carries his word",
-  "distribution": "Papi · every Claude session (SOP §4 reading order) · the sit rep page · every FRAGO page",
+  "distribution": "Papi · every Claude session (SOP §4 reading order) · the sit rep page · every OPORD page",
   "sections": [
-    {"n": 1, "kind": "proword", "name": "Prowords", "plain": "Say one and the protocol fires. Ruled words are law; provisional words are in use pending a ruling; benched words wait in the selection loop."},
-    {"n": 2, "kind": "noun", "name": "Board nouns", "plain": "The names of the board's own parts: blocks, racks, trunks."},
-    {"n": 3, "kind": "ruling", "name": "Rulings and doctrine", "plain": "Standing decisions and the doctrine words behind them."},
-    {"n": 4, "kind": "system", "name": "Systems and programs", "plain": "The machines and the named programs: DARKROOM, WARROOM, Stash, the register."},
-    {"n": 5, "kind": "item", "name": "Items on the board", "plain": "Live BOLOs, decisions, and the named pieces of work a board points at."},
-    {"n": 6, "kind": "person", "name": "People", "plain": "Names that appear on the board as people."},
-    {"n": 7, "kind": "auth", "name": "Authentication", "plain": "The challenge and the countersign. Referenced here, printed only where they live."},
-    {"n": 8, "kind": "codebook", "name": "Dictation codebook", "plain": "What the recognizer types versus what Papi said. Read the right-hand column without asking. Canonical in SOP §8."},
-    {"n": 9, "kind": "changes", "name": "Changes", "plain": "Every ruling that changed the tongue, by date. Nothing is deleted; superseded words stay listed as retired."}
+    {
+      "n": 1,
+      "kind": "proword",
+      "name": "Prowords",
+      "plain": "Say one and the protocol fires. Ruled words are law; provisional words are in use pending a ruling; benched words wait in the selection loop."
+    },
+    {
+      "n": 2,
+      "kind": "noun",
+      "name": "Board nouns",
+      "plain": "The names of the board's own parts: blocks, racks, trunks."
+    },
+    {
+      "n": 3,
+      "kind": "ruling",
+      "name": "Rulings and doctrine",
+      "plain": "Standing decisions and the doctrine words behind them."
+    },
+    {
+      "n": 4,
+      "kind": "system",
+      "name": "Systems and programs",
+      "plain": "The machines and the named programs: DARKROOM, WARROOM, Stash, the register."
+    },
+    {
+      "n": 5,
+      "kind": "item",
+      "name": "Items on the board",
+      "plain": "Live BOLOs, decisions, and the named pieces of work a board points at."
+    },
+    {
+      "n": 6,
+      "kind": "person",
+      "name": "People",
+      "plain": "Names that appear on the board as people."
+    },
+    {
+      "n": 7,
+      "kind": "auth",
+      "name": "Authentication",
+      "plain": "The challenge and the countersign. Referenced here, printed only where they live."
+    },
+    {
+      "n": 8,
+      "kind": "codebook",
+      "name": "Dictation codebook",
+      "plain": "What the recognizer types versus what Papi said. Read the right-hand column without asking. Canonical in SOP §8."
+    },
+    {
+      "n": 9,
+      "kind": "changes",
+      "name": "Changes",
+      "plain": "Every ruling that changed the tongue, by date. Nothing is deleted; superseded words stay listed as retired."
+    }
   ],
   "auth": [
-    {"t": "The challenge phrase", "d": "Spoken as written in STATE.md's header. The countersign follows, first line, exact, then the board. The ritual is never explained and never printed here.", "w": "STATE.md header · SOP.md §1"}
+    {
+      "t": "The challenge phrase",
+      "d": "Spoken as written in STATE.md's header. The countersign follows, first line, exact, then the board. The ritual is never explained and never printed here.",
+      "w": "STATE.md header · SOP.md §1"
+    }
   ],
   "changes": [
-    {"date": "2026-08-21", "t": "SOP stood up. **BOLO** ruled for the watchlist (bench FRAGO · WARNO · Fire Watch retired). **Boresight** ruled (back-brief struck; INTEL to the pool). **Break-break / buttonhook back** ruled. **Ivory tower** coded. House format coded (§7). Trunk discipline (BLACK · ORANGE · OPERATOR). Lexicon doctrine (§6): the Corps is the bootstrap. \"Set me up\" retired; **sit rep** is the trigger. **ENDEX** provisional. PMCS created. Ready Rack / Magazine provisional."},
-    {"date": "2026-08-25", "t": "The SOI card added as Block VII of every board, by order."},
-    {"date": "2026-09-01", "t": "**Run the darkroom** coded; garbles black room / dark room read the same."},
-    {"date": "2026-09-03", "t": "The dictation codebook (§8) coded. House names spoken: BLACK = Bold Venture · ORANGE = Ultrasin."},
-    {"date": "2026-09-04", "t": "**Belay that** provisional. One value, one block (§7 rule 8)."},
-    {"date": "2026-09-06", "t": "**The OUT block** coded (§7 rule 9). RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR benched. The proword selection loop proposed (BOLO 37), name bench MINT (rec)."},
-    {"date": "2026-09-10", "t": "The front page (BOLO 38): the sit rep becomes a dashboard. The colorway ruled (the creator-cases palette for every internal board). **FRAGO** ruled as the BOLO status page. **TTP** ruled for the lessons block (over GOUGE). **RTB** replaces sweep. **Charlie Mike** ruled for resuming a card. **SOI** ruled as the name of the tongue's book — this page, its own dashboard. Garble rows: me this it rep · Rebel Writer · desk training · CK three · Frango."}
+    {
+      "date": "2026-08-21",
+      "t": "SOP stood up. **BOLO** ruled for the watchlist (bench FRAGO · WARNO · Fire Watch retired). **Boresight** ruled (back-brief struck; INTEL to the pool). **Break-break / buttonhook back** ruled. **Ivory tower** coded. House format coded (§7). Trunk discipline (BLACK · ORANGE · OPERATOR). Lexicon doctrine (§6): the Corps is the bootstrap. \"Set me up\" retired; **sit rep** is the trigger. **ENDEX** provisional. PMCS created. Ready Rack / Magazine provisional."
+    },
+    {
+      "date": "2026-08-25",
+      "t": "The SOI card added as Block VII of every board, by order."
+    },
+    {
+      "date": "2026-09-01",
+      "t": "**Run the darkroom** coded; garbles black room / dark room read the same."
+    },
+    {
+      "date": "2026-09-03",
+      "t": "The dictation codebook (§8) coded. House names spoken: BLACK = Bold Venture · ORANGE = Ultrasin."
+    },
+    {
+      "date": "2026-09-04",
+      "t": "**Belay that** provisional. One value, one block (§7 rule 8)."
+    },
+    {
+      "date": "2026-09-06",
+      "t": "**The OUT block** coded (§7 rule 9). RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR benched. The proword selection loop proposed (BOLO 37), name bench MINT (rec)."
+    },
+    {
+      "date": "2026-09-10",
+      "t": "The front page (BOLO 38): the sit rep becomes a dashboard. The colorway ruled (the creator-cases palette for every internal board). **FRAGO** ruled as the BOLO status page. **TTP** ruled for the lessons block (over GOUGE). **RTB** replaces sweep. **Charlie Mike** ruled for resuming a card. **SOI** ruled as the name of the tongue's book — this page, its own dashboard. Garble rows: me this it rep · Rebel Writer · desk training · CK three · Frango."
+    },
+    {
+      "date": "2026-09-11",
+      "t": "**SOI published as its own page** (Charlie Mike on the pages). **OPORD N** = the standing BOLO page (provisional word) · **FRAGO N** = the update onto it (ruled), clarified 9/10 late. **\"Glossary\" retired as a word** — the button, the key, and the page all say SOI. Garble rows: shit rep · Charlie and Mike · below forty-five."
+    }
   ]
 }
