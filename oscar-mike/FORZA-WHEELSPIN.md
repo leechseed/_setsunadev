@@ -2,7 +2,7 @@
 title: Forza wheelspin-exclusive cars — collection tracker
 type: tracker
 status: parked (Oscar Mike 2026-08-31) — resumes on next owned-car callout
-updated: 2026-09-10
+updated: 2026-09-11
 trunk: OPERATOR
 open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisionally vs the called "1985 RS200 Evolution"
 ---
@@ -11,9 +11,10 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 **The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Papi calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
 
-**Total: 104 · Owned: 25 (1 ⚠️ confirm) · Needed: 79**
+**Total: 104 · Owned: 31 (1 ⚠️ confirm) · Needed: 73**
 
 > 2026-09-10: full list brought up on request (owned included). No callout made; counts unchanged. Oscar Mike'd ×3 same turn.
+> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed.
 
 > ⚠️ **Open confirm:** callout said *"1985 Ford RS200 Evolution"* — that car is not on this list; nearest list entry is the **1987 Ford Sierra Cosworth RS500**, marked owned provisionally. If you actually meant the RS200, the Sierra flips back to needed.
 
@@ -22,7 +23,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 ### Alfa Romeo & AMG (3)
 - [ ] 1968 Alfa Romeo 33 Stradale
 - [ ] 1965 Alfa Romeo Giulia TZ2
-- [ ] 2554 AMG Transport Dynamics M12S Warthog CST
+- [x] ~~2554 AMG Transport Dynamics M12S Warthog CST~~
 
 ### Apollo & Aston Martin (5)
 - [ ] 2019 Apollo Intensa Emozione
@@ -35,7 +36,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - [ ] 2023 BMW M2 Forza Edition
 - [ ] 1981 BMW M1
 - [ ] 1999 Dodge Viper GTS ACR Forza Edition
-- [ ] 1969 Dodge Charger R/T
+- [x] ~~1969 Dodge Charger R/T~~
 
 ### Ferrari (11)
 - [ ] 2020 Ferrari SF90 Stradale
@@ -48,13 +49,13 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - [ ] 1996 Ferrari F50 GT
 - [ ] 1970 Ferrari 512 S
 - [ ] 1962 Ferrari 250 GTO
-- [ ] 1962 Ferrari 250 GT Berlinetta Lusso
+- [x] ~~1962 Ferrari 250 GT Berlinetta Lusso~~
 
 ### Ford (5)
 - [x] ~~2005 Ford GT~~
 - [x] ~~1987 Ford Sierra Cosworth RS500~~ ⚠️ called as "1985 Ford RS200 Evolution" — confirm
-- [ ] 1986 Ford F-150 XLT Lariat Forza Edition
-- [ ] 1968 Ford Mustang GT 2+2 Fastback Forza Edition
+- [x] ~~1986 Ford F-150 XLT Lariat Forza Edition~~
+- [x] ~~1968 Ford Mustang GT 2+2 Fastback Forza Edition~~
 - [ ] 1966 Ford #2 GT40 MK II
 
 ### Gordon Murray, GR & Hennessey (4)
@@ -85,7 +86,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - [ ] 2013 Lamborghini Veneno
 - [ ] 2011 Lamborghini Sesto Elemento
 - [x] ~~1997 Lamborghini Diablo SV~~
-- [ ] 1967 Lamborghini Miura P400
+- [x] ~~1967 Lamborghini Miura P400~~
 
 ### Lancia, Lexus & Lotus (4)
 - [x] ~~1974 Lancia Stratos HF Stradale~~
@@ -155,14 +156,13 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 ---
 
-## NEEDED — the chase list (79)
+## NEEDED — the chase list (73)
 
-*Only unowned cars appear here. Regenerated 2026-08-31 after the first callout.*
+*Only unowned cars appear here. Regenerated 2026-09-11 after the second callout.*
 
-**Alfa Romeo & AMG (3)**
+**Alfa Romeo & AMG (2)**
 - 1968 Alfa Romeo 33 Stradale
 - 1965 Alfa Romeo Giulia TZ2
-- 2554 AMG Transport Dynamics M12S Warthog CST
 
 **Apollo & Aston Martin (5)**
 - 2019 Apollo Intensa Emozione
@@ -171,13 +171,12 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 2019 Aston Martin Valhalla Concept Car
 - 2017 Aston Martin Vulcan AMR Pro
 
-**BMW & Dodge (4)**
+**BMW & Dodge (3)**
 - 2023 BMW M2 Forza Edition
 - 1981 BMW M1
 - 1999 Dodge Viper GTS ACR Forza Edition
-- 1969 Dodge Charger R/T
 
-**Ferrari (11)**
+**Ferrari (10)**
 - 2020 Ferrari SF90 Stradale
 - 2018 Ferrari Monza SP2
 - 2018 Ferrari FXX-K Welcome Pack
@@ -188,11 +187,8 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 1996 Ferrari F50 GT
 - 1970 Ferrari 512 S
 - 1962 Ferrari 250 GTO
-- 1962 Ferrari 250 GT Berlinetta Lusso
 
-**Ford (3)**
-- 1986 Ford F-150 XLT Lariat Forza Edition
-- 1968 Ford Mustang GT 2+2 Fastback Forza Edition
+**Ford (1)**
 - 1966 Ford #2 GT40 MK II
 
 **Gordon Murray & Hennessey (3)**
@@ -209,7 +205,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 2011 Koenigsegg Agera
 - 2008 Koenigsegg CCGT
 
-**Lamborghini (10)**
+**Lamborghini (9)**
 - 2023 Lamborghini Huracan Sterrato
 - 2021 Lamborghini Countach LPI 800-4
 - 2020 Lamborghini Essenza SCV12
@@ -219,7 +215,6 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 2016 Lamborghini Centenario LP 770-4
 - 2013 Lamborghini Veneno
 - 2011 Lamborghini Sesto Elemento
-- 1967 Lamborghini Miura P400
 
 **Lexus & Lotus (3)**
 - 2010 Lexus LFA Forza Edition
