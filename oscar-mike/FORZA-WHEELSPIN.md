@@ -11,10 +11,10 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 **The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Papi calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
 
-**Total: 104 · Owned: 36 (1 ⚠️ confirm) · Needed: 68**
+**Total: 104 · Owned: 37 (1 ⚠️ confirm) · Needed: 67**
 
 > 2026-09-10: full list brought up on request (owned included). No callout made; counts unchanged. Oscar Mike'd ×3 same turn.
-> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed. Third callout same day: Wuling Sunshine S FE → 32 owned / 72 needed. Fourth callout: 190E Evo II FE · 787B · BRZ FE (Wuling re-called, already struck) → 35 owned / 69 needed. Fifth callout: Giulia TZ2 → 36 owned / 68 needed.
+> 2026-09-11: **second callout** — 6 landed (Warthog · Charger R/T · 250 GT Lusso · F-150 FE · Mustang FE · Miura). 25→31 owned, 79→73 needed. Third callout same day: Wuling Sunshine S FE → 32 owned / 72 needed. Fourth callout: 190E Evo II FE · 787B · BRZ FE (Wuling re-called, already struck) → 35 owned / 69 needed. Fifth callout: Giulia TZ2 → 36 owned / 68 needed. Sixth callout: Agera RS → 37 owned / 67 needed.
 
 > ⚠️ **Open confirm:** callout said *"1985 Ford RS200 Evolution"* — that car is not on this list; nearest list entry is the **1987 Ford Sierra Cosworth RS500**, marked owned provisionally. If you actually meant the RS200, the Sierra flips back to needed.
 
@@ -67,7 +67,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 ### Jaguar & Koenigsegg (7)
 - [ ] 1964 Jaguar Lightweight E-Type
 - [ ] 2020 Koenigsegg Jesko
-- [ ] 2017 Koenigsegg Agera RS
+- [x] ~~2017 Koenigsegg Agera RS~~
 - [ ] 2016 Koenigsegg Regera
 - [ ] 2015 Koenigsegg One:1
 - [ ] 2011 Koenigsegg Agera
@@ -156,9 +156,9 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 ---
 
-## NEEDED — the chase list (68)
+## NEEDED — the chase list (67)
 
-*Only unowned cars appear here. Regenerated 2026-09-11 after the fifth callout.*
+*Only unowned cars appear here. Regenerated 2026-09-11 after the sixth callout.*
 
 **Alfa Romeo (1)**
 - 1968 Alfa Romeo 33 Stradale
@@ -195,10 +195,9 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 - 2021 Hennessey Venom F5
 - 2012 Hennessey Venom GT
 
-**Jaguar & Koenigsegg (7)**
+**Jaguar & Koenigsegg (6)**
 - 1964 Jaguar Lightweight E-Type
 - 2020 Koenigsegg Jesko
-- 2017 Koenigsegg Agera RS
 - 2016 Koenigsegg Regera
 - 2015 Koenigsegg One:1
 - 2011 Koenigsegg Agera
