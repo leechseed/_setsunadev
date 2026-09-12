@@ -648,5 +648,11 @@
   "st": "ruled",
   "d": "The operator's callsign, RULED 9/11. Casual: \"Hotline\", \"word from Hotline\". On the net and on every page: **HOTLINE ACTUAL**. The point: the word comes from on high, detached from the person, the way CENTCOM ACTUAL speaks for the command, not for a man (\"remove the artist from the art\"). Replaces \"you\" on the explainer rail.",
   "w": "SOP.md §0–1 · §5 · const WHO in the templates"
+ },
+ "bolo51": {
+  "t": "BOLO 51",
+  "k": "item",
+  "d": "The logistics front: one standing audit, quality, and improvement function over every system in daily use, plus the token offload onto hooks, skills, subagents, routines, and the design canvas. Standards pulled from BOLO 50's register. Opened 9/12.",
+  "w": "BOLO.md #51 · DOPE SHEET 51"
  }
 }

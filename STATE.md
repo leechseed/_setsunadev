@@ -2,7 +2,7 @@
 title: STATE — what is live right now
 type: state
 status: living document
-updated: 2026-09-11
+updated: 2026-09-12
 read_first: true
 ---
 
@@ -37,6 +37,7 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | **13** | **BOLO 37 — name the proword selection loop (bench: MINT rec · BREVITY · SOI · CALLSIGN · LEXICON) and answer its three spec gaps** (reveal timing · five-of-ten · placement) | the first build; BOLO 38 (the sit rep as a CK3-style front page) sizes off gap 3; the five benched prowords (RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR) wait in it |
 | **18** | **BOLO 46 — the OXO series follow-through, PRIORITY ONE by Papi's word 9/11:** the Telling Profile's 12 rulings (⧗ draft, strike or keep) gate everything behind it; then Anna's node (the first Claude build), the 14 Movement-1 questions, the pilot's page one | Anna's node → the Tori×Anna collision proof · Tori's chart re-derivation · page one |
 | **14** | **BOLO 41 — ratify the LOCI convention** (`_0.1_BVX_LEARN/LOCI/README.md`: locus × methods × neighbors × feeds × sources × tier; the six-step collect) | every non-book research question filed by neighborhood; BOLO 40's intake (CUL shelf) lands on it |
+| **19** | **BOLO 51 — the logistics front, opened 9/12: confirm the offload picks** (a SessionStart digest hook · the four SOP procedures as skills: sit rep · DOPE SHEET · FRAGO · Oscar Mike · STATE's Moved sections → `_LOG/` · Explore/haiku agents for reads · the design canvas for anything iterated visually) **and the audit instrument** (AAR + PDCA run on the ISO 19011 audit-programme pattern, rec). Defaults run provisionally if silent | every session's opening cost (~211 KB read before the first order); the standing audit cadence; every BOLO from here carries its standards line |
 
 > **#15 (the medium) RULED 2026-09-09: SERIES** — Papi's word on the true-ancients pass ("retired retired nodes chain go series"). Recorded in the storyform node frontmatter. Follow-through running same session: the OXO Telling Profile ⧗ instanced for series · the first SCENE CARD on collision row 9 · the row-9 scene as Fountain pages. **The pilot's page one waits on the Movement-1 extraction questions** (the crash), not on the lattice. Tori's chart re-derivation + Anna's node ride behind.
 >
