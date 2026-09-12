@@ -9,9 +9,9 @@
  "oscar-mike": {
   "t": "Oscar Mike",
   "k": "proword",
-  "d": "Park the current work in oscar-mike/ and move on. [[charlie-mike|Charlie Mike]] resumes a card; [[rtb|RTB]] later sends the keepers home and clears the folder. Every park ends with the OUT block.",
-  "w": "SOP.md §1 · oscar-mike/INDEX.md",
-  "st": "ruled"
+  "st": "ruled",
+  "d": "The close-out, all in one — RULED 9/11 (\"when I say we're Oscar Mike, I wanna close out the session… just one thing\"). Spoken, it ends the session: the Ready Rack note is finalized, STATE updated, the day's journal appended, the reply ends with the OUT block. Nothing is parked into a card any more; every BOLO's resume order lives on its [[dope-sheet|DOPE SHEET]]. [[charlie-mike|Charlie Mike]] resumes; [[rtb|RTB]] sends the old parked cards home.",
+  "w": "SOP.md §1 · §7 rule 9"
  },
  "sweep": {
   "t": "sweep",
@@ -83,11 +83,11 @@
   "w": "SOP.md §5"
  },
  "endex": {
-  "t": "ENDEX",
+  "t": "ENDEX (retired)",
   "k": "proword",
-  "d": "Close the session: write the cache note, update STATE.md, append the journal. Autosave commits on stop. 9/11: the word collides with \"index\" in dictation; the ENDEX was aborted and a bench of ten opened on BOLO 48 (LIBERTY CALL rec). ENDEX stands until ruled.",
-  "w": "SOP.md §1",
-  "st": "provisional"
+  "st": "retired",
+  "d": "Retired 9/11: it collided with \"index\" in dictation and was one process too many. The close-out is [[oscar-mike|Oscar Mike]].",
+  "w": "SOP.md §5"
  },
  "ready-rack": {
   "t": "Ready Rack",
@@ -538,7 +538,7 @@
  "rtb": {
   "t": "RTB",
   "k": "proword",
-  "d": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, the folder cleared. Papi's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]].",
+  "d": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, the folder cleared. Papi's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]]. 9/11: one meaning only — the pass that sends a parked card home and clears it; retires itself when oscar-mike/ is empty. The end of the sortie is Oscar Mike.",
   "w": "SOP.md §1",
   "st": "ruled"
  },
@@ -592,7 +592,7 @@
  "bolo48": {
   "t": "BOLO 48",
   "k": "item",
-  "d": "The name bench: every unruled word with its bench on one sheet. Ruled 9/11: DOPE SHEET · ADORNED · ABORT (the cancel word) · BREVITY (what the SOI holds) · HOTLINE / HOTLINE ACTUAL (the operator's callsign). Open: the close-out word replacing ENDEX (ten, LIBERTY CALL rec) · READYROOM · MINT. Pool: \"caught up\" · INTEL.",
+  "d": "The name bench: every unruled word with its bench on one sheet. Ruled 9/11: DOPE SHEET · ADORNED · ABORT (the cancel word) · BREVITY (what the SOI holds) · HOTLINE / HOTLINE ACTUAL (the operator's callsign). Closed 9/11: the close-out is Oscar Mike, ENDEX retired. Open: READYROOM · MINT. Pool: \"caught up\" · INTEL.",
   "w": "BOLO.md #48 · SOP §5"
  },
  "bolo49": {

@@ -709,7 +709,7 @@
         {
           "k": "oscar-mike",
           "w": "Oscar Mike",
-          "g": "park it, move on"
+          "g": "the close-out, all in one: cache note · STATE · journal · the OUT block (RULED 9/11)"
         },
         {
           "k": "charlie-mike",
@@ -719,7 +719,7 @@
         {
           "k": "rtb",
           "w": "RTB",
-          "g": "return to base: promote the parked keepers home, clear the folder (replaces sweep)"
+          "g": "send an old parked card home and clear it; retires when the folder is empty"
         },
         {
           "k": "how-copy",
@@ -755,11 +755,6 @@
           "k": "abort",
           "w": "abort abort abort",
           "g": "cancel the preceding order, spoken three times; the correction follows (RULED 9/11)"
-        },
-        {
-          "k": "endex",
-          "w": "ENDEX",
-          "g": "close the session: cache note · STATE · journal"
         },
         {
           "k": "dope-sheet",
