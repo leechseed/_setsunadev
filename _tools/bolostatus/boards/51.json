@@ -6,7 +6,7 @@
     "issued": "2026-09-12",
     "asof": "2026-09-12",
     "s": "hot",
-    "status": "CAPTURED 9/12 · consult delivered · the standards pulled from BOLO 50's register · the offload picks are your call",
+    "status": "CAPTURED 9/12 · usage MEASURED (9/10 = half the week; agents = 35%) · the gearbox spun out as BOLO 52 · gear 1 in force · the offload picks are your call",
     "decider": "HOTLINE ACTUAL",
     "feeds": "SOP · STATE · BOLO · the pages (SITREP · DOPE SHEET · SOI) · DARKROOM · BVX-LEARN · LOCI · the project flow · the design system · the lattice · WARROOM",
     "related": [
@@ -25,11 +25,19 @@
       {
         "n": 38,
         "why": "the front page: every audit finding lands on the board"
+      },
+      {
+        "n": 52,
+        "why": "the gearbox: the agent ceiling and the gauge, spun out of this BOLO 9/12"
+      },
+      {
+        "n": 53,
+        "why": "the house's own development standard, tabled 9/12"
       }
     ],
     "home": "BOLO.md · row 51",
     "card": "none",
-    "version": "v0.1 · DOPE SHEET"
+    "version": "v0.2 · DOPE SHEET"
   },
   "mantra": [
     {
@@ -110,10 +118,35 @@
           ]
         },
         {
-          "label": "Where the tokens go · measured 9/12",
+          "label": "Where the tokens went · measured 9/12 from the local transcripts",
           "items": [
             {
-              "t": "**The session open is the drain.** The reading order (SOP → STATE → BOLO → cache → PROJECTS) is 211 KB on disk: STATE 72 KB · BOLO 80 KB · SOP 40 KB. That is roughly 55,000 tokens read before the first order, every session, and every one of them rides in the context of every turn after.",
+              "t": "**Last eight days ≈ 53.6M weighted** (201M cache-read · 18M cache-write · 2.1M output). **9/10 alone was half the week.**",
+              "s": "done"
+            },
+            {
+              "t": "**Performer and creator research ≈ 51%** (the 9/8 register merge · the 9/10 creator cases, 16 agents · the 9/10 performer list). **Sit rep and page sessions ≈ 41%.** Everything else 8%.",
+              "s": "done"
+            },
+            {
+              "t": "**41 subagents = 35% of the week, all but four on Fable.** Tool results of the whole week ≈ 2.3M tokens: the scrape volume was not the cost, the agent contexts were. Five creator-case files never landed; that slice bought nothing.",
+              "s": "done"
+            },
+            {
+              "t": "**Correction to the first read:** the 211 KB session open is a steady tax (~13%), not the spike. The spikes were agent fleets and long sessions.",
+              "s": "done"
+            },
+            {
+              "t": "**The gauge is saved:** `_tools/usage/usage_by_day.py N` · `usage_by_agent.py`. Zero tokens to rerun.",
+              "s": "done"
+            }
+          ]
+        },
+        {
+          "label": "The first read · 9/12 morning (corrected above)",
+          "items": [
+            {
+              "t": "**The session open is a steady tax, not the spike** (corrected after the transcript count). The reading order (SOP → STATE → BOLO → cache → PROJECTS) is 211 KB on disk, roughly 55,000 tokens read before the first order and re-read every turn: about 13% of the week. Still worth the digest.",
               "s": "done"
             },
             {
@@ -371,6 +404,26 @@
           "when": "9/12",
           "who": "Claude",
           "t": "BOLO 51 captured; the reading order measured (211 KB); the standards pulled from the BOLO 50 register; the offload list a–f drafted; this sheet built. STATE blocked row 19."
+        },
+        {
+          "when": "9/12",
+          "who": "Papi",
+          "t": "\"What actually took the most?\" Was it the performer scrape; worried about the weekly limit and a two-day lockout."
+        },
+        {
+          "when": "9/12",
+          "who": "Claude",
+          "t": "Usage measured from the local transcripts; the numbers above. Cuts ranked: Haiku/Sonnet agents · scripts fetch, agents read · fleets capped · one BOLO per session · the digest."
+        },
+        {
+          "when": "9/12",
+          "who": "Papi",
+          "t": "Cap agent teams at three on a doubling scale: gears 1–5, never sixteen. Name the system, put it on the SOI. Table the dev-process standard but BOLO it. SOI: define proword, drop the number. A lighter viewer than Firefox."
+        },
+        {
+          "when": "9/12",
+          "who": "Claude",
+          "t": "BOLO 52 the gearbox · BOLO 53 tabled · SOP §0/§1/§5 rows · SOI edition 2026-09-12-1 (proword defined, numbers dropped) · Edge app-mode launcher in _tools/pages/."
         }
       ]
     }

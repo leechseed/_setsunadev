@@ -654,5 +654,38 @@
   "k": "item",
   "d": "The logistics front: one standing audit, quality, and improvement function over every system in daily use, plus the token offload onto hooks, skills, subagents, routines, and the design canvas. Standards pulled from BOLO 50's register. Opened 9/12.",
   "w": "BOLO.md #51 · DOPE SHEET 51"
+ },
+ "proword": {
+  "t": "proword",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Procedure word. Radiotelephony's fixed words that stand for a whole instruction: ROGER, WILCO, OUT, SAY AGAIN. NATO's book for them is ACP 125. The house's prowords are the same idea aimed at the protocol: say one and the procedure fires.",
+  "w": "SOP.md §0–1 · ACP 125"
+ },
+ "gear": {
+  "t": "gear N",
+  "k": "proword",
+  "st": "provisional",
+  "d": "The agent ceiling for the current task, spoken as a number. Gear 1 = 3 agents (the default; silence means gear 1) · 2 = 6 · 3 = 9 · 4 = 12 · 5 = 15, never used: the ceiling exists to be named. A shift lasts one task, then back to gear 1. At every gear, fetch-and-extract agents run haiku, write-ups sonnet, fable on the main line only. Working name (Papi 9/12: \"let's just call them gears for now\"); warps and DEFCON aborted in the same breath. Part of [[gearbox|the gearbox]].",
+  "w": "SOP.md §1 · §5 · BOLO 52"
+ },
+ "gearbox": {
+  "t": "the gearbox",
+  "k": "system",
+  "st": "provisional",
+  "d": "The sustainable-speed system, opened 9/12 as BOLO 52: the [[gear|gears]] (the agent ceiling), the gauge (_tools/usage/, weighted tokens per day from the local transcripts), and the weekly budget the week must fit. Lineage: the 9/10 sixteen-agent run spent half a week in one session. Never sixteen again.",
+  "w": "_tools/usage/ · BOLO 52 · SOP.md §1"
+ },
+ "bolo52": {
+  "t": "BOLO 52",
+  "k": "item",
+  "d": "The gearbox: the sustainable-speed system. Gears 1–5 as the agent ceiling, the gauge, the weekly budget. Spun out of BOLO 51 on 9/12; name provisional.",
+  "w": "BOLO.md #52"
+ },
+ "bolo53": {
+  "t": "BOLO 53",
+  "k": "item",
+  "d": "Tabled 9/12: the house's own standard for how it builds, the boresight and how-copy back-and-forth read as a development life cycle. Captured, not started.",
+  "w": "BOLO.md #53"
  }
 }

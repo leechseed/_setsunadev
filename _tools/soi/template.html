@@ -97,7 +97,7 @@
   .mode { display: grid; grid-template-columns: 1fr 1fr; margin: 0 18px 14px; border: 1px solid var(--line-2); }
   .mode button { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 7px 0; color: var(--ink-2); }
   .mode button.on { background: var(--ink); color: var(--bg); }
-  .ol-row { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 8px 14px 8px 18px; color: var(--ink-2); border-left: 3px solid transparent; }
+  .ol-row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 8px 14px 8px 18px; color: var(--ink-2); border-left: 3px solid transparent; }
   .ol-row .n { font-family: var(--display); font-weight: 800; font-size: 22px; color: var(--ink-3); text-align: right; }
   .ol-row .name { font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.05; text-transform: uppercase; }
   .ol-row .cnt { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
@@ -275,7 +275,7 @@ const firstLetter = t => { const c = t.replace(/^(the|a|an)\s+/i, '').trim()[0].
 
 /* ---- left rail ---- */
 $('#olRows').innerHTML = S.sections.map(sec => { const n = sec.kind === 'auth' ? S.auth.length : sec.kind === 'codebook' ? S.codebook.length : sec.kind === 'changes' ? S.changes.length : (bySec[sec.n] || []).length;
-  return `<button class="ol-row" data-n="${sec.n}"><span class="n num">${sec.n}</span><span class="name">${esc(sec.name)}</span><span class="cnt num">${n}</span></button>`; }).join('');
+  return `<button class="ol-row" data-n="${sec.n}"><span class="name">${esc(sec.name)}</span><span class="cnt num">${n}</span></button>`; }).join('');
 $('#olFoot').innerHTML = `A ruled word is law.<br>Provisional: in use, unruled.<br>Benched: waits in the loop.<br>Retired: stays listed, struck.`;
 
 /* ---- entries ---- */
@@ -289,7 +289,7 @@ function secHTML(sec) {
   else if (sec.kind === 'codebook') inner = `<div class="tblwrap"><table class="cb"><thead><tr><th>Heard</th><th>Read as</th></tr></thead><tbody>${S.codebook.map(r => `<tr class="cbrow" data-text="${esc((r.heard + ' ' + r.read).toLowerCase())}"><td class="h">${md(r.heard)}</td><td>${md(r.read)}</td></tr>`).join('')}</tbody></table></div>`;
   else if (sec.kind === 'changes') inner = S.changes.slice().reverse().map(c => `<div class="chg" data-text="${esc((c.date + ' ' + c.t).toLowerCase())}"><span class="d num">${esc(c.date)}</span><div>${md(c.t)}</div></div>`).join('');
   else inner = (bySec[sec.n] || []).map(([k, g]) => entHTML(k, g, false)).join('') || `<div class="empty">Nothing filed here yet.</div>`;
-  return `<section class="sec" id="sec-${sec.n}" data-n="${sec.n}"><div class="sh"><span class="sn num">${sec.n}</span><h2>${esc(sec.name)}</h2><span class="cnt"></span></div><p class="plain">${md(sec.plain)}</p>${inner}</section>`;
+  return `<section class="sec" id="sec-${sec.n}" data-n="${sec.n}"><div class="sh"><h2>${esc(sec.name)}</h2><span class="cnt"></span></div><p class="plain">${md(sec.plain)}</p>${inner}</section>`;
 }
 let mode = 'sec';
 function renderBody() {
