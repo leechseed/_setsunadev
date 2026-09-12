@@ -29,3 +29,9 @@ _tools/scan_sensitive.py
 
 # sit rep working dirs (BOLO 54) — transient
 _tools/sitrep/work/
+
+# formation working dirs (BOLO 51 phase 2) — transient
+_tools/oscarmike/work/
+_tools/bolostatus/work/
+_tools/creator-cases/work/
+_tools/loci/work/

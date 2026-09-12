@@ -1,431 +1,549 @@
 {
-  "bolo": {
-    "n": 51,
-    "title": "The logistics front — the standing audit, quality, and improvement function, and the token offload",
-    "trunk": "OPERATOR · feeds every trunk",
-    "issued": "2026-09-12",
-    "asof": "2026-09-12",
-    "s": "hot",
-    "status": "CAPTURED 9/12 · usage MEASURED (9/10 = half the week; agents = 35%) · the gearbox spun out as BOLO 52 · gear 1 in force · the offload picks are your call",
-    "decider": "HOTLINE ACTUAL",
-    "feeds": "SOP · STATE · BOLO · the pages (SITREP · DOPE SHEET · SOI) · DARKROOM · BVX-LEARN · LOCI · the project flow · the design system · the lattice · WARROOM",
-    "related": [
-      {
-        "n": 50,
-        "why": "the standards campaign: this BOLO pulls its standards from that register and files on its ladder"
-      },
-      {
-        "n": 25,
-        "why": "the project flow: the audit function is its clause 9 and 10"
-      },
-      {
-        "n": 47,
-        "why": "the dashboard consult: idea 6 (build-side diff) is the biggest token saver already named"
-      },
-      {
-        "n": 38,
-        "why": "the front page: every audit finding lands on the board"
-      },
-      {
-        "n": 52,
-        "why": "the gearbox: the agent ceiling and the gauge, spun out of this BOLO 9/12"
-      },
-      {
-        "n": 53,
-        "why": "the house's own development standard, tabled 9/12"
-      }
-    ],
-    "home": "BOLO.md · row 51",
-    "card": "none",
-    "version": "v0.2 · DOPE SHEET"
-  },
-  "mantra": [
-    {
-      "k": "speed",
-      "w": "Speed",
-      "line": "Logistics wins wars before the first shot. Every token not spent re-reading the board is a token spent on the front."
-    },
-    {
-      "k": "focus",
-      "w": "Focus",
-      "line": "One function, two verbs: audit and improve. It never sleeps and it never grows a second head."
-    },
-    {
-      "k": "boldness",
-      "w": "Boldness",
-      "line": "Adopt the audit standards for their shape, not their text. ISO 19011 is a pattern; the AAR is already in the house's blood."
-    }
+ "bolo": {
+  "n": 51,
+  "title": "The logistics front — the standing audit, quality, and improvement function, and the token offload",
+  "trunk": "OPERATOR · feeds every trunk",
+  "issued": "2026-09-12",
+  "asof": "2026-09-12",
+  "s": "hot",
+  "status": "CAPTURED 9/12 · usage MEASURED · the gearbox spun out (BOLO 52) · the formation ruled (BOLO 54) · 9/12 night: PERMISSION GRANTED, all eight offload phases BUILT as scripts + skills · the digest hook live · first live runs next session",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "SOP · STATE · BOLO · the pages (SITREP · DOPE SHEET · SOI) · DARKROOM · BVX-LEARN · LOCI · the project flow · the design system · the lattice · WARROOM",
+  "related": [
+   {
+    "n": 50,
+    "why": "the standards campaign: this BOLO pulls its standards from that register and files on its ladder"
+   },
+   {
+    "n": 25,
+    "why": "the project flow: the audit function is its clause 9 and 10"
+   },
+   {
+    "n": 47,
+    "why": "the dashboard consult: idea 6 (build-side diff) is the biggest token saver already named"
+   },
+   {
+    "n": 38,
+    "why": "the front page: every audit finding lands on the board"
+   },
+   {
+    "n": 52,
+    "why": "the gearbox: the agent ceiling and the gauge, spun out of this BOLO 9/12"
+   },
+   {
+    "n": 53,
+    "why": "the house's own development standard, tabled 9/12"
+   },
+   {
+    "n": 54,
+    "why": "the formation: the rule every phase here is built on"
+   }
   ],
-  "frago": {
-    "mission": "Stand up one standing audit-and-improvement function over every system in daily use, and move compute off the chat onto the harness, **in order to** make the whole operation cheaper per turn and better every week, so the fronts are supplied before the fight.",
-    "order": "**Pick from the offload list (a–f) and confirm the audit instrument.** Defaults run if silent.",
-    "default": "Silence: the SessionStart digest hook and the STATE history move go first (zero risk, biggest saving); the skills follow; AAR + PDCA on the 19011 programme pattern is the audit instrument, provisional.",
-    "calls": [
-      {
-        "q": "The offload picks",
-        "options": "a · SessionStart digest hook (a script prints the 40-line board opening, zero tokens to produce) · b · STATE's Moved sections to _LOG (STATE is 72 KB, most of it history) · c · the four SOP procedures as skills (sit rep · DOPE SHEET · FRAGO · Oscar Mike) · d · Explore and haiku subagents for every read and search · e · the design canvas for anything you iterate visually · f · a cloud routine for the weekly audit pass",
-        "default": "a + b + c + d now; e per case; f after the first manual audit",
-        "s": "open"
-      },
-      {
-        "q": "The audit instrument",
-        "options": "AAR + PDCA on the ISO 19011 audit-programme pattern (rec) · ISO 9001 clause 9/10 straight · CQI-2021 problem solving alone · DMAIC",
-        "default": "AAR + PDCA, 19011 pattern, provisional",
-        "s": "open"
-      },
-      {
-        "q": "The function's name",
-        "options": "the logistics front (spoken) · the G-4 (the staff section for logistics) · the IG (Inspector General, the Corps' audit office) · QA · bench on BOLO 48",
-        "default": "the logistics front, until benched",
-        "s": "open"
-      },
-      {
-        "q": "Cadence",
-        "options": "one audit per session close (inside Oscar Mike) · weekly · per BOLO close",
-        "default": "a one-line AAR inside every Oscar Mike; a full pass weekly",
-        "s": "open"
-      }
-    ]
+  "home": "BOLO.md · row 51",
+  "card": "none",
+  "version": "v0.4 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Logistics wins wars before the first shot. Every token not spent re-reading the board is a token spent on the front."
   },
-  "paragraphs": [
-    {
-      "id": "S",
-      "name": "Situation",
-      "kind": "list",
-      "plain": "What you asked, what the numbers say, and what the register holds for this.",
-      "strand": {
-        "last": "The standards campaign (BOLO 50) landed its register 9/11.",
-        "plan": "Open the logistics front: audit + improve, and stop paying tokens for compute the harness can do.",
-        "you": "You asked whether the visual tools cost more than hand-coding pages, and ordered the standards pulled.",
-        "next": "Your picks on the offload list."
-      },
-      "groups": [
-        {
-          "label": "The transmission · 9/12",
-          "items": [
-            {
-              "t": "**\"This is theater warfare with multiple fronts, and this is a big one: the logistics front.\"** Not a side quest. Standardize the auditing and continuous-improvement process for everything in daily use.",
-              "s": "ruled"
-            },
-            {
-              "t": "**The token worry:** Claude Code shipped tooling not yet in use; the fear is overspend; the want is compute pushed onto side programs instead of the chat.",
-              "s": "ruled"
-            },
-            {
-              "t": "**Standards in every BOLO from here.** Pull the applicable ones from BOLO 50's register; boresight them against the live systems.",
-              "s": "ruled"
-            }
-          ]
-        },
-        {
-          "label": "Where the tokens went · measured 9/12 from the local transcripts",
-          "items": [
-            {
-              "t": "**Last eight days ≈ 53.6M weighted** (201M cache-read · 18M cache-write · 2.1M output). **9/10 alone was half the week.**",
-              "s": "done"
-            },
-            {
-              "t": "**Performer and creator research ≈ 51%** (the 9/8 register merge · the 9/10 creator cases, 16 agents · the 9/10 performer list). **Sit rep and page sessions ≈ 41%.** Everything else 8%.",
-              "s": "done"
-            },
-            {
-              "t": "**41 subagents = 35% of the week, all but four on Fable.** Tool results of the whole week ≈ 2.3M tokens: the scrape volume was not the cost, the agent contexts were. Five creator-case files never landed; that slice bought nothing.",
-              "s": "done"
-            },
-            {
-              "t": "**Correction to the first read:** the 211 KB session open is a steady tax (~13%), not the spike. The spikes were agent fleets and long sessions.",
-              "s": "done"
-            },
-            {
-              "t": "**The gauge is saved:** `_tools/usage/usage_by_day.py N` · `usage_by_agent.py`. Zero tokens to rerun.",
-              "s": "done"
-            }
-          ]
-        },
-        {
-          "label": "The first read · 9/12 morning (corrected above)",
-          "items": [
-            {
-              "t": "**The session open is a steady tax, not the spike** (corrected after the transcript count). The reading order (SOP → STATE → BOLO → cache → PROJECTS) is 211 KB on disk, roughly 55,000 tokens read before the first order and re-read every turn: about 13% of the week. Still worth the digest.",
-              "s": "done"
-            },
-            {
-              "t": "**Pages are already cheap.** The DOPE SHEET and SITREP run template + JSON + build script; an update costs the JSON, not the HTML. The visual tools (the design canvas, Figma) do not make the first draft cheaper: the draft is still written by Claude. They make every tweak after it free, because you move things by hand instead of asking.",
-              "s": "done"
-            },
-            {
-              "t": "**Subagents do not cut the bill; they cut the context.** A read done by an Explore or haiku agent never enters this window, so every later turn stays light. Workflows spawn many agents and cost more, not less: audits only, like the 90-agent DARKROOM pass.",
-              "s": "done"
-            },
-            {
-              "t": "**Hooks cost nothing.** The autocommit Stop hook is the proof. A SessionStart hook can print the board opening from a script; a PostToolUse hook can rebuild a DOPE SHEET whenever its JSON changes.",
-              "s": "done"
-            }
-          ]
-        },
-        {
-          "label": "The standards pulled from the register · 9/12",
-          "items": [
-            {
-              "t": "**The quality core: ISO 9001:2015 clauses 9 and 10** (performance evaluation: monitoring, internal audit, management review · improvement: nonconformity, corrective action, continual improvement) with ISO/TS 9002 and the small-enterprise guide; **ISO 9004** for the self-assessment maturity grid. Paid text; the clause shape is public and is all the house needs.",
-              "s": "done"
-            },
-            {
-              "t": "**The audit standard: ISO 19011** (guidelines for auditing management systems: the audit programme, the principles, auditor competence). The one document that describes the function you just ordered. ASQ's free overview covers the shape.",
-              "s": "done"
-            },
-            {
-              "t": "**Software and systems: ISO/IEC/IEEE 12207 + 15288** (quality assurance, verification, validation, configuration management, measurement, decision management as named processes) · **ISO/IEC 25021** quality-measure elements (25010's quality model sits beside it) · **29148** requirements, a register gap.",
-              "s": "done"
-            },
-            {
-              "t": "**The AI layer: ISO/IEC 42001 + 42005 + 42006** (AI management system · impact assessment · auditing the AI management system). The operation runs on an AI; 42001's resource and performance-monitoring controls are the token question in standards language.",
-              "s": "done"
-            },
-            {
-              "t": "**Risk and problem solving: ISO 31000 + IEC 31010** (the risk register every BOLO brief already implies) · **AIAG CQI-2021** effective problem solving (the 8D root-cause method) · **PMBOK 8** quality and lessons-learned · **ISO 10015 / 10018** competence and engagement, which is BVX-LEARN's clause.",
-              "s": "done"
-            },
-            {
-              "t": "**The house-native instruments the register does not list, all free:** the **AAR** (After Action Review: what was planned, what happened, why, what to sustain, what to improve; the Army's and the Corps' own improvement standard) · **MCDP 7 Learning** (already in-house as MIL.07) · **PDCA** (Deming's cycle, the spine of every ISO management standard) · the Toyota **A3** · **DMAIC**. Recommendation: AAR + PDCA are the working instruments; the ISO texts give the vocabulary and the clause map, never bought.",
-              "s": "done"
-            },
-            {
-              "t": "**For every page the house publishes:** MIL-STD-1472H (in-house via the WATCH register) and **WCAG 2.x**, the biggest gap in the register.",
-              "s": "done"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "M",
-      "name": "Mission",
-      "kind": "mission",
-      "plain": "The task and the reason.",
-      "strand": {
-        "last": "The house built systems for a month without a function that checks them.",
-        "plan": "One function; audit and improve; the harness does the compute.",
-        "you": "You named the front and the fear.",
-        "next": "The picks."
-      },
-      "task": "Stand up one standing audit-and-improvement function over every system in daily use, and move compute off the chat onto the harness,",
-      "intent": "in order to make every turn cheaper and every system better each week, so the fronts are supplied before the fight.",
-      "spoken": "\"This is a theater warfare with multiple fronts, and this is a big one: the logistics front. We need to work on this to be efficient with it, so when we get out there and fuck them up we have everything ready.\"",
-      "endstate": [
-        "A session opens on a 40-line digest, not 211 KB of reading.",
-        "The four SOP procedures run as skills; the Stop hook and a SessionStart hook do the housekeeping.",
-        "Every system in daily use has an audit line (owner · standard · last audit · open findings) on one register, and every Oscar Mike ends with a one-line AAR.",
-        "Every BOLO from here carries a standards line."
-      ]
-    },
-    {
-      "id": "E",
-      "name": "Execution",
-      "kind": "phases",
-      "plain": "Offload first, because it pays for everything after. Then the audit register. Then the cadence.",
-      "strand": {
-        "last": "Phase 0 delivered in chat.",
-        "plan": "Six phases; the first three are cheap and mechanical.",
-        "you": "Phase 1 is one reply.",
-        "next": "Your picks."
-      },
-      "main_effort": "The offload. Every phase after it is cheaper once it lands.",
-      "phases": [
-        {
-          "n": 0,
-          "t": "**The consult** — where the tokens go, what the tools do, the standards pulled.",
-          "s": "done",
-          "when": "9/12"
-        },
-        {
-          "n": 1,
-          "t": "**The picks** — you choose from a–f and confirm the instrument.",
-          "s": "gated",
-          "when": "yours"
-        },
-        {
-          "n": 2,
-          "t": "**The offload build** — SessionStart digest script + hook · STATE's Moved sections to _LOG · the four skills · a PostToolUse rebuild hook for the boards.",
-          "s": "gated",
-          "when": "after 1"
-        },
-        {
-          "n": 3,
-          "t": "**The system boresight** — every system in daily use on one register: what it is · owner · the standard it answers to · last audit · open findings.",
-          "s": "gated",
-          "when": "after 2"
-        },
-        {
-          "n": 4,
-          "t": "**The first audit pass** — one AAR per system on the register; findings become BOLO rows or FRAGOs.",
-          "s": "gated",
-          "when": "after 3"
-        },
-        {
-          "n": 5,
-          "t": "**The cadence** — a one-line AAR inside every Oscar Mike; the full pass on the chosen interval, as a cloud routine when ready.",
-          "s": "gated",
-          "when": "after 4"
-        },
-        {
-          "n": 6,
-          "t": "**File on the ladder** — the audit standard and the register land on BOLO 50's house ladder once it is ruled.",
-          "s": "gated",
-          "when": "after BOLO 50"
-        }
-      ],
-      "coord": [
-        "Nothing here waits on BOLO 50's ladder except the filing (phase 6).",
-        "Derive from work done: the first audit register is built from STATE's Live table, not from a blank page.",
-        "Free sources only; ISO text is never bought for this.",
-        "Every finding lands as a BOLO row or a FRAGO, never as a loose note."
-      ],
-      "running": [
-        "Nothing."
-      ]
-    },
-    {
-      "id": "A",
-      "name": "Admin & Logistics",
-      "kind": "files",
-      "plain": "Where it lives and what it costs.",
-      "strand": {
-        "last": "The tasking and this sheet.",
-        "plan": "A hook, a script, four skill files, one register.",
-        "you": "Zero dollars.",
-        "next": "The picks."
-      },
-      "files": [
-        {
-          "path": "BOLO.md · row 51",
-          "what": "the tasking",
-          "s": "done"
-        },
-        {
-          "path": "_0.1_BVX_LEARN/LOCI/standards.register.md",
-          "what": "the source of the standards pulled (BOLO 50)",
-          "s": "done"
-        },
-        {
-          "path": ".claude/settings.local.json",
-          "what": "the hooks (Stop autocommit today; SessionStart + PostToolUse proposed)",
-          "s": "open"
-        },
-        {
-          "path": ".claude/skills/",
-          "what": "the four SOP procedures as skills (proposed)",
-          "s": "open"
-        },
-        {
-          "path": "05_OPERATIONS · the audit register",
-          "what": "one row per system in daily use (proposed; home rides on BOLO 50's filing call)",
-          "s": "open"
-        }
-      ],
-      "cost": [
-        {
-          "k": "the consult",
-          "v": "this session, in-chat"
-        },
-        {
-          "k": "the offload build",
-          "v": "one session; pays back on the next open"
-        },
-        {
-          "k": "the audit pass",
-          "v": "one Explore agent per system, haiku"
-        },
-        {
-          "k": "dollars",
-          "v": "0"
-        }
-      ]
-    },
-    {
-      "id": "C",
-      "name": "Command & Signal",
-      "kind": "list",
-      "plain": "Who calls what.",
-      "strand": {
-        "last": "Opened by transmission.",
-        "plan": "One decider; the harness executes.",
-        "you": "The picks, the instrument, the name, the cadence.",
-        "next": "Read the calls."
-      },
-      "groups": [
-        {
-          "label": "Who decides",
-          "items": [
-            {
-              "t": "**Papi** — the offload picks · the audit instrument · the name · the cadence. **Claude** — the scripts, the hooks, the skills, the register, every audit pass.",
-              "s": "open"
-            }
-          ]
-        },
-        {
-          "label": "The gate",
-          "items": [
-            {
-              "t": "**Defaults run if silent:** a + b + c + d land provisionally; e per case; f after the first manual pass. AAR + PDCA on the 19011 pattern.",
-              "s": "held"
-            }
-          ]
-        },
-        {
-          "label": "Prowords in play",
-          "items": [
-            {
-              "t": "**Oscar Mike** gains a one-line AAR when the cadence is ruled · **boresight** is the read on each system · **DOPE SHEET 51** is this page · [[bolo50|BOLO 50]] is the parent register.",
-              "s": "open"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "L",
-      "name": "Log",
-      "kind": "log",
-      "plain": "Every transmission.",
-      "strand": {
-        "last": "Two entries.",
-        "plan": "One per transmission.",
-        "you": "One is yours.",
-        "next": "The picks."
-      },
-      "entries": [
-        {
-          "when": "9/12",
-          "who": "Papi",
-          "t": "Open a BOLO: standardize the audit and continuous-improvement process; the token offload onto Claude Code's new tooling; is hand-coded HTML costlier than the visual tools; pull the applicable standards from the standards BOLO; the logistics front; \"how copy.\""
-        },
-        {
-          "when": "9/12",
-          "who": "Claude",
-          "t": "BOLO 51 captured; the reading order measured (211 KB); the standards pulled from the BOLO 50 register; the offload list a–f drafted; this sheet built. STATE blocked row 19."
-        },
-        {
-          "when": "9/12",
-          "who": "Papi",
-          "t": "\"What actually took the most?\" Was it the performer scrape; worried about the weekly limit and a two-day lockout."
-        },
-        {
-          "when": "9/12",
-          "who": "Claude",
-          "t": "Usage measured from the local transcripts; the numbers above. Cuts ranked: Haiku/Sonnet agents · scripts fetch, agents read · fleets capped · one BOLO per session · the digest."
-        },
-        {
-          "when": "9/12",
-          "who": "Papi",
-          "t": "Cap agent teams at three on a doubling scale: gears 1–5, never sixteen. Name the system, put it on the SOI. Table the dev-process standard but BOLO it. SOI: define proword, drop the number. A lighter viewer than Firefox."
-        },
-        {
-          "when": "9/12",
-          "who": "Claude",
-          "t": "BOLO 52 the gearbox · BOLO 53 tabled · SOP §0/§1/§5 rows · SOI edition 2026-09-12-1 (proword defined, numbers dropped) · Edge app-mode launcher in _tools/pages/."
-        }
-      ]
-    }
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One function, two verbs: audit and improve. It never sleeps and it never grows a second head."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Adopt the audit standards for their shape, not their text. ISO 19011 is a pattern; the AAR is already in the house's blood."
+  }
+ ],
+ "frago": {
+  "mission": "Stand up one standing audit-and-improvement function over every system in daily use, and move compute off the chat onto the harness, **in order to** make the whole operation cheaper per turn and better every week, so the fronts are supplied before the fight.",
+  "order": "**Open the next session and read the digest instead of the five files; then say \"sit rep\" and \"Oscar Mike\" once each.** Both run the formation for the first time; the findings decide what gets tuned.",
+  "default": "Silence: every phase stands as built; the digest hook, the four skills, collect, rtb, and bolo add are the house procedures from here; the audit instrument stays AAR + PDCA on the 19011 pattern, one AAR line per Oscar Mike.",
+  "calls": [
+   {
+    "q": "The offload picks",
+    "options": "a · SessionStart digest hook (a script prints the 40-line board opening, zero tokens to produce) · b · STATE's Moved sections to _LOG (STATE is 72 KB, most of it history) · c · the four SOP procedures as skills (sit rep · DOPE SHEET · FRAGO · Oscar Mike) · d · Explore and haiku subagents for every read and search · e · the design canvas for anything you iterate visually · f · a cloud routine for the weekly audit pass",
+    "default": "a + b + c + d now; e per case; f after the first manual audit",
+    "s": "ruled",
+    "ruling": "RULED 9/12 night, Papi: \"permission granted, do all of it.\" All eight phases built the same session; a through d landed, e per case, f after the first manual audit."
+   },
+   {
+    "q": "The audit instrument",
+    "options": "AAR + PDCA on the ISO 19011 audit-programme pattern (rec) · ISO 9001 clause 9/10 straight · CQI-2021 problem solving alone · DMAIC",
+    "default": "AAR + PDCA, 19011 pattern, provisional",
+    "s": "open"
+   },
+   {
+    "q": "The function's name",
+    "options": "the logistics front (spoken) · the G-4 (the staff section for logistics) · the IG (Inspector General, the Corps' audit office) · QA · bench on BOLO 48",
+    "default": "the logistics front, until benched",
+    "s": "open"
+   },
+   {
+    "q": "Cadence",
+    "options": "one audit per session close (inside Oscar Mike) · weekly · per BOLO close",
+    "default": "a one-line AAR inside every Oscar Mike; a full pass weekly",
+    "s": "open"
+   },
+   {
+    "q": "The force order for cross-session republishes",
+    "options": "rule a standing `force` for any sheet built from repo JSON (the JSON is the source of truth; nothing is ever saved from inside a page) · keep the gate and republish only from the session that built the sheet · ask each time",
+    "default": "republish only from the building session until you rule; the FRAGO is still recorded locally and in the log",
+    "s": "open"
+   }
   ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What you asked, what the numbers say, and what the register holds for this.",
+   "strand": {
+    "last": "The standards campaign (BOLO 50) landed its register 9/11.",
+    "plan": "Open the logistics front: audit + improve, and stop paying tokens for compute the harness can do.",
+    "you": "You asked whether the visual tools cost more than hand-coding pages, and ordered the standards pulled.",
+    "next": "Nothing owed from you on the offload; the audit instrument runs provisionally."
+   },
+   "groups": [
+    {
+     "label": "The transmission · 9/12",
+     "items": [
+      {
+       "t": "**\"This is theater warfare with multiple fronts, and this is a big one: the logistics front.\"** Not a side quest. Standardize the auditing and continuous-improvement process for everything in daily use.",
+       "s": "ruled"
+      },
+      {
+       "t": "**The token worry:** Claude Code shipped tooling not yet in use; the fear is overspend; the want is compute pushed onto side programs instead of the chat.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Standards in every BOLO from here.** Pull the applicable ones from BOLO 50's register; boresight them against the live systems.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Where the tokens went · measured 9/12 from the local transcripts",
+     "items": [
+      {
+       "t": "**Last eight days ≈ 53.6M weighted** (201M cache-read · 18M cache-write · 2.1M output). **9/10 alone was half the week.**",
+       "s": "done"
+      },
+      {
+       "t": "**Performer and creator research ≈ 51%** (the 9/8 register merge · the 9/10 creator cases, 16 agents · the 9/10 performer list). **Sit rep and page sessions ≈ 41%.** Everything else 8%.",
+       "s": "done"
+      },
+      {
+       "t": "**41 subagents = 35% of the week, all but four on Fable.** Tool results of the whole week ≈ 2.3M tokens: the scrape volume was not the cost, the agent contexts were. Five creator-case files never landed; that slice bought nothing.",
+       "s": "done"
+      },
+      {
+       "t": "**Correction to the first read:** the 211 KB session open is a steady tax (~13%), not the spike. The spikes were agent fleets and long sessions.",
+       "s": "done"
+      },
+      {
+       "t": "**The gauge is saved:** `_tools/usage/usage_by_day.py N` · `usage_by_agent.py`. Zero tokens to rerun.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "The first read · 9/12 morning (corrected above)",
+     "items": [
+      {
+       "t": "**The session open is a steady tax, not the spike** (corrected after the transcript count). The reading order (SOP → STATE → BOLO → cache → PROJECTS) is 211 KB on disk, roughly 55,000 tokens read before the first order and re-read every turn: about 13% of the week. Still worth the digest.",
+       "s": "done"
+      },
+      {
+       "t": "**Pages are already cheap.** The DOPE SHEET and SITREP run template + JSON + build script; an update costs the JSON, not the HTML. The visual tools (the design canvas, Figma) do not make the first draft cheaper: the draft is still written by Claude. They make every tweak after it free, because you move things by hand instead of asking.",
+       "s": "done"
+      },
+      {
+       "t": "**Subagents do not cut the bill; they cut the context.** A read done by an Explore or haiku agent never enters this window, so every later turn stays light. Workflows spawn many agents and cost more, not less: audits only, like the 90-agent DARKROOM pass.",
+       "s": "done"
+      },
+      {
+       "t": "**Hooks cost nothing.** The autocommit Stop hook is the proof. A SessionStart hook can print the board opening from a script; a PostToolUse hook can rebuild a DOPE SHEET whenever its JSON changes.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "The standards pulled from the register · 9/12",
+     "items": [
+      {
+       "t": "**The quality core: ISO 9001:2015 clauses 9 and 10** (performance evaluation: monitoring, internal audit, management review · improvement: nonconformity, corrective action, continual improvement) with ISO/TS 9002 and the small-enterprise guide; **ISO 9004** for the self-assessment maturity grid. Paid text; the clause shape is public and is all the house needs.",
+       "s": "done"
+      },
+      {
+       "t": "**The audit standard: ISO 19011** (guidelines for auditing management systems: the audit programme, the principles, auditor competence). The one document that describes the function you just ordered. ASQ's free overview covers the shape.",
+       "s": "done"
+      },
+      {
+       "t": "**Software and systems: ISO/IEC/IEEE 12207 + 15288** (quality assurance, verification, validation, configuration management, measurement, decision management as named processes) · **ISO/IEC 25021** quality-measure elements (25010's quality model sits beside it) · **29148** requirements, a register gap.",
+       "s": "done"
+      },
+      {
+       "t": "**The AI layer: ISO/IEC 42001 + 42005 + 42006** (AI management system · impact assessment · auditing the AI management system). The operation runs on an AI; 42001's resource and performance-monitoring controls are the token question in standards language.",
+       "s": "done"
+      },
+      {
+       "t": "**Risk and problem solving: ISO 31000 + IEC 31010** (the risk register every BOLO brief already implies) · **AIAG CQI-2021** effective problem solving (the 8D root-cause method) · **PMBOK 8** quality and lessons-learned · **ISO 10015 / 10018** competence and engagement, which is BVX-LEARN's clause.",
+       "s": "done"
+      },
+      {
+       "t": "**The house-native instruments the register does not list, all free:** the **AAR** (After Action Review: what was planned, what happened, why, what to sustain, what to improve; the Army's and the Corps' own improvement standard) · **MCDP 7 Learning** (already in-house as MIL.07) · **PDCA** (Deming's cycle, the spine of every ISO management standard) · the Toyota **A3** · **DMAIC**. Recommendation: AAR + PDCA are the working instruments; the ISO texts give the vocabulary and the clause map, never bought.",
+       "s": "done"
+      },
+      {
+       "t": "**For every page the house publishes:** MIL-STD-1472H (in-house via the WATCH register) and **WCAG 2.x**, the biggest gap in the register.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "The cross-session gate · measured 9/12",
+     "items": [
+      {
+       "t": "**A republish from a session that did not build the sheet is refused until the live page is fetched into context (~80 KB, about 65k tokens), and a second refusal can demand the fetch again.** Sheet 51 v0.3 hit it: built locally, republish owed. The FRAGO itself costs about 1 KB. This is the largest single token cost the offload build found, and it is the tool's, not the house's.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "The task and the reason.",
+   "strand": {
+    "last": "The house built systems for a month without a function that checks them.",
+    "plan": "One function; audit and improve; the harness does the compute.",
+    "you": "You named the front and the fear.",
+    "next": "The picks."
+   },
+   "task": "Stand up one standing audit-and-improvement function over every system in daily use, and move compute off the chat onto the harness,",
+   "intent": "in order to make every turn cheaper and every system better each week, so the fronts are supplied before the fight.",
+   "spoken": "\"This is a theater warfare with multiple fronts, and this is a big one: the logistics front. We need to work on this to be efficient with it, so when we get out there and fuck them up we have everything ready.\"",
+   "endstate": [
+    "A session opens on a 40-line digest, not 211 KB of reading.",
+    "The four SOP procedures run as skills; the Stop hook and a SessionStart hook do the housekeeping.",
+    "Every system in daily use has an audit line (owner · standard · last audit · open findings) on one register, and every Oscar Mike ends with a one-line AAR.",
+    "Every BOLO from here carries a standards line."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Offload first, because it pays for everything after. Then the audit register. Then the cadence.",
+   "strand": {
+    "last": "The offload build landed in one night on Papi's \"permission granted, do all of it.\"",
+    "plan": "Six phases; the first three are cheap and mechanical.",
+    "you": "You granted permission for all eight; the runs that are yours (creator cases, RTB rulings) stay held.",
+    "next": "Open the next session, read the digest, say \"sit rep\", then \"Oscar Mike\"; the first live runs tune the briefs."
+   },
+   "main_effort": "The offload. Every phase after it is cheaper once it lands.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**The consult** — where the tokens go, what the tools do, the standards pulled.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 1,
+     "t": "**The picks** — you choose from a–f and confirm the instrument.",
+     "s": "gated",
+     "when": "yours"
+    },
+    {
+     "n": 2,
+     "t": "**The offload build — RULED + BUILT 9/12 night on \"permission granted, do all of it\"**, as eight sub-phases under the formation (BOLO 54): every one a script for the zero-token half, a haiku or sonnet specialist only where reading needs judgment, a script reviewer at the fan-in, the main line writing one thing.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 3,
+     "t": "**The system boresight** — every system in daily use on one register: what it is · owner · the standard it answers to · last audit · open findings. Now cheap: `collect.py` and the digest give the reads.",
+     "s": "gated",
+     "when": "after the first live runs"
+    },
+    {
+     "n": 4,
+     "t": "**The first audit pass** — one AAR per system on the register; findings become BOLO rows or FRAGOs.",
+     "s": "gated",
+     "when": "after 3"
+    },
+    {
+     "n": 5,
+     "t": "**The cadence** — a one-line AAR inside every Oscar Mike; the full pass on the chosen interval, as a cloud routine when ready.",
+     "s": "gated",
+     "when": "after 4"
+    },
+    {
+     "n": 6,
+     "t": "**File on the ladder** — the audit standard and the register land on BOLO 50's house ladder once it is ruled.",
+     "s": "gated",
+     "when": "after BOLO 50"
+    },
+    {
+     "n": 21,
+     "t": "**2.1 · Session open** — `_tools/sitrep/digest.py` prints ~40 lines (rack · Blocked rows · newest BOLOs · PMCS red · box · tree · main effort · sizes on disk); wired as a SessionStart hook in `.claude/settings.local.json`. The five files open on demand only.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 22,
+     "t": "**2.2 · Oscar Mike** — `_tools/oscarmike/close.py` pulls the session's spoken turns from the local transcript and writes the NOTE brief (haiku drafts the Ready Rack note); `journal.py` appends the day's journal from the note; the main line rules the note and writes STATE's Moved bullet. Skill: `oscar-mike`.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 23,
+     "t": "**2.3 · FRAGO** — `_tools/bolostatus/frago.py N patch.json --build`: a ~1 KB patch (status · order · calls · phases · files · items · strand · log · related) merged onto the sheet, version bumped, built. No agent. This entry is its first live use. Skill: `frago`.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 24,
+     "t": "**2.4 · DOPE SHEET** — `_tools/bolostatus/prep.py N` gathers the row, the rows it names, STATE and note mentions, and the schema; SHEET (sonnet) drafts S · E · A · L; the main line writes M · C · the order and calls; `check.py N --promote` reviews; `build.py N`; publish. Skill: `dope-sheet`.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 25,
+     "t": "**2.5 · Creator research** — `_tools/creator-cases/fetch.py <slug> --fansly --x --ph --url`: script fetch (Fansly API · fxtwitter · Wayback via curl) into raw/ + manifest; EXTRACT (haiku) → facts.json; WRITE (sonnet) → the case file per case-brief.md; `check.py <slug>` reviews (ten sections · TTP · sources · privacy tripwires). **The runs stay HELD (Papi, 9/11); the formation is built.**",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 26,
+     "t": "**2.6 · RTB** — `_tools/oscarmike/rtb_prep.py` compiles the 20 open cards with their resume lines; DISPO (haiku) proposes one disposition line per card; the main line rules the lines. Skill: `rtb`. **The rulings are Papi's; not fired.**",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 27,
+     "t": "**2.7 · Collect (LOCI + the standards register)** — `_tools/loci/collect.py <locus.md> --limit --batch`: script fetch of every link to text + manifest; EXTRACT-k (haiku) per batch → extract.k.json; WRITE (sonnet) → the register; `check.py <name> <register.md>` proves every fetched link is covered. Skill: `collect`.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 28,
+     "t": "**2.8 · BOLO add** — `_tools/bolo/add.py \"title\" \"body\" --trunk --status`: next number, date, header stamp, glossary stub, the DOPE SHEET prep command printed. The wording stays the main line's.",
+     "s": "done",
+     "when": "9/12"
+    }
+   ],
+   "coord": [
+    "Nothing here waits on BOLO 50's ladder except the filing (phase 6).",
+    "Derive from work done: the first audit register is built from STATE's Live table, not from a blank page.",
+    "Free sources only; ISO text is never bought for this.",
+    "Every finding lands as a BOLO row or a FRAGO, never as a loose note."
+   ],
+   "running": [
+    "Nothing."
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where it lives and what it costs.",
+   "strand": {
+    "last": "The tasking and this sheet.",
+    "plan": "A hook, a script, four skill files, one register.",
+    "you": "Zero dollars.",
+    "next": "The picks."
+   },
+   "files": [
+    {
+     "path": "BOLO.md · row 51",
+     "what": "the tasking",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/LOCI/standards.register.md",
+     "what": "the source of the standards pulled (BOLO 50)",
+     "s": "done"
+    },
+    {
+     "path": ".claude/settings.local.json",
+     "what": "Stop autocommit + SessionStart digest hook",
+     "s": "done"
+    },
+    {
+     "path": ".claude/skills/",
+     "what": "the four SOP procedures as skills (proposed)",
+     "s": "open"
+    },
+    {
+     "path": "05_OPERATIONS · the audit register",
+     "what": "one row per system in daily use (proposed; home rides on BOLO 50's filing call)",
+     "s": "open"
+    },
+    {
+     "path": "_tools/sitrep/digest.py",
+     "what": "2.1 the session-open digest (SessionStart hook)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/oscarmike/ (close.py · journal.py · rtb_prep.py)",
+     "what": "2.2 + 2.6 the close-out and the RTB prep",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/ (frago.py · prep.py · check.py)",
+     "what": "2.3 + 2.4 the FRAGO merge and the DOPE SHEET formation",
+     "s": "done"
+    },
+    {
+     "path": "_tools/creator-cases/ (fetch.py · check.py)",
+     "what": "2.5 the research formation, runs held",
+     "s": "done"
+    },
+    {
+     "path": "_tools/loci/ (collect.py · check.py)",
+     "what": "2.7 the collect formation",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolo/add.py",
+     "what": "2.8 BOLO capture housekeeping",
+     "s": "done"
+    },
+    {
+     "path": ".claude/skills/ (sitrep · oscar-mike · dope-sheet · frago · collect · rtb)",
+     "what": "the six procedures as skills (pick c, all four and two more)",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "the consult",
+     "v": "this session, in-chat"
+    },
+    {
+     "k": "the offload build",
+     "v": "one session; pays back on the next open"
+    },
+    {
+     "k": "the audit pass",
+     "v": "one Explore agent per system, haiku"
+    },
+    {
+     "k": "dollars",
+     "v": "0"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what.",
+   "strand": {
+    "last": "Opened by transmission.",
+    "plan": "One decider; the harness executes.",
+    "you": "The picks, the instrument, the name, the cadence.",
+    "next": "Read the calls."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**Papi** — the offload picks · the audit instrument · the name · the cadence. **Claude** — the scripts, the hooks, the skills, the register, every audit pass.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Defaults run if silent:** a + b + c + d land provisionally; e per case; f after the first manual pass. AAR + PDCA on the 19011 pattern.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "Prowords in play",
+     "items": [
+      {
+       "t": "**Oscar Mike** gains a one-line AAR when the cadence is ruled · **boresight** is the read on each system · **DOPE SHEET 51** is this page · [[bolo50|BOLO 50]] is the parent register.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission.",
+   "strand": {
+    "last": "Two entries.",
+    "plan": "One per transmission.",
+    "you": "One is yours.",
+    "next": "The picks."
+   },
+   "entries": [
+    {
+     "when": "9/12",
+     "who": "Papi",
+     "t": "Open a BOLO: standardize the audit and continuous-improvement process; the token offload onto Claude Code's new tooling; is hand-coded HTML costlier than the visual tools; pull the applicable standards from the standards BOLO; the logistics front; \"how copy.\""
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "BOLO 51 captured; the reading order measured (211 KB); the standards pulled from the BOLO 50 register; the offload list a–f drafted; this sheet built. STATE blocked row 19."
+    },
+    {
+     "when": "9/12",
+     "who": "Papi",
+     "t": "\"What actually took the most?\" Was it the performer scrape; worried about the weekly limit and a two-day lockout."
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "Usage measured from the local transcripts; the numbers above. Cuts ranked: Haiku/Sonnet agents · scripts fetch, agents read · fleets capped · one BOLO per session · the digest."
+    },
+    {
+     "when": "9/12",
+     "who": "Papi",
+     "t": "Cap agent teams at three on a doubling scale: gears 1–5, never sixteen. Name the system, put it on the SOI. Table the dev-process standard but BOLO it. SOI: define proword, drop the number. A lighter viewer than Firefox."
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "BOLO 52 the gearbox · BOLO 53 tabled · SOP §0/§1/§5 rows · SOI edition 2026-09-12-1 (proword defined, numbers dropped) · Edge app-mode launcher in _tools/pages/."
+    },
+    {
+     "when": "9/12",
+     "who": "Papi",
+     "t": "\"Identify other processes that we use frequently that we can optimize just like we did this.\" Eight named and ranked; then: \"permission granted, do all of it.\""
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "All eight built as BOLO 51 phases 2.1–2.8 under the formation (BOLO 54): digest hook · Oscar Mike prep + journal · FRAGO script (this entry is its first use) · DOPE SHEET prep + check · creator fetch + check (runs held) · RTB prep · collect + check · bolo add. Six skills. Dry runs on every script."
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "FRAGO 51 v0.3 built locally by frago.py; the republish to the standing URL was refused by the cross-session gate twice (about 65k tokens spent on the first read). Republish owed from the next session, or on Papi's force order. Call added."
+    }
+   ]
+  }
+ ]
 }
