@@ -26,3 +26,6 @@ _tools/scan_sensitive.py
 /freeones.html
 /iafd.html
 /sintabu.html
+
+# sit rep working dirs (BOLO 54) — transient
+_tools/sitrep/work/

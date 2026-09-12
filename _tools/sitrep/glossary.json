@@ -687,5 +687,18 @@
   "k": "item",
   "d": "Tabled 9/12: the house's own standard for how it builds, the boresight and how-copy back-and-forth read as a development life cycle. Captured, not started.",
   "w": "BOLO.md #53"
+ },
+ "bolo54": {
+  "t": "BOLO 54",
+  "k": "item",
+  "d": "The sit rep formation: orchestrator, independent specialists, one reviewer at the fan-in. Papi's doctrine 9/12 (Amdahl · Brooks · context is the cost unit · review at the merge). Built the same turn: prep.py · assemble.py · the sitrep skill. The main line's read drops from ~211 KB to ~3 KB.",
+  "w": "BOLO.md #54 · DOPE SHEET 54 · .claude/skills/sitrep/"
+ },
+ "formation": {
+  "t": "the formation",
+  "k": "system",
+  "st": "provisional",
+  "d": "How agents are laid out on any multi-agent job (BOLO 54, 9/12): hub and spoke. The main line decomposes into pieces that share no state; specialists run independently on disjoint inputs; they sync only at named handoff points; one reviewer, a script where it can be, sits at the fan-in. No peer cross-checks. Rides the [[gearbox|gearbox]]: the gear says how many, the formation says how they stand.",
+  "w": "SOP.md §1 (the gear row) · BOLO 54"
  }
 }
