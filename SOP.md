@@ -190,6 +190,7 @@ A session that answers "sit rep" without all five has not answered it.
 | index · the index · "E N D EX" · end X | **ENDEX** — the session close-out (cache note · STATE · journal); "Oscar Mike" spoken at session end reads the same |
 | Fargo · Frago (spoken twice) | **FRAGO** — the update onto a DOPE SHEET |
 | Oscar Charlie · Oscar, Mike, and Oscar Charlie | the pair **Oscar Mike** (park) · **Charlie Mike** (resume); ENDEX is the third, the close-out |
+| formio tango bravo · our TB · are TB | **RTB** — Romeo Tango Bravo, return to base |
 | abort abort abort · abort the … | **ABORT** — the cancel word (RULED 9/11); the correction follows |
 | hotline · hot line · word from hotline | **HOTLINE** — the operator's callsign; formal **HOTLINE ACTUAL** (RULED 9/11) |
 | dope sheet · dope on · "the dope" | **DOPE SHEET** — a BOLO's standing status page (RULED 9/11) |
