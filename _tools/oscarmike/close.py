@@ -79,15 +79,18 @@ def main():
             "commits_this_session": log.splitlines(), "dirty": git("status", "--porcelain").splitlines()}
     write(os.path.join(wd, "meta.json"), json.dumps(meta, ensure_ascii=False, indent=1))
 
-    # the note's target name: today's note, or -2 / -3 if today already has one that closed
+    # the note's target name: an open note anywhere in the rack (a session that spans midnight keeps its start-date note),
+    # else today's note, or -2 / -3 if today already closed one. `--note <file>` overrides.
     cache = os.path.join(ROOT, "_CACHE")
-    existing = sorted(f for f in os.listdir(cache) if f.startswith(date) and f.endswith(".session.md"))
-    target = f"{date}.session.md"
-    for f in existing:
-        if "Oscar Mike." in io.open(os.path.join(cache, f), encoding="utf-8").read()[-200:]:
-            n = len(existing) + 1; target = f"{date}-{n}.session.md"
-        else:
-            target = f  # an open note from this same session: finalize it
+    all_notes = sorted(f for f in os.listdir(cache) if f.endswith(".session.md"))
+    existing = [f for f in all_notes if f.startswith(date)]
+    open_notes = [f for f in all_notes if "Oscar Mike." not in io.open(os.path.join(cache, f), encoding="utf-8").read()[-200:]]
+    if "--note" in sys.argv:
+        target = os.path.basename(sys.argv[sys.argv.index("--note") + 1]); existing = [target]
+    elif open_notes:
+        target = open_notes[-1]; existing = [target]  # finalize the newest open note
+    else:
+        target = f"{date}.session.md" if not existing else f"{date}-{len(existing) + 1}.session.md"
     example = sorted(glob.glob(os.path.join(ROOT, "_LOG", "*.session.md")) + glob.glob(os.path.join(cache, "*.session.md")), key=os.path.getmtime)
     example = rel(example[-1]) if example else "(none)"
     brief = f"""You are NOTE, the Ready Rack specialist for the close-out of {date}. Model: haiku.
