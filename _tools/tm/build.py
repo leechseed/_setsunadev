@@ -542,7 +542,8 @@ def main():
                 prose_words += len(bl["text"].split())
             elif bl["type"] in ("ol", "ul"):
                 prose_words += sum(len(it.split()) for it in bl["items"])
-        if prose_words >= 12 and 'class="t"' not in html_out:
+        is_contents = "contents" in strip_md(sec["name"]).lower()  # a table of contents is links, nowhere to hang a term
+        if prose_words >= 12 and 'class="t"' not in html_out and not is_contents:
             zero_term_secs.append(sec["name"])
 
         sections_out.append({

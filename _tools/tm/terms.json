@@ -1,627 +1,767 @@
 {
-  "BVX.0089": {
-    "t": "Dramatica",
-    "k": "book",
-    "d": "Phillips & Huntley's [[storyform|Storyform]] engine: a story as one [[story-mind|Story Mind]] examining a problem through four [[throughlines|Throughlines]]. The Command's RULED story spine; every rival plot model in the library maps onto it as a lens.",
-    "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0089.md",
-    "src": "BVX.0089"
-  },
-  "BVX.0175": {
-    "t": "McKee (Story)",
-    "k": "book",
-    "d": "Robert McKee's *Story*: the scene-level engine beneath Dramatica's signpost floor. Source of [[the-gap|the Gap]], the [[value-turn|value turn]], and the [[controlling-idea|Controlling Idea]].",
-    "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0175.md",
-    "src": "BVX.0175"
-  },
-  "BVX.0236": {
-    "t": "Coyne (Story Grid)",
-    "k": "book",
-    "d": "Shawn Coyne's editorial X-ray: the [[five-commandments|Five Commandments]] recurring fractally at every unit from beat to global story, plus the [[foolscap|Foolscap]] intake and the genre [[genre-clover|five-leaf clover]].",
-    "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0236.md",
-    "src": "BVX.0236"
-  },
-  "BVX.0193": {
-    "t": "Truby (Anatomy of Story)",
-    "k": "book",
-    "d": "John Truby's organic-body model: a story grows from one [[designing-principle|designing principle]] through the [[twenty-two-steps|22 steps]] to a hero's [[self-revelation|self-revelation]].",
-    "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0193.md",
-    "src": "BVX.0193"
-  },
-  "BVX.0163": {
-    "t": "Snyder (Save the Cat!)",
-    "k": "book",
-    "d": "Blake Snyder's page-keyed commercial template: the [[beat-sheet|Beat Sheet]] (BS2), 15 fixed beats over ~110 pages, laid out on [[the-board|the Board]].",
-    "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0163.md",
-    "src": "BVX.0163"
-  },
-  "grand-argument-story": {
-    "t": "the Grand Argument",
-    "k": "source-term",
-    "d": "A story conceptually complete: every approach to one problem tried through four [[throughlines|throughlines]] until one is proven best. Dramatica's scope claim, not every story qualifies ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "story-mind": {
-    "t": "the Story Mind",
-    "k": "source-term",
-    "d": "The premise that a complete story models one mind's problem-solving process, holistic not sequential. The generative claim under the [[grand-argument-story|Grand Argument]] ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "storyform": {
-    "t": "the Storyform",
-    "k": "source-term",
-    "d": "The complete, locked blueprint of structural and dynamic answers, independent of the specific events that dramatize it. Two unrelated plots can share one storyform ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "throughlines": {
-    "t": "the Four Throughlines",
-    "k": "source-term",
-    "d": "Overall Story (they), Main Character (I), Impact Character (you), Relationship Story (we): four seats around one problem, each holding a different Class. No rival model has all four ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "signpost": {
-    "t": "Signpost",
-    "k": "source-term",
-    "d": "A fixed structural checkpoint, one per throughline, four per form, sixteen across a complete storyform. A [[journey|Journey]] carries a throughline between two signposts ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "journey": {
-    "t": "Journey",
-    "k": "source-term",
-    "d": "The transition between two [[signpost|Signposts]] on one throughline; three journeys per throughline complete the four-signpost chain ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "driver-dynamic": {
-    "t": "Driver",
-    "k": "source-term",
-    "d": "Action or Decision: which kind of event precipitates a turn. A story's driver matches at both the inciting event and the resolving event ([[BVX.0089]]). OXO's ruled story-level Driver is Action.",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "limit-dynamic": {
-    "t": "Limit",
-    "k": "source-term",
-    "d": "Timelock or Optionlock: whether tension comes from a closing clock or a shrinking set of options ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "outcome-dynamic": {
-    "t": "Outcome",
-    "k": "source-term",
-    "d": "Success or Failure, measured objectively against the Overall Story goal, independent of [[judgment-dynamic|Judgment]]. OXO is ruled Failure ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "judgment-dynamic": {
-    "t": "Judgment",
-    "k": "source-term",
-    "d": "Good or Bad, measured subjectively against the Main Character's personal fulfillment. Combines with [[outcome-dynamic|Outcome]] into one of four endings. OXO is ruled Good ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "crucial-element": {
-    "t": "the Crucial Element",
-    "k": "source-term",
-    "d": "The single Element the Main Character shares with the Overall Story, the hinge between the objective and subjective arguments. Structural position, not plot centrality ([[BVX.0089]]).",
-    "w": "BVX.0089",
-    "src": "BVX.0089"
-  },
-  "the-gap": {
-    "t": "the Gap",
-    "k": "source-term",
-    "d": "McKee's engine: a minimal action provokes a world reaction bigger than expected, and the gap between what was expected and what was necessary is where the [[value-turn|turn]] lives. It does not close, it reopens bigger ([[BVX.0175]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "value-turn": {
-    "t": "value turn",
-    "k": "source-term",
-    "d": "A value-charged condition flips polarity, plus to minus or the reverse. No turn, no scene. The scene-level minimum, R2 floor of the [[ladder|scale ladder]] ([[BVX.0175]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "controlling-idea": {
-    "t": "Controlling Idea",
-    "k": "source-term",
-    "d": "One sentence, Value plus Cause, describing how and why life changes from the story's beginning condition to its end. Provable backward from the [[climax|Climax]] ([[BVX.0175]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "turning-point": {
-    "t": "Turning Point",
-    "k": "source-term",
-    "d": "A scene's reversal, producing surprise, curiosity, insight and new direction. Coyne's taxonomy splits it into action or revelation ([[BVX.0175]], [[BVX.0236]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "crisis": {
-    "t": "Crisis",
-    "k": "source-term",
-    "d": "The Obligatory Scene: an irreconcilable-goods decision at maximum pressure, no second chance. Never an easy choice ([[BVX.0175]], [[BVX.0236]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "climax": {
-    "t": "Climax",
-    "k": "source-term",
-    "d": "A value swing at maximum charge, absolute and irreversible, with or without irony. The protagonist's choice must happen on stage ([[BVX.0175]], [[BVX.0236]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "resolution": {
-    "t": "Resolution",
-    "k": "source-term",
-    "d": "The unit's close: subplot cleanup, spread of effects, or a courtesy to the audience. Must state what the [[climax|Climax]] means, not recap what happened ([[BVX.0175]], [[BVX.0236]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "inciting-incident": {
-    "t": "Inciting Incident",
-    "k": "source-term",
-    "d": "The event that radically upsets life's balance, causal or coincidental, opening the chain the [[five-commandments|Five Commandments]] complete ([[BVX.0175]], [[BVX.0236]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "progressive-complications": {
-    "t": "Progressive Complications",
-    "k": "source-term",
-    "d": "The Gap reopening at increasing risk, passing points of no return; complications must trend up, never retreat to a spent magnitude ([[BVX.0175]]).",
-    "w": "BVX.0175",
-    "src": "BVX.0175"
-  },
-  "five-commandments": {
-    "t": "the Five Commandments",
-    "k": "source-term",
-    "d": "[[inciting-incident|Inciting Incident]] → Progressive Complication → [[crisis|Crisis]] → [[climax|Climax]] → [[resolution|Resolution]]: every unit of story from beat to global story carries all five, fractally ([[BVX.0236]]).",
-    "w": "BVX.0236",
-    "src": "BVX.0236"
-  },
-  "foolscap": {
-    "t": "the Foolscap",
-    "k": "source-term",
-    "d": "A one-page diagnostic: Genre, conventions and obligatory scenes, point of view, objects of desire, controlling idea, and the Hook/Build/Payoff arc. Six questions, one screen ([[BVX.0236]]).",
-    "w": "BVX.0236",
-    "src": "BVX.0236"
-  },
-  "obligatory-scene": {
-    "t": "obligatory scene",
-    "k": "source-term",
-    "d": "A must-happen beat that pays off a genre's promise. Missing one means the story hasn't fulfilled its contract with the reader, no exemption for literary ambition ([[BVX.0236]]).",
-    "w": "BVX.0236",
-    "src": "BVX.0236"
-  },
-  "genre-clover": {
-    "t": "the five-leaf clover",
-    "k": "source-term",
-    "d": "Time, Reality, Style, Structure and Content genres: five independent audience-expectation axes nourishing one Global Story. Missing any leaf's promise breaks the contract ([[BVX.0236]]).",
-    "w": "BVX.0236",
-    "src": "BVX.0236"
-  },
-  "best-bad-choice": {
-    "t": "Best Bad Choice",
-    "k": "source-term",
-    "d": "One of Coyne's two crisis shapes: choosing the least-bad of two negatives. The other is [[crisis|irreconcilable goods]] ([[BVX.0236]]).",
-    "w": "BVX.0236",
-    "src": "BVX.0236"
-  },
-  "designing-principle": {
-    "t": "designing principle",
-    "k": "source-term",
-    "d": "A one-line strategy, not a genre template, that the whole story grows from: story process plus original execution. Distinguishes a premise (what happens) from what makes a story original ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "self-revelation": {
-    "t": "self-revelation",
-    "k": "source-term",
-    "d": "The hero's awareness of his own need; the hero cannot know it at the start, or the story is already over. Strongest when paired with a [[ghost|double reversal]] in the opponent ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "ghost": {
-    "t": "the ghost",
-    "k": "source-term",
-    "d": "An unresolved event from the hero's past acting as a counterdesire, \"sailing with a corpse in the cargo.\" Truby's name for the WOUND layer, dramatized structurally rather than dumped as backstory ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "character-web": {
-    "t": "character web",
-    "k": "source-term",
-    "d": "All characters connect via four channels: story function, archetype, theme, opposition. A character is defined by who he is not, never built in isolation ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "four-corner-opposition": {
-    "t": "four-corner opposition",
-    "k": "source-term",
-    "d": "Hero plus three opponents pushed to distinct value-corners, each attacking the hero's weakness a different way. Multiplies conflict from linear to a web ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "twenty-two-steps": {
-    "t": "the 22 steps",
-    "k": "source-term",
-    "d": "The seven key steps (weakness/need → desire → opponent → plan → battle → self-revelation → new equilibrium) expanded to production detail. Every 22-step story is still a seven-step story underneath ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "revelations-sequence": {
-    "t": "revelations sequence",
-    "k": "source-term",
-    "d": "Reveals must be logical, build in intensity, and come at increasing pace; the strongest reveal is a reversal. Plot's real spine is what the audience learns and when ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "passageway": {
-    "t": "the passageway",
-    "k": "source-term",
-    "d": "A liminal threshold between subworlds (rabbit hole, wardrobe, mirror) that signals a rules-change on crossing. Has no home in the setting system's four axes or twelve layers yet, flagged OPEN ([[BVX.0193]]).",
-    "w": "BVX.0193",
-    "src": "BVX.0193"
-  },
-  "the-board": {
-    "t": "the Board",
-    "k": "source-term",
-    "d": "A four-row corkboard divided by act (Act One / Act Two-A / Act Two-B / Act Three), index cards per scene, roughly 40 cards. A pre-writing planning tool, not the script itself ([[BVX.0163]]).",
-    "w": "BVX.0163",
-    "src": "BVX.0163"
-  },
-  "beat-sheet": {
-    "t": "the Beat Sheet (BS2)",
-    "k": "source-term",
-    "d": "Fifteen beats pinned to specific pages of a ~110-page script: Opening Image, [[theme-stated|Theme Stated]], Catalyst, Break Into Two, Midpoint, All Is Lost, Break Into Three, Final Image and more ([[BVX.0163]]).",
-    "w": "BVX.0163",
-    "src": "BVX.0163"
-  },
-  "theme-stated": {
-    "t": "Theme Stated",
-    "k": "source-term",
-    "d": "Beat 2, page 5: an offhand line voicing the want-versus-need argument the rest of the script proves or disproves, before the hero understands it ([[BVX.0163]]).",
-    "w": "BVX.0163",
-    "src": "BVX.0163"
-  },
-  "midpoint-all-is-lost": {
-    "t": "Midpoint / All Is Lost",
-    "k": "source-term",
-    "d": "A matched, opposite-charge pair at pages 55 and 75: a false victory pairs with a false defeat and vice versa. All Is Lost always carries a whiff of death ([[BVX.0163]]).",
-    "w": "BVX.0163",
-    "src": "BVX.0163"
-  },
-  "ten-genres": {
-    "t": "the 10 genres",
-    "k": "source-term",
-    "d": "Snyder's mechanism-based genre wheel: Monster in the House, Golden Fleece, Out of the Bottle, Dude with a Problem, Rites of Passage, Buddy Love, Whydunit, Fool Triumphant, Institutionalized, Superhero ([[BVX.0163]]).",
-    "w": "BVX.0163",
-    "src": "BVX.0163"
-  },
-  "ladder": {
-    "t": "the scale ladder",
-    "k": "rung",
-    "d": "The Command's container hierarchy for plot units: [[r1-beat|R1 BEAT]] → [[r2-scene|R2 SCENE]] → [[r3-sequence|R3 SEQUENCE]] → [[r4-act|R4 ACT]] → [[r5-story|R5 STORY]]. plot_systems occupies these containers, it never invents a second hierarchy.",
-    "w": "ssot_01_scale_ladder.md"
-  },
-  "r1-beat": {
-    "t": "R1 BEAT",
-    "k": "rung",
-    "d": "One exchange, action met by reaction: something tried, something answered, something now slightly different. Only the value micro-shift is required here, not the full [[five-commandments|Five Commandments]].",
-    "w": "ssot_01_scale_ladder.md"
-  },
-  "r2-scene": {
-    "t": "R2 SCENE",
-    "k": "rung",
-    "d": "The smallest container that turns: a [[value-turn|value turn]] and all five commandments present. The scene-level floor of plot ([[BVX.0175]], [[BVX.0236]]).",
-    "w": "ssot_01_scale_ladder.md"
-  },
-  "r3-sequence": {
-    "t": "R3 SEQUENCE",
-    "k": "rung",
-    "d": "A chain of scenes answering one dramatic question, usually replaced by a worse one when it resolves.",
-    "w": "ssot_01_scale_ladder.md"
-  },
-  "r4-act": {
-    "t": "R4 ACT / MOVEMENT",
-    "k": "rung",
-    "d": "One throughline's [[signpost|signpost]], turned by a [[driver-dynamic|driver]]; all four throughlines advance one signpost per act.",
-    "w": "ssot_01_scale_ladder.md"
-  },
-  "r5-story": {
-    "t": "R5 STORY",
-    "k": "rung",
-    "d": "The whole storyform: all four throughlines complete, [[outcome-dynamic|Outcome]] and [[judgment-dynamic|Judgment]] delivered.",
-    "w": "ssot_01_scale_ladder.md"
-  },
-  "p1-address": {
-    "t": "P1 ADDRESS",
-    "k": "layer",
-    "d": "Where a plot unit sits on the [[ladder|scale ladder]]: IP.form.act.sequence.scene.beat. Writes the `address` field.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p2-driver": {
-    "t": "P2 DRIVER",
-    "k": "layer",
-    "d": "What precipitates the turn, an action or a decision. Fed by Dramatica's [[driver-dynamic|Driver]] dynamic and McKee's inciting incident / crisis decision.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p3-value-in": {
-    "t": "P3 VALUE-IN",
-    "k": "layer",
-    "d": "What value is charged, at what polarity, entering the unit. Fed by McKee's value-charged condition and Coyne's [[inciting-incident|Inciting Incident]].",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p4-turn": {
-    "t": "P4 TURN",
-    "k": "layer",
-    "d": "The mechanism that flips the value: [[the-gap|the Gap]], the [[five-commandments|commandment chain]], or Truby's plan/battle step.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p5-value-out": {
-    "t": "P5 VALUE-OUT",
-    "k": "layer",
-    "d": "The value's polarity on exit, and whether the charge is ironic. Fed by McKee's [[value-turn|value turn]].",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p6-signpost-seat": {
-    "t": "P6 SIGNPOST/JOURNEY SEAT",
-    "k": "layer",
-    "d": "Which throughline's [[signpost|signpost]] or [[journey|journey]] this unit serves, in which act. Fed by Dramatica and the [[ladder|ladder]]'s R4.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p7-reveal": {
-    "t": "P7 REVEAL",
-    "k": "layer",
-    "d": "What the audience or a character learns here, and whether it reverses expectation. Fed by Truby's [[revelations-sequence|revelations sequence]] and Coyne's [[turning-point|turning-point taxonomy]].",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p8-collision": {
-    "t": "P8 COLLISION",
-    "k": "layer",
-    "d": "Which character times setting (or character times character) row fires to produce this unit's friction. Writes `collision_row`, e.g. L9xS9. See [[collision-engine|the collision engine]].",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p9-stakes": {
-    "t": "P9 STAKES/ESCALATION",
-    "k": "layer",
-    "d": "How this unit's risk or cost compares to the last one; must trend up. Fed by McKee's [[progressive-complications|progressive complications]] and Coyne's invariant 5.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p10-genre-obligation": {
-    "t": "P10 GENRE OBLIGATION",
-    "k": "layer",
-    "d": "Which reader-contract obligation this unit discharges, if any. Fed by Coyne's [[obligatory-scene|obligatory scenes]] and Snyder's [[ten-genres|10 genres]] and 15 beats.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p11-time": {
-    "t": "P11 TIME",
-    "k": "layer",
-    "d": "The order told versus the order happened; the discourse texture. Genette's duration, carried in the [[scene-card|Scene Card]].",
-    "w": "ssot_04_plot_system.md"
-  },
-  "p12-function": {
-    "t": "P12 FUNCTION",
-    "k": "layer",
-    "d": "What this unit does for the [[grand-argument-story|Grand Argument]], independent of P1 to P11. Fed independently from the storyform, keyed by [[storyform-id|storyform_id]]; mirrors L12 and S12 FUNCTION.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "plot-axis-scale": {
-    "t": "Axis 1 SCALE",
-    "k": "axis",
-    "d": "Plot units occupy the containers already ruled on the [[ladder|scale ladder]]; plot_systems adds only what happens inside a container, never a new size class.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "plot-axis-turn": {
-    "t": "Axis 2 THE TURN",
-    "k": "axis",
-    "d": "What changes inside a unit: McKee's [[value-turn|value turn]], Coyne's polarity, and [[the-gap|the Gap]] as the mechanism forcing it.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "plot-axis-function": {
-    "t": "Axis 3 FUNCTION",
-    "k": "axis",
-    "d": "What a plot unit does for the argument: Signpost, Journey, Setup/Payoff, [[p7-reveal|Reveal]], Reversal, Escalation.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "plot-axis-drive": {
-    "t": "Axis 4 DRIVE",
-    "k": "axis",
-    "d": "Drivers and act turns: Dramatica's [[driver-dynamic|Driver]], McKee's Inciting Incident / Crisis, Coyne's fractal recurrence, Snyder's page-keyed beats.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "plot-card": {
-    "t": "PLOT CARD",
-    "k": "card",
-    "d": "The notation slot for one plot unit, paired to the [[scene-card|Scene Card]]: driver, value-in, turn, value-out, signpost seat, reveal, collision, stakes delta, genre obligation, time, function.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "plot-slice": {
-    "t": "PLOT SLICE",
-    "k": "card",
-    "d": "The twelve-layer P1 through P12 schema, mirror of the 12-Layer Character Database and the [[setting-slice|Setting Slice]]. See [[p1-address|P1]] through [[p12-function|P12]].",
-    "w": "ssot_04_plot_system.md"
-  },
-  "collision-engine": {
-    "t": "the collision engine",
-    "k": "source-term",
-    "d": "The mechanism producing a scene's friction from a character-layer times setting-layer row, e.g. L9 EROS times S9 ALLURE. Fires [[p8-collision|P8 COLLISION]] and the [[scene-card|Scene Card]]'s `collision` field.",
-    "w": "collision engine (dependency of ssot_04)"
-  },
-  "storyform-id": {
-    "t": "storyform_id",
-    "k": "source-term",
-    "d": "The key binding P12/L12/S12 FUNCTION records to one locked [[storyform|storyform]]. A plot unit with no storyform link may run P1 through P11 only.",
-    "w": "ssot_04_plot_system.md"
-  },
-  "s1-body": {
-    "t": "S1 BODY",
-    "k": "layer",
-    "d": "Physical fabric: geography, terrain, architecture, dimensions, materials, layout. Mirrors L1 CORE.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s2-weather": {
-    "t": "S2 WEATHER",
-    "k": "layer",
-    "d": "Climate, seasons, light, temperature, atmosphere; the place's rhythms. Mirrors L2 VITAL. A canon-thin, authorable gap for DCUS.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s3-sensorium": {
-    "t": "S3 SENSORIUM",
-    "k": "layer",
-    "d": "How a place meets the senses: soundscape, smellscape, texture, palette, the presentation surface. Mirrors L3 SOCIAL.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s4-law": {
-    "t": "S4 LAW",
-    "k": "layer",
-    "d": "The rules that bind: governance, institutional mechanics, permission and forbiddance systems. Mirrors L4 WILL.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s5-scar": {
-    "t": "S5 SCAR",
-    "k": "layer",
-    "d": "Damage in the fabric: ruins, erasures, renames, sanded-off strata, what was demolished. Mirrors L5 WOUND.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s6-economy": {
-    "t": "S6 ECONOMY",
-    "k": "layer",
-    "d": "What fuels a place: resources, money, flows, traffic, who feeds and powers it. Mirrors L6 DRIVE.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s7-founding": {
-    "t": "S7 FOUNDING",
-    "k": "layer",
-    "d": "Origin: who built it, why, the founding stack, the deep history. Mirrors L7 ORIGIN.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s8-habit": {
-    "t": "S8 HABIT",
-    "k": "layer",
-    "d": "Attachment architecture: patterned life, rituals, routines, belonging gradients, insider/outsider. Mirrors L8 IMPRINT.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s9-allure": {
-    "t": "S9 ALLURE",
-    "k": "layer",
-    "d": "A place's erotics: what it promises, what draws people in, its glamour and seduction. Mirrors L9 EROS.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s10-underside": {
-    "t": "S10 UNDERSIDE",
-    "k": "layer",
-    "d": "What a place represses: hidden zones, the unspoken, basements literal and social, what surfaces under pressure. Mirrors L10 SHADOW.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s11-vector": {
-    "t": "S11 VECTOR",
-    "k": "layer",
-    "d": "Trajectory: where a place is going, bloom, rot, collapse, redemption; feeds the setting arc. Mirrors L11 DESTINY.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "s12-function": {
-    "t": "S12 FUNCTION",
-    "k": "layer",
-    "d": "Storyform binding, fed from the spine independent of S1 to S11: which throughline Domain the place embodies, its argument role, its charge, and its narrative_invariant set. Mirrors L12 FUNCTION.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "setting-axis-scale": {
-    "t": "Setting Axis 1 SCALE",
-    "k": "axis",
-    "d": "Places nest: spot to room to site to locale to settlement to region to world to cosmos. Address form DCUS.campus.hall3.room12.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "setting-axis-strata": {
-    "t": "Setting Axis 2 STRATA",
-    "k": "axis",
-    "d": "What a place is made of: the twelve layers of the [[setting-slice|Setting Slice]], S1 through S12.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "setting-axis-function": {
-    "t": "Setting Axis 3 FUNCTION",
-    "k": "axis",
-    "d": "What setting does: Anchor, Characterize, Pressure, Mood, Argue, Afford. A scene deploys one or two modes deliberately.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "setting-axis-time": {
-    "t": "Setting Axis 4 TIME",
-    "k": "axis",
-    "d": "A slice is the baseline; states are dated overlays keyed to ladder addresses. The setting arc is the sequence of states.",
-    "w": "ssot_03_setting_system.md"
-  },
-  "scene-card": {
-    "t": "SCENE CARD",
-    "k": "card",
-    "d": "The R2 notation, ten fields on one screen: address, setting, active strata, function mode, sensorium, commandments, [[value-turn|value turn]], duration, telling, threads, invariants, collision, exit state. Paired to the [[plot-card|Plot Card]].",
-    "w": "ssot_03_setting_system.md"
-  },
-  "setting-slice": {
-    "t": "SETTING SLICE",
-    "k": "card",
-    "d": "The twelve-layer S1 through S12 schema, architectural twin of the 12-Layer Character Database. See [[s1-body|S1]] through [[s12-function|S12]].",
-    "w": "ssot_03_setting_system.md"
-  },
-  "sitrep": {
-    "t": "sit rep",
-    "k": "proword",
-    "d": "The full board, cold start. Spoken, it flushes the Ready Rack and delivers blocks 0 to VII in fixed order.",
-    "w": "SOP.md §1-2",
-    "st": "ruled"
-  },
-  "dope-sheet": {
-    "t": "DOPE SHEET",
-    "k": "proword",
-    "st": "ruled",
-    "d": "The standing status page for one BOLO, the five-paragraph order with the next action on top, plus the log. This TM page is a sibling standing-page type beside it.",
-    "w": "SOP.md §0-1 · _tools/bolostatus/"
-  },
-  "boresight": {
-    "t": "boresight",
-    "k": "proword",
-    "d": "The understanding check before delivery: readback, the read, clarifying questions only. Nothing builds until it clears.",
-    "w": "SOP.md §1",
-    "st": "ruled"
-  },
-  "soi": {
-    "t": "SOI",
-    "k": "noun",
-    "d": "Signal Operating Instructions: the BREVITY's book, search, A to Z, by section, the dictation codebook.",
-    "w": "SOP.md §0 · _tools/soi/",
-    "st": "ruled"
-  },
-  "sop": {
-    "t": "SOP",
-    "k": "noun",
-    "d": "SOP.md, the canonical home of every comms code and session protocol. On any conflict with memory, the file wins.",
-    "w": "SOP.md"
-  },
-  "smeac": {
-    "t": "the five-paragraph order",
-    "k": "noun",
-    "d": "Situation, Mission, Execution, Administration and Logistics, Command and Signal. A BOLO status page and this TM page's calls table both borrow its shape.",
-    "w": "MIL.05 · MCDP 5 Planning"
-  },
-  "bolo": {
-    "t": "BOLO",
-    "k": "proword",
-    "d": "A tasking captured in BOLO.md the turn it is spoken. Be On the Lookout, named for the bolas.",
-    "w": "BOLO.md",
-    "st": "ruled"
-  },
-  "command": {
-    "t": "the Command",
-    "k": "noun",
-    "st": "ruled",
-    "d": "The whole operation under HOTLINE ACTUAL: BLACK, ORANGE and OPERATOR together.",
-    "w": "SOP.md §2 · §5"
-  },
-  "plot-systems-domain": {
-    "t": "plot_systems",
-    "k": "source-term",
-    "d": "The sibling top-layer domain beside the setting system: events, turns, the twelve-layer [[plot-slice|PLOT SLICE]], and the [[plot-card|PLOT CARD]] notation. See TM 04.",
-    "w": "ssot_04_plot_system.md"
-  }
+ "BVX.0089": {
+  "t": "Dramatica",
+  "k": "book",
+  "d": "Phillips & Huntley's [[storyform|Storyform]] engine: a story as one [[story-mind|Story Mind]] examining a problem through four [[throughlines|Throughlines]]. The Command's RULED story spine; every rival plot model in the library maps onto it as a lens.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0089.md",
+  "src": "BVX.0089"
+ },
+ "BVX.0175": {
+  "t": "McKee (Story)",
+  "k": "book",
+  "d": "Robert McKee's *Story*: the scene-level engine beneath Dramatica's signpost floor. Source of [[the-gap|the Gap]], the [[value-turn|value turn]], and the [[controlling-idea|Controlling Idea]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0175.md",
+  "src": "BVX.0175"
+ },
+ "BVX.0236": {
+  "t": "Coyne (Story Grid)",
+  "k": "book",
+  "d": "Shawn Coyne's editorial X-ray: the [[five-commandments|Five Commandments]] recurring fractally at every unit from beat to global story, plus the [[foolscap|Foolscap]] intake and the genre [[genre-clover|five-leaf clover]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0236.md",
+  "src": "BVX.0236"
+ },
+ "BVX.0193": {
+  "t": "Truby (Anatomy of Story)",
+  "k": "book",
+  "d": "John Truby's organic-body model: a story grows from one [[designing-principle|designing principle]] through the [[twenty-two-steps|22 steps]] to a hero's [[self-revelation|self-revelation]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0193.md",
+  "src": "BVX.0193"
+ },
+ "BVX.0163": {
+  "t": "Snyder (Save the Cat!)",
+  "k": "book",
+  "d": "Blake Snyder's page-keyed commercial template: the [[beat-sheet|Beat Sheet]] (BS2), 15 fixed beats over ~110 pages, laid out on [[the-board|the Board]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0163.md",
+  "src": "BVX.0163"
+ },
+ "grand-argument-story": {
+  "t": "the Grand Argument",
+  "k": "source-term",
+  "d": "A story conceptually complete: every approach to one problem tried through four [[throughlines|throughlines]] until one is proven best. Dramatica's scope claim, not every story qualifies ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "story-mind": {
+  "t": "the Story Mind",
+  "k": "source-term",
+  "d": "The premise that a complete story models one mind's problem-solving process, holistic not sequential. The generative claim under the [[grand-argument-story|Grand Argument]] ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "storyform": {
+  "t": "the Storyform",
+  "k": "source-term",
+  "d": "The complete, locked blueprint of structural and dynamic answers, independent of the specific events that dramatize it. Two unrelated plots can share one storyform ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "throughlines": {
+  "t": "the Four Throughlines",
+  "k": "source-term",
+  "d": "Overall Story (they), Main Character (I), Impact Character (you), Relationship Story (we): four seats around one problem, each holding a different Class. No rival model has all four ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "signpost": {
+  "t": "Signpost",
+  "k": "source-term",
+  "d": "A fixed structural checkpoint, one per throughline, four per form, sixteen across a complete storyform. A [[journey|Journey]] carries a throughline between two signposts ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "journey": {
+  "t": "Journey",
+  "k": "source-term",
+  "d": "The transition between two [[signpost|Signposts]] on one throughline; three journeys per throughline complete the four-signpost chain ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "driver-dynamic": {
+  "t": "Driver",
+  "k": "source-term",
+  "d": "Action or Decision: which kind of event precipitates a turn. A story's driver matches at both the inciting event and the resolving event ([[BVX.0089]]). OXO's ruled story-level Driver is Action.",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "limit-dynamic": {
+  "t": "Limit",
+  "k": "source-term",
+  "d": "Timelock or Optionlock: whether tension comes from a closing clock or a shrinking set of options ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "outcome-dynamic": {
+  "t": "Outcome",
+  "k": "source-term",
+  "d": "Success or Failure, measured objectively against the Overall Story goal, independent of [[judgment-dynamic|Judgment]]. OXO is ruled Failure ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "judgment-dynamic": {
+  "t": "Judgment",
+  "k": "source-term",
+  "d": "Good or Bad, measured subjectively against the Main Character's personal fulfillment. Combines with [[outcome-dynamic|Outcome]] into one of four endings. OXO is ruled Good ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "crucial-element": {
+  "t": "the Crucial Element",
+  "k": "source-term",
+  "d": "The single Element the Main Character shares with the Overall Story, the hinge between the objective and subjective arguments. Structural position, not plot centrality ([[BVX.0089]]).",
+  "w": "BVX.0089",
+  "src": "BVX.0089"
+ },
+ "the-gap": {
+  "t": "the Gap",
+  "k": "source-term",
+  "d": "McKee's engine: a minimal action provokes a world reaction bigger than expected, and the gap between what was expected and what was necessary is where the [[value-turn|turn]] lives. It does not close, it reopens bigger ([[BVX.0175]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "value-turn": {
+  "t": "value turn",
+  "k": "source-term",
+  "d": "A value-charged condition flips polarity, plus to minus or the reverse. No turn, no scene. The scene-level minimum, R2 floor of the [[ladder|scale ladder]] ([[BVX.0175]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "controlling-idea": {
+  "t": "Controlling Idea",
+  "k": "source-term",
+  "d": "One sentence, Value plus Cause, describing how and why life changes from the story's beginning condition to its end. Provable backward from the [[climax|Climax]] ([[BVX.0175]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "turning-point": {
+  "t": "Turning Point",
+  "k": "source-term",
+  "d": "A scene's reversal, producing surprise, curiosity, insight and new direction. Coyne's taxonomy splits it into action or revelation ([[BVX.0175]], [[BVX.0236]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "crisis": {
+  "t": "Crisis",
+  "k": "source-term",
+  "d": "The Obligatory Scene: an irreconcilable-goods decision at maximum pressure, no second chance. Never an easy choice ([[BVX.0175]], [[BVX.0236]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "climax": {
+  "t": "Climax",
+  "k": "source-term",
+  "d": "A value swing at maximum charge, absolute and irreversible, with or without irony. The protagonist's choice must happen on stage ([[BVX.0175]], [[BVX.0236]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "resolution": {
+  "t": "Resolution",
+  "k": "source-term",
+  "d": "The unit's close: subplot cleanup, spread of effects, or a courtesy to the audience. Must state what the [[climax|Climax]] means, not recap what happened ([[BVX.0175]], [[BVX.0236]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "inciting-incident": {
+  "t": "Inciting Incident",
+  "k": "source-term",
+  "d": "The event that radically upsets life's balance, causal or coincidental, opening the chain the [[five-commandments|Five Commandments]] complete ([[BVX.0175]], [[BVX.0236]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "progressive-complications": {
+  "t": "Progressive Complications",
+  "k": "source-term",
+  "d": "The Gap reopening at increasing risk, passing points of no return; complications must trend up, never retreat to a spent magnitude ([[BVX.0175]]).",
+  "w": "BVX.0175",
+  "src": "BVX.0175"
+ },
+ "five-commandments": {
+  "t": "the Five Commandments",
+  "k": "source-term",
+  "d": "[[inciting-incident|Inciting Incident]] → Progressive Complication → [[crisis|Crisis]] → [[climax|Climax]] → [[resolution|Resolution]]: every unit of story from beat to global story carries all five, fractally ([[BVX.0236]]).",
+  "w": "BVX.0236",
+  "src": "BVX.0236"
+ },
+ "foolscap": {
+  "t": "the Foolscap",
+  "k": "source-term",
+  "d": "A one-page diagnostic: Genre, conventions and obligatory scenes, point of view, objects of desire, controlling idea, and the Hook/Build/Payoff arc. Six questions, one screen ([[BVX.0236]]).",
+  "w": "BVX.0236",
+  "src": "BVX.0236"
+ },
+ "obligatory-scene": {
+  "t": "obligatory scene",
+  "k": "source-term",
+  "d": "A must-happen beat that pays off a genre's promise. Missing one means the story hasn't fulfilled its contract with the reader, no exemption for literary ambition ([[BVX.0236]]).",
+  "w": "BVX.0236",
+  "src": "BVX.0236"
+ },
+ "genre-clover": {
+  "t": "the five-leaf clover",
+  "k": "source-term",
+  "d": "Time, Reality, Style, Structure and Content genres: five independent audience-expectation axes nourishing one Global Story. Missing any leaf's promise breaks the contract ([[BVX.0236]]).",
+  "w": "BVX.0236",
+  "src": "BVX.0236"
+ },
+ "best-bad-choice": {
+  "t": "Best Bad Choice",
+  "k": "source-term",
+  "d": "One of Coyne's two crisis shapes: choosing the least-bad of two negatives. The other is [[crisis|irreconcilable goods]] ([[BVX.0236]]).",
+  "w": "BVX.0236",
+  "src": "BVX.0236"
+ },
+ "designing-principle": {
+  "t": "designing principle",
+  "k": "source-term",
+  "d": "A one-line strategy, not a genre template, that the whole story grows from: story process plus original execution. Distinguishes a premise (what happens) from what makes a story original ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "self-revelation": {
+  "t": "self-revelation",
+  "k": "source-term",
+  "d": "The hero's awareness of his own need; the hero cannot know it at the start, or the story is already over. Strongest when paired with a [[ghost|double reversal]] in the opponent ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "ghost": {
+  "t": "the ghost",
+  "k": "source-term",
+  "d": "An unresolved event from the hero's past acting as a counterdesire, \"sailing with a corpse in the cargo.\" Truby's name for the WOUND layer, dramatized structurally rather than dumped as backstory ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "character-web": {
+  "t": "character web",
+  "k": "source-term",
+  "d": "All characters connect via four channels: story function, archetype, theme, opposition. A character is defined by who he is not, never built in isolation ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "four-corner-opposition": {
+  "t": "four-corner opposition",
+  "k": "source-term",
+  "d": "Hero plus three opponents pushed to distinct value-corners, each attacking the hero's weakness a different way. Multiplies conflict from linear to a web ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "twenty-two-steps": {
+  "t": "the 22 steps",
+  "k": "source-term",
+  "d": "The seven key steps (weakness/need → desire → opponent → plan → battle → self-revelation → new equilibrium) expanded to production detail. Every 22-step story is still a seven-step story underneath ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "revelations-sequence": {
+  "t": "revelations sequence",
+  "k": "source-term",
+  "d": "Reveals must be logical, build in intensity, and come at increasing pace; the strongest reveal is a reversal. Plot's real spine is what the audience learns and when ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "passageway": {
+  "t": "the passageway",
+  "k": "source-term",
+  "d": "A liminal threshold between subworlds (rabbit hole, wardrobe, mirror) that signals a rules-change on crossing. Has no home in the setting system's four axes or twelve layers yet, flagged OPEN ([[BVX.0193]]).",
+  "w": "BVX.0193",
+  "src": "BVX.0193"
+ },
+ "the-board": {
+  "t": "the Board",
+  "k": "source-term",
+  "d": "A four-row corkboard divided by act (Act One / Act Two-A / Act Two-B / Act Three), index cards per scene, roughly 40 cards. A pre-writing planning tool, not the script itself ([[BVX.0163]]).",
+  "w": "BVX.0163",
+  "src": "BVX.0163"
+ },
+ "beat-sheet": {
+  "t": "the Beat Sheet (BS2)",
+  "k": "source-term",
+  "d": "Fifteen beats pinned to specific pages of a ~110-page script: Opening Image, [[theme-stated|Theme Stated]], Catalyst, Break Into Two, Midpoint, All Is Lost, Break Into Three, Final Image and more ([[BVX.0163]]).",
+  "w": "BVX.0163",
+  "src": "BVX.0163"
+ },
+ "theme-stated": {
+  "t": "Theme Stated",
+  "k": "source-term",
+  "d": "Beat 2, page 5: an offhand line voicing the want-versus-need argument the rest of the script proves or disproves, before the hero understands it ([[BVX.0163]]).",
+  "w": "BVX.0163",
+  "src": "BVX.0163"
+ },
+ "midpoint-all-is-lost": {
+  "t": "Midpoint / All Is Lost",
+  "k": "source-term",
+  "d": "A matched, opposite-charge pair at pages 55 and 75: a false victory pairs with a false defeat and vice versa. All Is Lost always carries a whiff of death ([[BVX.0163]]).",
+  "w": "BVX.0163",
+  "src": "BVX.0163"
+ },
+ "ten-genres": {
+  "t": "the 10 genres",
+  "k": "source-term",
+  "d": "Snyder's mechanism-based genre wheel: Monster in the House, Golden Fleece, Out of the Bottle, Dude with a Problem, Rites of Passage, Buddy Love, Whydunit, Fool Triumphant, Institutionalized, Superhero ([[BVX.0163]]).",
+  "w": "BVX.0163",
+  "src": "BVX.0163"
+ },
+ "ladder": {
+  "t": "the scale ladder",
+  "k": "rung",
+  "d": "The Command's container hierarchy for plot units: [[r1-beat|R1 BEAT]] → [[r2-scene|R2 SCENE]] → [[r3-sequence|R3 SEQUENCE]] → [[r4-act|R4 ACT]] → [[r5-story|R5 STORY]]. plot_systems occupies these containers, it never invents a second hierarchy.",
+  "w": "ssot_01_scale_ladder.md"
+ },
+ "r1-beat": {
+  "t": "R1 BEAT",
+  "k": "rung",
+  "d": "One exchange, action met by reaction: something tried, something answered, something now slightly different. Only the value micro-shift is required here, not the full [[five-commandments|Five Commandments]].",
+  "w": "ssot_01_scale_ladder.md"
+ },
+ "r2-scene": {
+  "t": "R2 SCENE",
+  "k": "rung",
+  "d": "The smallest container that turns: a [[value-turn|value turn]] and all five commandments present. The scene-level floor of plot ([[BVX.0175]], [[BVX.0236]]).",
+  "w": "ssot_01_scale_ladder.md"
+ },
+ "r3-sequence": {
+  "t": "R3 SEQUENCE",
+  "k": "rung",
+  "d": "A chain of scenes answering one dramatic question, usually replaced by a worse one when it resolves.",
+  "w": "ssot_01_scale_ladder.md"
+ },
+ "r4-act": {
+  "t": "R4 ACT / MOVEMENT",
+  "k": "rung",
+  "d": "One throughline's [[signpost|signpost]], turned by a [[driver-dynamic|driver]]; all four throughlines advance one signpost per act.",
+  "w": "ssot_01_scale_ladder.md"
+ },
+ "r5-story": {
+  "t": "R5 STORY",
+  "k": "rung",
+  "d": "The whole storyform: all four throughlines complete, [[outcome-dynamic|Outcome]] and [[judgment-dynamic|Judgment]] delivered.",
+  "w": "ssot_01_scale_ladder.md"
+ },
+ "p1-address": {
+  "t": "P1 ADDRESS",
+  "k": "layer",
+  "d": "Where a plot unit sits on the [[ladder|scale ladder]]: IP.form.act.sequence.scene.beat. Writes the `address` field.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p2-driver": {
+  "t": "P2 DRIVER",
+  "k": "layer",
+  "d": "What precipitates the turn, an action or a decision. Fed by Dramatica's [[driver-dynamic|Driver]] dynamic and McKee's inciting incident / crisis decision.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p3-value-in": {
+  "t": "P3 VALUE-IN",
+  "k": "layer",
+  "d": "What value is charged, at what polarity, entering the unit. Fed by McKee's value-charged condition and Coyne's [[inciting-incident|Inciting Incident]].",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p4-turn": {
+  "t": "P4 TURN",
+  "k": "layer",
+  "d": "The mechanism that flips the value: [[the-gap|the Gap]], the [[five-commandments|commandment chain]], or Truby's plan/battle step.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p5-value-out": {
+  "t": "P5 VALUE-OUT",
+  "k": "layer",
+  "d": "The value's polarity on exit, and whether the charge is ironic. Fed by McKee's [[value-turn|value turn]].",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p6-signpost-seat": {
+  "t": "P6 SIGNPOST/JOURNEY SEAT",
+  "k": "layer",
+  "d": "Which throughline's [[signpost|signpost]] or [[journey|journey]] this unit serves, in which act. Fed by Dramatica and the [[ladder|ladder]]'s R4.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p7-reveal": {
+  "t": "P7 REVEAL",
+  "k": "layer",
+  "d": "What the audience or a character learns here, and whether it reverses expectation. Fed by Truby's [[revelations-sequence|revelations sequence]] and Coyne's [[turning-point|turning-point taxonomy]].",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p8-collision": {
+  "t": "P8 COLLISION",
+  "k": "layer",
+  "d": "Which character times setting (or character times character) row fires to produce this unit's friction. Writes `collision_row`, e.g. L9xS9. See [[collision-engine|the collision engine]].",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p9-stakes": {
+  "t": "P9 STAKES/ESCALATION",
+  "k": "layer",
+  "d": "How this unit's risk or cost compares to the last one; must trend up. Fed by McKee's [[progressive-complications|progressive complications]] and Coyne's invariant 5.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p10-genre-obligation": {
+  "t": "P10 GENRE OBLIGATION",
+  "k": "layer",
+  "d": "Which reader-contract obligation this unit discharges, if any. Fed by Coyne's [[obligatory-scene|obligatory scenes]] and Snyder's [[ten-genres|10 genres]] and 15 beats.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p11-time": {
+  "t": "P11 TIME",
+  "k": "layer",
+  "d": "The order told versus the order happened; the discourse texture. Genette's duration, carried in the [[scene-card|Scene Card]].",
+  "w": "ssot_04_plot_system.md"
+ },
+ "p12-function": {
+  "t": "P12 FUNCTION",
+  "k": "layer",
+  "d": "What this unit does for the [[grand-argument-story|Grand Argument]], independent of P1 to P11. Fed independently from the storyform, keyed by [[storyform-id|storyform_id]]; mirrors L12 and S12 FUNCTION.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "plot-axis-scale": {
+  "t": "Axis 1 SCALE",
+  "k": "axis",
+  "d": "Plot units occupy the containers already ruled on the [[ladder|scale ladder]]; plot_systems adds only what happens inside a container, never a new size class.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "plot-axis-turn": {
+  "t": "Axis 2 THE TURN",
+  "k": "axis",
+  "d": "What changes inside a unit: McKee's [[value-turn|value turn]], Coyne's polarity, and [[the-gap|the Gap]] as the mechanism forcing it.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "plot-axis-function": {
+  "t": "Axis 3 FUNCTION",
+  "k": "axis",
+  "d": "What a plot unit does for the argument: Signpost, Journey, Setup/Payoff, [[p7-reveal|Reveal]], Reversal, Escalation.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "plot-axis-drive": {
+  "t": "Axis 4 DRIVE",
+  "k": "axis",
+  "d": "Drivers and act turns: Dramatica's [[driver-dynamic|Driver]], McKee's Inciting Incident / Crisis, Coyne's fractal recurrence, Snyder's page-keyed beats.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "plot-card": {
+  "t": "PLOT CARD",
+  "k": "card",
+  "d": "The notation slot for one plot unit, paired to the [[scene-card|Scene Card]]: driver, value-in, turn, value-out, signpost seat, reveal, collision, stakes delta, genre obligation, time, function.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "plot-slice": {
+  "t": "PLOT SLICE",
+  "k": "card",
+  "d": "The twelve-layer P1 through P12 schema, mirror of the 12-Layer Character Database and the [[setting-slice|Setting Slice]]. See [[p1-address|P1]] through [[p12-function|P12]].",
+  "w": "ssot_04_plot_system.md"
+ },
+ "collision-engine": {
+  "t": "the collision engine",
+  "k": "source-term",
+  "d": "The mechanism producing a scene's friction from a character-layer times setting-layer row, e.g. L9 EROS times S9 ALLURE. Fires [[p8-collision|P8 COLLISION]] and the [[scene-card|Scene Card]]'s `collision` field.",
+  "w": "collision engine (dependency of ssot_04)"
+ },
+ "storyform-id": {
+  "t": "storyform_id",
+  "k": "source-term",
+  "d": "The key binding P12/L12/S12 FUNCTION records to one locked [[storyform|storyform]]. A plot unit with no storyform link may run P1 through P11 only.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "s1-body": {
+  "t": "S1 BODY",
+  "k": "layer",
+  "d": "Physical fabric: geography, terrain, architecture, dimensions, materials, layout. Mirrors L1 CORE.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s2-weather": {
+  "t": "S2 WEATHER",
+  "k": "layer",
+  "d": "Climate, seasons, light, temperature, atmosphere; the place's rhythms. Mirrors L2 VITAL. A canon-thin, authorable gap for DCUS.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s3-sensorium": {
+  "t": "S3 SENSORIUM",
+  "k": "layer",
+  "d": "How a place meets the senses: soundscape, smellscape, texture, palette, the presentation surface. Mirrors L3 SOCIAL.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s4-law": {
+  "t": "S4 LAW",
+  "k": "layer",
+  "d": "The rules that bind: governance, institutional mechanics, permission and forbiddance systems. Mirrors L4 WILL.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s5-scar": {
+  "t": "S5 SCAR",
+  "k": "layer",
+  "d": "Damage in the fabric: ruins, erasures, renames, sanded-off strata, what was demolished. Mirrors L5 WOUND.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s6-economy": {
+  "t": "S6 ECONOMY",
+  "k": "layer",
+  "d": "What fuels a place: resources, money, flows, traffic, who feeds and powers it. Mirrors L6 DRIVE.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s7-founding": {
+  "t": "S7 FOUNDING",
+  "k": "layer",
+  "d": "Origin: who built it, why, the founding stack, the deep history. Mirrors L7 ORIGIN.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s8-habit": {
+  "t": "S8 HABIT",
+  "k": "layer",
+  "d": "Attachment architecture: patterned life, rituals, routines, belonging gradients, insider/outsider. Mirrors L8 IMPRINT.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s9-allure": {
+  "t": "S9 ALLURE",
+  "k": "layer",
+  "d": "A place's erotics: what it promises, what draws people in, its glamour and seduction. Mirrors L9 EROS.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s10-underside": {
+  "t": "S10 UNDERSIDE",
+  "k": "layer",
+  "d": "What a place represses: hidden zones, the unspoken, basements literal and social, what surfaces under pressure. Mirrors L10 SHADOW.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s11-vector": {
+  "t": "S11 VECTOR",
+  "k": "layer",
+  "d": "Trajectory: where a place is going, bloom, rot, collapse, redemption; feeds the setting arc. Mirrors L11 DESTINY.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "s12-function": {
+  "t": "S12 FUNCTION",
+  "k": "layer",
+  "d": "Storyform binding, fed from the spine independent of S1 to S11: which throughline Domain the place embodies, its argument role, its charge, and its narrative_invariant set. Mirrors L12 FUNCTION.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "setting-axis-scale": {
+  "t": "Setting Axis 1 SCALE",
+  "k": "axis",
+  "d": "Places nest: spot to room to site to locale to settlement to region to world to cosmos. Address form DCUS.campus.hall3.room12.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "setting-axis-strata": {
+  "t": "Setting Axis 2 STRATA",
+  "k": "axis",
+  "d": "What a place is made of: the twelve layers of the [[setting-slice|Setting Slice]], S1 through S12.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "setting-axis-function": {
+  "t": "Setting Axis 3 FUNCTION",
+  "k": "axis",
+  "d": "What setting does: Anchor, Characterize, Pressure, Mood, Argue, Afford. A scene deploys one or two modes deliberately.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "setting-axis-time": {
+  "t": "Setting Axis 4 TIME",
+  "k": "axis",
+  "d": "A slice is the baseline; states are dated overlays keyed to ladder addresses. The setting arc is the sequence of states.",
+  "w": "ssot_03_setting_system.md"
+ },
+ "scene-card": {
+  "t": "SCENE CARD",
+  "k": "card",
+  "d": "The R2 notation, ten fields on one screen: address, setting, active strata, function mode, sensorium, commandments, [[value-turn|value turn]], duration, telling, threads, invariants, collision, exit state. Paired to the [[plot-card|Plot Card]].",
+  "w": "ssot_03_setting_system.md"
+ },
+ "setting-slice": {
+  "t": "SETTING SLICE",
+  "k": "card",
+  "d": "The twelve-layer S1 through S12 schema, architectural twin of the 12-Layer Character Database. See [[s1-body|S1]] through [[s12-function|S12]].",
+  "w": "ssot_03_setting_system.md"
+ },
+ "sitrep": {
+  "t": "sit rep",
+  "k": "proword",
+  "d": "The full board, cold start. Spoken, it flushes the Ready Rack and delivers blocks 0 to VII in fixed order.",
+  "w": "SOP.md §1-2",
+  "st": "ruled"
+ },
+ "dope-sheet": {
+  "t": "DOPE SHEET",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The standing status page for one BOLO, the five-paragraph order with the next action on top, plus the log. This TM page is a sibling standing-page type beside it.",
+  "w": "SOP.md §0-1 · _tools/bolostatus/"
+ },
+ "boresight": {
+  "t": "boresight",
+  "k": "proword",
+  "d": "The understanding check before delivery: readback, the read, clarifying questions only. Nothing builds until it clears.",
+  "w": "SOP.md §1",
+  "st": "ruled"
+ },
+ "soi": {
+  "t": "SOI",
+  "k": "noun",
+  "d": "Signal Operating Instructions: the BREVITY's book, search, A to Z, by section, the dictation codebook.",
+  "w": "SOP.md §0 · _tools/soi/",
+  "st": "ruled"
+ },
+ "sop": {
+  "t": "SOP",
+  "k": "noun",
+  "d": "SOP.md, the canonical home of every comms code and session protocol. On any conflict with memory, the file wins.",
+  "w": "SOP.md"
+ },
+ "smeac": {
+  "t": "the five-paragraph order",
+  "k": "noun",
+  "d": "Situation, Mission, Execution, Administration and Logistics, Command and Signal. A BOLO status page and this TM page's calls table both borrow its shape.",
+  "w": "MIL.05 · MCDP 5 Planning"
+ },
+ "bolo": {
+  "t": "BOLO",
+  "k": "proword",
+  "d": "A tasking captured in BOLO.md the turn it is spoken. Be On the Lookout, named for the bolas.",
+  "w": "BOLO.md",
+  "st": "ruled"
+ },
+ "command": {
+  "t": "the Command",
+  "k": "noun",
+  "st": "ruled",
+  "d": "The whole operation under HOTLINE ACTUAL: BLACK, ORANGE and OPERATOR together.",
+  "w": "SOP.md §2 · §5"
+ },
+ "plot-systems-domain": {
+  "t": "plot_systems",
+  "k": "source-term",
+  "d": "The sibling top-layer domain beside the setting system: events, turns, the twelve-layer [[plot-slice|PLOT SLICE]], and the [[plot-card|PLOT CARD]] notation. See TM 04.",
+  "w": "ssot_04_plot_system.md"
+ },
+ "l1-core": {
+  "t": "L1 CORE",
+  "k": "layer",
+  "d": "The first character layer: cognition and identity, how the person thinks and who they take themselves to be. Chart feed: Sun and Mercury.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l2-vital": {
+  "t": "L2 VITAL",
+  "k": "layer",
+  "d": "The second layer: the body and its presentation, energy, health, how the person reads at first sight. Chart feed: Mars and the Ascendant.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l3-social": {
+  "t": "L3 SOCIAL",
+  "k": "layer",
+  "d": "The third layer: the person in public, status, manners, the mask worn among others.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l4-will": {
+  "t": "L4 WILL",
+  "k": "layer",
+  "d": "The fourth layer: discipline, agency, what the person can make themselves do. Chart feed: Saturn.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l5-wound": {
+  "t": "L5 WOUND",
+  "k": "layer",
+  "d": "The fifth layer: the formative injury and the armor built over it; the loss that explains the [[l6-drive|drive]]. Chart feed: the Moon and Chiron.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l6-drive": {
+  "t": "L6 DRIVE",
+  "k": "layer",
+  "d": "The sixth layer: want versus need, the super-objective, what the person is reaching for and why. Chart feed: the Sun's house and Jupiter.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l7-origin": {
+  "t": "L7 ORIGIN",
+  "k": "layer",
+  "d": "The seventh layer: birth context, family, class, the place and time the person came from. Chart feed: the IC and the fourth house.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l8-imprint": {
+  "t": "L8 IMPRINT",
+  "k": "layer",
+  "d": "The eighth layer: acquired habits, passions, pastimes, the marks experience left.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l9-eros": {
+  "t": "L9 EROS",
+  "k": "layer",
+  "d": "The ninth layer: sexuality and intimacy, desire profile, shame index, the erotic register. Chart feed: Venus, Mars and the eighth house.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l10-shadow": {
+  "t": "L10 SHADOW",
+  "k": "layer",
+  "d": "The tenth layer: what the person cannot see in themselves, the self-delusion gap, the counter-will. Chart feed: the twelfth house and Pluto.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l11-destiny": {
+  "t": "L11 DESTINY",
+  "k": "layer",
+  "d": "The eleventh layer: trajectory and vector, where the arc is taking the person, the transit calendar. Chart feed: the Midheaven and the nodes.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "l12-function": {
+  "t": "L12 FUNCTION",
+  "k": "layer",
+  "d": "The twelfth layer: the person's job in the story, the Dramatica archetype or function, the throughline seat. Binds the character to the [[grand-argument|argument]].",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "twelve-layer-character": {
+  "t": "the 12-layer character database",
+  "k": "command-term",
+  "d": "The Command's character system: twelve layers from [[l1-core|CORE]] to [[l12-function|FUNCTION]], three tiers (primary layers, secondary derivations, numeric variables), derived statistics and flag triggers, instanced per character as a vertical slice. The setting slice (S1 to S12) and the plot slice (P1 to P12) mirror its form.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "vertical-slice": {
+  "t": "vertical slice",
+  "k": "command-term",
+  "d": "One character instanced through all twelve layers and three tiers, with its structured data block; Victoria Midnight is the proof instance.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "tier-1": {
+  "t": "Tier 1",
+  "k": "command-term",
+  "d": "The primary layers of the character slice, sourced directly from canon and ruled by Papi.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "tier-2": {
+  "t": "Tier 2",
+  "k": "command-term",
+  "d": "The secondary layers, derived from Tier 1 by the integration protocol.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "tier-3": {
+  "t": "Tier 3",
+  "k": "command-term",
+  "d": "The numeric variables and flags computed from Tiers 1 and 2 (the derived statistics, the flag trigger conditions).",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "derived-statistic": {
+  "t": "derived statistic",
+  "k": "command-term",
+  "d": "A number computed from the slice's variables by a stated formula, such as armor index or satisfaction cycle truncation.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "flag-trigger": {
+  "t": "flag trigger",
+  "k": "command-term",
+  "d": "A condition over the slice's variables that, when met, raises a flag the story engine reads.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ },
+ "structured-data-block": {
+  "t": "structured data block",
+  "k": "command-term",
+  "d": "The machine-readable block at the end of a character slice: every variable and derived statistic as fields.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
+  "src": "SSOT 02"
+ }
 }
