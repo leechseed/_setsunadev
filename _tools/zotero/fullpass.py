@@ -34,11 +34,18 @@ def load(): return json.load(io.open(INV, encoding="utf-8"))
 def save(items): io.open(INV, "w", encoding="utf-8", newline="\n").write(json.dumps(items, ensure_ascii=False, indent=1))
 
 
+# manual keys (9/16, the drop intake): by BVX id, never overwritten, like a tag
+MANUAL = {"BVX.1123": ["L5", "L6", "L0"], "BVX.1124": ["L4", "L5"], "BVX.1125": ["L4", "L7"], "BVX.1126": ["L0", "L4", "L6", "L7"], "BVX.1127": ["L5"]}
+
 def key():
     items = load(); c = collections.Counter()
     for it in items:
+        if it.get("bvx") in MANUAL:
+            it["spine"] = MANUAL[it["bvx"]]; it["spine_src"] = "manual"; c["manual"] += 1; continue
+        if it.get("src") == "drop" and not it.get("bvx"):
+            it["spine"] = []; it["spine_src"] = "drop-unkeyed"; c["drop-unkeyed (held)"] += 1; continue  # the bulk is held until an intake pass is ordered; title rules over-key RPG sheets
         src = it.get("spine_src")
-        if src in ("tag", "toc", "toc-off") and (it.get("spine") or src == "toc-off"):
+        if src in ("tag", "toc", "toc-off", "manual") and (it.get("spine") or src == "toc-off"):
             c[src] += 1; continue
         blob = " ".join([it["title"], " ".join(it["tags"]), " ".join(it["collections"])])
         junk = bool(JUNK.search(it["title"].strip()) or len(it["title"].strip()) < 6)
@@ -48,6 +55,8 @@ def key():
             it["spine"] = hits[:3]; it["spine_src"] = "rule"; c["rule"] += 1
         elif subj in OFF_SUBJECTS and not junk:
             it["spine"] = []; it["spine_src"] = "subject-off"; c["subject-off"] += 1
+        elif it.get("src") == "drop":
+            it["spine"] = []; it["spine_src"] = "drop-unkeyed"; c["drop-unkeyed (held)"] += 1
         else:
             it["spine"] = []; it["spine_src"] = "none"; c["none (to PS)"] += 1
         it["junk_title"] = junk
@@ -83,7 +92,7 @@ def merge():
             if not it: applied["no zid"] += 1; continue
             spine = [s for s in k.get("spine", []) if s in VALID]
             if not spine: applied["unusable"] += 1; continue
-            if it.get("spine_src") in ("tag", "toc"): applied["kept (tag/toc)"] += 1; continue
+            if it.get("spine_src") in ("tag", "toc", "manual"): applied["kept (tag/toc/manual)"] += 1; continue
             if spine == ["OFF"]: it["spine"] = []; it["spine_src"] = "toc-off"; applied["off"] += 1
             else: it["spine"] = spine; it["spine_src"] = "toc"; applied["keyed"] += 1
             it["spine_why"] = k.get("why", "")

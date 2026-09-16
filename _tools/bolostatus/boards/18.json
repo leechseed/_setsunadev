@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-08-26",
   "asof": "2026-09-16",
-  "s": "hot",
-  "status": "Stage 1 done 8/26; stage 2 reopened 9/16 as the gate on story-side work. 9/16 late: three waves landed in one sitting (character · texture · genre), twenty-six v4 distills, five models written and served as TM 02 through 06 (plot 04 · setting 03 · character 02 · texture 05 · genre 06), the character and texture calls ruled. The gate is ready to be called.",
+  "s": "open",
+  "status": "GATE CLOSED 9/16 (Papi: \"go ahead and close the gate\"): stage 2's five models are written from their shelves and served as TM 02 through 06; story-side work resumes, BOLO 24 first. BOLO 18 stays open for the follow-on waves (theme L6, root L0, the drop-folder intake) and the acquisitions, none of them gates.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "story-side work across the Command (BOLO 24's own slice stays free of the gate); the new SSOT docs (plot_systems v0.1.1 done, setting and character owed); the TM pages (04 plot, 03 setting, 02 character)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.7 · DOPE SHEET"
+  "version": "v0.8 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Key every source to the story spine and distill the shelves into the plot, setting and character models, **in order to** build the top layer of what a story is from the thousand books already owned.",
-  "order": "**Call the gate: stage 2's five models are written from their shelves and served (plot 04 · setting 03 · character 02 · texture 05 · genre 06). Close it now (rec) so BOLO 24's story-side work resumes, or run the L6 theme wave (27 items) first. The genre system's thirteen calls, the OXO genre-contract bench and the acquisitions wait for Papi.**",
-  "default": "Silence: the gate stays formally open but nothing more is built on it; the twenty-six distills and the five models stand; TM 02 through 06 stay as published; the genre system's calls stay open; the acquisition queue waits in the drop folder; BOLO 24 stays parked.",
+  "order": "**The gate is closed. The drop-folder intake runs next: inventory the new PDFs, key them, distill the acquisitions and the character books Papi named (Character Bones first) into the systems. Theme (L6) and root (L0) waves follow when called. Nothing on this sheet gates BOLO 24 any more.**",
+  "default": "Silence: the gate stays closed; the twenty-six distills and the five models stand; TM 02 through 06 stay as published; the drop-folder rows sit keyed but undistilled; theme and root wait.",
   "calls": [
    {
     "q": "The character wave",
@@ -106,13 +106,15 @@
     "q": "The genre system's OPEN calls",
     "options": "thirteen candidates from the six distills (twelve or fewer layers · the names · one register from four vocabularies · the four clauses as card fields · genre load and the percentage balance · mode vs genre · a contract state track · Neale's keying rule · meta-genre · a genre's expiry · the dystopia mechanism to setting · the OXO contract bench · three labels not one) — rule as a block as recommended (rec) · one by one · park",
     "default": "as a block as recommended; the OXO contract stays a bench until OXO prose opens",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/16 (Papi: \"genre calls go\"): all thirteen as recommended; twelve layers hold, Truby's fourteen as the register's spine, the four clauses as required card fields; the OXO contract stays a bench. Genre system 0.1.1, TM 06 republished."
    },
    {
     "q": "Close the gate",
     "options": "close now, the five models stand and BOLO 24's story-side work resumes (rec) · run the L6 theme wave (27 items) and the L0 root wave (27) first · keep it open until every shelf is distilled to depth",
     "default": "close now; theme and root run as follow-on waves, not gates",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/16 (Papi: \"go ahead and close the gate\"): closed now; theme (L6) and root (L0) run as follow-on waves, not gates; BOLO 24's story-side work resumes."
    }
   ]
  },
@@ -126,7 +128,7 @@
     "last": "Stage 1, the Command-corpus sweep, was banked 8/26; stage 2, the library sweep, sat unfinished until the 9/16 break-break made it a gate.",
     "plan": "Finish stage 2 to the end: keyed shelves, then distills, then written models, then technical-manual pages, then this status sheet.",
     "you": "Papi ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
-    "next": "Papi calls the gate: close now, or the theme wave first. The genre system's calls and the acquisitions wait."
+    "next": "The drop-folder intake: inventory, key, distill the acquisitions and Character Bones; then theme and root when called."
    },
    "groups": [
     {
@@ -237,7 +239,7 @@
     "last": "Ten done phases landed in the 9/16 session, from the boresight through the TM pages.",
     "plan": "This sheet closes the session's owed item; the character, texture and genre waves come next, then the doc upgrades and the acquisitions.",
     "you": "Papi ruled the boresight, the plot system and the TM build; the scripted steps ran on Claude's side.",
-    "next": "Close the gate (rec); theme (L6) and root (L0) as follow-on waves."
+    "next": "The intake wave from the drop folder; then theme (L6) and root (L0)."
    },
    "main_effort": "The character wave, then the character document rewrite so TM 02 carries its slice.",
    "phases": [
@@ -573,7 +575,7 @@
     "last": "Every wave tonight ran on the formation: scripts at both ends, specialists in the middle, one reviewer.",
     "plan": "Same shape for every remaining shelf; one wave per shelf, on your word each time.",
     "you": "You open each wave and rule each model's calls; nothing distills without the word.",
-    "next": "\"Close the gate\" or \"theme wave go\"; \"genre calls go\" rules the thirteen; \"acquisitions in\" runs the inventory over the drop folder."
+    "next": "\"Intake go\" or a named book opens a distill; \"theme wave go\" opens L6."
    },
    "groups": [
     {
@@ -756,6 +758,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Six genre MS in parallel (Truby's Anatomy of Genres added when the spine doc named it the strong holding and it turned up as an orphan PDF), then the genre system on the fan-in seat, TM 06 published. The drop folder created and wired into the inventory; the inventory's regeneration bug found and fixed (keys now carry across runs). Twenty-six distills, five models, the gate ready to call."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Go ahead and close the gate. Genre calls go. The acquisitions are in the drop folder with a whole bunch of other new PDFs I'd like you to incorporate into the systems; especially look at Character Bones for the character system.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Gate closed on the sheet, BOLO.md and STATE; the thirteen genre calls ruled (doc 0.1.1, TM 06 v2); the drop-folder intake opened."
     }
    ]
   }

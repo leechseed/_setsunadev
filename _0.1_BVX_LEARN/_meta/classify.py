@@ -40,6 +40,12 @@ RULES = [
  r"anatomy of (story|genres|a best seller)|showrunner"),
 
 # --- strong-signal domains ---
+("GAM","BLACK","Game systems & design (the 9/16 drop intake: RPG product lines by filename)",
+ r"pathfinder|pzo\d|golarion|adventure path|sr[3-6]|srm\d|with a bullet point|savage worlds|traveller|"
+ r"world of darkness|vampire: the|werewolf: the|mage: the|ddex|forgotten realms|eberron|call of cthulhu|chaosium|"
+ r"warhammer|wfrp|dungeon world|blades in the dark|starfinder|pf[12]e?|bestiary|gamemaster|game master|"
+ r"player'?s? (guide|handbook|companion)|campaign setting|sourcebook|gm'?s? (guide|screen)|interactive maps|"
+ r"crypta hereticarum|hell's rebels|gothic grimoires|cc\d\d|war of the (burning|crown)|supplement"),
 ("GAM","BLACK","Game systems & design",
  r"pathfinder|shadowrun|battletech|dungeons?\s*&?\s*dragons|\bd&d\b|srd|\bogl\b|"
  r"paizo|catalyst game|modiphius|2d20|questworlds|cepheus|traveller|call of cthulhu|"

@@ -30,13 +30,17 @@ def drop_scan(cat_by_title, today):
     Title/author/year are guessed from the filename (Zotero export 'Author - Year - Title.pdf' or 'Title (Author).pdf' or
     z-lib 'Title (Author)ISBN (Z-Library).pdf'); the sweep keys them like any other row (bvx NEW until cataloged)."""
     root = STORAGES[2]; out = []
+    cat_by_file = {c["drop_file"]: c for c in cat_by_title.values() if c.get("drop_file")}
     if not os.path.isdir(root):
         return out
     for dp, _, fs in os.walk(root):
         for f in sorted(fs):
-            if not f.lower().endswith(".pdf"):
-                continue
-            stem = re.sub(r"\s*\(Z-Library\)|\s*9\d{12}|\s*\d{13}", "", f[:-4]).strip()
+            if not f.lower().endswith(".pdf") or f.startswith("._") or os.path.getsize(os.path.join(dp, f)) < 2048:
+                continue  # AppleDouble resource forks and empty files are not books
+            stem = re.sub(r"\s*\(Z-Library\)|\s*\(z-lib\.org\)|\s*9\d{12}|\s*\d{13}", "", f[:-4]).strip()
+            stem = re.sub(r"^\d{6,}-", "", stem)  # a Scribd numeric prefix
+            if "-" in stem and " " not in stem:
+                stem = stem.replace("-", " ")  # hyphenated Scribd names
             year = (re.search(r"(1[89]\d\d|20\d\d)", stem) or [None, ""])[1] if re.search(r"(1[89]\d\d|20\d\d)", stem) else ""
             m = re.match(r"^(.+?) - (\d{4}) - (.+)$", stem)
             if m:
@@ -47,7 +51,9 @@ def drop_scan(cat_by_title, today):
                     title, authors = m2.group(1).strip(), [a.strip() for a in re.split(r",| and | & ", m2.group(2)) if a.strip()]
                 else:
                     title, authors = stem, []
-            c = cat_by_title.get(norm(title))
+            c = cat_by_file.get(f) or cat_by_title.get(norm(title))
+            if c and c.get("drop_file") == f:
+                title, authors, year = c["t"], [x.strip() for x in re.split(r",| & ", c["a"]) if x.strip()], str(c.get("year") or "")
             out.append({"zid": None, "zkey": "", "type": "drop", "title": title, "authors": authors[:4], "year": year,
                         "publisher": "", "isbn": "", "pages": "", "abstract": False, "tags": [], "collections": [], "spine": [],
                         "has_pdf": True, "pdf_exists": True, "pdf": os.path.join(dp, f), "annotations": 0, "notes": [],

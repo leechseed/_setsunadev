@@ -17076,5 +17076,86 @@
   "primary": "MIL",
   "trunk": "BLACK",
   "id": "BVX.1121"
+ },
+ {
+  "t": "The Art of Dramatic Writing: Its Basis in the Creative Interpretation of Human Motives",
+  "a": "Lajos Egri",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": 320,
+  "year": 1946,
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1123",
+  "drop_file": "551892463-The-Art-of-Dramatic-Writing-Its-Basis-in-the-Creative-Interpretation-of-Human-Motives-Lajos-Egri.pdf"
+ },
+ {
+  "t": "The Writer's Journey: Mythic Structure for Writers",
+  "a": "Christopher Vogler",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": 404,
+  "year": 2007,
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1124",
+  "drop_file": "The Writers Journey Mythic Structure for Writers (Christopher Vogler) (z-lib.org).pdf"
+ },
+ {
+  "t": "Save the Cat! Writes a Novel",
+  "a": "Jessica Brody",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": 340,
+  "year": 2018,
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1125",
+  "drop_file": "Brody - 2018 - Save the cat! writes a novel the last book on nov.pdf"
+ },
+ {
+  "t": "Poetics (trans. Joe Sachs)",
+  "a": "Aristotle",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": 156,
+  "year": 2006,
+  "subjects": [
+   "LIT",
+   "PHI"
+  ],
+  "primary": "LIT",
+  "trunk": "BLACK",
+  "id": "BVX.1126",
+  "drop_file": "Aristotle Poetics (Aristotle, Joe Sachs)9781585101870 (Z-Library).pdf"
+ },
+ {
+  "t": "Attached: The New Science of Adult Attachment",
+  "a": "Amir Levine & Rachel Heller",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": 275,
+  "year": 2010,
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "BLACK",
+  "id": "BVX.1127",
+  "drop_file": "996207226-Attached-the-New-Science-of-Ad-Amir-Levine.pdf"
  }
 ]
