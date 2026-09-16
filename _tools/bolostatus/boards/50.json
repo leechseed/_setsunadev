@@ -6,7 +6,7 @@
   "issued": "2026-09-11",
   "asof": "2026-09-15",
   "s": "hot",
-  "status": "RULED 9/15, Papi: the NASA four — policy · procedure · standard · handbook; spec as a tag on nodes. Ladder file written; first filing pass stamped the same turn. Phases 3 and 4 done. Next: phase 5, the story side.",
+  "status": "9/15: the NASA four ruled · first filing pass stamped · PHASE 5 DONE the same night: three standards-body nodes seeded (DCUS · Trash Land · ASTRO7EX), each with an S12 invariant candidate. Next: the phase 5 rulings, then phase 6 the network on your go.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · the project flow · the design system · the story systems (DCUS · Trash Land · ASTRO7EX as in-world standards bodies) · BVX-LEARN",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,8 +54,8 @@
  ],
  "frago": {
   "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
-  "order": "**Phase 5 on your go: each world's standards body as a canon node.** DCUS · Trash Land · ASTRO7EX, the individual-versus-society dynamic written as the setting system's S12 invariant. Say \"go 5\" or name one world first.",
-  "default": "Silence: the ladder stands; every new house document carries the rung tag from birth; untagged documents are filed at the next sit rep. Phase 5 waits on your go.",
+  "order": "**Rule the three S12 candidates, one word each.** DCUS: \"No Star-Rating rises without a memory going missing from the record that earned it.\" Trash Land: \"No one crosses a cut without being logged; whoever goes off-cut stops being a person the Seal recognizes.\" ASTRO7EX: \"No person aboard eats a ration they did not put up themselves or receive, sealed and named, from their own community.\" Then \"go 6\" opens the network.",
+  "default": "Silence: all three nodes stand as ⧗ seeds; the candidates stay candidates; the recommended readings (Trash Land B, the trash is the standard · ASTRO7EX A, a life-support authority) run provisionally in any scene that needs them. Phase 6 waits on your go.",
   "calls": [
    {
     "q": "The house tiers",
@@ -81,6 +81,25 @@
     "q": "Phase 5 scope",
     "options": "all three worlds in one pass · DCUS first (the most rules already written) · one world as a vertical slice, then the rest",
     "default": "DCUS first as the slice",
+    "s": "ruled",
+    "ruling": "RULED 9/15 by \"go five\": all three worlds in one pass, three specialists at gear 1, one script reviewer at the fan-in (0 blocking)."
+   },
+   {
+    "q": "The three S12 invariants",
+    "options": "keep each candidate as written · amend one · strike one (the node keeps the strike line)",
+    "default": "candidates stand, unruled, until spoken",
+    "s": "open"
+   },
+   {
+    "q": "Who set the standard",
+    "options": "Trash Land: A a treaty body · B nobody, the trash is the standard (rec) · ASTRO7EX: A a life-support authority (rec) · B a preservers' guild · and the moon question: is moon-saga-seed ASTRO7EX's moon?",
+    "default": "Trash Land B · ASTRO7EX A · the moon unruled",
+    "s": "open"
+   },
+   {
+    "q": "Phase 6 scope",
+    "options": "the network as a page on the WARROOM pattern: rungs × projects × outside parents, browsable · a flat index in the ladder file first (rec) · wait",
+    "default": "the flat index first; the page when the count earns it",
     "s": "open"
    }
   ]
@@ -144,6 +163,10 @@
       {
        "t": "**9/15 · The ladder ruled.** The consult put NASA four against DoD three: DoD's three is only the technical half, with no rung for the SOP-class documents that make up most of what the house has written. NASA four carries the shall/should split that DOCTRINE 0 Invariant III already demands. Papi: \"let's go with the NASA four.\" BOLO 53's standard moved from the provisional STANDARD rung to PROCEDURE the same turn.",
        "s": "ruled"
+      },
+      {
+       "t": "**9/15 late · Phase 5 landed.** Three specialists, disjoint sources, one script reviewer: 0 blocking findings, em-dashes advisory. The fiction now rhymes with the house: each world has a body issuing standards on the same four rungs, and each node's dynamic table is the individual-versus-society battle Papi named.",
+       "s": "done"
       }
      ]
     }
@@ -177,8 +200,8 @@
    "strand": {
     "last": "Phase 1 landed in minutes.",
     "plan": "Pull, read, rule the ladder, file what exists, then derive.",
-    "you": "You ruled the ladder in one line after the consult.",
-    "next": "Phase 5 on your go; DCUS first is the recommendation."
+    "you": "You said go five. Three worlds, one pass.",
+    "next": "Three one-word rulings on the S12 lines, then go 6."
    },
    "main_effort": "The register, read. Everything else waits on it.",
    "phases": [
@@ -208,15 +231,15 @@
     },
     {
      "n": 5,
-     "t": "**The story side** — each world's standards body as a canon node (DCUS · Trash Land · ASTRO7EX), the individual-versus-society dynamic written as the setting system's S12 invariant.",
-     "s": "gated",
-     "when": "your go"
+     "t": "**The story side** — three nodes seeded in one pass: dcus-standards-body (The Administration as a standards body, the Star-Rating as its standard) · oxo-trash-land-standards-body (the border itself as the standard; two readings, B recommended) · astro7ex-standards-body (the cuisine rule as life support; two readings, A recommended). Each carries the in-world four rungs, six to eight named standards, the individual-versus-society table, and one S12 invariant candidate. Every node's OPEN list is on the node.",
+     "s": "done",
+     "when": "9/15"
     },
     {
      "n": 6,
-     "t": "**The network** — links between rungs, projects and outside parents; browsable on the WARROOM pattern.",
+     "t": "**The network** — links between rungs, projects and outside parents; a flat index in the ladder file first, the browsable page on the WARROOM pattern when the count earns it.",
      "s": "gated",
-     "when": "later"
+     "when": "your go"
     }
    ],
    "coord": [
@@ -259,6 +282,21 @@
      "path": "ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_standards_ladder.md",
      "what": "the ladder: four rungs, the rule that decides the rung, the tag, the filing table of record",
      "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/dcus-standards-body.md",
+     "what": "DCUS standards body seed (spec rung); S12 candidate on the Star-Rating and Memories",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/oxo-trash-land-standards-body.md",
+     "what": "Trash Land standards body seed (spec rung); the border as the standard; sibling S12 candidate to the seed's",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/astro7ex-standards-body.md",
+     "what": "ASTRO7EX standards body seed (spec rung); the cuisine rule as life-support standard; S12 candidate",
+     "s": "done"
     }
    ],
    "cost": [
@@ -285,7 +323,7 @@
     "last": "Opened on a break-break.",
     "plan": "One decider.",
     "you": "The ladder, the filing, the name.",
-    "next": "Phase 5 scope is the one open call."
+    "next": "The S12 rulings and the two reading picks are the open calls; phase 6 waits."
    },
    "groups": [
     {
@@ -358,6 +396,16 @@
      "when": "9/15",
      "who": "Claude",
      "t": "Ladder file written in 05_OPERATIONS; rung tags stamped across the house documents (first filing pass); BOLO 53's rung moved to procedure; FRAGO 50 v0.3 and FRAGO 53 pushed."
+    },
+    {
+     "when": "9/15",
+     "who": "Papi",
+     "t": "\"Go five. Five. Go five.\""
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "Phase 5 run as the formation: three sonnet specialists (BODY-DCUS · BODY-TRASH · BODY-ASTRO) on disjoint sources, check_bodies.py at the fan-in, 0 blocking. Three nodes filed as specs; ladder table updated; FRAGO 50 v0.4."
     }
    ]
   }

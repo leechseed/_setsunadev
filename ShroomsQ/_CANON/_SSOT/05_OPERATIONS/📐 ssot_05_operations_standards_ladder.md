@@ -72,6 +72,9 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬 MIL.11 — MCDP 8 Information — USMC (2022).md` | handbook | stamped |
 | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_writing_guide.md` | standard | read-only file, listed here only |
 | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md` | procedure | read-only file, listed here only |
+| `_CANON_NODES/dcus-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
+| `_CANON_NODES/oxo-trash-land-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
+| `_CANON_NODES/astro7ex-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
 | `_CANON_NODES/*.md` (34 files) | spec | listed by folder; tagged one by one as each node is next touched |
 
 ## Governance
