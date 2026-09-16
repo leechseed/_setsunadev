@@ -170,6 +170,9 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 | variety eats all | **Variety Itsol** (performer) |
 | Lina Vesper (as heard) | **Lina Vesper** (performer; spelling unverified 9/8) |
 | black room · dark room | **DARKROOM** |
+| dope shit · the dope on N (as heard) | **DOPE SHEET N** (coded 9/15) |
+| Bolo Polo N · bolo polo | **BOLO N** (coded 9/15) |
+| goes to ex N · goes to ex … N (repeated) | **go N** — the phase go-word on a DOPE SHEET (coded 9/15: "goes to ex 6" = go 6) |
 | bolo · polo (in a tasking context) | **BOLO** |
 | break break (×2 or ×3) | **break-break** (nested detours stack) |
 | ask her mic · oscar mic · Oscar Mike's | **Oscar Mike** |
