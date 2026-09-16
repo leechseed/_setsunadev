@@ -119,13 +119,13 @@ flowchart TD
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Three parts, each correcting the excesses of the one that would follow if left unchecked:
+Three parts, each correcting the excesses of the one that would follow if left unchecked.
 
-- **Part I (ch. 1-2), definitions and concepts.** Traces genre theory's history (Alloway's iconography, Buscombe/McArthur, Ryall's audience-and-industry triangle, Tudor's "empiricist dilemma," Hirsch/Derrida/speech-act theory) to a conclusion: genre is ubiquitous, multi-dimensional, and not exclusive to Hollywood. Chapter 2 adds verisimilitude and the inter-textual relay as the mechanisms that actually produce genre-in-use.
-- **Part II (ch. 3-5), genres surveyed.** A stock-taking of fourteen "major genres" at summary level, then two extended case studies — film noir and melodrama — chosen precisely because they break the assumption, built up in Part I, that critical and industrial genre terms coincide.
-- **Part III (ch. 6-7), theory, industry and history.** Chapter 6 audits aesthetic theories (Schatz's "predetermined" genre-film, Russian Formalist stage theory, Altman's semantic/syntactic split, Jauss/Cohen's genre-as-process) and socio-cultural theories (ritual, ideological, Kapsis's "production of culture" alternative). Chapter 7 tests all of it against actual Variety output in the mid-1930s and mid-1980s, concluding that cycles, production trends, budget tiers, star-genre formulations, and hybrids outnumber and outrank "genre" as Hollywood's own planning unit in both eras.
+- **Part I (ch. 1-2), definitions and concepts.** Traces genre theory's history (Alloway's iconography, Buscombe/McArthur, Ryall's audience-and-industry triangle, Tudor's "empiricist dilemma," Hirsch/Derrida/speech-act theory) to one conclusion: genre is ubiquitous, multi-dimensional, and not exclusive to Hollywood. Chapter 2 adds verisimilitude and the inter-textual relay as the mechanisms that actually produce genre-in-use.
+- **Part II (ch. 3-5), genres surveyed.** A stock-taking of fourteen "major genres" at summary level, then two extended case studies, film noir and melodrama, chosen because they break the assumption built up in Part I that critical and industrial genre terms coincide.
+- **Part III (ch. 6-7), theory, industry and history.** Chapter 6 audits aesthetic theories (Schatz's "predetermined" genre-film, Russian Formalist stage theory, Altman's semantic/syntactic split, Jauss and Cohen's genre-as-process) and socio-cultural theories (ritual, ideological, Kapsis's "production of culture" alternative). Chapter 7 tests all of it against actual Variety output in the mid-1930s and mid-1980s, and concludes that cycles, production trends, budget tiers, star-genre formulations, and hybrids outnumber and outrank "genre" as Hollywood's own planning unit in both eras.
 
-The whole book is an argument by demonstrated exception: every chapter produces a case (the western's atypical iconography, noir's non-existence as an industry term, melodrama's opposite trade meaning, 1930s Variety's sixty-one-category "Genre Index") that a tidier theory would have to suppress.
+The whole book argues by demonstrated exception. Every chapter produces a case (the western's atypical iconography, noir's non-existence as an industry term, melodrama's opposite trade meaning, 1930s Variety's sixty-one-category "Genre Index") that a tidier theory would have to suppress.
 
 ---
 
