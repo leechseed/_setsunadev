@@ -75,7 +75,9 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 
 | ID | Title | Spine | Diagrams | Gate | Wave |
 |---|---|---|---|---|---|
-| `BVX.0064` | McKee — Character | — | 0 | ❌ v2 entry, retrofit owed | pre-v4 (8/15) |
+| `BVX.0064` | McKee — Character | L5 | 3 | ✅ 9/16 retrofit, v2 content kept | 2 |
+| `BVX.0089` | Phillips & Huntley — Dramatica (the ruled spine's source) | L0 L1 L2 L3 L4 L5 L6 | 5 | ✅ 9/16 | 2 |
+| `BVX.0163` | Snyder — Save the Cat! (2005) | L4 L7 | 4 | ✅ 9/16 · the Zotero record `3T7PKFVI` is mis-titled as Brody 2018; the PDF is Snyder | 2 |
 | `BVX.0175` | McKee — Story | L4 L6 L0 | 3 | ✅ 9/16 | 1 |
 | `BVX.0236` | Coyne — The Story Grid | L4 L7 | 3 | ✅ 9/16 | 1 |
 | `BVX.0075` | Davis — Creating Compelling Characters | L5 | 3 | ✅ 9/16 | 1 |
