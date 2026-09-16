@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "D-9 GO · D-6 YES · D-7 RULED · the character sheet v0.2: **name (Remi Slate) and chart ruled 9/16** · the gates table waits on D-5",
+  "status": "D-9 GO · D-6 YES · D-7 RULED · character sheet v0.2 (name + chart ruled) · **Season 1 beat sheet + shoot list on disk (8 sets / 38 stills)** · the gates table waits on D-5",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.8 · DOPE SHEET"
+  "version": "v0.9 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Rule the death month (May 2020 rec) and D-5 the nut and runway.** The Season 1 beat sheet and the shoot list build off the ruled chart now.",
+  "order": "**Rule the beat sheet's six calls by number and the death month; then D-5.** With the shoot list on disk, Gate 3 (the vertical slice: one set at target quality) is the next build.",
   "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the character sheet builds on the ruled spine; the gates table stays gated on D-5; D-8 and D-11 run on their recommendations.",
   "calls": [
    {
@@ -211,7 +211,7 @@
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
     "you": "You ruled D-9, D-6, D-7, the name and the chart in one day.",
-    "next": "The death month and D-5. Then the beat sheet builds."
+    "next": "Rule the beat sheet's calls and the death month; D-5 for the gates table. Then the slice."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -229,15 +229,15 @@
     },
     {
      "n": 2,
-     "t": "**The design set** — the three no-dependency items landed 9/16 (benchmark read · Blender COA · reference-pull spec). D-6 and D-7 both ruled 9/16: **the character sheet builds now** (12-layer lite · TCVM · sex menu · Fantasy Drive · chart-first birth date · the death date · the dropout · the eviction). The gates table waits on D-5.",
+     "t": "**The design set** — benchmark read · Blender COA · reference-pull spec · **the character sheet v0.2** (name + chart ruled) · **the Season 1 beat sheet + shoot list** (8 sets / 38 stills) all on disk 9/16. Left: the gates table with the nut (needs D-5) · attainability stated.",
      "s": "open",
-     "when": "unlocked 9/16"
+     "when": "9/16"
     },
     {
      "n": 3,
-     "t": "**The vertical slice** — one complete still set at target quality plus one week of posting to the grammar on a test account; AAR.",
+     "t": "**The vertical slice** — one complete still set at target quality (rec: set 4 of the shoot list as the Gate 3 skin test) plus one week of posting to the grammar on a test account; AAR.",
      "s": "gated",
-     "when": "after 2"
+     "when": "next build"
     },
     {
      "n": 4,
@@ -323,6 +323,11 @@
     {
      "path": "_PRIVATE/BOLO-24-character-sheet.md",
      "what": "the character sheet v0.2 — name Remi Slate ruled; chart ruled (\"chart go\") and corrected to the sky: born the night of Aug 11, 2005, Sun Leo · Moon Scorpio · Aries rising · Mars Taurus opposing the Moon; 2020 Uranus transit on both; §9 four calls open (death month · handle · TCVM · sex menu) + the Season 2 seed",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/BOLO-24-season-1-beats.md",
+     "what": "Season 1 beat sheet + shoot list v0.1: the five beats expanded · the 90-day calendar anchored on the April grief season · 8 sets / 38 stills (28 launch + 10 buffer), every set renderable on COA A · the sad-post spine · the Season 2 seed · six calls",
      "s": "done"
     }
    ],
@@ -487,6 +492,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Chart ruled and corrected against an ephemeris the same turn: the MS's block had Aug 8 (Moon Virgo) and three placements impossible in 2005; moved to Aug 11 night, intent kept (Sun Leo · Moon Scorpio · Aries rising · Uranus opposing the Moon in 2020). Sheet v0.2. Republished on Papi's word."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Beats go.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Season 1 beat sheet + shoot list v0.1 on an MS (1,978 words, 8 sets / 38 stills); phase 2 near complete, phase 3 named; sheet v0.9 republished."
     }
    ]
   }
