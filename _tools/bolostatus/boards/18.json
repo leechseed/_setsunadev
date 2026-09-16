@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -94,7 +94,8 @@
     "q": "The texture system's OPEN calls",
     "options": "thirteen candidates from the five distills (ten or twelve layers · the names · the T2 split · the reflection axis · the distance scale and its instrument · a register slot · the function count · viewpoint silence · the discrepancy flag · memory and the Pause test · the mood-curve entry and the reader ledger · the OXO profile bench · acquisitions) — rule as a block as recommended (rec) · one by one · park",
     "default": "as a block as recommended; the OXO profile stays a bench until OXO prose opens",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/16 (Papi: \"texture calls go\"): all thirteen as recommended; twelve layers hold, the names and the OXO profile bench stay provisional. Texture system 0.1.1, TM 05 republished."
    }
   ]
  },
@@ -504,7 +505,7 @@
     "last": "Every wave tonight ran on the formation: scripts at both ends, specialists in the middle, one reviewer.",
     "plan": "Same shape for every remaining shelf; one wave per shelf, on your word each time.",
     "you": "You open each wave and rule each model's calls; nothing distills without the word.",
-    "next": "\"Genre wave go\" opens the last shelf; \"texture calls go\" rules the thirteen as a block."
+    "next": "\"Genre wave go\" opens the last shelf."
    },
    "groups": [
     {
@@ -667,6 +668,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "The texture wave landed: five MS distills through RANGE, then the texture system v0.1.0 on the fan-in seat, TM 05 built and published. The genre wave is the order now. Gear 2 for the wave."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Texture calls go.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "The thirteen texture calls ruled as recommended (doc 0.1.1, TM 05 v2). Nothing owed from Papi on BOLO 18 but the genre wave's opening and the acquisitions."
     }
    ]
   }

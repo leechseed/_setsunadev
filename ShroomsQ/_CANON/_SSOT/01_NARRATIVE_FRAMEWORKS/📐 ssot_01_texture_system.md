@@ -1,10 +1,10 @@
 ---
 type: ssot_01_texture_system
 category: texture_system
-version: 0.1.0
+version: 0.1.1
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.0 2026-09-16 (BOLO 18 texture wave, Papi: \"texture wave go\"): written from the TEXTURE shelf; the twelve T-layer names are house coinage awaiting ruling; the OXO telling profile instanced as a bench, not a ruling; provisional"
+status: "v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Papi: \"texture calls go\"); twelve layers hold, names and the OXO bench stay provisional. v0.1.0 2026-09-16 (BOLO 18 texture wave, Papi: \"texture wave go\"): written from the TEXTURE shelf; the twelve T-layer names are house coinage awaiting ruling; the OXO telling profile instanced as a bench, not a ruling; provisional"
 rung: standard
 dependencies: ["ssot_01_texture_layer", "ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_medium_grammars", "ssot_03_setting_system", "ssot_04_plot_system", "ssot_02_character_systems_vertical_slice"]
 trunk: BLACK
@@ -208,22 +208,23 @@ Every value above is marked ⧗ and grounded in what the canon docs already say:
 
 ## OPEN
 
-Built from the five wave distills' "For the texture system" bullets; none ruled this wave.
+Built from the five wave distills' "For the texture system" bullets. **RULED 2026-09-16 (Papi: "texture calls go"): all thirteen as recommended.** The count is twelve; the names stay house coinage and the OXO profile stays a bench until OXO prose opens, exactly as the recommendations say. Each call below now reads as an order, not a proposal. Provisional a week like every ruling.
 
-1. **Ten or twelve layers.** T11 MEDIUM and T12 FUNCTION are house additions beyond the layer doc's original ten questions. *Recommendation:* twelve, the mirror holds against the character, setting, and plot stacks.
-2. **The twelve names.** House coinage, same status as the P-layer and S-layer names, awaiting Papi's ruling. *Recommendation:* bench on request, no ruling forced this wave.
-3. **Split T2 into perceptual and informational sub-fields.** Bal's EF/CF and the perceptible marker argue the single `focalization_mode` value hides two decisions, whose subjective view and what the reader is denied ([[BVX.0598]], [[BVX.0596]]). *Recommendation:* yes, carry both sub-fields on the profile.
-4. **The reflection axis.** The DNS's third dimension, the narrator's or character's cognitive, emotive, and normative mark-up of what is perceived, has no clean home among the ten questions ([[BVX.0598]]). *Recommendation:* T7 absorbs it, provisionally.
-5. **T6 distance policy as a named three-point scale, plus a countable instrument.** Cinematic, light, deep, named by two independent sources, and barrier-word density as the measurable proxy ([[BVX.0273]], [[BVX.0061]]). *Recommendation:* adopt the scale now, the instrument later.
-6. **A register slot on the telling line.** Kempton's seven genre registers could seed the TRANSLATION GRID's craft column and flag a mismatched scene ([[BVX.0084]]). *Recommendation:* yes, add it.
-7. **A per-scene dialogue function count.** Kempton's seven-function test audits a line by removal; the telling line has no field for the tally ([[BVX.0084]]). *Recommendation:* hold, it is a revision check, not a schema field.
-8. **Viewpoint silence as a named focalization move.** Neither zero, internal, nor external, a focalized character's deliberate non-report of her own thought ([[BVX.0084]]). *Recommendation:* a T2 sub-value.
-9. **Narrator/focalizer discrepancy as a notation.** Bal's manipulation diagnostic, the gap between a T1 reading and a T2 reading of the same passage, has no flag on the profile ([[BVX.0596]]). *Recommendation:* a flag on the profile.
-10. **Memory as a focalization mode, and description's motivation test at Pause.** Bal argues memory is retrospective, unreliable, sense-based, and itself narrativized, and that description needs a threefold motivation check, delimitation, motivation, rhetorical binding, wherever a scene marks the Pause duration ([[BVX.0596]]). *Recommendation:* a T2 sub-value, a T4 note.
-11. **The mood curve's entry format, and the reader-response ledger.** Iglesias supplies emotion plus technique plus the payoff owed as the entry format; Pelican ([[BVX.0233]]) argued the same running ledger of paid versus unpaid anticipation from the character side ([[BVX.0279]]). *Recommendation:* the entry format now, the ledger as a stack-external reader model shared with the character system's OPEN 9.
-12. **The OXO telling profile.** The bench filled above, twelve proposed lines against a work with no ruled Telling Profile at all. *Recommendation:* Papi strikes or keeps line by line when OXO prose opens.
-13. **Acquisitions.** Genette's *Narrative Discourse*, Booth's *The Rhetoric of Fiction*, and Bal's own theory volume, BVX.0591, still not distilled. *Recommendation:* queue all three, deepen T1, T2, and T9 next.
+1. **Ten or twelve layers.** T11 MEDIUM and T12 FUNCTION are house additions beyond the layer doc's original ten questions. *Ruled 9/16, as recommended:* twelve, the mirror holds against the character, setting, and plot stacks.
+2. **The twelve names.** House coinage, same status as the P-layer and S-layer names, awaiting Papi's ruling. *Ruled 9/16, as recommended:* bench on request, no ruling forced this wave.
+3. **Split T2 into perceptual and informational sub-fields.** Bal's EF/CF and the perceptible marker argue the single `focalization_mode` value hides two decisions, whose subjective view and what the reader is denied ([[BVX.0598]], [[BVX.0596]]). *Ruled 9/16, as recommended:* yes, carry both sub-fields on the profile.
+4. **The reflection axis.** The DNS's third dimension, the narrator's or character's cognitive, emotive, and normative mark-up of what is perceived, has no clean home among the ten questions ([[BVX.0598]]). *Ruled 9/16, as recommended:* T7 absorbs it, provisionally.
+5. **T6 distance policy as a named three-point scale, plus a countable instrument.** Cinematic, light, deep, named by two independent sources, and barrier-word density as the measurable proxy ([[BVX.0273]], [[BVX.0061]]). *Ruled 9/16, as recommended:* adopt the scale now, the instrument later.
+6. **A register slot on the telling line.** Kempton's seven genre registers could seed the TRANSLATION GRID's craft column and flag a mismatched scene ([[BVX.0084]]). *Ruled 9/16, as recommended:* yes, add it.
+7. **A per-scene dialogue function count.** Kempton's seven-function test audits a line by removal; the telling line has no field for the tally ([[BVX.0084]]). *Ruled 9/16, as recommended:* hold, it is a revision check, not a schema field.
+8. **Viewpoint silence as a named focalization move.** Neither zero, internal, nor external, a focalized character's deliberate non-report of her own thought ([[BVX.0084]]). *Ruled 9/16, as recommended:* a T2 sub-value.
+9. **Narrator/focalizer discrepancy as a notation.** Bal's manipulation diagnostic, the gap between a T1 reading and a T2 reading of the same passage, has no flag on the profile ([[BVX.0596]]). *Ruled 9/16, as recommended:* a flag on the profile.
+10. **Memory as a focalization mode, and description's motivation test at Pause.** Bal argues memory is retrospective, unreliable, sense-based, and itself narrativized, and that description needs a threefold motivation check, delimitation, motivation, rhetorical binding, wherever a scene marks the Pause duration ([[BVX.0596]]). *Ruled 9/16, as recommended:* a T2 sub-value, a T4 note.
+11. **The mood curve's entry format, and the reader-response ledger.** Iglesias supplies emotion plus technique plus the payoff owed as the entry format; Pelican ([[BVX.0233]]) argued the same running ledger of paid versus unpaid anticipation from the character side ([[BVX.0279]]). *Ruled 9/16, as recommended:* the entry format now, the ledger as a stack-external reader model shared with the character system's OPEN 9.
+12. **The OXO telling profile.** The bench filled above, twelve proposed lines against a work with no ruled Telling Profile at all. *Ruled 9/16, as recommended:* Papi strikes or keeps line by line when OXO prose opens.
+13. **Acquisitions.** Genette's *Narrative Discourse*, Booth's *The Rhetoric of Fiction*, and Bal's own theory volume, BVX.0591, still not distilled. *Ruled 9/16, as recommended:* queue all three, deepen T1, T2, and T9 next.
 
 ## Version history
 
+- **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("texture calls go"): twelve layers hold; T2 splits into perceptual and informational sub-fields at the next bump; the three-point distance scale adopted; the register slot added to the telling line; the reflection axis absorbed by T7 provisionally; the OXO profile stays a bench. No slice or instrument change tonight.
 - **0.1.0, 2026-09-16.** First texture_system document, written on Papi's order ("texture wave go", BOLO 18) from the TEXTURE shelf's eight distills: the Ten Questions restated as axes, twelve-layer TEXTURE SLICE mirroring the character, setting, and plot stacks, the TELLING PROFILE and telling line as the instance format, OXO benched as a proposed profile, not a ruling. Layer names, count, and every OXO value provisional pending Papi's ruling.
