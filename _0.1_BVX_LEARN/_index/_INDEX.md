@@ -78,7 +78,7 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.0064` | McKee — Character | L5 | 3 | ✅ 9/16 retrofit, v2 content kept | 2 |
 | `BVX.0089` | Phillips & Huntley — Dramatica (the ruled spine's source) | L0 L1 L2 L3 L4 L5 L6 | 5 | ✅ 9/16 | 2 |
 | `BVX.0163` | Snyder — Save the Cat! (2005) | L4 L7 | 4 | ✅ 9/16 · the Zotero record `3T7PKFVI` is mis-titled as Brody 2018; the PDF is Snyder | 2 |
-| `BVX.0458` | Kobold Guide to Worldbuilding (Baur et al.) | SETTING | 3 | ✅ 9/16 · `BVX.0541` is a duplicate catalog row of this book, collapse owed | 3 (setting) |
+| `BVX.0458` | Kobold Guide to Worldbuilding (Baur et al.) | SETTING | 3 | ✅ 9/16 · `BVX.0541` was a duplicate catalog row of this book, collapsed 9/16 (its row is marked, the id is retired) | 3 (setting) |
 | `BVX.0349` | Kennedy — Against Worldbuilding | SETTING L0 L7 | 3 | ✅ 9/16 · the counter-voice; challenges the full 12-layer fill, answered by Axis 3 + S12 | 3 (setting) |
 | `BVX.1122` | GURPS Hot Spots: Renaissance Venice | SETTING | 3 | ✅ 9/16 · the first sourcebook as a SETTING-SLICE instance (S12 unfillable from a gazetteer) | 3 (setting) |
 | `BVX.0175` | McKee — Story | L4 L6 L0 SETTING | 4 | ✅ 9/16 · setting addendum (ch. 3) 9/16 | 1 + 3 |
@@ -632,7 +632,7 @@ Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine ke
 | `BVX.0538` | `GAM` `CRE` | BLACK | The creation of narrative in tabletop role-playing games | Cover | 205 |
 | `BVX.0539` | `GAM` | BLACK | The CRPG Book Project | Felipe Pepe | 685 |
 | `BVX.0540` | `GAM` `CRE` | BLACK | The game narrative toolbox | Heussner | 248 |
-| `BVX.0541` | `GAM` `CRE` | BLACK | The Kobold Guide to Worldbuilding (Wo... |  | 116 |
+| `BVX.0541` | `GAM` `CRE` | BLACK | The Kobold Guide to Worldbuilding (Wo... · **DUPLICATE of `BVX.0458`, collapsed 2026-09-16; id retired** |  | 116 |
 | `BVX.0542` | `GAM` `CRE` | BLACK | The Ultimate RPG Character Backstory Guide: Prompts and Ac | James D'Amato | 373 |
 | `BVX.0543` | `GAM` | BLACK | The World of Tom Clancy's the Division |  |  |
 | `BVX.0544` | `GAM` | BLACK | Things from the flood | Stålenhag, Hintze, Kar |  |
