@@ -1,0 +1,10 @@
+{
+  "hotkey": "ctrl+alt+space",
+  "model": "distil-large-v3",
+  "device": "auto",
+  "compute_type": "auto",
+  "input_device": null,
+  "aggressive": false,
+  "type_output": true,
+  "beep": true
+}

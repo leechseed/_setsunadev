@@ -35,3 +35,7 @@ _tools/oscarmike/work/
 _tools/bolostatus/work/
 _tools/creator-cases/work/
 _tools/loci/work/
+
+# python bytecode (added 9/16 with _tools/dictation)
+__pycache__/
+*.pyc

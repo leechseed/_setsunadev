@@ -212,4 +212,7 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 | Ebola · a bolo · the bolo · "below forty-five" (below + a number, 9/11) | **BOLO** — the watchlist / a BOLO row; "the BOLO status page" = **OPORD N** (provisional), its update = **FRAGO N** |
 | Quinton | Quinn Bishop |
 | The Outsiders | **The Outliers** |
+| borsite · bore site · boar sight | **boresight** (coded 9/16 — first catch from the BOLO 26 tool itself) |
+| Poppy · poppie · papi (lowercase) | **Papi** (coded 9/16 — the recognizer hears the address as the flower) |
+| darkroom · dark-room (one word) | **DARKROOM** (coded 9/16 — §8 already held the two-word garbles, not the cased single word) |
 | year ranges spoken as "twenty twelve … two thousand five … twenty twenty too" | check against the doc that holds the range before reading a number |

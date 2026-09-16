@@ -1,13 +1,17 @@
 ---
+ruled: 2026-09-16
 parked: 2026-09-03
 title: The Dictation Dictionary
 handle: dictation dictionary
 tags: [dictation, whisper, tooling, OPERATOR, SOP-8, BOLO-26]
-status: parked
-open-decision: "the route — BUILD (Claude writes the push-to-talk tool) vs INSTALL (whisper-writer / Whispering, verify both) vs PAY (Wispr Flow / Aqua Voice, against budget)"
+status: delivered — route ruled BUILD 2026-09-16, tool shipped
+closed-decision: "RULED BUILD 2026-09-16. Was: the route — BUILD (Claude writes the push-to-talk tool) vs INSTALL (whisper-writer / Whispering, verify both) vs PAY (Wispr Flow / Aqua Voice, against budget)"
 ---
 
-# The Dictation Dictionary — parked on the route ruling
+# The Dictation Dictionary — DELIVERED
+
+> **RULED BUILD 2026-09-16** (Papi: "build"). Tool shipped the same session: [`_tools/dictation/`](../_tools/dictation/README.md).
+> §8 is parsed live, so the codebook cannot drift. Card kept as the derivation; nothing here needs re-walking.
 
 Card for **BOLO 26**. Everything walked on 9/3 is here; pick-up needs no re-derivation.
 
@@ -33,7 +37,9 @@ Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike �
 - Years as "twenty oh five", not "two thousand five". Critical proper nouns slightly slower, once; spell a new name the first time.
 - Headset/boom mic a few inches off, consistent distance; input ~70–80%; audio enhancements off if the tool fights them.
 
-## Resume
-The route ruling. On BUILD: Claude ships the tool same session. On INSTALL: verify the two candidates (Windows · prompt · replacements) then configure. On PAY: pick one, load the lexicon.
+## Resume — closed
+~~The route ruling. On BUILD: Claude ships the tool same session.~~ **Done 9/16, BUILD, shipped.**
+What is left is not this card: BOLO 56 (JUDY) carries the speaking half, the wire, and the face.
+Old text: On INSTALL: verify the two candidates (Windows · prompt · replacements) then configure. On PAY: pick one, load the lexicon.
 
 Related: SOP §8 · BOLO 26 · [[the corner]] (mic/desk gear lives there)
