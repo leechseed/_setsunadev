@@ -266,4 +266,5 @@ All quotes verbatim from the pdftotext extraction; the character `fi`/`fl` ligat
 ## META
 - Template: BVX-LEARN-v4.0
 - Source classification: full-text book, pdftotext extraction
+- Setting addendum 2026-09-16 from ch. 3.
 - Created / Updated: 2026-09-16
