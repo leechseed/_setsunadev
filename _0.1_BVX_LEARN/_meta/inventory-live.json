@@ -218,8 +218,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "System mechanics rulebook"
  },
  {
   "zid": 1325,
@@ -281,8 +282,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Combat mechanics"
  },
  {
   "zid": 3839,
@@ -311,8 +313,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Combat mechanics"
  },
  {
   "zid": 643,
@@ -1176,8 +1179,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Art/photography portfolio with poetic titles, not narrative instruction"
  },
  {
   "zid": 1231,
@@ -1379,7 +1383,7 @@
   "zid": 311,
   "zkey": "QN7DN9PE",
   "type": "journalArticle",
-  "title": "AN E23 SOURCEBOOK FOR GURPS®",
+  "title": "PULP GUNS, VOLUME 2",
   "authors": [
    "Jackson"
   ],
@@ -1403,8 +1407,10 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "AN E23 SOURCEBOOK FOR GURPS®"
  },
  {
   "zid": 3833,
@@ -1421,7 +1427,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\9N6YZVIL\\Jackson - An e23 Sourcebook for GURPS®.pdf",
@@ -1432,14 +1440,17 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Underground city setting",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Locations:"
  },
  {
   "zid": 3836,
   "zkey": "5WI3TRPH",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "FIGHTERS, CARRIERS, AND MECHATM",
   "authors": [
    "Jackson"
   ],
@@ -1461,14 +1472,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3837,
   "zkey": "5IIHXAXR",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "WILD JUSTICE",
   "authors": [
    "Jackson"
   ],
@@ -1479,7 +1492,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\2TVD3QKN\\Jackson - An e23 Sourcebook for GURPS®.pdf",
@@ -1490,14 +1505,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Pre-made NPC team/campaign",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3838,
   "zkey": "KR3CJWFH",
   "type": "journalArticle",
-  "title": "AN E23 SOURCEBOOK FOR GURPS®",
+  "title": "ACTION 2",
   "authors": [
    "Jackson"
   ],
@@ -1519,8 +1536,10 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "AN E23 SOURCEBOOK FOR GURPS®"
  },
  {
   "zid": 3851,
@@ -1548,8 +1567,11 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Illustrated by SCOTT MAYKRANTZ"
  },
  {
   "zid": 3852,
@@ -1577,8 +1599,11 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Illustrated by DAN SMITH"
  },
  {
   "zid": 3855,
@@ -1606,8 +1631,11 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Illustrated by ALEX FERNANDEZ and DAN SMITH"
  },
  {
   "zid": 3856,
@@ -1635,8 +1663,11 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Illustrated by DAN SMITH"
  },
  {
   "zid": 3857,
@@ -1664,14 +1695,17 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Illustrated by DAN SMITH"
  },
  {
   "zid": 3883,
   "zkey": "NPL429NV",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "Hot Spots:TM",
   "authors": [
    "Jackson"
   ],
@@ -1693,14 +1727,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3889,
   "zkey": "V33WUZSU",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "LOST WORLDSTM",
   "authors": [
    "Jackson"
   ],
@@ -1722,14 +1758,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3893,
   "zkey": "Y7ZIV6H8",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "LOADOUTS:TM",
   "authors": [
    "Jackson"
   ],
@@ -1751,8 +1789,10 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3896,
@@ -1780,14 +1820,17 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Locations:"
  },
  {
   "zid": 3901,
   "zkey": "TPNUQ3AG",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "An e23 Sourcebook for GURPS�",
   "authors": [
    "Jackson"
   ],
@@ -1809,14 +1852,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3934,
   "zkey": "T2BULNU3",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "Editorial Assistance by JASON \"PK\" LEVINE",
   "authors": [
    "Jackson"
   ],
@@ -1838,14 +1883,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3936,
   "zkey": "FAFYRY7J",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "WARSHIPS AND SPACE P TM",
   "authors": [
    "Jackson"
   ],
@@ -1867,14 +1914,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3940,
   "zkey": "GL65ASWQ",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "Editorial Assistance by JASON \"PK\" LEVINE",
   "authors": [
    "Jackson"
   ],
@@ -1896,14 +1945,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3946,
   "zkey": "BT7HK6DJ",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "An e23 Sourcebook for GURPS�",
   "authors": [
    "Jackson"
   ],
@@ -1925,14 +1976,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3960,
   "zkey": "SYMBEX8K",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "Additional Material, Consultancy, and Template Assistance by DAVID PULVER",
   "authors": [
    "Jackson"
   ],
@@ -1954,14 +2007,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3961,
   "zkey": "5AGBPQZ8",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "Editorial Assistance by JASON \"PK\" LEVINE",
   "authors": [
    "Jackson"
   ],
@@ -1983,14 +2038,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3962,
   "zkey": "4NPTQC54",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "THE MEME TEAM",
   "authors": [
    "Jackson"
   ],
@@ -2001,7 +2058,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\ZXRX69ZC\\Jackson - An e23 Sourcebook for GURPS®.pdf",
@@ -2012,14 +2071,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Pre-made NPC team/campaign",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3963,
   "zkey": "TVJER7PY",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "SCHOOL DAYS 2100",
   "authors": [
    "Jackson"
   ],
@@ -2041,14 +2102,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3965,
   "zkey": "CMXNFYXA",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "2100, FOURTH Q TM",
   "authors": [
    "Jackson"
   ],
@@ -2070,14 +2133,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3966,
   "zkey": "NPZFRRTZ",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "2101, FIRST Q TM",
   "authors": [
    "Jackson"
   ],
@@ -2099,14 +2164,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3977,
   "zkey": "AK2GBMGU",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "2101, FIRST Q TM",
   "authors": [
    "Jackson"
   ],
@@ -2128,8 +2195,10 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3979,
@@ -2157,14 +2226,17 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®",
+  "title_bad_repair": "Illustrated by ALEX FERNANDEZ,"
  },
  {
   "zid": 3998,
   "zkey": "QRUBN47S",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "LOST SERIFSTM",
   "authors": [
    "Jackson"
   ],
@@ -2186,14 +2258,16 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 3999,
   "zkey": "GJ8PI8X4",
   "type": "journalArticle",
-  "title": "An e23 Sourcebook for GURPS®",
+  "title": "Editorial Assistance by JASON \"PK\" LEVINE",
   "authors": [
    "Jackson"
   ],
@@ -2215,8 +2289,10 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game mechanics supplement",
+  "title_zotero": "An e23 Sourcebook for GURPS®"
  },
  {
   "zid": 44,
@@ -2342,8 +2418,9 @@
   "added": "2023-07-23",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Complete published play by Kushner; dramatic work not craft or theory"
  },
  {
   "zid": 628,
@@ -2439,8 +2516,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "System mechanics rulebook"
  },
  {
   "zid": 148,
@@ -2472,8 +2550,9 @@
   "added": "2023-07-04",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "System mechanics rulebook"
  },
  {
   "zid": 1538,
@@ -2534,8 +2613,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Architectural drawing techniques and media guide, art technique not story"
  },
  {
   "zid": 1504,
@@ -2563,8 +2643,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography technique manual for glamour and digital photography"
  },
  {
   "zid": 456,
@@ -2872,8 +2953,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Vehicle/equipment specs"
  },
  {
   "zid": 1533,
@@ -2961,8 +3043,9 @@
   "added": "2023-07-23",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography technique manual for nude photography"
  },
  {
   "zid": 634,
@@ -3277,8 +3360,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography technique manual for boudoir/intimate portraiture"
  },
  {
   "zid": 715,
@@ -3397,7 +3481,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\FIECRND8\\Engelstein and Shalev - 2019 - Building blocks of tabletop game design an encycl.pdf",
@@ -3408,8 +3494,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Game design theory"
  },
  {
   "zid": 1315,
@@ -3427,7 +3514,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\HTS43XG2\\Engelstein and Shalev - 2020 - Building blocks of tabletop game design an encycl.pdf",
@@ -3438,8 +3527,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Game design theory"
  },
  {
   "zid": 638,
@@ -3719,8 +3809,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography fundamentals: camerawork, composition, timing in visual capture"
  },
  {
   "zid": 1028,
@@ -3924,7 +4015,7 @@
   "zid": 718,
   "zkey": "JYYQ6VX8",
   "type": "book",
-  "title": "Cinema genre",
+  "title": "Les genres du cinéma",
   "authors": [
    "Moine"
   ],
@@ -3937,7 +4028,9 @@
    "08_FUZZ INTERTEXT AND GENRE"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\MHV6TLD4\\Moine - 2008 - Cinema genre.pdf",
@@ -3948,8 +4041,10 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Genre theory for cinema: typologies, formal rules, semantic-syntactic definitions, social functions",
+  "title_zotero": "Cinema genre"
  },
  {
   "zid": 1417,
@@ -4075,8 +4170,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Vehicle/equipment specs"
  },
  {
   "zid": 622,
@@ -4106,8 +4202,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Figure drawing and anatomy technique guide for artists"
  },
  {
   "zid": 1219,
@@ -4194,7 +4291,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\H54ZNC6I\\Silverstein - 2019 - Complete Kobold guide to game design.pdf",
@@ -4205,8 +4304,9 @@
   "added": "2023-07-23",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Game design theory"
  },
  {
   "zid": 1625,
@@ -4477,7 +4577,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\DHVS336E\\Crumb and Hooks - Conspiracy Theories.pdf",
@@ -4488,8 +4591,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Horror setting"
  },
  {
   "zid": 1313,
@@ -4569,7 +4673,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\YQG25Z8T\\Harding - Corporate Enclaves.pdf",
@@ -4580,8 +4686,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Cyberpunk corporate setting"
  },
  {
   "zid": 297,
@@ -4727,7 +4834,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\4GYN38GG\\Pondsmith - 1991 - Cyberpunk 2.0.2.0., version 2.0 the roleplaying g.pdf",
@@ -4738,8 +4847,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Futuristic world setting"
  },
  {
   "zid": 516,
@@ -4779,7 +4889,7 @@
   "zid": 544,
   "zkey": "8WB6LRQW",
   "type": "journalArticle",
-  "title": "D20 Modern SRD",
+  "title": "D20 Modern",
   "authors": [],
   "year": "",
   "publisher": "",
@@ -4801,8 +4911,10 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "System mechanics rulebook",
+  "title_zotero": "D20 Modern SRD"
  },
  {
   "zid": 547,
@@ -4832,8 +4944,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game mechanics supplement"
  },
  {
   "zid": 720,
@@ -5496,7 +5609,9 @@
    "080006 - VIDEO GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\LGNFFLA3\\Sylvester - 2013 - Designing games a guide to engineering experience.pdf",
@@ -5507,8 +5622,9 @@
   "added": "2023-07-23",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Game design theory"
  },
  {
   "zid": 621,
@@ -5667,8 +5783,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Dictionary of erotic artists' biographies; art history reference"
  },
  {
   "zid": 1164,
@@ -5865,8 +5982,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Digital photography handbook with technical core skills and project types"
  },
  {
   "zid": 1447,
@@ -6361,8 +6479,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Drawing technique guide: composition, perspective, proportions, shading"
  },
  {
   "zid": 415,
@@ -6444,7 +6563,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\3LGADEUU\\Mearls and Crawford - 2014 - Dungeon master's guide.pdf",
@@ -6455,8 +6576,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign/adventure rules"
  },
  {
   "zid": 3174,
@@ -6476,7 +6598,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\YDJPEAHC\\Mearls and Crawford - 2014 - Dungeon master's guide.pdf",
@@ -6487,8 +6611,9 @@
   "added": "2024-01-08",
   "modified": "2024-02-04",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign/adventure rules"
  },
  {
   "zid": 3175,
@@ -6503,7 +6628,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\GPW74QK7\\2014 - Dungeons & Dragons Core Rules Gift Set.pdf",
@@ -6514,8 +6641,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign/adventure rules"
  },
  {
   "zid": 3176,
@@ -6541,8 +6669,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "D&D Player's Handbook - core rules and mechanics book, no narrative content"
  },
  {
   "zid": 400,
@@ -6570,8 +6699,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Xanathar's Guide to Everything - D&D mechanics supplement with expanded rules, not story-focused"
  },
  {
   "zid": 726,
@@ -6853,8 +6983,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Nude photography technique manual: models, locations, lighting, selling"
  },
  {
   "zid": 1542,
@@ -6882,8 +7013,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Historical survey of erotic photography by period (1850-1930s); photo history"
  },
  {
   "zid": 1554,
@@ -6911,8 +7043,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Historical survey of erotic photography with academic and ethnographical context"
  },
  {
   "zid": 1555,
@@ -6940,8 +7073,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Historical treatment of erotic photography as artistic medium (1850-1918)"
  },
  {
   "zid": 1300,
@@ -7178,7 +7312,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\TW23NEKG\\Experimental Technical Readout Davion.pdf",
@@ -7189,8 +7325,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Experimental Technical Readout: Davion - BattleTech sourcebook describing military hardware and worldbuilding in Federated Suns setting"
  },
  {
   "zid": 405,
@@ -7207,7 +7344,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\22GL5X9I\\Experimental Technical Readout Gladiators.pdf",
@@ -7218,8 +7358,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Experimental Technical Readout: Gladiators - BattleTech setting book on Solaris VII arena world and gladiatorial combat (setting + narrative design)"
  },
  {
   "zid": 515,
@@ -7293,7 +7434,7 @@
   "zid": 451,
   "zkey": "2QZZFRM8",
   "type": "book",
-  "title": "Fallout 3",
+  "title": "Fallout 3 Official Game Guide",
   "authors": [
    "Hodgson"
   ],
@@ -7317,8 +7458,10 @@
   "added": "2023-07-23",
   "modified": "2024-02-02",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Video game strategy guide - primarily mechanical walkthrough and information, not story craft",
+  "title_zotero": "Fallout 3"
  },
  {
   "zid": 417,
@@ -7373,7 +7516,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\FI5C7C7W\\Valentine - 2013 - Fate accelerated.pdf",
@@ -7384,8 +7529,9 @@
   "added": "2023-07-03",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Fate Accelerated Edition - RPG system focused on story structure, character mechanics, and narrative pacing"
  },
  {
   "zid": 103,
@@ -7407,7 +7553,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\Q2FMI2PK\\Donoghue et al. - 2013 - Fate system toolkit.pdf",
@@ -7418,8 +7566,9 @@
   "added": "2023-07-03",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Fate System Toolkit - rules customization and narrative design tools for story-driven games; character and world creation systems"
  },
  {
   "zid": 104,
@@ -7439,7 +7588,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\4KSG3CT5\\Balsera - 2013 - Fate core system.pdf",
@@ -7450,8 +7601,9 @@
   "added": "2023-07-03",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Fate Core System - story engine focused on character-driven narratives, aspects, and plot structure"
  },
  {
   "zid": 1297,
@@ -7500,7 +7652,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\RT29SIMQ\\2008 - Feral cities.pdf",
@@ -7511,8 +7665,9 @@
   "added": "2023-07-23",
   "modified": "2024-02-04",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Feral Cities - Shadowrun worldbuilding sourcebook covering Chicago, Lagos, and urban settings with factions and locations"
  },
  {
   "zid": 1296,
@@ -7602,8 +7757,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Figure photography technique manual for digital photographers"
  },
  {
   "zid": 452,
@@ -7796,8 +7952,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Fine art nude photography: lighting and posing instruction"
  },
  {
   "zid": 1497,
@@ -7858,8 +8015,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Practical photography guide for portrait and people photography"
  },
  {
   "zid": 418,
@@ -7889,8 +8047,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Foundations of Game Engine Development - mathematical and technical programming reference, not story-related"
  },
  {
   "zid": 1573,
@@ -8276,8 +8435,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game Programming Patterns - software engineering and programming patterns for game development, not narrative craft"
  },
  {
   "zid": 1290,
@@ -8305,8 +8465,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Gay Tourism: travel guide and cultural studies, not story-focused"
  },
  {
   "zid": 1100,
@@ -8706,7 +8867,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\ID8KRIIN\\Games - GURPS Action 4 Specialists.pdf",
@@ -8717,8 +8881,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action 4: Specialists - tactical action rules and character archetypes for action narratives"
  },
  {
   "zid": 3840,
@@ -8735,7 +8900,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\GILTY59J\\Games - GURPS Action 4 Specialists.pdf",
@@ -8746,8 +8914,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action 4: Specialists - duplicate, action narrative mechanics and character types"
  },
  {
   "zid": 3991,
@@ -8764,7 +8933,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PV62VHVI\\Games - GURPS Action 4 Specialists.pdf",
@@ -8775,8 +8947,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action 4: Specialists - duplicate, action narrative and character mechanics"
  },
  {
   "zid": 425,
@@ -8795,7 +8968,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L6",
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\6HL9EPRN\\Games - GURPS Adaptations.pdf",
@@ -8806,8 +8982,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Adaptations - narrative adaptation theory across genres and media (how to translate stories between formats)"
  },
  {
   "zid": 3846,
@@ -8824,7 +9001,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L6",
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\8KY29VBT\\Games - GURPS Adaptations.pdf",
@@ -8835,8 +9015,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Adaptations - duplicate, story adaptation across genres and media"
  },
  {
   "zid": 3992,
@@ -8853,7 +9034,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L6",
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\AKMWUWAT\\Games - GURPS Adaptations.pdf",
@@ -8864,8 +9048,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Adaptations - duplicate, narrative adaptation theory"
  },
  {
   "zid": 426,
@@ -8887,7 +9072,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\G7JANC97\\Pulver and Punch - 2011 - GURPS basic set campaigns.pdf",
@@ -8898,8 +9086,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Basic Set: Campaigns - campaign structure, plot design, and world management for tabletop narratives"
  },
  {
   "zid": 110,
@@ -8941,7 +9130,7 @@
   "zid": 427,
   "zkey": "N2RD4WEP",
   "type": "book",
-  "title": "GURPS fantasy",
+  "title": "GURPS Fantasy",
   "authors": [
    "Stoddard",
    "Suileabhain-Wilson",
@@ -8957,7 +9146,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\KEPKE3AZ\\Stoddard et al. - 2006 - GURPS fantasy.pdf",
@@ -8968,8 +9160,10 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Medieval fantasy worldbuilding, campaigns, and plot design for fantasy narratives",
+  "title_zotero": "GURPS fantasy"
  },
  {
   "zid": 428,
@@ -9054,7 +9248,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\LX4626ZM\\Griffith et al. - 2006 - GURPS for dummies.pdf",
@@ -9065,8 +9261,9 @@
   "added": "2023-07-03",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS for Dummies - introductory narrative game design and campaign structure for storytelling RPGs"
  },
  {
   "zid": 430,
@@ -9096,8 +9293,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "GURPS High-Tech - equipment and technology reference, mechanical focus without narrative content"
  },
  {
   "zid": 429,
@@ -9116,7 +9314,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\PIF4ME3V\\Games - GURPS High-Tech Adventure Guns.pdf",
@@ -9127,8 +9327,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS High-Tech: Adventure Guns - weapons worldbuilding for action settings"
  },
  {
   "zid": 3879,
@@ -9145,7 +9346,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\CXZXHK22\\Games - GURPS High-Tech Adventure Guns.pdf",
@@ -9156,14 +9359,15 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS High-Tech: Adventure Guns - duplicate, weapons and equipment setting details"
  },
  {
   "zid": 431,
   "zkey": "C29MQVTJ",
   "type": "book",
-  "title": "GURPS horror",
+  "title": "GURPS Horror",
   "authors": [
    "Hite"
   ],
@@ -9176,7 +9380,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L6",
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\5SGEHNEU\\Hite - 2011 - GURPS horror.pdf",
@@ -9187,8 +9394,10 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Horror narrative theory, thematic elements, and genre-specific storytelling techniques",
+  "title_zotero": "GURPS horror"
  },
  {
   "zid": 432,
@@ -9220,8 +9429,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Game magic mechanics system"
  },
  {
   "zid": 434,
@@ -9251,8 +9461,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Combat technique and grappling mechanics"
  },
  {
   "zid": 3907,
@@ -9280,8 +9491,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Combat technique and grappling mechanics"
  },
  {
   "zid": 436,
@@ -9300,7 +9512,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\BXCFEVT8\\Games - GURPS Martial Arts Yrth Fighting Styles.pdf",
@@ -9311,8 +9526,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Combat styles for fantasy campaign setting (Yrth)"
  },
  {
   "zid": 3909,
@@ -9329,7 +9545,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\D6L6LNMU\\Games - GURPS Martial Arts Yrth Fighting Styles.pdf",
@@ -9340,8 +9559,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Combat styles for fantasy campaign setting (Yrth)"
  },
  {
   "zid": 437,
@@ -9360,7 +9580,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\YH4KYESA\\Games - 2010 - GURPS Mass Combat.pdf",
@@ -9371,8 +9593,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Large-scale battle mechanics and military strategy"
  },
  {
   "zid": 439,
@@ -9403,8 +9626,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 438,
@@ -9423,7 +9647,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\TAMXZ56C\\Games - GURPS Powers The Weird.pdf",
@@ -9434,8 +9660,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Supernatural ability mechanics for encounters"
  },
  {
   "zid": 3994,
@@ -9452,7 +9679,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\ST4YLG7F\\Games - GURPS Powers The Weird.pdf",
@@ -9463,8 +9692,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Supernatural ability mechanics for encounters"
  },
  {
   "zid": 440,
@@ -9684,8 +9914,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Magic theory and mechanics system"
  },
  {
   "zid": 1332,
@@ -11075,8 +11306,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "3D software tutorial for Blender; art/design tool instruction unrelated to story"
  },
  {
   "zid": 445,
@@ -11095,7 +11327,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\FHG39P8V\\Gazaway - Introduction to Game Systems Design.pdf",
@@ -11106,8 +11340,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Introduction to Game Systems Design: game design theory and mechanics"
  },
  {
   "zid": 1046,
@@ -11135,8 +11370,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Introduction to Tantra: spiritual practice instruction, not narrative"
  },
  {
   "zid": 546,
@@ -11291,7 +11527,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\ICA7SSV3\\Gilmour and Levandowski - 2018 - Kids on bikes Deluxe edition.pdf",
@@ -11302,8 +11540,9 @@
   "added": "2023-07-04",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Kids on Bikes RPG: game mechanics and system design"
  },
  {
   "zid": 1049,
@@ -12005,7 +12244,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\44CF25SC\\Games - Martial Arts Gladiators.pdf",
@@ -12016,8 +12258,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Martial Arts: Gladiators GURPS sourcebook: historical setting with character types (gladiator, venator, etc.)"
  },
  {
   "zid": 3908,
@@ -12034,7 +12277,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\YTW9MWYD\\Games - Martial Arts Gladiators.pdf",
@@ -12045,8 +12291,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Martial Arts: Gladiators GURPS sourcebook: historical Roman setting with character templates"
  },
  {
   "zid": 1670,
@@ -12074,8 +12321,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Glamour photography technique and posing guide with digital methods"
  },
  {
   "zid": 1669,
@@ -12202,8 +12450,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Digital nude photography technique and equipment guide for photographers"
  },
  {
   "zid": 1752,
@@ -12353,8 +12602,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography fundamentals course covering basic shooting skills"
  },
  {
   "zid": 751,
@@ -12385,8 +12635,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Composition techniques for photography: framing, color, light, lens choice"
  },
  {
   "zid": 754,
@@ -12417,8 +12668,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Portrait photography technique: posing, lighting, setting, processing"
  },
  {
   "zid": 156,
@@ -12437,7 +12689,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L6"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\YVTL4Z2X\\Robbins - 2011 - Microscope a fractal role-playing game of epic hi.pdf",
@@ -12448,8 +12703,9 @@
   "added": "2023-07-04",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Microscope RPG: fractal narrative design system for epic histories and collaborative storytelling"
  },
  {
   "zid": 1053,
@@ -13017,8 +13273,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Mammoth anthology of erotic photography; visual media collection"
  },
  {
   "zid": 1211,
@@ -13173,8 +13430,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Nude photography technique guide: model choice, lighting, mood, pose"
  },
  {
   "zid": 1661,
@@ -13202,8 +13460,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Nude photography on location: posing examples and lighting techniques"
  },
  {
   "zid": 1660,
@@ -13424,8 +13683,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Pablo Picasso biography and art historical survey (Blue Period through Late Work)"
  },
  {
   "zid": 537,
@@ -13445,7 +13705,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L7"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\BSTU7PW7\\Randall and Wilcox - Palgrave Games in Context.pdf",
@@ -13456,8 +13718,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Palgrave Games in Context: academic game theory and criticism"
  },
  {
   "zid": 470,
@@ -13509,7 +13772,9 @@
    "080006 - VIDEO GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\NRMKW3H9\\Barney - 2021 - Pattern language for game design.pdf",
@@ -13520,8 +13785,9 @@
   "added": "2023-06-27",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Pattern Language for Game Design: design patterns and principles for game systems"
  },
  {
   "zid": 1148,
@@ -13583,8 +13849,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Nude photography instruction: equipment, models, posing, studio lighting"
  },
  {
   "zid": 1658,
@@ -13612,8 +13879,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography posing catalog of 1,000 poses for women and models"
  },
  {
   "zid": 758,
@@ -13643,8 +13911,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography technique manual: posing, lighting, shooting women"
  },
  {
   "zid": 759,
@@ -13674,8 +13943,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Posing technique and art for portrait and fashion photographers"
  },
  {
   "zid": 760,
@@ -14061,8 +14331,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Portrait photography art and technique: composition, lighting, post-production"
  },
  {
   "zid": 635,
@@ -14092,8 +14363,9 @@
   "added": "2023-07-23",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Python programming tutorial; software development instruction"
  },
  {
   "zid": 1678,
@@ -14124,8 +14396,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Sexual technique guide: instructional non-fiction, no story content"
  },
  {
   "zid": 1058,
@@ -14185,8 +14458,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Professional nude and glamour photography digital techniques guide"
  },
  {
   "zid": 453,
@@ -14282,8 +14556,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "German professional guide to nude photography: lighting, model relations, location/studio"
  },
  {
   "zid": 1727,
@@ -14817,8 +15092,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Glamour photography professional techniques and image portfolio"
  },
  {
   "zid": 1648,
@@ -14846,8 +15122,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Glamour photography posing technique guide: factors, basics, body sections"
  },
  {
   "zid": 1273,
@@ -15457,8 +15734,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Sex in Tourism: academic study, no narrative structure"
  },
  {
   "zid": 1556,
@@ -16451,7 +16729,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\B23JZNCG\\Ham - 2016 - Tabletop game design for video game designers.pdf",
@@ -16462,8 +16742,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Tabletop Game Design for Video Game Designers: systems design theory"
  },
  {
   "zid": 539,
@@ -16482,7 +16763,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\2ETMSJWY\\Mizer - 2019 - Tabletop Role-Playing Games and the Experience of .pdf",
@@ -16493,8 +16777,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Tabletop RPGs and Imagined Worlds: theory of collaborative narrative and character experience"
  },
  {
   "zid": 765,
@@ -16614,8 +16899,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Nude photography technique guide covering lighting, models, location, studio"
  },
  {
   "zid": 1072,
@@ -16669,7 +16955,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\QESUR3SZ\\Gilmour et al. - 2019 - Teens in space an RPG about interstellar impulsiv.pdf",
@@ -16680,8 +16969,9 @@
   "added": "2023-07-04",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Teens in Space RPG: sci-fi setting with game mechanics and system design"
  },
  {
   "zid": 1473,
@@ -17268,8 +17558,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Boudoir photography technique: lighting, posing, mood, composition"
  },
  {
   "zid": 1179,
@@ -17366,8 +17657,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Kodak photography library guide to portrait and nude photography techniques"
  },
  {
   "zid": 411,
@@ -17387,7 +17679,9 @@
    "0800012 - SOUND"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\R7GJZ7QW\\Gibson and Curtis - 2019 - The art of producing audio projects.pdf",
@@ -17398,8 +17692,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Audio production techniques and the producer's process for creating music projects"
  },
  {
   "zid": 670,
@@ -17429,8 +17724,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Figure drawing complete guide with classical techniques and methods"
  },
  {
   "zid": 519,
@@ -17527,8 +17823,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Nude photography beginner guide: types, models, equipment, technique"
  },
  {
   "zid": 1074,
@@ -17584,7 +17881,9 @@
   "collections": [
    "PROJECT_LAWD"
   ],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\JH598N5C\\Davids - The Book of Random Tables.pdf",
@@ -17595,8 +17894,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Book of Random Tables: quest design tables and adventure scaffolding"
  },
  {
   "zid": 1712,
@@ -17624,8 +17924,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Boudoir photography posing cookbook: 60 lighting and posing techniques"
  },
  {
   "zid": 498,
@@ -17913,8 +18214,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Drawing fundamentals course: perspective, still-life, figure, portraiture, composition"
  },
  {
   "zid": 503,
@@ -18105,8 +18407,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Portrait photography technique: light and shadow crafting, dramatic portraiture"
  },
  {
   "zid": 1132,
@@ -18661,8 +18964,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Drawing technique in color mediums: colored pencil, pastel, ink, watercolor"
  },
  {
   "zid": 386,
@@ -19263,8 +19567,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Edited collection of erotic photographs from various photographers; photography book with no narrative content"
  },
  {
   "zid": 1768,
@@ -19293,8 +19598,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Technical guide covering sessions, interiors, location, creative techniques, lighting & equipment for nude photography"
  },
  {
   "zid": 1437,
@@ -19545,8 +19851,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Instructional guide for nude photography technique and practice; no story content"
  },
  {
   "zid": 1759,
@@ -19574,8 +19881,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Instructional guide for nude photography technique and practice; first edition of photography manual"
  },
  {
   "zid": 289,
@@ -19636,8 +19944,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Modern song standards collection and sheet music; music performance materials"
  },
  {
   "zid": 1000,
@@ -19803,8 +20112,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Fine art photography technique manual with chapters on lighting, posing, props, gobos, multiple models; no narrative"
  },
  {
   "zid": 1691,
@@ -19832,8 +20142,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Fine art photography technique manual; no PDF available to verify but catalogue matches technical photography text"
  },
  {
   "zid": 1475,
@@ -19993,8 +20304,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography technique handbook on creative thinking, composition, intent, style, and process; not narrative-focused"
  },
  {
   "zid": 1438,
@@ -21751,8 +22063,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Reference dictionary of photography terminology (Acutance through Zoom Lens, Pictorialism, effects); technical resource"
  },
  {
   "zid": 1173,
@@ -22038,7 +22351,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\8YI8PHKI\\Stålenhag - 2019 - Things from the flood.pdf",
@@ -22049,8 +22364,9 @@
   "added": "2023-07-04",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Things from the Flood: Swedish horror setting sourcebook for RPG"
  },
  {
   "zid": 1099,
@@ -22263,7 +22579,10 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\LKZKK2K3\\Mamet - 2013 - Three uses of the knife on the nature and purpose.pdf",
@@ -22274,8 +22593,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Drama theory on structure, second act problems, and the nature of dramatic storytelling"
  },
  {
   "zid": 1012,
@@ -22368,8 +22688,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Technology threat watch and security news; tech journalism not story-related"
  },
  {
   "zid": 1002,
@@ -23508,7 +23829,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\ISNYIGCY\\Iles - Worlds of Legacy SRD.pdf",
@@ -23519,8 +23843,9 @@
   "added": "2023-07-04",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Worlds of Legacy SRD: collaborative storytelling system design and world creation"
  },
  {
   "zid": 305,
@@ -23905,7 +24230,10 @@
    "080006 - VIDEO GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "TEXTURE"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\IG3VG2AW\\Nicklin - 2022 - Writing for Games Theory and Practice.pdf",
@@ -23916,8 +24244,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Writing for Games: narrative craft and dialogue for game design"
  },
  {
   "zid": 1466,
@@ -24047,8 +24376,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "GURPS Martial Arts techniques reference: game mechanics only"
  },
  {
   "zid": 3543,
@@ -24076,8 +24406,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "catalog",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "GURPS Martial Arts techniques reference: mechanics summary"
  },
  {
   "zid": 1618,
@@ -24506,8 +24837,9 @@
   "added": "2025-11-11",
   "modified": "2025-11-11",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "IMU Motion Capture technical paper: engineering/computer science"
  },
  {
   "zid": 3197,
@@ -24566,8 +24898,9 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Philosophical aesthetics and visual perception theory, not story craft"
  },
  {
   "zid": 4046,
@@ -24631,8 +24964,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "junk",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Akt-Shooting: photography technique book, no narrative"
  },
  {
   "zid": 3955,
@@ -24689,8 +25023,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Copyright notice begins: instructional content only"
  },
  {
   "zid": 3542,
@@ -24720,8 +25055,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Acupressure technique guide: medical instruction, no narrative"
  },
  {
   "zid": 3519,
@@ -24809,8 +25145,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game mechanics supplement"
  },
  {
   "zid": 1025,
@@ -24840,8 +25177,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "tag",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Asarotica: adult photography and art, no narrative structure"
  },
  {
   "zid": 3529,
@@ -24963,8 +25301,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Basic Alphabet of Astrology: reference guide, not narrative"
  },
  {
   "zid": 3110,
@@ -25054,8 +25393,9 @@
   "added": "2023-06-28",
   "modified": "2023-07-03",
   "subject_src": "junk",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Calculus: mathematics textbook, no story content"
  },
  {
   "zid": 3527,
@@ -25083,8 +25423,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Chaos Monk meditation: spiritual practice guide, no narrative"
  },
  {
   "zid": 3842,
@@ -25194,7 +25535,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PUKI6RR6\\Seemann - Code That Fits in Your Head.pdf",
@@ -25205,8 +25548,9 @@
   "added": "2024-06-17",
   "modified": "2024-06-17",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Code That Fits in Your Head: programming craft and cognition"
  },
  {
   "zid": 3112,
@@ -25298,8 +25642,9 @@
   "added": "2023-12-13",
   "modified": "2023-12-13",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography composition and design concepts guide"
  },
  {
   "zid": 3051,
@@ -25384,7 +25729,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\KHUV8P8W\\Kelley - Creative Confidence.pdf",
@@ -25395,8 +25742,9 @@
   "added": "2025-12-24",
   "modified": "2025-12-24",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Creative Confidence: creative process and mindset development"
  },
  {
   "zid": 3508,
@@ -25425,8 +25773,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Art reference book: visual technique only"
  },
  {
   "zid": 3193,
@@ -25454,8 +25803,9 @@
   "added": "2024-02-18",
   "modified": "2024-02-18",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Crusaders: historical non-fiction account, not fiction craft"
  },
  {
   "zid": 3173,
@@ -25551,8 +25901,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Dance Medicine: medical and physical practice guide"
  },
  {
   "zid": 3213,
@@ -25613,8 +25964,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Beach photography: visual art technique, no narrative"
  },
  {
   "zid": 3198,
@@ -25673,8 +26025,9 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Week-by-week photography course covering technical skills and equipment"
  },
  {
   "zid": 3506,
@@ -25738,8 +26091,9 @@
   "added": "2024-06-17",
   "modified": "2024-06-17",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Technical writing manual"
  },
  {
   "zid": 614,
@@ -25950,7 +26304,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\QD5D66DX\\Wizards of the Coast, Inc - 2000 - Dungeons & dragons hardcover publications.pdf",
@@ -25961,8 +26318,9 @@
   "added": "2024-01-08",
   "modified": "2024-02-04",
   "subject_src": "tag",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Storm King's Thunder - D&D adventure module with plot structure and campaign setting; story design with Giant Kings"
  },
  {
   "zid": 3154,
@@ -25977,7 +26335,9 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\TURRXILB\\2021 - Dungeons & Dragons. Strixhaven a curriculum of ch.pdf",
@@ -25988,8 +26348,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Strixhaven curriculum sourcebook - describes magical academy setting, locations, and world structure"
  },
  {
   "zid": 3181,
@@ -26004,7 +26365,9 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\ZJM2UZEB\\2021 - Dungeons & Dragons. Strixhaven a curriculum of ch.pdf",
@@ -26015,8 +26378,9 @@
   "added": "2024-01-10",
   "modified": "2024-01-10",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Strixhaven curriculum sourcebook - duplicate of 3154, describes academy setting"
  },
  {
   "zid": 3151,
@@ -26065,7 +26429,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\RPAIW279\\Pulver et al. - EXPLORATION AND COLONY SPACECRAFTTM.pdf",
@@ -26076,14 +26442,15 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Exploration and Colony Spacecraft: sci-fi worldbuilding and vehicle design"
  },
  {
   "zid": 752,
   "zkey": "F9CU9QQ5",
   "type": "book",
-  "title": "Exposure",
+  "title": "Michael Freeman's Photo School: Exposure",
   "authors": [
    "Freeman",
    "Wignall"
@@ -26108,8 +26475,10 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "tag",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Photography technical manual on exposure, metering, dynamic range, HDR",
+  "title_zotero": "Exposure"
  },
  {
   "zid": 3053,
@@ -26137,8 +26506,9 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Fashion: The Key Concepts: cultural studies, not narrative"
  },
  {
   "zid": 3113,
@@ -26265,8 +26635,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Greek Religion: historical/religious studies, not narrative craft"
  },
  {
   "zid": 3054,
@@ -26346,7 +26717,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L6"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\XS6YQK2X\\Games - GURPS Action 5 Dictionary of Danger.pdf",
@@ -26357,8 +26730,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action 5: Dictionary of Danger - thematic elements and moral dilemmas for action stories"
  },
  {
   "zid": 3844,
@@ -26375,7 +26749,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\9FV894R5\\Games - GURPS Action 8 Twists.pdf",
@@ -26386,8 +26762,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action 8: Twists - narrative structure and plot complications for action fiction"
  },
  {
   "zid": 3845,
@@ -26404,7 +26781,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\JMUHZDZA\\Games - GURPS Action 9 The City.pdf",
@@ -26415,8 +26794,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action 9: The City - urban setting worldbuilding and location design"
  },
  {
   "zid": 3997,
@@ -26433,7 +26813,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\SRZRYTRM\\Games - GURPS Action Adventure 1 Templar's Gold.pdf",
@@ -26444,8 +26827,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Action Adventure 1: Templar's Gold - adventure plot structure with historical setting details"
  },
  {
   "zid": 3847,
@@ -26462,7 +26846,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\7FHWT332\\Games - GURPS Aliens Sparrials.pdf",
@@ -26473,8 +26859,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Aliens: Sparrials - alien species worldbuilding for sci-fi settings"
  },
  {
   "zid": 3850,
@@ -26491,7 +26878,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\RTD7F4DI\\Games - GURPS Boardroom and Curia.pdf",
@@ -26502,8 +26892,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Boardroom and Curia - business setting with political character and power dynamics"
  },
  {
   "zid": 3849,
@@ -26520,7 +26911,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\UYZU4TXD\\Games - GURPS Boardroom and Curia Tomorrow Rides.pdf",
@@ -26531,8 +26925,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Boardroom and Curia: Tomorrow Rides - political adventure plot in business/court settings"
  },
  {
   "zid": 3853,
@@ -26549,7 +26944,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\WDPAQWXC\\Games - GURPS Disasters Hurricane.pdf",
@@ -26560,8 +26957,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Disasters: Hurricane - disaster narrative structure and plot complications"
  },
  {
   "zid": 3854,
@@ -26578,7 +26976,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\SIR6APPD\\Games - GURPS Disasters Meltdown and Fallout.pdf",
@@ -26589,8 +26989,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Disasters: Meltdown and Fallout - post-apocalyptic disaster narrative structure"
  },
  {
   "zid": 3982,
@@ -27310,7 +27711,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5",
+   "L6"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\FYXTFEUS\\Games - GURPS Encounters The Harrowed Hearts Club.pdf",
@@ -27321,8 +27725,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Encounters: The Harrowed Hearts Club - character-focused encounter scenarios with emotional themes"
  },
  {
   "zid": 3873,
@@ -27339,7 +27744,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\KXL9GUYB\\Games - GURPS Encounters The Mysterious Airfield.pdf",
@@ -27350,8 +27757,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Encounters: The Mysterious Airfield - mysterious location worldbuilding and setting details"
  },
  {
   "zid": 3875,
@@ -27493,7 +27901,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\F6EWPULB\\Games - GURPS Hot Spots Constantinople, 527-1204 A.D..pdf",
@@ -27504,8 +27914,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Hot Spots: Constantinople, 527-1204 A.D. - historical setting worldbuilding for Byzantine era"
  },
  {
   "zid": 3884,
@@ -27522,7 +27933,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PF3ID527\\Games - GURPS Hot Spots Renaissance Venice.pdf",
@@ -27533,8 +27946,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Hot Spots: Renaissance Venice - historical setting worldbuilding for Renaissance period"
  },
  {
   "zid": 3885,
@@ -27551,7 +27965,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\ATQAKBNX\\Games - GURPS Hot Spots Renaissance Venice.pdf",
@@ -27562,8 +27978,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Hot Spots: Renaissance Venice - duplicate, historical setting details"
  },
  {
   "zid": 3886,
@@ -27580,7 +27997,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\V3K996DD\\Games - GURPS Hot Spots Sriwijaya.pdf",
@@ -27591,8 +28010,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Hot Spots: Sriwijaya - historical setting worldbuilding for Southeast Asian medieval period"
  },
  {
   "zid": 3887,
@@ -27609,7 +28029,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\HS56WFMG\\Games - GURPS Hot Spots The Silk Road.pdf",
@@ -27620,8 +28042,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Hot Spots: The Silk Road - historical worldbuilding and trade route setting"
  },
  {
   "zid": 3888,
@@ -27638,7 +28061,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\DBMERXS3\\Games - GURPS Infinite Worlds Nightreign.pdf",
@@ -27649,8 +28074,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Infinite Worlds: Nightreign - alternate universe setting worldbuilding for multiverse campaign"
  },
  {
   "zid": 3890,
@@ -27667,7 +28093,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\SDWDM4YV\\Games - GURPS Infinite Worlds The Osiris Worlds.pdf",
@@ -27678,8 +28106,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Infinite Worlds: The Osiris Worlds - Egyptian mythological alternate universe settings"
  },
  {
   "zid": 3891,
@@ -27727,7 +28156,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\WFQGUB4L\\Games - GURPS Locations Hellsgate.pdf",
@@ -27738,8 +28169,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Locations: Hellsgate - specific location worldbuilding and dungeon/stronghold design"
  },
  {
   "zid": 3895,
@@ -27756,7 +28188,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\8WTWCZ9M\\Games - GURPS Locations St. George's Cathedral.pdf",
@@ -27767,8 +28201,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Locations: St. George's Cathedral - specific location architecture and worldbuilding"
  },
  {
   "zid": 3897,
@@ -27785,7 +28220,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\BXM9F8GR\\Games - GURPS Locations Worminghall.pdf",
@@ -27796,8 +28233,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Locations: Worminghall - specific location/location design for fantasy settings"
  },
  {
   "zid": 3898,
@@ -27814,7 +28252,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\FBCCFXY9\\Games - GURPS Low-Tech Companion 1 Philosophers and Kings.pdf",
@@ -27825,8 +28265,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Low-Tech Companion 1: Philosophers and Kings - medieval historical setting and culture worldbuilding"
  },
  {
   "zid": 3834,
@@ -27843,7 +28284,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\GNCGDHRB\\Games - GURPS Low-Tech Companion 2 Weapons and Warriors.pdf",
@@ -27854,8 +28297,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Low-Tech Companion 2: Weapons and Warriors - historical weapons and warrior culture setting details"
  },
  {
   "zid": 3899,
@@ -27883,8 +28327,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Combat gear and weapons mechanics supplement"
  },
  {
   "zid": 3900,
@@ -27912,8 +28357,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Combat gear and weapons mechanics supplement"
  },
  {
   "zid": 3878,
@@ -27941,8 +28387,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game magic mechanics system"
  },
  {
   "zid": 3902,
@@ -27970,8 +28417,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game magic mechanics system"
  },
  {
   "zid": 3903,
@@ -27999,8 +28447,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game magic mechanics system"
  },
  {
   "zid": 3904,
@@ -28017,7 +28466,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\323KNJSE\\Games - GURPS Magical Styles Dungeon Magic.pdf",
@@ -28028,8 +28479,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Magic system and combat spell mechanics"
  },
  {
   "zid": 3905,
@@ -28077,7 +28529,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\8CST2X3U\\Games - 2015 - GURPS Mars Attacks.pdf",
@@ -28088,8 +28542,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign setting describing Martian society and invasion scenario"
  },
  {
   "zid": 3910,
@@ -28106,7 +28561,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\TJUXGIEZ\\Games - GURPS Monster Hunters 1 Champions.pdf",
@@ -28117,8 +28575,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3911,
@@ -28135,7 +28594,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\TLHL23YY\\Games - GURPS Monster Hunters 2 The Mission.pdf",
@@ -28146,8 +28608,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3912,
@@ -28164,7 +28627,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\SJIRKQLL\\Games - GURPS Monster Hunters 3 The Enemy.pdf",
@@ -28175,8 +28641,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3913,
@@ -28193,7 +28660,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PK9FN3QS\\Games - GURPS Monster Hunters 4 Sidekicks.pdf",
@@ -28204,8 +28674,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3914,
@@ -28222,7 +28693,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\8NZMHYNY\\Games - GURPS Monster Hunters 5 Applied Xenology.pdf",
@@ -28233,8 +28707,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3915,
@@ -28251,7 +28726,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\QNMSE7CK\\Games - GURPS Monster Hunters 6 Holy Hunters.pdf",
@@ -28262,8 +28740,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3916,
@@ -28280,7 +28759,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\NETBF6FH\\Games - GURPS Monster Hunters Encounters 1.pdf",
@@ -28291,8 +28773,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3917,
@@ -28309,7 +28792,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\Y4WY8BBU\\Games - GURPS Monster Hunters Power-Ups 1.pdf",
@@ -28320,8 +28806,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign structure, monster encounters, and character templates"
  },
  {
   "zid": 3922,
@@ -28349,8 +28836,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3923,
@@ -28378,8 +28866,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3924,
@@ -28407,8 +28896,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3925,
@@ -28436,8 +28926,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3926,
@@ -28465,8 +28956,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3927,
@@ -28494,8 +28986,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3919,
@@ -28523,8 +29016,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3920,
@@ -28552,8 +29046,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3921,
@@ -28581,8 +29076,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3928,
@@ -28610,8 +29106,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Psychic power mechanics system"
  },
  {
   "zid": 3929,
@@ -28659,7 +29156,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\6B597L7E\\Games - GURPS Renaissance Venice Spies of Venice.pdf",
@@ -28670,8 +29170,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign setting (Venice) and adventure scenarios"
  },
  {
   "zid": 3835,
@@ -28688,7 +29189,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\7GK4862K\\Games - GURPS Social Engineering Back to School.pdf",
@@ -28699,8 +29202,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Social interaction mechanics and character motivations"
  },
  {
   "zid": 3931,
@@ -28717,7 +29221,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\ZCE95PES\\Games - GURPS Social Engineering Keeping in Contact.pdf",
@@ -28728,8 +29234,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Social interaction mechanics and character motivations"
  },
  {
   "zid": 3932,
@@ -28746,7 +29253,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\TUHPQQL9\\Games - GURPS Social Engineering Pulling Rank.pdf",
@@ -28757,8 +29266,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Social interaction mechanics and character motivations"
  },
  {
   "zid": 3953,
@@ -28786,8 +29296,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game mechanics supplement"
  },
  {
   "zid": 3933,
@@ -28804,7 +29315,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\7DF8M2UF\\Games - GURPS Space Atlas Grissom.pdf",
@@ -28815,8 +29328,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Campaign setting and world reference"
  },
  {
   "zid": 3942,
@@ -28833,7 +29347,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\2Y7UK5KS\\Games - GURPS Steampunk 2 Steam and Shellfire.pdf",
@@ -28844,8 +29360,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Steampunk campaign setting and technology"
  },
  {
   "zid": 3943,
@@ -28862,7 +29379,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\6KKX9F59\\Games - GURPS Steampunk 3 Soldiers and Scientists.pdf",
@@ -28873,8 +29392,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Steampunk campaign setting and technology"
  },
  {
   "zid": 3944,
@@ -28922,7 +29442,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\XU6IVPNB\\Games - GURPS Supporting Cast Age of Sail Pirate Crew.pdf",
@@ -28933,8 +29455,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "NPC character templates and roles"
  },
  {
   "zid": 3948,
@@ -28951,7 +29474,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\LZYIGHLB\\Games - GURPS Template Toolkit 2 Races.pdf",
@@ -28962,8 +29488,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Character templates and species/cultural background"
  },
  {
   "zid": 3949,
@@ -28980,7 +29507,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PECKARES\\Games - GURPS Template Toolkit 2 Races.pdf",
@@ -28991,8 +29521,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Character templates and species/cultural background"
  },
  {
   "zid": 3950,
@@ -29009,7 +29540,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L5"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\WI9L75VL\\Games - GURPS Template Toolkit 3 Starship Crew.pdf",
@@ -29020,8 +29553,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Character template archetypes"
  },
  {
   "zid": 3951,
@@ -29049,8 +29583,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Character power system mechanics"
  },
  {
   "zid": 3956,
@@ -29067,7 +29602,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\SNPDC8WE\\Games - GURPS Thaumatology Magical Styles.pdf",
@@ -29078,8 +29615,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Magic system and combat spell mechanics"
  },
  {
   "zid": 3952,
@@ -29107,8 +29645,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Game magic mechanics system"
  },
  {
   "zid": 3957,
@@ -29125,7 +29664,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\U9YCIZ7R\\Games - GURPS The Green Madonna.pdf",
@@ -29136,8 +29678,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS adventure module: setting-focused campaign with encounter mechanics"
  },
  {
   "zid": 3971,
@@ -29165,8 +29708,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "GURPS weapon tables: game mechanics reference, no narrative content"
  },
  {
   "zid": 3972,
@@ -29183,7 +29727,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\35SWKM5Q\\Games - GURPS Underground Adventures.pdf",
@@ -29194,8 +29740,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Underground Adventures sourcebook: setting design with worldbuilding (earth, geology, caves, underground worlds)"
  },
  {
   "zid": 3973,
@@ -29212,7 +29759,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING",
+   "TEXTURE"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\DTCV7T8J\\Games - GuRPS Vehicles Steampunk Conveyances.pdf",
@@ -29223,8 +29773,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Steampunk Conveyances: vehicle design for setting-specific world with technical illustration"
  },
  {
   "zid": 3974,
@@ -29241,7 +29792,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\4J5XIEJ3\\Games - GURPS Zombies Day One.pdf",
@@ -29252,8 +29806,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Zombies Day One: scenario design with encounter mechanics in zombie apocalypse setting"
  },
  {
   "zid": 3848,
@@ -29313,8 +29868,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "PrEP payment guide: medical/bureaucratic information"
  },
  {
   "zid": 3535,
@@ -29429,8 +29985,9 @@
   "added": "2025-12-24",
   "modified": "2025-12-24",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "How to Solve It: mathematical problem-solving method"
  },
  {
   "zid": 4044,
@@ -29463,8 +30020,9 @@
   "added": "2025-11-11",
   "modified": "2025-11-11",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "IBSEN dialogue system: AI research paper, not narrative craft"
  },
  {
   "zid": 4052,
@@ -29493,8 +30051,9 @@
   "added": "2025-11-11",
   "modified": "2025-11-11",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Madgwick Filter: signal processing technical paper"
  },
  {
   "zid": 3515,
@@ -29522,8 +30081,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Initiation mysticism: spiritual practice instruction"
  },
  {
   "zid": 3055,
@@ -29571,7 +30131,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L0"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\R6MN5K8Q\\Allen - 2021 - Intertextuality.pdf",
@@ -29582,8 +30144,9 @@
   "added": "2023-12-13",
   "modified": "2023-12-13",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Literary theory on intertextuality and critical terminology; foundational to understanding how stories reference and build upon other texts"
  },
  {
   "zid": 633,
@@ -29611,8 +30174,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "tag",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Dark web marketplace buyer's guide; operational security and transaction procedures"
  },
  {
   "zid": 1777,
@@ -29638,8 +30202,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc-off",
+  "junk_title": true,
+  "spine_why": "Instructional sex manual; practical guide without narrative or story content"
  },
  {
   "zid": 3109,
@@ -29697,8 +30262,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "USPS shipping label; not a book"
  },
  {
   "zid": 3153,
@@ -29727,8 +30293,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "USPS shipping label; not a book"
  },
  {
   "zid": 1763,
@@ -29746,7 +30313,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\73YHR9LI\\Design and Press - Journeys to the West.pdf",
@@ -29757,8 +30326,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Pathfinder RPG campaign sourcebook 'Journeys to the West' with adventure modules and place names"
  },
  {
   "zid": 3238,
@@ -29861,7 +30431,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\3FSPKFZ8\\Lair of the Fat Man.pdf",
@@ -29872,8 +30445,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS adventure scenario with plot structure, location descriptions, and encounter design"
  },
  {
   "zid": 3534,
@@ -29924,7 +30498,10 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L0",
+   "TEXTURE"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\K5VQY7TA\\Brinkema - 2021 - Life-destroying diagrams.pdf",
@@ -29935,8 +30512,9 @@
   "added": "2024-12-10",
   "modified": "2024-12-10",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Critical theory on formalism and aesthetic analysis; examining how visual and narrative systems create meaning"
  },
  {
   "zid": 3996,
@@ -30021,7 +30599,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L0"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\XGFYJLLG\\Donoghue - 2014 - Metaphor.pdf",
@@ -30032,8 +30612,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "junk",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Literary theory on metaphor and its role in language and literature; foundational poetics"
  },
  {
   "zid": 3531,
@@ -30126,8 +30707,9 @@
   "added": "2023-12-13",
   "modified": "2023-12-13",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Video game tutorial for Minecraft; software instruction unrelated to story"
  },
  {
   "zid": 3938,
@@ -30147,7 +30729,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\KHBWNHP7\\Pulver et al. - MINING AND INDUSTRIAL SPACECRAFT TM.pdf",
@@ -30158,8 +30742,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS sourcebook with detailed spacecraft specifications and technical descriptions for sci-fi worldbuilding"
  },
  {
   "zid": 3226,
@@ -30266,7 +30851,9 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L0"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\3FII86J9\\Liveley - 2019 - Narratology.pdf",
@@ -30277,8 +30864,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "junk",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Classical scholarship on narratology; theoretical framework for how stories are structured and told"
  },
  {
   "zid": 3538,
@@ -30333,8 +30921,9 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Skateboarding instruction manual; sports technique guide"
  },
  {
   "zid": 4038,
@@ -30489,8 +31078,9 @@
   "added": "2024-12-10",
   "modified": "2024-12-10",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Dishwasher operation and cleaning guide; equipment manual"
  },
  {
   "zid": 3517,
@@ -30518,8 +31108,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Body fitness and measurements guide; non-story self-help"
  },
  {
   "zid": 3539,
@@ -30549,8 +31140,9 @@
   "added": "2025-07-26",
   "modified": "2026-04-04",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Esoteric spiritual philosophy; not craft, technique, or story content"
  },
  {
   "zid": 3525,
@@ -30576,8 +31168,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Adult lifestyle magazine; pictorial/journalistic content"
  },
  {
   "zid": 1657,
@@ -30594,7 +31187,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\5ZIFFJY5\\Dibell - 1988 - Plot.pdf",
@@ -30605,8 +31201,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "junk",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Practical guide to plot structure, scenes, pacing, and the writer's process for fiction"
  },
  {
   "zid": 3129,
@@ -30686,7 +31283,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "CRAFT-PROCESS"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\GAN9YBVL\\Canfield and Broderick - Praise for Jeff Herman’s Guide to Book Publishers,.pdf",
@@ -30697,8 +31296,9 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": true
+  "spine_src": "toc",
+  "junk_title": true,
+  "spine_why": "Jeff Herman's Guide to Publishers: industry publishing reference guide"
  },
  {
   "zid": 3058,
@@ -30747,7 +31347,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L0"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\L6NZS7TL\\Ebert - Rage and the Word Gilgamesh, Akhenaten, Moses and.pdf",
@@ -30758,8 +31360,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Mythological and religious narrative theory: Gilgamesh, Akhenaten, Moses; Axial Age archetypes and metaphysical worldview origins"
  },
  {
   "zid": 3121,
@@ -30818,8 +31421,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography art magazine; visual media portfolio"
  },
  {
   "zid": 3521,
@@ -30847,8 +31451,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Photography art magazine; visual media portfolio"
  },
  {
   "zid": 3210,
@@ -30876,8 +31481,9 @@
   "added": "2024-03-16",
   "modified": "2024-03-16",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Complete published novel by Vonnegut; not a craft or theory book"
  },
  {
   "zid": 3228,
@@ -30923,7 +31529,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\NENRPCPQ\\Games - Spaceships 7 Divergent and Paranormal Tech.pdf",
@@ -30934,8 +31542,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS sourcebook describing fantastical and paranormal spacecraft for sci-fi worldbuilding"
  },
  {
   "zid": 3122,
@@ -31017,7 +31626,9 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\7DYQP2XW\\Wizards of the Coast, Inc - 2015 - Sword Coast adventurer's guide.pdf",
@@ -31028,8 +31639,9 @@
   "added": "2024-01-08",
   "modified": "2024-02-04",
   "subject_src": "tag",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Sword Coast Adventurer's Guide: D&D setting guide for Forgotten Realms region"
  },
  {
   "zid": 3225,
@@ -31058,8 +31670,9 @@
   "added": "2024-06-17",
   "modified": "2024-06-17",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Engineering and business systems guide for Industry 4.0; non-story technical content"
  },
  {
   "zid": 3545,
@@ -31149,8 +31762,9 @@
   "added": "2025-11-11",
   "modified": "2025-11-11",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Self-help lifestyle transformation guide; non-story practical instruction"
  },
  {
   "zid": 3062,
@@ -31207,8 +31821,9 @@
   "added": "2024-02-18",
   "modified": "2024-02-18",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Historical narrative of the Crusades; history rather than story craft"
  },
  {
   "zid": 3514,
@@ -31267,8 +31882,9 @@
   "added": "2025-12-24",
   "modified": "2025-12-24",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Business and organizational learning theory; not story-related"
  },
  {
   "zid": 3516,
@@ -31297,8 +31913,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Esoteric spiritual philosophy and ancient wisdom teachings; not craft or theory"
  },
  {
   "zid": 3191,
@@ -31326,8 +31943,9 @@
   "added": "2024-02-18",
   "modified": "2024-02-18",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Historical account of the Knights Templars; history rather than story craft"
  },
  {
   "zid": 3060,
@@ -31353,8 +31971,9 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "rule",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Collection of erotic photography from 75+ photographers including Hegre, Kroll, Gatewood; no narrative structure"
  },
  {
   "zid": 3546,
@@ -31535,8 +32154,9 @@
   "added": "2023-12-13",
   "modified": "2023-12-13",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Quotation anthology organized by topic; reference collection without craft content"
  },
  {
   "zid": 3547,
@@ -31564,8 +32184,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Academic cultural history of ancient Athens; historical scholarship"
  },
  {
   "zid": 3179,
@@ -31586,7 +32207,10 @@
    "080007 - TABLE TOP GAME DESIGN"
   ],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\BXMAEIRU\\Winter et al. - 2014 - The rise of Tiamat.pdf",
@@ -31597,8 +32221,9 @@
   "added": "2024-01-08",
   "modified": "2024-02-04",
   "subject_src": "tag",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "Rise of Tiamat: D&D campaign adventure module with world stakes"
  },
  {
   "zid": 3526,
@@ -31626,8 +32251,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Esoteric spiritual teachings on Rosicrucian mystery traditions; philosophy not story"
  },
  {
   "zid": 3126,
@@ -31720,8 +32346,9 @@
   "added": "2025-07-26",
   "modified": "2025-07-26",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Adult magazine pictorial and editorial content; not story craft"
  },
  {
   "zid": 3523,
@@ -31767,7 +32394,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\N4U2MPZP\\Bimler - The Solo Adventurer’s Toolbox.pdf",
@@ -31778,8 +32408,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "D&D solo play system with encounter design, quest generation, and NPC tables for narrative play"
  },
  {
   "zid": 3156,
@@ -31796,7 +32427,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\DKZFTEPQ\\Bimler - The Solo Adventurer’s Toolbox.pdf",
@@ -31807,8 +32441,9 @@
   "added": "2024-01-08",
   "modified": "2024-01-08",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "D&D solo play system Part Two with adventure generation systems and encounter design"
  },
  {
   "zid": 4035,
@@ -31921,7 +32556,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\9RWTLAP7\\Pulver et al. - TRADERS, LINERS, AND TRANSPORTS.pdf",
@@ -31932,8 +32569,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS sourcebook describing spacecraft and trade routes for sci-fi setting"
  },
  {
   "zid": 3958,
@@ -32118,8 +32756,9 @@
   "added": "2023-12-13",
   "modified": "2023-12-13",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Academic geography and cultural studies on weather and mobility; not story craft"
  },
  {
   "zid": 3273,
@@ -32202,7 +32841,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\WYKI5L8W\\Netherland et al. - Written by DAVID PULVER, with KENNETH PETERS Addit.pdf",
@@ -32213,8 +32854,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS ultra-technology sourcebook for far-future sci-fi settings and worldbuilding"
  },
  {
   "zid": 3954,
@@ -32232,7 +32874,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\UJIVXL8J\\Ross and Thibault - Written by JASON “PK” LEVINE Illustrated by GUY BU.pdf",
@@ -32243,8 +32887,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS magic system and sorcery rules for fantasy worldbuilding"
  },
  {
   "zid": 3918,
@@ -32261,7 +32906,10 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "L4",
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\83HXYLFN\\Jackson - Written by LISA J. STEELE Edited by ALAIN H. DAWSO.pdf",
@@ -32272,8 +32920,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS mystery game design guide with investigation procedures and setting frameworks"
  },
  {
   "zid": 3959,
@@ -32293,7 +32942,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PZXZTDUJ\\Peters et al. - Written by PHIL MASTERS Edited by NIKOLA VRTIS Ill.pdf",
@@ -32304,8 +32955,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS bioengineering and creatures supplement for transhuman sci-fi worldbuilding"
  },
  {
   "zid": 3876,
@@ -32324,7 +32976,9 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [],
+  "spine": [
+   "SETTING"
+  ],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\F9GF7LGJ\\Hite et al. - Written by WILLIAM H. STODDARD Edited by NIKOLA VR.pdf",
@@ -32335,8 +32989,9 @@
   "added": "2025-07-29",
   "modified": "2025-07-29",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc",
+  "junk_title": false,
+  "spine_why": "GURPS Future History framework establishing timeline and setting for sci-fi campaigns"
  },
  {
   "zid": 3269,
@@ -32362,8 +33017,9 @@
   "added": "2024-12-10",
   "modified": "2024-12-10",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Complete Early Modern English play text; dramatic work not craft or theory"
  },
  {
   "zid": 3270,
@@ -32389,7 +33045,8 @@
   "added": "2024-12-10",
   "modified": "2024-12-10",
   "subject_src": "none",
-  "spine_src": "none",
-  "junk_title": false
+  "spine_src": "toc-off",
+  "junk_title": false,
+  "spine_why": "Complete Early Modern English play text; dramatic work not craft or theory"
  }
 ]
