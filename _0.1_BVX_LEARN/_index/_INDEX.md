@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1122
+next_id: BVX.1123
 ---
 
 # BVX-LEARN — master index
@@ -18,7 +18,7 @@ The node registry. **An entry not in this index is invisible to the next session
 | Already in KNOWLEDGE_AREAS (legacy) | 14 |
 | Review queue | 10 |
 | Excluded (not books) | 60 |
-| Next free ID | `BVX.1122` — `BVX.1107` reserved (Pyramid Principle earmark, 8/21) |
+| Next free ID | `BVX.1123` — `BVX.1107` reserved (Pyramid Principle earmark, 8/21) · `BVX.1122` = GURPS Hot Spots: Renaissance Venice (setting wave, 9/16) |
 
 ## By trunk
 
@@ -1209,6 +1209,7 @@ Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine ke
 | `BVX.1119` | `MIL` | BLACK | MCDP 6 Command and Control (1996) | U.S. Marine Corps | 153 |
 | `BVX.1120` | `MIL` | BLACK | MCDP 7 Learning (2020) | U.S. Marine Corps | 81 |
 | `BVX.1121` | `MIL` | BLACK | MCDP 8 Information (2022) | U.S. Marine Corps | 126 |
+| `BVX.1122` | `GAM` | BLACK | GURPS Hot Spots: Renaissance Venice (a worked setting; the first sourcebook distilled as a SETTING-SLICE instance) | Riggsby / Steve Jackson Games | 40 |
 
 **Ancients intake 2026-09-03 (`BVX.1108`–`1110`):** web essays, not books — `source_type: article`; Oxman and Ito are CC-BY (JoDS), ParadoxPairs is paradoxpairs.com/kcc. Markdown copies held at `_ARCHIVE/_broodengine/` (`krebs.cycle.of.creativity.md` · `brood.theory.design.and.science.md` · `brood.theory.bermuda.quadrilateral.md`). Distill one-sheets not yet written; `feeds:` pending. The trio is the source of the README's "Bermuda Quadrilateral / Krebs Cycle of Creativity" meta-framework.
 
