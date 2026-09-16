@@ -34,6 +34,48 @@
   "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0163.md",
   "src": "BVX.0163"
  },
+ "BVX.0191": {
+  "t": "Truby (Anatomy of Genres)",
+  "k": "book",
+  "d": "John Truby's genre theory: fourteen [[the-fourteen-genres|fourteen genres]], each a [[moral-argument|moral argument]] proved through a fixed chapter schema, hero, opponent, and story world.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0191.md",
+  "src": "BVX.0191"
+ },
+ "BVX.0576": {
+  "t": "Selbo (Film Genre for the Screenwriter)",
+  "k": "book",
+  "d": "Jule Selbo's screenwriting-craft genre text: genre as a contract built from [[the-icm|the ICM]], one [[overriding-genre|overriding genre]] stacking [[supporting-genre|supporting genres]], scored by percentage of scenes.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0576.md",
+  "src": "BVX.0576"
+ },
+ "BVX.0580": {
+  "t": "Neale (Genre and Hollywood)",
+  "k": "book",
+  "d": "Steve Neale's institutional counter-weight: genre as a process among industry, critics, and audience, run through [[the-inter-textual-relay|the inter-textual relay]] and [[two-verisimilitudes|the two verisimilitudes]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0580.md",
+  "src": "BVX.0580"
+ },
+ "BVX.0581": {
+  "t": "Bawarshi & Reiff (Genre)",
+  "k": "book",
+  "d": "The field's own reference guide: three incompatible traditions for what a genre is, resolving in Miller's [[typified-social-action|typified social action]], [[uptake|uptake]], and [[meta-genre|meta-genre]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0581.md",
+  "src": "BVX.0581"
+ },
+ "BVX.0614": {
+  "t": "Todorov (The Fantastic)",
+  "k": "book",
+  "d": "Tzvetan Todorov's structuralist account of genre by reader position: [[the-hesitation|the hesitation]] between a natural and supernatural explanation, and its [[resolution-mode|resolution mode]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0614.md",
+  "src": "BVX.0614"
+ },
+ "BVX.0599": {
+  "t": "Mendlesohn (Rhetorics of Fantasy)",
+  "k": "book",
+  "d": "Farah Mendlesohn's four categories, sorted by [[delivery-mode|delivery mode]]: [[portal-quest|portal-quest]], [[immersive-fantasy|immersive fantasy]], intrusion, liminal.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0599.md",
+  "src": "BVX.0599"
+ },
  "grand-argument-story": {
   "t": "the Grand Argument",
   "k": "source-term",
@@ -1208,5 +1250,227 @@
   "k": "source-term",
   "d": "The texture layer's taxonomy, T1 through T10, every telling as a configuration of ten answers. The texture system restates them as PART B's axes and adds T11 and T12.",
   "w": "ssot_01_texture_layer.md"
+ },
+ "g1-label": {
+  "t": "G1 LABEL",
+  "k": "layer",
+  "d": "Industry label, marketing label, and critical label, three independent fields, never one slot. Fed by [[BVX.0580]]'s finding that the three routinely diverge.",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g2-family": {
+  "t": "G2 FAMILY",
+  "k": "layer",
+  "d": "Which family a genre belongs to and its polar opposite. Fed by Truby's genre families ([[BVX.0191]]) and Coyne's [[genre-clover|five-leaf clover]] ([[BVX.0236]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g3-contract": {
+  "t": "G3 CONTRACT",
+  "k": "layer",
+  "d": "The conventions a genre owes the reader: a component list, criteria steps, [[obligatory-scene|obligatory scenes]]. Fed by [[BVX.0576]], [[BVX.0236]], and [[BVX.0163]].",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g4-argument": {
+  "t": "G4 ARGUMENT",
+  "k": "layer",
+  "d": "The [[moral-argument|moral argument]] and [[core-binary|core binary]] a genre's whole structure exists to prove, restated as a Thematic Recipe ([[BVX.0191]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g5-stance": {
+  "t": "G5 STANCE",
+  "k": "layer",
+  "d": "The reader's epistemic position and [[resolution-mode|resolution mode]]: sustained [[the-hesitation|hesitation]], resolves natural, resolves supernatural, or normalized from the start ([[BVX.0614]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g6-delivery": {
+  "t": "G6 DELIVERY",
+  "k": "layer",
+  "d": "How the strange enters the text and whether it is explained: [[delivery-mode|delivery mode]], [[portal-quest|portal-quest]], [[immersive-fantasy|immersive]], intrusion, liminal ([[BVX.0599]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g7-verisimilitude": {
+  "t": "G7 VERISIMILITUDE",
+  "k": "layer",
+  "d": "[[two-verisimilitudes|The two verisimilitudes]] a genre is judged against, the generic regime it licenses internally and the cultural regime everyday belief still holds it to ([[BVX.0580]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g8-world": {
+  "t": "G8 WORLD",
+  "k": "layer",
+  "d": "The story-world a genre promises to build, [[genre-setting-contract|the genre-setting contract]]: Southern Gothic, western, space opera as setting promises ([[BVX.0191]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g9-uptake": {
+  "t": "G9 UPTAKE",
+  "k": "layer",
+  "d": "What this genre calls forth and what answers it next, a [[uptake|genre system]] in Bawarshi and Reiff's sense: pitch calls treatment calls greenlight ([[BVX.0581]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g10-audience": {
+  "t": "G10 AUDIENCE",
+  "k": "layer",
+  "d": "[[the-icm|The ICM]] a genre builds in an audience before a scene is drafted, plus Dramatica's audience appreciations ([[BVX.0576]], [[BVX.0089]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g11-market": {
+  "t": "G11 MARKET",
+  "k": "layer",
+  "d": "Cycle, budget tier, and risk position, the industrial planning units Neale finds routinely outrank genre itself ([[BVX.0580]]).",
+  "w": "ssot_01_genre_system.md"
+ },
+ "g12-function": {
+  "t": "G12 FUNCTION",
+  "k": "layer",
+  "d": "What this genre does for the Grand Argument, independent of G1 through G11. Fed independently from the storyform, keyed by [[storyform-id|storyform_id]]; mirrors L12, S12, P12, and T12 FUNCTION.",
+  "w": "ssot_01_genre_system.md"
+ },
+ "genre-card": {
+  "t": "the genre card",
+  "k": "source-term",
+  "d": "One per genre in the Command's register: Truby's chapter schema merged with Selbo's field list, name and labels through transcending variants.",
+  "w": "ssot_01_genre_system.md"
+ },
+ "genre-contract-instrument": {
+  "t": "the genre contract",
+  "k": "source-term",
+  "d": "One per work: primary genre, overriding and supporting mix, delivery mode, resolution mode, register, and the obligations owed the plot card's P10 line discharges one by one.",
+  "w": "ssot_01_genre_system.md"
+ },
+ "moral-argument": {
+  "t": "the moral argument",
+  "k": "source-term",
+  "d": "Truby's claim: each of the fourteen genres is a stated philosophy a story's whole structure exists to prove, never a plot template alone ([[BVX.0191]]).",
+  "w": "BVX.0191",
+  "src": "BVX.0191"
+ },
+ "core-binary": {
+  "t": "the core binary",
+  "k": "source-term",
+  "d": "A genre's single fundamental-concern sentence (Horror: Religion, Love: the Art of Happiness), doubling as chapter title and rung on Truby's enlightenment ladder ([[BVX.0191]]).",
+  "w": "BVX.0191",
+  "src": "BVX.0191"
+ },
+ "the-hesitation": {
+  "t": "the hesitation",
+  "k": "source-term",
+  "d": "Todorov's fantastic: the reader's sustained, undecided state between a natural and supernatural account of one event. A relation, not a content ([[BVX.0614]]).",
+  "w": "BVX.0614",
+  "src": "BVX.0614"
+ },
+ "resolution-mode": {
+  "t": "resolution mode",
+  "k": "source-term",
+  "d": "How a genre's hesitation settles: sustained, resolves natural (the uncanny), resolves supernatural (the marvelous), or normalized from the start (Kafka's generalized fantastic) ([[BVX.0614]]).",
+  "w": "BVX.0614",
+  "src": "BVX.0614"
+ },
+ "delivery-mode": {
+  "t": "delivery mode",
+  "k": "source-term",
+  "d": "Mendlesohn's variable: how the fantastic enters the narrated world and whether it is explained, distinct from focalization or grammatical person ([[BVX.0599]]).",
+  "w": "BVX.0599",
+  "src": "BVX.0599"
+ },
+ "immersive-fantasy": {
+  "t": "immersive fantasy",
+  "k": "source-term",
+  "d": "Mendlesohn's second category: the reader is already of the world, no portal, no explanation; a fantasy of thinning rather than discovery ([[BVX.0599]]).",
+  "w": "BVX.0599",
+  "src": "BVX.0599"
+ },
+ "portal-quest": {
+  "t": "portal-quest",
+  "k": "source-term",
+  "d": "Mendlesohn's first category: the reader is led through by a guide-narrator, gradual explanation, reward and restoration at the end ([[BVX.0599]]).",
+  "w": "BVX.0599",
+  "src": "BVX.0599"
+ },
+ "two-verisimilitudes": {
+  "t": "the two verisimilitudes",
+  "k": "source-term",
+  "d": "Neale's pair: generic verisimilitude (plausible by the genre's own rules) and cultural verisimilitude (plausible by everyday belief). Every genre balances both ([[BVX.0580]]).",
+  "w": "BVX.0580",
+  "src": "BVX.0580"
+ },
+ "the-inter-textual-relay": {
+  "t": "the inter-textual relay",
+  "k": "source-term",
+  "d": "Posters, trailers, stills, reviews, credit sequences: the industry's own machinery for a film's narrative image, and the primary evidence for what a genre actually was ([[BVX.0580]]).",
+  "w": "BVX.0580",
+  "src": "BVX.0580"
+ },
+ "typified-social-action": {
+  "t": "typified social action",
+  "k": "source-term",
+  "d": "Miller's founding definition: a genre is a typified rhetorical action that helps constitute the recurrent situation it responds to, not a container for texts ([[BVX.0581]]).",
+  "w": "BVX.0581",
+  "src": "BVX.0581"
+ },
+ "uptake": {
+  "t": "uptake",
+  "k": "source-term",
+  "d": "Freadman's mechanism: the conditioned, memoried way one genre's move calls forth a specific genre in response, like a played tennis shot. Selective, not causal ([[BVX.0581]]).",
+  "w": "BVX.0581",
+  "src": "BVX.0581"
+ },
+ "genre-system-term": {
+  "t": "genre system",
+  "k": "source-term",
+  "d": "Several genre sets coordinated toward one overarching function (Devitt, Bazerman), one scale in a nested taxonomy running set to system to repertoire to a whole culture's context of genres ([[BVX.0581]]).",
+  "w": "BVX.0581",
+  "src": "BVX.0581"
+ },
+ "meta-genre": {
+  "t": "meta-genre",
+  "k": "source-term",
+  "d": "Giltrow's term: an atmosphere-level text or talk, a style bible, a showrunner's tone memo, that teaches and stabilizes how a genre gets used, sitting above genre and register both ([[BVX.0581]]).",
+  "w": "BVX.0581",
+  "src": "BVX.0581"
+ },
+ "the-icm": {
+  "t": "the ICM",
+  "k": "source-term",
+  "d": "Selbo's idealized cognitive model: an audience's mental space for a genre, built from schematic, specific, and relevant knowledge, before a scene is drafted ([[BVX.0576]]).",
+  "w": "BVX.0576",
+  "src": "BVX.0576"
+ },
+ "overriding-genre": {
+  "t": "overriding genre",
+  "k": "source-term",
+  "d": "The genre that dominates a story's frame and must fully satisfy its own criteria; other genres support it (Neale's genre hybrid) ([[BVX.0576]]).",
+  "w": "BVX.0576",
+  "src": "BVX.0576"
+ },
+ "supporting-genre": {
+  "t": "supporting genre",
+  "k": "source-term",
+  "d": "A genre stacked beneath the overriding genre; counts toward a hybrid only if its own criteria are substantially met, not merely gestured at ([[BVX.0576]]).",
+  "w": "BVX.0576",
+  "src": "BVX.0576"
+ },
+ "the-fourteen-genres": {
+  "t": "the fourteen genres",
+  "k": "source-term",
+  "d": "Truby's set: Horror, Action, Myth, Memoir/Coming-of-Age, Fantasy, Detective/Thriller, Love, Science Fiction, Crime, Comedy, Western, Gangster, each a moral argument proved through a fixed schema ([[BVX.0191]]).",
+  "w": "BVX.0191",
+  "src": "BVX.0191"
+ },
+ "mode-vs-genre": {
+  "t": "mode vs genre",
+  "k": "source-term",
+  "d": "Bordwell's distinction, via Selbo: mode is the delivery vehicle (animation, documentary, mini-series); it says nothing about content. Mode is never genre ([[BVX.0576]]).",
+  "w": "BVX.0576",
+  "src": "BVX.0576"
+ },
+ "genre-setting-contract": {
+  "t": "the genre-setting contract",
+  "k": "source-term",
+  "d": "The spine's L7-to-setting touchpoint: Southern Gothic, western, space opera are genres that ARE setting promises, not decoration on top of one ([[BVX.0191]]).",
+  "w": "ssot_01_story_spine_comparative_tree.md"
+ },
+ "the-four-vocabularies": {
+  "t": "the four vocabularies",
+  "k": "source-term",
+  "d": "Snyder's ten, Coyne's clover, Selbo's sixteen, and Truby's fourteen genres: four independently arrived-at genre lists for one reader-contract territory, none substituting for another.",
+  "w": "ssot_01_genre_system.md"
  }
 }

@@ -6,7 +6,7 @@
   "issued": "2026-08-26",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "Stage 1 done 8/26; stage 2 reopened 9/16 as the gate on story-side work. 9/16 late: the character wave and the texture wave both landed (ten more distills, twenty v4 distills total), the character doc at 2.0.1 with its eleven calls ruled, the setting doc at 1.1.0, the texture system v0.1.0 written and served as TM 05, TM 02 and TM 03 republished. The genre wave remains.",
+  "status": "Stage 1 done 8/26; stage 2 reopened 9/16 as the gate on story-side work. 9/16 late: three waves landed in one sitting (character · texture · genre), twenty-six v4 distills, five models written and served as TM 02 through 06 (plot 04 · setting 03 · character 02 · texture 05 · genre 06), the character and texture calls ruled. The gate is ready to be called.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "story-side work across the Command (BOLO 24's own slice stays free of the gate); the new SSOT docs (plot_systems v0.1.1 done, setting and character owed); the TM pages (04 plot, 03 setting, 02 character)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.6 · DOPE SHEET"
+  "version": "v0.7 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Key every source to the story spine and distill the shelves into the plot, setting and character models, **in order to** build the top layer of what a story is from the thousand books already owned.",
-  "order": "**The genre wave: open the 174-item L7 shelf, distill its top five on v4, then write the genre system v0.1 (L7: genre, medium, audience, market) and build TM 06. The texture system's thirteen OPEN calls and the OXO telling-profile bench wait for Papi; the acquisitions wait for Papi.**",
-  "default": "Silence: the twenty distills, the plot system, the character doc 2.0.1, the setting doc 1.1.0 and the texture system 0.1.0 stand; TM 02 through 05 stay as published; the texture system's OPEN calls stay open; the acquisition queue waits; BOLO 24 stays parked behind the gate.",
+  "order": "**Call the gate: stage 2's five models are written from their shelves and served (plot 04 · setting 03 · character 02 · texture 05 · genre 06). Close it now (rec) so BOLO 24's story-side work resumes, or run the L6 theme wave (27 items) first. The genre system's thirteen calls, the OXO genre-contract bench and the acquisitions wait for Papi.**",
+  "default": "Silence: the gate stays formally open but nothing more is built on it; the twenty-six distills and the five models stand; TM 02 through 06 stay as published; the genre system's calls stay open; the acquisition queue waits in the drop folder; BOLO 24 stays parked.",
   "calls": [
    {
     "q": "The character wave",
@@ -96,6 +96,23 @@
     "default": "as a block as recommended; the OXO profile stays a bench until OXO prose opens",
     "s": "ruled",
     "ruling": "RULED 9/16 (Papi: \"texture calls go\"): all thirteen as recommended; twelve layers hold, the names and the OXO profile bench stay provisional. Texture system 0.1.1, TM 05 republished."
+   },
+   {
+    "q": "The genre wave",
+    "s": "ruled",
+    "ruling": "OPENED and DONE 9/16 (Papi: \"genre wave go\"): six L7 distills through RANGE (Truby's Anatomy of Genres 0191, an orphan PDF found on disk · Selbo 0576 · Neale 0580 · Bawarshi & Reiff 0581 · Todorov 0614 · Mendlesohn 0599); the genre system v0.1.0 written from the shelf (twelve G-layers ⧗, the GENRE CARD and the GENRE CONTRACT, the OXO contract benched); TM 06 published."
+   },
+   {
+    "q": "The genre system's OPEN calls",
+    "options": "thirteen candidates from the six distills (twelve or fewer layers · the names · one register from four vocabularies · the four clauses as card fields · genre load and the percentage balance · mode vs genre · a contract state track · Neale's keying rule · meta-genre · a genre's expiry · the dystopia mechanism to setting · the OXO contract bench · three labels not one) — rule as a block as recommended (rec) · one by one · park",
+    "default": "as a block as recommended; the OXO contract stays a bench until OXO prose opens",
+    "s": "open"
+   },
+   {
+    "q": "Close the gate",
+    "options": "close now, the five models stand and BOLO 24's story-side work resumes (rec) · run the L6 theme wave (27 items) and the L0 root wave (27) first · keep it open until every shelf is distilled to depth",
+    "default": "close now; theme and root run as follow-on waves, not gates",
+    "s": "open"
    }
   ]
  },
@@ -109,7 +126,7 @@
     "last": "Stage 1, the Command-corpus sweep, was banked 8/26; stage 2, the library sweep, sat unfinished until the 9/16 break-break made it a gate.",
     "plan": "Finish stage 2 to the end: keyed shelves, then distills, then written models, then technical-manual pages, then this status sheet.",
     "you": "Papi ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
-    "next": "The genre wave (174 items, the largest shelf) is the last before the gate can be called closed; the texture system's thirteen OPEN calls and the OXO telling-profile bench wait for Papi."
+    "next": "Papi calls the gate: close now, or the theme wave first. The genre system's calls and the acquisitions wait."
    },
    "groups": [
     {
@@ -220,7 +237,7 @@
     "last": "Ten done phases landed in the 9/16 session, from the boresight through the TM pages.",
     "plan": "This sheet closes the session's owed item; the character, texture and genre waves come next, then the doc upgrades and the acquisitions.",
     "you": "Papi ruled the boresight, the plot system and the TM build; the scripted steps ran on Claude's side.",
-    "next": "The genre wave: 174 items on L7, no model doc yet; TM 06 to follow."
+    "next": "Close the gate (rec); theme (L6) and root (L0) as follow-on waves."
    },
    "main_effort": "The character wave, then the character document rewrite so TM 02 carries its slice.",
    "phases": [
@@ -304,8 +321,9 @@
     },
     {
      "n": 14,
-     "t": "**The genre wave:** 174 items on the L7 shelf, the largest of the nine.",
-     "s": "open"
+     "t": "**The genre wave:** six L7 distills through RANGE (Truby 0191 · Selbo 0576 · Neale 0580 · Bawarshi & Reiff 0581 · Todorov 0614 · Mendlesohn 0599), the genre system v0.1.0 written from the shelf (twelve G-layers ⧗, the GENRE CARD per genre, the GENRE CONTRACT per work, OXO benched as Coming-of-Age transcended by an institutional dystopia, immersive, generalized-fantastic), TM 06 built and published. Twenty-six v4 distills; 165 of the shelf's 174 remain.",
+     "s": "done",
+     "when": "9/16"
     },
     {
      "n": 15,
@@ -317,6 +335,11 @@
      "n": 16,
      "t": "**The acquisitions:** Vogler, Field, Snyder's original PDF, Brody, Egri and Aristotle are not in the library and sit on the spine's OPEN list; the wider gap is 3,768 z-lib favourites not yet filed, ranked per shelf.",
      "s": "open"
+    },
+    {
+     "n": 17,
+     "s": "open",
+     "t": "**The theme and root shelves:** L6 theme (27 items) and L0 root theory (27) have no wave yet; the spine doc carries them. Follow-on waves, not gates, if the close-the-gate call goes as recommended."
     }
    ],
    "coord": [],
@@ -483,6 +506,51 @@
      "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_system.md",
      "what": "the texture system v0.1.0, the fourth top-layer model; the texture layer doc 1.0.0 stays as its taxonomy source",
      "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0191.md",
+     "what": "Truby, The Anatomy of Genres (4 diagrams; genre as moral argument; the chapter schema = the GENRE CARD; orphan PDF, no Zotero record)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0576.md",
+     "what": "Selbo, Film Genre for the Screenwriter (4 diagrams; the ICM, component lists)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0580.md",
+     "what": "Neale, Genre and Hollywood (4 diagrams; genre as process; market as risk)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0581.md",
+     "what": "Bawarshi & Reiff, Genre (4 diagrams; the three traditions; uptake)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0614.md",
+     "what": "Todorov, The Fantastic (4 diagrams; genre by reader position; rot: Zotero authors wrong)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0599.md",
+     "what": "Mendlesohn, Rhetorics of Fantasy (4 diagrams; the four delivery modes; OXO immersive)",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_genre_system.md",
+     "what": "the genre system v0.1.0, the fifth top-layer model",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/_meta/rot.json",
+     "what": "catalog rot notes, durable across inventory regenerations (9/16 fix: a rerun used to drop every PS key)",
+     "s": "done"
+    },
+    {
+     "path": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP/",
+     "what": "the drop folder: acquisitions land here as bare PDFs, scanned by inventory.py, no Zotero filing",
+     "s": "done"
     }
    ],
    "cost": [
@@ -505,7 +573,7 @@
     "last": "Every wave tonight ran on the formation: scripts at both ends, specialists in the middle, one reviewer.",
     "plan": "Same shape for every remaining shelf; one wave per shelf, on your word each time.",
     "you": "You open each wave and rule each model's calls; nothing distills without the word.",
-    "next": "\"Genre wave go\" opens the last shelf."
+    "next": "\"Close the gate\" or \"theme wave go\"; \"genre calls go\" rules the thirteen; \"acquisitions in\" runs the inventory over the drop folder."
    },
    "groups": [
     {
@@ -678,6 +746,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "The thirteen texture calls ruled as recommended (doc 0.1.1, TM 05 v2). Nothing owed from Papi on BOLO 18 but the genre wave's opening and the acquisitions."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Genre wave go.\" Then: the acquisition list, and can the PDFs just go in one drop folder."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Six genre MS in parallel (Truby's Anatomy of Genres added when the spine doc named it the strong holding and it turned up as an orphan PDF), then the genre system on the fan-in seat, TM 06 published. The drop folder created and wired into the inventory; the inventory's regeneration bug found and fixed (keys now carry across runs). Twenty-six distills, five models, the gate ready to call."
     }
    ]
   }
