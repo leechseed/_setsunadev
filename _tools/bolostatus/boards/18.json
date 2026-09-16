@@ -6,7 +6,7 @@
   "issued": "2026-08-26",
   "asof": "2026-09-16",
   "s": "open",
-  "status": "GATE CLOSED 9/16 (Papi: \"go ahead and close the gate\"): stage 2's five models are written from their shelves and served as TM 02 through 06; story-side work resumes, BOLO 24 first. BOLO 18 stays open for the follow-on waves (theme L6, root L0, the drop-folder intake) and the acquisitions, none of them gates.",
+  "status": "GATE CLOSED 9/16; story-side work resumes. The drop-folder intake ran the same night: 6,664 PDFs scanned (67 GB, mostly RPG lines), the five real acquisitions minted BVX.1123–1127, distilled and folded into the character, plot and genre docs (thirty-one v4 distills), four of the eight asked-for books turned out to be fakes, the wrong title or a translation, and the bulk is held unkeyed pending an intake order.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "story-side work across the Command (BOLO 24's own slice stays free of the gate); the new SSOT docs (plot_systems v0.1.1 done, setting and character owed); the TM pages (04 plot, 03 setting, 02 character)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.8 · DOPE SHEET"
+  "version": "v0.9 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -115,6 +115,18 @@
     "default": "close now; theme and root run as follow-on waves, not gates",
     "s": "ruled",
     "ruling": "RULED 9/16 (Papi: \"go ahead and close the gate\"): closed now; theme (L6) and root (L0) run as follow-on waves, not gates; BOLO 24's story-side work resumes."
+   },
+   {
+    "q": "The drop bulk intake",
+    "options": "a zero-token filename-family map (Shadowrun · GURPS · Pathfinder … → GAM, sourcebooks → SETTING) then a PS pass over the non-RPG residue, a few hundred (rec) · the sweep's full standard over all 6,655 held rows (~130 PS batches, ~5M tokens) · hold, the bulk stays scanned but unkeyed",
+    "default": "the family map, then the residue; the bulk never enters a shelf by title rule alone",
+    "s": "open"
+   },
+   {
+    "q": "The four re-acquisitions",
+    "options": "Field *Screenplay* (a summary-app PDF landed) · Booth *The Rhetoric of Fiction* (a 34-page spam summary landed) · Genette *Narrative Discourse* (*Paratexts* landed, already held as 0582) · Levine & Heller *Attached* in English (a Vietnamese translation landed; distilled from what could be verified) — Papi re-acquires into the drop folder (rec) · drop them from the queue",
+    "default": "re-acquire; the queue keeps them",
+    "s": "open"
    }
   ]
  },
@@ -128,7 +140,7 @@
     "last": "Stage 1, the Command-corpus sweep, was banked 8/26; stage 2, the library sweep, sat unfinished until the 9/16 break-break made it a gate.",
     "plan": "Finish stage 2 to the end: keyed shelves, then distills, then written models, then technical-manual pages, then this status sheet.",
     "you": "Papi ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
-    "next": "The drop-folder intake: inventory, key, distill the acquisitions and Character Bones; then theme and root when called."
+    "next": "Papi calls the bulk intake (family map, rec) and re-acquires four books; theme and root waves wait; BOLO 24's story-side work is free to resume."
    },
    "groups": [
     {
@@ -342,6 +354,18 @@
      "n": 17,
      "s": "open",
      "t": "**The theme and root shelves:** L6 theme (27 items) and L0 root theory (27) have no wave yet; the spine doc carries them. Follow-on waves, not gates, if the close-the-gate call goes as recommended."
+    },
+    {
+     "n": 18,
+     "s": "done",
+     "when": "9/16",
+     "t": "**The drop-folder intake:** the folder wired into `inventory.py` (junk skipped, Scribd names read, catalog rows matched by file), the regeneration bug fixed on the way, 6,664 PDFs scanned; the five real acquisitions minted BVX.1123–1127 and keyed by hand (`MANUAL` in `fullpass.py`); the bulk held (`drop-unkeyed`, 6,655) because title rules over-key RPG character sheets; `_meta/DROP-INTAKE.md` written."
+    },
+    {
+     "n": 19,
+     "s": "done",
+     "when": "9/16",
+     "t": "**The acquisition distills, folded in:** Egri 1123 (the BONE STRUCTURE, 27 fields mapped onto the stack; heredity homeless) · Vogler 1124 (twelve stages onto P6; archetypes as masks) · Brody 1125 (the delta from Snyder; the ingredient triad) · Aristotle/Sachs 1126 (read visually; \"OS-biased\" confirmed; hamartia is an error, not a wound) · Attached 1127 (the L8 IMPRINT field list). Character doc 2.0.2 (+4 OPEN), plot doc 0.1.2 (+4), genre doc 0.1.2 (+2), the spine's rival map updated; TM 02, 04, 06 republished. Thirty-one v4 distills."
     }
    ],
    "coord": [],
@@ -366,7 +390,7 @@
     },
     {
      "path": "_tools/zotero/inventory.py",
-     "what": "reads a copy of the live Zotero DB into INVENTORY-LIVE.md/json — item counts, PDFs on disk, items new since the catalog, items already spine-keyed by Papi's 2023 tags",
+     "what": "drop_scan() + the carry-over of sweep fields across regenerations",
      "s": "done"
     },
     {
@@ -381,7 +405,7 @@
     },
     {
      "path": "_tools/zotero/fullpass.py",
-     "what": "keys every item to every shelf at once — key, batch, merge, shelves — the script that produced the true shelf counts",
+     "what": "MANUAL keys; drop rows without a catalog match are held, never batched",
      "s": "done"
     },
     {
@@ -552,6 +576,41 @@
     {
      "path": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP/",
      "what": "the drop folder: acquisitions land here as bare PDFs, scanned by inventory.py, no Zotero filing",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/_meta/DROP-INTAKE.md",
+     "what": "the intake report: counts, the acquisitions' state, the fakes, the bulk by family, the cost of a full pass, the recommendation",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/_meta/catalog.json",
+     "what": "five acquisition rows minted BVX.1123–1127 with drop_file",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1123.md",
+     "what": "Egri, The Art of Dramatic Writing (4 diagrams; the bone structure, Papi's \"Character Bones\")",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1124.md",
+     "what": "Vogler, The Writer's Journey, 3rd ed. (4 diagrams)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1125.md",
+     "what": "Brody, Save the Cat! Writes a Novel (4 diagrams)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1126.md",
+     "what": "Aristotle, Poetics, Sachs trans. (4 diagrams; a visual read of a scan)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1127.md",
+     "what": "Levine & Heller, Attached (4 diagrams; from a Vietnamese translation)",
      "s": "done"
     }
    ],
@@ -768,6 +827,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Gate closed on the sheet, BOLO.md and STATE; the thirteen genre calls ruled (doc 0.1.1, TM 06 v2); the drop-folder intake opened."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Intake: 6,664 PDFs in the drop folder, not eight. Five real acquisitions distilling (Egri · Vogler · Brody · Aristotle by visual read of a scan · Attached); Field and Booth are fakes, Genette is the wrong title. The bulk held; the family map recommended."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "The five acquisition distills through RANGE and folded into the systems on one fan-in seat: the character doc 2.0.2 carries Egri's bone structure, the L8 field list from Attached and Vogler's masks as library rows and OPEN calls 12 to 15; the plot doc 0.1.2 and the genre doc 0.1.2 likewise; the spine's rival map now shows Aristotle, Egri and Vogler held. Attached turned out to be a Vietnamese edition; an English copy joins the re-acquisitions."
     }
    ]
   }

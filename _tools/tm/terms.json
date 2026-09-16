@@ -1472,5 +1472,166 @@
   "k": "source-term",
   "d": "Snyder's ten, Coyne's clover, Selbo's sixteen, and Truby's fourteen genres: four independently arrived-at genre lists for one reader-contract territory, none substituting for another.",
   "w": "ssot_01_genre_system.md"
+ },
+ "BVX.1123": {
+  "t": "Egri (The Art of Dramatic Writing)",
+  "k": "book",
+  "d": "Lajos Egri's 1946 craft book: a character is [[the-bone-structure|the bone structure]], physiology, sociology, psychology; [[the-premise|the premise]] is the one sentence the whole play must prove; [[strength-of-will|strength of will]] defines [[the-pivotal-character|the pivotal character]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1123.md",
+  "src": "BVX.1123"
+ },
+ "BVX.1124": {
+  "t": "Vogler (The Writer's Journey)",
+  "k": "book",
+  "d": "Campbell's monomyth compressed into [[the-twelve-stages|twelve stages]] and eight archetypes as [[archetypes-as-masks|masks]], including [[the-ordeal|the Ordeal]]'s death-and-rebirth and [[the-repeat-turn|a second, harder Resurrection]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1124.md",
+  "src": "BVX.1124"
+ },
+ "BVX.1125": {
+  "t": "Brody (Save the Cat! Writes a Novel)",
+  "k": "book",
+  "d": "Snyder's fifteen beats re-keyed to percentages of manuscript length, wrapped in an A Story/B Story want-need split and [[the-ingredient-triad|the ingredient triad]], exactly three required elements per genre.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1125.md",
+  "src": "BVX.1125"
+ },
+ "BVX.1126": {
+  "t": "Aristotle (Poetics)",
+  "k": "book",
+  "d": "The rival map's root ancestor, read from the primary text (trans. Sachs): [[hamartia|hamartia]], [[peripeteia|peripeteia]], and [[anagnorisis|anagnorisis]] drive the tragic plot, and [[catharsis|catharsis]] is completed eighteen chapters later in [[wonder-telos|wonder]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1126.md",
+  "src": "BVX.1126"
+ },
+ "BVX.1127": {
+  "t": "Levine & Heller (Attached)",
+  "k": "book",
+  "d": "Adult attachment theory as three styles, secure, anxious, avoidant, run by one evolved system; [[protest-behaviors|protest behaviors]], [[deactivating-strategies|deactivating strategies]], and [[the-secure-base|the secure base]]'s buffering effect.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1127.md",
+  "src": "BVX.1127"
+ },
+ "the-bone-structure": {
+  "t": "the bone structure",
+  "k": "source-term",
+  "d": "Egri's tridimensional outline, physiology, sociology, psychology, 27 named fields under three headings; the character shelf's earliest complete checklist ([[BVX.1123]]).",
+  "w": "BVX.1123",
+  "src": "BVX.1123"
+ },
+ "strength-of-will": {
+  "t": "strength of will",
+  "k": "source-term",
+  "d": "Not toughness, the capacity to decide and act; a weak character is one who cannot make a decision, Egri's clearest ancestor of [[l4-will|L4 WILL]] ([[BVX.1123]]).",
+  "w": "BVX.1123",
+  "src": "BVX.1123"
+ },
+ "the-pivotal-character": {
+  "t": "the pivotal character",
+  "k": "source-term",
+  "d": "The protagonist, forced into the role by necessity, not choice; grows less than other characters because the decision predates the curtain ([[BVX.1123]]).",
+  "w": "BVX.1123",
+  "src": "BVX.1123"
+ },
+ "the-premise": {
+  "t": "the premise",
+  "k": "source-term",
+  "d": "One sentence, character, conflict, conclusion, that the whole play must prove; one generation before Davis's [[super-objective|super-objective]] ([[BVX.1123]]).",
+  "w": "BVX.1123",
+  "src": "BVX.1123"
+ },
+ "hamartia": {
+  "t": "hamartia",
+  "k": "source-term",
+  "d": "Missing the mark, archery imagery, never badness of character; corrects the tragic-flaw tradition traced to Butcher's 1895 mistranslation ([[BVX.1126]]).",
+  "w": "BVX.1126",
+  "src": "BVX.1126"
+ },
+ "peripeteia": {
+  "t": "peripeteia",
+  "k": "source-term",
+  "d": "The change to the opposite of the things being done, the oldest named reversal mechanism the house holds, mapping onto [[p4-turn|P4 TURN]] ([[BVX.1126]]).",
+  "w": "BVX.1126",
+  "src": "BVX.1126"
+ },
+ "anagnorisis": {
+  "t": "anagnorisis",
+  "k": "source-term",
+  "d": "A change from ignorance to recognition, best when simultaneous with a reversal; Ch.16 ranks discovery forms least to most artful, mapping onto [[p7-reveal|P7 REVEAL]] ([[BVX.1126]]).",
+  "w": "BVX.1126",
+  "src": "BVX.1126"
+ },
+ "catharsis": {
+  "t": "catharsis",
+  "k": "source-term",
+  "d": "The washing-away of pity and fear, named once and never explained until [[wonder-telos|wonder]] completes it eighteen chapters later; a live scholarly problem, not a settled house term ([[BVX.1126]]).",
+  "w": "BVX.1126",
+  "src": "BVX.1126"
+ },
+ "wonder-telos": {
+  "t": "wonder",
+  "k": "source-term",
+  "d": "Ekplexis, the knocking-away of habitual judgment; Sachs's central claim that tragedy's actual telos is wonder, not a guaranteed lesson ([[BVX.1126]]).",
+  "w": "BVX.1126",
+  "src": "BVX.1126"
+ },
+ "protest-behaviors": {
+  "t": "protest behaviors",
+  "k": "source-term",
+  "d": "The anxious response to perceived threat, silent treatment, monitoring, manufactured jealousy, aimed at restoring attention ([[BVX.1127]]).",
+  "w": "BVX.1127",
+  "src": "BVX.1127"
+ },
+ "deactivating-strategies": {
+  "t": "deactivating strategies",
+  "k": "source-term",
+  "d": "The avoidant response: focusing on a partner's flaws, idealizing an ex, comparing to alternatives, creating distance; regulation, not disinterest ([[BVX.1127]]).",
+  "w": "BVX.1127",
+  "src": "BVX.1127"
+ },
+ "the-secure-base": {
+  "t": "the secure base",
+  "k": "source-term",
+  "d": "A consistently available partner as a base to return to and a shield against outside stress; Coan's fMRI hand-holding study anchors the buffering effect experimentally ([[BVX.1127]]).",
+  "w": "BVX.1127",
+  "src": "BVX.1127"
+ },
+ "archetypes-as-masks": {
+  "t": "archetypes as masks",
+  "k": "source-term",
+  "d": "Vogler's own phrase, from Propp: the eight archetypes worn temporarily as needed, not fixed roles; any character, including the Hero, can trade masks mid-scene ([[BVX.1124]]).",
+  "w": "BVX.1124",
+  "src": "BVX.1124"
+ },
+ "the-twelve-stages": {
+  "t": "the twelve stages",
+  "k": "source-term",
+  "d": "Vogler's compression of Campbell's monomyth into a practical map any story can shuffle, skip, or merge, from Ordinary World to Return with the Elixir ([[BVX.1124]]).",
+  "w": "BVX.1124",
+  "src": "BVX.1124"
+ },
+ "the-ordeal": {
+  "t": "the Ordeal",
+  "k": "source-term",
+  "d": "A literal or symbolic death confronting the hero's greatest fear, staged so the hero 'must die or appear to die'; Resurrection stages a second, harder pass before Return ([[BVX.1124]]).",
+  "w": "BVX.1124",
+  "src": "BVX.1124"
+ },
+ "the-ingredient-triad": {
+  "t": "the ingredient triad",
+  "k": "source-term",
+  "d": "Every one of Brody's ten genres reduces to exactly three required ingredients; a fast completeness check against a genre draft ([[BVX.1125]]).",
+  "w": "BVX.1125",
+  "src": "BVX.1125"
+ },
+ "the-repeat-turn": {
+  "t": "the repeat turn",
+  "k": "source-term",
+  "d": "Vogler's Resurrection forcing a second full value-in/turn/value-out pass before Return, a need [[p9-stakes|P9 STAKES/ESCALATION]]'s single 'trend up' rule doesn't yet name ([[BVX.1124]]).",
+  "w": "BVX.1124",
+  "src": "BVX.1124"
+ },
+ "multi-pov": {
+  "t": "multi-POV",
+  "k": "source-term",
+  "d": "Brody's allowance for one full fifteen-beat instance per POV hero, layered on a shared timeline, proven on the Institutionalized/Help worked example ([[BVX.1125]]).",
+  "w": "BVX.1125",
+  "src": "BVX.1125"
  }
 }

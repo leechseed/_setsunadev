@@ -171,13 +171,13 @@ Each level's first sub-layer plus its starter shelf (house holdings + library). 
 | Model | Holdings | What it actually models | Verdict vs the spine |
 |---|---|---|---|
 | **Dramatica** (Phillips/Huntley) | BVX.0089 · 0090 · 0091 + house SSOT | the whole tree | **CANONICAL SPINE** |
-| Aristotle, *Poetics* | BVX.0603 (guidebook only — ⚠️ primary text not held) | first taxonomy: plot·character·thought·diction·melody·spectacle | root ancestor; OS-biased |
-| Egri, *Art of Dramatic Writing* | ❌ **NOT HELD — GAP** | premise-as-proof; character dimensions | Grand Argument's direct ancestor |
-| Campbell / Vogler | BVX.0616 · 0244 · 0098 (+ mythology corpus 0110–0112, 0823–0841) | MC throughline in mythic dress | one line mistaken for the whole |
+| Aristotle, *Poetics* | BVX.1126 (Sachs trans., primary text held 9/16 via the drop folder) · BVX.0603 (guidebook) | first taxonomy: plot·character·thought·diction·melody·spectacle | root ancestor; OS-biased |
+| Egri, *Art of Dramatic Writing* | BVX.1123 (held 9/16 via the drop folder) | premise-as-proof; character dimensions | Grand Argument's direct ancestor |
+| Campbell / Vogler | BVX.0616 · 0244 · 0098 (+ mythology corpus 0110–0112, 0823–0841) · BVX.1124 (Vogler, 3rd ed., held 9/16) | MC throughline in mythic dress | one line mistaken for the whole |
 | McKee (*Story* · *Character* · *Action*) | BVX.0175 · 0064 · 0050 · 0174 | scene/beat value mechanics; controlling idea; cast design | the beat-level engine below the spine's floor |
 | Truby (*Anatomy of Story* · *of Genres*) | BVX.0193 · 0191 | 22-step merged MC/OS line; character web; moral argument; genre traditions | best rival synthesis; no IC/RS separation |
-| Field / three-act | ❌ not held directly (covered via Aronson 0188 · Fink 0092 · Frayne 0228) | OS plot skeleton | subset of L4 |
-| Snyder / Brody | BVX.0163 · 0164 | timed beat template; commercial genre wheels | template, not theory |
+| Field / three-act | ❌ not held directly (covered via Aronson 0188 · Fink 0092 · Frayne 0228) (a summary-app PDF landed 9/16, not the book) | OS plot skeleton | subset of L4 |
+| Snyder / Brody | BVX.0163 · 0164 · BVX.1125 (the real Brody, 9/16; 0164 holds Snyder) | timed beat template; commercial genre wheels | template, not theory |
 | Coyne / Story Grid | BVX.0236 · 0049 · 0103 | fractal scene grammar; genre conventions; editor's diagnostics | strongest below-the-floor + L7 complement |
 | Yorke, *Into the Woods* | BVX.0127 | fractal five-act; change-as-universal | L3/L4 corroboration |
 | Weiland (7 vols) | BVX.0046 · 0071 · 0072 · 0146–0148 · 0182 · 0183 · 0271 · 0289 | arcs, outlining, structure, theme — craft translation layer | the applied workbook shelf |

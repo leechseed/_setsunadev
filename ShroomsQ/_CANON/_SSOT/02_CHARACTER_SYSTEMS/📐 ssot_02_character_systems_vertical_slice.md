@@ -1,14 +1,14 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 2.0.1
+version: 2.0.2
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Papi: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
+status: "v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Papi: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
 rung: standard
 dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system"]
 trunk: BLACK
-sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045]
+sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127]
 purpose: "THE CHARACTER SYSTEM, v2.0.0: the 12-Layer Character Database vertical slice, the first top-layer model of the lattice, now written against the character shelf of the library, which holds nine distills across McKee, Davis, Truby, Dramatica, Corbett, Card, Puglisi & Ackerman, Pelican, and Schmidt."
 ---
 
@@ -547,8 +547,11 @@ FLAGS:
 | [[BVX.0209]] | Puglisi & Ackerman, *The Emotional Wound Thesaurus* | L5 WOUND, L6 DRIVE | the wound-lie-fear-shielding chain and a nine-factor severity dial for WOUND's 0–10 scale |
 | [[BVX.0233]] | Pelican, *The Science of Writing Characters* | L6 DRIVE, L1 CORE, L3 SOCIAL | the fifteen evolutionary motivations, the Big Five as CORE's substrate, and the interpersonal circumplex |
 | [[BVX.0045]] | Schmidt, *45 Master Characters* | L10 SHADOW, L11 DESTINY | the light face / shadow face pairing and the two nine-stage soul-evolution journeys |
+| [[BVX.1123]] | Egri, *The Art of Dramatic Writing* | L4 WILL, Tier 1 (via [[the-bone-structure|the bone structure]]) | the 27-field descriptive ancestor of the stack, [[strength-of-will|strength of will]] as L4's definition, [[the-premise|the premise]] as L6's single proposition |
+| [[BVX.1127]] | Levine & Heller, *Attached* | L8 IMPRINT | the attachment-style enum, the two-dimension score, [[protest-behaviors|protest behaviors]] and [[deactivating-strategies|deactivating strategies]] |
+| [[BVX.1124]] | Vogler, *The Writer's Journey* | L12 FUNCTION, L10 SHADOW | [[archetypes-as-masks|archetypes as masks]] beside Dramatica's eight, the Shadow as a mask any character wears |
 
-The L5 shelf holds 82 items keyed 9/16 (BOLO 18), nine distilled to date, this document's nine sources. The next wave's top candidates: BVX.0202 (Corbett, *The Compass of Character*), BVX.0271 (Weiland, *Archetypal Arcs*), BVX.0135 (Jorstad, *Character Arcs*), BVX.0207 (Dunne, *Dramatic Writer's Companion*), BVX.0229 (Smith, *Psychology Workbook*).
+The L5 shelf holds 82 items keyed 9/16 (BOLO 18), twelve distilled to date, this document's twelve sources. The next wave's top candidates: BVX.0202 (Corbett, *The Compass of Character*), BVX.0271 (Weiland, *Archetypal Arcs*), BVX.0135 (Jorstad, *Character Arcs*), BVX.0207 (Dunne, *Dramatic Writer's Companion*), BVX.0229 (Smith, *Psychology Workbook*).
 
 ---
 
@@ -578,6 +581,14 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 11. **Attachment theory absent from the shelf.** L8 IMPRINT already claims attachment architecture, but [[BVX.0233]] notes the shelf has never distilled attachment theory itself, staying at the need-to-belong level. *Ruled 9/16, as recommended:* an acquisition target for the next wave, or a pull from the PSY shelf, not a schema change.
 
+12. **[[the-bone-structure|The bone structure]] as Tier 1's text stack.** [[BVX.1123]]'s CORE, VITAL, and SOCIAL should carry Egri's descriptive sub-fields beneath the number, auditable against his own checklist rather than freestanding; heredity is the one field genuinely homeless, sitting in neither ORIGIN nor VITAL. *Recommendation:* adopt the text stack at the next bump, plus a `hereditary_predisposition` sub-field on L7 or L2, whichever proves load-bearing on a second character.
+
+13. **[[strength-of-will|Strength of will]] and [[the-pivotal-character|the pivotal character]].** [[BVX.1123]] defines L4 WILL as the capacity to decide, not toughness, which reframes Stress Threshold as decision-capacity under load rather than raw hardness; the pivotal character, forced into the role by necessity, argues L12 FUNCTION's Protagonist archetype should require a documented necessity, not just a storyform assignment. *Recommendation:* the L4 definition now as a gloss, the L12 rule at the next bump.
+
+14. **The L8 IMPRINT field list from *Attached*.** [[BVX.1127]] proposes `attachment_style` as an enum of secure, anxious, avoidant, plus the rare fearful-avoidant; a two-dimension `attachment_style_score` (anxiety, avoidance) beside the single scalar; new list-typed fields `protest_behaviors` and `deactivating_strategies`; and `secure_base_object` as a clearer name for `primary_attachment_object`. [[the-secure-base|The secure base]]'s buffering effect, one character's presence measurably lowering another's stress response, is a dyadic variable with no home on either side; Victoria Midnight's `KINSHIP_COLLAPSE` flag reads as the same claim under a different name, consistent rather than redundant wiring. *Recommendation:* the field list at the next bump, Cassidy & Shaver or Bowlby as the research-base acquisition.
+
+15. **Masks, the Shapeshifter, and the Mentor.** [[BVX.1124]]'s [[archetypes-as-masks|archetypes as masks]] confirms Schmidt's non-collision with Dramatica's eight from a second source, since Vogler's eight are situational functions any character can trade mid-scene rather than fixed Story Mind bundles. The Shapeshifter's relational uncertainty has no single-layer home, sitting closer to L9 EROS or L3 SOCIAL than to L12 FUNCTION. The Mentor is a relational pointer, not a portable attribute, joining call 1's ghost/revenant cross-link as another meaning keyed to another character's WOUND that the schema still can't natively express. *Recommendation:* fold into call 1's sub-field at the next bump.
+
 ## Version history
 
 |Version|Date|Changes|
@@ -586,3 +597,4 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 |1.1.0|2026-08-24|STATE #3 executed: L9 v2 propagation (`armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition`; L9 AUTHORED via victoria-midnight-L9-eros). Expressive Range derived stat added. L12 rename `motivation_element` → `mc_problem_element` (STATE #4 ruling); `motivation_quad` → L12_DRAMATICA_EXTENDED. TRUTH_VULNERABILITY trigger updated.|
 |2.0.0|2026-09-16|BOLO 18 character wave: proper YAML frontmatter (was a malformed single-line block); intro block (What this is / owns / does not own / Root claim); MIND MODELS (three diagrams); PART A slice table (twelve layers, Question/Source/Field/Tier columns) sourced against five new distills (Corbett, Card, Puglisi & Ackerman, Pelican, Schmidt) plus the four already in the library (McKee, Davis, Truby, Dramatica); THE INSTANCE gained a Victoria Midnight summary table ahead of the existing full slice; CHARACTER × LIBRARY table and shelf note; eleven OPEN calls. Schema, formulas, and every value in the Victoria Midnight instance are unchanged.|
 |2.0.1|2026-09-16|The eleven OPEN calls ruled as recommended, applying at the next schema bump ("character calls go"). No schema change.|
+|2.0.2|2026-09-16|The drop-folder intake folded in: three new CHARACTER × LIBRARY rows (Egri, Levine & Heller, Vogler); sources gained BVX.1123, BVX.1124, BVX.1127; four OPEN calls added (12-15), unruled. Schema, formulas, and the Victoria Midnight instance unchanged.|

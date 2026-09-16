@@ -1,14 +1,14 @@
 ---
 type: ssot_04_plot_systems
 category: plot_system
-version: 0.1.1
+version: 0.1.2
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.1 RULED 2026-09-16 (Papi: \"plot go\", all seven OPEN calls as recommended): the twelve P-layer names are house coinage, the count holds at twelve, the PLOT CARD stays a sibling of the SCENE CARD; provisional a week like every ruling"
+status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Vogler, Brody, Aristotle), four OPEN calls added, slice unchanged. v0.1.1 RULED 2026-09-16 (Papi: \"plot go\", all seven OPEN calls as recommended): the twelve P-layer names are house coinage, the count holds at twelve, the PLOT CARD stays a sibling of the SCENE CARD; provisional a week like every ruling"
 rung: standard
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_collision_engine", "ssot_03_setting_system", "ssot_02_dramatica_integration_protocol"]
 trunk: BLACK
-sources: [BVX.0089, BVX.0175, BVX.0236, BVX.0193, BVX.0163]
+sources: [BVX.0089, BVX.0175, BVX.0236, BVX.0193, BVX.0163, BVX.1124, BVX.1125, BVX.1126]
 purpose: "THE PLOT SYSTEM, v0.1: the third top-layer model beside the character system (02) and the setting system (03). The taxonomy of what plot IS (four axes), the twelve-layer PLOT SLICE schema (mirror of the character stack and the setting slice), the PLOT CARD notation (paired to the SCENE CARD), and the M2 row-9 instance as proof."
 ---
 
@@ -219,6 +219,9 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 - **[[BVX.0236]] (Coyne)** feeds P4 TURN (the Five Commandments, already the SCENE CARD's `commandments` line), P9 STAKES/ESCALATION (invariant 5), P10 GENRE OBLIGATION (obligatory scenes).
 - **[[BVX.0193]] (Truby)** feeds P4 TURN (the step, plan/battle), P7 REVEAL (the revelations sequence: logic, intensity, pace, reversal).
 - **[[BVX.0163]] (Snyder)** feeds P10 GENRE OBLIGATION (the 10 genres, the 15 beats as a page-keyed instance), P11 TIME (the Board as a portable scene-inventory, page marks as an order-happened baseline).
+- **[[BVX.1124]] (Vogler)** feeds P6 SIGNPOST/JOURNEY SEAT ([[the-twelve-stages|the twelve stages]] as a second act-seam vocabulary), P4 TURN ([[the-ordeal|the Ordeal]] as its highest-stakes instance; Resurrection as [[the-repeat-turn|a repeat turn]]).
+- **[[BVX.1125]] (Brody)** feeds P1 ADDRESS (percentage-keyed beats as a baseline), P6 SIGNPOST/JOURNEY SEAT (the A Story/B Story split), and the [[multi-pov|multi-POV]] allowance.
+- **[[BVX.1126]] (Aristotle)** feeds P4 TURN ([[peripeteia|peripeteia]]) and P7 REVEAL ([[anagnorisis|anagnorisis]], Ch.16's ranked discovery taxonomy as a reveal-quality ladder); the primary text is now held.
 
 **Templates as instances, not rivals:** Snyder's 15 beats, Truby's 22 steps, and Coyne's Foolscap are not competing plot systems, they are pre-filled P-layer sequences for specific genre or medium cases. Snyder's beat sheet is one fixed, page-timed way to populate P6 and P10 across a roughly 110-page screenplay form. Truby's 22 steps are the most granular ordered P4/P7 sequence in the library, plan, counterattack, drive, battle, reveal, laid out as one organic chain. Coyne's Foolscap is a six-question intake form that front-loads P10 GENRE OBLIGATION and P12 FUNCTION before a single scene is carded. None of the three is authoritative over the spine's sixteen ruled signposts; each is a lens the plot slice can wear.
 
@@ -238,7 +241,17 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 6. **P9 STAKES/ESCALATION needs a prior unit to compare against.** The row-9 proof hit this directly, it sits early in its own sequence with nothing upstream carded yet. *Recommendation:* card the sequence's earlier scenes (q1.s1, s2) before trusting any `stakes_delta` value on s3.
 7. **P10 GENRE OBLIGATION for OXO.** Snyder's Institutionalized genre reading (newcomer vs. group) is this document's own inference, not yet canon. *Recommendation:* rule OXO's primary genre or genre blend against Coyne's clover and Snyder's ten before P10 gets used on a second card, so obligations are checked against a fixed contract rather than guessed per scene.
 
+8. **[[the-repeat-turn|The repeat turn]].** [[BVX.1124]]'s Resurrection forces a second full value-in/turn/value-out pass before Return, a harder death-and-rebirth than the Ordeal's first; P9's single "trend up" rule does not name this repeat requirement. *Recommendation:* a P9 note at the next bump.
+
+9. **[[multi-pov|Multi-POV]] stacking.** [[BVX.1125]]'s Institutionalized/Help worked example runs three parallel fifteen-beat instances under one manuscript; P6 SIGNPOST/JOURNEY SEAT has no documented method for stacking more than one throughline-bearing hero's beats. *Recommendation:* a P6 rule at the next bump.
+
+10. **Percentage addressing.** [[BVX.1125]]'s percent-of-manuscript beats are immediately portable to P1 ADDRESS for any unit not already fixed to a known total length, unlike Snyder's page marks. *Recommendation:* adopt as a P1 convention now.
+
+11. **The discovery ladder.** [[BVX.1126]] Ch.16's ranked [[anagnorisis|recognitions]], least artful (a scar) to best (from the actions themselves), reads as P7 REVEAL's own reveal-quality scale. *Recommendation:* a P7 sub-field at the next bump.
+
 ## Version history
+
+- **0.1.2 · 2026-09-16** — the drop-folder intake folded in (Vogler, Brody, Aristotle): three new PLOT × LIBRARY lines; sources gained BVX.1124, BVX.1125, BVX.1126; four OPEN calls added (8-11), unruled. Slice unchanged.
 
 - **0.1.1 · 2026-09-16** — the seven OPEN calls ruled as recommended ("plot go"); status provisional a week.
 

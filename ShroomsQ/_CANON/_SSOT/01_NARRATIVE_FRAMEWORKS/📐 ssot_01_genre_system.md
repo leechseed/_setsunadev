@@ -1,14 +1,14 @@
 ---
 type: ssot_01_genre_system
 category: genre_system
-version: 0.1.1
+version: 0.1.2
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Papi: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Papi: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names are house coinage awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
+status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Papi: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Papi: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names are house coinage awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
 rung: standard
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_medium_grammars", "ssot_01_texture_system", "ssot_03_setting_system", "ssot_04_plot_system", "ssot_02_character_systems_vertical_slice"]
 trunk: BLACK
-sources: [BVX.0191, BVX.0576, BVX.0580, BVX.0581, BVX.0614, BVX.0599, BVX.0236, BVX.0163, BVX.0175]
+sources: [BVX.0191, BVX.0576, BVX.0580, BVX.0581, BVX.0614, BVX.0599, BVX.0236, BVX.0163, BVX.0175, BVX.1125, BVX.1126]
 purpose: "THE GENRE SYSTEM, v0.1: the fifth top-layer model beside character (02), setting (03), plot (04), and texture (01, the texture system); the outermost ring of the story spine, L7 genre, medium, audience, market, promoted to a twelve-layer GENRE SLICE, the GENRE CARD and GENRE CONTRACT instruments, and an OXO bench instance as proof of decision-menu use, not a ruling."
 ---
 
@@ -214,6 +214,8 @@ This table is a decision menu with defaults, not a ruling: every line above is m
 | [[BVX.0236]] | Coyne, *The Story Grid* | G3 CONTRACT | the five-leaf clover, obligatory scenes, the Content genre split |
 | [[BVX.0163]] | Snyder, *Save the Cat!* | G1 LABEL, G3 CONTRACT | the ten commercial genres, the page-timed beat sheet as a genre-checklist instance |
 | [[BVX.0175]] | McKee, *Story* | G3 CONTRACT | genre as an audience contract of obligatory conventions, the convention-and-prop-list method |
+| [[BVX.1125]] | Brody, *Save the Cat! Writes a Novel* | G3 CONTRACT | her ten alias onto the register unchanged from Snyder's; [[the-ingredient-triad|the ingredient triad]], exactly three required elements per genre |
+| [[BVX.1126]] | Aristotle, *Poetics* | G4 ARGUMENT | [[hamartia|hamartia]] read as an action-level error, not a fit for G4's binary; [[catharsis|catharsis]] maps onto the texture system's mood curve instead; "[[wonder-telos|wonder]]" as tragedy's telos; theoretical genre defined by the reader's affect |
 
 The L7 shelf holds 174 items keyed 9/16 (BOLO 18), nine distilled to date, this document's nine sources. Next candidates by name: Carroll's *The Philosophy of Horror* (BVX.0840), Grant's *Film Genre* (BVX.0577), Horsley's *The Noir Thriller* (BVX.0620), Black's *The Anatomy of a Best Seller* (BVX.0190) for market, Storr (BVX.0232) and Cron (BVX.0257) for the reader's neuroscience, Dunleavy's *Complex Serial Drama* (BVX.0564) for seriality, and Bould's *Routledge Companion to Science Fiction* (BVX.0642). Acquisitions: none new this wave. The orphan finding stands as it did for the plot shelf: Truby's two Anatomy books, [[BVX.0193]] and [[BVX.0191]], have no Zotero record between them, both filed from disk in the same storage folder, an orphan pair rather than one-off noise.
 
@@ -237,7 +239,12 @@ Built from the six wave distills' "For the genre system" bullets. **RULED 2026-0
 12. **The OXO genre contract.** The bench filled above, twelve proposed lines against a work with no ruled genre contract at all. *Ruled 9/16, as recommended:* Papi strikes or keeps line by line.
 13. **Neale on labels: industry, marketing, and critical labels as three fields, not one.** The L7 ring's genre word has treated "genre" as one slot; Neale's own case, melodrama's opposite trade and critical meanings, shows the collapse breaks on a real example every time. *Ruled 9/16, as recommended:* yes, that is G1.
 
+14. **[[the-ingredient-triad|The ingredient triad]] as a G3 sub-field with fixed cardinality 3.** [[BVX.1125]]'s three required elements per genre, always exactly three, is a portable completeness test G3 CONTRACT does not yet enforce as a rule; the closest existing field holds Coyne's obligatory-scene lists and Selbo's component lists but no fixed-cardinality rule. *Recommendation:* adopt at the next bump.
+
+15. **[[catharsis|Catharsis]] and [[wonder-telos|wonder]]: where an affective telos lives.** [[BVX.1126]]: G4 ARGUMENT holds arguments, a propositional core binary; catharsis and wonder are affect, not argument, Sachs explicit that "it does not follow that the poet has taught us anything." *Recommendation:* a note on G4 pointing to T7 (the texture system's mood curve), no new field.
+
 ## Version history
 
+- **0.1.2, 2026-09-16.** The drop-folder intake folded in (Brody, Aristotle): two new GENRE × LIBRARY rows; sources gained BVX.1125, BVX.1126; two OPEN calls added (14-15), unruled. Slice unchanged.
 - **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("genre calls go"): twelve layers hold; Truby's fourteen as the register's spine with three alias vocabularies; the four contract clauses as required card fields; the balance adopted, the load metric held; mode to the medium grammars doc; the contract state track at the next bump; Neale's keying rule adopted; the dystopia mechanism passed to the setting doc; the OXO contract stays a bench. No slice or instrument change tonight.
 - **0.1.0, 2026-09-16.** First genre_system document, written on Papi's order ("genre wave go", BOLO 18) from the L7 shelf's nine distills: the four words and four vocabularies taxonomy, twelve-layer GENRE SLICE mirroring the character, setting, plot, and texture stacks, the GENRE CARD and GENRE CONTRACT instruments, OXO benched as a proposed genre contract, not a ruling. Layer names, count, and every OXO value provisional pending Papi's ruling.
