@@ -1,0 +1,459 @@
+{
+ "bolo": {
+  "n": 44,
+  "title": "The tag rail + Tier 1 zero-shot tagging",
+  "trunk": "ORANGE, taxonomy engine Stage 2/3",
+  "issued": "2026-09-09",
+  "asof": "2026-09-16",
+  "s": "hot",
+  "status": "[[darkroom|DARKROOM]] 1.1 + Tier 1 zero-shot built and run 2026-09-09 (58,419 images, 6 axes, 6 s CPU) · CAPTCHA sweep + Tier 2 probes shipped 9/10 (OVR-LR wins every axis) · ADORNED ruled and applied 9/11 · Papi tagging solo since 9/11 · 16,511 images ruled as of 9/16 · the calibration pass, retrain, Retrain button/solo toggle, and Tier 3 still open",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "every library axis · [[ultra-dark|ULTRA DARK]]'s posting queue · girl-gen",
+  "related": [
+   {
+    "n": 48,
+    "why": "the name bench; ADORNED (the dress-state value replacing implied) was benched and ruled there 9/11, then applied back into BOLO 44's vocab.json"
+   }
+  ],
+  "home": "BOLO.md · row 44",
+  "card": "oscar-mike/darkroom-tagging.md",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "\"Go. Green light. Go.\" and DARKROOM 1.1 plus Tier 1 zero-shot tagging over all 58,419 images was built and run the same night, the pass itself taking 6 seconds on CPU."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "The CAPTCHA sweep gave every axis a floor, not an answer. The honest accuracy number still waits on one unbiased 300-image calibration pass."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Papi took the tagging over himself on 9/11. A bad probe attempt shipped worse proposals for about ten minutes; it was caught and reverted the same night, not left to fester."
+  }
+ ],
+ "frago": {
+  "mission": "Rule enough images on the six axes that the probes propose reliably, **in order to** turn the corpus into a searchable reference layer without a human tagging every picture.",
+  "order": "**The calibration pass: Library CAST to Solo, press T, rule the first 300 in catalog order, then say \"retrain.\"** That gives the honest accuracy number the sweep could not.",
+  "default": "Silence: the probes keep proposing from the 9/10 training; the sweep's numbers (66 to 82) stand as the only accuracy on record; the Retrain button stays unbuilt; Tier 3 waits.",
+  "calls": [
+   {
+    "q": "The calibration pass",
+    "options": "300 images in catalog order, Solo only (rec) · a different size or filter",
+    "default": "300, Solo, catalog order",
+    "s": "open"
+   },
+   {
+    "q": "The target per value",
+    "options": "about a hundred confirmations per value (rec; roughly 2,000 rulings, four to six sessions) · stop at the 40 floor · a higher bar",
+    "default": "a hundred",
+    "s": "open"
+   },
+   {
+    "q": "The Retrain button + solo-only toggle",
+    "options": "build now, before the first session (rec) · after the calibration pass · not at all, keep the proword",
+    "default": "build now",
+    "s": "open"
+   },
+   {
+    "q": "Tier 3 — the L2b cells",
+    "options": "open after the probes plateau (rec) · open now in parallel · park",
+    "default": "after the plateau",
+    "s": "open"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where the tag rail stands: the orders that built it, what DARKROOM can do now, and what the tags on disk actually say as of today.",
+   "strand": {
+    "last": "Three builds in one night on 9/9, the CAPTCHA sweep and Tier 2 probes on 9/10, ADORNED applied on 9/11.",
+    "plan": "Papi tags solo through DARKROOM; the probes retrain on what he confirms.",
+    "you": "You took over the tagging yourself on 9/11 and asked 9/16 how many more tags you need.",
+    "next": "The 300-image calibration pass, the honest accuracy number the CAPTCHA sweep can't give."
+   },
+   "groups": [
+    {
+     "label": "The transmission",
+     "items": [
+      {
+       "t": "**\"Go. Green light. Go.\"** — spoken 9/9 after the tagging consult; the order to build the tag rail and Tier 1 zero-shot tagging.",
+       "s": "spoken",
+       "when": "9/9"
+      },
+      {
+       "t": "**\"I'm gonna go ahead and start working on BOLO 44\"** — spoken 9/11; Papi takes the tagging over himself.",
+       "s": "spoken",
+       "when": "9/11"
+      },
+      {
+       "t": "**\"vocab go\"** — spoken 9/11; ADORNED ruled and applied to vocab.json in place of implied.",
+       "s": "ruled",
+       "when": "9/11"
+      },
+      {
+       "t": "**\"run the darkroom\"** — the proword; DARKROOM relaunched 9/11 and again 9/16 (it had been down since the 9/10 session).",
+       "s": "spoken",
+       "when": "9/16"
+      },
+      {
+       "t": "**\"how many more tags do I need?\"** — asked 9/16; answered: not for the rail, for the probes.",
+       "s": "spoken",
+       "when": "9/16"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "DARKROOM 1.1: a per-axis tag rail on the right (dashed = proposal + confidence, solid = ruling, ∅ = none, A accepts every proposal on the image or Shift for a range), every axis as a left-rail filter, `/api/tags` merging per image into `_pipeline/tags.json`.",
+       "s": "done"
+      },
+      {
+       "t": "`vocab.json` v0.1: the Stage-2 axis vocabularies for the six Tier-1 axes (setting, styling, dress state, production register, mood, framing), 6 axes and 48 values, Claude drafts and Papi strikes by correcting.",
+       "s": "done"
+      },
+      {
+       "t": "`zeroshot_pass.py`: the CLIP text encoder run over the existing `embeddings.npy`, writing top label plus confidence per axis per image to `tags_auto.json`; ran over all 58,419 images in 6 seconds on CPU.",
+       "s": "done"
+      },
+      {
+       "t": "The TAGGING module (fifth tab, hotkey T) and the CAPTCHA module (sixth tab, hotkey C) for fast one-image and grid-based confirmation, plus an undo/redo stack over every tag action.",
+       "s": "done"
+      },
+      {
+       "t": "`probe_pass.py` (Tier 2): a bake-off of zero-shot vs Rocchio prototypes vs one-vs-rest logistic regression per axis; OVR-LR won every axis and now feeds DARKROOM's proposals.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says, measured 2026-09-16",
+     "items": [
+      {
+       "t": "DARKROOM relaunched on the proword, serving on :8484 (was down since the 9/10 session).",
+       "s": "done"
+      },
+      {
+       "t": "16,511 images carry at least one ruling. Positive rulings per axis: styling 495 · setting 450 · register 362 · dress 315 · mood 309 · framing 282.",
+       "s": "open"
+      },
+      {
+       "t": "Every value on every axis sits at the CAPTCHA floor (40 to 47 confirmations); thinnest are mood/candid 40, framing/threeq 41, setting/car 40, register/ai 40, dress/implied 42, styling/streetwear 41. Rejections (the ~axis entries) run in the thousands per axis.",
+       "s": "open"
+      },
+      {
+       "t": "Probe accuracy at park (sampling-biased): register 82 · setting 78 · dress 75 · styling 74 · framing 69 · mood 66; zero-shot was 52 to 62.",
+       "s": "open"
+      },
+      {
+       "t": "Still unbuilt from the card's resume order: the Retrain button and the solo-only queue toggle in the Tags panel (item 4); Tier 3 and Stage 4 clustering (item 5).",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason is every downstream consumer of the corpus: the library axes, the ULTRA DARK posting queue, girl-gen for BOLO 24.",
+   "strand": {
+    "last": "The rail, the modules and the probes were all built in two nights, 9/9 to 9/10; you have been tagging solo since 9/11.",
+    "plan": "Calibrate, retrain, then aim at the two weakest axes.",
+    "you": "You are the only source of rulings; the machine only proposes.",
+    "next": "One session of 300 images in catalog order."
+   },
+   "task": "Rule enough images on the six axes that the probes propose reliably,",
+   "intent": "in order to turn the 58,419-image corpus into a searchable reference layer without a human tagging every picture.",
+   "spoken": "\"Go. Green light. Go.\" (9/9) · \"I'm gonna go ahead and start working on BOLO 44\" (9/11) · \"How many more tags do I need?\" (9/16)",
+   "endstate": [
+    "An honest accuracy number per axis from the 300-image calibration pass, not the sweep's biased one.",
+    "Every value on every axis at about a hundred confirmations; the probes retrained after each session.",
+    "The Retrain button and the solo-only queue in DARKROOM, so a session needs no proword.",
+    "Tier 3 open: the L2b cells ruled by eye with the population signatures as the prior."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What got built, in order, and the five items still open on the card's resume order.",
+   "strand": {
+    "last": "CAPTCHA sweep and Tier 2 probes shipped 9/10; ADORNED applied 9/11.",
+    "plan": "Run the resume order in sequence: relaunch, calibrate, retrain, wire the button and toggle, then Tier 3.",
+    "you": "You've been tagging solo since 9/11 and asked 9/16 how many more tags you need.",
+    "next": "The 300-image calibration pass on the TAGGING tab."
+   },
+   "main_effort": "The 300-image calibration pass, then retrain. Everything after keys off the honest number.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**\"Go. Green light. Go.\"** ordered 9/9 after the tagging consult; DARKROOM 1.1 built same night: tag rail (right rail, dashed = proposal + confidence, solid = ruling, ∅ = none, A accepts all or Shift a range), axis filters on the left rail, `/api/tags` merge-per-image to `_pipeline/tags.json`. `vocab.json` v0.1 (6 axes, 48 values) and `zeroshot_pass.py` run over all 58,419 embeddings in 6 seconds on CPU, producing `tags_auto.json` and `darkroom_tags.js`.",
+     "s": "done",
+     "when": "9/9"
+    },
+    {
+     "n": 1,
+     "t": "**Same night, on Papi's orders:** Tags panel boxed off from Curation, draggable rail edges plus a remembered RAIL TEXT slider, and the TAGGING module built (fifth tab, hotkey T) for one-image-at-a-time keyed tagging across all six axes.",
+     "s": "done",
+     "when": "9/9"
+    },
+    {
+     "n": 2,
+     "t": "**Then:** an undo/redo stack (Ctrl+Z / Ctrl+Shift+Z / Ctrl+Y) over every tag action, Bratty added to Mood, Wardrobe rebuilt (14 values), and the CAPTCHA module built (sixth tab, hotkey C) to generate the Tier 2 probe's negative training signal.",
+     "s": "done",
+     "when": "9/9"
+    },
+    {
+     "n": 3,
+     "t": "**CAPTCHA sweep done:** every value on every axis reached at least 40 confirmations, 16,496 records carrying negatives. **Tier 2 shipped:** `probe_pass.py` baked off zero-shot vs Rocchio vs one-vs-rest logistic regression; OVR-LR won every axis (register 82 · setting 78 · dress 75 · styling 74 · framing 69 · mood 66, against zero-shot's 52 to 62). DARKROOM's proposals now come from the probes.",
+     "s": "done",
+     "when": "9/10"
+    },
+    {
+     "n": 4,
+     "t": "Vocabulary revised through the night on Papi's orders (Video out, AI generated in, Club to Public space, Y2K + Uniform + Loungewear out, Going-out to Lewd, Bratty into Mood); a first numpy-GD probe attempt shipped worse proposals for about ten minutes, caught and reverted.",
+     "s": "done",
+     "when": "9/10"
+    },
+    {
+     "n": 5,
+     "t": "Papi took BOLO 44 over himself (\"I'm gonna go ahead and start working on BOLO 44\"); DARKROOM relaunched for him on the \"run the darkroom\" proword, serving on :8484.",
+     "s": "done",
+     "when": "9/11"
+    },
+    {
+     "n": 6,
+     "t": "Implied retired from the dress axis (spoken ruling); its opposite value benched on BOLO 48 as ADORNED (recommended) among five alternatives. **ADORNED ruled and applied** (\"vocab go\"): `vocab.json` edited (implied out, adorned in with three prompts), `zeroshot_pass.py` rerun, `probe_pass.py` retrained; Papi's 42 human confirmations carrying implied stay untouched as his record.",
+     "s": "done",
+     "when": "9/11"
+    },
+    {
+     "n": 7,
+     "t": "**Resume item 1 — run the darkroom.** Relaunched on the proword 9/16, serving on :8484 (had been down since the 9/10 session).",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 8,
+     "t": "**Resume item 2 — the 300-image calibration pass.** Library CAST to Solo, TAGGING tab (T), first 300 images in catalog order — the honest, unbiased accuracy number the sampling-biased CAPTCHA sweep can't give.",
+     "s": "open",
+     "when": "next session"
+    },
+    {
+     "n": 9,
+     "t": "**Resume item 3 — retrain.** Run `probe_pass.py` (about 10 seconds) after the calibration pass and after each further tagging session.",
+     "s": "open",
+     "when": "after 8"
+    },
+    {
+     "n": 10,
+     "t": "**Resume item 4 — Retrain button + solo-only queue toggle.** Wire a Retrain button into the Tags panel and a toggle to restrict the queue to solo images; waits on the next server restart.",
+     "s": "open",
+     "when": "on the word"
+    },
+    {
+     "n": 11,
+     "t": "**Resume item 5 — Tier 3.** L2b cells with Papi's eyes, module 2 as the prior, population signatures; Stage 4 clustering also still unbuilt.",
+     "s": "open",
+     "when": "after 9"
+    }
+   ],
+   "coord": [],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What the tag rail runs on: the vocab, the two passes, the rulings on disk, and the card holding the resume order.",
+   "strand": {
+    "last": "Three modules and two passes built and run in two nights, 9/9 to 9/10.",
+    "plan": "No new dependencies; the rail stays additive to DARKROOM 1.0.",
+    "you": "You pay in rulings and CAPTCHA confirmations; the compute cost is seconds, not dollars.",
+    "next": "The calibration pass, then a retrain."
+   },
+   "files": [
+    {
+     "path": "vocab.json",
+     "what": "the Stage-2 axis vocabularies for the six Tier-1 axes (setting, styling, dress state, production register, mood, framing); v0.1 shipped 6 axes / 48 values, revised twice since (ADORNED swapped in for implied 9/11)",
+     "s": "done"
+    },
+    {
+     "path": "zeroshot_pass.py",
+     "what": "CLIP text encoder over the existing embeddings.npy; top label plus confidence per axis per image, writes tags_auto.json",
+     "s": "done"
+    },
+    {
+     "path": "probe_pass.py",
+     "what": "Tier 2 bake-off (zero-shot vs Rocchio vs one-vs-rest logistic regression) and retrain; OVR-LR winning every axis",
+     "s": "done"
+    },
+    {
+     "path": "_pipeline/tags.json",
+     "what": "Papi's rulings, merged per image beside the verdicts; 16,511 images carry at least one ruling as of 9/16",
+     "s": "done"
+    },
+    {
+     "path": "DARKROOM.html.bak-1.0",
+     "what": "backup of the page taken before the 1.1 tag-rail build",
+     "s": "done"
+    },
+    {
+     "path": "darkroom_server.py.bak-1.0",
+     "what": "backup of the server taken before the 1.1 build",
+     "s": "done"
+    },
+    {
+     "path": "oscar-mike/darkroom-tagging.md",
+     "what": "the card; resume order: run the darkroom, 300 calibration, retrain, Retrain button + solo toggle, Tier 3",
+     "s": "open"
+    }
+   ],
+   "cost": [
+    {
+     "k": "zero-shot pass",
+     "v": "6 s, CPU, 58,419 images × 6 axes"
+    },
+    {
+     "k": "retrain",
+     "v": "about 10 s (probe_pass.py)"
+    },
+    {
+     "k": "dollars",
+     "v": "$0 — compute time and Papi's rulings only"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. You rule images; Claude builds the rail and retrains the probes on your word.",
+   "strand": {
+    "last": "Since 9/11 this BOLO has been yours alone; Claude's last touch was the ADORNED rename.",
+    "plan": "You tag, you say retrain, Claude wires the button so you stop having to say it.",
+    "you": "Every ruling is yours; no probe output is ever written as a ruling without your key.",
+    "next": "Say \"build the retrain button\" or start the calibration pass, either order."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — every tag ruling, the vocabulary, when a session ends. **Claude** — the rail, the modules, `probe_pass.py`, the counts; proposes, never rules.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**None on the machine side.** The probes are live; the only gate is your time at the TAGGING tab. Accuracy rises with rulings, about a hundred per value before it plateaus.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Prowords in play",
+     "items": [
+      {
+       "t": "[[run-the-darkroom|run the darkroom]] — relaunch the server · \"retrain\" — `probe_pass.py`, ten seconds · **T** — the TAGGING tab · **Space** — commit the proposals and advance.",
+       "s": "ruled"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on the tag rail, in order.",
+   "strand": {
+    "last": "The last two transmissions are Papi's question 9/16 and the answer given.",
+    "plan": "One entry per transmission.",
+    "you": "Six of the entries below are yours; the rest are builds and answers.",
+    "next": "The calibration pass."
+   },
+   "entries": [
+    {
+     "when": "9/9",
+     "who": "Papi",
+     "t": "\"Go. Green light. Go.\" — spoken after the tagging consult; orders the tag rail and Tier 1 zero-shot tagging built."
+    },
+    {
+     "when": "9/9",
+     "who": "Claude",
+     "t": "DARKROOM 1.1 (tag rail) built; vocab.json v0.1 and zeroshot_pass.py written and run over all 58,419 embeddings, 6 axes, 6 seconds on CPU."
+    },
+    {
+     "when": "9/9",
+     "who": "Papi",
+     "t": "Same night: orders to box the Tags panel off from Curation, add draggable rail edges and a RAIL TEXT slider, and build the TAGGING module."
+    },
+    {
+     "when": "9/9",
+     "who": "Claude",
+     "t": "TAGGING module, undo/redo stack, Wardrobe rebuild, and the CAPTCHA module built."
+    },
+    {
+     "when": "9/10",
+     "who": "Claude",
+     "t": "CAPTCHA sweep completed (every value at 40+ confirmations); Tier 2 probe_pass.py shipped, OVR-LR winning every axis."
+    },
+    {
+     "when": "9/10",
+     "who": "Papi",
+     "t": "Vocabulary revised through the night: Video out, AI generated in, Club to Public space, Y2K + Uniform + Loungewear out, Going-out to Lewd, Bratty into Mood."
+    },
+    {
+     "when": "9/11",
+     "who": "Papi",
+     "t": "\"I'm gonna go ahead and start working on BOLO 44\" — takes the tagging over himself."
+    },
+    {
+     "when": "9/11",
+     "who": "Papi",
+     "t": "\"run the darkroom\" — DARKROOM relaunched, serving on :8484."
+    },
+    {
+     "when": "9/11",
+     "who": "Papi",
+     "t": "Spoken ruling: implied retired from the dress axis; its opposite value benched on BOLO 48 as ADORNED."
+    },
+    {
+     "when": "9/11",
+     "who": "Papi",
+     "t": "\"vocab go\" — ADORNED ruled and applied; vocab.json edited, zeroshot_pass rerun, probe_pass retrained."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"run the darkroom\" — DARKROOM relaunched again on :8484, having sat down since the 9/10 session."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"how many more tags do I need?\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Answer given: not for the rail, for the probes — the 300-image calibration pass, then retrain, then aim mood and framing toward about 100 confirmations per value (about 2,000 more rulings total)."
+    }
+   ]
+  }
+ ]
+}
