@@ -33,6 +33,8 @@ LAYER_TERM_MAP = {
     "S9": "s9-allure", "S10": "s10-underside", "S11": "s11-vector", "S12": "s12-function",
     "L1": "l1-core", "L2": "l2-vital", "L3": "l3-social", "L4": "l4-will", "L5": "l5-wound", "L6": "l6-drive",
     "L7": "l7-origin", "L8": "l8-imprint", "L9": "l9-eros", "L10": "l10-shadow", "L11": "l11-destiny", "L12": "l12-function",
+    "T1": "t1-voice", "T2": "t2-focalization", "T3": "t3-order", "T4": "t4-duration", "T5": "t5-frequency", "T6": "t6-words",
+    "T7": "t7-feeling", "T8": "t8-thresholds", "T9": "t9-frames", "T10": "t10-narratee", "T11": "t11-medium", "T12": "t12-function",
 }
 
 

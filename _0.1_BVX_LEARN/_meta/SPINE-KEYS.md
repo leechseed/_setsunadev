@@ -52,7 +52,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0583 | LIT | Handbook of diachronic narratology | Hühn, Pier, Schmid | 2023 | rule |  |
 | BVX.0584 | LIT | Handbook of narratology | Hühn | 2014 | rule |  |
 | BVX.0594 | LIT | Narrative, Perception, and the Embodied Mind: Towards a Neuro-narratolog | Farmasi | 2022 | rule |  |
-| BVX.0596 | LIT | Narratology in Practice | Bal |  | rule |  |
+| BVX.0596 | LIT | Narratology in Practice | Bal |  | rule | ✅ |
 | BVX.0602 | LIT | Routledge companion to semiotics and linguistics | Cobley | 2001 | rule |  |
 | BVX.0603 | LIT | Routledge Philosophy Guidebook to Aristotle and the Poetics |  | 2015 | rule |  |
 | BVX.0822 | PHI | Mythology: the voyage of the hero | Leeming | 1998 | rule |  |
@@ -696,7 +696,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0056 | CRE | A writer's guide to active setting: how to enhance your fiction with mor | Buckham | 2015 | tag |  |
 | BVX.0066 | CRE | Cinematic Storytelling: A Comprehensive Guide for Directors and Cinemato | Robotham | 2021 | tag |  |
 | BVX.0069 | CRE | Conversation Casanova: How to Effortlessly Start Conversations and Flirt | Perrotta |  | tag |  |
-| BVX.0084 | CRE | Dialogue: techniques and exercises for crafting effective dialogue | Kempton | 2004 | tag |  |
+| BVX.0084 | CRE | Dialogue: techniques and exercises for crafting effective dialogue | Kempton | 2004 | tag | ✅ |
 | BVX.0093 | CRE | Dramatic Storytelling & Narrative Design | Berger |  | tag |  |
 | BVX.0113 | CRE | How Not to Write a Novel: 200 Classic Mistakes and How to Avoid Them--A  | Mittelmark, Newman |  | tag |  |
 | BVX.0130 | CRE | Just enough research | Hall, Zeldmaneditor, Fox | 2014 | tag |  |
@@ -713,9 +713,9 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0267 | CRE | Writing Active Hooks Book 2: Evocative Description, Character, Dialogue, | Buckham | 2015 | tag |  |
 | BVX.0270 | CRE | Writing Active Setting Book 3: Anchoring, Action, as a Character and Mor | Buckham |  | tag |  |
 | BVX.0268 | CRE | Writing Active Setting. Book 1: Characterization and Sensory Detail | Buckham |  | tag |  |
-| BVX.0273 | CRE | WRITING DEEP POINT OF VIEW: professional techniques for fiction authors | HALL | 2015 | tag |  |
+| BVX.0273 | CRE | WRITING DEEP POINT OF VIEW: professional techniques for fiction authors | HALL | 2015 | tag | ✅ |
 | BVX.0275 | CRE | Writing Deep Viewpoint | Tyers | 2017 | tag |  |
-| BVX.0279 | CRE | Writing for emotional impact: advanced dramatic techniques to attract, e | Iglesias | 2005 | tag |  |
+| BVX.0279 | CRE | Writing for emotional impact: advanced dramatic techniques to attract, e | Iglesias | 2005 | tag | ✅ |
 | BVX.0283 | CRE | Writing the Intimate Character | Rosenfeld |  | tag |  |
 | BVX.0098 | CRE | © Eva Deverell >> http://eadeverell.com | Vogler’S |  | tag |  |
 | BVX.0552 | LIT | 101 Essays That Will Change The Way You Think | Wiest | 2018 | tag |  |
@@ -782,9 +782,9 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0592 | LIT | Narrating space/spatializing narrative: where narrative theory and geogr | Ryan, Foote, Azaryahu | 2016 | rule |  |
 | BVX.0593 | LIT | Narrative beginnings: theories and practices | Richardson | 2008 | rule |  |
 | BVX.0594 | LIT | Narrative, Perception, and the Embodied Mind: Towards a Neuro-narratolog | Farmasi | 2022 | rule |  |
-| BVX.0596 | LIT | Narratology in Practice | Bal |  | rule |  |
+| BVX.0596 | LIT | Narratology in Practice | Bal |  | rule | ✅ |
 | BVX.0597 | LIT | Plots of war: modern narratives of conflict | Gil, Martins | 2012 | rule |  |
-| BVX.0598 | LIT | Point of view, perspective, and focalization: modeling mediation in narr | Hühn, Schmid, Schönert | 2009 | rule |  |
+| BVX.0598 | LIT | Point of view, perspective, and focalization: modeling mediation in narr | Hühn, Schmid, Schönert | 2009 | rule | ✅ |
 | BVX.0640 | LIT | The Routledge Companion to Music and Modern Literature | Durkin |  | toc |  |
 | BVX.0732 | MSX | How To Analyze People: 13 Laws About the Manipulation of the Human Mind, | Spade |  | rule |  |
 | BVX.1024 | VIS | Design: Mike Welham Editing: Eytan Bernstein Art Direction & Graphic Des | Baur, Baur |  | rule |  |

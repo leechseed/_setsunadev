@@ -90,6 +90,11 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.0209` | Puglisi & Ackerman — The Emotional Wound Thesaurus | L5 | 4 | ✅ 9/16 · the wound card, L5 WOUND's direct source | 4 (character) |
 | `BVX.0233` | Pelican — The Science of Writing Characters | L5 | 4 | ✅ 9/16 · Big Five, the circumplex, the fifteen motivations; the Dark Triad for L10 | 4 (character) |
 | `BVX.0045` | Schmidt — 45 Master Characters | L5 L4 | 4 | ✅ 9/16 · light and shadow faces; the two journeys; sits beside Dramatica's eight, no collision | 4 (character) |
+| `BVX.0598` | Hühn, Schmid & Schönert (eds.) — Point of View, Perspective, and Focalization | TEXTURE | 4 | ✅ 9/16 · who speaks ≠ who sees, the positive theory; the reflection axis as a T2b candidate | 5 (texture) |
+| `BVX.0596` | Bal — Narratology in Practice | TEXTURE L0 | 4 | ✅ 9/16 · fabula/story/text; the EF/CF focalization split; BVX.0591 (her theory volume) not yet distilled | 5 (texture) |
+| `BVX.0273` | Hall — Writing Deep Point of View | TEXTURE | 3 | ✅ 9/16 · the distance dial operationalized; barrier words as a countable T6 instrument | 5 (texture) |
+| `BVX.0084` | Kempton — Dialogue | TEXTURE | 3 | ✅ 9/16 · the seven-function test; never says "subtext" | 5 (texture) |
+| `BVX.0279` | Iglesias — Writing for Emotional Impact | TEXTURE L4 | 4 | ✅ 9/16 · T7's mood curve as named reader emotions plus the payoff owed | 5 (texture) |
 
 Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
 
