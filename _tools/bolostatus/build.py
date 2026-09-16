@@ -9,6 +9,7 @@ Outputs: _tools/bolostatus/out/BOLO-<n>.html  full document, tracked
          <scratch>/BOLO-<n>.fragment.html     the fragment the Artifact tool publishes (path printed)
 """
 import io, json, os, re, sys, tempfile
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))

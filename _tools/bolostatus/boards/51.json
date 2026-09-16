@@ -4,9 +4,9 @@
   "title": "The logistics front — the standing audit, quality, and improvement function, and the token offload",
   "trunk": "OPERATOR · feeds every trunk",
   "issued": "2026-09-12",
-  "asof": "2026-09-12",
+  "asof": "2026-09-16",
   "s": "hot",
-  "status": "CAPTURED 9/12 · usage MEASURED · the gearbox spun out (BOLO 52) · the formation ruled (BOLO 54) · 9/12 night: PERMISSION GRANTED, all eight offload phases BUILT as scripts + skills · the digest hook live · first live runs next session",
+  "status": "CAPTURED 9/12 · all eight offload phases BUILT 9/12 night · FIRST LIVE RUNS 9/15–9/16: sit rep twice (the formation, gear 1, 3 specialists + script reviewer), Oscar Mike once (close.py → NOTE on haiku → journal.py) · BOLO 53 filed at PROCEDURE on the rung · four calls still run on defaults (instrument · name · cadence · the force order)",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · STATE · BOLO · the pages (SITREP · DOPE SHEET · SOI) · DARKROOM · BVX-LEARN · LOCI · the project flow · the design system · the lattice · WARROOM",
   "related": [
@@ -41,7 +41,7 @@
   ],
   "home": "BOLO.md · row 51",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -62,8 +62,8 @@
  ],
  "frago": {
   "mission": "Stand up one standing audit-and-improvement function over every system in daily use, and move compute off the chat onto the harness, **in order to** make the whole operation cheaper per turn and better every week, so the fronts are supplied before the fight.",
-  "order": "**Open the next session and read the digest instead of the five files; then say \"sit rep\" and \"Oscar Mike\" once each.** Both run the formation for the first time; the findings decide what gets tuned.",
-  "default": "Silence: every phase stands as built; the digest hook, the four skills, collect, rtb, and bolo add are the house procedures from here; the audit instrument stays AAR + PDCA on the 19011 pattern, one AAR line per Oscar Mike.",
+  "order": "**Rule the four open calls below in one breath, or say \"defaults\" and they lock as written.** The offload is built and proven live; what is left on this sheet is doctrine, not code.",
+  "default": "Silence: AAR + PDCA on the 19011 pattern stays the instrument; the function stays the logistics front; one AAR line inside every Oscar Mike plus a full pass weekly; sheets built from repo JSON republish only from the building session, and any cross-session republish pays the read (about 22–25k tokens) unless Papi says force.",
   "calls": [
    {
     "q": "The offload picks",
@@ -92,8 +92,8 @@
    },
    {
     "q": "The force order for cross-session republishes",
-    "options": "rule a standing `force` for any sheet built from repo JSON (the JSON is the source of truth; nothing is ever saved from inside a page) · keep the gate and republish only from the session that built the sheet · ask each time",
-    "default": "republish only from the building session until you rule; the FRAGO is still recorded locally and in the log",
+    "options": "rule a standing `force` for any sheet built from repo JSON (the JSON is the source of truth; nothing is ever saved from inside a page) · keep the gate and pay the read each time (measured 9/15 and 9/16: 22–25k tokens, not 65k) · ask each time",
+    "default": "pay the read when Papi asks for the sheet itself; force only on his word each time",
     "s": "open"
    }
   ]
@@ -247,8 +247,8 @@
    "strand": {
     "last": "The offload build landed in one night on Papi's \"permission granted, do all of it.\"",
     "plan": "Six phases; the first three are cheap and mechanical.",
-    "you": "You granted permission for all eight; the runs that are yours (creator cases, RTB rulings) stay held.",
-    "next": "Open the next session, read the digest, say \"sit rep\", then \"Oscar Mike\"; the first live runs tune the briefs."
+    "you": "You ruled the offload 9/12 and it has now carried three live runs without you touching a file. The four doctrine calls are still yours.",
+    "next": "Rule the instrument, the name, the cadence, and the force order. Then the first manual audit pass, which unlocks pick f (the weekly cloud routine)."
    },
    "main_effort": "The offload. Every phase after it is cheaper once it lands.",
    "phases": [
@@ -260,9 +260,9 @@
     },
     {
      "n": 1,
-     "t": "**The picks** — you choose from a–f and confirm the instrument.",
-     "s": "gated",
-     "when": "yours"
+     "t": "**The picks** — a–f RULED 9/12 (\"permission granted, do all of it\") and built. Still yours: the instrument, the function's name, the cadence, the force order.",
+     "s": "open",
+     "when": "picks ruled 9/12 · rest yours"
     },
     {
      "n": 2,
@@ -272,9 +272,9 @@
     },
     {
      "n": 3,
-     "t": "**The system boresight** — every system in daily use on one register: what it is · owner · the standard it answers to · last audit · open findings. Now cheap: `collect.py` and the digest give the reads.",
-     "s": "gated",
-     "when": "after the first live runs"
+     "t": "**The system boresight** — every system in daily use on one register: what it is · owner · the standard it answers to · last audit · open findings. The gate (first live runs) cleared 9/15–9/16 (phase 9); `collect.py` and the digest give the reads. Ready to run on your go.",
+     "s": "open",
+     "when": "unlocked 9/16"
     },
     {
      "n": 4,
@@ -341,6 +341,12 @@
      "t": "**2.8 · BOLO add** — `_tools/bolo/add.py \"title\" \"body\" --trunk --status`: next number, date, header stamp, glossary stub, the DOPE SHEET prep command printed. The wording stays the main line's.",
      "s": "done",
      "when": "9/12"
+    },
+    {
+     "n": 9,
+     "s": "done",
+     "when": "9/15",
+     "t": "**First live runs.** Sit rep ran on the formation 9/15 (three passes; three blocking findings caught by the script reviewer and fixed in parallel) and again 9/16 (one round, no re-runs, 212k specialist tokens: 48k RACK · 90k INDEX · 74k WATCH; the main line read two digests). Oscar Mike ran 9/15 on close.py + NOTE on haiku (71k haiku tokens on a 78 KB transcript)."
     }
    ],
    "coord": [
@@ -542,6 +548,31 @@
      "when": "9/12",
      "who": "Claude",
      "t": "FRAGO 51 v0.3 built locally by frago.py; the republish to the standing URL was refused by the cross-session gate twice (about 65k tokens spent on the first read). Republish owed from the next session, or on Papi's force order. Call added."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Sit rep 2026-09-15 ran on the formation for the first time; three passes, three blocking findings, clean third pass. BOLO 50 closed with all six phases done; BOLO 53 opened and filed at PROCEDURE."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Sit rep 2026-09-16 ran in one round: 3 specialists, 212k specialist tokens, main line on two digests. The Artifact gate forced one read of the live SITREP page (about 25k tokens) before accepting the board."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Give me the dope sheet on this and let's work on this now,\" pointing at the formation row on the Fresh Ten; its next step is Blocked #19, this sheet."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "FRAGO 51: status, order, and phase 9 recorded; the force-order call carries the measured cost; the four open calls put to Papi."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "FRAGO 51 v0.6: phase 3 unlocked by the live runs; phase 1 shows what is ruled and what is still yours. The bolostatus scripts now print UTF-8 on Windows (frago.py crashed on cp1252 mid-build)."
     }
    ]
   }

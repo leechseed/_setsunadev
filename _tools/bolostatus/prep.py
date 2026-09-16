@@ -10,6 +10,7 @@ Writes  _tools/bolostatus/work/<N>/sources.md    BOLO row N · every BOLO row it
 Then the main line writes Mission (M), Command & Signal (C), frago.order/default/calls off the draft, runs check.py N, build.py N, publishes.
 """
 import io, json, os, re, sys, glob
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))

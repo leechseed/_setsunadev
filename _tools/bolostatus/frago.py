@@ -18,6 +18,7 @@ Always: bolo.asof = today · bolo.version bumped (v0.2 → v0.3) · the change l
 --build runs build.py N and prints the fragment path to publish.
 """
 import io, json, os, re, sys, datetime, subprocess
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))

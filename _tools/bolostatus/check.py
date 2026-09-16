@@ -6,6 +6,7 @@ Reads boards/<N>.draft.json if present, else boards/<N>.json. Findings printed; 
 --promote renames the draft to boards/<N>.json when clean.
 """
 import io, json, os, re, sys
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
