@@ -6,7 +6,8 @@
     "brevity": 70
   },
   "voice": {
-    "engine": "sapi",
+    "engine": "piper",
+    "piper_voice": "en_GB-jenny_dioco-medium",
     "name": "",
     "rate": 0,
     "volume": 100
@@ -23,6 +24,6 @@
     "model": "claude-haiku-4-5-20251001"
   },
   "wire": {
-    "mode": "standalone"
+    "mode": "mcp"
   }
 }

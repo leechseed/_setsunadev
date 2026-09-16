@@ -39,3 +39,8 @@ _tools/loci/work/
 # python bytecode (added 9/16 with _tools/dictation)
 __pycache__/
 *.pyc
+
+# dictation scratch + voice models (63 MB each, redownloadable)
+_tools/dictation/_last.wav
+_tools/dictation/voices/
+_tools/dictation/faces/

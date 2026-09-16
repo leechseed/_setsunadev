@@ -263,17 +263,18 @@
 
     <section id="p-voice">
       <h2>Voice</h2>
-      <p class="plain">JUDY's <a class="t" data-t="mouth">mouth</a>. The engine call is
-        <strong>unruled</strong> — Windows SAPI is the free floor that works right now; the good
-        options cost either money or a download.</p>
+      <p class="plain">JUDY's <a class="t" data-t="mouth">mouth</a>. <strong>Ruled 9/16: Piper now,
+        ElevenLabs eventually.</strong> Piper is local, free and neural — it synthesizes about
+        <strong>23× faster than realtime</strong> warm, on CPU, so the 3090 stays free for Whisper.</p>
       <div class="grid">
         <div class="f"><span class="lbl">Engine</span><select id="vEngine">
-          <option value="sapi">Windows SAPI — free, local, robotic</option>
-          <option value="piper">Piper — free, local, much better (not installed)</option>
-          <option value="xtts">XTTS v2 — free, local, clonable (not installed)</option>
-          <option value="elevenlabs">ElevenLabs — paid, best Moneypenny (no key)</option>
-        </select><span class="hint">only SAPI is wired today; the rest store the choice</span></div>
-        <div class="f"><span class="lbl">Voice</span><select id="vName"></select>
+          <option value="piper">Piper — free, local, neural · RULED 9/16</option>
+          <option value="sapi">Windows SAPI — free, local, robotic · the floor</option>
+          <option value="elevenlabs">ElevenLabs — paid, best Moneypenny · "eventually"</option>
+        </select><span class="hint" id="eHint"></span></div>
+        <div class="f" id="piperWrap"><span class="lbl">Piper voice</span><select id="vPiper"></select>
+          <span class="hint" id="pHint"></span></div>
+        <div class="f" id="sapiWrap"><span class="lbl">SAPI voice</span><select id="vName"></select>
           <span class="hint" id="vHint"></span></div>
         <div class="f"><span class="lbl">Rate</span>
           <div class="dial"><input type="range" id="vRate" min="-10" max="10" step="1"><span class="v" id="vRateV">0</span></div></div>
@@ -355,7 +356,7 @@ const PANELS = [
 
 const GLOSS = {
   ears:{w:"The ears",d:"The listening half — BOLO 26's push-to-talk dictation. Ruled BUILD and shipped 9/16. This is the only part of JUDY that fully exists."},
-  mouth:{w:"The mouth",d:"Text-to-speech. Unruled: Windows SAPI works today and sounds robotic; Piper and XTTS are free but need installing; ElevenLabs is the best match for the 007 handler register and costs money."},
+  mouth:{w:"The mouth",d:"Text-to-speech. RULED 9/16: Piper now, ElevenLabs eventually. Piper runs locally on CPU at about 23x realtime, so a reply starts almost immediately and the GPU stays free for Whisper."},
   wire:{w:"The wire",d:"How a fast Haiku voice agent reaches the Opus VS Code session without inheriting Opus's model or latency. The only open call a knob cannot settle."},
   face:{w:"The face",d:"Desktop presence. PNG state swaps now — idle, listening, thinking, talking — VTuber rigging later."},
   ptt:{w:"Push-to-talk",d:"Hold the hotkey, speak, release. Nothing is recorded or transcribed until you hold it, so nothing is listening in the background."},
@@ -505,7 +506,20 @@ $("#openSop").onclick=()=>api("/api/open",{target:"sop"});
 
 function renderVoice(){
   const v=S.judy.voice;
-  $("#vEngine").value=v.engine; $("#vEngine").onchange=e=>saveJudy({voice:{engine:e.target.value}});
+  $("#vEngine").value=v.engine;
+  $("#vEngine").onchange=e=>saveJudy({voice:{engine:e.target.value}}).then(load).then(()=>show("voice"));
+  const ps=$("#vPiper");
+  ps.innerHTML=(S.piper_voices||[]).map(x=>`<option value="${x.name}">${x.name}</option>`).join("")
+    ||`<option value="">no piper voices downloaded</option>`;
+  if(v.piper_voice) ps.value=v.piper_voice;
+  ps.onchange=e=>saveJudy({voice:{piper_voice:e.target.value}});
+  $("#pHint").textContent=`${(S.piper_voices||[]).length} on disk · ~23x realtime warm · en_GB = the handler register`;
+  const eng=v.engine;
+  $("#piperWrap").style.display = eng==="piper"?"":"none";
+  $("#sapiWrap").style.display  = eng==="sapi"?"":"none";
+  $("#eHint").textContent = eng==="elevenlabs"
+    ? "wired but needs ELEVENLABS_API_KEY — it will say so rather than fall back silently"
+    : eng==="piper" ? "local, free, neural — what JUDY uses now" : "the free floor";
   const sel=$("#vName");
   sel.innerHTML=S.voices.map(x=>`<option value="${x.name}">${x.name} — ${x.gender}</option>`).join("")
     ||`<option value="">no SAPI voices found</option>`;
@@ -521,8 +535,10 @@ function bindDial(sl,out,val,fn){
   s.oninput=()=>o.textContent=s.value;
   s.onchange=()=>fn(parseInt(s.value,10));
 }
-$("#vSpeak").onclick=()=>api("/api/voice/preview",{name:$("#vName").value,text:$("#vText").value,
-  rate:parseInt($("#vRate").value,10),volume:parseInt($("#vVol").value,10)}).then(()=>toast("speaking"));
+$("#vSpeak").onclick=()=>api("/api/voice/preview",{engine:$("#vEngine").value,
+  name:$("#vName").value, piper_voice:$("#vPiper").value, text:$("#vText").value,
+  rate:parseInt($("#vRate").value,10),volume:parseInt($("#vVol").value,10)})
+  .then(()=>toast("speaking")).catch(()=>{});
 
 const DIALS=[["humor","Humour","how often she reaches for a joke. TARS runs 75."],
   ["honesty","Honesty","how much she softens bad news. TARS runs 90."],

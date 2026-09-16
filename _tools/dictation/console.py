@@ -44,6 +44,7 @@ PAGE = os.path.join(HERE, "console.html")
 
 sys.path.insert(0, HERE)
 import codebook  # noqa: E402
+import speak  # noqa: E402
 
 # Whisper models worth offering. Size is the download, not VRAM.
 MODELS = [
@@ -59,7 +60,8 @@ STATES = ["idle", "listening", "thinking", "talking"]
 
 JUDY_DEFAULTS = {
     "persona": {"humor": 75, "honesty": 90, "brat": 65, "brevity": 70},
-    "voice": {"engine": "sapi", "name": "", "rate": 0, "volume": 100},
+    "voice": {"engine": "piper", "piper_voice": "en_GB-jenny_dioco-medium",
+              "name": "", "rate": 0, "volume": 100},
     "face": {"slots": {s: None for s in STATES}},
     "chat": {"model": "claude-haiku-4-5-20251001"},
     "wire": {"mode": "standalone"},
@@ -317,6 +319,7 @@ def build_state():
         "models": [{"name": n, "size": s, "note": t, "cached": model_cached(n)}
                    for n, s, t in MODELS],
         "voices": sapi_voices(),
+        "piper_voices": speak.voices(),
         "codebook": {
             "active": len(rules_active),
             "gated": gated,
@@ -440,10 +443,16 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/voice/preview":
                 judy = read_json(JUDY, JUDY_DEFAULTS)
                 v = judy["voice"]
-                sapi_speak(b.get("name", v.get("name")),
-                           b.get("text") or "Judy on station. Go ahead, Papi.",
-                           b.get("rate", v.get("rate", 0)),
-                           b.get("volume", v.get("volume", 100)))
+                engine = b.get("engine") or v.get("engine", "piper")
+                text = b.get("text") or "Judy on station. Go ahead, Papi."
+                if engine == "sapi":
+                    sapi_speak(b.get("name", v.get("name")), text,
+                               b.get("rate", v.get("rate", 0)),
+                               b.get("volume", v.get("volume", 100)))
+                else:
+                    t0 = time.time()
+                    speak.say(text, engine=engine, voice=b.get("piper_voice"))
+                    LOG.append(f"— spoke via {engine} in {time.time() - t0:.2f}s")
                 return self._send(200, {"ok": True})
 
             if path == "/api/face/set":
