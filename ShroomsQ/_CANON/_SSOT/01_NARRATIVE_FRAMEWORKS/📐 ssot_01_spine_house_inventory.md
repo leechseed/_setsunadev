@@ -82,7 +82,7 @@ The one-sheet template v2 + SPEC v3 (the distill instrument) · taxonomy proposa
 
 ## FINDINGS — what the sweep surfaced
 
-1. **⚠️ DOMAIN NUMBERING COLLISION — needs Papi's ruling.** `_SSOT/03_PLOT_SYSTEMS/` already exists (empty, pre-reserved) — and Setting was stood up 8/25 as `03_SETTING_SYSTEMS/`. Two 03s. `04_STYLE_GUIDES/` also exists empty, and `_AUTHORITATIVE/OVEREXITOUT/{plot,theme,world}/` are reserved-and-empty. The house had already sketched the deepening skeleton; the new domains must reconcile with it.
+1. **⚠️ DOMAIN NUMBERING COLLISION — RULED 2026-09-16: plot is `04_PLOT_SYSTEMS/`, style guides `06_`.** `_SSOT/03_PLOT_SYSTEMS/` already exists (empty, pre-reserved) — and Setting was stood up 8/25 as `03_SETTING_SYSTEMS/`. Two 03s. `04_STYLE_GUIDES/` also exists empty, and `_AUTHORITATIVE/OVEREXITOUT/{plot,theme,world}/` are reserved-and-empty. The house had already sketched the deepening skeleton; the new domains must reconcile with it.
 2. **The distill gap, quantified: ~0.6%.** Of 353 CRE/LIT craft sources, exactly **two** have one-sheets (BVX.0064, CRE.01). The spine's shelves point mostly at undigested books — the distill queue is the real depth lever.
 3. **The engine exports are machine-readable L2/L3.** `.dsf` + the two TXTs mean a future tool can *parse* the storyform, not re-type it.
 4. **The INSPIRATION shelf is a complete worked method** — six reference works run through the invariants extraction. It is the L6/L7 branch's strongest native asset and proof of meta-rule IV.
