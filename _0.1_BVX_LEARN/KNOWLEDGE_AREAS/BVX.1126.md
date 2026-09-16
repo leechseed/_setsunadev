@@ -13,19 +13,19 @@ feeds:
   - layer: DRAMATICA
     variable: throughline
     strength: contextual
-    note: "Aristotle's requirement that a tragedy turn on 'a single central character' (Ch.13, 1453a12-13, per Sachs's Introduction p.5) organizes the action from the outside, an Overall Story seat with no dramatized 'I' throughline. This is the textual evidence for the rival map's 'OS-biased' verdict, tested in §8 below."
+    note: "The 'single central character' rule (Ch.13, 1453a12-13) organizes action from the outside, an Overall Story seat with no dramatized 'I'. Textual evidence for the rival map's 'OS-biased' verdict, tested in §8."
   - layer: L5
     variable: wound
     strength: contextual
-    note: "Hamartia is the nearest Aristotelian term, but Sachs's Introduction (p.7-9) insists the root sense is 'missing the mark' with a spear or arrow, an action-level error, never a flaw of character or a psychological injury. Filed contextual, not primary, because treating hamartia as a WOUND instance is close to the exact mistranslation Sachs spends four pages correcting."
+    note: "Hamartia is the nearest term, but Sachs (p.7-9) insists the root sense is 'missing the mark,' an action-level error, never a psychological injury. Contextual, not primary: treating it as a WOUND instance repeats the mistranslation Sachs corrects."
   - layer: L12
     variable: story_outcome
     strength: supporting
-    note: "Ch.13's ruled-best shape (a decent, middling person changing from good fortune to bad, through hamartia, 1453a7-17) is the direct ancestor of an Outcome/Judgment reading: Success-to-Failure, with the sufferer simultaneously responsible and undeserving. Supporting, not primary, because Aristotle never separates an objective Outcome axis from a subjective Judgment axis the way Dramatica does."
+    note: "Ch.13's ruled-best shape (a decent person, good fortune to bad, through hamartia, 1453a7-17) ancestors an Outcome/Judgment reading: Success-to-Failure, sufferer both responsible and undeserving. Supporting, since Aristotle never separates the two axes as Dramatica does."
   - layer: L6
     variable: theme
     strength: supporting
-    note: "Dianoia (thought), the third of the six parts, is what a speech demonstrates or argues (Ch.19); the direct ancestor of theme-as-argument. Supporting because Aristotle explicitly subordinates it to rhetoric rather than to a structural Issue/Counterpoint pairing, and ranks it below story and character in importance."
+    note: "Dianoia (thought), what a speech argues (Ch.19), ancestors theme-as-argument. Supporting: Aristotle subordinates it to rhetoric rather than a structural Issue/Counterpoint pairing, and ranks it below story and character."
 zotero_key: ""
 pdf_pages: [156]
 status: complete
@@ -146,9 +146,9 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Twenty-six chapters, four movements. **Chs.1-5** establish imitation (mimesis) itself: three variables (medium, object, manner) distinguish the arts from one another, tragedy and comedy split by imitating people better or worse than us, and poetry's two natural causes are the instinct to imitate and the delight taken in understanding an image once recognized. **Chs.6-18** are the plot core: Ch.6 defines tragedy and ranks its six parts (story, character, thought, diction, song-making, spectacle); Chs.7-9 set magnitude, unity of action, and poetry's superiority to history (the universal over the particular); Chs.10-11 define simple versus complex plots and name reversal (peripeteia) and discovery (anagnorisis); Ch.13 rules the single best plot-shape (good-to-bad fortune, through hamartia, in a decent middling person); Ch.14 insists fear and pity come from plot structure, not spectacle; Chs.15-18 cover character requirements, ranked forms of discovery, compositional method (visualize, then outline, then fill in episodes), and the four species of tragedy built on complication (desis) and unraveling (lysis). **Chs.19-22** cover thought (subordinated to rhetoric) and diction, culminating in metaphor as the one part of wording that cannot be taught. **Chs.23-26** turn to epic poetry, judge it by the same unity-of-action standard, and close by ranking tragedy above epic because it achieves the same end (imitation of a complete action producing pity and fear) more concentratedly, in less time, with music and spectacle epic does not have.
+Twenty-six chapters, four movements. **Chs.1-5** establish imitation (mimesis): three variables (medium, object, manner) distinguish the arts, tragedy and comedy split by imitating people better or worse than us, and poetry's two natural causes are the instinct to imitate and the delight in recognizing an image. **Chs.6-18** are the plot core: Ch.6 defines tragedy and ranks its six parts; Chs.7-9 set magnitude, unity of action, and poetry's superiority to history (universal over particular); Chs.10-11 define simple versus complex plots and name reversal and discovery; Ch.13 rules the single best plot-shape (good-to-bad fortune, through hamartia, in a decent middling person); Ch.14 insists fear and pity come from plot structure, not spectacle; Chs.15-18 cover character requirements, ranked discovery forms, compositional method, and the four species of tragedy built on complication and unraveling. **Chs.19-22** cover thought (subordinated to rhetoric) and diction, ending in metaphor as the one part of wording that cannot be taught. **Chs.23-26** turn to epic poetry, judge it by the same unity standard, and rank tragedy above epic because it achieves the same end more concentratedly, with music and spectacle epic lacks.
 
-Sachs's Introduction runs a separate, parallel argument across five named sections (Experiencing and Thinking, Imitation, Stories, Fear and Pity, A Fatal Flaw, Katharsis, Wonder): action is knowable only through choice and imagination, not sense-perception alone, which is why tragedy's imitation of action can disclose more than any original; hamartia is a mistranslation-prone term whose root sense (missing a mark with a spear) rules out reading it as a character flaw; and catharsis, introduced in Ch.6 and never explained, is deliberately left open until Ch.24 completes the definition of tragedy's effect with wonder (ekplexis, thaumaston) instead.
+Sachs's Introduction runs a parallel argument (Experiencing and Thinking, Imitation, Stories, Fear and Pity, A Fatal Flaw, Katharsis, Wonder): action is knowable only through choice and imagination, which is why imitating it can disclose more than any original; hamartia's root sense (missing a mark with a spear) rules out reading it as a character flaw; and catharsis, introduced in Ch.6 and never explained, is deliberately left open until Ch.24 completes the definition with wonder instead.
 
 ---
 
@@ -181,13 +181,13 @@ Sachs's Introduction runs a separate, parallel argument across five named sectio
 | Situation | Do this | Not this |
 |---|---|---|
 | Protagonist's downfall needs a cause | Give a hamartia: an error, an act of ignorance, a missed mark | Bolt on a "tragic flaw," a vice that makes the fall feel deserved |
-| Choosing how virtuous the central figure should be | Aim for decent/middling (epieikes), between surpassing virtue and vice | Write a paragon undone by one blemish, or a villain who simply gets what's coming |
-| Ending feels moralized or too neat | Let fear and pity come from the plot's organization (reversal + discovery + suffering) | Lean on spectacle, or an explicit stated lesson, to produce the feeling |
-| A discovery scene feels cheap | Derive it from the actions themselves (Oedipus, the Iphigenia letter) | Use an external sign (scar, birthmark) as the only mechanism |
-| Deciding a story's shape (good/bad fortune) | Rule single: good fortune to bad, never the reverse, never a fully wicked person's fall | Use a "double" ending where good and bad people both end happily (Aristotle calls this comedy's pleasure, not tragedy's) |
-| Tempted to add an unaccountable event (a god, a coincidence) | Push it outside the drama itself, before or after the action shown | Put it inside the action, where it breaks the necessary-or-likely chain |
-| Reaching for a word to elevate prose | Reach for metaphor by analogy (A:B :: C:D) before foreign words or coinages | Overload with foreign/coined words until the passage reads as a riddle or a barbarism |
-| A scene needs urgency | Check whether the story's magnitude still fits in the audience's memory | Let episodes run past the point the whole can be "taken in together" |
+| Choosing how virtuous the central figure should be | Aim for decent/middling (epieikes) | Write a paragon undone by one blemish, or a villain who gets what's coming |
+| Ending feels moralized or too neat | Let fear and pity come from the plot's organization | Lean on spectacle or a stated lesson to produce the feeling |
+| A discovery scene feels cheap | Derive it from the actions themselves | Use an external sign (scar, birthmark) as the only mechanism |
+| Deciding a story's shape | Rule single: good fortune to bad, never the reverse | Use a "double" ending where good and bad both end happily |
+| Tempted to add an unaccountable event | Push it outside the drama itself | Put it inside the action, breaking the necessary-or-likely chain |
+| Reaching for a word to elevate prose | Reach for metaphor by analogy before foreign words or coinages | Overload with foreign words until the passage reads as a riddle |
+| A scene needs urgency | Check the story's magnitude still fits in memory | Let episodes run past what can be "taken in together" |
 
 ---
 

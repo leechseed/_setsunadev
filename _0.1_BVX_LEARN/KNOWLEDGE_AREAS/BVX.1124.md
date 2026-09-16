@@ -13,19 +13,19 @@ feeds:
   - layer: L12
     variable: archetype_mask_function
     strength: primary
-    note: "The eight archetypes are stated in the text as masks worn temporarily, not fixed roles: 'the archetypes can be thought of as masks, worn by the characters temporarily as they are needed.' A sibling vocabulary beside Dramatica's eight cast-relative functions, not a competing fill for L12, since a Vogler archetype migrates across scenes and even across Dramatica's roles within one story."
+    note: "The eight archetypes are stated as masks worn temporarily, not fixed roles: 'the archetypes can be thought of as masks, worn by the characters temporarily as they are needed.' A sibling vocabulary beside Dramatica's eight cast-relative functions, not a competing fill, since a Vogler archetype migrates across scenes and even across Dramatica's roles within one story."
   - layer: L10
     variable: shadow_content
     strength: primary
-    note: "The Shadow archetype names 'repressed feelings,' the psychotic register beneath the Threshold Guardian's neurotic one, and states the Hero himself can wear the Shadow mask under guilt or abused power. L10's own territory in Vogler's own terms, not a borrowed analogy."
+    note: "The Shadow archetype names 'repressed feelings,' the psychotic register beneath the Threshold Guardian's neurotic one, and states the Hero can wear the Shadow mask under guilt or abused power. L10's own territory in Vogler's own terms."
   - layer: L5
     variable: wound_ordeal_test
     strength: supporting
-    note: "The Ordeal stages a literal or symbolic death confronting the hero's greatest fear, and Resurrection stages a second, harder death-and-rebirth before Return. Both pressure-test WOUND without scoring it, no severity dial or field list, only the claim the hero 'must die or appear to die.'"
+    note: "The Ordeal stages a literal or symbolic death confronting the hero's greatest fear; Resurrection stages a second, harder death-and-rebirth before Return. Both pressure-test WOUND without scoring it, no severity dial, only the claim the hero 'must die or appear to die.'"
   - layer: L11
     variable: transformation_destiny
     strength: supporting
-    note: "Return with the Elixir names the direction the character was building toward, 'reborn as a new being with new insights,' but as a single plot event, not a scored growth vector; DESTINY's soul-evolution-archetype field has no counterpart here."
+    note: "Return with the Elixir names the direction the character was building toward, 'reborn as a new being with new insights,' but as a single plot event, not a scored growth vector."
 zotero_key: ""
 pdf_pages: [404]
 status: complete
@@ -173,7 +173,7 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Three movements plus a late appendix layer, all built on Campbell's *Hero with a Thousand Faces* Chapter IV outline, which Vogler states outright he has "amended" for movie use (Table One in the text maps his twelve terms one-to-one against Campbell's seventeen).
+Three movements plus a late appendix layer, built on Campbell's *Hero with a Thousand Faces* Chapter IV outline, which Vogler states he has "amended" for movie use (Table One maps his twelve terms against Campbell's seventeen).
 
 | Part | Content |
 |---|---|
@@ -206,7 +206,7 @@ The twelve-stage map recurs at two resolutions in the same book, the Practical G
 
 | Situation | Do this | Not this |
 |---|---|---|
-| A character seems flat or one-note | Ask the two questions: what psychological function, what dramatic function does she perform right now | Cast her permanently as "the Mentor" or "the Shadow" for the whole story |
+| A character seems flat or one-note | Ask the two questions: psychological function, dramatic function, right now | Cast her permanently as "the Mentor" or "the Shadow" |
 | A scene needs a stronger antagonist | Let the Shadow mask migrate onto an ally, a mentor, or the Hero himself under pressure | Assume the Shadow must be a single, dedicated villain character |
 | Story structure feels rigid or forced | Delete, add, or reorder stages freely, per Vogler's own text | Force every beat of a draft to hit all twelve stages in order |
 | Choosing what a hero loses at the Ordeal | Stage a literal or symbolic death, a mentor, a relationship, an old identity | Skip a stakes-of-death moment because the plot is a comedy or romance |
@@ -230,22 +230,22 @@ The twelve-stage map recurs at two resolutions in the same book, the Practical G
 
 ## 7 · PITFALLS / MYTHS
 
-- Applying the twelve stages as a rigid checklist, the exact misuse Caveat Scriptor warns against before the film analyses even begin.
-- Treating an archetype as a fixed cast slot ("she is the Mentor") rather than a temporary function any character can pick up and set down.
-- Reading the Practical Guide's condensed chapter and Book Two's full chapters as two different systems; they are the same map at two levels of detail.
-- Assuming polarity requires flat moral opposites; sophisticated stories need "small shadings and contradictions" or polarization reads as heavy-handed.
+- Applying the twelve stages as a rigid checklist, the exact misuse Caveat Scriptor warns against.
+- Treating an archetype as a fixed cast slot ("she is the Mentor") rather than a temporary function.
+- Reading the Practical Guide's condensed chapter and Book Two's full chapters as two systems; they are one map at two resolutions.
+- Assuming polarity requires flat moral opposites; sophisticated stories need "small shadings and contradictions."
 - Reducing catharsis to "any strong emotional reaction," dropping its ritual and comedic half.
-- Ending a story on the Ordeal's climax without a Return beat, or padding the Return with too many endings; both are named craft failures in the text.
-- Missing that the Threshold Guardian (neurosis) and the Shadow (psychosis) are graded in severity, not interchangeable labels for "the opposition."
+- Ending on the Ordeal's climax without a Return beat, or padding the Return with too many endings, both named craft failures.
+- Missing that the Threshold Guardian (neurosis) and the Shadow (psychosis) are graded in severity, not interchangeable labels.
 
 ---
 
 ## 8 · APPLICATION
 
-- **Spine level:** L4 primary (the twelve stages as a plot-journey instance), L5 secondary (the archetypes as character functions), L0 (Vogler/Campbell's myth-transmission theory of what a story fundamentally is, a named rival root claim to Dramatica's Grand Argument on the spine's own rival map)
-- **12-layer character stack:** primary on L12 FUNCTION (archetypes as masks, beside Dramatica's eight) and L10 SHADOW (the Shadow archetype, stated almost verbatim as L10's own domain); supporting on L5 WOUND (the Ordeal) and L11 DESTINY (Resurrection and Return)
-- **plot_systems:** candidate feed for P6 SIGNPOST/JOURNEY SEAT (the twelve stages as a portable, non-Dramatica act-seam instance) and P4 TURN (the Ordeal's death-and-rebirth is close kin to McKee's Gap, described independently and in almost the same terms)
-- **Setting:** not applicable; the Special World is a narrative role (the place the hero is estranged in), not a modeled place
+- **Spine level:** L4 primary (twelve stages as a plot-journey instance), L5 secondary (archetypes as character functions), L0 (Vogler/Campbell's myth-transmission theory, a named rival root claim to Dramatica's Grand Argument)
+- **12-layer character stack:** primary on L12 FUNCTION and L10 SHADOW; supporting on L5 WOUND (the Ordeal) and L11 DESTINY (Resurrection and Return)
+- **plot_systems:** candidate feed for P6 SIGNPOST/JOURNEY SEAT and P4 TURN (the Ordeal, close kin to McKee's Gap)
+- **Setting:** not applicable; the Special World is a narrative role, not a modeled place
 
 The spine's rival map calls Campbell/Vogler "the MC throughline in mythic dress, one line mistaken for the whole," and the text mostly earns that verdict: the twelve stages track one hero's inner and outer arc start to finish, with no separate accounting for the four-throughline apparatus a Grand Argument needs. But the verdict needs one qualification: Vogler pre-empts the "mistaken for the whole" reading himself. Caveat Scriptor and Form Follows Function both deny the twelve stages are a required formula, and the closing "Writer's Journey" chapter reframes the map as one flexible metaphor among several, not the one true structure of story. The mistake the spine diagnoses is real, but readers make it more often than Vogler does on the page.
 
@@ -276,13 +276,13 @@ The spine's rival map calls Campbell/Vogler "the MC throughline in mythic dress,
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full-text pdftotext extraction, 404 pages. Third edition (2007, Michael Wiese Productions) confirmed from the text itself: "Introduction: Third Edition" is dated "Venice, California, February 26, 2007," describing nine years of work since the second edition and new chapters "on the mechanism of polarity that rules in storytelling... catharsis, and other concepts," gathered as an appendix following "Looking Back on the Journey."
+Full-text pdftotext extraction, 404 pages. Third edition (2007, Michael Wiese Productions) confirmed from the text: "Introduction: Third Edition" is dated "Venice, California, February 26, 2007," describing new chapters "on the mechanism of polarity that rules in storytelling... catharsis, and other concepts," gathered as an appendix after "Looking Back on the Journey."
 
-**Read closely, in full or near-full:** both introductions/preface; Book One's "A Practical Guide" in full (all twelve stages, condensed pass, Table One against Campbell's terms); "The Archetypes" opening and all eight archetype chapters' PSYCHOLOGICAL FUNCTION and DRAMATIC FUNCTION headings, openings, and closings; each Book Two stage chapter's opening and closing (Ordinary World through Return with the Elixir), including the Return chapter's full "Pitfalls of the Return"; the Epilogue's Caveat Scriptor, Form Follows Function, and Choose Your Metaphor sections; the closing "The Writer's Journey" chapter in full; the Polarity appendix (the five rules, Aristotle's peripateia) and the Catharsis appendix (the ritual Mortification/Purgation/Invigoration/Jubilation cycle), per the third-edition-additions instruction.
+**Read closely:** both introductions/preface; Book One's "A Practical Guide" in full (all twelve stages, Table One against Campbell's terms); "The Archetypes" opening and all eight archetype chapters' PSYCHOLOGICAL/DRAMATIC FUNCTION headings and openings/closings; each Book Two stage chapter's opening and closing, including the Return chapter's "Pitfalls of the Return"; the Epilogue's Caveat Scriptor, Form Follows Function, and Choose Your Metaphor sections; the closing "The Writer's Journey" chapter in full; the Polarity appendix (five rules, Aristotle's peripateia) and Catharsis appendix (the ritual Mortification/Purgation/Invigoration/Jubilation cycle).
 
-**Sampled at heading level:** Book Two's middle chapters' interiors (Tests/Allies/Enemies, Approach to the Inmost Cave) beyond opening/closing; "Stories Are Alive" (the Rumpelstiltskin example only); Wisdom of the Body and Trust the Path, not read, outside the task's polarity/catharsis scope. One worked film analysis, Titanic, read at full depth as instructed; Pulp Fiction, The Lion King, The Full Monty, and the Star Wars retrospective confirmed present at heading level only.
+**Sampled:** Book Two's middle-chapter interiors beyond opening/closing; "Stories Are Alive" (Rumpelstiltskin example only); Wisdom of the Body and Trust the Path not read, outside scope. One film analysis, Titanic, read at full depth; the other four confirmed present at heading level only.
 
-`confidence: high`: every archetype function, stage description, and third-edition claim above is a verified quote or close paraphrase from the confirmed text; the film-analysis sampling and two unread appendices are the entry's honest, out-of-scope gaps.
+`confidence: high`: every function, stage, and third-edition claim above is a verified quote or close paraphrase; the film-analysis sampling and two unread appendices are the entry's honest, out-of-scope gaps.
 
 ## META
 - Template: BVX-LEARN-v4.0
