@@ -720,5 +720,35 @@
   "k": "item",
   "d": "The two-stage spine sweep: every source in the Zotero library keyed to the story spine's shelves, then distilled shelf by shelf into the plot, setting and character models. Reopened 9/16 as the gate on all story-side work; the full pass keyed all 1,031 items the same night.",
   "w": "BOLO.md #18 · _tools/zotero/README.md · DOPE SHEET 18 https://claude.ai/artifact/CRVaYBt5GBFp7inyXYG3C5"
+ },
+ "bolo25": {
+  "t": "BOLO 25",
+  "k": "item",
+  "d": "The standard project. Watchlist row 25 in BOLO.md; the row carries its status and its resume order.",
+  "w": "BOLO.md #25"
+ },
+ "bolo31": {
+  "t": "BOLO 31",
+  "k": "item",
+  "d": "MIL.01 read. Watchlist row 31 in BOLO.md; the row carries its status and its resume order.",
+  "w": "BOLO.md #31"
+ },
+ "bolo32": {
+  "t": "BOLO 32",
+  "k": "item",
+  "d": "The markdown marking SOP. Watchlist row 32 in BOLO.md; the row carries its status and its resume order.",
+  "w": "BOLO.md #32"
+ },
+ "bolo33": {
+  "t": "BOLO 33",
+  "k": "item",
+  "d": "The MCDP browser. Watchlist row 33 in BOLO.md; the row carries its status and its resume order.",
+  "w": "BOLO.md #33"
+ },
+ "bolo39": {
+  "t": "BOLO 39",
+  "k": "item",
+  "d": "Food preservation. Watchlist row 39 in BOLO.md; the row carries its status and its resume order.",
+  "w": "BOLO.md #39"
  }
 }
