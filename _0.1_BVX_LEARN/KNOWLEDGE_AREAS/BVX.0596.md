@@ -148,21 +148,21 @@ The book mirrors the theory volume's table of contents but swaps systematic expo
 
 | Concept | What it is | Why it matters |
 |---|---|---|
-| **Fabula** | A series of logically and chronologically related events, caused or experienced by actors | The content layer; what Chatman's story-side (events + existents) already names |
-| **Story** | The particular manifestation, inflection, and coloring of a fabula | The layer Bal adds between content and utterance; where ordering, timing, and focalization happen |
-| **Text** | An utterance in which an agent conveys a story to an addressee, in any medium | The surface layer; where the narrator actually speaks |
-| **Narrator** | The agent from which the text emanates; CN (character-narrator, personified) or EN (external narrator) | Answers "who speaks," never "who sees"; can be marked perceptible (p) or non-perceptible (np) in the text |
-| **Focalizor** | The agent whose vision colors the story; EF (external focalizer) or CF (character-focalizer) | Answers "who sees"; the single most load-bearing concept in the book, per Bal's own Preface |
+| **Fabula** | Chronologically related events, caused or experienced by actors | The content layer; what Chatman's story-side (events + existents) already names |
+| **Story** | The manifestation, inflection, and coloring of a fabula | The layer Bal adds between content and utterance; ordering, timing, focalization happen here |
+| **Text** | An utterance conveying a story to an addressee, in any medium | The surface layer; where the narrator actually speaks |
+| **Narrator** | CN (character-narrator) or EN (external narrator) | Answers "who speaks," never "who sees"; marked perceptible (p) or non-perceptible (np) |
+| **Focalizor** | EF (external focalizer) or CF (character-focalizer); whoever's vision colors the story | Answers "who sees"; the single most load-bearing concept in the book, per Bal's own Preface |
 | **The narrator/focalizer law** | "Who speaks" and "who sees" are never automatically the same agent | Collapsing them is, in Bal's words, "as nonsensical" as claiming a character narrates a sentence she is merely seen inside |
-| **Description** | The attribution of features to fabula elements, bound to focalization for its coloring | Governed by delimitation, motivation, and rhetorical features (aspectualization, modalization, subjectivation); makes the fabula concrete and visible, and is a pacing device (pause, deceleration) as much as a content device |
-| **Levels of narration** | Embedded, second-level speech or thought inside a first-level narration | Discrepancies between what is narrated and what is focalized are a text's primary tool of manipulation (Colette's *The Cat*) |
-| **Free indirect discourse (FID)** | Narrator and character voice fused, without a clear marker of the switch | Produces "immersive" narrative (Flaubert); makes levels of narration undecidable by design |
-| **Heterochrony** | Time as multiple, layered, and unequal across subjects, not a single objective line | The condition (migrancy, trauma, memory) that motivates Bal's temporal analysis; time of telling versus time of events versus their mismatch |
-| **Actants** | Subject, object, helper, opponent, power, organized around a function | Bal's fabula-level structural grammar for "who does what to whom," inherited from Greimas via Hamon |
-| **Event** | A transition from one state to another, caused or experienced by actors | Deceptively simple; frame-change (Zizek) and rupture are two competing definitions Bal keeps in play rather than resolving |
-| **"Paper people"** | The recognition that a character (e.g., Proust's Albertine) has no psychological depth of its own | Realist, moralizing readings of character are a "major ideological trap"; character is fleshed out by narratological means (repetition, accumulation, relation, transformation), not granted by fiat |
-| **The political (Mouffe)** | The dimension of antagonism constitutive of social life, distinct from "politics" (which manages it) | Bal's ethical ground for why a technical, focalization-centered analysis matters beyond the seminar room |
-| **Intersubjectivity / mosaic** | Clarity as a means of enabling disagreement, not consensus; the book's own fragmented form | The stated goal of the whole project; a "conclusion" would betray it |
+| **Description** | Attribution of features to fabula elements, bound to focalization for its coloring | Governed by delimitation, motivation, and rhetorical features; a pacing device (pause) as much as a content device |
+| **Levels of narration** | Embedded, second-level speech or thought inside a first-level narration | Discrepancies between what is narrated and focalized are a text's primary manipulation tool (Colette's *The Cat*) |
+| **Free indirect discourse (FID)** | Narrator and character voice fused, no clear marker of the switch | Produces "immersive" narrative (Flaubert); makes levels of narration undecidable by design |
+| **Heterochrony** | Time as multiple and unequal across subjects, not one objective line | Motivates Bal's temporal analysis; time of telling versus time of events versus their mismatch |
+| **Actants** | Subject, object, helper, opponent, power, organized around a function | Fabula-level structural grammar for "who does what to whom," via Greimas and Hamon |
+| **Event** | A transition from one state to another, caused or experienced by actors | Frame-change (Zizek) and rupture are two competing definitions Bal keeps open rather than resolving |
+| **"Paper people"** | A character (e.g., Proust's Albertine) with no psychological depth of its own | Realist, moralizing readings of character are a "major ideological trap"; character is fleshed out by repetition, accumulation, relation, transformation |
+| **The political (Mouffe)** | The dimension of antagonism constitutive of social life, distinct from "politics" (which manages it) | Bal's ethical ground for why focalization-centered analysis matters beyond the seminar room |
+| **Intersubjectivity / mosaic** | Clarity enabling disagreement, not consensus; the book's own fragmented form | The stated goal of the project; a "conclusion" would betray it |
 
 ---
 
@@ -197,13 +197,12 @@ The book mirrors the theory volume's table of contents but swaps systematic expo
 ## 7 · PITFALLS / MYTHS
 
 - Treating "who tells the story" and "who sees the story" as one question; Bal calls the resulting confusions (e.g., claiming a third-person-narrated character is "telling his own story") outright nonsensical.
-- Reading "show, don't tell" as a moral commandment rather than what it actually is: a dial between diegesis (telling) and mimesis (showing), i.e., a distance setting.
+- Reading "show, don't tell" as a moral commandment rather than what it is: a dial between diegesis (telling) and mimesis (showing), a distance setting.
 - Assuming description is realism's servant; the best realist writers (Flaubert) are, in Bal's account, "the worst realists" by that standard, using description to critique rather than mirror reality.
-- Judging fictional characters, especially from older, non-realist, or non-Western texts, by the standards of modern psychological "roundness"; this produces both a myth of "primitivism" and misapplied charges of misogyny onto texts with different representational rules altogether.
-- Treating levels of narration in film as too obvious to analyze because embedding (quoting a character) is the medium's default; the visual and audio narrators can still be split, layered, and set in tension.
+- Judging fictional characters, especially from older, non-realist, or non-Western texts, by modern psychological "roundness"; this produces both a myth of "primitivism" and misapplied charges of misogyny onto texts with different representational rules.
 - Assuming a fixed order of description (head to foot, foreground to background) is a rule rather than a convention the best writers deliberately violate.
-- Assuming that avoiding an anachronistic modern term (like "rape") by substituting a softer one (like "forcing into marriage") escapes ideology; it can just relocate the ideology into the substitute term.
-- Expecting or demanding a conclusion; Bal argues a tidy synthesis at the end of an analysis-driven book would betray the book's own claim that theory should remain discussable and provisional.
+- Assuming that swapping an anachronistic modern term (like "rape") for a softer one ("forcing into marriage") escapes ideology; it can just relocate the ideology into the substitute term.
+- Expecting or demanding a conclusion; Bal argues a tidy synthesis would betray the book's own claim that theory should remain discussable and provisional.
 
 ---
 
@@ -214,7 +213,7 @@ The book mirrors the theory volume's table of contents but swaps systematic expo
 - **plot_systems:** not directly applicable. Bal's definition of an event (a transition between states, caused or experienced by actors) is a clean, minimal primitive that could seed the currently empty `04_PLOT_SYSTEMS/` domain if and when it opens, but nothing in this pass constitutes a worked plot grammar the way McKee's beat-scene-sequence-act hierarchy does.
 - **Setting:** applicable. The Space section's account of framing (rooms within rooms, the doorway as threshold, space as imprisonment) is compatible with S1 BODY, S3 SENSORIUM, and especially S10 UNDERSIDE (what a space's framing represses or encloses); it deepens rather than revises the setting SSOT's existing citation of Bal.
 
-Bal's central move, inserting a middle layer between raw content and surface utterance, is already implicitly present in the texture SSOT's separation of T1 (who speaks) from T2 (who sees): that separation *is* the claim that narration and focalization are different operations, done at different moments, by potentially different agents. Reading Bal in full does not require moving anything in the Command's architecture; it supplies the full theoretical apparatus (CN/EN, EF/CF, perceptible/non-perceptible marking, the narrator-focalizer discrepancy as a manipulation diagnostic) behind a rule the SSOT currently states as a law without unpacking its mechanics.
+Bal's central move, a middle layer between raw content and surface utterance, is already implicit in the texture SSOT's split of T1 (who speaks) from T2 (who sees): that split *is* the claim that narration and focalization are different operations, by potentially different agents. Reading Bal does not require moving anything in the Command's architecture; it supplies the theoretical apparatus (CN/EN, EF/CF, perceptible/non-perceptible marking, the narrator-focalizer discrepancy as a manipulation diagnostic) behind a rule the SSOT currently states as a law without unpacking its mechanics.
 
 **For the texture system:**
 - Bal supplies the working vocabulary and the diagnostic method for T2 (WHO SEES): the EF/CF split, the perceptible (p) / non-perceptible (np) marking of both narrator and focalizor, and the explicit warning that narrator and focalizer discrepancies are where a text manipulates its reader.
@@ -237,9 +236,9 @@ Bal's central move, inserting a middle layer between raw content and surface utt
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text, pdftotext extraction (232 pages, approx. 91,000 words, 9,431 lines). The extraction carries page-footer markers (e.g., "Focalization139") rather than clean page breaks; citations above follow the source's own chapter and section headings. Read in full or substantially: the Preface and Introduction, in full; Chapter 1 (Text: Signs) sections 2 (The Narrator), 4 (Description), and 5 (Levels of Narration), in full; Chapter 3 (Story: Aspects) sections 2 (Temporality, opening) and 3 through 5 (Characters, Space, Focalization), in full; Chapter 5 (Fabula: Elements) sections 1 through 3 (Preliminary Remarks, Events, Actors), in full, plus the closing "No Conclusion." Read at heading level only, not closely: Chapter 2 (Transition: Between Text and Society), Chapter 4 (Transition: Media in Dialogue), and Chapter 5 sections 4 to 5 (Time, Location); a deeper pass on these would likely add material on frame narratives, metalepsis-adjacent media crossings, and location-specific worldbuilding, flag with "Upgrade BVX.0596" if wanted.
+Full text, pdftotext extraction (232 pages, approx. 91,000 words). Citations follow the source's own chapter and section headings, since the extraction carries page-footer markers rather than clean breaks. Read in full: Preface and Introduction; Chapter 1 (Text: Signs) sections 2, 4, 5 (Narrator, Description, Levels of Narration); Chapter 3 (Story: Aspects) sections 2 through 5 (Temporality, Characters, Space, Focalization); Chapter 5 (Fabula: Elements) sections 1 through 3 (Preliminary Remarks, Events, Actors), plus the closing "No Conclusion." Read at heading level only: Chapter 2 and Chapter 4 (the two Transition chapters) and Chapter 5 sections 4 to 5 (Time, Location); a deeper pass would likely add frame-narrative and location-specific material, flag "Upgrade BVX.0596" if wanted.
 
-All quotes verbatim from the pdftotext extraction; the extraction drops or garbles some diacritics and ligatures (e.g., accented French and Dutch names, curly quotes), silently normalized here where unambiguous. The mapping onto the Ten Questions of the Telling, the SETTING axis assignment, and the L3/L12 character-stack entries in §8 are my inference, not Bal's; she never mentions the Command, OXO, DCUS, or Dramatica. Flagged as proposal throughout.
+Quotes are verbatim from the extraction, which drops or garbles some diacritics and ligatures, silently normalized here where unambiguous. The Ten Questions mapping, the SETTING axis assignment, and the L3/L12 entries in §8 are my inference, not Bal's; she never mentions the Command, OXO, DCUS, or Dramatica.
 
 ## META
 - Template: BVX-LEARN-v4.0
