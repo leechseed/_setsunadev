@@ -203,6 +203,48 @@ The Negation-of-the-Negation ladder (Unfairness → Injustice → Tyranny/"Might
 
 ---
 
+## 8b · SETTING ADDENDUM (added 2026-09-16, the setting wave)
+
+*Sourced from Ch.3, "Structure and Setting" — not read in the original pass (see §10). Pulled full-text for this addendum.*
+
+McKee's Chapter 3 argues that setting is four-dimensional — Period, Duration, Location, Level of Conflict — and that it does not decorate structure but sharply defines and confines it: a fictional world's own internal laws of probability set the boundary of every event the writer is allowed to invent. The Principle of Creative Limitation follows directly — a story's world must be small enough for one mind to know completely, because the smaller and more thoroughly researched the world, the more original the creative choices it can generate; the war on cliché is won or lost at the setting, not the plot.
+
+**McKee's setting tools, mapped onto the setting system:**
+
+| McKee tool | What it does | Setting-system axis / S-layer |
+|---|---|---|
+| Period | The story's place in time | Axis 4 TIME (baseline dating) / S7 FOUNDING |
+| Duration | The story's length through time — storytime vs. screentime | The SCENE CARD's `duration` field (scene/summary/stretch/pause/ellipsis, Genette) |
+| Location | The story's place in space, down to the specific room | Axis 1 SCALE / S1 BODY |
+| Level of Conflict | The vertical hierarchy of human struggle a story is pitched at — subconscious, personal, institutional, environmental — as much a part of setting as landscape or costume | No current axis — see finding below |
+| Setting confines structure | A world's internal "laws of probability" limit which events are possible or probable; breaking them reads as a violated contract | S4 LAW |
+| Principle of Creative Limitation | A story's world must be small enough for one writer to know completely | A scope-discipline the SSOT's OPEN list doesn't hold — see finding below |
+| Research (memory / imagination / fact) | Three methods for building commanding knowledge of a setting before writing it | Authoring method for filling S1–S11, not a layer itself |
+| War on cliché | Clichéd scenes trace to one cause: "the writer does not know the world of his story" | Quality gate on S3 SENSORIUM / Axis 3 FUNCTION |
+
+**Diagram 4 — McKee's four dimensions mapped onto the setting system.**
+Caption: *three of the four dimensions drop straight onto the taxonomy; Level of Conflict and the Principle of Creative Limitation both fall outside it — the chapter's two clearest gaps.*
+
+```mermaid
+flowchart LR
+    Period --> Axis4[Axis 4 TIME]
+    Duration --> SceneCard[Scene Card duration field]
+    Location --> Axis1[Axis 1 SCALE]
+    SettingConfines[Setting confines structure] --> S4[S4 LAW]
+    CreativeLimitation[Creative limitation] -.no current home.-> GAP1[OPEN]
+    LevelOfConflict[Level of Conflict] -.no current home.-> GAP2[OPEN]
+```
+
+**Quotes (Ch.3, verbatim):**
+
+- "A story's SETTING is four-dimensional — Period, Duration, Location, Level of Conflict."
+- "A STORY must obey its own internal laws of probability. The event choices of the writer, therefore, are limited to the possibilities and probabilities within the world he creates."
+- "The larger the world, the more diluted the knowledge of the writer, therefore the fewer his creative choices and the more clichéd the story. The smaller the world, the more complete the knowledge of the writer, therefore the greater his creative choices."
+
+**What the setting system does not yet hold:** McKee's Level of Conflict — a vertical axis running from subconscious through personal to institutional to environmental struggle — is a distinct dimension of setting the SSOT's four axes don't currently carry; SCALE nests physical space, not conflict altitude, so this is a candidate for a fifth axis or an S4/S12 subfield.
+
+---
+
 ## 9 · CROSS-REFERENCES
 
 | Related entry | Relation |
