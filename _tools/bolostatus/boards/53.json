@@ -1,0 +1,269 @@
+{
+ "bolo": {
+  "n": 53,
+  "title": "The house's own development standard — the back-and-forth as a life cycle",
+  "trunk": "BLACK",
+  "issued": "2026-09-12",
+  "asof": "2026-09-15",
+  "s": "tabled",
+  "status": "TABLED 9/12 by Papi — captured, not started; opens beside the project flow on BOLO 50's ladder.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "SOP · the project flow · BOLO 50's ladder",
+  "related": [
+   {
+    "n": 50,
+    "why": "the standards campaign: BOLO 53 files its house development standard on this BOLO's ladder once the ladder itself is ruled."
+   }
+  ],
+  "home": "BOLO.md · row 53",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The loop already runs at full speed — boresight, how-copy, build, FRAGO, in one breath. Naming it costs nothing it isn't already spending."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One question is open: design process, or software life cycle. Answer it once, in one document, beside the project flow — not re-litigated across BOLOs."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Call it what 12207 and 15288 call it — the iterative life-cycle model — and take credit for having built it before it had a name."
+  }
+ ],
+ "frago": {
+  "mission": "Write the house's own development standard, the daily boresight-to-FRAGO loop named as a life cycle and filed on the BOLO 50 ladder, **in order to** make how the house builds a written, auditable procedure every project runs the same way.",
+  "order": "**Tabled by your word 9/12. The one action is the open: say \"open 53\" and the standard drafts in one session on the BOLO 50 ladder.** Recommended timing: after the ladder on DOPE SHEET 50 is ruled, so it has a rung to file on.",
+  "default": "Silence: stays tabled. No draft, no research. BOLO 50's ladder ruling lands first; the standard files on it when opened.",
+  "calls": [
+   {
+    "q": "Open or hold",
+    "options": "open now, one session to draft · open after DOPE SHEET 50's ladder is ruled (rec) · leave tabled",
+    "default": "after the ladder ruling; tabled until then",
+    "s": "open"
+   },
+   {
+    "q": "The life-cycle read",
+    "options": "iterative-incremental: 12207/15288's iterative model, agile's inspect-and-adapt (rec) · a design process (double diamond) · both: a design process inside an iterative life cycle",
+    "default": "iterative-incremental, provisional",
+    "s": "open"
+   },
+   {
+    "q": "Where it files",
+    "options": "the BOLO 50 ladder beside the project flow (spoken) · SOP as a section · its own doctrine doc",
+    "default": "the ladder beside the project flow",
+    "s": "open"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What was spoken, what got tabled, and what the record already says about this loop.",
+   "strand": {
+    "last": "BOLO 50's standards campaign was mid-flight when this question came up on the side.",
+    "plan": "Capture the question, table it, and carry it on the ladder until it opens.",
+    "you": "You tabled it yourself, on the spot, with an order to not lose it.",
+    "next": "Nothing owed from you; it stays carried until you reopen it."
+   },
+   "groups": [
+    {
+     "label": "The transmission · 9/12",
+     "items": [
+      {
+       "t": "**\"Let's fucking table that for now… just remember to put in the BOLO.\"** Papi tabled the question before it opened.",
+       "s": "tabled"
+      },
+      {
+       "t": "The question as spoken: the boresight → how-copy → build → FRAGO loop the house runs every day — is it a design process, or a software life cycle?",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "Claude's one-line read, logged the same transmission: yes, iterative-incremental development. ISO/IEC/IEEE 12207 and 15288 call this the iterative life-cycle model; agile calls it inspect-and-adapt; the house calls it boresight and FRAGO.",
+       "s": "noted"
+      },
+      {
+       "t": "BOLO 50's standards register landed 9/11 (`_0.1_BVX_LEARN/LOCI/standards.locus.md` and `standards.register.md`), but the house ladder itself — where this standard would file — is still Papi's call per DOPE SHEET 50.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "STATE.md and every session note since 9/12 carry the same line — **BOLO 53 tabled** — the house's own development standard, not started. It has been carried forward untouched across at least three session notes (9/12, 9/12 second session, 9/12 close).",
+       "s": "tabled"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "The task and the reason.",
+   "strand": {
+    "last": "Papi named the daily loop and asked whether it is a life cycle, then tabled it the same breath.",
+    "plan": "One standard, written once, filed on the BOLO 50 ladder beside the project flow.",
+    "you": "You said table it and remember it. That is the whole order so far.",
+    "next": "The open. Nothing drafts before you speak it."
+   },
+   "task": "Write the house's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop named as a life cycle and filed on the BOLO 50 ladder beside the project flow,",
+   "intent": "in order to make the way the house builds a written, auditable procedure instead of a habit, so every project runs the same loop and BOLO 51's audits have a standard to check against.",
+   "spoken": "\"Let's fucking table that for now… just remember to put in the BOLO.\"",
+   "endstate": [
+    "One document on the ladder names the loop as the house's iterative-incremental life cycle, stage by stage, each stage a proword.",
+    "Every stage cites its outside parent (ISO/IEC 12207 and 15288's iterative model, agile inspect-and-adapt) in one line, no more.",
+    "The project flow (BOLO 25) and the logistics front's audits (BOLO 51) point at it as the reference.",
+    "Until the open is spoken, it stays tabled and nothing builds."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Nothing is running. The only phase so far is the capture; the write-up waits on Papi reopening it.",
+   "strand": {
+    "last": "The question was captured and tabled in the same breath, 9/12.",
+    "plan": "When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
+    "you": "You tabled it and named where it should live when it opens.",
+    "next": "Reopen it whenever you're ready; nothing else moves it."
+   },
+   "main_effort": "Nothing running — the question is captured, not opened. When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**The capture** — the question written down, tabled by Papi, filed to open beside the project flow on BOLO 50's ladder.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 1,
+     "t": "**Write the standard** — the house's own development-standard document: boresight → how-copy → build → FRAGO as the life-cycle model, filed beside the project flow and the design system on BOLO 50's ladder.",
+     "s": "gated",
+     "when": "yours"
+    }
+   ],
+   "coord": [
+    "Waits on BOLO 50's house ladder being ruled before it can file.",
+    "Filed to feed SOP, the project flow, and BOLO 50's ladder — not a standalone document."
+   ],
+   "running": [
+    "Nothing."
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where it lives and what it has cost so far.",
+   "strand": {
+    "last": "The tasking row and this sheet.",
+    "plan": "Nothing more until it opens.",
+    "you": "Zero dollars.",
+    "next": "Nothing owed."
+   },
+   "files": [
+    {
+     "path": "BOLO.md · row 53",
+     "what": "the tasking, tabled",
+     "s": "done"
+    },
+    {
+     "path": "STATE.md",
+     "what": "carries \"BOLO 53 tabled\" across every session since 9/12",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "the capture",
+     "v": "one transmission, in-chat, 9/12"
+    },
+    {
+     "k": "the standard itself",
+     "v": "not started; zero cost until it opens"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what.",
+   "strand": {
+    "last": "Tabled by transmission 9/12.",
+    "plan": "One decider; the draft is one session of Claude's work once opened.",
+    "you": "The open, the life-cycle read, where it files.",
+    "next": "Read the calls; the first one is the only one that matters yet."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**Papi** — the open · the life-cycle read · where it files. **Claude** — the draft, the outside citations, the filing on the ladder, this sheet.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Tabled by Papi 9/12.** Nothing drafts until the open is spoken. The natural trigger is DOPE SHEET 50's ladder ruling: the standard needs a rung to sit on.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "\"Open 53\" or \"Charlie Mike 53\" opens it and drafts the standard the same session. \"FRAGO 53\" pushes an update onto this sheet. Silence keeps it tabled.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this BOLO.",
+   "strand": {
+    "last": "Two entries.",
+    "plan": "One per transmission.",
+    "you": "One is yours.",
+    "next": "Nothing owed until it reopens."
+   },
+   "entries": [
+    {
+     "when": "9/12",
+     "who": "Papi",
+     "t": "Opened then immediately tabled: \"let's fucking table that for now… just remember to put in the BOLO.\" The question: is the boresight → how-copy → build → FRAGO loop a design process or a software life cycle? Filed to open beside the project flow on BOLO 50's ladder."
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "One-line read logged: yes, iterative-incremental development — ISO/IEC/IEEE 12207 and 15288 call it the iterative life-cycle model, agile calls it inspect-and-adapt, the house calls it boresight and FRAGO. Row captured in BOLO.md; carried tabled through every session note since."
+    }
+   ]
+  }
+ ]
+}
