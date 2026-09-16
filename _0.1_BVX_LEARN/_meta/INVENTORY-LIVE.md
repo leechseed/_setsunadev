@@ -19,7 +19,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | Already in catalog.json (BVX id) | 782 |
 | **New since the Dec-2023 catalog** | **6913** |
 | Story-side (CRE + LIT by catalog) | 299 |
-| **Spine-keyed from Papi's tags** | **605** |
+| **Spine-keyed from Papi's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
 
@@ -27,13 +27,13 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Level | Items |
 |---|---|
-| L7 | 174 |
-| L4 | 162 |
-| SETTING | 154 |
+| L7 | 176 |
+| L4 | 166 |
+| SETTING | 155 |
 | TEXTURE | 105 |
-| L5 | 82 |
-| L6 | 27 |
-| L0 | 27 |
+| L5 | 86 |
+| L6 | 29 |
+| L0 | 29 |
 | CRAFT-PROCESS | 23 |
 
 ## By catalog subject

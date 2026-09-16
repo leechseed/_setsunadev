@@ -101,6 +101,11 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.0581` | Bawarshi & Reiff — Genre: An Introduction | L7 L0 | 4 | ✅ 9/16 · genre as typified social action; the three traditions; the Command's contract reading located (Literary-Structuralist) | 6 (genre) |
 | `BVX.0614` | Todorov — The Fantastic | L7 L0 | 4 | ✅ 9/16 · genre by reader position; the hesitation spectrum; rot: Zotero authors wrong (Reeder) | 6 (genre) |
 | `BVX.0599` | Mendlesohn — Rhetorics of Fantasy | L7 TEXTURE SETTING | 4 | ✅ 9/16 · the four delivery modes; OXO is an immersive fantasy | 6 (genre) |
+| `BVX.1123` | Egri — The Art of Dramatic Writing | L5 L6 L0 | 4 | ✅ 9/16 · the BONE STRUCTURE (27 fields) mapped onto the stack; heredity homeless; the premise; drop-folder intake, no Zotero record | 7 (intake) |
+| `BVX.1124` | Vogler — The Writer's Journey (3rd ed.) | L4 L5 L0 | 4 | ✅ 9/16 · twelve stages onto P6; archetypes as masks beside L12; "one line mistaken for the whole" holds structurally | 7 (intake) |
+| `BVX.1125` | Brody — Save the Cat! Writes a Novel | L4 L7 | 4 | ✅ 9/16 · the delta from Snyder (percentages, A/B story, multi-POV); the ingredient triad; the real Brody (Zotero 0164 holds Snyder) | 7 (intake) |
+| `BVX.1126` | Aristotle — Poetics (Sachs) | L0 L4 L6 L7 | 4 | ✅ 9/16 · read visually (scan, no text layer; the file holds the book twice); "OS-biased" confirmed; hamartia is an error, not a wound | 7 (intake) |
+| `BVX.1127` | Levine & Heller — Attached | L5 | 4 | ✅ 9/16 · the L8 IMPRINT field list; the drop file is a Vietnamese translation, English copy wanted | 7 (intake) |
 
 Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
 

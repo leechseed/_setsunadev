@@ -124,6 +124,8 @@ def main():
                       "annotations": ann.get(iid, 0), "notes": notes[iid],
                       "bvx": c["id"] if c else None, "subject": c["primary"] if c else None,
                       "added": r["dateAdded"][:10], "modified": r["dateModified"][:10]})
+    drops = drop_scan(cat_by_title, str(datetime.date.today()))
+    items += drops
     # carry the sweep's own fields across regenerations (9/16 finding: the PS TOC keys and repaired titles lived only in
     # this file; regenerating from the DB silently dropped them). Matched by zkey; the DB never wins over a sweep field.
     prev_p = os.path.join(META, "inventory-live.json")
@@ -131,7 +133,7 @@ def main():
         prev = {i.get("zkey") or i.get("pdf"): i for i in json.load(io.open(prev_p, encoding="utf-8"))}
         carried = 0
         for i in items:
-            o = prev.get(i["zkey"])
+            o = prev.get(i["zkey"] or i.get("pdf"))  # drop rows have no zkey; they carry by path
             if not o:
                 continue
             for k in ("spine", "spine_src", "subject", "subject_src", "junk_title", "rot"):
@@ -141,8 +143,6 @@ def main():
                 i["title"] = o["title"]  # a PS-repaired boilerplate title
             carried += 1
         print(f"carried sweep fields for {carried} items from the previous inventory")
-    drops = drop_scan(cat_by_title, str(datetime.date.today()))
-    items += drops
     # rot notes live in _meta/rot.json (9/16) so they survive every regeneration of this file
     rp = os.path.join(META, "rot.json")
     if os.path.exists(rp):

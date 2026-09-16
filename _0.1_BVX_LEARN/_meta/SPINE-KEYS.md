@@ -45,7 +45,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0089 | CRE | Dramatica, A New Theory of Story | Phillips, Huntley | 1993 | rule | ✅ |
 | BVX.0089 | CRE | Dramatica, A New Theory of Story | Phillips, Huntley | 1993 | rule | ✅ |
 | BVX.0173 | CRE | Story Machines: How Computers Have Become Creative Writers | Sharples, Pérez Y Pérez | 2022 | toc |  |
-| BVX.1123 | CRE | The Art of Dramatic Writing: Its Basis in the Creative Interpretation of | Lajos Egri | 1946 | manual |  |
+| BVX.1123 | CRE | The Art of Dramatic Writing: Its Basis in the Creative Interpretation of | Lajos Egri | 1946 | manual | ✅ |
 | NEW | CRE | The Practice of Rhetoric |  |  | toc |  |
 | BVX.0311 | FIT | Evidence-Based Guidelines to Manage Cognitive Load | Clark, Nguyen, Sweller |  | rule |  |
 | BVX.0545 | GAM | Time and Temporality in the Mass Effect Series: A Narratological Approac | Zakowski | 2014 | rule |  |
@@ -56,7 +56,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0584 | LIT | Handbook of narratology | Hühn | 2014 | rule |  |
 | BVX.0594 | LIT | Narrative, Perception, and the Embodied Mind: Towards a Neuro-narratolog | Farmasi | 2022 | rule |  |
 | BVX.0596 | LIT | Narratology in Practice | Bal |  | rule | ✅ |
-| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual |  |
+| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual | ✅ |
 | BVX.0602 | LIT | Routledge companion to semiotics and linguistics | Cobley | 2001 | rule |  |
 | BVX.0603 | LIT | Routledge Philosophy Guidebook to Aristotle and the Poetics |  | 2015 | rule |  |
 | BVX.0822 | PHI | Mythology: the voyage of the hero | Leeming | 1998 | rule |  |
@@ -147,7 +147,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0144 | CRE | Once Upon a Pixel: Storytelling and Worldbuilding in Video Games | Paterson, Williams, Cordne |  | rule |  |
 | BVX.0151 | CRE | Pixar Storytelling Rules for Effectiv... |  |  | rule |  |
 | BVX.0153 | CRE | Plot and Structure | Bell |  | rule |  |
-| BVX.1125 | CRE | Save the Cat! Writes a Novel | Jessica Brody | 2018 | manual |  |
+| BVX.1125 | CRE | Save the Cat! Writes a Novel | Jessica Brody | 2018 | manual | ✅ |
 | BVX.0168 | CRE | Shakespeare's Storytelling: An Introduction to Genre, Character, and Tec | Eastman | 2021 | rule |  |
 | BVX.0175 | CRE | Story: Substance, Structure, Style and the Principles of Screenwriting | McKee |  | rule | ✅ |
 | BVX.0176 | CRE | Storytelling for Film and Television: From First Word to Last Frame | Dancyger | 2019 | rule |  |
@@ -155,7 +155,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0205 | CRE | The conflict thesaurus: a writer's guide to obstacles, adversaries, and  | Ackerman, Puglisi | 2021 | rule |  |
 | BVX.0228 | CRE | The Process of Screenwriting | Clive Frayne | 2019 | rule |  |
 | BVX.0240 | CRE | The TV Showrunner's Roadmap | Landau |  | toc |  |
-| BVX.1124 | CRE | The Writer's Journey: Mythic Structure for Writers | Christopher Vogler | 2007 | manual |  |
+| BVX.1124 | CRE | The Writer's Journey: Mythic Structure for Writers | Christopher Vogler | 2007 | manual | ✅ |
 | BVX.0224 | CRE | Theory, Development, and Strategy in Transmedia Storytelling | Gambarato, Alzamora, Tárci | 2020 | rule |  |
 | BVX.0249 | CRE | Three Story Method: Foundations of Fiction |  |  | toc |  |
 | BVX.0254 | CRE | Virtual vixens: 3D character modeling and scene placement | Koenigsmarck | 2007 | rule |  |
@@ -220,7 +220,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0550 | GAM | Writing for Games: Theory and Practice | Nicklin | 2022 | toc |  |
 | BVX.0554 | LIT | Affective narratology: the emotional structure of stories | Hogan | 2011 | rule |  |
 | BVX.0597 | LIT | Plots of war: modern narratives of conflict | Gil, Martins | 2012 | rule |  |
-| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual |  |
+| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual | ✅ |
 | BVX.0662 | MIL | How to Write a Series : A Guide to Series Types and Structure Plus Troub | Rosett |  | rule |  |
 | BVX.0860 | POL | Youth cultures: scenes, subcultures and tribes | Hodkinson, Deicke | 2007 | rule |  |
 | BVX.0897 | PRF | Three uses of the knife: on the nature and purpose of drama | Mamet | 2013 | toc |  |
@@ -294,9 +294,9 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0131 | CRE | Just write: creating unforgettable fiction and a rewarding writing life | Bell | 2016 | toc |  |
 | BVX.0162 | CRE | RSD Protagonist Enneagram Wrksht |  |  | rule |  |
 | BVX.0168 | CRE | Shakespeare's Storytelling: An Introduction to Genre, Character, and Tec | Eastman | 2021 | rule |  |
-| BVX.1123 | CRE | The Art of Dramatic Writing: Its Basis in the Creative Interpretation of | Lajos Egri | 1946 | manual |  |
+| BVX.1123 | CRE | The Art of Dramatic Writing: Its Basis in the Creative Interpretation of | Lajos Egri | 1946 | manual | ✅ |
 | NEW | CRE | The Psychology of CreativeWriting | Kaufman, Kaufman |  | rule |  |
-| BVX.1124 | CRE | The Writer's Journey: Mythic Structure for Writers | Christopher Vogler | 2007 | manual |  |
+| BVX.1124 | CRE | The Writer's Journey: Mythic Structure for Writers | Christopher Vogler | 2007 | manual | ✅ |
 | BVX.0249 | CRE | Three Story Method: Foundations of Fiction |  |  | toc |  |
 | BVX.0254 | CRE | Virtual vixens: 3D character modeling and scene placement | Koenigsmarck | 2007 | rule |  |
 | BVX.0285 | CRE | Writing Unforgettable Characters: How to Create Story People Who Jump Of | Bell |  | rule |  |
@@ -326,7 +326,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0352 | GAM | THE MEME TEAM | Jackson |  | toc |  |
 | BVX.0352 | GAM | WILD JUSTICE | Jackson |  | toc |  |
 | BVX.0822 | PHI | Mythology: the voyage of the hero | Leeming | 1998 | rule |  |
-| BVX.1127 | PSY | Attached: The New Science of Adult Attachment | Amir Levine, Rachel Heller | 2010 | manual |  |
+| BVX.1127 | PSY | Attached: The New Science of Adult Attachment | Amir Levine, Rachel Heller | 2010 | manual | ✅ |
 | BVX.0946 | SOC | Watch, Share or Create: The Influence of Personality Traits and User Mot | Omar, Dequan | 2020 | rule |  |
 | BVX.1093 | VIS | The little book of Hollywood clichʹes: a compendium of movie clichʹes, s | Ebert | 1995 | rule |  |
 | NEW |  | never-trust-a-hero | Hull |  | rule |  |
@@ -343,7 +343,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0607 | LIT | The American Dream | Bloom, Hobby |  | tag |  |
 | BVX.0612 | LIT | The daemon knows: literary greatness and the American sublime | Bloom | 2015 | tag |  |
 | BVX.0616 | LIT | The Hero With a Thousand Faces | Campbell |  | tag |  |
-| BVX.1123 | CRE | The Art of Dramatic Writing: Its Basis in the Creative Interpretation of | Lajos Egri | 1946 | manual |  |
+| BVX.1123 | CRE | The Art of Dramatic Writing: Its Basis in the Creative Interpretation of | Lajos Egri | 1946 | manual | ✅ |
 | BVX.0274 | CRE | Writing Deep Scenes: Plotting Your Story Through Action, Emotion, and Th | Alderson |  | rule |  |
 | NEW | GAM | GURPS Action 5: Dictionary of Danger | Games |  | toc |  |
 | BVX.0429 | GAM | GURPS Adaptations | Games |  | toc |  |
@@ -354,7 +354,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0465 | GAM | Microscope: a fractal role-playing game of epic histories | Robbins | 2011 | toc |  |
 | NEW | GAM | Storytelling for New Technologies and Platforms: A Writer's Guide to The | Berger | 2022 | rule |  |
 | BVX.0557 | LIT | Allegory: the dynamics of an ancient and medieval technique | Whitman | 1987 | rule |  |
-| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual |  |
+| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual | ✅ |
 | BVX.0657 | MIL | Bring the war home: the white power movement and paramilitary America | Belew | 2018 | rule |  |
 | BVX.0713 | MSX | Bareback Porn, Porous Masculinities, Queer Futures: The Ethics of Becomi | Florêncio | 2020 | rule |  |
 | BVX.0815 | PHI | Collapse: philosophical research and development | Mackay | 2008 | rule |  |
@@ -407,7 +407,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0126 | CRE | Interactive Narratives and Transmedia Storytelling: Creating Immersive S | McErlean | 2018 | rule |  |
 | BVX.0138 | CRE | Master shots: 100 ways to shoot great dialogue scenes. Vol. 2 | Kenworthy | 2011 | rule |  |
 | NEW | CRE | Novel & Short Story Writer's Market 40th Edition: The Most Trusted Guide | Jones | 2021 | rule |  |
-| BVX.1125 | CRE | Save the Cat! Writes a Novel | Jessica Brody | 2018 | manual |  |
+| BVX.1125 | CRE | Save the Cat! Writes a Novel | Jessica Brody | 2018 | manual | ✅ |
 | BVX.0168 | CRE | Shakespeare's Storytelling: An Introduction to Genre, Character, and Tec | Eastman | 2021 | rule |  |
 | BVX.0175 | CRE | Story: Substance, Structure, Style and the Principles of Screenwriting | McKee |  | rule | ✅ |
 | BVX.0174 | CRE | Storynomics: story-driven marketing in the post-advertising world | McKee, Gerace | 2018 | rule |  |
@@ -469,7 +469,7 @@ All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0576 | LIT | Film genre for the screenwriter | Selbo | 2015 | rule | ✅ |
 | BVX.0579 | LIT | Film genre reader IV | Grant | 2012 | rule |  |
 | NEW | LIT | Guide to Literary Agents | Brewer | 2021 | toc |  |
-| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual |  |
+| BVX.1126 | LIT | Poetics (trans. Joe Sachs) | Aristotle | 2006 | manual | ✅ |
 | BVX.0604 | LIT | Shakespeare’s Serial Returns in Complex TV | Wald | 2020 | rule |  |
 | BVX.0629 | LIT | The Routledge companion to experimental literature | Bray, Gibbons, McHale | 2012 | toc |  |
 | BVX.0638 | LIT | The Routledge Companion to Media Fandom | Click, Scott, Click, Scott | 2017 | rule |  |

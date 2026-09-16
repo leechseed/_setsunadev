@@ -22,11 +22,11 @@ status: BOLO 18 · opened 9/16 on Papi's word ("the acquisitions are in the drop
 
 | Asked for | Landed | State |
 |---|---|---|
-| Egri, *The Art of Dramatic Writing* | ✅ the real book (320 p) | **BVX.1123**, distilling; Papi's "Character Bones" = its Book II ch. 1 *The Bone Structure*; the 12-page "Character Bone Structure" PDF is a student slide deck, not Egri |
-| Vogler, *The Writer's Journey* | ✅ 3rd ed. (404 p) | **BVX.1124**, distilling |
-| Brody, *Save the Cat! Writes a Novel* | ✅ (340 p) | **BVX.1125**, distilling (the Zotero record 0164 under this title holds Snyder) |
-| Aristotle, *Poetics* | ✅ Sachs trans. (156 p) **scanned, no text layer** | **BVX.1126**, distilling by visual read; no OCR on the box |
-| Levine & Heller, *Attached* | ✅ (275 p) | **BVX.1127**, distilling |
+| Egri, *The Art of Dramatic Writing* | ✅ the real book (320 p) | **BVX.1123**, distilled; Papi's "Character Bones" = its Book II ch. 1 *The Bone Structure*; the 12-page "Character Bone Structure" PDF is a student slide deck, not Egri |
+| Vogler, *The Writer's Journey* | ✅ 3rd ed. (404 p) | **BVX.1124**, distilled |
+| Brody, *Save the Cat! Writes a Novel* | ✅ (340 p) | **BVX.1125**, distilled (the Zotero record 0164 under this title holds Snyder) |
+| Aristotle, *Poetics* | ✅ Sachs trans., **scanned, no text layer**, the 74-page book twice in one file | **BVX.1126**, distilled by visual read of pp. 1–80 |
+| Levine & Heller, *Attached* | ⚠️ a **Vietnamese translation** (275 p), degraded text layer | **BVX.1127**, distilled from what could be verified; **an English copy is still wanted** |
 | Field, *Screenplay* | ❌ a book-summary app PDF ("Scan to Download", 173 p of summary) | **still a gap** |
 | Booth, *The Rhetoric of Fiction* | ❌ a 34-page spam summary with download links | **still a gap** |
 | Genette, *Narrative Discourse* | ❌ *Paratexts* came instead, already held as BVX.0582 | **still a gap** |
