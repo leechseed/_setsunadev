@@ -1,6 +1,6 @@
 """BOLO status page — build.
 
-Usage:  python _tools/bolostatus/build.py 45 [--v2]   (--v2 = the document layout, template-v2.html, provisional 9/16)
+Usage:  python _tools/bolostatus/build.py 45 [--v1]   (default = the document layout, RULED 9/16 on BOLO 55; --v1 = the old tabbed layout, template-v1.html)
 
 Inputs : _tools/bolostatus/boards/<n>.json   one board per BOLO (the five-paragraph order as data)
          _tools/sitrep/glossary.json          the shared term register (every [[key]] must exist here)
@@ -23,9 +23,9 @@ def main():
     if len(sys.argv) < 2:
         print("usage: build.py <bolo number>"); sys.exit(2)
     n = sys.argv[1]
-    v2 = "--v2" in sys.argv
-    tname = "template-v2.html" if v2 else "template.html"
-    suffix = ".v2" if v2 else ""
+    v1 = "--v1" in sys.argv
+    tname = "template-v1.html" if v1 else "template.html"
+    suffix = ".v1" if v1 else ""
     board = json.loads(load(os.path.join(HERE, "boards", n + ".json")))
     glossary = json.loads(load(GLOSS))
 
