@@ -165,8 +165,9 @@
  "d9": {
   "t": "D-9",
   "k": "item",
-  "d": "Ledger item D-9 on the [[bolo24|BOLO 24]] charter: the [[boresight]] HOLD from 9/3, converted 9/4, carrying no date. Three legal answers under the project flow: clear delivery · re-hold with a date · NO-GO. An undated hold is the [[stall-pattern|stall pattern]].",
-  "w": "_PRIVATE/BOLO-24-charter.md · STATE Blocked #10"
+  "d": "Ledger item D-9 on the [[bolo24|BOLO 24]] charter: the [[boresight]] HOLD from 9/3, converted 9/4, undated for twelve days and named by five boards running. **RULED GO 2026-09-16** (\"rule D9 go\"), staged clear: the no-dependency items deliver, the rest as their gates (D-5 · D-6 · D-7) clear.",
+  "w": "_PRIVATE/BOLO-24-charter.md · STATE Blocked #10",
+  "st": "ruled"
  },
  "bolo24": {
   "t": "BOLO 24",
