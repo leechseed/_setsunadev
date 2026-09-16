@@ -763,5 +763,208 @@
   "d": "The machine-readable block at the end of a character slice: every variable and derived statistic as fields.",
   "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",
   "src": "SSOT 02"
+ },
+ "BVX.0196": {
+  "t": "Corbett (The Art of Character)",
+  "k": "book",
+  "d": "David Corbett's five cornerstones (desire, desire denied, wounds, secrets, contradictions) and the [[tyranny-of-motive|Tyranny of Motive]]: the [[ghost|ghost]] anchors an unresolved failure, a [[revenant|revenant]] forces it into the present, and the choice between them is [[growth-vs-transformation|growth or transformation]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0196.md",
+  "src": "BVX.0196"
+ },
+ "BVX.0061": {
+  "t": "Card (Characters and Viewpoint)",
+  "k": "book",
+  "d": "Orson Scott Card's characterization budget: the MICE quotient sets a story's appetite, [[card-hierarchy|the Hierarchy]] allocates it per character, and elaboration of motive spends it. Viewpoint (person, tense, penetration) is declared the telling, not the person.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0061.md",
+  "src": "BVX.0061"
+ },
+ "BVX.0209": {
+  "t": "Puglisi & Ackerman (The Emotional Wound Thesaurus)",
+  "k": "book",
+  "d": "The wound-to-lie-to-fear-to-shielding chain: an emotional wound seeds [[the-lie|a lie]], the lie manufactures fear, fear builds shielding, and shielding blocks an unmet need until the story forces a choice. Ships as [[wound-card|a fixed eleven-field card]] with a nine-factor [[severity-dial|severity dial]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0209.md",
+  "src": "BVX.0209"
+ },
+ "BVX.0233": {
+  "t": "Pelican (The Science of Writing Characters)",
+  "k": "book",
+  "d": "Kira-Anne Pelican's six-subfield synthesis: a Big Five profile runs an evolutionary motivation, converted from external to internal by a dated life event. Supplies [[interpersonal-circumplex|the interpersonal circumplex]] and the [[dark-triad|Dark]] and Light Triads.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0233.md",
+  "src": "BVX.0233"
+ },
+ "BVX.0045": {
+  "t": "Schmidt (45 Master Characters)",
+  "k": "book",
+  "d": "Victoria Lynn Schmidt's sixteen mythic archetypes, each a [[light-face|light face]] and [[shadow-face|shadow face]] pair, plus two nine-stage growth vectors, [[feminine-journey|the feminine journey]] and [[masculine-journey|the masculine journey]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0045.md",
+  "src": "BVX.0045"
+ },
+ "BVX.0064": {
+  "t": "McKee (Character)",
+  "k": "book",
+  "d": "Robert McKee's cast-design method: [[true-character|true character]] versus characterization versus subconscious, held together by contradiction, cast across concentric rings by weight on [[cast-map|the Cast Map]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0064.md",
+  "src": "BVX.0064"
+ },
+ "BVX.0075": {
+  "t": "Davis (Creating Compelling Characters)",
+  "k": "book",
+  "d": "Rib Davis's nature-plus-nurture build, then the want: a [[super-objective|super-objective]] meets its [[counter-will|counter-will]], and the conflict between the two, forced into choice, reveals rather than develops character.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0075.md",
+  "src": "BVX.0075"
+ },
+ "revenant": {
+  "t": "the revenant",
+  "k": "source-term",
+  "d": "A present character who forces the reckoning the [[ghost|ghost]] left open. Corbett's pairing is a relational mechanism, a pointer to another character, not an attribute of one ([[BVX.0196]]).",
+  "w": "BVX.0196",
+  "src": "BVX.0196"
+ },
+ "tyranny-of-motive": {
+  "t": "the Tyranny of Motive",
+  "k": "source-term",
+  "d": "Corbett's warning, built on McKee's line that explaining a character kills her: no single stated cause should ever be presented as *the* reason for an action ([[BVX.0196]]).",
+  "w": "BVX.0196",
+  "src": "BVX.0196"
+ },
+ "card-hierarchy": {
+  "t": "the Hierarchy",
+  "k": "source-term",
+  "d": "Card's rule that a character's importance is never assigned directly; eight controllable levers (time, choices, focus, frequency, action, sympathy, viewpoint, strangeness) accumulate into walk-on, minor, or major ([[BVX.0061]]).",
+  "w": "BVX.0061",
+  "src": "BVX.0061"
+ },
+ "mice-quotient": {
+  "t": "the MICE quotient",
+  "k": "source-term",
+  "d": "Card's four story-shape factors, milieu, idea, character, event; whichever dominates sets the story's structural shape and its appetite for characterization ([[BVX.0061]]).",
+  "w": "BVX.0061",
+  "src": "BVX.0061"
+ },
+ "wound-card": {
+  "t": "the wound card",
+  "k": "source-term",
+  "d": "Puglisi and Ackerman's fixed eleven-field entry: category, examples, needs compromised, [[the-lie|the lie]], fears, behavioral fallout, traits formed, triggers, and opportunities to overcome ([[BVX.0209]]).",
+  "w": "BVX.0209",
+  "src": "BVX.0209"
+ },
+ "the-lie": {
+  "t": "the lie",
+  "k": "source-term",
+  "d": "A self-blaming false belief reached through flawed logic while a character is vulnerable. Not the wounding event itself, the lie is what a change arc must actually resolve ([[BVX.0209]]).",
+  "w": "BVX.0209",
+  "src": "BVX.0209"
+ },
+ "severity-dial": {
+  "t": "the severity dial",
+  "k": "source-term",
+  "d": "Nine tunable factors, proximity, responsibility, support, recurrence, compounding events among them, that set how debilitating a given wound is, instead of a flat damage count ([[BVX.0209]]).",
+  "w": "BVX.0209",
+  "src": "BVX.0209"
+ },
+ "interpersonal-circumplex": {
+  "t": "the interpersonal circumplex",
+  "k": "source-term",
+  "d": "A two-axis grid, agency (status, dominance, control) crossed with communion (warmth, connectedness), giving a character a plottable, context-dependent social position ([[BVX.0233]]).",
+  "w": "BVX.0233",
+  "src": "BVX.0233"
+ },
+ "dark-triad": {
+  "t": "the Dark Triad",
+  "k": "source-term",
+  "d": "Machiavellianism, narcissism, and subclinical psychopathy, scored against a Light Triad of Kantianism, humanism, and faith in humanity; complex characters carry both, never one pole alone ([[BVX.0233]]).",
+  "w": "BVX.0233",
+  "src": "BVX.0233"
+ },
+ "light-face": {
+  "t": "the light face",
+  "k": "source-term",
+  "d": "An archetype's healthy expression, paired with its own [[shadow-face|shadow face]] and asset list; the same archetype, not a different one, under a met versus a denied fear ([[BVX.0045]]).",
+  "w": "BVX.0045",
+  "src": "BVX.0045"
+ },
+ "shadow-face": {
+  "t": "the shadow face",
+  "k": "source-term",
+  "d": "An archetype curdled by a threatened cared-about thing and a denied fear; carries its own named flaw list, the same archetype as its [[light-face|light face]] under pressure ([[BVX.0045]]).",
+  "w": "BVX.0045",
+  "src": "BVX.0045"
+ },
+ "feminine-journey": {
+  "t": "the feminine journey",
+  "k": "source-term",
+  "d": "Schmidt's nine-stage growth vector, illusion through betrayal, descent, and rebirth, moving a character toward gaining power ([[BVX.0045]]).",
+  "w": "BVX.0045",
+  "src": "BVX.0045"
+ },
+ "masculine-journey": {
+  "t": "the masculine journey",
+  "k": "source-term",
+  "d": "Schmidt's nine-stage growth vector, the call through trials to a death-fork and awaken-or-rebel, moving a character toward surrendering power ([[BVX.0045]]).",
+  "w": "BVX.0045",
+  "src": "BVX.0045"
+ },
+ "growth-vs-transformation": {
+  "t": "growth vs transformation",
+  "k": "source-term",
+  "d": "Corbett's typed distinction for [[l11-destiny|DESTINY]]: growth digs deeper and wins through will, transformation tears down a wall and wins through insight ([[BVX.0196]]).",
+  "w": "BVX.0196",
+  "src": "BVX.0196"
+ },
+ "counter-will": {
+  "t": "counter-will",
+  "k": "source-term",
+  "d": "Boal's internal-conflict engine by way of Davis: a want meets its own opposite, and the forced choice between them is what reveals [[l4-will|WILL]] rather than growing it ([[BVX.0075]]).",
+  "w": "BVX.0075",
+  "src": "BVX.0075"
+ },
+ "super-objective": {
+  "t": "the super-objective",
+  "k": "source-term",
+  "d": "Stanislavski's term, by way of Davis: the single, densest want driving a character's active goal-pursuit, [[l6-drive|DRIVE]]'s fuel source ([[BVX.0075]]).",
+  "w": "BVX.0075",
+  "src": "BVX.0075"
+ },
+ "true-character": {
+  "t": "true character",
+  "k": "source-term",
+  "d": "McKee's middle level of self, the choice made under pressure when it costs something, distinct from characterization (the surface) and the subconscious (the buried) ([[BVX.0064]]).",
+  "w": "BVX.0064",
+  "src": "BVX.0064"
+ },
+ "cast-map": {
+  "t": "the cast map",
+  "k": "source-term",
+  "d": "McKee's concentric-circle allocation: dimensional weight concentrates at the protagonist and thins to nothing at the periphery, a time budget rather than an oversight ([[BVX.0064]]).",
+  "w": "BVX.0064",
+  "src": "BVX.0064"
+ },
+ "stress-threshold": {
+  "t": "Stress Threshold",
+  "k": "command-term",
+  "d": "Derived statistic, `WILL - WOUND`. How much pressure a character absorbs before the [[l5-wound|wound]]'s lie starts speaking louder than resolve.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+  "src": "SSOT 02"
+ },
+ "collapse-risk": {
+  "t": "Collapse Risk",
+  "k": "command-term",
+  "d": "Derived statistic, `(WOUND + SHADOW.shadow_density) / 2`. How close a character sits to behavioral collapse under sustained pressure.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+  "src": "SSOT 02"
+ },
+ "truth-exposure-index": {
+  "t": "Truth Exposure Index",
+  "k": "command-term",
+  "d": "Derived statistic, `SOCIAL + (10 - EROS.shame_index)`. The primary systemic legibility metric: a score above 15 means the character cannot manage their own signal visibility.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+  "src": "SSOT 02"
+ },
+ "expressive-range": {
+  "t": "Expressive Range",
+  "k": "command-term",
+  "d": "Derived statistic, `10 - EROS.armor_index`. What a character can intentionally send, as against Truth Exposure Index, what leaks regardless of intent.",
+  "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+  "src": "SSOT 02"
  }
 }

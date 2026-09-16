@@ -1,22 +1,113 @@
 ---
-
-## type: ssot_03_character_systems category: character_systems version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Establishes the authoritative standard for the 12-Layer Character Database Vertical Slice, including tier structure, numeric variable definitions, derived statistic formulas, and flag trigger conditions." dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]"]
+type: ssot_02_character_systems
+category: character_systems
+version: 2.0.0
+last_updated: 2026-09-16
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
+rung: standard
+dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system"]
+trunk: BLACK
+sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045]
+purpose: "THE CHARACTER SYSTEM, v2.0.0: the 12-Layer Character Database vertical slice, the first top-layer model of the lattice, now written against the character shelf of the library, which holds nine distills across McKee, Davis, Truby, Dramatica, Corbett, Card, Puglisi & Ackerman, Pelican, and Schmidt."
 ---
-# 📐 ssot_03_character_systems_vertical_slice
 
-## Table of Contents
+# 📐 SSOT · THE CHARACTER SYSTEM · the 12-layer vertical slice
 
-1. [Purpose](https://claude.ai/chat/326482ca-6135-4287-8312-9210a3f0f2fd#purpose)
-2. [Core Methodology](https://claude.ai/chat/326482ca-6135-4287-8312-9210a3f0f2fd#core-methodology)
-3. [Implementation](https://claude.ai/chat/326482ca-6135-4287-8312-9210a3f0f2fd#implementation)
-4. [Examples — Victoria Midnight Full Slice](https://claude.ai/chat/326482ca-6135-4287-8312-9210a3f0f2fd#examples--victoria-midnight-full-slice)
-5. [Version History](https://claude.ai/chat/326482ca-6135-4287-8312-9210a3f0f2fd#version-history)
+**What this is:** the 12-Layer Character Database promoted from a numbering scheme to a system, the second top-layer model in the lattice beside 03 (setting) and 04 (plot). Three tiers, twelve layers, seven derived statistics, and a set of flag trigger conditions, all terminating in one machine-readable structured data block. The **vertical slice**, one character walked through all twelve layers, is both the validation instrument (do the numbers produce the character canon already says exists) and the seed record for eventual database ingestion. Written first against a single locked example, Victoria Midnight; now with nine distills of the character shelf underneath it.
 
+**What the character system owns:** who a character *is*. The twelve domain declarations (CORE through FUNCTION), the derived statistics computed from them, the flag states those statistics trip, and the structured data block that makes all of it queryable.
 
+**What it does not own:** structure is Dramatica's ([[BVX.0089]]), the storyform, the four throughlines, the eight archetypes that key L12 FUNCTION are consumed here, not authored here. Events are plot_systems' (04), the turn, the value-in/value-out engine, the twelve P-layers a character's choices fire into. Place is the setting slice's (03), S1 through S12. Viewpoint, person, and tense are the telling, not the person, per Card's explicit exclusion ([[BVX.0061]]): the texture layer, never one of the twelve. The chart feed, the twelve-house astrological mapping onto these same twelve layers, is `ssot_02_character_astrology`'s own document, cited here, not repeated.
 
-## Purpose
+**Root claim:** a character is not a trait list, it is a wound-shaped want revealed under pressure. Every model on the shelf, however it names its parts, converges on this one engine. Davis's want meets its counter-will ([[BVX.0075]]); McKee's true character is the choice made under pressure when it costs something ([[BVX.0064]]); Corbett's ghost anchors the failure the tyranny of motive forbids explaining away ([[BVX.0196]]); the wound thesaurus's wound-lie-fear-shielding chain is the same mechanism given a severity dial and a field list ([[BVX.0209]]); Pelican's Big Five profile runs an evolutionary motivation that a dated event converts from external to internal, revealing the personality underneath rather than replacing it ([[BVX.0233]]). The twelve layers store the person; the derived statistics and flags compute what pressure does to them. WOUND, DRIVE, WILL, and SHADOW acting on CORE, VITAL, and SOCIAL is not one reading of the library among several, it is the one engine the stack already implements.
 
-This document defines the **12-Layer Character Database Vertical Slice** protocol. A **Vertical Slice** is the complete traversal of all 12 layers for a single character, producing numeric values, derived statistics, boolean status flags, and a machine-readable structured data block. The Vertical Slice is the primary validation instrument for the layer system. It confirms that numeric assignments produce outputs that correspond to canonical character documentation. It also functions as the seed record for database ingestion when the system transitions from AI-augmented generation to hard-coded query infrastructure.
+---
+
+## MIND MODELS
+
+**Diagram 1, the whole system on one screen.**
+
+```mermaid
+mindmap
+  root((THE CHARACTER SYSTEM))
+    Three tiers
+      Tier 1 flat
+      Tier 2 standard
+      Tier 3 deep
+    Twelve layers
+      L1 to L3 primary
+      L4 to L6 secondary
+      L7 to L12 deep stacks
+    Computed
+      Derived statistics
+      Flag trigger conditions
+      Structured data block
+    Library
+      nine distills
+      one leaf each
+    Boundaries
+      structure is Dramatica
+      events are plot systems
+      place is the setting slice
+      telling is the texture layer
+```
+
+**Diagram 2, the central mechanism.**
+
+```mermaid
+flowchart TD
+    T1["Tier 1: CORE, VITAL, SOCIAL"] --> DS[Seven derived statistics]
+    T2["Tier 2: WILL, WOUND, DRIVE"] --> DS
+    T3["Tier 3: six deep stacks"] --> DS
+    CORE[L1 CORE] -.derives.-> WILL[L4 WILL]
+    VITAL[L2 VITAL] -.derives.-> DRIVE[L6 DRIVE]
+    HIST[Character history] -->|history, not bought| WOUND[L5 WOUND]
+    WOUND --> DS
+    DS --> FLAGS[Flag trigger conditions]
+    FLAGS --> BLOCK[Structured data block]
+```
+
+**Diagram 3, the recurring engine.**
+
+```mermaid
+stateDiagram-v2
+    [*] --> WantForms
+    WantForms: A want forms, DRIVE fires
+    WantForms --> Obstacle: counter-will blocks the want
+    Obstacle --> PressureRises: climbs past the Stress Threshold
+    PressureRises --> LieSpeaks: the wound's lie surfaces
+    LieSpeaks --> ForcedChoice: face it or shield again
+    ForcedChoice --> Revelation: confronts the lie
+    ForcedChoice --> Collapse: shields, Collapse Risk climbs
+    Revelation --> [*]: true character shown
+    Collapse --> WantForms: recurs one rung up
+```
+
+*The same want, obstacle, pressure, forced-choice cycle recurs at every rung: L5 WOUND sets the lie's content, L4 WILL sets how hard it resists, and Stress Threshold is the number where the choice stops being optional.*
+
+---
+
+## PART A · THE CHARACTER SLICE, twelve layers, the stack the setting and plot slices mirror
+
+One table, twelve layers, the same architecture the SETTING SLICE and the PLOT SLICE mirror: surface to depth to structural function, L12 fed independently from the storyform exactly as S12 and P12 are.
+
+| Layer | Name | Question it answers | Source | Field it writes | Tier |
+|---|---|---|---|---|---|
+| **L1** | **CORE** | How much cognitive and ideological mass does the mind carry? | [[BVX.0075]], [[BVX.0233]] the Big Five | `CORE` | Tier 1 |
+| **L2** | **VITAL** | How much physical and energetic presence does the body carry? | [[BVX.0075]], [[BVX.0233]] the stress-response cascade | `VITAL` | Tier 1 |
+| **L3** | **SOCIAL** | How does the character project into and read the social world? | [[BVX.0233]] the interpersonal circumplex, [[BVX.0061]] reputation | `SOCIAL` | Tier 1 |
+| **L4** | **WILL** | How much resistance to coercion holds, and where does it bend? | [[BVX.0075]] counter-will, [[BVX.0045]] coping strategy | `WILL` | Tier 2 |
+| **L5** | **WOUND** | What accumulated damage failed to resolve, and how severe is it? | [[BVX.0209]] the wound card, [[BVX.0196]] the ghost, [[BVX.0075]] back-story placement | `WOUND` | Tier 2 |
+| **L6** | **DRIVE** | What fuels the active goal-pursuit, and from what source? | [[BVX.0075]] super-objective, [[BVX.0233]] the fifteen motivations, [[BVX.0045]] cares-about/motivates | `DRIVE` | Tier 2 |
+| **L7** | **ORIGIN** | What birth context and formation set the starting conditions? | [[BVX.0075]] birth marks, [[BVX.0061]] justification | `origin_class`, `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level`, `system_exposure` | Tier 3 |
+| **L8** | **IMPRINT** | What formative conditioning locked in before the story began? | [[BVX.0075]], [[BVX.0233]] life-stage emotional concerns | `attachment_style`, `attachment_style_score`, `emotional_range`, `conditional_patterns`, `imprint_flexibility`, `primary_attachment_object` | Tier 3 |
+| **L9** | **EROS** | How is desire structured, armored, and made safe? | [[BVX.0075]] sexuality as attitude, and the L9 v2 doc, [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md) | `erotic_blueprint_type`, `desire_vector`, `shame_index`, `armor_index`, `satisfaction_cycle_truncation`, `erotic_safety_precondition`, `intimacy_mode` | Tier 3 |
+| **L10** | **SHADOW** | What is repressed, projected, or denied, and what does it generate? | [[BVX.0064]] true character vs characterization, [[BVX.0196]] secrets and the adaptation hierarchy, [[BVX.0045]] the shadow face, [[BVX.0233]] the Dark Triad | `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content` | Tier 3 |
+| **L11** | **DESTINY** | What is the character building toward, not where they stand? | [[BVX.0045]] the two journeys, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement` | Tier 3 |
+| **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | [[BVX.0089]] the eight archetypes, [[BVX.0061]] the hierarchy, [[BVX.0064]] the cast map | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `narrative_invariant`, `story_outcome`, `story_judgement`, `limit_type`, `resolve` | Tier 3 |
+
+**Binding rule (mirror of the plot and setting bindings):** L12 FUNCTION is fed independently from the storyform, keyed by `storyform_id`, exactly as P12 FUNCTION and S12 FUNCTION are. A character with no storyform link may run L1 through L11 only; L12 filled is what makes a character load-bearing to the argument, not merely present.
 
 ---
 
@@ -137,7 +228,22 @@ Produce the structured data block in the format defined in the Examples section.
 
 ---
 
-## Examples — Victoria Midnight Full Slice
+## THE INSTANCE · Victoria Midnight, the full slice
+
+| Layer | Victoria Midnight |
+|---|---|
+| **L1** | CORE 13, merit earns freedom, a sound architecture on a wrong premise |
+| **L2** | VITAL 14, motion under pressure, never ornamental |
+| **L3** | SOCIAL 10, accurate in a world that cannot process accuracy |
+| **L4** | WILL 14 (CORE+1), resolve is change, bends only at maximum pressure |
+| **L5** | WOUND 8/10, the pace-notes, the choice not to listen that killed him |
+| **L6** | DRIVE 12 (VITAL-2), meaning-driven, the tank is dented not destroyed |
+| **L7** | ORIGIN working_criminal_adjacent, the salvage economy before system awareness |
+| **L8** | IMPRINT secure_anxious, brother as navigator, attachment lost pre-story |
+| **L9** | EROS kinesthetic, low shame, high armor, control as the safety precondition |
+| **L10** | SHADOW density 7, the choice not the grief, control escalation under stress |
+| **L11** | DESTINY inequity axis, resistance 8, certainty toward accepted asymmetry |
+| **L12** | FUNCTION Protagonist, mc_problem Equity, Optionlock, resolves via Change |
 
 **IP:** OVEREXITOUT (The Outliers) **Character Status:** Canonical / Locked **Slice Version:** 1.0.0
 
@@ -426,9 +532,56 @@ FLAGS:
 
 ---
 
-## Version History
+## CHARACTER × LIBRARY
+
+`feeds:` for this limb, the nine distills read in full for this document:
+
+| ID | Book | Feeds hardest | What it gives the stack |
+|---|---|---|---|
+| [[BVX.0064]] | McKee, *Character* | L12 FUNCTION, L10 SHADOW | the cast map's concentric-circle characterization budget and the true character / characterization / subconscious split |
+| [[BVX.0075]] | Davis, *Creating Compelling Characters* | L6 DRIVE, L4 WILL | the super-objective and counter-will, the want-versus-opposition engine |
+| [[BVX.0193]] | Truby, *The Anatomy of Story* | L4 WILL, L5 WOUND | the 22 steps as a WILL-layer plan/battle/reveal sequence, and the ghost as WOUND's structural name |
+| [[BVX.0089]] | Dramatica | L12 FUNCTION | the eight archetypes and the storyform binding that keys L12 independently, exactly as P12 and S12 are keyed |
+| [[BVX.0196]] | Corbett, *The Art of Character* | L10 SHADOW, L5 WOUND | the adaptation hierarchy, the ghost/revenant pairing, and the tyranny of motive as a cross-cutting narration rule |
+| [[BVX.0061]] | Card, *Characters and Viewpoint* | L12 FUNCTION, L6 DRIVE | the hierarchy's characterization budget, elaboration of motive, and viewpoint declared out of scope |
+| [[BVX.0209]] | Puglisi & Ackerman, *The Emotional Wound Thesaurus* | L5 WOUND, L6 DRIVE | the wound-lie-fear-shielding chain and a nine-factor severity dial for WOUND's 0–10 scale |
+| [[BVX.0233]] | Pelican, *The Science of Writing Characters* | L6 DRIVE, L1 CORE, L3 SOCIAL | the fifteen evolutionary motivations, the Big Five as CORE's substrate, and the interpersonal circumplex |
+| [[BVX.0045]] | Schmidt, *45 Master Characters* | L10 SHADOW, L11 DESTINY | the light face / shadow face pairing and the two nine-stage soul-evolution journeys |
+
+The L5 shelf holds 82 items keyed 9/16 (BOLO 18), nine distilled to date, this document's nine sources. The next wave's top candidates: BVX.0202 (Corbett, *The Compass of Character*), BVX.0271 (Weiland, *Archetypal Arcs*), BVX.0135 (Jorstad, *Character Arcs*), BVX.0207 (Dunne, *Dramatic Writer's Companion*), BVX.0229 (Smith, *Psychology Workbook*).
+
+---
+
+## OPEN
+
+Numbered calls surfaced by the five new distills' own "For the character system" sections. None are ruled; most are sub-fields to add at the next schema bump, not now.
+
+1. **Ghost and revenant cross-links on L5.** [[BVX.0196]]'s ghost and revenant are pointers to other characters, not attributes of one, and WOUND and DRIVE currently resolve against them with no named field. *Recommendation:* add `ghost_ref` and `revenant_ref` as relational sub-fields on L5 at the next bump, not now.
+
+2. **A typed arc field on L11.** Corbett's growth vs transformation ([[BVX.0196]]) and Card's four causes of change ([[BVX.0061]]) both force a choice DESTINY currently leaves implicit. *Recommendation:* add `arc_type` and `change_cause` as L11 sub-fields at the next bump.
+
+3. **The tyranny of motive as a narration rule, not schema.** [[BVX.0196]] names a cross-cutting authoring constraint: no single layer's value should read as *the* stated cause of an action. *Recommendation:* adopt as a house writing rule for narrating character queries, not a new field on any layer.
+
+4. **The hierarchy as an allocation rule over all twelve layers.** Card's hierarchy ([[BVX.0061]]) and McKee's cast map ([[BVX.0064]]) both say characterization effort should track narrative rank; tier depth already encodes this loosely. *Recommendation:* state the rule explicitly in Core Methodology at the next bump, no new field needed.
+
+5. **Viewpoint declared out of scope, the texture layer's.** Card ([[BVX.0061]]) shows person, tense, and penetration map onto none of the twelve layers. *Recommendation:* the exclusion is now stated above in "What it does not own"; no further schema action.
+
+6. **The wound card as L5's field list, plus a severity dial.** [[BVX.0209]]'s eleven-field entry and severity dial are close to a drop-in for L5, alongside a trigger list and a reveal strategy the schema doesn't currently name. *Recommendation:* adopt the severity dial and trigger list as L5 sub-fields at the next bump.
+
+7. **The villain-arc fork, why an L5-to-L8 pipeline stalls.** [[BVX.0209]] names a fork, self-blame, a failed prior healing attempt, preference for the dysfunction, that L12 FUNCTION records the outcome of but never the mechanism of. *Recommendation:* hold for now, revisit once a second antagonist instance is carded.
+
+8. **The interpersonal circumplex and the Dark/Light Triad as dials.** [[BVX.0233]] offers two continuous SOCIAL dials and six scored SHADOW inventories; the fifteen motivations sit beside Maslow under DRIVE. *Recommendation:* concrete enough to pilot on one character at the next bump, not retrofitted onto Victoria now.
+
+9. **The audience trust ledger as a stack-external reader model.** Pelican's moral-emotion bookkeeping ([[BVX.0233]]) tracks the audience's judgement, not the character's own interface. *Recommendation:* hold outside the twelve layers entirely, a future reader-model document.
+
+10. **Growth-pairing and a coping-strategy field.** [[BVX.0045]]'s growth-pairing (a catalyst archetype) and five coping strategies suggest sub-fields under L11 and L4/L8. *Recommendation:* candidate `catalyst_archetype` (L11) and `coping_strategy` (L4 or L8) at the next bump.
+
+11. **Attachment theory absent from the shelf.** L8 IMPRINT already claims attachment architecture, but [[BVX.0233]] notes the shelf has never distilled attachment theory itself, staying at the need-to-belong level. *Recommendation:* an acquisition target for the next wave, or a pull from the PSY shelf, not a schema change.
+
+## Version history
 
 |Version|Date|Changes|
 |:--|:--|:--|
 |1.0.0|2026-02-17|Initial vertical slice protocol with Victoria Midnight as canonical example.|
 |1.1.0|2026-08-24|STATE #3 executed: L9 v2 propagation (`armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition`; L9 AUTHORED via victoria-midnight-L9-eros). Expressive Range derived stat added. L12 rename `motivation_element` → `mc_problem_element` (STATE #4 ruling); `motivation_quad` → L12_DRAMATICA_EXTENDED. TRUTH_VULNERABILITY trigger updated.|
+|2.0.0|2026-09-16|BOLO 18 character wave: proper YAML frontmatter (was a malformed single-line block); intro block (What this is / owns / does not own / Root claim); MIND MODELS (three diagrams); PART A slice table (twelve layers, Question/Source/Field/Tier columns) sourced against five new distills (Corbett, Card, Puglisi & Ackerman, Pelican, Schmidt) plus the four already in the library (McKee, Davis, Truby, Dramatica); THE INSTANCE gained a Victoria Midnight summary table ahead of the existing full slice; CHARACTER × LIBRARY table and shelf note; eleven OPEN calls. Schema, formulas, and every value in the Victoria Midnight instance are unchanged.|

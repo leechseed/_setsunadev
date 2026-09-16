@@ -6,7 +6,7 @@
   "issued": "2026-08-26",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "Stage 1 done 8/26; the 9/16 break-break reopened stage 2 as the gate on all story-side work, and the same session keyed all 1,031 Zotero items, wrote ten v4 distills, ruled plot systems v0.1.1, and published three TM pages, with the character, texture and genre waves still open.",
+  "status": "Stage 1 done 8/26; stage 2 reopened 9/16 as the gate on story-side work. 9/16 late: the character wave landed (five L5 distills, fifteen v4 distills total), the character doc rewritten to v2.0.0 with a slice table and mind models, the setting doc given mind models, TM 02 and TM 03 republished with diagrams, the index duplicate collapsed. The texture and genre waves remain.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "story-side work across the Command (BOLO 24's own slice stays free of the gate); the new SSOT docs (plot_systems v0.1.1 done, setting and character owed); the TM pages (04 plot, 03 setting, 02 character)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,14 +46,15 @@
  ],
  "frago": {
   "mission": "Key every source to the story spine and distill the shelves into the plot, setting and character models, **in order to** build the top layer of what a story is from the thousand books already owned.",
-  "order": "**The character wave: Truby's character web and Dramatica's archetypes are distilled; open the 82-item L5 shelf, distill its top five on v4, then rewrite the character document with a slice table and mind models so TM 02 lights up.**",
-  "default": "Silence: the shelves stand as keyed; the ten distills and the plot system stand; TM 03 and TM 02 stay without diagrams; the acquisition queue waits; BOLO 24 stays parked behind the gate.",
+  "order": "**The texture wave: open the 105-item TEXTURE shelf, distill its top five on v4, then write a texture system v0.1 in 01_NARRATIVE_FRAMEWORKS beside the texture layer doc, and build TM 05 for it. The character doc's eleven OPEN calls wait for Papi; the acquisitions wait for Papi.**",
+  "default": "Silence: the fifteen distills, the plot system, the character doc v2.0.0 and the setting doc 1.1.0 stand; TM 02, 03, 04 stay as published; the character doc's OPEN calls stay open; the acquisition queue waits; BOLO 24 stays parked behind the gate.",
   "calls": [
    {
     "q": "The character wave",
     "options": "open now, top five of the L5 shelf on v4 (rec) · a different size · after texture",
     "default": "open now, five",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "Done 9/16 late on the default: Corbett 0196 · Card 0061 · Puglisi & Ackerman 0209 · Pelican 0233 · Schmidt 0045, all through RANGE; the character doc rewritten to v2.0.0 (slice table, three mind models, CHARACTER × LIBRARY, eleven OPEN calls); TM 02 republished with the rail lit."
    },
    {
     "q": "The texture wave and its model",
@@ -65,7 +66,8 @@
     "q": "The doc upgrades",
     "options": "mind models + a slice table on the character doc, mind models on the setting doc, on an MS each (rec) · by hand · park",
     "default": "on an MS each, with the character wave",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "Done 9/16 late on the default: mind models on the setting doc (1.1.0, three diagrams, TM 03 republished); mind models plus the slice table on the character doc (2.0.0, TM 02 republished)."
    },
    {
     "q": "The acquisitions",
@@ -77,6 +79,13 @@
     "q": "The index duplicate",
     "options": "collapse BVX.0541 into 0458 (rec) · keep both",
     "default": "collapse",
+    "s": "ruled",
+    "ruling": "Collapsed 9/16 late on the default: BVX.0541 marked as a duplicate of BVX.0458 in the index and the catalog; the id retired, not deleted."
+   },
+   {
+    "q": "The character doc's OPEN calls",
+    "options": "eleven candidates from the five distills (ghost/revenant cross-links · a typed arc field · the tyranny of motive as a narration rule · the hierarchy as an allocation rule · viewpoint out of scope · the wound card as L5's field list · the villain-arc fork · the circumplex and the Triads as sub-dials · the audience trust ledger · growth-pairing and coping strategy · attachment theory missing from the shelf) — rule them as a block at the next schema bump (rec) · one by one · park",
+    "default": "as a block at the next schema bump; nothing changes in the schema until then",
     "s": "open"
    }
   ]
@@ -91,7 +100,7 @@
     "last": "Stage 1, the Command-corpus sweep, was banked 8/26; stage 2, the library sweep, sat unfinished until the 9/16 break-break made it a gate.",
     "plan": "Finish stage 2 to the end: keyed shelves, then distills, then written models, then technical-manual pages, then this status sheet.",
     "you": "Papi ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
-    "next": "The character, texture and genre waves are what remain before the gate can be called closed."
+    "next": "The texture wave (105 items, no model doc yet) and the genre wave (174) are what remain before the gate can be called closed; the character doc's eleven OPEN calls wait for Papi."
    },
    "groups": [
     {
@@ -202,7 +211,7 @@
     "last": "Ten done phases landed in the 9/16 session, from the boresight through the TM pages.",
     "plan": "This sheet closes the session's owed item; the character, texture and genre waves come next, then the doc upgrades and the acquisitions.",
     "you": "Papi ruled the boresight, the plot system and the TM build; the scripted steps ran on Claude's side.",
-    "next": "The character wave: 82 items, with Davis and McKee's *Character* already distilled."
+    "next": "The texture wave: 105 items, no model doc yet; then the genre wave (174)."
    },
    "main_effort": "The character wave, then the character document rewrite so TM 02 carries its slice.",
    "phases": [
@@ -268,14 +277,15 @@
     },
     {
      "n": 11,
-     "t": "**DOPE SHEET 18 (this sheet):** the status page owed once the plot system and TM pages shipped.",
-     "s": "open",
+     "t": "**DOPE SHEET 18 (this sheet):** built and published 9/16; FRAGO'd the same night with the character wave.",
+     "s": "done",
      "when": "9/16"
     },
     {
      "n": 12,
-     "t": "**The character wave:** 82 items on the L5 shelf; Davis and McKee's *Character* already distilled, Truby's web and Dramatica's archetypes still to fold in.",
-     "s": "open"
+     "t": "**The character wave:** five L5 distills through RANGE (Corbett 0196 · Card 0061 · Puglisi & Ackerman 0209 · Pelican 0233 · Schmidt 0045), then the character doc rewritten to v2.0.0 (slice table, three mind models, CHARACTER × LIBRARY, eleven OPEN calls; schema and the Victoria instance unchanged) and TM 02 republished with the rail lit. Fifteen v4 distills now; 73 of the shelf's 82 remain.",
+     "s": "done",
+     "when": "9/16"
     },
     {
      "n": 13,
@@ -289,8 +299,9 @@
     },
     {
      "n": 15,
-     "t": "**The doc upgrades:** mind models owed on the setting and character SSOT docs; a PART A slice table owed on the character doc; BVX.0541 (a duplicate of Kobold Guide 0458) owed a collapse.",
-     "s": "open"
+     "t": "**The doc upgrades:** mind models on the setting doc (1.1.0, TM 03 republished) and on the character doc (2.0.0, with the PART A slice table); BVX.0541 collapsed into 0458.",
+     "s": "done",
+     "when": "9/16"
     },
     {
      "n": 16,
@@ -397,6 +408,41 @@
      "path": "_tools/tm/",
      "what": "the Technical Manual page builder — build.py, template.html, terms.json (116 terms), systems.json — used to publish TM 04, TM 03, TM 02",
      "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0196.md",
+     "what": "Corbett, The Art of Character (3 diagrams; the ghost and revenant)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0061.md",
+     "what": "Card, Characters and Viewpoint (4 diagrams; the hierarchy, the MICE quotient; rot: the PDF is the 1988 text)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0209.md",
+     "what": "Puglisi & Ackerman, The Emotional Wound Thesaurus (4 diagrams; the wound card, L5's direct source)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0233.md",
+     "what": "Pelican, The Science of Writing Characters (4 diagrams; Big Five, the circumplex, the Triads)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0045.md",
+     "what": "Schmidt, 45 Master Characters (4 diagrams; light and shadow faces, the two journeys)",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+     "what": "the character system v2.0.0: slice table, mind models, CHARACTER × LIBRARY, OPEN; schema unchanged",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "what": "the setting system 1.1.0: MIND MODELS added, sources declared",
+     "s": "done"
     }
    ],
    "cost": [
@@ -419,7 +465,7 @@
     "last": "Every wave tonight ran on the formation: scripts at both ends, specialists in the middle, one reviewer.",
     "plan": "Same shape for every remaining shelf; one wave per shelf, on your word each time.",
     "you": "You open each wave and rule each model's calls; nothing distills without the word.",
-    "next": "\"Character wave go\" opens the next shelf."
+    "next": "\"Texture wave go\" opens the next shelf; the character doc's eleven OPEN calls wait for a ruling as a block."
    },
    "groups": [
     {
@@ -557,6 +603,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "TM built: `_tools/tm/`, three pages published — TM 04 plot, TM 03 setting, TM 02 character — the CK3 hover layer standing as a blocking gate on every page from here. DOPE SHEET 18 noted as owed."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Okay, let's work on Bolo 18.\" The order on the sheet ran: the character wave."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Five MS distills in parallel (Corbett · Card · Puglisi & Ackerman · Pelican · Schmidt), one MS on the setting doc's mind models, then one MS on the character doc rewrite at the fan-in; RANGE at every seat. Fifteen v4 distills now. TM 02 and TM 03 republished. Call 5 (the duplicate) collapsed on its default. Gear 2 for the wave, as on wave 1."
     }
    ]
   }
