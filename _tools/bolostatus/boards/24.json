@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "D-9 GO and D-6 YES, both 9/16 · the design set open: all three no-dependency items on disk (benchmark read · Blender pipeline COA · reference-pull spec) · the character sheet waits on D-7 alone; the gates table on D-5",
+  "status": "D-9 GO · D-6 YES · D-7 RULED, all 9/16 · the design set open (benchmark read · Blender COA · reference-pull spec on disk) · **the character sheet is unlocked** · the gates table still waits on D-5",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,8 +50,8 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Two numbers left behind the design set: D-5 the nut and runway · D-7 the loss and its year.** D-7 alone gates the character sheet now.",
-  "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the character sheet and the gates table stay gated on D-7 and D-5; D-8 and D-11 run on their recommendations.",
+  "order": "**Build the character sheet.** D-7 is ruled (mother · 2020 · overdose · she is 15); the sheet has both halves. D-5 the nut and runway is the one number left behind the design set.",
+  "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the character sheet builds on the ruled spine; the gates table stays gated on D-5; D-8 and D-11 run on their recommendations.",
   "calls": [
    {
     "q": "D-9 · the clear",
@@ -77,7 +77,8 @@
     "q": "D-7 · the loss",
     "options": "who, and the year; cause matters more than year for the spine",
     "default": "none; yours",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-16, Papi: \"D7 go.\" The recommendation as written: mother is the loss · 2020 · overdose · she is 15. Dad alive, the eviction at 18 in 2023. Anniversary month stays open as a content-calendar lever; the death date is a transit pick once the natal chart is fixed. Unlocks the second half of the character sheet."
    },
    {
     "q": "D-8 · the reference method",
@@ -209,8 +210,8 @@
    "strand": {
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
-    "you": "You ruled D-9 GO and D-6 YES in the same session. Two of three no-dependency items are on disk.",
-    "next": "D-7 unlocks the character sheet. D-5 unlocks the gates table. The reference-pull spec lands on its own."
+    "you": "You ruled D-9 GO, D-6 YES and D-7 in one day. All three no-dependency items are on disk.",
+    "next": "The character sheet builds on your word. D-5 unlocks the gates table."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -228,7 +229,7 @@
     },
     {
      "n": 2,
-     "t": "**The design set** — the three no-dependency items landed 9/16: the benchmark read · the Blender pipeline COA (COA A recommended) · the reference-pull spec (five seats, three filled). Left: the character sheet (needs D-7) · the gates table with the nut (needs D-5) · attainability stated.",
+     "t": "**The design set** — the three no-dependency items landed 9/16 (benchmark read · Blender COA · reference-pull spec). D-6 and D-7 both ruled 9/16: **the character sheet builds now** (12-layer lite · TCVM · sex menu · Fantasy Drive · chart-first birth date · the death date · the dropout · the eviction). The gates table waits on D-5.",
      "s": "open",
      "when": "unlocked 9/16"
     },
@@ -348,7 +349,7 @@
     "last": "The flow says an undated hold is illegal; the sit rep has said so three times.",
     "plan": "One decider, three legal answers.",
     "you": "You are the gate and the only one who can open it.",
-    "next": "Say GO, a date, or NO-GO."
+    "next": "D-5: the nut as a range, liquid ÷ nut, the backstop as its own line."
    },
    "groups": [
     {
@@ -446,6 +447,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "FRAGO 24 v0.4: the reference-pull spec landed (SPEC on sonnet); its seat-1 question closed by D-6; all three no-dependency deliverables of the staged clear are on disk the same session D-9 was ruled."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"D7 go\" — the loss ruled as recommended: mother · 2020 · overdose · she is 15."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "D-7 written to the charter ledger (D-7, A-007), the studio-launch doc, STATE, BOLO row 24; sheet FRAGO'd v0.4 → v0.5. Character sheet unlocked."
     }
    ]
   }
