@@ -5,8 +5,8 @@
   "trunk": "BLACK/ORANGE/OPERATOR",
   "issued": "2026-09-11",
   "asof": "2026-09-15",
-  "s": "open",
-  "status": "ALL SIX PHASES DONE 9/15. The ladder ruled (NASA four) · 23 documents stamped, 3 born stamped · three world bodies seeded, their S12 lines kept · the network as a flat index in the ladder file. The campaign rests on its gaps.",
+  "s": "done",
+  "status": "ALL SIX PHASES DONE 9/15 · no open calls. The campaign rests; gaps fill as the work that earns them happens. Reopen by naming a gap.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · the project flow · the design system · the story systems (DCUS · Trash Land · ASTRO7EX as in-world standards bodies) · BVX-LEARN",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
   "card": "none",
-  "version": "v0.6 · DOPE SHEET"
+  "version": "v0.7 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,8 +54,8 @@
  ],
  "frago": {
   "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
-  "order": "**Nothing owed from you tonight.** The next increments are the gaps the index shows: BLACK and DARKROOM have no governing document on any rung; twelve documents have no outside parent; Trash Land and ASTRO7EX still carry working titles for their bodies. Each fills when the work that earns it happens, never ahead of it (the mantra's third line). The browsable page opens when the count earns it.",
-  "default": "Silence: the ladder and the index stand; every new document carries the rung tag from birth and lands in the index at its next revision; the two reading picks and the moon question wait for a scene.",
+  "order": "**Rest.** No action owed. Naming a gap (BLACK · DARKROOM · the two body names · the twelve orphans) reopens this sheet with a FRAGO; the browsable page opens when the count earns it.",
+  "default": "Silence: the ladder, the index, and the three world bodies stand as canon; every new document is born with its rung tag and lands in the index at its next revision.",
   "calls": [
    {
     "q": "The house tiers",
@@ -108,7 +108,8 @@
     "q": "The next gap to fill",
     "options": "a governing procedure for BLACK · a governing procedure for DARKROOM (the taxonomy engine; the register already maps ISO/IEC 42001 to it) · proper names for the Trash Land and ASTRO7EX bodies · outside parents for the twelve orphans · leave all six resting",
     "default": "resting; the first gap fills when its work happens",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/15, Papi: \"let's close that open call.\" Closed on the default: resting, no gap pre-selected. The mantra's third line governs: never write a standard ahead of the work. A gap fills when its work happens, and naming one reopens the sheet."
    }
   ]
  },
@@ -213,7 +214,7 @@
     "last": "Phase 1 landed in minutes.",
     "plan": "Pull, read, rule the ladder, file what exists, then derive.",
     "you": "You said go 6 in the same breath as the rest; every phase ran the same night.",
-    "next": "Rest. The gaps fill as the work happens."
+    "next": "None. The sheet is at rest."
    },
    "main_effort": "The register, read. Everything else waits on it.",
    "phases": [
@@ -334,8 +335,8 @@
    "strand": {
     "last": "Opened on a break-break.",
     "plan": "One decider.",
-    "you": "The ladder, the filing, the name.",
-    "next": "Only the next-gap call is open, and it has no clock."
+    "you": "Every call on this sheet is ruled.",
+    "next": "Nothing. Say a gap's name to reopen."
    },
    "groups": [
     {
@@ -438,6 +439,16 @@
      "when": "9/15",
      "who": "Claude",
      "t": "Phase 6: sources gathered by script (26 documents), NET (sonnet) wrote the flat index, check_network.py at the fan-in (26 of 26 rows, 0 blocking), index spliced into the ladder file v0.2.0. FRAGO 50 v0.6. All six phases done."
+    },
+    {
+     "when": "9/15",
+     "who": "Papi",
+     "t": "\"Okay, let's close that open call.\""
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "Closed on the default, resting. Zero open calls on DOPE SHEET 50. FRAGO 50 v0.7."
     }
    ]
   }
