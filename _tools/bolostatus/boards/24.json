@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "D-9 GO · D-6 YES · D-7 RULED · character sheet v0.2 (name + chart ruled) · **Season 1 beat sheet + shoot list on disk (8 sets / 38 stills)** · the gates table waits on D-5",
+  "status": "D-9 GO · D-6 YES · D-7 RULED · **D-5 RULED provisional (first-dollar-first)** · character sheet v0.2 · Season 1 beat sheet + shoot list (8 sets / 38 stills) · **the gates table on disk** · four calls left",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.9 · DOPE SHEET"
+  "version": "v0.10 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,8 +50,8 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Rule the beat sheet's six calls by number and the death month; then D-5.** With the shoot list on disk, Gate 3 (the vertical slice: one set at target quality) is the next build.",
-  "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the character sheet builds on the ruled spine; the gates table stays gated on D-5; D-8 and D-11 run on their recommendations.",
+  "order": "**Gate 3 is the build: the vertical slice — set 4 of the shoot list as the skin test, one week of posting to the grammar on a test account, AAR.** Write the number in the gates table §1 when you have it; the branch moves with it. The four sheet calls (launch month · library · split · Gate 3 skin test) run on their recommendations.",
+  "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the gates table runs on the first-dollar-first branch until the number lands; D-8 and D-11 run on their recommendations.",
   "calls": [
    {
     "q": "D-9 · the clear",
@@ -64,7 +64,8 @@
     "q": "D-5 · the nut and the runway",
     "options": "your number: months of runway without income. Nine to twelve → run as briefed; four to eight → first-dollar-first plus a part-time search; under four → compress or park",
     "default": "none; only you have it",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-16, Papi: \"D5 go.\" Provisional. The structure as asked: the nut as a range, runway = liquid ÷ nut, the backstop its own line; the number itself is Papi's and goes in the gates table §1. Read off the record (unemployed 9/3, $0 base, backstop), runway is treated as under four months → first-dollar-first: the slice sells at Gate 3, the launch library compresses to twenty plus sixty days, the income search runs in parallel. The number is the one thing that moves the branch."
    },
    {
     "q": "D-6 · the disclosed-persona frame",
@@ -210,8 +211,8 @@
    "strand": {
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
-    "you": "You ruled D-9, D-6, D-7, the name and the chart in one day.",
-    "next": "Rule the beat sheet's calls and the death month; D-5 for the gates table. Then the slice."
+    "you": "You ruled D-9, D-6, D-7, the name, the chart and now D-5 in one day.",
+    "next": "The slice. Write the number in the gates table when you have it."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -229,14 +230,14 @@
     },
     {
      "n": 2,
-     "t": "**The design set** — benchmark read · Blender COA · reference-pull spec · **the character sheet v0.2** (name + chart ruled) · **the Season 1 beat sheet + shoot list** (8 sets / 38 stills) all on disk 9/16. Left: the gates table with the nut (needs D-5) · attainability stated.",
-     "s": "open",
+     "t": "**The design set** — benchmark read · Blender COA · reference-pull spec · the character sheet v0.2 (name + chart ruled) · the Season 1 beat sheet + shoot list (8 sets / 38 stills) · **the gates table with the nut as a range (D-5, provisional) · attainability stated.** Gate 2 passed on the provisional number; Papi's figure re-reads it.",
+     "s": "done",
      "when": "9/16"
     },
     {
      "n": 3,
-     "t": "**The vertical slice** — one complete still set at target quality (rec: set 4 of the shoot list as the Gate 3 skin test) plus one week of posting to the grammar on a test account; AAR.",
-     "s": "gated",
+     "t": "**The vertical slice** — one complete still set at target quality (rec: set 4 of the shoot list as the Gate 3 skin test) plus one week of posting to the grammar on a test account; AAR. **On the ruled branch the slice is also the first product: early access and commissions the day it passes.**",
+     "s": "open",
      "when": "next build"
     },
     {
@@ -329,6 +330,11 @@
      "path": "_PRIVATE/BOLO-24-season-1-beats.md",
      "what": "Season 1 beat sheet + shoot list v0.1: the five beats expanded · the 90-day calendar anchored on the April grief season · 8 sets / 38 stills (28 launch + 10 buffer), every set renderable on COA A · the sad-post spine · the Season 2 seed · six calls",
      "s": "done"
+    },
+    {
+     "path": "_PRIVATE/BOLO-24-gates-table.md",
+     "what": "W6: the number block (Papi's), the branch ruled on the record, the gates table (three values, months 1–12), the rules that ride on it, the monthly review sheet, attainability",
+     "s": "done"
     }
    ],
    "cost": [
@@ -359,7 +365,7 @@
     "last": "The flow says an undated hold is illegal; the sit rep has said so three times.",
     "plan": "One decider, three legal answers.",
     "you": "You are the gate and the only one who can open it.",
-    "next": "D-5: the nut as a range, liquid ÷ nut, the backstop as its own line."
+    "next": "D-5 is ruled on the structure; the number in the gates table §1 is the one line still yours."
    },
    "groups": [
     {
@@ -502,6 +508,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Season 1 beat sheet + shoot list v0.1 on an MS (1,978 words, 8 sets / 38 stills); phase 2 near complete, phase 3 named; sheet v0.9 republished."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"D5 go.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "FRAGO 24: D-5 ruled provisional on the structure and the record (first-dollar-first); the gates table and the monthly review sheet written to _PRIVATE; charter A-001 assumed false, §6 attainability stated; BOLO row 24 and STATE updated. Gate 2 passed; Gate 3, the slice, is the next build."
     }
    ]
   }
