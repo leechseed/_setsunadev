@@ -1,13 +1,14 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.0.0
-last_updated: 2026-08-25
+version: 1.1.0
+last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Papi's clear 2026-08-25; layer names provisional pending Papi's ruling
+status: canonical — Module 2 of the lattice, delivered on Papi's clear 2026-08-25; layer names provisional pending Papi's ruling; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
+sources: [BVX.0458, BVX.0349, BVX.1122, BVX.0193, BVX.0175]
 ---
 
 # 📐 SSOT: THE SETTING SYSTEM — place at character grade
@@ -15,6 +16,71 @@ trunk: BLACK
 **What this is:** setting promoted from backdrop to system — built B→A→instance per Papi's ruling: the **taxonomy** (what setting is), the **SETTING SLICE** (a 12-layer schema instanced per place, the architectural twin of the 12-Layer Character Database), the **SCENE CARD** (the notation slot reserved at ladder R2), and **DCUS instanced** as the proof of rig.
 
 **Root claim:** setting is the **pressure field** — the total state of the world at a story address, exerting force on every unit of the ladder. In spine terms: setting is where the argument becomes matter — a Domain embodied. A place that pressures nothing is scenery, not setting.
+
+---
+
+## MIND MODELS
+
+**Diagram 1, the whole system on one screen.**
+
+```mermaid
+mindmap
+  root((THE SETTING SYSTEM))
+    Taxonomy
+      Axis 1 Scale
+      Axis 2 Strata
+      Axis 3 Function
+      Axis 4 Time
+    The Setting Slice
+      twelve S-layers
+      instanced per place
+      S12 fed from storyform
+    The Scene Card
+      one screen, one scene
+      paired to the Plot Card
+    Library
+      BVX.0458 Kobold
+      BVX.0349 Kennedy
+      BVX.1122 Venice
+      Truby ch. 6 addendum
+      McKee ch. 3 addendum
+    Boundaries
+      structure is Dramatica
+      psychology is the 12-layer DB
+      events are plot_systems
+```
+
+**Diagram 2, the central mechanism: the pressure field.**
+
+```mermaid
+flowchart TD
+    STRATA["the Setting Slice: S1-S11"] --> ANCHOR[Anchor]
+    STRATA --> CHAR[Characterize]
+    STRATA --> PRESS[Pressure]
+    STRATA --> MOOD[Mood]
+    STRATA --> ARGUE[Argue]
+    STRATA --> AFFORD[Afford]
+    ANCHOR --> SCENE["one scene, a story address"]
+    CHAR --> SCENE
+    PRESS --> SCENE
+    MOOD --> SCENE
+    ARGUE --> SCENE
+    AFFORD --> SCENE
+    SCENE --> COLLIDE["the collision engine: L-layer x S-layer"]
+```
+
+**Diagram 3, the recurring engine: the setting arc.**
+
+```mermaid
+stateDiagram-v2
+    [*] --> Baseline
+    Baseline --> StateOverlay: a dated state, keyed to a ladder address
+    StateOverlay --> PlaceChanged: the setting arc advances
+    PlaceChanged --> [*]
+    PlaceChanged --> Baseline: recurs one scale class up, spot toward cosmos
+```
+
+*Diagram 3 draws the setting arc (Axis 4), not the fill rule: the doc gives the arc a live instance (DCUS[M1] → DCUS[M4]) to diagram, while the fill rule is a policy note about depth, not a mechanism. The SETTING SLICE stays the same schema across every state; only its S12 FUNCTION record moves.*
 
 ---
 
@@ -145,4 +211,5 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 
 ## Version history
 
+- **1.1.0 — 2026-09-16.** MIND MODELS section added (three diagrams: the system, the pressure field, the setting arc) so TM 03 renders; `sources:` declared. No taxonomy or slice change.
 - **1.0.0 — 2026-08-25.** Module 2 of the lattice, B→A→instance per ruling: four-axis taxonomy, 12-layer slice mirroring the character stack layer-for-layer, scene card delivered to its reserved R2 slot, DCUS instanced as proof.
