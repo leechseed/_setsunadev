@@ -1,0 +1,366 @@
+<title>TM</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* ---- TM · the technical manual page ----
+     Same document layout and colorway as the DOPE SHEET (RULED 9/16): one strip masthead,
+     a contents column left, the document as the one scrolling center, a narrow rail right (248px).
+     DARK is the only theme; light face is E-INK Kindle gray, never white. Accent orange. */
+  :root {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --link: #A83409; --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE; --bad: #962C37; --bad-soft: #E6CCCF; --help: #44453F;
+    --mark: #E2D9BE; --orange: #A83409; --orange-soft: #E9D5CA;
+    --line: #B5B5AE; --line-2: #97978F;
+    --grid: color-mix(in srgb, var(--ink) 6%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color-scheme: light;
+  }
+  :root {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
+    --mark: #3A3320; --orange: #FF8F62; --orange-soft: #3A2117;
+    --line: #2B313B; --line-2: #3C4452;
+    --grid: color-mix(in srgb, var(--ink) 8%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --link: #A83409; --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE; --bad: #962C37; --bad-soft: #E6CCCF; --help: #44453F;
+    --mark: #E2D9BE; --orange: #A83409; --orange-soft: #E9D5CA;
+    --line: #B5B5AE; --line-2: #97978F;
+    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); background-image: radial-gradient(var(--grid) 1px, transparent 1px); background-size: 22px 22px; font-family: var(--body); font-size: 16.5px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow: hidden; }
+  a { color: var(--link); }
+  strong { font-weight: 700; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  button:focus-visible, .t:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ::selection { background: var(--mark); }
+  .lbl { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+  .t { color: var(--link); text-decoration: none; border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+
+  /* ---- frame: masthead / toc · doc · rail / foot ---- */
+  .app { height: 100vh; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 224px minmax(0, 1fr) 248px; grid-template-areas: "head head head" "toc doc rail" "foot foot foot"; }
+
+  header.mast { grid-area: head; display: flex; align-items: center; gap: 16px; padding: 0 18px; min-height: 52px; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 85%, transparent); backdrop-filter: blur(6px); }
+  .mast .num { display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+  .mast .num small { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-ink); }
+  .mast .num b { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; }
+  .mast h1 { margin: 0; flex: 1; min-width: 0; font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1.1; letter-spacing: .01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--ink-2); }
+  .mast .ver { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); white-space: nowrap; }
+  .mast .soi { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; padding: 5px 12px; background: var(--accent); color: #fff; text-decoration: none; }
+  .mast .soi:hover { background: var(--accent-ink); }
+  .mast .railbtn { display: none; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 5px 10px; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .mast .railbtn:hover { border-color: var(--accent); color: var(--ink); }
+
+  nav.toc { grid-area: toc; border-right: 1px solid var(--line-2); padding: 16px 0 18px; overflow-y: auto; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  nav.toc .lbl { display: block; padding: 0 18px 8px; }
+  .toc-row { display: grid; grid-template-columns: 30px 1fr; gap: 8px; align-items: baseline; padding: 7px 14px 7px 18px; color: var(--ink-2); text-decoration: none; border-left: 3px solid transparent; }
+  .toc-row .no { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; color: var(--ink-3); }
+  .toc-row .nm { font-family: var(--display); font-weight: 700; font-size: 15.5px; line-height: 1.1; text-transform: uppercase; letter-spacing: .01em; }
+  .toc-row:hover { color: var(--ink); background: color-mix(in srgb, var(--panel-2) 60%, transparent); }
+  .toc-row.on { color: var(--ink); background: var(--panel-2); border-left-color: var(--accent); }
+  nav.toc .kv { padding: 14px 18px 0; margin: 12px 0 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; font-family: var(--mono); font-size: 11px; }
+  nav.toc .kv dt { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10px; padding-top: 1px; }
+  nav.toc .kv dd { margin: 0; color: var(--ink-2); overflow-wrap: anywhere; }
+
+  main.doc { grid-area: doc; overflow-y: auto; padding: 28px 44px 96px; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { main.doc { scroll-behavior: auto; } }
+  .page { max-width: 84ch; }
+  .page h1.dt { margin: 0 0 14px; font-family: var(--display); font-weight: 800; font-size: clamp(28px, 3.4vw, 42px); line-height: .98; text-transform: uppercase; letter-spacing: .005em; text-wrap: balance; }
+  .page h1.dt small { display: block; font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: .18em; color: var(--accent-ink); margin-bottom: 8px; }
+  .page h1.dt em { display: block; font-family: var(--body); font-style: normal; font-weight: 400; font-size: 15.5px; text-transform: none; color: var(--ink-2); letter-spacing: normal; margin-top: 6px; }
+
+  .fm { display: grid; grid-template-columns: max-content 1fr; margin: 0 0 8px; border: 1px solid var(--line-2); background: var(--panel); font-size: 14.5px; }
+  .fm > * { padding: 7px 12px; border-bottom: 1px solid var(--line); min-width: 0; }
+  .fm > *:nth-last-child(-n+2) { border-bottom: 0; }
+  .fm dt { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); background: color-mix(in srgb, var(--panel-2) 70%, transparent); border-right: 1px solid var(--line); padding-top: 9px; }
+  .fm dd { margin: 0; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; overflow-wrap: anywhere; }
+
+  section.sec { padding-top: 24px; margin-top: 28px; border-top: 1px solid var(--line-2); scroll-margin-top: 8px; }
+  section.sec.pre { border-top: 0; margin-top: 18px; padding-top: 0; }
+  .sh { display: flex; align-items: baseline; gap: 14px; margin: 0 0 10px; }
+  .sh .no { font-family: var(--display); font-weight: 800; font-size: 28px; line-height: 1; color: var(--accent-ink); min-width: 30px; }
+  .sh h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 28px; line-height: 1; text-transform: uppercase; letter-spacing: .005em; }
+  .sh .src { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+  p.plain { margin: 0 0 14px; font-size: 16px; line-height: 1.55; color: var(--ink-2); }
+  h3.subh { margin: 22px 0 8px; font-family: var(--display); font-weight: 700; font-size: 19px; text-transform: uppercase; letter-spacing: .01em; color: var(--ink); padding-bottom: 5px; border-bottom: 1px solid var(--line-2); scroll-margin-top: 8px; }
+
+  .tblwrap { overflow-x: auto; margin: 0 0 16px; }
+  table.doct { width: 100%; border-collapse: collapse; font-size: 14px; border: 1px solid var(--line-2); }
+  table.doct th { text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; padding: 7px 10px; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel-2) 70%, transparent); }
+  table.doct td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.doct tr:last-child td { border-bottom: 0; }
+  table.doct tr.layer-row { scroll-margin-top: 8px; }
+  table.doct tr.layer-row.on td { background: var(--accent-soft); }
+  table.doct td:first-child { font-family: var(--mono); font-size: 12px; color: var(--accent-ink); white-space: nowrap; }
+
+  ol.doclist, ul.doclist { margin: 0 0 14px; padding-left: 24px; display: grid; gap: 7px; font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  ol.doclist li::marker, ul.doclist li::marker { color: var(--ink-3); }
+
+  pre.cardpre { margin: 0 0 16px; padding: 14px 16px; border: 1px solid var(--line-2); background: var(--panel); font-family: var(--mono); font-size: 12.5px; line-height: 1.6; overflow-x: auto; white-space: pre; color: var(--ink-2); }
+
+  figure.diagram { margin: 0 0 18px; padding: 4px 0; }
+  pre.mermaid { margin: 0; background: var(--panel); border: 1px solid var(--line-2); padding: 10px; }
+  figure.diagram figcaption { margin-top: 8px; font-size: 13.5px; font-style: italic; color: var(--ink-3); line-height: 1.4; max-width: 66ch; }
+
+  .pathref { font-family: var(--mono); font-size: .93em; color: var(--ink-2); border-bottom: 1px dashed var(--line-2); }
+  code.inl { font-family: var(--mono); font-size: .9em; background: color-mix(in srgb, var(--panel-2) 70%, transparent); padding: 1px 4px; }
+
+  /* calls table (OPEN section) */
+  table.calls { width: 100%; border-collapse: collapse; font-size: 14.5px; border: 1px solid var(--line-2); }
+  table.calls th { text-align: left; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel-2) 70%, transparent); }
+  table.calls td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.calls tr:last-child td { border-bottom: 0; }
+  table.calls td.n { font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1; color: var(--accent-ink); width: 40px; text-align: right; }
+  table.calls td.q { font-family: var(--display); font-weight: 700; font-size: 17px; line-height: 1.15; text-transform: uppercase; min-width: 150px; }
+  table.calls td.o { color: var(--ink-2); font-size: 13.5px; line-height: 1.4; }
+  table.calls td.o .rul { display: block; margin-top: 6px; color: var(--good); font-size: 13.5px; }
+  table.calls td.s { white-space: nowrap; }
+  table.calls tr.ruled td.q, table.calls tr.ruled td.n { color: var(--ink-3); }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px; border: 1px solid currentColor; line-height: 1.5; white-space: nowrap; }
+  .st-ruled, .st-good { color: var(--good); }
+  .st-open { color: var(--warn); }
+  .tr { display: inline-flex; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; line-height: 1.5; }
+  .tr span { padding: 2px 7px; border: 1px solid var(--ink); }
+  .tr .b { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .tr .o { background: var(--orange-soft); color: var(--orange); border-color: var(--orange); }
+
+  /* the rail */
+  aside.rail { grid-area: rail; border-left: 1px solid var(--line-2); overflow-y: auto; padding: 18px 18px 24px; background: color-mix(in srgb, var(--panel) 55%, transparent); display: flex; flex-direction: column; gap: 18px; }
+  .rail h4 { margin: 0 0 8px; font-family: var(--display); font-weight: 700; font-size: 17px; text-transform: uppercase; letter-spacing: .02em; display: flex; justify-content: space-between; align-items: baseline; }
+  .rail h4 small { display: block; font-family: var(--mono); font-weight: 400; font-size: 10.5px; letter-spacing: .14em; color: var(--accent-ink); margin-bottom: 2px; }
+  .slice-row { display: grid; grid-template-columns: 40px 1fr; gap: 8px; align-items: baseline; padding: 5px 6px; border-left: 2px solid transparent; cursor: pointer; }
+  .slice-row:hover { background: color-mix(in srgb, var(--panel-2) 60%, transparent); }
+  .slice-row.on { border-left-color: var(--accent); background: var(--panel-2); }
+  .slice-row .co { font-family: var(--mono); font-size: 11px; color: var(--accent-ink); }
+  .slice-row .nm { font-size: 13px; color: var(--ink-2); }
+  .pin { padding: 12px 14px; border: 1px solid var(--line-2); background: var(--panel); }
+  .pin h5 { margin: 0 0 8px; font-family: var(--display); font-size: 18px; font-weight: 700; text-transform: uppercase; }
+  .pin dl { margin: 0; display: grid; gap: 8px; }
+  .pin dt { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .pin dd { margin: 2px 0 0; font-size: 13.5px; line-height: 1.4; color: var(--ink-2); }
+  .glos { display: none; flex-direction: column; gap: 10px; }
+  .glos.show { display: flex; }
+  .theme { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .theme:hover { border-color: var(--accent); color: var(--ink); }
+  .gl-detail { padding: 12px 14px; border: 1px solid var(--line-2); background: var(--panel); }
+  .gl-detail h5 { margin: 0 0 6px; font-family: var(--display); font-size: 20px; font-weight: 700; text-transform: uppercase; }
+  .gl-detail p { margin: 0; font-size: 14px; line-height: 1.5; }
+  .gl-detail .w { margin-top: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .feed-row { display: flex; flex-direction: column; gap: 1px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 12.5px; }
+  .feed-row:last-child { border-bottom: 0; }
+  .feed-row .path { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .feedline { margin-top: 4px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+
+  footer.foot { grid-area: foot; border-top: 1px solid var(--line-2); padding: 7px 18px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; font-family: var(--mono); font-size: 11px; color: var(--ink-3); background: color-mix(in srgb, var(--panel) 85%, transparent); }
+  footer.foot kbd { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border: 1px solid var(--line-2); color: var(--ink-2); margin-right: 3px; }
+  footer.foot .r { margin-left: auto; }
+
+  .tip { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 12px 14px 10px; font-size: 14.5px; line-height: 1.45; }
+  .tip .th { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .tip .th b { font-family: var(--display); font-weight: 700; font-size: 19px; text-transform: uppercase; }
+  .tip .th .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .tip .lock { height: 2px; background: var(--line); margin-top: 10px; position: relative; }
+  .tip .lock b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--accent); }
+  .tip.locked .lock b { width: 100%; }
+  .tip.locked { border-top-color: var(--ink); }
+  .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .06em; }
+
+  @media (max-width: 1080px) {
+    .app { grid-template-columns: 200px minmax(0, 1fr) 0; }
+    aside.rail { display: none; }
+    aside.rail.show { display: flex; position: fixed; right: 0; top: 52px; bottom: 0; width: min(320px, 90vw); z-index: 40; box-shadow: var(--shadow); }
+    .mast .railbtn { display: inline-block; }
+  }
+  @media (max-width: 760px) {
+    body { overflow: auto; }
+    .app { height: auto; grid-template-columns: 1fr; grid-template-areas: "head" "toc" "doc" "foot"; }
+    header.mast { position: sticky; top: 0; z-index: 30; flex-wrap: wrap; padding: 8px 16px; }
+    .mast h1 { white-space: normal; flex-basis: 100%; }
+    nav.toc { border-right: 0; border-bottom: 1px solid var(--line-2); display: flex; overflow-x: auto; padding: 6px 8px; gap: 2px; }
+    nav.toc .lbl, nav.toc .kv { display: none; }
+    .toc-row { grid-template-columns: auto auto; padding: 6px 10px; border-left: 0; border-bottom: 3px solid transparent; white-space: nowrap; }
+    .toc-row.on { border-bottom-color: var(--accent); }
+    main.doc { padding: 20px 16px 60px; overflow: visible; }
+    .fm { grid-template-columns: 1fr; } .fm dt { border-right: 0; border-bottom: 0; padding-bottom: 2px; }
+  }
+</style>
+
+<div class="app" id="app">
+  <header class="mast">
+    <div class="num"><small>TM</small><b id="mNum"></b></div>
+    <h1 id="mTitle"></h1>
+    <span id="mState"></span>
+    <span class="ver" id="mVer"></span>
+    <button class="railbtn" id="railToggle">Rail</button>
+    <a class="soi" href="https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5" target="_blank" rel="noopener" title="G · the SOI">SOI</a>
+  </header>
+
+  <nav class="toc" id="toc" aria-label="Contents">
+    <span class="lbl">Contents</span>
+    <div id="tocRows"></div>
+    <dl class="kv" id="tocKv"></dl>
+  </nav>
+
+  <main class="doc" id="doc" tabindex="-1"><div class="page" id="page"></div></main>
+
+  <aside class="rail" id="rail">
+    <div id="sliceWrap">
+      <h4><span><small>THE SLICE</small>Layers</span></h4>
+      <div id="sliceList"></div>
+    </div>
+    <div id="pinWrap" hidden></div>
+    <div class="glos" id="glos">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><h4 style="margin:0"><small>Term</small></h4><button class="theme" id="glClose">Esc · close</button></div>
+      <div class="gl-detail" id="glDetail"></div>
+    </div>
+    <div id="feedWrap">
+      <h4><span><small>THE FEED</small>Library</span></h4>
+      <div id="feedList"></div>
+      <div class="feedline" id="feedLine"></div>
+    </div>
+  </aside>
+
+  <footer class="foot">
+    <span><kbd>1</kbd>–<kbd>9</kbd> section</span>
+    <span><kbd>G</kbd> SOI</span>
+    <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close · click pins to the rail</span>
+    <span class="r" id="footR"></span>
+  </footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const T = DATA.tm, G = DATA.terms, SECTIONS = DATA.sections, SLICE = DATA.slice, FEED = DATA.feed;
+const SOI_URL = "https://claude.ai/code/artifact/4c2fc9c7-e0d2-4626-8142-9740ff8ee0e5";
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---- masthead ---- */
+$('#mNum').textContent = T.n;
+$('#mTitle').textContent = T.title + (T.subtitle ? ' — ' + T.subtitle : '');
+$('#mTitle').title = $('#mTitle').textContent;
+$('#mState').innerHTML = `<span class="chip st-${T.state}">${esc(T.state_label)}</span>`;
+$('#mVer').textContent = `${T.version || ''} · ${T.last_updated || ''}`;
+$('#footR').textContent = `${T.short} · ${T.path}`;
+
+/* ---- the document (sections arrive pre-rendered from build.py) ---- */
+$('#page').innerHTML = `
+  <h1 class="dt"><small>TM ${esc(T.n)} · technical manual · ${esc(T.version || '')}</small>${esc(T.title)}<em>${esc(T.subtitle || '')}</em></h1>
+  <dl class="fm">
+    <dt>System</dt><dd>TM ${esc(T.n)} ${T.trunk ? `<span class="tr"><span class="${T.trunk === 'BLACK' ? 'b' : 'o'}">${esc(T.trunk)}</span></span>` : ''}</dd>
+    <dt>Version · updated</dt><dd>${esc(T.version || '')} · ${esc(T.last_updated || '')}</dd>
+    <dt>Status</dt><dd>${T.status_html || esc(T.status || '')}</dd>
+    <dt>Path</dt><dd class="path">${esc(T.path)}</dd>
+  </dl>
+  ${SECTIONS.map(s => `<section class="sec ${s.pre ? 'pre' : ''}" id="${s.id}"><div class="sh">${s.no ? `<span class="no">${esc(s.no)}</span>` : ''}<h2>${esc(s.name)}</h2>${s.src ? `<span class="src">${esc(s.src)}</span>` : ''}</div>${s.html}</section>`).join('')}
+`;
+
+/* ---- contents ---- */
+$('#tocRows').innerHTML = SECTIONS.map(s => `<a class="toc-row" href="#${s.id}" data-id="${s.id}"><span class="no">${esc(s.no)}</span><span class="nm">${esc(s.name)}</span></a>`).join('');
+$('#tocKv').innerHTML = `<dt>shelf</dt><dd>${esc(FEED.shelf)}</dd><dt>page</dt><dd>_tools/tm/out/TM-${esc(T.n)}.html</dd>`;
+$('#tocRows').addEventListener('click', e => { const a = e.target.closest('.toc-row'); if (!a) return; e.preventDefault(); jump(a.dataset.id); });
+function jump(id) { const el = document.getElementById(id); if (el) { el.scrollIntoView({ block: 'start' }); setCurrent(id); } }
+
+function setCurrent(id) {
+  document.querySelectorAll('.toc-row').forEach(r => r.classList.toggle('on', r.dataset.id === id));
+}
+const spy = new IntersectionObserver(entries => {
+  const vis = entries.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+  if (vis.length) setCurrent(vis[0].target.id);
+}, { root: $('#doc'), rootMargin: '0px 0px -70% 0px', threshold: 0 });
+SECTIONS.forEach(s => { const el = document.getElementById(s.id); if (el) spy.observe(el); });
+if (SECTIONS.length) setCurrent(SECTIONS[0].id);
+
+/* ---- THE SLICE: rail layer list, click scrolls + pins ---- */
+$('#sliceList').innerHTML = SLICE.map(l => `<div class="slice-row" data-id="${l.id}"><span class="co">${esc(l.id)}</span><a class="t nm" data-t="${l.term || ''}" tabindex="0" data-noauto="1">${esc(l.name)}</a></div>`).join('');
+function pinLayer(id) {
+  const l = SLICE.find(x => x.id === id); if (!l) return;
+  document.querySelectorAll('.slice-row').forEach(r => r.classList.toggle('on', r.dataset.id === id));
+  document.querySelectorAll('#page tr.layer-row').forEach(r => r.classList.toggle('on', r.dataset.layer === id));
+  const rowEl = document.querySelector(`#page tr.layer-row[data-layer="${id}"]`);
+  if (rowEl) rowEl.scrollIntoView({ block: 'center' });
+  const fieldRows = Object.entries(l.fields || {}).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
+  const instRows = l.instance ? Object.entries(l.instance).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('') : '';
+  $('#pinWrap').hidden = false;
+  $('#pinWrap').innerHTML = `<div class="pin"><h5>${esc(l.id)} ${esc(l.name)}</h5><dl>${fieldRows}${instRows}</dl></div>`;
+  showRail();
+}
+$('#sliceList').addEventListener('click', e => { const r = e.target.closest('.slice-row'); if (r) pinLayer(r.dataset.id); });
+
+/* ---- THE FEED ---- */
+$('#feedList').innerHTML = (FEED.sources || []).map(id => `<div class="feed-row"><a class="t" data-t="${id}" tabindex="0" data-noauto="1">${esc(id)}</a><span class="path">${esc(FEED.paths && FEED.paths[id] || '')}</span></div>`).join('') || '<div class="feed-row"><span class="path">no sources declared in frontmatter</span></div>';
+$('#feedLine').textContent = `shelf ${FEED.shelf}: ${FEED.shelf_count != null ? FEED.shelf_count : '?'} keyed · ${FEED.distilled} distilled`;
+
+/* ---- rail toggle (phone / narrow) ---- */
+function showRail() { $('#rail').classList.add('show'); }
+function hideRail() { $('#rail').classList.remove('show'); }
+$('#railToggle').addEventListener('click', () => $('#rail').classList.toggle('show'));
+
+/* ---- tooltips: hover -> open · 1.5s or Space -> lock · nested to depth 3 · Esc closes ---- */
+let tips = [], openTimer = null, closeTimer = null;
+function tipFor(target, depth) {
+  const k = target.dataset.t; const g = G[k]; if (!g) return null; const el = document.createElement('div'); el.className = 'tip'; el.dataset.depth = depth;
+  const deep = depth >= 3;
+  const plain = s => esc(String(s || '').replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, kk, l) => l || (G[kk] ? G[kk].t : kk)));
+  el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div><p>${deep ? plain(g.d) : mdInline(g.d)}</p>${deep ? `<div class="w"><a href="#" class="glopen" data-k="${k}">Open in SOI →</a></div>` : `<div class="w">${esc(g.w || '')}</div>`}<div class="lock"><b></b></div><div class="hint">hold 1.5 s or press Space to lock · Esc closes · click pins the term</div>`;
+  document.body.appendChild(el);
+  const r = target.getBoundingClientRect(); const w = el.offsetWidth, h = el.offsetHeight;
+  let x = Math.min(Math.max(12, r.left), window.innerWidth - w - 12); let y = r.bottom + 8; if (y + h > window.innerHeight - 12) y = Math.max(12, r.top - h - 8);
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+  const rec = { el, target, depth, locked: false, timer: null };
+  const bar = $('.lock b', el); requestAnimationFrame(() => { bar.style.transition = 'width 1.5s linear'; bar.style.width = '100%'; });
+  rec.timer = setTimeout(() => lock(rec), 1500);
+  el.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+  el.addEventListener('mouseleave', () => scheduleClose(depth));
+  el.addEventListener('click', e => { const a = e.target.closest('.glopen'); if (a) { e.preventDefault(); openTerm(a.dataset.k); } });
+  target.classList.add('on'); tips.push(rec); return rec;
+}
+function mdInline(s) {
+  s = esc(s);
+  s = s.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (m, k, l) => { const g = G[k]; const label = l || (g ? g.t : k); return g ? `<a class="t" data-t="${k}" tabindex="0" data-noauto="1">${label}</a>` : label; });
+  return s;
+}
+function lock(rec) { rec.locked = true; rec.el.classList.add('locked'); }
+function closeTips(d) { tips.filter(t => t.depth >= d).forEach(t => { clearTimeout(t.timer); t.el.remove(); t.target.classList.remove('on'); }); tips = tips.filter(t => t.depth < d); }
+function scheduleClose(depth) { clearTimeout(closeTimer); closeTimer = setTimeout(() => { const un = tips.filter(t => t.depth >= depth && !t.locked); if (un.length) closeTips(Math.min(...un.map(t => t.depth))); }, 220); }
+function depthOf(t) { const p = t.closest('.tip'); return p ? +p.dataset.depth + 1 : 1; }
+function onEnter(t) { clearTimeout(openTimer); clearTimeout(closeTimer); const d = depthOf(t); openTimer = setTimeout(() => { closeTips(d); tipFor(t, d); }, 120); }
+document.addEventListener('mouseover', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('mouseout', e => { const t = e.target.closest('.t'); if (t) { clearTimeout(openTimer); scheduleClose(depthOf(t)); } });
+document.addEventListener('focusin', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
+document.addEventListener('focusout', e => { const t = e.target.closest('.t'); if (t) scheduleClose(depthOf(t)); });
+document.addEventListener('click', e => { const t = e.target.closest('.t'); if (t && t.dataset.t) { e.preventDefault(); openTerm(t.dataset.t); return; } if (!e.target.closest('.tip')) closeTips(1); });
+function openTerm(k) { const g = G[k]; if (!g) return; $('#glos').classList.add('show'); closeTips(1); $('#glDetail').innerHTML = `<h5>${esc(g.t)}</h5><p style="margin-top:6px">${mdInline(g.d)}</p><div class="w">${esc(g.k)} · ${esc(g.w || '')}</div>`; showRail(); }
+function closeTerm() { $('#glos').classList.remove('show'); }
+$('#glClose').addEventListener('click', closeTerm);
+
+/* ---- keys ---- */
+document.addEventListener('keydown', e => {
+  if (e.target.matches('input, textarea')) { if (e.key === 'Escape') e.target.blur(); return; }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const up = e.key.toUpperCase();
+  if (/^[1-9]$/.test(e.key)) { const i = +e.key - 1; if (i < SECTIONS.length) jump(SECTIONS[i].id); return; }
+  if (up === 'G') { window.open(SOI_URL, '_blank', 'noopener'); return; }
+  if (e.key === 'Escape') { if (tips.length) closeTips(1); else if ($('#glos').classList.contains('show')) closeTerm(); else if ($('#rail').classList.contains('show')) hideRail(); return; }
+  if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
+});
+</script>
