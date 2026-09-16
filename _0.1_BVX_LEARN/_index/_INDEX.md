@@ -69,6 +69,20 @@ The node registry. **An entry not in this index is invisible to the next session
 | `PSY.05` | ADHD After Dark | ADHD After Dark: Better Sex Life, Better |
 | `PSY.07` | Sex and Leisure | Sex and Leisure: Promiscuous Perspective |
 
+## Distilled (v4 template, mind models required — BOLO 18 stage 2)
+
+An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tools/zotero/check_distill.py`.
+
+| ID | Title | Spine | Diagrams | Gate | Wave |
+|---|---|---|---|---|---|
+| `BVX.0064` | McKee — Character | — | 0 | ❌ v2 entry, retrofit owed | pre-v4 (8/15) |
+| `BVX.0175` | McKee — Story | L4 L6 L0 | 3 | ✅ 9/16 | 1 |
+| `BVX.0236` | Coyne — The Story Grid | L4 L7 | 3 | ✅ 9/16 | 1 |
+| `BVX.0075` | Davis — Creating Compelling Characters | L5 | 3 | ✅ 9/16 | 1 |
+| `BVX.0193` | Truby — The Anatomy of Story | L4 L5 L6 | 3 | ✅ 9/16 | 1 |
+
+Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
+
 ## Entries
 
 | ID | Subjects | Trunk | Title | Author | Pages |
