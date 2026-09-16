@@ -553,7 +553,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0144 | CRE | Once Upon a Pixel: Storytelling and Worldbuilding in Video Games | Paterson, Williams, Cordne |  | rule |  |
 | BVX.0245 | CRE | The Writer's Map: An Atlas of Imaginary Lands | Lewis-Jones |  | toc |  |
 | BVX.0315 | FIT | Homesteading: a backyard guide to growing your own food, canning, keepin | Gehring | 2014 | rule |  |
-| BVX.0349 | GAM | AGAINST WORLDBUILDING, AND OTHER PROVOCATIONS: Essays on History, Narrat | Kennedy |  | rule |  |
+| BVX.0349 | GAM | AGAINST WORLDBUILDING, AND OTHER PROVOCATIONS: Essays on History, Narrat | Kennedy |  | rule | ✅ |
 | BVX.0352 | GAM | An e23 Sourcebook for GURPS® | Jackson |  | toc |  |
 | NEW | GAM | Based on the award-winning Traveller science fiction universe by MARC MI | Akins, Degraff, Zeigler |  | rule |  |
 | BVX.0364 | GAM | BATTLETECH ERA REPORT 3062 |  |  | rule |  |
@@ -603,7 +603,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0438 | GAM | GURPS High-Tech: Adventure Guns | Games |  | toc |  |
 | BVX.0438 | GAM | GURPS High-Tech: Adventure Guns | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: Constantinople, 527-1204 A.D. | Games |  | toc |  |
-| NEW | GAM | GURPS Hot Spots: Renaissance Venice | Games |  | toc |  |
+| BVX.1122 | GAM | GURPS Hot Spots: Renaissance Venice | Games |  | toc | ✅ |
 | NEW | GAM | GURPS Hot Spots: Renaissance Venice | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: Sriwijaya | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: The Silk Road | Games |  | toc |  |
@@ -631,7 +631,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | NEW | GAM | GURPS Underground Adventures | Games |  | toc |  |
 | NEW | GAM | GuRPS Vehicles: Steampunk Conveyances | Games |  | toc |  |
 | NEW | GAM | GURPS Zombies: Day One | Games |  | toc |  |
-| BVX.0458 | GAM | KOBOLD Guide to Worldbuilding | Hinojosa |  | rule |  |
+| BVX.0458 | GAM | KOBOLD Guide to Worldbuilding | Hinojosa |  | rule | ✅ |
 | BVX.0462 | GAM | Martial Arts: Gladiators | Games |  | toc |  |
 | BVX.0462 | GAM | Martial Arts: Gladiators | Games |  | toc |  |
 | BVX.0509 | GAM | Shadowrun: Arsenal |  |  | rule |  |
@@ -763,7 +763,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0256 | CRE | VOICE: The Secret Power of Great Writing | Bell |  | rule |  |
 | BVX.0276 | CRE | Writing Down the Bones | Goldberg |  | toc |  |
 | NEW | CRE | Writing with Clarity and Style | Harris | 2016 | rule |  |
-| BVX.0349 | GAM | AGAINST WORLDBUILDING, AND OTHER PROVOCATIONS: Essays on History, Narrat | Kennedy |  | rule |  |
+| BVX.0349 | GAM | AGAINST WORLDBUILDING, AND OTHER PROVOCATIONS: Essays on History, Narrat | Kennedy |  | rule | ✅ |
 | BVX.0404 | GAM | Dramatic Storytelling & Narrative Design: A Writer’s Guide to Video Game | Berger |  | rule |  |
 | BVX.0447 | GAM | GURPS Steampunk 1: Settings and Style | Games |  | rule |  |
 | BVX.0447 | GAM | GURPS Steampunk 1: Settings and Style | Games |  | rule |  |

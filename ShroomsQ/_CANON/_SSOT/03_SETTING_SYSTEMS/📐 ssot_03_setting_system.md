@@ -130,6 +130,13 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 
 ## OPEN
 
+**From the setting wave, 2026-09-16 (BOLO 18; distills BVX.0458 · 0349 · 1122 + the Truby/McKee addenda):**
+- **Truby's passageway** (ch. 6): a liminal threshold between subworlds that signals a rules change on crossing. No home in the four axes or the twelve layers. Candidate: a STRATA or FUNCTION sub-type, or a field on the SCENE CARD.
+- **McKee's level of conflict** (ch. 3): a vertical axis from subconscious → personal → institutional → environmental. SCALE nests physical space, not conflict altitude. Candidate: a fifth axis, or a reading of S12 FUNCTION.
+- **Kennedy's challenge** (BVX.0349): a full twelve-layer fill for every place is the encyclopaedic trap. Answered structurally by the root claim, Axis 3 FUNCTION and the S12 binding rule (S1–S11 may run empty); make the answer explicit in PART A as a fill rule: thin by default, thick only where a scene's pressure needs it.
+- **What the trade cannot supply** (BVX.1122): a professional gazetteer fills BODY · LAW · ECONOMY · FOUNDING · HABIT · VECTOR richly, leaves WEATHER · SENSORIUM · SCAR · ALLURE · UNDERSIDE thin, and cannot fill FUNCTION at all. The Command's slice asks for exactly the layers the trade leaves out; that is the differentiation, and the cost.
+
+
 - **The twelve layer names** (BODY … FUNCTION) — house coinage, awaiting Papi's ruling; bench on request.
 - **`03_SETTING_SYSTEMS/` placement** — new SSOT domain created this session, mirroring 02; movable on ruling.
 - **S2 WEATHER for DCUS** — authorable gap, first writing target when Movements 2–4 open.

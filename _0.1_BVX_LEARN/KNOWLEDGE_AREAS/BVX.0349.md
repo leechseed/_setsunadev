@@ -103,16 +103,16 @@ Caption: *the fork between plumbing and iceberg is the whole essay collection in
 
 ```mermaid
 flowchart TD
-    A[Candidate setting detail] --> B{Points at theme or\ndistinctiveness?}
-    B -- No --> C[Plumbing: consistent, forgettable]
-    C --> D[Timeline / king-list / lore-dump]
+    A[Candidate setting detail] --> B{"Points at theme or distinctiveness?"}
+    B -->|No| C["Plumbing: consistent, forgettable"]
+    C --> D["Timeline, king-list, lore-dump"]
     D --> E[Info-dump cutscene]
-    E --> F[Reader tunes out, waits for a test]
-    B -- Yes --> G[Distinctive, theme-pointed detail]
-    G --> H[State it partially, withhold the rest]
-    H --> I["Gutter": the unstated remainder]
-    I --> J[Audience imagination fills the gap]
-    J --> K[Setting feels alive: the iceberg]
+    E --> F[Reader tunes out]
+    B -->|Yes| G[Distinctive, theme-pointed detail]
+    G --> H[State part, withhold rest]
+    H --> I["The gutter: unstated remainder"]
+    I --> J[Imagination fills the gap]
+    J --> K["Setting feels alive: the iceberg"]
 ```
 
 **Diagram 3 — mapped onto the Command's SETTING SLICE.**
@@ -121,8 +121,8 @@ Caption: *Kennedy would leave the origin/economy layers thin by default and spen
 ```mermaid
 flowchart LR
     subgraph K["Kennedy's argument"]
-      Plumbing[Plumbing: maps,\nking-lists, timelines]
-      Iceberg[Iceberg: implication,\ntheme-pointed texture]
+      Plumbing["Plumbing: maps, king-lists, timelines"]
+      Iceberg["Iceberg: implication, theme-pointed texture"]
     end
     subgraph S["SETTING SLICE"]
       S7[S7 FOUNDING]
@@ -132,19 +132,19 @@ flowchart LR
       S9[S9 ALLURE]
       S12[S12 FUNCTION]
     end
-    Plumbing -. fill only for consistency .-> S7
-    Plumbing -. fill only for consistency .-> S6
-    Plumbing -. fill only for consistency .-> S5
-    Iceberg -- earns its place --> S3
-    Iceberg -- earns its place --> S9
-    Iceberg -- binds to the argument --> S12
+    Plumbing -.->|fill for consistency only| S7
+    Plumbing -.->|fill for consistency only| S6
+    Plumbing -.->|fill for consistency only| S5
+    Iceberg -->|earns its place| S3
+    Iceberg -->|earns its place| S9
+    Iceberg -->|binds to argument| S12
 ```
 
 ---
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Not a system — an essay collection, unified by one recurring move: take a craft irritant (a word, a design habit, an industry panic) and trace it back to a first-principles question about what a game actually needs from its setting, its history, or its story. The book has no chapters in the architectural sense; the Command reads it through five functional clusters (see Diagram 1), not the book's own two-part "Writing About Games / About Writing Games" split, because the second part is mostly studio-process essays that only sometimes touch setting.
+Not a system — an essay collection, unified by one recurring move: take a craft irritant (a word, a habit, an industry panic) and trace it to a first-principles question about what a game needs from its setting, history, or story. The book has no architectural chapters; the Command reads it through five functional clusters (Diagram 1), not its own two-part "Writing About Games / About Writing Games" split, since the second part is mostly studio-process essays that only sometimes touch setting.
 
 | Cluster | Governing question | Anchor essays |
 |---|---|---|
@@ -188,11 +188,11 @@ Not a system — an essay collection, unified by one recurring move: take a craf
 | An NPC or place needs a name | Choose one that plausibly belongs to the setting's register, even if invented | Optimize for how cool the name sounds in isolation |
 | Documenting setting for a team | Store the canonical fact once, in the system if possible; document patterns, not white-lists | Duplicate the same fact across multiple docs |
 | Choosing documentation tools | Pick tools that open fast and encourage brevity (spreadsheets, text files) | Pick a wiki or a slow CMS and hope discipline compensates |
-| Deciding how much of a space to describe | Give three sensory details and let the gutter do the rest | Fully specify every room, corner, and object |
-| Designing traversal / distance | Decide deliberately whether distance should be friction or should be earned once and then removable | Default to either "always fast travel" or "always footslog" without asking what the first traversal should feel like |
-| Players ask for "more content" | Check whether the request is really pointing at a design problem | Add content reflexively to quiet the request |
-| Writing setting-adjacent history/lore | Treat it like real history: messy, contingent, farcical alongside tragic | Write a clean, single-cause founding myth |
-| Choosing a video-game antagonist's dressing | Remember branding (uniform, symbol) does more work than historical accuracy | Assume period accuracy alone will make an enemy legible |
+| Deciding how much of a space to describe | Give three sensory details, let the gutter do the rest | Fully specify every room, corner, object |
+| Designing traversal / distance | Decide deliberately whether distance is friction or earned-once-then-removable | Default to "always fast travel" or "always footslog" without asking |
+| Players ask for "more content" | Check whether the request really points at a design problem | Add content reflexively to quiet the request |
+| Writing setting-adjacent history/lore | Treat it like real history: messy, farcical alongside tragic | Write a clean, single-cause founding myth |
+| Choosing an antagonist's dressing | Remember branding (uniform, symbol) beats historical accuracy | Assume period accuracy alone makes an enemy legible |
 
 ---
 
@@ -210,15 +210,15 @@ Not a system — an essay collection, unified by one recurring move: take a craf
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating "worldbuilding" as synonymous with "good setting" — the word smuggles in an encyclopaedic, physical, map-first bias that the actual craft doesn't require.
-- Believing invented languages or deep timelines are what make Tolkien's world work — they're the plumbing Tolkien happened to enjoy building, not the source of "the turn."
-- Assuming more content automatically increases perceived richness — content that "spreads thin" (repeated, low-variance, backloaded) can make a world feel smaller, not bigger.
-- Confusing a fully-simulated, photorealistic environment with a *felt* one — "things that look like things aren't actually things," and over-specifying a space can break the illusion it was meant to support (Second Life's decline as the example).
-- Info-dumping setting history in an opening cutscene, then testing the player on it later — the single most-cited failure mode in the title essay.
-- Adding a date to a timeline "for flavor" — every date you commit to constrains you to getting it right forever, at a cost disproportionate to the flavor gained.
-- Believing period/historical accuracy alone makes an antagonist legible — branding (a uniform, a symbol) does the work of "certified evil" faster and more reliably than research does.
-- Assuming a setting bible, once written, stays authoritative without maintenance — new team members write new docs rather than fix stale old ones unless DRY discipline is actively enforced.
-- Assuming procedurally generated or AI-assisted setting content solves the "more content" problem — it solves the words-in-order problem, not the make-it-matter problem, which is a design problem, not a throughput problem.
+- Treating "worldbuilding" as synonymous with "good setting" — the word smuggles in an encyclopaedic, map-first bias the craft doesn't require.
+- Believing invented languages or deep timelines make Tolkien's world work — they're plumbing he enjoyed building, not the source of "the turn."
+- Assuming more content raises perceived richness — content that "spreads thin" (repeated, backloaded) can make a world feel smaller, not bigger.
+- Confusing a photorealistic environment with a *felt* one — "things that look like things aren't actually things"; over-specifying can break the illusion it was meant to support.
+- Info-dumping setting history in an opening cutscene, then testing the player on it later — the title essay's most-cited failure mode.
+- Adding a date to a timeline "for flavor" — every date commits you to getting it right forever, at a cost disproportionate to the gain.
+- Believing period accuracy alone makes an antagonist legible — branding (a uniform, a symbol) does the work of "certified evil" faster.
+- Assuming a setting bible stays authoritative without maintenance — new team members write new docs rather than fix stale ones unless DRY is enforced.
+- Assuming procgen/AI setting content solves the "more content" problem — it solves words-in-order, not make-it-matter, which is a design problem, not throughput.
 
 ---
 
