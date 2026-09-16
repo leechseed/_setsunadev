@@ -6,7 +6,38 @@ the Command lexicon. Local, GPU, $0 — no audio leaves the box, nothing is bill
 This is **JUDY's listening half** (BOLO 56). The speaking half, the wire to the VS Code
 session, and the face are still unruled.
 
+## The console — the mod menu
+
+```
+python _tools/dictation/console.py
+```
+
+Opens **http://127.0.0.1:8787**. Every knob in one place, turned with a mouse instead
+of a ruling. Local server, not a hosted page — it reads your config, sees your mic,
+writes files and starts the daemon, none of which a published page can do.
+
+| Panel | What you can actually do |
+|---|---|
+| **Status** | GPU, CUDA, model, daemon state; one button starts and stops the ears. An honest table of what is built vs unruled. |
+| **Ears** | Hotkey, mic (with a **live level meter**), model picker showing which are already downloaded, compute type, type/beep. Writes `config.json`. |
+| **Codebook** | Live §8 browser. **Paste a garbled sentence and watch the repair fire.** See the gated rows and why they are held. **Add a row straight into SOP.md.** |
+| **Voice** | SAPI engine + voice picker, rate, volume, and a **speak button** to hear it. |
+| **Persona** | The TARS dials. Watch the system prompt rewrite itself as you drag them. |
+| **Face** | Four state slots — idle, listening, thinking, talking. **Drag a PNG onto a slot**, or paste a path. |
+| **Wire** | The one open call a knob cannot answer, with the trade laid out. |
+| **Log** | Live daemon output — every transcription, every §8 hit. |
+
+Panels are `1`–`8`. Dotted terms carry the CK3 hover layer; **Space** locks a tip open.
+
+Settings land in two files, deliberately separate:
+
+| File | Holds | Read by |
+|---|---|---|
+| `config.json` | the dictation daemon's settings | `ptt.py` |
+| `judy.json` | persona, voice, face, wire | the console (and JUDY, when she exists) |
+
 ## Run it
+
 
 ```
 python _tools/dictation/ptt.py
@@ -97,6 +128,10 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `ptt.py` | the daemon — hotkey, capture, transcribe, repair, type |
 | `codebook.py` | SOP §8 parser — the lexicon and the replacement table |
 | `config.json` | hotkey, model, device, mic |
+| `console.py` | the mod menu — local server on :8787 |
+| `console.html` | its page |
+| `judy.json` | persona, voice, face, wire (BOLO 56) |
+| `faces/` | the PNG state slots |
 
 Related: **SOP §8** · **BOLO 26** · **BOLO 56 (JUDY)** ·
 [oscar-mike/dictation-dictionary.md](../../oscar-mike/dictation-dictionary.md) ·

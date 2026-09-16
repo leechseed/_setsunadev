@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JUDY — Console</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the BRIEF colorway · DARK is the only theme (RULED 9/11) */
+  :root{
+    --bg:#0F1216; --panel:#171B21; --panel-2:#1F242C;
+    --ink:#E8EAEE; --ink-2:#A9B0BC; --ink-3:#7B8492;
+    --accent:#FF6B35; --accent-ink:#FF8F62; --accent-soft:#3A2117;
+    --link:#FF8F62; --good:#5CC48A; --good-soft:#16301F; --warn:#D9C48A;
+    --bad:#E9788A; --bad-soft:#3A1B20;
+    --line:#2B313B; --line-2:#3C4452;
+    --grid:color-mix(in srgb, var(--ink) 8%, transparent);
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    --display:"Barlow Condensed","Arial Narrow",sans-serif;
+    --body:"Atkinson Hyperlegible","Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",Consolas,monospace;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    background-image:radial-gradient(var(--grid) 1px,transparent 1px);background-size:22px 22px;
+    font-family:var(--body);font-size:16px;line-height:1.5;overflow:hidden;-webkit-font-smoothing:antialiased}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  input,select,textarea{font:inherit;color:var(--ink);background:var(--panel-2);
+    border:1px solid var(--line-2);padding:7px 10px;border-radius:0;width:100%}
+  input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,.t:focus-visible{
+    outline:2px solid var(--accent);outline-offset:2px}
+  .mono{font-family:var(--mono)}
+  .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+
+  /* CK3 concept links */
+  .t{color:var(--link);text-decoration:none;border-bottom:1px dotted color-mix(in srgb,var(--link) 55%,transparent);cursor:help}
+  .t:hover,.t.on{border-bottom-style:solid}
+
+  .app{height:100vh;display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+    grid-template-columns:212px minmax(0,1fr);grid-template-areas:"head head" "nav main" "foot foot"}
+
+  header.head{grid-area:head;display:flex;align-items:stretch;border-bottom:1px solid var(--line-2);
+    background:color-mix(in srgb,var(--panel) 80%,transparent)}
+  .brand{display:flex;flex-direction:column;justify-content:center;padding:9px 18px;
+    border-right:1px solid var(--line);min-width:212px}
+  .brand h1{margin:0;font-family:var(--display);font-weight:800;font-size:32px;line-height:1;
+    letter-spacing:.02em;text-transform:uppercase}
+  .brand h1 i{display:inline-block;width:10px;height:10px;background:var(--accent);margin-right:8px;transform:translateY(-2px)}
+  .brand .sub{font-family:var(--mono);font-size:11px;color:var(--ink-2);margin-top:3px}
+  .stats{display:flex;flex:1;min-width:0;overflow-x:auto}
+  .stat{display:flex;flex-direction:column;justify-content:center;padding:6px 15px;
+    border-right:1px solid var(--line);min-width:110px}
+  .stat b{font-family:var(--display);font-weight:800;font-size:25px;line-height:1;white-space:nowrap}
+  .stat b.sm{font-family:var(--body);font-size:14px;font-weight:700}
+  .stat span{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:3px}
+  .stat.good b{color:var(--good)} .stat.bad b{color:var(--bad)} .stat.hot b{color:var(--accent)}
+  .runbox{display:flex;align-items:center;gap:10px;padding:0 16px;border-left:1px solid var(--line)}
+  .big{font-family:var(--display);font-weight:800;font-size:19px;text-transform:uppercase;
+    letter-spacing:.03em;padding:9px 18px;border:2px solid var(--accent);background:var(--accent);color:#120A06;white-space:nowrap}
+  .big:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+  .big.off{background:none;color:var(--accent)}
+  .big.stop{background:var(--bad);border-color:var(--bad);color:#1A0B0E}
+
+  nav.nav{grid-area:nav;border-right:1px solid var(--line-2);overflow-y:auto;padding:14px 0;
+    background:color-mix(in srgb,var(--panel) 55%,transparent)}
+  nav .lbl{padding:0 18px 8px;display:block}
+  .nrow{display:grid;grid-template-columns:26px 1fr;align-items:center;gap:9px;width:100%;text-align:left;
+    padding:9px 12px 9px 16px;color:var(--ink-2);border-left:3px solid transparent}
+  .nrow i{width:8px;height:8px;border:1.5px solid var(--ink-3);border-radius:50%;justify-self:center}
+  .nrow .nm{font-family:var(--display);font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.01em}
+  .nrow:hover{color:var(--ink);background:color-mix(in srgb,var(--panel-2) 60%,transparent)}
+  .nrow.on{color:var(--ink);background:var(--panel-2);border-left-color:var(--accent)}
+  .nrow.on i{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+
+  main.main{grid-area:main;overflow-y:auto;padding:24px 30px 48px}
+  section{display:none;max-width:1000px}
+  section.on{display:block}
+  h2{margin:0 0 6px;font-family:var(--display);font-weight:800;font-size:clamp(32px,3.6vw,46px);
+    line-height:.95;text-transform:uppercase}
+  .plain{margin:0 0 20px;color:var(--ink-2);max-width:68ch}
+  h3{margin:26px 0 10px;font-family:var(--display);font-weight:700;font-size:21px;
+    text-transform:uppercase;letter-spacing:.02em;border-bottom:1px solid var(--line-2);padding-bottom:6px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px 20px}
+  .f{display:flex;flex-direction:column;gap:5px}
+  .f .lbl{color:var(--accent)}
+  .f .hint{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .row{display:flex;gap:10px;align-items:center}
+  .btn{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    padding:7px 12px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap}
+  .btn:hover{border-color:var(--accent);color:var(--ink)}
+  .btn.p{border-color:var(--accent);color:var(--accent)}
+
+  .meter{height:12px;background:var(--panel-2);border:1px solid var(--line-2);position:relative;overflow:hidden}
+  .meter b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--good);transition:width .08s linear}
+  .meter b.hot{background:var(--accent)} .meter b.clip{background:var(--bad)}
+
+  .dial{display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center}
+  .dial input[type=range]{width:100%;padding:0;background:none;border:0;accent-color:var(--accent)}
+  .dial .v{font-family:var(--display);font-weight:800;font-size:26px;min-width:52px;text-align:right;color:var(--accent)}
+
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;padding:6px 10px 6px 0;border-bottom:1px solid var(--line-2)}
+  td{padding:7px 10px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  .scroll{max-height:340px;overflow-y:auto;border:1px solid var(--line);padding:0 12px}
+
+  .chip{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10px;
+    letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border:1px solid currentColor}
+  .c-good{color:var(--good)} .c-bad{color:var(--bad)} .c-warn{color:var(--warn)} .c-dim{color:var(--ink-3)}
+
+  .faces{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+  .face{border:1px solid var(--line-2);background:var(--panel);padding:12px}
+  .face.drop{border-color:var(--accent);background:var(--accent-soft)}
+  .face h4{margin:0 0 8px;font-family:var(--display);font-weight:700;font-size:19px;text-transform:uppercase}
+  .face .well{height:150px;display:flex;align-items:center;justify-content:center;background:var(--panel-2);
+    border:1px dashed var(--line-2);margin-bottom:9px;overflow:hidden}
+  .face .well img{max-width:100%;max-height:100%;object-fit:contain;image-rendering:pixelated}
+  .face .well span{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding:10px}
+
+  pre.log{margin:0;font-family:var(--mono);font-size:12.5px;line-height:1.55;color:var(--ink-2);
+    background:var(--panel);border:1px solid var(--line-2);padding:12px;height:calc(100vh - 300px);
+    min-height:260px;overflow:auto;white-space:pre-wrap;word-break:break-word}
+  .ok{color:var(--good)} .warnt{color:var(--warn)} .badt{color:var(--bad)}
+
+  footer.foot{grid-area:foot;border-top:1px solid var(--line-2);padding:7px 18px;display:flex;
+    gap:16px;flex-wrap:wrap;align-items:center;font-family:var(--mono);font-size:11px;color:var(--ink-3);
+    background:color-mix(in srgb,var(--panel) 80%,transparent)}
+  footer kbd{font-family:var(--mono);font-size:10px;padding:1px 5px;border:1px solid var(--line-2);color:var(--ink-2)}
+  footer .r{margin-left:auto}
+
+  .tip{position:fixed;z-index:60;width:330px;max-width:calc(100vw - 24px);background:var(--panel);
+    border:1px solid var(--line-2);border-top:3px solid var(--accent);box-shadow:var(--shadow);
+    padding:11px 13px 9px;font-size:14.5px;line-height:1.45}
+  .tip .th{display:flex;align-items:baseline;gap:9px;margin-bottom:3px}
+  .tip .th b{font-family:var(--display);font-weight:700;font-size:19px;text-transform:uppercase}
+  .tip p{margin:0}
+  .tip .hint{font-family:var(--mono);font-size:10px;color:var(--ink-3);margin-top:6px;letter-spacing:.06em}
+  .tip.locked{border-top-color:var(--ink)}
+  .toast{position:fixed;right:16px;bottom:44px;z-index:70;background:var(--panel);border:1px solid var(--accent);
+    border-left-width:4px;padding:10px 14px;font-family:var(--mono);font-size:12px;box-shadow:var(--shadow);
+    opacity:0;transform:translateY(6px);transition:.18s}
+  .toast.on{opacity:1;transform:none}
+  @media (max-width:900px){
+    body{overflow:auto}
+    .app{height:auto;grid-template-columns:1fr;grid-template-areas:"head" "nav" "main" "foot"}
+    nav.nav{display:flex;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line-2);padding:8px}
+    nav .lbl{display:none}
+    .nrow{border-left:0;border-bottom:3px solid transparent;white-space:nowrap;padding:8px 12px}
+    .nrow.on{border-bottom-color:var(--accent)}
+    main.main{padding:20px 16px 32px}
+    pre.log{height:auto;max-height:50vh}
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="head">
+    <div class="brand">
+      <h1><i></i>Judy</h1>
+      <div class="sub">console · BOLO 56</div>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="runbox">
+      <button class="big off" id="runBtn">start ears</button>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav"><span class="lbl">Panels</span></nav>
+
+  <main class="main" id="main">
+
+    <section id="p-status">
+      <h2>Status</h2>
+      <p class="plain">What is actually running, and the one button that matters. The
+        <a class="t" data-t="ears">ears</a> are built and shipped; the
+        <a class="t" data-t="mouth">mouth</a>, the <a class="t" data-t="wire">wire</a> and the
+        <a class="t" data-t="face">face</a> are not. This panel never lies about which is which.</p>
+      <h3>The box</h3>
+      <div class="grid" id="boxInfo"></div>
+      <h3>What exists</h3>
+      <table><thead><tr><th>Part</th><th>State</th><th>Where it stands</th></tr></thead>
+        <tbody id="partsTbl"></tbody></table>
+    </section>
+
+    <section id="p-ears">
+      <h2>Ears</h2>
+      <p class="plain">The <a class="t" data-t="ptt">push-to-talk</a> daemon — BOLO 26, ruled BUILD
+        and shipped. Everything here writes <span class="mono">config.json</span>, which is the only
+        file <span class="mono">ptt.py</span> reads.</p>
+      <div class="grid">
+        <div class="f"><span class="lbl">Hotkey</span>
+          <input id="hotkey" placeholder="ctrl+alt+space">
+          <span class="hint">hold it and talk; release to transcribe</span></div>
+        <div class="f"><span class="lbl">Mic</span>
+          <select id="device"></select>
+          <div class="meter"><b id="lvl"></b></div>
+          <span class="hint" id="lvlHint">level meter — speak to check it moves</span></div>
+      </div>
+      <h3>Model</h3>
+      <p class="plain">Bigger is more accurate on <a class="t" data-t="propernoun">proper nouns</a>,
+        which is the entire complaint. Cached models start instantly; the rest download once.</p>
+      <table><thead><tr><th></th><th>Model</th><th>Download</th><th>Note</th></tr></thead>
+        <tbody id="modelTbl"></tbody></table>
+      <h3>Behaviour</h3>
+      <div class="grid">
+        <div class="f"><span class="lbl">Compute</span><select id="compute">
+          <option value="auto">auto</option><option value="float16">float16 (GPU)</option>
+          <option value="int8_float16">int8_float16 (GPU, leaner)</option>
+          <option value="int8">int8 (CPU)</option><option value="float32">float32</option></select>
+          <span class="hint">auto picks float16 on the 3090, int8 on CPU</span></div>
+        <div class="f"><span class="lbl">Device</span><select id="dev">
+          <option value="auto">auto</option><option value="cuda">cuda</option><option value="cpu">cpu</option>
+        </select><span class="hint">CTranslate2 reaches the GPU without torch</span></div>
+        <div class="f"><span class="lbl">Type into focused window</span>
+          <select id="typeOut"><option value="true">yes — clipboard paste</option>
+          <option value="false">no — print only</option></select></div>
+        <div class="f"><span class="lbl">Beep on start/stop</span>
+          <select id="beep"><option value="true">yes</option><option value="false">no</option></select></div>
+      </div>
+    </section>
+
+    <section id="p-codebook">
+      <h2>Codebook</h2>
+      <p class="plain"><a class="t" data-t="sop8">SOP §8</a> is the dictionary, parsed live on every
+        run. Nothing here is a copy — edit a row and the daemon has it next launch.</p>
+      <div class="grid" id="cbStats"></div>
+
+      <h3>Try a transmission</h3>
+      <p class="plain">Type something the way the recognizer would mangle it and watch the repair fire.</p>
+      <div class="f">
+        <textarea id="cbTest" rows="2" placeholder="hau copy give me the sip rep on bolo polo forty five and run the black room"></textarea>
+        <div class="row"><button class="btn p" id="cbRun">run it</button>
+          <label class="row" style="gap:6px"><input type="checkbox" id="cbAgg" style="width:auto">
+          <span class="lbl" style="color:var(--warn)">include gated rows</span></label></div>
+      </div>
+      <div id="cbOut"></div>
+
+      <h3>Grow the table</h3>
+      <p class="plain">§8 grows a row per catch. This writes straight into
+        <span class="mono">SOP.md</span> — the tool feeds its own dictionary.</p>
+      <div class="grid">
+        <div class="f"><span class="lbl">Heard</span><input id="cbHeard" placeholder="borsite"></div>
+        <div class="f"><span class="lbl">Read as</span><input id="cbRead" placeholder="boresight"></div>
+        <div class="f"><span class="lbl">Note (optional)</span><input id="cbNote" placeholder="why it garbles"></div>
+      </div>
+      <div class="row" style="margin-top:10px"><button class="btn p" id="cbAdd">add row to §8</button>
+        <button class="btn" id="openSop">open SOP.md</button></div>
+
+      <h3>Held back <span class="chip c-warn">gated</span></h3>
+      <p class="plain">These rows carry a context qualifier. Applied blind they would eat ordinary
+        speech — every "standing" becomes "canning". They are parsed, counted, and left off.</p>
+      <div class="scroll"><table><thead><tr><th>Heard</th><th>Would become</th></tr></thead>
+        <tbody id="gatedTbl"></tbody></table></div>
+
+      <h3>Lexicon</h3>
+      <p class="plain">Fed to Whisper as <span class="mono">initial_prompt</span> — it biases spelling
+        <em>before</em> the guess is made. This is the lever that fixed "Ultrasin" unaided.</p>
+      <div class="scroll" style="padding:12px"><span class="mono" id="lexOut" style="font-size:12.5px;color:var(--ink-2)"></span></div>
+    </section>
+
+    <section id="p-voice">
+      <h2>Voice</h2>
+      <p class="plain">JUDY's <a class="t" data-t="mouth">mouth</a>. The engine call is
+        <strong>unruled</strong> — Windows SAPI is the free floor that works right now; the good
+        options cost either money or a download.</p>
+      <div class="grid">
+        <div class="f"><span class="lbl">Engine</span><select id="vEngine">
+          <option value="sapi">Windows SAPI — free, local, robotic</option>
+          <option value="piper">Piper — free, local, much better (not installed)</option>
+          <option value="xtts">XTTS v2 — free, local, clonable (not installed)</option>
+          <option value="elevenlabs">ElevenLabs — paid, best Moneypenny (no key)</option>
+        </select><span class="hint">only SAPI is wired today; the rest store the choice</span></div>
+        <div class="f"><span class="lbl">Voice</span><select id="vName"></select>
+          <span class="hint" id="vHint"></span></div>
+        <div class="f"><span class="lbl">Rate</span>
+          <div class="dial"><input type="range" id="vRate" min="-10" max="10" step="1"><span class="v" id="vRateV">0</span></div></div>
+        <div class="f"><span class="lbl">Volume</span>
+          <div class="dial"><input type="range" id="vVol" min="0" max="100" step="5"><span class="v" id="vVolV">100</span></div></div>
+      </div>
+      <h3>Hear it</h3>
+      <div class="f"><textarea id="vText" rows="2">Judy on station. Go ahead, Papi.</textarea>
+        <div class="row"><button class="btn p" id="vSpeak">speak</button></div></div>
+    </section>
+
+    <section id="p-persona">
+      <h2>Persona</h2>
+      <p class="plain">TARS ships with literal adjustable settings — humour 75%, honesty 90%. You
+        reached for a character who is <em>already</em> a configurable persona, so these are real
+        numbers rather than a paragraph of adjectives. They are stored now and compiled into the
+        system prompt when the <a class="t" data-t="wire">wire</a> is ruled.</p>
+      <div class="grid" id="dials"></div>
+      <h3>What it compiles to</h3>
+      <pre class="log" id="personaOut" style="height:auto;min-height:120px"></pre>
+    </section>
+
+    <section id="p-face">
+      <h2>Face</h2>
+      <p class="plain">Drag a PNG onto a slot, or paste a path. Four states so there is visible
+        feedback that she is hearing you. VTuber-shaped later; this is the honest version now.</p>
+      <div class="faces" id="faces"></div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn" id="openFaces">open the faces folder</button>
+      </div>
+    </section>
+
+    <section id="p-wire">
+      <h2>Wire</h2>
+      <p class="plain">The one genuinely new problem, and <strong>the only one of the four calls a
+        knob cannot answer</strong>. JUDY must run on <a class="t" data-t="haiku">Haiku</a> for
+        responsiveness while reaching the VS&nbsp;Code session, which is on
+        <a class="t" data-t="opus">Opus</a> — without inheriting its model or its latency.</p>
+      <div class="f" style="max-width:560px"><span class="lbl">Mode</span><select id="wMode">
+        <option value="standalone">Standalone — own Haiku agent, reads the repo, no session link</option>
+        <option value="sdk">Agent SDK sidecar — Haiku subprocess, its own context</option>
+        <option value="bridge">File bridge — drops into the session via a watched file</option>
+        <option value="mcp">MCP server — the session calls JUDY as a tool</option>
+      </select><span class="hint">stores the intent; none of the four is built</span></div>
+      <h3>The trade, plainly</h3>
+      <table><thead><tr><th>Mode</th><th>Latency</th><th>Sees your session</th><th>Cost to build</th></tr></thead>
+        <tbody id="wireTbl"></tbody></table>
+    </section>
+
+    <section id="p-log">
+      <h2>Log</h2>
+      <p class="plain">Live daemon output. Every transcription, every §8 hit, every config write.</p>
+      <div class="row" style="margin-bottom:10px">
+        <button class="btn" id="logClear">clear view</button>
+        <span class="lbl" id="logState"></span>
+      </div>
+      <pre class="log" id="logOut"></pre>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span><kbd>1</kbd>–<kbd>7</kbd> panel</span>
+    <span>hover a <a class="t" data-t="ck3">dotted term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
+    <span>changes save on change</span>
+    <span class="r" id="footR">127.0.0.1</span>
+  </footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+let S = null, saving = false;
+
+const PANELS = [
+  ["status","Status"],["ears","Ears"],["codebook","Codebook"],["voice","Voice"],
+  ["persona","Persona"],["face","Face"],["wire","Wire"],["log","Log"]
+];
+
+const GLOSS = {
+  ears:{w:"The ears",d:"The listening half — BOLO 26's push-to-talk dictation. Ruled BUILD and shipped 9/16. This is the only part of JUDY that fully exists."},
+  mouth:{w:"The mouth",d:"Text-to-speech. Unruled: Windows SAPI works today and sounds robotic; Piper and XTTS are free but need installing; ElevenLabs is the best match for the 007 handler register and costs money."},
+  wire:{w:"The wire",d:"How a fast Haiku voice agent reaches the Opus VS Code session without inheriting Opus's model or latency. The only open call a knob cannot settle."},
+  face:{w:"The face",d:"Desktop presence. PNG state swaps now — idle, listening, thinking, talking — VTuber rigging later."},
+  ptt:{w:"Push-to-talk",d:"Hold the hotkey, speak, release. Nothing is recorded or transcribed until you hold it, so nothing is listening in the background."},
+  sop8:{w:"SOP §8",d:"The standing garble table. Parsed live every run, so the codebook cannot drift out of sync with the SOP — that was the whole argument for BUILD over INSTALL."},
+  propernoun:{w:"Proper nouns",d:"The 9/3 diagnosis: common words land clean, proper nouns and numbers garble. The recognizer has no vocabulary and guesses the nearest real word. Ultrasin became 'ultrasound'."},
+  haiku:{w:"Haiku 4.5",d:"The fastest Claude. Chosen here for responsiveness — a voice loop that pauses to think stops feeling like a conversation."},
+  opus:{w:"Opus",d:"The model this VS Code session runs on. Deep but slower; wrong for a voice turn, right for the work."},
+  ck3:{w:"The hover layer",d:"Every dense page in the Command carries nested hover terms, derived from how Crusader Kings III surfaces meaning without leaving the page. Space locks a tip open."}
+};
+
+/* ---- nav ---- */
+const nav = $("#nav");
+PANELS.forEach(([id,name],i)=>{
+  const b=document.createElement("button");
+  b.className="nrow"; b.dataset.p=id;
+  b.innerHTML=`<i></i><span class="nm">${name}</span>`;
+  b.onclick=()=>show(id); nav.appendChild(b);
+});
+function show(id){
+  $$("section").forEach(s=>s.classList.toggle("on",s.id==="p-"+id));
+  $$(".nrow").forEach(n=>n.classList.toggle("on",n.dataset.p===id));
+  location.hash=id;
+}
+addEventListener("keydown",e=>{
+  if(/input|textarea|select/i.test(e.target.tagName))return;
+  const n=parseInt(e.key,10);
+  if(n>=1&&n<=PANELS.length) show(PANELS[n-1][0]);
+});
+
+/* ---- toast ---- */
+let tt;
+function toast(msg,bad){
+  let el=$(".toast"); if(!el){el=document.createElement("div");el.className="toast";document.body.appendChild(el);}
+  el.textContent=msg; el.style.borderLeftColor=bad?"var(--bad)":"var(--accent)";
+  el.classList.add("on"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("on"),2200);
+}
+
+/* ---- api ---- */
+async function api(path,body){
+  const r=await fetch(path,body?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:{});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok){toast(j.error||"failed",true);throw new Error(j.error||r.status);}
+  return j;
+}
+const saveCfg = b => api("/api/config",b).then(()=>toast("saved"));
+const saveJudy = b => api("/api/judy",b).then(()=>toast("saved"));
+
+/* ---- render ---- */
+async function load(){
+  S = await api("/api/state");
+  renderStats(); renderBox(); renderParts(); renderEars();
+  renderCodebook(); renderVoice(); renderPersona(); renderFaces(); renderWire();
+  $("#footR").textContent = `127.0.0.1 · ${S.paths.root.split(/[\\/]/).pop()}`;
+}
+
+function renderStats(){
+  const g=S.gpu, d=S.daemon;
+  const cached=S.models.filter(m=>m.cached).length;
+  const el=$("#stats");
+  el.innerHTML=`
+   <div class="stat ${d.running?'good':'c-dim'}"><b class="sm">${d.running?"RUNNING":"stopped"}</b><span>ears</span></div>
+   <div class="stat ${g.cuda?'good':'bad'}"><b class="sm">${g.cuda?"CUDA":"CPU only"}</b><span>${(g.name||"gpu").split(" ").slice(-2).join(" ")}</span></div>
+   <div class="stat hot"><b class="sm">${S.config.model}</b><span>model</span></div>
+   <div class="stat"><b>${S.codebook.active}</b><span>§8 rules</span></div>
+   <div class="stat"><b>${S.codebook.gated.length}</b><span>gated</span></div>
+   <div class="stat"><b>${S.codebook.lexicon.length}</b><span>lexicon</span></div>
+   <div class="stat"><b>${cached}<small style="font-size:14px;color:var(--ink-3)">/${S.models.length}</small></b><span>cached</span></div>`;
+  const b=$("#runBtn");
+  b.textContent=d.running?"stop ears":"start ears";
+  b.className="big "+(d.running?"stop":"off");
+}
+
+function renderBox(){
+  const g=S.gpu;
+  $("#boxInfo").innerHTML=`
+    <div class="f"><span class="lbl">GPU</span><div>${g.name||"—"}</div>
+      <span class="hint">${g.cuda?"CTranslate2 sees it — float16 available":"no CUDA device visible"}</span></div>
+    <div class="f"><span class="lbl">Compute types</span><div class="mono" style="font-size:12px">${(g.compute||[]).join(" · ")||"—"}</div></div>
+    <div class="f"><span class="lbl">Config</span><div class="mono" style="font-size:11.5px;word-break:break-all">${S.paths.config}</div>
+      <div class="row"><button class="btn" onclick="api('/api/open',{target:'config'})">open</button>
+      <button class="btn" onclick="api('/api/open',{target:'dir'})">open folder</button></div></div>`;
+}
+
+function renderParts(){
+  const rows=[
+    ["Ears — dictation","good","BUILT","BOLO 26 ruled BUILD 9/16 and shipped. Measured 11.4s of speech → 0.69s."],
+    ["Codebook — SOP §8","good","BUILT","Parsed live; grew three rows from its own first run."],
+    ["Voice — TTS","warn","UNRULED","SAPI works now and sounds robotic. The good options are a download or a bill."],
+    ["Face — PNG states","warn","SLOTS ONLY","The slots and previews are real; nothing drives them until the loop exists."],
+    ["Persona — TARS dials","warn","STORED","Numbers are saved; they compile into a system prompt once the wire is ruled."],
+    ["Wire — Haiku ↔ session","bad","OPEN","The only call a knob cannot answer."]
+  ];
+  $("#partsTbl").innerHTML=rows.map(([n,c,s,w])=>
+    `<tr><td><strong>${n}</strong></td><td><span class="chip c-${c}">${s}</span></td><td>${w}</td></tr>`).join("");
+}
+
+function renderEars(){
+  const c=S.config;
+  $("#hotkey").value=c.hotkey;
+  $("#hotkey").onchange=e=>saveCfg({hotkey:e.target.value.trim()});
+  const dsel=$("#device");
+  dsel.innerHTML=`<option value="">system default</option>`+S.devices.map(d=>
+    `<option value="${d.id}">${d.id}. ${d.name}${d.default?" (default)":""}</option>`).join("");
+  dsel.value=c.input_device==null?"":c.input_device;
+  dsel.onchange=e=>saveCfg({input_device:e.target.value===""?null:parseInt(e.target.value,10)});
+  $("#modelTbl").innerHTML=S.models.map(m=>`<tr>
+      <td><input type="radio" name="mdl" style="width:auto" ${m.name===c.model?"checked":""}
+          onchange="saveCfg({model:'${m.name}'}).then(load)"></td>
+      <td><strong>${m.name}</strong></td>
+      <td>${m.cached?'<span class="chip c-good">cached</span>':'<span class="chip c-dim">'+m.size+'</span>'}</td>
+      <td style="color:var(--ink-2)">${m.note}</td></tr>`).join("");
+  $("#compute").value=c.compute_type; $("#compute").onchange=e=>saveCfg({compute_type:e.target.value});
+  $("#dev").value=c.device; $("#dev").onchange=e=>saveCfg({device:e.target.value});
+  $("#typeOut").value=String(c.type_output); $("#typeOut").onchange=e=>saveCfg({type_output:e.target.value==="true"});
+  $("#beep").value=String(c.beep); $("#beep").onchange=e=>saveCfg({beep:e.target.value==="true"});
+}
+
+function renderCodebook(){
+  const cb=S.codebook;
+  $("#cbStats").innerHTML=`
+    <div class="f"><span class="lbl">Active</span><div style="font-family:var(--display);font-size:30px;font-weight:800">${cb.active}</div><span class="hint">applied on every transcript</span></div>
+    <div class="f"><span class="lbl">Gated</span><div style="font-family:var(--display);font-size:30px;font-weight:800;color:var(--warn)">${cb.gated.length}</div><span class="hint">context-conditional, held off</span></div>
+    <div class="f"><span class="lbl">Notes</span><div style="font-family:var(--display);font-size:30px;font-weight:800;color:var(--ink-3)">${cb.notes}</div><span class="hint">prose guidance, never substituted</span></div>`;
+  $("#gatedTbl").innerHTML=cb.gated.map(g=>
+    `<tr><td class="mono">${esc(g.heard)}</td><td class="mono" style="color:var(--warn)">${esc(g.read)}</td></tr>`).join("");
+  $("#lexOut").textContent=cb.lexicon.join(" · ");
+}
+
+function esc(s){return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+
+$("#cbRun").onclick=async()=>{
+  const j=await api("/api/codebook/test",{text:$("#cbTest").value,aggressive:$("#cbAgg").checked});
+  $("#cbOut").innerHTML=`<div style="margin-top:12px;border-left:3px solid var(--accent);padding:10px 14px;background:var(--panel)">
+    <div class="lbl">Result</div><div style="font-size:17px;margin:6px 0 10px">${esc(j.out)||"<em style='color:var(--ink-3)'>unchanged</em>"}</div>
+    ${j.hits.length?'<div class="lbl">§8 fired</div>'+j.hits.map(h=>
+      `<div class="mono" style="font-size:12.5px;color:var(--ink-2)">${esc(h.heard)} → <span style="color:var(--accent)">${esc(h.read)}</span>${h.n>1?" ×"+h.n:""}</div>`).join("")
+      :'<div class="mono" style="font-size:12px;color:var(--ink-3)">no rule matched — if that is wrong, add a row below</div>'}</div>`;
+};
+$("#cbAdd").onclick=async()=>{
+  try{
+    const j=await api("/api/codebook/add",{heard:$("#cbHeard").value,read:$("#cbRead").value,note:$("#cbNote").value});
+    toast("§8 grew a row"); $("#cbHeard").value=$("#cbRead").value=$("#cbNote").value="";
+    await load(); show("codebook");
+  }catch(e){}
+};
+$("#openSop").onclick=()=>api("/api/open",{target:"sop"});
+
+function renderVoice(){
+  const v=S.judy.voice;
+  $("#vEngine").value=v.engine; $("#vEngine").onchange=e=>saveJudy({voice:{engine:e.target.value}});
+  const sel=$("#vName");
+  sel.innerHTML=S.voices.map(x=>`<option value="${x.name}">${x.name} — ${x.gender}</option>`).join("")
+    ||`<option value="">no SAPI voices found</option>`;
+  if(v.name) sel.value=v.name;
+  const fem=S.voices.filter(x=>x.gender==="Female").length;
+  $("#vHint").textContent=`${S.voices.length} SAPI voices on this box, ${fem} female`;
+  sel.onchange=e=>saveJudy({voice:{name:e.target.value}});
+  bindDial("#vRate","#vRateV",v.rate,x=>saveJudy({voice:{rate:x}}));
+  bindDial("#vVol","#vVolV",v.volume,x=>saveJudy({voice:{volume:x}}));
+}
+function bindDial(sl,out,val,fn){
+  const s=$(sl),o=$(out); s.value=val; o.textContent=val;
+  s.oninput=()=>o.textContent=s.value;
+  s.onchange=()=>fn(parseInt(s.value,10));
+}
+$("#vSpeak").onclick=()=>api("/api/voice/preview",{name:$("#vName").value,text:$("#vText").value,
+  rate:parseInt($("#vRate").value,10),volume:parseInt($("#vVol").value,10)}).then(()=>toast("speaking"));
+
+const DIALS=[["humor","Humour","how often she reaches for a joke. TARS runs 75."],
+  ["honesty","Honesty","how much she softens bad news. TARS runs 90."],
+  ["brat","Brat","the edge. High is back-talk; low is a butler."],
+  ["brevity","Brevity","high is clipped radio; low is chatty."]];
+function renderPersona(){
+  const p=S.judy.persona;
+  $("#dials").innerHTML=DIALS.map(([k,n,h])=>`<div class="f"><span class="lbl">${n}</span>
+    <div class="dial"><input type="range" id="d-${k}" min="0" max="100" step="5" value="${p[k]}"><span class="v" id="dv-${k}">${p[k]}</span></div>
+    <span class="hint">${h}</span></div>`).join("");
+  DIALS.forEach(([k])=>{
+    const s=$("#d-"+k),o=$("#dv-"+k);
+    s.oninput=()=>{o.textContent=s.value;personaText();};
+    s.onchange=()=>saveJudy({persona:{[k]:parseInt(s.value,10)}});
+  });
+  personaText();
+}
+function personaText(){
+  const g=k=>parseInt(($("#d-"+k)||{}).value||S.judy.persona[k],10);
+  const band=(v,lo,mid,hi)=>v<34?lo:v<67?mid:hi;
+  $("#personaOut").textContent =
+`You are JUDY. You speak out loud; write the way people talk, not the way people type.
+Humour ${g("humor")} — ${band(g("humor"),"dry, rarely joke","occasional dry aside","quick with a joke, never at the cost of the answer")}.
+Honesty ${g("honesty")} — ${band(g("honesty"),"soften bad news","say it straight, gently","say it straight, no cushioning")}.
+Brat ${g("brat")} — ${band(g("brat"),"deferential","a little back-talk, always delivers","openly give him grief, then deliver anyway")}.
+Brevity ${g("brevity")} — ${band(g("brevity"),"explain in full","a few sentences","clipped; radio discipline")}.
+You are informative first. Personality is seasoning, never the meal.`;
+}
+
+function renderFaces(){
+  const slots=["idle","listening","thinking","talking"];
+  const note={idle:"resting — nothing happening",listening:"the hotkey is down",
+    thinking:"transcribing or waiting on the model",talking:"speaking back"};
+  $("#faces").innerHTML=slots.map(s=>`<div class="face" data-slot="${s}">
+    <h4>${s}</h4>
+    <div class="well">${S.faces[s]?`<img src="${S.faces[s]}" alt="${s}">`:`<span>drop a PNG here<br>or paste a path</span>`}</div>
+    <div class="hint" style="font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-bottom:7px">${note[s]}</div>
+    <input placeholder="C:\\path\\to\\${s}.png" data-path="${s}">
+    <div class="row" style="margin-top:6px"><button class="btn" data-clear="${s}">clear</button></div></div>`).join("");
+  $$(".face").forEach(f=>{
+    const slot=f.dataset.slot;
+    f.addEventListener("dragover",e=>{e.preventDefault();f.classList.add("drop");});
+    f.addEventListener("dragleave",()=>f.classList.remove("drop"));
+    f.addEventListener("drop",async e=>{
+      e.preventDefault(); f.classList.remove("drop");
+      const file=e.dataTransfer.files[0]; if(!file)return;
+      const data=await new Promise(r=>{const fr=new FileReader();fr.onload=()=>r(fr.result);fr.readAsDataURL(file);});
+      await api("/api/face/set",{slot,data,name:file.name}); await load(); show("face"); toast(slot+" set");
+    });
+    f.querySelector(`[data-path="${slot}"]`).onchange=async e=>{
+      if(!e.target.value.trim())return;
+      try{await api("/api/face/set",{slot,path:e.target.value.trim()});await load();show("face");toast(slot+" set");}catch(_){}
+    };
+    f.querySelector(`[data-clear="${slot}"]`).onclick=async()=>{
+      await api("/api/face/set",{slot,clear:true}); await load(); show("face");
+    };
+  });
+}
+$("#openFaces").onclick=()=>api("/api/open",{target:"faces"});
+
+function renderWire(){
+  $("#wMode").value=S.judy.wire.mode;
+  $("#wMode").onchange=e=>saveJudy({wire:{mode:e.target.value}});
+  const rows=[
+    ["Standalone","lowest","no — reads the repo only","small"],
+    ["Agent SDK sidecar","low","no — its own context","medium"],
+    ["File bridge","medium","yes, one way","small"],
+    ["MCP server","low for you, the session pays","yes, both ways","medium"]
+  ];
+  $("#wireTbl").innerHTML=rows.map(r=>`<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join("");
+}
+
+/* ---- run button ---- */
+$("#runBtn").onclick=async()=>{
+  const running=S.daemon.running;
+  await api("/api/daemon",{action:running?"stop":"start"});
+  toast(running?"ears stopped":"ears starting — first load can take a moment");
+  setTimeout(load,600); show("log");
+};
+
+/* ---- level meter ---- */
+let meterOn=false;
+async function meter(){
+  if(document.hidden||!$("#p-ears").classList.contains("on")){return;}
+  if(meterOn)return; meterOn=true;
+  try{
+    const d=$("#device").value;
+    const j=await api("/api/level"+(d!==""?"?device="+d:""));
+    const b=$("#lvl"), pk=Math.min(1,j.peak||0);
+    b.style.width=(pk*100).toFixed(1)+"%";
+    b.className = pk>0.98?"clip":pk>0.6?"hot":"";
+    if(j.error)$("#lvlHint").textContent="mic error: "+j.error;
+  }catch(_){}finally{meterOn=false;}
+}
+setInterval(meter,220);
+
+/* ---- log ---- */
+let lastLog=0;
+async function pollLog(){
+  if(document.hidden)return;
+  try{
+    const j=await api("/api/log");
+    const el=$("#logOut"); if(!el)return;
+    const stick = el.scrollTop+el.clientHeight >= el.scrollHeight-24;
+    el.innerHTML=j.lines.map(l=>{
+      const c=/^!/.test(l)?"badt":/^—/.test(l)?"warnt":/>>/.test(l)?"ok":"";
+      return `<span class="${c}">${esc(l)}</span>`;
+    }).join("\n");
+    if(stick)el.scrollTop=el.scrollHeight;
+    $("#logState").textContent=j.running?"daemon running":"daemon stopped";
+    if(j.running!==(S&&S.daemon.running)){await load();}
+  }catch(_){}
+}
+setInterval(pollLog,1200);
+$("#logClear").onclick=()=>$("#logOut").textContent="";
+
+/* ---- CK3 tooltips ---- */
+let tip=null,locked=false;
+function killTip(){if(tip){tip.remove();tip=null;}locked=false;$$(".t.on").forEach(t=>t.classList.remove("on"));}
+document.addEventListener("mouseover",e=>{
+  const t=e.target.closest(".t"); if(!t||locked)return;
+  const g=GLOSS[t.dataset.t]; if(!g)return;
+  killTip(); t.classList.add("on");
+  tip=document.createElement("div"); tip.className="tip";
+  tip.innerHTML=`<div class="th"><b>${g.w}</b></div><p>${g.d}</p><div class="hint">Space to lock · Esc to close</div>`;
+  document.body.appendChild(tip);
+  const r=t.getBoundingClientRect();
+  let x=Math.min(r.left,innerWidth-352), y=r.bottom+8;
+  if(y+tip.offsetHeight>innerHeight-10)y=Math.max(8,r.top-tip.offsetHeight-8);
+  tip.style.left=Math.max(8,x)+"px"; tip.style.top=y+"px";
+});
+document.addEventListener("mouseout",e=>{if(!locked&&e.target.closest(".t"))killTip();});
+addEventListener("keydown",e=>{
+  if(e.key==="Escape")killTip();
+  if(e.code==="Space"&&tip&&!locked&&!/input|textarea|select/i.test(e.target.tagName)){
+    e.preventDefault();locked=true;tip.classList.add("locked");
+  }
+});
+
+/* ---- go ---- */
+load().then(()=>{
+  const h=location.hash.replace("#","");
+  show(PANELS.some(p=>p[0]===h)?h:"status");
+}).catch(e=>{
+  document.body.innerHTML=`<pre style="padding:30px;color:#E9788A;font-family:monospace">console failed to load state:\n${e}</pre>`;
+});
+</script>
+</body>
+</html>

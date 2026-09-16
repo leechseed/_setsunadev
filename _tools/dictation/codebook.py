@@ -180,15 +180,42 @@ def rules(path=SOP, aggressive=False):
 
 
 def apply(text, path=SOP, aggressive=False):
-    """Run the codebook over a transcript. Case-insensitive, whole-phrase."""
-    hits = []
-    for heard, read in rules(path, aggressive):
-        # \b fails on phrases ending in punctuation-ish chars; guard with lookarounds
-        pat = re.compile(r"(?<![\w-])" + re.escape(heard) + r"(?![\w-])", re.I)
-        text, n = pat.subn(read, text)
-        if n:
-            hits.append((heard, read, n))
-    return text, hits
+    """
+    Run the codebook over a transcript. Case-insensitive, whole-phrase, ONE pass.
+
+    One pass matters. Applying rules in a loop lets each rule rescan the previous
+    rule's output: "black room" -> "DARKROOM" would then be re-matched by the
+    "darkroom" row, and any A->B, B->C pair in §8 would silently chain into A->C.
+    A single alternation sweep means every replacement is decided against what was
+    actually said, and nothing a rule emits can be eaten by another rule.
+    """
+    rs = rules(path, aggressive)
+    if not rs or not text:
+        return text, []
+    # rules() is already longest-first, and Python's alternation is first-match-wins,
+    # so "sit rep" is tried before "rep".
+    index = {h.lower(): r for h, r in rs}
+    pat = re.compile(
+        r"(?<![\w-])(" + "|".join(re.escape(h) for h, _ in rs) + r")(?![\w-])", re.I
+    )
+    counts = {}
+
+    def swap(m):
+        heard = m.group(1)
+        read = index[heard.lower()]
+        counts[heard.lower()] = counts.get(heard.lower(), 0) + 1
+        return read
+
+    out = pat.sub(swap, text)
+    # §8 sometimes lists the same phrase in two casings ("SIP rep" and "sip rep");
+    # they collapse to one rule here, so report the hit once.
+    hits, seen = [], set()
+    for h, _ in rs:
+        k = h.lower()
+        if k in counts and k not in seen:
+            seen.add(k)
+            hits.append((h, index[k], counts[k]))
+    return out, hits
 
 
 def main():

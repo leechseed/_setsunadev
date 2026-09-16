@@ -1,0 +1,28 @@
+{
+  "persona": {
+    "humor": 75,
+    "honesty": 90,
+    "brat": 80,
+    "brevity": 70
+  },
+  "voice": {
+    "engine": "sapi",
+    "name": "",
+    "rate": 0,
+    "volume": 100
+  },
+  "face": {
+    "slots": {
+      "idle": null,
+      "listening": null,
+      "thinking": null,
+      "talking": null
+    }
+  },
+  "chat": {
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "wire": {
+    "mode": "standalone"
+  }
+}
