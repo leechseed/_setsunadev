@@ -6,7 +6,7 @@ kind: "standards body — in-world institution or its absence; S4 LAW + S12 FUNC
 ip: OVEREXITOUT / ASTRO7EX
 series: The Outliers
 trunk: BLACK
-status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon"
+status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon · S12 invariant RULED KEEP 2026-09-15"
 capture_protocol: "Papi's spoken lines = canon · ⧗ = Claude development, strike or keep"
 slice: "Setting System S1–S12 — feeds S4 LAW and S12 FUNCTION of [[oxo-trash-land-seed]]"
 links:
@@ -81,11 +81,13 @@ Named standards the body issues or the range itself imposes:
 | **A resident of the range (a picker)** | The Face Rights | the freedom to dig anywhere the good strata is, not just the claim they hold | poaches an unclaimed or contested face, especially after a slide | loses the claim they did hold, or answers to whichever syndicate runs that face — enforcement with no court behind it |
 | **Someone from the school side (a Spiral resident, DCUS-adjacent)** | The Look-Away | the freedom to know what happened to someone the Feed deleted | looks north anyway, or goes looking for a specific buried thing (a name, a person, a recall) | social cost first (the campus scream-etiquette penalty at world scale), then literal cost if it leads them to a cut |
 
-## ⧗ The S12 invariant
+## The S12 invariant — RULED KEEP 2026-09-15
+
+**RULED 2026-09-15, Papi: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
 
 The seed's candidate is *"Nothing that enters the range comes back as what it was."* It survives, but as a **place invariant about matter and status**, not yet a standards-body invariant about the border itself — the seed's line describes what the range does to things, the body needs a line about what the border does to people trying to cross it. Recommend a sibling, scoped to the standards body specifically:
 
-**Candidate, place-scoped, unruled:** *"No one crosses a cut without being logged; whoever goes off-cut stops being a person the Seal recognizes."*
+**Ruled, place-scoped:** *"No one crosses a cut without being logged; whoever goes off-cut stops being a person the Seal recognizes."*
 
 Falsifiable in-scene per DOCTRINE 0 III: a scene where an off-cut crosser is treated as cargo, denied any appeal, or simply not counted by either side's records, confirms it; a scene where an off-cut crosser is still tracked, named, or granted standing by either polity breaks it. Both the seed's invariant and this one can stand together: the seed governs the *matter* that enters the range, this one governs the *people* the body governs.
 

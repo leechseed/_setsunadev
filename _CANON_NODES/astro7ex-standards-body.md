@@ -5,7 +5,7 @@ entity_id: astro7ex_standards_body
 kind: "standards body — in-world institution; S4 LAW + S6 ECONOMY + S12 FUNCTION rows, unkeyed to a place until the moon question is ruled"
 ip: ASTRO7EX
 trunk: BLACK
-status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon"
+status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon · S12 invariant RULED KEEP 2026-09-15"
 capture_protocol: "Papi's spoken lines = canon · ⧗ = Claude development, strike or keep"
 ruling_that_scopes_it: "Papi 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
 slice: "Setting System S1–S12 — feeds S4 LAW, S6 ECONOMY, S12 FUNCTION of the ASTRO7EX places once keyed"
@@ -75,9 +75,11 @@ Two candidate readings.
 | A newcomer who did not preserve | the Self-Put Rule, with no reserve of their own | the right to eat without first paying the labor that earns it | borrows against future labor, or eats from communal stores as a debt | fed last, held outside the belonging gradient until a batch bears their name |
 | A child born up there | the same rule, inherited before they can consent to it | the very idea of fresh food, or food from outside the loop | craves or imagines Earth food, trades for a scrap smuggled in by visiting crew | read by the culture as still foreign, still "learning to belong," until their first put-up batch |
 
-## ⧗ The S12 invariant candidate
+## The S12 invariant — RULED KEEP 2026-09-15
 
-**Candidate, unruled: no person aboard [place, once keyed] eats a ration they did not put up themselves or receive, sealed and named, from a member of their own community.**
+**RULED 2026-09-15, Papi: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
+
+**Ruled: no person aboard [place, once keyed] eats a ration they did not put up themselves or receive, sealed and named, from a member of their own community.**
 
 It forbids two things at once: food of anonymous origin crossing a table, and food eaten from a seal with no name attached to it. A scene tests it the moment someone offers an unlogged jar, salvaged, traded, or unmarked, and a character eats from it on camera; the story can then charge them exactly what the table above says a preserver or a newcomer pays.
 
