@@ -714,5 +714,11 @@
   "st": "ruled",
   "d": "The whole operation under HOTLINE ACTUAL: BLACK, ORANGE and OPERATOR together. RULED 2026-09-16 (\"let's go with command\") from a bench of ten on BOLO 48; \"the house\" is retired as the word. Marine usage: the authority a unit answers to. Command standard, the Command's ladder, Command-native; \"organic\" replaces in-house.",
   "w": "SOP.md §2 · §5 · BOLO 48"
+ },
+ "bolo18": {
+  "t": "BOLO 18",
+  "k": "item",
+  "d": "The two-stage spine sweep: every source in the Zotero library keyed to the story spine's shelves, then distilled shelf by shelf into the plot, setting and character models. Reopened 9/16 as the gate on all story-side work; the full pass keyed all 1,031 items the same night.",
+  "w": "BOLO.md #18 · _tools/zotero/README.md · DOPE SHEET 18 https://claude.ai/artifact/CRVaYBt5GBFp7inyXYG3C5"
  }
 }
