@@ -95,7 +95,7 @@
   /* ---- app frame ---- */
   .app {
     height: 100vh; display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto minmax(0, 1fr) auto;
     grid-template-columns: 236px minmax(0, 1fr) 316px;
     grid-template-areas: "head head head" "ol panel rail" "foot foot foot";
   }
@@ -106,13 +106,16 @@
   .brand { display: flex; flex-direction: column; justify-content: center; padding: 10px 18px; border-right: 1px solid var(--line); min-width: 236px; }
   .brand h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; letter-spacing: .02em; text-transform: uppercase; }
   .brand h1 i { display: inline-block; width: 10px; height: 10px; background: var(--accent); margin-right: 8px; transform: translateY(-2px); }
-  .brand .sub { font-family: var(--mono); font-size: 12px; color: var(--ink-2); margin-top: 4px; letter-spacing: .04em; }
-  .stats { display: flex; align-items: stretch; flex: 1; overflow-x: auto; }
-  .stat { display: flex; flex-direction: column; justify-content: center; padding: 8px 18px; border-right: 1px solid var(--line); min-width: 120px; }
-  .stat b { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; }
-  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: 4px; white-space: nowrap; }
+  .brand .sub { font-family: var(--mono); font-size: 12px; color: var(--ink-2); margin-top: 4px; letter-spacing: .04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 236px; }
+  /* the stat strip never wraps: one fixed-height band, tiles scroll sideways, long values ellipsize (Papi 9/16: the top row was stacking and eating the panel) */
+  .stats { display: flex; align-items: stretch; flex: 1 1 0; min-width: 0; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
+  .stat { display: flex; flex-direction: column; justify-content: center; padding: 6px 16px; border-right: 1px solid var(--line); flex: 1 1 0; min-width: 112px; max-width: 260px; overflow: hidden; }
+  .stat b { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stat b.line { font-family: var(--body); font-weight: 700; font-size: 15px; line-height: 1.2; }
+  .stat small { display: block; font-family: var(--mono); font-size: 11px; line-height: 1.3; color: var(--ink-2); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stat > span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .stat.s-hot b { color: var(--accent); } .stat.s-warn b { color: var(--warn); } .stat.s-bad b { color: var(--bad); } .stat.s-good b { color: var(--good); }
-  .box { display: flex; align-items: center; gap: 16px; padding: 0 18px; border-left: 1px solid var(--line); }
+  .box { display: flex; align-items: center; gap: 16px; padding: 0 18px; border-left: 1px solid var(--line); flex: 0 0 auto; white-space: nowrap; }
   .light { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12px; }
   .light i { width: 9px; height: 9px; border-radius: 50%; background: var(--bad); box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 22%, transparent); }
   .light.up i { background: var(--good); box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 22%, transparent); }
@@ -134,11 +137,12 @@
   .gent p { margin: 0; font-size: 15.5px; line-height: 1.45; }
   .gent .w { margin-top: 6px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
   .ol-row.gl-row { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 14px; }
-  .effort { grid-column: 1 / -1; display: flex; gap: 22px; align-items: center; padding: 6px 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--ink-2); flex-wrap: wrap; }
+  .effort { grid-column: 1 / -1; display: flex; gap: 22px; align-items: center; height: 34px; padding: 0 18px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--ink-2); flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
+  .effort > span { flex: 0 0 auto; }
   .effort b { color: var(--bad); font-weight: 500; }
   .effort .k { color: var(--ink-3); letter-spacing: .1em; text-transform: uppercase; font-size: 10.5px; margin-right: 6px; }
-  header.head { flex-wrap: wrap; }
-  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; }
+  header.head { flex-wrap: wrap; flex: 0 0 auto; max-height: 118px; overflow: hidden; }
+  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; height: 82px; min-width: 0; }
 
   /* ---- outliner · the strand (CK3 R12) ---- */
   nav.ol { grid-area: ol; border-right: 1px solid var(--line-2); padding: 18px 0 18px 0; overflow-y: auto; position: relative; background: color-mix(in srgb, var(--panel) 55%, transparent); }
@@ -316,6 +320,9 @@
     .frame::before, .frame::after { display: none; }
     aside.rail { border-left: 0; border-top: 1px solid var(--line-2); }
     .brand { min-width: 0; }
+    header.head { max-height: none; }
+    header.head > .row { height: auto; flex-wrap: wrap; }
+    .effort { height: auto; flex-wrap: wrap; white-space: normal; overflow: visible; padding: 6px 18px; }
     .bar-row { grid-template-columns: 30px 1fr 60px; }
     .bar-row .tr, .bar-row .track, .bar-row .c, .bar-row .s { display: none; }
     .soi .row { grid-template-columns: 1fr; gap: 4px; }
@@ -397,7 +404,14 @@ function trunk(t) {
 /* ---- header ---- */
 const M = B.meta;
 $('#brandSub').textContent = `${M.date} · ${M.when} · ${M.version}`;
-$('#stats').innerHTML = M.stats.map(s => `<div class="stat s-${s.s || ''}"><b class="num">${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join('');
+const splitStat = v => {
+  v = String(v == null ? '' : v).trim();
+  let m = v.match(/^(\d[\d,.]*(?:\s?[%kKxX])?)\s*(.*)$/s) || v.match(/^([A-Z][A-Z0-9\/]{1,10})\s*(.*)$/s);
+  if (m) return { big: m[1], rest: m[2].replace(/^[\s·;:,\-]+/, ''), line: false };
+  return { big: v, rest: '', line: true };
+};
+$('#stats').innerHTML = M.stats.map(s => { const p = splitStat(s.v);
+  return `<div class="stat s-${s.s || ''}" title="${esc(s.k)}: ${esc(s.v)}"><b class="num${p.line ? ' line' : ''}">${esc(p.big)}</b>${p.rest ? `<small>${esc(p.rest)}</small>` : ''}<span>${esc(s.k)}</span></div>`; }).join('');
 $('#box').innerHTML = M.box.map(b => `<div class="light ${b.up ? 'up' : ''}"><i></i><a class="t" data-t="${b.k}" tabindex="0">${esc(b.name)}</a><small>${esc(b.port)} · ${b.up ? 'UP' : 'DOWN'}</small></div>`).join('')
   + `<a class="gloss" id="glossBtn" href="${SOI_URL}" target="_blank" rel="noopener" title="G">SOI<small>the brevity</small></a>`;
 $('#effort').innerHTML = `<span><span class="k">main effort</span>${md(M.main_effort)}</span>`
