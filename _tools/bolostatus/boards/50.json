@@ -1,320 +1,338 @@
 {
-  "bolo": {
-    "n": 50,
-    "title": "The standards campaign — every level of the operation as a standards organization",
-    "trunk": "BLACK/ORANGE/OPERATOR",
-    "issued": "2026-09-11",
-    "asof": "2026-09-11",
-    "s": "hot",
-    "status": "RESEARCH PHASE · the harvest banked as a locus · the register LANDED 9/11 · the house ladder is your call",
-    "decider": "HOTLINE ACTUAL",
-    "feeds": "SOP · the project flow · the design system · the story systems (DCUS · Trash Land · ASTRO7EX as in-world standards bodies) · BVX-LEARN",
-    "related": [
-      {
-        "n": 41,
-        "why": "LOCI: this is filed as a locus"
-      },
-      {
-        "n": 25,
-        "why": "the project flow is a house standard"
-      },
-      {
-        "n": 34,
-        "why": "the WATCH register was built on MIL-STD-1472 and FAA HF-STD-001, the first standards pull"
-      },
-      {
-        "n": 32,
-        "why": "the marking SOP is a house standard"
-      }
-    ],
-    "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
-    "card": "none",
-    "version": "v0.1 · DOPE SHEET"
-  },
-  "mantra": [
-    {
-      "k": "speed",
-      "w": "Speed",
-      "line": "Standards are speed: every ruled format is a decision nobody makes twice. That is the whole edge you named."
-    },
-    {
-      "k": "focus",
-      "w": "Focus",
-      "line": "One register, tiered the way NASA tiers: policy, procedural requirement, standard, handbook. The house already has all four; it has not called them that."
-    },
-    {
-      "k": "boldness",
-      "w": "Boldness",
-      "line": "Derive standards from work already done, the way SOP §8 grows a row per catch. Never write a standard ahead of the work: that is the stall pattern in a suit."
-    }
+ "bolo": {
+  "n": 50,
+  "title": "The standards campaign — every level of the operation as a standards organization",
+  "trunk": "BLACK/ORANGE/OPERATOR",
+  "issued": "2026-09-11",
+  "asof": "2026-09-15",
+  "s": "hot",
+  "status": "RESEARCH DONE 9/11 · the register on disk · the house ladder is your call · 9/15: the first house standard (BOLO 53) filed ahead of the ladder at rung STANDARD, placement provisional until you rule the tiers.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "SOP · the project flow · the design system · the story systems (DCUS · Trash Land · ASTRO7EX as in-world standards bodies) · BVX-LEARN",
+  "related": [
+   {
+    "n": 41,
+    "why": "LOCI: this is filed as a locus"
+   },
+   {
+    "n": 25,
+    "why": "the project flow is a house standard"
+   },
+   {
+    "n": 34,
+    "why": "the WATCH register was built on MIL-STD-1472 and FAA HF-STD-001, the first standards pull"
+   },
+   {
+    "n": 32,
+    "why": "the marking SOP is a house standard"
+   },
+   {
+    "n": 53,
+    "why": "the first house standard filed on this ladder; its rung is provisional until phase 3 here is ruled"
+   }
   ],
-  "frago": {
-    "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
-    "order": "**Read the register, then rule the house ladder.** NASA four is the recommendation.",
-    "default": "Silence: the register sits beside the locus; nothing house-side is written until the ladder is ruled.",
-    "calls": [
-      {
-        "q": "The house tiers",
-        "options": "adopt the NASA four (policy → procedural requirement → standard → handbook) as the house ladder, or the DoD three (STD · HDBK · SPEC), or name your own",
-        "default": "NASA four, provisional",
-        "s": "open"
-      },
-      {
-        "q": "Where it files",
-        "options": "a locus under BVX-LEARN (as now) · a new 05_OPERATIONS/STANDARDS/ domain · both, locus for research and OPERATIONS for the ruled house standards",
-        "default": "both, when the first house standard is ruled",
-        "s": "open"
-      },
-      {
-        "q": "The name",
-        "options": "this BOLO needs a campaign name; bench on BOLO 48 when you want one",
-        "default": "the standards campaign",
-        "s": "open"
-      }
-    ]
+  "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
+  "card": "none",
+  "version": "v0.2 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Standards are speed: every ruled format is a decision nobody makes twice. That is the whole edge you named."
   },
-  "paragraphs": [
-    {
-      "id": "S",
-      "name": "Situation",
-      "kind": "list",
-      "plain": "What you found, what you asked, and where it stands.",
-      "strand": {
-        "last": "A deep-research session on standards bodies; a harvest of about 65 links.",
-        "plan": "Bank the harvest, pull what each link holds, organize by domain and tier, map to the house.",
-        "you": "You said every level is a standards organization and this is a campaign.",
-        "next": "The register."
-      },
-      "groups": [
-        {
-          "label": "The transmission · 9/11",
-          "items": [
-            {
-              "t": "**\"What I've been doing right now is just the standards of the organization and the process and application of everything.\"** The SOP, the project flow, the marking SOP, the WATCH register, the character system, the lattice: all house standards, none filed as such.",
-              "s": "ruled"
-            },
-            {
-              "t": "**Every level is a standards body:** the house (BLACK · ORANGE · OPERATOR), and inside the projects: DCUS has rules, Trash Land is a DMZ, ASTRO7EX has a cuisine. \"The greatest dynamic of story is the battle between the individual and society for freedom and standard.\"",
-              "s": "ruled"
-            },
-            {
-              "t": "**The ask:** most links are lists, not standards. Pull whatever each one holds; organize it the best way possible. This is the research phase of a campaign.",
-              "s": "ruled"
-            }
-          ]
-        },
-        {
-          "label": "Done · 9/11",
-          "items": [
-            {
-              "t": "**The harvest banked** as a locus on the BOLO 41 convention: _0.1_BVX_LEARN/LOCI/standards.locus.md, every link grouped (single standards · industry lists · organizations and catalogs · the NASA and MIL families).",
-              "s": "done"
-            },
-            {
-              "t": "**The register landed** — `standards.register.md`: how nine bodies tier their documents · one table of about 65 rows by domain, mapped to house areas (lighting and human factors 12 · quality 9 · aerospace and defense 7 · imaging and print 6 · security and privacy 5 · software and systems 5 · metadata 5 · risk and management 4 · AI 3 · symbols 2 · project management 1 · reference-only 6) · the gaps · the free sources. Every ANSI webstore page returned 403; those rows are built from search snippets and slug decoding, flagged in the Source column.",
-              "s": "done",
-              "when": "9/11"
-            },
-            {
-              "t": "**Three findings that matter:** ESTA's E1.x entertainment-tech standards are free (donation-funded), a clean WARROOM lighting resource · the IES lighting cluster, the harvest's biggest, is paid-only, no free tier · EverySpec plus DLA ASSIST mirror every DoD and NASA directive tier for free, the strongest anchor for the house ladder. NATO NSO's public page 404'd; SAE AS264F's scope is unconfirmed.",
-              "s": "done",
-              "when": "9/11"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "M",
-      "name": "Mission",
-      "kind": "mission",
-      "plain": "The task and the reason.",
-      "strand": {
-        "last": "The house has been writing standards since 8/21 without a shelf for them.",
-        "plan": "A shelf, a ladder, a network.",
-        "you": "You named the edge: standardization and automation as speed.",
-        "next": "The register, then the first ruled tier."
-      },
-      "task": "Build and keep a networked library of standards, outside and house-made, at every level,",
-      "intent": "in order to never decide a format twice, and to give the stories their societies.",
-      "spoken": "\"This is almost like a campaign… a giant push to really conquer this area… standardization and automation on our side give us that speed.\"",
-      "endstate": [
-        "A register of outside standards by domain, tiered, mapped to the house, with free sources.",
-        "A house ladder (policy · requirement · standard · handbook) with every existing house standard filed on a rung.",
-        "Each project carries its in-world standards body as canon, reachable from the same register."
-      ]
-    },
-    {
-      "id": "E",
-      "name": "Execution",
-      "kind": "phases",
-      "plain": "Research first. Nothing house-side is written until the register is read.",
-      "strand": {
-        "last": "Phase 1 landed in minutes.",
-        "plan": "Pull, read, rule the ladder, file what exists, then derive.",
-        "you": "Phase 3 is a reading and one ruling.",
-        "next": "The agent's register."
-      },
-      "main_effort": "The register, read. Everything else waits on it.",
-      "phases": [
-        {
-          "n": 1,
-          "t": "**Bank the harvest** as a locus.",
-          "s": "done",
-          "when": "9/11"
-        },
-        {
-          "n": 2,
-          "t": "**The pull** — one agent, 38 calls, the register file.",
-          "s": "done",
-          "when": "9/11"
-        },
-        {
-          "n": 3,
-          "t": "**Read and rule the house ladder** — NASA four or DoD three.",
-          "s": "gated",
-          "when": "yours"
-        },
-        {
-          "n": 4,
-          "t": "**File what exists** — SOP · project flow · marking SOP · WATCH register · lattice · character system · the register formats, each on a rung, each with its outside parents.",
-          "s": "gated",
-          "when": "after 3"
-        },
-        {
-          "n": 5,
-          "t": "**The story side** — each world's standards body as a canon node (DCUS · Trash Land · ASTRO7EX), the individual-versus-society dynamic written as the setting system's S12 invariant.",
-          "s": "gated",
-          "when": "after 4"
-        },
-        {
-          "n": 6,
-          "t": "**The network** — links between rungs, projects and outside parents; browsable on the WARROOM pattern.",
-          "s": "gated",
-          "when": "later"
-        }
-      ],
-      "coord": [
-        "Filed on the LOCI convention (BOLO 41): locus × methods × neighbors × feeds × sources × tier.",
-        "Derive from work done; never write a standard ahead of the work.",
-        "Free copies first: EverySpec, NASA NODIS, DSP ASSIST, NATO NSO. Paywalled ISO text is never needed for the ladder, only for the content of a specific standard."
-      ],
-      "running": [
-        "Nothing."
-      ]
-    },
-    {
-      "id": "A",
-      "name": "Admin & Logistics",
-      "kind": "files",
-      "plain": "Where it lives.",
-      "strand": {
-        "last": "Two files in the locus folder.",
-        "plan": "The register grows; the ladder gets its own file when ruled.",
-        "you": "Zero dollars; ISO text stays unbought.",
-        "next": "One reading."
-      },
-      "files": [
-        {
-          "path": "_0.1_BVX_LEARN/LOCI/standards.locus.md",
-          "what": "the harvest and the transmission",
-          "s": "done"
-        },
-        {
-          "path": "_0.1_BVX_LEARN/LOCI/standards.register.md",
-          "what": "the organized pull (agent)",
-          "s": "done"
-        },
-        {
-          "path": "BOLO.md · row 50",
-          "what": "the tasking",
-          "s": "done"
-        }
-      ],
-      "cost": [
-        {
-          "k": "the pull",
-          "v": "one agent"
-        },
-        {
-          "k": "the ladder",
-          "v": "one reading, one ruling"
-        },
-        {
-          "k": "dollars",
-          "v": "0 — free sources only"
-        }
-      ]
-    },
-    {
-      "id": "C",
-      "name": "Command & Signal",
-      "kind": "list",
-      "plain": "Who calls what.",
-      "strand": {
-        "last": "Opened on a break-break.",
-        "plan": "One decider.",
-        "you": "The ladder, the filing, the name.",
-        "next": "Read the register."
-      },
-      "groups": [
-        {
-          "label": "Who decides",
-          "items": [
-            {
-              "t": "**Papi** — the ladder · where it files · the campaign name · every house standard's ruling. **Claude** — the pull, the register, the filing pass, the derivations.",
-              "s": "open"
-            }
-          ]
-        },
-        {
-          "label": "The gate",
-          "items": [
-            {
-              "t": "**Research phase.** Nothing house-side is written until the register is read and the ladder ruled.",
-              "s": "held"
-            }
-          ]
-        },
-        {
-          "label": "Prowords in play",
-          "items": [
-            {
-              "t": "[[break-break|break-break]] — this thread opened on one; buttonhook back closes it · **DOPE SHEET 50** — this page.",
-              "s": "open"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "L",
-      "name": "Log",
-      "kind": "log",
-      "plain": "Every transmission.",
-      "strand": {
-        "last": "Two entries.",
-        "plan": "One per transmission.",
-        "you": "One is yours.",
-        "next": "The register lands."
-      },
-      "entries": [
-        {
-          "when": "9/11",
-          "who": "Papi",
-          "t": "Break-break: the standards campaign. About 65 links; \"pull whatever you can from each one and organize the data\"; every level a standards organization; \"how copy.\""
-        },
-        {
-          "when": "9/11",
-          "who": "Claude",
-          "t": "BOLO 50 captured; harvest banked as a locus; the register agent launched; this sheet built."
-        },
-        {
-          "when": "9/11",
-          "who": "agent",
-          "t": "standards.register.md landed: 65 rows, nine bodies tiered, gaps, free sources. ANSI 403s worked around by slug decoding."
-        }
-      ]
-    }
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One register, tiered the way NASA tiers: policy, procedural requirement, standard, handbook. The house already has all four; it has not called them that."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Derive standards from work already done, the way SOP §8 grows a row per catch. Never write a standard ahead of the work: that is the stall pattern in a suit."
+  }
+ ],
+ "frago": {
+  "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
+  "order": "**Read the register, then rule the house ladder.** NASA four is the recommendation (policy → procedural requirement → standard → handbook). The ladder now has a tenant waiting: BOLO 53's development standard sits at rung STANDARD until the tiers are named.",
+  "default": "Silence: the register sits beside the locus; the development standard keeps its provisional rung; nothing else house-side is filed until the ladder is ruled.",
+  "calls": [
+   {
+    "q": "The house tiers",
+    "options": "adopt the NASA four (policy → procedural requirement → standard → handbook) as the house ladder, or the DoD three (STD · HDBK · SPEC), or name your own",
+    "default": "NASA four, provisional",
+    "s": "open"
+   },
+   {
+    "q": "Where it files",
+    "options": "a locus under BVX-LEARN (as now) · a new 05_OPERATIONS/STANDARDS/ domain · both, locus for research and OPERATIONS for the ruled house standards",
+    "default": "the first house standard is filed (BOLO 53, 9/15, in 05_OPERATIONS beside the project flow); the register stays in LOCI; both link once the ladder is ruled",
+    "s": "open"
+   },
+   {
+    "q": "The name",
+    "options": "this BOLO needs a campaign name; bench on BOLO 48 when you want one",
+    "default": "the standards campaign",
+    "s": "open"
+   }
   ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What you found, what you asked, and where it stands.",
+   "strand": {
+    "last": "A deep-research session on standards bodies; a harvest of about 65 links.",
+    "plan": "Bank the harvest, pull what each link holds, organize by domain and tier, map to the house.",
+    "you": "You said every level is a standards organization and this is a campaign.",
+    "next": "The register."
+   },
+   "groups": [
+    {
+     "label": "The transmission · 9/11",
+     "items": [
+      {
+       "t": "**\"What I've been doing right now is just the standards of the organization and the process and application of everything.\"** The SOP, the project flow, the marking SOP, the WATCH register, the character system, the lattice: all house standards, none filed as such.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Every level is a standards body:** the house (BLACK · ORANGE · OPERATOR), and inside the projects: DCUS has rules, Trash Land is a DMZ, ASTRO7EX has a cuisine. \"The greatest dynamic of story is the battle between the individual and society for freedom and standard.\"",
+       "s": "ruled"
+      },
+      {
+       "t": "**The ask:** most links are lists, not standards. Pull whatever each one holds; organize it the best way possible. This is the research phase of a campaign.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Done · 9/11",
+     "items": [
+      {
+       "t": "**The harvest banked** as a locus on the BOLO 41 convention: _0.1_BVX_LEARN/LOCI/standards.locus.md, every link grouped (single standards · industry lists · organizations and catalogs · the NASA and MIL families).",
+       "s": "done"
+      },
+      {
+       "t": "**The register landed** — `standards.register.md`: how nine bodies tier their documents · one table of about 65 rows by domain, mapped to house areas (lighting and human factors 12 · quality 9 · aerospace and defense 7 · imaging and print 6 · security and privacy 5 · software and systems 5 · metadata 5 · risk and management 4 · AI 3 · symbols 2 · project management 1 · reference-only 6) · the gaps · the free sources. Every ANSI webstore page returned 403; those rows are built from search snippets and slug decoding, flagged in the Source column.",
+       "s": "done",
+       "when": "9/11"
+      },
+      {
+       "t": "**Three findings that matter:** ESTA's E1.x entertainment-tech standards are free (donation-funded), a clean WARROOM lighting resource · the IES lighting cluster, the harvest's biggest, is paid-only, no free tier · EverySpec plus DLA ASSIST mirror every DoD and NASA directive tier for free, the strongest anchor for the house ladder. NATO NSO's public page 404'd; SAE AS264F's scope is unconfirmed.",
+       "s": "done",
+       "when": "9/11"
+      }
+     ]
+    },
+    {
+     "label": "Since the sheet",
+     "items": [
+      {
+       "t": "**9/15 · BOLO 53 opened and filed.** The house's own development standard (the boresight → how-copy → build → FRAGO loop as an iterative-incremental life cycle) is on disk beside the project flow. Its rung is STANDARD, provisional: the placement is ruled, the ladder it sits on is not.",
+       "s": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "The task and the reason.",
+   "strand": {
+    "last": "The house has been writing standards since 8/21 without a shelf for them.",
+    "plan": "A shelf, a ladder, a network.",
+    "you": "You named the edge: standardization and automation as speed.",
+    "next": "The register, then the first ruled tier."
+   },
+   "task": "Build and keep a networked library of standards, outside and house-made, at every level,",
+   "intent": "in order to never decide a format twice, and to give the stories their societies.",
+   "spoken": "\"This is almost like a campaign… a giant push to really conquer this area… standardization and automation on our side give us that speed.\"",
+   "endstate": [
+    "A register of outside standards by domain, tiered, mapped to the house, with free sources.",
+    "A house ladder (policy · requirement · standard · handbook) with every existing house standard filed on a rung.",
+    "Each project carries its in-world standards body as canon, reachable from the same register."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Research first. Nothing house-side is written until the register is read.",
+   "strand": {
+    "last": "Phase 1 landed in minutes.",
+    "plan": "Pull, read, rule the ladder, file what exists, then derive.",
+    "you": "Phase 3 is a reading and one ruling.",
+    "next": "Phase 3 is the only gate. Rule the tiers and phase 4 files the rest in one pass, BOLO 53 already in place."
+   },
+   "main_effort": "The register, read. Everything else waits on it.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**Bank the harvest** as a locus.",
+     "s": "done",
+     "when": "9/11"
+    },
+    {
+     "n": 2,
+     "t": "**The pull** — one agent, 38 calls, the register file.",
+     "s": "done",
+     "when": "9/11"
+    },
+    {
+     "n": 3,
+     "t": "**Read and rule the house ladder** — NASA four or DoD three.",
+     "s": "gated",
+     "when": "yours"
+    },
+    {
+     "n": 4,
+     "t": "**File what exists** — SOP · project flow · marking SOP · WATCH register · lattice · character system · the rest. One filed early on Papi's open: the development standard (BOLO 53, 9/15) at rung STANDARD, provisional.",
+     "s": "gated",
+     "when": "after 3"
+    },
+    {
+     "n": 5,
+     "t": "**The story side** — each world's standards body as a canon node (DCUS · Trash Land · ASTRO7EX), the individual-versus-society dynamic written as the setting system's S12 invariant.",
+     "s": "gated",
+     "when": "after 4"
+    },
+    {
+     "n": 6,
+     "t": "**The network** — links between rungs, projects and outside parents; browsable on the WARROOM pattern.",
+     "s": "gated",
+     "when": "later"
+    }
+   ],
+   "coord": [
+    "Filed on the LOCI convention (BOLO 41): locus × methods × neighbors × feeds × sources × tier.",
+    "Derive from work done; never write a standard ahead of the work.",
+    "Free copies first: EverySpec, NASA NODIS, DSP ASSIST, NATO NSO. Paywalled ISO text is never needed for the ladder, only for the content of a specific standard."
+   ],
+   "running": [
+    "Nothing."
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where it lives.",
+   "strand": {
+    "last": "Two files in the locus folder.",
+    "plan": "The register grows; the ladder gets its own file when ruled.",
+    "you": "Zero dollars; ISO text stays unbought.",
+    "next": "One reading."
+   },
+   "files": [
+    {
+     "path": "_0.1_BVX_LEARN/LOCI/standards.locus.md",
+     "what": "the harvest and the transmission",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/LOCI/standards.register.md",
+     "what": "the organized pull (agent)",
+     "s": "done"
+    },
+    {
+     "path": "BOLO.md · row 50",
+     "what": "the tasking",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "the pull",
+     "v": "one agent"
+    },
+    {
+     "k": "the ladder",
+     "v": "one reading, one ruling"
+    },
+    {
+     "k": "dollars",
+     "v": "0 — free sources only"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what.",
+   "strand": {
+    "last": "Opened on a break-break.",
+    "plan": "One decider.",
+    "you": "The ladder, the filing, the name.",
+    "next": "Read the register."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**Papi** — the ladder · where it files · the campaign name · every house standard's ruling. **Claude** — the pull, the register, the filing pass, the derivations.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Research phase.** Nothing house-side is written until the register is read and the ladder ruled.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "Prowords in play",
+     "items": [
+      {
+       "t": "[[break-break|break-break]] — this thread opened on one; buttonhook back closes it · **DOPE SHEET 50** — this page.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission.",
+   "strand": {
+    "last": "Two entries.",
+    "plan": "One per transmission.",
+    "you": "One is yours.",
+    "next": "The register lands."
+   },
+   "entries": [
+    {
+     "when": "9/11",
+     "who": "Papi",
+     "t": "Break-break: the standards campaign. About 65 links; \"pull whatever you can from each one and organize the data\"; every level a standards organization; \"how copy.\""
+    },
+    {
+     "when": "9/11",
+     "who": "Claude",
+     "t": "BOLO 50 captured; harvest banked as a locus; the register agent launched; this sheet built."
+    },
+    {
+     "when": "9/11",
+     "who": "agent",
+     "t": "standards.register.md landed: 65 rows, nine bodies tiered, gaps, free sources. ANSI 403s worked around by slug decoding."
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "FRAGO 50: BOLO 53 opened 9/15 on Papi's word and filed its standard at rung STANDARD ahead of the ladder; related row added; phase 4 and the filing call updated. Order unchanged: rule the ladder."
+    }
+   ]
+  }
+ ]
 }
