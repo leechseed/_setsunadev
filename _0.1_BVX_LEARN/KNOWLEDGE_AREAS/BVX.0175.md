@@ -8,8 +8,12 @@ source_type: published-book
 subjects: [CRE, LIT]
 primary_subject: CRE
 trunk: BLACK
-spine: [L4, L6, L0]
+spine: [L4, L6, L0, SETTING]
 feeds:
+  - layer: SETTING
+    variable: s4_law
+    strength: supporting
+    note: "'A story must obey its own internal laws of probability' — a fictional world's setting sharply defines and confines which events are possible, the same rules-that-bind territory S4 LAW holds. Supporting because McKee states it as a general principle of setting, not a per-layer schema."
   - layer: DRAMATICA
     variable: plot_progression
     strength: contextual
@@ -43,6 +47,7 @@ McKee's founding text, prior to *Character* (BVX.0064) by 24 years — the plot 
 - [Invariants](#6--invariants)
 - [Pitfalls](#7--pitfalls--myths)
 - [Application](#8--application)
+- [Setting Addendum](#8b--setting-addendum-added-2026-09-16-the-setting-wave)
 - [Cross-References](#9--cross-references)
 - [Provenance](#10--provenance--confidence)
 

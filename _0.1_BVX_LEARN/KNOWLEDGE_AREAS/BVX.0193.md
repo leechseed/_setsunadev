@@ -8,8 +8,12 @@ source_type: book
 subjects: [CRE]
 primary_subject: CRE
 trunk: BLACK
-spine: [L4, L5, L6]
+spine: [L4, L5, L6, SETTING]
 feeds:
+  - layer: SETTING
+    variable: s11_vector
+    strength: supporting
+    note: "Truby's hero-world mirroring law (an enslaving world for an enslaved hero, a freeing world at the endpoint, tracked through seven named hero/world correlation patterns) is direct material for S11 VECTOR — the setting's own trajectory — and for Axis 4's dated-state arc. Supporting because it is a design law inferred from many examples, not a schema Truby names himself."
   - layer: L6
     variable: need_desire
     strength: supporting
@@ -47,6 +51,7 @@ The organic-plot counterweight to Dramatica's structural spine: where the house'
 - [Invariants](#6-invariants)
 - [Pitfalls](#7-pitfalls--myths)
 - [Application](#8-application)
+- [Setting Addendum](#8b-setting-addendum-added-2026-09-16-the-setting-wave)
 - [Cross-References](#9-cross-references)
 - [Provenance](#10-provenance--confidence)
 
@@ -237,6 +242,55 @@ Truby never mentions Dramatica; the L4/L5/L6 keying above is this distill's synt
 
 ---
 
+## 8b · SETTING ADDENDUM (added 2026-09-16, the setting wave)
+
+*Sourced from Ch.6, "Story World" — sampled at heading level only in the original pass (see §10); pulled full-text for this addendum.*
+
+Truby's Chapter 6 argues that the story world is not backdrop but a third body growing from the same designing principle as premise and character: an arena bounded like a stage, textured by natural settings, man-made spaces, and technology, must mirror the hero's psychology one-to-one — an enslaving world for an enslaved hero, a freeing one at the endpoint. The world's own development, tracked through natural time (seasons, holidays) and through a "visual seven steps" that assigns a distinct subworld to each of the seven key structure beats, is the mechanism by which setting stops being scenery and starts pressuring the story.
+
+**Truby's setting tools, mapped onto the setting system:**
+
+| Truby tool | What it does | Setting-system axis / S-layer |
+|---|---|---|
+| The arena | A single bounded place ("surrounded by some kind of wall"); four techniques (umbrella, single-line journey, circular journey, fish-out-of-water) keep multiple locations organically one | Axis 1 SCALE — the bounding address a scene plays within |
+| Oppositions within the arena | Character-web value conflicts (Gatsby's four-corner opposition, Pottersville/Bedford Falls) translated into visual/spatial oppositions | S12 FUNCTION + Axis 3 FUNCTION → Argue mode |
+| Natural settings catalogue | Fixed connotation bank for ocean, forest, jungle, desert/ice, island, mountain, plain, river — each "carries a multitude of meanings" | S3 SENSORIUM |
+| Weather correlations | Lightning = passion/terror, rain = sadness, fog = mystery — "a powerful physical representation of the inner experience" | S2 WEATHER |
+| Man-made spaces (house, road, city) | House = intimacy, safety-vs-adventure, cellar-vs-attic; city-as-institution = the social machine in microcosm | S1 BODY + S4 LAW (institution) |
+| Miniature | A society shrunk down that shows "levels of order" at a glance | S3 SENSORIUM (condensed presentation) |
+| Passageway between worlds | A threshold device (rabbit hole, wardrobe, mirror) that moves a character between two subworlds and signals "the rules are about to change" | No current axis/layer — see finding below |
+| Technology (tools) | Extensions of the human form; shows how a character's power is magnified and how a system exercises power over him | S6 ECONOMY |
+| World mirrors the hero | The world's arc (slavery↔freedom, seven named hero/world correlation patterns) tracks the hero's arc one-to-one | S11 VECTOR |
+| The visual seven steps | Each of the seven key structure beats gets its own distinct subworld | Axis 4 TIME (dated states) / the SCENE CARD's `setting: slice + state` field |
+
+**Diagram 4 — Truby's story-world toolkit mapped onto the setting system.**
+Caption: *most of the toolkit slots straight onto an existing axis or layer — only the passageway falls outside the four-axis/twelve-layer grid.*
+
+```mermaid
+flowchart LR
+    Arena --> SCALE[Axis 1 SCALE]
+    Oppositions[Visual oppositions] --> S12[S12 FUNCTION]
+    NaturalSettings[Natural settings] --> S3a[S3 SENSORIUM]
+    Weather --> S2[S2 WEATHER]
+    ManMadeSpaces[House / road / city] --> S1[S1 BODY]
+    Institution --> S4[S4 LAW]
+    Miniature --> S3a
+    Technology --> S6[S6 ECONOMY]
+    WorldMirrorsHero[World mirrors hero] --> S11[S11 VECTOR]
+    VisualSevenSteps[Visual seven steps] --> Axis4[Axis 4 TIME states]
+    Passageway -.no current home.-> GAP[OPEN]
+```
+
+**Quotes (Ch.6, verbatim):**
+
+- "You don't create characters to fill a story world, no matter how fabulous that world may be. You create a story world to express and manifest your characters, especially your hero."
+- "Always ask yourself, how is the world of slavery an expression of my hero's great weakness? The world should embody, highlight, or accentuate your hero's weakness or draw it out in its worst form."
+- "A passageway... is a kind of decompression chamber, allowing your audience to make the transition from the realistic to the fantastic. It tells the audience that the rules of the story world are about to change in a big way."
+
+**What the setting system does not yet hold:** Truby's passageway between worlds — a liminal threshold device that signals a rules-change when a character crosses between two subworlds — has no home in the four axes or twelve layers; candidate for the SSOT's OPEN list.
+
+---
+
 ## 9 · CROSS-REFERENCES
 
 | Related entry | Relation |
@@ -258,4 +312,5 @@ The L4/L5/L6 spine keying and the `feeds:` wiring are this distill's synthesis, 
 ## META
 - Template: BVX-LEARN-v4.0
 - Source classification: full-text book, partial deep extraction (2 of 8 subsystem chapters fully mined, 3 sampled, 3 TOC-only)
+- Setting addendum 2026-09-16 from ch. 6.
 - Created / Updated: 2026-09-16
