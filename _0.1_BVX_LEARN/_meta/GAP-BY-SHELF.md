@@ -1,0 +1,1342 @@
+---
+id: BVX-LEARN.gap-by-shelf
+title: "THE GAP ranked by story-spine shelf"
+type: report
+generated: 2026-09-16
+status: BOLO 18 stage 2 - step 5 (acquisition queue)
+---
+
+# THE GAP by shelf
+
+3768 z-lib favourites not in the library, title rules only (no PDF to read). 1037 hit a story shelf; the rest are off-spine or unreadable by title.
+
+| Shelf | Titles in the gap |
+|---|---|
+| L7 | 353 |
+| SETTING | 297 |
+| TEXTURE | 224 |
+| L4 | 166 |
+| L0 | 80 |
+| L5 | 78 |
+| L6 | 51 |
+| CRAFT-PROCESS | 47 |
+
+## L0 (80)
+
+- Alber; Jan; Fludernik; Monika — Postclassical narratology: approaches and analyses
+- Alexa Weik von Mossner & Marijana Mikić & Mario Grill — Ethnic American Literatures and Critical Race Narratology
+- Alistair Rolls — Agatha Christie and New Directions in Reading Detective Fiction: Narratology and Detective Criticism
+- Ann Fehn (editor); Ingeborg Hoesterey (editor); Maria Tatar (editor) — Neverending Stories: Toward a Critical Narratology
+- Anna Lefteratou — Mythological Narratives: The Bold and Faithful Heroines of the Greek Novel
+- Antonello Boschi — Poetics of Underground Space: Architecture, Literature, Cinema
+- Aristotle — Poetics
+- Aristotle; Joe Sachs — Aristotle: Poetics
+- Arthur Cotterell — The Ultimate Encyclopedia Of Mythology
+- Bernaerts; Lars & Geest; Dirk de & Herman; Luc & Vervaeck; Bart — Stories and Minds: Cognitive Approaches to Literary Narrative
+- Bettinson; Gary — The Sensuous Cinema of Wong Kar-wai: Film Poetics and the Aesthetic of Disturbance
+- Christine Schwanecke — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Firs
+- D'hoker; Elke — Narrative Unreliability in the Twentieth-Century First-Person Novel (Narratologia: Contributions to Narrative Theory Beitrag
+- Daniel Lynwood Smith — The Rhetoric of Interruption: Speech-Making, Turn-Taking, and Rule-Breaking in Luke-Acts and Ancient Greek Narrative
+- Daniel Punday (auth.) — Narrative Bodies: Toward a Corporeal Narratology
+- Daniel Punday — Playing at Narratology: Digital Media as Narrative Theory
+- David Baboulene — Story in Mind: A Constructivist Narratology. The Psychological and Linguistic Foundations to How Stories Work (The Story S
+- David Herman — Narratology Beyond the Human: Storytelling and Animal Life
+- Debra Hawhee (editor); Vessela Valiavitcharska (editor) — The Practice of Rhetoric: Poetics, Performance, Philosophy
+- Divya Dwivedi; Henrik Skov Nielsen; Richard Walsh — Narratology and Ideology: Negotiating Context, Form, and Theory in Postcolonial Narrativ
+- Dorothee Birke (editor); Tilmann Köppe (editor) — Author and Narrator: Transdisciplinary Contributions to a Narratological Debate
+- Emre Çağlayan — Poetics of Slow Cinema: Nostalgia, Absurdism, Boredom
+- Federico De Matteis — Affective Spaces: Architecture and the Living Body
+- Francesca Arnavas — Lewis Carroll's "Alice" and Cognitive Narratology: Author, Reader and Characters
+- Frank Kermode — The Sense of an Ending - Studies in the Theory of Fiction (with a New Epilogue)
+- Greta Olson (editor) — Current Trends in Narratology
+- Greta Olson — Current Trends in Narratology
+- Gunther R. Kress — Multimodality: A Social Semiotic Approach to Contemporary Communication
+- Ian Case Punnett — Toward a Theory of True Crime Narratives: A Textual Analysis
+- Irene J. F. de Jong — Narratology and Classics: A Practical Guide
+- Isidore Okpewho — Blood on the Tides: the Ozidi Saga and Oral Epic Narratology
+- Jan Alber (editor); Greta Olson (editor); Birte Christ (editor) — How to Do Things with Narrative: Cognitive and Diachronic Perspectives
+- Jan Christoph Meister; Wilhelm Schernus (editors) — Time: From Concept to Narrative Construct: A Reader (Narratologia: Contributions to Narr
+- Jan Cristoph Meister — Narratology Beyond Literary Criticism: Mediality and Disciplinarity (Narratologia)
+- Jan-Noël Thon — Transmedial Narratology and Contemporary Media Culture
+- Joela Jacobs — Animal Narratology
+- John Bender (editor); David E. Wellbery (editor) — The Ends of Rhetoric: History, Theory, Practice
+- John Pier (editor) — The Dynamics of Narrative Form: Studies in Anglo-American Narratology
+- Jon Kolko — Exposing the Magic of Design: A Practitioner’s Guide to the Methods and Theory of Synthesis
+- Jonas Grethlein (editor); Antonios Rengakos (editor) — Narratology and Interpretation: The Content of Narrative Form in Ancient Literature
+- Joseph Campbell; David Kudler — Primitive Mythology (The Masks of God Book 1)
+- Kai Mikkonen — The Narratology of Comic Art
+- Lance Lee — A Poetics for Screenwriters
+- Lina Varotsi — Conceptualisation and Exposition: A Theory of Character Construction
+- Marcel Danesi — The Semiotics of Emoji: The Rise of Visual Language in the Age of the Internet
+- Marek Pokropski — Mechanisms and Consciousness: Integrating Phenomenology with Cognitive Science
+- Maria Duffy — Paul Ricoeur's Pedagogy of Pardon: A Narrative Theory of Memory and Forgetting
+- Marie-Laure Ryan; Alice Bell — Possible Worlds Theory And Contemporary Narratology
+- Marie-Laure Ryan; Jan-Noël Thon; C. B. Harvey — Storyworlds across Media: Toward a Media-Conscious Narratology
+- Michael Betancourt — Semiotics and Title Sequences: Text–Image Composites in Motion Graphics
+- Mieke Bal — Narratology: Introduction to the Theory of Narrative
+- Mike Rothschild — The Storm Is Upon Us: How QAnon Became a Movement, Cult, and Conspiracy Theory of Everything
+- N. Katherine Hayles — Unthought: The Power of the Cognitive Nonconscious
+- National Geographic — National Geographic Essential Visual History of World Mythology
+- Paul Emmons; Marcia Feuerstein; Carolina Dayer; Luc Phinney — Confabulations: Storytelling in Architecture
+- Per Krogh Hansen (editor); John Pier (editor); Philippe Roussin (editor); Wolf Schmid (editor) — Emerging Vectors of Narratology
+- Per Krogh Hansen; John Pier; Philippe Roussin; Wolf Schmid (eds.) — Emerging Vectors of Narratology
+- Peter Huhn — Eventfulness in British Fiction (Narratologia: Contributions to Narrative Theory)
+- Peter Hühn; Jens Kiefer — The Narratological Analysis of Lyric Poetry
+- Peter V. Zima — Discourse and Power: An Introduction to Critical Narratology: Who Narrates Whom?
+- Peter Verstraten; Stefan Van der Lecq — Film Narratology
+- Raphaël Baroni; Françoise Revaz (eds.) — Narrative Sequence in Contemporary Narratology
+- Robert Alan Harris — Writing with clarity and style : a guide to rhetorical devices for contemporary writers
+- Ron Sun; (editor) — The Cambridge Handbook of Computational Cognitive Sciences
+- Ruth E. Page (auth.) — Literary and Linguistic Approaches to Feminist Narratology
+- Sabine Schlickers (editor); Vera Toro (editor) — Perturbatory Narration in Film: Narratological Studies on Deception, Paradox and Empuzzleme
+- Sandra Heinen (editor); Roy Sommer (editor) — Narratology in the Age of Cross-Disciplinary Narrative Research
+- Sandra Heinen; Roy Sommer — Narratology in the Age of Cross-Disciplinary Narrative Research (Narratologia)
+- Schwanecke; Christine — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Fir
+- Stefan Thurner; Rudolf Hanel; Peter Klimek — Introduction to the Theory of Complex Systems
+- Takashi Ogata; Jumpei Ono — Bridging the Gap Between Ai, Cognitive Science, and Narratology With Narrative Generation
+- Takashi Ogata; Taisuke Akimoto — Computational and Cognitive Approaches to Narratology
+- Takashi Ogata; Taisuke Akimoto — Post-narratology Through Computational and Cognitive Approaches
+- Tom Kindt; Hans-Harald Muller — The Implied Author: Concept and Controversy (Narratologia 9)
+- Tom Wright — Transatlantic Rhetoric: Speeches from the American Revolution to the Suffragettes
+- Umberto Eco — The Limits of Interpretation (Advances in Semiotics)
+- Vasileios Liotsakis — Plato’s Proto-Narratology: Metanarrative Reflections and Narrative Paradigms
+- Warren Buckland — Wes Anderson’s Symbolic Storyworld : A Semiotic Analysis.
+- Wayne Booth — The Rhetoric of Fiction (2nd Edition)
+- Yunhong Wang — English Translations of Shuihu Zhuan: A Narratological Perspective
+
+## L4 (166)
+
+- A. Trevena — From Sanctity to Sorcery: An Author's Guide to Building Belief Structures and Magic Systems
+- Abigail Rindo — Game Narrative Design and UX Fundamentals; Tools for Player‑Centric Storytelling
+- Adler; Gerhard; Fordham; Michael; Jung; C. G.; Read; Herbert — The structure and dynamics of the psyche
+- Akashdeep Bhardwaj; Keshav Kaushik — Practical Digital Forensics. Forensic Lab Setup, Evidence Analysis, and Structured Investigation Across
+- Alex Bloom — Master Screenplay Sequences: The Ultimate Guide To Making Screenwriting Structure That Much Easier
+- Alexis Weedon — The Origins of Transmedia Storytelling in Early Twentieth Century Adaptation
+- Allen B. Downey — Think Data Structures: Algorithms and Information Retrieval in Java
+- Allen; J. Anthony — Music Theory for Electronic Music Producers: The producer's guide to harmony, chord progressions, and song structure in 
+- Amanda Sikarskie — Storytelling in Luxury Fashion: Brands, Visual Cultures, and Technologies
+- Andrew Charleson — Structure As Architecture: A Source Book for Architects and Structural Engineers
+- Andrew Radford — An Introduction to English Sentence Structure
+- Angus Konstam; Peter Dennis (Illustrated by) — Horatio Nelson - Leadership - Strategy - Conflict
+- Anja Tippner; Anna Artwińska — Narratives of Annihilation, Confinement, and Survival: Camp Literature in a Transnational Perspective (Cultur
+- Anna Brading — Money Mentor: 10 essential steps to do your future self a favour
+- Anna Dahlström — Storytelling in Design : Defining, Designing, and Selling Multidevice Products
+- Anna Dahlström — Storytelling in Design: Defining, Designing, and Selling Multidevice Products
+- Anna Feigenbaum; Aria Alamalhodaei — The Data Storytelling Workbook
+- Anne-Gwenn Bosser; David E. Millard; Charlie Hargood — Interactive Storytelling: 13th International Conference on Interactive Digital Storyt
+- Ansen Dibell — Plot (Elements of Fiction Writing)
+- Anton Fulmen — The Dominance Playbook: Ways to Play With Power in Scenes and Relationships
+- Antonio Pizzo; Vincenzo Lombardo; Rossana Damiano — Interactive Storytelling: A Cross-Media Approach to Writing, Producing and Editing with 
+- Björn Sjöblom; Jonas Linderoth; Anders Frank — Representing Conflicts in Games: Antagonism, Rivalry, and Competition
+- Blain Brown — The Basics of Filmmaking: Screenwriting, Producing, Directing, Cinematography, Audio, & Editing
+- Breault; Michael — Narrative Design: The Craft of Writing for Games
+- C. G. Jung; Gerhard Adler; R. F.C. Hull — Collected Works of C.G. Jung, Volume 8: Structure & Dynamics of the Psyche
+- C.S. Lakin — Layer Your Novel - The Innovative Method for Plotting Your Scenes
+- Calvisi Daniel — STORY MAPS: TV Drama: The Structure of the One-Hour Television Pilot
+- CarrieLynn D. Reinhard; Christopher Olson — Convergent Wrestling: Participatory Culture, Transmedia Storytelling, and Intertextuality in the
+- Charles Baxter — The Art of Subtext: Beyond Plot
+- Charles Euchner — The Structure of Writing: A Short How-To Guide to Organize Your Stories, Essays, Reports, and More (The Elements of Writin
+- Chris Perry; Eric Henry Sanders — SceneWriting: The Missing Manual for Screenwriters
+- Christine Schwanecke — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Firs
+- Christopher Booker — The Seven Basic Plots - Why We Tell Stories
+- Christopher Booker — The Seven Basic Plots: Why We Tell Stories
+- Claudia H Johnson — Crafting Short Screenplays That Connect, Third Edition
+- Craig Caldwell — Story Structure and Development
+- Craig Caldwell — Story Structure and Development: A Guide for Animators, VFX Artists, Game Designers, and XR Creators
+- D'Costa; H R — Story Climax: How to Avoid Disappointed Audiences and Craft a Screenplay or Novel Climax Which Thrills and Delights
+- Dal Yong Jin — Transmedia Storytelling in East Asia: The Age of Digital Media
+- Dan Hassler-Forest; Sean Guynes — Star Wars And The History Of Transmedia Storytelling
+- Dani Cavallaro — Anime and the Visual Novel: Narrative Structure, Design and Play at the Crossroads of Animation and Computer Games
+- Daniel Lynwood Smith — The Rhetoric of Interruption: Speech-Making, Turn-Taking, and Rule-Breaking in Luke-Acts and Ancient Greek Narrative
+- Daniel P. Calvisi — STORY MAPS: TV Drama: The Structure of the One-Hour Television Pilot
+- Daniel P. Calvisi — STORY-MAPS: How to Write a Great Screenplay
+- Daniel Punday — Infrastructure in Video Games
+- Dave McKinsey — Strategic Storytelling: How to Create Persuasive Business Presentations
+- David Herman — Narratology Beyond the Human: Storytelling and Animal Life
+- David P. Barash — Out of Eden: The Surprising Consequences of Polygamy
+- Dean Movshovitz — Pixar Storytelling: Rules for Effective Storytelling Based on Pixar’s Greatest Films
+- Deborah Chester — Fiction Formula Plotting
+- Dennis Puhalla — Design Elements, Form & Space: A Graphic Style Manual for Understanding Structure and Design
+- Derek Murphy — The Plot Dot: A Visual Guide to Plotting Your Novel and Creating Unforgettable Scenes
+- Donna Hancox — The Revolution in Transmedia Storytelling Through Place : Pervasive, Ambient and Situated
+- Dr Greg M. Smith — Film Structure and the Emotion System
+- Dr. Akashdeep Bhardwaj; Keshav Kaushik — Practical Digital Forensics: Forensic Lab Setup, Evidence Analysis, and Structured Investigation Ac
+- Edwin McRae — Narrative Design for Indies: Getting Started
+- Edwin McRae; Rachel Rees (editor) — Narrative Design for Writers: An industry guide to writing for video games
+- Elizabeth Lyon — Writing Subtext: How to Craft Subtext that Develops Characters, Boosts Suspense, and Reinforces Theme - Volume 1
+- Elliot Grove — Raindance Writers' Lab, Second Edition: Write + Sell the Hot Screenplay
+- Emanuele M. Barboni Dalla Costa — Storytelling for Writers and Screenwriters: Creating Your Own Story Step by Step from Scratch
+- Emily Hund — The Influencer Industry: The Quest for Authenticity on Social Media
+- Euchner; Charles — Analysis Without Paralysis: Framing and Testing Questions
+- Gillette; J. Michael — Theatrical design and production : an introduction to scene design and construction, lighting, sound, costume, and ma
+- H. R. D'Costa — Sparkling Story Drafts: How to Outline Your Way Toward Cleaner Rough Drafts, Reduce Your Revision Time, and Get a First-Rate
+- H.R. D'Costa — Story Stakes: Your #1 Writing Skills Strategy to Transform Readers into Raving Fans & Keep Them Turning the Pages of Your Scr
+- H.R. D'Costa — Trough of Hell: How to Conclude Act Two of Your Screenplay with Maximum Impact
+- Harry Potter Theatrical Productions.; Potter; Harry; Revenson; Jody; Thorne; Jack — Harry Potter and the Cursed Child: The Journey, Behind t
+- Heisserer; Eric [Heisserer; Eric] — 150 Screenwriting Challenges
+- Howard; David — How to Build a Great Screenplay: A Master Class in Storytelling for Film
+- Hyejung Ju — Transnational Korean Television: Cultural Storytelling and Digital Audiences (Transnational Communication and Critical/Cultural
+- Ian Kerner — DSI-Date Scene Investigation: The Diagnostic Manual of Dating Disorders
+- Israel Regardie — A Garden Of Pomegranates: A Outline of the Qabalah
+- J. Michael Straczynski — Becoming a Writer, Staying a Writer: The Artistry, Joy, and Career of Storytelling
+- Jackson Dean Chase — Romance, Emotion, and Erotica Writers’ Phrase Book - Essential Reference and Thesaurus for Authors of All Romantic Fict
+- James N. Frey — How to Write a Damn Good Novel, II: Advanced Techniques For Dramatic Storytelling
+- James Scott Bell — Write Great Fiction - Plot & Structure
+- James Wyly — The Phallic Quest - Priapus and Masculine Inflation
+- Jamie Nash — Save the Cat!® Writes for TV: The Last Book on Creating Binge-Worthy Content You'll Ever Need
+- Jane K. Cleland — Mastering Plot Twists: How to Use Suspense, Targeted Storytelling Strategies, and Structure to Captivate Your Readers
+- Janice Hardy — Understanding Conflict: (and What It Really Means)
+- Jeff Gerke — Plot Versus Character
+- Jeffrey Michael Bays — Suspense with the Camera: A Filmmaker's Guide to Hitchcock's Techniques
+- Jessica Brody — Save the Cat! Writes a Young Adult Novel
+- Jikiemi; Elizabeth — Successful Storytelling with Data: How to Interpret, Narrate and Visually Captivate your Audience with Impact
+- Jim Driver — Outline Your Books Or Die!: Secrets of Writing Fiction that Sells: Plotting, Authorship, Novel Outlining Techniques (How To Wri
+- Joel Peters; David Newman (eds.) — Routledge Handbook on the Israeli-Palestinian Conflict
+- John R. Boyd. Edited by Chet Richards and Chuck Spinney — Patterns of Conflict
+- Jonathan Nolan; Christopher Nolan — Interstellar (Screenplay with Selected Storyboards)
+- Jordan Rosenfeld — Make a Scene Revised and Expanded Edition
+- Josiah Lebowitz; Chris Klug — Interactive Storytelling for Video Games - A Player-Centered Approach to Creating Memorable Characters and Sto
+- Jouni Smed & Tomi ‘bgt‘ Suovuo & Natasha Skult & Petter Skult — Handbook on Interactive Storytelling
+- Julian Hoxter — The Pleasures of Structure: Learning Screenwriting Through Case Studies
+- Kaplan Test Prep — LSAT Logic Games Prep 2022: Real Preptest Questions + Proven Strategies + Online
+- Karl Cordell; Stefan Wolff — Routledge handbook of ethnic conflict
+- Keith A. Quesenberry; Michael K. Coolsen — Brand Storytelling: Integrated Marketing Communications for the Digital Media Landscape
+- Kelsy Burke — The Pornography Wars: The Past, Present, and Future of America's Obscene Obsession
+- King; Katherine — Plot with Character: How to Plot Your Novel and Achieve Character Arc in 40 Scenes
+- Kock; Florian — The Behavioral Ecology of Sex Tourism: The Consequences of Skewed Sex Ratios
+- Larry Brooks — Story Physics: Harnessing the Underlying Forces of Storytelling
+- Lee Sheldon — Character Development and Storytelling for Games
+- Linda J. Cowgill — The Art of Plotting - Add Emotion, Suspense, and Depth to Your Screenplay
+- Mark Rosman — Shooting the Scene: The Art and Craft of Coverage for Directors and Filmmakers
+- Mark Silver — ChatGPT For Book Outlines: How To Use AI To Create Highly Targeted & Profitable Book Outlines In Less Than 10 Minutes
+- Martell; William C — Hook 'Em In Ten! (Screenwriting Blue Books Book 6)
+- Martell; William C. [Martell; William C.] — Act Two Secrets (Screenwriting Blue Books)
+- Martell; William C. — Supporting Character Secrets (Screenwriting Blue Books)
+- Martell; William; C — Act Two Secrets
+- Martell; William; C — The Secrets Of Action Screenwriting
+- Matt J Finch — Tome of Adventure Design (Revised)
+- Matthew Freeman — Historicising Transmedia Storytelling: Early Twentieth-Century Transmedia Story Worlds
+- Michael Betancourt — Ideologies of the Real in Title Sequences, Motion Graphics and Cinema
+- Michael Betancourt — Semiotics and Title Sequences: Text–Image Composites in Motion Graphics
+- Michael Breault — Narrative Design: The Craft of Writing for Games
+- Michael Nitsche — Video Game Spaces Image Play and Structure in 3D Worlds
+- Mustafa Kayyali; Will Durant — The Story of Civilization (Complete - 11 Parts): Text, Summary, Plot Overview, Themes, Characters, Motifs and
+- Neil Cohn — The Visual Language of Comics: Introduction to the Structure and Cognition of Sequential Images
+- Nicholas B. Zeman — Storytelling for Interactive Digital Media and Video Games
+- Nina Penner — Storytelling in Opera and Musical Theater
+- Nolan Christopher; Goyer David S; Nolan Jonathan — The Dark Knight Trilogy - The Complete Screenplays with Storyboards
+- Palmer Frederick — Photoplay plot encyclopedia; an analysis of the use in photoplays of the thirty-six dramatic situations and their subdivi
+- Patricia Highsmith — Plotting and Writing Suspense Fiction
+- Patti Bellantoni — If It's Purple, Someone's Gonna Die: The Power of Color in Visual Storytelling
+- Paul Cherry — Questions That Sell: The Powerful Process for Discovering What Your Customer Really Wants
+- Paul Chitlik — Rewrite: A Step-by-Step Guide to Strengthen Structure, Characters, and Drama in your Screenplay
+- Paul Emmons; Marcia Feuerstein; Carolina Dayer; Luc Phinney — Confabulations: Storytelling in Architecture
+- Paul Gulino — Screenwriting: The Sequence Approach
+- Paul Guyot — Kill the Dog: The First Book on Screenwriting to Tell You the Truth
+- Peter Brannen — The Ends of the World: Volcanic Apocalypses, Lethal Oceans, and Our Quest to Understand Earth’s Past Mass Extinctions
+- Pierre Lacombe; Gabriel Feraud; Clement Riviere — Writing an Interactive Story
+- Quentin Tarantino — Django screenplay
+- R. Craig Wolf; Dick Block — Scene Design and Stage Lighting
+- Raphaël Baroni; Françoise Revaz (eds.) — Narrative Sequence in Contemporary Narratology
+- Richard D. Pepperman — Setting Up Your Scenes: The Inner Workings of Great Films
+- Rick Rubin — The Creative Act: A Way of Being
+- Rick Warner — The Rebirth of Suspense: Slowness and Atmosphere in Cinema
+- Robert Zimmerman — Leaving Earth: Space Stations, Rival Superpowers, and the Quest for Interplanetary Travel
+- Ross Berger — Storytelling for New Technologies and Platforms; A Writer’s Guide to Theme Parks, Virtual Reality, Board Games, Virtual Assist
+- Ross Hartmann — The Structure of Story
+- Rubén Villahermosa Chaves — Wyckoff 2.0: Structures, Volume Profile and Order Flow: Combining the Logic of the Wyckoff Methodolgy and the Ob
+- Schwanecke; Christine — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Fir
+- Sourcebooks — 269 Red Hot XXX-Rated Questions: Super Sexy Ticklers to Tempt, Tease and Spark
+- Stefan Hofer; Henning Schwentner — Domain Storytelling: A Collaborative, Visual, and Agile Way to Build Domain-Driven Software (Addison-Wesl
+- Stuart Horwitz — Book Architecture: How to Plot and Outline Without Using a Formula
+- Syd Field — The Screenwriter's Problem Solver: How to Recognize, Identify, and Define Screenwriting Problems
+- Tarantino Quentin — Inglorious Basterds (screenplay)
+- Tasha Dunn — Plotting A Fantasy Novel: Learn Elements of Plot and Structure, Outlining Scenes, Outlining Chapters, and Create a Compelling B
+- Ted Reed — Progressive steps to syncopation for the modern drummer
+- Thomas S. Kuhn — The Structure of Scientific Revolutions
+- Thomas; Bronwen; Page; Ruth E — New narratives : stories and storytelling in the digital age
+- Timothy Cochrell — Slaves of the Most High God : A Biblical Model of Servant Leadership in the Slave Imagery of Luke-Acts
+- Tom Graves — Everyday Enterprise Architecture: Sense-making, Strategy, Structures, and Solutions
+- Turner; L. C. F. — The Cape of Good Hope and the Anglo‐French conflict, 1797–1806
+- Turo Uskali; Astrid Gynnild; Sarah Jones; Esa Sirkkunen — Immersive Journalism as Storytelling: Ethics, Production, and Design
+- Varg Freeborn — Beyond OODA: Developing the Orientation for Deception, Conflict and Violence
+- Will Hong — Crafting the Scene: Lessons in Storytelling from the Masters of Cinema
+- William C. Martell — Creating Strong Protagonists (Screenwriting Blue Books Book 7)
+- William C. Martell — Dialogue Secrets (Screenwriting Blue Books)
+- William C. Martell — Grand Finales: The Perfect Ending (Screenwriting Blue Books Book 16)
+- William C. Martell — Outlines And The Thematic Method (Screenwriting Blue Books Book 2)
+- William C. Martell — Scene Secrets
+- William C. Martell — Secrets Of Loglines, Treatments, and Pitching (Screenwriting Blue Books Book 19)
+- William C. Martell — Secrets Of Story: Well Told (Screenwriting Blue Books Book 4)
+- William C. Martell — Supporting Character Secrets (Screenwriting Blue Books Book 12)
+- William C. Martell — The Secrets Of Action Screenwriting (fully revised edition)
+- William C. Martell — Your Idea Machine (Screenwriting Blue Books Book 1)
+- William Wallace Cook — Plotto: The Master Book of All Plots
+
+## L5 (78)
+
+- 16personalities — Protagonist - 16 personalities, premium profile (ENFJ)
+- 3Dtotal.com Ltd — Dynamic Characters
+- Alex Foster [Foster; Alex] — Writing a Kindle Book a Week: How to Write Books for Amazon Quickly on a Weekly Basis for Improved Sales and Pr
+- Angela Ackerman and Becca Puglisi — The Character Trait Thesaurus Boxed Set
+- Brandon Stosuy — Stay Inspired: Finding Motivation for Your Creative Work
+- Bryan Tillman — Creative Character Design
+- Candace L. Upton — Situational Traits of Character: Dispositional Foundations and Implications for Moral Psychology and Friendship
+- Carl Gustav Jung; William McGuire; Herbert Read; Michael Fordham; Gerhard Adler — The Collected Works of C. G. Jung, Vol. 9, Part 1: The Arc
+- Celia Hodent — The Psychology of Video Games
+- Christian Roesler — C. G. Jung’s Archetype Concept: Theory, Research and Applications
+- Christian Roesler; — Deconstructing Archetype Theory
+- Christopher Peterson; Martin E. P. Seligman — Character Strengths and Virtues: A Handbook and Classification
+- Christopher T. Burris — Evil in Mind: The Psychology of Harming Others (2022)
+- Constantin Stanislavski; Elizabeth Reynolds Hapgood — Building a Character
+- Daniel P. Wade; Paul Hellard — Exotique : The World's Most Beautiful CG Characters
+- Douglas Thomas — The Deep Psychology of BDSM and Kink: Jungian and Archetypal Perspectives on the Soul’s Transgressive Necessities
+- Eileen Cook — Build Better Characters: The Psychology of Backstory & how to Use it in Your Writing to Hook Readers
+- Elena Nikitina with Amalia Beyduk — From Zero to Self-Published Hero: Fearless Guide to Writing, Publishing, and Promoting Your Book on a $0
+- Elizabeth Lyon — Writing Subtext: How to Craft Subtext that Develops Characters, Boosts Suspense, and Reinforces Theme - Volume 1
+- Francesca Arnavas — Lewis Carroll's "Alice" and Cognitive Narratology: Author, Reader and Characters
+- George Skaff Elias; Richard Garfield; K. Robert Gutschera — Characteristics of Games
+- Gurley; Delano B. — The PIMP Playbook - The Psychology Of Pimpology RELOADED Volume #2
+- Gurley; Delano — The PIMP Playbook : The Psychology Of Pimpology (The Manhood Mastery Series Collection 3)
+- Guy Gallo (Auth.) — Screenwriter's Compass. Character As True North
+- Jacob Glaser — The Art of Drawing Fantasy Characters Discover step-by-step techniques for drawing aliens, vampires, adventure heroes, and mo
+- Jason Bulmahn — Pathfinder Roleplaying Game: NPC Codex
+- Jean Shinoda Bolen — Goddesses in Everywoman: Powerful Archetypes in Women's Lives
+- Jean Shinoda Bolen — Goddesses in Older Women: Archetypes in Women Over Fifty
+- Jeff Ashworth — The Game Master's Book of Non-Player Characters
+- Jeff Gerke — Plot Versus Character
+- Joanna Nieżurawska; Radosław Antoni Kycia; Agnieszka Niemczynowicz — Managing Generation Z: Motivation, Engagement and Loyalty (Routledge Fo
+- Josiah Lebowitz; Chris Klug — Interactive Storytelling for Video Games - A Player-Centered Approach to Creating Memorable Characters and Sto
+- Jung; C. G. (Carl Gustav); 1875-1961 — Psychology of the unconscious; a study of the transformations and symbolisms of the libido, a contrib
+- Kevin Crossley — Character Design from the Ground Up
+- King; Katherine — Plot with Character: How to Plot Your Novel and Achieve Character Arc in 40 Scenes
+- Laurie Schnebly — Believable Characters: Creating with Enneagrams
+- Lee Sheldon — Character Development and Storytelling for Games
+- Lewis Jorstad — Write Your Hero - Writer's Craft
+- Lina Varotsi — Conceptualisation and Exposition: A Theory of Character Construction
+- Lucy V. Hay — Writing Diverse Characters for Fiction, TV Or Film
+- Manfredo Massironi; Translated by N Bruno — The Psychology of Graphic Images: Seeing, Drawing, Communicating
+- Mara Branscombe — Sage, Huntress, Lover, Queen: Access Your Power and Creativity through Sacred Female Archetypes
+- Marco Caracciolo — Strange Narrators in Contemporary Fiction: Explorations in Readers’ Engagement with Characters
+- Marshall McLuhan; Wilfred Watson — From cliche to archetype
+- Martell; William C. — Supporting Character Secrets (Screenwriting Blue Books)
+- Martell; William; C — Creating Strong Protagonists
+- Martell; William; C — Supporting Character Secrets
+- Martin Hartmann — The Feeling of Inequality: On Empathy, Empathy Gulfs, and the Political Psychology of Democracy
+- Mathew J Manimala — High Growth Enterprises: The Role of Founder Characteristics and Venture Policies
+- Meg John Barker — The Psychology of Sex
+- Michael D. Matthews; Richard M. Lerner — The Routledge International Handbook of Multidisciplinary Perspectives on Character Development, Vo
+- Milan Obaidi; Jonas Kunst; (eds.) — The Cambridge Handbook of the Psychology of Violent Extremism
+- Mustafa Kayyali; Will Durant — The Story of Civilization (Complete - 11 Parts): Text, Summary, Plot Overview, Themes, Characters, Motifs and
+- Nancy Kress — Write Great Fiction - Characters, Emotion & Viewpoint
+- Paul Chitlik — Rewrite: A Step-by-Step Guide to Strengthen Structure, Characters, and Drama in your Screenplay
+- Paul Dobransky — The Secret Psychology of How We Fall in Love
+- Paul Tomlinson — Character Creation: A Guide to Archetypes, Motivation and Emotion for Writers and Actors
+- Rainer Greifeneder (eds.); Mariela Jaffe (eds.); Eryn J. Newman (eds.); Norbert Schwarz (eds.) — The Psychology of Fake News: Accepting, Sha
+- Richard Gross — The Psychology of Grief
+- Richard M. Ryan — The Oxford Handbook of Human Motivation
+- Robert L. Moore — The Archetype of Initiation
+- Robert L. Moore; Douglas Gillette — King, warrior, magician, lover: rediscovering the archetypes of the mature masculine
+- Sandra Gerth — Show, Don’t Tell: How to write vivid descriptions, handle backstory, and describe your characters’ emotions (Writers’ Guide S
+- Scott Barry Kaufman; James C. Kaufman — The Psychology of Creative Writing
+- Sherrilyn Kenyon — The Writer's Digest Character Naming Sourcebook
+- Shinichi Sawada; Toshiaki Kato; Makiko Sato; Minobu Kasai — Characteristics of gas exchange and morphology of a spring ephemeral,Erythronium
+- Stephen M. Garcia; Avishalom Tor; Andrew J. Elliot — Oxford Handbook Of The Psychology Of Competition
+- Steve Kenson — Mutants & Masterminds Deluxe Hero’s Handbook
+- Steven S. Long — Hero System 6th Edition Volume I: Character Creation
+- Steven S. Long — Hero System 6th Edition Volume II: Combat & Adventuring
+- Studio Hard Deluxe — How to Draw Hairstyles for Manga: Learn to Draw Hair for Expressive Manga and Anime Characters
+- Tami D. Cowden — Fallen Heroes: Sixteen Master Villain Archetypes
+- Tan Huaixiang — Character Costume Figure Drawing - Step-by-Step Drawing Methods for Theatre Costume Designers
+- Thomas B. Kirsch; Thomas Singer; Virginia Rutter — Initiation: The Living Reality of an Archetype
+- Tobias Kunz; Lukas R.A. Wilde — Transmedia Character Studies
+- William Bernhardt — Creating Character: Bringing Your Story to Life (Red Sneaker Writers Book Series 2)
+- William C. Martell — Creating Strong Protagonists (Screenwriting Blue Books Book 7)
+- William C. Martell — Supporting Character Secrets (Screenwriting Blue Books Book 12)
+
+## L6 (51)
+
+- Agata Krowinska; Christof Backhaus; Benjamin Becker; Fabian Bosser — Digital Content Marketing: Creating Value in Practice
+- Angela Carter — The Sadeian Woman and the Ideology of Pornography
+- Annette Lynch; Mitchell Strauss — Changing Fashion: A Critical Introduction to Trend Analysis and Cultural Meaning (Dress, Body, Culture)
+- Beat Suter; René Bauer; Mela Kocher (eds.) — Narrative Mechanics - Strategies and Meanings in Games and Real Life
+- Brian Boone — Ethics 101
+- CFA Institute — 2023 CFA© Program Curriculum Level III Volumes 6 Ethics and Professional Standards
+- Candace L. Upton — Situational Traits of Character: Dispositional Foundations and Implications for Moral Psychology and Friendship
+- Carissa Véliz; (eds.) — Oxford Handbook of Digital Ethics
+- Christine Holmlund — American Cinema of the 1990s: Themes and Variations
+- Chrysanthos S. Chrysanthou — Plutarch's Parallel Lives: Narrative Technique and Moral Judgement
+- DR. Rebecca Williams — Theme Park Fandom: Spatial Transmedia, Materiality and Participatory Cultures
+- David Boonin; (editor) — The Palgrave Handbook of Sexual Ethics
+- David Cohen — Law, Sexuality, and Society: The Enforcement of Morals in Classical Athens
+- David Sepkoski — Catastrophic Thinking: Extinction And The Value Of Diversity From Darwin To The Anthropocene
+- Dick Hebdige — Subculture: The Meaning of Style
+- Divya Dwivedi; Henrik Skov Nielsen; Richard Walsh — Narratology and Ideology: Negotiating Context, Form, and Theory in Postcolonial Narrativ
+- Dossie Easton; Janet W. Hardy — The Ethical Slut: A Practical Guide to Polyamory, Open Relationships, and Other Freedoms in Sex and Love
+- Edward Tufte — Seeing With Fresh Eyes: Meaning, Space, Data, Truth
+- Elina Grigoriou — Wellbeing in Interiors: Philosophy, Design and Value in Practice
+- Elizabeth Lyon — Writing Subtext: How to Craft Subtext that Develops Characters, Boosts Suspense, and Reinforces Theme - Volume 1
+- Franklin Veaux; Eve Rickert; Tatiana Gill; Janet Hardy — More Than Two: A Practical Guide to Ethical Polyamory
+- Frisbee Sheffield — Plato's Symposium: The Ethics of Desire
+- Gregory Whistance-Smith — Expressive Space: Embodying Meaning in Video Game Environments
+- Herbert Sussman — Masculine Identities: The History and Meanings of Manliness
+- Ilya Kiriya; Panos Kompatsiaris; Yiannis Mylonas — The Industrialization of Creativity and Its Limits Values, Politics and Lifestyles of Con
+- James R. Hurford; James Raymond Hurford — The Origins of Meaning
+- Jan Tschichold — The Form of the Book. Essays on the morality of good design.
+- Jonathan Chapman — Meaningful Stuff: Design That Lasts (Design Thinking, Design Theory)
+- Joseph P. Laycock — Dangerous Games: What the Moral Panic over Role-Playing Games Says about Play, Religion, and Imagined Worlds
+- Kaplan Schweser — SCHWESERNOTES™ 2023 LEVEL I CFA® BOOK 5: PORTFOLIO MANAGEMENT AND ETHICAL AND PROFESSIONAL STANDARDS
+- Kaplan Schweser — SCHWESERNOTES™ 2023 LEVEL II CFA® BOOK 5: PORTFOLIO MANAGEMENT AND ETHICAL AND PROFESSIONAL STANDARDS
+- Kathy Bowrey — Copyright, Creativity, Big Media and Cultural Value: Incorporating the Author
+- Klaus-Dieter Altmeppen; C. Ann Hollifield; Joost van Loon (eds.) — Value-Oriented Media Management: Decision Making Between Profit and Respo
+- Korthals Altes; Liesbeth — Ethos and narrative interpretation : the negotiation of values in fiction
+- Mark Bryden; John Dyson; Jaimie Johnston; Martin Wood — Design to Value: The Architecture of Holistic Design and Creative Technology
+- Mark McLelland — The End of Cool Japan: Ethical, Legal, and Cultural Challenges to Japanese Popular Culture
+- Michael Proksch; Nisha Paliwal; Wilhelm Bielert — The Secrets of AI Value Creation: Practical Guide to Business Value Creation with Artifici
+- Mustafa Kayyali; Will Durant — The Story of Civilization (Complete - 11 Parts): Text, Summary, Plot Overview, Themes, Characters, Motifs and
+- Neil Postman — The end of education : redefining the value of school
+- Paul D. Spudis — The Value of the Moon: How to Explore, Live, and Prosper in Space Using the Moon's Resources
+- Paul Ricoeur — The Rule of Metaphor: The Creation of Meaning in Language
+- Philip Pettit — The Robust Demands of the Good: Ethics with Attachment, Virtue, and Respect
+- Rebecca Langlands — Sexual Morality in Ancient Rome
+- Rob Thomas; Paul Zikopoulos; Kate Soule — AI Value Creators: Beyound the Generative-AI-User Mindset
+- Ross Berger — Storytelling for New Technologies and Platforms; A Writer’s Guide to Theme Parks, Virtual Reality, Board Games, Virtual Assist
+- Sophia Psarra — Architecture And Narrative - The Formation Of Space And Cultural Meaning
+- Sylvie Bissonnette — Affect and Embodied Meaning in Animation: Becoming-Animated
+- Timothy Corrigan — American Cinema of the 2000s - Themes and Variations (2012) [SCREEN DECADES]
+- Turo Uskali; Astrid Gynnild; Sarah Jones; Esa Sirkkunen — Immersive Journalism as Storytelling: Ethics, Production, and Design
+- Val Head — Designing Interface Animation - Meaningful Motion for User Experience
+- Xavier Robben — Michael Porter's Value Chain: Increase Value and Beat the Competition (Management & Marketing)
+
+## L7 (353)
+
+- 3D Total Publishing; Publishing 3dtotal — Beginner's Guide to Digital Painting in Procreate
+- A. Karim Feroz; Gohar F. Khan; Marshall Sponder — Digital Analytics for Marketing
+- Ace of Swords; Joachim Hagopian et al — Pizzagate / Pedogate, A No-nonesense Fact-filled Reader
+- Adam Roberts — Science Fiction
+- Agata Krowinska; Christof Backhaus; Benjamin Becker; Fabian Bosser — Digital Content Marketing
+- Agata Krowinska; Christof Backhaus; Benjamin Becker; Fabian Bosser — Digital Content Marketing: Creating Value in Practice
+- Ahiakwo Miracle — Digital Marketing Strategies: Mastering Online Advertising and Social Media Promotion
+- Alan Hendrickson — Mechanical Design for the Stage
+- Alan Moore — Watchmen (DC Compact Comics)
+- Alex Epstein — Crafty Game Writing
+- Alexis Van Hurkman — Color Correction Handbook: Professional Techniques for Video and Cinema
+- Alexis Van Hurkman — Color Correction Look Book: Creative Grading Techniques for Film and Video
+- Alexis Weedon — The Origins of Transmedia Storytelling in Early Twentieth Century Adaptation
+- Alfred Mill — Economics 101: From Consumer Behavior to Competitive Markets--Everything You Need to Know About Economics
+- Alison Baverstock; Richard Bradford; Madelena Gonzalez — Contemporary Publishing and the Culture of Books
+- Alistair D. Swale (auth.) — Anime Aesthetics: Japanese Animation and the “Post-Cinematic” Imagination
+- Amid Amidi; John Lasseter — The Art of Pixar : The Complete Color Scripts and Select Art from 25 Years of Animation
+- Amy Stanley; Matthew H. Sommer (foreword) — Selling Women - Prostitution, Markets, and the Household in Early Modern Japan (2012)
+- Andrea Sfiligoi; Johan Egerkrans (illustrations) — Rogue Stars: Skirmish Wargaming in a Science Fiction Underworld
+- Andreas Rauscher; Daniel Stein; Jan-Noël Thon — Comics and Videogames : From Hybrid Medialities to Transmedia Expansions
+- Andrei Nae — Immersion, Narrative, and Gender Crisis in Survival Horror Video Games
+- Andrew Hicks Utterback — Studio Television Production and Directing: Concepts, Equipment, and Procedures, 3rd Edition
+- Andrew Lynch — Quality Telefantasy: How Us Quality TV Brought Zombies, Dragons and Androids into the Mainstream
+- Andrew Medeiros; Mark Diaz Truman — Urban Shadows - Political Urban Fantasy Powered By The Apocalypse (1st Ed.)
+- Andrew Stott — Comedy (The New Critical Idiom)
+- Andy Propst — The 100 Most Important People in Musical Theatre
+- Andy Williams — Self-Publishing on Amazon 2021: No publisher? No Agent? No Problem!
+- Anita Nipane [Nipane; Anita] — Book Cover Design Formula: Create Book Covers That Captivate Readers: Complete DIY Book Cover Design Guide fo
+- Anna Megill — The Game Writing Guide: Get Your Dream Job and Keep It
+- Anne-Sophie Bayle-Tourtoulou; Michel Badoc — The Neuro-Consumer: Adapting Marketing and Communication Strategies for the Subconscious, Insti
+- Antonello Boschi — Poetics of Underground Space: Architecture, Literature, Cinema
+- Appleton; Dina; Yankelevits; Daniel — Hollywood Dealmaking: Negotiating Talent Agreements for Film, TV, and Digital Media (Third Edition)
+- Association of British Theatre Technicians — Theatre Buildings: A Design Guide
+- BORIS VALEJO — BORIS VALEJO TECNIQUE fantasy art
+- Barbara Kyle [Kyle; Barbara] — Page-Turner: Your Path to Writing a Novel That Publishers Want and Readers Buy
+- Ben Bova; Stephen Gillett — World Building (Science Fiction Writing)
+- Bernstein; Gregory — Understanding the Business of Media Entertainment (American Film Market Presents)
+- Bettinson; Gary — The Sensuous Cinema of Wong Kar-wai: Film Poetics and the Aesthetic of Disturbance
+- Bill Troop; Steve Anchell — The Film Developing Cookbook
+- Blain Brown — Cinematography: Theory and Practice: Image Making for Cinematographers and Directors
+- Blain Brown — Motion Picture and Video Lighting for cinematographers, gaffers and lighting technicians
+- Blain Brown — The Basics of Filmmaking: Screenwriting, Producing, Directing, Cinematography, Audio, & Editing
+- Bloomsbury Publishing — Writers' & Artists' Yearbook 2024: The best advice on how to write and get published (Writers' and Artists'), 117th 
+- Bould Mark; Butler Andrew M; Roberts Adam; Vint Sherryl — Fifty Key Figures in Science Fiction (Routledge Key Guides)
+- Brenda Miller; Suzanne Paola — Tell It Slant: Creating, Refining, and Publishing Creative Nonfiction
+- Bronislaw J. Sammler and Don Harvey (Eds.) — Technical Design Solutions for Theatre. The Technical Brief Collection
+- Brooke Borel — The Chicago Guide to Fact-Checking, (Chicago Guides to Writing, Editing, and Publishing)
+- Bruce Mamer — Film Production Technique: Creating the Accomplished Image
+- C. Ann Hollifield; Amy Jo Coffey — Media Analytics: Understanding Media, Audiences, and Consumers in the 21st Century
+- C.S. Lakin — Shoot Your Novel - Cinematic Techniques to Supercharge Your Writing
+- CFA Institute — 2023 CFA© Program Curriculum Level III Volumes 1 Behavioral Finance, Capital Market Expectations, and Asset Allocation
+- Caleb Ward — Creating Cinematic Images. Midjourney Style Guide
+- Calvisi Daniel — STORY MAPS: TV Drama: The Structure of the One-Hour Television Pilot
+- Cara Bristol — Naughty Words for Nice Writers: A Romance Novel Thesaurus
+- Carol Fisher Saller — The Subversive Copy Editor: Advice from Chicago (or, How to Negotiate Good Relationships with Your Writers, Your Colle
+- Caroline Alphin — Neoliberalism and Cyberpunk Science Fiction: Living on the Edge of Burnout
+- CarrieLynn D. Reinhard; Christopher Olson — Convergent Wrestling: Participatory Culture, Transmedia Storytelling, and Intertextuality in the
+- Cassie Abate — The Art and Practice of Musical Theatre Choreography
+- Catherine Winder; Zahra Dowlatabadi — Producing Animation
+- Cathy Whitlock — Designs on Film: A Century of Hollywood Art Direction
+- Cavallaro; Dani — The art of Studio Gainax : experimentation, style and innovation at the leading edge of anime
+- Charles Haine — Color Grading 101: Getting Started Color Grading for Editors, Cinematographers, Directors, and Aspiring Colorists
+- Chris Bateman — Game Writing: Narrative Skills for Videogames
+- Chris Johnson — The Practical Zone System for Film and Digital Photography
+- Chris Johnson — The practical zone system for film and digital photography: Classic tool, universal applications
+- Chris Patmore — How to Draw Fantasy Females: Create Sexy Cyberpunks, Seductive Supergirls, and Raunchy All-Action Heroines
+- Chris Webster — Animation The Mechanics of Motion
+- Christine Holmlund — American Cinema of the 1990s: Themes and Variations
+- Christine Riley — Music Fundamentals for Musical Theatre
+- Christopher J. Olson; CarrieLynn D. Reinhard — The Greatest Cult Television Shows of All Time
+- Christopher Kenworthy — Writing Science Fiction, Fantasy & Horror: How to Create Successful Work for Publication
+- Courtney Maum — Before and After the Book Deal: A Writer’s Guide to Finishing, Publishing, Promoting, and Surviving Your First Book
+- Cruikshank; Sally Ann; Eschenfelder; Christine C.; Coleman; Keonte — A A Complete Guide to Television, Field, and Digital Producing
+- D'Costa; H R — Story Climax: How to Avoid Disappointed Audiences and Craft a Screenplay or Novel Climax Which Thrills and Delights
+- DK Publishing — How Psychology Works
+- DK Publishing — The Art Book Big Ideas Simply Explained
+- DK Publishing — The Classical Music Book
+- DR. Rebecca Williams — Theme Park Fandom: Spatial Transmedia, Materiality and Participatory Cultures
+- Dal Yong Jin — Transmedia Storytelling in East Asia: The Age of Digital Media
+- Dale K. Cline; Sandeep Mazumder — Money, Banking, and Financial Markets; A Modern Introduction to Macroeconomics
+- Dan Brown — Dan Brown - MasterClass - Writing Thrillers
+- Dan Dietz — The Complete Book of 1960s Broadway Musicals
+- Dan Hassler-Fores — Science Fiction, Fantasy, And Politics: Transmedia World-Building Beyond Capitalism
+- Dan Hassler-Forest; Sean Guynes — Star Wars And The History Of Transmedia Storytelling
+- Dani Cavallaro — Anime and the Visual Novel: Narrative Structure, Design and Play at the Crossroads of Animation and Computer Games
+- Daniel P. Calvisi — STORY MAPS: TV Drama: The Structure of the One-Hour Television Pilot
+- David Baldacci — David Baldacci - MasterClass - Mystery and Thriller Writing
+- David Church — Post-Horror: Art, Genre and Cultural Elevation
+- David Flint — Babylon Blue: An Illustrated History of Adult Cinema 1960-1998
+- David Lavery — The Essential Cult TV Reader
+- David Starkey — Creative Writing: Four Genres in Brief
+- Deborah L. Brett — Real estate market analysis : trends, methods, and information sources
+- Debra Zahay; Lauren Labrecque; Brooke Reavey; Mary Lou Roberts — Digital Marketing Foundations and Strategy, 5e
+- Denison; Rayna — Anime: A Critical Introduction (Film Genres)
+- Dennis Dorn; Mark Shanda — Drafting for the Theatre
+- Dethier; Brock — Twenty-One Genres and How to Write Them
+- Dominique Mainon; James Ursini — Femme Fatale : Cinema’s Most Unforgettable Lethal Ladies
+- Donna Hancox — The Revolution in Transmedia Storytelling Through Place : Pervasive, Ambient and Situated
+- Dr Greg M. Smith — Film Structure and the Emotion System
+- Dreyer; Chris — Niching Up: The Narrower the Market, the Bigger the Prize
+- Dunlop Renee — Production pipeline fundamentals for film and game
+- Dunlop; Renee — Production Pipeline Fundamentals for Film and Games
+- Dunst; J.; Jabar; S.; Paulussen; M.; Jürgens; H. — Lokaltherapie beim Ewing-Sarkom: Radiotherapeutische Aspekte
+- Editors of Wizard: The Comics Magazine — How to Draw: The Best of Basic Training, Vol. 1
+- Edward E Williams; John A Dobelman — A Random Walk to Nowhere: How the Professors Caused a Real "Fraud-on-the-Market"
+- Edwin Wilson — The Theatre Experience, 13th Edition
+- Eileen Cook — Build Better Characters: The Psychology of Backstory & how to Use it in Your Writing to Hook Readers
+- Ekman Stefan — Here Be Dragons: Exploring Fantasy Maps and Settings
+- Elena Nikitina with Amalia Beyduk — From Zero to Self-Published Hero: Fearless Guide to Writing, Publishing, and Promoting Your Book on a $0
+- Ellen Sandler — The TV Writer’s Workbook: A Creative Approach to Television Scripts
+- Emmanuel Oberg — Writing a Successful TV Series: How to Pitch and Develop Projects for Television and Online Streaming
+- Emre Çağlayan — Poetics of Slow Cinema: Nostalgia, Absurdism, Boredom
+- Eric Grode — The Book of Broadway: The 150 Definitive Plays and Musicals
+- Eric Salzman; Thomas Desi — The New Music Theater: Seeing the Voice, Hearing the Body
+- Erika Miller — Advances in Digital Marketing in the Era of Artificial Intelligence: Case Studies and Data Analysis for Business Problem Solv
+- Erin Harrington — Women, Monstrosity and Horror Film. Gynaehorror
+- Ernest Mathijs; Jamie Sexton — Cult Cinema
+- Evan J Christopher — The Market Maker's Matrix
+- Fantasy Flight Games — Star Wars: Age of Rebellion - Core Rulebook
+- Figgis; Mike — The 36 dramatic situations for film
+- Francesca Arnavas — Lewis Carroll's "Alice" and Cognitive Narratology: Author, Reader and Characters
+- Free League Publishing — Blade Runner RPG: Core Rules
+- Frow; John — Genre
+- GARP — 2024 FRM Exam Part II - Market Risk Measurement and Management
+- Gaby Allrath; Marion Gymnich — Narrative Strategies in Television Series
+- Geoffrey Holden Block — Enchanted Evenings: The Broadway Musical from 'Show Boat' to Sondheim and Lloyd Webber
+- George Ochoa; Jeffrey Osier — The Writer's Guide to Creating a Science Fiction Universe
+- George Pettinico; George R. Milne — The Coming Age of Robots: Implications for Consumer Behavior and Marketing Strategy
+- Giles Clark - Angus Phillips — Inside Book Publishing
+- Gilles Châtelet; Alain Badiou; Robin Mackay — To Live and Think Like Pigs: The Incitement of Envy and Boredom in Market Democracies
+- Glenn Fabry; Ben Cormack — Anatomy for Fantasy Artists: An Illustrator's Guide to Creating Action Figures and Fantastical Forms
+- Guido Ruggiero — The Boundaries of Eros: Sex Crime and Sexuality in Renaissance Venice
+- Gustave Doré — The Doré Illustrations for Dante's Divine Comedy
+- H.R. D'Costa — Story Stakes: Your #1 Writing Skills Strategy to Transform Readers into Raving Fans & Keep Them Turning the Pages of Your Scr
+- Hans-Jürgen Döpp — Erotic Fantasy
+- Harry Potter Theatrical Productions.; Potter; Harry; Revenson; Jody; Thorne; Jack — Harry Potter and the Cursed Child: The Journey, Behind t
+- Hayes; Derek; Webster; Chris — Acting and performance for animation
+- Hazari; Animesh; Maiya; Arun G.; Nagda; Taral V. — Conceptual Biomechanics and Kinesiology
+- Herbert D. Marshall — Strategies for success in musical theatre: a guide for music directors in school, college, and community theatre
+- Hirohiko Araki — Manga in Theory and Practice: The Craft of Creating Manga
+- Holden; Alys — Structural design for the stage: Alys E. Holden [and three others]
+- Honthaner; Eve Light — The Complete Film Production Handbook, Fourth Edition
+- Howard David Ingham — Cult Cinema. A Personal Exploration of Sects, Brainwashing and Bad Religion in Film and Television
+- Howard; David — How to Build a Great Screenplay: A Master Class in Storytelling for Film
+- Hyejung Ju — Transnational Korean Television: Cultural Storytelling and Digital Audiences (Transnational Communication and Critical/Cultural
+- Ian Case Punnett — Toward a Theory of True Crime Narratives: A Textual Analysis
+- Ian Condry — The Soul of Anime: Collaborative Creativity and Japan's Media Success Story
+- ImagineFX — Manga : the Ultimate Guide to Mastering Digital Painting Techniques
+- Iver; Jon Day — Amazon Business Models for 2021: Amazon Self-Publishing, Amazon Associates, and Amazon Passive Income Ideas (Compilation)
+- J. Austin Eyer; Lyndy Franklin Smith — Broadway Swings : Covering the Ensemble in Musical Theatre
+- Jackson Dean Chase — Horror Writers' Phrase Book
+- Jackson Dean Chase — Romance, Emotion, and Erotica Writers’ Phrase Book - Essential Reference and Thesaurus for Authors of All Romantic Fict
+- Jacob Glaser — The Art of Drawing Fantasy Characters Discover step-by-step techniques for drawing aliens, vampires, adventure heroes, and mo
+- James Monaco — How to Read a Film: Movies, Media, and Beyond (4th edition)
+- James N. Frey — How to Write a Damn Good Thriller: A Step-by-Step Guide for Novelists and Screenwriters
+- James Olm — Musical Theatre Script and Song Analysis Through the Ages
+- James Scott Bell — Marketing For Writers Who Hate Marketing: The No-Stress Way to Sell Books Without Losing Your Mind by James Scott Bell
+- Jan Christoph Meister; Wilhelm Schernus (editors) — Time: From Concept to Narrative Construct: A Reader (Narratologia: Contributions to Narr
+- Jan-Christopher Horak — Saul Bass: Anatomy of Film Design
+- Jan-Noël Thon — Transmedial Narratology and Contemporary Media Culture
+- Jane Friedman — Publishing 101: A First-Time Author's Guide to Getting Published, Marketing and Promoting Your Book, and Building a Successf
+- Jane K. Cleland — Mastering Plot Twists: How to Use Suspense, Targeted Storytelling Strategies, and Structure to Captivate Your Readers
+- Jared Blando — Fantasy Mapmaker
+- Jared Blando — How to Draw Fantasy Art and RPG Maps: Step by Step Cartography for Gamers and Fans
+- Jayashree Kamblé; Eric Murphy Selinger; Hsu-Ming Teo — The Routledge Research Companion to Popular Romance Fiction
+- Jean Ann Wright — Animation Writing and Development,: From Script Development to Pitch (Focal Press Visual Effects and Animation)
+- Jean Kent; Candace Shelton — Romance Writer's Phrase Book (Perigee)
+- Jeff Gerke — Hack Your Reader’s Brain: Bring the power of brain chemistry to bear on your fiction
+- Jennifer Fay — Inhospitable World: Cinema In The Time Of The Anthropocene
+- Jennifer Robertson — Same-Sex Cultures and Sexualities: An Anthropological Reader (Blackwell Readers in Anthropology)
+- Jennifer Van Sijll — Setting up your story cinematically : the 100 most powerful film conventions every filmmaker must know
+- Jikiemi; Elizabeth — Successful Storytelling with Data: How to Interpret, Narrate and Visually Captivate your Audience with Impact
+- Joanna Penn [Penn; Joanna] — Successful Self-Publishing Large Print Edition: How to Self-Publish and Market Your Book in Ebook, Print, and A
+- Joe Deer — Directing in Musical Theatre: An Essential Guide
+- Joe Pulizzi — Content Inc., Second Edition : Start a Content-First Business, Build a Massive Audience and Become Radically Successful (With 
+- Joe Pulizzi; Brian Piper — Epic Content Marketing, Second Edition: Break through the Clutter with a Different Story, Get the Most Out of You
+- John B Thompson — Merchants of Culture: The Publishing Business in the Twenty-First Century
+- John B. Thompson — Book Wars: The Digital Revolution in Publishing
+- John Halas OBE; Harold Whitaker; Tom Sito — Timing for Animation
+- John J. Murphy — Technical Analysis of the Financial Markets: A Comprehensive Guide to Trading Methods and Applications
+- John Jackman — Lighting for digital video and television
+- John Kenrick — Musical Theatre: A History
+- John Monyjok Maluth — Social Media Marketing: Be Digitally Visible
+- John Scaggs — Crime Fiction (The New Critical Idiom)
+- John Siskin — Photographing Architecture: Lighting, Composition, Postproduction and Marketing Techniques
+- Jonathan Clements; Helen McCarthy — The Anime Encyclopedia - A Guide to Japanese Animation Since 1917, Revised and Expanded Edition
+- Jonathan Hicks — Those Dark Places: Industrial Science Fiction Roleplaying
+- Jonathan Tweet — Ars Magica, 5th Edition (Ars Magica Fantasy Roleplaying)
+- Jonathan Tweet; Mark Rein-Hagen; David Chart — Ars Magica, Fifth Edition (Ars Magica Fantasy Roleplaying)
+- Joseph Gilland — Elemental Magic, Volume II: The Technique of Special Effects Animation
+- Joseph Gilland — Elemental Magic: The Classical Art of Hand-Drawn Effects Animation
+- Joseph M. Williams — Style: Toward Clarity and Grace (Chicago Guides to Writing, Editing, and Publishing)
+- Judith A. Peraino — Listening to the Sirens: Musical Technologies of Queer Identity from Homer to Hedwig
+- Judy Brown — The Comedy Thesaurus: 3,241 Quips, Quotes, and Smartass Remarks
+- Julian Hanich — Cinematic Emotion in Horror Films and Thrillers: The Aesthetic Paradox of Pleasurable Fear
+- Julian Woolford — How Musicals Work: And How to Write Your Own
+- Kaplan Schweser — SCHWESERNOTES™ 2024 FRM® PART I BOOK 3: FINANCIAL MARKETS AND PRODUCTS
+- Karen A. Ritzenhoff; Catriona McAvoy — Selling Sex on Screen: From Weimar Cinema to Zombie Porn
+- Karen Haber — Masters of Science Fiction and Fantasy Art A Collection of the Most Inspiring Science Fiction, Fantasy, and Gaming Illustrator
+- Karen Noil — Lessons in Social Media Marketing 2024
+- Karen Paik — The Art of Incredibles 2 (Pixar Fan Animation Book, Pixar s Incredibles 2 Concept Art Book)
+- Karen Pearlman — Cutting Rhythms: Shaping the Film Edit
+- Karen Winter — Romance Tropes and Hooks
+- Katherine Farrimond — The contemporary femme fatale : gender, genre and American cinema
+- Katherine Thomson-Jones — Current Controversies in Philosophy of Film
+- Katie Salen; Eric Zimmerman — The Game Design Reader: A Rules of Play Anthology
+- Kavita Sharma; Swati Aggarwal — Digital Marketing Outreach: The Future of Marketing Practices
+- Keith A. Quesenberry; Michael K. Coolsen — Brand Storytelling: Integrated Marketing Communications for the Digital Media Landscape
+- Ken Dancyger — The Technique of Film and Video Editing, Fifth Edition - History, Theory, and Practice
+- Kevin Cheng — See What I Mean: How to Use Comics to Communicate Ideas
+- Kevin Moloney (Ed.) — Transmedia Change : Pedagogy and Practice for Socially-Concerned Transmedia Stories
+- Kimberley L. Thachuk; Rollie Lal — Terrorist Criminal Enterprises: Financing Terrorism Through Organized Crime
+- Kimi Rito — The History of Hentai Manga : An Expressionist Examination of EroManga
+- Kotler; Philip; Kartajaya; Hermawan; Setiawan; Iwan — Marketing 5.0: Technology for Humanity
+- L. Willis; K. Herber; K. Ross; M. Morrison; W. Hamblin; M. Tice; B. Ballon; J.T. Snyder; B.M. Sammons; J. Engan; G. Day; T. Sullivan; E. Dei
+- Lachlan MacDowall; Kylie Budge — Art After Instagram: Art Spaces, Audiences, Aesthetics
+- Lars Elleström — Transmedial Narration: Narratives and Stories in Different Media
+- Laura Goodsell — Design Better and Build Your Brand in Canva: A beginner's guide to producing professional branding, marketing, and social c
+- Laura Kipnis — Bound and Gagged: Pornography and the Politics of Fantasy in America
+- Laura MacDonald; William A. Everett (eds.) — The Palgrave Handbook of Musical Theatre Producers
+- Lewis Call (auth.) — BDSM in American Science Fiction and Fantasy
+- Liesbeth Groot Nibbelink & Laura Karreman — Performance Research Methods: Interdisciplinary Methods for Theatre, Dance and Performance Studi
+- Lisa Landrum & Sam Ridgway — Theatres of Architectural Imagination
+- Lisa Tuttle — Writing Fantasy & Science Fiction (Writing Handbooks S.)
+- Loren-Paul Caplin — Writing Compelling Dialogue for Film and TV: The Art & Craft of Raising Your Voice on Screen
+- Lucille Cairns — Sapphism on Screen - Lesbian Desire in French and Francophone Cinema
+- Lucy V. Hay — Writing Diverse Characters for Fiction, TV Or Film
+- M. D. Presley — 101 Worldbuilding Prompts - Forging Fantasy Realms 02
+- M.J. Lallo; Jean Ann Wright — Voice-Over for Animation
+- Manuel Suarez — Marketing Magic : How I Produced 7 Billion Views, 50 Million Social Media Followers and $250,000,000 in Yearly Revenue witho
+- Marc Furstenau — The Aesthetics of Digital Montage: Film Editing and Technological Change
+- Marco Caracciolo — Strange Narrators in Contemporary Fiction: Explorations in Readers’ Engagement with Characters
+- Mark Bould; China Miéville — Red Planets: Marxism and Science Fiction
+- Mark Litwak — Dealmaking in the Film & Television Industry: From Negotiations to Final Contracts
+- Mark McKenzie — Your Data is F**Ked - For Marketers: Growth Marketing, Strategy and Personalisation Handbook for Digital Marketers
+- Mark Nelson — Fantasy World-Building : A Guide to Developing Mythic Worlds and Legendary Creatures
+- Mark Shatz; Mel Helitzer — Comedy Writing Secrets: The Best-Selling Guide to Writing Funny and Getting Paid for It
+- Mark W. Macwilliams; Mark W. Macwilliams — Japanese Visual Culture: Explorations in the World of Manga and Anime
+- Marquardt Chris; Andrae Monika — The Film Photography Handbook: Rediscovering Photography in 35mm, Medium, and Large Format
+- Mary Ann Doane — Femmes Fatales: Feminism, Film Theory, Psychoanalysis
+- Matthew Freeman — Historicising Transmedia Storytelling: Early Twentieth-Century Transmedia Story Worlds
+- Matthew Freeman; Anthony N. Smith — Transmedia/Genre: Rethinking Genre in a Multiplatform Culture
+- Matthew Freeman; William Proctor (eds) — Global Convergence Cultures: Transmedia Earth
+- McDonald; Andrew — Social Media Marketing Workbook 20 books in 1: Digital Alchemy: Mastering the Art of Web Conversion
+- Michael Betancourt — Ideologies of the Real in Title Sequences, Motion Graphics and Cinema
+- Michael Rabiger; Mick Hurbis-Cherrier — Directing: Film Techniques and Aesthetics
+- Michael Rizzo — The Art Direction Handbook for Film
+- Michael Rizzo — The Art Direction Handbook for Film & Television
+- Michael Solomon — Consumer Behavior: Buying, Having, Being 13th -- MyLab Marketing with Pearson eText Access Code
+- Miguel Ottina; Peter Johannes Steffensen; Jesper Kristensen — Automated Market Makers: A Practical Guide to Decentralized Exchanges and Cryp
+- Millerson; Gerald — Lighting for TV and Film
+- Mohammad Irfan; Khan Muhammad; Nader Naifar; Muhammad Attique Khan — Applications of Block Chain technology and Artificial Intelligence: Lea
+- Musburger; Robert B — Animation production: documentation and organization
+- Nancy C. Mulvany — Indexing Books, Second Edition (Chicago Guides to Writing, Editing, and Publishing)
+- Naoto Date — How to Draw Clothing for Manga: Learn to Draw Amazing Outfits and Creative Costumes for Manga and Anime--35+ Outfits Side by Si
+- Neil Cohn — The Visual Language of Comics: Introduction to the Structure and Cognition of Sequential Images
+- Nicolas G. Papadopoulos; Mark Cleveland (Eds.) — Marketing Countries, Places, and Place-Associated Brands : Identity and Image
+- Niklas Salmose (editor); Lars Elleström (editor) — Transmediations: Communication Across Media Borders
+- Nima Sanandaji — Scandinavian Unexceptionalism: Culture, Markets and the Failure of Third-way Socialism
+- Nina Penner — Storytelling in Opera and Musical Theater
+- Nripendra P. Rana; Emma L. Slade; Ganesh Prasad Sahu; Hatice Kizgin; Nitish Singh; Bidit Dey; Anabel Gutierrez; Yogesh K. Dwivedi — Digital 
+- Paul Kane; Marie O'Regan — The Mammoth Book of Body Horror
+- Paula Landry — Scheduling and Budgeting Your Film: A Panic-Free Guide
+- Paula Landry; Stephen R. Greenwald — The Business of Film: A Practical Introduction
+- Peter Verstraten; Stefan Van der Lecq — Film Narratology
+- Peter Ward — Picture composition for film and television
+- Petr Szczepanik & Pavel Zahradka & Jakub Macek & Paul Stepan [Szczepanik; Petr & Zahradka; Pavel & Macek; Jakub & Stepan; Paul] — Digital Pe
+- Purna Virji — High-Impact Content Marketing: Strategies to Make Your Content Intentional, Engaging and Effective
+- R. Craig Wolf; Dick Block — Scene Design and Stage Lighting
+- Ramdarshan Bold; Melanie; Smith; Kelvin John — The publishing business : a guide to starting out and getting on
+- Rayment Kirby — Fantasy Nude Photography: Use Lighting, Posing, and Digital Compositing Techniques to Create Amazing Images
+- Rebecca Giblin; Cory Doctorow — Chokepoint Capitalism: How Big Tech and Big Content Captured Creative Labor Markets and How We'll Win Them B
+- Regge Life — Becoming an Actor’s Director: Directing Actors for Film and Television
+- Richard E. Dunham — Stage Lighting: The Fundamentals
+- Richard Gates [Gates; Richard] — Production Management for Film and Video
+- Rick Warner — The Rebirth of Suspense: Slowness and Atmosphere in Cinema
+- Rob Napoli; Chuck Gloman — Scenic Design and Lighting Techniques: A Basic Guide for Theatre
+- Robert Aldrich — The Seduction of the Mediterranean - Homosexual Writing, Art and Fantasy
+- Robert E. Hinson; David Mhlanga; Kofi Osei-Frimpong; Joshua Doe — Social Media Marketing Management : How to Penetrate Emerging Markets and 
+- Robert Koster — The Budget Book for Film and Television, Second Edition
+- Robert Mckee — Dialogue: The Art of Verbal Action for Page, Stage, and Screen
+- Robert Sholl (editor) — The Feldenkrais Method in Creative Practice: Dance, Music and Theatre
+- Robér Rollin — Essays on congruence theory in marketing: Special focus on digital products and webstores
+- Roger A. Kerin; Steven W. Hartley — Marketing, 16th ISE
+- Roger F. Cook — Postcinematic Vision: The Coevolution of Moving-Image Media and the Spectator (Posthumanities)
+- Ronald Bergan — The Film book : a complete guide to the world of cinema
+- Roy Peter Clark — The Glamour of Grammar: A Guide to the Magic and Mystery of Practical English
+- Rubén Villahermosa Chaves — The Wyckoff Methodology in Depth: How to Trade Financial Markets Logically
+- Sabine Schlickers (editor); Vera Toro (editor) — Perturbatory Narration in Film: Narratological Studies on Deception, Paradox and Empuzzleme
+- Sadie Allison; Andrew Wislocki — The Mystery of the Undercover Clitoris: Orgasmic Fingertip Touching Every Woman Craves, Illustrated
+- Said Melliani; Oscar Castillo; Abdelmajid El Hajaji; (eds.) — Applied Mathematics and Modelling in Finance, Marketing and Economics
+- Sandra Gerth — Write Great Beginnings - How to Start A Novel, Hook Readers From Page One, and Avoid Common First-Chapter Problems
+- Sandrine Sorlin — Stylistic Manipulation of the Reader in Contemporary Fiction
+- Seth Godin — This Is Marketing: You Can’t Be Seen Until You Learn to See
+- Seth Rudetsky — Musical Theatre For Dummies
+- Sevil Yesiloglu; Joyce Costello — Influencer Marketing
+- Seán Crosson — Sport and Film
+- Shaun Aquilina — Musical Theatre for the Female Voice The Sensation, Sound, and Science, of Singing
+- Shawn Carpenter; Robby Carpenter — Tomorrow’s War (Science Fiction Wargaming Rules)
+- Shelton Waldrep — The Space of Sex: The Porn Aesthetic in Contemporary Film and Television
+- Sherryl Vint — Science Fiction
+- Shiv Singh — Marketing with AI For Dummies
+- Shoshanna Evers; Kate Douglas; Desiree Holt; et al. — How to Write Hot Sex: Tips from Multi-Published Erotic Romance Authors
+- Simon Bacon — Transmedia Cultures: A Companion
+- Simon Mitchell — Posts to Profits: The social media marketing blueprint for building a profitable six-figure online business
+- Stacy Wolf — Changed for Good: A Feminist History of the Broadway Musical
+- Stephen Dewey — Ten Candles: A Roleplaying Game of Tragic Horror
+- Steve D. Katz — Film Directing: Shot by Shot - 25th Anniversary Edition
+- Steve Neale — Genre and Hollywood (Sightlines (London, England).)
+- Studio Hard Deluxe — Drawing Anime Faces and Feelings : 800 Facial Expressions from Joy to Terror, Anger, Surprise, Sadness and More
+- Studio Hard Deluxe — How to Draw Hairstyles for Manga: Learn to Draw Hair for Expressive Manga and Anime Characters
+- StudioBinder — How to Use Color in Film - 50 Examples of Movie Color Palettes
+- Stump  ASC; David — Digital Cinematography: Fundamentals, Tools, Techniques, and Workflows
+- Su-Ting Han (editor); Ye Zhou (editor) — Photo-Electroactive Non-Volatile Memories for Data Storage and Neuromorphic Computing (Woodhead Pub
+- Susan Crabtree; Peter Beudert — Scenic Art for the Theatre: History, Tools and Techniques, Third Edition
+- Susan Hayward — Cinema Studies: The Key Concepts (Routledge Key Guides)
+- Susan J. Napier — Anime from Akira to Howl's Moving Castle, Updated Edition: Experiencing Contemporary Japanese Animation
+- Susan J. Spohr; Barbara Clark; Dawn Higginbotham; Kumari Bakhru — The Guide to Managing Postproduction for Film, TV, and Digital Distributio
+- Susana Tosca; Lisbeth Klastrup — Transmedial Worlds in Everyday Life: Networked Reception, Social Media, and Fictional Worlds
+- Sylvia Tamale — African Sexualities: A Reader
+- Sylvie Bissonnette — Affect and Embodied Meaning in Animation: Becoming-Animated
+- Tan Huaixiang — Character Costume Figure Drawing - Step-by-Step Drawing Methods for Theatre Costume Designers
+- Tasha Dunn — Plotting A Fantasy Novel: Learn Elements of Plot and Structure, Outlining Scenes, Outlining Chapters, and Create a Compelling B
+- The Editors of LIFE — LIFE Science Fiction: 100 Years of Great Movies
+- The Pleasure Mechanics — How To Have A Threesome: Explore Your Fantasy, Experience The Ultimate Threesome & Strengthen Your Twosome
+- The San Francisco Writers’ Grotto & Dorothy Hearst — writing sci-fi & fantasy: A Book of Writing Prompts
+- Thomas Hörner — Advertising Impact and Controlling in Content Marketing: Recognize Impact Mechanisms, Optimize Controlling and Adapt Strateg
+- Thomas Moylan — Scraps Of The Untainted Sky: Science Fiction, Utopia, Dystopia
+- Thomas Werner — The Business of Fine Art Photography: Art Markets, Galleries, Museums, Grant Writing, Conceiving and Marketing Your Work Glo
+- Tim Max [Max; Tim] — The Top 10 Secrets to Marketing Success With TikTok: With the Top 10 Secrets and 22 Free Tools, You Can Build a Profita
+- Timothy Corrigan — American Cinema of the 2000s - Themes and Variations (2012) [SCREEN DECADES]
+- Tobias Kunz; Lukas R.A. Wilde — Transmedia Character Studies
+- Todd Debreceni — Special make-up effects for stage and screen : making and applying prosthetics
+- Todd Rogers; Jessica Lasky-Fink — Writing for Busy Readers: Communicate More Effectively in the Real World
+- Tony Burns — Political Theory, Science Fiction, and Utopian Literature.
+- Toshiro Ogawa — Theatre Engineering and Stage Machinery
+- Usmanpasha; Shaik — 1000+ ChatGPT prompts for social media marketing
+- V. Kumar; Philip Kotler — Transformative Marketing
+- Val Head — Designing Interface Animation - Meaningful Motion for User Experience
+- Vijay Bhatia — Worlds of Written Discourse: A Genre-Based View
+- Walt Stanchfield; edited by Leo Brodie — Gesture Drawing for Animation
+- Wayne Douglas Barlowe; Ian Summers; Beth Meacham — Barlowe’s Guide to Extraterrestrials: Great Aliens from Science Fiction Literature
+- Will Eisner — Comics and Sequential Art: Principles and Practice of the World's Most Popular Art Form
+- Will Hong — Crafting the Scene: Lessons in Storytelling from the Masters of Cinema
+- William W. Lewis; Sean Bartley — Experiential Theatres: Praxis-Based Approaches to Training 21st Century Theatre Artists
+- Willis; Tony — Social Media Marketing in 2024: Mastering Facebook, Instagram, TikTok, Make Passive Income and More
+- Writer's Digest Books — Writing Voice: The Complete Guide to Creating a Presence on the Page and Engaging Readers
+- Xavier Aldana Reyes — Horror Film and Affect: Towards a Corporeal Model of Viewership
+- Xavier Robben — Michael Porter's Value Chain: Increase Value and Beat the Competition (Management & Marketing)
+- Yael Braha; Bill Byrne — Creative Motion Graphic Titling for Film, Video, and the Web: Dynamic Motion Graphic Title Design
+- Zach Loeks; Joel Salatin — The Permaculture Market Garden: A Visual Guide To A Profitable Whole Systems Farm Business
+- Zhihui Fang — Demystifying Academic Writing; Genres, Moves, Skills, and Strategies
+- 大平幸輝; Ohira; koki — After Effects for アニメーション BEGINNER : Animation Beginners Drill
+
+## SETTING (297)
+
+- A Trevena — How to Build a Culture: An Author's Guide to Building Rich and Diverse Cultures
+- A. Trevena — 30 Days of Worldbuilding: An Author's Step-by-Step Guide to Building Fictional Worlds
+- AAS/AIAA Spaceflight Mechanics Meeting (19th : 2009 : Savannah; Ga.); Segerman; Alan M; American Astronautical Society; American Institute o
+- Alan Dershowitz — Cancel Culture
+- Alberto Manguel; Gianni Guadalupi — The Dictionary of Imaginary Places
+- Alex Galuzin — Preproduction Blueprint: How to Plan Game Environments and Level Designs
+- Alison Baverstock; Richard Bradford; Madelena Gonzalez — Contemporary Publishing and the Culture of Books
+- Amanda Sikarskie — Storytelling in Luxury Fashion: Brands, Visual Cultures, and Technologies
+- Ana Araujo — No Compromise: The Work of Florence Knoll
+- Andrea Simitch; Val Warke — The Language of Architecture 26 Principles Every Architect Should Know
+- Andrew Charleson — Structure As Architecture: A Source Book for Architects and Structural Engineers
+- Andrew Gorman-Murray (ed.); Barbara Pini (ed.); Lia Bryant (ed.) — Sexuality, Rurality, and Geography
+- Andrew Lilley — Creative Landscape Photography Using the Pyramid Method
+- Andy Maslen — The Copywriting Sourcebook - How to write better copy, faster - for everything from ads to websites
+- Angela Ackerman; Becca Puglisi — The Rural Setting Thesaurus - A Writer's Guide to Personal and Natural Places (Writers Helping Writers Seri
+- Angela Ackerman; Becca Puglisi — The Rural Setting Thesaurus: A Writer's Guide to Personal and Natural Places (Writers Helping Writers Serie
+- Angela Ackerman; Becca Puglisi — The Urban Setting Thesaurus
+- Angeline Close Scheinbaum — Corporate Cancel Culture and Brand Boycotts: The Dark Side of Social Media for Brands
+- Anja Tippner; Anna Artwińska — Narratives of Annihilation, Confinement, and Survival: Camp Literature in a Transnational Perspective (Cultur
+- Anna McFarlane — Cyberpunk Culture and Psychology: Seeing through the Mirrorshades
+- Anna McFarlane; Graham Murphy; Lars Schmeink — Fifty Key Figures in Cyberpunk Culture
+- Annette Lynch; Mitchell Strauss — Changing Fashion: A Critical Introduction to Trend Analysis and Cultural Meaning (Dress, Body, Culture)
+- Anoop Nayak; Alex Jeffrey — Geographical Thought: An Introduction to Ideas in Human Geography
+- Anthony Haden-Guest — The Last Party: Studio 54, Disco, and the Culture of the Night
+- Antonello Boschi — Poetics of Underground Space: Architecture, Literature, Cinema
+- Audrey Kobayashi — International Encyclopedia of Human Geography
+- Bart van der Steen; Thierry P.F. Verburgh — Researching Subcultures, Myth and Memory
+- Benjamin F. Shearer — Culture and Customs of the United States
+- Bergner Daniel — The Other Side of Desire: Four Journeys into the Far Realms of Lust and Longing
+- Bernadette J. Brooten — Love Between Women: Early Christian Responses to Female Homoeroticism (The Chicago Series on Sexuality, History, and
+- Bill Mollison — Forests in permaculture
+- Bill Mollison — Permaculture Design Course Pamphlet Series
+- Bill Mollison — Permaculture in humid lanscapes
+- Bill Mollison — Permaculture techniques
+- Bill Mollison — Water in permaculture
+- Boodakian; Florence Dee — Resisting nudities : a study in the aesthetics of eroticism
+- Bram Dijkstra — Idols of Perversity. Fantasies of Feminine Evil in Fin-de-Siècle Culture (1988)
+- CIOB; Chartered Institute of Building; CIOB Great Britain — Code of Practice for Project Management for the Built Environment, 6th Edition
+- Caldeira; Leonardo — You and ChatGPT - Creative Intelligence: Explore the technology and learn to use it to boost your career and achieve yo
+- CarrieLynn D. Reinhard; Christopher Olson — Convergent Wrestling: Participatory Culture, Transmedia Storytelling, and Intertextuality in the
+- Chris Calori; David Vanden-Eynden — Signage and Wayfinding Design: A Complete Guide to Creating Environmental Graphic Design Systems
+- Chris Donaghue — Sex Outside the Lines: Authentic Sexuality in a Sexually Dysfunctional Culture
+- Chris Rojek — Presumed Intimacy: Parasocial Interaction in Media, Society and Celebrity Culture
+- Christian Ciceri; Dave Farley; Neal Ford; Andrew Harmel-Law; Michael Keeling; Carola Lilienthal; João Rosa; Alexander von Zitzewitz; René We
+- Christine Schwanecke — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Firs
+- Christoph Schubert; Valentin Werner — Stylistic Approaches to Pop Culture
+- Christopher Partridge — High Culture: Drugs, Mysticism, and the Pursuit of Transcendence in the Modern World
+- Christos Tjortjis; (ed.) — Graph Databases: Applications on Social Media Analytics and Smart Cities
+- Clare Cooper Marcus; Naomi A Sachs — Therapeutic landscapes : an evidence-based approach to designing healing gardens and restorative outdoo
+- Colin Flint; Peter Taylor — Political Geography: World-Economy, Nation-State and Locality
+- Connor Wallace — Clean Architecture: Comprehensive Beginners Guide to Learn and Understand Clean Architecture
+- Craig S. Tucker; John A. Hargreaves — Environmental Best Management Practices for Aquaculture
+- DIAZ; MARA R.; CORREDOR; JORGE E.; MORELL; JULIO M. — Nitrogenase activity of Microcoleus lyngbyaceus mat communities in a eutrophic, tropic
+- DR. Rebecca Williams — Theme Park Fandom: Spatial Transmedia, Materiality and Participatory Cultures
+- Dan Hassler-Fores — Science Fiction, Fantasy, And Politics: Transmedia World-Building Beyond Capitalism
+- Daniel Bergner — The Other Side of Desire: Four Journeys into the Far Realms of Lust and Longing
+- Daniel Deudney — Dark Skies: Space Expansionism, Planetary Geopolitics, and the Ends of Humanity
+- Danielle Knafo; Rocco Lo Bosco — The Age of Perversion: Desire and Technology in Psychoanalysis and Culture
+- David Bell; Jon Binnie; Ruth Holliday; Robyn Longhurst; Robin Peace — Pleasure Zones: Bodies, Cities, Spaces
+- David Cohen — Law, Sexuality, and Society: The Enforcement of Morals in Classical Athens
+- David Fannon; Michelle Laboy; Peter Wiederspahn — The Architecture of Persistence: Designing for Future Use
+- David H. Jonassen — Learning to Solve Problems: A Handbook for Designing Problem-Solving Learning Environments
+- David L. Pulver — GURPS 4th edition. Transhuman Space
+- David Wallance — The Future of Modular Architecture
+- Design Workshop — Landscape Architecture Documentation Standards: Principles, Guidelines, and Best Practices
+- Dewey Thorbeck — Agricultural Landscapes: Seeing Rural Through Design
+- Dewey Thorbeck — Architecture and Agriculture: A Rural Design Guide
+- Dick Hebdige — Subculture: The Meaning of Style
+- Digital Mayhem; Duncan Evans — 3D Landscape Techniques: where Inspiration, Techniques and Digital Art meet
+- Dimopoulos; Konstantinos — Virtual Cities : An Atlas & Exploration of Video Game Cities
+- Donald Watson; Michele Adams — Design for Flooding: Architecture, Landscape, and Urban Design for Resilience to Flooding and Climate Change
+- Donna Hancox — The Revolution in Transmedia Storytelling Through Place : Pervasive, Ambient and Situated
+- Dori Griffin — Type Specimens - A Visual History of Typesetting and Printing
+- Douglas Barnes — The Permaculture Earthworks Handbook: How To Design And Build Swales, Dams, Ponds, And Other Water Harvesting Systems
+- Dr. Valery Kleshnev — The Biomechanics of Rowing: A Unique Insight Into the Technical and Tactical Aspects of Elite Rowing
+- Edward A. Armstrong — The Folklore of Birds
+- Ekman Stefan — Here Be Dragons: Exploring Fantasy Maps and Settings
+- Emily West; Matthew P. McAllister — The Routledge Companion to Advertising and Promotional Culture 2E
+- Eric H. Cline — 1177 B.C. - The Year Civilization Collapsed (2nd impression 2014) [TURNING POINTS IN ANCIENT HISTORY #1]
+- Eva Maurer; Julia Richers; Monica Ruthers; Carmen Scheide; Monica Rthers — Soviet Space Culture: Cosmic Enthusiasm in Socialist Societies
+- Federico De Matteis — Affective Spaces: Architecture and the Living Body
+- Francis D.K. Ching — Architecture : Form, Space, & Order
+- Francis Field — Permaculture: From Urban Gardening to Backyard Homestead, The Comprehensive Guide to Permaculture and The Sustainable Living
+- Francis Mulhern — Culture/Metaculture (New Critical Idiom)
+- Frank Jacobus; Angela Carpenter; Rachel Smith Loerts; Justin M. Tucker; Randal Dickinson — The Making of Things: Modeling Processes and Effe
+- Geeta Mehta; Kimie Tada; Noboru Murata — Japan Style: Architecture Interiors Design
+- Gerard Genette; Jane E. Lewin — Paratexts: Thresholds of Interpretation (Literature, Culture, Theory)
+- Glenn M. Schwartz; John J. Nichols — After Collapse: The Regeneration of Complex Societies
+- Grace A Musila — Routledge Handbook of African Popular Culture
+- Graham Burnett — Permaculture, a Beginners Guide
+- Gregory Whistance-Smith — Expressive Space: Embodying Meaning in Video Game Environments
+- Hans-Jürgen Döpp — Sex in the Cities 1 - Amsterdam
+- Hans-Jürgen Döpp — Sex in the Cities, Tome 2 : Berlin
+- Hans-Jürgen Döpp — Sex in the Cities, Vol 3: Paris
+- Harm de Blij — The power of place: geography, destiny, and globalization's rough landscape
+- Harry Percival; Bob Gregory — Architecture Patterns with Python
+- Harvard Business Review — HBR’s 10 Must Reads on Building a Great Culture (with bonus article "How to Build a Culture of Originality" by Ada
+- Hazari; Animesh; Maiya; Arun G.; Nagda; Taral V. — Conceptual Biomechanics and Kinesiology
+- Heather L. Venhaus — Designing the Sustainable Site: Integrated Design Strategies for Small Scale Sites and Residential Landscapes
+- Henry Kelly — Environment Art in the Game Industry: A Guide to Rich and Realistic Environments Using Substance Designer
+- Hensey; Paul — Construction detailing for landscape and garden design: surface, steps and margins
+- Herman Hertzberger — Space and the Architect: Lessons in Architecture 2 [scan]
+- Ian Gorton — Foundations of Scalable Systems - Designing Distributed Architectures
+- Ian Morris; Walter Scheidel — The Dynamics of Ancient Empires: State Power from Assyria to Byzantium (Oxford Studies in Early Empires)
+- Jack Weatherford — The Secret History of the Mongol Queens: How the Daughters of Genghis Khan Rescued His Empire
+- James D'Amato — The Ultimate RPG Game Master's Worldbuilding Guide
+- James H. Tidwell — Aquaculture Production Systems
+- James Serra — Deciphering Data Architectures: Choosing Between a Modern Data Warehouse, Data Fabric, Data Lakehouse, and Data Mesh
+- James Steele — Contemporary Japanese Architecture: Tracing the Next Generation
+- James Urquhart — Flow Architectures: The Future of Streaming and Event-driven Integration
+- Jan Harold Brunvand — American Folklore: An Encyclopedia
+- Jan-Noël Thon — Transmedial Narratology and Contemporary Media Culture
+- Jared Diamond — Guns, Germs, and Steel - The Fates of Human Societies (20th anniversary edition 2017) [CIVILIZATIONS RISE AND FALL #1]
+- Jean Hogarty — Popular Music and Retro Culture in the Digital Era
+- Jeffrey D. Sachs — The Ages of Globalization: Geography, Technology, and Institutions
+- Jenni Blackmore — Permaculture for the Rest of Us: Abundant Living on Less than an Acre
+- Jennifer Larson; Jennifer Lynn Larson — Greek Nymphs: Myth, Cult, Lore
+- Jennifer Robertson — Same-Sex Cultures and Sexualities: An Anthropological Reader (Blackwell Readers in Anthropology)
+- Jennifer Van Sijll — Setting up your story cinematically : the 100 most powerful film conventions every filmmaker must know
+- Jens Boel and Eng Sengsavang — Recordkeeping in International Organizations: Archives in Transition in Digital, Networked Environments
+- Jeremy Vineyard; José Cruz — Setting up your shots : great camera moves every filmmaker should know
+- John B Thompson — Merchants of Culture: The Publishing Business in the Twenty-First Century
+- John Leverso; David C. Pyrooz; James Densley; — The Oxford Handbook of Gangs and Society
+- John S Lucas; Paul C Southgate; Craig S Tucker — Aquaculture: Farming Aquatic Animals and Plants
+- John Siskin — Photographing Architecture: Lighting, Composition, Postproduction and Marketing Techniques
+- John Wills — Gamer Nation: Video Games and American Culture
+- Jonathan Hicks — Those Dark Places: Industrial Science Fiction Roleplaying
+- Joseph Tainter — The Collapse of Complex Societies (New Studies in Archaeology)
+- Jr. Robert T. Tally (editor) — Spatial literary studies : interdisciplinary approaches to space, geography, and the imagination
+- Julia McMorrough — The Architecture Reference & Specification Book updated & revised : Everything Architects Need to Know Every Day
+- Kara-Jane Lombard (ed.) — Skateboarding: Subcultures, Sites and Shifts
+- Karl Toepfer — Empire of Ecstasy: Nudity and Movement in German Body Culture, 1910-1935 (Weimar and Now: German Cultural Criticism 13)
+- Kate Kennen; Niall Kirkwood — Phyto: Principles and Resources for Site Remediation and Landscape Design
+- Katherine Pence; Paul Betts — Socialist Modern: East German Everyday Culture and Politics (Social History, Popular Culture, and Politics in 
+- Kathleen James-Chakraborty; Sabine Kriebel — Bauhaus Effects in Art, Architecture, and Design
+- Kathy A. Mills (editor); Amy Stornaiuolo (editor); Anna Smith (editor); Jessica Zacher Pandya (editor) — Handbook of Writing, Literacies, an
+- Keith A. Quesenberry; Michael K. Coolsen — Brand Storytelling: Integrated Marketing Communications for the Digital Media Landscape
+- Kennewell J. — SSA. Orbital Debris, Space Weather, and Planetary Defense 2025
+- Kerry M. Kartchner; Briana D. Bowen; Jeannie L. Johnson — Routledge Handbook of Strategic Culture
+- Kevin J. Anderson — Worldbuilding: From Small Towns to Entire Universes (The Million Dollar Writing Series)
+- Kingston Wm. Heath Ph.D. — Vernacular Architecture and Regional Design Cultural Process and Environmental Response
+- Kock; Florian — The Behavioral Ecology of Sex Tourism: The Consequences of Skewed Sex Ratios
+- Larry D. Kelley; Kim Bartel Sheehan — Advertising Management in a Digital Environment: Text and Cases
+- Laura Chiesa — Space as Storyteller: Spatial Jumps in Architecture, Critical Theory, and Literature
+- Laura Eceiza — Atlas of Fashion Designers
+- Laurie Hanquinet; Mike Savage — Routledge International Handbook of the Sociology of Art and Culture
+- Lawrence Buell — The Environmental Imagination: Thoreau, Nature Writing, and the Formation of American Culture
+- Lawrence Chua; Ronald G. Knapp; Xing Ruan — Bangkok Utopia: Modern Architecture and Buddhist Felicities, 1910-1973
+- Lisa Wade — American Hookup: The New Culture of Sex on Campus
+- Lisa﻿ ﻿Heschong — Visual Delight in Architecture; Daylight, Vision, and View
+- Lonely Planet; Kate Armstrong — Lonely Planet Pocket Orlando & Walt Disney World Resort, 3rd Edition
+- Loren-Paul Caplin — Writing Compelling Dialogue for Film and TV: The Art & Craft of Raising Your Voice on Screen
+- Louis Rosenfeld; Peter Morville; Jorge Arango — Information Architecture for the World Wide Web
+- Luigi Berzano; Carlo Genova — Lifestyles and Subcultures: History and a New Perspective
+- Lydia L. Dewiel — The Art of Lorenzo Sperlonga
+- Lydia R. Cooper (editor) — The Routledge Companion to Masculinity in American Literature and Culture
+- Lynda Johnston; Robyn Longhurst — Space, Place, and Sex: Geographies of Sexualities
+- M. D. Presley — 101 Worldbuilding Prompts - Forging Fantasy Realms 02
+- M. Pearson — Architecture and Order: Approaches to Social Space
+- Marc Miller; Matthew Sprange — Traveller Core Rulebook Update 2022
+- Marc Schuilenburg (editor); Rik Peeters (editor) — The Algorithmic Society; Technology, Power, and Knowledge
+- Maria Alessia Rossi; Alice Isabella Sullivan — The Routledge Handbook of Byzantine Visual Culture in the Danube Regions, 1300-1600
+- Mark Bould; China Miéville — Red Planets: Marxism and Science Fiction
+- Mark Bryden; John Dyson; Jaimie Johnston; Martin Wood — Design to Value: The Architecture of Holistic Design and Creative Technology
+- Mark J. P. Wolf — World-Builders on World-Building : An Exploration of Subcreation
+- Mark McLelland — The End of Cool Japan: Ethical, Legal, and Cultural Challenges to Japanese Popular Culture
+- Mark Nelson — Fantasy World-Building : A Guide to Developing Mythic Worlds and Legendary Creatures
+- Mark Richards; Neal Ford — Fundamentals of Software Architecture: An Engineering Approach
+- Mark W. Macwilliams; Mark W. Macwilliams — Japanese Visual Culture: Explorations in the World of Manga and Anime
+- Mary Ann Steane — The Architecture of Light: Recent Approaches to Designing with Natural Light
+- Massimo Fusillo (editor); Gianluigi Simonetti (editor); Lorenzo Marchese (editor) — Thinking Narratively: Between Novel-Essay and Narrative 
+- Mathew Aitchison — The Architecture of Industry: Changing Paradigms in Industrial Building and Planning
+- Matt Alt — Pure Invention: How Japan's Pop Culture Conquered the World
+- Matthew Freeman; Anthony N. Smith — Transmedia/Genre: Rethinking Genre in a Multiplatform Culture
+- Matthew Freeman; William Proctor (eds) — Global Convergence Cultures: Transmedia Earth
+- Matthew Freeman; William Proctor — Global Convergence Cultures
+- Max Harris — Carnival and Other Christian Festivals - Folk Theology and Folk Performance (Joe R. and Teresa Lozano Long Series in Latin Amer
+- Meg Calkins — The Sustainable Sites Handbook: A Complete Guide to the Principles, Strategies, and Best Practices for Sustainable Landscapes
+- Micah Godbolt [Micah Godbolt] — Frontend Architecture for Design Systems
+- Micah Issitt — Hippies (2009) [GUIDES TO SUBCULTURE AND COUNTERCULTURE]
+- Micah L. Issitt — Goths: A Guide to an American Subculture (Guides to Subcultures and Countercultures)
+- Michael A Hoffman — Secret societies and psychological warfare
+- Michael Alvear — Blow Him Till His Kingdom Comes: A Sex Guide For Women Who Want To Give Dazzling Blowjobs
+- Michael E. Smith (ed.) — The Comparative Archaeology of Complex Societies
+- Michael Ezban — Aquaculture landscapes : fish farming and the public realm
+- Michael Filimowicz — Digital Totalitarianism: Algorithms and Society
+- Michael Hameleers — Populist Disinformation in Fragmented Information Settings; Understanding the Nature and Persuasiveness of Populist and 
+- Michael Hardt; Antonio Negri — Empire
+- Michael Shellenberger — Apocalypse Never: Why Environmental Alarmism Hurts Us All
+- Michele Cagan — Budgeting 101: from getting out of debt and tracking expenses to setting financial goals and building your savings, your ess
+- Michiko Suzuki — Becoming Modern Women: Love and Female Identity in Prewar Japanese Literature and Culture
+- Mihaela Noroc — The Atlas of Beauty
+- Miller J. — Planetary Spacecraft Navigation
+- Miriam Silverberg — Erotic Grotesque Nonsense: The Mass Culture of Japanese Modern Times
+- Murat Erder; Pierre Pureur; Eoin Woods — Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps
+- Mustafa Kayyali; Will Durant — The Story of Civilization (Complete - 11 Parts): Text, Summary, Plot Overview, Themes, Characters, Motifs and
+- Nancy Goldstone — The Rival Queens: Catherine de' Medici, Her Daughter Marguerite de Valois, and the Betrayal that Ignited a Kingdom
+- National Aeronautics and Space Administration — NASA"s Moon to Mars Architecture Definition Document
+- Neal Ford; Mark Richards; Pramod Sadalage; Zhamak Dehghani — Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distribute
+- Nicholas Cook; Monique M. Ingalls; David Trippett; (eds.) — The Cambridge Companion to Music in Digital Culture (Cambridge Companions to Mus
+- Nicolas G. Papadopoulos; Mark Cleveland (Eds.) — Marketing Countries, Places, and Place-Associated Brands : Identity and Image
+- Nicole Bridge — Architecture 101
+- Nima Sanandaji — Scandinavian Unexceptionalism: Culture, Markets and the Failure of Third-way Socialism
+- Nude Magazine; Esha Marie — NUDE Issue°21 — Landscape Issue
+- Paolo Eleuteri Serpieri — The Forgotten Planet (Druuna Vol 7)
+- Pat Califia — Public Sex: The Culture of Radical Sex
+- Patrick Olivelle — Gṛhastha: The Householder in Ancient Indian Religious Culture
+- Patrizia Calefato — The Clothed Body: Dress, Body, Culture (Dress, Body, Culture)
+- Paul B. Preciado — Pornotopia: An Essay on Playboy’s Architecture and Biopolitics (Zone Books)
+- Paul D. Spudis — The Value of the Moon: How to Explore, Live, and Prosper in Space Using the Moon's Resources
+- Paul Emmons; Marcia Feuerstein; Carolina Dayer; Luc Phinney — Confabulations: Storytelling in Architecture
+- Paul Hensey — Construction Detailing for Landscape and Garden Design: Urban Water Features
+- Penny Florence (editor) — Thinking the Sculpture Garden: Art, Plant, Landscape
+- Peter Clark — The Oxford Handbook of Cities in World History
+- Peter Gay — Weimar Culture - The Outsider as Insider (1968. repr. 2001)
+- Peter Jan Honigsberg — A Place Outside the Law: Forgotten Voices from Guantanamo
+- Ph.D. Rick Parker — Aquaculture Science
+- Phil Hubbard — Cities and Sexualities
+- Philip Gardiner — Secret Societies: Gardiner's Forbidden Knowledge
+- Piethein Strengholt — Data Management at Scale: Modern Data Architecture with Data Mesh and Data Fabric (2nd Edition)
+- Piethein Strengholt — Data Management at Scale: Modern Data Architecture with Data Mesh and Data Fabric - 2nd Edition
+- Pilcher; Katy — Women and sex tourism landscapes , Erin Sanders-McDonagh
+- Prem Saran — Tantra: hedonism in Indian culture
+- Rianne Appel-Meulenbroek and Vitalija Danivska — A Handbook of Theories on Designing Alignment between People and the Office Environment
+- Richard D. Pepperman — Setting Up Your Scenes: The Inner Workings of Great Films
+- Richard E. Simmons III — Sex at first sight : understanding the modern hookup culture
+- Rob Avis; Michelle Avis; Takota Coen — Building Your Permaculture Property: A Five-Step Process to Design and Develop Land
+- Rob Pepper — The Artist’s Manual : The Definitive Art Sourcebook. Media, Materials, Tools, and Techniques
+- Robbins Ben — Kingdom: a role-playing game about communities
+- Robert Beachy — Gay Berlin: Birthplace of a Modern Identity
+- Robert T. Tally Jr — Topophrenia: Place, Narrative, and the Spatial Imagination
+- Robert Zimmerman — Leaving Earth: Space Stations, Rival Superpowers, and the Quest for Interplanetary Travel
+- Rocke Michael — Forbidden Friendships - Homosexuality and Male Culture in Renaissance Florence
+- Ron Rozelle — Write Great Fiction - Description, Setting
+- Ronald K. Faulseit (ed.) — Beyond Collapse: Archaeological Perspectives on Resilience, Revitalization, and Transformation in Complex Societi
+- Rusty Barrett — From Drag Queens to Leathermen : language, gender, and gay male subcultures (Studies in Language Gender and Sexuality)
+- Sarah Lynne Bowman — The Functions of Role-Playing Games: How Participants Create Community, Solve Problems and Explore Identity
+- Schwanecke; Christine — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Fir
+- Scribe Forge — The Essential Worldbuilding Blueprint and Workbook
+- Sengupta Sulagna — Animus, Psyche and Culture: A Jungian Revision
+- Setha M. Low; Denise Lawrence-Zunigais — The Anthropology of Space and Place: Locating Culture
+- Shane Hensley — Savage Worlds Deluxe: Explorer's Edition
+- Sherrilyn Kenyon — The Writer's Digest Character Naming Sourcebook
+- Sigfried Giedion — Space, Time and Architecture - The Growth of a New Tradition
+- Simber Atay; Gülsün Kurubacak-Meriç; Serap Sisman-Uğur — Present And Future Paradigms Of Cyberculture In The 21st Century
+- Simon Bacon — Transmedia Cultures: A Companion
+- Simon Goddek; Alyssa Joyce; Benz Kotzen; Gavin M. Burnell — Aquaponics Food Production Systems: Combined Aquaculture and Hydroponic Producti
+- Simon J. Bronner — Americanness: inquiries into thought and culture of the United States
+- Simon J. Bronner — Explaining Traditions: Folk Behavior in Modern Culture
+- Sonya Abrego — Westernwear. Postwar American Fashion and Culture
+- Sophia Psarra — Architecture And Narrative - The Formation Of Space And Cultural Meaning
+- Sourcebooks — 269 Red Hot XXX-Rated Questions: Super Sexy Ticklers to Tempt, Tease and Spark
+- Srinath Perera — Software Architecture and Decision-Making: Leveraging Leadership, Technology, and Product Management to Build Great Product
+- Stella Bruzzi; Pamela Church Gibson — Fashion Cultures: Theories, Explorations and Analysis
+- Steve Brown; Cari Goetcheus — Routledge Handbook of Cultural Landscape Practice
+- Stuart Horwitz — Book Architecture: How to Plot and Outline Without Using a Formula
+- Susan Hall — ISE Basic Biomechanics (ISE HED B&B PHYSICAL EDUCATION) 9th Edition, Susan J. Hall (International Edition), Textbook only
+- Susan Herrington — Landscape Theory in Design
+- Susan Parnell; Sophie Oldfield — The Routledge Handbook on Cities of the Global South
+- Susana Tosca; Lisbeth Klastrup — Transmedial Worlds in Everyday Life: Networked Reception, Social Media, and Fictional Worlds
+- Suzanne Macleod; Laura Hourston Hanks; Jonathan Hale — Museum Making: Narratives, Architectures, Exhibitions
+- Sylvain De Bleeckere; Sebastiaan Gerards — Narrative Architecture: A Designer's Story
+- The Pleasure Mechanics — How To Have A Threesome: Explore Your Fantasy, Experience The Ultimate Threesome & Strengthen Your Twosome
+- Thomas Johansson; Marcus Herz — Youth Studies in Transition: Culture, Generation and New Learning Processes
+- Thomas K. Uchida; Scott L. Delp; David Delp — Biomechanics of Movement - The Science of Sports, Robotics, and Rehabilitation
+- Thomas Maschio — Digital Cultures, Lived Stories and Virtual Reality
+- Tim Weilkiens; Jesko G. Lamm; Stephan Roth; Markus Walker — Model-Based System Architecture (Wiley Series in Systems Engineering and Managem
+- Timothy Hickson — On Writing and Worldbuilding: Volume I
+- Timothy Hickson — On Writing and Worldbuilding: Volume II
+- Tobias Churton — The Invisible History of the Rosicrucians: The World's Most Mysterious Secret Society
+- Tom Graves — Everyday Enterprise Architecture: Sense-making, Strategy, Structures, and Solutions
+- Tom Keegan — The Complete Guide to Videogame Performance Directing: Place, Time, Action
+- Tom Pollard — Sadomasochism, Popular Culture and Revolt: A Pornography of Violence
+- Toni Pape — The Aesthetics of Stealth: Digital Culture, Video Games, and the Politics of Perception
+- Torill Elvira Mortensen; Jonas Linderoth; Ashley ML Brown — The Dark Side of Game Play: Controversial Issues in Playful Environments (Routle
+- Torres; Gina; Velasco; Manel; Marti; Pau; Fuertes; Josep M. — [IEEE IECON 2014 - 40th Annual Conference of the IEEE Industrial Electronics S
+- Tracey Skelton; Gill Valentine — Cool Places - Geographies of Youth Cultures.
+- Trevor Bryce — The Kingdom of the Hittites (new edition 2005)
+- Tricia Austin — Narrative Environments and Experience Design: Space as a Medium of Communication
+- Tushar K. Hazra; Bhuvan Unhelkar — Enterprise Architecture for Digital Business: Integrated Transformation Strategies
+- Uta Ranke-Heinemann — Eunuchs for the Kingdom of Heaven: Women, Sexuality and the Catholic Church
+- Vanamali — Shakti: Realm of the Divine Mother
+- Vaughn Vernon; Tomasz Jaskula — Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture (Addison-Wesley Sign
+- Victoria Carrington; Jennifer Rowsell; Esther Priyadharshini; Rebecca Westrup#; (eds.) — Generation Z: Zombies, Popular Culture and Educatin
+- Vincent Hui; Ryan Scavnicky; Tatiana Estrina — Architecture and Videogames: Intersecting Worlds
+- Virginia McAlester — A Field Guide to American Houses: The Definitive Guide to Identifying and Understanding America's Domestic Architecture
+- Vladik Khononov — Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy
+- Walter Kendrick — The secret museum : pornography in modern culture
+- WikiLeaks; Julian Assange — The WikiLeaks Files: The World According to US Empire
+- William G. Christ (editor); Belinha S. De Abreu (editor) — Media Literacy in a Disruptive Media Environment
+- William M. C. Lam — Perception and Lighting As Formgivers for Architecture
+- Worthen; Meredith G. F. — Sexual Deviance and Society: A Sociological Examination
+- Xu; Bin; Xu; Renjing — [IEEE 2009 Second International Symposium on Knowledge Acquisition and Modeling - Wuhan, China (2009.11.30-2009.12.1)
+- Yubo Fan; Lizhen Wang — Biomechanical Modelling and Simulation on Musculoskeletal System
+- Yuniya Kawamura — Sneakers: Fashion, Gender and Subculture
+- Yurek Chodak — Mythos 1920's Sourcebook
+- Zach Loeks; Joel Salatin — The Permaculture Market Garden: A Visual Guide To A Profitable Whole Systems Farm Business
+
+## TEXTURE (224)
+
+- Aaris Sherin — Introduction to Graphic Design : A Guide to Thinking, Process & Style
+- Abigail Rindo — Game Narrative Design and UX Fundamentals; Tools for Player‑Centric Storytelling
+- Alber; Jan; Fludernik; Monika — Postclassical narratology: approaches and analyses
+- Alburger; James — The Art of Voice Acting: The Craft and Business of Performing Voiceover
+- Alexa Weik von Mossner & Marijana Mikić & Mario Grill — Ethnic American Literatures and Critical Race Narratology
+- Alexandra Vignolles; Martin K.J. Waiguny; (eds.) — Advances in Advertising Research (Vol. XII): Communicating, Designing and Consuming Authe
+- Alice Bell; Astrid Ensslin — Reading Digital Fiction: Narrative, Cognition, Mediality
+- Alice Bennett (auth.) — Afterlife and Narrative in Contemporary Fiction
+- Alison; Jane — Meander, spiral, explode: design and pattern in narrative
+- Alistair Rolls — Agatha Christie and New Directions in Reading Detective Fiction: Narratology and Detective Criticism
+- Amy Pogue — Words to Write About Food: Thousands of Words for Product Descriptions & Restaurant Reviews
+- Anderson; Christopher D. — Sound Design for the Visual Storyteller: Creating Sound for Visual Media
+- Andrei Nae — Immersion, Narrative, and Gender Crisis in Survival Horror Video Games
+- Andrew Radford — An Introduction to English Sentence Structure
+- Angus Fletcher — Storythinking: The New Science of Narrative Intelligence
+- Anja Tippner; Anna Artwińska — Narratives of Annihilation, Confinement, and Survival: Camp Literature in a Transnational Perspective (Cultur
+- Ann Banfield — Unspeakable Sentences: Narration and Representation in the Language of Fiction
+- Ann Fehn (editor); Ingeborg Hoesterey (editor); Maria Tatar (editor) — Neverending Stories: Toward a Critical Narratology
+- Anna Lefteratou — Mythological Narratives: The Bold and Faithful Heroines of the Greek Novel
+- Anthony G. Cirilla; Vincent E. Rone — Mythopoeic Narrative in The Legend of Zelda
+- Antonio Pizzo; Vincenzo Lombardo; Rossana Damiano — Interactive Storytelling: A Cross-Media Approach to Writing, Producing and Editing with 
+- Barbaros Bostan — Games and Narrative: Theory and Practice
+- Beat Suter; René Bauer; Mela Kocher (eds.) — Narrative Mechanics - Strategies and Meanings in Games and Real Life
+- Ben Yagoda — The Sound on the Page: Great Writers Talk about Style and Voice in Writing
+- Bernaerts; Lars & Geest; Dirk de & Herman; Luc & Vervaeck; Bart — Stories and Minds: Cognitive Approaches to Literary Narrative
+- Bill Walsh — The Elephants of Style : A Trunkload of Tips on the Big Issues and Gray Areas of Contemporary American English
+- Blain Brown — Cinematography: Theory and Practice: Image Making for Cinematographers and Directors
+- Blain Brown — The Basics of Filmmaking: Screenwriting, Producing, Directing, Cinematography, Audio, & Editing
+- Bo Belvedere Christensen — Analog Photography: A Beginner's Guide
+- Bong Joon-Ho — Parasite: A Graphic Novel in Storyboards
+- Breault; Michael — Narrative Design: The Craft of Writing for Games
+- Brian Kindregan; Diandra Anne Lasrado — The Definitive Game Narrative Guide
+- Brooke Borel — The Chicago Guide to Fact-Checking, (Chicago Guides to Writing, Editing, and Publishing)
+- Brooks Landon — Building Great Sentences: How to Write the Kinds of Sentences You Love to Read
+- Caleb Ward — Creating Cinematic Images. Midjourney Style Guide
+- Carol Fisher Saller — The Subversive Copy Editor: Advice from Chicago (or, How to Negotiate Good Relationships with Your Writers, Your Colle
+- Catherine McIntyre — Visual Alchemy: The Fine Art of Digital Montage
+- Cavallaro; Dani — The art of Studio Gainax : experimentation, style and innovation at the leading edge of anime
+- Change Your Life Guru — Social Media Influencer: The Ultimate Guide to Building a Profitable Social Media Influencer Career: Learn How to Bu
+- Chris Bateman — Game Writing: Narrative Skills for Videogames
+- Christine Schwanecke — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Firs
+- Chrysanthos S. Chrysanthou — Plutarch's Parallel Lives: Narrative Technique and Moral Judgement
+- Clifford Howard — Sex Worship: Exposition of the Phallic Origin of Religion
+- Constance Hale — Sin and Syntax: How to Craft Wickedly Effective Prose
+- D'hoker; Elke — Narrative Unreliability in the Twentieth-Century First-Person Novel (Narratologia: Contributions to Narrative Theory Beitrag
+- Dani Cavallaro — Anime and the Visual Novel: Narrative Structure, Design and Play at the Crossroads of Animation and Computer Games
+- Daniel Lynwood Smith — The Rhetoric of Interruption: Speech-Making, Turn-Taking, and Rule-Breaking in Luke-Acts and Ancient Greek Narrative
+- Daniel Punday (auth.) — Narrative Bodies: Toward a Corporeal Narratology
+- Daniel Punday (editor) — Digital Narrative Spaces: An Interdisciplinary Examination
+- Daniel Punday — Digital Narrative Spaces; An Interdisciplinary Examination
+- Daniel Punday — Playing at Narratology: Digital Media as Narrative Theory
+- David Baboulene — Story in Mind: A Constructivist Narratology. The Psychological and Linguistic Foundations to How Stories Work (The Story S
+- David Herman — Narratology Beyond the Human: Storytelling and Animal Life
+- David J. Bodenhamer; John Corrigan; Trevor M. Harris — Deep Maps and Spatial Narratives
+- Dena Shottenkirk; Manuel Curado; Steven S. Gouveia (editors) — Perception, Cognition, and Aesthetics
+- Dennis Puhalla — Design Elements, Form & Space: A Graphic Style Manual for Understanding Structure and Design
+- Dewald; Carolyn; Thucydides — Thucydides' war narrative : a structural study
+- Dick Hebdige — Subculture: The Meaning of Style
+- Divya Dwivedi; Henrik Skov Nielsen; Richard Walsh — Narratology and Ideology: Negotiating Context, Form, and Theory in Postcolonial Narrativ
+- Dorothee Birke (editor); Tilmann Köppe (editor) — Author and Narrator: Transdisciplinary Contributions to a Narratological Debate
+- Douglas Brinkley — American Moonshot - John F. Kennedy and the Great Space Race (2019)
+- Douglas Scott Brookes — The Concubine, the Princess, and the Teacher: Voices from the Ottoman Harem
+- Edwin McRae — Narrative Design for Indies: Getting Started
+- Edwin McRae; Rachel Rees (editor) — Narrative Design for Writers: An industry guide to writing for video games
+- Elana Gomel — Narrative Space and Time: Representing Impossible Topologies in Literature
+- Eric Salzman; Thomas Desi — The New Music Theater: Seeing the Voice, Hearing the Body
+- Estelle Erasmus — Writing That Gets Noticed: Find Your Voice, Become a Better Storyteller, Get Published
+- Eva Sabine Wagner — Narrativity, Coherence and Literariness: A Theoretical Approach with Analyses of Laclos, Kafka and Toussaint
+- Francesca Arnavas — Lewis Carroll's "Alice" and Cognitive Narratology: Author, Reader and Characters
+- Francine Prose — Reading Like A Writer: A Guide for People Who Love Books and For Those Who Want to Write Them
+- Francis DeRespinis; Peter Hayward; Jana Jenkins; Amy Laird; Leslie McDonald; Eric Radzinski — The IBM Style Guide: Conventions for Writers a
+- Frida Ramstedt; Mia Olofsson — The Interior Design Handbook: Furnish, Decorate, and Style Your Space
+- G. Bruce Boyer — True Style: The History and Principles of Classic Menswear
+- Gaby Allrath; Marion Gymnich — Narrative Strategies in Television Series
+- Galit Atlas; Lewis Aron — Dramatic Dialogue: Contemporary Clinical Practice
+- Geeta Mehta; Kimie Tada; Noboru Murata — Japan Style: Architecture Interiors Design
+- Gloria Kempton — Write Great Fiction - Dialogue
+- Gregory Currie — Narratives and Narrators: A Philosophy of Stories
+- Greta Olson (editor) — Current Trends in Narratology
+- Greta Olson — Current Trends in Narratology
+- Hartmut Koenitz — Understanding Interactive Digital Narrative: Immersive Expressions for a Complex Time
+- Harvard Business Review & Clayton M. Christensen & Mark W. Johnson & Rita Gunther McGrath & Steve Blank — HBR's 10 Must Reads on Business Mo
+- Harvard Business Review; Michael E. Porter; Clayton M. Christensen; Rita Gunther McGrath; Thomas H. Davenport — HBR's 10 Must Reads on Techn
+- Ian Case Punnett — Toward a Theory of True Crime Narratives: A Textual Analysis
+- Irene J. F. de Jong — Narratology and Classics: A Practical Guide
+- Isidore Okpewho — Blood on the Tides: the Ozidi Saga and Oral Epic Narratology
+- Jack Hart — Story Craft: The Complete Guide to Writing Narrative Nonfiction
+- Jack Rinella & Joseph W. Bean [Rinella; Jack & Bean; Joseph W.] — The Compleat Slave: Creating and Living an Erotic Dominant/submissive Life
+- Jack Rinella — The Compleat Slave: Creating and Living an Erotic Dominant/submissive Lifestyle
+- Jan Alber (editor); Greta Olson (editor); Birte Christ (editor) — How to Do Things with Narrative: Cognitive and Diachronic Perspectives
+- Jan Alber — Unnatural Narrative: Impossible Worlds in Fiction and Drama
+- Jan Christoph Meister; Wilhelm Schernus (editors) — Time: From Concept to Narrative Construct: A Reader (Narratologia: Contributions to Narr
+- Jan Cristoph Meister — Narratology Beyond Literary Criticism: Mediality and Disciplinarity (Narratologia)
+- Jan-Noël Thon — Transmedial Narratology and Contemporary Media Culture
+- Janice Hardy — Understanding Show, Don’t Tell: And Really Getting It
+- Jeffrey Kottler — Stories We've Heard, Stories We've Told: Life-Changing Narratives in Therapy and Everyday Life
+- Jeremy Frost — The RV Passive Income Guide Learn The Laptop Lifestyle And Swap Your Day Job For Full-Time RV Living
+- Jeremy Vineyard; José Cruz — Setting up your shots : great camera moves every filmmaker should know
+- Jikiemi; Elizabeth — Successful Storytelling with Data: How to Interpret, Narrate and Visually Captivate your Audience with Impact
+- Jim Duvall; Laura Béres — Innovations in Narrative Therapy: Connecting Practice, Training, and Research
+- Joela Jacobs — Animal Narratology
+- John Hart — The Art of the Storyboard, : A filmmaker's introduction
+- John Pier (editor) — The Dynamics of Narrative Form: Studies in Anglo-American Narratology
+- Jonas Grethlein (editor); Antonios Rengakos (editor) — Narratology and Interpretation: The Content of Narrative Form in Ancient Literature
+- Jonathan Nolan; Christopher Nolan — Interstellar (Screenplay with Selected Storyboards)
+- Joseph M. Williams — Style: Toward Clarity and Grace (Chicago Guides to Writing, Editing, and Publishing)
+- Julian Hanebeck — Understanding Metalepsis: The Hermeneutics of Narrative Transgression
+- June Casagrande — It Was the Best of Sentences, It Was the Worst of Sentences - A Writer’s Guide to Crafting Killer Sentences
+- Kai Mikkonen — The Narratology of Comic Art
+- Karan Gupta — Visual Dialogues 101 Graphic Design Fundamentals: Design Career, Layout, Typography, and Colour
+- Ken Dancyger — The Technique of Film and Video Editing, Fifth Edition - History, Theory, and Practice
+- Korthals Altes; Liesbeth — Ethos and narrative interpretation : the negotiation of values in fiction
+- Kyle Ezell — Visualize Your Teaching: Understand Your Style and Increase Your Impact
+- Lars Elleström — Transmedial Narration: Narratives and Stories in Different Media
+- Laurie Alberts — Showing & Telling: Learn How to Show & When to Tell for Powerful & Balanced Writing
+- Leslie Edgerton — Finding your voice : how to put personality in your writing
+- Lina Varotsi — Conceptualisation and Exposition: A Theory of Character Construction
+- Lisa Zeidner — Who Says?: Mastering Point of View in Fiction
+- Loren-Paul Caplin — Writing Compelling Dialogue for Film and TV: The Art & Craft of Raising Your Voice on Screen
+- M.J. Lallo; Jean Ann Wright — Voice-Over for Animation
+- Marc Furstenau — The Aesthetics of Digital Montage: Film Editing and Technological Change
+- Marco Caracciolo — Contemporary Narrative and the Spectrum of Materiality
+- Marco Caracciolo — On Soulsring Worlds : Narrative Complexity, Digital Communities, and Interpretation in Dark Souls and Elden Ring
+- Marco Caracciolo — Strange Narrators in Contemporary Fiction: Explorations in Readers’ Engagement with Characters
+- Marco Caracciolo — The Experientiality of Narrative: An Enactivist Approach
+- Marcos Mateu-Mestre — Framed Ink: Drawing and Composition for Visual Storytellers
+- Maria Duffy — Paul Ricoeur's Pedagogy of Pardon: A Narrative Theory of Memory and Forgetting
+- Marie-Laure Ryan; Alice Bell — Possible Worlds Theory And Contemporary Narratology
+- Marie-Laure Ryan; Jan-Noël Thon; C. B. Harvey — Storyworlds across Media: Toward a Media-Conscious Narratology
+- Marie-Laure Ryan; Monika Fludernik — Narrative Factuality: A Handbook
+- Marina Grishakova; Maria Poulaki — Narrative Complexity: Cognition, Embodiment, Evolution
+- Marita Nadal; Mónica Calvo — Trauma in Contemporary Literature: Narrative and Representation
+- Martell; William; C — Dialogue Secrets
+- Martin H. Manser — The Facts on File Guide to Style
+- Martin Kindermann; Rebekka Rohleder — Exploring the Spatiality of the City across Cultural Texts: Narrating Spaces, Reading Urbanity
+- Massimo Fusillo (editor); Gianluigi Simonetti (editor); Lorenzo Marchese (editor) — Thinking Narratively: Between Novel-Essay and Narrative 
+- Melissa Febos — Body Work: The Radical Power of Personal Narrative
+- Michael Breault — Narrative Design: The Craft of Writing for Games
+- Michelle Herte — Forms and Functions of Endings in Narrative Digital Games
+- Mick Hurbis-Cherrier — Voice & Vision: A Creative Approach to Narrative Filmmaking, Third Edition
+- Mick Hurbis-Cherrier; Gustavo Mercado — Voice & Vision: A Creative Approach to Narrative Filmmaking
+- Mieke Bal — Narratology: Introduction to the Theory of Narrative
+- Miguel Ottina; Peter Johannes Steffensen; Jesper Kristensen — Automated Market Makers: A Practical Guide to Decentralized Exchanges and Cryp
+- Mike Davis — Creating Visual Narratives Through Photography: A Fresh Approach to Making a Living as a Photographer
+- Monika Fludernik (editor); Marie-Laure Ryan (editor) — Narrative Factuality: A Handbook
+- Nancy C. Mulvany — Indexing Books, Second Edition (Chicago Guides to Writing, Editing, and Publishing)
+- Nancy Kress — Write Great Fiction - Characters, Emotion & Viewpoint
+- Neil Sadler — Fragmented Narrative
+- Nolan Christopher; Goyer David S; Nolan Jonathan — The Dark Knight Trilogy - The Complete Screenplays with Storyboards
+- Pamela Haag — Revise: The Scholar-Writer’s Essential Guide to Tweaking, Editing, and Perfecting Your Manuscript
+- Patrick J. Jones; Pat Wilshire — The Anatomy of Style: Figure Drawing Techniques
+- Patti Bellantoni — If It's Purple, Someone's Gonna Die: The Power of Color in Visual Storytelling
+- Paul Cobley — Narrative
+- Paul Ricoeur — Time and Narrative
+- Paul Ricoeur — Time and Narrative, Volume 3 (Time & Narrative)
+- Paul Ricoeur — Time and Narrative, Volume 3 (Time, Narrative)
+- Per Krogh Hansen (editor); John Pier (editor); Philippe Roussin (editor); Wolf Schmid (editor) — Emerging Vectors of Narratology
+- Per Krogh Hansen (editor); Stefan Iversen (editor); Henrik Skov Nielsen (editor); Rolf Reitan (editor) — Strange Voices in Narrative Fiction
+- Per Krogh Hansen; John Pier; Philippe Roussin; Wolf Schmid (eds.) — Emerging Vectors of Narratology
+- Peres Daniel; Editors of Details magazine — Details Men’s Style Manual : The Ultimate Guide for Making Your Clothes Work for You
+- Peter Huhn — Eventfulness in British Fiction (Narratologia: Contributions to Narrative Theory)
+- Peter Hühn; Jens Kiefer — The Narratological Analysis of Lyric Poetry
+- Peter Jan Honigsberg — A Place Outside the Law: Forgotten Voices from Guantanamo
+- Peter V. Zima — Discourse and Power: An Introduction to Critical Narratology: Who Narrates Whom?
+- Peter Verstraten; Stefan Van der Lecq — Film Narratology
+- Peter Womack — Dialogue (The New Critical Idiom)
+- Petter Hegre — Shots — Simone Classics
+- Raphaël Baroni; Françoise Revaz (eds.) — Narrative Sequence in Contemporary Narratology
+- Renni Browne; Dave King — Self-Editing for Fiction Writers, Second Edition - How to Edit Yourself Into Print
+- Robert Alan Harris — Writing with clarity and style : a guide to rhetorical devices for contemporary writers
+- Robert I. Binnick — The Oxford Handbook of Tense and Aspect
+- Robert Mckee — Dialogue: The Art of Verbal Action for Page, Stage, and Screen
+- Robert T. Tally Jr — Topophrenia: Place, Narrative, and the Spatial Imagination
+- Robert T. Tally Jr. (eds.) — Literary Cartographies: Spatiality, Representation, and Narrative
+- Ron Rozelle — Write Great Fiction - Description, Setting
+- Rosalie Maggio — How to Say It, Third Edition: Choice Words, Phrases, Sentences, and Paragraphs for Every Situation
+- Ruth E. Page (auth.) — Literary and Linguistic Approaches to Feminist Narratology
+- Ruthellen Josselson; Dan P. McAdams; Amia Lieblich — Up Close and Personal: The Teaching and Learning of Narrative Research
+- Sabine Schlickers (editor); Vera Toro (editor) — Perturbatory Narration in Film: Narratological Studies on Deception, Paradox and Empuzzleme
+- Sabine Vermeire — Unravelling Trauma and Weaving Resilience with Systemic and Narrative Therapy: Playful Collaborations with Children, Famil
+- Sandra Gerth — Show, Don’t Tell: How to write vivid descriptions, handle backstory, and describe your characters’ emotions (Writers’ Guide S
+- Sandra Heinen (editor); Roy Sommer (editor) — Narratology in the Age of Cross-Disciplinary Narrative Research
+- Sandra Heinen; Roy Sommer — Narratology in the Age of Cross-Disciplinary Narrative Research (Narratologia)
+- Schwanecke; Christine — A Narratology of Drama: Dramatic Storytelling in Theory, History, and Culture from the Renaissance to the Twenty-Fir
+- Scott Kelby — Light It, Shoot It, Retouch It: Learn Step by Step How to Go from Empty Studio to Finished Image (Voices That Matter)
+- Sebastian Domsch — Storyplaying: Agency and Narrative in Video Games
+- Shaun Aquilina — Musical Theatre for the Female Voice The Sensation, Sound, and Science, of Singing
+- Sophia Psarra — Architecture And Narrative - The Formation Of Space And Cultural Meaning
+- Stephanie Vanderslice — The Geek’s Guide to the Writing Life: An Instructional Memoir for Prose Writers
+- Stephen Cave; Kanta Dihal; Sarah Dillon — AI narratives: a history of imaginative thinking about intelligent machines
+- Steve D. Katz — Film Directing: Shot by Shot - 25th Anniversary Edition
+- Steven Pinker — The Sense of Style: The Thinking Person's Guide to Writing in the 21st Century
+- Steven Pinker — The Sense of Style: The Thinking Person’s Guide to Writing in the 21st Century
+- Stump  ASC; David — Digital Cinematography: Fundamentals, Tools, Techniques, and Workflows
+- Sullivan; K.D. & Ann Longknfe [Sullivan; K.D.] — The Art of Styling Sentences
+- Suzanne Iasenza — Transforming Sexual Narratives : A Relational Approach to Sex Therapy
+- Suzanne Macleod; Laura Hourston Hanks; Jonathan Hale — Museum Making: Narratives, Architectures, Exhibitions
+- Sylvain De Bleeckere; Sebastiaan Gerards — Narrative Architecture: A Designer's Story
+- Sylvie Patron (editor) — Optional-Narrator Theory: Principles, Perspectives, Proposals
+- Sylvie Patron — The Narrator : A Problem in Narrative Theory
+- T. Thabet — Video Game Narrative and Criticism
+- Takashi Ogata; Jumpei Ono — Bridging the Gap Between Ai, Cognitive Science, and Narratology With Narrative Generation
+- Takashi Ogata; Taisuke Akimoto — Computational and Cognitive Approaches to Narratology
+- Takashi Ogata; Taisuke Akimoto — Post-narratology Through Computational and Cognitive Approaches
+- Tapio Malinen; Scot J. Cooper; Frank N. Thomas — Masters of Narrative and Collaborative Therapies: The Voices of Andersen, Anderson, and Whi
+- Thomas Dewey II — A View from the South: The Narrative Art of Boyd Saunders
+- Thomas; Bronwen; Page; Ruth E — New narratives : stories and storytelling in the digital age
+- Thomas; Francis-Noël; Turner; Mark — Clear and Simple as the Truth: Writing Classic Prose, Second edition
+- Tom Kindt; Hans-Harald Muller — The Implied Author: Concept and Controversy (Narratologia 9)
+- Torill Elvira Mortensen; Jonas Linderoth; Ashley ML Brown — The Dark Side of Game Play: Controversial Issues in Playful Environments (Routle
+- Torill Elvira Mortensen; Kristine Jørgensen — The Paradox of Transgression in Games
+- Travis Heath; Tom Stone Carlson; David Epston — Reimagining Narrative Therapy Through Practice Stories and Autoethnography
+- Tricia Austin — Narrative Environments and Experience Design: Space as a Medium of Communication
+- Vasileios Liotsakis — Plato’s Proto-Narratology: Metanarrative Reflections and Narrative Paradigms
+- Victoria McCollum; Giuliana Monteverde — HBO’s Original Voices: Race, Gender, Sexuality and Power
+- Virginia Tufte — Artful Sentences: Syntax as Style
+- William Bernhardt — Sizzling Style: Every Word Matters (Red Sneaker Writers Book Series 5)
+- William C. Martell — Dialogue Secrets (Screenwriting Blue Books)
+- Writer's Digest Books — Crafting Dynamic Dialogue: The Complete Guide to Speaking, Conversing, Arguing, and Thinking in Fiction
+- Writer's Digest Books — Writing Voice: The Complete Guide to Creating a Presence on the Page and Engaging Readers
+- Yunhong Wang — English Translations of Shuihu Zhuan: A Narratological Perspective
+- Yvens R. Serpa — The Cores of Game Design: Mechanics, Economics, Narrative, and Aesthetics
+- Zara Dinnen — The Edinburgh Companion to Contemporary Narrative Theories
+- Zara Dinnen; Robyn Warhol — The Edinburgh Companion to Contemporary Narrative Theories
+
+## CRAFT-PROCESS (47)
+
+- Alberto Romele — Digital Habitus: A Critique of the Imaginaries of Artificial Intelligence (Routledge Studies in Contemporary Philosophy)
+- Alberto Romele; — Digital Habitus
+- Alex Galuzin — Preproduction Blueprint: How to Plan Game Environments and Level Designs
+- Andy Strote — How To Become A Successful Creative Freelancer: The Business Guide That Helps You Start Strong And Grow Like A Pro
+- Andy Williams — Self-Publishing on Amazon 2021: No publisher? No Agent? No Problem!
+- Anita Nipane [Nipane; Anita] — Book Cover Design Formula: Create Book Covers That Captivate Readers: Complete DIY Book Cover Design Guide fo
+- Barb Drozdowich — How to Self-Publish a Book: For the Technology Challenged Author
+- Bloomsbury Publishing — Writers' & Artists' Yearbook 2024: The best advice on how to write and get published (Writers' and Artists'), 117th 
+- Cal Newport — Deep Work
+- Cal Newport — Slow Productivity: The Lost Art of Accomplishment Without Burnout
+- Caldeira; Leonardo — You and ChatGPT - Creative Intelligence: Explore the technology and learn to use it to boost your career and achieve yo
+- Change Your Life Guru — Social Media Influencer: The Ultimate Guide to Building a Profitable Social Media Influencer Career: Learn How to Bu
+- Cindy Donovan — ChatGPT Freelance Serenity System
+- Craig M. Wright — The Hidden Habits of Genius: Beyond Talent, IQ, and Grit—Unlocking the Secrets of Greatness
+- Daniel P. Calvisi — STORY-MAPS: How to Write a Great Screenplay
+- Elena Nikitina with Amalia Beyduk — From Zero to Self-Published Hero: Fearless Guide to Writing, Publishing, and Promoting Your Book on a $0
+- Geoffrey Holden Block — Enchanted Evenings: The Broadway Musical from 'Show Boat' to Sondheim and Lloyd Webber
+- Hollins; Peter — The Science of Powerful Focus: 23 Methods for More Productivity, More Discipline, Less Procrastination, and Less Stress
+- Iver; Jon Day — Amazon Business Models for 2021: Amazon Self-Publishing, Amazon Associates, and Amazon Passive Income Ideas (Compilation)
+- J. Michael Straczynski — Becoming a Writer, Staying a Writer: The Artistry, Joy, and Career of Storytelling
+- James C. Tanner — The AI Profit Blueprint: A Guide to Generating Income through Artificial Intelligence
+- James N. Frey — How to Write a Damn Good Novel, II: Advanced Techniques For Dramatic Storytelling
+- James N. Frey — How to Write a Damn Good Thriller: A Step-by-Step Guide for Novelists and Screenwriters
+- Jane Friedman — Publishing 101: A First-Time Author's Guide to Getting Published, Marketing and Promoting Your Book, and Building a Successf
+- Jim Kalbach — Mapping Experiences - A Complete Guide to Customer Alignment Through Journeys, Blueprints, and Diagrams
+- Joanna Penn [Penn; Joanna] — Successful Self-Publishing Large Print Edition: How to Self-Publish and Market Your Book in Ebook, Print, and A
+- Jordan Rosenfeld — How To Write a Page Turner
+- Julian Woolford — How Musicals Work: And How to Write Your Own
+- Karan Gupta — Visual Dialogues 101 Graphic Design Fundamentals: Design Career, Layout, Typography, and Colour
+- Karen Nelson-Field — The Attention Economy: A Category Blueprint
+- Knight; Sebastian — The Digital Product Blueprint: How to Create and Sell Digital Products That Generate Sustainable Income
+- Laura Brown — How to Write Anything: A Complete Guide
+- Leonelle; Monica — Dictate Your Book: How To Write Your Book Faster, Better, and Smarter
+- Michael Lopp — The Software Developer's Career Handbook: A Guide to Navigating the Unpredictable (Early Release)
+- Mohammad Irfan; Khan Muhammad; Nader Naifar; Muhammad Attique Khan — Applications of Block Chain technology and Artificial Intelligence: Lea
+- R. Craig Wolf; Dick Block — Scene Design and Stage Lighting
+- Review; Harvard Business — HBR's 10 Must Reads on Managing Yourself and Your Career 6-Volume Collection
+- Royce; Taylor — The Social Media Blueprint - A Comprehensive Guide to Content Creation and Community Building
+- Ruopeng An — Supercharge Your Research Productivity with ChatGPT: A Practical Guide
+- Scribe Forge — The Essential Worldbuilding Blueprint and Workbook
+- Sean A Williams — ChatGPT for Writers: Unlocking the Power of Artificial Intelligence to Enhance Your Nonfiction Writing Process (Learn how 
+- Simon Mitchell — Posts to Profits: The social media marketing blueprint for building a profitable six-figure online business
+- Sonic workflow — Unreal Engine 5 Game Programming Design Patterns in C++, Java, C#, and Blueprints
+- Stephanie Vanderslice — The Geek’s Guide to the Writing Life: An Instructional Memoir for Prose Writers
+- Steve Manning — How To Write A Book On Anything In 14 Days or Less - Guaranteed
+- Varis Bokalders; Maria Block — The Whole Building Handbook - How to Design Healthy, Efficient and Sustainable Buildings
+- Vijay Kanabar; Jason Wong — The AI Revolution in Project Management: Elevating Productivity with Generative AI
