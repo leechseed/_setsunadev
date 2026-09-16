@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-12",
   "asof": "2026-09-15",
-  "s": "tabled",
-  "status": "TABLED 9/12 by Papi — captured, not started; opens beside the project flow on BOLO 50's ladder.",
+  "s": "hot",
+  "status": "OPENED 9/15 by Papi (\"Open 53\") — v0.1 working draft on disk beside the project flow; life-cycle read iterative-incremental, provisional; rung provisional pending BOLO 50's ladder.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · the project flow · BOLO 50's ladder",
   "related": [
@@ -17,7 +17,7 @@
   ],
   "home": "BOLO.md · row 53",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -38,25 +38,32 @@
  ],
  "frago": {
   "mission": "Write the house's own development standard, the daily boresight-to-FRAGO loop named as a life cycle and filed on the BOLO 50 ladder, **in order to** make how the house builds a written, auditable procedure every project runs the same way.",
-  "order": "**Tabled by your word 9/12. The one action is the open: say \"open 53\" and the standard drafts in one session on the BOLO 50 ladder.** Recommended timing: after the ladder on DOPE SHEET 50 is ruled, so it has a rung to file on.",
-  "default": "Silence: stays tabled. No draft, no research. BOLO 50's ladder ruling lands first; the standard files on it when opened.",
+  "order": "**Use it twice.** The next two builds of size M or L run the loop as written and log on this sheet where it bent; two uses promote v0.1 to canonical (DOCTRINE 0, Invariant I). Then rule the BOLO 50 ladder so the rung stops being provisional.",
+  "default": "Silence: v0.1 stands as working. Every M or L build from here runs the loop and this sheet logs the use. The rung stays provisional until the ladder is ruled.",
   "calls": [
    {
     "q": "Open or hold",
     "options": "open now, one session to draft · open after DOPE SHEET 50's ladder is ruled (rec) · leave tabled",
     "default": "after the ladder ruling; tabled until then",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/15, Papi: \"Open 53.\" Opened now, ahead of the ladder ruling."
    },
    {
     "q": "The life-cycle read",
     "options": "iterative-incremental: 12207/15288's iterative model, agile's inspect-and-adapt (rec) · a design process (double diamond) · both: a design process inside an iterative life cycle",
-    "default": "iterative-incremental, provisional",
+    "default": "iterative-incremental, provisional; in force in v0.1 until you say otherwise",
     "s": "open"
    },
    {
     "q": "Where it files",
     "options": "the BOLO 50 ladder beside the project flow (spoken) · SOP as a section · its own doctrine doc",
-    "default": "the ladder beside the project flow",
+    "default": "filed 9/15 beside the project flow, rung STANDARD, provisional until the BOLO 50 ladder is ruled",
+    "s": "open"
+   },
+   {
+    "q": "Promote or amend v0.1",
+    "options": "accept as working, earns canon on two uses (rec) · amend a rule · strike a rule",
+    "default": "working; earns canon on two uses",
     "s": "open"
    }
   ]
@@ -140,8 +147,8 @@
    "strand": {
     "last": "The question was captured and tabled in the same breath, 9/12.",
     "plan": "When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
-    "you": "You tabled it and named where it should live when it opens.",
-    "next": "Reopen it whenever you're ready; nothing else moves it."
+    "you": "You opened it with one word, ahead of the ladder.",
+    "next": "Two uses. The next two M or L builds run the loop and log the bends here."
    },
    "main_effort": "Nothing running — the question is captured, not opened. When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
    "phases": [
@@ -153,9 +160,19 @@
     },
     {
      "n": 1,
-     "t": "**Write the standard** — the house's own development-standard document: boresight → how-copy → build → FRAGO as the life-cycle model, filed beside the project flow and the design system on BOLO 50's ladder.",
+     "t": "**Write the standard** — v0.1 working draft filed: Purpose · the life-cycle read · the loop stage by stage · nesting · nine standing rules · audit hooks for BOLO 51 · S/M/L tailoring · DOCTRINE 0 governance · two examples.",
+     "s": "done",
+     "when": "9/15"
+    },
+    {
+     "n": 2,
+     "s": "open",
+     "t": "**Two uses** — run the loop as written on the next two M or L builds; log each use and every bend on this sheet."
+    },
+    {
+     "n": 3,
      "s": "gated",
-     "when": "yours"
+     "t": "**The rung** — when DOPE SHEET 50's ladder is ruled, confirm or move this document's placement; no content change."
     }
    ],
    "coord": [
@@ -186,6 +203,11 @@
     {
      "path": "STATE.md",
      "what": "carries \"BOLO 53 tabled\" across every session since 9/12",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_development_standard.md",
+     "what": "the standard, v0.1 working (12 KB); sibling of the project flow",
      "s": "done"
     }
    ],
@@ -262,6 +284,16 @@
      "when": "9/12",
      "who": "Claude",
      "t": "One-line read logged: yes, iterative-incremental development — ISO/IEC/IEEE 12207 and 15288 call it the iterative life-cycle model, agile calls it inspect-and-adapt, the house calls it boresight and FRAGO. Row captured in BOLO.md; carried tabled through every session note since."
+    },
+    {
+     "when": "9/15",
+     "who": "Papi",
+     "t": "\"Open 53.\" The open, spoken the same session the sheet was built."
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "DRAFT (sonnet, gear 1) wrote v0.1 from the project flow, SOP §1 and §7, the standards register's tiering, DOCTRINE 0 and the BOLO 53 row; the main line ruled it, fixed one citation and one example; BOLO row and glossary entry updated; FRAGO 53 pushed."
     }
    ]
   }
