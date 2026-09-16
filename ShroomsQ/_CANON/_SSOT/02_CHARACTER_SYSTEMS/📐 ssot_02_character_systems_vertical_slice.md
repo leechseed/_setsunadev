@@ -1,10 +1,10 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 2.0.0
+version: 2.0.1
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
+status: "v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Papi: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
 rung: standard
 dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system"]
 trunk: BLACK
@@ -554,29 +554,29 @@ The L5 shelf holds 82 items keyed 9/16 (BOLO 18), nine distilled to date, this d
 
 ## OPEN
 
-Numbered calls surfaced by the five new distills' own "For the character system" sections. None are ruled; most are sub-fields to add at the next schema bump, not now.
+Numbered calls surfaced by the five new distills' own "For the character system" sections. **RULED 2026-09-16 (Papi: "character calls go"): all eleven as recommended, applying at the next schema bump.** Nothing in the schema changes until that bump; each call below now reads as an order for it, not a proposal. Provisional a week like every ruling.
 
-1. **Ghost and revenant cross-links on L5.** [[BVX.0196]]'s ghost and revenant are pointers to other characters, not attributes of one, and WOUND and DRIVE currently resolve against them with no named field. *Recommendation:* add `ghost_ref` and `revenant_ref` as relational sub-fields on L5 at the next bump, not now.
+1. **Ghost and revenant cross-links on L5.** [[BVX.0196]]'s ghost and revenant are pointers to other characters, not attributes of one, and WOUND and DRIVE currently resolve against them with no named field. *Ruled 9/16, as recommended:* add `ghost_ref` and `revenant_ref` as relational sub-fields on L5 at the next bump, not now.
 
-2. **A typed arc field on L11.** Corbett's growth vs transformation ([[BVX.0196]]) and Card's four causes of change ([[BVX.0061]]) both force a choice DESTINY currently leaves implicit. *Recommendation:* add `arc_type` and `change_cause` as L11 sub-fields at the next bump.
+2. **A typed arc field on L11.** Corbett's growth vs transformation ([[BVX.0196]]) and Card's four causes of change ([[BVX.0061]]) both force a choice DESTINY currently leaves implicit. *Ruled 9/16, as recommended:* add `arc_type` and `change_cause` as L11 sub-fields at the next bump.
 
-3. **The tyranny of motive as a narration rule, not schema.** [[BVX.0196]] names a cross-cutting authoring constraint: no single layer's value should read as *the* stated cause of an action. *Recommendation:* adopt as a house writing rule for narrating character queries, not a new field on any layer.
+3. **The tyranny of motive as a narration rule, not schema.** [[BVX.0196]] names a cross-cutting authoring constraint: no single layer's value should read as *the* stated cause of an action. *Ruled 9/16, as recommended:* adopt as a house writing rule for narrating character queries, not a new field on any layer.
 
-4. **The hierarchy as an allocation rule over all twelve layers.** Card's hierarchy ([[BVX.0061]]) and McKee's cast map ([[BVX.0064]]) both say characterization effort should track narrative rank; tier depth already encodes this loosely. *Recommendation:* state the rule explicitly in Core Methodology at the next bump, no new field needed.
+4. **The hierarchy as an allocation rule over all twelve layers.** Card's hierarchy ([[BVX.0061]]) and McKee's cast map ([[BVX.0064]]) both say characterization effort should track narrative rank; tier depth already encodes this loosely. *Ruled 9/16, as recommended:* state the rule explicitly in Core Methodology at the next bump, no new field needed.
 
-5. **Viewpoint declared out of scope, the texture layer's.** Card ([[BVX.0061]]) shows person, tense, and penetration map onto none of the twelve layers. *Recommendation:* the exclusion is now stated above in "What it does not own"; no further schema action.
+5. **Viewpoint declared out of scope, the texture layer's.** Card ([[BVX.0061]]) shows person, tense, and penetration map onto none of the twelve layers. *Ruled 9/16, as recommended:* the exclusion is now stated above in "What it does not own"; no further schema action.
 
-6. **The wound card as L5's field list, plus a severity dial.** [[BVX.0209]]'s eleven-field entry and severity dial are close to a drop-in for L5, alongside a trigger list and a reveal strategy the schema doesn't currently name. *Recommendation:* adopt the severity dial and trigger list as L5 sub-fields at the next bump.
+6. **The wound card as L5's field list, plus a severity dial.** [[BVX.0209]]'s eleven-field entry and severity dial are close to a drop-in for L5, alongside a trigger list and a reveal strategy the schema doesn't currently name. *Ruled 9/16, as recommended:* adopt the severity dial and trigger list as L5 sub-fields at the next bump.
 
-7. **The villain-arc fork, why an L5-to-L8 pipeline stalls.** [[BVX.0209]] names a fork, self-blame, a failed prior healing attempt, preference for the dysfunction, that L12 FUNCTION records the outcome of but never the mechanism of. *Recommendation:* hold for now, revisit once a second antagonist instance is carded.
+7. **The villain-arc fork, why an L5-to-L8 pipeline stalls.** [[BVX.0209]] names a fork, self-blame, a failed prior healing attempt, preference for the dysfunction, that L12 FUNCTION records the outcome of but never the mechanism of. *Ruled 9/16, as recommended:* hold for now, revisit once a second antagonist instance is carded.
 
-8. **The interpersonal circumplex and the Dark/Light Triad as dials.** [[BVX.0233]] offers two continuous SOCIAL dials and six scored SHADOW inventories; the fifteen motivations sit beside Maslow under DRIVE. *Recommendation:* concrete enough to pilot on one character at the next bump, not retrofitted onto Victoria now.
+8. **The interpersonal circumplex and the Dark/Light Triad as dials.** [[BVX.0233]] offers two continuous SOCIAL dials and six scored SHADOW inventories; the fifteen motivations sit beside Maslow under DRIVE. *Ruled 9/16, as recommended:* concrete enough to pilot on one character at the next bump, not retrofitted onto Victoria now.
 
-9. **The audience trust ledger as a stack-external reader model.** Pelican's moral-emotion bookkeeping ([[BVX.0233]]) tracks the audience's judgement, not the character's own interface. *Recommendation:* hold outside the twelve layers entirely, a future reader-model document.
+9. **The audience trust ledger as a stack-external reader model.** Pelican's moral-emotion bookkeeping ([[BVX.0233]]) tracks the audience's judgement, not the character's own interface. *Ruled 9/16, as recommended:* hold outside the twelve layers entirely, a future reader-model document.
 
-10. **Growth-pairing and a coping-strategy field.** [[BVX.0045]]'s growth-pairing (a catalyst archetype) and five coping strategies suggest sub-fields under L11 and L4/L8. *Recommendation:* candidate `catalyst_archetype` (L11) and `coping_strategy` (L4 or L8) at the next bump.
+10. **Growth-pairing and a coping-strategy field.** [[BVX.0045]]'s growth-pairing (a catalyst archetype) and five coping strategies suggest sub-fields under L11 and L4/L8. *Ruled 9/16, as recommended:* candidate `catalyst_archetype` (L11) and `coping_strategy` (L4 or L8) at the next bump.
 
-11. **Attachment theory absent from the shelf.** L8 IMPRINT already claims attachment architecture, but [[BVX.0233]] notes the shelf has never distilled attachment theory itself, staying at the need-to-belong level. *Recommendation:* an acquisition target for the next wave, or a pull from the PSY shelf, not a schema change.
+11. **Attachment theory absent from the shelf.** L8 IMPRINT already claims attachment architecture, but [[BVX.0233]] notes the shelf has never distilled attachment theory itself, staying at the need-to-belong level. *Ruled 9/16, as recommended:* an acquisition target for the next wave, or a pull from the PSY shelf, not a schema change.
 
 ## Version history
 
@@ -585,3 +585,4 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 |1.0.0|2026-02-17|Initial vertical slice protocol with Victoria Midnight as canonical example.|
 |1.1.0|2026-08-24|STATE #3 executed: L9 v2 propagation (`armor_index` · `satisfaction_cycle_truncation` · `erotic_safety_precondition`; L9 AUTHORED via victoria-midnight-L9-eros). Expressive Range derived stat added. L12 rename `motivation_element` → `mc_problem_element` (STATE #4 ruling); `motivation_quad` → L12_DRAMATICA_EXTENDED. TRUTH_VULNERABILITY trigger updated.|
 |2.0.0|2026-09-16|BOLO 18 character wave: proper YAML frontmatter (was a malformed single-line block); intro block (What this is / owns / does not own / Root claim); MIND MODELS (three diagrams); PART A slice table (twelve layers, Question/Source/Field/Tier columns) sourced against five new distills (Corbett, Card, Puglisi & Ackerman, Pelican, Schmidt) plus the four already in the library (McKee, Davis, Truby, Dramatica); THE INSTANCE gained a Victoria Midnight summary table ahead of the existing full slice; CHARACTER × LIBRARY table and shelf note; eleven OPEN calls. Schema, formulas, and every value in the Victoria Midnight instance are unchanged.|
+|2.0.1|2026-09-16|The eleven OPEN calls ruled as recommended, applying at the next schema bump ("character calls go"). No schema change.|

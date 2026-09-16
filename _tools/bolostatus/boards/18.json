@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -60,7 +60,8 @@
     "q": "The texture wave and its model",
     "options": "distill the top five of the 105 and write a texture system v0.1 in 01_NARRATIVE_FRAMEWORKS beside the texture layer doc (rec) · fold texture into plot_systems · park",
     "default": "own model, after character",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "OPENED 9/16 (Papi: \"texture wave go\"): five TEXTURE distills on v4 (Hühn/Schmid/Schönert 0598 · Bal 0596 · Hall 0273 · Kempton 0084 · Iglesias 0279), then the texture system v0.1 beside the texture layer doc, then TM 05."
    },
    {
     "q": "The doc upgrades",
@@ -86,7 +87,8 @@
     "q": "The character doc's OPEN calls",
     "options": "eleven candidates from the five distills (ghost/revenant cross-links · a typed arc field · the tyranny of motive as a narration rule · the hierarchy as an allocation rule · viewpoint out of scope · the wound card as L5's field list · the villain-arc fork · the circumplex and the Triads as sub-dials · the audience trust ledger · growth-pairing and coping strategy · attachment theory missing from the shelf) — rule them as a block at the next schema bump (rec) · one by one · park",
     "default": "as a block at the next schema bump; nothing changes in the schema until then",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/16 (Papi: \"character calls go\"): all eleven as recommended, applying at the next schema bump; nothing in the schema changes until then. Character doc 2.0.1, TM 02 republished."
    }
   ]
  },
@@ -613,6 +615,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Five MS distills in parallel (Corbett · Card · Puglisi & Ackerman · Pelican · Schmidt), one MS on the setting doc's mind models, then one MS on the character doc rewrite at the fan-in; RANGE at every seat. Fifteen v4 distills now. TM 02 and TM 03 republished. Call 5 (the duplicate) collapsed on its default. Gear 2 for the wave, as on wave 1."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Texture wave go, character calls go.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "The eleven character calls ruled as recommended at the next schema bump (doc 2.0.1, TM 02 v4). Five texture MS launched; the texture system and TM 05 follow at the fan-in."
     }
    ]
   }
