@@ -1,13 +1,13 @@
 ---
 type: ssot_standard
 category: operations
-version: 0.1.1
+version: 0.1.2
 last_updated: 2026-09-15
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: working — v0.1; promotes to canonical after two project uses (DOCTRINE 0, Invariant I)
 working_title: true
 bolo: 53
-rung: standard (placement ruled 2026-09-15; the ladder itself is BOLO 50's call)
+rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50); moved up from the provisional STANDARD rung the same day
 purpose: "Defines the loop inside a session by which anything gets built, from a one-turn ask to a project, and the correction channels that keep it from stalling; governs the loop, where SOP governs the session and the project flow governs the project."
 dependencies: ["[[SOP]]", "[[📐 ssot_05_operations_project_flow]]", "[[DOCTRINE-0-INVARIANTS]]", "[[standards.register]]"]
 sources: "SOP.md comms codes §1, rulings 2026-08-21 to 2026-09-12 · ssot_05_operations_project_flow.md v0.1.0 (2026-09-03) · BOLO 53 row and sources.md, tabled 2026-09-12, opened 2026-09-15"
@@ -127,7 +127,7 @@ Mirrors the project flow's S/M/L table (§H there); this is the loop's own compr
 
 ### G · Governance
 
-[DOCTRINE 0](../../../../DOCTRINE-0-INVARIANTS.md) is the promotion mechanic: this standard is **v0.1 working**, promotes to canonical after two project uses, and any rule unused across those two uses is struck at the next revision. Its rung on the BOLO 50 ladder is **standard, provisional**, because the ladder itself has not yet been ruled; when it is ruled, this document's placement is confirmed or moved without a content change. Revisions belong to P6 of any project that used this loop, or to a standalone FRAGO 53.
+[DOCTRINE 0](../../../../DOCTRINE-0-INVARIANTS.md) is the promotion mechanic: this standard is **v0.1 working**, promotes to canonical after two project uses, and any rule unused across those two uses is struck at the next revision. Its rung on the BOLO 50 ladder is **procedure** (NASA four, ruled 2026-09-15): it governs how the house works, not what a product measures. It moved up from the provisional STANDARD rung the day the ladder was ruled, with no content change. Revisions belong to P6 of any project that used this loop, or to a standalone FRAGO 53.
 
 ---
 
@@ -164,3 +164,4 @@ BOLO 53 was tabled 2026-09-12 and opened today, 2026-09-15, on one spoken word: 
 |---|---|---|
 | 0.1.0 | 2026-09-15 | Working draft on Papi's "Open 53" (2026-09-15). Life-cycle read iterative-incremental, provisional. Rung provisional pending the BOLO 50 ladder. Promotes on two uses. |
 | 0.1.1 | 2026-09-15 | Papi: "Everything approved." The iterative-incremental read ruled, no longer provisional. Filing beside the project flow ruled; rung STANDARD, only the ladder (BOLO 50) still open. v0.1 accepted as working; canon on two uses. Use counter opens at the next M or L build. |
+| 0.1.2 | 2026-09-15 | NASA four ruled on BOLO 50. Rung moved from STANDARD (provisional) to PROCEDURE. No rule changed. |

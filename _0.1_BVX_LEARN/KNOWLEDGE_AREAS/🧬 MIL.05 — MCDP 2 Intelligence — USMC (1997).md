@@ -1,4 +1,5 @@
 ---
+rung: handbook · NASA four, ruled 2026-09-15 (BOLO 50)
 id: MIL.05
 bvx_id: BVX.1115
 type: one-sheet

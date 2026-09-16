@@ -1,4 +1,5 @@
 ---
+rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
 
 ## type: ssot_00_foundations category: variable_registry version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "The complete code library index for every variable in the LEECHSEED character system. Defines canonical names, namespace paths, data types, scale classes, valid ranges, sources, consumers, and behavioral descriptions for all layer variables, derived statistics, flags, astrology variables, and state diff fields." dependencies: ["ssot_00_base60_number_system"]
 ---

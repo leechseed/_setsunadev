@@ -1,3 +1,7 @@
+---
+rung: handbook · NASA four, ruled 2026-09-15 (BOLO 50)
+---
+
 # CK3 Information Architecture Study → Rules for the MCDP Doctrine Browser
 
 Scope: Crusader Kings III (Paradox, 2020) and its 2021–2025 interface updates, as a model for a single-reader, single-page browser of eleven USMC publications (MCDP 1–8 one-sheets, nine fixed sections each, shared glossary register). Confidence marked HIGH / MEDIUM / LOW per claim. Study date 2026-09-06.

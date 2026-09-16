@@ -1,4 +1,5 @@
 ---
+rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_05_operations
 category: operations
 version: 1.0.0

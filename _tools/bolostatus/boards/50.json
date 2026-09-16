@@ -6,7 +6,7 @@
   "issued": "2026-09-11",
   "asof": "2026-09-15",
   "s": "hot",
-  "status": "RESEARCH DONE 9/11 · the register on disk · the house ladder is your call · 9/15: the first house standard (BOLO 53) filed ahead of the ladder at rung STANDARD, placement provisional until you rule the tiers.",
+  "status": "RULED 9/15, Papi: the NASA four — policy · procedure · standard · handbook; spec as a tag on nodes. Ladder file written; first filing pass stamped the same turn. Phases 3 and 4 done. Next: phase 5, the story side.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · the project flow · the design system · the story systems (DCUS · Trash Land · ASTRO7EX as in-world standards bodies) · BVX-LEARN",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,25 +54,33 @@
  ],
  "frago": {
   "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
-  "order": "**Read the register, then rule the house ladder.** NASA four is the recommendation (policy → procedural requirement → standard → handbook). The ladder now has a tenant waiting: BOLO 53's development standard sits at rung STANDARD until the tiers are named.",
-  "default": "Silence: the register sits beside the locus; the development standard keeps its provisional rung; nothing else house-side is filed until the ladder is ruled.",
+  "order": "**Phase 5 on your go: each world's standards body as a canon node.** DCUS · Trash Land · ASTRO7EX, the individual-versus-society dynamic written as the setting system's S12 invariant. Say \"go 5\" or name one world first.",
+  "default": "Silence: the ladder stands; every new house document carries the rung tag from birth; untagged documents are filed at the next sit rep. Phase 5 waits on your go.",
   "calls": [
    {
     "q": "The house tiers",
     "options": "adopt the NASA four (policy → procedural requirement → standard → handbook) as the house ladder, or the DoD three (STD · HDBK · SPEC), or name your own",
     "default": "NASA four, provisional",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/15, Papi: \"let's go with the NASA four.\" Rungs in house words: policy · procedure · standard · handbook. Spec borrowed from DoD as a tag on nodes, not a rung."
    },
    {
     "q": "Where it files",
     "options": "a locus under BVX-LEARN (as now) · a new 05_OPERATIONS/STANDARDS/ domain · both, locus for research and OPERATIONS for the ruled house standards",
     "default": "the first house standard is filed (BOLO 53, 9/15, in 05_OPERATIONS beside the project flow); the register stays in LOCI; both link once the ladder is ruled",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/15 by consequence: both. The register stays in LOCI; the ladder and the ruled house standards live in 05_OPERATIONS. Every document carries a `rung:` frontmatter line."
    },
    {
     "q": "The name",
     "options": "this BOLO needs a campaign name; bench on BOLO 48 when you want one",
     "default": "the standards campaign",
+    "s": "open"
+   },
+   {
+    "q": "Phase 5 scope",
+    "options": "all three worlds in one pass · DCUS first (the most rules already written) · one world as a vertical slice, then the rest",
+    "default": "DCUS first as the slice",
     "s": "open"
    }
   ]
@@ -132,6 +140,10 @@
       {
        "t": "**9/15 · BOLO 53 opened and filed.** The house's own development standard (the boresight → how-copy → build → FRAGO loop as an iterative-incremental life cycle) is on disk beside the project flow. Its rung is STANDARD, provisional: the placement is ruled, the ladder it sits on is not.",
        "s": "done"
+      },
+      {
+       "t": "**9/15 · The ladder ruled.** The consult put NASA four against DoD three: DoD's three is only the technical half, with no rung for the SOP-class documents that make up most of what the house has written. NASA four carries the shall/should split that DOCTRINE 0 Invariant III already demands. Papi: \"let's go with the NASA four.\" BOLO 53's standard moved from the provisional STANDARD rung to PROCEDURE the same turn.",
+       "s": "ruled"
       }
      ]
     }
@@ -165,8 +177,8 @@
    "strand": {
     "last": "Phase 1 landed in minutes.",
     "plan": "Pull, read, rule the ladder, file what exists, then derive.",
-    "you": "Phase 3 is a reading and one ruling.",
-    "next": "Phase 3 is the only gate. Rule the tiers and phase 4 files the rest in one pass, BOLO 53 already in place."
+    "you": "You ruled the ladder in one line after the consult.",
+    "next": "Phase 5 on your go; DCUS first is the recommendation."
    },
    "main_effort": "The register, read. Everything else waits on it.",
    "phases": [
@@ -184,21 +196,21 @@
     },
     {
      "n": 3,
-     "t": "**Read and rule the house ladder** — NASA four or DoD three.",
-     "s": "gated",
-     "when": "yours"
+     "t": "**Read and rule the house ladder** — the NASA four, ruled 9/15 after the consult (NASA four versus DoD three).",
+     "s": "done",
+     "when": "9/15"
     },
     {
      "n": 4,
-     "t": "**File what exists** — SOP · project flow · marking SOP · WATCH register · lattice · character system · the rest. One filed early on Papi's open: the development standard (BOLO 53, 9/15) at rung STANDARD, provisional.",
-     "s": "gated",
-     "when": "after 3"
+     "t": "**File what exists** — first pass: rung tags stamped into DOCTRINE 0 (policy) · SOP, the project flow, the development standard, the marking SOP (procedure) · the WATCH register, the variable registry (standard) · the eleven MCDP one-sheets, the CK3 IA study (handbook) · the BOLO 24 charter (spec). Two read-only files listed, not stamped. Canon nodes listed by folder as specs.",
+     "s": "done",
+     "when": "9/15"
     },
     {
      "n": 5,
      "t": "**The story side** — each world's standards body as a canon node (DCUS · Trash Land · ASTRO7EX), the individual-versus-society dynamic written as the setting system's S12 invariant.",
      "s": "gated",
-     "when": "after 4"
+     "when": "your go"
     },
     {
      "n": 6,
@@ -242,6 +254,11 @@
      "path": "BOLO.md · row 50",
      "what": "the tasking",
      "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_standards_ladder.md",
+     "what": "the ladder: four rungs, the rule that decides the rung, the tag, the filing table of record",
+     "s": "done"
     }
    ],
    "cost": [
@@ -268,7 +285,7 @@
     "last": "Opened on a break-break.",
     "plan": "One decider.",
     "you": "The ladder, the filing, the name.",
-    "next": "Read the register."
+    "next": "Phase 5 scope is the one open call."
    },
    "groups": [
     {
@@ -331,6 +348,16 @@
      "when": "9/15",
      "who": "Claude",
      "t": "FRAGO 50: BOLO 53 opened 9/15 on Papi's word and filed its standard at rung STANDARD ahead of the ladder; related row added; phase 4 and the filing call updated. Order unchanged: rule the ladder."
+    },
+    {
+     "when": "9/15",
+     "who": "Papi",
+     "t": "Asked for the consult on NASA four versus DoD three, then: \"let's go with the NASA four.\""
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "Ladder file written in 05_OPERATIONS; rung tags stamped across the house documents (first filing pass); BOLO 53's rung moved to procedure; FRAGO 50 v0.3 and FRAGO 53 pushed."
     }
    ]
   }

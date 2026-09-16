@@ -1,4 +1,5 @@
 ---
+rung: policy · NASA four, ruled 2026-09-15 (BOLO 50)
 title: DOCTRINE 0 — Invariants on Invariants
 type: doctrine
 trunk: BOTH

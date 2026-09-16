@@ -1,4 +1,5 @@
 ---
+rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
 title: WATCH — the long-session register (working name)
 type: design-register
 version: 1.0.0

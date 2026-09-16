@@ -6,7 +6,7 @@
   "issued": "2026-09-12",
   "asof": "2026-09-15",
   "s": "hot",
-  "status": "RULED 9/15, Papi: \"Everything approved. Go.\" — v0.1 accepted as working; iterative-incremental read ruled; filed beside the project flow, rung STANDARD (provisional only on the ladder, BOLO 50). Order in force: use it twice.",
+  "status": "RULED 9/15: v0.1 accepted as working; order in force: use it twice. Rung settled the same day: PROCEDURE on the NASA four (BOLO 50 ruled). Nothing upstream any more.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · the project flow · BOLO 50's ladder",
   "related": [
@@ -17,7 +17,7 @@
   ],
   "home": "BOLO.md · row 53",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -151,7 +151,7 @@
     "last": "The question was captured and tabled in the same breath, 9/12.",
     "plan": "When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
     "you": "You approved all three calls and the order in one breath.",
-    "next": "The next M or L build is use one. Nothing else to rule on this sheet until the ladder."
+    "next": "Two uses. Nothing else gates this sheet."
    },
    "main_effort": "Nothing running — the question is captured, not opened. When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
    "phases": [
@@ -175,8 +175,9 @@
     },
     {
      "n": 3,
-     "s": "gated",
-     "t": "**The rung** — when DOPE SHEET 50's ladder is ruled, confirm or move this document's placement; no content change."
+     "s": "done",
+     "t": "**The rung** — BOLO 50's ladder ruled (the NASA four); this document moved from the provisional STANDARD rung to PROCEDURE, no content change. Version 0.1.2.",
+     "when": "9/15"
     }
    ],
    "coord": [
@@ -235,7 +236,7 @@
     "last": "Tabled by transmission 9/12.",
     "plan": "One decider; the draft is one session of Claude's work once opened.",
     "you": "The open, the life-cycle read, where it files.",
-    "next": "Only BOLO 50's ladder ruling remains upstream."
+    "next": "Nothing upstream. The next M or L build is use one."
    },
    "groups": [
     {
@@ -308,6 +309,11 @@
      "when": "9/15",
      "who": "Claude",
      "t": "FRAGO 53 v0.3: calls ruled, phase 2 hot, order restated as use one. Standard's version row 0.1.1 added; the project flow gained the reciprocal dependency."
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "FRAGO 53: the ladder ruled on BOLO 50 (NASA four); rung moved to PROCEDURE; phase 3 done; frontmatter tag stamped."
     }
    ]
   }

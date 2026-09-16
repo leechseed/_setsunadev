@@ -1,4 +1,5 @@
 ---
+rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 title: SOP — Standing Operating Procedure
 type: doctrine
 status: living document — canonical home of the verbal protocol
