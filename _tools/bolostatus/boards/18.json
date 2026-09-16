@@ -6,7 +6,7 @@
   "issued": "2026-08-26",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "Stage 1 done 8/26; stage 2 reopened 9/16 as the gate on story-side work. 9/16 late: the character wave landed (five L5 distills, fifteen v4 distills total), the character doc rewritten to v2.0.0 with a slice table and mind models, the setting doc given mind models, TM 02 and TM 03 republished with diagrams, the index duplicate collapsed. The texture and genre waves remain.",
+  "status": "Stage 1 done 8/26; stage 2 reopened 9/16 as the gate on story-side work. 9/16 late: the character wave and the texture wave both landed (ten more distills, twenty v4 distills total), the character doc at 2.0.1 with its eleven calls ruled, the setting doc at 1.1.0, the texture system v0.1.0 written and served as TM 05, TM 02 and TM 03 republished. The genre wave remains.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "story-side work across the Command (BOLO 24's own slice stays free of the gate); the new SSOT docs (plot_systems v0.1.1 done, setting and character owed); the TM pages (04 plot, 03 setting, 02 character)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Key every source to the story spine and distill the shelves into the plot, setting and character models, **in order to** build the top layer of what a story is from the thousand books already owned.",
-  "order": "**The texture wave: open the 105-item TEXTURE shelf, distill its top five on v4, then write a texture system v0.1 in 01_NARRATIVE_FRAMEWORKS beside the texture layer doc, and build TM 05 for it. The character doc's eleven OPEN calls wait for Papi; the acquisitions wait for Papi.**",
-  "default": "Silence: the fifteen distills, the plot system, the character doc v2.0.0 and the setting doc 1.1.0 stand; TM 02, 03, 04 stay as published; the character doc's OPEN calls stay open; the acquisition queue waits; BOLO 24 stays parked behind the gate.",
+  "order": "**The genre wave: open the 174-item L7 shelf, distill its top five on v4, then write the genre system v0.1 (L7: genre, medium, audience, market) and build TM 06. The texture system's thirteen OPEN calls and the OXO telling-profile bench wait for Papi; the acquisitions wait for Papi.**",
+  "default": "Silence: the twenty distills, the plot system, the character doc 2.0.1, the setting doc 1.1.0 and the texture system 0.1.0 stand; TM 02 through 05 stay as published; the texture system's OPEN calls stay open; the acquisition queue waits; BOLO 24 stays parked behind the gate.",
   "calls": [
    {
     "q": "The character wave",
@@ -61,7 +61,7 @@
     "options": "distill the top five of the 105 and write a texture system v0.1 in 01_NARRATIVE_FRAMEWORKS beside the texture layer doc (rec) · fold texture into plot_systems · park",
     "default": "own model, after character",
     "s": "ruled",
-    "ruling": "OPENED 9/16 (Papi: \"texture wave go\"): five TEXTURE distills on v4 (Hühn/Schmid/Schönert 0598 · Bal 0596 · Hall 0273 · Kempton 0084 · Iglesias 0279), then the texture system v0.1 beside the texture layer doc, then TM 05."
+    "ruling": "DONE 9/16 late: Hühn/Schmid/Schönert 0598 · Bal 0596 · Hall 0273 · Kempton 0084 · Iglesias 0279 through RANGE; the texture system v0.1.0 written beside the texture layer doc (twelve T-layers ⧗, the TELLING PROFILE as the instrument, the OXO profile benched); TM 05 published."
    },
    {
     "q": "The doc upgrades",
@@ -89,6 +89,12 @@
     "default": "as a block at the next schema bump; nothing changes in the schema until then",
     "s": "ruled",
     "ruling": "RULED 9/16 (Papi: \"character calls go\"): all eleven as recommended, applying at the next schema bump; nothing in the schema changes until then. Character doc 2.0.1, TM 02 republished."
+   },
+   {
+    "q": "The texture system's OPEN calls",
+    "options": "thirteen candidates from the five distills (ten or twelve layers · the names · the T2 split · the reflection axis · the distance scale and its instrument · a register slot · the function count · viewpoint silence · the discrepancy flag · memory and the Pause test · the mood-curve entry and the reader ledger · the OXO profile bench · acquisitions) — rule as a block as recommended (rec) · one by one · park",
+    "default": "as a block as recommended; the OXO profile stays a bench until OXO prose opens",
+    "s": "open"
    }
   ]
  },
@@ -102,7 +108,7 @@
     "last": "Stage 1, the Command-corpus sweep, was banked 8/26; stage 2, the library sweep, sat unfinished until the 9/16 break-break made it a gate.",
     "plan": "Finish stage 2 to the end: keyed shelves, then distills, then written models, then technical-manual pages, then this status sheet.",
     "you": "Papi ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
-    "next": "The texture wave (105 items, no model doc yet) and the genre wave (174) are what remain before the gate can be called closed; the character doc's eleven OPEN calls wait for Papi."
+    "next": "The genre wave (174 items, the largest shelf) is the last before the gate can be called closed; the texture system's thirteen OPEN calls and the OXO telling-profile bench wait for Papi."
    },
    "groups": [
     {
@@ -213,7 +219,7 @@
     "last": "Ten done phases landed in the 9/16 session, from the boresight through the TM pages.",
     "plan": "This sheet closes the session's owed item; the character, texture and genre waves come next, then the doc upgrades and the acquisitions.",
     "you": "Papi ruled the boresight, the plot system and the TM build; the scripted steps ran on Claude's side.",
-    "next": "The texture wave: 105 items, no model doc yet; then the genre wave (174)."
+    "next": "The genre wave: 174 items on L7, no model doc yet; TM 06 to follow."
    },
    "main_effort": "The character wave, then the character document rewrite so TM 02 carries its slice.",
    "phases": [
@@ -291,8 +297,9 @@
     },
     {
      "n": 13,
-     "t": "**The texture wave:** 105 items on the TEXTURE shelf, no model document started yet.",
-     "s": "open"
+     "t": "**The texture wave:** five TEXTURE distills through RANGE (the focalization volume 0598 · Bal 0596 · Hall 0273 · Kempton 0084 · Iglesias 0279), the texture system v0.1.0 written from the shelf in the plot doc's form (twelve T-layers ⧗, T11 MEDIUM and T12 FUNCTION as house additions, the OXO telling profile benched ⧗), TM 05 built and published. Twenty v4 distills now; 97 of the shelf's 105 remain.",
+     "s": "done",
+     "when": "9/16"
     },
     {
      "n": 14,
@@ -445,6 +452,36 @@
      "path": "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
      "what": "the setting system 1.1.0: MIND MODELS added, sources declared",
      "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0598.md",
+     "what": "Hühn, Schmid & Schönert, Point of View, Perspective, and Focalization (4 diagrams; who speaks ≠ who sees, the positive theory)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0596.md",
+     "what": "Bal, Narratology in Practice (4 diagrams; fabula/story/text, the EF/CF split)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0273.md",
+     "what": "Hall, Writing Deep Point of View (3 diagrams; the distance dial operationalized)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0084.md",
+     "what": "Kempton, Dialogue (3 diagrams; the seven-function test)",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0279.md",
+     "what": "Iglesias, Writing for Emotional Impact (4 diagrams; T7's mood curve)",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_system.md",
+     "what": "the texture system v0.1.0, the fourth top-layer model; the texture layer doc 1.0.0 stays as its taxonomy source",
+     "s": "done"
     }
    ],
    "cost": [
@@ -467,7 +504,7 @@
     "last": "Every wave tonight ran on the formation: scripts at both ends, specialists in the middle, one reviewer.",
     "plan": "Same shape for every remaining shelf; one wave per shelf, on your word each time.",
     "you": "You open each wave and rule each model's calls; nothing distills without the word.",
-    "next": "\"Texture wave go\" opens the next shelf; the character doc's eleven OPEN calls wait for a ruling as a block."
+    "next": "\"Genre wave go\" opens the last shelf; \"texture calls go\" rules the thirteen as a block."
    },
    "groups": [
     {
@@ -625,6 +662,11 @@
      "when": "9/16",
      "who": "Claude",
      "t": "The eleven character calls ruled as recommended at the next schema bump (doc 2.0.1, TM 02 v4). Five texture MS launched; the texture system and TM 05 follow at the fan-in."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "The texture wave landed: five MS distills through RANGE, then the texture system v0.1.0 on the fan-in seat, TM 05 built and published. The genre wave is the order now. Gear 2 for the wave."
     }
    ]
   }

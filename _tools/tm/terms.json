@@ -966,5 +966,247 @@
   "d": "Derived statistic, `10 - EROS.armor_index`. What a character can intentionally send, as against Truth Exposure Index, what leaks regardless of intent.",
   "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
   "src": "SSOT 02"
+ },
+ "t1-voice": {
+  "t": "T1 VOICE",
+  "k": "layer",
+  "d": "Who speaks: person (homodiegetic vs heterodiegetic), level (extra- to metadiegetic), reliability, and time of narration. The TELLING PROFILE's first line; [[BVX.0596]] supplies the CN/EN vocabulary.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t2-focalization": {
+  "t": "T2 FOCALIZATION",
+  "k": "layer",
+  "d": "Who sees: zero, internal (fixed/variable/multiple), or external focalization, plus the perceptual and informational sub-fields [[BVX.0598]] and [[BVX.0596]] argue T2 should carry. The law: [[who-speaks-vs-who-sees|who speaks is not who sees]].",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t3-order": {
+  "t": "T3 ORDER",
+  "k": "layer",
+  "d": "Story-time vs discourse-time: analepsis and prolepsis, each with reach and extent. The telling's rearrangement of the ladder's signpost order.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t4-duration": {
+  "t": "T4 DURATION",
+  "k": "layer",
+  "d": "The five speeds: scene, summary, stretch, pause, ellipsis. Already wired into the SCENE CARD's `duration` field; [[BVX.0273|Hall]] operationalizes its mimetic end as [[the-distance-dial|the distance dial]].",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t5-frequency": {
+  "t": "T5 FREQUENCY",
+  "k": "layer",
+  "d": "How often: singulative, repetitive, iterative. Repetitive is trauma's signature, iterative is habit's, mirroring S8 HABIT.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t6-words": {
+  "t": "T6 WORDS",
+  "k": "layer",
+  "d": "In what words: diction, syntax, distance policy (cinematic/light/deep), and [[free-indirect-discourse|free indirect discourse]]. Fed hardest by [[BVX.0273]], [[BVX.0084]], and [[BVX.0061]].",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t7-feeling": {
+  "t": "T7 FEELING",
+  "k": "layer",
+  "d": "With what feeling: tone (the implied author's attitude) and mood (the reader-side atmosphere), recorded as [[the-mood-curve|the mood curve]] per [[BVX.0279]].",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t8-thresholds": {
+  "t": "T8 THRESHOLDS",
+  "k": "layer",
+  "d": "Through what thresholds: paratext, titles, chapter heads, epigraphs, in-world documents. A design surface for movement names and Administration memos.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t9-frames": {
+  "t": "T9 FRAMES",
+  "k": "layer",
+  "d": "Breaking which frames: metalepsis and the unnatural, narrator-level violations. Normalized as direct address in M9 PORN per the medium grammars.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t10-narratee": {
+  "t": "T10 NARRATEE",
+  "k": "layer",
+  "d": "To whom: the narratee inside the text and the implied reader the text assumes. [[BVX.0279]] supplies the reader-facing half, [[the-three-vs|the three V's]].",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t11-medium": {
+  "t": "T11 MEDIUM",
+  "k": "layer",
+  "d": "New T-layer: which channel's grammar re-instruments the telling, M1 to M10 from the medium grammars. Writes `medium`, `grammar_overrides`.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "t12-function": {
+  "t": "T12 FUNCTION",
+  "k": "layer",
+  "d": "New T-layer: storyform binding, which throughline the telling serves and its argument role, fed independently from the storyform exactly as L12 and S12 are. Writes `story_point`, `storyform_id`.",
+  "w": "ssot_01_texture_system.md"
+ },
+ "BVX.0598": {
+  "t": "Hühn, Schmid & Schönert (Focalization)",
+  "k": "book",
+  "d": "The reference-shelf battlefield map of mediation vocabulary: fourteen essays converging on one law, [[who-speaks-vs-who-sees|who speaks is not who sees]]. Source of [[the-mediation-chain|the mediation chain]] (the DNS) and [[the-reflection-axis|the reflection axis]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0598.md",
+  "src": "BVX.0598"
+ },
+ "BVX.0596": {
+  "t": "Bal (Narratology in Practice)",
+  "k": "book",
+  "d": "Mieke Bal's fabula/story/text cut and her [[the-focalizor|focalizor]] apparatus: [[ef-cf|EF/CF]], perceptible/non-perceptible marking, and [[narrator-focalizer-discrepancy|narrator/focalizer discrepancy]] as a manipulation diagnostic.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0596.md",
+  "src": "BVX.0596"
+ },
+ "BVX.0273": {
+  "t": "Hall (Writing Deep Point of View)",
+  "k": "book",
+  "d": "Rayne Hall's technique inventory for pushing T2 and T6 to their mimetic ceiling: [[barrier-words|barrier words]] removed, [[the-distance-dial|the distance dial]] named cinematic/light/deep alongside Card ([[BVX.0061]]).",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0273.md",
+  "src": "BVX.0273"
+ },
+ "BVX.0084": {
+  "t": "Kempton (Dialogue)",
+  "k": "book",
+  "d": "Gloria Kempton's [[the-seven-function-test|seven-function test]] for a line of dialogue, plus [[viewpoint-silence|viewpoint silence]] and strategic tagging as subtext's unnamed mechanism.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0084.md",
+  "src": "BVX.0084"
+ },
+ "BVX.0279": {
+  "t": "Iglesias (Writing for Emotional Impact)",
+  "k": "book",
+  "d": "Karl Iglesias's seven-emotion taxonomy and [[the-three-vs|the three V's]]: reader emotion, not character emotion, is the target. Supplies [[the-mood-curve|the mood curve]] and [[the-payoff-owed|the payoff owed]].",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0279.md",
+  "src": "BVX.0279"
+ },
+ "BVX.0349": {
+  "t": "Kennedy (Against Worldbuilding)",
+  "k": "book",
+  "d": "Alexis Kennedy's counter-voice: distinctiveness over expansiveness, the gutter of implication over inventory. Feeds the setting shelf directly; keyed texture-adjacent here for its microtext and paratext essays.",
+  "w": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.0349.md",
+  "src": "BVX.0349"
+ },
+ "focalization": {
+  "t": "focalization",
+  "k": "source-term",
+  "d": "Who sees, as distinct from who speaks: a fictive entity's subjective view ([[BVX.0596|Bal]]) or, in Genette's second sense, what the reader is denied ([[BVX.0598]]). T2's governing concept.",
+  "w": "BVX.0596",
+  "src": "BVX.0596"
+ },
+ "the-focalizor": {
+  "t": "the focalizor",
+  "k": "source-term",
+  "d": "Bal's term for whoever's vision colors the story: EF (external) or CF (character), marked perceptible or non-perceptible. The narrator never touches the focalized object directly, only through the focalizor.",
+  "w": "BVX.0596",
+  "src": "BVX.0596"
+ },
+ "ef-cf": {
+  "t": "EF/CF",
+  "k": "source-term",
+  "d": "Bal's split of [[the-focalizor|the focalizor]]: EF, an external focalizer outside the story, or CF, a character-focalizer inside it. Proposed as a T2 sub-field alongside the perceptible/non-perceptible marking.",
+  "w": "BVX.0596",
+  "src": "BVX.0596"
+ },
+ "free-indirect-discourse": {
+  "t": "free indirect discourse",
+  "k": "source-term",
+  "d": "Narrator and character voice fused with no clear marker of the switch; prose's signature instrument (T6), and M1 PROSE's native grammar per the medium grammars.",
+  "w": "BVX.0596",
+  "src": "BVX.0596"
+ },
+ "the-distance-dial": {
+  "t": "the distance dial",
+  "k": "source-term",
+  "d": "T6's diegesis-to-mimesis scale, named cinematic, light, or deep by both [[BVX.0273|Hall]] and [[BVX.0061|Card]]. Show, don't tell is a setting on this dial, not a commandment.",
+  "w": "BVX.0273",
+  "src": "BVX.0273"
+ },
+ "barrier-words": {
+  "t": "barrier words",
+  "k": "source-term",
+  "d": "Hall's closed verb list, think, wonder, realize, know, that announces a thought is being reported. Removing them is deep PoV's most repeatable technique, and a candidate countable instrument for [[the-distance-dial|the distance dial]].",
+  "w": "BVX.0273",
+  "src": "BVX.0273"
+ },
+ "the-mediation-chain": {
+  "t": "the mediation chain",
+  "k": "source-term",
+  "d": "The DNS's three simultaneous dimensions, perception, reflection, and mediation proper, running fabula to focalizor to narrator to words to narratee. Changing one dimension predisposes the other two ([[BVX.0598]]).",
+  "w": "BVX.0598",
+  "src": "BVX.0598"
+ },
+ "the-reflection-axis": {
+  "t": "the reflection axis",
+  "k": "source-term",
+  "d": "The DNS's third dimension: a narrator's or character's cognitive, emotive, and normative mark-up of what is perceived, distinct from T1 voice and T2 focalization. No clean home among the Ten Questions; OPEN call 4 asks whether T7 absorbs it.",
+  "w": "BVX.0598",
+  "src": "BVX.0598"
+ },
+ "viewpoint-silence": {
+  "t": "viewpoint silence",
+  "k": "source-term",
+  "d": "Kempton's tension technique: the viewpoint character visibly not saying what she's thinking. Neither zero, internal, nor external focalization, a focalized character's deliberate non-report, proposed as a T2 sub-value.",
+  "w": "BVX.0084",
+  "src": "BVX.0084"
+ },
+ "the-seven-function-test": {
+  "t": "the seven-function test",
+  "k": "source-term",
+  "d": "Kempton's audit: a line of dialogue must characterize, set mood, intensify conflict, move plot, pace the scene, carry setting, or state theme, or it earns no place in the scene.",
+  "w": "BVX.0084",
+  "src": "BVX.0084"
+ },
+ "the-mood-curve": {
+  "t": "the mood curve",
+  "k": "source-term",
+  "d": "Iglesias's per-unit sequence of named reader emotions, interest, curiosity, anticipation, suspense, surprise, thrill, empathy, each with a technique and, if anticipation, [[the-payoff-owed|the payoff owed]]. T7's working content.",
+  "w": "BVX.0279",
+  "src": "BVX.0279"
+ },
+ "the-three-vs": {
+  "t": "the three V's",
+  "k": "source-term",
+  "d": "Iglesias's taxonomy of why a reader feels anything: Voyeuristic (curiosity about new worlds), Vicarious (identification), Visceral (raw thrill). T10's reader-construction half.",
+  "w": "BVX.0279",
+  "src": "BVX.0279"
+ },
+ "the-payoff-owed": {
+  "t": "the payoff owed",
+  "k": "source-term",
+  "d": "Anticipation must resolve into surprise, disappointment, or relief; an unpaid promise reads as broken. Part of [[the-mood-curve|the mood curve]]'s entry format.",
+  "w": "BVX.0279",
+  "src": "BVX.0279"
+ },
+ "narrator-focalizer-discrepancy": {
+  "t": "narrator/focalizer discrepancy",
+  "k": "source-term",
+  "d": "Bal's diagnostic: a gap between what is narrated (T1) and what is focalized (T2) is where a text manipulates its reader. Proposed as a flag on the TELLING PROFILE.",
+  "w": "BVX.0596",
+  "src": "BVX.0596"
+ },
+ "telling-profile": {
+  "t": "the TELLING PROFILE",
+  "k": "source-term",
+  "d": "The discourse twin of the storyform: a work's fixed configuration of the Ten Questions' answers, recorded per ladder address, overridable per unit. Instanced by the texture system's twelve-line profile block.",
+  "w": "ssot_01_texture_layer.md"
+ },
+ "the-telling-line": {
+  "t": "the telling line",
+  "k": "source-term",
+  "d": "The SCENE CARD's per-scene override of [[telling-profile|the TELLING PROFILE]], T1 plus T2 plus T4 for that scene; the texture system proposes adding a register slot per [[BVX.0084]].",
+  "w": "ssot_01_texture_layer.md"
+ },
+ "who-speaks-vs-who-sees": {
+  "t": "who speaks is not who sees",
+  "k": "source-term",
+  "d": "The load-bearing law of the texture layer: a heterodiegetic narrator (T1) can see through one character only (T2 internal fixed). Collapsing the two is the most common craft confusion; [[BVX.0598]] and [[BVX.0596]] both name it the field's central error.",
+  "w": "ssot_01_texture_layer.md"
+ },
+ "the-translation-grid": {
+  "t": "TRANSLATION GRID",
+  "k": "source-term",
+  "d": "The texture layer's table of craft vocabulary as compressed T1 x T2 (and T3, T4, T6) configurations: third limited, deep PoV, show don't tell. Not reproduced in the texture system; see the layer doc.",
+  "w": "ssot_01_texture_layer.md"
+ },
+ "the-ten-questions": {
+  "t": "the Ten Questions",
+  "k": "source-term",
+  "d": "The texture layer's taxonomy, T1 through T10, every telling as a configuration of ten answers. The texture system restates them as PART B's axes and adds T11 and T12.",
+  "w": "ssot_01_texture_layer.md"
  }
 }
