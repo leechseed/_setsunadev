@@ -14,29 +14,33 @@ status: BOLO 18 stage 2 - step 2b
 |---|---|
 | tag | 187 |
 | rule | 61 |
-| none | 44 |
+| toc | 27 |
+| toc-off (not a story book) | 15 |
+| none | 2 |
 
 ## Items per level
 
 | Level | Items |
 |---|---|
-| TEXTURE | 78 |
-| L4 | 73 |
-| L5 | 52 |
-| L0? | 44 |
-| L7 | 44 |
-| SETTING | 16 |
-| L0 | 13 |
+| TEXTURE | 80 |
+| L4 | 80 |
+| L5 | 54 |
+| L7 | 49 |
+| SETTING | 18 |
+| L0 | 16 |
 | L6 | 10 |
+| CRAFT-PROCESS | 8 |
+| L0? | 2 |
 
 ## The shelves
 
-### L0 (13)
+### L0 (16)
 
 | BVX | Title | Author | Year | Key from |
 |---|---|---|---|---|
 | NEW | Poetics | Aristotle, Kenny | 2013 | tag |
 | BVX.0098 | © Eva Deverell >> http://eadeverell.com | Vogler’S |  | tag |
+| BVX.0555 | A historico-philosophical essay on the forms of great epic literature | Lukács |  | toc |
 | BVX.0554 | Affective narratology: the emotional structure of stories | Hogan | 2011 | rule |
 | BVX.0566 | Computing action: a narratological approach | Meister | 2003 | rule |
 | BVX.0089 | Dramatica, A New Theory of Story | Phillips, Huntley | 2004 | rule |
@@ -48,8 +52,10 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0596 | Narratology in Practice | Bal |  | rule |
 | BVX.0602 | Routledge companion to semiotics and linguistics | Cobley | 2001 | rule |
 | BVX.0603 | Routledge Philosophy Guidebook to Aristotle and the Poetics |  | 2015 | rule |
+| BVX.0173 | Story Machines: How Computers Have Become Creative Writers | Sharples, Pérez Y Pérez | 2022 | toc |
+| NEW | The Practice of Rhetoric |  |  | toc |
 
-### L4 (73)
+### L4 (80)
 
 | BVX | Title | Author | Year | Key from |
 |---|---|---|---|---|
@@ -115,19 +121,26 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0050 | Action: the art of excitement for screen, page, and game | McKee, El-Wakil | 2022 | rule |
 | BVX.0554 | Affective narratology: the emotional structure of stories | Hogan | 2011 | rule |
 | BVX.0566 | Computing action: a narratological approach | Meister | 2003 | rule |
+| BVX.0101 | Fiction Attack! Insider Secrets for Writing and Selling Your Novels & St | Bell |  | toc |
+| BVX.0107 | Great Stories Don't Write Themselves | Brooks |  | toc |
+| BVX.0124 | How to Write Short Stories And Use Them to Further Your Writing Career | Bell |  | toc |
 | BVX.0127 | Into the woods: a five-act journey into story | Yorke | 2020 | rule |
+| BVX.0131 | Just write: creating unforgettable fiction and a rewarding writing life | Bell | 2016 | toc |
 | BVX.0138 | Master shots: 100 ways to shoot great dialogue scenes. Vol. 2 | Kenworthy | 2011 | rule |
 | NEW | Navigating the Path of Writing: Outline-guided Text Generation with Larg | Lee, Ka, Son, Kang | 2025 | rule |
+| BVX.0143 | Novel Writing Blueprint: A storytellers guide to the craft | Harris |  | toc |
 | BVX.0153 | Plot and Structure | Bell |  | rule |
 | BVX.0597 | Plots of war: modern narratives of conflict | Gil, Martins | 2012 | rule |
 | BVX.0175 | Story: Substance, Structure, Style and the Principles of Screenwriting | McKee |  | rule |
 | BVX.0188 | The 21st century screenplay: a comprehensive guide to writing tomorrow's | Aronson | 2010 | rule |
 | BVX.0205 | The conflict thesaurus: a writer's guide to obstacles, adversaries, and  | Ackerman, Puglisi | 2021 | rule |
 | BVX.0228 | The Process of Screenwriting | Clive Frayne | 2019 | rule |
+| BVX.0240 | The TV Showrunner's Roadmap | Landau |  | toc |
+| BVX.0249 | Three Story Method: Foundations of Fiction |  |  | toc |
 | BVX.0254 | Virtual vixens: 3D character modeling and scene placement | Koenigsmarck | 2007 | rule |
 | BVX.0274 | Writing Deep Scenes: Plotting Your Story Through Action, Emotion, and Th | Alderson |  | rule |
 
-### L5 (52)
+### L5 (54)
 
 | BVX | Title | Author | Year | Key from |
 |---|---|---|---|---|
@@ -178,9 +191,11 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0098 | © Eva Deverell >> http://eadeverell.com | Vogler’S |  | tag |
 | BVX.0047 | 8 Steps to Side Characters: How to Craft Supporting Roles With Intention | Black |  | rule |
 | BVX.0061 | Characters and viewpoint | Card | 2009 | rule |
+| BVX.0131 | Just write: creating unforgettable fiction and a rewarding writing life | Bell | 2016 | toc |
 | BVX.0138 | Master shots: 100 ways to shoot great dialogue scenes. Vol. 2 | Kenworthy | 2011 | rule |
 | BVX.0168 | Shakespeare's Storytelling: An Introduction to Genre, Character, and Tec | Eastman | 2021 | rule |
 | NEW | The Psychology of CreativeWriting | Kaufman, Kaufman |  | rule |
+| BVX.0249 | Three Story Method: Foundations of Fiction |  |  | toc |
 | BVX.0254 | Virtual vixens: 3D character modeling and scene placement | Koenigsmarck | 2007 | rule |
 | BVX.0285 | Writing Unforgettable Characters: How to Create Story People Who Jump Of | Bell |  | rule |
 
@@ -199,7 +214,7 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0557 | Allegory: the dynamics of an ancient and medieval technique | Whitman | 1987 | rule |
 | BVX.0274 | Writing Deep Scenes: Plotting Your Story Through Action, Emotion, and Th | Alderson |  | rule |
 
-### L7 (44)
+### L7 (49)
 
 | BVX | Title | Author | Year | Key from |
 |---|---|---|---|---|
@@ -233,6 +248,8 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0576 | Film genre for the screenwriter | Selbo | 2015 | rule |
 | BVX.0579 | Film genre reader IV | Grant | 2012 | rule |
 | BVX.0104 | Freelance Video Game Writing: The Life & Business of the Digital Mercena | Finley | 2022 | rule |
+| NEW | Guide to Literary Agents | Brewer | 2021 | toc |
+| BVX.0123 | How to Write Pulp Fiction | Bell |  | toc |
 | BVX.0126 | Interactive Narratives and Transmedia Storytelling: Creating Immersive S | McErlean | 2018 | rule |
 | BVX.0138 | Master shots: 100 ways to shoot great dialogue scenes. Vol. 2 | Kenworthy | 2011 | rule |
 | NEW | Novel & Short Story Writer's Market 40th Edition: The Most Trusted Guide | Jones | 2021 | rule |
@@ -243,12 +260,15 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0176 | Storytelling for Film and Television: From First Word to Last Frame | Dancyger | 2019 | rule |
 | BVX.0188 | The 21st century screenplay: a comprehensive guide to writing tomorrow's | Aronson | 2010 | rule |
 | BVX.0228 | The Process of Screenwriting | Clive Frayne | 2019 | rule |
+| BVX.0629 | The Routledge companion to experimental literature | Bray, Gibbons, McHale | 2012 | toc |
 | BVX.0638 | The Routledge Companion to Media Fandom | Click, Scott, Click, Scott | 2017 | rule |
+| BVX.0639 | The Routledge Companion to Musical Theatre | MacDonald, Donovan | 2022 | toc |
+| NEW | The Writer's Digest guide to query letters | Burt-Thomas | 2008 | toc |
 | BVX.0224 | Theory, Development, and Strategy in Transmedia Storytelling | Gambarato, Alzamora, Tárcia | 2020 | rule |
 | BVX.0250 | TV Writing On Demand | Landau |  | rule |
 | BVX.0274 | Writing Deep Scenes: Plotting Your Story Through Action, Emotion, and Th | Alderson |  | rule |
 
-### SETTING (16)
+### SETTING (18)
 
 | BVX | Title | Author | Year | Key from |
 |---|---|---|---|---|
@@ -266,10 +286,12 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0592 | Narrating space/spatializing narrative: where narrative theory and geogr | Ryan, Foote, Azaryahu | 2016 | rule |
 | BVX.0144 | Once Upon a Pixel: Storytelling and Worldbuilding in Video Games | Paterson, Williams, Cordner |  | rule |
 | BVX.0174 | Storynomics: story-driven marketing in the post-advertising world | McKee, Gerace | 2018 | rule |
+| BVX.0630 | The Routledge companion to imaginary worlds | Wolf | 2018 | toc |
 | NEW | The Routledge handbook of place | Edensor, Kalandides, Kothari | 2020 | rule |
+| BVX.0245 | The Writer's Map: An Atlas of Imaginary Lands | Lewis-Jones |  | toc |
 | BVX.0254 | Virtual vixens: 3D character modeling and scene placement | Koenigsmarck | 2007 | rule |
 
-### TEXTURE (78)
+### TEXTURE (80)
 
 | BVX | Title | Author | Year | Key from |
 |---|---|---|---|---|
@@ -349,54 +371,12 @@ status: BOLO 18 stage 2 - step 2b
 | BVX.0161 | Routledge encyclopedia of narrative theory | Herman | 2010 | rule |
 | BVX.0175 | Story: Substance, Structure, Style and the Principles of Screenwriting | McKee |  | rule |
 | NEW | Storythinking: the new science of narrative intelligence | Fletcher | 2023 | rule |
+| BVX.0640 | The Routledge Companion to Music and Modern Literature | Durkin |  | toc |
 | BVX.0256 | VOICE: The Secret Power of Great Writing | Bell |  | rule |
+| BVX.0276 | Writing Down the Bones | Goldberg |  | toc |
 | NEW | Writing with Clarity and Style | Harris | 2016 | rule |
 
-## Review list, no rule reached them (44)
+## Review list, no rule reached them (0)
 
 | BVX | Title | Author |
 |---|---|---|
-| BVX.0044 | 27 Fiction Writing Blunders - And How Not To Make Them! | Bell |
-| BVX.0555 | A historico-philosophical essay on the forms of great epic literature | Lukács |
-| BVX.0058 | Beyond the basic stuff with Python: best practices for writing clean cod | Sweigart |
-| BVX.0076 | Creative Writing Practice: Reflections on Form and Process | Adelaide, Attfield |
-| BVX.0567 | Critical companion to Ernest Hemingway: a literary reference to his life | Oliver, Oliver |
-| BVX.0099 | Fearless Writing | Kenower |
-| BVX.0101 | Fiction Attack! Insider Secrets for Writing and Selling Your Novels & St | Bell |
-| BVX.0107 | Great Stories Don't Write Themselves | Brooks |
-| BVX.0115 | How to Take Smart Notes: One Simple Technique to Boost Writing, Learning | Ahrens |
-| BVX.0123 | How to Write Pulp Fiction | Bell |
-| BVX.0124 | How to Write Short Stories And Use Them to Further Your Writing Career | Bell |
-| BVX.0586 | Human sexuality | Bloom, Hobby |
-| BVX.0131 | Just write: creating unforgettable fiction and a rewarding writing life | Bell |
-| BVX.0132 | Leviathan wakes | Corey, Corey |
-| BVX.0133 | Loving Fanfiction: Exploring the Role of Emotion in Online Fandoms | Kelley |
-| BVX.0143 | Novel Writing Blueprint: A storytellers guide to the craft | Harris |
-| BVX.0601 | Routledge Companion to Real Estate Investment | MacGregor, Schulz, Green, Ma |
-| BVX.0173 | Story Machines: How Computers Have Become Creative Writers | Sharples, Pérez Y Pérez |
-| BVX.0611 | The Cambridge companion to Thomas Pynchon | Dalsgaard, Herman, McHale |
-| BVX.0208 | The Eight Crafts of Writing: The Map of Storytelling | Emunds |
-| BVX.0617 | The Inner Enemies of Democracy | Todorov |
-| BVX.0219 | The Mental Game of Writing: How to Overcome Obstacles, Stay Creative and | Bell |
-| BVX.0624 | The Routledge companion to Asian American and Pacific Islander literatur | Lee |
-| BVX.0625 | The Routledge companion to big history | Benjamin, Quaedackers, Baker |
-| BVX.0628 | The Routledge Companion to Digital Humanities and Art History | Brown |
-| BVX.0629 | The Routledge companion to experimental literature | Bray, Gibbons, McHale |
-| BVX.0630 | The Routledge companion to imaginary worlds | Wolf |
-| BVX.0631 | The Routledge Companion to Knowledge Management | Chen, Nonaka |
-| BVX.0637 | The Routledge Companion to Literature of the U.S. South | Burnett, Hagstette, Miller |
-| BVX.0640 | The Routledge Companion to Music and Modern Literature | Durkin |
-| BVX.0639 | The Routledge Companion to Musical Theatre | MacDonald, Donovan |
-| BVX.0646 | The Routledge Handbook of Male Sex Work, Culture, and Society | Scott, Grov, Minichiello |
-| BVX.0240 | The TV Showrunner's Roadmap | Landau |
-| BVX.0245 | The Writer's Map: An Atlas of Imaginary Lands | Lewis-Jones |
-| BVX.0248 | Three Story Method: Cowriting with ChatGPT: AI-Powered Storytelling | Thorn |
-| BVX.0249 | Three Story Method: Foundations of Fiction |  |
-| BVX.0276 | Writing Down the Bones | Goldberg |
-| NEW | Docs for Developers: An Engineer’s Field Guide to Technical Writing | Bhatti, Corleissen, Lambourn |
-| NEW | Guide to Literary Agents | Brewer |
-| NEW | Kurt Vonnegut's Slaughterhouse-five | Bloom |
-| NEW | Praise for Jeff Herman’s Guide to Book Publishers, Editors & Literary Ag | Canfield, Broderick |
-| NEW | The Practice of Rhetoric |  |
-| NEW | The Writer's Digest guide to query letters | Burt-Thomas |
-| NEW | Writing AI Prompts For Dummies | Diamond, Allan |

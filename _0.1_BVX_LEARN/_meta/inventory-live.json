@@ -223,7 +223,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -235,7 +235,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Chapters on flubs of fiction: dialogue, description, character, POV, flashbacks, exposition, scene construction"
  },
  {
   "zid": 423,
@@ -586,7 +587,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L0"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -598,7 +599,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Historico-philosophical essay on narrative forms, epic literature, novel as philosophical category"
  },
  {
   "zid": 499,
@@ -2800,9 +2802,7 @@
    "COMPUTER SCIENCE & WEBDEV"
   ],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\38RWFE3P\\Sweigart - 2021 - Beyond the basic stuff with Python best practices.pdf",
@@ -2813,7 +2813,9 @@
   "added": "2023-07-23",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Programming language guide, not story-related"
  },
  {
   "zid": 408,
@@ -4404,7 +4406,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -4416,7 +4418,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Essays on writer's notebooks, prompting creativity, revising, writing practice and process"
  },
  {
   "zid": 1143,
@@ -4434,9 +4437,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\NKBUMQGB\\Oliver and Oliver - 2007 - Critical companion to Ernest Hemingway a literary.pdf",
@@ -4447,7 +4448,9 @@
   "added": "2023-08-15",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Literary criticism and biographical reference, not instructional for writing craft"
  },
  {
   "zid": 1310,
@@ -7044,7 +7047,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -7056,7 +7059,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Writing mindset, flow, creative confidence, the writing life, overcoming fear and doubt"
  },
  {
   "zid": 592,
@@ -7104,7 +7108,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L4"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -7116,7 +7120,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "TOC covers plot structure, opening craft, dialogue, dialogue as weapon, premise, flashbacks, conflict"
  },
  {
   "zid": 1295,
@@ -8148,7 +8153,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L4"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -8160,7 +8165,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Story engineering, criteria-driven storytelling, premise, four-part structure, beats and sequencing"
  },
  {
   "zid": 46,
@@ -9805,7 +9811,7 @@
   ],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -9817,7 +9823,8 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Note-taking system for academics and nonfiction writers, reading for understanding, writing process"
  },
  {
   "zid": 1272,
@@ -9968,7 +9975,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L7"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -9980,7 +9987,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Genre definition, pulp genres, plot generation, publishing strategies, marketing, genre conventions"
  },
  {
   "zid": 1680,
@@ -9998,7 +10006,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L4"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -10010,7 +10018,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Short story structure, emotional impact, how to write for emotional engagement, publishing strategies"
  },
  {
   "zid": 625,
@@ -10057,9 +10066,7 @@
    "SEX"
   ],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\4U77Z3KB\\Bloom and Hobby - 2009 - Human sexuality.pdf",
@@ -10070,7 +10077,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Bloom's Literary Themes collection analyzing sexuality across existing works; literary criticism"
  },
  {
   "zid": 1047,
@@ -10598,7 +10607,8 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L4",
+   "L5"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -10610,7 +10620,8 @@
   "added": "2023-12-05",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Chapters on readers' wants, memorable characters, character development, plot, story structure, voice"
  },
  {
   "zid": 155,
@@ -10943,9 +10954,7 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\R6X87RDL\\Corey and Corey - 2011 - Leviathan wakes.pdf",
@@ -10956,7 +10965,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Science fiction novel (The Expanse book 1); instructional books explicitly exclude actual novels"
  },
  {
   "zid": 599,
@@ -11095,9 +11106,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\DDBB7QNE\\Kelley - 2021 - Loving Fanfiction Exploring the Role of Emotion i.pdf",
@@ -11108,7 +11117,9 @@
   "added": "2023-08-15",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Ethnographic academic study of fandom and emotion, not instruction for writing story"
  },
  {
   "zid": 1674,
@@ -12355,7 +12366,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L4"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -12367,7 +12378,8 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Prewriting, outlining, four-act structure (initiation, response, battle, sacrifice), character, setting, editing"
  },
  {
   "zid": 1662,
@@ -14073,9 +14085,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\8SRPL9HM\\MacGregor et al. - 2018 - Routledge Companion to Real Estate Investment.pdf",
@@ -14086,7 +14096,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Real estate finance and investment reference; not story-related"
  },
  {
   "zid": 630,
@@ -15122,7 +15134,7 @@
   ],
   "collections": [],
   "spine": [
-   "L0?"
+   "L0"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -15134,7 +15146,8 @@
   "added": "2023-08-15",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Theory of computational creativity and narrative generation; what makes writing good (character, plot, prose)"
  },
  {
   "zid": 1015,
@@ -16643,9 +16656,7 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\HYBS79PI\\Dalsgaard et al. - 2012 - The Cambridge companion to Thomas Pynchon.pdf",
@@ -16656,7 +16667,9 @@
   "added": "2023-08-15",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Literary criticism and analysis of an author's works; not instructional for writing"
  },
  {
   "zid": 1135,
@@ -17107,7 +17120,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -17119,7 +17132,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Summarizes eight writing crafts and sub-crafts; psychological storytelling, character conflict design"
  },
  {
   "zid": 772,
@@ -17791,9 +17805,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\VMN5CWIG\\Todorov - The Inner Enemies of Democracy.pdf",
@@ -17804,7 +17816,9 @@
   "added": "2023-08-15",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Political philosophy and history; not story craft"
  },
  {
   "zid": 773,
@@ -18344,7 +18358,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -18356,7 +18370,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Psychology of writing, overcoming obstacles, staying creative and productive, writing mindset"
  },
  {
   "zid": 1081,
@@ -19088,9 +19103,7 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\XWTVAIB8\\Lee - 2014 - The Routledge companion to Asian American and Paci.pdf",
@@ -19101,7 +19114,9 @@
   "added": "2023-09-18",
   "modified": "2023-09-18",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Literary criticism and theory across works; reference collection not instructional"
  },
  {
   "zid": 1312,
@@ -19120,9 +19135,7 @@
   "abstract": true,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\9EZYQE59\\Benjamin et al. - 2020 - The Routledge companion to big history.pdf",
@@ -19133,7 +19146,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Academic historical reference and theory; not story craft instruction"
  },
  {
   "zid": 1329,
@@ -19218,9 +19233,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\RWCEYBK6\\Brown - 2020 - The Routledge Companion to Digital Humanities and .pdf",
@@ -19231,7 +19244,9 @@
   "added": "2023-07-09",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Academic reference on digital tools and art history; not story instruction"
  },
  {
   "zid": 1267,
@@ -19251,7 +19266,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L7"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -19263,7 +19278,8 @@
   "added": "2023-09-18",
   "modified": "2023-09-18",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "History of literary experiment, new media impact on literature, experimental genres and forms"
  },
  {
   "zid": 1627,
@@ -19281,7 +19297,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "SETTING"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -19293,7 +19309,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Interdisciplinary perspectives on world structure/design, worldbuilding, authorship of imaginary worlds"
  },
  {
   "zid": 1328,
@@ -19311,9 +19328,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\G2WPR5LS\\Chen and Nonaka - 2022 - The Routledge Companion to Knowledge Management.pdf",
@@ -19324,7 +19339,9 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Business and organizational management reference; not story craft"
  },
  {
   "zid": 390,
@@ -19509,9 +19526,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\85THJXLD\\Burnett et al. - 2022 - The Routledge Companion to Literature of the U.S. .pdf",
@@ -19522,7 +19537,9 @@
   "added": "2023-09-18",
   "modified": "2023-09-18",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Literary studies reference and criticism; not instructional for writing"
  },
  {
   "zid": 530,
@@ -19579,7 +19596,7 @@
   ],
   "collections": [],
   "spine": [
-   "L0?"
+   "TEXTURE"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -19591,7 +19608,8 @@
   "added": "2023-07-23",
   "modified": "2023-12-12",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Partnership between music and literature, artistic expression, creative telling through multiple forms"
  },
  {
   "zid": 781,
@@ -19612,7 +19630,7 @@
   ],
   "collections": [],
   "spine": [
-   "L0?"
+   "L7"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -19624,7 +19642,8 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Genre-specific instruction on musical theatre as medium, form, practice, and performance"
  },
  {
   "zid": 397,
@@ -19809,9 +19828,7 @@
    "SEX"
   ],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\RDGSHXV4\\Scott et al. - 2021 - The Routledge Handbook of Male Sex Work, Culture, .pdf",
@@ -19822,7 +19839,9 @@
   "added": "2023-07-23",
   "modified": "2023-07-23",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Sociological and cultural studies handbook; not story instruction"
  },
  {
   "zid": 1201,
@@ -20515,7 +20534,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L4"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -20527,7 +20546,8 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Series structure, how to create and sustain stories across episodes, narrative development for television"
  },
  {
   "zid": 784,
@@ -20696,7 +20716,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "SETTING"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -20708,7 +20728,8 @@
   "added": "2023-12-05",
   "modified": "2023-12-05",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Essays and examples of imaginary cartography, worldbuilding, mapping fiction worlds"
  },
  {
   "zid": 1440,
@@ -20980,7 +21001,7 @@
   ],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -20992,7 +21013,8 @@
   "added": "2023-08-15",
   "modified": "2023-08-15",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "AI-assisted writing, integrating ChatGPT into writing workflow, author process with technology"
  },
  {
   "zid": 1197,
@@ -21010,7 +21032,8 @@
    "00_TOC"
   ],
   "spine": [
-   "L0?"
+   "L4",
+   "L5"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -21022,7 +21045,8 @@
   "added": "2023-08-15",
   "modified": "2023-11-09",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Story archetypes, plot, character (wants/needs), structure (12 stages), theme, genre, outline methodology"
  },
  {
   "zid": 1520,
@@ -22544,7 +22568,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "TEXTURE"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -22556,7 +22580,8 @@
   "added": "2023-11-21",
   "modified": "2023-12-07",
   "subject_src": "catalog",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Writing as practice, voice development, detail and description, prose style, listening, showing vs. telling"
  },
  {
   "zid": 1016,
@@ -24806,7 +24831,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L7"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -24818,7 +24843,8 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "rule",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Literary agent directory, querying, book proposals, publishing industry, market navigation"
  },
  {
   "zid": 4040,
@@ -28030,9 +28056,7 @@
   "abstract": false,
   "tags": [],
   "collections": [],
-  "spine": [
-   "L0?"
-  ],
+  "spine": [],
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\YDIWW2N3\\Bloom - 2009 - Kurt Vonnegut's Slaughterhouse-five.pdf",
@@ -28043,7 +28067,9 @@
   "added": "2024-03-16",
   "modified": "2024-03-16",
   "subject_src": "rule",
-  "spine_src": "none"
+  "spine_src": "toc-off",
+  "subject_note": "not a story book (PS TOC pass)",
+  "spine_why": "Bloom's literary criticism collection analyzing one novel; not instructional for writing"
  },
  {
   "zid": 3892,
@@ -29511,7 +29537,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L0"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -29523,7 +29549,8 @@
   "added": "2023-12-13",
   "modified": "2023-12-13",
   "subject_src": "rule",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Essays in poetics, performance, philosophy, ekphrasis, rhetorical theory and argumentation"
  },
  {
   "zid": 3125,
@@ -29911,7 +29938,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "L7"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -29923,7 +29950,8 @@
   "added": "2023-12-12",
   "modified": "2023-12-12",
   "subject_src": "rule",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "Query basics, querying strategy, pitching to agents and editors, publishing market entry"
  },
  {
   "zid": 3522,
@@ -30165,7 +30193,7 @@
   "tags": [],
   "collections": [],
   "spine": [
-   "L0?"
+   "CRAFT-PROCESS"
   ],
   "has_pdf": true,
   "pdf_exists": true,
@@ -30177,7 +30205,8 @@
   "added": "2024-12-10",
   "modified": "2024-12-10",
   "subject_src": "rule",
-  "spine_src": "none"
+  "spine_src": "toc",
+  "spine_why": "AI writing tools, generative AI for authors, integrating AI into writing workflow and process"
  },
  {
   "zid": 3107,

@@ -13,6 +13,8 @@ source_type: book
 subjects: [CRE]
 primary_subject: CRE
 trunk: BLACK
+spine: [L5]
+zotero_key: "unknown"
 template: BVX-LEARN-v3.0
 created: 2026-08-15
 tags: [character-design, cast-design, dimensionality, contradiction, dramatica-adjacent]
@@ -46,24 +48,86 @@ related:
 The cast-design methodology. Where Dramatica gives you structural *roles*, McKee gives you the method for deciding **who fills them and why** — by deriving the cast from the protagonist's contradictions.
 
 ## TABLE OF CONTENTS
-- [Core Thesis](#core-thesis)
-- [Framework](#framework)
-- [Key Concepts](#key-concepts)
-- [Heuristics](#heuristics)
-- [Invariants](#invariants)
-- [Pitfalls](#pitfalls)
-- [Application](#application)
-- [Provenance](#provenance)
+- [Core Thesis](#1-core-thesis)
+- [Mind Models](#2-mind-models)
+- [Framework](#3-framework--structure)
+- [Key Concepts](#4-key-concepts)
+- [Heuristics](#5-heuristics--decision-rules)
+- [Invariants](#6-invariants)
+- [Pitfalls](#7-pitfalls--myths)
+- [Application](#8-application)
+- [Cross-References](#9-cross-references)
+- [Provenance](#10-provenance--confidence)
 
 ---
 
-## CORE THESIS
+## 1 · CORE THESIS
 
 A character is not a person — it is a metaphor for humanity, and its complexity is made entirely of **contradiction**. What holds outer, inner, and hidden selves together into one coherent role is not consistency but a *unity of opposites*. A cast is therefore not a collection of people who happen to be in a story; it is an arrangement of contradictions positioned so that each role reveals the others by contrast.
 
 ---
 
-## FRAMEWORK
+## 2 · MIND MODELS
+
+*Required. Minimum two diagrams, maximum five. See `_0.1_BVX_LEARN/_meta/TEMPLATE.distill.v4.md` §C for the rules. Cross-reference: BVX.0075 (Davis) covers the complementary dynamic want/counter-will mechanism — see §9 below.*
+
+**Diagram 1 — the whole argument.**
+Caption: *the whole book collapses to one method — locate the contradiction between two of the three levels of self, cast it across concentric rings by weight, then let it hold up under an arc or a genre's own rules.*
+
+```mermaid
+mindmap
+  root((Character))
+    Three levels of self
+      Characterization
+      True character
+      Subconscious
+    Six dimension types
+      Contradiction between levels
+    Cast design
+      Centre: protagonist
+      First circle: dimensional
+      Second circle: trait only
+      Third circle: periphery
+    The arc
+      Change vs steadfast
+      Revealed under pressure
+    Genre-specific character
+      Comedy, crime, war, other genres
+```
+
+**Diagram 2 — the central mechanism.**
+Caption: *true character only surfaces under pressure, and every gap between the three levels — not personality alone — is what McKee counts as a dimension.*
+
+```mermaid
+flowchart TD
+    Char[Characterization: outer mask] -->|pressure applied| Press{Choice under pressure}
+    Press --> True[True character revealed]
+    True -->|choice exposes deeper drive| Sub[Subconscious desire]
+    Char -.contradiction.-> True
+    True -.contradiction.-> Sub
+    Char -.contradiction.-> Sub
+    Contra[Any such gap = one dimension] --> Char
+    Contra --> True
+    Contra --> Sub
+```
+
+**Diagram 3 — mapped onto the Command's 12-layer character stack.**
+Caption: *every McKee tool this distill actually uses already lands on an existing `feeds:` entry — dimension work sits on L10 SHADOW and L12 FUNCTION, cast structure sits on L1 CORE and the Dramatica IC throughline.*
+
+```mermaid
+flowchart LR
+    TypeVsDim[Type vs dimension] --> L12[L12 FUNCTION]
+    CounterpointDesign[Counterpoint design] --> L12
+    DimensionTypes[Dimension types 3, 5, 6] --> L10[L10 SHADOW]
+    TrueCharacter[True character under pressure] --> L4[L4 WILL]
+    CastMap[Cast map: protagonist majority] --> L1[L1 CORE]
+    CastDerivation[Cast derives supporting roles] --> Dram[DRAMATICA IC throughline]
+    UnityOpposites[Unity of opposites] --> L1
+```
+
+---
+
+## 3 · FRAMEWORK / STRUCTURE
 
 **Three levels of self:** outer *characterization* (what's visible) → inner *true character* (revealed under pressure) → *hidden subconscious* (visible only through choice under pressure).
 
@@ -87,7 +151,7 @@ A character is not a person — it is a metaphor for humanity, and its complexit
 
 ---
 
-## KEY CONCEPTS
+## 4 · KEY CONCEPTS
 
 **1. Unity of Opposites (Heraclitus).** Hot/cold make temperature; birth/death make life. Contradiction is not a flaw in a character, it is the thing that makes the character cohere. *"The unity of opposites is the founding principle of character complexity."*
 
@@ -105,7 +169,7 @@ A character is not a person — it is a metaphor for humanity, and its complexit
 
 ---
 
-## HEURISTICS
+## 5 · HEURISTICS & DECISION RULES
 
 | Situation | Do this | Not this |
 |---|---|---|
@@ -119,7 +183,7 @@ A character is not a person — it is a metaphor for humanity, and its complexit
 
 ---
 
-## INVARIANTS
+## 6 · INVARIANTS
 
 1. **Contradiction is the founding principle of complexity.** No contradiction, no dimension, no character — only a type.
 2. **Characters express everything they experience; people experience more than they express.** A character is not a realistic person and should not be built like one.
@@ -131,13 +195,15 @@ A character is not a person — it is a metaphor for humanity, and its complexit
 
 ---
 
-## PITFALLS
+## 7 · PITFALLS / MYTHS
 
 Building characters as realistic people rather than as metaphors · adding traits when a contradiction is what's missing · dimensionalising the whole cast and starving the protagonist of contrast · opposing characters on one axle · mistaking a character's stated desire for their subconscious one · keeping a vivid character who illuminates nothing · treating consistency as a virtue · resolving a contradiction early (it is the engine, not a problem to fix).
 
 ---
 
-## APPLICATION — how this maps to OXO
+## 8 · APPLICATION
+
+*How this maps to OXO.*
 
 ### Tori's dimensions, in McKee's terms
 
@@ -177,7 +243,18 @@ Note this also resolves a loose end: the fusion brief flags Colson's Student Bod
 
 ---
 
-## PROVENANCE
+## 9 · CROSS-REFERENCES
+
+| Related entry | Relation |
+|---|---|
+| [[BVX.0075]] | Davis *Creating Compelling Characters* — Davis's dynamic want/counter-will (single-character-level) complements McKee's static cross-level dimension (cast-level); see BVX.0075 §8 for the full comparison |
+| [[BVX.0175]] | McKee *Story* — McKee's earlier plot-structure text; *Character* applies the same contradiction-driven method to cast design specifically |
+| [[BVX.0193]] | Truby *The Anatomy of Story* — the character-web / moral-argument approach; compare against McKee's Cast Map for deriving supporting roles from a protagonist |
+| [[BVX.0089]] | Dramatica — the archetypes and the 64 story-form elements; McKee's Cast Map derivation (Impact Character) is a route into Dramatica's IC throughline, see Diagram 3 above |
+
+---
+
+## 10 · PROVENANCE & CONFIDENCE
 
 Full text, 579pp, clean text layer, complete outline. Distilled from the Introduction, Ch.9 (The Dimensional Character), and Ch.17 (Cast Design). Chapters 1–8 and 10–16 sampled, not fully extracted — **a deeper pass on Ch.10 (Complex Character), Ch.12 (Symbolic Character) and Ch.14 (Character in Genre) would likely yield more.** Status `complete` reflects the load-bearing extraction; upgrade with `"Upgrade BVX.0064"` if the remaining chapters are wanted.
 
@@ -185,3 +262,4 @@ The OXO application section is **my synthesis**, not McKee's — he never mentio
 
 ## META
 - Template: BVX-LEARN-v3.0 · Source: full-text book · Created 2026-08-15
+- Retrofit to v4 2026-09-16: mind models + spine key added; all v2 content kept.

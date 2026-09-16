@@ -29,8 +29,10 @@ def main():
     story = [i for i in items if i.get("subject") in ("CRE", "LIT")]
     c = collections.Counter(); review = []
     for it in story:
+        if it.get("spine_src") == "toc-off":
+            c["toc-off (not a story book)"] += 1; continue
         if it.get("spine"):
-            it.setdefault("spine_src", "tag"); c["tag"] += 1; continue
+            it.setdefault("spine_src", "tag"); c[it["spine_src"]] += 1; continue
         blob = " ".join([it["title"], " ".join(it["tags"]), " ".join(it["collections"])])
         lv = [lvl for lvl, rx in COMPILED if rx.search(blob)]
         if lv:
