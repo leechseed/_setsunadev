@@ -236,7 +236,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 
 | BVX | Subject | Title | Author | Year | Key from | Distill |
 |---|---|---|---|---|---|---|
-| BVX.0045 | CRE | 45 Master Characters | Schmidt |  | tag |  |
+| BVX.0045 | CRE | 45 Master Characters | Schmidt |  | tag | ✅ |
 | BVX.0047 | CRE | 8 Steps to Side Characters: How to Craft Supporting Roles With Intention | Black |  | tag |  |
 | BVX.0057 | CRE | A Writer’s Guide to Characterization | Schmidt |  | tag |  |
 | BVX.0060 | CRE | Character Reactions from Head to Toe | Howard |  | tag |  |
@@ -256,19 +256,19 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0186 | CRE | The 101 Most Influential People Who Never Lived | Lazar |  | tag |  |
 | BVX.0187 | CRE | The 16 personality types: profiles, theory, & type development | Drenth | 2017 | tag |  |
 | BVX.0189 | CRE | The 27 tritypes revealed: discover your life purpose and blind spot | Chernick Fauvre, Fauvre | 2013 | tag |  |
-| BVX.0196 | CRE | The Art of Character | Corbett |  | tag |  |
+| BVX.0196 | CRE | The Art of Character | Corbett |  | tag | ✅ |
 | BVX.0202 | CRE | The compass of character: creating complex motivation for compelling cha | Corbett | 2019 | tag |  |
 | BVX.0203 | CRE | The complete Enneagram: 27 paths to greater self-knowledge | Chestnut | 2013 | tag |  |
 | BVX.0207 | CRE | The dramatic writer's companion: tools to develop characters, cause scen | Dunne | 2009 | tag |  |
 | BVX.0210 | CRE | The emotion thesaurus: a writer's guide to character expression | Ackerman, Puglisi | 2019 | tag |  |
-| BVX.0209 | CRE | The Emotional Wound Thesaurus: A Writer's Guide to Psychological Trauma | Puglisi, Ackerman |  | tag |  |
+| BVX.0209 | CRE | The Emotional Wound Thesaurus: A Writer's Guide to Psychological Trauma | Puglisi, Ackerman |  | tag | ✅ |
 | BVX.0211 | CRE | The Enneagram of emotional intelligence: a journey to personal and profe | Allender | 2023 | tag |  |
 | BVX.0220 | CRE | The negative trait thesaurus: a writer's guide to character flaws | Ackerman, Puglisi | 2013 | tag |  |
 | BVX.0222 | CRE | The occupation thesaurus: a writer's guide to jobs, vocations, and caree | Ackerman, Puglisi | 2020 | tag |  |
 | BVX.0227 | CRE | The Positive Trait Thesaurus: A Writer's Guide to Character Attributes | Ackerman, Puglisi | 2013 | tag |  |
 | BVX.0229 | CRE | The psychology workbook for writers: tools for creating realistic charac | Smith | 2015 | tag |  |
 | BVX.0230 | CRE | The road to character | Brooks | 2015 | tag |  |
-| BVX.0233 | CRE | The Science of Writing Characters: Using Psychology to Create Compelling | Pelican |  | tag |  |
+| BVX.0233 | CRE | The Science of Writing Characters: Using Psychology to Create Compelling | Pelican |  | tag | ✅ |
 | BVX.0234 | CRE | The secrets of character: writing a hero anyone will love | Bird | 2022 | tag |  |
 | BVX.0235 | CRE | The Secrets to Creating Character Arcs: A Fiction Writer's Guide to Mast | Warner |  | tag |  |
 | BVX.0251 | CRE | Ultimate Tritype Comparison Guide Compiled From Info Across the Internet |  |  | tag |  |
@@ -282,7 +282,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0568 | LIT | Cyclopedia of Literary Characters, Fourth Edition | Magill |  | tag |  |
 | BVX.0613 | LIT | The epic hero | Miller | 2000 | tag |  |
 | BVX.0047 | CRE | 8 Steps to Side Characters: How to Craft Supporting Roles With Intention | Black |  | rule |  |
-| BVX.0061 | CRE | Characters and viewpoint | Card | 2009 | rule |  |
+| BVX.0061 | CRE | Characters and viewpoint | Card | 2009 | rule | ✅ |
 | BVX.0131 | CRE | Just write: creating unforgettable fiction and a rewarding writing life | Bell | 2016 | toc |  |
 | BVX.0168 | CRE | Shakespeare's Storytelling: An Introduction to Genre, Character, and Tec | Eastman | 2021 | rule |  |
 | NEW | CRE | The Psychology of CreativeWriting | Kaufman, Kaufman |  | rule |  |
@@ -750,7 +750,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0652 | LIT | “This is what a human face looks like after 40 years of writing. I’d lik | Maestro |  | tag |  |
 | NEW | CRE | Agents' Room: Narrative Generation through Multi-step Collaboration | Huot, Amplayo, Palomaki, J | 2025 | rule |  |
 | BVX.0059 | CRE | Blending and the study of narrative: approaches and applications | Schneider, Hartner | 2012 | rule |  |
-| BVX.0061 | CRE | Characters and viewpoint | Card | 2009 | rule |  |
+| BVX.0061 | CRE | Characters and viewpoint | Card | 2009 | rule | ✅ |
 | NEW | CRE | Clear and simple as the truth: writing classic prose | Thomas, Turner | 2011 | rule |  |
 | BVX.0108 | CRE | Handbook of Comics and Graphic Narratives | Domsch, Hassler-Forest, Va |  | rule |  |
 | BVX.0108 | CRE | Handbook of Comics and Graphic Narratives | Domsch, Hassler-Forest, Va |  | rule |  |

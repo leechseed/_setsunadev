@@ -85,6 +85,11 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.0236` | Coyne — The Story Grid | L4 L7 | 3 | ✅ 9/16 | 1 |
 | `BVX.0075` | Davis — Creating Compelling Characters | L5 | 3 | ✅ 9/16 | 1 |
 | `BVX.0193` | Truby — The Anatomy of Story | L4 L5 L6 SETTING | 4 | ✅ 9/16 · setting addendum (ch. 6) 9/16 | 1 + 3 |
+| `BVX.0196` | Corbett — The Art of Character | L5 | 3 | ✅ 9/16 · the ghost and revenant; the tyranny of motive | 4 (character) |
+| `BVX.0061` | Card — Characters and Viewpoint | L5 TEXTURE | 4 | ✅ 9/16 · the hierarchy and the MICE quotient; viewpoint is the telling's; the PDF is the 1988 text, Zotero says 2009 | 4 (character) |
+| `BVX.0209` | Puglisi & Ackerman — The Emotional Wound Thesaurus | L5 | 4 | ✅ 9/16 · the wound card, L5 WOUND's direct source | 4 (character) |
+| `BVX.0233` | Pelican — The Science of Writing Characters | L5 | 4 | ✅ 9/16 · Big Five, the circumplex, the fifteen motivations; the Dark Triad for L10 | 4 (character) |
+| `BVX.0045` | Schmidt — 45 Master Characters | L5 L4 | 4 | ✅ 9/16 · light and shadow faces; the two journeys; sits beside Dramatica's eight, no collision | 4 (character) |
 
 Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
 
