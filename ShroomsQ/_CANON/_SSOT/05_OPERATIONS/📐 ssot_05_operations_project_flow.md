@@ -1,14 +1,14 @@
 ---
 type: ssot_methodology
 category: operations
-version: 0.1.0
-last_updated: 2026-09-03
+version: 0.1.1
+last_updated: 2026-09-15
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: working — v0.1; promotes to canonical after two project uses (DOCTRINE 0, Invariant I)
 working_title: true
 bolo: 25
 purpose: "Defines how a project runs in this operation: the phases, the brief, the gates, the instruments, the cadence, and the tailoring rule. Governs the project; SOP.md governs the session."
-dependencies: ["[[SOP]]", "[[DOCTRINE-0-INVARIANTS]]", "[[📐 ssot_05_operations_pm_holdings_inventory]]", "[[🧬 MIL.08 — MCDP 5 Planning — USMC (1997)]]", "[[🧬 MIL.09 — MCDP 6 Command and Control — USMC (1996)]]", "[[🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997)]]", "[[🧬 MIL.03 — MCDP 1-2 Campaigning — USMC (1997)]]", "[[🧬 MIL.07 — MCDP 4 Logistics — USMC (2023)]]", "[[🧬 MIL.11 — MCDP 8 Information — USMC (2022)]]"]
+dependencies: ["[[SOP]]", "[[DOCTRINE-0-INVARIANTS]]", "[[📐 ssot_05_operations_development_standard]]", "[[📐 ssot_05_operations_pm_holdings_inventory]]", "[[🧬 MIL.08 — MCDP 5 Planning — USMC (1997)]]", "[[🧬 MIL.09 — MCDP 6 Command and Control — USMC (1996)]]", "[[🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997)]]", "[[🧬 MIL.03 — MCDP 1-2 Campaigning — USMC (1997)]]", "[[🧬 MIL.07 — MCDP 4 Logistics — USMC (2023)]]", "[[🧬 MIL.11 — MCDP 8 Information — USMC (2022)]]"]
 sources: "Four-domains artifact (2026-02-25) six-phase lifecycle · PMBOK/Vargas solo mapping (2026-02-25) · BVIPDS charter + assumption log (2026-03-19) · Lab venture gates sheet (2026-08-31) · Ultrasin master registry status vocabulary · MCDP one-sheets MIL.01–MIL.11 (2026-09-03)"
 ---
 
@@ -245,3 +245,4 @@ Five-line brief: end state (the recognizer stops mangling the house lexicon) · 
 | Version | Date | Changes |
 |---|---|---|
 | 0.1.0 | 2026-09-03 | Working assembly from finished holdings on Papi's order (BOLO 25, sequence held: PDFs → MCDP pass → template → BOLO 24). Sources named in frontmatter. Promotes on two uses. |
+| 0.1.1 | 2026-09-15 | Sibling filed: the development standard (BOLO 53) governs the loop inside a session; this flow governs the project. Dependency added; no rule changed. |
