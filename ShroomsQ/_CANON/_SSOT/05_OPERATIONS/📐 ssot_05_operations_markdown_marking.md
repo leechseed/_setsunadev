@@ -6,7 +6,7 @@ version: 1.0.0
 last_updated: 2026-09-06
 applies_to: [BVX-LEARN, OVEREXITOUT, ASTRO7EX, SSOT]
 status: canonical — RULED 2026-09-06 on the BOLO 32 boresight
-purpose: "Assigns one meaning to each inline mark in house Markdown so that writer-side structure and reader-side capture never share ink."
+purpose: "Assigns one meaning to each inline mark in Command Markdown so that writer-side structure and reader-side capture never share ink."
 dependencies: ["[[📐 ssot_writing_guide]]", "[[📐ssot_SSOT_CREATION]]", "[[📐 ssot_template_prompt_for_summarizing_novels_and_books]]"]
 trunk: BLACK
 bolo: 32
@@ -41,7 +41,7 @@ Rules:
 1. A reader never bolds. A writer never highlights. Ink identifies the hand.
 2. A highlight names a **load-bearing term**: a word or phrase the argument cannot stand without in this source. It does not name an unknown word; unknown words go to the dictation lexicon or the spell dictionary.
 3. A highlight carries no definition inline. The sense is written at harvest, into the VOCAB page, in the meaning the term has **in that source**.
-4. Every mark in this table survives the house editors. Prettier rewrites `*x*` to `_x_` and pads tables; it leaves `**`, `==`, and `[[ ]]` alone. Italic is therefore written with underscores from the start.
+4. Every mark in this table survives the Command editors. Prettier rewrites `*x*` to `_x_` and pads tables; it leaves `**`, `==`, and `[[ ]]` alone. Italic is therefore written with underscores from the start.
 5. A highlight is removed in exactly two cases: the term is promoted to a wikilink, or review finds it is not load-bearing.
 6. Highlight renders in Obsidian and in VS Code with a preview extension; in the VS Code source view it is read as the two equals signs. The end-state renderer is the MCDP browser (BOLO 33).
 
@@ -62,7 +62,7 @@ python _tools/vocab_harvest.py "<path to the one-sheet>" --senses <senses.json>
 The script reads every `==term==` with its section heading and the sentence it sits in, dedupes by term, and writes:
 
 - **The per-source VOCAB page** at `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`, in the 2023 Logseq VOCAB shape: the source's section outline, one `**term** — sense` line per mark, the sentence it came from beneath it.
-- **The house register** at `_0.1_BVX_LEARN/_meta/VOCABULARY.md`: one row per (term, source), appended, never hand-typed.
+- **The Command register** at `_0.1_BVX_LEARN/_meta/VOCABULARY.md`: one row per (term, source), appended, never hand-typed.
 
 `--senses` supplies the sense per term as JSON. A term without a sense is written with its sentence only and is listed on the console so the sense can be supplied on the next run.
 

@@ -44,7 +44,7 @@ The loop exists to end two failure modes. The first is **the stall pattern**: a 
 
 ### A · The life-cycle read
 
-The house loop is **iterative-incremental development**. Five outside parents already describe pieces of it, each stated in one line, no more than the record supports:
+The Command loop is **iterative-incremental development**. Five outside parents already describe pieces of it, each stated in one line, no more than the record supports:
 
 - **ISO/IEC/IEEE 12207:2017 and 15288:** the life-cycle process standards; both name the iterative and incremental life-cycle model as a standing process pattern, not an exception to a plan-driven default.
 - **The Agile Manifesto's principles and Scrum's inspect-and-adapt:** deliver on a short cycle, inspect what came back, adapt the plan; transparency, inspection, and adaptation are the three pillars.
@@ -52,7 +52,7 @@ The house loop is **iterative-incremental development**. Five outside parents al
 - **Boyd's OODA:** Observe, Orient, Decide, Act, the same cycle the project flow already names as one session's shape (§F, Cadence and control).
 - **MCDP 6:** control is the feedback returning from the action, not the orders going out, the doctrine the project flow already cites for its own cadence.
 
-The house names its own three grains. The **increment** is one turn's delivery, recorded as a FRAGO onto the sheet. The **iteration** is one session, closed by Oscar Mike. The **release** is a project's gate, run inside the project flow. Claude's working read, banked on BOLO 53 when it was tabled 2026-09-12: the boresight → how copy → build → FRAGO loop is iterative-incremental development. That read is provisional until two uses promote it, per DOCTRINE 0, Invariant I.
+The Command names its own three grains. The **increment** is one turn's delivery, recorded as a FRAGO onto the sheet. The **iteration** is one session, closed by Oscar Mike. The **release** is a project's gate, run inside the project flow. Claude's working read, banked on BOLO 53 when it was tabled 2026-09-12: the boresight → how copy → build → FRAGO loop is iterative-incremental development. That read is provisional until two uses promote it, per DOCTRINE 0, Invariant I.
 
 ### B · The loop, stage by stage
 
@@ -97,7 +97,7 @@ Numbered. Each is derived from a source read for this document; none is invented
 6. **The record keeps the abort line, not the order.** *(SOP.md §1, the abort abort abort row)*
 7. **Every increment lands on the sheet as a FRAGO; nothing lives only in chat.** *(SOP.md §1, the DOPE SHEET / FRAGO row)*
 8. **The close-out is one word and one procedure.** *(SOP.md §1, the Oscar Mike row)*
-9. **House format §7 on every transmission, including this one.** *(SOP.md §7)*
+9. **Command format §7 on every transmission, including this one.** *(SOP.md §7)*
 
 ### E · Audit hooks
 
@@ -113,7 +113,7 @@ For BOLO 51, the logistics front: how each rule's own compliance is checked, kep
 | 6 | Abort line kept, not the order | The struck order does not appear; only the abort line does | The transcript, the git log |
 | 7 | Increment lands as a FRAGO | A FRAGO N entry exists on the sheet for the turn's delivery | The sheet's Log |
 | 8 | Close-out is one word, one procedure | The OUT block closes the session; nothing follows it | The transcript, `_CACHE/` → `_LOG/` |
-| 9 | House format on every transmission | Bulleted readback, bold signposts, no prose wall | The transcript |
+| 9 | Command format on every transmission | Bulleted readback, bold signposts, no prose wall | The transcript |
 
 ### F · Tailoring
 
@@ -127,7 +127,7 @@ Mirrors the project flow's S/M/L table (§H there); this is the loop's own compr
 
 ### G · Governance
 
-[DOCTRINE 0](../../../../DOCTRINE-0-INVARIANTS.md) is the promotion mechanic: this standard is **v0.1 working**, promotes to canonical after two project uses, and any rule unused across those two uses is struck at the next revision. Its rung on the BOLO 50 ladder is **procedure** (NASA four, ruled 2026-09-15): it governs how the house works, not what a product measures. It moved up from the provisional STANDARD rung the day the ladder was ruled, with no content change. Revisions belong to P6 of any project that used this loop, or to a standalone FRAGO 53.
+[DOCTRINE 0](../../../../DOCTRINE-0-INVARIANTS.md) is the promotion mechanic: this standard is **v0.1 working**, promotes to canonical after two project uses, and any rule unused across those two uses is struck at the next revision. Its rung on the BOLO 50 ladder is **procedure** (NASA four, ruled 2026-09-15): it governs how the Command works, not what a product measures. It moved up from the provisional STANDARD rung the day the ladder was ruled, with no content change. Revisions belong to P6 of any project that used this loop, or to a standalone FRAGO 53.
 
 ---
 

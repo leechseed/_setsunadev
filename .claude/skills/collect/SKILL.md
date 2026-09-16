@@ -21,7 +21,7 @@ Launch **EXTRACT-1 … EXTRACT-k** (haiku) in one message, each with its brief v
 
 ## H2 · Fan in
 
-Launch **WRITE** (sonnet) with `brief.WRITE.md`. It reads every `extract.*.json` and the locus (for the house areas), and writes the register the locus names. One writer, so the table has one voice.
+Launch **WRITE** (sonnet) with `brief.WRITE.md`. It reads every `extract.*.json` and the locus (for the Command areas), and writes the register the locus names. One writer, so the table has one voice.
 
 ```
 python _tools/loci/check.py <name> <register.md>

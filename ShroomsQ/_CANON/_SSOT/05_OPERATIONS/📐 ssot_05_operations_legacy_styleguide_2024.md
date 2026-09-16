@@ -12,7 +12,7 @@ provenance:
   note: "Two files concatenated verbatim below their own headings. AI-assisted originals. Nothing edited."
 ---
 
-# 📐 SSOT: LEGACY STYLEGUIDE (2024) — the ancestor of the house conventions
+# 📐 SSOT: LEGACY STYLEGUIDE (2024) — the ancestor of the Command conventions
 
 Read the current rules in `📐ssot_SSOT_CREATION.md` and `📐 ssot_writing_guide.md`. This document is the record of where they came from.
 

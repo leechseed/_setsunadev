@@ -141,7 +141,7 @@
  "trunk-black": {
   "t": "BLACK",
   "k": "noun",
-  "d": "BLACK = Bold Venture (BVX): creative, IP, systems. Everything you make lands in one of two houses; this is the first.",
+  "d": "BLACK = Bold Venture (BVX): creative, IP, systems. Everything you make lands in one of two trunks; this is the first.",
   "w": "SOP.md §2"
  },
  "trunk-orange": {
@@ -626,7 +626,7 @@
  "bolo50": {
   "t": "BOLO 50",
   "k": "item",
-  "d": "The standards campaign: every level of the operation as a standards organization; a networked library of outside and house-made standards. Research phase: the harvest banked as a locus, the register pulled by agent. Opened 9/11 on a break-break.",
+  "d": "The standards campaign: every level of the operation as a standards organization; a networked library of outside and Command-made standards. Research phase: the harvest banked as a locus, the register pulled by agent. Opened 9/11 on a break-break.",
   "w": "BOLO.md #50 · _0.1_BVX_LEARN/LOCI/standards.locus.md"
  },
  "abort": {
@@ -640,7 +640,7 @@
   "t": "BREVITY",
   "k": "noun",
   "st": "ruled",
-  "d": "What the [[soi|SOI]] holds, RULED 9/11 (\"I do like brevity better\"): the house's word list, after the Multi-Service Brevity Codes, the list that makes radio short. The SOI's subtitle on every page. Replaced \"the lexicon\" (provisional) and \"the house tongue\" (retired). BREVITY leaves MINT's bench; MINT stands for the loop.",
+  "d": "What the [[soi|SOI]] holds, RULED 9/11 (\"I do like brevity better\"): the Command's word list, after the Multi-Service Brevity Codes, the list that makes radio short. The SOI's subtitle on every page. Replaced \"the lexicon\" (provisional) and \"the house tongue\" (retired). BREVITY leaves MINT's bench; MINT stands for the loop.",
   "w": "SOP.md §0 · §6 · the SOI page"
  },
  "hotline": {
@@ -660,7 +660,7 @@
   "t": "proword",
   "k": "noun",
   "st": "ruled",
-  "d": "Procedure word. Radiotelephony's fixed words that stand for a whole instruction: ROGER, WILCO, OUT, SAY AGAIN. NATO's book for them is ACP 125. The house's prowords are the same idea aimed at the protocol: say one and the procedure fires.",
+  "d": "Procedure word. Radiotelephony's fixed words that stand for a whole instruction: ROGER, WILCO, OUT, SAY AGAIN. NATO's book for them is ACP 125. The Command's prowords are the same idea aimed at the protocol: say one and the procedure fires.",
   "w": "SOP.md §0–1 · ACP 125"
  },
  "gear": {
@@ -686,7 +686,7 @@
  "bolo53": {
   "t": "BOLO 53",
   "k": "item",
-  "d": "The house's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop read as an iterative-incremental life cycle, filed beside the project flow. Tabled 9/12; OPENED 9/15 by Papi's \"Open 53\"; v0.1 working draft on disk.",
+  "d": "The Command's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop read as an iterative-incremental life cycle, filed beside the project flow. Tabled 9/12; OPENED 9/15 by Papi's \"Open 53\"; v0.1 working draft on disk.",
   "w": "BOLO.md #53 · DOPE SHEET 53 · ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_development_standard.md"
  },
  "bolo54": {
@@ -707,5 +707,12 @@
   "k": "item",
   "d": "The DOPE SHEET format — the document layout. Captured 9/16.",
   "w": "BOLO.md #55 · DOPE SHEET 55"
+ },
+ "command": {
+  "t": "the Command",
+  "k": "noun",
+  "st": "ruled",
+  "d": "The whole operation under HOTLINE ACTUAL: BLACK, ORANGE and OPERATOR together. RULED 2026-09-16 (\"let's go with command\") from a bench of ten on BOLO 48; \"the house\" is retired as the word. Marine usage: the authority a unit answers to. Command standard, the Command's ladder, Command-native; \"organic\" replaces in-house.",
+  "w": "SOP.md §2 · §5 · BOLO 48"
  }
 }

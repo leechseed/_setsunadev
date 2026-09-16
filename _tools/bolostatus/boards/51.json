@@ -32,7 +32,7 @@
    },
    {
     "n": 53,
-    "why": "the house's own development standard, tabled 9/12"
+    "why": "the Command's own development standard, tabled 9/12"
    },
    {
     "n": 54,
@@ -57,7 +57,7 @@
   {
    "k": "boldness",
    "w": "Boldness",
-   "line": "Adopt the audit standards for their shape, not their text. ISO 19011 is a pattern; the AAR is already in the house's blood."
+   "line": "Adopt the audit standards for their shape, not their text. ISO 19011 is a pattern; the AAR is already in the Command's blood."
   }
  ],
  "frago": {
@@ -178,7 +178,7 @@
      "label": "The standards pulled from the register · 9/12",
      "items": [
       {
-       "t": "**The quality core: ISO 9001:2015 clauses 9 and 10** (performance evaluation: monitoring, internal audit, management review · improvement: nonconformity, corrective action, continual improvement) with ISO/TS 9002 and the small-enterprise guide; **ISO 9004** for the self-assessment maturity grid. Paid text; the clause shape is public and is all the house needs.",
+       "t": "**The quality core: ISO 9001:2015 clauses 9 and 10** (performance evaluation: monitoring, internal audit, management review · improvement: nonconformity, corrective action, continual improvement) with ISO/TS 9002 and the small-enterprise guide; **ISO 9004** for the self-assessment maturity grid. Paid text; the clause shape is public and is all the Command needs.",
        "s": "done"
       },
       {
@@ -198,11 +198,11 @@
        "s": "done"
       },
       {
-       "t": "**The house-native instruments the register does not list, all free:** the **AAR** (After Action Review: what was planned, what happened, why, what to sustain, what to improve; the Army's and the Corps' own improvement standard) · **MCDP 7 Learning** (already in-house as MIL.07) · **PDCA** (Deming's cycle, the spine of every ISO management standard) · the Toyota **A3** · **DMAIC**. Recommendation: AAR + PDCA are the working instruments; the ISO texts give the vocabulary and the clause map, never bought.",
+       "t": "**The Command-native instruments the register does not list, all free:** the **AAR** (After Action Review: what was planned, what happened, why, what to sustain, what to improve; the Army's and the Corps' own improvement standard) · **MCDP 7 Learning** (already organic as MIL.07) · **PDCA** (Deming's cycle, the spine of every ISO management standard) · the Toyota **A3** · **DMAIC**. Recommendation: AAR + PDCA are the working instruments; the ISO texts give the vocabulary and the clause map, never bought.",
        "s": "done"
       },
       {
-       "t": "**For every page the house publishes:** MIL-STD-1472H (in-house via the WATCH register) and **WCAG 2.x**, the biggest gap in the register.",
+       "t": "**For every page the Command publishes:** MIL-STD-1472H (organic via the WATCH register) and **WCAG 2.x**, the biggest gap in the register.",
        "s": "done"
       }
      ]
@@ -211,7 +211,7 @@
      "label": "The cross-session gate · measured 9/12",
      "items": [
       {
-       "t": "**A republish from a session that did not build the sheet is refused until the live page is fetched into context (~80 KB, about 65k tokens), and a second refusal can demand the fetch again.** Sheet 51 v0.3 hit it: built locally, republish owed. The FRAGO itself costs about 1 KB. This is the largest single token cost the offload build found, and it is the tool's, not the house's.",
+       "t": "**A republish from a session that did not build the sheet is refused until the live page is fetched into context (~80 KB, about 65k tokens), and a second refusal can demand the fetch again.** Sheet 51 v0.3 hit it: built locally, republish owed. The FRAGO itself costs about 1 KB. This is the largest single token cost the offload build found, and it is the tool's, not the Command's.",
        "s": "open"
       }
      ]
@@ -224,7 +224,7 @@
    "kind": "mission",
    "plain": "The task and the reason.",
    "strand": {
-    "last": "The house built systems for a month without a function that checks them.",
+    "last": "The Command built systems for a month without a function that checks them.",
     "plan": "One function; audit and improve; the harness does the compute.",
     "you": "You named the front and the fear.",
     "next": "The picks."
@@ -234,7 +234,7 @@
    "spoken": "\"This is a theater warfare with multiple fronts, and this is a big one: the logistics front. We need to work on this to be efficient with it, so when we get out there and fuck them up we have everything ready.\"",
    "endstate": [
     "A session opens on a 40-line digest, not 211 KB of reading.",
-    "The four SOP procedures run as skills; the Stop hook and a SessionStart hook do the housekeeping.",
+    "The four SOP procedures run as skills; the Stop hook and a SessionStart hook do the Commandkeeping.",
     "Every system in daily use has an audit line (owner · standard · last audit · open findings) on one register, and every Oscar Mike ends with a one-line AAR.",
     "Every BOLO from here carries a standards line."
    ]
@@ -290,7 +290,7 @@
     },
     {
      "n": 6,
-     "t": "**File on the ladder** — the audit standard and the register land on BOLO 50's house ladder once it is ruled.",
+     "t": "**File on the ladder** — the audit standard and the register land on BOLO 50's Command ladder once it is ruled.",
      "s": "gated",
      "when": "after BOLO 50"
     },

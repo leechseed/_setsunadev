@@ -1,7 +1,7 @@
 {
  "bolo": {
   "n": 53,
-  "title": "The house's own development standard — the back-and-forth as a life cycle",
+  "title": "The Command's own development standard — the back-and-forth as a life cycle",
   "trunk": "BLACK",
   "issued": "2026-09-12",
   "asof": "2026-09-15",
@@ -12,7 +12,7 @@
   "related": [
    {
     "n": 50,
-    "why": "the standards campaign: BOLO 53 files its house development standard on this BOLO's ladder once the ladder itself is ruled."
+    "why": "the standards campaign: BOLO 53 files its Command development standard on this BOLO's ladder once the ladder itself is ruled."
    }
   ],
   "home": "BOLO.md · row 53",
@@ -37,7 +37,7 @@
   }
  ],
  "frago": {
-  "mission": "Write the house's own development standard, the daily boresight-to-FRAGO loop named as a life cycle and filed on the BOLO 50 ladder, **in order to** make how the house builds a written, auditable procedure every project runs the same way.",
+  "mission": "Write the Command's own development standard, the daily boresight-to-FRAGO loop named as a life cycle and filed on the BOLO 50 ladder, **in order to** make how the Command builds a written, auditable procedure every project runs the same way.",
   "order": "**First use.** The next M or L build runs the loop as written, start to FRAGO, and logs on this sheet where it bent. Second use the same. Two logged uses promote v0.1 to canonical (DOCTRINE 0, Invariant I).",
   "default": "Silence: every M or L build from here is a use. The main line logs each one here as a FRAGO. After two, the promotion FRAGO fires without a further call.",
   "calls": [
@@ -92,7 +92,7 @@
        "s": "tabled"
       },
       {
-       "t": "The question as spoken: the boresight → how-copy → build → FRAGO loop the house runs every day — is it a design process, or a software life cycle?",
+       "t": "The question as spoken: the boresight → how-copy → build → FRAGO loop the Command runs every day — is it a design process, or a software life cycle?",
        "s": "open"
       }
      ]
@@ -101,11 +101,11 @@
      "label": "What exists already",
      "items": [
       {
-       "t": "Claude's one-line read, logged the same transmission: yes, iterative-incremental development. ISO/IEC/IEEE 12207 and 15288 call this the iterative life-cycle model; agile calls it inspect-and-adapt; the house calls it boresight and FRAGO.",
+       "t": "Claude's one-line read, logged the same transmission: yes, iterative-incremental development. ISO/IEC/IEEE 12207 and 15288 call this the iterative life-cycle model; agile calls it inspect-and-adapt; the Command calls it boresight and FRAGO.",
        "s": "noted"
       },
       {
-       "t": "BOLO 50's standards register landed 9/11 (`_0.1_BVX_LEARN/LOCI/standards.locus.md` and `standards.register.md`), but the house ladder itself — where this standard would file — is still Papi's call per DOPE SHEET 50.",
+       "t": "BOLO 50's standards register landed 9/11 (`_0.1_BVX_LEARN/LOCI/standards.locus.md` and `standards.register.md`), but the Command ladder itself — where this standard would file — is still Papi's call per DOPE SHEET 50.",
        "s": "open"
       }
      ]
@@ -114,7 +114,7 @@
      "label": "What the record says",
      "items": [
       {
-       "t": "STATE.md and every session note since 9/12 carry the same line — **BOLO 53 tabled** — the house's own development standard, not started. It has been carried forward untouched across at least three session notes (9/12, 9/12 second session, 9/12 close).",
+       "t": "STATE.md and every session note since 9/12 carry the same line — **BOLO 53 tabled** — the Command's own development standard, not started. It has been carried forward untouched across at least three session notes (9/12, 9/12 second session, 9/12 close).",
        "s": "tabled"
       }
      ]
@@ -132,11 +132,11 @@
     "you": "You said table it and remember it. That is the whole order so far.",
     "next": "The open. Nothing drafts before you speak it."
    },
-   "task": "Write the house's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop named as a life cycle and filed on the BOLO 50 ladder beside the project flow,",
-   "intent": "in order to make the way the house builds a written, auditable procedure instead of a habit, so every project runs the same loop and BOLO 51's audits have a standard to check against.",
+   "task": "Write the Command's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop named as a life cycle and filed on the BOLO 50 ladder beside the project flow,",
+   "intent": "in order to make the way the Command builds a written, auditable procedure instead of a habit, so every project runs the same loop and BOLO 51's audits have a standard to check against.",
    "spoken": "\"Let's fucking table that for now… just remember to put in the BOLO.\"",
    "endstate": [
-    "One document on the ladder names the loop as the house's iterative-incremental life cycle, stage by stage, each stage a proword.",
+    "One document on the ladder names the loop as the Command's iterative-incremental life cycle, stage by stage, each stage a proword.",
     "Every stage cites its outside parent (ISO/IEC 12207 and 15288's iterative model, agile inspect-and-adapt) in one line, no more.",
     "The project flow (BOLO 25) and the logistics front's audits (BOLO 51) point at it as the reference.",
     "Until the open is spoken, it stays tabled and nothing builds."
@@ -149,11 +149,11 @@
    "plain": "Nothing is running. The only phase so far is the capture; the write-up waits on Papi reopening it.",
    "strand": {
     "last": "The question was captured and tabled in the same breath, 9/12.",
-    "plan": "When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
+    "plan": "When it opens: write the Command's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
     "you": "You approved all three calls and the order in one breath.",
     "next": "Two uses. Nothing else gates this sheet."
    },
-   "main_effort": "Nothing running — the question is captured, not opened. When it opens: write the house's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
+   "main_effort": "Nothing running — the question is captured, not opened. When it opens: write the Command's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
    "phases": [
     {
      "n": 0,
@@ -181,7 +181,7 @@
     }
    ],
    "coord": [
-    "Waits on BOLO 50's house ladder being ruled before it can file.",
+    "Waits on BOLO 50's Command ladder being ruled before it can file.",
     "Filed to feed SOP, the project flow, and BOLO 50's ladder — not a standalone document."
    ],
    "running": [
@@ -288,7 +288,7 @@
     {
      "when": "9/12",
      "who": "Claude",
-     "t": "One-line read logged: yes, iterative-incremental development — ISO/IEC/IEEE 12207 and 15288 call it the iterative life-cycle model, agile calls it inspect-and-adapt, the house calls it boresight and FRAGO. Row captured in BOLO.md; carried tabled through every session note since."
+     "t": "One-line read logged: yes, iterative-incremental development — ISO/IEC/IEEE 12207 and 15288 call it the iterative life-cycle model, agile calls it inspect-and-adapt, the Command calls it boresight and FRAGO. Row captured in BOLO.md; carried tabled through every session note since."
     },
     {
      "when": "9/15",

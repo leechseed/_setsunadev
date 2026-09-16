@@ -11,7 +11,7 @@ related: BOLO.md #25 · SOP.md · STATE.md · PROJECTS.md · DOCTRINE-0-INVARIAN
 
 # PM HOLDINGS INVENTORY
 
-**The finding in one line: the method is already written; what is missing is assembly.** A complete six-phase lifecycle with decision gates exists in the Feb-2026 four-domains artifact, a matched PMBOK-7 mapping sits beside it, and every instrument a lightweight flow needs (charter · assumption log · decision ledger · task register · portfolio board · stage gates · document container · house style) exists as a finished artifact somewhere in the repo. No single document assembles them into "how a project runs here."
+**The finding in one line: the method is already written; what is missing is assembly.** A complete six-phase lifecycle with decision gates exists in the Feb-2026 four-domains artifact, a matched PMBOK-7 mapping sits beside it, and every instrument a lightweight flow needs (charter · assumption log · decision ledger · task register · portfolio board · stage gates · document container · Command style) exists as a finished artifact somewhere in the repo. No single document assembles them into "how a project runs here."
 
 ## 1 · PMBOK / PMI material
 
@@ -46,12 +46,12 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 | same folder, `1 PROMPT TEMPLATE spec.md` + `2 KNOWLEDGEBASE spec.md` | the summarizer prompt (exact-replication, no invention) + KB spec | finished template | a distill pipeline reusable for PMBOK |
 | `BVX-ULTRASIN-twin-track.md` §Doctrinal spine | the "Marine standard": Feb-9 SSOT Writing Guide canon · MCDP hierarchy ↔ doctrine stack · MCDP 7 ↔ BVX-LEARN · MAGTF ↔ full-stack company · acquisition queue (11 pubs, 4 PDFs in hand) | finished | the doctrine-to-operation mapping; its decision table is a ledger pattern |
 | `DOCTRINE-0-INVARIANTS.md` | seven rules for what qualifies as a rule (earned by 2+ uses · written-only · names what it forbids · every scale · names derivation · fewer than seven · dies by countermand) | **RATIFIED 2026-09-03** (rename bench still open) | the governance layer; the project flow promotes under it |
-| `SOP.md` | **the de-facto PM operating system**: prowords · sit rep blocks · Ready Rack/Magazine handoff · reading order · house format | finished, enforced | already a project-control cadence; governs the *session*, not the *project* |
+| `SOP.md` | **the de-facto PM operating system**: prowords · sit rep blocks · Ready Rack/Magazine handoff · reading order · Command format | finished, enforced | already a project-control cadence; governs the *session*, not the *project* |
 | `STATE.md` | "Blocked on you" decision table (# · Decision · Unblocks) + dated Moved blocks | living | decision log + change log; "Unblocks" is a dependency field |
 | `BOLO.md` | numbered task register, issued date, status flags, in-place addenda | living | task register with audit trail |
 | `oscar-mike/` | parking lot: frontmatter contract, park/sweep | finished | backlog / WIP discipline |
 | `_CACHE/` · `_LOG/` | Ready Rack → Magazine flush | finished | the session-close step |
-| `…/files/2026-02-09_ssot-writing-guide-marine-corps-standardmd.md` | Marine Corps Doctrine Standard v1.0.0 for SSOT docs | finished | house style every process doc is written to |
+| `…/files/2026-02-09_ssot-writing-guide-marine-corps-standardmd.md` | Marine Corps Doctrine Standard v1.0.0 for SSOT docs | finished | Command style every process doc is written to |
 | `…/conversations/2026-06-08_marine-corps-documentation-and-narrative-production.md` | BVMC coined; MCDP 1 as structural template; MCDP 7 + MAGTF as the applicable frameworks | raw | origin record |
 | `…/conversations/2026-07-21_bvx-quartermaster-protocol.md` | the Quartermaster: car-and-cargo rule, **2+ concrete uses promotion gate**, tripwires | raw, rich | source of the DOCTRINE-0 promotion gate; an AAR-capture pattern |
 
@@ -88,7 +88,7 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 
 ## 6 · Finished vs missing
 
-- **Finished:** the six-phase lifecycle + gates (four-domains artifact) · the PMBOK-7 mapping · charter instance · assumption log · decision ledger (STATE + registry) · task register (BOLO) · portfolio board (PROJECTS) · backlog discipline (oscar-mike) · session handoff (Ready Rack) · stage gates (lab venture) · document container (SSOT template) · house style (Marine standard + SOP §7) · **11 MCDP summaries** (numbering drift on 4/8).
+- **Finished:** the six-phase lifecycle + gates (four-domains artifact) · the PMBOK-7 mapping · charter instance · assumption log · decision ledger (STATE + registry) · task register (BOLO) · portfolio board (PROJECTS) · backlog discipline (oscar-mike) · session handoff (Ready Rack) · stage gates (lab venture) · document container (SSOT template) · Command style (Marine standard + SOP §7) · **11 MCDP summaries** (numbering drift on 4/8).
 - **Missing:** one document that says how a project runs here · blank charter/gate/close-out templates (the charter is an instance) · a project lifecycle in the repo proper (SOP governs sessions) · a sprint/cadence layer beyond the CDPR paragraph · DOCTRINE-0 ratification (the promotion mechanic).
 - **Known gaps already flagged:** Pyramid Principle source text (BVX.1107 reserved) · 7 of 11 MCDP PDFs (BOLO 1) — **summaries exist for all 11; the PDFs feed the catalog, not the method** · DOCTRINE-0 unratified.
 

@@ -237,7 +237,7 @@ An **L-size** venture run in two modes: **annihilation** for the build (the pers
 
 ### Example 3 · BOLO 26, the dictation dictionary (S-size)
 
-Five-line brief: end state (the recognizer stops mangling the house lexicon) · intent (fewer misreads without slowing Papi down) · scope (one tool, one dictionary) · done (a session with zero SOP §8 catches) · owner (Claude on BUILD, Papi on INSTALL or PAY). One gate at done. Parked in oscar-mike on the route decision, which is a HOLD with a named decider.
+Five-line brief: end state (the recognizer stops mangling the Command lexicon) · intent (fewer misreads without slowing Papi down) · scope (one tool, one dictionary) · done (a session with zero SOP §8 catches) · owner (Claude on BUILD, Papi on INSTALL or PAY). One gate at done. Parked in oscar-mike on the route decision, which is a HOLD with a named decider.
 
 ---
 

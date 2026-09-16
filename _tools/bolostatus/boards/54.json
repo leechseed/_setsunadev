@@ -81,7 +81,7 @@
     "next": "The first live run."
    },
    "task": "Rebuild the sit rep as prep script → three independent specialists → script reviewer → the main line's one judgment,",
-   "intent": "in order to cut the main line's read from about 211 KB to about 3 KB per board, move the reading onto haiku and sonnet contexts that end when they return, and make the same formation the house rule for every fan-out.",
+   "intent": "in order to cut the main line's read from about 211 KB to about 3 KB per board, move the reading onto haiku and sonnet contexts that end when they return, and make the same formation the Command rule for every fan-out.",
    "spoken": "\"Orchestrator decomposes the job into pieces that don't share state, fans out to specialists who run independently, then fans in at a checkpoint where one agent reconciles and reviews.\"",
    "endstate": [
     "\"Sit rep\" runs prep.py, three agents in one message, assemble.py, one main-line write, build, flush, publish.",
@@ -160,7 +160,7 @@
     {
      "label": "The gate",
      "items": [
-      {"t": "**Defaults run if silent:** the formation stands as the sit rep's procedure and as the house layout for every fan-out; INDEX on sonnet; the other three skills after the first live run.", "s": "held"}
+      {"t": "**Defaults run if silent:** the formation stands as the sit rep's procedure and as the Command layout for every fan-out; INDEX on sonnet; the other three skills after the first live run.", "s": "held"}
      ]
     },
     {

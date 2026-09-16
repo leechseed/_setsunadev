@@ -41,7 +41,7 @@
     }
   ],
   "frago": {
-    "mission": "Stop the recognizer from mangling the house lexicon, **in order to** make every spoken order land clean and retire the garble table's growth.",
+    "mission": "Stop the recognizer from mangling the Command lexicon, **in order to** make every spoken order land clean and retire the garble table's growth.",
     "order": "**Rule the route.** BUILD · INSTALL · PAY.",
     "default": "Silence keeps it parked. Recommendation: BUILD when the token budget allows (one evening); INSTALL is the cheapest in tokens if a front-end checks out on Windows.",
     "calls": [
@@ -74,7 +74,7 @@
               "s": "ruled"
             },
             {
-              "t": "**Whisper has no dictionary.** Two levers: the **initial prompt** (text the model reads before every utterance, biasing spellings toward the house lexicon) and **post-transcription replacement** (a find/replace over the transcript). Every \"custom dictionary\" feature in any Whisper front-end is one or both. A fine-tune is the third lever and unnecessary.",
+              "t": "**Whisper has no dictionary.** Two levers: the **initial prompt** (text the model reads before every utterance, biasing spellings toward the Command lexicon) and **post-transcription replacement** (a find/replace over the transcript). Every \"custom dictionary\" feature in any Whisper front-end is one or both. A fine-tune is the third lever and unnecessary.",
               "s": "ruled"
             },
             {
@@ -105,11 +105,11 @@
         "you": "You pay in one ruling.",
         "next": "The end state is a tool that reads the SOP."
       },
-      "task": "Put the house lexicon in front of the recognizer and the codebook behind it,",
+      "task": "Put the Command lexicon in front of the recognizer and the codebook behind it,",
       "intent": "in order to make every spoken order land clean and stop the garble table growing.",
       "spoken": "\"Creating my own voice library that Claude and VS Code can understand, so we'll stop misunderstanding me as much.\"",
       "endstate": [
-        "A push-to-talk tool on the box that types clean house vocabulary into any window.",
+        "A push-to-talk tool on the box that types clean Command vocabulary into any window.",
         "The lexicon prompt and the replacement table are generated from SOP §0 and §8, never hand-kept.",
         "The garble table stops growing except for new coinages."
       ]

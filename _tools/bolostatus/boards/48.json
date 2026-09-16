@@ -6,7 +6,7 @@
   "issued": "2026-09-11",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "ABORT · BREVITY · HOTLINE ruled 9/11 · 9/16: a new bench opened on Papi's break-break: the word for \"the house\" (the whole operation: BLACK + ORANGE + OPERATOR), ten candidates NASA- or Marine-coded, COMMAND recommended · the close-out word still open (Oscar Mike absorbed it 9/11) · READYROOM · MINT run as defaults",
+  "status": "ABORT · BREVITY · HOTLINE ruled 9/11 · COMMAND ruled 9/16 (the word for the whole operation; \"the house\" retired; in-house → organic) · the close-out word absorbed by Oscar Mike · READYROOM · MINT run as defaults",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP §0 · §5 · the [[soi|SOI]] · every page's masthead",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 48 · SOP §5",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,7 +46,7 @@
  ],
  "frago": {
   "mission": "Hold every unruled word on one sheet with its bench, **in order to** stop naming from happening one interruption at a time in chat.",
-  "order": "**One word for the house.** COMMAND is the recommendation; PROGRAM the NASA alternative. Say it and every \"house standard\" becomes a command standard the same turn.",
+  "order": "Nothing owed. **READYROOM and MINT when you want them.**",
   "default": "Silence: ENDEX stands and Oscar Mike at session end still closes. READYROOM and MINT run as defaults.",
   "calls": [
    {
@@ -80,10 +80,15 @@
     "s": "open"
    },
    {
-    "q": "The word for the house",
+    "q": "The word for the Command",
     "options": "Marine: COMMAND (rec) · MAGTF · MEU · BATTALION · OUTFIT · SHOP · NASA: PROGRAM (rec 2) · AGENCY · CENTER · DIRECTORATE. Sealed ranking: COMMAND · PROGRAM · MAGTF. Flags: AGENCY collides with the creator-agency lane in ORANGE; SHOP collides with the studio; MAGTF and MEU garble in dictation.",
-    "default": "the house stands until spoken; COMMAND when you say it",
+    "default": "the Command stands until spoken; COMMAND when you say it",
     "s": "open"
+   },
+   {
+    "q": "The word for the house",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-16, Papi: \"let's go with command.\" The Command. Rename pass run the same turn across SOP, STATE, BOLO, the SOI, the 05_OPERATIONS standards and seven DOPE SHEETs; BLACK and ORANGE stay trunks."
    }
   ]
  },
@@ -359,7 +364,17 @@
     {
      "when": "9/16",
      "who": "Claude",
-     "t": "Bench of ten delivered in chat and on this sheet: six Marine, four NASA; COMMAND recommended, PROGRAM second, MAGTF third. Bonus: \"in-house\" becomes \"organic\" (the Marine word for assets a unit owns)."
+     "t": "Bench of ten delivered in chat and on this sheet: six Marine, four NASA; COMMAND recommended, PROGRAM second, MAGTF third. Bonus: \"organic\" becomes \"organic\" (the Marine word for assets a unit owns)."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Let's go with command.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "COMMAND written into SOP §5 and the SOI; the rename pass run; the retired-term names (the house tongue) and creator houses left as history."
     }
    ]
   }

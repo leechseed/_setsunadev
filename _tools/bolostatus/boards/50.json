@@ -16,7 +16,7 @@
    },
    {
     "n": 25,
-    "why": "the project flow is a house standard"
+    "why": "the project flow is a Command standard"
    },
    {
     "n": 34,
@@ -24,11 +24,11 @@
    },
    {
     "n": 32,
-    "why": "the marking SOP is a house standard"
+    "why": "the marking SOP is a Command standard"
    },
    {
     "n": 53,
-    "why": "the first house standard filed on this ladder; its rung is provisional until phase 3 here is ruled"
+    "why": "the first Command standard filed on this ladder; its rung is provisional until phase 3 here is ruled"
    }
   ],
   "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
@@ -44,7 +44,7 @@
   {
    "k": "focus",
    "w": "Focus",
-   "line": "One register, tiered the way NASA tiers: policy, procedural requirement, standard, handbook. The house already has all four; it has not called them that."
+   "line": "One register, tiered the way NASA tiers: policy, procedural requirement, standard, handbook. The Command already has all four; it has not called them that."
   },
   {
    "k": "boldness",
@@ -53,23 +53,23 @@
   }
  ],
  "frago": {
-  "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
+  "mission": "Build and keep a networked library of standards, outside and Command-made, at every level from the Command down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
   "order": "**Rest.** No action owed. Naming a gap (BLACK · DARKROOM · the two body names · the twelve orphans) reopens this sheet with a FRAGO; the browsable page opens when the count earns it.",
   "default": "Silence: the ladder, the index, and the three world bodies stand as canon; every new document is born with its rung tag and lands in the index at its next revision.",
   "calls": [
    {
-    "q": "The house tiers",
-    "options": "adopt the NASA four (policy → procedural requirement → standard → handbook) as the house ladder, or the DoD three (STD · HDBK · SPEC), or name your own",
+    "q": "The Command tiers",
+    "options": "adopt the NASA four (policy → procedural requirement → standard → handbook) as the Command ladder, or the DoD three (STD · HDBK · SPEC), or name your own",
     "default": "NASA four, provisional",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: \"let's go with the NASA four.\" Rungs in house words: policy · procedure · standard · handbook. Spec borrowed from DoD as a tag on nodes, not a rung."
+    "ruling": "RULED 9/15, Papi: \"let's go with the NASA four.\" Rungs in Command words: policy · procedure · standard · handbook. Spec borrowed from DoD as a tag on nodes, not a rung."
    },
    {
     "q": "Where it files",
-    "options": "a locus under BVX-LEARN (as now) · a new 05_OPERATIONS/STANDARDS/ domain · both, locus for research and OPERATIONS for the ruled house standards",
-    "default": "the first house standard is filed (BOLO 53, 9/15, in 05_OPERATIONS beside the project flow); the register stays in LOCI; both link once the ladder is ruled",
+    "options": "a locus under BVX-LEARN (as now) · a new 05_OPERATIONS/STANDARDS/ domain · both, locus for research and OPERATIONS for the ruled Command standards",
+    "default": "the first Command standard is filed (BOLO 53, 9/15, in 05_OPERATIONS beside the project flow); the register stays in LOCI; both link once the ladder is ruled",
     "s": "ruled",
-    "ruling": "RULED 9/15 by consequence: both. The register stays in LOCI; the ladder and the ruled house standards live in 05_OPERATIONS. Every document carries a `rung:` frontmatter line."
+    "ruling": "RULED 9/15 by consequence: both. The register stays in LOCI; the ladder and the ruled Command standards live in 05_OPERATIONS. Every document carries a `rung:` frontmatter line."
    },
    {
     "q": "The name",
@@ -121,7 +121,7 @@
    "plain": "What you found, what you asked, and where it stands.",
    "strand": {
     "last": "A deep-research session on standards bodies; a harvest of about 65 links.",
-    "plan": "Bank the harvest, pull what each link holds, organize by domain and tier, map to the house.",
+    "plan": "Bank the harvest, pull what each link holds, organize by domain and tier, map to the Command.",
     "you": "You said every level is a standards organization and this is a campaign.",
     "next": "The register."
    },
@@ -130,11 +130,11 @@
      "label": "The transmission · 9/11",
      "items": [
       {
-       "t": "**\"What I've been doing right now is just the standards of the organization and the process and application of everything.\"** The SOP, the project flow, the marking SOP, the WATCH register, the character system, the lattice: all house standards, none filed as such.",
+       "t": "**\"What I've been doing right now is just the standards of the organization and the process and application of everything.\"** The SOP, the project flow, the marking SOP, the WATCH register, the character system, the lattice: all Command standards, none filed as such.",
        "s": "ruled"
       },
       {
-       "t": "**Every level is a standards body:** the house (BLACK · ORANGE · OPERATOR), and inside the projects: DCUS has rules, Trash Land is a DMZ, ASTRO7EX has a cuisine. \"The greatest dynamic of story is the battle between the individual and society for freedom and standard.\"",
+       "t": "**Every level is a standards body:** the Command (BLACK · ORANGE · OPERATOR), and inside the projects: DCUS has rules, Trash Land is a DMZ, ASTRO7EX has a cuisine. \"The greatest dynamic of story is the battle between the individual and society for freedom and standard.\"",
        "s": "ruled"
       },
       {
@@ -151,12 +151,12 @@
        "s": "done"
       },
       {
-       "t": "**The register landed** — `standards.register.md`: how nine bodies tier their documents · one table of about 65 rows by domain, mapped to house areas (lighting and human factors 12 · quality 9 · aerospace and defense 7 · imaging and print 6 · security and privacy 5 · software and systems 5 · metadata 5 · risk and management 4 · AI 3 · symbols 2 · project management 1 · reference-only 6) · the gaps · the free sources. Every ANSI webstore page returned 403; those rows are built from search snippets and slug decoding, flagged in the Source column.",
+       "t": "**The register landed** — `standards.register.md`: how nine bodies tier their documents · one table of about 65 rows by domain, mapped to Command areas (lighting and human factors 12 · quality 9 · aerospace and defense 7 · imaging and print 6 · security and privacy 5 · software and systems 5 · metadata 5 · risk and management 4 · AI 3 · symbols 2 · project management 1 · reference-only 6) · the gaps · the free sources. Every ANSI webstore page returned 403; those rows are built from search snippets and slug decoding, flagged in the Source column.",
        "s": "done",
        "when": "9/11"
       },
       {
-       "t": "**Three findings that matter:** ESTA's E1.x entertainment-tech standards are free (donation-funded), a clean WARROOM lighting resource · the IES lighting cluster, the harvest's biggest, is paid-only, no free tier · EverySpec plus DLA ASSIST mirror every DoD and NASA directive tier for free, the strongest anchor for the house ladder. NATO NSO's public page 404'd; SAE AS264F's scope is unconfirmed.",
+       "t": "**Three findings that matter:** ESTA's E1.x entertainment-tech standards are free (donation-funded), a clean WARROOM lighting resource · the IES lighting cluster, the harvest's biggest, is paid-only, no free tier · EverySpec plus DLA ASSIST mirror every DoD and NASA directive tier for free, the strongest anchor for the Command ladder. NATO NSO's public page 404'd; SAE AS264F's scope is unconfirmed.",
        "s": "done",
        "when": "9/11"
       }
@@ -166,19 +166,19 @@
      "label": "Since the sheet",
      "items": [
       {
-       "t": "**9/15 · BOLO 53 opened and filed.** The house's own development standard (the boresight → how-copy → build → FRAGO loop as an iterative-incremental life cycle) is on disk beside the project flow. Its rung is STANDARD, provisional: the placement is ruled, the ladder it sits on is not.",
+       "t": "**9/15 · BOLO 53 opened and filed.** The Command's own development standard (the boresight → how-copy → build → FRAGO loop as an iterative-incremental life cycle) is on disk beside the project flow. Its rung is STANDARD, provisional: the placement is ruled, the ladder it sits on is not.",
        "s": "done"
       },
       {
-       "t": "**9/15 · The ladder ruled.** The consult put NASA four against DoD three: DoD's three is only the technical half, with no rung for the SOP-class documents that make up most of what the house has written. NASA four carries the shall/should split that DOCTRINE 0 Invariant III already demands. Papi: \"let's go with the NASA four.\" BOLO 53's standard moved from the provisional STANDARD rung to PROCEDURE the same turn.",
+       "t": "**9/15 · The ladder ruled.** The consult put NASA four against DoD three: DoD's three is only the technical half, with no rung for the SOP-class documents that make up most of what the Command has written. NASA four carries the shall/should split that DOCTRINE 0 Invariant III already demands. Papi: \"let's go with the NASA four.\" BOLO 53's standard moved from the provisional STANDARD rung to PROCEDURE the same turn.",
        "s": "ruled"
       },
       {
-       "t": "**9/15 late · Phase 5 landed.** Three specialists, disjoint sources, one script reviewer: 0 blocking findings, em-dashes advisory. The fiction now rhymes with the house: each world has a body issuing standards on the same four rungs, and each node's dynamic table is the individual-versus-society battle Papi named.",
+       "t": "**9/15 late · Phase 5 landed.** Three specialists, disjoint sources, one script reviewer: 0 blocking findings, em-dashes advisory. The fiction now rhymes with the Command: each world has a body issuing standards on the same four rungs, and each node's dynamic table is the individual-versus-society battle Papi named.",
        "s": "done"
       },
       {
-       "t": "**9/15 late · Phase 6 landed and the campaign's six phases are all done.** The index shows the shape plainly: the house's governance rungs are full and its handbook rung is empty; BLACK and DARKROOM have nothing governing them; only three outside bodies are cited so far (NASA, DoD, PMI) against a register of 65 rows. That gap between the register and the house is the campaign's second season.",
+       "t": "**9/15 late · Phase 6 landed and the campaign's six phases are all done.** The index shows the shape plainly: the Command's governance rungs are full and its handbook rung is empty; BLACK and DARKROOM have nothing governing them; only three outside bodies are cited so far (NASA, DoD, PMI) against a register of 65 rows. That gap between the register and the Command is the campaign's second season.",
        "s": "done"
       }
      ]
@@ -191,17 +191,17 @@
    "kind": "mission",
    "plain": "The task and the reason.",
    "strand": {
-    "last": "The house has been writing standards since 8/21 without a shelf for them.",
+    "last": "The Command has been writing standards since 8/21 without a shelf for them.",
     "plan": "A shelf, a ladder, a network.",
     "you": "You named the edge: standardization and automation as speed.",
     "next": "The register, then the first ruled tier."
    },
-   "task": "Build and keep a networked library of standards, outside and house-made, at every level,",
+   "task": "Build and keep a networked library of standards, outside and Command-made, at every level,",
    "intent": "in order to never decide a format twice, and to give the stories their societies.",
    "spoken": "\"This is almost like a campaign… a giant push to really conquer this area… standardization and automation on our side give us that speed.\"",
    "endstate": [
-    "A register of outside standards by domain, tiered, mapped to the house, with free sources.",
-    "A house ladder (policy · requirement · standard · handbook) with every existing house standard filed on a rung.",
+    "A register of outside standards by domain, tiered, mapped to the Command, with free sources.",
+    "A Command ladder (policy · requirement · standard · handbook) with every existing Command standard filed on a rung.",
     "Each project carries its in-world standards body as canon, reachable from the same register."
    ]
   },
@@ -209,7 +209,7 @@
    "id": "E",
    "name": "Execution",
    "kind": "phases",
-   "plain": "Research first. Nothing house-side is written until the register is read.",
+   "plain": "Research first. Nothing Command-side is written until the register is read.",
    "strand": {
     "last": "Phase 1 landed in minutes.",
     "plan": "Pull, read, rule the ladder, file what exists, then derive.",
@@ -232,7 +232,7 @@
     },
     {
      "n": 3,
-     "t": "**Read and rule the house ladder** — the NASA four, ruled 9/15 after the consult (NASA four versus DoD three).",
+     "t": "**Read and rule the Command ladder** — the NASA four, ruled 9/15 after the consult (NASA four versus DoD three).",
      "s": "done",
      "when": "9/15"
     },
@@ -250,7 +250,7 @@
     },
     {
      "n": 6,
-     "t": "**The network** — flat index in the ladder file: table 1 by document (26 rows, grouped by rung, house parents and outside parents) · table 2 by outside body (NASA · DoD DSP · PMI) · table 3 by level and world (11 rows, the standards body of each, the empty rungs named) · six gaps written as observations. Reviewer: 0 blocking. The browsable page waits on the count.",
+     "t": "**The network** — flat index in the ladder file: table 1 by document (26 rows, grouped by rung, Command parents and outside parents) · table 2 by outside body (NASA · DoD DSP · PMI) · table 3 by level and world (11 rows, the standards body of each, the empty rungs named) · six gaps written as observations. Reviewer: 0 blocking. The browsable page waits on the count.",
      "s": "done",
      "when": "9/15"
     }
@@ -343,7 +343,7 @@
      "label": "Who decides",
      "items": [
       {
-       "t": "**Papi** — the ladder · where it files · the campaign name · every house standard's ruling. **Claude** — the pull, the register, the filing pass, the derivations.",
+       "t": "**Papi** — the ladder · where it files · the campaign name · every Command standard's ruling. **Claude** — the pull, the register, the filing pass, the derivations.",
        "s": "open"
       }
      ]
@@ -352,7 +352,7 @@
      "label": "The gate",
      "items": [
       {
-       "t": "**Research phase.** Nothing house-side is written until the register is read and the ladder ruled.",
+       "t": "**Research phase.** Nothing Command-side is written until the register is read and the ladder ruled.",
        "s": "held"
       }
      ]
@@ -408,7 +408,7 @@
     {
      "when": "9/15",
      "who": "Claude",
-     "t": "Ladder file written in 05_OPERATIONS; rung tags stamped across the house documents (first filing pass); BOLO 53's rung moved to procedure; FRAGO 50 v0.3 and FRAGO 53 pushed."
+     "t": "Ladder file written in 05_OPERATIONS; rung tags stamped across the Command documents (first filing pass); BOLO 53's rung moved to procedure; FRAGO 50 v0.3 and FRAGO 53 pushed."
     },
     {
      "when": "9/15",

@@ -17,7 +17,7 @@ Finds this session's transcript (or pass the session id prefix), writes `_tools/
 
 ## H1 · One specialist
 
-Launch **NOTE** (haiku) with the brief verbatim. It writes the session note into `_CACHE/` in the house shape (transmission · built · ruled · measured · memory · **Open at close** · **AAR** · `- Oscar Mike.`). It reads nothing else and touches nothing else.
+Launch **NOTE** (haiku) with the brief verbatim. It writes the session note into `_CACHE/` in the Command shape (transmission · built · ruled · measured · memory · **Open at close** · **AAR** · `- Oscar Mike.`). It reads nothing else and touches nothing else.
 
 ## H2 · The main line's judgment (~3 KB read)
 
