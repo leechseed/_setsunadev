@@ -220,7 +220,7 @@ The spine covers the STRUCTURE axis. Papi ordered the full milieu same session; 
 ## OPEN
 
 - Spine-address notation (`SPINE.Lx`) — provisional, awaiting Papi's ruling.
-- Egri / Poetics / Field acquisitions → BVX.1107+ queue.
+- Egri / Poetics / Field acquisitions → BVX.1107+ queue. **9/16 (BOLO 18 wave 2): Vogler *The Writer's Journey* and Field *Screenplay* are not in the library at all; the StC shelf holds Brody's novel edition (0164), not Snyder's original. Acquisition queue: Snyder · Vogler · Field · Egri · Aristotle.**
 - Distills beyond BVX.0064: *Story* (0175), *Anatomy of Story* (0193), *Story Grid* (0236) are the highest-leverage next reads for the tree.
 - THE GAP (3,768 z-lib favorites, unindexed) — story-craft holdings inside it unknown; the spine addresses them at ingest.
 
