@@ -31,7 +31,6 @@ Nothing moves on these until you rule. Ordered by what they unblock.
 | # | Decision | Unblocks |
 |---|---|---|
 | **8** | **The 03/03 domain numbering** — `03_SETTING_SYSTEMS/` (stood up 8/25) vs pre-reserved empty `03_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` also reserved. One rename either way | plot_systems' home; clean SSOT numbering before the L4 deepening lands |
-| **10** | **RULED 2026-09-16: D-9 GO, staged clear** (Papi: "rule D9 go"; twelve days on hold). Row stays until Oscar Mike moves it. Was: the BOLO 24 boresight HOLD converted 2026-09-04. Three legal answers under the flow: clear delivery · re-hold with a date · NO-GO. D-5 nut · D-6 frame · D-7 mother/year · D-8 refs · D-10 intent · D-11 lane ride with it | the studio design pass; the flow's own hold rule (an undated hold is the stall pattern) |
 | **11** | **BOLO 29 — confirm the reward-vs-risk reading and clear delivery.** Research banked `_PRIVATE/BOLO-29-research.md` | the three-way ranking 24 / 27 / 29 and the 90-day ballpark |
 | **12** | **BOLO 35 — the story-timeline boresight: four questions + the clear** (delivery shape · the data · the music subject code MUS vs CRE · the "just consult end" read). Card: [oscar-mike/story-timeline.md](oscar-mike/story-timeline.md) | the three-part head version (UI read · score vs patch · the syllabus) → BOLO 36 (syllabus → intake → the grammar) |
 | **13** | **BOLO 37 — name the proword selection loop (bench: MINT rec · BREVITY · SOI · CALLSIGN · LEXICON) and answer its three spec gaps** (reveal timing · five-of-ten · placement) | the first build; BOLO 38 (the sit rep as a CK3-style front page) sizes off gap 3; the five benched prowords (RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR) wait in it |
@@ -137,6 +136,15 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 | **§N Interaction Economy** | ✅ Researched + distilled 2026-08-16. Principle 8 rescinded, niche selection reopened (ledger 11), practice productization tabled (ledger 12). | [ULTRASIN-interaction-economy.md](ULTRASIN-interaction-economy.md) |
 
 ---
+
+## ✅ Moved 2026-09-16 (D-9 GO · D-6 YES · the Command · BOLO 55 the document layout · FRAGO 51)
+
+- **D-9 RULED GO, staged clear** (Papi: "rule D9 go"; twelve days on hold, five boards): charter ledger, BOLO row 24, the SOI and DOPE SHEET 24 (v0.2 → v0.4) updated; Blocked #10 off this table. The three no-dependency deliverables landed the same session: `_PRIVATE/BOLO-24-benchmarks.md` un-held · `_PRIVATE/BOLO-24-blender-pipeline-coa.md` (COA on sonnet; COA A fully free recommended, skin-shader spend held for Gate 3) · `_PRIVATE/BOLO-24-reference-pull-spec.md` (SPEC on sonnet; five core seats, three filled from the register). The character sheet waits on D-7; the gates table on D-5.
+- **D-6 RULED YES** ("D6 yes"): the disclosed 3D persona is the believability bar; closed the first open question on both new files.
+- **COMMAND RULED** ("let's go with command"; bench of ten on BOLO 48, six Marine, four NASA): the whole operation is the Command; "the house" retired; "organic" replaces in-house; BLACK and ORANGE stay trunks. SOP §5 line, SOI term `command`, rename pass across 18 files, seven sheets and the SITREP; memory `the-command.md` written.
+- **BOLO 55 opened and RULED** (Papi's break-break: the sheet header "way too big", "refer to NASA and DoD"): the DOPE SHEET document layout on the NPR / DoDI pattern (one-strip masthead · boxed front matter · numbered sections in one scroll · the calls as a decisions table · contents column with scroll-spy · narrow rail) — `_tools/bolostatus/template.html` (old layout kept as `template-v1.html`, `build.py --v1`). Ruled one page · rail kept, 248 px · v2 the default. All 14 sheets rebuilt; 13 republished on "pay it" (13 reads, about 25k tokens each). Sheet 45's URL recovered into `_tools/pages/pages.json`. Left: the SITREP template on the same layout.
+- **FRAGO 51 v0.5 → v0.6**: first live runs logged (phase 9), phase 3 unlocked, phase 1 shows what is ruled; the four bolostatus scripts print UTF-8 on Windows. Four doctrine calls still open (instrument · name · cadence · the force order); tonight's 15 gate reads (about 375k tokens) are the case for the force order.
+- **Sit rep 2026-09-16**: the formation's second live run, one round, 212k specialist tokens; FRAGO'd by hand at close (Blocks 0, V, VI; leverage line "Rule D-7") and republished v15.
 
 ## ✅ Moved 2026-09-15 (the formation's first live run · BOLO 53 opened · the NASA four · BOLO 50 phases 3–6)
 

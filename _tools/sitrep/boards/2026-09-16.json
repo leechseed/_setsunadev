@@ -29,33 +29,29 @@
   "stats": [
    {
     "k": "blocked on you",
-    "v": "8 rows"
+    "v": "7 rows (D-9 off tonight)"
    },
    {
-    "k": "D-9 idle",
-    "v": "12 days (HOLD converted 9/4)"
+    "k": "rulings tonight",
+    "v": "D-9 GO · D-6 YES · COMMAND · BOLO 55 (3 calls)"
    },
    {
-    "k": "BOLOs done, not moved",
-    "v": "17"
+    "k": "sheets republished",
+    "v": "14 on the document layout"
    },
    {
     "k": "agents in flight",
-    "v": "3 (haiku RACK · sonnet INDEX · haiku WATCH)"
+    "v": "0 (5 ran: RACK · INDEX · WATCH · COA · SPEC)"
    },
    {
-    "k": "specialist tokens",
-    "v": "212k (48k · 90k · 74k)"
-   },
-   {
-    "k": "commits since last board",
-    "v": "12"
+    "k": "reads paid to the gate",
+    "v": "15, about 375k tokens"
    }
   ],
-  "main_effort": "Rule D-9.",
+  "main_effort": "Rule D-7 (D-9 went GO 9/16).",
   "build": {
-   "calls": "3 specialists + 2 script passes",
-   "rounds": "1 (no re-runs)"
+   "calls": "3 specialists + 2 script passes, then a FRAGO by hand",
+   "rounds": "2 (the FRAGO)"
   }
  },
  "blocks": [
@@ -63,14 +59,44 @@
    "id": "0",
    "name": "Last session",
    "kind": "list",
-   "plain": "The sit rep formation's first live run on 9/15–9/16 closed BOLO 50 with all six phases complete and ruled BOLO 53 with all three calls approved, holding three S12 invariants across DCUS, Trash Land, and ASTRO7EX. Board v12 was published with DOPE SHEET 53 (development standard v0.1.2) and DOPE SHEET 50 (standards ladder v0.2.0), and the standards body nodes for all three worlds were indexed in _CANON_NODES/. Three blockers caught by specialists (glossary keys, unparsed BOLO ranges, stale PMCS row) were fixed in parallel with no rework needed on the third pass.",
+   "plain": "The 9/16 session ruled D-9 GO and D-6 YES on the ORANGE launch, named the whole operation the Command, and rebuilt every DOPE SHEET on a document layout after Papi broke on the old header. Before that, the formation's first live runs on 9/15 into 9/16 closed BOLO 50 and ruled BOLO 53. The staged clear's three deliverables landed the same session D-9 was ruled.",
    "strand": {
-    "last": "You ordered the sit rep live run to close BOLO 50 and rule BOLO 53 with six transmissions from 02:29–03:58. The formation ran all phases in parallel with three-world S12 invariants, published the development standard and ladder, and indexed the complete network; session closed with Oscar Mike at 04:09.",
+    "last": "D-9 went GO after twelve days; D-6 YES; COMMAND ruled; BOLO 55 opened, ruled and executed across all 14 sheets.",
     "plan": "Close BOLO 50 phases 1–6, rule BOLO 53 all three calls, hold S12 invariants. Silent defaults: Trash Land reading B · ASTRO7EX reading A · moon question unruled. Session close with Oscar Mike.",
-    "you": "Six transmissions ordering phases and variants; consult on NASA four vs DoD three (approved NASA); \"keep all three\" S12 invariants 03:28; \"close that open call\" 03:58. No items owed Papi at close.",
-    "next": "BOLO 50 at rest (phases 1–6 done, two reading picks and moon unruled). BOLO 53 filed at PROCEDURE. Formation pattern proven; ready for next BOLO phase."
+    "you": "You ruled D-9, D-6, COMMAND, the document layout (one page, rail kept, v2 default), and paid 13 reads to push it everywhere.",
+    "next": "D-7 and D-5 unlock the rest of the design set. The four doctrine calls on sheet 51 and the SITREP template on the document layout are the open work."
    },
    "items": [
+    {
+     "t": "**[[d9|D-9]] RULED GO, staged clear** — after twelve days on hold and five boards naming it. All three no-dependency deliverables landed the same session: the benchmark read un-held, the Blender pipeline COA (COA A, fully free, recommended), the reference-pull spec (five seats, three filled from the register). DOPE SHEET 24 v0.4.",
+     "trunk": "ORANGE",
+     "s": "ruled",
+     "when": "9/16"
+    },
+    {
+     "t": "**D-6 RULED YES** — the disclosed 3D persona is the believability bar. It closed the first open question on both new BOLO 24 files. The character sheet now waits on D-7 alone; the gates table on D-5.",
+     "trunk": "ORANGE",
+     "s": "ruled",
+     "when": "9/16"
+    },
+    {
+     "t": "**COMMAND ruled as the word for the whole operation** — bench of ten on BOLO 48 (six Marine, four NASA); \"the house\" retired; \"organic\" replaces in-house; BLACK and ORANGE stay trunks. Rename pass across 18 files, seven sheets and the [[soi|SOI]] the same turn.",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "9/16"
+    },
+    {
+     "t": "**BOLO 55 opened and ruled: the DOPE SHEET document layout** — Papi's break-break on the old header; a new template on the NASA NPR and DoD Instruction pattern (one-strip masthead · boxed front matter · numbered sections in one scroll · the calls as a decisions table · a narrow rail). Ruled one page, rail kept, v2 the default. All 14 sheets rebuilt and republished on \"pay it\" (13 reads, about 325k tokens).",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "9/16"
+    },
+    {
+     "t": "**FRAGO 51 v0.6** — the first live runs logged, phase 3 (the system boresight) unlocked, four doctrine calls still open (instrument · name · cadence · the force order). The four bolostatus scripts now print UTF-8 on Windows.",
+     "trunk": "OPERATOR",
+     "s": "open",
+     "when": "9/16"
+    },
     {
      "t": "**Formation first live run: all phases closed, blockers caught and fixed in parallel** — Three findings (glossary keys · unparsed BOLO ranges · stale PMCS row) each flagged by specialist and fixed independently; clean on third pass. Cross-session artifact gate cost two full reads (~22–25k tokens each); corrected frago skill note. Rung-stamping script rewritten to file, assemble.py patched for cp1252. SOP §8 gained three garble rows.",
      "trunk": "BLACK",
@@ -578,12 +604,12 @@
    "id": "V",
    "name": "Blocked on you",
    "kind": "numbered",
-   "plain": "Eight decisions only you can make, in the order the table lists them — the order of what they unblock. Most are one word. Say it and the work moves the same turn.",
+   "plain": "Seven decisions only you can make, in the order the table lists them — the order of what they unblock. Most are one word. Say it and the work moves the same turn.",
    "strand": {
-    "last": "No rulings landed on this table since the last pass — same eight decisions, same order. D-9 has now gone the longest of anything still sitting on it.",
-    "plan": "Table order is unblock order. The 03/03 numbering sits first because it clears the ground before the L4 deepening; D-9 sits second because it gates the whole ORANGE launch chain.",
-    "you": "Eight decisions remain; two are single words, three are cheap draft batches. None came off this table this pass.",
-    "next": "Say \"D-9 go\", \"D-9 hold to [date]\", or \"D-9 no-go\" — it has now gone the longest of anything still open here."
+    "last": "D-9 came off this table tonight, ruled GO after the longest wait of anything on it. Seven rows remain.",
+    "plan": "Table order is unblock order. The 03/03 numbering sits first because it clears the ground before the L4 deepening; BOLO 46 is priority one by your word.",
+    "you": "You ruled D-9 and D-6 tonight. Seven remain; two are single words, three are cheap draft batches.",
+    "next": "Two numbers behind the launch now live on DOPE SHEET 24, not here: D-7 the loss, D-5 the runway. Then the 12 Telling Profile rulings on BOLO 46."
    },
    "items": [
     {
@@ -592,13 +618,6 @@
      "what": "`03_SETTING_SYSTEMS/` (stood up 8/25) vs the pre-reserved empty `03_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` also reserved. One rename either way.",
      "unblocks": "plot_systems' home; clean SSOT numbering before the L4 deepening lands.",
      "trunk": "BLACK"
-    },
-    {
-     "n": 10,
-     "title": "[[d9|D-9]]",
-     "what": "The BOLO 24 boresight HOLD, converted 2026-09-04, still has no call. Three legal answers: clear delivery · re-hold with a date · NO-GO.",
-     "unblocks": "The studio design pass; the flow's own hold rule (an undated hold is the stall pattern).",
-     "trunk": "ORANGE"
     },
     {
      "n": 11,
@@ -650,13 +669,13 @@
    "kind": "line",
    "plain": "The one action that moves the most. Not the biggest project, not the newest. The single word with the longest shadow.",
    "strand": {
-    "last": "The formation ran live for the first time and closed BOLO 50 and ruled BOLO 53 in one pass. The board now costs a few thousand tokens instead of fifty thousand. D-9 was not decided.",
-    "plan": "Keep naming it until it is ruled or struck. A NO-GO is a legal answer and ends the stall as cleanly as a GO.",
-    "you": "Since 9/3 you have built the launch's cases, register, tag rail, dashboards, the formation, and now the standards campaign that governs all of it. The launch itself still has no clear.",
-    "next": "One word on D-9. Then Block C is the hands-on work behind it, thirteen days idle."
+    "last": "D-9 was the line for five boards. It went GO tonight and the staged clear landed in the same session.",
+    "plan": "Name the next gate the moment the last one clears. The design set has two numbers left.",
+    "you": "You cleared the launch and named the operation in one night.",
+    "next": "D-7 unlocks the character sheet; D-5 the gates table. Then Block C, still the hands-on work behind the launch."
    },
-   "line": "Rule [[d9|D-9]].",
-   "why": "Fifth board in a row. One word (GO · a dated HOLD · NO-GO) turns everything ORANGE built since 9/3 into a launch with a clear. The undated hold is the [[stall-pattern|stall pattern]] by name; the machine that reports on it is now finished and cheap, so the only thing left between the board and the launch is the answer. [[block-c|Block C]] \"marked\" is the hands-on work behind it."
+   "line": "Rule D-7.",
+   "why": "D-9 cleared tonight; the character sheet is the next thing on the launch's critical path and it waits on one answer, the loss and its year. D-5 (the runway) is the other number and gates the gates table. [[block-c|Block C]] \"marked\" is still the hands-on work behind all of it, thirteen days idle."
   },
   {
    "id": "VII",
