@@ -95,6 +95,12 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.0273` | Hall — Writing Deep Point of View | TEXTURE | 3 | ✅ 9/16 · the distance dial operationalized; barrier words as a countable T6 instrument | 5 (texture) |
 | `BVX.0084` | Kempton — Dialogue | TEXTURE | 3 | ✅ 9/16 · the seven-function test; never says "subtext" | 5 (texture) |
 | `BVX.0279` | Iglesias — Writing for Emotional Impact | TEXTURE L4 | 4 | ✅ 9/16 · T7's mood curve as named reader emotions plus the payoff owed | 5 (texture) |
+| `BVX.0191` | Truby — The Anatomy of Genres | L7 L6 L4 | 4 | ✅ 9/16 · genre as moral argument; the fixed chapter schema = the GENRE CARD; an orphan PDF (storage P2HPYRFK, no Zotero record) | 6 (genre) |
+| `BVX.0576` | Selbo — Film Genre for the Screenwriter | L7 | 4 | ✅ 9/16 · the ICM, genre as audience cognition; component lists; overriding/supporting genre | 6 (genre) |
+| `BVX.0580` | Neale — Genre and Hollywood | L7 | 4 | ✅ 9/16 · genre as process, industry/text/audience; the two verisimilitudes; market as risk | 6 (genre) |
+| `BVX.0581` | Bawarshi & Reiff — Genre: An Introduction | L7 L0 | 4 | ✅ 9/16 · genre as typified social action; the three traditions; the Command's contract reading located (Literary-Structuralist) | 6 (genre) |
+| `BVX.0614` | Todorov — The Fantastic | L7 L0 | 4 | ✅ 9/16 · genre by reader position; the hesitation spectrum; rot: Zotero authors wrong (Reeder) | 6 (genre) |
+| `BVX.0599` | Mendlesohn — Rhetorics of Fantasy | L7 TEXTURE SETTING | 4 | ✅ 9/16 · the four delivery modes; OXO is an immersive fantasy | 6 (genre) |
 
 Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
 

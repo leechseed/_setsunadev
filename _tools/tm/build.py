@@ -35,6 +35,8 @@ LAYER_TERM_MAP = {
     "L7": "l7-origin", "L8": "l8-imprint", "L9": "l9-eros", "L10": "l10-shadow", "L11": "l11-destiny", "L12": "l12-function",
     "T1": "t1-voice", "T2": "t2-focalization", "T3": "t3-order", "T4": "t4-duration", "T5": "t5-frequency", "T6": "t6-words",
     "T7": "t7-feeling", "T8": "t8-thresholds", "T9": "t9-frames", "T10": "t10-narratee", "T11": "t11-medium", "T12": "t12-function",
+    "G1": "g1-label", "G2": "g2-family", "G3": "g3-contract", "G4": "g4-argument", "G5": "g5-stance", "G6": "g6-delivery",
+    "G7": "g7-verisimilitude", "G8": "g8-world", "G9": "g9-uptake", "G10": "g10-audience", "G11": "g11-market", "G12": "g12-function",
 }
 
 
