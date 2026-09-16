@@ -617,6 +617,23 @@ def main():
     assert tpl.count("/*__DATA__*/null") == 1, "template.html must contain exactly one /*__DATA__*/null slot"
     frag = tpl.replace("/*__DATA__*/null", text_json).replace("<title>TM</title>", f"<title>TM {esc(nn)} · {esc(title)}</title>")
 
+    # the document is written into the fragment STATICALLY: the artifact host renders <pre class="mermaid"> only in the
+    # DOM it receives, never in markup a script injects later (found 9/16: the diagrams showed as text).
+    tr_html = (f'<span class="tr"><span class="{"b" if tm.get("trunk") == "BLACK" else "o"}">{esc(tm["trunk"])}</span></span>' if tm.get("trunk") else "")
+    page = [f'<h1 class="dt"><small>TM {esc(tm["n"])} · technical manual · {esc(tm.get("version") or "")}</small>{esc(tm["title"])}<em>{esc(tm.get("subtitle") or "")}</em></h1>',
+            '<dl class="fm">',
+            f'<dt>System</dt><dd>TM {esc(tm["n"])} {tr_html}</dd>',
+            f'<dt>Version · updated</dt><dd>{esc(tm.get("version") or "")} · {esc(tm.get("last_updated") or "")}</dd>',
+            f'<dt>Status</dt><dd>{tm.get("status_html") or esc(tm.get("status") or "")}</dd>',
+            f'<dt>Path</dt><dd class="path">{esc(tm["path"])}</dd>',
+            '</dl>']
+    for s in sections_out:
+        no = f'<span class="no">{esc(s["no"])}</span>' if s["no"] else ""
+        src = f'<span class="src">{esc(s["src"])}</span>' if s["src"] else ""
+        page.append(f'<section class="sec {"pre" if s["pre"] else ""}" id="{s["id"]}"><div class="sh">{no}<h2>{esc(s["name"])}</h2>{src}</div>{s["html"]}</section>')
+    assert frag.count('<div class="page" id="page"></div>') == 1, "template.html must contain the empty #page div"
+    frag = frag.replace('<div class="page" id="page"></div>', '<div class="page" id="page">' + "\n".join(page) + '</div>')
+
     out_dir = os.path.join(HERE, "out")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, f"TM-{nn}.html")

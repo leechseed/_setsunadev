@@ -262,8 +262,8 @@ $('#mState').innerHTML = `<span class="chip st-${T.state}">${esc(T.state_label)}
 $('#mVer').textContent = `${T.version || ''} · ${T.last_updated || ''}`;
 $('#footR').textContent = `${T.short} · ${T.path}`;
 
-/* ---- the document (sections arrive pre-rendered from build.py) ---- */
-$('#page').innerHTML = `
+/* ---- the document: build.py writes it into the fragment statically (the host renders <pre class="mermaid"> only in static DOM); the JS fills it only if the build left it empty ---- */
+if (!$('#page').children.length) $('#page').innerHTML = `
   <h1 class="dt"><small>TM ${esc(T.n)} · technical manual · ${esc(T.version || '')}</small>${esc(T.title)}<em>${esc(T.subtitle || '')}</em></h1>
   <dl class="fm">
     <dt>System</dt><dd>TM ${esc(T.n)} ${T.trunk ? `<span class="tr"><span class="${T.trunk === 'BLACK' ? 'b' : 'o'}">${esc(T.trunk)}</span></span>` : ''}</dd>
