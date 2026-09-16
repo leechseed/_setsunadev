@@ -18,8 +18,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | PDF present on disk | 1024 |
 | Already in catalog.json (BVX id) | 766 |
 | **New since the Dec-2023 catalog** | **265** |
-| Story-side (CRE + LIT by catalog) | 270 |
-| **Spine-keyed from Papi's tags** | **208** |
+| Story-side (CRE + LIT by catalog) | 292 |
+| **Spine-keyed from Papi's tags** | **605** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
 
@@ -27,36 +27,37 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Level | Items |
 |---|---|
-| L4 | 59 |
-| TEXTURE | 56 |
-| L5 | 45 |
-| L7 | 34 |
-| SETTING | 14 |
-| L6 | 11 |
-| L0 | 2 |
+| L7 | 174 |
+| L4 | 162 |
+| SETTING | 154 |
+| TEXTURE | 105 |
+| L5 | 82 |
+| L6 | 27 |
+| L0 | 27 |
+| CRAFT-PROCESS | 23 |
 
 ## By catalog subject
 
 | Subject | Items |
 |---|---|
-| NEW | 265 |
-| CRE | 182 |
-| GAM | 127 |
-| LIT | 88 |
-| VIS | 77 |
-| MSX | 70 |
-| TEC | 47 |
-| BIZ | 35 |
+| GAM | 235 |
+| CRE | 197 |
+| LIT | 95 |
+| NEW | 88 |
+| VIS | 85 |
+| MSX | 82 |
+| TEC | 53 |
+| BIZ | 45 |
+| FIT | 24 |
+| PHI | 24 |
 | SOC | 23 |
-| FIT | 22 |
 | PRD | 19 |
-| PHI | 19 |
 | POL | 16 |
 | PRF | 15 |
 | MIL | 12 |
-| DSN | 8 |
+| DSN | 11 |
+| SLF | 4 |
 | PSY | 3 |
-| SLF | 3 |
 
 ## All tags
 
@@ -161,7 +162,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2021 | Dungeons & Dragons. Strixhaven: a curriculum of chaos |  |  |
 |  | Energy Management of a Servomotor: Effects of Inertia Ratio | Gill |  |
 |  | EXPLORATION AND COLONY SPACECRAFTTM | Pulver, Jason, Vetromile, Barr |  |
-| 2012 | Exposure | Freeman, Wignall | 080009 - PHOTOGRAPHY |
 | 2009 | Fashion: the key concepts | Craik |  |
 | 2021 | Games as texts: a practical application of textual analysis to games | Cole, Barker |  |
 | 2024 | Generating Long-form Story Using Dynamic Hierarchical Outlining with M | Wang, Hu, Li, Wang |  |
@@ -293,6 +293,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Marketing Director T LEONARD BALSERA Director of Sales T ROSS JEPSON A | Brackin, West, Holschuh, Smirl |  |
 | 1995 | Metafiction | Currie | 02_PLOT SYUHZET |
 | 2014 | Metaphor | Donoghue |  |
+| 2012 | Michael Freeman's Photo School: Exposure | Freeman, Wignall | 080009 - PHOTOGRAPHY |
 | 2012 | Microsoft manual of style | Microsoft Corporation |  |
 | 2012 | Microsoft manual of style: your everyday guide to usage, terminology,  | Woolley, Microsoft Corporation |  |
 | 2022 | Minecraft basics | Stay, Stay, Stay |  |

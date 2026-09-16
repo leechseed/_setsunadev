@@ -368,10 +368,10 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0563 | LIT | Characters in fictional worlds: understanding imaginary beings in litera | Eder, Jannidis, Schneider | 2010 | tag |  |
 | NEW | LIT | Curse of Strahd: unravel the mysteries of Ravenloft in this dread advent | Perkins, Crawford, Mearls, | 2016 | tag |  |
 | BVX.0577 | LIT | Film genre: from iconography to ideology | Grant | 2007 | tag |  |
-| BVX.0580 | LIT | Genre and Hollywood | Neale | 2012 | tag |  |
-| BVX.0581 | LIT | Genre: an introduction to history, theory, research, and pedagogy | Bawarshi, Reiff | 2010 | tag |  |
-| BVX.0599 | LIT | Rhetorics of fantasy | Mendlesohn | 2008 | tag |  |
-| BVX.0614 | LIT | The Fantastic: A Structural Approach to a Literary Genre | Reeder, Todorov, Howard | 1976 | tag |  |
+| BVX.0580 | LIT | Genre and Hollywood | Neale | 2012 | tag | ✅ |
+| BVX.0581 | LIT | Genre: an introduction to history, theory, research, and pedagogy | Bawarshi, Reiff | 2010 | tag | ✅ |
+| BVX.0599 | LIT | Rhetorics of fantasy | Mendlesohn | 2008 | tag | ✅ |
+| BVX.0614 | LIT | The Fantastic: A Structural Approach to a Literary Genre | Reeder, Todorov, Howard | 1976 | tag | ✅ |
 | BVX.0620 | LIT | The Noir Thriller | Horsley | 2009 | tag |  |
 | BVX.0626 | LIT | The Routledge companion to cyberpunk culture | McFarlane, Murphy, Schmein | 2020 | tag |  |
 | BVX.0632 | LIT | The Routledge Companion to Literature and Class | McMillan | 2021 | tag |  |
@@ -451,7 +451,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0564 | LIT | Complex Serial Drama and Multiplatform Television | Dunleavy |  | rule |  |
 | BVX.0564 | LIT | Complex Serial Drama and Multiplatform Television | Dunleavy |  | rule |  |
 | BVX.0571 | LIT | Dimensions of science fiction | Bainbridge | 1986 | rule |  |
-| BVX.0576 | LIT | Film genre for the screenwriter | Selbo | 2015 | rule |  |
+| BVX.0576 | LIT | Film genre for the screenwriter | Selbo | 2015 | rule | ✅ |
 | BVX.0579 | LIT | Film genre reader IV | Grant | 2012 | rule |  |
 | NEW | LIT | Guide to Literary Agents | Brewer | 2021 | toc |  |
 | BVX.0604 | LIT | Shakespeare’s Serial Returns in Complex TV | Wald | 2020 | rule |  |
@@ -603,7 +603,7 @@ All 1031 items. Authority: Papi's tags · a PS TOC pass · title rules · subjec
 | BVX.0438 | GAM | GURPS High-Tech: Adventure Guns | Games |  | toc |  |
 | BVX.0438 | GAM | GURPS High-Tech: Adventure Guns | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: Constantinople, 527-1204 A.D. | Games |  | toc |  |
-| BVX.1122 | GAM | GURPS Hot Spots: Renaissance Venice | Games |  | toc | ✅ |
+| NEW | GAM | GURPS Hot Spots: Renaissance Venice | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: Renaissance Venice | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: Sriwijaya | Games |  | toc |  |
 | NEW | GAM | GURPS Hot Spots: The Silk Road | Games |  | toc |  |

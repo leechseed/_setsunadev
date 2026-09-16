@@ -11,7 +11,8 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.pat
 META = os.path.join(ROOT, "_0.1_BVX_LEARN", "_meta")
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.expanduser("~"), "Zotero", "zotero.sqlite")
 STORAGES = [os.path.join(os.path.dirname(SRC), "storage"),
-            r"D:\My Google Drive\ZOTERO_DATA_DIRECTORY\storage"]  # live first, the Dec-2023 Drive copy as fallback
+            r"D:\My Google Drive\ZOTERO_DATA_DIRECTORY\storage",  # live first, the Dec-2023 Drive copy as fallback
+            r"C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP"]  # the drop folder (9/16): acquisitions land here, no Zotero filing; drop_scan() below picks them up
 
 # Papi's 2023 tag scheme (00_ .. 09_) -> the story spine (ssot_01_story_spine_comparative_tree) - provisional 9/16
 TAG2SPINE = {"00_THEORY OF COMPOSITION": "L0", "01_THEME": "L6", "02_PLOT": "L4", "02_PLOT SYUHZET": "L4",
@@ -22,6 +23,37 @@ TAG2SPINE = {"00_THEORY OF COMPOSITION": "L0", "01_THEME": "L6", "02_PLOT": "L4"
 
 def norm(t):
     return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()[:80]
+
+
+def drop_scan(cat_by_title, today):
+    """The drop folder (9/16): every PDF under STORAGES[2] becomes an item with no Zotero record, src "drop".
+    Title/author/year are guessed from the filename (Zotero export 'Author - Year - Title.pdf' or 'Title (Author).pdf' or
+    z-lib 'Title (Author)ISBN (Z-Library).pdf'); the sweep keys them like any other row (bvx NEW until cataloged)."""
+    root = STORAGES[2]; out = []
+    if not os.path.isdir(root):
+        return out
+    for dp, _, fs in os.walk(root):
+        for f in sorted(fs):
+            if not f.lower().endswith(".pdf"):
+                continue
+            stem = re.sub(r"\s*\(Z-Library\)|\s*9\d{12}|\s*\d{13}", "", f[:-4]).strip()
+            year = (re.search(r"(1[89]\d\d|20\d\d)", stem) or [None, ""])[1] if re.search(r"(1[89]\d\d|20\d\d)", stem) else ""
+            m = re.match(r"^(.+?) - (\d{4}) - (.+)$", stem)
+            if m:
+                authors, title = [a.strip() for a in re.split(r",| and | & ", m.group(1)) if a.strip()], m.group(3).strip()
+            else:
+                m2 = re.match(r"^(.+?)\s*\(([^()]+)\)\s*$", stem)
+                if m2:
+                    title, authors = m2.group(1).strip(), [a.strip() for a in re.split(r",| and | & ", m2.group(2)) if a.strip()]
+                else:
+                    title, authors = stem, []
+            c = cat_by_title.get(norm(title))
+            out.append({"zid": None, "zkey": "", "type": "drop", "title": title, "authors": authors[:4], "year": year,
+                        "publisher": "", "isbn": "", "pages": "", "abstract": False, "tags": [], "collections": [], "spine": [],
+                        "has_pdf": True, "pdf_exists": True, "pdf": os.path.join(dp, f), "annotations": 0, "notes": [],
+                        "bvx": c["id"] if c else None, "subject": c["primary"] if c else None,
+                        "added": today, "modified": today, "src": "drop"})
+    return out
 
 
 def main():
@@ -86,6 +118,32 @@ def main():
                       "annotations": ann.get(iid, 0), "notes": notes[iid],
                       "bvx": c["id"] if c else None, "subject": c["primary"] if c else None,
                       "added": r["dateAdded"][:10], "modified": r["dateModified"][:10]})
+    # carry the sweep's own fields across regenerations (9/16 finding: the PS TOC keys and repaired titles lived only in
+    # this file; regenerating from the DB silently dropped them). Matched by zkey; the DB never wins over a sweep field.
+    prev_p = os.path.join(META, "inventory-live.json")
+    if os.path.exists(prev_p):
+        prev = {i.get("zkey") or i.get("pdf"): i for i in json.load(io.open(prev_p, encoding="utf-8"))}
+        carried = 0
+        for i in items:
+            o = prev.get(i["zkey"])
+            if not o:
+                continue
+            for k in ("spine", "spine_src", "subject", "subject_src", "junk_title", "rot"):
+                if k in o:
+                    i[k] = o[k]
+            if o.get("spine_src") in ("toc", "toc-off") and o.get("title") and o["title"] != i["title"]:
+                i["title"] = o["title"]  # a PS-repaired boilerplate title
+            carried += 1
+        print(f"carried sweep fields for {carried} items from the previous inventory")
+    drops = drop_scan(cat_by_title, str(datetime.date.today()))
+    items += drops
+    # rot notes live in _meta/rot.json (9/16) so they survive every regeneration of this file
+    rp = os.path.join(META, "rot.json")
+    if os.path.exists(rp):
+        rot = json.load(io.open(rp, encoding="utf-8"))
+        for i in items:
+            if i.get("bvx") in rot:
+                i["rot"] = rot[i["bvx"]]
     items.sort(key=lambda x: (x["bvx"] is None, x["title"].lower()))
     io.open(os.path.join(META, "inventory-live.json"), "w", encoding="utf-8", newline="\n").write(json.dumps(items, ensure_ascii=False, indent=1))
 
@@ -112,7 +170,7 @@ def main():
     L += ["", f"## New since the catalog ({len(new)})", "", "| Year | Title | Author | Tags |", "|---|---|---|---|"]
     L += [f"| {i['year']} | {i['title'][:70]} | {', '.join(i['authors'])[:30]} | {', '.join(i['tags'])[:40]} |" for i in new]
     io.open(os.path.join(META, "INVENTORY-LIVE.md"), "w", encoding="utf-8", newline="\n").write("\n".join(L) + "\n")
-    print(f"items {n} - pdf {withpdf} (on disk {on_disk}) - new {len(new)} - spine-keyed {len(keyed)} - story-side {len(story)}")
+    print(f"items {n} - pdf {withpdf} (on disk {on_disk}) - new {len(new)} - spine-keyed {len(keyed)} - story-side {len(story)} - drop folder {len(drops)}")
     print("spine:", dict(spc))
     print("0N_ tags:", {k: v for k, v in tagc.items() if re.match(r"^0\d", k)})
 

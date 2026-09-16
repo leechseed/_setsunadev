@@ -32,6 +32,8 @@ Authority order for a key: Papi's own Zotero tags (`00_` … `09_`, never overwr
 | 8 · distill waves | per shelf: pdftotext → one MS per book on `TEMPLATE.distill.v4.md` → `check_distill.py` → the `_INDEX.md` Distilled register | ~120–190k per book |
 | 9 · the model | the SSOT doc for the shelf is written FROM the shelf, never before it is keyed | one MS |
 
+**The drop folder (9/16):** `C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP/` — acquisitions land there as bare PDFs, no Zotero filing needed; `inventory.py` scans it (`src: drop`, title/author/year guessed from the filename, `bvx: NEW` until cataloged) and the sweep keys them like any row. **Regeneration is safe (9/16 fix):** `inventory.py` carries `spine · spine_src · subject · junk_title · rot` and PS-repaired titles across runs, matched by zkey; before the fix a rerun silently dropped every PS TOC key. Rot notes live in `_meta/rot.json`, keyed by BVX id.
+
 Rules of the road: PDFs never enter the repo (public); only paths. A distill needs two to five Mermaid mind models (v4 §C). A book the sweep finds mis-catalogued gets a `rot` note in `inventory-live.json` and the distill lands on the correct BVX id. Re-run steps 1–3 before any library work; they are idempotent.
 
 ## Files
