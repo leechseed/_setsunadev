@@ -1,6 +1,6 @@
 ---
 name: sitrep
-description: Deliver the sit rep (the board + the SITREP page) in the formation ruled 2026-09-12 (BOLO 54) — a zero-token prep script, three independent specialists at gear 1, a script reviewer at the fan-in, the main line writing only Block VI and the header. Fires on "sit rep", "the board", "where did we leave off", "what are we working on", or the countersign.
+description: Deliver the sit rep (the board + the SITREP page) in the formation ruled 2026-09-12 (BOLO 54) — a zero-token prep script, three independent specialists at gear 1 (one MS · two PS), RANGE the script reviewer at the fan-in, the CDR writing only Block VI and the header. Fires on "sit rep", "the board", "where did we leave off", "what are we working on", or the countersign.
 ---
 
 # The sit rep — the formation
@@ -27,9 +27,9 @@ Launch all three in the same message, `run_in_background: false` is not needed; 
 | **INDEX** | sonnet | `state.blocked.md` · `state.live.md` · `git.log` + `prev/{I,II,V}.json` | `frag/I.json` · `frag/II.json` · `frag/V.json` |
 | **WATCH** | haiku | `BOLO.md` + `prev/IV.json` | `frag/IV.json` (Block IV + pmcs) |
 
-Model rule is the gearbox's (SOP §1): extraction on haiku, write-ups on sonnet, Fable on the main line only. A gear shift never adds a fourth specialist to the sit rep; it is not a bigger job.
+Model rule is the gearbox's (SOP §1): PS (haiku) extract, MS (sonnet) writes, CDR (Fable) on the main line only. A gear shift never adds a fourth specialist to the sit rep; it is not a bigger job.
 
-## H2 · Fan in (the reviewer is a script)
+## H2 · Fan in (RANGE, the reviewer, is a script)
 
 ```
 python _tools/sitrep/assemble.py <date>

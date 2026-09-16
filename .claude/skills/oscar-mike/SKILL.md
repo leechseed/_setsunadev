@@ -1,6 +1,6 @@
 ---
 name: oscar-mike
-description: Run the close-out ("Oscar Mike", ruled 9/11) in the formation (BOLO 51 phase 2.2) — a script pulls the session's spoken turns from the local transcript, a haiku specialist drafts the Ready Rack note, a script appends the journal, the main line rules the note and writes STATE's Moved bullet, then the OUT block. Fires on "Oscar Mike" or "we're Oscar Mike".
+description: Run the close-out ("Oscar Mike", ruled 9/11) in the formation (BOLO 51 phase 2.2) — a script pulls the session's spoken turns from the local transcript, a Payload Specialist (PS, haiku) drafts the Ready Rack note, a script appends the journal, the main line rules the note and writes STATE's Moved bullet, then the OUT block. Fires on "Oscar Mike" or "we're Oscar Mike".
 ---
 
 # Oscar Mike — the close-out

@@ -1,6 +1,6 @@
 ---
 name: dope-sheet
-description: Build BOLO N's standing status page (DOPE SHEET N, ruled 9/11) in the formation (BOLO 51 phase 2.4) — a script gathers every mention, a sonnet specialist drafts Situation · Execution · Admin · Log, the main line writes Mission · Command & Signal · the order and the calls, a script reviews, build, publish. Fires on "DOPE SHEET N", "the dope on N", "status report on N", "build the sheet for N".
+description: Build BOLO N's standing status page (DOPE SHEET N, ruled 9/11) in the formation (BOLO 51 phase 2.4) — a script gathers every mention, a Mission Specialist (MS, sonnet) drafts Situation · Execution · Admin · Log, the CDR writes Mission · Command & Signal · the order and the calls, a script reviews, build, publish. Fires on "DOPE SHEET N", "the dope on N", "status report on N", "build the sheet for N".
 ---
 
 # DOPE SHEET N — the standing page

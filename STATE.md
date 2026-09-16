@@ -137,7 +137,10 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 ---
 
-## ✅ Moved 2026-09-16 (D-9 GO · D-6 YES · **D-7 RULED** · the Command · BOLO 55 the document layout · FRAGO 51)
+## ✅ Moved 2026-09-16 (D-9 GO · D-6 YES · **D-7 RULED** · **the character sheet** · **the crew grades** · the Command · BOLO 55 the document layout · FRAGO 51)
+
+- **The character sheet BUILT (second session, 9/16)** — `_PRIVATE/BOLO-24-character-sheet.md` v0.1 on an MS (2,149 words): the spine · 12-layer lite · TCVM · sex menu · Fantasy Drive · chart-first birth date (rec Aug 8 2005) + the death transit (Uranus opposing the natal Moon, 2020) · the register · Season 1 in five beats · §9 eight calls. **Name RULED: Remi Slate** (Papi: "let's go with Remy Slate for now"; spelling provisional, spoken not spelled; first web pass clear). Seven calls open by number (birth date · chart block · transit · handle · TCVM scores · sex-menu fill · Season 2 seed). DOPE SHEET 24 FRAGO'd to v0.6, republish owed.
+- **The crew grades RULED (9/16)** — Papi: "I like specialist, mission specialist… go CDR." The formation's seats by NASA shuttle crew grade: **CDR** (main line, Fable) · **MS** Mission Specialist (writer, Sonnet) · **PS** Payload Specialist (fetcher, Haiku) · **RANGE** (the script reviewer). "Sonnet specialist" retired. SOP §1 + §5, the digest hook, five skills, BOLO rows 52 + 54 renamed; provisional a week.
 
 - **D-7 RULED (second session, 9/16)** — Papi: "D7 go", the recommendation as written: **mother · 2020 · overdose · she is 15**; anniversary month open as a content-calendar lever; death date a transit pick once the chart is fixed. Charter ledger D-7 + A-007, the studio-launch doc, BOLO row 24 and DOPE SHEET 24 (v0.4 → v0.5) updated. **The character sheet is unlocked** (12-layer lite · TCVM · sex menu · Fantasy Drive · chart-first birth date · the death date · the dropout · the eviction). D-5 still gates the gates table.
 

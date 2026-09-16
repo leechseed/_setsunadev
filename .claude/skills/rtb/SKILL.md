@@ -1,6 +1,6 @@
 ---
 name: rtb
-description: Run the card-clearing pass ("RTB", ruled 9/10) in the formation (BOLO 51 phase 2.6) — a script compiles every open card in oscar-mike/ with its resume lines, a haiku specialist proposes one disposition per card, the main line rules the lines and executes. Fires on "RTB", "RTB oscar-mike", "clear the cards", "send the cards home".
+description: Run the card-clearing pass ("RTB", ruled 9/10) in the formation (BOLO 51 phase 2.6) — a script compiles every open card in oscar-mike/ with its resume lines, a Payload Specialist (PS, haiku) proposes one disposition per card, the main line rules the lines and executes. Fires on "RTB", "RTB oscar-mike", "clear the cards", "send the cards home".
 ---
 
 # RTB — return to base

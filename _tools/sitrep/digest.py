@@ -41,7 +41,7 @@ def main():
     state, bolo = load("STATE.md"), load("BOLO.md")
     out = []
     out.append(f"SESSION-OPEN DIGEST · {today.isoformat()} · read this, not the five files (SOP §4 under the formation, BOLO 54)")
-    out.append("gear 1 in force (3 agents; haiku fetch · sonnet write · Fable main). Skills: sitrep · oscar-mike · dope-sheet · frago · collect · rtb.")
+    out.append("gear 1 in force (3 agents; PS fetch · MS write · CDR main; RANGE = the script reviewer). Skills: sitrep · oscar-mike · dope-sheet · frago · collect · rtb.")
 
     # the rack
     cache = os.path.join(ROOT, "_CACHE")
