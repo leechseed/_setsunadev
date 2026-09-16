@@ -24,6 +24,16 @@ CACHE = os.path.join(ROOT, "_CACHE")
 FIVE = ["SOP.md", "STATE.md", "BOLO.md", "PROJECTS.md"]
 
 
+# Paths the sit rep itself writes — excluded from the git log handed to INDEX (see § 3)
+EXHAUST = (
+    "_tools/sitrep/boards",
+    "_tools/sitrep/glossary.json",
+    "SITREP.html",
+    "_CACHE",
+    "_devlog",
+)
+
+
 def load(p):
     with io.open(p, encoding="utf-8") as f:
         return f.read()
@@ -112,8 +122,13 @@ def main():
     write(os.path.join(wd, "state.live.md"), slice_md(state, r"^## 🟡 Live", r"^## ✅ Moved"))
 
     # 3 · git since the previous board
+    #     The sit rep's own output is excluded: board JSONs, the built page, the SOI
+    #     terms and the Oscar Mike pair are written BY a run, so without this they come
+    #     back at the NEXT run as uncharacterized commits and sort to #1 of the Fresh
+    #     Ten by recency — the board reporting on itself. Proved 9/16 (STATE, Known rot).
     since = prev_name[:10] if prev_name else "1 week ago"
-    log = git("log", f"--since={since} 00:00", "--date=format:%m/%d %H:%M", "--format=%h %ad %s")
+    log = git("log", f"--since={since} 00:00", "--date=format:%m/%d %H:%M", "--format=%h %ad %s",
+              "--", ".", *(f":(exclude){p}" for p in EXHAUST))
     write(os.path.join(wd, "git.log"), log + "\n")
     dirty = git("status", "--porcelain")
     tree = "clean at open" if not dirty else f"{len(dirty.splitlines())} file(s) uncommitted at open"
