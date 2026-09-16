@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "D-9 GO · D-6 YES · D-7 RULED, all 9/16 · the design set open (benchmark read · Blender COA · reference-pull spec on disk) · **the character sheet is unlocked** · the gates table still waits on D-5",
+  "status": "D-9 GO · D-6 YES · D-7 RULED, all 9/16 · **the character sheet is on disk (v0.1, eight calls)** · the design set complete but for the gates table, which waits on D-5",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Build the character sheet.** D-7 is ruled (mother · 2020 · overdose · she is 15); the sheet has both halves. D-5 the nut and runway is the one number left behind the design set.",
+  "order": "**Rule the character sheet's eight calls by number** (birth date · chart block · death transit · name · handle · TCVM scores · sex-menu fill · Season 2 seed), then the Season 1 beat sheet builds off it. D-5 the nut and runway is the one number left.",
   "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the character sheet builds on the ruled spine; the gates table stays gated on D-5; D-8 and D-11 run on their recommendations.",
   "calls": [
    {
@@ -211,7 +211,7 @@
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
     "you": "You ruled D-9 GO, D-6 YES and D-7 in one day. All three no-dependency items are on disk.",
-    "next": "The character sheet builds on your word. D-5 unlocks the gates table."
+    "next": "Rule §9 of the sheet by number; the beat sheet and the shoot list follow. D-5 unlocks the gates table."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -318,6 +318,11 @@
     {
      "path": "_PRIVATE/BOLO-24-reference-pull-spec.md",
      "what": "the reference-pull spec (D-8): five core seats by role, three filled from the register (itsmemphishxe for posting grammar · Sulbas3D and 3DessJeez for the 3D still artist · Kirenes and Variety Itsol as the growth floor and ceiling), the 30-day bookmark procedure, the per-post record, the derivations; four open questions, one closed by D-6",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/BOLO-24-character-sheet.md",
+     "what": "the character sheet v0.1 — the spine · 12-layer lite · TCVM · sex menu · Fantasy Drive · chart-first birth date + death transit · the register · Season 1 in five beats · §9 the eight calls",
      "s": "done"
     }
    ],
@@ -457,6 +462,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "D-7 written to the charter ledger (D-7, A-007), the studio-launch doc, STATE, BOLO row 24; sheet FRAGO'd v0.4 → v0.5. Character sheet unlocked."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Build the sheet.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Character sheet v0.1 written on a sonnet specialist (2,149 words): recommended Aug 8 2005 · Remi Slate · @itsremislate · Uranus-opposite-Moon as the death transit; names checked clear on a first web pass. Eight ⧗ calls in §9."
     }
    ]
   }
