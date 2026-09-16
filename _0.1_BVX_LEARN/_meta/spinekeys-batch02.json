@@ -1,0 +1,255 @@
+[
+  {
+    "zid": 3176,
+    "spine": ["OFF"],
+    "why": "D&D Player's Handbook - core rules and mechanics book, no narrative content"
+  },
+  {
+    "zid": 3177,
+    "spine": ["L4", "SETTING"],
+    "why": "Storm King's Thunder - D&D adventure module with plot structure and campaign setting; story design with Giant Kings"
+  },
+  {
+    "zid": 3154,
+    "spine": ["SETTING"],
+    "why": "Strixhaven curriculum sourcebook - describes magical academy setting, locations, and world structure"
+  },
+  {
+    "zid": 3181,
+    "spine": ["SETTING"],
+    "why": "Strixhaven curriculum sourcebook - duplicate of 3154, describes academy setting"
+  },
+  {
+    "zid": 400,
+    "spine": ["OFF"],
+    "why": "Xanathar's Guide to Everything - D&D mechanics supplement with expanded rules, not story-focused"
+  },
+  {
+    "zid": 404,
+    "spine": ["SETTING"],
+    "why": "Experimental Technical Readout: Davion - BattleTech sourcebook describing military hardware and worldbuilding in Federated Suns setting"
+  },
+  {
+    "zid": 405,
+    "spine": ["SETTING", "L4"],
+    "why": "Experimental Technical Readout: Gladiators - BattleTech setting book on Solaris VII arena world and gladiatorial combat (setting + narrative design)"
+  },
+  {
+    "zid": 451,
+    "title": "Fallout 3 Official Game Guide",
+    "spine": ["OFF"],
+    "why": "Video game strategy guide - primarily mechanical walkthrough and information, not story craft"
+  },
+  {
+    "zid": 102,
+    "spine": ["L4"],
+    "why": "Fate Accelerated Edition - RPG system focused on story structure, character mechanics, and narrative pacing"
+  },
+  {
+    "zid": 103,
+    "spine": ["L4"],
+    "why": "Fate System Toolkit - rules customization and narrative design tools for story-driven games; character and world creation systems"
+  },
+  {
+    "zid": 104,
+    "spine": ["L4"],
+    "why": "Fate Core System - story engine focused on character-driven narratives, aspects, and plot structure"
+  },
+  {
+    "zid": 592,
+    "spine": ["SETTING"],
+    "why": "Feral Cities - Shadowrun worldbuilding sourcebook covering Chicago, Lagos, and urban settings with factions and locations"
+  },
+  {
+    "zid": 418,
+    "spine": ["OFF"],
+    "why": "Foundations of Game Engine Development - mathematical and technical programming reference, not story-related"
+  },
+  {
+    "zid": 420,
+    "spine": ["OFF"],
+    "why": "Game Programming Patterns - software engineering and programming patterns for game development, not narrative craft"
+  },
+  {
+    "zid": 424,
+    "spine": ["L4", "L5"],
+    "why": "GURPS Action 4: Specialists - tactical action rules and character archetypes for action narratives"
+  },
+  {
+    "zid": 3840,
+    "spine": ["L4", "L5"],
+    "why": "GURPS Action 4: Specialists - duplicate, action narrative mechanics and character types"
+  },
+  {
+    "zid": 3991,
+    "spine": ["L4", "L5"],
+    "why": "GURPS Action 4: Specialists - duplicate, action narrative and character mechanics"
+  },
+  {
+    "zid": 3841,
+    "spine": ["L6"],
+    "why": "GURPS Action 5: Dictionary of Danger - thematic elements and moral dilemmas for action stories"
+  },
+  {
+    "zid": 3844,
+    "spine": ["L4"],
+    "why": "GURPS Action 8: Twists - narrative structure and plot complications for action fiction"
+  },
+  {
+    "zid": 3845,
+    "spine": ["SETTING"],
+    "why": "GURPS Action 9: The City - urban setting worldbuilding and location design"
+  },
+  {
+    "zid": 3997,
+    "spine": ["L4", "SETTING"],
+    "why": "GURPS Action Adventure 1: Templar's Gold - adventure plot structure with historical setting details"
+  },
+  {
+    "zid": 425,
+    "spine": ["L6", "L7"],
+    "why": "GURPS Adaptations - narrative adaptation theory across genres and media (how to translate stories between formats)"
+  },
+  {
+    "zid": 3846,
+    "spine": ["L6", "L7"],
+    "why": "GURPS Adaptations - duplicate, story adaptation across genres and media"
+  },
+  {
+    "zid": 3992,
+    "spine": ["L6", "L7"],
+    "why": "GURPS Adaptations - duplicate, narrative adaptation theory"
+  },
+  {
+    "zid": 3847,
+    "spine": ["SETTING"],
+    "why": "GURPS Aliens: Sparrials - alien species worldbuilding for sci-fi settings"
+  },
+  {
+    "zid": 426,
+    "spine": ["L4", "SETTING"],
+    "why": "GURPS Basic Set: Campaigns - campaign structure, plot design, and world management for tabletop narratives"
+  },
+  {
+    "zid": 3850,
+    "spine": ["L5", "SETTING"],
+    "why": "GURPS Boardroom and Curia - business setting with political character and power dynamics"
+  },
+  {
+    "zid": 3849,
+    "spine": ["L4", "SETTING"],
+    "why": "GURPS Boardroom and Curia: Tomorrow Rides - political adventure plot in business/court settings"
+  },
+  {
+    "zid": 3853,
+    "spine": ["L4"],
+    "why": "GURPS Disasters: Hurricane - disaster narrative structure and plot complications"
+  },
+  {
+    "zid": 3854,
+    "spine": ["L4"],
+    "why": "GURPS Disasters: Meltdown and Fallout - post-apocalyptic disaster narrative structure"
+  },
+  {
+    "zid": 3872,
+    "spine": ["L5", "L6"],
+    "why": "GURPS Encounters: The Harrowed Hearts Club - character-focused encounter scenarios with emotional themes"
+  },
+  {
+    "zid": 3873,
+    "spine": ["SETTING"],
+    "why": "GURPS Encounters: The Mysterious Airfield - mysterious location worldbuilding and setting details"
+  },
+  {
+    "zid": 427,
+    "title": "GURPS Fantasy",
+    "spine": ["SETTING", "L4"],
+    "why": "Medieval fantasy worldbuilding, campaigns, and plot design for fantasy narratives"
+  },
+  {
+    "zid": 109,
+    "spine": ["L4"],
+    "why": "GURPS for Dummies - introductory narrative game design and campaign structure for storytelling RPGs"
+  },
+  {
+    "zid": 430,
+    "spine": ["OFF"],
+    "why": "GURPS High-Tech - equipment and technology reference, mechanical focus without narrative content"
+  },
+  {
+    "zid": 429,
+    "spine": ["SETTING"],
+    "why": "GURPS High-Tech: Adventure Guns - weapons worldbuilding for action settings"
+  },
+  {
+    "zid": 3879,
+    "spine": ["SETTING"],
+    "why": "GURPS High-Tech: Adventure Guns - duplicate, weapons and equipment setting details"
+  },
+  {
+    "zid": 431,
+    "title": "GURPS Horror",
+    "spine": ["L6", "L7"],
+    "why": "Horror narrative theory, thematic elements, and genre-specific storytelling techniques"
+  },
+  {
+    "zid": 3882,
+    "spine": ["SETTING"],
+    "why": "GURPS Hot Spots: Constantinople, 527-1204 A.D. - historical setting worldbuilding for Byzantine era"
+  },
+  {
+    "zid": 3884,
+    "spine": ["SETTING"],
+    "why": "GURPS Hot Spots: Renaissance Venice - historical setting worldbuilding for Renaissance period"
+  },
+  {
+    "zid": 3885,
+    "spine": ["SETTING"],
+    "why": "GURPS Hot Spots: Renaissance Venice - duplicate, historical setting details"
+  },
+  {
+    "zid": 3886,
+    "spine": ["SETTING"],
+    "why": "GURPS Hot Spots: Sriwijaya - historical setting worldbuilding for Southeast Asian medieval period"
+  },
+  {
+    "zid": 3887,
+    "spine": ["SETTING"],
+    "why": "GURPS Hot Spots: The Silk Road - historical worldbuilding and trade route setting"
+  },
+  {
+    "zid": 3888,
+    "spine": ["SETTING"],
+    "why": "GURPS Infinite Worlds: Nightreign - alternate universe setting worldbuilding for multiverse campaign"
+  },
+  {
+    "zid": 3890,
+    "spine": ["SETTING"],
+    "why": "GURPS Infinite Worlds: The Osiris Worlds - Egyptian mythological alternate universe settings"
+  },
+  {
+    "zid": 3894,
+    "spine": ["SETTING"],
+    "why": "GURPS Locations: Hellsgate - specific location worldbuilding and dungeon/stronghold design"
+  },
+  {
+    "zid": 3895,
+    "spine": ["SETTING"],
+    "why": "GURPS Locations: St. George's Cathedral - specific location architecture and worldbuilding"
+  },
+  {
+    "zid": 3897,
+    "spine": ["SETTING"],
+    "why": "GURPS Locations: Worminghall - specific location/location design for fantasy settings"
+  },
+  {
+    "zid": 3898,
+    "spine": ["SETTING"],
+    "why": "GURPS Low-Tech Companion 1: Philosophers and Kings - medieval historical setting and culture worldbuilding"
+  },
+  {
+    "zid": 3834,
+    "spine": ["SETTING"],
+    "why": "GURPS Low-Tech Companion 2: Weapons and Warriors - historical weapons and warrior culture setting details"
+  }
+]
