@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "D-9 GO · D-6 YES · D-7 RULED · **D-5 RULED provisional (first-dollar-first)** · character sheet v0.2 · Season 1 beat sheet + shoot list (8 sets / 38 stills) · **the gates table on disk** · four calls left",
+  "status": "D-9 GO · D-6 YES · D-7 RULED · D-5 RULED provisional · **GATE 3 OPEN: the pipeline stood up, S4-01 rendered (the stand-in)** · the sculpt and the skin pass are the evenings",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.10 · DOPE SHEET"
+  "version": "v0.11 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Gate 3 is the build: the vertical slice — set 4 of the shoot list as the skin test, one week of posting to the grammar on a test account, AAR.** Write the number in the gates table §1 when you have it; the branch moves with it. The four sheet calls (launch month · library · split · Gate 3 skin test) run on their recommendations.",
+  "order": "**The Gate 3 evenings: the sculpt, then the skin pass on S4-01, then hair, pose, dressing; render the five; the posting week on a test account; the AAR.** The slice order is on disk. Write the number in the gates table §1 when you have it.",
   "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the gates table runs on the first-dollar-first branch until the number lands; D-8 and D-11 run on their recommendations.",
   "calls": [
    {
@@ -211,8 +211,8 @@
    "strand": {
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
-    "you": "You ruled D-9, D-6, D-7, the name, the chart and now D-5 in one day.",
-    "next": "The slice. Write the number in the gates table when you have it."
+    "you": "You ruled six decisions and opened Gate 3 in one day.",
+    "next": "The sculpt. Open set4_S4-01.blend and make her; the chain is waiting on the other side."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -236,9 +236,9 @@
     },
     {
      "n": 3,
-     "t": "**The vertical slice** — one complete still set at target quality (rec: set 4 of the shoot list as the Gate 3 skin test) plus one week of posting to the grammar on a test account; AAR. **On the ruled branch the slice is also the first product: early access and commissions the day it passes.**",
-     "s": "open",
-     "when": "next build"
+     "t": "**The vertical slice** — **opened 9/16 (\"slice go\"): Blender 4.5 LTS · MPFB2 · the CC0 assets · HDRIs · the DARKROOM pull · the Set 4 scaffold (five scenes, the warm low-key rig) · S4-01 rendered full on the 3090 in under a minute, the stand-in subject.** Left: the sculpt · the skin pass (the Gate 3 test) · hair · pose · dressing · the five renders · the posting week · the AAR. On the D-5 branch the slice is the first product the day it passes.",
+     "s": "hot",
+     "when": "9/16 →"
     },
     {
      "n": 4,
@@ -278,7 +278,7 @@
     "last": "The whole reference set was built in eight days.",
     "plan": "GPU time and attention; no money before Gate 3.",
     "you": "You pay in rulings first, then in full-time attention.",
-    "next": "The nut and the runway are the first numbers the brief needs."
+    "next": "The render step costs seconds; the evenings are the whole budget now."
    },
    "files": [
     {
@@ -334,6 +334,21 @@
     {
      "path": "_PRIVATE/BOLO-24-gates-table.md",
      "what": "W6: the number block (Papi's), the branch ruled on the record, the gates table (three values, months 1–12), the rules that ride on it, the monthly review sheet, attainability",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/BOLO-24-slice.md",
+     "what": "the Gate 3 order: what stood up, Set 4's five stills and the light, the DARKROOM pull, the six evenings, the posting week with the disclosure copy, the AAR table (COA B trigger on the skin row), the log",
+     "s": "done"
+    },
+    {
+     "path": "_tools/blender/slice_set4.py",
+     "what": "the Set 4 scene scaffold: MPFB2 subject + CC0 skin and body parts, bed/wall, the NOIR warm low-key rig, five cameras, Cycles OptiX AgX; --smoke and --render",
+     "s": "done"
+    },
+    {
+     "path": "Q:/fun/_BOLO24/ (off the repo)",
+     "what": "hdri/ (three Poly Haven 2k) · refs/set4/ (16 DARKROOM thumbs + manifest) · renders/blend/ (five scenes) · renders/full_S4-01.png · mpfb_assets/",
      "s": "done"
     }
    ],
@@ -518,6 +533,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "FRAGO 24: D-5 ruled provisional on the structure and the record (first-dollar-first); the gates table and the monthly review sheet written to _PRIVATE; charter A-001 assumed false, §6 attainability stated; BOLO row 24 and STATE updated. Gate 2 passed; Gate 3, the slice, is the next build."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Slice go.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Gate 3 opened: the COA A pipeline stood up in the hour at $0 (Blender 4.5 LTS, MPFB2, the CC0 assets, HDRIs, the DARKROOM pull, the Set 4 scaffold); S4-01 rendered smoke and full on the 3090; the slice order written with the five stills, the evenings, the posting week and the AAR. FRAGO 24 v0.11."
     }
    ]
   }
