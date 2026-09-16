@@ -1,0 +1,365 @@
+[
+  {
+    "zid": 432,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Game magic mechanics system"
+  },
+  {
+    "zid": 434,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Combat technique and grappling mechanics"
+  },
+  {
+    "zid": 436,
+    "spine": [
+      "L4",
+      "SETTING"
+    ],
+    "why": "Combat styles for fantasy campaign setting (Yrth)"
+  },
+  {
+    "zid": 437,
+    "spine": [
+      "L4"
+    ],
+    "why": "Large-scale battle mechanics and military strategy"
+  },
+  {
+    "zid": 438,
+    "spine": [
+      "L4"
+    ],
+    "why": "Supernatural ability mechanics for encounters"
+  },
+  {
+    "zid": 439,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 443,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Magic theory and mechanics system"
+  },
+  {
+    "zid": 3835,
+    "spine": [
+      "CRAFT-PROCESS"
+    ],
+    "why": "Social interaction mechanics and character motivations"
+  },
+  {
+    "zid": 3878,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Game magic mechanics system"
+  },
+  {
+    "zid": 3899,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Combat gear and weapons mechanics supplement"
+  },
+  {
+    "zid": 3900,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Combat gear and weapons mechanics supplement"
+  },
+  {
+    "zid": 3902,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Game magic mechanics system"
+  },
+  {
+    "zid": 3903,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Game magic mechanics system"
+  },
+  {
+    "zid": 3904,
+    "spine": [
+      "L4"
+    ],
+    "why": "Magic system and combat spell mechanics"
+  },
+  {
+    "zid": 3906,
+    "spine": [
+      "SETTING"
+    ],
+    "why": "Campaign setting describing Martian society and invasion scenario"
+  },
+  {
+    "zid": 3907,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Combat technique and grappling mechanics"
+  },
+  {
+    "zid": 3909,
+    "spine": [
+      "L4",
+      "SETTING"
+    ],
+    "why": "Combat styles for fantasy campaign setting (Yrth)"
+  },
+  {
+    "zid": 3910,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3911,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3912,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3913,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3914,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3915,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3916,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3917,
+    "spine": [
+      "L4",
+      "L5"
+    ],
+    "why": "Campaign structure, monster encounters, and character templates"
+  },
+  {
+    "zid": 3919,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3920,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3921,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3922,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3923,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3924,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3925,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3926,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3927,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3928,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Psychic power mechanics system"
+  },
+  {
+    "zid": 3930,
+    "spine": [
+      "SETTING",
+      "L4"
+    ],
+    "why": "Campaign setting (Venice) and adventure scenarios"
+  },
+  {
+    "zid": 3931,
+    "spine": [
+      "CRAFT-PROCESS"
+    ],
+    "why": "Social interaction mechanics and character motivations"
+  },
+  {
+    "zid": 3932,
+    "spine": [
+      "CRAFT-PROCESS"
+    ],
+    "why": "Social interaction mechanics and character motivations"
+  },
+  {
+    "zid": 3933,
+    "spine": [
+      "SETTING"
+    ],
+    "why": "Campaign setting and world reference"
+  },
+  {
+    "zid": 3942,
+    "spine": [
+      "SETTING"
+    ],
+    "why": "Steampunk campaign setting and technology"
+  },
+  {
+    "zid": 3943,
+    "spine": [
+      "SETTING"
+    ],
+    "why": "Steampunk campaign setting and technology"
+  },
+  {
+    "zid": 3945,
+    "spine": [
+      "L5"
+    ],
+    "why": "NPC character templates and roles"
+  },
+  {
+    "zid": 3948,
+    "spine": [
+      "L5",
+      "SETTING"
+    ],
+    "why": "Character templates and species/cultural background"
+  },
+  {
+    "zid": 3949,
+    "spine": [
+      "L5",
+      "SETTING"
+    ],
+    "why": "Character templates and species/cultural background"
+  },
+  {
+    "zid": 3950,
+    "spine": [
+      "L5"
+    ],
+    "why": "Character template archetypes"
+  },
+  {
+    "zid": 3951,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Character power system mechanics"
+  },
+  {
+    "zid": 3952,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Game magic mechanics system"
+  },
+  {
+    "zid": 3953,
+    "spine": [
+      "OFF"
+    ],
+    "why": "Game mechanics supplement"
+  },
+  {
+    "zid": 3956,
+    "spine": [
+      "L4"
+    ],
+    "why": "Magic system and combat spell mechanics"
+  },
+  {
+    "zid": 3994,
+    "spine": [
+      "L4"
+    ],
+    "why": "Supernatural ability mechanics for encounters"
+  }
+]
