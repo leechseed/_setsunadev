@@ -5,8 +5,8 @@
   "trunk": "BLACK/ORANGE/OPERATOR",
   "issued": "2026-09-11",
   "asof": "2026-09-15",
-  "s": "hot",
-  "status": "9/15: the NASA four ruled · filing pass stamped · phase 5 done · the three S12 invariants RULED KEEP (Papi, 9/15 late). Open: the two reading picks and the moon question (defaults run). Next: phase 6 the network on your go.",
+  "s": "open",
+  "status": "ALL SIX PHASES DONE 9/15. The ladder ruled (NASA four) · 23 documents stamped, 3 born stamped · three world bodies seeded, their S12 lines kept · the network as a flat index in the ladder file. The campaign rests on its gaps.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · the project flow · the design system · the story systems (DCUS · Trash Land · ASTRO7EX as in-world standards bodies) · BVX-LEARN",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 50 · _0.1_BVX_LEARN/LOCI/standards.locus.md",
   "card": "none",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,8 +54,8 @@
  ],
  "frago": {
   "mission": "Build and keep a networked library of standards, outside and house-made, at every level from the house down to the project, **in order to** give the operation the speed of never deciding a format twice, and to give the story systems the societies they need.",
-  "order": "**\"Go 6\" opens the network.** Phase 6 default: a flat index in the ladder file first (rungs × projects × outside parents), the browsable page on the WARROOM pattern when the count earns it.",
-  "default": "Silence: the three invariants are canon law of their places; Trash Land runs on reading B and ASTRO7EX on reading A provisionally; the moon stays unruled; phase 6 waits.",
+  "order": "**Nothing owed from you tonight.** The next increments are the gaps the index shows: BLACK and DARKROOM have no governing document on any rung; twelve documents have no outside parent; Trash Land and ASTRO7EX still carry working titles for their bodies. Each fills when the work that earns it happens, never ahead of it (the mantra's third line). The browsable page opens when the count earns it.",
+  "default": "Silence: the ladder and the index stand; every new document carries the rung tag from birth and lands in the index at its next revision; the two reading picks and the moon question wait for a scene.",
   "calls": [
    {
     "q": "The house tiers",
@@ -101,6 +101,13 @@
     "q": "Phase 6 scope",
     "options": "the network as a page on the WARROOM pattern: rungs × projects × outside parents, browsable · a flat index in the ladder file first (rec) · wait",
     "default": "the flat index first; the page when the count earns it",
+    "s": "ruled",
+    "ruling": "RULED 9/15 by \"go 6\": the flat index first, in the ladder file. The page on the WARROOM pattern waits on the count."
+   },
+   {
+    "q": "The next gap to fill",
+    "options": "a governing procedure for BLACK · a governing procedure for DARKROOM (the taxonomy engine; the register already maps ISO/IEC 42001 to it) · proper names for the Trash Land and ASTRO7EX bodies · outside parents for the twelve orphans · leave all six resting",
+    "default": "resting; the first gap fills when its work happens",
     "s": "open"
    }
   ]
@@ -168,6 +175,10 @@
       {
        "t": "**9/15 late · Phase 5 landed.** Three specialists, disjoint sources, one script reviewer: 0 blocking findings, em-dashes advisory. The fiction now rhymes with the house: each world has a body issuing standards on the same four rungs, and each node's dynamic table is the individual-versus-society battle Papi named.",
        "s": "done"
+      },
+      {
+       "t": "**9/15 late · Phase 6 landed and the campaign's six phases are all done.** The index shows the shape plainly: the house's governance rungs are full and its handbook rung is empty; BLACK and DARKROOM have nothing governing them; only three outside bodies are cited so far (NASA, DoD, PMI) against a register of 65 rows. That gap between the register and the house is the campaign's second season.",
+       "s": "done"
       }
      ]
     }
@@ -201,8 +212,8 @@
    "strand": {
     "last": "Phase 1 landed in minutes.",
     "plan": "Pull, read, rule the ladder, file what exists, then derive.",
-    "you": "You asked for the context, then kept all three in one line.",
-    "next": "Go 6 when ready. The reading picks and the moon can wait for a scene."
+    "you": "You said go 6 in the same breath as the rest; every phase ran the same night.",
+    "next": "Rest. The gaps fill as the work happens."
    },
    "main_effort": "The register, read. Everything else waits on it.",
    "phases": [
@@ -238,9 +249,9 @@
     },
     {
      "n": 6,
-     "t": "**The network** — links between rungs, projects and outside parents; a flat index in the ladder file first, the browsable page on the WARROOM pattern when the count earns it.",
-     "s": "gated",
-     "when": "your go"
+     "t": "**The network** — flat index in the ladder file: table 1 by document (26 rows, grouped by rung, house parents and outside parents) · table 2 by outside body (NASA · DoD DSP · PMI) · table 3 by level and world (11 rows, the standards body of each, the empty rungs named) · six gaps written as observations. Reviewer: 0 blocking. The browsable page waits on the count.",
+     "s": "done",
+     "when": "9/15"
     }
    ],
    "coord": [
@@ -281,7 +292,7 @@
     },
     {
      "path": "ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_standards_ladder.md",
-     "what": "the ladder: four rungs, the rule that decides the rung, the tag, the filing table of record",
+     "what": "the ladder, v0.2.0: four rungs, the rule, the tag, the filing table, and now the network index",
      "s": "done"
     },
     {
@@ -324,7 +335,7 @@
     "last": "Opened on a break-break.",
     "plan": "One decider.",
     "you": "The ladder, the filing, the name.",
-    "next": "The S12 rulings and the two reading picks are the open calls; phase 6 waits."
+    "next": "Only the next-gap call is open, and it has no clock."
    },
    "groups": [
     {
@@ -417,6 +428,16 @@
      "when": "9/15",
      "who": "Claude",
      "t": "The three S12 invariants ruled KEEP and stamped into their nodes (heading, ruling line, frontmatter status). FRAGO 50 v0.5."
+    },
+    {
+     "when": "9/15",
+     "who": "Papi",
+     "t": "\"go 6\" (dictated as \"goes to ex … 6\")."
+    },
+    {
+     "when": "9/15",
+     "who": "Claude",
+     "t": "Phase 6: sources gathered by script (26 documents), NET (sonnet) wrote the flat index, check_network.py at the fan-in (26 of 26 rows, 0 blocking), index spliced into the ladder file v0.2.0. FRAGO 50 v0.6. All six phases done."
     }
    ]
   }
