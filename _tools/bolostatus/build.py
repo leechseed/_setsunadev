@@ -1,6 +1,6 @@
 """BOLO status page — build.
 
-Usage:  python _tools/bolostatus/build.py 45
+Usage:  python _tools/bolostatus/build.py 45 [--v2]   (--v2 = the document layout, template-v2.html, provisional 9/16)
 
 Inputs : _tools/bolostatus/boards/<n>.json   one board per BOLO (the five-paragraph order as data)
          _tools/sitrep/glossary.json          the shared term register (every [[key]] must exist here)
@@ -23,6 +23,9 @@ def main():
     if len(sys.argv) < 2:
         print("usage: build.py <bolo number>"); sys.exit(2)
     n = sys.argv[1]
+    v2 = "--v2" in sys.argv
+    tname = "template-v2.html" if v2 else "template.html"
+    suffix = ".v2" if v2 else ""
     board = json.loads(load(os.path.join(HERE, "boards", n + ".json")))
     glossary = json.loads(load(GLOSS))
 
@@ -32,17 +35,17 @@ def main():
         print("MISSING GLOSSARY KEYS:", ", ".join(missing)); sys.exit(1)
 
     data = json.dumps({"board": board, "glossary": glossary}, ensure_ascii=False).replace("</script", "<\\/script")
-    tpl = load(os.path.join(HERE, "template.html"))
+    tpl = load(os.path.join(HERE, tname))
     assert tpl.count("/*__DATA__*/null") == 1
     frag = tpl.replace("/*__DATA__*/null", data).replace("<title>BOLO</title>", f"<title>DOPE SHEET {n}</title>")
 
     os.makedirs(os.path.join(HERE, "out"), exist_ok=True)
-    out = os.path.join(HERE, "out", f"BOLO-{n}.html")
+    out = os.path.join(HERE, "out", f"BOLO-{n}{suffix}.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as f:
         f.write('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n</head>\n<body>\n' + frag + '\n</body>\n</html>\n')
 
     scratch = os.environ.get("SITREP_SCRATCH") or tempfile.gettempdir()
-    fp = os.path.join(scratch, f"BOLO-{n}.fragment.html")
+    fp = os.path.join(scratch, f"BOLO-{n}{suffix}.fragment.html")
     with io.open(fp, "w", encoding="utf-8", newline="\n") as f:
         f.write(frag)
 

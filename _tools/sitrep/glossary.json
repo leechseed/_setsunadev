@@ -700,5 +700,11 @@
   "st": "provisional",
   "d": "How agents are laid out on any multi-agent job (BOLO 54, 9/12): hub and spoke. The main line decomposes into pieces that share no state; specialists run independently on disjoint inputs; they sync only at named handoff points; one reviewer, a script where it can be, sits at the fan-in. No peer cross-checks. Rides the [[gearbox|gearbox]]: the gear says how many, the formation says how they stand.",
   "w": "SOP.md §1 (the gear row) · BOLO 54"
+ },
+ "bolo55": {
+  "t": "BOLO 55",
+  "k": "item",
+  "d": "The DOPE SHEET format — the document layout. Captured 9/16.",
+  "w": "BOLO.md #55 · DOPE SHEET 55"
  }
 }

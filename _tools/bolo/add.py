@@ -8,6 +8,7 @@ Does:   next number = max row + 1 · row appended after the last active row · h
 The wording is the main line's; the numbering, dating, and stubs are the script's.
 """
 import io, json, os, re, sys, datetime
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
