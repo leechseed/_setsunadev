@@ -4,35 +4,78 @@
   "title": "The sit rep formation — orchestrator, independent specialists, one reviewer at the fan-in",
   "trunk": "OPERATOR · feeds BOLO 51 · 52 · 38 · every multi-agent run",
   "issued": "2026-09-12",
-  "asof": "2026-09-12",
+  "asof": "2026-09-16",
   "s": "hot",
-  "status": "CAPTURED + BUILT 9/12 · prep.py · assemble.py · the sitrep skill · SOP §1 formation rule · dry run passed · first live run on the next \"sit rep\"",
+  "status": "BUILT 9/12 · FIRST LIVE RUN 9/15 (three passes, fixes per fragment) · SECOND 9/16 (one round) · **9/16: the seats named by NASA crew grade — CDR · MS · PS · RANGE (\"go CDR\"); the formation ran at a lifted ceiling on BOLO 18 (seven PS at once) without a peer check**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the sit rep (SOP §1–§4) · the gearbox (BOLO 52) · the logistics front (BOLO 51, offload pick c) · the front page (BOLO 38) · every fan-out from here",
   "related": [
-   {"n": 52, "why": "the gearbox says how many agents; the formation says how they stand"},
-   {"n": 51, "why": "the logistics front: this is offload pick c, the sit rep as a skill, landed first"},
-   {"n": 38, "why": "the front page: the board JSON is now assembled from fragments, not written whole"},
-   {"n": 47, "why": "the dashboard consult: idea 3 (cached static panels) and idea 6 (build-side diff) both land here as the carry-forward and the digest"},
-   {"n": 45, "why": "the sixteen-agent creator-case run: the incident this doctrine answers"}
+   {
+    "n": 52,
+    "why": "the gearbox says how many agents; the formation says how they stand"
+   },
+   {
+    "n": 51,
+    "why": "the logistics front: this is offload pick c, the sit rep as a skill, landed first"
+   },
+   {
+    "n": 38,
+    "why": "the front page: the board JSON is now assembled from fragments, not written whole"
+   },
+   {
+    "n": 47,
+    "why": "the dashboard consult: idea 3 (cached static panels) and idea 6 (build-side diff) both land here as the carry-forward and the digest"
+   },
+   {
+    "n": 45,
+    "why": "the sixteen-agent creator-case run: the incident this doctrine answers"
+   }
   ],
   "home": "BOLO.md · row 54",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
-  {"k": "speed", "w": "Speed", "line": "Coordination is the serial part. Cut it to four handoffs and the parallel work actually runs in parallel."},
-  {"k": "focus", "w": "Focus", "line": "Each specialist reads one source and writes one fragment. A narrow context has fewer ways to wander."},
-  {"k": "boldness", "w": "Boldness", "line": "No peer checks. One reviewer at the merge, a script where a script can do it, catches most of what sixteen mutual checkers would."}
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Coordination is the serial part. Cut it to four handoffs and the parallel work actually runs in parallel."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "Each specialist reads one source and writes one fragment. A narrow context has fewer ways to wander."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "No peer checks. One reviewer at the merge, a script where a script can do it, catches most of what sixteen mutual checkers would."
+  }
  ],
  "frago": {
   "mission": "Rebuild the sit rep as an orchestrated run: a zero-token prep script, three independent specialists at gear 1, a script reviewer at the fan-in, the main line writing only the leverage line and the header, **in order to** take the main line's read from about 211 KB to about 3 KB per board and keep every later turn light.",
-  "order": "**Say \"sit rep\" and watch the first live run.** Nothing else is owed; the formation runs provisionally until you rule it.",
+  "order": "**Rule the formation rule into SOP §1 as standing (it has run five times without a cross-check), or leave it provisional another week.**",
   "default": "Silence: the formation stands as the sit rep's procedure; the same layout governs every fan-out from here (SOP §1, the gear row).",
   "calls": [
-   {"q": "The formation rule as SOP", "options": "ruled as written · amended · struck", "default": "stands provisional in SOP §1 under the gear row", "s": "open"},
-   {"q": "INDEX on sonnet", "options": "sonnet (write-ups, per the gearbox) · haiku (cheaper, riskier on the Fresh Ten ranking)", "default": "sonnet", "s": "open"},
-   {"q": "The other three skills", "options": "DOPE SHEET · FRAGO · Oscar Mike next, same pattern · wait for the first live run", "default": "after the first live run", "s": "open"}
+   {
+    "q": "The formation rule as SOP",
+    "options": "ruled as written · amended · struck",
+    "default": "stands provisional in SOP §1 under the gear row",
+    "s": "open"
+   },
+   {
+    "q": "INDEX on sonnet",
+    "options": "sonnet (write-ups, per the gearbox) · haiku (cheaper, riskier on the Fresh Ten ranking)",
+    "default": "sonnet",
+    "s": "open"
+   },
+   {
+    "q": "The other three skills",
+    "options": "DOPE SHEET · FRAGO · Oscar Mike next, same pattern · wait for the first live run",
+    "default": "after the first live run",
+    "s": "ruled",
+    "ruling": "Built 9/12 night as the offload phases 2.2–2.4 and run live 9/15–9/16 (DOPE SHEET 44 and 18, FRAGO 24 ×5, Oscar Mike). Closed."
+   }
   ]
  },
  "paragraphs": [
@@ -51,20 +94,47 @@
     {
      "label": "The transmission · 9/12",
      "items": [
-      {"t": "**\"Independent specialists, syncing only at defined handoff points, wins almost every time. Continuous cross-checking is the expensive part, not the work.\"**", "s": "ruled"},
-      {"t": "**Amdahl:** parallel speedup is capped by the serial fraction, and coordination is the serial fraction. Sixteen agents reading each other is a sequential job with a sixteen-fold bill.", "s": "ruled"},
-      {"t": "**Brooks:** channels grow n(n−1)/2. Sixteen agents talking is 120 channels; hub and spoke is 16.", "s": "ruled"},
-      {"t": "**Context is the cost unit.** A narrow agent with three tools has a small prompt, cheaper calls, fewer ways to wander, less drift. The restriction is not the point; the smaller decision space is.", "s": "ruled"},
-      {"t": "**Errors don't propagate across independent agents, but nobody catches them either.** So one reviewer at the fan-in, not a peer check on every step. Reviewing is far cheaper than generating.", "s": "ruled"},
-      {"t": "**Mid-run sync only where outputs truly depend on each other.** A lot of that means the job was not decomposable; fewer agents in sequence would have been cheaper.", "s": "ruled"}
+      {
+       "t": "**\"Independent specialists, syncing only at defined handoff points, wins almost every time. Continuous cross-checking is the expensive part, not the work.\"**",
+       "s": "ruled"
+      },
+      {
+       "t": "**Amdahl:** parallel speedup is capped by the serial fraction, and coordination is the serial fraction. Sixteen agents reading each other is a sequential job with a sixteen-fold bill.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Brooks:** channels grow n(n−1)/2. Sixteen agents talking is 120 channels; hub and spoke is 16.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Context is the cost unit.** A narrow agent with three tools has a small prompt, cheaper calls, fewer ways to wander, less drift. The restriction is not the point; the smaller decision space is.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Errors don't propagate across independent agents, but nobody catches them either.** So one reviewer at the fan-in, not a peer check on every step. Reviewing is far cheaper than generating.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Mid-run sync only where outputs truly depend on each other.** A lot of that means the job was not decomposable; fewer agents in sequence would have been cheaper.",
+       "s": "ruled"
+      }
      ]
     },
     {
      "label": "The sit rep before · measured 9/12",
      "items": [
-      {"t": "**One agent, the main line, on Fable:** read SOP · STATE · BOLO · PROJECTS · the cache (211 KB, about 55,000 tokens), wrote the whole 27 KB board JSON by hand, then carried all of it in context for the rest of the session.", "s": "done"},
-      {"t": "**The 9/10 night board's own header says it:** three rounds, nine calls, ~75 KB read on the cheap path, more on a cold one. Sit rep and page sessions were 41% of the week.", "s": "done"},
-      {"t": "**Two blocks never change between boards** (III is frozen since 8/15; VII is the proword list) and were rewritten every time.", "s": "done"}
+      {
+       "t": "**One agent, the main line, on Fable:** read SOP · STATE · BOLO · PROJECTS · the cache (211 KB, about 55,000 tokens), wrote the whole 27 KB board JSON by hand, then carried all of it in context for the rest of the session.",
+       "s": "done"
+      },
+      {
+       "t": "**The 9/10 night board's own header says it:** three rounds, nine calls, ~75 KB read on the cheap path, more on a cold one. Sit rep and page sessions were 41% of the week.",
+       "s": "done"
+      },
+      {
+       "t": "**Two blocks never change between boards** (III is frozen since 8/15; VII is the proword list) and were rewritten every time.",
+       "s": "done"
+      }
      ]
     }
    ]
@@ -103,12 +173,54 @@
    },
    "main_effort": "H2, the fan-in. The checklist is the reviewer; the main line's only judgment is Block VI and the header.",
    "phases": [
-    {"n": 0, "t": "**H0 · prep** — `python _tools/sitrep/prep.py`: the previous board split per block · STATE sliced to Blocked + Live (24 KB, not 74) · git log since the last board · box probe · III and VII carried · three briefs written. Zero tokens.", "s": "done", "when": "9/12"},
-    {"n": 1, "t": "**H1 · fan out** — RACK (haiku: `_CACHE/` → Block 0) · INDEX (sonnet: STATE slices + git → I · II · V) · WATCH (haiku: BOLO.md → IV + PMCS), launched in one message, each reading only its brief's files, no cross-talk. Gear 1, no shift.", "s": "done", "when": "9/12"},
-    {"n": 2, "t": "**H2 · fan in** — `assemble.py <date>`: merge · the reviewer's checklist (eight blocks in order · text + trunk on every item · glossary keys resolve · every BOLO number real and placed once · Block V rows = the Blocked table · plain + strand complete · no stale fragment) · the digest. The main line writes `frag/VI.json` and `meta.patch.json` off the digest.", "s": "done", "when": "9/12"},
-    {"n": 3, "t": "**H3 · build, flush, publish** — `assemble.py <date> --build --flush` writes the board, builds SITREP.html, moves every cache note but today's to `_LOG/`; the Artifact tool republishes to the standing URL. The reply: link · Block 0 in three bullets · the leverage line · one caveat line.", "s": "done", "when": "9/12"},
-    {"n": 4, "t": "**The first live run** — the next \"sit rep\". Read the findings; fix the one fragment that is wrong by rerunning its specialist with the finding pasted under the brief. Never launch a checker agent.", "s": "gated", "when": "next sit rep"},
-    {"n": 5, "t": "**The other three skills** — DOPE SHEET · FRAGO · Oscar Mike on the same pattern (BOLO 51, offload pick c). Oscar Mike is the natural second: one haiku writes the cache note from the transcript, a script appends the journal, the main line patches STATE.", "s": "gated", "when": "after 4"}
+    {
+     "n": 0,
+     "t": "**H0 · prep** — `python _tools/sitrep/prep.py`: the previous board split per block · STATE sliced to Blocked + Live (24 KB, not 74) · git log since the last board · box probe · III and VII carried · three briefs written. Zero tokens.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 1,
+     "t": "**H1 · fan out** — RACK (haiku: `_CACHE/` → Block 0) · INDEX (sonnet: STATE slices + git → I · II · V) · WATCH (haiku: BOLO.md → IV + PMCS), launched in one message, each reading only its brief's files, no cross-talk. Gear 1, no shift.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 2,
+     "t": "**H2 · fan in** — `assemble.py <date>`: merge · the reviewer's checklist (eight blocks in order · text + trunk on every item · glossary keys resolve · every BOLO number real and placed once · Block V rows = the Blocked table · plain + strand complete · no stale fragment) · the digest. The main line writes `frag/VI.json` and `meta.patch.json` off the digest.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 3,
+     "t": "**H3 · build, flush, publish** — `assemble.py <date> --build --flush` writes the board, builds SITREP.html, moves every cache note but today's to `_LOG/`; the Artifact tool republishes to the standing URL. The reply: link · Block 0 in three bullets · the leverage line · one caveat line.",
+     "s": "done",
+     "when": "9/12"
+    },
+    {
+     "n": 4,
+     "t": "**The first live run** — 9/15: three passes, three blocking findings, each specialist fixed its own fragment; 9/16 second run clean in one round.",
+     "s": "done",
+     "when": "9/15"
+    },
+    {
+     "n": 5,
+     "t": "**The other three skills** — DOPE SHEET · FRAGO · Oscar Mike built on the same shape (BOLO 51 phases 2.2–2.4), live 9/15–9/16.",
+     "s": "done",
+     "when": "9/12 night"
+    },
+    {
+     "n": 6,
+     "s": "done",
+     "when": "9/16",
+     "t": "**The seats named** — CDR · MS · PS · RANGE (SOP §5); the digest hook prints the grades at every open."
+    },
+    {
+     "n": 7,
+     "s": "done",
+     "when": "9/16",
+     "t": "**Scale test** — the library sweep: seven PS batches in parallel, scripts at both ends, RANGE at the fan-in; 309 TOCs keyed in one round, no cross-talk, no checker agent."
+    }
    ]
   },
   {
@@ -123,20 +235,63 @@
     "next": "Run it."
    },
    "files": [
-    {"path": "_tools/sitrep/prep.py", "what": "H0: the zero-token prep, the briefs", "s": "done"},
-    {"path": "_tools/sitrep/assemble.py", "what": "H2/H3: the fan-in, the checklist, --build --flush", "s": "done"},
-    {"path": ".claude/skills/sitrep/SKILL.md", "what": "the procedure, loaded on \"sit rep\"", "s": "done"},
-    {"path": "_tools/sitrep/work/<date>/", "what": "the run's working dir (gitignored): prev/ · frag/ · briefs · digest inputs", "s": "done"},
-    {"path": "SOP.md §1 · §4", "what": "the formation rule under the gear row; the sit rep row's pipeline; §4 amended", "s": "done"},
-    {"path": "_tools/sitrep/glossary.json", "what": "formation (provisional) · bolo54", "s": "done"},
-    {"path": "BOLO.md · row 54", "what": "the tasking, the doctrine banked", "s": "done"}
+    {
+     "path": "_tools/sitrep/prep.py",
+     "what": "H0: the zero-token prep, the briefs",
+     "s": "done"
+    },
+    {
+     "path": "_tools/sitrep/assemble.py",
+     "what": "H2/H3: the fan-in, the checklist, --build --flush",
+     "s": "done"
+    },
+    {
+     "path": ".claude/skills/sitrep/SKILL.md",
+     "what": "the procedure, loaded on \"sit rep\"",
+     "s": "done"
+    },
+    {
+     "path": "_tools/sitrep/work/<date>/",
+     "what": "the run's working dir (gitignored): prev/ · frag/ · briefs · digest inputs",
+     "s": "done"
+    },
+    {
+     "path": "SOP.md §1 · §4",
+     "what": "the formation rule under the gear row; the sit rep row's pipeline; §4 amended",
+     "s": "done"
+    },
+    {
+     "path": "_tools/sitrep/glossary.json",
+     "what": "formation (provisional) · bolo54",
+     "s": "done"
+    },
+    {
+     "path": "BOLO.md · row 54",
+     "what": "the tasking, the doctrine banked",
+     "s": "done"
+    }
    ],
    "cost": [
-    {"k": "the main line's read", "v": "~3 KB per board (was ~211 KB)"},
-    {"k": "the specialists", "v": "two haiku contexts (~12 KB · ~81 KB) + one sonnet (~30 KB); they end when they return"},
-    {"k": "sync points", "v": "four, none agent-to-agent"},
-    {"k": "the reviewer", "v": "a script; zero tokens"},
-    {"k": "the build", "v": "this turn"}
+    {
+     "k": "the main line's read",
+     "v": "~3 KB per board (was ~211 KB)"
+    },
+    {
+     "k": "the specialists",
+     "v": "two haiku contexts (~12 KB · ~81 KB) + one sonnet (~30 KB); they end when they return"
+    },
+    {
+     "k": "sync points",
+     "v": "four, none agent-to-agent"
+    },
+    {
+     "k": "the reviewer",
+     "v": "a script; zero tokens"
+    },
+    {
+     "k": "the build",
+     "v": "this turn"
+    }
    ]
   },
   {
@@ -154,19 +309,28 @@
     {
      "label": "Who decides",
      "items": [
-      {"t": "**Papi** — the formation rule as SOP (ruled · amended · struck) · INDEX on sonnet or haiku · when the other three skills follow. **Claude** — the scripts, the briefs, the checklist, every run.", "s": "open"}
+      {
+       "t": "**Papi** — the formation rule as SOP (ruled · amended · struck) · INDEX on sonnet or haiku · when the other three skills follow. **Claude** — the scripts, the briefs, the checklist, every run.",
+       "s": "open"
+      }
      ]
     },
     {
      "label": "The gate",
      "items": [
-      {"t": "**Defaults run if silent:** the formation stands as the sit rep's procedure and as the Command layout for every fan-out; INDEX on sonnet; the other three skills after the first live run.", "s": "held"}
+      {
+       "t": "**Defaults run if silent:** the formation stands as the sit rep's procedure and as the Command layout for every fan-out; INDEX on sonnet; the other three skills after the first live run.",
+       "s": "held"
+      }
      ]
     },
     {
      "label": "Signal",
      "items": [
-      {"t": "**\"Sit rep\"** fires the skill. A wrong fragment is fixed by rerunning one specialist with the finding under its brief. **A gear shift never adds a fourth specialist to the sit rep;** the sit rep is not a bigger job at gear 2.", "s": "ruled"}
+      {
+       "t": "**\"Sit rep\"** fires the skill. A wrong fragment is fixed by rerunning one specialist with the finding under its brief. **A gear shift never adds a fourth specialist to the sit rep;** the sit rep is not a bigger job at gear 2.",
+       "s": "ruled"
+      }
      ]
     }
    ]
@@ -183,8 +347,26 @@
     "next": "The first live run's entry."
    },
    "entries": [
-    {"when": "9/12", "who": "Papi", "t": "\"Break break break. New bolo on deck. Considering this new information, optimize the sitrep process.\" The doctrine: independent specialists, sync only at defined handoff points; Amdahl · Brooks · context as the cost unit · one reviewer at the fan-in."},
-    {"when": "9/12", "who": "Claude", "t": "BOLO 54 captured; prep.py and assemble.py written and dry-run on the 9/10 board (14 findings, 0 blocking); the sitrep skill written; SOP §1 formation rule + §4 amended; glossary formation + bolo54; the sit rep URL added to pages.json; this sheet built."}
+    {
+     "when": "9/12",
+     "who": "Papi",
+     "t": "\"Break break break. New bolo on deck. Considering this new information, optimize the sitrep process.\" The doctrine: independent specialists, sync only at defined handoff points; Amdahl · Brooks · context as the cost unit · one reviewer at the fan-in."
+    },
+    {
+     "when": "9/12",
+     "who": "Claude",
+     "t": "BOLO 54 captured; prep.py and assemble.py written and dry-run on the 9/10 board (14 findings, 0 blocking); the sitrep skill written; SOP §1 formation rule + §4 amended; glossary formation + bolo54; the sit rep URL added to pages.json; this sheet built."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Go CDR.\" The crew grades ruled."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "FRAGO 54: grades, the live runs, the scale test; one call closed, two stand."
+    }
    ]
   }
  ]

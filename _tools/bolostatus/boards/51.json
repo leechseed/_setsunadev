@@ -6,7 +6,7 @@
   "issued": "2026-09-12",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "CAPTURED 9/12 · all eight offload phases BUILT 9/12 night · FIRST LIVE RUNS 9/15–9/16: sit rep twice (the formation, gear 1, 3 specialists + script reviewer), Oscar Mike once (close.py → NOTE on haiku → journal.py) · BOLO 53 filed at PROCEDURE on the rung · four calls still run on defaults (instrument · name · cadence · the force order)",
+  "status": "CAPTURED 9/12 · all eight offload phases BUILT 9/12 night · LIVE RUNS 9/15–9/16 on every skill · **9/16: the crew grades ruled (CDR · MS · PS · RANGE), the TM page type added, the library sweep ran at the lifted ceiling (seven PS batches at once, ~2.7M specialist tokens for BOLO 18 in one night, scripts zero)** · four doctrine calls still open",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP · STATE · BOLO · the pages (SITREP · DOPE SHEET · SOI) · DARKROOM · BVX-LEARN · LOCI · the project flow · the design system · the lattice · WARROOM",
   "related": [
@@ -41,7 +41,7 @@
   ],
   "home": "BOLO.md · row 51",
   "card": "none",
-  "version": "v0.6 · DOPE SHEET"
+  "version": "v0.7 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -215,6 +215,19 @@
        "s": "open"
       }
      ]
+    },
+    {
+     "label": "FRAGO · 9/16",
+     "items": [
+      {
+       "t": "**The crew grades** (Papi: \"I like specialist, mission specialist… go CDR\"): CDR = the main line (Fable) · MS Mission Specialist = the writer (Sonnet) · PS Payload Specialist = the fetcher (Haiku) · RANGE = the script reviewer. \"Sonnet specialist\" retired. SOP §1 + §5.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Measured tonight:** waves 1–3 + the full pass + the TM build on BOLO 18 ≈ 2.7M specialist tokens; the DARKROOM count, the classify, the keying, the gap scan, the shelves, the journal: zero. The offload holds at scale; the cost is the reading, and only the reading.",
+       "s": "done"
+      }
+     ]
     }
    ]
   },
@@ -347,6 +360,18 @@
      "s": "done",
      "when": "9/15",
      "t": "**First live runs.** Sit rep ran on the formation 9/15 (three passes; three blocking findings caught by the script reviewer and fixed in parallel) and again 9/16 (one round, no re-runs, 212k specialist tokens: 48k RACK · 90k INDEX · 74k WATCH; the main line read two digests). Oscar Mike ran 9/15 on close.py + NOTE on haiku (71k haiku tokens on a 78 KB transcript)."
+    },
+    {
+     "n": 29,
+     "s": "done",
+     "when": "9/16",
+     "t": "**2.9 · The library sweep as an offload instance** — `_tools/zotero/` (inventory · classify · fullpass key/batch/merge/shelves · gap_scan · check_distill): scripts at both ends, seven PS batches of fifty TOCs in parallel on Papi's word (\"take all the agents you need\"), RANGE at every fan-in; 1,031 items keyed in one pass. The standing procedure: `_tools/zotero/README.md`."
+    },
+    {
+     "n": 30,
+     "s": "done",
+     "when": "9/16",
+     "t": "**2.10 · TM, the Technical Manual page** — `_tools/tm/build.py` renders a system SSOT document into the document layout with the CK3 hover layer as a blocking gate and Mermaid written static (the host renders only static markup; found and fixed 9/16). TM 04 · 03 · 02 published."
     }
    ],
    "coord": [
@@ -573,6 +598,21 @@
      "when": "9/16",
      "who": "Claude",
      "t": "FRAGO 51 v0.6: phase 3 unlocked by the live runs; phase 1 shows what is ruled and what is still yours. The bolostatus scripts now print UTF-8 on Windows (frago.py crashed on cp1252 mid-build)."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"I don't like the name Sonnet Specialist. Let's do something NASA Marine encoding.\" → \"go CDR.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Run the full pass and take all the agents you need.\" The ceiling lifted for one task; seven PS at once."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "FRAGO 51: crew grades, the sweep as offload instance 2.9, TM as 2.10, the night's measurement. The four doctrine calls stand."
     }
    ]
   }
