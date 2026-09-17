@@ -881,5 +881,26 @@
   "st": "ruled",
   "d": "One of [[judy|JUDY]]'s two acknowledgments, RULED 9/17: your transmission came through clean, wait for the reply. The other is \"Copy.\" She says nothing else to confirm receipt.",
   "w": "SOP.md §5 · _tools/dictation/reader.py"
+ },
+ "lock-in": {
+  "t": "JUDY, lock in",
+  "k": "proword",
+  "st": "ruled",
+  "d": "Switches [[judy|JUDY]] to the military-comms attitude, RULED 9/17: radiotelephone register, prowords, no jokes, brat 0, nine sentences at most. Preset key strac. Bench it beat: STRAC · BY THE BOOK · CONDITION ONE · NOMINAL.",
+  "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
+ },
+ "fries-in-the-bag": {
+  "t": "JUDY, put the fries in the bag",
+  "k": "proword",
+  "st": "ruled",
+  "d": "Switches [[judy|JUDY]] to the comfortable-day attitude, RULED 9/17: warm, dry, a light flirt, the information first; brat 45. The standing default. Preset key at-ease. Bench it beat: AT EASE · REST · CRUISE. Garble: \"put the fries in the best\".",
+  "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
+ },
+ "goon-time": {
+  "t": "JUDY, it's goon time",
+  "k": "proword",
+  "st": "ruled",
+  "d": "Switches [[judy|JUDY]] to the full-brat attitude, RULED 9/17: teasing, knowing, innuendo allowed, facts intact; brat 100, sixteen sentences. Preset key liberty. Bench it beat: LIBERTY CALL · ZERO-G · OFF THE LEASH.",
+  "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
  }
 }

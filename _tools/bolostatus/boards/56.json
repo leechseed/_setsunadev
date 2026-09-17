@@ -5,8 +5,8 @@
   "trunk": "OPERATOR, feeds every trunk",
   "issued": "2026-09-16",
   "asof": "2026-09-17",
-  "s": "open",
-  "status": "v0.11 · the three attitudes BUILT 9/17 (STRAC military comms · AT EASE the comfortable day · LIBERTY CALL full brat), one script switches them; the three prowords are benched for Chief's ruling; AT EASE applied as the standing default, provisional",
+  "s": "done",
+  "status": "v0.12 · JUDY COMPLETE 9/17: the three attitude prowords RULED in Chief's own words — \"JUDY, lock in\" (military comms) · \"JUDY, put the fries in the bag\" (the comfortable day, the default) · \"JUDY, it's goon time\" (full brat). Nothing open on this row.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.11 · DOPE SHEET"
+  "version": "v0.12 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the MCP server that exposes brain.py's seven tools to the Opus VS Code session, in order to finish JUDY's one unbuilt piece at zero standing cost.",
-  "order": "**Rule the three words.** Say which of the benched words fires each preset (or your own); the switch is live under the working words meanwhile: \"JUDY, STRAC\" · \"JUDY, at ease\" · \"JUDY, liberty call\".",
-  "default": "Silence: the working words stand and AT EASE stays the default.",
+  "order": "**Nothing is owed. Say the word and she switches.** \"JUDY, lock in\" · \"JUDY, put the fries in the bag\" · \"JUDY, it's goon time\"; the console's Persona panel fine-tunes any of them.",
+  "default": "Silence: put the fries in the bag stands as the default.",
   "calls": [
    {
     "q": "The wire — build now?",
@@ -112,7 +112,8 @@
     "q": "The three attitude prowords",
     "options": "preset 1 military comms: STRAC (rec) · BY THE BOOK · CONDITION ONE · NOMINAL — preset 2 the comfortable day: AT EASE (rec) · REST · CRUISE — preset 3 full brat: LIBERTY CALL (rec) · ZERO-G · OFF THE LEASH; spoken as \"JUDY, <word>\"",
     "default": "the three recommendations as working words",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/17 by Chief, his own words over the bench: \"JUDY, lock in\" → military comms (key strac) · \"JUDY, put the fries in the bag\" → the comfortable day (key at-ease, the default) · \"JUDY, it's goon time\" → full brat (key liberty). presets.py resolves the spoken phrases and their garbles; SOP §1, §5, §8 and the SOI carry them."
    }
   ]
  },
@@ -720,6 +721,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Built presets.py with the three settings and their prompts, fed the active prompt to the Haiku rewrite and the spoken-line rule, benched three words per preset (STRAC · AT EASE · LIBERTY CALL recommended), applied AT EASE as the standing default and restarted session voice."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"For the military comms, it'll be JUDY, lock in. For the comfortable day, the pro phrase would be JUDY, put the fries in the bag. And for the final brat, it'll be JUDY, it's goon time.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Ruled into presets.py (the phrases and their garbles resolve to the presets), SOP §1 row and §5 ruling, three §8 codebook rows, three SOI register keys (edition 2026-09-17-4), BOLO 56, the README and memory. Put the fries in the bag stays the default. BOLO 56 has nothing open."
     }
    ]
   }
