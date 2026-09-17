@@ -12,14 +12,14 @@ user keybindings.json without a `when` clause so it works from anywhere in VS Co
     python focus.py            do it once (proof)
 
 judy.json → "session": {"focus_on_talk": "pad" | "always" | "never"}   (default "pad")
-config.json → "focus_key": the chord bound to claude-vscode.focus (default ctrl+alt+shift+j)
+config.json → "focus_key": the key bound to claude-vscode.focus (default f14, a dead key)
 """
 import io, os, json, time, ctypes, ctypes.wintypes as W
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 JUDY = os.path.join(HERE, "judy.json")
 CONFIG = os.path.join(HERE, "config.json")
-FOCUS_KEY = "ctrl+alt+shift+j"
+FOCUS_KEY = "f14"   # RULED 9/17 late: a dead key; ctrl+alt+shift+j did not land
 TITLE_TAIL = "Visual Studio Code"
 
 user32 = ctypes.windll.user32
@@ -113,13 +113,14 @@ def focus_claude(prefer=None):
                 hwnd, title = h, t
                 break
     ok = foreground(hwnd)
-    time.sleep(0.12)
+    time.sleep(0.25)
     try:
         import keyboard
-        keyboard.send(focus_key())
+        k = focus_key()
+        keyboard.press(k); time.sleep(0.03); keyboard.release(k)
     except Exception as e:
         return ok, "%s (focus key failed: %s)" % (title, e)
-    time.sleep(0.08)
+    time.sleep(0.25)
     return ok, title
 
 
@@ -128,8 +129,8 @@ def send_box():
     ok, title = focus_claude()
     try:
         import keyboard
-        time.sleep(0.05)
-        keyboard.send("enter")
+        time.sleep(0.15)
+        keyboard.press("enter"); time.sleep(0.03); keyboard.release("enter")
     except Exception as e:
         return ok, "%s (enter failed: %s)" % (title, e)
     return ok, title
