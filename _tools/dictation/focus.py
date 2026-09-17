@@ -64,6 +64,31 @@ def send_key():
     return "enter"
 
 
+# The keyboard library maps "f14" to scan code 125 (that is VK_F14's number, not its scan code), so
+# keyboard.press("f14") never reaches VS Code as F14 (Chief 9/17: "when I'm focused on VS Code and press
+# the pad, nothing happens"; from another program it "worked" only because the window activation restored
+# the box's focus). F13–F24 go through keybd_event with the real virtual-key code instead.
+_VK_F = {f"f{n}": 0x6F + n for n in range(13, 25)}   # f13 = 0x7C … f24 = 0x87
+_SCAN_F = {"f13": 0x64, "f14": 0x65, "f15": 0x66, "f16": 0x67, "f17": 0x68, "f18": 0x69, "f19": 0x6A,
+           "f20": 0x6B, "f21": 0x6C, "f22": 0x6D, "f23": 0x6E, "f24": 0x76}
+
+
+def tap(key, hold=0.03):
+    """Press and release one key. F13–F24 by virtual-key code (keybd_event); everything else via keyboard."""
+    k = key.lower().strip()
+    if k in _VK_F:
+        vk, sc = _VK_F[k], _SCAN_F.get(k, 0)
+        user32.keybd_event(vk, sc, 0, 0)
+        time.sleep(hold)
+        user32.keybd_event(vk, sc, 2, 0)   # KEYEVENTF_KEYUP
+        return
+    import keyboard
+    if "+" in k:
+        keyboard.send(k)
+    else:
+        keyboard.press(k); time.sleep(hold); keyboard.release(k)
+
+
 def vscode_windows():
     out = []
 
@@ -94,9 +119,7 @@ def foreground(hwnd):
     # the input tap: Windows only lets the process that last took input set the foreground.
     # Never a bare Alt (it activates the menu bar); the focus key is a dead key, so tap that.
     try:
-        import keyboard
-        k = focus_key()
-        keyboard.press(k); time.sleep(0.02); keyboard.release(k)
+        tap(focus_key(), 0.02)
     except Exception:
         pass
     user32.SetForegroundWindow(hwnd)
@@ -143,9 +166,7 @@ def focus_claude(prefer=None):
     ok = foreground(hwnd)
     time.sleep(0.25)
     try:
-        import keyboard
-        k = focus_key()
-        keyboard.press(k); time.sleep(0.03); keyboard.release(k)
+        tap(focus_key())
     except Exception as e:
         return ok, "%s (focus key failed: %s)" % (title, e)
     time.sleep(0.25)
