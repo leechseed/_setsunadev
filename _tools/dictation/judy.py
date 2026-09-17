@@ -325,15 +325,23 @@ class Loop:
         # -- MIDI pad, if one has been learned
         self.pad = None
         if dcfg().get("midi_note") is not None:
+            # the focus pad (Chief 9/17): the pad beside the talk pad brings VS Code forward
+            # and puts the cursor in the Claude Code box; the talk pad stays as it was
+            extra = {}
+            if self.session and dcfg().get("focus_note") is not None:
+                import focus
+                extra[int(dcfg()["focus_note"])] = (
+                    lambda: threading.Thread(target=focus.focus_claude, daemon=True).start(), lambda: None)
             if self.toggle:
-                self.pad = midipad.PadListener(lambda: self.fire("pad"), lambda: None)
+                self.pad = midipad.PadListener(lambda: self.fire("pad"), lambda: None, extra=extra)
             else:
                 self.pad = midipad.PadListener(
                     lambda: self.start("pad"),
-                    lambda: threading.Thread(target=self.finish, daemon=True).start())
+                    lambda: threading.Thread(target=self.finish, daemon=True).start(), extra=extra)
             if self.pad.start():
                 c = dcfg()
-                print(f"  pad    note {c['midi_note']} on {c.get('midi_port')}")
+                print(f"  pad    note {c['midi_note']} on {c.get('midi_port')}"
+                      + (f" · focus pad note {c['focus_note']}" if c.get("focus_note") is not None else " · no focus pad (midipad.py --learn-focus)"))
             else:
                 print(f"  pad    unavailable: {self.pad.error}")
 

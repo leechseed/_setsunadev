@@ -76,7 +76,7 @@ class PadListener:
     on_release when it comes up. Runs in a daemon thread; never blocks the caller.
     """
 
-    def __init__(self, on_press, on_release, port=None, note=None, channel=None):
+    def __init__(self, on_press, on_release, port=None, note=None, channel=None, extra=None):
         cfg = load()
         self.port_name = port or find_port()
         self.note = note if note is not None else cfg.get("midi_note")
@@ -84,6 +84,9 @@ class PadListener:
         self.on_press = on_press
         self.on_release = on_release
         self.down = False
+        # more pads on the same port: {note: (on_press, on_release)} — one open port serves them all
+        self.extra = {int(k): v for k, v in (extra or {}).items()}
+        self.down_extra = {k: False for k in self.extra}
         self._stop = threading.Event()
         self.thread = None
         self.error = None
@@ -107,6 +110,12 @@ class PadListener:
             return False
         return getattr(msg, "note", None) == self.note
 
+    def _extra(self, msg):
+        """The (on_press, on_release) pair for a registered extra pad, or None."""
+        if self.channel is not None and getattr(msg, "channel", None) != self.channel:
+            return None
+        return self.extra.get(getattr(msg, "note", None))
+
     def _run(self):
         import mido
         try:
@@ -116,6 +125,18 @@ class PadListener:
                         # polytouch is continuous pressure while the pad is held;
                         # it is not a press, and treating it as one retriggers madly
                         if msg.type == "polytouch":
+                            continue
+                        pair = self._extra(msg)
+                        if pair is not None:
+                            n = msg.note
+                            if msg.type == "note_on" and msg.velocity > 0:
+                                if not self.down_extra[n]:
+                                    self.down_extra[n] = True
+                                    pair[0]()
+                            elif msg.type == "note_off" or (msg.type == "note_on" and msg.velocity == 0):
+                                if self.down_extra[n]:
+                                    self.down_extra[n] = False
+                                    pair[1]()
                             continue
                         if not self._match(msg):
                             continue
@@ -169,23 +190,25 @@ def watch(seconds=30, port=None):
             print(f"    note {note:3d} on channel {ch:2d}  ({n} hit{'s' if n > 1 else ''})")
 
 
-def learn(port=None, timeout=45):
-    """Hit the pad you want. First note wins."""
+def learn(port=None, timeout=45, key="midi_note", label="talk button"):
+    """Hit the pad you want. First note wins. key="focus_note" learns the focus pad (Chief, 9/17)."""
     import mido
     name = find_port(port)
     if not name:
         print("  no MIDI input ports found")
         return None
     print(f"  port: {name}")
-    print("  HIT THE PAD you want as the talk button…  (ctrl-c to cancel)")
+    print(f"  HIT THE PAD you want as the {label}…  (ctrl-c to cancel)")
     try:
         with mido.open_input(name) as inp:
             t0 = time.time()
             while time.time() - t0 < timeout:
                 for msg in inp.iter_pending():
                     if msg.type == "note_on" and msg.velocity > 0:
-                        save({"midi_port": name, "midi_note": msg.note,
-                              "midi_channel": msg.channel})
+                        patch = {"midi_port": name, key: msg.note}
+                        if key == "midi_note":
+                            patch["midi_channel"] = msg.channel
+                        save(patch)
                         print(f"\n  learned: note {msg.note} on channel {msg.channel}")
                         print(f"  saved to {CONFIG}")
                         return msg.note
@@ -206,6 +229,8 @@ def main():
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--watch", action="store_true")
     ap.add_argument("--learn", action="store_true")
+    ap.add_argument("--learn-focus", action="store_true", help="hit the pad that focuses the Claude Code box (Chief, 9/17)")
+    ap.add_argument("--timeout", type=int, default=45)
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--port")
     ap.add_argument("--seconds", type=int, default=30)
@@ -222,6 +247,10 @@ def main():
                   f"ch {cfg.get('midi_channel')} on {cfg.get('midi_port')}")
         else:
             print("\n  no pad learned — run: python midipad.py --learn")
+        if cfg.get("focus_note") is not None:
+            print(f"  focus pad: note {cfg['focus_note']}")
+        else:
+            print("  no focus pad learned — run: python midipad.py --learn-focus")
         return
 
     if a.watch:
@@ -229,7 +258,11 @@ def main():
         return
 
     if a.learn:
-        learn(a.port)
+        learn(a.port, a.timeout)
+        return
+
+    if a.learn_focus:
+        learn(a.port, a.timeout, key="focus_note", label="FOCUS button (the pad beside the talk pad)")
         return
 
     if a.test:

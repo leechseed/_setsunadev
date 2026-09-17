@@ -60,6 +60,6 @@
    "note": "empty paths = sfx/key-up.wav · sfx/key-down.wav; drop your own files there"
   },
   "cap_from_persona": true,
-  "focus_on_talk": "pad"
+  "focus_on_talk": "never"
  }
 }
