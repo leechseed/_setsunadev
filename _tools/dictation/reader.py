@@ -158,6 +158,11 @@ def speech_form(block, cfg):
     m = SAY.search(block)
     if m:
         return sentences(m.group(1)), "say-line"
+    # Chief 9/17: "don't vocalize everything unless I'm the one talking to you." A reply that
+    # carries no say-line is Fable talking to her agents or the harness, not to Chief: silence.
+    # judy.json session.speak = "all" restores the old read-everything behaviour.
+    if (cfg.get("speak") or "say-line") == "say-line":
+        return [], "silent"
     if cfg.get("reader") == "haiku":
         r = rewrite_haiku(block)
         if r:

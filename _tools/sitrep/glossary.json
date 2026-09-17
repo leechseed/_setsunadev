@@ -173,7 +173,7 @@
   "t": "BOLO 24",
   "k": "item",
   "d": "The zero-budget ORANGE launch: 3D erotica stills in Blender, DARKROOM-fed, Ultrasin as the studio, a first signing with an arc. Charter in _PRIVATE/. Gated by [[d9|D-9]]; the next proposed gate is [[r9|R9]].",
-  "w": "BOLO.md #24"
+  "w": "BOLO.md #24 · BORESIGHT 24: https://claude.ai/artifact/Km31pQKccwtmT5UZfVdUa1"
  },
  "r9": {
   "t": "R9",
@@ -902,5 +902,124 @@
   "st": "ruled",
   "d": "Switches [[judy|JUDY]] to the full-brat attitude, RULED 9/17: teasing, knowing, innuendo allowed, facts intact; brat 100, sixteen sentences. Preset key liberty. Bench it beat: LIBERTY CALL · ZERO-G · OFF THE LEASH.",
   "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
+ },
+ "volcano": {
+  "t": "the volcano",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "Chief's image for BOLO 24's edge (9/17): be the unexpected and immediately a contender while everyone else climbs ladders. The boresight priced it as a mechanism, not a wish: [[character-moat|character as moat]], [[motion-lane|motion as fuse]], a [[category-sentence|press-ready sentence]] as the attached audience, and a [[thirty-day-test|thirty-day test]] before a library is banked.",
+  "w": "_PRIVATE/_boresight-24/market-demand.md §5 · BORESIGHT 24"
+ },
+ "volcano-sequence": {
+  "t": "the Volcano Sequence",
+  "k": "system",
+  "st": "provisional",
+  "d": "The fused method for BOLO 24 (method brief, 9/17): NASA's reviews and [[conops|ConOps]], the Marines' [[mcpp|problem framing and war game]], the Double Diamond and Jobs-to-be-Done for the audience, and category design's [[lightning-strike|Lightning Strike]] for the splash. Five phases slotted into M-002 to M-005 without renaming them; each closed by a review the charter did not have (MCR · SDR/PDR · CDR/SIR/ORR · FRR · Gate 4).",
+  "w": "_PRIVATE/_boresight-24/method.md §5"
+ },
+ "conops": {
+  "t": "ConOps",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Concept of operations, NASA systems engineering: walk the whole system end to end from the user's seat before building it, including the off-nominal scenarios. For BOLO 24: a follower's first thirty seconds, a subscriber's first paid week, a platform trust-and-safety review, a month where the conservative gate is missed twice. The missing design-research artifact the method brief named.",
+  "w": "_PRIVATE/_boresight-24/method.md §2 · NASA SEH"
+ },
+ "mcpp": {
+  "t": "MCPP",
+  "k": "noun",
+  "st": "ruled",
+  "d": "The Marine Corps Planning Process: problem framing → course-of-action development → COA war game → COA comparison and decision → orders development → transition. Problem framing is design research by another name; the war game is the pre-launch simulation BOLO 24 never had: play the launch three moves out against the algorithm, the platform and a rival account before a resource commits.",
+  "w": "_PRIVATE/_boresight-24/method.md §3 · MCWP 5-10"
+ },
+ "lightning-strike": {
+  "t": "Lightning Strike",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Play Bigger's category-design launch: a category announcement compressed into a short window to generate maximum attention, then repeated on a three-to-six-month cadence. The closest documented pattern to [[volcano|the volcano]]. For BOLO 24 it is workstream W8, the splash: one [[category-sentence|sentence]], one asset built to carry it, the day-one sequence, cleared by its own FRR.",
+  "w": "_PRIVATE/_boresight-24/method.md §4 · playbigger.com"
+ },
+ "trl": {
+  "t": "TRL",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Technology Readiness Level, NASA's maturity ladder from 1 (principles observed) to 9 (flight proven). The boresight's read: the render chain and the rig sit at 6–7 (demonstrated once, S4-01); the discovery engine sits at 3–4 (an analytical case, nothing demonstrated on a real audience). Raising the low one is what the [[thirty-day-test|thirty-day test]] is for.",
+  "w": "_PRIVATE/_boresight-24/method.md §2"
+ },
+ "thirty-day-test": {
+  "t": "the thirty-day test",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "R9 from the creator-cases synthesis, dated by the boresight: the slice plus the first loop posted to X and Bluesky 10/1–10/31 under the disclosed frame, thresholds written before the first post. Follower growth at or above about 1,300 a month (the Variety Itsol rate) reads [[volcano|volcano]], bank forty; about 470 (the Kirenes rate) reads ladder, bank twenty; under 250 reads replan the positioning before November. Call D-15.",
+  "w": "BORESIGHT 24 · D-15 · _PRIVATE/_boresight-24/facts.md §7"
+ },
+ "motion-lane": {
+  "t": "the motion lane",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "Call D-12: add short loops (five to fifteen seconds) as the viral unit beside the stills. The evidence: every documented fast breakout shipped motion; the best stills-only page found caps near a thousand a month after four years; the top of the lane (RadRoachHD 41,500 a month, wildeer 15,400) is animators and game devs. The pipeline renders a frame in thirty seconds, so a five-second loop is about an hour of GPU time.",
+  "w": "BORESIGHT 24 · D-12 · _PRIVATE/_boresight-24/market-supply.md §1–2"
+ },
+ "character-moat": {
+  "t": "character as moat",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "The boresight's read of MCDP 1's center of gravity for BOLO 24: the character bible (Remi's wound, register and arc) is the one thing the cautionary cases lack and competitors cannot copy quickly. It is the moat, not the fuse: it keeps an audience, it does not fetch one. The fuse is [[motion-lane|motion]] and a [[category-sentence|sentence]].",
+  "w": "BORESIGHT 24 · _PRIVATE/_boresight-24/method.md §3"
+ },
+ "category-sentence": {
+  "t": "the category sentence",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "Call D-16: the one sentence the whole launch carries, the [[lightning-strike|Lightning Strike]]'s point of view. Aitana Lopez's mechanism was a press-ready sentence ('the first AI model earning real money'), not a render. The studio's placeholder: 'a studio signed a girl who does not exist, and she is the only one in the lane with a life.' Chief words the real one.",
+  "w": "BORESIGHT 24 · D-16"
+ },
+ "processor-risk": {
+  "t": "processor risk",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Every adult platform sits downstream of the same card networks. Gumroad banned NSFW in March 2024 (Stripe/PayPal); Collective Shout forced Steam and itch.io to delist in July 2025 by threatening Visa and Mastercard; Civitai lost card processing in May 2025 and went to crypto. Platform choice is really 'which compliance layer survives the next scare'; the hedge every survivor cites is two or three platforms plus a mailing list from day one. Call D-13.",
+  "w": "_PRIVATE/_boresight-24/market-supply.md §3"
+ },
+ "fanvue": {
+  "t": "Fanvue",
+  "k": "noun",
+  "st": "ruled",
+  "d": "The platform positioning itself as home for disclosed AI and CGI personas doing adult or near-adult content; ran the first 'AI Personality of the Year' award with OpenArt in June 2026 (won by Soraya Thorne). Evidence that the disclosed-persona lane has an institution to break into on purpose. The boresight recommends a Fanvue test beside Patreon, SubscribeStar Adult and Fansly (D-13).",
+  "w": "_PRIVATE/_boresight-24/market-demand.md §3, §5"
+ },
+ "aitana": {
+  "t": "Aitana Lopez",
+  "k": "item",
+  "st": "ruled",
+  "d": "The Barcelona agency's disclosed CGI influencer (debuted late 2023): about ten thousand a month in brand deals before two hundred thousand followers, now near 360 thousand. The mechanism the boresight names as Remi's honest path: a small team, a maintained life, and a press-ready sentence the media amplified for free. SFW, and the adult CGI-persona lane is copying it.",
+  "w": "_PRIVATE/_boresight-24/market-demand.md §3, §5"
+ },
+ "stills-ceiling": {
+  "t": "the stills ceiling",
+  "k": "noun",
+  "st": "ruled",
+  "d": "What a stills-only 3D page earns, observed 9/17 on Graphtreon: the best found (Mr. Vargas) near a thousand a month on 177 patrons after four years and a studio apprenticeship; Dreamrider3D at 31 dollars a month after six years; platform-wide 98 percent of Patreon creators never clear a thousand a month. Animation or a game wrapper is what pushes past it.",
+  "w": "_PRIVATE/_boresight-24/market-supply.md §2"
+ },
+ "the-ai-shock": {
+  "t": "the AI shock",
+  "k": "noun",
+  "st": "ruled",
+  "d": "What generative AI did to hand-rendered 3D by 2026: it split the lane instead of killing it. Civitai lost card processing (May 2025); 'slop' was Merriam-Webster's 2025 word of the year; the counter-trend is a human-made premium. The policy line everywhere is stylized versus photoreal-of-a-real-person, not AI versus hand. A consistent hand-posed 3D character reads as 'real 3D' against the flood.",
+  "w": "_PRIVATE/_boresight-24/market-demand.md §2"
+ },
+ "better-areas": {
+  "t": "the better areas",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Adjacent lanes for the same Blender skill, from the demand read: VTuber model commissions (1,300 to 3,800 dollars entry, five to ten thousand rigged; a booming, policy-safe market), adult VR (projected 19 billion dollars by 2026, 97 percent subscription), AI-hybrid pipelines with the human finish sold as the product, and 3D visual novels (top adult-VN creators about five thousand a month in 2023). Real lanes; none is the one on the sheet.",
+  "w": "_PRIVATE/_boresight-24/market-demand.md §6"
+ },
+ "remi": {
+  "t": "Remi Slate",
+  "k": "person",
+  "st": "provisional",
+  "d": "Ultrasin's first signing: 21 in canon, born August 11 2005, the mother lost in 2020 (D-7), evicted at 18; a disclosed 3D persona (D-6) with a bratty, direct register and a wound and an arc. The character sheet is v0.2; the name is ruled 'for now' with the spelling open. The boresight's read: she is the moat; she needs motion and a sentence to travel.",
+  "w": "_PRIVATE/BOLO-24-character-sheet.md"
  }
 }

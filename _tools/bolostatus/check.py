@@ -24,7 +24,9 @@ def main():
     bolo = b.get("bolo", {})
     for k in ("n", "title", "trunk", "issued", "asof", "s", "status", "decider", "feeds", "home", "version"):
         if not bolo.get(k) and bolo.get(k) != 0: F.append(f"bolo.{k} missing")
-    if str(bolo.get("n")) != str(n): F.append(f"bolo.n is {bolo.get('n')!r}, file says {n}")
+    # a "<n>.boresight" board carries bolo.n = <n>: a BORESIGHT page on the same template (Chief 9/17)
+    if str(bolo.get("n")) != str(n) and not str(n).startswith(str(bolo.get("n")) + "."):
+        F.append(f"bolo.n is {bolo.get('n')!r}, file says {n}")
     ids = [x.get("id") for x in b.get("paragraphs", [])]
     if ids != PARAS: F.append(f"paragraphs are {ids}, must be {PARAS}")
     if len(b.get("mantra", [])) != 3: W.append("mantra is not three lines")
@@ -46,7 +48,7 @@ def main():
     gl = json.load(io.open(os.path.join(ROOT, "_tools", "sitrep", "glossary.json"), encoding="utf-8"))
     missing = sorted({k for k in re.findall(r"\[\[([^\]|]+)", text) if k not in gl})
     if missing: F.append("unknown glossary keys: " + ", ".join(missing))
-    if f"bolo{n}" not in gl: W.append(f"glossary has no bolo{n} key (add it; the standing order)")
+    if f"bolo{str(n).split('.')[0]}" not in gl: W.append(f"glossary has no bolo{n} key (add it; the standing order)")
     print(f"CHECK · DOPE SHEET {n} · {os.path.basename(p)} · {len(F)} blocking · {len(W)} advisory")
     for f in F: print("  BLOCK " + f)
     for w in W: print("  note  " + w)

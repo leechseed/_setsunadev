@@ -314,3 +314,7 @@ The persona sliders are real parameters, not a prompt. **brat** drives ElevenLab
 **Talk does not send** (Chief, 9/17 late): in session voice the talk pad and hotkey are hold-to-talk, never a toggle, and a release only drops the words into the chat box (with a trailing space, so several holds pile up into one prompt). Nothing goes to Fable until the SEND pad is struck. `judy.json → session.send_on_talk: true` restores the old auto-send on release.
 
 **The send key** (Chief 9/17 late): Claude Code is set to `useCtrlEnterToSend`, so plain Enter only adds a line. `focus.send_key()` returns `config.json → send_key` (set to ctrl+enter), else reads the VS Code setting, else Enter; the send pad and the session paste both use it.
+
+## The say-line is the address (Chief, 9/17)
+
+`judy.json → session.speak` (default `say-line`): the reader speaks only replies that open with `<!-- say: … -->`; a reply without one is silent — those are Fable's turns to her agents or the harness, not to Chief. `"all"` restores read-everything (the pre-9/17 behaviour). SOP §7 rule 10 carries the writing rule.

@@ -1,0 +1,429 @@
+{
+ "bolo": {
+  "n": 24,
+  "kind": "BORESIGHT",
+  "title": "The launch month, the volcano, and the market — the distill Chief asked for",
+  "trunk": "ORANGE/OPERATOR",
+  "issued": "2026-09-17",
+  "asof": "2026-09-17",
+  "s": "hot",
+  "status": "BORESIGHT delivered 9/17 on Chief's word (\"I need the whole distill\") · four specialists, 118 sources · **the recommendation: launch January 2027, add the motion lane, run the thirty-day test in October as the volcano's go/no-go** · five calls open, D-12 to D-16",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "[[bolo24|DOPE SHEET 24]] (the sheet this boresight serves) · the [[register|register]] · [[bolo29|BOLO 29]] (the reward-vs-risk ranking, Blocked #11) · [[bolo57|BOLO 57]] (voices, the fourth venture) · [[main-effort|the main effort]]",
+  "related": [
+   {
+    "n": 24,
+    "why": "the sheet: this boresight answers its Call 1 (launch month) and adds five calls"
+   },
+   {
+    "n": 29,
+    "why": "the four-way venture ranking waits on a read like this one for each candidate"
+   },
+   {
+    "n": 57,
+    "why": "ElevenLabs voices — the persona will need one; the Fanvue lane rewards a voiced life"
+   },
+   {
+    "n": 27,
+    "why": "ULTRA DARK, the funnel; Block C is the discovery engine this read names as the vulnerability"
+   }
+  ],
+  "home": "_PRIVATE/_boresight-24/ (facts · market-supply · market-demand · method) · BOLO.md row 24 · STATE Blocked #10",
+  "card": "none — this is a read, not a stall; the calls go to DOPE SHEET 24 by FRAGO on Chief's rulings",
+  "version": "v0.1 · BORESIGHT"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The render is thirty seconds. The audience is the year. Every hour spent past target quality on the art is an hour stolen from [[d9|the discovery engine]]."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "Nobody documented broke in on quality alone. They attached to an audience and shipped motion. [[character-moat|Character is the moat]]; motion is the fuse."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "The volcano is a bet, and a bet has a price and a test. Thirty days on X in October tells us whether it pays before a library is banked against it."
+  }
+ ],
+ "frago": {
+  "mission": "Answer Call 1 of [[bolo24|DOPE SHEET 24]] with a dated launch month and an honest expectation, **in order to** stop [[main-effort|the main effort]]'s thirteen-day idle with a decision that is measured, not guessed.",
+  "order": "**Rule D-14 (the launch month, January 2027) and D-15 (the [[thirty-day-test|thirty-day test]] in October as [[volcano|the volcano]]'s go/no-go).** The other three calls can wait a week; these two set the calendar.",
+  "default": "Silence: the plan runs as charted toward February with stills only, the ladder plan; nothing in this read is adopted and [[volcano|the volcano]] stays a word.",
+  "calls": [
+   {
+    "q": "D-12 · the motion lane",
+    "options": "YES, add short loops (5–15 s) as the viral unit beside the stills (rec) · NO, stills only as charted · LATER, after the stills library ships",
+    "default": "YES (rec)",
+    "s": "open",
+    "ruling": "Open. The evidence: every documented fast breakout shipped motion; the highest [[stills-ceiling|stills-only page]] found caps near $1,000 a month after four years; the pipeline already renders a frame in thirty seconds, so a five-second loop is about an hour of GPU time."
+   },
+   {
+    "q": "D-13 · the platform set",
+    "options": "Patreon SFW-tier + SubscribeStar Adult + Fansly, plus a Fanvue test for the disclosed-persona lane (rec) · the charted pair only · Fanvue-first",
+    "default": "the three plus the [[fanvue|Fanvue]] test (rec)",
+    "s": "open",
+    "ruling": "Open. [[processor-risk|Processors, not platforms]], are the chokepoint (Gumroad 2024, itch.io and Steam 2025, Civitai 2025); two platforms and a mailing list from day one is the hedge every survivor cites. [[fanvue|Fanvue]] is where the disclosed CGI-persona lane is institutionalizing (its first award, June 2026)."
+   },
+   {
+    "q": "D-14 · the launch month",
+    "options": "January 2027 (rec) · December 2026 · February 2027 (the beats doc's pick) · later",
+    "default": "January 2027 (rec)",
+    "s": "open",
+    "ruling": "Open. January gives [[volcano-sequence|the Volcano Sequence]] its calendar (framing 9/18–9/23 · design and war-game by 9/30 · the [[thirty-day-test|thirty-day test]] in October · the splash asset and the twenty-piece library in November) and puts the April grief anchor inside the sixty-day buffer, close to the beats doc's intent. February costs a sixth month of unemployment for no evidence gain; December is eaten by the banking."
+   },
+   {
+    "q": "D-15 · the thirty-day test as the go/no-go",
+    "options": "GO: run R9 on X 10/1–10/31 with the slice + the first loop, thresholds written before posting (rec) · skip it and bank the library on faith · run it after launch",
+    "default": "GO (rec)",
+    "s": "open",
+    "ruling": "Open. The discovery engine is the critical vulnerability (benchmarks §6; [[trl|TRL]] 3–4 against a TRL 6–7 pipeline). Threshold: follower growth at or above the Variety Itsol rate (~1,300 a month) = [[volcano|the volcano]] is live, bank forty; the Kirenes rate (~470) = the ladder, bank twenty and keep the income search first; under 250 = replan the positioning before spending November."
+   },
+   {
+    "q": "D-16 · the category sentence",
+    "options": "Chief words it (rec) · the studio's draft: \"a studio signed a girl who does not exist, and she is the only one in the lane with a life\" · defer to the splash brief",
+    "default": "Chief words it (rec)",
+    "s": "open",
+    "ruling": "Open. The [[lightning-strike|Lightning Strike]] needs one sentence the whole launch carries. [[aitana|Aitana]]'s mechanism was a press-ready sentence, not a render; [[remi|Remi]]'s is the disclosed studio signing. The draft is a placeholder, not a ruling."
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What the market is doing in September 2026, what the money actually looks like, what the documented fast breakouts did, and where BOLO 24 stands against all of it. Four specialists read 118 sources and eleven private docs; the main line read only their four sheets. Nothing here is a ruling.",
+   "strand": {
+    "last": "[[bolo24|DOPE SHEET 24]] has carried Call 1, the launch month, since 9/11 with a bare 'February' from the beats doc and no market read behind it. This morning Chief asked for the whole distill: the timeline, a method, and the audience.",
+    "plan": "Four disjoint reads in [[formation|the formation]] — the private docs, the supply side, the demand side, the method — then one synthesis on the main line.",
+    "you": "You said the edge is utmost quality and a splash: be [[volcano|the volcano]] while everyone else climbs ladders, the unexpected and immediately a contender. You asked whether SFM and game-character content was a passing thing and whether there are better areas.",
+    "next": "Read the four groups below in order: the market, the money, [[volcano|the volcano]] evidence, the state of the sheet. Then the Execution paragraph carries the dated answer."
+   },
+   "groups": [
+    {
+     "label": "The market · active, not passing",
+     "items": [
+      {
+       "t": "**It is not a passing thing; it plateaued high and keeps growing.** Pornhub's 2025 year in review: hentai the number-one global search for the fifth straight year, 'animation' up 28 percent and '3D' up 19 percent year over year, anime the seventh most-searched term overall. Rule34's aggregator layer sat near 500 million visits in December 2025, flat with normal noise.",
+       "s": "open"
+      },
+      {
+       "t": "**The game-character wave still fires on fresh IP.** Genshin Impact took the number-one searched game in 2025; Marvel Rivals, a 2025 release, broke straight into the top ten beside decade-old Overwatch. The 2016 mechanism (big cast, new character drop, new content wave) is intact. It is also the most crowded tag on every board, exactly as you read it: futa and video-game girls.",
+       "s": "open"
+      },
+      {
+       "t": "**The [[the-ai-shock|AI shock]] split the lane instead of killing it.** Civitai lost [[processor-risk|card processing]] in May 2025 and went to crypto; 'slop' was Merriam-Webster's 2025 word of the year; the counter-trend is a 'human-made' premium. The policy line everywhere is stylized versus photoreal-of-a-real-person, not AI versus hand. A consistent, hand-posed 3D character reads as 'real 3D' against the flood. That is the opening, not a guarantee.",
+       "s": "open"
+      },
+      {
+       "t": "**The disclosed 3D persona lane is forming and institutionalizing.** [[fanvue|Fanvue]] ran the first 'AI Personality of the Year' in June 2026; [[aitana|Aitana]] Lopez cleared roughly ten thousand a month in brand deals before two hundred thousand followers on the same mechanism (a small team, a maintained life, a press-ready story). Adult CGI-persona accounts are reported at three to thirty thousand a month once they hit volume — directional, not audited.",
+       "s": "open"
+      },
+      {
+       "t": "**[[better-areas|Better areas]] for the same Blender skill:** VTuber model commissions (1,300 to 3,800 dollars entry, five to ten thousand rigged; Hololive's parent did 43 billion yen in FY2025), adult VR (projected 19 billion dollars by 2026, the fastest-growing format, 97 percent subscription), AI-hybrid pipelines with the human finish sold as the product, and 3D visual novels (top adult-VN creators averaged about five thousand a month in 2023). Each is a real lane; none is the one on the sheet.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The money · stills cap, motion and games compound",
+     "items": [
+      {
+       "t": "**The top of the lane is animators and game devs, not still artists.** Graphtreon today: RadRoachHD 41,500 a month on 10,148 patrons; CyanCapsule 24,900 after eleven years; wildeer studio 15,400; a band of 3D Blender names at 3,800 to 9,300 a month on one to three thousand patrons. Every one of them ships loops, episodes, or builds.",
+       "s": "open"
+      },
+      {
+       "t": "**The [[stills-ceiling|stills-only ceiling]] is low.** The best stills-only page found, Mr. Vargas, sits near a thousand a month on 177 patrons after four years and a prior studio apprenticeship. Dreamrider3D: six years, nine paid patrons, 31 dollars a month. Platform-wide, 98 percent of Patreon creators never clear a thousand a month; the median is under a hundred.",
+       "s": "open"
+      },
+      {
+       "t": "**Time to first dollar, documented:** nobody in the pass reached 500 a month inside ninety days from zero. The fastest breakout to visibility was about five months (Amazonium3D, now 7,300 a month four years on). Galaad1800's first real income was direct commissions, not subscriptions: full-time money with six patrons. The gates table already says this; it is not news, it is confirmation.",
+       "s": "open"
+      },
+      {
+       "t": "**Conversion and funnel:** half a percent to two and a half percent of a fanbase converts to paid; X is a link-out channel only (adult content excluded from recommendations, no on-platform monetization); Bluesky formalized fictional adult art in September 2025 with an organized starter-pack scene; the boorus are discovery by osmosis, uncontrolled. A working estimate for a single commissioned still off an existing rig is 30 to 150 dollars.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The volcano · what the fast breakouts actually did",
+     "items": [
+      {
+       "t": "**None of the five documented fast breakouts won on quality alone.** Amplected (Newgrounds, August 2023, now near 200 thousand on Instagram alone) and suoiresnu (a 4K One Piece short, 'immediately viral') both attached to a known IP and shipped short, polished motion across several platforms at once. Marvel Rivals rode a launch window. [[aitana|Aitana]] rode a press sentence. Soraya Thorne rode a category with an award circuit.",
+       "s": "open"
+      },
+      {
+       "t": "**The three cautionary cases are the plan as charted.** Skilled Blender artists with an original character, a standard Patreon page and no hook plateau at niche income; well-made paid adult games got deindexed overnight by a [[processor-risk|processor campaign]]; experienced generic 3D artists are being compressed by AI. High craft plus generic positioning is the ladder.",
+       "s": "open"
+      },
+      {
+       "t": "**The common thread, stated once:** an attached audience (an IP or a press-ready sentence), a shareable motion unit, and timing to a moment. Character is what the cautionary cases lack, and it is the one thing BOLO 24 already has on paper. It is the moat, not the fuse.",
+       "s": "open"
+      },
+      {
+       "t": "**The read for [[remi|Remi]]:** the IP route conflicts with the studio's original-persona strategy and carries DMCA risk; the press route is native to it — 'a studio signed a girl who does not exist' is the [[aitana|Aitana]] sentence with a wound and an arc behind it. That is [[volcano|the volcano]]'s only honest path here, and it needs motion to travel.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The sheet · where BOLO 24 stands today",
+     "items": [
+      {
+       "t": "**Built and ruled:** D-5 provisional, D-6, D-7, D-9 ruled 9/16; character sheet v0.2 ([[remi|Remi]] Slate, 21, born August 11 2005, the loss in 2020), Season 1 beats v0.1 (five beats, eight sets, 38 stills), pipeline COA A fully free (Blender 4.5, MPFB2, Cycles), the slice's five Set 4 files with S4-01 rendered at 2048 by 2560 in under a minute. [[bolo24|Gate 3]] is open; its six evenings are this week.",
+       "s": "done"
+      },
+      {
+       "t": "**The five calls on the sheet:** launch month (February, no read behind it) · library size (28 plus 10) · the split (45/35/20) · the [[bolo24|Gate 3]] skin test (this week) · the death month (May 2020). [[boresight|This boresight]] answers the first with evidence and adds five more.",
+       "s": "open"
+      },
+      {
+       "t": "**The numbers the sheet already carries:** on-target month three 150 to 200; month six 400 to 600; month twelve 1,000 to 1,500, which is the top three percent platform-wide. The blocker read: month-six net under conservative and X growth under 500 a month means [[d9|the discovery engine]], not the art. The market read confirms every one of those lines.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "What this boresight is for, in one task and one intent, and the end state it serves.",
+   "strand": {
+    "last": "The sheet's mission stands: stand up a paying creative operation on what is in hand, in order to convert the unemployment window into the studio's founding season.",
+    "plan": "This read does not change the mission. It dates it and prices [[volcano|the volcano]].",
+    "you": "You named the standard: bleeding edge, viral-esque, immediately a contender. You also said there is more development to do first. Both are in the Execution paragraph.",
+    "next": "Rule D-14 and D-15. The calendar starts the day you do."
+   },
+   "task": "Deliver the launch month with a method and a market behind it,",
+   "intent": "in order to replace the sheet's bare 'February' with a dated sequence Chief can rule on, and to price [[volcano|the volcano]] as a bet with a test instead of a wish.",
+   "spoken": "\"Give me the boresight on the actual timeline and actual reasonable deadline and expectation. We need to be the volcano. I need the whole distill.\"",
+   "endstate": [
+    "A launch month ruled, with the calendar of phases behind it and the review that closes each.",
+    "The volcano defined as a mechanism (character as moat, motion as fuse, a press sentence as the attached audience) with a [[thirty-day-test|thirty-day test]] that says GO or ladder before a library is banked.",
+    "The market question answered on the record: active, growing modestly, money in motion and games, the disclosed-persona lane forming, processors the chokepoint.",
+    "The method ([[volcano-sequence|the Volcano Sequence]]) slotted into M-002 through M-005 without renaming a phase."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "The dated answer. The Volcano Sequence is the method brief's fused paradigm: NASA's reviews and [[conops|ConOps]], the Marines' [[mcpp|problem framing]] and war game, the Double Diamond and Jobs-to-be-Done for the audience, and category design's [[lightning-strike|Lightning Strike]] for the splash. It slots into the sheet's M-002 to M-005 as they stand. The dates assume Chief working roughly full-time from 9/18.",
+   "strand": {
+    "last": "The method brief audited the charter: the NASA four is real and already applied; what is missing is research inside the design phase (no [[conops|ConOps]], no competitive read, no launch campaign distinct from the product, no second decision point between the slice and the library).",
+    "plan": "Five phases, each closed by a review the charter did not have: MCR · SDR/PDR · CDR/SIR/ORR · FRR · Gate 4.",
+    "you": "You asked for a design-research paradigm and a project-management timeline paradigm from NASA or the Marines. Both exist; this is them, fused, with dates.",
+    "next": "Phase 1 starts tomorrow and takes under a week; this boresight is its first half."
+   },
+   "main_effort": "The [[thirty-day-test|thirty-day test]] in October. Everything before it feeds it; everything after it is sized by it.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**Problem framing and [[conops|ConOps]] — 9/18 to 9/23.** The category map (fifteen to twenty accounts tagged for what each is known for), the [[category-sentence|gap sentence]], the subscriber jobs list ranked, the ConOps walked from a follower's first thirty seconds through a missed-gate month and a platform review. Closes at an MCR: is the concept, positioned this way, worth the design set. [[boresight|This boresight]] is the first half of it.",
+     "s": "hot",
+     "when": "9/18–9/23"
+    },
+    {
+     "n": 2,
+     "t": "**Design and [[mcpp|war game]] — by 9/30.** W1 to W6 as charted (most already in hand) plus one sitting to play the launch three moves out against the algorithm, the platform's trust and safety, and a rival account; name the [[character-moat|center of gravity]] (the bible) and the critical vulnerability (discovery) on paper. The [[bolo24|Gate 3]] evenings (skin, hair, pose, set, render) run in parallel this week. Closes at Gate 2 (SDR/PDR).",
+     "s": "open",
+     "when": "by 9/30"
+    },
+    {
+     "n": 3,
+     "t": "**The slice and the [[thirty-day-test|thirty-day test]] — October.** The slice plus the first five-to-fifteen-second loop, posted to X and Bluesky 10/1 to 10/31 under the disclosed frame, with the hypothesis and the thresholds written before the first post (D-15). Early access to the set sells from day one on the ruled first-dollar-first branch. Closes at [[bolo24|Gate 3]] (CDR/SIR/ORR) with the audience-signal report.",
+     "s": "open",
+     "when": "10/1–10/31"
+    },
+    {
+     "n": 4,
+     "t": "**The splash — W8, November, in parallel.** The [[lightning-strike|Lightning Strike]] brief: the [[category-sentence|category sentence]] (D-16), one asset built to carry it (a loop, better than the library on purpose), the day-one sequence with tempo and surprise named. Closes at an FRR: is this specific launch moment cleared, independent of whether the library is banked.",
+     "s": "gated",
+     "when": "11/1–11/30"
+    },
+    {
+     "n": 5,
+     "t": "**Banking — November.** Twenty stills plus two loops at the compressed library size (forty if the October test reads volcano), sixty-day buffer, two platforms and a mailing list live, Season 1 captions to the bible. Two to four evenings a still is the binding number, not the render; full-time that is three to five weeks.",
+     "s": "gated",
+     "when": "11/1–12/15"
+    },
+    {
+     "n": 6,
+     "t": "**Launch — January 2027 (D-14).** Season 1 begins; the thirteen-week core runs January to March; the April grief anchor lands in the buffer. Expectation on the record: month three on-target is 150 to 200 a month; [[volcano|the volcano]] shows up first as follower growth, not dollars. Month six is the first replan check; the kill rule is three conservative misses.",
+     "s": "gated",
+     "when": "1/2027"
+    }
+   ],
+   "coord": [
+    "The income search runs in parallel from today on [[pmcs|PMCS]] (Employment, red since 9/3); the venture is the daytime build only while runway holds, per D-5.",
+    "Out of scope stands: real performers, any character under 18, spend beyond the stretch budget before [[bolo24|Gate 3]]'s AAR. The IP route (game-character content) is out: it conflicts with the original-persona studio and carries DMCA exposure.",
+    "Where volcano quality costs calendar time: the framing week, the war-game sitting, the splash asset. Where it does not: rendering (thirty seconds a frame) and generating options."
+   ],
+   "running": [
+    "[[bolo24|Gate 3]]'s six evenings (this week). The [[darkroom|DARKROOM]] reference pull. The income search."
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What this read cost, what it produced, and where the four inputs live. Everything stays in _PRIVATE.",
+   "strand": {
+    "last": "Four specialists in [[formation|the formation]] (three MS on sonnet, one PS on haiku), 118 web sources plus eleven private docs, one main-line synthesis.",
+    "plan": "The inputs stay as working files; the board is the record; the calls go to [[bolo24|DOPE SHEET 24]] by [[frago|FRAGO]] once ruled.",
+    "you": "Nothing to pay. The stretch budget is untouched.",
+    "next": "If Chief wants the numbers re-baselined, the supply sheet's Graphtreon ranks are live pages and can be re-pulled in a day."
+   },
+   "files": [
+    {
+     "path": "_PRIVATE/_boresight-24/facts.md",
+     "what": "the BOLO 24 fact sheet — state, the five calls, pipeline numbers, the gates, positioning, six comparables, risks (PS, eleven docs)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/_boresight-24/market-supply.md",
+     "what": "who earns, the distribution, platforms and policy 2025–26, the funnel, commissions, time to first dollar (MS, 44 sources)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/_boresight-24/market-demand.md",
+     "what": "the arc, the [[the-ai-shock|AI shock]], what sells now, the format shift, [[volcano|the volcano]] cases, better areas (MS, 49 sources)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/_boresight-24/method.md",
+     "what": "the audit of the charter, NASA's life cycle and reviews, MCPP and MCDP 1, five design-research paradigms, [[volcano-sequence|the Volcano Sequence]], the time table (MS, 14 sources)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/boards/24.boresight.json",
+     "what": "this board",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "base",
+     "v": "$0"
+    },
+    {
+     "k": "the read",
+     "v": "four specialists, about 380k tokens off the main line; the main line read four sheets"
+    },
+    {
+     "k": "phase 1",
+     "v": "under a week, this boresight being half of it"
+    },
+    {
+     "k": "the test",
+     "v": "thirty days of calendar in October, near-zero GPU"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who decides, what closes each phase, and the signals that tell us in October whether [[volcano|the volcano]] is real.",
+   "strand": {
+    "last": "Every call on the sheet has been Chief's; this adds five (D-12 to D-16), two of which set the calendar.",
+    "plan": "Rule the two calendar calls first; the format, the platform set and the sentence can follow inside Phase 1.",
+    "you": "You decide. The thresholds are written so that October decides the size of November, not a feeling.",
+    "next": "The signals are on X and Bluesky from 10/1; the review that reads them is [[bolo24|Gate 3]]'s AAR."
+   },
+   "groups": [
+    {
+     "label": "The reviews that close each phase",
+     "items": [
+      {
+       "t": "**MCR** (9/23) — is the concept, positioned by the [[category-sentence|gap sentence]], worth the design set. Chief's word after reading this board and the [[conops|ConOps]].",
+       "s": "open"
+      },
+      {
+       "t": "**Gate 2 / SDR-PDR** (9/30) — the design set locked and the launch [[mcpp|war-gamed]]; a NO-GO here is legal and cheap.",
+       "s": "open"
+      },
+      {
+       "t": "**[[bolo24|Gate 3]] / CDR-SIR-ORR** (10/31) — the slice's AAR read against the written thresholds; sizes the library.",
+       "s": "gated"
+      },
+      {
+       "t": "**FRR** (December) — the splash cleared as its own moment; a ready library never launches on a dead moment.",
+       "s": "gated"
+      },
+      {
+       "t": "**Gate 4** (January) — accounts live, Season 1 begins.",
+       "s": "gated"
+      }
+     ]
+    },
+    {
+     "label": "The signals · October, written before the first post",
+     "items": [
+      {
+       "t": "**Follower growth** on the persona account: at or above 1,300 a month reads volcano (bank forty); about 470 reads ladder (bank twenty, income search first); under 250 reads replan the positioning before November.",
+       "s": "open"
+      },
+      {
+       "t": "**Delight over reach:** saves, replies and DMs on arc posts versus look-only posts. This is the A-004 test the charter already names, now with a threshold.",
+       "s": "open"
+      },
+      {
+       "t": "**First dollar:** early access to the Set 4 slice sells from 10/1. Any sale is the Galaad pattern (direct before subscription) and is expected; none by 10/31 is a signal, not a failure.",
+       "s": "open"
+      },
+      {
+       "t": "**The loop travels or it does not:** shares and reposts of the first loop versus the stills. If the loop does not out-travel the stills by a wide margin, D-12 is re-opened.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "The calls ride to DOPE SHEET 24 by [[frago|FRAGO]] as each is ruled. The board republishes at the MCR and at [[bolo24|Gate 3]]. Silence past 9/23 means Phase 1 ran without a ruling and the calendar slips a week for each week of silence.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "The record of the read.",
+   "strand": {
+    "last": "Spoken this morning after the first live launch sequence and the send-pad fix.",
+    "plan": "One board, four inputs, five calls.",
+    "you": "You said: you got this, baby.",
+    "next": "Your word on D-14 and D-15."
+   },
+   "entries": [
+    {
+     "when": "9/17",
+     "who": "ACTUAL",
+     "t": "\"Let's move on to BOLO 24, launch months. I need [[boresight|the boresight]] on the actual timeline and reasonable deadline. We need to be [[volcano|the volcano]]. Some design research paradigm, NASA or Marines. And a distillation of the audience: SFM, cosplay, video-game NSFW — is it an active market, are things moving, better areas? I need the whole distill.\""
+    },
+    {
+     "when": "9/17",
+     "who": "CDR",
+     "t": "Four specialists launched on disjoint inputs: the private docs (PS), the supply side (MS), the demand side (MS), the method (MS). 118 sources. The main line read the four sheets and wrote this board."
+    },
+    {
+     "when": "9/17",
+     "who": "CDR",
+     "t": "Recommendation on the record: launch January 2027 (D-14); the [[thirty-day-test|thirty-day test]] in October as the go/no-go (D-15); add the [[motion-lane|motion lane]] (D-12); three platforms plus a [[fanvue|Fanvue]] test (D-13); Chief words the [[category-sentence|category sentence]] (D-16)."
+    }
+   ]
+  }
+ ]
+}
