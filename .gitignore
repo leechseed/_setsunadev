@@ -44,3 +44,8 @@ __pycache__/
 _tools/dictation/_last.wav
 _tools/dictation/voices/
 _tools/dictation/faces/
+
+# JUDY runtime audio (BOLO 56)
+_tools/dictation/_reader/
+_tools/dictation/_last.wav
+_tools/dictation/_facepos.json
