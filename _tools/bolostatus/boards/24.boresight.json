@@ -58,8 +58,8 @@
     "q": "D-12 · the motion lane",
     "options": "YES, add short loops (5–15 s) as the viral unit beside the stills (rec) · NO, stills only as charted · LATER, after the stills library ships",
     "default": "YES (rec)",
-    "s": "open",
-    "ruling": "Open. The evidence: every documented fast breakout shipped motion; the highest [[stills-ceiling|stills-only page]] found caps near $1,000 a month after four years; the pipeline already renders a frame in thirty seconds, so a five-second loop is about an hour of GPU time."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-17, Chief: \"we're going to be doing Route B.\" The motion lane is local AI image-to-video on the finished render (ComfyUI + Wan 2.2 / LTX on the 3090, NSFW loops and beginner workflows already on Civitai), not hand animation. Route A, the Spine-style living picture NIKKE actually uses, is the later splash asset if the loops travel in October. Route C, light Blender motion, is the fallback."
    },
    {
     "q": "D-13 · the platform set",
