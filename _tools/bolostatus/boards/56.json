@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "v0.8 · the squelch BUILT 9/17: a radio break keys up before JUDY's first sentence and keys down after her last (and around every acknowledgment, and when a new turn cuts her off) — stand-in bursts in place until Chief's own sounds land in sfx/",
+  "status": "v0.9 · the squelch RULED 9/17: the generated stand-ins are the sound (\"we will just stick with that\"); nothing open on the squelch",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.8 · DOPE SHEET"
+  "version": "v0.9 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -103,7 +103,8 @@
     "q": "The squelch sounds",
     "options": "Chief's own two files dropped into _tools/dictation/sfx/ as key-up.wav and key-down.wav (rec: he said he would make them) · keep the generated stand-ins",
     "default": "the stand-ins play until the files land; nothing else to rule",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/17 by Chief: \"we will just stick with that, it is fine\" — the generated key-up and key-down bursts are the sound. sfx/ still takes a replacement by filename if he ever wants one."
    }
   ]
  },
@@ -467,8 +468,8 @@
     },
     {
      "path": "_tools/dictation/sfx/",
-     "what": "the two squelch sounds — Chief's files go here under those names and replace the stand-ins",
-     "s": "open"
+     "what": "the two squelch sounds — the generated stand-ins, ruled as the sound 9/17",
+     "s": "done"
     }
    ],
    "cost": [
@@ -668,6 +669,11 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Coded and live: squelch.py plus the hooks in the reader's Mouth (key-up on the first sentence of a block, key-down when the queue empties or an interrupt lands) and in the standalone loop. Playback is synchronous so speech never overlaps the break. Stand-ins generated in sfx/; drop key-up.wav and key-down.wav there to replace them. Session voice restarted on the new code."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"Yeah, no, we will just stick with that. It is fine.\" — the stand-in squelch is the sound."
     }
    ]
   }
