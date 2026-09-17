@@ -23,10 +23,10 @@
   },
   "face": {
     "slots": {
-      "idle": null,
-      "listening": null,
-      "thinking": null,
-      "talking": null
+      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.png",
+      "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.png",
+      "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.png",
+      "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
     }
   },
   "chat": {
