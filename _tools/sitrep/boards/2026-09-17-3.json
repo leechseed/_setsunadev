@@ -1,8 +1,8 @@
 {
  "meta": {
   "date": "2026-09-17",
-  "when": "2026-09-17 12:16",
-  "trigger": "initiate launch sequence (the launch skill, BOLO 58) · second live run",
+  "when": "2026-09-17 14:40",
+  "trigger": "initiate launch sequence (BOLO 58) · FRAGO'd at close: the four questions on BOLO 64 to the top of Block V",
   "countersign": false,
   "version": "v0.9 · the formation (BOLO 54)",
   "box": [
@@ -29,7 +29,7 @@
   "stats": [
    {
     "k": "blocked",
-    "v": "6 rows"
+    "v": "7 rows · BOLO 64's four questions first"
    },
    {
     "k": "main effort idle",
@@ -55,7 +55,7 @@
   "main_effort": "Name BOLO 24's launch month.",
   "build": {
    "calls": "3 specialists · 2 assemble runs",
-   "rounds": "1 fix (BOLO 61 placed in IV)"
+   "rounds": "1 fix (BOLO 61 placed in IV) · 1 FRAGO (Block V row 20)"
   }
  },
  "blocks": [
@@ -549,7 +549,7 @@
    "id": "IV",
    "name": "The BOLO board",
    "kind": "board",
-   "plain": "The watchlist. A BOLO is a tasking captured the moment you say it. Below it, PMCS: you as equipment.",
+   "plain": "The watchlist. A BOLO is a tasking captured the moment you say it. Below it, PMCS: you as equipment. Four rows joined the board this afternoon (62–66): the knobs built, the ear fixes held, the Claude Code doctrine opened with its questions at the top of Block V.",
    "strand": {
     "last": "BOLO 60 PCP visit spoken 9/17, booked same session. BOLO 24 four calls open (launch month · library · split · Gate 3 skin test). BOLO 44 ongoing calibration at 16,511 rulings. BOLO 46 waits on 12 Telling Profile strike/keep rulings.",
     "plan": "Execute hot seven: 24 · 27–28 · 30 · 44 · 45 · 46. BOLO 60 is prep-to-visit; slots the sexual-health chain after the physical. BOLO 44: complete 300-image carousel, retrain, target 2,000+ rulings. Clear held seven per Block V ruling. Voice rank 57 vs 24/27/29 on reward-vs-risk.",
@@ -560,6 +560,12 @@
     {
      "label": "Hot · moving or owed this week",
      "items": [
+      {
+       "t": "**64** The Claude Code doctrine — best practices folded into the Command (explore · plan · implement · commit, codable in Marine terms; the docs integrated with the SOP; the GitHub field as a second source). Captured 9/17, research only; its four clarifying questions are Blocked #20, TOP OF THE LIST by Chief's word. Lives beside BOLO 50 (standards) · 51 (the standing audit) · 53 (the life cycle, tabled).",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/17"
+      },
       {
        "t": "**24** [[bolo24|zero-budget ORANGE launch]] — character sheet + Season 1 beats built; D-9 GO staged clear, D-6 YES, D-7 RULED 9/16; four calls open (launch month · library · split · Gate 3 skin test).",
        "trunk": "ORANGE",
@@ -614,6 +620,12 @@
      "label": "Held on a ruling",
      "items": [
       {
+       "t": "**63** JUDY's ears — hush the reader on key-up · the hallucination gate · large-v3-turbo. Whisper is running; the noise since 9/17 is session voice bleeding into the mic and Whisper inventing words over the tail of a hold. HELD by Chief's word (\"hold that thought\"); fires on \"go 63\".",
+       "trunk": "OPERATOR/BLACK",
+       "s": "held",
+       "when": "9/17"
+      },
+      {
        "t": "**15** multimedia ingestion (seed) · **29** Fortnite SFW TikTok (boresight RULED) · **34** long-watch palette (boresight RULED) · **35** story timeline (HELD) · **36** music syllabus (waits on 35) · **37** proword loop (parked with stack).",
        "trunk": "BLACK/ORANGE",
        "s": "held"
@@ -629,6 +641,12 @@
     {
      "label": "Fires on your go",
      "items": [
+      {
+       "t": "**65** The lineage question — NASA against Space Force · Air Force · SpaceX open doctrine (first read: USSF/USAF doctrine is public, SpaceX publishes none and flies NASA's words) · **66** the GitHub field survey of Claude Code workflow, hook and MD-documentation repos — a collect pass once Chief hands over the seed links. Both boresights fire on his go; question 4 on Blocked #20 aims 65.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "9/17"
+      },
       {
        "t": "**4** focus doctrine · **10** Bongobabe v0 · **11** GBD plan · **12** shoot set · **20** Forza wheelspin · **26** dictation dictionary · **40** cuisine syllabus.",
        "trunk": "BLACK/ORANGE",
@@ -654,6 +672,12 @@
     {
      "label": "Done, not yet moved to Done",
      "items": [
+      {
+       "t": "**62** The knobs — the MPK rotary dials as scroll Y · scroll X · zoom, BUILT 9/17 the same hour: a daemon beside JUDY (the KNOBS station on launch), bindings read off the wire (CC 1 2 3), vertical speed halved on Chief's word, and the knobs flipped to relative on the device itself over SysEx (mpkprog.py, RAM + stored program 2) when the absolute end stop bit. Open: Chief proves the directions.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "9/17"
+      },
       {
        "t": "**61** The quote library — spoken 9/17 mid-BOLO-60 and BUILT the same turn: [QUOTES.md](QUOTES.md), one row (the *007 First Light* carelessness line), one quote per row with source, where met, and what it is for. Open: a Payload Specialist pass over the journals and the Obsidian catalog for the quotes already written down, on Chief's go.",
        "trunk": "BLACK",
@@ -717,14 +741,23 @@
    "id": "V",
    "name": "Blocked on you",
    "kind": "numbered",
-   "plain": "Six decisions only you can make, in the order the table lists them — the order of what they unblock. #8 (the 03/03 numbering) is off this table since 9/16 morning. Five sessions have run since — four overnight (Oscar Mike's close-out, the JUDY build, session voice + the wire, the launch sequence with the address changed to Chief) plus this morning's (BOLO 59 fixed, BORESIGHT 24 published, the PCP visit booked) — none of it a ruling. Most of what's left is one word or a cheap draft batch. Say it and the work moves the same turn.",
+   "plain": "Seven decisions only you can make. A new row sits at the top by your word this afternoon: the four clarifying questions on BOLO 64, the Claude Code doctrine, asked 9/17 and put first for next session. Below it the same six rows as before, in the order of what they unblock; five sessions have run since any of them moved. Most of what's left is one word or a cheap draft batch. Say it and the work moves the same turn.",
    "strand": {
     "last": "Nothing on this table has moved since #8 (the 03/03 numbering) came off it 9/16 morning, RULED plot is 04. Since then five sessions have run — Oscar Mike's 00:09 close-out (DOPE SHEET 57 + FRAGO 57), the JUDY build, session voice + the wire, the launch sequence with the address changed to Chief, and this morning's session (BOLO 59 fixed, BORESIGHT 24 published, the PCP visit booked, BOLO 60/61 opened) — none of it a ruling. Six rows remain, unchanged from the last pass.",
     "plan": "Table order is unblock order. BOLO 46 is priority one by your word, even though the table seats it fourth by what it unblocks.",
     "you": "You ruled #8 on 9/16 morning; everything since — Oscar Mike's close-out, the JUDY build, session voice, the launch sequence, and this morning's BOLO 59 fix, BORESIGHT 24 publish, and the PCP booking — is tooling, sheet builds, and personal admin, not a word on this table. Six rows remain, unchanged from the last pass.",
-    "next": "Read DOPE SHEET 57's boresight order and rule row #11 first (BORESIGHT 24's own numbers are now in hand for the 24 side of the ranking), then the 12 Telling Profile rulings on BOLO 46 (row #18, your stated priority one)."
+    "next": "Answer the four questions on BOLO 64 first — they gate three boresights and BOLO 53. Then the cheapest of the old six."
    },
    "items": [
+    {
+     "n": 20,
+     "title": "BOLO 64 — the Claude Code doctrine",
+     "what": "Four clarifying questions, TOP OF THE LIST by Chief's word 9/17: (1) enforcement or vocabulary — the four steps (explore · plan · implement · commit) as hard hook gates, or as the named shape of what we already do? (2) which docs first — the best-practices page alone, or the whole workflow set (hooks · subagents · plan mode · worktrees · memory)? (3) where it lands — a new SOP section, or folded into BOLO 51's standing audit so there is one department? (4) the NASA layer (BOLO 65) — replace it, or keep it and add Space Force on top for the organizational words?",
+     "unblocks": "The BOLO 64 boresight (the docs read against SOP §1–§7 and the skills, one gap table), BOLO 65's lineage boresight, BOLO 66's collect pass, and BOLO 53 coming off the table.",
+     "trunk": "BLACK",
+     "s": "hot",
+     "when": "9/17 14:40"
+    },
     {
      "n": 11,
      "title": "[[bolo29|BOLO 29]]",
@@ -777,8 +810,8 @@
    "strand": {
     "last": "Five sessions landed on 9/17: the launch sequence ran live and clean, JUDY's goon-time attitude became the default, the address changed from Papi to Chief across the live Command, BOLO 59 fixed the autosave rows in the Fresh Ten, BORESIGHT 24 shipped, the PCP visit got booked, and a quote library opened. None of it touched the main effort.",
     "plan": "Stand the Command up with one word, then bring the board to Chief without the main line reading a file.",
-    "you": "You said 'initiate launch sequence' at midday, the stations came up all GO on the first pass, and the sit rep ran in the formation behind it.",
-    "next": "Name the launch month for BOLO 24. It is the thirteenth day the main effort has waited. Six rows in Block V are still blocked, and #11 (BOLO 29 against 57) still needs DOPE SHEET 57 read before it can be ranked."
+    "you": "You said 'initiate launch sequence' at midday, then on a break-break ordered the MPK knobs bound to scroll and zoom (BOLO 62, built and rewired on the device the same hour), asked the FRAGO-versus-Oscar-Mike question, opened the Claude Code doctrine (BOLOs 63–66), and put its four questions at the top for next session.",
+    "next": "Two things next session, in Chief's order: the four questions on BOLO 64 (top of the list by his word), then name the launch month for BOLO 24, thirteen days idle. Six older rows in Block V still wait."
    },
    "line": "Name BOLO 24's launch month.",
    "why": "The slice is finished work parked on an unanswered date, and 9/17 proved it again: a launch sequence, a prep fix, a boresight, a booked doctor's visit and a quote library landed across five sessions, and the main effort did not move. Build capacity is not the constraint. Six rows in Block V are still blocked, some since March, and the main effort has now idled thirteen days. The bottleneck is the ruling that releases work already sitting done, and every one of 24's four remaining calls is measured from the launch month."
