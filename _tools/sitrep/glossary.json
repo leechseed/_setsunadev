@@ -977,7 +977,7 @@
   "t": "processor risk",
   "k": "noun",
   "st": "ruled",
-  "d": "Every adult platform sits downstream of the same card networks. Gumroad banned NSFW in March 2024 (Stripe/PayPal); Collective Shout forced Steam and itch.io to delist in July 2025 by threatening Visa and Mastercard; Civitai lost card processing in May 2025 and went to crypto. Platform choice is really 'which compliance layer survives the next scare'; the hedge every survivor cites is two or three platforms plus a mailing list from day one. Call D-13.",
+  "d": "Every adult platform sits downstream of the same card networks. Gumroad banned NSFW in March 2024 (Stripe/PayPal); in July 2025 Collective Shout pressured the processors and Steam retired a theme-based set of games (incest, non-consent, torture — not AI-specific, and adult games broadly still sell there) while itch.io lost paid adult entirely (free adult re-indexed within days); Civitai lost card processing in May 2025 and went to crypto. The chokepoint is the moment a platform is classified as existing to sell explicit content. Calls D-13 and D-18.",
   "w": "_PRIVATE/_boresight-24/market-supply.md §3"
  },
  "fanvue": {
@@ -1021,5 +1021,47 @@
   "st": "provisional",
   "d": "Ultrasin's first signing: 21 in canon, born August 11 2005, the mother lost in 2020 (D-7), evicted at 18; a disclosed 3D persona (D-6) with a bratty, direct register and a wound and an arc. The character sheet is v0.2; the name is ruled 'for now' with the spelling open. The boresight's read: she is the moat; she needs motion and a sentence to travel.",
   "w": "_PRIVATE/BOLO-24-character-sheet.md"
+ },
+ "route-b": {
+  "t": "Route B",
+  "k": "ruling",
+  "st": "ruled",
+  "d": "RULED 2026-09-17 (D-12, Chief: \"we're going to be doing Route B\"): the motion lane is local AI image-to-video on the finished Blender render — ComfyUI with Wan 2.2 or LTX on the 3090, NSFW loops and beginner workflows already on Civitai, zero dollars. Route A (the Spine-style living picture NIKKE actually uses) is the later splash asset if loops travel; Route C (light Blender motion) is the fallback. Nowhere in the plan does Chief animate by hand.",
+  "w": "_PRIVATE/_boresight-24/motion-lane.md §4, §6"
+ },
+ "lewd-line": {
+  "t": "the lewd line",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "Call D-18: suggestive-not-explicit (bikini, lingerie, implied; no nipples, no genitals, no act) versus explicit. Lewd-first keeps Instagram and TikTok reach, the brand-deal ceiling (Lu do Magalu about 34 thousand a post, Milla Sofia 10 to 25 thousand), rails under five percent and no age-verification net; explicit buys per-fan revenue nobody has quantified and costs all of that. The standard ladder: a second, separated Fanvue account once the free audience converts.",
+  "w": "_PRIVATE/_boresight-24/lewd-lane.md §4–5"
+ },
+ "close-friends": {
+  "t": "Close Friends",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Two things wearing one name. Instagram Subscriptions is the real rail: a paid Stories tier, zero Meta commission through 2026, app-store cut on top, ten thousand followers to unlock. The informal version — a Close Friends tier paid off-platform by Venmo, Cash App or PayPal friends-and-family — inherits the payment app's adult ban and its freezes (PayPal up to 180 days). The trap, per the rails read.",
+  "w": "_PRIVATE/_boresight-24/rails.md §B1"
+ },
+ "boring-rails": {
+  "t": "the boring rails",
+  "k": "noun",
+  "st": "ruled",
+  "d": "The 2026 rails that hold under five percent effective cost for a lewd-not-nude persona and trigger no ID wall because none is legally an adult platform: Instagram Subscriptions, Fanfix (20 percent, brand-safe, no nudity and no AI nudes), Passes (flat 10 percent), Ko-fi and Buy Me a Coffee as tip jars, Throne wishlists. Fanvue (15 to 20 percent) is the one that also carries an explicit paywall behind a lewd public layer.",
+  "w": "_PRIVATE/_boresight-24/rails.md §B2, §B6"
+ },
+ "age-verification": {
+  "t": "the age-verification net",
+  "k": "noun",
+  "st": "ruled",
+  "d": "What attaches the moment content is sold as explicit: 26 US states with adult age-verification laws as of June 2026 (upheld 6–3 in Free Speech Coalition v. Paxton, June 2025), the UK Online Safety Act in force since July 2025 (document or facial age assurance; penalties up to ten percent of global revenue or 18 million pounds), the EU moving nationally. Lewd-not-nude content on mainstream apps sits under the legal definition and outside the net.",
+  "w": "_PRIVATE/_boresight-24/rails.md §B5 · _PRIVATE/_boresight-24/lewd-lane.md §4"
+ },
+ "steam-record": {
+  "t": "the Steam record",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Corrected 9/17 on Chief's word. Valve's July 2025 clause bars content that breaks its payment processors' rules; the retired games clustered on incest, non-consent, torture and slavery (counts from 50 to 400-plus, no official figure). It was theme-based, not AI-based; Valve's AI policy is a separate track whose only adult carve-out is live-generated content. Adult games broadly still sell on Steam under the Adult Only tag. itch.io lost paid adult entirely; free adult was re-indexed within days.",
+  "w": "_PRIVATE/_boresight-24/rails.md §A"
  }
 }

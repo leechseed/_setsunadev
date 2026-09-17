@@ -7,7 +7,7 @@
   "issued": "2026-09-17",
   "asof": "2026-09-17",
   "s": "hot",
-  "status": "BORESIGHT delivered 9/17 on Chief's word (\"I need the whole distill\") · four specialists, 118 sources · **the recommendation: launch January 2027, add the motion lane, run the thirty-day test in October as the volcano's go/no-go** · five calls open, D-12 to D-16",
+  "status": "BORESIGHT v0.2, 9/17 late · **D-12 RULED: [[route-b|Route B]]**, local AI image-to-video on the render · the Steam record corrected (theme-based, not AI) · **the lewd line read: [[lewd-line|lewd-first]] wins the opening** (mainstream rails, Instagram and TikTok reach, no [[age-verification|age-verification net]]) · the 2026 rails mapped · recommendation stands: launch January 2027 · **six calls open, D-13 to D-18**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "[[bolo24|DOPE SHEET 24]] (the sheet this boresight serves) · the [[register|register]] · [[bolo29|BOLO 29]] (the reward-vs-risk ranking, Blocked #11) · [[bolo57|BOLO 57]] (voices, the fourth venture) · [[main-effort|the main effort]]",
   "related": [
@@ -30,7 +30,7 @@
   ],
   "home": "_PRIVATE/_boresight-24/ (facts · market-supply · market-demand · method) · BOLO.md row 24 · STATE Blocked #10",
   "card": "none — this is a read, not a stall; the calls go to DOPE SHEET 24 by FRAGO on Chief's rulings",
-  "version": "v0.1 · BORESIGHT"
+  "version": "v0.2 · BORESIGHT"
  },
  "mantra": [
   {
@@ -51,7 +51,7 @@
  ],
  "frago": {
   "mission": "Answer Call 1 of [[bolo24|DOPE SHEET 24]] with a dated launch month and an honest expectation, **in order to** stop [[main-effort|the main effort]]'s thirteen-day idle with a decision that is measured, not guessed.",
-  "order": "**Rule D-14 (the launch month, January 2027) and D-15 (the [[thirty-day-test|thirty-day test]] in October as [[volcano|the volcano]]'s go/no-go).** The other three calls can wait a week; these two set the calendar.",
+  "order": "**Rule D-14 (January 2027), D-15 (the October test) and D-18 ([[lewd-line|lewd-first]]).** D-18 sets what the October test posts and where; the other two set the calendar. D-17 rides on the [[bolo24|Gate 3]] skin test this week.",
   "default": "Silence: the plan runs as charted toward February with stills only, the ladder plan; nothing in this read is adopted and [[volcano|the volcano]] stays a word.",
   "calls": [
    {
@@ -59,14 +59,14 @@
     "options": "YES, add short loops (5–15 s) as the viral unit beside the stills (rec) · NO, stills only as charted · LATER, after the stills library ships",
     "default": "YES (rec)",
     "s": "ruled",
-    "ruling": "RULED 2026-09-17, Chief: \"we're going to be doing Route B.\" The motion lane is local AI image-to-video on the finished render (ComfyUI + Wan 2.2 / LTX on the 3090, NSFW loops and beginner workflows already on Civitai), not hand animation. Route A, the Spine-style living picture NIKKE actually uses, is the later splash asset if the loops travel in October. Route C, light Blender motion, is the fallback."
+    "ruling": "RULED 2026-09-17, Chief: \"we're going to be doing [[route-b|Route B]].\" The motion lane is local AI image-to-video on the finished render (ComfyUI + Wan 2.2 / LTX on the 3090, NSFW loops and beginner workflows already on Civitai), not hand animation. Route A, the Spine-style living picture NIKKE actually uses, is the later splash asset if the loops travel in October. Route C, light Blender motion, is the fallback."
    },
    {
     "q": "D-13 · the platform set",
-    "options": "Patreon SFW-tier + SubscribeStar Adult + Fansly, plus a Fanvue test for the disclosed-persona lane (rec) · the charted pair only · Fanvue-first",
-    "default": "the three plus the [[fanvue|Fanvue]] test (rec)",
+    "options": "lewd-first: Instagram + TikTok as the feeds, Instagram Subscriptions or Fanfix/Passes as the paid tier, Fanvue as the backend if the explicit ladder is climbed (rec) · the charted adult trio (Patreon SFW-tier + SubscribeStar Adult + Fansly) · Fanvue-first",
+    "default": "lewd-first with Fanvue as the backend (rec)",
     "s": "open",
-    "ruling": "Open. [[processor-risk|Processors, not platforms]], are the chokepoint (Gumroad 2024, itch.io and Steam 2025, Civitai 2025); two platforms and a mailing list from day one is the hedge every survivor cites. [[fanvue|Fanvue]] is where the disclosed CGI-persona lane is institutionalizing (its first award, June 2026)."
+    "ruling": "Open, re-cut 9/17 late on the lewd read. Fansly's photoreal-AI ban and Patreon's hyperrealistic rule both bite a [[route-b|Route B]] persona; [[fanvue|Fanvue]] welcomes disclosed synthetic and runs a lewd public layer over an explicit paywall on one account. [[processor-risk|Processors, not platforms]], are the chokepoint (rails sheet §B)."
    },
    {
     "q": "D-14 · the launch month",
@@ -88,6 +88,20 @@
     "default": "Chief words it (rec)",
     "s": "open",
     "ruling": "Open. The [[lightning-strike|Lightning Strike]] needs one sentence the whole launch carries. [[aitana|Aitana]]'s mechanism was a press-ready sentence, not a render; [[remi|Remi]]'s is the disclosed studio signing. The draft is a placeholder, not a ruling."
+   },
+   {
+    "q": "D-17 · the render style",
+    "options": "stylized-real (rec) · photoreal · decide at the Gate 3 skin test",
+    "default": "stylized-real (rec)",
+    "s": "open",
+    "ruling": "Open. [[route-b|Route B]] animates the render with AI, and the policy line everywhere is stylized versus photoreal-of-a-real-person: Patreon allows stylized AI, Fansly bans photoreal AI, TikTok and YouTube auto-label photoreal. Stylized-real also carries the human-made premium against the AI flood and matches D-6's disclosed frame. The [[bolo24|Gate 3]] skin test this week is where the look is chosen; choose it with this lane in mind."
+   },
+   {
+    "q": "D-18 · the explicitness line",
+    "options": "lewd-first, the two-account ladder later (rec) · explicit from day one as charted · lewd only, ever",
+    "default": "lewd-first, ladder later (rec)",
+    "s": "open",
+    "ruling": "Open. Chief asked: do I have to go full NSFW, can I just be lewd? The read says [[lewd-line|lewd-first]] is the correct opening — mainstream distribution, the brand-deal ceiling, no [[age-verification|age-verification net]], rails under 5 percent — and the standard ladder is a second, separated account on [[fanvue|Fanvue]] once the free audience is large enough to convert, with the account-linking mitigations (separate device, email, IP; no direct adult links from the SFW feed) mandatory from day one of the second account. This re-cuts the beats doc's 45/35/20 split (Call 3): the launch library goes suggestive-heavy, explicit banks behind the ladder."
    }
   ]
  },
@@ -158,7 +172,7 @@
        "s": "open"
       },
       {
-       "t": "**The three cautionary cases are the plan as charted.** Skilled Blender artists with an original character, a standard Patreon page and no hook plateau at niche income; well-made paid adult games got deindexed overnight by a [[processor-risk|processor campaign]]; experienced generic 3D artists are being compressed by AI. High craft plus generic positioning is the ladder.",
+       "t": "**The three cautionary cases are the plan as charted.** Skilled Blender artists with an original character, a standard Patreon page and no hook plateau at niche income; paid adult games on itch.io lost their rails overnight in July 2025 when Stripe and PayPal would not carry them (free adult content was re-indexed within days, paid is still dead there in 2026), while [[steam-record|Steam's same-month purge]] was **theme-based, not AI-based** — incest, non-consent, torture — and adult games broadly still sell there under the Adult Only tag; and experienced generic 3D artists are being compressed by AI. High craft plus generic positioning is the ladder.",
        "s": "open"
       },
       {
@@ -184,6 +198,31 @@
       },
       {
        "t": "**The numbers the sheet already carries:** on-target month three 150 to 200; month six 400 to 600; month twelve 1,000 to 1,500, which is the top three percent platform-wide. The blocker read: month-six net under conservative and X growth under 500 a month means [[d9|the discovery engine]], not the art. The market read confirms every one of those lines.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The lewd line and the rails · 9/17 late",
+     "items": [
+      {
+       "t": "**[[lewd-line|Lewd-first]] wins the opening.** The disclosed AI-persona money is lewd, not nude: Lu do Magalu about 34 thousand a sponsored post, Milla Sofia 10 to 25 thousand a post, [[aitana|Aitana]] about 30 thousand a month on [[fanvue|Fanvue]] plus brand deals, Emily Pellegrini 6 to 23 thousand a month solo. Disclosed personas keep full Instagram and TikTok reach in 2026; only undisclosed ones are suppressed (Meta's 'AI-generated profile' label, August 2026).",
+       "s": "open"
+      },
+      {
+       "t": "**What explicit costs:** the mainstream feeds (no Instagram, no TikTok, X only), every brand deal, [[processor-risk|adult processors]] at 10.8 to 14.5 percent, and the [[age-verification|age-verification net]] — 26 US states as of June 2026 and the UK Online Safety Act with penalties up to ten percent of revenue. What it adds is per-fan revenue with no hard number behind it. Nobody has quantified lewd versus nude for the same persona.",
+       "s": "open"
+      },
+      {
+       "t": "**The [[close-friends|'Close Friends' pattern]] is two things.** Instagram Subscriptions is the real rail: zero Meta commission through 2026, app-store cut on top, needs ten thousand followers. The informal version — a Close Friends story tier paid by Venmo, Cash App or PayPal friends-and-family — inherits the payment app's adult ban: PayPal can hold funds 180 days, 46 percent of adult creators lost a financial account in one year. Cheap until the day it is not.",
+       "s": "open"
+      },
+      {
+       "t": "**The [[boring-rails|boring rails]] that hold under 5 percent:** Instagram Subscriptions, Fanfix (20 percent, brand-safe, no nudity and no AI nudes), Passes (flat 10 percent), Ko-fi and Buy Me a Coffee as tip jars, Throne wishlists. None is legally an adult platform, so none triggers an ID wall. [[fanvue|Fanvue]] is the one place a single account runs a lewd public layer over an explicit paywall.",
+       "s": "open"
+      },
+      {
+       "t": "**The adult tier and the crypto route:** CCBill, Segpay and Epoch take a solo creator but charge 500 to 1,950 dollars a year in setup and hold reserves of up to 20 percent for 90 to 180 days; crypto checkout (Civitai's NowPayments precedent, USDC and USDT) exists and the GENIUS Act licensing lands around January 2027. There is no cheap middle once content is sold as explicit.",
        "s": "open"
       }
      ]
@@ -238,7 +277,7 @@
     },
     {
      "n": 3,
-     "t": "**The slice and the [[thirty-day-test|thirty-day test]] — October.** The slice plus the first five-to-fifteen-second loop, posted to X and Bluesky 10/1 to 10/31 under the disclosed frame, with the hypothesis and the thresholds written before the first post (D-15). Early access to the set sells from day one on the ruled first-dollar-first branch. Closes at [[bolo24|Gate 3]] (CDR/SIR/ORR) with the audience-signal report.",
+     "t": "**The slice and the [[thirty-day-test|thirty-day test]] — October.** The slice plus the first AI-animated loop ([[route-b|Route B]], D-12) posted 10/1 to 10/31 under the disclosed frame — lewd on Instagram and TikTok as the feeds, the spicier edge on X and Bluesky — with the hypothesis and the thresholds written before the first post (D-15). Early access to the set sells from day one on a [[boring-rails|boring rail]] (Instagram Subscriptions once eligible, Fanfix or Passes before that). Closes at [[bolo24|Gate 3]] (CDR/SIR/ORR) with the audience-signal report.",
      "s": "open",
      "when": "10/1–10/31"
     },
@@ -264,7 +303,8 @@
    "coord": [
     "The income search runs in parallel from today on [[pmcs|PMCS]] (Employment, red since 9/3); the venture is the daytime build only while runway holds, per D-5.",
     "Out of scope stands: real performers, any character under 18, spend beyond the stretch budget before [[bolo24|Gate 3]]'s AAR. The IP route (game-character content) is out: it conflicts with the original-persona studio and carries DMCA exposure.",
-    "Where volcano quality costs calendar time: the framing week, the war-game sitting, the splash asset. Where it does not: rendering (thirty seconds a frame) and generating options."
+    "Where volcano quality costs calendar time: the framing week, the war-game sitting, the splash asset. Where it does not: rendering (thirty seconds a frame) and generating options.",
+    "[[route-b|Route B]]'s tooling is a one-evening install: ComfyUI, Wan 2.2 or LTX, a Civitai workflow. It joins the [[bolo24|Gate 3]] evenings as evening seven."
    ],
    "running": [
     "[[bolo24|Gate 3]]'s six evenings (this week). The [[darkroom|DARKROOM]] reference pull. The income search."
@@ -303,6 +343,26 @@
      "s": "done"
     },
     {
+     "path": "_PRIVATE/_boresight-24/motion-lane.md",
+     "what": "NIKKE runs on Spine; the adult Live2D lane; tools and cost; local AI image-to-video on the 3090; the three routes (MS, 30 sources)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/_boresight-24/merch-lane.md",
+     "what": "zero-inventory lewd merch: who accepts it, the processor tax, the age wall, first-year money (PS)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/_boresight-24/lewd-lane.md",
+     "what": "the lewd-not-nude AI personas, the mechanics platform by platform, AI-persona policy 2026, lewd versus explicit (MS)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/_boresight-24/rails.md",
+     "what": "the Steam and itch.io record corrected; the 2026 rails: Close Friends, the boring platforms, the adult tier, crypto, the age-verification net (MS)",
+     "s": "done"
+    },
+    {
      "path": "_tools/bolostatus/boards/24.boresight.json",
      "what": "this board",
      "s": "done"
@@ -315,7 +375,7 @@
     },
     {
      "k": "the read",
-     "v": "four specialists, about 380k tokens off the main line; the main line read four sheets"
+     "v": "eight specialists across two passes, about 720k tokens off the main line; the main line read seven sheets"
     },
     {
      "k": "phase 1",
@@ -382,6 +442,10 @@
       {
        "t": "**The loop travels or it does not:** shares and reposts of the first loop versus the stills. If the loop does not out-travel the stills by a wide margin, D-12 is re-opened.",
        "s": "open"
+      },
+      {
+       "t": "**The feeds decide the format:** if the Instagram and TikTok reach on the disclosed persona out-runs X, [[lewd-line|lewd-first]] is confirmed by the audience, not the read, and the explicit ladder waits for the numbers.",
+       "s": "open"
       }
      ]
     },
@@ -405,7 +469,7 @@
     "last": "Spoken this morning after the first live launch sequence and the send-pad fix.",
     "plan": "One board, four inputs, five calls.",
     "you": "You said: you got this, baby.",
-    "next": "Your word on D-14 and D-15."
+    "next": "Your word on D-14, D-15 and D-18. D-17 rides on the skin test this week."
    },
    "entries": [
     {
@@ -422,6 +486,16 @@
      "when": "9/17",
      "who": "CDR",
      "t": "Recommendation on the record: launch January 2027 (D-14); the [[thirty-day-test|thirty-day test]] in October as the go/no-go (D-15); add the [[motion-lane|motion lane]] (D-12); three platforms plus a [[fanvue|Fanvue]] test (D-13); Chief words the [[category-sentence|category sentence]] (D-16)."
+    },
+    {
+     "when": "9/17",
+     "who": "ACTUAL",
+     "t": "\"What am I actually doing here? I'm not good at animation at all. Is the NIKKE-style moving picture an angle? Is anybody doing that?\" Then: \"we're going to be doing [[route-b|Route B]].\" Then: \"update your data on the Steam thing — there's a lot more adult content still on Steam. The [[close-friends|Close Friends]], direct-to-consumer processing people are doing. Do I have to go full NSFW? Can I just be lewd?\""
+    },
+    {
+     "when": "9/17",
+     "who": "CDR",
+     "t": "Four more reads: the motion lane (NIKKE is Spine; local AI image-to-video is the shortcut), merch, the lewd lane, the rails. D-12 ruled [[route-b|Route B]]. The Steam line corrected: theme-based, not AI. D-17 (render style) and D-18 (the explicitness line) opened; D-13 re-cut [[lewd-line|lewd-first]]. Board v0.2 republished."
     }
    ]
   }
