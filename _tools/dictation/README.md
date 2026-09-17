@@ -308,3 +308,5 @@ The persona sliders are real parameters, not a prompt. **brat** drives ElevenLab
 ## The pad focuses the chat (Chief, 9/17)
 
 **The pad beside the talk pad** (learn it: `python midipad.py --learn-focus`; Chief 9/17: the talk pad stays as it was) brings VS Code to the foreground and puts the cursor in the Claude Code input: `focus.py` raises the VS Code window (Win32, the Alt tap defeats the foreground lock) and sends `ctrl+alt+shift+j`, bound in the user `keybindings.json` to the extension's `claude-vscode.focus` ("Claude Code: Focus input") with no `when` clause. `judy.json → session.focus_on_talk` makes the talk triggers focus too: `never` (default since 9/17) · `pad` · `always`. `python focus.py` proves it once.
+
+**The SEND pad** (Chief, 9/17): the pad above the talk pad puts VS Code in front, the cursor in the box, and presses Enter on whatever is there (`focus.send_box`). Learn it: `python midipad.py --learn-send`; provisional note 43 until learned.

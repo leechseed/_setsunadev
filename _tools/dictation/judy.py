@@ -332,6 +332,11 @@ class Loop:
                 import focus
                 extra[int(dcfg()["focus_note"])] = (
                     lambda: threading.Thread(target=focus.focus_claude, daemon=True).start(), lambda: None)
+            if self.session and dcfg().get("send_note") is not None:
+                import focus
+                # the SEND pad (Chief 9/17): the pad above the talk pad — Enter on whatever is in the box
+                extra[int(dcfg()["send_note"])] = (
+                    lambda: threading.Thread(target=focus.send_box, daemon=True).start(), lambda: None)
             if self.toggle:
                 self.pad = midipad.PadListener(lambda: self.fire("pad"), lambda: None, extra=extra)
             else:
@@ -341,7 +346,8 @@ class Loop:
             if self.pad.start():
                 c = dcfg()
                 print(f"  pad    note {c['midi_note']} on {c.get('midi_port')}"
-                      + (f" · focus pad note {c['focus_note']}" if c.get("focus_note") is not None else " · no focus pad (midipad.py --learn-focus)"))
+                      + (f" · focus pad note {c['focus_note']}" if c.get("focus_note") is not None else " · no focus pad (midipad.py --learn-focus)")
+                      + (f" · send pad note {c['send_note']}" if c.get("send_note") is not None else ""))
             else:
                 print(f"  pad    unavailable: {self.pad.error}")
 

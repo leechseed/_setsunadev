@@ -123,6 +123,18 @@ def focus_claude(prefer=None):
     return ok, title
 
 
+def send_box():
+    """The SEND pad (Chief, 9/17): VS Code forward, cursor in the box, Enter on whatever is there."""
+    ok, title = focus_claude()
+    try:
+        import keyboard
+        time.sleep(0.05)
+        keyboard.send("enter")
+    except Exception as e:
+        return ok, "%s (enter failed: %s)" % (title, e)
+    return ok, title
+
+
 def wants_focus(src):
     p = policy()
     return p == "always" or (p == "pad" and src == "pad")

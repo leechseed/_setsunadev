@@ -230,6 +230,7 @@ def main():
     ap.add_argument("--watch", action="store_true")
     ap.add_argument("--learn", action="store_true")
     ap.add_argument("--learn-focus", action="store_true", help="hit the pad that focuses the Claude Code box (Chief, 9/17)")
+    ap.add_argument("--learn-send", action="store_true", help="hit the pad that sends whatever is in the Claude Code box (Chief, 9/17)")
     ap.add_argument("--timeout", type=int, default=45)
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--port")
@@ -251,6 +252,8 @@ def main():
             print(f"  focus pad: note {cfg['focus_note']}")
         else:
             print("  no focus pad learned — run: python midipad.py --learn-focus")
+        if cfg.get("send_note") is not None:
+            print(f"  send pad: note {cfg['send_note']}")
         return
 
     if a.watch:
@@ -263,6 +266,10 @@ def main():
 
     if a.learn_focus:
         learn(a.port, a.timeout, key="focus_note", label="FOCUS button (the pad beside the talk pad)")
+        return
+
+    if a.learn_send:
+        learn(a.port, a.timeout, key="send_note", label="SEND button (the pad above the talk pad)")
         return
 
     if a.test:
