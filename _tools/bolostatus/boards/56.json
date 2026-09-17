@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "🟢 Console BUILT 9/16; voice call CLOSED — ElevenLabs LIVE 9/17, Blondie ruled. Wire RULED MCP-all-in 9/16, brain RULED stay-on-router 9/17 — the MCP server itself not built yet. Three calls open: the wire (build) · the TARS dials · the PNG states.",
+  "status": "🟢 Console BUILT 9/16; voice CLOSED — ElevenLabs LIVE 9/17, Blondie ruled, and RULED 9/17 to stay (already paid for). Local-voice boresight ran 9/17, HELD, recon banked. Wire RULED MCP, brain on the router — the MCP server itself not built yet. Open: the wire (build) · the TARS dials · the PNG states.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -72,6 +72,13 @@
     "options": "Papi's art against the 9/16 spec · keep the placeholder faces the loop runs on today (rec until art lands) · commission it",
     "default": "placeholders until Papi's art lands",
     "s": "held"
+   },
+   {
+    "q": "The local voice",
+    "options": "Chatterbox Turbo on the 3090 (rec of the recon) · Zonos · Qwen3-TTS · stay on ElevenLabs",
+    "default": "stay on ElevenLabs",
+    "s": "held",
+    "ruling": "HELD 9/17 by Papi: \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays JUDY's mouth for the life of the subscription. The recon (Chatterbox Turbo rec, sources, the build cost) is banked at _tools/dictation/RECON-local-voice.md for when the subscription lapses or the local standard is re-raised."
    }
   ]
  },
@@ -82,10 +89,10 @@
    "kind": "list",
    "plain": "Where JUDY came from: one transmission with everything in it, what was already sitting in the record before it was said, and what got ruled since.",
    "strand": {
-    "last": "Papi spoke the whole ask in one stacked break-break (×4) and called boresight on it — a spoken loop, a specific model requirement, a persona, a voice, a face.",
+    "last": "Papi raised the fully-local standard, ordered the boresight on the local voice, then held it the same turn: ElevenLabs is paid for and stays.",
     "plan": "Find what already existed before building anything new, then rule the open calls one at a time.",
     "you": "You named the ask, the model requirement, the persona, the voice register, and the face concept in one transmission, then kept ruling calls across two more sessions.",
-    "next": "The wire — the one call the console could not turn into a knob."
+    "next": "The wire — unchanged. The local voice waits on the subscription."
    },
    "groups": [
     {
@@ -166,6 +173,11 @@
        "t": "VOICE RULED 9/17: Blondie — Conversational (British), stability 0.35 / style 0.55 / speed 1.05, on eleven_turbo_v2_5.",
        "s": "done",
        "when": "9/17"
+      },
+      {
+       "t": "Local voice HELD 9/17. Papi: \"I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity\" → boresight ran → \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays; Piper stays the offline floor; the recon waits.",
+       "s": "held",
+       "when": "9/17"
       }
      ]
     }
@@ -200,8 +212,8 @@
    "strand": {
     "last": "Five calls were raised 9/16; the console turned three into knobs the same session, and the route call (BOLO 26) closed the same day.",
     "plan": "Build the wire next — the tools brain.py already exposes need the MCP server to reach the Opus session.",
-    "you": "Bought and wired ElevenLabs the same session it was mentioned; ruled the brain onto the router the next day.",
-    "next": "Build the MCP server; then the TARS dials and the PNG art can close on their own schedule."
+    "you": "Ordered the local-voice boresight, read it, and held it on the money already spent. The wire order stands.",
+    "next": "Build the MCP server. The local voice is banked, not open."
    },
    "main_effort": "Close the wire — the one open architecture question left: getting JUDY's voice layer to reach the Opus VS Code session without inheriting its model or its latency.",
    "phases": [
@@ -261,6 +273,12 @@
      "n": 9,
      "t": "The PNG state set — spec handed to Papi 9/16, awaiting art.",
      "s": "open"
+    },
+    {
+     "n": 10,
+     "t": "The local voice — Papi raised the 3090 / 100 % local standard 9/17 and ordered the boresight; twelve engines read, Chatterbox Turbo the recommendation, no 3090 numbers published. HELD the same turn: ElevenLabs is paid for and stays. Recon banked.",
+     "s": "held",
+     "when": "9/17"
     }
    ],
    "coord": [],
@@ -347,6 +365,11 @@
      "path": "oscar-mike/lab-venture.md",
      "what": "§Voice — the speaking-half RVC / w-okada thinking, banked, not binding on JUDY",
      "s": "done"
+    },
+    {
+     "path": "_tools/dictation/RECON-local-voice.md",
+     "what": "the local-voice boresight read — twelve engines on license · VRAM · speed · delivery control · British female · Windows · health, the shortlist, what only the box can settle, the build cost, every source",
+     "s": "held"
     }
    ],
    "cost": [
@@ -461,6 +484,21 @@
      "when": "9/17",
      "who": "Papi",
      "t": "Voice audition ruled: \"let's go with Blondie\" — Conversational (British), stability 0.35 / style 0.55 / speed 1.05, on eleven_turbo_v2_5."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity.\" Then: \"boresight local voice.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Boresight delivered: the only off-box piece is the mouth. One MS read twelve local engines; Chatterbox Turbo (MIT, two continuous delivery dials, native Windows) recommended, Zonos and Qwen3-TTS behind it; no 3090 numbers exist anywhere; four calls raised. Banked at _tools/dictation/RECON-local-voice.md."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" — the local voice HELD; ElevenLabs stays the mouth."
     }
    ]
   }
