@@ -862,10 +862,17 @@
   "w": "SOP.md §5 · §8"
  },
  "launch-sequence": {
-  "t": "launch sequence",
+  "t": "the launch sequence",
+  "k": "system",
+  "st": "ruled",
+  "d": "What [[go-for-launch|go for launch]] fires (BOLO 58, built 9/17): a zero-token script brings the DARKROOM and [[judy|JUDY]] up, probes the wire, opens the board and the [[soi|SOI]]; then the [[sitrep|sit rep]] runs in the formation; the reply carries the station poll. Stations RULED 9/17 by Chief: the board · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY · the seven tools. The name RULED 9/17: \"just launch sequence\".",
+  "w": "_tools/launch/launch.py · .claude/skills/launch/ · BOLO.md row 58"
+ },
+ "go-for-launch": {
+  "t": "go for launch",
   "k": "proword",
-  "st": "provisional",
-  "d": "One word stands the Command up (BOLO 58, 9/17): a zero-token script brings the DARKROOM and [[judy|JUDY]] up, probes the wire, opens the board and the [[soi|SOI]], then the [[sitrep|sit rep]] runs in the formation; the reply carries the station poll. Stations RULED 9/17 by Chief: the board · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY · the seven tools. The proword itself is benched: STAND-TO (rec) · LIGHT THE CANDLE · ALL STATIONS.",
-  "w": "SOP.md §1 · _tools/launch/launch.py · .claude/skills/launch/"
+  "st": "ruled",
+  "d": "The word that fires [[launch-sequence|the launch sequence]], RULED 9/17 over a bench of ten (five Marine, five NASA). Lineage: the flight director's go/no-go poll, every console answering go. Garbles: go for log · go for lunch. Never [[go|go N]], which is a phase go-word on a DOPE SHEET.",
+  "w": "SOP.md §0–1 · §5 · §8 · .claude/skills/launch/"
  }
 }

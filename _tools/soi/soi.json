@@ -1,7 +1,7 @@
 {
- "edition": "2026-09-17-2",
+ "edition": "2026-09-17-3",
  "effective": "2026-09-17 · until superseded by the next edition",
- "supersedes": "edition 2026-09-17-1. Carries the 9/17 address ruling: Chief replaces Papi everywhere in the live Command. Carries the 9/15–9/17 rulings: the Command, the crew grades, TM, organic, the ladder, JUDY, go N. The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
+ "supersedes": "edition 2026-09-17-2. Adds the 9/17 rulings: GO FOR LAUNCH as the proword, the launch sequence as the thing (BOLO 58). Carries the 9/17 address ruling: Chief replaces Papi everywhere in the live Command. Carries the 9/15–9/17 rulings: the Command, the crew grades, TM, organic, the ladder, JUDY, go N. The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
  "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
  "prepared_by": "Claude (every session)",
  "approved_by": "Chief — every proword marked RULED carries his word",
@@ -133,6 +133,10 @@
   {
    "date": "2026-09-17",
    "t": "**CHIEF** ruled as the operator's address (\"across the board, change it everywhere, Chief, C-H-I-E-F\"); Papi retired from every live document, page, tool and memory, the archives excepted. §8 row: Poppy · poppie · papi · chef → Chief. Register key `chief` added; edition 2026-09-17-2."
+  },
+  {
+   "date": "2026-09-17 · later",
+   "t": "**GO FOR LAUNCH** ruled as the proword that fires **the launch sequence** (BOLO 58: the stations up, the boards open, the sit rep, the poll), over a bench of ten, five Marine and five NASA. Stations ruled: the board · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY · the seven tools. Codebook: go for log · go for lunch → go for launch; S-O-Y → SOI. Edition 2026-09-17-3."
   }
  ]
 }

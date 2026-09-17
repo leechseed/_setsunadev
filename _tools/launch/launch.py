@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""The launch sequence (BOLO 58) — one word stands the Command up. Zero tokens.
+"""The launch sequence (BOLO 58) — "go for launch" (RULED 9/17) stands the Command up. Zero tokens.
 
 Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHEETs ·
 the DARKROOM · JUDY in session voice (whisper ears, face, Blondie reading) · her seven

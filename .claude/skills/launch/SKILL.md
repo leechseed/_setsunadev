@@ -1,11 +1,11 @@
 ---
 name: launch
-description: Run the launch sequence (BOLO 58) — one word stands the Command up. A zero-token script brings the local stations up (the DARKROOM, JUDY in session voice, the wire probe) and opens the two boards (the sit rep page, the SOI), then the sit rep runs in the formation and the reply carries the station poll above the board. Fires on "launch sequence", "start launch sequence", "stand-to" / "stand to" (the benched word), "light the candle", "all stations", "stand the Command up".
+description: Run the launch sequence (BOLO 58) — one word stands the Command up. A zero-token script brings the local stations up (the DARKROOM, JUDY in session voice, the wire probe) and opens the two boards (the sit rep page, the SOI), then the sit rep runs in the formation and the reply carries the station poll above the board. Fires on "go for launch" (RULED 9/17; garbles "go for log", "go for lunch") and on "launch sequence" / "start launch sequence" spoken alone. Never on "go N".
 ---
 
 # The launch sequence — BOLO 58
 
-Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY in session voice (the full loop: whisper ears on the 3090, the face, Blondie reading the session) · her seven spoken tools over the wire. The proword is still benched (STAND-TO rec); "launch sequence" is the working phrase. No questions, no preamble.
+Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY in session voice (the full loop: whisper ears on the 3090, the face, Blondie reading the session) · her seven spoken tools over the wire. The proword is **go for launch** (RULED 9/17, the flight director's poll answered); the thing it fires is **the launch sequence** (RULED the same breath). No questions, no preamble.
 
 ## 1 · Stations (zero tokens)
 
