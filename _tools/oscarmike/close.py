@@ -12,6 +12,13 @@ Prints  a 10-line digest. The main line then: launches NOTE (haiku) → reads th
         writes STATE's Moved bullet → python journal.py → the OUT block.
 """
 import io, json, os, re, sys, glob, datetime, subprocess
+import sys
+
+# stdout on this box is cp1252; the board writes arrows and box glyphs
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))

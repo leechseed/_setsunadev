@@ -4,9 +4,9 @@
   "title": "Voice work as income — Papi can build voices in ElevenLabs",
   "trunk": "ORANGE-leaning, UNRULED",
   "issued": "2026-09-16",
-  "asof": "2026-09-16",
-  "s": "open",
-  "status": "🔴 CAPTURED 9/16, nothing verified — joins the reward-vs-risk ranking on BOLO 29 (Blocked #11, open since 9/4). Needs a boresight to price it before it can be ranked.",
+  "asof": "2026-09-17",
+  "s": "held",
+  "status": "🔴 CAPTURED 9/16, unpriced — the sheet is live and the boresight is ordered but has not run. Joins the reward-vs-risk ranking on BOLO 29 (Blocked #11), which is now a four-way and cannot close until 57 carries a number.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 56 (JUDY)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 57",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -132,6 +132,10 @@
       {
        "t": "The real question is the one BOLO 29 already asks: which venture starts first. This makes that a four-way, not a three-way — 24 · 27 · 29 · 57 — and per STATE's Blocked #11 it can't be ruled until 57 gets a boresight.",
        "s": "open"
+      },
+      {
+       "t": "**DOPE SHEET 57 is live** and recorded in `BOLO.md` row 57, `_tools/pages/pages.json` and the `bolo57` glossary key (created 9/17 — it did not exist). The row was also placed on the board for the first time on 2026-09-16-6, **held on a ruling**; the WATCH specialist had dropped it and the assembler's checklist caught it.",
+       "s": "done"
       }
      ]
     }
@@ -166,8 +170,8 @@
    "strand": {
     "last": "BOLO 29 already asked which venture starts first, three-way, before this row existed.",
     "plan": "Hold the four paths uncosted until a boresight runs; then the ranking on BOLO 29 picks up as a four-way.",
-    "you": "You named the venture and the four paths on the break-break; the boresight has not yet been called.",
-    "next": "Call the boresight, or let it wait behind BOLO 29's own hold."
+    "you": "You captured it on a break-break, then closed the session on 'Oscar Mike, Oscar Mike. Frago.' — no number spoken, read as this sheet.",
+    "next": "Say the word on the boresight. It is one pass, no build, no spend, and it is the only thing standing between this row and the ranking it created."
    },
    "main_effort": "Price it. A boresight on BOLO 57 is the one thing that lets the four-way ranking (24 · 27 · 29 · 57) move.",
    "phases": [
@@ -234,7 +238,7 @@
     "last": "Blocked #11 — the reward-vs-risk reading on BOLO 29 — has been open since 9/4. This row just made it wider.",
     "plan": "One decider, one boresight, then the ranking that #11 has been waiting on.",
     "you": "You are the only one who can say run the boresight, and the only one who can rule the trunk.",
-    "next": "Say the word on the boresight. Nothing here spends money or signs anything without it."
+    "next": "Charlie Mike on this sheet: the boresight is the whole resume order. Nothing before it, nothing after it until it lands."
    },
    "groups": [
     {
@@ -287,6 +291,26 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Opened as BOLO 57, its own row rather than a line on 29 — the asset named is the skill, not the tool; four candidate paths captured unranked and unpriced; STATE's Blocked #11 updated from a three-way to a four-way ranking (24 · 27 · 29 · 57), held until a boresight prices it."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"give me the board side and the dope sheet on a Bolo 57\" — the sheet ordered."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Sheet built and published at https://claude.ai/artifact/19rjZFkarB1QvEYK1vubdo; URL recorded in all three places; `bolo57` glossary key created; 57 placed on board 2026-09-16-6 as held on a ruling."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"Oscar Mike, Oscar Mike. Frago.\" — the close-out, with a FRAGO and no number spoken."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Read as FRAGO 57, the sheet in play: the resume order is carried here rather than on a parking card, per the 9/11 ruling that DOPE SHEETs carry resume orders."
     }
    ]
   }

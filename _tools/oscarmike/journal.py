@@ -9,6 +9,13 @@ Appends to _devlog/_devlog_docs/_devlog_journals/MMDDYYYY.journal.md (created if
 Idempotent per note: if the journal already carries this note's title, nothing is appended.
 """
 import io, os, re, sys, datetime, glob
+import sys
+
+# stdout on this box is cp1252; the board writes arrows and box glyphs
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
