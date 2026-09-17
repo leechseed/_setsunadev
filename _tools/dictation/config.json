@@ -20,20 +20,23 @@
  "knobs": {
   "mode": "absolute",
   "scroll_y": {
-   "cc": 70,
+   "cc": 1,
+   "channel": 0,
    "notch": 1,
    "invert": false
   },
   "scroll_x": {
-   "cc": 71,
+   "cc": 2,
+   "channel": 0,
    "notch": 1,
    "invert": false
   },
   "zoom": {
-   "cc": 72,
+   "cc": 3,
+   "channel": 0,
    "notch": 4,
    "invert": false
   },
-  "note": "PROVISIONAL 9/17 (BOLO 62): K1 K2 K3 on the MPK mini 3 factory program (CC 70 71 72, absolute). Learn: python knobs.py --learn scroll_y | scroll_x | zoom. Endless knobs: set REL in the MPK editor, then mode: relative."
+  "note": "LEARNED 9/17 from the watch log (BOLO 62): Chief's MPK mini 3 program sends the first three knobs as CC 1 2 3 on channel 0, absolute. Re-learn: python knobs.py --learn scroll_y | scroll_x | zoom. Endless knobs: set REL in the MPK editor, then mode: relative."
  }
 }

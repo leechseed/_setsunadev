@@ -36,12 +36,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG = os.path.join(HERE, "config.json")
 
 ROLES = ("scroll_y", "scroll_x", "zoom")
-# the MPK mini 3 factory program: K1..K8 = CC 70..77 on channel 0 — provisional until learned
+# Chief's MPK mini 3 program (watched 9/17): the first three knobs send CC 1 2 3 on channel 0, absolute
 DEFAULT = {
     "mode": "absolute",
-    "scroll_y": {"cc": 70, "notch": 1, "invert": False},
-    "scroll_x": {"cc": 71, "notch": 1, "invert": False},
-    "zoom":     {"cc": 72, "notch": 4, "invert": False},
+    "scroll_y": {"cc": 1, "notch": 1, "invert": False},
+    "scroll_x": {"cc": 2, "notch": 1, "invert": False},
+    "zoom":     {"cc": 3, "notch": 4, "invert": False},
 }
 
 
@@ -307,7 +307,7 @@ def main():
         print("\n  mode %s" % k.get("mode"))
         for r in ROLES:
             print("  %-8s cc %s%s" % (r, k[r].get("cc"),
-                                      "" if learned.get(r) else "  (factory default, not learned)"))
+                                      "" if learned.get(r) else "  (built-in default, not learned)"))
         return
     if a.watch:
         watch(a.seconds, a.port)
