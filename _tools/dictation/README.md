@@ -275,6 +275,7 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `wire.py` | **the wire** — brain.py's seven tools as an MCP server over stdio (BOLO 56) |
 | `wire_probe.py` | spawns the wire and calls every tool once; the proof |
 | `knobs.py` | **the knobs** — the MPK rotary knobs as scroll Y · scroll X · zoom, a daemon beside JUDY (BOLO 62) |
+| `mpkprog.py` | the MPK mini 3's program over SysEx — dump, verify, flip knobs between absolute and relative (BOLO 62) |
 | `reader.py` | **session voice** — follows the VS Code session's transcript and reads Fable aloud as she writes |
 | `../../.mcp.json` | registers the wire with the VS Code session as server `judy` |
 | `audition.py` | try candidate voices on the real script |
@@ -330,4 +331,4 @@ Chief runs VS Code on a profile (`%APPDATA%/Code/User/profiles/-4e417035/`), and
 
 Bindings (watched off the wire 9/17, Chief's MPK program, absolute): the first three knobs, CC 1 = scroll Y · CC 2 = scroll X · CC 3 = zoom. The factory-sheet numbers (CC 70–72) were wrong for this program; the watch log settled it. Clockwise = down · right · in. Re-bind any of them by turning the knob you want: `python knobs.py --learn scroll_y` (or `scroll_x`, `zoom`). `config.json → knobs` holds the map; `notch` is knob ticks per wheel notch (scroll Y is 2 — Chief halved it 9/17 — scroll X is 1, zoom is 4), `invert` flips a knob.
 
-**The end stop.** These knobs are absolute (0–127): turned all the way, a knob stops scrolling until it comes back. For endless knobs, set them to **REL** in the MPK mini Program Editor and set `knobs.mode` to `relative`; the daemon then reads the deltas the knob sends.
+**The end stop, and its fix.** The program shipped the knobs absolute (0–127): turned all the way, a knob went silent until it came back (Chief hit it within the hour: "it only scrolls halfway down the page"). The Akai editor is not installed, so `mpkprog.py` does the edit over SysEx: `--dump` reads and decodes the live program with a layout check against what the wire already showed (pad channel, pad notes, knob CCs), `--rel 1 2 3 --persist` flips K1–K3 to relative in RAM and in the stored slot whose contents match (program 2, "AbletonLive"), and reads both back. Done 9/17; `knobs.mode` is `relative` and the knobs are endless. `--abs 1 2 3 --persist` puts it back.

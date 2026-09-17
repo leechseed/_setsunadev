@@ -17,10 +17,10 @@ it lands in whatever window is under the pointer: a browser, VS Code, a PDF, the
 The port is shareable on this box (proved 9/17: a second open beside JUDY's succeeds),
 so this runs beside judy.py --session and needs no restart of her.
 
-Knob modes. The MPK mini 3 factory program sends the knobs ABSOLUTE (0–127), so a knob
-has end stops: at 0 or 127 it stops scrolling until you turn back. Set the knobs to
-RELATIVE in the MPK mini Program Editor (Knob → Mode: REL) and they become endless;
-then set config.json → knobs.mode to "relative". Both are handled here.
+Knob modes. Chief's program shipped the knobs ABSOLUTE (0–127), so a knob had end stops:
+at 0 or 127 it went silent until turned back. 9/17: mpkprog.py switched K1–K3 to RELATIVE
+over SysEx (RAM + stored program 2) and config.json → knobs.mode is "relative"; the knobs
+are endless now. Both modes are handled here, and both relative encodings are read.
 """
 
 import argparse
@@ -157,7 +157,9 @@ class Knobs:
 
     def delta(self, cc, value):
         if self.relative:
-            return value if value < 64 else value - 128
+            if 60 <= value <= 68:            # offset-64 encoders: 65 = +1, 63 = -1
+                return value - 64
+            return value if value < 64 else value - 128   # two's complement: 1 = +1, 127 = -1
         prev = self.last.get(cc)
         self.last[cc] = value
         if prev is None:
