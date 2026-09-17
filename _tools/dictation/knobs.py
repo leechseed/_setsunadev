@@ -39,7 +39,7 @@ ROLES = ("scroll_y", "scroll_x", "zoom")
 # Chief's MPK mini 3 program (watched 9/17): the first three knobs send CC 1 2 3 on channel 0, absolute
 DEFAULT = {
     "mode": "absolute",
-    "scroll_y": {"cc": 1, "notch": 1, "invert": False},
+    "scroll_y": {"cc": 1, "notch": 2, "invert": False},   # 2 ticks per notch = half speed (Chief 9/17)
     "scroll_x": {"cc": 2, "notch": 1, "invert": False},
     "zoom":     {"cc": 3, "notch": 4, "invert": False},
 }

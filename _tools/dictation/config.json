@@ -22,7 +22,7 @@
   "scroll_y": {
    "cc": 1,
    "channel": 0,
-   "notch": 1,
+   "notch": 2,
    "invert": false
   },
   "scroll_x": {
@@ -37,6 +37,6 @@
    "notch": 4,
    "invert": false
   },
-  "note": "LEARNED 9/17 from the watch log (BOLO 62): Chief's MPK mini 3 program sends the first three knobs as CC 1 2 3 on channel 0, absolute. Re-learn: python knobs.py --learn scroll_y | scroll_x | zoom. Endless knobs: set REL in the MPK editor, then mode: relative."
+  "note": "LEARNED 9/17 from the watch log (BOLO 62): Chief's MPK mini 3 program sends the first three knobs as CC 1 2 3 on channel 0, absolute. Re-learn: python knobs.py --learn scroll_y | scroll_x | zoom. Endless knobs: set REL in the MPK editor, then mode: relative. scroll_y notch 2 = half speed (Chief 9/17: 'tone it down by 50%')."
  }
 }
