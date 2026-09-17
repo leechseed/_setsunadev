@@ -750,5 +750,11 @@
   "k": "item",
   "d": "Food preservation. Watchlist row 39 in BOLO.md; the row carries its status and its resume order.",
   "w": "BOLO.md #39"
+ },
+ "bolo57": {
+  "t": "BOLO 57",
+  "k": "item",
+  "d": "Voice work as income: Papi can already build voices in ElevenLabs, so it is a fourth candidate venture beside 24 · 27 · 29. Four paths named, none costed. Held until a boresight prices it.",
+  "w": "https://claude.ai/artifact/19rjZFkarB1QvEYK1vubdo"
  }
 }

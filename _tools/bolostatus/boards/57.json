@@ -1,0 +1,294 @@
+{
+ "bolo": {
+  "n": 57,
+  "title": "Voice work as income — Papi can build voices in ElevenLabs",
+  "trunk": "ORANGE-leaning, UNRULED",
+  "issued": "2026-09-16",
+  "asof": "2026-09-16",
+  "s": "open",
+  "status": "🔴 CAPTURED 9/16, nothing verified — joins the reward-vs-risk ranking on BOLO 29 (Blocked #11, open since 9/4). Needs a boresight to price it before it can be ranked.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "BOLO 56 (JUDY)",
+  "related": [
+   {
+    "n": 24,
+    "why": "its disclosed 3D persona would need a built voice — one of the four unranked paths this row names"
+   },
+   {
+    "n": 29,
+    "why": "already asks which venture starts first; BOLO 57 turns that ranking from a three-way into a four-way"
+   },
+   {
+    "n": 56,
+    "why": "already ruled ElevenLabs as JUDY's eventual voice, so one subscription would serve the venture and the crew at once"
+   }
+  ],
+  "home": "BOLO.md · row 57",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The skill already exists — no course, no ramp, no wait. The only new step left is pricing it."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One boresight prices four paths. Until it runs, this row cannot join the ranking it created."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Losing the four-way ranking is a legal outcome. Capturing it unpriced was still the right call."
+  }
+ ],
+ "frago": {
+  "mission": "Price the ElevenLabs voice-building skill as a revenue path, in order to rank it honestly against the other three ventures instead of letting a named asset sit uncosted.",
+  "order": "**Run one boresight on BOLO 57: read ElevenLabs' Voice Library payout terms, rates, exclusivity and licensing, and put a number on each of the four paths. One pass, no build, no spend.** Bring it back as a FRAGO on this sheet, then rank 57 against 24 · 27 · 29.",
+  "default": "Silence: the boresight does not run, 57 stays uncosted and unranked, and BOLO 29's reward-vs-risk reading (Blocked #11) stays open with a fourth candidate it cannot weigh. The trunk stays ORANGE-leaning and unruled. Nothing is spent and nothing is signed.",
+  "calls": [
+   {
+    "q": "The boresight — does it run?",
+    "options": "RUN now (rec: one pass, zero spend, unblocks #11) · HOLD until BOLO 24's launch month is named · DROP the row and fold it back into 29 as a line",
+    "default": "RUN now (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Which paths get priced",
+    "options": "all four (rec) · only (a) the Voice Library payout program, as the one with published terms · only the two that need no adult-content decision — (a) payout and (b) built-to-order",
+    "default": "all four (rec)",
+    "s": "open"
+   },
+   {
+    "q": "The trunk",
+    "options": "ORANGE — it is a venture like 24 and 27 · OPERATOR — it rides on the tooling already bought for JUDY · its own trunk",
+    "default": "ORANGE (rec: it competes for the same first-venture slot)",
+    "s": "open"
+   },
+   {
+    "q": "The subscription question",
+    "options": "one ElevenLabs subscription serves both JUDY and the venture (rec: BOLO 56 already committed the tool) · separate accounts to keep the venture's licensing clean · decide after the boresight reads the terms",
+    "default": "decide after the boresight (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Where 57 ranks in the four-way",
+    "options": "cannot be answered before the boresight — this call is parked on the one above",
+    "default": "parked until priced",
+    "s": "held"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where this came from: one line spoken on a break-break, what was already true before it was said, and what still isn't known.",
+   "strand": {
+    "last": "Three other candidate ventures — 24, 27, 29 — were already sitting on the reward-vs-risk ranking when this one landed.",
+    "plan": "Capture the paths, price none of them, and let a boresight turn this from a fourth entry into a ranked one.",
+    "you": "You named a skill you already have — building voices in ElevenLabs — and four unranked ways to use it for income.",
+    "next": "A boresight to price it, the same step BOLO 29 is also waiting on."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"add to the… zero to hero income BOLO… I can actually create voices in ElevenLabs. That could be something I can definitely do.\"",
+       "s": "done",
+       "when": "9/16"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "The asset Papi named is the skill, not the tool: building voices in ElevenLabs is something he can already do today, with no ramp — the same standing order as BOLO 24 (start now with what is in hand).",
+       "s": "done"
+      },
+      {
+       "t": "BOLO 56 already ruled ElevenLabs as JUDY's eventual voice and wired it the same session — `speak.py` fronts sapi · piper · elevenlabs behind one `say()`, the official SDK (2.68.0) integrated. One subscription would serve the venture and the crew at once.",
+       "s": "done",
+       "when": "9/16"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "Four candidate paths, unranked and unverified: the ElevenLabs Voice Library payout program (share a voice, earn on usage) · built-to-order voices for creators, studios, game devs and audiobook work · a voice for BOLO 24's disclosed 3D persona · narration/VO delivered as a service on Papi's own editing strength.",
+       "s": "open"
+      },
+      {
+       "t": "Not costed. The payout terms, the rates, the exclusivity and the licensing on any voice he builds are all unverified — nothing here should be ranked until a boresight prices it.",
+       "s": "open"
+      },
+      {
+       "t": "The real question is the one BOLO 29 already asks: which venture starts first. This makes that a four-way, not a three-way — 24 · 27 · 29 · 57 — and per STATE's Blocked #11 it can't be ruled until 57 gets a boresight.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason is that the skill is already in hand and the tool is already paid for somewhere else.",
+   "strand": {
+    "last": "BOLO 56 ruled ElevenLabs as JUDY's eventual voice and it was integrated the same day; on the same break-break Papi named voice-building as something he can already do for money.",
+    "plan": "Capture it as its own row rather than a line on 29, because it shares nothing with the TikTok path but the income question.",
+    "you": "You named the asset and said it out loud. You have not priced it, ranked it, or ruled its trunk.",
+    "next": "Run one boresight that prices the four paths, then rank this against 24 · 27 · 29."
+   },
+   "task": "Price the ElevenLabs voice-building skill as a revenue path,",
+   "intent": "in order to rank it honestly against the other three ventures instead of letting a named asset sit uncosted.",
+   "spoken": "\"Add to the… zero to hero income BOLO… I can actually create voices in ElevenLabs. That could be something I can definitely do.\"",
+   "endstate": [
+    "The four candidate paths — Voice Library payout · built-to-order voices · voices for the adult lane · narration and VO as a service — each carry a number: what it pays, what it costs, what it locks up.",
+    "The licensing and exclusivity terms on any voice built in ElevenLabs are read and written down, not assumed.",
+    "BOLO 57 sits in the reward-vs-risk ranking on BOLO 29 as a fourth candidate with a real position, not an asterisk.",
+    "The trunk is ruled — ORANGE, OPERATOR, or its own thing — instead of leaning."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What happens between now and a ranking: nothing builds until the boresight prices the four paths.",
+   "strand": {
+    "last": "BOLO 29 already asked which venture starts first, three-way, before this row existed.",
+    "plan": "Hold the four paths uncosted until a boresight runs; then the ranking on BOLO 29 picks up as a four-way.",
+    "you": "You named the venture and the four paths on the break-break; the boresight has not yet been called.",
+    "next": "Call the boresight, or let it wait behind BOLO 29's own hold."
+   },
+   "main_effort": "Price it. A boresight on BOLO 57 is the one thing that lets the four-way ranking (24 · 27 · 29 · 57) move.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Captured** on a break-break; given its own row rather than a line on 29; four candidate paths named, none costed.",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 1,
+     "t": "**Boresight** to price the paths — payout terms, rates, exclusivity, licensing — so the row can join the ranking.",
+     "s": "open"
+    },
+    {
+     "n": 2,
+     "t": "**Ranked** against 24 · 27 · 29 on reward vs risk, the same test BOLO 29 already runs.",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What this row costs and where it's written down. Nothing spent yet — the one tool it would use is already bought for another reason.",
+   "strand": {
+    "last": "BOLO 56 already paid for the tool this row would use, the same day this row was captured.",
+    "plan": "Spend nothing new; price the paths against the subscription already committed.",
+    "you": "A voice tool for the crew and a possible income line come from the same purchase, if a boresight prices this worth ranking.",
+    "next": "The boresight; no cost before it."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 57 — the venture as spoken, unpriced",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/speak.py",
+     "what": "JUDY's voice wiring (BOLO 56) — the ElevenLabs subscription this row would piggyback on",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "tool",
+     "v": "already committed — BOLO 56 ruled ElevenLabs as JUDY's voice; one subscription would serve both"
+    },
+    {
+     "k": "pricing",
+     "v": "unverified — payout terms, rates, exclusivity, licensing not yet checked"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. This row is not blocked on work; it is blocked on a price and a ranking, and both of those are one order away.",
+   "strand": {
+    "last": "Blocked #11 — the reward-vs-risk reading on BOLO 29 — has been open since 9/4. This row just made it wider.",
+    "plan": "One decider, one boresight, then the ranking that #11 has been waiting on.",
+    "you": "You are the only one who can say run the boresight, and the only one who can rule the trunk.",
+    "next": "Say the word on the boresight. Nothing here spends money or signs anything without it."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — whether the boresight runs, where 57 lands in the four-way, the trunk, and any subscription or signature. **Claude** — the boresight itself, the terms read and summarised, the numbers; commits nothing, signs nothing, subscribes to nothing without the word.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Unpriced, since the moment it was captured 9/16.** The row cannot be ranked before a boresight prices it, and BOLO 29's reward-vs-risk reading (Blocked #11) cannot close while a fourth candidate sits uncosted. One order clears both.",
+       "s": "bad"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "Status lives on this sheet and in **BOLO.md · row 57**. Updates land as **FRAGO 57** rather than a rewrite. The row reports into **BOLO 29**'s ranking, not on its own.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "Two transmissions: Papi's break-break, then the row opened around it.",
+    "plan": "One more entry lands when the boresight runs.",
+    "you": "Yours started it; the capture is Claude's.",
+    "next": "The boresight transmission, whenever you call it."
+   },
+   "entries": [
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "Break-break: \"add to the… zero to hero income BOLO… I can actually create voices in ElevenLabs. That could be something I can definitely do.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Opened as BOLO 57, its own row rather than a line on 29 — the asset named is the skill, not the tool; four candidate paths captured unranked and unpriced; STATE's Blocked #11 updated from a three-way to a four-way ranking (24 · 27 · 29 · 57), held until a boresight prices it."
+    }
+   ]
+  }
+ ]
+}
