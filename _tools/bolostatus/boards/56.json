@@ -5,8 +5,8 @@
   "trunk": "OPERATOR, feeds every trunk",
   "issued": "2026-09-16",
   "asof": "2026-09-17",
-  "s": "done",
-  "status": "v0.10 · JUDY COMPLETE 9/17: the face RULED on the placeholders (\"it works for me, get that off the chart\"); the TARS dials BUILT as real parameters (brat → ElevenLabs delivery, brevity → the sentence cap; humor and honesty reserved for the Haiku rewrite). Nothing open on this row.",
+  "s": "open",
+  "status": "v0.11 · the three attitudes BUILT 9/17 (STRAC military comms · AT EASE the comfortable day · LIBERTY CALL full brat), one script switches them; the three prowords are benched for Chief's ruling; AT EASE applied as the standing default, provisional",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.10 · DOPE SHEET"
+  "version": "v0.11 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the MCP server that exposes brain.py's seven tools to the Opus VS Code session, in order to finish JUDY's one unbuilt piece at zero standing cost.",
-  "order": "**Nothing is owed. Talk to her.** The dials live in the console's Persona panel and take effect on the next sentence she speaks; the face swaps on the four placeholder PNGs; the squelch brackets every block.",
-  "default": "Silence: everything stands as built. A new face is four PNGs dropped over the slots; a different delivery is a slider.",
+  "order": "**Rule the three words.** Say which of the benched words fires each preset (or your own); the switch is live under the working words meanwhile: \"JUDY, STRAC\" · \"JUDY, at ease\" · \"JUDY, liberty call\".",
+  "default": "Silence: the working words stand and AT EASE stays the default.",
   "calls": [
    {
     "q": "The wire — build now?",
@@ -107,6 +107,12 @@
     "default": "the stand-ins play until the files land; nothing else to rule",
     "s": "ruled",
     "ruling": "RULED 9/17 by Chief: \"we will just stick with that, it is fine\" — the generated key-up and key-down bursts are the sound. sfx/ still takes a replacement by filename if he ever wants one."
+   },
+   {
+    "q": "The three attitude prowords",
+    "options": "preset 1 military comms: STRAC (rec) · BY THE BOOK · CONDITION ONE · NOMINAL — preset 2 the comfortable day: AT EASE (rec) · REST · CRUISE — preset 3 full brat: LIBERTY CALL (rec) · ZERO-G · OFF THE LEASH; spoken as \"JUDY, <word>\"",
+    "default": "the three recommendations as working words",
+    "s": "open"
    }
   ]
  },
@@ -343,6 +349,12 @@
      "s": "done",
      "when": "9/17",
      "t": "**The squelch:** a radio break brackets every block she speaks — key-up before the first sentence, key-down after the last, the same around an acknowledgment, and key-down when an interrupt cuts her off mid-block. Wired into reader.py (session voice) and judy.py (standalone). Stand-in bursts generated; Chief's sounds replace them by filename."
+    },
+    {
+     "n": 14,
+     "s": "done",
+     "when": "9/17",
+     "t": "**The three attitudes:** presets.py — three full dial settings (STRAC h5 o100 b0 v95 → stability 0.75 / style 0.15 / cap 9 / speed 1.00 · AT EASE h60 o90 b45 v60 → 0.525 / 0.375 / 13 / 1.03 · LIBERTY CALL h90 o75 b100 v35 → 0.25 / 0.65 / 16 / 1.08) each with the phrasing that prompts the register; the Haiku rewrite reads it, Fable's spoken line follows it. The words benched."
     }
    ],
    "coord": [],
@@ -478,6 +490,11 @@
     {
      "path": "_tools/dictation/faces/",
      "what": "idle · listening · thinking · talking — the placeholder set, RULED as the face 9/17",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/presets.py",
+     "what": "the three attitudes: dials, speed, the prompt, the spoken-line register; apply by name",
      "s": "done"
     }
    ],
@@ -693,6 +710,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Face closed on the placeholders. The last open call, the TARS dials, built as real parameters: brat sets the ElevenLabs delivery, brevity sets the sentence cap, humor and honesty wait for the Haiku rewrite. Session voice restarted on it. BOLO 56 has nothing open."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"Three separate prowords and also three different presets for the attitude of JUDY. Figure out the fine measurements. The first is straight up, no nonsense, military comms, very serious, businesslike. The second is right in the middle, a comfortable, slightly flirtatious day at work. The third is complete super brat, leaning into the goon, teasing. I need suggestions for the prowords and the phrasing that goes with it to prompt it.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Built presets.py with the three settings and their prompts, fed the active prompt to the Haiku rewrite and the spoken-line rule, benched three words per preset (STRAC · AT EASE · LIBERTY CALL recommended), applied AT EASE as the standing default and restarted session voice."
     }
    ]
   }

@@ -190,13 +190,24 @@ REWRITE = ("Rewrite the following assistant reply as two to four spoken sentence
            "and URLs. Output only the sentences.\n\n")
 
 
+def rewrite_prompt():
+    """The active preset's phrasing (judy.json persona.prompt, written by presets.py); REWRITE when none."""
+    try:
+        p = (json.load(io.open(JUDY, encoding="utf-8")).get("persona") or {}).get("prompt")
+        if p:
+            return p.strip() + " Output only the sentences.\n\n"
+    except Exception:
+        pass
+    return REWRITE
+
+
 def rewrite_haiku(block, timeout=25):
     exe = claude_exe()
     if not exe:
         return None
     env = {k: v for k, v in os.environ.items() if k not in ("CLAUDECODE", "CLAUDE_CODE_ENTRYPOINT")}
     try:
-        r = subprocess.run([exe, "-p", REWRITE + block[:6000], "--model", "haiku",
+        r = subprocess.run([exe, "-p", rewrite_prompt() + block[:6000], "--model", "haiku",
                             "--output-format", "text"],
                            capture_output=True, text=True, timeout=timeout, env=env,
                            cwd=ROOT, encoding="utf-8", errors="replace")

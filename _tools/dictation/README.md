@@ -300,3 +300,7 @@ If a file is missing a stand-in burst is generated once so the timing can be hea
 ## The TARS dials (RULED 9/17)
 
 The persona sliders are real parameters, not a prompt. **brat** drives ElevenLabs delivery (stability = 0.75 − 0.5·b, style = 0.15 + 0.5·b; brat 80 reproduces the Blondie ruling, 0.35 / 0.55). **brevity** drives the session reader's sentence cap (20 at 0 down to 8 at 100; 70 → 12). **humor** and **honesty** are stored and reserved for the Haiku rewrite switch. Switches: `voice.dials_from_persona` · `session.cap_from_persona` in judy.json (both true; false restores the hand-set values).
+
+## The three attitudes (Chief, 9/17)
+
+`presets.py` holds three full settings of the dials plus the phrasing that prompts the register; a proword switches them (words benched, Chief rules): **STRAC** military comms · **AT EASE** a comfortable, slightly flirtatious day at work · **LIBERTY CALL** full brat. `python presets.py` shows them, `python presets.py at-ease` applies one. The Haiku rewrite reads `persona.prompt`; Fable's spoken line follows `persona.say`.
