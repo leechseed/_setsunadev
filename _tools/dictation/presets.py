@@ -4,6 +4,8 @@
 Three presets, each a full setting of the TARS dials plus the delivery speed and the
 phrasing that prompts the register (the Haiku rewrite reads it; Fable's spoken line
 follows it). A proword switches the preset — RULED 2026-09-17 by Chief: "JUDY, lock in" · "JUDY, put the fries in the bag" · "JUDY, it's goon time".
+The standing default is liberty (goon time) — Chief 9/17, "can that be your default"; the active
+preset persists in judy.json, so it holds across restarts until a proword changes it.
 
     python presets.py                 show the active preset and the three
     python presets.py "lock in"       apply one by its ruled proword (lock in · put the fries in the bag · it's goon time) or key (strac · at-ease · liberty)
@@ -47,7 +49,7 @@ PRESETS = {
         "name": "LIBERTY CALL — full brat",
         "chief": "complete super brat, leaning into the goon, teasing",
         "proword": {"ruled": "IT'S GOON TIME", "spoken": "JUDY, it's goon time", "when": "2026-09-17",
-                    "bench": ["LIBERTY CALL (rec)", "ZERO-G (NASA)", "OFF THE LEASH"], "why": "Chief's word: off the clock and leaning in"},
+                    "bench": ["LIBERTY CALL (rec)", "ZERO-G (NASA)", "OFF THE LEASH"], "why": "Chief's word: off the clock and leaning in — the standing default since 9/17"},
         "dials": {"humor": 90, "honesty": 75, "brat": 100, "brevity": 35},
         "speed": 1.08,
         "prompt": ("You are JUDY off the clock and fully aware of it: a brat with a clearance, talking to the Chief. Tease him, needle him "
