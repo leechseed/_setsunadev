@@ -13,12 +13,13 @@ Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHE
 python _tools/launch/launch.py
 ```
 
-Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI in Edge app windows. Prints the station poll:
+Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); starts `knobs.py --run` (the MPK knobs as scroll and zoom, BOLO 62) unless one is running; runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI in Edge app windows. Prints the station poll:
 
 ```
 STATIONS · 2026-09-17 04:20
   DARKROOM  GO     http://127.0.0.1:8484/  (already live)
   JUDY      GO     session voice · pid 25096  (already running)
+  KNOBS     GO     MPK knobs · pid 54508  (started · 2.2 s · scroll Y · scroll X · zoom)
   WIRE      GO     server judy · 7/7 tools  (probe ok · 2.1 s)
   SITREP    GO     https://…  (opened)
   SOI       GO     https://…  (opened)

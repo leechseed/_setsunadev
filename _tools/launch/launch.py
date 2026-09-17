@@ -7,7 +7,7 @@ spoken tools over the wire. This script brings the local stations up, opens the 
 boards, and prints the station poll (GO / NO-GO with an address) for the sit rep header.
 The sit rep itself runs in the formation after this (skill: launch → sitrep).
 
-Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-judy] [--no-wire] [--json]
+Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-judy] [--no-knobs] [--no-wire] [--json]
 
 Safe to run twice: a live DARKROOM is reported, not restarted (its single-instance guard);
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
@@ -21,6 +21,7 @@ DARKROOM = os.path.join(ROOT, "_PRIVATE", "taxonomy_engine", "darkroom_server.py
 DARK_URL = "http://127.0.0.1:8484/"
 JUDY = os.path.join(ROOT, "_tools", "dictation", "judy.py")
 PROBE = os.path.join(ROOT, "_tools", "dictation", "wire_probe.py")
+KNOBS = os.path.join(ROOT, "_tools", "dictation", "knobs.py")   # BOLO 62: the MPK knobs as scroll + zoom
 VIEW = os.path.join(ROOT, "_tools", "pages", "view.cmd")
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
 BOARDS = ["sitrep", "soi"]           # RULED 9/17: the board · the SOI · zero DOPE SHEETs
@@ -100,6 +101,24 @@ def station_judy():
             "note": "exited at start (code %s); run judy.py --session by hand to see why" % p.returncode}
 
 
+def station_knobs():
+    """BOLO 62 (Chief, 9/17): the MPK knobs scroll and zoom whatever is under the pointer.
+    The MIDI port is shareable, so this runs beside JUDY; a running daemon is reported, not restarted."""
+    t0 = time.time()
+    running = procs(r"knobs\.py.*--run")
+    if running:
+        return {"station": "KNOBS", "go": True, "addr": "MPK knobs · pid %d" % running[0][0], "note": "already running"}
+    if not os.path.exists(KNOBS):
+        return {"station": "KNOBS", "go": False, "addr": "MPK knobs", "note": "knobs.py missing"}
+    p = spawn_console([PY, "-u", KNOBS, "--run"])
+    time.sleep(1.5)
+    if p.poll() is None:
+        return {"station": "KNOBS", "go": True, "addr": "MPK knobs · pid %d" % p.pid,
+                "note": "started · %.1f s · scroll Y · scroll X · zoom" % (time.time() - t0)}
+    return {"station": "KNOBS", "go": False, "addr": "MPK knobs",
+            "note": "exited at start (code %s); run knobs.py --run by hand to see why" % p.returncode}
+
+
 def station_wire():
     t0 = time.time()
     if not os.path.exists(PROBE):
@@ -147,6 +166,7 @@ def main():
     ap.add_argument("--no-darkroom", action="store_true")
     ap.add_argument("--no-judy", action="store_true")
     ap.add_argument("--no-wire", action="store_true")
+    ap.add_argument("--no-knobs", action="store_true")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     rows = []
@@ -154,6 +174,8 @@ def main():
         rows.append(station_darkroom())
     if not a.no_judy:
         rows.append(station_judy())
+    if not a.no_knobs:
+        rows.append(station_knobs())
     if not a.no_wire:
         rows.append(station_wire())
     if not a.no_pages:

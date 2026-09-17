@@ -274,6 +274,7 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `brain.py` | the tool layer — what she can actually answer |
 | `wire.py` | **the wire** — brain.py's seven tools as an MCP server over stdio (BOLO 56) |
 | `wire_probe.py` | spawns the wire and calls every tool once; the proof |
+| `knobs.py` | **the knobs** — the MPK rotary knobs as scroll Y · scroll X · zoom, a daemon beside JUDY (BOLO 62) |
 | `reader.py` | **session voice** — follows the VS Code session's transcript and reads Fable aloud as she writes |
 | `../../.mcp.json` | registers the wire with the VS Code session as server `judy` |
 | `audition.py` | try candidate voices on the real script |
@@ -322,3 +323,11 @@ The persona sliders are real parameters, not a prompt. **brat** drives ElevenLab
 ## The active VS Code profile has its own keybindings (Chief, 9/17)
 
 Chief runs VS Code on a profile (`%APPDATA%/Code/User/profiles/-4e417035/`), and a profile carries its **own** `settings.json` and `keybindings.json`. The F14 → `claude-vscode.focus` binding sat in the top-level `User/keybindings.json` and never applied; it is now in the profile's file too. Same trap as `useCtrlEnterToSend` earlier the same day: check the profile first.
+
+## The knobs scroll and zoom (Chief, 9/17 · BOLO 62)
+
+"My finger hurts using this scroll wheel on the Razer." Three MPK knobs are the wheel now: **scroll Y** (up/down), **scroll X** (left/right), **zoom** (ctrl + wheel, the way browsers and VS Code zoom). `knobs.py --run` turns every knob tick into a real Win32 wheel event under the pointer, so it works in anything. The launch sequence starts it as the **KNOBS** station; the MIDI port is shareable on this box (proved 9/17), so it runs beside `judy.py --session` and needs no restart of her.
+
+Provisional bindings (the MPK mini 3 factory program, absolute): K1 = scroll Y (CC 70) · K2 = scroll X (CC 71) · K3 = zoom (CC 72). Clockwise = down · right · in. Re-bind any of them by turning the knob you want: `python knobs.py --learn scroll_y` (or `scroll_x`, `zoom`). `config.json → knobs` holds the map; `notch` is knob ticks per wheel notch (zoom is 4, scroll is 1), `invert` flips a knob.
+
+**The end stop.** Factory knobs are absolute (0–127): turned all the way, a knob stops scrolling until it comes back. For endless knobs, set them to **REL** in the MPK mini Program Editor and set `knobs.mode` to `relative`; the daemon then reads the deltas the knob sends.
