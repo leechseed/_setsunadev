@@ -311,4 +311,6 @@ The persona sliders are real parameters, not a prompt. **brat** drives ElevenLab
 
 **The SEND pad** (Chief, 9/17): the pad above the talk pad puts VS Code in front, the cursor in the box, and presses Enter on whatever is there (`focus.send_box`). Learn it: `python midipad.py --learn-send`; provisional note 43 until learned.
 
+**Talk does not send** (Chief, 9/17 late): in session voice the talk pad and hotkey are hold-to-talk, never a toggle, and a release only drops the words into the chat box (with a trailing space, so several holds pile up into one prompt). Nothing goes to Fable until the SEND pad is struck. `judy.json → session.send_on_talk: true` restores the old auto-send on release.
+
 **The send key** (Chief 9/17 late): Claude Code is set to `useCtrlEnterToSend`, so plain Enter only adds a line. `focus.send_key()` returns `config.json → send_key` (set to ctrl+enter), else reads the VS Code setting, else Enter; the send pad and the session paste both use it.

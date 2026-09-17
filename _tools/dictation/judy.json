@@ -60,6 +60,8 @@
    "note": "empty paths = sfx/key-up.wav · sfx/key-down.wav; drop your own files there"
   },
   "cap_from_persona": true,
-  "focus_on_talk": "never"
+  "focus_on_talk": "never",
+  "send_on_talk": false,
+  "send_on_talk_note": "Chief 9/17: the talk pad only drops the words in the box; the SEND pad (config.json send_note, above the talk pad) sends. true = the old auto-send on release."
  }
 }

@@ -230,14 +230,20 @@ class Loop:
         self.face.say(f"you: {heard}")
         self.face.set("thinking")
         if self.session:
-            # the words go to whatever has focus — the Claude Code chat box — and
-            # Enter sends the turn. Fable answers; reader.py speaks it as it lands.
-            import keyboard
+            # the words go to whatever has focus — the Claude Code chat box. They stay
+            # there: the SEND pad (the pad above the talk pad) is what sends the turn
+            # (Chief 9/17: "press the button on top of it to actually send"). Several
+            # holds of the talk pad pile up in the box; the trailing space joins them.
+            # judy.json session.send_on_talk = true restores the old auto-send.
             import ptt
-            import focus
-            ptt.type_out(heard)
-            time.sleep(0.08)
-            keyboard.send(focus.send_key())   # Ctrl+Enter when the Claude Code setting says so (Chief 9/17)
+            ptt.type_out(heard + " ")
+            if (cfg().get("session") or {}).get("send_on_talk"):
+                import keyboard
+                import focus
+                time.sleep(0.08)
+                keyboard.send(focus.send_key())   # Ctrl+Enter when the Claude Code setting says so
+            else:
+                self.face.set("idle")
             return
         reply, _tool = brain.answer(heard)
         if not reply:
@@ -354,6 +360,9 @@ class Loop:
 
         shape = "PRESS to start, press again to stop" if self.toggle else f"HOLD {self.hotkey}"
         extra = " (or the pad)" if self.pad and not self.pad.error else ""
+        if self.session:
+            extra += (" · talk drops the words in the box, the SEND pad sends"
+                      if not (cfg().get("session") or {}).get("send_on_talk") else " · talk sends on release")
         print(f"\n  ready · {shape}{extra} · right-click the face to quit\n")
 
 
