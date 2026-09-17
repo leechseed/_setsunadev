@@ -6,6 +6,56 @@ the Command lexicon. Local, GPU, $0 — no audio leaves the box, nothing is bill
 This is **JUDY's listening half** (BOLO 56). The speaking half, the wire to the VS Code
 session, and the face are still unruled.
 
+## Run her
+
+```
+python _tools/dictation/judy.py
+```
+
+A frameless always-on-top face appears. **Hold `ctrl+alt+space`, talk, release.**
+Drag the face anywhere — it remembers where. Right-click it to quit.
+
+```
+python judy.py --type "what's blocked"   # no mic, one turn
+python judy.py --no-face                 # terminal only
+python judy.py --no-voice                # print, don't speak
+```
+
+The loop, and what each part is:
+
+| Stage | Face | What runs |
+|---|---|---|
+| hold the key | `listening` | mic capture |
+| release | `thinking` | faster-whisper on the 3090, then SOP §8 repair |
+| brain answers | `talking` | ElevenLabs (or Piper offline) |
+| done | `idle` | — |
+
+### The brain, honestly
+
+`brain.py` is **a keyword router, not a language model.** There is no Anthropic key
+on this box and no local model that runs, so JUDY does not improvise — she reads the
+repo and answers a short list of real questions:
+
+| Ask | She reads |
+|---|---|
+| what's blocked | STATE's Blocked-on-you table |
+| the main effort / leverage | the newest sit rep board |
+| BOLO *n* | that row in BOLO.md |
+| PMCS | the PMCS table |
+| is the box up | the ports, and the git tree |
+| what time is it | the clock |
+
+Anything else and she says so rather than guessing.
+
+**This is on purpose, and it is the MCP work.** The wire was ruled MCP; an MCP server
+is tools plus a transport, and the tools are the half that carries the value. They
+are the same functions whether the caller is a model, the VS Code session, or this
+router. When a brain arrives it replaces the router — `judy.py` does not change,
+because the loop only ever asks for a string back.
+
+Answers are written to be **spoken**: no markdown, short sentences, and the blocked
+table gives you the count and the oldest two rather than reading six cells aloud.
+
 ## The voice — ElevenLabs
 
 **Ruled 9/16: Piper now, ElevenLabs eventually — and "eventually" arrived the same day.**
@@ -169,6 +219,10 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `console.html` | its page |
 | `judy.json` | persona, voice, face, wire (BOLO 56) — **never the key** |
 | `speak.py` | the mouth — sapi · piper · elevenlabs behind one `say()` |
+| `judy.py` | **the loop** — face window, ears, brain, mouth |
+| `brain.py` | the tool layer — what she can actually answer |
+| `audition.py` | try candidate voices on the real script |
+| `faces/` | the four state PNGs |
 | `_PRIVATE/elevenlabs.key` | the key, gitignored, untracked |
 | `faces/` | the PNG state slots |
 
