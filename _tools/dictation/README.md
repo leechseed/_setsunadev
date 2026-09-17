@@ -53,6 +53,22 @@ are the same functions whether the caller is a model, the VS Code session, or th
 router. When a brain arrives it replaces the router — `judy.py` does not change,
 because the loop only ever asks for a string back.
 
+## The wire — built 9/17
+
+`wire.py` is that MCP server: the seven tools above, unchanged, over stdio. The VS
+Code session spawns it from `.mcp.json` at the repo root (server name `judy`) and
+sees them as tools after a reload. Nothing new sits behind it — no model, no key,
+no standing cost; the one dependency is the `mcp` SDK (2.x).
+
+```
+python _tools/dictation/wire_probe.py     # spawn it, list the tools, call each once
+```
+
+Measured 9/17: connect 1.1 s cold, then 2–5 ms a call for the file readers, ~200 ms
+for `blocked`, ~700 ms for `box` (it pings three ports and asks git). It is not
+called `mcp.py` because a script's own directory is first on `sys.path` and that name
+would shadow the package it imports.
+
 Answers are written to be **spoken**: no markdown, short sentences, and the blocked
 table gives you the count and the oldest two rather than reading six cells aloud.
 
@@ -111,7 +127,7 @@ writes files and starts the daemon, none of which a published page can do.
 | **Voice** | SAPI engine + voice picker, rate, volume, and a **speak button** to hear it. |
 | **Persona** | The TARS dials. Watch the system prompt rewrite itself as you drag them. |
 | **Face** | Four state slots — idle, listening, thinking, talking. **Drag a PNG onto a slot**, or paste a path. |
-| **Wire** | The one open call a knob cannot answer, with the trade laid out. |
+| **Wire** | BUILT 9/17: the MCP server, what it exposes, how to prove it. The trade table stays as the record. |
 | **Log** | Live daemon output — every transcription, every §8 hit. |
 
 Panels are `1`–`8`. Dotted terms carry the CK3 hover layer; **Space** locks a tip open.
@@ -221,6 +237,9 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `speak.py` | the mouth — sapi · piper · elevenlabs behind one `say()` |
 | `judy.py` | **the loop** — face window, ears, brain, mouth |
 | `brain.py` | the tool layer — what she can actually answer |
+| `wire.py` | **the wire** — brain.py's seven tools as an MCP server over stdio (BOLO 56) |
+| `wire_probe.py` | spawns the wire and calls every tool once; the proof |
+| `../../.mcp.json` | registers the wire with the VS Code session as server `judy` |
 | `audition.py` | try candidate voices on the real script |
 | `faces/` | the four state PNGs |
 | `_PRIVATE/elevenlabs.key` | the key, gitignored, untracked |

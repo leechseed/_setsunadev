@@ -33,6 +33,9 @@
     "model": "claude-haiku-4-5-20251001"
   },
   "wire": {
-    "mode": "mcp"
+    "mode": "mcp",
+    "server": "_tools/dictation/wire.py",
+    "registered": ".mcp.json",
+    "built": "2026-09-17"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "judy": {
+      "command": "python",
+      "args": ["_tools/dictation/wire.py"]
+    }
+  }
+}

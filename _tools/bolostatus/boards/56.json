@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "🟢 Console BUILT 9/16; voice CLOSED — ElevenLabs LIVE 9/17, Blondie ruled, and RULED 9/17 to stay (already paid for). Local-voice boresight ran 9/17, HELD, recon banked. Wire RULED MCP, brain on the router — the MCP server itself not built yet. Open: the wire (build) · the TARS dials · the PNG states.",
+  "status": "🟢 THE WIRE BUILT 9/17 on \"Charlie Mike\" — wire.py, an MCP server over stdio exposing brain.py's seven tools, registered in .mcp.json, all seven proven by wire_probe.py. Every piece of JUDY now exists: ears · brain · mouth · face · console · wire. Voice on ElevenLabs (paid, stays); local voice held, recon banked. Open: the TARS dials · the PNG states · the session-side proof after a reload.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,20 +46,22 @@
  ],
  "frago": {
   "mission": "Build the MCP server that exposes brain.py's seven tools to the Opus VS Code session, in order to finish JUDY's one unbuilt piece at zero standing cost.",
-  "order": "**Build the wire: wrap brain.py's seven tools in a stdio MCP server at `_tools/dictation/mcp.py`, register it in the project's `.mcp.json`, and prove it from this VS Code session with one call per tool.** No new tools, no model, no key, no spend. Bring it back as FRAGO 56.",
-  "default": "Silence: the wire stays ruled and unbuilt. JUDY keeps answering on the router alone, the console's Wire panel keeps showing the trade, and the session cannot ask her anything. Nothing is spent and nothing breaks.",
+  "order": "**Reload the VS Code session so it spawns the `judy` server from `.mcp.json`, then call one tool from inside the session — the last proof the wire owes.** After that the only open pieces are the TARS dials and your face art; both are knobs, neither is engineering. FRAGO 56 closes the wire when the session-side call lands.",
+  "default": "Silence: the wire sits built and proven over stdio, unspawned by any session. JUDY answers on the router alone, as before. Nothing breaks, nothing is spent.",
   "calls": [
    {
     "q": "The wire — build now?",
     "options": "BUILD now (rec: the tools exist, one evening, $0) · HOLD until the TARS dials rule · DROP MCP and leave the loop standalone",
     "default": "BUILD now (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 9/17: \"Charlie Mike.\" Built the same turn: _tools/dictation/wire.py (MCPServer, mcp SDK 2.2.0) · registered in .mcp.json as server judy · wire_probe.py spawned it and called all seven tools, exit 0. Named wire.py, not mcp.py: a script's own directory leads sys.path, so mcp.py would shadow the package it imports."
    },
    {
     "q": "Transport",
     "options": "stdio, registered in `.mcp.json` (rec: the session spawns it, no port, no daemon) · HTTP beside the console on :8787 · both",
     "default": "stdio (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "stdio, registered in .mcp.json — the session spawns it, no port, no daemon. Ruled by default (silence) and built that way."
    },
    {
     "q": "The TARS dials",
@@ -89,10 +91,10 @@
    "kind": "list",
    "plain": "Where JUDY came from: one transmission with everything in it, what was already sitting in the record before it was said, and what got ruled since.",
    "strand": {
-    "last": "Papi raised the fully-local standard, ordered the boresight on the local voice, then held it the same turn: ElevenLabs is paid for and stays.",
+    "last": "Charlie Mike. The wire built the same turn and proved itself over stdio.",
     "plan": "Find what already existed before building anything new, then rule the open calls one at a time.",
     "you": "You named the ask, the model requirement, the persona, the voice register, and the face concept in one transmission, then kept ruling calls across two more sessions.",
-    "next": "The wire — unchanged. The local voice waits on the subscription."
+    "next": "A session reload and one call from inside it, then the wire closes."
    },
    "groups": [
     {
@@ -178,6 +180,11 @@
        "t": "Local voice HELD 9/17. Papi: \"I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity\" → boresight ran → \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays; Piper stays the offline floor; the recon waits.",
        "s": "held",
        "when": "9/17"
+      },
+      {
+       "t": "Wire BUILT 9/17 on \"Charlie Mike\": wire.py + .mcp.json + wire_probe.py; seven for seven over stdio. The endstate on this sheet named the file mcp.py; it is wire.py for the sys.path reason recorded in the call.",
+       "s": "done",
+       "when": "9/17"
       }
      ]
     }
@@ -212,8 +219,8 @@
    "strand": {
     "last": "Five calls were raised 9/16; the console turned three into knobs the same session, and the route call (BOLO 26) closed the same day.",
     "plan": "Build the wire next — the tools brain.py already exposes need the MCP server to reach the Opus session.",
-    "you": "Ordered the local-voice boresight, read it, and held it on the money already spent. The wire order stands.",
-    "next": "Build the MCP server. The local voice is banked, not open."
+    "you": "Said Charlie Mike. The wire built, registered and proved in one turn; the local voice stayed held.",
+    "next": "Reload the session and call a tool. Then the dials and the face art, both on your clock."
    },
    "main_effort": "Close the wire — the one open architecture question left: getting JUDY's voice layer to reach the Opus VS Code session without inheriting its model or its latency.",
    "phases": [
@@ -261,8 +268,9 @@
     },
     {
      "n": 7,
-     "t": "Wire RULED 9/16: MCP server, all in. Brain RULED 9/17: stay on the router — no API key, no local model, $0/month standing cost. Re-aims the wire to expose brain.py's tools to the Opus VS Code session, already written for exactly that. Not built yet — next build.",
-     "s": "open"
+     "t": "THE WIRE — RULED MCP 9/16, brain on the router 9/17, BUILT 9/17 on Charlie Mike: wire.py exposes brain.py's seven tools (blocked · bolo · pmcs · effort · box · time · help) over stdio; .mcp.json registers it as judy; wire_probe.py proves it. Measured: connect 1.1 s cold, 2–5 ms a call for the file readers, ~200 ms blocked, ~700 ms box. Session-side call owed after a reload.",
+     "s": "done",
+     "when": "9/17"
     },
     {
      "n": 8,
@@ -279,6 +287,12 @@
      "t": "The local voice — Papi raised the 3090 / 100 % local standard 9/17 and ordered the boresight; twelve engines read, Chatterbox Turbo the recommendation, no 3090 numbers published. HELD the same turn: ElevenLabs is paid for and stays. Recon banked.",
      "s": "held",
      "when": "9/17"
+    },
+    {
+     "n": 11,
+     "s": "open",
+     "when": "9/17",
+     "t": "The session-side proof — reload the VS Code session, confirm the judy server appears, call one tool from inside it. Then the wire is closed."
     }
    ],
    "coord": [],
@@ -290,10 +304,10 @@
    "kind": "files",
    "plain": "Where JUDY lives on disk: the ears, the console, the voice wiring, and the keys — nothing paid beyond the ElevenLabs account already on the box.",
    "strand": {
-    "last": "The console and the voice wiring both shipped the same sessions they were asked for.",
+    "last": "Three files landed: the server, the probe, the registration. The console and README say BUILT.",
     "plan": "The wire (MCP server) is the next file that has to exist.",
     "you": "You handed the console its colorway and hover rules; the files followed the same session.",
-    "next": "No new cost expected — the wire reuses brain.py's tools; the key is already handled for a public repo."
+    "next": "No file is owed. The mcp SDK is the one new dependency."
    },
    "files": [
     {
@@ -313,7 +327,7 @@
     },
     {
      "path": "_tools/dictation/console.html",
-     "what": "the eight-panel dashboard front end (Status · Ears · Codebook · Voice · Persona · Face · Wire · Log)",
+     "what": "Wire panel and the parts table now read BUILT; the trade table stays as the record",
      "s": "done"
     },
     {
@@ -370,6 +384,21 @@
      "path": "_tools/dictation/RECON-local-voice.md",
      "what": "the local-voice boresight read — twelve engines on license · VRAM · speed · delivery control · British female · Windows · health, the shortlist, what only the box can settle, the build cost, every source",
      "s": "held"
+    },
+    {
+     "path": "_tools/dictation/wire.py",
+     "what": "the wire — brain.py's seven tools as an MCP server over stdio; no logic of its own",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/wire_probe.py",
+     "what": "spawns the wire exactly as .mcp.json does, lists the tools, calls each once with timing; exit 1 on any miss",
+     "s": "done"
+    },
+    {
+     "path": ".mcp.json",
+     "what": "registers the wire with the VS Code session as server judy (command python, args _tools/dictation/wire.py)",
+     "s": "done"
     }
    ],
    "cost": [
@@ -499,6 +528,16 @@
      "when": "9/17",
      "who": "Papi",
      "t": "\"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" — the local voice HELD; ElevenLabs stays the mouth."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"Charlie Mike.\" — build the wire."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Installed the mcp SDK (2.2.0; FastMCP is MCPServer in 2.x). Wrote _tools/dictation/wire.py: seven tools, one per brain.py function, spoken-form strings back. Registered it in .mcp.json as judy. Wrote wire_probe.py and ran it: connected in 1.1 s, seven tools listed, eight calls ok, exit 0. Console Wire panel, parts table, judy.json wire block and README updated to BUILT. Session-side proof owed after a reload."
     }
    ]
   }

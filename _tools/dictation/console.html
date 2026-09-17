@@ -323,16 +323,18 @@
 
     <section id="p-wire">
       <h2>Wire</h2>
-      <p class="plain">The one genuinely new problem, and <strong>the only one of the four calls a
-        knob cannot answer</strong>. JUDY must run on <a class="t" data-t="haiku">Haiku</a> for
-        responsiveness while reaching the VS&nbsp;Code session, which is on
-        <a class="t" data-t="opus">Opus</a> — without inheriting its model or its latency.</p>
+      <p class="plain"><strong>BUILT 9/17.</strong> The wire is an MCP server, <code>wire.py</code>, spawned
+        by the VS&nbsp;Code session from <code>.mcp.json</code> at the repo root. It exposes
+        <code>brain.py</code>'s seven tools — blocked · bolo · pmcs · effort · box · time · help —
+        unchanged, each returning the spoken form. No model behind it (RULED 9/17: the router
+        stays), no key, no standing cost. Prove it any time: <code>python wire_probe.py</code>.
+        The session sees the tools after a reload.</p>
       <div class="f" style="max-width:560px"><span class="lbl">Mode</span><select id="wMode">
         <option value="standalone">Standalone — own Haiku agent, reads the repo, no session link</option>
         <option value="sdk">Agent SDK sidecar — Haiku subprocess, its own context</option>
         <option value="bridge">File bridge — drops into the session via a watched file</option>
         <option value="mcp">MCP server — the session calls JUDY as a tool</option>
-      </select><span class="hint">stores the intent; none of the four is built</span></div>
+      </select><span class="hint">MCP is the one that is built; the others stay as the record of the trade</span></div>
       <h3>The trade, plainly</h3>
       <table><thead><tr><th>Mode</th><th>Latency</th><th>Sees your session</th><th>Cost to build</th></tr></thead>
         <tbody id="wireTbl"></tbody></table>
@@ -371,7 +373,7 @@ const PANELS = [
 const GLOSS = {
   ears:{w:"The ears",d:"The listening half — BOLO 26's push-to-talk dictation. Ruled BUILD and shipped 9/16. This is the only part of JUDY that fully exists."},
   mouth:{w:"The mouth",d:"Text-to-speech. RULED 9/16: Piper now, ElevenLabs eventually. Piper runs locally on CPU at about 23x realtime, so a reply starts almost immediately and the GPU stays free for Whisper."},
-  wire:{w:"The wire",d:"How a fast Haiku voice agent reaches the Opus VS Code session without inheriting Opus's model or latency. The only open call a knob cannot settle."},
+  wire:{w:"The wire",d:"How JUDY's tools reach the Opus VS Code session. RULED MCP 9/16, built 9/17: wire.py exposes brain.py's seven tools over stdio; the session spawns it from .mcp.json."},
   face:{w:"The face",d:"Desktop presence. PNG state swaps now — idle, listening, thinking, talking — VTuber rigging later."},
   ptt:{w:"Push-to-talk",d:"Hold the hotkey, speak, release. Nothing is recorded or transcribed until you hold it, so nothing is listening in the background."},
   sop8:{w:"SOP §8",d:"The standing garble table. Parsed live every run, so the codebook cannot drift out of sync with the SOP — that was the whole argument for BUILD over INSTALL."},
@@ -462,7 +464,7 @@ function renderParts(){
     ["Voice — TTS","warn","UNRULED","SAPI works now and sounds robotic. The good options are a download or a bill."],
     ["Face — PNG states","warn","SLOTS ONLY","The slots and previews are real; nothing drives them until the loop exists."],
     ["Persona — TARS dials","warn","STORED","Numbers are saved; they compile into a system prompt once the wire is ruled."],
-    ["Wire — Haiku ↔ session","bad","OPEN","The only call a knob cannot answer."]
+    ["Wire — MCP server","good","BUILT","wire.py over stdio from .mcp.json; seven tools proven by wire_probe.py 9/17."]
   ];
   $("#partsTbl").innerHTML=rows.map(([n,c,s,w])=>
     `<tr><td><strong>${n}</strong></td><td><span class="chip c-${c}">${s}</span></td><td>${w}</td></tr>`).join("");
