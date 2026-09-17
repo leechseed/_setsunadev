@@ -1,6 +1,6 @@
 """BOLO status page — build.
 
-Usage:  python _tools/bolostatus/build.py 45 [--v1]   (default = the document layout, RULED 9/16 on BOLO 55; --v1 = the old tabbed layout, template-v1.html)
+Usage:  python _tools/bolostatus/build.py 45 [--v1] [--title "BORESIGHT 24"]   (default = the document layout, RULED 9/16 on BOLO 55; --v1 = the old tabbed layout, template-v1.html)
 
 Inputs : _tools/bolostatus/boards/<n>.json   one board per BOLO (the five-paragraph order as data)
          _tools/sitrep/glossary.json          the shared term register (every [[key]] must exist here)
@@ -24,6 +24,8 @@ def main():
         print("usage: build.py <bolo number>"); sys.exit(2)
     n = sys.argv[1]
     v1 = "--v1" in sys.argv
+    # --title "…" overrides the tab title (a BORESIGHT page on the same template, Chief 9/17)
+    title = sys.argv[sys.argv.index("--title") + 1] if "--title" in sys.argv else f"DOPE SHEET {n}"
     tname = "template-v1.html" if v1 else "template.html"
     suffix = ".v1" if v1 else ""
     board = json.loads(load(os.path.join(HERE, "boards", n + ".json")))
@@ -37,7 +39,7 @@ def main():
     data = json.dumps({"board": board, "glossary": glossary}, ensure_ascii=False).replace("</script", "<\\/script")
     tpl = load(os.path.join(HERE, tname))
     assert tpl.count("/*__DATA__*/null") == 1
-    frag = tpl.replace("/*__DATA__*/null", data).replace("<title>BOLO</title>", f"<title>DOPE SHEET {n}</title>")
+    frag = tpl.replace("/*__DATA__*/null", data).replace("<title>BOLO</title>", f"<title>{title}</title>")
 
     os.makedirs(os.path.join(HERE, "out"), exist_ok=True)
     out = os.path.join(HERE, "out", f"BOLO-{n}{suffix}.html")

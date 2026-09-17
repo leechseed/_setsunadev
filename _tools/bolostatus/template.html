@@ -256,7 +256,7 @@
 
 <div class="app" id="app">
   <header class="mast">
-    <div class="num"><small>DOPE SHEET</small><b id="mNum"></b></div>
+    <div class="num"><small id="mKind">DOPE SHEET</small><b id="mNum"></b></div>
     <h1 id="mTitle"></h1>
     <span id="mState"></span>
     <span class="ver" id="mVer"></span>
@@ -309,6 +309,7 @@ const K = B.bolo, F = B.frago, P = B.paragraphs;
 
 /* ---- masthead: the one strip ---- */
 $('#mNum').textContent = K.n;
+if (K.kind) $('#mKind').textContent = K.kind; /* a BORESIGHT on the same template (Chief 9/17) */
 $('#mTitle').textContent = K.title;
 $('#mTitle').title = K.title;
 $('#mState').innerHTML = chip(K.s);
