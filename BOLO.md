@@ -85,7 +85,7 @@ Completed BOLOs get a dated strike-through, then move to the bottom under **Done
 | Item | Status | Next action |
 |---|---|---|
 | **Dental** — retainer advising | 🔴 open since 8/19 | Call the orthodontist. ⚠️ Dictation has twice produced "periodontist" — confirm which specialist; if there is also a gum concern, that is a **second** appointment |
-| **PCP — establish care + physical** | 🔴 open | Book the physical. Sexual-health consult sequences after it: PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral. Timing decoupled from October — book now |
+| **PCP — establish care + physical** | 🟡 **provider found 9/17** — not yet called | **Call and book.** Provider + number in `_PRIVATE/PMCS-CONTACTS.md` (kept off this file: the repo is public). Ask which visit you are getting — a new-patient physical and a sexual-health consult are often two slots. Then book the physical. Sexual-health consult sequences after it: PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral. Timing decoupled from October — book now |
 | **Pelvic-floor PT** | ⬜ gated | Referral comes out of the PCP consult above |
 | **Employment** — the Amazon job did not work out | 🔴 **unemployed as of 9/3** | The zero-budget ORANGE launch = **BOLO 24**. Runway · claim · backstop lines not yet spoken — capture when they are |
 
