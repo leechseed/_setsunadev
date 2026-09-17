@@ -318,3 +318,7 @@ The persona sliders are real parameters, not a prompt. **brat** drives ElevenLab
 ## The say-line is the address (Chief, 9/17)
 
 `judy.json → session.speak` (default `say-line`): the reader speaks only replies that open with `<!-- say: … -->`; a reply without one is silent — those are Fable's turns to her agents or the harness, not to Chief. `"all"` restores read-everything (the pre-9/17 behaviour). SOP §7 rule 10 carries the writing rule.
+
+## The active VS Code profile has its own keybindings (Chief, 9/17)
+
+Chief runs VS Code on a profile (`%APPDATA%/Code/User/profiles/-4e417035/`), and a profile carries its **own** `settings.json` and `keybindings.json`. The F14 → `claude-vscode.focus` binding sat in the top-level `User/keybindings.json` and never applied; it is now in the profile's file too. Same trap as `useCtrlEnterToSend` earlier the same day: check the profile first.
