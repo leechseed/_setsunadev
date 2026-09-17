@@ -8,9 +8,11 @@ are the part that carries the value, and they are the same tools whether the cal
 is a language model, the VS Code session, or a plain keyword router. So they get
 written once, here, as ordinary functions over the repo.
 
-Today a keyword router picks the tool. That costs nothing and needs no model, and it
-already makes JUDY useful — she can read the board, name what is blocked, and check
-a BOLO. When a brain arrives it replaces the router, not the tools.
+A keyword router picks the tool. **RULED 2026-09-17: the router stays** (Papi: "let's
+stay on the router") — no API key, no local model, no recurring cost. So this is the
+brain, not a placeholder for one, and it is built to that standard: it answers a short
+list of real questions exactly right and refuses everything else rather than guessing.
+If a model is ever added it replaces the router, not the tools.
 
 Every answer is written to be SPOKEN: short sentences, no markdown, numbers said the
 way a person says them.
@@ -193,8 +195,9 @@ def t_time():
 
 
 def t_help():
-    return ("Ask me for the board, what's blocked, the main effort, a BOLO by number, "
-            "PMCS, or whether the box is up. I don't have a brain yet, so keep it simple.")
+    return ("I can give you the board, what's blocked, the main effort, a BOLO by "
+            "number, PMCS, or whether the box is up. I don't guess at anything else — "
+            "that's on purpose, so what I do tell you is always right.")
 
 
 # ------------------------------------------------------------------ the router
@@ -225,8 +228,8 @@ def answer(text):
                 return fn(m), pat
             except Exception as e:
                 return f"That tool broke. {e}", pat
-    return ("I don't have a brain yet, so I only handle a few things. "
-            "Ask for the board, what's blocked, or a BOLO by number."), None
+    return ("That's not one of mine. Ask for the board, what's blocked, the main "
+            "effort, a BOLO by number, PMCS, or whether the box is up."), None
 
 
 if __name__ == "__main__":
