@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "🟢 SESSION VOICE BUILT 9/17 on \"session voice\" — JUDY is Fable's voice: the ears paste into the Claude Code chat and send, reader.py follows the session transcript and Blondie reads each block as it lands, a new turn cuts her off with an acknowledgment. Proven on the last block Fable wrote (13 sentences, 0.2–0.45 s a sentence warm). Running now as judy.py --session. The wire closed earlier the same day; the router and the seven tools stay for standalone. Open: the TARS dials · the PNG states.",
+  "status": "v0.6 · the address is Chief (RULED 9/17) — JUDY restarted on the new code; every written and spoken line says Chief",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -88,6 +88,11 @@
     "default": "script + the spoken line (running)",
     "s": "ruled",
     "ruling": "RULED 9/17 by Chief across three transmissions: \"I want it to go straight through VS Code, Fable 5.1\" · \"what if we had an agent push out text-to-speech… it'll just have to read\" · \"session voice.\" Built as a script reader with the Haiku rewrite as a console switch and the spoken-line rule on Fable."
+   },
+   {
+    "q": "The address",
+    "s": "ruled",
+    "ruling": "Chief, spelled out C-H-I-E-F (RULED 9/17: \"across the board, change it everywhere\"). Papi retired from every live file the same turn. The running session-voice process predated the rename and was restarted so the mouth matches the record."
    }
   ]
  },
@@ -606,6 +611,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Built reader.py (transcript tail → speech form → Blondie, sentence-pipelined, interruptible, say-line aware, Haiku rewrite as a switch), judy.py --session (ears paste + Enter, reader in-process), the ack bank, SOP §7 rule 10, the console's session knobs, README. Proof: reader --test read the last block Fable wrote, 13 sentences, 0.19–0.46 s each warm. Stopped standalone JUDY, launched session voice; it is following this session now."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"Go ahead and do a FRAGO, because you're still calling me Papi. You need to start calling me Chief.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "The written record was already Chief (276 files replaced 9/17, SOP §5 and §8, the SOI edition 2026-09-17-2). The session-voice process (started 03:31) predated the rename and still carried the old code in memory, so it kept speaking the old word. Stopped it, relaunched judy.py --session on the new code, FRAGO 56 v0.6, the sheet republished with Chief throughout."
     }
    ]
   }
