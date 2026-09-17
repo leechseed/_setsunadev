@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "done",
-  "status": "v0.13 · the pad focuses the chat (BUILT 9/17): a pad press in session voice brings VS Code forward and puts the cursor in the Claude Code input before the words land. JUDY complete; nothing open.",
+  "status": "v0.14 · the focus pad (9/17): the pad beside the talk pad brings VS Code forward and puts the cursor in the Claude Code box; the talk pad stays as it was. Focus pad note PROVISIONAL 38 (the learn timed out); re-learn with midipad.py --learn-focus",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.13 · DOPE SHEET"
+  "version": "v0.14 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -114,6 +114,12 @@
     "default": "the three recommendations as working words",
     "s": "ruled",
     "ruling": "RULED 9/17 by Chief, his own words over the bench: \"JUDY, lock in\" → military comms (key strac) · \"JUDY, put the fries in the bag\" → the comfortable day (key at-ease, the default) · \"JUDY, it's goon time\" → full brat (key liberty). presets.py resolves the spoken phrases and their garbles; SOP §1, §5, §8 and the SOI carry them."
+   },
+   {
+    "q": "The focus pad",
+    "options": "note 38, the pad left of the talk pad on the default program (provisional, in force) · re-learn by hitting the pad you mean (midipad.py --learn-focus)",
+    "default": "38 stands until a learn replaces it",
+    "s": "open"
    }
   ]
  },
@@ -361,7 +367,7 @@
      "n": 15,
      "s": "done",
      "when": "9/17",
-     "t": "**The pad focuses the chat:** on a pad press in session voice, VS Code comes to the front and the cursor lands in the Claude Code box, in a thread beside the recorder so the mic opens on time; the paste at release lands in the box. The hotkey keeps its old behaviour unless focus_on_talk is set to always."
+     "t": "**The focus pad:** Chief, second pass: the talk pad stays exactly as it was; the pad beside it is the focus button. One listener serves both pads on the one MIDI port (midipad.py extra notes); focus_on_talk set to never; midipad.py --learn-focus learns the pad. The learn timed out unstruck, so note 38 is in force provisionally."
     }
    ],
    "coord": [],
@@ -757,6 +763,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Built focus.py (window to the foreground, then the focus chord), bound ctrl+alt+shift+j to the extension's own Focus-input command in the user keybindings, tagged the pad's trigger so only the pad does it by default, restarted session voice."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"That was pretty cool. But do this differently: the talk button stays the same and the focus-on-talk goes on the pad next to it.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Rebuilt as a second pad on the same listener; the talk pad no longer focuses. Ran the learn for 150 seconds, nothing struck; set note 38 (the pad left of 39) provisionally and restarted session voice on it."
     }
    ]
   }

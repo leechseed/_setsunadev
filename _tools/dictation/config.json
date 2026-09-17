@@ -10,5 +10,7 @@
  "midi_port": "MPK mini 3 0",
  "midi_note": 39,
  "midi_channel": 9,
- "focus_key": "ctrl+alt+shift+j"
+ "focus_key": "ctrl+alt+shift+j",
+ "focus_note": 38,
+ "focus_note_note": "PROVISIONAL 9/17: pad 3, left of the talk pad (39) on the MPK mini 3 default program; the learn timed out. Re-learn: python midipad.py --learn-focus"
 }
