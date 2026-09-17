@@ -860,5 +860,12 @@
   "st": "ruled",
   "d": "The operator's address, RULED 9/17 (\"across the board, change it everywhere, Chief, C-H-I-E-F\"). Replaces Papi in every live document, page, tool and memory; the frozen archives keep the old word as record. On the net and on the pages the callsign is still [[hotline|HOTLINE ACTUAL]]; in chat and in the record, Chief.",
   "w": "SOP.md §5 · §8"
+ },
+ "launch-sequence": {
+  "t": "launch sequence",
+  "k": "proword",
+  "st": "provisional",
+  "d": "One word stands the Command up (BOLO 58, 9/17): a zero-token script brings the DARKROOM and [[judy|JUDY]] up, probes the wire, opens the board and the [[soi|SOI]], then the [[sitrep|sit rep]] runs in the formation; the reply carries the station poll. Stations RULED 9/17 by Chief: the board · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY · the seven tools. The proword itself is benched: STAND-TO (rec) · LIGHT THE CANDLE · ALL STATIONS.",
+  "w": "SOP.md §1 · _tools/launch/launch.py · .claude/skills/launch/"
  }
 }

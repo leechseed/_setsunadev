@@ -4,7 +4,7 @@
   "title": "The two-stage spine sweep",
   "trunk": "BLACK",
   "issued": "2026-08-26",
-  "asof": "2026-09-16",
+  "asof": "2026-09-17",
   "s": "open",
   "status": "GATE CLOSED 9/16; story-side work resumes. The drop-folder intake ran the same night: 6,664 PDFs scanned (67 GB, mostly RPG lines), the five real acquisitions minted BVX.1123–1127, distilled and folded into the character, plot and genre docs (thirty-one v4 distills), four of the eight asked-for books turned out to be fakes, the wrong title or a translation, and the bulk is held unkeyed pending an intake order.",
   "decider": "HOTLINE ACTUAL",
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.9 · DOPE SHEET"
+  "version": "v0.10 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -837,6 +837,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "The five acquisition distills through RANGE and folded into the systems on one fan-in seat: the character doc 2.0.2 carries Egri's bone structure, the L8 field list from Attached and Vogler's masks as library rows and OPEN calls 12 to 15; the plot doc 0.1.2 and the genre doc 0.1.2 likewise; the spine's rival map now shows Aristotle, Egri and Vogler held. Attached turned out to be a Vietnamese edition; an English copy joins the re-acquisitions."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"TM 2 character, TM 3, TM 4 plot, let's go ahead and publish that. Get me the DOPE SHEET on whatever BOLO that's part of, and the DOPE SHEET on the story lattice for that BOLO as well.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "All five TMs were already live (02 character · 03 setting · 04 plot · 05 texture · 06 genre); TM 05 and 06 added to pages.json so `view TM-05` / `view TM-06` open them. The Story Lattice (built 8/25–26, complete) is the system the TMs document, and this sheet is its home. Republished with the address ruling applied: Chief, everywhere (RULED 9/17)."
     }
    ]
   }
