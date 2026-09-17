@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "held",
-  "status": "🔴 CAPTURED 9/16, unpriced — the sheet is live and the boresight is ordered but has not run. Joins the reward-vs-risk ranking on BOLO 29 (Blocked #11), which is now a four-way and cannot close until 57 carries a number.",
+  "status": "🔴 CAPTURED 9/16, still unpriced — but the ground shifted 9/17: **Papi now owns an ElevenLabs account**, so the tool cost is sunk and this venture's marginal cost is zero. The boresight is still owed.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 56 (JUDY)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 57",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -138,6 +138,28 @@
        "s": "done"
       }
      ]
+    },
+    {
+     "label": "What changed 9/17",
+     "items": [
+      {
+       "t": "**The tool is owned.** When this row was captured the ElevenLabs cost was a reason to rank it below the other three; it is now $0 marginal, because BOLO 56 pays for the account regardless.",
+       "s": "done"
+      },
+      {
+       "t": "**The skill is demonstrated, not claimed.** Papi's four-voice audition and the stability/style dial test are the first evidence he can actually shape a voice to a brief — which is the whole asset this row rests on.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "Still unknown",
+     "items": [
+      {
+       "t": "Payout terms, per-character rates, exclusivity, and what rights he keeps on a voice he builds. **None of it verified.** The ranking on Blocked #11 cannot close until it is.",
+       "s": "open"
+      }
+     ]
     }
    ]
   },
@@ -170,8 +192,8 @@
    "strand": {
     "last": "BOLO 29 already asked which venture starts first, three-way, before this row existed.",
     "plan": "Hold the four paths uncosted until a boresight runs; then the ranking on BOLO 29 picks up as a four-way.",
-    "you": "You captured it on a break-break, then closed the session on 'Oscar Mike, Oscar Mike. Frago.' — no number spoken, read as this sheet.",
-    "next": "Say the word on the boresight. It is one pass, no build, no spend, and it is the only thing standing between this row and the ranking it created."
+    "you": "Bought ElevenLabs for JUDY, which incidentally removed this venture's only startup cost.",
+    "next": "The boresight: price the payout terms and the rights position, then rank it against 24 · 27 · 29."
    },
    "main_effort": "Price it. A boresight on BOLO 57 is the one thing that lets the four-way ranking (24 · 27 · 29 · 57) move.",
    "phases": [
@@ -311,6 +333,26 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Read as FRAGO 57, the sheet in play: the resume order is carried here rather than on a parking card, per the 9/11 ruling that DOPE SHEETs carry resume orders."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"I actually got 11 labs. For Judy.\" — bought for the crew, 9/17"
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Account live: 51-char sk_ key, **39 voices**, 6 British female. The tool cost this row would have carried is now sunk against BOLO 56."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "First paste was the key **ID**, which the API rejected by name — not a credential, nothing to rotate. `setkey.ps1` added so the real key never enters chat."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Voice building proven in practice: `stability` and `style` are real delivery dials — one line rendered flat / normal / brat gives three different performances."
     }
    ]
   }

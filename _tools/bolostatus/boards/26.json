@@ -1,288 +1,373 @@
 {
-  "bolo": {
-    "n": 26,
-    "title": "Dictation with a custom dictionary — the whisper fix",
-    "trunk": "OPERATOR",
-    "issued": "2026-09-03",
-    "asof": "2026-09-11",
-    "s": "held",
-    "status": "diagnosed 9/3 · three routes walked · parked on the route ruling · nothing built",
-    "decider": "HOTLINE ACTUAL",
-    "feeds": "every trunk — every order Papi speaks passes through this",
-    "related": [
-      {
-        "n": 48,
-        "why": "the name bench; garbles are its raw material"
-      },
-      {
-        "n": 38,
-        "why": "the SOI page carries the codebook"
-      }
-    ],
-    "home": "BOLO.md · row 26",
-    "card": "oscar-mike/dictation-dictionary.md",
-    "version": "v0.1 · DOPE SHEET"
-  },
-  "mantra": [
-    {
-      "k": "speed",
-      "w": "Speed",
-      "line": "One ruling, one evening. The replacement table already exists: it is SOP §8."
-    },
-    {
-      "k": "focus",
-      "w": "Focus",
-      "line": "The fix lives upstream, in the speech-to-text layer. Claude never hears audio."
-    },
-    {
-      "k": "boldness",
-      "w": "Boldness",
-      "line": "Build it. Zero dollars, the GPU that ran YOLO, and the codebook stays in sync because it is the SOP."
-    }
+ "bolo": {
+  "n": 26,
+  "title": "Dictation with a custom dictionary — the whisper fix",
+  "trunk": "OPERATOR",
+  "issued": "2026-09-03",
+  "asof": "2026-09-17",
+  "s": "done",
+  "status": "ROUTE RULED BUILD 9/16 and SHIPPED the same session — the tool exists, runs on the 3090, and feeds its own dictionary. Now JUDY's listening half (BOLO 56).",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "every trunk — every order Papi speaks passes through this",
+  "related": [
+   {
+    "n": 48,
+    "why": "the name bench; garbles are its raw material"
+   },
+   {
+    "n": 38,
+    "why": "the SOI page carries the codebook"
+   },
+   {
+    "n": 56,
+    "why": "JUDY — this is her listening half; the mouth, face and loop live there"
+   }
   ],
-  "frago": {
-    "mission": "Stop the recognizer from mangling the Command lexicon, **in order to** make every spoken order land clean and retire the garble table's growth.",
-    "order": "**Rule the route.** BUILD · INSTALL · PAY.",
-    "default": "Silence keeps it parked. Recommendation: BUILD when the token budget allows (one evening); INSTALL is the cheapest in tokens if a front-end checks out on Windows.",
-    "calls": [
-      {
-        "q": "The route",
-        "options": "BUILD — Claude writes the push-to-talk tool (hotkey → local faster-whisper with the lexicon as prompt → SOP §8 replacements → type into the focused window) · INSTALL — whisper-writer or Whispering, verify Windows + prompt + replacements · PAY — Wispr Flow / Aqua Voice, against budget",
-        "default": "BUILD (rec) · INSTALL if tokens are tight",
-        "s": "open"
-      }
-    ]
+  "home": "BOLO.md · row 26",
+  "card": "oscar-mike/dictation-dictionary.md",
+  "version": "v0.2 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "One ruling, one evening. The replacement table already exists: it is SOP §8."
   },
-  "paragraphs": [
-    {
-      "id": "S",
-      "name": "Situation",
-      "kind": "list",
-      "plain": "What is wrong with dictation and why: the recognizer has no vocabulary.",
-      "strand": {
-        "last": "Diagnosed 9/3 after the mic check: not the mic.",
-        "plan": "Two levers, three routes, one ruling.",
-        "you": "You asked whether a voice library could stop the misunderstandings. This is that BOLO.",
-        "next": "The route."
-      },
-      "groups": [
-        {
-          "label": "Diagnosis · ruled 9/3",
-          "items": [
-            {
-              "t": "**Not the mic.** Common words land clean; proper nouns and numbers garble (Ultrasin → ultrasound · Blender → blamer · SOP → SLP · how copy → hau copy · BOLO → below, buffalo, boat). A recognizer with no vocabulary guesses the nearest real word.",
-              "s": "ruled"
-            },
-            {
-              "t": "**Whisper has no dictionary.** Two levers: the **initial prompt** (text the model reads before every utterance, biasing spellings toward the Command lexicon) and **post-transcription replacement** (a find/replace over the transcript). Every \"custom dictionary\" feature in any Whisper front-end is one or both. A fine-tune is the third lever and unnecessary.",
-              "s": "ruled"
-            },
-            {
-              "t": "**The replacement table already exists:** the SOP §8 dictation codebook, 35 rows and growing one per catch, parsed live onto the [[soi|SOI]] page.",
-              "s": "done"
-            }
-          ]
-        },
-        {
-          "label": "Papi-side hygiene · regardless of route",
-          "items": [
-            {
-              "t": "Years as \"twenty oh five\". Critical proper nouns slightly slower, once; spell a new name the first time. Boom mic a few inches off at a fixed distance; input 70 to 80 percent; audio enhancements off if the tool fights them.",
-              "s": "open"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "M",
-      "name": "Mission",
-      "kind": "mission",
-      "plain": "The task and the reason.",
-      "strand": {
-        "last": "Every session adds garble rows.",
-        "plan": "Fix the layer that makes them.",
-        "you": "You pay in one ruling.",
-        "next": "The end state is a tool that reads the SOP."
-      },
-      "task": "Put the Command lexicon in front of the recognizer and the codebook behind it,",
-      "intent": "in order to make every spoken order land clean and stop the garble table growing.",
-      "spoken": "\"Creating my own voice library that Claude and VS Code can understand, so we'll stop misunderstanding me as much.\"",
-      "endstate": [
-        "A push-to-talk tool on the box that types clean Command vocabulary into any window.",
-        "The lexicon prompt and the replacement table are generated from SOP §0 and §8, never hand-kept.",
-        "The garble table stops growing except for new coinages."
-      ]
-    },
-    {
-      "id": "E",
-      "name": "Execution",
-      "kind": "phases",
-      "plain": "Three routes; one runs.",
-      "strand": {
-        "last": "Walked 9/3, parked the same day.",
-        "plan": "The route, then one evening.",
-        "you": "One word.",
-        "next": "BUILD: same session. INSTALL: verify two candidates first."
-      },
-      "main_effort": "The route ruling → the tool on the box.",
-      "phases": [
-        {
-          "n": 1,
-          "t": "**Diagnosis + mechanism** — done 9/3.",
-          "s": "done",
-          "when": "9/3"
-        },
-        {
-          "n": 2,
-          "t": "**The route ruling** — BUILD · INSTALL · PAY.",
-          "s": "open",
-          "when": "yours"
-        },
-        {
-          "n": 3,
-          "t": "**BUILD:** hotkey → record → faster-whisper (CTranslate2, the GPU) with the lexicon prompt → §8 replacements → type into the focused window. One evening.",
-          "s": "gated",
-          "when": "on BUILD"
-        },
-        {
-          "n": 4,
-          "t": "**INSTALL:** verify whisper-writer (savbell) and Whispering (epicenter) for Windows, initial prompt, replacements; configure with the lexicon and the codebook.",
-          "s": "gated",
-          "when": "on INSTALL"
-        },
-        {
-          "n": 5,
-          "t": "**Either way:** generate the prompt from SOP §0 and the table from §8 by script, so the SOP stays the single source.",
-          "s": "gated",
-          "when": "with 3 or 4"
-        }
-      ],
-      "coord": [
-        "Lexicon seed: Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike · ENDEX · buttonhook · break-break · sit rep · how copy · Dramatica · Blender · MCDP · DCUS · Tori · Anna Colson Conway · Papi · main effort · PMCS · Ready Rack · Magazine · SOP · DOPE SHEET · FRAGO · SOI · TTP · RTB · Charlie Mike.",
-        "Mic and desk gear live on the corner card."
-      ],
-      "running": [
-        "Nothing."
-      ]
-    },
-    {
-      "id": "A",
-      "name": "Admin & Logistics",
-      "kind": "files",
-      "plain": "Where it lives and what it costs.",
-      "strand": {
-        "last": "One card, one row.",
-        "plan": "One tool file on the box when built.",
-        "you": "Zero dollars on BUILD or INSTALL.",
-        "next": "One evening of tokens on BUILD."
-      },
-      "files": [
-        {
-          "path": "BOLO.md · row 26",
-          "what": "the mechanism and the three routes",
-          "s": "done"
-        },
-        {
-          "path": "oscar-mike/dictation-dictionary.md",
-          "what": "the card: diagnosis, routes, lexicon seed, hygiene",
-          "s": "parked"
-        },
-        {
-          "path": "SOP.md §8",
-          "what": "the replacement table, canonical",
-          "s": "done"
-        },
-        {
-          "path": "_tools/dictation/ (to be)",
-          "what": "the push-to-talk tool on BUILD",
-          "s": "gated"
-        }
-      ],
-      "cost": [
-        {
-          "k": "BUILD",
-          "v": "one evening · $0"
-        },
-        {
-          "k": "INSTALL",
-          "v": "one hour · $0"
-        },
-        {
-          "k": "PAY",
-          "v": "monthly · against budget"
-        }
-      ]
-    },
-    {
-      "id": "C",
-      "name": "Command & Signal",
-      "kind": "list",
-      "plain": "Who calls what.",
-      "strand": {
-        "last": "Parked on your word 9/3.",
-        "plan": "One decider.",
-        "you": "The route.",
-        "next": "Say BUILD, INSTALL, or PAY."
-      },
-      "groups": [
-        {
-          "label": "Who decides",
-          "items": [
-            {
-              "t": "**Papi** — the route. **Claude** — the build, the lexicon generation, the verification of candidates.",
-              "s": "open"
-            }
-          ]
-        },
-        {
-          "label": "The gate",
-          "items": [
-            {
-              "t": "**Parked** until the route is spoken. No default runs; this one costs an evening.",
-              "s": "held"
-            }
-          ]
-        },
-        {
-          "label": "Prowords in play",
-          "items": [
-            {
-              "t": "[[oscar-mike|Oscar Mike]] — the card · [[charlie-mike|Charlie Mike]] dictation — resumes it · **DOPE SHEET 26** — this page.",
-              "s": "open"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "L",
-      "name": "Log",
-      "kind": "log",
-      "plain": "Every transmission.",
-      "strand": {
-        "last": "Three entries.",
-        "plan": "One per transmission.",
-        "you": "Two are yours.",
-        "next": "The route."
-      },
-      "entries": [
-        {
-          "when": "9/3",
-          "who": "Papi",
-          "t": "After the mic diagnosis: a custom dictionary so dictation stops mangling the lexicon. BOLO 26 captured; parked the same session."
-        },
-        {
-          "when": "9/11",
-          "who": "Papi",
-          "t": "\"Do we have a BOLO on the whisper sync, creating my own voice library?\" Yes: this one. Then: \"get me the situation report on BOLO 26.\""
-        },
-        {
-          "when": "9/11",
-          "who": "Claude",
-          "t": "DOPE SHEET 26 built. Route recommendation: BUILD when tokens allow, INSTALL if tight."
-        }
-      ]
-    }
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "The fix lives upstream, in the speech-to-text layer. Claude never hears audio."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Build it. Zero dollars, the GPU that ran YOLO, and the codebook stays in sync because it is the SOP."
+  }
+ ],
+ "frago": {
+  "mission": "Stop the recognizer from mangling the Command lexicon, **in order to** make every spoken order land clean and retire the garble table's growth.",
+  "order": "**Nothing.** The card is closed. What is left belongs to BOLO 56 (JUDY): the wire, and widening the brain's coverage.",
+  "default": "Silence: the tool stands as built and SOP §8 grows a row whenever a garble is caught.",
+  "calls": [
+   {
+    "q": "The route",
+    "options": "BUILD — Claude writes the push-to-talk tool (hotkey → local faster-whisper with the lexicon as prompt → SOP §8 replacements → type into the focused window) · INSTALL — whisper-writer or Whispering, verify Windows + prompt + replacements · PAY — Wispr Flow / Aqua Voice, against budget",
+    "default": "BUILD (rec) · INSTALL if tokens are tight",
+    "s": "ruled",
+    "ruling": "BUILD (Papi: \"build\", 9/16). Claude shipped it the same session, as the 9/3 card promised it would."
+   }
   ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What is wrong with dictation and why: the recognizer has no vocabulary.",
+   "strand": {
+    "last": "Diagnosed 9/3 after the mic check: not the mic.",
+    "plan": "Two levers, three routes, one ruling.",
+    "you": "You asked whether a voice library could stop the misunderstandings. This is that BOLO.",
+    "next": "The route."
+   },
+   "groups": [
+    {
+     "label": "Diagnosis · ruled 9/3",
+     "items": [
+      {
+       "t": "**Not the mic.** Common words land clean; proper nouns and numbers garble (Ultrasin → ultrasound · Blender → blamer · SOP → SLP · how copy → hau copy · BOLO → below, buffalo, boat). A recognizer with no vocabulary guesses the nearest real word.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Whisper has no dictionary.** Two levers: the **initial prompt** (text the model reads before every utterance, biasing spellings toward the Command lexicon) and **post-transcription replacement** (a find/replace over the transcript). Every \"custom dictionary\" feature in any Whisper front-end is one or both. A fine-tune is the third lever and unnecessary.",
+       "s": "ruled"
+      },
+      {
+       "t": "**The replacement table already exists:** the SOP §8 dictation codebook, 35 rows and growing one per catch, parsed live onto the [[soi|SOI]] page.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "Papi-side hygiene · regardless of route",
+     "items": [
+      {
+       "t": "Years as \"twenty oh five\". Critical proper nouns slightly slower, once; spell a new name the first time. Boom mic a few inches off at a fixed distance; input 70 to 80 percent; audio enhancements off if the tool fights them.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Measured",
+     "items": [
+      {
+       "t": "11.4s of speech transcribed in **0.69s**; model warm-loads in 2.9s, ~28s on first run (1.5 GB download once).",
+       "s": "done"
+      },
+      {
+       "t": "CTranslate2 reaches the 3090 at float16 even though both torch installs on the box are CPU-only — faster-whisper does not use torch.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "Safety",
+     "items": [
+      {
+       "t": "§8's 14 context-conditional rows are parsed but held OFF by default; `standing`→`canning`, `sweep`→`RTB`, `sucking`→`TTP` would eat ordinary speech. `--aggressive` opts in, never silently.",
+       "s": "done"
+      },
+      {
+       "t": "Replacements run in ONE alternation sweep, not a loop — a loop let each rule rescan the previous rule's output, so any A→B, B→C pair in §8 would silently chain into A→C.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "The table grew itself",
+     "items": [
+      {
+       "t": "The tool's own first run caught three garbles now in §8: `borsite`→boresight · `Poppy`→Papi · `darkroom`→DARKROOM. Lexicon bias fixed **Ultrasin** — the flagship 9/3 garble — unaided.",
+       "s": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "The task and the reason.",
+   "strand": {
+    "last": "Every session adds garble rows.",
+    "plan": "Fix the layer that makes them.",
+    "you": "You pay in one ruling.",
+    "next": "The end state is a tool that reads the SOP."
+   },
+   "task": "Put the Command lexicon in front of the recognizer and the codebook behind it,",
+   "intent": "in order to make every spoken order land clean and stop the garble table growing.",
+   "spoken": "\"Creating my own voice library that Claude and VS Code can understand, so we'll stop misunderstanding me as much.\"",
+   "endstate": [
+    "A push-to-talk tool on the box that types clean Command vocabulary into any window.",
+    "The lexicon prompt and the replacement table are generated from SOP §0 and §8, never hand-kept.",
+    "The garble table stops growing except for new coinages."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Three routes; one runs.",
+   "strand": {
+    "last": "Walked 9/3, parked the same day.",
+    "plan": "The route, then one evening.",
+    "you": "Ruled BUILD on one word, 13 days after the card was parked.",
+    "next": "Nothing on 26. The dictation tool is the input half of JUDY; BOLO 56 carries the rest."
+   },
+   "main_effort": "The route ruling → the tool on the box.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**Diagnosis + mechanism** — done 9/3.",
+     "s": "done",
+     "when": "9/3"
+    },
+    {
+     "n": 2,
+     "t": "**The route ruling** — BUILD · INSTALL · PAY.",
+     "s": "open",
+     "when": "yours"
+    },
+    {
+     "n": 3,
+     "t": "**BUILD:** hotkey → record → faster-whisper (CTranslate2, the GPU) with the lexicon prompt → §8 replacements → type into the focused window. One evening.",
+     "s": "gated",
+     "when": "on BUILD"
+    },
+    {
+     "n": 4,
+     "t": "**INSTALL:** verify whisper-writer (savbell) and Whispering (epicenter) for Windows, initial prompt, replacements; configure with the lexicon and the codebook.",
+     "s": "gated",
+     "when": "on INSTALL"
+    },
+    {
+     "n": 5,
+     "t": "**Either way:** generate the prompt from SOP §0 and the table from §8 by script, so the SOP stays the single source.",
+     "s": "gated",
+     "when": "with 3 or 4"
+    }
+   ],
+   "coord": [
+    "Lexicon seed: Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike · ENDEX · buttonhook · break-break · sit rep · how copy · Dramatica · Blender · MCDP · DCUS · Tori · Anna Colson Conway · Papi · main effort · PMCS · Ready Rack · Magazine · SOP · DOPE SHEET · FRAGO · SOI · TTP · RTB · Charlie Mike.",
+    "Mic and desk gear live on the corner card."
+   ],
+   "running": [
+    "Nothing."
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where it lives and what it costs.",
+   "strand": {
+    "last": "One card, one row.",
+    "plan": "One tool file on the box when built.",
+    "you": "Zero dollars on BUILD or INSTALL.",
+    "next": "One evening of tokens on BUILD."
+   },
+   "files": [
+    {
+     "path": "BOLO.md · row 26",
+     "what": "the mechanism and the three routes",
+     "s": "done"
+    },
+    {
+     "path": "oscar-mike/dictation-dictionary.md",
+     "what": "the card: diagnosis, routes, lexicon seed, hygiene",
+     "s": "parked"
+    },
+    {
+     "path": "SOP.md §8",
+     "what": "the replacement table, canonical",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/ (to be)",
+     "what": "the push-to-talk tool on BUILD",
+     "s": "gated"
+    },
+    {
+     "path": "_tools/dictation/ptt.py",
+     "what": "the daemon — hold ctrl+alt+space → faster-whisper distil-large-v3 on the 3090 at float16 → §8 repair → clipboard-paste into the focused window",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/codebook.py",
+     "what": "parses SOP §8 LIVE every run — no second copy to drift, which was the whole argument for BUILD over INSTALL",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/console.py",
+     "what": "the mod menu on :8787 — mic meter, model picker, live §8 tester, adds rows straight into SOP.md",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/config.json",
+     "what": "hotkey · model · device · mic · the learned MIDI pad",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "BUILD",
+     "v": "one evening · $0"
+    },
+    {
+     "k": "INSTALL",
+     "v": "one hour · $0"
+    },
+    {
+     "k": "PAY",
+     "v": "monthly · against budget"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what.",
+   "strand": {
+    "last": "Parked on your word 9/3.",
+    "plan": "One decider.",
+    "you": "The route.",
+    "next": "Say BUILD, INSTALL, or PAY."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**Papi** — the route. **Claude** — the build, the lexicon generation, the verification of candidates.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Parked** until the route is spoken. No default runs; this one costs an evening.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "Prowords in play",
+     "items": [
+      {
+       "t": "[[oscar-mike|Oscar Mike]] — the card · [[charlie-mike|Charlie Mike]] dictation — resumes it · **DOPE SHEET 26** — this page.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission.",
+   "strand": {
+    "last": "Three entries.",
+    "plan": "One per transmission.",
+    "you": "Two are yours.",
+    "next": "The route."
+   },
+   "entries": [
+    {
+     "when": "9/3",
+     "who": "Papi",
+     "t": "After the mic diagnosis: a custom dictionary so dictation stops mangling the lexicon. BOLO 26 captured; parked the same session."
+    },
+    {
+     "when": "9/11",
+     "who": "Papi",
+     "t": "\"Do we have a BOLO on the whisper sync, creating my own voice library?\" Yes: this one. Then: \"get me the situation report on BOLO 26.\""
+    },
+    {
+     "when": "9/11",
+     "who": "Claude",
+     "t": "DOPE SHEET 26 built. Route recommendation: BUILD when tokens allow, INSTALL if tight."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"build\" — the route ruling, 9/16"
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Shipped `_tools/dictation/` the same session: ptt.py, codebook.py, config.json, README. §8 parsed live."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Added the console (:8787) — mic meter, model picker, live §8 tester, and adding a §8 row from the browser."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "MPK mini 3 pad approved as a second trigger; toggle added to the loop."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Card closed. Folded into BOLO 56 (JUDY) as the listening half."
+    }
+   ]
+  }
+ ]
 }
