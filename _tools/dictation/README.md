@@ -67,7 +67,7 @@ no key, the Pro plan. `reader.py` follows the session's transcript on disk
 (`~/.claude/projects/<repo>/<session>.jsonl`) and Blondie reads each block Fable
 writes **as it lands**, sentence by sentence, one sentence synthesizing while the
 previous plays. A new turn from you cuts her off mid-sentence and plays an
-acknowledgment ("Copy." · "On it." · "Stand by.") so the wait has a voice.
+acknowledgment — only the ruled prowords, "Copy." · "Good traffic, stand by." (Chief, 9/17) — so the wait has a voice.
 
 | Piece | What |
 |---|---|

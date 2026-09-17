@@ -43,7 +43,8 @@ import speak  # noqa: E402
 
 JUDY = os.path.join(HERE, "judy.json")
 ACKS = os.path.join(ROOT, "_PRIVATE", "voice-acks")
-ACK_LINES = ["Copy.", "On it.", "Stand by.", "Working.", "One moment."]
+# RULED 2026-09-17 by Chief: only these prowords confirm receipt ("copy" · "good traffic, stand by").
+ACK_LINES = ["Copy.", "Good traffic, stand by."]
 SAY = re.compile(r"<!--\s*say:\s*(.*?)\s*-->", re.S | re.I)
 
 

@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "v0.6 · the address is Chief (RULED 9/17) — JUDY restarted on the new code; every written and spoken line says Chief",
+  "status": "v0.7 · the acknowledgments RULED 9/17: JUDY confirms receipt with two prowords only, \"Copy.\" and \"Good traffic, stand by.\" — the bank re-cut in Blondie's voice, session voice restarted",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.6 · DOPE SHEET"
+  "version": "v0.7 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -93,6 +93,11 @@
     "q": "The address",
     "s": "ruled",
     "ruling": "Chief, spelled out C-H-I-E-F (RULED 9/17: \"across the board, change it everywhere\"). Papi retired from every live file the same turn. The running session-voice process predated the rename and was restarted so the mouth matches the record."
+   },
+   {
+    "q": "The acknowledgments",
+    "s": "ruled",
+    "ruling": "RULED 9/17 by Chief: \"only certain prowords that she uses to confirm that she received the message. One of them will be copy. The next one would be good traffic, stand by.\" ACK_LINES in reader.py is exactly those two; the five-line bank (On it · Working · One moment) retired; re-rendered on ElevenLabs the same turn."
    }
   ]
  },
@@ -435,7 +440,7 @@
     },
     {
      "path": "_PRIVATE/voice-acks/",
-     "what": "five acknowledgments rendered once by Blondie (Copy · On it · Stand by · Working · One moment), gitignored",
+     "what": "two acknowledgments rendered by Blondie (Copy · Good traffic, stand by), gitignored",
      "s": "done"
     },
     {
@@ -621,6 +626,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "The written record was already Chief (276 files replaced 9/17, SOP §5 and §8, the SOI edition 2026-09-17-2). The session-voice process (started 03:31) predated the rename and still carried the old code in memory, so it kept speaking the old word. Stopped it, relaunched judy.py --session on the new code, FRAGO 56 v0.6, the sheet republished with Chief throughout."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"When JUDY replies, I want there to be only certain prowords that she uses to confirm that she received the message. One of them will be copy. The next one would be good traffic, stand by.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "ACK_LINES narrowed to the two prowords, the old bank deleted and re-rendered in Blondie's voice, session voice restarted on the new bank. Radio lineage: COPY (received and understood) · GOOD TRAFFIC, STAND BY (your transmission is good, wait for the reply)."
     }
    ]
   }

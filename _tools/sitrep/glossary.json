@@ -874,5 +874,12 @@
   "st": "ruled",
   "d": "The word that fires [[launch-sequence|the launch sequence]], RULED 9/17 over a bench of ten (five Marine, five NASA). Lineage: the flight director's go/no-go poll, every console answering go. Garbles: go for log · go for lunch. Never [[go|go N]], which is a phase go-word on a DOPE SHEET.",
   "w": "SOP.md §0–1 · §5 · §8 · .claude/skills/launch/"
+ },
+ "good-traffic": {
+  "t": "good traffic, stand by",
+  "k": "proword",
+  "st": "ruled",
+  "d": "One of [[judy|JUDY]]'s two acknowledgments, RULED 9/17: your transmission came through clean, wait for the reply. The other is \"Copy.\" She says nothing else to confirm receipt.",
+  "w": "SOP.md §5 · _tools/dictation/reader.py"
  }
 }
