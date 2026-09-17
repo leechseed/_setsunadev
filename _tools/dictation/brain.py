@@ -232,12 +232,53 @@ def answer(text):
             "effort, a BOLO by number, PMCS, or whether the box is up."), None
 
 
+# ------------------------------------------------------------------ coverage
+
+# Realistic things Papi would actually say out loud. This is the honest test of the
+# router: not "do the tools work" but "does she cover what I'd really ask".
+PROBES = [
+    "what's blocked", "what am I blocked on", "what do I owe you",
+    "what's the main effort", "what should I work on", "what's the leverage line",
+    "give me bolo 24", "what's bolo 46", "read me bolo 57",
+    "how many bolos are there", "what's on the watchlist",
+    "how's pmcs", "what about the dentist", "did I book the doctor",
+    "is the box up", "is darkroom running", "is the tree clean",
+    "what time is it", "what day is it",
+    "what can you do", "help",
+    # the ones that should miss — proof she refuses instead of bluffing
+    "what moved today", "read me the fresh ten", "what did we do yesterday",
+    "open the console", "run the darkroom", "start a sit rep",
+    "what's tori's wound", "how much money do I have", "tell me a joke",
+]
+
+
+def coverage():
+    """Run every probe and report hit/miss. `python brain.py --probe`"""
+    hit, miss = [], []
+    for q in PROBES:
+        r, tool = answer(q)
+        (hit if tool else miss).append((q, r))
+    print(f"COVERAGE  {len(hit)} answered / {len(PROBES)} asked "
+          f"({100 * len(hit) // len(PROBES)}%)\n")
+    print("  ANSWERED")
+    for q, r in hit:
+        print(f"    {q:34s} -> {r[:66]}")
+    print("\n  REFUSED  (she says so rather than guessing)")
+    for q, _ in miss:
+        print(f"    {q}")
+    print("\n  A miss is only a problem if you'd actually ask it. Each one is a")
+    print("  regex and a function away from being a hit.")
+
+
 if __name__ == "__main__":
     import sys
     try:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
         pass
+    if "--probe" in sys.argv:
+        coverage()
+        raise SystemExit
     q = " ".join(sys.argv[1:])
     if q:
         r, _ = answer(q)

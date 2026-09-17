@@ -9,11 +9,15 @@ BOLO 56. Everything before this was a part; this is JUDY.
     done             ->  face: idle
 
     python judy.py                 # face window + the loop
+    python judy.py --toggle        # press to start, press again to stop
     python judy.py --no-face       # terminal only
     python judy.py --type "text"   # skip the mic, test brain + mouth
 
 The face is a frameless always-on-top window. Drag it anywhere; it remembers where.
 Right-click it to quit.
+
+Two triggers, either or both: the keyboard hotkey, and a MIDI pad once one has been
+learned (`python midipad.py --learn`). Both drive the same two calls.
 
 The brain is `brain.py` — a keyword router over the repo today, a language model
 later. Swapping it does not touch this file: the loop asks for a string back.
@@ -197,12 +201,23 @@ class NoFace:
 # ---------------------------------------------------------------- the loop
 
 class Loop:
-    def __init__(self, face, engine, hotkey, speak_replies=True):
+    """
+    One exchange at a time, however it is triggered.
+
+    Two triggers exist and they share the same two calls, so nothing downstream knows
+    or cares which fired: a keyboard hotkey and a MIDI pad. Two shapes too — hold
+    (down starts, up transcribes) and toggle (a press starts, the next press ends).
+    A pad wants toggle; holding a capacitive pad for thirty seconds is unpleasant.
+    """
+
+    def __init__(self, face, engine, hotkey, speak_replies=True, toggle=False):
         self.face = face
         self.engine = engine
         self.hotkey = hotkey
         self.speak_replies = speak_replies
+        self.toggle = toggle
         self.rec = None
+        self.open = False
         self.busy = threading.Lock()
 
     def turn(self, heard):
@@ -213,7 +228,7 @@ class Loop:
         print(f"\n  you  > {heard}")
         self.face.say(f"you: {heard}")
         self.face.set("thinking")
-        reply, tool = brain.answer(heard)
+        reply, _tool = brain.answer(heard)
         if not reply:
             self.face.set("idle")
             return
@@ -227,27 +242,46 @@ class Loop:
                 print(f"  ! mouth failed: {e}")
         self.face.set("idle")
 
-    def listen_once(self):
-        import ptt
-        if not self.busy.acquire(blocking=False):
+    # -- the two calls every trigger uses
+    def start(self):
+        if self.open or not self.busy.acquire(blocking=False):
             return
+        self.open = True
+        self.face.set("listening")
         try:
-            self.face.set("listening")
             self.rec.start()
-            while self.held():
-                time.sleep(0.03)
+        except Exception as e:
+            print(f"  ! mic failed: {e}")
+            self.open = False
+            self.face.set("idle")
+            self.busy.release()
+
+    def finish(self):
+        if not self.open:
+            return
+        self.open = False
+        try:
             audio = self.rec.stop()
             self.face.set("thinking")
             text, meta = self.engine.transcribe(audio)
-            if meta.get("hits"):
-                for h, r, _n in meta["hits"]:
-                    print(f"         §8 {h!r} -> {r!r}")
+            for h, r, _n in (meta.get("hits") or []):
+                print(f"         §8 {h!r} -> {r!r}")
             self.turn(text)
         except Exception as e:
             print(f"  ! turn failed: {e}")
             self.face.set("idle")
         finally:
-            self.busy.release()
+            try:
+                self.busy.release()
+            except RuntimeError:
+                pass
+
+    def fire(self):
+        """A trigger pulse. Hold mode uses start/finish directly; toggle uses this."""
+        if self.open:
+            threading.Thread(target=self.finish, daemon=True).start()
+        else:
+            self.start()
 
     def held(self):
         import keyboard
@@ -256,13 +290,37 @@ class Loop:
     def run(self):
         import keyboard
         import ptt
+        import midipad
         self.rec = ptt.Recorder(dcfg().get("input_device"))
+
+        # -- keyboard
         last = self.hotkey.split("+")[-1]
-        keyboard.on_press_key(
-            last, lambda _e: threading.Thread(
-                target=self.listen_once, daemon=True).start()
-            if self.held() else None, suppress=False)
-        print(f"\n  ready · HOLD {self.hotkey} and talk · right-click the face to quit\n")
+        if self.toggle:
+            keyboard.add_hotkey(self.hotkey, self.fire, suppress=False)
+        else:
+            keyboard.on_press_key(
+                last, lambda _e: self.start() if self.held() else None, suppress=False)
+            keyboard.on_release_key(last, lambda _e: threading.Thread(
+                target=self.finish, daemon=True).start(), suppress=False)
+
+        # -- MIDI pad, if one has been learned
+        self.pad = None
+        if dcfg().get("midi_note") is not None:
+            if self.toggle:
+                self.pad = midipad.PadListener(self.fire, lambda: None)
+            else:
+                self.pad = midipad.PadListener(
+                    self.start,
+                    lambda: threading.Thread(target=self.finish, daemon=True).start())
+            if self.pad.start():
+                c = dcfg()
+                print(f"  pad    note {c['midi_note']} on {c.get('midi_port')}")
+            else:
+                print(f"  pad    unavailable: {self.pad.error}")
+
+        shape = "PRESS to start, press again to stop" if self.toggle else f"HOLD {self.hotkey}"
+        extra = " (or the pad)" if self.pad and not self.pad.error else ""
+        print(f"\n  ready · {shape}{extra} · right-click the face to quit\n")
 
 
 def main():
@@ -275,6 +333,8 @@ def main():
     ap.add_argument("--no-voice", action="store_true", help="print replies, don't speak")
     ap.add_argument("--type", help="skip the mic: one typed turn, then exit")
     ap.add_argument("--size", type=int, default=220)
+    ap.add_argument("--toggle", action="store_true",
+                    help="press to start, press again to stop (best for a pad)")
     a = ap.parse_args()
 
     v = cfg().get("voice", {})
@@ -292,7 +352,8 @@ def main():
     import ptt
     engine = ptt.Engine({**ptt.DEFAULTS, **dcfg(), "aggressive": dcfg().get("aggressive", False)})
     loop = Loop(face, engine, dcfg().get("hotkey", ptt.DEFAULTS["hotkey"]),
-                speak_replies=not a.no_voice)
+                speak_replies=not a.no_voice,
+                toggle=a.toggle or bool(dcfg().get("toggle")))
     loop.run()
     face.run()
 
