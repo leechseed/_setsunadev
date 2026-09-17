@@ -756,5 +756,11 @@
   "k": "item",
   "d": "Voice work as income: Papi can already build voices in ElevenLabs, so it is a fourth candidate venture beside 24 · 27 · 29. Four paths named, none costed. Held until a boresight prices it.",
   "w": "https://claude.ai/artifact/19rjZFkarB1QvEYK1vubdo"
+ },
+ "bolo56": {
+  "t": "BOLO 56",
+  "k": "item",
+  "d": "JUDY — the voice loop. Ears (BOLO 26), brain (keyword router, ruled 9/17), mouth (ElevenLabs, Blondie ruled 9/17), face and console all built. The wire — an MCP server exposing brain.py's tools to the VS Code session — is ruled and not yet built.",
+  "w": "https://claude.ai/artifact/Ckg6W4JrNo8JvLR55ZW5Ea"
  }
 }

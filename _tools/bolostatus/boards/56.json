@@ -1,0 +1,468 @@
+{
+ "bolo": {
+  "n": 56,
+  "title": "JUDY — the voice loop",
+  "trunk": "OPERATOR, feeds every trunk",
+  "issued": "2026-09-16",
+  "asof": "2026-09-17",
+  "s": "open",
+  "status": "🟢 Console BUILT 9/16; voice call CLOSED — ElevenLabs LIVE 9/17, Blondie ruled. Wire RULED MCP-all-in 9/16, brain RULED stay-on-router 9/17 — the MCP server itself not built yet. Three calls open: the wire (build) · the TARS dials · the PNG states.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "every trunk",
+  "related": [
+   {
+    "n": 26,
+    "why": "the listening half — dictation dictionary, already fully worked and shipped as _tools/dictation/; JUDY's call 3 closed when this row's route ruled BUILD"
+   },
+   {
+    "n": 33,
+    "why": "the CK3 information-architecture study the console's panel layout and hover system draw from"
+   },
+   {
+    "n": 34,
+    "why": "the WARROOM long-watch palette — the colorway JUDY's console is ruled to follow"
+   }
+  ],
+  "home": "BOLO.md · row 56",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The voice has to answer before it has to be clever — lowest/fastest Claude, not Opus, because responsiveness is the whole requirement."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "The console turned three of four open calls into knobs the same session it was asked for. The wire is the one call left that isn't a dial."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Papi mentioned owning ElevenLabs on a buttonhook and it was integrated, tested, and live the same day — the brat dial can finally be performed, not just written."
+  }
+ ],
+ "frago": {
+  "mission": "Build the MCP server that exposes brain.py's seven tools to the Opus VS Code session, in order to finish JUDY's one unbuilt piece at zero standing cost.",
+  "order": "**Build the wire: wrap brain.py's seven tools in a stdio MCP server at `_tools/dictation/mcp.py`, register it in the project's `.mcp.json`, and prove it from this VS Code session with one call per tool.** No new tools, no model, no key, no spend. Bring it back as FRAGO 56.",
+  "default": "Silence: the wire stays ruled and unbuilt. JUDY keeps answering on the router alone, the console's Wire panel keeps showing the trade, and the session cannot ask her anything. Nothing is spent and nothing breaks.",
+  "calls": [
+   {
+    "q": "The wire — build now?",
+    "options": "BUILD now (rec: the tools exist, one evening, $0) · HOLD until the TARS dials rule · DROP MCP and leave the loop standalone",
+    "default": "BUILD now (rec)",
+    "s": "open"
+   },
+   {
+    "q": "Transport",
+    "options": "stdio, registered in `.mcp.json` (rec: the session spawns it, no port, no daemon) · HTTP beside the console on :8787 · both",
+    "default": "stdio (rec)",
+    "s": "open"
+   },
+   {
+    "q": "The TARS dials",
+    "options": "the ElevenLabs delivery dials (stability · style) already in judy.json, tuned in the console (rec: with the router ruled there is no system prompt to bake into) · a system prompt, written when a model ever replaces the router",
+    "default": "delivery dials (rec)",
+    "s": "open"
+   },
+   {
+    "q": "The PNG state set",
+    "options": "Papi's art against the 9/16 spec · keep the placeholder faces the loop runs on today (rec until art lands) · commission it",
+    "default": "placeholders until Papi's art lands",
+    "s": "held"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where JUDY came from: one transmission with everything in it, what was already sitting in the record before it was said, and what got ruled since.",
+   "strand": {
+    "last": "Papi spoke the whole ask in one stacked break-break (×4) and called boresight on it — a spoken loop, a specific model requirement, a persona, a voice, a face.",
+    "plan": "Find what already existed before building anything new, then rule the open calls one at a time.",
+    "you": "You named the ask, the model requirement, the persona, the voice register, and the face concept in one transmission, then kept ruling calls across two more sessions.",
+    "next": "The wire — the one call the console could not turn into a knob."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"I'd want it to be running lower because I'd want it to be responsive.\" — the model requirement: JUDY runs on the lowest/fastest Claude (Haiku 4.5), explicitly not Opus, while staying wired to the VS Code session, which stays on Opus.",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "Name RULED 9/16: JUDY, spelled out J-U-D-Y, superseding the provisional \"THE HANDLER\" — which came from Papi's own \"whoever is my handler.\"",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "Buttonhook the same day the voice call ruled: \"I actually got 11 labs. For Judy.\"",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "Wire RULED 9/16: \"let's just go all in on the MCP server… instead of having to build into it again.\"",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "Brain RULED 9/17: \"let's stay on the router.\"",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "Voice audition RULED 9/17: \"let's go with Blondie.\"",
+       "s": "done",
+       "when": "9/17"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "BOLO 26 (dictation dictionary, 9/3) is JUDY's listening half, already fully worked and shipped as _tools/dictation/ — faster-whisper on the 3090, the Command lexicon as initial prompt, SOP §8 replacements.",
+       "s": "done"
+      },
+      {
+       "t": "oscar-mike/lab-venture.md §Voice carries the speaking-half thinking — local RVC timbre conversion, w-okada for realtime — banked under an adult-content TOS constraint that does not bind JUDY, since a personal assistant is not adult content.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "Wire RULED 9/16: MCP server, all in — exposing brain.py's tools to the Opus VS Code session, tools already written for exactly that. Not built yet — next build.",
+       "s": "open"
+      },
+      {
+       "t": "Brain RULED 9/17: stay on the router — no API key, no local model, $0/month standing cost. Re-aims the wire from feeding a Haiku brain to exposing brain.py to Opus.",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "Voice RULED 9/16: Piper now, ElevenLabs eventually — and eventually arrived the same day. speak.py fronts sapi · piper · elevenlabs behind one say().",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "BOLO 26's route RULED BUILD and shipped 9/16 — closed; JUDY's call 3 closed with it.",
+       "s": "done",
+       "when": "9/16"
+      },
+      {
+       "t": "Input RULED push-to-talk, no wake word.",
+       "s": "done"
+      },
+      {
+       "t": "VOICE RULED 9/17: Blondie — Conversational (British), stability 0.35 / style 0.55 / speed 1.05, on eleven_turbo_v2_5.",
+       "s": "done",
+       "when": "9/17"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's task is the last piece that is ruled and not built: the wire from JUDY's tools to the VS Code session.",
+   "strand": {
+    "last": "Every other part of JUDY exists on the box: the ears, the brain, the mouth, the face, the console. The wire was ruled MCP on 9/16 and the brain ruled onto the router on 9/17, and together those say exactly what the wire is: brain.py's tools, exposed to the session.",
+    "plan": "Wrap the seven tools that already exist in an MCP server, register it, and prove it from this session. No new tools, no model, no key.",
+    "you": "You ruled MCP all in and the router, which means the wire costs nothing to run and carries nothing new to design. You have not yet said build.",
+    "next": "Build the MCP server; then the dials and the face art close on their own clock."
+   },
+   "task": "Build the wire — an MCP server that exposes brain.py's tools to the Opus VS Code session,",
+   "intent": "in order to give JUDY and the session one set of tools, written once, without the spoken loop inheriting Opus's model or its latency.",
+   "spoken": "\"let's just go all in on the MCP server… instead of having to build into it again.\" · \"let's stay on the router.\"",
+   "endstate": [
+    "`_tools/dictation/mcp.py` exists: a stdio MCP server whose tools are brain.py's seven, unchanged, registered in the project's `.mcp.json`.",
+    "This VS Code session calls each tool once and gets the spoken-form answer back — proven, not assumed.",
+    "judy.py still runs standalone on the router; the console's Wire panel reports the server as present.",
+    "Standing cost stays $0/month: no API key, no local model, no new dependency beyond the MCP SDK."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What has already shipped and what is still waiting: the console, the listening half, and the voice are done; the wire, the TARS dials, and the face art are open.",
+   "strand": {
+    "last": "Five calls were raised 9/16; the console turned three into knobs the same session, and the route call (BOLO 26) closed the same day.",
+    "plan": "Build the wire next — the tools brain.py already exposes need the MCP server to reach the Opus session.",
+    "you": "Bought and wired ElevenLabs the same session it was mentioned; ruled the brain onto the router the next day.",
+    "next": "Build the MCP server; then the TARS dials and the PNG art can close on their own schedule."
+   },
+   "main_effort": "Close the wire — the one open architecture question left: getting JUDY's voice layer to reach the Opus VS Code session without inheriting its model or its latency.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "Captured on a stacked break-break (×4), boresight called — the ask, the model requirement, the persona (TARS), the voice register (007 handler), and the face concept (PNG state swaps) all named in one transmission.",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 1,
+     "t": "Prior material found and folded in: BOLO 26 is JUDY's listening half, already fully worked; oscar-mike/lab-venture.md §Voice holds the speaking-half RVC/w-okada thinking.",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 2,
+     "t": "Console built the same session on Papi's word — _tools/dictation/console.py + console.html, local server on :8787, eight panels (Status · Ears · Codebook · Voice · Persona · Face · Wire · Log). Turns three of the four open calls into knobs Papi tunes rather than rules.",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 3,
+     "t": "BOLO 26's route RULED BUILD and shipped 9/16 — the ears exist. JUDY's call 3 closed.",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 4,
+     "t": "Voice RULED 9/16: Piper now, ElevenLabs eventually — and ElevenLabs integrated and wired the same session. speak.py fronts sapi · piper · elevenlabs behind one say(); official SDK 2.68.0; key handled for a PUBLIC repo (env var or gitignored _PRIVATE/elevenlabs.key, never judy.json).",
+     "s": "done",
+     "when": "9/16"
+    },
+    {
+     "n": 5,
+     "t": "ElevenLabs LIVE 9/17 — key on the box, 39 voices on the account, 6 British female. Measured 0.23–0.43s to synthesize a 3–8s line warm on eleven_turbo_v2_5, against Piper's 0.16s local.",
+     "s": "done",
+     "when": "9/17"
+    },
+    {
+     "n": 6,
+     "t": "VOICE RULED 9/17: Blondie — Conversational (British), stability 0.35 / style 0.55 / speed 1.05, on eleven_turbo_v2_5 — picked off a four-voice audition for being the most clipped of the cast. Emmaline · Amelia · Kira · Samara X · Alice stay in audition.py's CAST for a re-run.",
+     "s": "done",
+     "when": "9/17"
+    },
+    {
+     "n": 7,
+     "t": "Wire RULED 9/16: MCP server, all in. Brain RULED 9/17: stay on the router — no API key, no local model, $0/month standing cost. Re-aims the wire to expose brain.py's tools to the Opus VS Code session, already written for exactly that. Not built yet — next build.",
+     "s": "open"
+    },
+    {
+     "n": 8,
+     "t": "The TARS dials — whether built as real adjustable parameters or baked into one system prompt.",
+     "s": "open"
+    },
+    {
+     "n": 9,
+     "t": "The PNG state set — spec handed to Papi 9/16, awaiting art.",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "Where JUDY lives on disk: the ears, the console, the voice wiring, and the keys — nothing paid beyond the ElevenLabs account already on the box.",
+   "strand": {
+    "last": "The console and the voice wiring both shipped the same sessions they were asked for.",
+    "plan": "The wire (MCP server) is the next file that has to exist.",
+    "you": "You handed the console its colorway and hover rules; the files followed the same session.",
+    "next": "No new cost expected — the wire reuses brain.py's tools; the key is already handled for a public repo."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 56 — the venture as spoken, rulings appended across 9/16–9/17",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/",
+     "what": "JUDY's listening half (BOLO 26) — faster-whisper on the 3090, SOP §8 repair, the Command lexicon as initial prompt",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/console.py",
+     "what": "the JUDY console — local server on :8787, reads config, sees the mic, writes files, starts the daemon",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/console.html",
+     "what": "the eight-panel dashboard front end (Status · Ears · Codebook · Voice · Persona · Face · Wire · Log)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/brain.py",
+     "what": "the tool layer — seven tools over the repo (blocked · bolo · pmcs · effort · box · time · help) behind a keyword router; every answer written to be spoken. The same tools the MCP server will expose",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/judy.py",
+     "what": "the loop itself — hotkey or MIDI pad → ears → brain → mouth, with the face window swapping idle / listening / thinking / talking",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/midipad.py",
+     "what": "the second trigger — a learned MIDI pad drives the same two calls as the hotkey",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/speak.py",
+     "what": "fronts sapi · piper · elevenlabs behind one say(); PCM out wrapped to WAV so playback stays on one code path with Piper, no ffmpeg",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/judy.json",
+     "what": "holds persona / voice / face / wire settings; config.json stays the daemon's alone",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/elevenlabs.key",
+     "what": "gitignored fallback key location for the PUBLIC repo — env var preferred; console shows presence only, never the value",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/voice-auditions/",
+     "what": "the four-voice audition recordings behind the Blondie ruling",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/audition.py",
+     "what": "the six-voice CAST (Emmaline · Amelia · Kira · Samara X · Alice · Blondie) for a re-run",
+     "s": "done"
+    },
+    {
+     "path": "oscar-mike/dictation-dictionary.md",
+     "what": "the BOLO 26 card — BUILD vs INSTALL vs PAY, ruled BUILD and closed",
+     "s": "done"
+    },
+    {
+     "path": "oscar-mike/lab-venture.md",
+     "what": "§Voice — the speaking-half RVC / w-okada thinking, banked, not binding on JUDY",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "brain",
+     "v": "$0/month standing cost — stays on the router, no API key, no local model"
+    },
+    {
+     "k": "listening",
+     "v": "$0, local — faster-whisper on the 3090, no audio leaves the box (BOLO 26)"
+    },
+    {
+     "k": "voice",
+     "v": "ElevenLabs live 9/17 on the account already owned; Piper stays as the free offline fallback"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. This row is blocked on nothing but the word: every part exists, the two architecture rulings are in, and the wire is one evening of wrapping.",
+   "strand": {
+    "last": "Three calls were still open at the end of 9/17: the wire, the TARS dials, the PNG states. Only the wire is engineering.",
+    "plan": "One decider, one build order, one FRAGO when it lands.",
+    "you": "You are the only one who can say build, pick the transport, and hand over the face art.",
+    "next": "Charlie Mike on this sheet = build the wire. Nothing before it."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — whether the wire builds now, which transport, and whether the TARS dials stay as delivery dials or wait for a model. **Claude** — the server, the registration, the proof call per tool; adds no tool, no model, no key, no spend without the word.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Ruled, unbuilt.** The tools exist (brain.py), the loop exists (judy.py), the voice is live (Blondie on ElevenLabs), the router is ruled. The wire is the only piece with a ruling and no file behind it.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "**\"Charlie Mike\"** on this sheet builds the wire. **FRAGO 56** when the first tool answers from inside the session. The on-box indicator is the console's Wire panel: it reports the server present instead of laying out the trade.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "The Blondie voice ruling, 9/17.",
+    "plan": "Next entry lands when the wire builds.",
+    "you": "You opened it, ruled it, and kept ruling it across two sessions.",
+    "next": "The MCP server build."
+   },
+   "entries": [
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "Break-break ×4, boresight called (\"how copy\"): the ask for a spoken loop — Papi talks, it listens, it answers out loud — plus the model requirement (\"I'd want it to be running lower because I'd want it to be responsive\"), persona (TARS), voice register (007 handler), and face concept (PNG state swaps)."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Opened as BOLO 56, JUDY; found and folded in prior material — BOLO 26 is the listening half already fully worked, oscar-mike/lab-venture.md §Voice holds the speaking-half RVC/w-okada thinking; five calls raised."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "\"Can you create a dashboard… almost like a mod menu\" — the console built the same session: _tools/dictation/console.py + console.html, eight panels, turning three of the four calls into knobs."
+    },
+    {
+     "when": "9/16",
+     "who": "Papi",
+     "t": "Wire RULED: \"let's just go all in on the MCP server… instead of having to build into it again.\""
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "Voice RULED Piper now, ElevenLabs eventually; buttonhook the same session — \"I actually got 11 labs. For Judy\" — ElevenLabs integrated and wired: speak.py fronts sapi · piper · elevenlabs behind one say(), official SDK 2.68.0."
+    },
+    {
+     "when": "9/16",
+     "who": "Claude",
+     "t": "BOLO 26's route RULED BUILD and shipped the same session — the ears exist; JUDY's call 3 closed."
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "ElevenLabs LIVE — key on the box (51 chars, sk_, in gitignored _PRIVATE/), 39 voices on the account, 6 British female. Measured 0.23–0.43s to synthesize warm on eleven_turbo_v2_5."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "Brain RULED: \"let's stay on the router\" — no API key, no local model, $0/month standing cost; re-aims the wire to expose brain.py's tools to the Opus VS Code session."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "Voice audition ruled: \"let's go with Blondie\" — Conversational (British), stability 0.35 / style 0.55 / speed 1.05, on eleven_turbo_v2_5."
+    }
+   ]
+  }
+ ]
+}
