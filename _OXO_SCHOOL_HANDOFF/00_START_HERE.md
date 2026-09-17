@@ -24,7 +24,7 @@ The repo was searched exhaustively. Three commonly-used working names **do not e
 
 **The task: fuse these two lineages.** Section 4 explains why they fuse cleanly.
 
-> ✅ **RULED 2026-08-24 — the fused school's name: the Delta Coast Ultra School ("DCUS").** Chosen from an 8-name Ultra bench on Papi's directive that "Ultra School" carry the title, Southern Gothic register. Recommended connective tissue, still unruled: Red Hills Academy → DCUS as the Bishop-acquisition rebrand · "Inner Spiral" reverts to pure geography (the school's Middle-Bands address; retcons the Bible's single mention) · "Ultra School" as an institutional class (a Bishop chain, DCUS the flagship) · the Red Stick Creek stratum beneath Red Hills. Node: `_CANON_NODES/delta-coast-ultra-school.md` (in the repo; not in this self-contained bundle).
+> ✅ **RULED 2026-08-24 — the fused school's name: the Delta Coast Ultra School ("DCUS").** Chosen from an 8-name Ultra bench on Chief's directive that "Ultra School" carry the title, Southern Gothic register. Recommended connective tissue, still unruled: Red Hills Academy → DCUS as the Bishop-acquisition rebrand · "Inner Spiral" reverts to pure geography (the school's Middle-Bands address; retcons the Bible's single mention) · "Ultra School" as an institutional class (a Bishop chain, DCUS the flagship) · the Red Stick Creek stratum beneath Red Hills. Node: `_CANON_NODES/delta-coast-ultra-school.md` (in the repo; not in this self-contained bundle).
 
 ---
 

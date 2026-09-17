@@ -21,7 +21,7 @@ Launch **DISPO** (haiku) with the brief verbatim. It writes `dispositions.md`: o
 
 ## H2 · The ruling (the main line, ~22 lines read)
 
-Read `dispositions.md`. For each line, rule it or defer it to Papi when the card holds an open decision that is his (a ruling, a purchase, a send). The reply lists the rulings as a table: handle · disposition · where it went. Papi's word overrides any line.
+Read `dispositions.md`. For each line, rule it or defer it to Chief when the card holds an open decision that is his (a ruling, a purchase, a send). The reply lists the rulings as a table: handle · disposition · where it went. Chief's word overrides any line.
 
 ## H3 · Execute
 

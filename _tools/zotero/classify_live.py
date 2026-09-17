@@ -2,7 +2,7 @@
 """BOLO 18 stage 2, step 2: classify the items in inventory-live.json that have no catalog subject yet,
 using the approved 17-category RULES from _0.1_BVX_LEARN/_meta/classify.py (imported by text, the module is not importable).
 Writes: subject + confidence back into inventory-live.json (field `subject`, `subject_src` = catalog | rule | tag | none),
-and _0.1_BVX_LEARN/_meta/CLASSIFY-LIVE.md (the report + the unmatched queue for Papi's eyes).
+and _0.1_BVX_LEARN/_meta/CLASSIFY-LIVE.md (the report + the unmatched queue for Chief's eyes).
 
 Usage: python _tools/zotero/classify_live.py
 """
@@ -11,7 +11,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 META = os.path.join(ROOT, "_0.1_BVX_LEARN", "_meta")
 
-# Papi's own media-type / subject tags settle the subject before any title rule runs
+# Chief's own media-type / subject tags settle the subject before any title rule runs
 TAG2SUBJ = {"080007 - TABLE TOP GAME DESIGN": "GAM", "080006 - VIDEO GAME DESIGN": "GAM", "SEX": "MSX",
             "MILITARY SCIENCE": "MIL", "COMPUTER SCIENCE & WEBDEV": "TEC", "HEALTH & FITNESS": "FIT",
             "080009 - PHOTOGRAPHY": "VIS", "080002 - film & 080003 - television": "VIS", "080002 - film": "VIS",
@@ -56,7 +56,7 @@ def main():
     L = ["---", "id: BVX-LEARN.classify-live", "title: \"Classification of the live library\"", "type: report",
          f"generated: {datetime.date.today()}", "status: BOLO 18 stage 2 - step 2", "---", "",
          "# Classification of the live library", "",
-         "Subject source per item: the Dec-2023 catalog where it had one, else Papi's own tags, else the approved 17-category rules.", "",
+         "Subject source per item: the Dec-2023 catalog where it had one, else Chief's own tags, else the approved 17-category rules.", "",
          "| Source | Items |", "|---|---|"] + [f"| {k} | {v} |" for k, v in counts.most_common()]
     L += ["", "## By subject (all 1,031)", "", "| Subject | Items |", "|---|---|"] + [f"| {k} | {v} |" for k, v in subj.most_common()]
     L += ["", f"## Story side: {len(story)} CRE + LIT · {len(story) - len(story_unkeyed)} spine-keyed from tags · **{len(story_unkeyed)} still need a spine key** (step 2b: classifier by title, then a PS pass on the TOC of each)", ""]

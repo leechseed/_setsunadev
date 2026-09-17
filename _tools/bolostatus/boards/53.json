@@ -46,28 +46,28 @@
     "options": "open now, one session to draft · open after DOPE SHEET 50's ladder is ruled (rec) · leave tabled",
     "default": "after the ladder ruling; tabled until then",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: \"Open 53.\" Opened now, ahead of the ladder ruling."
+    "ruling": "RULED 9/15, Chief: \"Open 53.\" Opened now, ahead of the ladder ruling."
    },
    {
     "q": "The life-cycle read",
     "options": "iterative-incremental: 12207/15288's iterative model, agile's inspect-and-adapt (rec) · a design process (double diamond) · both: a design process inside an iterative life cycle",
     "default": "iterative-incremental, provisional; in force in v0.1 until you say otherwise",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: approved. Iterative-incremental stands; no longer provisional."
+    "ruling": "RULED 9/15, Chief: approved. Iterative-incremental stands; no longer provisional."
    },
    {
     "q": "Where it files",
     "options": "the BOLO 50 ladder beside the project flow (spoken) · SOP as a section · its own doctrine doc",
     "default": "filed 9/15 beside the project flow, rung STANDARD, provisional until the BOLO 50 ladder is ruled",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: approved. Beside the project flow in 05_OPERATIONS, rung STANDARD. Only the ladder itself remains BOLO 50's call."
+    "ruling": "RULED 9/15, Chief: approved. Beside the project flow in 05_OPERATIONS, rung STANDARD. Only the ladder itself remains BOLO 50's call."
    },
    {
     "q": "Promote or amend v0.1",
     "options": "accept as working, earns canon on two uses (rec) · amend a rule · strike a rule",
     "default": "working; earns canon on two uses",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: approved as working. Canon is earned on two uses, not declared (DOCTRINE 0, Invariant I)."
+    "ruling": "RULED 9/15, Chief: approved as working. Canon is earned on two uses, not declared (DOCTRINE 0, Invariant I)."
    }
   ]
  },
@@ -88,7 +88,7 @@
      "label": "The transmission · 9/12",
      "items": [
       {
-       "t": "**\"Let's fucking table that for now… just remember to put in the BOLO.\"** Papi tabled the question before it opened.",
+       "t": "**\"Let's fucking table that for now… just remember to put in the BOLO.\"** Chief tabled the question before it opened.",
        "s": "tabled"
       },
       {
@@ -105,7 +105,7 @@
        "s": "noted"
       },
       {
-       "t": "BOLO 50's standards register landed 9/11 (`_0.1_BVX_LEARN/LOCI/standards.locus.md` and `standards.register.md`), but the Command ladder itself — where this standard would file — is still Papi's call per DOPE SHEET 50.",
+       "t": "BOLO 50's standards register landed 9/11 (`_0.1_BVX_LEARN/LOCI/standards.locus.md` and `standards.register.md`), but the Command ladder itself — where this standard would file — is still Chief's call per DOPE SHEET 50.",
        "s": "open"
       }
      ]
@@ -127,7 +127,7 @@
    "kind": "mission",
    "plain": "The task and the reason.",
    "strand": {
-    "last": "Papi named the daily loop and asked whether it is a life cycle, then tabled it the same breath.",
+    "last": "Chief named the daily loop and asked whether it is a life cycle, then tabled it the same breath.",
     "plan": "One standard, written once, filed on the BOLO 50 ladder beside the project flow.",
     "you": "You said table it and remember it. That is the whole order so far.",
     "next": "The open. Nothing drafts before you speak it."
@@ -146,7 +146,7 @@
    "id": "E",
    "name": "Execution",
    "kind": "phases",
-   "plain": "Nothing is running. The only phase so far is the capture; the write-up waits on Papi reopening it.",
+   "plain": "Nothing is running. The only phase so far is the capture; the write-up waits on Chief reopening it.",
    "strand": {
     "last": "The question was captured and tabled in the same breath, 9/12.",
     "plan": "When it opens: write the Command's own standard for how it builds, filed on the BOLO 50 ladder beside the project flow.",
@@ -157,7 +157,7 @@
    "phases": [
     {
      "n": 0,
-     "t": "**The capture** — the question written down, tabled by Papi, filed to open beside the project flow on BOLO 50's ladder.",
+     "t": "**The capture** — the question written down, tabled by Chief, filed to open beside the project flow on BOLO 50's ladder.",
      "s": "done",
      "when": "9/12"
     },
@@ -243,7 +243,7 @@
      "label": "Who decides",
      "items": [
       {
-       "t": "**Papi** — the open · the life-cycle read · where it files. **Claude** — the draft, the outside citations, the filing on the ladder, this sheet.",
+       "t": "**Chief** — the open · the life-cycle read · where it files. **Claude** — the draft, the outside citations, the filing on the ladder, this sheet.",
        "s": "open"
       }
      ]
@@ -252,7 +252,7 @@
      "label": "The gate",
      "items": [
       {
-       "t": "**Tabled by Papi 9/12.** Nothing drafts until the open is spoken. The natural trigger is DOPE SHEET 50's ladder ruling: the standard needs a rung to sit on.",
+       "t": "**Tabled by Chief 9/12.** Nothing drafts until the open is spoken. The natural trigger is DOPE SHEET 50's ladder ruling: the standard needs a rung to sit on.",
        "s": "held"
       }
      ]
@@ -282,7 +282,7 @@
    "entries": [
     {
      "when": "9/12",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Opened then immediately tabled: \"let's fucking table that for now… just remember to put in the BOLO.\" The question: is the boresight → how-copy → build → FRAGO loop a design process or a software life cycle? Filed to open beside the project flow on BOLO 50's ladder."
     },
     {
@@ -292,7 +292,7 @@
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Open 53.\" The open, spoken the same session the sheet was built."
     },
     {
@@ -302,7 +302,7 @@
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Everything approved. Go, go, go. Proceed.\" All three open calls ruled; v0.1 accepted as working; the order in force."
     },
     {

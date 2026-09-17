@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """TRAFFIC — the separate window.
 
-Every text block Claude addresses to Papi is appended here, nothing else: no tool
+Every text block Claude addresses to Chief is appended here, nothing else: no tool
 narration, no status lines. The page renders to _tools/traffic/TRAFFIC.html and is
 republished to the fixed artifact URL recorded in SOP.md §7 rule 10.
 
@@ -26,7 +26,7 @@ HTML_OUT = HERE / "TRAFFIC.html"
 BLOCK = "<!-- block -->"
 
 HEADER = """---
-title: TRAFFIC — what Claude said to Papi, and nothing else
+title: TRAFFIC — what Claude said to Chief, and nothing else
 type: comms channel (SOP §7 rule 10)
 status: living — newest block first; never edited after the fact, only appended
 started: 2026-09-10
@@ -34,7 +34,7 @@ started: 2026-09-10
 
 # TRAFFIC
 
-The separate window. Only the text blocks addressed to Papi land here, in the order they were sent, newest first. No tool narration, no status lines. Add a block with `python _tools/traffic/traffic.py add <block.md> --session <name>`; the same command re-renders `_tools/traffic/TRAFFIC.html`, which republishes to the fixed artifact URL in SOP.md §7 rule 10.
+The separate window. Only the text blocks addressed to Chief land here, in the order they were sent, newest first. No tool narration, no status lines. Add a block with `python _tools/traffic/traffic.py add <block.md> --session <name>`; the same command re-renders `_tools/traffic/TRAFFIC.html`, which republishes to the fixed artifact URL in SOP.md §7 rule 10.
 
 """
 

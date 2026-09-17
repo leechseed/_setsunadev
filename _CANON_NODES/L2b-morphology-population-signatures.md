@@ -18,7 +18,7 @@ sources:
 links:
   - "[[L2b-morphology-gluteal]]"
   - "[[performer-register]]"
-capture_protocol: "⧗ = Claude development, strike or keep. Sourced claims carry researcher · year · field inline; everything else in this module is ⧗ until Papi rules."
+capture_protocol: "⧗ = Claude development, strike or keep. Sourced claims carry researcher · year · field inline; everything else in this module is ⧗ until Chief rules."
 bolo: 43
 created: 2026-09-10
 ---
@@ -134,7 +134,7 @@ Module 2 of L2b MORPHOLOGY. Module 1 ([L2b-morphology-gluteal](L2b-morphology-gl
 
 | Sub-signature | What it is | How it reads against the 13 | The tell |
 |---|---|---|---|
-| **Natural-athletic** | Crossover from the bikini, fitness-influencer and dance-floor populations; the loading fingerprint is inherited from whichever one | Cupola and Amphora on the female side; Dome and Vault on the male side (the register's lane P now carries men by Papi's ruling of 9/9) | Tissue markers of loading are present: a shelf that came from med/min, a glute-ham line, dips where the frame has `T2–3` at that fat level |
+| **Natural-athletic** | Crossover from the bikini, fitness-influencer and dance-floor populations; the loading fingerprint is inherited from whichever one | Cupola and Amphora on the female side; Dome and Vault on the male side (the register's lane P now carries men by Chief's ruling of 9/9) | Tissue markers of loading are present: a shelf that came from med/min, a glute-ham line, dips where the frame has `T2–3` at that fat level |
 | **Surgically-augmented** | **Fat graft (BBL):** autologous fat moved to the buttock and, commonly, into the trochanteric depression; subcutaneous placement only, per the ASERF task force after the mortality series (Mofid and colleagues, 2017, aesthetic surgery, *Aesthetic Surgery Journal*; the vault's parked reference records the mortality shift from about 1:3,000 to about 1:15,000 as technique changed and Florida's 2023 ultrasound-guidance mandate, both flagged there as leads to verify). **Implants:** a fixed silicone volume placed over or within the max, intramuscular in the Gonzalez method (Gonzalez, 2004, plastic surgery, *Aesthetic Plastic Surgery*) | A fat graft is a **FAT-layer override**: distribution drawn by the surgeon, and it fills dips, so a Corbel skeleton reads Cupola without the bone moving. An implant is a **PROJECTION-layer override**: high-set, hard-edged upper-pole volume with the lower pole and the fold unchanged, so it reads Dome or Cantilever above an unmodified under-butt | Inconsistency across layers. Projection without loading markers (no shelf from med/min, no glute-ham line); a hip:waist ratio beyond what the ilium supports, which the gluteal node already calls frame-limited; dips filled on a frame that shows `T3` on the lateral thigh above the graft; on implants, a superior edge or a pole mismatch |
 | **Slim-thick** | Narrow ribcage and upper body, very small waist, large glute and thigh volume. Two routes: the natural one is `I3 · F3` gynoid at moderate fat, the Amphora turned up; the surgical one is waist liposuction plus fat graft in the same procedure, the removed fat supplying the added volume | Amphora and Cantilever, exaggerated | The waist-frame consistency rule separates the routes; and the natural route carries thigh mass with the glute while the surgical one frequently does not |
 
@@ -150,7 +150,7 @@ Module 2 of L2b MORPHOLOGY. Module 1 ([L2b-morphology-gluteal](L2b-morphology-gl
 
 ## 5 · How a cell call works with this module
 
-Population first, because it is cheap and visible. The module supplies the prior range. Papi narrows to one cell from the tells. Three lines, on a hypothetical:
+Population first, because it is cheap and visible. The module supplies the prior range. Chief narrows to one cell from the tells. Three lines, on a hypothetical:
 
 ```
 1  POPULATION   wellness                         → prior I3 · F2–3 · T2–3 · PROJ u↑↑ l↑↑ · SHELF ↑↑ · FAT ↔ gynoid
@@ -160,7 +160,7 @@ Population first, because it is cheap and visible. The module supplies the prior
 
 - **Line 1** is the only thing the caller has to know before looking: which population. The rest of the line is copied from §2.
 - **Line 2** is the narrowing. Each tell moves one axis or confirms the prior. Dips at a known fat level are the `T` tell; the widest point relative to the crest is the `F` tell; the top line and the waist are the `I` tell.
-- **Line 3** is what gets written into the register's staged morphology-cell column and the BOLO 23 anchors: cell · population · nearest type · override flag with its label. The performer register (`_CANON_NODES/performer-register.md`) and the physique set were both waiting on Papi's calls; this is the format that makes each one a cheap ask.
+- **Line 3** is what gets written into the register's staged morphology-cell column and the BOLO 23 anchors: cell · population · nearest type · override flag with its label. The performer register (`_CANON_NODES/performer-register.md`) and the physique set were both waiting on Chief's calls; this is the format that makes each one a cheap ask.
 
 Two habits. A performer who fits no population gets `POPULATION: none` and the general prior (all 27 cells), which is honest and still useful. A performer who fits two (a bikini competitor who dances in heels) gets both, and the loading vectors are added, not averaged.
 
@@ -217,11 +217,11 @@ Mirrors the gluteal node's §9 discipline. Peer-reviewed beats books beats rules
 
 ## 7 · Open
 
-Decisions for Papi, tied to this module only.
+Decisions for Chief, tied to this module only.
 
 1. **A female Column.** Ballet lands on the male Column with no female analog among the seven. Name one (architectural register, narrow-vertical read) or rule that ballet stays unnamed mid-cell.
 2. **The override flag as notation.** Adopt `override: none · fat-graft · implant · unknown` as a fifth field on every cell call, or fold it into the CONDITION layer. If adopted, rule a compact form for the register column (candidate: `I3·F3·T2 ⊕FG`).
-3. **Priors on the register: ranges or points.** When the staged morphology-cell pass runs on the performer register, does a row get the population's range (line 1) or Papi's single-cell call (line 3)? Ranges are cheap and honest; points are what the taxonomy engine's cell heat needs.
+3. **Priors on the register: ranges or points.** When the staged morphology-cell pass runs on the performer register, does a row get the population's range (line 1) or Chief's single-cell call (line 3)? Ranges are cheap and honest; points are what the taxonomy engine's cell heat needs.
 4. **Heels / twerk: one population or two.** Dance-floor twerk, pole, and stage heels load differently (pelvic-tilt cycles · adductor and upper body · lordosis under load). Keep them as one carriage-led signature or split on loading.
 5. **The wellness / override line, ruled in.** Confirm that the physique watchlist's four labels ride on every real-person cell call and that an override is written only when Documented. This module assumes it; it is not yet ruled outside the watchlist.
 6. **The male adult lane.** Ride the three sub-signatures as written, or wait for the register's male rows to need a fourth.

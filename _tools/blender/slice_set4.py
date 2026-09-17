@@ -47,7 +47,7 @@ def clear_scene():
 
 MPFB_DATA = os.path.join(os.environ.get("APPDATA", ""), "Blender Foundation", "Blender", "4.5", "extensions", ".user", "user_default", "mpfb", "data")
 MPFB_SKIN = os.path.join(MPFB_DATA, "skins", "young_caucasian_female", "young_caucasian_female.mhmat")
-# MakeHuman macro sliders: gender 0 = female · age 0.42 ≈ 21 years (0.1875 = 11, 0.5 = 25) · the rest provisional, Papi sculpts
+# MakeHuman macro sliders: gender 0 = female · age 0.42 ≈ 21 years (0.1875 = 11, 0.5 = 25) · the rest provisional, Chief sculpts
 MACRO = {"gender": 0.0, "age": 0.42, "muscle": 0.5, "weight": 0.5, "proportions": 0.6, "height": 0.5,
          "cupsize": 0.6, "firmness": 0.7, "race": {"asian": 0.0, "caucasian": 1.0, "african": 0.0}}
 
@@ -69,7 +69,7 @@ def make_subject():
                 print("skin .mhmat not found:", MPFB_SKIN)
         except Exception as e:
             print("mpfb skin skipped:", e)
-        # body parts from the CC0 pack: eyes · brows · lashes · a placeholder hair (Papi picks the real look in the Gate 3 evenings)
+        # body parts from the CC0 pack: eyes · brows · lashes · a placeholder hair (Chief picks the real look in the Gate 3 evenings)
         for sub, atype, mtype in (("eyes/high-poly/high-poly.mhclo", "Eyes", "PROCEDURAL_EYES"),
                                   ("eyebrows/eyebrow001/eyebrow001.mhclo", "Eyebrows", "MAKESKIN"),
                                   ("eyelashes/eyelashes01/eyelashes01.mhclo", "Eyelashes", "MAKESKIN"),

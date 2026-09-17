@@ -4,7 +4,7 @@ category: genre_system
 version: 0.1.2
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Papi: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Papi: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names are house coinage awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
+status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Chief: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Chief: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names are house coinage awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
 rung: standard
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_medium_grammars", "ssot_01_texture_system", "ssot_03_setting_system", "ssot_04_plot_system", "ssot_02_character_systems_vertical_slice"]
 trunk: BLACK
@@ -117,7 +117,7 @@ Neale's law is that a genre is a process, not a corpus: industrial, marketing, c
 
 ## PART A · THE GENRE SLICE, twelve layers, mirror of the character, setting, plot and texture stacks
 
-Same architecture as the 12-Layer Character Database, the SETTING SLICE, the PLOT SLICE, and the TEXTURE SLICE: surface to depth to structural function, G12 fed independently from the storyform exactly as L12, S12, P12, and T12 are. **Layer names are house coinage, provisional, awaiting Papi's ruling**, same status as every other stack's layer names.
+Same architecture as the 12-Layer Character Database, the SETTING SLICE, the PLOT SLICE, and the TEXTURE SLICE: surface to depth to structural function, G12 fed independently from the storyform exactly as L12, S12, P12, and T12 are. **Layer names are house coinage, provisional, awaiting Chief's ruling**, same status as every other stack's layer names.
 
 | Layer | Name | Question it answers | Source | Field it writes |
 |---|---|---|---|---|
@@ -197,7 +197,7 @@ Selbo's overriding genre must clear its own criteria in full; a supporting genre
 | **G11** | Mid-budget serial, YA-adjacent shelf; marked unknown where the distills say nothing ⧗ |
 | **G12** | `storyform_id: oxo_primary_v1`; appreciations arena, style, and feel carried from the spine ⧗ |
 
-This table is a decision menu with defaults, not a ruling: every line above is marked ⧗, grounded only in what the six new distills' inferences and the DCUS setting instance already say, and nothing here is canon until Papi strikes or keeps it, line by line.
+This table is a decision menu with defaults, not a ruling: every line above is marked ⧗, grounded only in what the six new distills' inferences and the DCUS setting instance already say, and nothing here is canon until Chief strikes or keeps it, line by line.
 
 ---
 
@@ -223,10 +223,10 @@ The L7 shelf holds 174 items keyed 9/16 (BOLO 18), nine distilled to date, this 
 
 ## OPEN
 
-Built from the six wave distills' "For the genre system" bullets. **RULED 2026-09-16 (Papi: "genre calls go"): all thirteen as recommended.** Twelve layers hold; the names and the OXO contract bench stay provisional; Truby's fourteen become the spine of the GENRE CARD register with the other three vocabularies as aliases; the four clauses become required card fields; the rest apply at the next bump or pass to their home docs as recommended. Provisional a week like every ruling.
+Built from the six wave distills' "For the genre system" bullets. **RULED 2026-09-16 (Chief: "genre calls go"): all thirteen as recommended.** Twelve layers hold; the names and the OXO contract bench stay provisional; Truby's fourteen become the spine of the GENRE CARD register with the other three vocabularies as aliases; the four clauses become required card fields; the rest apply at the next bump or pass to their home docs as recommended. Provisional a week like every ruling.
 
 1. **Twelve G-layers or fewer.** The mirror against the character, setting, plot, and texture stacks all lands at twelve; a genre model could in principle collapse to fewer axes, but no distill's fill needed less this wave. *Ruled 9/16, as recommended:* twelve, the mirror holds.
-2. **The twelve names.** House coinage, the same provisional status as every other stack's layer names, awaiting Papi's ruling. *Ruled 9/16, as recommended:* bench on request, no ruling forced this wave.
+2. **The twelve names.** House coinage, the same provisional status as every other stack's layer names, awaiting Chief's ruling. *Ruled 9/16, as recommended:* bench on request, no ruling forced this wave.
 3. **Four vocabularies, one register.** Build the Command's GENRE CARD register from Truby's fourteen genres, carrying Selbo's, Coyne's, and Snyder's names as aliases rather than picking one list and losing the others' coverage. *Ruled 9/16, as recommended:* yes, Truby as the spine of the register.
 4. **The contract's four clauses beyond the convention list.** Argument, stance, delivery, and industrial life as required GENRE CARD fields, not optional color, since each of the six new distills supplies a clause the trade's convention lists never named. *Ruled 9/16, as recommended:* yes.
 5. **A per-scene genre-load metric and Selbo's percentage balance on the plot card.** Selbo's scene-count percentage audit is a ready QA pass distinct from Coyne's value-turn tracking; a full per-scene metric is a heavier build than this wave needs. *Ruled 9/16, as recommended:* hold the metric, adopt the balance on the contract.
@@ -236,7 +236,7 @@ Built from the six wave distills' "For the genre system" bullets. **RULED 2026-0
 9. **Meta-genre, kairotic coordination and typification.** Bawarshi and Reiff's apparatus for a genre's social life beyond the contract; a style bible or a showrunner's tone memo is exactly a meta-genre, while the other two terms describe timing and cognition, not yet used anywhere in the Command. *Ruled 9/16, as recommended:* meta-genre as the style-bible's home, the other two noted.
 10. **Todorov's expiry: a historicity note on a genre card.** A rival vocabulary can fully absorb a genre's content and end it, per Todorov's account of the fantastic's death; no field currently tracks when a convention set stops doing work a text cannot do without it. *Ruled 9/16, as recommended:* a field, provisional.
 11. **Truby's dystopia mechanism as a setting-touchpoint candidate.** No current field names the structural claim a genre's world makes about freedom and restriction, apparent choice over hidden restriction; P10 records which obligatory beat fires, not this claim itself. *Ruled 9/16, as recommended:* pass to the setting doc's OPEN.
-12. **The OXO genre contract.** The bench filled above, twelve proposed lines against a work with no ruled genre contract at all. *Ruled 9/16, as recommended:* Papi strikes or keeps line by line.
+12. **The OXO genre contract.** The bench filled above, twelve proposed lines against a work with no ruled genre contract at all. *Ruled 9/16, as recommended:* Chief strikes or keeps line by line.
 13. **Neale on labels: industry, marketing, and critical labels as three fields, not one.** The L7 ring's genre word has treated "genre" as one slot; Neale's own case, melodrama's opposite trade and critical meanings, shows the collapse breaks on a real example every time. *Ruled 9/16, as recommended:* yes, that is G1.
 
 14. **[[the-ingredient-triad|The ingredient triad]] as a G3 sub-field with fixed cardinality 3.** [[BVX.1125]]'s three required elements per genre, always exactly three, is a portable completeness test G3 CONTRACT does not yet enforce as a rule; the closest existing field holds Coyne's obligatory-scene lists and Selbo's component lists but no fixed-cardinality rule. *Recommendation:* adopt at the next bump.
@@ -247,4 +247,4 @@ Built from the six wave distills' "For the genre system" bullets. **RULED 2026-0
 
 - **0.1.2, 2026-09-16.** The drop-folder intake folded in (Brody, Aristotle): two new GENRE × LIBRARY rows; sources gained BVX.1125, BVX.1126; two OPEN calls added (14-15), unruled. Slice unchanged.
 - **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("genre calls go"): twelve layers hold; Truby's fourteen as the register's spine with three alias vocabularies; the four contract clauses as required card fields; the balance adopted, the load metric held; mode to the medium grammars doc; the contract state track at the next bump; Neale's keying rule adopted; the dystopia mechanism passed to the setting doc; the OXO contract stays a bench. No slice or instrument change tonight.
-- **0.1.0, 2026-09-16.** First genre_system document, written on Papi's order ("genre wave go", BOLO 18) from the L7 shelf's nine distills: the four words and four vocabularies taxonomy, twelve-layer GENRE SLICE mirroring the character, setting, plot, and texture stacks, the GENRE CARD and GENRE CONTRACT instruments, OXO benched as a proposed genre contract, not a ruling. Layer names, count, and every OXO value provisional pending Papi's ruling.
+- **0.1.0, 2026-09-16.** First genre_system document, written on Chief's order ("genre wave go", BOLO 18) from the L7 shelf's nine distills: the four words and four vocabularies taxonomy, twelve-layer GENRE SLICE mirroring the character, setting, plot, and texture stacks, the GENRE CARD and GENRE CONTRACT instruments, OXO benched as a proposed genre contract, not a ruling. Layer names, count, and every OXO value provisional pending Chief's ruling.

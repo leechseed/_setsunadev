@@ -1,10 +1,10 @@
 ---
 entity: "Creator case — SpaceGhost (Kari Keone) (candidate: 'the NASA girl')"
 entity_id: creator_case_spaceghost
-kind: creator case study — CANDIDATE identification for a performer Papi recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
+kind: creator case study — CANDIDATE identification for a performer Chief recalled by story, not name ("used to be an engineer, NASA or a defense company, then decided to do this"); public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin)
 trunk: ORANGE
-status: STRUCK 2026-09-10 (spoken) — Papi named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Papi; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom." · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
+status: STRUCK 2026-09-10 (spoken) — Chief named the NASA girl: **Rebel Rhyder** ([[creator-case-rebel-rhyder]]). This node stays as the receipt of the search and never goes on the register. Was: CANDIDATE 2026-09-10 — MEDIUM confidence as a memory collision (engineer + "Space" in the handle); NOT confirmed by Chief; NOT on the performer register until he rules. The other candidate is [[creator-case-mercedes-carrera]]. Of the two, this is the one that fits "solo creator, started from the bottom." · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md"
 links:
   - "[[performer-register]]"
@@ -17,7 +17,7 @@ updated: 2026-09-10
 
 **The identification.** Kari "Space Ghost" Keone is a solo OnlyFans/Fansly creator who, in her own words (X, 2024-07-15): *"I'm an IT engineer and data analyst of 15 years. My last job was at Netflix. I make porn now instead of working 70 hour weeks."* **The NASA / aerospace / defense check is answered: no.** Not one first-party surface (two X bios, Bluesky bio, Tumblr résumé, Substack, the July 2024 tweet) nor any secondary source mentions NASA, aerospace, or a defense contractor. Everything "space" about her is the handle — Space Ghost is the Hanna-Barbera character; her display names ("Anung Un Drama", "Tad Ghostal"), her Fansly tiers (Brak / Zorak / Moltar) and her link-hub title ("Space Ghost Coast to Coast") are all that cartoon. The only government-adjacent claim is an unsourced aggregator line about the U.S. Forest Service. **Most likely a memory collision**: "engineer" + a handle with Space in it. (One more collision candidate surfaced: Kari Bingen, a former Deputy Under Secretary of Defense for Intelligence and space-policy analyst — a different person entirely, but a plausible "Kari + defense + space" source for the memory.)
 
-**Why she is still here.** She is exactly the shape Papi described otherwise: a solo creator with a serious prior career who started from zero in late 2023 and grew an 18+ account to 84K in three years, no agency, running it herself. If the NASA detail is the drift, she is the person.
+**Why she is still here.** She is exactly the shape Chief described otherwise: a solo creator with a serious prior career who started from zero in late 2023 and grew an 18+ account to 84K in three years, no agency, running it herself. If the NASA detail is the drift, she is the person.
 
 **Confidence.** fxtwitter / Fansly API / Bluesky API / Linktree / Substack HIGH (fetched 2026-09-10) · the July-2024 tweet text = caller-supplied, not re-fetchable this run · "$401K in 4 months" LOW (aggregator-only) · Tumblr résumé HIGH for what it says, dated Feb 2022.
 

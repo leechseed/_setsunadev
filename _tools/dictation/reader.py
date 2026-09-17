@@ -1,10 +1,10 @@
 """
 reader.py — session voice. JUDY reads the VS Code session aloud as it is written.
 
-BOLO 56, FRAGO 9/17 ("session voice"). Papi talks into the chat, Fable answers in
+BOLO 56, FRAGO 9/17 ("session voice"). Chief talks into the chat, Fable answers in
 the chat, and this follows the session's transcript on disk and speaks every block
 Fable writes, sentence by sentence, as it lands — she starts on the first sentence
-while the third is still being written. A new turn from Papi cuts her off and
+while the third is still being written. A new turn from Chief cuts her off and
 plays an acknowledgment so the wait has a voice.
 
     python reader.py                 # follow the newest session, speak it
@@ -98,7 +98,7 @@ def parse(line):
         if texts:
             return ("assistant", "\n\n".join(texts))
     if t == "user" and d.get("promptSource"):
-        # a real prompt from Papi; injected skill text and tool results carry no promptSource
+        # a real prompt from Chief; injected skill text and tool results carry no promptSource
         if isinstance(c, str):
             return ("user", c)
         if isinstance(c, list):

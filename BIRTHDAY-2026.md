@@ -7,7 +7,7 @@ updated: 2026-08-21
 budget: 1200 USD
 ---
 
-> **RULING 2026-08-21:** Plan A (Cabanas, Oct 5–13) **cancelled by Papi** — no PTO request in the first months of the new job; best-standing doctrine wins. **All research below is preserved deliberately**: this file is now (a) the pickup point for whenever a real window opens, and (b) **source material for a possible BLACK/ORANGE fictional tale** — a researched trip that never happened, narrative model crafted after Papi's own. (Converges with the approved pseudonym-codebook-as-fiction device and Route E's research↔fiction axis.)
+> **RULING 2026-08-21:** Plan A (Cabanas, Oct 5–13) **cancelled by Chief** — no PTO request in the first months of the new job; best-standing doctrine wins. **All research below is preserved deliberately**: this file is now (a) the pickup point for whenever a real window opens, and (b) **source material for a possible BLACK/ORANGE fictional tale** — a researched trip that never happened, narrative model crafted after Chief's own. (Converges with the approved pseudonym-codebook-as-fiction device and Route E's research↔fiction axis.)
 >
 > **Plan B is open:** something inside the natural off-day corridor (Sun ~04:30 → Wed ~18:00, zero PTO). Note: the *original* Space Coast shift-to-shift plan in this file was designed for exactly that corridor and needs no PTO — it's a live Plan B candidate as-is.
 
@@ -112,7 +112,7 @@ Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the 
 
 **Product contrast vs C:** Island House = the resort IS the scene (24hr cruise complex, $99 base rooms). Pineapple Point = luxury base in a scene-rich city. Same week, different center of gravity.
 
-**Candidate shortlist (rated 2026-08-16, from Papi's app list):** ① **Cabanas Guesthouse & Spa** (Wilton Manors) — **RULED PLAN A**: on-site clothing-optional pool + sauna, walk to the strip, zero-Uber days. ② **Grand Resort & Spa** — beach-first alternative, first fallback. ③ Pineapple Point — best grounds, pays twice (rate + rides). ④ Big Coconut — budget seat, Uber-dependent. ⑤ ~~Hôtel Gaythering (Miami Beach)~~ — standing Miami veto holds. **Key West (C) shelved for a better day, per Papi.**
+**Candidate shortlist (rated 2026-08-16, from Chief's app list):** ① **Cabanas Guesthouse & Spa** (Wilton Manors) — **RULED PLAN A**: on-site clothing-optional pool + sauna, walk to the strip, zero-Uber days. ② **Grand Resort & Spa** — beach-first alternative, first fallback. ③ Pineapple Point — best grounds, pays twice (rate + rides). ④ Big Coconut — budget seat, Uber-dependent. ⑤ ~~Hôtel Gaythering (Miami Beach)~~ — standing Miami veto holds. **Key West (C) shelved for a better day, per Chief.**
 
 ---
 
@@ -120,7 +120,7 @@ Luxury gay men's guesthouse (Victoria Park) as base camp; the city supplies the 
 
 **Cabanas Guesthouse & Spa, Wilton Manors · Mon Oct 5 → Tue Oct 13 — 8 nights, GOLD ruling 2026-08-16 (pending PTO) · direct bus both ways (Mon out / Tue back) · Sunday Oct 4 = home rest day post-shift**
 
-**The Full Experience checklist:** pool/sun/saunas/cock (on-site) · Haulover nude day (full setup) · Sebastian St gay beach · Club Fort Lauderdale (gym-in-bathhouse — converges the naked-gym itch) · massage · cruising (apps + first-night bartender recon on the Drive) · Wilton strip nights · souvenir at Fetish Factory + Pride Factory · show night (Boardwalk/Lips) · Sunday Funday finale · wear program vacation edition. `[QoS targeting — bracket pending Papi confirm]`
+**The Full Experience checklist:** pool/sun/saunas/cock (on-site) · Haulover nude day (full setup) · Sebastian St gay beach · Club Fort Lauderdale (gym-in-bathhouse — converges the naked-gym itch) · massage · cruising (apps + first-night bartender recon on the Drive) · Wilton strip nights · souvenir at Fetish Factory + Pride Factory · show night (Boardwalk/Lips) · Sunday Funday finale · wear program vacation edition. `[QoS targeting — bracket pending Chief confirm]`
 
 | Day | Anchor | Night A / B |
 |---|---|---|

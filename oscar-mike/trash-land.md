@@ -20,7 +20,7 @@ open-decision: "the seven open rulings in `_CANON_NODES/oxo-trash-land-seed.md` 
 ## Resume
 
 1. Open the node's §Open and rule in any order; the name bench is first because everything else names it.
-2. Cuisine row (S3/S6/S8) if Papi wants the mirror.
+2. Cuisine row (S3/S6/S8) if Chief wants the mirror.
 
 ## Related
 

@@ -4,4 +4,4 @@
 
 Working state lives **outside this repo** (internal-only class, per Primed Protocol precedent): `Desktop\ULTRASIN-gbd-plan-DRAFT.md`
 
-**Resumes on:** Papi's review of the draft → "log it" → registry §G/§H + STATE + BOLO 11 close. Provisional culinary phase names await ruling.
+**Resumes on:** Chief's review of the draft → "log it" → registry §G/§H + STATE + BOLO 11 close. Provisional culinary phase names await ruling.

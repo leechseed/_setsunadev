@@ -4,7 +4,7 @@ entity_id: creator_case_lexa_lite
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); half-blocked (Pornhub side unreadable from the session); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
+status: DELIVERED 2026-09-10 — researched on Chief's order (spoken 9/10); half-blocked (Pornhub side unreadable from the session); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Lexa Lite · C · M·X · 2023 (on the register since the 2023 creator case studies)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -18,7 +18,7 @@ updated: 2026-09-10
 
 **Bottom line.** No interviews, podcasts, articles, or studies about her exist anywhere reachable. The only hard, first-party data came from Fansly's public account API. Pornhub, OnlyFans, X, Reddit, and (in this run) both web archives were blocked, so the Pornhub short-clip strategy — the reason for the 2023 note — could not be re-verified from source. It was, however, **confirmed on a second platform**: the clip-duration distribution on her Fansly wall is the same pattern.
 
-**Papi's context.** On the register since 2023 (sources M + X — the "most influential porn stars 2025" list and the 2023 creator case studies), lane C. The 2023 note, verbatim: *"unique content strategy: short 1–2 min uploads, more value than expected; cross-utilizes as compilations; moodboard images lexalite / lexalite2."* In Stash as Lexa Lite (id 1343): 4 attributed scenes, 2 five-star. An OnlyFans rip (109 images / 98 videos) sits on disk under `pern/`, 65 files path-matched, unattributed.
+**Chief's context.** On the register since 2023 (sources M + X — the "most influential porn stars 2025" list and the 2023 creator case studies), lane C. The 2023 note, verbatim: *"unique content strategy: short 1–2 min uploads, more value than expected; cross-utilizes as compilations; moodboard images lexalite / lexalite2."* In Stash as Lexa Lite (id 1343): 4 attributed scenes, 2 five-star. An OnlyFans rip (109 images / 98 videos) sits on disk under `pern/`, 65 files path-matched, unattributed.
 
 **Confidence.** Fansly API HIGH (raw JSON, 2026-09-07) · snowflake-decoded dates MEDIUM (±hours) · *snippet* LOW.
 
@@ -42,7 +42,7 @@ Fansly `profileSocials` is empty — the Fansly account ties to the Pornhub/OF p
 - **2020-12-04** @lexalite2 already tweeting (tweet ID 1334956182088409089 decodes to this date; body unfetchable) — MEDIUM.
 - **2021-08-25 03:07 UTC** Fansly avatar + banner uploaded → account live — HIGH.
 - **2021-08-29** paid "Subscription" tier + 30/90/180-day plans + a promo created (~4 days after signup) — MEDIUM (snowflake).
-- **2023** the short-clip + compilation strategy on Pornhub (Papi's own note; not re-verified).
+- **2023** the short-clip + compilation strategy on Pornhub (Chief's own note; not re-verified).
 - **~2025-06-08** "Posts" wall created; **~2025-06-28** "Full VIP access" $69 tier + "Full videos" wall — a paid-tier restructure — MEDIUM.
 - **2026-06-01 → 09-07** 15 Fansly posts (~1.1/week) — HIGH.
 - **2026-07-12 → 2027-02-20** $6.99 first-month promo window, one use per subscriber — HIGH.
@@ -71,7 +71,7 @@ Unit note: Fansly stores prices in **thousandths of a dollar** (calibrated: Amou
 
 ## 5 · Growth tactics
 
-- **Platform stacking on one handle** (Pornhub → X → Fansly → OnlyFans), so tube discovery resolves to paid pages by name. (Handle consistency verified; the Pornhub end from Papi's notes.)
+- **Platform stacking on one handle** (Pornhub → X → Fansly → OnlyFans), so tube discovery resolves to paid pages by name. (Handle consistency verified; the Pornhub end from Chief's notes.)
 - **Teaser-to-full ladder** on Fansly: sub-minute clips public, long-form behind a separate wall at 4.3× the base price. (Verified.)
 - **Discount ladder + one-shot promo**: 25/35% multi-month, $6.99 hook to convert tube/X traffic. (Verified.)
 - Reddit, SFW funnels, collabs, contests, viral moments: **no evidence found** (Reddit blocked; nothing surfaced elsewhere).

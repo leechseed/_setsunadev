@@ -255,7 +255,7 @@
           "label": "Who decides",
           "items": [
             {
-              "t": "**Papi** — which of the eight. **Claude** — the build.",
+              "t": "**Chief** — which of the eight. **Claude** — the build.",
               "s": "open"
             }
           ]
@@ -294,7 +294,7 @@
       "entries": [
         {
           "when": "9/11",
-          "who": "Papi",
+          "who": "Chief",
           "t": "\"What are some possible improvements… what's the norm, what's hot on Reddit? Consult and give me some ideas.\""
         },
         {
@@ -304,7 +304,7 @@
         },
         {
           "when": "9/11",
-          "who": "Papi",
+          "who": "Chief",
           "t": "\"Create another BOLO for the dashboards consult.\" Captured as 47; this sheet built."
         }
       ]

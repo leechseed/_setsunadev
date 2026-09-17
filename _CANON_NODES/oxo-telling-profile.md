@@ -20,7 +20,7 @@ links:
 
 # OXO TELLING PROFILE · series instance (all answers ⧗)
 
-**What this is.** The discourse twin of the storyform, instanced for the ruled medium. The medium law (Module 4): a storyform survives adaptation, a Telling Profile does not. So every question below is asked as *what the choice means on screen*, not on the page. **Canon inputs:** Failure/Good · Tori = Change/Stop/Do-er MC (Activity/Understanding) · Anna = IC, "a demonstration, not an argument" · OS = Situation/The Past, Consequence = Memories · tone RULED 007/Kojima blockbuster sincerity (the Drop, 8/26) · the six movements and their palette · P1/P2 Modern Poetics. Every ⧗ line is a Claude draft for Papi to strike or keep.
+**What this is.** The discourse twin of the storyform, instanced for the ruled medium. The medium law (Module 4): a storyform survives adaptation, a Telling Profile does not. So every question below is asked as *what the choice means on screen*, not on the page. **Canon inputs:** Failure/Good · Tori = Change/Stop/Do-er MC (Activity/Understanding) · Anna = IC, "a demonstration, not an argument" · OS = Situation/The Past, Consequence = Memories · tone RULED 007/Kojima blockbuster sincerity (the Drop, 8/26) · the six movements and their palette · P1/P2 Modern Poetics. Every ⧗ line is a Claude draft for Chief to strike or keep.
 
 **The one-line profile ⧗:** *No human narrator. The Feed speaks; Tori sees. The past is earned, never given. Cut like a racing film, glow like a scoreboard, mean every word.*
 

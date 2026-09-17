@@ -3,7 +3,7 @@ parked: 2026-09-01
 title: The Darkroom & Reject Radar
 handle: darkroom radar
 tags: [corpus, tooling, ORANGE, pointer-only (all tooling in `_PRIVATE/taxonomy_engine/`, corpus local-only)]
-status: parked — radar HOT, 1.0 acceptance pass pending (Papi's word is the stamp)
+status: parked — radar HOT, 1.0 acceptance pass pending (Chief's word is the stamp)
 open-decision: none blocking — resume is a working session, not a ruling
 ---
 

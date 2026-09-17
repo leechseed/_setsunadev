@@ -4,7 +4,7 @@ category: texture_system
 version: 0.1.1
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Papi: \"texture calls go\"); twelve layers hold, names and the OXO bench stay provisional. v0.1.0 2026-09-16 (BOLO 18 texture wave, Papi: \"texture wave go\"): written from the TEXTURE shelf; the twelve T-layer names are house coinage awaiting ruling; the OXO telling profile instanced as a bench, not a ruling; provisional"
+status: "v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Chief: \"texture calls go\"); twelve layers hold, names and the OXO bench stay provisional. v0.1.0 2026-09-16 (BOLO 18 texture wave, Chief: \"texture wave go\"): written from the TEXTURE shelf; the twelve T-layer names are house coinage awaiting ruling; the OXO telling profile instanced as a bench, not a ruling; provisional"
 rung: standard
 dependencies: ["ssot_01_texture_layer", "ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_medium_grammars", "ssot_03_setting_system", "ssot_04_plot_system", "ssot_02_character_systems_vertical_slice"]
 trunk: BLACK
@@ -116,7 +116,7 @@ The layer doc's Ten Questions, T1 through T10, restated here as a compact table 
 
 ## PART A · THE TEXTURE SLICE, twelve layers, mirror of the character, setting and plot stacks
 
-Same architecture as the 12-Layer Character Database, the SETTING SLICE, and the PLOT SLICE: surface to depth to structural function, T12 fed independently from the storyform exactly as L12, S12, and P12 are. **Layer names are house coinage, provisional, awaiting Papi's ruling**, same status as the P-layer and S-layer names.
+Same architecture as the 12-Layer Character Database, the SETTING SLICE, and the PLOT SLICE: surface to depth to structural function, T12 fed independently from the storyform exactly as L12, S12, and P12 are. **Layer names are house coinage, provisional, awaiting Chief's ruling**, same status as the P-layer and S-layer names.
 
 | Layer | Name | Question it answers | Source | Field it writes |
 |---|---|---|---|---|
@@ -185,7 +185,7 @@ Kempton's seven genre registers are the readiest source for that register slot, 
 | **T11** | M1 prose with an M3 serial grammar |
 | **T12** | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Situation, the Past |
 
-Every value above is marked ⧗ and grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and Southern Gothic register ruled on the DCUS instance, the rename lattice, Red Stick Creek to Red Hills to DCUS, as S5 SCAR paratext ([../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). The layer doc's house finding stands without qualification: OXO has no ruled Telling Profile, no prose exists, and the whole discourse configuration is an unmade decision set. This table is that decision menu, filled with defaults for Papi to strike or keep line by line, not a ruling in itself.
+Every value above is marked ⧗ and grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and Southern Gothic register ruled on the DCUS instance, the rename lattice, Red Stick Creek to Red Hills to DCUS, as S5 SCAR paratext ([../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). The layer doc's house finding stands without qualification: OXO has no ruled Telling Profile, no prose exists, and the whole discourse configuration is an unmade decision set. This table is that decision menu, filled with defaults for Chief to strike or keep line by line, not a ruling in itself.
 
 ---
 
@@ -208,10 +208,10 @@ Every value above is marked ⧗ and grounded in what the canon docs already say:
 
 ## OPEN
 
-Built from the five wave distills' "For the texture system" bullets. **RULED 2026-09-16 (Papi: "texture calls go"): all thirteen as recommended.** The count is twelve; the names stay house coinage and the OXO profile stays a bench until OXO prose opens, exactly as the recommendations say. Each call below now reads as an order, not a proposal. Provisional a week like every ruling.
+Built from the five wave distills' "For the texture system" bullets. **RULED 2026-09-16 (Chief: "texture calls go"): all thirteen as recommended.** The count is twelve; the names stay house coinage and the OXO profile stays a bench until OXO prose opens, exactly as the recommendations say. Each call below now reads as an order, not a proposal. Provisional a week like every ruling.
 
 1. **Ten or twelve layers.** T11 MEDIUM and T12 FUNCTION are house additions beyond the layer doc's original ten questions. *Ruled 9/16, as recommended:* twelve, the mirror holds against the character, setting, and plot stacks.
-2. **The twelve names.** House coinage, same status as the P-layer and S-layer names, awaiting Papi's ruling. *Ruled 9/16, as recommended:* bench on request, no ruling forced this wave.
+2. **The twelve names.** House coinage, same status as the P-layer and S-layer names, awaiting Chief's ruling. *Ruled 9/16, as recommended:* bench on request, no ruling forced this wave.
 3. **Split T2 into perceptual and informational sub-fields.** Bal's EF/CF and the perceptible marker argue the single `focalization_mode` value hides two decisions, whose subjective view and what the reader is denied ([[BVX.0598]], [[BVX.0596]]). *Ruled 9/16, as recommended:* yes, carry both sub-fields on the profile.
 4. **The reflection axis.** The DNS's third dimension, the narrator's or character's cognitive, emotive, and normative mark-up of what is perceived, has no clean home among the ten questions ([[BVX.0598]]). *Ruled 9/16, as recommended:* T7 absorbs it, provisionally.
 5. **T6 distance policy as a named three-point scale, plus a countable instrument.** Cinematic, light, deep, named by two independent sources, and barrier-word density as the measurable proxy ([[BVX.0273]], [[BVX.0061]]). *Ruled 9/16, as recommended:* adopt the scale now, the instrument later.
@@ -221,10 +221,10 @@ Built from the five wave distills' "For the texture system" bullets. **RULED 202
 9. **Narrator/focalizer discrepancy as a notation.** Bal's manipulation diagnostic, the gap between a T1 reading and a T2 reading of the same passage, has no flag on the profile ([[BVX.0596]]). *Ruled 9/16, as recommended:* a flag on the profile.
 10. **Memory as a focalization mode, and description's motivation test at Pause.** Bal argues memory is retrospective, unreliable, sense-based, and itself narrativized, and that description needs a threefold motivation check, delimitation, motivation, rhetorical binding, wherever a scene marks the Pause duration ([[BVX.0596]]). *Ruled 9/16, as recommended:* a T2 sub-value, a T4 note.
 11. **The mood curve's entry format, and the reader-response ledger.** Iglesias supplies emotion plus technique plus the payoff owed as the entry format; Pelican ([[BVX.0233]]) argued the same running ledger of paid versus unpaid anticipation from the character side ([[BVX.0279]]). *Ruled 9/16, as recommended:* the entry format now, the ledger as a stack-external reader model shared with the character system's OPEN 9.
-12. **The OXO telling profile.** The bench filled above, twelve proposed lines against a work with no ruled Telling Profile at all. *Ruled 9/16, as recommended:* Papi strikes or keeps line by line when OXO prose opens.
+12. **The OXO telling profile.** The bench filled above, twelve proposed lines against a work with no ruled Telling Profile at all. *Ruled 9/16, as recommended:* Chief strikes or keeps line by line when OXO prose opens.
 13. **Acquisitions.** Genette's *Narrative Discourse*, Booth's *The Rhetoric of Fiction*, and Bal's own theory volume, BVX.0591, still not distilled. *Ruled 9/16, as recommended:* queue all three, deepen T1, T2, and T9 next.
 
 ## Version history
 
 - **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("texture calls go"): twelve layers hold; T2 splits into perceptual and informational sub-fields at the next bump; the three-point distance scale adopted; the register slot added to the telling line; the reflection axis absorbed by T7 provisionally; the OXO profile stays a bench. No slice or instrument change tonight.
-- **0.1.0, 2026-09-16.** First texture_system document, written on Papi's order ("texture wave go", BOLO 18) from the TEXTURE shelf's eight distills: the Ten Questions restated as axes, twelve-layer TEXTURE SLICE mirroring the character, setting, and plot stacks, the TELLING PROFILE and telling line as the instance format, OXO benched as a proposed profile, not a ruling. Layer names, count, and every OXO value provisional pending Papi's ruling.
+- **0.1.0, 2026-09-16.** First texture_system document, written on Chief's order ("texture wave go", BOLO 18) from the TEXTURE shelf's eight distills: the Ten Questions restated as axes, twelve-layer TEXTURE SLICE mirroring the character, setting, and plot stacks, the TELLING PROFILE and telling line as the instance format, OXO benched as a proposed profile, not a ruling. Layer names, count, and every OXO value provisional pending Chief's ruling.

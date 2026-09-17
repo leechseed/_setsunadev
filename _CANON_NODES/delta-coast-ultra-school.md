@@ -30,7 +30,7 @@ ruled: 2026-08-24
 
 ## THE RULING — 2026-08-24
 
-**The fused school's name is the Delta Coast Ultra School ("DCUS").** Papi's directive: "Ultra School" carries the title, Southern Gothic register. The Delta Coast pick ties the name to canon geography — Movement 1's Delta Coast, the tri-state Spiral (FL/AL/GA).
+**The fused school's name is the Delta Coast Ultra School ("DCUS").** Chief's directive: "Ultra School" carries the title, Southern Gothic register. The Delta Coast pick ties the name to canon geography — Movement 1's Delta Coast, the tri-state Spiral (FL/AL/GA).
 
 **"Ultra School" is canon by deliberate ruling.** This supersedes the earlier terminology correction ("UltraSchool does not exist in the repo") — that correction stands as history: no *pre-ruling* source document contains the term, so searches of older material must still use the legacy vocabularies below.
 

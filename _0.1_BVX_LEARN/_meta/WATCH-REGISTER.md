@@ -5,7 +5,7 @@ type: design-register
 version: 1.0.0
 date: 2026-09-06
 bolo: 34
-status: applied to WARROOM 1.1; filing into the Bold Venture design system SSOT (fifth register beside EMBER · PUNCH · DUST · NOIR) is Papi's open ruling (BOLO 34 Q2)
+status: applied to WARROOM 1.1; filing into the Bold Venture design system SSOT (fifth register beside EMBER · PUNCH · DUST · NOIR) is Chief's open ruling (BOLO 34 Q2)
 derived_from: _0.1_BVX_LEARN/_meta/LONG-WATCH-STANDARDS.md (MIL-STD-1472H · MIL-STD-2525D · FAA HF-STD-001B + HF-STD-010A · NASA-STD-3001 Rev F + HIDH · ISO 9241-303 · IHO S-52 · Piepenbrock/Buchner/Mayr · Dobres 2017)
 environment: one monitor, off-axis to the operator's left, overhead room light ON, sessions of 4–8 h, viewing distance assumed ~60 cm
 trunk: BLACK
@@ -13,9 +13,9 @@ trunk: BLACK
 
 # WATCH — the long-session register
 
-**One register, two faces, keyed to the room light.** The standards do not prefer dark themes for comfort; they key polarity to ambient light (MIL-STD-1472H 5.2.2.6: light-on-dark only below ~0.1 lx; FAA HF-STD-001B 5.3.2.1.6: positive polarity "when all else is equal"; the bridge clause 5.18.2.2: "separate day and night color palettes may be necessary"). Papi's room is lit. So **DAY is the working face** and NIGHT is for the light switched off. Both faces share one grammar.
+**One register, two faces, keyed to the room light.** The standards do not prefer dark themes for comfort; they key polarity to ambient light (MIL-STD-1472H 5.2.2.6: light-on-dark only below ~0.1 lx; FAA HF-STD-001B 5.3.2.1.6: positive polarity "when all else is equal"; the bridge clause 5.18.2.2: "separate day and night color palettes may be necessary"). Chief's room is lit. So **DAY is the working face** and NIGHT is for the light switched off. Both faces share one grammar.
 
-## The grammar (Papi's ruling on BOLO 34 Q6: judgment colors, borrow the Navy's yellow)
+## The grammar (Chief's ruling on BOLO 34 Q6: judgment colors, borrow the Navy's yellow)
 
 | Role | Meaning | Source of the meaning |
 |---|---|---|
@@ -79,8 +79,8 @@ WARROOM 1.1 (`MCDP-CODEX.html`, `_tools/mcdp_codex_template.html`): both faces a
 
 ## Open
 
-0. **Scope narrowed 2026-09-10 (Papi, spoken, on the SITREP v0):** the rose-anchored faces read as "that purple one" and stay with DARKROOM and public-facing work. The default colorway for internal boards and tool pages is now the creator-cases explainer palette (slate `#EEF0F3` / white / ink `#14171C` / orange `#FF5A1F` accent, dark twin `#0F1216`), working name BRIEF. Papi said "we just keep using" it — WARROOM's adoption of it is implied but unspoken; ask before retinting WARROOM.
+0. **Scope narrowed 2026-09-10 (Chief, spoken, on the SITREP v0):** the rose-anchored faces read as "that purple one" and stay with DARKROOM and public-facing work. The default colorway for internal boards and tool pages is now the creator-cases explainer palette (slate `#EEF0F3` / white / ink `#14171C` / orange `#FF5A1F` accent, dark twin `#0F1216`), working name BRIEF. Chief said "we just keep using" it — WARROOM's adoption of it is implied but unspoken; ask before retinting WARROOM.
 
 1. **Filing** (BOLO 34 Q2): a fifth register in `📐 ssot_00_bold_venture_design_system.md`, or a WARROOM-only theme. The name WATCH is a working name.
-2. **DARKROOM.** Its NOIR livery is pure-black-adjacent with white-ish text; the same two faces would apply. Waits on Papi's word after living in WARROOM 1.1.
+2. **DARKROOM.** Its NOIR livery is pure-black-adjacent with white-ish text; the same two faces would apply. Waits on Chief's word after living in WARROOM 1.1.
 3. **Viewing distance** assumed 60 cm; if the monitor sits farther, body type goes to 18–19 px.

@@ -1,6 +1,6 @@
 # Dictation — BOLO 26, the BUILD route
 
-**Ruled 2026-09-16** (Papi: "build"). Push-to-talk speech-to-text that stops mangling
+**Ruled 2026-09-16** (Chief: "build"). Push-to-talk speech-to-text that stops mangling
 the Command lexicon. Local, GPU, $0 — no audio leaves the box, nothing is billed.
 
 This is **JUDY's listening half** (BOLO 56). The speaking half, the wire to the VS Code
@@ -55,7 +55,7 @@ because the loop only ever asks for a string back.
 
 ## Session voice — built 9/17
 
-The direction Papi actually wanted: talk to **Fable**, and JUDY is the voice.
+The direction Chief actually wanted: talk to **Fable**, and JUDY is the voice.
 
 ```
 python _tools/dictation/judy.py --session
@@ -234,7 +234,7 @@ consumer. Its own first run caught three:
 
 ```
 borsite      -> boresight
-Poppy        -> Papi
+Poppy        -> Chief
 darkroom     -> DARKROOM
 ```
 
@@ -247,12 +247,12 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 - **Measured:** 11.4s of speech transcribed in **0.69s**; model loads in ~2.9s warm,
   ~28s the first time (it downloads ~1.5 GB once).
 - **Model:** `distil-large-v3` — near large-v3 accuracy on proper nouns, which is the
-  actual complaint, at a fraction of the latency. English-only, which matches how Papi
+  actual complaint, at a fraction of the latency. English-only, which matches how Chief
   dictates. Change it in `config.json`.
 - **Typing:** clipboard + Ctrl-V, not synthetic keystrokes — instant regardless of
   length, and it does not mangle punctuation. The prior clipboard is restored.
 
-## Papi-side hygiene (regardless of the tool)
+## Chief-side hygiene (regardless of the tool)
 
 - Years as "twenty oh five", not "two thousand five".
 - Critical proper nouns slightly slower, once; spell a new name the first time.

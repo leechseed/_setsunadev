@@ -94,7 +94,7 @@ for c in convs:
                     files_here.append((path or "untitled", str(body)))
 
         if text.strip():
-            who = "## 🧑 Papi" if sender == "human" else "## 🤖 Claude"
+            who = "## 🧑 Chief" if sender == "human" else "## 🤖 Claude"
             ts = (m.get("created_at") or "")[:19].replace("T", " ")
             parts.append(f"{who}  <sub>{ts}</sub>\n\n{text.strip()}")
 

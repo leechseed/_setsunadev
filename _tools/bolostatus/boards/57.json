@@ -1,12 +1,12 @@
 {
  "bolo": {
   "n": 57,
-  "title": "Voice work as income — Papi can build voices in ElevenLabs",
+  "title": "Voice work as income — Chief can build voices in ElevenLabs",
   "trunk": "ORANGE-leaning, UNRULED",
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "held",
-  "status": "🔴 CAPTURED 9/16, still unpriced — but the ground shifted 9/17: **Papi now owns an ElevenLabs account**, so the tool cost is sunk and this venture's marginal cost is zero. The boresight is still owed.",
+  "status": "🔴 CAPTURED 9/16, still unpriced — but the ground shifted 9/17: **Chief now owns an ElevenLabs account**, so the tool cost is sunk and this venture's marginal cost is zero. The boresight is still owed.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 56 (JUDY)",
   "related": [
@@ -108,7 +108,7 @@
      "label": "What exists already",
      "items": [
       {
-       "t": "The asset Papi named is the skill, not the tool: building voices in ElevenLabs is something he can already do today, with no ramp — the same standing order as BOLO 24 (start now with what is in hand).",
+       "t": "The asset Chief named is the skill, not the tool: building voices in ElevenLabs is something he can already do today, with no ramp — the same standing order as BOLO 24 (start now with what is in hand).",
        "s": "done"
       },
       {
@@ -122,7 +122,7 @@
      "label": "What the record says",
      "items": [
       {
-       "t": "Four candidate paths, unranked and unverified: the ElevenLabs Voice Library payout program (share a voice, earn on usage) · built-to-order voices for creators, studios, game devs and audiobook work · a voice for BOLO 24's disclosed 3D persona · narration/VO delivered as a service on Papi's own editing strength.",
+       "t": "Four candidate paths, unranked and unverified: the ElevenLabs Voice Library payout program (share a voice, earn on usage) · built-to-order voices for creators, studios, game devs and audiobook work · a voice for BOLO 24's disclosed 3D persona · narration/VO delivered as a service on Chief's own editing strength.",
        "s": "open"
       },
       {
@@ -147,7 +147,7 @@
        "s": "done"
       },
       {
-       "t": "**The skill is demonstrated, not claimed.** Papi's four-voice audition and the stability/style dial test are the first evidence he can actually shape a voice to a brief — which is the whole asset this row rests on.",
+       "t": "**The skill is demonstrated, not claimed.** Chief's four-voice audition and the stability/style dial test are the first evidence he can actually shape a voice to a brief — which is the whole asset this row rests on.",
        "s": "done"
       }
      ]
@@ -169,7 +169,7 @@
    "kind": "mission",
    "plain": "A mission is a task plus the reason for it. This one's reason is that the skill is already in hand and the tool is already paid for somewhere else.",
    "strand": {
-    "last": "BOLO 56 ruled ElevenLabs as JUDY's eventual voice and it was integrated the same day; on the same break-break Papi named voice-building as something he can already do for money.",
+    "last": "BOLO 56 ruled ElevenLabs as JUDY's eventual voice and it was integrated the same day; on the same break-break Chief named voice-building as something he can already do for money.",
     "plan": "Capture it as its own row rather than a line on 29, because it shares nothing with the TikTok path but the income question.",
     "you": "You named the asset and said it out loud. You have not priced it, ranked it, or ruled its trunk.",
     "next": "Run one boresight that prices the four paths, then rank this against 24 · 27 · 29."
@@ -298,7 +298,7 @@
    "kind": "log",
    "plain": "Every transmission on this row, in order.",
    "strand": {
-    "last": "Two transmissions: Papi's break-break, then the row opened around it.",
+    "last": "Two transmissions: Chief's break-break, then the row opened around it.",
     "plan": "One more entry lands when the boresight runs.",
     "you": "Yours started it; the capture is Claude's.",
     "next": "The boresight transmission, whenever you call it."
@@ -306,7 +306,7 @@
    "entries": [
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Break-break: \"add to the… zero to hero income BOLO… I can actually create voices in ElevenLabs. That could be something I can definitely do.\""
     },
     {
@@ -316,7 +316,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"give me the board side and the dope sheet on a Bolo 57\" — the sheet ordered."
     },
     {
@@ -326,7 +326,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Oscar Mike, Oscar Mike. Frago.\" — the close-out, with a FRAGO and no number spoken."
     },
     {
@@ -336,7 +336,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"I actually got 11 labs. For Judy.\" — bought for the crew, 9/17"
     },
     {

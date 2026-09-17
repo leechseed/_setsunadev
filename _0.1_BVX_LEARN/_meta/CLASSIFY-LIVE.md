@@ -8,7 +8,7 @@ status: BOLO 18 stage 2 - step 2
 
 # Classification of the live library
 
-Subject source per item: the Dec-2023 catalog where it had one, else Papi's own tags, else the approved 17-category rules.
+Subject source per item: the Dec-2023 catalog where it had one, else Chief's own tags, else the approved 17-category rules.
 
 | Source | Items |
 |---|---|

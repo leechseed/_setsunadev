@@ -148,11 +148,11 @@ Every decision is made. What remains is data entry: open Dramatica, answer the e
 
 ## 9 · ENGINE PASS — 2026-08-24, the form as entered (BOLO 7)
 
-**The engine resolved to ONE storyform.** Entered live by Papi in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `story_engine_settings.TXT` · `plot_sequence.TXT`.
+**The engine resolved to ONE storyform.** Entered live by Chief in Dramatica Pro, transcribed same session. Files, this folder: `oxo-storyform-engine.dsf` (exact engine state) · `story_engine_settings.TXT` · `plot_sequence.TXT`.
 
 ### ✅ FLAG STRUCK — RULED 2026-08-24: this form IS canon
 
-The entered form rotates the morning's four perspective assignments — every ruled thematic block in the right *class*, ownership rotated one frame. **Papi ruled same session ("we're sticking with what we got" → "strike the flag"): the rotation is canon**, superseding the morning domain ruling and the LOCKED cells listed below; §2 amended. The frame this buys: the *world* carries the Situation war over The Past; Tori's personal story is Activity/Understanding; Anna's impact is Manipulation/Developing a Plan; the rivalry lives in Fixed Attitude/Memories — the war over what is remembered.
+The entered form rotates the morning's four perspective assignments — every ruled thematic block in the right *class*, ownership rotated one frame. **Chief ruled same session ("we're sticking with what we got" → "strike the flag"): the rotation is canon**, superseding the morning domain ruling and the LOCKED cells listed below; §2 amended. The frame this buys: the *world* carries the Situation war over The Past; Tori's personal story is Activity/Understanding; Anna's impact is Manipulation/Developing a Plan; the rivalry lives in Fixed Attitude/Memories — the war over what is remembered.
 
 | Slot (engine) | Engine holds | The 8/24 ruling puts this content on |
 |---|---|---|

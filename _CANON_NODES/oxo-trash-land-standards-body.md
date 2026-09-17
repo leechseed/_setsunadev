@@ -7,7 +7,7 @@ ip: OVEREXITOUT / ASTRO7EX
 series: The Outliers
 trunk: BLACK
 status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon · S12 invariant RULED KEEP 2026-09-15"
-capture_protocol: "Papi's spoken lines = canon · ⧗ = Claude development, strike or keep"
+capture_protocol: "Chief's spoken lines = canon · ⧗ = Claude development, strike or keep"
 slice: "Setting System S1–S12 — feeds S4 LAW and S12 FUNCTION of [[oxo-trash-land-seed]]"
 links:
   - "[[oxo-trash-land-seed]]"
@@ -25,7 +25,7 @@ bolo: 50
 ## Canon — what is already spoken
 
 - A **biome / area of the map** of the ASTRO7EX world.
-- Called **"Trash Land"** — Papi's word, **placeholder only**.
+- Called **"Trash Land"** — Chief's word, **placeholder only**.
 - **A giant border, a DMZ, between the southern part of the US and the northern part.**
 - **The DMZ is a massive border of trash.**
 - **Man-made.** A built border between the South and the North.
@@ -83,7 +83,7 @@ Named standards the body issues or the range itself imposes:
 
 ## The S12 invariant — RULED KEEP 2026-09-15
 
-**RULED 2026-09-15, Papi: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
+**RULED 2026-09-15, Chief: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
 
 The seed's candidate is *"Nothing that enters the range comes back as what it was."* It survives, but as a **place invariant about matter and status**, not yet a standards-body invariant about the border itself — the seed's line describes what the range does to things, the body needs a line about what the border does to people trying to cross it. Recommend a sibling, scoped to the standards body specifically:
 
@@ -99,7 +99,7 @@ Falsifiable in-scene per DOCTRINE 0 III: a scene where an off-cut crosser is tre
 
 ## OPEN — all unruled
 
-1. Reading A vs Reading B for who set the standard — recommend B, Papi's call.
+1. Reading A vs Reading B for who set the standard — recommend B, Chief's call.
 2. Does the North polity ever issue its own named standards, or does everything north of the range stay unnamed until seed OPEN item 3 (the North) rules?
 3. Is the Burn Line a real enforced standard or just physics nobody had to legislate?
 4. Does Recall Silence survive contact with the seed's S10 (recalled hardware in the pits) once seed OPEN item 4 rules, or does it get replaced entirely by whatever that ruling decides?

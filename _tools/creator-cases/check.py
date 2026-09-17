@@ -28,7 +28,7 @@ def main():
     ttp = t.split("## 10 · TTP")[-1] if "## 10 · TTP" in t else ""
     for part in ("The one mechanic", "Transferable tips", "Does not transfer", "Feeds"):
         if part.lower() not in ttp.lower(): W.append(f"TTP lacks '{part}'")
-    for part in ("Bottom line", "Papi's context", "Confidence"):
+    for part in ("Bottom line", "Chief's context", "Confidence"):
         if part not in t: W.append(f"opening lacks **{part}.**")
     src = t.split("## 9 ·")[-1].split("## 10 ·")[0] if "## 9 ·" in t else ""
     urls9 = set(re.findall(r"https?://\S+", src))

@@ -34,9 +34,9 @@ Adult content where the product is the **interaction/dynamic**, not performance 
 
 **The single commodity across the entire map: relinquished control.**
 
-**Core dynamic (Papi's thesis, corroborated):** when stimulus supply becomes infinite, **scarcity migrates to the frame** — the psychological container, not the content. Market branched *upward* into abstraction (hypno, ideology-skins, findom), not sideways into more content. Connection is the hidden product: chat is 50%+ of revenue — *people paying to be known, dressed as paying to be aroused.*
+**Core dynamic (Chief's thesis, corroborated):** when stimulus supply becomes infinite, **scarcity migrates to the frame** — the psychological container, not the content. Market branched *upward* into abstraction (hypno, ideology-skins, findom), not sideways into more content. Connection is the hidden product: chat is 50%+ of revenue — *people paying to be known, dressed as paying to be aroused.*
 
-**The priming principle (Papi):** "whatever can prime the fantasy enough is good enough." The customer's head does the rendering; priming efficiency beats production fidelity. This is why $15/1k-word text competes with video.
+**The priming principle (Chief):** "whatever can prime the fantasy enough is good enough." The customer's head does the rendering; priming efficiency beats production fidelity. This is why $15/1k-word text competes with video.
 
 **Ideology-framing is retention technology:** BNWO-type skins convert genre preference into identity subscription — raises switching costs and LTV. (Already independently derived in doctrine: "borrow religious structure without authority hierarchy.")
 
@@ -95,7 +95,7 @@ Platforms price interaction above content: iWantClips 80% tributes vs 60% clips;
 
 ---
 
-## 5 · The Annalist openings (my read, Papi rules)
+## 5 · The Annalist openings (my read, Chief rules)
 
 1. **Credited curation with a commentary layer.** Legal "transformative" requires criticism/review — *a methodology-branded review publication with a rating instrument IS a commentary layer.* The Compliance Scale converts curation from parasite to critic — the only defensible aggregation posture in the ecosystem. The X crackdown is clearing the field of the uncredited competition.
 2. **Commissioned edits, B2B.** Creators pay editors for promo edits of their own catalogs — rights-holder-funded, 100% clean. The service-layer version of the PMV skill.

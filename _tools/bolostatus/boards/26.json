@@ -8,7 +8,7 @@
   "s": "done",
   "status": "ROUTE RULED BUILD 9/16 and SHIPPED the same session — the tool exists, runs on the 3090, and feeds its own dictionary. Now JUDY's listening half (BOLO 56).",
   "decider": "HOTLINE ACTUAL",
-  "feeds": "every trunk — every order Papi speaks passes through this",
+  "feeds": "every trunk — every order Chief speaks passes through this",
   "related": [
    {
     "n": 48,
@@ -54,7 +54,7 @@
     "options": "BUILD — Claude writes the push-to-talk tool (hotkey → local faster-whisper with the lexicon as prompt → SOP §8 replacements → type into the focused window) · INSTALL — whisper-writer or Whispering, verify Windows + prompt + replacements · PAY — Wispr Flow / Aqua Voice, against budget",
     "default": "BUILD (rec) · INSTALL if tokens are tight",
     "s": "ruled",
-    "ruling": "BUILD (Papi: \"build\", 9/16). Claude shipped it the same session, as the 9/3 card promised it would."
+    "ruling": "BUILD (Chief: \"build\", 9/16). Claude shipped it the same session, as the 9/3 card promised it would."
    }
   ]
  },
@@ -89,7 +89,7 @@
      ]
     },
     {
-     "label": "Papi-side hygiene · regardless of route",
+     "label": "Chief-side hygiene · regardless of route",
      "items": [
       {
        "t": "Years as \"twenty oh five\". Critical proper nouns slightly slower, once; spell a new name the first time. Boom mic a few inches off at a fixed distance; input 70 to 80 percent; audio enhancements off if the tool fights them.",
@@ -127,7 +127,7 @@
      "label": "The table grew itself",
      "items": [
       {
-       "t": "The tool's own first run caught three garbles now in §8: `borsite`→boresight · `Poppy`→Papi · `darkroom`→DARKROOM. Lexicon bias fixed **Ultrasin** — the flagship 9/3 garble — unaided.",
+       "t": "The tool's own first run caught three garbles now in §8: `borsite`→boresight · `Poppy`→Chief · `darkroom`→DARKROOM. Lexicon bias fixed **Ultrasin** — the flagship 9/3 garble — unaided.",
        "s": "done"
       }
      ]
@@ -199,7 +199,7 @@
     }
    ],
    "coord": [
-    "Lexicon seed: Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike · ENDEX · buttonhook · break-break · sit rep · how copy · Dramatica · Blender · MCDP · DCUS · Tori · Anna Colson Conway · Papi · main effort · PMCS · Ready Rack · Magazine · SOP · DOPE SHEET · FRAGO · SOI · TTP · RTB · Charlie Mike.",
+    "Lexicon seed: Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike · ENDEX · buttonhook · break-break · sit rep · how copy · Dramatica · Blender · MCDP · DCUS · Tori · Anna Colson Conway · Chief · main effort · PMCS · Ready Rack · Magazine · SOP · DOPE SHEET · FRAGO · SOI · TTP · RTB · Charlie Mike.",
     "Mic and desk gear live on the corner card."
    ],
    "running": [
@@ -290,7 +290,7 @@
      "label": "Who decides",
      "items": [
       {
-       "t": "**Papi** — the route. **Claude** — the build, the lexicon generation, the verification of candidates.",
+       "t": "**Chief** — the route. **Claude** — the build, the lexicon generation, the verification of candidates.",
        "s": "open"
       }
      ]
@@ -329,12 +329,12 @@
    "entries": [
     {
      "when": "9/3",
-     "who": "Papi",
+     "who": "Chief",
      "t": "After the mic diagnosis: a custom dictionary so dictation stops mangling the lexicon. BOLO 26 captured; parked the same session."
     },
     {
      "when": "9/11",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Do we have a BOLO on the whisper sync, creating my own voice library?\" Yes: this one. Then: \"get me the situation report on BOLO 26.\""
     },
     {
@@ -344,7 +344,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"build\" — the route ruling, 9/16"
     },
     {
@@ -359,7 +359,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "MPK mini 3 pad approved as a second trigger; toggle added to the loop."
     },
     {

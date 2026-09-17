@@ -1,7 +1,7 @@
 """
 ptt.py — push-to-talk dictation for the Command.
 
-BOLO 26, BUILD route (ruled 2026-09-16 on Papi's "build").
+BOLO 26, BUILD route (ruled 2026-09-16 on Chief's "build").
 
     hold a hotkey → record → faster-whisper on the 3090, the Command lexicon fed in
     as initial_prompt → SOP §8 replacements → typed into whatever window has focus.
@@ -40,7 +40,7 @@ DEFAULTS = {
     "hotkey": "ctrl+alt+space",
     # distil-large-v3 is the responsiveness/accuracy pick: near large-v3 on proper
     # nouns — which is the whole complaint — at a fraction of the latency. English
-    # only, which matches how Papi dictates. ~1.5 GB, downloaded once.
+    # only, which matches how Chief dictates. ~1.5 GB, downloaded once.
     "model": "distil-large-v3",
     "device": "auto",
     "compute_type": "auto",

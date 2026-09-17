@@ -11,7 +11,7 @@ sources: this session (2026-08-21) · claude.ai 2026-06-08 "Marine Corps documen
 
 ## The architecture, sorted into its three layers
 
-Papi's three metaphors (music-label imprint · military-academy dual-track · secret-identity/superhero) are not competing answers — they answer **three different layers**:
+Chief's three metaphors (music-label imprint · military-academy dual-track · secret-identity/superhero) are not competing answers — they answer **three different layers**:
 
 | Layer | Model | Status |
 |---|---|---|
@@ -19,9 +19,9 @@ Papi's three metaphors (music-label imprint · military-academy dual-track · se
 | **Operational** | **Academy dual-track** — two regimens, one campus, deliberate interaction. BVX = regimented/mainstream/SFW track; Ultrasin = equal-and-opposite outlier track; both produce entertainment; conflict → resolution → creativity. | **Already running** — this is BLACK/ORANGE, named. The repo has operated as a two-track academy since the trunks existed. |
 | **Legal** | **RULED 2026-08-24: SUBSIDIARY** — Ultrasin as child entity of BVX. | ✅ ruled — §N lean (fully separate) overridden; ownership-chain exposure accepted |
 
-**The §N evidence weighs in on the legal layer:** card networks and processors trace ownership chains (AN 5196, VIRP/VAMP). An Ultrasin that is legally an imprint/subsidiary of BVX contaminates BVX's payment processing, platform standing, and reputational surface — and vice versa. **The data leans: fully separate entities wearing imprint-style *brand* architecture — legally strangers, creatively twins, one human spine.** Lean recorded; ruling is Papi's.
+**The §N evidence weighs in on the legal layer:** card networks and processors trace ownership chains (AN 5196, VIRP/VAMP). An Ultrasin that is legally an imprint/subsidiary of BVX contaminates BVX's payment processing, platform standing, and reputational surface — and vice versa. **The data leans: fully separate entities wearing imprint-style *brand* architecture — legally strangers, creatively twins, one human spine.** Lean recorded; ruling is Chief's.
 
-> **RULED 2026-08-24: SUBSIDIARY.** Papi ruled against the lean with the risk explicitly on the table — the underwriting ownership-chain exposure to BVX's rails is **accepted**, not overlooked. Brand layer stays imprint (no visible bridge); operational stays academy dual-track. The attorney consult already open in registry §A (basic legal docs) papers the structure.
+> **RULED 2026-08-24: SUBSIDIARY.** Chief ruled against the lean with the risk explicitly on the table — the underwriting ownership-chain exposure to BVX's rails is **accepted**, not overlooked. Brand layer stays imprint (no visible bridge); operational stays academy dual-track. The attorney consult already open in registry §A (basic legal docs) papers the structure.
 
 ## Doctrinal spine — Marine Corps model (already partially canon)
 

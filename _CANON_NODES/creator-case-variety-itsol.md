@@ -4,7 +4,7 @@ entity_id: creator_case_variety_itsol
 kind: creator case study — business-side research on a public performer/creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane P)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order ("add another one to the list", spoken 9/10); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
+status: DELIVERED 2026-09-10 — researched on Chief's order ("add another one to the list", spoken 9/10); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Variety Itsol · P · S · 2026 (spoken 9/8; the roster's top five-star name after the 9/10 Stash recount, 9)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 pronouns: "her own bios: she/her (Fansly) · she/they (X). She/her used here."
@@ -19,7 +19,7 @@ updated: 2026-09-10
 
 **Bottom line.** A US trans woman performer-creator (Arkansas → Little Rock → Las Vegas), a veteran, career start 2021, who runs a **solo-plus-studio hybrid** from day one: Grooby Girls' Omar Wax was her producer before she had ten uploads, and her own tube-to-fansite funnel grew Pornhub from 628 subscribers (Dec 2022) to 65.7K (Aug 2026). **She has told her story — in audio**: a small YouTube show (2023), AVN's "Fresh Faces" (her first industry-press interview, Apr 2024), and a 1h47m *And Now We Drink* episode (Oct 2025). No earnings on record anywhere; no award found despite XBIZ calling her "award-winning."
 
-**Papi's context.** Spoken into the register 9/8 — was the gooner lane's top trans name, promoted to the roster by his word. Stash recount 9/10: 12 attributed scenes, **9 five-star — the top five-star name on the roster** (Natasha Teen next at 6). Studios on the attributed scenes: Rodrigo Amor · AJ Fresh XXX · Tgirls.porn. Stash record carries country US and a Chaturbate URL (varietyitsol).
+**Chief's context.** Spoken into the register 9/8 — was the gooner lane's top trans name, promoted to the roster by his word. Stash recount 9/10: 12 attributed scenes, **9 five-star — the top five-star name on the roster** (Natasha Teen next at 6). Studios on the attributed scenes: Rodrigo Amor · AJ Fresh XXX · Tgirls.porn. Stash record carries country US and a Chaturbate URL (varietyitsol).
 
 **Confidence.** fxtwitter · Fansly API · Linktree · Clips4Sale · Soundgasm HIGH (fetched 2026-09-10) · Wayback Pornhub series HIGH (19 snapshots, raw HTML) · AVN / XBIZ HIGH · the 2023 YouTube interview date LOW (snippet) · bio-stated OF start date conflicts (see §8).
 

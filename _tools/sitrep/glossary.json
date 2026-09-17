@@ -128,7 +128,7 @@
  "soi": {
   "t": "SOI",
   "k": "noun",
-  "d": "Signal Operating Instructions: the [[brevity|BREVITY]]'s book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Papi, 9/11); every button and key says SOI.",
+  "d": "Signal Operating Instructions: the [[brevity|BREVITY]]'s book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Chief, 9/11); every button and key says SOI.",
   "w": "SOP.md §0 · _tools/soi/ · the SOI page",
   "st": "ruled"
  },
@@ -532,14 +532,14 @@
  "ttp": {
   "t": "TTP",
   "k": "item",
-  "d": "Tactics, Techniques and Procedures. Section 10 of every [[creator-case|creator case]]: the one mechanic worth studying, three to five transferable tips, what does not transfer, and which venture it feeds. Named by Papi 9/10 from the Corps bench (GOUGE was the provisional header); struck alternatives THE TAKE, LESSONS LEARNED, HOT WASH.",
+  "d": "Tactics, Techniques and Procedures. Section 10 of every [[creator-case|creator case]]: the one mechanic worth studying, three to five transferable tips, what does not transfer, and which venture it feeds. Named by Chief 9/10 from the Corps bench (GOUGE was the provisional header); struck alternatives THE TAKE, LESSONS LEARNED, HOT WASH.",
   "w": "SOP.md §5 · _CANON_NODES/creator-case-*.md §10",
   "st": "ruled"
  },
  "rtb": {
   "t": "RTB",
   "k": "proword",
-  "d": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, the folder cleared. Papi's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]]. 9/11: one meaning only — the pass that sends a parked card home and clears it; retires itself when oscar-mike/ is empty. The end of the sortie is Oscar Mike.",
+  "d": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, the folder cleared. Chief's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]]. 9/11: one meaning only — the pass that sends a parked card home and clears it; retires itself when oscar-mike/ is empty. The end of the sortie is Oscar Mike.",
   "w": "SOP.md §1",
   "st": "ruled"
  },
@@ -553,7 +553,7 @@
  "gouge": {
   "t": "GOUGE",
   "k": "item",
-  "d": "Navy and Marine slang for the essential distilled information. Recommended 9/10 as the name for the creator-case lessons block and used as its provisional header for a few hours; Papi ruled [[ttp|TTP]] instead. Bench only.",
+  "d": "Navy and Marine slang for the essential distilled information. Recommended 9/10 as the name for the creator-case lessons block and used as its provisional header for a few hours; Chief ruled [[ttp|TTP]] instead. Bench only.",
   "w": "SOP.md §5",
   "st": "retired"
  },
@@ -561,7 +561,7 @@
   "t": "FRAGO",
   "k": "proword",
   "st": "ruled",
-  "d": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Papi's clarification 9/10 late (\"FRAGO is just the update after we've made the BOLO status page\"). \"FRAGO 45\" folds what changed since the last build into [[opord|OPORD 45]] and republishes; only what changed, everything not mentioned stands as ordered; the page's Log keeps every FRAGO.",
+  "d": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Chief's clarification 9/10 late (\"FRAGO is just the update after we've made the BOLO status page\"). \"FRAGO 45\" folds what changed since the last build into [[opord|OPORD 45]] and republishes; only what changed, everything not mentioned stands as ordered; the page's Log keeps every FRAGO.",
   "w": "SOP.md §0–1 · _tools/bolostatus/"
  },
  "opord": {
@@ -574,7 +574,7 @@
  "bolo46": {
   "t": "BOLO 46",
   "k": "item",
-  "d": "The OXO series follow-through: the [[telling-profile|Telling Profile]]'s 12 rulings · Anna's node · the pilot's page one. Captured 9/11 at priority one on Papi's word; it had no BOLO before.",
+  "d": "The OXO series follow-through: the [[telling-profile|Telling Profile]]'s 12 rulings · Anna's node · the pilot's page one. Captured 9/11 at priority one on Chief's word; it had no BOLO before.",
   "w": "BOLO.md #46"
  },
  "dope-sheet": {
@@ -613,7 +613,7 @@
   "t": "ADORNED",
   "k": "ruling",
   "st": "ruled",
-  "d": "DARKROOM dress-state value, RULED 9/11 (\"let's do adorned\"): naked except for an accessory — socks, heels, jewelry, glasses, a hat, a harness; the r/WhyWearAnythingAtAll read. Replaced implied (retired 9/11: no garment and nothing shown). Vocab edited, zero-shot rerun, probes retrained the same morning; 42 old human confirmations still say implied and are left as Papi's record.",
+  "d": "DARKROOM dress-state value, RULED 9/11 (\"let's do adorned\"): naked except for an accessory — socks, heels, jewelry, glasses, a hat, a harness; the r/WhyWearAnythingAtAll read. Replaced implied (retired 9/11: no garment and nothing shown). Vocab edited, zero-shot rerun, probes retrained the same morning; 42 old human confirmations still say implied and are left as Chief's record.",
   "w": "_PRIVATE/taxonomy_engine/vocab.json · BOLO 44"
  },
  "actual": {
@@ -667,7 +667,7 @@
   "t": "gear N",
   "k": "proword",
   "st": "provisional",
-  "d": "The agent ceiling for the current task, spoken as a number. Gear 1 = 3 agents (the default; silence means gear 1) · 2 = 6 · 3 = 9 · 4 = 12 · 5 = 15, never used: the ceiling exists to be named. A shift lasts one task, then back to gear 1. At every gear, fetch-and-extract agents run haiku, write-ups sonnet, fable on the main line only. Working name (Papi 9/12: \"let's just call them gears for now\"); warps and DEFCON aborted in the same breath. Part of [[gearbox|the gearbox]].",
+  "d": "The agent ceiling for the current task, spoken as a number. Gear 1 = 3 agents (the default; silence means gear 1) · 2 = 6 · 3 = 9 · 4 = 12 · 5 = 15, never used: the ceiling exists to be named. A shift lasts one task, then back to gear 1. At every gear, fetch-and-extract agents run haiku, write-ups sonnet, fable on the main line only. Working name (Chief 9/12: \"let's just call them gears for now\"); warps and DEFCON aborted in the same breath. Part of [[gearbox|the gearbox]].",
   "w": "SOP.md §1 · §5 · BOLO 52"
  },
  "gearbox": {
@@ -686,13 +686,13 @@
  "bolo53": {
   "t": "BOLO 53",
   "k": "item",
-  "d": "The Command's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop read as an iterative-incremental life cycle, filed beside the project flow. Tabled 9/12; OPENED 9/15 by Papi's \"Open 53\"; v0.1 working draft on disk.",
+  "d": "The Command's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop read as an iterative-incremental life cycle, filed beside the project flow. Tabled 9/12; OPENED 9/15 by Chief's \"Open 53\"; v0.1 working draft on disk.",
   "w": "BOLO.md #53 · DOPE SHEET 53 · ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_development_standard.md"
  },
  "bolo54": {
   "t": "BOLO 54",
   "k": "item",
-  "d": "The sit rep formation: orchestrator, independent specialists, one reviewer at the fan-in. Papi's doctrine 9/12 (Amdahl · Brooks · context is the cost unit · review at the merge). Built the same turn: prep.py · assemble.py · the sitrep skill. The main line's read drops from ~211 KB to ~3 KB.",
+  "d": "The sit rep formation: orchestrator, independent specialists, one reviewer at the fan-in. Chief's doctrine 9/12 (Amdahl · Brooks · context is the cost unit · review at the merge). Built the same turn: prep.py · assemble.py · the sitrep skill. The main line's read drops from ~211 KB to ~3 KB.",
   "w": "BOLO.md #54 · DOPE SHEET 54 · .claude/skills/sitrep/"
  },
  "formation": {
@@ -705,7 +705,7 @@
  "bolo55": {
   "t": "BOLO 55",
   "k": "item",
-  "d": "The DOPE SHEET format — the document layout. Captured 9/16 and RULED the same day (Papi: \"one page · keep the rail, keep it\"): one page, the explainer rail kept, the five-paragraph order with the order on top, the mantra, the log. Every sheet since builds to it.",
+  "d": "The DOPE SHEET format — the document layout. Captured 9/16 and RULED the same day (Chief: \"one page · keep the rail, keep it\"): one page, the explainer rail kept, the five-paragraph order with the order on top, the mantra, the log. Every sheet since builds to it.",
   "w": "BOLO.md #55 · DOPE SHEET 55"
  },
  "command": {
@@ -754,7 +754,7 @@
  "bolo57": {
   "t": "BOLO 57",
   "k": "item",
-  "d": "Voice work as income: Papi can already build voices in ElevenLabs, so it is a fourth candidate venture beside 24 · 27 · 29. Four paths named, none costed. Held until a boresight prices it.",
+  "d": "Voice work as income: Chief can already build voices in ElevenLabs, so it is a fourth candidate venture beside 24 · 27 · 29. Four paths named, none costed. Held until a boresight prices it.",
   "w": "https://claude.ai/artifact/19rjZFkarB1QvEYK1vubdo"
  },
  "bolo56": {
@@ -823,14 +823,14 @@
   "t": "JUDY",
   "k": "system",
   "st": "ruled",
-  "d": "The voice loop, [[bolo56|BOLO 56]]: Papi talks, she listens, she answers out loud. Name RULED 2026-09-16, spelled J-U-D-Y, superseding the provisional THE HANDLER. Persona TARS (affable, informative, bratty); voice the 007 handler register, Blondie on ElevenLabs ruled 9/17; face on the desktop as PNG state swaps. Ears local on the 3090 ([[bolo26|BOLO 26]]), brain the keyword router (ruled 9/17), the wire an MCP server to the VS Code session (ruled, unbuilt). Lives in _tools/dictation/.",
+  "d": "The voice loop, [[bolo56|BOLO 56]]: Chief talks, she listens, she answers out loud. Name RULED 2026-09-16, spelled J-U-D-Y, superseding the provisional THE HANDLER. Persona TARS (affable, informative, bratty); voice the 007 handler register, Blondie on ElevenLabs ruled 9/17; face on the desktop as PNG state swaps. Ears local on the 3090 ([[bolo26|BOLO 26]]), brain the keyword router (ruled 9/17), the wire an MCP server to the VS Code session (ruled, unbuilt). Lives in _tools/dictation/.",
   "w": "BOLO.md row 56 · DOPE SHEET 56"
  },
  "go": {
   "t": "go N",
   "k": "proword",
   "st": "ruled",
-  "d": "The phase go-word on a [[dope-sheet|DOPE SHEET]]: \"go 6\" fires phase 6 of the sheet's execution paragraph, nothing more. Coded 9/15 (dictation: \"goes to ex 6\"). RULED 2026-09-16 the hard way: \"go\" is the order, not the build-out. Papi said \"slice go,\" the whole pipeline stood up and six evenings got assigned, and he called it \"a little bit too far.\" Deliver the sheet's order, then wait for the next word.",
+  "d": "The phase go-word on a [[dope-sheet|DOPE SHEET]]: \"go 6\" fires phase 6 of the sheet's execution paragraph, nothing more. Coded 9/15 (dictation: \"goes to ex 6\"). RULED 2026-09-16 the hard way: \"go\" is the order, not the build-out. Chief said \"slice go,\" the whole pipeline stood up and six evenings got assigned, and he called it \"a little bit too far.\" Deliver the sheet's order, then wait for the next word.",
   "w": "SOP.md §8 · BOLO 55"
  },
  "ladder": {
@@ -853,5 +853,12 @@
   "st": "ruled",
   "d": "Dictation with a custom dictionary: the whisper fix. Route RULED BUILD 9/16 and shipped the same session as _tools/dictation/ (faster-whisper on the 3090, the Command lexicon as initial prompt, SOP section 8 repair). Now the listening half of [[judy|JUDY]].",
   "w": "https://claude.ai/code/artifact/c5ece55b-4c2b-49e1-bc94-31bce8477ec9"
+ },
+ "chief": {
+  "t": "Chief",
+  "k": "person",
+  "st": "ruled",
+  "d": "The operator's address, RULED 9/17 (\"across the board, change it everywhere, Chief, C-H-I-E-F\"). Replaces Papi in every live document, page, tool and memory; the frozen archives keep the old word as record. On the net and on the pages the callsign is still [[hotline|HOTLINE ACTUAL]]; in chat and in the record, Chief.",
+  "w": "SOP.md §5 · §8"
  }
 }

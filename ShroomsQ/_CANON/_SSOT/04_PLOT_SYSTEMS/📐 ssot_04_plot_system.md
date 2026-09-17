@@ -4,7 +4,7 @@ category: plot_system
 version: 0.1.2
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Vogler, Brody, Aristotle), four OPEN calls added, slice unchanged. v0.1.1 RULED 2026-09-16 (Papi: \"plot go\", all seven OPEN calls as recommended): the twelve P-layer names are house coinage, the count holds at twelve, the PLOT CARD stays a sibling of the SCENE CARD; provisional a week like every ruling"
+status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Vogler, Brody, Aristotle), four OPEN calls added, slice unchanged. v0.1.1 RULED 2026-09-16 (Chief: \"plot go\", all seven OPEN calls as recommended): the twelve P-layer names are house coinage, the count holds at twelve, the PLOT CARD stays a sibling of the SCENE CARD; provisional a week like every ruling"
 rung: standard
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_collision_engine", "ssot_03_setting_system", "ssot_02_dramatica_integration_protocol"]
 trunk: BLACK
@@ -133,7 +133,7 @@ OXO's ruled story-level Driver is Action (spine L3). A unit's local driver, this
 
 ## PART A · THE PLOT SLICE, twelve layers, mirror of the character and setting stacks
 
-Same architecture as the 12-Layer Character Database and the SETTING SLICE: surface to depth to structural function, P12 fed independently from the storyform exactly as L12 FUNCTION and S12 FUNCTION are. **Layer names are house coinage, provisional, awaiting Papi's ruling.**
+Same architecture as the 12-Layer Character Database and the SETTING SLICE: surface to depth to structural function, P12 fed independently from the storyform exactly as L12 FUNCTION and S12 FUNCTION are. **Layer names are house coinage, provisional, awaiting Chief's ruling.**
 
 | Layer | Name | Question it answers | Source | Field it writes |
 |---|---|---|---|---|
@@ -231,9 +231,9 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 
 ## OPEN
 
-**RULED 2026-09-16 (Papi: "plot go"): all seven as recommended.** Kept below as the record; each item's *Recommendation* is now the ruling. Open work that survives the ruling: the Movement↔Signpost table (4) · carding row 9's earlier scenes (6) · OXO's genre ruling against the clover (7).
+**RULED 2026-09-16 (Chief: "plot go"): all seven as recommended.** Kept below as the record; each item's *Recommendation* is now the ruling. Open work that survives the ruling: the Movement↔Signpost table (4) · carding row 9's earlier scenes (6) · OXO's genre ruling against the clover (7).
 
-1. **The twelve P-layer names** (ADDRESS through FUNCTION), house coinage, awaiting Papi's ruling, same status as the S-layer names. *Recommendation:* keep, each pairs one-to-one with a question a working writer actually asks.
+1. **The twelve P-layer names** (ADDRESS through FUNCTION), house coinage, awaiting Chief's ruling, same status as the S-layer names. *Recommendation:* keep, each pairs one-to-one with a question a working writer actually asks.
 2. **The layer count (12)**, chosen to match the character and setting stacks exactly; the shelf could justify as few as eight, collapsing P2/P3/P5 into one VALUE layer, folding P9 into P4 and P11 into P12. *Recommendation:* hold at 12 for now, the row-9 proof used all twelve without forcing; revisit only if a second instance strains the schema.
 3. **Whether the PLOT CARD merges into the SCENE CARD.** Row 9's existing scene card already carries `commandments`, `value turn`, `collision`, and part of `threads`, which overlap four plot-slice fields. *Recommendation:* keep them siblings sharing one `address` key rather than merge; a merged card would mix setting-state fields with turn fields on one screen and break the ten-second scan test.
 4. **The Movement↔Signpost mapping table** (OXO: six movements × four signposts × four throughlines), flagged in the spine's L4 branch and the scale ladder's OPEN list, is plot_systems work and still not built. *Recommendation:* build it next, the natural second deliverable once P6 SIGNPOST/JOURNEY SEAT is ruled; row 9 already needs it, its own address carries a ⧗ series-overlay guess ("S1E02 · act 2").
@@ -255,4 +255,4 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 
 - **0.1.1 · 2026-09-16** — the seven OPEN calls ruled as recommended ("plot go"); status provisional a week.
 
-- **0.1.0, 2026-09-16.** First plot_systems document, written on Papi's order (BOLO 18) from the L4 shelf's five distills: four-axis taxonomy, twelve-layer PLOT SLICE mirroring the character and setting stacks, PLOT CARD notation paired to the SCENE CARD, M2 row-9 instanced as proof. Layer names and count provisional pending Papi's ruling.
+- **0.1.0, 2026-09-16.** First plot_systems document, written on Chief's order (BOLO 18) from the L4 shelf's five distills: four-axis taxonomy, twelve-layer PLOT SLICE mirroring the character and setting stacks, PLOT CARD notation paired to the SCENE CARD, M2 row-9 instanced as proof. Layer names and count provisional pending Chief's ruling.

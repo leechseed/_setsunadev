@@ -4,10 +4,10 @@ entity_id: creator_case_hungryanuz
 kind: creator case study — business-side research on a public performer/creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — BOLO 45 wave one (lane C), researched on Papi's order; every claim sourced; confidence labeled
+status: DELIVERED 2026-09-10 — BOLO 45 wave one (lane C), researched on Chief's order; every claim sourced; confidence labeled
 register_row: "performer-register — Hungryanuz · C · — · 1 list (X) · 2023 · note: unlockd.me; \"I should look into it more\""
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
-pronouns: "no pronoun statement in any bio. The Pornhub profile's self-set field reads 'Gender: Male'; the register's Sex column is a dash. They/them used here per the dash rule; flagged in §8 for Papi to rule."
+pronouns: "no pronoun statement in any bio. The Pornhub profile's self-set field reads 'Gender: Male'; the register's Sex column is a dash. They/them used here per the dash rule; flagged in §8 for Chief to rule."
 links:
   - "[[performer-register]]"
   - "[[creator-case-variety-itsol]]"
@@ -20,7 +20,7 @@ updated: 2026-09-10
 
 **Bottom line.** A solo amateur tube creator (Pornhub Verified Model, self-set location Los Angeles, birth place Denmark) with a thin public record and no press, whose one documented business event is a **deplatforming pivot**: between 2021-10-22 (Pornhub bio still pointing to OnlyFans as "Official Site") and 2021-11-04 (first ManyVids upload), OnlyFans banned their content — their words — and within seven weeks they had a Linktree hub (created 2021-11-03), a 21-clip ManyVids store (Nov 4 – Dec 22), a Fansly account (avatar uploaded 2021-12-19) and an unlockd.me profile, with the tube bio rewritten to disavow OnlyFans and send traffic to the hub. The free Pornhub page is the durable asset: 59 → 74 uploads and 3.1K → 6.5K subscribers between Oct 2021 and Mar 2026, with the subscriber count still rising through fourteen months of zero new uploads. Stores went dormant after September 2023. No earnings, no interview, no award, no X account, no collaborator on record. **The file is thin because the record is thin.**
 
-**Papi's context.** Lane C row, on one list — his 2023 journal of Pornhub channels read as business cases (source X). His note, verbatim: `unlockd.me; "I should look into it more"`. He flagged the platform, not just the creator, so §4 carries a paragraph on what unlockd.me is as a business. Sex column is a dash.
+**Chief's context.** Lane C row, on one list — his 2023 journal of Pornhub channels read as business cases (source X). His note, verbatim: `unlockd.me; "I should look into it more"`. He flagged the platform, not just the creator, so §4 carries a paragraph on what unlockd.me is as a business. Sex column is a dash.
 
 **Confidence.** Pornhub Wayback series HIGH (11 raw snapshots, 2021-10 → 2026-03; the 2023-05-22 capture failed to fetch) · Fansly API HIGH · Linktree JSON HIGH · ManyVids store API HIGH (31 clips with dates and prices) · unlockd.me profile **link-verified only** (Linktree carries the URL; the page sits behind a bot challenge and has no Wayback capture — LOW on anything about the profile itself) · unlockd.me as a business: Companies House + MEL Magazine + the site's own 2023 copy HIGH, Trustpilot complaints MEDIUM, Supercreator blog LOW (affiliate content) · OnlyFans ban: the creator's own statement, dated by the rebuild — MEDIUM on the exact date.
 
@@ -131,7 +131,7 @@ Contest or award: **none found** — the handle returns zero search-engine hits 
 
 - **Start date** — unknown. The first capture (Oct 2021) already shows 59 uploads and 3.1K subs; no Career Start field; the Pornhub user id (936479421) is not dated anywhere public.
 - **The ban** — only the creator's word ("They recently banned my content"); the exact date is bracketed 2021-10-22 → 2021-11-03 by the rebuild. No OnlyFans capture exists.
-- **Pronouns** — no statement anywhere. The Pornhub self-set field reads "Gender: Male"; the register's Sex column is a dash. They/them used here per the dash rule; **he/him follows if Papi reads the self-set field as a statement — his call.**
+- **Pronouns** — no statement anywhere. The Pornhub self-set field reads "Gender: Male"; the register's Sex column is a dash. They/them used here per the dash rule; **he/him follows if Chief reads the self-set field as a statement — his call.**
 - **Location** — Pornhub "los Angeles, United States" (2021–2026) vs Fansly "NYC"; birth place field Denmark. Profile fields only; none verified.
 - **unlockd.me profile** — existence is link-verified only; price, content count, and whether it is still live are unknown (site behind a bot challenge; no Wayback capture).
 - **Fansly** — subscriber count not exposed; `lastSeenAt` hidden; whether the 71 videos post-date 2023 is not visible from the public API.

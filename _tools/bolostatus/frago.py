@@ -12,7 +12,7 @@ The patch is small JSON; everything not mentioned stands as ordered. Keys (all o
   "files":  [{"path": "…", "what": "…", "s": "done"}]           matched by path; new path = appended
   "items":  [{"p": "S", "label": "…", "t": "…", "s": "done"}]   appended to paragraph p's group (by label prefix; new label = new group)
   "strand": {"S": {"next": "…"}, "E": {"you": "…"}}             per-paragraph strand fields
-  "log":    [{"who": "Papi|Claude", "t": "…"}]                  appended to the Log paragraph, dated today
+  "log":    [{"who": "Chief|Claude", "t": "…"}]                  appended to the Log paragraph, dated today
   "related":[{"n": 54, "why": "…"}]                             appended if n is new
 Always: bolo.asof = today · bolo.version bumped (v0.2 → v0.3) · the change list printed.
 --build runs build.py N and prints the fragment path to publish.

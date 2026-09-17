@@ -4,7 +4,7 @@ category: scale_ladder
 version: 1.0.0
 last_updated: 2026-08-25
 applies_to: [OVEREXITOUT, all future IPs, BVX-LEARN keying]
-status: canonical — Module 1 of the lattice, delivered on Papi's clear 2026-08-25
+status: canonical — Module 1 of the lattice, delivered on Chief's clear 2026-08-25
 purpose: "THE SCALE LADDER — the container hierarchy from beat to universe: what each unit IS, its completion test, its address, and how multiple stories nest inside one series. Lattice limb 1 of 4."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_02_dramatica_integration_protocol"]
 trunk: BLACK
@@ -14,7 +14,7 @@ trunk: BLACK
 
 **What this is:** the container hierarchy of narrative. The spine says what a story IS; the ladder says **what size things come in and how they nest** — the answer to "scene → sequence → arc → story → stories within one large series." Every unit gets: a definition, a **completion test** (what makes one whole), its governing system, and holdings.
 
-**The core conceptual move — CONTAINERS vs THREADS.** The ladder's rungs are *containers*: units of presentation with boundaries. **Arcs are not a rung — arcs are *threads*:** tracked lines of change (character arc, setting arc, relationship arc, thematic motif) that run *through* containers at any span. TV vocabulary blurs this ("story arc" as a container of episodes); the house keeps it clean: **containers hold, threads change.** *(Provisional ruling — flagged for Papi; matches the Weiland arc vocabulary already in the library.)*
+**The core conceptual move — CONTAINERS vs THREADS.** The ladder's rungs are *containers*: units of presentation with boundaries. **Arcs are not a rung — arcs are *threads*:** tracked lines of change (character arc, setting arc, relationship arc, thematic motif) that run *through* containers at any span. TV vocabulary blurs this ("story arc" as a container of episodes); the house keeps it clean: **containers hold, threads change.** *(Provisional ruling — flagged for Chief; matches the Weiland arc vocabulary already in the library.)*
 
 ---
 
@@ -110,7 +110,7 @@ Any unit or thread span gets a canonical address: `IP.form.act.sequence.scene.be
 - `OXO.primary.M2.q3.s12.b4` — beat (R1)
 - Thread span: `tori.arc[OXO.primary.M1–M6]`
 
-Tree addresses (`SPINE.Lx`) locate *concepts*; ladder addresses locate *instances*. A library source keys to tree addresses; a manuscript unit keys to ladder addresses. Both provisional until Papi rules notation.
+Tree addresses (`SPINE.Lx`) locate *concepts*; ladder addresses locate *instances*. A library source keys to tree addresses; a manuscript unit keys to ladder addresses. Both provisional until Chief rules notation.
 
 ## LADDER × LIBRARY
 
@@ -118,12 +118,12 @@ Tree addresses (`SPINE.Lx`) locate *concepts*; ladder addresses locate *instance
 
 ## OPEN
 
-- **"Arc = thread, never a container"** — provisional house ruling, awaiting Papi.
-- **Address notation** — provisional (`IP.form.M.q.s.b`), awaiting Papi.
+- **"Arc = thread, never a container"** — provisional house ruling, awaiting Chief.
+- **Address notation** — provisional (`IP.form.M.q.s.b`), awaiting Chief.
 - **Movement↔Signpost mapping table** (OXO: 6 movements × 4 signposts ×4 throughlines) — plot_systems work, flagged.
 - **IP-level / cross-IP meta-forms** — architecturally supported, not designed.
 - ~~**SCENE CARD notation** — slot reserved at R2~~ ✅ delivered same session with Module 2: [../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md).
 
 ## Version history
 
-- **1.0.0 — 2026-08-25.** Module 1 of the lattice, delivered on Papi's clear: eight rungs with completion tests, containers-vs-threads doctrine, four series patterns, address scheme, library keying.
+- **1.0.0 — 2026-08-25.** Module 1 of the lattice, delivered on Chief's clear: eight rungs with completion tests, containers-vs-threads doctrine, four series patterns, address scheme, library keying.

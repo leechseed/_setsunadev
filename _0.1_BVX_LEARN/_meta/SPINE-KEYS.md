@@ -8,7 +8,7 @@ status: BOLO 18 stage 2 - the full pass
 
 # Spine keys over the whole library
 
-All 7695 items. Authority: Papi's tags · a PS TOC pass · title rules · subject default (off-spine). `OFF` = not a story book.
+All 7695 items. Authority: Chief's tags · a PS TOC pass · title rules · subject default (off-spine). `OFF` = not a story book.
 
 | Source | Items |
 |---|---|

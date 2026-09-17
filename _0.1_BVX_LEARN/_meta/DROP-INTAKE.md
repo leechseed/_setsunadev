@@ -3,7 +3,7 @@ id: BVX-LEARN.drop-intake
 title: "The drop-folder intake"
 type: report
 generated: 2026-09-16
-status: BOLO 18 · opened 9/16 on Papi's word ("the acquisitions are in the drop folder with a whole bunch of other new PDFs")
+status: BOLO 18 · opened 9/16 on Chief's word ("the acquisitions are in the drop folder with a whole bunch of other new PDFs")
 ---
 
 # The drop-folder intake · 2026-09-16
@@ -18,11 +18,11 @@ status: BOLO 18 · opened 9/16 on Papi's word ("the acquisitions are in the drop
 | **Held, unkeyed** (`drop-unkeyed`) | **6655** — the bulk; title rules are not run over it (they over-key RPG character sheets into L5) |
 | Keyed | 9 ({'L5': 4, 'SETTING': 1, 'L4': 4, 'L0': 2, 'L6': 2, 'L7': 2}) |
 
-## The acquisitions (Papi's list of 9/16)
+## The acquisitions (Chief's list of 9/16)
 
 | Asked for | Landed | State |
 |---|---|---|
-| Egri, *The Art of Dramatic Writing* | ✅ the real book (320 p) | **BVX.1123**, distilled; Papi's "Character Bones" = its Book II ch. 1 *The Bone Structure*; the 12-page "Character Bone Structure" PDF is a student slide deck, not Egri |
+| Egri, *The Art of Dramatic Writing* | ✅ the real book (320 p) | **BVX.1123**, distilled; Chief's "Character Bones" = its Book II ch. 1 *The Bone Structure*; the 12-page "Character Bone Structure" PDF is a student slide deck, not Egri |
 | Vogler, *The Writer's Journey* | ✅ 3rd ed. (404 p) | **BVX.1124**, distilled |
 | Brody, *Save the Cat! Writes a Novel* | ✅ (340 p) | **BVX.1125**, distilled (the Zotero record 0164 under this title holds Snyder) |
 | Aristotle, *Poetics* | ✅ Sachs trans., **scanned, no text layer**, the 74-page book twice in one file | **BVX.1126**, distilled by visual read of pp. 1–80 |
@@ -33,7 +33,7 @@ status: BOLO 18 · opened 9/16 on Papi's word ("the acquisitions are in the drop
 
 ## The bulk
 
-By filename family (counts are hits on the name, overlapping): Shadowrun ~378 · GURPS ~256 · Pathfinder/Paizo ~208 · "#1 with a Bullet Point" (Pathfinder feats) 73 · adventure paths ("#NN _") 13 · D&D ~10 · Savage Worlds/Fate/PbtA ~7 · Traveller 5 · World of Darkness 5; plus Papi's own tool outputs (EVIL CHECK reports, RSD worksheets, character sheets) and a long tail with no family in the name.
+By filename family (counts are hits on the name, overlapping): Shadowrun ~378 · GURPS ~256 · Pathfinder/Paizo ~208 · "#1 with a Bullet Point" (Pathfinder feats) 73 · adventure paths ("#NN _") 13 · D&D ~10 · Savage Worlds/Fate/PbtA ~7 · Traveller 5 · World of Darkness 5; plus Chief's own tool outputs (EVIL CHECK reports, RSD worksheets, character sheets) and a long tail with no family in the name.
 
 **Cost of a full intake at the sweep's standard:** the held rows would need ~133 PS TOC batches (~40k tokens each), about 5.3M tokens. Not ordered.
 

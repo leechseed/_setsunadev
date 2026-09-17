@@ -36,17 +36,17 @@
   {
    "k": "focus",
    "w": "Focus",
-   "line": "Papi drew the gate tight: story side only, BOLO 24's own slice stays free, and the boresight's five rulings kept the sweep aimed at what plot, character and setting actually need instead of sprawling."
+   "line": "Chief drew the gate tight: story side only, BOLO 24's own slice stays free, and the boresight's five rulings kept the sweep aimed at what plot, character and setting actually need instead of sprawling."
   },
   {
    "k": "boldness",
    "w": "Boldness",
-   "line": "Papi caught the undercount himself — \"are you sure this is all we have on plot and setting?\" — and ordered the full pass with every agent needed rather than settle for the partial wave-2 count."
+   "line": "Chief caught the undercount himself — \"are you sure this is all we have on plot and setting?\" — and ordered the full pass with every agent needed rather than settle for the partial wave-2 count."
   }
  ],
  "frago": {
   "mission": "Key every source to the story spine and distill the shelves into the plot, setting and character models, **in order to** build the top layer of what a story is from the thousand books already owned.",
-  "order": "**The gate is closed. The drop-folder intake runs next: inventory the new PDFs, key them, distill the acquisitions and the character books Papi named (Character Bones first) into the systems. Theme (L6) and root (L0) waves follow when called. Nothing on this sheet gates BOLO 24 any more.**",
+  "order": "**The gate is closed. The drop-folder intake runs next: inventory the new PDFs, key them, distill the acquisitions and the character books Chief named (Character Bones first) into the systems. Theme (L6) and root (L0) waves follow when called. Nothing on this sheet gates BOLO 24 any more.**",
   "default": "Silence: the gate stays closed; the twenty-six distills and the five models stand; TM 02 through 06 stay as published; the drop-folder rows sit keyed but undistilled; theme and root wait.",
   "calls": [
    {
@@ -73,7 +73,7 @@
    {
     "q": "The acquisitions",
     "options": "Snyder original · Vogler · Field · Brody · Egri · Aristotle, ranked from GAP-BY-SHELF (rec) · none until the shelves are distilled",
-    "default": "the six, Papi acquires",
+    "default": "the six, Chief acquires",
     "s": "open"
    },
    {
@@ -88,33 +88,33 @@
     "options": "eleven candidates from the five distills (ghost/revenant cross-links · a typed arc field · the tyranny of motive as a narration rule · the hierarchy as an allocation rule · viewpoint out of scope · the wound card as L5's field list · the villain-arc fork · the circumplex and the Triads as sub-dials · the audience trust ledger · growth-pairing and coping strategy · attachment theory missing from the shelf) — rule them as a block at the next schema bump (rec) · one by one · park",
     "default": "as a block at the next schema bump; nothing changes in the schema until then",
     "s": "ruled",
-    "ruling": "RULED 9/16 (Papi: \"character calls go\"): all eleven as recommended, applying at the next schema bump; nothing in the schema changes until then. Character doc 2.0.1, TM 02 republished."
+    "ruling": "RULED 9/16 (Chief: \"character calls go\"): all eleven as recommended, applying at the next schema bump; nothing in the schema changes until then. Character doc 2.0.1, TM 02 republished."
    },
    {
     "q": "The texture system's OPEN calls",
     "options": "thirteen candidates from the five distills (ten or twelve layers · the names · the T2 split · the reflection axis · the distance scale and its instrument · a register slot · the function count · viewpoint silence · the discrepancy flag · memory and the Pause test · the mood-curve entry and the reader ledger · the OXO profile bench · acquisitions) — rule as a block as recommended (rec) · one by one · park",
     "default": "as a block as recommended; the OXO profile stays a bench until OXO prose opens",
     "s": "ruled",
-    "ruling": "RULED 9/16 (Papi: \"texture calls go\"): all thirteen as recommended; twelve layers hold, the names and the OXO profile bench stay provisional. Texture system 0.1.1, TM 05 republished."
+    "ruling": "RULED 9/16 (Chief: \"texture calls go\"): all thirteen as recommended; twelve layers hold, the names and the OXO profile bench stay provisional. Texture system 0.1.1, TM 05 republished."
    },
    {
     "q": "The genre wave",
     "s": "ruled",
-    "ruling": "OPENED and DONE 9/16 (Papi: \"genre wave go\"): six L7 distills through RANGE (Truby's Anatomy of Genres 0191, an orphan PDF found on disk · Selbo 0576 · Neale 0580 · Bawarshi & Reiff 0581 · Todorov 0614 · Mendlesohn 0599); the genre system v0.1.0 written from the shelf (twelve G-layers ⧗, the GENRE CARD and the GENRE CONTRACT, the OXO contract benched); TM 06 published."
+    "ruling": "OPENED and DONE 9/16 (Chief: \"genre wave go\"): six L7 distills through RANGE (Truby's Anatomy of Genres 0191, an orphan PDF found on disk · Selbo 0576 · Neale 0580 · Bawarshi & Reiff 0581 · Todorov 0614 · Mendlesohn 0599); the genre system v0.1.0 written from the shelf (twelve G-layers ⧗, the GENRE CARD and the GENRE CONTRACT, the OXO contract benched); TM 06 published."
    },
    {
     "q": "The genre system's OPEN calls",
     "options": "thirteen candidates from the six distills (twelve or fewer layers · the names · one register from four vocabularies · the four clauses as card fields · genre load and the percentage balance · mode vs genre · a contract state track · Neale's keying rule · meta-genre · a genre's expiry · the dystopia mechanism to setting · the OXO contract bench · three labels not one) — rule as a block as recommended (rec) · one by one · park",
     "default": "as a block as recommended; the OXO contract stays a bench until OXO prose opens",
     "s": "ruled",
-    "ruling": "RULED 9/16 (Papi: \"genre calls go\"): all thirteen as recommended; twelve layers hold, Truby's fourteen as the register's spine, the four clauses as required card fields; the OXO contract stays a bench. Genre system 0.1.1, TM 06 republished."
+    "ruling": "RULED 9/16 (Chief: \"genre calls go\"): all thirteen as recommended; twelve layers hold, Truby's fourteen as the register's spine, the four clauses as required card fields; the OXO contract stays a bench. Genre system 0.1.1, TM 06 republished."
    },
    {
     "q": "Close the gate",
     "options": "close now, the five models stand and BOLO 24's story-side work resumes (rec) · run the L6 theme wave (27 items) and the L0 root wave (27) first · keep it open until every shelf is distilled to depth",
     "default": "close now; theme and root run as follow-on waves, not gates",
     "s": "ruled",
-    "ruling": "RULED 9/16 (Papi: \"go ahead and close the gate\"): closed now; theme (L6) and root (L0) run as follow-on waves, not gates; BOLO 24's story-side work resumes."
+    "ruling": "RULED 9/16 (Chief: \"go ahead and close the gate\"): closed now; theme (L6) and root (L0) run as follow-on waves, not gates; BOLO 24's story-side work resumes."
    },
    {
     "q": "The drop bulk intake",
@@ -124,7 +124,7 @@
    },
    {
     "q": "The four re-acquisitions",
-    "options": "Field *Screenplay* (a summary-app PDF landed) · Booth *The Rhetoric of Fiction* (a 34-page spam summary landed) · Genette *Narrative Discourse* (*Paratexts* landed, already held as 0582) · Levine & Heller *Attached* in English (a Vietnamese translation landed; distilled from what could be verified) — Papi re-acquires into the drop folder (rec) · drop them from the queue",
+    "options": "Field *Screenplay* (a summary-app PDF landed) · Booth *The Rhetoric of Fiction* (a 34-page spam summary landed) · Genette *Narrative Discourse* (*Paratexts* landed, already held as 0582) · Levine & Heller *Attached* in English (a Vietnamese translation landed; distilled from what could be verified) — Chief re-acquires into the drop folder (rec) · drop them from the queue",
     "default": "re-acquire; the queue keeps them",
     "s": "open"
    }
@@ -135,12 +135,12 @@
    "id": "S",
    "name": "Situation",
    "kind": "list",
-   "plain": "Where the spine sweep stands: what Papi ordered on the 9/16 break-break, what already existed on disk before that, and what the record turned up once the library was actually counted.",
+   "plain": "Where the spine sweep stands: what Chief ordered on the 9/16 break-break, what already existed on disk before that, and what the record turned up once the library was actually counted.",
    "strand": {
     "last": "Stage 1, the Command-corpus sweep, was banked 8/26; stage 2, the library sweep, sat unfinished until the 9/16 break-break made it a gate.",
     "plan": "Finish stage 2 to the end: keyed shelves, then distills, then written models, then technical-manual pages, then this status sheet.",
-    "you": "Papi ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
-    "next": "Papi calls the bulk intake (family map, rec) and re-acquires four books; theme and root waves wait; BOLO 24's story-side work is free to resume."
+    "you": "Chief ruled the boresight, the plot system, and the TM build all in the same session, and caught the setting undercount himself.",
+    "next": "Chief calls the bulk intake (family map, rec) and re-acquires four books; theme and root waves wait; BOLO 24's story-side work is free to resume."
    },
    "groups": [
     {
@@ -157,7 +157,7 @@
        "when": "9/16"
       },
       {
-       "t": "\"Are you sure this is all we have on plot and setting?\" — Papi caught the undercount, then: \"run the full pass, take all the agents you need.\"",
+       "t": "\"Are you sure this is all we have on plot and setting?\" — Chief caught the undercount, then: \"run the full pass, take all the agents you need.\"",
        "s": "spoken",
        "when": "9/16"
       },
@@ -202,7 +202,7 @@
      "label": "What the record says",
      "items": [
       {
-       "t": "The wave-2 count had SETTING at 18 because 91 game-shelf sourcebooks and campaign settings hadn't been counted; the full pass corrected it to the true count of 154 — the undercount Papi flagged.",
+       "t": "The wave-2 count had SETTING at 18 because 91 game-shelf sourcebooks and campaign settings hadn't been counted; the full pass corrected it to the true count of 154 — the undercount Chief flagged.",
        "s": "done"
       },
       {
@@ -250,7 +250,7 @@
    "strand": {
     "last": "Ten done phases landed in the 9/16 session, from the boresight through the TM pages.",
     "plan": "This sheet closes the session's owed item; the character, texture and genre waves come next, then the doc upgrades and the acquisitions.",
-    "you": "Papi ruled the boresight, the plot system and the TM build; the scripted steps ran on Claude's side.",
+    "you": "Chief ruled the boresight, the plot system and the TM build; the scripted steps ran on Claude's side.",
     "next": "The intake wave from the drop folder; then theme (L6) and root (L0)."
    },
    "main_effort": "The character wave, then the character document rewrite so TM 02 carries its slice.",
@@ -269,7 +269,7 @@
     },
     {
      "n": 3,
-     "t": "**Step 1, inventory:** `_tools/zotero/inventory.py` reads the live Zotero DB into `INVENTORY-LIVE.md` — 1,031 items, 1,024 PDFs on disk, 265 new since the catalog, 208 already spine-keyed from Papi's 2023 tag scheme.",
+     "t": "**Step 1, inventory:** `_tools/zotero/inventory.py` reads the live Zotero DB into `INVENTORY-LIVE.md` — 1,031 items, 1,024 PDFs on disk, 265 new since the catalog, 208 already spine-keyed from Chief's 2023 tag scheme.",
      "s": "done",
      "when": "9/16"
     },
@@ -379,7 +379,7 @@
    "strand": {
     "last": "Seven scripts, four reports, one template and two SSOT docs were built or written across the 9/16 session, on top of stage 1's banked inventory doc.",
     "plan": "No new tooling planned; the character, texture and genre waves reuse the same scripts and the same v4 template.",
-    "you": "Papi pays in rulings; the sweep itself runs on scripts at zero token cost, with specialists spent only on distills and PS TOC batches.",
+    "you": "Chief pays in rulings; the sweep itself runs on scripts at zero token cost, with specialists spent only on distills and PS TOC batches.",
     "next": "Reuse `fullpass.py` and `check_distill.py` for the character, texture and genre waves."
    },
    "files": [
@@ -430,7 +430,7 @@
     },
     {
      "path": "_0.1_BVX_LEARN/_meta/INVENTORY-LIVE.md",
-     "what": "step 1 report — 1,031 items, 1,024 PDFs on disk, 265 new since the catalog, 208 spine-keyed from Papi's tags",
+     "what": "step 1 report — 1,031 items, 1,024 PDFs on disk, 265 new since the catalog, 208 spine-keyed from Chief's tags",
      "s": "done"
     },
     {
@@ -590,7 +590,7 @@
     },
     {
      "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.1123.md",
-     "what": "Egri, The Art of Dramatic Writing (4 diagrams; the bone structure, Papi's \"Character Bones\")",
+     "what": "Egri, The Art of Dramatic Writing (4 diagrams; the bone structure, Chief's \"Character Bones\")",
      "s": "done"
     },
     {
@@ -674,13 +674,13 @@
    "strand": {
     "last": "The last entries are \"TM go\" and the TM pages going live.",
     "plan": "One entry per transmission, oldest first.",
-    "you": "Every ruling below is Papi's; the builds and reports below are Claude's.",
+    "you": "Every ruling below is Chief's; the builds and reports below are Claude's.",
     "next": "This sheet, then the character wave."
    },
    "entries": [
     {
      "when": "8/26",
-     "who": "Papi",
+     "who": "Chief",
      "t": "The two-stage spine sweep ruled: first the Command-corpus sweep, then the 353-source `feeds:` sweep over the full library."
     },
     {
@@ -695,17 +695,17 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "The break-break: \"I don't want to move forward with any more of this until we figure out everything we need to do: take in all the data from Zotero and consider it in making models for the top layer of what story is — plot, characters, scenery.\""
     },
     {
      "when": "9/16",
      "who": "Claude",
-     "t": "Boresight delivered same turn: the live Zotero DB is 148 to 265 items newer than the Drive copy the catalog was built from; one Zotero note exists (the library is the note); 392 PDF annotations; Papi's 2023 tag scheme already keys about 400 items to spine levels."
+     "t": "Boresight delivered same turn: the live Zotero DB is 148 to 265 items newer than the Drive copy the catalog was built from; one Zotero note exists (the library is the note); 392 PDF annotations; Chief's 2023 tag scheme already keys about 400 items to spine levels."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Boresight cleared, five rulings: scope all 1,031 items, the distill template gets mind models, Blocked #8 ruled plot = 04, story side only gates on this, product defaults to new SSOT docs with plot_systems first."
     },
     {
@@ -715,7 +715,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Wave one, go.\""
     },
     {
@@ -725,7 +725,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Wave two, go.\""
     },
     {
@@ -735,12 +735,12 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Are you sure this is all we have on plot and setting?\""
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Run the full pass, take all the agents you need.\""
     },
     {
@@ -750,7 +750,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Plot systems go, setting wave go.\""
     },
     {
@@ -760,12 +760,12 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Plot go\" — the plot system ruled, all seven calls as recommended, v0.1.1."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"TM go\" — the Technical Manual page type ruled."
     },
     {
@@ -775,7 +775,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Okay, let's work on Bolo 18.\" The order on the sheet ran: the character wave."
     },
     {
@@ -785,7 +785,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Texture wave go, character calls go.\""
     },
     {
@@ -800,17 +800,17 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Texture calls go.\""
     },
     {
      "when": "9/16",
      "who": "Claude",
-     "t": "The thirteen texture calls ruled as recommended (doc 0.1.1, TM 05 v2). Nothing owed from Papi on BOLO 18 but the genre wave's opening and the acquisitions."
+     "t": "The thirteen texture calls ruled as recommended (doc 0.1.1, TM 05 v2). Nothing owed from Chief on BOLO 18 but the genre wave's opening and the acquisitions."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Genre wave go.\" Then: the acquisition list, and can the PDFs just go in one drop folder."
     },
     {
@@ -820,7 +820,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Go ahead and close the gate. Genre calls go. The acquisitions are in the drop folder with a whole bunch of other new PDFs I'd like you to incorporate into the systems; especially look at Character Bones for the character system.\""
     },
     {

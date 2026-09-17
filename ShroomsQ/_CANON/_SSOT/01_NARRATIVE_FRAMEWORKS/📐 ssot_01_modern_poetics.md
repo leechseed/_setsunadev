@@ -67,12 +67,12 @@ trunk: BLACK (P3 and the three checks bridge ORANGE)
 
 ## THE THREE NATIVE CHECKS (coined 2026-08-31 — v0, spoken register preserved by order)
 
-**The mode is the doctrine.** Each check is answered **off the cuff, in one breath — voice-memo register.** Papi's order, verbatim intent: the articulation must never be "multiplied upon itself." **Forbidden for all three:** taxonomies of the check, nested frameworks, meta-layers, scoring rubrics. One element, one breath, next.
+**The mode is the doctrine.** Each check is answered **off the cuff, in one breath — voice-memo register.** Chief's order, verbatim intent: the articulation must never be "multiplied upon itself." **Forbidden for all three:** taxonomies of the check, nested frameworks, meta-layers, scoring rubrics. One element, one breath, next.
 
 ### P8 · THE FANTASY DRIVE
 **The law:** every element in the system — every character, place, object, scene, mechanic, every little tiny thing — carries its **intended fantasy**: what the audience gets to *be, feel, or do* through it. If no one can say the fantasy of a thing in one breath, the thing is not done.
-**The capture (protocol RULED 2026-08-31):** spoken by Papi in-chat, dictation as-is — **Papi's voice is the line of quality and the canon form.** Claude may draft candidate lines, marked **⧗ draft**; a draft becomes canon only when Papi keeps it or speaks it over. Off the cuff, esoteric welcome, never systematized.
-**Rank:** Papi, on coining it: *"probably the most important thing."*
+**The capture (protocol RULED 2026-08-31):** spoken by Chief in-chat, dictation as-is — **Chief's voice is the line of quality and the canon form.** Claude may draft candidate lines, marked **⧗ draft**; a draft becomes canon only when Chief keeps it or speaks it over. Off the cuff, esoteric welcome, never systematized.
+**Rank:** Chief, on coining it: *"probably the most important thing."*
 **Address:** systemic — every spine level, every ladder rung, every 12-layer sheet, every plot element. No exceptions by design.
 **Sweep order (RULED 2026-08-31):** the three checks run as three full sweeps — fantasy across everything, then sexy across everything, then aesthetic across everything — never bundled per element.
 
@@ -98,7 +98,7 @@ P1's "engagement before message" vs the spine's "story = Grand Argument": they c
 ## OPEN
 
 - **Constraint-layer entry** (ask #3): P1–P10 as Standing-Order candidates rides the open DOCTRINE 0 ratification. Deferred by ruling.
-- **The application pass** — running P8–P10 over the existing canon (Tori, DCUS, the Drop, storyform, scene cards) = **BOLO 21**; fires on Papi's go.
+- **The application pass** — running P8–P10 over the existing canon (Tori, DCUS, the Drop, storyform, scene cards) = **BOLO 21**; fires on Chief's go.
 - **plot_systems physical shelf** — P5–P7 + extracted tools land wherever decision #8 puts the domain.
 - Name garble flag: "Modern Poetics" ruled from the final utterance; "Modern Entertainment Poetics" was voiced mid-stream — correct on request, one line.
 

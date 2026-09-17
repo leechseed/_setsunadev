@@ -58,28 +58,28 @@
     "options": "GO (staged: no-dependency items now, the rest as their gates clear) · HOLD to a date · NO-GO (park with the AAR; the bible and the library stay as assets)",
     "default": "staged clear (rec)",
     "s": "ruled",
-    "ruling": "RULED 2026-09-16, Papi: \"rule D9 go.\" GO, staged clear. The undated hold ended after twelve days and five boards."
+    "ruling": "RULED 2026-09-16, Chief: \"rule D9 go.\" GO, staged clear. The undated hold ended after twelve days and five boards."
    },
    {
     "q": "D-5 · the nut and the runway",
     "options": "your number: months of runway without income. Nine to twelve → run as briefed; four to eight → first-dollar-first plus a part-time search; under four → compress or park",
     "default": "none; only you have it",
     "s": "ruled",
-    "ruling": "RULED 2026-09-16, Papi: \"D5 go.\" Provisional. The structure as asked: the nut as a range, runway = liquid ÷ nut, the backstop its own line; the number itself is Papi's and goes in the gates table §1. Read off the record (unemployed 9/3, $0 base, backstop), runway is treated as under four months → first-dollar-first: the slice sells at Gate 3, the launch library compresses to twenty plus sixty days, the income search runs in parallel. The number is the one thing that moves the branch."
+    "ruling": "RULED 2026-09-16, Chief: \"D5 go.\" Provisional. The structure as asked: the nut as a range, runway = liquid ÷ nut, the backstop its own line; the number itself is Chief's and goes in the gates table §1. Read off the record (unemployed 9/3, $0 base, backstop), runway is treated as under four months → first-dollar-first: the slice sells at Gate 3, the launch library compresses to twenty plus sixty days, the income search runs in parallel. The number is the one thing that moves the branch."
    },
    {
     "q": "D-6 · the disclosed-persona frame",
     "options": "yes, a disclosed 3D persona is the believability bar · no, another frame",
     "default": "yes (rec)",
     "s": "ruled",
-    "ruling": "RULED 2026-09-16, Papi: \"D6 yes.\" A disclosed 3D persona is the believability bar. The COA's first open question closed with it."
+    "ruling": "RULED 2026-09-16, Chief: \"D6 yes.\" A disclosed 3D persona is the believability bar. The COA's first open question closed with it."
    },
    {
     "q": "D-7 · the loss",
     "options": "who, and the year; cause matters more than year for the spine",
     "default": "none; yours",
     "s": "ruled",
-    "ruling": "RULED 2026-09-16, Papi: \"D7 go.\" The recommendation as written: mother is the loss · 2020 · overdose · she is 15. Dad alive, the eviction at 18 in 2023. Anniversary month stays open as a content-calendar lever; the death date is a transit pick once the natal chart is fixed. Unlocks the second half of the character sheet."
+    "ruling": "RULED 2026-09-16, Chief: \"D7 go.\" The recommendation as written: mother is the loss · 2020 · overdose · she is 15. Dad alive, the eviction at 18 in 2023. Anniversary month stays open as a content-calendar lever; the death date is a transit pick once the natal chart is fixed. Unlocks the second half of the character sheet."
    },
    {
     "q": "D-8 · the reference method",
@@ -230,7 +230,7 @@
     },
     {
      "n": 2,
-     "t": "**The design set** — benchmark read · Blender COA · reference-pull spec · the character sheet v0.2 (name + chart ruled) · the Season 1 beat sheet + shoot list (8 sets / 38 stills) · **the gates table with the nut as a range (D-5, provisional) · attainability stated.** Gate 2 passed on the provisional number; Papi's figure re-reads it.",
+     "t": "**The design set** — benchmark read · Blender COA · reference-pull spec · the character sheet v0.2 (name + chart ruled) · the Season 1 beat sheet + shoot list (8 sets / 38 stills) · **the gates table with the nut as a range (D-5, provisional) · attainability stated.** Gate 2 passed on the provisional number; Chief's figure re-reads it.",
      "s": "done",
      "when": "9/16"
     },
@@ -333,7 +333,7 @@
     },
     {
      "path": "_PRIVATE/BOLO-24-gates-table.md",
-     "what": "W6: the number block (Papi's), the branch ruled on the record, the gates table (three values, months 1–12), the rules that ride on it, the monthly review sheet, attainability",
+     "what": "W6: the number block (Chief's), the branch ruled on the record, the gates table (three values, months 1–12), the rules that ride on it, the monthly review sheet, attainability",
      "s": "done"
     },
     {
@@ -456,7 +456,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Rule D9 go.\" GO, staged clear, after twelve days and five boards."
     },
     {
@@ -466,7 +466,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"D6 yes.\" The disclosed-persona frame ruled."
     },
     {
@@ -481,7 +481,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"D7 go\" — the loss ruled as recommended: mother · 2020 · overdose · she is 15."
     },
     {
@@ -491,7 +491,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Build the sheet.\""
     },
     {
@@ -501,22 +501,22 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Let's go with Remy Slate for now.\" The persona's name ruled; spelling provisional (Remi on the sheet)."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Chart go. Publish 24.\""
     },
     {
      "when": "9/16",
      "who": "Claude",
-     "t": "Chart ruled and corrected against an ephemeris the same turn: the MS's block had Aug 8 (Moon Virgo) and three placements impossible in 2005; moved to Aug 11 night, intent kept (Sun Leo · Moon Scorpio · Aries rising · Uranus opposing the Moon in 2020). Sheet v0.2. Republished on Papi's word."
+     "t": "Chart ruled and corrected against an ephemeris the same turn: the MS's block had Aug 8 (Moon Virgo) and three placements impossible in 2005; moved to Aug 11 night, intent kept (Sun Leo · Moon Scorpio · Aries rising · Uranus opposing the Moon in 2020). Sheet v0.2. Republished on Chief's word."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Beats go.\""
     },
     {
@@ -526,7 +526,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"D5 go.\""
     },
     {
@@ -536,7 +536,7 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Slice go.\""
     },
     {

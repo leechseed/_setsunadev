@@ -1,6 +1,6 @@
 # CREATOR CASE — shared agent instructions (BOLO 45 wave one, 2026-09-10)
 
-You are researching and writing ONE business-side creator case study for a public GitHub repo. Working directory: `C:\Users\U01_LEECHSEED\Desktop\_setsunadev` (Windows; the Bash tool is Git Bash). Today is 2026-09-10. Your prompt names the SUBJECT, the output SLUG, and the register row with Papi's own note from 2023 or 2025.
+You are researching and writing ONE business-side creator case study for a public GitHub repo. Working directory: `C:\Users\U01_LEECHSEED\Desktop\_setsunadev` (Windows; the Bash tool is Git Bash). Today is 2026-09-10. Your prompt names the SUBJECT, the output SLUG, and the register row with Chief's own note from 2023 or 2025.
 
 ## What the file is
 A study of how one creator started, how they run their content, and how they get paid. Public-record sources only. Business side only. It sits beside the performer register as public canon under trunk ORANGE.
@@ -8,9 +8,9 @@ A study of how one creator started, how they run their content, and how they get
 ## Format — copy the template exactly
 Read `_CANON_NODES/creator-case-variety-itsol.md` FIRST (the template) and `_CANON_NODES/creator-case-natasha-teen.md` SECOND (the newest file, which already carries the tenth section). Reproduce the structure:
 
-- YAML frontmatter: `entity`, `entity_id`, `kind`, `ip`, `trunk: ORANGE`, `status: DELIVERED 2026-09-10 — BOLO 45 wave one (lane C), researched on Papi's order; every claim sourced; confidence labeled`, `register_row` (quote the row facts from your prompt), `pronouns`, `links` (`[[performer-register]]` plus any sibling case you cite), `captured: 2026-09-10`, `updated: 2026-09-10`.
+- YAML frontmatter: `entity`, `entity_id`, `kind`, `ip`, `trunk: ORANGE`, `status: DELIVERED 2026-09-10 — BOLO 45 wave one (lane C), researched on Chief's order; every claim sourced; confidence labeled`, `register_row` (quote the row facts from your prompt), `pronouns`, `links` (`[[performer-register]]` plus any sibling case you cite), `captured: 2026-09-10`, `updated: 2026-09-10`.
 - `# CREATOR CASE — <NAME>`
-- `**Bottom line.**` one paragraph · `**Papi's context.**` one paragraph built from the register row and his note, verbatim where he wrote one · `**Confidence.**` one paragraph.
+- `**Bottom line.**` one paragraph · `**Chief's context.**` one paragraph built from the register row and his note, verbatim where he wrote one · `**Confidence.**` one paragraph.
 - `## 1 · Identity + verified handles` (table: Platform | Handle / URL | How verified; a "Collisions excluded" line)
 - `## 2 · Timeline` (dated bullets; a growth series table from Wayback snapshots if any exist)
 - `## 3 · How they run it` (model · platform mix by era · formats, named at category level only · collab vs solo · cadence · positioning in their own words · production setup)
@@ -20,7 +20,7 @@ Read `_CANON_NODES/creator-case-variety-itsol.md` FIRST (the template) and `_CAN
 - `## 7 · Interviews / studies found` (numbered with URLs; then a "None found:" line listing what you checked)
 - `## 8 · Not known / conflicting`
 - `## 9 · Sources` (every URL used)
-- `## 10 · GOUGE` — **the header is provisional; Papi is ruling the name tonight; write it exactly as `## 10 · GOUGE` and do not invent another.** Four labeled parts, in this order:
+- `## 10 · GOUGE` — **the header is provisional; Chief is ruling the name tonight; write it exactly as `## 10 · GOUGE` and do not invent another.** Four labeled parts, in this order:
   - **The one mechanic.** The single business thing this creator does that is worth studying. One paragraph.
   - **Transferable tips.** Three to five imperative bullets for a small operator starting a studio or creator venture from zero, on a zero budget. Concrete, not generic.
   - **Does not transfer.** What in this path does not carry to a zero-budget operator running a disclosed rendered persona, and why. One paragraph.

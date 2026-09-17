@@ -9,7 +9,7 @@ open_on_resume: the Ford confirm — Sierra Cosworth RS500 marked owned provisio
 
 # FORZA WHEELSPIN TRACKER
 
-**The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Papi calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
+**The full wheelspin-exclusive car list (Forza 6), as dictated 2026-08-31.** Protocol: Chief calls out owned cars → they get checked `[x]` + struck through here → the NEEDED list below regenerates to show only what's left to chase.
 
 **Total: 104 · Owned: 37 (1 ⚠️ confirm) · Needed: 67**
 

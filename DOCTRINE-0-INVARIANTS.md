@@ -3,7 +3,7 @@ rung: policy · NASA four, ruled 2026-09-15 (BOLO 50)
 title: DOCTRINE 0 — Invariants on Invariants
 type: doctrine
 trunk: BOTH
-status: v1.0 — RATIFIED 2026-09-03 (Papi, spoken: "doctrine zero is good"). The seven stand. The rename ruling (Tenet ⭐ · General Order · Standing Order bench) remains OPEN — ratification covers the rules, not the name
+status: v1.0 — RATIFIED 2026-09-03 (Chief, spoken: "doctrine zero is good"). The seven stand. The rename ruling (Tenet ⭐ · General Order · Standing Order bench) remains OPEN — ratification covers the rules, not the name
 updated: 2026-09-03
 sources: Quartermaster promotion rule · BVX-LEARN one-sheet Invariants field (20+ sets) · Layer 0 Invariants 1–5 · VICTORIA_MIDNIGHT ingest §9 · Non-Negotiable Invariants method (Arcane, Westworld) · SSOT Writing Guide — Marine Corps Doctrine Standard v1.0.0 (2026-02-09)
 related: BVX-ULTRASIN-twin-track.md
@@ -61,16 +61,16 @@ The term is already load-bearing across the repo. Nothing below is new; this doc
 
 ## 3 · Open ruling — the name
 
-"Invariant" is doing the work but the word is disliked. Papi's spec (2026-08-21): not a saying, not a motto — the way a unit conducts itself; the purpose and reason a unit exists. Doctrine splits that into **two slots**: the rule that never changes (tenet / general order) and the identity-and-purpose of the unit (ethos / mission / intent). The ruling may fill both.
+"Invariant" is doing the work but the word is disliked. Chief's spec (2026-08-21): not a saying, not a motto — the way a unit conducts itself; the purpose and reason a unit exists. Doctrine splits that into **two slots**: the rule that never changes (tenet / general order) and the identity-and-purpose of the unit (ethos / mission / intent). The ruling may fill both.
 
 | Candidate | Slot | Register | Case |
 |---|---|---|---|
 | **Tenet** ⭐ | rule | Doctrinal | The actual term for a permanent operating truth inside a doctrine ("tenets of maneuver warfare"). "The Seven Tenets" reads as doctrine. Strongest pure rename. |
-| **Ethos** ⭐ | set/identity | Doctrinal (warrior ethos) | The way a unit conducts itself because of what it is — the concept Papi described. Works as the name for the *set*: each rule a Tenet, the whole an Ethos. |
+| **Ethos** ⭐ | set/identity | Doctrinal (warrior ethos) | The way a unit conducts itself because of what it is — the concept Chief described. Works as the name for the *set*: each rule a Tenet, the whole an Ethos. |
 | **Commander's Intent** | identity | Doctrinal | The purpose that survives contact — plans die, intent endures. Precisely the invariant-vs-content relation. Two words, role-bound. |
 | **General Order** | rule | Marine | Memorized, universal, never changes — fixes the standing-order objection (standing orders get countermanded; the eleven General Orders do not). |
-| **Standing Order** | rule | Marine | Remains in effect until countermanded — Invariant VII for free. Papi's objection: implies eventual change. |
-| **Creed** | identity | Marine (Rifleman's Creed) | Identity stated as operating truths. Saying-adjacent — Papi excluded sayings. |
+| **Standing Order** | rule | Marine | Remains in effect until countermanded — Invariant VII for free. Chief's objection: implies eventual change. |
+| **Creed** | identity | Marine (Rifleman's Creed) | Identity stated as operating truths. Saying-adjacent — Chief excluded sayings. |
 | **Covenant** | rule/identity | Ecclesial | Fits The Administration's Ecclesial Laws register; a binding that defines both parties and does not expire. |
 | **Mandate** | identity | Institutional | The reason-for-existing word. Clean noun, corporate at the edges. |
 | **Law** | rule | Ecclesial | Precedent exists (Ecclesial Laws). Collides with legal-layer language in the twin-track ruling. |

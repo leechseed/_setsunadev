@@ -4,7 +4,7 @@ category: collision_engine
 version: 1.0.0
 last_updated: 2026-08-26
 applies_to: [all IPs, character pipeline, setting system]
-status: canonical — lattice Module 5, built on Papi's go 2026-08-26 (BOLO 17); contact vocabulary provisional
+status: canonical — lattice Module 5, built on Chief's go 2026-08-26 (BOLO 17); contact vocabulary provisional
 purpose: "THE COLLISION ENGINE — generalized synastry: any slice against any slice, producing friction, and friction is dramatic material. Activates Character Astrology Cats 11/13, adds the C×S mirror diagonal, proven on Tori × DCUS."
 dependencies: ["ssot_02_character_astrology (Cats 11–13)", "ssot_03_setting_system", "ssot_01_scale_ladder (addresses)", "oxo-storyform §9", "victoria-midnight", "delta-coast-ultra-school"]
 trunk: BLACK
@@ -82,4 +82,4 @@ Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victo
 
 ## Version history
 
-- **1.0.0 — 2026-08-26.** Built on Papi's go (BOLO 17): four classes, contact vocabulary, output contract, Tori×DCUS twelve-row proof run from canon.
+- **1.0.0 — 2026-08-26.** Built on Chief's go (BOLO 17): four classes, contact vocabulary, output contract, Tori×DCUS twelve-row proof run from canon.

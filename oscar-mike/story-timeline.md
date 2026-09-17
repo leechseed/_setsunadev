@@ -11,7 +11,7 @@ open-decision: "(1) delivery shape — one in-chat head version in three parts (
 
 ## The transmission (9/6, break-break ×4, boresight called, "how copy")
 
-Papi's theory: the story-timeline tool (Ableton × DaVinci Resolve × Premiere — a time series plus drag-and-drop blocks) should take its underlying theory from **electronic sound synthesis** (analog, modular, MIDI, Moog: composition as signal flow) set against **classically taught music theory** (the conservatory pipeline, "professional musician" vs "musical artist"). The theory attaches to data already collected. Two boresights owed: (a) the UX/UI of timelining a story once the elements exist; (b) the two theories as composition paradigms. Then the pipeline: syllabus → acquire → BVX-LEARN intake → the system's grammar (BOLO 36).
+Chief's theory: the story-timeline tool (Ableton × DaVinci Resolve × Premiere — a time series plus drag-and-drop blocks) should take its underlying theory from **electronic sound synthesis** (analog, modular, MIDI, Moog: composition as signal flow) set against **classically taught music theory** (the conservatory pipeline, "professional musician" vs "musical artist"). The theory attaches to data already collected. Two boresights owed: (a) the UX/UI of timelining a story once the elements exist; (b) the two theories as composition paradigms. Then the pipeline: syllabus → acquire → BVX-LEARN intake → the system's grammar (BOLO 36).
 
 ## The read, as delivered
 
@@ -30,7 +30,7 @@ Question 3 (rule the prowords) left the chat and became the first five slots of 
 
 ## Resume
 
-1. Papi answers the four questions in the frontmatter (or rules them through the loop).
+1. Chief answers the four questions in the frontmatter (or rules them through the loop).
 2. Fire the three-part head version; bank to `_0.1_BVX_LEARN/LOCI/` (a locus per part) or `_meta/`.
 3. BOLO 36 follows: syllabus → `_BVX_INBOX` → 🧬 MUS.01/.02 → the grammar.
 

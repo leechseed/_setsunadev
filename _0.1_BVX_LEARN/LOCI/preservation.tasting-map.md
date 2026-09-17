@@ -12,7 +12,7 @@ tier: ground
 
 # THE TASTING MAP
 
-**Rule (Papi, 9/6):** the original, then close alternatives findable *anywhere* — supermarket, Amazon, or the nearest Asian, Latin, Mediterranean, or Eastern European grocer. Not tied to where he lives. Eat down the table; the field map tells you what lever you are tasting.
+**Rule (Chief, 9/6):** the original, then close alternatives findable *anywhere* — supermarket, Amazon, or the nearest Asian, Latin, Mediterranean, or Eastern European grocer. Not tied to where he lives. Eat down the table; the field map tells you what lever you are tasting.
 
 ## Dry
 

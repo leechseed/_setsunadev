@@ -4,7 +4,7 @@ entity_id: creator_case_alexbreecooper
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
+status: DELIVERED 2026-09-10 — researched on Chief's order (spoken 9/10); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — AlexBreeCooper · C · S · 2026"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -19,7 +19,7 @@ updated: 2026-09-10
 
 **Bottom line.** No interview, podcast, article, or creator-economy write-up about AlexBreeCooper exists anywhere reachable. Web search is polluted by the podcaster Alex Cooper, and the only third-party "bio" page copy-pastes the podcaster's life. Everything below comes from her own platform profiles, public platform APIs, her tweets, and Wayback snapshots — and that primary record is unusually rich: a full Fansly pricing/tier record, a seven-point Pornhub rank/subscriber time series 2022–2026, dated account milestones on eight platforms, and her own written subscription policy.
 
-**Papi's context.** Spoken into the register 9/10 (spelled out), lane C, as a solo creator who started from the bottom. In Stash as AlexBreeCooper (id 1240): 64 attributed scenes, none rated; the folder holds 256 files, 192 unattributed. Her Dec-2021 "Siswet's SIS-CAN" video sits in that folder — she names [Siswet](creator-case-siswet.md) as the niche reference.
+**Chief's context.** Spoken into the register 9/10 (spelled out), lane C, as a solo creator who started from the bottom. In Stash as AlexBreeCooper (id 1240): 64 attributed scenes, none rated; the folder holds 256 files, 192 unattributed. Her Dec-2021 "Siswet's SIS-CAN" video sits in that folder — she names [Siswet](creator-case-siswet.md) as the niche reference.
 
 **Confidence.** Fansly API HIGH · fxtwitter HIGH · Wayback HIGH for the snapshot date · *snippet* LOW.
 

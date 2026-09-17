@@ -4,7 +4,7 @@ entity_id: creator_case_siswet
 kind: creator case study — business-side research on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; the niche-craft career model — "the Siswet lane" — in the lab-venture card; feeds the performer register)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10); the one case with a real self-told record (Dutch media 2019–2026); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
+status: DELIVERED 2026-09-10 — researched on Chief's order (spoken 9/10); the one case with a real self-told record (Dutch media 2019–2026); every claim sourced; confidence labeled · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Siswet · P · A · 2022 (on the register since CULT OF ADLAW 2022)"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 correction: "BERLIN-PIVOT.md calls her the German-systematization case — she is Dutch (Achterhoek, Doetinchem), by her own bios and every press piece. The systematization read may stand; the nationality does not."
@@ -19,7 +19,7 @@ updated: 2026-09-10
 
 **Bottom line.** Siswet is Elise (surname private), a **Dutch** solo webcam-first creator from the Achterhoek (Doetinchem), born 10 Mar 1995, who began experimenting on webcam at 18 (2013), went "active in the industry" in 2014, and built a funnel of free Chaturbate room → Pornhub tube views → paid subscriptions (OnlyFans / Fansly / F2F) plus a signature toy-and-lube product line. 1st Pornhub Awards nominee (2018); listed winner of Top Anal Performer (2020) and Top Fetish Performer (2022). **She has told her own story several times — almost entirely to Dutch media** (VICE NL 2019, Regio8 2021, PowNed/NPO 3 2021, BNNVARA's Spuiten en Slikken 2026); English-language coverage is one Medium interview (2021) and one small comedy podcast (2022). No academic or creator-economy study exists.
 
-**Papi's context.** On the register since the 2022 CULT OF ADLAW list, lane P. His own prior notes: BERLIN-PIVOT names her the German-systematization case study, "solo practice as discipline" (**nationality corrected here: Dutch**); the lab-venture card names "the Siswet lane" as the niche-craft career model beside Natalie Mars and asks whether the platform commit needs a cam layer for it. In Stash as Elise Siswet (id 430; aliases Elise Anal Princess · Elise The Butt Princess · Siswet · Siswet19 · Siswet_XX): 42 attributed scenes, none rated; 597 files path-match her on disk — a 420-file Fansly 2026 pack plus a month-by-month 2021–2022 archive. AlexBreeCooper's Dec-2021 "Siswet's SIS-CAN" video is in Stash too — the younger creator naming the benchmark.
+**Chief's context.** On the register since the 2022 CULT OF ADLAW list, lane P. His own prior notes: BERLIN-PIVOT names her the German-systematization case study, "solo practice as discipline" (**nationality corrected here: Dutch**); the lab-venture card names "the Siswet lane" as the niche-craft career model beside Natalie Mars and asks whether the platform commit needs a cam layer for it. In Stash as Elise Siswet (id 430; aliases Elise Anal Princess · Elise The Butt Princess · Siswet · Siswet19 · Siswet_XX): 42 attributed scenes, none rated; 597 files path-match her on disk — a 420-file Fansly 2026 pack plus a month-by-month 2021–2022 archive. AlexBreeCooper's Dec-2021 "Siswet's SIS-CAN" video is in Stash too — the younger creator naming the benchmark.
 
 **Confidence.** Fansly API HIGH · fxtwitter HIGH · Wayback Pornhub snapshots HIGH for the snapshot date · VICE NL 2019 earnings HIGH (first-hand) · PowNed/Skoften 2021 earnings MEDIUM (second-hand) · award category names MEDIUM (ru.wikipedia only) · bio-farm claims LOW.
 
@@ -70,7 +70,7 @@ updated: 2026-09-10
 - **2021-03-12** — Regio8 feature "Achterhoekse rijzende ster in seksindustrie"; she tweeted it same day.
 - **2021-04-26/28** — PowNed / NPO 3 "Socials, Seks & Centen" (Ferry Doedens); PowNed calls her one of the top Dutch OnlyFans earners; Skoften reports €40–70k/month.
 - **2021-08-07** — Lola Down Medium interview "Interview with 'Anal Ambassador' Siswet."
-- **2021-12** — AlexBreeCooper "Siswet's SIS-CAN" video (in Papi's Stash; not independently located online).
+- **2021-12** — AlexBreeCooper "Siswet's SIS-CAN" video (in Chief's Stash; not independently located online).
 - **2022-02** — Linktree created.
 - **2022-03-21** — Pornhub rank 93; 188.3M views; 213K subs.
 - **2022-03-23** — 4th Pornhub Awards: **Top Fetish Performer, winner** (ru.wikipedia).
@@ -188,7 +188,7 @@ The tier ladder ($4.99 entry → $499 "boyfriend" / custom tiers) is the cleares
 - **Earnings jump:** €4k+/month (2019, first-hand) → €40–70k/month (2021, second-hand).
 - **"Club Owner"** in the current allmylinks bio — no corroboration found.
 - **ManyVids** stats none; **Fansly subscriberCount** hidden; **OnlyFans** prices/counts unfetchable.
-- **AlexBreeCooper Dec-2021 tribute** — in Papi's Stash, not located online; the Jul-2022 tweet confirms the SIS-CAN product.
+- **AlexBreeCooper Dec-2021 tribute** — in Chief's Stash, not located online; the Jul-2022 tweet confirms the SIS-CAN product.
 - Height: 5'8" (bio farms) vs 5'10"/177 cm (Pornhub profile 2024).
 - "Jurre op Date": a 2022 re-upload on her channel and a 2026-04-02 upload on BNNVARA's — two episodes or a re-release; unresolved.
 

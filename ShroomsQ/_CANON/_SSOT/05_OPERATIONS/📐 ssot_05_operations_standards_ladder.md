@@ -5,11 +5,11 @@ category: operations
 version: 0.2.0
 last_updated: 2026-09-15
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
-status: ruled 2026-09-15 by Papi ("let's go with the NASA four"); the filing table grows a row per document
+status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document
 bolo: 50
 purpose: "Names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record."
 dependencies: ["[[DOCTRINE-0-INVARIANTS]]", "[[SOP]]", "[[📐 ssot_05_operations_project_flow]]", "[[📐 ssot_05_operations_development_standard]]", "[[standards.register]]"]
-sources: "standards.register.md §1 (how nine bodies tier their documents, 2026-09-11) · NASA NODIS directive tiers (NPD → NPR → NASA-STD / NASA-HDBK) · DoD DSP (MIL-STD · MIL-HDBK · MIL-SPEC) for the spec concept · Papi's ruling 2026-09-15"
+sources: "standards.register.md §1 (how nine bodies tier their documents, 2026-09-11) · NASA NODIS directive tiers (NPD → NPR → NASA-STD / NASA-HDBK) · DoD DSP (MIL-STD · MIL-HDBK · MIL-SPEC) for the spec concept · Chief's ruling 2026-09-15"
 ---
 
 # 📐 ssot_05_operations_standards_ladder — THE COMMAND LADDER

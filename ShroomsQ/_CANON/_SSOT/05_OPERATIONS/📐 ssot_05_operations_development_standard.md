@@ -34,7 +34,7 @@ sources: "SOP.md comms codes §1, rulings 2026-08-21 to 2026-09-12 · ssot_05_op
 
 ## Purpose
 
-This document states how one exchange between Papi and Claude becomes a built thing, from a single turn to a project. It governs the **loop**. The project flow governs the project the loop runs inside; the SOP governs the session that contains it.
+This document states how one exchange between Chief and Claude becomes a built thing, from a single turn to a project. It governs the **loop**. The project flow governs the project the loop runs inside; the SOP governs the session that contains it.
 
 The loop exists to end two failure modes. The first is **the stall pattern**: a finished design blocked on one unanswered decision, then rebuilt from scratch later, because the block was never named and dated. The second is its cousin: **work built before the order was confirmed**, spending effort on a shared image that was never actually shared.
 
@@ -58,14 +58,14 @@ The Command names its own three grains. The **increment** is one turn's delivery
 
 | Stage | Proword | What happens | Who | Exit event | Outside name |
 |---|---|---|---|---|---|
-| **Capture** | BOLO | A spoken tasking is written into BOLO.md the same turn it is spoken | Papi speaks, Claude writes | The line exists on the sheet | Backlog intake |
+| **Capture** | BOLO | A spoken tasking is written into BOLO.md the same turn it is spoken | Chief speaks, Claude writes | The line exists on the sheet | Backlog intake |
 | **Orient** | sit rep / DOPE SHEET N | The board or the BOLO's standing page delivers in fixed blocks or SMEAC order | The formation reads; the main line writes only the header | The page is read | Observe / Orient (OODA) |
-| **Understanding check** | boresight | Readback, the read, clarifying questions, in that order | Claude proposes, Papi rules | Papi clears delivery | Inspection (Scrum) |
-| **The order and readback** | how copy | "Good copy" plus a one-to-two-line readback, then execute | Papi closes the order, Claude reads it back | Execution begins | Decide → Act (OODA) |
+| **Understanding check** | boresight | Readback, the read, clarifying questions, in that order | Claude proposes, Chief rules | Chief clears delivery | Inspection (Scrum) |
+| **The order and readback** | how copy | "Good copy" plus a one-to-two-line readback, then execute | Chief closes the order, Claude reads it back | Execution begins | Decide → Act (OODA) |
 | **Build** | (the formation) | Hub and spoke: gear 1 default, specialists on disjoint inputs, one script reviewer at the fan-in | Specialists plus one reviewer | The reviewer's checklist clears | Do (PDCA) |
 | **Delivery and the record** | (the reply) | The reply lands in chat; the increment is pushed onto the sheet | Claude | FRAGO N merges and republishes | An increment delivered (12207/15288) |
-| **Close** | Oscar Mike | Ready Rack note finalized, STATE updated, journal appended, OUT block closes the reply | Claude, ruled by Papi | The OUT block, nothing after it | Check/Act (PDCA); the AAR |
-| **Resume** | Charlie Mike / RTB | A legacy card reopens at its resume order, or goes home and clears; new work resumes from its DOPE SHEET | Papi speaks, Claude executes | The card is cleared or resumed | Adaptation (Scrum) |
+| **Close** | Oscar Mike | Ready Rack note finalized, STATE updated, journal appended, OUT block closes the reply | Claude, ruled by Chief | The OUT block, nothing after it | Check/Act (PDCA); the AAR |
+| **Resume** | Charlie Mike / RTB | A legacy card reopens at its resume order, or goes home and clears; new work resumes from its DOPE SHEET | Chief speaks, Claude executes | The card is cleared or resumed | Adaptation (Scrum) |
 
 Three correction channels can fire at any stage, not only at the one where they are listed:
 
@@ -92,7 +92,7 @@ Numbered. Each is derived from a source read for this document; none is invented
 1. **Nothing builds before the order is confirmed:** how copy cleared, or boresight cleared when boresight was spoken. *(SOP.md §1, the how-copy and boresight rows)*
 2. **A tasking not written down did not happen: same turn.** *(SOP.md §1, BOLO capture row; DOCTRINE 0, Invariant II)*
 3. **The ruling, not more structure, ends a stall; a hold carries a decider and a conversion date.** *(the project flow §D, the gate's HOLD rule; the stall pattern itself)*
-4. **Defaults run if silent, marked provisional.** *(SOP.md §1: every DOPE SHEET carries a "Silence:" default line; the Gear N row runs on silence; Papi's ruling of 2026-09-10 that a call with an obvious default is made and marked provisional, never asked)*
+4. **Defaults run if silent, marked provisional.** *(SOP.md §1: every DOPE SHEET carries a "Silence:" default line; the Gear N row runs on silence; Chief's ruling of 2026-09-10 that a call with an obvious default is made and marked provisional, never asked)*
 5. **One reviewer at the fan-in, never peer checks.** *(SOP.md §1, the sit rep and Gear N rows describing the formation, BOLO 54)*
 6. **The record keeps the abort line, not the order.** *(SOP.md §1, the abort abort abort row)*
 7. **Every increment lands on the sheet as a FRAGO; nothing lives only in chat.** *(SOP.md §1, the DOPE SHEET / FRAGO row)*
@@ -162,6 +162,6 @@ BOLO 53 was tabled 2026-09-12 and opened today, 2026-09-15, on one spoken word: 
 
 | Version | Date | Changes |
 |---|---|---|
-| 0.1.0 | 2026-09-15 | Working draft on Papi's "Open 53" (2026-09-15). Life-cycle read iterative-incremental, provisional. Rung provisional pending the BOLO 50 ladder. Promotes on two uses. |
-| 0.1.1 | 2026-09-15 | Papi: "Everything approved." The iterative-incremental read ruled, no longer provisional. Filing beside the project flow ruled; rung STANDARD, only the ladder (BOLO 50) still open. v0.1 accepted as working; canon on two uses. Use counter opens at the next M or L build. |
+| 0.1.0 | 2026-09-15 | Working draft on Chief's "Open 53" (2026-09-15). Life-cycle read iterative-incremental, provisional. Rung provisional pending the BOLO 50 ladder. Promotes on two uses. |
+| 0.1.1 | 2026-09-15 | Chief: "Everything approved." The iterative-incremental read ruled, no longer provisional. Filing beside the project flow ruled; rung STANDARD, only the ladder (BOLO 50) still open. v0.1 accepted as working; canon on two uses. Use counter opens at the next M or L build. |
 | 0.1.2 | 2026-09-15 | NASA four ruled on BOLO 50. Rung moved from STANDARD (provisional) to PROCEDURE. No rule changed. |

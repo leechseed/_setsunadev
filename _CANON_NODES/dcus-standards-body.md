@@ -7,7 +7,7 @@ ip: OVEREXITOUT
 series: The Outliers
 trunk: BLACK
 status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon · S12 invariant RULED KEEP 2026-09-15"
-capture_protocol: "Papi's spoken and ruled lines = canon · ⧗ = Claude development, strike or keep"
+capture_protocol: "Chief's spoken and ruled lines = canon · ⧗ = Claude development, strike or keep"
 slice: "Setting System S1–S12 — feeds S4 LAW and S12 FUNCTION of [[delta-coast-ultra-school]]"
 links:
   - "[[delta-coast-ultra-school]]"
@@ -36,7 +36,7 @@ bolo: 50
 - **The house ladder, ruled 2026-09-15.** Four rungs: **policy** ("what the house does and why… signed at the top"), **procedure** ("how the house does it. Mandatory."), **standard** ("the measurable 'shall' for a class of product or process"), **handbook** ("guidance. 'Should.' Forbids nothing"). Decided by: forbids nothing → handbook; measures a product → standard; governs how the house works → procedure; says what the house is and why → policy.
 - **DOCTRINE 0, Invariant III.** "An invariant names what it forbids… a constraint that constrains nothing is decoration."
 
-Everything past this line is ⧗ development against those lines. Nothing below is canon until Papi says so.
+Everything past this line is ⧗ development against those lines. Nothing below is canon until Chief says so.
 
 ---
 
@@ -99,7 +99,7 @@ The pattern: the Administration charges for departure from its record, not for d
 
 ## The S12 invariant — RULED KEEP 2026-09-15
 
-**RULED 2026-09-15, Papi: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
+**RULED 2026-09-15, Chief: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
 
 **Candidate:** No DCUS Star-Rating rises without a memory going missing from the record that earned it.
 

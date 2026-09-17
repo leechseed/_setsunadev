@@ -9,7 +9,7 @@ open-decision: "none blocking the walkthrough; standing: rename the girl account
 
 # The ULTRA DARK Walkthrough — parked at Block C
 
-Pointer card. **Everything substantive lives in `_PRIVATE/` (gitignored): `ULTRADARK-funnel.md` (rulings, accounts, kit, walkthrough log) · `ULTRADARK-THE-CUT.md` (the method, written for Papi) · `stash_day1_report.md`.** This repo is public; no handles here.
+Pointer card. **Everything substantive lives in `_PRIVATE/` (gitignored): `ULTRADARK-funnel.md` (rulings, accounts, kit, walkthrough log) · `ULTRADARK-THE-CUT.md` (the method, written for Chief) · `stash_day1_report.md`.** This repo is public; no handles here.
 
 ## Where it stopped (9/4 ~02:50)
 - **Block A, Resolve one-time setup: DONE.** Library, template project, working folders, script visible.
@@ -18,8 +18,8 @@ Pointer card. **Everything substantive lives in `_PRIVATE/` (gitignored): `ULTRA
 - **Stash day 1: DONE.** 399 duplicate groups tagged (nothing deleted) · 2,499 StashDB-matched scenes tagged `⛔ studio-content` · UD pool = 2,111 · identify pass 2 (studio/performer names) finished or finishing; report in `_PRIVATE/`.
 
 ## Resume order
-1. Papi says "marked" with the count → run `Q:\fun\_ULTRADARK\00_ADMIN\tools\stash_pull_marked.py smo` → Block D (Resolve: duplicate `_TEMPLATE` as `smo`, drop the WAV, run `resolve_build_timeline` with slug `smo`, BPM 123, offset 2.183).
+1. Chief says "marked" with the count → run `Q:\fun\_ULTRADARK\00_ADMIN\tools\stash_pull_marked.py smo` → Block D (Resolve: duplicate `_TEMPLATE` as `smo`, drop the WAV, run `resolve_build_timeline` with slug `smo`, BPM 123, offset 2.183).
 2. Block E the cut (THE CUT Part 1 rules) → Block F deliver → Block G post-log + `ud:posted`.
-3. Standing: rename the girl account once its copyright-notice history is checked (Claude offered the Gmail search) · Stash is bound to all interfaces with no password (Papi's call) · watermark/end-card in the NOIR register on request.
+3. Standing: rename the girl account once its copyright-notice history is checked (Claude offered the Gmail search) · Stash is bound to all interfaces with no password (Chief's call) · watermark/end-card in the NOIR register on request.
 
 Related: [[project-flow]] · [[dictation-dictionary]] · [[lab-venture]] · BOLO 24 (held at its ledger, D-9 converts at next sit rep)

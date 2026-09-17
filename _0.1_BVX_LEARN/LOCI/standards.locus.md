@@ -1,24 +1,24 @@
 ---
 locus: standards
 title: The standards campaign — every level of the operation as a standards organization
-status: RESEARCH PHASE · opened 2026-09-11 on Papi's break-break (BOLO 50)
+status: RESEARCH PHASE · opened 2026-09-11 on Chief's break-break (BOLO 50)
 trunk: BLACK · ORANGE · OPERATOR (every level)
 methods: link harvest → register by domain and tier → map to house areas → derive the house's own standards from work already done
 neighbors: SOP.md (the house standard) · MIL.01–11 (the Corps bootstrap) · the marking SOP (BOLO 32) · the project flow (BOLO 25) · the WATCH register (BOLO 34, built on MIL-STD-1472 + FAA HF-STD-001) · the lattice (story standards) · the character system
 feeds: 05_OPERATIONS · the design system · the story systems (DCUS, Trash Land, ASTRO7EX as in-world standards bodies)
-sources: Papi's harvest below (ANSI webstore · AIAA · NASA NODIS · EverySpec · NATO NSO · PMI · ASQ · DLA DSP · ESTA · IS&T · CTA · IEC · print technologies) · the register file beside this one
+sources: Chief's harvest below (ANSI webstore · AIAA · NASA NODIS · EverySpec · NATO NSO · PMI · ASQ · DLA DSP · ESTA · IS&T · CTA · IEC · print technologies) · the register file beside this one
 tier: seed
 ---
 
 # THE STANDARDS LOCUS
 
-**Papi's transmission (9/11, break-break, verbatim where it matters):** "what I've been doing right now and what I've been trying to figure out are just the standards of the organization and the process and application of everything… there needs to be a BOLO and an effort to continuously examine and create standards, not just at the ORANGE and BLACK level, but even within the project level like ASTRO7EX and The Outliers, considering that each area is a standards organization… the greatest dynamic of story is the battle between the individual person and society itself for freedom and standard… a lot of what we're trying to do here is very complex standards for very big organizations of data and also society within stories… extend and start creating a library, an internet, a network of standards that work together… we're gonna have to develop our own standards for these storytelling aspects as we have with character… this is a campaign… standardization and automation on our side give us that speed."
+**Chief's transmission (9/11, break-break, verbatim where it matters):** "what I've been doing right now and what I've been trying to figure out are just the standards of the organization and the process and application of everything… there needs to be a BOLO and an effort to continuously examine and create standards, not just at the ORANGE and BLACK level, but even within the project level like ASTRO7EX and The Outliers, considering that each area is a standards organization… the greatest dynamic of story is the battle between the individual person and society itself for freedom and standard… a lot of what we're trying to do here is very complex standards for very big organizations of data and also society within stories… extend and start creating a library, an internet, a network of standards that work together… we're gonna have to develop our own standards for these storytelling aspects as we have with character… this is a campaign… standardization and automation on our side give us that speed."
 
 **The ask for the research phase:** a lot of the links are lists of standards, not standards. Pull whatever can be pulled from each one and organize the data the best way possible. This is the starting point.
 
 **Where the pull lands:** `standards.register.md` beside this file (the agent's output), organized by domain, by tier (policy → standard → handbook → procedure), and mapped to the house areas.
 
-## The harvest (Papi, 9/11)
+## The harvest (Chief, 9/11)
 
 ### ANSI webstore · single standards
 - https://webstore.ansi.org/standards/iso/isoiec420014200542006

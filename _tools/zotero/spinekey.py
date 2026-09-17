@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """BOLO 18 stage 2, step 2b: give every story-side item (CRE + LIT) a story-spine key.
-Order of authority: Papi's 0N_ tags (already imported by inventory.py, never overwritten) > title rules here (marked `spine_src: rule`).
+Order of authority: Chief's 0N_ tags (already imported by inventory.py, never overwritten) > title rules here (marked `spine_src: rule`).
 Items no rule reaches get `spine: ["L0?"]` + `spine_src: none` and land in the review list for a PS pass on their TOC.
 Spine levels: L0 root theory · L4 plot · L5 character · L6 theme · L7 genre/medium/audience · SETTING · TEXTURE (telling / narration).
 
@@ -44,7 +44,7 @@ def main():
     L = ["---", "id: BVX-LEARN.spine-keys", "title: \"Story-side spine keys (BOLO 18 stage 2)\"", "type: report",
          f"generated: {datetime.date.today()}", "status: BOLO 18 stage 2 - step 2b", "---", "",
          "# Story-side spine keys", "",
-         f"{len(story)} CRE + LIT items. Authority: Papi's tags, then title rules, then a review list for a PS pass on each TOC.", "",
+         f"{len(story)} CRE + LIT items. Authority: Chief's tags, then title rules, then a review list for a PS pass on each TOC.", "",
          "| Source | Items |", "|---|---|"] + [f"| {k} | {v} |" for k, v in c.most_common()]
     L += ["", "## Items per level", "", "| Level | Items |", "|---|---|"] + [f"| {k} | {v} |" for k, v in lvc.most_common()]
     L += ["", "## The shelves", ""]

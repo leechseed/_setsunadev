@@ -62,7 +62,7 @@ READ: {rel(os.path.join(wd, 'sources.md'))} (everything the house has on it) and
 WRITE: {rel(os.path.join(HERE, 'boards', n + '.draft.json'))} — the whole sheet in the schema's shape, filled for BOLO {n} ("{title}"):
   bolo: n · title · trunk · issued (the row's date) · asof (today) · s · status (one header line) · decider "HOTLINE ACTUAL" · feeds · related (n + why, from the rows it names) · home "BOLO.md · row {n}" · card "none" · version "v0.1 · DOPE SHEET"
   mantra: three lines (speed · focus · boldness) specific to this BOLO
-  paragraphs S (Situation: groups = the transmission, verbatim where Papi ruled · what exists already · what the record says) · E (Execution: main_effort + phases with n/t/s/when, done phases first) · A (Admin & Logistics: files with path/what/s · cost with k/v) · L (Log: one entry per transmission in the sources, dated, who = Papi or Claude).
+  paragraphs S (Situation: groups = the transmission, verbatim where Chief ruled · what exists already · what the record says) · E (Execution: main_effort + phases with n/t/s/when, done phases first) · A (Admin & Logistics: files with path/what/s · cost with k/v) · L (Log: one entry per transmission in the sources, dated, who = Chief or Claude).
   Leave paragraphs M and C as the schema's shape with empty strings; leave frago.order / default / calls empty. The main line writes those.
 RULES: every strand (last · plan · you · next) in plain words for a reader who was not there; nothing not in the sources; file paths verbatim; [[key|label]] links only for keys you saw in schema.json. Do not read any other file. Reply with the path and nothing else.
 """

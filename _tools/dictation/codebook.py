@@ -155,9 +155,9 @@ def lexicon(path=SOP, extra=None):
     seed = [
         "Ultrasin", "Bold Venture", "BVX", "DARKROOM", "BOLO", "boresight", "Oscar Mike",
         "Charlie Mike", "RTB", "buttonhook", "break-break", "sit rep", "how copy",
-        "Dramatica", "Blender", "MCDP", "DCUS", "Tori", "Anna Colson Conway", "Papi",
+        "Dramatica", "Blender", "MCDP", "DCUS", "Tori", "Anna Colson Conway", "Chief",
         "main effort", "PMCS", "Ready Rack", "Magazine", "SOP", "DOCTRINE 0",
-        "DOPE SHEET", "FRAGO", "HOTLINE", "ABORT", "the Command", "Papi",
+        "DOPE SHEET", "FRAGO", "HOTLINE", "ABORT", "the Command", "Chief",
     ]
     for t in seed + terms + list(extra or []):
         t = re.sub(r"\s+", " ", t).strip()

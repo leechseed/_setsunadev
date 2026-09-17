@@ -4,8 +4,8 @@ category: story_spine
 version: 1.0.0
 last_updated: 2026-08-25
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
-status: canonical — spine ruled by Papi 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)
-purpose: "THE STORY SPINE — the canonical tree of what makes a story. The reference Papi designs IPs against, and the keying structure the BVX-LEARN library (CRE/LIT holdings) organizes onto. Front door to the BVX reference system."
+status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)
+purpose: "THE STORY SPINE — the canonical tree of what makes a story. The reference Chief designs IPs against, and the keying structure the BVX-LEARN library (CRE/LIT holdings) organizes onto. Front door to the BVX reference system."
 dependencies: ["ssot_02_dramatica_integration_protocol", "oxo-storyform (populated instance)"]
 trunk: BLACK
 ---
@@ -132,7 +132,7 @@ Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoi
 
 ## THE BRANCHES — first layer down (breadth pass, RULED + delivered 2026-08-26)
 
-Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is next. Full source sweeps: BOLO 18; **stage 1 banked** → [📐 ssot_01_spine_house_inventory.md](📐%20ssot_01_spine_house_inventory.md), the whole house corpus keyed by level. ⚠️ **RULED 2026-09-16: plot is `04_PLOT_SYSTEMS/`, style guides moved to `06_`. (Was:) Numbering collision surfaced by the sweep:** an empty `03_PLOT_SYSTEMS/` was already reserved before `03_SETTING_SYSTEMS/` was stood up (and `04_STYLE_GUIDES/` exists empty) — domain numbers await Papi's ruling.
+Each level's first sub-layer plus its starter shelf (house holdings + library). The deepening doctrine, proven by precedent: **a branch that outgrows its shelf becomes a domain** — L5 already did (→ 02), Setting did (→ 03), and L4 Plot is next. Full source sweeps: BOLO 18; **stage 1 banked** → [📐 ssot_01_spine_house_inventory.md](📐%20ssot_01_spine_house_inventory.md), the whole house corpus keyed by level. ⚠️ **RULED 2026-09-16: plot is `04_PLOT_SYSTEMS/`, style guides moved to `06_`. (Was:) Numbering collision surfaced by the sweep:** an empty `03_PLOT_SYSTEMS/` was already reserved before `03_SETTING_SYSTEMS/` was stood up (and `04_STYLE_GUIDES/` exists empty) — domain numbers await Chief's ruling.
 
 ### L0 · Root — theories of what story is
 **Branches:** argument theory (Dramatica/Egri lineage — the ruled position) · mimesis theory (Aristotle) · audience-simulation theory (the neuro school — explains reception, not structure) · myth/transmission theory (Campbell).
@@ -199,9 +199,9 @@ Each level's first sub-layer plus its starter shelf (house holdings + library). 
 
 ## THE LATTICE — the spine's four limbs (RULED 2026-08-25)
 
-The spine covers the STRUCTURE axis. Papi ordered the full milieu same session; four sibling modules grow off this trunk, delivered in ruled order, one module per session (same-session continuation on Papi's call):
+The spine covers the STRUCTURE axis. Chief ordered the full milieu same session; four sibling modules grow off this trunk, delivered in ruled order, one module per session (same-session continuation on Chief's call):
 
-> **Standing doctrine (Papi, 2026-08-26): the lattice is IP-agnostic — built to create ANY story. The Outliers (OXO) is the test bed: the guinea-pig instance every module validates against, not the lattice's owner.**
+> **Standing doctrine (Chief, 2026-08-26): the lattice is IP-agnostic — built to create ANY story. The Outliers (OXO) is the test bed: the guinea-pig instance every module validates against, not the lattice's owner.**
 
 | # | Limb | Doc | Status |
 |---|---|---|---|
@@ -219,11 +219,11 @@ The spine covers the STRUCTURE axis. Papi ordered the full milieu same session; 
 
 ## OPEN
 
-- Spine-address notation (`SPINE.Lx`) — provisional, awaiting Papi's ruling.
+- Spine-address notation (`SPINE.Lx`) — provisional, awaiting Chief's ruling.
 - Egri / Poetics / Field acquisitions → BVX.1107+ queue. **9/16 (BOLO 18 wave 2): Vogler *The Writer's Journey* and Field *Screenplay* are not in the library at all; the StC shelf holds Brody's novel edition (0164), not Snyder's original. Acquisition queue: Snyder · Vogler · Field · Egri · Aristotle.**
 - Distills beyond BVX.0064: *Story* (0175), *Anatomy of Story* (0193), *Story Grid* (0236) are the highest-leverage next reads for the tree.
 - THE GAP (3,768 z-lib favorites, unindexed) — story-craft holdings inside it unknown; the spine addresses them at ingest.
 
 ## Version history
 
-- **1.0.0 — 2026-08-25.** Authored on Papi's clear (boresight chain closed same session): comparative tree, Dramatica canonical, 14 rival models mapped, holdings + gaps recorded, library keying proposed.
+- **1.0.0 — 2026-08-25.** Authored on Chief's clear (boresight chain closed same session): comparative tree, Dramatica canonical, 14 rival models mapped, holdings + gaps recorded, library keying proposed.

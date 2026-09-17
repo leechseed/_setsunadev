@@ -40,12 +40,12 @@
    "id": "0",
    "name": "Last session",
    "kind": "list",
-   "plain": "Five sessions from 9/15 evening through 9/16 afternoon completed character sheet (D-7 ruled), built and closed BOLO 18 with four complete distill waves (character, texture, genre, acquisitions), published five system documents and five technical manuals (TM 02–06) into production, and ruled BOLO 24 D-5 first-dollar-first. The sit rep dashboard was repaired, DOPE SHEET document layout shipped to all 14 sheets, COMMAND terminology locked globally, and all 1,031 Zotero items keyed into nine shelves. Gate 3 opened with S4-01 rendered (2048×2560 ~30sec); nothing more moves on BOLO 24 until Papi picks it up.",
+   "plain": "Five sessions from 9/15 evening through 9/16 afternoon completed character sheet (D-7 ruled), built and closed BOLO 18 with four complete distill waves (character, texture, genre, acquisitions), published five system documents and five technical manuals (TM 02–06) into production, and ruled BOLO 24 D-5 first-dollar-first. The sit rep dashboard was repaired, DOPE SHEET document layout shipped to all 14 sheets, COMMAND terminology locked globally, and all 1,031 Zotero items keyed into nine shelves. Gate 3 opened with S4-01 rendered (2048×2560 ~30sec); nothing more moves on BOLO 24 until Chief picks it up.",
    "strand": {
     "last": "Five sessions on 9/15–9/16: D-7 ruling unlocked character sheet v0.1; four complete BOLO 18 distill waves closed (character, texture, genre, acquisitions); five systems delivered to TM 02–06; sit rep dashboard repaired; DOPE SHEET layout ruled and shipped to 14 sheets; D-9 GO, D-6 YES, D-5 first-dollar-first ruled; COMMAND terminology locked; Zotero full pass keyed all 1,031 items in nine shelves; Gate 3 opened with S4-01 standing.",
     "plan": "Rule D-7, D-9, D-6, D-5 (gating character and gates table); build character sheet; close BOLO 18 with four distill waves; rule COMMAND terminology; repair sit rep dashboard; publish DOPE SHEET layout to 14 sheets; publish TM 02–06; complete Zotero full pass; open Gate 3 with S4-01 render; rule BOLO 24 slice go.",
     "you": "Ruled D-7 (mother is the loss, 2020, overdose, age 15; Remi Slate, Aug 11, 2005), D-9 GO (Blender pipeline, benchmark read), D-6 YES (disclosed 3D persona is believability bar), D-5 first-dollar-first. Built character sheet v0.1 (2,100 words, nine sections) and season 1 beats v0.1 (2,000 words, five beats); completed four BOLO 18 waves (21 v4 distills: character 5, texture 5, genre 6, acquisitions 5); delivered five systems (character 2.0.2, plot 0.1.2, texture 0.1.1, genre 0.1.2, setting 1.1.0) and TM 02–06 with CK3 hover layer; completed Zotero full pass (1,031 items keyed into nine shelves). Repaired sit rep dashboard (header split), ruled COMMAND terminology, shipped DOPE SHEET layout to 14 sheets, rendered S4-01 at 2048×2560 in ~30sec on 3090. Ruled BOLO 24 D-5 provisional: nut as range, parents' backstop, first-dollar-first model, 9+ months restores plan. Opened Gate 3 with pipeline and slice evenings standing.",
-    "next": "BOLO 24 five open calls (launch month, library, split, Gate 3 skin test, death month); BOLO 24 stands as built pending Papi's word (no further movement: 'that's a little bit too far'). DOPE SHEET 51 four doctrine calls open (instrument, name, cadence, force order). Drop folder bulk intake held (6,664 PDFs, four re-acquisitions queued); theme and root shelf waves queued as follow-on (not gates). Character wave complete; texture and genre waves complete; acquisitions folded."
+    "next": "BOLO 24 five open calls (launch month, library, split, Gate 3 skin test, death month); BOLO 24 stands as built pending Chief's word (no further movement: 'that's a little bit too far'). DOPE SHEET 51 four doctrine calls open (instrument, name, cadence, force order). Drop folder bulk intake held (6,664 PDFs, four re-acquisitions queued); theme and root shelf waves queued as follow-on (not gates). Character wave complete; texture and genre waves complete; acquisitions folded."
    },
    "items": [
     {
@@ -180,7 +180,7 @@
     },
     {
      "n": 2,
-     "t": "**#8 the 03/03 numbering — RULED and EXECUTED 2026-09-16: plot is 04** (Papi: \"go with the recommended for number four\"). `03_SETTING_SYSTEMS/` stays; `03_PLOT_SYSTEMS/` → `04_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` → `06_STYLE_GUIDES/`. SSOT now reads 00 epistemology · 01 narrative frameworks · 02 character · 03 setting · 04 plot · 05 operations · 06 style guides — the overnight trail of 74 autosave commits (9/16 00:12-07:45) is this rename's footprint.",
+     "t": "**#8 the 03/03 numbering — RULED and EXECUTED 2026-09-16: plot is 04** (Chief: \"go with the recommended for number four\"). `03_SETTING_SYSTEMS/` stays; `03_PLOT_SYSTEMS/` → `04_PLOT_SYSTEMS/`; `04_STYLE_GUIDES/` → `06_STYLE_GUIDES/`. SSOT now reads 00 epistemology · 01 narrative frameworks · 02 character · 03 setting · 04 plot · 05 operations · 06 style guides — the overnight trail of 74 autosave commits (9/16 00:12-07:45) is this rename's footprint.",
      "next": "plot_systems has its home; the L4 deepening can now land on clean numbering.",
      "trunk": "BLACK",
      "s": "ruled",
@@ -221,14 +221,14 @@
     {
      "n": 7,
      "t": "**[[bolo45|BOLO 45]] creator cases + the [[register|performer register]] ([[bolo42|BOLO 42]])** — 15 case files on disk, headers TTP, five wave-one files never landed; the register now reads 138 names / 21 in the stable core / 14 creators after AlexBreeCooper + Kirenes.",
-     "next": "HOLD 9/11 on token budget (Papi) for the five re-runs; the X-handle pass and the two nameless lane-C seats still wait separately.",
+     "next": "HOLD 9/11 on token budget (Chief) for the five re-runs; the X-handle pass and the two nameless lane-C seats still wait separately.",
      "trunk": "ORANGE",
      "s": "held",
      "when": "9/10 18:38"
     },
     {
      "n": 8,
-     "t": "**[[outliers|OXO]] series follow-through** — the Telling Profile (T1-T10, 12 rulings queued) · the first SCENE CARD · the first Fountain pages landed ⧗. **BOLO 46, priority one by Papi's word 9/11.**",
+     "t": "**[[outliers|OXO]] series follow-through** — the Telling Profile (T1-T10, 12 rulings queued) · the first SCENE CARD · the first Fountain pages landed ⧗. **BOLO 46, priority one by Chief's word 9/11.**",
      "next": "The 12 [[telling-profile|Telling Profile]] rulings gate everything behind it; then Anna's node, the 14 Movement-1 questions, the pilot's page one.",
      "trunk": "BLACK",
      "s": "open",
@@ -504,9 +504,9 @@
    "kind": "board",
    "plain": "The watchlist. A BOLO is a tasking captured the moment you say it. Below it, PMCS: you as equipment.",
    "strand": {
-    "last": "BOLO 55 format ruled and deployed (one page, narrow rail, NASA/DoD layout). All 14 DOPE SHEETs rebuilt on v2. BOLO 18 gate closed 9/16. BOLO 50/51/53/54/55 complete. Character sheet and beats delivered for BOLO 24. DARKROOM 1.1 relaunched for Papi's active work on BOLO 44. BOLO 46 awaits 12 rulings on the Telling Profile.",
-    "plan": "Work the hot six: 24 · 27–28 · 30 · 44 · 45 · 46. Papi's 12 rulings on BOLO 46 (T1–T10 telling profile) unlock the OXO pilot. BOLO 44: complete 300-image calibration set, retrain, hit 2,000+ rulings per value. BOLO 45: wave one ships (seven cases), wave two staged; fires when token budget clears. Every held BOLO stays held until Block V ruling.",
-    "you": "Extracted all 1,031 Zotero items keyed to eight shelves; 31 v4 distills on template; five systems ruled (plot · character · setting · texture · genre). Three TM pages published. Story-side work resumes with systems ruled. BOLO 18 gate fully closed. Character sheet + beats delivered for BOLO 24 (D-9 GO staged clear, D-6 YES, D-7 RULED mother/2020/overdose). DARKROOM relaunched 9/16 for Papi on BOLO 44 calibration (Tier 1 + Tier 2 live, CAPTCHA sweep done 9/10, 300-image carousel next). BOLO 55 document layout ruled and applied to all sheets.",
+    "last": "BOLO 55 format ruled and deployed (one page, narrow rail, NASA/DoD layout). All 14 DOPE SHEETs rebuilt on v2. BOLO 18 gate closed 9/16. BOLO 50/51/53/54/55 complete. Character sheet and beats delivered for BOLO 24. DARKROOM 1.1 relaunched for Chief's active work on BOLO 44. BOLO 46 awaits 12 rulings on the Telling Profile.",
+    "plan": "Work the hot six: 24 · 27–28 · 30 · 44 · 45 · 46. Chief's 12 rulings on BOLO 46 (T1–T10 telling profile) unlock the OXO pilot. BOLO 44: complete 300-image calibration set, retrain, hit 2,000+ rulings per value. BOLO 45: wave one ships (seven cases), wave two staged; fires when token budget clears. Every held BOLO stays held until Block V ruling.",
+    "you": "Extracted all 1,031 Zotero items keyed to eight shelves; 31 v4 distills on template; five systems ruled (plot · character · setting · texture · genre). Three TM pages published. Story-side work resumes with systems ruled. BOLO 18 gate fully closed. Character sheet + beats delivered for BOLO 24 (D-9 GO staged clear, D-6 YES, D-7 RULED mother/2020/overdose). DARKROOM relaunched 9/16 for Chief on BOLO 44 calibration (Tier 1 + Tier 2 live, CAPTCHA sweep done 9/10, 300-image carousel next). BOLO 55 document layout ruled and applied to all sheets.",
     "next": "BOLO 46: Strike or keep the 12 Telling Profile rulings (his cost). Anna node builds after rulings land. Movement-1 questions gate pilot page one. BOLO 44: complete calibration carousel (300 images, 2,000+ rulings per value to the target), retrain probes, ready the full pass. BOLO 45: deliver five missing wave-one case files, then wave 1b (15 names) on the register when token budget lifts. BOLO 24: four calls open (launch month · library · split · Gate 3 skin test). Clear the held seven per Block V ruling."
    },
    "groups": [
@@ -538,7 +538,7 @@
        "when": "9/15"
       },
       {
-       "t": "**44** [[bolo44|tag rail + Tier 1 & 2 tagging]] — DARKROOM 1.1 relaunched 9/16; Tier 1 ✅ · Tier 2 probes live; 300-image calibration carousel next; Retrain button waits on server restart; Papi actively calibrating.",
+       "t": "**44** [[bolo44|tag rail + Tier 1 & 2 tagging]] — DARKROOM 1.1 relaunched 9/16; Tier 1 ✅ · Tier 2 probes live; 300-image calibration carousel next; Retrain button waits on server restart; Chief actively calibrating.",
        "trunk": "ORANGE",
        "s": "hot",
        "when": "9/16"
@@ -586,7 +586,7 @@
      "label": "Open, slow",
      "items": [
       {
-       "t": "**3** BBRT profile · **5** Papi↔Claude interface · **6** transmission pedagogy · **8** GitHub purge · **9** Google outdated-content · **14** taxonomy Stage 2/3 · **16** music-video grammar · **18** spine Stage 2 · **41** locus system.",
+       "t": "**3** BBRT profile · **5** Chief↔Claude interface · **6** transmission pedagogy · **8** GitHub purge · **9** Google outdated-content · **14** taxonomy Stage 2/3 · **16** music-video grammar · **18** spine Stage 2 · **41** locus system.",
        "trunk": "BLACK/ORANGE",
        "s": "open"
       }
@@ -666,7 +666,7 @@
     {
      "n": 18,
      "title": "BOLO 46",
-     "what": "The OXO series follow-through, PRIORITY ONE by Papi's word 9/11: the Telling Profile's 12 rulings (⧗ draft, strike or keep) gate everything behind it; then Anna's node, the 14 Movement-1 questions, the pilot's page one.",
+     "what": "The OXO series follow-through, PRIORITY ONE by Chief's word 9/11: the Telling Profile's 12 rulings (⧗ draft, strike or keep) gate everything behind it; then Anna's node, the 14 Movement-1 questions, the pilot's page one.",
      "unblocks": "Anna's node → the Tori×Anna collision proof · Tori's chart re-derivation · page one.",
      "trunk": "BLACK"
     },
@@ -785,7 +785,7 @@
     {
      "k": "frago",
      "w": "FRAGO",
-     "g": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Papi's clarification 9/10 late (\"FRAGO is just the"
+     "g": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Chief's clarification 9/10 late (\"FRAGO is just the"
     },
     {
      "k": "dope-sheet",

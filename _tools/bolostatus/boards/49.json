@@ -6,7 +6,7 @@
     "issued": "2026-09-11",
     "asof": "2026-09-11",
     "s": "open",
-    "status": "shortlist delivered 9/11 · eight banks verified · Papi downloads",
+    "status": "shortlist delivered 9/11 · eight banks verified · Chief downloads",
     "decider": "HOTLINE ACTUAL",
     "feeds": "the Ableton rig · [[bolo35|BOLO 35]] (the story timeline's synthesis half) · the ULTRA DARK track lineage",
     "related": [
@@ -76,7 +76,7 @@
           "label": "Standing",
           "items": [
             {
-              "t": "**The rig:** Ableton Live 10 Standard 10.1.43 · NI VST2 in the 64-bit folder · Massive · Kontakt 6/7/8 · Reaktor 6 · MPK Mini mapped. Massive factory library installed (Papi, 9/11).",
+              "t": "**The rig:** Ableton Live 10 Standard 10.1.43 · NI VST2 in the 64-bit folder · Massive · Kontakt 6/7/8 · Reaktor 6 · MPK Mini mapped. Massive factory library installed (Chief, 9/11).",
               "s": "done"
             },
             {
@@ -251,7 +251,7 @@
           "label": "Who decides",
           "items": [
             {
-              "t": "**Papi** — which banks. **Claude** — the pass, the verification, the install note.",
+              "t": "**Chief** — which banks. **Claude** — the pass, the verification, the install note.",
               "s": "open"
             }
           ]
@@ -281,7 +281,7 @@
       "entries": [
         {
           "when": "9/11",
-          "who": "Papi",
+          "who": "Chief",
           "t": "Ableton resolved; \"give me the boresight on really good free Massive presets.\""
         },
         {
@@ -291,7 +291,7 @@
         },
         {
           "when": "9/11",
-          "who": "Papi",
+          "who": "Chief",
           "t": "\"Create a BOLO to get the best Massive presets. Just let's get on that.\" BOLO 49; the pass launched on the defaults."
         }
       ]

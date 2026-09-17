@@ -108,7 +108,7 @@ def shelves():
     L = ["---", "id: BVX-LEARN.spine-keys", "title: \"Spine keys over the whole library (BOLO 18 stage 2, the full pass)\"", "type: report",
          f"generated: {datetime.date.today()}", "status: BOLO 18 stage 2 - the full pass", "---", "",
          "# Spine keys over the whole library", "",
-         f"All {len(items)} items. Authority: Papi's tags · a PS TOC pass · title rules · subject default (off-spine). `OFF` = not a story book.", "",
+         f"All {len(items)} items. Authority: Chief's tags · a PS TOC pass · title rules · subject default (off-spine). `OFF` = not a story book.", "",
          "| Source | Items |", "|---|---|"] + [f"| {k} | {v} |" for k, v in c.most_common()]
     L += ["", "## Items per shelf", "", "| Shelf | Items |", "|---|---|"] + [f"| {k} | {v} |" for k, v in lvc.most_common()]
     L += ["", "## The shelves", ""]

@@ -3,7 +3,7 @@ type: ssot_01_narrative_frameworks
 category: three_check_pass
 version: 0.1.0
 last_updated: 2026-08-31
-status: DRAFT — BOLO 21 fired 2026-08-31; every line below is ⧗ (Claude draft) until Papi keeps or speaks it over. Kept lines migrate to the owning entity sheets and this file records the pass.
+status: DRAFT — BOLO 21 fired 2026-08-31; every line below is ⧗ (Claude draft) until Chief keeps or speaks it over. Kept lines migrate to the owning entity sheets and this file records the pass.
 purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy Check · Aesthetic Check over the flagship canon roster. Three sweeps, never bundled per element."
 dependencies: ["ssot_01_modern_poetics"]
 trunk: BLACK/ORANGE
@@ -12,7 +12,7 @@ trunk: BLACK/ORANGE
 # 📐 THE THREE-CHECK PASS — sweep 1, flagship roster (all lines ⧗)
 
 **Roster (12):** Tori · Anna · DCUS · The Drop · the Sync-dive · the Star-Rating · the storyform · the scream etiquette · the Story Lattice · the Collision Engine · DARKROOM · the taxonomy engine.
-**Protocol:** Papi strikes/keeps by number (F/S/A + row). Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.
+**Protocol:** Chief strikes/keeps by number (F/S/A + row). Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.
 
 ## SWEEP 1 · FANTASY DRIVE (P8) — ⧗ all
 
@@ -67,7 +67,7 @@ trunk: BLACK/ORANGE
 
 ## NEXT
 
-- Papi strikes/keeps by number; kept lines migrate to entity sheets.
+- Chief strikes/keeps by number; kept lines migrate to entity sheets.
 - Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.
 - A2 gap rides Anna's sheet authoring (also blocks the Tori×Anna collision proof).
 

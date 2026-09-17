@@ -4,4 +4,4 @@
 
 Working state lives **outside this repo** (internal-only class, per Primed Protocol precedent): `Desktop\ULTRASIN-shoot-set-DRAFT.md`
 
-**Resumes on:** the §B locked-aesthetic ruling (scope vs supersede — the standing gate) + Papi's review → "log it" → registry cross-refs + BOLO 12 close.
+**Resumes on:** the §B locked-aesthetic ruling (scope vs supersede — the standing gate) + Chief's review → "log it" → registry cross-refs + BOLO 12 close.

@@ -177,7 +177,7 @@ The naming layer is the IP. Three claims this system makes that nothing else in 
 
 ## 11 · The chain, RULED 2026-09-09
 
-**The four-layer chain in §1 is canon:** SKELETON → MUSCLE → FAT → CONDITION. Ruled by Papi on the true-ancients pass (R7, "chain go"); STATE.md's older five-tier chain was never defined on disk and this one supersedes it.
+**The four-layer chain in §1 is canon:** SKELETON → MUSCLE → FAT → CONDITION. Ruled by Chief on the true-ancients pass (R7, "chain go"); STATE.md's older five-tier chain was never defined on disk and this one supersedes it.
 
 **The five abstract names map over it,** so either vocabulary can be used without ambiguity:
 

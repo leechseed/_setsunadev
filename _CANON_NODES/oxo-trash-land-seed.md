@@ -6,7 +6,7 @@ ip: OVEREXITOUT / ASTRO7EX
 series: The Outliers
 trunk: BLACK
 status: SEED — spoken 2026-09-06 (stacked break-break), captured same turn; nothing ruled except the spoken lines
-capture_protocol: Papi's spoken lines = canon · ⧗ = Claude development, strike or keep
+capture_protocol: Chief's spoken lines = canon · ⧗ = Claude development, strike or keep
 slice: Setting System S1–S12 (📐 ssot_03_setting_system.md) — second instance after DCUS
 links:
   - "[[delta-coast-ultra-school]]"
@@ -26,7 +26,7 @@ bolo: 30
 ## As spoken — CANON (2026-09-06)
 
 - A **biome / area of the map** of the ASTRO7EX world.
-- Called **"Trash Land"** — Papi's word, **placeholder only**.
+- Called **"Trash Land"** — Chief's word, **placeholder only**.
 - **A giant border, a DMZ, between the southern part of the US and the northern part.**
 - **The DMZ is a massive border of trash.**
 - **Man-made.** A built border between the South and the North.

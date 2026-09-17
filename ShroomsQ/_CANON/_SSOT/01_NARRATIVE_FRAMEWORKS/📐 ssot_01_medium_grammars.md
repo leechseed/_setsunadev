@@ -4,7 +4,7 @@ category: medium_grammars
 version: 1.0.0
 last_updated: 2026-08-26
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
-status: canonical — Module 4 of the lattice, delivered on Papi's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass
+status: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass
 purpose: "THE MEDIUM GRAMMARS — the channel contracts: how each medium re-instruments the texture layer and constrains the ladder. Lattice limb 4 of 4; completes the lattice."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_texture_layer", "ssot_03_setting_system"]
 trunk: BLACK (ORANGE rows ride the subsidiary firewall — craft grammar only in this public doc)
@@ -59,7 +59,7 @@ The contract inverts: **the player co-authors.** Four native mechanisms:
 The purest structural mirror the lattice has:
 - **The GM is a live extradiegetic narrator**; the table is collective authorship — emergent storyform.
 - **Rules are invariants made mechanical** — the constraint layer implemented as a game system; a rulebook is a DOCTRINE 0 artifact with dice.
-- **Sourcebooks/gazetteers are printed setting slices** (the Module 2 echo, confirmed: the scaffolding Papi called runs both directions — TTRPG books validate the slice; the slice can *author* TTRPG books).
+- **Sourcebooks/gazetteers are printed setting slices** (the Module 2 echo, confirmed: the scaffolding Chief called runs both directions — TTRPG books validate the slice; the slice can *author* TTRPG books).
 **Holdings:** GURPS 0447 · Kobold 0458/0541 · Against Worldbuilding 0349.
 
 ### M6 · MUSIC VIDEO — v1 scaffold (BOLO 16 deepens)

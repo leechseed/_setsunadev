@@ -273,7 +273,7 @@
           "label": "Who decides",
           "items": [
             {
-              "t": "**Papi** — filing · the name · DARKROOM's faces · the retint. **Claude** — the build and the research.",
+              "t": "**Chief** — filing · the name · DARKROOM's faces · the retint. **Claude** — the build and the research.",
               "s": "open"
             }
           ]
@@ -312,7 +312,7 @@
       "entries": [
         {
           "when": "9/6",
-          "who": "Papi",
+          "who": "Chief",
           "t": "BOLO 33 spoken: the MCDP browser as a game encyclopedia on CK3's system. \"Just run it.\""
         },
         {
@@ -322,7 +322,7 @@
         },
         {
           "when": "9/6",
-          "who": "Papi",
+          "who": "Chief",
           "t": "\"This is accepted.\" BOLO 34 spoken: the long-watch palette, CIC-grade; boresight called, how copy."
         },
         {
@@ -332,12 +332,12 @@
         },
         {
           "when": "9/8",
-          "who": "Papi",
+          "who": "Chief",
           "t": "Oscar Mike everything — parked with three rulings open."
         },
         {
           "when": "9/11",
-          "who": "Papi",
+          "who": "Chief",
           "t": "\"Give me the status report on WARROOM 1.1\" → DOPE SHEET 33 built; the retint question added."
         }
       ]

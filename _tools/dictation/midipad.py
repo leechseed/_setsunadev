@@ -1,7 +1,7 @@
 """
 midipad.py — a MIDI pad as JUDY's talk button.
 
-BOLO 56. Papi already owns an Akai MPK mini 3, so the push-to-talk hardware question
+BOLO 56. Chief already owns an Akai MPK mini 3, so the push-to-talk hardware question
 answers itself: a pad is a button, it costs nothing, and there are eight of them.
 
 A pad sends note_on when struck and note_off when released, which maps exactly onto

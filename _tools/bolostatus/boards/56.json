@@ -41,7 +41,7 @@
   {
    "k": "boldness",
    "w": "Boldness",
-   "line": "Papi mentioned owning ElevenLabs on a buttonhook and it was integrated, tested, and live the same day — the brat dial can finally be performed, not just written."
+   "line": "Chief mentioned owning ElevenLabs on a buttonhook and it was integrated, tested, and live the same day — the brat dial can finally be performed, not just written."
   }
  ],
  "frago": {
@@ -71,8 +71,8 @@
    },
    {
     "q": "The PNG state set",
-    "options": "Papi's art against the 9/16 spec · keep the placeholder faces the loop runs on today (rec until art lands) · commission it",
-    "default": "placeholders until Papi's art lands",
+    "options": "Chief's art against the 9/16 spec · keep the placeholder faces the loop runs on today (rec until art lands) · commission it",
+    "default": "placeholders until Chief's art lands",
     "s": "held"
    },
    {
@@ -80,14 +80,14 @@
     "options": "Chatterbox Turbo on the 3090 (rec of the recon) · Zonos · Qwen3-TTS · stay on ElevenLabs",
     "default": "stay on ElevenLabs",
     "s": "held",
-    "ruling": "HELD 9/17 by Papi: \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays JUDY's mouth for the life of the subscription. The recon (Chatterbox Turbo rec, sources, the build cost) is banked at _tools/dictation/RECON-local-voice.md for when the subscription lapses or the local standard is re-raised."
+    "ruling": "HELD 9/17 by Chief: \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays JUDY's mouth for the life of the subscription. The recon (Chatterbox Turbo rec, sources, the build cost) is banked at _tools/dictation/RECON-local-voice.md for when the subscription lapses or the local standard is re-raised."
    },
    {
     "q": "Session voice — the reader",
     "options": "script: reads what Fable wrote, instant (rec, running) · haiku: rewrites each block into talk first, +2–3 s a block, spends Pro usage · Fable's own spoken line on every long reply (SOP §7 rule 10, in force)",
     "default": "script + the spoken line (running)",
     "s": "ruled",
-    "ruling": "RULED 9/17 by Papi across three transmissions: \"I want it to go straight through VS Code, Fable 5.1\" · \"what if we had an agent push out text-to-speech… it'll just have to read\" · \"session voice.\" Built as a script reader with the Haiku rewrite as a console switch and the spoken-line rule on Fable."
+    "ruling": "RULED 9/17 by Chief across three transmissions: \"I want it to go straight through VS Code, Fable 5.1\" · \"what if we had an agent push out text-to-speech… it'll just have to read\" · \"session voice.\" Built as a script reader with the Haiku rewrite as a console switch and the spoken-line rule on Fable."
    }
   ]
  },
@@ -98,7 +98,7 @@
    "kind": "list",
    "plain": "Where JUDY came from: one transmission with everything in it, what was already sitting in the record before it was said, and what got ruled since.",
    "strand": {
-    "last": "Session voice built and running: Papi talks into the Fable session, Blondie reads the answer as it is written.",
+    "last": "Session voice built and running: Chief talks into the Fable session, Blondie reads the answer as it is written.",
     "plan": "Find what already existed before building anything new, then rule the open calls one at a time.",
     "you": "You named the ask, the model requirement, the persona, the voice register, and the face concept in one transmission, then kept ruling calls across two more sessions.",
     "next": "Use it. Tune the reader from the console. The dials and the face art on your clock."
@@ -113,7 +113,7 @@
        "when": "9/16"
       },
       {
-       "t": "Name RULED 9/16: JUDY, spelled out J-U-D-Y, superseding the provisional \"THE HANDLER\" — which came from Papi's own \"whoever is my handler.\"",
+       "t": "Name RULED 9/16: JUDY, spelled out J-U-D-Y, superseding the provisional \"THE HANDLER\" — which came from Chief's own \"whoever is my handler.\"",
        "s": "done",
        "when": "9/16"
       },
@@ -184,7 +184,7 @@
        "when": "9/17"
       },
       {
-       "t": "Local voice HELD 9/17. Papi: \"I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity\" → boresight ran → \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays; Piper stays the offline floor; the recon waits.",
+       "t": "Local voice HELD 9/17. Chief: \"I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity\" → boresight ran → \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays; Piper stays the offline floor; the recon waits.",
        "s": "held",
        "when": "9/17"
       },
@@ -199,7 +199,7 @@
        "when": "9/17"
       },
       {
-       "t": "Session voice BUILT 9/17. Papi: \"when I'm talking, I want it to go straight through VS Code, Fable 5.1… and then bust out\" → \"an agent push out text-to-speech… it'll just have to read\" → \"session voice.\" The Pro subscription carries it: no API, no key. The Pro-brain path (Haiku through the bundled claude CLI, proven 5.6 s a turn) and the Ollama path stay on record, unbuilt; session voice made both moot for talking to Fable.",
+       "t": "Session voice BUILT 9/17. Chief: \"when I'm talking, I want it to go straight through VS Code, Fable 5.1… and then bust out\" → \"an agent push out text-to-speech… it'll just have to read\" → \"session voice.\" The Pro subscription carries it: no API, no key. The Pro-brain path (Haiku through the bundled claude CLI, proven 5.6 s a turn) and the Ollama path stay on record, unbuilt; session voice made both moot for talking to Fable.",
        "s": "done",
        "when": "9/17"
       }
@@ -255,7 +255,7 @@
     },
     {
      "n": 2,
-     "t": "Console built the same session on Papi's word — _tools/dictation/console.py + console.html, local server on :8787, eight panels (Status · Ears · Codebook · Voice · Persona · Face · Wire · Log). Turns three of the four open calls into knobs Papi tunes rather than rules.",
+     "t": "Console built the same session on Chief's word — _tools/dictation/console.py + console.html, local server on :8787, eight panels (Status · Ears · Codebook · Voice · Persona · Face · Wire · Log). Turns three of the four open calls into knobs Chief tunes rather than rules.",
      "s": "done",
      "when": "9/16"
     },
@@ -296,12 +296,12 @@
     },
     {
      "n": 9,
-     "t": "The PNG state set — spec handed to Papi 9/16, awaiting art.",
+     "t": "The PNG state set — spec handed to Chief 9/16, awaiting art.",
      "s": "open"
     },
     {
      "n": 10,
-     "t": "The local voice — Papi raised the 3090 / 100 % local standard 9/17 and ordered the boresight; twelve engines read, Chatterbox Turbo the recommendation, no 3090 numbers published. HELD the same turn: ElevenLabs is paid for and stays. Recon banked.",
+     "t": "The local voice — Chief raised the 3090 / 100 % local standard 9/17 and ordered the boresight; twelve engines read, Chatterbox Turbo the recommendation, no 3090 numbers published. HELD the same turn: ElevenLabs is paid for and stays. Recon banked.",
      "s": "held",
      "when": "9/17"
     },
@@ -309,13 +309,13 @@
      "n": 11,
      "s": "done",
      "when": "9/17",
-     "t": "The session-side proof — Papi restarted VS Code; the session listed the judy server and its seven tools on open; all seven called from inside the session, all seven answered in the spoken form. The wire is closed."
+     "t": "The session-side proof — Chief restarted VS Code; the session listed the judy server and its seven tools on open; all seven called from inside the session, all seven answered in the spoken form. The wire is closed."
     },
     {
      "n": 12,
      "s": "done",
      "when": "9/17",
-     "t": "SESSION VOICE — Papi: talk straight into the Fable session, an agent reads the reply aloud. Built the same turn: reader.py tails ~/.claude/projects/<repo>/<session>.jsonl and speaks each assistant block sentence by sentence (one synthesizing while the last plays), speaks only the <!-- say: --> line when a reply carries one, cuts off on a new user turn and plays an acknowledgment from a Blondie-rendered bank; judy.py --session = face + ears pasted into the chat with Enter + the reader in one process. Measured: 13 sentences read, first synth 1.26 s cold then 0.19–0.46 s each. Standalone JUDY stopped; session voice launched and following this session."
+     "t": "SESSION VOICE — Chief: talk straight into the Fable session, an agent reads the reply aloud. Built the same turn: reader.py tails ~/.claude/projects/<repo>/<session>.jsonl and speaks each assistant block sentence by sentence (one synthesizing while the last plays), speaks only the <!-- say: --> line when a reply carries one, cuts off on a new user turn and plays an acknowledgment from a Blondie-rendered bank; judy.py --session = face + ears pasted into the chat with Enter + the reader in one process. Measured: 13 sentences read, first synth 1.26 s cold then 0.19–0.46 s each. Standalone JUDY stopped; session voice launched and following this session."
     }
    ],
    "coord": [],
@@ -509,8 +509,8 @@
    "entries": [
     {
      "when": "9/16",
-     "who": "Papi",
-     "t": "Break-break ×4, boresight called (\"how copy\"): the ask for a spoken loop — Papi talks, it listens, it answers out loud — plus the model requirement (\"I'd want it to be running lower because I'd want it to be responsive\"), persona (TARS), voice register (007 handler), and face concept (PNG state swaps)."
+     "who": "Chief",
+     "t": "Break-break ×4, boresight called (\"how copy\"): the ask for a spoken loop — Chief talks, it listens, it answers out loud — plus the model requirement (\"I'd want it to be running lower because I'd want it to be responsive\"), persona (TARS), voice register (007 handler), and face concept (PNG state swaps)."
     },
     {
      "when": "9/16",
@@ -519,12 +519,12 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Can you create a dashboard… almost like a mod menu\" — the console built the same session: _tools/dictation/console.py + console.html, eight panels, turning three of the four calls into knobs."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Wire RULED: \"let's just go all in on the MCP server… instead of having to build into it again.\""
     },
     {
@@ -544,17 +544,17 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Brain RULED: \"let's stay on the router\" — no API key, no local model, $0/month standing cost; re-aims the wire to expose brain.py's tools to the Opus VS Code session."
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Voice audition ruled: \"let's go with Blondie\" — Conversational (British), stability 0.35 / style 0.55 / speed 1.05, on eleven_turbo_v2_5."
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity.\" Then: \"boresight local voice.\""
     },
     {
@@ -564,12 +564,12 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" — the local voice HELD; ElevenLabs stays the mouth."
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Charlie Mike.\" — build the wire."
     },
     {
@@ -579,7 +579,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Okay, I restarted VS Code.\""
     },
     {
@@ -589,7 +589,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"When I'm talking, I want it to go straight through VS Code, Fable 5.1, right? And then it'll bust out… maybe we'll have an agent that will truncate it and say it in the style that it's much more conversational, pushed out to the actual voice response.\""
     },
     {
@@ -599,7 +599,7 @@
     },
     {
      "when": "9/17",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"What if we had an agent push out text-to-speech for the model? That way it'll just have to read.\" — then \"session voice.\""
     },
     {

@@ -275,7 +275,7 @@ Learning without knowing why, training without education or educating without tr
 
 - **Reflection → the session-end STATE.md update.** Gray's twenty-minute walk and Mattis's "solitude allows you to reflect while others are reacting" are the argument for the close-of-session ritual: the cache note, the STATE.md update, and the BOLO sweep are the reflection step. Skipping them is the failure mode doctrine names — reacting to the next stimulus with the lesson unextracted.
 
-- **Goals, growth mindset, feedback culture → the partnership's operating stance.** Learning goals in three horizons, hardened on reaching them; success attributed to preparation and practice; honest professional disagreement from the AI is a duty until Papi rules, then execution; debriefs "with no ranks visible." The readback protocol ("Good copy" + readback) is the extrinsic-feedback loop made routine.
+- **Goals, growth mindset, feedback culture → the partnership's operating stance.** Learning goals in three horizons, hardened on reaching them; success attributed to preparation and practice; honest professional disagreement from the AI is a duty until Chief rules, then execution; debriefs "with no ranks visible." The readback protocol ("Good copy" + readback) is the extrinsic-feedback loop made routine.
 
 ---
 

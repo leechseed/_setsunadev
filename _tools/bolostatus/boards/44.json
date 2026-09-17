@@ -6,7 +6,7 @@
   "issued": "2026-09-09",
   "asof": "2026-09-16",
   "s": "hot",
-  "status": "[[darkroom|DARKROOM]] 1.1 + Tier 1 zero-shot built and run 2026-09-09 (58,419 images, 6 axes, 6 s CPU) · CAPTCHA sweep + Tier 2 probes shipped 9/10 (OVR-LR wins every axis) · ADORNED ruled and applied 9/11 · Papi tagging solo since 9/11 · 16,511 images ruled as of 9/16 · the calibration pass, retrain, Retrain button/solo toggle, and Tier 3 still open",
+  "status": "[[darkroom|DARKROOM]] 1.1 + Tier 1 zero-shot built and run 2026-09-09 (58,419 images, 6 axes, 6 s CPU) · CAPTCHA sweep + Tier 2 probes shipped 9/10 (OVR-LR wins every axis) · ADORNED ruled and applied 9/11 · Chief tagging solo since 9/11 · 16,511 images ruled as of 9/16 · the calibration pass, retrain, Retrain button/solo toggle, and Tier 3 still open",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every library axis · [[ultra-dark|ULTRA DARK]]'s posting queue · girl-gen",
   "related": [
@@ -33,7 +33,7 @@
   {
    "k": "boldness",
    "w": "Boldness",
-   "line": "Papi took the tagging over himself on 9/11. A bad probe attempt shipped worse proposals for about ten minutes; it was caught and reverted the same night, not left to fester."
+   "line": "Chief took the tagging over himself on 9/11. A bad probe attempt shipped worse proposals for about ten minutes; it was caught and reverted the same night, not left to fester."
   }
  ],
  "frago": {
@@ -75,7 +75,7 @@
    "plain": "Where the tag rail stands: the orders that built it, what DARKROOM can do now, and what the tags on disk actually say as of today.",
    "strand": {
     "last": "Three builds in one night on 9/9, the CAPTCHA sweep and Tier 2 probes on 9/10, ADORNED applied on 9/11.",
-    "plan": "Papi tags solo through DARKROOM; the probes retrain on what he confirms.",
+    "plan": "Chief tags solo through DARKROOM; the probes retrain on what he confirms.",
     "you": "You took over the tagging yourself on 9/11 and asked 9/16 how many more tags you need.",
     "next": "The 300-image calibration pass, the honest accuracy number the CAPTCHA sweep can't give."
    },
@@ -89,7 +89,7 @@
        "when": "9/9"
       },
       {
-       "t": "**\"I'm gonna go ahead and start working on BOLO 44\"** — spoken 9/11; Papi takes the tagging over himself.",
+       "t": "**\"I'm gonna go ahead and start working on BOLO 44\"** — spoken 9/11; Chief takes the tagging over himself.",
        "s": "spoken",
        "when": "9/11"
       },
@@ -118,7 +118,7 @@
        "s": "done"
       },
       {
-       "t": "`vocab.json` v0.1: the Stage-2 axis vocabularies for the six Tier-1 axes (setting, styling, dress state, production register, mood, framing), 6 axes and 48 values, Claude drafts and Papi strikes by correcting.",
+       "t": "`vocab.json` v0.1: the Stage-2 axis vocabularies for the six Tier-1 axes (setting, styling, dress state, production register, mood, framing), 6 axes and 48 values, Claude drafts and Chief strikes by correcting.",
        "s": "done"
       },
       {
@@ -204,7 +204,7 @@
     },
     {
      "n": 1,
-     "t": "**Same night, on Papi's orders:** Tags panel boxed off from Curation, draggable rail edges plus a remembered RAIL TEXT slider, and the TAGGING module built (fifth tab, hotkey T) for one-image-at-a-time keyed tagging across all six axes.",
+     "t": "**Same night, on Chief's orders:** Tags panel boxed off from Curation, draggable rail edges plus a remembered RAIL TEXT slider, and the TAGGING module built (fifth tab, hotkey T) for one-image-at-a-time keyed tagging across all six axes.",
      "s": "done",
      "when": "9/9"
     },
@@ -222,19 +222,19 @@
     },
     {
      "n": 4,
-     "t": "Vocabulary revised through the night on Papi's orders (Video out, AI generated in, Club to Public space, Y2K + Uniform + Loungewear out, Going-out to Lewd, Bratty into Mood); a first numpy-GD probe attempt shipped worse proposals for about ten minutes, caught and reverted.",
+     "t": "Vocabulary revised through the night on Chief's orders (Video out, AI generated in, Club to Public space, Y2K + Uniform + Loungewear out, Going-out to Lewd, Bratty into Mood); a first numpy-GD probe attempt shipped worse proposals for about ten minutes, caught and reverted.",
      "s": "done",
      "when": "9/10"
     },
     {
      "n": 5,
-     "t": "Papi took BOLO 44 over himself (\"I'm gonna go ahead and start working on BOLO 44\"); DARKROOM relaunched for him on the \"run the darkroom\" proword, serving on :8484.",
+     "t": "Chief took BOLO 44 over himself (\"I'm gonna go ahead and start working on BOLO 44\"); DARKROOM relaunched for him on the \"run the darkroom\" proword, serving on :8484.",
      "s": "done",
      "when": "9/11"
     },
     {
      "n": 6,
-     "t": "Implied retired from the dress axis (spoken ruling); its opposite value benched on BOLO 48 as ADORNED (recommended) among five alternatives. **ADORNED ruled and applied** (\"vocab go\"): `vocab.json` edited (implied out, adorned in with three prompts), `zeroshot_pass.py` rerun, `probe_pass.py` retrained; Papi's 42 human confirmations carrying implied stay untouched as his record.",
+     "t": "Implied retired from the dress axis (spoken ruling); its opposite value benched on BOLO 48 as ADORNED (recommended) among five alternatives. **ADORNED ruled and applied** (\"vocab go\"): `vocab.json` edited (implied out, adorned in with three prompts), `zeroshot_pass.py` rerun, `probe_pass.py` retrained; Chief's 42 human confirmations carrying implied stay untouched as his record.",
      "s": "done",
      "when": "9/11"
     },
@@ -264,7 +264,7 @@
     },
     {
      "n": 11,
-     "t": "**Resume item 5 — Tier 3.** L2b cells with Papi's eyes, module 2 as the prior, population signatures; Stage 4 clustering also still unbuilt.",
+     "t": "**Resume item 5 — Tier 3.** L2b cells with Chief's eyes, module 2 as the prior, population signatures; Stage 4 clustering also still unbuilt.",
      "s": "open",
      "when": "after 9"
     }
@@ -301,7 +301,7 @@
     },
     {
      "path": "_pipeline/tags.json",
-     "what": "Papi's rulings, merged per image beside the verdicts; 16,511 images carry at least one ruling as of 9/16",
+     "what": "Chief's rulings, merged per image beside the verdicts; 16,511 images carry at least one ruling as of 9/16",
      "s": "done"
     },
     {
@@ -331,7 +331,7 @@
     },
     {
      "k": "dollars",
-     "v": "$0 — compute time and Papi's rulings only"
+     "v": "$0 — compute time and Chief's rulings only"
     }
    ]
   },
@@ -382,7 +382,7 @@
    "kind": "log",
    "plain": "Every transmission on the tag rail, in order.",
    "strand": {
-    "last": "The last two transmissions are Papi's question 9/16 and the answer given.",
+    "last": "The last two transmissions are Chief's question 9/16 and the answer given.",
     "plan": "One entry per transmission.",
     "you": "Six of the entries below are yours; the rest are builds and answers.",
     "next": "The calibration pass."
@@ -390,7 +390,7 @@
    "entries": [
     {
      "when": "9/9",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Go. Green light. Go.\" — spoken after the tagging consult; orders the tag rail and Tier 1 zero-shot tagging built."
     },
     {
@@ -400,7 +400,7 @@
     },
     {
      "when": "9/9",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Same night: orders to box the Tags panel off from Curation, add draggable rail edges and a RAIL TEXT slider, and build the TAGGING module."
     },
     {
@@ -415,37 +415,37 @@
     },
     {
      "when": "9/10",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Vocabulary revised through the night: Video out, AI generated in, Club to Public space, Y2K + Uniform + Loungewear out, Going-out to Lewd, Bratty into Mood."
     },
     {
      "when": "9/11",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"I'm gonna go ahead and start working on BOLO 44\" — takes the tagging over himself."
     },
     {
      "when": "9/11",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"run the darkroom\" — DARKROOM relaunched, serving on :8484."
     },
     {
      "when": "9/11",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Spoken ruling: implied retired from the dress axis; its opposite value benched on BOLO 48 as ADORNED."
     },
     {
      "when": "9/11",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"vocab go\" — ADORNED ruled and applied; vocab.json edited, zeroshot_pass rerun, probe_pass retrained."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"run the darkroom\" — DARKROOM relaunched again on :8484, having sat down since the 9/10 session."
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"how many more tags do I need?\""
     },
     {

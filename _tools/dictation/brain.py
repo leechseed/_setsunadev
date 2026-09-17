@@ -8,7 +8,7 @@ are the part that carries the value, and they are the same tools whether the cal
 is a language model, the VS Code session, or a plain keyword router. So they get
 written once, here, as ordinary functions over the repo.
 
-A keyword router picks the tool. **RULED 2026-09-17: the router stays** (Papi: "let's
+A keyword router picks the tool. **RULED 2026-09-17: the router stays** (Chief: "let's
 stay on the router") — no API key, no local model, no recurring cost. So this is the
 brain, not a placeholder for one, and it is built to that standard: it answers a short
 list of real questions exactly right and refuses everything else rather than guessing.
@@ -234,7 +234,7 @@ def answer(text):
 
 # ------------------------------------------------------------------ coverage
 
-# Realistic things Papi would actually say out loud. This is the honest test of the
+# Realistic things Chief would actually say out loud. This is the honest test of the
 # router: not "do the tools work" but "does she cover what I'd really ask".
 PROBES = [
     "what's blocked", "what am I blocked on", "what do I owe you",

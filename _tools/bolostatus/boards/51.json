@@ -63,14 +63,14 @@
  "frago": {
   "mission": "Stand up one standing audit-and-improvement function over every system in daily use, and move compute off the chat onto the harness, **in order to** make the whole operation cheaper per turn and better every week, so the fronts are supplied before the fight.",
   "order": "**Rule the four open calls below in one breath, or say \"defaults\" and they lock as written.** The offload is built and proven live; what is left on this sheet is doctrine, not code.",
-  "default": "Silence: AAR + PDCA on the 19011 pattern stays the instrument; the function stays the logistics front; one AAR line inside every Oscar Mike plus a full pass weekly; sheets built from repo JSON republish only from the building session, and any cross-session republish pays the read (about 22–25k tokens) unless Papi says force.",
+  "default": "Silence: AAR + PDCA on the 19011 pattern stays the instrument; the function stays the logistics front; one AAR line inside every Oscar Mike plus a full pass weekly; sheets built from repo JSON republish only from the building session, and any cross-session republish pays the read (about 22–25k tokens) unless Chief says force.",
   "calls": [
    {
     "q": "The offload picks",
     "options": "a · SessionStart digest hook (a script prints the 40-line board opening, zero tokens to produce) · b · STATE's Moved sections to _LOG (STATE is 72 KB, most of it history) · c · the four SOP procedures as skills (sit rep · DOPE SHEET · FRAGO · Oscar Mike) · d · Explore and haiku subagents for every read and search · e · the design canvas for anything you iterate visually · f · a cloud routine for the weekly audit pass",
     "default": "a + b + c + d now; e per case; f after the first manual audit",
     "s": "ruled",
-    "ruling": "RULED 9/12 night, Papi: \"permission granted, do all of it.\" All eight phases built the same session; a through d landed, e per case, f after the first manual audit."
+    "ruling": "RULED 9/12 night, Chief: \"permission granted, do all of it.\" All eight phases built the same session; a through d landed, e per case, f after the first manual audit."
    },
    {
     "q": "The audit instrument",
@@ -93,7 +93,7 @@
    {
     "q": "The force order for cross-session republishes",
     "options": "rule a standing `force` for any sheet built from repo JSON (the JSON is the source of truth; nothing is ever saved from inside a page) · keep the gate and pay the read each time (measured 9/15 and 9/16: 22–25k tokens, not 65k) · ask each time",
-    "default": "pay the read when Papi asks for the sheet itself; force only on his word each time",
+    "default": "pay the read when Chief asks for the sheet itself; force only on his word each time",
     "s": "open"
    }
   ]
@@ -220,7 +220,7 @@
      "label": "FRAGO · 9/16",
      "items": [
       {
-       "t": "**The crew grades** (Papi: \"I like specialist, mission specialist… go CDR\"): CDR = the main line (Fable) · MS Mission Specialist = the writer (Sonnet) · PS Payload Specialist = the fetcher (Haiku) · RANGE = the script reviewer. \"Sonnet specialist\" retired. SOP §1 + §5.",
+       "t": "**The crew grades** (Chief: \"I like specialist, mission specialist… go CDR\"): CDR = the main line (Fable) · MS Mission Specialist = the writer (Sonnet) · PS Payload Specialist = the fetcher (Haiku) · RANGE = the script reviewer. \"Sonnet specialist\" retired. SOP §1 + §5.",
        "s": "ruled"
       },
       {
@@ -258,7 +258,7 @@
    "kind": "phases",
    "plain": "Offload first, because it pays for everything after. Then the audit register. Then the cadence.",
    "strand": {
-    "last": "The offload build landed in one night on Papi's \"permission granted, do all of it.\"",
+    "last": "The offload build landed in one night on Chief's \"permission granted, do all of it.\"",
     "plan": "Six phases; the first three are cheap and mechanical.",
     "you": "You ruled the offload 9/12 and it has now carried three live runs without you touching a file. The four doctrine calls are still yours.",
     "next": "Rule the instrument, the name, the cadence, and the force order. Then the first manual audit pass, which unlocks pick f (the weekly cloud routine)."
@@ -333,13 +333,13 @@
     },
     {
      "n": 25,
-     "t": "**2.5 · Creator research** — `_tools/creator-cases/fetch.py <slug> --fansly --x --ph --url`: script fetch (Fansly API · fxtwitter · Wayback via curl) into raw/ + manifest; EXTRACT (haiku) → facts.json; WRITE (sonnet) → the case file per case-brief.md; `check.py <slug>` reviews (ten sections · TTP · sources · privacy tripwires). **The runs stay HELD (Papi, 9/11); the formation is built.**",
+     "t": "**2.5 · Creator research** — `_tools/creator-cases/fetch.py <slug> --fansly --x --ph --url`: script fetch (Fansly API · fxtwitter · Wayback via curl) into raw/ + manifest; EXTRACT (haiku) → facts.json; WRITE (sonnet) → the case file per case-brief.md; `check.py <slug>` reviews (ten sections · TTP · sources · privacy tripwires). **The runs stay HELD (Chief, 9/11); the formation is built.**",
      "s": "done",
      "when": "9/12"
     },
     {
      "n": 26,
-     "t": "**2.6 · RTB** — `_tools/oscarmike/rtb_prep.py` compiles the 20 open cards with their resume lines; DISPO (haiku) proposes one disposition line per card; the main line rules the lines. Skill: `rtb`. **The rulings are Papi's; not fired.**",
+     "t": "**2.6 · RTB** — `_tools/oscarmike/rtb_prep.py` compiles the 20 open cards with their resume lines; DISPO (haiku) proposes one disposition line per card; the main line rules the lines. Skill: `rtb`. **The rulings are Chief's; not fired.**",
      "s": "done",
      "when": "9/12"
     },
@@ -365,7 +365,7 @@
      "n": 29,
      "s": "done",
      "when": "9/16",
-     "t": "**2.9 · The library sweep as an offload instance** — `_tools/zotero/` (inventory · classify · fullpass key/batch/merge/shelves · gap_scan · check_distill): scripts at both ends, seven PS batches of fifty TOCs in parallel on Papi's word (\"take all the agents you need\"), RANGE at every fan-in; 1,031 items keyed in one pass. The standing procedure: `_tools/zotero/README.md`."
+     "t": "**2.9 · The library sweep as an offload instance** — `_tools/zotero/` (inventory · classify · fullpass key/batch/merge/shelves · gap_scan · check_distill): scripts at both ends, seven PS batches of fifty TOCs in parallel on Chief's word (\"take all the agents you need\"), RANGE at every fan-in; 1,031 items keyed in one pass. The standing procedure: `_tools/zotero/README.md`."
     },
     {
      "n": 30,
@@ -492,7 +492,7 @@
      "label": "Who decides",
      "items": [
       {
-       "t": "**Papi** — the offload picks · the audit instrument · the name · the cadence. **Claude** — the scripts, the hooks, the skills, the register, every audit pass.",
+       "t": "**Chief** — the offload picks · the audit instrument · the name · the cadence. **Claude** — the scripts, the hooks, the skills, the register, every audit pass.",
        "s": "open"
       }
      ]
@@ -531,7 +531,7 @@
    "entries": [
     {
      "when": "9/12",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Open a BOLO: standardize the audit and continuous-improvement process; the token offload onto Claude Code's new tooling; is hand-coded HTML costlier than the visual tools; pull the applicable standards from the standards BOLO; the logistics front; \"how copy.\""
     },
     {
@@ -541,7 +541,7 @@
     },
     {
      "when": "9/12",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"What actually took the most?\" Was it the performer scrape; worried about the weekly limit and a two-day lockout."
     },
     {
@@ -551,7 +551,7 @@
     },
     {
      "when": "9/12",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Cap agent teams at three on a doubling scale: gears 1–5, never sixteen. Name the system, put it on the SOI. Table the dev-process standard but BOLO it. SOI: define proword, drop the number. A lighter viewer than Firefox."
     },
     {
@@ -561,7 +561,7 @@
     },
     {
      "when": "9/12",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Identify other processes that we use frequently that we can optimize just like we did this.\" Eight named and ranked; then: \"permission granted, do all of it.\""
     },
     {
@@ -572,7 +572,7 @@
     {
      "when": "9/12",
      "who": "Claude",
-     "t": "FRAGO 51 v0.3 built locally by frago.py; the republish to the standing URL was refused by the cross-session gate twice (about 65k tokens spent on the first read). Republish owed from the next session, or on Papi's force order. Call added."
+     "t": "FRAGO 51 v0.3 built locally by frago.py; the republish to the standing URL was refused by the cross-session gate twice (about 65k tokens spent on the first read). Republish owed from the next session, or on Chief's force order. Call added."
     },
     {
      "when": "9/16",
@@ -586,13 +586,13 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Give me the dope sheet on this and let's work on this now,\" pointing at the formation row on the Fresh Ten; its next step is Blocked #19, this sheet."
     },
     {
      "when": "9/16",
      "who": "Claude",
-     "t": "FRAGO 51: status, order, and phase 9 recorded; the force-order call carries the measured cost; the four open calls put to Papi."
+     "t": "FRAGO 51: status, order, and phase 9 recorded; the force-order call carries the measured cost; the four open calls put to Chief."
     },
     {
      "when": "9/16",
@@ -601,12 +601,12 @@
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"I don't like the name Sonnet Specialist. Let's do something NASA Marine encoding.\" → \"go CDR.\""
     },
     {
      "when": "9/16",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Run the full pass and take all the agents you need.\" The ceiling lifted for one task; seven PS at once."
     },
     {

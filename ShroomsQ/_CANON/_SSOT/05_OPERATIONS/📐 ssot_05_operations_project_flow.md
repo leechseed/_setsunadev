@@ -78,7 +78,7 @@ MCDP 5 rules that a plan without four components is not a plan: **desired outcom
 | 8 | **Information line** | Audiences, internal and external · the narrative, nested under the trunk narrative · the **deny list** (what is protected, from whom, how; what lives in `_PRIVATE/`) · the measure of narrative effect. | MCDP 8 |
 | 9 | **Control process** | Sit rep cadence · decision points · the signals that trigger replanning. "The plan contains the means for changing the plan." | MCDP 5 · MCDP 6 |
 | 10 | **Exit and termination** | The conditions under which the project is complete. The conditions under which it is killed or parked. Transition and reconstitution. | BVIPDS §10 · MCDP 1-2 |
-| 11 | **Authority and the AI model** | Commander: Papi, full authority. Partner: mission-type orders, 5-80-15 split (intent · execution · judgment). The partner informs; it does not wait for permission inside the intent. | BVIPDS §11 · MCDP 1 · MCDP 6 |
+| 11 | **Authority and the AI model** | Commander: Chief, full authority. Partner: mission-type orders, 5-80-15 split (intent · execution · judgment). The partner informs; it does not wait for permission inside the intent. | BVIPDS §11 · MCDP 1 · MCDP 6 |
 
 ### D · The gate
 
@@ -200,7 +200,7 @@ Sit rep cadence: · Decision points: · Replan triggers:
 Complete when: · Killed or parked when: · Transition:
 
 ## 11 Authority and AI model
-Commander: Papi, full. Partner: mission-type orders, 5-80-15.
+Commander: Chief, full. Partner: mission-type orders, 5-80-15.
 
 ## Decision ledger
 | # | Decision | Blocking? | Ruled |
@@ -237,7 +237,7 @@ An **L-size** venture run in two modes: **annihilation** for the build (the pers
 
 ### Example 3 · BOLO 26, the dictation dictionary (S-size)
 
-Five-line brief: end state (the recognizer stops mangling the Command lexicon) · intent (fewer misreads without slowing Papi down) · scope (one tool, one dictionary) · done (a session with zero SOP §8 catches) · owner (Claude on BUILD, Papi on INSTALL or PAY). One gate at done. Parked in oscar-mike on the route decision, which is a HOLD with a named decider.
+Five-line brief: end state (the recognizer stops mangling the Command lexicon) · intent (fewer misreads without slowing Chief down) · scope (one tool, one dictionary) · done (a session with zero SOP §8 catches) · owner (Claude on BUILD, Chief on INSTALL or PAY). One gate at done. Parked in oscar-mike on the route decision, which is a HOLD with a named decider.
 
 ---
 
@@ -245,5 +245,5 @@ Five-line brief: end state (the recognizer stops mangling the Command lexicon) �
 
 | Version | Date | Changes |
 |---|---|---|
-| 0.1.0 | 2026-09-03 | Working assembly from finished holdings on Papi's order (BOLO 25, sequence held: PDFs → MCDP pass → template → BOLO 24). Sources named in frontmatter. Promotes on two uses. |
+| 0.1.0 | 2026-09-03 | Working assembly from finished holdings on Chief's order (BOLO 25, sequence held: PDFs → MCDP pass → template → BOLO 24). Sources named in frontmatter. Promotes on two uses. |
 | 0.1.1 | 2026-09-15 | Sibling filed: the development standard (BOLO 53) governs the loop inside a session; this flow governs the project. Dependency added; no rule changed. |

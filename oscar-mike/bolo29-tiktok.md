@@ -4,7 +4,7 @@ title: The SFW TikTok Channel — Fortnite skin dance edits (BOLO 29)
 handle: tiktok channel
 tags: BLACK, venture, TikTok, Fortnite, UEFN, BOLO-29, pointer-only (research in `_PRIVATE/`)
 status: parked on "Oscar Mike everything" — boresight HELD since 9/4; one question + the clear still out
-open-decision: "Q1 — the reward-vs-risk reading: Papi said 'biggest reward'; confirm that ranks BOLO 29 against BOLO 24/27 on upside alone, risk noted but not weighted · then the clear (or the belay)"
+open-decision: "Q1 — the reward-vs-risk reading: Chief said 'biggest reward'; confirm that ranks BOLO 29 against BOLO 24/27 on upside alone, risk noted but not weighted · then the clear (or the belay)"
 ---
 
 # THE SFW TIKTOK CHANNEL — BOLO 29
@@ -19,7 +19,7 @@ open-decision: "Q1 — the reward-vs-risk reading: Papi said 'biggest reward'; c
 
 ## Resume
 
-1. Papi answers Q1 (or says "biggest reward" again — that is the answer) and clears.
+1. Chief answers Q1 (or says "biggest reward" again — that is the answer) and clears.
 2. Deliver from the private research file: viability, ballpark, the 90-day plan, the rank against 24/27.
 3. STATE Blocked #11 closes with it.
 

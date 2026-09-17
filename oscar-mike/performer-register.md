@@ -4,18 +4,18 @@ title: The Performer Register (BOLO 42)
 handle: performer register
 tags: ORANGE, register, taste-data, Stash, feeds L2b morphology + BOLO 23 + taxonomy engine + BLACK at intertext
 status: parked on "Oscar Mike ×3" — delivered and accepted; two staged passes and one spelling check open
-open-decision: "(1) the X-handle verify pass over all 134 names (one agent sweep, physique-watchlist columns) — fire or leave · (2) L2b morphology cells per performer — Papi's calls, BOLO 23 pattern · (3) Lina Vesper — spelling as heard, not in Stash; confirm or correct"
+open-decision: "(1) the X-handle verify pass over all 134 names (one agent sweep, physique-watchlist columns) — fire or leave · (2) L2b morphology cells per performer — Chief's calls, BOLO 23 pattern · (3) Lina Vesper — spelling as heard, not in Stash; confirm or correct"
 ---
 
 # THE PERFORMER REGISTER
 
-**The deliverable:** [`_CANON_NODES/performer-register.md`](../_CANON_NODES/performer-register.md) — every adult performer, e-girl, and creator Papi has written down as admired, nine vault lists (2022 → 2025) plus a spoken source, merged and recurrence-ranked on the film-register method.
+**The deliverable:** [`_CANON_NODES/performer-register.md`](../_CANON_NODES/performer-register.md) — every adult performer, e-girl, and creator Chief has written down as admired, nine vault lists (2022 → 2025) plus a spoken source, merged and recurrence-ranked on the film-register method.
 
 ## What stands (9/8)
 
 - **134 names · 21 in the stable core** (four or more lists) · lanes: 104 performers · 17 e-girls · 12 creators · 1 other · 88 exist as performers in Stash.
 - **The core, in rank order:** Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Riley Reid · Sensi Pearl · Leah Gotti (five lists) · Abella Danger · Aria Alexander · Eliza Ibarra · Elsa Jean · Janice Griffith · Katie Morgan · Sasha Grey · Violet Myers · Yhivi · Charlotte Sartre · Evelyn Claire · Kimmy Granger · Joanna Angel (four).
-- **Columns:** Name · Lane · Listed · Sources · First · Stash scenes · 5★ · Papi's note · X (empty, staged).
+- **Columns:** Name · Lane · Listed · Sources · First · Stash scenes · 5★ · Chief's note · X (empty, staged).
 - **The gooner lane** (Stash five-star names on no list, top 20) sits in its own section: watched, not admired.
 
 ## Rulings on the boresight loop (9/8)
@@ -38,6 +38,6 @@ The build script lives in the session scratchpad only (`build_register.py`: the 
 ## Resume
 
 1. Say "fire the handle pass" → one agent sweep, X + IG columns, physique-watchlist labeling discipline; results land in the X column.
-2. Morphology cells: Papi calls them, row by row, when he wants to (content-blind on Claude's side).
+2. Morphology cells: Chief calls them, row by row, when he wants to (content-blind on Claude's side).
 3. Confirm Lina Vesper's spelling.
 4. Downstream, when called: the taxonomy engine's attitude archetypes keyed to the core · Modern Poetics P8–P10 over the core for BOLO 24 · the intertext pull for the character system.

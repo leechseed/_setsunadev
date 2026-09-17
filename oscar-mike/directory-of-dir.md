@@ -4,7 +4,7 @@ title: The DIRECTORY OF DIR Inventory
 handle: directory of dir
 tags: [archive, narratology, dramatica, BLACK, promote-candidates, BOLO 18]
 status: parked mid-inventory — recon complete, nothing promoted yet
-open-decision: "three promote candidates need Papi's word (Allen Intertextuality · Phillips Dramatica models · McKee Story iterations); everything else is leave-archived"
+open-decision: "three promote candidates need Chief's word (Allen Intertextuality · Phillips Dramatica models · McKee Story iterations); everything else is leave-archived"
 ---
 
 # Where it stands (recon done, promotion not started)
@@ -30,7 +30,7 @@ open-decision: "three promote candidates need Papi's word (Allen Intertextuality
 
 `_g-on_dir` (10; Moon Saga — already seeded to `_CANON_NODES/moon-saga-seed.md`) · `_gamedesign_dir` (1: intro to game systems, 65 KB) · `_projects_dir` (8: a math-fundamentals doc 65 KB, a wedding-speech applied-narratology exercise, misc) · `_database_systems_dir` (5, 43 KB) · `_designer_dir` (4: Universal Principles of Design notes, emacs) · `_writing_prompts_dir` (1: an Elden Ring review, 32 KB) · `_works_dir` (3 short reviews) · `_reference_sources_dir` (2: cognitive-psych references) · `_metadata_dir` · `_pattern_dir` · `_mbadmin_dir` (empty files) · `_python_scripts_dir` (2 py).
 
-**`_onlyfans_dir/` (19 files, 7.3 MB — 9 PNGs are the bulk) [ORANGE]** — the 2024 ancestor of the Ultrasin registry: a 46 KB voice-training doc, workout notes, a toy size chart, scraping research, several empty placeholder lists. Already public. Not a narratology matter; if anything moves it is the voice-training doc toward the lab-venture persona work (`oscar-mike/lab-venture.md`). Papi's call.
+**`_onlyfans_dir/` (19 files, 7.3 MB — 9 PNGs are the bulk) [ORANGE]** — the 2024 ancestor of the Ultrasin registry: a 46 KB voice-training doc, workout notes, a toy size chart, scraping research, several empty placeholder lists. Already public. Not a narratology matter; if anything moves it is the voice-training doc toward the lab-venture persona work (`oscar-mike/lab-venture.md`). Chief's call.
 
 ## How to resume
 

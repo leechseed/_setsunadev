@@ -2,7 +2,7 @@
 speak.py — JUDY's mouth.
 
 BOLO 56, voice call ruled 2026-09-16: Piper now, ElevenLabs eventually — and
-"eventually" arrived the same day, when Papi got an ElevenLabs account.
+"eventually" arrived the same day, when Chief got an ElevenLabs account.
 
 Three engines behind one `say()`, so the engine is a config line, not a rewrite:
 
@@ -15,7 +15,7 @@ THE REPO IS PUBLIC. The ElevenLabs key lives in an env var or _PRIVATE/elevenlab
 never in judy.json or any tracked file. `--key-status` says where it found one.
 
     python speak.py "Judy on station."
-    python speak.py --voice en_GB-alba-medium "Go ahead, Papi."
+    python speak.py --voice en_GB-alba-medium "Go ahead, Chief."
     python speak.py --list
     python speak.py --engine sapi "comparison test"
     python speak.py --key-status
@@ -148,7 +148,7 @@ def el_client():
 
 
 def el_voices():
-    """Every voice on the account — the ones Papi builds show up here."""
+    """Every voice on the account — the ones Chief builds show up here."""
     try:
         res = el_client().voices.search(page_size=100)
         out = []
@@ -333,7 +333,7 @@ def main():
             print(f"  {v['name']:36s} {v.get('language','')}  {v.get('sample_rate','')} Hz")
         return
 
-    text = " ".join(a.text) or "Judy on station. Go ahead, Papi."
+    text = " ".join(a.text) or "Judy on station. Go ahead, Chief."
     import time
     t0 = time.time()
     wav = say(text, engine=a.engine, voice=a.voice, rate=a.rate, blocking=True)

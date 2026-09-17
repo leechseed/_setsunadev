@@ -19,7 +19,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | Already in catalog.json (BVX id) | 782 |
 | **New since the Dec-2023 catalog** | **6913** |
 | Story-side (CRE + LIT by catalog) | 299 |
-| **Spine-keyed from Papi's tags** | **613** |
+| **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
 

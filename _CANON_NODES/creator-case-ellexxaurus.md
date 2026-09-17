@@ -4,7 +4,7 @@ entity_id: creator_case_ellexxaurus
 kind: creator case study — business-side research on a public performer/creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — BOLO 45 wave one (lane C), researched on Papi's order; every claim sourced; confidence labeled
+status: DELIVERED 2026-09-10 — BOLO 45 wave one (lane C), researched on Chief's order; every claim sourced; confidence labeled
 register_row: "performer-register — Ellexxaurus · C · Sex — · Listed 1 · Source M (2025 list, 'most influential porn stars 2025') · First 2025 · no Stash · no note · X —"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 pronouns: "no pronoun statement in any bio. Her own public profile fields settle sex: Pornhub model profile 'Gender: Female' (self-set, five snapshots), X/Bluesky bios 'ur creamy gf'. She/her used here; the register's dash can be filled F."
@@ -19,7 +19,7 @@ updated: 2026-09-10
 
 **Bottom line.** A solo, self-shot, face-withheld amateur creator (Pornhub self-set birthplace: United Kingdom) whose whole business is one price card: **"NO PPV"** as the first line of every bio, the complete catalog (465 videos · 794 images · 188 bundles on Fansly) behind a **$20/30-day** gate, and the face itself sold as the **$50 "ELITES"** tier ("FACE CARD & BTS," priority DMs). The distribution story is a platform-loss recovery: the original `@ellexxaurus` X account (posting by Nov 2023, bio "over 150 full vids NO PPV EVER!" in Nov 2024) was lost between Nov 2024 and Apr 2025 — but she had already built a side account (Jul 2024), a Bluesky (Oct 2024), a backup X (Nov 2024), a Reddit and a fixed link hub, and the **rebuilt `@ellexxaurus` (created 2025-04-01) is at 1,001,719 followers seventeen months later**, verified. Two Pornhub uploads (Oct 2025, Feb 2026) run as a billboard, not a catalog: 22.7K subscribers / 4.18M views by Aug 2026. Six Fansly monthly-leaderboard badges (Top 20 Dec '24 → Top 20 Jun '26) are the only performance record; **no earnings, no interview, no press exist anywhere.** The two-x spelling is the real handle; the one-x `ellexaurus` is a different person.
 
-**Papi's context.** Filed as a creator (lane C) from his 2025 list "most influential porn stars 2025" (source M). No note; Sex column a dash; not in Stash. The 2025 date matches the record: the account he would have seen is the rebuilt one, which was between zero and a million followers during 2025.
+**Chief's context.** Filed as a creator (lane C) from his 2025 list "most influential porn stars 2025" (source M). No note; Sex column a dash; not in Stash. The 2025 date matches the record: the account he would have seen is the rebuilt one, which was between zero and a million followers during 2025.
 
 **Confidence.** fxtwitter (four X accounts) · Fansly API · Bluesky API · Linktree page JSON · link.me · Wayback Pornhub series (5 snapshots, raw HTML) · Wayback X meta (2024-11-29) **HIGH** (fetched 2026-09-10) · Instagram figures **MEDIUM** (instastatistics, aggregator) · Instagram bio, Threads, TikTok, Reddit **LOW** (search snippets only; the tweets naming Reddit are on the lost account and return 404) · the link between the suspended `@ellexxaurus_` (created 2020) and the lost original account **MEDIUM** (same strikethrough display name on a mirror-site title; the mirror itself returned 403) · every rate marked EST is derived.
 
@@ -65,7 +65,7 @@ updated: 2026-09-10
 - **2025-04-01** — current `@ellexxaurus` created. Later verified.
 - **Apr 2025** — Fansly "Top 50 Apr '25."
 - **2025-04-30** — *"new posts on Reddit 🫣💦 I'm gonna post some more too"* (421,654 views).
-- **2025** — Papi's "most influential porn stars 2025" list files the name (source M).
+- **2025** — Chief's "most influential porn stars 2025" list files the name (source M).
 - **~Aug 2025** — Pornhub model account opened; **2025-09-05** snapshot: 0 videos, 36 subscribers, 232 profile views, no bio.
 - **Sept 2025** — Fansly "Top 50 Sept '25."
 - **~Oct 2025** — first Pornhub upload (9:38).

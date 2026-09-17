@@ -469,7 +469,7 @@ class Handler(BaseHTTPRequestHandler):
                 judy = read_json(JUDY, JUDY_DEFAULTS)
                 v = judy["voice"]
                 engine = b.get("engine") or v.get("engine", "piper")
-                text = b.get("text") or "Judy on station. Go ahead, Papi."
+                text = b.get("text") or "Judy on station. Go ahead, Chief."
                 if engine == "sapi":
                     sapi_speak(b.get("name", v.get("name")), text,
                                b.get("rate", v.get("rate", 0)),

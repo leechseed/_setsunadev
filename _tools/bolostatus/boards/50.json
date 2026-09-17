@@ -62,7 +62,7 @@
     "options": "adopt the NASA four (policy → procedural requirement → standard → handbook) as the Command ladder, or the DoD three (STD · HDBK · SPEC), or name your own",
     "default": "NASA four, provisional",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: \"let's go with the NASA four.\" Rungs in Command words: policy · procedure · standard · handbook. Spec borrowed from DoD as a tag on nodes, not a rung."
+    "ruling": "RULED 9/15, Chief: \"let's go with the NASA four.\" Rungs in Command words: policy · procedure · standard · handbook. Spec borrowed from DoD as a tag on nodes, not a rung."
    },
    {
     "q": "Where it files",
@@ -89,7 +89,7 @@
     "options": "keep each candidate as written · amend one · strike one (the node keeps the strike line)",
     "default": "candidates stand, unruled, until spoken",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: \"Go ahead, keep all three.\" DCUS, Trash Land, and ASTRO7EX each carry their line as canon law of the place; the nodes are stamped."
+    "ruling": "RULED 9/15, Chief: \"Go ahead, keep all three.\" DCUS, Trash Land, and ASTRO7EX each carry their line as canon law of the place; the nodes are stamped."
    },
    {
     "q": "Who set the standard",
@@ -109,7 +109,7 @@
     "options": "a governing procedure for BLACK · a governing procedure for DARKROOM (the taxonomy engine; the register already maps ISO/IEC 42001 to it) · proper names for the Trash Land and ASTRO7EX bodies · outside parents for the twelve orphans · leave all six resting",
     "default": "resting; the first gap fills when its work happens",
     "s": "ruled",
-    "ruling": "RULED 9/15, Papi: \"let's close that open call.\" Closed on the default: resting, no gap pre-selected. The mantra's third line governs: never write a standard ahead of the work. A gap fills when its work happens, and naming one reopens the sheet."
+    "ruling": "RULED 9/15, Chief: \"let's close that open call.\" Closed on the default: resting, no gap pre-selected. The mantra's third line governs: never write a standard ahead of the work. A gap fills when its work happens, and naming one reopens the sheet."
    }
   ]
  },
@@ -170,11 +170,11 @@
        "s": "done"
       },
       {
-       "t": "**9/15 · The ladder ruled.** The consult put NASA four against DoD three: DoD's three is only the technical half, with no rung for the SOP-class documents that make up most of what the Command has written. NASA four carries the shall/should split that DOCTRINE 0 Invariant III already demands. Papi: \"let's go with the NASA four.\" BOLO 53's standard moved from the provisional STANDARD rung to PROCEDURE the same turn.",
+       "t": "**9/15 · The ladder ruled.** The consult put NASA four against DoD three: DoD's three is only the technical half, with no rung for the SOP-class documents that make up most of what the Command has written. NASA four carries the shall/should split that DOCTRINE 0 Invariant III already demands. Chief: \"let's go with the NASA four.\" BOLO 53's standard moved from the provisional STANDARD rung to PROCEDURE the same turn.",
        "s": "ruled"
       },
       {
-       "t": "**9/15 late · Phase 5 landed.** Three specialists, disjoint sources, one script reviewer: 0 blocking findings, em-dashes advisory. The fiction now rhymes with the Command: each world has a body issuing standards on the same four rungs, and each node's dynamic table is the individual-versus-society battle Papi named.",
+       "t": "**9/15 late · Phase 5 landed.** Three specialists, disjoint sources, one script reviewer: 0 blocking findings, em-dashes advisory. The fiction now rhymes with the Command: each world has a body issuing standards on the same four rungs, and each node's dynamic table is the individual-versus-society battle Chief named.",
        "s": "done"
       },
       {
@@ -343,7 +343,7 @@
      "label": "Who decides",
      "items": [
       {
-       "t": "**Papi** — the ladder · where it files · the campaign name · every Command standard's ruling. **Claude** — the pull, the register, the filing pass, the derivations.",
+       "t": "**Chief** — the ladder · where it files · the campaign name · every Command standard's ruling. **Claude** — the pull, the register, the filing pass, the derivations.",
        "s": "open"
       }
      ]
@@ -382,7 +382,7 @@
    "entries": [
     {
      "when": "9/11",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Break-break: the standards campaign. About 65 links; \"pull whatever you can from each one and organize the data\"; every level a standards organization; \"how copy.\""
     },
     {
@@ -398,11 +398,11 @@
     {
      "when": "9/15",
      "who": "Claude",
-     "t": "FRAGO 50: BOLO 53 opened 9/15 on Papi's word and filed its standard at rung STANDARD ahead of the ladder; related row added; phase 4 and the filing call updated. Order unchanged: rule the ladder."
+     "t": "FRAGO 50: BOLO 53 opened 9/15 on Chief's word and filed its standard at rung STANDARD ahead of the ladder; related row added; phase 4 and the filing call updated. Order unchanged: rule the ladder."
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "Asked for the consult on NASA four versus DoD three, then: \"let's go with the NASA four.\""
     },
     {
@@ -412,7 +412,7 @@
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Go five. Five. Go five.\""
     },
     {
@@ -422,7 +422,7 @@
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"I don't understand what you need from me with these three. Give me more context.\" Then, after the consult: \"Go ahead, keep all three.\""
     },
     {
@@ -432,7 +432,7 @@
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"go 6\" (dictated as \"goes to ex … 6\")."
     },
     {
@@ -442,7 +442,7 @@
     },
     {
      "when": "9/15",
-     "who": "Papi",
+     "who": "Chief",
      "t": "\"Okay, let's close that open call.\""
     },
     {

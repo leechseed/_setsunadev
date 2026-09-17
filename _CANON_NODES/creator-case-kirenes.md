@@ -4,7 +4,7 @@ entity_id: creator_case_kirenes
 kind: creator case study (light) — business-side lookup on a public solo creator; public-record sources only, no media described
 ip: cross-IP (reference layer for Ultrasin; feeds the performer register, lane C)
 trunk: ORANGE
-status: DELIVERED 2026-09-10 — researched on Papi's order (spoken 9/10, spelled K-I-R-E-N-E-S); light scope; every claim sourced · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
+status: DELIVERED 2026-09-10 — researched on Chief's order (spoken 9/10, spelled K-I-R-E-N-E-S); light scope; every claim sourced · §10 TTP added 9/10 (RULED TTP; provisional header was GOUGE)
 register_row: "performer-register — Kirenes · C · S · 2026"
 venture_read: "_PRIVATE/BOLO-24-solo-creator-cases.md (the BOLO 24 read-across stays private)"
 links:
@@ -17,7 +17,7 @@ updated: 2026-09-10
 
 **Bottom line.** The Fansly handle is real and verified; nothing else about this creator exists anywhere findable. No X, Reddit, link hub, OnlyFans, Pornhub, or ManyVids presence could be tied to the account; no interview, article, thread, or tracker listing surfaced under any spelling. The whole record is one Fansly API response.
 
-**Papi's context.** Spoken into the register 9/10, "on Fansly," lane C. Not a Stash performer; 159 unattributed, unrated files from a "Fansly - Kirenes (Video Pack)" folder sit in Stash under `.2026\`, attribution staged. Sex not stated anywhere in the creator's own words — the register's dash stands.
+**Chief's context.** Spoken into the register 9/10, "on Fansly," lane C. Not a Stash performer; 159 unattributed, unrated files from a "Fansly - Kirenes (Video Pack)" folder sit in Stash under `.2026\`, attribution staged. Sex not stated anywhere in the creator's own words — the register's dash stands.
 
 **Confidence.** Fansly API HIGH (fetched 2026-09-09, three ways) · snowflake account date LOW–MED · the "agency-run" read is inference only.
 

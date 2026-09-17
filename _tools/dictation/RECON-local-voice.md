@@ -4,7 +4,7 @@ type: recon
 rung: handbook
 date: 2026-09-17
 status: boresight read delivered, awaiting HOTLINE ACTUAL's clear
-ordered_by: Papi ("boresight local voice", 9/17, after "I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity")
+ordered_by: Chief ("boresight local voice", 9/17, after "I thought we were building this thing to be on my 3090, locally run, one hundred percent fidelity")
 crew: one MS (sonnet) on WebSearch/WebFetch only; the CDR ruled the shortlist below
 ---
 
@@ -41,7 +41,7 @@ Fails on the requirement that matters (delivery control): Kokoro, Piper, XTTS, F
 
 - **No 3090 numbers exist for any of the three.** Every speed figure is a 4090 or a server. The 3090 is roughly 60–70 % of a 4090; Chatterbox's ~0.5 RTF should still land a 5 s line under a second warm, but that is arithmetic, not a measurement.
 - **The register.** Whether `exaggeration`/`cfg_weight` on a British reference clip produces "affable, bratty" rather than "shouty" is a listening test. Documentation cannot answer it.
-- **The reference clip.** Chatterbox clones from 5–20 s of audio; there is no shelf voice. The clip has to come from somewhere legitimate: a public-domain British female reading (LibriVox), a clip Papi records with a collaborator, or a voice Papi designs. Cloning Blondie from the ElevenLabs auditions on disk is the obvious shortcut and the wrong one until the ElevenLabs terms on downstream use of generated audio are read.
+- **The reference clip.** Chatterbox clones from 5–20 s of audio; there is no shelf voice. The clip has to come from somewhere legitimate: a public-domain British female reading (LibriVox), a clip Chief records with a collaborator, or a voice Chief designs. Cloning Blondie from the ElevenLabs auditions on disk is the obvious shortcut and the wrong one until the ElevenLabs terms on downstream use of generated audio are read.
 - **Fidelity.** One blind-test writeup puts Chatterbox Turbo ahead of ElevenLabs (65 % to 25 %); single source, unreproduced. Treat "100 % fidelity" as a target to measure, not a fact.
 
 # Cost of the build, if cleared

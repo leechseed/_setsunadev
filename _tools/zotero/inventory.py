@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Zotero live-DB inventory (BOLO 18 stage 2, step 1). Reads a COPY of the live zotero.sqlite,
-writes _0.1_BVX_LEARN/_meta/inventory-live.json + INVENTORY-LIVE.md, imports Papi's 0N_ tag scheme as spine keys,
+writes _0.1_BVX_LEARN/_meta/inventory-live.json + INVENTORY-LIVE.md, imports Chief's 0N_ tag scheme as spine keys,
 and diffs against catalog.json (title-normalised). Nothing in the repo is a PDF; only paths are recorded.
 
 Usage: python _tools/zotero/inventory.py [path-to-zotero.sqlite]
@@ -14,7 +14,7 @@ STORAGES = [os.path.join(os.path.dirname(SRC), "storage"),
             r"D:\My Google Drive\ZOTERO_DATA_DIRECTORY\storage",  # live first, the Dec-2023 Drive copy as fallback
             r"C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP"]  # the drop folder (9/16): acquisitions land here, no Zotero filing; drop_scan() below picks them up
 
-# Papi's 2023 tag scheme (00_ .. 09_) -> the story spine (ssot_01_story_spine_comparative_tree) - provisional 9/16
+# Chief's 2023 tag scheme (00_ .. 09_) -> the story spine (ssot_01_story_spine_comparative_tree) - provisional 9/16
 TAG2SPINE = {"00_THEORY OF COMPOSITION": "L0", "01_THEME": "L6", "02_PLOT": "L4", "02_PLOT SYUHZET": "L4",
              "03_CHARACTER": "L5", "CHARACTER": "L5", "04_SETTING": "SETTING", "05_SEQUENCE FABULA": "L4",
              "06_NARRATOR": "TEXTURE", "07_DIEGESIS": "TEXTURE", "08_FUZZ INTERTEXT AND GENRE": "L7",
@@ -166,7 +166,7 @@ def main():
          "| | |", "|---|---|", f"| Top-level items | **{n}** |", f"| With a PDF attachment | {withpdf} |",
          f"| PDF present on disk | {on_disk} |", f"| Already in catalog.json (BVX id) | {n - len(new)} |",
          f"| **New since the Dec-2023 catalog** | **{len(new)}** |", f"| Story-side (CRE + LIT by catalog) | {len(story)} |",
-         f"| **Spine-keyed from Papi's tags** | **{len(keyed)}** |",
+         f"| **Spine-keyed from Chief's tags** | **{len(keyed)}** |",
          f"| With PDF annotations | {sum(1 for i in items if i['annotations'])} ({sum(i['annotations'] for i in items)} highlights) |",
          f"| With notes | {sum(1 for i in items if i['notes'])} |", "",
          "## Spine keys imported (tag to level, provisional 9/16)", "", "| Level | Items |", "|---|---|"]

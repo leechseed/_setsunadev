@@ -4,7 +4,7 @@ entity_id: film_register
 kind: register — revealed-preference data (taste), not canon prose
 ip: cross-IP (tone-register input for OVEREXITOUT, the Drop, MOON/SAGA)
 trunk: BLACK
-status: MERGED 2026-09-03 — two lists unified on the ancients ruling; titles are Papi's own picks, unranked, unannotated
+status: MERGED 2026-09-03 — two lists unified on the ancients ruling; titles are Chief's own picks, unranked, unannotated
 sources:
   - "_ARCHIVE/_cake/film_catalog.md — Nov 2024, ~95 'inspirational and part of my influence' titles + to-watch"
   - "logseq_2023_journals_notes/…/08_FUZZ INTERTEXT AND GENRES/080007 - films.md — 2023 BLOODWORK era, 'films that I enjoy very much' + a second list + childhood movies"
@@ -16,7 +16,7 @@ captured: 2026-09-03
 
 # THE FILM REGISTER
 
-**What it is.** Every film Papi has written down as an influence, merged from the 2023 FUZZ list and the 2024 `_cake` catalog. Deduplicated on title. **C·F** marks titles on both lists two years apart: the stable core of the taste. Nothing is annotated yet; the Fantasy Drive / Sexy Check / Aesthetic Check (Modern Poetics P8–P10) can run over it when a tone question needs data.
+**What it is.** Every film Chief has written down as an influence, merged from the 2023 FUZZ list and the 2024 `_cake` catalog. Deduplicated on title. **C·F** marks titles on both lists two years apart: the stable core of the taste. Nothing is annotated yet; the Fantasy Drive / Sexy Check / Aesthetic Check (Modern Poetics P8–P10) can run over it when a tone question needs data.
 
 **Counts.** 123 titles in the core register · **40 on both lists** · 21 on the to-watch bench · 11 childhood titles.
 
@@ -180,7 +180,7 @@ Amélie · American Sniper · Apocalypse Now · Baby Driver · Brick · Children
 - The Lego Movie
 - Minority Report
 
-## Childhood movies (FUZZ, Papi's original order)
+## Childhood movies (FUZZ, Chief's original order)
 
 1. The Brave Little Toaster
 2. The Lion King

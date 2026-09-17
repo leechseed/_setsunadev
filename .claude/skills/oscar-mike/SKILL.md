@@ -13,7 +13,7 @@ Canonical: SOP.md §1 (the command) · §3 (the Ready Rack) · §7 rule 9 (the O
 python _tools/oscarmike/close.py
 ```
 
-Finds this session's transcript (or pass the session id prefix), writes `_tools/oscarmike/work/<date>/transcript.md` (Papi's turns in full, Claude's replies trimmed, tool traffic dropped), `meta.json`, and `brief.NOTE.md`. Prints the note's target name (today's note, or `-2`, `-3` if today already closed one; an open note from this session is finalized, not replaced).
+Finds this session's transcript (or pass the session id prefix), writes `_tools/oscarmike/work/<date>/transcript.md` (Chief's turns in full, Claude's replies trimmed, tool traffic dropped), `meta.json`, and `brief.NOTE.md`. Prints the note's target name (today's note, or `-2`, `-3` if today already closed one; an open note from this session is finalized, not replaced).
 
 ## H1 · One specialist
 

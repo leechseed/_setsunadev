@@ -23,7 +23,7 @@ Launch **SHEET** (sonnet) with the brief verbatim. It writes `boards/N.draft.jso
 
 Edit `boards/N.draft.json` directly (small JSON edits, not a rewrite):
 
-- **M** — `task` ("<verb> …,"), `intent` ("in order to …"), `spoken` (Papi's words), `endstate` (3–4 lines).
+- **M** — `task` ("<verb> …,"), `intent` ("in order to …"), `spoken` (Chief's words), `endstate` (3–4 lines).
 - **frago** — `mission` (task + intent in one sentence), `order` (the one next action, bold), `default` ("Silence: …"), `calls` (each `q` · `options` · `default` · `s`).
 - **C** — who decides · the gate · signal.
 

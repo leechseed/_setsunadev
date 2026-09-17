@@ -9,7 +9,7 @@ open-decision: "the dropped Invariant-1 clause (restore / keep gone) · 'ask for
 
 # THE MIL.01 READ-THROUGH
 
-Papi is reading `KNOWLEDGE_AREAS/🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997).md` and marking the load-bearing terms. The marking standard and the harvest were built around this read on 9/6.
+Chief is reading `KNOWLEDGE_AREAS/🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997).md` and marking the load-bearing terms. The marking standard and the harvest were built around this read on 9/6.
 
 ## Where it stopped
 
@@ -19,8 +19,8 @@ Papi is reading `KNOWLEDGE_AREAS/🧬 MIL.01 — MCDP 1 Warfighting — USMC (19
 
 ## Resume
 
-1. Papi reads on in VS Code, wrapping load-bearing terms as `==term==`. Bold is never used for marks (SOP: `📐 ssot_05_operations_markdown_marking`).
-2. Papi says the section is marked. Claude writes the senses JSON for the new terms and runs:
+1. Chief reads on in VS Code, wrapping load-bearing terms as `==term==`. Bold is never used for marks (SOP: `📐 ssot_05_operations_markdown_marking`).
+2. Chief says the section is marked. Claude writes the senses JSON for the new terms and runs:
    `python _tools/vocab_harvest.py "<MIL.01 path>" --senses <senses.json>`
    The VOCAB page regenerates; the register gains only the new rows.
 3. Same loop for MIL.02 through MIL.11. Each sheet gets its own `_vocab/<ID>.vocab.md`.
@@ -28,8 +28,8 @@ Papi is reading `KNOWLEDGE_AREAS/🧬 MIL.01 — MCDP 1 Warfighting — USMC (19
 
 ## Open
 
-- ~~The dropped clause~~ — **RESTORED 9/6** on Papi's call ("add the original"): Invariant 1 again ends "…continuous mutual adaptation, not of one side's execution."
-- **"Ask for my confidence."** Spoken at park, before "Oscar Mike." Read provisionally as: after each study block, Claude asks Papi for a confidence rating on the material (calibration, the learning-science move). Not yet ruled or worded. If ruled, it goes into SOP §1 as a step of the reading loop.
+- ~~The dropped clause~~ — **RESTORED 9/6** on Chief's call ("add the original"): Invariant 1 again ends "…continuous mutual adaptation, not of one side's execution."
+- **"Ask for my confidence."** Spoken at park, before "Oscar Mike." Read provisionally as: after each study block, Claude asks Chief for a confidence rating on the material (calibration, the learning-science move). Not yet ruled or worded. If ruled, it goes into SOP §1 as a step of the reading loop.
 
 ## Related
 

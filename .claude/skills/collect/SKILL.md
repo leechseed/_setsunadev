@@ -31,4 +31,4 @@ Every fetched URL must appear in the register (by URL or title); the dead ones a
 
 ## H3 · The main line
 
-Read the check output and the register's gaps section only. Record the run in the locus frontmatter (`status:`), the BOLO row, and the session note. The reply: counts (fetched · dead · items), the register path, the three most useful findings in Papi's terms.
+Read the check output and the register's gaps section only. Record the run in the locus frontmatter (`status:`), the BOLO row, and the session note. The reply: counts (fetched · dead · items), the register path, the three most useful findings in Chief's terms.

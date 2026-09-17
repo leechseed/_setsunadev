@@ -4,7 +4,7 @@ category: texture_layer
 version: 1.0.0
 last_updated: 2026-08-26
 applies_to: [OVEREXITOUT, all future IPs, BVX-LEARN keying]
-status: canonical — Module 3 of the lattice, delivered on Papi's clear 2026-08-26
+status: canonical — Module 3 of the lattice, delivered on Chief's clear 2026-08-26
 purpose: "THE TEXTURE LAYER — the discourse side of narrative: the critical-writing categories (narratology) organized as the Ten Questions of the Telling, the craft-term translation grid, and the TELLING PROFILE instrument. Lattice limb 3 of 4."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_03_setting_system (scene card)"]
 trunk: BLACK
@@ -12,7 +12,7 @@ trunk: BLACK
 
 # 📐 SSOT: THE TEXTURE LAYER — how the telling is made
 
-**What this is:** the "ancillary" layer Papi called — which turns out not to be ancillary at all. The load-bearing frame is **Chatman's story/discourse distinction** (BVX.0167): **story** = WHAT is told (events + existents — characters, settings); **discourse** = HOW it is told. The spine, the ladder, and the setting system are all story-side. **Texture is the entire discourse side** — the dimension the spine deliberately lacks, and the vocabulary critics actually categorize with.
+**What this is:** the "ancillary" layer Chief called — which turns out not to be ancillary at all. The load-bearing frame is **Chatman's story/discourse distinction** (BVX.0167): **story** = WHAT is told (events + existents — characters, settings); **discourse** = HOW it is told. The spine, the ladder, and the setting system are all story-side. **Texture is the entire discourse side** — the dimension the spine deliberately lacks, and the vocabulary critics actually categorize with.
 
 **The communication model (Chatman)** — every narrative runs this pipeline, and texture decisions live at every arrow:
 
@@ -105,7 +105,7 @@ T10 aimed at: narratee construction
 
 **Scene card wiring:** the card gains a `telling:` line (T1+T2+T4 for that scene) — the per-scene override of the profile.
 
-**House finding, flagged:** **OXO has no ruled Telling Profile.** No prose exists (`outliers.fdx` empty), so the entire discourse configuration — whose voice, who focalizes, what the movements' paratext apparatus is — is an *unmade decision set*. This module hands Papi the decision menu; the profile is a rulable artifact whenever OXO prose opens.
+**House finding, flagged:** **OXO has no ruled Telling Profile.** No prose exists (`outliers.fdx` empty), so the entire discourse configuration — whose voice, who focalizes, what the movements' paratext apparatus is — is an *unmade decision set*. This module hands Chief the decision menu; the profile is a rulable artifact whenever OXO prose opens.
 
 ---
 
@@ -117,7 +117,7 @@ T10 aimed at: narratee construction
 
 ## OPEN
 
-- **The OXO Telling Profile** — unruled; fires when OXO prose opens (or on Papi's call sooner).
+- **The OXO Telling Profile** — unruled; fires when OXO prose opens (or on Chief's call sooner).
 - **The Ten Questions naming** (T1–T10) — house coinage, awaiting ruling.
 - **Genette/Booth acquisitions** → BVX.1107+ queue.
 - Per-medium texture variants (game narration, PMV editing grammar as T3/T4 in video) → Module 4.

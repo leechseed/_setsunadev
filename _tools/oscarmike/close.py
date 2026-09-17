@@ -69,7 +69,7 @@ def main():
     body = []
     for t, ts, tx in turns:
         stamp = (ts or "")[11:16]
-        if t == "user": body.append(f"\n## PAPI · {stamp}\n{tx.strip()}\n")
+        if t == "user": body.append(f"\n## CHIEF · {stamp}\n{tx.strip()}\n")
         else:
             tx = tx.strip()
             body.append(f"\n## CLAUDE · {stamp}\n{tx[:1500]}{' […]' if len(tx) > 1500 else ''}\n")
@@ -82,7 +82,7 @@ def main():
     log = git("log", f"--since={since}", "--format=%h %ad %s", "--date=format:%H:%M") if since else ""
     touched = git("diff", "--name-only", f"HEAD@{{{since}}}") if since else ""
     meta = {"session": sid, "date": date, "first": first_ts, "last": last_ts,
-            "turns": {"papi": sum(1 for t in turns if t[0] == "user"), "claude": sum(1 for t in turns if t[0] == "assistant")},
+            "turns": {"chief": sum(1 for t in turns if t[0] == "user"), "claude": sum(1 for t in turns if t[0] == "assistant")},
             "commits_this_session": log.splitlines(), "dirty": git("status", "--porcelain").splitlines()}
     write(os.path.join(wd, "meta.json"), json.dumps(meta, ensure_ascii=False, indent=1))
 
@@ -103,15 +103,15 @@ def main():
     brief = f"""You are NOTE, the Ready Rack specialist for the close-out of {date}. Model: haiku.
 READ: {rel(os.path.join(wd, 'transcript.md'))} (the session, spoken turns only) · {rel(os.path.join(wd, 'meta.json'))} · {example} (the newest session note, for shape only){' · _CACHE/' + target + ' (the open note to finalize, keep every existing bullet)' if target in existing else ''}.
 WRITE: _CACHE/{target} — the session note in the house shape: a `# Session note — {date}: <what the session was>` title, then bullets:
-  the transmission(s) (what Papi ordered, quoted where he ruled something) · what was built or delivered (file paths) · what was ruled (RULED / provisional / tabled, with the word) ·
+  the transmission(s) (what Chief ordered, quoted where he ruled something) · what was built or delivered (file paths) · what was ruled (RULED / provisional / tabled, with the word) ·
   what was measured (numbers only if spoken or printed) · memory written (if the transcript says so) · **Open at close:** (everything unresolved, one line) ·
   **AAR (one line):** planned = · happened = · sustain = · improve = · and a final line `- Oscar Mike.`
-RULES: nothing not in the transcript; no praise; no summary of Claude's reasoning; file paths verbatim; Papi's words in quotes; under 2,500 characters unless the session was long.
+RULES: nothing not in the transcript; no praise; no summary of Claude's reasoning; file paths verbatim; Chief's words in quotes; under 2,500 characters unless the session was long.
 Do not read any other file. Do not edit STATE.md or the journal. Reply with the note's path and nothing else.
 """
     write(os.path.join(wd, "brief.NOTE.md"), brief)
     print(f"OSCAR MIKE prep · session {sid[:8]} · {date}")
-    print(f"transcript {rel(os.path.join(wd, 'transcript.md'))} ({len(text)//1024} KB, {meta['turns']['papi']} Papi / {meta['turns']['claude']} Claude turns)")
+    print(f"transcript {rel(os.path.join(wd, 'transcript.md'))} ({len(text)//1024} KB, {meta['turns']['chief']} Chief / {meta['turns']['claude']} Claude turns)")
     print(f"commits this session: {len(meta['commits_this_session'])} · dirty: {len(meta['dirty'])}")
     print(f"note target: _CACHE/{target} ({'finalize' if target in existing else 'new'})")
     print(f"brief: {rel(os.path.join(wd, 'brief.NOTE.md'))}")

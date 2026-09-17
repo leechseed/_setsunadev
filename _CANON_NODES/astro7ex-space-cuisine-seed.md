@@ -5,7 +5,7 @@ kind: setting seed — S3 SENSORIUM · S6 ECONOMY · S8 HABIT rows, unkeyed to a
 ip: ASTRO7EX (the umbrella continuity)
 trunk: BLACK
 status: SEED — captured 2026-09-06 on BOLO 39; nothing ruled
-ruling_that_scopes_it: "Papi 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
+ruling_that_scopes_it: "Chief 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
 sources:
   - "_0.1_BVX_LEARN/LOCI/preservation.field-map.md"
   - "_CANON_NODES/moon-saga-seed.md — the societies of the moon (2024 lineage; whether MOON/SAGA is ASTRO7EX's moon is unruled)"

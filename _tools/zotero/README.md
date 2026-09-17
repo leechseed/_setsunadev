@@ -16,7 +16,7 @@ Ruled 2026-09-16 ("run the full pass"). One sweep keys every item in the Zotero 
 | `CRAFT-PROCESS` | the writer's process, off the spine | — |
 | `OFF` | not a story book | — |
 
-Authority order for a key: Papi's own Zotero tags (`00_` … `09_`, never overwritten) → a PS TOC pass → title rules → subject default (off-spine subjects go `OFF` unless a rule hits).
+Authority order for a key: Chief's own Zotero tags (`00_` … `09_`, never overwritten) → a PS TOC pass → title rules → subject default (off-spine subjects go `OFF` unless a rule hits).
 
 ## The sweep, in order
 

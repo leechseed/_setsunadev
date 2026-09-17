@@ -10,7 +10,7 @@ closed-decision: "RULED BUILD 2026-09-16. Was: the route — BUILD (Claude write
 
 # The Dictation Dictionary — DELIVERED
 
-> **RULED BUILD 2026-09-16** (Papi: "build"). Tool shipped the same session: [`_tools/dictation/`](../_tools/dictation/README.md).
+> **RULED BUILD 2026-09-16** (Chief: "build"). Tool shipped the same session: [`_tools/dictation/`](../_tools/dictation/README.md).
 > §8 is parsed live, so the codebook cannot drift. Card kept as the derivation; nothing here needs re-walking.
 
 Card for **BOLO 26**. Everything walked on 9/3 is here; pick-up needs no re-derivation.
@@ -31,9 +31,9 @@ Card for **BOLO 26**. Everything walked on 9/3 is here; pick-up needs no re-deri
 | **PAY** | Wispr Flow · Aqua Voice — personal dictionary built in | monthly | against the zero-budget posture |
 
 ## Lexicon seed (the prompt)
-Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike · ENDEX · buttonhook · break-break · sit rep · how copy · Dramatica · Blender · MCDP · DCUS · Tori · Anna Colson Conway · Papi · main effort · PMCS · Ready Rack · Magazine · SOP · DOCTRINE 0
+Ultrasin · Bold Venture · BVX · DARKROOM · BOLO · boresight · Oscar Mike · ENDEX · buttonhook · break-break · sit rep · how copy · Dramatica · Blender · MCDP · DCUS · Tori · Anna Colson Conway · Chief · main effort · PMCS · Ready Rack · Magazine · SOP · DOCTRINE 0
 
-## Papi-side hygiene (regardless of route)
+## Chief-side hygiene (regardless of route)
 - Years as "twenty oh five", not "two thousand five". Critical proper nouns slightly slower, once; spell a new name the first time.
 - Headset/boom mic a few inches off, consistent distance; input ~70–80%; audio enhancements off if the tool fights them.
 

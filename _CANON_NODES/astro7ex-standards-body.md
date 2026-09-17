@@ -6,8 +6,8 @@ kind: "standards body — in-world institution; S4 LAW + S6 ECONOMY + S12 FUNCTI
 ip: ASTRO7EX
 trunk: BLACK
 status: "SEED ⧗ — built 2026-09-15 on BOLO 50 phase 5; nothing ruled except the lines marked canon · S12 invariant RULED KEEP 2026-09-15"
-capture_protocol: "Papi's spoken lines = canon · ⧗ = Claude development, strike or keep"
-ruling_that_scopes_it: "Papi 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
+capture_protocol: "Chief's spoken lines = canon · ⧗ = Claude development, strike or keep"
+ruling_that_scopes_it: "Chief 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
 slice: "Setting System S1–S12 — feeds S4 LAW, S6 ECONOMY, S12 FUNCTION of the ASTRO7EX places once keyed"
 links:
   - "[[astro7ex-space-cuisine-seed]]"
@@ -26,9 +26,9 @@ bolo: 50
 Two lines stand as canon, both from the cuisine seed, nothing added:
 
 - "The people up there — in space and on the moon — perhaps eat only preserved foods, and only the ones they preserved themselves."
-- "Papi 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
+- "Chief 9/6: the Outliers stay on the ground on Earth. Outer space exists — people in space and on the moon — under the ASTRO7EX continuity, but no Outliers narrative takes place out there."
 
-The moon-saga-seed carries no spoken Papi line from this phase. It carries a 2024 design-intent quote, recovered and unruled, offered here only as a boundary marker, not as canon for this body: "each society should have a general philosophy of cognition that serves as a framework of the development and establishment of each surviving society on the moon." Whether that moon is ASTRO7EX's moon is unruled (item 1, below).
+The moon-saga-seed carries no spoken Chief line from this phase. It carries a 2024 design-intent quote, recovered and unruled, offered here only as a boundary marker, not as canon for this body: "each society should have a general philosophy of cognition that serves as a framework of the development and establishment of each surviving society on the moon." Whether that moon is ASTRO7EX's moon is unruled (item 1, below).
 
 ## ⧗ The body: who issues, who enforces, who is bound
 
@@ -77,7 +77,7 @@ Two candidate readings.
 
 ## The S12 invariant — RULED KEEP 2026-09-15
 
-**RULED 2026-09-15, Papi: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
+**RULED 2026-09-15, Chief: KEEP.** ("Go ahead, keep all three.") This line is canon law of the place from this date: every scene card set here obeys it, and a scene that breaks it owes the story a reason.
 
 **Ruled: no person aboard [place, once keyed] eats a ration they did not put up themselves or receive, sealed and named, from a member of their own community.**
 

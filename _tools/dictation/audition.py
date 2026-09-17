@@ -28,7 +28,7 @@ import speak  # noqa: E402
 
 OUT = os.path.join(speak.ROOT, "_PRIVATE", "voice-auditions")
 
-# Papi's shortlist. Add a row and it joins the next run.
+# Chief's shortlist. Add a row and it joins the next run.
 CAST = {
     "blondie":  ("Blondie — Conversational, British",        "exsUS4vynmxd379XN4yO"),
     "emmaline": ("Emmaline — young British girl",            "nDJIICjR9zfJExIFeSCN"),
@@ -41,7 +41,7 @@ CAST = {
 # Four beats, because a voice can pass one and fail another.
 SCRIPT = {
     "1-hail": (
-        "Judy on station. Go ahead, Papi."
+        "Judy on station. Go ahead, Chief."
     ),
     "2-board": (
         "Sit rep, seventeen September. Six rows blocked on you, and the oldest has "

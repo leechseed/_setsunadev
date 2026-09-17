@@ -4,7 +4,7 @@ category: setting_system
 version: 1.1.0
 last_updated: 2026-09-16
 applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Papi's clear 2026-08-25; layer names provisional pending Papi's ruling; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03
+status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names provisional pending Chief's ruling; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -13,7 +13,7 @@ sources: [BVX.0458, BVX.0349, BVX.1122, BVX.0193, BVX.0175]
 
 # 📐 SSOT: THE SETTING SYSTEM — place at character grade
 
-**What this is:** setting promoted from backdrop to system — built B→A→instance per Papi's ruling: the **taxonomy** (what setting is), the **SETTING SLICE** (a 12-layer schema instanced per place, the architectural twin of the 12-Layer Character Database), the **SCENE CARD** (the notation slot reserved at ladder R2), and **DCUS instanced** as the proof of rig.
+**What this is:** setting promoted from backdrop to system — built B→A→instance per Chief's ruling: the **taxonomy** (what setting is), the **SETTING SLICE** (a 12-layer schema instanced per place, the architectural twin of the 12-Layer Character Database), the **SCENE CARD** (the notation slot reserved at ladder R2), and **DCUS instanced** as the proof of rig.
 
 **Root claim:** setting is the **pressure field** — the total state of the world at a story address, exerting force on every unit of the ladder. In spine terms: setting is where the argument becomes matter — a Domain embodied. A place that pressures nothing is scenery, not setting.
 
@@ -94,7 +94,7 @@ Every slice declares its scale class and its parent/child places. Address form: 
 
 ### Axis 2 · STRATA — what a place is made of
 
-The twelve layers of the slice (Part A). Derived from the holdings: Buckham's active-setting functions, the worldbuilding shelf's category sets (Kobold/GURPS gazetteer structure — the TTRPG scaffolding Papi called), narratology's space/description theory (Bal, Chatman).
+The twelve layers of the slice (Part A). Derived from the holdings: Buckham's active-setting functions, the worldbuilding shelf's category sets (Kobold/GURPS gazetteer structure — the TTRPG scaffolding Chief called), narratology's space/description theory (Bal, Chatman).
 
 ### Axis 3 · FUNCTION — what setting DOES (Buckham-derived deployment modes)
 
@@ -117,7 +117,7 @@ A slice is the **baseline**; **states** are dated overlays keyed to ladder addre
 
 ## PART A · THE SETTING SLICE — twelve layers, mirror of the character stack
 
-Same architecture as the 12-Layer Character Database: surface → depth → structural function, S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest. **Layer names are house coinage — provisional, awaiting Papi's ruling.**
+Same architecture as the 12-Layer Character Database: surface → depth → structural function, S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest. **Layer names are house coinage — provisional, awaiting Chief's ruling.**
 
 | Layer | Name | Holds | Mirrors |
 |---|---|---|---|
@@ -203,7 +203,7 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 - **What the trade cannot supply** (BVX.1122): a professional gazetteer fills BODY · LAW · ECONOMY · FOUNDING · HABIT · VECTOR richly, leaves WEATHER · SENSORIUM · SCAR · ALLURE · UNDERSIDE thin, and cannot fill FUNCTION at all. The Command's slice asks for exactly the layers the trade leaves out; that is the differentiation, and the cost.
 
 
-- **The twelve layer names** (BODY … FUNCTION) — house coinage, awaiting Papi's ruling; bench on request.
+- **The twelve layer names** (BODY … FUNCTION) — house coinage, awaiting Chief's ruling; bench on request.
 - **`03_SETTING_SYSTEMS/` placement** — new SSOT domain created this session, mirroring 02; movable on ruling.
 - **S2 WEATHER for DCUS** — authorable gap, first writing target when Movements 2–4 open.
 - **Setting state architecture** — dated-overlay format specced at Axis 4; full doc mirrors `ssot_02_character_state_architecture` when first needed.

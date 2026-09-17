@@ -14,7 +14,7 @@ tags: [bvx-learn, template, mind-models, mermaid, distill]
 
 # BVX-LEARN Distill Template v4
 
-**Ruling, 2026-09-16 (Papi):** *"Make sure there is a good template for distills; mind models, visual models using Mermaid or other, should be a huge thing of that; add it to the template."*
+**Ruling, 2026-09-16 (Chief):** *"Make sure there is a good template for distills; mind models, visual models using Mermaid or other, should be a huge thing of that; add it to the template."*
 
 This file is the standalone copy-paste template — §14.7 of `SPEC.BVX-LEARN.v3.md`, deferred at the spec's completion, delivered now. It does not reopen D1–D5. It adds one new required section (**Mind Models**) and two new frontmatter keys (`spine`, mandatory `feeds`) on top of the v3 §6 skeleton, which otherwise stands unchanged.
 

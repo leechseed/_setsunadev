@@ -7,7 +7,7 @@ trunk: BLACK
 
 # LOCI
 
-**What a locus is.** A one-file dossier on a *topic*, not a book. BVX-LEARN's atom (`KNOWLEDGE_AREAS/🧬 CODE.NN`) is one source distilled; a locus is one *question* answered from many sources, with its neighbors listed so the reader can step sideways. Papi's spec (9/6): *"if I'm thinking about what people eat in this area, I want to pull up everything in that locus — the edge cases, the Overton window of things related to what I'm asking — and navigate from there."*
+**What a locus is.** A one-file dossier on a *topic*, not a book. BVX-LEARN's atom (`KNOWLEDGE_AREAS/🧬 CODE.NN`) is one source distilled; a locus is one *question* answered from many sources, with its neighbors listed so the reader can step sideways. Chief's spec (9/6): *"if I'm thinking about what people eat in this area, I want to pull up everything in that locus — the edge cases, the Overton window of things related to what I'm asking — and navigate from there."*
 
 **The file.** `<slug>.locus.md`, frontmatter:
 

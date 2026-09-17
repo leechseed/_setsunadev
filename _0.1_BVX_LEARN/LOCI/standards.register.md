@@ -12,7 +12,7 @@ counts:
 
 # THE STANDARDS REGISTER
 
-One pull of Papi's 9/11 harvest (`standards.locus.md`). ANSI's webstore blocks direct fetch (403 on every `webstore.ansi.org` URL tried); those rows below are built from indexed search snippets and slug-decoding instead of a live page read — noted per row. Everything else was fetched directly where the URL is cited.
+One pull of Chief's 9/11 harvest (`standards.locus.md`). ANSI's webstore blocks direct fetch (403 on every `webstore.ansi.org` URL tried); those rows below are built from indexed search snippets and slug-decoding instead of a live page read — noted per row. Everything else was fetched directly where the URL is cited.
 
 ## 1. How standards bodies tier their documents
 
