@@ -151,6 +151,7 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 
    Radio lineage: **"Out"** ends a transmission and expects no reply; repeated three times it is the Command's own coinage (§6). Papi's words: "everything is very tightly and compact now, I want a break between when something's Oscar Mike'd and something else starts."
 
+10. **The spoken line** — coded 2026-09-17 (BOLO 56, session voice). While JUDY reads the session, any reply longer than a few sentences opens with an HTML comment `<!-- say: … -->` holding two to four spoken sentences in her register (the TARS dials: affable, informative, a little bratty; British handler; no paths, no URLs, no markdown). The reader speaks that line and skips the rest; a reply without one is read as written, up to the cap. Short replies need none.
 8. **One value, one block** — coded 2026-09-04. Anything Papi has to copy and paste (a path, a name, a command, an exact string) goes in its own fenced code block with nothing else in it, so the chat's copy button grabs exactly that value in one click. Inline backticks are for reading, never for pasting. Several values = several blocks, each labeled by the line above it.
 
 ---

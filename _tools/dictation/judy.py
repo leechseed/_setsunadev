@@ -210,12 +210,13 @@ class Loop:
     A pad wants toggle; holding a capacitive pad for thirty seconds is unpleasant.
     """
 
-    def __init__(self, face, engine, hotkey, speak_replies=True, toggle=False):
+    def __init__(self, face, engine, hotkey, speak_replies=True, toggle=False, session=False):
         self.face = face
         self.engine = engine
         self.hotkey = hotkey
         self.speak_replies = speak_replies
         self.toggle = toggle
+        self.session = session   # session voice: paste into the chat + Enter; the reader speaks
         self.rec = None
         self.open = False
         self.busy = threading.Lock()
@@ -228,6 +229,15 @@ class Loop:
         print(f"\n  you  > {heard}")
         self.face.say(f"you: {heard}")
         self.face.set("thinking")
+        if self.session:
+            # the words go to whatever has focus — the Claude Code chat box — and
+            # Enter sends the turn. Fable answers; reader.py speaks it as it lands.
+            import keyboard
+            import ptt
+            ptt.type_out(heard)
+            time.sleep(0.05)
+            keyboard.send("enter")
+            return
         reply, _tool = brain.answer(heard)
         if not reply:
             self.face.set("idle")
@@ -335,6 +345,9 @@ def main():
     ap.add_argument("--size", type=int, default=220)
     ap.add_argument("--toggle", action="store_true",
                     help="press to start, press again to stop (best for a pad)")
+    ap.add_argument("--session", action="store_true",
+                    help="session voice: your words go into the VS Code chat, and the "
+                         "reader speaks Fable's replies as they are written")
     a = ap.parse_args()
 
     v = cfg().get("voice", {})
@@ -353,8 +366,14 @@ def main():
     engine = ptt.Engine({**ptt.DEFAULTS, **dcfg(), "aggressive": dcfg().get("aggressive", False)})
     loop = Loop(face, engine, dcfg().get("hotkey", ptt.DEFAULTS["hotkey"]),
                 speak_replies=not a.no_voice,
-                toggle=a.toggle or bool(dcfg().get("toggle")))
+                toggle=a.toggle or bool(dcfg().get("toggle")),
+                session=a.session)
     loop.run()
+    if a.session:
+        import reader
+        rd = reader.Reader(face=face)
+        print(f"  voice  session · reader={rd.cfg.get('reader')} · keep the chat box focused")
+        threading.Thread(target=rd.run, daemon=True).start()
     face.run()
 
 

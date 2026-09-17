@@ -53,6 +53,41 @@ are the same functions whether the caller is a model, the VS Code session, or th
 router. When a brain arrives it replaces the router — `judy.py` does not change,
 because the loop only ever asks for a string back.
 
+## Session voice — built 9/17
+
+The direction Papi actually wanted: talk to **Fable**, and JUDY is the voice.
+
+```
+python _tools/dictation/judy.py --session
+```
+
+Hold the hotkey with the Claude Code chat box focused. Your words are transcribed,
+repaired, pasted into the box and sent. Fable answers in the chat as usual — no API,
+no key, the Pro plan. `reader.py` follows the session's transcript on disk
+(`~/.claude/projects/<repo>/<session>.jsonl`) and Blondie reads each block Fable
+writes **as it lands**, sentence by sentence, one sentence synthesizing while the
+previous plays. A new turn from you cuts her off mid-sentence and plays an
+acknowledgment ("Copy." · "On it." · "Stand by.") so the wait has a voice.
+
+| Piece | What |
+|---|---|
+| `reader.py` | the reader — tails the transcript, speech-forms each block, drives the mouth. `--test` speaks the last block Fable wrote |
+| `judy.py --session` | the face + the ears pointed at the chat + the reader in one process |
+| `_PRIVATE/voice-acks/` | the acknowledgment bank, rendered once by Blondie |
+| judy.json → `session` | `reader` script/haiku · `max_sentences` · `acks` — the Wire panel in the console sets them |
+
+**Speech form.** Replies are written for the eye. A reply that opens with
+`<!-- say: … -->` is spoken as that line only — SOP §7 rule 10, Fable's side of the
+bargain. Otherwise the reader strips markdown, skips code blocks and tables, reads
+links by label, and stops after the cap with "the rest is on screen." Mode `haiku`
+rewrites each block into talk through the bundled `claude.exe` first: conversational,
+two to three seconds slower a block, spends Pro usage.
+
+**The seconds.** Your words into the chat under a second after release · the
+acknowledgment instant · her first sentence ~0.4 s after Fable's first sentence
+exists · then she keeps pace. Fable's own thinking is the only wait, and it is
+covered, not cut.
+
 ## The wire — built 9/17
 
 `wire.py` is that MCP server: the seven tools above, unchanged, over stdio. The VS
@@ -239,6 +274,7 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `brain.py` | the tool layer — what she can actually answer |
 | `wire.py` | **the wire** — brain.py's seven tools as an MCP server over stdio (BOLO 56) |
 | `wire_probe.py` | spawns the wire and calls every tool once; the proof |
+| `reader.py` | **session voice** — follows the VS Code session's transcript and reads Fable aloud as she writes |
 | `../../.mcp.json` | registers the wire with the VS Code session as server `judy` |
 | `audition.py` | try candidate voices on the real script |
 | `faces/` | the four state PNGs |

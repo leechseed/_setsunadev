@@ -335,6 +335,20 @@
         <option value="bridge">File bridge — drops into the session via a watched file</option>
         <option value="mcp">MCP server — the session calls JUDY as a tool</option>
       </select><span class="hint">MCP is the one that is built; the others stay as the record of the trade</span></div>
+      <h3>Session voice <span class="hint">built 9/17</span></h3>
+      <p class="plain">The other direction. <code>python judy.py --session</code>: your words go into the
+        Claude Code chat box and Enter sends them; <code>reader.py</code> follows the session's
+        transcript and Blondie reads each block Fable writes as it lands, sentence by sentence.
+        A new turn from you cuts her off and plays an acknowledgment. A reply that opens with
+        <code>&lt;!-- say: … --&gt;</code> is spoken as that line only (SOP §7 rule 10).</p>
+      <div class="f" style="max-width:560px"><span class="lbl">Reader</span><select id="sReader">
+        <option value="script">Script — reads what Fable wrote, instant</option>
+        <option value="haiku">Haiku — rewrites each block into talk first, +2–3 s a block, spends Pro usage</option>
+      </select></div>
+      <div class="f" style="max-width:560px"><span class="lbl">Sentence cap</span>
+        <input id="sCap" type="number" min="0" max="60" style="width:90px"><span class="hint">0 = read it all; past the cap she says "the rest is on screen"</span></div>
+      <div class="f" style="max-width:560px"><span class="lbl">Acknowledgments</span>
+        <label><input id="sAcks" type="checkbox"> play "Copy." / "On it." when you send a turn</label></div>
       <h3>The trade, plainly</h3>
       <table><thead><tr><th>Mode</th><th>Latency</th><th>Sees your session</th><th>Cost to build</th></tr></thead>
         <tbody id="wireTbl"></tbody></table>
@@ -676,6 +690,12 @@ $("#openFaces").onclick=()=>api("/api/open",{target:"faces"});
 function renderWire(){
   $("#wMode").value=S.judy.wire.mode;
   $("#wMode").onchange=e=>saveJudy({wire:{mode:e.target.value}});
+  const ss=S.judy.session||{reader:"script",max_sentences:12,acks:true};
+  $("#sReader").value=ss.reader||"script";
+  $("#sCap").value=ss.max_sentences??12;
+  $("#sAcks").checked=ss.acks!==false;
+  const saveS=()=>saveJudy({session:{...ss,reader:$("#sReader").value,max_sentences:+$("#sCap").value,acks:$("#sAcks").checked}});
+  $("#sReader").onchange=saveS; $("#sCap").onchange=saveS; $("#sAcks").onchange=saveS;
   const rows=[
     ["Standalone","lowest","no — reads the repo only","small"],
     ["Agent SDK sidecar","low","no — its own context","medium"],

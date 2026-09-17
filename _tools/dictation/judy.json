@@ -37,5 +37,11 @@
     "server": "_tools/dictation/wire.py",
     "registered": ".mcp.json",
     "built": "2026-09-17"
+  },
+  "session": {
+    "reader": "script",
+    "max_sentences": 12,
+    "acks": true,
+    "built": "2026-09-17"
   }
 }

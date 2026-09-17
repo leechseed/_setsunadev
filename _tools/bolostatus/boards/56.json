@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "🟢 THE WIRE CLOSED 9/17 — after a VS Code restart the session spawned the judy server from .mcp.json and called all seven tools from inside; seven for seven. Every piece of JUDY exists and is proven: ears · brain · mouth · face · console · wire. Voice on ElevenLabs (paid, stays); local voice held, recon banked. Open: the TARS dials · the PNG states — both knobs, neither engineering.",
+  "status": "🟢 SESSION VOICE BUILT 9/17 on \"session voice\" — JUDY is Fable's voice: the ears paste into the Claude Code chat and send, reader.py follows the session transcript and Blondie reads each block as it lands, a new turn cuts her off with an acknowledgment. Proven on the last block Fable wrote (13 sentences, 0.2–0.45 s a sentence warm). Running now as judy.py --session. The wire closed earlier the same day; the router and the seven tools stay for standalone. Open: the TARS dials · the PNG states.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the MCP server that exposes brain.py's seven tools to the Opus VS Code session, in order to finish JUDY's one unbuilt piece at zero standing cost.",
-  "order": "**Nothing is owed on the engineering. Two knobs remain, both yours: hand over the four face PNGs (idle · listening · thinking · talking) when the art exists, and tune the TARS dials in the console's Persona panel against Blondie until the register sounds right.** Say the word and either becomes a FRAGO; silence leaves JUDY running as she is.",
-  "default": "Silence: JUDY runs as built — ears on the 3090, the router, Blondie on ElevenLabs, placeholder faces, the wire live in every VS Code session. Nothing is owed, nothing breaks, nothing is spent.",
+  "order": "**Talk to the session. Hold the hotkey with the chat box focused, say the thing, release; Fable answers and Blondie reads it as it is written.** Tune from the console's Wire panel: script or Haiku reader, the sentence cap, the acknowledgments. Nothing is owed on the engineering; the dials and the face art stay yours.",
+  "default": "Silence: session voice keeps running as launched. Fable opens long replies with the spoken line (SOP §7 rule 10); short ones are read as written.",
   "calls": [
    {
     "q": "The wire — build now?",
@@ -81,6 +81,13 @@
     "default": "stay on ElevenLabs",
     "s": "held",
     "ruling": "HELD 9/17 by Papi: \"I can't hold on 11 labs, already paid for it. We're stuck with 11 labs.\" ElevenLabs stays JUDY's mouth for the life of the subscription. The recon (Chatterbox Turbo rec, sources, the build cost) is banked at _tools/dictation/RECON-local-voice.md for when the subscription lapses or the local standard is re-raised."
+   },
+   {
+    "q": "Session voice — the reader",
+    "options": "script: reads what Fable wrote, instant (rec, running) · haiku: rewrites each block into talk first, +2–3 s a block, spends Pro usage · Fable's own spoken line on every long reply (SOP §7 rule 10, in force)",
+    "default": "script + the spoken line (running)",
+    "s": "ruled",
+    "ruling": "RULED 9/17 by Papi across three transmissions: \"I want it to go straight through VS Code, Fable 5.1\" · \"what if we had an agent push out text-to-speech… it'll just have to read\" · \"session voice.\" Built as a script reader with the Haiku rewrite as a console switch and the spoken-line rule on Fable."
    }
   ]
  },
@@ -91,10 +98,10 @@
    "kind": "list",
    "plain": "Where JUDY came from: one transmission with everything in it, what was already sitting in the record before it was said, and what got ruled since.",
    "strand": {
-    "last": "Papi restarted VS Code. The session spawned the wire on open and every tool answered from inside it.",
+    "last": "Session voice built and running: Papi talks into the Fable session, Blondie reads the answer as it is written.",
     "plan": "Find what already existed before building anything new, then rule the open calls one at a time.",
     "you": "You named the ask, the model requirement, the persona, the voice register, and the face concept in one transmission, then kept ruling calls across two more sessions.",
-    "next": "Art and tuning, on your clock. No engineering is open on this row."
+    "next": "Use it. Tune the reader from the console. The dials and the face art on your clock."
    },
    "groups": [
     {
@@ -190,6 +197,11 @@
        "t": "Wire CLOSED 9/17: after the restart the session saw server judy with seven tools and called every one from inside. JUDY is complete as ruled; what remains is art and tuning.",
        "s": "done",
        "when": "9/17"
+      },
+      {
+       "t": "Session voice BUILT 9/17. Papi: \"when I'm talking, I want it to go straight through VS Code, Fable 5.1… and then bust out\" → \"an agent push out text-to-speech… it'll just have to read\" → \"session voice.\" The Pro subscription carries it: no API, no key. The Pro-brain path (Haiku through the bundled claude CLI, proven 5.6 s a turn) and the Ollama path stay on record, unbuilt; session voice made both moot for talking to Fable.",
+       "s": "done",
+       "when": "9/17"
       }
      ]
     }
@@ -224,8 +236,8 @@
    "strand": {
     "last": "Five calls were raised 9/16; the console turned three into knobs the same session, and the route call (BOLO 26) closed the same day.",
     "plan": "Build the wire next — the tools brain.py already exposes need the MCP server to reach the Opus session.",
-    "you": "Restarted VS Code, which was the last thing the wire needed.",
-    "next": "The face PNGs and the TARS dials, whenever you want them. Both are FRAGOs, not builds."
+    "you": "Named the machine you actually wanted in three sentences and said session voice. It was built, proven and launched in the same turn.",
+    "next": "Nothing is owed. Talk."
    },
    "main_effort": "Close the wire — the one open architecture question left: getting JUDY's voice layer to reach the Opus VS Code session without inheriting its model or its latency.",
    "phases": [
@@ -298,6 +310,12 @@
      "s": "done",
      "when": "9/17",
      "t": "The session-side proof — Papi restarted VS Code; the session listed the judy server and its seven tools on open; all seven called from inside the session, all seven answered in the spoken form. The wire is closed."
+    },
+    {
+     "n": 12,
+     "s": "done",
+     "when": "9/17",
+     "t": "SESSION VOICE — Papi: talk straight into the Fable session, an agent reads the reply aloud. Built the same turn: reader.py tails ~/.claude/projects/<repo>/<session>.jsonl and speaks each assistant block sentence by sentence (one synthesizing while the last plays), speaks only the <!-- say: --> line when a reply carries one, cuts off on a new user turn and plays an acknowledgment from a Blondie-rendered bank; judy.py --session = face + ears pasted into the chat with Enter + the reader in one process. Measured: 13 sentences read, first synth 1.26 s cold then 0.19–0.46 s each. Standalone JUDY stopped; session voice launched and following this session."
     }
    ],
    "coord": [],
@@ -309,10 +327,10 @@
    "kind": "files",
    "plain": "Where JUDY lives on disk: the ears, the console, the voice wiring, and the keys — nothing paid beyond the ElevenLabs account already on the box.",
    "strand": {
-    "last": "Three files landed: the server, the probe, the registration. The console and README say BUILT.",
+    "last": "reader.py, the --session mode, the ack bank and SOP rule 10 landed; the console's Wire panel carries the three session knobs.",
     "plan": "The wire (MCP server) is the next file that has to exist.",
     "you": "You handed the console its colorway and hover rules; the files followed the same session.",
-    "next": "No file is owed. The mcp SDK is the one new dependency."
+    "next": "No file is owed. Session voice spends ElevenLabs characters per sentence read; the cap in the console bounds it."
    },
    "files": [
     {
@@ -342,7 +360,7 @@
     },
     {
      "path": "_tools/dictation/judy.py",
-     "what": "the loop itself — hotkey or MIDI pad → ears → brain → mouth, with the face window swapping idle / listening / thinking / talking",
+     "what": "--session: the ears paste into the chat box and send Enter; the reader runs in-process with the face",
      "s": "done"
     },
     {
@@ -404,6 +422,21 @@
      "path": ".mcp.json",
      "what": "registers the wire with the VS Code session as server judy (command python, args _tools/dictation/wire.py)",
      "s": "done"
+    },
+    {
+     "path": "_tools/dictation/reader.py",
+     "what": "session voice — follows the VS Code session's transcript and reads Fable aloud as she writes; --test speaks the last block",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/voice-acks/",
+     "what": "five acknowledgments rendered once by Blondie (Copy · On it · Stand by · Working · One moment), gitignored",
+     "s": "done"
+    },
+    {
+     "path": "SOP.md",
+     "what": "§7 rule 10 — the spoken line: a long reply opens with <!-- say: … --> in her register while JUDY reads the session",
+     "s": "done"
     }
    ],
    "cost": [
@@ -430,7 +463,7 @@
     "last": "Three calls were still open at the end of 9/17: the wire, the TARS dials, the PNG states. Only the wire is engineering.",
     "plan": "One decider, one build order, one FRAGO when it lands.",
     "you": "You are the only one who can say build, pick the transport, and hand over the face art.",
-    "next": "This sheet goes quiet until you speak: face art, dial tuning, or the local voice when the ElevenLabs money runs out."
+    "next": "This sheet goes quiet until you speak: face art, dial tuning, a reader mode change, or the local voice when the ElevenLabs money runs out."
    },
    "groups": [
     {
@@ -553,6 +586,26 @@
      "when": "9/17",
      "who": "Claude",
      "t": "The session opened with server judy in its tool list: blocked · bolo · box · effort · help · pmcs · time. Called all seven from inside the session; all answered (6 blocked, BOLO 56's status, 57 on the watchlist, 2 of 4 PMCS red, the main effort, Stash up, the clock, help). Phase 11 done; the wire closed. No engineering left open on JUDY."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"When I'm talking, I want it to go straight through VS Code, Fable 5.1, right? And then it'll bust out… maybe we'll have an agent that will truncate it and say it in the style that it's much more conversational, pushed out to the actual voice response.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Proved first that Haiku runs headless on the Pro plan through the bundled claude CLI (5.6 s a turn, no key); then laid out session voice: ears into the chat, Fable answers, a reader speaks the transcript as it is written, an acknowledgment covers the wait."
+    },
+    {
+     "when": "9/17",
+     "who": "Papi",
+     "t": "\"What if we had an agent push out text-to-speech for the model? That way it'll just have to read.\" — then \"session voice.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Built reader.py (transcript tail → speech form → Blondie, sentence-pipelined, interruptible, say-line aware, Haiku rewrite as a switch), judy.py --session (ears paste + Enter, reader in-process), the ack bank, SOP §7 rule 10, the console's session knobs, README. Proof: reader --test read the last block Fable wrote, 13 sentences, 0.19–0.46 s each warm. Stopped standalone JUDY, launched session voice; it is following this session now."
     }
    ]
   }

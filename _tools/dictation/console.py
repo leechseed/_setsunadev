@@ -69,6 +69,7 @@ JUDY_DEFAULTS = {
     "face": {"slots": {s: None for s in STATES}},
     "chat": {"model": "claude-haiku-4-5-20251001"},
     "wire": {"mode": "mcp", "server": "_tools/dictation/wire.py"},
+    "session": {"reader": "script", "max_sentences": 12, "acks": True},
 }
 
 LOG = deque(maxlen=400)
