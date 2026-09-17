@@ -4,8 +4,8 @@
 Chief, 9/17 (BOLO 56): "whenever I press the pad on the Akai MPK, make it auto-focus
 VS Code and put my cursor in the Claude Code box."
 
-Two moves: (1) the VS Code window to the foreground (Win32; the Alt tap defeats the
-foreground lock Windows puts on background processes), (2) the keybinding that runs the
+Two moves: (1) the VS Code window to the foreground (Win32; a dead-key tap defeats the
+foreground lock Windows puts on background processes — never a bare Alt, that opens the menu bar), (2) the keybinding that runs the
 extension's own `claude-vscode.focus` command ("Claude Code: Focus input"), added to the
 user keybindings.json without a `when` clause so it works from anywhere in VS Code.
 
@@ -80,12 +80,18 @@ def vscode_windows():
 
 def foreground(hwnd):
     SW_RESTORE = 9
+    # already in front: touch nothing (Chief 9/17: the lone Alt tap below was opening VS Code's
+    # File menu, so the Enter that followed pulled the menu down instead of sending the turn)
+    if user32.GetForegroundWindow() == hwnd and not user32.IsIconic(hwnd):
+        return True
     if user32.IsIconic(hwnd):
         user32.ShowWindow(hwnd, SW_RESTORE)
-    # the Alt tap: Windows only lets the process that last took input set the foreground
+    # the input tap: Windows only lets the process that last took input set the foreground.
+    # Never a bare Alt (it activates the menu bar); the focus key is a dead key, so tap that.
     try:
         import keyboard
-        keyboard.press("alt"); keyboard.release("alt")
+        k = focus_key()
+        keyboard.press(k); time.sleep(0.02); keyboard.release(k)
     except Exception:
         pass
     user32.SetForegroundWindow(hwnd)
