@@ -15,5 +15,6 @@
  "focus_note_note": "PROVISIONAL 9/17: pad 3, left of the talk pad (39) on the MPK mini 3 default program; the learn timed out. Re-learn: python midipad.py --learn-focus",
  "send_note": 43,
  "send_note_note": "PROVISIONAL 9/17: pad 8, above the talk pad (39) on the MPK mini 3 default program. Re-learn: python midipad.py --learn-send",
- "send_key_note": "Chief 9/17 06:12: claudeCode.useCtrlEnterToSend is NOT set in the user or workspace settings.json, so plain Enter sends and Ctrl+Enter only adds a line — that is why the send pad did nothing. No send_key here = focus.send_key() reads the VS Code setting live (enter unless the setting is on). Set \"send_key\": \"ctrl+enter\" only if you turn that setting on."
+ "send_key_note": "Chief 9/17 06:16: claudeCode.useCtrlEnterToSend IS on — in the active VS Code profile (User/profiles/-4e417035/settings.json), not the top-level User/settings.json. Plain Enter only adds a line there. Delete this key to fall back to focus.send_key(), which now scans the profiles too.",
+ "send_key": "ctrl+enter"
 }

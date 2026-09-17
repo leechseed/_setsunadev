@@ -48,8 +48,13 @@ def send_key():
     k = _cfg(CONFIG).get("send_key")
     if k:
         return k
-    for p in (os.path.join(os.environ.get("APPDATA", ""), "Code", "User", "settings.json"),
-              os.path.join(os.path.dirname(HERE), "..", ".vscode", "settings.json")):
+    # the active VS Code profile keeps its own settings.json under User/profiles/<id>/ — Chief's
+    # profile is where useCtrlEnterToSend actually lives (found 9/17 06:16), so scan those too
+    import glob
+    user = os.path.join(os.environ.get("APPDATA", ""), "Code", "User")
+    for p in ([os.path.join(user, "settings.json")]
+              + sorted(glob.glob(os.path.join(user, "profiles", "*", "settings.json")))
+              + [os.path.join(os.path.dirname(HERE), "..", ".vscode", "settings.json")]):
         try:
             txt = io.open(p, encoding="utf-8").read()
             if '"claudeCode.useCtrlEnterToSend": true' in txt.replace(" : ", ": "):
