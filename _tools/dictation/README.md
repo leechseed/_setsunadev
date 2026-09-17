@@ -296,3 +296,7 @@ A radio squelch brackets everything JUDY says: **key-up** before the first sente
 | `judy.json` → `session.squelch` | `enabled` · optional `up` / `down` paths overriding the sfx/ defaults |
 
 If a file is missing a stand-in burst is generated once so the timing can be heard. `python squelch.py` plays both.
+
+## The TARS dials (RULED 9/17)
+
+The persona sliders are real parameters, not a prompt. **brat** drives ElevenLabs delivery (stability = 0.75 − 0.5·b, style = 0.15 + 0.5·b; brat 80 reproduces the Blondie ruling, 0.35 / 0.55). **brevity** drives the session reader's sentence cap (20 at 0 down to 8 at 100; 70 → 12). **humor** and **honesty** are stored and reserved for the Haiku rewrite switch. Switches: `voice.dials_from_persona` · `session.cap_from_persona` in judy.json (both true; false restores the hand-set values).

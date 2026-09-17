@@ -53,7 +53,13 @@ def scfg():
     base = {"reader": "script", "max_sentences": 12, "acks": True, "min_chars": 12}
     try:
         j = json.load(io.open(JUDY, encoding="utf-8"))
-        return {**base, **(j.get("session") or {})}
+        c = {**base, **(j.get("session") or {})}
+        # the TARS dials as real parameters (RULED 9/17): brevity drives the sentence cap,
+        # 20 sentences at brevity 0 down to 8 at 100 (brevity 70 → 12, the built default)
+        if c.get("cap_from_persona", True):
+            brev = float((j.get("persona") or {}).get("brevity", 70))
+            c["max_sentences"] = int(round(20 - 0.115 * min(100.0, max(0.0, brev))))
+        return c
     except Exception:
         return base
 

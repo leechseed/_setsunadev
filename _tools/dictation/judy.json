@@ -3,7 +3,13 @@
   "humor": 75,
   "honesty": 90,
   "brat": 80,
-  "brevity": 70
+  "brevity": 70,
+  "dials": {
+   "brat": "ElevenLabs stability 0.75-0.5b · style 0.15+0.5b",
+   "brevity": "sentence cap 20-0.115v",
+   "humor": "reserved for the Haiku rewrite",
+   "honesty": "reserved for the Haiku rewrite"
+  }
  },
  "voice": {
   "engine": "elevenlabs",
@@ -19,7 +25,8 @@
    "style": 0.55,
    "use_speaker_boost": true,
    "speed": 1.05
-  }
+  },
+  "dials_from_persona": true
  },
  "face": {
   "slots": {
@@ -48,6 +55,7 @@
    "up": "",
    "down": "",
    "note": "empty paths = sfx/key-up.wav · sfx/key-down.wav; drop your own files there"
-  }
+  },
+  "cap_from_persona": true
  }
 }

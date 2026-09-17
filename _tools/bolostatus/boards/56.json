@@ -5,8 +5,8 @@
   "trunk": "OPERATOR, feeds every trunk",
   "issued": "2026-09-16",
   "asof": "2026-09-17",
-  "s": "open",
-  "status": "v0.9 · the squelch RULED 9/17: the generated stand-ins are the sound (\"we will just stick with that\"); nothing open on the squelch",
+  "s": "done",
+  "status": "v0.10 · JUDY COMPLETE 9/17: the face RULED on the placeholders (\"it works for me, get that off the chart\"); the TARS dials BUILT as real parameters (brat → ElevenLabs delivery, brevity → the sentence cap; humor and honesty reserved for the Haiku rewrite). Nothing open on this row.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.9 · DOPE SHEET"
+  "version": "v0.10 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the MCP server that exposes brain.py's seven tools to the Opus VS Code session, in order to finish JUDY's one unbuilt piece at zero standing cost.",
-  "order": "**Talk to the session. Hold the hotkey with the chat box focused, say the thing, release; Fable answers and Blondie reads it as it is written.** Tune from the console's Wire panel: script or Haiku reader, the sentence cap, the acknowledgments. Nothing is owed on the engineering; the dials and the face art stay yours.",
-  "default": "Silence: session voice keeps running as launched. Fable opens long replies with the spoken line (SOP §7 rule 10); short ones are read as written.",
+  "order": "**Nothing is owed. Talk to her.** The dials live in the console's Persona panel and take effect on the next sentence she speaks; the face swaps on the four placeholder PNGs; the squelch brackets every block.",
+  "default": "Silence: everything stands as built. A new face is four PNGs dropped over the slots; a different delivery is a slider.",
   "calls": [
    {
     "q": "The wire — build now?",
@@ -67,13 +67,15 @@
     "q": "The TARS dials",
     "options": "the ElevenLabs delivery dials (stability · style) already in judy.json, tuned in the console (rec: with the router ruled there is no system prompt to bake into) · a system prompt, written when a model ever replaces the router",
     "default": "delivery dials (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED and BUILT 9/17 (Chief: \"continue whatever else we need for BOLO 56\"): real parameters, not a prompt. brat drives ElevenLabs stability (0.75 − 0.5·b) and style (0.15 + 0.5·b), so brat 80 reproduces the Blondie ruling exactly; brevity drives the reader's sentence cap (20 → 8; 70 = 12, the built default); humor and honesty are stored and reserved for the Haiku rewrite. Switches in judy.json restore hand-set values."
    },
    {
     "q": "The PNG state set",
     "options": "Chief's art against the 9/16 spec · keep the placeholder faces the loop runs on today (rec until art lands) · commission it",
     "default": "placeholders until Chief's art lands",
-    "s": "held"
+    "s": "ruled",
+    "ruling": "RULED 9/17 by Chief: keep the placeholder faces as they are (\"I don't have anything else right now, and it works for me. Let's just get that off the chart\"). The four slots (idle · listening · thinking · talking) stand; new art is a drop-in whenever."
    },
    {
     "q": "The local voice",
@@ -308,13 +310,15 @@
     },
     {
      "n": 8,
-     "t": "The TARS dials — whether built as real adjustable parameters or baked into one system prompt.",
-     "s": "open"
+     "t": "The TARS dials — BUILT as real parameters: brat → delivery, brevity → the cap; humor and honesty reserved for the Haiku rewrite. Wired in speak.py (persona_delivery) and reader.py (scfg).",
+     "s": "done",
+     "when": "9/17"
     },
     {
      "n": 9,
-     "t": "The PNG state set — spec handed to Chief 9/16, awaiting art.",
-     "s": "open"
+     "t": "The PNG state set — RULED closed on the placeholders; the four slots stand, art is a drop-in.",
+     "s": "done",
+     "when": "9/17"
     },
     {
      "n": 10,
@@ -393,7 +397,7 @@
     },
     {
      "path": "_tools/dictation/speak.py",
-     "what": "fronts sapi · piper · elevenlabs behind one say(); PCM out wrapped to WAV so playback stays on one code path with Piper, no ffmpeg",
+     "what": "persona_delivery(): brat → stability and style, merged over eleven_settings unless voice.dials_from_persona is false",
      "s": "done"
     },
     {
@@ -469,6 +473,11 @@
     {
      "path": "_tools/dictation/sfx/",
      "what": "the two squelch sounds — the generated stand-ins, ruled as the sound 9/17",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/faces/",
+     "what": "idle · listening · thinking · talking — the placeholder set, RULED as the face 9/17",
      "s": "done"
     }
    ],
@@ -674,6 +683,16 @@
      "when": "9/17",
      "who": "Chief",
      "t": "\"Yeah, no, we will just stick with that. It is fine.\" — the stand-in squelch is the sound."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"Let's just keep the face art for now… I don't have anything else right now, and it works for me. Let's just get that off the chart. And let's continue whatever else we need for BOLO 56.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Face closed on the placeholders. The last open call, the TARS dials, built as real parameters: brat sets the ElevenLabs delivery, brevity sets the sentence cap, humor and honesty wait for the Haiku rewrite. Session voice restarted on it. BOLO 56 has nothing open."
     }
    ]
   }

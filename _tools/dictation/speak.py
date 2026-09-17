@@ -189,6 +189,21 @@ def _wav_from_pcm(pcm, path, rate):
     return path
 
 
+def persona_delivery():
+    """The TARS dials as real parameters (RULED 9/17, BOLO 56): brat drives the delivery.
+    stability = 0.75 - 0.5*brat · style = 0.15 + 0.5*brat  (brat 80 → 0.35 / 0.55, the Blondie ruling).
+    Off with voice.dials_from_persona = false; then eleven_settings stands as written."""
+    try:
+        j = json.load(io.open(JUDY, encoding="utf-8"))   # read_judy() keeps only the voice block
+    except Exception:
+        return {}
+    if not (j.get("voice") or {}).get("dials_from_persona", True):
+        return {}
+    brat = float((j.get("persona") or {}).get("brat", 65)) / 100.0
+    brat = min(1.0, max(0.0, brat))
+    return {"stability": round(0.75 - 0.5 * brat, 3), "style": round(0.15 + 0.5 * brat, 3)}
+
+
 def synth_eleven(text, voice_id=None, model=None, settings=None, out_wav=None):
     """
     Text → wav via ElevenLabs. PCM rather than mp3 so playback stays on the same
@@ -206,7 +221,8 @@ def synth_eleven(text, voice_id=None, model=None, settings=None, out_wav=None):
     from elevenlabs import VoiceSettings
     s = {**{"stability": 0.4, "similarity_boost": 0.75, "style": 0.35,
             "use_speaker_boost": True, "speed": 1.0},
-         **(settings or cfg.get("eleven_settings") or {})}
+         **(settings or cfg.get("eleven_settings") or {}),
+         **({} if settings else persona_delivery())}
     chunks = el_client().text_to_speech.stream(
         voice_id=voice_id,
         text=text,
