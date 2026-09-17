@@ -6,6 +6,43 @@ the Command lexicon. Local, GPU, $0 — no audio leaves the box, nothing is bill
 This is **JUDY's listening half** (BOLO 56). The speaking half, the wire to the VS Code
 session, and the face are still unruled.
 
+## The voice — ElevenLabs
+
+**Ruled 9/16: Piper now, ElevenLabs eventually — and "eventually" arrived the same day.**
+Three engines behind one `say()`, so the engine is a config line, not a rewrite.
+
+| Engine | Cost | What it can do |
+|---|---|---|
+| `sapi` | free | Windows built-in. Robotic. The floor. |
+| `piper` | free | Local neural, ~23x realtime, offline. Level delivery — the attitude can only live in word choice. |
+| `elevenlabs` | paid | **The only one that can act.** `stability` and `style` are real delivery dials. |
+
+### The key — this repo is public
+
+`github.com/leechseed/_setsunadev` is public, so the key never goes in `judy.json`,
+`config.json`, or anything git tracks. It is read from, in order:
+
+1. `ELEVENLABS_API_KEY` (or `ELEVEN_API_KEY` / `XI_API_KEY`) in the environment
+2. `_PRIVATE/elevenlabs.key` — a one-line file in the gitignored `_PRIVATE/` tree
+
+```
+python _tools/dictation/speak.py --key-status    # where it found one, never prints it
+python _tools/dictation/speak.py --list-eleven   # the voices on the account
+```
+
+With no key, the ElevenLabs path **raises** — it never falls back to Piper silently.
+A JUDY that quietly sounds wrong is worse than one that says it is broken.
+
+### The delivery dials
+
+`stability` low lets her vary line to line; high flattens her toward monotone.
+`style` pushes the performance. `similarity_boost` holds the source voice.
+`speed` runs 0.7–1.2. All four live in the console's Voice panel.
+
+**This is where the TARS "brat" setting finally does something.** On Piper the voice
+stayed level no matter what the persona said; the attitude could only be written into
+the words. On ElevenLabs it can be performed.
+
 ## The console — the mod menu
 
 ```
@@ -130,7 +167,9 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 | `config.json` | hotkey, model, device, mic |
 | `console.py` | the mod menu — local server on :8787 |
 | `console.html` | its page |
-| `judy.json` | persona, voice, face, wire (BOLO 56) |
+| `judy.json` | persona, voice, face, wire (BOLO 56) — **never the key** |
+| `speak.py` | the mouth — sapi · piper · elevenlabs behind one `say()` |
+| `_PRIVATE/elevenlabs.key` | the key, gitignored, untracked |
 | `faces/` | the PNG state slots |
 
 Related: **SOP §8** · **BOLO 26** · **BOLO 56 (JUDY)** ·

@@ -1,20 +1,25 @@
 """
 speak.py — JUDY's mouth.
 
-BOLO 56, voice call ruled 2026-09-16: **Piper now, ElevenLabs eventually.**
+BOLO 56, voice call ruled 2026-09-16: Piper now, ElevenLabs eventually — and
+"eventually" arrived the same day, when Papi got an ElevenLabs account.
 
-Piper is local, free, and fast — it runs on CPU in well under real time, so the 3090
-stays free for Whisper. Two engines live behind one interface so swapping to
-ElevenLabs later is a config change, not a rewrite:
+Three engines behind one `say()`, so the engine is a config line, not a rewrite:
 
     sapi        Windows built-in. Robotic. The floor.
-    piper       Local neural. Free. What JUDY uses now.
-    elevenlabs  Paid, best match for the 007 handler register. Wired, needs a key.
+    piper       Local neural. Free, ~23x realtime, offline. The fallback that costs nothing.
+    elevenlabs  Paid. The only one that can act — stability and style are real
+                delivery dials, which is what Piper structurally cannot do.
+
+THE REPO IS PUBLIC. The ElevenLabs key lives in an env var or _PRIVATE/elevenlabs.key,
+never in judy.json or any tracked file. `--key-status` says where it found one.
 
     python speak.py "Judy on station."
     python speak.py --voice en_GB-alba-medium "Go ahead, Papi."
     python speak.py --list
     python speak.py --engine sapi "comparison test"
+    python speak.py --key-status
+    python speak.py --list-eleven
 """
 
 import argparse
@@ -27,10 +32,17 @@ import threading
 import wave
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 VOICES = os.path.join(HERE, "voices")
 JUDY = os.path.join(HERE, "judy.json")
 
+# THE REPO IS PUBLIC (github.com/leechseed/_setsunadev). The key never goes in
+# judy.json, config.json, or anything else git tracks. Env var first, then this
+# file, which lives under the gitignored _PRIVATE/ tree.
+KEYFILE = os.path.join(ROOT, "_PRIVATE", "elevenlabs.key")
+
 _CACHE = {}
+_EL = {}
 _LOCK = threading.Lock()
 
 
@@ -106,14 +118,127 @@ def play(path):
         return False
 
 
+# ------------------------------------------------------------------ elevenlabs
+
+def el_key():
+    """Env var, then the gitignored key file. Never a tracked file."""
+    for k in ("ELEVENLABS_API_KEY", "ELEVEN_API_KEY", "XI_API_KEY"):
+        v = (os.environ.get(k) or "").strip()
+        if v:
+            return v
+    try:
+        v = io.open(KEYFILE, encoding="utf-8").read().strip()
+        return v or None
+    except Exception:
+        return None
+
+
+def el_client():
+    with _LOCK:
+        if "c" in _EL:
+            return _EL["c"]
+        key = el_key()
+        if not key:
+            raise RuntimeError(
+                "no ElevenLabs key — set ELEVENLABS_API_KEY, or put the key in "
+                f"{KEYFILE} (that tree is gitignored; this repo is public)")
+        from elevenlabs.client import ElevenLabs
+        _EL["c"] = ElevenLabs(api_key=key)
+        return _EL["c"]
+
+
+def el_voices():
+    """Every voice on the account — the ones Papi builds show up here."""
+    try:
+        res = el_client().voices.search(page_size=100)
+        out = []
+        for v in getattr(res, "voices", []) or []:
+            labels = dict(getattr(v, "labels", {}) or {})
+            out.append({
+                "voice_id": v.voice_id,
+                "name": v.name,
+                "category": getattr(v, "category", "") or "",
+                "accent": labels.get("accent", ""),
+                "gender": labels.get("gender", ""),
+                "description": labels.get("description", ""),
+            })
+        return out
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def el_models():
+    try:
+        out = []
+        for m in el_client().models.list() or []:
+            if not getattr(m, "can_do_text_to_speech", True):
+                continue
+            out.append({"model_id": m.model_id, "name": getattr(m, "name", m.model_id)})
+        return out
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def _wav_from_pcm(pcm, path, rate):
+    """ElevenLabs PCM is raw 16-bit mono; winsound needs a RIFF header."""
+    with wave.open(path, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(rate)
+        w.writeframes(pcm)
+    return path
+
+
+def synth_eleven(text, voice_id=None, model=None, settings=None, out_wav=None):
+    """
+    Text → wav via ElevenLabs. PCM rather than mp3 so playback stays on the same
+    winsound path as Piper — one player, one code path, no ffmpeg dependency.
+    """
+    cfg = read_judy()["voice"]
+    # Key first: with no key there is also no voice list, so "pick a voice" would
+    # name a symptom and hide the cause.
+    el_client()
+    voice_id = voice_id or cfg.get("eleven_voice_id")
+    if not voice_id:
+        raise RuntimeError("no ElevenLabs voice chosen — pick one in the console's Voice panel")
+    model = model or cfg.get("eleven_model") or "eleven_turbo_v2_5"
+    rate = 24000
+    from elevenlabs import VoiceSettings
+    s = {**{"stability": 0.4, "similarity_boost": 0.75, "style": 0.35,
+            "use_speaker_boost": True, "speed": 1.0},
+         **(settings or cfg.get("eleven_settings") or {})}
+    chunks = el_client().text_to_speech.stream(
+        voice_id=voice_id,
+        text=text,
+        model_id=model,
+        output_format=f"pcm_{rate}",
+        voice_settings=VoiceSettings(**s),
+    )
+    pcm = b"".join(c for c in chunks if c)
+    out_wav = out_wav or os.path.join(HERE, "_last.wav")
+    return _wav_from_pcm(pcm, out_wav, rate)
+
+
+def _wait(path):
+    """Block for the length of the clip — playback is async by design."""
+    try:
+        import time
+        with wave.open(path, "rb") as w:
+            time.sleep(w.getnframes() / float(w.getframerate()))
+    except Exception:
+        pass
+
+
 def read_judy():
-    default = {"voice": {"engine": "piper", "piper_voice": "", "name": "",
-                         "rate": 0, "volume": 100}}
+    base = {"engine": "piper", "piper_voice": "", "name": "", "rate": 0, "volume": 100,
+            "eleven_voice_id": "", "eleven_model": "eleven_turbo_v2_5",
+            "eleven_settings": {"stability": 0.4, "similarity_boost": 0.75,
+                                "style": 0.35, "use_speaker_boost": True, "speed": 1.0}}
+    default = {"voice": dict(base)}
     try:
         j = json.load(io.open(JUDY, encoding="utf-8"))
         default.update({k: v for k, v in j.items() if k == "voice"} or {})
-        default["voice"] = {**{"engine": "piper", "piper_voice": "", "name": "",
-                               "rate": 0, "volume": 100}, **j.get("voice", {})}
+        default["voice"] = {**base, **j.get("voice", {})}
     except Exception:
         pass
     return default
@@ -143,11 +268,13 @@ def say(text, engine=None, voice=None, rate=None, blocking=False):
         return None
 
     if engine == "elevenlabs":
-        # Wired but not reachable without a key — say so rather than fall back
-        # silently, or JUDY would quietly sound wrong and nobody would know why.
-        if not os.environ.get("ELEVENLABS_API_KEY"):
-            raise RuntimeError("engine is elevenlabs but ELEVENLABS_API_KEY is not set")
-        raise NotImplementedError("elevenlabs not implemented yet — ruled 'eventually', not now")
+        # Raise rather than quietly dropping to Piper: a silent fallback would mean
+        # JUDY sounds wrong and nobody knows why. A missing key is a bug to fix.
+        wav = synth_eleven(text, voice_id=voice, settings=None)
+        play(wav)
+        if blocking:
+            _wait(wav)
+        return wav
 
     # piper
     r = 1.0
@@ -159,12 +286,7 @@ def say(text, engine=None, voice=None, rate=None, blocking=False):
     wav = synth_piper(text, voice=voice or cfg.get("piper_voice") or None, rate=r)
     play(wav)
     if blocking:
-        try:
-            with wave.open(wav, "rb") as w:
-                import time
-                time.sleep(w.getnframes() / float(w.getframerate()))
-        except Exception:
-            pass
+        _wait(wav)
     return wav
 
 
@@ -179,7 +301,30 @@ def main():
     ap.add_argument("--voice")
     ap.add_argument("--rate", type=float, help="piper speed multiplier, 1.0 = normal")
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--list-eleven", action="store_true", help="voices on the ElevenLabs account")
+    ap.add_argument("--key-status", action="store_true")
     a = ap.parse_args()
+
+    if a.key_status:
+        k = el_key()
+        src = ("env" if any(os.environ.get(x) for x in
+               ("ELEVENLABS_API_KEY", "ELEVEN_API_KEY", "XI_API_KEY"))
+               else ("file " + KEYFILE) if k else "nowhere")
+        print(f"  ElevenLabs key: {'FOUND (' + str(len(k)) + ' chars) via ' + src if k else 'NOT SET'}")
+        if not k:
+            print(f"  put it in {KEYFILE}  (gitignored; this repo is public)")
+        return
+
+    if a.list_eleven:
+        vs = el_voices()
+        if isinstance(vs, dict):
+            print("  error:", vs["error"])
+            return
+        print(f"ElevenLabs voices on the account ({len(vs)}):")
+        for v in vs:
+            tag = " / ".join(x for x in (v["category"], v["gender"], v["accent"]) if x)
+            print(f"  {v['name']:28s} {tag:34s} {v['voice_id']}")
+        return
 
     if a.list:
         vs = voices()

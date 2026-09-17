@@ -61,7 +61,11 @@ STATES = ["idle", "listening", "thinking", "talking"]
 JUDY_DEFAULTS = {
     "persona": {"humor": 75, "honesty": 90, "brat": 65, "brevity": 70},
     "voice": {"engine": "piper", "piper_voice": "en_GB-jenny_dioco-medium",
-              "name": "", "rate": 0, "volume": 100},
+              "name": "", "rate": 0, "volume": 100,
+              "eleven_voice_id": "", "eleven_model": "eleven_turbo_v2_5",
+              "eleven_settings": {"stability": 0.4, "similarity_boost": 0.75,
+                                  "style": 0.35, "use_speaker_boost": True,
+                                  "speed": 1.0}},
     "face": {"slots": {s: None for s in STATES}},
     "chat": {"model": "claude-haiku-4-5-20251001"},
     "wire": {"mode": "standalone"},
@@ -305,6 +309,25 @@ def add_codebook_row(heard, read_as, note=""):
 
 # ---------------------------------------------------------------- state
 
+def eleven_state():
+    """Key presence, then the account's voices — never the key itself."""
+    key = speak.el_key()
+    out = {"key": bool(key), "keyfile": speak.KEYFILE, "voices": [], "models": []}
+    if not key:
+        return out
+    v = speak.el_voices()
+    m = speak.el_models()
+    if isinstance(v, dict):
+        out["error"] = v.get("error")
+    else:
+        out["voices"] = v
+    if isinstance(m, dict):
+        out.setdefault("error", m.get("error"))
+    else:
+        out["models"] = m
+    return out
+
+
 def build_state():
     cfg = read_json(CONFIG, dictation_defaults())
     judy = read_json(JUDY, JUDY_DEFAULTS)
@@ -320,6 +343,7 @@ def build_state():
                    for n, s, t in MODELS],
         "voices": sapi_voices(),
         "piper_voices": speak.voices(),
+        "eleven": eleven_state(),
         "codebook": {
             "active": len(rules_active),
             "gated": gated,
@@ -451,7 +475,9 @@ class Handler(BaseHTTPRequestHandler):
                                b.get("volume", v.get("volume", 100)))
                 else:
                     t0 = time.time()
-                    speak.say(text, engine=engine, voice=b.get("piper_voice"))
+                    speak.say(text, engine=engine,
+                              voice=(b.get("eleven_voice_id") if engine == "elevenlabs"
+                                     else b.get("piper_voice")))
                     LOG.append(f"— spoke via {engine} in {time.time() - t0:.2f}s")
                 return self._send(200, {"ok": True})
 

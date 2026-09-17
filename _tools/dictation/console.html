@@ -266,21 +266,35 @@
       <p class="plain">JUDY's <a class="t" data-t="mouth">mouth</a>. <strong>Ruled 9/16: Piper now,
         ElevenLabs eventually.</strong> Piper is local, free and neural — it synthesizes about
         <strong>23× faster than realtime</strong> warm, on CPU, so the 3090 stays free for Whisper.</p>
+      <div id="keyBanner"></div>
       <div class="grid">
         <div class="f"><span class="lbl">Engine</span><select id="vEngine">
           <option value="piper">Piper — free, local, neural · RULED 9/16</option>
           <option value="sapi">Windows SAPI — free, local, robotic · the floor</option>
-          <option value="elevenlabs">ElevenLabs — paid, best Moneypenny · "eventually"</option>
+          <option value="elevenlabs">ElevenLabs — paid, and the only one that can act</option>
         </select><span class="hint" id="eHint"></span></div>
         <div class="f" id="piperWrap"><span class="lbl">Piper voice</span><select id="vPiper"></select>
           <span class="hint" id="pHint"></span></div>
         <div class="f" id="sapiWrap"><span class="lbl">SAPI voice</span><select id="vName"></select>
           <span class="hint" id="vHint"></span></div>
+        <div class="f" id="elVoiceWrap"><span class="lbl">ElevenLabs voice</span><select id="vEl"></select>
+          <span class="hint" id="elHint"></span></div>
+        <div class="f" id="elModelWrap"><span class="lbl">Model</span><select id="vElModel"></select>
+          <span class="hint">turbo/flash for a voice loop — v3 acts harder but waits longer</span></div>
         <div class="f"><span class="lbl">Rate</span>
           <div class="dial"><input type="range" id="vRate" min="-10" max="10" step="1"><span class="v" id="vRateV">0</span></div></div>
         <div class="f"><span class="lbl">Volume</span>
           <div class="dial"><input type="range" id="vVol" min="0" max="100" step="5"><span class="v" id="vVolV">100</span></div></div>
       </div>
+      <div id="elDials" hidden>
+        <h3>Delivery</h3>
+        <p class="plain">The dials Piper never had. <strong>Stability</strong> low lets her vary
+          line to line; high flattens her toward monotone. <strong>Style</strong> pushes the
+          performance. Together these are where <a class="t" data-t="brat">bratty</a> actually
+          lives — in the delivery, not just the word choice.</p>
+        <div class="grid" id="elDialGrid"></div>
+      </div>
+
       <h3>Hear it</h3>
       <div class="f"><textarea id="vText" rows="2">Judy on station. Go ahead, Papi.</textarea>
         <div class="row"><button class="btn p" id="vSpeak">speak</button></div></div>
@@ -364,6 +378,7 @@ const GLOSS = {
   propernoun:{w:"Proper nouns",d:"The 9/3 diagnosis: common words land clean, proper nouns and numbers garble. The recognizer has no vocabulary and guesses the nearest real word. Ultrasin became 'ultrasound'."},
   haiku:{w:"Haiku 4.5",d:"The fastest Claude. Chosen here for responsiveness — a voice loop that pauses to think stops feeling like a conversation."},
   opus:{w:"Opus",d:"The model this VS Code session runs on. Deep but slower; wrong for a voice turn, right for the work."},
+  brat:{w:"Brat",d:"The edge in her delivery. On Piper this could only live in word choice — the voice stayed level no matter what. On ElevenLabs, low stability plus high style puts the attitude in the performance itself."},
   ck3:{w:"The hover layer",d:"Every dense page in the Command carries nested hover terms, derived from how Crusader Kings III surfaces meaning without leaving the page. Space locks a tip open."}
 };
 
@@ -514,9 +529,65 @@ function renderVoice(){
   if(v.piper_voice) ps.value=v.piper_voice;
   ps.onchange=e=>saveJudy({voice:{piper_voice:e.target.value}});
   $("#pHint").textContent=`${(S.piper_voices||[]).length} on disk · ~23x realtime warm · en_GB = the handler register`;
+  // --- ElevenLabs
+  const E=S.eleven||{key:false,voices:[],models:[]};
+  const ev=$("#vEl");
+  ev.innerHTML=(E.voices||[]).map(x=>{
+    const tag=[x.gender,x.accent,x.category].filter(Boolean).join(" · ");
+    return `<option value="${x.voice_id}">${esc(x.name)}${tag?" — "+esc(tag):""}</option>`;
+  }).join("")||`<option value="">${E.key?"no voices on the account":"add a key to load voices"}</option>`;
+  if(v.eleven_voice_id) ev.value=v.eleven_voice_id;
+  ev.onchange=e=>saveJudy({voice:{eleven_voice_id:e.target.value}});
+  $("#elHint").textContent = E.key
+    ? `${(E.voices||[]).length} on the account · voices you build show up here`
+    : "no key — nothing will load";
+  const em=$("#vElModel");
+  em.innerHTML=(E.models||[]).map(m=>`<option value="${m.model_id}">${esc(m.name)}</option>`).join("")
+    ||`<option value="eleven_turbo_v2_5">eleven_turbo_v2_5</option>`;
+  em.value=v.eleven_model||"eleven_turbo_v2_5";
+  em.onchange=e=>saveJudy({voice:{eleven_model:e.target.value}});
+
+  const ES=v.eleven_settings||{};
+  const EDIALS=[
+    ["stability","Stability","low = varies line to line · high = flat"],
+    ["style","Style","how hard she performs it"],
+    ["similarity_boost","Similarity","how tightly she holds the source voice"],
+    ["speed","Speed","0.7 slow → 1.2 clipped"]
+  ];
+  $("#elDialGrid").innerHTML=EDIALS.map(([k,n,h])=>{
+    const isSpeed=k==="speed", val=ES[k]!==undefined?ES[k]:(isSpeed?1:0.5);
+    return `<div class="f"><span class="lbl">${n}</span>
+      <div class="dial"><input type="range" id="e-${k}" min="${isSpeed?0.7:0}" max="${isSpeed?1.2:1}"
+        step="0.05" value="${val}"><span class="v" id="ev-${k}">${Number(val).toFixed(2)}</span></div>
+      <span class="hint">${h}</span></div>`;
+  }).join("");
+  EDIALS.forEach(([k])=>{
+    const sl=$("#e-"+k),o=$("#ev-"+k);
+    sl.oninput=()=>o.textContent=Number(sl.value).toFixed(2);
+    sl.onchange=()=>saveJudy({voice:{eleven_settings:{[k]:parseFloat(sl.value)}}});
+  });
+
+  $("#keyBanner").innerHTML = E.key
+    ? `<div style="border-left:3px solid var(--good);background:var(--panel);padding:10px 14px;margin-bottom:16px">
+         <span class="chip c-good">key found</span>
+         <span class="mono" style="font-size:12px;color:var(--ink-2);margin-left:8px">ElevenLabs is live · ${(E.voices||[]).length} voices</span></div>`
+    : `<div style="border-left:3px solid var(--warn);background:var(--panel);padding:12px 14px;margin-bottom:16px">
+         <span class="chip c-warn">no key</span>
+         <div class="mono" style="font-size:12px;color:var(--ink-2);margin-top:8px;line-height:1.7">
+           Paste the key into<br><b style="color:var(--ink)">${esc(E.keyfile||"")}</b><br>
+           That tree is gitignored — <b style="color:var(--bad)">this repo is public</b>, so it never goes in judy.json.
+         </div></div>`;
+  if(E.error){
+    $("#keyBanner").innerHTML += `<div style="border-left:3px solid var(--bad);background:var(--panel);padding:10px 14px;margin-bottom:16px">
+      <span class="chip c-bad">api error</span> <span class="mono" style="font-size:12px;color:var(--ink-2)">${esc(E.error)}</span></div>`;
+  }
+
   const eng=v.engine;
   $("#piperWrap").style.display = eng==="piper"?"":"none";
   $("#sapiWrap").style.display  = eng==="sapi"?"":"none";
+  $("#elVoiceWrap").style.display = eng==="elevenlabs"?"":"none";
+  $("#elModelWrap").style.display = eng==="elevenlabs"?"":"none";
+  $("#elDials").hidden = eng!=="elevenlabs";
   $("#eHint").textContent = eng==="elevenlabs"
     ? "wired but needs ELEVENLABS_API_KEY — it will say so rather than fall back silently"
     : eng==="piper" ? "local, free, neural — what JUDY uses now" : "the free floor";
@@ -536,7 +607,8 @@ function bindDial(sl,out,val,fn){
   s.onchange=()=>fn(parseInt(s.value,10));
 }
 $("#vSpeak").onclick=()=>api("/api/voice/preview",{engine:$("#vEngine").value,
-  name:$("#vName").value, piper_voice:$("#vPiper").value, text:$("#vText").value,
+  name:$("#vName").value, piper_voice:$("#vPiper").value,
+  eleven_voice_id:$("#vEl").value, text:$("#vText").value,
   rate:parseInt($("#vRate").value,10),volume:parseInt($("#vVol").value,10)})
   .then(()=>toast("speaking")).catch(()=>{});
 
