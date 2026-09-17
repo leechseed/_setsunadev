@@ -6,11 +6,20 @@
     "brevity": 70
   },
   "voice": {
-    "engine": "piper",
+    "engine": "elevenlabs",
     "piper_voice": "en_GB-jenny_dioco-medium",
     "name": "",
     "rate": 0,
-    "volume": 100
+    "volume": 100,
+    "eleven_voice_id": "exsUS4vynmxd379XN4yO",
+    "eleven_model": "eleven_turbo_v2_5",
+    "eleven_settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.05
+    }
   },
   "face": {
     "slots": {
