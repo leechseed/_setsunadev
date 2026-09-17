@@ -1,47 +1,53 @@
 {
-  "persona": {
-    "humor": 75,
-    "honesty": 90,
-    "brat": 80,
-    "brevity": 70
-  },
-  "voice": {
-    "engine": "elevenlabs",
-    "piper_voice": "en_GB-jenny_dioco-medium",
-    "name": "",
-    "rate": 0,
-    "volume": 100,
-    "eleven_voice_id": "exsUS4vynmxd379XN4yO",
-    "eleven_model": "eleven_turbo_v2_5",
-    "eleven_settings": {
-      "stability": 0.35,
-      "similarity_boost": 0.8,
-      "style": 0.55,
-      "use_speaker_boost": true,
-      "speed": 1.05
-    }
-  },
-  "face": {
-    "slots": {
-      "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.png",
-      "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.png",
-      "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.png",
-      "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
-    }
-  },
-  "chat": {
-    "model": "claude-haiku-4-5-20251001"
-  },
-  "wire": {
-    "mode": "mcp",
-    "server": "_tools/dictation/wire.py",
-    "registered": ".mcp.json",
-    "built": "2026-09-17"
-  },
-  "session": {
-    "reader": "script",
-    "max_sentences": 12,
-    "acks": true,
-    "built": "2026-09-17"
+ "persona": {
+  "humor": 75,
+  "honesty": 90,
+  "brat": 80,
+  "brevity": 70
+ },
+ "voice": {
+  "engine": "elevenlabs",
+  "piper_voice": "en_GB-jenny_dioco-medium",
+  "name": "",
+  "rate": 0,
+  "volume": 100,
+  "eleven_voice_id": "exsUS4vynmxd379XN4yO",
+  "eleven_model": "eleven_turbo_v2_5",
+  "eleven_settings": {
+   "stability": 0.35,
+   "similarity_boost": 0.8,
+   "style": 0.55,
+   "use_speaker_boost": true,
+   "speed": 1.05
   }
+ },
+ "face": {
+  "slots": {
+   "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.png",
+   "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.png",
+   "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.png",
+   "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
+  }
+ },
+ "chat": {
+  "model": "claude-haiku-4-5-20251001"
+ },
+ "wire": {
+  "mode": "mcp",
+  "server": "_tools/dictation/wire.py",
+  "registered": ".mcp.json",
+  "built": "2026-09-17"
+ },
+ "session": {
+  "reader": "script",
+  "max_sentences": 12,
+  "acks": true,
+  "built": "2026-09-17",
+  "squelch": {
+   "enabled": true,
+   "up": "",
+   "down": "",
+   "note": "empty paths = sfx/key-up.wav · sfx/key-down.wav; drop your own files there"
+  }
+ }
 }

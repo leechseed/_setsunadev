@@ -40,6 +40,7 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 sys.path.insert(0, HERE)
 
 import speak  # noqa: E402
+import squelch  # noqa: E402  — the radio squelch around every block (Chief, 9/17)
 
 JUDY = os.path.join(HERE, "judy.json")
 ACKS = os.path.join(ROOT, "_PRIVATE", "voice-acks")
@@ -253,6 +254,7 @@ class Mouth:
         self.gen = 0            # bumps on interrupt; stale work is dropped
         self.lock = threading.Lock()
         self.n = 0
+        self.keyed = False      # True between key-up and key-down
         threading.Thread(target=self._run, daemon=True).start()
 
     def speak(self, sents, tag=""):
@@ -270,11 +272,18 @@ class Mouth:
                 self.q.get_nowait()
         except queue.Empty:
             pass
+        if self.keyed:           # cut off mid-block: the carrier still drops
+            self.keyed = False
+            squelch.key_down()
 
     def ack(self):
         acks = ensure_acks()
         if acks:
-            speak.play(random.choice(acks))
+            p = random.choice(acks)
+            squelch.key_up()
+            speak.play(p)
+            time.sleep(wav_seconds(p))
+            squelch.key_down()
 
     def _run(self):
         tmp = os.path.join(HERE, "_reader")
@@ -302,6 +311,9 @@ class Mouth:
                 self.face.set("talking")
                 self.face.say(s)
             self.log(f"  judy > {s}   [{tag} · {dt:.2f}s synth]")
+            if not self.keyed:       # first sentence of the block: key up
+                self.keyed = True
+                squelch.key_up()
             speak.play(p)
             secs = wav_seconds(p)
             # wait out the clip, but stay interruptible
@@ -311,8 +323,15 @@ class Mouth:
                     if g != self.gen:
                         break
                 time.sleep(0.05)
-            if self.q.empty() and self.face:
-                self.face.set("idle")
+            if self.q.empty():
+                if self.keyed:       # last sentence of the block: key down
+                    self.keyed = False
+                    with self.lock:
+                        live = (g == self.gen)
+                    if live:
+                        squelch.key_down()
+                if self.face:
+                    self.face.set("idle")
 
 
 # ---------------------------------------------------------------- the reader

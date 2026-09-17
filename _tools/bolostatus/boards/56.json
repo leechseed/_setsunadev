@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "open",
-  "status": "v0.7 · the acknowledgments RULED 9/17: JUDY confirms receipt with two prowords only, \"Copy.\" and \"Good traffic, stand by.\" — the bank re-cut in Blondie's voice, session voice restarted",
+  "status": "v0.8 · the squelch BUILT 9/17: a radio break keys up before JUDY's first sentence and keys down after her last (and around every acknowledgment, and when a new turn cuts her off) — stand-in bursts in place until Chief's own sounds land in sfx/",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.7 · DOPE SHEET"
+  "version": "v0.8 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -98,6 +98,12 @@
     "q": "The acknowledgments",
     "s": "ruled",
     "ruling": "RULED 9/17 by Chief: \"only certain prowords that she uses to confirm that she received the message. One of them will be copy. The next one would be good traffic, stand by.\" ACK_LINES in reader.py is exactly those two; the five-line bank (On it · Working · One moment) retired; re-rendered on ElevenLabs the same turn."
+   },
+   {
+    "q": "The squelch sounds",
+    "options": "Chief's own two files dropped into _tools/dictation/sfx/ as key-up.wav and key-down.wav (rec: he said he would make them) · keep the generated stand-ins",
+    "default": "the stand-ins play until the files land; nothing else to rule",
+    "s": "open"
    }
   ]
  },
@@ -326,6 +332,12 @@
      "s": "done",
      "when": "9/17",
      "t": "SESSION VOICE — Chief: talk straight into the Fable session, an agent reads the reply aloud. Built the same turn: reader.py tails ~/.claude/projects/<repo>/<session>.jsonl and speaks each assistant block sentence by sentence (one synthesizing while the last plays), speaks only the <!-- say: --> line when a reply carries one, cuts off on a new user turn and plays an acknowledgment from a Blondie-rendered bank; judy.py --session = face + ears pasted into the chat with Enter + the reader in one process. Measured: 13 sentences read, first synth 1.26 s cold then 0.19–0.46 s each. Standalone JUDY stopped; session voice launched and following this session."
+    },
+    {
+     "n": 13,
+     "s": "done",
+     "when": "9/17",
+     "t": "**The squelch:** a radio break brackets every block she speaks — key-up before the first sentence, key-down after the last, the same around an acknowledgment, and key-down when an interrupt cuts her off mid-block. Wired into reader.py (session voice) and judy.py (standalone). Stand-in bursts generated; Chief's sounds replace them by filename."
     }
    ],
    "coord": [],
@@ -447,6 +459,16 @@
      "path": "SOP.md",
      "what": "§7 rule 10 — the spoken line: a long reply opens with <!-- say: … --> in her register while JUDY reads the session",
      "s": "done"
+    },
+    {
+     "path": "_tools/dictation/squelch.py",
+     "what": "key_up() / key_down(): synchronous playback of sfx/key-up.wav and sfx/key-down.wav; generates stand-in bursts once when a file is missing; reads judy.json session.squelch",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/sfx/",
+     "what": "the two squelch sounds — Chief's files go here under those names and replace the stand-ins",
+     "s": "open"
     }
    ],
    "cost": [
@@ -636,6 +658,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "ACK_LINES narrowed to the two prowords, the old bank deleted and re-rendered in Blondie's voice, session voice restarted on the new bank. Radio lineage: COPY (received and understood) · GOOD TRAFFIC, STAND BY (your transmission is good, wait for the reply)."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"I want there to be like a radio squawk at the beginning, and after she's done talking. I can come up with the sound. Would you be able to code that in?\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Coded and live: squelch.py plus the hooks in the reader's Mouth (key-up on the first sentence of a block, key-down when the queue empties or an interrupt lands) and in the standalone loop. Playback is synchronous so speech never overlaps the break. Stand-ins generated in sfx/; drop key-up.wav and key-down.wav there to replace them. Session voice restarted on the new code."
     }
    ]
   }

@@ -284,3 +284,15 @@ All three are in §8 now. When something garbles, add the row; do not patch the 
 Related: **SOP §8** · **BOLO 26** · **BOLO 56 (JUDY)** ·
 [oscar-mike/dictation-dictionary.md](../../oscar-mike/dictation-dictionary.md) ·
 [[the corner]]
+
+## The squelch (Chief, 9/17)
+
+A radio squelch brackets everything JUDY says: **key-up** before the first sentence of a block (and before an acknowledgment), **key-down** after the last (and when a new turn cuts her off). `squelch.py` plays them synchronously so the speech never overlaps the break.
+
+| file | what |
+|---|---|
+| `sfx/key-up.wav` | the open — drop your own sound here under this name |
+| `sfx/key-down.wav` | the close — same |
+| `judy.json` → `session.squelch` | `enabled` · optional `up` / `down` paths overriding the sfx/ defaults |
+
+If a file is missing a stand-in burst is generated once so the timing can be heard. `python squelch.py` plays both.

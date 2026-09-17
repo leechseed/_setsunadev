@@ -247,7 +247,10 @@ class Loop:
         self.face.set("talking")
         if self.speak_replies:
             try:
+                import squelch
+                squelch.key_up()
                 speak.say(reply, blocking=True)
+                squelch.key_down()
             except Exception as e:
                 print(f"  ! mouth failed: {e}")
         self.face.set("idle")
