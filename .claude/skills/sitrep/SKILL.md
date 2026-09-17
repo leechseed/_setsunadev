@@ -15,7 +15,7 @@ Canonical protocol: SOP.md §1 (the command) · §2 (the blocks) · §3 (the flu
 python _tools/sitrep/prep.py
 ```
 
-Prints a 20-line digest and writes `_tools/sitrep/work/<date>/`: the previous board split per block (`prev/`), STATE sliced to Blocked + Live, the git log since the last board, `meta.json` (box probe · tree · rack · sizes), Blocks III and VII carried forward (`frag/`), and three briefs. Read the digest only. Do not open STATE, BOLO, SOP, PROJECTS or the cache notes.
+Prints a 20-line digest and writes `_tools/sitrep/work/<date>/`: the previous board split per block (`prev/`), STATE sliced to Blocked + Live, the git log since the last board (named commits + one FOOTPRINT line per autosave window; an autosave is never an item, BOLO 59), STATE's Moved sections since the last board (`state.moved.md`, the fold the close-out writes), `meta.json` (box probe · tree · rack · sizes), Blocks III and VII carried forward (`frag/`), and three briefs. Read the digest only. Do not open STATE, BOLO, SOP, PROJECTS or the cache notes.
 
 ## H1 · Fan out (one message, three agents, gear 1)
 

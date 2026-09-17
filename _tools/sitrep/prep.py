@@ -7,7 +7,9 @@ Does everything a script can do before any agent reads a word:
   work/<date>/prev/<block>.json   every block of the newest board, split out (the carry-forward)
   work/<date>/state.blocked.md    STATE.md, the Blocked table only
   work/<date>/state.live.md       STATE.md, the Live tables only (history stays behind)
-  work/<date>/git.log             commits since the previous board
+  work/<date>/git.log             named commits since the previous board + the autosave FOOTPRINT, one line per
+                                  session window (BOLO 59: an autosave is never an item, it dates one)
+  work/<date>/state.moved.md      STATE.md, the Moved sections since the previous board (the fold Oscar Mike writes)
   work/<date>/meta.json           box probe · tree · rack · sizes · date (the page header)
   work/<date>/frag/III.json       carried forward (frozen since 8/15; flagged if PROJECTS.md moved)
   work/<date>/frag/VII.json       carried forward, the soi list refreshed from glossary.json
@@ -80,6 +82,63 @@ def slice_md(text, start_pat, end_pat):
     return rest if not e else rest[: e.start() + 1]
 
 
+
+def fold_log(raw, gap_min=45):
+    """BOLO 59 (Chief 9/17): the autocommit fires on every turn stop, so the log since a board is
+    mostly `autosave HH:MM · N file(s)` — footprints with no content. Handed raw to INDEX they
+    become Fresh Ten items ("not yet folded"), the board reporting its own exhaust. Fold them:
+    named commits stay one line each; autosaves collapse into one FOOTPRINT line per session
+    window (consecutive autosaves less than `gap_min` apart) naming the folders touched."""
+    import collections, datetime as dt
+    commits = []
+    for chunk in raw.split("@@")[1:]:
+        head, _, body = chunk.partition("\n")
+        parts = head.split(" ", 3)
+        if len(parts) < 4:
+            continue
+        h, d, t, subj = parts
+        files = [f.strip().strip(chr(34)) for f in body.split("\n") if f.strip()]   # git quotes odd paths
+        commits.append({"h": h, "d": d, "t": t, "subj": subj, "files": files,
+                        "auto": subj.lower().startswith("autosave")})
+    named = [c for c in commits if not c["auto"]]
+    autos = [c for c in commits if c["auto"]]   # newest first, as git prints
+    windows = []
+    for c in reversed(autos):                    # oldest first, so windows read forward in time
+        stamp = dt.datetime.strptime(c["d"] + " " + c["t"], "%m/%d %H:%M")
+        if windows and (stamp - windows[-1]["end"]).total_seconds() <= gap_min * 60:
+            w = windows[-1]
+            w["end"] = stamp; w["n"] += 1; w["files"].update(c["files"])
+        else:
+            windows.append({"start": stamp, "end": stamp, "n": 1, "files": set(c["files"])})
+    out = ["# git since the previous board · named commits first, then the autosave FOOTPRINT",
+           "# An autosave window is never an item on the Fresh Ten. It only dates items that the Live",
+           "# tables or the Moved sections (state.moved.md) already name. (BOLO 59)", ""]
+    out += [f"{c['h']} {c['d']} {c['t']} {c['subj']}" for c in named] or ["(no named commits)"]
+    out += ["", f"# FOOTPRINT · {len(autos)} autosave commit(s) in {len(windows)} window(s)"]
+    for w in reversed(windows):                  # newest window first, like the log
+        tops = collections.Counter()
+        for f in w["files"]:
+            seg = f.split("/")
+            tops["/".join(seg[:2]) if seg[0].startswith("_") and len(seg) > 2 else seg[0]] += 1
+        where = ", ".join(f"{k} ({v})" for k, v in tops.most_common(6))
+        out.append(f"{w['start']:%m/%d %H:%M}–{w['end']:%H:%M} · {w['n']} autosave(s) · "
+                   f"{len(w['files'])} file(s) · {where}")
+    return "\n".join(out), len(commits)
+
+
+def moved_since(state, since):
+    """Every `## ✅ Moved <date>` section whose first YYYY-MM-DD is on or after `since` — the fold
+    that Oscar Mike writes, handed to INDEX so the Fresh Ten come from it (BOLO 59)."""
+    out, keep = [], False
+    for line in state.split("\n"):
+        if line.startswith("## "):
+            m = re.match(r"## ✅ Moved (\d{4}-\d{2}-\d{2})", line)
+            keep = bool(m) and m.group(1) >= since
+        if keep:
+            out.append(line)
+    return "\n".join(out).strip() + "\n"
+
+
 def rel(p):
     return os.path.relpath(p, ROOT).replace("\\", "/")
 
@@ -127,9 +186,11 @@ def main():
     #     back at the NEXT run as uncharacterized commits and sort to #1 of the Fresh
     #     Ten by recency — the board reporting on itself. Proved 9/16 (STATE, Known rot).
     since = prev_name[:10] if prev_name else "1 week ago"
-    log = git("log", f"--since={since} 00:00", "--date=format:%m/%d %H:%M", "--format=%h %ad %s",
-              "--", ".", *(f":(exclude){p}" for p in EXHAUST))
+    raw = git("log", f"--since={since} 00:00", "--date=format:%m/%d %H:%M", "--format=@@%h %ad %s",
+              "--name-only", "--", ".", *(f":(exclude){p}" for p in EXHAUST))
+    log, ncommits = fold_log(raw)
     write(os.path.join(wd, "git.log"), log + "\n")
+    write(os.path.join(wd, "state.moved.md"), moved_since(state, since))
     dirty = git("status", "--porcelain")
     tree = "clean at open" if not dirty else f"{len(dirty.splitlines())} file(s) uncommitted at open"
 
@@ -155,7 +216,7 @@ def main():
                   "read": f"{sum(sizes.values())} KB on disk, read by specialists, not the main line",
                   "calls": "", "rounds": ""},
         "prev_board": prev_name, "sizes_kb": sizes,
-        "commits_since_prev": len(log.splitlines()) if log else 0,
+        "commits_since_prev": ncommits,
     }
     dump(os.path.join(wd, "meta.json"), meta)
 
@@ -195,11 +256,15 @@ def main():
             f"the last session(s) were.\n{CONTRACT}"),
         "INDEX": (
             f"You are INDEX, the STATE specialist for the sit rep of {date}. Model: sonnet.\n"
-            f"READ: {p('state.blocked.md')} · {p('state.live.md')} · {p('git.log')} · and the previous fragments "
+            f"READ: {p('state.blocked.md')} · {p('state.live.md')} · {p('state.moved.md')} · {p('git.log')} · and the previous fragments "
             f"{p('prev', 'I.json')} · {p('prev', 'II.json')} · {p('prev', 'V.json')}.\n"
             f"WRITE three files:\n"
             f"  {p('frag', 'I.json')}  — Block I \"The Fresh Ten\": the ten items touched most recently, newest first, "
-            f"from the Live tables and the git log; each with when · trunk · the one next step.\n"
+            f"from the Moved sections (state.moved.md — what each session actually moved, the fold the close-out writes) "
+            f"and the Live tables, dated by the named commits and the autosave FOOTPRINT windows in git.log; each with when · trunk · the one next step. "
+            f"RULE (BOLO 59): an autosave commit or window is NEVER an item — it only dates one. Do not carry autosave "
+            f"rows from the previous fragment forward; replace them with what moved. If a footprint window matches nothing "
+            f"in Moved or Live, it is at most one item labelled 'unaccounted', never more.\n"
             f"  {p('frag', 'II.json')} — Block II \"The Ancients\": the same groups as before (true ancients · three weeks "
             f"or more · two to three weeks · a week or less); what each is waiting on.\n"
             f"  {p('frag', 'V.json')}  — Block V \"Blocked on you\": every numbered row of the Blocked table, in table "
