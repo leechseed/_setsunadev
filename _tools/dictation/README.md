@@ -304,3 +304,7 @@ The persona sliders are real parameters, not a prompt. **brat** drives ElevenLab
 ## The three attitudes (Chief, 9/17)
 
 `presets.py` holds three full settings of the dials plus the phrasing that prompts the register; a proword switches them (RULED 9/17): **"JUDY, lock in"** military comms · **"JUDY, put the fries in the bag"** a comfortable, slightly flirtatious day at work (default) · **"JUDY, it's goon time"** full brat. `python presets.py` shows them, `python presets.py "lock in"` applies one. The Haiku rewrite reads `persona.prompt`; Fable's spoken line follows `persona.say`.
+
+## The pad focuses the chat (Chief, 9/17)
+
+Pressing the Akai pad in session voice brings VS Code to the foreground and puts the cursor in the Claude Code input before the words are pasted: `focus.py` raises the VS Code window (Win32, the Alt tap defeats the foreground lock) and sends `ctrl+alt+shift+j`, bound in the user `keybindings.json` to the extension's `claude-vscode.focus` ("Claude Code: Focus input") with no `when` clause. `judy.json → session.focus_on_talk`: `pad` (default) · `always` (the hotkey too) · `never`. `python focus.py` proves it once.

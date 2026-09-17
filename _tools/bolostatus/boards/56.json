@@ -6,7 +6,7 @@
   "issued": "2026-09-16",
   "asof": "2026-09-17",
   "s": "done",
-  "status": "v0.12 · JUDY COMPLETE 9/17: the three attitude prowords RULED in Chief's own words — \"JUDY, lock in\" (military comms) · \"JUDY, put the fries in the bag\" (the comfortable day, the default) · \"JUDY, it's goon time\" (full brat). Nothing open on this row.",
+  "status": "v0.13 · the pad focuses the chat (BUILT 9/17): a pad press in session voice brings VS Code forward and puts the cursor in the Claude Code input before the words land. JUDY complete; nothing open.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "every trunk",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 56",
   "card": "none",
-  "version": "v0.12 · DOPE SHEET"
+  "version": "v0.13 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -356,6 +356,12 @@
      "s": "done",
      "when": "9/17",
      "t": "**The three attitudes:** presets.py — three full dial settings (STRAC h5 o100 b0 v95 → stability 0.75 / style 0.15 / cap 9 / speed 1.00 · AT EASE h60 o90 b45 v60 → 0.525 / 0.375 / 13 / 1.03 · LIBERTY CALL h90 o75 b100 v35 → 0.25 / 0.65 / 16 / 1.08) each with the phrasing that prompts the register; the Haiku rewrite reads it, Fable's spoken line follows it. The words benched."
+    },
+    {
+     "n": 15,
+     "s": "done",
+     "when": "9/17",
+     "t": "**The pad focuses the chat:** on a pad press in session voice, VS Code comes to the front and the cursor lands in the Claude Code box, in a thread beside the recorder so the mic opens on time; the paste at release lands in the box. The hotkey keeps its old behaviour unless focus_on_talk is set to always."
     }
    ],
    "coord": [],
@@ -496,6 +502,16 @@
     {
      "path": "_tools/dictation/presets.py",
      "what": "the three attitudes: dials, speed, the prompt, the spoken-line register; apply by name",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/focus.py",
+     "what": "focus_claude(): the VS Code window to the foreground (Win32, Alt tap) then the focus chord bound to claude-vscode.focus; policy session.focus_on_talk = pad · always · never",
+     "s": "done"
+    },
+    {
+     "path": "%APPDATA%/Code/User/keybindings.json",
+     "what": "ctrl+alt+shift+j → claude-vscode.focus (\"Claude Code: Focus input\"), no when clause, so it works from anywhere in VS Code",
      "s": "done"
     }
    ],
@@ -731,6 +747,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Ruled into presets.py (the phrases and their garbles resolve to the presets), SOP §1 row and §5 ruling, three §8 codebook rows, three SOI register keys (edition 2026-09-17-4), BOLO 56, the README and memory. Put the fries in the bag stays the default. BOLO 56 has nothing open."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"Whenever I press the pad on the Akai MPK, can you make it so it auto-focuses on VS Code and puts my cursor in the Claude Code box?\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Built focus.py (window to the foreground, then the focus chord), bound ctrl+alt+shift+j to the extension's own Focus-input command in the user keybindings, tagged the pad's trigger so only the pad does it by default, restarted session voice."
     }
    ]
   }

@@ -256,11 +256,17 @@ class Loop:
         self.face.set("idle")
 
     # -- the two calls every trigger uses
-    def start(self):
+    def start(self, src="key"):
         if self.open or not self.busy.acquire(blocking=False):
             return
         self.open = True
         self.face.set("listening")
+        if self.session:
+            # Chief 9/17: the pad brings VS Code forward and puts the cursor in the chat box.
+            # Runs beside the recorder so the mic opens on time; the paste lands after.
+            import focus
+            if focus.wants_focus(src):
+                threading.Thread(target=focus.focus_claude, daemon=True).start()
         try:
             self.rec.start()
         except Exception as e:
@@ -289,12 +295,12 @@ class Loop:
             except RuntimeError:
                 pass
 
-    def fire(self):
+    def fire(self, src="key"):
         """A trigger pulse. Hold mode uses start/finish directly; toggle uses this."""
         if self.open:
             threading.Thread(target=self.finish, daemon=True).start()
         else:
-            self.start()
+            self.start(src)
 
     def held(self):
         import keyboard
@@ -320,10 +326,10 @@ class Loop:
         self.pad = None
         if dcfg().get("midi_note") is not None:
             if self.toggle:
-                self.pad = midipad.PadListener(self.fire, lambda: None)
+                self.pad = midipad.PadListener(lambda: self.fire("pad"), lambda: None)
             else:
                 self.pad = midipad.PadListener(
-                    self.start,
+                    lambda: self.start("pad"),
                     lambda: threading.Thread(target=self.finish, daemon=True).start())
             if self.pad.start():
                 c = dcfg()
