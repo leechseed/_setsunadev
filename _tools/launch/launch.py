@@ -46,7 +46,7 @@ def procs(pattern):
         return []
     if not out:
         return []
-    data = json.loads(out)
+    data = json.loads(out, strict=False)   # a command line can carry raw newlines (a heredoc); strict JSON chokes on them
     if isinstance(data, dict):
         data = [data]
     return [(d["ProcessId"], d.get("CommandLine") or "") for d in data

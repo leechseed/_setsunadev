@@ -42,6 +42,23 @@ def focus_key():
     return _cfg(CONFIG).get("focus_key") or FOCUS_KEY
 
 
+def send_key():
+    """What sends a prompt in the Claude Code box. config.json "send_key" wins; else the VS Code setting
+    claudeCode.useCtrlEnterToSend (user then workspace settings.json) → ctrl+enter; else enter."""
+    k = _cfg(CONFIG).get("send_key")
+    if k:
+        return k
+    for p in (os.path.join(os.environ.get("APPDATA", ""), "Code", "User", "settings.json"),
+              os.path.join(os.path.dirname(HERE), "..", ".vscode", "settings.json")):
+        try:
+            txt = io.open(p, encoding="utf-8").read()
+            if '"claudeCode.useCtrlEnterToSend": true' in txt.replace(" : ", ": "):
+                return "ctrl+enter"
+        except Exception:
+            pass
+    return "enter"
+
+
 def vscode_windows():
     out = []
 
@@ -125,12 +142,14 @@ def focus_claude(prefer=None):
 
 
 def send_box():
-    """The SEND pad (Chief, 9/17): VS Code forward, cursor in the box, Enter on whatever is there."""
+    """The SEND pad (Chief, 9/17): VS Code forward, cursor in the box, the send key (Ctrl+Enter when the
+    Claude Code setting useCtrlEnterToSend is on — Chief's clue 9/17 late) on whatever is there."""
     ok, title = focus_claude()
     try:
         import keyboard
         time.sleep(0.15)
-        keyboard.press("enter"); time.sleep(0.03); keyboard.release("enter")
+        k = send_key()
+        keyboard.send(k) if "+" in k else (keyboard.press(k), time.sleep(0.03), keyboard.release(k))
     except Exception as e:
         return ok, "%s (enter failed: %s)" % (title, e)
     return ok, title

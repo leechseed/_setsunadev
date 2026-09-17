@@ -7,6 +7,14 @@ description: Run the close-out ("Oscar Mike", ruled 9/11) in the formation (BOLO
 
 Canonical: SOP.md §1 (the command) · §3 (the Ready Rack) · §7 rule 9 (the OUT block). The session is done when this runs; nothing is parked into a card.
 
+## H-1 · Stations down (zero tokens) — the closing sequence, BOLO 58, Chief 9/17
+
+```
+python _tools/launch/shutdown.py
+```
+
+The reverse of the launch sequence: the board windows (the sit rep page, the SOI) closed · JUDY session voice stopped · the DARKROOM server stopped. The wire and Stash stay. Keep the printed STATIONS DOWN block for the reply, above the OUT block's paragraph. A STUCK station is reported, not retried.
+
 ## H0 · Prep (zero tokens)
 
 ```
@@ -31,7 +39,7 @@ Launch **NOTE** (haiku) with the brief verbatim. It writes the session note into
 python _tools/oscarmike/journal.py
 ```
 
-Appends the note's bullets under a timed header to `_devlog/_devlog_docs/_devlog_journals/MMDDYYYY.journal.md` (idempotent per note). The reply ends with the OUT block (SOP §7 rule 9) and nothing after it. Autocommit fires on stop.
+Appends the note's bullets under a timed header to `_devlog/_devlog_docs/_devlog_journals/MMDDYYYY.journal.md` (idempotent per note). The reply carries the STATIONS DOWN block, then ends with the OUT block (SOP §7 rule 9) and nothing after it. Autocommit fires on stop.
 
 ## Rules
 

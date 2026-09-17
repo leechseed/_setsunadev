@@ -14,5 +14,7 @@
  "focus_note": 38,
  "focus_note_note": "PROVISIONAL 9/17: pad 3, left of the talk pad (39) on the MPK mini 3 default program; the learn timed out. Re-learn: python midipad.py --learn-focus",
  "send_note": 43,
- "send_note_note": "PROVISIONAL 9/17: pad 8, above the talk pad (39) on the MPK mini 3 default program. Re-learn: python midipad.py --learn-send"
+ "send_note_note": "PROVISIONAL 9/17: pad 8, above the talk pad (39) on the MPK mini 3 default program. Re-learn: python midipad.py --learn-send",
+ "send_key": "ctrl+enter",
+ "send_key_note": "Chief 9/17: claudeCode.useCtrlEnterToSend is on, so plain Enter only adds a line; delete this key to fall back to reading the VS Code setting"
 }

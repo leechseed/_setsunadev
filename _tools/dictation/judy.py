@@ -234,9 +234,10 @@ class Loop:
             # Enter sends the turn. Fable answers; reader.py speaks it as it lands.
             import keyboard
             import ptt
+            import focus
             ptt.type_out(heard)
-            time.sleep(0.05)
-            keyboard.send("enter")
+            time.sleep(0.08)
+            keyboard.send(focus.send_key())   # Ctrl+Enter when the Claude Code setting says so (Chief 9/17)
             return
         reply, _tool = brain.answer(heard)
         if not reply:
