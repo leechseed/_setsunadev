@@ -1,7 +1,7 @@
 {
- "edition": "2026-09-12-1",
- "effective": "2026-09-12 · until superseded by the next edition",
- "supersedes": "the in-page glossary views on the sit rep page (v0.3–0.5) and the BOLO 45 page (v0–0.2); the word \"glossary\" itself, retired by Papi 9/11. The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
+ "edition": "2026-09-17-1",
+ "effective": "2026-09-17 · until superseded by the next edition",
+ "supersedes": "edition 2026-09-12-1. Carries the 9/15–9/17 rulings: the Command, the crew grades, TM, organic, the ladder, JUDY, go N. The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
  "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
  "prepared_by": "Claude (every session)",
  "approved_by": "Papi — every proword marked RULED carries his word",
@@ -117,6 +117,18 @@
   {
    "date": "2026-09-12",
    "t": "**Gear N** provisional: the agent ceiling (1 = 3 default · 2 = 6 · 3 = 9 · 4 = 12 · 5 = 15 never); **the gearbox** named as the sustainable-speed system (BOLO 52). Warps and DEFCON aborted in the same breath. **Proword** defined on the page (procedure word, ACP 125). Section numbers dropped from the headers by Papi's order. BOLOs 51 · 52 · 53 opened."
+  },
+  {
+   "date": "2026-09-15",
+   "t": "**The Command's ladder** ruled (BOLO 50): the NASA four rungs, policy → procedure → standard → handbook; every document carries its rung. Codebook rows coded: dope shit → DOPE SHEET N · Bolo Polo → BOLO N · goes to ex N → **go N**, the phase go-word."
+  },
+  {
+   "date": "2026-09-16",
+   "t": "**COMMAND** ruled: the whole operation is [[command|the Command]]; \"the house\" retired; **organic** replaces in-house. **CREW GRADES** ruled, provisional: [[cdr|CDR]] · [[ms|MS]] · [[ps|PS]] · [[range|RANGE]] name the seats in the formation, never the model; \"sonnet specialist\" retired. **TM** ruled: the Technical Manual is the page type for a system document (TM 04 plot · 03 setting · 02 character); the CK3 hover layer is a standing requirement on every page. **DOPE SHEET format** ruled (BOLO 55): one page, keep the rail. **JUDY** named (BOLO 56), the voice loop; the console built the same session; the wire ruled MCP. **go N** ruled as the order, not the build-out. Codebook: borsite → boresight · Poppy → Papi · darkroom → DARKROOM, the first catches from the dictation tool itself."
+  },
+  {
+   "date": "2026-09-17",
+   "t": "**JUDY's brain** ruled: stay on the router, no model, $0 standing. **Her voice** ruled: Blondie on ElevenLabs. **DOPE SHEET 56** published. This edition of the SOI cut."
   }
  ]
 }

@@ -705,7 +705,7 @@
  "bolo55": {
   "t": "BOLO 55",
   "k": "item",
-  "d": "The DOPE SHEET format — the document layout. Captured 9/16.",
+  "d": "The DOPE SHEET format — the document layout. Captured 9/16 and RULED the same day (Papi: \"one page · keep the rail, keep it\"): one page, the explainer rail kept, the five-paragraph order with the order on top, the mantra, the log. Every sheet since builds to it.",
   "w": "BOLO.md #55 · DOPE SHEET 55"
  },
  "command": {
@@ -762,5 +762,96 @@
   "k": "item",
   "d": "JUDY — the voice loop. Ears (BOLO 26), brain (keyword router, ruled 9/17), mouth (ElevenLabs, Blondie ruled 9/17), face and console all built. The wire — an MCP server exposing brain.py's tools to the VS Code session — is ruled and not yet built.",
   "w": "https://claude.ai/artifact/Ckg6W4JrNo8JvLR55ZW5Ea"
+ },
+ "crew-grades": {
+  "t": "crew grades",
+  "k": "ruling",
+  "st": "provisional",
+  "d": "The seats in [[formation|the formation]] are named by NASA shuttle crew grade. RULED 2026-09-16 (\"I like specialist, mission specialist… go CDR\"; bench: NASA crew grades (rec) · Marine fire team · Mission Control consoles). The grade says what kind of work a seat does, never which model sits in it: [[cdr|CDR]] · [[ms|MS]] · [[ps|PS]] · [[range|RANGE]]. Gear 1 = one MS + two PS under the CDR. \"Sonnet specialist\" and \"haiku specialist\" retired. Provisional until it survives a week.",
+  "w": "SOP.md §6 · BOLO 54"
+ },
+ "cdr": {
+  "t": "CDR",
+  "k": "noun",
+  "st": "provisional",
+  "d": "Commander. The main line in [[formation|the formation]]: decomposes the job, rules, writes the header and the order. Fable sits there today. One of the [[crew-grades|crew grades]], RULED 2026-09-16.",
+  "w": "SOP.md §6"
+ },
+ "ms": {
+  "t": "MS",
+  "k": "noun",
+  "st": "provisional",
+  "d": "Mission Specialist. The writer seat in [[formation|the formation]]: the crew member who does the mission's work, drafts the sheet, writes the register. Sonnet sits there today. Usage: \"an MS drafts the sheet.\" One of the [[crew-grades|crew grades]].",
+  "w": "SOP.md §6"
+ },
+ "ps": {
+  "t": "PS",
+  "k": "noun",
+  "st": "provisional",
+  "d": "Payload Specialist. The fetcher seat in [[formation|the formation]]: flown for one payload, one narrow task, such as pulling links or extracting a batch. Haiku sits there today. Usage: \"two PS pull the links.\" One of the [[crew-grades|crew grades]].",
+  "w": "SOP.md §6"
+ },
+ "range": {
+  "t": "RANGE",
+  "k": "noun",
+  "st": "provisional",
+  "d": "The range safety officer: the script reviewer at the fan-in of [[formation|the formation]]. Holds the abort, never flies. A script wherever it can be, never a checker agent. Usage: \"RANGE stopped the run.\" One of the [[crew-grades|crew grades]].",
+  "w": "SOP.md §6 · BOLO 54"
+ },
+ "tm": {
+  "t": "TM",
+  "k": "noun",
+  "st": "ruled",
+  "d": "Technical Manual. The page type for a system document, RULED 2026-09-16 (\"TM go\"; bench TM (rec) · FM · SCHEMATIC), beside the SITREP (the board), the [[dope-sheet|DOPE SHEET]] (a BOLO's status) and the [[soi|SOI]] (the book). TM 04 = the plot system · TM 03 = the setting system · TM 02 = the character system, each built by _tools/tm/build.py from its SSOT markdown. Every TM carries the [[ck3-rules|CK3 hover layer]]; a section with no hover terms is a blocking finding.",
+  "w": "SOP.md §6 · _tools/tm/"
+ },
+ "organic": {
+  "t": "organic",
+  "k": "noun",
+  "st": "ruled",
+  "d": "The Command's word for what it builds and runs itself, RULED 2026-09-16 with [[command|the Command]]: \"organic\" replaces in-house. Military usage: organic assets are the ones a unit owns outright rather than borrows. An organic tool is one written here; an organic voice is one that runs on [[the-box|the box]].",
+  "w": "SOP.md §6"
+ },
+ "the-house": {
+  "t": "the house (retired)",
+  "k": "noun",
+  "st": "retired",
+  "d": "Retired 2026-09-16 for [[command|the Command]]. Was: the whole operation, and by extension house format, house tongue, in-house. Say the Command, Command format, [[organic]].",
+  "w": "SOP.md §6"
+ },
+ "judy": {
+  "t": "JUDY",
+  "k": "system",
+  "st": "ruled",
+  "d": "The voice loop, [[bolo56|BOLO 56]]: Papi talks, she listens, she answers out loud. Name RULED 2026-09-16, spelled J-U-D-Y, superseding the provisional THE HANDLER. Persona TARS (affable, informative, bratty); voice the 007 handler register, Blondie on ElevenLabs ruled 9/17; face on the desktop as PNG state swaps. Ears local on the 3090 ([[bolo26|BOLO 26]]), brain the keyword router (ruled 9/17), the wire an MCP server to the VS Code session (ruled, unbuilt). Lives in _tools/dictation/.",
+  "w": "BOLO.md row 56 · DOPE SHEET 56"
+ },
+ "go": {
+  "t": "go N",
+  "k": "proword",
+  "st": "ruled",
+  "d": "The phase go-word on a [[dope-sheet|DOPE SHEET]]: \"go 6\" fires phase 6 of the sheet's execution paragraph, nothing more. Coded 9/15 (dictation: \"goes to ex 6\"). RULED 2026-09-16 the hard way: \"go\" is the order, not the build-out. Papi said \"slice go,\" the whole pipeline stood up and six evenings got assigned, and he called it \"a little bit too far.\" Deliver the sheet's order, then wait for the next word.",
+  "w": "SOP.md §8 · BOLO 55"
+ },
+ "ladder": {
+  "t": "the Command's ladder",
+  "k": "ruling",
+  "st": "ruled",
+  "d": "The standards ladder from BOLO 50, RULED 2026-09-15: the NASA four rungs, policy → procedural requirement → standard → handbook, with spec as a tag on nodes. Every Command document carries its rung in the frontmatter (SOP.md sits on procedure). Each world's standards body is canon in its own right.",
+  "w": "BOLO.md row 50 · _0.1_BVX_LEARN"
+ },
+ "digest": {
+  "t": "the session-open digest",
+  "k": "system",
+  "st": "provisional",
+  "d": "What a session reads instead of the five files: the hook prints the Ready Rack, the blocked rows, the newest BOLOs, PMCS red, the box and the tree at open (SOP §4 under [[formation|the formation]], BOLO 54). The five are still read every sit rep, by the specialists and the prep script; the [[cdr|CDR]] reads the digest.",
+  "w": "SOP.md §4 · _tools/sitrep/digest.py"
+ },
+ "bolo26": {
+  "t": "BOLO 26",
+  "k": "item",
+  "st": "ruled",
+  "d": "Dictation with a custom dictionary: the whisper fix. Route RULED BUILD 9/16 and shipped the same session as _tools/dictation/ (faster-whisper on the 3090, the Command lexicon as initial prompt, SOP section 8 repair). Now the listening half of [[judy|JUDY]].",
+  "w": "https://claude.ai/code/artifact/c5ece55b-4c2b-49e1-bc94-31bce8477ec9"
  }
 }
