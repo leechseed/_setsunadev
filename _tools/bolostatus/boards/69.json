@@ -6,7 +6,7 @@
   "issued": "2026-09-17",
   "asof": "2026-09-18",
   "s": "hot",
-  "status": "🔴 CAPTURED 9/17 · DOPE SHEET 69 published 9/18 · D-4, D-5 and the held D-8 RULED 9/18 early: the yo-yo runs Claude Code's four phases, explore → plan → implement → commit; the plan phase picks one workflow pattern from the field and that pattern is the BOLO.",
+  "status": "🟠 BUILT 9/18 early · D-2 and D-3 RULED on the recs and the first trick runs end to end: pad → ears → _YOYO/ page → Pepper's opener, 7 s on Haiku with thinking off. Waits on Chief's hand on the pad, Pepper's voice (D-1), and the wind.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "[[bolo55|BOLO 55]] (the sheet format) · [[bolo62|BOLO 62]] (the MPK, the pad's hardware) · [[bolo64|BOLO 64]] (the hooks) · [[bolo67|BOLO 67]] (the register the auto-format tool pairs with) · [[bolo68|BOLO 68]] (the workflow candidate)",
   "related": [
@@ -37,7 +37,7 @@
   ],
   "home": "BOLO.md · row 69",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -58,8 +58,8 @@
  ],
  "frago": {
   "mission": "Stand up the yo-yo as a process with the same deliverables JUDY had, **in order to** catch every spoken idea without breaking Chief's rhythm and wind each one into the tables before the stack outgrows him.",
-  "order": "**Rule D-2 (the home) and D-3 (the path).** The method is now ruled (D-4, D-5, D-8): the pad script and the explore step can be written on those two calls alone.",
-  "default": "Silence: nothing is built; ideas keep going to the phone or the air, and Pepper stays a name in a BOLO row.",
+  "order": "**Hold the top-left pad and speak a flash.** JUDY restarted with the yo-yo pad wired (note 40, provisional). If the pad is silent, run `python _tools/yoyo/yoyo.py --learn` and hit the pad you want. Then pick Pepper's voice (D-1).",
+  "default": "Silence: the pad stays wired and unproven; tricks from text still work; nothing winds.",
   "calls": [
    {
     "q": "D-1 · Pepper's voice",
@@ -72,15 +72,15 @@
     "q": "D-2 · Where a yo-yo lives",
     "options": "a folder in this repo, one markdown file per yo-yo with raw · refined · questions · state (rec) · a separate repository · a database",
     "default": "the folder in this repo (rec)",
-    "s": "open",
-    "ruling": "Open. One file per yo-yo keeps each Haiku run to one file, which is the context limit Chief asked for. A separate repo only if the stack outgrows this one."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-18, Chief: \"whatever is recommended, just go.\" A yo-yo lives in `_YOYO/` at the repo root, one markdown file each, numbered: front matter (state · phase · title · the ears' seconds · the run's tokens, cost, seconds), then Heard, Refined, and Pepper's opener. The repo is public (ruled 9/10), so the yo-yos are too unless Chief says otherwise — provisional."
    },
    {
     "q": "D-3 · The path from pad to page",
     "options": "the pad spawns a headless Claude run on Haiku, never this session (rec) · the pad pastes into this session and a skill fires · JUDY's router handles it locally",
     "default": "the headless run (rec)",
-    "s": "open",
-    "ruling": "Open. The headless run matches the separate small window Chief described and the token-offload rule. Pepper speaks the ack locally before the run starts; the main context never sees the yo-yo."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-18, Chief: \"whatever is recommended, just go.\" The yo-yo pad is a fourth pad on JUDY's MIDI listener: hold = record through the same Whisper ears, release = transcribe, then `_tools/yoyo/yoyo.py` spawns a headless Claude run on Haiku (the bundled claude.exe, `-p`, no tools, no session, thinking off) that returns title · refined · opener as JSON. The main session never sees it. Measured 9/18: 7 s wall, ~6k new tokens + 51k read from the hour cache, about two cents at list price and nothing extra on the subscription. With thinking on it was 41 s; that is why it is off."
    },
    {
     "q": "D-4 · The method behind question two",
@@ -182,6 +182,10 @@
       {
        "t": "**[[bolo55|BOLO 55]]**'s DOPE SHEET format is the shape this very sheet is built in.",
        "s": "done"
+      },
+      {
+       "t": "**9/18 early, the first trick.** Four tricks ran end to end before the build was called done: two from text, one with thinking off (7.0 s, 166 output tokens), one through the ears from the last recording (7.3 s of audio heard in 0.7 s, page in 9.8 s). The test pages were deleted; the folder holds the README and waits for Chief's first real flash.",
+       "s": "done"
       }
      ]
     },
@@ -225,14 +229,14 @@
    "strand": {
     "last": "The first pass set the shape (pad, three-agent handoff, visible stack, retro UI); the second pass reworked it around Pepper and the lowest-tier crew; the third pass ordered this sheet, with the calls left blank.",
     "plan": "Stand up the sheet first (done), then wait on Chief's rulings before touching the pad, the agents, or the UI.",
-    "you": "You ruled the method by handing over the docs: explore, plan, implement, commit. You want explore to be a real conversation, bratty and playful, not blurbs. You want the plan phase to pick one of the field's workflow patterns and hand you the top two.",
-    "next": "Set the minimum bar that closes explore, and the two calls that let a script run: the home (D-2) and the path (D-3)."
+    "you": "You said go on both recs. The pad is wired, the page writes, Pepper opens in JUDY's voice. You have not held the pad yet.",
+    "next": "Hold the top-left pad and speak. Then pick Pepper's voice. The wind (plan → implement → commit) is the next build."
    },
    "main_effort": "Filling this sheet's blank calls — the HELD disclosure call above all — since nothing downstream of the yo-yo's design can move until Chief rules them.",
    "phases": [
     {
      "n": 1,
-     "t": "**Explore** — the flash is spoken; the run returns in explore mode; Pepper talks it through with Chief in full turns until the minimum bar is met.",
+     "t": "**Explore** — BUILT 9/18: the pad, the ears, the page and Pepper's opener run end to end (four test tricks, deleted after). Unproven by Chief's hand on the pad; the opener speaks in JUDY's voice until D-1.",
      "s": "open",
      "when": "9/18"
     },
@@ -276,6 +280,31 @@
     {
      "path": "_tools/bolostatus/boards/69.draft.json",
      "what": "this sheet — DOPE SHEET 69, draft v0.1, the calls carried as blanks",
+     "s": "done"
+    },
+    {
+     "path": "_tools/yoyo/yoyo.py",
+     "what": "the yo-yo script: trick (text or wav) · count · show · --learn; the headless Haiku run; the cap and the overflow rule",
+     "s": "done"
+    },
+    {
+     "path": "_YOYO/README.md",
+     "what": "the home: what a yo-yo is, the phases, the front matter, the three commands",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/judy.py",
+     "what": "the yo-yo pad wired beside talk / focus / send: start_yoyo → finish → trick(); the ack 'Copy. Boxing the yo-yo.'; --yoyo for a typed test",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/config.json",
+     "what": "yoyo_note 40 (top-left pad, provisional) · yoyo.cap 12 · rounds 3 · model haiku",
+     "s": "done"
+    },
+    {
+     "path": "_tools/dictation/midipad.py",
+     "what": "--learn-yoyo, and the yo-yo pad in --list",
      "s": "done"
     }
    ],
@@ -398,6 +427,16 @@
      "when": "9/18",
      "who": "Claude",
      "t": "FRAGO 69 v0.2: three calls ruled, three phases written, the two sources logged. Nothing built. The second page's pattern list is a seed for BOLO 66's survey."
+    },
+    {
+     "when": "9/18",
+     "who": "Chief",
+     "t": "\"D-2 whatever is recommended, D-3 whatever is recommended, just go.\""
+    },
+    {
+     "when": "9/18",
+     "who": "Claude",
+     "t": "FRAGO 69 v0.3: D-2 and D-3 ruled on the recs and built — yoyo.py, the _YOYO/ home, the pad in judy.py, the config and midipad flags. Four test tricks proved pad-less text and the ears path; thinking off cut the run from 41 s to 7 s. JUDY restarted with the pad wired. Pepper still speaks in Blondie's voice (D-1 open)."
     }
    ]
   }

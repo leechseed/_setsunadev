@@ -149,10 +149,14 @@ def run_haiku(text, timeout=60):
     if not exe:
         return None, {"error": "no claude.exe found (set CLAUDE_EXE)"}
     env = {k: v for k, v in os.environ.items() if k not in ("CLAUDECODE", "CLAUDE_CODE_ENTRYPOINT")}
+    # F1 (measured 9/18): thinking on = 41 s and 3.5k output tokens for one opener;
+    # thinking off = 7 s and 166. The trick is a rewrite, not a problem; no thinking.
+    env["MAX_THINKING_TOKENS"] = "0"
     t0 = time.time()
     try:
         r = subprocess.run([exe, "-p", PEPPER + text[:8000], "--model", cfg()["model"],
-                            "--output-format", "json", "--no-session-persistence", "--tools", ""],
+                            "--effort", "low", "--output-format", "json",
+                            "--no-session-persistence", "--tools", ""],
                            capture_output=True, text=True, timeout=timeout, env=env,
                            cwd=ROOT, encoding="utf-8", errors="replace")
     except Exception as e:
