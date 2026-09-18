@@ -34,7 +34,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(HERE)), "yoyo"))   # BOLO 69
+sys.path.insert(0, os.path.join(os.path.dirname(HERE), "yoyo"))   # BOLO 69: _tools/yoyo
 
 import brain  # noqa: E402
 import codebook  # noqa: E402
