@@ -6,7 +6,7 @@
   "issued": "2026-09-17",
   "asof": "2026-09-18",
   "s": "hot",
-  "status": "🔴 CAPTURED 9/17 across three passes · DOPE SHEET 69 ordered 9/18 · calls carried as blanks, one HELD on Chief's own word — build waits on his rulings.",
+  "status": "🔴 CAPTURED 9/17 · DOPE SHEET 69 published 9/18 · D-4, D-5 and the held D-8 RULED 9/18 early: the yo-yo runs Claude Code's four phases, explore → plan → implement → commit; the plan phase picks one workflow pattern from the field and that pattern is the BOLO.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "[[bolo55|BOLO 55]] (the sheet format) · [[bolo62|BOLO 62]] (the MPK, the pad's hardware) · [[bolo64|BOLO 64]] (the hooks) · [[bolo67|BOLO 67]] (the register the auto-format tool pairs with) · [[bolo68|BOLO 68]] (the workflow candidate)",
   "related": [
@@ -29,11 +29,15 @@
    {
     "n": 68,
     "why": "named in the row's feeds bracket; the yo-yo's store/refine/follow-up agents and Pepper's integrate loop are workflow candidates"
+   },
+   {
+    "n": 66,
+    "why": "the community patterns page Chief pasted is a seed link for the GitHub field survey"
    }
   ],
   "home": "BOLO.md · row 69",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,7 +58,7 @@
  ],
  "frago": {
   "mission": "Stand up the yo-yo as a process with the same deliverables JUDY had, **in order to** catch every spoken idea without breaking Chief's rhythm and wind each one into the tables before the stack outgrows him.",
-  "order": "**Rule D-2 (the home) and D-3 (the path).** Those two let the pad script and the Haiku run be written today. Pick Pepper's voice (D-1) when you have it; the held call (D-8) waits for your button-hook.",
+  "order": "**Rule D-2 (the home) and D-3 (the path).** The method is now ruled (D-4, D-5, D-8): the pad script and the explore step can be written on those two calls alone.",
   "default": "Silence: nothing is built; ideas keep going to the phone or the air, and Pepper stays a name in a BOLO row.",
   "calls": [
    {
@@ -82,15 +86,15 @@
     "q": "D-4 · The method behind question two",
     "options": "Chief names the methodology he has in mind · until then, \"what would have to be true for this to work\" (rec)",
     "default": "the placeholder until Chief names it",
-    "s": "open",
-    "ruling": "Open. Chief's word: \"there's a methodology for this, I'll look for it.\" The placeholder is swapped the day he names it."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-18, Chief, by pasting Claude Code's *Best practices* page: the method is the four-phase workflow the docs recommend — explore, plan, implement, commit. Not one question; a phase. Explore is a conversation: when the run returns after the flash, Pepper is in explore mode with Chief — bratty, playful, talking back in full turns, generating with him off the yo-yo and the Command's tables — until the idea reaches a minimum bar to move to planning. Chief's word: \"talk back and let's have a conversation … let's generate shit.\""
    },
    {
     "q": "D-5 · The debrief set",
     "options": "the three as spoken: production fit · the method question · yes-and (rec) · Chief writes the standardized set · the CDR drafts five and Chief cuts",
     "default": "the three as spoken (rec)",
-    "s": "open",
-    "ruling": "Open. The fantasy is M's debrief: the same questions after every one, standardized, answered or not. Chief never has to answer; the yo-yo is closed the moment it is laid down."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-18, Chief: the standardized debrief is the plan phase. A second agent takes the explored idea and the field of common Claude Code workflow patterns (plan-driven · TDD · spec-first · iterative refinement · best-of-N · skeleton projects · RPI research → plan → implement · dynamic workflows, from the community patterns page Chief pasted) and returns the top two patterns that fit. Chief picks one. \"Once that workflow is set up, that's basically our BOLO.\" Then implement, then commit. The minimum bar that closes explore and the plan's depth are still to be set — \"this is what we have for now.\""
    },
    {
     "q": "D-6 · Winding and the clean-up proword",
@@ -110,8 +114,8 @@
     "q": "D-8 · The method, model and reasoning behind each response · HELD",
     "options": "Chief's button-hook only",
     "default": "held",
-    "s": "held",
-    "ruling": "HELD 9/18 on Chief's word: every one of Pepper's responses carries its method, model and reasoning \"specifically from Claude Code in their way.\" Chief knows the thing he means and will come back to it. Not guessed here."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-18, Chief, the button-hook came the same night: the thing from Claude Code is the explore → plan → implement → commit loop from *Best practices*, and every Pepper response names which phase it is in and why. Read as answered with D-4 and D-5; marked provisional until Chief says otherwise."
    },
    {
     "q": "D-9 · Pepper's state images",
@@ -153,6 +157,10 @@
       {
        "t": "**HELD, 9/18:** \"wait for me on that one\" — the call on how every Pepper response cites its method, model and reasoning.",
        "s": "open"
+      },
+      {
+       "t": "**9/18 early, the method ruled.** Chief pasted two pages: Claude Code's *Best practices* (explore first, then plan, then code; give Claude a check it can run; subagents for investigation; hooks for what must happen every time) and a community index of common development patterns (plan-driven · TDD · spec-first · iterative refinement · best-of-N · skeleton projects · RPI · GitHub Actions · dynamic workflows, the list truncated). His read: the yo-yo is those four phases; explore is a conversation to a minimum bar; plan picks the pattern; the pattern is the BOLO.",
+       "s": "ruled"
       }
      ]
     },
@@ -217,28 +225,28 @@
    "strand": {
     "last": "The first pass set the shape (pad, three-agent handoff, visible stack, retro UI); the second pass reworked it around Pepper and the lowest-tier crew; the third pass ordered this sheet, with the calls left blank.",
     "plan": "Stand up the sheet first (done), then wait on Chief's rulings before touching the pad, the agents, or the UI.",
-    "you": "You ordered the sheet up this morning and held one call yourself — the method/model/reasoning disclosure — saying you'd button-hook back to it.",
-    "next": "Rule the open calls below; nothing in Admin & Logistics has started building yet."
+    "you": "You ruled the method by handing over the docs: explore, plan, implement, commit. You want explore to be a real conversation, bratty and playful, not blurbs. You want the plan phase to pick one of the field's workflow patterns and hand you the top two.",
+    "next": "Set the minimum bar that closes explore, and the two calls that let a script run: the home (D-2) and the path (D-3)."
    },
    "main_effort": "Filling this sheet's blank calls — the HELD disclosure call above all — since nothing downstream of the yo-yo's design can move until Chief rules them.",
    "phases": [
     {
      "n": 1,
-     "t": "**DOPE SHEET 69 stood up — 9/18.** The three passes recorded on one board, the calls carried as blanks for Chief to fill when he can.",
-     "s": "done",
+     "t": "**Explore** — the flash is spoken; the run returns in explore mode; Pepper talks it through with Chief in full turns until the minimum bar is met.",
+     "s": "open",
      "when": "9/18"
     },
     {
      "n": 2,
-     "t": "**Model the making of Pepper as a process — ordered, not started.** Same deliverables as JUDY's (DOPE SHEET 56 → DOPE SHEET 69); waits on the HELD call and the open calls below.",
+     "t": "**Plan** — a second agent scores the explored idea against the workflow patterns and returns the top two; Chief picks one; the pick is the BOLO.",
      "s": "open",
-     "when": "pending"
+     "when": "9/18"
     },
     {
      "n": 3,
-     "t": "**Build the pad, the store/refine/follow-up agents, the retro UI, and the wind loop with Pepper — not started.** Waits on Phase 2.",
+     "t": "**Implement, then commit** — the chosen pattern runs; the commit closes the yo-yo, which is the wind.",
      "s": "open",
-     "when": "TBD"
+     "when": "9/18"
     }
    ],
    "coord": [
@@ -380,6 +388,16 @@
      "when": "9/18",
      "who": "Claude",
      "t": "DOPE SHEET 69 drafted per the order — Situation, Execution, Admin & Logistics and the Log filled from the three passes; the calls carried as blanks pending Chief's rulings."
+    },
+    {
+     "when": "9/18",
+     "who": "Chief",
+     "t": "Answered D-4 and D-5 (and the held D-8) by pasting Claude Code's Best practices page and a community patterns index: the yo-yo runs explore → plan → implement → commit; explore is a bratty, playful, full-turn conversation to a minimum bar; plan calls a second agent to pick the top two workflow patterns, Chief picks one, and that pattern is the BOLO. \"This is what we have for now.\""
+    },
+    {
+     "when": "9/18",
+     "who": "Claude",
+     "t": "FRAGO 69 v0.2: three calls ruled, three phases written, the two sources logged. Nothing built. The second page's pattern list is a seed for BOLO 66's survey."
     }
    ]
   }
