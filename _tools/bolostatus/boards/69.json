@@ -1,0 +1,387 @@
+{
+ "bolo": {
+  "n": 69,
+  "title": "The yo-yo — the inbox for the idea that springs",
+  "trunk": "OPERATOR/BLACK",
+  "issued": "2026-09-17",
+  "asof": "2026-09-18",
+  "s": "hot",
+  "status": "🔴 CAPTURED 9/17 across three passes · DOPE SHEET 69 ordered 9/18 · calls carried as blanks, one HELD on Chief's own word — build waits on his rulings.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "[[bolo55|BOLO 55]] (the sheet format) · [[bolo62|BOLO 62]] (the MPK, the pad's hardware) · [[bolo64|BOLO 64]] (the hooks) · [[bolo67|BOLO 67]] (the register the auto-format tool pairs with) · [[bolo68|BOLO 68]] (the workflow candidate)",
+  "related": [
+   {
+    "n": 55,
+    "why": "the DOPE SHEET format this very sheet is built in"
+   },
+   {
+    "n": 62,
+    "why": "named in the row's feeds bracket; the yo-yo's pad lives top-left of the same MPK the rotary knobs sit on"
+   },
+   {
+    "n": 64,
+    "why": "the row's own words: some of the yo-yo is hooks (PostToolUse named) and learning Claude Code"
+   },
+   {
+    "n": 67,
+    "why": "the row's own words: the yo-yo's auto-format tool pairs with BOLO 67's register"
+   },
+   {
+    "n": 68,
+    "why": "named in the row's feeds bracket; the yo-yo's store/refine/follow-up agents and Pepper's integrate loop are workflow candidates"
+   }
+  ],
+  "home": "BOLO.md · row 69",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The idea springs and is gone in seconds if it isn't caught. One pad, one hold, one spoken flash — the yo-yo exists to be faster than losing the thought."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "The pad sits top-left of the MPK, far from talk, focus and send, so catching a flash never derails the work Chief is already inside."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Laying an idea down without a follow-up is the trick; storing it properly — three follow-ups, a visible stack, a wind loop with Pepper — is winding the yo-yo for real."
+  }
+ ],
+ "frago": {
+  "mission": "Stand up the yo-yo as a process with the same deliverables JUDY had, **in order to** catch every spoken idea without breaking Chief's rhythm and wind each one into the tables before the stack outgrows him.",
+  "order": "**Rule D-2 (the home) and D-3 (the path).** Those two let the pad script and the Haiku run be written today. Pick Pepper's voice (D-1) when you have it; the held call (D-8) waits for your button-hook.",
+  "default": "Silence: nothing is built; ideas keep going to the phone or the air, and Pepper stays a name in a BOLO row.",
+  "calls": [
+   {
+    "q": "D-1 · Pepper's voice",
+    "options": "Chief names an ElevenLabs voice · Chief hears three the CDR shortlists · reuse Blondie with a second preset (not rec)",
+    "default": "Chief picks; no default",
+    "s": "open",
+    "ruling": "Open. Chief's word 9/18: \"I'll pick it out myself and I'll let you know what it is.\" Switching costs no tokens; a voice is one ID on the call. The register is set: M, or Q Division, by the book, sharp-angled, sultry underneath."
+   },
+   {
+    "q": "D-2 · Where a yo-yo lives",
+    "options": "a folder in this repo, one markdown file per yo-yo with raw · refined · questions · state (rec) · a separate repository · a database",
+    "default": "the folder in this repo (rec)",
+    "s": "open",
+    "ruling": "Open. One file per yo-yo keeps each Haiku run to one file, which is the context limit Chief asked for. A separate repo only if the stack outgrows this one."
+   },
+   {
+    "q": "D-3 · The path from pad to page",
+    "options": "the pad spawns a headless Claude run on Haiku, never this session (rec) · the pad pastes into this session and a skill fires · JUDY's router handles it locally",
+    "default": "the headless run (rec)",
+    "s": "open",
+    "ruling": "Open. The headless run matches the separate small window Chief described and the token-offload rule. Pepper speaks the ack locally before the run starts; the main context never sees the yo-yo."
+   },
+   {
+    "q": "D-4 · The method behind question two",
+    "options": "Chief names the methodology he has in mind · until then, \"what would have to be true for this to work\" (rec)",
+    "default": "the placeholder until Chief names it",
+    "s": "open",
+    "ruling": "Open. Chief's word: \"there's a methodology for this, I'll look for it.\" The placeholder is swapped the day he names it."
+   },
+   {
+    "q": "D-5 · The debrief set",
+    "options": "the three as spoken: production fit · the method question · yes-and (rec) · Chief writes the standardized set · the CDR drafts five and Chief cuts",
+    "default": "the three as spoken (rec)",
+    "s": "open",
+    "ruling": "Open. The fantasy is M's debrief: the same questions after every one, standardized, answered or not. Chief never has to answer; the yo-yo is closed the moment it is laid down."
+   },
+   {
+    "q": "D-6 · Winding and the clean-up proword",
+    "options": "Chief winds by voice through the same pad, the proword his to name (rec) · a yo-yo winds itself after N days · both",
+    "default": "Chief winds; proword TBD",
+    "s": "open",
+    "ruling": "Open. Chief: \"cleaning up these, winding these, should be as simple as recording them.\" The carousel shows one unwound yo-yo at a time; Pepper reads the short description and asks \"do you remember this?\""
+   },
+   {
+    "q": "D-7 · The cap and the rounds",
+    "options": "twelve unwound, three tricks per yo-yo (rec) · Chief's numbers",
+    "default": "twelve and three (rec)",
+    "s": "open",
+    "ruling": "Open. Past the cap the pad refuses a new trick and Pepper says wind one first. Past three tricks a yo-yo winds or parks. Each trick is one Haiku run over one file."
+   },
+   {
+    "q": "D-8 · The method, model and reasoning behind each response · HELD",
+    "options": "Chief's button-hook only",
+    "default": "held",
+    "s": "held",
+    "ruling": "HELD 9/18 on Chief's word: every one of Pepper's responses carries its method, model and reasoning \"specifically from Claude Code in their way.\" Chief knows the thing he means and will come back to it. Not guessed here."
+   },
+   {
+    "q": "D-9 · Pepper's state images",
+    "options": "six: idle · listening · thinking · reading a card · asking · the wind (rec) · JUDY's four · Chief's set",
+    "default": "six (rec)",
+    "s": "open",
+    "ruling": "Open. The carousel state is the one JUDY does not have. Art waits on the voice; the placeholders can be PNGs as JUDY's were."
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What the yo-yo is, across three passes on one evening and the next morning; nothing here is a ruling — the calls stay open below.",
+   "strand": {
+    "last": "Before 9/17 there was no fast-capture path — an idea during a working session had nowhere to go but memory or a derailed typing break.",
+    "plan": "Read the three passes in order — the first pass's design, the second pass's rework and Pepper, the third pass's order to model Pepper as a process — then the calls each pass left open.",
+    "you": "You asked for a system to jot ideas down fast, named it the yo-yo, then reworked it twice the same evening and the next morning without ever building it.",
+    "next": "Read the groups below, then the Execution paragraph carries what's actually been built versus what's still waiting on your word."
+   },
+   "groups": [
+    {
+     "label": "The transmission, verbatim where Chief ruled",
+     "items": [
+      {
+       "t": "**First pass, 9/17:** \"I need a system to quickly jot down … like an Evernote inbox … we'll call it a yo-yo.\"",
+       "s": "open"
+      },
+      {
+       "t": "**Chief's word, 9/17:** \"consult me and then follow up.\"",
+       "s": "open"
+      },
+      {
+       "t": "**Chief's word, 9/18:** \"get that DOPE SHEET up.\"",
+       "s": "done"
+      },
+      {
+       "t": "**HELD, 9/18:** \"wait for me on that one\" — the call on how every Pepper response cites its method, model and reasoning.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "**Crew grades** set the seat structure the yo-yo's agents will use — CDR, MS, PS, RANGE — so the store/refine/follow-up agents and Pepper's integrate agent get graded seats, not a name invented fresh.",
+       "s": "open"
+      },
+      {
+       "t": "**[[bolo64|BOLO 64]]** ties in directly: some of the yo-yo is hooks (PostToolUse named) and learning Claude Code.",
+       "s": "open"
+      },
+      {
+       "t": "**[[bolo67|BOLO 67]]**'s plain-register work pairs with the yo-yo's auto-format tool.",
+       "s": "open"
+      },
+      {
+       "t": "**[[bolo55|BOLO 55]]**'s DOPE SHEET format is the shape this very sheet is built in.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "🔴 CAPTURED 9/17 · DOPE SHEET 69 ordered 9/18 — the sheet carries the calls as blanks; the build waits on them.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "What the yo-yo is for, in one task and one intent, and the end state it serves: an idea spoken once, caught, and never lost.",
+   "strand": {
+    "last": "Chief spoke the yo-yo across three passes on 9/17 and 9/18: the inbox, the pad, the phone, Pepper, the trick loop.",
+    "plan": "Model the making of Pepper as a process with the same deliverables JUDY had: this sheet, its calls left as blanks Chief fills when he can.",
+    "you": "You said consult first, then follow up. You said get the DOPE SHEET up. You said you pick the voice yourself. You said wait on the Claude Code method.",
+    "next": "Fill the blanks below in any order. The build starts on the first ruling that lets a script run."
+   },
+   "task": "Stand up the yo-yo: one pad, one voice, one folder, a cheap crew behind it,",
+   "intent": "in order to catch every idea the moment it springs without breaking Chief's rhythm, and to wind each one into the Command's tables before the stack grows past what he can see.",
+   "spoken": "\"I need a system to quickly jot down … like an Evernote inbox … we'll call it a yo-yo. I want to keep capturing. Get that DOPE SHEET up.\"",
+   "endstate": [
+    "A pad on the MPK, top-left, that Chief holds to speak a flash; Pepper acks in his ear and the run starts without the main session.",
+    "A page per yo-yo: what the ears heard, the readable rewrite, and Pepper's standardized debrief questions, on the cheapest model that works.",
+    "The unwound count visible at all times, under a cap, and a spoken way to wind them one at a time through the carousel.",
+    "Every wound yo-yo cross-referenced to the spine and the other tables so nothing spoken is lost."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What's been done and what's still waiting. Nothing beyond this sheet has been built; the design across three passes is recorded, not implemented.",
+   "strand": {
+    "last": "The first pass set the shape (pad, three-agent handoff, visible stack, retro UI); the second pass reworked it around Pepper and the lowest-tier crew; the third pass ordered this sheet, with the calls left blank.",
+    "plan": "Stand up the sheet first (done), then wait on Chief's rulings before touching the pad, the agents, or the UI.",
+    "you": "You ordered the sheet up this morning and held one call yourself — the method/model/reasoning disclosure — saying you'd button-hook back to it.",
+    "next": "Rule the open calls below; nothing in Admin & Logistics has started building yet."
+   },
+   "main_effort": "Filling this sheet's blank calls — the HELD disclosure call above all — since nothing downstream of the yo-yo's design can move until Chief rules them.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**DOPE SHEET 69 stood up — 9/18.** The three passes recorded on one board, the calls carried as blanks for Chief to fill when he can.",
+     "s": "done",
+     "when": "9/18"
+    },
+    {
+     "n": 2,
+     "t": "**Model the making of Pepper as a process — ordered, not started.** Same deliverables as JUDY's (DOPE SHEET 56 → DOPE SHEET 69); waits on the HELD call and the open calls below.",
+     "s": "open",
+     "when": "pending"
+    },
+    {
+     "n": 3,
+     "t": "**Build the pad, the store/refine/follow-up agents, the retro UI, and the wind loop with Pepper — not started.** Waits on Phase 2.",
+     "s": "open",
+     "when": "TBD"
+    }
+   ],
+   "coord": [
+    "Loose ends parked for later: the Stash-clip reward with a favorite/not-favorite tap (doubles as a [[darkroom|DARKROOM]]-style data pass), the BLACK-or-ORANGE risk read on where the yo-yo lands, the crew word for these agents.",
+    "The reward metric (gamification) and the unwound-count cap are on the docket, later.",
+    "Cross-referencing wound yo-yos to the spine and the other tables is a later step, not this pass."
+   ],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What this sheet cost and what it produced. Nothing else has been built yet.",
+   "strand": {
+    "last": "Three spoken passes on 9/17 and 9/18, captured into BOLO.md row 69; nothing built beyond the record until this sheet.",
+    "plan": "This sheet is the only file the yo-yo has produced so far; the pad, the agents and the UI are all still ahead of the open calls.",
+    "you": "Nothing spent. No files, tools or build costs reported yet.",
+    "next": "Once the calls below are ruled, the build files (the pad's hook, the store/refine/follow-up agents, Pepper's UI) will land here."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 69 — the yo-yo, captured across three passes 9/17–9/18",
+     "s": "open"
+    },
+    {
+     "path": "_tools/bolostatus/boards/69.draft.json",
+     "what": "this sheet — DOPE SHEET 69, draft v0.1, the calls carried as blanks",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "base",
+     "v": "$0"
+    },
+    {
+     "k": "the build",
+     "v": "not started — held on the calls below"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who decides, what closes each phase, and the signals that say the yo-yo is doing its job.",
+   "strand": {
+    "last": "Every call on this sheet is Chief's. Two he reserved by name: the voice and the Claude Code method behind each of Pepper's responses.",
+    "plan": "Rule the home and the path first; a script can run on those two alone. The voice and the debrief set can follow inside phase one.",
+    "you": "You decide. One call is held on your own word and stays held until you button-hook back to it.",
+    "next": "The first signal is the pad working end to end once. The second is the unwound count staying under the cap for a week."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**Chief** rules every call. He picks Pepper's voice himself and names the method behind her second question.",
+       "s": "open"
+      },
+      {
+       "t": "**The CDR** writes the skill and the scripts on the rulings. The refine, the follow-ups and the integrate step run on Haiku, never Fable.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The gates",
+     "items": [
+      {
+       "t": "**Gate 1 · the pad speaks.** Hold, speak, release; Pepper acks; a file lands in the folder with the raw text. Proven by Chief's hand.",
+       "s": "open"
+      },
+      {
+       "t": "**Gate 2 · the page reads.** The rewrite and the three questions come back in under a minute on Haiku; Chief reads one and says it is his idea.",
+       "s": "open"
+      },
+      {
+       "t": "**Gate 3 · the wind.** Chief says the clean-up proword, the carousel shows one yo-yo, he winds it, and the count drops by one.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "The signals",
+     "items": [
+      {
+       "t": "**Tokens and time per yo-yo**, measured on every run and shown on the page. The target is F1: the least of both.",
+       "s": "open"
+      },
+      {
+       "t": "**The unwound count** against the cap, in the sit rep header. Growth past the cap means the wind proword is not being said.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "The record of the three passes and the order to build this sheet.",
+   "strand": {
+    "last": "Spoken 9/17 evening, continued 9/18 morning.",
+    "plan": "Three passes captured, one sheet ordered, one call HELD by Chief's own word.",
+    "you": "You reworked the idea twice the same evening, then ordered it modeled as a process the next morning.",
+    "next": "Your word on the open calls; the HELD call waits for you to button-hook back to it."
+   },
+   "entries": [
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"I need a system to quickly jot down … like an Evernote inbox … we'll call it a yo-yo.\" First pass: one pad top-left of the MPK, far from talk/focus/send; hold it and speak the flash; JUDY acks (\"Copy, boxing the yo-yo\") and hands off to three agents — store the raw transcript, refine it into a readable page, answer with three follow-ups Chief never has to answer. The stack stays visible; the UI is retro (Game Boy · crack-and-keygen underground · the Fast and the Furious head unit)."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "Second pass, same evening: the yo-yo reframed as the in-game phone (GTA V, Cyberpunk) — a small permissioned interface, not a chat. The crew runs at the lowest tier that works (Haiku, never Fable). A second voice, Pepper, runs the winding loop — reads the short description, asks \"do you remember this?\", folds in Chief's new words, re-summarizes, asks clarifying questions, with a round limit. Loose ends parked: the Stash-clip reward, the BLACK/ORANGE risk read, the crew word for these agents."
+    },
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"Consult me and then follow up.\""
+    },
+    {
+     "when": "9/18",
+     "who": "Chief",
+     "t": "Third pass, early: order to model the making of Pepper as a process with JUDY's own deliverables (DOPE SHEET 56 → DOPE SHEET 69), the calls left as blanks. Pepper is the talking agent's name, not a voice model — Chief will say which voice. HELD on Chief's word (\"wait for me on that one\"): every Pepper response carries its method, model and reasoning \"specifically from Claude Code in their way.\" Also this turn: JUDY switched back to goon time on Chief's word."
+    },
+    {
+     "when": "9/18",
+     "who": "Chief",
+     "t": "\"Get that DOPE SHEET up.\""
+    },
+    {
+     "when": "9/18",
+     "who": "Claude",
+     "t": "DOPE SHEET 69 drafted per the order — Situation, Execution, Admin & Logistics and the Log filled from the three passes; the calls carried as blanks pending Chief's rulings."
+    }
+   ]
+  }
+ ]
+}
