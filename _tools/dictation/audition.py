@@ -37,6 +37,7 @@ CAST = {
     "kira":     ("Kira — Video Game, Bold & Cinematic",      "W3C2vBPukr5b5jvoXhPK"),
     "samara":   ("Samara X — Smooth Classy British",         "19STyYD15bswVz51nqLf"),
     "alice":    ("Alice — Clear, Engaging Educator, Brit",   "Xb7hH8MSUJpSbSDYk0k2"),
+    "monika":   ("Monika Sogam — Numbers & Data, en-IN (Chief's Pepper pick 9/18)", "C3aqZfd4M0h7Ys5tWGIS"),
 }
 
 # Four beats, because a voice can pass one and fail another.
