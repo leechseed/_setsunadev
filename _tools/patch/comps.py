@@ -306,7 +306,7 @@ a{color:var(--gold)}
 <div class="row">%(figs)s</div>
 <div class="rules">
 <b>Held constant across all six.</b> Her build: thick thighs, real glutes, wide lats, delts, a small waist. The Hand: the white glove with the cuff, giant, always partly out of frame so it reads bigger than the patch. The strings: straight, taut, gold, always the only thing connecting them. The struggle: in every one, some finger is bent by her weight and some part of her is braced.
-&nbsp;·&nbsp; <a href="index.html">v0.1 (superseded)</a>
+<br><b>Go 72 (9/18):</b> comp 01 taken as the provisional pick. The pose brief is <a href="POSE-72.md">POSE-72.md</a>; <code>pose72.py</code> stands the scene up in the Blender studio (MPFB2 human with the thick sliders · the giant glove · the strings · rose field · hard key) and saves <code>Q:/fun/_BOLO24/renders/patch72/patch72_comp01.blend</code> with the pose targets as empties. The pose itself is Chief's hand in the rig.&nbsp;·&nbsp; <a href="index.html">v0.1 (superseded)</a>
 </div>
 </body></html>"""
 
