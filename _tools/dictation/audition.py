@@ -11,6 +11,7 @@ and not the dials.
     python audition.py --cast blondie,kira
     python audition.py --brat                # same cast at the brat settings
     python audition.py --line "one line"     # a single line instead of the script
+    python audition.py --pepper --cast samara,alice   # Pepper's audition (BOLO 69), her script + settings
     python audition.py --list                # the cast list with ids
 
 Output lands in _PRIVATE/voice-auditions/ — gitignored, because audio does not
@@ -60,11 +61,41 @@ SCRIPT = {
     ),
 }
 
+# Pepper's audition (BOLO 69). The debrief room: by the book, sharp-angled, refined, sultry underneath.
+# Same idea as JUDY's script: a hail, a dense read with the lexicon, the beat that carries the heat, a close.
+PEPPER_SCRIPT = {
+    "1-hail": (
+        "Pepper. Debrief room, door closed. Sit down, Chief. You have been busy."
+    ),
+    "2-debrief": (
+        "Three questions, same as every night. What did you see. What did you do about it. "
+        "What are you not telling me. Start with the third. "
+        "For the record: BOLO seventy-two went to a pose reference, DOPE SHEET sixty-nine is standing, "
+        "DARKROOM is up, and you said Oscar Mike at three thirty-six and then kept working. I noticed."
+    ),
+    "3-wind": (
+        "Yo-yo number seven. You said, and I quote, the patch, the hand, the strings, who's controlling who. "
+        "Do you remember this? Take your time. I have all night, and I am very, very patient."
+    ),
+    "4-reward": (
+        "Wound. That is twelve down, and you know what happens at twelve. "
+        "Eyes on the screen. Ten seconds. Do not blink. "
+        "Good. That one goes in the favourites, I think. So do you."
+    ),
+    "5-close": (
+        "That is the debrief. Go and get some sleep, or don't. Either way I will be here when you come back. "
+        "I always am. Door's open, Chief."
+    ),
+}
+
 # One setting for every candidate, so the comparison is honest.
 NORMAL = {"stability": 0.35, "style": 0.55, "similarity_boost": 0.80,
           "use_speaker_boost": True, "speed": 1.05}
 BRAT = {"stability": 0.15, "style": 0.85, "similarity_boost": 0.80,
         "use_speaker_boost": True, "speed": 1.08}
+# Pepper: steadier than the brat, more style than normal, and slow. The heat is in the restraint.
+PEPPER = {"stability": 0.45, "style": 0.65, "similarity_boost": 0.85,
+          "use_speaker_boost": True, "speed": 0.94}
 
 
 def render(key, label, vid, beats, settings, model, tag):
@@ -100,6 +131,7 @@ def main():
     ap = argparse.ArgumentParser(description="Audition candidate voices (BOLO 56)")
     ap.add_argument("--cast", help="comma-separated keys; default is all of them")
     ap.add_argument("--brat", action="store_true", help="render at the brat settings")
+    ap.add_argument("--pepper", action="store_true", help="Pepper's audition: her five-beat script at her settings (BOLO 69)")
     ap.add_argument("--line", help="one line instead of the four-beat script")
     ap.add_argument("--model", default="eleven_turbo_v2_5")
     ap.add_argument("--list", action="store_true")
@@ -117,12 +149,13 @@ def main():
         raise SystemExit(f"unknown: {', '.join(unknown)} — try --list")
 
     os.makedirs(OUT, exist_ok=True)
-    beats = [("line", a.line)] if a.line else sorted(SCRIPT.items())
-    settings = BRAT if a.brat else NORMAL
-    tag = "-brat" if a.brat else ""
+    script = PEPPER_SCRIPT if a.pepper else SCRIPT
+    beats = [("line", a.line)] if a.line else sorted(script.items())
+    settings = PEPPER if a.pepper else (BRAT if a.brat else NORMAL)
+    tag = "-pepper" if a.pepper else ("-brat" if a.brat else "")
 
     print(f"audition · {len(keys)} voices · {len(beats)} beat(s) · "
-          f"{'BRAT' if a.brat else 'normal'} settings · {a.model}")
+          f"{'PEPPER' if a.pepper else ('BRAT' if a.brat else 'normal')} settings · {a.model}")
     print(f"  stability {settings['stability']}  style {settings['style']}  "
           f"speed {settings['speed']}")
 
