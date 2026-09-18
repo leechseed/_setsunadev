@@ -202,9 +202,94 @@ def comp(title, read, hand, figure, pairs, action_d, word="BOLO", ground_y=690, 
     return dict(title=title, read=read, svg=svg)
 
 
+# ---------------------------------------------------------------- the horse (v0.1 geometry, no tack) ----
+HORSE = [   # black silhouette paths in patch space, galloping right, mean
+    "M 330 480 C 290 470 240 480 200 520 C 230 505 260 500 290 505 C 270 520 250 545 245 570 C 280 540 320 520 340 500 Z",  # tail
+    "M 360 570 L 300 620 L 240 660 L 250 672 L 320 632 L 380 590 Z",
+    "M 345 555 L 270 580 L 210 610 L 218 624 L 285 600 L 365 578 Z",
+    "M 520 555 L 600 560 L 660 600 L 672 588 L 610 540 L 530 535 Z",
+    "M 500 560 L 560 590 L 620 640 L 640 632 L 585 570 L 525 545 Z",
+    "M 330 480 C 300 520 310 580 360 580 L 500 570 C 540 565 560 520 540 480 C 520 455 470 460 470 470 C 430 450 360 455 330 480 Z",  # body
+    "M 500 480 C 530 440 570 400 610 395 L 640 420 C 620 450 600 490 560 520 Z",   # neck
+    "M 600 392 C 580 380 550 385 530 400 C 545 400 560 405 580 415 Z",             # mane
+    "M 600 390 C 640 380 690 410 705 445 L 700 465 C 680 470 650 470 630 455 C 615 440 600 420 600 390 Z",   # head
+    "M 605 392 L 568 400 L 598 412 Z", "M 620 386 L 588 370 L 612 402 Z",          # ears pinned
+]
+HORSE_GOLD = [   # the mean details, gold thread
+    ("M 682 460 L 688 451 L 694 460 L 700 451 L 706 460 L 706 467 L 682 467 Z", "fill"),   # teeth
+    ("M 652 413 L 672 418 L 668 428 L 650 424 Z", "fill"),                                  # eye slit
+    ("M 646 408 L 676 412", "line"),                                                        # brow
+]
+
+
+def horse_svg(dx=0, dy=0):
+    o = ['<g transform="translate(%d %d)" fill="%s" stroke="%s" stroke-width="5" stroke-linejoin="round">' % (dx, dy, T["black"], T["black"])]
+    o += ['<path d="%s"/>' % d for d in HORSE]
+    o.append('</g><g transform="translate(%d %d)">' % (dx, dy))
+    for d, kind in HORSE_GOLD:
+        if kind == "fill":
+            o.append('<path d="%s" fill="%s" stroke="%s" stroke-width="3"/>' % (d, T["goldl"], T["black"]))
+        else:
+            o.append('<path d="%s" fill="none" stroke="%s" stroke-width="4" stroke-linecap="round"/>' % (d, T["gold"]))
+    o.append('</g>')
+    return "".join(o)
+
+
+def bolas(fist, r=95):
+    """The whirl: a dashed gold arc, three cords, three gold balls."""
+    o = []
+    a0, a1 = math.radians(-110), math.radians(20)
+    o.append('<path d="M %.1f %.1f A %d %d 0 0 1 %.1f %.1f" fill="none" stroke="%s" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>'
+             % (fist[0] + r * math.cos(a0), fist[1] + r * math.sin(a0), r, r, fist[0] + r * math.cos(a1), fist[1] + r * math.sin(a1), T["goldl"]))
+    balls = [(fist[0] + r * math.cos(math.radians(a)), fist[1] + r * math.sin(math.radians(a))) for a in (-70, -35, 0)]
+    for b in balls:
+        o.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-width="4"/>' % (fist[0], fist[1], b[0], b[1], T["black"]))
+    for b in balls:
+        o.append('<circle cx="%.1f" cy="%.1f" r="16" fill="%s" stroke="%s" stroke-width="5"/>' % (b[0], b[1], T["gold"], T["black"]))
+    return "".join(o)
+
+
+def ears(hd, hv):
+    """Bunny ears, two capsules laid back along the hair direction (she is looking up, so they stream back)."""
+    back = norm(hv)
+    up = (-back[1], back[0])
+    o = []
+    for side in (-1, 1):
+        base = add(add(hd, mul(back, 6)), mul(up, side * 9))
+        tip = add(add(hd, mul(back, 62)), mul(up, side * 26))
+        o.append('<path d="%s" fill="%s" stroke="%s" stroke-width="3" stroke-linejoin="round"/>' % (capsule(base, tip, 9, 6), T["black"], T["black"]))
+    return "".join(o)
+
+
+def comp_ride():
+    """07 · THE RIDE — bunny girl, bareback at a gallop, bolas up, head back, hair flying, the other hand busy."""
+    fist = (506, 296)
+    hips = (452, 478)
+    J = dict(hl=(444, 480), hr=(462, 476),
+             sl=(402, 404), sr=(432, 396),          # leaning back off the hips
+             nk=(414, 388), hd=(402, 356),          # face to the sky
+             el=(448, 346), wl=fist,                # the bolas arm, up and forward
+             er=(468, 446), wr=(478, 494),          # the other hand, down between the thighs
+             kl=(528, 524), kr=(508, 540), al=(520, 592), ar=(496, 604))
+    F = Figure(J, hair=(-1, 0.18), foot=(0.35, 1))
+    inner = [frame_open(), ground(690), guides()]
+    inner.append('<path d="M 232 690 C 218 650 262 625 292 652 C 300 612 362 615 366 655 C 396 640 428 668 406 692 Z" fill="%s"/>' % T["bruise"])
+    inner.append(horse_svg())
+    inner.append(F.svg(T["flesh"], T["black"]))     # she is flesh against the black horse, or the two silhouettes merge
+    inner.append(ears(J["hd"], (-1, 0.18)))
+    inner.append(bolas(fist))
+    inner.append(action("M 200 560 C 330 470 380 380 402 356 C 430 300 470 280 506 296"))
+    inner.append(frame_close("BOLO"))
+    svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">%s</svg>' % "".join(inner)
+    return dict(title="07 · THE RIDE", svg=svg,
+                read="Chief's re-direction, 9/18 after the nap: back to the horse. Bareback, no tack, no reins. The bolas whirl over her head from the raised fist. "
+                     "She leans back off the hips, face to the sky, hair and ears streaming behind her, the other hand down between her thighs. "
+                     "The horse is still mean: ears pinned, teeth bared, full gallop, dust off the hooves. Ecstasy on top, violence underneath, and the two rhythms are the same rhythm.")
+
+
 # ---------------------------------------------------------------- the six --------------
 def build():
-    C = []
+    C = [comp_ride()]
 
     # 1 · THE MARIONETTE — his pick: hands up on the strings, hanging, legs folded up behind, back arched
     H = Hand(0, 0, rot=40, s=1.05, curl={"thumb": (-176, 34)}).place_by_tip("index", (426, 356))   # in from the top-right corner
@@ -301,8 +386,8 @@ figcaption span{color:var(--ink-2);font-size:14px}
 .rules b{color:var(--ink)}
 a{color:var(--gold)}
 </style></head><body>
-<header><h1><small>BOLO 72 · BOLD VENTURE · v0.2 · THE COMPOSITIONS · 2026-09-18</small>The Hand and the girl on the strings</h1>
-<p class="lede">Six value-blocked thumbnails. Black is her, white is the Hand, gold is the strings. The dashed gold lines are the golden section of the field: the Hand owns the major share above the line, she owns the minor share, and the two are set at an angle so they read as at odds. The dotted gold curve is the line of action. These are studies to pick from, not finished art. The pick goes to a posed 3D reference and then a painted pass.</p></header>
+<header><h1><small>BOLO 72 · BOLD VENTURE · v0.3 · THE COMPOSITIONS · 2026-09-18</small>The ride, and the Hand held</h1>
+<p class="lede"><b>Live direction (9/18, after the nap): 07 THE RIDE.</b> The bunny girl is back on the horse, bareback at a gallop, bolas up, head back, the other hand busy. The six Hand-and-strings comps below it are held, not binned. Seven value-blocked thumbnails. Black is her, white is the Hand, gold is the strings. The dashed gold lines are the golden section of the field: the Hand owns the major share above the line, she owns the minor share, and the two are set at an angle so they read as at odds. The dotted gold curve is the line of action. These are studies to pick from, not finished art. The pick goes to a posed 3D reference and then a painted pass.</p></header>
 <div class="row">%(figs)s</div>
 <div class="rules">
 <b>Held constant across all six.</b> Her build: thick thighs, real glutes, wide lats, delts, a small waist. The Hand: the white glove with the cuff, giant, always partly out of frame so it reads bigger than the patch. The strings: straight, taut, gold, always the only thing connecting them. The struggle: in every one, some finger is bent by her weight and some part of her is braced.
