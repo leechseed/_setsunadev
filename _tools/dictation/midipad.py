@@ -231,6 +231,7 @@ def main():
     ap.add_argument("--learn", action="store_true")
     ap.add_argument("--learn-focus", action="store_true", help="hit the pad that focuses the Claude Code box (Chief, 9/17)")
     ap.add_argument("--learn-send", action="store_true", help="hit the pad that sends whatever is in the Claude Code box (Chief, 9/17)")
+    ap.add_argument("--learn-yoyo", action="store_true", help="hit the pad that boxes a yo-yo (BOLO 69, 9/18): top-left, far from the others")
     ap.add_argument("--timeout", type=int, default=45)
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--port")
@@ -254,6 +255,8 @@ def main():
             print("  no focus pad learned — run: python midipad.py --learn-focus")
         if cfg.get("send_note") is not None:
             print(f"  send pad: note {cfg['send_note']}")
+        if cfg.get("yoyo_note") is not None:
+            print(f"  yo-yo pad: note {cfg['yoyo_note']}")
         return
 
     if a.watch:
@@ -270,6 +273,10 @@ def main():
 
     if a.learn_send:
         learn(a.port, a.timeout, key="send_note", label="SEND button (the pad above the talk pad)")
+        return
+
+    if a.learn_yoyo:
+        learn(a.port, a.timeout, key="yoyo_note", label="YO-YO pad (top-left, far from talk / focus / send)")
         return
 
     if a.test:

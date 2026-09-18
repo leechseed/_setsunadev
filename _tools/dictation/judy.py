@@ -34,6 +34,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(HERE)), "yoyo"))   # BOLO 69
 
 import brain  # noqa: E402
 import codebook  # noqa: E402
@@ -217,6 +218,7 @@ class Loop:
         self.speak_replies = speak_replies
         self.toggle = toggle
         self.session = session   # session voice: paste into the chat + Enter; the reader speaks
+        self.yoyo = False        # BOLO 69: the current hold is a yo-yo, not a turn
         self.rec = None
         self.open = False
         self.busy = threading.Lock()
@@ -262,6 +264,40 @@ class Loop:
                 print(f"  ! mouth failed: {e}")
         self.face.set("idle")
 
+    def trick(self, heard):
+        """BOLO 69 (Chief 9/17, ruled 9/18): the yo-yo pad. The words never touch the chat box.
+        Pepper acks in the ear, then a headless Haiku run writes the page in _YOYO/."""
+        if not heard:
+            self.face.set("idle")
+            return
+        print(f"\n  yo-yo > {heard}")
+        self.face.say(f"yo-yo: {heard}")
+        self.face.set("thinking")
+        say = None
+        if self.speak_replies:
+            def say(t):
+                try:
+                    import squelch
+                    squelch.key_up()
+                    speak.say(t, blocking=True)   # JUDY's mouth until Pepper has hers (D-1)
+                    squelch.key_down()
+                except Exception as e:
+                    print(f"  ! mouth failed: {e}")
+        if say:
+            say("Copy. Boxing the yo-yo.")
+        import yoyo
+        path, parsed, meta = yoyo.trick(heard, say=None)
+        print(f"  wrote  {path}")
+        if meta.get("error"):
+            print(f"  !      {meta['error']}")
+        if parsed:
+            print(f"  pepper > {parsed.get('opener')}")
+            print(f"  run    {meta.get('took', 0):.1f}s · cache_read {meta.get('cache_read')} · out {meta.get('out')}")
+            if say and parsed.get("opener"):
+                self.face.set("talking")
+                say(parsed["opener"])
+        self.face.set("idle")
+
     # -- the two calls every trigger uses
     def start(self, src="key"):
         if self.open or not self.busy.acquire(blocking=False):
@@ -282,17 +318,37 @@ class Loop:
             self.face.set("idle")
             self.busy.release()
 
+    def start_yoyo(self):
+        """The yo-yo pad went down (BOLO 69): record like a talk hold, route to trick() on release."""
+        if self.open or not self.busy.acquire(blocking=False):
+            return
+        self.open = True
+        self.yoyo = True
+        self.face.set("listening")
+        try:
+            self.rec.start()
+        except Exception as e:
+            print(f"  ! mic failed: {e}")
+            self.open = False
+            self.yoyo = False
+            self.face.set("idle")
+            self.busy.release()
+
     def finish(self):
         if not self.open:
             return
         self.open = False
+        is_yoyo, self.yoyo = self.yoyo, False
         try:
             audio = self.rec.stop()
             self.face.set("thinking")
             text, meta = self.engine.transcribe(audio)
             for h, r, _n in (meta.get("hits") or []):
                 print(f"         §8 {h!r} -> {r!r}")
-            self.turn(text)
+            if is_yoyo:
+                self.trick(text)
+            else:
+                self.turn(text)
         except Exception as e:
             print(f"  ! turn failed: {e}")
             self.face.set("idle")
@@ -344,6 +400,11 @@ class Loop:
                 # the SEND pad (Chief 9/17): the pad above the talk pad — Enter on whatever is in the box
                 extra[int(dcfg()["send_note"])] = (
                     lambda: threading.Thread(target=focus.send_box, daemon=True).start(), lambda: None)
+            if dcfg().get("yoyo_note") is not None:
+                # the YO-YO pad (BOLO 69, Chief 9/17): top-left, far from the others; hold to box a flash
+                extra[int(dcfg()["yoyo_note"])] = (
+                    lambda: self.start_yoyo(),
+                    lambda: threading.Thread(target=self.finish, daemon=True).start())
             if self.toggle:
                 self.pad = midipad.PadListener(lambda: self.fire("pad"), lambda: None, extra=extra)
             else:
@@ -354,7 +415,8 @@ class Loop:
                 c = dcfg()
                 print(f"  pad    note {c['midi_note']} on {c.get('midi_port')}"
                       + (f" · focus pad note {c['focus_note']}" if c.get("focus_note") is not None else " · no focus pad (midipad.py --learn-focus)")
-                      + (f" · send pad note {c['send_note']}" if c.get("send_note") is not None else ""))
+                      + (f" · send pad note {c['send_note']}" if c.get("send_note") is not None else "")
+                      + (f" · yo-yo pad note {c['yoyo_note']}" if c.get("yoyo_note") is not None else ""))
             else:
                 print(f"  pad    unavailable: {self.pad.error}")
 
@@ -375,6 +437,7 @@ def main():
     ap.add_argument("--no-face", action="store_true")
     ap.add_argument("--no-voice", action="store_true", help="print replies, don't speak")
     ap.add_argument("--type", help="skip the mic: one typed turn, then exit")
+    ap.add_argument("--yoyo", help="skip the mic: one typed yo-yo trick (BOLO 69), then exit")
     ap.add_argument("--size", type=int, default=220)
     ap.add_argument("--toggle", action="store_true",
                     help="press to start, press again to stop (best for a pad)")
@@ -388,7 +451,11 @@ def main():
     print(f"  mouth  {v.get('engine', 'piper')}"
           + (f" · {v.get('eleven_voice_id', '')[:12]}…" if v.get("engine") == "elevenlabs" else ""))
 
-    face = NoFace() if (a.no_face or a.type) else Face(a.size)
+    face = NoFace() if (a.no_face or a.type or a.yoyo) else Face(a.size)
+
+    if a.yoyo:
+        Loop(face, None, "", speak_replies=not a.no_voice).trick(a.yoyo)
+        return
 
     if a.type:
         Loop(face, None, "", speak_replies=not a.no_voice).turn(a.type)

@@ -38,5 +38,14 @@
    "invert": false
   },
   "note": "RELATIVE since 9/17 (BOLO 62): mpkprog.py --rel 1 2 3 --persist switched K1–K3 on the device (RAM + stored program 2 'AbletonLive'); the knobs are endless. Bindings CC 1 2 3 on channel 0 were read off the wire. scroll_y notch 2 = half speed (Chief 9/17). Re-learn: python knobs.py --learn scroll_y | scroll_x | zoom. Back to absolute: mpkprog.py --abs 1 2 3 --persist, then mode: absolute."
+ },
+ "yoyo_note": 40,
+ "yoyo_note_note": "PROVISIONAL 9/18 (BOLO 69): pad 5, top-left on the MPK mini 3 default program (bottom row 36-39, top row 40-43). Re-learn: python _tools/yoyo/yoyo.py --learn",
+ "yoyo": {
+  "cap": 12,
+  "rounds": 3,
+  "model": "haiku",
+  "timeout": 60,
+  "note": "D-7 rec (9/18): twelve unwound, three tricks per yo-yo. Past the cap the pad saves the words raw as overflow and Pepper says wind one first."
  }
 }
