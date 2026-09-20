@@ -265,9 +265,15 @@ class Naked:
         self.face.say(f"you: {heard}")
         self.face.set("thinking")
         if not self.brain.up():
-            line = "Her server is down. Say Naked to bring her up."
+            line = "My brain's not up yet, Chief. Say Naked, and I'm yours."
             print(f"  naked ! {line}")
             self.face.say(line)
+            if self.speak_replies:
+                try:
+                    self.face.set("talking")
+                    speak(line, blocking=True)   # her mouth works without her brain: say it, don't sit there listening
+                except Exception as e:
+                    print(f"  ! her mouth failed: {e}")
             self.face.set("idle")
             return None
         try:
