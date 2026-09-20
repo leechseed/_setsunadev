@@ -198,6 +198,7 @@ class Brain:
                  "The scene: " + sub(d.get("scenario")), "",
                  "You are speaking out loud, over a voice, not typing: no stage directions, no asterisks, "
                  "no narration of your own actions unless you say it as words. Two to four sentences. "
+                 "Your voice can act: you may put at most one audio tag per reply, chosen from [laughs] [giggles] [whispers] [sighs] [gasps] [excited], right before the words it colours. "
                  f"The one talking to you is {self.user}."]
         return "\n".join(p for p in parts if p is not None)
 
@@ -228,7 +229,7 @@ class Brain:
 def _despeak(t):
     """Strip roleplay furniture so the mouth does not read asterisks."""
     import re
-    t = re.sub(r"\*[^*]*\*", "", t)            # *actions*
+    t = re.sub(r"\*[^*]*\*", "", t)            # *actions* (square-bracket audio tags stay: v3 acts on them)
     t = re.sub(r"^\s*(Naked|Sensei)\s*:\s*", "", t)      # a stray name label
     t = re.sub(r"\s{2,}", " ", t).strip()
     return t

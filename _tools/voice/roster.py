@@ -26,12 +26,14 @@ jv = judy.get("voice", {})
 cast = dict(getattr(aud, "CAST", {})) if aud else {}
 dials = {k: getattr(aud, k, None) for k in ("NORMAL", "BRAT", "PEPPER")} if aud else {}
 
-naked_vid, naked_dials = None, None
+naked_vid, naked_dials, naked_voice, naked_name = None, None, "-", "Sensei"
 try:
-    st = json.load(io.open(ST, encoding="utf-8"))
-    el = st["extension_settings"]["tts"]["ElevenLabs"]
-    naked_vid = el["voiceMap"].get("Naked")
-    naked_dials = {k: el.get(k) for k in ("stability", "similarity_boost", "style", "model")}
+    nj = json.load(io.open(os.path.join(DICT, "naked.json"), encoding="utf-8"))
+    nv = nj.get("voice", {})
+    naked_name = nj.get("name", "Sensei")
+    naked_vid = nv.get("eleven_voice_id")
+    naked_dials = {**(nv.get("eleven_settings") or {}), "model": nv.get("eleven_model")}
+    naked_voice = (nv.get("note") or "").split(":")[1].split(" for ")[0].strip() if ":" in (nv.get("note") or "") else "-"
 except Exception:
     pass
 
@@ -42,9 +44,9 @@ SEATS = [
     {"seat": "Pepper", "role": "the yo-yo's explore agent (BOLO 69), the debrief register", "voice": "Monika Sogam - Numbers & Data, en-IN",
      "vid": cast.get("monika", ("", ""))[1], "model": "eleven_turbo_v2_5", "dials": dials.get("PEPPER"),
      "ruled": "RULED 9/18 (Chief's pick; Samara X and Alice auditioned)", "prefix": "monika", "trunk": "OPERATOR/BLACK"},
-    {"seat": "Naked", "role": "the goon agent (BOLO 74), SillyTavern on :8000", "voice": "Arabella - young, raspy, Australian",
+    {"seat": naked_name, "role": "the goon agent (BOLO 74): her pad, her window beside JUDY, SillyTavern on :8000", "voice": naked_voice,
      "vid": naked_vid, "model": (naked_dials or {}).get("model"), "dials": naked_dials,
-     "ruled": "RULED 9/20 off a four-voice audition (Arabella, Kailey, Anna, Vivian)", "prefix": "naked--arabella", "trunk": "ORANGE"},
+     "ruled": "RULED 9/20 05:32: Arabella on v3 conversational for range (JUDY's pick after Chief narrowed it to Arabella or Serafina; Kailey, Anna, Vivian, Jean, Aurelia, Izumi, Serafina auditioned)", "prefix": "sensei--arabella", "trunk": "ORANGE"},
 ]
 
 wavs = sorted(os.path.basename(p) for p in glob.glob(os.path.join(AUD, "*.wav")))
@@ -86,15 +88,17 @@ for s in SEATS:
                      html.escape(str(s["vid"] or "-")), html.escape(str(s["model"] or "-")), dials_html(s["dials"]),
                      html.escape(s["ruled"]), "".join(audio(w) for w in clips) or '<span class="muted">no samples on disk</span>')
 
-bench_prefixes = sorted({w.split("--")[0] for w in wavs if "--" in w} - {"blondie", "monika"})
+bench_prefixes = sorted({w.split("--")[0] for w in wavs if "--" in w} - {"blondie", "monika", "sensei"}) + ["sensei"]
 bench_html = ""
 for pfx in bench_prefixes:
-    clips = [w for w in wavs if w.startswith(pfx + "--") and not w.startswith("naked--arabella")]
+    clips = [w for w in wavs if w.startswith(pfx + "--") and not w.startswith("sensei--arabella")]
     if not clips:
         continue
     name = cast[pfx][0] if pfx in cast else pfx.title()
     if pfx == "naked":
-        name = "Naked's audition - the three who did not take the seat (Kailey, Anna, Vivian)"
+        name = "Sensei's first audition, 9/20 02:50 (Arabella took it; Kailey, Anna, Vivian benched)"
+    if pfx == "sensei":
+        name = "Sensei's second audition, 9/20 05:30, on v3 for range (Arabella kept it; Jean, Aurelia, Izumi, Serafina benched)"
     bench_html += '<section class="bench"><h2>%s</h2><div class="clips">%s</div></section>' % (html.escape(name), "".join(audio(w) for w in clips))
 loose = [w for w in wavs if "--" not in w]
 if loose:
