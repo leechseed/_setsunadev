@@ -5,8 +5,9 @@ with an action line at the end of a reply (`>> play: random`, `>> play: <words>`
 naked.py strips the line, runs it here, and she says what she put on. Also a command:
     python stashplay.py random            # one from the UD pool (five stars, no dupes, no studio content)
     python stashplay.py "words to find"   # Stash's own search: title, performer, studio, tag, path
-    python stashplay.py queue 10          # a set about ten minutes long from the pool (Chief 9/20)
-    python stashplay.py queue 10 bbc      # the same, on a theme
+    python stashplay.py queue 30          # a set about thirty minutes long from the pool (Chief 9/20)
+    python stashplay.py queue 30 bbc      # the same, on a theme
+    python stashplay.py queue 30 "lesbian, gay, gangbang"   # themes in order, equal time each
     python stashplay.py stop              # close the player
 """
 import io
@@ -110,28 +111,42 @@ def play(sc):
     return label(sc)
 
 
-def queue(minutes=10, q=None, max_clip=300):
-    """A playlist about `minutes` long: random pool scenes (or search hits) no longer than max_clip seconds each,
-    until the run time adds up. Plays them back to back, fullscreen."""
-    import re
-    want = int(minutes) * 60
+def _fill(want, q=None, max_clip=300, seen=()):
+    """Clips adding up to about `want` seconds: search hits for q, or random pool scenes."""
     if q:
         d = gql('query($q:String){ findScenes(filter:{q:$q, per_page:80, sort:"rating", direction:DESC}) { scenes { %s } } }' % FIELDS, {"q": q})
     else:
         seed = rnd.randint(1, 10**9)
         d = gql('query($f:SceneFilterType,$s:String){ findScenes(scene_filter:$f, filter:{per_page:80, sort:$s}) { scenes { %s } } }' % FIELDS,
                 {"f": _ud_filter(), "s": "random_%d" % seed})
-    pool = [s for s in d["findScenes"]["scenes"] if s.get("files") and (s["files"][0].get("duration") or 0) > 5]
+    pool = [s for s in d["findScenes"]["scenes"] if s.get("files") and (s["files"][0].get("duration") or 0) > 5 and s["id"] not in seen]
     rnd.shuffle(pool)
+    short = [s for s in pool if s["files"][0]["duration"] <= max_clip]
+    if not short:   # nothing short enough: take the shortest few rather than nothing
+        short = sorted(pool, key=lambda s: s["files"][0]["duration"])[:3]
     picked, total = [], 0.0
-    for s in pool:
+    for s in short:
         dur = s["files"][0]["duration"]
-        if dur > max_clip and total > 0:
+        if total > 0 and total + dur > want * 1.25:   # would overshoot by more than a quarter: look for a shorter one
             continue
         picked.append(s)
         total += dur
         if total >= want:
             break
+    return picked, total
+
+
+def queue(minutes=30, q=None, max_clip=300):
+    """A playlist about `minutes` long. q = None for the pool, words for a theme, or "a, b, c" for themes in order,
+    each getting an equal share of the time (Chief 9/20: "lesbians, then gay, then group"). Plays back to back, fullscreen."""
+    want = int(minutes) * 60
+    themes = [t.strip() for t in q.split(",")] if q and "," in q else [q]
+    picked, total, seen = [], 0.0, set()
+    for t in themes:
+        part, dur = _fill(want / len(themes), t or None, max_clip, seen)
+        picked += part
+        total += dur
+        seen |= {s["id"] for s in part}
     if not picked:
         return None, 0
     m3u = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_stashplay_queue.m3u")
@@ -159,7 +174,7 @@ def act(action):
         import re
         mq = re.match(r"^(queue|set|playlist)\b\s*:?\s*(\d+)?\s*(?:min(?:ute)?s?)?\s*(.*)$", a, re.I)
         if mq:
-            minutes = int(mq.group(2) or 10)
+            minutes = int(mq.group(2) or 30)
             words = (mq.group(3) or "").strip()
             picked, total = queue(minutes, words or None)
             if not picked:

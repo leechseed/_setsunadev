@@ -5,7 +5,7 @@
  "card": "Q:\\fun\\_ULTRADARK\\goon\\cards\\Sensei.json",
  "history": "Q:\\fun\\_ULTRADARK\\goon\\_sensei_history.json",
  "history_turns": 24,
- "max_tokens": 160,
+ "max_tokens": 220,
  "user_name": "Chief",
  "voice": {
   "engine": "elevenlabs",

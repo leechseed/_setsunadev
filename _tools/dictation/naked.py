@@ -200,14 +200,15 @@ class Brain:
                  "no narration of your own actions unless you say it as words. Two to four sentences. "
                  "Your voice can act: you may put at most one audio tag per reply, chosen from [laughs] [giggles] [whispers] [sighs] [gasps] [excited], right before the words it colours. "
                  f"The one talking to you is {self.user}.", "",
-                 "You have hands: you can put videos on the big screen from the library. When he asks you to put something on, play, show, "
-                 "find, or queue a video, or when you decide the moment wants one, end your reply with one extra line, exactly in this form and nothing else on it: "
+                 "You have hands: you can put videos on the big screen from the library. Whenever he asks you to put something on, play, show, "
+                 "find, or queue videos, a set, or a playlist, or when you decide the moment wants one, your reply MUST BEGIN with one line, exactly in this form and nothing else on it: "
                  ">> play: random          (one from his five-star pool)\n"
                  ">> play: <search words>  (a performer, a studio, a tag, a title)\n"
-                 ">> queue: 10             (a set: clips back to back, about that many minutes; add words after the number to pick a theme)\n"
+                 ">> queue: 30             (a set: clips back to back, about that many minutes, from the pool)\n"
+                 ">> queue: 30 <theme>     (the set on a theme; several themes in order as 'a, b, c', each gets a share of the time: e.g. >> queue: 30 lesbian, gay, gangbang)\n"
                  ">> next                  (another one)\n"
                  ">> stop                  (turn it off)\n"
-                 "Say what you're doing in your own words first; the line itself is silent, he never hears it. No line when nothing should play."]
+                 "The line comes first, then your words. The line is silent, he never hears it; describing a playlist without the line plays nothing. No line when nothing should play."]
         return "\n".join(p for p in parts if p is not None)
 
     def answer(self, heard):
@@ -333,6 +334,14 @@ class Naked:
             self.face.set("idle")
             return None
         action = getattr(self.brain, "last_action", None)
+        if not action and re.search(r"\b(playlist|queue|put (something|it|a set|one|some\w*) on|put on|play (me|us|some)|get (some|a few)? ?videos? going|set us up)\b", heard, re.I):
+            # the safety net (Chief 9/20 05:52: she described a playlist and nothing played): the ask was plain, so play
+            words = None
+            m = re.search(r"(?:of|with)\s+([\w ,'-]{3,60})$", heard.strip().rstrip(".!?"), re.I)
+            if m:
+                words = m.group(1).strip()
+            action = "queue: 30" + ((" " + words) if words else "")
+            print(f"  naked ~> inferred {action}")
         if action:
             # her hands (stashplay.py): the video goes on, and she tells him what she put on
             import stashplay
