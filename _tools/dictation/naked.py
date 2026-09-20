@@ -68,7 +68,7 @@ class Face:
 
         self.label = tk.Label(self.root, bd=0, highlightthickness=0, bg="#120A10")
         self.label.pack()
-        self.cap = tk.Label(self.root, text="naked · idle", bg="#120A10", fg="#8E7686",
+        self.cap = tk.Label(self.root, text=f"{cfg().get('name','Sensei').lower()} · idle", bg="#120A10", fg="#8E7686",
                             font=("Consolas", 9), wraplength=size, justify="left", anchor="w", padx=8, pady=5)
         self.cap.pack(fill="x")
         self._paint("idle")
@@ -127,7 +127,7 @@ class Face:
                 if kind == "state":
                     self.state = val
                     self._paint(val)
-                    self.cap.configure(text=f"naked · {val}", fg="#FF7DAA" if val != "idle" else "#8E7686")
+                    self.cap.configure(text=f"{cfg().get('name','Sensei').lower()} · {val}", fg="#FF7DAA" if val != "idle" else "#8E7686")
                 elif kind == "text":
                     self.cap.configure(text=val, fg="#C4AEBB")
         except queue.Empty:
@@ -170,7 +170,7 @@ class Brain:
         try:
             d = json.load(io.open(self.card_path, encoding="utf-8"))["data"]
         except Exception:
-            return {"name": "Naked", "system_prompt": "You are Naked, a bratty adult woman. Stay in character.", "first_mes": ""}
+            return {"name": cfg().get("name", "Sensei"), "system_prompt": "You are Sensei, a bratty adult woman. Stay in character.", "first_mes": ""}
         return d
 
     def _load(self):
@@ -229,7 +229,7 @@ def _despeak(t):
     """Strip roleplay furniture so the mouth does not read asterisks."""
     import re
     t = re.sub(r"\*[^*]*\*", "", t)            # *actions*
-    t = re.sub(r"^\s*Naked\s*:\s*", "", t)      # a stray name label
+    t = re.sub(r"^\s*(Naked|Sensei)\s*:\s*", "", t)      # a stray name label
     t = re.sub(r"\s{2,}", " ", t).strip()
     return t
 
@@ -265,7 +265,7 @@ class Naked:
         self.face.say(f"you: {heard}")
         self.face.set("thinking")
         import re
-        if re.match(r"^\W*(naked\W+)?(forget|wipe)(\W+(it|everything|all|that))?\W*$", heard.strip(), re.I):
+        if re.match(r"^\W*((naked|sensei)\W+)?(forget|wipe)(\W+(it|everything|all|that))?\W*$", heard.strip(), re.I):
             # the wipe word (Chief 9/20): she keeps her card, JUDY included; the conversation goes
             self.brain.forget()
             line = "Wiped. Clean slate, Chief. JUDY stays, everything else is gone."
@@ -280,7 +280,7 @@ class Naked:
             self.face.set("idle")
             return line
         if not self.brain.up():
-            line = "My brain's not up yet, Chief. Say Naked, and I'm yours."
+            line = "My brain's not up yet, Chief. Say Sensei, and I'm yours."
             print(f"  naked ! {line}")
             self.face.say(line)
             if self.speak_replies:
