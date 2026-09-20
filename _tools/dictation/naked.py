@@ -199,7 +199,14 @@ class Brain:
                  "You are speaking out loud, over a voice, not typing: no stage directions, no asterisks, "
                  "no narration of your own actions unless you say it as words. Two to four sentences. "
                  "Your voice can act: you may put at most one audio tag per reply, chosen from [laughs] [giggles] [whispers] [sighs] [gasps] [excited], right before the words it colours. "
-                 f"The one talking to you is {self.user}."]
+                 f"The one talking to you is {self.user}.", "",
+                 "You have hands: you can put videos on the big screen from the library. When he asks you to put something on, play, show, "
+                 "find, or queue a video, or when you decide the moment wants one, end your reply with one extra line, exactly in this form and nothing else on it: "
+                 ">> play: random          (one from his five-star pool)\n"
+                 ">> play: <search words>  (a performer, a studio, a tag, a title)\n"
+                 ">> next                  (another one)\n"
+                 ">> stop                  (turn it off)\n"
+                 "Say what you're doing in your own words first; the line itself is silent, he never hears it. No line when nothing should play."]
         return "\n".join(p for p in parts if p is not None)
 
     def answer(self, heard):
@@ -213,9 +220,12 @@ class Brain:
         r = urllib.request.urlopen(urllib.request.Request(self.url + "/v1/chat/completions", data=json.dumps(body).encode(),
                                    headers={"Content-Type": "application/json"}), timeout=180)
         text = json.load(r)["choices"][0]["message"]["content"].strip()
+        text, action = _split_action(text)
         text = _despeak(text)
-        self.history += [{"role": "user", "content": heard}, {"role": "assistant", "content": text}]
+        self.history += [{"role": "user", "content": heard},
+                         {"role": "assistant", "content": text + (("\n>> " + action) if action else "")}]
         self._save()
+        self.last_action = action
         return text
 
     def up(self):
@@ -224,6 +234,29 @@ class Brain:
             return True
         except Exception:
             return False
+
+
+def _split_action(t):
+    """Pull her action line(s) off the reply: `>> play: random` / `>> play: words` / `>> next` / `>> stop`.
+    Returns (spoken text, action or None). The first action wins."""
+    import re
+    action = None
+    keep = []
+    for line in t.splitlines():
+        m = re.match(r"^\s*>>\s*(play\s*:\s*)?(.+?)\s*$", line)
+        if m:
+            if action is None:
+                action = m.group(2).strip().strip("()").strip()
+            continue
+        m2 = re.search(r"\s*>>\s*(play\s*:\s*)?([^\n]+?)\s*$", line)   # the line tacked onto her sentence
+        if m2:
+            if action is None:
+                action = m2.group(2).strip().strip("()\"'").strip()
+            line = line[:m2.start()].rstrip()
+        keep.append(line)
+    if action:
+        action = re.sub(r"[\"'.]+$", "", action).strip()
+    return "\n".join(keep).strip(), action
 
 
 def _despeak(t):
@@ -298,6 +331,15 @@ class Naked:
             print(f"  ! naked brain failed: {e}")
             self.face.set("idle")
             return None
+        action = getattr(self.brain, "last_action", None)
+        if action:
+            # her hands (stashplay.py): the video goes on, and she tells him what she put on
+            import stashplay
+            print(f"  naked >> {action}")
+            done = stashplay.act(action)
+            print(f"  hands  > {done}")
+            reply = (reply + " " + done).strip() if done else reply
+            self.brain.last_action = None
         print(f"  naked > {reply}")
         self.face.say(reply)
         self.face.set("talking")
