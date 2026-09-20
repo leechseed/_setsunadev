@@ -1,13 +1,12 @@
 @echo off
-rem view.cmd — open a house page in a lightweight Edge app window (no Firefox, no tab bar).
+rem view.cmd — open a Command page as a normal tab in the default browser (Chief, 9/20: no more Edge --app windows; they read as a desktop app).
 rem
 rem   view sitrep        the sit rep front page
 rem   view soi           the SOI
 rem   view 51            DOPE SHEET 51
 rem   view https://...   any URL
 rem
-rem Names resolve through pages.json beside this file. Edge is already resident in Windows
-rem (WebView2), so an --app window costs one process, not a browser session. Coded 2026-09-12, BOLO 51.
+rem Names resolve through pages.json beside this file. Coded 2026-09-12, BOLO 51; browser tab since 2026-09-20.
 setlocal
 set "HERE=%~dp0"
 set "TARGET=%~1"
@@ -18,7 +17,6 @@ for /f "usebackq delims=" %%U in (`powershell -NoProfile -Command "(Get-Content 
 if "%URL%"=="" ( echo no page named "%TARGET%" in pages.json & exit /b 1 )
 set "TARGET=%URL%"
 :open
-set "EDGE=%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
-if not exist "%EDGE%" set "EDGE=%ProgramFiles%\Microsoft\Edge\Application\msedge.exe"
-start "" "%EDGE%" --app=%TARGET% --window-size=1480,940
+rem the default browser, a normal tab. The Edge --app window (9/12–9/19) is retired by Chief's word 9/20.
+start "" "%TARGET%"
 endlocal

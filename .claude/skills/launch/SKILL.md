@@ -13,7 +13,7 @@ Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHE
 python _tools/launch/launch.py
 ```
 
-Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); starts `knobs.py --run` (the MPK knobs as scroll and zoom, BOLO 62) unless one is running; runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI in Edge app windows. Prints the station poll:
+Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); starts `knobs.py --run` (the MPK knobs as scroll and zoom, BOLO 62) unless one is running; runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI as tabs in the default browser (Chief, 9/20: never the Edge app window). Prints the station poll:
 
 ```
 STATIONS · 2026-09-17 04:20
