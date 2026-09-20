@@ -13,6 +13,8 @@ Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHE
 python _tools/launch/launch.py
 ```
 
+**Run it from the Bash tool, never the PowerShell tool** (confirmed 9/20: PowerShell-tool children sit in a job object and JUDY's paste into the VS Code box stops landing; the same goes for any relaunch of JUDY).
+
 Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; pings Stash (:9999), starts `stash-win.exe` if down, then opens the Stash deck (`_PRIVATE/stash_deck/index.html`) in the default browser; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); starts `knobs.py --run` (the MPK knobs as scroll and zoom, BOLO 62) unless one is running; runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI as tabs in the default browser (Chief, 9/20: never the Edge app window). Prints the station poll:
 
 ```
