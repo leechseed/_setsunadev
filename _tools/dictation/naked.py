@@ -264,6 +264,21 @@ class Naked:
         print(f"\n  you   > {heard}")
         self.face.say(f"you: {heard}")
         self.face.set("thinking")
+        import re
+        if re.match(r"^\W*(naked\W+)?(forget|wipe)(\W+(it|everything|all|that))?\W*$", heard.strip(), re.I):
+            # the wipe word (Chief 9/20): she keeps her card, JUDY included; the conversation goes
+            self.brain.forget()
+            line = "Wiped. Clean slate, Chief. JUDY stays, everything else is gone."
+            print(f"  naked > {line}")
+            self.face.say(line)
+            if self.speak_replies:
+                try:
+                    self.face.set("talking")
+                    speak(line, blocking=True)
+                except Exception as e:
+                    print(f"  ! her mouth failed: {e}")
+            self.face.set("idle")
+            return line
         if not self.brain.up():
             line = "My brain's not up yet, Chief. Say Naked, and I'm yours."
             print(f"  naked ! {line}")
