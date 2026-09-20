@@ -38,6 +38,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(HERE), "yoyo"))   # BOLO 69: _to
 
 import brain  # noqa: E402
 import codebook  # noqa: E402
+import naked as nk  # noqa: E402   # BOLO 74 (9/20): the second voice in the room
 import speak  # noqa: E402
 
 JUDY = os.path.join(HERE, "judy.json")
@@ -219,6 +220,8 @@ class Loop:
         self.toggle = toggle
         self.session = session   # session voice: paste into the chat + Enter; the reader speaks
         self.yoyo = False        # BOLO 69: the current hold is a yo-yo, not a turn
+        self.naked_hold = False  # BOLO 74: the current hold is for Naked
+        self.naked = None        # a naked.Naked once --naked has built her
         self.rec = None
         self.open = False
         self.busy = threading.Lock()
@@ -334,24 +337,45 @@ class Loop:
             self.face.set("idle")
             self.busy.release()
 
+    def start_naked(self):
+        """Her pad went down (BOLO 74): record like a talk hold, route to Naked on release."""
+        if self.naked is None or self.open or not self.busy.acquire(blocking=False):
+            return
+        self.open = True
+        self.naked_hold = True
+        self.naked.face.set("listening")
+        try:
+            self.rec.start()
+        except Exception as e:
+            print(f"  ! mic failed: {e}")
+            self.open = False
+            self.naked_hold = False
+            self.naked.face.set("idle")
+            self.busy.release()
+
     def finish(self):
         if not self.open:
             return
         self.open = False
         is_yoyo, self.yoyo = self.yoyo, False
+        is_naked, self.naked_hold = self.naked_hold, False
         try:
             audio = self.rec.stop()
-            self.face.set("thinking")
+            (self.naked.face if is_naked else self.face).set("thinking")
             text, meta = self.engine.transcribe(audio)
             for h, r, _n in (meta.get("hits") or []):
                 print(f"         §8 {h!r} -> {r!r}")
-            if is_yoyo:
+            if is_naked:
+                self.naked.turn(text)
+            elif is_yoyo:
                 self.trick(text)
             else:
                 self.turn(text)
         except Exception as e:
             print(f"  ! turn failed: {e}")
             self.face.set("idle")
+            if self.naked is not None:
+                self.naked.face.set("idle")
         finally:
             try:
                 self.busy.release()
@@ -405,6 +429,11 @@ class Loop:
                 extra[int(dcfg()["yoyo_note"])] = (
                     lambda: self.start_yoyo(),
                     lambda: threading.Thread(target=self.finish, daemon=True).start())
+            if self.naked is not None and dcfg().get("naked_note") is not None:
+                # NAKED's pad (BOLO 74, Chief 9/20): hold to talk to her; her answer never touches the chat box
+                extra[int(dcfg()["naked_note"])] = (
+                    lambda: self.start_naked(),
+                    lambda: threading.Thread(target=self.finish, daemon=True).start())
             if self.toggle:
                 self.pad = midipad.PadListener(lambda: self.fire("pad"), lambda: None, extra=extra)
             else:
@@ -416,7 +445,8 @@ class Loop:
                 print(f"  pad    note {c['midi_note']} on {c.get('midi_port')}"
                       + (f" · focus pad note {c['focus_note']}" if c.get("focus_note") is not None else " · no focus pad (midipad.py --learn-focus)")
                       + (f" · send pad note {c['send_note']}" if c.get("send_note") is not None else "")
-                      + (f" · yo-yo pad note {c['yoyo_note']}" if c.get("yoyo_note") is not None else ""))
+                      + (f" · yo-yo pad note {c['yoyo_note']}" if c.get("yoyo_note") is not None else "")
+                      + (f" · naked pad note {c['naked_note']}" if (self.naked is not None and c.get("naked_note") is not None) else ""))
             else:
                 print(f"  pad    unavailable: {self.pad.error}")
 
@@ -444,6 +474,9 @@ def main():
     ap.add_argument("--session", action="store_true",
                     help="session voice: your words go into the VS Code chat, and the "
                          "reader speaks Fable's replies as they are written")
+    ap.add_argument("--naked", action="store_true",
+                    help="BOLO 74: Naked rides along: her pad, her face beside JUDY's, her voice, her model on :5001")
+    ap.add_argument("--type-naked", help="skip the mic: one typed turn to Naked, then exit")
     a = ap.parse_args()
 
     v = cfg().get("voice", {})
@@ -451,7 +484,11 @@ def main():
     print(f"  mouth  {v.get('engine', 'piper')}"
           + (f" · {v.get('eleven_voice_id', '')[:12]}…" if v.get("engine") == "elevenlabs" else ""))
 
-    face = NoFace() if (a.no_face or a.type or a.yoyo) else Face(a.size)
+    face = NoFace() if (a.no_face or a.type or a.yoyo or a.type_naked) else Face(a.size)
+
+    if a.type_naked:
+        nk.Naked(nk.NoFace(), speak_replies=not a.no_voice).turn(a.type_naked)
+        return
 
     if a.yoyo:
         Loop(face, None, "", speak_replies=not a.no_voice).trick(a.yoyo)
@@ -468,6 +505,23 @@ def main():
                 speak_replies=not a.no_voice,
                 toggle=a.toggle or bool(dcfg().get("toggle")),
                 session=a.session)
+    if a.naked:
+        # BOLO 74: her face is a second window beside JUDY's (a Toplevel of the same root)
+        try:
+            if isinstance(face, Face):
+                jp = None
+                try:
+                    jp = json.load(io.open(POS, encoding="utf-8"))
+                    jp = (jp["x"], jp["y"])
+                except Exception:
+                    pass
+                nface = nk.Face(face.root, a.size, judy_pos=jp)
+            else:
+                nface = nk.NoFace()
+            loop.naked = nk.Naked(nface, speak_replies=not a.no_voice)
+            print(f"  naked  aboard · pad note {dcfg().get('naked_note')} · server {'up' if loop.naked.brain.up() else 'DOWN (say Naked)'}")
+        except Exception as e:
+            print(f"  naked  not aboard: {e}")
     loop.run()
     if a.session:
         import reader

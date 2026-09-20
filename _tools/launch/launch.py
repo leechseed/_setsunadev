@@ -125,7 +125,7 @@ def station_judy():
                         "Stop-Process -Id %d -Force -ErrorAction SilentlyContinue" % pid], capture_output=True)
     if running:
         time.sleep(1.0)
-    p = spawn_console([PY, "-u", JUDY, "--session"])
+    p = spawn_console([PY, "-u", JUDY, "--session", "--naked"])   # BOLO 74 (9/20): Naked rides in JUDY's process
     time.sleep(6.0)  # whisper warm-loads in ~3 s; the face comes up with it
     if p.poll() is None:
         return {"station": "JUDY", "go": True, "addr": "session voice · pid %d" % p.pid,

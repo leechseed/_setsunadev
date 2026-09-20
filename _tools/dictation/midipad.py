@@ -232,6 +232,7 @@ def main():
     ap.add_argument("--learn-focus", action="store_true", help="hit the pad that focuses the Claude Code box (Chief, 9/17)")
     ap.add_argument("--learn-send", action="store_true", help="hit the pad that sends whatever is in the Claude Code box (Chief, 9/17)")
     ap.add_argument("--learn-yoyo", action="store_true", help="hit the pad that boxes a yo-yo (BOLO 69, 9/18): top-left, far from the others")
+    ap.add_argument("--learn-naked", action="store_true", help="hit the pad that talks to Naked (BOLO 74, 9/20): her own pad, hold to talk")
     ap.add_argument("--timeout", type=int, default=45)
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--port")
@@ -257,6 +258,8 @@ def main():
             print(f"  send pad: note {cfg['send_note']}")
         if cfg.get("yoyo_note") is not None:
             print(f"  yo-yo pad: note {cfg['yoyo_note']}")
+        if cfg.get("naked_note") is not None:
+            print(f"  naked pad: note {cfg['naked_note']}")
         return
 
     if a.watch:
@@ -277,6 +280,9 @@ def main():
 
     if a.learn_yoyo:
         learn(a.port, a.timeout, key="yoyo_note", label="YO-YO pad (top-left, far from talk / focus / send)")
+        return
+    if a.learn_naked:
+        learn(a.port, a.timeout, key="naked_note", label="NAKED pad (her own; bottom-left corner is the provisional one)")
         return
 
     if a.test:

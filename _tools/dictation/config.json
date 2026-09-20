@@ -47,5 +47,7 @@
   "model": "haiku",
   "timeout": 60,
   "note": "D-7 rec (9/18): twelve unwound, three tricks per yo-yo. Past the cap the pad saves the words raw as overflow and Pepper says wind one first."
- }
+ },
+ "naked_note": 36,
+ "naked_note_note": "PROVISIONAL 9/20 (BOLO 74): pad 1, bottom-left corner on the MPK mini 3 default program (bottom row 36-39, top row 40-43); hold to talk to Naked. Re-learn: python midipad.py --learn-naked"
 }
