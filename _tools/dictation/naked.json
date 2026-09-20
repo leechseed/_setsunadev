@@ -9,7 +9,7 @@
  "user_name": "Chief",
  "voice": {
   "engine": "elevenlabs",
-  "eleven_voice_id": "aEO01A4wXwd1O8GPgGlF",
+  "eleven_voice_id": "4tRn1lSkEn13EVTuqb0g",
   "eleven_model": "eleven_v3_conversational",
   "eleven_settings": {
    "stability": 0.5,
@@ -17,7 +17,7 @@
    "style": 0.0,
    "use_speaker_boost": true
   },
-  "note": "RULED 9/20 05:32: Arabella (young, raspy, Australian) on v3 conversational for range. Chief narrowed the v3 audition to Arabella or Serafina and left it to JUDY; JUDY kept Arabella: continuity with the voice he already liked, and the range comes from v3. Jean, Aurelia, Izumi, Serafina benched. v3 takes stability 0 / 0.5 / 1 and audio tags like [laughs]."
+  "note": "RULED 9/20 05:35 by Chief: Serafina (sensual temptress, deep, velvety) on v3 conversational. JUDY had kept Arabella on v3; Chief: 'let's go with the last one, I'm not vibing with the first one.' v3 takes stability 0 / 0.5 / 1 and audio tags like [laughs]."
  },
  "face": {
   "slots": {

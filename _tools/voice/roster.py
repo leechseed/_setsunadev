@@ -46,7 +46,7 @@ SEATS = [
      "ruled": "RULED 9/18 (Chief's pick; Samara X and Alice auditioned)", "prefix": "monika", "trunk": "OPERATOR/BLACK"},
     {"seat": naked_name, "role": "the goon agent (BOLO 74): her pad, her window beside JUDY, SillyTavern on :8000", "voice": naked_voice,
      "vid": naked_vid, "model": (naked_dials or {}).get("model"), "dials": naked_dials,
-     "ruled": "RULED 9/20 05:32: Arabella on v3 conversational for range (JUDY's pick after Chief narrowed it to Arabella or Serafina; Kailey, Anna, Vivian, Jean, Aurelia, Izumi, Serafina auditioned)", "prefix": "sensei--arabella", "trunk": "ORANGE"},
+     "ruled": "RULED 9/20 05:35 by Chief: Serafina on v3 conversational (JUDY had kept Arabella; Chief: not vibing; Kailey, Anna, Vivian, Jean, Aurelia, Izumi auditioned)", "prefix": "sensei--serafina", "trunk": "ORANGE"},
 ]
 
 wavs = sorted(os.path.basename(p) for p in glob.glob(os.path.join(AUD, "*.wav")))
@@ -91,14 +91,14 @@ for s in SEATS:
 bench_prefixes = sorted({w.split("--")[0] for w in wavs if "--" in w} - {"blondie", "monika", "sensei"}) + ["sensei"]
 bench_html = ""
 for pfx in bench_prefixes:
-    clips = [w for w in wavs if w.startswith(pfx + "--") and not w.startswith("sensei--arabella")]
+    clips = [w for w in wavs if w.startswith(pfx + "--") and not w.startswith("sensei--serafina")]
     if not clips:
         continue
     name = cast[pfx][0] if pfx in cast else pfx.title()
     if pfx == "naked":
         name = "Sensei's first audition, 9/20 02:50 (Arabella took it; Kailey, Anna, Vivian benched)"
     if pfx == "sensei":
-        name = "Sensei's second audition, 9/20 05:30, on v3 for range (Arabella kept it; Jean, Aurelia, Izumi, Serafina benched)"
+        name = "Sensei's second audition, 9/20 05:30, on v3 for range (Serafina took it by Chief's word; Arabella, Jean, Aurelia, Izumi benched)"
     bench_html += '<section class="bench"><h2>%s</h2><div class="clips">%s</div></section>' % (html.escape(name), "".join(audio(w) for w in clips))
 loose = [w for w in wavs if "--" not in w]
 if loose:
