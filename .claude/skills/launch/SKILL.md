@@ -5,7 +5,7 @@ description: Run the launch sequence (BOLO 58) — one word stands the Command u
 
 # The launch sequence — BOLO 58
 
-Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY in session voice (the full loop: whisper ears on the 3090, the face, Blondie reading the session) · her seven spoken tools over the wire. The proword is **go for launch** (RULED 9/17, the flight director's poll answered); the thing it fires is **the launch sequence** (RULED the same breath). No questions, no preamble.
+Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHEETs · the DARKROOM · **Stash + the Stash deck (added 9/20, BOLO 75)** · JUDY in session voice (the full loop: whisper ears on the 3090, the face, Blondie reading the session) · her seven spoken tools over the wire. The proword is **go for launch** (RULED 9/17, the flight director's poll answered); the thing it fires is **the launch sequence** (RULED the same breath). No questions, no preamble.
 
 ## 1 · Stations (zero tokens)
 
@@ -13,11 +13,12 @@ Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHE
 python _tools/launch/launch.py
 ```
 
-Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); starts `knobs.py --run` (the MPK knobs as scroll and zoom, BOLO 62) unless one is running; runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI as tabs in the default browser (Chief, 9/20: never the Edge app window). Prints the station poll:
+Brings up what is down and reports what is up: pings the DARKROOM (:8484) and starts it if needed; pings Stash (:9999), starts `stash-win.exe` if down, then opens the Stash deck (`_PRIVATE/stash_deck/index.html`) in the default browser; finds a running `judy.py --session` or starts one (stopping a standalone JUDY first, same hotkey); starts `knobs.py --run` (the MPK knobs as scroll and zoom, BOLO 62) unless one is running; runs `wire_probe.py` for the seven tools; opens the sit rep page and the SOI as tabs in the default browser (Chief, 9/20: never the Edge app window). Prints the station poll:
 
 ```
 STATIONS · 2026-09-17 04:20
   DARKROOM  GO     http://127.0.0.1:8484/  (already live)
+  STASH     GO     http://127.0.0.1:9999/  (started · 4 s · deck opened)
   JUDY      GO     session voice · pid 25096  (already running)
   KNOBS     GO     MPK knobs · pid 54508  (started · 2.2 s · scroll Y · scroll X · zoom)
   WIRE      GO     server judy · 7/7 tools  (probe ok · 2.1 s)

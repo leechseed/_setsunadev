@@ -7,7 +7,7 @@ spoken tools over the wire. This script brings the local stations up, opens the 
 boards, and prints the station poll (GO / NO-GO with an address) for the sit rep header.
 The sit rep itself runs in the formation after this (skill: launch → sitrep).
 
-Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-judy] [--no-knobs] [--no-wire] [--json]
+Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-knobs] [--no-wire] [--json]
 
 Safe to run twice: a live DARKROOM is reported, not restarted (its single-instance guard);
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
@@ -23,6 +23,10 @@ JUDY = os.path.join(ROOT, "_tools", "dictation", "judy.py")
 PROBE = os.path.join(ROOT, "_tools", "dictation", "wire_probe.py")
 KNOBS = os.path.join(ROOT, "_tools", "dictation", "knobs.py")   # BOLO 62: the MPK knobs as scroll + zoom
 VIEW = os.path.join(ROOT, "_tools", "pages", "view.cmd")
+STASH_EXE = os.path.join("Q:\\", "fun", ".StashApp", "stash-win.exe")          # BOLO 75: Stash is a station (9/20); shutdown leaves it running
+STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
+STASH_URL = "http://127.0.0.1:9999/"
+DECK = os.path.join(ROOT, "_PRIVATE", "stash_deck", "index.html")   # the Stash deck, opened in the default browser
 PAGES = os.path.join(ROOT, "_tools", "pages", "pages.json")
 BOARDS = ["sitrep", "soi"]           # RULED 9/17: the board · the SOI · zero DOPE SHEETs
 TOOLS = ("blocked", "bolo", "box", "effort", "help", "pmcs", "time")
@@ -78,6 +82,35 @@ def station_darkroom():
             return {"station": "DARKROOM", "go": True, "addr": DARK_URL,
                     "note": "started · %.1f s" % (time.time() - t0)}
     return {"station": "DARKROOM", "go": False, "addr": DARK_URL, "note": "no ping after 20 s"}
+
+
+def station_stash():
+    """BOLO 75 (9/20): Stash up on :9999, then the deck (a static page reading its GraphQL) in the browser."""
+    t0 = time.time()
+    was_up = ping(STASH_URL, timeout=2.0)
+    if not was_up:
+        if not os.path.exists(STASH_EXE):
+            return {"station": "STASH", "go": False, "addr": STASH_URL, "note": "stash-win.exe missing"}
+        try:
+            subprocess.Popen([STASH_EXE, "-c", STASH_CFG], cwd=os.path.dirname(STASH_EXE),
+                             creationflags=subprocess.CREATE_NEW_CONSOLE | subprocess.CREATE_NEW_PROCESS_GROUP,
+                             stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        except Exception as e:
+            return {"station": "STASH", "go": False, "addr": STASH_URL, "note": "start failed: %s" % e}
+        for _ in range(60):
+            time.sleep(1.0)
+            if ping(STASH_URL, timeout=2.0):
+                break
+        else:
+            return {"station": "STASH", "go": False, "addr": STASH_URL, "note": "no answer after 60 s"}
+    deck = "deck opened" if os.path.exists(DECK) else "deck page missing"
+    if os.path.exists(DECK):
+        try:
+            os.startfile(DECK)
+        except Exception as e:
+            deck = "deck failed: %s" % e
+    return {"station": "STASH", "go": True, "addr": STASH_URL,
+            "note": ("already live · " if was_up else "started · %.0f s · " % (time.time() - t0)) + deck}
 
 
 def station_judy():
@@ -164,6 +197,7 @@ def main():
     ap = argparse.ArgumentParser(description="the launch sequence (BOLO 58)")
     ap.add_argument("--no-pages", action="store_true")
     ap.add_argument("--no-darkroom", action="store_true")
+    ap.add_argument("--no-stash", action="store_true")
     ap.add_argument("--no-judy", action="store_true")
     ap.add_argument("--no-wire", action="store_true")
     ap.add_argument("--no-knobs", action="store_true")
@@ -172,6 +206,8 @@ def main():
     rows = []
     if not a.no_darkroom:
         rows.append(station_darkroom())
+    if not a.no_stash:
+        rows.append(station_stash())
     if not a.no_judy:
         rows.append(station_judy())
     if not a.no_knobs:
