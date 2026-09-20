@@ -204,6 +204,7 @@ class Brain:
                  "find, or queue a video, or when you decide the moment wants one, end your reply with one extra line, exactly in this form and nothing else on it: "
                  ">> play: random          (one from his five-star pool)\n"
                  ">> play: <search words>  (a performer, a studio, a tag, a title)\n"
+                 ">> queue: 10             (a set: clips back to back, about that many minutes; add words after the number to pick a theme)\n"
                  ">> next                  (another one)\n"
                  ">> stop                  (turn it off)\n"
                  "Say what you're doing in your own words first; the line itself is silent, he never hears it. No line when nothing should play."]

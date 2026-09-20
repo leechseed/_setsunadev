@@ -5,6 +5,8 @@ with an action line at the end of a reply (`>> play: random`, `>> play: <words>`
 naked.py strips the line, runs it here, and she says what she put on. Also a command:
     python stashplay.py random            # one from the UD pool (five stars, no dupes, no studio content)
     python stashplay.py "words to find"   # Stash's own search: title, performer, studio, tag, path
+    python stashplay.py queue 10          # a set about ten minutes long from the pool (Chief 9/20)
+    python stashplay.py queue 10 bbc      # the same, on a theme
     python stashplay.py stop              # close the player
 """
 import io
@@ -108,6 +110,43 @@ def play(sc):
     return label(sc)
 
 
+def queue(minutes=10, q=None, max_clip=300):
+    """A playlist about `minutes` long: random pool scenes (or search hits) no longer than max_clip seconds each,
+    until the run time adds up. Plays them back to back, fullscreen."""
+    import re
+    want = int(minutes) * 60
+    if q:
+        d = gql('query($q:String){ findScenes(filter:{q:$q, per_page:80, sort:"rating", direction:DESC}) { scenes { %s } } }' % FIELDS, {"q": q})
+    else:
+        seed = rnd.randint(1, 10**9)
+        d = gql('query($f:SceneFilterType,$s:String){ findScenes(scene_filter:$f, filter:{per_page:80, sort:$s}) { scenes { %s } } }' % FIELDS,
+                {"f": _ud_filter(), "s": "random_%d" % seed})
+    pool = [s for s in d["findScenes"]["scenes"] if s.get("files") and (s["files"][0].get("duration") or 0) > 5]
+    rnd.shuffle(pool)
+    picked, total = [], 0.0
+    for s in pool:
+        dur = s["files"][0]["duration"]
+        if dur > max_clip and total > 0:
+            continue
+        picked.append(s)
+        total += dur
+        if total >= want:
+            break
+    if not picked:
+        return None, 0
+    m3u = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_stashplay_queue.m3u")
+    io.open(m3u, "w", encoding="utf-8").write("#EXTM3U\n" + "".join("#EXTINF:%d,%s\n%s\n" % (s["files"][0]["duration"], label(s), s["files"][0]["path"]) for s in picked))
+    stop()
+    if VLC:
+        subprocess.Popen([VLC, "--fullscreen", "--play-and-exit", "--no-video-title-show", m3u],
+                         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    try:
+        io.open(LAST, "w", encoding="utf-8").write(json.dumps({"queue": [label(s) for s in picked], "minutes": round(total / 60, 1)}))
+    except Exception:
+        pass
+    return picked, total
+
+
 def act(action):
     """One action line from Sensei's brain -> what she should say about it. Never raises."""
     try:
@@ -117,6 +156,15 @@ def act(action):
         if a in ("stop", "kill", "off"):
             stop()
             return "Off."
+        import re
+        mq = re.match(r"^(queue|set|playlist)\b\s*:?\s*(\d+)?\s*(?:min(?:ute)?s?)?\s*(.*)$", a, re.I)
+        if mq:
+            minutes = int(mq.group(2) or 10)
+            words = (mq.group(3) or "").strip()
+            picked, total = queue(minutes, words or None)
+            if not picked:
+                return "Couldn't fill a set."
+            return "Queued %d clips, about %d minutes.%s" % (len(picked), round(total / 60), (" First up, %s." % label(picked[0])))
         if a in ("random", "next", "surprise", "anything", "pool", ""):
             sc = pick_random()
             got = play(sc)
