@@ -299,6 +299,27 @@
   .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .06em; }
   .tip.raw { width: auto; min-width: 200px; font-family: var(--mono); font-size: 12.5px; }
 
+
+  /* ---- BREVITY panel (BOLO 37, ruled 9/23): the proword selection loop as a panel of this page ---- */
+  .brv .slot { padding: 16px 0 18px; border-bottom: 1px solid var(--line); }
+  .brv .slot:last-child { border-bottom: 0; }
+  .brv .slot .hd { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .brv .slot .hd .id { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+  .brv .slot .thing { margin: 4px 0 10px; font-size: 16px; line-height: 1.45; color: var(--ink-2); max-width: 70ch; }
+  .brv .cands { display: flex; flex-wrap: wrap; gap: 8px; }
+  .brv .cand { position: relative; font-family: var(--display); font-weight: 700; font-size: 19px; letter-spacing: .02em; text-transform: uppercase; padding: 8px 14px 8px 14px; border: 1px solid var(--line-2); color: var(--ink); background: var(--panel); cursor: pointer; }
+  .brv .cand:hover { border-color: var(--accent); }
+  .brv .cand.r { border-color: var(--accent); background: var(--accent-soft); padding-right: 34px; }
+  .brv .cand.r::after { content: attr(data-r); position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--mono); font-size: 12px; display: grid; place-items: center; }
+  .brv .cand.sealed { border-style: dashed; }
+  .brv .cand:disabled { cursor: default; opacity: .85; }
+  .brv .act { display: flex; align-items: center; gap: 14px; margin-top: 12px; flex-wrap: wrap; }
+  .brv .submit { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; padding: 7px 16px; background: var(--accent); color: #fff; border: 2px solid var(--accent); }
+  .brv .submit:disabled { background: transparent; color: var(--ink-3); border-color: var(--line-2); cursor: default; }
+  .brv .note { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+  .brv .reveal { margin-top: 10px; padding: 10px 14px; border-left: 3px solid var(--good); background: color-mix(in srgb, var(--good) 8%, transparent); font-size: 15px; }
+  .brv .reveal b { font-family: var(--display); text-transform: uppercase; letter-spacing: .02em; }
+  .brv .store { margin: 0 0 14px; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
   @media (prefers-reduced-motion: reduce) { .st-hot i, .run i { animation: none; } }
 
   @media (max-width: 980px) {
@@ -417,7 +438,7 @@ $('#footR').textContent = `${M.date} · trigger: ${M.trigger}`;
 const blocks = B.blocks;
 const countOf = b => b.items ? b.items.length : b.groups ? b.groups.reduce((n, g) => n + g.items.length, 0) : b.rows ? b.rows.length : b.soi ? b.soi.length : 1;
 $('#olRows').innerHTML = blocks.map((b, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">Block ${esc(b.id)}</span><span class="name">${esc(b.name)}</span></span><span class="key">${i}</span></button>`).join('')
-  ;
+  + `<button class="ol-row" data-b="1"><span class="node"><i></i></span><span><span class="id">Panel · the loop</span><span class="name">BREVITY</span></span><span class="key">B</span></button>`;
 $('#olFoot').innerHTML = `<b>${M.agents.length}</b> agents in flight<br><b>${countOf(blocks[4])}</b> decisions are yours`;
 
 /* ---- panel renderers ---- */
@@ -481,7 +502,86 @@ const KIND_ORDER = ['proword', 'noun', 'ruling', 'system', 'item', 'person'];
 const KIND_LABEL = { proword: 'Prowords · say one and the protocol fires', noun: 'Board nouns', ruling: 'Rulings and doctrine', system: 'Systems and programs', item: 'Items on the board', person: 'People' };
 const stChip = st => st ? `<span class="chip st-${st === 'ruled' ? 'ruled' : st === 'benched' ? 'parked' : 'open'}">${st}</span>` : '';
 function showGlossaryPage() { window.open(SOI_URL, '_blank', 'noopener'); }
-$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (!r) return; if (r.dataset.g) showGlossaryPage(); else go(+r.dataset.i); });
+$('#olRows').addEventListener('click', e => { const r = e.target.closest('.ol-row'); if (!r) return; if (r.dataset.g) showGlossaryPage(); else if (r.dataset.b) goBrevity(); else go(+r.dataset.i); });
+
+/* ---- BREVITY · the proword selection loop (BOLO 37, RULED 9/23: the loop is BREVITY · reveal on submit · the back five never surface) ----
+   Each open slot shows five candidates. Click three in order (1 · 2 · 3; click again to clear). Submit writes the pick to the page's
+   store (collection picks, one document per slot) and reveals Claude's sealed ranking. The main line pulls the store at the next sit rep. */
+const BRV = DATA.brevity || { slots: [] };
+let DBX = null, dbState = 'connecting', picks = {}, draft = {};
+try { draft = JSON.parse(localStorage.getItem('brevity_draft') || '{}'); } catch (e) {}
+function goBrevity() {
+  cur = -1; glossaryOpen = false;
+  document.querySelectorAll('.ol-row').forEach(r => r.classList.toggle('on', !!r.dataset.b));
+  $('#glossBtn').classList.remove('on'); closeTips(0);
+  renderBrevity();
+  try { localStorage.setItem('sitrep_block', 'B'); } catch (e) {}
+}
+function slotHTML(s) {
+  const ruled = picks[s.id] || (s.status === 'ruled' && s.ruling ? { ranks: s.ruling.ranks, when: s.ruling.when } : null);
+  const d = draft[s.id] || [];
+  const cand = w => {
+    const r = ruled ? ruled.ranks.indexOf(w) + 1 : d.indexOf(w) + 1;
+    const sealedHit = ruled && s.sealed.indexOf(w) >= 0;
+    return `<button class="cand ${r ? 'r' : ''} ${sealedHit ? 'sealed' : ''}" data-slot="${esc(s.id)}" data-w="${esc(w)}" data-r="${r || ''}" ${ruled ? 'disabled' : ''} title="${sealedHit ? 'in the sealed ranking' : ''}">${esc(w)}</button>`;
+  };
+  let tail;
+  if (ruled) {
+    const hits = ruled.ranks.filter(w => s.sealed.indexOf(w) >= 0).length;
+    tail = `<div class="reveal"><b>Ruled:</b> ${ruled.ranks.map((w, i) => `${i + 1}. ${esc(w)}`).join(' · ')} <span class="when">${esc((ruled.when || '').slice(0, 10))}</span><br>
+      <b>Sealed:</b> ${s.sealed.map((w, i) => `${i + 1}. ${esc(w)}`).join(' · ')} · ${hits} of 3 agree${ruled.ranks[0] === s.sealed[0] ? ', same first word' : ''}.</div>`;
+  } else {
+    tail = `<div class="act"><button class="submit" data-submit="${esc(s.id)}" ${d.length === 3 ? '' : 'disabled'}>Submit ${d.length}/3</button>
+      <span class="note">${d.length === 3 ? 'writes the pick, reveals the sealed ranking' : 'click three, in order'}</span></div>`;
+  }
+  return `<div class="slot" data-slot="${esc(s.id)}"><div class="hd"><span class="id">${esc(s.id)}</span>${ruled ? chip('ruled') : chip('open')}<span class="when">since ${esc(s.since || '')}</span></div>
+    <p class="thing">${md(s.thing)}</p><div class="cands">${s.front.map(cand).join('')}</div>${tail}</div>`;
+}
+function renderBrevity() {
+  if (cur !== -1) return;
+  const open = BRV.slots.filter(s => !(picks[s.id] || s.status === 'ruled')), ruled = BRV.slots.filter(s => picks[s.id] || s.status === 'ruled');
+  const store = dbState === 'ok' ? 'store connected · picks write on submit' : dbState === 'connecting' ? 'reaching the store…' : 'no store from this view · picks stay in this browser as a draft';
+  $('#panel').innerHTML = `<div class="frame brv"><div class="bh"><span class="eyebrow">Panel</span><span class="src">BREVITY · ${open.length} open · ${ruled.length} ruled</span></div>
+    <h2 class="bt">BREVITY</h2><p class="plain">The proword selection loop, ruled 9/23. Each word the Command still needs shows five candidates. Click three in order, submit, and Claude's sealed ranking comes up beside yours. The back five of every bench are the reserve and never surface.</p>
+    <p class="store">${store}</p>${open.map(slotHTML).join('')}${ruled.length ? `<div class="grp" style="margin-top:26px"><span class="lbl">Ruled</span></div>` + ruled.map(slotHTML).join('') : ''}</div>`;
+  $('#panel').scrollTop = 0;
+  $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
+    <div class="c"><span class="lbl">What we did last</span><p>The loop was named BREVITY and specced on 9/23: reveal on submit, the reserve hidden. This is its first build.</p></div>
+    <div class="c"><span class="lbl">What the plan was</span><p>Prowords stop being ruled in chat one at a time; they go through this pass, and the picks reach the SOI without a hand edit.</p></div>
+    <div class="c"><span class="lbl">What ${WHO} did</span><p>${Object.keys(picks).length} pick(s) in the store.</p></div>
+    <div class="c"><span class="lbl">What's next</span><p>${open.length ? 'Rule a slot: three clicks and Submit.' : 'Every slot is ruled; new slots land with the next sit rep.'}</p></div></div>`;
+}
+$('#panel').addEventListener('click', async e => {
+  const c = e.target.closest('.cand'); const sb = e.target.closest('.submit');
+  if (c && !c.disabled) {
+    const id = c.dataset.slot, w = c.dataset.w; const d = draft[id] || [];
+    const i = d.indexOf(w); if (i >= 0) d.splice(i, 1); else if (d.length < 3) d.push(w);
+    draft[id] = d; try { localStorage.setItem('brevity_draft', JSON.stringify(draft)); } catch (e2) {}
+    renderBrevity(); return;
+  }
+  if (sb && !sb.disabled) {
+    const id = sb.dataset.submit, d = draft[id]; if (!d || d.length !== 3) return;
+    const s = BRV.slots.find(x => x.id === id); const doc = { ranks: d.slice(), when: new Date().toISOString(), by: WHO, sealed: s ? s.sealed : [] };
+    sb.disabled = true; sb.textContent = 'Writing…';
+    if (DBX) {
+      try { await DBX.doc('picks/' + id).set(doc); } catch (err) { sb.textContent = 'Store refused: ' + (err && err.code || 'error'); sb.disabled = false; return; }
+    }
+    picks[id] = doc; delete draft[id]; try { localStorage.setItem('brevity_draft', JSON.stringify(draft)); } catch (e2) {}
+    renderBrevity();
+  }
+});
+(async () => {
+  try {
+    if (!window.claude || !claude.use) { dbState = 'none'; if (cur === -1) renderBrevity(); return; }
+    DBX = await claude.use('db');
+    if (!DBX) { dbState = 'none'; if (cur === -1) renderBrevity(); return; }
+    const snap = await DBX.collection('picks').get();
+    snap.docs.forEach(d => { if (d.exists) picks[d.id] = d.data(); });
+    dbState = 'ok';
+  } catch (err) { dbState = 'none'; }
+  if (cur === -1) renderBrevity();
+})();
+document.addEventListener('keydown', e => { if ((e.key === 'b' || e.key === 'B') && !e.target.closest('input')) goBrevity(); });
 /* the SOI button is an outbound link */
 
 /* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */

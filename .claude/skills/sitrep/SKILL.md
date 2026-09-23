@@ -19,6 +19,10 @@ python _tools/sitrep/prep.py
 
 Prints a 20-line digest and writes `_tools/sitrep/work/<date>/`: the previous board split per block (`prev/`), STATE sliced to Blocked + Live, the git log since the last board (named commits + one FOOTPRINT line per autosave window; an autosave is never an item, BOLO 59), STATE's Moved sections since the last board (`state.moved.md`, the fold the close-out writes), `meta.json` (box probe · tree · rack · sizes), Blocks III and VII carried forward (`frag/`), and three briefs. Read the digest only. Do not open STATE, BOLO, SOP, PROJECTS or the cache notes.
 
+## H0.5 · BREVITY picks (one call, the main line)
+
+The board carries the BREVITY panel (BOLO 37, ruled 9/23): Chief's proword picks land in the page's store. Before the fan-out, `ArtifactData` action `list`, collection `picks`, on the standing URL; if any documents come back, save them to `<scratchpad>/picks.json` and run `python _tools/soi/brevity.py apply <scratchpad>/picks.json`, then add the SOI entry and the SOP §5 line the script prints for each ruled slot. The build reads `_tools/soi/benches.json` and the ruled slots show as ruled on the next board. The publish carries `capabilities: {db: {}}` once (omit on later publishes; the declaration persists).
+
 ## H1 · Fan out (one message, three agents, gear 1)
 
 Launch all three in the same message, `run_in_background: false` is not needed; wait for all. Each prompt is the brief file's contents verbatim (Read it, paste it). No agent reads another's input or output.

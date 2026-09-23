@@ -33,7 +33,14 @@ def main():
         print("MISSING GLOSSARY KEYS:", ", ".join(missing))
         sys.exit(1)
 
-    data = json.dumps({"board": board, "glossary": glossary}, ensure_ascii=False)
+    # BREVITY (BOLO 37, ruled 9/23): the selection panel's slots. Front five of each bench only; the back five stay on disk.
+    bp = os.path.join(ROOT, "_tools", "soi", "benches.json")
+    brevity = {"slots": []}
+    if os.path.exists(bp):
+        for s in json.loads(load(bp))["slots"]:
+            brevity["slots"].append({"id": s["id"], "thing": s["thing"], "since": s.get("since", ""), "front": s["bench"][:5],
+                                     "sealed": s["sealed"][:3], "status": s.get("status", "open"), "ruling": s.get("ruling")})
+    data = json.dumps({"board": board, "glossary": glossary, "brevity": brevity}, ensure_ascii=False)
     data = data.replace("</script", "<\\/script")
     tpl = load(os.path.join(HERE, "template.html"))
     assert tpl.count("/*__DATA__*/null") == 1

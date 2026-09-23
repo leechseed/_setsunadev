@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-06",
   "asof": "2026-09-23",
-  "s": "open",
-  "status": "🟢 9/23 THE THREE CALLS RULED (Chief, spoken): the loop is named **BREVITY** · the reveal is **on submit** · the back five **never surface** (the reserve). Blocked #13 clears. The first build waits on \"go 37\": one session, a panel inside BOLO 38's sit rep page.",
+  "s": "done",
+  "status": "🟢 9/23 BUILT on \"go 37\": the BREVITY panel is live on the sit rep page (outliner row BREVITY, key B). Eight slots seeded from SOP §5's open benches, five candidates each, click three in order, Submit writes the pick to the page's store and reveals the sealed ranking. The back five of every bench stay on disk. The sit rep pulls the picks at H0.5 and `brevity.py apply` rules the slots.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP §5 · SOP §6 · every trunk",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 37",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,8 +42,8 @@
  ],
  "frago": {
   "mission": "Build the proword selection loop as one panel of the sit rep page, in order to rule every new proword in ten seconds where the record already lives.",
-  "order": "**Say \"go 37\" and the BREVITY panel builds in one session inside the sit rep page:** each open bench shows five, you click three ranked, the picks write to disk on submit and the SOI reads them. Seed: the five prowords benched on BOLO 35 and 36.",
-  "default": "Silence: the loop stays named and specced but unbuilt; prowords keep getting ruled in chat and written to the SOI by hand.",
+  "order": "**Open the board, press B, rule the eight.** Each pick is three clicks and Submit. New slots: `python _tools/soi/brevity.py add <id> \"<thing>\" W1 … W10`, then the next sit rep carries them.",
+  "default": "Silence: the eight slots sit open on the panel; the next sit rep pulls nothing and rules nothing.",
   "calls": [
    {
     "q": "Call 1 · the name",
@@ -158,8 +158,8 @@
    "strand": {
     "last": "From 9/6 to 9/8 the loop sat captured and parked — mechanics banked, three spec gaps asked, nothing built.",
     "plan": "Capture the mechanics and the name bench, ask the three spec gaps, let BOLO 38's placement ruling answer gap 3, then rule the remaining two gaps before the first build.",
-    "you": "You ruled all three in one breath: BREVITY, on submit, the reserve stays hidden.",
-    "next": "Say go 37 for the build. Nothing builds on the rulings alone."
+    "you": "You said go 37. The panel built in one pass and published on the standing board.",
+    "next": "Press B on the board and rule the eight."
    },
    "main_effort": "Sizing the loop's first build off the two spec gaps still open — the reveal timing and the five-of-ten question — now that gap 3 (placement) is answered by BOLO 38's ruling that the sit rep page is the board.",
    "phases": [
@@ -195,9 +195,15 @@
     },
     {
      "n": 6,
-     "s": "gated",
+     "s": "done",
      "when": "9/23",
-     "t": "**The first build** — fires on \"go 37\": the BREVITY panel inside the sit rep page, picks to disk on submit, the SOI reading them. One session."
+     "t": "**The first build** — `_tools/soi/benches.json` (the slots, front five and reserve) · `build.py` ships the front five and the sealed three · `template.html` renders the BREVITY panel, writes `picks/<slot>` to the page's store on Submit, reveals the sealed ranking · `_tools/soi/brevity.py` lists, adds and applies · the sitrep skill gained H0.5, the pull. Published with the db capability; the board is now organization-internal by that declaration."
+    },
+    {
+     "n": 7,
+     "s": "open",
+     "when": "9/23",
+     "t": "**The eight seed slots** — main effort · the outside read · napkin · the intel noun · syllabus · distill · grammar · the gear name. Chief's clicks."
     }
    ],
    "coord": [],
@@ -224,6 +230,31 @@
      "path": "STATE.md",
      "what": "Blocked #13 — name the loop and answer its three spec gaps; top of the list since 9/6",
      "s": "open"
+    },
+    {
+     "path": "_tools/soi/benches.json",
+     "what": "the slots: thing · bench of ten (five surface) · sealed · status · ruling",
+     "s": "done"
+    },
+    {
+     "path": "_tools/soi/brevity.py",
+     "what": "list the slots · add a slot · apply the store's picks and print the SOI and SOP lines",
+     "s": "done"
+    },
+    {
+     "path": "_tools/sitrep/template.html",
+     "what": "the BREVITY panel: outliner row, candidates, Submit, the store, the reveal",
+     "s": "done"
+    },
+    {
+     "path": "_tools/sitrep/build.py",
+     "what": "ships DATA.brevity, front five only",
+     "s": "done"
+    },
+    {
+     "path": ".claude/skills/sitrep/SKILL.md",
+     "what": "H0.5: pull the picks before the fan-out",
+     "s": "done"
     }
    ],
    "cost": [
@@ -315,6 +346,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Recorded on the sheet, the BOLO row, STATE Blocked #13, SOP §5 and the SOI (BREVITY now names the loop as well as the list; MINT retired). Build gated on go 37."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Go 37.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "The BREVITY panel built and published on the sit rep page with the store capability; eight slots seeded; brevity.py and the sit rep's H0.5 pull wired."
     }
    ]
   }
