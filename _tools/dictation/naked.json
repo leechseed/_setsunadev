@@ -5,7 +5,7 @@
  "card": "Q:\\fun\\_ULTRADARK\\goon\\cards\\Sensei.json",
  "history": "Q:\\fun\\_ULTRADARK\\goon\\_sensei_history.json",
  "history_turns": 24,
- "max_tokens": 60,
+ "max_tokens": 40,
  "user_name": "Chief",
  "voice": {
   "engine": "elevenlabs",
@@ -28,5 +28,6 @@
   },
   "note": "her sprites from faces.py; swap any slot for another of the thirteen (ahegao.png is there)"
  },
- "name": "Sensei"
+ "name": "Sensei",
+ "max_words": 25
 }

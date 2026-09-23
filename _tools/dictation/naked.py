@@ -197,7 +197,7 @@ class Brain:
                  "How you are: " + sub(d.get("personality")), "",
                  "The scene: " + sub(d.get("scenario")), "",
                  "You are speaking out loud, over a voice, not typing: no stage directions, no asterisks, "
-                 "no narration of your own actions unless you say it as words. One short sentence, two at most; never more than about forty words. "
+                 "no narration of your own actions unless you say it as words. One short sentence, never more than 25 words; stop when the point lands. "
                  "Your voice can act: you may put at most one audio tag per reply, chosen from [laughs] [giggles] [whispers] [sighs] [gasps] [excited], right before the words it colours. "
                  f"The one talking to you is {self.user}.", "",
                  "You have hands: you can put videos on the big screen from the library. Whenever he asks you to put something on, play, show, "
@@ -261,12 +261,32 @@ def _split_action(t):
     return "\n".join(keep).strip(), action
 
 
+try:
+    MAX_WORDS = int(json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "naked.json"), encoding="utf-8")).get("max_words", 25))
+except Exception:
+    MAX_WORDS = 25
+
+
 def _despeak(t):
     """Strip roleplay furniture so the mouth does not read asterisks."""
     import re
     t = re.sub(r"\*[^*]*\*", "", t)            # *actions* (square-bracket audio tags stay: v3 acts on them)
     t = re.sub(r"^\s*(Naked|Sensei)\s*:\s*", "", t)      # a stray name label
     t = re.sub(r"\s{2,}", " ", t).strip()
+    # the hard cap (Chief 9/23: "her brain still wants to talk more"): whole sentences up to 25 words, then the scissors
+    words = t.split()
+    if len(words) > MAX_WORDS:
+        kept, n = [], 0
+        for sent in re.split(r"(?<=[.!?])\s+", t):
+            k = len(sent.split())
+            if n + k > MAX_WORDS and kept:
+                break
+            kept.append(sent); n += k
+            if n >= MAX_WORDS:
+                break
+        t = " ".join(kept)
+        if len(t.split()) > MAX_WORDS:
+            t = " ".join(t.split()[:MAX_WORDS]).rstrip(",;:") + "."
     return t
 
 
