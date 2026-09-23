@@ -1,0 +1,542 @@
+<title>The Character Stack</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command colorway: DARK is the only theme (ruled 9/11); the E-INK gray face shows only when the viewer forces light */
+  :root {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320;
+    --bad: #E9788A; --bad-soft: #3A1B20; --help: #8FB3E0; --help-soft: #1B2636;
+    --line: #2B313B; --line-2: #3C4452;
+    --grid: color-mix(in srgb, var(--ink) 7%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --link: #A83409; --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE;
+    --bad: #962C37; --bad-soft: #E6CCCF; --help: #2B4F7A; --help-soft: #D2DAE4;
+    --line: #B5B5AE; --line-2: #97978F;
+    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    background-image: radial-gradient(var(--grid) 1px, transparent 1px); background-size: 22px 22px;
+    font-family: var(--body); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1320px; margin: 0 auto; padding-inline: 24px; padding-block: 22px 60px; }
+  a { color: var(--link); }
+  .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* hover terms (CK3 layer) */
+  .t { color: var(--link); border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+
+  /* ---- header ---- */
+  header.hd { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr); gap: 20px 32px; align-items: end; padding-bottom: 18px; border-bottom: 1px solid var(--line-2); }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+  h1 { margin: 6px 0 8px; font-family: var(--display); font-weight: 800; font-size: clamp(40px, 5.4vw, 68px); line-height: .9; text-transform: uppercase; letter-spacing: .005em; text-wrap: balance; }
+  h1 i { display: inline-block; width: 12px; height: 12px; background: var(--accent); margin-right: 10px; transform: translateY(-6px); }
+  .sub { margin: 0; color: var(--ink-2); max-width: 60ch; }
+  .sub .src { font-family: var(--mono); font-size: 12px; color: var(--ink-3); display: block; margin-top: 6px; overflow-wrap: anywhere; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(118px, 1fr)); border: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 85%, transparent); }
+  .stat { padding: 10px 14px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; }
+  .stat small { display: block; font-family: var(--mono); font-size: 11px; color: var(--ink-2); margin-top: 4px; line-height: 1.3; }
+  .stat.hot b { color: var(--accent); } .stat.warn b { color: var(--warn); } .stat.good b { color: var(--good); }
+
+  /* ---- the order strip ---- */
+  .order { margin-top: 18px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 18px; padding: 16px 20px; background: var(--panel); border: 1px solid var(--line-2); border-left: 4px solid var(--accent); }
+  .order .lbl { color: var(--accent); padding-top: 6px; }
+  .order p { margin: 0; font-size: 17px; }
+  .order p b { font-family: var(--display); font-size: 24px; text-transform: uppercase; letter-spacing: .01em; }
+
+  section { margin-top: 34px; }
+  .sh { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; border-bottom: 1px solid var(--line-2); padding-bottom: 8px; margin-bottom: 14px; }
+  .sh h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; letter-spacing: .01em; }
+  .sh .lbl { margin-left: auto; }
+  .lede { margin: -4px 0 14px; color: var(--ink-2); max-width: 78ch; }
+
+  /* ---- coverage matrix ---- */
+  .mx-wrap { overflow-x: auto; border: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); }
+  table.mx { border-collapse: collapse; width: 100%; min-width: 1080px; }
+  .mx th, .mx td { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); vertical-align: top; }
+  .mx thead th { font-weight: 400; text-align: left; padding: 8px 8px 7px; background: var(--panel); }
+  .mx thead tr.tiers th { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); padding: 6px 8px; }
+  .mx thead tr.tiers th.t1 { box-shadow: inset 0 3px 0 var(--ink-3); }
+  .mx thead tr.tiers th.t2 { box-shadow: inset 0 3px 0 var(--warn); }
+  .mx thead tr.tiers th.t3 { box-shadow: inset 0 3px 0 var(--accent); }
+  .mx .ln { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: .08em; }
+  .mx .lname { font-family: var(--display); font-weight: 700; font-size: 17px; text-transform: uppercase; letter-spacing: .02em; }
+  .mx tbody th { text-align: left; padding: 10px 12px; width: 170px; background: var(--panel); font-weight: 400; }
+  .mx tbody th .who { font-family: var(--display); font-weight: 700; font-size: 20px; line-height: 1.05; text-transform: uppercase; display: block; }
+  .mx tbody th .role { font-family: var(--mono); font-size: 11px; color: var(--ink-2); display: block; margin-top: 3px; }
+  .cell { padding: 8px 8px 9px; min-width: 76px; cursor: help; position: relative; }
+  .cell .v { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; display: block; }
+  .cell .v.sm { font-family: var(--body); font-weight: 700; font-size: 13px; line-height: 1.25; }
+  .cell .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; }
+  .cell .k i { width: 7px; height: 7px; display: inline-block; }
+  .cell:hover { outline: 1px solid var(--accent); outline-offset: -1px; }
+  .c-val .k { color: var(--good); } .c-val .k i { background: var(--good); border-radius: 50%; }
+  .c-auth { background: color-mix(in srgb, var(--good) 10%, transparent); } .c-auth .k { color: var(--good); } .c-auth .k i { background: var(--good); }
+  .c-canon .k { color: var(--help); } .c-canon .k i { background: var(--help); border-radius: 50%; }
+  .c-rule .k { color: var(--warn); } .c-rule .k i { border: 1.5px dashed var(--warn); border-radius: 50%; }
+  .c-gap { background: var(--bad-soft); } .c-gap .k { color: var(--bad); } .c-gap .k i { background: var(--bad); transform: rotate(45deg); }
+  .c-na { background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in srgb, var(--ink) 6%, transparent) 6px 8px); } .c-na .k { color: var(--ink-3); } .c-na .k i { border: 1.5px solid var(--ink-3); }
+  .c-open .k { color: var(--ink-3); } .c-open .k i { border: 1.5px solid var(--ink-3); border-radius: 50%; }
+  .mx td.private { padding: 12px 14px; color: var(--ink-2); font-size: 14.5px; background: repeating-linear-gradient(135deg, transparent 0 10px, color-mix(in srgb, var(--ink) 4%, transparent) 10px 12px); }
+  .mx td.private b { font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-right: 8px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 10px; font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .sw { width: 22px; height: 14px; border: 1px solid var(--line-2); }
+
+  /* ---- two-column band ---- */
+  .band { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 28px; }
+
+  /* derived stats: bars on one 0–20 scale */
+  .ds { display: grid; gap: 2px; }
+  .ds-row { display: grid; grid-template-columns: 170px minmax(0, 1fr) 40px; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .ds-row .nm { font-size: 15px; line-height: 1.2; }
+  .ds-row .nm code { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); margin-top: 2px; }
+  .track { position: relative; height: 16px; background: linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 5% 100%; border-left: 1px solid var(--line-2); }
+  .track b { position: absolute; left: 0; top: 2px; bottom: 2px; background: color-mix(in srgb, var(--ink) 30%, transparent); border-radius: 0 3px 3px 0; }
+  .track b.hot { background: var(--accent); }
+  .track .thr { position: absolute; top: -4px; bottom: -4px; width: 0; border-left: 2px dashed var(--bad); }
+  .ds-row .val { font-family: var(--display); font-weight: 800; font-size: 24px; text-align: right; }
+  .ds-row .val.hot { color: var(--accent); }
+  .axis { display: grid; grid-template-columns: 170px minmax(0, 1fr) 40px; gap: 12px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); padding-top: 4px; }
+  .axis .ticks { display: flex; justify-content: space-between; }
+  .note { font-size: 14px; color: var(--ink-2); margin: 10px 0 0; }
+
+  /* flags */
+  .flags { display: grid; gap: 8px; }
+  .flag { padding: 10px 12px; border: 1px solid var(--line); background: var(--panel); display: grid; gap: 4px; }
+  .flag .fh { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .flag .fn { font-family: var(--mono); font-weight: 500; font-size: 13px; letter-spacing: .04em; }
+  .flag code { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .flag p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 1px 8px; border: 1px solid currentColor; line-height: 1.6; white-space: nowrap; }
+  .chip i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  .ch-active { color: var(--accent); } .ch-active i { animation: pulse 1.6s ease-in-out infinite; }
+  .ch-pending { color: var(--warn); border-style: dashed; }
+  .ch-fired { color: var(--ink-3); }
+  .ch-ruled { color: var(--good); } .ch-open { color: var(--warn); } .ch-held { color: var(--ink-3); border-style: dashed; }
+  .ch-draft { color: var(--warn); } .ch-block { color: var(--bad); } .ch-done { color: var(--good); }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+
+  /* pipeline */
+  .pipe { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); }
+  .step { padding: 12px 12px 14px; border-right: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); display: flex; flex-direction: column; gap: 8px; }
+  .step:last-child { border-right: 0; }
+  .step .sn { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--ink-3); }
+  .step h3 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.05; text-transform: uppercase; }
+  .step p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.4; }
+  .step .runs { display: grid; gap: 4px; margin-top: auto; padding-top: 6px; border-top: 1px solid var(--line); }
+  .step .run { display: flex; justify-content: space-between; gap: 6px; font-family: var(--mono); font-size: 11px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: 0 0 auto; margin-top: 3px; }
+  .d-done { background: var(--good); } .d-part { background: var(--warn); } .d-block { background: var(--bad); } .d-none { border: 1.5px solid var(--ink-3); }
+
+  /* library */
+  .lib-wrap { overflow-x: auto; border: 1px solid var(--line); }
+  table.lib { border-collapse: collapse; width: 100%; min-width: 900px; font-size: 14.5px; }
+  .lib th, .lib td { border-bottom: 1px solid var(--line); padding: 7px 8px; text-align: left; vertical-align: middle; }
+  .lib thead th { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; background: var(--panel); }
+  .lib thead th.l { text-align: center; padding: 7px 2px; }
+  .lib td.id { font-family: var(--mono); font-size: 12px; color: var(--ink-3); white-space: nowrap; }
+  .lib td.bk b { font-weight: 700; }
+  .lib td.bk small { display: block; color: var(--ink-3); font-size: 12.5px; }
+  .lib td.hit { text-align: center; padding: 7px 2px; width: 44px; }
+  .lib td.hit i { display: inline-block; width: 14px; height: 14px; background: var(--accent); }
+  .lib tr:hover td { background: color-mix(in srgb, var(--panel-2) 60%, transparent); }
+  .lib tfoot td { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); text-align: center; background: var(--panel); }
+  .lib tfoot td.l0 { text-align: left; }
+
+  /* calls */
+  .calls { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+  .call { padding: 12px 14px; border: 1px solid var(--line); background: var(--panel); display: grid; gap: 6px; align-content: start; }
+  .call.unruled { border-color: color-mix(in srgb, var(--warn) 60%, transparent); background: color-mix(in srgb, var(--warn) 7%, var(--panel)); }
+  .call .ch { display: flex; gap: 10px; align-items: baseline; }
+  .call .cn { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; color: var(--ink-3); min-width: 26px; }
+  .call.unruled .cn { color: var(--warn); }
+  .call h3 { margin: 0; font-size: 15px; line-height: 1.3; }
+  .call p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+  .call .lay { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: .08em; }
+
+  /* modules */
+  .mods { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+  .mod { padding: 12px 14px; border: 1px solid var(--line); background: var(--panel); display: grid; gap: 6px; align-content: start; }
+  .mod h3 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 19px; text-transform: uppercase; line-height: 1.05; }
+  .mod p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+  .mod .path { font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+
+  /* blockers */
+  .blk { display: grid; gap: 0; border: 1px solid var(--line); }
+  .bk { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 4px 14px; padding: 12px 14px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); align-items: start; }
+  .bk:last-child { border-bottom: 0; }
+  .bk .bn { font-family: var(--display); font-weight: 800; font-size: 32px; line-height: .9; color: var(--accent); }
+  .bk h3 { margin: 0; font-size: 16px; }
+  .bk p { margin: 3px 0 0; font-size: 14px; color: var(--ink-2); }
+
+  footer.ft { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line-2); display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+  footer.ft kbd { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border: 1px solid var(--line-2); color: var(--ink-2); }
+
+  /* tooltip */
+  .tip { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 12px 14px 10px; font-size: 14.5px; line-height: 1.45; pointer-events: auto; }
+  .tip .th { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .tip .th b { font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; }
+  .tip .th .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 8px; letter-spacing: .06em; }
+  .tip.locked { border-top-color: var(--ink); }
+
+  @media (prefers-reduced-motion: reduce) { .ch-active i { animation: none; } }
+  @media (max-width: 1000px) {
+    header.hd, .band { grid-template-columns: 1fr; }
+    .pipe { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .step { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding-inline: 16px; }
+    .ds-row, .axis { grid-template-columns: 110px minmax(0, 1fr) 34px; }
+    .bk { grid-template-columns: 34px minmax(0, 1fr); }
+    .bk .chip { grid-column: 2; justify-self: start; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="hd">
+    <div>
+      <div class="eyebrow">SSOT 02 · BLACK · v2.0.2 · as of 2026-09-23</div>
+      <h1><i></i>The Character Stack</h1>
+      <p class="sub">The <a class="t" data-t="slice" tabindex="0">12-layer vertical slice</a>: who a character <em>is</em>, in <a class="t" data-t="tier" tabindex="0">three tiers</a>, seven <a class="t" data-t="derived" tabindex="0">derived statistics</a> and computed <a class="t" data-t="flag" tabindex="0">flags</a>. This board shows which characters have run through it, what the library feeds, and what is still open.
+        <span class="src">ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · system page <a href="https://claude.ai/artifact/9d1uQtKLzujf5nMRCsRxMD">TM 02</a></span></p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="order">
+    <span class="lbl">Next move</span>
+    <p><b>Cut the schema bump.</b> Eleven calls were ruled on 9/16 "at the next bump" and none has landed; calls 12–15 have sat unruled for a week. One bump to v2.1.0 clears both queues, and the pilot fields (circumplex dials, the wound card) need a second full instance to test on.</p>
+  </div>
+
+  <section id="coverage">
+    <div class="sh"><h2>Coverage</h2><span class="lbl">instances × layers · hover a cell</span></div>
+    <p class="lede">One row per character that has a node. Tori is the only full numeric slice; Anna Colson's node is qualitative and built to collide with Tori on the <a class="t" data-t="rs" tabindex="0">RS axis</a>, so no derived statistic can be computed for her yet.</p>
+    <div class="mx-wrap"><table class="mx" id="mx"></table></div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--good)"></span> Scored / validated</span>
+      <span><span class="sw" style="background:color-mix(in srgb,var(--good) 10%,transparent)"></span> Authored ingest</span>
+      <span><span class="dot" style="background:var(--help)"></span> Canon (from a ruled source)</span>
+      <span><span class="dot" style="border:1.5px dashed var(--warn)"></span> ⧗ proposed, ruled on the recs</span>
+      <span><span class="sw" style="background:var(--bad-soft)"></span> Blocked</span>
+      <span><span class="sw c-na" style="border-style:solid"></span> N/A by design</span>
+    </div>
+  </section>
+
+  <section class="band">
+    <div>
+      <div class="sh"><h2>Tori · derived</h2><span class="lbl">computed, never entered · 0–20</span></div>
+      <div class="ds" id="ds"></div>
+      <div class="axis"><span></span><span class="ticks"><span>0</span><span>5</span><span>10</span><span>15</span><span>20</span></span><span></span></div>
+      <p class="note">The dashed line is the <a class="t" data-t="tei" tabindex="0">Truth Exposure</a> alarm at 15. Tori reads 18 against an <a class="t" data-t="er" tabindex="0">Expressive Range</a> of 2: the system reads everything she carries and she can send almost nothing on purpose. That paradox is why the Ban targets her.</p>
+    </div>
+    <div>
+      <div class="sh"><h2>Tori · flags</h2><span class="lbl">five states on file</span></div>
+      <div class="flags" id="flags"></div>
+    </div>
+  </section>
+
+  <section id="pipeline">
+    <div class="sh"><h2>The seven steps</h2><span class="lbl">implementation · per instance</span></div>
+    <div class="pipe" id="pipe"></div>
+  </section>
+
+  <section id="blockers">
+    <div class="sh"><h2>What's in the way</h2><span class="lbl">ranked by what each one unblocks</span></div>
+    <div class="blk" id="blk"></div>
+  </section>
+
+  <section id="library">
+    <div class="sh"><h2>Character × Library</h2><span class="lbl">12 distills · feeds hardest</span></div>
+    <p class="lede">Every source the doc was written against, and the layers it feeds hardest. The L5 shelf holds 82 keyed items; twelve are distilled. The column totals show where the stack is thin: L9 EROS has only Davis on this shelf (Tori's L9 ingest drew on the PSY shelf instead), and L2 VITAL and L7 ORIGIN have two sources each.</p>
+    <div class="lib-wrap"><table class="lib" id="lib"></table></div>
+    <p class="note"><b>Next wave, top five:</b> BVX.0202 Corbett, <i>The Compass of Character</i> · BVX.0271 Weiland, <i>Archetypal Arcs</i> · BVX.0135 Jorstad, <i>Character Arcs</i> · BVX.0207 Dunne, <i>Dramatic Writer's Companion</i> · BVX.0229 Smith, <i>Psychology Workbook</i>.</p>
+  </section>
+
+  <section id="calls">
+    <div class="sh"><h2>Open calls</h2><span class="lbl">11 ruled 9/16, waiting on the bump · 4 unruled</span></div>
+    <div class="calls" id="callsGrid"></div>
+  </section>
+
+  <section id="modules">
+    <div class="sh"><h2>Layer modules</h2><span class="lbl">deep specs under one layer</span></div>
+    <div class="mods" id="mods"></div>
+  </section>
+
+  <footer class="ft">
+    <span>hover a <a class="t" data-t="slice" tabindex="0">blue term</a> or a cell</span>
+    <span><kbd>Space</kbd> lock · click pins · <kbd>Esc</kbd> close</span>
+    <span>Built 2026-09-23 from the SSOT doc, the two <code>_CANON_NODES</code> character nodes and the L2b modules. The BOLO 24 subject sheet stays in <code>_PRIVATE/</code>.</span>
+  </footer>
+</div>
+
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const LAYERS = [
+  { id: "L1", n: "CORE", tier: 1, q: "How much cognitive and ideological mass does the mind carry?", d: "Governs mental skill defaults, ideological frameworks and problem-solving. Default 10; 20 pts per level above 10 (IQ equivalent).", f: "CORE" },
+  { id: "L2", n: "VITAL", tier: 1, q: "How much physical and energetic presence does the body carry?", d: "Body precision, endurance, reaction capacity, expressiveness. Default 10; 20 pts per level (DX equivalent). The L2b morphology modules sit under it.", f: "VITAL" },
+  { id: "L3", n: "SOCIAL", tier: 1, q: "How does the character project into and read the social world?", d: "Projection, reception, social legibility, reaction modifiers. Default 10; 10 pts per level (HT equivalent).", f: "SOCIAL" },
+  { id: "L4", n: "WILL", tier: 2, q: "How much resistance to coercion holds, and where does it bend?", d: "Derives from CORE by default (WILL = CORE); buyable at 5 pts per level. Egri reframes it as the capacity to decide, not toughness (call 13).", f: "WILL" },
+  { id: "L5", n: "WOUND", tier: 2, q: "What accumulated damage failed to resolve, and how severe is it?", d: "Not a choice or a buy: a record of what happened. Scale 0 (undamaged) to 10 (collapse threshold). High WOUND cuts effective WILL and SOCIAL under triggers.", f: "WOUND" },
+  { id: "L6", n: "DRIVE", tier: 2, q: "What fuels the active goal-pursuit, and from what source?", d: "Derives from VITAL (DRIVE = VITAL); meaning-driven characters sit below the ceiling. Spent on pursuit, recovered through resolution.", f: "DRIVE" },
+  { id: "L7", n: "ORIGIN", tier: 3, q: "What birth context and formation set the starting conditions?", d: "Class, family architecture, formation, system exposure timing. Feeds WOUND base and SOCIAL defaults.", f: "origin_class · origin_stability · family_coherence · origin_wound_seed · tech_level · system_exposure" },
+  { id: "L8", n: "IMPRINT", tier: 3, q: "What formative conditioning locked in before the story began?", d: "Attachment architecture, emotional range, operational belief patterns. Call 14 proposes the Attached field list.", f: "attachment_style · attachment_style_score · emotional_range · conditional_patterns · imprint_flexibility · primary_attachment_object" },
+  { id: "L9", n: "EROS", tier: 3, q: "How is desire structured, armored, and made safe?", d: "Desire structure, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, intimacy mode. v2 authored 8/15 on Tori.", f: "erotic_blueprint_type · desire_vector · shame_index · armor_index · satisfaction_cycle_truncation · erotic_safety_precondition · intimacy_mode" },
+  { id: "L10", n: "SHADOW", tier: 3, q: "What is repressed, projected, or denied, and what does it generate?", d: "High SHADOW generates disadvantage clusters and changes stress-state behavior.", f: "shadow_density · projection_tendency · regression_pattern · shadow_content" },
+  { id: "L11", n: "DESTINY", tier: 3, q: "What is the character building toward, not where they stand?", d: "The MC Solution element, growth requirement, resistance index, soul-evolution archetype. Calls 2 and 10 add arc_type, change_cause and catalyst_archetype.", f: "growth_axis · resistance_index · soul_evolution_archetype · karmic_memory · growth_requirement" },
+  { id: "L12", n: "FUNCTION", tier: 3, q: "What narrative role and mechanical function does the character discharge?", d: "Fed independently from the storyform, keyed by storyform_id, exactly as P12 and S12 are. L12 filled is what makes a character load-bearing to the argument.", f: "dramatica_archetype · mc_problem_element · … · limit_type · resolve" }
+];
+
+/* cell kinds: val (scored, validated) · auth (authored ingest) · canon · rule (⧗ ruled on the recs) · gap (blocked) · na (by design) · open */
+const INSTANCES = [
+  { who: "Tori", full: "Victoria “Tori” Midnight", role: "MC · Change · Tier 3", node: "_CANON_NODES/victoria-midnight.md", cells: [
+    ["val", "13", "Taurus Sun + Capricorn Mercury: above average, capped by the Equity firmware flaw."],
+    ["val", "14", "Mars exalted + Aries ASC: top-tier physicality."],
+    ["val", "10", "Aries ASC unfiltered + Virgo Venus in Fall: average, with Truth as her exploit vector."],
+    ["val", "14", "Saturn in detriment + Sun square Saturn: CORE+1, more stubborn than smart."],
+    ["val", "8", "Venus Fall + Moon square Mars + Moon square Pluto. The wound is the knowledge that she chose not to listen."],
+    ["val", "12", "Mars exalted, Jupiter in another element: meaning-driven, not ambition-driven. The crash dented the tank."],
+    ["val", "✓", "Cancer IC + Libra Moon: working/criminal-adjacent, family_coherence 7."],
+    ["val", "✓", "Libra Moon in the 7th: secure_anxious (6)."],
+    ["auth", "AUTH", "AUTHORED 8/15 via the L9 ingest: kinesthetic, shame_index 2, armor_index 8, parallel_presence, truncates at reach."],
+    ["val", "✓", "Neptune 12th + Venus Fall + Sun opposite Pluto: culpability, distrust of her own judgment."],
+    ["val", "✓", "Jupiter + Uranus both domicile: growth_axis inequity, tactical_disruptor."],
+    ["gap", "—", "Dramatica direct, no astrology feed. The Dramatica ingest is missing ~65 fields (IC, OS and RS throughlines empty) and the node's Structure cells predate the §9 rotation."]
+  ], foot: "11 of 11 fed layers validated CONSISTENT, zero contradictions. Chart derived from pre-rotation cells: Known rot." },
+  { who: "Anna Colson", full: "Anna Colson Conway", role: "IC · Steadfast · built 9/23", node: "_CANON_NODES/anna-colson-conway.md", cells: [
+    ["rule", "low", "Low by design: the IC can run near a type. Her coherence (no gap between characterization and true character) is the IC argument at the lowest layer."],
+    ["rule", "polished", "System-polished, conforms to elite grooming (call 12, ruled). The control case against Tori's non-conforming beauty."],
+    ["canon", "Verified", "Canon via the row-9 scene card. Legible on purpose, and it protects her; Tori is legible against her will."],
+    ["canon", "Steadfast", "Canon, storyform §9 IC resolve. She never registers pressure as pressure: Fixed Attitude, mechanically."],
+    ["open", "open", "Left open by design (call 5, ruled): a Steadfast IC may not need a wound. Do not invent one."],
+    ["canon", "ascent", "Canon-adjacent: undented ambition, the exact inversion of Tori's dented tank."],
+    ["rule", "legacy", "Legacy-track: admitted and groomed, not salvaged (call 3, ruled)."],
+    ["rule", "secure-inst.", "Secure-institutional: anchored to the system itself, where Tori's is anchored to a person (call 4, ruled)."],
+    ["na", "N/A", "N/A by design (call 6, ruled): the Telling Profile's T2 denies her interiority, so an L9 would contradict the no-POV ruling."],
+    ["rule", "withheld", "Withheld by design: shows only externally, in consequence, never confession."],
+    ["canon", "proof", "Canon-adjacent: the establishment's proof of concept, the case the Administration points to."],
+    ["canon", "IC", "dramatica_archetype Impact Character · ic_problem_element Equity · resolve Steadfast. Same Problem element as Tori: one argument."]
+  ], foot: "Twelve calls ruled on the recs 9/23. Chart is a placeholder until an astrology ingest runs; no numbers, so no derived stats." }
+];
+
+const DERIVED = [
+  ["Basic Damage Resistance", "WILL − WOUND/2", 10],
+  ["Social Legibility", "SOCIAL − SHADOW.projection/3", 8],
+  ["Narrative Momentum", "DRIVE + DESTINY.resistance/2", 16],
+  ["Stress Threshold", "WILL − WOUND", 6],
+  ["Collapse Risk", "(WOUND + SHADOW.density)/2", 8],
+  ["Truth Exposure Index", "SOCIAL + (10 − EROS.shame)", 18, true],
+  ["Expressive Range", "10 − EROS.armor", 2, true]
+];
+
+const FLAGS = [
+  ["SHADOW_DENIAL", "active", "WOUND > 6 AND projection_tendency ≥ 5 AND conditional_patterns ∋ merit_earns_freedom", "“The institution is unfair” is true, and it shields “I chose not to listen and he died.” The arc is the shield collapsing."],
+  ["TRUTH_VULNERABILITY", "active", "SOCIAL < 12 AND mc_problem_element = Equity AND shadow_density > 6", "Truth surfaces the wound through her social interface. The Ban is this flag firing in public."],
+  ["OPTIONLOCK_PROGRESSION", "active", "WOUND > 7 AND resistance_index > 7 AND limit_type = Optionlock", "Exits close because of who she is, not a clock. Confirms the Optionlock by numbers alone."],
+  ["EARNED_JUDGEMENT", "pending", "archetype = Protagonist AND story_outcome = Failure AND WILL > 10", "Fires at the climax: WILL 14 is enough structure to find Meaning in total defeat."],
+  ["KINSHIP_COLLAPSE", "fired", "attachment_style_score > 5 AND primary_attachment_object = deceased AND WOUND > 7", "Fired at the crash. She enters the story with no secure base."]
+];
+
+const STEPS = [
+  ["Source verification", "Confirm canon is locked before any value. Unstable sources give unstable numbers.", [["Tori", "done", "seven checks PASS"], ["Anna Colson", "part", "IC ruled; node draft"]]],
+  ["Tier 1", "CORE, VITAL, SOCIAL. Tier 1 alone must suggest the character.", [["Tori", "done", "13 · 14 · 10"], ["Anna Colson", "part", "qualitative"]]],
+  ["Tier 2", "WILL from CORE, WOUND from history, DRIVE from VITAL.", [["Tori", "done", "14 · 8 · 12"], ["Anna Colson", "part", "WOUND open"]]],
+  ["Tier 3", "L7–L12 from canon; anything unsourced is marked INFERRED.", [["Tori", "block", "L12 ingest"], ["Anna Colson", "part", "⧗ on recs"]]],
+  ["Derived stats", "Compute the seven. Read TEI and Collapse Risk first.", [["Tori", "done", "7 of 7"], ["Anna Colson", "none", "no numbers"]]],
+  ["Flag evaluation", "Evaluate triggers; an unexpected flag means a bad layer value.", [["Tori", "done", "5 on file"], ["Anna Colson", "none", "—"]]],
+  ["Data block", "The machine-readable seed record: the output artifact.", [["Tori", "done", "in the doc"], ["Anna Colson", "none", "—"]]]
+];
+
+const BLOCKERS = [
+  ["Tori's Dramatica ingest", "~65 storyform fields: the IC, OS and RS throughlines are empty. Opening OVEREXITOUT in Dramatica and extracting is the single highest-leverage task in BLACK; it locks Tori's L12 and her pipeline.", "blocked", "ch-block"],
+  ["The schema bump to v2.1.0", "Eleven calls ruled 9/16 apply “at the next bump”: ghost/revenant refs, arc_type, the wound card, coping_strategy and more. Nothing has landed; the doc still reads v2.0.2.", "owed", "ch-open"],
+  ["Calls 12–15", "Egri's bone structure, strength of will, the Attached field list, masks. Recommendations written 9/16, never ruled.", "unruled", "ch-open"],
+  ["Tori's chart re-derivation", "Derived from the pre-rotation storyform cells (Known rot). The Tori × Anna Colson collision proof needs only this now that Anna Colson's node exists.", "rot", "ch-block"],
+  ["Anna Colson's astrology ingest", "Ruled: the placeholder chart stands for now, and the Ascent Legibility Index is held until a real ingest runs.", "held", "ch-held"]
+];
+
+const LAYER_KEYS = LAYERS.map(l => l.id);
+const LIB = [
+  ["BVX.0064", "McKee", "Character", ["L12", "L10"]],
+  ["BVX.0075", "Davis", "Creating Compelling Characters", ["L6", "L4", "L1", "L2", "L5", "L7", "L8", "L9"]],
+  ["BVX.0193", "Truby", "The Anatomy of Story", ["L4", "L5"]],
+  ["BVX.0089", "Dramatica", "Theory of Story", ["L12"]],
+  ["BVX.0196", "Corbett", "The Art of Character", ["L10", "L5", "L11"]],
+  ["BVX.0061", "Card", "Characters and Viewpoint", ["L12", "L6", "L3", "L7", "L11"]],
+  ["BVX.0209", "Puglisi & Ackerman", "The Emotional Wound Thesaurus", ["L5", "L6"]],
+  ["BVX.0233", "Pelican", "The Science of Writing Characters", ["L6", "L1", "L3", "L2", "L8", "L10"]],
+  ["BVX.0045", "Schmidt", "45 Master Characters", ["L10", "L11", "L4", "L6"]],
+  ["BVX.1123", "Egri", "The Art of Dramatic Writing", ["L4", "L1", "L2", "L3"]],
+  ["BVX.1127", "Levine & Heller", "Attached", ["L8"]],
+  ["BVX.1124", "Vogler", "The Writer's Journey", ["L12", "L10"]]
+];
+
+const CALLS = [
+  [1, "Ghost and revenant cross-links", "L5", "Add ghost_ref and revenant_ref as relational sub-fields.", "ruled"],
+  [2, "A typed arc field", "L11", "Add arc_type and change_cause.", "ruled"],
+  [3, "The tyranny of motive", "all", "A writing rule for narrating character queries, not a field.", "ruled"],
+  [4, "The hierarchy as allocation", "all", "State it in Core Methodology; characterization effort tracks narrative rank.", "ruled"],
+  [5, "Viewpoint out of scope", "—", "The texture layer owns person, tense and penetration. Done.", "ruled"],
+  [6, "The wound card + severity dial", "L5", "Adopt the severity dial and trigger list as sub-fields.", "ruled"],
+  [7, "The villain-arc fork", "L5→L8", "Held until a second antagonist is carded.", "held"],
+  [8, "Circumplex + Dark/Light Triad dials", "L3 · L10", "Pilot on one new character, not retrofitted onto Tori.", "ruled"],
+  [9, "The audience trust ledger", "outside", "A future reader-model document, outside the twelve layers.", "held"],
+  [10, "Growth-pairing + coping strategy", "L11 · L4/L8", "catalyst_archetype on L11, coping_strategy on L4 or L8.", "ruled"],
+  [11, "Attachment theory missing from the shelf", "L8", "An acquisition target. Partly met: Attached came in 9/16.", "ruled"],
+  [12, "The bone structure as Tier 1 text", "L1–L3 · L7", "Rec: adopt Egri's text stack plus hereditary_predisposition.", "open"],
+  [13, "Strength of will · the pivotal character", "L4 · L12", "Rec: the L4 gloss now; the L12 necessity rule at the bump.", "open"],
+  [14, "The L8 field list from Attached", "L8", "Rec: attachment enum, two-dimension score, protest behaviors, secure_base_object.", "open"],
+  [15, "Masks, the Shapeshifter, the Mentor", "L12 · L10", "Rec: fold into call 1's relational sub-field.", "open"]
+];
+
+const MODS = [
+  ["L9 · EROS ingest", "Tori", "v2.0.0 · authored 8/15", "ch-done", "Promoted L9 from INFERRED to AUTHORED. parallel_presence is structural; V-Sync is weaponised entrainment. Status still draft_for_review.", "_CANON_NODES/victoria-midnight-L9-eros.md"],
+  ["L2b · Gluteal", "substrate", "draft · confidence medium", "ch-draft", "Contreras's 27-cell substrate, two sexed taxonomies, thirteen named types. Hip dips named as a positive type, The Corbel.", "_CANON_NODES/L2b-morphology-gluteal.md"],
+  ["L2b · Face", "substrate", "draft · 9/23", "ch-draft", "The gluteal chain ported to the face: skeletal first, three axes, named face reads. Two of four stages break in the port.", "_CANON_NODES/L2b-morphology-face.md"],
+  ["L2b · Population signatures", "selection × loading", "draft · low-medium", "ch-draft", "Selection and loading on the 27-cell substrate.", "_CANON_NODES/L2b-morphology-population-signatures.md"]
+];
+
+const TERMS = {
+  slice: ["Vertical slice", "system", "One character walked through all twelve layers. It validates the schema (do the numbers produce the character canon says exists?) and seeds the eventual database.", "SSOT 02 · Part A"],
+  tier: ["Tiers", "system", "Tier 1 (L1–L3) is a flat character, ~75 pts. Tier 2 (L4–L6) is standard, ~140 pts. Tier 3 (L7–L12) is deep and uncapped; mandatory for protagonists and antagonists.", "SSOT 02 · Core Methodology"],
+  derived: ["Derived statistics", "system", "Computed columns, never entered. Seven formulas over the layer values; fractions round down.", "SSOT 02 · Derived Statistics"],
+  flag: ["Flags", "system", "Boolean states that fire when thresholds are met. Each is a valid SQL WHERE clause. Four states: ACTIVE · PENDING · FIRED_PRE_STORY · INACTIVE.", "SSOT 02 · Flag Trigger Conditions"],
+  rs: ["The RS axis", "storyform", "The Relationship Story throughline. Anna Colson's domain is Fixed Attitude and her concern Memories; her layers are written to collide with Tori's on it.", "oxo-storyform §9"],
+  tei: ["Truth Exposure Index", "derived", "SOCIAL + (10 − shame_index). Above 15, a character cannot manage their own signal. It feeds antagonist targeting and systemic escalation.", "SSOT 02 · Derived Statistics"],
+  er: ["Expressive Range", "derived", "10 − armor_index. Added 8/24 with L9 v2. TEI measures what leaks; Expressive Range measures what the character can send on purpose.", "SSOT 02 v1.1.0"]
+};
+</script>
+<script>
+(function () {
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const tipData = {}; let tipN = 0;
+  const reg = (title, kind, body, where) => { const k = "x" + (tipN++); tipData[k] = [title, kind, body, where]; return k; };
+
+  /* stats */
+  const ruled = CALLS.filter(c => c[4] === "ruled").length, open = CALLS.filter(c => c[4] === "open").length;
+  $("#stats").innerHTML = [
+    ["12", "layers · 3 tiers", ""],
+    [String(INSTANCES.length), "character nodes on the stack", ""],
+    ["1", "full numeric slice (Tori)", "warn"],
+    [String(LIB.length), "library sources distilled", "good"],
+    [String(ruled), "calls ruled, not applied", "hot"],
+    [String(open), "calls unruled", "warn"]
+  ].map(s => `<div class="stat ${s[2]}"><b class="num">${s[0]}</b><small>${s[1]}</small></div>`).join("");
+
+  /* coverage matrix */
+  const KIND = { val: "scored", auth: "authored", canon: "canon", rule: "ruled ⧗", gap: "blocked", na: "by design", open: "open" };
+  const tierName = { 1: "Tier 1 · flat", 2: "Tier 2 · standard", 3: "Tier 3 · deep" };
+  let h = `<thead><tr class="tiers"><th></th><th colspan="3" class="t1">${tierName[1]}</th><th colspan="3" class="t2">${tierName[2]}</th><th colspan="6" class="t3">${tierName[3]}</th></tr><tr><th><span class="lbl">Character</span></th>`;
+  LAYERS.forEach(l => {
+    const k = reg(`${l.id} ${l.n}`, `Tier ${l.tier}`, `<b>${esc(l.q)}</b> ${esc(l.d)}`, "writes: " + l.f);
+    h += `<th><span class="ln">${l.id}</span><span class="lname t" data-k="${k}" tabindex="0">${l.n}</span></th>`;
+  });
+  h += `</tr></thead><tbody>`;
+  INSTANCES.forEach(inst => {
+    const nk = reg(inst.full, inst.role, esc(inst.foot), inst.node);
+    h += `<tr><th><span class="who t" data-k="${nk}" tabindex="0">${esc(inst.who)}</span><span class="role">${esc(inst.role)}</span></th>`;
+    inst.cells.forEach((c, i) => {
+      const k = reg(`${inst.who} · ${LAYERS[i].id} ${LAYERS[i].n}`, KIND[c[0]], esc(c[2]), inst.node);
+      const small = c[1].length > 3 ? " sm" : "";
+      h += `<td class="cell c-${c[0]}" data-k="${k}" tabindex="0"><span class="v${small}">${esc(c[1])}</span><span class="k"><i></i>${KIND[c[0]]}</span></td>`;
+    });
+    h += `</tr>`;
+  });
+  h += `<tr><th><span class="who">BOLO 24 subject</span><span class="role">ORANGE · 12-layer lite</span></th><td colspan="12" class="private"><b>Private</b>The first signing's sheet runs the 12-layer lite with the chart ruled 9/16. It is marked never to leave <code>_PRIVATE/</code>, so its values are not on this page.</td></tr></tbody>`;
+  $("#mx").innerHTML = h;
+
+  /* derived stats */
+  $("#ds").innerHTML = DERIVED.map(d => {
+    const pct = Math.min(100, d[2] / 20 * 100);
+    const thr = d[0] === "Truth Exposure Index" ? `<span class="thr" style="left:75%"></span>` : "";
+    return `<div class="ds-row"><span class="nm">${esc(d[0])}<code>${esc(d[1])}</code></span><span class="track"><b class="${d[3] ? "hot" : ""}" style="width:${pct}%"></b>${thr}</span><span class="val num ${d[3] ? "hot" : ""}">${d[2]}</span></div>`;
+  }).join("");
+
+  /* flags */
+  const FS = { active: ["ch-active", "active"], pending: ["ch-pending", "pending"], fired: ["ch-fired", "fired pre-story"] };
+  $("#flags").innerHTML = FLAGS.map(f => `<div class="flag"><div class="fh"><span class="fn">${f[0]}</span><span class="chip ${FS[f[1]][0]}"><i></i>${FS[f[1]][1]}</span></div><code>${esc(f[2])}</code><p>${esc(f[3])}</p></div>`).join("");
+
+  /* pipeline */
+  const DS = { done: "d-done", part: "d-part", block: "d-block", none: "d-none" };
+  $("#pipe").innerHTML = STEPS.map((s, i) => `<div class="step"><span class="sn">${i + 1}</span><h3>${esc(s[0])}</h3><p>${esc(s[1])}</p><div class="runs">${s[2].map(r => `<div class="run"><span style="display:flex;gap:6px"><span class="dot ${DS[r[1]]}"></span>${esc(r[0])}</span><span style="color:var(--ink-3);text-align:right">${esc(r[2])}</span></div>`).join("")}</div></div>`).join("");
+
+  /* blockers */
+  $("#blk").innerHTML = BLOCKERS.map((b, i) => `<div class="bk"><span class="bn">${i + 1}</span><div><h3>${esc(b[0])}</h3><p>${esc(b[1])}</p></div><span class="chip ${b[3]}">${esc(b[2])}</span></div>`).join("");
+
+  /* library */
+  let lb = `<thead><tr><th>ID</th><th>Book</th>${LAYER_KEYS.map(k => `<th class="l">${k}</th>`).join("")}</tr></thead><tbody>`;
+  const tot = {}; LAYER_KEYS.forEach(k => tot[k] = 0);
+  LIB.forEach(r => {
+    lb += `<tr><td class="id">${r[0]}</td><td class="bk"><b>${esc(r[1])}</b><small><i>${esc(r[2])}</i></small></td>`;
+    LAYER_KEYS.forEach(k => { const on = r[3].includes(k); if (on) tot[k]++; lb += `<td class="hit">${on ? `<i title="${r[1]} feeds ${k}"></i>` : ""}</td>`; });
+    lb += `</tr>`;
+  });
+  lb += `</tbody><tfoot><tr><td class="l0" colspan="2">sources per layer</td>${LAYER_KEYS.map(k => `<td class="num" style="${tot[k] <= 1 ? "color:var(--bad)" : ""}">${tot[k]}</td>`).join("")}</tr></tfoot>`;
+  $("#lib").innerHTML = lb;
+
+  /* calls */
+  const CS = { ruled: ["ch-ruled", "ruled 9/16"], held: ["ch-held", "held"], open: ["ch-open", "unruled"] };
+  $("#callsGrid").innerHTML = CALLS.map(c => `<div class="call ${c[4] === "open" ? "unruled" : ""}"><div class="ch"><span class="cn">${c[0]}</span><h3>${esc(c[1])}</h3></div><span class="lay">${esc(c[2])}</span><p>${esc(c[3])}</p><span class="chip ${CS[c[4]][0]}" style="justify-self:start">${CS[c[4]][1]}</span></div>`).join("");
+
+  /* modules */
+  $("#mods").innerHTML = MODS.map(m => `<div class="mod"><h3>${esc(m[0])}</h3><span class="lay lbl">${esc(m[1])}</span><span class="chip ${m[3]}" style="justify-self:start">${esc(m[2])}</span><p>${esc(m[4])}</p><span class="path">${esc(m[5])}</span></div>`).join("");
+
+  /* tooltips: hover shows · Space locks · click pins · Esc closes */
+  const tip = $("#tip"); let locked = false, cur = null;
+  function content(el) {
+    if (el.dataset.k) return tipData[el.dataset.k];
+    const t = TERMS[el.dataset.t]; return t || null;
+  }
+  function show(el) {
+    const d = content(el); if (!d) return;
+    cur = el;
+    tip.innerHTML = `<div class="th"><b>${esc(d[0])}</b><span class="k">${esc(d[1])}</span></div><p>${d[2]}</p>${d[3] ? `<div class="w">${esc(d[3])}</div>` : ""}<div class="hint">${locked ? "pinned · Esc closes" : "Space locks · click pins"}</div>`;
+    tip.hidden = false;
+    const r = el.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+    let x = Math.min(window.innerWidth - tw - 12, Math.max(12, r.left));
+    let y = r.bottom + 8; if (y + th > window.innerHeight - 8) y = Math.max(8, r.top - th - 8);
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+    document.querySelectorAll(".t.on").forEach(n => n.classList.remove("on"));
+    el.classList.add("on");
+  }
+  function hide(force) { if (locked && !force) return; locked = false; tip.hidden = true; tip.classList.remove("locked"); document.querySelectorAll(".t.on").forEach(n => n.classList.remove("on")); cur = null; }
+  const target = e => e.target.closest && e.target.closest("[data-k],[data-t]");
+  document.addEventListener("mouseover", e => { const el = target(e); if (el && !locked) show(el); });
+  document.addEventListener("mouseout", e => { const el = target(e); if (el && !locked && !(e.relatedTarget && tip.contains(e.relatedTarget))) hide(); });
+  document.addEventListener("focusin", e => { const el = target(e); if (el && !locked) show(el); });
+  document.addEventListener("click", e => {
+    const el = target(e);
+    if (el) { e.preventDefault(); locked = true; show(el); tip.classList.add("locked"); return; }
+    if (!tip.contains(e.target)) hide(true);
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") hide(true);
+    else if (e.code === "Space" && cur && !tip.hidden && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); locked = !locked; tip.classList.toggle("locked", locked); if (cur) show(cur); }
+  });
+})();
+</script>
