@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week · stylized · the subject ruled · BOTH GAPS CLOSED 9/23.** The L2b morphology system has a facial layer for the first time (`_CANON_NODES/L2b-morphology-face.md`), and MPFB2's targets were found on disk and verified, so the face spec is now **typeable target names, not directions**. **Nothing is left between the order and the sculpt except opening the file.**",
+  "status": "**FEBRUARY 2027 · six evenings a week · stylized · GATE 3 IS RUNNING — the sculpt is on disk, not on a list.** Five passes 9/23: the ruled macro and 30 face targets scripted into the scaffold, the iris driven to hazel-green, the set relit, the face rebuilt on **THE TRANSOM** (`FI3·G1·E3`), the skin tuned. **Three of the four pass checks read yes; the cool rim is the one still failing.** Left: the groom, the pose, the four remaining stills.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.23 · DOPE SHEET"
+  "version": "v0.24 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Open `set4_S4-01.blend`, set the macro block, then run the sixteen named face targets in `SPEC-SUBJECT.md` §8, save as `subject_v1.blend`.** Set targets before loading hair or clothes; the assets fit to the body as it stands.",
+  "order": "**The rim, then the groom.** The cool rim still does not separate her from the background, and `long01` clips through her left cheek in every frame. Neither is a sculpt value: one is a light placement, one is a real hair asset.",
   "default": "Silence: the redrafted §1 sentence stands; the library banks at twenty until the nut figure says forty; the sex-menu sign-off and the W7 platform pick run on the lane as ruled.",
   "calls": [
    {
@@ -407,6 +407,19 @@
        "s": "open"
       }
      ]
+    },
+    {
+     "label": "Gate 3 · the sculpt, 9/23",
+     "items": [
+      {
+       "t": "**The face is built and scripted.** `_tools/blender/slice_set4.py` now carries the ruled macro block, 30 face targets, `apply_face()`, `set_iris()`, `tune_skin()` and a `--facecheck` framing (105 mm at 1 m) for judging the sculpt without touching S4-01's ruled framing. The whole subject rebuilds from one command, so a change is a value edit and a re-render, not an evening.",
+       "s": "done"
+      },
+      {
+       "t": "**The archetype was the fix.** Passes 1–3 kept reading soft because the targets were building **the Impost** — long narrow face, soft round jaw, the face that invites. Chief asked what she embodies rather than who; the answer came out of `_CANON_NODES/L2b-morphology-face.md` §4: **the Transom**, wide and short with a sharp gonial angle and wide-set eyes, the horizontal band read. Reversing `chin-bones-decr` to `chin-bones-incr` was the single largest change.",
+       "s": "ruled"
+      }
+     ]
     }
    ]
   },
@@ -565,6 +578,10 @@
       {
        "t": "**The rewritten Gate 3 skin row is four yes/no checks**, not a judgement call: suppressed micro-texture with soft falloff · a rim pass visibly distinct from the key · exaggeration below the neck while the face stays legible · pastel-plus-accent rather than full-gamut colour. Four yeses clears it. That replaces \"does she read natural at arm's length\", which the stylized ruling made the wrong question.",
        "s": "open"
+      },
+      {
+       "t": "**Two findings on the set, both invisible until rendered.** The floor carried **no material at all**, so it rendered at Blender's default grey and was the real fill through passes 1 and 2 — lowering the world strength never touched it. And the skin banding was **not** fixed by adding pore detail: at 0.62 the pores read photoreal and fought the stylized ruling. The lever is the subsurface radius, not the pores; the settled values are pore 0.26 with SSS 0.42 at radius scale 0.32.",
+       "s": "done"
       }
      ]
     }
@@ -861,6 +878,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Both gaps closed at gear 3. The facial layer written as a canon node in the body system's own idiom, carrying two honest deviations the anatomy forced — the mimetic and masticatory muscle split, and fat that is compartmentalised and bidirectional rather than uniform — and flagging the popular oval/round/square face-shape family as styling convention that failed cross-population validation. The MPFB2 addon was found on disk and its full target inventory verified, turning the face spec from directions into sixteen named targets."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "Ran the sculpt live: \"push it\" · \"pass three\" · the archetype question · \"make the main window focus on her face so I can tell\" · \"fix the skin\". Named Sakimichan as the register and, separately, a real TikTok personality as a face reference."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Five render passes. The likeness request was declined against the charter's own rail (\"composite only, never a clone\") and redirected to the archetype, which is what produced the Transom and the actual fix. Check 1 now passes by design rather than by absence; the cool rim is the one check still failing."
     }
    ]
   }

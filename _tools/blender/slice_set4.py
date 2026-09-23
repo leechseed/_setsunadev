@@ -110,6 +110,37 @@ def apply_face(human):
     print(f"face: {ok} target(s) applied, {bad} failed")
     return ok, bad
 
+# The skin, pass 5 (9/23) — the banding fix.
+# The CC0 material ships pore detail at strength 0.2 and radius scale 0.1, which is invisible at
+# 85-105 mm, so the denoiser had a texture-less surface and quantised it into flat patches.
+# Give it signal to hold onto, and widen the subsurface so gradients roll instead of stepping.
+SKIN = {
+    "Pore strength": 0.26,      # 0.20 banded, 0.62 read photoreal and fought the stylized ruling;
+                                # the banding lever is the subsurface below, not the pores
+    "Pore scale": 1100.0,       # was 2500 — finer than this vanishes at portrait framing
+    "Pore detail": 3.0,         # was 2.0
+    "Pore distortion": 1.4,     # was 1.0 — breaks the regularity so it does not read as a grid
+    "Roughness": 0.38,          # was 0.45 — a touch more sheen for the register
+    "SSS strength": 0.42,       # was 0.20
+    "SSS radius scale": 0.32,   # was 0.10 — the main anti-banding lever: wider scatter, softer falloff
+    "Clearcoat": 0.06,          # was 0.10 — less plastic
+}
+
+def tune_skin(values=None):
+    """Drive the CC0 body material's node group. Returns the number of sockets set."""
+    values = values or SKIN
+    hit = 0
+    for m in bpy.data.materials:
+        if not m.use_nodes: continue
+        for n in m.node_tree.nodes:
+            if n.bl_idname != "ShaderNodeGroup" or not n.node_tree: continue
+            if not n.node_tree.name.endswith("body"): continue
+            for socket, val in values.items():
+                if socket in n.inputs:
+                    n.inputs[socket].default_value = val; hit += 1
+    print(f"skin: {hit} socket(s) set")
+    return hit
+
 IRIS_MAJOR = (0.38, 0.40, 0.16, 1.0)   # hazel-green, RULED 9/23 call 4
 IRIS_MINOR = (0.16, 0.12, 0.05, 1.0)   # the warm brown inner ring that makes it read hazel, not green
 
@@ -161,6 +192,7 @@ def make_subject():
                     HumanService.add_mhclo_asset(f, human, asset_type=atype, subdiv_levels=1, material_type="MAKESKIN", set_up_rigging=False)
                 except Exception as e2:
                     print("asset skipped:", sub, e2)
+        tune_skin()
         set_iris()
         bpy.ops.object.select_all(action="DESELECT"); human.select_set(True); bpy.context.view_layer.objects.active = human
         bpy.ops.object.shade_smooth()
