@@ -1,0 +1,346 @@
+{
+ "bolo": {
+  "n": 64,
+  "title": "The Claude Code doctrine — best practices folded into the Command",
+  "trunk": "BLACK",
+  "issued": "2026-09-17",
+  "asof": "2026-09-23",
+  "s": "hot",
+  "status": "🟢 9/23 RULED: all four questions answered on the recommendations (Chief: \"all recommendeds are good. Do it.\") — vocabulary first, the whole workflow set in one pass, folded into BOLO 51's standing audit, the NASA layer kept — and the boresight fired the same turn; this sheet is its first output. **Boresight landed 9/23:** 83 doc rows placed: 14 done · 10 partial · 33 gap · 14 organic · 12 not applicable; the four steps read explore DONE · plan PARTIAL · implement DONE · commit PARTIAL; no step skipped, so no gate.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "SOP · the skills · the hooks · BOLO 50 · BOLO 53",
+  "related": [
+   {
+    "n": 50,
+    "why": "the standards campaign — named in the row's text as where the standards side of this doctrine already lives"
+   },
+   {
+    "n": 51,
+    "why": "the standing audit function — the 9/23 ruling folds the Claude Code doctrine into BOLO 51's standing audit instead of a new SOP section"
+   },
+   {
+    "n": 53,
+    "why": "the Command's own development standard — the life-cycle question (the boresight → how-copy → build → FRAGO loop) named as tabled, waiting behind BOLO 50's ladder"
+   },
+   {
+    "n": 65,
+    "why": "the lineage question — ruled 9/23 to keep the NASA layer, so BOLO 65's Space Force / Air Force / SpaceX comparison stands unchanged"
+   }
+  ],
+  "home": "BOLO.md · row 64",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The boresight fires the same turn a ruling lands — six pages fetched, SOP and the skills inventoried, the gap table written, before the next session even opens."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One department, not a new one: the four steps get named in SOP §1 and every skill header, and the doctrine folds into BOLO 51's standing audit rather than spawning a new SOP section or a fifth BOLO."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "No hook gates until the boresight proves a step the Command actually skips — the discipline here is holding off on enforcement until the evidence says it's needed."
+  }
+ ],
+ "frago": {
+  "mission": "Read the Claude Code workflow docs against the Command's standing practice and fold what holds into it, in order to run the tool the way its makers say it runs best without losing the Command's own shape.",
+  "order": "**Rule the five fixes and the gate question (Calls 1 and 2); then Claude writes the four steps into SOP §1 and the six skill headers and hands the gap rows to BOLO 51's audit.** One word each; \"take the recs\" closes all four.",
+  "default": "Silence: the four steps get named in SOP §1 and the skill headers as ruled; the gap table's rows go into BOLO 51's audit as read-only rows; no hook gate is added; BOLO 65 stays on NASA.",
+  "calls": [
+   {
+    "q": "Call 1 · the hook-gate question (ruling 1's condition)",
+    "options": "no gates, the read shows no step skipped (rec) · one PreToolUse hook for the no-probing rule, a fix not a gate · gates on all four steps",
+    "default": "no gates (rec)",
+    "s": "open",
+    "why": "The four steps read explore DONE · plan PARTIAL · implement DONE · commit PARTIAL. Neither PARTIAL is a skipped step: plan is done through DOPE SHEETs and briefs instead of plan mode, commit runs every turn but with a generic message. Ruling 1 said gates only where a step is skipped. None is."
+   },
+   {
+    "q": "Call 2 · the top five fixes, all cost S or M",
+    "options": "take all five (rec) · pick by id (A6/F1 · A7 · D4 · B2/B9/C10 · A19/D18/E1/E2) · none",
+    "default": "all five (rec)",
+    "s": "open",
+    "why": "Each closes a GAP row with one script or one file: a root CLAUDE.md pointer · the Bash allowlist · descriptive autocommit messages · one PreToolUse hook behind the no-probing rule · worktree isolation for the second session."
+   },
+   {
+    "q": "Call 3 · what BOLO 51's audit carries",
+    "options": "every GAP and PARTIAL row (43 rows) as audit rows it re-reads each pass (rec) · the top five only · nothing, the table is the record",
+    "default": "all GAP and PARTIAL rows (rec)",
+    "s": "open",
+    "why": "Ruling 3 folds the doctrine into the audit. Rows the audit does not carry rot the way a new SOP section would."
+   },
+   {
+    "q": "Call 4 · the four steps in the Command's words",
+    "options": "Claude drafts the wording in Marine terms for SOP §1 and the six skill headers, you rule it (rec) · you word it · leave the docs' words",
+    "default": "Claude drafts (rec)",
+    "s": "open",
+    "why": "Chief 9/17: the four steps can be coded in Marine terms. Ruling 1 names them, gates nothing."
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What Claude Code's best-practices doctrine is, why the Command opened a BOLO on it, and how the four clarifying questions got answered.",
+   "strand": {
+    "last": "Before 9/17, Claude Code's best-practices doctrine — the four-step workflow: explore, plan, implement, commit — had never been checked against the Command's own SOP, skills, and hooks.",
+    "plan": "Read the groups below — the transmission from 9/17 and 9/23, what already exists in the Command, and what the record (STATE.md and the session notes) shows — then Execution for what's running now.",
+    "you": "You read Claude Code's best-practices page on 9/17 and said a lot of it should be implemented, starting with the four-step workflow; you left four clarifying questions open, then on 9/23 ruled all four on the recommendations and ordered the boresight to fire.",
+    "next": "Read the groups below, then Execution for the boresight now underway and Admin/Log for the files and record it left behind."
+   },
+   "groups": [
+    {
+     "label": "The transmission, verbatim where Chief ruled",
+     "items": [
+      {
+       "t": "**9/17:** Chief, reading Claude Code's best-practices page: \"a lot of this stuff we should start implementing … the four-step one: explore, plan, implement, commit … should be integrated seamlessly with the documentation we have.\"",
+       "s": "done"
+      },
+      {
+       "t": "**9/17:** Chief's ask: research first, explore before anything is built; the four steps can be coded in Marine terms; the GitHub field of workflow / MD-storage / documentation repos is a second source Chief is reading too; the adoption itself is \"a whole new process of iterative implementation … an agent group.\"",
+       "s": "done"
+      },
+      {
+       "t": "**9/23:** Chief, ruling all four clarifying questions at once: \"all recommendeds are good. Do it.\"",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "Two hooks run today: SessionStart (the digest) and Stop (autocommit).",
+       "s": "done"
+      },
+      {
+       "t": "The standing audit function already lives at BOLO 51; the standards campaign at BOLO 50; the life-cycle question (the boresight → how-copy → build → FRAGO loop as a development standard) is tabled at BOLO 53; the reviewer-at-the-fan-in role is RANGE, built under BOLO 54.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "STATE.md Blocked #20 held the four clarifying questions at the top of the list from 9/17 (\"put these four questions at the top for next session\") until Chief ruled them 9/23.",
+       "s": "done"
+      },
+      {
+       "t": "The four questions themselves, verbatim from STATE.md: (1) enforcement or vocabulary — hard hook gates on the four steps, or the named shape of what the Command already does? (2) which docs first — the best-practices page alone, or the whole workflow set (hooks · subagents · plan mode · worktrees · memory)? (3) where it lands — a new SOP section, or folded into BOLO 51's standing audit so there is one department? (4) the NASA layer (BOLO 65) — replace it, or keep it and add Space Force on top? All four ruled 9/23 on the recommendations: vocabulary first · the whole set · fold into BOLO 51 · keep NASA.",
+       "s": "done"
+      },
+      {
+       "t": "The 9/17-6 session note: BOLOs 64–66 captured research only, nothing implemented, nothing re-run; the four questions on BOLO 64 set as the top of the list for the next session.",
+       "s": "done"
+      },
+      {
+       "t": "The 9/17-7 session note: nothing new ruled on BOLO 64; Blocked #20 (the four questions) still carried above the leverage line.",
+       "s": "done"
+      },
+      {
+       "t": "The 9/20-2 session note: a sit rep reviewer caught BOLO 64 unplaced in Block IV of the board; fixed by hand.",
+       "s": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason is that the Command already runs a four-step loop without calling it one, and the docs that describe the tool it runs on have never been read against it.",
+   "strand": {
+    "last": "Chief read the Claude Code best-practices page on 9/17 and said the four steps should be integrated with the documentation we have. Four clarifying questions were asked the same turn and sat at the top of Block V for five sessions.",
+    "plan": "Answer the four, then read the docs against SOP §1 to §7 and the six skills, one gap table, before anything is built.",
+    "you": "You ruled all four on the recommendations on 9/23 and said do it. The boresight fired the same turn.",
+    "next": "Read the gap table on BORESIGHT 64, then rule the top fixes and the hook-gate question with one word each."
+   },
+   "task": "Read the Claude Code workflow docs against the Command's standing practice and fold what holds into it,",
+   "intent": "in order to run the tool the way its makers say it runs best without losing the Command's own shape.",
+   "spoken": "\"A lot of this stuff we should start implementing. The four-step one: explore, plan, implement, commit. Should be integrated seamlessly with the documentation we have.\" (9/17) · \"All recommendeds are good. Do it.\" (9/23)",
+   "endstate": [
+    "The four steps named in SOP §1 and in every skill header, in the Command's words, with no hook gate added until a skipped step is proven.",
+    "One gap table, every doc recommendation placed once: done, partial, gap, not applicable, or covered organically.",
+    "The gaps that survive folded into BOLO 51's standing audit as rows it re-reads every pass; no new SOP section.",
+    "The NASA layer untouched: CDR, MS, PS, RANGE keep their seats; the four steps are a procedure inside the mission.",
+    "BOLO 65's lineage read, BOLO 66's collect pass and BOLO 53 released from behind this row."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What's been done — the capture, the ruling, the boresight now running — and what the boresight will hand back.",
+   "strand": {
+    "last": "The BOLO sat captured and research-only from 9/17 to 9/23, held on Chief's four clarifying questions.",
+    "plan": "Capture, then rule the four questions, then fire the boresight the same turn as the ruling, then this sheet as its first output.",
+    "you": "You ruled all four questions on the recommendations 9/23 and ordered the boresight to go the same turn.",
+    "next": "The boresight's gap table lands next — that's what tells the Command whether the four steps are already how it works or something to fold in."
+   },
+   "main_effort": "Running the boresight Chief ordered the same turn as the 9/23 ruling — reading the docs' best-practices page and the wider workflow set against SOP §1–§7, the skills, and the two live hooks, to find whether the Command already speaks the four-step vocabulary or is missing a step.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**Captured** — 9/17, research only. Nothing implemented, nothing re-run; the boresight held on Chief's four clarifying questions, asked the same turn.",
+     "s": "done",
+     "when": "9/17"
+    },
+    {
+     "n": 2,
+     "t": "**Ruled** — 9/23, Chief: \"all recommendeds are good. Do it.\" All four questions answered on the recommendations: (1) vocabulary first — the four steps named in SOP §1 and every skill header, no hook gates until the boresight shows a step the Command skips; (2) the whole workflow set in one pass — best practices · hooks · subagents · plan mode · worktrees · memory; (3) folded into BOLO 51's standing audit, no new SOP section; (4) keep the NASA layer, no Space Force (BOLO 65 stands).",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 3,
+     "t": "**Boresight run** — a Payload Specialist fetches the six pages, a Mission Specialist inventories SOP §1–§7 plus the skills and the two hooks, a second Mission Specialist writes the gap table, a script reviews.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 4,
+     "t": "**Outputs landed** — BORESIGHT 64 (the gap table, 83 rows) and this DOPE SHEET 64, 9/23 03:05.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 5,
+     "t": "**The four calls** — gates · fixes · the audit rows · the wording. On the sheet, waiting on one word each.",
+     "s": "open",
+     "when": "9/23"
+    },
+    {
+     "n": 6,
+     "t": "**The fold** — the four steps written into SOP §1 and the six skill headers; the GAP and PARTIAL rows handed to BOLO 51's audit. Fires on Call 4 and Call 3.",
+     "s": "gated",
+     "when": "9/23"
+    }
+   ],
+   "coord": [],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What files this BOLO has touched and what the boresight is costing so far.",
+   "strand": {
+    "last": "Before this sheet, BOLO 64 lived only in BOLO.md's row and STATE.md's Blocked #20, plus the session notes that recorded it.",
+    "plan": "This sheet is the first file the boresight's ruling produced; the BORESIGHT 64 page follows from the run now underway.",
+    "you": "Nothing costed yet beyond the spoken turns; the boresight's own run cost has not been reported.",
+    "next": "Once the boresight lands, the gap table and the BORESIGHT 64 page will land here."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 64 — the Claude Code doctrine, captured 9/17, all four questions ruled 9/23",
+     "s": "done"
+    },
+    {
+     "path": "STATE.md",
+     "what": "Blocked #20 — the four clarifying questions on BOLO 64, top of the list since 9/17, ruled 9/23",
+     "s": "done"
+    },
+    {
+     "path": "_CACHE/2026-09-17-6.session.md",
+     "what": "session detail — BOLO 64 opened, captured research only, the four questions set as top of list for next session",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/boards/64.draft.json",
+     "what": "this sheet — DOPE SHEET 64, draft v0.1",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "base",
+     "v": "$0 reported — the capture and the ruling cost nothing beyond the spoken turns"
+    },
+    {
+     "k": "the boresight",
+     "v": "PS fetch + two MS passes + one script review, fired 9/23; run cost not yet reported"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. The doctrine is Chief's; the reading, the table and the folding are Claude's.",
+   "strand": {
+    "last": "Four questions waited on Chief from 9/17 to 9/23, top of Block V by his word.",
+    "plan": "One decider, one word per question, then the read runs without him.",
+    "you": "You gave the four words in one breath. The formation ran: one PS on the docs, one MS on the Command, one MS on the table, a script at the fan-in.",
+    "next": "Two calls come back to you off the table: which fixes to take now, and whether any step earned a gate."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — what the doctrine says, where it lands, whether a step gets a gate. **Claude** — the reading, the gap table, the wording of the four steps, the audit rows; changes no hook and no SOP text without the word.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Open since 9/23.** The four rulings opened it; the gap table is the read that closes it. Next gate: the fixes ruled, then BOLO 51 carries the rows.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "**DOPE SHEET 64** — this page · **BORESIGHT 64** — the gap table · \"FRAGO 64\" pushes a ruling onto this sheet · BOLO 51's audit reports the rows from then on.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "The record of the two transmissions — the 9/17 capture and the 9/23 ruling — and the questions asked in between.",
+   "strand": {
+    "last": "Spoken 9/17, held through STATE.md's Blocked #20, ruled 9/23.",
+    "plan": "One capture, four questions asked, one ruling that answers all four and fires the boresight.",
+    "you": "You spoke the doctrine into the record on 9/17 and closed it out on 9/23 with a single ruling on the recommendations.",
+    "next": "The boresight's own log entries land here once it returns."
+   },
+   "entries": [
+    {
+     "when": "9/17",
+     "who": "Chief",
+     "t": "\"a lot of this stuff we should start implementing … the four-step one: explore, plan, implement, commit … should be integrated seamlessly with the documentation we have.\" Chief's ask: research first, explore before anything is built; the four steps can be coded in Marine terms; the GitHub field of workflow / MD-storage / documentation repos is a second source he's reading too; the adoption itself is \"a whole new process of iterative implementation … an agent group.\""
+    },
+    {
+     "when": "9/17",
+     "who": "Claude",
+     "t": "Captured the BOLO research-only and asked four clarifying questions the same turn: enforcement or vocabulary · which docs first · where it lands · keep or replace the NASA layer (BOLO 65). Filed as STATE.md Blocked #20, top of the list for next session by Chief's word."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"all recommendeds are good. Do it.\" Ruled all four questions on the recommendations — vocabulary first, the whole workflow set in one pass, folded into BOLO 51's standing audit, keep the NASA layer — and ordered the boresight to fire the same turn."
+    }
+   ]
+  }
+ ]
+}

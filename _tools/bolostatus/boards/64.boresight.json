@@ -1,0 +1,768 @@
+{
+ "bolo": {
+  "n": 64,
+  "kind": "BORESIGHT",
+  "title": "The Claude Code docs read against the Command — the gap table",
+  "trunk": "BLACK",
+  "issued": "2026-09-23",
+  "asof": "2026-09-23",
+  "s": "hot",
+  "status": "BORESIGHT v0.1, 9/23 hot — 83 doc practices boresighted against 54 command facts: 14 DONE · 10 PARTIAL · 33 GAP · 12 N/A · 14 ORGANIC · all four steps present, none skipped · zero hook gates proposed per ruling 1 · five cheapest fixes named, folding into BOLO 51's standing audit per ruling 3.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "DOPE SHEET 64 (the sheet this boresight answers) and BOLO 51's standing audit, which the findings fold into instead of a new SOP section (ruling 3).",
+  "related": [
+   {
+    "n": 50,
+    "why": "the standards campaign — named in the row's text as where the standards side of this doctrine already lives"
+   },
+   {
+    "n": 51,
+    "why": "the standing audit function — the 9/23 ruling folds the Claude Code doctrine into BOLO 51's standing audit instead of a new SOP section"
+   },
+   {
+    "n": 53,
+    "why": "the Command's own development standard — the life-cycle question (the boresight → how-copy → build → FRAGO loop) named as tabled, waiting behind BOLO 50's ladder"
+   },
+   {
+    "n": 65,
+    "why": "the lineage question — ruled 9/23 to keep the NASA layer, so BOLO 65's Space Force / Air Force / SpaceX comparison stands unchanged"
+   }
+  ],
+  "home": "_tools/bolostatus/work/64/boresight/ (docs.md · command.md · gaps.json)",
+  "card": "none",
+  "version": "v0.1 · BORESIGHT"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Eighty-three doc rows read against fifty-four command facts in one pass, the gap table written in the next. The vocabulary lands today; nothing else gets built until it earns its own ruling."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "No hook gate goes in ahead of proof. The four steps get named in SOP §1 and every skill header — [C40] found no plan mode, [C41] found no worktree, and neither absence is grounds to bolt on a gate under ruling 1."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Severe means severe: an SOP rule with nothing running it reads PARTIAL, not DONE. Fourteen ORGANIC rows say the Command already covers the need its own way — that is a different claim than fourteen more DONEs, and this board does not blur the two."
+  }
+ ],
+ "frago": {
+  "mission": "Grade the Command's four-step workflow and every adjacent Claude Code practice against the docs, in order to give Chief a literal, severe gap table to rule on rather than a vibe.",
+  "order": "**Rule the five fixes and the gate question (Calls 1 and 2); then Claude writes the four steps into SOP §1 and the six skill headers and hands the gap rows to BOLO 51's audit.** One word each; \"take the recs\" closes all four.",
+  "default": "Silence: no gate is added; the five fixes wait; the rows sit in this table unread by the audit.",
+  "calls": [
+   {
+    "q": "Call 1 · the hook-gate question (ruling 1's condition)",
+    "options": "no gates, the read shows no step skipped (rec) · one PreToolUse hook for the no-probing rule, a fix not a gate · gates on all four steps",
+    "default": "no gates (rec)",
+    "s": "open",
+    "why": "The four steps read explore DONE · plan PARTIAL · implement DONE · commit PARTIAL. Neither PARTIAL is a skipped step: plan is done through DOPE SHEETs and briefs instead of plan mode, commit runs every turn but with a generic message. Ruling 1 said gates only where a step is skipped. None is."
+   },
+   {
+    "q": "Call 2 · the top five fixes, all cost S or M",
+    "options": "take all five (rec) · pick by id (A6/F1 · A7 · D4 · B2/B9/C10 · A19/D18/E1/E2) · none",
+    "default": "all five (rec)",
+    "s": "open",
+    "why": "Each closes a GAP row with one script or one file: a root CLAUDE.md pointer · the Bash allowlist · descriptive autocommit messages · one PreToolUse hook behind the no-probing rule · worktree isolation for the second session."
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "The gap table itself, one group per doc page (A best-practices · B hooks-guide · C sub-agents · D common-workflows · E git-worktrees · F memory), one item per doc row (83 total). Status is graded severe: an SOP rule with nothing running it reads PARTIAL, never DONE; a habit-only memory rule reads the same way.",
+   "strand": {
+    "last": "docs.md (83 rows, what the Claude Code docs recommend) and command.md (54 rows, what the Command does today and what enforces it) were fetched and inventoried before this board was written.",
+    "plan": "Walk the six pages in order below; each item names its doc id, its practice, its status, what the doc says, what the Command does today (citing command.md's C-ids), and the gap or the cheapest fix.",
+    "you": "The four rulings that frame this read: vocabulary first, no hook gates until a skipped step is shown; the whole workflow set gets read in one pass; findings fold into BOLO 51's standing audit, no new SOP section; the NASA crew-grade layer (CDR · MS · PS · RANGE) stays, no Space Force.",
+    "next": "Read the six groups, then the Execution paragraph for what happens with the findings."
+   },
+   "groups": [
+    {
+     "label": "Page A · best-practices",
+     "items": [
+      {
+       "t": "**A1 Manage context window as primary resource** — ORGANIC · Track context usage and reduce token consumption strategically as the window fills. · the Command: The Command keeps the main line's context small a different way: a SessionStart digest replaces raw reads [C1] and every formation front-loads a zero-token prep script [C2] before agents ever run. · No status line tracks percent-used; the substitute is structural (small inputs) rather than measured (a visible gauge).",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**A2 Give Claude verification criteria** — ORGANIC · Give Claude something pass/fail (tests, builds, screenshots) so it can iterate without supervision. · the Command: Formations get pass/fail from RANGE reviewer scripts that check board structure and block on failure [C52][C53], the closest thing this repo has to a test suite. · The check is structural (keys present, links resolve) not behavioral (tests/build/screenshot), because this repo has no software to test.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**A3 Separate exploration from implementation with plan mode** — PARTIAL · Use plan mode (Shift+Tab) so Claude reads and answers without editing, then you approve the plan before execution. · the Command: No plan-mode gate exists anywhere in the Command [C40]; separation is structural instead — prep scripts and read-only specialists run before any write, and the main line only writes at the fan-in [C2][C12]. · The separation is real but implicit in formation order, not an explicit approve-before-edit gate Chief can invoke on demand outside a formation.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**A4 Provide specific context and constraints** — DONE · Reference specific files, name constraints, point to example patterns so Claude needs fewer corrections. · the Command: Every specialist's entire prompt is a script-written brief file naming exact sources and the one output file to write [C9], with a fixed named-output contract [C38]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**A5 Use @ to reference files directly** — ORGANIC · Type @path/to/file so Claude reads it before responding, instead of describing where code lives. · the Command: The Command's equivalent is the brief file: a script names the exact source paths and pastes them in, so no one has to type @ mentions by hand [C9]. · Chief doesn't get the live @ suggestion menu inside a formation run; the brief is prepared ahead of time instead of composed interactively.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**A6 Write effective CLAUDE.md files** — GAP · CLAUDE.md loads at session start and carries persistent instructions; keep it short and pruned. · the Command: No CLAUDE.md exists at the repo root at all [C42]; only an unrelated one under ShroomsQ was found. · Session-start context comes only from the digest hook and MEMORY.md; there is no short, checked-in file naming code style, testing, or workflow rules for this repo.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**A7 Configure permissions with allowlists** — PARTIAL · Allowlist specific tools (npm, git) via /permissions to cut approval interruptions; combine with sandboxing. · the Command: Project settings preauthorize exactly two Bash patterns, `find:*` and `claude config set:*` [C50]; everything else still prompts. · The allowlist is real but thin — the routine commands this repo actually runs (python scripts, git status/diff, bash tool calls under _tools/) aren't on it, so most turns still prompt.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**A8 Use CLI tools like gh for external services** — GAP · Install and use the gh CLI; Claude knows how to open issues, PRs, and read comments with it. · the Command: Nothing in the Command's settings, hooks, or skills references gh or any PR workflow [C24][C50]. · The repo is public and commits happen every turn, but there is no path from a local autosave to an issue or PR — gh is simply unused.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**A9 Connect MCP servers for external integrations** — GAP · Run `claude mcp add` to connect MCP servers (Notion, Figma, databases) for integrated tool access. · the Command: The user-level settings file carries no MCP configuration relevant to this repo's own tooling — only effortLevel, theme, model, and one env var [C34][C51]. · Anything an MCP server would give (structured DB access, ticketing) is instead done by hand-rolled scripts per formation; no integration is missing that's currently blocking work.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**A10 Set up hooks for deterministic actions** — DONE · Hooks run scripts automatically at lifecycle points and guarantee the action happens every time. · the Command: Exactly two hooks are configured project-wide: Stop runs autocommit [C32], SessionStart runs the digest [C33], per the settings file [C31]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**A11 Create skills for domain knowledge** — DONE · Skills in `.claude/skills/SKILL.md` give reusable domain workflows, applied automatically or invoked by name. · the Command: Seven skills are registered under `.claude/skills/`, each firing on named spoken phrases in its own frontmatter [C47]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**A12 Define subagents for specialized tasks** — DONE · Create subagents in `.claude/agents/` with specific tools and prompts, running in isolated contexts. · the Command: Crew grades (CDR/MS/PS/RANGE) fix each formation seat by function and model [C13][C35], and every formation actually launches typed specialists per skill [C16]-[C21]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**A13 Install plugins for bundled extensions** — N/A · Plugins bundle skills, hooks, subagents, and MCP servers into installable units; code-intelligence plugins add symbol navigation. · the Command: The Command has no plugin installed and doesn't need to package for reuse elsewhere — it is a single private repo, not distributed across projects. · Plugins solve portability across repos; this operation has one repo and already bundles behavior directly in SOP.md + skills + scripts.",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**A14 Course-correct early and often** — GAP · Use Esc to stop, Esc+Esc or /rewind to restore to a previous checkpoint; tight feedback loops beat drift. · the Command: Nothing in command.md documents rewind/checkpoint use; the closest analog, autocommit, is a forward-only safety net [C23], not a mid-turn correction tool. · If a specialist or the main line drifts mid-turn, there's no documented habit of using Esc/rewind to back out cleanly — the fallback is finish-then-fix.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**A15 Use /clear between unrelated tasks** — PARTIAL · Run /clear to reset context between unrelated tasks so old context doesn't drag on performance. · the Command: The Stop hook's matcher explicitly fires on `/clear` alongside startup/resume [C32], so /clear is wired into the autosave+digest cycle when used, but nothing shows it's used as a habit between unrelated tasks. · The hook plumbing supports /clear; whether Chief actually clears between unrelated asks (vs. one long thread) isn't established by anything in command.md.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**A16 Delegate investigation to subagents** — DONE · Use subagents to keep large-scale exploration out of the main context; they report back summaries only. · the Command: Every formation's H0 prep script plus its read-only specialists keep exploration in a subagent's own context, reporting one named file back [C2][C12][C16]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**A17 Use rewind checkpoints for safety** — ORGANIC · Every prompt creates a checkpoint; use /rewind to restore conversation, code, or both without losing work. · the Command: The Command's safety net is different: the Stop hook autocommits every turn to local git regardless of outcome [C23][C24], so any turn can be rolled back with git instead of /rewind. · Git checkpoints are coarser (one per turn, code-only) than /rewind's conversation+code checkpoints, and require a manual `git reset` rather than a slash command.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**A18 Resume conversations across sessions** — DONE · Run `claude --continue`/`--resume` to pick up where you left off; name sessions with /rename to find them later. · the Command: The SessionStart hook fires on its `startup|resume|clear` matcher and re-seeds context with the digest on resume [C31][C33], so resuming lands with the current state already loaded. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**A19 Run multiple parallel sessions** — GAP · Use --worktree to run isolated sessions in separate git checkouts so parallel edits don't collide. · the Command: No reference to git worktrees or any multi-checkout workflow appears anywhere in SOP.md, the skills, or the hooks/scripts read [C41]. · Chief is known to run two sessions at once against the same working tree; without worktree isolation those sessions can collide on the same files with no structural guard, only session-id discipline.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**A20 Run Claude non-interactively in CI pipelines** — N/A · Use `claude -p \"prompt\"` for CI, pre-commit hooks, or scripts, with `--output-format stream-json` for parsing. · the Command: The Command has no CI pipeline; it's a personal-ops repo run interactively, not built/tested by an external system. · Non-interactive CI mode has nothing to attach to here — there is no build or test stage this would gate.",
+       "s": "parked",
+       "when": "9/23"
+      }
+     ]
+    },
+    {
+     "label": "Page B · hooks-guide",
+     "items": [
+      {
+       "t": "**B1 Set up hooks for automation** — DONE · Hooks are user-defined shell commands run at lifecycle points, giving deterministic control. · the Command: Two hooks exist and run every session: Stop (autocommit) and SessionStart (digest) [C31][C32][C33]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**B2 Use PreToolUse hooks to validate commands** — GAP · PreToolUse fires before a tool call and can block it — e.g. restricting DB access to read-only. · the Command: No PreToolUse hook is configured; the settings file has exactly two hooks and neither is PreToolUse [C31]. · Nothing can deterministically block a tool call before it runs — e.g. the no-unasked-probing rule [C3] is enforced only by habit, not by a hook that could refuse the scan.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**B3 Use PostToolUse hooks for formatting** — GAP · PostToolUse fires after a tool succeeds; use it to run formatters, linters, or notifications. · the Command: No PostToolUse hook exists [C31]; formatting/linting isn't part of this repo's toolchain (mostly markdown/JSON/python utility scripts). · A malformed JSON board or a script with a syntax error could land without any automatic check running right after the edit.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**B4 Use Stop hooks as deterministic gates** — PARTIAL · A Stop hook can block the turn from ending until a check passes, guaranteeing verification before Claude moves on. · the Command: The Command's Stop hook exists but is deliberately non-blocking: it always exits 0 so a git failure can never stop the session [C23][C24]; real gating happens elsewhere, in RANGE reviewer scripts at each formation's fan-in [C52]. · The one Stop hook that runs on every turn is explicitly not a verification gate; if it were, an autosave failure would incorrectly block the session, so this is a deliberate tradeoff rather than an oversight.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**B5 Use prompt-based hooks for judgment** — GAP · Prompt-based hooks use Claude to evaluate conditions needing reasoning, complementing deterministic script hooks. · the Command: Both configured hooks are plain shell/python scripts [C31][C32][C33]; no prompt-based hook exists anywhere. · Any judgment-call enforcement (e.g. \"is this a probing scan?\") currently has no hook path at all, deterministic or prompt-based — it's pure habit [C46].",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**B6 Use agent-based hooks for complex validation** — GAP · Agent-based hooks delegate to a subagent for complex multi-step validation needing its own context. · the Command: No agent-based hook exists; the closest analog is RANGE, which is always a script by doctrine, never an agent, even at the fan-in [C13][C52]. · There's no hook-triggered agent validation step; the formation doctrine's own rule against agent-based checking (never a checker agent) [C15] makes this an intentional non-fit, not an oversight.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**B7 Hook events include SessionStart and SessionEnd** — PARTIAL · SessionStart fires at session begin/resume; SessionEnd fires at session termination, for setup and cleanup. · the Command: SessionStart is configured and runs the digest [C31][C33]; no SessionEnd hook exists anywhere in the settings. · Session open is automated; session close still depends on Chief saying \"Oscar Mike\" and the skill running by hand [C25], not a SessionEnd hook that fires no matter how the session ends.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**B8 Hook events include UserPromptSubmit and Stop** — PARTIAL · UserPromptSubmit fires before Claude processes a prompt; Stop fires after Claude finishes responding. · the Command: Stop is configured and runs autocommit [C31][C32]; no UserPromptSubmit hook exists. · Nothing can inspect or gate an incoming prompt before Claude processes it — e.g. auto-detecting a proword or garble before the turn starts has to happen in-context instead.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**B9 Hook events include PreToolUse and PostToolUse** — GAP · These events fire around tool calls, letting you validate or react to tool execution. · the Command: Neither is configured; the settings file has exactly two hooks, Stop and SessionStart [C31]. · Same underlying gap as B2/B3 — no tool-call-level hook exists at all.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**B10 Hook events include FileChanged and ConfigChange** — GAP · FileChanged fires on a watched file changing; ConfigChange fires when a config file changes mid-session. · the Command: Neither event is used anywhere; the only two hooks are Stop and SessionStart [C31]. · A change to `.claude/settings.local.json` or a board JSON mid-session triggers nothing automatically.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**B11 Hook events include WorktreeCreate and WorktreeRemove** — N/A · WorktreeCreate fires when a worktree is created; WorktreeRemove fires on removal at session exit or deletion. · the Command: The Command uses no worktrees anywhere [C41], so these events have nothing to attach to. · Moot until worktrees are adopted (see A19/E1-E3); these events only exist to hook a workflow the Command doesn't run.",
+       "s": "parked",
+       "when": "9/23"
+      }
+     ]
+    },
+    {
+     "label": "Page C · sub-agents",
+     "items": [
+      {
+       "t": "**C1 Use subagents to preserve context** — DONE · Subagents run in isolated context windows; high-volume exploration stays there, only the summary returns. · the Command: Every formation keeps specialist reads out of the main line's context by design — the main line only ever reads the digest or the specialists' named output files [C1][C2][C12]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**C2 Keep subagent descriptions under 15,000 tokens** — PARTIAL · Description tokens load at startup for delegation decisions; detailed behavior belongs in the system prompt instead. · the Command: The Command doesn't define reusable named subagents at all — specialists are generic Agent-tool calls carrying a brief file as the whole prompt [C9]; skill files themselves run 1.9–4.8 KB, well under budget by accident rather than by rule. · Nothing in command.md shows a deliberate token budget being tracked for any agent description — it's small because the format is small, not because a limit is enforced.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**C3 Enforce tool restrictions with tools field** — GAP · Use `tools:` or `disallowedTools:` so a subagent's access matches its job (read-only reviewer vs. Bash-capable fixer). · the Command: No `.claude/agents/` definitions with a `tools:`/`disallowedTools:` field are referenced anywhere in command.md; specialists are scoped by brief-file instruction (\"read nothing else, write only X\") [C36], not by an enforced tool allowlist. · A PS or MS specialist could technically call any tool available to the Agent type it runs under; the \"read nothing else\" boundary is convention, not a config-enforced restriction.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C4 Use @ mentions to guarantee subagent delegation** — ORGANIC · Type @\"agent-name\" to force a specific subagent to run, bypassing automatic delegation. · the Command: The Command guarantees which agent runs a different way: each skill's H1 step names the exact agent type and pastes a brief file as its entire prompt [C36], and skills themselves fire on named spoken phrases rather than @ mentions [C47]. · The guarantee is procedural (skill text says which agent) rather than syntactic (@ mention in the message), so it depends on the operator following the skill's steps.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**C5 Set permission modes per subagent** — GAP · Use `permissionMode:` (default, acceptEdits, plan, dontAsk) to control how a subagent handles permission prompts. · the Command: No permission-mode configuration for any subagent appears in command.md; formations run under whatever the main session's permission mode is. · A PS/MS specialist doing pure fetch-and-write work still prompts (or auto-accepts) at the session's default rather than a mode scoped to its narrow, disjoint job.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C6 Choose model for cost and performance** — DONE · Set `model: sonnet/haiku/opus` per subagent to trade off cost and capability. · the Command: Crew grades fix the model by seat every time: PS=Haiku, MS=Sonnet, CDR=Fable/main-line-only, RANGE=script-never-a-model [C13][C35], applied identically across every formation's skill text [C16]-[C21]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**C7 Isolate subagents in git worktrees** — GAP · Set `isolation: worktree` so a subagent works an isolated repo copy and can't touch the main checkout. · the Command: No worktree isolation exists for any subagent anywhere [C41]; every specialist writes directly into the shared working tree. · A specialist that mis-writes has no structural containment — the fixed-output-contract convention [C38] is the only guard, not filesystem isolation.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C8 Preload skills into subagent context** — ORGANIC · List skills in a `skills:` field to inject domain knowledge at subagent startup without requiring discovery. · the Command: The Command preloads a different way: the brief file itself IS the preload, pasted verbatim as the specialist's entire prompt [C9], with the boundary \"read nothing else\" stated in skill text [C36]. · This works for narrow, single-purpose specialists; it wouldn't scale to a subagent needing several skills' worth of standing knowledge at once, which the `skills:` field is built for.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**C9 Enable persistent memory for subagents** — GAP · Set `memory: user/project/local` so a subagent keeps a directory that survives across conversations. · the Command: No subagent in the Command has persistent memory; every specialist is one-shot with a fixed input brief and a fixed output file [C38], gone once the formation ends. · A PS/MS that runs the same kind of extraction repeatedly (e.g. EXTRACT-k in collect) starts cold every time — no accumulated pattern knowledge carries between runs.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C10 Use PreToolUse hooks in subagents** — GAP · Define PreToolUse hooks scoped to a subagent to conditionally allow or block its operations. · the Command: No PreToolUse hooks exist anywhere in the Command, for the main session or any subagent [C31]. · Same root cause as B2/B9 — no PreToolUse hook exists to scope, whether at session or subagent level.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C11 Organize subagent files hierarchically** — GAP · Create subfolders under `.claude/agents/` to organize agents by domain; identity comes from `name`, not path. · the Command: No `.claude/agents/` directory is referenced anywhere in command.md; specialists exist only as generic Agent-tool invocations described in skill text, never as named files on disk [C36]. · There's nothing to organize because named subagent files were never created — crew-grade identity lives in SOP prose, not in a `name:` field on a checked-in file.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C12 Run subagents in background** — PARTIAL · Subagents run in the background in interactive sessions by default, letting you keep working while they finish. · the Command: Formations launch multiple specialists together in one message so they run independently and concurrently [C37]; this matches the platform default rather than a Command-specific setting. · Concurrent, background-style launch is described in skill text, but nothing in command.md confirms it's deliberately configured rather than just the tool's out-of-the-box behavior.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**C13 Resume subagents to continue work** — GAP · Use SendMessage with the agent's ID or name to resume a subagent without spawning a fresh instance. · the Command: No mention of resuming a subagent appears anywhere in command.md; every formation spawns fresh specialists per run [C16]-[C21]. · If a specialist's draft needs a second pass, current doctrine says rerun it fresh with the finding pasted under its brief [C22], not resume its own history — cheaper to write, more expensive in tokens than a true resume.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C14 Limit subagent nesting depth** — GAP · Use `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` to cap how deeply subagents can spawn their own subagents. · the Command: No env var or setting limiting nesting depth appears in command.md; the formation rule already discourages deep nesting by having specialists report to the main line only, never spawn their own subagents [C12]. · Nesting depth isn't config-capped, only convention-capped by the flat hub-and-spoke shape; a specialist that did try to spawn its own subagent wouldn't be technically blocked.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C15 Cap concurrent subagents** — ORGANIC · Use `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS` to prevent resource exhaustion past 20 running agents. · the Command: Gear N is the Command's own concurrency cap: gear 1 = 3 agents (default) up to gear 5 = 15 (never used), one shift per task then reverting to gear 1 [C14]. · Gear N is enforced by SOP text and habit, not a hard platform-level env var — it could in principle be exceeded if the rule were ignored.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**C16 Scope MCP servers to subagents** — N/A · Use `mcpServers:` to give a subagent access to MCP tools unavailable in the main conversation. · the Command: The Command connects no MCP servers of its own at all [C34], so there is nothing to scope to a subagent. · This depends on A9 (connect MCP servers) being true first; since no MCP server is wired in, per-subagent scoping doesn't apply yet.",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**C17 Run entire session as subagent** — N/A · Pass `claude --agent <name>` or set `\"agent\"` in settings to run the whole session under a subagent's constraints. · the Command: Crew grades fix CDR as the main line only, by design never spawned as a subagent [C13][C35]; running the whole session as a subagent contradicts that seat definition. · Doesn't fit the doctrine: CDR's identity IS being the main line, not a subagent role that could be assumed session-wide.",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**C18 Omit CLAUDE.md for lightweight subagents** — N/A · Set `omitClaudeMd: true` to launch a subagent without CLAUDE.md files, cutting context overhead. · the Command: Moot: no CLAUDE.md exists anywhere in the repo to omit [C42]. · This flag only matters once a root CLAUDE.md exists (see A6/F1's fix); until then there's nothing for a subagent to skip.",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**C19 Deny specific subagents in permissions** — GAP · Add `Agent(subagent-name)` to `permissions.deny` to prevent Claude from using specific subagents. · the Command: The permissions block only lists two allowed Bash patterns [C50]; no deny list for any agent exists. · There's no config-level block on an unwanted agent type running; the only control is the main line choosing not to invoke it.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**C20 Use fork mode to inherit parent state** — N/A · A fork inherits the parent conversation's full context, tools, and history instead of starting fresh. · the Command: The formation rule requires the opposite: specialists share no state and sync only at named handoff points [C12]; fork mode's whole-history inheritance runs against that doctrine on purpose. · Fork mode solves a problem (continuing with full context) the Command's doctrine deliberately avoids creating (disjoint inputs, no shared state).",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**C21 Set effort level per subagent** — GAP · Use `effort: low/medium/high/max` to override the session's effort level for a specific subagent. · the Command: Effort is fixed globally at the user-settings layer (`effortLevel: high`) [C51]; no per-subagent override is used anywhere in command.md. · Every specialist runs at the same global effort regardless of how simple its job is (a PS fetch-and-extract likely doesn't need high effort), leaving cost on the table.",
+       "s": "hot",
+       "when": "9/23"
+      }
+     ]
+    },
+    {
+     "label": "Page D · common-workflows",
+     "items": [
+      {
+       "t": "**D1 Explore phase of four-step workflow** — ORGANIC · Enter plan mode (Shift+Tab) so Claude reads files and answers questions without making changes. · the Command: The explore step isn't skipped, it's just not plan-mode: a SessionStart digest [C1], per-formation prep scripts [C2], the no-unasked-probing rule [C3], and link-harvest-before-read [C4] all place a read-only pass before any write. · No literal plan-mode toggle exists [C40]; the read-before-write guarantee is structural (formation order) rather than an interactive gate Chief can invoke mid-conversation.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**D2 Plan phase of four-step workflow** — ORGANIC · Ask Claude to draft a detailed plan in plan mode; open it in your editor (Ctrl+G) to edit directly before proceeding. · the Command: Planning happens on paper instead of in an editable plan-mode doc: a DOPE SHEET carries the five-paragraph order [C6], a FRAGO patches it by script [C7], and a spoken tasking must be written into BOLO.md the same turn or it \"didn't happen\" [C11]. · There's no Ctrl+G-style direct edit of an ephemeral plan; the plan artifact is a persistent JSON/markdown file edited through its own formation (dope-sheet/frago), which is slower per edit but leaves a durable record plan mode wouldn't.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**D3 Implement phase of four-step workflow** — DONE · Exit plan mode, let Claude code, verify against the plan, run tests and fix failures. · the Command: Implementation runs through the formation rule (disjoint specialists, one reviewer at the fan-in) [C12], with RANGE reviewer scripts actually blocking a bad write until fixed [C52][C53]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**D4 Commit phase of four-step workflow** — PARTIAL · Ask Claude to commit with a descriptive message and open a PR, completing explore→plan→implement→commit. · the Command: Every turn auto-commits via the Stop hook, but with a generic \"autosave <date/time> · N file(s)\" message [C23], never a descriptive one, and never a PR — pushing is a deliberate act kept separate from commits [C24]. · Commits happen every turn without fail, which is better-than-doc reliability, but the messages carry no information about what changed or why, and there's no PR step at all.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**D5 Get quick codebase overview** — ORGANIC · Start with broad questions, then narrow down; ask about conventions, patterns, and key data models. · the Command: The SessionStart digest hook already front-loads a ~40-line overview (rack, Blocked rows, newest BOLOs, PMCS red, box probe, tree status, main effort) automatically at open [C1], instead of Chief having to ask broad-to-narrow questions. · The digest is a fixed shape, not a conversational broad-to-narrow drill-down; a genuinely novel question about the codebase still needs to be asked by hand.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**D6 Find relevant code by domain** — GAP · Be specific using project domain language; install code-intelligence plugins for precise go-to-definition. · the Command: No code-intelligence plugin is installed or referenced [C47]; domain-language search relies on grep/glob and the skill/SOP vocabulary rather than symbol navigation. · This repo is mostly markdown/JSON/python utility scripts rather than a large typed codebase, so go-to-definition matters less, but there's still no tooling for it if a script layer grows.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**D7 Fix bugs efficiently** — GAP · Share the error, ask for fix recommendations, then apply; give the reproduce command and steps. · the Command: No documented bug-fix workflow or repro-command convention appears in command.md for the many `_tools/*.py` scripts that run the formations. · When a formation script errors (e.g. `check.py` or `assemble.py` failing), there's no stated habit of pasting the exact repro command — it likely happens ad hoc each time.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**D8 Refactor code safely** — N/A · Identify legacy code, get recommendations, apply changes while maintaining behavior, verify with tests. · the Command: No test suite exists for any of the `_tools/*.py` scripts, and no refactor workflow is documented; scripts are small, single-purpose utilities rather than a codebase under active refactor. · Refactor-safety-via-tests doesn't fit single-purpose utility scripts with no behavior contract beyond \"produces this one file\"; RANGE reviewer scripts already catch output-shape regressions where it matters [C52].",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**D9 Work with tests** — ORGANIC · Identify untested code, generate test scaffolding, add meaningful cases, run and verify. · the Command: No test files or framework exist anywhere in command.md; verification instead runs through RANGE reviewer scripts (`check.py`, `assemble.py`) that structurally validate each formation's output before it's allowed to publish [C52][C53]. · This covers structural correctness of generated boards, not general code correctness — a genuine software test suite for the python utilities themselves still doesn't exist.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**D10 Create pull requests step-by-step** — GAP · Summarize changes, generate a PR, then refine the description; use `--from-pr` to find linked sessions. · the Command: No PR is ever created — commits stay local by design and pushing is treated as a separate, deliberate act [C24]. · There is currently no path from a batch of autosave commits to a reviewable PR, even though the repo is public.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**D11 Handle documentation** — ORGANIC · Identify undocumented code, generate docs (JSDoc/docstrings), review for standards, request examples. · the Command: The Command's documentation IS its operating model: SOP.md (57 KB) declares itself canonical [C43], each SKILL.md opens by naming the SOP section it runs [C48], and every BOLO gets a standing DOPE SHEET [C6]. · This covers process/doctrine documentation extensively; it does not cover docstrings or inline comments for the `_tools/*.py` scripts themselves, which the doc's practice is actually aimed at.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**D12 Work in non-code folders** — DONE · Claude Code works fine in notes vaults or markdown collections; .claude/ sits alongside other tools' configs. · the Command: This is already the Command's native shape — SOP.md, BOLO.md, and every board are markdown/JSON, not application code [C6][C47]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**D13 Work with images in codebase** — GAP · Drag, paste, or path images to Claude for error analysis, UI matching, schema work, or component generation. · the Command: No image-based workflow is described anywhere in command.md for this repo's operations. · If a board or a design needed visual review (a screenshot of a published sit-rep page, say), there's no stated convention for handing Claude the image.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**D14 Reference files and directories with @** — ORGANIC · Use @file or @directory to include content directly; can reference multiple files and MCP resources at once. · the Command: Brief files serve the same purpose — a script names and pastes the exact sources a specialist needs [C9] — rather than Chief typing @ mentions live. · Multi-file/MCP-resource referencing in one live @ gesture isn't available this way; the brief has to be assembled by the prep script ahead of time.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**D15 Run Claude on recurring schedule** — GAP · Use Routines (cloud), Desktop scheduled tasks, GitHub Actions, or /loop for recurring runs with explicit success criteria. · the Command: No recurring/scheduled automation is referenced anywhere in command.md — every formation is triggered by a spoken phrase, not a clock. · Nothing runs on its own cadence (a nightly digest refresh, a weekly RTB sweep); every run needs a live prompt from Chief.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**D16 Ask Claude about its own capabilities** — N/A · Claude has built-in access to its own documentation and can answer questions about Claude Code's features. · the Command: This is a platform capability, not something the Command configures or could be missing. · Not an operational practice of the Command; it's a base Claude Code feature independent of this repo's setup.",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**D17 Resume previous conversations** — DONE · Run `--continue` for the most recent session or `--resume` to choose from a list; sessions persist locally. · the Command: The SessionStart hook's `startup|resume|clear` matcher re-seeds the digest on resume [C31][C33], so a resumed session opens with current state already loaded. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**D18 Run parallel sessions with worktrees** — GAP · Use `--worktree feature-auth` for an isolated session on its own branch, useful for Writer/Reviewer patterns. · the Command: No worktree usage exists anywhere in the Command [C41]; Chief's two-at-once sessions run without this isolation. · Same underlying gap as A19/E1/E2 — parallel sessions currently share one working tree with no filesystem-level collision guard.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**D19 Delegate research to subagents** — DONE · Say \"use a subagent to investigate X\" to keep exploration out of the main conversation; it reports a summary. · the Command: Every formation's prep script plus disjoint specialists do exactly this on every run [C1][C2][C16]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**D20 Pipe Claude into scripts** — N/A · Run `claude -p \"prompt\"` non-interactively for CI, pre-commit hooks, or batch processing. · the Command: No non-interactive/headless pipeline exists; the Command has no CI to pipe into. · Same underlying absence as A20 — there's no external pipeline stage this would feed.",
+       "s": "parked",
+       "when": "9/23"
+      }
+     ]
+    },
+    {
+     "label": "Page E · git-worktrees",
+     "items": [
+      {
+       "t": "**E1 Create isolated worktrees with --worktree flag** — GAP · Run `claude --worktree feature-auth` for a parallel session in its own git checkout on its own branch. · the Command: No worktree has ever been created in this repo per command.md [C41]. · Same root gap as A19/D18 — no isolated checkout exists for any parallel work.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**E2 Worktrees prevent edit collisions** — GAP · Each worktree is a separate checkout on its own branch, so a feature session and a bugfix session can't collide. · the Command: Chief runs two sessions at once against the same tree with no worktree isolation [C41]; the only guard is closing sessions by id per the parallel-sessions memory rule, which command.md doesn't independently confirm. · Two live sessions editing the same files at once have no structural collision guard — only operator discipline (closing by session id) stands between them and a stomped edit.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**E3 Monitor parallel sessions from one screen** — GAP · Use the Desktop app or `claude agents` to manage multiple local sessions visually, each optionally in its own worktree. · the Command: No mention of the Desktop app or `claude agents` view appears anywhere in command.md; parallel sessions are tracked by convention (closing by session id) rather than a visual multi-session view. · There's no single-screen view of what each concurrent session is doing; state has to be inferred from STATE.md/BOLO.md separately per session.",
+       "s": "hot",
+       "when": "9/23"
+      }
+     ]
+    },
+    {
+     "label": "Page F · memory",
+     "items": [
+      {
+       "t": "**F1 Use CLAUDE.md for persistent instructions** — GAP · CLAUDE.md loads at session start and carries knowledge across conversations; keep it short and pruned. · the Command: No CLAUDE.md exists at the repo root [C42]; session-start context comes only from the digest hook [C33] and the user-level MEMORY.md [C44]. · There is no short, project-scoped, checked-in file naming this repo's own conventions — everything either lives in the much larger SOP.md or in cross-conversation user memory that isn't project-specific.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**F2 CLAUDE.md files can import additional files** — N/A · Use `@path/to/import` syntax in CLAUDE.md to import additional files; checked-in files let teams compound value. · the Command: Moot — there is no CLAUDE.md to import from [C42]. · This only becomes relevant once a root CLAUDE.md exists (see F1's fix).",
+       "s": "parked",
+       "when": "9/23"
+      },
+      {
+       "t": "**F3 Auto memory notes Claude's learnings** — DONE · Claude accumulates learnings automatically from corrections and preferences, complementing CLAUDE.md. · the Command: The user-level MEMORY.md index holds roughly 45 one-line rulings, each linking to its own detail file, actively used and cited throughout command.md [C44]. · closed — nothing outstanding.",
+       "s": "done",
+       "when": "9/23"
+      },
+      {
+       "t": "**F4 Use AGENTS.md alongside or instead of CLAUDE.md** — ORGANIC · AGENTS.md provides an alternative or complement to CLAUDE.md for project conventions. · the Command: The Command's chosen equivalent is SOP.md, which self-declares itself the canonical protocol that even Claude's own agent memory mirrors and defers to on conflict [C43]. · SOP.md is one large file (57 KB) rather than a small, dedicated conventions file the way AGENTS.md/CLAUDE.md are meant to be; it does the job at the cost of being loaded in full rather than pruned.",
+       "s": "ruled",
+       "when": "9/23"
+      },
+      {
+       "t": "**F5 Scope rules with .claude/rules/ directory** — GAP · Use `.claude/rules/` with multiple RULE.md files to scope instructions to specific file types or contexts. · the Command: No `.claude/rules/` directory exists; SOP.md carries all standing rules as one monolithic file rather than scoped per context [C43]. · Every rule in SOP.md applies everywhere by default; there's no way to scope a rule to, say, only the `_tools/bolostatus/` boards without it being one more paragraph in the same 57 KB file.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**F6 Configure auto memory settings** — PARTIAL · Auto memory is configurable in settings; Claude writes notes based on corrections, persisting across sessions. · the Command: Auto memory is functioning (MEMORY.md has ~45 entries [C44]), but the user-level settings file doesn't show any deliberate auto-memory configuration — only effortLevel, theme, model, autoUpdatesChannel, and one env var are set [C51]. · It isn't clear whether auto-memory's settings (what gets captured, how aggressively) have ever been reviewed or tuned versus just left at default.",
+       "s": "open",
+       "when": "9/23"
+      },
+      {
+       "t": "**F7 CLAUDE.md treats context and enforcement differently** — GAP · CLAUDE.md content is advisory, not enforced; use a PreToolUse hook instead to actually block an action. · the Command: This is the Command's central weak point: a long list of standing behavioral rules (no-unasked-probing [C3], go-means-the-order [C8], spoken-tasking-capture [C11], OUT-block format [C30], and more generally [C46]) exist only as SOP text or memory files, checked by nothing but habit each reply. · None of these rules are hook-enforced; per this read's own framing, that's not itself a problem to fix with a gate — the ruling for this BOLO is vocabulary first, no hook gates until a step is shown to actually get skipped, and this read found no step that is skipped, only steps enforced by habit rather than config.",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**F8 Keep CLAUDE.md rules concise and specific** — N/A · Ask \"would removing this cause mistakes?\" for every line; bloated files cause Claude to ignore instructions. · the Command: Moot for CLAUDE.md itself since none exists [C42]; the analogous question hasn't been asked of SOP.md's 57 KB or MEMORY.md's ~45 entries [C44]. · No CLAUDE.md exists to prune; the comparable pruning discipline for SOP.md/MEMORY.md is out of scope for this specific doc practice.",
+       "s": "parked",
+       "when": "9/23"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This read's reason is ruling 1: name the steps, gate nothing, unless the read shows a step the Command skips.",
+   "strand": {
+    "last": "Chief ruled the four questions on 9/23 and said do it.",
+    "plan": "Six doc pages against SOP §1 to §7, the six skills and the two hooks; every recommendation placed once.",
+    "you": "You gave the four rulings. One PS fetched the docs, one MS inventoried the Command, one MS wrote the table, a script checked every id and every citation.",
+    "next": "Rule the gate question and the five fixes on DOPE SHEET 64."
+   },
+   "task": "Place every recommendation in the Claude Code workflow docs against the Command's standing practice,",
+   "intent": "in order to show what already holds, what is missing, and what the Command does its own way at least as well.",
+   "spoken": "\"Research first, explore before anything is built.\" (9/17) · \"All recommendeds are good. Do it.\" (9/23)",
+   "endstate": [
+    "83 doc rows placed: 14 done · 10 partial · 33 gap · 14 organic · 12 not applicable.",
+    "The four steps read: explore DONE · plan PARTIAL · implement DONE · commit PARTIAL. No step is skipped, so ruling 1 adds no gate.",
+    "Five fixes named, each one script or one file, cost S or M.",
+    "The GAP and PARTIAL rows ready for BOLO 51's audit."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "The four rulings, the fetch, and the inventory are done; the gap table is done. What's left is folding the findings into BOLO 51's standing audit, naming the four-step vocabulary in SOP §1 and every skill header, and clearing the five cheapest fixes one at a time.",
+   "strand": {
+    "last": "Chief ruled the four framing decisions on 2026-09-23: vocabulary first (no hook gates until a skipped step is shown), the whole workflow set read in one pass, findings fold into BOLO 51 rather than a new SOP section, and the NASA crew-grade layer stays.",
+    "plan": "Close the four done phases, then run the two open doctrine phases, then clear the five named fixes in cost order (S before M).",
+    "you": "You asked for the vocabulary named, not a new enforcement layer bolted on before it's earned.",
+    "next": "Fold this board's findings into BOLO 51, then add the four-step names to SOP §1 and each skill header."
+   },
+   "main_effort": "Fold the findings into BOLO 51's standing audit — everything else on this board is either already closed or downstream of that fold.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**The four rulings.** Vocabulary first, no hook gates until a skipped step is shown · the whole workflow set in one pass · findings fold into BOLO 51, no new SOP section · the NASA crew-grade layer stays, no Space Force.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 2,
+     "t": "**The fetch.** docs.md pulled: 83 rows across best-practices, hooks-guide, sub-agents, common-workflows, git-worktrees, and memory.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 3,
+     "t": "**The inventory.** command.md built: 54 rows on what the Command does today and what enforces each thing — hook, script, skill text, SOP rule, memory, or nothing.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 4,
+     "t": "**The gap table.** gaps.json written: all 83 doc ids graded DONE/PARTIAL/GAP/N/A/ORGANIC against the 54 command facts, severe grading applied throughout.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 5,
+     "t": "**The fold into BOLO 51.** Carry this board's GAP and PARTIAL rows into BOLO 51's standing audit as audit entries — no new SOP section per ruling 3.",
+     "s": "open",
+     "when": ""
+    },
+    {
+     "n": 6,
+     "t": "**The four-step vocabulary.** Name explore · plan · implement · commit in SOP §1 and in every skill header, matching what this board's four_steps summary already confirmed is not skipped.",
+     "s": "open",
+     "when": ""
+    },
+    {
+     "n": 7,
+     "t": "**Fix 1 (S) — A6/F1.** Write a short root CLAUDE.md pointing at SOP.md §1 and the skill list.",
+     "s": "open",
+     "when": ""
+    },
+    {
+     "n": 8,
+     "t": "**Fix 2 (S) — A7.** Run fewer-permission-prompts against a week of transcripts and expand the Bash allowlist past its current two patterns.",
+     "s": "open",
+     "when": ""
+    },
+    {
+     "n": 9,
+     "t": "**Fix 3 (S) — D4.** Have autocommit.sh append a one-line summary of touched paths instead of a bare file count, without touching its always-exit-0 safety property.",
+     "s": "open",
+     "when": ""
+    },
+    {
+     "n": 10,
+     "t": "**Fix 4 (M) — B2/B9/C10.** Write one PreToolUse hook blocking scan-shaped Bash calls unless the order names the box, giving the no-unasked-probing rule [C3] real enforcement.",
+     "s": "open",
+     "when": ""
+    },
+    {
+     "n": 11,
+     "t": "**Fix 5 (M) — A19/D18/E1/E2.** Adopt --worktree for the second of Chief's two concurrent sessions, closing the edit-collision gap a shared tree carries today.",
+     "s": "open",
+     "when": ""
+    }
+   ],
+   "coord": [
+    "This board makes no config or SOP change itself — it is the read the fold and the vocabulary edit both act on.",
+    "Per ruling 1, none of the 33 GAP rows are grounds for a hook on their own; a hook gets written only where a step is later shown to actually get skipped."
+   ],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What this read cost, what it produced, and where the inputs live.",
+   "strand": {
+    "last": "One PS (haiku) ran the fetch against the six Claude Code doc pages; two MS (sonnet) built the command.md inventory and this gap table in sequence, not in parallel — the inventory had to exist before the gap table could cite it.",
+    "plan": "The two extracts and the gap table stay as working files under work/64/boresight/; this board is the record.",
+    "you": "Nothing to pay — base $0, no external calls beyond the doc fetch.",
+    "next": "If Chief wants a doc page re-pulled after a Claude Code docs update, only that page's row needs a re-fetch, not the whole set."
+   },
+   "files": [
+    {
+     "path": "_tools/bolostatus/work/64/boresight/docs.md",
+     "what": "83 rows, ids A1..F9: what the Claude Code docs recommend, fetched from six doc pages (PS, haiku)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/64/boresight/command.md",
+     "what": "54 rows, ids C1..C54: what the Command does today and what enforces it (MS, sonnet)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/64/boresight/gaps.json",
+     "what": "the gap table: all 83 doc rows graded against the 54 command facts, plus the summary block (MS, sonnet)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/boards/64.boresight.draft.json",
+     "what": "this board",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "base",
+     "v": "$0"
+    },
+    {
+     "k": "agents run",
+     "v": "1 PS (haiku, the fetch) · 2 MS (sonnet: the command.md inventory, then this gap table and board)"
+    },
+    {
+     "k": "the two extracts",
+     "v": "docs.md 19,694 bytes · command.md 15,883 bytes"
+    },
+    {
+     "k": "the gap table",
+     "v": "gaps.json 63,215 bytes, 83 rows, zero placeholders"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. The table is Claude's; what to do with it is Chief's.",
+   "strand": {
+    "last": "The four questions sat at the top of Block V from 9/17 to 9/23.",
+    "plan": "One read, then calls with recommendations, one word each.",
+    "you": "You opened it with four words in one breath.",
+    "next": "Two calls decide the rest: gates and fixes."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — whether any step earns a gate, which fixes run, what the audit carries. **Claude** — the table, the wording draft, the audit rows; touches no hook and no SOP text before the word.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Open 9/23.** Closes when Calls 1 and 2 on DOPE SHEET 64 are ruled.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "**BORESIGHT 64** — this page · **DOPE SHEET 64** — the calls · gaps.json, docs.md, command.md on disk under _tools/bolostatus/work/64/boresight/.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "The record of the read.",
+   "strand": {
+    "last": "Captured 9/17, ruled 9/23, run 9/23.",
+    "plan": "One board, six doc pages, 83 rows.",
+    "you": "You named the four rulings before the read started, so the grading had a frame instead of a guess.",
+    "next": "Fold into BOLO 51, then the SOP §1 vocabulary edit."
+   },
+   "entries": [
+    {
+     "when": "9/17",
+     "who": "ACTUAL",
+     "t": "BOLO 64 captured: fold Claude Code's own best-practices doctrine into the Command and see what's already covered versus what's missing."
+    },
+    {
+     "when": "9/17",
+     "who": "ACTUAL",
+     "t": "Four questions asked going in: does the Command skip a workflow step the docs assume, is the vocabulary named anywhere, does anything actually enforce the standing rules, and where does the NASA crew-grade layer sit against Claude Code's own subagent model."
+    },
+    {
+     "when": "9/23",
+     "who": "ACTUAL",
+     "t": "The four framing rulings made: vocabulary first with no hook gates until a skipped step is shown · the whole workflow set read in one pass · findings fold into BOLO 51, no new SOP section · the NASA crew-grade layer stays, no Space Force."
+    },
+    {
+     "when": "9/23",
+     "who": "MS",
+     "t": "The boresight run: docs.md and command.md fetched and inventoried, gaps.json written against all 83 doc ids, this board built. 14 DONE · 10 PARTIAL · 33 GAP · 12 N/A · 14 ORGANIC; no workflow step found skipped."
+    }
+   ]
+  }
+ ]
+}
