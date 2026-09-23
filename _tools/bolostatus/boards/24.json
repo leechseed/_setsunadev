@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**LAUNCH MONTH RULED 2026-09-23: FEBRUARY 2027 · THE PACE IS RULED TOO: five to six evenings a week (Chief, 9/23).** The back-plan runs the arithmetic on it: at six evenings a week the work costs 16.7 weeks against the 19 available — **a margin of 2.3 weeks**; at five it costs 20 weeks and **misses February by one**. Six is the number. **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.** Three calls stay open (D-8 · D-10 · D-11), each drawn with a recommendation and a one-word answer.",
+  "status": "**FEBRUARY 2027 · six evenings a week the planning rate · D-8 RULED 9/23 (\"8 confirm\") — the 30-day reference pull starts now.** Two calls left on this sheet: **D-10 is under a boresight** (Chief: \"I don't understand what you need\") and **D-11 is sent back for development** (Chief: \"we do need to develop the 11 more\"). **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.13 · DOPE SHEET"
+  "version": "v0.14 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,8 +50,8 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Six evenings a week, starting with the sculpt.** Five is not a slower February, it is a March. The three calls cost one word each: D-8 \"Confirm\" · D-10 \"Stands\" · D-11 \"Confirm\".",
-  "default": "Silence: the back-plan stands as drawn (the extra month over the boresight's January recommendation goes into library-banking, not a second test month); D-10's §1 draft locks in by its own default; D-8 and D-11 stay open and the reference pull does not start. The 20-piece library floor and the 60-day buffer run until the October test thresholds say otherwise.",
+  "order": "**Start the 30-day reference pull and the Gate 3 sculpt, six evenings a week.** The pull runs in parallel with the evenings and lands inside the Gate 3 window; the sculpt is the first evening.",
+  "default": "Silence: the back-plan stands as drawn; D-10's §1 draft stands by its own default while the boresight runs; D-11 stays open and the sex-menu sign-off and the W7 platform pick stay blocked behind it.",
   "calls": [
    {
     "q": "D-9 · the clear",
@@ -85,19 +85,22 @@
     "q": "D-8 · the reference method",
     "options": "confirm: a fresh X account plus bookmarks, five core, twenty-five wide, pulled at zero cost",
     "default": "confirm (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23, Chief: \"8 confirm.\" The method is confirmed as written — one fresh X account, bookmarks only, five core seats plus twenty-five wide, at zero cost, pulled by hand over thirty days. Three of the five core seats are already filled (itsmemphishxe · Sulbas3D and 3DessJeez · Kirenes and Variety Itsol). Seat 3 (Fanvue) stays a flagged risk with its stated fallback: try by hand once, leave the seat open if the pull fails. **Schedule note: started 9/23 the pull lands about 10/23, inside the Gate 3 evenings window, so it costs no critical-path time.**"
    },
    {
     "q": "D-10 · the intent",
     "options": "word the one sentence in §1 yourself",
     "default": "the draft stands until you do",
-    "s": "open"
+    "s": "held",
+    "ruling": "**BORESIGHT 9/23** — Chief: \"what's the boresight on D-10, I don't understand what you need.\" No delivery until it clears. The call is the charter §1 sentence: the operator's reason for running the studio at all, not the persona's brand line. The draft stands meanwhile."
    },
    {
     "q": "D-11 · the content lane",
     "options": "where her content sits relative to the funnel's lane; framing that processors and platforms ban downstream gates the platform pick",
     "default": "mainstream tag, no ideology framing (rec)",
-    "s": "open"
+    "s": "held",
+    "ruling": "**SENT BACK FOR DEVELOPMENT 9/23** — Chief: \"we do need to develop the 11 more.\" One word was not enough; the lane needs a worked pass before it can be ruled."
    },
    {
     "q": "D-14 · the launch month",
@@ -294,6 +297,17 @@
    ],
    "running": [
     "Nothing. Held."
+   ],
+   "groups": [
+    {
+     "label": "Running · 9/23",
+     "items": [
+      {
+       "t": "**The 30-day reference pull is live (D-8 confirmed).** One fresh X account, bookmarks only, five core seats and twenty-five wide, by hand, zero cost. It runs alongside the Gate 3 evenings and feeds the posting grammar that Season 1 needs at launch.",
+       "s": "hot"
+      }
+     ]
+    }
    ]
   },
   {
@@ -433,7 +447,7 @@
     "last": "The flow says an undated hold is illegal; the sit rep has said so three times.",
     "plan": "One decider, three legal answers.",
     "you": "You are the gate and the only one who can open it.",
-    "next": "Three words: D-8 \"Confirm\" · D-10 \"Stands\" · D-11 \"Confirm\". Each is drawn with its evidence and the one fact that would flip it."
+    "next": "D-10's boresight: two questions on the ground, no delivery until they clear. D-11: the development pass, then the ruling."
    },
    "groups": [
     {
@@ -616,6 +630,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Ran the arithmetic and wrote it to the sheet: at six evenings a week February holds with 2.3 weeks in hand; at five it slips a week past February. Six is the planning rate. The back-plan's last 'not stated' is closed; the income search's hours remain the only unquantified competitor for the same nights."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"8 confirm\" — the reference method ruled. On D-10: \"what's the boresight on D-10, I don't understand what you need.\" On D-11: \"we do need to develop the 11 more.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "D-8 written ruled; the 30-day pull opened as a running item and dated against the Gate 3 window. D-10 put under a boresight, the draft standing meanwhile. D-11 sent back for a development pass rather than a one-word ruling."
     }
    ]
   }
