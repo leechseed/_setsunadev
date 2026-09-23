@@ -329,7 +329,7 @@
  "bolo37": {
   "t": "BOLO 37",
   "k": "item",
-  "d": "The proword selection loop: five candidates, pick three ranked, ten a day, Claude's sealed pick revealed after. Name bench MINT (rec). Three spec gaps; gap 3, placement, is answered by this page.",
+  "d": "The proword selection loop, named BREVITY 9/23: each open bench shows five, Chief picks three ranked, the picks write to disk on submit, the back five are the reserve. Placement: a panel of the sit rep page (BOLO 38). Build fires on \"go 37\".",
   "w": "BOLO.md #37 · SOP.md §5 · DOPE SHEET 37 https://claude.ai/artifact/GgA7zgN42aMWiJQqbKGGso"
  },
  "bolo38": {
@@ -518,8 +518,8 @@
  "mint": {
   "t": "MINT",
   "k": "proword",
-  "st": "benched",
-  "d": "Recommended name for the proword selection loop ([[bolo37|BOLO 37]]): where the lexicon gets struck, beside DARKROOM and WARROOM. Bench: BREVITY · SOI · CALLSIGN · LEXICON. Your ruling.",
+  "st": "retired",
+  "d": "Retired 9/23: was the recommended name for the proword selection loop; Chief named it BREVITY.",
   "w": "BOLO.md #37 · SOP.md §5"
  },
  "readyroom": {
@@ -640,7 +640,7 @@
   "t": "BREVITY",
   "k": "noun",
   "st": "ruled",
-  "d": "What the [[soi|SOI]] holds, RULED 9/11 (\"I do like brevity better\"): the Command's word list, after the Multi-Service Brevity Codes, the list that makes radio short. The SOI's subtitle on every page. Replaced \"the lexicon\" (provisional) and \"the house tongue\" (retired). BREVITY leaves MINT's bench; MINT stands for the loop.",
+  "d": "What the [[soi|SOI]] holds, RULED 9/11 (\"I do like brevity better\"): the Command's word list, after the Multi-Service Brevity Codes, the list that makes radio short. The SOI's subtitle on every page. Replaced \"the lexicon\" (provisional) and \"the house tongue\" (retired). RULED 9/23: BREVITY also names the proword selection loop ([[bolo37|BOLO 37]]), the pass that mints the list; MINT retired.",
   "w": "SOP.md §0 · §6 · the SOI page"
  },
  "hotline": {
