@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week · EVERY CALL ON THIS SHEET IS RULED.** D-8 confirmed · **D-10 ruled 9/23: the redrafted §1 sentence taken** · **D-11 ruled 9/23: Position B, funnel-adjacent, her channel, her frame.** The ledger that opened on 9/3 with D-1 and ran eleven deep is closed. **The whole schedule is Gate 3, and Gate 3 has not started — 0 of 15–20 evenings.**",
+  "status": "**FEBRUARY 2027 · six evenings a week · the D-ledger closed (D-8 · D-10 · D-11 · D-14 · D-17 · D-19) — but three calls from the beat sheet and the gates table were never on this sheet, and they are now.** The library size, the explicit/suggestive/SFW split, and what the Gate 3 skin test is measured against. Each carries a recommendation. **Gate 3 is still the whole schedule — 0 of 15–20 evenings.**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.17 · DOPE SHEET"
+  "version": "v0.19 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**The sculpt. Tonight, and six nights a week after it.** No decision on this sheet blocks it. The §1 nut figure is the only number still outstanding and it decides twenty pieces or forty, not whether the evenings start.",
+  "order": "**The sculpt tonight; the skin pass runs to a stylized bar, not a photoreal one.** Before the skin evening, the AAR's row 1 needs rewriting — the old test asks whether she reads real at arm's length, and that is now the wrong question.",
   "default": "Silence: the redrafted §1 sentence stands; the library banks at twenty until the nut figure says forty; the sex-menu sign-off and the W7 platform pick run on the lane as ruled.",
   "calls": [
    {
@@ -115,6 +115,34 @@
     "default": "none; only you have it",
     "s": "ruled",
     "ruling": "RULED 2026-09-23, Chief: \"I should be able to sustain, like, five, six nights a week.\" The back-plan's last stated unknown is closed. The arithmetic on 100 evenings against 19 weeks: **6/week = 16.7 weeks, margin +2.3 weeks · 5.5/week = 18.2 weeks, margin +0.8 · 5/week = 20 weeks, margin −1.0.** February survives at six and slips at five, so six is the planning rate and five is the warning line, not the floor."
+   },
+   {
+    "q": "D-17 · the render style",
+    "options": "stylized · photoreal · hybrid",
+    "default": "stylized (rec)",
+    "s": "ruled",
+    "ruling": "**RULED 2026-09-23, Chief: \"if Fansly bans photoreal, then let's totally do stylized.\"** Stylized it is, and the policy read backs it: Fansly bans photoreal AI, Patreon allows stylized AI and bans hyperrealistic, TikTok and YouTube auto-label photoreal. Stylized widens the platform set instead of narrowing it. **Style reference named by Chief: Sakimichan** — the painted, semi-realistic pinup register, cited off the KDA set. Held to the same rule the reference accounts run under: **a register to aim at, never a clone**; the look is derived, not copied, and no output should be presentable as that artist's work."
+   },
+   {
+    "q": "L-1 · the launch library size",
+    "options": "the back-plan's conservative floor (20 pieces + 60 days) · the beat sheet's Season 1 requirement (28 launch + 10 buffer = 38) · the ceiling (40 + 90 days)",
+    "default": "28 + 10 (rec)",
+    "s": "open",
+    "ruling": "**Recommended: the beat sheet's 28 + 10.** The twenty-piece floor was picked off a runway read, not off purpose, and D-10 has since ruled durability over speed — so the floor is now the wrong default. 28 + 10 is what Season 1's five beats actually require (8 sets / 38 stills), it sits between the floor and the ceiling, and at four evenings a still it costs about 152 evenings against the 80 the floor costs. **That is the plan's biggest single number and it is why the §1 nut figure still matters: the nut is the only thing that should force the floor.**"
+   },
+   {
+    "q": "L-2 · the explicit / suggestive / SFW split",
+    "options": "the beat sheet's 45 / 35 / 20 · a lewd-first weighting · something else",
+    "default": "45 / 35 / 20 with the explicit share behind the paid tier (rec)",
+    "s": "open",
+    "ruling": "**Recommended: keep 45 / 35 / 20 as the library's composition, but read it against D-18's lewd-first ruling for what goes where.** The 45 percent explicit is the paid tier's inventory; the public feed runs on the 35 suggestive and 20 SFW, which is what keeps Instagram and TikTok reach alive and the processors uninterested. The split is a mix ratio, not a posting ratio — those were being conflated."
+   },
+   {
+    "q": "L-3 · the Gate 3 skin test",
+    "options": "confirm Set 4 as the test · a different set · a different test",
+    "default": "confirm Set 4, with the bar rewritten to stylized (rec)",
+    "s": "open",
+    "ruling": "**Recommended: Set 4 stays the test, but D-17 changed what passing means.** The AAR's row 1 asks whether the skin reads natural against the DARKROOM pull at arm's length — a photorealism check, and the ruling on 9/23 was stylized. The rewritten bar: does the render read as a deliberate painted style in the Sakimichan register, rather than as a failed attempt at real? Same set, same evening, different pass condition — and the COA B skin-shader spend that hung off the old row probably falls away with it."
    }
   ]
  },
@@ -261,7 +289,7 @@
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
     "you": "You ruled the month on 9/23 and unlocked gear 6 to draw the plan behind it; twelve specialists read the eleven source files and two wrote the plan.",
-    "next": "The sculpt. Gate 3's first evening is the whole schedule — nothing downstream can start until the slice runs."
+    "next": "The sculpt. Then rewrite the AAR skin row to the stylized bar before the skin pass runs against it."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -333,6 +361,15 @@
       {
        "t": "**The sex-menu sign-off and the W7 platform pick are released.** Both were held behind the lane; the lane is ruled. The sign-off is §9 call 7 on the character sheet; W7 feeds D-13's platform set.",
        "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Reopened by D-17 · 9/23",
+     "items": [
+      {
+       "t": "**The Gate 3 AAR row 1 is now the wrong test.** It asks whether S4-01's skin reads natural against the DARKROOM pull at arm's length — a photorealism check. Under a stylized ruling the question becomes whether the render reads as a deliberate painted style rather than a failed real one, which is a different pass condition and a different failure mode. **Rewrite row 1 before the skin evening.**",
+       "s": "hot"
       }
      ]
     }
@@ -466,6 +503,10 @@
       {
        "t": "**Six evenings a week is the planning rate (RULED 9/23).** The margin is 2.3 weeks at six and negative at five, so the difference between the two is the difference between February and March. The income search competes for the same nights and no figure exists for it yet — that is the one number still missing from the plan.",
        "s": "ruled"
+      },
+      {
+       "t": "**The COA B skin-shader spend ($120–150) may now be unnecessary.** It was the trigger attached to failing the photoreal skin row. A stylized target does not need a photoreal skin bundle, so the stretch budget probably stays unspent — confirm at the AAR rather than before it.",
+       "s": "open"
       }
      ]
     }
@@ -707,6 +748,21 @@
      "when": "9/23",
      "who": "Claude",
      "t": "D-10 written ruled; the mission's intent half replaced with the redraft and the durability consequence recorded with it. Brief v1.0; M-002 closed. The sheet has no open call left — the next thing on BOLO 24 is the first Gate 3 evening."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"If Fansly bans photoreal, then let's totally do stylized.\" D-17 ruled. Style reference named: Sakimichan, off the KDA pinups — \"a good interesting place to have their inspiration for the style.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "D-17 written ruled with the platform reasoning and the reference held to register-not-clone. Two consequences recorded: the AAR's skin row was written against a photoreal bar and needs rewriting before the skin evening, and the COA B skin-shader spend it triggered is probably moot."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Correction to the record: the D-ledger closing did not close BOLO 24's calls. The BOLO row has carried three more since 9/16 — the library size, the explicit/suggestive/SFW split, and the Gate 3 skin test — which lived on the beat sheet and the gates table and had never been pulled onto this sheet. They are on it now as L-1, L-2 and L-3, each with a recommendation. One ledger from here."
     }
    ]
   }

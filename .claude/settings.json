@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk *)",
+      "Bash(python _tools/bolostatus/frago.py*)",
+      "Bash(python _tools/bolostatus/build.py*)",
+      "Bash(python _tools/bolostatus/check.py*)",
+      "Bash(python _tools/bolostatus/prep.py*)",
+      "Bash(python _tools/launch/launch.py*)",
+      "Bash(python _tools/launch/shutdown.py*)",
+      "Bash(python _tools/sitrep/assemble.py*)",
+      "Bash(python _tools/sitrep/prep.py*)",
+      "Bash(python _tools/sitrep/build.py*)",
+      "Bash(python _tools/sitrep/digest.py*)",
+      "Bash(python _tools/oscarmike/journal.py*)",
+      "Bash(python _tools/oscarmike/close.py*)",
+      "Bash(python _tools/zotero/fullpass.py*)",
+      "Bash(python _tools/zotero/check_distill.py*)",
+      "Bash(python _tools/zotero/inventory.py*)",
+      "Bash(python _tools/soi/build.py*)",
+      "Bash(python _tools/tm/build.py*)",
+      "Bash(python _tools/dictation/codebook.py*)",
+      "Bash(python _tools/audit/audit.py*)"
+    ]
+  }
+}
