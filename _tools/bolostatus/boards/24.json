@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week · the D-ledger closed (D-8 · D-10 · D-11 · D-14 · D-17 · D-19) — but three calls from the beat sheet and the gates table were never on this sheet, and they are now.** The library size, the explicit/suggestive/SFW split, and what the Gate 3 skin test is measured against. Each carries a recommendation. **Gate 3 is still the whole schedule — 0 of 15–20 evenings.**",
+  "status": "**FEBRUARY 2027 · six evenings a week · stylized · the nut ANSWERED 9/23 and the runway is short.** The figures stay in `_PRIVATE/BOLO-24-gates-table.md` §1 — this sheet and the repo carry the branch only. **First-dollar-first is confirmed, not provisional. L-1 resolves to the floor: twenty pieces plus sixty days.** The stretch budget is effectively zero and nothing is bought before the AAR. **Gate 3 is the whole schedule — 0 of 15–20 evenings, and the sculpt has no physical brief yet.**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.19 · DOPE SHEET"
+  "version": "v0.20 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**The sculpt tonight; the skin pass runs to a stylized bar, not a photoreal one.** Before the skin evening, the AAR's row 1 needs rewriting — the old test asks whether she reads real at arm's length, and that is now the wrong question.",
+  "order": "**Write the face-and-body spec, then sculpt.** The character sheet says how she reads — armored, direct, a dare — and never says how she looks: no face shape, no build, no height. One evening of spec off the L2b morphology chain, the sixteen Set 4 reference thumbs already on disk, and the Sakimichan register now that stylized is ruled. Sculpting without it produces an anyone.",
   "default": "Silence: the redrafted §1 sentence stands; the library banks at twenty until the nut figure says forty; the sex-menu sign-off and the W7 platform pick run on the lane as ruled.",
   "calls": [
    {
@@ -127,8 +127,8 @@
     "q": "L-1 · the launch library size",
     "options": "the back-plan's conservative floor (20 pieces + 60 days) · the beat sheet's Season 1 requirement (28 launch + 10 buffer = 38) · the ceiling (40 + 90 days)",
     "default": "28 + 10 (rec)",
-    "s": "open",
-    "ruling": "**Recommended: the beat sheet's 28 + 10.** The twenty-piece floor was picked off a runway read, not off purpose, and D-10 has since ruled durability over speed — so the floor is now the wrong default. 28 + 10 is what Season 1's five beats actually require (8 sets / 38 stills), it sits between the floor and the ceiling, and at four evenings a still it costs about 152 evenings against the 80 the floor costs. **That is the plan's biggest single number and it is why the §1 nut figure still matters: the nut is the only thing that should force the floor.**"
+    "s": "ruled",
+    "ruling": "**RESOLVED 2026-09-23 by the nut, not by a fresh decision.** D-5's structure was already ruled — under four months of runway compresses the library — and Chief's figures confirm a short runway. **The library banks at the floor: twenty pieces plus a sixty-day buffer.** This overrides the 28 + 10 recommendation written earlier the same day, which was made on durability grounds while the nut was still unknown. It saves about 72 evenings and is the difference between a plan that fits the 19 weeks and one that does not. Durability still governs everything the money does not; here the money governs."
    },
    {
     "q": "L-2 · the explicit / suggestive / SFW split",
@@ -372,6 +372,15 @@
        "s": "hot"
       }
      ]
+    },
+    {
+     "label": "Before the sculpt · 9/23",
+     "items": [
+      {
+       "t": "**The sculpt has no physical brief.** The character sheet is twelve layers of psychology, chart and register; its L2 line — \"presentation is direct, armored, coiled, reads as a dare\" — is a register, not a face. There is no face shape, no build, no height, no hair anywhere in it. The slice order sends the sculpt at \"the character sheet's register\", which cannot be sculpted against. **The spec is one short evening: the L2b morphology chain (SKELETON → MUSCLE → FAT → CONDITION) from BOLO 43, the sixteen Set 4 thumbs in `refs/set4/`, and Sakimichan's register as the stylized target.**",
+       "s": "hot"
+      }
+     ]
     }
    ]
   },
@@ -381,10 +390,10 @@
    "kind": "files",
    "plain": "What the launch runs on. Zero dollars base; the numbers are the one thing the brief cannot derive.",
    "strand": {
-    "last": "The whole reference set was built in eight days.",
+    "last": "The nut sat unanswered from 9/3 to 9/23, twenty days, while every plan around it ran provisional.",
     "plan": "GPU time and attention; no money before Gate 3.",
     "you": "You pay in rulings first, then in full-time attention.",
-    "next": "Six evenings a week. The first one is the sculpt; the skin pass behind it is the row that gates the gate."
+    "next": "Nothing bought before the AAR. The evenings are the whole budget."
    },
    "files": [
     {
@@ -506,6 +515,10 @@
       },
       {
        "t": "**The COA B skin-shader spend ($120–150) may now be unnecessary.** It was the trigger attached to failing the photoreal skin row. A stylized target does not need a photoreal skin bundle, so the stretch budget probably stays unspent — confirm at the AAR rather than before it.",
+       "s": "open"
+      },
+      {
+       "t": "**The stretch budget is effectively zero** and the income search competes with the six evenings for the same nights. That competition is the plan's largest unquantified risk — no hours-per-week figure exists for it.",
        "s": "open"
       }
      ]
@@ -763,6 +776,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Correction to the record: the D-ledger closing did not close BOLO 24's calls. The BOLO row has carried three more since 9/16 — the library size, the explicit/suggestive/SFW split, and the Gate 3 skin test — which lived on the beat sheet and the gates table and had never been pulled onto this sheet. They are on it now as L-1, L-2 and L-3, each with a recommendation. One ledger from here."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "The nut answered: the runway is short, the income is $70 a week from his mother and that is the whole of it. Figures written to _PRIVATE only; the repo is public."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "L-1 resolved to the twenty-piece floor off D-5's existing structure rather than as a new call — the nut overrode the durability recommendation written earlier the same day. First-dollar-first confirmed; the stretch budget treated as zero. Separately flagged before the first evening: the character sheet carries no physical description, so the sculpt has nothing to aim at until a face-and-body spec is written."
     }
    ]
   }
