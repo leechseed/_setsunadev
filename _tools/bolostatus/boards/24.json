@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week · stylized · the nut ANSWERED 9/23 and the runway is short.** The figures stay in `_PRIVATE/BOLO-24-gates-table.md` §1 — this sheet and the repo carry the branch only. **First-dollar-first is confirmed, not provisional. L-1 resolves to the floor: twenty pieces plus sixty days.** The stretch budget is effectively zero and nothing is bought before the AAR. **Gate 3 is the whole schedule — 0 of 15–20 evenings, and the sculpt has no physical brief yet.**",
+  "status": "**FEBRUARY 2027 · six evenings a week · stylized · library at the floor · THE SUBJECT SPEC IS WRITTEN.** The sculpt has a brief for the first time: macro slider values to type, the face by region, the body in the L2b chain, twelve appearance calls each with a recommendation, and four yes/no checks that replace the old photoreal skin row. **Gate 3: 0 of 15–20 evenings, and the first one is now a sitting rather than a guess.**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.20 · DOPE SHEET"
+  "version": "v0.21 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Write the face-and-body spec, then sculpt.** The character sheet says how she reads — armored, direct, a dare — and never says how she looks: no face shape, no build, no height. One evening of spec off the L2b morphology chain, the sixteen Set 4 reference thumbs already on disk, and the Sakimichan register now that stylized is ruled. Sculpting without it produces an anyone.",
+  "order": "**Rule the twelve appearance calls, then sculpt.** The macro block is five minutes of panel work with the values already chosen; the twelve calls are hair, eyes, skin tone, marks, makeup and the rest — the things that make her a specific person instead of a default. Say \"take the twelve\" to take them all as written.",
   "default": "Silence: the redrafted §1 sentence stands; the library banks at twenty until the nut figure says forty; the sex-menu sign-off and the W7 platform pick run on the lane as ruled.",
   "calls": [
    {
@@ -288,8 +288,8 @@
    "strand": {
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
-    "you": "You ruled the month on 9/23 and unlocked gear 6 to draw the plan behind it; twelve specialists read the eleven source files and two wrote the plan.",
-    "next": "The sculpt. Then rewrite the AAR skin row to the stylized bar before the skin pass runs against it."
+    "you": "You ruled stylized, named Sakimichan, gave the money, and said go on the spec — four orders in one transmission.",
+    "next": "Rule the twelve, then open `set4_S4-01.blend` and set the macro block."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -379,6 +379,10 @@
       {
        "t": "**The sculpt has no physical brief.** The character sheet is twelve layers of psychology, chart and register; its L2 line — \"presentation is direct, armored, coiled, reads as a dare\" — is a register, not a face. There is no face shape, no build, no height, no hair anywhere in it. The slice order sends the sculpt at \"the character sheet's register\", which cannot be sculpted against. **The spec is one short evening: the L2b morphology chain (SKELETON → MUSCLE → FAT → CONDITION) from BOLO 43, the sixteen Set 4 thumbs in `refs/set4/`, and Sakimichan's register as the stylized target.**",
        "s": "hot"
+      },
+      {
+       "t": "**The spec closed the gap it found.** Two findings came out of building it and both are on the record: **the L2b morphology system is body-only — it has no facial layer at all**, so the face runs on the Sakimichan register instead; and **MPFB2's exact face-target names could not be verified from disk**, so the face section gives regions and directions to read off the panel labels rather than names to type blind. The macro slider names and ranges were verified and are safe to set.",
+       "s": "done"
       }
      ]
     }
@@ -485,6 +489,11 @@
      "path": "_tools/bolostatus/work/24/backplan/D11-LANE.md",
      "what": "the D-11 lane paper: category versus framing, the four evidence reads, four positions drawn concretely, Position B recommended, the flip condition",
      "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/24/backplan/SPEC-SUBJECT.md",
+     "what": "the face-and-body spec: the five-line brief, the macro block as settable MPFB2 values, the face region by region, the body in the L2b chain, the twelve appearance calls with recommendations, the four-check pass condition, the unknowns",
+     "s": "done"
     }
    ],
    "cost": [
@@ -519,6 +528,10 @@
       },
       {
        "t": "**The stretch budget is effectively zero** and the income search competes with the six evenings for the same nights. That competition is the plan's largest unquantified risk — no hours-per-week figure exists for it.",
+       "s": "open"
+      },
+      {
+       "t": "**The rewritten Gate 3 skin row is four yes/no checks**, not a judgement call: suppressed micro-texture with soft falloff · a rim pass visibly distinct from the key · exaggeration below the neck while the face stays legible · pastel-plus-accent rather than full-gamut colour. Four yeses clears it. That replaces \"does she read natural at arm's length\", which the stylized ruling made the wrong question.",
        "s": "open"
       }
      ]
@@ -786,6 +799,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "L-1 resolved to the twenty-piece floor off D-5's existing structure rather than as a new call — the nut overrode the durability recommendation written earlier the same day. First-dollar-first confirmed; the stretch budget treated as zero. Separately flagged before the first evening: the character sheet carries no physical description, so the sculpt has nothing to aim at until a face-and-body spec is written."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Go spec.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "The subject spec built at gear 2: five PS on the morphology system, the Set 4 reference manifest, the Sakimichan register, the character sheet's appearance record and MPFB2's controls; one MS writing. `SPEC-SUBJECT.md` delivered — macro values, the face by region, the body in the L2b chain, twelve calls with recommendations, four pass checks. Two gaps found and recorded rather than papered over: L2b has no facial layer, and MPFB2's face-target names are unverified from disk."
     }
    ]
   }
