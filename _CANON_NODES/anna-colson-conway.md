@@ -199,3 +199,8 @@ Her name is ruled: **Anna Colson Conway**. Legacy identity: "Colson," Student Bo
 
 - **⧗ Handle / Feed classification label:** none proposed as canon. See Open Questions #8 — the recommendation is to leave her unlabeled, since never having been filed as a case is itself part of what she demonstrates.
 - **⧗ Nickname:** none documented or proposed. If one surfaces, it should come from Tori's Truth register (she is the only lens close enough to coin one), not from this node.
+
+
+## ⚠️ Naming
+
+**RULED 2026-09-23: the short form is Anna Colson**, never bare "Anna".
