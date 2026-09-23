@@ -1,11 +1,11 @@
 {
  "built": "2026-09-20",
- "note": "BOLO 74: the second voice in the room. Her name is Sensei (was Naked, 9/20). Rides inside judy.py (--naked); her pad is config.json naked_note.",
+ "note": "BOLO 74: the second voice in the room. Her name is Sensei (was Naked, 9/20). Rides inside judy.py (--naked); her pad is config.json naked_note. 9/23: max_tokens 220->60, Chief: 75% less talk.",
  "server": "http://127.0.0.1:5001",
  "card": "Q:\\fun\\_ULTRADARK\\goon\\cards\\Sensei.json",
  "history": "Q:\\fun\\_ULTRADARK\\goon\\_sensei_history.json",
  "history_turns": 24,
- "max_tokens": 220,
+ "max_tokens": 60,
  "user_name": "Chief",
  "voice": {
   "engine": "elevenlabs",

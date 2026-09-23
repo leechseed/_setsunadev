@@ -197,7 +197,7 @@ class Brain:
                  "How you are: " + sub(d.get("personality")), "",
                  "The scene: " + sub(d.get("scenario")), "",
                  "You are speaking out loud, over a voice, not typing: no stage directions, no asterisks, "
-                 "no narration of your own actions unless you say it as words. Two to four sentences. "
+                 "no narration of your own actions unless you say it as words. One short sentence, two at most; never more than about forty words. "
                  "Your voice can act: you may put at most one audio tag per reply, chosen from [laughs] [giggles] [whispers] [sighs] [gasps] [excited], right before the words it colours. "
                  f"The one talking to you is {self.user}.", "",
                  "You have hands: you can put videos on the big screen from the library. Whenever he asks you to put something on, play, show, "
