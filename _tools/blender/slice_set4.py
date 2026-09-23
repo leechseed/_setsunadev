@@ -256,12 +256,17 @@ def make_lights(hdri_path):
     if hasattr(key.data, "temperature"): key.data.temperature = 3000
     else: key.data.color = (1.0, 0.72, 0.48)
     key.rotation_euler = (math.radians(70), 0, math.radians(-55))
-    # the faint cool rim, behind and opposite
-    bpy.ops.object.light_add(type="AREA", location=(1.6, 1.4, 1.9))
+    # the cool rim, behind and opposite the key.
+    # pass 6 (9/23): it sat at (1.6,1.4,1.9) on a hand-set euler — 2.5 m out, small, and aimed by
+    # rotation, so inverse square ate it and it never landed on the jaw. Pulled in, and aimed with a
+    # constraint at the head instead of by rotation, so it cannot drift when anything else moves.
+    rim_aim = bpy.data.objects.new("rim_aim", None); rim_aim.location = (0, 0, 1.50)
+    bpy.context.scene.collection.objects.link(rim_aim)
+    bpy.ops.object.light_add(type="AREA", location=(1.02, 0.88, 1.76))
     rim = bpy.context.active_object; rim.name = "rim_cool"
-    # pass 2 (9/23): rim was 25 and never reached the face
-    rim.data.energy = 55; rim.data.size = 0.4; rim.data.color = (0.75, 0.85, 1.0)
-    rim.rotation_euler = (math.radians(60), 0, math.radians(135))
+    rim.data.energy = 58; rim.data.size = 0.30; rim.data.color = (0.68, 0.80, 1.0)
+    rc = rim.constraints.new("TRACK_TO"); rc.target = rim_aim
+    rc.track_axis = "TRACK_NEGATIVE_Z"; rc.up_axis = "UP_Y"
 
 def make_camera(still, subject_z=1.35):
     sid, label, band, dist, height, yaw, lens, notes = still

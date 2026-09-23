@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week · stylized · GATE 3 IS RUNNING — the sculpt is on disk, not on a list.** Five passes 9/23: the ruled macro and 30 face targets scripted into the scaffold, the iris driven to hazel-green, the set relit, the face rebuilt on **THE TRANSOM** (`FI3·G1·E3`), the skin tuned. **Three of the four pass checks read yes; the cool rim is the one still failing.** Left: the groom, the pose, the four remaining stills.",
+  "status": "**FEBRUARY 2027 · six evenings a week · stylized · GATE 3's SKIN ROW CLEARS.** All four checks read yes on S4-01 after seven passes 9/23: the subject is sculpted to **the Transom**, the skin tuned to a painted read by subsurface rather than by pores, and the cool rim now separates her from the key. **AAR row 2 fails on sight — `long01` clips through her left cheek and reads as a helmet.** The hair is the next evening, not a value.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.24 · DOPE SHEET"
+  "version": "v0.25 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**The rim, then the groom.** The cool rim still does not separate her from the background, and `long01` clips through her left cheek in every frame. Neither is a sculpt value: one is a light placement, one is a real hair asset.",
+  "order": "**The groom.** The skin row is closed; the hairline row is open and visibly failing. After it: the pose (the baseline smirk is a rig pose, not a sculpt value), the dressing, then the remaining four stills of Set 4.",
   "default": "Silence: the redrafted §1 sentence stands; the library banks at twenty until the nut figure says forty; the sex-menu sign-off and the W7 platform pick run on the lane as ruled.",
   "calls": [
    {
@@ -141,8 +141,8 @@
     "q": "L-3 · the Gate 3 skin test",
     "options": "confirm Set 4 as the test · a different set · a different test",
     "default": "confirm Set 4, with the bar rewritten to stylized (rec)",
-    "s": "open",
-    "ruling": "**Recommended: Set 4 stays the test, but D-17 changed what passing means.** The AAR's row 1 asks whether the skin reads natural against the DARKROOM pull at arm's length — a photorealism check, and the ruling on 9/23 was stylized. The rewritten bar: does the render read as a deliberate painted style in the Sakimichan register, rather than as a failed attempt at real? Same set, same evening, different pass condition — and the COA B skin-shader spend that hung off the old row probably falls away with it."
+    "s": "ruled",
+    "ruling": "**CLEARED 2026-09-23 on the four checks.** Micro-texture suppressed with soft gradient falloff — **by design, not by absence**: the settled material is pore strength 0.26 with SSS 0.42 at radius scale 0.32, after 0.62 pores read photoreal and fought the D-17 ruling. Rim pass visibly distinct from the key — the rim was pulled from 2.5 m to 1.0 m and aimed by a TRACK_TO constraint instead of a hand-set euler, then trimmed from 95 W to 58 W. Exaggeration below the neck with the face legible and symmetric. Pastel-plus-accent palette under the AgX warm cut. **Caveat on the record: check 3's below-neck half cannot be fully judged on a head-and-shoulders frame and gets confirmed at S4-02 or S4-04.**"
    },
    {
     "q": "S-1 · the twelve appearance calls",
@@ -327,7 +327,7 @@
     },
     {
      "n": 3,
-     "t": "**The vertical slice** — opened 9/16 (\"slice go\"): Blender 4.5 LTS · MPFB2 · the CC0 assets · HDRIs · the DARKROOM pull · the scaffold script · S4-01 rendered as a stand-in. **The back-plan of 9/23 dates it: the 15–20 evenings run in October 2026, 0 done as of 9/23.** The chain is sculpt → skin (the test row) → hair → pose → dressing → render, then the posting week and the five-row AAR. AAR row 1 (skin at 100% against the DARKROOM pull) is the row that gates the gate.",
+     "t": "**The vertical slice** — the sculpt is DONE and scripted (9/23): the ruled macro, 30 face targets, the hazel iris, the tuned skin, the relit set and a `--facecheck` framing all live in `_tools/blender/slice_set4.py`, so the subject rebuilds from one command and a change is a value edit plus a re-render, not an evening. **The skin row of the AAR clears.** Left in the chain: hair (row 2 failing), pose, dressing, the remaining four stills, the posting week, the rest of the AAR.",
      "s": "hot",
      "when": "9/16 → Oct 2026"
     },
@@ -418,6 +418,10 @@
       {
        "t": "**The archetype was the fix.** Passes 1–3 kept reading soft because the targets were building **the Impost** — long narrow face, soft round jaw, the face that invites. Chief asked what she embodies rather than who; the answer came out of `_CANON_NODES/L2b-morphology-face.md` §4: **the Transom**, wide and short with a sharp gonial angle and wide-set eyes, the horizontal band read. Reversing `chin-bones-decr` to `chin-bones-incr` was the single largest change.",
        "s": "ruled"
+      },
+      {
+       "t": "**AAR row 2 fails and it is not close.** `long01` intersects the head mesh — a hard wedge across her left cheek in every frame — and reads as a moulded shell rather than hair. The slice order predicted this as the likeliest tell. It needs a real groom or a better asset; no target value reaches it.",
+       "s": "bad"
       }
      ]
     }
@@ -888,6 +892,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Five render passes. The likeness request was declined against the charter's own rail (\"composite only, never a clone\") and redirected to the archetype, which is what produced the Transom and the actual fix. Check 1 now passes by design rather than by absence; the cool rim is the one check still failing."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Okay, do the rim.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "The rim was failing on placement, not power: 2.5 m out, small, and aimed by a hand-set rotation, so inverse square ate it before it reached the jaw. Pulled in to 1.0 m, aimed with a constraint at the head, run hot at 95 W to prove it, then trimmed to 58 W once it blew the hair edge and shoulder. Gate 3's skin row clears on all four checks; the hairline row fails on sight."
     }
    ]
   }
