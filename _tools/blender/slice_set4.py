@@ -24,6 +24,7 @@ ap.add_argument("--still", default=None)
 ap.add_argument("--out", default=r"Q:/fun/_BOLO24/renders")
 ap.add_argument("--hdri", default=r"Q:/fun/_BOLO24/hdri/studio_small_09_2k.hdr")
 ap.add_argument("--samples", type=int, default=256)
+ap.add_argument("--no-face", action="store_true", help="build the stand-in without the ruled face targets")
 A = ap.parse_args(argv)
 os.makedirs(A.out, exist_ok=True)
 os.makedirs(os.path.join(A.out, "blend"), exist_ok=True)
@@ -48,8 +49,53 @@ def clear_scene():
 MPFB_DATA = os.path.join(os.environ.get("APPDATA", ""), "Blender Foundation", "Blender", "4.5", "extensions", ".user", "user_default", "mpfb", "data")
 MPFB_SKIN = os.path.join(MPFB_DATA, "skins", "young_caucasian_female", "young_caucasian_female.mhmat")
 # MakeHuman macro sliders: gender 0 = female · age 0.42 ≈ 21 years (0.1875 = 11, 0.5 = 25) · the rest provisional, Chief sculpts
-MACRO = {"gender": 0.0, "age": 0.42, "muscle": 0.5, "weight": 0.5, "proportions": 0.6, "height": 0.5,
-         "cupsize": 0.6, "firmness": 0.7, "race": {"asian": 0.0, "caucasian": 1.0, "african": 0.0}}
+MACRO = {"gender": 0.0, "age": 0.42, "muscle": 0.55, "weight": 0.58, "proportions": 0.70, "height": 0.55,
+         "cupsize": 0.65, "firmness": 0.7, "race": {"asian": 0.0, "caucasian": 1.0, "african": 0.0}}
+# RULED 2026-09-23 (Chief, "take the 12"): SPEC-SUBJECT.md §2. age stays 0.42 = canon 21 and never moves.
+
+# The face, SPEC-SUBJECT.md §8 — verified MPFB2 target names, applied BEFORE any mhclo asset is added
+# (assets fit to the mesh as it stands at the moment they are added, so sculpt first or the hair sits wrong).
+FACE = {
+    "head-oval": 0.60,
+    "forehead-scale-vert-decr": 0.25,
+    "l-cheek-bones-incr": 0.50,  "r-cheek-bones-incr": 0.50,
+    "l-cheek-volume-incr": 0.30, "r-cheek-volume-incr": 0.30,
+    "chin-bones-decr": 0.30,
+    "chin-width-decr": 0.25,
+    "l-eye-scale-incr": 0.50,    "r-eye-scale-incr": 0.50,
+    "l-eye-height2-incr": 0.35,  "r-eye-height2-incr": 0.35,
+    "l-eye-corner2-up": 0.30,    "r-eye-corner2-up": 0.30,
+    "eyebrows-angle-up": 0.25,
+    "nose-scale-horiz-decr": 0.30,
+    "nose-point-width-decr": 0.35,
+    "nose-hump-decr": 0.30,
+    "mouth-upperlip-volume-incr": 0.45,
+    "mouth-lowerlip-volume-incr": 0.40,
+    "mouth-cupidsbow-incr": 0.30,
+}
+
+def apply_face(human):
+    """Load and weight each face target. Returns (applied, skipped)."""
+    try:
+        try:
+            from bl_ext.user_default.mpfb.services.targetservice import TargetService
+        except ImportError:
+            from mpfb.services.targetservice import TargetService
+    except Exception as e:
+        print("face targets skipped, TargetService unavailable:", e); return 0, len(FACE)
+    ok = bad = 0
+    for name, weight in FACE.items():
+        try:
+            path = TargetService.target_full_path(name)
+            if path:
+                TargetService.load_target(human, path, weight=weight)
+            else:
+                TargetService.set_target_value(human, name, weight, delete_target_on_zero=False)
+            ok += 1
+        except Exception as e:
+            print("  target failed:", name, e); bad += 1
+    print(f"face: {ok} target(s) applied, {bad} failed")
+    return ok, bad
 
 def make_subject():
     """MPFB2 human if available; else a placeholder that stands where she will."""
@@ -61,6 +107,8 @@ def make_subject():
         human = HumanService.create_human(mask_helpers=True, detailed_helpers=False, extra_vertex_groups=False,
                                           feet_on_ground=True, scale=0.1, macro_detail_dict=MACRO)
         human.name = "subject"
+        if not A.no_face:
+            apply_face(human)   # sculpt BEFORE the assets below, per the mhclo fitting order
         # the free CC0 skin with enhanced SSS: this is the surface the Gate 3 skin test judges
         try:
             if os.path.exists(MPFB_SKIN):
