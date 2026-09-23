@@ -25,6 +25,8 @@ ap.add_argument("--out", default=r"Q:/fun/_BOLO24/renders")
 ap.add_argument("--hdri", default=r"Q:/fun/_BOLO24/hdri/studio_small_09_2k.hdr")
 ap.add_argument("--samples", type=int, default=256)
 ap.add_argument("--no-face", action="store_true", help="build the stand-in without the ruled face targets")
+ap.add_argument("--facecheck", action="store_true", help="also render a tight head framing for judging the sculpt (face_check.png)")
+ap.add_argument("--stop", type=float, default=2.8, help="camera f-stop")
 A = ap.parse_args(argv)
 os.makedirs(A.out, exist_ok=True)
 os.makedirs(os.path.join(A.out, "blend"), exist_ok=True)
@@ -282,6 +284,9 @@ def build(still, smoke):
     print(f"[{sid}] {still[1]} · {still[2]} · subject={kind} · saved {blend}")
     return blend
 
+FACECHECK = ("FACE", "face, the sculpt check", "SFW", 1.00, 1.52, 12, 105,
+             "tight head framing for judging the sculpt; not a Set 4 still")
+
 if __name__ == "__main__":
     todo = [s for s in STILLS if (A.still is None or s[0] == A.still)]
     for st in todo:
@@ -291,4 +296,11 @@ if __name__ == "__main__":
             bpy.context.scene.render.filepath = out
             bpy.ops.render.render(write_still=True)
             print("SMOKE RENDER", out)
+        if A.facecheck and st[0] == (A.still or "S4-01"):
+            cam2 = make_camera(FACECHECK); bpy.context.scene.camera = cam2
+            bpy.context.scene.render.resolution_x, bpy.context.scene.render.resolution_y = 1600, 2000
+            out2 = os.path.join(A.out, "face_check.png")
+            bpy.context.scene.render.filepath = out2
+            bpy.ops.render.render(write_still=True)
+            print("FACE CHECK", out2)
             if A.still is None and A.smoke: break
