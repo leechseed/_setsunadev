@@ -5,6 +5,8 @@ description: Run a link-harvest research pass in the formation (BOLO 51 phase 2.
 
 # Collect — the harvest formation
 
+**Steps (BOLO 64, provisional 9/23):** RECON = the script fetches every link to text · ORDER = the PS batches · EXECUTE = PS extract, one MS writes the register · CONSOLIDATE = the script proves every link covered.
+
 Use when a file holds a list of links (a locus, a harvest, a syllabus) and the job is to turn them into one register. Not for a single lookup.
 
 ## H0 · Fetch (zero tokens)

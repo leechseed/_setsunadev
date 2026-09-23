@@ -5,6 +5,8 @@ description: Deliver the sit rep (the board + the SITREP page) in the formation 
 
 # The sit rep — the formation
 
+**Steps (BOLO 64, provisional 9/23):** RECON = H0 `prep.py` and the digest · ORDER = the three briefs, pasted verbatim · EXECUTE = H1 fan-out, H2 RANGE the script · CONSOLIDATE = H3 build, flush, publish.
+
 **The rule (BOLO 54):** orchestrator decomposes, specialists run independently on disjoint inputs, sync only at named handoffs, one reviewer at the fan-in. The main line never reads the five files. Coordination is the serial part; there is none mid-run.
 
 Canonical protocol: SOP.md §1 (the command) · §2 (the blocks) · §3 (the flush). This skill is the procedure.

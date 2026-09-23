@@ -1,0 +1,657 @@
+{
+ "about": "BOLO 51's standing audit rows. Every GAP and PARTIAL row from BORESIGHT 64 (ruled 9/23, Call 3). audit.py prints the open ones; close one with audit.py close <id> <note>.",
+ "rows": [
+  {
+   "id": "A3",
+   "page": "A",
+   "practice": "Separate exploration from implementation with plan mode",
+   "status": "PARTIAL",
+   "gap": "The separation is real but implicit in formation order, not an explicit approve-before-edit gate Chief can invoke on demand outside a formation.",
+   "fix": "None needed for formation work; for ad-hoc edits outside a named skill, Chief can still just say \"plan only\" as a habit.",
+   "cost": "-",
+   "cites": [
+    "C2",
+    "C12",
+    "C40"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "A6",
+   "page": "A",
+   "practice": "Write effective CLAUDE.md files",
+   "status": "GAP",
+   "gap": "Session-start context comes only from the digest hook and MEMORY.md; there is no short, checked-in file naming code style, testing, or workflow rules for this repo.",
+   "fix": "Write a short root CLAUDE.md pointing at SOP.md §1 and the skill list — a pointer file, not a duplicate of SOP.",
+   "cost": "S",
+   "cites": [
+    "C42"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "A7",
+   "page": "A",
+   "practice": "Configure permissions with allowlists",
+   "status": "PARTIAL",
+   "gap": "The allowlist is real but thin — the routine commands this repo actually runs (python scripts, git status/diff, bash tool calls under _tools/) aren't on it, so most turns still prompt.",
+   "fix": "Run the fewer-permission-prompts skill against a week of transcripts and add the read-only commands it surfaces to `.claude/settings.local.json`.",
+   "cost": "S",
+   "cites": [
+    "C50"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "A8",
+   "page": "A",
+   "practice": "Use CLI tools like gh for external services",
+   "status": "GAP",
+   "gap": "The repo is public and commits happen every turn, but there is no path from a local autosave to an issue or PR — gh is simply unused.",
+   "fix": "Only worth doing when a PR-based workflow is actually wanted; otherwise leave as-is since autocommit-only fits the private-cadence, deliberate-push model.",
+   "cost": "S",
+   "cites": [
+    "C24",
+    "C50"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "A9",
+   "page": "A",
+   "practice": "Connect MCP servers for external integrations",
+   "status": "GAP",
+   "gap": "Anything an MCP server would give (structured DB access, ticketing) is instead done by hand-rolled scripts per formation; no integration is missing that's currently blocking work.",
+   "fix": "Leave alone until a specific external service (e.g. a shared doc or ticket tracker) is named as needed.",
+   "cost": "-",
+   "cites": [
+    "C34",
+    "C51"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "A14",
+   "page": "A",
+   "practice": "Course-correct early and often",
+   "status": "GAP",
+   "gap": "If a specialist or the main line drifts mid-turn, there's no documented habit of using Esc/rewind to back out cleanly — the fallback is finish-then-fix.",
+   "fix": "None needed as a build; this is an interactive habit, not a repo artifact — just use Esc/Esc+Esc live.",
+   "cost": "-",
+   "cites": [
+    "C23"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "A15",
+   "page": "A",
+   "practice": "Use /clear between unrelated tasks",
+   "status": "PARTIAL",
+   "gap": "The hook plumbing supports /clear; whether Chief actually clears between unrelated asks (vs. one long thread) isn't established by anything in command.md.",
+   "fix": "State it as a named habit in SOP §1 next to the four-step vocabulary — costs nothing to write, per ruling 3 this folds into BOLO 51 not a new section.",
+   "cost": "S",
+   "cites": [
+    "C32"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "A19",
+   "page": "A",
+   "practice": "Run multiple parallel sessions",
+   "status": "GAP",
+   "gap": "Chief is known to run two sessions at once against the same working tree; without worktree isolation those sessions can collide on the same files with no structural guard, only session-id discipline.",
+   "fix": "Adopt `--worktree` for the second concurrent session, or at minimum document the same-tree risk in SOP so it's a known tradeoff, not a blind spot.",
+   "cost": "M",
+   "cites": [
+    "C41"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "B2",
+   "page": "B",
+   "practice": "Use PreToolUse hooks to validate commands",
+   "status": "GAP",
+   "gap": "Nothing can deterministically block a tool call before it runs — e.g. the no-unasked-probing rule [C3] is enforced only by habit, not by a hook that could refuse the scan.",
+   "fix": "Write one PreToolUse hook that blocks process/network/log-scanning Bash patterns unless the order names the box — gives C3's memory rule real teeth.",
+   "cost": "M",
+   "cites": [
+    "C31"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "B3",
+   "page": "B",
+   "practice": "Use PostToolUse hooks for formatting",
+   "status": "GAP",
+   "gap": "A malformed JSON board or a script with a syntax error could land without any automatic check running right after the edit.",
+   "fix": "Low priority: this repo's own RANGE reviewer scripts already catch board-shape errors at the fan-in [C52]; a PostToolUse formatter would mostly help the python utilities.",
+   "cost": "M",
+   "cites": [
+    "C31"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "B4",
+   "page": "B",
+   "practice": "Use Stop hooks as deterministic gates",
+   "status": "PARTIAL",
+   "gap": "The one Stop hook that runs on every turn is explicitly not a verification gate; if it were, an autosave failure would incorrectly block the session, so this is a deliberate tradeoff rather than an oversight.",
+   "fix": "No change recommended — keeping Stop non-blocking is the right call given autocommit's job; verification correctly lives in the reviewer scripts instead.",
+   "cost": "-",
+   "cites": [
+    "C23",
+    "C24",
+    "C52"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "B5",
+   "page": "B",
+   "practice": "Use prompt-based hooks for judgment",
+   "status": "GAP",
+   "gap": "Any judgment-call enforcement (e.g. \"is this a probing scan?\") currently has no hook path at all, deterministic or prompt-based — it's pure habit [C46].",
+   "fix": "Not urgent — script-based PreToolUse coverage (see B2) would catch the sharpest cases more cheaply than a prompt-based hook.",
+   "cost": "-",
+   "cites": [
+    "C31"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "B6",
+   "page": "B",
+   "practice": "Use agent-based hooks for complex validation",
+   "status": "GAP",
+   "gap": "There's no hook-triggered agent validation step; the formation doctrine's own rule against agent-based checking (never a checker agent) [C15] makes this an intentional non-fit, not an oversight.",
+   "fix": "None recommended — conflicts with the ruled doctrine that RANGE is always a script.",
+   "cost": "-",
+   "cites": [
+    "C13",
+    "C52"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "B7",
+   "page": "B",
+   "practice": "Hook events include SessionStart and SessionEnd",
+   "status": "PARTIAL",
+   "gap": "Session open is automated; session close still depends on Chief saying \"Oscar Mike\" and the skill running by hand [C25], not a SessionEnd hook that fires no matter how the session ends.",
+   "fix": "A SessionEnd hook that at minimum checks for an un-flushed Ready Rack note or dirty tree would catch a session that ends without an Oscar Mike.",
+   "cost": "M",
+   "cites": [
+    "C31",
+    "C33"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "B8",
+   "page": "B",
+   "practice": "Hook events include UserPromptSubmit and Stop",
+   "status": "PARTIAL",
+   "gap": "Nothing can inspect or gate an incoming prompt before Claude processes it — e.g. auto-detecting a proword or garble before the turn starts has to happen in-context instead.",
+   "fix": "Only worth adding if a specific per-prompt check is named; no current need is blocked by its absence.",
+   "cost": "-",
+   "cites": [
+    "C31",
+    "C32"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "B9",
+   "page": "B",
+   "practice": "Hook events include PreToolUse and PostToolUse",
+   "status": "GAP",
+   "gap": "Same underlying gap as B2/B3 — no tool-call-level hook exists at all.",
+   "fix": "See B2's fix; one PreToolUse hook covers the highest-value case (no-unasked-probing enforcement).",
+   "cost": "M",
+   "cites": [
+    "C31"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "B10",
+   "page": "B",
+   "practice": "Hook events include FileChanged and ConfigChange",
+   "status": "GAP",
+   "gap": "A change to `.claude/settings.local.json` or a board JSON mid-session triggers nothing automatically.",
+   "fix": "Low value here — boards are only ever changed by scripts at defined formation steps, not edited live outside that flow.",
+   "cost": "-",
+   "cites": [
+    "C31"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C2",
+   "page": "C",
+   "practice": "Keep subagent descriptions under 15,000 tokens",
+   "status": "PARTIAL",
+   "gap": "Nothing in command.md shows a deliberate token budget being tracked for any agent description — it's small because the format is small, not because a limit is enforced.",
+   "fix": "No action needed while skill files stay this size; revisit only if a SKILL.md grows past a few KB.",
+   "cost": "-",
+   "cites": [
+    "C9"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C3",
+   "page": "C",
+   "practice": "Enforce tool restrictions with tools field",
+   "status": "GAP",
+   "gap": "A PS or MS specialist could technically call any tool available to the Agent type it runs under; the \"read nothing else\" boundary is convention, not a config-enforced restriction.",
+   "fix": "Define named `.claude/agents/` files per crew grade (PS/MS) with an explicit `tools:` allowlist matching what each formation actually needs.",
+   "cost": "M",
+   "cites": [
+    "C36"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C5",
+   "page": "C",
+   "practice": "Set permission modes per subagent",
+   "status": "GAP",
+   "gap": "A PS/MS specialist doing pure fetch-and-write work still prompts (or auto-accepts) at the session's default rather than a mode scoped to its narrow, disjoint job.",
+   "fix": "Set `acceptEdits` on read-only-input specialists that only ever write one named file, once named `.claude/agents/` definitions exist (see C3).",
+   "cost": "S",
+   "cites": [],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C7",
+   "page": "C",
+   "practice": "Isolate subagents in git worktrees",
+   "status": "GAP",
+   "gap": "A specialist that mis-writes has no structural containment — the fixed-output-contract convention [C38] is the only guard, not filesystem isolation.",
+   "fix": "Low priority given the fixed-output-contract discipline already limits blast radius to one named file per specialist.",
+   "cost": "M",
+   "cites": [
+    "C41"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C9",
+   "page": "C",
+   "practice": "Enable persistent memory for subagents",
+   "status": "GAP",
+   "gap": "A PS/MS that runs the same kind of extraction repeatedly (e.g. EXTRACT-k in collect) starts cold every time — no accumulated pattern knowledge carries between runs.",
+   "fix": "Not worth adding while specialists stay narrow and one-shot by design; revisit only if a specialist role becomes a recurring, evolving job.",
+   "cost": "-",
+   "cites": [
+    "C38"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C10",
+   "page": "C",
+   "practice": "Use PreToolUse hooks in subagents",
+   "status": "GAP",
+   "gap": "Same root cause as B2/B9 — no PreToolUse hook exists to scope, whether at session or subagent level.",
+   "fix": "Covered by B2's fix; a subagent-scoped variant is a follow-on once the session-level hook exists.",
+   "cost": "M",
+   "cites": [
+    "C31"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "C11",
+   "page": "C",
+   "practice": "Organize subagent files hierarchically",
+   "status": "GAP",
+   "gap": "There's nothing to organize because named subagent files were never created — crew-grade identity lives in SOP prose, not in a `name:` field on a checked-in file.",
+   "fix": "Only needed if named `.claude/agents/` definitions get created (see C3, C5); until then there's nothing to hierarchically organize.",
+   "cost": "-",
+   "cites": [
+    "C36"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C12",
+   "page": "C",
+   "practice": "Run subagents in background",
+   "status": "PARTIAL",
+   "gap": "Concurrent, background-style launch is described in skill text, but nothing in command.md confirms it's deliberately configured rather than just the tool's out-of-the-box behavior.",
+   "fix": "No action needed — default behavior already matches the doc's recommendation.",
+   "cost": "-",
+   "cites": [
+    "C37"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C13",
+   "page": "C",
+   "practice": "Resume subagents to continue work",
+   "status": "GAP",
+   "gap": "If a specialist's draft needs a second pass, current doctrine says rerun it fresh with the finding pasted under its brief [C22], not resume its own history — cheaper to write, more expensive in tokens than a true resume.",
+   "fix": "Try SendMessage-based resume the next time a specialist needs a correction pass, instead of a fresh relaunch, and compare token cost.",
+   "cost": "S",
+   "cites": [
+    "C16"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C14",
+   "page": "C",
+   "practice": "Limit subagent nesting depth",
+   "status": "GAP",
+   "gap": "Nesting depth isn't config-capped, only convention-capped by the flat hub-and-spoke shape; a specialist that did try to spawn its own subagent wouldn't be technically blocked.",
+   "fix": "Not urgent given the doctrine already forbids peer/nested spawning by design [C15]; add the env var only if nesting is ever observed happening.",
+   "cost": "-",
+   "cites": [
+    "C12"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C19",
+   "page": "C",
+   "practice": "Deny specific subagents in permissions",
+   "status": "GAP",
+   "gap": "There's no config-level block on an unwanted agent type running; the only control is the main line choosing not to invoke it.",
+   "fix": "Not urgent — no unwanted-agent incident has been named; add a deny entry only if one turns up.",
+   "cost": "-",
+   "cites": [
+    "C50"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "C21",
+   "page": "C",
+   "practice": "Set effort level per subagent",
+   "status": "GAP",
+   "gap": "Every specialist runs at the same global effort regardless of how simple its job is (a PS fetch-and-extract likely doesn't need high effort), leaving cost on the table.",
+   "fix": "Set `effort: low` on PS (haiku, fetch/extract) roles specifically, since their jobs are narrow and mechanical by crew-grade design.",
+   "cost": "S",
+   "cites": [
+    "C51"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "D4",
+   "page": "D",
+   "practice": "Commit phase of four-step workflow",
+   "status": "PARTIAL",
+   "gap": "Commits happen every turn without fail, which is better-than-doc reliability, but the messages carry no information about what changed or why, and there's no PR step at all.",
+   "fix": "Have `_tools/autocommit.sh` append a one-line summary of the touched paths (already knows the file count) instead of just the count, without touching its \"always exit 0\" safety property.",
+   "cost": "S",
+   "cites": [
+    "C23",
+    "C24"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "D6",
+   "page": "D",
+   "practice": "Find relevant code by domain",
+   "status": "GAP",
+   "gap": "This repo is mostly markdown/JSON/python utility scripts rather than a large typed codebase, so go-to-definition matters less, but there's still no tooling for it if a script layer grows.",
+   "fix": "Low priority; revisit only if the python tooling under `_tools/` grows large enough that grep stops being sufficient.",
+   "cost": "-",
+   "cites": [
+    "C47"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "D7",
+   "page": "D",
+   "practice": "Fix bugs efficiently",
+   "status": "GAP",
+   "gap": "When a formation script errors (e.g. `check.py` or `assemble.py` failing), there's no stated habit of pasting the exact repro command — it likely happens ad hoc each time.",
+   "fix": "Adopt a one-line habit: paste the exact failing command plus its output when a formation script errors, before describing the symptom.",
+   "cost": "S",
+   "cites": [],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "D10",
+   "page": "D",
+   "practice": "Create pull requests step-by-step",
+   "status": "GAP",
+   "gap": "There is currently no path from a batch of autosave commits to a reviewable PR, even though the repo is public.",
+   "fix": "Only build this if a collaborator or review step is actually wanted; otherwise the local-commit model is a deliberate choice, not an oversight.",
+   "cost": "M",
+   "cites": [
+    "C24"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "D13",
+   "page": "D",
+   "practice": "Work with images in codebase",
+   "status": "GAP",
+   "gap": "If a board or a design needed visual review (a screenshot of a published sit-rep page, say), there's no stated convention for handing Claude the image.",
+   "fix": "Adopt when a screenshot or asset actually needs review; no current convention exists to fall back on.",
+   "cost": "-",
+   "cites": [],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "D15",
+   "page": "D",
+   "practice": "Run Claude on recurring schedule",
+   "status": "GAP",
+   "gap": "Nothing runs on its own cadence (a nightly digest refresh, a weekly RTB sweep); every run needs a live prompt from Chief.",
+   "fix": "Only worth building if a specific recurring need is named (e.g. a scheduled RTB sweep); no current pain point calls for it.",
+   "cost": "-",
+   "cites": [],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "D18",
+   "page": "D",
+   "practice": "Run parallel sessions with worktrees",
+   "status": "GAP",
+   "gap": "Same underlying gap as A19/E1/E2 — parallel sessions currently share one working tree with no filesystem-level collision guard.",
+   "fix": "See A19's fix: adopt `--worktree` for the second concurrent session.",
+   "cost": "M",
+   "cites": [
+    "C41"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "E1",
+   "page": "E",
+   "practice": "Create isolated worktrees with --worktree flag",
+   "status": "GAP",
+   "gap": "Same root gap as A19/D18 — no isolated checkout exists for any parallel work.",
+   "fix": "See A19's fix.",
+   "cost": "M",
+   "cites": [
+    "C41"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "E2",
+   "page": "E",
+   "practice": "Worktrees prevent edit collisions",
+   "status": "GAP",
+   "gap": "Two live sessions editing the same files at once have no structural collision guard — only operator discipline (closing by session id) stands between them and a stomped edit.",
+   "fix": "Highest-value worktree fix of the three (E1-E3): give the second concurrent session its own `--worktree` so collisions become structurally impossible, not just avoided by habit.",
+   "cost": "M",
+   "cites": [
+    "C41"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "E3",
+   "page": "E",
+   "practice": "Monitor parallel sessions from one screen",
+   "status": "GAP",
+   "gap": "There's no single-screen view of what each concurrent session is doing; state has to be inferred from STATE.md/BOLO.md separately per session.",
+   "fix": "Try `claude agents` (or the Desktop app) the next time two sessions run at once, purely as a monitoring convenience — no restructuring required.",
+   "cost": "S",
+   "cites": [
+    "C41"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "F1",
+   "page": "F",
+   "practice": "Use CLAUDE.md for persistent instructions",
+   "status": "GAP",
+   "gap": "There is no short, project-scoped, checked-in file naming this repo's own conventions — everything either lives in the much larger SOP.md or in cross-conversation user memory that isn't project-specific.",
+   "fix": "Write a short root CLAUDE.md that points at SOP.md §1 and the skill list rather than duplicating either — same fix as A6.",
+   "cost": "S",
+   "cites": [
+    "C42",
+    "C33",
+    "C44"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": "2026-09-23 · the five fixes (Call 2)"
+  },
+  {
+   "id": "F5",
+   "page": "F",
+   "practice": "Scope rules with .claude/rules/ directory",
+   "status": "GAP",
+   "gap": "Every rule in SOP.md applies everywhere by default; there's no way to scope a rule to, say, only the `_tools/bolostatus/` boards without it being one more paragraph in the same 57 KB file.",
+   "fix": "Only worth splitting out if SOP.md's size starts causing rules to be missed or ignored — not evidenced yet.",
+   "cost": "-",
+   "cites": [],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "F6",
+   "page": "F",
+   "practice": "Configure auto memory settings",
+   "status": "PARTIAL",
+   "gap": "It isn't clear whether auto-memory's settings (what gets captured, how aggressively) have ever been reviewed or tuned versus just left at default.",
+   "fix": "Worth a one-time look at the auto-memory settings to confirm defaults match what's actually wanted, given how much the Command already leans on MEMORY.md.",
+   "cost": "S",
+   "cites": [
+    "C44",
+    "C51"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  },
+  {
+   "id": "F7",
+   "page": "F",
+   "practice": "CLAUDE.md treats context and enforcement differently",
+   "status": "GAP",
+   "gap": "None of these rules are hook-enforced; per this read's own framing, that's not itself a problem to fix with a gate — the ruling for this BOLO is vocabulary first, no hook gates until a step is shown to actually get skipped, and this read found no step that is skipped, only steps enforced by habit rather than config.",
+   "fix": "No hook change now, per ruling 1; if a specific rule is later caught being skipped in practice, B2's PreToolUse hook is the cheapest place to add real enforcement for it.",
+   "cost": "-",
+   "cites": [
+    "C3",
+    "C8",
+    "C11",
+    "C30",
+    "C46"
+   ],
+   "source": "BORESIGHT 64",
+   "added": "2026-09-23",
+   "closed": ""
+  }
+ ]
+}

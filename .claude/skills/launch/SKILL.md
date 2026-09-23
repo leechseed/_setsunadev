@@ -5,6 +5,8 @@ description: Run the launch sequence (BOLO 58) — one word stands the Command u
 
 # The launch sequence — BOLO 58
 
+**Steps (BOLO 64, provisional 9/23):** RECON = `launch.py` pings every station before it starts anything · ORDER = the proword · EXECUTE = the stations, then the sit rep in its own formation · CONSOLIDATE = the poll above the board in one reply.
+
 Stations RULED 2026-09-17 by Chief: the sit rep page · the SOI · zero DOPE SHEETs · the DARKROOM · **Stash + the Stash deck (added 9/20, BOLO 75)** · JUDY in session voice (the full loop: whisper ears on the 3090, the face, Blondie reading the session) · her seven spoken tools over the wire. The proword is **go for launch** (RULED 9/17, the flight director's poll answered); the thing it fires is **the launch sequence** (RULED the same breath). No questions, no preamble.
 
 ## 1 · Stations (zero tokens)

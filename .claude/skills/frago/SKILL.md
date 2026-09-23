@@ -5,6 +5,8 @@ description: Push a fragmentary order onto DOPE SHEET N (FRAGO N, ruled 9/11) wi
 
 # FRAGO N — the update
 
+**Steps (BOLO 64, provisional 9/23):** RECON = read the sheet's current JSON · ORDER = the ~1 KB patch · EXECUTE = `frago.py` merges and bumps · CONSOLIDATE = build, publish to the standing URL.
+
 Canonical: SOP.md §1. A FRAGO carries only what changed; everything not mentioned stands as ordered; the Log keeps every FRAGO. No agent is involved.
 
 ## 1 · Write the patch (the only judgment)

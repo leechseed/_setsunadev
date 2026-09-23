@@ -5,6 +5,8 @@ description: Run the card-clearing pass ("RTB", ruled 9/10) in the formation (BO
 
 # RTB — return to base
 
+**Steps (BOLO 64, provisional 9/23):** RECON = `rtb_prep.py` compiles every open card · ORDER = one disposition per card from the PS · EXECUTE = the main line rules the lines · CONSOLIDATE = every keeper goes home, the folder clears.
+
 Canonical: SOP.md §1. RTB keeps one meaning: the pass that sends a parked card home (promote · delete · keep) and clears the folder. It retires itself when `oscar-mike/` is empty.
 
 ## H0 · Prep (zero tokens)

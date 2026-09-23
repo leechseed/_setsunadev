@@ -5,6 +5,8 @@ description: Run the close-out ("Oscar Mike", ruled 9/11) in the formation (BOLO
 
 # Oscar Mike — the close-out
 
+**Steps (BOLO 64, provisional 9/23):** RECON = `close.py` pulls the session's spoken turns · ORDER = the note brief to the PS · EXECUTE = the PS drafts, the script appends the journal · CONSOLIDATE = the main line rules the note, STATE's Moved bullet, the OUT block.
+
 Canonical: SOP.md §1 (the command) · §3 (the Ready Rack) · §7 rule 9 (the OUT block). The session is done when this runs; nothing is parked into a card.
 
 ## H-1 · Stations down (zero tokens) — the closing sequence, BOLO 58, Chief 9/17

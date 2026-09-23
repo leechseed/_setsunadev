@@ -5,6 +5,8 @@ description: Build BOLO N's standing status page (DOPE SHEET N, ruled 9/11) in t
 
 # DOPE SHEET N — the standing page
 
+**Steps (BOLO 64, provisional 9/23):** RECON = `prep.py N` gathers every mention · ORDER = `brief.SHEET.md` · EXECUTE = SHEET drafts, the main line writes M · C · the order · CONSOLIDATE = `check.py --promote`, `build.py`, publish, the three URL records.
+
 Canonical: SOP.md §1 (DOPE SHEET / FRAGO rows) · §2 (the layout). If `_tools/bolostatus/boards/N.json` already exists, this is not a build: show the page link from `_tools/pages/pages.json`, or run the `frago` skill for an update.
 
 ## H0 · Prep (zero tokens)

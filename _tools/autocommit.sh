@@ -18,8 +18,11 @@ DIRTY="$(git status --porcelain 2>/dev/null)"
 
 N="$(printf '%s\n' "$DIRTY" | grep -c '^')"
 
+# BOLO 64 (9/23): a descriptive message — the top-level paths touched, most files first, at most four.
+PATHS="$(printf '%s\n' "$DIRTY" | cut -c4- | sed 's/^"//; s/"$//' | awk -F/ '{print (NF>1 ? $1 "/" : $1)}' | sort | uniq -c | sort -rn | head -4 | awk '{print $2}' | paste -sd' ' -)"
+
 git add -A >/dev/null 2>&1 || exit 0
-git commit -q -m "autosave $(date '+%Y-%m-%d %H:%M') · ${N} file(s)" >/dev/null 2>&1 || exit 0
+git commit -q -m "autosave $(date '+%Y-%m-%d %H:%M') · ${N} file(s) · ${PATHS}" >/dev/null 2>&1 || exit 0
 
 SHA="$(git rev-parse --short HEAD 2>/dev/null)"
 AHEAD="$(git rev-list --count @{u}..HEAD 2>/dev/null || echo '?')"
