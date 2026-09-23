@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.25 · DOPE SHEET"
+  "version": "v0.26 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -86,7 +86,7 @@
     "options": "confirm: a fresh X account plus bookmarks, five core, twenty-five wide, pulled at zero cost",
     "default": "confirm (rec)",
     "s": "ruled",
-    "ruling": "RULED 2026-09-23, Chief: \"8 confirm.\" The method is confirmed as written — one fresh X account, bookmarks only, five core seats plus twenty-five wide, at zero cost, pulled by hand over thirty days. Three of the five core seats are already filled (itsmemphishxe · Sulbas3D and 3DessJeez · Kirenes and Variety Itsol). Seat 3 (Fanvue) stays a flagged risk with its stated fallback: try by hand once, leave the seat open if the pull fails. **Schedule note: started 9/23 the pull lands about 10/23, inside the Gate 3 evenings window, so it costs no critical-path time.**"
+    "ruling": "**RULED 2026-09-23, Chief: \"8 confirm.\"** The method is confirmed as written — one fresh X account, bookmarks only, five core seats plus twenty-five wide, at zero cost, pulled by hand over thirty days. **Seat 1, the look reference, FILLED the same day: Rebel Rhyder**, named by Chief as the inspiration bar; she satisfies the written selection rule with 11 five-star entries of 30 in Stash and was already on the register's stable core. Four of the five core seats are now filled — only seat 3 (the disclosed-AI creator) stays open, with its stated fallback: try Fanvue by hand once, leave the seat open if the pull fails. **Schedule note: started 9/23 the pull lands about 10/23, inside the Gate 3 evenings window, so it costs no critical-path time.**"
    },
    {
     "q": "D-10 · the intent",
@@ -365,6 +365,10 @@
      "items": [
       {
        "t": "**The 30-day reference pull is live (D-8 confirmed).** One fresh X account, bookmarks only, five core seats and twenty-five wide, by hand, zero cost. It runs alongside the Gate 3 evenings and feeds the posting grammar that Season 1 needs at launch.",
+       "s": "hot"
+      },
+      {
+       "t": "**Seat 1 of the reference pull is filled: Rebel Rhyder.** The look reference had been open since 9/3 waiting on D-6, then on the render style; D-6 ruled yes on 9/16 and D-17 ruled stylized on 9/23, so nothing was left to wait on. What the seat takes: pose, light, composition, set and prop vocabulary as DARKROOM tags, plus the performance register Chief named — intensity and duration as a quality bar for what a scene should read like. **What it never takes: a face.** Rail 4 holds — composite, never clone.",
        "s": "hot"
       }
      ]
@@ -902,6 +906,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "The rim was failing on placement, not power: 2.5 m out, small, and aimed by a hand-set rotation, so inverse square ate it before it reached the jaw. Pulled in to 1.0 m, aimed with a constraint at the head, run hot at 95 W to prove it, then trimmed to 58 W once it blew the hair edge and shoulder. Gate 3's skin row clears on all four checks; the hairline row fails on sight."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "Named Rebel Rhyder the inspiration bar — the standard for intensity, endurance and look — and put her on the reference list."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Filled seat 1 (the look reference) with her in the reference-pull spec and noted it on her register row. Four of five core seats now filled; only the disclosed-AI seat stays open. Separately: built her playlists off Stash (28 scenes, 23.2 h, five-star first), and fixed nine scenes whose title field carried one bogus string across six studios."
     }
    ]
   }
