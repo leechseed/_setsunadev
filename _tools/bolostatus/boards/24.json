@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**LAUNCH MONTH RULED 2026-09-23: FEBRUARY 2027.** The nineteen-day hold on the date is over and the back-plan is drawn: about 19 weeks, roughly 100 hands-on evenings on the conservative figures, a margin of one to two weeks. **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.** Three calls stay open on this sheet (D-8 · D-10 · D-11), each now carrying a recommendation and a one-word answer.",
+  "status": "**LAUNCH MONTH RULED 2026-09-23: FEBRUARY 2027 · THE PACE IS RULED TOO: five to six evenings a week (Chief, 9/23).** The back-plan runs the arithmetic on it: at six evenings a week the work costs 16.7 weeks against the 19 available — **a margin of 2.3 weeks**; at five it costs 20 weeks and **misses February by one**. Six is the number. **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.** Three calls stay open (D-8 · D-10 · D-11), each drawn with a recommendation and a one-word answer.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.12 · DOPE SHEET"
+  "version": "v0.13 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Start the Gate 3 evenings, and rule D-8 · D-10 · D-11 in three words.** The back-plan holds February only at a sustained five to six evenings a week from tonight; the sculpt is the first evening. The three calls cost one word each and are drawn in `CALLS.md` with a recommendation apiece: D-8 \"Confirm\" · D-10 \"Stands\" · D-11 \"Confirm\".",
+  "order": "**Six evenings a week, starting with the sculpt.** Five is not a slower February, it is a March. The three calls cost one word each: D-8 \"Confirm\" · D-10 \"Stands\" · D-11 \"Confirm\".",
   "default": "Silence: the back-plan stands as drawn (the extra month over the boresight's January recommendation goes into library-banking, not a second test month); D-10's §1 draft locks in by its own default; D-8 and D-11 stay open and the reference pull does not start. The 20-piece library floor and the 60-day buffer run until the October test thresholds say otherwise.",
   "calls": [
    {
@@ -105,6 +105,13 @@
     "default": "January (boresight rec)",
     "s": "ruled",
     "ruling": "RULED 2026-09-23, Chief spoken: **February 2027.** One month later than BORESIGHT 24's recommendation. The back-plan puts the extra month into library-banking rather than a second test month or a later start, because Gate 3's evenings have not begun. Nineteen days idle, four boards and the leverage line on every one of them; the line now reads 'Back-plan February 2027.'"
+   },
+   {
+    "q": "D-19 · the evening rate",
+    "options": "the one figure the back-plan could not derive: evenings per week Chief can actually sustain against the parallel income search",
+    "default": "none; only you have it",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23, Chief: \"I should be able to sustain, like, five, six nights a week.\" The back-plan's last stated unknown is closed. The arithmetic on 100 evenings against 19 weeks: **6/week = 16.7 weeks, margin +2.3 weeks · 5.5/week = 18.2 weeks, margin +0.8 · 5/week = 20 weeks, margin −1.0.** February survives at six and slips at five, so six is the planning rate and five is the warning line, not the floor."
    }
   ]
  },
@@ -298,7 +305,7 @@
     "last": "The whole reference set was built in eight days.",
     "plan": "GPU time and attention; no money before Gate 3.",
     "you": "You pay in rulings first, then in full-time attention.",
-    "next": "The render step costs seconds; the evenings are the whole budget now."
+    "next": "Six evenings a week. The first one is the sculpt; the skin pass behind it is the row that gates the gate."
    },
    "files": [
     {
@@ -403,6 +410,17 @@
     {
      "k": "the slice",
      "v": "one week"
+    }
+   ],
+   "groups": [
+    {
+     "label": "The pace",
+     "items": [
+      {
+       "t": "**Six evenings a week is the planning rate (RULED 9/23).** The margin is 2.3 weeks at six and negative at five, so the difference between the two is the difference between February and March. The income search competes for the same nights and no figure exists for it yet — that is the one number still missing from the plan.",
+       "s": "ruled"
+      }
+     ]
     }
    ]
   },
@@ -588,6 +606,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Back-plan built at gear 6: ten PS extractors on disjoint sources, two MS writers at the handoff, a script reviewer at the fan-in (zero findings). BACKPLAN.md and CALLS.md written. February holds at five to six evenings a week; the extra month over the boresight's January recommendation is recommended into library-banking. D-8, D-10 and D-11 drawn for one-word rulings."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "On the back-plan's one open figure: \"I should be able to sustain, like, five, six nights a week.\" The evening rate ruled."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Ran the arithmetic and wrote it to the sheet: at six evenings a week February holds with 2.3 weeks in hand; at five it slips a week past February. Six is the planning rate. The back-plan's last 'not stated' is closed; the income search's hours remain the only unquantified competitor for the same nights."
     }
    ]
   }
