@@ -10,7 +10,7 @@ series: The Outliers
 trunk: BLACK
 role: Impact Character
 resolve: Steadfast
-status: draft ⧗ — calls: Chief rules, MS proposes
+status: ruled on the recommendations 2026-09-23 (Chief: "take the recs") — the chart is a placeholder until an astrology ingest runs; every ⧗ below stands as the ruled answer
 blocking: none — IC ruling CANON 2026-08-24 ([[oxo-storyform]] §4, BOLO 46 phase 1) and telling-profile ruling CANON 2026-09-23 ([[oxo-telling-profile]] T2). This node's proposed fields (chart, origin, body, voice, handle) are ⧗ and await Chief's ruling — BOLO 46 phase 2.
 created: 2026-09-23
 aliases: [Anna, Colson, "Colson (Red Hills legacy)"]
@@ -116,18 +116,18 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (F
 
 | Layer | Value | Fed by | Collision with Tori |
 |---|---|---|---|
-| L1 CORE | ⧗ low, by design | [[BVX.0064]] invariant 3: the protagonist holds the *majority* of the cast's dimensions; the IC can run near a type. Tori's node counts six documented contradictions (BVX.0064 §8) | Tori's CORE=13 is a complexity score. Anna's coherence is the opposite construction — she is built to have no gap between characterization, true character, and subconscious. That absence of a gap **is** the IC argument, enacted at the lowest layer |
-| L2 VITAL | ⧗ composed, institutional | Proposed Venus (Leo) / Ascendant (Capricorn) | Tori's REORIENT: "beauty that reads striking specifically because it doesn't conform to elite grooming." Anna is the control case — beauty that *does* conform, which is why the system never had to flag her |
-| L3 SOCIAL | Verified, ascending | Canon: [[oxo-scene-card-M2-row9]] exit state "Verified"; [[BVX.0064]] M3 ascent | Tori's L3=10, "Truth as exploit vector" — legible against her will. Anna's high legibility is the same axis, opposite valence: visible on purpose, and it protects her |
-| L4 WILL | Steadfast | Canon: [[oxo-storyform]] §9 IC Resolve | Tori's L4=14, "slightly more stubborn than smart" (pressure met and resisted). Anna's WILL never registers pressure as pressure at all — this is Fixed Attitude demonstrated mechanically: she does not argue, because argument requires felt resistance |
-| L5 WOUND | ⧗ open — see note | Not documented for any IC in this storyform | Tori's wound is "the knowledge that she chose not to listen." An IC built Steadfast may not require an MC-style wound-origin at all; recommend leaving this field open rather than inventing a childhood event with no source (Open Questions #5) |
-| L6 DRIVE | ascent, undented | Canon-adjacent: [[BVX.0064]] "same beat, two vocabularies" — her M3 Student Body President initiation | Tori's DRIVE=12, "meaning-driven... the crash dented the tank." Anna's drive is precisely undented ambition — same layer, exact inversion, and the reason they read as rivals rather than allies at the same rank |
-| L7 ORIGIN | ⧗ legacy-track | Proposed | Tori's L7 is "working/criminal-adjacent," family_coherence 7. Proposed for Anna: admitted and groomed, not salvaged — the on-ramp "power ascends" needs someone who never needed rescuing (Open Questions #3) |
-| L8 IMPRINT | ⧗ secure-institutional | Proposed | Tori's L8 is "secure_anxious (6)," anchored to a person (Jebb). Anna's attachment, proposed, is anchored to the system itself rather than a person (Open Questions #4) |
-| L9 EROS | ⧗ open — telling-profile tension | Not documented | Tori's L9 is AUTHORED and deeply interior. Because [[oxo-telling-profile]] T2 forbids Anna's interiority, an L9 built the same way may contradict the no-POV ruling outright. Recommend flagging this layer N/A-by-design rather than inventing an interior register the telling profile won't let the audience see (Open Questions #6) |
-| L10 SHADOW | ⧗ structurally withheld | Proposed, reasoned from [[oxo-telling-profile]] T2 | Tori's SHADOW is legible to the audience through her own interiority (culpability, distrust of her own judgment). Anna's shadow, if any, can only ever be shown externally, through consequence, never confession — which enacts the premise as a formal choice: the audience is denied the reassurance of Anna's guilt |
-| L11 DESTINY | establishment's proof of concept | Canon-adjacent: [[BVX.0064]] "The Engine — Power/Escalation" | Tori's L11 is "tactical_disruptor." Anna's function is the inverse: not a disruptor, the case the Administration points to when it says the system works |
-| L12 FUNCTION | dramatica_archetype: Impact Character; ic_problem_element: Equity; resolve: Steadfast | Dramatica direct, no astrology feed — same note as Tori's L12 | Anna's Problem element (Equity) is identical to Tori's L12 core value. [[oxo-storyform]] names this directly: "the story's argument is one argument" |
+| L1 CORE | ⧗ low, by design | [[BVX.0064]] invariant 3: protagonist holds the *majority* of dimensions; the IC can run near a type. Tori counts six (BVX.0064 §8) | Tori's CORE=13 is a complexity score. Anna's coherence is the opposite construction — no gap between characterization, true character, subconscious. That absence **is** the IC argument, at the lowest layer |
+| L2 VITAL | ⧗ composed, institutional | Proposed Venus (Leo) / ASC (Capricorn) | Tori: "beauty that reads striking because it doesn't conform." Anna is the control case — beauty that *does* conform, why the system never had to flag her |
+| L3 SOCIAL | Verified, ascending | Canon: [[oxo-scene-card-M2-row9]] "Verified"; [[BVX.0064]] M3 ascent | Tori's L3=10, legible against her will. Anna's legibility is the same axis, opposite valence: visible on purpose, and it protects her |
+| L4 WILL | Steadfast | Canon: [[oxo-storyform]] §9 IC Resolve | Tori's L4=14, pressure met and resisted. Anna's WILL never registers pressure as pressure — Fixed Attitude mechanically: she does not argue, because argument needs felt resistance |
+| L5 WOUND | ⧗ open | Not documented for any IC here | Tori's wound: "the knowledge that she chose not to listen." A Steadfast IC may not need one; recommend leaving open, not inventing (Q5) |
+| L6 DRIVE | ascent, undented | Canon-adjacent: [[BVX.0064]] "same beat, two vocabularies," M3 initiation | Tori's DRIVE=12, "the crash dented the tank." Anna's drive is undented ambition — exact inversion, why they read as rivals |
+| L7 ORIGIN | ⧗ legacy-track | Proposed | Tori: working/criminal-adjacent. Anna, proposed: admitted and groomed, not salvaged (Q3) |
+| L8 IMPRINT | ⧗ secure-institutional | Proposed | Tori's is anchored to a person (Jebb). Anna's, proposed, is anchored to the system itself (Q4) |
+| L9 EROS | ⧗ open — T2 tension | Not documented | Tori's L9 is AUTHORED, deeply interior. [[oxo-telling-profile]] T2 forbids Anna's interiority — an equivalent L9 may contradict the no-POV ruling. Recommend N/A-by-design (Q6) |
+| L10 SHADOW | ⧗ withheld by design | Reasoned from T2 | Tori's SHADOW is legible through her own interiority. Anna's, if any, only shows externally, in consequence, never confession — the audience is denied the reassurance of her guilt |
+| L11 DESTINY | establishment's proof of concept | Canon-adjacent: [[BVX.0064]] "The Engine — Power/Escalation" | Tori's L11 is "tactical_disruptor." Anna is the inverse: the case the Administration points to when it says the system works |
+| L12 FUNCTION | dramatica_archetype: Impact Character; ic_problem_element: Equity; resolve: Steadfast | Dramatica direct, no astrology feed | Identical Problem element to Tori's L12. [[oxo-storyform]]: "the story's argument is one argument" |
 
 ---
 
@@ -168,6 +168,9 @@ Every entry below states where Anna and Tori collide or mirror on the RS axis (F
 ---
 
 ## Open questions
+
+**RULED 2026-09-23, all twelve on the recommendations** (Chief: "take the recs, and who's Anna?"). Each ⧗ in this node now reads as the ruled answer: call 1 executed the same turn (the storyform §4 rows propagated from §9); the chart stays a placeholder until an astrology ingest is fired for her; L5 wound open by design; L9 eros N/A by design; Axiom is her register; the Feed ladder Compliant → Verified → Model Asset is proposed canon; no relation to Jebb; absent from M1, M4–6 open to plot work; the Ascent Legibility Index held; system-polished look.
+
 
 1. **Propagate the §9 remapping into [[oxo-storyform]] §4** — housekeeping, not a creative call. *Rec: do it.*
 2. **Astrology ingest.** Full ingest / placeholder stands / skip astrology for ICs. *Rec: placeholder stands.*

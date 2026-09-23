@@ -6,7 +6,7 @@
   "issued": "2026-09-11",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "🟢 9/23 THE TWELVE RULED (Chief: \"take our recs for row 18\") — the Telling Profile is canon, 0.2.0. ANNA'S NODE BUILT the same turn: `_CANON_NODES/anna-colson-conway.md`, Tori's shape, the 12 layers built to collide on the RS axis, 25 ⧗ proposals gathered as 12 calls; checked against Tori's node by script, clean. Blocked #18 clears. Next gate: Anna's 12 calls, then the 14 Movement-1 questions, then page one.",
+  "status": "🟢 9/23 ANNA'S TWELVE RULED on the recommendations (Chief: \"take the recs\") — her node stands as canon-in-draft with the chart a placeholder; call 1 executed the same turn, the storyform §4's five ENGINE rows propagated from §9. Blocked #18 closed. One gate left before page one: the 14 Movement-1 questions, on \"go 46\".",
   "decider": "HOTLINE ACTUAL",
   "feeds": "[[outliers|The Outliers]] · the Tori×Anna collision proof · Tori's chart re-derivation",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 46 · STATE Blocked #18",
   "card": "none — captured 9/11, never parked",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Carry [[outliers|The Outliers]] from a ruled storyform to the pilot's page one, **in order to** put the flagship BLACK IP on a page instead of in a lattice.",
-  "order": "**Rule Anna's 12 calls in her node (Open questions), one word each or \"take the recs\"; then \"go 46\" fires the 14 Movement-1 questions.** The collision proof and Tori's chart re-derivation ride behind page one.",
-  "default": "Silence: Anna stands as a draft node with 12 ⧗ proposals; the Movement-1 questions wait; page one waits.",
+  "order": "**Say \"go 46\" and the 14 Movement-1 extraction questions get answered from the storyform, the profile and the two nodes, one MS pass, script-checked.** Page one in Fountain follows on the next go; the collision proof and Tori's chart re-derivation ride behind it.",
+  "default": "Silence: Anna stands ruled; the Movement-1 questions wait; page one waits.",
   "calls": [
    {
     "q": "The 12 Telling Profile rulings",
@@ -67,6 +67,13 @@
     "q": "Anna's 12 calls",
     "options": "in her node's Open questions: chart and birth date · school year · family · body and look · voice on screen · Feed classification label · Jebb · where she appears past M2 · and the rest, each with a recommendation",
     "default": "take the recs",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23, all twelve on the recommendations. Call 1 (propagate §9 into the storyform §4) executed: ic_concern Memories · Equity→Inequity · Projection→Speculation · Evidence→Interdiction · benchmark and signposts, all tagged RULED 2026-09-23 from §9. The chart stays a placeholder until an astrology ingest is fired for her."
+   },
+   {
+    "q": "The 14 Movement-1 questions",
+    "options": "go now (rec) · hold until Tori's chart re-derivation · hold until the astrology ingest for Anna",
+    "default": "go now (rec)",
     "s": "open"
    }
   ]
@@ -139,8 +146,8 @@
    "strand": {
     "last": "Phase 0 happened before this BOLO existed.",
     "plan": "Yours, then mine, then the questions, then the page.",
-    "you": "You took the twelve in one word. The node built the same turn.",
-    "next": "Rule Anna's 12 calls, then go 46 for the Movement-1 questions."
+    "you": "You took Anna's twelve in one word and asked who she is.",
+    "next": "Go 46 for the Movement-1 questions; page one is one go behind that."
    },
    "main_effort": "The pilot's page one. Anna's node is the hands-on work behind it.",
    "phases": [
@@ -152,7 +159,7 @@
     },
     {
      "n": 2,
-     "t": "**Anna's node** — `_CANON_NODES/anna-colson-conway.md`: the Impact Character in Tori's shape, the 12 layers built to collide on Fixed Attitude / Memories, 12 calls open.",
+     "t": "**Anna's node** — built and RULED the same day: the twelve on the recommendations; the storyform §4 caught up to §9 through her call 1.",
      "s": "done",
      "when": "9/23"
     },
@@ -196,7 +203,7 @@
     },
     {
      "path": "_CANON_NODES/oxo-storyform.md",
-     "what": "canon v2.0, medium SERIES in frontmatter",
+     "what": "canon v2.0; §4's IC rows now carry the §9 remapping, tagged RULED 2026-09-23",
      "s": "done"
     },
     {
@@ -311,6 +318,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "The profile flipped to canon; Anna's node written and checked; Blocked #18 closed; 12 calls open on the node."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Take the recs, and who's Anna?\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Anna's twelve ruled on the recommendations; storyform §4 propagated from §9; the node re-checked clean. Who she is, answered in chat."
     }
    ]
   }

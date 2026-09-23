@@ -85,13 +85,13 @@ ruled: 2026-08-24
 | Field | Value | Tag |
 |---|---|---|
 | ic_character | **Anna Colson Conway** | **RULED 2026-08-24** |
-| ic_domain | Fixed Attitude | DERIVED (forced) |
-| ic_concern | **Innermost Desires** — the Future-aligned Mind Type: her impact operates at the level of what Tori secretly wants (control, untouchability) already fulfilled | VERIFY |
-| ic_issue / counterpoint / thematic_conflict | — | ENGINE |
-| ic_problem / solution | — (for a Change-MC storyform these tie to the OS symptom family; the engine resolves) | ENGINE |
-| ic_symptom / response | — | ENGINE |
-| ic_unique_ability / critical_flaw | — | ENGINE |
-| ic_benchmark / signposts 1–4 | — | ENGINE |
+| ic_domain | Fixed Attitude | DERIVED (forced) · confirmed by the §9 remapping 2026-09-23 |
+| ic_concern | **Memories** — the §9 remapping (the engine's RS(MvI) slot reassigned to Anna). Innermost Desires is this throughline's Signpost 2, not its Concern | **RULED 2026-09-23** (propagated from §9 on Anna's node, call 1) |
+| ic_issue / counterpoint / thematic_conflict | — (not carried by the §9 transcription; still the engine's) | ENGINE |
+| ic_problem / solution | **Equity → Inequity** — identical to the MC and RS columns; §9: "the story's argument is one argument" | **RULED 2026-09-23** (from §9) |
+| ic_symptom / response | **Projection → Speculation** | **RULED 2026-09-23** (from §9) |
+| ic_unique_ability / critical_flaw | **Evidence → Interdiction** (catalyst → inhibitor equivalent, §9) | **RULED 2026-09-23** (from §9) |
+| ic_benchmark / signposts 1–4 | **Contemplation** / Impulsive Responses · Innermost Desires · Contemplation · Memories (§9 full transcription, RS(MvI) column) | **RULED 2026-09-23** (from §9) |
 
 ## 5 · OS Throughline — the Factions rewriting people
 
