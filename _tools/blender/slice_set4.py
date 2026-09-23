@@ -56,22 +56,26 @@ MACRO = {"gender": 0.0, "age": 0.42, "muscle": 0.55, "weight": 0.58, "proportion
 # The face, SPEC-SUBJECT.md §8 — verified MPFB2 target names, applied BEFORE any mhclo asset is added
 # (assets fit to the mesh as it stands at the moment they are added, so sculpt first or the hair sits wrong).
 FACE = {
-    "head-oval": 0.60,
-    "forehead-scale-vert-decr": 0.25,
-    "l-cheek-bones-incr": 0.50,  "r-cheek-bones-incr": 0.50,
-    "l-cheek-volume-incr": 0.30, "r-cheek-volume-incr": 0.30,
-    "chin-bones-decr": 0.30,
-    "chin-width-decr": 0.25,
-    "l-eye-scale-incr": 0.50,    "r-eye-scale-incr": 0.50,
-    "l-eye-height2-incr": 0.35,  "r-eye-height2-incr": 0.35,
-    "l-eye-corner2-up": 0.30,    "r-eye-corner2-up": 0.30,
-    "eyebrows-angle-up": 0.25,
-    "nose-scale-horiz-decr": 0.30,
-    "nose-point-width-decr": 0.35,
-    "nose-hump-decr": 0.30,
-    "mouth-upperlip-volume-incr": 0.45,
-    "mouth-lowerlip-volume-incr": 0.40,
-    "mouth-cupidsbow-incr": 0.30,
+    "head-oval": 0.75,
+    "forehead-scale-vert-decr": 0.35,
+    "l-cheek-bones-incr": 0.75,  "r-cheek-bones-incr": 0.75,
+    "l-cheek-volume-incr": 0.45, "r-cheek-volume-incr": 0.45,
+    "chin-bones-decr": 0.40,
+    "chin-width-decr": 0.40,
+    "l-eye-scale-incr": 0.70,    "r-eye-scale-incr": 0.70,
+    "l-eye-height2-incr": 0.50,  "r-eye-height2-incr": 0.50,
+    "l-eye-corner2-up": 0.50,    "r-eye-corner2-up": 0.50,
+    "eyebrows-angle-up": 0.40,
+    "nose-scale-horiz-decr": 0.45,
+    "nose-point-width-decr": 0.50,
+    "nose-hump-decr": 0.35,
+    "mouth-upperlip-volume-incr": 0.65,
+    "mouth-lowerlip-volume-incr": 0.60,
+    "mouth-cupidsbow-incr": 0.45,
+    # pass 2, 9/23 ("push it"): the first render read older and more neutral than canon 21
+    "chin-height-decr": 0.30,        # shortens the lower third
+    "eyebrows-trans-down": 0.30,     # the brows sat high and light
+    "head-age-decr": 0.20,           # youth on the cranial read; the age macro stays 0.42
 }
 
 def apply_face(human):
@@ -96,6 +100,22 @@ def apply_face(human):
             print("  target failed:", name, e); bad += 1
     print(f"face: {ok} target(s) applied, {bad} failed")
     return ok, bad
+
+IRIS_MAJOR = (0.38, 0.40, 0.16, 1.0)   # hazel-green, RULED 9/23 call 4
+IRIS_MINOR = (0.16, 0.12, 0.05, 1.0)   # the warm brown inner ring that makes it read hazel, not green
+
+def set_iris(colour_major=IRIS_MAJOR, colour_minor=IRIS_MINOR):
+    """MPFB's EnhancedEye group defaults to blue. Drive it to the ruled colour."""
+    hit = 0
+    for m in bpy.data.materials:
+        if not m.use_nodes: continue
+        for n in m.node_tree.nodes:
+            if n.bl_idname == "ShaderNodeGroup" and n.node_tree and n.node_tree.name == "EnhancedEye":
+                for socket, val in (("IrisMajorColor", colour_major), ("IrisMinorColor", colour_minor)):
+                    if socket in n.inputs:
+                        n.inputs[socket].default_value = val; hit += 1
+    print(f"iris: {hit} socket(s) set")
+    return hit
 
 def make_subject():
     """MPFB2 human if available; else a placeholder that stands where she will."""
@@ -132,6 +152,7 @@ def make_subject():
                     HumanService.add_mhclo_asset(f, human, asset_type=atype, subdiv_levels=1, material_type="MAKESKIN", set_up_rigging=False)
                 except Exception as e2:
                     print("asset skipped:", sub, e2)
+        set_iris()
         bpy.ops.object.select_all(action="DESELECT"); human.select_set(True); bpy.context.view_layer.objects.active = human
         bpy.ops.object.shade_smooth()
         return human, "mpfb"
@@ -175,13 +196,14 @@ def make_lights(hdri_path):
     env = nt.nodes.new("ShaderNodeTexEnvironment")
     if os.path.exists(hdri_path):
         env.image = bpy.data.images.load(hdri_path)
-    bg = nt.nodes.new("ShaderNodeBackground"); bg.inputs["Strength"].default_value = 0.12
+    bg = nt.nodes.new("ShaderNodeBackground"); bg.inputs["Strength"].default_value = 0.05   # pass 2: was 0.12, the fill was drowning the key
     out = nt.nodes.new("ShaderNodeOutputWorld")
     nt.links.new(env.outputs["Color"], bg.inputs["Color"]); nt.links.new(bg.outputs["Background"], out.inputs["Surface"])
     # the warm key: one area light, low and to camera-left, 3000 K
     bpy.ops.object.light_add(type="AREA", location=(-1.4, -0.9, 1.35))
     key = bpy.context.active_object; key.name = "key_warm"
-    key.data.energy = 45; key.data.size = 0.9; key.data.shape = "RECTANGLE"; key.data.size_y = 1.2
+    # pass 2 (9/23): key was 45, the face was not being carved
+    key.data.energy = 75; key.data.size = 0.9; key.data.shape = "RECTANGLE"; key.data.size_y = 1.2
     key.data.use_temperature = True if hasattr(key.data, "use_temperature") else False
     if hasattr(key.data, "temperature"): key.data.temperature = 3000
     else: key.data.color = (1.0, 0.72, 0.48)
@@ -189,7 +211,8 @@ def make_lights(hdri_path):
     # the faint cool rim, behind and opposite
     bpy.ops.object.light_add(type="AREA", location=(1.6, 1.4, 1.9))
     rim = bpy.context.active_object; rim.name = "rim_cool"
-    rim.data.energy = 25; rim.data.size = 0.4; rim.data.color = (0.75, 0.85, 1.0)
+    # pass 2 (9/23): rim was 25 and never reached the face
+    rim.data.energy = 55; rim.data.size = 0.4; rim.data.color = (0.75, 0.85, 1.0)
     rim.rotation_euler = (math.radians(60), 0, math.radians(135))
 
 def make_camera(still, subject_z=1.35):
