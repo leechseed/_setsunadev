@@ -4,9 +4,9 @@
   "title": "The zero-budget ORANGE launch — the studio, the first signing, and D-9",
   "trunk": "ORANGE/OPERATOR",
   "issued": "2026-09-03",
-  "asof": "2026-09-16",
+  "asof": "2026-09-23",
   "s": "hot",
-  "status": "D-9 GO · D-6 YES · D-7 RULED · D-5 RULED provisional · **GATE 3 OPEN: the pipeline stood up, S4-01 rendered (the stand-in)** · the sculpt and the skin pass are the evenings",
+  "status": "**LAUNCH MONTH RULED 2026-09-23: FEBRUARY 2027.** The nineteen-day hold on the date is over and the back-plan is drawn: about 19 weeks, roughly 100 hands-on evenings on the conservative figures, a margin of one to two weeks. **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.** Three calls stay open on this sheet (D-8 · D-10 · D-11), each now carrying a recommendation and a one-word answer.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.11 · DOPE SHEET"
+  "version": "v0.12 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,8 +50,8 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**The Gate 3 evenings: the sculpt, then the skin pass on S4-01, then hair, pose, dressing; render the five; the posting week on a test account; the AAR.** The slice order is on disk. Write the number in the gates table §1 when you have it.",
-  "default": "Silence: COA A runs as the pipeline; the stretch budget stays unspent until the Gate 3 AAR; the gates table runs on the first-dollar-first branch until the number lands; D-8 and D-11 run on their recommendations.",
+  "order": "**Start the Gate 3 evenings, and rule D-8 · D-10 · D-11 in three words.** The back-plan holds February only at a sustained five to six evenings a week from tonight; the sculpt is the first evening. The three calls cost one word each and are drawn in `CALLS.md` with a recommendation apiece: D-8 \"Confirm\" · D-10 \"Stands\" · D-11 \"Confirm\".",
+  "default": "Silence: the back-plan stands as drawn (the extra month over the boresight's January recommendation goes into library-banking, not a second test month); D-10's §1 draft locks in by its own default; D-8 and D-11 stay open and the reference pull does not start. The 20-piece library floor and the 60-day buffer run until the October test thresholds say otherwise.",
   "calls": [
    {
     "q": "D-9 · the clear",
@@ -98,6 +98,13 @@
     "options": "where her content sits relative to the funnel's lane; framing that processors and platforms ban downstream gates the platform pick",
     "default": "mainstream tag, no ideology framing (rec)",
     "s": "open"
+   },
+   {
+    "q": "D-14 · the launch month",
+    "options": "January 2027 (the boresight's recommendation) · February 2027 · December 2026 · later",
+    "default": "January (boresight rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23, Chief spoken: **February 2027.** One month later than BORESIGHT 24's recommendation. The back-plan puts the extra month into library-banking rather than a second test month or a later start, because Gate 3's evenings have not begun. Nineteen days idle, four boards and the leverage line on every one of them; the line now reads 'Back-plan February 2027.'"
    }
   ]
  },
@@ -178,6 +185,19 @@
        "s": "held"
       }
      ]
+    },
+    {
+     "label": "Ruled · 9/23",
+     "items": [
+      {
+       "t": "**D-14 the launch month: February 2027.** The hold that ran nineteen days and four boards is closed. The sheet's own sequencing table already read \"~February 2027 if M-001 = 9/3 + monthly cadence\", so the ruling and the table agree.",
+       "s": "ruled"
+      },
+      {
+       "t": "**The back-plan is drawn and it is tight.** About 19 weeks to February; the critical path — Gate 3's evenings, the posting week, the AAR, then banking — costs roughly 100 evenings on the conservative figures, which is five to six evenings a week with no gap longer than the AAR week. The margin is one to two weeks and it dies if Gate 3 runs past twenty evenings or the library banks at forty pieces instead of twenty.",
+       "s": "open"
+      }
+     ]
     }
    ]
   },
@@ -211,8 +231,8 @@
    "strand": {
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
-    "you": "You ruled six decisions and opened Gate 3 in one day.",
-    "next": "The sculpt. Open set4_S4-01.blend and make her; the chain is waiting on the other side."
+    "you": "You ruled the month on 9/23 and unlocked gear 6 to draw the plan behind it; twelve specialists read the eleven source files and two wrote the plan.",
+    "next": "The sculpt. Gate 3's first evening is the whole schedule — nothing downstream can start until the slice runs."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -236,15 +256,15 @@
     },
     {
      "n": 3,
-     "t": "**The vertical slice** — **opened 9/16 (\"slice go\"): Blender 4.5 LTS · MPFB2 · the CC0 assets · HDRIs · the DARKROOM pull · the Set 4 scaffold (five scenes, the warm low-key rig) · S4-01 rendered full on the 3090 in under a minute, the stand-in subject.** Left: the sculpt · the skin pass (the Gate 3 test) · hair · pose · dressing · the five renders · the posting week · the AAR. On the D-5 branch the slice is the first product the day it passes.",
+     "t": "**The vertical slice** — opened 9/16 (\"slice go\"): Blender 4.5 LTS · MPFB2 · the CC0 assets · HDRIs · the DARKROOM pull · the scaffold script · S4-01 rendered as a stand-in. **The back-plan of 9/23 dates it: the 15–20 evenings run in October 2026, 0 done as of 9/23.** The chain is sculpt → skin (the test row) → hair → pose → dressing → render, then the posting week and the five-row AAR. AAR row 1 (skin at 100% against the DARKROOM pull) is the row that gates the gate.",
      "s": "hot",
-     "when": "9/16 →"
+     "when": "9/16 → Oct 2026"
     },
     {
      "n": 4,
-     "t": "**Launch** — library banked (twenty to forty pieces plus a sixty-to-ninety-day buffer), accounts live, Season 1 begins.",
+     "t": "**Launch** — library banked (the back-plan runs the conservative floor: 20 pieces plus a 60-day buffer), accounts live, Season 1 begins. **Dated 9/23: banking runs December and January at up to four evenings a still, launch lands February 2027.** The 40-piece ceiling only applies if the October test clears its top threshold.",
      "s": "gated",
-     "when": "after 3"
+     "when": "Dec 2026 → Feb 2027"
     },
     {
      "n": 5,
@@ -350,6 +370,21 @@
      "path": "Q:/fun/_BOLO24/ (off the repo)",
      "what": "hdri/ (three Poly Haven 2k) · refs/set4/ (16 DARKROOM thumbs + manifest) · renders/blend/ (five scenes) · renders/full_S4-01.png · mpfb_assets/",
      "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/24/backplan/BACKPLAN.md",
+     "what": "the February 2027 back-plan: the date, the backwards table, the critical path, the slack, the open calls, the evening budget",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/24/backplan/CALLS.md",
+     "what": "D-8 · D-10 · D-11 drawn for one-word rulings — evidence, options, a recommendation each, and what each unblocks",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/24/backplan/",
+     "what": "the ten source extracts the back-plan was built from (gates · slice · season1 · charter · pipeline · comparables · d8-reference · character · boresight · status)",
+     "s": "done"
     }
    ],
    "cost": [
@@ -380,7 +415,7 @@
     "last": "The flow says an undated hold is illegal; the sit rep has said so three times.",
     "plan": "One decider, three legal answers.",
     "you": "You are the gate and the only one who can open it.",
-    "next": "D-5 is ruled on the structure; the number in the gates table §1 is the one line still yours."
+    "next": "Three words: D-8 \"Confirm\" · D-10 \"Stands\" · D-11 \"Confirm\". Each is drawn with its evidence and the one fact that would flip it."
    },
    "groups": [
     {
@@ -543,6 +578,16 @@
      "when": "9/16",
      "who": "Claude",
      "t": "Gate 3 opened: the COA A pipeline stood up in the hour at $0 (Blender 4.5 LTS, MPFB2, the CC0 assets, HDRIs, the DARKROOM pull, the Set 4 scaffold); S4-01 rendered smoke and full on the 3090; the slice order written with the five stills, the evenings, the posting week and the AAR. FRAGO 24 v0.11."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "Ruled the launch month: February 2027. Then, on the back-plan order: \"unlock the amount of agents you can use up to 16, so we can speed it up.\" Gear 6 written into SOP §1 — the ceiling is 16, with the 9/10 incident kept attached to it as the warning."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Back-plan built at gear 6: ten PS extractors on disjoint sources, two MS writers at the handoff, a script reviewer at the fan-in (zero findings). BACKPLAN.md and CALLS.md written. February holds at five to six evenings a week; the extra month over the boresight's January recommendation is recommended into library-banking. D-8, D-10 and D-11 drawn for one-word rulings."
     }
    ]
   }
