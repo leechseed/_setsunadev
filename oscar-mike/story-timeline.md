@@ -3,7 +3,7 @@ parked: 2026-09-08
 title: The Story Timeline — the tool and its theory (BOLO 35 + 36)
 handle: story timeline
 tags: BLACK, BVX, timeline-tool, music-theory, synthesis, BVX-LEARN, BOLO-35, BOLO-36
-status: parked on "Oscar Mike everything" — boresight HELD, four questions open, delivery never cleared
+status: DELIVERED 2026-09-23 — the four questions ruled on the recommendations, the three-part head version fired and banked as three loci. BOLO 36 is the follow-on.
 open-decision: "(1) delivery shape — one in-chat head version in three parts (UI read · the two paradigms · the syllabus shortlist) banked after, or gated one part at a time · (2) the data — is the 2023 time-series note the data already collected, or is there more outside the vault · (4) subject code — a new MUS shelf (MUS.01 synthesis · MUS.02 theory) or filed under CRE · (5) 'just consult end' — read as 'the consult ends at the grammar step, no build yet'; confirm"
 ---
 
@@ -37,3 +37,17 @@ Question 3 (rule the prowords) left the chat and became the first five slots of 
 ## Related
 
 [[watch-register]] (WARROOM — the UI precedent) · [[mil01-readthrough]] · BOLO 37/38 (the loop + the front page)
+
+## Delivered — 2026-09-23
+
+Chief ruled row 12 "all recommended": one head version in three parts · the 2023 note is the data · subject code **MUS** (MUS.01 synthesis · MUS.02 theory) · the consult ends at the grammar step, no build.
+
+Fired the same turn at gear 2 — four PS on the three editors, the vault, the two paradigms and the syllabus; one MS writing. Delivered `_tools/bolostatus/work/35/HEAD-VERSION.md` and banked a locus per part, per the resume:
+
+- `_0.1_BVX_LEARN/LOCI/timeline-grammar.locus.md`
+- `_0.1_BVX_LEARN/LOCI/score-vs-patch.locus.md`
+- `_0.1_BVX_LEARN/LOCI/music-syllabus.locus.md`
+
+**The correction the read turned up:** MIDI is not the bridge between score and patch. It imported discrete note-on/note-off events into synthesis and sits *inside* the score paradigm; pitch-bend and CC simulate continuity at high sample resolution rather than providing it. The theory survives the correction — the verdict is two layers, structure on a score layer and tension on a patch layer underneath.
+
+**Where it stops, by ruling:** at the grammar step. The unit set has not been named and no build decision was made.
