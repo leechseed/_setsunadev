@@ -3,7 +3,7 @@ title: Physique watchlist — glute-dominant figures
 type: watchlist
 track: ORANGE
 status: living document
-updated: 2026-09-23
+updated: 2026-08-30
 ---
 
 # Physique Watchlist
@@ -40,7 +40,6 @@ Glute-dominant physique figures to follow — the enhanced-build reference set, 
 | **Vladislava Galagan** | Full-body muscle rather than glute-dominant — the biggest muscle-to-content-creator crossover case. | Documented | [@vladigalagan](https://x.com/vladigalagan) | [@vladigalagan](https://instagram.com/vladigalagan) (~2M) |
 | **Megan Thee Stallion** | Mainstream celebrity with real glute-training content (Hottie Bootcamp). | Natural-claimed | [@theestallion](https://x.com/theestallion) | [@theestallion](https://instagram.com/theestallion) |
 | **Suzy Cortez** | Miss BumBum winner → OnlyFans — the pageant-to-content pipeline in one person. Older alt accounts exist; linktree points here. | Speculated | [@suzyacortez](https://x.com/suzyacortez) | [@suzycortezofficial](https://instagram.com/suzycortezofficial) |
-| **Rebel Rhyder** | Adult performer, not a fitness figure — added 2026-09-23 on Chief's word as a **personal inspiration benchmark** (the bar for intensity, endurance and look), not as an enhanced-build case. Electrical-engineering degree, two years in aerospace, her own words. SFW channel is the hiking account; the XXX account is 18+. | ⚠️ **unassessed** — no public statement found either way in the 9/10 case study; the four labels all assert something the record does not support, so the row carries none until ruled | [@RebelRhyderXXX](https://x.com/RebelRhyderXXX) *(18+, 482.6K, fetched 9/10)* | [@rebelbynature_](https://instagram.com/rebelbynature_) *(hiking, SFW)* · `rebelrhyderig` (18+) — **neither IG fetched** |
 
 ## Trans lane
 
