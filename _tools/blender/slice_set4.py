@@ -56,12 +56,12 @@ MACRO = {"gender": 0.0, "age": 0.42, "muscle": 0.55, "weight": 0.58, "proportion
 # The face, SPEC-SUBJECT.md §8 — verified MPFB2 target names, applied BEFORE any mhclo asset is added
 # (assets fit to the mesh as it stands at the moment they are added, so sculpt first or the hair sits wrong).
 FACE = {
-    "head-oval": 0.75,
+    "head-oval": 0.25,                # pass 4: was 0.75 — the oval was the Impost
     "forehead-scale-vert-decr": 0.35,
     "l-cheek-bones-incr": 0.75,  "r-cheek-bones-incr": 0.75,
     "l-cheek-volume-incr": 0.45, "r-cheek-volume-incr": 0.45,
-    "chin-bones-decr": 0.40,
-    "chin-width-decr": 0.40,
+    "chin-bones-incr": 0.55,          # pass 4: REVERSED — G1 wants a sharp gonial angle
+    "chin-width-decr": 0.15,          # pass 4: was 0.40, a Transom keeps jaw width
     "l-eye-scale-incr": 0.70,    "r-eye-scale-incr": 0.70,
     "l-eye-height2-incr": 0.35,  "r-eye-height2-incr": 0.35,   # pass 3: 0.50 read startled
     "l-eye-corner2-up": 0.50,    "r-eye-corner2-up": 0.50,
@@ -76,6 +76,13 @@ FACE = {
     "chin-height-decr": 0.30,        # shortens the lower third
     "eyebrows-trans-down": 0.30,     # the brows sat high and light
     "head-age-decr": 0.20,           # youth on the cranial read; the age macro stays 0.42
+    # pass 4, 9/23: aiming THE TRANSOM (FI3·G1·E3) per _CANON_NODES/L2b-morphology-face.md §4 —
+    # wide short face · sharp gonial angle despite the width · wide-set eyes. The horizontal band read.
+    "head-square": 0.35,             # FI3, the wide flat cranial read
+    "head-scale-horiz-incr": 0.40,   # FI3 width
+    "head-scale-vert-decr": 0.30,    # FI3 shortness
+    "chin-prognathism-incr": 0.25,   # forward chin sets the direct read
+    "l-eye-trans-out": 0.35, "r-eye-trans-out": 0.35,   # E3, wide-set
 }
 
 def apply_face(human):
