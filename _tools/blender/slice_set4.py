@@ -63,7 +63,7 @@ FACE = {
     "chin-bones-decr": 0.40,
     "chin-width-decr": 0.40,
     "l-eye-scale-incr": 0.70,    "r-eye-scale-incr": 0.70,
-    "l-eye-height2-incr": 0.50,  "r-eye-height2-incr": 0.50,
+    "l-eye-height2-incr": 0.35,  "r-eye-height2-incr": 0.35,   # pass 3: 0.50 read startled
     "l-eye-corner2-up": 0.50,    "r-eye-corner2-up": 0.50,
     "eyebrows-angle-up": 0.40,
     "nose-scale-horiz-decr": 0.45,
@@ -178,15 +178,22 @@ def make_bed():
     bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0.3, 0.25))
     bed = bpy.context.active_object; bed.name = "bed"; bed.scale = (1.0, 1.1, 0.25)
     m = bpy.data.materials.new("linen"); m.use_nodes = True
-    m.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.62, 0.58, 0.52, 1)
+    m.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.38, 0.35, 0.31, 1)   # pass 3: was 0.62, the linen was a second fill
     m.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.9
     bed.data.materials.append(m)
     bpy.ops.mesh.primitive_plane_add(size=8, location=(0, 0, 0))
-    bpy.context.active_object.name = "floor"
+    floor = bpy.context.active_object; floor.name = "floor"
+    # pass 3 (9/23): the floor had NO material, so it rendered at Blender's default 0.8 grey and was
+    # the real fill in passes 1 and 2 — dropping the world strength never touched it.
+    fm = bpy.data.materials.new("floor_dark"); fm.use_nodes = True
+    fm.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.055, 0.05, 0.048, 1)
+    fm.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.85
+    floor.data.materials.append(fm)
     bpy.ops.mesh.primitive_plane_add(size=6, location=(0, 2.2, 1.5), rotation=(math.radians(90), 0, 0))
     wall = bpy.context.active_object; wall.name = "wall"
     wm = bpy.data.materials.new("wall_paint"); wm.use_nodes = True
-    wm.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.35, 0.30, 0.28, 1)
+    wm.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.10, 0.09, 0.088, 1)   # pass 3: was 0.35
+    wm.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.95
     wall.data.materials.append(wm)
 
 def make_lights(hdri_path):
@@ -200,10 +207,10 @@ def make_lights(hdri_path):
     out = nt.nodes.new("ShaderNodeOutputWorld")
     nt.links.new(env.outputs["Color"], bg.inputs["Color"]); nt.links.new(bg.outputs["Background"], out.inputs["Surface"])
     # the warm key: one area light, low and to camera-left, 3000 K
-    bpy.ops.object.light_add(type="AREA", location=(-1.4, -0.9, 1.35))
+    bpy.ops.object.light_add(type="AREA", location=(-0.85, -0.62, 1.45))   # pass 3: pulled in from (-1.4,-0.9,1.35) for falloff
     key = bpy.context.active_object; key.name = "key_warm"
     # pass 2 (9/23): key was 45, the face was not being carved
-    key.data.energy = 75; key.data.size = 0.9; key.data.shape = "RECTANGLE"; key.data.size_y = 1.2
+    key.data.energy = 55; key.data.size = 0.75; key.data.shape = "RECTANGLE"; key.data.size_y = 1.2
     key.data.use_temperature = True if hasattr(key.data, "use_temperature") else False
     if hasattr(key.data, "temperature"): key.data.temperature = 3000
     else: key.data.color = (1.0, 0.72, 0.48)
