@@ -1,0 +1,303 @@
+{
+ "bolo": {
+  "n": 37,
+  "title": "The proword selection loop — name pending",
+  "trunk": "BLACK",
+  "issued": "2026-09-06",
+  "asof": "2026-09-23",
+  "s": "open",
+  "status": "🟡 captured 9/6, gap 3 (placement) answered by BOLO 38's 9/10 ruling — the page becomes the board; gaps 1 (reveal timing) and 2 (five-of-ten) and the loop's name still open; parked with the stack since 9/8.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "SOP §5 · SOP §6 · every trunk",
+  "related": [
+   {
+    "n": 35,
+    "why": "the five prowords benched here (RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR) are the loop's first ten slots"
+   },
+   {
+    "n": 38,
+    "why": "gap 3 (placement) sizes off BOLO 38's call — the sit rep as a CK3-style front page — and was answered by BOLO 38's 9/10 ruling that the page becomes the board"
+   }
+  ],
+  "home": "BOLO.md · row 37",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Captured the same breath BOLO 35's readback closed, before the how-copy even landed and while Discord crosstalk was still cutting the line."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One loop, not a new build for each proword — the five already benched on 35/36 slot straight in as the first ten, and gap 3 sizes off BOLO 38's ruling instead of a second decision."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Two spec gaps sit open on purpose — the reveal timing and the five-of-ten question wait for a ruling rather than get guessed at, so the first build doesn't have to be redone."
+  }
+ ],
+ "frago": {
+  "mission": "Build the proword selection loop as one panel of the sit rep page, in order to rule every new proword in ten seconds where the record already lives.",
+  "order": "**Three words: the name (rec MINT), the reveal (rec on submit), the back five (rec never surface; a bench is five, the other five are the reserve).** Then the panel builds in one session inside BOLO 38's page.",
+  "default": "Silence: the loop stays parked at Blocked #13; prowords keep getting ruled in chat and written to the SOI by hand.",
+  "calls": [
+   {
+    "q": "Call 1 · the name",
+    "options": "MINT (rec) · BREVITY · SOI · CALLSIGN · LEXICON",
+    "default": "MINT (rec)",
+    "s": "open",
+    "why": "MINT reads as the place words get struck; SOI and LEXICON are already taken by the card and the doctrine; CALLSIGN is a different thing."
+   },
+   {
+    "q": "Call 2 · the reveal",
+    "options": "on submit (rec) · held to the next sit rep",
+    "default": "on submit (rec)",
+    "s": "open",
+    "why": "The grid pass showed the result on click; a held reveal adds a step and loses the ten-second scan."
+   },
+   {
+    "q": "Call 3 · five of ten",
+    "options": "the back five never surface, they are the reserve (rec) · they surface when a front-five pick is struck · show all ten",
+    "default": "never surface (rec)",
+    "s": "open",
+    "why": "Five is the scan; ten is a list. The reserve refills a slot only when Chief strikes one."
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What the proword selection loop is, why Chief called it right after the BOLO 35 readback, and what still blocks the first build.",
+   "strand": {
+    "last": "The proword selection loop had no page and no ruling before 9/6 — prowords got approved case by case in conversation, with no structured way to bench and pick them.",
+    "plan": "Read the groups below — the order as Chief spoke it, what already exists to build it on, and what the record says about where it sits — then Execution for what's been settled since.",
+    "you": "You gave the order straight after the BOLO 35 readback, before the how-copy landed and while Discord crosstalk was cutting the transmission: an initiative to approve and disprove prowords as they come out, built the way the DARKROOM's grid pass was built.",
+    "next": "Read the groups below, then Execution for gap 3's answer and the two gaps still open."
+   },
+   "groups": [
+    {
+     "label": "The transmission, verbatim where Chief ruled",
+     "items": [
+      {
+       "t": "9/6, spoken right after the BOLO 35 readback (no how-copy; the transmission cut by Discord crosstalk): an initiative to approve and disprove prowords as they come out, built the way the DARKROOM's grid pass was built — a page served locally, click, next, results written to disk.",
+       "s": "done"
+      },
+      {
+       "t": "9/10 evening, the ruling that answers this loop's placement gap: \"whenever I call for the sit rep, give it back to me in this format\" — the sit rep page becomes the board, not a page the board hands to Chief.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "The DARKROOM's grid pass — the build pattern this loop copies: a page served locally, click, next, results written to disk.",
+       "s": "done"
+      },
+      {
+       "t": "The sit rep's standing-block infrastructure (BOLO 38, v0 built and published 9/10) — this loop is meant to run inside it as one panel.",
+       "s": "done"
+      },
+      {
+       "t": "Five prowords already benched on BOLO 35/36 — RECON · NAPKIN · SYLLABUS · DISTILL · GRAMMAR — set as the loop's first ten slots' seed.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "STATE.md Blocked #13: name the loop (bench MINT rec · BREVITY · SOI · CALLSIGN · LEXICON) and answer its three spec gaps; the first build waits on it, and BOLO 38 sizes off gap 3.",
+       "s": "open"
+      },
+      {
+       "t": "Parked with the stack 9/8 — captured, spec gaps queried, nothing built.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason is that prowords keep arriving faster than they get ruled, and the ruling happens in chat where it is lost.",
+   "strand": {
+    "last": "Chief called this loop on 9/6 right after the BOLO 35 readback: approve and disprove prowords as they come out, built like the DARKROOM's grid pass.",
+    "plan": "A panel on the sit rep page: each slot shows five candidates, Chief clicks three, results write to disk and the SOI updates.",
+    "you": "You ruled the placement on 9/10 without naming this loop: the sit rep page is the board. You have not named the loop or answered the two remaining gaps.",
+    "next": "Name it and answer the two gaps, one word each, and the first build sizes itself."
+   },
+   "task": "Build the proword selection loop as one panel of the sit rep page,",
+   "intent": "in order to rule every new proword in ten seconds where the record already lives, instead of in chat where it is lost.",
+   "spoken": "\"An initiative to approve and disprove prowords as they come out\" (9/6) · \"whenever I call for the sit rep, give it back to me in this format\" (9/10)",
+   "endstate": [
+    "The loop has a name and a slot on the SOI.",
+    "Every open proword bench shows five of its ten on the sit rep page; Chief picks three; the picks write to disk the same click.",
+    "The SOI page and the glossary read the picks without a hand edit.",
+    "The five benched prowords from BOLO 35 and 36 are the first ten slots' seed."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What's been settled on the loop since 9/6, and what the first build still needs.",
+   "strand": {
+    "last": "From 9/6 to 9/8 the loop sat captured and parked — mechanics banked, three spec gaps asked, nothing built.",
+    "plan": "Capture the mechanics and the name bench, ask the three spec gaps, let BOLO 38's placement ruling answer gap 3, then rule the remaining two gaps before the first build.",
+    "you": "You gave the mechanics and asked for a name in the same 9/6 turn, then on 9/10 ruled BOLO 38's placement question, which answers this loop's gap 3 the same turn.",
+    "next": "Rule gap 1 (reveal on submit, or held to the next sit rep) and gap 2 (whether the bench's back five ever show), and pick the loop's name off the bench (MINT rec · BREVITY · SOI · CALLSIGN · LEXICON)."
+   },
+   "main_effort": "Sizing the loop's first build off the two spec gaps still open — the reveal timing and the five-of-ten question — now that gap 3 (placement) is answered by BOLO 38's ruling that the sit rep page is the board.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**Captured** — 9/6, mechanics banked: each proword slot carries a description plus a bench of up to ten candidates; the page shows five; Chief picks three of five, ranked 1st/2nd/3rd; ten slots a day; Claude's ranking sealed beforehand, revealed after Chief's submit.",
+     "s": "done",
+     "when": "9/6"
+    },
+    {
+     "n": 2,
+     "t": "**Name bench opened** — 9/6, Chief asked for a name: MINT (rec) · BREVITY · SOI · CALLSIGN · LEXICON.",
+     "s": "done",
+     "when": "9/6"
+    },
+    {
+     "n": 3,
+     "t": "**Parked** — 9/8, captured and spec-gap-queried, held with the stack.",
+     "s": "done",
+     "when": "9/8"
+    },
+    {
+     "n": 4,
+     "t": "**Gap 3 answered** — 9/10, BOLO 38's ruling that the sit rep page becomes the board settles this loop's placement question; it will run as a panel of that page rather than a page the board hands to Chief.",
+     "s": "done",
+     "when": "9/10"
+    },
+    {
+     "n": 5,
+     "t": "**Gaps 1 and 2 still open** — reveal timing (on submit, or held to the next sit rep) and five-of-ten (whether a bench's back five ever surface); the loop's name also still Chief's to pick.",
+     "s": "open",
+     "when": "pending"
+    }
+   ],
+   "coord": [],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What files carry this BOLO's record, and what it has cost so far.",
+   "strand": {
+    "last": "Before this sheet, BOLO 37 lived only in BOLO.md's row and STATE.md's Blocked #13, plus the session notes that recorded the 9/6 capture.",
+    "plan": "This sheet is the first file the capture and the partial ruling produce; the loop's build files follow once gaps 1 and 2 are ruled.",
+    "you": "Nothing costed yet beyond the spoken turns.",
+    "next": "Once gaps 1 and 2 are ruled and the name is picked, the first build's files will land here."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 37 — the proword selection loop, captured 9/6, gap 3 answered by BOLO 38's 9/10 ruling",
+     "s": "done"
+    },
+    {
+     "path": "STATE.md",
+     "what": "Blocked #13 — name the loop and answer its three spec gaps; top of the list since 9/6",
+     "s": "open"
+    }
+   ],
+   "cost": [
+    {
+     "k": "base",
+     "v": "$0 reported — the capture, the name bench, and the parking cost nothing beyond the spoken turns"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. The name and the two gaps are Chief's; the panel is Claude's.",
+   "strand": {
+    "last": "Blocked #13 since 9/6, parked with the stack 9/8, one of its three gaps closed by another BOLO's ruling on 9/10.",
+    "plan": "Three words from Chief, then a one-session build inside BOLO 38's page.",
+    "you": "You gave the mechanics and the bench; the name and two gaps are still yours.",
+    "next": "MINT, or another name; reveal on submit or at the next sit rep; back five surface or never."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — the loop's name, the reveal timing, the five-of-ten rule, every proword ruled through it. **Claude** — the panel, the disk format, the SOI wiring; builds nothing until the three words land.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Blocked #13, open since 9/6.** Gap 3 (placement) closed 9/10 by BOLO 38. Gaps 1 and 2 and the name remain.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "**DOPE SHEET 37** — this page · **BOLO 38** — the sit rep page the loop lives in · **the SOI** — where the ruled prowords land · \"FRAGO 37\" pushes a ruling here.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "The record of the transmissions on this loop: the 9/6 order, the 9/6 spec gaps, the 9/8 parking, and the 9/10 ruling that answered gap 3.",
+   "strand": {
+    "last": "Spoken 9/6, parked 9/8, gap 3 answered 9/10.",
+    "plan": "One capture, three gaps asked, one park, one ruling that answers one of the three.",
+    "you": "You gave the order and the name-bench ask on 9/6, then ruled BOLO 38's placement question on 9/10, which answers this loop's gap 3.",
+    "next": "The loop's own log entries land here once gaps 1 and 2 are ruled and the first build fires."
+   },
+   "entries": [
+    {
+     "when": "9/6",
+     "who": "Chief",
+     "t": "Straight after the BOLO 35 readback, no how-copy, transmission cut by Discord crosstalk: ordered an initiative to approve and disprove prowords as they come out, built the way the DARKROOM's grid pass was built — a page served locally, click, next, results written to disk. Mechanics as spoken: each slot carries a description plus a bench of up to ten candidates; the page shows five; Chief picks three of five, ranked 1st/2nd/3rd; ten slots a day; Claude's ranking sealed beforehand, revealed after Chief's submit. Asked for a name off a bench: MINT (rec) · BREVITY · SOI · CALLSIGN · LEXICON."
+    },
+    {
+     "when": "9/6",
+     "who": "Claude",
+     "t": "Asked three spec gaps the same turn: (1) the reveal — on submit, or held to the next sit rep; (2) five of ten — does the back five of a bench ever show; (3) placement — a sit-rep block that hands Chief the page, or the page becomes the board."
+    },
+    {
+     "when": "9/8",
+     "who": "Claude",
+     "t": "Parked the loop with the stack — captured, spec gaps queried, nothing built."
+    },
+    {
+     "when": "9/10",
+     "who": "Chief",
+     "t": "Ruled BOLO 38's placement question, spoken after the creator-cases explainer: \"whenever I call for the sit rep, give it back to me in this format\" — the sit rep page becomes the board. This answers gap 3 of the proword loop: it sizes as a panel of that page."
+    }
+   ]
+  }
+ ]
+}

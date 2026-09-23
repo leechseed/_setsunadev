@@ -4,9 +4,9 @@
   "title": "Voice work as income — Chief can build voices in ElevenLabs",
   "trunk": "ORANGE-leaning, UNRULED",
   "issued": "2026-09-16",
-  "asof": "2026-09-17",
-  "s": "held",
-  "status": "🔴 CAPTURED 9/16, still unpriced — but the ground shifted 9/17: **Chief now owns an ElevenLabs account**, so the tool cost is sunk and this venture's marginal cost is zero. The boresight is still owed.",
+  "asof": "2026-09-23",
+  "s": "open",
+  "status": "🟡 9/23 PRICED (Chief: \"go 57\") — four paths, three values each, 97 cited facts. On-target 90 days: Voice Library $10–50 · built-to-order voices $300–800 · adult-lane voice $50–150 · narration service $100–400. Ranking: custom > service > adult > library. Custom beats BOLO 29's on-target ($100–200); 29's ideal ($1,500–2,000) still edges 57's best ideal ($1,000–1,500). No path pays the bills in 90 days. Trunk still unruled; ranked provisionally third in the four-way behind 24 and ahead of 29.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 56 (JUDY)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 57",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,20 +46,22 @@
  ],
  "frago": {
   "mission": "Price the ElevenLabs voice-building skill as a revenue path, in order to rank it honestly against the other three ventures instead of letting a named asset sit uncosted.",
-  "order": "**Run one boresight on BOLO 57: read ElevenLabs' Voice Library payout terms, rates, exclusivity and licensing, and put a number on each of the four paths. One pass, no build, no spend.** Bring it back as a FRAGO on this sheet, then rank 57 against 24 · 27 · 29.",
-  "default": "Silence: the boresight does not run, 57 stays uncosted and unranked, and BOLO 29's reward-vs-risk reading (Blocked #11) stays open with a fourth candidate it cannot weigh. The trunk stays ORANGE-leaning and unruled. Nothing is spent and nothing is signed.",
+  "order": "**Rule the trunk and take or strike the provisional rank (24 · 57 custom · 29 · 27).** If 57 runs: week one is one Professional Voice Clone recorded and shared to the Voice Library (two hours, passive), plus a Fiverr listing for built-to-order voices with three demo voices; nothing else until a first order lands.",
+  "default": "Silence: 57 sits at third in the four-way, priced and unranked by your word; nothing is listed, nothing is recorded, the ElevenLabs account stays as it is.",
   "calls": [
    {
     "q": "The boresight — does it run?",
     "options": "RUN now (rec: one pass, zero spend, unblocks #11) · HOLD until BOLO 24's launch month is named · DROP the row and fold it back into 29 as a line",
     "default": "RUN now (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RAN 2026-09-23 on \"go 57\": one PS fetched 97 cited facts (ElevenLabs payouts, plans, licensing; ACX, GVAA, Fiverr and erotic-audio rates; demand signals), one MS priced the four paths, a script checked every dollar against a fact id. Blocked pages: the ElevenLabs help center, one Medium post, the GVAA full guide; secondaries used."
    },
    {
     "q": "Which paths get priced",
     "options": "all four (rec) · only (a) the Voice Library payout program, as the one with published terms · only the two that need no adult-content decision — (a) payout and (b) built-to-order",
     "default": "all four (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "All four priced. Library: $0–10 · $10–50 · $200–500, LOW, near-zero effort, demand-driven with no lever. Custom: $0 · $300–800 · $1,000–1,500, MEDIUM, 5–10 h/week, the 4–8 week marketplace dead zone is the risk. Adult: $0 · $50–150 · $300–600, LOW, no confirmed buyer channel; stacks beside BOLO 24 as the studio's own voice. Service: $0 · $100–400 · $700–1,500, MEDIUM, 5–8 h/week, cold-pitch conversion unverified."
    },
    {
     "q": "The trunk",
@@ -71,13 +73,15 @@
     "q": "The subscription question",
     "options": "one ElevenLabs subscription serves both JUDY and the venture (rec: BOLO 56 already committed the tool) · separate accounts to keep the venture's licensing clean · decide after the boresight reads the terms",
     "default": "decide after the boresight (rec)",
-    "s": "open"
+    "s": "open",
+    "ruling": "Deferred to the trunk ruling. Unverified whether Chief's account is on a paid tier; Starter ($6) carries the commercial license, Creator ($22) unlocks Professional Voice Cloning, which the Library path needs."
    },
    {
     "q": "Where 57 ranks in the four-way",
     "options": "cannot be answered before the boresight — this call is parked on the one above",
     "default": "parked until priced",
-    "s": "held"
+    "s": "open",
+    "ruling": "Provisional 9/23: third. 24 first (the business, ruled), 57's custom path second on the on-target read ($300–800 vs 29's $100–200), 29 third (its ideal still wins on one breakout), 27 folded under 24. Chief's rule is biggest reward wins; on-target that is 57 over 29, on ideal it is 29 over 57. His word settles which read counts."
    }
   ]
  },
@@ -192,8 +196,8 @@
    "strand": {
     "last": "BOLO 29 already asked which venture starts first, three-way, before this row existed.",
     "plan": "Hold the four paths uncosted until a boresight runs; then the ranking on BOLO 29 picks up as a four-way.",
-    "you": "Bought ElevenLabs for JUDY, which incidentally removed this venture's only startup cost.",
-    "next": "The boresight: price the payout terms and the rights position, then rank it against 24 · 27 · 29."
+    "you": "You said go 57 (dictated 057.57). Three specialists ran; a script checked the numbers; the sheet carries them.",
+    "next": "Rule the trunk and the read that counts (on-target or ideal). That ranks the four-way and closes Blocked #11."
    },
    "main_effort": "Price it. A boresight on BOLO 57 is the one thing that lets the four-way ranking (24 · 27 · 29 · 57) move.",
    "phases": [
@@ -205,13 +209,21 @@
     },
     {
      "n": 1,
-     "t": "**Boresight** to price the paths — payout terms, rates, exclusivity, licensing — so the row can join the ranking.",
-     "s": "open"
+     "t": "**Boresight** — ran on \"go 57\": 97 facts, four paths priced in three values, script-checked. Files under `_tools/bolostatus/work/57/boresight/`.",
+     "s": "done",
+     "when": "9/23"
     },
     {
      "n": 2,
-     "t": "**Ranked** against 24 · 27 · 29 on reward vs risk, the same test BOLO 29 already runs.",
-     "s": "open"
+     "t": "**Ranked, provisionally** — third in the four-way behind 24, ahead of 29 on the on-target read. Chief's word settles the read (on-target vs ideal) and the trunk.",
+     "s": "open",
+     "when": "9/23"
+    },
+    {
+     "n": 3,
+     "s": "gated",
+     "when": "9/23",
+     "t": "**Week one, if it runs** — one PVC recorded and shared to the Voice Library (passive), three demo voices and one Fiverr listing for built-to-order voices. Nothing else until a first order."
     }
    ],
    "coord": [],
@@ -237,6 +249,21 @@
     {
      "path": "_tools/dictation/speak.py",
      "what": "JUDY's voice wiring (BOLO 56) — the ElevenLabs subscription this row would piggyback on",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/boresight/facts.md",
+     "what": "97 cited facts with confidence tags, fetch log, blocked pages",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/boresight/pricing.json",
+     "what": "the four paths priced, ranking, versus 29 and 24, the unverified list",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/pricecheck.py",
+     "what": "RANGE for pricing sheets: four paths, three dollar values each, every value cites a real fact id",
      "s": "done"
     }
    ],
@@ -353,6 +380,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "Voice building proven in practice: `stability` and `style` are real delivery dials — one line rendered flat / normal / brat gives three different performances."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"go 57\" (dictated \"057.57\") — the pricing boresight fired."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Priced: library $10–50 · custom $300–800 · adult $50–150 · service $100–400 on target over 90 days; ranking custom > service > adult > library; 57 provisionally third in the four-way. Six unverified items listed, the account's tier first among them."
     }
    ]
   }
