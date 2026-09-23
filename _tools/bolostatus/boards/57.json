@@ -5,8 +5,8 @@
   "trunk": "ORANGE-leaning, UNRULED",
   "issued": "2026-09-16",
   "asof": "2026-09-23",
-  "s": "open",
-  "status": "🟡 9/23 PRICED (Chief: \"go 57\") — four paths, three values each, 97 cited facts. On-target 90 days: Voice Library $10–50 · built-to-order voices $300–800 · adult-lane voice $50–150 · narration service $100–400. Ranking: custom > service > adult > library. Custom beats BOLO 29's on-target ($100–200); 29's ideal ($1,500–2,000) still edges 57's best ideal ($1,000–1,500). No path pays the bills in 90 days. Trunk still unruled; ranked provisionally third in the four-way behind 24 and ahead of 29.",
+  "s": "gated",
+  "status": "🟢 9/23 RULED (Chief: \"go with recommended on row 11\"): trunk ORANGE · the on-target read counts · 57 ranks second in the four-way (24 · 57 · 29 · 27-under-24) on the custom-voices path, $300–800 in 90 days. Blocked #11 clears. The build waits on its own go.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 56 (JUDY)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 57",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Price the ElevenLabs voice-building skill as a revenue path, in order to rank it honestly against the other three ventures instead of letting a named asset sit uncosted.",
-  "order": "**Rule the trunk and take or strike the provisional rank (24 · 57 custom · 29 · 27).** If 57 runs: week one is one Professional Voice Clone recorded and shared to the Voice Library (two hours, passive), plus a Fiverr listing for built-to-order voices with three demo voices; nothing else until a first order lands.",
-  "default": "Silence: 57 sits at third in the four-way, priced and unranked by your word; nothing is listed, nothing is recorded, the ElevenLabs account stays as it is.",
+  "order": "**\"Go 57 build\" fires week one:** one Professional Voice Clone recorded and shared to the Voice Library (two hours, passive), three demo voices and one Fiverr listing for built-to-order voices. Nothing else until a first order lands. Check the account's tier first: Creator ($22) is the floor for PVC.",
+  "default": "Silence: 57 stands ranked second and unbuilt; the account stays as it is; nothing is listed or recorded.",
   "calls": [
    {
     "q": "The boresight — does it run?",
@@ -67,21 +67,22 @@
     "q": "The trunk",
     "options": "ORANGE — it is a venture like 24 and 27 · OPERATOR — it rides on the tooling already bought for JUDY · its own trunk",
     "default": "ORANGE (rec: it competes for the same first-venture slot)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23 on the recommendation: ORANGE. It competes for the same first-venture slot as 24 and 29."
    },
    {
     "q": "The subscription question",
     "options": "one ElevenLabs subscription serves both JUDY and the venture (rec: BOLO 56 already committed the tool) · separate accounts to keep the venture's licensing clean · decide after the boresight reads the terms",
     "default": "decide after the boresight (rec)",
-    "s": "open",
-    "ruling": "Deferred to the trunk ruling. Unverified whether Chief's account is on a paid tier; Starter ($6) carries the commercial license, Creator ($22) unlocks Professional Voice Cloning, which the Library path needs."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23 by consequence: one account serves the venture and JUDY (BOLO 56). The tier is the open fact: PVC needs Creator; verify before week one."
    },
    {
     "q": "Where 57 ranks in the four-way",
     "options": "cannot be answered before the boresight — this call is parked on the one above",
     "default": "parked until priced",
-    "s": "open",
-    "ruling": "Provisional 9/23: third. 24 first (the business, ruled), 57's custom path second on the on-target read ($300–800 vs 29's $100–200), 29 third (its ideal still wins on one breakout), 27 folded under 24. Chief's rule is biggest reward wins; on-target that is 57 over 29, on ideal it is 29 over 57. His word settles which read counts."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23: second. The on-target read counts (Chief's word on row 11). 24 · 57 · 29 · 27-under-24. 29 becomes a side lane on leftover evenings or parks."
    }
   ]
  },
@@ -196,8 +197,8 @@
    "strand": {
     "last": "BOLO 29 already asked which venture starts first, three-way, before this row existed.",
     "plan": "Hold the four paths uncosted until a boresight runs; then the ranking on BOLO 29 picks up as a four-way.",
-    "you": "You said go 57 (dictated 057.57). Three specialists ran; a script checked the numbers; the sheet carries them.",
-    "next": "Rule the trunk and the read that counts (on-target or ideal). That ranks the four-way and closes Blocked #11."
+    "you": "You took the recommendation on row 11: on-target counts, ORANGE. 57 is second.",
+    "next": "Say go 57 build when you want week one to start. It runs beside 24, not instead of it."
    },
    "main_effort": "Price it. A boresight on BOLO 57 is the one thing that lets the four-way ranking (24 · 27 · 29 · 57) move.",
    "phases": [
@@ -215,15 +216,15 @@
     },
     {
      "n": 2,
-     "t": "**Ranked, provisionally** — third in the four-way behind 24, ahead of 29 on the on-target read. Chief's word settles the read (on-target vs ideal) and the trunk.",
-     "s": "open",
+     "t": "**Ranked** — second in the four-way on the on-target read, trunk ORANGE; Blocked #11 closed with it.",
+     "s": "done",
      "when": "9/23"
     },
     {
      "n": 3,
      "s": "gated",
      "when": "9/23",
-     "t": "**Week one, if it runs** — one PVC recorded and shared to the Voice Library (passive), three demo voices and one Fiverr listing for built-to-order voices. Nothing else until a first order."
+     "t": "**Week one** — fires on \"go 57 build\": tier check · one PVC to the Library · three demo voices · one Fiverr listing. Nothing else until a first order."
     }
    ],
    "coord": [],
@@ -390,6 +391,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Priced: library $10–50 · custom $300–800 · adult $50–150 · service $100–400 on target over 90 days; ranking custom > service > adult > library; 57 provisionally third in the four-way. Six unverified items listed, the account's tier first among them."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Go with recommended on row 11.\" On-target read, trunk ORANGE."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Ranked second in the four-way; Blocked #11 closed; BOLO 29 marked side lane or parked; the build gated on its own go."
     }
    ]
   }
