@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week · stylized · library at the floor · THE SUBJECT SPEC IS WRITTEN.** The sculpt has a brief for the first time: macro slider values to type, the face by region, the body in the L2b chain, twelve appearance calls each with a recommendation, and four yes/no checks that replace the old photoreal skin row. **Gate 3: 0 of 15–20 evenings, and the first one is now a sitting rather than a guess.**",
+  "status": "**FEBRUARY 2027 · six evenings a week · stylized · the subject ruled · BOTH GAPS CLOSED 9/23.** The L2b morphology system has a facial layer for the first time (`_CANON_NODES/L2b-morphology-face.md`), and MPFB2's targets were found on disk and verified, so the face spec is now **typeable target names, not directions**. **Nothing is left between the order and the sculpt except opening the file.**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.21 · DOPE SHEET"
+  "version": "v0.23 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,7 +50,7 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Rule the twelve appearance calls, then sculpt.** The macro block is five minutes of panel work with the values already chosen; the twelve calls are hair, eyes, skin tone, marks, makeup and the rest — the things that make her a specific person instead of a default. Say \"take the twelve\" to take them all as written.",
+  "order": "**Open `set4_S4-01.blend`, set the macro block, then run the sixteen named face targets in `SPEC-SUBJECT.md` §8, save as `subject_v1.blend`.** Set targets before loading hair or clothes; the assets fit to the body as it stands.",
   "default": "Silence: the redrafted §1 sentence stands; the library banks at twenty until the nut figure says forty; the sex-menu sign-off and the W7 platform pick run on the lane as ruled.",
   "calls": [
    {
@@ -143,6 +143,20 @@
     "default": "confirm Set 4, with the bar rewritten to stylized (rec)",
     "s": "open",
     "ruling": "**Recommended: Set 4 stays the test, but D-17 changed what passing means.** The AAR's row 1 asks whether the skin reads natural against the DARKROOM pull at arm's length — a photorealism check, and the ruling on 9/23 was stylized. The rewritten bar: does the render read as a deliberate painted style in the Sakimichan register, rather than as a failed attempt at real? Same set, same evening, different pass condition — and the COA B skin-shader spend that hung off the old row probably falls away with it."
+   },
+   {
+    "q": "S-1 · the twelve appearance calls",
+    "options": "take them as written · name the ones to change",
+    "default": "take (rec)",
+    "s": "ruled",
+    "ruling": "**RULED 2026-09-23, Chief: \"Take the 12.\"** All twelve taken as written in `SPEC-SUBJECT.md` §5: the Amphora-leaning hourglass build · height 0.55 · the oval-jaw, large-eye, soft-nose, full-mouth face · **hazel-green eyes** · **dark warm brunette, long, textured wave** (deliberately not the blonde-baddie cliché) · fair-to-light skin with a warm undertone · **one small tattoo (wrist or ribs) and one piercing (navel or nose)**, no moles or scars · winged liner and a glossy lip · no body modifications · the wardrobe pass deferred to its own sheet · **a baseline smirk, coiled-ready** · standard head-to-body scale with the idealisation kept below the neck. She is a specific person on the record now, not a default."
+   },
+   {
+    "q": "S-2 · the Gate 3 pass condition",
+    "options": "the four yes/no checks replace the photoreal skin row · something else",
+    "default": "the four checks (rec)",
+    "s": "ruled",
+    "ruling": "**RULED 2026-09-23, Chief: \"yes, yes, yes, yes.\"** The rewritten Gate 3 skin row is these four checks, read off the render: suppressed micro-texture with soft gradient falloff rather than pore detail · a rim pass visibly distinct from the key · the silhouette exaggeration sitting below the neck while the face stays legible and symmetric · a pastel-plus-accent palette rather than full-gamut photographic colour. **Four yeses clears the row.** This retires \"does she read natural against the DARKROOM pull at arm's length\", which the stylized ruling made the wrong question, and with it the COA B skin-shader trigger that hung off it."
    }
   ]
  },
@@ -289,7 +303,7 @@
     "last": "Gate 0 closed 9/3: the boresight walked, the holdings mapped.",
     "plan": "Gate by gate; no spend before Gate 3.",
     "you": "You ruled stylized, named Sakimichan, gave the money, and said go on the spec — four orders in one transmission.",
-    "next": "Rule the twelve, then open `set4_S4-01.blend` and set the macro block."
+    "next": "The macro block, then the sixteen targets, then save as `subject_v1.blend`. Judge through the S4-01 camera at 85 mm, not the viewport."
    },
    "main_effort": "D-9. Then the design set (Gate 2), then the vertical slice (Gate 3).",
    "phases": [
@@ -383,6 +397,14 @@
       {
        "t": "**The spec closed the gap it found.** Two findings came out of building it and both are on the record: **the L2b morphology system is body-only — it has no facial layer at all**, so the face runs on the Sakimichan register instead; and **MPFB2's exact face-target names could not be verified from disk**, so the face section gives regions and directions to read off the panel labels rather than names to type blind. The macro slider names and ranges were verified and are safe to set.",
        "s": "done"
+      },
+      {
+       "t": "**The face is typeable.** `SPEC-SUBJECT.md` §8 now maps the ruled face onto sixteen verified MPFB2 target names with a direction and magnitude each — `head-oval`, `l-cheek-bones-incr`, `l-eye-scale-incr`, `mouth-upperlip-volume-incr` and the rest. **One correction to the earlier warning: no finalize step destroys the shape keys in this addon**, so the targets stay editable and the 'do not apply the mesh' caution does not apply. The real constraint is order: targets before `.mhclo` assets.",
+       "s": "done"
+      },
+      {
+       "t": "**The baseline smirk is not a sculpt value.** MPFB2's `expression/` folder carries pose presets rather than static targets, so call 11 lands on the rig in the pose evening, not tonight.",
+       "s": "open"
       }
      ]
     }
@@ -493,6 +515,16 @@
     {
      "path": "_tools/bolostatus/work/24/backplan/SPEC-SUBJECT.md",
      "what": "the face-and-body spec: the five-line brief, the macro block as settable MPFB2 values, the face region by region, the body in the L2b chain, the twelve appearance calls with recommendations, the four-check pass condition, the unknowns",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/L2b-morphology-face.md",
+     "what": "the L2b facial layer — the four-stage chain applied to the face, a 27-cell FI·G·E coordinate system, six named architectural reads, the cell-call procedure, sources marked; the system's missing half, built 9/23",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/24/backplan/gap-mpfb-targets.md",
+     "what": "MPFB2's verified target inventory read off the installed addon — macro controls, every face target by region, every body target by region, the set_target_value call, the safe order of operations",
      "s": "done"
     }
    ],
@@ -809,6 +841,26 @@
      "when": "9/23",
      "who": "Claude",
      "t": "The subject spec built at gear 2: five PS on the morphology system, the Set 4 reference manifest, the Sakimichan register, the character sheet's appearance record and MPFB2's controls; one MS writing. `SPEC-SUBJECT.md` delivered — macro values, the face by region, the body in the L2b chain, twelve calls with recommendations, four pass checks. Two gaps found and recorded rather than papered over: L2b has no facial layer, and MPFB2's face-target names are unverified from disk."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Take the 12. Yes, yes, yes, yes.\" The twelve appearance calls taken as written and the four-check pass condition confirmed. Then: work the two gaps the spec found — the missing facial layer in the L2b morphology system, and MPFB2's unverified target names."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "The twelve written ruled into the subject spec and the four checks written as Gate 3's skin row, replacing the photoreal test and its COA B trigger. The two gaps opened as their own job."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"Take the 12. Yes, yes, yes, yes. So let's work on that morphology system then — let's figure out these two gaps.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Both gaps closed at gear 3. The facial layer written as a canon node in the body system's own idiom, carrying two honest deviations the anatomy forced — the mimetic and masticatory muscle split, and fat that is compartmentalised and bidirectional rather than uniform — and flagging the popular oval/round/square face-shape family as styling convention that failed cross-population validation. The MPFB2 addon was found on disk and its full target inventory verified, turning the face spec from directions into sixteen named targets."
     }
    ]
   }
