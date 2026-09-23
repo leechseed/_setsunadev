@@ -6,7 +6,7 @@
   "issued": "2026-09-03",
   "asof": "2026-09-23",
   "s": "hot",
-  "status": "**FEBRUARY 2027 · six evenings a week the planning rate · D-8 RULED 9/23 (\"8 confirm\") — the 30-day reference pull starts now.** Two calls left on this sheet: **D-10 is under a boresight** (Chief: \"I don't understand what you need\") and **D-11 is sent back for development** (Chief: \"we do need to develop the 11 more\"). **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.**",
+  "status": "**FEBRUARY 2027 · six evenings a week · D-8 RULED · D-10 BORESIGHT CLEARED 9/23 — the purpose is the studio, not the window.** Chief's three answers: a job landing in November changes nothing; **Ultrasin is the point, not the persona**; success is a thing that exists and keeps going, not a monthly number. The §1 sentence is redrafted on that and waits on his word. **D-11's lane paper is delivered** — four positions, Position B recommended. **Gate 3 is still the whole schedule — 0 of 15–20 evenings done.**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "Ultrasin · the [[register|register]] · the [[creator-case|creator cases]] · [[darkroom|DARKROOM]] · [[ultra-dark|ULTRA DARK]] · BLACK at girl-gen",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 24 · STATE Blocked #10 · _PRIVATE/BOLO-24-charter.md (private: finances and persona internals)",
   "card": "oscar-mike/lab-venture.md (the persona-to-studio endgame, six decisions queued)",
-  "version": "v0.14 · DOPE SHEET"
+  "version": "v0.15 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,8 +50,8 @@
  ],
  "frago": {
   "mission": "Stand up a paying creative operation on what is already in hand, **in order to** convert the unemployment window into the studio's founding season. (Intent drafted 9/3 for your wording, D-10.)",
-  "order": "**Start the 30-day reference pull and the Gate 3 sculpt, six evenings a week.** The pull runs in parallel with the evenings and lands inside the Gate 3 window; the sculpt is the first evening.",
-  "default": "Silence: the back-plan stands as drawn; D-10's §1 draft stands by its own default while the boresight runs; D-11 stays open and the sex-menu sign-off and the W7 platform pick stay blocked behind it.",
+  "order": "**Word §1 or take the redraft, rule D-11 by name, and start the sculpt.** The lane paper takes a named position, not a one-word confirm: \"Rule D-11: funnel-adjacent, her channel, her frame\" (rec) · \"in\" · \"out\" · \"later\".",
+  "default": "Silence: the redrafted §1 sentence stands in place of the 9/3 draft, because the 9/3 draft states a purpose Chief has now ruled false; D-11 stays open and the sex-menu sign-off and the W7 platform pick stay blocked behind it.",
   "calls": [
    {
     "q": "D-9 · the clear",
@@ -93,14 +93,14 @@
     "options": "word the one sentence in §1 yourself",
     "default": "the draft stands until you do",
     "s": "held",
-    "ruling": "**BORESIGHT 9/23** — Chief: \"what's the boresight on D-10, I don't understand what you need.\" No delivery until it clears. The call is the charter §1 sentence: the operator's reason for running the studio at all, not the persona's brand line. The draft stands meanwhile."
+    "ruling": "**BORESIGHT CLEARED 2026-09-23.** Chief's answers: (1) a job landing in November → \"it remains unchanged\"; (2) \"Ultrason is a point\" — the studio is the point, not the persona; (3) success is \"a thing that exists that keeps going\". **The 9/3 draft is therefore wrong on its second half:** it read the purpose as converting the unemployment window into a founding season, which makes the studio a means to an income window. Chief has ruled the opposite. **Redraft for his word:** \"Stand up a paying creative operation on what is already in hand, **in order to** build a studio that keeps going on its own work — with or without a job, and past its first signing.\" The task half is unchanged. Row closes when he takes it or words his own."
    },
    {
     "q": "D-11 · the content lane",
     "options": "where her content sits relative to the funnel's lane; framing that processors and platforms ban downstream gates the platform pick",
     "default": "mainstream tag, no ideology framing (rec)",
-    "s": "held",
-    "ruling": "**SENT BACK FOR DEVELOPMENT 9/23** — Chief: \"we do need to develop the 11 more.\" One word was not enough; the lane needs a worked pass before it can be ruled."
+    "s": "open",
+    "ruling": "**PAPER DELIVERED 2026-09-23** (`_tools/bolostatus/work/24/backplan/D11-LANE.md`, gear 2: five PS on disjoint sources, one MS). The spine: platform and processor bans land on **framing**, not **category**. Four positions drawn — **A in the funnel** (breaks the funnel's own no-money rule) · **B funnel-adjacent, her channel, her frame** (recommended) · **C category closed** · **D deferred to the October test**. B is recommended on durability: the category has no ban attached to it in any of the fifteen cases, no platform or processor in the policy read bans it by name, the funnel's non-monetisation rule stays intact, and her Degradation soft limit never has to convert because the frame stays hers. Flips if the funnel's own account draws a strike on the category itself rather than the framing."
    },
    {
     "q": "D-14 · the launch month",
@@ -219,8 +219,8 @@
    "strand": {
     "last": "The Amazon job fell through on 9/3; this BOLO was spoken the same day.",
     "plan": "Build the studio on what is in hand; no spend before the slice proves quality.",
-    "you": "You gave the picture and the budget; the intent sentence is still drafted, not yours.",
-    "next": "Word it, or let the draft stand."
+    "you": "You cleared the D-10 boresight in three answers and sent D-11 back for development rather than taking the one-word confirm.",
+    "next": "Word §1 or take the redraft; rule D-11 by name."
    },
    "task": "Stand up a paying creative operation on what is already in hand,",
    "intent": "in order to convert the unemployment window into the studio's founding season.",
@@ -231,6 +231,21 @@
     "Accounts live under the disclosed frame; the posting grammar derived from the reference set and followed.",
     "Monthly revenue at the on-target value three months running by month nine, or conservative with the trend.",
     "Season 2 seeded: the friend exists on paper before Season 1 closes."
+   ],
+   "groups": [
+    {
+     "label": "The purpose · ruled 9/23",
+     "items": [
+      {
+       "t": "**Durability outranks speed from here.** Chief ruled the studio is the point and that it should keep going with or without a job. That reorders every trade-off the plan makes: where first-dollar-first and a bankable library disagree, the library wins unless the §1 nut figure says otherwise. **The consequence to watch: D-5's compressed twenty-piece library was chosen on a runway read, not on purpose. If the runway turns out to be sound, the plan should bank forty, not twenty** — which is the same ±40-evening swing the §1 number governs.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Season 2's second signing rises.** \"Ultrasin is the point\" means the studio's proof is that it signs more than one. The Season 2 seed stops being a nice-to-have at the end of Season 1 and becomes part of what \"it worked\" means.",
+       "s": "open"
+      }
+     ]
+    }
    ]
   },
   {
@@ -405,6 +420,11 @@
     {
      "path": "_tools/bolostatus/work/24/backplan/",
      "what": "the ten source extracts the back-plan was built from (gates · slice · season1 · charter · pipeline · comparables · d8-reference · character · boresight · status)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/24/backplan/D11-LANE.md",
+     "what": "the D-11 lane paper: category versus framing, the four evidence reads, four positions drawn concretely, Position B recommended, the flip condition",
      "s": "done"
     }
    ],
@@ -640,6 +660,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "D-8 written ruled; the 30-day pull opened as a running item and dated against the Gate 3 window. D-10 put under a boresight, the draft standing meanwhile. D-11 sent back for a development pass rather than a one-word ruling."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "D-10 boresight answered: \"Question one, it remains unchanged. Ultrason is a point. A thing that exists that keeps going for number three.\" Then: \"Go 11.\""
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "The §1 sentence redrafted on the three answers — the 9/3 draft named a purpose Chief has now ruled false. The D-11 lane paper built at gear 2 (five PS on the register, the fifteen cases, the policy read, her limits, the funnel; one MS writing): four positions, Position B recommended on durability. Two consequences of the purpose ruling written to §2 — the library-size trade-off now leans to forty unless the nut says otherwise, and the Season 2 signing becomes part of the definition of success."
     }
    ]
   }
