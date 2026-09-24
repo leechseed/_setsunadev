@@ -113,8 +113,8 @@ Caption: *this is a two-generation-deep loop, not a single bad choice: an unreco
 
 ```mermaid
 stateDiagram-v2
-    [*] --> ErOTicDefeat: girl's first erotic object (mother) unavailable
-    ErOTicDefeat --> Shame: desire never recognized, not merely forbidden
+    [*] --> EroticDefeat: girl's first erotic object (mother) unavailable
+    EroticDefeat --> Shame: desire never recognized, not merely forbidden
     Shame --> Submission: own desire relinquished to keep the bond
     Submission --> Depletion: narcissistic supply drains one-way
     Depletion --> Submission: individuating feels like losing the object
