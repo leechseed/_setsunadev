@@ -439,7 +439,7 @@ const blocks = B.blocks;
 const countOf = b => b.items ? b.items.length : b.groups ? b.groups.reduce((n, g) => n + g.items.length, 0) : b.rows ? b.rows.length : b.soi ? b.soi.length : 1;
 $('#olRows').innerHTML = blocks.map((b, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">Block ${esc(b.id)}</span><span class="name">${esc(b.name)}</span></span><span class="key">${i}</span></button>`).join('')
   + `<button class="ol-row" data-b="1"><span class="node"><i></i></span><span><span class="id">Panel · the loop</span><span class="name">BREVITY</span></span><span class="key">B</span></button>`;
-$('#olFoot').innerHTML = `<b>${M.agents.length}</b> agents in flight<br><b>${countOf(blocks[4])}</b> decisions are yours`;
+$('#olFoot').innerHTML = `<b>${M.agents.length}</b> agents deployed<br><b>${countOf(blocks[4])}</b> decisions are yours`;
 
 /* ---- panel renderers ---- */
 function itemHTML(it) {
@@ -485,7 +485,7 @@ function render(b) {
     <div class="c"><span class="lbl">What the plan was</span><p>${md(s.plan)}</p></div>
     <div class="c"><span class="lbl">What ${WHO} did</span><p>${md(s.you)}</p></div>
     <div class="c"><span class="lbl">What's next</span><p>${md(s.next)}</p></div></div>
-    <div class="sec"><span class="lbl">In flight</span><div class="runs">${M.agents.map(a => `<div class="run"><i></i><div>${esc(a.name)}<small>${esc(a.from)}</small></div></div>`).join('')}</div></div>`;
+    <div class="sec"><span class="lbl">Deployed</span><div class="runs">${M.agents.map(a => `<div class="run"><i></i><div>${esc(a.name)}<small>${esc(a.from)}</small></div></div>`).join('')}</div></div>`;
 }
 let cur = 0, glossaryOpen = false;
 function go(i) {

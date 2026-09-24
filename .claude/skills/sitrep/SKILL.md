@@ -46,7 +46,7 @@ Runs the reviewer's checklist (eight blocks in order · text + trunk on every it
 Then the main line does the only judgment work in the run, off the digest alone:
 
 1. Write `work/<date>/frag/VI.json` — the leverage line (`line` · `why` · `plain` · `strand`), same shape as `prev/VI.json`.
-2. Write `work/<date>/meta.patch.json` — `when` · `trigger` · `countersign` · `main_effort` · `stats` (blocked count · main-effort idle days · agents in flight · anything measured) · `build.calls`/`rounds`. Anything not in the patch keeps prep's value.
+2. Write `work/<date>/meta.patch.json` — `when` · `trigger` · `countersign` · `main_effort` · `stats` (blocked count · main-effort idle days · agents deployed · anything measured) · `build.calls`/`rounds`. Anything not in the patch keeps prep's value.
 3. If prep flagged III (PROJECTS.md moved), edit `frag/III.json` by hand; otherwise leave it.
 
 ## H3 · Build, flush, publish

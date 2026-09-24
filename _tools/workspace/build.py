@@ -374,13 +374,17 @@ STYLE = r"""
   .t { color: var(--link); text-decoration: none; border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
   .t:hover, .t.on { border-bottom-style: solid; }
 
-  /* ---- app frame ---- */
+  /* ---- app frame (canvas-first: side rails + log start collapsed, BOLO 79 call 79-B) ---- */
   .app {
     height: 100%; display: grid;
+    --w-ol: 0px; --w-det: 0px;
     grid-template-rows: auto minmax(0,1fr) auto;
-    grid-template-columns: 210px minmax(0,1fr) 320px;
-    grid-template-areas: "head head head" "ol canvas detail" "log log log";
+    grid-template-columns: var(--w-ol) minmax(0,1fr) var(--w-det);
+    grid-template-areas: "head head head" "ol canvas detail" "foot foot foot";
   }
+  .app.show-ol { --w-ol: 210px; }
+  .app.show-det { --w-det: 320px; }
+  .app.maximized { --w-ol: 0px !important; --w-det: 0px !important; }
   header.head {
     grid-area: head; display: flex; align-items: center; gap: 0; border-bottom: 1px solid var(--line-2);
     background: color-mix(in srgb, var(--panel) 85%, transparent); flex-wrap: wrap;
@@ -396,10 +400,14 @@ STYLE = r"""
   .headspace { flex: 1 1 auto; }
   .char-btn { font-family: var(--display); font-weight: 700; font-size: 14px; text-transform: uppercase; padding: 8px 16px; border-left: 1px solid var(--line); color: var(--ink-2); }
   .char-btn:hover, .char-btn.on { color: var(--accent); }
-  .ol-toggle, .detail-toggle { display: none; font-family: var(--mono); font-size: 12px; padding: 8px 12px; border-left: 1px solid var(--line); color: var(--ink-2); }
+  .paneltoggles { display: flex; align-items: stretch; }
+  .ptbtn { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; padding: 8px 10px; border-left: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
+  .ptbtn:hover { color: var(--ink); background: var(--panel-2); }
+  .ptbtn.on { color: var(--accent); background: var(--panel-2); box-shadow: inset 0 -3px 0 var(--accent); }
 
-  /* ---- outliner (left rail, CK3 R12) ---- */
-  aside.ol { grid-area: ol; border-right: 1px solid var(--line-2); overflow-y: auto; padding: 12px 0 16px; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  /* ---- outliner (left rail, CK3 R12) — hidden unless .app.show-ol ---- */
+  aside.ol { display: none; grid-area: ol; border-right: 1px solid var(--line-2); overflow-y: auto; padding: 12px 0 16px; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  .app.show-ol aside.ol { display: block; }
   .ol h4 { margin: 14px 14px 4px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
   .ol h4:first-child { margin-top: 4px; }
   .ol-row { display: block; width: 100%; text-align: left; padding: 6px 14px; font-size: 14px; color: var(--ink-2); border-left: 2px solid transparent; }
@@ -414,12 +422,13 @@ STYLE = r"""
   .lens-view { display: none; }
   .lens-view.on { display: block; }
 
-  /* ---- fabula timeline ---- */
+  /* ---- fabula timeline (call 79-1: era bands sized by content, events spread + truncated) ---- */
   .fab-scroll { overflow-x: auto; padding-bottom: 6px; }
-  .fab-track { position: relative; min-width: 760px; height: 260px; }
+  .fab-track { position: relative; min-width: 900px; height: 260px; }
   .era-band { position: absolute; top: 30px; height: 90px; border: 1px dashed var(--line-2); background: color-mix(in srgb, var(--accent) 6%, transparent); border-radius: 3px; }
-  .era-band .lbl2 { position: absolute; top: -20px; left: 6px; font-family: var(--display); font-weight: 700; font-size: 14px; text-transform: uppercase; color: var(--ink-2); }
-  .era-band .fz { position: absolute; bottom: 6px; left: 6px; right: 6px; font-family: var(--mono); font-size: 10px; color: var(--ink-3); }
+  .era-band .lbl2 { position: absolute; top: -20px; left: 6px; font-family: var(--display); font-weight: 700; font-size: 14px; text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
+  .era-band.stub .lbl2 { font-size: 12px; }
+  .era-band .fz { position: absolute; top: 20px; bottom: 6px; left: 6px; right: 6px; font-family: var(--mono); font-size: 9.5px; line-height: 1.25; color: var(--ink-3); white-space: normal; overflow-wrap: anywhere; overflow: hidden; }
   .movement-axis { position: absolute; top: 150px; left: 0; right: 0; height: 2px; background: var(--line-2); }
   .movement-axis .tick { position: absolute; top: -4px; width: 1px; height: 10px; background: var(--line-2); }
   .movement-axis .tick span { position: absolute; top: 12px; left: -12px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
@@ -427,7 +436,7 @@ STYLE = r"""
   .ev-dot::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
   .ev-dot.on { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent); }
   .ev-dot.repeat { border-style: dashed; }
-  .ev-label { position: absolute; top: 168px; width: 150px; margin-left: -75px; text-align: center; font-size: 12px; color: var(--ink-2); }
+  .ev-label { position: absolute; top: 168px; text-align: center; font-size: 12px; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fab-legend { margin-top: 8px; }
 
   /* ---- rails grid ---- */
@@ -438,29 +447,38 @@ STYLE = r"""
   .fam-filter button.on { border-color: var(--accent); color: var(--accent); }
   .explore-toggle { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-left: auto; }
   .explore-toggle input { accent-color: var(--ink-3); }
+  .zoom-ctl { display: flex; align-items: center; gap: 8px; }
+  .zoom-ctl button { font-family: var(--mono); font-size: 11px; padding: 4px 10px; border: 1px solid var(--line-2); color: var(--ink-2); }
+  .zoom-ctl button.on { border-color: var(--accent); color: var(--accent); }
+
+  .tl-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; }
+  .tl-chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-2); }
+  .tl-chip i { width: 9px; height: 9px; border-radius: 50%; background: var(--tlc); display: inline-block; }
 
   .signpost-grid { display: grid; grid-template-columns: 130px repeat(4, minmax(150px,1fr)); gap: 6px; min-width: 760px; margin-bottom: 22px; }
   .sp-corner { }
   .sp-act-hd { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); align-self: end; padding: 4px 6px; }
-  .sp-row-hd { display: flex; flex-direction: column; justify-content: center; font-family: var(--display); font-weight: 800; font-size: 16px; text-transform: uppercase; padding: 8px; }
-  .sp-row-hd small { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); font-weight: 400; text-transform: none; letter-spacing: 0; }
-  .sig-cell { min-height: 64px; border: 1px solid var(--line-2); border-radius: 3px; padding: 8px; text-align: left; font-size: 12.5px; color: var(--ink-3); background: var(--panel); }
-  .sig-cell.empty { border-style: dashed; opacity: .55; cursor: default; }
+  .sp-row-hd { display: flex; flex-direction: column; justify-content: center; font-family: var(--display); font-weight: 800; font-size: 16px; text-transform: uppercase; padding: 8px; border-left: 3px solid var(--tlc, transparent); }
+  .sp-row-hd small { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); font-weight: 400; text-transform: none; letter-spacing: 0; overflow-wrap: anywhere; }
+  .sig-cell { min-height: 64px; border: 1px solid var(--line-2); border-radius: 3px; padding: 8px; text-align: left; font-size: 12.5px; color: var(--ink-3); background: var(--panel); overflow-wrap: anywhere; }
+  .sig-cell.empty { border-style: dashed; opacity: .7; cursor: help; }
   .sig-cell.filled { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); cursor: pointer; }
   .sig-cell.filled b { display: block; font-family: var(--display); font-size: 13.5px; color: var(--accent-ink); text-transform: none; }
   .sig-cell.on { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 40%, transparent); }
   .sig-chip { display: inline-block; margin-top: 4px; font-family: var(--mono); font-size: 9.5px; padding: 1px 6px; border: 1px solid currentColor; color: var(--good); }
   .sig-chip.gap { color: var(--ink-3); }
+  .sig-count { display: inline-flex; align-items: center; gap: 4px; font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 6px; }
+  .sig-count::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--tlc, var(--ink-3)); display: inline-block; flex: 0 0 auto; }
 
   .node-cols { display: grid; grid-template-columns: repeat(5, minmax(160px, 1fr)); gap: 14px; min-width: 760px; }
   .node-col h3 { margin: 0 0 4px; font-family: var(--display); font-weight: 700; font-size: 15px; text-transform: uppercase; }
   .node-col .cnt { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); margin-bottom: 8px; }
   .node-cluster { display: flex; flex-wrap: wrap; gap: 6px; max-height: 420px; overflow-y: auto; padding-right: 4px; }
-  .node-chip { font-family: var(--mono); font-size: 11px; padding: 4px 8px; border: 1px solid var(--line-2); color: var(--ink-2); background: var(--panel); cursor: pointer; }
+  .node-chip { font-family: var(--mono); font-size: 11px; padding: 4px 8px; border: 1px solid var(--line-2); border-left: 3px solid var(--tlc, var(--line-2)); color: var(--ink-2); background: var(--panel); cursor: pointer; }
   .node-chip .tlc { font-size: 9.5px; color: var(--accent-ink); }
   .node-chip:hover { border-color: var(--link); color: var(--ink); }
   .node-chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
-  .provisional { margin: 10px 0 16px; font-family: var(--mono); font-size: 11px; color: var(--warn); }
+  .provisional { margin: 10px 0 16px; font-family: var(--mono); font-size: 11px; color: var(--warn); overflow-wrap: anywhere; }
 
   /* ---- told lens ---- */
   .told-tracks { display: grid; gap: 26px; min-width: 620px; }
@@ -472,18 +490,23 @@ STYLE = r"""
   .empty-track { padding: 14px 4px; font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
   .jump-note { margin-top: 4px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
 
-  /* ---- detail rail ---- */
-  aside.detail { grid-area: detail; border-left: 1px solid var(--line-2); overflow-y: auto; padding: 16px 16px 22px; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  /* ---- detail rail (selection-only inspector, call 79-3) — hidden unless .app.show-det ---- */
+  aside.detail { display: none; grid-area: detail; border-left: 1px solid var(--line-2); overflow-y: auto; overflow-wrap: anywhere; padding: 16px 16px 22px; background: color-mix(in srgb, var(--panel) 55%, transparent); }
+  .app.show-det aside.detail { display: block; }
   .detail-tabs { display: flex; gap: 0; margin-bottom: 12px; border-bottom: 1px solid var(--line); }
   .detail-tabs button { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 6px 10px; color: var(--ink-2); border-bottom: 2px solid transparent; }
   .detail-tabs button.on { color: var(--accent); border-bottom-color: var(--accent); }
-  .dcard h3 { margin: 0 0 2px; font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; }
+  .dcard h3 { margin: 0 0 2px; font-family: var(--display); font-weight: 700; font-size: 20px; text-transform: uppercase; overflow-wrap: anywhere; }
   .dcard .kind { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; }
   .dcard dl { margin: 10px 0 0; display: grid; gap: 8px; }
   .dcard dt { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
-  .dcard dd { margin: 2px 0 0; font-size: 13.5px; line-height: 1.45; }
-  .dcard .src { margin-top: 14px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+  .dcard dd { margin: 2px 0 0; font-size: 13.5px; line-height: 1.45; overflow-wrap: anywhere; }
+  .dcard .src { margin-top: 14px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); overflow-wrap: anywhere; }
   .empty-detail { font-size: 13.5px; color: var(--ink-3); }
+  .more-block { margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
+  .more-block summary { cursor: pointer; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+  .more-block summary:hover { color: var(--ink-2); }
+  .more-block dl { margin-top: 8px; }
 
   /* ---- character window (CK3 sheet) ---- */
   .csheet .idblock { display: flex; gap: 12px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
@@ -498,37 +521,41 @@ STYLE = r"""
   .trait.linked { border-color: var(--good); cursor: pointer; }
   .trait.linked:hover { background: var(--good-soft); }
   .trait.gap { border-style: dashed; color: var(--ink-3); }
+  .trait { overflow-wrap: anywhere; }
   .trait b { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; }
   .trait .tn { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 13px; }
 
-  /* ---- event log ---- */
-  footer.log { grid-area: log; border-top: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 85%, transparent); display: flex; flex-direction: column; max-height: 128px; }
+  /* ---- footer: Info View strip (Ableton) + event log as a toggled tab (call 79-4) ---- */
+  footer.footbar { grid-area: foot; border-top: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 85%, transparent); display: flex; flex-direction: column; }
+  .logpanel { display: none; flex-direction: column; max-height: 140px; border-bottom: 1px solid var(--line); }
+  .app.show-log .logpanel { display: flex; }
   .log-bar { display: flex; align-items: center; gap: 10px; padding: 6px 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
   .log-bar .lbl { margin-right: 4px; }
   .log-filter { display: flex; gap: 4px; }
   .log-filter button { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 2px 7px; border: 1px solid var(--line-2); color: var(--ink-2); }
   .log-filter button.on { border-color: var(--accent); color: var(--accent); }
   .log-rows { overflow-y: auto; padding: 4px 14px 8px; font-family: var(--mono); font-size: 11.5px; }
-  .log-row { display: grid; grid-template-columns: 46px 60px 1fr; gap: 10px; padding: 3px 0; color: var(--ink-2); }
+  .log-row { display: grid; grid-template-columns: 46px 60px 1fr; gap: 10px; padding: 3px 0; color: var(--ink-2); overflow-wrap: anywhere; }
   .log-row .n { color: var(--ink-3); }
   .log-row .lens { color: var(--accent-ink); text-transform: uppercase; }
+  .infoview { display: flex; align-items: center; gap: 10px; padding: 6px 14px; font-family: var(--mono); font-size: 11.5px; min-height: 20px; }
+  .infoview .iv-icon { color: var(--accent); font-weight: 700; flex: 0 0 auto; }
+  .infoview #ivText { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
+  .infoview .footer-hint { flex: 0 0 auto; color: var(--ink-3); font-size: 10px; white-space: nowrap; }
 
   /* ---- tooltips (CK3 R2-R4) ---- */
   .tip { position: fixed; z-index: 80; width: 320px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 10px 12px 8px; font-size: 13.5px; line-height: 1.4; }
   .tip .th { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
   .tip .th b { font-family: var(--display); font-weight: 700; font-size: 17px; text-transform: uppercase; }
   .tip .th .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
-  .tip p { margin: 0; }
+  .tip p { margin: 0; overflow-wrap: anywhere; }
   .tip ul.tlist { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; }
-  .tip ul.tlist li { border-left: 2px solid var(--line-2); padding-left: 6px; }
+  .tip ul.tlist li { border-left: 2px solid var(--line-2); padding-left: 6px; overflow-wrap: anywhere; }
   .tip .or-line, .dcard .or-line { margin: 4px 0 0; font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-style: italic; }
   .tip .more { margin-top: 6px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
   .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); overflow-wrap: anywhere; }
-  .tip .lock { height: 2px; background: var(--line); margin-top: 8px; position: relative; }
-  .tip .lock b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--accent); }
-  .tip.locked .lock b { width: 100%; }
   .tip.locked { border-top-color: var(--ink); }
-  .tip .hint2 { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); margin-top: 4px; letter-spacing: .04em; }
+  .tip .hint2 { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); margin-top: 8px; letter-spacing: .04em; }
   .tip .capped { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); font-style: italic; }
 
   /* ---- phone tab bar ---- */
@@ -537,13 +564,13 @@ STYLE = r"""
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 
   @media (max-width: 600px) {
-    .app { grid-template-columns: 1fr; grid-template-rows: auto minmax(0,1fr) auto auto; grid-template-areas: "head" "canvas" "log" "tabbar"; }
+    .app { grid-template-columns: 1fr !important; grid-template-rows: auto minmax(0,1fr) auto auto; grid-template-areas: "head" "canvas" "foot" "tabbar"; }
     nav.lenses { display: none; }
-    aside.ol, aside.detail { display: none; position: fixed; top: 48px; bottom: 40px; left: 0; right: 0; z-index: 60; width: auto; }
-    aside.ol.show, aside.detail.show { display: block; }
+    .paneltoggles .ptbtn[data-p="ol"], .paneltoggles .ptbtn[data-p="det"] { display: block; }
+    aside.ol, aside.detail { position: fixed; top: 48px; bottom: 40px; left: 0; right: 0; z-index: 60; width: auto; }
     aside.detail { border-left: 0; border-top: 1px solid var(--line-2); }
-    .ol-toggle, .detail-toggle { display: block; }
-    footer.log { max-height: 84px; }
+    .logpanel { max-height: 96px; }
+    .infoview .footer-hint { display: none; }
     nav.tabbar { display: flex; grid-area: tabbar; border-top: 1px solid var(--line-2); background: var(--panel); }
     nav.tabbar button { flex: 1 1 0; font-family: var(--display); font-weight: 700; font-size: 13px; text-transform: uppercase; padding: 10px 0; color: var(--ink-2); }
     nav.tabbar button.on { color: var(--accent); box-shadow: inset 0 3px 0 var(--accent); }
@@ -564,14 +591,18 @@ def build_html() -> str:
   <header class="head">
     <div class="brand"><i></i><b>Story Workspace</b></div>
     <nav class="lenses" id="lensNav">
-      <button data-lens="fabula" class="on">Fabula<span class="k">1</span></button>
-      <button data-lens="rails">Rails<span class="k">2</span></button>
-      <button data-lens="told">Told<span class="k">3</span></button>
+      <button data-lens="fabula" class="on">Fabula<span class="k">1 · Map</span></button>
+      <button data-lens="rails">Rails<span class="k">2 · Seat</span></button>
+      <button data-lens="told">Told<span class="k">3 · Write</span></button>
     </nav>
     <div class="headspace"></div>
+    <div class="paneltoggles" id="panelToggles">
+      <button class="ptbtn" data-p="ol" title="Outliner — key [">[ Outliner</button>
+      <button class="ptbtn" data-p="det" title="Inspector — key ]">] Inspector</button>
+      <button class="ptbtn" data-p="log" title="Event log — key L">L Log</button>
+      <button class="ptbtn" data-p="max" title="Maximize canvas — key &#96;">&#96; Max</button>
+    </div>
     <button class="char-btn" id="charBtn">Tori's sheet</button>
-    <button class="ol-toggle" id="olToggle">Outliner</button>
-    <button class="detail-toggle" id="detToggle">Detail</button>
   </header>
 
   <aside class="ol" id="ol"></aside>
@@ -579,24 +610,34 @@ def build_html() -> str:
   <main class="canvas" id="canvas">
     <section class="lens-view on" id="view-fabula">
       <h2>Fabula — the world timeline</h2>
-      <p class="sub">The <span class="t" data-tt="gloss" data-id="fabula">timeline is the map</span>: Tori's five dated-in-story events over three fuzzy DCUS eras. No calendar exists for this world — dates are movement-relative or banded, never invented points.</p>
+      <p class="sub">The <span class="t" data-tt="gloss" data-id="fabula">timeline is the map</span>: Tori's six dated-in-story events over three fuzzy DCUS eras. No calendar exists for this world — dates are movement-relative or banded, never invented points.</p>
       <div class="fab-scroll"><div class="fab-track" id="fabTrack"></div></div>
-      <p class="fab-legend hint">Solid dot = single event &nbsp;·&nbsp; dashed dot = <span class="t" data-tt="gloss" data-id="repeat">repeat / iterative</span> event, one record standing for a repeated class (Genette 1980: 53).</p>
+      <p class="fab-legend hint">Solid dot = single event &nbsp;·&nbsp; dashed dot = <span class="t" data-tt="gloss" data-id="repeat">repeat / iterative</span> event, one record standing for a repeated class (Genette 1980: 53). Truncated labels — hover or select a dot for the full event id.</p>
     </section>
 
     <section class="lens-view" id="view-rails">
       <h2>Rails — the trope graph, focus-tree style</h2>
       <p class="sub">16 <span class="t" data-tt="gloss" data-id="signpost">signposts</span> across 4 acts, 4 <span class="t" data-tt="gloss" data-id="throughline">throughlines</span> down. Only the book <span class="t" data-tt="gloss" data-id="node">nodes</span> draw on the grid; <span class="t" data-tt="gloss" data-id="trope">tropes</span> live inside each node's tooltip, capped at six.</p>
       <div class="rails-toolbar">
-        <input type="text" id="nodeSearch" placeholder="search nodes…">
-        <div class="fam-filter" id="famFilter"></div>
-        <label class="explore-toggle"><input type="checkbox" disabled> Explore (free network) — later feature</label>
+        <div class="zoom-ctl" id="zoomCtl">
+          <span class="lbl">Zoom</span>
+          <button data-z="out" class="on" title="Zoom out — key -">− cells</button>
+          <button data-z="in" title="Zoom in — key =">+ chips</button>
+        </div>
       </div>
       <h3 class="lbl" style="margin:0 0 8px">The signposts — fixed rail</h3>
+      <div class="tl-legend" id="tlLegend"></div>
       <div class="signpost-grid" id="signpostGrid"></div>
-      <h3 class="lbl" style="margin:0 0 4px">The book nodes — seated by act and throughline</h3>
-      <p class="provisional">seated 9/24 (call 77-I) on the ruled Bourne map · seat calls 1–3 RULED 9/24 · the tag on each chip is its throughline</p>
-      <div class="node-cols" id="nodeCols"></div>
+      <div id="nodeSection">
+        <div class="rails-toolbar">
+          <input type="text" id="nodeSearch" placeholder="search nodes…">
+          <div class="fam-filter" id="famFilter"></div>
+          <label class="explore-toggle"><input type="checkbox" disabled> Explore (free network) — later feature</label>
+        </div>
+        <h3 class="lbl" style="margin:0 0 4px">The book nodes — seated by act and throughline</h3>
+        <p class="provisional">seated 9/24 (call 77-I) on the ruled Bourne map · seat calls 1–3 RULED 9/24 · left border color = throughline, the small tag is its code</p>
+        <div class="node-cols" id="nodeCols"></div>
+      </div>
     </section>
 
     <section class="lens-view" id="view-told">
@@ -608,12 +649,18 @@ def build_html() -> str:
 
   <aside class="detail" id="detail"></aside>
 
-  <footer class="log">
-    <div class="log-bar">
-      <span class="lbl">Event log</span>
-      <div class="log-filter" id="logFilter"></div>
+  <footer class="footbar" id="footbar">
+    <div class="logpanel" id="logpanel">
+      <div class="log-bar">
+        <span class="lbl">Event log</span>
+        <div class="log-filter" id="logFilter"></div>
+      </div>
+      <div class="log-rows" id="logRows"></div>
     </div>
-    <div class="log-rows" id="logRows"></div>
+    <div class="infoview" id="infoView">
+      <span class="iv-icon">i</span><span id="ivText">Hover a term, node, event, or cell for its definition.</span>
+      <span class="footer-hint">[ outliner &nbsp;·&nbsp; ] inspector &nbsp;·&nbsp; L log &nbsp;·&nbsp; &#96; maximize &nbsp;·&nbsp; 1/2/3 lens &nbsp;·&nbsp; − / = zoom (Rails)</span>
+    </div>
   </footer>
 
   <nav class="tabbar" id="tabbar">
@@ -634,8 +681,25 @@ JS = r"""
 const $ = (s, r) => (r||document).querySelector(s);
 const $$ = (s, r) => Array.from((r||document).querySelectorAll(s));
 function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function trimJs(s, n){ s = s || ''; return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s; }
 
-const state = { lens: 'fabula', selection: null, log: [], famOn: null, query: '' };
+// throughline color, existing tokens only (call 79-6: color carries throughline, not a text tag alone)
+const TL_COLOR = { OS: 'var(--accent)', MC: 'var(--good)', IC: 'var(--warn)', RS: 'var(--bad)' };
+
+// three workspaces bound to the lenses (call 79-5): Map / Seat / Write panel presets
+const WORKSPACE = {
+  fabula: { ol: false, det: false },
+  rails:  { ol: true,  det: false },
+  told:   { ol: false, det: true  },
+};
+
+const DEFAULT_INFO = 'Hover a term, node, event, or cell for its definition.';
+
+const state = {
+  lens: 'fabula', selection: null, log: [], famOn: null, query: '',
+  panels: { ol: false, det: false, log: false },   // canvas-first: all start collapsed (call 79-2)
+  maximized: false, railsZoom: 'out', hoverTarget: null,
+};
 
 // ---- index helpers ----
 const eventsById = {}; DATA.fabula.events.forEach(e => eventsById[e.event_id] = e);
@@ -648,12 +712,41 @@ function logEvent(lens, text){
   renderLog();
 }
 
+// ---- panel layout: outliner / inspector / log collapse, maximize hides all three ----
+function applyLayout(){
+  const app = $('#app');
+  app.classList.toggle('maximized', state.maximized);
+  app.classList.toggle('show-ol', !state.maximized && state.panels.ol);
+  app.classList.toggle('show-det', !state.maximized && state.panels.det);
+  app.classList.toggle('show-log', !state.maximized && state.panels.log);
+  $$('.ptbtn').forEach(b => {
+    const on = b.dataset.p === 'max' ? state.maximized : state.panels[b.dataset.p];
+    b.classList.toggle('on', !!on);
+  });
+  if (state.lens === 'fabula') requestAnimationFrame(renderFabula);
+}
+function setPanel(name, val){ state.panels[name] = val; applyLayout(); }
+function togglePanel(name){ state.panels[name] = !state.panels[name]; applyLayout(); }
+function toggleMaximize(){ state.maximized = !state.maximized; applyLayout(); }
+$('#panelToggles').addEventListener('click', e => {
+  const b = e.target.closest('.ptbtn'); if (!b) return;
+  if (b.dataset.p === 'max') { toggleMaximize(); return; }
+  togglePanel(b.dataset.p);
+});
+
 function select(type, id, opts){
   opts = opts || {};
   state.selection = { type, id };
   renderDetail();
   highlightSelection();
+  setPanel('det', true);  // selection-only inspector opens on selection (call 79-3)
   if (!opts.silent) logEvent(opts.lensLabel || state.lens, describeSelection(type, id));
+}
+function clearSelection(){
+  state.selection = null;
+  renderDetail();
+  highlightSelection();
+  setPanel('det', false);
 }
 
 function describeSelection(type, id){
@@ -673,11 +766,15 @@ function highlightSelection(){
   $$(`.lenses button[data-lens="${state.lens}"], nav.tabbar button[data-lens="${state.lens}"]`).forEach(el => el.classList.add('on'));
 }
 
-// ---- lens switching ----
+// ---- lens switching: 1/2/3 also apply that workspace's panel layout (call 79-5) ----
 function setLens(lens){
   state.lens = lens;
   $$('.lens-view').forEach(v => v.classList.toggle('on', v.id === 'view-' + lens));
   $$('#lensNav button, #tabbar button').forEach(b => b.classList.toggle('on', b.dataset.lens === lens));
+  const preset = WORKSPACE[lens] || { ol: false, det: false };
+  state.panels.ol = preset.ol;
+  state.panels.det = preset.det;
+  applyLayout();
   renderOutliner();
 }
 $('#lensNav').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLens(b.dataset.lens); });
@@ -706,64 +803,94 @@ $('#ol').addEventListener('click', e => {
   select(b.dataset.selType, b.dataset.selId);
 });
 
-// ---- fabula lens ----
+// ---- fabula lens (call 79-1: era bands sized by content, events spread + truncated) ----
 function renderFabula(){
   const track = $('#fabTrack');
+  if (!track || track.offsetParent === null) return;  // hidden lens — skip, re-render on show/resize
   const eras = DATA.fabula.eras;
-  const bandW = 100 / eras.length;
+  const dcusEra = eras.find(e => e.id === 'era_dcus');
+  const emptyEras = eras.filter(e => e.id !== 'era_dcus');
+  const STUB = 96; // px — a narrow fixed stub for eras with no events, label still readable
   let html = '';
-  eras.forEach((e, i) => {
-    const left = (i * bandW) + '%'; const width = bandW + '%';
-    html += `<div class="era-band t" data-tt="era" data-id="${e.id}" data-sel-type="era" data-sel-id="${e.id}" tabindex="0" style="left:${left};width:${width}">`
+  let cum = 0;
+  emptyEras.forEach(e => {
+    html += `<div class="era-band stub t" data-tt="era" data-id="${e.id}" data-sel-type="era" data-sel-id="${e.id}" tabindex="0" style="left:${cum}px;width:${STUB}px">`
          +  `<span class="lbl2">${esc(e.label)}</span><span class="fz">${esc(e.note)}</span></div>`;
+    cum += STUB;
   });
+  const dcusLeft = cum;
+  html += `<div class="era-band t" id="dcusBand" data-tt="era" data-id="${dcusEra.id}" data-sel-type="era" data-sel-id="${dcusEra.id}" tabindex="0" style="left:${dcusLeft}px;right:0">`
+       +  `<span class="lbl2">${esc(dcusEra.label)}</span><span class="fz">${esc(dcusEra.note)}</span></div>`;
   html += '<div class="movement-axis" id="movAxis"></div>';
   track.innerHTML = html;
 
-  // place events along a movement-ordinal axis inside the DCUS band (era index 2)
-  const dcusIdx = eras.findIndex(e => e.id === 'era_dcus');
-  const bandLeft = dcusIdx * bandW, bandRight = bandLeft + bandW;
-  const movementOrder = { 'M1B': 0.12, 'M2': 0.52, 'M3': 0.86 };
-  function xFor(mv){
-    const key = Object.keys(movementOrder).find(k => (mv||'').indexOf(k) === 0) || 'M2';
-    return bandLeft + (bandRight - bandLeft) * movementOrder[key];
-  }
-  const axis = $('#movAxis');
-  Object.keys(movementOrder).forEach(k => {
-    const x = bandLeft + (bandRight - bandLeft) * movementOrder[k];
-    const t = document.createElement('div'); t.className = 'tick'; t.style.left = x + '%';
-    t.innerHTML = `<span>${k}</span>`; axis.appendChild(t);
-  });
+  // the DCUS era carries every event on record — size it by content (the rest of the
+  // track), then spread events across each movement's own span so no two share an x
+  const dcusBand = $('#dcusBand');
+  const dcusWidth = Math.max(dcusBand.offsetWidth, 240);
+  const MV_KEYS = ['M1B', 'M2', 'M3'];
+  const groups = {}; MV_KEYS.forEach(k => groups[k] = []);
   DATA.fabula.events.forEach(ev => {
-    const x = xFor(ev.time.movement);
-    const dot = document.createElement('div');
-    dot.className = 'ev-dot t' + (ev.repeat ? ' repeat' : '');
-    dot.style.left = x + '%';
-    dot.tabIndex = 0;
-    dot.dataset.tt = 'event'; dot.dataset.id = ev.event_id;
-    dot.dataset.selType = 'event'; dot.dataset.selId = ev.event_id;
-    track.appendChild(dot);
-    const lab = document.createElement('div');
-    lab.className = 'ev-label'; lab.style.left = x + '%';
-    lab.textContent = ev.event_id.replace(/_/g, ' ');
-    track.appendChild(lab);
+    const key = MV_KEYS.find(k => (ev.time.movement || '').indexOf(k) === 0) || 'M2';
+    groups[key].push(ev);
+  });
+  const zoneW = dcusWidth / MV_KEYS.length;
+  const axis = $('#movAxis');
+  MV_KEYS.forEach((k, zi) => {
+    const zoneLeft = dcusLeft + zi * zoneW;
+    const tick = document.createElement('div'); tick.className = 'tick'; tick.style.left = (zoneLeft + zoneW / 2) + 'px';
+    tick.innerHTML = `<span>${k}</span>`; axis.appendChild(tick);
+    const evs = groups[k];
+    const slotW = zoneW / Math.max(evs.length, 1);
+    evs.forEach((ev, i) => {
+      const cx = zoneLeft + slotW * (i + 0.5);
+      const dot = document.createElement('div');
+      dot.className = 'ev-dot t' + (ev.repeat ? ' repeat' : '');
+      dot.style.left = cx + 'px';
+      dot.tabIndex = 0;
+      dot.dataset.tt = 'event'; dot.dataset.id = ev.event_id;
+      dot.dataset.selType = 'event'; dot.dataset.selId = ev.event_id;
+      track.appendChild(dot);
+      const lab = document.createElement('div');
+      lab.className = 'ev-label t';
+      lab.dataset.tt = 'event'; lab.dataset.id = ev.event_id;
+      lab.dataset.selType = 'event'; lab.dataset.selId = ev.event_id;
+      const labW = Math.max(46, Math.min(150, slotW - 8));
+      lab.style.left = cx + 'px'; lab.style.width = labW + 'px'; lab.style.marginLeft = (-labW / 2) + 'px';
+      lab.textContent = ev.event_id.replace(/_/g, ' ');
+      track.appendChild(lab);
+    });
   });
 }
+window.addEventListener('resize', () => { if (state.lens === 'fabula') renderFabula(); });
 
 // ---- rails lens ----
+function nodeCountFor(tlId, act){ return DATA.rails.nodes.filter(n => n.throughline === tlId && n.column === 'act' + act).length; }
+function anyActCountFor(tlId){ return DATA.rails.nodes.filter(n => n.throughline === tlId && n.column === 'side').length; }
+
+function renderTlLegend(){
+  const el = $('#tlLegend'); if (!el) return;
+  el.innerHTML = DATA.rails.throughlines.map(tl => `<span class="tl-chip" style="--tlc:${TL_COLOR[tl.id]}"><i></i>${esc(tl.id)} · ${esc(tl.name)}</span>`).join('');
+}
+
+// semantic zoom (call 79-6): zoomed out shows 16 signpost cells with label + node
+// count + throughline color; zoomed in reveals the 135 node chips under their columns
 function renderSignpostGrid(){
   const grid = $('#signpostGrid');
   let html = '<div class="sp-corner"></div>';
   DATA.rails.acts.forEach(a => html += `<div class="sp-act-hd">Act ${a} · ${esc((DATA.rails.actMov||{})[a]||'')}</div>`);
   DATA.rails.throughlines.forEach(tl => {
-    html += `<div class="sp-row-hd t" data-tt="tl" data-id="${tl.id}" tabindex="0">${tl.id}<small>${esc(tl.pov)} — ${esc(tl.name)}</small></div>`;
+    const anyN = anyActCountFor(tl.id);
+    html += `<div class="sp-row-hd t" data-tt="tl" data-id="${tl.id}" tabindex="0" style="--tlc:${TL_COLOR[tl.id]}">${tl.id}<small>${esc(tl.pov)} — ${esc(tl.name)}${anyN ? ' · +' + anyN + ' any-act' : ''}</small></div>`;
     DATA.rails.acts.forEach(a => {
       const key = tl.id + '|' + a;
       const fill = DATA.rails.fill[key];
+      const cnt = nodeCountFor(tl.id, a);
+      const countTag = `<span class="sig-count" style="--tlc:${TL_COLOR[tl.id]}">${cnt} node${cnt !== 1 ? 's' : ''}</span>`;
       if (fill){
-        html += `<button class="sig-cell filled t" data-tt="signpost" data-id="${key}" data-sel-type="signpost" data-sel-id="${key}"><b>${esc(fill.label)}</b>${esc(fill.movement)}<span class="sig-chip">${fill.state==='carded'?'scene carded':'storyform'}</span></button>`;
+        html += `<button class="sig-cell filled t" data-tt="signpost" data-id="${key}" data-sel-type="signpost" data-sel-id="${key}"><b>${esc(fill.label)}</b>${esc(fill.movement)}<span class="sig-chip">${fill.state==='carded'?'scene carded':'storyform'}</span>${countTag}</button>`;
       } else {
-        html += `<div class="sig-cell empty">no instance found<span class="sig-chip gap">unverified</span></div>`;
+        html += `<div class="sig-cell empty t" data-tt="signpost" data-id="${key}" tabindex="0">no instance found<span class="sig-chip gap">unverified</span>${countTag}</div>`;
       }
     });
   });
@@ -782,7 +909,8 @@ function renderNodeColumns(){
     html += `<div class="node-col"><h3>${esc(DATA.rails.columns[c])}</h3><div class="cnt">${nodes.length} node(s)</div>`;
     html += '<div class="node-cluster">';
     nodes.forEach(n => {
-      html += `<button class="node-chip t" data-tt="node" data-id="${n.id}" data-sel-type="node" data-sel-id="${n.id}"><span class="tlc">${esc(n.throughline||'')}</span> ${esc(n.name)}</button>`;
+      const col = TL_COLOR[n.throughline] || 'var(--line-2)';
+      html += `<button class="node-chip t" data-tt="node" data-id="${n.id}" data-sel-type="node" data-sel-id="${n.id}" style="--tlc:${col}"><span class="tlc">${esc(n.throughline||'')}</span> ${esc(n.name)}</button>`;
     });
     html += '</div></div>';
   });
@@ -796,6 +924,13 @@ function renderFamFilter(){
 }
 $('#famFilter').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; state.famOn = b.dataset.f || null; renderFamFilter(); renderNodeColumns(); });
 $('#nodeSearch').addEventListener('input', e => { state.query = e.target.value.trim(); renderNodeColumns(); });
+
+function setZoom(z){
+  state.railsZoom = z;
+  $$('#zoomCtl button').forEach(b => b.classList.toggle('on', b.dataset.z === z));
+  const sec = $('#nodeSection'); if (sec) sec.style.display = (z === 'in') ? '' : 'none';
+}
+$('#zoomCtl').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setZoom(b.dataset.z); });
 
 // ---- told lens ----
 function renderTold(){
@@ -815,7 +950,7 @@ function renderTold(){
   wrap.innerHTML = html;
 }
 
-// ---- detail rail ----
+// ---- detail rail: selection-only, 4-6 key fields + a "more" disclosure (call 79-3) ----
 let detailTab = 'detail';
 function renderDetail(){
   const el = $('#detail');
@@ -837,12 +972,17 @@ function detailCardHtml(type, id){
     return `<div class="dcard"><div class="kind">Fabula event · ${esc(e.kernel_satellite)}</div><h3>${esc(e.event_id)}</h3>
       <dl>
         <div><dt>Transition</dt><dd>${esc(e.transition)}</dd></div>
-        <div><dt>Movement / reach / extent</dt><dd>${esc(e.time.movement)} — ${esc(e.time.reach)}; ${esc(e.time.extent)}</dd></div>
+        <div><dt>Movement</dt><dd>${esc(e.time.movement)}</dd></div>
         <div><dt>Actors</dt><dd>${e.actors.map(a=>esc(a.actor)+' ('+esc(a.actant_role)+')').join(', ')}</dd></div>
         <div><dt>Gap / repeat</dt><dd>${esc(e.gap_type)}${e.repeat? ' · repeat (iterative)':''}</dd></div>
-        <div><dt>Location</dt><dd>${esc(e.location)}</dd></div>
-        <div><dt>Causal edges</dt><dd>${(e.causal_edges||[]).length? e.causal_edges.map(c=>esc(c.type)+' → '+esc(c.to)).join('; ') : 'none on record'}</dd></div>
       </dl>
+      <details class="more-block"><summary>More — reach, location, causal edges</summary>
+        <dl>
+          <div><dt>Reach / extent</dt><dd>${esc(e.time.reach)}; ${esc(e.time.extent)}</dd></div>
+          <div><dt>Location</dt><dd>${esc(e.location)}</dd></div>
+          <div><dt>Causal edges</dt><dd>${(e.causal_edges||[]).length? e.causal_edges.map(c=>esc(c.type)+' → '+esc(c.to)).join('; ') : 'none on record'}</dd></div>
+        </dl>
+      </details>
       <div class="src">source: ${esc(e.provenance.source)} · ${esc(e.provenance.confidence)}</div></div>`;
   }
   if (type === 'era'){
@@ -855,12 +995,14 @@ function detailCardHtml(type, id){
     const n = nodesById[id]; if (!n) return '';
     const tropes = n.tropes || [];
     const shown = tropes.slice(0, 6);
+    const hasMore = (n.same_as && n.same_as.length) || n.seat_why;
     return `<div class="dcard"><div class="kind">Rails node · ${esc(n.family)} #${n.n} · ${esc(n.phase)} phase</div><h3>${esc(n.name)}</h3>
       <p style="font-size:13.5px;margin:4px 0 0">${esc(n.def)}</p>
-      <dl><div><dt>Tropes keyed (${tropes.length})</dt><dd><ul class="tlist" style="list-style:none;padding:0;margin:6px 0 0">${shown.map(t=>{ const alt = t.alt ? nodesById[t.alt] : null; return `<li style="border-left:2px solid var(--line-2);padding-left:6px;margin-bottom:4px">${esc(t.name)}${alt?`<div class="or-line">or: ${esc(alt.name)}</div>`:''}</li>`; }).join('')}${tropes.length>6?`<li class="more">+ ${tropes.length-6} more — hover the node on the rails for the capped tooltip</li>`:''}</dd></div>
-      ${n.same_as && n.same_as.length ? `<div><dt>Same as</dt><dd>${n.same_as.map(esc).join(', ')}</dd></div>`:''}
-      </dl>
-      ${n.seat_why?`<dl><div><dt>Seat</dt><dd>${esc(n.throughline)} · ${n.column==='side'?'any act':esc(n.column.replace('act','Act '))} — ${esc(n.seat_why)}</dd></div></dl>`:''}
+      <dl><div><dt>Tropes keyed (${tropes.length})</dt><dd><ul class="tlist" style="list-style:none;padding:0;margin:6px 0 0">${shown.map(t=>{ const alt = t.alt ? nodesById[t.alt] : null; return `<li style="border-left:2px solid var(--line-2);padding-left:6px;margin-bottom:4px">${esc(t.name)}${alt?`<div class="or-line">or: ${esc(alt.name)}</div>`:''}</li>`; }).join('')}${tropes.length>6?`<li class="more">+ ${tropes.length-6} more — hover the node on the rails for the capped tooltip</li>`:''}</dd></div></dl>
+      ${hasMore ? `<details class="more-block"><summary>More — same-as, seat</summary>
+        ${n.same_as && n.same_as.length ? `<dl><div><dt>Same as</dt><dd>${n.same_as.map(esc).join(', ')}</dd></div></dl>`:''}
+        ${n.seat_why?`<dl><div><dt>Seat</dt><dd>${esc(n.throughline)} · ${n.column==='side'?'any act':esc(n.column.replace('act','Act '))} — ${esc(n.seat_why)}</dd></div></dl>`:''}
+      </details>` : ''}
       <div class="src">source: ${esc(n.cite||'')} · ${esc(n.bvx||'')} · _tools/tropes/data/trope_graph.json</div></div>`;
   }
   if (type === 'signpost'){
@@ -880,9 +1022,13 @@ function detailCardHtml(type, id){
         <div><dt>Driver (local)</dt><dd>${esc(s.driver)}</dd></div>
         <div><dt>Value turn</dt><dd>${esc(s.value_turn)}</dd></div>
         <div><dt>Reveal</dt><dd>${esc(s.reveal)}</dd></div>
-        <div><dt>Collision</dt><dd>${esc(s.collision)}</dd></div>
-        <div><dt>Told vs happened</dt><dd>${esc(s.order_told_vs_happened)}</dd></div>
       </dl>
+      <details class="more-block"><summary>More — collision, told vs happened</summary>
+        <dl>
+          <div><dt>Collision</dt><dd>${esc(s.collision)}</dd></div>
+          <div><dt>Told vs happened</dt><dd>${esc(s.order_told_vs_happened)}</dd></div>
+        </dl>
+      </details>
       <div class="src">source: ${esc(s.source)}</div></div>`;
   }
   return '<p class="empty-detail">Nothing selected.</p>';
@@ -926,21 +1072,51 @@ function renderLogFilter(){
 }
 $('#logFilter').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; logFilterOn = b.dataset.f || null; renderLogFilter(); renderLog(); });
 
-// ---- canvas click delegation (fabula/rails/told selection) ----
+// ---- canvas click delegation (fabula/rails/told selection; empty canvas clears it) ----
 $('#canvas').addEventListener('click', e => {
-  const el = e.target.closest('[data-sel-type]'); if (!el) return;
-  select(el.dataset.selType, el.dataset.selId);
+  const el = e.target.closest('[data-sel-type]');
+  if (el) { select(el.dataset.selType, el.dataset.selId); return; }
+  if (e.target.closest('button, input, a, .t')) return;  // an interactive control, not "empty canvas"
+  clearSelection();
 });
 
-// ---- mobile toggles ----
-$('#olToggle').addEventListener('click', () => { $('#ol').classList.toggle('show'); $('#detail').classList.remove('show'); });
-$('#detToggle').addEventListener('click', () => { $('#detail').classList.toggle('show'); $('#ol').classList.remove('show'); });
+// ==================================================================
+// ---- Info View strip (Ableton): one line, whatever the pointer is over ----
+// ==================================================================
+function infoLineFor(el){
+  const tt = el.dataset.tt, id = el.dataset.id;
+  if (tt === 'node'){ const n = nodesById[id]; return n ? `${n.name} — ${trimJs(n.def, 110)}` : ''; }
+  if (tt === 'trope-of'){ const node = nodesById[el.dataset.node]; const t = node && (node.tropes||[]).find(x => x.slug === id); return t ? `${t.name} — ${trimJs(t.def, 110)}` : ''; }
+  if (tt === 'event'){ const e = eventsById[id]; return e ? `${e.event_id.replace(/_/g,' ')} — ${trimJs(e.transition, 110)}` : ''; }
+  if (tt === 'era'){ const e = erasById[id]; return e ? `${e.label} — ${trimJs(e.detail, 110)}` : ''; }
+  if (tt === 'signpost'){ const f = DATA.rails.fill[id]; return f ? `${f.label} — ${trimJs(f.detail, 110)}` : `Signpost ${id.replace('|',' · act ')} — no instance found, unverified.`; }
+  if (tt === 'told'){ const s = DATA.told.scene; return `${s.address} — ${s.signpost}`; }
+  if (tt === 'tl'){ const t = DATA.rails.throughlines.find(x => x.id === id); return t ? `${t.id} (${t.pov}) — ${t.name}: ${trimJs(t.role, 90)}` : ''; }
+  if (tt === 'gloss'){ const g = DATA.glossary[id]; return g ? `${g.t} — ${trimJs(g.d, 110)}` : ''; }
+  return '';
+}
+function setInfoView(text){ const el = $('#ivText'); if (el) el.textContent = text || DEFAULT_INFO; }
+document.addEventListener('mouseover', e => {
+  const el = e.target.closest('[data-tt]'); if (!el) return;
+  state.hoverTarget = el; setInfoView(infoLineFor(el));
+});
+document.addEventListener('mouseout', e => {
+  const el = e.target.closest('[data-tt]'); if (!el) return;
+  const to = e.relatedTarget && e.relatedTarget.closest ? e.relatedTarget.closest('[data-tt]') : null;
+  if (!to){ state.hoverTarget = null; setInfoView(DEFAULT_INFO); }
+});
+document.addEventListener('focusin', e => {
+  const el = e.target.closest('[data-tt]'); if (el){ state.hoverTarget = el; setInfoView(infoLineFor(el)); }
+});
+document.addEventListener('focusout', e => {
+  const el = e.target.closest('[data-tt]'); if (el){ state.hoverTarget = null; setInfoView(DEFAULT_INFO); }
+});
 
 // ==================================================================
-// ---- tooltip layer: CK3 nested tooltips, depth<=3, hover/lock/esc ----
+// ---- tooltip layer: CK3 nested tooltips, depth<=3 — open on click or Space
+// on the hovered/focused term (never on hover alone), nest as before, Esc closes ----
 // ==================================================================
 let tips = [];
-let openTimer = null, closeTimer = null;
 
 function depthOf(target){ const p = target.closest('.tip'); return p ? (+p.dataset.depth + 1) : 1; }
 
@@ -954,47 +1130,47 @@ function tropeTipHtml(node, trope, depth){
     <p>${esc(trope.def || '')}</p>
     ${altLine}
     ${deep ? '<div class="capped">nesting capped at depth 3</div>' : `<div class="w">from ${esc(node.name)} · conf: ${esc(trope.conf||'n/a')}</div>`}
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 function nodeTipHtml(node, depth){
   const tropes = (node.tropes||[]).slice(0,6);
   const rest = (node.tropes||[]).length - tropes.length;
   return `<div class="th"><b>${esc(node.name)}</b><span class="k">${esc(node.family)} node</span></div>
     <p>${esc(node.def)}</p>
-    <ul class="tlist">${tropes.map(t => `<li><span class="t" data-tt="trope-of" data-node="${node.id}" data-id="${esc(t.slug)}">${esc(t.name)}</span></li>`).join('')}</ul>
+    <ul class="tlist">${tropes.map(t => `<li><span class="t" data-tt="trope-of" data-node="${node.id}" data-id="${esc(t.slug)}" tabindex="0">${esc(t.name)}</span></li>`).join('')}</ul>
     ${rest > 0 ? `<div class="more">+ ${rest} more</div>` : ''}
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="hint2">click a trope to open it · Esc closes</div>`;
 }
 function eventTipHtml(ev, depth){
   return `<div class="th"><b>${esc(ev.event_id)}</b><span class="k">fabula event</span></div>
     <p>${esc(ev.transition)}</p>
-    <div class="w">${esc(ev.time.movement)} · ${esc(ev.time.reach)}${ev.repeat?' · <span class="t" data-tt="gloss" data-id="repeat">repeat</span>':''}</div>
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="w">${esc(ev.time.movement)} · ${esc(ev.time.reach)}${ev.repeat?' · <span class="t" data-tt="gloss" data-id="repeat" tabindex="0">repeat</span>':''}</div>
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 function eraTipHtml(era){
   return `<div class="th"><b>${esc(era.label)}</b><span class="k">world-clock era</span></div>
     <p>${esc(era.detail)}</p>
     <div class="w">${esc(era.note)}</div>
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 function signpostTipHtml(key){
   const fill = DATA.rails.fill[key];
-  if (!fill) return `<div class="th"><b>${esc(key.replace('|',' · act '))}</b><span class="k">signpost</span></div><p>No instance found — rail-required, unverified.</p>`;
+  if (!fill) return `<div class="th"><b>${esc(key.replace('|',' · act '))}</b><span class="k">signpost</span></div><p>No instance found — rail-required, unverified.</p><div class="hint2">Esc or click elsewhere closes</div>`;
   return `<div class="th"><b>${esc(fill.label)}</b><span class="k">signpost · ${esc(fill.state)}</span></div><p>${esc(fill.detail)}</p>
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 function toldTipHtml(scene){
   return `<div class="th"><b>${esc(scene.address)}</b><span class="k">told scene</span></div><p>${esc(scene.signpost)}</p>
     <div class="w">${esc(scene.order_told_vs_happened)}</div>
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 function throughlineTipHtml(id, depth){
   const tl = DATA.rails.throughlines.find(t => t.id === id); if (!tl) return '';
   const deep = depth >= 3;
   return `<div class="th"><b>${esc(tl.id)}</b><span class="k">throughline · ${esc(tl.pov)}</span></div>
     <p>${esc(tl.name)} — ${esc(tl.role)}</p>
-    ${!deep ? `<p><span class="t" data-tt="gloss" data-id="throughline">what a throughline is →</span></p>` : '<div class="capped">nesting capped at depth 3</div>'}
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    ${!deep ? `<p><span class="t" data-tt="gloss" data-id="throughline" tabindex="0">what a throughline is →</span></p>` : '<div class="capped">nesting capped at depth 3</div>'}
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 function glossTipHtml(key, depth){
   const g = DATA.glossary[key]; if (!g) return '';
@@ -1002,7 +1178,7 @@ function glossTipHtml(key, depth){
   return `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div>
     <p>${esc(g.d)}</p>
     ${!deep ? `<div class="w">${esc(g.w||'')}</div>` : '<div class="capped">nesting capped at depth 3</div>'}
-    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+    <div class="hint2">Esc or click elsewhere closes</div>`;
 }
 
 function contentFor(target, depth){
@@ -1020,71 +1196,69 @@ function contentFor(target, depth){
 
 function openTip(target, depth){
   if (depth > 3) return null;
+  closeTips(depth);  // close any sibling already open at this depth
   const el = document.createElement('div');
-  el.className = 'tip'; el.dataset.depth = depth;
+  el.className = 'tip locked'; el.dataset.depth = depth;
   el.innerHTML = contentFor(target, depth);
   document.body.appendChild(el);
   const r = target.getBoundingClientRect(); const w = 320, h = el.offsetHeight;
   let x = Math.min(Math.max(12, r.left), window.innerWidth - w - 12);
   let y = r.bottom + 8; if (y + h > window.innerHeight - 12) y = Math.max(12, r.top - h - 8);
   el.style.left = x + 'px'; el.style.top = y + 'px';
-  const rec = { el, target, depth, locked: false, timer: null };
-  const bar = el.querySelector('.lock b');
-  if (bar) { requestAnimationFrame(() => { bar.style.transition = 'width 1.2s linear'; bar.style.width = '100%'; }); rec.timer = setTimeout(() => lockTip(rec), 1200); }
-  el.addEventListener('mouseenter', () => clearTimeout(closeTimer));
-  el.addEventListener('mouseleave', () => scheduleClose(depth));
   target.classList.add('on');
+  const rec = { el, target, depth };
   tips.push(rec);
   return rec;
 }
-function lockTip(rec){ rec.locked = true; rec.el.classList.add('locked'); }
 function closeTips(fromDepth){
-  tips.filter(t => t.depth >= fromDepth).forEach(t => { clearTimeout(t.timer); t.el.remove(); t.target.classList.remove('on'); });
+  tips.filter(t => t.depth >= fromDepth).forEach(t => { t.el.remove(); t.target.classList.remove('on'); });
   tips = tips.filter(t => t.depth < fromDepth);
 }
-function scheduleClose(depth){
-  clearTimeout(closeTimer);
-  closeTimer = setTimeout(() => {
-    const unlocked = tips.filter(t => t.depth >= depth && !t.locked);
-    if (unlocked.length) closeTips(Math.min(...unlocked.map(t => t.depth)));
-  }, 200);
+function toggleTip(target){
+  const existing = tips.find(t => t.target === target);
+  if (existing){ closeTips(existing.depth); return; }
+  openTip(target, depthOf(target));
 }
-function onEnter(target){
-  clearTimeout(openTimer); clearTimeout(closeTimer);
-  const d = depthOf(target);
-  openTimer = setTimeout(() => { closeTips(d); openTip(target, d); }, 110);
-}
-document.addEventListener('mouseover', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
-document.addEventListener('mouseout', e => { const t = e.target.closest('.t'); if (t) { clearTimeout(openTimer); scheduleClose(depthOf(t)); } });
-document.addEventListener('focusin', e => { const t = e.target.closest('.t'); if (t) onEnter(t); });
-document.addEventListener('focusout', e => { const t = e.target.closest('.t'); if (t) scheduleClose(depthOf(t)); });
-document.addEventListener('click', e => { if (!e.target.closest('.tip') && !e.target.closest('.t')) closeTips(1); });
+document.addEventListener('click', e => {
+  const term = e.target.closest('.t');
+  if (term){ toggleTip(term); return; }
+  if (!e.target.closest('.tip')) closeTips(1);
+});
 
-// ---- keyboard: 1/2/3 lenses, Esc close, Space lock ----
+// ---- keyboard: 1/2/3 lenses+workspace · [ ] L ` panels · - / = rails zoom · Space opens/closes the hovered term · Esc closes ----
 document.addEventListener('keydown', e => {
   if (e.target.matches('input')) { if (e.key === 'Escape') e.target.blur(); return; }
   if (e.key === '1') { setLens('fabula'); return; }
   if (e.key === '2') { setLens('rails'); return; }
   if (e.key === '3') { setLens('told'); return; }
-  if (e.key === 'Escape') { if (tips.length) closeTips(1); else { $('#ol').classList.remove('show'); $('#detail').classList.remove('show'); } return; }
-  if (e.key === ' ' && tips.length) { e.preventDefault(); lockTip(tips[tips.length-1]); return; }
+  if (e.key === '[') { togglePanel('ol'); return; }
+  if (e.key === ']') { togglePanel('det'); return; }
+  if (e.key.toLowerCase() === 'l') { togglePanel('log'); return; }
+  if (e.key === '`') { toggleMaximize(); return; }
+  if (!e.ctrlKey && !e.metaKey && e.key === '-') { setZoom('out'); return; }
+  if (!e.ctrlKey && !e.metaKey && e.key === '=') { setZoom('in'); return; }
+  if (e.key === 'Escape') { if (tips.length) closeTips(1); else clearSelection(); return; }
+  if (e.key === ' ') { if (state.hoverTarget){ e.preventDefault(); toggleTip(state.hoverTarget); } return; }
 });
 
 // ==================================================================
-// ---- boot: a realistic working state ----
+// ---- boot: a realistic working state, canvas first ----
 // ==================================================================
+applyLayout();  // outliner / inspector / log all start collapsed
 renderOutliner();
 renderFabula();
+renderTlLegend();
 renderSignpostGrid();
 renderFamFilter();
 renderNodeColumns();
+setZoom('out');
 renderTold();
 renderLogFilter();
 detailTab = 'detail';
 // seed the log with the session's opening moves, then land on the crash event
-logEvent('fabula', 'workspace opened · Fabula lens (default)');
+logEvent('fabula', 'workspace opened · Fabula lens (default) · Map workspace');
 select('event', 'm1b_crash_jebb_death', { lensLabel: 'fabula' });
-logEvent('fabula', "Tori's five fabula events loaded · 3 DCUS eras banded (fuzzy)");
+logEvent('fabula', "Tori's six fabula events loaded · 3 DCUS eras banded (fuzzy)");
 })();
 """
 
