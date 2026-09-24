@@ -211,7 +211,8 @@ need(fabula_md, "logically and chronologically related events that are caused or
 need(fabula_md, "split out from the told-order half that already lives in", "syuzhet def")
 need(plot_md, "consumes a fixed structural checkpoint, one per throughline, four per form", "signpost def")
 need(rails_md, "No rival model has all four", "throughline def")
-need(plot_md, "A trope names a recurring pattern", "trope def")
+need(rails_md, "A trope names a recurring pattern", "trope def")
+need(fabula_md, "several portions taken as if they were alike and to some extent repetitive", "repeat def")
 
 GLOSSARY.update(
     {
@@ -243,13 +244,19 @@ GLOSSARY.update(
             "t": "Trope",
             "k": "noun",
             "d": "A recurring pattern — what happens at one plot-ladder rung (beat/scene/sequence/act/story) or across a span of units.",
-            "w": "ssot_04_plot_system.md §5",
+            "w": "PS-R.rails.md §5",
         },
         "node": {
             "t": "Node (trope graph)",
             "k": "noun",
             "d": "A book-derived structural unit in the trope graph — one of 135 seated from five story-grammar families (Tobias, Schmidt, Campbell, Vogler, Propp). Tropes attach inside a node; the node is what draws on the rails.",
             "w": "_tools/tropes/data/trope_graph.json",
+        },
+        "repeat": {
+            "t": "Repeat / iterative",
+            "k": "noun",
+            "d": "One record standing for a repeated class rather than one row per occurrence — “not a single portion of elapsed time but... several portions taken as if they were alike and to some extent repetitive” (Genette 1980: 53). The fabula's `repeat` flag.",
+            "w": "ssot_04_fabula.md · THE WORLD CLOCK",
         },
     }
 )
@@ -355,7 +362,7 @@ STYLE = r"""
 
   /* ---- app frame ---- */
   .app {
-    height: 100vh; display: grid;
+    height: 100%; display: grid;
     grid-template-rows: auto minmax(0,1fr) auto;
     grid-template-columns: 210px minmax(0,1fr) 320px;
     grid-template-areas: "head head head" "ol canvas detail" "log log log";
@@ -645,7 +652,7 @@ function describeSelection(type, id){
 }
 
 function highlightSelection(){
-  $$('.on').forEach(el => { if (!el.classList.contains('on-static')) el.classList.remove('on'); });
+  $$('[data-sel-type].on').forEach(el => el.classList.remove('on'));  // only selection marks; lens views and filters keep their own .on
   if (!state.selection) return;
   $$(`[data-sel-type="${state.selection.type}"][data-sel-id="${CSS.escape(String(state.selection.id))}"]`).forEach(el => el.classList.add('on'));
   $$(`.lenses button[data-lens="${state.lens}"], nav.tabbar button[data-lens="${state.lens}"]`).forEach(el => el.classList.add('on'));
@@ -734,7 +741,7 @@ function renderSignpostGrid(){
   let html = '<div class="sp-corner"></div>';
   DATA.rails.acts.forEach(a => html += `<div class="sp-act-hd">Act ${a}</div>`);
   DATA.rails.throughlines.forEach(tl => {
-    html += `<div class="sp-row-hd t" data-tt="gloss" data-id="throughline" tabindex="0">${tl.id}<small>${esc(tl.pov)} — ${esc(tl.name)}</small></div>`;
+    html += `<div class="sp-row-hd t" data-tt="tl" data-id="${tl.id}" tabindex="0">${tl.id}<small>${esc(tl.pov)} — ${esc(tl.name)}</small></div>`;
     DATA.rails.acts.forEach(a => {
       const key = tl.id + '|' + a;
       const fill = DATA.rails.fill[key];
@@ -835,7 +842,7 @@ function detailCardHtml(type, id){
     const shown = tropes.slice(0, 6);
     return `<div class="dcard"><div class="kind">Rails node · ${esc(n.family)} #${n.n} · ${esc(n.phase)} phase</div><h3>${esc(n.name)}</h3>
       <p style="font-size:13.5px;margin:4px 0 0">${esc(n.def)}</p>
-      <dl><div><dt>Tropes keyed (${tropes.length})</dt><dd><ul class="tlist" style="list-style:none;padding:0;margin:6px 0 0">${shown.map(t=>`<li style="border-left:2px solid var(--line-2);padding-left:6px;margin-bottom:4px">${esc(t.name)}</li>`).join('')}${tropes.length>6?`<li class="more">+ ${tropes.length-6} more — hover the node on the rails for the capped tooltip</li>`:''}</dd></div>
+      <dl><div><dt>Tropes keyed (${tropes.length})</dt><dd><ul class="tlist" style="list-style:none;padding:0;margin:6px 0 0">${shown.map(t=>{ const alt = t.alt ? nodesById[t.alt] : null; return `<li style="border-left:2px solid var(--line-2);padding-left:6px;margin-bottom:4px">${esc(t.name)}${alt?`<div class="or-line">or: ${esc(alt.name)}</div>`:''}</li>`; }).join('')}${tropes.length>6?`<li class="more">+ ${tropes.length-6} more — hover the node on the rails for the capped tooltip</li>`:''}</dd></div>
       ${n.same_as && n.same_as.length ? `<div><dt>Same as</dt><dd>${n.same_as.map(esc).join(', ')}</dd></div>`:''}
       </dl>
       <div class="src">source: ${esc(n.cite||'')} · ${esc(n.bvx||'')} · _tools/tropes/data/trope_graph.json</div></div>`;
@@ -965,6 +972,14 @@ function toldTipHtml(scene){
     <div class="w">${esc(scene.order_told_vs_happened)}</div>
     <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
 }
+function throughlineTipHtml(id, depth){
+  const tl = DATA.rails.throughlines.find(t => t.id === id); if (!tl) return '';
+  const deep = depth >= 3;
+  return `<div class="th"><b>${esc(tl.id)}</b><span class="k">throughline · ${esc(tl.pov)}</span></div>
+    <p>${esc(tl.name)} — ${esc(tl.role)}</p>
+    ${!deep ? `<p><span class="t" data-tt="gloss" data-id="throughline">what a throughline is →</span></p>` : '<div class="capped">nesting capped at depth 3</div>'}
+    <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
+}
 function glossTipHtml(key, depth){
   const g = DATA.glossary[key]; if (!g) return '';
   const deep = depth >= 3;
@@ -982,6 +997,7 @@ function contentFor(target, depth){
   if (tt === 'era') return eraTipHtml(erasById[id]);
   if (tt === 'signpost') return signpostTipHtml(id);
   if (tt === 'told') return toldTipHtml(DATA.told.scene);
+  if (tt === 'tl') return throughlineTipHtml(id, depth);
   if (tt === 'gloss') return glossTipHtml(id, depth);
   return '';
 }
