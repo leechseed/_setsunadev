@@ -1,10 +1,10 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.2
+version: 0.1.3
 last_updated: 2026-09-24
 applies_to: [OVEREXITOUT, EVIL CHECK, all future IPs]
-status: "v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -279,6 +279,33 @@ provenance:
 causal_edges: []   # no stated causal link to M1B beyond precedence; precedence alone is not causality (Bal 2017: 159)
 ```
 
+**Call 12 addition (2026-09-24, BOLO 77 wave 3).** The five records above trace only to what PS2 quotes from `victoria-midnight.md`; the sixth below traces instead to the scene card — `oxo-scene-card-M2-row9.md`'s own commandments block — filling the gap the plot doc's OPEN call 12 named: no fabula event covered row 9's rating system, "Verified" mechanic, or reach-vs-pull-out choice.
+
+```yaml
+event_id: "m2_first_sync_verified"
+transition: "the best-bad choice at her first Sync-rating session, pull out (stay grey, keep control-as-safety) or reach (take the counterfeit wholeness) -> she reaches, says 'breathe' into the gap, the Feed archives it 'Unrecognized input,' her rating climbs anyway, and she is marked 'Verified' (neon blue)"
+actors:
+  - actor: "Victoria Midnight (Tori)"
+    actant_role: subject
+  - actor: "the Feed (DCUS Sync system)"
+    actant_role: opponent
+kernel_satellite: kernel   # Bal's Choice criterion — the CR beat is a stated best-bad choice, opens a new behavioral regime (the hook goes in)
+time:
+  movement: "M2"
+  reach: "unspecified relative to m2_recruited beyond sequence; scene card marks it the first Sync-rating session, address q1.s3"
+  extent: "point (one Sync session)"
+gap_type: logged
+repeat: false
+location: "DCUS campus, the Sync hall ⧗ (no Sync space is named in victoria-midnight.md; the room is the scene card's own invention, flagged ⧗ there)"
+stories: [OXO]
+provenance:
+  source: "oxo-scene-card-M2-row9.md, THE CARD commandments block (II/TP/CR/CL/RES) and the value-turn line"
+  confidence: direct_quote   # quoted verbatim from the scene card; the card itself is status draft/⧗, see its own CANON GAPS section
+causal_edges:
+  - type: specify
+    to: "m2_grief_outbursts"   # this dated Sync session is one instance the iterative m2_grief_outbursts class stands for; the card's TP line ("Digital Puberty glitch fires mid-sync") names the same in-world dismissal
+```
+
 ```yaml
 event_id: "m2_grief_outbursts"
 transition: "grief held -> grief surfacing as surreal outbursts, dismissed in-world as 'Digital Puberty'"
@@ -358,3 +385,4 @@ causal_edges: []   # no stated causal edge to the crash's data-deletion mechanis
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 1, "go 77" ruled 2026-09-24. Built from three disjoint extractions: PS1 (syuzhet-side hooks, DCUS setting facts), PS2 (the twelve-layer origin-moment rule, the state architecture v1.0 gap, Tori's dated backstory), MS-T (the fabula/syuzhet/trope-graph theory digest, Bal/Chatman/Genette/Rimmon-Kenan/Wolf/Sternberg/Propp). Instance scoped to Tori only per the ruled default; EVIL CHECK's events reserved for wave 2; the state architecture v1.1 patch spec ships inside THE HANDSHAKE rather than in the state doc itself, pending OPEN call 6.
 - **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended (Tori-only instance · EVIL CHECK in wave 2 · `<movement>_<slug>` ids · DCUS eras cross-referenced · date by movement · the v1.1 patch shipped now). The patch landed in the state architecture v1.1.0: `origin_event` field, `state_diffs` parent, additive, `narrative_moment` kept.
 - **v0.1.2 (2026-09-24):** the HANDSHAKE P6 row re-pointed to the trope graph's walk (plot doc OPEN call 15, ruled).
+- **v0.1.3 (2026-09-24):** BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record added, `m2_first_sync_verified` (M2, the first Sync-rating session's reach-vs-pull-out choice and "Verified" mark), sourced from `oxo-scene-card-M2-row9.md` rather than `victoria-midnight.md`; causal edge `specify` to `m2_grief_outbursts`. Row 9's plot-card P2 DRIVER, P3 VALUE-IN, P5 VALUE-OUT, and P9 STAKES now read this event in `ssot_04_plot_system.md`.

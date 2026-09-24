@@ -201,7 +201,7 @@ for n in raw_nodes:
             "cite": n.get("cite"),
             "bvx": n.get("bvx"),
             "phase": n.get("phase"),
-            # seated 9/24 (call 77-I) on the ruled Bourne map; Tobias/Schmidt ride any act
+            # seated 9/24 (call 77-I) on the ruled Bourne map · seat calls 1–3 RULED 9/24; Tobias/Schmidt ride any act
             "column": f"act{n['act']}" if isinstance(n.get("act"), int) else "side",
             "throughline": n.get("throughline"),
             "seat_why": n.get("seat_why"),
@@ -595,7 +595,7 @@ def build_html() -> str:
       <h3 class="lbl" style="margin:0 0 8px">The signposts — fixed rail</h3>
       <div class="signpost-grid" id="signpostGrid"></div>
       <h3 class="lbl" style="margin:0 0 4px">The book nodes — seated by act and throughline</h3>
-      <p class="provisional">seated 9/24 (call 77-I) on the ruled Bourne map · the tag on each chip is its throughline</p>
+      <p class="provisional">seated 9/24 (call 77-I) on the ruled Bourne map · seat calls 1–3 RULED 9/24 · the tag on each chip is its throughline</p>
       <div class="node-cols" id="nodeCols"></div>
     </section>
 
