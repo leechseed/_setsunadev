@@ -37,7 +37,7 @@ def drop_scan(cat_by_title, today):
         for f in sorted(fs):
             if not f.lower().endswith((".pdf", ".epub")) or f.startswith("._") or os.path.getsize(os.path.join(dp, f)) < 2048:
                 continue  # AppleDouble resource forks and empty files are not books; EPUBs count as books too (9/23)
-            stem = re.sub(r"\s*\(Z-Library\)|\s*\(z-lib\.org\)|\s*9\d{12}|\s*\d{13}", "", os.path.splitext(f)[0]).strip()
+            stem = re.sub(r"\s*\(Z-Library\)|\s*\(z-lib\.org\)|\s*\(z-library\.sk[^)]*\)|\s*9\d{12}|\s*\d{13}|\s*B0[0-9A-Z]{8}", "", os.path.splitext(f)[0]).strip().rstrip("—").strip()
             stem = re.sub(r"^\d{6,}-", "", stem)  # a Scribd numeric prefix
             if "-" in stem and " " not in stem:
                 stem = stem.replace("-", " ")  # hyphenated Scribd names

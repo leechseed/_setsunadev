@@ -18647,6 +18647,34 @@
   "junk_title": false
  },
  {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Porn Work Sex, Labor, and Late Capitalism",
+  "authors": [
+   "Heather Berg"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Porn Work Sex, Labor, and Late Capitalism (Heather Berg)9781469661919 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": "BVX.0761",
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop",
+  "spine_src": "drop-unkeyed"
+ },
+ {
   "zid": 1486,
   "zkey": "NC4LXJUD",
   "type": "book",
@@ -29802,6 +29830,35 @@
   "spine_src": "subject-off",
   "subject_src": "catalog",
   "junk_title": false
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Working It Sex Workers on the Work of Sex",
+  "authors": [
+   "Matilda Bickers",
+   "Peech Breshears etc."
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Working It Sex Workers on the Work of Sex (Matilda Bickers, Peech Breshears etc.)9781629639918 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": "BVX.0811",
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop",
+  "spine_src": "drop-unkeyed"
  },
  {
   "zid": 1750,
@@ -47369,7 +47426,7 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "903FFB09CA714C1C956B952D9AF08B86",
+  "title": "903FFC956B952D9AF08B86",
   "authors": [],
   "year": "",
   "publisher": "",
@@ -47733,11 +47790,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "A Guide to the Project Management Body of Knowledge (PMBOK® Guide) - Eighth Edition (Project Management Institute PMI)",
+  "title": "A Guide to the Project Management Body of Knowledge (PMBOK® Guide) - Eighth Edition",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Project Management Institute PMI"
   ],
   "year": "",
   "publisher": "",
@@ -49827,11 +49882,11 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Act Two Secrets (Screenwriting Blue Books) (Martell, William C. [Martell, William C.])—",
+  "title": "Act Two Secrets (Screenwriting Blue Books)",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Martell",
+   "William C. [Martell",
+   "William C.]"
   ],
   "year": "",
   "publisher": "",
@@ -53431,11 +53486,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Al Essentials for Project Professionals (Project Management Institute)—",
+  "title": "Al Essentials for Project Professionals",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Project Management Institute"
   ],
   "year": "",
   "publisher": "",
@@ -55378,6 +55431,33 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
+  "title": "American Folklore An Encyclopedia (Garland Reference Library of the Humanities)",
+  "authors": [
+   "Jan Harold Brunvand"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\American Folklore An Encyclopedia (Garland Reference Library of the Humanities) (Jan Harold Brunvand) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
   "title": "Amiri - Level 1 Barbarian",
   "authors": [],
   "year": "",
@@ -56536,6 +56616,33 @@
   "spine_src": "drop-unkeyed"
  },
  {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Animation Writing and Development, From Script Development to Pitch (Focal Press Visual Effects and Animation)",
+  "authors": [
+   "Jean Ann Wright"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Animation Writing and Development, From Script Development to Pitch (Focal Press Visual Effects and Animation) (Jean Ann Wright) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
   "zid": 1176,
   "zkey": "K6LGVRVE",
   "type": "loose-attachment",
@@ -57224,11 +57331,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Articulating Design Decisions Communicate with Stakeholders, Keep Your Sanity, and Deliver the Best User Experience, 2nd (Tom Greever)",
+  "title": "Articulating Design Decisions Communicate with Stakeholders, Keep Your Sanity, and Deliver the Best User Experience, 2nd",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Tom Greever"
   ],
   "year": "",
   "publisher": "",
@@ -61695,11 +61800,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Book Architecture How to Plot and Outline Without Using a Formula (Stuart Horwitz)",
+  "title": "Book Architecture How to Plot and Outline Without Using a Formula",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Stuart Horwitz"
   ],
   "year": "",
   "publisher": "",
@@ -68705,11 +68808,10 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Clockwork Game Design (Burgun, Keith)—",
+  "title": "Clockwork Game Design",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Burgun",
+   "Keith"
   ],
   "year": "",
   "publisher": "",
@@ -73686,8 +73788,11 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "DD Player’s Handbook (Wizards RPG Team, James Wyatt etc.)—",
-  "authors": [],
+  "title": "DD Player’s Handbook",
+  "authors": [
+   "Wizards RPG Team",
+   "James Wyatt etc."
+  ],
   "year": "",
   "publisher": "",
   "isbn": "",
@@ -74792,11 +74897,11 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Design to Value The Architecture of Holistic Design and Creative Technology (Mark Bryden, John Dyson, Jaimie Johnston etc.)",
+  "title": "Design to Value The Architecture of Holistic Design and Creative Technology",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Mark Bryden",
+   "John Dyson",
+   "Jaimie Johnston etc."
   ],
   "year": "",
   "publisher": "",
@@ -103900,11 +104005,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Fiction Formula Plotting (Deborah Chester)",
+  "title": "Fiction Formula Plotting",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Deborah Chester"
   ],
   "year": "",
   "publisher": "",
@@ -110493,11 +110596,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Grand Finales The Perfect Ending (Screenwriting Blue Books Book 16) (William C. Martell)—",
+  "title": "Grand Finales The Perfect Ending (Screenwriting Blue Books Book 16)",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "William C. Martell"
   ],
   "year": "",
   "publisher": "",
@@ -117918,6 +118019,33 @@
   "modified": "2026-09-23",
   "src": "drop",
   "spine_src": "drop-unkeyed"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "How to Create History An Authors Guide to Creating Histories, Myths, and Monsters",
+  "authors": [
+   "A. Trevena"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\How to Create History An Authors Guide to Creating Histories, Myths, and Monsters (A. Trevena) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
  },
  {
   "zid": 3139,
@@ -148810,11 +148938,7 @@
   "zkey": "",
   "type": "drop",
   "title": "Narrative Sequence in Contemporary Narratology (Raphaël Baroni, Françoise Revaz (eds.))",
-  "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
-  ],
+  "authors": [],
   "year": "",
   "publisher": "",
   "isbn": "",
@@ -152773,11 +152897,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Outlines And The Thematic Method (Screenwriting Blue Books Book 2) (William C. Martell)B078BR44DB",
+  "title": "Outlines And The Thematic Method (Screenwriting Blue Books Book 2)",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "William C. Martell"
   ],
   "year": "",
   "publisher": "",
@@ -161978,6 +162100,33 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
+  "title": "Photoplay plot encyclopedia an analysis of the use in photoplays of the thirty-six dramatic situations and their subdivisions.…",
+  "authors": [
+   "Palmer Frederick"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Photoplay plot encyclopedia an analysis of the use in photoplays of the thirty-six dramatic situations and their subdivisions.… (Palmer Frederick) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
   "title": "Pirates of the Inner Sea",
   "authors": [],
   "year": "",
@@ -163297,11 +163446,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Plotting A Fantasy Novel Learn Elements of Plot and Structure, Outlining Scenes, Outlining Chapters, and Create a Compelling… (Tasha Dunn)B09JKW6TB9",
+  "title": "Plotting A Fantasy Novel Learn Elements of Plot and Structure, Outlining Scenes, Outlining Chapters, and Create a Compelling…",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Tasha Dunn"
   ],
   "year": "",
   "publisher": "",
@@ -163314,6 +163461,35 @@
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Plotting A Fantasy Novel Learn Elements of Plot and Structure, Outlining Scenes, Outlining Chapters, and Create a Compelling… (Tasha Dunn)B09JKW6TB9 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Plotting and writing suspense fiction",
+  "authors": [
+   "Highsmith",
+   "Patricia",
+   "1921-"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Plotting and writing suspense fiction (Highsmith, Patricia, 1921-)— (z-library.sk, 1lib.sk, z-lib.sk).pdf",
   "annotations": 0,
   "notes": [],
   "bvx": null,
@@ -168395,36 +168571,6 @@
   "spine_src": "drop-unkeyed"
  },
  {
-  "zid": null,
-  "zkey": "",
-  "type": "drop",
-  "title": "Porn Work Sex, Labor, and Late Capitalism (Heather Berg)",
-  "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
-  ],
-  "year": "",
-  "publisher": "",
-  "isbn": "",
-  "pages": "",
-  "abstract": false,
-  "tags": [],
-  "collections": [],
-  "spine": [],
-  "has_pdf": true,
-  "pdf_exists": true,
-  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Porn Work Sex, Labor, and Late Capitalism (Heather Berg)9781469661919 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-  "annotations": 0,
-  "notes": [],
-  "bvx": null,
-  "subject": null,
-  "added": "2026-09-23",
-  "modified": "2026-09-23",
-  "src": "drop",
-  "spine_src": "drop-unkeyed"
- },
- {
   "zid": 967,
   "zkey": "BQ7EDU72",
   "type": "loose-attachment",
@@ -169656,11 +169802,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Project Management with AI For Dummies (4th edition) (Daniel Stanton)",
+  "title": "Project Management with AI For Dummies (4th edition)",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Daniel Stanton"
   ],
   "year": "",
   "publisher": "",
@@ -188893,6 +189037,33 @@
   "spine_src": "drop-unkeyed"
  },
  {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Scene Secrets",
+  "authors": [
+   "William C. Martell"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Scene Secrets (William C. Martell)— (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
   "zid": 1367,
   "zkey": "47WYFYIJ",
   "type": "loose-attachment",
@@ -189859,11 +190030,11 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Secrets Of Story (Martell, William, C)—",
+  "title": "Secrets Of Story",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Martell",
+   "William",
+   "C"
   ],
   "year": "",
   "publisher": "",
@@ -190413,11 +190584,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Sex Work, Labour, and Empowerment Lessons from the Informal Entertainment Sector in Nepal (Sutirtha Sahariah)",
+  "title": "Sex Work, Labour, and Empowerment Lessons from the Informal Entertainment Sector in Nepal",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Sutirtha Sahariah"
   ],
   "year": "",
   "publisher": "",
@@ -192423,8 +192592,10 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "Shots — Simone Classics (Petter Hegre)—",
-  "authors": [],
+  "title": "Shots — Simone Classics",
+  "authors": [
+   "Petter Hegre"
+  ],
   "year": "",
   "publisher": "",
   "isbn": "",
@@ -212578,6 +212749,34 @@
   "spine_src": "drop-unkeyed"
  },
  {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "The 36 dramatic situations for film",
+  "authors": [
+   "Figgis",
+   "Mike"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\The 36 dramatic situations for film (Figgis, Mike) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
   "zid": 3123,
   "zkey": "2FUNJNDZ",
   "type": "book",
@@ -213608,11 +213807,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "The Cores of Game Design Mechanics, Economics, Narrative, and Aesthetics (Yvens R. Serpa)",
+  "title": "The Cores of Game Design Mechanics, Economics, Narrative, and Aesthetics",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Yvens R. Serpa"
   ],
   "year": "",
   "publisher": "",
@@ -217790,11 +217987,10 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "The Guide On Sex Education And Sexual Intelligence How To Come As You Are, Sex Book For Women And Men. The She Comes First… (Le Grand, Paul)—",
+  "title": "The Guide On Sex Education And Sexual Intelligence How To Come As You Are, Sex Book For Women And Men. The She Comes First…",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Le Grand",
+   "Paul"
   ],
   "year": "",
   "publisher": "",
@@ -218804,11 +219000,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving (Barbara Minto)",
+  "title": "The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Barbara Minto"
   ],
   "year": "",
   "publisher": "",
@@ -221744,11 +221938,9 @@
   "zid": null,
   "zkey": "",
   "type": "drop",
-  "title": "The Space of Sex The Porn Aesthetic in Contemporary Film and Television (Shelton Waldrep)",
+  "title": "The Space of Sex The Porn Aesthetic in Contemporary Film and Television",
   "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
+   "Shelton Waldrep"
   ],
   "year": "",
   "publisher": "",
@@ -223501,6 +223693,87 @@
   "added": "",
   "modified": "",
   "src": "zotero-loose"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Time and Narrative, Vol. 2",
+  "authors": [
+   "Paul Ricoeur"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Time and Narrative, Vol. 2 (Paul Ricoeur) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Time and Narrative, Vol. 3",
+  "authors": [
+   "Paul Ricoeur"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Time and Narrative, Vol. 3 (Paul Ricoeur) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
+ },
+ {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "Time and Narrative, Volume 1",
+  "authors": [
+   "Paul Ricœur"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Time and Narrative, Volume 1 (Paul Ricœur) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": null,
+  "subject": null,
+  "added": "2026-09-23",
+  "modified": "2026-09-23",
+  "src": "drop"
  },
  {
   "zid": null,
@@ -234485,36 +234758,6 @@
   "has_pdf": true,
   "pdf_exists": true,
   "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Wordcasting Ent - Pugilist.pdf",
-  "annotations": 0,
-  "notes": [],
-  "bvx": null,
-  "subject": null,
-  "added": "2026-09-23",
-  "modified": "2026-09-23",
-  "src": "drop",
-  "spine_src": "drop-unkeyed"
- },
- {
-  "zid": null,
-  "zkey": "",
-  "type": "drop",
-  "title": "Working It Sex Workers on the Work of Sex (Matilda Bickers, Peech Breshears etc.)",
-  "authors": [
-   "z-library.sk",
-   "1lib.sk",
-   "z-lib.sk"
-  ],
-  "year": "",
-  "publisher": "",
-  "isbn": "",
-  "pages": "",
-  "abstract": false,
-  "tags": [],
-  "collections": [],
-  "spine": [],
-  "has_pdf": true,
-  "pdf_exists": true,
-  "pdf": "C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP\\Working It Sex Workers on the Work of Sex (Matilda Bickers, Peech Breshears etc.)9781629639918 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
   "annotations": 0,
   "notes": [],
   "bvx": null,
