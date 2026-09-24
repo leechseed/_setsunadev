@@ -1,0 +1,441 @@
+{
+ "bolo": {
+  "n": 81,
+  "title": "Narrative invariants and pushbacks — the constraint layer through every system",
+  "trunk": "BOTH",
+  "issued": "2026-09-24",
+  "asof": "2026-09-24",
+  "s": "open",
+  "status": "🟡 **BORESIGHT 9/24** — calls out · **gates BOLO 77** (9/24) · **DISTILL LANDED 9/24** (`_tools/bolostatus/work/81/DISTILL.md` 22-row register, 5 contradictions · `NNI-INDEX.md` 47 works / 188 invariants, script-counted)",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "the Scale Ladder's completion-test clause (every rung's test ends \"…and no in-scope invariant is breached\") · the Collision Engine's L12×S12 row · the character system's `narrative_invariant` field · the Setting System's S12 field and the scene-card `invariants:` line · BOLO 77's scene wave, gated on this register landing",
+  "related": [
+   {
+    "n": 18,
+    "why": "Before this BOLO had its own row, the invariant work rode here — BOLO 81's own row says so: \"No dedicated row existed (it rode BOLO 50 phase 5, BOLO 25, BOLO 18).\" The spine sweep's library shelves and distills are the corpus the constraint layer's census draws federated invariant sets from."
+   },
+   {
+    "n": 25,
+    "why": "Also named as a row this work rode before getting its own line. DOCTRINE 0 was ratified \"same breath\" as this row's project-flow ruling on 2026-09-03 — the ratification the whole constraint layer now stands on."
+   },
+   {
+    "n": 50,
+    "why": "Also ridden before this BOLO had its own row. Phase 5 of the standards campaign seeded the three standards-body S12 invariants — DCUS, Trash Land, ASTRO7EX — all RULED KEEP 2026-09-15, and all three now sit in BOLO 81's register (DISTILL.md §4)."
+   },
+   {
+    "n": 77,
+    "why": "Gated on this BOLO (and BOLO 80): row 77's own status reads \"the scenes wait for the theme system and the invariants register.\" Nothing in the plot system — fabula, trope graph, or syuzhet — carries an `invariant` or `narrative_invariant` field yet (DISTILL.md §6)."
+   },
+   {
+    "n": 80,
+    "why": "Opened the same day as this BOLO's boresight and gates the same row 77 alongside it. The theme system's L6 branch already names \"the invariants join — `cost_and_meaning` is theme with enforcement teeth (the Law)\" — a seam pointed at, not yet built (DISTILL.md §6)."
+   }
+  ],
+  "home": "BOLO.md · row 81",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Chief asked for the boresight on invariants and pushbacks 9/24; the full distill — DOCTRINE 0 verbatim, four wires, a 22-row register, 5 contradictions — landed the same day."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One register, not four scattered restatements. Every invariant this operation has ever written — doctrine, movement, place, character, scene — sits in one table (DISTILL.md §4), and the un-migrated shelf is indexed, not re-distilled, per Chief's own order."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "The old PS header claimed 49 works × 4 invariants = 196. A script re-counted the actual files and found 47 works, 188 invariants — the comfortable round number was dropped for the real one."
+  }
+ ],
+ "frago": {
+  "mission": "Gather every narrative invariant and pushback into one register and wire it through every system, **in order to** make every scene, character and place answerable to the same few rules.",
+  "order": "**Rule the calls below** (one word: \"all recs\"; 81-J is yours alone). Then the register builds first, about 1 hour.",
+  "default": "Silence: nothing builds; BOLO 77 stays gated.",
+  "calls": [
+   {
+    "q": "81-A · What do we call a rule the story can never break?",
+    "options": "Tenet · Law · General Order · Standing Order · keep \"invariant\"",
+    "default": "Tenet (rec): \"Law\" collides with the Administration's in-world Ecclesial Laws",
+    "s": "open"
+   },
+   {
+    "q": "81-B · Bring the three pushbacks into canon?",
+    "options": "yes, as drafts, with their own rule that no one character speaks all three · leave them in the old notes",
+    "default": "yes, as drafts (rec)",
+    "s": "open"
+   },
+   {
+    "q": "81-C · The 47 old reference studies (188 rules)",
+    "options": "list each in one line (already done in NNI-INDEX.md) · rewrite each as a canon entry · leave them",
+    "default": "the one-line list stands (rec); rewrite none",
+    "s": "open"
+   },
+   {
+    "q": "81-D · Put an invariants field on the plot system?",
+    "options": "yes: the plot card and every fabula event name the rule they test · no",
+    "default": "yes (rec): today only the scene cards carry it, three different ways",
+    "s": "open"
+   },
+   {
+    "q": "81-E · A checking script?",
+    "options": "yes: flags a scene that tests no rule, or breaks one without a pushback · no",
+    "default": "yes (rec)",
+    "s": "open"
+   },
+   {
+    "q": "81-F · Fix the four stale records?",
+    "options": "yes: four files still say DOCTRINE 0 awaits ratification (it was ratified 9/3) · no",
+    "default": "yes (rec): mechanical",
+    "s": "open"
+   },
+   {
+    "q": "81-G · Where do the rules live?",
+    "options": "one register doc, ssot_01_invariants_register.md · spread across the systems as now",
+    "default": "one register (rec)",
+    "s": "open"
+   },
+   {
+    "q": "81-H · Tori's three unfiled rules",
+    "options": "add truth_is_exploit · merit_to_control · optionlock_not_timelock to her character sheet (ratified in the ingest, never filed) · leave",
+    "default": "add them (rec)",
+    "s": "open"
+   },
+   {
+    "q": "81-I · Trash Land's two candidate rules (matter vs. people)",
+    "options": "merge into one, the ruled-KEEP one leads · keep both",
+    "default": "merge, the ruled one leads (rec)",
+    "s": "open"
+   },
+   {
+    "q": "81-J · The Ecclesial Laws: whose are they?",
+    "options": "the school's only (as wired now) · the whole world's (the Administration governs everywhere)",
+    "default": "your call: canon doesn't say; wired as the school's until you rule",
+    "s": "open"
+   },
+   {
+    "q": "81-K · Six Movements: two sources label the six slots differently",
+    "options": "the dedicated Six Movements doc wins · the other source wins",
+    "default": "the dedicated doc wins (rec)",
+    "s": "open"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where the invariant question stands: what Chief asked for 9/24, what already existed before anyone looked, and what the distill found when it did.",
+   "strand": {
+    "last": "The constraint layer grew piecemeal for a year — a doctrine here, a per-character set there, three standards-body rulings on 9/15 — with no row of its own and no single place holding all of it.",
+    "plan": "Recon the whole record in one pass, put the boresight to Chief, then write one register that holds every invariant the operation has written and points at (without duplicating) the un-migrated Joplin shelf.",
+    "you": "Asked for the boresight 9/24: \"the invariant system … needs to be something that goes through all of it.\"",
+    "next": "Seven open calls (§8 of the distill) wait on your ruling — name the thing, decide the pushbacks' fate, wire the seams, build a checker."
+   },
+   "groups": [
+    {
+     "label": "The transmission · 9/24, Chief's words",
+     "items": [
+      {
+       "t": "\"the invariant system … needs to be something that goes through all of it … give me the boresight on narrative invariants, narrative pushbacks, and all the things that we've done for those.\"",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "What already existed, before this pass looked",
+     "items": [
+      {
+       "t": "DOCTRINE 0 — the Seven meta-rules — RATIFIED 2026-09-03 (Chief: \"doctrine zero is good\"); the rename of the word \"invariant\" itself (Tenet / Ethos bench) stayed open.",
+       "s": "held"
+      },
+      {
+       "t": "The constraint layer wired into four live mechanisms on 2026-08-25: the Scale Ladder's completion tests, the Collision Engine's L12×S12 row, the character system's `narrative_invariant` field, and the Setting System's S12 cells.",
+       "s": "held"
+      },
+      {
+       "t": "Three place-scoped S12 invariants (DCUS · Trash Land · ASTRO7EX) RULED KEEP 2026-09-15; `cost_and_meaning` LOCKED on the OXO storyform as Tori's story-level invariant.",
+       "s": "held"
+      },
+      {
+       "t": "Row 9's scene card checks six sources against its invariants — the one instance where the field is fully used.",
+       "s": "held"
+      },
+      {
+       "t": "Three pushbacks — Effectiveness Without Fairness · The Mirror of Participation · Interior Ownership of Choice — named once, on this BOLO's own boresight row, and otherwise live only in the un-migrated Joplin import.",
+       "s": "open"
+      },
+      {
+       "t": "A ~48-work NNI inspiration shelf (film, TV, anime, games, each carrying four \"non-negotiable invariants\") sat in the Joplin import, never migrated into canon.",
+       "s": "open"
+      },
+      {
+       "t": "No field for invariants anywhere in the plot system (fabula, trope graph, syuzhet), no theme document at all, and no script anywhere that checks a card, character, or place against its declared invariants.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "What the distill found, landed 9/24",
+     "items": [
+      {
+       "t": "The NNI shelf's real count, script-extracted: 47 works with a Defined-Invariants section, 188 invariants total, six methodology/systems files with none — correcting the old PS header's 49×4=196 (`NNI-INDEX.md` §8, Summary Counts).",
+       "s": "done"
+      },
+      {
+       "t": "Four stale records still say DOCTRINE 0 \"awaits ratification\" though it was ratified 2026-09-03 and never corrected: the spine tree, the modern-poetics doc, and STATE.md twice (DISTILL.md §6).",
+       "s": "open"
+      },
+      {
+       "t": "The story-level schema is thinner than its own source — the L12 field holds one invariant (`cost_and_meaning`) where its cited derivation defines four; three (`truth_is_exploit`, `merit_to_control`, `optionlock_not_timelock`) are locked per source but have no schema home (DISTILL.md §6).",
+       "s": "open"
+      },
+      {
+       "t": "Five contradictions found and named (DISTILL.md §7): the two Six-Movement sources disagree on four of six movement labels; the schema-vs-source gap on Tori's invariants; \"Ecclesial Laws\" claimed both place-scoped and IP-wide in different documents; two unmerged Trash Land S12 candidates; the rename ruling's own status stated three different ways across documents.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "",
+   "kind": "",
+   "plain": "A mission is a task plus the reason for it. This one's reason: the rules the story can never break exist in pieces across a dozen files and the old notes, and nothing checks a scene against them.",
+   "strand": {
+    "last": "9/24: Chief asked for the whole picture on invariants and pushbacks; it was distilled the same day (22 rules in canon, 188 more in the old reference studies, 5 contradictions).",
+    "plan": "One register that holds every rule and every pushback, wired into every system, with a script that checks scenes against it.",
+    "you": "You said the rules layer has to go through all of it, and gated BOLO 77 on it.",
+    "next": "Your word on the calls below; then the register is built first (about 1 hour)."
+   },
+   "task": "Gather every narrative invariant and pushback into one register and wire it through every system,",
+   "intent": "in order to make every scene, character and place answerable to the same few rules, checked by a script, not by memory.",
+   "spoken": "\"The invariant system … needs to be something that goes through all of it … give me the boresight on narrative invariants, narrative pushbacks, and all the things that we've done for those.\"",
+   "endstate": [
+    "One register doc: every invariant with what it forbids, its owner, its status; the three pushbacks beside them.",
+    "Every system carries the field: character (L12), setting (S12), plot card, fabula events, scene cards.",
+    "A checking script that flags any scene breaking a rule without a pushback.",
+    "The stale records fixed; BOLO 77's scenes ungated."
+   ],
+   "groups": []
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Recon the whole record, put the boresight to Chief, build the one register, index the shelf that stays un-migrated — in that order.",
+   "strand": {
+    "last": "The constraint layer had four live wires and a dozen scattered invariant sets, but no single document holding all of them.",
+    "plan": "Recon first (zero-token, read before write), then the boresight, then the distill as the one register, then the companion index for the shelf Chief said not to distill.",
+    "you": "Named this BOLO's boresight 9/24 and, per its order, kept the NNI shelf to an index rather than a second full distill.",
+    "next": "The seven open calls (§8) wait on your ruling before any seam gets wired or any checker gets built."
+   },
+   "main_effort": "The seven open calls from the distill (§8) — awaiting Chief's ruling.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Recon delivered** — no dedicated row existed before this one; the on-record wiring, the row-9 card, the un-migrated pushbacks, and the never-migrated NNI shelf all surfaced in one pass; boresight put to Chief.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 1,
+     "t": "**DISTILL.md landed** — DOCTRINE 0's Seven verbatim, the four wires as wired (file:line), the 22-row register of every invariant written so far, the seams not wired, five contradictions, seven open calls.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 2,
+     "t": "**NNI-INDEX.md landed** (companion, per Chief's order to index rather than distill) — 65 files read, 47 works / 188 invariants script-counted, the three pushbacks documented in full with structural properties and speaker rules.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 3,
+     "t": "**Seven open calls wait on Chief** — the name (Tenet/Ethos), the pushbacks' migration into canon, wiring the seams (plot, theme, the schema fields), a checker script, fixing four stale records, and keeping this register current going forward.",
+     "s": "open",
+     "when": "next"
+    }
+   ],
+   "coord": [
+    "Handshake owed both ways with BOLO 77 and BOLO 80: both rows are gated on this register landing, and this register's own open call 4 (\"wire the seams\") cannot close until the plot docs and the theme doc exist to be wired into."
+   ],
+   "running": [],
+   "groups": [
+    {
+     "label": "Hot · 9/24",
+     "items": [
+      {
+       "t": "DISTILL.md and NNI-INDEX.md both landed the same day the boresight went out; the seven open calls are the only thing still moving on this row.",
+       "s": "hot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What this pass read and wrote, and where the four live wires actually sit in canon.",
+   "strand": {
+    "last": "The constraint layer's evidence was scattered across a doctrine file, three SSOT documents, one scene card, and an un-migrated Joplin folder.",
+    "plan": "Read every wire at its file:line, write one register that cites all of them, and leave the un-migrated shelf indexed rather than duplicated.",
+    "you": "Ordered the shelf indexed, not distilled, keeping this pass to what the register actually needs.",
+    "next": "Nothing more is bought until the seven open calls are ruled."
+   },
+   "files": [
+    {
+     "path": "_tools/bolostatus/work/81/sources.md",
+     "what": "the row's full transmission plus the five rows this BOLO names (18, 25, 50, 77, 80)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/81/DISTILL.md",
+     "what": "the canon distill — DOCTRINE 0 verbatim, the four wires, the 22-row invariant register, seams not wired, 5 contradictions, seven open calls",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/81/NNI-INDEX.md",
+     "what": "the old Joplin NNI shelf indexed — 47 narrative works, 188 invariants (script-counted 9/24, correcting the PS header's 49×4=196), plus the three pushbacks documented in full",
+     "s": "done"
+    },
+    {
+     "path": "DOCTRINE-0-INVARIANTS.md",
+     "what": "the Seven meta-rules, RATIFIED 2026-09-03; the open name bench (Tenet ⭐ / Ethos ⭐ leading, seven other candidates tabled)",
+     "s": "held"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_scale_ladder.md",
+     "what": "the ladder's constraint check — every rung's completion test carries the implicit clause \"…and no in-scope invariant is breached\"",
+     "s": "held"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_collision_engine.md",
+     "what": "the collision engine's L12×S12 row wiring `cost_and_meaning`, and the output contract naming the scene card's invariants line",
+     "s": "held"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md",
+     "what": "the character system's L12 FUNCTION field, `narrative_invariant: cost_and_meaning`",
+     "s": "held"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "what": "the setting system's S12 field and the scene-card `invariants:` template line; the DCUS Ecclesial Laws instance",
+     "s": "held"
+    },
+    {
+     "path": "_CANON_NODES/oxo-scene-card-M2-row9.md",
+     "what": "the one scene card with a full six-check `invariants:` line — the other two extant cards wire the field inconsistently or not at all",
+     "s": "held"
+    }
+   ],
+   "cost": [
+    {
+     "k": "register size",
+     "v": "22 rows, every invariant written so far across doctrine / universe / story / movement / place / character / scene scopes (DISTILL.md §4)"
+    },
+    {
+     "k": "contradictions found",
+     "v": "5, named and file:line-cited (DISTILL.md §7)"
+    },
+    {
+     "k": "NNI shelf, script-counted",
+     "v": "47 works with a Defined-Invariants section, 188 invariants; 6 methodology/systems files carry none (NNI-INDEX.md §8)"
+    },
+    {
+     "k": "files read for the index",
+     "v": "65 total — 5 methodology, 50 narrative-work entries, 6 systems-thinking studies, 6 handoff sources, 2 pushback documents (NNI-INDEX.md, Summary Counts)"
+    }
+   ],
+   "groups": []
+  },
+  {
+   "id": "C",
+   "name": "",
+   "kind": "",
+   "plain": "Who calls what on BOLO 81.",
+   "strand": {
+    "last": "Nothing ruled yet; the distill landed 9/24.",
+    "plan": "You rule scope and canon; Claude builds and checks with a script.",
+    "you": "You are the only decider on canon: nobody invents a rule or a theme line for OXO.",
+    "next": "The calls below, each with a rec and a silence default."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — scope, names, canon facts. **Claude** — the schema, the drafts, the checks; adds no canon the sources don't state.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**RANGE is a script**: every claim cites a file and line; the build stops on a bad cite.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "Say **\"all recs\"** or rule by call letter; **\"go 81\"** starts the build; **\"FRAGO 81\"** pushes a change.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on the invariant question, from the first order to the two distills landing.",
+   "strand": {
+    "last": "Both distills landed the same day the boresight went out.",
+    "plan": "One entry per transmission.",
+    "you": "One is yours; the rest are recon, the two distills, and this sheet reporting back.",
+    "next": "The seven open calls wait on your word."
+   },
+   "entries": [
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"the invariant system … needs to be something that goes through all of it … give me the boresight on narrative invariants, narrative pushbacks, and all the things that we've done for those.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Recon delivered same turn: no dedicated row existed (it rode BOLO 50 phase 5, BOLO 25, BOLO 18); on-record findings surfaced — DOCTRINE 0 ratified 9/3, the constraint layer wired 8/25, `cost_and_meaning` locked, row 9's card tests six, pushbacks live only in the un-migrated Joplin import, the ~48-work NNI shelf never migrated, no plot-system field, no theme doc, no checking script. Boresight put to Chief."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "DISTILL.md landed: DOCTRINE 0's Seven verbatim, the four wires as wired (file:line), the 22-row register, seams not wired, five contradictions, seven open calls."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "NNI-INDEX.md landed (companion, per order to index rather than distill the shelf): 65 files read, the real count script-extracted at 47 works / 188 invariants, correcting the PS header's 49×4=196; the three pushbacks documented in full."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "BOLO row 81 marked \"gates BOLO 77\" — row 77's scene wave explicitly waits on this register and on BOLO 80's theme doc before it resumes."
+    }
+   ]
+  }
+ ]
+}
