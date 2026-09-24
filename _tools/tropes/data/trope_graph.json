@@ -939,7 +939,7 @@
    "name": "Absentation",
    "def": "A member of a family absents himself from home (work, war, trade, or death), removing a protective presence.",
    "cite": "Propp 1968: p.26",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 1
@@ -951,7 +951,7 @@
    "name": "Interdiction",
    "def": "An interdiction or warning is addressed to the hero, telling him what not to do.",
    "cite": "Propp 1968: p.26",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 1
@@ -963,7 +963,7 @@
    "name": "Violation",
    "def": "The interdiction is violated, opening the way for the villain to act.",
    "cite": "Propp 1968: p.27",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 0
@@ -975,7 +975,7 @@
    "name": "Reconnaissance",
    "def": "The villain attempts reconnaissance, trying to find the location of children or valuables, or seeking out his victim.",
    "cite": "Propp 1968: p.28",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 9
@@ -987,7 +987,7 @@
    "name": "Delivery",
    "def": "The villain receives information about his victim, often because the victim unwittingly answers his questions.",
    "cite": "Propp 1968: p.28",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 2
@@ -999,7 +999,7 @@
    "name": "Trickery",
    "def": "The villain attempts to deceive his victim in order to take possession of the victim or his belongings.",
    "cite": "Propp 1968: p.29",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 10
@@ -1011,7 +1011,7 @@
    "name": "Complicity",
    "def": "The victim submits to deception and thereby unwittingly helps his enemy.",
    "cite": "Propp 1968: p.30",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 1
@@ -1023,7 +1023,7 @@
    "name": "Villainy",
    "def": "The villain causes harm or injury to a member of a family: abduction, theft, injury, or murder; a paired alternate form is simple lack.",
    "cite": "Propp 1968: p.30",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
    "tropes": 12
@@ -1035,7 +1035,7 @@
    "name": "Mediation, the connective incident",
    "def": "Misfortune or lack is made known; the hero is approached with a request or command, and is allowed to go or is dispatched.",
    "cite": "Propp 1968: p.36",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "cam.01_call_to_adventure",
@@ -1050,7 +1050,7 @@
    "name": "Beginning Counteraction",
    "def": "The seeker-hero agrees to, or decides upon, counteraction against the villain.",
    "cite": "Propp 1968: p.38",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
    "tropes": 6
@@ -1062,7 +1062,7 @@
    "name": "Departure",
    "def": "The hero leaves home to begin the search or the journey proper.",
    "cite": "Propp 1968: p.39",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "cam.04_crossing_of_the_first_threshold",
@@ -1077,7 +1077,7 @@
    "name": "First Function of the Donor",
    "def": "The hero is tested, interrogated, or attacked, preparing the way for his receiving a magical agent or helper.",
    "cite": "Propp 1968: p.39",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "cam.03_supernatural_aid",
@@ -1092,7 +1092,7 @@
    "name": "The Hero's Reaction",
    "def": "The hero reacts to the actions of the future donor, passing or failing the test set for him.",
    "cite": "Propp 1968: p.42",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
    "tropes": 1
@@ -1104,7 +1104,7 @@
    "name": "Provision of a Magical Agent",
    "def": "The hero acquires the use of a magical agent, received as a gift, made, purchased, or otherwise obtained.",
    "cite": "Propp 1968: p.43",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "cam.03_supernatural_aid",
@@ -1119,7 +1119,7 @@
    "name": "Spatial Transference",
    "def": "The hero is transferred, delivered, or led to the whereabouts of the object of his search.",
    "cite": "Propp 1968: p.50",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
    "tropes": 3
@@ -1131,7 +1131,7 @@
    "name": "Struggle",
    "def": "The hero and the villain join in direct combat.",
    "cite": "Propp 1968: p.51",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "vog.08_the_ordeal"
@@ -1145,7 +1145,7 @@
    "name": "Branding",
    "def": "The hero is branded or marked, on the body or given an object, that will later identify him.",
    "cite": "Propp 1968: p.52",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
    "tropes": 0
@@ -1157,7 +1157,7 @@
    "name": "Victory",
    "def": "The villain is defeated, in open combat or by cleverness, sometimes with the villain hiding and a substitute punished instead.",
    "cite": "Propp 1968: p.53",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "vog.08_the_ordeal"
@@ -1171,7 +1171,7 @@
    "name": "Liquidation",
    "def": "The initial misfortune or lack is liquidated: the sought-for object is seized, a spell broken, or a captive freed.",
    "cite": "Propp 1968: p.53",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [
     "cam.11_the_ultimate_boon",
@@ -1186,7 +1186,7 @@
    "name": "Return",
    "def": "The hero returns home or continues onward, the beginning of the tale's second half.",
    "cite": "Propp 1968: p.55",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [
     "cam.13_the_magic_flight",
@@ -1201,7 +1201,7 @@
    "name": "Pursuit, chase",
    "def": "The hero is pursued by the villain or another threatening pursuer.",
    "cite": "Propp 1968: p.56",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 4
@@ -1213,7 +1213,7 @@
    "name": "Rescue of the Hero from Pursuit",
    "def": "The hero is rescued from pursuit, escaping the chase by aid, disguise, or obstacle.",
    "cite": "Propp 1968: p.57",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 0
@@ -1225,7 +1225,7 @@
    "name": "Unrecognized Arrival",
    "def": "The hero, unrecognized, arrives home or in another country.",
    "cite": "Propp 1968: p.60",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 2
@@ -1237,7 +1237,7 @@
    "name": "Unfounded Claims",
    "def": "A false hero presents unfounded claims to the reward or the object of the quest.",
    "cite": "Propp 1968: p.60",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 5
@@ -1249,7 +1249,7 @@
    "name": "Difficult Task",
    "def": "A difficult task is proposed to the hero, a further trial before recognition.",
    "cite": "Propp 1968: p.60",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 0
@@ -1261,7 +1261,7 @@
    "name": "Solution",
    "def": "The task is resolved by the hero.",
    "cite": "Propp 1968: p.62",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 0
@@ -1273,7 +1273,7 @@
    "name": "Recognition",
    "def": "The hero is recognized, usually by a mark, brand, or token left earlier.",
    "cite": "Propp 1968: p.62",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 1
@@ -1285,7 +1285,7 @@
    "name": "Exposure",
    "def": "The false hero or villain is exposed.",
    "cite": "Propp 1968: p.62",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 3
@@ -1297,7 +1297,7 @@
    "name": "Transfiguration",
    "def": "The hero is given a new appearance, a magical change of visible form.",
    "cite": "Propp 1968: p.62",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 2
@@ -1309,7 +1309,7 @@
    "name": "Punishment",
    "def": "The villain is punished.",
    "cite": "Propp 1968: p.63",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 4
@@ -1321,7 +1321,7 @@
    "name": "Wedding",
    "def": "The hero is married and/or ascends the throne.",
    "cite": "Propp 1968: p.63",
-   "bvx": null,
+   "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
    "tropes": 12

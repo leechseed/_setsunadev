@@ -1,7 +1,7 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.1
+version: 0.1.2
 last_updated: 2026-09-24
 applies_to: [OVEREXITOUT, EVIL CHECK, all future IPs]
 status: "v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
@@ -189,7 +189,7 @@ PS2's wave-1 extraction reads all twelve character layers against "What Is Stati
 | P3 `value`, `polarity_in` | The referenced event's state-before half of `transition` |
 | P4 `turn_mechanism` | The `cause` or `enable` edge linking the value-in event to the value-out event |
 | P5 `polarity_out`, `irony_flag` | The referenced event's state-after half of `transition` |
-| P6 `throughline`, `signpost_or_journey`, `act` | The event's position on THE WORLD CLOCK, read against the ladder's structural containers |
+| P6 `throughline`, `signpost_or_journey`, `act` | **Not from the fabula** (ruled 2026-09-24, plot doc call 15): P6 is seated by the trope graph's walk ([📐 ssot_04_trope_graph.md](📐%20ssot_04_trope_graph.md)). The fabula supplies only the event's `time` |
 | P7 `reveal_content`, `reveal_type` | An event whose `gap_type` was `logged`-but-untold surfaces here as the syuzhet's reveal |
 | P9 `stakes_delta` | The chain of `cause`/`enable` edges back to the prior fabula event in sequence — this is the fix for the plot doc's own flagged gap, "P9 needs a prior unit to compare against... nothing upstream carded yet" |
 | P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is this doc's `time` field on the referenced event; `order_told` stays the syuzhet doc's own field; the gap between them is classified as an anachrony (external, internal, or mixed analepsis; prolepsis) so the trope graph can reason about foreshadowing and reveal structure ([[BVX.0562]] does not cover this; Genette 1980: 48-53) |
@@ -357,3 +357,4 @@ causal_edges: []   # no stated causal edge to the crash's data-deletion mechanis
 
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 1, "go 77" ruled 2026-09-24. Built from three disjoint extractions: PS1 (syuzhet-side hooks, DCUS setting facts), PS2 (the twelve-layer origin-moment rule, the state architecture v1.0 gap, Tori's dated backstory), MS-T (the fabula/syuzhet/trope-graph theory digest, Bal/Chatman/Genette/Rimmon-Kenan/Wolf/Sternberg/Propp). Instance scoped to Tori only per the ruled default; EVIL CHECK's events reserved for wave 2; the state architecture v1.1 patch spec ships inside THE HANDSHAKE rather than in the state doc itself, pending OPEN call 6.
 - **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended (Tori-only instance · EVIL CHECK in wave 2 · `<movement>_<slug>` ids · DCUS eras cross-referenced · date by movement · the v1.1 patch shipped now). The patch landed in the state architecture v1.1.0: `origin_event` field, `state_diffs` parent, additive, `narrative_moment` kept.
+- **v0.1.2 (2026-09-24):** the HANDSHAKE P6 row re-pointed to the trope graph's walk (plot doc OPEN call 15, ruled).

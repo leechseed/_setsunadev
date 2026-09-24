@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1136
+next_id: BVX.1137
 ---
 
 # BVX-LEARN — master index
@@ -114,6 +114,7 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.1133` | Oliver — The Gooner's Handbook (2024) | L5 | 4 | ✅ 9/24 · 92 pp read whole | 7 (intake) |
 | `BVX.1134` | Smith, Grierson & von Doussa — Gay men's sex venues (2010) | SETTING | 4 | ✅ 9/24 · 287 Melbourne men; a contradiction in the source flagged | 7 (intake) |
 | `BVX.1135` | Parrish et al. — "No strings attached": vacation sex among GBM (2019) | SETTING | 4 | ✅ 9/24 · 46 interviews, three resort towns | 7 (intake) |
+| `BVX.1136` | Propp — Morphology of the Folktale (1968, Scott trans.) | L0 | 4 | 🟡 9/24 · minted for the trope graph (77-M); 31 functions read as nodes, no distill yet | 7 (intake) |
 
 Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
 

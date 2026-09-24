@@ -1,7 +1,7 @@
 ---
 type: ssot_04_trope_graph
 category: plot_system
-version: 0.1.0
+version: 0.1.1
 last_updated: 2026-09-24
 applies_to: [OVEREXITOUT, EVIL CHECK, all future IPs]
 status: "v0.1.0 draft — BOLO 77 wave 2, built from MS-N's 135 book nodes, PS-R's rails extraction, and the fetch.py/build_graph.py pipeline (RANGE-checked); workspace-view ruling (BOLO 79, HOI4-style focus tree on the rails) folded into THE HANDSHAKE"
@@ -220,10 +220,10 @@ Propp, Vogler, and Campbell weight toward the middle (their combined "middle" co
 
 **Worked example, real nodes only, MC throughline (I — the hero's journey from inside):**
 
-1. **Beginning — `vog.01_ordinary_world`.** The baseline before any call.
-2. **Beginning — `vog.02_call_to_adventure`** (same_as `cam.01_call_to_adventure`, `prp.09_mediation`). At this signpost, an any-phase Tobias/Schmidt node can attach as the *type* of call riding the structural beat — `tob.01_quest` (same_as `sch.17_daring_enterprise`, Schmidt's own text: "similar to a Quest") is a legitimate attachment here, because Quest is a whole-plot pattern, not a fixed-position one.
-3. **Middle — `vog.08_the_ordeal`** (same_as `cam.05_the_belly_of_the_whale`, `prp.16_struggle` + `prp.18_victory`). The walk cannot reach this signpost before signpost 2 resolved in the same throughline. `prp.16_struggle`'s own kept tropes (`BigBadassBattleSequence`, `CataclysmClimax`) are real dramatization content the walk can pull here.
-4. **End — `vog.12_return_with_the_elixir`** (same_as `cam.17_freedom_to_live`). The graph's own strongest pairs (above) show `tob.14_love` and `tob.20_descension` both link heavily into this node — a walk that carried a Love or Descension pattern earlier in the throughline has real cross-reference support for resolving it here, not an invented connection.
+1. **RULED 2026-09-24 (rec taken) · Beginning — `vog.01_ordinary_world`.** The baseline before any call.
+2. **RULED 2026-09-24 (rec taken) · Beginning — `vog.02_call_to_adventure`** (same_as `cam.01_call_to_adventure`, `prp.09_mediation`). At this signpost, an any-phase Tobias/Schmidt node can attach as the *type* of call riding the structural beat — `tob.01_quest` (same_as `sch.17_daring_enterprise`, Schmidt's own text: "similar to a Quest") is a legitimate attachment here, because Quest is a whole-plot pattern, not a fixed-position one.
+3. **RULED 2026-09-24 (rec taken) · Middle — `vog.08_the_ordeal`** (same_as `cam.05_the_belly_of_the_whale`, `prp.16_struggle` + `prp.18_victory`). The walk cannot reach this signpost before signpost 2 resolved in the same throughline. `prp.16_struggle`'s own kept tropes (`BigBadassBattleSequence`, `CataclysmClimax`) are real dramatization content the walk can pull here.
+4. **RULED 2026-09-24 (rec taken) · End — `vog.12_return_with_the_elixir`** (same_as `cam.17_freedom_to_live`). The graph's own strongest pairs (above) show `tob.14_love` and `tob.20_descension` both link heavily into this node — a walk that carried a Love or Descension pattern earlier in the throughline has real cross-reference support for resolving it here, not an invented connection.
 
 Four real signposts, one throughline, four acts — the fixed order the rail requires, with any-phase book content riding inside it rather than replacing it.
 
@@ -268,15 +268,18 @@ Four real signposts, one throughline, four acts — the fixed order the rail req
 
 ## OPEN
 
+**Calls 1–6 ruled 2026-09-24, Chief: "all recommendations."** Call 5 is done: Propp is minted **BVX.1136** and all 31 Propp nodes carry it. Call 3: the 352 high-confidence unkeyed tropes are out of scope for good; the 292 low-confidence ones wait for a second pass. Call 4 (OXO movements ↔ acts) is the next task on BOLO 77.
+
 1. **Seating each node on a signpost** — `phase` only carries `beginning`/`middle`/`end` (or `any`), not which of the 16 signposts (four per throughline) a node fills, so P6 cannot be set from the node record alone yet. Rec: once PS-R's gap-1 Movement↔Signpost table exists, layer it onto `phase` so every sequenced node resolves to one throughline-signpost address, not just a third of the story.
 2. **The 23 empty nodes** — ten Schmidt, five Propp, eight Campbell nodes have zero keyed tropes (Campbell is hit hardest, nearly half its 17 stages empty), leaving those cells in the workspace view without tooltip content. Rec: leave them bypassed-empty per H9 rather than force a low-confidence keying pass, and flag them for the next TV Tropes fetch round once the index grows.
 3. **The 644 unkeyed tropes** — 352 high-confidence "does not fit," 292 low-confidence "might fit a finer node," and neither group has a home in this wave's 135-node taxonomy. Rec: park the high-confidence 352 as out-of-scope permanently, hold the low-confidence 292 for a second keying pass once the graph's node set is proven stable, rather than re-running all 644 now.
 4. **OXO's movements-to-acts map** — PS-R's gap 1: OXO is told in six movements but the storyform has four signpost acts, and the plot doc's own M2 row-9 instance only guesses at the mapping, flagged as new inference. Rec: this is the single most load-bearing gap for THE WALK's worked examples to become OXO-specific rather than generic-journey; task it before any node is walked against an actual OXO scene.
-5. **Propp's missing BVX id** — every Propp node carries `bvx: null` because `catalog.json` has not re-run since the book's 9/24 acquisition into `_PDF_DROP`. Rec: re-run the catalog ingest and patch all 31 Propp node records with the resulting id in the next FRAGO to this doc, a mechanical fix once the ingest runs.
-6. **The 269 alt-carrying tropes** — a fifth of all keyed tropes flag a second plausible node, and this doc currently treats `alt` as a same-cell competition flag rather than a second graph edge. Rec: keep `alt` out of the edge count as built (it already is — build_graph.py only counts `node`, never `alt`), but surface it in the workspace view's tooltip as a visible "or:" line so a writer sees the contest, not just the winner.
+5. **RULED 2026-09-24 (rec taken) · Propp's missing BVX id** — every Propp node carries `bvx: null` because `catalog.json` has not re-run since the book's 9/24 acquisition into `_PDF_DROP`. Rec: re-run the catalog ingest and patch all 31 Propp node records with the resulting id in the next FRAGO to this doc, a mechanical fix once the ingest runs.
+6. **RULED 2026-09-24 (rec taken) · The 269 alt-carrying tropes** — a fifth of all keyed tropes flag a second plausible node, and this doc currently treats `alt` as a same-cell competition flag rather than a second graph edge. Rec: keep `alt` out of the edge count as built (it already is — build_graph.py only counts `node`, never `alt`), but surface it in the workspace view's tooltip as a visible "or:" line so a writer sees the contest, not just the winner.
 
 ---
 
 ## Version history
 
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 2. Built from MS-N's 135 book nodes (Tobias 20 · Schmidt 55 · Propp 31 · Campbell 17 · Vogler 12, 31 same_as edges), PS-R's rails extraction (16 signposts × 4 throughlines, OXO's eight dynamics, the twelve P-layers, six blocking gaps), and the fetch.py/build_graph.py pipeline (1,678 tropes fetched, 1,034 keyed, 644 unkeyed, 2,584 trope_link edges). Six OPEN calls, none yet ruled. Workspace-view handshake written against HOI4-FOCUS-TREE-STUDY.md §6 per BOLO 79's ruling that the graph draws as a focus tree, not a free network, by default.
+- **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended; Propp minted BVX.1136 and patched onto its 31 nodes; the graph rebuilt (counts unchanged).

@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-23",
   "asof": "2026-09-24",
-  "s": "hot",
-  "status": "🟢 fabula v0.1.1 + **trope graph v0.1.0 LANDED 9/24** (135 nodes · 1,034 of 1,678 tropes keyed · 2,584 links) — **\"go 77\": the syuzhet revision (wave 3) IN FLIGHT**; six trope-graph calls open",
+  "s": "open",
+  "status": "🟢 **all three plot docs stand** (fabula v0.1.2 · trope graph v0.1.1 · syuzhet v0.2.1) — every open call ruled 9/24; next: the OXO movements ↔ acts map (77-L)",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,8 +42,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**The syuzhet, wave 3: in flight.** Today's plot doc revised as the told path, reading the fabula for order and cause and the trope graph for the walk.",
-  "default": "Silence: the six trope-graph calls run on their recs (nodes seat on signposts after the movements map · empty nodes stay empty · 352 unkeyed dropped, 292 held · movements↔acts map next · Propp's id by the catalog rerun · alt shown as \"or:\" in the tooltip).",
+  "order": "**The OXO movements ↔ acts map (77-L).** Six movements onto the storyform's four signpost acts, so the walk can run against a real OXO scene. Fires on \"go 77\".",
+  "default": "Silence: the map waits; the workspace mockup (BOLO 79) builds on the provisional seating.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -105,37 +105,50 @@
     "q": "77-I · seat each node on a signpost",
     "options": "after the movements↔acts map · by phase now",
     "default": "after the map (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). Seat nodes after the movements map."
    },
    {
     "q": "77-J · the 23 empty nodes",
     "options": "leave empty, flagged · force a keying pass",
     "default": "leave empty (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). The 23 empty nodes stay empty, flagged."
    },
    {
     "q": "77-K · the 644 unkeyed tropes",
     "options": "drop 352, hold 292 · re-key all 644 now",
     "default": "drop 352, hold 292 (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). 352 dropped for good; 292 held for a second pass."
    },
    {
     "q": "77-L · OXO movements ↔ acts",
     "options": "task it next · later",
     "default": "task it next (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). The movements ↔ acts map is the next task."
    },
    {
     "q": "77-M · Propp's BVX id",
     "options": "catalog rerun + patch · leave null",
     "default": "rerun + patch (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED and DONE 2026-09-24. Propp minted BVX.1136, patched onto 31 nodes."
    },
    {
     "q": "77-N · alt nodes",
     "options": "tooltip \"or:\" line, not an edge · count as edges",
     "default": "tooltip only (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). Alt shows as an \"or:\" line in the tooltip, never an edge."
+   },
+   {
+    "q": "77-O · syuzhet calls 12–15",
+    "options": "recs · other",
+    "default": "recs",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). 15 done: the fabula P6 row now points to the walk. 12–14 queued: a sixth fabula event for row 9, a compressed/skipped-time unit, the first flashback scene."
    }
   ]
  },
@@ -345,9 +358,15 @@
     },
     {
      "n": 5,
-     "t": "**The syuzhet (wave 3)** — today's plot doc revised as the told path. IN FLIGHT on \"go 77\".",
-     "s": "hot",
+     "t": "**The syuzhet (wave 3)** — the plot doc revised in place to v0.2.0/0.2.1 as the told order: THE TOLD ORDER section (Genette, Sternberg), the plot card reads the fabula, M2 row 9 linked on P4/P7.",
+     "s": "done",
      "when": "9/24"
+    },
+    {
+     "n": 6,
+     "s": "open",
+     "when": "9/24",
+     "t": "**The OXO movements ↔ acts map (77-L)** — six movements onto four signpost acts; then seat every node."
     }
    ],
    "coord": [
@@ -622,6 +641,21 @@
      "when": "9/24",
      "who": "Chief",
      "t": "\"FRAGO 77, go 77, go 79.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "The syuzhet v0.2.0 landed; all three plot docs stand."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"All recommendations.\" Ten calls ruled."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Propp minted BVX.1136; the fabula P6 row re-pointed; both docs RANGE clean."
     }
    ]
   }

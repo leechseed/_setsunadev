@@ -1,7 +1,7 @@
 ---
 type: ssot_04_plot_systems
 category: plot_system
-version: 0.2.0
+version: 0.2.1
 last_updated: 2026-09-24
 applies_to: [OVEREXITOUT, all future IPs]
 status: "v0.2.0 2026-09-24: BOLO 77 wave 3. This document becomes the syuzhet, the told-order third of the three-doc plot system alongside ssot_04_fabula (world time) and ssot_04_trope_graph (the rails), ruled 2026-09-23 (Chief, \"all recs\"). New THE TOLD ORDER section; the PLOT CARD's P2/P3/P4/P5/P7/P9/P11 now read the fabula's own HANDSHAKE table, P6 reads the trope graph's walk; M2 row 9 linked to fabula event m2_grief_outbursts where the two docs match, left unlinked elsewhere; four new OPEN calls. v0.1.2 2026-09-16: the drop-folder intake folded in (Vogler, Brody, Aristotle), four OPEN calls added, slice unchanged. v0.1.1 RULED 2026-09-16 (Chief: \"plot go\", all seven OPEN calls as recommended): the twelve P-layer names are house coinage, the count holds at twelve, the PLOT CARD stays a sibling of the SCENE CARD; provisional a week like every ruling"
@@ -295,6 +295,8 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 
 ## OPEN
 
+**Calls 12–15 ruled 2026-09-24, Chief: "all recommendations."** Call 15 is done: the fabula doc's HANDSHAKE now routes P6 to the trope graph's walk. Calls 12–14 are queued work (a sixth fabula event for row 9 · a second plot unit that compresses or skips time · the first flashback or flash-forward scene).
+
 **RULED 2026-09-16 (Chief: "plot go"): all seven as recommended.** Kept below as the record; each item's *Recommendation* is now the ruling. Open work that survives the ruling: the Movement↔Signpost table (4) · carding row 9's earlier scenes (6) · OXO's genre ruling against the clover (7).
 
 1. **The twelve P-layer names** (ADDRESS through FUNCTION), house coinage, awaiting Chief's ruling, same status as the S-layer names. *Recommendation:* keep, each pairs one-to-one with a question a working writer actually asks.
@@ -313,13 +315,13 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 
 11. **The discovery ladder.** [[BVX.1126]] Ch.16's ranked [[anagnorisis|recognitions]], least artful (a scar) to best (from the actions themselves), reads as P7 REVEAL's own reveal-quality scale. *Recommendation:* a P7 sub-field at the next bump.
 
-12. **M2 row 9's remaining P-layers unlinked to a fabula event** — P2 DRIVER, P3 VALUE-IN, P5 VALUE-OUT, and P9 STAKES have no fabula `event_id` among Tori's five wave-1 events; none names a rating system, a "Verified" mechanic, or a reach-vs-pull-out choice. Rec: task a sixth fabula event for this exact moment before P9 STAKES gets used on a second card, matching the fabula doc's own OPEN call 6 ask for an upstream unit.
+12. **RULED 2026-09-24 (rec taken) · M2 row 9's remaining P-layers unlinked to a fabula event** — P2 DRIVER, P3 VALUE-IN, P5 VALUE-OUT, and P9 STAKES have no fabula `event_id` among Tori's five wave-1 events; none names a rating system, a "Verified" mechanic, or a reach-vs-pull-out choice. Rec: task a sixth fabula event for this exact moment before P9 STAKES gets used on a second card, matching the fabula doc's own OPEN call 6 ask for an upstream unit.
 
-13. **Duration and frequency modes need a second proof case** — THE TOLD ORDER's five duration modes and three frequency modes are only proven against row 9's `scene`/(borrowed) `iterative` pair; `summary`, `ellipsis`, `pause`, `stretch`, `singulative`, and `repetitive` have no worked instance yet. Rec: card a second plot unit that actually compresses or skips fabula time before trusting the full mode set.
+13. **RULED 2026-09-24 (rec taken) · Duration and frequency modes need a second proof case** — THE TOLD ORDER's five duration modes and three frequency modes are only proven against row 9's `scene`/(borrowed) `iterative` pair; `summary`, `ellipsis`, `pause`, `stretch`, `singulative`, and `repetitive` have no worked instance yet. Rec: card a second plot unit that actually compresses or skips fabula time before trusting the full mode set.
 
-14. **No worked anachrony yet** — every current instance (row 9) reads `anachrony.type: none`, order_told equals order_happened; the analepsis/prolepsis taxonomy is untested against a real reordered OXO scene. Rec: card the first flashback or flash-forward scene against this schema at the next bump, rather than leave the taxonomy theoretical.
+14. **RULED 2026-09-24 (rec taken) · No worked anachrony yet** — every current instance (row 9) reads `anachrony.type: none`, order_told equals order_happened; the analepsis/prolepsis taxonomy is untested against a real reordered OXO scene. Rec: card the first flashback or flash-forward scene against this schema at the next bump, rather than leave the taxonomy theoretical.
 
-15. **P6's fabula HANDSHAKE row now disagrees with the trope graph's anchor claim** — ssot_04_fabula.md's own HANDSHAKE table still routes P6 to "the event's position on THE WORLD CLOCK"; this document and ssot_04_trope_graph.md now route P6 to the trope graph's walk instead. Rec: FRAGO ssot_04_fabula.md's HANDSHAKE table to drop or re-point its P6 row, so only one doc claims the anchor.
+15. **RULED 2026-09-24 (rec taken) · P6's fabula HANDSHAKE row now disagrees with the trope graph's anchor claim** — ssot_04_fabula.md's own HANDSHAKE table still routes P6 to "the event's position on THE WORLD CLOCK"; this document and ssot_04_trope_graph.md now route P6 to the trope graph's walk instead. Rec: FRAGO ssot_04_fabula.md's HANDSHAKE table to drop or re-point its P6 row, so only one doc claims the anchor.
 
 ## Version history
 
@@ -330,3 +332,4 @@ Filled from [oxo-scene-card-M2-row9.md](../../../../_CANON_NODES/oxo-scene-card-
 - **0.1.1 · 2026-09-16** — the seven OPEN calls ruled as recommended ("plot go"); status provisional a week.
 
 - **0.1.0, 2026-09-16.** First plot_systems document, written on Chief's order (BOLO 18) from the L4 shelf's five distills: four-axis taxonomy, twelve-layer PLOT SLICE mirroring the character and setting stacks, PLOT CARD notation paired to the SCENE CARD, M2 row-9 instanced as proof. Layer names and count provisional pending Chief's ruling.
+- **v0.2.1 (2026-09-24):** calls 12–15 ruled as recommended; call 15 executed in the fabula doc.
