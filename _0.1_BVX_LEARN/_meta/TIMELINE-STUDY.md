@@ -55,34 +55,34 @@ Scope: **Heaven's Vault** (inkle, 2019), **Return of the Obra Dinn** (Lucas Pope
 
 ## 5. Translation to the story workspace
 
-**Dates, ranges, unknowns (from §1, §2).**
-- T1. Draw every fuzzy date as a **banded range** on the timeline axis, never a single guessed point: a translucent bar spanning the known bracket, matching HV's "180-350 years ago" era band. A caret/point mark appears only when a source states an exact date.
-- T2. An unknown span is its **own labeled band** (hatched or muted fill, its own hover text), not an empty stretch of axis — HV draws the Fall-of-Iox-to-Protectorate gap as a named era rather than omitting it.
-- T3. Eras render as coarser bands **underneath** individual events; the zoom control (T12) must be able to collapse to an era-only view, the way HV's seven eras read at large zoom-out before any individual date shows.
-- T4. Date-precision (T1's band width) and source-confidence (T9) are **two independent axes** — never conflate a wide date range with an unconfirmed fact, or a narrow range with a trusted one. HV keeps them separate: the era bands are structural, confidence is earned by rereading.
+**Dates, ranges, unknowns (§1, §2).**
+- T1. Draw every fuzzy date as a **banded range**, never a single guessed point: a translucent bar over the known bracket, matching HV's "180-350 years ago" era band. A point mark appears only when a source states an exact date.
+- T2. An unknown span is its **own labeled band** (hatched/muted fill, own hover text), not empty axis — HV draws the Fall-of-Iox gap as a named era rather than omitting it.
+- T3. Eras render as coarser bands **underneath** individual events; the zoom control (T12) must collapse to an era-only view, as HV's seven eras read at zoom-out before any single date shows.
+- T4. Date-precision (T1's band width) and source-confidence (T9) are **two independent axes** — never conflate a wide range with an unconfirmed fact. HV keeps them separate: eras are structural, confidence is earned by rereading.
 
 **Told order / two-track view — extends past the source games; no studied title draws this literally.**
-- T5. Give every scene a **stable two-part ID** before it has a world-time placement, the way Obra Dinn's watch hands address chapter.part — the told-order track is built from discrete scene IDs, not raw timestamps, because scenes (not seconds) are the reader's unit. [Synthesis — LOW as precedent, HIGH as an extension of a confirmed mechanic.]
-- T6. A jump line is a **navigable instrument**, not a one-way annotation: clicking it scrubs both tracks to the target and back — the workspace equivalent of Telling Lies' scrub, where moving backward is as likely to surface new information as moving forward.
-- T7. Keep the fabula/told-order toggle as **two saved views over one store**, switchable, never fused into a single diagram — confirming, via Outer Wilds' Map/Rumor split, the two-lens shape already ruled for this app rather than inventing a third hybrid view.
+- T5. Give every scene a **stable two-part ID** before its world-time placement, as Obra Dinn's watch hands address chapter.part — built from discrete scene IDs, not raw timestamps, since scenes (not seconds) are the reader's unit. [Synthesis — LOW as precedent, HIGH as extension of a confirmed mechanic.]
+- T6. A jump line is a **navigable instrument**, not a one-way annotation: clicking scrubs both tracks to the target and back — the workspace equivalent of Telling Lies' scrub, where backward is as likely to surface new information as forward.
+- T7. Keep the fabula/told-order toggle as **two saved views over one store**, switchable, never fused — confirming, via Outer Wilds' Map/Rumor split, the two-lens shape already ruled rather than inventing a hybrid.
 
-**Partial record / provenance (from §1, §2, §4).**
-- T8. Don't pre-draw the full timeline for an empty or half-built project: Obra Dinn's chapter map fills in only as fates are solved. The fabula view should start sparse and visibly thicken as events are entered — a layout constraint for low-data states, not just a load animation.
-- T9. Three visual states per event, not two: **draft** (HV's not-yet-confident reading / Obra Dinn's editable handwriting), **confirmed** (Obra Dinn's locked type after a batch of three), and **revised** (HV's "definitely looks wrong, replace with another possible solution" — the old value stays visible, struck or dimmed, rather than vanishing). Encode all three by weight/style, not color alone, to hold CK3 study R17's contrast rule.
-- T10. A **fixed icon** marks a known gap in the fabula or trope graph, never blank space — reuse Outer Wilds' question-mark badge for "an event is referenced but not yet placed." Unlike Outer Wilds, this is a builder's tool for Chief's own project, not a mystery kept from a player: hovering the badge should name the source that referenced the gap (e.g., "referenced by BOLO 12, undated"), where Outer Wilds' badge deliberately stays silent.
-- T11. Batch confirmation like Obra Dinn's three-fates-per-lock: group unresolved events sharing a source (one document, one BOLO) so ruling one nudges the reader toward its siblings, instead of leaving isolated "unverified" flags scattered with no path to closure.
+**Partial record / provenance (§1, §2, §4).**
+- T8. Don't pre-draw the full timeline for an empty/half-built project: Obra Dinn's chapter map fills in only as fates are solved. The fabula view starts sparse and visibly thickens as events are entered — a layout constraint for low-data states, not just an animation.
+- T9. Three visual states per event: **draft** (HV's not-yet-confident reading / Obra Dinn's editable handwriting), **confirmed** (Obra Dinn's locked type after a batch of three), **revised** (HV's "definitely looks wrong, replace with another" — old value stays visible, struck/dimmed, not deleted). Encode by weight/style, not color alone, per CK3 study R17.
+- T10. A **fixed icon** marks a known gap in fabula or trope graph, never blank space — reuse Outer Wilds' question-mark badge for "referenced but not placed." Unlike Outer Wilds, this is a builder's tool, not a kept mystery: hovering names the referencing source (e.g., "referenced by BOLO 12, undated"), where Outer Wilds' badge stays silent.
+- T11. Batch confirmation like Obra Dinn's three-fates-per-lock: group unresolved events sharing a source (one document, one BOLO) so ruling one nudges the reader toward its siblings, instead of scattered lone "unverified" flags.
 
-**Zoom / scale (from §1).**
-- T12. One continuous zoom axis, minute to millennium, smoothly animated — HV's compress/expand — not discrete day/month/year steps; the same control must carry a single scene's told-order minutes and the fabula's multi-century sweep.
-- T13. Cap what "recent" (edit-time) events auto-surface at wide zoom: HV players singled out the timeline popping up for 3-minutes-ago pickups as noise. Below a chosen zoom threshold, suppress sub-scene/session-clock events by default so session recency is never mistaken for narrative weight.
+**Zoom / scale (§1).**
+- T12. One continuous zoom axis, minute to millennium, smoothly animated — HV's compress/expand — not discrete day/month/year steps; one control carries both a scene's told-order minutes and the fabula's century sweep.
+- T13. Cap what "recent" (edit-time) events auto-surface at wide zoom: HV players called the timeline popping up for 3-minutes-ago pickups noise. Below a chosen zoom, suppress sub-scene/session-clock events by default so recency isn't mistaken for narrative weight.
 
 **CK3 tooltip layer (extends CK3-IA-STUDY.md §1, R1-R5 — same component, new content).**
-- T14. Hovering any fabula, told-order, or trope-graph marker opens the same nested-tooltip contract already ruled: bold event name, one-line description, then a breakdown row list — here, a date-range row (T1), a confidence/state row (T9), an era link (T3), and, for a told-order marker, its scene ID (T5) and jump target (T6). The depth-3 cap and lock timing from the doctrine browser study carry over unchanged; this study does not reopen that number.
-- T15. A causal edge (trope graph) and an event's provenance marker (T9) live as **rows inside this one tooltip**, not as separate hover systems — one component serves all three lenses, holding CK3's rule that linking is a property of the text layer, not the widget.
+- T14. Hovering any fabula, told-order, or trope-graph marker opens the same nested-tooltip contract already ruled: bold name, one-line description, breakdown rows — here a date-range row (T1), confidence/state row (T9), era link (T3), and, for a told-order marker, scene ID (T5) and jump target (T6). The depth-3 cap and lock timing carry over unchanged; not reopened here.
+- T15. A causal edge (trope graph) and an event's provenance marker (T9) live as **rows inside this one tooltip**, not separate hover systems — one component serves all three lenses, per CK3's rule that linking is a property of the text layer, not the widget.
 
 **Do not copy.**
-- Obra Dinn's book-over-timeline choice: Pope prototyped "a navigable timeline interface" and rejected it for the book. Treat this as a caution against assuming a full timeline reader is self-justifying — the CK3-style sheet/tab view (per CK3-IA-STUDY.md R6-R11) may still be the right home for a single event's detail, even with the timeline as the app's home screen.
-- Telling Lies' anti-chronological scrub is a mystery-pacing device for an FMV thriller, not an IA pattern; T6 borrows the *mechanism* (bidirectional scrub) but not the *intent* (deliberate disorientation).
+- Obra Dinn's book-over-timeline choice: Pope prototyped a "navigable timeline interface" and rejected it. A caution against assuming a full timeline reader is self-justifying — a CK3-style sheet/tab view (CK3-IA-STUDY.md R6-R11) may still be the right home for a single event's detail, even with the timeline as home screen.
+- Telling Lies' anti-chronological scrub is a mystery-pacing device, not an IA pattern; T6 borrows the *mechanism* (bidirectional scrub) not the *intent* (disorientation).
 - HV's single popup channel for both world-scale and session-scale events.
 
 ## Sources

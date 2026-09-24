@@ -9,7 +9,7 @@ Scope: Command: Modern Operations (CMO, 2021) and predecessor CMANO (2013), plus
 ## Executive summary
 
 1. CMO's stated philosophy: present "a huge amount of information" in "discrete, manageable chunks," favoring "scalability, usability, expandability and maintainability" over a trendy inflexible UI — the war-game density Chief wants is deliberate, not an accident [HIGH — dev blog].
-2. Secondary windows persist: last position/size saved to an ini file, restored on relaunch, one "Reset positions" button returns to default [HIGH — manual].
+2. Secondary windows persist: last position/size saved to an ini file, restored on relaunch, one "Reset positions" button returns to default [HIGH].
 3. One selection updates every open panel: the Unit Status Panel, its weapons summary, and an inline hyperlink that jumps into the mission editor pre-selected [HIGH — manual].
 4. The message log is one filtered stream, not toasts: category-colored, unread-highlighted, click-to-recenter, short-lived on-map balloon, raw-text fallback [HIGH — dev blog, Wargamer].
 5. Doctrine/ROE is a docked, tabbed window with load/save XML templates — not a blocking modal stack [HIGH/MEDIUM].
