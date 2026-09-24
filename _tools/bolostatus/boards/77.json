@@ -6,7 +6,7 @@
   "issued": "2026-09-23",
   "asof": "2026-09-24",
   "s": "hot",
-  "status": "🟢 RULED 9/23 · shelf closed 9/24 · **the fabula doc v0.1.1 LANDED 9/24**, all six calls ruled, state architecture v1.1.0 live — **\"go 77\" fired again: the trope graph (wave 2) IN FLIGHT**",
+  "status": "🟢 fabula v0.1.1 + **trope graph v0.1.0 LANDED 9/24** (135 nodes · 1,034 of 1,678 tropes keyed · 2,584 links) — **\"go 77\": the syuzhet revision (wave 3) IN FLIGHT**; six trope-graph calls open",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,8 +42,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**The trope graph, wave 2: in flight.** Nodes from the held books, edges from TV Tropes, every trope keyed to a node, walked only inside the storyform's fixed signposts.",
-  "default": "Silence: the trope graph builds on the plot/narrative indexes only; EVIL CHECK's events stay reserved for the next pass.",
+  "order": "**The syuzhet, wave 3: in flight.** Today's plot doc revised as the told path, reading the fabula for order and cause and the trope graph for the walk.",
+  "default": "Silence: the six trope-graph calls run on their recs (nodes seat on signposts after the movements map · empty nodes stay empty · 352 unkeyed dropped, 292 held · movements↔acts map next · Propp's id by the catalog rerun · alt shown as \"or:\" in the tooltip).",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -100,6 +100,42 @@
     "default": "date by movement (rec)",
     "s": "ruled",
     "ruling": "RULED 2026-09-24 (all recs). M1, M2, M3…; reach and extent as ranges; 'unknown' means nothing on record, not nothing happened."
+   },
+   {
+    "q": "77-I · seat each node on a signpost",
+    "options": "after the movements↔acts map · by phase now",
+    "default": "after the map (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-J · the 23 empty nodes",
+    "options": "leave empty, flagged · force a keying pass",
+    "default": "leave empty (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-K · the 644 unkeyed tropes",
+    "options": "drop 352, hold 292 · re-key all 644 now",
+    "default": "drop 352, hold 292 (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-L · OXO movements ↔ acts",
+    "options": "task it next · later",
+    "default": "task it next (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-M · Propp's BVX id",
+    "options": "catalog rerun + patch · leave null",
+    "default": "rerun + patch (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-N · alt nodes",
+    "options": "tooltip \"or:\" line, not an edge · count as edges",
+    "default": "tooltip only (rec)",
+    "s": "open"
    }
   ]
  },
@@ -303,14 +339,15 @@
     },
     {
      "n": 4,
-     "t": "**The trope graph (wave 2)** — nodes from the books, edges from TV Tropes, every trope keyed to a node, gated by the storyform's signposts. IN FLIGHT on \"go 77\".",
-     "s": "hot",
+     "t": "**The trope graph (wave 2)** — v0.1.0, 23 KB, RANGE clean. 135 book nodes (Schmidt 55 · Propp 31 · Tobias 20 · Campbell 17 · Vogler 12); 1,678 TV Tropes plot tropes fetched, 1,034 keyed by 8 PS batches (RANGE caught one guessed batch and two id errors); 2,584 trope-link edges + 31 same_as; 23 empty nodes; the walk rule and a worked example on real nodes.",
+     "s": "done",
      "when": "9/24"
     },
     {
      "n": 5,
-     "t": "**The syuzhet** — today's plot doc, revised last as the told path once the fabula and the trope graph stand.",
-     "s": "open"
+     "t": "**The syuzhet (wave 3)** — today's plot doc revised as the told path. IN FLIGHT on \"go 77\".",
+     "s": "hot",
+     "when": "9/24"
     }
    ],
    "coord": [
@@ -391,6 +428,26 @@
     {
      "path": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md",
      "what": "v1.1.0 — origin_event · state_diffs parent",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md",
+     "what": "the trope graph doc v0.1.0",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/fetch.py",
+     "what": "the TV Tropes plot-index fetch (links + index lines only)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/build_graph.py",
+     "what": "joins nodes, keys, links → trope_graph.json",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/data/trope_graph.json",
+     "what": "the graph data",
      "s": "done"
     }
    ],
@@ -550,6 +607,21 @@
      "when": "9/24",
      "who": "Chief",
      "t": "\"FRAGO 77, then go 77.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"unlock the number of agents\" — gear 6 for wave 2; back to gear 1 at the landing."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "The trope graph v0.1.0 landed, RANGE clean, six calls."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"FRAGO 77, go 77, go 79.\""
     }
    ]
   }
