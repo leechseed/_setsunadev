@@ -31,13 +31,13 @@ Scope: Dwarf Fortress Legends mode, classic (pre-2022 text-menu) and Steam/Premi
 
 **Historical figure.** Accretes every event it's in plus relationships to other figures — "the history of every single histfig... as well as their relationships with other histfigs" [HIGH — DF wiki]. Field-by-field layout below the identity line not confirmed from a primary source (MEDIUM); the "events + relationships" core is HIGH.
 
-**Sites.** Towns, towers, fortresses, forest retreats, caves each carry their own filtered event list — founding, sieges, occupation changes [HIGH — DF wiki].
+**Sites.** Towns, towers, fortresses, forest retreats, caves each carry their own filtered event list — founding, sieges, occupation [HIGH — DF wiki].
 
-**Civilizations and entities.** Civilizations, sub-governments, and religions are a browsable list; a specific government or religion is a distinct row even nested under one people [HIGH — DF wiki].
+**Civilizations and entities.** Civilizations, sub-governments, religions are a browsable list; a specific government or religion is a distinct row even nested under one people [HIGH — DF wiki].
 
-**Structures.** A layer below sites: named buildings (temples, shops, taverns) that accumulate their own history once tracked [HIGH — DF wiki, distinct top-level category].
+**Structures.** A layer below sites: named buildings (temples, shops, taverns) that accumulate history once tracked [HIGH — DF wiki, distinct top-level category].
 
-**Artifacts.** Not confirmed as a distinct top-level category from a primary source (LOW placement); the figure article references named, historically-tracked artifacts [MEDIUM], and third-party tool galleries list artifact pages [MEDIUM].
+**Artifacts.** Not confirmed as a distinct top-level category from a primary source (LOW); the figure article references named, historically-tracked artifacts [MEDIUM], and third-party tool galleries list artifact pages [MEDIUM].
 
 ## 3. Eras, timeline, map — and the rebuild
 

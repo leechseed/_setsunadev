@@ -4,11 +4,11 @@ rung: handbook · NASA four, ruled 2026-09-24 (BOLO 79)
 
 # CMO/CMANO Window Study → Rules for the Story Workspace
 
-Scope: Command: Modern Operations (CMO, 2021) and predecessor CMANO (2013), plus Hearts of Iron IV, Gary Grigsby's War in the East (GGWE), and Shadow Empire as counter-examples — a model for the story workspace's window grammar: one app, three lenses (fabula timeline · trope graph · told order) over a plot system, plus character windows. Confidence HIGH/MEDIUM/LOW per claim. Extends, does not repeat, [CK3-IA-STUDY.md](CK3-IA-STUDY.md) R12 (outliner), R14 (side-by-side panels), "no modal dead-ends." Study date 2026-09-24.
+Scope: Command: Modern Operations (CMO, 2021) and predecessor CMANO (2013), plus Hearts of Iron IV, Gary Grigsby's War in the East (GGWE), and Shadow Empire as counter-examples — a model for the story workspace's window grammar: one app, three lenses (fabula timeline, trope graph, told order) over a plot system, plus character windows. Confidence HIGH/MEDIUM/LOW per claim. Extends, not repeats, [CK3-IA-STUDY.md](CK3-IA-STUDY.md) R12 (outliner), R14 (side-by-side), "no modal dead-ends." Study date 2026-09-24.
 
 ## Executive summary
 
-1. CMO's stated philosophy: present "a huge amount of information" in "discrete, manageable chunks," favoring "scalability, usability, expandability and maintainability" over a trendy but inflexible UI — the war-game density Chief wants is deliberate, not an accident [HIGH — dev blog].
+1. CMO's stated philosophy: present "a huge amount of information" in "discrete, manageable chunks," favoring "scalability, usability, expandability and maintainability" over a trendy inflexible UI — the war-game density Chief wants is deliberate, not an accident [HIGH — dev blog].
 2. Secondary windows persist: last position/size saved to an ini file, restored on relaunch, one "Reset positions" button returns to default [HIGH — manual].
 3. One selection updates every open panel: the Unit Status Panel, its weapons summary, and an inline hyperlink that jumps into the mission editor pre-selected [HIGH — manual].
 4. The message log is one filtered stream, not toasts: category-colored, unread-highlighted, click-to-recenter, short-lived on-map balloon, raw-text fallback [HIGH — dev blog, Wargamer].
@@ -16,8 +16,8 @@ Scope: Command: Modern Operations (CMO, 2021) and predecessor CMANO (2013), plus
 6. The 2019–21 rewrite fixed real complaints (slow map engine, "looks like MS Office," message spam, DPI scaling) with a dark reskin, full-screen toggle, rebuilt log, time-stepped sim — but 1440p+ text-size complaints persist into 2025 [HIGH/MEDIUM].
 7. HOI4 is the caution against feature growth without shared grammar: "uninformative and yet cluttered," inconsistent panel design per mechanic, tooltips clipped off-screen [HIGH].
 8. Shadow Empire and GGWE are the caution against density without hierarchy: "famously dense," "obscure icons and buried modifiers," most learning happens outside the game [HIGH].
-9. Hover previews before commit: CMO's "mouse preview mode" ghosts a hovered, non-selected unit's datablock — inspect before select, same contract as CK3's tooltip-before-sheet [HIGH].
-10. Do not copy: literal floating desktop windows (no mobile analog), timer-only pacing with no manual override, letting every new mechanic invent its own panel shape.
+9. Hover previews before commit: CMO's "mouse preview mode" ghosts a hovered unit's datablock — inspect before select, CK3's tooltip-before-sheet contract [HIGH].
+10. Do not copy: floating desktop windows (no mobile analog), timer-only pacing with no override, letting every new mechanic invent its own panel shape.
 
 ## 1. The frame — multi-window doctrine, not single-window
 
@@ -25,7 +25,7 @@ CMO kept its multi-window model through the rewrite rather than collapsing to on
 
 ## 2. Selection linking — one click, every panel
 
-Selecting a unit propagates: Unit Status "now includes a weapons summary panel for selected unit/group" [HIGH — manual]. Its mission description "is now a hyperlink. Clicking it brings up the mission editor window and selects this mission" — a cross-panel jump from inline text [HIGH — manual]. The formation editor "give[s] focus" to itself "if it is visible when selecting one of group members" — an open panel snaps to the new selection [HIGH]. Before commit, "mouse preview mode" ghosts a hovered-but-unselected unit's datablock [HIGH — patch notes]. Wargamer on the predecessor's failure: "this used to drive me nuts in CMANO where unit selection involved multiple clicks or zooming"; CMO's list-based disambiguation fixed it [HIGH]. Reference points extend the pattern to locations: selecting one or more "brings the map camera to their geographic center" [HIGH/MEDIUM].
+Selecting a unit propagates: Unit Status "now includes a weapons summary panel for selected unit/group" [HIGH — manual]. Its mission description "is now a hyperlink. Clicking it brings up the mission editor window and selects this mission" — a cross-panel jump from inline text [HIGH — manual]. The formation editor "give[s] focus" to itself "if it is visible when selecting one of group members" — an open panel snaps to the new selection [HIGH]. Before commit, "mouse preview mode" ghosts a hovered-but-unselected unit's datablock [HIGH — patch notes]. Wargamer on the predecessor's failure: "this used to drive me nuts in CMANO where unit selection involved multiple clicks or zooming"; CMO's list-based disambiguation fixed it [HIGH]. Reference points extend the pattern to locations: selecting one or more centers the camera on their geographic center [HIGH/MEDIUM].
 
 ## 3. The message/event log — a filtered stream
 

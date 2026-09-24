@@ -87,34 +87,31 @@ Scope: **Heaven's Vault** (inkle, 2019), **Return of the Obra Dinn** (Lucas Pope
 
 ## Sources
 
-- Heaven's Vault, Wikipedia and Gamer Escape wiki (era ranges, via search aggregate; wiki page itself 403'd on direct fetch): https://en.wikipedia.org/wiki/Heaven%27s_Vault ; https://heavensvault.gamerescape.com/wiki/Timeline
-- Emily Short, "Heaven's Vault (inkle)" (2019-07-23): https://emshort.blog/2019/07/23/heavens-vault-inkle/
-- Fogknife, "I played Heaven's Vault" (2019-05-03): https://fogknife.com/2019-05-03-i-played-heavens-vault.html
-- PopMatters, "Found in Translation: A Journey into Adventure Game Heaven's Vault" (via search excerpt): https://www.popmatters.com/heavens-vault-adventure-game-review
-- Steam Community, Heaven's Vault general discussions (timeline-popup complaint; translation-confidence thread): https://steamcommunity.com/app/774201/discussions/0/1652169858540964705/ ; https://steamcommunity.com/app/774201/discussions/0/3570700856123387903/
-- Cambridge Core academic article on Heaven's Vault (checked; no UI detail found): https://www.cambridge.org/core/product/847BC3EFEF0C05C1E3D28A658D320B77/core-reader
-- Lucas Pope, TIGSource devlog, Return of the Obra Dinn, June 2019 (book-vs-timeline choice, chapter/map design): https://dukope.com/devlogs/obra-dinn/tig-37/
-- Return of the Obra Dinn Wiki (Fandom), General and Pocket watch pages (via search excerpt): https://obradinn.fandom.com/wiki/General ; https://obradinn.fandom.com/wiki/Pocket_watch
-- GameFAQs, "Solving Fates and Completing the Book" walkthrough (via search excerpt): https://gamefaqs.gamespot.com/switch/272725-return-of-the-obra-dinn/faqs/78105/solving-fates-and-completing-the-book
-- Game UI Database, Return of the Obra Dinn entry (blocked, HTTP 403): https://www.gameuidatabase.com/gameData.php?id=1460
-- Wireframe Magazine, "Telling Lies preview – is Her Story true?": https://wireframe.raspberrypi.org/articles/telling-lies-preview-is-her-story-true
-- Game Developer, "Deep Dive: Telling Lies – Making a mechanic out of scrubbing video" (via search excerpt; direct fetch not attempted due to URL match failure): https://www.gamedeveloper.com/design/deep-dive-i-telling-lies-i---making-a-mechanic-out-of-scrubbing-video
+- Heaven's Vault era ranges (via search aggregate; wiki 403'd direct): https://en.wikipedia.org/wiki/Heaven%27s_Vault ; https://heavensvault.gamerescape.com/wiki/Timeline
+- Emily Short, "Heaven's Vault (inkle)": https://emshort.blog/2019/07/23/heavens-vault-inkle/
+- Fogknife, "I played Heaven's Vault": https://fogknife.com/2019-05-03-i-played-heavens-vault.html
+- PopMatters, "Found in Translation" (via search excerpt): https://www.popmatters.com/heavens-vault-adventure-game-review
+- Steam Community, Heaven's Vault discussions (popup complaint; confidence thread): https://steamcommunity.com/app/774201/discussions/0/1652169858540964705/ ; https://steamcommunity.com/app/774201/discussions/0/3570700856123387903/
+- Cambridge Core academic article on Heaven's Vault (checked, no UI detail): https://www.cambridge.org/core/product/847BC3EFEF0C05C1E3D28A658D320B77/core-reader
+- Lucas Pope, TIGSource devlog, Obra Dinn, June 2019 (book-vs-timeline choice): https://dukope.com/devlogs/obra-dinn/tig-37/
+- Obra Dinn Wiki (Fandom), General and Pocket watch (via search excerpt): https://obradinn.fandom.com/wiki/General ; https://obradinn.fandom.com/wiki/Pocket_watch
+- GameFAQs, "Solving Fates and Completing the Book" (via search excerpt): https://gamefaqs.gamespot.com/switch/272725-return-of-the-obra-dinn/faqs/78105/solving-fates-and-completing-the-book
+- Game UI Database, Obra Dinn entry (blocked, HTTP 403): https://www.gameuidatabase.com/gameData.php?id=1460
+- Wireframe Magazine, "Telling Lies preview": https://wireframe.raspberrypi.org/articles/telling-lies-preview-is-her-story-true
+- Game Developer, "Deep Dive: Telling Lies" (via search excerpt): https://www.gamedeveloper.com/design/deep-dive-i-telling-lies-i---making-a-mechanic-out-of-scrubbing-video
 - Her Story (video game), Wikipedia: https://en.wikipedia.org/wiki/Her_Story_(video_game)
-- Outer Wilds mods, "Custom Ship Log Modes" and "Ship Log | New Horizons" (Map/Rumor mode mechanics): https://outerwildsmods.com/mods/customshiplogmodes/ ; https://nh.outerwildsmods.com/guides/ship-log/
-- Outer Wilds Official Wiki (Fandom), Computer page (blocked, HTTP 402): https://outerwilds.fandom.com/wiki/Computer
-- Steam Community Guide, "Ship Log Completion Guide (All Entry Conditions)" (question-mark badge colors, via search excerpt): https://steamcommunity.com/sharedfiles/filedetails/?id=3500382207
-- Claudia Mohedano, "How Outer Wilds transcends UX to become Human Experience" (blocked, HTTP 403): https://medium.com/@claudmohe/how-outer-wilds-transcends-ux-to-become-human-experience-3ff41def8f8c
-- Ankit Passi, "Outer Wilds: A UX Critique Part 2" (blocked, HTTP 403): https://ankitpassi.medium.com/outer-wilds-a-ux-critique-part-2-146abcb9a5a1
+- Outer Wilds mods, "Custom Ship Log Modes" / "Ship Log | New Horizons": https://outerwildsmods.com/mods/customshiplogmodes/ ; https://nh.outerwildsmods.com/guides/ship-log/
+- Outer Wilds Wiki (Fandom), Computer page (blocked, HTTP 402): https://outerwilds.fandom.com/wiki/Computer
+- Steam Guide, "Ship Log Completion Guide" (badge colors, via search excerpt): https://steamcommunity.com/sharedfiles/filedetails/?id=3500382207
+- Mohedano, "How Outer Wilds transcends UX" (blocked, 403): https://medium.com/@claudmohe/how-outer-wilds-transcends-ux-to-become-human-experience-3ff41def8f8c
+- Passi, "Outer Wilds: A UX Critique Part 2" (blocked, 403): https://ankitpassi.medium.com/outer-wilds-a-ux-critique-part-2-146abcb9a5a1
 
 ## Blocked / Unverified
 
-- heavensvault.gamerescape.com/wiki/Timeline: HTTP 403 on direct fetch; era-range figures rest on search-excerpt aggregation only (MEDIUM, not HIGH).
-- gameuidatabase.com/gameData.php?id=1460: HTTP 403; no Obra Dinn screenshots or annotated UI retrieved.
-- outerwilds.fandom.com/wiki/Computer: HTTP 402 (paywalled fetch).
-- medium.com (Mohedano) and ankitpassi.medium.com (Passi): both HTTP 403; Outer Wilds material rests on outerwildsmods.com and a Steam guide instead.
-- No GDC talk, dev diary, or designer-authored primary source was recovered specifically describing Heaven's Vault's History-screen visual grammar (band colors, hover behavior) — every claim about it traces to reviews or player threads, capped at MEDIUM.
-- Jon Ingold's 2018 GDC talk ("How Inkle created a dynamic detective story in Heaven's Vault") was located by title only; the Game Developer article URL fetched returned unrelated page chrome, not talk content — not used as a source above.
-- No primary designer statement was found on why the two-track told/world diagram (T5-T7) should look the way it's proposed here; T5-T7 are explicitly flagged as this study's own synthesis, not observed in any shipped game.
+- gamerescape wiki, gameuidatabase.com, outerwilds fandom, both Medium essays: all returned 403/402 on direct fetch; every claim sourced to them rests on search-excerpt aggregation only (capped MEDIUM).
+- No GDC talk, dev diary, or designer-authored primary source was recovered describing Heaven's Vault's History-screen visual grammar (band colors, hover behavior) — claims trace to reviews/player threads only, capped MEDIUM.
+- Jon Ingold's 2018 GDC talk ("dynamic detective story") was located by title only; the fetched Game Developer URL returned unrelated page chrome — not used as a source.
+- No primary designer statement exists for the two-track told/world diagram (T5-T7); flagged as this study's own synthesis, not observed in any shipped game.
 
 ## Open questions for Chief
 
