@@ -79,7 +79,7 @@
   td.why { color: var(--ink-2); font-size: 13.5px; }
   tr.done td { opacity: .45; } tr.done td.ttl b { text-decoration: line-through; }
   .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid currentColor; white-space: nowrap; line-height: 1.6; }
-  .ch-held { color: var(--good); } .ch-drop { color: var(--good); border-style: dashed; } .ch-gap { color: var(--accent); }
+  .ch-held { color: var(--good); } .ch-drop { color: var(--good); border-style: dashed; } .ch-gap { color: var(--accent); } .ch-na { color: var(--ink-3); border-style: dashed; }
   .lanechip { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
   .more { margin-top: 10px; }
   .more button { padding: 7px 14px; border: 1px solid var(--line-2); font-family: var(--mono); font-size: 12px; }
@@ -177,7 +177,7 @@ const LANES = [
   const save = () => { try { localStorage.setItem("plotShelfDone", JSON.stringify(done)); } catch (e) {} };
   const st = { lane: null, where: "all", tier: 0, q: "", limit: 150 };
 
-  const held = rows.filter(r => r.h), gap = rows.filter(r => !r.h);
+  const held = rows.filter(r => r.h === 1 || r.h === 2), gap = rows.filter(r => !r.h);
   const canonGap = DATA.canon.filter(c => !c.held);
   $("#stats").innerHTML = [
     [rows.length, "sources that work", ""], [held.length, "held on the box", "good"], [gap.length, "to upload", "hot"],
@@ -191,14 +191,14 @@ const LANES = [
 
   function list() {
     const q = st.q.toLowerCase();
-    return rows.filter(r => (!st.lane || r.l === st.lane) && (st.where === "all" || (st.where === "held" ? r.h : !r.h))
+    return rows.filter(r => (!st.lane || r.l === st.lane) && (st.where === "all" || (st.where === "held" ? (r.h === 1 || r.h === 2) : !r.h))
       && (!st.tier || r.t <= st.tier) && (!q || (r.n + " " + r.a).toLowerCase().includes(q)))
       .sort((a, b) => a.t - b.t || (a.h ? 0 : 1) - (b.h ? 0 : 1) || a.l.localeCompare(b.l) || a.n.localeCompare(b.n));
   }
   function render() {
     const L = list(), show = L.slice(0, st.limit);
     $("#tb").innerHTML = show.map(r => {
-      const where = r.h === 1 ? `<span class="chip ch-held">held${r.b ? " · " + esc(r.b) : ""}</span>` : r.h === 2 ? `<span class="chip ch-drop">held · drop</span>` : `<span class="chip ch-gap">upload</span>`;
+      const where = r.h === 3 ? `<span class="chip ch-na">no copy</span>` : r.h === 1 ? `<span class="chip ch-held">held${r.b ? " · " + esc(r.b) : ""}</span>` : r.h === 2 ? `<span class="chip ch-drop">held · drop</span>` : `<span class="chip ch-gap">upload</span>`;
       const ck = r.h ? "" : `<input type="checkbox" id="c-${esc(r.i)}" data-id="${esc(r.i)}" ${done[r.i] ? "checked" : ""} aria-label="Mark uploaded">`;
       return `<tr class="${done[r.i] ? "done" : ""}"><td class="ck">${ck}</td><td class="tier t${r.t} num">${r.t}</td><td class="ttl"><b>${esc(r.n)}</b><small>${esc(r.a)}</small></td><td class="lanechip">${r.l}</td><td>${where}</td><td class="why">${esc(r.w)}</td></tr>`;
     }).join("") || `<tr><td colspan="6" class="note">No sources match these filters.</td></tr>`;
@@ -224,7 +224,7 @@ const LANES = [
 
   $("#canonLbl").textContent = `${DATA.canon.filter(c => c.held).length} of ${DATA.canon.length} held`;
   $("#canon").innerHTML = DATA.canon.slice().sort((a, b) => (a.held - b.held) || (b.in_zlib_favs - a.in_zlib_favs)).map(c =>
-    `<div class="cn ${c.held ? "" : (c.in_zlib_favs ? "fav" : "gap")}"><b>${esc(c.title)}</b><small>${esc(c.author)} · ${c.held ? "held" : (c.in_zlib_favs ? "in z-lib favourites" : "not found anywhere")}</small></div>`).join("");
+    `<div class="cn ${c.held ? "" : (c.in_zlib_favs ? "fav" : "gap")}"><b>${esc(c.title)}</b><small>${esc(c.author)} · ${c.held ? "held" : (c.unavailable ? "no copy · doing without" : (c.in_zlib_favs ? "in z-lib favourites" : "not found anywhere"))}</small></div>`).join("");
   const sp = Object.entries(DATA.spec).sort((a, b) => b[1] - a[1]), mx = Math.max(...sp.map(s => s[1]));
   $("#spec").innerHTML = sp.map(s => `<div class="sp"><span>${esc(s[0])}</span><span class="v num">${s[1]}</span><span class="trk"><b style="width:${s[1] / mx * 100}%"></b></span></div>`).join("");
 

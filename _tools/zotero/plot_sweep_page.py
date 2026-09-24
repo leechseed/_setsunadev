@@ -7,7 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 META = os.path.join(ROOT, "_0.1_BVX_LEARN", "_meta")
 HERE = os.path.dirname(os.path.abspath(__file__))
 d = json.load(io.open(os.path.join(META, "plot_sweep.json"), encoding="utf-8"))
-rows = [{"l": k["lane"], "t": k["tier"], "h": 0 if k["src"] == "zlib-gap" else (2 if k["src"] == "drop" else 1),
+rows = [{"l": k["lane"], "t": k["tier"], "h": 0 if k["src"] == "zlib-gap" else (3 if k["src"] == "unavailable" else (2 if k["src"] == "drop" else 1)),
          "b": k["bvx"], "n": k["clean"], "a": k["author"], "w": k["why"], "i": k["id"]} for k in d["keep"]]
 data = {"rows": rows, "canon": d["canon"], "spec": d["specimens"]}
 tpl = io.open(os.path.join(HERE, "plot_sweep_template.html"), encoding="utf-8").read()

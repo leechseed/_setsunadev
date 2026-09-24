@@ -4524,7 +4524,7 @@
   },
   {
    "id": "G238",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "The Definitive Game Narrative Guide",
    "author": "Brian Kindregan; Diandra Anne Lasrado",
@@ -4533,7 +4533,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Comprehensive guide to game narrative design",
+   "why": "Comprehensive guide to game narrative design · no copy found, ruled do-without 9/24",
    "clean": "The Definitive Game Narrative Guide"
   },
   {
@@ -7394,7 +7394,7 @@
   },
   {
    "id": "G2275",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "The Palgrave Handbook of Script Development",
    "author": "Stayci Taylor; Craig Batty",
@@ -7403,7 +7403,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Script development and screenwriting structure",
+   "why": "Script development and screenwriting structure · no copy found, ruled do-without 9/24",
    "clean": "The Palgrave Handbook of Script Development"
   },
   {
@@ -7884,7 +7884,7 @@
   },
   {
    "id": "G2427",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "Plot Versus Character",
    "author": "Jeff Gerke",
@@ -7893,7 +7893,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Plot versus character tension and balance",
+   "why": "Plot versus character tension and balance · no copy found, ruled do-without 9/24",
    "clean": "Plot Versus Character"
   },
   {
@@ -8206,7 +8206,7 @@
   },
   {
    "id": "G2512",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "Games and Narrative: Theory and Practice",
    "author": "Barbaros Bostan",
@@ -8215,7 +8215,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Games and narrative theory and practice",
+   "why": "Games and narrative theory and practice · no copy found, ruled do-without 9/24",
    "clean": "Games and Narrative: Theory and Practice"
   },
   {
@@ -8290,7 +8290,7 @@
   },
   {
    "id": "G2550",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "Storytelling for Interactive Digital Media and Video Games",
    "author": "Nicholas B. Zeman",
@@ -8299,12 +8299,12 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Interactive and video game narrative design",
+   "why": "Interactive and video game narrative design · no copy found, ruled do-without 9/24",
    "clean": "Storytelling for Interactive Digital Media and Video Games"
   },
   {
    "id": "G2569",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "The Game Design Reader: A Rules of Play Anthology",
    "author": "Katie Salen; Eric Zimmerman",
@@ -8313,7 +8313,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Game design theory and narrative systems",
+   "why": "Game design theory and narrative systems · no copy found, ruled do-without 9/24",
    "clean": "The Game Design Reader: A Rules of Play Anthology"
   },
   {
@@ -8346,7 +8346,7 @@
   },
   {
    "id": "G2583",
-   "src": "zlib-gap",
+   "src": "unavailable",
    "bvx": "",
    "title": "Tabletop RPG Design in Theory and Practice at the Forge, 2001–2012: Designs and Discussions (Palgrave Games in Context)",
    "author": "William J. White",
@@ -8355,7 +8355,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Tabletop RPG design and narrative mechanics",
+   "why": "Tabletop RPG design and narrative mechanics · no copy found, ruled do-without 9/24",
    "clean": "Tabletop RPG Design in Theory and Practice at the Forge, 2001–2012: Designs and Discussions (Palgrave Games in Context)"
   },
   {
@@ -11522,14 +11522,16 @@
    "title": "Introduction to the Structural Analysis of Narratives",
    "held": false,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "",
+   "unavailable": true
   },
   {
    "author": "Greimas",
    "title": "Structural Semantics",
    "held": false,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "",
+   "unavailable": true
   },
   {
    "author": "Ricoeur",
@@ -11669,7 +11671,8 @@
    "title": "Narrative Planning",
    "held": false,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "",
+   "unavailable": true
   },
   {
    "author": "Howard",
