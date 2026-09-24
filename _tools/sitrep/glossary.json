@@ -1099,5 +1099,17 @@
   "k": "item",
   "d": "The plot system, expanded on rails: the fabula (world time), the trope graph, the syuzhet (the told path). Ruled all recs 9/23, shelf closed 9/24, fabula doc in flight on \"go 77\".",
   "w": "https://claude.ai/artifact/WN3ADVxsebJR7W3YAvckjC"
+ },
+ "bolo80": {
+  "t": "BOLO 80",
+  "k": "item",
+  "d": "The theme system: story-spine L6, what the story argues, built before the scenes. Opened 9/24; gates [[bolo77|BOLO 77]].",
+  "w": "BOLO.md #80"
+ },
+ "bolo81": {
+  "t": "BOLO 81",
+  "k": "item",
+  "d": "Narrative invariants and pushbacks: the rules the story can never break and the points of resistance beside them, gathered into one register and wired through every system. Opened 9/24; gates [[bolo77|BOLO 77]].",
+  "w": "BOLO.md #81"
  }
 }
