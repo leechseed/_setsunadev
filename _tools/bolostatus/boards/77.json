@@ -1,0 +1,498 @@
+{
+ "bolo": {
+  "n": 77,
+  "title": "The plot system, expanded on rails — fabula · trope graph · syuzhet",
+  "trunk": "BLACK",
+  "issued": "2026-09-23",
+  "asof": "2026-09-24",
+  "s": "hot",
+  "status": "🟢 RULED 9/23 · the plot sweep judged 2,429 titles, shelf closed 9/24 (canon 40/43 held, 7 core + 3 classics marked \"no copy\") — **\"go 77\" fired: the fabula doc (wave 1) IN FLIGHT**, three specialist digests feeding one doc, checked by range.py.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
+  "related": [
+   {
+    "n": 18,
+    "why": "the two-stage spine sweep that built the L4 plot shelf and `04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md` — the syuzhet doc this BOLO revises last"
+   },
+   {
+    "n": 46,
+    "why": "the OXO series follow-through — Anna Colson's node and the Telling Profile the fabula's character origin moments have to match up with"
+   }
+  ],
+  "home": "BOLO.md · row 77",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The sweep judged 2,429 titles in one day and the fabula build fired within hours of the shelf closing. No gap between phases."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One order, not three parallel docs: fabula first, then the trope graph, then the syuzhet revised last. The rails are the sequence."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Ten titles came back unobtainable. They were marked \"no copy\" and the shelf closed anyway, rather than holding the build for a fetch that would not land."
+  }
+ ],
+ "frago": {
+  "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
+  "order": "**The fabula doc, wave 1: in flight.** Three digests feed one doc under `04_PLOT_SYSTEMS/`; RANGE checks it; it lands with its open calls for your word.",
+  "default": "Silence: the instance runs on Tori alone; EVIL CHECK's events wait for wave 2; the state architecture v1.1 patch ships with the fabula doc.",
+  "calls": [
+   {
+    "q": "77-A · the boresight (five calls)",
+    "options": "fabula first · nodes from books, edges from TV Tropes · test fetch first · Propp first · your drafts first",
+    "default": "all recs",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-23, Chief: \"all recs.\""
+   },
+   {
+    "q": "77-B · the missing books",
+    "options": "keep hunting · do without (open-access substitutes)",
+    "default": "do without (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, Chief: \"we're going to have to do without those.\" 7 core + 3 classics marked no copy."
+   },
+   {
+    "q": "77-C · whose origins fill the instance",
+    "options": "Tori only (the M1B crash and Jebb's death are on record) · Tori + Anna Colson (her past has no dated events yet; needs your facts)",
+    "default": "Tori only (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-D · EVIL CHECK on the timeline",
+    "options": "wave 1 (read its Dramatica reports now) · wave 2 (schema first, then load its events)",
+    "default": "wave 2 (rec)",
+    "s": "open"
+   },
+   {
+    "q": "77-E · state architecture v1.1",
+    "options": "ship with the fabula doc (origin_event · state_diffs · event ids) · separate pass later",
+    "default": "ship with the fabula doc (rec)",
+    "s": "open"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where the plot system stands: what Chief ordered 9/23, what already existed, what the sweep proved and closed.",
+   "strand": {
+    "last": "Character got an expansive, on-the-fly system with twelve layers; plot had nothing built to match it.",
+    "plan": "Walk two boresight loops on the plot system's shape, then sweep the library for every book the walk needs, then build the three docs in rail order.",
+    "you": "Ruled \"all recs\" on both loops 9/23, ordered the full Zotero sweep the same turn, and closed the shelf 9/24 rather than wait on ten unobtainable titles.",
+    "next": "The fabula doc (wave 1), fired by \"go 77\"."
+   },
+   "groups": [
+    {
+     "label": "The transmission · 9/23, Chief's words",
+     "items": [
+      {
+       "t": "\"we need to develop the plot system … just as expansive but more on rails than character\"",
+       "s": "ruled"
+      },
+      {
+       "t": "\"each one of these concepts needs to have an origin moment that matches up with the plot system\"",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Two boresight loops, ALL RECS RULED 9/23",
+     "items": [
+      {
+       "t": "**Fabula first** — its own doc at universe level, one world timeline shared by OXO and EVIL CHECK (a second story in the same universe).",
+       "s": "ruled"
+      },
+      {
+       "t": "**Nodes from the books** (Schmidt 55 · Tobias 20 · Campbell · Vogler · Propp once held), **edges from TV Tropes**, every trope keyed to a node; the storyform's fixed signpost order gates the walk — the rails.",
+       "s": "ruled"
+      },
+      {
+       "t": "TV Tropes test fetch first, then only the plot/narrative indexes.",
+       "s": "ruled"
+      },
+      {
+       "t": "Acquisitions order: Propp first, then Chatman · Genette · Booker, free lending route.",
+       "s": "ruled"
+      },
+      {
+       "t": "Chief's own drafts read first.",
+       "s": "ruled"
+      },
+      {
+       "t": "Shape ruled: three docs under `04_PLOT_SYSTEMS/` — the fabula (world time, causal edges, the character **origin moments**) · the trope graph · the syuzhet (today's plot doc, revised as the told path). Handshake owed: `origin_event` per character layer, `state_diffs` on the plot card, state architecture bumped to v1.1.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "What already existed — done same turn 9/23",
+     "items": [
+      {
+       "t": "Chief's drafts read: the 2023 drawio spine already splits 02 SYUZHET from 05 SEQUENCE FABULA; the fabula tag holds only 2 items, the thinnest branch; the 8/9/24 thesis draft's 11 references are all unheld.",
+       "s": "done"
+      },
+      {
+       "t": "TV Tropes fetch PROVEN — direct fetch with a browser UA works; WebFetch gets a 403; one page yields ~40 trope edges.",
+       "s": "done"
+      },
+      {
+       "t": "Propp found on archive.org — 1968 and 2015 editions, print-disabled lending only.",
+       "s": "done"
+      },
+      {
+       "t": "Library read: L4 shelf 166 keyed, 8 distilled; five lanes — A rail builders · B scene engine · C series · D game rails (≈60 adventure specimens in the drop folder) · E counter-voices.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "The plot sweep, done 9/23 — Chief: \"pull more plotting sources from the zotero, run a full sweep … i'll upload all pdfs if not found\"",
+     "items": [
+      {
+       "t": "2,429 titles pooled (Zotero 741 · drop 757 · z-lib favourites 931), 9 PS + 4 MS re-reads, RANGE checked 2,429/2,429. First count: **753 work — 294 held, 459 to upload (79 tier 1)**. Canon read 15/43 held (Chatman found in the catalog); 23 titles not anywhere incl. Propp · Genette · Herman · Rimmon-Kenan · Brooks · Sternberg · Bakhtin · Field.",
+       "s": "done"
+      },
+      {
+       "t": "Fakes caught by opening the PDF: the drop's Syd Field and Booth copies are summary spam.",
+       "s": "done"
+      },
+      {
+       "t": "Register `_0.1_BVX_LEARN/_meta/PLOT-SWEEP.md`; tools `_tools/zotero/plot_sweep.py` + `_tools/zotero/plot_sweep_page.py`; page https://claude.ai/artifact/Ph5XJfN1TYAQQTFkrGkV3r",
+       "s": "done"
+      },
+      {
+       "t": "The loose-Zotero-attachment blind spot found and folded in (1,132 loose attachments added to the inventory) — the shelf's tally then read **813 titles work, 396 held (417 to-get initially)**.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "Uploads closed 9/24 — Chief: \"the rest … I wasn't able to get a copy of, so we're going to have to do without those\"",
+     "items": [
+      {
+       "t": "Seven upload rounds landed ~95 books; every file opened for spam.",
+       "s": "done"
+      },
+      {
+       "t": "The Zotero blind spot fixed for good (1,132 loose attachments now carried in `inventory.py`'s inventory); EPUB support added; `_tools/zotero/plot_recheck.py` is the one-command re-check.",
+       "s": "done"
+      },
+      {
+       "t": "**Final: every tier-1 book held except 7 core** (Gerke · Taylor & Batty · Bostan · Zeman · White · Kindregan · Salen & Zimmerman) **and 3 classics** (Barthes's structural-analysis essay · Greimas · Riedl & Young), marked \"no copy\". **Canon 40/43 held**, incl. Propp · Genette ×2 · Chatman · Herman · Rimmon-Kenan · Ryan · Brooks · Sternberg · Bakhtin · Field · Frye · Bordwell.",
+       "s": "done"
+      },
+      {
+       "t": "Eight open-access PDF substitutes and five essays as EPUB landed in `Q:\\_PDF_DROP\\_NEW`, plus the Riedl & Young paper, as stand-ins for the unobtainable ten.",
+       "s": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason: every character layer that grows from a past event needs that event to exist somewhere, and today nothing holds world time.",
+   "strand": {
+    "last": "Two boresight loops ruled \"all recs\" on 9/23; the plot shelf closed 9/24 at 40 of 43 canon held.",
+    "plan": "Three docs on rails: the fabula (world time) first, then the trope graph, then the syuzhet (today's plot doc, revised as the told path).",
+    "you": "You said \"go 77\" at 03:30 on 9/24. The fabula doc build is running.",
+    "next": "The fabula doc lands; then the trope graph opens as wave 2."
+   },
+   "task": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet),",
+   "intent": "in order to give every character layer an origin moment that sits on one world timeline, shared by OXO and EVIL CHECK.",
+   "spoken": "\"We need to develop the plot system … just as expansive but more on rails than character.\" · \"Each one of these concepts needs to have an origin moment that matches up with the plot system.\"",
+   "endstate": [
+    "The fabula doc: one universe-level timeline of events, with causal edges and origin moments, shared by OXO and EVIL CHECK.",
+    "The trope graph: book situations as nodes, TV Tropes links as edges, walked only inside the storyform's fixed signpost order.",
+    "The syuzhet: today's plot doc revised as the told path, reading the fabula for order, cause and reveal.",
+    "The handshake closed: origin_event on every character layer that needs one, state_diffs on the plot card, the state architecture at v1.1."
+   ],
+   "groups": [
+    {
+     "label": "The purpose · ruled 9/23",
+     "items": [
+      {
+       "t": "**On rails, not open-ended.** The character system is expansive; the plot system matches its depth but every walk is gated by the storyform's fixed signposts. The rails are Dramatica's order; the tropes only fill what the rails allow.",
+       "s": "ruled"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Two loops, one sweep, then the three docs in rail order — fabula before the trope graph before the syuzhet.",
+   "strand": {
+    "last": "The shelf closed 9/24 with the sweep and the uploads both done.",
+    "plan": "Fabula first (world time and the character origin moments), then the trope graph keyed to it, then the syuzhet revised last.",
+    "you": "Fired the build with \"go 77\".",
+    "next": "Wave 1's three digests land, `range.py` checks them, the fabula doc publishes to `04_PLOT_SYSTEMS/`."
+   },
+   "main_effort": "The fabula doc, wave 1 — IN FLIGHT.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Two boresight loops walked**, all recs ruled — the fabula-first shape, the nodes/edges/rails method, the fetch order, the acquisitions order, drafts read first.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 1,
+     "t": "**The plot sweep** — 2,429 titles pooled, judged, RANGE 2,429/2,429; the loose-Zotero blind spot folded in.",
+     "s": "done",
+     "when": "9/23"
+    },
+    {
+     "n": 2,
+     "t": "**Uploads** — seven rounds landed ~95 books; shelf closed at canon 40/43 held, 10 titles marked \"no copy\".",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 3,
+     "t": "**The fabula doc (wave 1)** — three specialist digests (syuzhet side · character handshake · theory) feeding one doc at `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/`, checked by `_tools/bolostatus/work/77/fabula/range.py`.",
+     "s": "hot",
+     "when": "9/24"
+    },
+    {
+     "n": 4,
+     "t": "**The trope graph** — nodes from the books, edges from TV Tropes, every trope keyed to a node, walked inside the storyform's fixed signposts.",
+     "s": "open"
+    },
+    {
+     "n": 5,
+     "t": "**The syuzhet** — today's plot doc, revised last as the told path once the fabula and the trope graph stand.",
+     "s": "open"
+    }
+   ],
+   "coord": [
+    "Handshake owed: `origin_event` per character layer, `state_diffs` on the plot card, state architecture bumped to v1.1."
+   ],
+   "running": [
+    "The fabula doc wave 1 — three specialist digests (syuzhet side · character handshake · theory) feeding one doc, checked by `_tools/bolostatus/work/77/fabula/range.py`."
+   ],
+   "groups": [
+    {
+     "label": "Hot · 9/24",
+     "items": [
+      {
+       "t": "\"go 77\" spoken ~03:40; the fabula doc build (wave 1) is IN FLIGHT — three specialist digests feeding one doc at `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/`, checked by `_tools/bolostatus/work/77/fabula/range.py`.",
+       "s": "hot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What the sweep ran on: the register, the tools, the page, and where the three docs write to.",
+   "strand": {
+    "last": "The gap between held and unobtainable sat open through seven upload rounds.",
+    "plan": "Read from the held shelf only; key to the rails; build the three docs in order.",
+    "you": "Ruled \"do without\" the last ten titles 9/24 rather than hold the build for a fetch that would not close.",
+    "next": "The fabula doc writes to `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/`; nothing bought before wave 1 lands."
+   },
+   "files": [
+    {
+     "path": "_0.1_BVX_LEARN/_meta/PLOT-SWEEP.md",
+     "what": "the plot sweep register — 2,429 titles judged, held / to-upload / no-copy status",
+     "s": "done"
+    },
+    {
+     "path": "_tools/zotero/plot_sweep.py",
+     "what": "the sweep tool",
+     "s": "done"
+    },
+    {
+     "path": "_tools/zotero/plot_sweep_page.py",
+     "what": "builds the sweep's status page",
+     "s": "done"
+    },
+    {
+     "path": "_tools/zotero/plot_recheck.py",
+     "what": "the one-command re-check run after the upload rounds",
+     "s": "done"
+    },
+    {
+     "path": "_tools/zotero/inventory.py",
+     "what": "the Zotero inventory tool; fixed for the loose-attachment blind spot (1,132 now carried), EPUB support added",
+     "s": "done"
+    },
+    {
+     "path": "Q:\\_PDF_DROP\\_NEW",
+     "what": "eight open-access PDF substitutes and five essays as EPUB, standing in for the ten unobtainable titles, plus the Riedl & Young paper",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/77/fabula/range.py",
+     "what": "the script checking the fabula doc build, wave 1",
+     "s": "hot"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/",
+     "what": "where the three docs live — fabula · trope graph · syuzhet",
+     "s": "open"
+    }
+   ],
+   "cost": [
+    {
+     "k": "sweep pool",
+     "v": "2,429 titles (Zotero 741 · drop 757 · z-lib favourites 931)"
+    },
+    {
+     "k": "shelf final",
+     "v": "813 titles work, 396 held at close (417 to-get initially)"
+    },
+    {
+     "k": "canon",
+     "v": "40 of 43 held"
+    },
+    {
+     "k": "no copy",
+     "v": "7 core (Gerke · Taylor & Batty · Bostan · Zeman · White · Kindregan · Salen & Zimmerman) + 3 classics (Barthes essay · Greimas · Riedl & Young)"
+    }
+   ],
+   "groups": [
+    {
+     "label": "The register and page",
+     "items": [
+      {
+       "t": "`_0.1_BVX_LEARN/_meta/PLOT-SWEEP.md` plus the page https://claude.ai/artifact/Ph5XJfN1TYAQQTFkrGkV3r hold the full sweep result.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "Fixed on the pass",
+     "items": [
+      {
+       "t": "The Zotero blind spot — 1,132 loose attachments not previously in the inventory — found and fixed; EPUB support added to the same tooling.",
+       "s": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what on BOLO 77. The big calls are ruled; three small ones ride on defaults.",
+   "strand": {
+    "last": "All five boresight calls ruled 9/23; the no-copy call ruled 9/24.",
+    "plan": "You rule scope; Claude builds and checks with a script, never a checker agent.",
+    "you": "You are the only decider on canon facts: nobody invents a world event for OXO or EVIL CHECK.",
+    "next": "Three calls below, each with a rec and a silence default."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL** — scope, canon facts, which story events exist. **Claude** — the schema, the theory, the drafts, the checks; adds no world event the sources don't state.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**RANGE is a script.** `_tools/bolostatus/work/77/fabula/range.py` checks each doc (sections, sources, calls with recs, the Anna Colson naming) before it ships.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "Say **\"go 77\"** to open the next wave; **\"FRAGO 77\"** pushes a change onto this sheet.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on the plot system, from the first order to the fabula build going live.",
+   "strand": {
+    "last": "Nine transmissions; the last one fired the build in flight now.",
+    "plan": "One per transmission.",
+    "you": "Five are yours; the rest are the boresight, the sweep, and the tally reporting back.",
+    "next": "Wave 1 lands."
+   },
+   "entries": [
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"we need to develop the plot system … just as expansive but more on rails than character\"; \"each one of these concepts needs to have an origin moment that matches up with the plot system\"."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Two boresight loops walked: the fabula-first shape and world timeline; the nodes-from-books/edges-from-TV-Tropes method gated by the storyform's signposts."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"all recs\" — both loops ruled as written."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "Done the same turn: Chief's drafts read (the drawio spine, the fabula tag, the thesis draft's unheld references), TV Tropes fetch proven, Propp found on archive.org, the L4 shelf read."
+    },
+    {
+     "when": "9/23",
+     "who": "Chief",
+     "t": "\"pull more plotting sources from the zotero, run a full sweep … i'll upload all pdfs if not found\"."
+    },
+    {
+     "when": "9/23",
+     "who": "Claude",
+     "t": "The plot sweep run: 2,429 titles pooled and judged, RANGE 2,429/2,429, first count 753 work / 294 held; the loose-Zotero blind spot found and folded in, moving the tally to 813 work / 396 held."
+    },
+    {
+     "when": "9/23–9/24",
+     "who": "Claude",
+     "t": "Seven upload rounds landed ~95 books; every file opened for spam; the Zotero blind spot fixed for good and EPUB support added."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"the rest … I wasn't able to get a copy of, so we're going to have to do without those\" — uploads closed."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Final tally reported: canon 40/43 held, 7 core + 3 classics marked \"no copy\", 8 open-access substitutes and 5 EPUB essays landed as stand-ins. Shelf closed."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"go 77\" spoken ~03:40 — the fabula doc build (wave 1) fired, three specialist digests feeding one doc, checked by `range.py`."
+    }
+   ]
+  }
+ ]
+}
