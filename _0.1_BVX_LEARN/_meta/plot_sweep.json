@@ -7632,7 +7632,7 @@
   },
   {
    "id": "G2338",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "The Seven Basic Plots: Why We Tell Stories",
    "author": "Christopher Booker",
@@ -7641,7 +7641,7 @@
    "tags": "",
    "lane": "TROPES",
    "tier": 1,
-   "why": "Seven basic plots and archetypal story patterns",
+   "why": "Seven basic plots and archetypal story patterns · landed The Seven Basic Plots - Why We Tell Stor",
    "clean": "The Seven Basic Plots: Why We Tell Stories"
   },
   {
@@ -7730,7 +7730,7 @@
   },
   {
    "id": "G2363",
-   "src": "zlib-gap",
+   "src": "zotero",
    "bvx": "",
    "title": "Meander, spiral, explode: design and pattern in narrative",
    "author": "Alison; Jane",
@@ -7739,7 +7739,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 2,
-   "why": "Design and pattern in narrative structure",
+   "why": "Design and pattern in narrative structure · landed Jane Alison - Meander, Spiral, Explode_ ",
    "clean": "Meander, spiral, explode: design and pattern in narrative"
   },
   {
@@ -7828,7 +7828,7 @@
   },
   {
    "id": "G2404",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "The Collected Works of C. G. Jung, Vol. 9, Part 1: The Archetypes and the Collective Unconscious",
    "author": "Carl Gustav Jung; William McGuire; Herbe",
@@ -7837,7 +7837,7 @@
    "tags": "",
    "lane": "TROPES",
    "tier": 1,
-   "why": "Jungian archetypes and collective unconscious",
+   "why": "Jungian archetypes and collective unconscious · landed The Collected Works of C. G. Jung, Vol. ",
    "clean": "The Collected Works of C. G. Jung, Vol. 9, Part 1: The Archetypes and the Collective Unconscious"
   },
   {
@@ -9396,7 +9396,7 @@
   },
   {
    "id": "G3356",
-   "src": "zlib-gap",
+   "src": "zotero",
    "bvx": "",
    "title": "Film Directing: Shot by Shot - 25th Anniversary Edition",
    "author": "Steve D. Katz",
@@ -9405,7 +9405,7 @@
    "tags": "",
    "lane": "SCENE",
    "tier": 2,
-   "why": "Film directing technique and visual narrative",
+   "why": "Film directing technique and visual narrative · landed Film Directing Shot by Shot - 25th Anniv",
    "clean": "Film Directing: Shot by Shot - 25th Anniversary Edition"
   },
   {
@@ -9424,7 +9424,7 @@
   },
   {
    "id": "G3358",
-   "src": "zlib-gap",
+   "src": "zotero",
    "bvx": "",
    "title": "Setting up your shots : great camera moves every filmmaker should know",
    "author": "Jeremy Vineyard; José Cruz",
@@ -9433,7 +9433,7 @@
    "tags": "",
    "lane": "SCENE",
    "tier": 2,
-   "why": "Camera movement and visual storytelling technique",
+   "why": "Camera movement and visual storytelling technique · landed Setting up your shots  great camera move",
    "clean": "Setting up your shots : great camera moves every filmmaker should know"
   },
   {
@@ -9578,7 +9578,7 @@
   },
   {
    "id": "G3413",
-   "src": "zlib-gap",
+   "src": "zotero",
    "bvx": "",
    "title": "Write Great Fiction - Plot & Structure",
    "author": "James Scott Bell",
@@ -9587,7 +9587,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Plot and story structure core methodology",
+   "why": "Plot and story structure core methodology · same book as held BVX.0153 Plot & Structure",
    "clean": "Write Great Fiction - Plot & Structure"
   },
   {
@@ -9774,7 +9774,7 @@
   },
   {
    "id": "G3665",
-   "src": "zlib-gap",
+   "src": "zotero",
    "bvx": "",
    "title": "National Geographic Essential Visual History of World Mythology",
    "author": "National Geographic",
@@ -9783,7 +9783,7 @@
    "tags": "",
    "lane": "TROPES",
    "tier": 3,
-   "why": "Mythology reference and archetypal narrative patterns",
+   "why": "Mythology reference and archetypal narrative patterns · landed National Geographic Essential Visual His",
    "clean": "National Geographic Essential Visual History of World Mythology"
   },
   {
@@ -9802,7 +9802,7 @@
   },
   {
    "id": "G3667",
-   "src": "zlib-gap",
+   "src": "zotero",
    "bvx": "",
    "title": "The Ultimate Encyclopedia Of Mythology",
    "author": "Arthur Cotterell",
@@ -9811,7 +9811,7 @@
    "tags": "",
    "lane": "TROPES",
    "tier": 3,
-   "why": "Comprehensive mythology reference and catalog",
+   "why": "Comprehensive mythology reference and catalog · landed The Ultimate Encyclopedia of Mythology (",
    "clean": "The Ultimate Encyclopedia Of Mythology"
   },
   {
@@ -11465,8 +11465,7 @@
    "author": "Booth",
    "title": "The Rhetoric of Fiction",
    "held": false,
-   "in_zlib_favs": true,
-   "match": ""
+   "in_zlib_favs": true
   },
   {
    "author": "Bakhtin",
@@ -11492,9 +11491,9 @@
   {
    "author": "Booker",
    "title": "The Seven Basic Plots",
-   "held": false,
+   "held": true,
    "in_zlib_favs": true,
-   "match": ""
+   "match": "The Seven Basic Plots - Why We Tell Stories"
   },
   {
    "author": "Campbell",
@@ -11534,9 +11533,9 @@
   {
    "author": "Ricoeur",
    "title": "Time and Narrative",
-   "held": false,
+   "held": true,
    "in_zlib_favs": true,
-   "match": ""
+   "match": "Time and Narrative, Vol. 2"
   },
   {
    "author": "Kermode",

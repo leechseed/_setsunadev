@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8845** |
-| With a PDF attachment | 8845 |
-| PDF present on disk | 8753 |
+| Top-level items | **8847** |
+| With a PDF attachment | 8847 |
+| PDF present on disk | 8755 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7842** |
+| **New since the Dec-2023 catalog** | **7844** |
 | Story-side (CRE + LIT by catalog) | 337 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7667 |
+| NEW | 7669 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7842)
+## New since the catalog (7844)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -7054,6 +7054,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The City of Graves |  |  |
 |  | The Cleric Reforged |  |  |
 |  | The Collected Monsters of Sin |  |  |
+|  | The Collected Works of C. G. Jung, Vol. 9, Part 1 The Archetypes and t | Carl Gustav Jung, William McGu |  |
 |  | The Complete Advanced Feats |  |  |
 |  | The Complete Book of Drawing Techniques - A Complete Guide for the Art |  | 080004 - art |
 |  | THE COMPLETE BOOK OF PENIS The Effect... |  | SEX |
@@ -7331,6 +7332,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Secrets of the Taskshaper |  |  |
 |  | The Sense of Style The Thinking Perso... |  |  |
 |  | The Sense of Style The Thinking Perso... |  |  |
+|  | The Seven Basic Plots - Why We Tell Stories | Christopher Booker |  |
 |  | The Seven Principalities |  |  |
 |  | THE SEXUALITY OF BAST | Crowley |  |
 |  | The Shadowrun Supplemental 001 |  |  |
