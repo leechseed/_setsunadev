@@ -72,7 +72,7 @@ fabula_events = extract_instance_events(fabula_md)
 
 # THE WORLD CLOCK eras — prose, not YAML; quoted verbatim from the file,
 # each quote checked against the loaded text so drift breaks the build.
-_era_red_stick = "Red Stick Creek (founding, buried, no date given)"
+_era_red_stick = "Skeeter Creek (founding, buried, no date given)"
 _era_red_hills = "Red Hills (the first rename, reach roughly a century before the Bishop acquisition, extent unstated)"
 _era_dcus = "DCUS (the current era, tied to the Bishop acquisition"
 for q in (_era_red_stick, _era_red_hills, _era_dcus):
@@ -80,8 +80,8 @@ for q in (_era_red_stick, _era_red_hills, _era_dcus):
 
 WORLD_CLOCK_ERAS = [
     {
-        "id": "era_red_stick_creek",
-        "label": "Red Stick Creek",
+        "id": "era_skeeter_creek",
+        "label": "Skeeter Creek",
         "note": "founding, buried — no date given",
         "detail": "100+ years of private prestige; the founding name sanded to “Red Hills” a century before the Bishops arrived. No calendar date exists for this transition.",
         "order": 0,
@@ -90,7 +90,7 @@ WORLD_CLOCK_ERAS = [
         "id": "era_red_hills",
         "label": "Red Hills",
         "note": "the first rename — reach roughly a century before the Bishop acquisition, extent unstated",
-        "detail": "The rename lattice: Red Stick Creek → Red Hills → DCUS — erasure done twice.",
+        "detail": "The rename lattice: Skeeter Creek → Red Hills → DCUS — erasure done twice.",
         "order": 1,
     },
     {

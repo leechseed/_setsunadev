@@ -174,7 +174,7 @@ Kempton's seven genre registers are the readiest source for that register slot, 
 |---|---|
 | **T1** | Heterodiegetic, subsequent narration, reliable narrator with a reliability gap reserved for the Administration's documents |
 | **T2** | Internal fixed on Tori by default, variable per movement by design |
-| **T3** | Order told matches order happened as baseline; a licensed analepsis at each movement threshold recovers the buried name, Red Stick Creek, as forensic mode in Movement 3 |
+| **T3** | Order told matches order happened as baseline; a licensed analepsis at each movement threshold recovers the buried name, Skeeter Creek, as forensic mode in Movement 3 |
 | **T4** | Scene-gait default with stretch reserved for the crash |
 | **T5** | Iterative for the Star-Rating's ritual life and the Sync mechanics; repetitive reserved for the rename lattice's recurring legibility violation |
 | **T6** | Deep distance, FID yes, Southern Gothic register |
@@ -185,7 +185,7 @@ Kempton's seven genre registers are the readiest source for that register slot, 
 | **T11** | M1 prose with an M3 serial grammar |
 | **T12** | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Situation, the Past |
 
-Every value above is marked ⧗ and grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and Southern Gothic register ruled on the DCUS instance, the rename lattice, Red Stick Creek to Red Hills to DCUS, as S5 SCAR paratext ([../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). The layer doc's house finding stands without qualification: OXO has no ruled Telling Profile, no prose exists, and the whole discourse configuration is an unmade decision set. This table is that decision menu, filled with defaults for Chief to strike or keep line by line, not a ruling in itself.
+Every value above is marked ⧗ and grounded in what the canon docs already say: Tori as MC and the Driver ruled Action ([📐 ssot_01_story_spine_comparative_tree.md](📐%20ssot_01_story_spine_comparative_tree.md)), the six-movement descent and Southern Gothic register ruled on the DCUS instance, the rename lattice, Skeeter Creek to Red Hills to DCUS, as S5 SCAR paratext ([../03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). The layer doc's house finding stands without qualification: OXO has no ruled Telling Profile, no prose exists, and the whole discourse configuration is an unmade decision set. This table is that decision menu, filled with defaults for Chief to strike or keep line by line, not a ruling in itself.
 
 ---
 
