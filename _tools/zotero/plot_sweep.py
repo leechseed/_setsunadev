@@ -37,9 +37,9 @@ CANON = [
  ("Bordwell", "Narration in the Fiction Film", "narration in the fiction film"), ("Thompson, K.", "Storytelling in the New Hollywood", "storytelling in the new hollywood"),
  ("Mittell", "Complex TV", "complex tv"), ("Tobias", "20 Master Plots", "20 master plots"), ("Schmidt", "The Story Structure Architect", "story structure architect"),
  ("Yorke", "Into the Woods", "into the woods"), ("Snyder", "Save the Cat!", "save the cat"), ("Truby", "The Anatomy of Story", "anatomy of story"),
- ("McKee", "Story", r"^story\b|substance, structure"), ("Weiland", "Creating Character Arcs", "creating character arcs"),
- ("Dibell", "Plot", r"^plot\b|plot \(elements"), ("Lyons", "Rapid Story Development", "rapid story development"),
- ("Ingermanson", "The Snowflake Method", "snowflake"), ("Mateas & Sengers", "Narrative Intelligence", "narrative intelligence"),
+ ("McKee", "Story", r"^story: substance|substance, structure"), ("Weiland", "Creating Character Arcs", "creating character arcs"),
+ ("Dibell", "Plot", r"^plot( \(|\s+dibell|$)|plot \(elements"), ("Lyons", "Rapid Story Development", "rapid story development"),
+ ("Ingermanson", "The Snowflake Method", "snowflake"), ("Mateas & Sengers", "Narrative Intelligence", "narrative intelligence.*(mateas|sengers)|mateas"),
  ("Riedl & Young", "Narrative Planning", "narrative planning"), ("Howard", "Quests", r"^quests"), ("Robbins", "Microscope", "microscope"),
 ]
 
@@ -116,13 +116,18 @@ def merge(out):
     keep = list(best.values())
     heldtxt = " || ".join((c["title"] + " " + c["author"]).lower() for c in P["cands"] if c["src"] != "zlib-gap")
     inv = load(os.path.join(META, "inventory-live.json"))
-    heldall = " || ".join(((i.get("title") or "") + " " + " ".join(i.get("authors") or [])).lower() for i in inv)
-    gaptxt = " || ".join(c["title"].lower() for c in P["cands"] if c["src"] == "zlib-gap")
+    FAKE = re.compile(r"rhetoric of fiction", re.I)  # the drop's Booth is a 34-page spam summary (DROP-INTAKE 9/16)
+    heldall = [((i.get("title") or "") + " " + " ".join(i.get("authors") or [])) for i in inv
+               if not (i.get("src") == "drop" and FAKE.search(i.get("title") or ""))]
+    cat = load(os.path.join(META, "catalog.json")); cat = cat if isinstance(cat, list) else list(cat.values())
+    heldall += [str(r.get("t") or "") + " " + str(r.get("a") or "") for r in cat if isinstance(r, dict)]
+    gaptxt = [c["title"] for c in P["cands"] if c["src"] == "zlib-gap"]
     canon = []
     for au, ti, rx in CANON:
-        h = re.search(rx, heldall, re.I | re.M) is not None
-        g = (not h) and re.search(rx, gaptxt, re.I | re.M) is not None
-        canon.append({"author": au, "title": ti, "held": h, "in_zlib_favs": g})
+        hit = [t for t in heldall if re.search(rx, t, re.I)]
+        h = bool(hit)
+        g = (not h) and any(re.search(rx, t, re.I) for t in gaptxt)
+        canon.append({"author": au, "title": ti, "held": h, "in_zlib_favs": g, "match": hit[0][:70] if hit else ""})
     json.dump({"keep": keep, "canon": canon, "specimens": P["specimens"], "missing": missing}, io.open(os.path.join(META, "plot_sweep.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     L = [f"---\nid: BVX-LEARN.plot-sweep\ntitle: \"The plot sweep: every source that builds the plot system\"\ntype: report\ngenerated: 2026-09-23\nstatus: BOLO 77 · Chief: \"pull more plotting sources from the zotero, run a full sweep, get me every book that works\"\n---\n",
          "# The plot sweep · 2026-09-23\n",
@@ -137,7 +142,7 @@ def merge(out):
             L.append(f"| {k['tier']} | {where} | {k['bvx'] or '—'} | {k['clean']} | {k['author']} | {k['why']} |")
     L.append("\n## The canon check (named sources the plot system rests on)\n\n| Author | Title | State |\n|---|---|---|")
     for c in canon:
-        L.append(f"| {c['author']} | {c['title']} | {'held' if c['held'] else ('**GAP** · in your z-lib favourites' if c['in_zlib_favs'] else '**GAP** · not found anywhere')} |")
+        L.append(f"| {c['author']} | {c['title']} | {('held · ' + c['match']) if c['held'] else ('**GAP** · in your z-lib favourites' if c['in_zlib_favs'] else '**GAP** · not found anywhere')} |")
     L.append("\n## The specimen corpus (drop folder, counted by family)\n\n| Family | PDFs |\n|---|---|")
     for f, n in sorted(P["specimens"].items(), key=lambda x: -x[1]):
         L.append(f"| {f} | {n} |")
