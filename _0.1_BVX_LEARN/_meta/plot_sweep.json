@@ -7912,7 +7912,7 @@
   },
   {
    "id": "G2431",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Story Stakes: Your #1 Writing Skills Strategy to Transform Readers into Raving Fans & Keep Them Turning the Pages of Your Screenplay or Novel",
    "author": "H.R. D'Costa",
@@ -7921,7 +7921,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Story stakes and dramatic narrative structure",
+   "why": "Story stakes and dramatic narrative structure · landed 9/23",
    "clean": "Story Stakes: Your #1 Writing Skills Strategy to Transform Readers into Raving Fans & Keep Them Turning the Pages of Your Screenplay or Novel"
   },
   {
@@ -7996,7 +7996,7 @@
   },
   {
    "id": "G2453",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "The Art of Plotting - Add Emotion, Suspense, and Depth to Your Screenplay",
    "author": "Linda J. Cowgill",
@@ -8005,7 +8005,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Plot structure and dramatic screenplay design",
+   "why": "Plot structure and dramatic screenplay design · landed The Art of Plotting - Add Emotion, Suspe",
    "clean": "The Art of Plotting - Add Emotion, Suspense, and Depth to Your Screenplay"
   },
   {
@@ -11387,23 +11387,23 @@
   {
    "author": "Propp",
    "title": "Morphology of the Folktale",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Morphology of the Folktale"
   },
   {
    "author": "Genette",
    "title": "Narrative Discourse",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Narrative Discourse An Essay in Method"
   },
   {
    "author": "Genette",
    "title": "Narrative Discourse Revisited",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Narrative discourse revisited"
   },
   {
    "author": "Chatman",
@@ -11415,51 +11415,51 @@
   {
    "author": "Herman",
    "title": "Story Logic",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Story Logic Problems and Possibilities of Narrative (Frontiers of Narr"
   },
   {
    "author": "Rimmon-Kenan",
    "title": "Narrative Fiction: Contemporary Poetics",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Narrative Fiction Contemporary Poetics 2nd Edition (New Accents)"
   },
   {
    "author": "Ryan",
    "title": "Narrative as Virtual Reality",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Narrative as Virtual Reality 2 Revisiting Immersion and Interactivity "
   },
   {
    "author": "Ryan",
    "title": "Possible Worlds, Artificial Intelligence, and Narrative Theory",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Possible Worlds, Artificial Intelligence and Narrative Theory"
   },
   {
    "author": "Abbott",
    "title": "The Cambridge Introduction to Narrative",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "The Cambridge Introduction to Narrative"
   },
   {
    "author": "Brooks, P.",
    "title": "Reading for the Plot",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Reading for the Plot Design and Intention in Narrative"
   },
   {
    "author": "Sternberg",
    "title": "Expositional Modes and Temporal Ordering in Fiction",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Expositional Modes and Temporal Ordering in Fiction"
   },
   {
    "author": "Booth",
@@ -11470,23 +11470,23 @@
   {
    "author": "Bakhtin",
    "title": "The Dialogic Imagination",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "The dialogic imagination Four essays by M. M. Bakhtin"
   },
   {
    "author": "Bakhtin",
    "title": "Forms of Time and of the Chronotope",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "inside The Dialogic Imagination (landed 9/23)"
   },
   {
    "author": "Polti",
    "title": "The Thirty-Six Dramatic Situations",
-   "held": false,
+   "held": true,
    "in_zlib_favs": true,
-   "match": ""
+   "match": "The Thirty-Six Dramatic Situations"
   },
   {
    "author": "Booker",
@@ -11505,16 +11505,16 @@
   {
    "author": "Field",
    "title": "Screenplay: The Foundations of Screenwriting",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Screenplay The Foundations of Screenwriting"
   },
   {
    "author": "Todorov",
    "title": "The Poetics of Prose",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "The poetics of prose"
   },
   {
    "author": "Barthes",

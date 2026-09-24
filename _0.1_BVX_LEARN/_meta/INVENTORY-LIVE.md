@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8847** |
-| With a PDF attachment | 8847 |
-| PDF present on disk | 8755 |
+| Top-level items | **8867** |
+| With a PDF attachment | 8867 |
+| PDF present on disk | 8775 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7844** |
+| **New since the Dec-2023 catalog** | **7864** |
 | Story-side (CRE + LIT by catalog) | 337 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7669 |
+| NEW | 7689 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7844)
+## New since the catalog (7864)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -2767,6 +2767,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Experimental Technical Readout RetroTech |  |  |
 |  | Experimental Technical Readout Royal Fantasy Tournament |  |  |
 |  | EXPLORATION AND COLONY SPACECRAFTTM | Pulver, Jason, Vetromile, Barr |  |
+|  | Expositional Modes and Temporal Ordering in Fiction | Meir Sternberg |  |
 |  | Expressive Space | Gregory Whistance-Smith | 080006 - VIDEO GAME DESIGN |
 |  | Exquisite Curves Learn Composition an... |  | 080009 - PHOTOGRAPHY |
 |  | Exquisite Curves Learn Composition and Posing for Photographing the Fe |  |  |
@@ -4336,6 +4337,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | More Malcontent - Additional Content for The Malefactor |  |  |
 |  | More Random Encounters Remastered |  |  |
 |  | More Whispering Homunculus |  |  |
+|  | Morphology of the Folktale | Vladimir Propp, Laurence Scott |  |
 |  | Mothership Gradient Descent (Sean McCay)— |  | 080007 - TABLE TOP GAME DESIGN |
 |  | Mountains And Canyons |  |  |
 |  | Multiman |  |  |
@@ -4584,7 +4586,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Mythology World Myths, Gods, Heroes, Creatures, Mythical Places (EYEWI | Philip Wilkinson, Neil Philip |  |
 |  | MYTHS OF BABYLONIA AND ASSYRIA | Mackenzie |  |
 |  | Naked Lunch | William S. Burroughs |  |
+|  | Narrative as Virtual Reality 2 Revisiting Immersion and Interactivity  | Marie-Laure Ryan |  |
+|  | Narrative as virtual reality immersion and interactivity in literature | Marie-Laure Ryan |  |
 | 2025 | Narrative Context Protocol: An Open-Source Storytelling Framework for  | Gerba |  |
+|  | Narrative Discourse An Essay in Method | Gerard Genette |  |
+|  | Narrative discourse revisited | Genette, Gérard, 1930-, Genett |  |
+|  | Narrative Fiction Contemporary Poetics 2nd Edition (New Accents) | Shlomith Rimmon-Kenan |  |
 |  | Narrative Sequence in Contemporary Narratology (Raphaël Baroni, Franço |  |  |
 |  | Narrative Theory, Literature, and New... |  |  |
 | 2019 | Narratology | Liveley |  |
@@ -5143,6 +5150,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Plot (Elements of Fiction Writing) (A... |  |  |
 |  | Plotting A Fantasy Novel Learn Elements of Plot and Structure, Outlini | Tasha Dunn |  |
 |  | Plotting and writing suspense fiction | Highsmith, Patricia, 1921- |  |
+|  | Plotting and writing suspense fiction | Highsmith, Patricia, 1921- |  |
 |  | Plotto The Master Book of All Plots | William Wallace Cook | 02_PLOT SYUHZET |
 |  | Ploys And Plots - A Skill and Feat Collection |  |  |
 |  | Plunder & Peril |  |  |
@@ -5341,6 +5349,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Portraits | Helmut Newton |  |
 |  | Portraits | Helmut Newton |  |
 |  | position_illustration_supervio |  |  |
+|  | Possible Worlds, Artificial Intelligence and Narrative Theory | Marie-Laure Ryan |  |
 |  | Potions & Poisons |  |  |
 |  | Power Booty Gym (Lauren Simpson)— |  | HEALTH & FITNESS |
 |  | Power Booty Home (Lauren Simpson)— |  | HEALTH & FITNESS |
@@ -5619,6 +5628,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Razor Coast - Heart of the Razor |  |  |
 |  | Razor Coast - Map Folio |  |  |
 |  | Read Magic - Magic of the Stars |  |  |
+|  | Reading for the Plot Design and Intention in Narrative | Peter Brooks |  |
 |  | Real Estate Investment and Finance St... |  |  |
 |  | Real Estate License Exams For Dummies | John A. Yoegel |  |
 |  | Real Estate License Exams For Dummies | John A. Yoegel |  |
@@ -5772,6 +5782,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Roger Ebert - 1997 Roger Ebert's Book of Film. From Tolstoy to Taranti |  | 080002 - film & 080003 - television |
 |  | Rogue - Updated |  |  |
 |  | Rogues in Remballo |  |  |
+|  | Roland barthes, par Roland Barthes | Roland Barthes [Barthes, Rolan |  |
 |  | Rolando Gomezs Glamour Photography Pr... |  |  |
 |  | Rolando Gomezs Posing Techniques for... |  |  |
 |  | Roy Peter Clark - Writing Tools_ 50 Essential Strategies for Every Wri | 2008 |  |
@@ -6121,6 +6132,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Scenario 2-26 The Mantis's Prey |  |  |
 |  | SCENE 1 DRAFT 1 EVIL CHECK |  |  |
 |  | Scene Secrets | William C. Martell |  |
+|  | Scene Secrets | William C. Martell |  |
 |  | Science Fiction Codex of Lists 90 Ran... |  |  |
 |  | Science Fiction Codex of Lists 90 Ran... |  |  |
 |  | Science Fiction Writers Phrase Book ... |  |  |
@@ -6133,6 +6145,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Scorched Earth - Core Rulebook |  |  |
 |  | Scorched Earth - Warriors of Scorched Earth |  |  |
 |  | Scourge - The Deluxe Guide to Disease and Poison |  |  |
+|  | Screenplay The Foundations of Screenwriting | Syd Field |  |
 |  | Screenwriting The Sequence Approach (... |  |  |
 |  | Sd Resource Goldmine Final Update v3 |  | ARTIFICIAL INTELLIGENCE |
 |  | Sea Peoples of the Bronze Age Mediterranean c.1400 BC-1000 BC | Raffaele DAmato etc. |  |
@@ -6909,7 +6922,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Stonehouse Anatomy Notes by Seok Jung Hyun |  | 080004 - art |
 |  | Stonehouses Anatomy | Seok Jung Hyun | 080004 - art |
 |  | Story Character Archetypes |  |  |
+|  | Story Logic Problems and Possibilities of Narrative (Frontiers of Narr | David Herman |  |
 |  | Story Physics by Larry Brooks |  | 02_PLOT SYUHZET |
+|  | Story Stakes Your 1 Writing Skills Strategy to Transform Readers into  | H.R. DCosta |  |
 |  | Story Structure Report |  |  |
 |  | Story Treatment Report |  |  |
 |  | Storyform CHESS TEST |  |  |
@@ -7033,6 +7048,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Art of Metal Gear Solid V (Konami)— |  | 04_SETTING |
 |  | The Art of Overwatch | Blizzard | 04_SETTING |
 |  | The Art of Pin-Up | Dian Hanson, Sarahjane Blum, L | 080004 - art & 080005 - design |
+|  | The Art of Plotting - Add Emotion, Suspense, and Depth to Your Screenp | Linda J. Cowgill |  |
 |  | The Art of Prompt Engineering with chatGPT A Hands-On Guide | Nathan Hunter | COMPUTER SCIENCE & WEBDEV |
 |  | The Art of Psionics |  |  |
 |  | The Art of The Last of Us | Naugthy Dog | 04_SETTING |
@@ -7050,6 +7066,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Book of Beginnings |  |  |
 |  | The Book of Forbidden Magic |  |  |
 | 2022 | The Business of Fine Art Photography: Art Markets, Galleries, Museums, | Werner |  |
+|  | The Cambridge Introduction to Narrative | H. Porter Abbott |  |
 |  | The Camera | Ansel Adams, Robert Hardy Bake | 080002 - film & 080003 - television |
 |  | The City of Graves |  |  |
 |  | The Cleric Reforged |  |  |
@@ -7072,6 +7089,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Deductionist |  |  |
 |  | The Deluxe Guide to Fiend Summoning and Faustian Bargains |  |  |
 |  | The Demonologist |  |  |
+|  | The dialogic imagination Four essays by M. M. Bakhtin | Mikhail M. Bakhtin, Michael Ho |  |
 |  | The Dialogue Thesaurus A Fiction Writ... |  |  |
 |  | The Dialogue Thesaurus A Fiction Writ... |  |  |
 |  | The Dragon's Demand |  |  |
@@ -7285,6 +7303,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Pictorial Key To The Tarot | Waite |  |
 |  | The Plot Thickens 8 Ways to Bring Fic... |  |  |
 |  | The Plot Thickens 8 Ways to Bring Fic... |  |  |
+|  | The poetics of prose | Todorov, Tzvetan, 1939-2017 |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
@@ -7374,6 +7393,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Steamsinger - A Bard Tinker Prestige Class |  |  |
 |  | The Sublime (Blooms Literary Themes) (Harold Bloom (Editor) etc.) |  | 01_THEME |
 |  | The Templars The Rise and Spectacular Fall of God’s Holy Warriors | Dan Jones |  |
+|  | The Thirty-Six Dramatic Situations | Georges Polti |  |
 |  | The Tinker Master of Modular Mechanical Mayhem |  |  |
 |  | The Tomb of Caragthax the Reaver | Revised |  |
 |  | The Trading Mindwheel Eight Essential... |  |  |
