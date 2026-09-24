@@ -106,6 +106,9 @@ def merge(out):
             seen.add(c["id"])
             if v.get("works"):
                 keep.append({**c, "lane": v.get("lane", "?"), "tier": v.get("tier", 3), "why": v.get("why", ""), "clean": v.get("clean_title") or c["title"]})
+    # book-summary spam and fake scans found by opening the PDF (never a source): drop them from the keepers
+    JUNK = re.compile(r"SYD.?Screenplay.?PDF|Rhetoric Of Fiction", re.I)
+    keep = [k for k in keep if not (k["src"] == "drop" and JUNK.search(k["title"]))]
     missing = [i for i in by if i not in seen]
     # dedupe on normalized title, prefer held (zotero > drop > gap)
     norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())[:40]

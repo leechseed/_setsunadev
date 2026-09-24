@@ -8,10 +8,10 @@ status: BOLO 77 · Chief: "pull more plotting sources from the zotero, run a ful
 
 # The plot sweep · 2026-09-23
 
-Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged by title in PS batches. **699 work.** Held = a PDF is on the box; GAP = in the z-lib favourites only, upload wanted.
+Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged by title in PS batches. **753 work.** Held = a PDF is on the box; GAP = in the z-lib favourites only, upload wanted.
 
 
-## FABULA (31)
+## FABULA (37)
 
 | Tier | Where | ID | Title | Author | Why |
 |---|---|---|---|---|---|
@@ -37,17 +37,23 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Narrative Environments and Experience Design: Space as a Medium of Communication | Tricia Austin | Spatial narrative and environment design |
 | 2 | **GAP** | — | Narrative Space and Time: Representing Impossible Topologies in Literature | Elana Gomel | Narrative representation of space and time |
 | 2 | **GAP** | — | Space as Storyteller: Spatial Jumps in Architecture, Critical Theory, and Literature | Laura Chiesa | Space and narrative juxtaposition |
+| 2 | **GAP** | — | The Writer's Guide to Creating a Science Fiction Universe | George Ochoa; Jeffrey Osier | SF universe-building guide covers history/chronology construction |
 | 2 | **GAP** | — | Time: From Concept to Narrative Construct: A Reader (Narratologia: Contributions to Narrative Theory) | Jan Christoph Meister; Wilhelm Schernus  | Temporal narrative structure and chronology |
 | 2 | **GAP** | — | Topophrenia: Place, Narrative, and the Spatial Imagination | Robert T. Tally Jr | Spatial narrative and place-based storytelling |
+| 2 | **GAP** | — | World Building (Science Fiction Writing) | Ben Bova; Stephen Gillett | SF writing series guide to universe and history building |
+| 3 | held | BVX.0625 | The Routledge companion to big history | Benjamin, Quaedackers, Baker | companion on building large-scale chronology and causality across history |
 | 3 | held | BVX.0545 | Time and Temporality in the Mass Effect Series: A Narratological Approach | Zakowski | Temporality and narrative time in game series |
+| 3 | held | BVX.0857 | Timeline of world history | Baker | reference timeline, model for building the story-world's chronology |
 | 3 | **GAP** | — | Confabulations: Storytelling in Architecture | Paul Emmons; Marcia Feuerstein; Carolina | Narrative storytelling in architecture |
 | 3 | **GAP** | — | Fantasy Mapmaker | Jared Blando | Fantasy worldbuilding and spatial design |
+| 3 | **GAP** | — | Infrastructure in Video Games | Daniel Punday | game-world infrastructure and space, world/history-building |
 | 3 | **GAP** | — | Museum Making: Narratives, Architectures, Exhibitions | Suzanne Macleod; Laura Hourston Hanks; J | Narrative spaces in exhibition design |
 | 3 | **GAP** | — | Poetics of Underground Space: Architecture, Literature, Cinema | Antonello Boschi | Poetics of spatial narrative and setting |
 | 3 | **GAP** | — | The Routledge Handbook of Philosophy of Temporal Experience | Ian Phillips | Temporal philosophy and narrative time |
 | 3 | **GAP** | — | Timelines of Everything! | DK; Smithsonian | Timeline reference for historical and narrative chronology |
+| 3 | **GAP** | — | Worldbuilding: From Small Towns to Entire Universes (The Million Dollar Writing Series) | Kevin J. Anderson | worldbuilding guide spanning towns to universe history |
 
-## RAILS (142)
+## RAILS (166)
 
 | Tier | Where | ID | Title | Author | Why |
 |---|---|---|---|---|---|
@@ -95,9 +101,20 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 1 | **GAP** | — | The Art of Plotting - Add Emotion, Suspense, and Depth to Your Screenplay | Linda J. Cowgill | Plot structure and dramatic screenplay design |
 | 1 | **GAP** | — | The Palgrave Handbook of Script Development | Stayci Taylor; Craig Batty | Script development and screenwriting structure |
 | 1 | **GAP** | — | Write Great Fiction - Plot & Structure | James Scott Bell | Plot and story structure core methodology |
+| 2 | held (drop) | — | 1 EVIL CHECK Story Guide Report |  | Dramatica-based story analysis report on plot structure |
+| 2 | held (drop) | — | 10 RSD Premise Worksheet |  | RSD premise worksheet, Rapid Story Development method |
+| 2 | held (drop) | — | 3 EVIL CHECK Standard Plot and Themes Report |  | Dramatica report on standard plot and theme structure |
+| 2 | held (drop) | — | 4 EVIL CHECK Advanced Story Engine Points Report |  | Dramatica story engine points report, advanced plot method |
+| 2 | held (drop) | — | 6 EVIL CHECK Advanced Plot Signposts and Journey Report |  | Dramatica plot signposts and journey structure report |
+| 2 | held (drop) | — | 6 RSD Classic Story Middle Worksheet |  | RSD worksheet for classic story middle structure |
+| 2 | held (drop) | — | 7 RSD Narrative Engine Middle Worksheet |  | RSD worksheet for narrative engine middle development |
 | 2 | held | BVX.0048 | Actions & goals: the story structure secret | Dotson | Story structure through actions and goals development |
 | 2 | held | BVX.0054 | Anatomy of a Premise Line: How to Master Premise and Story Development for Writing Success | Lyons | Premise line mastery for story development and concept |
+| 2 | held (drop) | — | Developing Story Ideas: The Power and Purpose of Storytelling |  | method-rich book on developing premises into full stories |
+| 2 | held (drop) | — | EVIL CHECK Sequence 2 |  | Dramatica-based sequence report, plot structure method |
+| 2 | held (drop) | — | EVIL CHECK Sequence 3 |  | Dramatica-based sequence report continuing plot structure method |
 | 2 | held | BVX.0101 | Fiction Attack! Insider Secrets for Writing and Selling Your Novels & Stories -- For Self-Published and Traditional Authors | Bell | Fiction attack guide for plot and story development |
+| 2 | held (drop) | — | Full Dramatica Print |  | full Dramatica print, canonical story structure analysis output |
 | 2 | held | BVX.0107 | Great Stories Don't Write Themselves | Brooks | Story development and narrative structure guide |
 | 2 | held | BVX.0114 | How to Plot Romance Fiction | Harrington | Romance plot structure and development guide |
 | 2 | held | BVX.0124 | How to Write Short Stories And Use Them to Further Your Writing Career | Bell | Short story structure and narrative arc |
@@ -112,9 +129,13 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | held | BVX.0152 | Planning your novel: ideas and structure | Hardy | Idea development and story structure methodology |
 | 2 | held | BVX.0153 | Plot and Structure | Bell | Plot construction and structural principles |
 | 2 | held (drop) | — | Plot: Elements of Fiction Writing |  | Elements of fiction writing focused on plot craft |
+| 2 | held (drop) | — | Scene 1 Draft 1 — Evil Check (Dramatica report) |  | Dramatica-style evil-check story report on a scene draft |
 | 2 | held | BVX.0169 | Sizzling Story Outlines: How to Outline Your Screenplay or Novel, Always Know “What Happens Next,” and Finish Your Rough Draft Without Freaking Out | D'Costa | Screenplay and novel outlining method |
 | 2 | held | BVX.0171 | Spider, spin me a web: a handbook for fiction writers | Block | Fiction plotting and narrative construction |
+| 2 | held (drop) | — | Story Structure Report |  | Dramatica story structure report, plot method output |
+| 2 | held (drop) | — | Story Treatment Report |  | Dramatica story treatment report, plot method output |
 | 2 | held | BVX.0172 | Story engineering: mastering the 6 core competencies of successful writing | Brooks | Story structure and core competencies framework |
+| 2 | held (drop) | — | Storyform CHESS TEST |  | Dramatica storyform test, plot structure worksheet |
 | 2 | held | BVX.0188 | The 21st century screenplay: a comprehensive guide to writing tomorrow's films | Aronson | Contemporary screenplay structure and format |
 | 2 | held | BVX.0204 | The Complete Handbook of Novel Writing |  | Comprehensive novel writing and structure guide |
 | 2 | held | BVX.0208 | The Eight Crafts of Writing: The Map of Storytelling | Emunds | Eight-part storytelling structure framework |
@@ -164,6 +185,7 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Story Solution: 23 Actions All Great Heroes Must Take | Eric Edson | Hero's journey beats and narrative action structure |
 | 2 | **GAP** | — | Story Structure and Development | Craig Caldwell | Story structure and narrative development |
 | 2 | **GAP** | — | Story Structure and Development: A Guide for Animators, VFX Artists, Game Designers, and XR Creators | Craig Caldwell | Story structure for XR and animation |
+| 2 | **GAP** | — | Storynomics | Robert McKee & Thomas Gerace | McKee story-structure principles applied to storynomics |
 | 2 | **GAP** | — | Storytelling for Writers and Screenwriters: Creating Your Own Story Step by Step from Scratch | Emanuele M. Barboni Dalla Costa | Narrative structure and screenwriting craft |
 | 2 | **GAP** | — | Tell It Slant: Creating, Refining, and Publishing Creative Nonfiction | Brenda Miller; Suzanne Paola | Creative nonfiction narrative technique |
 | 2 | **GAP** | — | Telling True Stories. A nonfiction writer’s guide from the Nieman Foundation at Harvard University | Mark Kramer; Wendy Call; (eds.) | Narrative nonfiction writing guide |
@@ -179,6 +201,8 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Trough of Hell: How to Conclude Act Two of Your Screenplay with Maximum Impact | H.R. D'Costa | Act two structure and screenplay development |
 | 2 | **GAP** | — | Twenty-One Genres and How to Write Them | Dethier; Brock | Genre conventions and narrative structures |
 | 2 | **GAP** | — | Wonderbook : The Illustrated Guide to Creating Imaginative Fiction | Jeff VanderMeer | Fiction craft and imaginative narrative construction |
+| 2 | **GAP** | — | Writing Fiction For All You're Worth | James Scott Bell | Bell fiction-craft book covers plot and structure methods |
+| 2 | **GAP** | — | Writing Fiction For Dummies | Randy Ingermanson; Peter Economy | Ingermanson's Snowflake Method plotting system included |
 | 2 | **GAP** | — | Writing Fiction Step by Step | Josip Novakovich | Step-by-step fiction narrative structure |
 | 2 | **GAP** | — | Writing an Interactive Story | Pierre Lacombe; Gabriel Feraud; Clement  | Interactive story and branching narrative design |
 | 2 | **GAP** | — | Writing the Breakout Novel Workbook | Donald Maass | Novel structure and plotting techniques |
@@ -188,10 +212,16 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | held (drop) | — | Premise Worksheet |  | Story premise worksheet for plot foundation |
 | 3 | held (drop) | BVX.0157 | RAPID STORY DEVELOPMENT FULL WORKBOOK |  | Fast story development methodology and worksheets |
 | 3 | held (drop) | — | Story Middle Worksheet |  | Story structure worksheet for narrative middle development |
+| 3 | held | BVX.0177 | Storytelling for User Experience:  Crafting Stories for Better Design | Quesenbery, Brooks | UX storytelling book applies story structure to design work |
 | 3 | held | BVX.0190 | The Anatomy of a Best Seller: 3 Steps to Deconstruct Winning Books and Teach Yourself Craft | Black | Analysis of successful plot and story structures |
+| 3 | **GAP** | — | ChatGPT StorySpark System | Cindy Donovan | ChatGPT system for generating story premises/sparks |
 | 3 | **GAP** | — | How We Write - Writing As Creative Design | Mike Sharples | Writing process and creative method |
 | 3 | **GAP** | — | Inception: The Shooting Script | Christopher Nolan; Jonah Nolan | Exemplar complex plot structure in screenplay form |
+| 3 | **GAP** | — | Manuscript makeover : revision techniques no fiction writer can afford to ignore | Lyon; Elizabeth | revision techniques covering plot, pacing, structure issues |
+| 3 | **GAP** | — | Revising your novel - complete series | Janice Hardy | revision series addresses plot and pacing structure problems |
+| 3 | **GAP** | — | Screenwriter's Compass. Character As True North | Guy Gallo (Auth.) | screenwriting structure guide built on character throughline |
 | 3 | **GAP** | — | Storytelling in Design : Defining, Designing, and Selling Multidevice Products | Anna Dahlström | UX narrative and product storytelling |
+| 3 | **GAP** | — | The Basics of Filmmaking: Screenwriting, Producing, Directing, Cinematography, Audio, & Editing | Blain Brown | filmmaking basics includes screenwriting structure fundamentals |
 | 3 | **GAP** | — | The Structure of Writing: A Short How-To Guide to Organize Your Stories, Essays, Reports, and More (The Elements of Writing Book 7) | Charles Euchner | Story structure and organization guide |
 
 ## SCENE (65)
@@ -264,7 +294,7 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | **GAP** | — | The Aesthetics of Digital Montage: Film Editing and Technological Change | Marc Furstenau | Digital montage and narrative pacing in cinema |
 | 3 | **GAP** | — | The Dark Knight Trilogy - The Complete Screenplays with Storyboards | Nolan Christopher; Goyer David S; Nolan  | Exemplar screenplays with visual storyboard planning |
 
-## TROPES (47)
+## TROPES (53)
 
 | Tier | Where | ID | Title | Author | Why |
 |---|---|---|---|---|---|
@@ -282,8 +312,10 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | held | BVX.0576 | Film genre for the screenwriter | Selbo | Film genre taxonomy and structure for screenwriters |
 | 2 | held | BVX.0123 | How to Write Pulp Fiction | Bell | Pulp fiction genre conventions and plot |
 | 2 | held | BVX.0158 | Rapid story development: how to use the Enneagram-story connection to become a master storyteller | Lyons | Enneagram archetypes as story pattern system |
+| 2 | held (drop) | — | Story Character Archetypes |  | catalog of story character archetypes |
 | 2 | held | BVX.0258 | Women who run with the wolves: myths and stories of the wild woman archetype | Estés | Mythic female archetype and narrative patterns |
 | 2 | held | — | never-trust-a-hero | Hull | Narrative collection examining heroic archetypes and story patterns |
+| 2 | **GAP** | — | AI narratives: a history of imaginative thinking about intelligent machines | Stephen Cave; Kanta Dihal; Sarah Dillon | surveys recurring AI story tropes and myths across history |
 | 2 | **GAP** | — | Agatha Christie and New Directions in Reading Detective Fiction: Narratology and Detective Criticism | Alistair Rolls | Detective fiction plot and structure |
 | 2 | **GAP** | — | Cyberpunk: Stories of Hardware, Software, Wetware, Evolution, and Revolution | Pat Cadigan; Benjamin Parzybok; William  | Cyberpunk narrative themes and anthology |
 | 2 | **GAP** | — | Encyclopedia of American Folklife (4 Volume Set) | Simon J Bronner | American folklife and narrative traditions |
@@ -310,13 +342,17 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | held | BVX.0186 | The 101 Most Influential People Who Never Lived | Lazar | Fictional character archetypes and types |
 | 3 | held | BVX.1093 | The little book of Hollywood clichʹes: a compendium of movie clichʹes, stereotypes, obligatory scenes, hackneyed formulas, shopworn conventions and ou | Ebert | Hollywood plot clichés and formula patterns |
 | 3 | **GAP** | — | BDSM in American Science Fiction and Fantasy | Lewis Call (auth.) | Genre tropes and narrative themes |
+| 3 | **GAP** | — | Bullies, Bastards And Bitches: How To Write The Bad Guys Of Fiction | Jessica Morrell | villain/antagonist archetype catalog driving plot conflict |
 | 3 | **GAP** | — | Greek Nymphs: Myth, Cult, Lore | Jennifer Larson; Jennifer Lynn Larson | Mythological character archetypes |
 | 3 | **GAP** | — | National Geographic Essential Visual History of World Mythology | National Geographic | Mythology reference and archetypal narrative patterns |
 | 3 | **GAP** | — | Romance Tropes and Hooks | Karen Winter | Romance-specific plot hooks and trope reference |
 | 3 | **GAP** | — | Subhashitavali: An Anthology of Comic, Erotic and Other Verse | A.N.D. Haksar | Ancient erotic and comedic verse patterns |
+| 3 | **GAP** | — | The Complete Writer's Guide to Heroes and Heroines | Tami D. Cowden; Caro LaFever; Sue Viders | catalog of hero/heroine archetypes for fiction writers |
+| 3 | **GAP** | — | The Folklore of Birds | Edward A. Armstrong | catalogs recurring bird motifs and symbolism across myth, literature |
 | 3 | **GAP** | — | The Ultimate Encyclopedia Of Mythology | Arthur Cotterell | Comprehensive mythology reference and catalog |
+| 3 | **GAP** | — | Write Your Hero - Writer's Craft | Lewis Jorstad | hero-craft guide touches archetype and journey patterns |
 
-## SERIES (46)
+## SERIES (48)
 
 | Tier | Where | ID | Title | Author | Why |
 |---|---|---|---|---|---|
@@ -364,10 +400,12 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Transnational Korean Television: Cultural Storytelling and Digital Audiences (Transnational Communication and Critical/Cultural Studies) | Hyejung Ju | Korean television narrative and digital storytelling |
 | 2 | **GAP** | — | Writing the Pilot | William Rabkin | Television pilot narrative and series launch |
 | 2 | **GAP** | — | Writing the TV Drama Series 3rd edition: How to Succeed as a Professional Writer in TV | Pamela Douglas | TV drama series structure and narrative episodes |
+| 3 | **GAP** | — | Becoming a Writer, Staying a Writer: The Artistry, Joy, and Career of Storytelling | J. Michael Straczynski | showrunner's craft-and-career memoir on serial TV storytelling |
 | 3 | **GAP** | — | Convergent Wrestling: Participatory Culture, Transmedia Storytelling, and Intertextuality in the Squared Circle | CarrieLynn D. Reinhard; Christopher Olso | Transmedia narrative in wrestling culture |
 | 3 | **GAP** | — | Musical Theatre Script and Song Analysis Through the Ages | James Olm | Musical theater narrative analysis across eras |
+| 3 | **GAP** | — | The Greatest Cult Television Shows of All Time | Christopher J. Olson; CarrieLynn D. Rein | reference survey of cult TV serial shows |
 
-## GAME-RAILS (138)
+## GAME-RAILS (146)
 
 | Tier | Where | ID | Title | Author | Why |
 |---|---|---|---|---|---|
@@ -423,6 +461,7 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | held | BVX.0447 | GURPS Steampunk 1: Settings and Style | Games | Steampunk setting and genre for tabletop games |
 | 2 | held | BVX.0435 | GURPS for dummies | Griffith, Hartsfvang, Stuple | GURPS system guide for game narrative design |
 | 2 | held | BVX.0419 | Game Development 2042: The Future of Game Design, Development, and Publishing | Fields | Future of game design and narrative development |
+| 2 | held (drop) | — | GameMastery Guide | 1st Printing | GameMastery Guide, core GM procedure and campaign design book |
 | 2 | held (drop) | — | Headless Hydra - Viridian Legacy - Gamemaster's Guide |  | GM guidance for narrative and campaign |
 | 2 | held | BVX.0453 | Introduction to Game Systems Design | Gazaway | Introduction to game systems design methodology |
 | 2 | held | BVX.0454 | Ironsword: A Tabletop RPG of Perilous Quests | Tomkin | Tabletop RPG system with quest narrative structure |
@@ -434,8 +473,11 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | held | BVX.0144 | Once Upon a Pixel: Storytelling and Worldbuilding in Video Games | Paterson, Williams, Cordner | Game narrative structure and world-building |
 | 2 | held | BVX.0494 | Pattern language for game design | Barney | Narrative and design patterns for games |
 | 2 | held | BVX.0504 | Role-playing game studies: transmedia foundations | Zagal, Deterding | RPG narrative structure and procedural storytelling |
+| 2 | held (drop) | — | Shadows over Vathak - Colonies; Game Masters Guide |  | Game Masters Guide, campaign and adventure design |
+| 2 | held (drop) | — | Shadows over Vathak - Ina'oth Gamemasters Guide |  | Gamemasters Guide, campaign and adventure design |
 | 2 | held | BVX.0530 | Tabletop Role-Playing Games and the Experience of Imagined Worlds | Mizer | Collaborative narrative world-building in RPGs |
 | 2 | held | BVX.0529 | Tabletop game design for video game designers | Ham | Narrative design across tabletop and digital games |
+| 2 | held (drop) | — | The Cores of Game Design Mechanics, Economics, Narrative, and Aesthetics (Yvens R. Serpa) | z-library.sk, 1lib.sk, z-lib.sk | game design book, narrative as one of four core pillars |
 | 2 | held | — | The Solo Adventurer’s Toolbox | Bimler | Solo adventure toolbox for tabletop RPG craft |
 | 2 | held | BVX.0538 | The creation of narrative in tabletop role-playing games | Cover | Collaborative narrative creation in TRPG systems |
 | 2 | held | BVX.0540 | The game narrative toolbox | Heussner | Game narrative structure and tooling |
@@ -464,7 +506,6 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Practical Game Design | Ennio De Nucci; Adam Kramarzewski | Practical game design and mechanics structure |
 | 2 | **GAP** | — | Representing Conflicts in Games: Antagonism, Rivalry, and Competition | Björn Sjöblom; Jonas Linderoth; Anders F | Game conflict and antagonism narrative design |
 | 2 | **GAP** | — | Storyplaying: Agency and Narrative in Video Games | Sebastian Domsch | Player agency and narrative in video games |
-| 2 | **GAP** | — | The Cores of Game Design: Mechanics, Economics, Narrative, and Aesthetics | Yvens R. Serpa | Game design cores including mechanics and narrative |
 | 2 | **GAP** | — | The Game Designer's Playbook: An Introduction to Game Interaction Design | Samantha Stahlke | Game design and interaction craft |
 | 2 | **GAP** | — | The KOBOLD Guide to Game Design Volume II - How to Pitch, Playtest & Publish | Steve | Game design pitch and publication methodology |
 | 2 | **GAP** | — | The Ludotronics Game Design Methodology: From First Ideas to Spectacular Pitches and Proposals | J. Martin | Game design methodology from concept to pitch |
@@ -477,10 +518,12 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Writing for Interactive Media: Social Media, Websites, Applications, e-Learning, Games | Timothy Garrand | Writing for interactive media including game narrative |
 | 2 | **GAP** | — | writing games | Charles Hadfield; Jil Hadfield | Game writing and interactive narrative design |
 | 3 | held | BVX.0364 | BATTLETECH ERA REPORT 3062 |  | Tabletop game setting with plot and narrative context |
+| 3 | held (drop) | — | Beginner Box - Game Master's Guide |  | beginner GM guide teaches campaign and adventure running basics |
 | 3 | held | BVX.0395 | Conspiracy Theories | Crumb, Hooks | Conspiracy theories tabletop game supplement |
 | 3 | held | BVX.0401 | D6 Adventure: rulebook | Vrtis | Adventure RPG system with narrative structure |
 | 3 | held | BVX.0406 | Dungeons and Dragons RPG: Xanathar's guide to everything |  | D&D expansion and splatbook content |
 | 3 | held | BVX.0443 | GURPS Mass Combat | Games | Mass combat mechanics for tabletop game systems |
+| 3 | held (drop) | — | Game Masters Guide |  | generic GM guidance on running and designing campaigns |
 | 3 | held (drop) | — | Quests and Campaigns |  | Quest design and campaign structure for game narratives |
 | 3 | held | BVX.0532 | Teens in space: an RPG about interstellar impulsiveness | Gilmour, Levandowski, Devine, Vaughan | RPG narrative design example and mechanics |
 | 3 | held | BVX.0537 | The Book of Random Tables | Davids | Procedural narrative generation and GM tools |
@@ -501,6 +544,8 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | **GAP** | — | Spiralis - A Lovecraftian Roleplaying Game | Aaron M. Sturgill | Lovecraftian horror RPG and narrative |
 | 3 | **GAP** | — | Ten Candles: A Roleplaying Game of Tragic Horror | Stephen Dewey | Tragic horror RPG and narrative craft |
 | 3 | **GAP** | — | The Game Master's Book of Non-Player Characters | Jeff Ashworth | NPC design for campaign and adventure structure |
+| 3 | **GAP** | — | The Game Master's Book of Random Encounters: 500+ Customizable Maps, Tables and Story Hooks to Create 5th Edition Adventures on Demand | Jeff Ashworth | GM procedural tool for encounters and story hooks |
+| 3 | **GAP** | — | The Game Master's Book of Traps, Puzzles and Dungeons: A Punishing Collection of Bone-Crunching Contraptions, Brain-Teasing Riddles and Stamina-Testin | Jeff Ashworth | GM procedural guide for dungeon/trap/puzzle adventure design |
 | 3 | **GAP** | — | The Ultimate Random Encounters Book: Hundreds of Original Encounters to Help Bring Your Next RPG Adventure to Life | Wheeler; Travis "Wheels"; Jenkins; Logan | Campaign encounter design and adventure pacing |
 | 3 | **GAP** | — | Things from the Flood 90s Era Rpg, Hardback | Simon Stålenhag | Narrative RPG with Swedish horror setting |
 | 3 | **GAP** | — | Those Dark Places: Industrial Science Fiction Roleplaying | Jonathan Hicks | Industrial sci-fi RPG and quest design |
@@ -508,16 +553,19 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | **GAP** | — | Urban Shadows - Political Urban Fantasy Powered By The Apocalypse (1st Ed.) | Andrew Medeiros; Mark Diaz Truman | Powered-by-Apocalypse RPG and narrative |
 | 3 | **GAP** | — | Vampire: The Masquerade 5th Edition Roleplaying Game Core Rulebook | Kenneth Hite; Martin Ericsson; Matthew D | Vampire chronicle RPG and narrative mechanics |
 | 3 | **GAP** | — | Video Game Design For Dummies | Alexia Mandeville | Video game design fundamentals for beginners |
+| 3 | **GAP** | — | Video Game Spaces Image Play and Structure in 3D Worlds | Michael Nitsche | narrative structure of game space and interactive design |
 | 3 | **GAP** | — | d20 Modern Roleplaying Game: Core Rulebook | Bill Slavicsek; Jeff Grubb; Rich Redman; | d20 modern RPG and narrative rules |
 
-## THEORY (209)
+## THEORY (217)
 
 | Tier | Where | ID | Title | Author | Why |
 |---|---|---|---|---|---|
 | 1 | held | BVX.0555 | A historico-philosophical essay on the forms of great epic literature | Lukács | Philosophical essay on epic literature forms and structures |
+| 1 | held (drop) | — | Categorization by Narratology |  | Chief's own narratology categorization draft, canonical theory source |
 | 1 | held | BVX.0089 | Dramatica, A New Theory of Story | Phillips, Huntley | Dramatica comprehensive theory of story structure |
 | 1 | held | BVX.0583 | Handbook of diachronic narratology | Hühn, Pier, Schmid | Diachronic narratology handbook and theory |
 | 1 | held | BVX.0584 | Handbook of narratology | Hühn | Comprehensive narratology handbook reference |
+| 1 | held (drop) | — | Lajos Egri's Character Bone Structure |  | Egri's premise-driven dramatic structure theory, canonical craft source |
 | 1 | held | BVX.0823 | Myths to live by | Campbell | Mythic structure and narrative meaning-making |
 | 1 | held | — | Narratology | Liveley | Core foundational narratology text on story structure and discourse |
 | 1 | held | BVX.0596 | Narratology in Practice | Bal | Applied narratology: order, duration, focalization, voice |
@@ -527,7 +575,7 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 1 | held | BVX.0603 | Routledge Philosophy Guidebook to Aristotle and the Poetics |  | Philosophical exegesis of Aristotle's plot theory |
 | 1 | held | BVX.0161 | Routledge encyclopedia of narrative theory | Herman | Comprehensive reference for narrative theory concepts |
 | 1 | held | BVX.0616 | The Hero With a Thousand Faces | Campbell | Foundational monomyth and hero's journey structure |
-| 1 | held (drop) | — | Wayne C Booth The Rhetoric Of Fiction |  | Canonical narratology on narrative voice and rhetoric |
+| 1 | held (drop) | — | narratology_framework_thesis_draft_08092024 |  | Chief's own narratology framework thesis draft |
 | 1 | **GAP** | — | Aristotle: Poetics | Aristotle; Joe Sachs | Foundational dramatic and plot theory |
 | 1 | **GAP** | — | C. G. Jung’s Archetype Concept: Theory, Research and Applications | Christian Roesler | Jung's archetype theory and applications |
 | 1 | **GAP** | — | Current Trends in Narratology | Greta Olson | Contemporary narratology and narrative theory |
@@ -682,10 +730,13 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 2 | **GAP** | — | Trauma in Contemporary Literature: Narrative and Representation | Marita Nadal; Mónica Calvo | Trauma representation in literary narrative |
 | 2 | **GAP** | — | Understanding Metalepsis: The Hermeneutics of Narrative Transgression | Julian Hanebeck | Metalepsis and narrative transgression theory |
 | 2 | **GAP** | — | Unspeakable Sentences: Narration and Representation in the Language of Fiction | Ann Banfield | Narrative language and representation |
+| 3 | held (drop) | — | An Instructional Road Map for Text Structure |  | academic paper on narrative text structure and comprehension |
+| 3 | held (drop) | — | Basic Aspects of Narrative and Instructional Text |  | narrative science comparing story vs instructional text structure |
 | 3 | held (drop) | — | Narrative Theory, Literature, and New Media |  | Narrative theory and literature foundations |
 | 3 | held | BVX.0831 | The Inner Reaches of Outer Space: Metaphor as Myth and as Religion | Campbell | Myth structure and metaphorical narrative meaning |
 | 3 | held | BVX.0623 | The Oxford Dictionary of Literary Terms |  | Reference for narrative and plot terminology |
 | 3 | held | BVX.0626 | The Routledge companion to cyberpunk culture | McFarlane, Murphy, Schmeink | Cyberpunk genre conventions and narrative themes |
+| 3 | held (drop) | — | Thinking Theme The Heart of the Matter (Red Sneaker Writers Book Series 8) | William Bernhardt | fiction craft series book, theme ties to structure |
 | 3 | **GAP** | — | Aesthetic Sexuality: A Literary History of Sadomasochism | Romana Byrne | Literary history of sadism and sexual narrative |
 | 3 | **GAP** | — | Afterlife and Narrative in Contemporary Fiction | Alice Bennett (auth.) | Narrative representation of death and afterlife |
 | 3 | **GAP** | — | Animal Narratology | Joela Jacobs | Narrative perspective in animal narratives |
@@ -694,6 +745,7 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | **GAP** | — | English Translations of Shuihu Zhuan: A Narratological Perspective | Yunhong Wang | Narrative structure in epic translation |
 | 3 | **GAP** | — | Ethnic American Literatures and Critical Race Narratology | Alexa Weik von Mossner & Marijana Mikić  | Narratology applied to ethnic literature |
 | 3 | **GAP** | — | Ethos and narrative interpretation : the negotiation of values in fiction | Korthals Altes; Liesbeth | Ethical narratology and character ethos |
+| 3 | **GAP** | — | Explaining Traditions: Folk Behavior in Modern Culture | Simon J. Bronner | folkloristics theory bearing on tradition and narrative structure |
 | 3 | **GAP** | — | Haptic Modernism: Touch and the Tactile in Modernist Writing | Abbie Garrington | Sensory narrative technique in modernist literature |
 | 3 | **GAP** | — | Heroes and Legends of Fin-de-Siècle France: Gender, Politics, and National Identity | Venita Datta | Myth and legend narrative in French cultural history |
 | 3 | **GAP** | — | Ideologies of the Real in Title Sequences, Motion Graphics and Cinema | Michael Betancourt | Cinematic ideology and narrative framing |
@@ -717,11 +769,13 @@ Pool 2429 titles (Zotero · the drop folder · the z-lib favourites gap), judged
 | 3 | **GAP** | — | The Redemptive Self: Stories Americans Live By | Dan P. McAdams | Psychological narrative and identity formation |
 | 3 | **GAP** | — | The Rhetoric of Interruption: Speech-Making, Turn-Taking, and Rule-Breaking in Luke-Acts and Ancient Greek Narrative | Daniel Lynwood Smith | Rhetorical narrative techniques |
 | 3 | **GAP** | — | The Seduction of the Mediterranean - Homosexual Writing, Art and Fantasy | Robert Aldrich | Queer narrative and homoerotic desire in literature |
+| 3 | **GAP** | — | The Sensuous Cinema of Wong Kar-wai: Film Poetics and the Aesthetic of Disturbance | Bettinson; Gary | film poetics/narratology analysis of Wong Kar-wai's cinema |
 | 3 | **GAP** | — | The Space of Sex: The Porn Aesthetic in Contemporary Film and Television | Shelton Waldrep | Pornographic narrative aesthetics in film |
 | 3 | **GAP** | — | The Worlds of Hayao Miyazaki • The Influences and Inspiration Behind the Iconic Films | Nicolas Rapold | Miyazaki narrative and visual storytelling analysis |
 | 3 | **GAP** | — | Thinking Narratively: Between Novel-Essay and Narrative Essay | Massimo Fusillo (editor); Gianluigi Simo | Narrative essay form and hybrid writing |
 | 3 | **GAP** | — | Thucydides' war narrative : a structural study | Dewald; Carolyn; Thucydides | Classical historical narrative structure |
 | 3 | **GAP** | — | Up Close and Personal: The Teaching and Learning of Narrative Research | Ruthellen Josselson; Dan P. McAdams; Ami | Narrative research methodology and life stories |
+| 3 | **GAP** | — | Wes Anderson’s Symbolic Storyworld : A Semiotic Analysis. | Warren Buckland | semiotic narratology analysis of a filmmaker's storyworld |
 | 3 | **GAP** | — | writing sci-fi & fantasy: A Book of Writing Prompts | The San Francisco Writers’ Grotto & Doro | Science fiction and fantasy narrative prompts |
 
 ## COUNTER (5)

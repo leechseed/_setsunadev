@@ -1,0 +1,237 @@
+<title>The Plot Shelf</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the Command colorway: DARK only (ruled 9/11); E-INK gray when the viewer forces light */
+  :root {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20;
+    --line: #2B313B; --line-2: #3C4452;
+    --grid: color-mix(in srgb, var(--ink) 7%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", Consolas, "Liberation Mono", monospace;
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4; --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA; --link: #A83409;
+    --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE; --bad: #962C37; --bad-soft: #E6CCCF;
+    --line: #B5B5AE; --line-2: #97978F; --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5;
+    background-image: radial-gradient(var(--grid) 1px, transparent 1px); background-size: 22px 22px; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding-inline: 24px; padding-block: 22px 60px; }
+  button, input { font: inherit; color: inherit; }
+  button { background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+  .t { color: var(--link); border-bottom: 1px dotted color-mix(in srgb, var(--link) 55%, transparent); cursor: help; }
+
+  header.hd { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 18px 32px; align-items: end; padding-bottom: 18px; border-bottom: 1px solid var(--line-2); }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+  h1 { margin: 6px 0 8px; font-family: var(--display); font-weight: 800; font-size: clamp(40px, 5.4vw, 66px); line-height: .9; text-transform: uppercase; text-wrap: balance; }
+  h1 i { display: inline-block; width: 12px; height: 12px; background: var(--accent); margin-right: 10px; transform: translateY(-6px); }
+  .sub { margin: 0; color: var(--ink-2); max-width: 62ch; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); border: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 85%, transparent); }
+  .stat { padding: 10px 14px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; }
+  .stat small { display: block; font-family: var(--mono); font-size: 11px; color: var(--ink-2); margin-top: 4px; line-height: 1.3; }
+  .stat.hot b { color: var(--accent); } .stat.good b { color: var(--good); } .stat.warn b { color: var(--warn); }
+
+  /* lanes strip: the three parts of the system, then the support lanes */
+  .lanes { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); margin-top: 18px; border: 1px solid var(--line); }
+  .lane { text-align: left; padding: 10px 10px 12px; border-right: 1px solid var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); display: grid; gap: 4px; }
+  .lane:last-child { border-right: 0; }
+  .lane .ln { font-family: var(--display); font-weight: 700; font-size: 17px; text-transform: uppercase; letter-spacing: .02em; line-height: 1; }
+  .lane .part { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .lane .bar { display: flex; height: 8px; background: var(--line); margin-top: 4px; }
+  .lane .bar b { background: var(--good); } .lane .bar s { background: var(--accent); text-decoration: none; }
+  .lane .ct { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .lane.core { box-shadow: inset 0 3px 0 var(--accent); }
+  .lane:hover { background: var(--panel-2); }
+  .lane.on { background: var(--accent-soft); }
+
+  .ctl { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-top: 16px; }
+  .seg { display: inline-flex; border: 1px solid var(--line-2); }
+  .seg button { padding: 6px 12px; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); border-right: 1px solid var(--line-2); }
+  .seg button:last-child { border-right: 0; }
+  .seg button.on { background: var(--accent); color: #fff; }
+  #q { flex: 1 1 220px; min-width: 0; padding: 7px 10px; background: var(--panel); border: 1px solid var(--line-2); }
+  .copy { padding: 7px 14px; background: var(--accent); color: #fff; font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; }
+  .copy:hover { background: var(--accent-ink); }
+  .note { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+
+  .tbl { margin-top: 12px; border: 1px solid var(--line); overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14.5px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { position: sticky; top: 0; background: var(--panel); font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  td.ck { width: 34px; } td.ck input { width: 16px; height: 16px; accent-color: var(--accent); }
+  td.tier { font-family: var(--display); font-weight: 800; font-size: 20px; width: 36px; color: var(--ink-3); }
+  td.tier.t1 { color: var(--accent); }
+  td.ttl b { font-weight: 700; } td.ttl small { display: block; color: var(--ink-3); font-size: 12.5px; }
+  td.why { color: var(--ink-2); font-size: 13.5px; }
+  tr.done td { opacity: .45; } tr.done td.ttl b { text-decoration: line-through; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid currentColor; white-space: nowrap; line-height: 1.6; }
+  .ch-held { color: var(--good); } .ch-drop { color: var(--good); border-style: dashed; } .ch-gap { color: var(--accent); }
+  .lanechip { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .more { margin-top: 10px; }
+  .more button { padding: 7px 14px; border: 1px solid var(--line-2); font-family: var(--mono); font-size: 12px; }
+
+  section { margin-top: 34px; }
+  .sh { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; border-bottom: 1px solid var(--line-2); padding-bottom: 8px; margin-bottom: 12px; }
+  .sh h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 28px; line-height: 1; text-transform: uppercase; }
+  .sh .lbl { margin-left: auto; }
+  .lede { margin: -2px 0 12px; color: var(--ink-2); max-width: 80ch; }
+  .band { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 28px; }
+  .canon { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px; }
+  .cn { padding: 8px 10px; border: 1px solid var(--line); background: var(--panel); display: grid; gap: 3px; }
+  .cn.gap { border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+  .cn.fav { border-color: color-mix(in srgb, var(--warn) 60%, transparent); }
+  .cn b { font-size: 14px; } .cn small { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+  .spec { display: grid; gap: 2px; }
+  .sp { display: grid; grid-template-columns: minmax(0, 1fr) 60px; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+  .sp .v { font-family: var(--display); font-weight: 800; font-size: 22px; text-align: right; }
+  .sp .trk { grid-column: 1 / -1; height: 6px; background: var(--line); margin-top: -2px; }
+  .sp .trk b { display: block; height: 100%; background: color-mix(in srgb, var(--ink) 35%, transparent); }
+  footer.ft { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line-2); font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .tip { position: fixed; z-index: 50; width: 320px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 10px 12px; font-size: 14px; }
+  .tip b { font-family: var(--display); font-size: 19px; text-transform: uppercase; display: block; }
+  .toast { position: fixed; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); background: var(--good); color: #0F1216; padding: 8px 16px; font-family: var(--mono); font-size: 13px; }
+  @media (max-width: 1000px) {
+    header.hd, .band { grid-template-columns: 1fr; }
+    .lanes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .lane { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 560px) { .wrap { padding-inline: 16px; } .lanes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+
+<div class="wrap">
+  <header class="hd">
+    <div>
+      <div class="eyebrow">BOLO 77 · the plot sweep · 2026-09-23</div>
+      <h1><i></i>The Plot Shelf</h1>
+      <p class="sub">Every source that can build the plot system, judged across Zotero, the drop folder and your z-lib favourites. <b>Held</b> means the PDF is on the box. <b>Upload</b> means it's only in the favourites list, so it's yours to fetch. Tick a row once it lands.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="lanes" id="lanes"></div>
+
+  <div class="ctl">
+    <div class="seg" id="segWhere"><button data-v="all" class="on">All</button><button data-v="held">Held</button><button data-v="gap">Upload</button></div>
+    <div class="seg" id="segTier"><button data-v="0" class="on">Any tier</button><button data-v="1">Tier 1</button><button data-v="2">1–2</button></div>
+    <input id="q" type="search" placeholder="Search title or author…" autocomplete="off">
+    <button class="copy" id="copy">Copy upload list</button>
+    <span class="note" id="count"></span>
+  </div>
+  <div class="tbl"><table><thead><tr><th></th><th>Tier</th><th>Title</th><th>Lane</th><th>Where</th><th>Why it works</th></tr></thead><tbody id="tb"></tbody></table></div>
+  <div class="more" id="more"></div>
+
+  <section class="band">
+    <div>
+      <div class="sh"><h2>The canon check</h2><span class="lbl" id="canonLbl"></span></div>
+      <p class="lede">These are the names the plot system should rest on, including all eleven references in your 8/9/24 thesis draft, checked title by title against everything held. Amber titles are in your z-lib favourites. Orange titles aren't anywhere on the box or in the list.</p>
+      <div class="canon" id="canon"></div>
+    </div>
+    <div>
+      <div class="sh"><h2>Specimens</h2><span class="lbl">drop folder · counted, not judged</span></div>
+      <p class="lede">Published adventures are finished railroads. The track gets tested against them, the way Venice tested the setting system.</p>
+      <div class="spec" id="spec"></div>
+    </div>
+  </section>
+
+  <footer class="ft">
+    <span>Judged by title and author: 9 Haiku readers, then 4 Sonnet re-reads of the 521 rows the first pass rejected or skipped. RANGE: 2,429 of 2,429 got a verdict.</span>
+    <span>Removed after opening the PDF: the drop's "Syd Field Screenplay" and "Booth" files are book-summary spam.</span>
+    <span>Source: _0.1_BVX_LEARN/_meta/PLOT-SWEEP.md</span>
+  </footer>
+</div>
+<div class="tip" id="tip" hidden></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const DATA = /*DATA*/null;
+const LANES = [
+  ["FABULA", "part 1 · world time", "The story-world's own timeline: chronology, causality, history-building, time in narrative.", true],
+  ["TROPES", "part 2 · the graph", "Catalogs of situations, plots, archetypes, motifs and folktale functions. These are the nodes of the trope graph.", true],
+  ["RAILS", "part 3 · the syuzhet", "Plot structure, outlining, beat sheets, acts, sequences and story-development methods. This is the told path.", true],
+  ["SCENE", "support", "Scene craft: conflict, suspense, tension, reveals, pacing. The moving parts inside one station.", false],
+  ["SERIES", "support", "TV, serial, episodic and comics seriality. The Outliers is ruled a series.", false],
+  ["GAME-RAILS", "support", "Game and narrative design, quests, GM and campaign craft, branching. The only shelf that writes rails as procedure.", false],
+  ["THEORY", "support", "Narratology, poetics, myth and folklore structure, the science of story.", false],
+  ["COUNTER", "support", "Anti-formula and alternative structure. Every system gets one argument against it.", false],
+  ["AI-PLANNING", "support", "Computational story generation and narrative planning. The rails, written for a machine.", false]
+];
+(function () {
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const rows = DATA.rows;
+  let done = {}; try { done = JSON.parse(localStorage.getItem("plotShelfDone") || "{}"); } catch (e) {}
+  const save = () => { try { localStorage.setItem("plotShelfDone", JSON.stringify(done)); } catch (e) {} };
+  const st = { lane: null, where: "all", tier: 0, q: "", limit: 150 };
+
+  const held = rows.filter(r => r.h), gap = rows.filter(r => !r.h);
+  const canonGap = DATA.canon.filter(c => !c.held);
+  $("#stats").innerHTML = [
+    [rows.length, "sources that work", ""], [held.length, "held on the box", "good"], [gap.length, "to upload", "hot"],
+    [rows.filter(r => r.t === 1).length, "tier 1 (core)", ""], [canonGap.length + "/" + DATA.canon.length, "canon not held", "warn"]
+  ].map(s => `<div class="stat ${s[2]}"><b class="num">${s[0]}</b><small>${s[1]}</small></div>`).join("");
+
+  $("#lanes").innerHTML = LANES.map(L => {
+    const all = rows.filter(r => r.l === L[0]), h = all.filter(r => r.h).length, g = all.length - h, tot = Math.max(1, all.length);
+    return `<button class="lane ${L[3] ? "core" : ""}" data-lane="${L[0]}" data-tip="${esc(L[2])}" data-tt="${L[0]}"><span class="part">${L[1]}</span><span class="ln">${L[0]}</span><span class="bar"><b style="width:${h / tot * 100}%"></b><s style="width:${g / tot * 100}%"></s></span><span class="ct num">${h} held · ${g} upload</span></button>`;
+  }).join("");
+
+  function list() {
+    const q = st.q.toLowerCase();
+    return rows.filter(r => (!st.lane || r.l === st.lane) && (st.where === "all" || (st.where === "held" ? r.h : !r.h))
+      && (!st.tier || r.t <= st.tier) && (!q || (r.n + " " + r.a).toLowerCase().includes(q)))
+      .sort((a, b) => a.t - b.t || (a.h ? 0 : 1) - (b.h ? 0 : 1) || a.l.localeCompare(b.l) || a.n.localeCompare(b.n));
+  }
+  function render() {
+    const L = list(), show = L.slice(0, st.limit);
+    $("#tb").innerHTML = show.map(r => {
+      const where = r.h === 1 ? `<span class="chip ch-held">held${r.b ? " · " + esc(r.b) : ""}</span>` : r.h === 2 ? `<span class="chip ch-drop">held · drop</span>` : `<span class="chip ch-gap">upload</span>`;
+      const ck = r.h ? "" : `<input type="checkbox" id="c-${esc(r.i)}" data-id="${esc(r.i)}" ${done[r.i] ? "checked" : ""} aria-label="Mark uploaded">`;
+      return `<tr class="${done[r.i] ? "done" : ""}"><td class="ck">${ck}</td><td class="tier t${r.t} num">${r.t}</td><td class="ttl"><b>${esc(r.n)}</b><small>${esc(r.a)}</small></td><td class="lanechip">${r.l}</td><td>${where}</td><td class="why">${esc(r.w)}</td></tr>`;
+    }).join("") || `<tr><td colspan="6" class="note">No sources match these filters.</td></tr>`;
+    const up = L.filter(r => !r.h), upDone = up.filter(r => done[r.i]).length;
+    $("#count").textContent = `${L.length} shown${up.length ? ` · ${upDone}/${up.length} uploads ticked` : ""}`;
+    $("#more").innerHTML = L.length > st.limit ? `<button id="moreBtn">Show all ${L.length}</button>` : "";
+    document.querySelectorAll(".lane").forEach(b => b.classList.toggle("on", b.dataset.lane === st.lane));
+  }
+  $("#lanes").addEventListener("click", e => { const b = e.target.closest(".lane"); if (!b) return; st.lane = st.lane === b.dataset.lane ? null : b.dataset.lane; st.limit = 150; render(); });
+  function seg(id, key, num) { $(id).addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; st[key] = num ? +b.dataset.v : b.dataset.v; st.limit = 150; $(id).querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); render(); }); }
+  seg("#segWhere", "where"); seg("#segTier", "tier", true);
+  $("#q").addEventListener("input", e => { st.q = e.target.value; st.limit = 150; render(); });
+  $("#more").addEventListener("click", e => { if (e.target.id === "moreBtn") { st.limit = 1e9; render(); } });
+  $("#tb").addEventListener("change", e => { const c = e.target; if (!c.dataset.id) return; if (c.checked) done[c.dataset.id] = 1; else delete done[c.dataset.id]; save(); render(); });
+  function toast(m) { const t = $("#toast"); t.textContent = m; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 1800); }
+  $("#copy").addEventListener("click", () => {
+    const up = list().filter(r => !r.h && !done[r.i]);
+    const txt = up.map(r => `${r.a ? r.a + " — " : ""}${r.n}`).join("\n");
+    const ok = () => toast(`Copied ${up.length} titles`);
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, () => fallback(txt)); else fallback(txt);
+    function fallback(s) { const ta = document.createElement("textarea"); ta.value = s; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); ok(); } catch (e) { toast("Select and copy by hand"); } ta.remove(); }
+  });
+
+  $("#canonLbl").textContent = `${DATA.canon.filter(c => c.held).length} of ${DATA.canon.length} held`;
+  $("#canon").innerHTML = DATA.canon.slice().sort((a, b) => (a.held - b.held) || (b.in_zlib_favs - a.in_zlib_favs)).map(c =>
+    `<div class="cn ${c.held ? "" : (c.in_zlib_favs ? "fav" : "gap")}"><b>${esc(c.title)}</b><small>${esc(c.author)} · ${c.held ? "held" : (c.in_zlib_favs ? "in z-lib favourites" : "not found anywhere")}</small></div>`).join("");
+  const sp = Object.entries(DATA.spec).sort((a, b) => b[1] - a[1]), mx = Math.max(...sp.map(s => s[1]));
+  $("#spec").innerHTML = sp.map(s => `<div class="sp"><span>${esc(s[0])}</span><span class="v num">${s[1]}</span><span class="trk"><b style="width:${s[1] / mx * 100}%"></b></span></div>`).join("");
+
+  const tip = $("#tip");
+  document.addEventListener("mouseover", e => { const el = e.target.closest("[data-tip]"); if (!el) return; tip.innerHTML = `<b>${esc(el.dataset.tt)}</b>${esc(el.dataset.tip)}`; tip.hidden = false; const r = el.getBoundingClientRect(); tip.style.left = Math.min(innerWidth - tip.offsetWidth - 12, Math.max(12, r.left)) + "px"; tip.style.top = (r.bottom + 8) + "px"; });
+  document.addEventListener("mouseout", e => { if (e.target.closest("[data-tip]")) tip.hidden = true; });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") tip.hidden = true; });
+  render();
+})();
+</script>
