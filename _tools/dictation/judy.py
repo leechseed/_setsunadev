@@ -477,6 +477,8 @@ def main():
     ap.add_argument("--naked", action="store_true",
                     help="BOLO 74: Naked rides along: her pad, her face beside JUDY's, her voice, her model on :5001")
     ap.add_argument("--type-naked", help="skip the mic: one typed turn to Naked, then exit")
+    ap.add_argument("--naked-no-face", action="store_true",
+                    help="Naked rides along without her picture: pad and voice only (Chief 9/24, the launch sequence)")
     a = ap.parse_args()
 
     v = cfg().get("voice", {})
@@ -508,7 +510,7 @@ def main():
     if a.naked:
         # BOLO 74: her face is a second window beside JUDY's (a Toplevel of the same root)
         try:
-            if isinstance(face, Face):
+            if isinstance(face, Face) and not a.naked_no_face:
                 jp = None
                 try:
                     jp = json.load(io.open(POS, encoding="utf-8"))
