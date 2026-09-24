@@ -72,24 +72,28 @@
 
   /* ---- frame ---- */
   .app { height: 100vh; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 250px minmax(0, 1fr) 330px; grid-template-areas: "head head head" "ol panel rail" "foot foot foot"; }
-  header.head { grid-area: head; display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 80%, transparent); backdrop-filter: blur(6px); }
-  header.head > .row { display: flex; flex: 1 0 100%; align-items: stretch; }
-  .brand { display: flex; flex-direction: column; justify-content: center; padding: 10px 18px; border-right: 1px solid var(--line); min-width: 250px; }
-  .brand h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; letter-spacing: .04em; text-transform: uppercase; }
-  .brand h1 i { display: inline-block; width: 10px; height: 10px; background: var(--accent); margin-right: 8px; transform: translateY(-3px); }
-  .brand .sub { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); margin-top: 4px; letter-spacing: .04em; }
-  .ident { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); flex: 1; }
-  .ident > div { padding: 8px 16px; border-right: 1px solid var(--line); min-width: 0; }
-  .ident b { display: block; font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.1; }
-  .ident span { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: 3px; }
-  .ident p { margin: 2px 0 0; font-size: 13px; color: var(--ink-2); line-height: 1.35; }
-  .box { display: flex; align-items: center; gap: 12px; padding: 0 18px; border-left: 1px solid var(--line); }
-  .theme, .back { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; white-space: nowrap; }
-  .theme:hover, .back:hover { border-color: var(--accent); color: var(--ink); }
-  .stats { display: flex; flex: 1 0 100%; border-top: 1px solid var(--line); }
-  .stat { display: flex; align-items: baseline; gap: 8px; padding: 6px 16px; border-right: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
-  .stat b { font-family: var(--display); font-weight: 800; font-size: 20px; color: var(--ink); }
-  .stat.cls { margin-left: auto; border-right: 0; color: var(--ink-3); font-size: 11px; letter-spacing: .06em; }
+  /* ---- header: ONE strip, 44px (Chief 9/24: "way too big … the whole tool is unusable"). Ableton/Premiere/CK3: the chrome is a thin bar; the page is the content.
+     The edition block (edition · effective · prepared · distribution · supersedes) moved off the header into the rail, opened by the ED button. ---- */
+  header.head { grid-area: head; display: flex; align-items: center; gap: 14px; height: 44px; padding: 0 14px; border-bottom: 1px solid var(--line-2); background: color-mix(in srgb, var(--panel) 85%, transparent); overflow: hidden; }
+  .brand { display: flex; align-items: baseline; gap: 10px; min-width: 0; flex: 0 0 auto; }
+  .brand h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1; letter-spacing: .04em; text-transform: uppercase; }
+  .brand h1 i { display: inline-block; width: 8px; height: 8px; background: var(--accent); margin-right: 7px; transform: translateY(-2px); }
+  .brand .sub { font-family: var(--mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+  .hsearch { flex: 1 1 auto; min-width: 120px; max-width: 520px; display: flex; align-items: center; gap: 8px; }
+  .hsearch input { flex: 1; min-width: 0; font: 14px var(--body); padding: 5px 10px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); }
+  .hsearch .cnt { font-family: var(--mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+  .stats { display: flex; gap: 12px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; margin-left: auto; }
+  .stats b { color: var(--ink-2); font-weight: 500; }
+  .box { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+  .theme, .back, .edbtn { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; padding: 4px 8px; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; white-space: nowrap; background: none; cursor: pointer; }
+  .theme:hover, .back:hover, .edbtn:hover, .edbtn.on { border-color: var(--accent); color: var(--ink); }
+  .ident { display: grid; gap: 10px; }
+  .ident > div { padding-left: 12px; border-left: 2px solid var(--line-2); min-width: 0; }
+  .ident b { display: block; font-family: var(--display); font-weight: 700; font-size: 17px; line-height: 1.1; }
+  .ident span { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 2px; }
+  .ident p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.4; overflow-wrap: anywhere; }
+  .ident .cls { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  @media (max-width: 900px) { .brand .sub, .stats { display: none; } }
 
   /* ---- left rail: sections + mode ---- */
   nav.ol { grid-area: ol; border-right: 1px solid var(--line-2); padding: 18px 0; overflow-y: auto; background: color-mix(in srgb, var(--panel) 55%, transparent); position: relative; }
@@ -108,22 +112,22 @@
 
   /* ---- panel ---- */
   main.panel { grid-area: panel; overflow-y: auto; padding: 22px 34px 40px; position: relative; scroll-behavior: smooth; }
-  .tools { position: sticky; top: -22px; z-index: 5; background: var(--bg); padding: 8px 0 10px; margin: -8px 0 6px; border-bottom: 1px solid var(--line-2); }
+  .tools { position: sticky; top: -22px; z-index: 5; background: var(--bg); padding: 6px 0 6px; margin: -8px 0 6px; border-bottom: 1px solid var(--line-2); }
   .search { display: flex; gap: 10px; align-items: center; }
   .search input { flex: 1; max-width: 560px; font: 17px var(--body); padding: 10px 14px; border: 1px solid var(--line-2); background: var(--panel); color: var(--ink); }
   .search .cnt { font-family: var(--mono); font-size: 12px; color: var(--ink-3); white-space: nowrap; }
-  .az { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 10px; }
-  .az button { font-family: var(--display); font-weight: 700; font-size: 17px; width: 30px; height: 30px; border: 1px solid var(--line); color: var(--ink-2); }
+  .az { display: flex; flex-wrap: wrap; gap: 1px; }
+  .az button { font-family: var(--mono); font-weight: 500; font-size: 11.5px; width: 22px; height: 22px; border: 1px solid transparent; color: var(--ink-2); }
   .az button:hover { border-color: var(--accent); color: var(--ink); }
   .az button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
   .az button:disabled { color: var(--line-2); border-color: var(--line); cursor: default; }
-  .sec { margin-top: 26px; scroll-margin-top: 110px; }
+  .sec { margin-top: 26px; scroll-margin-top: 44px; }
   .sec .sh { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 6px; margin-bottom: 4px; }
   .sec .sh .sn { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; color: var(--accent); }
   .sec .sh h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; }
   .sec .sh .cnt { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
   .sec p.plain { margin: 6px 0 8px; font-size: 15.5px; color: var(--ink-2); max-width: 70ch; }
-  .letter { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: 1; color: var(--ink-3); margin: 26px 0 4px; border-bottom: 2px solid var(--ink); scroll-margin-top: 110px; }
+  .letter { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: 1; color: var(--ink-3); margin: 26px 0 4px; border-bottom: 2px solid var(--ink); scroll-margin-top: 44px; }
   .ent { display: grid; grid-template-columns: 62px 1fr; gap: 4px 14px; padding: 12px 0; border-bottom: 1px solid var(--line); align-items: start; }
   .ent .no { font-family: var(--mono); font-size: 12px; color: var(--ink-3); padding-top: 8px; }
   .ent .tw { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
@@ -201,12 +205,10 @@
 
 <div class="app" id="app">
   <header class="head">
-    <div class="row">
-      <div class="brand"><h1><i></i>SOI</h1><div class="sub" id="brandSub">Signal Operating Instructions · the brevity</div></div>
-      <div class="ident" id="ident"></div>
-      <div class="box"><a class="back" id="backLink" href="#" target="_blank" rel="noopener">← the board</a></div>
-    </div>
+    <div class="brand"><h1><i></i>SOI</h1><span class="sub" id="brandSub">Signal Operating Instructions</span></div>
+    <div class="hsearch"><input id="q" type="search" placeholder="Search the tongue…  ( / )" autocomplete="off"><span class="cnt" id="qCnt"></span></div>
     <div class="stats" id="stats"></div>
+    <div class="box"><button class="edbtn" id="edBtn" title="E · the edition block">Ed. <span id="edNo"></span></button><a class="back" id="backLink" href="#" target="_blank" rel="noopener">← board</a></div>
   </header>
 
   <nav class="ol" id="ol" aria-label="Sections">
@@ -218,7 +220,6 @@
 
   <main class="panel" id="panel" tabindex="-1">
     <div class="tools">
-      <div class="search"><input id="q" type="search" placeholder="Search the tongue… (press / to focus)" autocomplete="off"><span class="cnt" id="qCnt"></span></div>
       <div class="az" id="az"></div>
     </div>
     <div id="body"></div>
@@ -232,6 +233,7 @@
     <span><kbd>/</kbd> search</span>
     <span><kbd>1</kbd>–<kbd>9</kbd> section</span>
     <span><kbd>A</kbd> A to Z</span>
+    <span><kbd>E</kbd> edition</span>
     <span>hover a <a class="t" data-t="soi" tabindex="0">blue term</a> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
     <span class="r" id="footR"></span>
   </footer>
@@ -253,15 +255,17 @@ const BOARD_URL = 'https://claude.ai/code/artifact/aebe5f9c-9f2c-4cb8-abbf-714a0
 $('#backLink').href = BOARD_URL;
 
 /* ---- header: the SOI's own identity block ---- */
-$('#ident').innerHTML = `<div><b class="num">${esc(S.edition)}</b><span>edition</span></div>
-  <div><b>${esc(S.effective)}</b><span>effective</span></div>
+const IDENT_HTML = `<h4 style="margin:0 0 10px;font-family:var(--display);font-weight:700;font-size:18px;text-transform:uppercase">The edition</h4><div class="ident"><div><span>edition</span><b class="num">${esc(S.edition)}</b></div>
+  <div><span>effective</span><p>${esc(S.effective)}</p></div>
   <div><span>prepared · approved</span><p>${esc(S.prepared_by)} · ${esc(S.approved_by)}</p></div>
   <div><span>distribution</span><p>${esc(S.distribution)}</p></div>
-  <div><span>supersedes</span><p>${esc(S.supersedes)}</p></div>`;
+  <div><span>supersedes</span><p>${esc(S.supersedes)}</p></div>
+  <div><span>classification</span><p class="cls">${esc(S.classification)}</p></div></div>`;
+$('#edNo').textContent = S.edition;
 const entries = Object.entries(G);
 const nP = entries.filter(([k, g]) => g.k === 'proword').length;
 const nRuled = entries.filter(([k, g]) => g.k === 'proword' && g.st === 'ruled').length;
-$('#stats').innerHTML = `<div class="stat"><b class="num">${entries.length}</b> terms</div><div class="stat"><b class="num">${nP}</b> prowords · ${nRuled} ruled</div><div class="stat"><b class="num">${S.codebook.length}</b> codebook rows</div><div class="stat"><b class="num">${S.changes.length}</b> change dates</div><div class="stat cls">${esc(S.classification)}</div>`;
+$('#stats').innerHTML = `<span><b>${entries.length}</b> terms</span><span><b>${nP}</b> prowords · ${nRuled} ruled</span><span><b>${S.codebook.length}</b> codebook</span>`;
 $('#footR').textContent = `SOI · edition ${S.edition} · SOP.md is canonical on any conflict`;
 
 /* ---- numbering: section.index, alphabetical within section ---- */
@@ -326,7 +330,7 @@ let hist = [];
 function railRest() {
   $('#railBody').innerHTML = `<h4>What this is</h4><div class="ctx">
     <div class="c"><span class="lbl">The book</span><p>Signal Operating Instructions: the booklet a radio operator carries with the call signs, the frequencies, and the prowords. This is the Command's. SOP.md §0 is its pocket extract.</p></div>
-    <div class="c"><span class="lbl">How to browse</span><p>Search from the top, go by letter on the A to Z rail, or by section on the left. Every blue term is live: hover, hold to lock, click to open its card here.</p></div>
+    <div class="c"><span class="lbl">How to browse</span><p>Search in the top bar (/), go by letter on the A to Z rail, or by section on the left. Every blue term is live: hover, hold to lock, click to open its card here.</p></div>
     <div class="c"><span class="lbl">What you did</span><p>Ruled the words marked RULED, one by one since 8/21; on 9/10 ruled that the book is a page of its own; on 9/16 named the whole operation the Command and seated the crew by grade.</p></div>
     <div class="c"><span class="lbl">What's next</span><p>BOLO 37 moves proword rulings into a daily selection loop; the benched words wait in it. Name the loop and the bench empties. The crew grades are provisional until they survive a week.</p></div></div>`;
 }
@@ -382,7 +386,10 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else { hist = []; railRest(); } return; }
   if (e.key === ' ' && tips.length) { e.preventDefault(); lock(tips[tips.length - 1]); return; }
   if ((e.key === 'b' || e.key === 'B')) { const bb = $('#railBack'); if (bb) bb.click(); return; }
+  if (e.key === 'e' || e.key === 'E') { showEdition(); return; }
 });
+function showEdition() { const on = $('#edBtn').classList.toggle('on'); if (on) { $('#railBody').innerHTML = IDENT_HTML; } else { railRest(); } }
+$('#edBtn').addEventListener('click', showEdition);
 renderBody(); railRest();
 const h = location.hash.replace('#', ''); if (h && G[h]) { openTerm(h); }
 </script>
