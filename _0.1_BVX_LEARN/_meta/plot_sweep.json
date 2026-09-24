@@ -4342,7 +4342,7 @@
   },
   {
    "id": "G188",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "C. G. Jung’s Archetype Concept: Theory, Research and Applications",
    "author": "Christian Roesler",
@@ -4351,7 +4351,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Jung's archetype theory and applications",
+   "why": "Jung's archetype theory and applications · landed C. G. Jung’s Archetype Concept Theory, R",
    "clean": "C. G. Jung’s Archetype Concept: Theory, Research and Applications"
   },
   {
@@ -5728,7 +5728,7 @@
   },
   {
    "id": "G1131",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Current Trends in Narratology",
    "author": "Greta Olson",
@@ -5737,7 +5737,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Contemporary narratology and narrative theory",
+   "why": "Contemporary narratology and narrative theory · landed Current Trends in Narratology (Greta Ols",
    "clean": "Current Trends in Narratology"
   },
   {
@@ -5784,7 +5784,7 @@
   },
   {
    "id": "G1135",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Emerging Vectors of Narratology",
    "author": "Per Krogh Hansen; John Pier; Philippe Ro",
@@ -5793,7 +5793,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Contemporary narratology developments",
+   "why": "Contemporary narratology developments · landed Emerging Vectors of Narratology (Per Kro",
    "clean": "Emerging Vectors of Narratology"
   },
   {
@@ -5952,7 +5952,7 @@
   },
   {
    "id": "G1149",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Narratology Beyond Literary Criticism: Mediality and Disciplinarity (Narratologia)",
    "author": "Jan Cristoph Meister",
@@ -5961,7 +5961,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Cross-media narratology theory",
+   "why": "Cross-media narratology theory · landed Narratology Beyond Literary Criticism Me",
    "clean": "Narratology Beyond Literary Criticism: Mediality and Disciplinarity (Narratologia)"
   },
   {
@@ -6862,7 +6862,7 @@
   },
   {
    "id": "G2086",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Narrative Factuality: A Handbook",
    "author": "Monika Fludernik (editor); Marie-Laure R",
@@ -6871,7 +6871,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Factuality and narrative structure",
+   "why": "Factuality and narrative structure · landed 9/24 (matched by hand)",
    "clean": "Narrative Factuality: A Handbook"
   },
   {
@@ -7408,7 +7408,7 @@
   },
   {
    "id": "G2276",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Writing a Successful TV Series: How to Pitch and Develop Projects for Television and Online Streaming",
    "author": "Emmanuel Oberg",
@@ -7417,7 +7417,7 @@
    "tags": "",
    "lane": "SERIES",
    "tier": 1,
-   "why": "TV series pitch, development, and episode structure",
+   "why": "TV series pitch, development, and episode structure · landed Writing a Successful TV Series How to Pi",
    "clean": "Writing a Successful TV Series: How to Pitch and Develop Projects for Television and Online Streaming"
   },
   {
@@ -7520,7 +7520,7 @@
   },
   {
    "id": "G2291",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Save the Cat! Writes a Young Adult Novel",
    "author": "Jessica Brody",
@@ -7529,7 +7529,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Save the Cat beat structure for young adult",
+   "why": "Save the Cat beat structure for young adult · landed Save the Cat Writes a Young Adult Novel ",
    "clean": "Save the Cat! Writes a Young Adult Novel"
   },
   {
@@ -7576,7 +7576,7 @@
   },
   {
    "id": "G2308",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Story Maps",
    "author": "Daniel P. Calvisi",
@@ -7585,7 +7585,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Story maps and visual plot structure",
+   "why": "Story maps and visual plot structure · landed Story Maps (Daniel P. Calvisi) (z-librar",
    "clean": "Story Maps"
   },
   {
@@ -7702,7 +7702,7 @@
   },
   {
    "id": "G2353",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Outline Your Books Or Die!: Secrets of Writing Fiction that Sells: Plotting, Authorship, Novel Outlining Techniques (How To Write Book 5)",
    "author": "Jim Driver",
@@ -7711,7 +7711,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Outlining and fiction plotting techniques",
+   "why": "Outlining and fiction plotting techniques · landed Outline Your Books Or Die Secrets of Wri",
    "clean": "Outline Your Books Or Die!: Secrets of Writing Fiction that Sells: Plotting, Authorship, Novel Outlining Techniques (How To Write Book 5)"
   },
   {
@@ -7814,7 +7814,7 @@
   },
   {
    "id": "G2373",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Story Fix: Transform Your Novel from Broken to Brilliant",
    "author": "Larry Brooks",
@@ -7823,7 +7823,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 1,
-   "why": "Story structure transformation and plot repair",
+   "why": "Story structure transformation and plot repair · landed 9/24 (matched by hand)",
    "clean": "Story Fix: Transform Your Novel from Broken to Brilliant"
   },
   {
@@ -8598,7 +8598,7 @@
   },
   {
    "id": "G2638",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "STORY MAPS: TV Drama: The Structure of the One-Hour Television Pilot",
    "author": "Calvisi Daniel",
@@ -8607,7 +8607,7 @@
    "tags": "",
    "lane": "SERIES",
    "tier": 1,
-   "why": "TV drama structure and pilot story maps",
+   "why": "TV drama structure and pilot story maps · landed Story Maps (Daniel P. Calvisi) (z-librar",
    "clean": "STORY MAPS: TV Drama: The Structure of the One-Hour Television Pilot"
   },
   {
@@ -9256,7 +9256,7 @@
   },
   {
    "id": "G3279",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Comics and Sequential Art: Principles and Practice of the World's Most Popular Art Form",
    "author": "Will Eisner",
@@ -9265,7 +9265,7 @@
    "tags": "",
    "lane": "SERIES",
    "tier": 1,
-   "why": "Canonical sequential art principles and cognition",
+   "why": "Canonical sequential art principles and cognition · landed Comics and Sequential Art Principles and",
    "clean": "Comics and Sequential Art: Principles and Practice of the World's Most Popular Art Form"
   },
   {
@@ -9830,7 +9830,7 @@
   },
   {
    "id": "G3670",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "STORY-MAPS: How to Write a Great Screenplay",
    "author": "Daniel P. Calvisi",
@@ -9839,7 +9839,7 @@
    "tags": "",
    "lane": "RAILS",
    "tier": 2,
-   "why": "Story mapping and screenplay structure methodology",
+   "why": "Story mapping and screenplay structure methodology · landed Story Maps (Daniel P. Calvisi) (z-librar",
    "clean": "STORY-MAPS: How to Write a Great Screenplay"
   },
   {

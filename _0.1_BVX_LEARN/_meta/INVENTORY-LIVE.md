@@ -2,7 +2,7 @@
 id: BVX-LEARN.inventory-live
 title: "Zotero live-library inventory"
 type: report
-generated: 2026-09-23
+generated: 2026-09-24
 source: "C:\Users\U01_LEECHSEED\Zotero\zotero.sqlite"
 status: BOLO 18 stage 2 - step 1
 ---
@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8875** |
-| With a PDF attachment | 8875 |
-| PDF present on disk | 8783 |
+| Top-level items | **8888** |
+| With a PDF attachment | 8888 |
+| PDF present on disk | 8796 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7872** |
+| **New since the Dec-2023 catalog** | **7885** |
 | Story-side (CRE + LIT by catalog) | 337 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7697 |
+| NEW | 7710 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7872)
+## New since the catalog (7885)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -1379,6 +1379,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | buk |  |  |
 |  | Business Models; Innovation, Digital Transformation, and Analytics | Otola |  |
 |  | Butcha-U Box - The Complete POOTERS Collection |  |  |
+|  | C. G. Jung’s Archetype Concept Theory, Research and Applications | Christian Roesler |  |
+|  | C. G. Jung’s Archetype Concept Theory, Research and Applications (Chri |  |  |
 |  | C8E2D86CEFFD4C5AAD7E42150BE1A023 |  |  |
 |  | c91dd8487917ce8779df12c7339d1eef |  |  |
 |  | C98C3EA2836F4D1D9D2BC40A158D6C5A |  |  |
@@ -1578,6 +1580,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Combat Pad |  |  |
 |  | Combat Town SOP |  | MILITARY SCIENCE |
 |  | combat_record_sheet |  |  |
+|  | Comics and Sequential Art Principles and Practice of the Worlds Most P | Will Eisner |  |
 |  | Communication Strategy |  | MILITARY SCIENCE |
 |  | Companions of the Firmament |  |  |
 |  | Companions of the Firmament - Monster Sheets Dragons, Expanded Flying |  |  |
@@ -1656,6 +1659,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Crypt of the Sun Lord |  |  |
 |  | Cult of the Ebon Destroyers |  |  |
 |  | CURRENT  Jay Cardenas Culinary 2020 resume |  |  |
+|  | Current Trends in Narratology | Greta Olson |  |
 | 2016 | Curse of Strahd: [unravel the mysteries of Ravenloft in this dread adv | Perkins, Crawford, Mearls |  |
 | 2016 | Curse of Strahd: unravel the mysteries of Ravenloft in this dread adve | Perkins, Crawford, Mearls, Wiz | 08_FUZZ INTERTEXT AND GENRE |
 |  | Curse of the Crimson Throne - 01 - Edge of Anarchy |  |  |
@@ -2611,6 +2615,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Elves of Golarion |  |  |
 |  | emacs-refcard |  |  |
 |  | emacs-refcard-1 |  |  |
+|  | Emerging Vectors of Narratology | Per Krogh Hansen, John Pier et |  |
 |  | Emotional structure creating the stor... |  |  |
 |  | Empires Aflame |  |  |
 |  | EN Publishing - Bride of Portable Hole |  |  |
@@ -4594,12 +4599,14 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2025 | Narrative Context Protocol: An Open-Source Storytelling Framework for  | Gerba |  |
 |  | Narrative Discourse An Essay in Method | Gerard Genette |  |
 |  | Narrative discourse revisited | Genette, Gérard, 1930-, Genett |  |
+|  | Narrative Factuality A Handbook | etc. |  |
 |  | Narrative Fiction Contemporary Poetics 2nd Edition (New Accents) | Shlomith Rimmon-Kenan |  |
 |  | Narrative Intelligence (Michael Mateas, Phoebe Sengers (Eds.)) |  |  |
 |  | Narrative Sequence in Contemporary Narratology (Raphaël Baroni, Franço |  |  |
 |  | Narrative strategies in television series | Allrath, Gaby, 1971- Gymnich,  |  |
 |  | Narrative Theory, Literature, and New... |  |  |
 | 2019 | Narratology | Liveley |  |
+|  | Narratology Beyond Literary Criticism Mediality and Disciplinarity (Na | Jan Christoph Meister |  |
 |  | narratology_framework_thesis_draft_08092024 |  |  |
 |  | NASA Systems Engineering Handbook |  |  |
 |  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar |  |  |
@@ -4748,6 +4755,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Outlaws of Alkenstar AP - 3 of 3 - Smoking Gun |  |  |
 |  | Outlaws of Alkenstar AP - 3 of 3 - Smoking Gun - Interactive Maps |  |  |
 |  | Outlaws of Alkenstar AP - Players Guide |  |  |
+|  | Outline Your Books Or Die Secrets of Writing Fiction that Sells Plotti | Jim Driver |  |
 |  | Outlines And The Thematic Method (Screenwriting Blue Books Book 2) | William C. Martell |  |
 |  | packing slip reverb-6ddffc51e36d332ad8c6f2d89468d871 |  |  |
 |  | Pact Magic Unbound - Volume I |  |  |
@@ -6046,6 +6054,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Savage Tide 3 Supplement |  |  |
 |  | Savage Tide 4 Supplement |  |  |
 |  | Save The Cat The Last Book on Screenwriting Youll Ever Need | Blake Snyder | 080002 - film |
+|  | Save the Cat Writes a Young Adult Novel | Jessica Brody |  |
 |  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
 |  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
 |  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
@@ -6927,7 +6936,10 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Stonehouse Anatomy Notes by Seok Jung Hyun |  | 080004 - art |
 |  | Stonehouses Anatomy | Seok Jung Hyun | 080004 - art |
 |  | Story Character Archetypes |  |  |
+|  | Story Fix Transform Your Novel from Broken to Brilliant | Larry Brooks |  |
 |  | Story Logic Problems and Possibilities of Narrative (Frontiers of Narr | David Herman |  |
+|  | Story Maps | Daniel P. Calvisi |  |
+|  | STORY MAPS TV Drama The Structure of the One-Hour Television Pilot | Daniel P. Calvisi |  |
 |  | Story Physics by Larry Brooks |  | 02_PLOT SYUHZET |
 |  | Story Stakes Your 1 Writing Skills Strategy to Transform Readers into  | H.R. DCosta |  |
 |  | Story Structure Report |  |  |
@@ -7916,6 +7928,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Write to TV (Cook, Martie)1682337 |  |  |
 |  | Write to TV (Cook, Martie)1682337 |  |  |
 |  | Writers Guide to Character Traits | Linda Edelstein | 03_CHARACTER |
+|  | Writing a Successful TV Series How to Pitch and Develop Projects for T | Emmanuel Oberg |  |
 |  | Writing Active Setting Book 2 Emotion, Conflict and Back Story (Mary B |  |  |
 |  | Writing Active Setting Book 2 Emotion, Conflict and Back Story (Mary B |  |  |
 |  | Writing Active Setting Book 2 Emotion, Conflict and Back Story (Mary B |  |  |

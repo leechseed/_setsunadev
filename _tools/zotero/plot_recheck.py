@@ -52,7 +52,7 @@ def main():
 
     def have(title, author):
         f = full(re.split(r"[:;]| - ", title)[0]); sur = [w for w in re.split(r"[ ,;.]+", (author or "").lower()) if len(w) > 3]
-        if len(f) < 10:  # short generic titles ("Narrative", "Genre") false-match too easily
+        if len(f) < (6 if sur else 10):  # short generic titles ("Narrative", "Genre") false-match unless an author surname backs them
             return None
         return next((i for h, i in held if f in h and (not sur or any(s in h for s in sur))), None)
     d = load(SP); flipped = []
