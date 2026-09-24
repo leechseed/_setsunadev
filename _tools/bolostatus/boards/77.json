@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-23",
   "asof": "2026-09-24",
-  "s": "open",
-  "status": "🟢 **all three plot docs stand** (fabula v0.1.2 · trope graph v0.1.1 · syuzhet v0.2.1) — every open call ruled 9/24; next: the OXO movements ↔ acts map (77-L)",
+  "s": "hot",
+  "status": "🟢 three plot docs stand · **movements map RULED 9/24 (the Bourne pivot)**, 16 signposts seated · **\"go 77\": seating the 135 nodes on signposts (77-I) IN FLIGHT**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,8 +42,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**The OXO movements ↔ acts map (77-L).** Six movements onto the storyform's four signpost acts, so the walk can run against a real OXO scene. Fires on \"go 77\".",
-  "default": "Silence: the map waits; the workspace mockup (BOLO 79) builds on the provisional seating.",
+  "order": "**Seat every node on a signpost (77-I): in flight.** The sequenced families (Propp · Vogler · Campbell) get an act and a throughline; Tobias and Schmidt's whole-plot patterns get a throughline affinity and ride any act.",
+  "default": "Silence: the seating lands provisional and the workspace rails redraw from it.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -127,7 +127,7 @@
     "options": "task it next · later",
     "default": "task it next (rec)",
     "s": "ruled",
-    "ruling": "RULED 2026-09-24 (all recs). The movements ↔ acts map is the next task."
+    "ruling": "RULED 2026-09-24, Chief: \"I like the Bourne method.\" Option 2: Act 1 = M1+M2 · Act 2 = M3 · Act 3 = M4+M5 · Act 4 = M6."
    },
    {
     "q": "77-M · Propp's BVX id",
@@ -149,6 +149,27 @@
     "default": "recs",
     "s": "ruled",
     "ruling": "RULED 2026-09-24 (all recs). 15 done: the fabula P6 row now points to the walk. 12–14 queued: a sixth fabula event for row 9, a compressed/skipped-time unit, the first flashback scene."
+   },
+   {
+    "q": "77-P · the row-9 seat",
+    "options": "pre-rotation label, re-seat · keep",
+    "default": "re-seat (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). Re-seated MC signpost 1, The Past."
+   },
+   {
+    "q": "77-Q · one shared act boundary",
+    "options": "lockstep · per throughline",
+    "default": "lockstep (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). All four throughlines turn at the same movement boundary."
+   },
+   {
+    "q": "77-R · M1A / M1B",
+    "options": "two journey beats in Act 1 · its own signpost",
+    "default": "two beats (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs)."
    }
   ]
  },
@@ -364,9 +385,15 @@
     },
     {
      "n": 6,
-     "s": "open",
+     "s": "done",
      "when": "9/24",
-     "t": "**The OXO movements ↔ acts map (77-L)** — six movements onto four signpost acts; then seat every node."
+     "t": "**The OXO movements ↔ acts map (77-L)** — ruled the Bourne pivot; all 16 signpost values seated in the trope graph doc v0.1.2; M2 row 9 re-seated; the workspace rails show all 16 cells."
+    },
+    {
+     "n": 7,
+     "s": "hot",
+     "when": "9/24",
+     "t": "**Seat the 135 nodes on signposts (77-I)** — IN FLIGHT on \"go 77\"."
     }
    ],
    "coord": [
@@ -468,6 +495,16 @@
      "path": "_tools/tropes/data/trope_graph.json",
      "what": "the graph data",
      "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/77/movements/MAP.md",
+     "what": "the movements map, three options, RULED Option 2",
+     "s": "done"
+    },
+    {
+     "path": "_tools/workspace/build.py",
+     "what": "the story workspace builder (BOLO 79)",
+     "s": "open"
     }
    ],
    "cost": [
@@ -656,6 +693,21 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Propp minted BVX.1136; the fabula P6 row re-pointed; both docs RANGE clean."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"I like the Bourne method … and the rest all recs.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Map ruled into the trope graph doc; row 9 re-seated; workspace v2 published."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"FRAGO 77, go 77.\""
     }
    ]
   }
