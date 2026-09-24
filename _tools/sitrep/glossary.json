@@ -1111,5 +1111,12 @@
   "k": "item",
   "d": "Narrative invariants and pushbacks: the rules the story can never break and the points of resistance beside them, gathered into one register and wired through every system. Opened 9/24; gates [[bolo77|BOLO 77]].",
   "w": "https://claude.ai/artifact/Uc8e84mmzY8gBjSHPjrCW7"
+ },
+ "touchstone": {
+  "t": "Touchstone",
+  "k": "ruling",
+  "st": "ruled",
+  "d": "A rule the story can never break, formerly \"invariant\" (RULED 9/24). The thing you touch on the way out, like the PLAY LIKE A CHAMPION TODAY sign, and the stone goldsmiths tested gold against: every scene is tested on it. Guides, doesn't command. Holds across both trunks. Cite as TS 1:3 (book:number). Built last, read first ([[bolo81|BOLO 81]]).",
+  "w": "DOCTRINE-0-INVARIANTS.md §3 · ssot_01_touchstones_register.md"
  }
 }

@@ -6,7 +6,7 @@
   "issued": "2026-09-24",
   "asof": "2026-09-24",
   "s": "held",
-  "status": "⏸ **built LAST, read FIRST** — the invariants are the user-end way in (the front door to a complex system), built after every other system is stable · BOOTSTRAP on record",
+  "status": "⏸ **built LAST, read FIRST** · the name RULED 9/24: **TOUCHSTONE** (cite TS 1:3) · BOOTSTRAP register on record",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the Scale Ladder's completion-test clause (every rung's test ends \"…and no in-scope invariant is breached\") · the Collision Engine's L12×S12 row · the character system's `narrative_invariant` field · the Setting System's S12 field and the scene-card `invariants:` line · BOLO 77's scene wave, gated on this register landing",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 81",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -61,7 +61,8 @@
     "q": "81-A · What do we call a rule the story can never break?",
     "options": "ten candidates offered 9/24 (Commander's Intent · Rules of Engagement · Standing Order · General Order · Flight Rule · Mission Rule · Go/No-Go · Hard Deck · Red Line · Keel)",
     "default": "Flight Rule (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, Chief: \"get rid of HOTLINE, just call it the Touchstone.\" Touchstone: the sign players slap on the way out, and the stone gold is tested on. Guides, doesn't command; both trunks. DOCTRINE 0's name ruling closed. Machine fields keep narrative_invariant until the schema pass."
    },
    {
     "q": "81-B · Bring the three pushbacks into canon?",
@@ -95,7 +96,7 @@
    },
    {
     "q": "81-G · Where do the rules live?",
-    "options": "one register doc, ssot_01_invariants_register.md · spread across the systems as now",
+    "options": "one register doc, ssot_01_touchstones_register.md · spread across the systems as now",
     "default": "one register (rec)",
     "s": "open"
    },
@@ -337,7 +338,7 @@
      "s": "held"
     },
     {
-     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_invariants_register.md",
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_touchstones_register.md",
      "what": "the BOOTSTRAP placeholder: pointers to DOCTRINE 0, the distill, the NNI index, the live wires",
      "s": "done"
     }
@@ -459,6 +460,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Read as: built last, read first. The register becomes the front door a reader enters by; the systems underneath stay the machinery."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Walked the bench: Flight Rules → Constants → HOTLINE Writ → Bearings → Carrier → station ident → Edict → Axioms → Non-Negotiables → Ethos → \"that thing they slap on the way out of the locker\" → \"just call it the Touchstone.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Touchstone ruled into DOCTRINE 0 §3, the register (renamed ssot_01_touchstones_register.md), BOLO 81, the glossary and the SOI."
     }
    ]
   }

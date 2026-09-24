@@ -1,14 +1,14 @@
 ---
-title: "The invariants register — BOOTSTRAP"
+title: "The Touchstones register — BOOTSTRAP (was the invariants register)"
 rung: standard (placeholder)
-status: "BOOTSTRAP 2026-09-24 — a placeholder so the layer is on record. RULED by Chief 9/24: invariants come LAST, after every other system reaches a stable release; this file holds the pointers until then. The name 'invariant' is up for replacement (BOLO 81, call 81-A)."
+status: "BOOTSTRAP 2026-09-24 — a placeholder so the layer is on record. RULED by Chief 9/24: invariants come LAST, after every other system reaches a stable release; this file holds the pointers until then. The name RULED 2026-09-24: **Touchstone** (was 'invariant'); cite as TS 1:3."
 bolo: 81
 updated: 2026-09-24
 ---
 
-# The invariants register — BOOTSTRAP
+# The Touchstones register — BOOTSTRAP
 
-**What this is.** The one home for every rule the story can never break (and the pushbacks beside them). It is a placeholder. Chief, 2026-09-24: *"the invariants should come last, after all the systems are put through … at least for now, just some sort of bootstrap to keep there as a placeholder, just to know that we have it."*
+**What this is.** The one home for every Touchstone, the rules the story can never break (formerly "invariants") (and the pushbacks beside them). It is a placeholder. Chief, 2026-09-24: *"the invariants should come last, after all the systems are put through … at least for now, just some sort of bootstrap to keep there as a placeholder, just to know that we have it."*
 
 **Built last, read first.** Chief, 9/24: *"invariants first … basically user-end first. While the system underneath is more complex, invariants are … the easy way in to understand."* The register is the front door a reader enters by; the systems underneath are the machinery. It is written last so it describes the finished machinery.
 

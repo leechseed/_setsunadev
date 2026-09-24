@@ -1,15 +1,17 @@
 ---
 rung: policy · NASA four, ruled 2026-09-15 (BOLO 50)
-title: DOCTRINE 0 — Invariants on Invariants
+title: DOCTRINE 0 — Touchstones on Touchstones (was Invariants on Invariants)
 type: doctrine
 trunk: BOTH
-status: v1.0 — RATIFIED 2026-09-03 (Chief, spoken: "doctrine zero is good"). The seven stand. The rename ruling (Tenet ⭐ · General Order · Standing Order bench) remains OPEN — ratification covers the rules, not the name
-updated: 2026-09-03
+status: v1.0 — RATIFIED 2026-09-03 (Chief, spoken: "doctrine zero is good"). The seven stand. The rename ruling CLOSED 2026-09-24: **Touchstone** (Chief: "call it the Touchstone") — ratification covers the rules, not the name
+updated: 2026-09-24
 sources: Quartermaster promotion rule · BVX-LEARN one-sheet Invariants field (20+ sets) · Layer 0 Invariants 1–5 · VICTORIA_MIDNIGHT ingest §9 · Non-Negotiable Invariants method (Arcane, Westworld) · SSOT Writing Guide — Marine Corps Doctrine Standard v1.0.0 (2026-02-09)
 related: BVX-ULTRASIN-twin-track.md
 ---
 
-# DOCTRINE 0 — INVARIANTS ON INVARIANTS
+# DOCTRINE 0 — TOUCHSTONES ON TOUCHSTONES
+
+*Formerly "Invariants on Invariants." The name ruled 2026-09-24; see §3.*
 
 This is the doctrine that governs the doctrine. Before the MCDP-shaped stack acquires its own capstone, the system requires rules for what qualifies as a rule. These are the invariants about invariants. Step one of the doctrine project.
 
@@ -59,7 +61,9 @@ The term is already load-bearing across the repo. Nothing below is new; this doc
 
 ---
 
-## 3 · Open ruling — the name
+## 3 · The name — RULED: Touchstone
+
+**RULED 2026-09-24, Chief: "call it the Touchstone."** The name is **Touchstone** (plural Touchstones; cite as **TS 1:3**, book:number). Chief's brief on the way there: it transcends every layer, both BLACK and ORANGE; it guides rather than commands ("more of an axiom … not necessarily an obeying … it opens up the opportunity"); common vernacular, not heady; spirit, not a catchphrase — "that thing they slap on the way out of the locker" (Notre Dame's PLAY LIKE A CHAMPION TODAY sign). A touchstone is both the thing you touch before you go out and the stone goldsmiths tested gold against. The bench below stands as history. Machine fields keep the old term until the schema propagation runs (the constraint at the end of this section), which now rides BOLO 81, built last.
 
 "Invariant" is doing the work but the word is disliked. Chief's spec (2026-08-21): not a saying, not a motto — the way a unit conducts itself; the purpose and reason a unit exists. Doctrine splits that into **two slots**: the rule that never changes (tenet / general order) and the identity-and-purpose of the unit (ethos / mission / intent). The ruling may fill both.
 
