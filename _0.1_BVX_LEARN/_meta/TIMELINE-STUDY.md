@@ -21,37 +21,37 @@ Scope: **Heaven's Vault** (inkle, 2019), **Return of the Obra Dinn** (Lucas Pope
 
 ## 1. Heaven's Vault — the History timeline
 
-**Structure.** History divides into named eras measured backward from "now": roughly 0-180, 180-350, 350-580, 580-950, 950-1,670, 1,670-2,500, 2,500-3,500 years ago, the 180-350 band explicitly "very little known" [MEDIUM — aggregated search excerpt, Wikipedia/Gamer Escape wiki; wiki page 403'd on direct fetch]. The gap is a named, drawn era, not an absence.
+**Structure.** History divides into named eras measured backward from "now": roughly 0-180, 180-350, 350-580, 580-950, 950-1,670, 1,670-2,500, 2,500-3,500 years ago, the 180-350 band explicitly "very little known" [MEDIUM — aggregated search excerpt; wiki page 403'd on direct fetch]. The gap is a named, drawn era, not an absence.
 
-**Scale.** "The timeline could expand to show minute by minute discoveries, and compress to show thousands of years worth of history, and all smoothly animated" [MEDIUM — search excerpt, PopMatters]. Fogknife calls it "the single most *80 Days*-esque part of the game's original UI"; every script encounter — deciphered or not — adds "a new notch," reflecting "the fractal way she sees her own lifetime... as just another fold inside an infinitely crinkly global history" [HIGH — direct fetch, fogknife.com]. Emily Short: "Aliya's backstory is presented as a series of dates on her timeline, there for you to explore if you want" [HIGH — direct fetch, emshort.blog].
+**Scale.** "The timeline could expand to show minute by minute discoveries, and compress to show thousands of years worth of history, and all smoothly animated" [MEDIUM — search excerpt, PopMatters]. Fogknife calls it "the single most *80 Days*-esque part of the game's original UI"; every script encounter — deciphered or not — adds "a new notch," reflecting "the fractal way she sees her own lifetime... as just another fold inside an infinitely crinkly global history" [HIGH — direct fetch]. Emily Short: "Aliya's backstory is presented as a series of dates on her timeline, there for you to explore if you want" [HIGH — direct fetch].
 
-**Confidence vs date.** Translation confidence is a separate, growing value: a word read often enough earns trust; a wrong reading is explicitly flagged and swapped, not silently corrected [MEDIUM — search excerpt, Steam discussion]. A PopMatters-sourced excerpt frames the system as "inference rather than completing a tick list," the deciphered past as "approximations akin to a third-person limited perspective" [MEDIUM].
+**Confidence vs date.** Translation confidence is a separate, growing value: a word read often enough earns trust; a wrong reading is explicitly flagged and swapped, not silently corrected [MEDIUM — search excerpt]. The deciphered past reads as "approximations akin to a third-person limited perspective" [MEDIUM].
 
-**Friction.** A player, quoted directly: "what's the point of noting everything on the timeline? sure, 3000 years ago this and that happened, but me picking up a book or finding a new location 3 and 8 minutes ago seems irrelevant and annoying since the timeline thing pops up all the time" [HIGH — direct fetch, Steam thread]. World-scale and session-scale events sharing one popup channel reads as noise.
+**Friction.** A player, quoted directly: "what's the point of noting everything on the timeline? sure, 3000 years ago this and that happened, but me picking up a book or finding a new location 3 and 8 minutes ago seems irrelevant and annoying since the timeline thing pops up all the time" [HIGH — direct fetch]. World-scale and session-scale events sharing one popup channel reads as noise.
 
 ## 2. Return of the Obra Dinn — the Book of Fates
 
-**Choice of form.** Pope considered "a much shorter logbook, a navigable timeline interface, etc" before settling on the book as "the most implicitly useful metaphor" [HIGH — direct fetch, dukope.com]. The book's job: "collect and organize the deluge of information," establish chronology, show death detail, carry identity clues [HIGH — same source]. A dedicated timeline widget was tried and set aside.
+**Choice of form.** Pope considered "a much shorter logbook, a navigable timeline interface, etc" before settling on the book as "the most implicitly useful metaphor" [HIGH — direct fetch]. Its job: "collect and organize the deluge of information," establish chronology, show death detail, carry identity clues [HIGH — same source]. A dedicated timeline widget was tried and set aside.
 
-**Progressive fill.** Ten chapters, grouped by clustered deaths; Chapter VIII stays hidden until every knowable fate is solved [MEDIUM — search excerpt, fandom/GameFAQs]. Each chapter's map "gradually becomes filled in with a helpful overview of the chronology of events within a chapter" [MEDIUM — search excerpt]. The record starts sparse and thickens with play; nothing is pre-drawn.
+**Progressive fill.** Ten chapters, grouped by clustered deaths; Chapter VIII stays hidden until every knowable fate is solved [MEDIUM — search excerpt]. Each chapter's map "gradually becomes filled in with a helpful overview of the chronology of events within a chapter" [MEDIUM — search excerpt]. The record starts sparse and thickens with play; nothing is pre-drawn.
 
-**Draft vs confirmed.** Handwritten (editable) entries convert to typed, locked text once three fates are correctly solved in a batch [MEDIUM — search excerpt]. Two rendering states carry one meaning: draft vs confirmed, arriving in batches of three, not one at a time.
+**Draft vs confirmed.** Handwritten (editable) entries convert to typed, locked text once three fates are correctly solved in a batch [MEDIUM — search excerpt]. Two rendering states carry one meaning: draft vs confirmed, arriving in batches of three.
 
-**A literal told-order dial.** The pocket watch ("Memento Mortem") freezes a death scene for exploration; its hands double as an address — hour = chapter, minute in five-minute steps = part (3:05 = ch. III pt. 1, 3:10 = pt. 2) [HIGH — search excerpt, fandom wiki + walkthrough]. Every scene has a stable two-part ID before its world-time placement. The fate record itself is a fixed schema per event — name, rank/role, cause of death, sometimes a killer — filled via dropdowns from the ship's manifest [MEDIUM — search excerpt].
+**A literal told-order dial.** The pocket watch ("Memento Mortem") freezes a death scene for exploration; its hands double as an address — hour = chapter, minute in five-minute steps = part (3:05 = ch. III pt. 1, 3:10 = pt. 2) [HIGH — search excerpt]. Every scene has a stable two-part ID before its world-time placement. The fate record is a fixed schema per event — name, rank/role, cause of death, sometimes a killer — filled via dropdowns from the ship's manifest [MEDIUM — search excerpt].
 
 ## 3. Her Story / Telling Lies — the reconstructed database
 
 **No built-in chronology.** Her Story sits the player at a period-styled desktop searching ~300 short interrogation clips; no timeline widget exists in the game — the player's own paper notes are the told order [HIGH — Wikipedia-level, confirmed by search aggregate]. The game withholds chronology by design; assembling it is the whole activity.
 
-**Partial, re-queried views.** Telling Lies splits two callers' sides of the same conversations into separate records and caps search returns at the first five hits, "in chronological order," pushing the player to refine keywords; a hit jumps a clip to the keyword moment and timestamps its other occurrences in that clip [HIGH — search excerpt, Wireframe Magazine]. Order exists only inside a capped, re-runnable result list, never as a persistent global index.
+**Partial, re-queried views.** Telling Lies splits two callers' sides of the same conversations into separate records and caps search returns at the first five hits, "in chronological order," pushing the player to refine keywords; a hit jumps a clip to the keyword moment and timestamps its other occurrences in that clip [HIGH — search excerpt]. Order exists only inside a capped, re-runnable result list, never as a persistent global index.
 
-**Scrub as anti-chronology.** Barlow, on the scrub mechanic (GameDeveloper Deep Dive, via search excerpt): it embraces "the analogue feel of *The Conversation*," and "memories do not come to us in chronological, linear order — by scrubbing backwards or forwards through a clip, the player is as likely to uncover new information" [MEDIUM — search excerpt, primary not directly fetchable]. A mystery-pacing device, not an IA pattern — flagged under Do Not Copy.
+**Scrub as anti-chronology.** Barlow, on the scrub mechanic (via search excerpt): it embraces "the analogue feel of *The Conversation*," and "memories do not come to us in chronological, linear order — by scrubbing backwards or forwards through a clip, the player is as likely to uncover new information" [MEDIUM — primary not directly fetchable]. A mystery-pacing device, not an IA pattern — flagged under Do Not Copy.
 
 ## 4. Outer Wilds — the ship log (rumor vs map mode)
 
-**Two lenses, one store.** Map Mode groups entries by planet/structure (spatial, for picking a destination); Rumor Mode groups the same entries by causal relation, and — since discovery order differs per player — its graph layout differs per playthrough [HIGH — search aggregate, outerwildsmods.com + fandom]. Both read the same fact store; switching loses or duplicates nothing.
+**Two lenses, one store.** Map Mode groups entries by planet/structure (spatial, for picking a destination); Rumor Mode groups the same entries by causal relation, and — since discovery order differs per player — its graph layout differs per playthrough [HIGH — search aggregate]. Both read the same fact store; switching loses or duplicates nothing.
 
-**A fixed icon for a known gap.** Unconfirmed/partial entries carry a colored question-mark badge (orange by default) signaling "more here" without revealing what or where it connects [MEDIUM — search excerpt, Steam guide + mod docs]. The icon marks a gap; it does not spoil the answer.
+**A fixed icon for a known gap.** Unconfirmed/partial entries carry a colored question-mark badge (orange by default) signaling "more here" without revealing what or where it connects [MEDIUM — search excerpt]. The icon marks a gap; it does not spoil the answer.
 
 ## 5. Translation to the story workspace
 
@@ -87,30 +87,30 @@ Scope: **Heaven's Vault** (inkle, 2019), **Return of the Obra Dinn** (Lucas Pope
 
 ## Sources
 
-- Heaven's Vault era ranges (via search aggregate; wiki 403'd direct): https://en.wikipedia.org/wiki/Heaven%27s_Vault ; https://heavensvault.gamerescape.com/wiki/Timeline
+- Heaven's Vault era ranges (search aggregate; wiki 403'd direct): https://en.wikipedia.org/wiki/Heaven%27s_Vault ; https://heavensvault.gamerescape.com/wiki/Timeline
 - Emily Short, "Heaven's Vault (inkle)": https://emshort.blog/2019/07/23/heavens-vault-inkle/
 - Fogknife, "I played Heaven's Vault": https://fogknife.com/2019-05-03-i-played-heavens-vault.html
-- PopMatters, "Found in Translation" (via search excerpt): https://www.popmatters.com/heavens-vault-adventure-game-review
-- Steam Community, Heaven's Vault discussions (popup complaint; confidence thread): https://steamcommunity.com/app/774201/discussions/0/1652169858540964705/ ; https://steamcommunity.com/app/774201/discussions/0/3570700856123387903/
-- Cambridge Core academic article on Heaven's Vault (checked, no UI detail): https://www.cambridge.org/core/product/847BC3EFEF0C05C1E3D28A658D320B77/core-reader
-- Lucas Pope, TIGSource devlog, Obra Dinn, June 2019 (book-vs-timeline choice): https://dukope.com/devlogs/obra-dinn/tig-37/
-- Obra Dinn Wiki (Fandom), General and Pocket watch (via search excerpt): https://obradinn.fandom.com/wiki/General ; https://obradinn.fandom.com/wiki/Pocket_watch
-- GameFAQs, "Solving Fates and Completing the Book" (via search excerpt): https://gamefaqs.gamespot.com/switch/272725-return-of-the-obra-dinn/faqs/78105/solving-fates-and-completing-the-book
-- Game UI Database, Obra Dinn entry (blocked, HTTP 403): https://www.gameuidatabase.com/gameData.php?id=1460
+- PopMatters, "Found in Translation" (search excerpt): https://www.popmatters.com/heavens-vault-adventure-game-review
+- Steam, Heaven's Vault discussions (popup complaint; confidence thread): https://steamcommunity.com/app/774201/discussions/0/1652169858540964705/ ; https://steamcommunity.com/app/774201/discussions/0/3570700856123387903/
+- Cambridge Core article on Heaven's Vault (checked, no UI detail): https://www.cambridge.org/core/product/847BC3EFEF0C05C1E3D28A658D320B77/core-reader
+- Lucas Pope, TIGSource devlog, Obra Dinn (book-vs-timeline choice): https://dukope.com/devlogs/obra-dinn/tig-37/
+- Obra Dinn Wiki, General and Pocket watch (search excerpt): https://obradinn.fandom.com/wiki/General ; https://obradinn.fandom.com/wiki/Pocket_watch
+- GameFAQs, "Solving Fates and Completing the Book" (search excerpt): https://gamefaqs.gamespot.com/switch/272725-return-of-the-obra-dinn/faqs/78105/solving-fates-and-completing-the-book
+- Game UI Database, Obra Dinn (blocked, 403): https://www.gameuidatabase.com/gameData.php?id=1460
 - Wireframe Magazine, "Telling Lies preview": https://wireframe.raspberrypi.org/articles/telling-lies-preview-is-her-story-true
-- Game Developer, "Deep Dive: Telling Lies" (via search excerpt): https://www.gamedeveloper.com/design/deep-dive-i-telling-lies-i---making-a-mechanic-out-of-scrubbing-video
-- Her Story (video game), Wikipedia: https://en.wikipedia.org/wiki/Her_Story_(video_game)
+- Game Developer, "Deep Dive: Telling Lies" (search excerpt): https://www.gamedeveloper.com/design/deep-dive-i-telling-lies-i---making-a-mechanic-out-of-scrubbing-video
+- Her Story, Wikipedia: https://en.wikipedia.org/wiki/Her_Story_(video_game)
 - Outer Wilds mods, "Custom Ship Log Modes" / "Ship Log | New Horizons": https://outerwildsmods.com/mods/customshiplogmodes/ ; https://nh.outerwildsmods.com/guides/ship-log/
-- Outer Wilds Wiki (Fandom), Computer page (blocked, HTTP 402): https://outerwilds.fandom.com/wiki/Computer
-- Steam Guide, "Ship Log Completion Guide" (badge colors, via search excerpt): https://steamcommunity.com/sharedfiles/filedetails/?id=3500382207
+- Outer Wilds Wiki, Computer page (blocked, 402): https://outerwilds.fandom.com/wiki/Computer
+- Steam Guide, "Ship Log Completion Guide" (badge colors, search excerpt): https://steamcommunity.com/sharedfiles/filedetails/?id=3500382207
 - Mohedano, "How Outer Wilds transcends UX" (blocked, 403): https://medium.com/@claudmohe/how-outer-wilds-transcends-ux-to-become-human-experience-3ff41def8f8c
 - Passi, "Outer Wilds: A UX Critique Part 2" (blocked, 403): https://ankitpassi.medium.com/outer-wilds-a-ux-critique-part-2-146abcb9a5a1
 
 ## Blocked / Unverified
 
-- gamerescape wiki, gameuidatabase.com, outerwilds fandom, both Medium essays: all returned 403/402 on direct fetch; every claim sourced to them rests on search-excerpt aggregation only (capped MEDIUM).
-- No GDC talk, dev diary, or designer-authored primary source was recovered describing Heaven's Vault's History-screen visual grammar (band colors, hover behavior) — claims trace to reviews/player threads only, capped MEDIUM.
-- Jon Ingold's 2018 GDC talk ("dynamic detective story") was located by title only; the fetched Game Developer URL returned unrelated page chrome — not used as a source.
+- gamerescape wiki, gameuidatabase.com, outerwilds fandom, both Medium essays: 403/402 on direct fetch; claims sourced to them rest on search-excerpt aggregation only (capped MEDIUM).
+- No GDC talk, dev diary, or designer-authored source describes Heaven's Vault's History-screen visual grammar (band colors, hover behavior) — claims trace to reviews/player threads only, capped MEDIUM.
+- Jon Ingold's 2018 GDC talk ("dynamic detective story") located by title only; fetched Game Developer URL returned unrelated page chrome — not used as a source.
 - No primary designer statement exists for the two-track told/world diagram (T5-T7); flagged as this study's own synthesis, not observed in any shipped game.
 
 ## Open questions for Chief
