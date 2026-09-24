@@ -126,6 +126,23 @@ def main():
                       "added": r["dateAdded"][:10], "modified": r["dateModified"][:10]})
     drops = drop_scan(cat_by_title, str(datetime.date.today()))
     items += drops
+    # standalone Zotero attachments: a PDF or EPUB filed with no parent record (9/23 finding: 1,124 of them, invisible to
+    # every sweep before this). Title comes from the filename, the same way the drop scan guesses it.
+    for a in atts.get(None, []):
+        ct, p = a["contentType"] or "", a["path"] or ""
+        if not (ct.endswith("pdf") or "epub" in ct) or not p:
+            continue
+        f = p[8:] if p.startswith("storage:") else os.path.basename(p)
+        path = next((c for c in (os.path.join(s, a["key"], f) for s in STORAGES[:2]) if os.path.exists(c)), os.path.join(STORAGES[0], a["key"], f)) if p.startswith("storage:") else p
+        stem = re.sub(r"\s*\((Z-Library|z-lib\.org|z-library\.sk[^)]*)\)|\s*9\d{12}|\s*\d{13}", "", os.path.splitext(f)[0]).strip()
+        m = re.match(r"^(.+?)\s*\(([^()]+)\)\s*$", stem)
+        title, au = (m.group(1), [m.group(2)]) if m else (stem, [])
+        c = cat_by_title.get(norm(title))
+        items.append({"zid": a["itemID"], "zkey": a["key"], "type": "loose-attachment", "title": title.strip(), "authors": au,
+                      "year": "", "publisher": "", "isbn": "", "pages": "", "abstract": False, "tags": tags[a["itemID"]],
+                      "collections": colls[a["itemID"]], "spine": [], "has_pdf": True, "pdf_exists": os.path.exists(path),
+                      "pdf": path, "annotations": 0, "notes": [], "bvx": c["id"] if c else None,
+                      "subject": c["primary"] if c else None, "added": "", "modified": "", "src": "zotero-loose"})
     # carry the sweep's own fields across regenerations (9/16 finding: the PS TOC keys and repaired titles lived only in
     # this file; regenerating from the DB silently dropped them). Matched by zkey; the DB never wins over a sweep field.
     prev_p = os.path.join(META, "inventory-live.json")
