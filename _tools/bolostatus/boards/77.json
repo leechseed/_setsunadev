@@ -6,7 +6,7 @@
   "issued": "2026-09-23",
   "asof": "2026-09-24",
   "s": "hot",
-  "status": "🟢 RULED 9/23 · the plot sweep judged 2,429 titles, shelf closed 9/24 (canon 40/43 held, 7 core + 3 classics marked \"no copy\") — **\"go 77\" fired: the fabula doc (wave 1) IN FLIGHT**, three specialist digests feeding one doc, checked by range.py.",
+  "status": "🟢 RULED 9/23 · shelf closed 9/24 · **the fabula doc v0.1.1 LANDED 9/24**, all six calls ruled, state architecture v1.1.0 live — **\"go 77\" fired again: the trope graph (wave 2) IN FLIGHT**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,8 +42,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**The fabula doc, wave 1: in flight.** Three digests feed one doc under `04_PLOT_SYSTEMS/`; RANGE checks it; it lands with its open calls for your word.",
-  "default": "Silence: the instance runs on Tori alone; EVIL CHECK's events wait for wave 2; the state architecture v1.1 patch ships with the fabula doc.",
+  "order": "**The trope graph, wave 2: in flight.** Nodes from the held books, edges from TV Tropes, every trope keyed to a node, walked only inside the storyform's fixed signposts.",
+  "default": "Silence: the trope graph builds on the plot/narrative indexes only; EVIL CHECK's events stay reserved for the next pass.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -63,19 +63,43 @@
     "q": "77-C · whose origins fill the instance",
     "options": "Tori only (the M1B crash and Jebb's death are on record) · Tori + Anna Colson (her past has no dated events yet; needs your facts)",
     "default": "Tori only (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, Chief: \"go on all recommendations.\" Tori only; Anna Colson waits on her backstory facts."
    },
    {
     "q": "77-D · EVIL CHECK on the timeline",
     "options": "wave 1 (read its Dramatica reports now) · wave 2 (schema first, then load its events)",
     "default": "wave 2 (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). Wave 2: the schema first, then EVIL CHECK's Dramatica reports load."
    },
    {
     "q": "77-E · state architecture v1.1",
     "options": "ship with the fabula doc (origin_event · state_diffs · event ids) · separate pass later",
     "default": "ship with the fabula doc (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). Shipped now: the state architecture is v1.1.0 — origin_event · state_diffs parent · additive, narrative_moment kept."
+   },
+   {
+    "q": "77-F · event id format",
+    "options": "<movement>_<slug> · numbered ids · calendar-dated ids",
+    "default": "<movement>_<slug> (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). <movement>_<slug>, e.g. m1b_crash_jebb_death."
+   },
+   {
+    "q": "77-G · DCUS eras",
+    "options": "re-author as fabula events · cross-reference the setting doc",
+    "default": "cross-reference (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). The setting doc says what happened to the place; the fabula says when."
+   },
+   {
+    "q": "77-H · unknown dates",
+    "options": "date by movement until a calendar exists · invent a calendar now",
+    "default": "date by movement (rec)",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24 (all recs). M1, M2, M3…; reach and extent as ranges; 'unknown' means nothing on record, not nothing happened."
    }
   ]
  },
@@ -196,6 +220,15 @@
        "s": "done"
       }
      ]
+    },
+    {
+     "label": "Findings · 9/24",
+     "items": [
+      {
+       "t": "**The plot-sweep register is stale.** Genette · Rimmon-Kenan · Herman · Sternberg · Brooks · Propp sit in `Q:/_PDF_DROP` under other filenames, never keyed into Zotero; Bal's primary *Narratology* (BVX.0591) is held and anchors the fabula doc.",
+       "s": "open"
+      }
+     ]
     }
    ]
   },
@@ -239,8 +272,8 @@
    "strand": {
     "last": "The shelf closed 9/24 with the sweep and the uploads both done.",
     "plan": "Fabula first (world time and the character origin moments), then the trope graph keyed to it, then the syuzhet revised last.",
-    "you": "Fired the build with \"go 77\".",
-    "next": "Wave 1's three digests land, `range.py` checks them, the fabula doc publishes to `04_PLOT_SYSTEMS/`."
+    "you": "You ruled all six fabula calls in one word, then said \"FRAGO 77, then go 77\".",
+    "next": "The trope graph lands with its own calls for your word."
    },
    "main_effort": "The fabula doc, wave 1 — IN FLIGHT.",
    "phases": [
@@ -264,14 +297,15 @@
     },
     {
      "n": 3,
-     "t": "**The fabula doc (wave 1)** — three specialist digests (syuzhet side · character handshake · theory) feeding one doc at `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/`, checked by `_tools/bolostatus/work/77/fabula/range.py`.",
-     "s": "hot",
+     "t": "**The fabula doc (wave 1)** — v0.1.1, 27 KB, RANGE clean: the event record, typed causal edges, the world clock, origin moments (L5 · L7 · L8 · L9 · L10), the handshake; Tori's five pre-story events filled from her node, nothing invented. Six calls ruled; the state architecture patched to v1.1.0.",
+     "s": "done",
      "when": "9/24"
     },
     {
      "n": 4,
-     "t": "**The trope graph** — nodes from the books, edges from TV Tropes, every trope keyed to a node, walked inside the storyform's fixed signposts.",
-     "s": "open"
+     "t": "**The trope graph (wave 2)** — nodes from the books, edges from TV Tropes, every trope keyed to a node, gated by the storyform's signposts. IN FLIGHT on \"go 77\".",
+     "s": "hot",
+     "when": "9/24"
     },
     {
      "n": 5,
@@ -348,6 +382,16 @@
      "path": "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/",
      "what": "where the three docs live — fabula · trope graph · syuzhet",
      "s": "open"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md",
+     "what": "the fabula doc v0.1.1 — world time, one timeline for OXO and EVIL CHECK",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md",
+     "what": "v1.1.0 — origin_event · state_diffs parent",
+     "s": "done"
     }
    ],
    "cost": [
@@ -491,6 +535,21 @@
      "when": "9/24",
      "who": "Chief",
      "t": "\"go 77\" spoken ~03:40 — the fabula doc build (wave 1) fired, three specialist digests feeding one doc, checked by `range.py`."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"go on all recommendations.\" Six fabula calls ruled."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "The fabula doc v0.1.1 landed (RANGE clean); the state architecture patched to v1.1.0."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"FRAGO 77, then go 77.\""
     }
    ]
   }
