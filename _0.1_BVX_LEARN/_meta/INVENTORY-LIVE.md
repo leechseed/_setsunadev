@@ -13,13 +13,13 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8908** |
-| With a PDF attachment | 8908 |
-| PDF present on disk | 8816 |
+| Top-level items | **8864** |
+| With a PDF attachment | 8864 |
+| PDF present on disk | 8772 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7905** |
+| **New since the Dec-2023 catalog** | **7861** |
 | Story-side (CRE + LIT by catalog) | 337 |
-| **Spine-keyed from Chief's tags** | **613** |
+| **Spine-keyed from Chief's tags** | **605** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
 
@@ -27,25 +27,25 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Level | Items |
 |---|---|
-| L7 | 176 |
-| L4 | 166 |
-| SETTING | 155 |
+| L7 | 174 |
+| L4 | 162 |
+| SETTING | 154 |
 | TEXTURE | 105 |
-| L5 | 86 |
-| L6 | 29 |
-| L0 | 29 |
+| L5 | 82 |
+| L6 | 27 |
+| L0 | 27 |
 | CRAFT-PROCESS | 23 |
 
 ## By catalog subject
 
 | Subject | Items |
 |---|---|
-| NEW | 7730 |
+| NEW | 7684 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
+| MSX | 101 |
 | VIS | 100 |
-| MSX | 99 |
 | TEC | 62 |
 | BIZ | 48 |
 | MIL | 42 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7905)
+## New since the catalog (7861)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -222,14 +222,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 07162023 v001 media core meta data schema.drawio |  |  |
 |  | 07162023 v001 pattern category schema.drawio |  |  |
 |  | 1 |  |  |
-|  | 1 EVIL CHECK Story Guide Report |  |  |
 |  | 1 on 1 Adventures - 12 - Journey into Riddle Canyon |  |  |
 |  | 1 on 1 Adventures - 13 - The Pearls of Pohjola |  |  |
 |  | 1 on 1 Adventures - 14 - A Sickness in Silverton |  |  |
 |  | 1 on 1 Adventures - 15 - Cipactli's Maw |  |  |
 |  | 1 RSD Protagonist Enneagram Worksheet |  |  |
-|  | 1.1 Crawlspace Getting Started Report |  |  |
-|  | 1.2 Crawlspace Getting Started Report |  |  |
 |  | 1.Documentation Index – Sexual Aesthetic Discipline System |  |  |
 |  | 10 |  |  |
 |  | 10 Angelic Magic Items |  |  |
@@ -310,7 +307,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 188495653X Emotional Structure Creating the Story Beneath the Plot A G |  |  |
 |  | 19 |  |  |
 |  | 1_Narratology Core Rulebook_pre-alpha_draft-1 |  |  |
-|  | 2 EVIL CHECK Character Report |  |  |
 |  | 2 RSD Moral Enneagram Worksheet |  |  |
 |  | 20 |  |  |
 |  | 20 Variant Foes Red Dragons |  |  |
@@ -339,7 +335,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 2E PATHFINDER  PZO2208 Pathfinder 2E - Advanced GM Screen |  | 080007 - TABLE TOP GAME DESIGN |
 |  | 2TOC |  |  |
 |  | 3 |  |  |
-|  | 3 EVIL CHECK Standard Plot and Themes Report |  |  |
 |  | 3 RSD Common Uncommon Worksheet |  |  |
 |  | 30  Staves |  |  |
 |  | 30 Battle Standards |  |  |
@@ -367,7 +362,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 3BF4CFF97EE0494E92327BE6B1ABDEAD |  |  |
 |  | 4 |  |  |
 |  | 4 Dialogue The Art of Verbal Action for Page, Stage, and Screen by Rob |  | 07_DIEGESIS |
-|  | 4 EVIL CHECK Advanced Story Engine Points Report |  |  |
 |  | 4 RSD Common Uncommon Buttons Worksheet |  |  |
 |  | 4 Winds - A1 - Albion Armitage's Astounding Arsenal |  |  |
 |  | 4 Winds - Book of Arcane Magic |  |  |
@@ -629,7 +623,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 4eGURPSS Ultra-Tech-Steve Jackson Games (200 |  |  |
 |  | 4eupdate |  |  |
 |  | 5 |  |  |
-|  | 5 EVIL CHECK Advanced Characterization Report |  |  |
 |  | 5 RSD Protagonist Change Worksheet |  |  |
 |  | 510521m_vol2 |  |  |
 |  | 510521m_vol2 |  |  |
@@ -661,7 +654,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 561079608-NUDEMagazineIssue27Hot17January2022 |  |  |
 |  | 561079608-NUDEMagazineIssue27Hot17January2022-1 |  |  |
 |  | 6 |  |  |
-|  | 6 EVIL CHECK Advanced Plot Signposts and Journey Report |  |  |
 |  | 6 RSD Classic Story Middle Worksheet |  |  |
 |  | 602496702-Glute-Guide-Ebook |  |  |
 |  | 613854815-XX0910PLBM3X020XX |  |  |
@@ -681,7 +673,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 692813099-Playboy-Special-Collectors-Edition-May |  |  |
 |  | 694741006-Tenten-Anatomy-Translated |  |  |
 |  | 7 |  |  |
-|  | 7 EVIL CHECK Advanced Continuity |  |  |
 |  | 7 RSD Narrative Engine Middle Worksheet |  |  |
 |  | 703931361-Lascivia-Junio-2018 |  |  |
 |  | 704451738-DayanCat-Playboy-Mexico-Enero-2024 |  |  |
@@ -705,7 +696,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 797281635-NUDE-Magazine-15-2020-mar-Retro-Issue-2020-libgen-li |  |  |
 |  | 798390945-ModelSociety-zero |  |  |
 |  | 8 |  |  |
-|  | 8 EVIL CHECK Full Illustration |  |  |
 |  | 8 RSD Opponent Triangle Worksheet |  |  |
 |  | 8 The Western Canon The Books and School of the Ages by Harold Bloom - |  | 06_NARRATOR |
 |  | 8 Week Booty Builder (Amanda Fransson Filippa Fransson)— |  | HEALTH & FITNESS |
@@ -729,7 +719,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 828817189-Boudoir-Inspiration-February-2025-Black-White-Issue |  |  |
 |  | 828817189-Boudoir-Inspiration-February-2025-Black-White-Issue-1 |  |  |
 |  | 9 |  |  |
-|  | 9 EVIL CHECK Coverage and Analysis |  |  |
 |  | 9 RSD Moral Component Worksheet |  |  |
 |  | 9 Years Photographing the Nude |  |  |
 |  | 903FFC956B952D9AF08B86 |  |  |
@@ -1099,7 +1088,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | April Augmented 2017 |  |  |
 |  | Aquatic Adventures |  |  |
 |  | Arcane Anthology |  |  |
-|  | architecture is a visual art, and the buildings speak for themselves. | 1 |  |
 |  | Argoss Press - Liber Ingenium |  |  |
 |  | Aristotle Poetics | Aristotle, Joe Sachs |  |
 |  | Aristotle Poetics | Aristotle, Joe Sachs |  |
@@ -1170,6 +1158,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Battlezoo Ancestries - Dragons |  |  |
 |  | Battlezoo Ancestries - Dungeons |  |  |
 |  | Battlezoo Bestiary |  |  |
+|  | Batty, Taylor, Sawtell, Conor - Script Development Defining the Field | 2017 |  |
 |  | Be Awesome at Dungeon Design |  |  |
 |  | Beasts of Legend - Beasts of the East |  |  |
 |  | Beasts of Legend - Beasts of the East Pawns |  |  |
@@ -1277,7 +1266,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Blow Him Away How to Give Him Mind-Blowing Oral Sex | Marcy Michaels, Marie Desalle |  |
 |  | Blow Him Away How to Give Him Mind-Blowing Oral Sex | Marcy Michaels, Marie Desalle |  |
 |  | Blow Him Till His Kingdom Comes A Sex Guide For Women Who Want To Give |  |  |
-|  | Blue Green Sketch Bar Menu |  |  |
 |  | blueprint_for_comprehension_instruction |  |  |
 |  | Boardroom And Curia |  |  |
 |  | Bonus Bestiary |  |  |
@@ -1494,6 +1482,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | CHOREO_NOTES_ZIN_114_LIVE_2 |  |  |
 |  | CHP_Resource_Guide |  |  |
 |  | CHP_Resource_Guide |  |  |
+|  | Chris Crawford - What Is Interactive Storytelling |  |  |
 |  | Chronica - Age of Exploration |  |  |
 |  | Chronicle of the Righteous |  |  |
 |  | Cities And Roads |  |  |
@@ -1623,11 +1612,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Courts of the Shadow Fey |  |  |
 |  | Courts of the Shadow Fey - Bonus Handouts |  |  |
 |  | Covenant Magic - Further Covenants |  |  |
-|  | Crawlspace Coffeebreak Pass |  |  |
-|  | CRAWLSPACE COFFEEBREAK PASS 2 |  |  |
 |  | Crawlspace COFFEEBREAK PASS 3 - draft outline |  |  |
-|  | Crawlspace Getting Started Report 1 |  |  |
-|  | Crawlspace Illustrating Report |  |  |
 |  | Creating Character Arcs Workbook | K. M. Weiland | 03_CHARACTER |
 | 2024 | Creating Suspenseful Stories: Iterative Planning with Large Language M | Xie, Riedl |  |
 |  | Creative Confidence | Kelley |  |
@@ -1659,7 +1644,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Crypt of the Everflame |  |  |
 |  | Crypt of the Sun Lord |  |  |
 |  | Cult of the Ebon Destroyers |  |  |
-|  | CURRENT  Jay Cardenas Culinary 2020 resume |  |  |
 |  | Current Trends in Narratology | Greta Olson |  |
 | 2016 | Curse of Strahd: [unravel the mysteries of Ravenloft in this dread adv | Perkins, Crawford, Mearls |  |
 | 2016 | Curse of Strahd: unravel the mysteries of Ravenloft in this dread adve | Perkins, Crawford, Mearls, Wiz | 08_FUZZ INTERTEXT AND GENRE |
@@ -1817,7 +1801,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dirty Tactics Toolbox |  |  |
 |  | Dirty Thirty A Memoir | Asa Akira | SEX |
 |  | Disasters - Meltdown and Fallout |  |  |
-|  | DISNEY HLP COVER LETTER - JAY CARDENAS 2019 |  |  |
 |  | Distant Shores |  |  |
 |  | Distant Worlds |  |  |
 | 2015 | Distilling the Knowledge in a Neural Network | Hinton, Vinyals, Dean |  |
@@ -1844,6 +1827,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | doombible |  | 080006 - VIDEO GAME DESIGN |
 | 2016 | Doublespeak | Lutz | 07_DIEGESIS |
 |  | Douching+Guideline |  | SEX |
+|  | Doug Church - Formal Abstract Design Tools | 1999 |  |
 |  | Down the Blighted Path |  |  |
 |  | Down the Blighted Path - Poster Maps |  |  |
 |  | Dr. Timm Woods - Random Tables_ Dungeons and Lairs_ The Game Master's  | 2022 | 080007 - TABLE TOP GAME DESIGN |
@@ -2687,9 +2671,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Everyman Gaming - Kitsune Compendium v.2 |  |  |
 |  | Everyman Gaming - Monk Archetypes |  |  |
 |  | Everyman Gaming - Monk Archetypes II |  |  |
-|  | EVIL CHECK PC DRAFT 1 |  |  |
-|  | evil check sequence 2 |  |  |
-|  | evil check sequence 3 |  |  |
 |  | Evil Robot - Galaxy Pirates - Cryo Destroyer |  |  |
 |  | Evil Robot - Galaxy Pirates - Eldred Classic Cruiser |  |  |
 |  | Evil Robot - Galaxy Pirates - Eldred Heavy Cruiser |  |  |
@@ -3067,7 +3048,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | From the Bags of Giants II |  |  |
 |  | Fuck Yeah Menswear Bespoke Knowledge for the Crispy Gentleman | Kevin Burrows, Lawrence Schlos |  |
 |  | FudgeSRD |  |  |
-|  | Full Dramatica Print |  |  |
 |  | Fumbus - Level 1 Alchemist |  |  |
 |  | Fumbus - Level 3 Alchemist |  |  |
 |  | Fumbus - Level 5 Alchemist |  |  |
@@ -3104,8 +3084,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Genius Options - Masters of Time |  |  |
 |  | Genre | Frow, John | 08_FUZZ INTERTEXT AND GENRE |
 |  | Gerald Appel - Sensuality _ Black and White Nude and Portrait Art Phot | 2011 |  |
-|  | Get Started with Dropbox |  |  |
-|  | Getting Started Report |  |  |
 |  | Giant Hunter's Handbook |  |  |
 |  | Giant Hunter's Handbook Chart |  |  |
 |  | Giants Revisited |  |  |
@@ -3170,6 +3148,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Green Ronin - Freeport, The City of Adventure - Map |  |  |
 |  | Green Ronin - Peril in Freeport |  |  |
 |  | Green Ronin - Player's Guide to Freeport |  |  |
+|  | Greg Costikyan - I Have No Words & I Must Design | 2002 |  |
 |  | Grid Systems in Graphic Design Raster Systeme Fur Die Visuele Gestaltu |  | 080004 - art & 080005 - design |
 |  | grm specifications |  |  |
 |  | grm wireframes |  |  |
@@ -3443,6 +3422,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | How to Write Dazzling Dialogue The Fastest Way to Improve Any Manuscri |  |  |
 |  | human-integration-design-handbook-revision-1 |  |  |
 |  | Humans of Golarion |  |  |
+|  | Hunicke, LeBlanc, Zubek - MDA A Formal Approach to Game Design and Gam | 2004 |  |
 |  | hvrm15j |  |  |
 |  | hvrm15j |  |  |
 |  | Hypercorps 2099 |  |  |
@@ -3464,7 +3444,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Illustrated Guide to Python 3 A Compl... |  | COMPUTER SCIENCE & WEBDEV |
 |  | Illustrated Guide to Python 3 A Compl... |  |  |
 |  | Illustrated Guide to Python 3 A Compl... |  |  |
-|  | Illustrating Report |  |  |
 |  | Imperial Gazetteer |  |  |
 |  | Imperial Gazetteer - The Principality of Morgau and Doresh, and Realms |  |  |
 |  | implant_data_sheet |  |  |
@@ -3599,7 +3578,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | J5 - Beyond the Vault of Souls |  |  |
 |  | Jacinto Cardenas 2022 |  |  |
 |  | Jacinto Cardenas Resume 2022 |  |  |
-|  | Jackie + The Kooz Print |  |  |
 |  | Jade Oath - Archetypes of the Jade Oath |  |  |
 |  | Jade Oath - Bakemono |  |  |
 |  | Jade Oath - Enlightened Scholar |  |  |
@@ -3627,34 +3605,17 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | James Scott Bell - Write Your Novel From The Middle_ A New Approach fo | 2014 | 02_PLOT SYUHZET |
 |  | James Scott Bell - Writing Fiction For All You're Worth-Compendium Pre | 2012 |  |
 |  | Jane Alison - Meander, Spiral, Explode_ Design and Pattern in Narrativ | 2019 | 02_PLOT SYUHZET |
-|  | Jay Cardenas - 2019 |  |  |
-|  | JAY CARDENAS - RESUME - [phone removed] |  |  |
 |  | Jay Cardenas 2022 resume xtreme |  |  |
 |  | JAY CARDENAS 2250 MONAGHAN DR TALLAHASSEE FL 32309-3125 | Stoddard, Ct |  |
 |  | JAY CARDENAS 2250 MONAGHAN DR TALLAHASSEE FL 32309-3125 | Stoddard, Ct |  |
 |  | Jay Cardenas Amazon resume 2023 |  |  |
-|  | JAY CARDENAS BURGER KING COVER - GENERAL MANAGER |  |  |
-|  | JAY CARDENAS Chipotle Mexican Grill Cover Letter |  |  |
 |  | Jay Cardenas CIA resume 2023 |  |  |
-|  | JAY CARDENAS COVER - RESTAURANT GEN MANAGER - TRAVEL CENTERS OF AMERIC |  |  |
-|  | JAY CARDENAS COVER MILLER'S ALE HOUSE RESTAURANT MANAGER |  |  |
-|  | JAY CARDENAS COVER TAZIKIS GENERAL MANAGER |  |  |
-|  | JAY CARDENAS COVER TIJUANA FLATS - AST RESTAURANT MANAGER |  |  |
-|  | Jay Cardenas Culinary 2019 |  |  |
-|  | Jay Cardenas Culinary 2019-August word |  |  |
-|  | Jay Cardenas Culinary 2020 references |  |  |
-|  | Jay Cardenas Culinary 2020 resume |  |  |
-|  | Jay Cardenas Culinary Fall 2020 ver 1 |  |  |
-|  | Jay Cardenas Externship Learning Journal |  |  |
-|  | JAY CARDENAS [email removed] - RESUME FALL 2020 |  |  |
 |  | Jay Cardenas resume 2023_www.marijuanajobscannabiscareers.com |  |  |
-|  | JAY CARDENAS SOUTHEAST QSR TACO BELL GENERAL MANAGER COVER |  |  |
-|  | JAY CARDENAS xtreme gift shop 2022 cover letter |  |  |
-|  | JAY'S STANDARD RECEPIES |  |  |
 |  | Jay_Cardenas_2022_resume_xtreme |  |  |
 |  | Jaye's Games - Rhune - Stormpunk Character Primer |  |  |
 |  | Jennie Jarvis - Crafting the Character Arc_ A Practical Guide to Chara | 2014 | 03_CHARACTER |
 |  | Jerome Wagner, Ph.D. - The Enneagram Spectrum of Personality Styles 2E | 2021 | 03_CHARACTER |
+|  | Jesper Juul - Games Telling Stories | 2001 |  |
 |  | Jihad Conspiracies |  |  |
 |  | Jihad Final Reckoning |  |  |
 |  | Jihad Hot Spots 3072 |  |  |
@@ -4029,6 +3990,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Lost Omens #9 - Absalom - Poster Map |  |  |
 |  | Lost Omens Ancestries - Dragonkin |  |  |
 |  | Lost Treasures |  |  |
+|  | Louis Hebert - Tools for Text and Image Analysis, The Actantial Model | sample chapter, pre-2019 |  |
 |  | Lovecraft Fantasy Gaming Toolkit |  |  |
 |  | Low Tech |  |  |
 |  | Low Tech - Instant Armor |  |  |
@@ -4147,7 +4109,10 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | MAPPsemiautomatedstoragefacility |  |  |
 |  | MAPPurbancreek |  |  |
 |  | Margot Anand - The art of sexual ecstasy _ the path of sacred sexualit | 1989 | SEX |
+|  | Marie-Laure Ryan - Beyond Myth and Metaphor, Narrative in Digital Medi | 2001 |  |
+|  | Marie-Laure Ryan - Narratology for Game Studies | 2014 |  |
 |  | Marissa Boucher, Kimberlee West - 1500 Poses - A Boudoir, Glamour, and | 2014 |  |
+|  | Mark O. Riedl, R. Michael Young - Narrative Planning Balancing Plot an | 2010 |  |
 |  | Mark of the Mantis |  |  |
 |  | Mark of the Mantis - Chronicle Sheet |  |  |
 |  | Mark of the Mantis - Pregens |  |  |
@@ -4163,6 +4128,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Masters & Minions - Cult of the Mirrored King |  |  |
 |  | Masters And Minions |  |  |
 |  | Masters of Midnight - Drow Archetypes |  |  |
+|  | Mata Haggis - Storytelling Tools to Boost Your Indie Game's Narrative  | GDC 2017 |  |
 |  | MATICATION VOL. 1 (online reading) (1) | 1 |  |
 |  | Matrix Actions |  |  |
 |  | matrix_data_sheet |  |  |
@@ -4272,7 +4238,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Minotaur Games - Monster Focus - Mummies |  |  |
 |  | Minotaur Games - Monster Focus - Skeletons |  |  |
 |  | Minotaur Games - Monster Focus - Zombies |  |  |
-|  | Mise |  |  |
 |  | Misfit Monsters Redeemed |  |  |
 |  | Misfit Studios - Bite Me! Playing Lycantropes |  |  |
 |  | Misfit Studios - Crawthorne's Catalog of Creatures |  |  |
@@ -4702,7 +4667,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Occult Mysteries |  |  |
 |  | Occult Origins |  |  |
 |  | Occult Realms |  |  |
-|  | official transcript fsu |  |  |
 |  | One Bling to Rule Them All, Scaling Magic Items |  |  |
 |  | One Night Stands 1 - Jungle Ruins of Madaro-Shanti |  |  |
 |  | One Night Stands 2 - Death in the Painted Canyons |  |  |
@@ -4737,6 +4701,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Osirion, Land of Pharaohs |  |  |
 |  | Osirion, Legacy of Pharaohs |  |  |
 |  | Osirion, Legacy of Pharaohs Maps |  |  |
+|  | Otake, Yokoi, Inoue, Takahashi, Kuribayashi, Inui - Modeling Event Sal | 2020 |  |
 |  | otaku_record_sheet |  |  |
 |  | Otherverse Games - Bandits & Beggars |  |  |
 |  | Otherverse Games - Dragonbound Core Class |  |  |
@@ -5395,7 +5360,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Prestige Archetype - The Arcane Trickster |  |  |
 |  | preview_IES+DG 10 12 |  |  |
 |  | Prey | Michael Crichton |  |
-|  | PRICE SHEETS |  |  |
 |  | PRIMA GUIDE Assassins Creed Origins Prima Official Collectors Edition  | Prima Games, Michael Owen | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE Cyberpunk 2077 | Piggyback | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE Grand Theft Auto V Official Strategy Guide | Tim Bogenn, Rick Barba | 080006 - VIDEO GAME DESIGN |
@@ -5692,7 +5656,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Redacted Indictment 19CR4488JLS |  |  |
 |  | Redwall |  |  |
 |  | Redwall | Brian Jacques |  |
-|  | References |  |  |
 |  | Regents of the Roads - Gnomish Archetypes |  |  |
 |  | Reign Of Steel - Will To Live |  |  |
 |  | Reign of Winter - 01 - The Snows of Summer |  |  |
@@ -5810,6 +5773,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Roland barthes, par Roland Barthes | Roland Barthes [Barthes, Rolan |  |
 |  | Rolando Gomezs Glamour Photography Pr... |  |  |
 |  | Rolando Gomezs Posing Techniques for... |  |  |
+|  | Ron Edwards - GNS and Other Matters of Role-Playing Theory | 2001 |  |
+|  | Ron Edwards - System Does Matter | 2004 |  |
 |  | Roy Peter Clark - Writing Tools_ 50 Essential Strategies for Every Wri | 2008 |  |
 |  | Roy Peter Clark - Writing Tools_ 50 Essential Strategies for Every Wri | 2008 |  |
 |  | Roy Stuart Volume 1 | Roy Stuart, Jean-Claude Baboul |  |
@@ -6156,7 +6121,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Scenario 2-24 Shadow's Last Stand—Part II Web of Corruption |  |  |
 |  | Scenario 2-25 You Only Die Twice |  |  |
 |  | Scenario 2-26 The Mantis's Prey |  |  |
-|  | SCENE 1 DRAFT 1 EVIL CHECK |  |  |
 |  | Scene Secrets | William C. Martell |  |
 |  | Scene Secrets | William C. Martell |  |
 |  | Science Fiction Codex of Lists 90 Ran... |  |  |
@@ -6947,7 +6911,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Stick Control  For t... by George Lawrence Ston... (z-lib.or |  | 0800012 - SOUND |
 |  | Stonehouse Anatomy Notes by Seok Jung Hyun |  | 080004 - art |
 |  | Stonehouses Anatomy | Seok Jung Hyun | 080004 - art |
-|  | Story Character Archetypes |  |  |
 |  | Story Fix Transform Your Novel from Broken to Brilliant | Larry Brooks |  |
 |  | Story in Mind A Constructivist Narratology. The Psychological and Ling | David Baboulene |  |
 |  | Story Logic Problems and Possibilities of Narrative (Frontiers of Narr | David Herman |  |
@@ -6955,10 +6918,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | STORY MAPS TV Drama The Structure of the One-Hour Television Pilot | Daniel P. Calvisi |  |
 |  | Story Physics by Larry Brooks |  | 02_PLOT SYUHZET |
 |  | Story Stakes Your 1 Writing Skills Strategy to Transform Readers into  | H.R. DCosta |  |
-|  | Story Structure Report |  |  |
 |  | Story Theory The psychological and linguistic foundations to how stori | David Baboulene |  |
-|  | Story Treatment Report |  |  |
-|  | Storyform CHESS TEST |  |  |
+|  | Storytelling for interactive digital media and video games | Zeman, Nicholas B., author |  |
 | 2022 | Storytelling for New Technologies and Platforms: A Writer's Guide to T | Berger |  |
 |  | Storytelling for New Technologies and... |  |  |
 |  | Storytelling in the new Hollywood understanding classical narrative te | Kristin Thompson |  |
@@ -7122,6 +7083,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Dan Anderson Encyclopedia of Modern Arnis Volume 1 A - J (Dan Ande |  | HEALTH & FITNESS |
 |  | The Dan Anderson Encyclopedia of Modern Arnis Volume ll K - Z (Dan And |  | HEALTH & FITNESS |
 |  | The Deductionist |  |  |
+|  | The Definitive Game Narrative Guide | Brian Kindregan, Diandra Anne  |  |
 |  | The Deluxe Guide to Fiend Summoning and Faustian Bargains |  |  |
 |  | The Demonologist |  |  |
 |  | The dialogic imagination Four essays by M. M. Bakhtin | Mikhail M. Bakhtin, Michael Ho |  |
@@ -7162,6 +7124,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Forgotten Tomb of Felgar the Goblin King |  |  |
 |  | The Forlangen |  |  |
 |  | The Fundamentals of Fashion Design, 2nd ed | Richard Sorger, Jenny Udale |  |
+|  | The game design reader a Rules of play anthology | Tekinbaş, Katie Salen Zimmerma |  |
 |  | The Game Neil Strauss | Neil Strauss |  |
 |  | The Gauntlet |  |  |
 |  | The Genius Guide to 110 Spell Variants |  |  |
@@ -7702,7 +7665,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2023 | Universal principles of design: 200 ways to increase appeal, enhance u | Lidwell, Holden, Butler |  |
 |  | Unnatural Narratology Extensions, Rev... |  |  |
 |  | Unrighteous Villains |  |  |
-|  | Untitled design |  |  |
 |  | Unusual Suspects |  |  |
 |  | Urban Dressing - Mining Town |  |  |
 |  | UTC A SOP |  | MILITARY SCIENCE |
@@ -7795,11 +7757,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Weather Spaces, Mobilities and Affect... |  |  |
 | 2021 | Weather: spaces, mobilities and affects | Barry, Borovnik, Edensor |  |
 |  | Webpage-link to NTSS_0 |  |  |
-|  | week 11 |  |  |
-|  | week 12 |  |  |
-|  | week 12 review |  |  |
-|  | week 13 |  |  |
-|  | week 14 |  |  |
 |  | Weekly Wonders - Abyssal Hordes |  |  |
 |  | Weekly Wonders - Angelic Corruption |  |  |
 |  | Weekly Wonders - Arcanostatic Corruption |  |  |
@@ -7977,7 +7934,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Yorke, John - Into the woods _ how stories work and why we tell them-P | 2014 |  |
 |  | You Can Farm The Entrepreneurs Guide to Start  Succeed in a Farming En | Salatin, Joel | AGRICULTURE & ANIMAL HUSBANDRY |
 |  | Your Whispering Homunculus |  |  |
-|  | Yule Tide Roll Sequence 1 draft |  |  |
 |  | zach-like-standard |  | 080006 - VIDEO GAME DESIGN |
 |  | Zarins, Uldis - Form of the Head and Neck - 2021 |  | 080004 - art |
 |  | Zenith Games - 101 Spells for the Common Man |  |  |
