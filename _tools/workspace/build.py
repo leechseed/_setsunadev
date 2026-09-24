@@ -106,14 +106,14 @@ WORLD_CLOCK_ERAS = [
 
 plot_md = read(PLOT_MD)
 need(plot_md, "OXO.primary.M2.q1.s3", "THE INSTANCE, M2 row 9 — P1 ADDRESS")
-need(plot_md, "signpost 2, Understanding: Sense of Self, Movement 2", "P6 SIGNPOST/JOURNEY SEAT")
+need(plot_md, "signpost 1, The Past", "P6 SIGNPOST/JOURNEY SEAT (re-seated 9/24)")
 
 TOLD_SCENE = {
     "id": "oxo_primary_m2_q1_s3",
     "address": "OXO.primary.M2.q1.s3",
     "movement": "M2",
     "throughline": "MC",
-    "signpost": "Signpost 2 · Understanding: Sense of Self",
+    "signpost": "Signpost 1 · The Past (re-seated 9/24)",
     "collision": "L9×S9 (seed), Eros × Allure, trine-as-trap — echoes row 6, seeds row 8",
     "value_turn": "whole minus → plus for Tori (her read); owned plus → minus underneath (the audience's read) — ironic charge",
     "driver": "Decision, local to the CR beat: reach vs pull out (does not override the story-level ruled Driver = Action)",
@@ -137,17 +137,26 @@ THROUGHLINES = [
 ]
 ACTS = [1, 2, 3, 4]
 
-# the one confirmed signpost cell on record (M2 row 9); every other one of the
-# 16 is "no instance found" — rail-required, unverified (H5, H9)
-SIGNPOST_FILL = {
-    ("MC", 2): {
-        "state": "verified",
-        "label": "Signpost 2 · Understanding: Sense of Self",
-        "movement": "M2",
-        "detail": "Concrete instance on record: MC throughline, signpost 2, Movement 2 (traced to victoria-midnight.md, REORIENT; scene card oxo-scene-card-M2-row9.md).",
-        "told_id": TOLD_SCENE["id"],
-    }
+# the movements map, RULED 9/24 (the Bourne pivot): all 16 signpost values from
+# oxo-storyform.md §9 after the 8/24 rotation; M2 row 9 is the one carded scene (MC · 1)
+ACT_MOVEMENTS = {1: "M1 + M2", 2: "M3", 3: "M4 + M5", 4: "M6"}
+_SP = {
+    "MC": ["The Past", "The Present", "How Things are Changing", "The Future"],
+    "OS": ["Conceiving an Idea", "Developing a Plan", "Playing a Role", "Changing One's Nature"],
+    "IC": ["Impulsive Responses", "Innermost Desires", "Contemplation", "Memories"],
+    "RS": ["Obtaining", "Understanding", "Doing", "Gathering Information"],
 }
+SIGNPOST_FILL = {}
+for tl, vals in _SP.items():
+    for a, v in enumerate(vals, 1):
+        SIGNPOST_FILL[(tl, a)] = {
+            "state": "storyform", "label": f"Signpost {a} · {v}", "movement": ACT_MOVEMENTS[a],
+            "detail": f"{tl} signpost {a}: {v}. Recorded in oxo-storyform.md §9 (after the 8/24 rotation); seated at {ACT_MOVEMENTS[a]} by the movements map ruled 9/24. No scene carded here yet.",
+        }
+SIGNPOST_FILL[("MC", 1)].update({
+    "state": "carded", "told_id": TOLD_SCENE["id"],
+    "detail": "MC signpost 1: The Past, Act 1 (M1 + M2). The one carded scene sits here: M2 row 9, re-seated 9/24 from a pre-rotation label.",
+})
 
 trope_data = json.loads(read(TROPE_JSON) or "{}")
 raw_nodes = trope_data.get("nodes", [])
@@ -285,6 +294,7 @@ DATA = {
         "throughlines": THROUGHLINES,
         "acts": ACTS,
         "fill": {f"{k[0]}|{k[1]}": v for k, v in SIGNPOST_FILL.items()},
+        "actMov": ACT_MOVEMENTS,
         "nodes": RAILS_NODES,
         "columns": COLUMN_LABEL,
     },
@@ -681,7 +691,7 @@ function renderOutliner(){
   html += '<h4>Told</h4>';
   html += `<button class="ol-row" data-act="select" data-sel-type="told" data-sel-id="${DATA.told.scene.id}">${esc(DATA.told.scene.address)}<small>the one carded scene</small></button>`;
   html += '<h4>Rails</h4>';
-  html += `<button class="ol-row" data-act="select" data-sel-type="signpost" data-sel-id="MC|2">MC · Signpost 2<small>the one verified cell</small></button>`;
+  html += `<button class="ol-row" data-act="select" data-sel-type="signpost" data-sel-id="MC|1">MC · Signpost 1<small>the one carded scene</small></button>`;
   ol.innerHTML = html;
   highlightSelection();
 }
@@ -739,14 +749,14 @@ function renderFabula(){
 function renderSignpostGrid(){
   const grid = $('#signpostGrid');
   let html = '<div class="sp-corner"></div>';
-  DATA.rails.acts.forEach(a => html += `<div class="sp-act-hd">Act ${a}</div>`);
+  DATA.rails.acts.forEach(a => html += `<div class="sp-act-hd">Act ${a} · ${esc((DATA.rails.actMov||{})[a]||'')}</div>`);
   DATA.rails.throughlines.forEach(tl => {
     html += `<div class="sp-row-hd t" data-tt="tl" data-id="${tl.id}" tabindex="0">${tl.id}<small>${esc(tl.pov)} — ${esc(tl.name)}</small></div>`;
     DATA.rails.acts.forEach(a => {
       const key = tl.id + '|' + a;
       const fill = DATA.rails.fill[key];
       if (fill){
-        html += `<button class="sig-cell filled t" data-tt="signpost" data-id="${key}" data-sel-type="signpost" data-sel-id="${key}"><b>${esc(fill.label)}</b>${esc(fill.movement)}<span class="sig-chip">verified</span></button>`;
+        html += `<button class="sig-cell filled t" data-tt="signpost" data-id="${key}" data-sel-type="signpost" data-sel-id="${key}"><b>${esc(fill.label)}</b>${esc(fill.movement)}<span class="sig-chip">${fill.state==='carded'?'scene carded':'storyform'}</span></button>`;
       } else {
         html += `<div class="sig-cell empty">no instance found<span class="sig-chip gap">unverified</span></div>`;
       }
@@ -851,9 +861,9 @@ function detailCardHtml(type, id){
     const [tl, act] = id.split('|');
     const fill = DATA.rails.fill[id];
     if (!fill) return `<div class="dcard"><div class="kind">Signpost cell</div><h3>${esc(tl)} · Act ${esc(act)}</h3><p style="font-size:13.5px">No instance found — rail-required, unverified. Fixed order stays walkable; this cell renders bypassed-empty until a source fills it.</p></div>`;
-    return `<div class="dcard"><div class="kind">Signpost cell · verified</div><h3>${esc(fill.label)}</h3>
+    return `<div class="dcard"><div class="kind">Signpost cell · ${esc(fill.state)}</div><h3>${esc(fill.label)}</h3>
       <dl><div><dt>Movement</dt><dd>${esc(fill.movement)}</dd></div><div><dt>Detail</dt><dd>${esc(fill.detail)}</dd></div></dl>
-      <button class="node-chip" style="margin-top:8px" data-jump="told">Open the told scene →</button>
+      ${fill.told_id?'<button class="node-chip" style="margin-top:8px" data-jump="told">Open the told scene →</button>':''}
       <div class="src">source: PS-R.rails.md §4 · ssot_04_plot_system.md THE INSTANCE</div></div>`;
   }
   if (type === 'told'){
@@ -964,7 +974,7 @@ function eraTipHtml(era){
 function signpostTipHtml(key){
   const fill = DATA.rails.fill[key];
   if (!fill) return `<div class="th"><b>${esc(key.replace('|',' · act '))}</b><span class="k">signpost</span></div><p>No instance found — rail-required, unverified.</p>`;
-  return `<div class="th"><b>${esc(fill.label)}</b><span class="k">signpost · verified</span></div><p>${esc(fill.detail)}</p>
+  return `<div class="th"><b>${esc(fill.label)}</b><span class="k">signpost · ${esc(fill.state)}</span></div><p>${esc(fill.detail)}</p>
     <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
 }
 function toldTipHtml(scene){

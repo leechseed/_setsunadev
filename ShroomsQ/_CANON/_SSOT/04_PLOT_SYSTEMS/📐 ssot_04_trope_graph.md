@@ -1,7 +1,7 @@
 ---
 type: ssot_04_trope_graph
 category: plot_system
-version: 0.1.1
+version: 0.1.2
 last_updated: 2026-09-24
 applies_to: [OVEREXITOUT, EVIL CHECK, all future IPs]
 status: "v0.1.0 draft — BOLO 77 wave 2, built from MS-N's 135 book nodes, PS-R's rails extraction, and the fetch.py/build_graph.py pipeline (RANGE-checked); workspace-view ruling (BOLO 79, HOI4-style focus tree on the rails) folded into THE HANDSHAKE"
@@ -212,6 +212,19 @@ Propp, Vogler, and Campbell weight toward the middle (their combined "middle" co
 
 ---
 
+### The movements map (ruled 2026-09-24, BOLO 77 call 77-L)
+
+Chief: "I like the Bourne method … and the rest all recs." OXO's six movements fold into the four signpost acts at the Bourne pivot. All four throughlines turn at the same boundary. Source and the rejected options: `_tools/bolostatus/work/77/movements/MAP.md`.
+
+| Act | Movements | MC (Tori) | OS (the Factions) | IC (Anna Colson) | RS (Tori ↔ Anna Colson) |
+|---|---|---|---|---|---|
+| 1 | M1 (M1A + M1B as two journey beats) + M2 | The Past | Conceiving an Idea | Impulsive Responses | Obtaining |
+| 2 | M3 | The Present | Developing a Plan | Innermost Desires | Understanding |
+| 3 | M4 (Bourne) + M5 | How Things are Changing | Playing a Role | Contemplation | Doing |
+| 4 | M6 | The Future | Changing One's Nature | Memories | Gathering Information |
+
+Signpost values are `oxo-storyform.md` §9 after the 8/24 rotation (MAP.md §2). M2 row 9 re-seats to MC signpost 1, The Past.
+
 ## THE WALK
 
 **The rule:** a writer or a tool moves from node to node only inside the signpost order the storyform already fixed. Within one throughline, signpost N cannot be reached before signpost N-1 in that same throughline — the order is the AND chain, not an author's drawing. Tobias and Schmidt's any-phase nodes are not exempt from the rail; they ride along inside it, available to attach at whichever signpost the walk currently occupies, because their own books never claimed a fixed position to begin with.
@@ -283,3 +296,4 @@ Four real signposts, one throughline, four acts — the fixed order the rail req
 
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 2. Built from MS-N's 135 book nodes (Tobias 20 · Schmidt 55 · Propp 31 · Campbell 17 · Vogler 12, 31 same_as edges), PS-R's rails extraction (16 signposts × 4 throughlines, OXO's eight dynamics, the twelve P-layers, six blocking gaps), and the fetch.py/build_graph.py pipeline (1,678 tropes fetched, 1,034 keyed, 644 unkeyed, 2,584 trope_link edges). Six OPEN calls, none yet ruled. Workspace-view handshake written against HOI4-FOCUS-TREE-STUDY.md §6 per BOLO 79's ruling that the graph draws as a focus tree, not a free network, by default.
 - **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended; Propp minted BVX.1136 and patched onto its 31 nodes; the graph rebuilt (counts unchanged).
+- **v0.1.2 (2026-09-24):** the movements map ruled (the Bourne pivot) and seated in THE RAILS with all 16 signpost values.
