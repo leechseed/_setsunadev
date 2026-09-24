@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-24",
   "asof": "2026-09-24",
-  "s": "boresight",
-  "status": "🟡 **BORESIGHT 9/24** — five calls out · **gates BOLO 77** (9/24) · **DISTILL LANDED 9/24** (`_tools/bolostatus/work/80/DISTILL.md`, 9 models, 69 cites, RANGE 0 bad lines)",
+  "s": "hot",
+  "status": "🟡 **the controlling idea first** (biopower: the system enables evil, the person is its symptom) · home and OXO-first RULED 9/24 · research running",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the theme doc for `07_THEME_SYSTEMS/` (not yet written) · BOLO 77's four open syuzhet calls (77-U to 77-X), gated until this lands · the theme/invariants handshake BOLO 81 shares (`cost_and_meaning`, named \"theme with enforcement teeth\")",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 80",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,20 +46,22 @@
  ],
  "frago": {
   "mission": "Build the theme system as one doc, **in order to** give every scene a value it moves and an argument it serves before any scene is written.",
-  "order": "**Rule the six calls below** (one word: \"all recs\"). Then the doc builds after BOLO 81's register, about 1.5 hours.",
-  "default": "Silence: nothing builds; BOLO 77 stays gated.",
+  "order": "**The controlling idea goes first.** Research on Foucault's biopower and systemic evil is running; then we walk the shape one piece at a time, starting with the one sentence OXO argues.",
+  "default": "Silence: the research lands and waits for your read.",
   "calls": [
    {
     "q": "80-A · Where does the theme doc live?",
     "options": "a new folder 07_THEME_SYSTEMS/ (the next free number) · inside 01_NARRATIVE_FRAMEWORKS/",
     "default": "07_THEME_SYSTEMS/ (rec): keeps the 9/16 numbering intact",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, Chief: \"yes, that's fine for the doc location.\""
    },
    {
     "q": "80-B · What is the theme doc built from?",
     "options": "four parts: Dramatica's argument as the rails (Issue vs Counterpoint, Problem → Solution, Outcome + Judgment) · McKee's controlling idea as the one sentence · Coyne's value scale (positive → contrary → contradictory → negation of the negation) as the gauge each scene reads · motifs (Tomashevsky, Greimas) fed to texture · or a smaller set",
     "default": "all four (rec)",
-    "s": "open"
+    "s": "open",
+    "ruling": "9/24: Chief wants the shape walked piece by piece before ruling."
    },
    {
     "q": "80-C · How does theme relate to the rules (BOLO 81)?",
@@ -71,7 +73,8 @@
     "q": "80-D · Which story goes first?",
     "options": "OXO only, EVIL CHECK in wave 2 · both now",
     "default": "OXO only (rec): its argument is already on record",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, Chief: \"OXO first. EVIL CHECK [second].\""
    },
    {
     "q": "80-E · Which books?",
@@ -83,7 +86,8 @@
     "q": "80-F · What order?",
     "options": "BOLO 81's register first, then this doc · this doc first",
     "default": "81 first (rec): theme's handshake needs the register to exist",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, reversed: theme first; invariants come LAST, after every system reaches a stable release (81 keeps a bootstrap placeholder)."
    }
   ]
  },
@@ -353,6 +357,16 @@
      "when": "9/24",
      "who": "Chief",
      "t": "\"place 77 dependent on 80 and 81 getting completed\" — the scenes wait on the theme system and the invariants register landing first."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"priority: the controlling theme at the very top … Foucault and his idea about biopower … the system enables evil … the person is a symptom of evil … let's get research, a syllabus, ivory tower sources.\" Ruled 80-A and 80-D; asked to walk the shape piece by piece; invariants last."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Ivory-tower research and a held-shelf check launched; 81 bootstrapped; BOLO 82 (the story registry) captured."
     }
    ]
   }

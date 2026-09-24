@@ -5,8 +5,8 @@
   "trunk": "BOTH",
   "issued": "2026-09-24",
   "asof": "2026-09-24",
-  "s": "open",
-  "status": "🟡 **BORESIGHT 9/24** — calls out · **gates BOLO 77** (9/24) · **DISTILL LANDED 9/24** (`_tools/bolostatus/work/81/DISTILL.md` 22-row register, 5 contradictions · `NNI-INDEX.md` 47 works / 188 invariants, script-counted)",
+  "s": "held",
+  "status": "⏸ **built LAST, read FIRST** — the invariants are the user-end way in (the front door to a complex system), built after every other system is stable · BOOTSTRAP on record",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the Scale Ladder's completion-test clause (every rung's test ends \"…and no in-scope invariant is breached\") · the Collision Engine's L12×S12 row · the character system's `narrative_invariant` field · the Setting System's S12 field and the scene-card `invariants:` line · BOLO 77's scene wave, gated on this register landing",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 81",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,13 +54,13 @@
  ],
  "frago": {
   "mission": "Gather every narrative invariant and pushback into one register and wire it through every system, **in order to** make every scene, character and place answerable to the same few rules.",
-  "order": "**Rule the calls below** (one word: \"all recs\"; 81-J is yours alone). Then the register builds first, about 1 hour.",
-  "default": "Silence: nothing builds; BOLO 77 stays gated.",
+  "order": "**Held until the systems are stable.** The bootstrap holds the pointers. Open now: the new name (81-A), ten Marine/NASA/DoD candidates offered 9/24.",
+  "default": "Silence: the bootstrap stands; nothing else builds.",
   "calls": [
    {
     "q": "81-A · What do we call a rule the story can never break?",
-    "options": "Tenet · Law · General Order · Standing Order · keep \"invariant\"",
-    "default": "Tenet (rec): \"Law\" collides with the Administration's in-world Ecclesial Laws",
+    "options": "ten candidates offered 9/24 (Commander's Intent · Rules of Engagement · Standing Order · General Order · Flight Rule · Mission Rule · Go/No-Go · Hard Deck · Red Line · Keel)",
+    "default": "Flight Rule (rec)",
     "s": "open"
    },
    {
@@ -335,6 +335,11 @@
      "path": "_CANON_NODES/oxo-scene-card-M2-row9.md",
      "what": "the one scene card with a full six-check `invariants:` line — the other two extant cards wire the field inconsistently or not at all",
      "s": "held"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_invariants_register.md",
+     "what": "the BOOTSTRAP placeholder: pointers to DOCTRINE 0, the distill, the NNI index, the live wires",
+     "s": "done"
     }
    ],
    "cost": [
@@ -434,6 +439,26 @@
      "when": "9/24",
      "who": "Claude",
      "t": "BOLO row 81 marked \"gates BOLO 77\" — row 77's scene wave explicitly waits on this register and on BOLO 80's theme doc before it resumes."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"the invariants should come last, after all the systems are put through … a stable release … at least for now, some sort of bootstrap to keep there as a placeholder.\" \"I do want a different name for invariant … Marine coded, NASA coded, DoD coded. Give me 10 examples.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Bootstrap register written; ten names offered; 81 set to held, last in line."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"By invariants first, I feel like it's basically user-end first. While the system underneath is more complex, invariants are used as the user-end, sort of like, easy way in to understand.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Read as: built last, read first. The register becomes the front door a reader enters by; the systems underneath stay the machinery."
     }
    ]
   }

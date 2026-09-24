@@ -6,7 +6,7 @@
   "issued": "2026-09-23",
   "asof": "2026-09-24",
   "s": "gated",
-  "status": "⛔ **GATED on BOLO 80 (theme) + BOLO 81 (invariants)** · three plot docs stand · seats RULED · both proof scenes CARDED (draft ⧗)",
+  "status": "⛔ **GATED on BOLO 80 (theme)** · 81 is last-in-line, its bootstrap landed 9/24 · both proof scenes CARDED (draft ⧗)",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.9 · DOPE SHEET"
+  "version": "v0.10 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,7 +54,7 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Gated.** 77 resumes when BOLO 80's theme doc and BOLO 81's invariants register land. Then: rule the four scene questions (77-U to 77-X).",
+  "order": "**Gated on BOLO 80.** 77 resumes when the theme doc lands (81 comes last, after the systems are stable). Then: the four scene questions (77-U to 77-X).",
   "default": "Silence: 77 waits on 80 and 81; nothing else moves here.",
   "calls": [
    {
@@ -820,6 +820,11 @@
      "when": "9/24",
      "who": "Claude",
      "t": "77 gated on 80 + 81; distills of both launched."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Gate narrowed: invariants ruled last-in-line 9/24, so 77 waits on 80 plus 81's bootstrap (landed)."
     }
    ]
   }
