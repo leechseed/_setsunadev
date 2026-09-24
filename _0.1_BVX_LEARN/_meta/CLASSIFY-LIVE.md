@@ -2,7 +2,7 @@
 id: BVX-LEARN.classify-live
 title: "Classification of the live library"
 type: report
-generated: 2026-09-16
+generated: 2026-09-24
 status: BOLO 18 stage 2 - step 2
 ---
 
@@ -12,37 +12,38 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 
 | Source | Items |
 |---|---|
-| none | 5152 |
-| rule | 1480 |
-| catalog | 959 |
-| junk | 104 |
+| none | 5400 |
+| rule | 1817 |
+| catalog | 1178 |
+| tag | 315 |
+| junk | 129 |
 
 ## By subject (all 1,031)
 
 | Subject | Items |
 |---|---|
-| NONE | 5256 |
-| GAM | 1007 |
-| CRE | 283 |
-| PHI | 263 |
-| SLF | 200 |
-| TEC | 152 |
-| LIT | 101 |
-| VIS | 101 |
-| MSX | 95 |
-| BIZ | 62 |
-| FIT | 43 |
-| POL | 31 |
-| SOC | 23 |
-| MIL | 22 |
-| PRD | 19 |
-| PRF | 15 |
-| DSN | 13 |
-| PSY | 9 |
+| NONE | 5529 |
+| GAM | 1234 |
+| CRE | 464 |
+| PHI | 284 |
+| SLF | 204 |
+| VIS | 198 |
+| MSX | 190 |
+| TEC | 182 |
+| LIT | 166 |
+| MIL | 84 |
+| BIZ | 82 |
+| FIT | 66 |
+| POL | 37 |
+| PRD | 31 |
+| SOC | 25 |
+| DSN | 24 |
+| PRF | 20 |
+| PSY | 19 |
 
-## Story side: 384 CRE + LIT · 276 spine-keyed from tags · **108 still need a spine key** (step 2b: classifier by title, then a PS pass on the TOC of each)
+## Story side: 630 CRE + LIT · 276 spine-keyed from tags · **354 still need a spine key** (step 2b: classifier by title, then a PS pass on the TOC of each)
 
-## Unmatched, needs eyes (5152)
+## Unmatched, needs eyes (5400)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -58,13 +59,14 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | #10 _ Godmind |  |  |
 |  | #11 _ Gorged on Ruins |  |  |
 |  | #12 _ The Grinding Gears of Heaven |  |  |
-|  | 1 EVIL CHECK Story Guide Report |  |  |
+|  | (Architecture Taschen) Philip Jodidio - Architecture in Japan -Taschen | 2006 |  |
+|  | (Architecture Taschen) Philip Jodidio - Architecture in Japan-Taschen | 2006 |  |
+|  | (Contemporary Architecture by Country) Philip Jodidio - Architecture i | 2007 |  |
+|  | (PostcardBooks) Uwe Ommer - Uwe Ommer's Black Ladies_ 30 Postcards-Tas | 2002 |  |
 |  | 1 on 1 Adventures - 12 - Journey into Riddle Canyon |  |  |
 |  | 1 on 1 Adventures - 13 - The Pearls of Pohjola |  |  |
 |  | 1 on 1 Adventures - 14 - A Sickness in Silverton |  |  |
 |  | 1 on 1 Adventures - 15 - Cipactli's Maw |  |  |
-|  | 1.1 Crawlspace Getting Started Report |  |  |
-|  | 1.2 Crawlspace Getting Started Report |  |  |
 |  | 10 Anti-Paladin Magic Items |  |  |
 |  | 10 Inquisitor Feats |  |  |
 |  | 10 Kingdom Seeds - Forests |  |  |
@@ -113,9 +115,21 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 101 Subterranean Spells |  |  |
 |  | 101 Weapon Properties |  |  |
 |  | 101ArtNudebyDanHecho20112020 |  |  |
-|  | 125 Budoir Poses |  |  |
+|  | 107694593-Stretching-Charts |  |  |
+|  | 120623317-The-Rosicrucian-Cosmo-Conception |  |  |
+|  | 13 Steps to Evil How to Craft Superbad Villains (Sacha Black)— |  |  |
+|  | 143560289-Thelemic-Qabalah-Volume-1 |  |  |
+|  | 145891009-PHmag27 |  |  |
+|  | 147411111-Michael-w-Ford-Nox-Umbra |  |  |
+|  | 150 Best All New House Ideas | Francesc Zamora |  |
+|  | 150 Best All New House Ideas | Francesc Zamora |  |
+|  | 153772135-Female-Body-Shape |  |  |
+|  | 178858260-The-Kemetic-Tree-of-Life |  |  |
 |  | 20 Variant Foes Red Dragons |  |  |
 |  | 20 Variant Foes Worgs and Winter Wolves |  |  |
+|  | 201562690-Gymnastics-Manual |  |  |
+|  | 2022-01-05_nasa-std-3001_vol.1_rev._b_final_draft_with_signature_01052 |  |  |
+|  | 2022-10-14-NASA-HDBK-1009 |  |  |
 |  | 2025 03 12 NASA HDBK 1009A |  |  |
 |  | 2503.04844v4 |  |  |
 |  | 2591efed01 1 |  |  |
@@ -136,8 +150,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 30 Traps for Tombs |  |  |
 |  | 30 Unique Magical Blades |  |  |
 |  | 30 Variant Dragons |  |  |
+|  | 3014952-Phallism-Crux-Ansata |  |  |
+|  | 319593472-Bulb-14 |  |  |
+|  | 325210437-Interview-Gilles-Berquet |  |  |
 |  | 3BF4CFF97EE0494E92327BE6B1ABDEAD |  |  |
-|  | 4 EVIL CHECK Advanced Story Engine Points Report |  |  |
 |  | 4 RSD Common Uncommon Buttons Worksheet |  |  |
 |  | 4 Winds - A1 - Albion Armitage's Astounding Arsenal |  |  |
 |  | 4 Winds - Book of Arcane Magic |  |  |
@@ -151,6 +167,12 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 4 Winds - Player's Aid 3 - Nature's Ally Summoning Cards |  |  |
 |  | 4 Winds - Strategists & Tacticians |  |  |
 |  | 4 Winds - Tome of Monsters |  |  |
+|  | 40Under40 honorees |  |  |
+|  | 436261188-PLAYBOY-PHILIPPINES-2018 |  |  |
+|  | 453998975-Chapter-7-Flexibility-pdf |  |  |
+|  | 456576134-Bendy-Babes-30-Day-Split-Guide-pdf |  |  |
+|  | 488623754-Add-Mass-to-That-Ass |  |  |
+|  | 493783999-412596051-The-Complete-Idiot-s-Guide-to-T-Arlene-Tognetti |  |  |
 |  | 5 RSD Protagonist Change Worksheet |  |  |
 |  | 52-in-52 - 05 Runeblades |  |  |
 |  | 52-in-52 - 06 Gadget Crossbows |  |  |
@@ -170,9 +192,39 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 52-in-52 - 34 Now I Lay Me Down |  |  |
 |  | 52-in-52 - 37 Warbands |  |  |
 |  | 52-in-52 - 38 Darnitt's Straw Tower |  |  |
+|  | 527910-SATANISM-An-Examination-of-Satanic-Black-Magic |  |  |
+|  | 55261883-John-Baines-The-Stellar-Man |  |  |
+|  | 553039151-Playboy-Aryane-Steinkopf-Abril-2012 |  |  |
 |  | 6 RSD Classic Story Middle Worksheet |  |  |
-|  | 7 EVIL CHECK Advanced Continuity |  |  |
+|  | 613854815-XX0910PLBM3X020XX |  |  |
+|  | 621146760-THE-SUSTAINABLE-SPLITS-GUIDE |  |  |
+|  | 631965410-Playboy-Special-Collectors-Edition-03-2015-pdf |  |  |
+|  | 649297936-Boudoir-Inspiration-Best-of-Boudoir-2021-Boudoir-Inspiration |  |  |
+|  | 656766411-1-Best-of-Italia-August |  |  |
+|  | 658860546-Playboy-Africa-June-2017 |  |  |
+|  | 666651895-Total-Hip-Mobility-V2 |  |  |
+|  | 667521236-Playboy-Special-Colletor-s-Edition-Wet-Wild |  |  |
+|  | 686920035-DOC-20230822-WA0016-230822-091535 |  |  |
+|  | 692813099-Playboy-Special-Collectors-Edition-May |  |  |
+|  | 694741006-Tenten-Anatomy-Translated |  |  |
+|  | 703931361-Lascivia-Junio-2018 |  |  |
+|  | 704451738-DayanCat-Playboy-Mexico-Enero-2024 |  |  |
+|  | 706894893-Delicate-Magazine-Superior-Version-Issue-21-January-2023 |  |  |
+|  | 707972331-Karely-Ruiz-Playboy-Mexico-Noviembre-2023 |  |  |
 |  | 70多个人像摄影摄影摆姿和相机设光源信息图 |  |  |
+|  | 74261587-Bible-of-Cock |  |  |
+|  | 744947441-Oswald-Wirth-The-Apprentice-s-Book |  |  |
+|  | 744947441-Oswald-Wirth-The-Apprentice-s-Book-1 |  |  |
+|  | 747455998-Playboy-Australia-2024-02 |  |  |
+|  | 754055651-Boudoir-Inspiration-July-2024-Black-White-Issue |  |  |
+|  | 779996161-Tati-Zaqui-pdf |  |  |
+|  | 785302928-Playboy-Germany-Special-Digital-Edition-Hot-Legs-2020 |  |  |
+|  | 785585595-Boudoir-Inspiration-May-2024-Lingerie |  |  |
+|  | 788687564-stretching-poster-8-2017 |  |  |
+|  | 792342012-FREE-PDF-sample-The-Golden-Dawn-The-Original-Account-of-the- |  |  |
+|  | 794667747-Aya-Kawasaki |  |  |
+|  | 794667953-Super-Pose-Book-2015 |  |  |
+|  | 798390945-ModelSociety-zero |  |  |
 |  | 8 RSD Opponent Triangle Worksheet |  |  |
 |  | 8-Bit Adventures - Space Bounty Hunters |  |  |
 |  | 8-Bit Adventures - The Fungifolk |  |  |
@@ -180,8 +232,23 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 8-Bit Adventures - Vampire Slayer Gear |  |  |
 |  | 8-Bit Adventures - Welcome to the Fungal Kingdom |  |  |
 |  | 80 Awesome Feats, and 2 Crappy Ones |  |  |
+|  | 801325066-Playboy-June-74-Sandy-Johnson-Halloween |  |  |
+|  | 809485058-Playboy-Germany-Special-Digital-Edition-Back-to-School-2016 |  |  |
+|  | 810331531-Playboy-Africa-July-2024 |  |  |
+|  | 811046696-CRUISING-GUIDE |  |  |
+|  | 814644405-Playboy-Enero |  |  |
+|  | 814644406-Playboy-Marzo |  |  |
+|  | 82469688-A-Garden-of-Pomegranates-An-Outline-of-the-Qabalah-2nd-Ed-Isr |  |  |
+|  | 826076779-Boudoir-Inspiration-01-2025 |  |  |
+|  | 827651239-Playboy-Germany-Special-Edition-BIG-BOOBS-VOL-2 |  |  |
+|  | 827651239-Playboy-Germany-Special-Edition-BIG-BOOBS-VOL-2-1 |  |  |
+|  | 828817189-Boudoir-Inspiration-February-2025-Black-White-Issue |  |  |
+|  | 828817189-Boudoir-Inspiration-February-2025-Black-White-Issue-1 |  |  |
 |  | 9 RSD Moral Component Worksheet |  |  |
-|  | 903FFB09CA714C1C956B952D9AF08B86 |  |  |
+|  | 903FFC956B952D9AF08B86 |  |  |
+|  | 911 ST |  |  |
+|  | 911 ST-1 |  |  |
+|  | 91500821-Eros-and-Psyche |  |  |
 |  | A Broken Sky - Boundless Horizons | Patreon Extras |  |
 |  | A Broken Sky - Fantastic Ramblings |  |  |
 |  | A Broken Sky - Pirates of the Unknown Horizon - Primer |  |  |
@@ -234,6 +301,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Abomination Vaults AP - Part 3 of 3 - Eyes of Empty Death |  |  |
 |  | Abomination Vaults AP - Pawn Collection |  |  |
 |  | Academy of Secrets |  |  |
+|  | Accents and Rebounds For the Snare Dr... |  |  |
+|  | Accents and Rebounds For the Snare Dr... |  |  |
 |  | Accessory - Best of Dragon Magazine Volume 1 |  |  |
 |  | Accessory - Best of Dragon Magazine Volume 2 |  |  |
 |  | Accessory - Best of Dragon Magazine Volume 3 |  |  |
@@ -253,6 +322,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Accessory - Strategic Review #2.1 |  |  |
 |  | Accessory - Strategic Review #2.2 |  |  |
 |  | ACFrOgAFM9FjczJRcwHkKy _kBg5YJTF0eY0hz48Gm_DM_WOX49QKB7ypq84GC aDTALHu |  |  |
+|  | ACFrOgCy3KOxA_ewup1HfFiiU_VP3XSBO7SLF_ZaQOTVXHTvQNPfPHzdbsDF8RjfBiUL1J |  |  |
 |  | actions_reference_sheet |  |  |
 |  | Ad Sheet |  |  |
 |  | Adamant - Bloodlines - New Options for Sorcerers |  |  |
@@ -264,6 +334,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Adamant - The Dread Codex II - The Necromancer's Tome |  |  |
 |  | Adamant - The Tome of Secrets - Advanced Options for Players and GMs |  |  |
 |  | Adamant - Warpath, Rules for Mass Combat |  |  |
+|  | Adrian Moore_ Carrie Solomon - Inside Chefs' Fridges. Europe-Taschen | 2016 |  |
 |  | Advanced Arcana Volume I |  |  |
 |  | Advanced Arcana Volume II |  |  |
 |  | Advanced Arcana Volume III |  |  |
@@ -324,6 +395,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Adventurers Guide |  |  |
 |  | Adventurous Archetypes - The Power f Dragons |  |  |
 |  | Advertising Impact and Controlling in... |  |  |
+|  | aeb_ms_curriculum_2014 |  |  |
 |  | Aegis Of Empires AP - Part 1 of 6 - The Book in the Old House |  |  |
 |  | Aegis Of Empires AP - Part 2 of 6 - The Ebon Soul |  |  |
 |  | Aegis Of Empires AP - Part 3 of 6 - When Comes the Moon |  |  |
@@ -352,6 +424,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | AGES Gaming - For Love or Power |  |  |
 |  | AGES Gaming - Haunting Signals |  |  |
 |  | AGES Gaming - Haunts and More |  |  |
+|  | AI ART PROMPT GUIDE |  | ARTIFICIAL INTELLIGENCE |
 |  | Akashic Mysteries |  |  |
 |  | Akashic Mysteries - Daevic |  |  |
 |  | Akashic Mysteries - Guru |  |  |
@@ -418,6 +491,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Amazing Races - Vishkanyas! |  |  |
 |  | Amazing Races - Wayangs! |  |  |
 |  | Amazing Races Drow |  |  |
+|  | American Folklore An Encyclopedia (Garland Reference Library of the Hu | Jan Harold Brunvand |  |
 |  | Amiri - Level 1 Barbarian |  |  |
 |  | Amiri - Level 3 Barbarian |  |  |
 |  | Amiri - Level 5 Barbarian |  |  |
@@ -434,6 +508,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Anachronistic Adventurers - The Sensitive |  |  |
 |  | Anachronistic Adventurers - The Tough |  |  |
 |  | Anachronistic Adventures |  |  |
+|  | Anatomy of Criticism Four Essays | Northrop Frye |  |
 |  | Ancestral Anthologies Vol. 2 - Fox & Fae - Kitsune and Sylphs |  |  |
 |  | Ancestral Anthologies Vol. 3 - Favored of the Gods |  |  |
 |  | Ancestral Options - Dwarves |  |  |
@@ -444,6 +519,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Ancestral Options - Half-Orcs |  |  |
 |  | Ancestral Options - Halflings |  |  |
 |  | Ancestral Options - Humans |  |  |
+|  | Ancient symbol worship. Influence of the phallic idea in the religions |  |  |
 |  | Ancient Tombs |  |  |
 |  | Ancient Warriors - Sons of Sparta |  |  |
 |  | Ancient Warriors - The Vikings |  |  |
@@ -456,17 +532,20 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Anthro Adventures - Coloring Book |  |  |
 |  | Anthro Adventures - World Guide |  |  |
 |  | Antihero's Handbook |  |  |
+|  | Apes Babes (Frank Cho)— |  |  |
 |  | Appendix_9.1 |  |  |
 |  | Appendix_9.3 |  |  |
 |  | April Augmented 2016 |  |  |
 |  | April Augmented 2017 |  |  |
 |  | Aquatic Adventures |  |  |
 |  | Arcane Anthology |  |  |
-|  | architecture is a visual art, and the buildings speak for themselves. | 1 |  |
 |  | Argoss Press - Liber Ingenium |  |  |
 |  | Arkon's Arkive - The Brawler Class |  |  |
 |  | Armor Master's Handbook |  |  |
+|  | Ars Magica 5th Edition |  |  |
 |  | Arsenal of Arcane Might |  |  |
+|  | Art as Experience | John Dewey |  |
+|  | Art as Experience | John Dewey |  |
 |  | Artifacts & Legends |  |  |
 |  | Ascension Games - Path of Shadows |  |  |
 |  | Asian Archetypes - Magical |  |  |
@@ -481,15 +560,18 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Azukail Games - A Baker's Dozen of Witch Hexes |  |  |
 |  | BACHELORETTES ON THE PROWL | State-Of-The-Art |  |
 |  | Bag of Tricks |  |  |
+|  | ballistix-sport-lt-ddr4-productflyer |  |  |
 |  | Banestorm - Abydos |  |  |
 |  | Banestorm - Maps |  |  |
 |  | Banestorm - World Map |  |  |
+|  | Banquet of the Damned |  |  |
 |  | Bards of Porphyra |  |  |
 |  | Barroom Brawls |  |  |
 |  | BASIC ALPHABET OF ASTROLOGY | Cochrane |  |
 |  | basic_aspects_of_informational_text |  |  |
 |  | Battlezoo Ancestries - Dragons |  |  |
 |  | Battlezoo Ancestries - Dungeons |  |  |
+|  | Batty, Taylor, Sawtell, Conor - Script Development Defining the Field | 2017 |  |
 |  | Be Awesome at Dungeon Design |  |  |
 |  | Beasts of Legend - Beasts of the East |  |  |
 |  | Beasts of Legend - Beasts of the East Pawns |  |  |
@@ -510,11 +592,14 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Bestial Ancestries - The Gnoll |  |  |
 |  | Bestial Ancestries - The Medusae |  |  |
 |  | Bestial Ancestries - The Taurine |  |  |
+|  | Betsy Prioleau - Seductress_ Women Who Ravished the World and Their Lo | 2003 |  |
+|  | Betsy Prioleau - Swoon _ Great Seducers and Why Women Love Them-W. W.  | 2013 |  |
 |  | Bible of Cock Volume 2 |  |  |
 |  | Big Lizzie |  |  |
 |  | Bill Webb's Book of Dirty Tricks |  |  |
 |  | Bioware Selection |  |  |
 |  | Birdies Menu_Spring 2025 |  |  |
+|  | Black Cross | Greg Iles |  |
 |  | Black Markets |  |  |
 |  | Blackbyrne - BP1 - The Hidden Current |  |  |
 |  | Blackbyrne - BP2 - The Manor of Deceit |  |  |
@@ -544,7 +629,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Bloodstone Press - Thaumaturgic Codex 2 |  |  |
 |  | Bloodstone Press - Thaumaturgic Codex 3 |  |  |
 |  | Bloodstone Press - The Merchant's Guide of Mecha Salvage |  |  |
-|  | Blue Green Sketch Bar Menu |  |  |
 |  | blueprint_for_comprehension_instruction |  |  |
 |  | Boardroom And Curia |  |  |
 |  | Book of Beasts Legendary Foes |  |  |
@@ -572,6 +656,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Book of Heroic Races Half-Faerie Dragons |  |  |
 |  | Book of Heroic Races Reapers |  |  |
 |  | Book of Heroic Races Seedlings |  |  |
+|  | Book Of Legs (David Mecey)— |  |  |
 |  | Book of Lost Spells |  |  |
 |  | Book of Magic 10 Arcanist Exploits |  |  |
 |  | Book of Magic 10 Undead Spell Words |  |  |
@@ -600,6 +685,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Book of the River Nations - Player's Reference for Kingdom Building | 2nd printing |  |
 |  | Bosch Fiend |  |  |
 |  | Boudoir Flow Posing ak3n |  |  |
+|  | Boudoir Inspiration - Best of Boudoir 2020 (Boudoir Inspiration)— |  |  |
+|  | Boudoir Inspiration – Best of Boudoir 2022 (Boudoir)— |  |  |
 |  | Bounty #01 - The Whitefang Wyrm |  |  |
 |  | Bounty #02 - Blood of the Beautiful |  |  |
 |  | Bounty #03 - Shadows and Scarecrows |  |  |
@@ -630,7 +717,12 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Brood of the Spider Queen - Spider Bloodlines |  |  |
 |  | Building Great Sentences How to Write... |  |  |
 | 2013 | Building great sentences: how to write the kinds of sentences you love | Landon |  |
+|  | Building Your Mouseless Development Environment (Matthieu Cneude)— |  |  |
+|  | Butcha-U Box - The Complete POOTERS Collection |  |  |
+|  | C. G. Jung’s Archetype Concept Theory, Research and Applications | Christian Roesler |  |
+|  | C. G. Jung’s Archetype Concept Theory, Research and Applications (Chri |  |  |
 |  | C8E2D86CEFFD4C5AAD7E42150BE1A023 |  |  |
+|  | c91dd8487917ce8779df12c7339d1eef |  |  |
 |  | C98C3EA2836F4D1D9D2BC40A158D6C5A |  |  |
 |  | Call to Arms Fantastic Technology |  |  |
 |  | Call to Arms Mantles of Power |  |  |
@@ -697,6 +789,9 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Cheliax, Empire of Devils |  |  |
 |  | Cheliax, The Infernal Empire |  |  |
 |  | choosing_words_fuzzy_problem_space |  |  |
+|  | CHOREO_NOTES_ZIN_114_LIVE_2 |  |  |
+|  | CHOREO_NOTES_ZIN_114_LIVE_2 |  |  |
+|  | CHP_Resource_Guide |  |  |
 |  | CHP_Resource_Guide |  |  |
 |  | Chronica - Age of Exploration |  |  |
 |  | Chronicle of the Righteous |  |  |
@@ -771,6 +866,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Combat Manual - Mercenaries |  |  |
 |  | Combat Pad |  |  |
 |  | combat_record_sheet |  |  |
+|  | Comics and Sequential Art Principles and Practice of the Worlds Most P | Will Eisner |  |
 |  | Companions of the Firmament |  |  |
 |  | Companions of the Firmament - Monster Sheets Dragons, Expanded Flying |  |  |
 |  | Companions of the Firmament - Monster Sheets Dragons, Flying Skill |  |  |
@@ -781,6 +877,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Compleat Encounter Set 1 - Dark Elf Sanctum |  |  |
 |  | Condensed Campaigns - A Broken Sky |  |  |
 | 2020 | Contemporary publishing and the culture of books | Baverstock, Bradford, Gonzalez |  |
+|  | Conventions and Obligatory Moments Th... |  |  |
 |  | Conversion Guide |  |  |
 |  | Corp Building map |  |  |
 |  | CotG - Alpha To Save a Soul |  |  |
@@ -798,14 +895,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Council of Thieves - 05 - Mother of Flies |  |  |
 |  | Council of Thieves - 06 - The Twice-Damned Prince |  |  |
 |  | Council of Thieves - Map Folio |  |  |
+|  | courtroomschedule |  |  |
 |  | Courts of the Shadow Fey |  |  |
 |  | Courts of the Shadow Fey - Bonus Handouts |  |  |
 |  | Covenant Magic - Further Covenants |  |  |
-|  | Crawlspace Coffeebreak Pass |  |  |
-|  | CRAWLSPACE COFFEEBREAK PASS 2 |  |  |
 |  | Crawlspace COFFEEBREAK PASS 3 - draft outline |  |  |
-|  | Crawlspace Getting Started Report 1 |  |  |
-|  | Crawlspace Illustrating Report |  |  |
 | 2024 | Creating Suspenseful Stories: Iterative Planning with Large Language M | Xie, Riedl |  |
 |  | Creative Confidence | Kelley |  |
 |  | Creatures of Distant Worlds - Sand Cobras |  |  |
@@ -830,7 +924,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Crypt of the Everflame |  |  |
 |  | Crypt of the Sun Lord |  |  |
 |  | Cult of the Ebon Destroyers |  |  |
-|  | CURRENT  Jay Cardenas Culinary 2020 resume |  |  |
 |  | Curse of the Crimson Throne - 01 - Edge of Anarchy |  |  |
 |  | Curse of the Crimson Throne - 02 - Seven Days to the Grave |  |  |
 |  | Curse of the Crimson Throne - 03 - Escape From Old Korvosa |  |  |
@@ -850,7 +943,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | D0 - Hollow's Last Hope |  |  |
 |  | D2 - Seven Swords of Sin |  |  |
 |  | D4 - Hungry are the Dead |  |  |
+|  | Dalrock Archive ((Compiled by) udream-hunter) |  |  |
+|  | Damn Fine Story Mastering the Tools o... |  |  |
+|  | Damn Fine Story Mastering the Tools o... |  |  |
 | 2013 | Dance Medicine in Practice | Simmel |  |
+|  | Dangerous Curves Women In Action (SQP INC)— |  |  |
 |  | Dark Age Turning Points Irian |  |  |
 |  | Dark Age Turning Points Liao |  |  |
 |  | Dark Age Turning Points Vega |  |  |
@@ -863,8 +960,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dark Roads and Golden Hells - Shadow Planes and Pocket Worlds |  |  |
 |  | Dark Waters Rising |  |  |
 |  | Darklands Revisited |  |  |
+|  | Data Sketches A Journey of Imagination, Exploration, and Beautiful Dat | Nadieh Bremer Shirley Wu |  |
+|  | Data Sketches A Journey of Imagination, Exploration, and Beautiful Dat |  |  |
 |  | Daughters of Fury |  |  |
 |  | Daughters of Fury Poster Map |  |  |
+|  | David Hodgson - Half-Life 2_ Raising the Bar-Prima Games | 2004 |  |
 |  | Dawn of the Scarlet Sun |  |  |
 |  | Dead Man's Chest |  |  |
 |  | Dead Suns - 1 - Incident at Absalom Station |  |  |
@@ -883,12 +983,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Deep Magic |  |  |
 |  | Deep Magic Errata |  |  |
 |  | defining_words_word_meaning_map_noun |  |  |
-|  | Delicate I5 2018 |  |  |
 |  | DEM - Amethyst - Renaissance |  |  |
 |  | DEM - Amethyst - Renaissance 2.0 |  |  |
 |  | Demiurge Press - Creature Codex Volume 2 - Infernal Index |  |  |
 | 2019 | Design Exposition with Literate Visualization | Wood, Kachkaev, Dykes |  |
-|  | Design to Value The Architecture of Holistic Design and Creative Techn | z-library.sk, 1lib.sk, z-lib.s |  |
+|  | Design to Value The Architecture of Holistic Design and Creative Techn | Mark Bryden, John Dyson, Jaimi |  |
 |  | designpatternscard |  |  |
 |  | designpatternscard 1 |  |  |
 |  | Destroyer - Class Guide |  |  |
@@ -898,11 +997,13 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Devil's Workshop - Horrific Fears |  |  |
 |  | Devil’s Workshop - Lost Classes of Fantasy - Illusionist |  |  |
 |  | Devil’s Workshop - Lost Classes of Fantasy - Thief Acrobat |  |  |
+|  | Dian Hanson - The Big Book of Breasts-Taschen | 2006 |  |
+|  | Dian Hanson - The Big Book of Breasts-Taschen America | 2006 |  |
+|  | Dian Hanson - The Big Butt Book _ the dawning of the age of ass-Tasche | 2010 |  |
 |  | DIE HEISSESTEN BEACH-GIRLS DES SOMMERS | Spleiss |  |
 |  | Dinner at Lionlodge |  |  |
 |  | Dinner at Lionlodge - Chronicle Sheet |  |  |
 |  | Disasters - Meltdown and Fallout |  |  |
-|  | DISNEY HLP COVER LETTER - JAY CARDENAS 2019 |  |  |
 |  | Distant Shores |  |  |
 |  | Distant Worlds |  |  |
 |  | Divergent Paths - Fools Errand |  |  |
@@ -919,8 +1020,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Divine Favor - The Paladin |  |  |
 |  | DM Sketchpad - August 2010 |  |  |
 |  | DnD_BasicRules_2018 |  |  |
+|  | document-10-1 |  |  |
+|  | Donal Graeme Archive ((Compiled by) udream-hunter) |  |  |
 |  | Doom Comes to Dustpawn | Variant Cover |  |
 |  | Doom Comes to Dustpawn |  |  |
+|  | Doug Church - Formal Abstract Design Tools | 1999 |  |
 |  | Down the Blighted Path |  |  |
 |  | Down the Blighted Path - Poster Maps |  |  |
 |  | Dragon and the Thief |  |  |
@@ -1364,6 +1468,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | DragonWing Games - Torn Asunder, Critical Hits |  |  |
 |  | Dreadfox Games - Grimoire Illusionatus |  |  |
 |  | Dreadfox Games - Grimoire Illusionatus Tips |  |  |
+|  | Dressing the Man | Alan Flusser |  |
 |  | Drop Dead Studios - Spheres of Might | Updated |  |
 |  | Drop Dead Studios - Spheres of Might |  |  |
 |  | Drop Dead Studios - Spheres of Power |  |  |
@@ -1417,6 +1522,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dungeon Fantasy Monsters 2 - Icky Goo |  |  |
 |  | Dungeon Fantasy Traps | Games |  |
 |  | Dungeon Fantasy Treasures 1 - Glittering Prizes |  |  |
+|  | Dungeon Fantasy Treasures 2 - Epic Treasures |  |  |
 |  | Dungeon Fantasy Treasures 2 - Epic Treasures |  |  |
 |  | Dungeon Magazine #001 |  |  |
 |  | Dungeon Magazine #002 |  |  |
@@ -1640,6 +1746,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dungeon Magazine 220 |  |  |
 |  | Dungeon Magazine 221 |  |  |
 |  | Dungeon Magazine Annual 2010 |  |  |
+|  | Dungeon Master's Screen |  |  |
 |  | Dungeoneer's Handbook |  |  |
 |  | Dwellers Amid Bones |  |  |
 |  | Dwellers in Dream v1.0 |  |  |
@@ -1648,7 +1755,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dynamic Action! |  |  |
 |  | E1 - Carnival of Tears |  |  |
 |  | E2 - Blood of Dragonscar |  |  |
-|  | Ebook How To Suck Cock Like A Pro An Ez Slut Guide Second Edition 2nd  |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
 |  | Eldritch Archetypes - Arbalesteur |  |  |
 |  | Eldritch Dedications - Lich |  |  |
@@ -1658,12 +1764,16 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Elementals Lords of Porphyra |  |  |
 |  | Elements of Power |  |  |
 |  | Eleven Arabian Nights |  |  |
+|  | Elizabeth Kerri Mahon - Scandalous Women_ The Lives and Loves of Histo | 2011 |  |
+|  | emacs-refcard |  |  |
+|  | emacs-refcard-1 |  |  |
 |  | Empires Aflame |  |  |
 |  | EN Publishing - Bride of Portable Hole |  |  |
 |  | EN Publishing - Bride of Portable Hole - Beaver Hunt Cards |  |  |
 |  | EN Publishing - To Slay A Dragon |  |  |
 |  | EN Publishing - To Stake A Vampire |  |  |
 |  | EN Publishing - Tournaments, Fairs, and Taverns |  |  |
+|  | Enders Game | Orson Scott Card |  |
 |  | Enemies Deck |  |  |
 |  | ententpipeline |  |  |
 |  | Epic Level NPC - Epic Races Adapticons |  |  |
@@ -1672,6 +1782,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Era Digest Age Of War |  |  |
 |  | Era Digest Dark Age |  |  |
 |  | Era Digest Golden Century |  |  |
+|  | Essays of E. B. White | White, E B |  |
 |  | Even More Random Encounters Remastered |  |  |
 |  | Everyman - Archetypes Skald |  |  |
 |  | Everyman - Archetypes Swashbuckler |  |  |
@@ -1704,9 +1815,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Everyman Gaming - Kitsune Compendium v.2 |  |  |
 |  | Everyman Gaming - Monk Archetypes |  |  |
 |  | Everyman Gaming - Monk Archetypes II |  |  |
-|  | EVIL CHECK PC DRAFT 1 |  |  |
-|  | evil check sequence 2 |  |  |
-|  | evil check sequence 3 |  |  |
 |  | Evil Robot - Galaxy Pirates - Cryo Destroyer |  |  |
 |  | Evil Robot - Galaxy Pirates - Eldred Classic Cruiser |  |  |
 |  | Evil Robot - Galaxy Pirates - Eldred Heavy Cruiser |  |  |
@@ -1803,6 +1911,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Ezren - Level 1 Wizard |  |  |
 |  | Ezren - Level 3 Wizard |  |  |
 |  | Ezren - Level 5 Wizard |  |  |
+|  | f48667_01-24_lxgnr_advansys_high_temperature |  |  |
 |  | Fabricator, An Inventor Class Archetype |  |  |
 |  | Fabulis Mortuorum |  |  |
 |  | Faces of the Tarnished Souk - Ahnkar-Kosh, The Unstoppable |  |  |
@@ -1840,6 +1949,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Fat Dragon - Dragonlore, Thousand Maw |  |  |
 |  | fds specifications |  |  |
 |  | fds wireframes |  |  |
+|  | Fear and Loathing in Las Vegas A Savage Journey to the Heart of the Am | Hunter S. Thompson |  |
 |  | Fearsome Foes - Monstrous Spiders |  |  |
 |  | Feast of Dust |  |  |
 |  | Feast of Dust Poster Map |  |  |
@@ -1883,6 +1993,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Fellow Travelers - Cohorts, Followers & Hirelings |  |  |
 |  | Fen of the Five-Fold Maw |  |  |
 |  | Fey Revisited |  |  |
+|  | FG058_Bikiniarmorver |  |  |
 |  | FGG - Cosmic Odyssey - Pirates of the Starstream |  |  |
 |  | FGG - Cosmic Odyssey - Service Bots & Synthetic Companions |  |  |
 |  | FGG - Planetarium |  |  |
@@ -1915,6 +2026,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Files for Everybody #21 - Uncommon Diseases |  |  |
 |  | Files for Everybody #22 - Scoundrel Options |  |  |
 |  | Final Copy of Spa Menu |  |  |
+|  | Final Copy of Spa Menu |  |  |
+|  | Final Copy of Spa Menu |  |  |
 |  | Fire Mountain - Throne of Night Book 1 - Dark Frontier |  |  |
 |  | Fire Mountain - Throne of Night Book 1 - Player Handouts |  |  |
 |  | Fire Mountain - Throne of Night Book 2 - Player Handouts |  |  |
@@ -1926,6 +2039,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | First Steps, Part III - A Vision of Betrayal |  |  |
 |  | First Succession War |  |  |
 |  | First World Realm of the Fey |  |  |
+|  | Fishes, Flowers, Fire as Elements and Deities in the Phallic Faiths Wo |  |  |
 |  | Fist And Falcon |  |  |
 |  | Fistful of Flowers |  |  |
 |  | Fistful of Flowers - Chronicle Sheet |  |  |
@@ -2019,6 +2133,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Forgotten Encounters - Underground |  |  |
 |  | Forgotten Encounters - Urban |  |  |
 |  | Forgotten Tomb of Felgar the Goblin King |  |  |
+|  | Fotografia obnażona. Mistrzowskie sesje aktu (Brzozowski R.)— |  |  |
+|  | Fotohits - Februar 2021 (Fotohits)— |  |  |
 |  | Four Horsemen - Heralds of the Apocalypse |  |  |
 |  | Four Horsemen Present Even More Horrifically Overpowered Feats |  |  |
 |  | Four Horsemen Present Yet More Horrifically Overpowered Feats |  |  |
@@ -2031,14 +2147,13 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | From Shore to Sea |  |  |
 |  | From Shore to Sea - Ten Interesting Ruins | Web Enhancement |  |
 |  | From the Bags of Giants II |  |  |
-|  | Full Dramatica Print |  |  |
+|  | Fuck Yeah Menswear Bespoke Knowledge for the Crispy Gentleman | Kevin Burrows, Lawrence Schlos |  |
 |  | Gallows of Madness |  |  |
 |  | Gallows of Madness - Poster Map |  |  |
+|  | Gamestorming (Dave Gray)— |  |  |
 |  | Gaming Paper - Edgewaters Folly |  |  |
 |  | Gatewalkers AP - 1 of 3 - The Seventh Arch |  |  |
 |  | General Help |  |  |
-|  | Get Started with Dropbox |  |  |
-|  | Getting Started Report |  |  |
 |  | Giant Hunter's Handbook |  |  |
 |  | Giant Hunter's Handbook Chart |  |  |
 |  | Giants Revisited |  |  |
@@ -2056,6 +2171,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Giantslayer - 06 - Shadow of the Storm Tyrant - Interactive Map |  |  |
 |  | Giantslayer - Pawn Collection |  |  |
 |  | Giantslayer - Poster Map Folio |  |  |
+|  | Giger H.R. - Necronomicon I - 2008 |  |  |
+|  | Giger H.R. - Necronomicon II - 2005 |  |  |
 |  | GM Kit |  |  |
 |  | GM Screen Alt Cover |  |  |
 |  | GM's Gallery - Useful and Interesting NPCs |  |  |
@@ -2075,6 +2192,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Goodman Games - Maximum XCrawl - NPC Folio |  |  |
 |  | Gothic Campaign Compendium |  |  |
 |  | Graemation Ltd. - Orc War, The Mother Dog Saga - Savage Weaponry |  |  |
+|  | Graham Marsh, Tony Nourmand, Dave Kehr - Film Posters Exploitation -Ta | 2006 |  |
 | 1985 | Greek religion: archaic and classical | Burkert, Burkert |  |
 |  | Green and Grubby - Goblin Archetypes |  |  |
 |  | Green Ronin - Dark Deeds in Freeport |  |  |
@@ -2082,6 +2200,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Green Ronin - Freeport, The City of Adventure |  |  |
 |  | Green Ronin - Freeport, The City of Adventure - Map |  |  |
 |  | Green Ronin - Peril in Freeport |  |  |
+|  | Greg Costikyan - I Have No Words & I Must Design | 2002 |  |
 |  | grm specifications |  |  |
 |  | grm wireframes |  |  |
 |  | Guide to Absalom |  |  |
@@ -2092,6 +2211,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Gun Metal Games - Class Options Vol. 2 - Paladins Prevail! |  |  |
 |  | Gun Metal Games - Class Options Vol. 3 - Rangers Renewed |  |  |
 |  | Gunsmith's Guide |  |  |
+|  | Gymnastics Floor Exercise Tips, Rules, and Legendary Stars | Heather E. Schwartz |  |
+|  | Gymnastics Skills- Techniques- Training | Lloyd Readhead |  |
 |  | Half-Goblins of the Tangled Wood | open with Adobe |  |
 |  | Half-Goblins of the Tangled Wood |  |  |
 |  | Halls of the Mountain King |  |  |
@@ -2101,6 +2222,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Handbook House Kurita |  |  |
 |  | Handbook House Liao |  |  |
 |  | Handbook Major Periphery States |  |  |
+|  | Handbook of Sports Medicine and Science Gymnastics | Dennis J. Caine |  |
+|  | Handwritten_2023-08-24_065542 |  | PROJECT_LAWD |
 |  | Harrow Deck |  |  |
 |  | Harrow Deck Deluxe |  |  |
 |  | Harsk - Level 1 Ranger |  |  |
@@ -2131,6 +2254,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Hell's Vengeance - 06 - Hell Comes to Westcrown - Interactive Map |  |  |
 |  | Hell's Vengeance - Pawn Collection |  |  |
 |  | Hell's Vengeance - Poster Map Folio |  |  |
+|  | Helmut Newton - White Women |  |  |
 |  | Henchfolk and Hirelings |  |  |
 |  | Hero's Bastard |  |  |
 |  | Heroes for Highdelve |  |  |
@@ -2156,6 +2280,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Historical Turning Points Misery |  |  |
 |  | Historical Turning Points New Dallas |  |  |
 |  | Historical Turning Points Tortuga |  |  |
+|  | Hoard of the Dragon Queen |  |  |
 |  | Horror - The Madness Dossier |  |  |
 |  | Horror Adventures |  |  |
 |  | Horror Realms |  |  |
@@ -2168,8 +2293,13 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Houserule Footnotes - Stocking Stuffers |  |  |
 |  | Houserule Handbooks - Spellpoints Expansion |  |  |
 |  | How Can I Pay for PrEP? |  |  |
+|  | How to Draw The Best of Basic Training, Vol. 1 | Editors of Wizard The Comics M |  |
 |  | HOW TO PRINT INSTRUCTIONS |  |  |
+|  | How To Prolapse |  |  |
 | 2004 | How to solve it: a new aspect of mathematical method | Pólya |  |
+|  | How to Write a Dynamite Scene Using t... |  |  |
+|  | How to Write a Dynamite Scene Using t... |  |  |
+|  | human-integration-design-handbook-revision-1 |  |  |
 |  | Hypercorps 2099 |  |  |
 |  | Hypercorps 2099 - Famoth |  |  |
 |  | Hypercorps 2099 - Specimens in Centralia |  |  |
@@ -2181,7 +2311,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | IG04 - Starfall |  |  |
 |  | IG05 - Scorpions of Perdition |  |  |
 |  | IG06 - Magitech Archetypes |  |  |
-|  | Illustrating Report |  |  |
 |  | Imperial Gazetteer |  |  |
 |  | Imperial Gazetteer - The Principality of Morgau and Doresh, and Realms |  |  |
 |  | implant_data_sheet |  |  |
@@ -2232,6 +2361,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Inside Book Publishing | Clark |  |
 |  | Insidious Intentions - The Book of Villainy, Volume I |  |  |
 |  | Instant Pot Fried Rice - Little Sunny Kitchen |  |  |
+|  | Institut Paul Bocuse Gastronomique The definitive step-by-step guide t | Institut Paul Bocuse | 0800011 - CULINARY |
 |  | Interjection - Runesmithing Expanded ‐ The Animator Archetype |  |  |
 |  | Interjection - The Assassin |  |  |
 |  | Interjection - The Reaper OR How I Learned To Stop Worrying And Just P |  |  |
@@ -2271,15 +2401,14 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Islands of Plunder - Tarins Crown |  |  |
 |  | Isles of the Shackles |  |  |
 |  | ISO 3533 |  |  |
+|  | ISSS What is SSE |  |  |
+|  | ISSS What is SSE |  |  |
 |  | It All Falls Down |  |  |
 |  | J1 - Entombed with the Pharoahs |  |  |
 |  | J2 - Guardians of Dragonfall |  |  |
 |  | J3 - Crucible of Chaos |  |  |
 |  | J4 - The Pact Stone Pyramid |  |  |
 |  | J5 - Beyond the Vault of Souls |  |  |
-|  | Jacinto Cardenas 2022 |  |  |
-|  | Jacinto Cardenas Resume 2022 |  |  |
-|  | Jackie + The Kooz Print |  |  |
 |  | Jade Oath - Archetypes of the Jade Oath |  |  |
 |  | Jade Oath - Bakemono |  |  |
 |  | Jade Oath - Enlightened Scholar |  |  |
@@ -2294,31 +2423,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Jade Regent - 06 - The Empty Throne |  |  |
 |  | Jade Regent - Player’s Guide |  |  |
 |  | Jade Regent - Poster Map Folio |  |  |
-|  | Jay Cardenas - 2019 |  |  |
-|  | JAY CARDENAS - RESUME - [phone removed] |  |  |
-|  | Jay Cardenas 2022 resume xtreme |  |  |
+|  | James Scott Bell - Super Structure_ The Key to Unleashing the Power of | 2015 |  |
 |  | JAY CARDENAS 2250 MONAGHAN DR TALLAHASSEE FL 32309-3125 | Stoddard, Ct |  |
 |  | JAY CARDENAS 2250 MONAGHAN DR TALLAHASSEE FL 32309-3125 | Stoddard, Ct |  |
-|  | Jay Cardenas Amazon resume 2023 |  |  |
-|  | JAY CARDENAS BURGER KING COVER - GENERAL MANAGER |  |  |
-|  | JAY CARDENAS Chipotle Mexican Grill Cover Letter |  |  |
-|  | Jay Cardenas CIA resume 2023 |  |  |
-|  | JAY CARDENAS COVER - RESTAURANT GEN MANAGER - TRAVEL CENTERS OF AMERIC |  |  |
-|  | JAY CARDENAS COVER MILLER'S ALE HOUSE RESTAURANT MANAGER |  |  |
-|  | JAY CARDENAS COVER TAZIKIS GENERAL MANAGER |  |  |
-|  | JAY CARDENAS COVER TIJUANA FLATS - AST RESTAURANT MANAGER |  |  |
-|  | Jay Cardenas Culinary 2019 |  |  |
-|  | Jay Cardenas Culinary 2019-August word |  |  |
-|  | Jay Cardenas Culinary 2020 references |  |  |
-|  | Jay Cardenas Culinary 2020 resume |  |  |
-|  | Jay Cardenas Culinary Fall 2020 ver 1 |  |  |
-|  | Jay Cardenas Externship Learning Journal |  |  |
-|  | JAY CARDENAS [email removed] - RESUME FALL 2020 |  |  |
-|  | Jay Cardenas resume 2023_www.marijuanajobscannabiscareers.com |  |  |
-|  | JAY CARDENAS SOUTHEAST QSR TACO BELL GENERAL MANAGER COVER |  |  |
-|  | JAY CARDENAS xtreme gift shop 2022 cover letter |  |  |
-|  | JAY'S STANDARD RECEPIES |  |  |
-|  | Jay_Cardenas_2022_resume_xtreme |  |  |
+|  | Jesper Juul - Games Telling Stories | 2001 |  |
 |  | Jihad Conspiracies |  |  |
 |  | Jihad Final Reckoning |  |  |
 |  | Jihad Hot Spots 3072 |  |  |
@@ -2334,6 +2442,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Jihad Turning Points Tharkad |  |  |
 |  | Jirelle - Level 1 Swashbuckler |  |  |
 |  | Jirelle - Level 5 Swashbuckler |  |  |
+|  | Josh Robertson - Playboy_ 50 Years of the Playboy Bunny-Chronicle Book | 2010 |  |
 |  | Journeys - Pirates of the Western Ocean |  |  |
 |  | Journeys to the West | Design, Press |  |
 |  | Journeys to the West |  |  |
@@ -2361,6 +2470,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Kaiju Codex |  |  |
 |  | Karma Cost for Skills Increases |  |  |
 |  | KD1 - The Gift, Pt 1 - Gaijin |  |  |
+|  | KeepTalkingAndNobodyExplodes-BombDefusalManual-v1 |  |  |
+|  | KeepTalkingAndNobodyExplodes-BombDefusalManual-v1 |  |  |
 |  | Kids’ Track |  |  |
 |  | Kineticist 2nd Edition |  |  |
 |  | Kineticists of Porphyra I |  |  |
@@ -2388,6 +2499,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Knights of the Inner Sea |  |  |
 |  | Korakai - Level 1 Oracle |  |  |
 |  | Korakai - Level 5 Oracle |  |  |
+|  | KRAKENV4-00001387-en |  |  |
 |  | Krazy Kragnar's Black Market Magic Items |  |  |
 |  | Krazy Kragnar's Magic Staff Emporium |  |  |
 |  | Kyra - Level 1 Cleric |  |  |
@@ -2404,6 +2516,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Lands of the Linnorm Kings |  |  |
 |  | Lands Out Of Time |  |  |
 |  | Larger than Life |  |  |
+|  | late-night-menu |  |  |
 |  | Layers_0 6_Visual_Models_Three_Pages |  |  |
 |  | Layers_0 6_Visual_Models_Three_Pages_With_Footers |  |  |
 |  | Laying Waste - Guidebook to Critical Combat |  |  |
@@ -2497,6 +2610,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Liberation Of Terra, Vol 2 |  |  |
 |  | Libram of (Un)Fortunate Happenstance |  |  |
 | 2021 | Life-destroying diagrams | Brinkema |  |
+|  | Like Water for Chocolate | Laura Esquivel |  |
 |  | Lini - Level 1 Druid |  |  |
 |  | Lini - Level 5 Druid |  |  |
 |  | Little Red Goblin - Battle Chef |  |  |
@@ -2704,19 +2818,24 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Mark of the Mantis - Pregens |  |  |
 |  | Masks of the Living God |  |  |
 |  | Master of the Fallen Fortress |  |  |
+|  | Mastering Emacs (Mickey Petersen)— |  |  |
 |  | Masters & Minions - Cult of the Mirrored King |  |  |
 |  | Masters And Minions |  |  |
 |  | Masters of Midnight - Drow Archetypes |  |  |
 |  | MATICATION VOL. 1 (online reading) (1) | 1 |  |
 |  | Matrix Actions |  |  |
 |  | matrix_data_sheet |  |  |
-|  | media kit |  |  |
+|  | MCDP 5 |  |  |
 |  | mediaformxs v001 7102023 |  |  |
 |  | Mega-Feats Revisited |  |  |
 |  | Megadungeon Delver's Player Options |  |  |
 |  | melee one |  |  |
 |  | melee three |  |  |
 |  | melee two |  |  |
+|  | Members Club A Users guide to the Pen... |  |  |
+|  | Members Club A Users guide to the Pen... |  |  |
+|  | Mental Models  30 Th... by Peter Hollins |  |  |
+|  | Mental Models  30 Th... by Peter Hollins |  |  |
 |  | Merchant's Manifest |  |  |
 |  | Merisiel - Level 1 Rogue |  |  |
 |  | Merisiel - Level 3 Rogue |  |  |
@@ -2735,6 +2854,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Merlin's Workshop Publishing - Versatile Heritage - Observant Genotype |  |  |
 |  | Merlin's Workshop Publishing - Versatile Heritage - Robust Genotype |  |  |
 |  | Merlin's Workshop Publishing - Versatile Heritages - Origin Heritage |  |  |
+|  | MFC_CHOREO_NOTES_08_Empezo_El_Show |  |  |
+|  | MFC_CHOREO_NOTES_08_Empezo_El_Show |  |  |
 |  | MI1 - Feast or Famine |  |  |
 |  | MI2 - Rites of Passage |  |  |
 | 2012 | Microsoft manual of style | Microsoft Corporation |  |
@@ -2763,10 +2884,13 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | MIL STD 1472H |  |  |
 |  | MIL STD 1477C |  |  |
 |  | Mil STD 2525C |  |  |
+|  | Mind OS (Paul Dobransky)— |  |  |
 |  | Mind Over Matter 1 - Psion and Soulknife |  |  |
 |  | Mind Over Matter 2 - Psychic Warrior, Aegis, & Vitalist |  |  |
 |  | Mindblast Classic Monsters Augmented |  |  |
 | 2022 | Minecraft basics | Stay, Stay, Stay |  |
+|  | Minecraft Guide to Survival | Mojang AB, The Official Minecr |  |
+|  | Minecraft Guide to Survival (Updated) | Mojang AB, The Official Minecr |  |
 |  | MINING AND INDUSTRIAL SPACECRAFT TM | Pulver, Vetromile, Barrett, Mi |  |
 |  | Misfit Monsters Redeemed |  |  |
 |  | Misfit Studios - Bite Me! Playing Lycantropes |  |  |
@@ -2803,6 +2927,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Monster Classes - Undead |  |  |
 |  | Monster Codex |  |  |
 |  | Monster Codex Box - Pawns |  |  |
+|  | Monster Girl Encyclopedia Vol.1 (Kenkou Cross)— |  |  |
 |  | Monster Hunter's Handbook |  |  |
 |  | Monster Hunters 1 - Champions |  |  |
 |  | Monster Hunters 2 - The Mission |  |  |
@@ -2842,6 +2967,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | More Malcontent - Additional Content for The Malefactor |  |  |
 |  | More Random Encounters Remastered |  |  |
 |  | More Whispering Homunculus |  |  |
+|  | Morphology of the Folktale | Vladimir Propp, Laurence Scott |  |
 |  | Mountains And Canyons |  |  |
 |  | multimedia forms v001 7142023 |  |  |
 |  | Mummy's Mask - 01 - The Half-Dead City |  |  |
@@ -2855,6 +2981,9 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Murder's Mark |  |  |
 |  | mymusic5_076579_[Pianella Piano] JVKE - golden hour |  |  |
 |  | Mystery Monsters Revisited |  |  |
+|  | Naked Lunch | William S. Burroughs |  |
+|  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar |  |  |
+|  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar | 2011 |  |
 | 2006 | Natural disasters | Watts |  |
 |  | Necromo Nightmare |  |  |
 |  | NeoExodus - A House Divided - Adventure Planner |  |  |
@@ -2875,6 +3004,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | NeoExodus Legacies - Encounter At Ramat Bridge |  |  |
 |  | NeoExodus Legacies - Ruins of Trovaska |  |  |
 |  | never-trust-a-hero | Hull |  |
+|  | new camelot theatre floorplan |  |  |
 |  | New Paths 1 - The Expanded Spell-Less Ranger |  |  |
 |  | New Paths 2 - The Expanded Shaman |  |  |
 |  | New Paths 3 - The Expanded Elven Archer |  |  |
@@ -2886,9 +3016,12 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | New Paths Compendium |  |  |
 |  | Night of the Gray Death |  |  |
 |  | Night of the Gray Death - Flip Mat |  |  |
+|  | Nirvana Magazine — Issue 18 (Nirvana Magazine)— |  |  |
+|  | Nirvana Magazine — Issue 18 (Nirvana Magazine)— |  |  |
 |  | No Response from Deepmar |  |  |
 |  | Noble Cause, Bloodied Hands |  |  |
 |  | Nobles of Porphyra |  |  |
+|  | Nobuyoshi Araki - Araki by Araki-TASCHEN | 2014 |  |
 |  | NPC Codex Box - Pawn Collection |  |  |
 |  | NPC Fixer |  |  |
 |  | NPC Guide |  |  |
@@ -2905,7 +3038,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Obsidian Twilight - Races of Obsidian Twilight |  |  |
 |  | Obsidian Twilight - Races of Obsidian Twilight, Uzamati |  |  |
 |  | Obsidian Twilight - Ultimate Spell Decks |  |  |
-|  | official transcript fsu |  |  |
 |  | One Bling to Rule Them All, Scaling Magic Items |  |  |
 |  | One Night Stands 1 - Jungle Ruins of Madaro-Shanti |  |  |
 |  | One Night Stands 2 - Death in the Painted Canyons |  |  |
@@ -2929,6 +3061,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Opertaional Turning Points Falcon Incursion |  |  |
 |  | Opertaional Turning Points The Red Corsair |  |  |
 |  | Oracle Mysteries of Porphyra |  |  |
+|  | original-dramatica-tables |  |  |
+|  | original-dramatica-tables |  |  |
 |  | Orphans of the Hanged Man |  |  |
 |  | Osirion, Land of Pharaohs |  |  |
 |  | Osirion, Legacy of Pharaohs |  |  |
@@ -2949,6 +3083,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Otyughnomicon - Flensing Otyugh |  |  |
 |  | Otyughnomicon - Northern Waste Otyugh |  |  |
 |  | Otyughnomicon - Wyvern Spawn Otyugh |  |  |
+|  | Out of the Abyss |  |  |
 |  | Outlaws of Alkenstar AP - 1 of 3 - Punks in a Powderkeg |  |  |
 |  | Outlaws of Alkenstar AP - 2 of 3 - Cradle of Quartz |  |  |
 |  | Outlaws of Alkenstar AP - 3 of 3 - Smoking Gun |  |  |
@@ -3094,9 +3229,12 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | People of the Stars Map |  |  |
 |  | People of the Wastes |  |  |
 |  | Perfect Male Body Measurements According to Height (and how to achieve | Porter |  |
+|  | Perfect Trio (VivThomas,Dorothy Black,Kira Queen,Vicky Love)— |  |  |
 |  | Perilous Vistas - Marshes of Malice |  |  |
 |  | Perilous Vistas - Mountains of Madness |  |  |
 |  | Peryton Publishing - Pits of Paneris |  |  |
+|  | Petersen, James R - Playboy_ Blondes-Chronicle Books LLC | 2014 |  |
+|  | Petersen, James R - Playboy_ Redheads-Chronicle Books LLC | 2005_2014 |  |
 |  | PF 2E - Age of Ashes AP - Part 1 of 6 - Hellknight Hill |  |  |
 |  | PF 2E - Age of Ashes AP - Part 2 of 6 - Cult of Cinders |  |  |
 |  | PF 2E - Age of Ashes AP - Part 3 of 6 - Tomorrow Must Burn |  |  |
@@ -3235,6 +3373,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | PFRPG - Fantastic Feats Volume XXVII - Witches |  |  |
 |  | PFRPG - Fantastic Feats Volume XXVIII - Magus |  |  |
 |  | PFRPG - Fantastic Feats Volume XXX - Arcane Trickster |  |  |
+|  | Phallic Worship (Robert Allen Campbell)— |  |  |
 | 2018 | Phallicism and Phallic Worship | Blavatsky | BVX |
 |  | Phantasia Zoologica I - Cats, Dogs & Horses |  |  |
 |  | Pirates of the Inner Sea |  |  |
@@ -3243,9 +3382,27 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Playboy February 1976 |  |  |
 |  | Playboy France 01 02 03 2024 |  |  |
 |  | Playboy France Juillet Septembre 2021 |  |  |
+|  | Playboy Germany - April 2016 (Playboy)— |  |  |
+|  | Playboy Germany - April 2016 (Playboy)— |  |  |
+|  | Playboy Germany Calendar 2021.pdf (Playboy)— |  |  |
+|  | Playboy Germany Calendar 2021.pdf (Playboy)— |  |  |
+|  | Playboy Germany Special Digital Edition - Leinen los (Playboy Germany) |  |  |
+|  | Playboy Germany Special Digital Edition - Leinen los (Playboy Germany) |  |  |
+|  | Playboy LATAM – AgostoSeptiembre 2021 (Playboy)— |  |  |
 |  | Playboy Mexico - Julio 2024 |  |  |
+|  | Playboy New Zealand - October 2021 (Playboy)— |  |  |
+|  | Playboy New Zealand - October 2021 (Playboy)— |  |  |
+|  | Playboy New Zealand - September 2021 (Playboy)— |  |  |
 |  | Playboy Philippines 2010 01 02 |  |  |
+|  | Playboy Russia Calendar 2021.pdf (Playboy)— |  |  |
+|  | Playboy Russia Calendar 2021.pdf (Playboy)— |  |  |
+|  | Playboy Special Collectors Edition - Girls Cars 2016 (Playboy)— |  |  |
+|  | Playboy USA - July-August 2017 (Playboy)— |  |  |
+|  | Playboy USA - July-August 2017 (Playboy)— |  |  |
+|  | Playboy USA - October 2016 (Playboy)— |  |  |
+|  | Playboy USA - October 2016 (Playboy)— |  |  |
 |  | PLAYBOY USA October 1989 |  |  |
+|  | Playboy Vaticano December 2020 (Playboy)— |  |  |
 |  | Player Aid - Combat Table | Shared |  |
 |  | Player Aid - Decker |  |  |
 |  | Player Aid - GM Matrix |  |  |
@@ -3467,7 +3624,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Pregen Wizard |  |  |
 |  | Prestige Archetype - The Arcane Trickster |  |  |
 |  | preview_IES+DG 10 12 |  |  |
-|  | PRICE SHEETS |  |  |
 |  | Prime Directive |  |  |
 |  | Prime Directive - Adventure Planet Aldo |  |  |
 |  | Prime Directive - Deck Plans #1 - Klingon G1 Gunboat |  |  |
@@ -3476,8 +3632,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Prime Directive - Klingons |  |  |
 |  | Prime Directive - Romulans |  |  |
 |  | Prime Directive - Starship Aldo |  |  |
+|  | Princes of the Apocalypse |  |  |
 |  | Princes of the Plains - Halfling Archetypes |  |  |
 |  | Professional digital techniques for n... |  |  |
+|  | Prompt Book for SD 2.1 |  | ARTIFICIAL INTELLIGENCE |
 |  | Protean Lords of Porphyra |  |  |
 |  | proton recovery kit |  |  |
 |  | Psionic Campaigns |  |  |
@@ -3627,6 +3785,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | PZO1119D2 Masks |  |  |
 |  | PZO1119D2 Waves |  |  |
 |  | PZO1119D2 Woods |  |  |
+|  | Q16029_P704_ROG_Gaming_Mouse_UM_V2_UM_WEB_o |  |  |
 |  | Qadira, Gateway to the East |  |  |
 |  | Qadira, Jewel of the East |  |  |
 |  | Quests and Campaigns |  |  |
@@ -3640,6 +3799,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Random Encounters Remastered - World's Edge and Beyond |  |  |
 |  | Random Marsh Encounters |  |  |
 |  | Random Marsh Encounters - Compiled Stat Blocks |  |  |
+|  | Random Xpat Rantings Archive ((compiled by) udream-hunter) |  |  |
 |  | ranged four |  |  |
 |  | ranged one |  |  |
 |  | ranged three |  |  |
@@ -3701,6 +3861,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Reign of Winter - 06 - The Witch Queen's Revenge |  |  |
 |  | Reign of Winter - Pawn Collection |  |  |
 |  | Reign of Winter - Poster Map Folio |  |  |
+|  | REITs For Dummies | Brad Thomas |  |
+|  | REITs For Dummies | Brad Thomas |  |
 |  | Remedial Tinkering - Arcanotech |  |  |
 |  | Remedial Tinkering - Happier Little Automatons |  |  |
 |  | Remedial Tinkering - Happy Little Automatons |  |  |
@@ -3742,6 +3904,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | ricardo_vargas_simplified_pmbok_flow_6ed_color_EN A3 |  |  |
 |  | ricardo_vargas_simplified_pmbok_flow_6ed_PROCESSES_EN A4 |  |  |
 |  | ricardo_vargas_simplified_pmbok_flow_6ed_PROCESSES_EN letter |  |  |
+|  | Richard Kern - Model Release-Taschen | 2000 |  |
 |  | Rise of the Drow |  |  |
 |  | Rise of the Drow - A13 - Descent Into The Underworld Part 1 |  |  |
 |  | Rise of the Drow - DM Screen - Random Encounters |  |  |
@@ -3779,6 +3942,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Rogue - Updated |  |  |
 |  | Rogues in Remballo |  |  |
 |  | Rolando Gomezs Posing Techniques for... |  |  |
+|  | Ron Edwards - GNS and Other Matters of Role-Playing Theory | 2001 |  |
+|  | Ron Edwards - System Does Matter | 2004 |  |
+|  | Roy Stuart Volume 1 | Roy Stuart, Jean-Claude Baboul |  |
+|  | Roy Stuart Volume 1 | Roy Stuart, Jean-Claude Baboul |  |
 |  | RSD Classic Story Middle Wrksht |  |  |
 |  | RSD Common Uncommon Buttons Wrksht |  |  |
 |  | RSD Moral Component Wrksht |  |  |
@@ -3797,6 +3964,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Rules Summary - GM |  |  |
 |  | Runesmithing Expanded ‐ The Animator Archetype |  |  |
 |  | Rusted Iron Games - Frozen Gardens Winter Special |  |  |
+|  | RW_Lower_Receiver_Manual |  |  |
 |  | S02 Special - Year of the Shadow Lodge |  |  |
 |  | S03 Special - Blood Under Absalom |  |  |
 |  | S03-01 The Frostfur Captives |  |  |
@@ -4005,6 +4173,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Savage Tide 3 Supplement |  |  |
 |  | Savage Tide 4 Supplement |  |  |
 |  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
+|  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
+|  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
 |  | scalingmediapatterns v0001 07142023pdf |  |  |
 |  | Scenario 1-01 Silent Tide |  |  |
 |  | Scenario 1-02 The Hydras Fang Incident |  |  |
@@ -4089,7 +4259,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Scenario 2-24 Shadow's Last Stand—Part II Web of Corruption |  |  |
 |  | Scenario 2-25 You Only Die Twice |  |  |
 |  | Scenario 2-26 The Mantis's Prey |  |  |
-|  | SCENE 1 DRAFT 1 EVIL CHECK |  |  |
+|  | Scene Secrets | William C. Martell |  |
+|  | Scene Secrets | William C. Martell |  |
 |  | Scions of Evil |  |  |
 |  | Scions of Sin - Tiefling Archetypes |  |  |
 |  | Scions of Stone |  |  |
@@ -4097,6 +4268,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Scorched Earth - American Wastelands |  |  |
 |  | Scorched Earth - Warriors of Scorched Earth |  |  |
 |  | Scourge - The Deluxe Guide to Disease and Poison |  |  |
+|  | Sea Peoples of the Bronze Age Mediterranean c.1400 BC-1000 BC | Raffaele DAmato etc. |  |
 |  | SEALs In Vietnam |  |  |
 |  | Sean K Reynolds - Darkness without Form - Secrets of the Mimic |  |  |
 |  | Seas of Zeitgeist |  |  |
@@ -4115,6 +4287,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Secret Societies of NeoExodus - Section Omega |  |  |
 |  | Secret Societies of Vathak - The Final Phase |  |  |
 |  | Secrets of Pact Magic |  |  |
+|  | Secrets Of Story | Martell, William, C |  |
 |  | Seekers of Secrets |  |  |
 |  | Seelah - Level 1 Champion |  |  |
 |  | Seelah - Level 5 Champion |  |  |
@@ -4155,9 +4328,14 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Shattered Star - Pawn Collection |  |  |
 |  | Shattered Star - Poster Map Folio |  |  |
 |  | Shattered Star - Web Supplement - Curse of the Lady's Light |  |  |
+|  | She Comes First The Thinking Mans Guide to Pleasuring a Woman | Ian Kerner |  |
 |  | SHEEencounter |  |  |
 |  | SHEEgunfirepro |  |  |
 |  | Ships of the Inner Sea |  |  |
+|  | Shogun Method (Collection) | Derek Rake |  |
+|  | Shogun Method Black Book, Volume One... |  |  |
+|  | Shogun Method Black Book, Volume One... |  |  |
+|  | Shots — Simone Classics | Petter Hegre |  |
 |  | Shots — Simone Classics (Petter Hegre)— |  |  |
 |  | Side Paths - Silver Rebels 1 - Kennels of the Red Fang |  |  |
 |  | Side Paths - Silver Rebels 2 - Trials of the Drowned |  |  |
@@ -4166,6 +4344,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | simple_vocabulary_routine |  |  |
 |  | simplified_PROCESSES_EN A3 size_A4 |  |  |
 |  | simplified_PROCESSES_EN A3 size_LETTER |  |  |
+|  | Six Thinking Hats | Edward de Bono |  |
 |  | Skill Talents |  |  |
 |  | Skills and Qualities |  |  |
 |  | Skirmisher - The Noble Wild |  |  |
@@ -4197,6 +4376,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Slumbering Tsar - ST7 - Temple-City of Orcus, Pt 4 |  |  |
 |  | Slumbering Tsar - ST8 - Temple-City of Orcus, Pt 5 |  |  |
 |  | Slumbering Tsar - ST9 - Hidden Citadel, Pt 1 |  |  |
+|  | Snare Drum Method. Book 1 | Firth Vic. |  |
+|  | Snare Drum Method. Book 1 | Firth Vic. |  |
+|  | Snare Drum Method. Book 2 | Firth Vic. |  |
+|  | Snare Drum Method. Book 2 | Firth Vic. |  |
 |  | Snow White | Part I |  |
 |  | Snow White |  |  |
 |  | So What's for Sale, Anyway |  |  |
@@ -4208,6 +4391,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Soldier-Spy - Dragon Kings |  |  |
 |  | Soldier-Spy - Dragon Kings - World Book |  |  |
 |  | Sons of the Raging Blood |  |  |
+|  | sony-hvr-m15u-user-manual |  |  |
+|  | sony-hvr-m15u-user-manual |  |  |
 |  | Sorcerer's Options - Beyond Bloodlines |  |  |
 |  | Sorcery - Protection and Warning Spells |  |  |
 |  | SotDL - A Glorious Death |  |  |
@@ -4602,11 +4787,12 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Starjammer - Medical Marvels |  |  |
 |  | Starjammer - Prometheus Protocols |  |  |
 |  | Starjammer - Races of the Void Book One |  |  |
+|  | Starter Set - Lost Mine of Phandelver |  |  |
 |  | Steelforge - Book 1 |  |  |
 |  | Steps of the Sanguine Path | Alternate Font |  |
 |  | Steps of the Sanguine Path |  |  |
-|  | Story Treatment Report |  |  |
-|  | Storyform CHESS TEST |  |  |
+|  | Story Maps | Daniel P. Calvisi |  |
+|  | STORY MAPS TV Drama The Structure of the One-Hour Television Pilot | Daniel P. Calvisi |  |
 |  | Strange Aeons - 01 - In Search of Sanity |  |  |
 |  | Strange Aeons - 01 - In Search of Sanity - Interactive Map |  |  |
 |  | Strange Aeons - 03 - Dreams of the Yellow King |  |  |
@@ -4622,6 +4808,9 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Stroh Hammer - Gravity Age - Creature Update 00 |  |  |
 |  | Stroh Hammer - Gravity Age - Cybernetics Emporium |  |  |
 |  | Stroh Hammer - Gravity Age - Nanotech Emporium |  |  |
+|  | Structural Anthropology | etc. |  |
+|  | structure_chart |  |  |
+|  | Stuck Diagrams Help | Abby Covert |  |
 |  | Suliawa, The Twisted Forest |  |  |
 |  | Summon Monster - Pawn Collection |  |  |
 |  | Sunken Empires - KQ Compilation |  |  |
@@ -4629,13 +4818,16 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Supporting Cast - Age Of Sail Pirate Crew |  |  |
 |  | Sword And Dragon |  |  |
 | 2023 | Systems 4.0: Systems Foundations for Industry 4.0 | Badiru, Omitaomu |  |
+|  | Systems Thinking Made Simple | Derek Cabrera, Laura Cabrera |  |
 |  | Tactical Operations v3.3 2014 06 04 |  |  |
 |  | Taldor, Echoes of Glory |  |  |
 |  | Taldor, the First Empire |  |  |
 |  | Tales of the Old Margreve |  |  |
 |  | Tales of the Old Margreve KQ Compilation |  |  |
 |  | TC1 - Into the Haunted Forest |  |  |
+|  | TDK_DS_000577_ICM_45686 |  |  |
 |  | teacher_and_students_steps_for_global_inferences |  |  |
+|  | TEAM DEAD NOTEBOOK 1 SCANNED |  | PROJECT_LAWD |
 |  | Tears at Bitter Manor |  |  |
 |  | Tears at Bitter Manor Poster Map |  |  |
 |  | TechManual v3.0 Battle Value |  |  |
@@ -4668,7 +4860,9 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Thaumatology - Magical Styles |  |  |
 |  | Thaumatology - Sorcery |  |  |
 |  | Thaumatology - Urban Magics |  |  |
+|  | The 36 dramatic situations for film | Figgis, Mike |  |
 |  | The Aesthetics of Atmospheres (Gernot... |  |  |
+|  | The Art and Soul of Dune | Tanya Lapointe |  |
 |  | The Art of Psionics |  |  |
 |  | The Barbarian Reforged |  |  |
 |  | The Big Book of Bloodlines |  |  |
@@ -4681,7 +4875,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The City of Graves |  |  |
 |  | The Cleric Reforged |  |  |
 |  | The Collected Monsters of Sin |  |  |
+|  | The Collected Works of C. G. Jung, Vol. 9, Part 1 The Archetypes and t | Carl Gustav Jung, William McGu |  |
+|  | The collected works of C. G. Jung. Vol. 8 The structure and dynamics o | Adler, Gerhard Fordham, Michae |  |
 |  | The Complete Advanced Feats |  |  |
+|  | The Complete Guide to Astrology Understanding Yourself, Your Signs, an | Louise Edington |  |
+|  | The Complete Guide to Astrology Understanding Yourself, Your Signs, an | Louise Edington |  |
 | 2010 | The Crusades: the authoritative history of the war for the Holy Land |  |  |
 |  | The Deductionist |  |  |
 |  | The Deluxe Guide to Fiend Summoning and Faustian Bargains |  |  |
@@ -4700,6 +4898,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Emerald Spire Superdungeon |  |  |
 |  | The Emerald Spire Superdungeon - Flip-Mats |  |  |
 |  | The Emerald Spire Superdungeon Maps |  |  |
+|  | The essential Epicurus letters, principal doctrines, Vatican sayings,  | Epicurus, Eugene OConnor |  |
+|  | The Fabulous Women of Boris Vallejo and Julie Bell (Boris Vallejo, Jul |  |  |
 |  | The Fall of Plaguestone |  |  |
 |  | The Fall of Plaguestone - Chronicle Sheet |  |  |
 |  | The Fall of Plaguestone - Flip Mat |  |  |
@@ -4711,12 +4911,17 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Force 2nd Edition |  |  |
 |  | The Forgotten Tomb of Felgar the Goblin King |  |  |
 |  | The Forlangen |  |  |
+|  | The Fundamentals of Fashion Design, 2nd ed | Richard Sorger, Jenny Udale |  |
+|  | The Game Neil Strauss | Neil Strauss |  |
 |  | The Gauntlet |  |  |
 |  | The Gods of Porphyra |  |  |
 |  | The Godsmouth Heresy |  |  |
+|  | The Good in Bed Guide to Orally Pleasuring a Man (Emily Nagoski, Ph.D) |  |  |
+|  | The Good in Bed Guide to Orally Pleasuring a Man (Emily Nagoski, Ph.D) |  |  |
 |  | The Great Beyond - A Guide to the Multiverse |  |  |
 |  | The Grimoire of Lost Souls |  |  |
 |  | The Harrow Handbook |  |  |
+|  | The Hermetic Brotherhood of Luxor Ini... |  | RELIGION & SPIRIT |
 |  | The Hermetica: The Lost Wisdom of the Pharaohs | Freke, Gandy |  |
 |  | The History of the Knights Templars | Addison |  |
 |  | The Hive of Corruption |  |  |
@@ -4726,11 +4931,19 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Ironclad - A Tinker Archetype |  |  |
 |  | The Knife in Your Hand | Novice |  |
 |  | The Knights of the Crucible |  |  |
+|  | The Last Fifty Pages The Art and Craf... |  |  |
+|  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Lonely Coast |  |  |
+|  | The Making of a Story | fAlice LaPlante |  |
+|  | The Making of a Story | fAlice LaPlante |  |
+|  | The Making of a Story | Alice LaPlante |  |
+|  | The Making of a Story | Alice LaPlante |  |
 |  | The Malefactor |  |  |
 |  | The Man Who Fell to Urth | Master |  |
 |  | The Mechromancer - A Theurge Tinker Prestige Class |  |  |
 |  | The Midnight Mirror |  |  |
+|  | The Mismade Girl | Sasha Grey |  |
+|  | The Mismade Girl | Sasha Grey |  |
 |  | The Moonscar |  |  |
 |  | The Northlands Saga I - Vengeance of the Long Serpent |  |  |
 |  | The Northlands Saga II - Beyond the Wailing Mountains |  |  |
@@ -4738,7 +4951,12 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Northlands Saga IV - Blood On the Snow |  |  |
 |  | The Nova in the Embers |  |  |
 |  | The Opened Mind |  |  |
+|  | The Origin of Satan | Elaine Pagels | RELIGION & SPIRIT |
+|  | The Overture of ELDEN RING (ファミ通書籍編集部 電撃ゲーム書籍編集部)— |  |  |
 | 1989 | The phallic quest: Priapus and masculine inflation | Wyly |  |
+|  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
+|  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
+|  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Pudding Shot 2 for $5 | Minze |  |
 |  | THE QI BOOK OF QUOTATIONS | Lloyd, Mitchinson |  |
 |  | The Reaping Stone |  |  |
@@ -4754,6 +4972,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Ruins Perilous - Ruined Guardhouse |  |  |
 |  | The Ruins Perilous - Ruined Guardhouse - Map Pack |  |  |
 |  | The Sanguine Disciple, A Maneuvers Base Class |  |  |
+|  | The Science of Gymnastics (Monèm Jemni)— |  |  |
+|  | The Sciences of the Artificial, reissue of the third edition with a ne | Herbert A. Simon |  |
 |  | THE SECRET OF THE TENNIS COURT | Beibutian |  |
 |  | The Secrets of Adventuring |  |  |
 |  | The Secrets of Divine Channeling |  |  |
@@ -4768,11 +4988,13 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Secrets of the Primordial Forest |  |  |
 |  | The Secrets of the Taskshaper |  |  |
 |  | The Sense of Style The Thinking Perso... |  |  |
+|  | The Sense of Style The Thinking Perso... |  |  |
 |  | The Seven Principalities |  |  |
 |  | The Shining Jewel - Legends of the Shining Jewel - Campaign Guide |  |  |
 |  | The Ship of Fools |  |  |
 |  | The Sighted Seeker |  |  |
 |  | The Sinister Secrets of Silvermote |  |  |
+|  | The Sketchbook | Boris Vallejo, Julie Bell, Nig |  |
 |  | The Slithering |  |  |
 |  | The Slithering - Flip Mat |  |  |
 |  | The Slumbering Tsar Saga |  |  |
@@ -4780,12 +5002,18 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Solo Adventurer’s Toolbox | Bimler |  |
 |  | The Song of Fodin |  |  |
 |  | The Steamsinger - A Bard Tinker Prestige Class |  |  |
+|  | The Templars The Rise and Spectacular Fall of God’s Holy Warriors | Dan Jones |  |
+|  | The Thirty-Six Dramatic Situations | Georges Polti |  |
 |  | The Tinker Master of Modular Mechanical Mayhem |  |  |
 |  | The Tomb of Caragthax the Reaver | Revised |  |
 |  | The Trading Mindwheel Eight Essential... |  |  |
+|  | The Trading Mindwheel Eight Essential... |  |  |
 |  | The Traveler's Guide to the Elemental Plane of Fire |  |  |
 |  | The Ultimate Gladiator |  |  |
+|  | The Ultimate Guide to Fellatio How to Go Down on a Man and Give Him Mi | Violet Blue |  |
+|  | The Universal Traveler A Soft-Systems Guide to Creativity, Problem-Sol |  |  |
 | 2024 | The Use of Motion Capture Technology in 3D Animation | Caroline Wibowo, Nugroho, Wibo |  |
+|  | The Visual Language of Comics Introduction to the Structure and Cognit | Neil Cohn |  |
 |  | The War Mind |  |  |
 |  | The War of the Goblin King |  |  |
 |  | The Warren of the Death Spider |  |  |
@@ -4796,6 +5024,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | the_inference attuned_teacher |  |  |
 |  | the_sentence attuned_teacher |  |  |
 |  | the_vocabulary attuned_educator |  |  |
+|  | Thinking Fast and Slow | Daniel Kahneman |  |
+|  | Thinking in Systems A Primer | Donella H. Meadows |  |
 |  | Third League Turning Point St. Ives |  |  |
 |  | This and That - Rope and Chain |  |  |
 |  | This and That - Secret and Cypher |  |  |
@@ -4913,6 +5143,9 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Troll in the Corner - Mirkmoot's Accoutrements for People Small and Gr |  |  |
 |  | Trouble in Otari |  |  |
 |  | Trouble in Otari - Flip Mat |  |  |
+|  | Troy Francis Archive ((compiled by) udream-hunter) |  |  |
+|  | True Style The History and Principles of Classic Menswear | G. Bruce Boyer |  |
+|  | Trust the Hand Book (18+) | Bert Herrman |  |
 |  | Turning Points Arcturus |  |  |
 |  | Turning Points Epsilon Eridani |  |  |
 |  | Twilight Archer |  |  |
@@ -4988,7 +5221,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Underworld Races & Classes |  |  |
 |  | Unfamiliar Faces - New Medium Spirits |  |  |
 |  | Unrighteous Villains |  |  |
-|  | Untitled design |  |  |
 |  | Unusual Suspects |  |  |
 |  | Urban Dressing - Mining Town |  |  |
 |  | Valeros - Level 1 Fighter |  |  |
@@ -5009,6 +5241,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Vehicles of Legend |  |  |
 |  | Villainous Pirates |  |  |
 |  | Villains of Pact Magic |  |  |
+|  | Vim Reference Guide (Sundeep Agarwal)— |  |  |
+|  | Virginia Postrel - The Power of Glamour_ Longing and the Art of Visual | 2013 |  |
+|  | VoicemeeterBanana_UserManual |  |  |
+|  | Volo's Guide to Monsters |  |  |
 |  | W1 - Conquest of Bloodsworn Vale |  |  |
 |  | W1 - Conquest of Bloodsworn Vale - Paper Miniatures |  |  |
 |  | W2 - River into Darkness |  |  |
@@ -5046,6 +5282,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Wayfinder #14 |  |  |
 |  | Wayfinder #15 |  |  |
 |  | Wayfinder #16 |  |  |
+|  | Ways of worldmaking | Goodman, Nelson |  |
+|  | Ways of worldmaking | Goodman, Nelson |  |
 |  | Wayward Rogue - Shattered Skies - The Ogre's New Boots |  |  |
 |  | We B4 Goblins! |  |  |
 |  | We Be Goblins Free! |  |  |
@@ -5056,11 +5294,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Weather Spaces, Mobilities and Affect... |  |  |
 | 2021 | Weather: spaces, mobilities and affects | Barry, Borovnik, Edensor |  |
 |  | Webpage-link to NTSS_0 |  |  |
-|  | week 11 |  |  |
-|  | week 12 |  |  |
-|  | week 12 review |  |  |
-|  | week 13 |  |  |
-|  | week 14 |  |  |
 |  | Weekly Wonders - Abyssal Hordes |  |  |
 |  | Weekly Wonders - Arcanostatic Corruption |  |  |
 |  | Weekly Wonders - Archetypes of the Ancients Volume I - Atlantis |  |  |
@@ -5150,14 +5383,18 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Weekly Wonders - Villainous Archetypes Volume VII |  |  |
 |  | Weekly Wonders - Villainous Magic Items |  |  |
 |  | Wells of Wonder - Arcane Fonts |  |  |
+|  | Westernwear. Postwar American Fashion and Culture | Sonya Abrego |  |
 |  | WG0 - Horror at Dagger Rock |  |  |
 |  | Wild Things - Options for Animal Companions |  |  |
 |  | Wizard - Updated |  |  |
+|  | Wizard How To Draw Advanced Techniques (Wizard Best of Basic Training) |  |  |
 |  | Wolf And Blake |  |  |
+|  | Wonderworks (Angus Fletcher)2ABBD91BB839485486BD3B40A5C7CE5C |  |  |
 |  | Wondrous Items - Armor |  |  |
 |  | Wondrous Items - Helmets & Shields |  |  |
 |  | Wondrous Items - Magic Mirrors |  |  |
 |  | Wondrous Treasures - Illumination |  |  |
+|  | Woodworking The complete step-by-step manual | DK |  |
 |  | word_meaning_map_adjective |  |  |
 |  | Wordcasting Ent - Pugilist |  |  |
 |  | World of Aruneus - Clerics & Wizards |  |  |
@@ -5178,6 +5415,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Wrath of the Righteous - Poster Map Folio |  |  |
 |  | Wrath of the River King |  |  |
 |  | Write to TV (Cook, Martie)1682337 |  |  |
+|  | Write to TV (Cook, Martie)1682337 |  |  |
 |  | Written by DAVID PULVER, with KENNETH PETERS Additional Material by WI | Netherland, Panagos, Shy, Stev |  |
 |  | Written by JASON “PK” LEVINE Illustrated by GUY BURWELL, PAUL DALY, SH | Ross, Thibault |  |
 |  | Written by LISA J. STEELE Edited by ALAIN H. DAWSON and SCOTT HARING A | Jackson |  |
@@ -5185,16 +5423,27 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Written by WILLIAM H. STODDARD Edited by NIKOLA VRTIS Illustrated by P | Hite, Pulver, Rice |  |
 |  | Wyrd of Questhaven |  |  |
 |  | Your Whispering Homunculus |  |  |
-|  | Yule Tide Roll Sequence 1 draft |  |  |
 |  | Zenith Games - 101 Spells for the Common Man |  |  |
 |  | ZGA1 - NPC Cards |  |  |
 |  | ZGA1 - NPC Named Cards |  |  |
 |  | ZGA1 - Premium Handouts |  |  |
 |  | ZGA2 - The Grand Design |  |  |
 |  | ZGA3 - The Age of Reason |  |  |
+|  | Zheng Wei Gu (Guweiz) - The Art of Guweiz-3dtotal | 2020 |  |
 |  | Zombie Sky Press - The Faerie Ring - Along the Twisting Way Campaign G |  |  |
 |  | Zombies - Day One |  |  |
 |  | Øone - The Sinking, Great City Campaign Serial |  |  |
 |  | Общее руководство Snoop Project |  |  |
 |  | ’Tis Pity She’s a Whore |  |  |
 |  | ’Tis Pity She’s a Whore |  |  |
+|  | スーパー・ポーズブック ヌード編6 - Super Pose Book (島本耕司葵)— |  |  |
+|  | スーパー・ポーズブック ヌード編6 - Super Pose Book (島本耕司葵)— |  |  |
+|  | 人体·自然·造型.艺用模特篇 | 陈学章 |  |
+|  | 人体·自然·造型.艺用模特篇 | 陈学章 |  |
+|  | 人体摄影造型艺术 下 | 高盛奎 |  |
+|  | 人体摄影造型艺术 下 | 高盛奎 |  |
+|  | 多角度ポーズ資料集「タイトニット的ブーツギャル」 MULTIANGLE GIRL (arcfeminine)B0923FSRWN |  |  |
+|  | 多角度ポーズ資料集「タイトニット的ブーツギャル」 MULTIANGLE GIRL (arcfeminine)B0923FSRWN |  |  |
+|  | 汤加丽人体艺术写真 (汤加丽)— |  |  |
+|  | 汤加丽人体艺术写真 (汤加丽)— |  |  |
+|  | 郝叔和他的女人 (天堂男根)— |  |  |

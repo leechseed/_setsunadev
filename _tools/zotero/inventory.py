@@ -21,6 +21,10 @@ TAG2SPINE = {"00_THEORY OF COMPOSITION": "L0", "01_THEME": "L6", "02_PLOT": "L4"
              "09_PUBLICATION": "L7", "PLOT & STORY": "L4", "NARRATIVE": "L0", "PLOT": "L4"}
 
 
+# personal documents that wander into a scanned folder: their filenames carry a phone number, an email, a transcript
+PERSONAL = re.compile(r"resume|r[eé]sum[eé]|cover letter|\bcover\b.*manager|transcript|references|@gmail|\b\d{10}\b|cardenas", re.I)
+
+
 def norm(t):
     return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()[:80]
 
@@ -37,6 +41,8 @@ def drop_scan(cat_by_title, today):
         for f in sorted(fs):
             if not f.lower().endswith((".pdf", ".epub")) or f.startswith("._") or os.path.getsize(os.path.join(dp, f)) < 2048:
                 continue  # AppleDouble resource forks and empty files are not books; EPUBs count as books too (9/23)
+            if PERSONAL.search(f):
+                continue  # Chief's own papers (resumes, cover letters, transcripts) never enter the public repo (scrubbed 9/24)
             stem = re.sub(r"\s*\(Z-Library\)|\s*\(z-lib\.org\)|\s*\(z-library\.sk[^)]*\)|\s*9\d{12}|\s*\d{13}|\s*B0[0-9A-Z]{8}", "", os.path.splitext(f)[0]).strip().rstrip("—").strip()
             stem = re.sub(r"^\d{6,}-", "", stem)  # a Scribd numeric prefix
             if "-" in stem and " " not in stem:
@@ -133,6 +139,8 @@ def main():
         if not (ct.endswith("pdf") or "epub" in ct) or not p:
             continue
         f = p[8:] if p.startswith("storage:") else os.path.basename(p)
+        if PERSONAL.search(f):
+            continue
         path = next((c for c in (os.path.join(s, a["key"], f) for s in STORAGES[:2]) if os.path.exists(c)), os.path.join(STORAGES[0], a["key"], f)) if p.startswith("storage:") else p
         stem = re.sub(r"\s*\((Z-Library|z-lib\.org|z-library\.sk[^)]*)\)|\s*9\d{12}|\s*\d{13}", "", os.path.splitext(f)[0]).strip()
         m = re.match(r"^(.+?)\s*\(([^()]+)\)\s*$", stem)
@@ -147,10 +155,12 @@ def main():
     # this file; regenerating from the DB silently dropped them). Matched by zkey; the DB never wins over a sweep field.
     prev_p = os.path.join(META, "inventory-live.json")
     if os.path.exists(prev_p):
-        prev = {i.get("zkey") or i.get("pdf"): i for i in json.load(io.open(prev_p, encoding="utf-8"))}
+        prev_rows = json.load(io.open(os.environ.get("INV_PREV", prev_p), encoding="utf-8"))
+        prev = {i.get("zkey") or i.get("pdf"): i for i in prev_rows}
+        prev_by_file = {os.path.basename(i.get("pdf") or ""): i for i in prev_rows if not i.get("zkey") and i.get("spine")}
         carried = 0
         for i in items:
-            o = prev.get(i["zkey"] or i.get("pdf"))  # drop rows have no zkey; they carry by path
+            o = prev.get(i["zkey"] or i.get("pdf")) or (prev_by_file.get(os.path.basename(i.get("pdf") or "")) if not i["zkey"] else None)  # drop rows carry by path, then by filename (the folder moved 9/24)
             if not o:
                 continue
             for k in ("spine", "spine_src", "subject", "subject_src", "junk_title", "rot"):

@@ -13,12 +13,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8864** |
-| With a PDF attachment | 8864 |
-| PDF present on disk | 8772 |
-| Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7861** |
-| Story-side (CRE + LIT by catalog) | 337 |
+| Top-level items | **8839** |
+| With a PDF attachment | 8839 |
+| PDF present on disk | 8748 |
+| Already in catalog.json (BVX id) | 1001 |
+| **New since the Dec-2023 catalog** | **7838** |
+| Story-side (CRE + LIT by catalog) | 336 |
 | **Spine-keyed from Chief's tags** | **605** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
@@ -40,12 +40,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7684 |
+| NEW | 7661 |
 | GAM | 334 |
-| CRE | 229 |
+| CRE | 228 |
 | LIT | 108 |
 | MSX | 101 |
-| VIS | 100 |
+| VIS | 99 |
 | TEC | 62 |
 | BIZ | 48 |
 | MIL | 42 |
@@ -66,21 +66,21 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 080007 - TABLE TOP GAME DESIGN | 192 |
 | 03_CHARACTER | 84 |
 | 02_PLOT SYUHZET | 79 |
-| 06_NARRATOR | 77 |
+| 06_NARRATOR | 76 |
 | SEX | 66 |
 | MILITARY SCIENCE | 61 |
-| COMPUTER SCIENCE & WEBDEV | 55 |
+| COMPUTER SCIENCE & WEBDEV | 54 |
 | HEALTH & FITNESS | 43 |
 | 04_SETTING | 42 |
-| 080002 - film & 080003 - television | 39 |
+| 080002 - film & 080003 - television | 38 |
 | 080009 - PHOTOGRAPHY | 37 |
 | 08_FUZZ INTERTEXT AND GENRE | 36 |
 | 080004 - art | 32 |
-| 080006 - VIDEO GAME DESIGN | 27 |
+| 080006 - VIDEO GAME DESIGN | 26 |
 | TIKTOK | 24 |
 | 01_THEME | 21 |
 | 0800010 - ANIMATION | 18 |
-| 080004 - art & 080005 - design | 17 |
+| 080004 - art & 080005 - design | 16 |
 | 080008 - THEATRE | 16 |
 | 0800012 - SOUND | 16 |
 | BUSINESS & MANAGEMENT | 16 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7861)
+## New since the catalog (7838)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -282,11 +282,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 101ArtNudebyDanHecho20112020 |  |  |
 |  | 107694593-Stretching-Charts |  |  |
 |  | 11 |  |  |
-|  | 1118027957 COP4521  Information Security |  | COMPUTER SCIENCE & WEBDEV |
 |  | 11192023 v001 categorization by narratology.drawio |  |  |
 |  | 12 |  |  |
 |  | 120623317-The-Rosicrucian-Cosmo-Conception |  |  |
-|  | 125 Budoir Poses |  |  |
 |  | 125+ Stretching Exercises: The No-Gym Guide: From beginner to advanced |  |  |
 |  | 13 |  |  |
 |  | 13 Steps to Evil How to Craft Superbad Villains (Sacha Black)— |  |  |
@@ -951,7 +949,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Akashic Mysteries - Guru |  |  |
 |  | Akashic Mysteries - Vizier |  |  |
 | 2019 | Akt-Shooting | Dombrow |  |
-|  | Aktfotografie (David Daye)3874677745 |  |  |
 |  | Al Essentials for Project Professionals | Project Management Institute |  |
 |  | Alchemical Baroque | Games |  |
 |  | Alchemy Deck |  |  |
@@ -1208,7 +1205,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Betsy Prioleau - Swoon _ Great Seducers and Why Women Love Them-W. W.  | 2013 |  |
 |  | Bible of Cock Volume 2 |  |  |
 |  | Big Lizzie |  |  |
-|  | Bikini |  |  |
 |  | Bill Webb's Book of Dirty Tricks |  |  |
 |  | Bioshock Art Book Breaking the Mold (Take-Two Interactive Software)— |  |  |
 |  | BioshockPitch |  | 080007 - TABLE TOP GAME DESIGN |
@@ -1585,8 +1581,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Condensed Campaigns - A Broken Sky |  |  |
 |  | Conflict Games - Conflict Roleplaying Rulebook |  |  |
 |  | Conquering Heroes - Pregenerated Characters |  |  |
-|  | Contemporary Male Sexuality Confronting Myths and Promoting Change (Mc |  |  |
-|  | Contemporary Male Sexuality Confronting Myths and Promoting Change (Mc |  |  |
 | 2020 | Contemporary publishing and the culture of books | Baverstock, Bradford, Gonzalez |  |
 |  | Conventions and Obligatory Moments Th... |  |  |
 |  | Conversion Guide |  |  |
@@ -1695,7 +1689,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dahlia Evans - The Body Thesaurus_ A Fiction Writer’s Sourcebook of Wo | 2016 | 03_CHARACTER |
 |  | Dalrock Archive ((Compiled by) udream-hunter) |  |  |
 |  | DAMA - DMBOOK data management body of knowledge |  |  |
-|  | DAMA - DMBOOK data management body of knowledge (Library of Congress C |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
 | 2013 | Dance Medicine in Practice | Simmel |  |
@@ -1747,7 +1740,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Deep Magic |  |  |
 |  | Deep Magic Errata |  |  |
 |  | defining_words_word_meaning_map_noun |  |  |
-|  | Delicate I5 2018 |  |  |
 |  | DEM - Amethyst - Renaissance |  |  |
 |  | DEM - Amethyst - Renaissance 2.0 |  |  |
 |  | DEM - NeuroSpasta |  |  |
@@ -2583,7 +2575,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dyslexic Studeos - Pathfinder Character Sheets |  |  |
 |  | E1 - Carnival of Tears |  |  |
 |  | E2 - Blood of Dragonscar |  |  |
-|  | Ebook How To Suck Cock Like A Pro An Ez Slut Guide Second Edition 2nd  |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
 |  | Eldritch Archetypes - Arbalesteur |  |  |
 |  | Eldritch Dedications - Lich |  |  |
@@ -3149,7 +3140,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Green Ronin - Peril in Freeport |  |  |
 |  | Green Ronin - Player's Guide to Freeport |  |  |
 |  | Greg Costikyan - I Have No Words & I Must Design | 2002 |  |
-|  | Grid Systems in Graphic Design Raster Systeme Fur Die Visuele Gestaltu |  | 080004 - art & 080005 - design |
 |  | grm specifications |  |  |
 |  | grm wireframes |  |  |
 |  | Groundwork of Evangelion 2.0 |  | 04_SETTING |
@@ -3576,8 +3566,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | J3 - Crucible of Chaos |  |  |
 |  | J4 - The Pact Stone Pyramid |  |  |
 |  | J5 - Beyond the Vault of Souls |  |  |
-|  | Jacinto Cardenas 2022 |  |  |
-|  | Jacinto Cardenas Resume 2022 |  |  |
 |  | Jade Oath - Archetypes of the Jade Oath |  |  |
 |  | Jade Oath - Bakemono |  |  |
 |  | Jade Oath - Enlightened Scholar |  |  |
@@ -3605,13 +3593,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | James Scott Bell - Write Your Novel From The Middle_ A New Approach fo | 2014 | 02_PLOT SYUHZET |
 |  | James Scott Bell - Writing Fiction For All You're Worth-Compendium Pre | 2012 |  |
 |  | Jane Alison - Meander, Spiral, Explode_ Design and Pattern in Narrativ | 2019 | 02_PLOT SYUHZET |
-|  | Jay Cardenas 2022 resume xtreme |  |  |
 |  | JAY CARDENAS 2250 MONAGHAN DR TALLAHASSEE FL 32309-3125 | Stoddard, Ct |  |
 |  | JAY CARDENAS 2250 MONAGHAN DR TALLAHASSEE FL 32309-3125 | Stoddard, Ct |  |
-|  | Jay Cardenas Amazon resume 2023 |  |  |
-|  | Jay Cardenas CIA resume 2023 |  |  |
-|  | Jay Cardenas resume 2023_www.marijuanajobscannabiscareers.com |  |  |
-|  | Jay_Cardenas_2022_resume_xtreme |  |  |
 |  | Jaye's Games - Rhune - Stormpunk Character Primer |  |  |
 |  | Jennie Jarvis - Crafting the Character Arc_ A Practical Guide to Chara | 2014 | 03_CHARACTER |
 |  | Jerome Wagner, Ph.D. - The Enneagram Spectrum of Personality Styles 2E | 2021 | 03_CHARACTER |
@@ -4142,7 +4125,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | MCRP 8-10B.2 |  | MILITARY SCIENCE |
 |  | MCRP 8-10B.3 |  | MILITARY SCIENCE |
 |  | MDB Publishing - The Demon Stones |  |  |
-|  | media kit |  |  |
 |  | mediaformxs v001 7102023 |  |  |
 |  | Mega-Feats Revisited |  |  |
 |  | Megadungeon Delver's Player Options |  |  |
@@ -5366,7 +5348,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | PRIMA GUIDE Mass Effect 2 Prima Official Game Guide | Catherine Browne | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE Mass Effect 3 - Collectors Edition Guide (Bioware)— |  | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE Red Dead Redemption 2 - The Complete Official Guide, Colle | Piggyback | 080006 - VIDEO GAME DESIGN |
-|  | PRIMA GUIDE The Elder Scrolls V Skyrim Official Game Guide (David S. J |  | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE The Legend of Zelda Breath of the Wild The complete offici | VVAA | 080006 - VIDEO GAME DESIGN |
 |  | Prime Directive |  |  |
 |  | Prime Directive - Adventure Planet Aldo |  |  |
@@ -7049,8 +7030,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Art of The Last of Us | Naugthy Dog | 04_SETTING |
 |  | The Art of The Last of Us | Naugthy Dog | 04_SETTING |
 |  | The Art of The Matrix (Lana Wachowski, Larry Wachowski, Andy Wachowski |  | 04_SETTING |
-|  | The Art of War for Writers Fiction Writing Strategies, Tactics, and Ex |  |  |
-|  | The Art of War for Writers Fiction Writing Strategies, Tactics, and Ex |  |  |
 |  | The Barbarian Reforged |  |  |
 |  | The Big Book of Bloodlines |  |  |
 |  | The Big Pink Book: A Beginner’s Guide To Bimbofication |  |  |
@@ -7420,7 +7399,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Wars Of Reaving Supplemental |  |  |
 |  | The Way of the Animal Powers | Joseph Campbell | 06_NARRATOR |
 |  | The Witchwar Legacy |  |  |
-|  | The Works of Philo Complete and Unabridged, New Updated Edition (Philo |  |  |
 |  | The World of Cyberpunk 2077 | Marcin Batylda | 04_SETTING |
 |  | The Worlds Greatest Erotic Art of Today - Volume 2 | Unknown | 080009 - PHOTOGRAPHY |
 |  | The Worldwound |  |  |
@@ -7661,7 +7639,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Underground Adventures |  |  |
 |  | Underworld Races & Classes |  |  |
 |  | Unfamiliar Faces - New Medium Spirits |  |  |
-|  | Universal Principles of Design (William Lidwell, Kritina Holden, Jill  |  |  |
 | 2023 | Universal principles of design: 200 ways to increase appeal, enhance u | Lidwell, Holden, Butler |  |
 |  | Unnatural Narratology Extensions, Rev... |  |  |
 |  | Unrighteous Villains |  |  |
