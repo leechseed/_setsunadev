@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1123
+next_id: BVX.1136
 ---
 
 # BVX-LEARN — master index
@@ -106,6 +106,14 @@ An entry with a distill on disk in `KNOWLEDGE_AREAS/BVX.####.md`. RANGE = `_tool
 | `BVX.1125` | Brody — Save the Cat! Writes a Novel | L4 L7 | 4 | ✅ 9/16 · the delta from Snyder (percentages, A/B story, multi-POV); the ingredient triad; the real Brody (Zotero 0164 holds Snyder) | 7 (intake) |
 | `BVX.1126` | Aristotle — Poetics (Sachs) | L0 L4 L6 L7 | 4 | ✅ 9/16 · read visually (scan, no text layer; the file holds the book twice); "OS-biased" confirmed; hamartia is an error, not a wound | 7 (intake) |
 | `BVX.1127` | Levine & Heller — Attached | L5 | 4 | ✅ 9/16 · the L8 IMPRINT field list; the drop file is a Vietnamese translation, English copy wanted | 7 (intake) |
+| `BVX.1128` | Spartacus — Gay Travel Index 2026 | SETTING | 4 | ✅ 9/24 · 216 countries, 18 legal/safety categories; Germany 4th (BOLO 78) | 7 (intake) |
+| `BVX.1129` | Harry-Hernández et al. — Sex Tourism, Condomless Anal Intercourse, and HIV Risk (2019) | TEXTURE | 4 | ✅ 9/24 · 580 Paris app users; 28% lifetime sex tourism | 7 (intake) |
+| `BVX.1130` | Elise — Creativity and the Erotic Dimensions of the Analytic Field (2019) | L5 | 4 | ✅ 9/24 · 5 of 12 chapters read whole, the rest from the author's synopsis | 7 (intake) |
+| `BVX.1131` | O'Byrne & Holmes — Desire, drug use and unsafe sex at gay circuit parties (2011) | TEXTURE | 4 | ✅ 9/24 · 17 men; desire precedes the drugs | 7 (intake) |
+| `BVX.1132` | Solomon, Halkitis et al. — Sex Parties among Young GBMSM in NYC (2011) | — | 4 | ✅ 9/24 · 540 surveyed; 8.7% attend, heavier clustered risk | 7 (intake) |
+| `BVX.1133` | Oliver — The Gooner's Handbook (2024) | L5 | 4 | ✅ 9/24 · 92 pp read whole | 7 (intake) |
+| `BVX.1134` | Smith, Grierson & von Doussa — Gay men's sex venues (2010) | SETTING | 4 | ✅ 9/24 · 287 Melbourne men; a contradiction in the source flagged | 7 (intake) |
+| `BVX.1135` | Parrish et al. — "No strings attached": vacation sex among GBM (2019) | SETTING | 4 | ✅ 9/24 · 46 interviews, three resort towns | 7 (intake) |
 
 Legacy one-sheets (🧬 MSX · PSY · PHI · MIL, 41 files) predate the spine key and the mind-model rule; they stay as they are (D4: no renaming) and retrofit when their subject comes up.
 
