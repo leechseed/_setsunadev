@@ -2,7 +2,7 @@
 id: BVX-LEARN.inventory-live
 title: "Zotero live-library inventory"
 type: report
-generated: 2026-09-16
+generated: 2026-09-23
 source: "C:\Users\U01_LEECHSEED\Zotero\zotero.sqlite"
 status: BOLO 18 stage 2 - step 1
 ---
