@@ -21,6 +21,10 @@
    "same_as": [
     "sch.17_daring_enterprise"
    ],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Quest' — a searched-for object driving the whole external plot, not a two-person argument; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 29
   },
   {
@@ -33,6 +37,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Adventure' — the physical journey itself is the story's engine, explicitly not who the hero becomes; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 27
   },
   {
@@ -48,6 +56,10 @@
     "sch.09_flight",
     "sch.10_pursuit"
    ],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Pursuit' — a hunter/hunted dynamic between two parties is the whole pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 8
   },
   {
@@ -62,6 +74,10 @@
    "same_as": [
     "sch.52_rescue_of_a_loved_one"
    ],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Rescue' — a three-cornered rescue is defined by the protagonist's relationship to the one saved; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 13
   },
   {
@@ -74,6 +90,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Escape' — confinement by an external system/captor, not an interpersonal argument; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 17
   },
   {
@@ -88,6 +108,10 @@
    "same_as": [
     "sch.05_vengeance_for_a_crime"
    ],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Revenge' — retaliation is a standing dyad between protagonist and the one who wronged her; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 15
   },
   {
@@ -100,6 +124,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'The Riddle' — a mystery to decode is an external-plot engine; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 14
   },
   {
@@ -112,6 +140,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Rivalry' — two evenly matched rivals competing for one goal is the textbook RS pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 13
   },
   {
@@ -124,6 +156,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Underdog' — an underdog rivalry is the Rivalry pattern with the odds skewed; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 14
   },
   {
@@ -136,6 +172,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "IC",
+   "seat_why": "'Temptation' — being induced or persuaded toward something unwise is textbook pressure-from-another; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 23
   },
   {
@@ -148,6 +188,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Metamorphosis' — a literal shape-change reflecting inner identity is an MC-pattern by the pattern's own def; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 13
   },
   {
@@ -160,6 +204,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Transformation' — psychological change in the protagonist, no relationship or faction implicated; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 43
   },
   {
@@ -172,6 +220,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Maturation' — the protagonist's own passage from innocence to understanding; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 20
   },
   {
@@ -184,6 +236,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Love' — two people falling in love against an obstacle is the RS pattern by definition; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 94
   },
   {
@@ -196,6 +252,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Forbidden Love' — a love affair is still the RS argument, now also indicted by the OS/society's taboo; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 3
   },
   {
@@ -210,6 +270,10 @@
    "same_as": [
     "sch.39_self_sacrifice"
    ],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Sacrifice' — the protagonist's own capacity to give something up, an inner value choice; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 10
   },
   {
@@ -222,6 +286,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Discovery' — self-knowledge, 'who am I,' is the MC's inner question by definition; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 17
   },
   {
@@ -234,6 +302,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Wretched Excess' — the protagonist's own drift past behavioral limits, an inner-arc pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 8
   },
   {
@@ -246,6 +318,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Ascension' — spiritual rise from a lower to higher state is an inner-change pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 7
   },
   {
@@ -258,6 +334,10 @@
    "bvx": "BVX.0043",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Descension' — a fall through the protagonist's own character flaw is an inner-change pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 32
   },
   {
@@ -270,6 +350,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Supplication' — a Petitioner appealing to a Power in Authority stages a power/authority (factional) problem; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 16
   },
   {
@@ -282,6 +366,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Benefaction' — the mirror of Supplication, same authority/power axis; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 8
   },
   {
@@ -294,6 +382,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Deliverance' — a rescuer-unfortunate dyad, the relationship that undoes the threat; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -306,6 +398,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "IC",
+   "seat_why": "'Sojourn' — a stranger's mere presence pressuring/unsettling a family is classic influence-character pressure; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 4
   },
   {
@@ -320,6 +416,10 @@
    "same_as": [
     "tob.06_revenge"
    ],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Vengeance for a Crime' — avenger and criminal form the whole pattern, a standing two-party grievance; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 4
   },
   {
@@ -332,6 +432,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Rehabilitation' — the same avenger/criminal dyad, redirected toward reform; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 1
   },
   {
@@ -344,6 +448,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Vengeance Taken for Kindred Upon Kindred' — vengeance narrowed to kin, still a two-party (now blood-bound) dyad; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 7
   },
   {
@@ -356,6 +464,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Appearance of a New Kinsman' — a new relative's welcome is a kinship-relationship pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 2
   },
   {
@@ -370,6 +482,10 @@
    "same_as": [
     "tob.03_pursuit"
    ],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Flight' — focus stays on the one escaping — her own state, not a chase relationship; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 2
   },
   {
@@ -384,6 +500,10 @@
    "same_as": [
     "tob.03_pursuit"
    ],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Pursuit' — striving toward a goal or self-improvement is the protagonist's own inner-directed arc; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 0
   },
   {
@@ -396,6 +516,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Disaster' — a catastrophe striking a Vanquished Power is external/societal, the fear of the unknown at scale; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 21
   },
   {
@@ -408,6 +532,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Miracle' — the mirror of Disaster, same external/societal axis; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 8
   },
   {
@@ -420,6 +548,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "IC",
+   "seat_why": "'Falling Prey to Cruelty or Misfortune' — trouble at the hands of a Master is pressure exerted by another onto the Unfortunate; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 15
   },
   {
@@ -432,6 +564,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "IC",
+   "seat_why": "'Becoming Fortunate' — the same Master/Unfortunate axis, reversed to good luck; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 6
   },
   {
@@ -444,6 +580,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Revolt' — explicitly 'concerns a group rather than one person' — a factional/authority pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 25
   },
   {
@@ -456,6 +596,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Support' — the same group-vs-authority axis, redirected to backing the power; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -470,6 +614,10 @@
    "same_as": [
     "tob.01_quest"
    ],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Daring Enterprise' — a Bold Leader's venture toward an Object against an Adversary is external-plot shaped, 'similar to a Quest'; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 19
   },
   {
@@ -482,6 +630,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'The Healing Journey' — the Healer's is explicitly an inner journey to heal herself or others; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 0
   },
   {
@@ -494,6 +646,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Abduction' — Guardian and Victim form the standing dyad a failure of duty breaks; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 7
   },
   {
@@ -506,6 +662,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Reunion' — the same Guardian/Victim dyad, now working toward reunion; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 4
   },
   {
@@ -518,6 +678,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Enigma' — explicitly 'the engine of mystery and riddle plots' — an external puzzle for the cast; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 15
   },
   {
@@ -530,6 +694,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Invention' — the Seeker becoming her own Inventor is a self-directed, inner-resourced solution; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 7
   },
   {
@@ -542,6 +710,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Obtaining' — acquiring an object through negotiation is an external, plan-driven goal; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 11
   },
   {
@@ -554,6 +726,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Letting Go' — surrendering what was obtained to become freer is an inner-value reversal; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 2
   },
   {
@@ -566,6 +742,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Enmity of Kinsman' — mutual hatred between kinsmen is a standing two-party dyad; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -578,6 +758,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Hero to Kinsman' — admiration/mentorship between kinsmen is the same dyad, warmer; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -590,6 +774,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Competition' — two people fixated on the same object/prize, obsessive rivalry; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 19
   },
   {
@@ -602,6 +790,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Concession' — the same rivalry dyad, resolved by willingly conceding; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -614,6 +806,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Adultery' — two adulterers and a betrayed spouse — the argument is the relationship; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 4
   },
   {
@@ -626,6 +822,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Fidelity' — the same triangle, resolved by fidelity instead; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -638,6 +838,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Madness' — madness read as a menace is an inner-state pattern (paired with Genius); whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 13
   },
   {
@@ -650,6 +854,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Genius' — the same inner-state axis, reframed as genius; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -662,6 +870,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Imprudence' — an unwise, hasty act is the protagonist's own trait driving consequences; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 6
   },
   {
@@ -674,6 +886,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Caution' — the same trait axis, reframed as caution; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -686,6 +902,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Crimes of Love' — a lover and beloved's crime is a relationship pattern, judged by the outside world; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 5
   },
   {
@@ -698,6 +918,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Sacrifice for Love' — the same lover/beloved dyad, resolved by sacrifice instead of crime; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -710,6 +934,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Slaying of a Loved One' — a slayer and a loved-one victim — the relationship is the whole horror of the pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 6
   },
   {
@@ -722,6 +950,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Conviction' — the same slayer axis, redirected into refusing the order; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 1
   },
   {
@@ -736,6 +968,10 @@
    "same_as": [
     "tob.16_sacrifice"
    ],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Self-Sacrifice' — giving up a thing sacrificed out of passion or duty is an inner, self-directed act; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 5
   },
   {
@@ -748,6 +984,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Self-Preservation' — the same inner axis, reframed as self-preservation; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 10
   },
   {
@@ -760,6 +1000,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Discovery of the Dishonor of a Loved One' — a Discoverer's loyalty to a loved one is tested by what's uncovered — the relationship is the stake; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 1
   },
   {
@@ -772,6 +1016,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Discovery of the Honor of a Loved One' — the same Discoverer/loved-one dyad, reversed to vindication; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 9
   },
   {
@@ -784,6 +1032,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Obstacles to Love' — two lovers kept apart by an obstacle is the textbook RS pattern; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -796,6 +1048,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Unconditional Love' — unconditional love between two people is the same axis, deepened; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 2
   },
   {
@@ -808,6 +1064,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Conflict With a God' — a mortal's disharmony with an immortal stages religious/spiritual questions at large, not one relationship; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 2
   },
   {
@@ -820,6 +1080,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "OS",
+   "seat_why": "'Supernatural Occurrence' — the same cosmic axis, reframed as a gifted touch of the supernatural; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 3
   },
   {
@@ -832,6 +1096,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Mistaken Judgment' — a mistaken judgment is the judging character's own cognitive/inner failure; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -844,6 +1112,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Intuitive Judgment' — the same inner axis, reframed as intuitive judgment; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -856,6 +1128,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Remorse' — suppressed guilt is an inner emotional state needing to surface; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -868,6 +1144,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Empathy' — the same inner axis, reframed as empathy; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 2
   },
   {
@@ -880,6 +1160,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Loss of a Loved One' — a spectator mourning a slain kinsman is grief built entirely around the kinship relationship; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 9
   },
   {
@@ -894,6 +1178,10 @@
    "same_as": [
     "tob.04_rescue"
    ],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Rescue of a Loved One' — the same kinship dyad, redirected into active rescue; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -906,6 +1194,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "RS",
+   "seat_why": "'Odd Couple' — a forced pairing of opposites who must learn to work as one is a two-person dynamic by definition; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 10
   },
   {
@@ -918,6 +1210,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "MC",
+   "seat_why": "'Fish Out of Water' — a misfit's inability to adjust is her own inner/displacement state, not a two-person argument; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "low",
    "tropes": 6
   },
   {
@@ -930,6 +1226,10 @@
    "bvx": "BVX.0238",
    "phase": "any",
    "same_as": [],
+   "act": "any",
+   "throughline": "any",
+   "seat_why": "'Blank Situation Template' — explicitly a blank worksheet, not a named situation — no fit by design; whole-plot pattern, act 'any' (rides the walk's current signpost).",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -942,6 +1242,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Absentation' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -954,6 +1258,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Interdiction' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -966,6 +1274,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Violation' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -978,6 +1290,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Reconnaissance' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 9
   },
   {
@@ -990,6 +1306,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Delivery' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 2
   },
   {
@@ -1002,6 +1322,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Trickery' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 10
   },
   {
@@ -1014,6 +1338,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Complicity' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -1026,6 +1354,10 @@
    "bvx": "BVX.1136",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Villainy' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 12
   },
   {
@@ -1041,6 +1373,10 @@
     "cam.01_call_to_adventure",
     "vog.02_call_to_adventure"
    ],
+   "act": 1,
+   "throughline": "OS",
+   "seat_why": "'Mediation, the connective incident' — a plot function that plays across hero, villain, and donor alike; act 1 of Propp's own function order (same_as Campbell/Vogler Call to Adventure, Act1).",
+   "seat_conf": "high",
    "tropes": 18
   },
   {
@@ -1053,6 +1389,10 @@
    "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "'Beginning Counteraction' — hero's own decision/reaction, not a whole-cast event; act 2 of Propp's own function order.",
+   "seat_conf": "medium",
    "tropes": 6
   },
   {
@@ -1068,6 +1408,10 @@
     "cam.04_crossing_of_the_first_threshold",
     "vog.05_crossing_the_first_threshold"
    ],
+   "act": 2,
+   "throughline": "OS",
+   "seat_why": "'Departure' — a plot function that plays across hero, villain, and donor alike; act 2 of Propp's own function order (same_as Campbell/Vogler Crossing the Threshold, Act2).",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -1083,6 +1427,10 @@
     "cam.03_supernatural_aid",
     "vog.04_meeting_with_the_mentor"
    ],
+   "act": 2,
+   "throughline": "OS",
+   "seat_why": "'First Function of the Donor' — a plot function that plays across hero, villain, and donor alike; act 2 of Propp's own function order (same_as Campbell/Vogler donor stage, Act2).",
+   "seat_conf": "high",
    "tropes": 8
   },
   {
@@ -1095,6 +1443,10 @@
    "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "'The Hero's Reaction' — hero's own decision/reaction, not a whole-cast event; act 2 of Propp's own function order.",
+   "seat_conf": "medium",
    "tropes": 1
   },
   {
@@ -1110,6 +1462,10 @@
     "cam.03_supernatural_aid",
     "vog.04_meeting_with_the_mentor"
    ],
+   "act": 2,
+   "throughline": "OS",
+   "seat_why": "'Provision of a Magical Agent' — a plot function that plays across hero, villain, and donor alike; act 2 of Propp's own function order (same_as Campbell/Vogler donor stage, Act2).",
+   "seat_conf": "high",
    "tropes": 3
   },
   {
@@ -1122,6 +1478,10 @@
    "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
+   "act": 2,
+   "throughline": "OS",
+   "seat_why": "'Spatial Transference' — a plot function that plays across hero, villain, and donor alike; act 2 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 3
   },
   {
@@ -1136,6 +1496,10 @@
    "same_as": [
     "vog.08_the_ordeal"
    ],
+   "act": 3,
+   "throughline": "OS",
+   "seat_why": "'Struggle' — a plot function that plays across hero, villain, and donor alike; act 3 of Propp's own function order (same_as Vogler Ordeal, Act3).",
+   "seat_conf": "high",
    "tropes": 9
   },
   {
@@ -1148,6 +1512,10 @@
    "bvx": "BVX.1136",
    "phase": "middle",
    "same_as": [],
+   "act": 3,
+   "throughline": "OS",
+   "seat_why": "'Branding' — a plot function that plays across hero, villain, and donor alike; act 3 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1162,6 +1530,10 @@
    "same_as": [
     "vog.08_the_ordeal"
    ],
+   "act": 3,
+   "throughline": "OS",
+   "seat_why": "'Victory' — a plot function that plays across hero, villain, and donor alike; act 3 of Propp's own function order (same_as Vogler Ordeal, Act3).",
+   "seat_conf": "high",
    "tropes": 5
   },
   {
@@ -1177,6 +1549,10 @@
     "cam.11_the_ultimate_boon",
     "vog.09_reward"
    ],
+   "act": 3,
+   "throughline": "OS",
+   "seat_why": "'Liquidation' — a plot function that plays across hero, villain, and donor alike; act 3 of Propp's own function order (same_as Campbell Ultimate Boon / Vogler Reward, Act3).",
+   "seat_conf": "high",
    "tropes": 4
   },
   {
@@ -1192,6 +1568,10 @@
     "cam.13_the_magic_flight",
     "vog.10_the_road_back"
    ],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Return' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order (same_as Campbell Magic Flight / Vogler Road Back, Act4).",
+   "seat_conf": "high",
    "tropes": 5
   },
   {
@@ -1204,6 +1584,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Pursuit, chase' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 4
   },
   {
@@ -1216,6 +1600,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Rescue of the Hero from Pursuit' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1228,6 +1616,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Unrecognized Arrival' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 2
   },
   {
@@ -1240,6 +1632,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Unfounded Claims' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 5
   },
   {
@@ -1252,6 +1648,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Difficult Task' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1264,6 +1664,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Solution' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1276,6 +1680,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Recognition' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -1288,6 +1696,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Exposure' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 3
   },
   {
@@ -1300,6 +1712,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Transfiguration' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 2
   },
   {
@@ -1312,6 +1728,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Punishment' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 4
   },
   {
@@ -1324,6 +1744,10 @@
    "bvx": "BVX.1136",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "OS",
+   "seat_why": "'Wedding' — a plot function that plays across hero, villain, and donor alike; act 4 of Propp's own function order.",
+   "seat_conf": "high",
    "tropes": 12
   },
   {
@@ -1336,6 +1760,10 @@
    "bvx": "BVX.1124",
    "phase": "beginning",
    "same_as": [],
+   "act": 1,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Ordinary World' — The hero's normal life and world are established before any call arrives; MC by default (own inner journey); quartered 3-per-act, act 1, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 12
   },
   {
@@ -1351,6 +1779,10 @@
     "cam.01_call_to_adventure",
     "prp.09_mediation"
    ],
+   "act": 1,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Call to Adventure' — A problem; MC by default (own inner journey); quartered 3-per-act, act 1, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 37
   },
   {
@@ -1365,6 +1797,10 @@
    "same_as": [
     "cam.02_refusal_of_the_call"
    ],
+   "act": 1,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Refusal of the Call' — The hero hesitates or refuses out of fear; MC by default (own inner journey); quartered 3-per-act, act 1, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 8
   },
   {
@@ -1381,6 +1817,10 @@
     "prp.12_first_function_of_the_donor",
     "prp.14_provision_of_a_magical_agent"
    ],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Meeting with the Mentor' — The hero encounters a wise figure who trains; MC by default (own inner journey); quartered 3-per-act, act 2, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 9
   },
   {
@@ -1396,6 +1836,10 @@
     "cam.04_crossing_of_the_first_threshold",
     "prp.11_departure"
    ],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Crossing the First Threshold' — The hero commits and leaves the ordinary world behind; MC by default (own inner journey); quartered 3-per-act, act 2, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 6
   },
   {
@@ -1410,6 +1854,10 @@
    "same_as": [
     "cam.06_the_road_of_trials"
    ],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Tests, Allies, Enemies' — The hero learns the rules of the special world through trials; MC by default (own inner journey); quartered 3-per-act, act 2, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 14
   },
   {
@@ -1424,6 +1872,10 @@
    "same_as": [
     "cam.06_the_road_of_trials"
    ],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Approach to the Inmost Cave' — The hero nears the most dangerous place in the special world; MC by default (own inner journey); quartered 3-per-act, act 3, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 7
   },
   {
@@ -1440,6 +1892,10 @@
     "prp.16_struggle",
     "prp.18_victory"
    ],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'The Ordeal' — The hero faces a life-or-death crisis; MC by default (own inner journey); quartered 3-per-act, act 3, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 11
   },
   {
@@ -1455,6 +1911,10 @@
     "cam.11_the_ultimate_boon",
     "prp.19_liquidation"
    ],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Reward' — Having survived the ordeal; MC by default (own inner journey); quartered 3-per-act, act 3, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 8
   },
   {
@@ -1470,6 +1930,10 @@
     "cam.13_the_magic_flight",
     "prp.20_return"
    ],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'The Road Back' — The hero commits to finishing the adventure and returning to the ordinary world; MC by default (own inner journey); quartered 3-per-act, act 4, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 8
   },
   {
@@ -1484,6 +1948,10 @@
    "same_as": [
     "cam.15_the_crossing_of_the_return_threshold"
    ],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'The Resurrection' — A second; MC by default (own inner journey); quartered 3-per-act, act 4, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 5
   },
   {
@@ -1498,6 +1966,10 @@
    "same_as": [
     "cam.17_freedom_to_live"
    ],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Hero-journey stage 'Return with the Elixir' — The hero comes home transformed; MC by default (own inner journey); quartered 3-per-act, act 4, cross-checked against Campbell/Propp same_as anchors.",
+   "seat_conf": "high",
    "tropes": 23
   },
   {
@@ -1513,6 +1985,10 @@
     "prp.09_mediation",
     "vog.02_call_to_adventure"
    ],
+   "act": 1,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Call to Adventure' — MC by default (hero's own journey); act 1 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 3
   },
   {
@@ -1527,6 +2003,10 @@
    "same_as": [
     "vog.03_refusal_of_the_call"
    ],
+   "act": 1,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Refusal of the Call' — MC by default (hero's own journey); act 1 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1543,6 +2023,10 @@
     "prp.14_provision_of_a_magical_agent",
     "vog.04_meeting_with_the_mentor"
    ],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Supernatural Aid' — MC by default (hero's own journey); act 2 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1558,6 +2042,10 @@
     "prp.11_departure",
     "vog.05_crossing_the_first_threshold"
    ],
+   "act": 2,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Crossing of the First Threshold' — MC by default (hero's own journey); act 2 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -1572,6 +2060,10 @@
    "same_as": [
     "vog.08_the_ordeal"
    ],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Belly of the Whale' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 2
   },
   {
@@ -1587,6 +2079,10 @@
     "vog.06_tests_allies_enemies",
     "vog.07_approach_to_the_inmost_cave"
    ],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Road of Trials' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -1599,6 +2095,10 @@
    "bvx": "BVX.0616",
    "phase": "middle",
    "same_as": [],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Meeting with the Goddess' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 0
   },
   {
@@ -1611,6 +2111,10 @@
    "bvx": "BVX.0616",
    "phase": "middle",
    "same_as": [],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Woman as the Temptress' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 3
   },
   {
@@ -1623,6 +2127,10 @@
    "bvx": "BVX.0616",
    "phase": "middle",
    "same_as": [],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Atonement with the Father' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 2
   },
   {
@@ -1635,6 +2143,10 @@
    "bvx": "BVX.0616",
    "phase": "middle",
    "same_as": [],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Apotheosis' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 2
   },
   {
@@ -1650,6 +2162,10 @@
     "prp.19_liquidation",
     "vog.09_reward"
    ],
+   "act": 3,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Ultimate Boon' — MC by default (hero's own journey); act 3 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "medium",
    "tropes": 1
   },
   {
@@ -1662,6 +2178,10 @@
    "bvx": "BVX.0616",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Refusal of the Return' — MC by default (hero's own journey); act 4 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1677,6 +2197,10 @@
     "prp.20_return",
     "vog.10_the_road_back"
    ],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Magic Flight' — MC by default (hero's own journey); act 4 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1689,6 +2213,10 @@
    "bvx": "BVX.0616",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Rescue from Without' — MC by default (hero's own journey); act 4 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1703,6 +2231,10 @@
    "same_as": [
     "vog.11_the_resurrection"
    ],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'The Crossing of the Return Threshold' — MC by default (hero's own journey); act 4 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 1
   },
   {
@@ -1715,6 +2247,10 @@
    "bvx": "BVX.0616",
    "phase": "end",
    "same_as": [],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Master of the Two Worlds' — MC by default (hero's own journey); act 4 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 0
   },
   {
@@ -1729,6 +2265,10 @@
    "same_as": [
     "vog.12_return_with_the_elixir"
    ],
+   "act": 4,
+   "throughline": "MC",
+   "seat_why": "Monomyth stage 'Freedom to Live' — MC by default (hero's own journey); act 4 of Campbell's own Departure/Threshold/Initiation/Return arc, held to the same boundary as its Vogler/Propp same_as equivalents.",
+   "seat_conf": "high",
    "tropes": 1
   }
  ],

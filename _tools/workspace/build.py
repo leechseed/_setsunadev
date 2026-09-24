@@ -164,10 +164,11 @@ raw_tropes = trope_data.get("tropes", [])
 
 PHASE_TO_COLUMN = {"beginning": "act1", "middle": "act2_3", "end": "act4", "any": "side"}
 COLUMN_LABEL = {
-    "act1": "Act 1 · beginning",
-    "act2_3": "Acts 2–3 · middle",
-    "act4": "Act 4 · end",
-    "side": "Side tray · any phase",
+    "act1": "Act 1 · M1 + M2",
+    "act2": "Act 2 · M3",
+    "act3": "Act 3 · M4 + M5",
+    "act4": "Act 4 · M6",
+    "side": "Any act · whole-plot patterns",
 }
 
 def trim(s, n):
@@ -200,7 +201,10 @@ for n in raw_nodes:
             "cite": n.get("cite"),
             "bvx": n.get("bvx"),
             "phase": n.get("phase"),
-            "column": PHASE_TO_COLUMN.get(n.get("phase"), "side"),
+            # seated 9/24 (call 77-I) on the ruled Bourne map; Tobias/Schmidt ride any act
+            "column": f"act{n['act']}" if isinstance(n.get("act"), int) else "side",
+            "throughline": n.get("throughline"),
+            "seat_why": n.get("seat_why"),
             "same_as": n.get("same_as", []),
             "tropeCount": n.get("tropes", 0),
             "tropes": tropes_by_node.get(nid, []),
@@ -448,11 +452,12 @@ STYLE = r"""
   .sig-chip { display: inline-block; margin-top: 4px; font-family: var(--mono); font-size: 9.5px; padding: 1px 6px; border: 1px solid currentColor; color: var(--good); }
   .sig-chip.gap { color: var(--ink-3); }
 
-  .node-cols { display: grid; grid-template-columns: repeat(4, minmax(180px, 1fr)); gap: 14px; min-width: 760px; }
+  .node-cols { display: grid; grid-template-columns: repeat(5, minmax(160px, 1fr)); gap: 14px; min-width: 760px; }
   .node-col h3 { margin: 0 0 4px; font-family: var(--display); font-weight: 700; font-size: 15px; text-transform: uppercase; }
   .node-col .cnt { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); margin-bottom: 8px; }
   .node-cluster { display: flex; flex-wrap: wrap; gap: 6px; max-height: 420px; overflow-y: auto; padding-right: 4px; }
   .node-chip { font-family: var(--mono); font-size: 11px; padding: 4px 8px; border: 1px solid var(--line-2); color: var(--ink-2); background: var(--panel); cursor: pointer; }
+  .node-chip .tlc { font-size: 9.5px; color: var(--accent-ink); }
   .node-chip:hover { border-color: var(--link); color: var(--ink); }
   .node-chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
   .provisional { margin: 10px 0 16px; font-family: var(--mono); font-size: 11px; color: var(--warn); }
@@ -589,8 +594,8 @@ def build_html() -> str:
       </div>
       <h3 class="lbl" style="margin:0 0 8px">The signposts — fixed rail</h3>
       <div class="signpost-grid" id="signpostGrid"></div>
-      <h3 class="lbl" style="margin:0 0 4px">The book nodes — seated by phase</h3>
-      <p class="provisional">provisional — call 77-I open (phase-to-act seating; no per-node throughline data exists yet)</p>
+      <h3 class="lbl" style="margin:0 0 4px">The book nodes — seated by act and throughline</h3>
+      <p class="provisional">seated 9/24 (call 77-I) on the ruled Bourne map · the tag on each chip is its throughline</p>
       <div class="node-cols" id="nodeCols"></div>
     </section>
 
@@ -766,7 +771,7 @@ function renderSignpostGrid(){
 }
 
 function renderNodeColumns(){
-  const cols = ['act1','act2_3','act4','side'];
+  const cols = ['act1','act2','act3','act4','side'];
   const wrap = $('#nodeCols');
   const q = state.query.toLowerCase();
   let html = '';
@@ -777,7 +782,7 @@ function renderNodeColumns(){
     html += `<div class="node-col"><h3>${esc(DATA.rails.columns[c])}</h3><div class="cnt">${nodes.length} node(s)</div>`;
     html += '<div class="node-cluster">';
     nodes.forEach(n => {
-      html += `<button class="node-chip t" data-tt="node" data-id="${n.id}" data-sel-type="node" data-sel-id="${n.id}">${esc(n.name)}</button>`;
+      html += `<button class="node-chip t" data-tt="node" data-id="${n.id}" data-sel-type="node" data-sel-id="${n.id}"><span class="tlc">${esc(n.throughline||'')}</span> ${esc(n.name)}</button>`;
     });
     html += '</div></div>';
   });
@@ -855,6 +860,7 @@ function detailCardHtml(type, id){
       <dl><div><dt>Tropes keyed (${tropes.length})</dt><dd><ul class="tlist" style="list-style:none;padding:0;margin:6px 0 0">${shown.map(t=>{ const alt = t.alt ? nodesById[t.alt] : null; return `<li style="border-left:2px solid var(--line-2);padding-left:6px;margin-bottom:4px">${esc(t.name)}${alt?`<div class="or-line">or: ${esc(alt.name)}</div>`:''}</li>`; }).join('')}${tropes.length>6?`<li class="more">+ ${tropes.length-6} more — hover the node on the rails for the capped tooltip</li>`:''}</dd></div>
       ${n.same_as && n.same_as.length ? `<div><dt>Same as</dt><dd>${n.same_as.map(esc).join(', ')}</dd></div>`:''}
       </dl>
+      ${n.seat_why?`<dl><div><dt>Seat</dt><dd>${esc(n.throughline)} · ${n.column==='side'?'any act':esc(n.column.replace('act','Act '))} — ${esc(n.seat_why)}</dd></div></dl>`:''}
       <div class="src">source: ${esc(n.cite||'')} · ${esc(n.bvx||'')} · _tools/tropes/data/trope_graph.json</div></div>`;
   }
   if (type === 'signpost'){
