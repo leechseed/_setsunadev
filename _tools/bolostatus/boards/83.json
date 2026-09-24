@@ -1,0 +1,386 @@
+{
+ "bolo": {
+  "n": 83,
+  "title": "The Amazon applications — the number-one candidate for every posting",
+  "trunk": "OPERATOR",
+  "issued": "2026-09-24",
+  "asof": "2026-09-24",
+  "s": "open",
+  "status": "🟡 9/24: all seven application packages built (résumé + FORM.md + STAR sheets); owed from Chief: submit the forms · the STAR brackets · book the Part 107 test.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "PMCS Employment · BOLO 24",
+  "related": [
+   {
+    "n": 24,
+    "why": "BOLO 24's row states the Amazon job not working out is why Chief is unemployed as of 2026-09-03; BOLO 83 is the parallel track chasing a paycheck while 24 builds the zero-budget launch that same fallout triggered."
+   }
+  ],
+  "home": "BOLO.md · row 83",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "Priority ruled, Food Safety built, HR Partner built, then 'do everything, roll through it' — all seven packages landed in one 9/24 session, no wait between a ruling and a build."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "Not one résumé for nine postings — each package matches Basic and Preferred Qualifications to that posting, STAR stories mapped to Amazon's Leadership Principles, one folder per posting."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Filled the 2022–26 résumé gap with a provisional entry rather than leave it blank, and ruled Video Producer skipped rather than force a ninth package onto the pile — both flagged for Chief to confirm or strike."
+  }
+ ],
+ "frago": {
+  "mission": "Build one tailored application per Amazon posting, in order to make Chief the number-one candidate on each while the driver jobs cover income and Part 107 opens Flight Monitor.",
+  "order": "**Submit today, in START-HERE order:** Food Safety (due 9/25) · HR Partner · both DSP drivers · Ground Handler · Just Walk Out · Mechatronic Apprentice. Upload the .docx, paste FORM.md block by block.",
+  "default": "Silence: the packages sit built in _PRIVATE/bolo83-applications/out/ and the Food Safety deadline passes on 9/25.",
+  "calls": [
+   {
+    "q": "Call 1 · the 2022–26 gap line",
+    "options": "keep 'Independent Developer, AI Workflow & Data Tooling, Jun 2024–present' (rec) · reword · drop it",
+    "default": "keep (rec)",
+    "s": "open",
+    "why": "It is true (the repo's first commit is 6/10/2024), it fills a four-year blank, and it matches the AI-tools line HR Partner and Just Walk Out both prefer."
+   },
+   {
+    "q": "Call 2 · Part 107 test date",
+    "options": "book for ~10/8, two weeks out (rec) · later",
+    "default": "~10/8 (rec)",
+    "s": "open",
+    "why": "Flight Monitor ($35/h) is held until the certificate is in hand; the plan is PART107.md."
+   },
+   {
+    "q": "Call 3 · ServSafe renewal",
+    "options": "enroll this week (rec) · change the line to 'certified through 2023'",
+    "default": "enroll (rec)",
+    "s": "open",
+    "why": "Every résumé says 'renewal in progress'; it stays true only if he enrolls."
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "What the Amazon applications push is, why Chief called it, and what landed the same day.",
+   "strand": {
+    "last": "Before 9/24 there was no structured push on the Amazon applications — Chief had postings in mind but no tailored résumé-per-posting pipeline, and the 9/3 offer had gone quiet after the MRO never called.",
+    "plan": "Read the groups below — the order as Chief spoke it, what he handed over, and what the intake turned up — then Execution for what got built the same day.",
+    "you": "You gave the order after the tenth launch on 9/24: one tailored application per posting, résumé matched to Basic and Preferred Qualifications, STAR stories mapped to Amazon's Leadership Principles, then widened it to 'do everything, roll through it' later the same day.",
+    "next": "Read the groups below, then Execution for the seven packages built and what's still owed from Chief."
+   },
+   "groups": [
+    {
+     "label": "The transmission, verbatim where Chief ruled",
+     "items": [
+      {
+       "t": "9/24, after the tenth launch: \"I have several Amazon jobs that I want to apply to … I want to have the best application for each one. I want to be the number one candidate for each.\"",
+       "s": "done"
+      },
+      {
+       "t": "9/24, later, widening the order from the priority pick to all seven packages: \"do everything, roll through it.\"",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What Chief handed over",
+     "items": [
+      {
+       "t": "Inputs named: the posting links (or job IDs) · the old résumés · a LinkedIn export (PDF) · anything else he has.",
+       "s": "done"
+      },
+      {
+       "t": "Everything lands in `_PRIVATE/bolo83-applications/` — git-ignored; the repo is public and was scrubbed of résumé filenames on 9/24.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the intake turned up",
+     "items": [
+      {
+       "t": "9 postings landed (one duplicate link) plus 13 résumé files; the priority read is `_PRIVATE/bolo83-applications/PRIORITY.md` (lead: HR Partner · Prime Air pair · JWO stretch).",
+       "s": "done"
+      },
+      {
+       "t": "Deadlines: Food Safety 9/25 · Video Producer 9/28 — Video Producer was later ruled skipped.",
+       "s": "done"
+      },
+      {
+       "t": "The 9/3 job: the MRO (medical review officer, drug screen) never called and the offer stalled there; by 9/24 later the application no longer shows in Chief's account.",
+       "s": "open"
+      },
+      {
+       "t": "The LinkedIn PDF: the profile was stripped by a break-in down to one entry; it has to be rebuilt from the résumés.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. The reason here: Chief is out of work, and each posting is won or lost at Amazon's qualification screen, so each one gets its own application.",
+   "strand": {
+    "last": "The 9/3 Amazon offer stalled at the drug-screen step and no longer shows in Chief's account.",
+    "plan": "Nine postings read and ranked, then one package per live target.",
+    "you": "You ruled the order, skipped Video Producer, said food safety go and 'do everything, roll through it'.",
+    "next": "Submit the forms today, Food Safety first."
+   },
+   "task": "Build and submit one tailored application per Amazon posting,",
+   "intent": "in order to be the number-one candidate on each and land income fast.",
+   "spoken": "\"I want to have the best application for each one. I want to be the number one candidate for each.\" (9/24) · \"do all the recommendations, do everything, just roll through it until you hit any blocks\" (9/24)",
+   "endstate": [
+    "Every live posting has a résumé matched to its qualifications, a paste sheet, and STAR stories where an interview is likely.",
+    "All ruled applications submitted; Food Safety before 9/25.",
+    "Part 107 passed and Flight Monitor submitted.",
+    "LinkedIn rebuilt and secured."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What got built on 9/24, in the order it went, and what's still owed from Chief.",
+   "strand": {
+    "last": "9/24: intake landed, priority ruled, Food Safety and HR Partner packages built one at a time, then Chief widened the order to 'do everything' and all seven packages went out in one pass, plus the DSP driver income floor.",
+    "plan": "Build one package per posting, hold the ones gated on Part 107 or a decision, land the two-week Part 107 plan and the apply order, then wait on Chief to submit.",
+    "you": "You ruled the priority order, food safety go, Part 107 yes, and Video Producer skipped — then said 'do everything, roll through it' and all seven packages built the same session.",
+    "next": "Submit the forms, work the STAR brackets, and book the Part 107 test — the packages are built, the applying is Chief's."
+   },
+   "main_effort": "Building one tailored package per posting — résumé, STAR sheet, and a FORM.md paste sheet — for every live Amazon posting, plus the DSP driver income floor and the Part 107 study track running alongside it.",
+   "phases": [
+    {
+     "n": 1,
+     "t": "**Intake landed** — 9/24: 9 postings (one duplicate link) + 13 résumé files; `PRIORITY.md` built (lead: HR Partner · Prime Air pair · JWO stretch); deadlines noted (Food Safety 9/25 · Video Producer 9/28).",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 2,
+     "t": "**Priority ruled** — 9/24: the priority order as shown · food safety go · Part 107 yes (study starts) · Video Producer skipped.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 3,
+     "t": "**Food Safety package built** — 9/24: `out/10481502-food-safety/` (résumé .docx + STAR sheet); Chief applies by 9/25.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 4,
+     "t": "**Résumé checks confirmed** — 9/24: phone · ServSafe renewal in progress · Hungry Howie's and Disney HACCP detail.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 5,
+     "t": "**HR Partner package built** — 9/24: `out/10493678-hr-partner/`.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 6,
+     "t": "**Income floor added** — 9/24 later: two DSP driver jobs added ($21.50/h, apply today, short forms) after the 9/3 application stopped showing in Chief's account.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 7,
+     "t": "**All seven packages built** — 9/24, on 'do everything, roll through it': résumé .docx + FORM.md paste sheet each; STAR sheets for Food Safety · HR Partner · JWO; one DSP driver résumé covers both DSP jobs; Flight Monitor held for Part 107; `PART107.md` two-week plan; `linkedin/REBUILD.md`; `START-HERE.md` = the apply order. Gap 2022–26 filled with a provisional 'Independent Developer, AI Workflow & Data Tooling, Jun 2024–present' entry (the repo's first commit), pending Chief's confirmation.",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "n": 8,
+     "t": "**Owed from Chief** — submit the forms · the STAR brackets · book the Part 107 test.",
+     "s": "open",
+     "when": "9/24"
+    }
+   ],
+   "coord": [],
+   "running": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What files carry this BOLO's record, and what it has cost so far.",
+   "strand": {
+    "last": "Before this sheet, BOLO 83 lived only in BOLO.md's row; the application packages themselves are the record built since 9/24.",
+    "plan": "This sheet is the first status page; the packages and the plan files it points to are `_PRIVATE/bolo83-applications/`, git-ignored since the repo is public.",
+    "you": "Nothing costed yet beyond the spoken turns and the build work.",
+    "next": "Once Chief submits and the Part 107 test is booked, the next update lands here."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 83 — the Amazon applications push, captured and built 9/24",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/PRIORITY.md",
+     "what": "the priority read (lead: HR Partner · Prime Air pair · JWO stretch)",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/out/10481502-food-safety/",
+     "what": "Food Safety package: résumé .docx + STAR sheet",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/out/10493678-hr-partner/",
+     "what": "HR Partner package",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/out/",
+     "what": "all seven packages: résumé .docx + FORM.md paste sheet each; STAR sheets for Food Safety · HR Partner · JWO",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/PART107.md",
+     "what": "the two-week Part 107 study plan",
+     "s": "done"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/linkedin/REBUILD.md",
+     "what": "the LinkedIn rebuild plan — the profile was stripped to one entry",
+     "s": "open"
+    },
+    {
+     "path": "_PRIVATE/bolo83-applications/START-HERE.md",
+     "what": "the apply order",
+     "s": "done"
+    }
+   ],
+   "cost": [
+    {
+     "k": "base",
+     "v": "$0 reported — the packages were built from résumés and postings already in hand; no paid tools named"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. Submitting is Chief's; the packages are Claude's.",
+   "strand": {
+    "last": "Chief ruled the priority order and the skips on 9/24.",
+    "plan": "Claude builds, Chief submits under his own login.",
+    "you": "You submit each form and fill the STAR brackets.",
+    "next": "Rule the three calls; submit."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**HOTLINE ACTUAL** — which jobs, every submit, every fact on the résumé. **Claude** — the packages, the paste sheets, the priority read; never submits or logs in.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Food Safety closes 9/25.** Flight Monitor waits on Part 107.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "**DOPE SHEET 83** — this page · everything private lives in `_PRIVATE/bolo83-applications/` (START-HERE.md first) · \"FRAGO 83\" pushes an update here.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "The record of the transmissions on the Amazon applications push, all 9/24.",
+   "strand": {
+    "last": "One day, one long push: the order, the intake, the rulings, and seven packages built.",
+    "plan": "Every dated transmission in the sources, in order.",
+    "you": "You gave the opening order, the rulings, and 'do everything, roll through it'; the packages themselves are the build work between your turns.",
+    "next": "The next entries land once Chief submits or rules further."
+   },
+   "entries": [
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "After the tenth launch, spoken: \"I have several Amazon jobs that I want to apply to … I want to have the best application for each one. I want to be the number one candidate for each.\" Ordered one tailored application per posting: a résumé matched to the posting's Basic and Preferred Qualifications, STAR stories mapped to Amazon's Leadership Principles, and the application answers. Named the inputs: the posting links (or job IDs) · the old résumés · a LinkedIn export (PDF) · anything else he has."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Intake landed: 9 postings (one duplicate link) + 13 résumé files. Priority read built at `_PRIVATE/bolo83-applications/PRIORITY.md` (lead: HR Partner · Prime Air pair · JWO stretch). Deadlines noted: Food Safety 9/25 · Video Producer 9/28."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Ruled: Video Producer skipped."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Reported the 9/3 job status: the MRO (the medical review officer on the drug screen) never called; the offer stalled there, status unknown."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Ruled: the priority order as shown · food safety go · Part 107 yes (study starts). LinkedIn PDF read: the profile was stripped by a break-in, down to one entry; ordered it rebuilt from the résumés."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Built the Food Safety package: `out/10481502-food-safety/` (résumé .docx + STAR sheet); Chief applies by 9/25."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Later: the 9/3 application no longer shows in his account. Two DSP driver jobs added as the income floor ($21.50/h, apply today, short forms)."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Résumé checks confirmed: phone · ServSafe renewal in progress · Hungry Howie's and Disney HACCP detail."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Built the HR Partner package: `out/10493678-hr-partner/`."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"Do everything, roll through it.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Built all seven packages: résumé .docx + FORM.md paste sheet each; STAR sheets for Food Safety · HR Partner · JWO; one DSP driver résumé for both DSP jobs; Flight Monitor held for Part 107; `PART107.md` two-week plan; `linkedin/REBUILD.md`; `START-HERE.md` = the apply order. Filled the 2022–26 gap with a provisional 'Independent Developer, AI Workflow & Data Tooling, Jun 2024–present' entry (the repo's first commit), pending Chief's confirmation. Owed from Chief: submit the forms · the STAR brackets · book the Part 107 test."
+    }
+   ]
+  }
+ ]
+}
