@@ -8,16 +8,16 @@ Scope: **Heaven's Vault** (inkle, 2019), **Return of the Obra Dinn** (Lucas Pope
 
 ## Executive summary
 
-1. Heaven's Vault draws unknown history as its own **named era band** ("180-350 years ago, little is known"), not blank axis — the model for T2.
+1. Heaven's Vault draws unknown history as its own **named era band** ("180-350 years ago, little is known"), not blank axis — model for T2.
 2. HV's timeline zoom is one continuous control, "minute by minute" to "thousands of years," smoothly animated — one axis, not day/month/year buttons (T12).
-3. HV ties translation **confidence** to repetition — a word read often enough is trusted; a wrong reading is explicitly replaced, never silently overwritten — confidence is a value that grows and can flip (T9).
-4. Obra Dinn's Book of Fates was chosen **over** a prototyped "navigable timeline interface" Pope built and rejected — direct evidence a full timeline reader is not self-justifying (Do Not Copy).
-5. Obra Dinn's chapter map **fills in gradually** as fates are solved — the record starts sparse and thickens; nothing is pre-drawn (T8).
-6. Obra Dinn's pocket watch hands double as an address: hour = chapter, minute (5-min steps) = part — a literal dial-index into told order, the closest any studied game gets to a two-track told/world instrument (T5).
-7. Her Story / Telling Lies give the player **no built-in chronology UI at all** — the database resists order, and the player's own notes are the told order; Telling Lies caps search returns at five, forcing partial, re-queried views.
-8. Telling Lies' clip-scrub is explicitly non-chronological by design intent (Barlow) — "memories do not come to us in ... linear order" — a micro-scale model of analepsis/prolepsis inside one told scene.
-9. Outer Wilds' ship log is **two lenses on one fact store**, switchable, never fused: Map Mode (spatial) and Rumor Mode (causal graph); unconfirmed facts get a fixed question-mark icon that flags a gap without revealing it (T7, T10).
-10. Do not copy: HV's timeline popping up on trivial 3-minutes-ago pickups (players called it noise); Obra Dinn's book-over-timeline choice as a caution, not a mandate; Telling Lies' anti-chronological scrub, which serves mystery pacing, not information architecture.
+3. HV ties translation **confidence** to repetition — a word read often enough is trusted; a wrong reading is explicitly replaced, never silently overwritten (T9).
+4. Obra Dinn's Book of Fates was chosen **over** a prototyped "navigable timeline interface" Pope built and rejected — evidence a full timeline reader isn't self-justifying (Do Not Copy).
+5. Obra Dinn's chapter map **fills in gradually** as fates are solved — starts sparse, thickens; nothing pre-drawn (T8).
+6. Obra Dinn's pocket watch hands double as an address: hour = chapter, minute (5-min steps) = part — a literal dial-index into told order, the closest any studied game gets to a two-track instrument (T5).
+7. Her Story / Telling Lies give the player **no built-in chronology UI** — the database resists order, player notes are the told order; Telling Lies caps search returns at five, forcing partial, re-queried views.
+8. Telling Lies' clip-scrub is explicitly non-chronological by design (Barlow) — "memories do not come to us in ... linear order" — a micro model of analepsis/prolepsis inside one told scene.
+9. Outer Wilds' ship log is **two lenses on one fact store**, switchable, never fused: Map Mode (spatial), Rumor Mode (causal graph); unconfirmed facts get a fixed question-mark icon flagging a gap without revealing it (T7, T10).
+10. Do not copy: HV's timeline popping up on trivial 3-minutes-ago pickups (noise, per players); Obra Dinn's book-over-timeline choice as caution, not mandate; Telling Lies' anti-chronological scrub, a mystery-pacing device, not an IA pattern.
 
 ## 1. Heaven's Vault — the History timeline
 
