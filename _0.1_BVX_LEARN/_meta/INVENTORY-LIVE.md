@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8898** |
-| With a PDF attachment | 8898 |
-| PDF present on disk | 8806 |
+| Top-level items | **8908** |
+| With a PDF attachment | 8908 |
+| PDF present on disk | 8816 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7895** |
+| **New since the Dec-2023 catalog** | **7905** |
 | Story-side (CRE + LIT by catalog) | 337 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7720 |
+| NEW | 7730 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7895)
+## New since the catalog (7905)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -860,6 +860,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Advanced Feats - The Summoner's Circle |  |  |
 |  | Advanced Feats - The Witch's Brew |  |  |
 |  | Advanced Feats - Visions of the Oracle |  |  |
+|  | Advanced game design a systems approach (Sellers, Michael (Game design |  |  |
 |  | Advanced Options - Alchemists' Discoveries |  |  |
 |  | Advanced Options - Cavaliers' Orders |  |  |
 |  | Advanced Options - Extra Evolutions |  |  |
@@ -2609,6 +2610,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Elements of Fiction Writing - Charact... |  |  |
 |  | Elements of Fiction Writing - Conflic... |  |  |
 |  | Elements of Fiction Writing - Conflic... |  |  |
+|  | Elements of Game Design | Robert Zubek |  |
 |  | Elements of Power |  |  |
 |  | Eleven Arabian Nights |  |  |
 |  | Elizabeth Kerri Mahon - Scandalous Women_ The Lives and Loves of Histo | 2011 |  |
@@ -3074,7 +3076,10 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Gallows of Madness - Poster Map |  |  |
 |  | Game - How To Meet, Attract, And Date Attractive Women |  | HEALTH & FITNESS |
 |  | Game Changer - Alchemical Tools |  |  |
+|  | Game Design How to Create Video and Tabletop Games, Start to Finish | Lewis Pulsipher |  |
+|  | Game Design Workshop A Playcentric Approach to Creating Innovative Gam | Tracy Fullerton |  |
 |  | Game Masters Guide |  |  |
+|  | Game Writing Narrative Skills for Videogames | Chris Bateman |  |
 |  | GameMastery Guide | 1st Printing |  |
 |  | GameMastery Guide | 2nd printing |  |
 |  | GameMastery Guide (1st Printing) Errata - JAN 2014 |  |  |
@@ -3086,6 +3091,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Games - GURPS Powers The Weird |  |  |
 |  | Games - GURPS Tactical Shooting |  |  |
 | 2021 | Games as texts: a practical application of textual analysis to games | Cole, Barker |  |
+|  | Games, Design and Play A Detailed Approach to Iterative Game Design | Colleen Macklin, John Sharp |  |
 |  | Gamestorming (Dave Gray)— |  |  |
 |  | Gaming Paper - Edgewaters Folly |  |  |
 |  | Gatewalkers AP - 1 of 3 - The Seventh Arch |  |  |
@@ -3317,6 +3323,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Handbook House Liao |  |  |
 |  | Handbook Major Periphery States |  |  |
 |  | Handbook of Sports Medicine and Science Gymnastics | Dennis J. Caine |  |
+|  | Handbook on Interactive Storytelling | Jouni Smed, Tomi bgt Suovuo et |  |
 |  | Handwritten_2023-08-24_065542 |  | PROJECT_LAWD |
 |  | Harrow Deck |  |  |
 |  | Harrow Deck Deluxe |  |  |
@@ -3518,6 +3525,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Insidious Intentions - The Book of Villainy, Volume I |  |  |
 |  | Instant Pot Fried Rice - Little Sunny Kitchen |  |  |
 |  | Institut Paul Bocuse Gastronomique The definitive step-by-step guide t | Institut Paul Bocuse | 0800011 - CULINARY |
+|  | Interactive Storytelling for Video Games - A Player-Centered Approach  | Josiah Lebowitz, Chris Klug |  |
 |  | Interjection - Runesmithing Expanded ‐ The Animator Archetype |  |  |
 |  | Interjection - The Assassin |  |  |
 |  | Interjection - The Reaper OR How I Learned To Stop Worrying And Just P |  |  |
@@ -7098,6 +7106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Cleric Reforged |  |  |
 |  | The Collected Monsters of Sin |  |  |
 |  | The Collected Works of C. G. Jung, Vol. 9, Part 1 The Archetypes and t | Carl Gustav Jung, William McGu |  |
+|  | The collected works of C. G. Jung. Vol. 8 The structure and dynamics o | Adler, Gerhard Fordham, Michae |  |
 |  | The Complete Advanced Feats |  |  |
 |  | The Complete Book of Drawing Techniques - A Complete Guide for the Art |  | 080004 - art |
 |  | THE COMPLETE BOOK OF PENIS The Effect... |  | SEX |
@@ -7378,6 +7387,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Secrets of the Oracle |  |  |
 |  | The Secrets of the Primordial Forest |  |  |
 |  | The Secrets of the Taskshaper |  |  |
+|  | The Sense of an Ending - Studies in the Theory of Fiction (with a New  | Frank Kermode |  |
 |  | The Sense of Style The Thinking Perso... |  |  |
 |  | The Sense of Style The Thinking Perso... |  |  |
 |  | The Seven Basic Plots - Why We Tell Stories | Christopher Booker |  |

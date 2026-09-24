@@ -4286,7 +4286,7 @@
   },
   {
    "id": "G181",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "The structure and dynamics of the psyche",
    "author": "Adler; Gerhard; Fordham; Michael; Jung; ",
@@ -4295,7 +4295,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Jungian psychology foundational to archetypes",
+   "why": "Jungian psychology foundational to archetypes · landed The collected works of C. G. Jung. Vol. ",
    "clean": "The structure and dynamics of the psyche"
   },
   {
@@ -4510,7 +4510,7 @@
   },
   {
    "id": "G237",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Game Writing: Narrative Skills for Videogames",
    "author": "Chris Bateman",
@@ -4519,7 +4519,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Video game narrative writing and craft skills",
+   "why": "Video game narrative writing and craft skills · landed Game Writing Narrative Skills for Videog",
    "clean": "Game Writing: Narrative Skills for Videogames"
   },
   {
@@ -6316,7 +6316,7 @@
   },
   {
    "id": "G1355",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "The Sense of an Ending - Studies in the Theory of Fiction (with a New Epilogue)",
    "author": "Frank Kermode",
@@ -6325,7 +6325,7 @@
    "tags": "",
    "lane": "THEORY",
    "tier": 1,
-   "why": "Narrative closure and plot theory",
+   "why": "Narrative closure and plot theory · landed The Sense of an Ending - Studies in the ",
    "clean": "The Sense of an Ending - Studies in the Theory of Fiction (with a New Epilogue)"
   },
   {
@@ -6610,7 +6610,7 @@
   },
   {
    "id": "G1676",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Handbook on Interactive Storytelling",
    "author": "Jouni Smed & Tomi ‘bgt‘ Suovuo & Natasha",
@@ -6619,7 +6619,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Interactive storytelling systems and design",
+   "why": "Interactive storytelling systems and design · landed Handbook on Interactive Storytelling (Jo",
    "clean": "Handbook on Interactive Storytelling"
   },
   {
@@ -7842,7 +7842,7 @@
   },
   {
    "id": "G2405",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Collected Works of C.G. Jung, Volume 8: Structure & Dynamics of the Psyche",
    "author": "C. G. Jung; Gerhard Adler; R. F.C. Hull",
@@ -7851,7 +7851,7 @@
    "tags": "",
    "lane": "TROPES",
    "tier": 1,
-   "why": "Psyche structure and mythic patterns",
+   "why": "Psyche structure and mythic patterns · landed 9/24 (matched by hand)",
    "clean": "Collected Works of C.G. Jung, Volume 8: Structure & Dynamics of the Psyche"
   },
   {
@@ -8318,7 +8318,7 @@
   },
   {
    "id": "G2573",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Interactive Storytelling for Video Games - A Player-Centered Approach to Creating Memorable Characters and Stories",
    "author": "Josiah Lebowitz; Chris Klug",
@@ -8327,12 +8327,12 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Interactive storytelling and narrative design",
+   "why": "Interactive storytelling and narrative design · landed Interactive Storytelling for Video Games",
    "clean": "Interactive Storytelling for Video Games - A Player-Centered Approach to Creating Memorable Characters and Stories"
   },
   {
    "id": "G2580",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Game Design Workshop1, Second Edition: A Playcentric Approach to Creating Innovative Games (Gama Network Series)",
    "author": "Tracy Fullerton",
@@ -8341,7 +8341,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Game design workshop and narrative systems",
+   "why": "Game design workshop and narrative systems · landed 9/24 (matched by hand)",
    "clean": "Game Design Workshop1, Second Edition: A Playcentric Approach to Creating Innovative Games (Gama Network Series)"
   },
   {
@@ -8514,7 +8514,7 @@
   },
   {
    "id": "G2615",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Game Design : How to Create Video and Tabletop Games, Start to Finish",
    "author": "Lewis Pulsipher",
@@ -8523,7 +8523,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Game design from concept to narrative",
+   "why": "Game design from concept to narrative · landed Game Design How to Create Video and Tabl",
    "clean": "Game Design : How to Create Video and Tabletop Games, Start to Finish"
   },
   {
@@ -8570,7 +8570,7 @@
   },
   {
    "id": "G2625",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Advanced Game Design: A Systems Approach",
    "author": "Michael Sellers",
@@ -8579,12 +8579,12 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Advanced game design systems approach",
+   "why": "Advanced game design systems approach · landed 9/24 (matched by hand)",
    "clean": "Advanced Game Design: A Systems Approach"
   },
   {
    "id": "G2629",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Elements of Game Design (The MIT Press)",
    "author": "Robert Zubek",
@@ -8593,7 +8593,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Game design elements and systems",
+   "why": "Game design elements and systems · landed Elements of Game Design (Robert Zubek) (",
    "clean": "Elements of Game Design (The MIT Press)"
   },
   {
@@ -8612,7 +8612,7 @@
   },
   {
    "id": "G2645",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Games, Design and Play: A Detailed Approach to Iterative Game Design",
    "author": "Macklin; Colleen & Sharp; John",
@@ -8621,7 +8621,7 @@
    "tags": "",
    "lane": "GAME-RAILS",
    "tier": 1,
-   "why": "Game design and narrative iteration",
+   "why": "Game design and narrative iteration · landed Games, Design and Play A Detailed Approa",
    "clean": "Games, Design and Play: A Detailed Approach to Iterative Game Design"
   },
   {
@@ -11541,9 +11541,9 @@
   {
    "author": "Kermode",
    "title": "The Sense of an Ending",
-   "held": false,
+   "held": true,
    "in_zlib_favs": true,
-   "match": ""
+   "match": "The Sense of an Ending - Studies in the Theory of Fiction (with a New "
   },
   {
    "author": "Forster",

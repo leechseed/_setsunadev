@@ -54,7 +54,7 @@ def main():
         f = full(re.split(r"[:;]| - ", title)[0]); sur = [w for w in re.split(r"[ ,;.]+", (author or "").lower()) if len(w) > 3]
         if len(f) < (6 if sur else 10):  # short generic titles ("Narrative", "Genre") false-match unless an author surname backs them
             return None
-        return next((i for h, i in held if f in h and (not sur or any(re.search(r"" + re.escape(s) + r"", h) for s in sur))), None)  # whole-word surnames ("paul" must not hit "paulsen")
+        return next((i for h, i in held if (f in h if len(f) >= 10 else h.startswith(f + chr(32))) and (not sur or any(re.search(r"\b" + re.escape(s) + r"\b", h) for s in sur))), None)  # whole-word surnames ("paul" must not hit "paulsen")
     d = load(SP); flipped = []
     for k in d["keep"]:
         if k["src"] == "zlib-gap":
