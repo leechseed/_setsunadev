@@ -6,7 +6,7 @@
   "issued": "2026-09-23",
   "asof": "2026-09-24",
   "s": "hot",
-  "status": "🟢 three plot docs stand · **movements map RULED 9/24 (the Bourne pivot)**, 16 signposts seated · **\"go 77\": seating the 135 nodes on signposts (77-I) IN FLIGHT**",
+  "status": "🟢 three plot docs stand · 135 nodes SEATED, **seat calls 1–3 RULED 9/24** · **call 12 DONE** (sixth fabula event `m2_first_sync_verified`) · calls 13–14 wait on two scene picks",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -17,11 +17,15 @@
    {
     "n": 46,
     "why": "the OXO series follow-through — Anna Colson's node and the Telling Profile the fabula's character origin moments have to match up with"
+   },
+   {
+    "n": 79,
+    "why": "the workspace reads these three docs; Rails and Fabula redraw on every change"
    }
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Seat every node on a signpost (77-I): in flight.** The sequenced families (Propp · Vogler · Campbell) get an act and a throughline; Tobias and Schmidt's whole-plot patterns get a throughline affinity and ride any act.",
-  "default": "Silence: the seating lands provisional and the workspace rails redraw from it.",
+  "order": "**Pick the two proof scenes (calls 13–14).** 13: `m2_grief_outbursts` told as summary + iterative across M2 (rec). 14: `m1b_crash_jebb_death` as an internal analepsis inside the M3 underground search (rec). \"Take both\" cards them from canon, ETA ~20 min.",
+  "default": "Silence: nothing is carded; both calls stay queued with their candidates named.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -170,6 +174,19 @@
     "default": "two beats (rec)",
     "s": "ruled",
     "ruling": "RULED 2026-09-24 (all recs)."
+   },
+   {
+    "q": "77-S · the three seat calls",
+    "options": "IC thin: leave whole-plot only · Campbell Act 3 heavy: keep anchor-consistency · Propp MC flips: keep narrow",
+    "default": "all recs",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-24, Chief: \"run it all.\" All recs; seats.json unchanged, seating no longer provisional."
+   },
+   {
+    "q": "77-T · the proof scenes (syuzhet calls 13–14)",
+    "options": "13: m2_grief_outbursts as summary + iterative · 14: m1b_crash_jebb_death as internal analepsis in the M3 search · other events",
+    "default": "take both (rec)",
+    "s": "open"
    }
   ]
  },
@@ -391,9 +408,21 @@
     },
     {
      "n": 7,
-     "s": "hot",
+     "s": "done",
      "when": "9/24",
-     "t": "**Seat the 135 nodes on signposts (77-I)** — IN FLIGHT on \"go 77\"."
+     "t": "**Seat the 135 nodes on signposts (77-I)** — seated (Acts 1–4 hold 14/11/14/21); seat calls 1–3 ruled on the recs 9/24."
+    },
+    {
+     "n": 8,
+     "s": "done",
+     "when": "9/24",
+     "t": "**Syuzhet call 12** — sixth fabula event `m2_first_sync_verified` from the row-9 scene card; P2/P3/P5/P9 linked; fabula v0.1.3 · plot v0.2.2; workspace (BOLO 79) republished v5 with 6 events."
+    },
+    {
+     "n": 9,
+     "s": "held",
+     "when": "9/24",
+     "t": "**Syuzhet calls 13–14** — the first summary unit and the first flashback; candidates named, scene cards wait on Chief's pick (77-T)."
     }
    ],
    "coord": [
@@ -708,6 +737,16 @@
      "when": "9/24",
      "who": "Chief",
      "t": "\"FRAGO 77, go 77.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"run it all\" (the seat calls and the rebuild)"
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Seat calls 1–3 ruled on recs; call 12 executed (m2_first_sync_verified); calls 13–14 candidates written into the plot doc; workspace republished v5."
     }
    ]
   }
