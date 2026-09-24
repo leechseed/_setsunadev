@@ -12,7 +12,7 @@ META = os.path.join(ROOT, "_0.1_BVX_LEARN", "_meta")
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.expanduser("~"), "Zotero", "zotero.sqlite")
 STORAGES = [os.path.join(os.path.dirname(SRC), "storage"),
             r"D:\My Google Drive\ZOTERO_DATA_DIRECTORY\storage",  # live first, the Dec-2023 Drive copy as fallback
-            r"C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP"]  # the drop folder (9/16): acquisitions land here, no Zotero filing; drop_scan() below picks them up
+            r"Q:/_PDF_DROP"]  # the drop folder (9/16; moved off C: to Q: 9/24): acquisitions land here, no Zotero filing; drop_scan() below picks them up
 
 # Chief's 2023 tag scheme (00_ .. 09_) -> the story spine (ssot_01_story_spine_comparative_tree) - provisional 9/16
 TAG2SPINE = {"00_THEORY OF COMPOSITION": "L0", "01_THEME": "L6", "02_PLOT": "L4", "02_PLOT SYUHZET": "L4",

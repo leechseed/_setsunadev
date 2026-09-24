@@ -8,7 +8,7 @@ status: BOLO 18 · opened 9/16 on Chief's word ("the acquisitions are in the dro
 
 # The drop-folder intake · 2026-09-16
 
-`C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP/` · scanned by `inventory.py` (`src: drop`), keyed by `fullpass.py`. PDFs never enter the repo; only paths.
+`Q:/_PDF_DROP/` (was `C:/Users/U01_LEECHSEED/Desktop/_PDF_DROP/` until 9/24) · scanned by `inventory.py` (`src: drop`), keyed by `fullpass.py`. PDFs never enter the repo; only paths.
 
 | | |
 |---|---|
