@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **7695** |
-| With a PDF attachment | 7695 |
-| PDF present on disk | 7688 |
+| Top-level items | **7703** |
+| With a PDF attachment | 7703 |
+| PDF present on disk | 7696 |
 | Already in catalog.json (BVX id) | 782 |
-| **New since the Dec-2023 catalog** | **6913** |
+| **New since the Dec-2023 catalog** | **6921** |
 | Story-side (CRE + LIT by catalog) | 299 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 6736 |
+| NEW | 6744 |
 | GAM | 240 |
 | CRE | 203 |
 | LIT | 96 |
@@ -103,7 +103,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | INTERTEXT | 1 |
 | 11_ETC | 1 |
 
-## New since the catalog (6913)
+## New since the catalog (6921)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -645,6 +645,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Accessory - Strategic Review #2.1 |  |  |
 |  | Accessory - Strategic Review #2.2 |  |  |
 |  | ACFrOgAFM9FjczJRcwHkKy _kBg5YJTF0eY0hz48Gm_DM_WOX49QKB7ypq84GC aDTALHu |  |  |
+|  | Act Two Secrets (Screenwriting Blue Books) (Martell, William C. [Marte | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | actions_reference_sheet |  |  |
 |  | Ad Sheet |  |  |
 |  | Adamant - Bloodlines - New Options for Sorcerers |  |  |
@@ -1028,6 +1029,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | blueprint_for_comprehension_instruction |  |  |
 |  | Boardroom And Curia |  |  |
 |  | Bonus Bestiary |  |  |
+|  | Book Architecture How to Plot and Outline Without Using a Formula (Stu | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | Book of Beasts Legendary Foes |  |  |
 |  | Book of Beasts Monster Variations |  |  |
 |  | Book of Beasts Monsters of the River Nations |  |  |
@@ -2521,6 +2523,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | FGG1 - Fane of the Fallen |  |  |
 |  | FGG2 - Strange Bedfellows |  |  |
 |  | FGG3 - Ursined, Sealed, and Delivered |  |  |
+|  | Fiction Formula Plotting (Deborah Chester) | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | Field Manual 3085 |  |  |
 |  | Field Manual 3145 |  |  |
 |  | Field Manual SLDF |  |  |
@@ -2748,6 +2751,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Goodman Games - Maximum XCrawl - NPC Folio |  |  |
 |  | Gothic Campaign Compendium |  |  |
 |  | Graemation Ltd. - Orc War, The Mother Dog Saga - Savage Weaponry |  |  |
+|  | Grand Finales The Perfect Ending (Screenwriting Blue Books Book 16) (W | z-library.sk, 1lib.sk, z-lib.s |  |
 | 1985 | Greek religion: archaic and classical | Burkert, Burkert |  |
 |  | Green and Grubby - Goblin Archetypes |  |  |
 |  | Green Ronin - Advanced Bestiary |  |  |
@@ -4040,6 +4044,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Mythical Monsters Revisited |  |  |
 |  | MYTHS OF BABYLONIA AND ASSYRIA | Mackenzie |  |
 | 2025 | Narrative Context Protocol: An Open-Source Storytelling Framework for  | Gerba |  |
+|  | Narrative Sequence in Contemporary Narratology (Raphaël Baroni, Franço | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | Narrative Theory, Literature, and New... |  |  |
 | 2019 | Narratology | Liveley |  |
 |  | narratology_framework_thesis_draft_08092024 |  |  |
@@ -4170,6 +4175,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Outlaws of Alkenstar AP - 3 of 3 - Smoking Gun |  |  |
 |  | Outlaws of Alkenstar AP - 3 of 3 - Smoking Gun - Interactive Maps |  |  |
 |  | Outlaws of Alkenstar AP - Players Guide |  |  |
+|  | Outlines And The Thematic Method (Screenwriting Blue Books Book 2) (Wi | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | packing slip reverb-6ddffc51e36d332ad8c6f2d89468d871 |  |  |
 |  | Pact Magic Unbound - Volume I |  |  |
 |  | Pact Magic Unbound - Volume II |  |  |
@@ -4539,6 +4545,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Playtest - Fantasy Firearms |  |  |
 | 1988 | Plot | Dibell |  |
 |  | Plot (Elements of Fiction Writing) (A... |  |  |
+|  | Plotting A Fantasy Novel Learn Elements of Plot and Structure, Outlini | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | Ploys And Plots - A Skill and Feat Collection |  |  |
 |  | Plunder & Peril |  |  |
 |  | Plunder & Peril Poster Map |  |  |
@@ -5478,6 +5485,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Secret Societies of NeoExodus - Section Omega |  |  |
 |  | Secret Societies of Vathak - The Final Phase |  |  |
 |  | Secrets of Pact Magic |  |  |
+|  | Secrets Of Story (Martell, William, C)— | z-library.sk, 1lib.sk, z-lib.s |  |
 |  | Seekers of Secrets |  |  |
 |  | Seelah - Level 1 Champion |  |  |
 |  | Seelah - Level 5 Champion |  |  |
