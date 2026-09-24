@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-23",
   "asof": "2026-09-24",
-  "s": "hot",
-  "status": "🟢 three plot docs stand · 135 nodes SEATED, seat calls RULED · calls 12–14 DONE (**both proof scenes CARDED 9/24**, draft ⧗) · 17 open scene questions wait on Chief",
+  "s": "held",
+  "status": "🟢 three plot docs stand · seats RULED · calls 12–14 DONE, both proof scenes CARDED (draft ⧗) · **paused 9/24: the theme system goes first, before the scenes**",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.7 · DOPE SHEET"
+  "version": "v0.8 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Answer the two cards' open questions** (11 on the M2 grief montage, 6 on the M3 crash flashback): room, outburst form, who dismisses her, what the recovered record shows. The rest of the cards is filled from canon.",
-  "default": "Silence: both cards stay draft ⧗; nothing downstream waits on them except the told-order proof.",
+  "order": "**Held for the theme system.** When 77 resumes: rule the four scene questions (77-U to 77-X) — recs on the table.",
+  "default": "Silence: the cards stay draft ⧗; the recs stand unruled.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -188,6 +188,30 @@
     "default": "take both (rec)",
     "s": "ruled",
     "ruling": "RULED 2026-09-24, Chief: \"take both.\" Carded: M2 grief montage (summary + iterative, before row 9) · M3 crash analepsis (internal, checked against the taxonomy)."
+   },
+   {
+    "q": "77-U · M2: what the grief outbursts look like",
+    "options": "Sync-feed glitches (visual/audio artifacts in the channel) · other",
+    "default": "Sync-feed glitches (rec): canon calls row 9's flare a \"Digital Puberty glitch\"",
+    "s": "open"
+   },
+   {
+    "q": "77-V · M2: who dismisses her as \"Digital Puberty\"",
+    "options": "the Administration, as a routine diagnostic · a named faculty member (none exists yet) · other",
+    "default": "the Administration (rec): the only authority on record",
+    "s": "open"
+   },
+   {
+    "q": "77-W · M3: how she gets the data",
+    "options": "manual retrieval (scene pace) · V-Sync dive (stretch)",
+    "default": "manual retrieval (rec): the card's default",
+    "s": "open"
+   },
+   {
+    "q": "77-X · M3: what the recovered record shows",
+    "options": "her override is real, and the deletion itself points at the Administration · her fault only · tampering only",
+    "default": "both, layered (rec): keeps her guilt and the MC Concern The Past; opens a later thread",
+    "s": "open"
    }
   ]
  },
@@ -768,6 +792,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Two MS cards written in parallel from canon only; 17 open questions listed for Chief; plot doc v0.2.3 marks 13–14 carded."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"FRAGO 77 and this … break, break, break … work on the theme system … before we go into the scenes.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Four scene questions pushed as calls 77-U to 77-X with recs, unruled; BOLO 77 held while the theme system goes first."
     }
    ]
   }
