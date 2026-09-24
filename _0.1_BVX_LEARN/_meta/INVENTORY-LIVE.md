@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8867** |
-| With a PDF attachment | 8867 |
-| PDF present on disk | 8775 |
+| Top-level items | **8875** |
+| With a PDF attachment | 8875 |
+| PDF present on disk | 8783 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7864** |
+| **New since the Dec-2023 catalog** | **7872** |
 | Story-side (CRE + LIT by catalog) | 337 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7689 |
+| NEW | 7697 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7864)
+## New since the catalog (7872)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -1060,6 +1060,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Anand M - ChatGPT Excel Mastery_ 200+ Expert Tips and Tricks for Succe |  |  |
 |  | Anand M - ChatGPT Word Mastery_ 200+ Expert Tips and Tricks for Succes | 2023 |  |
 |  | Anatomy for Sculptors, Understanding the Human Figure (Uldis Zarins, S |  | 080004 - art & 080005 - design |
+|  | Anatomy of Criticism Four Essays | Northrop Frye |  |
 |  | Ancestral Anthologies Vol. 2 - Fox & Fae - Kitsune and Sylphs |  |  |
 |  | Ancestral Anthologies Vol. 3 - Favored of the Gods |  |  |
 |  | Ancestral Options - Dwarves |  |  |
@@ -1116,6 +1117,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Ashtanga Yoga The Practice Manual (Swenson David.)— |  |  |
 |  | Asian Archetypes - Magical |  |  |
 |  | Asian Archetypes - Martial |  |  |
+|  | Aspects of the Novel | E. M. Forster |  |
 |  | Assassins of Porphyra |  |  |
 |  | aste4dzo |  |  |
 |  | aste4dzo |  |  |
@@ -4586,13 +4588,16 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Mythology World Myths, Gods, Heroes, Creatures, Mythical Places (EYEWI | Philip Wilkinson, Neil Philip |  |
 |  | MYTHS OF BABYLONIA AND ASSYRIA | Mackenzie |  |
 |  | Naked Lunch | William S. Burroughs |  |
+|  | Narration in the Fiction Film | David Bordwell |  |
 |  | Narrative as Virtual Reality 2 Revisiting Immersion and Interactivity  | Marie-Laure Ryan |  |
 |  | Narrative as virtual reality immersion and interactivity in literature | Marie-Laure Ryan |  |
 | 2025 | Narrative Context Protocol: An Open-Source Storytelling Framework for  | Gerba |  |
 |  | Narrative Discourse An Essay in Method | Gerard Genette |  |
 |  | Narrative discourse revisited | Genette, Gérard, 1930-, Genett |  |
 |  | Narrative Fiction Contemporary Poetics 2nd Edition (New Accents) | Shlomith Rimmon-Kenan |  |
+|  | Narrative Intelligence (Michael Mateas, Phoebe Sengers (Eds.)) |  |  |
 |  | Narrative Sequence in Contemporary Narratology (Raphaël Baroni, Franço |  |  |
+|  | Narrative strategies in television series | Allrath, Gaby, 1971- Gymnich,  |  |
 |  | Narrative Theory, Literature, and New... |  |  |
 | 2019 | Narratology | Liveley |  |
 |  | narratology_framework_thesis_draft_08092024 |  |  |
@@ -6930,6 +6935,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Storyform CHESS TEST |  |  |
 | 2022 | Storytelling for New Technologies and Platforms: A Writer's Guide to T | Berger |  |
 |  | Storytelling for New Technologies and... |  |  |
+|  | Storytelling in the new Hollywood understanding classical narrative te | Kristin Thompson |  |
 | 2023 | Storythinking: the new science of narrative intelligence | Fletcher |  |
 |  | Strange Aeons - 01 - In Search of Sanity |  |  |
 |  | Strange Aeons - 01 - In Search of Sanity - Interactive Map |  |  |
@@ -6964,6 +6970,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Stroh Hammer - Gravity Age - Creature Update 00 |  |  |
 |  | Stroh Hammer - Gravity Age - Cybernetics Emporium |  |  |
 |  | Stroh Hammer - Gravity Age - Nanotech Emporium |  |  |
+|  | Structural Anthropology | etc. |  |
 |  | structure_chart |  |  |
 |  | Stuck Diagrams Help | Abby Covert |  |
 |  | Successful Glamour Photography Secrets of Indoor and Outdoor Model Pho | John Kelly |  |
@@ -7409,6 +7416,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Ultimate RPG Character Backstory Guide | James D’Amato | 03_CHARACTER |
 |  | The Universal Traveler A Soft-Systems Guide to Creativity, Problem-Sol |  |  |
 | 2024 | The Use of Motion Capture Technology in 3D Animation | Caroline Wibowo, Nugroho, Wibo |  |
+|  | The Visual Language of Comics Introduction to the Structure and Cognit | Neil Cohn |  |
 |  | The War Mind |  |  |
 |  | The War of the Goblin King |  |  |
 |  | The War of the Goblin King - Pregen Characters |  |  |

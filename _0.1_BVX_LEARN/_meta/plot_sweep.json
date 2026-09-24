@@ -9032,7 +9032,7 @@
   },
   {
    "id": "G2940",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "Narrative Strategies in Television Series",
    "author": "Gaby Allrath; Marion Gymnich",
@@ -9041,7 +9041,7 @@
    "tags": "",
    "lane": "SERIES",
    "tier": 1,
-   "why": "Television narrative strategies and series structure",
+   "why": "Television narrative strategies and series structure · landed Narrative strategies in television serie",
    "clean": "Narrative Strategies in Television Series"
   },
   {
@@ -9116,7 +9116,7 @@
   },
   {
    "id": "G3004",
-   "src": "zlib-gap",
+   "src": "drop",
    "bvx": "",
    "title": "The Visual Language of Comics: Introduction to the Structure and Cognition of Sequential Images",
    "author": "Neil Cohn",
@@ -9125,7 +9125,7 @@
    "tags": "",
    "lane": "SERIES",
    "tier": 1,
-   "why": "Sequential art structure and comic narrative cognition",
+   "why": "Sequential art structure and comic narrative cognition · landed The Visual Language of Comics Introducti",
    "clean": "The Visual Language of Comics: Introduction to the Structure and Cognition of Sequential Images"
   },
   {
@@ -11547,37 +11547,37 @@
   {
    "author": "Forster",
    "title": "Aspects of the Novel",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Aspects of the Novel"
   },
   {
    "author": "Frye",
    "title": "Anatomy of Criticism",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Anatomy of Criticism Four Essays"
   },
   {
    "author": "Lévi-Strauss",
    "title": "Structural Anthropology",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "landed 9/23 (matched by hand, author missing from filename)"
   },
   {
    "author": "Bordwell",
    "title": "Narration in the Fiction Film",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Narration in the Fiction Film"
   },
   {
    "author": "Thompson, K.",
    "title": "Storytelling in the New Hollywood",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "Storytelling in the new Hollywood understanding classical narrative te"
   },
   {
    "author": "Mittell",
@@ -11659,9 +11659,9 @@
   {
    "author": "Mateas & Sengers",
    "title": "Narrative Intelligence",
-   "held": false,
+   "held": true,
    "in_zlib_favs": false,
-   "match": ""
+   "match": "landed 9/23 (matched by hand, author missing from filename)"
   },
   {
    "author": "Riedl & Young",
