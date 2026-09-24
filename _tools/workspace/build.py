@@ -189,6 +189,7 @@ for n in raw_nodes:
             "name": n.get("name"),
             "def": trim(n.get("def", ""), 200),
             "cite": n.get("cite"),
+            "bvx": n.get("bvx"),
             "phase": n.get("phase"),
             "column": PHASE_TO_COLUMN.get(n.get("phase"), "side"),
             "same_as": n.get("same_as", []),
@@ -498,6 +499,7 @@ STYLE = r"""
   .tip p { margin: 0; }
   .tip ul.tlist { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; }
   .tip ul.tlist li { border-left: 2px solid var(--line-2); padding-left: 6px; }
+  .tip .or-line, .dcard .or-line { margin: 4px 0 0; font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-style: italic; }
   .tip .more { margin-top: 6px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
   .tip .w { margin-top: 8px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); overflow-wrap: anywhere; }
   .tip .lock { height: 2px; background: var(--line); margin-top: 8px; position: relative; }
@@ -836,7 +838,7 @@ function detailCardHtml(type, id){
       <dl><div><dt>Tropes keyed (${tropes.length})</dt><dd><ul class="tlist" style="list-style:none;padding:0;margin:6px 0 0">${shown.map(t=>`<li style="border-left:2px solid var(--line-2);padding-left:6px;margin-bottom:4px">${esc(t.name)}</li>`).join('')}${tropes.length>6?`<li class="more">+ ${tropes.length-6} more — hover the node on the rails for the capped tooltip</li>`:''}</dd></div>
       ${n.same_as && n.same_as.length ? `<div><dt>Same as</dt><dd>${n.same_as.map(esc).join(', ')}</dd></div>`:''}
       </dl>
-      <div class="src">source: ${esc(n.cite||'')} · _tools/tropes/data/trope_graph.json</div></div>`;
+      <div class="src">source: ${esc(n.cite||'')} · ${esc(n.bvx||'')} · _tools/tropes/data/trope_graph.json</div></div>`;
   }
   if (type === 'signpost'){
     const [tl, act] = id.split('|');
@@ -921,8 +923,13 @@ function depthOf(target){ const p = target.closest('.tip'); return p ? (+p.datas
 
 function tropeTipHtml(node, trope, depth){
   const deep = depth >= 3;
+  // call 77-N (Chief 9/24, all recs): show a trope's alt node as a visible
+  // "or:" line, never drawn as an edge.
+  const altNode = trope.alt ? nodesById[trope.alt] : null;
+  const altLine = altNode ? `<p class="or-line">or: ${esc(altNode.name)}</p>` : '';
   return `<div class="th"><b>${esc(trope.name)}</b><span class="k">trope</span></div>
     <p>${esc(trope.def || '')}</p>
+    ${altLine}
     ${deep ? '<div class="capped">nesting capped at depth 3</div>' : `<div class="w">from ${esc(node.name)} · conf: ${esc(trope.conf||'n/a')}</div>`}
     <div class="lock"><b></b></div><div class="hint2">hold 1.2s or Space to lock · Esc closes</div>`;
 }
