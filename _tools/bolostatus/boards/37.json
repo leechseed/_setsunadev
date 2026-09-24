@@ -4,9 +4,9 @@
   "title": "The proword selection loop — name pending",
   "trunk": "BLACK",
   "issued": "2026-09-06",
-  "asof": "2026-09-23",
+  "asof": "2026-09-24",
   "s": "done",
-  "status": "🟢 9/23 BUILT on \"go 37\": the BREVITY panel is live on the sit rep page (outliner row BREVITY, key B). Eight slots seeded from SOP §5's open benches, five candidates each, click three in order, Submit writes the pick to the page's store and reveals the sealed ranking. The back five of every bench stay on disk. The sit rep pulls the picks at H0.5 and `brevity.py apply` rules the slots.",
+  "status": "🟢 9/24 FIRST PASS RULED: Chief ranked all eight seed slots on the BREVITY panel; the picks landed on disk (benches.json), the SOI (edition 2026-09-24-2) and SOP §5.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "SOP §5 · SOP §6 · every trunk",
   "related": [
@@ -21,7 +21,7 @@
   ],
   "home": "BOLO.md · row 37",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -42,7 +42,7 @@
  ],
  "frago": {
   "mission": "Build the proword selection loop as one panel of the sit rep page, in order to rule every new proword in ten seconds where the record already lives.",
-  "order": "**Open the board, press B, rule the eight.** Each pick is three clicks and Submit. New slots: `python _tools/soi/brevity.py add <id> \"<thing>\" W1 … W10`, then the next sit rep carries them.",
+  "order": "Open the next slots when a word needs one; the repo-wide rename gear → THROTTLE is its own pass, on Chief's word.",
   "default": "Silence: the eight slots sit open on the panel; the next sit rep pulls nothing and rules nothing.",
   "calls": [
    {
@@ -201,9 +201,9 @@
     },
     {
      "n": 7,
-     "s": "open",
-     "when": "9/23",
-     "t": "**The eight seed slots** — main effort · the outside read · napkin · the intel noun · syllabus · distill · grammar · the gear name. Chief's clicks."
+     "s": "done",
+     "when": "9/24",
+     "t": "**The eight seed slots RULED** — PRIORITY · INTEL · INTEL (product) · ROUGH · PRIMER · DIGEST · DOCTRINE · THROTTLE. Chief's clicks, applied by brevity.py."
     }
    ],
    "coord": [],
@@ -356,6 +356,16 @@
      "when": "9/23",
      "who": "Claude",
      "t": "The BREVITY panel built and published on the sit rep page with the store capability; eight slots seeded; brevity.py and the sit rep's H0.5 pull wired."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Ranked all eight slots on the panel: PRIORITY · INTEL (outside read) · INTEL (product) · ROUGH · PRIMER · DIGEST · DOCTRINE · THROTTLE."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "brevity.py apply ruled 8/8; glossary, SOI changes, SOP §5 written; board + SOI republished. Collisions flagged: DIGEST (session-open digest), DOCTRINE (DOCTRINE 0), INTEL (pass and product)."
     }
    ]
   }

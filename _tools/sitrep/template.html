@@ -424,7 +424,9 @@ const splitStat = v => {
   if (m) return { big: m[1], rest: m[2].replace(/^[\s·;:,\-]+/, ''), line: false };
   return { big: v, rest: '', line: true };
 };
-$('#stats').innerHTML = M.stats.map(s => { const p = splitStat(s.v);
+/* a stat is {k, v, s}; a bare "key: value" string (the 9/24 patches) is split, never rendered as undefined */
+const asStat = s => typeof s === 'string' ? (i => i < 0 ? { k: '', v: s } : { k: s.slice(0, i).trim(), v: s.slice(i + 1).trim() })(s.indexOf(':')) : s;
+$('#stats').innerHTML = M.stats.map(asStat).map(s => { const p = splitStat(s.v);
   return `<div class="stat s-${s.s || ''}" title="${esc(s.k)}: ${esc(s.v)}"><b class="num${p.line ? ' line' : ''}">${esc(p.big)}</b>${p.rest ? `<small>${esc(p.rest)}</small>` : ''}<span>${esc(s.k)}</span></div>`; }).join('');
 $('#box').innerHTML = M.box.map(b => `<div class="light ${b.up ? 'up' : ''}"><i></i><a class="t" data-t="${b.k}" tabindex="0">${esc(b.name)}</a><small>${esc(b.port)} · ${b.up ? 'UP' : 'DOWN'}</small></div>`).join('')
   + `<a class="gloss" id="glossBtn" href="${SOI_URL}" target="_blank" rel="noopener" title="G">SOI<small>the brevity</small></a>`;

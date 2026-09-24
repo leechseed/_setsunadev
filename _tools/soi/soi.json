@@ -1,5 +1,5 @@
 {
- "edition": "2026-09-24-1",
+ "edition": "2026-09-24-2",
  "effective": "2026-09-24 · until superseded by the next edition",
  "supersedes": "edition 2026-09-17-4. Adds the 9/24 rulings: TOUCHSTONE (was invariant) · agents deployed (was in flight) · Skeeter Creek (was Red Stick Creek). The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
  "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
@@ -145,6 +145,10 @@
   {
    "date": "2026-09-24",
    "t": "**TOUCHSTONE** ruled as the name for a rule the story can never break, formerly \"invariant\" (\"get rid of HOTLINE, just call it the Touchstone\"): the sign players slap on the way out of the locker room, and the stone gold is tested on. Cite as TS 1:3; DOCTRINE 0's name ruling closed. **Agents deployed** replaces \"agents in flight\" on the board. **Skeeter Creek** replaces Red Stick Creek as DCUS's founding name. Edition 2026-09-24-1."
+  },
+  {
+   "date": "2026-09-24",
+   "t": "**BREVITY's first pass ruled eight slots**: PRIORITY (main effort) · INTEL (the outside read, and its product) · ROUGH (napkin) · PRIMER (syllabus) · DIGEST (distill) · DOCTRINE (grammar) · THROTTLE (gear N). Edition 2026-09-24-2."
   }
  ]
 }

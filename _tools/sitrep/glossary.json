@@ -375,11 +375,11 @@
   "w": "_CANON_NODES/oxo-trash-land-seed.md"
  },
  "main-effort": {
-  "t": "the main effort",
+  "t": "PRIORITY",
   "k": "proword",
-  "d": "MCDP 1's term: the one task everything else supports. Spoken, it names or asks for the single priority. Provisional since 8/21; the sit rep's Block VI rename rides on it. On this board it has been [[block-c|Block C]] plus [[d9|D-9]] since 9/4.",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the command proword for the one thing everything else supports; Block VI's title rides on it. Your ranking: PRIORITY · MAIN EFFORT · FOCUS OF EFFORT. Was \"main effort\".",
   "w": "SOP.md §5",
-  "st": "provisional"
+  "st": "ruled"
  },
  "smeac": {
   "t": "the five-paragraph order",
@@ -481,38 +481,38 @@
   "w": "SOP.md §1 · §8"
  },
  "recon": {
-  "t": "recon",
+  "t": "INTEL",
   "k": "proword",
-  "st": "benched",
-  "d": "Benched 9/6: the [[boresight]] protocol aimed outside the wire (web and literature) instead of at the vault. \"Napkin recon\" would be the one-pass form. Waits in the [[bolo37|selection loop]].",
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the boresight aimed outside the wire (web and literature). Your ranking: INTEL · RECON · SCOUT. Was \"recon\".",
   "w": "SOP.md §5"
  },
  "napkin": {
-  "t": "napkin",
+  "t": "ROUGH",
   "k": "proword",
-  "st": "benched",
-  "d": "Benched 9/6 as a modifier: back-of-the-napkin, one pass, rough numbers, no question loop. Spoken as a prefix: \"napkin boresight\", \"napkin recon\".",
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the modifier for a one-pass read: rough numbers, no question loop (\"rough boresight\"). Your ranking: ROUGH · QUICK LOOK · GLANCE. Was \"napkin\".",
   "w": "SOP.md §5"
  },
  "syllabus": {
-  "t": "syllabus",
+  "t": "PRIMER",
   "k": "proword",
-  "st": "benched",
-  "d": "Benched 9/6: \"pull the syllabus on X\" = the tier-one 101 textbooks of a field, [[ivory-tower|ivory tower]], one per field to start.",
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step one: pull the tier-one 101 text of a field, one per field. Your ranking: PRIMER · CURRICULUM · SYLLABUS. Was \"syllabus\".",
   "w": "SOP.md §5"
  },
  "distill": {
-  "t": "distill",
+  "t": "DIGEST",
   "k": "proword",
-  "st": "benched",
-  "d": "Benched 9/6: make the BVX-LEARN one-sheet. The doctrine's own word: distill, don't summarize.",
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step three: the book through the Zotero pipeline, out as a one-sheet. Your ranking: DIGEST · SMARTBOOK · BRIEF. Was \"distill\".",
   "w": "SOP.md §5"
  },
  "grammar": {
-  "t": "grammar",
+  "t": "DOCTRINE",
   "k": "proword",
-  "st": "benched",
-  "d": "Benched 9/6: \"write the grammar\" = derive a system's operating language from its sources.",
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step four: derive how a system's language operates. Your ranking: DOCTRINE · SYNTAX · GRAMMAR. Was \"grammar\".",
   "w": "SOP.md §5"
  },
  "mint": {
@@ -664,11 +664,11 @@
   "w": "SOP.md §0–1 · ACP 125"
  },
  "gear": {
-  "t": "gear N",
+  "t": "THROTTLE",
   "k": "proword",
-  "st": "provisional",
-  "d": "The agent ceiling for the current task, spoken as a number. Gear 1 = 3 agents (the default; silence means gear 1) · 2 = 6 · 3 = 9 · 4 = 12 · 5 = 15, never used: the ceiling exists to be named. A shift lasts one task, then back to gear 1. At every gear, fetch-and-extract agents run haiku, write-ups sonnet, fable on the main line only. Working name (Chief 9/12: \"let's just call them gears for now\"); warps and DEFCON aborted in the same breath. Part of [[gearbox|the gearbox]].",
-  "w": "SOP.md §1 · §5 · BOLO 52"
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the agent ceiling: throttle 1 = 3 agents (the default), 2 = 6, 3 = 9, 4 = 12, 5 = 15 never. Your ranking: THROTTLE · GEAR · CONDITION. Was \"gear\".",
+  "w": "SOP.md §5"
  },
  "gearbox": {
   "t": "the gearbox",
@@ -1118,5 +1118,12 @@
   "st": "ruled",
   "d": "A rule the story can never break, formerly \"invariant\" (RULED 9/24). The thing you touch on the way out, like the PLAY LIKE A CHAMPION TODAY sign, and the stone goldsmiths tested gold against: every scene is tested on it. Guides, doesn't command. Holds across both trunks. Cite as TS 1:3 (book:number). Built last, read first ([[bolo81|BOLO 81]]).",
   "w": "DOCTRINE-0-INVARIANTS.md §3 · ssot_01_touchstones_register.md"
+ },
+ "intel-noun": {
+  "t": "INTEL (the product)",
+  "k": "noun",
+  "st": "ruled",
+  "d": "RULED 9/24 on [[brevity|BREVITY]]: the noun for what an outside read brings back, the product, not the pass. Your ranking: INTEL · DOPE · GOUGE. Same word as the outside-read proword ([[recon|INTEL]]).",
+  "w": "SOP.md §5"
  }
 }
