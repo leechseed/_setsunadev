@@ -1,10 +1,10 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.0
+version: 0.1.1
 last_updated: 2026-09-24
 applies_to: [OVEREXITOUT, EVIL CHECK, all future IPs]
-status: "draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -194,9 +194,9 @@ PS2's wave-1 extraction reads all twelve character layers against "What Is Stati
 | P9 `stakes_delta` | The chain of `cause`/`enable` edges back to the prior fabula event in sequence — this is the fix for the plot doc's own flagged gap, "P9 needs a prior unit to compare against... nothing upstream carded yet" |
 | P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is this doc's `time` field on the referenced event; `order_told` stays the syuzhet doc's own field; the gap between them is classified as an anachrony (external, internal, or mixed analepsis; prolepsis) so the trope graph can reason about foreshadowing and reveal structure ([[BVX.0562]] does not cover this; Genette 1980: 48-53) |
 
-**To the state architecture.** The v1.1 gap PS2 flagged becomes a patch spec, sourced to this doc until `ssot_02_character_state_architecture.md` itself takes the bump (OPEN call 6):
+**To the state architecture.** The v1.1 gap PS2 flagged becomes a patch spec, **landed in `ssot_02_character_state_architecture.md` v1.1.0 on 2026-09-24** (OPEN call 6, ruled). As applied:
 
-1. **`origin_event` field** — a structured reference, `origin_event: "<event_id>"`, replacing the current freeform `narrative_moment` text as the state record's link into this doc's registry.
+1. **`origin_event` field** — a structured reference, `origin_event: "<event_id>"`, added beside the freeform `narrative_moment` text (kept as a readable tag) as the state record's structured link into this doc's registry.
 2. **`state_diffs` as a named parent field** — consolidating the current separate `MODIFIED_VALUES`, `MODIFIED_DERIVED`, and `MODIFIED_FLAGS` blocks under one `state_diffs:` parent, so a state change reads explicitly as a diff caused by an event rather than three loose blocks.
 3. **Event ID standardization** — the fabula assigns each event one `event_id` (this doc's `<movement>_<slug>` grammar); every state record that traces to it carries the same string in `origin_event`. Worked example: `event_id: "m1b_crash_jebb_death"` pairs to state diff `vm_m1b_post_crash`.
 
@@ -342,16 +342,18 @@ causal_edges: []   # no stated causal edge to the crash's data-deletion mechanis
 ---
 
 ## OPEN
+**All six ruled 2026-09-24, Chief: "go on all recommendations."** Each rec below is now the rule, provisional a week like every ruling.
 
-1. **77-C — Tori-only instance** — does wave 1's filled instance stay Tori-only, leaving Anna Colson's layer origins open per her own node's Open Questions? Rec: yes, matches Chief's silence-ruling on DOPE SHEET 77 and Anna Colson's own node marks L7 and L8 as author-pending.
-2. **77-D — EVIL CHECK wave 2** — when does EVIL CHECK's own event set enter this registry, given the `stories:` field is reserved but empty for it now? Rec: wave 2, once an EVIL CHECK-side extraction exists to source-check its events the way PS2 did for Tori.
-3. **Event ID scheme** — the digests give one worked example, `m1b_crash_jebb_death`, but no formal grammar for `event_id`; what characters and length does the state doc's v1.1 field expect? Rec: adopt `<movement>_<slug>` as the working grammar until the state doc's owner rules otherwise.
-4. **DCUS eras vs setting arc** — should THE WORLD CLOCK re-author the Red Stick Creek to Red Hills to DCUS lattice as its own filled event rows, or only cross-reference S5, S7, and S11? Rec: cross-reference only; the setting doc stays the one authoring surface for those dated states.
-5. **Fuzzy-date convention** — none of the theory sources gives a formal null-value convention for an unknown date; is movement-relative dating, Mn with no calendar, the Command's working answer for this wave? Rec: yes for now, revisit once a calendar exists for the world.
-6. **State architecture v1.1 ownership** — this doc specifies the `origin_event`, `state_diffs`, and event-id patch; does `ssot_02_character_state_architecture.md` take the version bump in the same pass or a separate FRAGO? Rec: separate FRAGO to that file; this doc's HANDSHAKE section is the spec source of truth until it lands.
+1. **RULED 2026-09-24 (rec taken) · 77-C — Tori-only instance** — does wave 1's filled instance stay Tori-only, leaving Anna Colson's layer origins open per her own node's Open Questions? Rec: yes, matches Chief's silence-ruling on DOPE SHEET 77 and Anna Colson's own node marks L7 and L8 as author-pending.
+2. **RULED 2026-09-24 (rec taken) · 77-D — EVIL CHECK wave 2** — when does EVIL CHECK's own event set enter this registry, given the `stories:` field is reserved but empty for it now? Rec: wave 2, once an EVIL CHECK-side extraction exists to source-check its events the way PS2 did for Tori.
+3. **RULED 2026-09-24 (rec taken) · Event ID scheme** — the digests give one worked example, `m1b_crash_jebb_death`, but no formal grammar for `event_id`; what characters and length does the state doc's v1.1 field expect? Rec: adopt `<movement>_<slug>` as the working grammar until the state doc's owner rules otherwise.
+4. **RULED 2026-09-24 (rec taken) · DCUS eras vs setting arc** — should THE WORLD CLOCK re-author the Red Stick Creek to Red Hills to DCUS lattice as its own filled event rows, or only cross-reference S5, S7, and S11? Rec: cross-reference only; the setting doc stays the one authoring surface for those dated states.
+5. **RULED 2026-09-24 (rec taken) · Fuzzy-date convention** — none of the theory sources gives a formal null-value convention for an unknown date; is movement-relative dating, Mn with no calendar, the Command's working answer for this wave? Rec: yes for now, revisit once a calendar exists for the world.
+6. **RULED 2026-09-24 (rec taken) · State architecture v1.1 ownership** — this doc specifies the `origin_event`, `state_diffs`, and event-id patch; does `ssot_02_character_state_architecture.md` take the version bump in the same pass or a separate FRAGO? Rec: separate FRAGO to that file; this doc's HANDSHAKE section is the spec source of truth until it lands.
 
 ---
 
 ## Version history
 
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 1, "go 77" ruled 2026-09-24. Built from three disjoint extractions: PS1 (syuzhet-side hooks, DCUS setting facts), PS2 (the twelve-layer origin-moment rule, the state architecture v1.0 gap, Tori's dated backstory), MS-T (the fabula/syuzhet/trope-graph theory digest, Bal/Chatman/Genette/Rimmon-Kenan/Wolf/Sternberg/Propp). Instance scoped to Tori only per the ruled default; EVIL CHECK's events reserved for wave 2; the state architecture v1.1 patch spec ships inside THE HANDSHAKE rather than in the state doc itself, pending OPEN call 6.
+- **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended (Tori-only instance · EVIL CHECK in wave 2 · `<movement>_<slug>` ids · DCUS eras cross-referenced · date by movement · the v1.1 patch shipped now). The patch landed in the state architecture v1.1.0: `origin_event` field, `state_diffs` parent, additive, `narrative_moment` kept.

@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_02_character_systems category: state_architecture version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology"]
+## type: ssot_02_character_systems category: state_architecture version: 1.1.0 last_updated: 2026-09-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula"]
 ---
 # 🔮 SSOT: Character State Architecture
 
@@ -92,12 +92,25 @@ A state record is a structured data block that describes the delta between the b
 |---|---|---|
 |`character_id`|Character this state belongs to|`victoria_midnight`|
 |`state_id`|Unique identifier for this state|`vm_m1b_post_crash`|
-|`narrative_moment`|Human-readable description of when|`Movement 1B — immediately after the crash`|
+|`origin_event`|The fabula event that produced this state (v1.1). An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event|`m1b_crash_jebb_death`|
+|`narrative_moment`|Human-readable description of when. Kept for readers; `origin_event` is the structured link|`Movement 1B — immediately after the crash`|
 |`movement`|Which movement this state falls in|`m1b`|
 |`mc_distance_temporal`|Temporal distance from MC's current scene|`0` (this IS the MC)|
 |`mc_distance_narrative`|Causal steps from MC's throughline|`0`|
 |`state_version`|Version of this state record|`1.0`|
 |`base_record_version`|Version of the base record this diffs against|`1.0.0`|
+
+### The State Diffs Parent (v1.1)
+
+The three blocks below sit under one parent field, `state_diffs:`, so a state reads as a single diff produced by its `origin_event`. The block names inside it are unchanged. A v1.0 record with the three blocks at the top level stays valid: read it as if the parent were there.
+
+```
+origin_event: m1b_crash_jebb_death
+state_diffs:
+  MODIFIED_VALUES:   { ... }
+  MODIFIED_DERIVED:  { ... }
+  MODIFIED_FLAGS:    { ... }
+```
 
 ### Modified Values Block
 
@@ -195,7 +208,7 @@ To assemble the complete character at a given moment:
 
 **Step 2:** Load the state diff for the requested narrative moment.
 
-**Step 3:** Apply the state diff. For every field present in `MODIFIED_VALUES`, replace the base record value with the state diff value. For every field NOT present in the state diff, retain the base record value.
+**Step 3:** Apply the state diff (the `state_diffs` parent, or the top-level blocks in a v1.0 record). For every field present in `MODIFIED_VALUES`, replace the base record value with the state diff value. For every field NOT present in the state diff, retain the base record value.
 
 **Step 4:** Apply `MODIFIED_DERIVED` statistics. These replace the base record derived statistics.
 
@@ -283,7 +296,7 @@ If both characters have locked Character Astrology charts, the relationship reco
 
 ## Boundaries with plot_systems
 
-This document defines character state tracking. It does not define story structure, scene sequencing, or narrative timeline management. Those belong to plot_systems, which is flagged for future development.
+This document defines character state tracking. It does not define story structure, scene sequencing, or narrative timeline management. Those belong to plot_systems. Since v1.1 the world timeline is [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md): it owns every event, and a state points to one through `origin_event`.
 
 **What this document provides to plot_systems (when built):**
 
@@ -299,7 +312,7 @@ This document defines character state tracking. It does not define story structu
 - The scene-to-state mapping (which scenes produce which state diffs).
 - The Victoria-as-(0,0) coordinate system for measuring all other characters' temporal and narrative distance.
 
-Until plot_systems is built, state diffs use freeform `narrative_moment` descriptions and authored `movement` tags. The architecture supports the transition to structured coordinates without schema changes.
+**v1.1 (2026-09-24):** the first structured key has landed. Every state carries `origin_event`, an `event_id` in the fabula's registry, and one event may produce states in several characters. `narrative_moment` and `movement` stay as readable tags. Calendar coordinates wait on a world calendar (fabula OPEN call 5, ruled: date by movement until then).
 
 ---
 
@@ -307,4 +320,5 @@ Until plot_systems is built, state diffs use freeform `narrative_moment` descrip
 
 |Version|Date|Changes|
 |---|---|---|
+|1.1.0|2026-09-24|BOLO 77 handshake, ruled "all recs" 2026-09-24: `origin_event` required field (the fabula's `event_id`, `<movement>_<slug>`; null only for progression overlays) · the three MODIFIED blocks grouped under a `state_diffs` parent (v1.0 top-level blocks stay valid) · the plot_systems boundary points to the fabula doc. Additive; no field removed.|
 |1.0.0|2026-03-03|Initial state architecture. Establishes static/dynamic boundary, state diff format, diff rules, query assembly protocol, five state source categories, relationship record format, and plot_systems boundaries.|
