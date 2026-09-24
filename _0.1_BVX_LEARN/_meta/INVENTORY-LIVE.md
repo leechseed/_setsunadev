@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8888** |
-| With a PDF attachment | 8888 |
-| PDF present on disk | 8796 |
+| Top-level items | **8898** |
+| With a PDF attachment | 8898 |
+| PDF present on disk | 8806 |
 | Already in catalog.json (BVX id) | 1003 |
-| **New since the Dec-2023 catalog** | **7885** |
+| **New since the Dec-2023 catalog** | **7895** |
 | Story-side (CRE + LIT by catalog) | 337 |
 | **Spine-keyed from Chief's tags** | **613** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7710 |
+| NEW | 7720 |
 | GAM | 334 |
 | CRE | 229 |
 | LIT | 108 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7885)
+## New since the catalog (7895)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -4607,6 +4607,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Narrative Theory, Literature, and New... |  |  |
 | 2019 | Narratology | Liveley |  |
 |  | Narratology Beyond Literary Criticism Mediality and Disciplinarity (Na | Jan Christoph Meister |  |
+|  | Narratology in the Age of Cross-Disciplinary Narrative Research (Narra | Sandra Heinen, Roy Sommer |  |
 |  | narratology_framework_thesis_draft_08092024 |  |  |
 |  | NASA Systems Engineering Handbook |  |  |
 |  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar |  |  |
@@ -5362,7 +5363,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Portraits | Helmut Newton |  |
 |  | Portraits | Helmut Newton |  |
 |  | position_illustration_supervio |  |  |
+|  | Possible Worlds Theory And Contemporary Narratology | Marie-Laure Ryan, Alice Bell |  |
 |  | Possible Worlds, Artificial Intelligence and Narrative Theory | Marie-Laure Ryan |  |
+|  | Postclassical narratology approaches and analyses | Alber, Jan Fludernik, Monika |  |
 |  | Potions & Poisons |  |  |
 |  | Power Booty Gym (Lauren Simpson)— |  | HEALTH & FITNESS |
 |  | Power Booty Home (Lauren Simpson)— |  | HEALTH & FITNESS |
@@ -5444,6 +5447,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Psionics Unleashed |  |  |
 |  | Psionics Unleashed Revised |  |  |
 |  | Psychic Anthology |  |  |
+|  | Psychology of the unconscious a study of the transformations and symbo |  |  |
 | 2014 | Publishing 101: A First-Time Author's Guide to Getting Published, Mark | Friedman |  |
 |  | Pure Steam - Westbound |  |  |
 |  | Purple Duck Diversions - Antipaladin feats |  |  |
@@ -6937,18 +6941,21 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Stonehouses Anatomy | Seok Jung Hyun | 080004 - art |
 |  | Story Character Archetypes |  |  |
 |  | Story Fix Transform Your Novel from Broken to Brilliant | Larry Brooks |  |
+|  | Story in Mind A Constructivist Narratology. The Psychological and Ling | David Baboulene |  |
 |  | Story Logic Problems and Possibilities of Narrative (Frontiers of Narr | David Herman |  |
 |  | Story Maps | Daniel P. Calvisi |  |
 |  | STORY MAPS TV Drama The Structure of the One-Hour Television Pilot | Daniel P. Calvisi |  |
 |  | Story Physics by Larry Brooks |  | 02_PLOT SYUHZET |
 |  | Story Stakes Your 1 Writing Skills Strategy to Transform Readers into  | H.R. DCosta |  |
 |  | Story Structure Report |  |  |
+|  | Story Theory The psychological and linguistic foundations to how stori | David Baboulene |  |
 |  | Story Treatment Report |  |  |
 |  | Storyform CHESS TEST |  |  |
 | 2022 | Storytelling for New Technologies and Platforms: A Writer's Guide to T | Berger |  |
 |  | Storytelling for New Technologies and... |  |  |
 |  | Storytelling in the new Hollywood understanding classical narrative te | Kristin Thompson |  |
 | 2023 | Storythinking: the new science of narrative intelligence | Fletcher |  |
+|  | Storyworlds across Media Toward a Media-Conscious Narratology | Marie-Laure Ryan, Jan-Noël Tho |  |
 |  | Strange Aeons - 01 - In Search of Sanity |  |  |
 |  | Strange Aeons - 01 - In Search of Sanity - Interactive Map |  |  |
 |  | Strange Aeons - 02 - The Thrushmoor Terror |  |  |
@@ -7114,6 +7121,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Dragon's Demand |  |  |
 |  | The Dragon's Demand Poster Maps |  |  |
 |  | The Dread Codex, Goblins |  |  |
+|  | The Dynamics of Narrative Form Studies in Anglo-American Narratology ( |  |  |
 |  | The Ebon Vault - Adamant Armors |  |  |
 |  | The Ebon Vault - Bows of War |  |  |
 |  | The Ebon Vault - Fantastic Footgear |  |  |
@@ -7123,6 +7131,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Ebon Vault - Secrets of the Staff |  |  |
 |  | The Ebon Vault - Swords of Legend |  |  |
 |  | The Ebon Vault - Unstoppable Hammers |  |  |
+|  | The Edinburgh Companion to Contemporary Narrative Theories | Zara Dinnen |  |
 |  | The Emerald Spire Superdungeon |  |  |
 |  | The Emerald Spire Superdungeon - Flip-Mats |  |  |
 |  | The Emerald Spire Superdungeon Maps |  |  |
@@ -7333,6 +7342,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | THE QI BOOK OF QUOTATIONS | Lloyd, Mitchinson |  |
 |  | The Reaping Stone |  |  |
 |  | The Reign of the Phallus | Keuls |  |
+|  | The Rhetoric of Fiction, 2nd Edition (1983, The University of Chicago  | Wayne C. Booth |  |
 | 2014 | The rise of Tiamat | Winter, Winter, Baur | 080007 - TABLE TOP GAME DESIGN |
 |  | The Rite Review 1 | No Ads |  |
 |  | The Rite Review 2 | No Ads |  |
