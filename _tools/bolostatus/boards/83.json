@@ -5,8 +5,8 @@
   "trunk": "OPERATOR",
   "issued": "2026-09-24",
   "asof": "2026-09-24",
-  "s": "open",
-  "status": "🟡 9/24: all seven application packages built (résumé + FORM.md + STAR sheets); owed from Chief: submit the forms · the STAR brackets · book the Part 107 test.",
+  "s": "hot",
+  "status": "🟢 9/24: 3 of 8 SUBMITTED (Food Safety Manager · both DSP driver jobs). Next: HR Partner · Ground Handler · Just Walk Out · Mechatronic Apprentice. Flight Monitor held for Part 107.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "PMCS Employment · BOLO 24",
   "related": [
@@ -17,7 +17,7 @@
   ],
   "home": "BOLO.md · row 83",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -38,8 +38,8 @@
  ],
  "frago": {
   "mission": "Build one tailored application per Amazon posting, in order to make Chief the number-one candidate on each while the driver jobs cover income and Part 107 opens Flight Monitor.",
-  "order": "**Submit today, in START-HERE order:** Food Safety (due 9/25) · HR Partner · both DSP drivers · Ground Handler · Just Walk Out · Mechatronic Apprentice. Upload the .docx, paste FORM.md block by block.",
-  "default": "Silence: the packages sit built in _PRIVATE/bolo83-applications/out/ and the Food Safety deadline passes on 9/25.",
+  "order": "**Submit the next four:** HR Partner · Prime Air Ground Handler · Customer Growth Manager (Just Walk Out) · Mechatronic Apprentice I. Same drill: upload the .docx, paste FORM.md.",
+  "default": "Silence: four packages sit built; the three submitted wait on callbacks.",
   "calls": [
    {
     "q": "Call 1 · the 2022–26 gap line",
@@ -379,6 +379,21 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Built all seven packages: résumé .docx + FORM.md paste sheet each; STAR sheets for Food Safety · HR Partner · JWO; one DSP driver résumé for both DSP jobs; Flight Monitor held for Part 107; `PART107.md` two-week plan; `linkedin/REBUILD.md`; `START-HERE.md` = the apply order. Filled the 2022–26 gap with a provisional 'Independent Developer, AI Workflow & Data Tooling, Jun 2024–present' entry (the repo's first commit), pending Chief's confirmation. Owed from Chief: submit the forms · the STAR brackets · book the Part 107 test."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Timeline set: Disney Jun 2019–May 2020 · Whataburger (Tallahassee, assistant manager) Jul 2020–Jun 2021 · Hungry Howie's three years, driver Jul 2021–Jun 2022 then assistant manager Jul 2022–Jun 2024."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "All seven résumés and paste sheets rebuilt on that timeline; flagged that the 2023 résumé dated Hungry Howie's Feb 2021–Mar 2022 and background checks verify dates."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Submitted Food Safety Manager (10481502) and both DSP driver jobs (Dedicated Deliveries · Premier Logistics)."
     }
    ]
   }
