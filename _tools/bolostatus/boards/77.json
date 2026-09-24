@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-23",
   "asof": "2026-09-24",
-  "s": "held",
-  "status": "🟢 three plot docs stand · seats RULED · calls 12–14 DONE, both proof scenes CARDED (draft ⧗) · **paused 9/24: the theme system goes first, before the scenes**",
+  "s": "gated",
+  "status": "⛔ **GATED on BOLO 80 (theme) + BOLO 81 (invariants)** · three plot docs stand · seats RULED · both proof scenes CARDED (draft ⧗)",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -21,11 +21,19 @@
    {
     "n": 79,
     "why": "the workspace reads these three docs; Rails and Fabula redraw on every change"
+   },
+   {
+    "n": 80,
+    "why": "gate: the theme system (L6) the scenes must argue"
+   },
+   {
+    "n": 81,
+    "why": "gate: the invariants and pushbacks the scenes must obey"
    }
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.8 · DOPE SHEET"
+  "version": "v0.9 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +54,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Held for the theme system.** When 77 resumes: rule the four scene questions (77-U to 77-X) — recs on the table.",
-  "default": "Silence: the cards stay draft ⧗; the recs stand unruled.",
+  "order": "**Gated.** 77 resumes when BOLO 80's theme doc and BOLO 81's invariants register land. Then: rule the four scene questions (77-U to 77-X).",
+  "default": "Silence: 77 waits on 80 and 81; nothing else moves here.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -802,6 +810,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Four scene questions pushed as calls 77-U to 77-X with recs, unruled; BOLO 77 held while the theme system goes first."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"distill all data we have on BOLO 80 and 81 … place 77 dependent on 80 and 81 getting completed\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "77 gated on 80 + 81; distills of both launched."
     }
    ]
   }
