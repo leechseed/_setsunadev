@@ -4,9 +4,9 @@
   "title": "Voice work as income — Chief can build voices in ElevenLabs",
   "trunk": "ORANGE-leaning, UNRULED",
   "issued": "2026-09-16",
-  "asof": "2026-09-23",
-  "s": "gated",
-  "status": "🟢 9/23 RULED (Chief: \"go with recommended on row 11\"): trunk ORANGE · the on-target read counts · 57 ranks second in the four-way (24 · 57 · 29 · 27-under-24) on the custom-voices path, $300–800 in 90 days. Blocked #11 clears. The build waits on its own go.",
+  "asof": "2026-09-24",
+  "s": "hot",
+  "status": "🟢 **9/24 BUILDING** — re-aimed to a studio-grade Voice Library clone; the full recording kit is written (~25,600 words ≈ 2:50); Fiverr parked · dashboard https://claude.ai/artifact/FrkVdoW3g2JDsZm6i5FZpf",
   "decider": "HOTLINE ACTUAL",
   "feeds": "BOLO 56 (JUDY)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 57",
   "card": "none",
-  "version": "v0.5 · DOPE SHEET"
+  "version": "v0.6 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Price the ElevenLabs voice-building skill as a revenue path, in order to rank it honestly against the other three ventures instead of letting a named asset sit uncosted.",
-  "order": "**\"Go 57 build\" fires week one:** one Professional Voice Clone recorded and shared to the Voice Library (two hours, passive), three demo voices and one Fiverr listing for built-to-order voices. Nothing else until a first order lands. Check the account's tier first: Creator ($22) is the floor for PVC.",
-  "default": "Silence: 57 stands ranked second and unbuilt; the account stays as it is; nothing is listed or recorded.",
+  "order": "**Build the booth and record Day 1 and Day 2 inside 48 hours**, off the dashboard's steps and this sheet's guide; then clean, upload and stress-test with the held-back test set.",
+  "default": "Silence: the kit waits on disk, the dashboard keeps your ticks.",
   "calls": [
    {
     "q": "The boresight — does it run?",
@@ -228,7 +228,107 @@
     }
    ],
    "coord": [],
-   "running": []
+   "running": [],
+   "groups": [
+    {
+     "label": "Guide · the target",
+     "items": [
+      {
+       "t": "**Sell in the ElevenLabs Voice Library at studio grade** (Chief 9/24: \"super high quality … emotional weight, speed, tempo\"). Fiverr PARKED.",
+       "s": "ruled"
+      },
+      {
+       "t": "**The one rule:** the clone only does what it heard — emotion, tempo and range must be on the recording; it copies every flaw and every bit of processing.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Size:** ~2:50 of finished audio across 8 packs (ElevenLabs: 30 min minimum, 2–3 h for pro); 4–5 h at the mic; all of it inside one 24–48 h window.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Guide · the chain",
+     "items": [
+      {
+       "t": "**RØDE NT1 Signature → XLR → Focusrite Scarlett 2i2 (2nd/3rd gen) → Ableton Live.** Nothing in between.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Stock pop filter is fine**; add a ~$15 metal mesh only if P/B still pop after angling the mic off-axis.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Tube preamp: out** for the clone (color + hiss get cloned). Test it later for character demos: its output into the Scarlett's line input, phantom power in one place only.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Scarlett:** 48V on · INST off · AIR off (3rd gen) · Direct Monitor on, Ableton monitor Off · halo green, amber only on the loudest lines, never red · Focusrite USB ASIO driver.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Guide · levels",
+     "items": [
+      {
+       "t": "**Average (RMS) -23 to -18 dBFS, aim -20** · **true peak never above -3** · **room noise -60 or lower** (the first two are ElevenLabs'; the third is voice-over practice).",
+       "s": "ruled"
+      },
+      {
+       "t": "**Set the gain once:** loudest line (Pack 2, urgent) peaks near -6 · a calm read sits near -20 · 10 s of silence at -60 or lower · lock the gain for both days.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Reading the meters:** the free Youlean Loudness Meter (short-term LUFS ≈ RMS for speech; true-peak readout) · Ableton's meter bounces -12 to -8 on normal talk.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Guide · processing",
+     "items": [
+      {
+       "t": "**No compression, no EQ curves, no reverb, no heavy noise reduction on clone audio.** One allowed exception: a gentle low cut at 70–80 Hz (EQ Eight). After recording: normalize the peaks to -3 and nothing else.",
+       "s": "ruled"
+      },
+      {
+       "t": "**The polish chain is for demos and deliveries only:** low cut → gentle EQ → compressor → de-esser → limiter.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Guide · Ableton",
+     "items": [
+      {
+       "t": "**Setup:** Focusrite ASIO, 48 kHz · WAV, 24-bit · Auto-Warp Long Samples OFF · one mono track, armed, monitor Off · Youlean on the track.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Cut and export:** split Ctrl+E, delete flubs, fillers, loud breaths and every duplicate read · export WAV 48k/24, Normalize OFF · MP3 via `ffmpeg -i take.wav -codec:a libmp3lame -b:a 320k take.mp3`.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "Guide · how to read",
+     "items": [
+      {
+       "t": "**Keep the recorder rolling:** one take = one script block (~2 min); 10–15 min sections; ~2 s of silence between takes.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Flub:** 3 s of silence, reread from the start of the sentence. Wrong energy: reread the take and keep the better one. Read each take silently first.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Read from a tablet at eye level beside the mic**, never paper; tap to advance (mouse wheels click). No filming. Sit or stand the same both days (rec: tall stool). Talk to one person.",
+       "s": "ruled"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": "A",
@@ -265,6 +365,46 @@
     {
      "path": "_tools/bolostatus/pricecheck.py",
      "what": "RANGE for pricing sheets: four paths, three dollar values each, every value cites a real fact id",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/MARKET.md",
+     "what": "the 9/24 market boresight: payouts, categories, naming rules, build order",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/WEEK-ONE.md",
+     "what": "the plan: the rule, the rig spec, the checklist, the rate, the listing",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/PVC-NARRATOR-SCRIPT.md",
+     "what": "Pack 1 · Base — 5,173 words, 16 takes",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/PVC-RANGE-EMOTION.md",
+     "what": "Pack 2 · Emotion — 6,952 words, 10 emotions × 3 takes",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/PVC-RANGE-TEMPO.md",
+     "what": "Pack 3 · Tempo — 6,559 words, 26 takes",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/PVC-PACKS-4-5-7-TEST.md",
+     "what": "Packs 4 Conversational · 5 Coverage · 7 Nonverbals + the test set (never uploaded) — 6,945 words",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/DEMO-SCRIPTS.md",
+     "what": "three character personas for later clones: Sewer Gremlin · Tide-Pool Buddy · Lantern-Keeper",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/57/kit/voice-build.html",
+     "what": "the voice build dashboard (db-backed checklist + the guide)",
      "s": "done"
     }
    ],
@@ -401,6 +541,36 @@
      "when": "9/23",
      "who": "Claude",
      "t": "Ranked second in the four-way; Blocked #11 closed; BOLO 29 marked side lane or parked; the build gated on its own go."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"give me the boresight on the marketplace … what's hot right now, what moves\" — novelty/archetype voices named."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "MARKET.md: payouts need a PVC on Creator ($22/mo); $0.03–0.20 per 1,000 chars; $22M paid to 10,400+ creators; build order narrator → gremlin → sidekick → mentor → villain; name by trait, never by character."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"go 57 build\" → \"I want to sell it on the ElevenLabs market … super high quality … emotional weight, speed, tempo.\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Kit written by four MS writers (all original text): Base · Emotion · Tempo · Conversational/Coverage/Nonverbals/test set · demos. Dashboard published; Fiverr parked."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "Rig named: RØDE NT1 Signature, Scarlett 2i2, a tube preamp, Ableton Live; asked about compression/EQ, levels, how to read, and a teleprompter."
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Ruled into the guide: no processing on clone audio (low cut only), the tube stays out, three numbers (-20 avg · -3 peak · -60 floor), rolling-record method, tablet at eye level. Offers open: \"go voiceprep\" (check + convert script), \"go prompter\" (tablet prompter page)."
     }
    ]
   }
