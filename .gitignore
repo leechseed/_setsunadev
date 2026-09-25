@@ -49,3 +49,7 @@ _tools/dictation/faces/
 _tools/dictation/_reader/
 _tools/dictation/_last.wav
 _tools/dictation/_facepos.json
+
+# Stash queues and ledgers: filenames stay private (9/24)
+_tools/dictation/_stashplay_*
+_tools/dictation/_stashgrade_*
