@@ -11,7 +11,7 @@ Outputs: SITREP.html                        full document at the repo root, sibl
 
 The build is deterministic: the JSON is injected at /*__DATA__*/null and nothing else changes.
 """
-import io, json, os, re, sys, tempfile
+import glob, io, json, os, re, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -40,6 +40,14 @@ def main():
         for s in json.loads(load(bp))["slots"]:
             brevity["slots"].append({"id": s["id"], "thing": s["thing"], "since": s.get("since", ""), "front": s["bench"][:5],
                                      "sealed": s["sealed"][:3], "status": s.get("status", "open"), "ruling": s.get("ruling")})
+    # QUOTES (9/24, Chief): with no open slot, the panel carries a quote from the quote book, rotating by board.
+    qp = os.path.join(ROOT, "QUOTES.md")
+    if os.path.exists(qp):
+        rows = [[c.strip() for c in l.strip().strip("|").split("|")] for l in load(qp).splitlines()
+                if re.match(r"^\|\s*\d+\s*\|", l)]
+        if rows:
+            r = rows[len(glob.glob(os.path.join(HERE, "boards", "*.json"))) % len(rows)]
+            brevity["quote"] = {"n": r[0], "words": r[1], "source": r[2], "met": r[3], "for": r[4]}
     data = json.dumps({"board": board, "glossary": glossary, "brevity": brevity}, ensure_ascii=False)
     data = data.replace("</script", "<\\/script")
     tpl = load(os.path.join(HERE, "template.html"))

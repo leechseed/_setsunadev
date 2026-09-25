@@ -545,10 +545,11 @@ function renderBrevity() {
   const store = dbState === 'ok' ? 'store connected · picks write on submit' : dbState === 'connecting' ? 'reaching the store…' : 'no store from this view · picks stay in this browser as a draft';
   $('#panel').innerHTML = `<div class="frame brv"><div class="bh"><span class="eyebrow">Panel</span><span class="src">BREVITY · ${open.length} open · ${ruled.length} ruled</span></div>
     <h2 class="bt">BREVITY</h2><p class="plain">The proword selection loop, ruled 9/23. Each word the Command still needs shows five candidates. Click three in order, submit, and Claude's sealed ranking comes up beside yours. The back five of every bench are the reserve and never surface.</p>
+    ${!open.length && BRV.quote ? `<div class="slot"><div class="grp"><span class="lbl">From the quote book · No. ${esc(BRV.quote.n)}</span></div><p class="thing" style="font-size:1.25em;line-height:1.45">${md(BRV.quote.words)}</p><p class="plain">${md(BRV.quote.source)}</p><p class="plain"><b>Filed for:</b> ${md(BRV.quote.for)}</p></div>` : ''}
     <p class="store">${store}</p>${open.map(slotHTML).join('')}${ruled.length ? `<div class="grp" style="margin-top:26px"><span class="lbl">Ruled</span></div>` + ruled.map(slotHTML).join('') : ''}</div>`;
   $('#panel').scrollTop = 0;
   $('#ctx').innerHTML = `<h4>Where you are</h4><div class="ctx">
-    <div class="c"><span class="lbl">What we did last</span><p>The loop was named BREVITY and specced on 9/23: reveal on submit, the reserve hidden. This is its first build.</p></div>
+    <div class="c"><span class="lbl">What we did last</span><p>${open.length ? 'The loop was named BREVITY and specced on 9/23: reveal on submit, the reserve hidden.' : 'All eight slots were ruled 9/24 and reached the bench file. With nothing open, the panel carries a line from the quote book.'}</p></div>
     <div class="c"><span class="lbl">What the plan was</span><p>Prowords stop being ruled in chat one at a time; they go through this pass, and the picks reach the SOI without a hand edit.</p></div>
     <div class="c"><span class="lbl">What ${WHO} did</span><p>${Object.keys(picks).length} pick(s) in the store.</p></div>
     <div class="c"><span class="lbl">What's next</span><p>${open.length ? 'Rule a slot: three clicks and Submit.' : 'Every slot is ruled; new slots land with the next sit rep.'}</p></div></div>`;
