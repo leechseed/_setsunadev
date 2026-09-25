@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 57",
   "card": "none",
-  "version": "v0.6 · DOPE SHEET"
+  "version": "v0.7 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -327,6 +327,23 @@
        "s": "ruled"
       }
      ]
+    },
+    {
+     "label": "Guide · the money",
+     "items": [
+      {
+       "t": "**The $22 verdict (9/24):** month-one earnings probably won't cover Creator (the 9/23 boresight: library $10–50 over 90 days on target). Record now at $0, pay only on upload day, run 90 days, cut it if the voice hasn't earned back one month's $22 by day 90. First check the plan JUDY's account is on: if it's already Creator, the marginal cost is $0. Unverified: whether a shared clone survives a downgrade.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Earnings tiers per voice per month:** bottom half $0–5 · median ~$10–30 · mean ~$175 (ElevenLabs: $11M in 6 months ÷ 10,400+ creators) · top 10% ~$300–1,000 · top 1% ~$3,000–10,000+ (anchored by a $4k/month top earner in 3/2024). Only the mean is computed from ElevenLabs' numbers; the other tiers are estimates.",
+       "s": "ruled"
+      },
+      {
+       "t": "**Several voices, one at a time:** narrator → gremlin → sidekick → mentor → villain. Each new voice must serve a different buyer; add #2 after 30–60 days of narrator data. Each voice is its own 2–3 h of recording; PVC slot counts per plan are unverified.",
+       "s": "ruled"
+      }
+     ]
     }
    ]
   },
@@ -571,6 +588,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Ruled into the guide: no processing on clone audio (low cut only), the tube stays out, three numbers (-20 avg · -3 peak · -60 floor), rolling-record method, tablet at eye level. Offers open: \"go voiceprep\" (check + convert script), \"go prompter\" (tablet prompter page)."
+    },
+    {
+     "when": "9/24",
+     "who": "Chief",
+     "t": "\"is it worth the $22 … am I just going to be bleeding $22 a month?\" · \"low, medium, average, and the 1%?\" · \"is the whole idea to have multiple voices?\""
+    },
+    {
+     "when": "9/24",
+     "who": "Claude",
+     "t": "Ruled into the guide: record free, pay at upload, 90-day kill line; the earnings tiers; one great voice first, then distinct niches. The job hunt and Part 107 stay the real money this month."
     }
    ]
   }
