@@ -205,7 +205,7 @@ Practically, this entry is less a theory source than a register and protocol sou
 | Related entry | Relation |
 |---|---|
 | [[🧬 MSX.17 — Mating in Captivity — Perel (2006)]] | Contrast pair — Perel's long-term-couple desire paradox (distance sustains want) sits beside this pamphlet's casual-scene harm reduction (disclosure sustains safety); different relationship shapes, same insistence that structure, not suppression, is what makes desire survivable |
-| [[BVX.0713]] | Florêncio, "Bareback Porn, Porous Masculinities, Queer Futures: The Ethics of Becoming-Pig" (2020) — undistilled theoretical sibling; reads the same "pig" identity this pamphlet lives inside as a scholarly object, theory counterpart to this entry's field voice |
+| [[MSX.24]] | Florêncio, "Bareback Porn, Porous Masculinities, Queer Futures: The Ethics of Becoming-Pig" (2020) — distilled as MSX.24, the theoretical sibling; reads the same "pig" identity this pamphlet lives inside as a scholarly object, theory counterpart to this entry's field voice |
 
 ---
 
