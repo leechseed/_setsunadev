@@ -22,11 +22,11 @@ feeds:
   - layer: SETTING
     variable: S9_allure
     strength: primary
-    note: "Space expansionism described as a 'science-based and technology-dependent religion' — the Promethean cosmic-destiny narrative (ascent, apotheosis, species vocation) is the in-universe recruiting pitch for any expansionist faction: what it promises members is exactly what makes people want in."
+    note: "Space expansionism described as a 'science-based and technology-dependent religion': the Promethean cosmic-destiny narrative (ascent, apotheosis, species vocation) is the in-universe recruiting pitch for any expansionist faction. What it promises members is exactly what makes people want in."
   - layer: SETTING
     variable: S11_vector
     strength: primary
-    note: "Table 10.1's four-stage colonization ladder (Earth-dependent outposts to galactic diaspora) is a ready-made setting arc for scaling a space polity's political maturity, population, and danger level across a campaign's Movements — each stage is a state overlay, not a rewrite."
+    note: "Table 10.1's four-stage colonization ladder (Earth-dependent outposts to galactic diaspora) is a ready-made setting arc for scaling a space polity's political maturity, population, and danger level across a campaign's Movements. Each stage is a state overlay, not a rewrite."
   - layer: SETTING
     variable: S5_scar
     strength: supporting
@@ -34,7 +34,7 @@ feeds:
   - layer: L6
     variable: controlling_idea
     strength: contextual
-    note: "The title's own double meaning — 'the ends of humanity' as both destiny (telos) and termination (extinction) — is a ready controlling-idea spine for a space-set story's theme: does reaching for the stars fulfill the species or doom it. Institutional Prometheanism as hubris, not one character's flaw."
+    note: "The title's own double meaning, 'the ends of humanity' as both destiny (telos) and termination (extinction), is a ready controlling-idea spine for a space-set story's theme: does reaching for the stars fulfill the species or doom it. Institutional Prometheanism as hubris, not one character's flaw."
 zotero_key: ""
 pdf_pages: 425
 status: complete
@@ -45,7 +45,7 @@ date_created: 2026-09-29
 # BVX.1159 — Dark Skies: Space Expansionism, Planetary Geopolitics, and the Ends of Humanity — Daniel Deudney (2020)
 ### Knowledge Entry — Distill
 
-A political scientist's book-length argument that space expansion is not automatically progress: applying "full geopolitical theory" to the actual and proposed military and habitat space programs, Deudney concludes both tend toward war, garrison hierarchy, or despotic colonies — a systematic, citable machine for building a space setting's politics rather than decorating one.
+A political scientist's book-length argument that space expansion is not automatically progress. Applying "full geopolitical theory" to the actual and proposed military and habitat space programs, Deudney concludes both tend toward war, garrison hierarchy, or despotic colonies: a systematic, citable machine for building a space setting's politics rather than decorating one.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -72,7 +72,7 @@ Space expansionists treat technological ascent off Earth as destiny and salvatio
 *Required. Minimum two diagrams, maximum five.*
 
 **Diagram 1 — the whole argument.**
-Caption: *the book runs one argument four times — Earth's political debates, the space environment, the two live rival programs (military and habitat), and geopolitical theory's verdict on both.*
+Caption: *the book runs one argument four times: Earth's political debates, the space environment, the two live rival programs (military and habitat), and geopolitical theory's verdict on both.*
 
 ```mermaid
 mindmap
@@ -97,7 +97,7 @@ mindmap
 ```
 
 **Diagram 2 — the central mechanism.**
-Caption: *both roads up the gravity well feed the same variable, violence interdependence — past a threshold, anarchy stops being survivable, and hierarchy wins that opening far more often than restrained union does.*
+Caption: *both roads up the gravity well feed the same variable, violence interdependence. Past a threshold, anarchy stops being survivable, and hierarchy wins that opening far more often than restrained union does.*
 
 ```mermaid
 flowchart TD
@@ -133,7 +133,7 @@ quadrantChart
 ```
 
 **Diagram 4 — the setting arc.**
-Caption: *read as a campaign-arc ladder: each stage adds population and political reach while shrinking the mother world's relative power — the point past which "the colony rebels" stops being a plot choice and starts being physics.*
+Caption: *read as a campaign-arc ladder: each stage adds population and political reach while shrinking the mother world's relative power. Past a point, "the colony rebels" stops being a plot choice and starts being physics.*
 
 ```mermaid
 stateDiagram-v2

@@ -49,7 +49,7 @@ date_created: 2026-09-29
 # BVX.1162 — The Dynamics of Ancient Empires: State Power from Assyria to Byzantium — ed. Ian Morris & Walter Scheidel (2009)
 ### Knowledge Entry — Distill
 
-A Stanford-conference volume of comparative ancient history; its introduction (Goldstone & Haldon) supplies a working model of what an empire *is* and how it survives, then five case-study chapters (Neo-Assyrian, Achaemenid, Athenian, Roman, Byzantine) test that model against real states — a toolkit for building an empire in a setting, not just reading about five of them.
+A Stanford-conference volume of comparative ancient history. Its introduction (Goldstone & Haldon) supplies a working model of what an empire *is* and how it survives; five case-study chapters (Neo-Assyrian, Achaemenid, Athenian, Roman, Byzantine) then test that model against real states. A toolkit for building an empire in a setting, not just reading about five of them.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -136,7 +136,7 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Seven chapters, two registers. Chapter 1 (Goldstone & Haldon) is the theory: it asks what a state is, what makes an empire different from a state, and what keeps either one alive. Chapters 2–6 are five case studies, each written by a specialist in that empire, each implicitly testing the introduction's model against one historical run:
+Seven chapters, two registers. Chapter 1 (Goldstone & Haldon) is the theory: it asks what a state is, what makes an empire different from a state, and what keeps either one alive. Chapters 2 through 6 are five case studies, each written by a specialist in that empire, each implicitly testing the introduction's model against one historical run:
 
 | Chapter | Author | Empire | What it tests |
 |---|---|---|---|
@@ -148,7 +148,7 @@ Seven chapters, two registers. Chapter 1 (Goldstone & Haldon) is the theory: it 
 | 6 — The Byzantine Empire | Haldon | Byzantium | A mature, embedded imperial form under long-term fiscal and territorial strain |
 | 7 — Sex and Empire | Scheidel | (comparative) | Imperial power converted into reproductive privilege across many empires |
 
-The editors did not impose a template; each contributor emphasizes whatever the surviving evidence supports. The introduction, not the case studies, is where the comparative through-line lives — the five empires are proof-of-concept runs of one model, not five unrelated portraits.
+The editors did not impose a template; each contributor emphasizes whatever the surviving evidence supports. The introduction, not the case studies, is where the comparative through-line lives. The five empires are proof-of-concept runs of one model, not five unrelated portraits.
 
 ---
 
