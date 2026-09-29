@@ -212,21 +212,21 @@ Every chapter opens with **d20 Questions** (roll once per player, answer the mat
 
 1. Every subject the book builds decomposes into 3–5 fixed axes; more turns the exercise into a spreadsheet instead of a scene generator.
 2. A forced ranking without ties always produces a weakest axis, and that weakest axis is the conflict hook, never a flaw to patch out.
-3. History is produced as a chain of residue-leaving stages (build → collapse → decay; innovation → change → doomsday), never as a continuous authored chronicle.
+3. History is produced as a chain of residue-leaving stages (build, collapse, decay; innovation, change, doomsday), never as a continuous authored chronicle.
 4. A culture needs exactly two anchors to read as real: a reason people belong (a binding principle, or a stance toward power) and one object or practice they collectively love.
-5. Desirability — allure, a following, notoriety — is rankable using the identical axis-and-scale method as danger or cost; building both at once manufactures instant conflict.
+5. Desirability (allure, a following, notoriety) is rankable using the identical axis-and-scale method as danger or cost; building both at once manufactures instant conflict.
 6. Genre changes the vocabulary (gods, McGuffium, oppressors) but never the underlying decompose-rank-read mechanism.
 
 ---
 
 ## 7 · PITFALLS / MYTHS
 
-- Ranking everything a best-case 1 to avoid giving anything a weakness — this defeats the exercise's entire purpose.
+- Ranking everything a best-case 1 to avoid giving anything a weakness defeats the exercise's entire purpose.
 - Writing history as decorative backstory instead of running the stage-chain live and letting each roll constrain the next.
-- Building a pantheon or magic system as a static list with no cost, accessibility, or following math attached to it.
+- Building a pantheon or magic system as a static list with no cost, accessibility, or following math attached.
 - Treating punk or oppressed-culture design as a look (leather, slang, tattoos) instead of a stance toward an oppressor.
 - Skipping the binding-principle-plus-treasure pairing when inventing a faction, producing a "generic guild."
-- Extending a history chain past the point it still generates conflict — the same kitchen-sink failure Kobold names for breadth, here committed against time depth instead.
+- Extending a history chain past the point it still generates conflict: the same kitchen-sink failure Kobold names for breadth, here committed against time depth instead.
 
 ---
 
