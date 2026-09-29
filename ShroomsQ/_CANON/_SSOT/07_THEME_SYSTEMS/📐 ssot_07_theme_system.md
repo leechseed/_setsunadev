@@ -1,7 +1,7 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 0.1.0
+version: 0.2.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT first, EVIL CHECK second (80-D)]
 status: bootstrap — the controlling idea RULED 2026-09-29; the doc's shape (80-B) is walked piece by piece before it is built out
@@ -34,6 +34,19 @@ Kept by Chief 2026-09-29 as the biopower register. The controlling idea says **w
 | Outcome **Failure** / Judgment **Good** | the system still wins the board; she wins herself by refusing to be one of "everyone" |
 | IC: **Anna** (Steadfast) | Anna does her job perfectly and ascends: the sentence's proof, lived |
 
+## THE RAILS — four debates (80-B.1, RULED 2026-09-29)
+
+Theme runs as four debates at once, one per point of view, each the storyform's locked Issue vs. Counterpoint (`oxo-storyform.md`, engine transcription). **Every scene declares which debate it tests**; the plot card's value fields (P3 · P5 · P9) read from these rows. Plain words handpicked by Chief, 2026-09-29.
+
+| # | Point of view | Storyform pair | The debate, in plain words | Problem → Solution |
+|---|---|---|---|---|
+| 1 | **The world** (the factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity → Inequity |
+| 2 | **Tori** | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity → Inequity |
+| 3 | **Anna** | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection → Speculation |
+| 4 | **Tori ↔ Anna** | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity → Inequity |
+
+The four sum to the controlling idea: the world forecasts everyone doing their job (1); Tori stops trusting the story over her own eyes (2); Anna proves the forecast by winning the game as dealt (3); the rivalry settles whose account survives (4).
+
 ## PROVENANCE
 
 - The 9/24 research verdict holds: Foucault supplies the **mechanism** (power produces the person); the **moral** claim that ordinary people carry out evil belongs to Arendt (the banality of evil), Bauman, Milgram and Browning. The ruled sentence is that moral claim, and the mechanism line is Foucault's. `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
@@ -41,10 +54,11 @@ Kept by Chief 2026-09-29 as the biopower register. The controlling idea says **w
 
 ## OPEN (walked piece by piece, per Chief 9/24)
 
-- **80-B · the shape:** Dramatica's argument as the rails · McKee's controlling idea as the one sentence (now filled) · Coyne's value scale as the per-scene gauge · motifs fed to texture. Walk next, starting with the rails.
+- **80-B · the shape:** the rails (RULED, above) · McKee's controlling idea as the one sentence (now filled) · Coyne's value scale as the per-scene gauge · motifs fed to texture. Walk next: Coyne's value scale.
 - **80-C · theme vs. the Touchstones (BOLO 81):** rec, two docs joined by a handshake table (`cost_and_meaning` sits in both).
 - **80-E · which books:** rec, held books only (Egri, McKee, Coyne, Truby, Dramatica); no Weiland.
 
 ## Version history
 
 - **0.1.0 · 2026-09-29** — bootstrap: the controlling idea and the mechanism line, ruled; the storyform map; the open calls.
+- **0.2.0 · 2026-09-29** — the rails: four debates ruled (80-B.1), plain words handpicked (1B · 2B · 3B · 4A).
