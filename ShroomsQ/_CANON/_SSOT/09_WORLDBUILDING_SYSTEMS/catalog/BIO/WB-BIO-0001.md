@@ -24,3 +24,4 @@ Part plant, part virus, part animal: a techno-organic growth that spreads over g
 **Scale:** world-economy ⧗, since it began at the pole and holds a whole region.
 Not the 2024 City Kudzu (Leonola lineage, kept separate).
 - Sources: [IDEAS - POSSIBLE SETUP](<../../../../../../OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/ASTROSE7X/IDEAS - POSSIBLE SETUP.md>) · the 2026 Apple Notes digest (private) · [delta-coast-ultra-school.md](../../../../../../_CANON_NODES/delta-coast-ultra-school.md)
+- **The paired impact (RULED 9/29, "all rec"):** the "ocean 3rd impact" in the 2026 notes is a second impact, the Atlantic nexus (`backstory_ocean_third_impact`), paired with the south-pole one. What it wakes is not yet in the notes ⧗.
