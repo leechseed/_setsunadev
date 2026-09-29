@@ -97,7 +97,7 @@ mindmap
 ```
 
 **Diagram 2 — the central mechanism (a dose-response gradient).**
-Caption: *the finding is not "sex tourism is risky," it is a staircase — each tier of the same behavior carries a bigger adjusted risk ratio (aRR), and HIV only becomes significant at the top step.*
+Caption: *the finding is not "sex tourism is risky," it is a staircase: each tier of the same behavior carries a bigger adjusted risk ratio (aRR), and HIV only becomes significant at the top step.*
 
 ```mermaid
 flowchart TD
