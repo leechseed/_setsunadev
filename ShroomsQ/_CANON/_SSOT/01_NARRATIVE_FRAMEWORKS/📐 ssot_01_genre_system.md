@@ -1,10 +1,10 @@
 ---
 type: ssot_01_genre_system
 category: genre_system
-version: 0.1.2
-last_updated: 2026-09-16
+version: 0.1.3
+last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
-status: "v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Chief: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Chief: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names are house coinage awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
+status: "v0.1.3 2026-09-29: BOLO 77 (77-Z/77-AC), Chief: '1.0' — cultcore RULED as OXO's series genre (BOLO 91: 'cultcore — the genre of the outsiders'), slotted into THE INSTANCE's G1 LABEL; G3 CONTRACT gains 3-5 cultcore conventions, each marked ⧗ pending Chief. v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Chief: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Chief: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names are house coinage awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
 rung: standard
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_medium_grammars", "ssot_01_texture_system", "ssot_03_setting_system", "ssot_04_plot_system", "ssot_02_character_systems_vertical_slice"]
 trunk: BLACK
@@ -182,11 +182,11 @@ Selbo's overriding genre must clear its own criteria in full; a supporting genre
 
 ## THE INSTANCE · OXO, a proposed genre contract (bench, not a ruling)
 
-| Layer | OXO (proposed ⧗) |
+| Layer | OXO (proposed ⧗, G1 RULED) |
 |---|---|
-| **G1** | A prestige-school drama, a YA-adjacent institutional dystopia by industry label, versus coming-of-age by critical label ⧗ |
+| **G1** | **Cultcore** — RULED 2026-09-29 (BOLO 91, Chief's Apple Notes 2026: "cultcore — the genre of the outsiders"), OXO's own series genre and critical label; industry/marketing label still reads as a prestige-school drama, a YA-adjacent institutional dystopia ⧗ |
 | **G2** | Truby's Coming-of-Age primary, individual-focus family; polar opposite the Gangster/Crime society-focus family ⧗ |
-| **G3** | The weakness-need/self-revelation frame, system-as-opponent, an apparent-choice-versus-restriction world build (Truby), Coyne's obligatory scenes for the internal Worldview genre and the external Society genre, if the clover fits ⧗ |
+| **G3** | The weakness-need/self-revelation frame, system-as-opponent, an apparent-choice-versus-restriction world build (Truby), Coyne's obligatory scenes for the internal Worldview genre and the external Society genre, if the clover fits ⧗. **Cultcore's own conventions** (basic elements, drawn from existing canon, each ⧗ proposed pending Chief): <br>1. ⧗ outsiders set against an institution that shapes identity, not merely one that opposes or restrains them — the group defines who the newcomer becomes, not only what she may do. <br>2. ⧗ the cult-as-container — the institution's power holds inside a bounded space (a school, a rite, a program) and fades or turns dangerous once that container breaks or is left, per [Touchstone TS 1:1, "the bounded container"](📐%20ssot_01_touchstones_register.md) (soft strength, ruled BOLO 91). <br>3. ⧗ the newcomer-vs-group induction beat — Snyder's Institutionalized obligatory scene ([[BVX.0163]]) discharged at the scene level, per plot_systems' P10 ruling (ssot_04_plot_system.md, call 77-Z). <br>4. ⧗ visibility as the institution's currency — being seen and ranked by the group is both the reward sought and the danger incurred (echoes G4 below, "visibility invites ownership"). <br>5. ⧗ belonging and selfhood trend in opposite directions across the arc — the closer the newcomer is drawn into the group, the more of her own prior self she is asked to give up. |
 | **G4** | Merit does not earn freedom; visibility invites ownership, read off the DCUS S9 ALLURE entry and Tori's Growth: Stop arc ⧗ |
 | **G5** | The generalized fantastic, the abnormal given as norm from page one, an adaptation-curve payoff rather than an unmasking scene (Todorov) ⧗ |
 | **G6** | Immersive: natives, not visitors; Sync is used, never explained (Mendlesohn) ⧗ |
@@ -197,7 +197,7 @@ Selbo's overriding genre must clear its own criteria in full; a supporting genre
 | **G11** | Mid-budget serial, YA-adjacent shelf; marked unknown where the distills say nothing ⧗ |
 | **G12** | `storyform_id: oxo_primary_v1`; appreciations arena, style, and feel carried from the spine ⧗ |
 
-This table is a decision menu with defaults, not a ruling: every line above is marked ⧗, grounded only in what the six new distills' inferences and the DCUS setting instance already say, and nothing here is canon until Chief strikes or keeps it, line by line.
+This table is a decision menu with defaults, not a ruling, **except G1**: cultcore is RULED 2026-09-29 (BOLO 91) as OXO's series genre, the one line struck from the bench. Every other line, and every ⧗ convention listed under G1/G3, is grounded only in what the six new distills' inferences, the DCUS setting instance, and the touchstones register already say, and stays a proposal until Chief strikes or keeps it, line by line.
 
 ---
 
@@ -249,6 +249,7 @@ Built from the six wave distills' "For the genre system" bullets. **RULED 2026-0
 
 ## Version history
 
+- **0.1.3, 2026-09-29.** BOLO 77 (call 77-Z, folded per 77-AC): cultcore RULED as OXO's series genre (BOLO 91, Chief's Apple Notes 2026: "cultcore — the genre of the outsiders"), struck into THE INSTANCE's G1 LABEL, the one line off the bench; G3 CONTRACT gains a 5-item cultcore conventions list (outsiders vs. an identity-shaping institution, the cult-as-container per Touchstone TS 1:1, Institutionalized's newcomer-vs-group beat, visibility as currency, belonging vs. selfhood), each marked ⧗ pending Chief. No layer or instrument change.
 - **0.1.2, 2026-09-16.** The drop-folder intake folded in (Brody, Aristotle): two new GENRE × LIBRARY rows; sources gained BVX.1125, BVX.1126; two OPEN calls added (14-15), unruled. Slice unchanged.
 - **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("genre calls go"): twelve layers hold; Truby's fourteen as the register's spine with three alias vocabularies; the four contract clauses as required card fields; the balance adopted, the load metric held; mode to the medium grammars doc; the contract state track at the next bump; Neale's keying rule adopted; the dystopia mechanism passed to the setting doc; the OXO contract stays a bench. No slice or instrument change tonight.
 - **0.1.0, 2026-09-16.** First genre_system document, written on Chief's order ("genre wave go", BOLO 18) from the L7 shelf's nine distills: the four words and four vocabularies taxonomy, twelve-layer GENRE SLICE mirroring the character, setting, plot, and texture stacks, the GENRE CARD and GENRE CONTRACT instruments, OXO benched as a proposed genre contract, not a ruling. Layer names, count, and every OXO value provisional pending Chief's ruling.
