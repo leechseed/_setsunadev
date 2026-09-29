@@ -1,7 +1,7 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 0.4.0
+version: 0.5.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT first, EVIL CHECK second (80-D)]
 status: shape ruled 2026-09-29 — controlling idea, rails, value scale and motifs all ruled; 80-C and 80-E recs open
@@ -60,13 +60,13 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 
 ## THE MOTIFS — three images (80-B.3, RULED 2026-09-29)
 
-Recurring images that carry the theme without anyone saying it (Tomashevsky, Greimas isotopy); fed to the texture system. Each appearance moves the Freedom scale. Chosen by Chief 2026-09-29 (G · F · E); the Feed, the Sync score and the clothing glow stay as setting, not motif.
+Recurring images that carry the theme without anyone saying it (Tomashevsky, Greimas isotopy); fed to the texture system. Each appearance moves the Freedom scale. Chosen by Chief 2026-09-29 (G · F · E), then amended the same night: the Feed replaces the legibility violation (G · F · A). The Sync score and the clothing glow stay as setting, not motif; the legibility violation stays a setting mechanic.
 
 | Motif | What it carries | Rail / step |
 |---|---|---|
 | **The uniform and the mirror** | Seeing yourself as they made you: the mechanism line made visible | the mechanism line · −−− *The cage feels like home* |
 | **A door she could walk out of** | Freedom always in reach and never taken, until the Stop | Tori's Growth (Stop) · + *Your life is yours* |
-| **The legibility violation** (saying an old name out loud) | Speaking the truth as a small crime: her eyes against the story | debate 2 (*Believe the story, or believe your eyes?*) · debate 4 (memory) |
+| **The Feed** | The system watching and scoring you, always on: the norm made visible | debate 1 (*They already know how you'll turn out*) · −− *You're managed, not free* |
 
 ## PROVENANCE
 
@@ -85,3 +85,4 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 - **0.2.0 · 2026-09-29** — the rails: four debates ruled (80-B.1), plain words handpicked (1B · 2B · 3B · 4A).
 - **0.3.0 · 2026-09-29** — the value scale: FREEDOM ruled (80-B.2), plain words handpicked (B · A · B · B).
 - **0.4.0 · 2026-09-29** — the motifs ruled (80-B.3: the uniform and the mirror · a door she could walk out of · the legibility violation); 80-B fully walked.
+- **0.5.0 · 2026-09-29** — motif amended: the Feed replaces the legibility violation (G · F · A).
