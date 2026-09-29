@@ -125,11 +125,11 @@ Thirteen lectures, no single spine: each is a self-contained talk, but three car
 | III. The Importance of Rites | What does ritual actually do to an "open," under-instinctive nervous system? |
 | IV–VIII (East/West, art, Zen, love) | How do differing mythic postures toward nature and self produce differing civilizations? (sampled, not load-bearing here) |
 | IX. Mythologies of War and Peace | Why does a culture's subsistence mode predict the shape of its founding/war myth? |
-| X. Schizophrenia — the Inward Journey | What are the four functions a living mythology must perform? |
-| XI. The Moon Walk — the Outward Journey | What happens to a myth's horizon when the group sees its own world from outside it? (sampled) |
+| X. Schizophrenia, the Inward Journey | What are the four functions a living mythology must perform? |
+| XI. The Moon Walk, the Outward Journey | What happens to a myth's horizon when the group sees its own world from outside it? (sampled) |
 | XII. Envoy: No More Horizons | What replaces a parochial, in-group myth once the horizons that justified it collapse? |
 
-The three load-bearing chapters (II, III, X) build the mechanism; IX and XII apply it at the scale of the faction and the species. The rest (IV–VIII, XI) are regional case studies in mythic posture — useful color, not required to run the mechanism.
+The three load-bearing chapters (II, III, X) build the mechanism; IX and XII apply it at the scale of the faction and the species. The rest (IV-VIII, XI) are regional case studies in mythic posture: useful color, not required to run the mechanism.
 
 ---
 
@@ -138,11 +138,11 @@ The three load-bearing chapters (II, III, X) build the mechanism; IX and XII app
 | Concept | What it is | Why it matters |
 |---|---|---|
 | **Four functions of a living mythology** | Mystical (awe at cosmic mystery), Cosmological (an image of the universe matching current knowledge), Sociological (validates the moral order of a specific society), Pedagogical (guides a person stage by stage through life) | A myth that isn't working is failing at one of four *nameable* jobs, not "mythology in general" |
-| **Myth/rite pairing** | "Myths are the mental supports of rites; rites, the physical enactments of myths." | Ritual isn't separate from belief — a culture's ceremonies *are* its myths made physical and repeatable |
-| **The premature-birth argument** | Human infants are born roughly ten to twelve years before they are behaviorally ready; unlike animals with fixed "innate releasing mechanisms," our nervous system is "open" — myth and rite supply the imprinting that instinct doesn't | Myth is structural, not optional decoration: a culture without a working myth layer is a culture failing to finish raising its own members |
+| **Myth/rite pairing** | "Myths are the mental supports of rites; rites, the physical enactments of myths." | Ritual isn't separate from belief: a culture's ceremonies *are* its myths made physical and repeatable |
+| **The premature-birth argument** | Human infants are born roughly ten to twelve years before they are behaviorally ready; unlike animals with fixed "innate releasing mechanisms," our nervous system is "open," so myth and rite supply the imprinting that instinct doesn't | Myth is structural, not optional decoration: a culture without a working myth layer is a culture failing to finish raising its own members |
 | **Puberty / threshold rites** | Rites that switch a member's response system from dependency to responsibility at a life-stage boundary | The template for any coming-of-age, promotion, or initiation system: the rite must change what the member owes and is owed, not just mark a date |
-| **The field of action** | The environment — physical, social, cosmological — a culture's mythology has to actually address, and which keeps moving (new science, new geography, new contact) | A myth stops working the moment its field of action moves and the myth doesn't follow; this is the specific design failure, not vague "myths get old" |
-| **Waste Land / schizophrenic break** | The named symptom of a person whose myth doesn't talk to the world they actually live in: "the world does not talk to him; he does not talk to the world" | The diagnostic line for "this character or culture has no working myth layer" — not absence of belief, but a myth misfitted to the actual field of action |
+| **The field of action** | The environment (physical, social, cosmological) a culture's mythology has to actually address, and which keeps moving: new science, new geography, new contact | A myth stops working the moment its field of action moves and the myth doesn't follow; this is the specific design failure, not vague "myths get old" |
+| **Waste Land / schizophrenic break** | The named symptom of a person whose myth doesn't talk to the world they actually live in: "the world does not talk to him; he does not talk to the world" | The diagnostic line for "this character or culture has no working myth layer," not absence of belief, but a myth misfitted to the actual field of action |
 | **Static vs. innovating social ideal** | A culture's myth can be built to reproduce a fixed ancestral pattern, or to license each member as "an initiating yet cooperating center" moving the group forward | A direct dial for differentiating built cultures: conservative/legalist myth versus frontier/innovating myth, independent of tech level |
 | **Economic base → war-myth grammar** | Hunting peoples: rebirth-of-the-slain-animal myths, war as bravura. Tropical/horticultural peoples: death-feeds-life myths, headhunt logic. Walled agricultural towns: raided-by-nomads epics (the *Iliad*, the Old Testament) | A faction's subsistence mode predicts the shape of its founding/war myth before a single proper noun is invented |
 | **Enemy as monster** | "It is a basic idea of practically every war mythology that the enemy is a monster and that in killing him one is protecting the only truly valuable order of human life on earth" | The mechanism by which a faction's founding myth manufactures a justified out-group — useful and dangerous in equal measure when writing SF factions |
