@@ -180,7 +180,7 @@ The free edition's GM-facing content sits in four chapters, one of them a worked
 | Creating Adventures | Session | Sandbox vs. story arc; the four challenge types (combat, exploration, investigation, social); the nine-step exploration-site method; hex points of interest; just-in-time prep |
 | Factions and Major Projects | Between-session | Faction attributes (Cunning, Force, Wealth, Magic) and Assets; the faction-turn sequence and its six actions; Background Actors; Major Projects and Renown for PC-scale ambitions |
 
-The chapter order mirrors the play order: build the backdrop before the first session, build individual adventures one at a time as the players choose, and run the faction turn in the gaps between sessions to keep everything else moving without further GM invention.
+The chapter order mirrors the play order: backdrop before the first session, one adventure at a time as players choose, faction turn in the gaps to keep everything else moving.
 
 ---
 
