@@ -14,31 +14,31 @@ feeds:
   - layer: SETTING
     variable: S4_law
     strength: primary
-    note: "Goldstone & Haldon's introduction defines the state as a coercion-wielding organization (Tilly) whose authority must be recognized as legitimate; the book's whole model of governance is coercion plus rule-making plus consent, not force alone — this is S4's engine, not decoration on it."
+    note: "Goldstone & Haldon's introduction defines the state as a coercion-wielding organization (Tilly) whose authority must be recognized as legitimate. The book's whole model of governance is coercion plus rule-making plus consent, not force alone: this is S4's engine, not decoration on it."
   - layer: SETTING
     variable: S6_economy
     strength: primary
-    note: "Tribute, taxation, and capital investment (Assyrian vassalage-tribute, Achaemenid satrapal revenue, Rome's fiscal system and wheat dole) are the book's second load-bearing axis; the introduction treats resource extraction and redistribution as a mechanism co-equal with coercion, not a follow-on detail."
+    note: "Tribute, taxation, and capital investment (Assyrian vassalage-tribute, Achaemenid satrapal revenue, Rome's fiscal system and wheat dole) are the book's second load-bearing axis. The introduction treats resource extraction and redistribution as a mechanism co-equal with coercion, not a follow-on detail."
   - layer: SETTING
     variable: S7_founding
     strength: supporting
-    note: "The intro's distinction between conquest-founded and inheritance/alliance-founded states, and its point that 'mature' vs 'young' states face structurally different problems, gives S7 a two-value founding-type field worth keeping: conquest-parasitic vs embedded-by-generations."
+    note: "The intro's distinction between conquest-founded and inheritance/alliance-founded states, plus its point that mature and young states face structurally different problems, gives S7 a two-value founding-type field worth keeping: conquest-parasitic vs embedded-by-generations."
   - layer: SETTING
     variable: S8_habit
     strength: primary
-    note: "The three-strategy comparative through-line — Assyria's tribute-or-destroy binary, Persia's satrap co-optation of local elites, Rome's full ideological/institutional assimilation — is a direct, ready-made menu for how an empire's belonging architecture treats a newly conquered population."
+    note: "The three-strategy comparative through-line (Assyria's tribute-or-destroy binary, Persia's satrap co-optation of local elites, Rome's full ideological/institutional assimilation) is a direct, ready-made menu for how an empire's belonging architecture treats a newly conquered population."
   - layer: SETTING
     variable: S9_allure
     strength: supporting
-    note: "Ritual-polity legitimation (rulers investing resources in cult incorporation, Rome's bread-and-circuses) is the book's account of what makes imperial rule wanted rather than merely tolerated — the allure side of the coercion/legitimacy pair."
+    note: "Ritual-polity legitimation (rulers investing resources in cult incorporation, Rome's bread-and-circuses) is the book's account of what makes imperial rule wanted rather than merely tolerated: the allure side of the coercion/legitimacy pair."
   - layer: SETTING
     variable: S11_vector
     strength: primary
-    note: "The dynamic-equilibrium model of imperial rise and fall — stability as an ongoing balance, not a fixed structure, replaced by a new 'imperial form' fitted to a new niche when the old one breaks — is a directly portable engine for a setting's state-track arc."
+    note: "The dynamic-equilibrium model of imperial rise and fall (stability as an ongoing balance, not a fixed structure, replaced by a new imperial form fitted to a new niche when the old one breaks) is a directly portable engine for a setting's state-track arc."
   - layer: L7
     variable: genre_setting_contract
     strength: contextual
-    note: "Morris's two-dimensional state-ness/empire-ness-by-power space (after Tilly) is a genre-neutral measuring tool: it lets a writer decide, before drafting, whether a given polity in the setting is a state, a proto-state, or a true empire, independent of its map size."
+    note: "Morris's two-dimensional state-ness/empire-ness-by-power space (after Tilly) is a genre-neutral measuring tool. It lets a writer decide, before drafting, whether a given polity in the setting is a state, a proto-state, or a true empire, independent of its map size."
 zotero_key: ""
 pdf_pages: 384
 status: complete
@@ -234,13 +234,13 @@ This book earns its place on the setting shelf because it is not a worldbuilding
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text, pdftotext extraction (~155,000 words across 384pp). Read in full: front matter (preface, contents, contributor bios) and Chapter 1, "Ancient States, Empires, and Exploitation: Problems and Perspectives" (Goldstone & Haldon, pp. 3–29 including endnotes) — the introduction the brief names as the primary target, and the source of the coercion/capital/legitimacy/tribute model, the three-strategy comparative through-line (Assyria/Persia/Rome), the dynamic-equilibrium model, and the macro/meso/micro framework.
+Full text, pdftotext extraction (roughly 155,000 words across 384pp). Read in full: front matter (preface, contents, contributor bios) and Chapter 1, "Ancient States, Empires, and Exploitation" (Goldstone & Haldon, pp. 3-29 with endnotes), the introduction the brief names as the primary target and the source of the coercion/capital/legitimacy/tribute model, the three-strategy comparative through-line, the equilibrium model, and the macro/meso/micro framework.
 
-Sampled at depth: Chapter 4, "The Greater Athenian State" (Morris) — section 5, "Key Concepts" (Arché/empire/foreignness/state, the Doyle/Mann/Tilly definitions, the state-ness-versus-empire-ness-by-power model), read in full; the chapter's narrative sections (evidence, basic narrative, secondary state formation) were not read. Chapter 5, "The Political Economy of the Roman Empire" (Hopkins) — section 6, "Configurations of Power" (emperors and aristocrats, the city of Rome and the wheat dole, the army's depoliticization), read in full; the fiscal-system and economic-growth sections were sampled only at their openings.
+Sampled at depth: Chapter 4, "The Greater Athenian State" (Morris), section 5 "Key Concepts" (the Doyle/Mann/Tilly definitions, the state-ness/empire-ness-by-power model), read in full; the chapter's narrative sections were not read. Chapter 5, "The Political Economy of the Roman Empire" (Hopkins), section 6 "Configurations of Power" (emperors and aristocrats, the wheat dole, army depoliticization), read in full; its fiscal-system and economic-growth sections were sampled only at their openings.
 
-Sampled at headers/table-of-contents level only, not deep-extracted: Chapter 2 (Neo-Assyrian Empire, Bedford), Chapter 3 (Achaemenid Empire, Wiesehöfer), and Chapter 6 (Byzantine Empire, Haldon) — their section structure was reviewed to confirm each case study parallels the introduction's model, but their case-specific detail is not represented in this distill. Chapter 7, "Sex and Empire" (Scheidel), was sampled in its opening argument and its "Despotic Empires" and "Mediterranean Empires" sections; it is comparative but addresses reproductive privilege rather than the coercion/capital/legitimacy/tribute model this distill is scoped to, and its content is not drawn on above.
+Sampled at header level only, not deep-extracted: Chapter 2 (Neo-Assyrian, Bedford), Chapter 3 (Achaemenid, Wiesehöfer), and Chapter 6 (Byzantine, Haldon). Their structure was reviewed to confirm each case study parallels the introduction's model, but case-specific detail is not represented here. Chapter 7, "Sex and Empire" (Scheidel), was sampled in its opening and its despotism sections; it addresses reproductive privilege rather than this distill's scoped model, and its content is not drawn on above.
 
-The S-layer keying in frontmatter `feeds:` is this distill's synthesis against `ssot_03_setting_system.md` (the twelve-layer SETTING SLICE); no `zotero_key` was available for this new-catalog entry, and `bvx_provisional: true` is set per the tasking brief pending catalog confirmation.
+The S-layer keying in frontmatter `feeds:` is this distill's synthesis against `ssot_03_setting_system.md`. No `zotero_key` was available for this new-catalog entry, and `bvx_provisional: true` is set per the tasking brief pending catalog confirmation.
 
 ## META
 - Template: BVX-LEARN-v4.0

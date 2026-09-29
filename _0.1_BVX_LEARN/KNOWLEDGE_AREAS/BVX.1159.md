@@ -226,12 +226,12 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 
 ## 8 · APPLICATION
 
-- **Spine level:** SETTING, primary; L6 (Theme) secondary — a setting-side source whose central claim ("success breeds domination, not freedom") is also a ready-made controlling idea for a space-set story's theme.
+- **Spine level:** SETTING, primary; L6 (Theme) secondary, a setting-side source whose central claim ("success breeds domination, not freedom") is also a ready-made controlling idea for a space-set story's theme.
 - **12-layer character stack:** none directly load-bearing, though Table 2.1's five-position technopolitical spectrum (Promethean, Techno-Optimist, Soterian, Friend of the Earth, Luddite) is a fast way to season an individual character's or faction's stated worldview without inventing one from nothing.
-- **plot_systems:** strong contextual candidate once `04_PLOT_SYSTEMS/` opens — the axial-region-capture mechanic (Diagram 2) and the four-stage colonization ladder (Diagram 4) are both ready scene- and arc-generators: "who controls the chokepoint" and "which stage is this Movement" are reusable structural questions.
-- **Setting:** primary — this is a SETTING-shelf source keyed to S4 LAW, S5 SCAR, S6 ECONOMY, S9 ALLURE, and S11 VECTOR (see `feeds:` above), the first distilled source in the library to carry a systematic *method* for deriving a space-faction's politics from its material situation rather than asserting a government type by narrative fiat.
+- **plot_systems:** strong contextual candidate once `04_PLOT_SYSTEMS/` opens. The axial-region-capture mechanic (Diagram 2) and the four-stage colonization ladder (Diagram 4) are both ready scene- and arc-generators: "who controls the chokepoint" and "which stage is this Movement" are reusable structural questions.
+- **Setting:** primary, keyed to S4 LAW, S5 SCAR, S6 ECONOMY, S9 ALLURE, and S11 VECTOR (see `feeds:` above); the first distilled source in the library to carry a systematic *method* for deriving a space-faction's politics from its material situation rather than asserting a government type by narrative fiat.
 
-Read against the SETTING SLICE (`ssot_03_setting_system.md`), this book's real export is Diagram 2's mechanism: violence interdependence, not narrative convenience, should decide whether a space setting's polities land in anarchy, hierarchy, or the rare negarchic union. Every other tool in the book — the two expansion ladders, the colony-government typology, the colonization-stage arc, the catastrophic-threat taxonomy — is that same mechanism applied to a specific setting layer. Where the Kobold Guide ([[BVX.0458]]) supplies the terrain-first method for building a world's geography and culture, Dark Skies supplies the equivalent method for a *space* setting's politics specifically: it is the TTRPG designer's missing chapter on "how do I know what government my orbital colony has," answered with a checklist instead of a guess.
+This book's real export is Diagram 2's mechanism: violence interdependence, not narrative convenience, should decide whether a space setting's polities land in anarchy, hierarchy, or the rare negarchic union. Every other tool here, the two expansion ladders, the colony-government typology, the colonization-stage arc, the catastrophic-threat taxonomy, is that same mechanism applied to one setting layer. Where the Kobold Guide ([[BVX.0458]]) supplies the terrain-first method for a world's geography and culture, Dark Skies supplies the matching method for a *space* setting's politics: the missing chapter on "how do I know what government my orbital colony has," answered with a checklist instead of a guess.
 
 ---
 
@@ -239,11 +239,11 @@ Read against the SETTING SLICE (`ssot_03_setting_system.md`), this book's real e
 
 | Related entry | Relation |
 |---|---|
-| [[BVX.0458]] | Kobold Guide to Worldbuilding — the master SETTING-shelf toolkit this entry plugs into; Kobold gives terrain-first method generally, Dark Skies gives the political-order method for space settings specifically |
-| [[BVX.1122]] | GURPS Hot Spots: Renaissance Venice — direct textual convergence: Deudney names Venice as the strongest historical analog for a free "city-ship" colony, against the default expectation of shipboard hierarchy |
-| [[BVX.1141]] | Stars Without Number — sci-fi TTRPG core rulebook; this entry's colony-government typology and dual-use tech ladders are a ready political layer to run underneath that system's sector generation |
-| [[BVX.1142]] | Cities Without Number — sibling sci-fi TTRPG core rulebook; the ships-vs-cities distinction and garrison-state trajectory apply directly to its urban/cyberpunk settings once they go orbital |
-| [[BVX.0349]] | Against Worldbuilding, and Other Provocations — counter-argument sibling; Dark Skies independently arrives at the same warning (systems built for their own sake, divorced from pressure, mislead) but from political science rather than craft criticism |
+| [[BVX.0458]] | Kobold Guide to Worldbuilding: the master SETTING-shelf toolkit this entry plugs into; Kobold gives terrain-first method generally, Dark Skies gives the political-order method for space settings specifically |
+| [[BVX.1122]] | GURPS Hot Spots: Renaissance Venice: direct textual convergence. Deudney names Venice as the strongest historical analog for a free "city-ship" colony, against the default expectation of shipboard hierarchy |
+| [[BVX.1141]] | Stars Without Number: sci-fi TTRPG core rulebook; this entry's colony-government typology and dual-use tech ladders are a ready political layer to run underneath that system's sector generation |
+| [[BVX.1142]] | Cities Without Number: sibling sci-fi TTRPG core rulebook; the ships-vs-cities distinction and garrison-state trajectory apply directly to its urban settings once they go orbital |
+| [[BVX.0349]] | Against Worldbuilding, and Other Provocations: counter-argument sibling. Dark Skies independently arrives at the same warning (systems built for their own sake, divorced from pressure, mislead) but from political science, not craft criticism |
 
 ---
 
