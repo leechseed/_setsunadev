@@ -895,6 +895,7 @@ function applyLayout(){
     b.classList.toggle('on', !!on);
   });
   if (state.lens === 'fabula') requestAnimationFrame(renderFabula);
+  if (state.lens === 'told') requestAnimationFrame(toldRender);
 }
 function setPanel(name, val){ state.panels[name] = val; applyLayout(); }
 function togglePanel(name){ state.panels[name] = !state.panels[name]; applyLayout(); }
@@ -947,6 +948,7 @@ function setLens(lens){
   state.panels.det = preset.det;
   applyLayout();
   renderOutliner();
+  renderDetail();  // told's inspector is playhead-driven, not selection-gated — refresh on every lens switch
 }
 $('#lensNav').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLens(b.dataset.lens); });
 $('#tabbar').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLens(b.dataset.lens); });
@@ -1103,22 +1105,518 @@ function setZoom(z){
 }
 $('#zoomCtl').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setZoom(b.dataset.z); });
 
-// ---- told lens ----
-function renderTold(){
-  const wrap = $('#toldTracks');
-  const scene = DATA.told.scene;
-  let html = '';
-  html += '<div class="track-row"><div class="tlbl">Told order</div><div class="track-line">';
-  html += `<button class="scene-card t" data-tt="told" data-id="${scene.id}" data-sel-type="told" data-sel-id="${scene.id}"><b>${esc(scene.address)}</b>${esc(scene.signpost)}</button>`;
-  html += '</div><div class="jump-note">order told = order happened here — no reordering on record; every other told-order slot has no scene carded yet.</div></div>';
-  html += '<div class="track-row"><div class="tlbl">World time</div><div class="track-line">';
-  const worldEv = eventsById[scene.fabula_event];
-  if (worldEv){
-    html += `<button class="scene-card t" data-tt="event" data-id="${worldEv.event_id}" data-sel-type="event" data-sel-id="${worldEv.event_id}" style="border-color:var(--good);background:var(--good-soft)"><b>${esc(worldEv.time.movement)}</b>${esc(worldEv.event_id)}</button>`;
+// ==================================================================
+// ---- told lens: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ----
+// data-driven entirely from DATA.tracking (ShroomsQ/_CANON/_TRACKING/oxo.yaml,
+// loaded + validated by tracking.py). A lane with no data draws nothing —
+// never a fake line (ruling 3). Read-only: the tool only reads the file.
+// ==================================================================
+const TS = DATA.tracking;
+const AR_NS = 'http://www.w3.org/2000/svg';
+const AR_RULE_H = 30, AR_BAND_H = 22;
+
+// told-order scenes: accumulate beat positions from each scene's own bars × meter
+const AR_SCENES = TS.scenes.map(sc => ({ ...sc }));
+(function(){ let acc = 0; for (const sc of AR_SCENES) { sc.start = acc; sc.len = sc.num * sc.bars; acc += sc.len; } })();
+const AR_TOTAL = Math.max(1, AR_SCENES.reduce((m, sc) => Math.max(m, sc.start + sc.len), 0));
+const AR_SCENE_BY_KEY = {}; AR_SCENES.forEach(sc => AR_SCENE_BY_KEY[sc.mv + '|' + sc.q + '|' + sc.s] = sc);
+const AR_MOVS = TS.movements.map(m => ({ id: m.id, lbl: m.label }));
+const AR_SEQS = TS.sequences.map(s => ({ id: s.id, lbl: s.label }));
+
+function arPos(code){
+  const m = (code || '').match(/(M\d+)\s*·\s*(Q\d+)\s*·\s*(S\d+)\s*\|\s*(\d+)\.(\d+)(?:\.(\d+))?/);
+  if (!m) return 0;
+  const sc = AR_SCENE_BY_KEY[m[1] + '|' + m[2] + '|' + m[3]]; if (!sc) return 0;
+  const tick = m[6] ? (+m[6] - 1) * 0.22 : 0;
+  return sc.start + (+m[4] - 1) * sc.num + (+m[5] - 1) + Math.min(tick, 0.9);
+}
+function arCodeAt(p){
+  if (!AR_SCENES.length) return null;
+  p = Math.max(0, Math.min(AR_TOTAL - 0.001, p));
+  const sc = AR_SCENES.find(s => p >= s.start && p < s.start + s.len) || AR_SCENES[AR_SCENES.length - 1];
+  const inS = p - sc.start;
+  const bar = Math.floor(inS / sc.num) + 1, beat = Math.floor(inS % sc.num) + 1;
+  return { sc, text: `${sc.mv} · ${sc.q} · ${sc.s} | ${String(bar).padStart(3, '0')}.${beat}` };
+}
+
+// subject "character:victoria_midnight" -> a track id + a display label. No source
+// beyond the tracking file + the character block this page already carries.
+const AR_SUBJECT_NAME = { victoria_midnight: DATA.character.alias || DATA.character.name, dcus: 'DCUS' };
+function arSubjTrack(subject){ if (!subject) return null; return subject.includes(':') ? subject.split(':')[1] : subject; }
+function arSubjLabel(subject){
+  const id = arSubjTrack(subject); if (!id) return '—';
+  return AR_SUBJECT_NAME[id] || id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+function arIsPlace(subject){ return (subject || '').startsWith('place:'); }
+
+const AR_PTS = TS.points.map(p => ({ ...p, tr: arSubjTrack(p.subject), p: arPos(p.at) }));
+const AR_TROPE_PTS = TS.tropes.map(t => ({ ...t, tr: 'tropes', p: arPos(t.at) }));
+const AR_CABLES = TS.cables.map(c => ({
+  ...c,
+  fromTrack: arSubjTrack(c.setup.track), toTrack: c.payoff ? arSubjTrack(c.payoff.track) : null,
+  a: arPos(c.setup.at), b: c.payoff ? arPos(c.payoff.at) : null,
+}));
+const AR_WORLD = TS.world;
+const AR_AUTOMATION = TS.automation.map(a => ({ ...a, points: (a.points || []).map(p => ({ ...p, p: arPos(p.at) })) }));
+const AR_TEMPO_PLANNED = TS.tempo.planned.map(p => ({ ...p, p: arPos(p.at) }));
+const AR_TEMPO_MEASURED = TS.tempo.measured.map(p => ({ ...p, p: arPos(p.at) }));
+const AR_FREE_IN = TS.theme.in_world.map(p => ({ ...p, p: arPos(p.at) }));
+const AR_FREE_AUD = TS.theme.audience.map(p => ({ ...p, p: arPos(p.at) }));
+
+// tracks: scenes + tempo always; one per automation lane; one state track per
+// subject seen in story points; theme + tropes only if they carry data (ruling 3)
+const AR_TRACKS = [];
+AR_TRACKS.push({ id: 'scenes', nm: 'Scenes', sub: 'clips · the told order', k: 'var(--accent)', h: 40 });
+AR_TRACKS.push({
+  id: 'tempo', nm: 'Tempo',
+  sub: AR_TEMPO_MEASURED.length ? 'planned —  measured - -' : 'planned —  · measured: none until a draft exists',
+  k: 'var(--accent)', h: 64, term: 'tempo',
+});
+for (const a of AR_AUTOMATION) {
+  if (!a.points.length) continue;
+  AR_TRACKS.push({
+    id: 'auto:' + a.id, nm: arSubjLabel(a.subject) + ' · ' + (a.field || '').split('.')[0].replace(/_/g, ' '),
+    sub: ((a.field || '').split('.').slice(1).join('.') || 'value') + ' · automation',
+    k: arIsPlace(a.subject) ? 'var(--c-place)' : 'var(--c-char)', h: 58, term: 'ramp', auto: a,
+  });
+}
+const AR_SUBJECTS_WITH_POINTS = Array.from(new Set(AR_PTS.map(p => p.tr).filter(Boolean)));
+for (const subj of AR_SUBJECTS_WITH_POINTS) {
+  const src = (TS.points.find(p => arSubjTrack(p.subject) === subj) || {}).subject || '';
+  AR_TRACKS.push({ id: subj, nm: arSubjLabel(src) + ' · state', sub: 'story points', k: arIsPlace(src) ? 'var(--c-place)' : 'var(--c-char)', h: 40 });
+}
+if (AR_FREE_IN.length || AR_FREE_AUD.length) {
+  AR_TRACKS.push({ id: 'theme', nm: 'Theme · ' + (TS.theme.rail || ''), sub: (TS.theme.scale || '') + ' · in-world / audience', k: 'var(--c-theme)', h: 60, term: 'freedom' });
+}
+if (AR_TROPE_PTS.length) {
+  AR_TRACKS.push({ id: 'tropes', nm: 'Tropes', sub: 'from the register', k: 'var(--c-trope)', h: 36 });
+}
+
+const TS_STATE = { view: 'told', ppb: 0, off: 0, ph: AR_SCENES.length ? AR_SCENES[0].start : 0, wph: 0 };
+const AR_ZOOMS = [['Story', 1.6], ['Movement', 2.6], ['Sequence', 4], ['Scene', 9], ['Bar', 26], ['Beat', 70], ['Tick', 190]];
+
+function arLaneEl(){ return document.getElementById('arLane'); }
+function arSvgEl(){ return document.getElementById('arSvg'); }
+function arW(){ const l = arLaneEl(); return l ? l.clientWidth : 0; }
+function arH(){ const l = arLaneEl(); return l ? l.clientHeight : 0; }
+function arX(p){ return (p - TS_STATE.off) * TS_STATE.ppb; }
+function arEl(tag, attrs, parent, text){
+  const e = document.createElementNS(AR_NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  (parent || arSvgEl()).appendChild(e);
+  return e;
+}
+function arStopName(){ let n = AR_ZOOMS[0][0]; for (const [nm, v] of AR_ZOOMS) if (TS_STATE.ppb >= v * .8) n = nm; return n; }
+function arFit(){ const w = arW(); if (w <= 0) return; TS_STATE.ppb = Math.max(1, (w - 24) / AR_TOTAL); TS_STATE.off = -8 / TS_STATE.ppb; }
+function arClampOff(){ if (!TS_STATE.ppb) return; const w = arW() / TS_STATE.ppb; TS_STATE.off = Math.max(-w * .3, Math.min(AR_TOTAL - w * .7, TS_STATE.off)); }
+function arSetZoom(ppb, anchorX){
+  if (!TS_STATE.ppb) arFit();
+  const ax = anchorX == null ? arW() / 2 : anchorX;
+  const p = TS_STATE.off + ax / TS_STATE.ppb;
+  TS_STATE.ppb = Math.max(0.6, Math.min(400, ppb));
+  TS_STATE.off = p - ax / TS_STATE.ppb; arClampOff(); toldRender();
+}
+
+function arHeaders(rows){
+  const box = document.getElementById('arTracks'); if (!box) return;
+  box.innerHTML = '';
+  for (const r of rows) {
+    const d = document.createElement('div');
+    d.className = 'ar-th' + (r.ruler ? ' ruler' : '');
+    d.style.top = r.y + 'px'; d.style.height = r.h + 'px';
+    d.style.setProperty('--k', r.k || 'var(--line-2)');
+    d.innerHTML = `<span class="nm">${r.term ? `<span class="t" data-tt="gloss" data-id="${r.term}">${esc(r.nm)}</span>` : esc(r.nm)}</span><span class="sub">${esc(r.sub || '')}</span>`;
+    box.appendChild(d);
   }
-  html += '</div><div class="jump-note">world-time position read from the fabula event this told scene is seeded against.</div></div>';
-  html += '<div class="empty-track">No other scenes carded yet — the told-order track stays sparse until more scene cards land (per the ruled default: the fabula view starts sparse and visibly thickens).</div>';
-  wrap.innerHTML = html;
+}
+
+function arDrawTold(y0, h, compact){
+  const w = arW();
+  const rows = [];
+  arEl('rect', { x: 0, y: y0, width: w, height: AR_BAND_H * 2, class: 'ar-band' });
+  for (const mv of AR_MOVS) {
+    const sc = AR_SCENES.filter(s => s.mv === mv.id); if (!sc.length) continue;
+    const a = arX(sc[0].start), b = arX(sc[sc.length - 1].start + sc[sc.length - 1].len);
+    arEl('line', { x1: a, x2: a, y1: y0, y2: y0 + AR_BAND_H * 2, class: 'ar-grid-bar' });
+    arEl('text', { x: Math.max(a, 0) + 6, y: y0 + 15, class: 'ar-band-lbl' }, null, `${mv.id} · ${mv.lbl}`);
+    const seq = AR_SEQS.find(q => q.id.indexOf(mv.id) === 0);
+    if (seq) arEl('text', { x: Math.max(a, 0) + 6, y: y0 + AR_BAND_H + 15 }, null, `${seq.id} · ${seq.lbl}`);
+  }
+  const ry = y0 + AR_BAND_H * 2;
+  arEl('rect', { x: 0, y: ry, width: w, height: AR_RULE_H, fill: 'var(--panel)' });
+  arEl('rect', { x: 0, y: y0, width: w, height: AR_BAND_H * 2 + AR_RULE_H, fill: 'transparent', 'data-ruler': '1', style: 'cursor:col-resize' });
+  rows.push({ nm: 'Ladder', sub: 'movement · sequence', y: y0, h: AR_BAND_H * 2, ruler: 1, term: 'toldzoom' });
+  rows.push({ nm: 'Bars', sub: 'bar ruler · meter', y: ry, h: AR_RULE_H, ruler: 1, term: 'bar' });
+  const gy0 = ry + AR_RULE_H, gy1 = y0 + h;
+  for (const sc of AR_SCENES) {
+    const sx = arX(sc.start);
+    if (sx > w + 40 || arX(sc.start + sc.len) < -40) continue;
+    arEl('text', { x: sx + 4, y: ry + 12, class: 'ar-sig' }, null, `${sc.num}/${sc.den}`);
+    const barPx = sc.num * TS_STATE.ppb, every = barPx > 34 ? 1 : barPx > 16 ? 2 : barPx > 7 ? 4 : 99;
+    for (let b = 0; b < sc.bars; b++) {
+      const bx = arX(sc.start + b * sc.num);
+      if (bx < -2 || bx > w + 2) continue;
+      arEl('line', { x1: bx, x2: bx, y1: b === 0 ? y0 : ry + 16, y2: gy1, class: b === 0 ? 'ar-grid-bar' : 'ar-grid-beat', opacity: b === 0 ? 1 : (every < 99 ? .9 : .35) });
+      if (every < 99 && b % every === 0) arEl('text', { x: bx + 3, y: ry + 26 }, null, String(b + 1));
+      if (TS_STATE.ppb > 18) for (let bt = 1; bt < sc.num; bt++) {
+        const tx = arX(sc.start + b * sc.num + bt);
+        arEl('line', { x1: tx, x2: tx, y1: ry + 22, y2: gy1, class: 'ar-grid-beat', opacity: .35 });
+      }
+    }
+  }
+  let y = gy0;
+  const tracks = compact ? AR_TRACKS.filter(t => t.id === 'scenes' || AR_SUBJECTS_WITH_POINTS.includes(t.id)) : AR_TRACKS;
+  for (const t of tracks) {
+    const th = compact ? 30 : t.h;
+    rows.push({ ...t, y, h: th });
+    arEl('line', { x1: 0, x2: w, y1: y + th, y2: y + th, class: 'ar-rowline' });
+    const mid = y + th / 2;
+    if (t.id === 'scenes') {
+      for (const sc of AR_SCENES) {
+        const a = arX(sc.start) + 1, b = arX(sc.start + sc.len) - 1;
+        if (b < 0 || a > w) continue;
+        arEl('rect', { x: a, y: y + 4, width: Math.max(2, b - a), height: th - 8, fill: 'var(--accent-soft)', stroke: 'var(--accent)', class: 'ar-clip' });
+        if (b - a > 60) arEl('text', { x: Math.max(a, 0) + 6, y: y + th / 2 + 4, class: 'ar-clip-lbl' }, null, (b - a > 170 ? `${sc.s} · ${sc.label}` : sc.s));
+      }
+    } else if (t.id === 'tempo') {
+      arTempoTrack(y, th);
+    } else if (t.id.indexOf('auto:') === 0) {
+      arAutomationTrack(t.auto, y, th);
+    } else if (t.id === 'theme') {
+      arCurve(AR_FREE_IN, AR_FREE_AUD, y, th, -3, 1, 'var(--c-theme)', true);
+    } else {
+      arPoints(t, mid);
+    }
+    t._y = y; t._h = th;
+    y += th;
+  }
+  arCables(tracks);
+  return rows;
+}
+
+function arStepPath(arr, y, h, lo, hi, rampAll){
+  const Y = v => y + h - 6 - (v - lo) / (hi - lo) * (h - 12);
+  let d = `M ${arX(arr[0].p)} ${Y(arr[0].v)}`;
+  for (let i = 1; i < arr.length; i++) {
+    const ramp = rampAll || arr[i].ramp;
+    d += ramp ? ` L ${arX(arr[i].p)} ${Y(arr[i].v)}` : ` L ${arX(arr[i].p)} ${Y(arr[i - 1].v)} L ${arX(arr[i].p)} ${Y(arr[i].v)}`;
+  }
+  return { d, Y };
+}
+function arAutomationTrack(a, y, h){
+  if (!a.points.length) return; // no data — draw nothing (ruling 3)
+  const lo = a.range[0], hi = a.range[1];
+  const { d, Y } = arStepPath(a.points, y, h, lo, hi);
+  arEl('path', { d: d + ` L ${arX(a.points[a.points.length - 1].p)} ${y + h - 6} L ${arX(a.points[0].p)} ${y + h - 6} Z`, fill: 'var(--c-char)', class: 'ar-auto-fill' });
+  arEl('path', { d, fill: 'none', stroke: 'var(--c-char)', 'stroke-width': 2 });
+  for (const pt of a.points) arEl('circle', { cx: arX(pt.p), cy: Y(pt.v), r: 3.5, fill: 'var(--c-char)', class: 'ar-pt' });
+}
+function arTempoTrack(y, h){
+  if (!AR_TEMPO_PLANNED.length) { arEl('text', { x: 6, y: y + 12 }, null, 'no tempo data'); return; }
+  const vals = AR_TEMPO_PLANNED.concat(AR_TEMPO_MEASURED).map(p => p.bpm);
+  const lo = Math.min(...vals) - 10, hi = Math.max(...vals) + 10;
+  const planned = AR_TEMPO_PLANNED.map(p => ({ p: p.p, v: p.bpm, ramp: p.ramp }));
+  const pa = arStepPath(planned, y, h, lo, hi);
+  if (AR_TEMPO_MEASURED.length) {
+    const measured = AR_TEMPO_MEASURED.map(p => ({ p: p.p, v: p.bpm, ramp: p.ramp }));
+    const pb = arStepPath(measured, y, h, lo, hi);
+    const back = [...measured].reverse();
+    let g = pa.d; for (const b of back) g += ` L ${arX(b.p)} ${pb.Y(b.v)}`;
+    arEl('path', { d: g + ' Z', class: 'ar-gap' });
+    arEl('path', { d: pb.d, fill: 'none', stroke: 'var(--accent)', 'stroke-width': 1.6, 'stroke-dasharray': '5 4', opacity: .85 });
+    arEl('text', { x: 6, y: y + 12 }, null, 'bpm · planned —  measured - -');
+  } else {
+    arEl('text', { x: 6, y: y + 12 }, null, 'bpm · planned —  · measured: none until a draft exists');
+  }
+  arEl('path', { d: pa.d, fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2 });
+}
+function arCurve(A, B, y, h, lo, hi, col, step){
+  if (!A.length && !B.length) return; // no data — draw nothing (ruling 3)
+  if (A.length) {
+    const pa = arStepPath(A, y, h, lo, hi, !step);
+    arEl('path', { d: pa.d, fill: 'none', stroke: col, 'stroke-width': 2 });
+    if (B.length) {
+      const pb = arStepPath(B, y, h, lo, hi, !step);
+      const back = [...B].reverse();
+      let g = pa.d; for (const b of back) g += ` L ${arX(b.p)} ${pb.Y(b.v)}`;
+      arEl('path', { d: g + ' Z', class: 'ar-gap' });
+      arEl('path', { d: pb.d, fill: 'none', stroke: col, 'stroke-width': 1.6, 'stroke-dasharray': '5 4', opacity: .85 });
+    }
+  } else if (B.length) {
+    const pb = arStepPath(B, y, h, lo, hi, !step);
+    arEl('path', { d: pb.d, fill: 'none', stroke: col, 'stroke-width': 1.6, 'stroke-dasharray': '5 4', opacity: .85 });
+  }
+  arEl('text', { x: 6, y: y + 12 }, null, step ? (B.length ? 'in-world —  audience - -' : 'in-world —  · audience: none on record') : '');
+}
+function arPoints(t, mid){
+  const isTropes = t.id === 'tropes';
+  const mine = isTropes ? AR_TROPE_PTS : AR_PTS.filter(p => p.tr === t.id);
+  const w = arW();
+  if (!mine.length) return;
+  if (TS_STATE.ppb < 6) {
+    for (const sc of AR_SCENES) {
+      const n = mine.filter(p => p.p >= sc.start && p.p < sc.start + sc.len).length;
+      if (!n) continue;
+      const cx = arX(sc.start + sc.len / 2);
+      arEl('rect', { x: cx - 11, y: mid - 9, width: 22, height: 18, rx: 9, class: 'ar-badge' });
+      arEl('text', { x: cx, y: mid + 4, 'text-anchor': 'middle', class: 'ar-badge-t' }, null, String(n));
+    }
+    return;
+  }
+  for (const p of mine) {
+    const x = arX(p.p);
+    if (x < -20 || x > w + 20) continue;
+    const g = arEl('g', {});
+    if (isTropes) arEl('rect', { x: x - 5, y: mid - 5, width: 10, height: 10, fill: t.k, class: 'ar-pt', transform: `rotate(45 ${x} ${mid})` }, g);
+    else arEl('circle', { cx: x, cy: mid, r: 5.5, fill: t.k, class: 'ar-pt' }, g);
+    const lbl = isTropes ? p.name : (p.field + (TS_STATE.ppb > 26 ? ' · ' + p.value : ''));
+    const show = TS_STATE.ppb > 120 ? lbl : TS_STATE.ppb > 26 ? (isTropes ? p.name : String(p.value)) : '';
+    if (show) arEl('text', { x: x + 9, y: mid + 3.5 }, g, show.length > 34 ? show.slice(0, 33) + '…' : show);
+  }
+}
+function arCables(tracks){
+  const ty = id => { const t = tracks.find(t => t.id === id); return t ? t._y + t._h / 2 : null; };
+  const w = arW();
+  for (const c of AR_CABLES) {
+    const y1 = ty(c.fromTrack); if (y1 == null) continue;
+    const x1 = arX(c.a);
+    const col = c.orphan === 'setup_no_payoff' || c.orphan === 'payoff_no_setup' ? 'var(--bad)' : 'var(--accent)';
+    if (c.b == null) {
+      const x2 = x1 + Math.max(40, 18 * Math.sqrt(TS_STATE.ppb));
+      arEl('path', { d: `M ${x1} ${y1} C ${x1 + 20} ${y1 + 26}, ${x2 - 10} ${y1 + 30}, ${x2} ${y1 + 22}`, class: 'ar-cable', stroke: col, 'data-cab': c.id });
+      arEl('circle', { cx: x2, cy: y1 + 22, r: 4, class: 'ar-orphan' });
+      continue;
+    }
+    const y2 = ty(c.toTrack); if (y2 == null) continue;
+    const x2 = arX(c.b), sag = Math.min(90, Math.abs(x2 - x1) * .18 + 24);
+    arEl('path', { d: `M ${x1} ${y1} C ${x1 + (x2 - x1) * .3} ${Math.max(y1, y2) + sag}, ${x1 + (x2 - x1) * .7} ${Math.max(y1, y2) + sag}, ${x2} ${y2}`, class: 'ar-cable' + (c.orphan === 'provisional' ? ' provisional' : ''), stroke: col, 'data-cab': c.id, opacity: .9 });
+  }
+}
+
+function arDrawWorld(y0, h){
+  const w = arW(), n = AR_WORLD.length, rows = [];
+  if (!n) { rows.push({ nm: 'World clock', sub: 'no world events on record', y: y0, h, ruler: 1, term: 'world' }); return { rows, evY: y0, cx: () => 0 }; }
+  const colW = (w - 24) / n;
+  const cx = i => 12 + colW * (i + .5);
+  arEl('rect', { x: 0, y: y0, width: w, height: AR_BAND_H * 2, class: 'ar-band' });
+  let last = null;
+  AR_WORLD.forEach((e, i) => {
+    if (e.m !== last) {
+      arEl('line', { x1: 12 + colW * i, x2: 12 + colW * i, y1: y0, y2: y0 + h, class: 'ar-grid-bar' });
+      arEl('text', { x: 12 + colW * i + 6, y: y0 + 15, class: 'ar-band-lbl' }, null, e.m === 'backstory' ? 'Backstory' : e.m);
+      last = e.m;
+    }
+  });
+  arEl('rect', { x: 0, y: y0, width: w, height: AR_BAND_H * 2, fill: 'transparent', 'data-wruler': '1', style: 'cursor:col-resize' });
+  rows.push({ nm: 'World clock', sub: 'fabula order · no bars', y: y0, h: AR_BAND_H * 2, ruler: 1, term: 'world' });
+  const ey = y0 + AR_BAND_H * 2, eh = 64;
+  rows.push({ nm: 'Events', sub: 'the fabula', y: ey, h: eh, k: 'var(--ink-3)' });
+  AR_WORLD.forEach((e, i) => {
+    const bw = Math.min(colW - 10, 150), x = cx(i) - bw / 2;
+    arEl('rect', { x, y: ey + 8, width: bw, height: eh - 16, fill: 'var(--panel-2)', stroke: 'var(--line-2)', class: 'ar-world-ev' });
+    arEl('text', { x: x + 6, y: ey + 26, class: 'ar-clip-lbl' }, null, e.label.length * 6.2 > bw - 10 ? e.label.slice(0, Math.max(6, Math.floor((bw - 10) / 6.2))) + '…' : e.label);
+    arEl('text', { x: x + 6, y: ey + 42 }, null, e.m);
+  });
+  arEl('line', { x1: 0, x2: w, y1: ey + eh, y2: ey + eh, class: 'ar-rowline' });
+  const ny = ey + eh, nh = 44;
+  const cps = AR_WORLD.map((e, i) => ({ e, i })).filter(o => o.e.dcus_name);
+  if (cps.length) {
+    rows.push({ nm: 'DCUS · name', sub: 'checkpoints · header', y: ny, h: nh, k: 'var(--c-place)', term: 'checkpoint' });
+    cps.forEach((o, k) => {
+      const a = cx(o.i), b = k < cps.length - 1 ? cx(cps[k + 1].i) : w - 4;
+      arEl('rect', { x: a, y: ny + 8, width: b - a - 3, height: nh - 16, fill: 'var(--c-place-soft)', stroke: 'var(--c-place)', class: 'ar-clip' });
+      arEl('text', { x: a + 6, y: ny + nh / 2 + 4, class: 'ar-clip-lbl' }, null, o.e.dcus_name);
+    });
+    arEl('line', { x1: 0, x2: w, y1: ny + nh, y2: ny + nh, class: 'ar-rowline' });
+  }
+  TS_STATE._wcx = cx; TS_STATE._colW = colW;
+  return { rows, evY: ey + 8, cx };
+}
+
+function toldRender(){
+  if (!TS_STATE.ppb) arFit();
+  const svg = arSvgEl(); if (!svg) return;
+  svg.innerHTML = '';
+  if (!TS_STATE.ppb) return; // lane not visible/sized yet — retried on next resize/switch
+  const w = arW(), h = arH();
+  let rows = [];
+  if (TS_STATE.view === 'told') rows = arDrawTold(0, h, false);
+  else if (TS_STATE.view === 'world') rows = arDrawWorld(0, h).rows;
+  else {
+    const topH = Math.floor(h * .5);
+    rows = arDrawTold(0, topH, true);
+    const wr = arDrawWorld(topH + 18, h - topH - 18);
+    rows = rows.concat(wr.rows);
+    let lastWorldIdx = -1;
+    for (const sc of AR_SCENES) {
+      const i = AR_WORLD.findIndex(e => e.id === sc.event);
+      if (i < 0) continue;
+      const x1 = arX(sc.start + sc.len / 2), x2 = wr.cx(i);
+      const back = lastWorldIdx >= 0 && i < lastWorldIdx;
+      arEl('path', { d: `M ${x1} ${topH - 30} C ${x1} ${topH + 20}, ${x2} ${topH - 10}, ${x2} ${wr.evY}`, class: 'ar-link' + (back ? ' back' : '') });
+      if (back) arEl('text', { x: (x1 + x2) / 2 - 40, y: topH + 12, class: 'ar-sig' }, null, 'flashback ← runs backward');
+      lastWorldIdx = i;
+    }
+  }
+  if (TS_STATE.view !== 'world') {
+    const px = arX(TS_STATE.ph);
+    if (px >= 0 && px <= w) {
+      arEl('line', { x1: px, x2: px, y1: 0, y2: TS_STATE.view === 'stack' ? Math.floor(h * .5) : h, class: 'ar-playhead' });
+      arEl('path', { d: `M ${px - 6} 0 L ${px + 6} 0 L ${px} 8 Z`, class: 'ar-ph-cap' });
+    }
+  } else if (TS_STATE._colW) {
+    const px = 12 + TS_STATE._colW * TS_STATE.wph;
+    arEl('line', { x1: px, x2: px, y1: 0, y2: h, class: 'ar-playhead' });
+    arEl('path', { d: `M ${px - 6} 0 L ${px + 6} 0 L ${px} 8 Z`, class: 'ar-ph-cap' });
+  }
+  arHeaders(rows);
+  const stop = arStopName();
+  $$('#toldZoomSeg button').forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.z === stop)); b.disabled = TS_STATE.view === 'world'; });
+  $$('#toldRulerSeg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === TS_STATE.view)));
+  const tcOut = document.getElementById('toldTcOut');
+  if (tcOut) {
+    if (TS_STATE.view === 'world') {
+      const i = Math.max(0, Math.min(AR_WORLD.length - 1, Math.floor(TS_STATE.wph)));
+      tcOut.textContent = AR_WORLD.length ? AR_WORLD[i].m : '—';
+    } else {
+      const c = arCodeAt(TS_STATE.ph); tcOut.textContent = c ? c.text : '—';
+    }
+  }
+  if (state.lens === 'told' && typeof renderDetail === 'function') renderDetail();
+}
+
+// ---- the playhead inspector: state at the playhead, assembled from every
+// change up to here (replaces the selection card while Told is open) ----
+function arValAt(arr, p, ramp){
+  if (!arr.length) return null;
+  if (p <= arr[0].p) return arr[0].v;
+  for (let i = 1; i < arr.length; i++) if (p < arr[i].p) {
+    const r = ramp === true || arr[i].ramp;
+    return r ? arr[i - 1].v + (arr[i].v - arr[i - 1].v) * (p - arr[i - 1].p) / (arr[i].p - arr[i - 1].p) : arr[i - 1].v;
+  }
+  return arr[arr.length - 1].v;
+}
+const AR_FREE_LBL = { '0': '0 · Neutral', '-1': '− Conformity', '-2': '−− Control', '-3': '−−− Captivity' };
+function toldInspectorHtml(){
+  if (!AR_SCENES.length) return '<p class="empty-detail">No scenes in the tracking file yet.</p>';
+  if (TS_STATE.view === 'world') {
+    if (!AR_WORLD.length) return '<p class="empty-detail">No world events on record.</p>';
+    const i = Math.max(0, Math.min(AR_WORLD.length - 1, Math.floor(TS_STATE.wph)));
+    let name = null;
+    for (let k = 0; k <= i; k++) if (AR_WORLD[k].dcus_name) name = AR_WORLD[k].dcus_name;
+    const e = AR_WORLD[i];
+    return `<h3><small class="lbl">WORLD CLOCK · ${esc((e.m || '').toUpperCase())}</small>${esc(e.label)}</h3>
+      <div class="mono" style="font-size:12px;color:var(--ink-3);margin:4px 0 10px">${esc(e.id)}</div>
+      <div class="grp"><div class="glbl" style="--k:var(--c-place)"><i></i>DCUS · <span class="t" data-tt="gloss" data-id="checkpoint">checkpoint</span></div>
+      <dl class="kv"><dt>header.live_name</dt><dd class="chg">${esc(name || 'no checkpoint yet')}</dd></dl></div>
+      <p class="note" style="font-size:12.5px;color:var(--ink-2)">Drag the playhead across the backstory to watch the live name flip at each rename. Flip to <span class="t" data-tt="gloss" data-id="told">told order</span> or <span class="t" data-tt="gloss" data-id="stack">stack</span> for the told-order read.</p>`;
+  }
+  const c = arCodeAt(TS_STATE.ph);
+  const upTo = tr => { const o = {}; for (const p of AR_PTS) if (p.tr === tr && p.p <= TS_STATE.ph + 1e-6) o[p.field] = { v: p.value, recent: TS_STATE.ph - p.p < c.sc.num * 1.01 }; return o; };
+  const kv = o => Object.keys(o).length ? Object.entries(o).map(([k, x]) => `<dt>${esc(k)}</dt><dd class="${x.recent ? 'chg' : ''}">${esc(String(x.v))}</dd>`).join('') : `<dt>no change yet</dt><dd>base</dd>`;
+  let html = `<h3 style="margin:0 0 2px;font-family:var(--display);font-weight:800;font-size:18px;text-transform:uppercase">${esc(c.sc.mv)} · ${esc(c.sc.q)} · ${esc(c.sc.s)} · ${c.sc.num}/${c.sc.den}</h3>
+    <div style="font-size:14px;margin-bottom:4px">${esc(c.sc.label)}</div>
+    <div class="mono" style="font-size:12.5px;color:var(--ink-3);background:var(--well);border:1px solid var(--line);padding:5px 7px;margin-bottom:10px">${esc(c.text)}</div>`;
+  for (const subj of AR_SUBJECTS_WITH_POINTS) {
+    const track = AR_TRACKS.find(t => t.id === subj);
+    html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:${track ? track.k : 'var(--c-char)'}"><i></i>${esc(arSubjLabel(subj.includes(':') ? subj : 'character:' + subj))} · state</div><dl class="kv">${kv(upTo(subj))}</dl></div>`;
+  }
+  for (const a of AR_AUTOMATION) {
+    if (!a.points.length) continue;
+    const v = arValAt(a.points, TS_STATE.ph);
+    const lo = a.range[0], hi = a.range[1];
+    html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:var(--c-char)"><i></i>${esc(arSubjLabel(a.subject))} · <span class="t" data-tt="gloss" data-id="ramp">${esc((a.field || '').split('.').pop())}</span></div>
+      <dl class="kv"><dt>value</dt><dd>${v == null ? '—' : v.toFixed(2)}</dd></dl>
+      <div class="meter"><b style="width:${v == null ? 0 : Math.round((v - lo) / (hi - lo) * 100)}%"></b></div></div>`;
+  }
+  if (AR_FREE_IN.length || AR_FREE_AUD.length) {
+    const fi = arValAt(AR_FREE_IN, TS_STATE.ph, true), fa = arValAt(AR_FREE_AUD, TS_STATE.ph, true);
+    html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:var(--c-theme)"><i></i>Theme · <span class="t" data-tt="gloss" data-id="freedom">Freedom</span></div>
+      <dl class="kv"><dt>in-world</dt><dd>${fi == null ? 'none on record' : esc(AR_FREE_LBL[String(Math.round(fi))] || fi)}</dd><dt>audience</dt><dd class="${fa != null && fa !== fi ? 'chg' : ''}">${fa == null ? 'none on record' : esc(AR_FREE_LBL[String(Math.round(fa))] || fa)}</dd></dl>
+      <p class="note" style="font-size:12px;color:var(--ink-2)">${fa != null && fi != null && fa !== fi ? 'The gap is open: the record says one thing, the reader sees another.' : 'No gap on record.'}</p></div>`;
+  }
+  if (AR_TEMPO_PLANNED.length) {
+    const tp = arValAt(AR_TEMPO_PLANNED.map(p => ({ p: p.p, v: p.bpm, ramp: p.ramp })), TS_STATE.ph, true);
+    const tm = AR_TEMPO_MEASURED.length ? arValAt(AR_TEMPO_MEASURED.map(p => ({ p: p.p, v: p.bpm, ramp: p.ramp })), TS_STATE.ph, true) : null;
+    html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:var(--accent)"><i></i><span class="t" data-tt="gloss" data-id="tempo">Tempo</span></div>
+      <dl class="kv"><dt>planned</dt><dd>${Math.round(tp)} bpm</dd><dt>measured</dt><dd>${tm == null ? 'none until a draft exists' : Math.round(tm) + ' bpm'}</dd></dl></div>`;
+  }
+  const live = AR_CABLES.filter(k => k.a <= TS_STATE.ph + 1e-6);
+  const chip = orphan => orphan === 'provisional' ? `<span class="chip prov"><span class="t" data-tt="gloss" data-id="provisional">provisional</span></span>`
+    : (orphan === 'setup_no_payoff' || orphan === 'payoff_no_setup') ? `<span class="chip orph"><span class="t" data-tt="gloss" data-id="orphan">orphan</span></span>`
+    : `<span class="chip ok">paid off</span>`;
+  html += `<div class="grp"><div class="glbl" style="--k:var(--accent)"><i></i><span class="t" data-tt="gloss" data-id="cable">Cables</span> set up so far</div>`;
+  html += live.length ? live.map(k => `<div class="cab"><div><b>${esc(k.id)}</b> ${chip(k.orphan)}</div><span class="mono">${esc(k.setup.at)}${k.payoff ? ' → ' + esc(k.payoff.at) : ' → (no payoff)'}</span><br><span style="font-size:12px">${esc(k.why)}</span></div>`).join('') : `<p class="note" style="font-size:12.5px;color:var(--ink-2)">None yet. Move the playhead right.</p>`;
+  html += `</div>`;
+  if (AR_TROPE_PTS.length) {
+    const tropes = AR_TROPE_PTS.filter(t => t.p <= TS_STATE.ph).slice(-2).reverse();
+    if (tropes.length) html += `<div class="grp" style="margin-top:10px"><div class="glbl" style="--k:var(--c-trope)"><i></i>Tropes in play</div><dl class="kv">${tropes.map(t => `<dt>${esc(t.name)}</dt><dd>${Object.entries(t.keys || {}).map(([d, kk]) => d + ' ' + kk).join(', ') || '—'}</dd>`).join('')}</dl></div>`;
+  }
+  return html;
+}
+
+// ---- Told lens controls ----
+(function(){
+  const zs = document.getElementById('toldZoomSeg');
+  if (zs) {
+    zs.innerHTML = AR_ZOOMS.map(([nm]) => `<button data-z="${esc(nm)}" aria-pressed="false">${esc(nm)}</button>`).join('');
+    zs.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      const z = AR_ZOOMS.find(z => z[0] === b.dataset.z)[1];
+      if (b.dataset.z === 'Story') { arFit(); toldRender(); return; }
+      if (!TS_STATE.ppb) arFit();
+      TS_STATE.off = TS_STATE.ph - (arW() / 2) / z; TS_STATE.ppb = z; arClampOff(); toldRender();
+    });
+  }
+  const rs = document.getElementById('toldRulerSeg');
+  if (rs) rs.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    TS_STATE.view = b.dataset.v; if (TS_STATE.view === 'stack') arFit(); toldRender();
+  });
+  const lane = arLaneEl();
+  if (!lane) return;
+  lane.addEventListener('wheel', e => {
+    e.preventDefault();
+    if (TS_STATE.view === 'world') return;
+    const r = lane.getBoundingClientRect();
+    if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) { if (!TS_STATE.ppb) arFit(); TS_STATE.off += (e.deltaX || e.deltaY) / TS_STATE.ppb; arClampOff(); toldRender(); return; }
+    arSetZoom((TS_STATE.ppb || 2.2) * Math.exp(-e.deltaY * 0.0015), e.clientX - r.left);
+  }, { passive: false });
+  let arDrag = null;
+  function arMovePH(x){
+    if (TS_STATE.view === 'world') { if (AR_WORLD.length) TS_STATE.wph = Math.max(0, Math.min(AR_WORLD.length - .01, (x - 12) / (TS_STATE._colW || 1))); }
+    else TS_STATE.ph = Math.max(0, Math.min(AR_TOTAL - .01, TS_STATE.off + x / (TS_STATE.ppb || 1)));
+    toldRender();
+  }
+  lane.addEventListener('pointerdown', e => {
+    const r = lane.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    const onRuler = y < AR_BAND_H * 2 + AR_RULE_H || (TS_STATE.view === 'stack' && y > arH() * .5 + 18 && y < arH() * .5 + 18 + AR_BAND_H * 2);
+    if (TS_STATE.view === 'world' || onRuler) { arDrag = { mode: 'ph' }; arMovePH(x); }
+    else arDrag = { mode: 'pan', x, off: TS_STATE.off };
+    lane.setPointerCapture(e.pointerId);
+  });
+  lane.addEventListener('pointermove', e => {
+    if (!arDrag) return;
+    const x = e.clientX - lane.getBoundingClientRect().left;
+    if (arDrag.mode === 'ph') arMovePH(x);
+    else { if (!TS_STATE.ppb) arFit(); TS_STATE.off = arDrag.off - (x - arDrag.x) / TS_STATE.ppb; arClampOff(); toldRender(); }
+  });
+  lane.addEventListener('pointerup', () => { arDrag = null; });
+  new ResizeObserver(() => { if (!TS_STATE.ppb) arFit(); arClampOff(); toldRender(); }).observe(lane);
+})();
+function arStepBeat(dir){
+  if (!AR_SCENES.length) return;
+  TS_STATE.ph = Math.max(0, Math.min(AR_TOTAL - .01, Math.floor(TS_STATE.ph) + dir + .05));
+  if (!TS_STATE.ppb) arFit();
+  const px = arX(TS_STATE.ph); const w = arW();
+  if (px < 20 || px > w - 20) { TS_STATE.off = TS_STATE.ph - w / 2 / TS_STATE.ppb; arClampOff(); }
+  toldRender();
+}
+function arCycleRuler(){
+  TS_STATE.view = TS_STATE.view === 'told' ? 'world' : TS_STATE.view === 'world' ? 'stack' : 'told';
+  if (TS_STATE.view === 'stack') arFit();
+  toldRender();
 }
 
 // ---- detail rail: selection-only, 4-6 key fields + a "more" disclosure (call 79-3) ----
@@ -1127,6 +1625,7 @@ function renderDetail(){
   const el = $('#detail');
   const tabs = `<div class="detail-tabs"><button data-t="detail" class="${detailTab==='detail'?'on':''}">Detail</button><button data-t="character" class="${detailTab==='character'?'on':''}">Tori</button></div>`;
   if (detailTab === 'character'){ el.innerHTML = tabs + characterSheetHtml(); wireCharacterSheet(); return; }
+  if (state.lens === 'told' && detailTab === 'detail'){ el.innerHTML = tabs + '<div class="told-insp">' + toldInspectorHtml() + '</div>'; return; }
   if (!state.selection){ el.innerHTML = tabs + '<p class="empty-detail">Nothing selected. Click any marker, node, or scene to fill this panel.</p>'; return; }
   el.innerHTML = tabs + detailCardHtml(state.selection.type, state.selection.id);
 }
@@ -1245,6 +1744,7 @@ $('#logFilter').addEventListener('click', e => { const b = e.target.closest('but
 
 // ---- canvas click delegation (fabula/rails/told selection; empty canvas clears it) ----
 $('#canvas').addEventListener('click', e => {
+  if (state.lens === 'told' && e.target.closest('#arWrap, #toldToolbar')) return;  // the Told lens runs its own playhead click model
   const el = e.target.closest('[data-sel-type]');
   if (el) { select(el.dataset.selType, el.dataset.selId); return; }
   if (e.target.closest('button, input, a, .t')) return;  // an interactive control, not "empty canvas"
