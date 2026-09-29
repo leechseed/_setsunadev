@@ -21,6 +21,9 @@ sources: ["_tools/bolostatus/work/92/SHELF.md — 06.1 Prose shelf, tier 1/2, he
 
 ## Purpose
 
+> **The split (CDR, 2026-09-29):** this guide governs how the stories read; how the Command writes its own docs and replies is [📐 ssot_06_2_documents_style.md](📐%20ssot_06_2_documents_style.md).
+
+
 06.1 answers one question: what must be true of a page of LEECHSEED prose, in any IP, before it is ready to be judged on its own story's merits. It is the floor under every Telling Profile, not a replacement for one. A Telling Profile (T1–T12, per [ssot_01_texture_system.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md)) answers the Ten Questions of the Telling at one IP's grain; this guide states the universal defaults and constraints those answers are ruled against.
 
 ## Scope

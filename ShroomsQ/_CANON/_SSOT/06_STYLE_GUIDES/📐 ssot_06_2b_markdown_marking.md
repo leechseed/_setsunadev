@@ -2,8 +2,8 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_05_operations
 category: operations
-version: 1.0.0
-last_updated: 2026-09-06
+version: 1.0.1
+last_updated: 2026-09-29
 applies_to: [BVX-LEARN, OVEREXITOUT, ASTRO7EX, SSOT]
 status: canonical — RULED 2026-09-06 on the BOLO 32 boresight
 purpose: "Assigns one meaning to each inline mark in Command Markdown so that writer-side structure and reader-side capture never share ink."
@@ -11,6 +11,7 @@ dependencies: ["[[📐 ssot_writing_guide]]", "[[📐ssot_SSOT_CREATION]]", "[[�
 trunk: BLACK
 bolo: 32
 tool: _tools/vocab_harvest.py
+moved: "2026-09-29 from 05_OPERATIONS/📐 ssot_05_operations_markdown_marking.md to 06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md (BOLO 92)"
 ---
 
 # 📐 ssot_05_operations_markdown_marking
@@ -104,3 +105,4 @@ Harvest writes to `MIL.01.vocab.md`:
 | Version | Date | Change |
 |---|---|---|
 | 1.0.0 | 2026-09-06 | Ruled on the BOLO 32 boresight: four marks, reader/writer split, harvest tool, retro-conversion of MIL.01. |
+| 1.0.1 | 2026-09-29 | Moved to 06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md (BOLO 92); no content change. |

@@ -1,12 +1,13 @@
 ---
 type: ssot_05_operations
 category: operations
-version: 2.1.0
-last_updated: 2026-02-12
+version: 2.1.1
+last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 purpose: "Defines mandatory linguistic and structural standards for SSOT documentation using Marine Corps doctrinal precision."
 dependencies: ["[[📐_ssot_05_operations_standard_structure_template]]"]
+moved: "2026-09-29 from 05_OPERATIONS/📐 ssot_writing_guide.md to 06_STYLE_GUIDES/📐 ssot_06_2a_writing_guide.md (BOLO 92)"
 ---
 
 # 📐 ssot_05_operations_writing_guide
@@ -70,6 +71,7 @@ To guarantee Obsidian Property rendering, all metadata must use **Flow Style** f
 | :------ | :--------- | :-------------------------------------------------------- |
 | 1.0.0   | 2026-02-10 | Initial Marine Corps standard.                            |
 | 2.1.0   | 2026-02-12 | Integrated Flat-Syntax and triple-dash boundary mandates. |
+| 2.1.1   | 2026-09-29 | Moved to 06_STYLE_GUIDES/📐 ssot_06_2a_writing_guide.md (BOLO 92); no content change. |
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 type: ssot_05_operations
 category: legacy_styleguide_2024
-version: 1.0.0
-last_updated: 2026-09-03
+version: 1.0.1
+last_updated: 2026-09-29
 status: PROMOTED 2026-09-03 from _broodengine (archived) — historical convention doc, superseded in practice by the SSOT creation guide and the Obsidian YAML standard; kept as the ancestor record
 purpose: "The May 2024 markdown style guide and hierarchical naming conventions that the SSOT conventions grew out of — frontmatter, delimiters, LLM-ingestion formatting, Engine.Subsystem naming."
 dependencies: ["📐ssot_SSOT_CREATION", "📐 ssot_writing_guide"]
@@ -10,6 +10,18 @@ trunk: BLACK
 provenance:
   origin: "_ARCHIVE/_broodengine/styleguide.md (8.6 KB, 2024-05-25) + higherarchical_naming_conventions.md (3.4 KB, 2024-05-24)"
   note: "Two files concatenated verbatim below their own headings. AI-assisted originals. Nothing edited."
+moved: "2026-09-29 from 05_OPERATIONS/📐 ssot_05_operations_legacy_styleguide_2024.md to 06_STYLE_GUIDES/_history/📐 ssot_06_legacy_styleguide_2024.md (BOLO 92)"
+---
+
+> **HISTORY — kept as record (BOLO 92, 2026-09-29).** Flag: sections from "Algorithms" / "Optimization" / "Collision Detection" / "Bounding Volume Hierarchy" onward are unrelated game-programming material pasted in; not style guidance.
+
+## VERSION HISTORY (move record)
+
+| Version | Date | Change |
+|---|---|---|
+| 1.0.0 | 2026-09-03 | Promoted from `_broodengine` archive as the ancestor record. |
+| 1.0.1 | 2026-09-29 | Moved to 06_STYLE_GUIDES/_history/📐 ssot_06_legacy_styleguide_2024.md (BOLO 92); banner added flagging the pasted-in game-programming sections; no content deleted. |
+
 ---
 
 # 📐 SSOT: LEGACY STYLEGUIDE (2024) — the ancestor of the Command conventions
