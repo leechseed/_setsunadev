@@ -154,7 +154,7 @@ Three chapters carry the setting-building method, read in this order once and th
 | World and Universe Creation | What does a subsector look like, hex by hex, and what is each world made of? | The Universal World Profile, one hex-coded line per world |
 | Trade | What does a world's profile mean for the economy that runs through it? | Trade codes, freight rates, and the buy-low-sell-high speculative trade loop |
 
-The three chapters are not sequential in play; a referee often builds worlds first and lets Travellers arrive from them, or lets Travellers arrive fully formed and builds their homeworlds retroactively to match. Either direction works because all three generators share the same design habit: roll a small set of fixed values, then read everything else, government, economy, culture, off the values already rolled.
+The three chapters are not sequential in play; a referee may build worlds first and let Travellers arrive from them, or let Travellers arrive fully formed and build homeworlds retroactively to match. Either works because all three generators share one habit: roll a small set of fixed values, then read government, economy, and culture off values already rolled.
 
 ---
 
