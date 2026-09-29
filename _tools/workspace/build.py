@@ -830,7 +830,7 @@ def build_html() -> str:
     </div>
     <div class="infoview" id="infoView">
       <span class="iv-icon">i</span><span id="ivText">Hover a term, node, event, or cell for its definition.</span>
-      <span class="footer-hint">[ outliner &nbsp;·&nbsp; ] inspector &nbsp;·&nbsp; L log &nbsp;·&nbsp; &#96; maximize &nbsp;·&nbsp; 1/2/3 lens &nbsp;·&nbsp; − / = zoom (Rails)</span>
+      <span class="footer-hint">[ outliner &nbsp;·&nbsp; ] inspector &nbsp;·&nbsp; L log &nbsp;·&nbsp; &#96; maximize &nbsp;·&nbsp; 1/2/3 lens (Map/Seat/Write) &nbsp;·&nbsp; − / = zoom (Rails) &nbsp;·&nbsp; T ruler (Told)</span>
     </div>
   </footer>
 
@@ -1705,7 +1705,15 @@ function detailCardHtml(type, id){
 }
 $('#detail').addEventListener('click', e => {
   const jb = e.target.closest('[data-jump="told"]');
-  if (jb){ setLens('told'); select('told', DATA.told.scene.id); }
+  if (jb){
+    setLens('told');
+    // the same beat the Rails signpost cell names (M2 row 9) — move the Arrangement's
+    // playhead there so the jump lands on the actual scene, not just the lens.
+    const sc = AR_SCENES.find(s => s.mv === 'M2' && s.q === 'Q1' && s.s === 'S03');
+    if (sc) { TS_STATE.ph = sc.start + 0.05; if (!TS_STATE.ppb) arFit(); TS_STATE.off = TS_STATE.ph - (arW() / 2) / (TS_STATE.ppb || 2.2); arClampOff(); }
+    toldRender();
+    logEvent('told', "jumped from Rails · M2 · Q1 · S03 (the one carded scene)");
+  }
 });
 
 // ---- character window ----
@@ -1908,6 +1916,8 @@ document.addEventListener('keydown', e => {
   if (e.key === '`') { toggleMaximize(); return; }
   if (!e.ctrlKey && !e.metaKey && e.key === '-') { setZoom('out'); return; }
   if (!e.ctrlKey && !e.metaKey && e.key === '=') { setZoom('in'); return; }
+  if (state.lens === 'told' && e.key.toLowerCase() === 't') { arCycleRuler(); return; }
+  if (state.lens === 'told' && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) { arStepBeat(e.key === 'ArrowRight' ? 1 : -1); e.preventDefault(); return; }
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else clearSelection(); return; }
   if (e.key === ' ') { if (state.hoverTarget){ e.preventDefault(); toggleTip(state.hoverTarget); } return; }
 });
@@ -1923,7 +1933,8 @@ renderSignpostGrid();
 renderFamFilter();
 renderNodeColumns();
 setZoom('out');
-renderTold();
+// the Told lens (The Arrangement) renders lazily on first switch — its lane
+// has zero size while hidden; applyLayout()/setLens() trigger toldRender() then.
 renderLogFilter();
 detailTab = 'detail';
 // seed the log with the session's opening moves, then land on the crash event

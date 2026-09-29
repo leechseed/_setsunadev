@@ -230,7 +230,7 @@ def load(story: str) -> dict:
 
     return {
         "story": raw["story"], "title": raw.get("title", ""),
-        "version": raw.get("version"), "last_updated": raw.get("last_updated"),
+        "version": raw.get("version"), "last_updated": str(raw.get("last_updated") or ""),
         "movements": raw.get("movements") or [],
         "sequences": raw.get("sequences") or [],
         "scenes": out_scenes,
