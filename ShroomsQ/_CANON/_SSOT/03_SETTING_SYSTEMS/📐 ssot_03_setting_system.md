@@ -1,10 +1,10 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.4.1
+version: 1.4.2
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations")
+status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3)
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -112,6 +112,8 @@ A scene deploys one or two modes deliberately; all six at once is noise. The SCE
 ### Axis 4 · TIME — baseline and states (the setting arc)
 
 A slice is the **baseline**; **states** are dated overlays keyed to ladder addresses. The *setting arc* (thread, Module 1) is the sequence of states: `DCUS[M1] → DCUS[M4]`. Mirrors the character state architecture in 02. This is how a place "evolves over the plot."
+
+The full state architecture — base slice vs. state diffs, checkpoints and story points, the state record format, the DCUS rename lattice as the first instance — lands in [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) (BOLO 90 step 3); the time code and the two rulers it dates against live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md).
 
 ---
 
@@ -247,6 +249,10 @@ Benched: the dueling bells (the Red Hills bell tower against the Feed's period s
 
 **Genre-contract tool, 2026-09-29 (synthesis change 8, RULED):** Ryan's nine-axis ontological scoring [[BVX.0630]] is the primary L7 genre-contract tool; Baur's five-lineage taxonomy (Kobold, [[BVX.0458]]) stays as shorthand only — BVX.0630's own frontmatter states it supersedes the five-lineage tool, a sharpening, not a new concept.
 
+## TROPES
+
+Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is keyed to S1–S12 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **setting**. Most land on S1 BODY (place types); S2 WEATHER holds only 3, a gap in TV Tropes, not in the slice.
+
 ## OPEN
 
 **From the setting wave, 2026-09-16 (BOLO 18; distills BVX.0458 · 0349 · 1122 + the Truby/McKee addenda):**
@@ -256,11 +262,14 @@ Benched: the dueling bells (the Red Hills bell tower against the Feed's period s
 **RULED 1.4.0, 2026-09-29:** passageway (→ S1 seam type) · McKee's conflict level (→ S12 reading) · Kennedy's fill rule (→ PART A) · tone-to-mechanic, change 5 (→ S12 sub-note) · the twelve layer names (ruled as they stand) · `03_SETTING_SYSTEMS/` placement (kept) — all closed.
 
 **Still open (authoring, not calls):**
-- **Setting state architecture** — dated-overlay format specced at Axis 4; full doc mirrors `ssot_02_character_state_architecture` when first needed.
 - **Scene card field trial** — first real scene of OXO should run one card end-to-end.
+
+**Landed:**
+- **Setting state architecture — landed 2026-09-29** (BOLO 90 step 3): [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs, checkpoints and story points, the DCUS rename lattice instanced as three checkpoints.
 
 ## Version history
 
+- **1.4.2 — 2026-09-29.** BOLO 90 step 3, setting state architecture landed as its own doc: [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs mirroring `ssot_02_character_state_architecture` v1.2 layer for layer, checkpoints and story points per `ssot_08_tracking_system`, and the DCUS rename lattice (Skeeter Creek → Red Hills → DCUS) instanced as the first three checkpoints. OPEN list's "Setting state architecture" bullet moved to Landed; Axis 4 TIME gets one sentence pointing at the new doc and ssot_08. No taxonomy or slice change.
 - **1.4.1 — 2026-09-29.** RULED by Chief ("go, all recommendations"): DCUS S2 WEATHER filled (the cooled-building split kept); DCUS faction cards added under THE INSTANCE, the Administration and the Bishops ruled as two factions, the Bishops' secret conditional, the Sync Cult held, the bells benched. No schema change.
 - **1.4.0 — 2026-09-29.** RULED by Chief ("I'll recommend"): the six OPEN calls closed as recommended. S1 border/seam gains the `passageway` seam type (Truby). S12 gains McKee's conflict level as a reading and the tone-to-mechanic sub-note (synthesis change 5, unbenched). PART A gains the fill rule (Kennedy): thin by default. The twelve layer names ruled as they stand; `03_SETTING_SYSTEMS/` placement kept.
 - **1.3.0 — 2026-09-29.** RULED by Chief ("go on all those recs"): synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 applied. THE FACTION / NATION CARD added as a companion notation to the SCENE CARD (change 1). S1 BODY gets a border/seam sub-field (change 3). S7 FOUNDING gets the present-tense-bite grammar test (change 2). S5 SCAR and S9 ALLURE cross-reference each other (change 4). S12 FUNCTION gets the TAW/TRW binding-clause working rule (change 6). S10 UNDERSIDE upgraded from binary to three-tier public/folk/secret (change 7). Ryan's nine-axis ontological scoring named the primary L7 genre-contract tool, Baur's five-lineage taxonomy kept as shorthand (change 8). S11 VECTOR gets an optional forward-ledger sub-field (change 9). Change 5 (tone-to-mechanic conversion step) BENCHED, moved to OPEN. Change 10 reaffirmed — thin-by-default stays the rule, no structural change.
