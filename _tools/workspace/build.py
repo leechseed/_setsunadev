@@ -1466,7 +1466,7 @@ function arCategorizeEdits(){
   const cancelled = new Set();
   for (const e of all) {
     const d = e.data || {};
-    if (d.op === 'undo' && !appliedSet.has(e.id) && !undoneSet.has(e.id) && !flaggedMap[e.id]) cancelled.add(d.ref);
+    if (d.op === 'undo' && !appliedSet.has(e.id) && !undoneSet.has(e.id) && !flaggedMap[e.id]) cancelled.add((d.data || {}).ref || d.ref);  // the contract nests ref under data (fixed 9/29: undo never cancelled on the page)
   }
   const pending = [], flagged = [], history = [];
   for (const e of all) {
@@ -1564,7 +1564,7 @@ function arEditLabel(e){
   if (d.op === 'cable.add') return `cable ${d.id} — ${d.why || ''}`;
   if (d.op === 'cable.remove') return `cable ${d.id} (removed)`;
   if (d.op === 'tempo.planned') return `tempo curve · ${(d.points||[]).length} pts`;
-  if (d.op === 'undo') return `undo → ${d.ref}`;
+  if (d.op === 'undo') return `undo → ${(d.data || {}).ref || d.ref}`;
   return d.op || 'edit';
 }
 
@@ -1603,13 +1603,18 @@ async function arWriteEdit(op, data){
 
 function arNewestUndoableId(){
   const { pending } = arCategorizeEdits();
-  const real = pending.filter(e => (e.data || {}).op !== 'undo');
+  // skip edits an undo already cancels, including undos written this visit that the snapshot hasn't echoed yet
+  // (bug 9/29: three quick Ctrl+Z wrote three undos against the same edit)
+  const undoneRefs = new Set(pending.filter(e => (e.data || {}).op === 'undo').map(e => (e.data.data || {}).ref));
+  (AR_EDIT.localUndone || []).forEach(r => undoneRefs.add(r));
+  const real = pending.filter(e => (e.data || {}).op !== 'undo' && !undoneRefs.has(e.id));
   return real.length ? real[real.length - 1].id : null;
 }
 function arUndoLast(){
   if (!AR_EDIT.mode || AR_EDIT.readOnly) return;
   const id = arNewestUndoableId();
   if (!id) { arSetMsg('nothing pending to undo'); return; }
+  (AR_EDIT.localUndone = AR_EDIT.localUndone || []).push(id);
   arWriteEdit('undo', { ref: id });
 }
 

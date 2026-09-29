@@ -2,30 +2,45 @@
 # One store, many views: this file holds the data; ssot_08_tracking_system.md defines the format;
 # the workspace edits it through `tracking.py pull` (step 6, RULED 2026-09-29; contract: _tools/bolostatus/work/90/EDIT-CONTRACT.md). Time codes: M · Q · S | bar.beat.tick (ssot_08 §4).
 # ⧗ = proposed, not ruled canon. First rows: the M2 grief trial (_tools/bolostatus/work/90/TRIAL-M2-grief.md).
+# M1 · M4 · M5 · M6 skeleton scenes loaded 2026-09-29 (BOLO 90), lengths ⧗ 16 bars.
 
 story: oxo
 title: OVEREXITOUT · The Outliers
-version: 0.1.0
+version: 0.1.1
 last_updated: 2026-09-29
 
 movements:
+  - {id: M1, label: Movement 1}
   - {id: M2, label: Movement 2}
   - {id: M3, label: Movement 3}
+  - {id: M4, label: Movement 4}
+  - {id: M5, label: Movement 5}
+  - {id: M6, label: Movement 6}
 
 sequences:
+  - {id: "M1 · Q1", label: "The crash and the resolve ⧗"}
   - {id: "M2 · Q1", label: The grief sequence}
   - {id: "M3 · Q2", label: The recovery ⧗}
+  - {id: "M4 · Q1", label: "Student to Noise ⧗"}
+  - {id: "M5 · Q1", label: "The coup company faces the wrong way, on purpose ⧗"}
+  - {id: "M6 · Q1", label: "The Fault Line ⧗"}
 
 # told order: each scene carries its meter (time signature, default 4/4) and its fabula event
 scenes:
+  - {mv: M1, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The crash and the resolve ⧗", event: m1b_crash_jebb_death, card: _CANON_NODES/oxo-scene-card-M1-skeleton.md}
   - {mv: M2, q: Q1, s: S01, sig: 7/8, bars: 16, label: "Grief montage · the glitches", event: m2_grief_outbursts, frequency_mode: iterative, card: _CANON_NODES/oxo-scene-card-M2-grief-summary.md}
   - {mv: M2, q: Q1, s: S02, sig: 7/8, bars: 14, label: "The diagnostic · “Digital Puberty”", event: m2_grief_outbursts, frequency_mode: iterative, card: _CANON_NODES/oxo-scene-card-M2-grief-summary.md}
   - {mv: M2, q: Q1, s: S03, sig: 4/4, bars: 12, label: "Row 9 · first Sync verified", event: m2_first_sync_verified, card: _CANON_NODES/oxo-scene-card-M2-row9.md}
   - {mv: M3, q: Q2, s: S01, sig: 4/4, bars: 16, label: "The search · by hand ⧗", event: m3_underground_search}
   - {mv: M3, q: Q2, s: S02, sig: 4/4, bars: 10, label: "Crash analepsis (flashback)", event: m1b_crash_jebb_death, card: _CANON_NODES/oxo-scene-card-M3-crash-analepsis.md}
+  - {mv: M4, q: Q1, s: S01, sig: 4/4, bars: 16, label: "Student to Noise ⧗", event: m4_critical_error_reclassification, card: _CANON_NODES/oxo-scene-card-M4-skeleton.md}
+  - {mv: M5, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The coup company faces the wrong way, on purpose ⧗", event: m5_diaspora_forms, card: _CANON_NODES/oxo-scene-card-M5-skeleton.md}
+  - {mv: M6, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The Fault Line ⧗", event: m6_fault_line_collapse, card: _CANON_NODES/oxo-scene-card-M6-skeleton.md}
 
 # story points: one field changing at one time code (ssot_08 §5); values step and hold unless ramp
 story_points:
+  - {subject: character:victoria_midnight, at: "M1 · Q1 · S01 | 010.1.1", field: L5_WOUND.severity, value: 8, origin_event: m1b_crash_jebb_death}
+  - {subject: character:victoria_midnight, at: "M1 · Q1 · S01 | 015.1.1", field: resolve.stated, value: "I will become untouchable", origin_event: m1b_untouchable_resolve}
   - {subject: character:victoria_midnight, at: "M2 · Q1 · S01 | 001.1.1", field: L5_WOUND.containment, value: held, origin_event: m2_grief_outbursts}
   - {subject: character:victoria_midnight, at: "M2 · Q1 · S01 | 004.2.1", field: sync_feed.artifact_visible, value: "true", origin_event: m2_grief_outbursts, repeat_count: "many ⧗", span: "M2 · Q1 · S01 | 004.2.1 → M2 · Q1 · S02 | 014.4.3"}
   - {subject: character:victoria_midnight, at: "M2 · Q1 · S02 | 006.3.2", field: public_record.label, value: Digital Puberty, origin_event: m2_grief_outbursts}
@@ -36,6 +51,10 @@ story_points:
   - {subject: place:dcus, at: "M2 · Q1 · S02 | 002.1.1", field: S4_LAW.diagnostic, value: routine diagnostic opened, origin_event: m2_grief_outbursts}
   - {subject: place:dcus, at: "M2 · Q1 · S02 | 006.3.2", field: S4_LAW.diagnostic, value: "closed · filed", origin_event: m2_grief_outbursts}
   - {subject: place:dcus, at: "M3 · Q2 · S01 | 014.2.1", field: S10_UNDERSIDE.exposed, value: "the deletion", origin_event: m3_underground_search}
+  - {subject: character:victoria_midnight, at: "M4 · Q1 · S01 | 008.1.1", field: public_record.label, value: "Critical Error", origin_event: m4_critical_error_reclassification}
+  - {subject: character:victoria_midnight, at: "M5 · Q1 · S01 | 006.1.1", field: relationships.role, value: "Radicalizing Spark", origin_event: m5_diaspora_forms}
+  - {subject: character:victoria_midnight, at: "M6 · Q1 · S01 | 015.1.1", field: storyform.outcome, value: Failure, origin_event: m6_fault_line_collapse}
+  - {subject: character:victoria_midnight, at: "M6 · Q1 · S01 | 015.2.1", field: storyform.judgment, value: Good, origin_event: m6_fault_line_collapse}
 
 # tropes in play: register slugs (ssot_01_trope_register.md); the key shows the layer each serves
 tropes:
@@ -74,8 +93,11 @@ theme:
   rail: R2
   scale: FREEDOM
   in_world:
+    - {at: "M1 · Q1 · S01 | 015.2", v: -2}
     - {at: "M2 · Q1 · S01 | 001.1", v: -1}
     - {at: "M3 · Q2 · S01 | 014.3", v: -2}
+    - {at: "M4 · Q1 · S01 | 015.2", v: -2}
+    - {at: "M6 · Q1 · S01 | 015.2", v: 1}
   audience:
     - {at: "M2 · Q1 · S01 | 001.1", v: -1}
     - {at: "M2 · Q1 · S02 | 006.4", v: -2}
@@ -103,7 +125,11 @@ world:
   - {id: backstory_skeeter_creek_founding, m: backstory, label: Skeeter Creek founded, dcus_name: Skeeter Creek}
   - {id: backstory_red_hills_rename, m: backstory, label: Renamed Red Hills, dcus_name: Red Hills Academy}
   - {id: backstory_dcus_rebrand, m: backstory, label: "Bishops rebrand: DCUS", dcus_name: DCUS}
+  - {id: m1b_race_arrest, m: M1, label: "The finish-line arrest ⧗ (before the crash)"}
   - {id: m1b_crash_jebb_death, m: M1, label: "The crash · Jebb dies"}
   - {id: m2_grief_outbursts, m: M2, label: Grief outbursts (repeat)}
   - {id: m2_first_sync_verified, m: M2, label: First Sync verified}
   - {id: m3_underground_search, m: M3, label: The underground search}
+  - {id: m4_critical_error_reclassification, m: M4, label: "Critical Error reclassification ⧗"}
+  - {id: m5_diaspora_forms, m: M5, label: "The Diaspora forms ⧗"}
+  - {id: m6_fault_line_collapse, m: M6, label: "The Fault Line collapse ⧗"}
