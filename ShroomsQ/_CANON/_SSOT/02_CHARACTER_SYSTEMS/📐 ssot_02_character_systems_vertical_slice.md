@@ -1,14 +1,14 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 2.1.0
+version: 2.2.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v2.1.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory now distilled, BVX.1127). New fields: L1/L2/L3 gain an Egri text stack; L4 gains coping_strategy and is redefined as decision-capacity not toughness; L5 gains severity, triggers, relational_refs; L7 gains provisional hereditary_predisposition; L8 gains attachment_dimensions, protest_behaviors, deactivating_strategies, and the rename primary_attachment_object → secure_base_object (old name kept as a read alias); L11 gains arc_type, change_cause, catalyst_archetype; L12 gains the Protagonist-necessity rule. Victoria Midnight instance kept valid: new fields empty or ⧗ where undocumented, no canon invented. v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Chief: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
+status: "v2.2.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" — the L9 EROS synthesis (ssot_02_l9_eros_synthesis.md) applied in full, all ten PROPOSED CHANGES: L9 EROS gains consent_posture, client_script (the scripted↔spontaneous axis), signal_fluency, resolution_type (under desire_vector), exposure_shame/role_shame (splitting shame_index, kept as a read alias), arousal_curve (under erotic_blueprint_type), erotic_safety_precondition_scope (internal/external), disclosure_posture (on L9, cross-linked to L3's), and template_origin (an L9→L8 pointer); erotic_pacing adopted as a Core Methodology writing rule, not a field. Victoria Midnight instance kept valid: exposure_shame, erotic_safety_precondition_scope, and template_origin backfilled from documented text (victoria-midnight-L9-eros.md); consent_posture, client_script, signal_fluency, resolution_type, role_shame, arousal_curve, and disclosure_posture marked ⧗/null, no canon invented. The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions) logged to the acquisition list — the whole-spectrum library sweep already running covers it. ## TROPES untouched. v2.1.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory now distilled, BVX.1127). New fields: L1/L2/L3 gain an Egri text stack; L4 gains coping_strategy and is redefined as decision-capacity not toughness; L5 gains severity, triggers, relational_refs; L7 gains provisional hereditary_predisposition; L8 gains attachment_dimensions, protest_behaviors, deactivating_strategies, and the rename primary_attachment_object → secure_base_object (old name kept as a read alias); L11 gains arc_type, change_cause, catalyst_archetype; L12 gains the Protagonist-necessity rule. Victoria Midnight instance kept valid: new fields empty or ⧗ where undocumented, no canon invented. v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Chief: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
 rung: standard
-dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system"]
+dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_l9_eros_synthesis"]
 trunk: BLACK
-sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127]
+sources: [BVX.0064, BVX.0075, BVX.0193, BVX.0089, BVX.0196, BVX.0061, BVX.0209, BVX.0233, BVX.0045, BVX.1123, BVX.1124, BVX.1127, MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13]
 purpose: "THE CHARACTER SYSTEM, v2.0.0: the 12-Layer Character Database vertical slice, the first top-layer model of the lattice, now written against the character shelf of the library, which holds nine distills across McKee, Davis, Truby, Dramatica, Corbett, Card, Puglisi & Ackerman, Pelican, and Schmidt."
 ---
 
@@ -102,7 +102,7 @@ One table, twelve layers, the same architecture the SETTING SLICE and the PLOT S
 | **L6** | **DRIVE** | What fuels the active goal-pursuit, and from what source? | [[BVX.0075]] super-objective, [[BVX.0233]] the fifteen motivations, [[BVX.0045]] cares-about/motivates | `DRIVE` | Tier 2 |
 | **L7** | **ORIGIN** | What birth context and formation set the starting conditions? | [[BVX.0075]] birth marks, [[BVX.0061]] justification, [[BVX.1123]] heredity (provisional) | `origin_class`, `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level`, `system_exposure`, `hereditary_predisposition` | Tier 3 |
 | **L8** | **IMPRINT** | What formative conditioning locked in before the story began? | [[BVX.0075]], [[BVX.0233]] life-stage emotional concerns, [[BVX.1127]] attachment theory | `attachment_style`, `attachment_style_score`, `attachment_dimensions`, `protest_behaviors`, `deactivating_strategies`, `emotional_range`, `conditional_patterns`, `imprint_flexibility`, `secure_base_object` (was `primary_attachment_object`, kept as a read alias) | Tier 3 |
-| **L9** | **EROS** | How is desire structured, armored, and made safe? | [[BVX.0075]] sexuality as attitude, and the L9 v2 doc, [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md) | `erotic_blueprint_type`, `desire_vector`, `shame_index`, `armor_index`, `satisfaction_cycle_truncation`, `erotic_safety_precondition`, `intimacy_mode` | Tier 3 |
+| **L9** | **EROS** | How is desire structured, armored, and made safe? | [[BVX.0075]] sexuality as attitude, the L9 v2 doc, [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md), and the L9 EROS synthesis (RULED 2026-09-29, MSX.18–MSX.36, PSY.08–PSY.13), [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md) | `erotic_blueprint_type` (+ `arousal_curve`), `desire_vector` (+ `resolution_type`), `consent_posture`, `client_script`, `signal_fluency`, `shame_index` (+ `exposure_shame`, `role_shame`), `armor_index`, `satisfaction_cycle_truncation`, `erotic_safety_precondition` (+ `erotic_safety_precondition_scope`), `intimacy_mode`, `disclosure_posture`, `template_origin` | Tier 3 |
 | **L10** | **SHADOW** | What is repressed, projected, or denied, and what does it generate? | [[BVX.0064]] true character vs characterization, [[BVX.0196]] secrets and the adaptation hierarchy, [[BVX.0045]] the shadow face, [[BVX.0233]] the Dark Triad (pilot dial) | `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content` | Tier 3 |
 | **L11** | **DESTINY** | What is the character building toward, not where they stand? | [[BVX.0045]] the two journeys, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement`, `arc_type`, `change_cause`, `catalyst_archetype` | Tier 3 |
 | **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | [[BVX.0089]] the eight archetypes, [[BVX.0061]] the hierarchy, [[BVX.0064]] the cast map, [[BVX.1123]] the pivotal character | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `narrative_invariant`, `story_outcome`, `story_judgement`, `limit_type`, `resolve` | Tier 3 |
@@ -135,6 +135,14 @@ Characterization effort tracks narrative rank. Tier depth already encodes this l
 
 ---
 
+### Erotic Pacing
+
+*(the L9 EROS synthesis, RULED 2026-09-29, Chief: "Rex" — [[MSX.26]] Maes ed., [[MSX.33]] Waldrep — APPLIED 2.2.0, no new field)*
+
+A four-device toolkit — withhold, fragment, bound, interrupt — governs how any L9-driven scene is narrated, parallel to how the 9/16 wave resolved the tyranny of motive as a house writing rule rather than schema (OPEN call 3). The devices are craft, not character data: they describe how the prose paces a scene the twelve-layer values already justify, not a new value assigned to a character.
+
+---
+
 ### The 12 Layers: Domain Declarations
 
 Each layer governs one and only one domain. Overlap between layers constitutes a schema error, not a character note.
@@ -155,7 +163,7 @@ Each layer governs one and only one domain. Overlap between layers constitutes a
 
 **L8 — IMPRINT:** Formative emotional conditioning. Attachment architecture, emotional range, and operational belief patterns established prior to story entry. The field list is now [[BVX.1127]] Levine & Heller, *Attached* (call 14, APPLIED 2.1.0): `attachment_style` as a four-way enum (secure · anxious · avoidant · fearful_avoidant), a two-dimension `attachment_dimensions` {anxiety, avoidance} beside the existing scalar `attachment_style_score`, and new list fields `protest_behaviors` and `deactivating_strategies`. `primary_attachment_object` is renamed `secure_base_object`; the old name is kept as a read alias, the only rename in this bump.
 
-**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode.
+**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode. Nine sub-fields added 2026-09-29 (the L9 EROS synthesis, RULED 2026-09-29, Chief: "Rex" — APPLIED 2.2.0), read against the 9/29 sexuality distill shelf (MSX.18–MSX.36, PSY.08–PSY.13), full derivation in [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md): `consent_posture` alongside `desire_vector`, distinct from `erotic_safety_precondition` — a "yes" and a want are different facts (cites MSX.18, MSX.22, MSX.27, PSY.11); `client_script` — scripted↔spontaneous, revisable mid-scene, for staged or paid intimacy (cites MSX.18, MSX.19, MSX.27); `signal_fluency` — fluent / functional / illiterate, nonverbal desire-and-consent literacy independent of desire's content (cites MSX.21, MSX.22, MSX.29); `resolution_type` under `desire_vector` — terminating / additive, for desire that accumulates without a finish line (cites MSX.24, MSX.32, PSY.13); `exposure_shame` and `role_shame` splitting `shame_index`, both 0–10, same convention — `shame_index` kept as a read alias for `exposure_shame`, the same pattern as L8's `secure_base_object` rename (cites MSX.23, MSX.25, MSX.34); `arousal_curve` under `erotic_blueprint_type` — spike / plateau / current (cites MSX.23, MSX.30, MSX.32); `erotic_safety_precondition_scope` on `erotic_safety_precondition` — internal / external, for a chemical or structural precondition invisible to the scene itself, e.g. PrEP, U=U (cites MSX.18, MSX.24, MSX.29); `disclosure_posture` on L9 — the sexual-health disclosure register, cross-linked to but distinct from L3's own `disclosure_posture` (cites MSX.28, MSX.29, MSX.31, MSX.35); and `template_origin`, a relational pointer from L9 to the L8 imprint event a character's adult desire is downstream of, echoing L5's `relational_refs` pattern (cites PSY.08, PSY.13, MSX.23). `erotic_pacing` (MSX.26, MSX.33) is adopted as a Core Methodology writing rule above, not a field.
 
 **L10 — SHADOW:** Repressed, projected, and denied content. High SHADOW values generate active disadvantage clusters and modify stress-state behavior. [[BVX.0233]]'s Dark Triad (call 8) is noted here as the same pilot-only dial as L3's circumplex — RULED 2026-09-29 available to pilot on one character, not scored on Victoria, not yet a schema field.
 
@@ -345,19 +353,29 @@ Her secure base object was her brother. He functioned as navigator to her driver
 
 ---
 
-**L9 EROS** — v2, AUTHORED 2026-08-15 · propagated 2026-08-24
+**L9 EROS** — v2, AUTHORED 2026-08-15 · propagated 2026-08-24 · widened 2026-09-29 (L9 EROS synthesis, RULED 2026-09-29, Chief: "Rex")
 
 |Variable|Value|
 |---|---|
 |`erotic_blueprint_type`|kinesthetic|
+|`arousal_curve` (under `erotic_blueprint_type`)|⧗ — not named in the sources that authored her; `satisfaction_cycle_truncation` is a related but distinct taxonomy, not spike/plateau/current|
 |`desire_vector`|3|
-|`shame_index`|2|
+|`resolution_type` (under `desire_vector`)|⧗ — the sources read her chase of Desire as a foreclosed signal (victoria-midnight-L9-eros §4), not documented as terminating or additive|
+|`consent_posture`|⧗ — not documented|
+|`shame_index`|2 (kept, read alias for `exposure_shame`)|
+|`exposure_shame`|2 — same value and text as the held `shame_index`: the Administration's primary weapon is public Desyncs and legibility, and she is immune to it (§1)|
+|`role_shame`|⧗ — not documented|
 |`armor_index`|8|
 |`satisfaction_cycle_truncation`|reach|
 |`erotic_safety_precondition`|control|
+|`erotic_safety_precondition_scope`|internal — "control... internal to her" (victoria-midnight-L9-eros §4)|
 |`intimacy_mode`|parallel_presence|
+|`client_script`|⧗ — not documented, no staged/paid-intimacy register in her canon|
+|`signal_fluency`|⧗ — not documented|
+|`disclosure_posture`|⧗ — not documented|
+|`template_origin`|L8 `secure_base_object` (brother_deceased) — her erotic template, the pace notes / `parallel_presence`, is explicitly sourced to the brother/navigator bond (§3)|
 
-Source: AUTHORED against catalogued sources (PSY.01 Walker · MSX.17 Perel · PSY.04 Rehor & Schiffman) — full derivation in [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md), which supersedes the v1 INFERRED block. The load-bearing distinction: low shame with high armor. She cannot be shamed into compliance, so the system reads her instead.
+Source: AUTHORED against catalogued sources (PSY.01 Walker · MSX.17 Perel · PSY.04 Rehor & Schiffman) — full derivation in [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md), which supersedes the v1 INFERRED block. The load-bearing distinction: low shame with high armor. She cannot be shamed into compliance, so the system reads her instead. Widened 2026-09-29 against the sexuality distill shelf (MSX.18–MSX.36, PSY.08–PSY.13) — full derivation in [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md); three of the nine new sub-fields backfill from text already on record (`exposure_shame`, `erotic_safety_precondition_scope`, `template_origin`), the rest hold ⧗ pending documentation, no canon invented.
 
 ---
 
@@ -521,13 +539,23 @@ L8_IMPRINT:
 
 L9_EROS:
   erotic_blueprint_type: kinesthetic
+  arousal_curve: null            # ⧗ not named in Tori's sources; satisfaction_cycle_truncation is a related, distinct taxonomy
   desire_vector: 3
-  shame_index: 2
+  resolution_type: null          # ⧗ not documented as terminating or additive
+  consent_posture: null          # ⧗ not documented
+  shame_index: 2                 # kept as read alias for exposure_shame (same pattern as L8 secure_base_object)
+  exposure_shame: 2              # same value/text as shame_index -- immunity to public Desync/legibility shaming
+  role_shame: null               # ⧗ not documented
   armor_index: 8
   satisfaction_cycle_truncation: reach
   erotic_safety_precondition: control
+  erotic_safety_precondition_scope: internal   # "control... internal to her" (victoria-midnight-L9-eros §4)
   intimacy_mode: parallel_presence
-  source_confidence: canonical   # AUTHORED 2026-08-15 — victoria-midnight-L9-eros v2
+  client_script: null            # ⧗ no staged/paid-intimacy register in her canon
+  signal_fluency: null           # ⧗ not documented
+  disclosure_posture: null       # ⧗ not documented
+  template_origin: "L8.secure_base_object=brother_deceased"   # erotic template traces to the brother/navigator bond (§3)
+  source_confidence: canonical   # AUTHORED 2026-08-15 — victoria-midnight-L9-eros v2; widened 2026-09-29, L9 EROS synthesis
 
 L10_SHADOW:
   shadow_density: 7
@@ -641,6 +669,8 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 15. **Masks, the Shapeshifter, and the Mentor.** APPLIED 2.1.0 — folded into one relational field, `relational_refs` (list of `{kind: ghost|revenant|mentor|shapeshifter, character_id, note}`), sited on L5, superseding call 1's separate `ghost_ref`/`revenant_ref` proposal and absorbing the Mentor and Shapeshifter pointers this call raised.
 
+16. **L9 synthesis ruled and applied 2.2.0.** RULED 2026-09-29 (Chief: "Rex") — all ten PROPOSED CHANGES in the L9 EROS synthesis ([ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md)) applied: `consent_posture`, `client_script`, `signal_fluency`, `resolution_type` (under `desire_vector`), `exposure_shame`/`role_shame` (splitting `shame_index`, kept as a read alias), `arousal_curve` (under `erotic_blueprint_type`), `erotic_pacing` (Core Methodology rule, no field), `erotic_safety_precondition_scope`, `disclosure_posture` (on L9, cross-linked to L3's), and `template_origin` (an L9→L8 pointer). The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions — no source in the 9/29 wave addresses lesbian or WLW-specific desire architecture) is logged to the acquisition list; the whole-spectrum sexuality library sweep already running covers it.
+
 ## Version history
 
 |Version|Date|Changes|
@@ -651,3 +681,4 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 |2.0.1|2026-09-16|The eleven OPEN calls ruled as recommended, applying at the next schema bump ("character calls go"). No schema change.|
 |2.0.2|2026-09-16|The drop-folder intake folded in: three new CHARACTER × LIBRARY rows (Egri, Levine & Heller, Vogler); sources gained BVX.1123, BVX.1124, BVX.1127; four OPEN calls added (12-15), unruled. Schema, formulas, and the Victoria Midnight instance unchanged.|
 |2.1.0|2026-09-29|RULED 2026-09-29, Chief: "Rex" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory distilled, BVX.1127). Schema additions: L1/L2/L3 gain an Egri text stack (`psychology_stack`, `physiology_stack`, `sociology_stack`); the Hierarchy Rule stated in Core Methodology; L4 WILL redefined as decision-capacity not toughness, gains `coping_strategy`; L5 WOUND gains `severity` (formalizing the existing 0–10 scale), `triggers`, and `relational_refs` (list of {kind: ghost\|revenant\|mentor\|shapeshifter, character_id, note}, superseding the separate `ghost_ref`/`revenant_ref` proposal and folding in calls 1 and 15); L7 ORIGIN gains provisional `hereditary_predisposition`; L8 IMPRINT gains `attachment_style` as a four-way enum, two-dimension `attachment_dimensions` {anxiety, avoidance} beside the scalar `attachment_style_score`, list fields `protest_behaviors` and `deactivating_strategies`, and the rename `primary_attachment_object` → `secure_base_object` (old name kept as a read alias, the only rename this bump); L11 DESTINY gains `arc_type`, `change_cause`, `catalyst_archetype`; L12 FUNCTION gains the Protagonist-necessity rule; the circumplex and Dark/Light Triad dials (call 8) documented as pilot-only under L3 and L10, not scored. Victoria Midnight instance kept valid throughout: every new field either carries an existing documented value (severity, triggers) or is marked ⧗/null with no canon invented; her locked scalar values (CORE 13, VITAL 14, SOCIAL 10, WILL 14, WOUND 8, DRIVE 12) and every Tier 3 value present before this bump are unchanged.|
+|2.2.0|2026-09-29|RULED 2026-09-29, Chief: "Rex" — the L9 EROS synthesis (`ssot_02_l9_eros_synthesis.md`) applied in full, all ten PROPOSED CHANGES: L9 EROS gains `consent_posture` (distinct from `erotic_safety_precondition`, alongside `desire_vector`); `client_script` (the scripted↔spontaneous axis, revisable mid-scene); `signal_fluency` (fluent/functional/illiterate); `resolution_type` under `desire_vector` (terminating/additive); `exposure_shame` and `role_shame` splitting `shame_index` (both 0–10, `shame_index` kept as a read alias for `exposure_shame`); `arousal_curve` under `erotic_blueprint_type` (spike/plateau/current); `erotic_safety_precondition_scope` on `erotic_safety_precondition` (internal/external); `disclosure_posture` on L9 (cross-linked to, not replacing, L3's own field); and `template_origin`, a relational pointer from L9 to the L8 imprint event, echoing L5's `relational_refs` pattern. `erotic_pacing` (the withhold/fragment/bound/interrupt toolkit) adopted as a Core Methodology writing rule, not a field. All nine field additions are additive — no field removed, `shame_index` and `erotic_safety_precondition` both kept at their pre-bump values. Victoria Midnight instance kept valid: `exposure_shame` (2, same text as the held `shame_index`), `erotic_safety_precondition_scope` (internal), and `template_origin` (L8 `secure_base_object`=brother_deceased) backfilled from text already on record in this slice and in `victoria-midnight-L9-eros.md`; `consent_posture`, `client_script`, `signal_fluency`, `resolution_type`, `role_shame`, and `arousal_curve` marked ⧗/null, no canon invented; her locked L9 scalars (`erotic_blueprint_type` kinesthetic, `desire_vector` 3, `shame_index`/`exposure_shame` 2, `armor_index` 8, `satisfaction_cycle_truncation` reach, `erotic_safety_precondition` control, `intimacy_mode` parallel_presence) unchanged. The shelf's WLW/lesbian desire-architecture gap logged to the acquisition list. `## TROPES` untouched.|
