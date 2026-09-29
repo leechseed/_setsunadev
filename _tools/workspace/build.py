@@ -201,21 +201,21 @@ WORLD_CLOCK_ERAS = [
     {
         "id": "era_skeeter_creek",
         "label": "Skeeter Creek",
-        "note": "founding, buried — no date given",
+        "note": "universe era 1 · founding, buried — no date given",
         "detail": "100+ years of private prestige; the founding name sanded to “Red Hills” a century before the Bishops arrived. No calendar date exists for this transition.",
         "order": 0,
     },
     {
         "id": "era_red_hills",
         "label": "Red Hills",
-        "note": "the first rename — reach roughly a century before the Bishop acquisition, extent unstated",
+        "note": "universe era 1 · the first rename — reach roughly a century before the Bishop acquisition, extent unstated",
         "detail": "The rename lattice: Skeeter Creek → Red Hills → DCUS — erasure done twice.",
         "order": 1,
     },
     {
         "id": "era_dcus",
         "label": "DCUS",
-        "note": "the current era — tied to the Bishop acquisition",
+        "note": "universe era 2 · tied to the Bishop acquisition",
         "detail": "Prestige converted to product; the ownership war — grandfather vs son — sold for spoils to the Bishops.",
         "order": 2,
     },
@@ -223,16 +223,16 @@ WORLD_CLOCK_ERAS = [
 
 # the universe eras after DCUS (fabula THE WORLD CLOCK, RULED 2026-09-29): the stories move outward
 # from Earth. Chief 9/29 session 4: "after DCUS, there's the cislunar space, and then the moon, and
-# then beyond" — era 4 is named in canon only as "beyond" (⧗).
+# then beyond" — era 5 (renumbered 9/29 when Skeeter Creek became era 1) is named in canon only as "beyond" (⧗).
 for q in ("the LAKAD era", "the ASTRO7EX era", "the beyond era"):
     need(fabula_md, q, f"universe era: {q}")
 UNIVERSE_ERAS = [
-    {"id": "era_lakad", "label": "LAKAD", "note": "era 2 · cislunar space — band only, no events on record",
-     "detail": "The second universe era: LAKAD (codename), set in cislunar space. Sequential after DCUS, overlap allowed at the seam.", "order": 3, "universe": True},
-    {"id": "era_astro7ex", "label": "ASTRO7EX", "note": "era 3 · the Moon — band only, backstory events not yet loaded",
-     "detail": "The third universe era: ASTRO7EX, on the Moon. The Deep Meridian beam is the hinge into it.", "order": 4, "universe": True},
-    {"id": "era_beyond", "label": "Beyond ⧗", "note": "era 4 · past the Moon — unnamed, no story yet",
-     "detail": "The fourth universe era, past the Moon. Named only as 'beyond' (Chief, 9/29); no story or events yet.", "order": 5, "universe": True},
+    {"id": "era_lakad", "label": "LAKAD", "note": "era 3 · cislunar space — band only, no events on record",
+     "detail": "The third universe era: LAKAD (codename), set in cislunar space. Sequential after DCUS, overlap allowed at the seam.", "order": 3, "universe": True},
+    {"id": "era_astro7ex", "label": "ASTRO7EX", "note": "era 4 · the Moon — band only, backstory events not yet loaded",
+     "detail": "The fourth universe era: ASTRO7EX, on the Moon. The Deep Meridian beam is the hinge into it.", "order": 4, "universe": True},
+    {"id": "era_beyond", "label": "Beyond ⧗", "note": "era 5 · past the Moon — unnamed, no story yet",
+     "detail": "The fifth universe era, past the Moon. Named only as 'beyond' (Chief, 9/29); no story or events yet.", "order": 5, "universe": True},
 ]
 WORLD_CLOCK_ERAS = WORLD_CLOCK_ERAS + UNIVERSE_ERAS
 

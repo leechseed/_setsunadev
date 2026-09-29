@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 0.1.7
+version: 0.1.8
 last_updated: 2026-09-29
 applies_to: [every story in the LEECHSEED universe]
 status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1; a further BOLO 91 pass (phone notes digest) adds LEECHSEED as an open-universe seed."
@@ -15,7 +15,7 @@ sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", 
 
 **What this is:** one row per story in the LEECHSEED universe. A story is added here before any doc names it in `applies_to` or any tracking file is started for it. Nothing else lists stories.
 
-**The universe (RULED 2026-09-29):** one eon, three eras in order, moving outward from Earth, with overlap allowed at the seams: the **DCUS era** (Earth) → the **LAKAD era** (cislunar space) → the **ASTRO7EX era** (the Moon), "and eventually, beyond." The hinge (RULED 2026-09-29) is **the Deep Meridian beam**: a drill probe at Deep Meridian, a geothermal front on Earth, fires the radiation beam that signals the quasar reaching Vivian's time; the **Moon Severance** and the **AI Collapse** follow ⧗. Deep Meridian is a place and an event in the universe, not a story of its own. Full note: [the fabula's world clock](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md).
+**The universe (RULED 2026-09-29):** one eon, five eras in order, moving outward from Earth, with overlap allowed at the seams: the **Skeeter Creek era** (Earth, the founding through the Red Hills century; inserted as era 1, RULED 2026-09-29) → the **DCUS era** (Earth) → the **LAKAD era** (cislunar space) → the **ASTRO7EX era** (the Moon), "and eventually, beyond" (era 5 ⧗). The hinge (RULED 2026-09-29) is **the Deep Meridian beam**: a drill probe at Deep Meridian, a geothermal front on Earth, fires the radiation beam that signals the quasar reaching Vivian's time; the **Moon Severance** and the **AI Collapse** follow ⧗. Deep Meridian is a place and an event in the universe, not a story of its own. Full note: [the fabula's world clock](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md).
 
 ## THE REGISTRY
 
@@ -23,11 +23,11 @@ sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", 
 
 | Story | Aliases | Genre | Era | Where | Medium | Status | Storyform | Nodes · data |
 |---|---|---|---|---|---|---|---|---|
-| **OVEREXITOUT** (`oxo`) | *The Outliers* (series title) · OXO · lead Tori was first built as **Ariel** (Apple Notes 2025) | **G1: cultcore** (RULED 2026-09-29, BOLO 91, Apple Notes 2026) | 1 · DCUS | Earth, the Delta Coast (DCUS) | series ⧗ | **active**: storyform locked, systems built, proof scenes ruled | [oxo-storyform.md](../../../../_CANON_NODES/oxo-storyform.md) | `_CANON_NODES/oxo-*` · tracking [oxo.yaml](../../_TRACKING/oxo.yaml) |
-| **EVIL CHECK** (`evil_check`) | — | ⧗ | 1 · DCUS | Earth (same universe as OXO) | ⧗ | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
-| **LAKAD** (`lakad`) | codename, "for now" (2/9) | ⧗ | 2 · LAKAD | cislunar space | ⧗ | **named only** | none | none |
-| **ASTRO7EX** (`astro7ex`) | — | ⧗ | 3 · ASTRO7EX | the Moon | ⧗ | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
-| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ | 1 · DCUS (RULED 2026-09-29, BOLO 91: inside the universe's eras, not outside them; set on Earth; DCUS confirmed by Chief 2026-09-29: the universe's stories flow from Earth outward to space, so an Earth story sits in the first era) | Earth: the front line, Ukraine (board) | standard story size, "like a movie almost" (RULED 2026-09-29, BOLO 91) — **not** short-form; the "two readings" question stays open ⧗ | **seed**: the chalkboard transcribed 2026-09-29 | none | [tremor-cult-seed.md](../../../../_CANON_NODES/tremor-cult-seed.md) |
+| **OVEREXITOUT** (`oxo`) | *The Outliers* (series title) · OXO · lead Tori was first built as **Ariel** (Apple Notes 2025) | **G1: cultcore** (RULED 2026-09-29, BOLO 91, Apple Notes 2026) | 2 · DCUS | Earth, the Delta Coast (DCUS) | series ⧗ | **active**: storyform locked, systems built, proof scenes ruled | [oxo-storyform.md](../../../../_CANON_NODES/oxo-storyform.md) | `_CANON_NODES/oxo-*` · tracking [oxo.yaml](../../_TRACKING/oxo.yaml) |
+| **EVIL CHECK** (`evil_check`) | — | ⧗ | 2 · DCUS | Earth (same universe as OXO) | ⧗ | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
+| **LAKAD** (`lakad`) | codename, "for now" (2/9) | ⧗ | 3 · LAKAD | cislunar space | ⧗ | **named only** | none | none |
+| **ASTRO7EX** (`astro7ex`) | — | ⧗ | 4 · ASTRO7EX | the Moon | ⧗ | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
+| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ | 2 · DCUS (era renumbered 2026-09-29 when Skeeter Creek became era 1; RULED 2026-09-29, BOLO 91: inside the universe's eras, not outside them; set on Earth; DCUS confirmed by Chief 2026-09-29: the universe's stories flow from Earth outward to space, so an Earth story sits in the first era) | Earth: the front line, Ukraine (board) | standard story size, "like a movie almost" (RULED 2026-09-29, BOLO 91) — **not** short-form; the "two readings" question stays open ⧗ | **seed**: the chalkboard transcribed 2026-09-29 | none | [tremor-cult-seed.md](../../../../_CANON_NODES/tremor-cult-seed.md) |
 | **She Her Own** (`she_her_own`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: "a jaded young strip-club chef who basically runs the place falls in love with a violent and traumatized new girl. She challenges the ownership of the club for him, and the toxic relationship that forms runs them both to the end of their lives." | none | none |
 | **KING TOWNIE** (`king_townie`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: "old genius cook, young hungry hood rat." | none | none |
 | **Hellfighters** (`hellfighters`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: firefighters through hell. | none | none |
@@ -59,6 +59,7 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 ## Version history
 
+- **0.1.8 — 2026-09-29.** Eras renumbered: Skeeter Creek inserted as era 1 (Chief: "era one will be the Skeeter Creek"); OXO, EVIL CHECK and TREMOR CULT now read 2 · DCUS, LAKAD 3, ASTRO7EX 4.
 - **0.1.7 — 2026-09-29 (BOLO 91, "all recommendations").** LEECHSEED added as a SEED row (the Setsuna/Mayari cluster, `_PRIVATE/notes/phone-notes-2022-2023.digest.md`): universe left open (⧗), not placed in OXO's eras; the goop bookends, Mayari's helicopter-racing backstory, the "choppies" coast gig market, the shipbreaker kids sent "deep under," and Generation Zero's computer DER:G (Deus Ex Replicator: General) summarized, all provisional. Generation Zero's echo of the AI Collapse/Deep Meridian logged but not linked. Mayari's full name ruled **May Lasseur**; San La Sur stays unplaced. The Sockett attached to the row, marked PORTABLE.
 - **0.1.6 — 2026-09-29.** TREMOR CULT's two readings merged (BOLO 91): the soldier couple are the drone kids who film their kills for clout; TikTok is the in-world feed. See `_CANON_NODES/tremor-cult-seed.md`.
 - **0.1.5 — 2026-09-29.** TREMOR CULT's era 1 · DCUS confirmed by Chief; the universe's stories flow from Earth outward to space.
