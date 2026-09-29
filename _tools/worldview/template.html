@@ -71,6 +71,11 @@
   .pill.stub { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 45%, transparent); background: var(--warn-soft); }
   .pill.canon { color: var(--good); border-color: color-mix(in srgb, var(--good) 45%, transparent); background: var(--good-soft); }
   .empty { padding: 26px 0; color: var(--ink-3); }
+  .gauge { margin-top: 8px; padding: 8px 10px; background: var(--panel); border: 1px solid var(--line); max-width: 70ch; }
+  .gs { display: grid; grid-template-columns: 34px minmax(0, 13em) minmax(0, 1fr); gap: 2px 10px; font-size: 13.5px; padding: 2px 0; }
+  .gs b { font-family: var(--mono); font-weight: 500; color: var(--accent-ink); }
+  .gs i { color: var(--ink-3); }
+  @media (max-width: 480px) { .gs { grid-template-columns: 34px minmax(0, 1fr); } .gs i { grid-column: 2; } }
 
   .test { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 2px 10px; padding: 9px 0; border-top: 1px solid var(--line); align-items: start; }
   .test .c { font-family: var(--mono); font-size: 12px; padding-top: 1px; }
@@ -189,6 +194,7 @@ for (const g of D.gaps) G['in-' + g.code] = { t: g.code + ' · ' + g.name, k: 'i
 for (const e of D.entries) G['en-' + e.id] = { t: e.name, k: e.id, d: e.one_line };
 for (const c of Object.values(D.chars)) G['ch-' + c.id] = { t: c.name, k: 'person · 02 · ' + c.id, d: 'A character node. The person\'s own outfit and habits live in that file; the catalog holds what the person\'s groups share.' };
 for (const v of Object.values(D.events)) G['ev-' + v.id] = { t: v.id, k: 'event · ' + v.src, d: v.label || 'An event on the world timeline.' };
+G.gauge = { t: 'The gauge', k: '07 · civilization gauges', d: 'The value this civilization runs on, in four steps: positive, contrary, contradictory, and the negation of the negation, the lie it tells about itself. The rule lives in 07; the steps live on the entry.' };
 G.scale = { t: 'Rung', k: 'CT13 · scale source', d: 'Where the pressure starts: world-economy, nation-state or locality. Every filled entry names one.' };
 G.reader = { t: 'Reader tests', k: '09 · the lens, by reading', d: 'The coherence tests a script cannot check. A Payload Specialist reads the filled entries against canon and judges each one; each finding carries a rec.' };
 
@@ -216,6 +222,10 @@ function inEra(e, x) {
 }
 
 // ---- render ----
+function gaugeOf(e) {
+  const g = (e.fields || {}).gauge; if (!g) return '';
+  return `<div class="gauge"><span class="lbl">${term('gauge', 'gauge')} · ${esc(g.value)}</span>${g.steps.map(s => `<div class="gs"><b class="num">${esc(s.s)}</b><span>${esc(s.name)}</span><i>${esc(s.plain)}</i></div>`).join('')}</div>`;
+}
 function renderEntries() {
   const list = D.entries.filter(match);
   $('#nShown').textContent = list.length === D.entries.length ? `${list.length}` : `${list.length} of ${D.entries.length}`;
@@ -240,7 +250,7 @@ function renderEntries() {
           ${tracked ? `<span><b>08</b>${esc(tracked)}</span>` : ''}
           ${tropes ? `<span><b>tropes</b>${tropes}</span>` : ''}
           <span><b>sources</b>${(e.sources || []).map(esc).join(', ')}</span>
-        </div></div></article>`;
+        </div>${gaugeOf(e)}</div></article>`;
   }).join('') : '<p class="empty">No entry matches these filters. Clear a filter to see more.</p>';
 }
 function renderSide() {

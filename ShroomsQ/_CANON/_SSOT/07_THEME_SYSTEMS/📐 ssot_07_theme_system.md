@@ -1,7 +1,7 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 1.0.0
+version: 1.1.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
 status: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)
@@ -101,6 +101,20 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 | −− Contradictory | Injustice | *They change the rules when you start winning.* |
 | −−− Negation of the negation | A rigged game that calls itself fair | *They cheat you and give you a grade for it.* |
 
+## THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)
+
+**RULED 2026-09-29** (Chief, BOLO 93: "all rec", calls 2 Keep and 3 Split). Every civilization in the world runs its own value on the same four steps (positive · contrary · contradictory · negation of the negation). Each one is a face of the controlling idea: a system where ordinary people doing their jobs adds up to evil, and each one's −−− step is the lie it tells about itself. **The rule lives here; each civilization's four steps live on its catalog entry** (09), and the world view shows them. World scenes set in a civilization may read its gauge beside FAIRNESS.
+
+| Civilization | Catalog entry | Value | −−− (the lie it tells) |
+|---|---|---|---|
+| The Delta Coast / DCUS | WB-INS-0002 | Worth | A score that calls itself your nature |
+| The Narco Republic / Real Federale | WB-GRP-0004 | Belonging | A racket that calls itself a nation |
+| The Deepstate North (America as BioShock Infinite) | WB-GRP-0007 | Liberty | Tyranny that calls itself liberty |
+| The techno-corpo state (name open) | WB-GRP-0006 | Safety | A prison that calls itself protection |
+| The Kudzu | WB-GRP-0005 | Life | A death that calls itself life |
+
+The Kudzu is the controlling idea made literal: no one in it is evil at all; it only grows. Plain words are drafts for Chief to re-pick, the way FREEDOM and FAIRNESS were.
+
 ## THE MOTIFS — three images (80-B.3, RULED 2026-09-29)
 
 Recurring images that carry the theme without anyone saying it (Tomashevsky, Greimas isotopy); fed to the texture system. Each appearance moves the Freedom scale. Chosen by Chief 2026-09-29 (G · F · E), then amended the same night: the Feed replaces the legibility violation (G · F · A). The Sync score and the clothing glow stay as setting, not motif; the legibility violation stays a setting mechanic.
@@ -166,6 +180,8 @@ Every gate Chief set for 1.0, checked:
 None. Both items formerly listed here are resolved: the BOLO 81 handshake is built above; EVIL CHECK's controlling idea is PARKED (wave 2), not open.
 
 ## Version history
+
+- **1.1.0 · 2026-09-29** · THE CIVILIZATION GAUGES added (BOLO 93, "all rec"): five powers, one value each, the steps on their catalog entries.
 
 - **0.1.0 · 2026-09-29** — bootstrap: the controlling idea and the mechanism line, ruled; the storyform map; the open calls.
 - **0.2.0 · 2026-09-29** — the rails: four debates ruled (80-B.1), plain words handpicked (1B · 2B · 3B · 4A).
