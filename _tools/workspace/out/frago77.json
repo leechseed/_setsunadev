@@ -1,0 +1,23 @@
+{
+ "status": "Plot is the thinnest story system (about 40%, v0.2.4). Boresight 9/29 session 4: the rails, the fabula and the told order stand; what's missing is drafted prose, cards across all six movements, the genre obligation, and four unruled OPEN calls (8–11).",
+ "s": "hot",
+ "order": "**Rule 77-Y to 77-AC, then draft the M2 grief scene (first pass, about 45 min) against its card and the tracking grid.**",
+ "default": "Silence: plot holds at 0.2.4; no prose is written.",
+ "calls": [
+  {"q": "77-Y · the order of work", "s": "open", "options": ["prose first: draft the M2 grief scene, then widen", "widen first: card every movement, then draft"], "default": "prose first", "ruling": ""},
+  {"q": "77-Z · P10 genre obligation for OXO", "s": "open", "options": ["P10 reads cultcore (the ruled series genre) with Snyder's Institutionalized as the scene-level obligation; cultcore gets 3–5 written conventions in the genre system", "leave P10 blank until the genre system hits 1.0"], "default": "cultcore + Institutionalized", "ruling": ""},
+  {"q": "77-AA · OPEN 8–11 (repeat turn · multi-POV stacking · percentage addressing · discovery ladder)", "s": "open", "options": ["take all four recs, fold at the next bump", "rule one at a time"], "default": "take all four", "ruling": ""},
+  {"q": "77-AB · widen the arc", "s": "open", "options": ["after the first draft, skeleton-card one scene each in M1, M4, M5, M6 so the fabula and the told order span the whole story", "card only as scenes get drafted"], "default": "one skeleton card per movement", "ruling": ""},
+  {"q": "77-AC · the 1.0 bar for plot", "s": "open", "options": ["plot 1.0 = every movement has a carded scene, one scene drafted and tracked on the grid, OPEN 1–15 closed", "no fixed bar"], "default": "that bar", "ruling": ""}
+ ],
+ "items": [
+  {"p": "S", "label": "Boresight 9/29", "t": "**Stands:** the rails (135 nodes seated on 16 signposts, 1,034 keyed tropes), the fabula (world clock, four universe eras, Colson's origin), the told order (Genette modes), three scene cards (row 9, M2 grief, M3 crash analepsis), theme ruled whole, tracking built through step 7.", "s": "done"},
+  {"p": "S", "label": "Boresight 9/29", "t": "**Missing:** no drafted prose; cards exist only in M2 and M3 (M1, M4–M6 empty); the fabula carries Tori only (plus Colson's backstory); P10 genre obligation unset though cultcore is now ruled; OPEN 8–11 carry recs but no ruling.", "s": "open"}
+ ],
+ "strand": {"E": {"you": "Chief asked for the boresight on plot and the sheet (9/29, session 4), after the dev-% table put plot at about 40%.", "next": "Rule 77-Y to 77-AC; then the M2 grief first pass."}},
+ "log": [
+  {"who": "Chief", "t": "\"The boresight on plot and BOLO's up. What do we need to do for that? Give me the DOPE SHEET as well.\""},
+  {"who": "Claude", "t": "Boresight: plot at about 40% (v0.2.4, 36 ⧗). Five calls out, 77-Y to 77-AC, each with a rec; order = rule them, then draft the M2 grief scene."}
+ ],
+ "related": [{"n": 90, "why": "the tracking grid checks the draft"}, {"n": 80, "why": "theme ruled whole; the prose tests it"}, {"n": 91, "why": "cultcore ruled as the genre (feeds 77-Z)"}]
+}
