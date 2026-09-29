@@ -1,7 +1,7 @@
 ---
 node: tremor-cult-seed
 story: tremor_cult
-status: seed — transcribed from Chief's chalkboard photo, 2026-09-29; nothing ruled
+status: seed — transcribed from Chief's chalkboard photo, 2026-09-29; the rulings below are RULED 2026-09-29 (BOLO 91), the transcription itself is not
 source: chalkboard photo (session 2026-09-29; image in the session transcript)
 ---
 
@@ -49,3 +49,12 @@ Transcribed as written. `[?]` marks a word the photo does not settle; the best r
 
 - *Story is the [?] of change* (with circle · square · triangle)
 - *FANTASY DRIVE ×3 … BECOME SOMEONE ×2*
+
+## RULED 2026-09-29 (BOLO 91)
+
+- **Size:** standard story size, "like a movie almost." Not short-form.
+- **Place and era:** era 1 · DCUS, on Earth. The universe's stories flow from Earth outward to space.
+- **The two readings MERGED:** the soldier couple of the chalkboard (Reading A) *are* two of the clout-chasing drone kids of the 2022–23 phone notes (Reading B: teens on the Ukrainian front hunting Russian tanks with Javelins, filming their kills with drones, paid in social-media cred and by the militia, "rock stars on the front. Eventually they'll pay").
+  - Their filming makes them famous; the same fame is what gets them **rolled up as psyop propaganda** after the drone strike and the Bonnie-and-Clyde berserk.
+  - **[TIK-TOK]** is the in-world feed, not the medium.
+  - Source: `_PRIVATE/notes/phone-notes-2022-2023.digest.md` (Tremor Cult section; the unit name-bank there stays unplaced).

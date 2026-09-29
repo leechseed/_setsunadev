@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 0.1.5
+version: 0.1.6
 last_updated: 2026-09-29
 applies_to: [every story in the LEECHSEED universe]
 status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1."
@@ -49,7 +49,7 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 ## OPEN
 
-- **Medium per story** — blank (⧗) for most rows; OXO reads as a series from the telling profile but no ruling fixes the medium. TREMOR CULT's size is ruled (standard, not short-form); its "two readings" question stays open.
+- **Medium per story** — blank (⧗) for most rows; OXO reads as a series from the telling profile but no ruling fixes the medium. TREMOR CULT's size is ruled (standard, not short-form); its two readings are merged (the chalkboard couple are the phone notes' clout-chasing drone kids; TikTok is the in-world feed).
 - **Genre per story** — only OXO carries a genre (G1: cultcore); She Her Own, King Townie, Hellfighters, EVIL CHECK, LAKAD, and ASTRO7EX are all open.
 - **ASTRO7EX into the SSOT systems** — its Joplin storyform is not yet read into the fabula, the registry's storyform link, or a tracking file.
 - **The hinge** — the Moon Severance and the AI Collapse placed as ASTRO7EX backstory, ⧗ until Chief places them.
@@ -57,6 +57,7 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 ## Version history
 
+- **0.1.6 — 2026-09-29.** TREMOR CULT's two readings merged (BOLO 91): the soldier couple are the drone kids who film their kills for clout; TikTok is the in-world feed. See `_CANON_NODES/tremor-cult-seed.md`.
 - **0.1.5 — 2026-09-29.** TREMOR CULT's era 1 · DCUS confirmed by Chief; the universe's stories flow from Earth outward to space.
 - **0.1.4 — 2026-09-29 (BOLO 91 rulings).** Three provisional story rows added (She Her Own, King Townie, Hellfighters, sourced from the Apple Notes 2026 digest); the registry's genre slot (G1) added and set for OXO (cultcore); TREMOR CULT ruled inside era 1 · DCUS, set on Earth, standard story size ("like a movie almost") not short-form, its "two readings" question left open.
 - **0.1.3 — 2026-09-29.** The hinge ruled (the Deep Meridian beam); a PROJECTS section added (the pinball roguelite, Goonernaut Ventures); Ariel ruled an older name for Tori (see the OXO row).
