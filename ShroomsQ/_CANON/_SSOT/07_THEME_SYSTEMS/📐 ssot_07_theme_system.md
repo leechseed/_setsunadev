@@ -1,7 +1,7 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 0.2.0
+version: 0.3.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT first, EVIL CHECK second (80-D)]
 status: bootstrap — the controlling idea RULED 2026-09-29; the doc's shape (80-B) is walked piece by piece before it is built out
@@ -53,10 +53,10 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 
 | Step | Name | Plain words |
 |---|---|---|
-| + Positive | Freedom | *pending Chief's pick* |
-| − Contrary | Conformity | *pending* |
-| −− Contradictory | Control | *pending* |
-| −−− Negation of the negation | Control that feels like freedom | *pending* |
+| + Positive | Freedom | *Your life is yours.* |
+| − Contrary | Conformity | *You go along to get along.* |
+| −− Contradictory | Control | *You're managed, not free.* |
+| −−− Negation of the negation | Control that feels like freedom | *The cage feels like home.* |
 
 ## PROVENANCE
 
@@ -65,7 +65,7 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 
 ## OPEN (walked piece by piece, per Chief 9/24)
 
-- **80-B · the shape:** the rails (RULED, above) · McKee's controlling idea as the one sentence (now filled) · Coyne's value scale as the per-scene gauge · motifs fed to texture. Walk next: Coyne's value scale.
+- **80-B · the shape:** the rails (RULED, above) · McKee's controlling idea as the one sentence (now filled) · the value scale (RULED, above) · motifs fed to texture. Walk next: motifs. Open side call: Fairness as a second gauge for world scenes (rec yes).
 - **80-C · theme vs. the Touchstones (BOLO 81):** rec, two docs joined by a handshake table (`cost_and_meaning` sits in both).
 - **80-E · which books:** rec, held books only (Egri, McKee, Coyne, Truby, Dramatica); no Weiland.
 
@@ -73,3 +73,4 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 
 - **0.1.0 · 2026-09-29** — bootstrap: the controlling idea and the mechanism line, ruled; the storyform map; the open calls.
 - **0.2.0 · 2026-09-29** — the rails: four debates ruled (80-B.1), plain words handpicked (1B · 2B · 3B · 4A).
+- **0.3.0 · 2026-09-29** — the value scale: FREEDOM ruled (80-B.2), plain words handpicked (B · A · B · B).
