@@ -1,7 +1,7 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.7
+version: 0.1.8
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
 status: "v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
@@ -148,13 +148,14 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 
 **Eras.** The setting doc's own DCUS proof gives a naming lattice with three stages, stated as a chronology, not merely a scar: "100+ years of private prestige; the founding name sanded to 'Red Hills' a century before the Bishops arrived" (S7 FOUNDING); "the rename lattice — Skeeter Creek → Red Hills → DCUS: erasure done twice" (S5 SCAR) ([📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)). Read as world-clock eras: **Skeeter Creek** (founding, buried, no date given), **Red Hills** (the first rename, reach roughly a century before the Bishop acquisition, extent unstated), **DCUS** (the current era, tied to the Bishop acquisition, "prestige converted to product; the ownership war — grandfather vs son — sold for spoils to the Bishops," S6 ECONOMY). No calendar date exists in these sources for any of the three transitions; this doc records reach and extent as ranges (OPEN call 5) and does not invent a year. Per OPEN call 4, the world clock cross-references these eras rather than re-authoring them as its own filled event records — the setting doc stays the one authoring surface.
 
-**The universe eras (RULED 2026-09-29, Chief: "yes to all recommendations"; BOLO 82 boresight).** The LEECHSEED eon runs as **three sequential eras with overlap allowed at the seams**, moving outward from Earth:
+**The universe eras (RULED 2026-09-29, Chief: "yes to all recommendations"; BOLO 82 boresight).** The LEECHSEED eon runs as **sequential eras with overlap allowed at the seams** (three RULED, a fourth "beyond" added 2026-09-29 ⧗), moving outward from Earth:
 
 | Era | Story | Where | Status on this clock |
 |---|---|---|---|
 | **1 · the DCUS era** | OVEREXITOUT (*The Outliers*) · EVIL CHECK | Earth, the Delta Coast | the only era with event records (THE INSTANCE) |
 | **2 · the LAKAD era** | LAKAD (codename) | cislunar space | band only; no events on record |
 | **3 · the ASTRO7EX era** | ASTRO7EX | the Moon | band only; its backstory's own events are not yet loaded |
+| **4 · the beyond era** ⧗ | ⧗ none yet | past the Moon | band only; named "beyond" (Chief, 2026-09-29 session 4); no story or events yet |
 
 **The hinge (RULED 2026-09-29, Chief: "number two, yes"): the Deep Meridian beam.** At **Deep Meridian**, a geothermal drill front at a caldera run like a navy (its crews, the Drill Rangers, seal themselves behind rock on suicide missions), a needle probe into "the old city", a pressurized hot-water chamber, loses control and fires **a beam of radiation that punches a hole a mile wide into the sky. The beam signals the quasar that reaches the time of Vivian** (ASTRO7EX), "a century or two after" on the surface. **The Moon Severance and the AI Collapse** (ASTRO7EX's Dramatica reports, `.ASTRO7EX.SYNC.JOPLIN/`) follow from it ⧗ (order and mechanism not yet placed). In-world holidays: **Laser Core Admissions Day**, the day after **Space Laser Repentance Day**. Source: Chief's Apple Notes 2025 (BOLO 91). Future ids ⧗: `deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
 
@@ -531,6 +532,7 @@ causal_edges: []   # downstream events for the copy are not yet on record — op
 
 ## Version history
 
+- **0.1.8 — 2026-09-29.** THE WORLD CLOCK gains era 4, **beyond** (past the Moon, ⧗ unnamed), after DCUS → LAKAD (cislunar) → ASTRO7EX (the Moon); Chief: "after DCUS, there's the cislunar space, and then the moon, and then beyond."
 - **0.1.7 — 2026-09-29 (BOLO 91 rulings).** Anna Colson's origin fabula-filled: five `backstory_<slug>` event records (ice-skating death → father seeks the scientist → the scientist's attachment → the father's reclaim → the scientist's own kept copy); "Anna Colson (the copy)" given her own fabula node and L7 ORIGIN moment, distinct from the original. Tori's family origin ruled the trash-zone delta, not Bikini Atoll (superseding the earlier phone-notes draft); the car crash (`m1b_crash_jebb_death`) confirmed unchanged as her L5 WOUND.
 - **0.1.6 — 2026-09-29.** The hinge ruled (Chief: "number two, yes"): the Deep Meridian beam signals the quasar that reaches Vivian's time; the Moon Severance and the AI Collapse follow ⧗.
 - **0.1.5 — 2026-09-29.** THE WORLD CLOCK gains the universe eras (RULED, Chief: "yes to all recommendations"): DCUS → LAKAD → ASTRO7EX, sequential with overlap at the seams; the Moon Severance + AI Collapse as the ⧗ hinge; the 2/9 "simultaneous" ruling kept as superseded history; applies_to gains LAKAD and ASTRO7EX.

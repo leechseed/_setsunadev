@@ -132,6 +132,21 @@ WORLD_CLOCK_ERAS = [
     },
 ]
 
+# the universe eras after DCUS (fabula THE WORLD CLOCK, RULED 2026-09-29): the stories move outward
+# from Earth. Chief 9/29 session 4: "after DCUS, there's the cislunar space, and then the moon, and
+# then beyond" — era 4 is named in canon only as "beyond" (⧗).
+for q in ("the LAKAD era", "the ASTRO7EX era", "the beyond era"):
+    need(fabula_md, q, f"universe era: {q}")
+UNIVERSE_ERAS = [
+    {"id": "era_lakad", "label": "LAKAD", "note": "era 2 · cislunar space — band only, no events on record",
+     "detail": "The second universe era: LAKAD (codename), set in cislunar space. Sequential after DCUS, overlap allowed at the seam.", "order": 3, "universe": True},
+    {"id": "era_astro7ex", "label": "ASTRO7EX", "note": "era 3 · the Moon — band only, backstory events not yet loaded",
+     "detail": "The third universe era: ASTRO7EX, on the Moon. The Deep Meridian beam is the hinge into it.", "order": 4, "universe": True},
+    {"id": "era_beyond", "label": "Beyond ⧗", "note": "era 4 · past the Moon — unnamed, no story yet",
+     "detail": "The fourth universe era, past the Moon. Named only as 'beyond' (Chief, 9/29); no story or events yet.", "order": 5, "universe": True},
+]
+WORLD_CLOCK_ERAS = WORLD_CLOCK_ERAS + UNIVERSE_ERAS
+
 # ------------------------------------------------------------ PLOT / TOLD ---
 
 plot_md = read(PLOT_MD)
@@ -554,10 +569,11 @@ STYLE = r"""
 
   /* ---- fabula timeline (call 79-1: era bands sized by content, events spread + truncated) ---- */
   .fab-scroll { overflow-x: auto; padding-bottom: 6px; }
-  .fab-track { position: relative; min-width: 900px; height: 260px; }
+  .fab-track { position: relative; min-width: 1240px; height: 260px; }
   .era-band { position: absolute; top: 30px; height: 90px; border: 1px dashed var(--line-2); background: color-mix(in srgb, var(--accent) 6%, transparent); border-radius: 3px; }
   .era-band .lbl2 { position: absolute; top: -20px; left: 6px; font-family: var(--display); font-weight: 700; font-size: 14px; text-transform: uppercase; color: var(--ink-2); white-space: nowrap; }
   .era-band.stub .lbl2 { font-size: 12px; }
+  .era-band.later { background: color-mix(in srgb, var(--c-theme) 7%, transparent); border-color: color-mix(in srgb, var(--c-theme) 45%, var(--line-2)); }
   .era-band .fz { position: absolute; top: 20px; bottom: 6px; left: 6px; right: 6px; font-family: var(--mono); font-size: 9.5px; line-height: 1.25; color: var(--ink-3); white-space: normal; overflow-wrap: anywhere; overflow: hidden; }
   .movement-axis { position: absolute; top: 150px; left: 0; right: 0; height: 2px; background: var(--line-2); }
   .movement-axis .tick { position: absolute; top: -4px; width: 1px; height: 10px; background: var(--line-2); }
@@ -628,6 +644,10 @@ STYLE = r"""
   .ar-th .nm { font-family: var(--display); font-weight: 700; font-size: 13.5px; line-height: 1.05; text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .ar-th .sub { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .ar-th.ruler { background: var(--panel-2); }
+  .ar-th .ar-resize { position: absolute; left: 0; right: 0; bottom: -3px; height: 7px; cursor: row-resize; z-index: 2; }
+  .ar-th .ar-resize::after { content: ""; position: absolute; left: 40%; right: 40%; top: 3px; height: 1px; background: var(--ink-3); opacity: 0; }
+  .ar-th:hover .ar-resize::after, .ar-th .ar-resize:hover::after { opacity: 1; }
+  .ar-th .ar-resize:hover { background: color-mix(in srgb, var(--accent) 35%, transparent); }
   .ar-lane { position: relative; overflow: hidden; background: var(--well); cursor: crosshair; touch-action: none; height: 560px; }
   svg.ar-svg { display: block; width: 100%; height: 100%; }
   svg.ar-svg text { font-family: var(--mono); font-size: 10px; fill: var(--ink-2); }
@@ -828,7 +848,7 @@ def build_html() -> str:
   <main class="canvas" id="canvas">
     <section class="lens-view on" id="view-fabula">
       <h2>Fabula — the world timeline</h2>
-      <p class="sub">The <span class="t" data-tt="gloss" data-id="fabula">timeline is the map</span>: Tori's six dated-in-story events over three fuzzy DCUS eras. No calendar exists for this world — dates are movement-relative or banded, never invented points.</p>
+      <p class="sub">The <span class="t" data-tt="gloss" data-id="fabula">timeline is the map</span>: Tori's six dated-in-story events over three fuzzy DCUS eras, then the universe eras that follow outward from Earth: LAKAD (cislunar space), ASTRO7EX (the Moon), and beyond. No calendar exists for this world — dates are movement-relative or banded, never invented points.</p>
       <div class="fab-scroll"><div class="fab-track" id="fabTrack"></div></div>
       <p class="fab-legend hint">Solid dot = single event &nbsp;·&nbsp; dashed dot = <span class="t" data-tt="gloss" data-id="repeat">repeat / iterative</span> event, one record standing for a repeated class (Genette 1980: 53). Truncated labels — hover or select a dot for the full event id.</p>
     </section>
@@ -1052,7 +1072,9 @@ function renderFabula(){
   if (!track || track.offsetParent === null) return;  // hidden lens — skip, re-render on show/resize
   const eras = DATA.fabula.eras;
   const dcusEra = eras.find(e => e.id === 'era_dcus');
-  const emptyEras = eras.filter(e => e.id !== 'era_dcus');
+  const emptyEras = eras.filter(e => e.id !== 'era_dcus' && !e.universe);
+  const laterEras = eras.filter(e => e.universe);  // LAKAD · ASTRO7EX · beyond, stacked after DCUS in order
+  const LATER = 128;
   const STUB = 96; // px — a narrow fixed stub for eras with no events, label still readable
   let html = '';
   let cum = 0;
@@ -1062,8 +1084,12 @@ function renderFabula(){
     cum += STUB;
   });
   const dcusLeft = cum;
-  html += `<div class="era-band t" id="dcusBand" data-tt="era" data-id="${dcusEra.id}" data-sel-type="era" data-sel-id="${dcusEra.id}" tabindex="0" style="left:${dcusLeft}px;right:0">`
+  html += `<div class="era-band t" id="dcusBand" data-tt="era" data-id="${dcusEra.id}" data-sel-type="era" data-sel-id="${dcusEra.id}" tabindex="0" style="left:${dcusLeft}px;right:${laterEras.length * LATER}px">`
        +  `<span class="lbl2">${esc(dcusEra.label)}</span><span class="fz">${esc(dcusEra.note)}</span></div>`;
+  laterEras.forEach((e, i) => {
+    html += `<div class="era-band stub later t" data-tt="era" data-id="${e.id}" data-sel-type="era" data-sel-id="${e.id}" tabindex="0" style="right:${(laterEras.length - 1 - i) * LATER}px;width:${LATER - 6}px">`
+         +  `<span class="lbl2">${esc(e.label)}</span><span class="fz">${esc(e.note)}</span></div>`;
+  });
   html += '<div class="movement-axis" id="movAxis"></div>';
   track.innerHTML = html;
 
@@ -1234,6 +1260,19 @@ const AR_FREE_AUD = TS.theme.audience.map(p => ({ ...p, p: arPos(p.at) }));
 let AR_PTS = [], AR_CABLES = [], AR_TEMPO_PLANNED = [];
 let AR_SUBJECTS_WITH_POINTS = [];
 let AR_TRACKS = [];
+// per-lane heights (Chief 9/29: "each of the tools bigger … I want to be able to adjust them"):
+// drag a lane header's bottom edge to resize, double-click it to reset; kept per viewer in browser storage
+const AR_TRACK_H_KEY = 'ws.told.trackH.v1';
+let AR_TRACK_H = {};
+try { AR_TRACK_H = JSON.parse(localStorage.getItem(AR_TRACK_H_KEY) || '{}') || {}; } catch (e) { AR_TRACK_H = {}; }
+function arSaveTrackH(){ try { localStorage.setItem(AR_TRACK_H_KEY, JSON.stringify(AR_TRACK_H)); } catch (e) {} }
+// the told view's full height: ladder + bar ruler + every lane, so nothing is squeezed to fit a fixed box
+function arToldNeedH(){ return AR_BAND_H * 2 + AR_RULE_H + AR_TRACKS.reduce((a, t) => a + t.h, 0) + 8; }
+function arSizeLane(){
+  const need = TS_STATE.view === 'told' ? arToldNeedH() : TS_STATE.view === 'stack' ? Math.max(560, arToldNeedH() * .6 + 300) : 560;
+  const hpx = Math.max(420, Math.round(need)) + 'px';
+  for (const id of ['arLane', 'arTracks']) { const el = document.getElementById(id); if (el && el.style.height !== hpx) el.style.height = hpx; }
+}
 let AR_PENDING_COUNT = 0;
 let AR_FLAGGED_POINTS = [], AR_FLAGGED_CABLES = [], AR_FLAGGED_TEMPO = null;
 
@@ -1241,29 +1280,29 @@ let AR_FLAGGED_POINTS = [], AR_FLAGGED_CABLES = [], AR_FLAGGED_TEMPO = null;
 // subject seen in story points; theme + tropes only if they carry data (ruling 3)
 function arBuildTracks(){
   const tracks = [];
-  tracks.push({ id: 'scenes', nm: 'Scenes', sub: 'clips · the told order', k: 'var(--accent)', h: 40 });
+  tracks.push({ id: 'scenes', nm: 'Scenes', sub: 'clips · the told order', k: 'var(--accent)', h: 56 });
   tracks.push({
     id: 'tempo', nm: 'Tempo',
     sub: AR_TEMPO_MEASURED.length ? 'planned —  measured - -' : 'planned —  · measured: none until a draft exists',
-    k: 'var(--accent)', h: 64, term: 'tempo',
+    k: 'var(--accent)', h: 120, term: 'tempo',
   });
   for (const a of AR_AUTOMATION) {
     if (!a.points.length) continue;
     tracks.push({
       id: 'auto:' + a.id, nm: arSubjLabel(a.subject) + ' · ' + (a.field || '').split('.')[0].replace(/_/g, ' '),
       sub: ((a.field || '').split('.').slice(1).join('.') || 'value') + ' · automation',
-      k: arIsPlace(a.subject) ? 'var(--c-place)' : 'var(--c-char)', h: 58, term: 'ramp', auto: a,
+      k: arIsPlace(a.subject) ? 'var(--c-place)' : 'var(--c-char)', h: 100, term: 'ramp', auto: a,
     });
   }
   for (const subj of AR_SUBJECTS_WITH_POINTS) {
     const src = (AR_PTS.find(p => p.tr === subj) || {}).subject || '';
-    tracks.push({ id: subj, nm: arSubjLabel(src) + ' · state', sub: 'story points', k: arIsPlace(src) ? 'var(--c-place)' : 'var(--c-char)', h: 40 });
+    tracks.push({ id: subj, nm: arSubjLabel(src) + ' · state', sub: 'story points', k: arIsPlace(src) ? 'var(--c-place)' : 'var(--c-char)', h: 76 });
   }
   if (AR_FREE_IN.length || AR_FREE_AUD.length) {
-    tracks.push({ id: 'theme', nm: 'Theme · ' + (TS.theme.rail || ''), sub: (TS.theme.scale || '') + ' · in-world / audience', k: 'var(--c-theme)', h: 60, term: 'freedom' });
+    tracks.push({ id: 'theme', nm: 'Theme · ' + (TS.theme.rail || ''), sub: (TS.theme.scale || '') + ' · in-world / audience', k: 'var(--c-theme)', h: 100, term: 'freedom' });
   }
   if (AR_TROPE_PTS.length) {
-    tracks.push({ id: 'tropes', nm: 'Tropes', sub: 'from the register', k: 'var(--c-trope)', h: 36 });
+    tracks.push({ id: 'tropes', nm: 'Tropes', sub: 'from the register', k: 'var(--c-trope)', h: 56 });
   }
   return tracks;
 }
@@ -1379,6 +1418,7 @@ function arBuildEditable(){
   AR_TEMPO_PLANNED = tempoBase.map(p => ({ ...p, p: arPos(p.at), _pendingEdit: AR_TEMPO_DRAFT ? 'draft' : r.tempoPendingId }));
   AR_SUBJECTS_WITH_POINTS = Array.from(new Set(AR_PTS.map(p => p.tr).filter(Boolean)));
   AR_TRACKS = arBuildTracks();
+  for (const t of AR_TRACKS) { t.h0 = t.h; if (AR_TRACK_H[t.id]) t.h = AR_TRACK_H[t.id]; }
 
   AR_FLAGGED_POINTS = []; AR_FLAGGED_CABLES = []; AR_FLAGGED_TEMPO = null;
   for (const e of flagged) {
@@ -1559,8 +1599,26 @@ function arHeaders(rows){
     d.style.top = r.y + 'px'; d.style.height = r.h + 'px';
     d.style.setProperty('--k', r.k || 'var(--line-2)');
     d.innerHTML = `<span class="nm">${r.term ? `<span class="t" data-tt="gloss" data-id="${r.term}">${esc(r.nm)}</span>` : esc(r.nm)}</span><span class="sub">${esc(r.sub || '')}</span>`;
+    if (!r.ruler && r.id && TS_STATE.view === 'told') {
+      const hd = document.createElement('div');
+      hd.className = 'ar-resize'; hd.title = 'Drag to resize this lane · double-click to reset';
+      hd.addEventListener('pointerdown', ev => arStartResize(ev, r.id));
+      hd.addEventListener('dblclick', ev => { ev.stopPropagation(); const t = AR_TRACKS.find(x => x.id === r.id); if (!t) return; delete AR_TRACK_H[r.id]; t.h = t.h0; arSaveTrackH(); toldRender(); });
+      d.appendChild(hd);
+    }
     box.appendChild(d);
   }
+}
+
+function arStartResize(ev, id){
+  const t = AR_TRACKS.find(x => x.id === id); if (!t) return;
+  ev.preventDefault(); ev.stopPropagation();
+  const y0 = ev.clientY, h0 = t.h, el = ev.currentTarget;
+  try { el.setPointerCapture(ev.pointerId); } catch (e) {}
+  let raf = 0;
+  const move = e => { t.h = Math.max(28, Math.min(480, Math.round(h0 + e.clientY - y0))); if (!raf) raf = requestAnimationFrame(() => { raf = 0; toldRender(); }); };
+  const up = () => { el.removeEventListener('pointermove', move); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up); AR_TRACK_H[id] = t.h; arSaveTrackH(); toldRender(); };
+  el.addEventListener('pointermove', move); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
 }
 
 function arDrawTold(y0, h, compact){
@@ -1815,6 +1873,7 @@ function toldRender(){
   const svg = arSvgEl(); if (!svg) return;
   svg.innerHTML = '';
   if (!TS_STATE.ppb) return; // lane not visible/sized yet — retried on next resize/switch
+  arSizeLane();
   const w = arW(), h = arH();
   let rows = [];
   if (TS_STATE.view === 'told') rows = arDrawTold(0, h, false);
