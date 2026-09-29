@@ -141,16 +141,16 @@ Five short fictional interludes (two couples, Brad/Corey and Bruce/Joaquin) illu
 
 | Concept | What it is | Why it matters |
 |---|---|---|
-| **SSC (safe, sane, consensual)** | The book's one stated ethical floor, borrowed from S&M culture and applied to all sex, not just kink | Everything else in the book — role-play, pain, bondage, anonymous sex — is framed as permissible only inside this floor |
+| **SSC (safe, sane, consensual)** | The book's one stated ethical floor, borrowed from S&M culture and applied to all sex, not just kink | Everything else in the book (role-play, pain, bondage, anonymous sex) is framed as permissible only inside this floor |
 | **Ground Rule: Respect** | The single explicit "moralizing" passage: don't violate your own integrity or your partner's, whatever the act | Distinguishes eroticized degradation (chosen, bounded) from actual harm (unchosen, unbounded) |
 | **Signal system** | A layered nonverbal vocabulary — words, looks, gestures, clothing, laughter — that carries consent and desire before or instead of speech | Lets strangers (bar, darkroom, sauna) negotiate a scene as reliably as established couples; failure to read it is the book's most-repeated failure mode |
 | **Hanky/color code** | A now-largely-retired but still-cited color vocabulary (pink=dildo, dark blue=fucking, black=BDSM, red=fisting, yellow=piss, brown=scat, orange=anything) | A compressed public signal for a private preference; useful as period detail and as a model for any in-world signaling system |
-| **Five-sense toolkit** | Sight, touch, smell, taste, hearing treated as separately adjustable dials (light, blindfold, mirrors, temperature, texture, scent, noise) | Reframes "variety" as sensory substitution rather than act substitution — the same act reads differently through a different sense channel |
+| **Five-sense toolkit** | Sight, touch, smell, taste, hearing treated as separately adjustable dials (light, blindfold, mirrors, temperature, texture, scent, noise) | Reframes "variety" as sensory substitution rather than act substitution: the same act reads differently through a different sense channel |
 | **Movement and standstill** | Alternating action and enforced immobility (pinning, bondage) as an arousal-curve technique, not just a kink aesthetic | Gives a mechanical account of why restraint feels erotic even absent pain: predictability removed, control transferred, tension built |
 | **Dominant/submissive as role, not identity** | Active/passive, top/bottom, dom/sub are situational positions most men can occupy either side of, not fixed types | Undercuts a flattened "he's a top" character shorthand; the book insists competent dominance requires more empathy than passivity does |
-| **Calibrated pain (the 1-10 scale)** | A running numeric check-in during pain play, used to titrate intensity in real time | The book's concrete safety mechanism for anything beyond a slap or a bite — makes "how much is too much" answerable mid-scene |
-| **Negotiated 24/7 / contract** | A living, renegotiable agreement (from the Herrmeistersir interview) covering obedience, discipline, and scene safety — explicitly not a legal document | Models how a fictional power-exchange relationship can be structured without either romanticizing or flattening it into abuse |
-| **Safer-sex risk tiers** | A three-tier list (low-risk, presumed-safe, high-risk) sorting specific acts — not "gay sex" as a category — by actual HIV/hepatitis transmission risk | The book's most clinically precise section; corrects the common error of treating all anal, oral, or fluid contact as equally risky |
+| **Calibrated pain (the 1-10 scale)** | A running numeric check-in during pain play, used to titrate intensity in real time | The book's concrete safety mechanism for anything beyond a slap or a bite; makes "how much is too much" answerable mid-scene |
+| **Negotiated 24/7 / contract** | A living, renegotiable agreement (from the Herrmeistersir interview) covering obedience, discipline, and scene safety, explicitly not a legal document | Models how a fictional power-exchange relationship can be structured without either romanticizing or flattening it into abuse |
+| **Safer-sex risk tiers** | A three-tier list (low-risk, presumed-safe, high-risk) sorting specific acts, not "gay sex" as a category, by actual HIV/hepatitis transmission risk | The book's most clinically precise section; corrects the common error of treating all anal, oral, or fluid contact as equally risky |
 | **Body and soul (the "knowing" frame)** | The closing interview's argument that anonymous sex can still be mutual "knowing," and that sex directed only at an object (leather, a role) rather than a person is where the union breaks down | Gives a vocabulary for distinguishing depersonalized-but-consensual play from actually depersonalizing a partner |
 
 ---
@@ -174,12 +174,12 @@ Five short fictional interludes (two couples, Brad/Corey and Bruce/Joaquin) illu
 
 ## 6 · INVARIANTS
 
-1. **Consent (SSC) is the load-bearing condition.** Every act catalogued in the book — vanilla, kink, anonymous, or scripted — is framed as contingent on it; nothing described is presented as safe or good without it.
+1. **Consent (SSC) is the load-bearing condition.** Every act catalogued in the book (vanilla, kink, anonymous, or scripted) is framed as contingent on it; nothing described is presented as safe or good without it.
 2. **Respect is the one non-negotiable floor.** Any act is permissible inside it; violating another person's (or your own) integrity ends the book's endorsement regardless of the act.
 3. **No act is universally hot or universally off-limits.** Desire and disgust are individually calibrated; the book repeatedly declines to rank acts by inherent value.
 4. **Novelty raises a stimulus's impact; repetition dulls it.** Darkness, blindfolds, new lighting, new roles, and new settings work by defamiliarizing a sense channel, not by adding a new act.
 5. **Dominance and submission are positions, not fixed identities.** Most men can occupy either; a "switch" is normal, not a compromise.
-6. **Pain and pleasure share nervous-system wiring.** Pain becomes erotic specifically inside a negotiated, communicated frame — outside that frame it is just pain.
+6. **Pain and pleasure share nervous-system wiring.** Pain becomes erotic specifically inside a negotiated, communicated frame; outside that frame it is just pain.
 7. **Safer-sex risk attaches to the specific act and fluid/tissue contact, not to "gay sex" as a category.** Oral, rimming, fisting, and anal each carry different risk depending on exact conditions.
 8. **Competent dominance requires more empathy than passivity, not less.** Technique without attention to the partner's signals is bad sex regardless of who is nominally in control.
 
@@ -189,8 +189,8 @@ Five short fictional interludes (two couples, Brad/Corey and Bruce/Joaquin) illu
 
 - Treating a described fantasy as an instruction to perform immediately with whichever partner is available, instead of a private test to run first.
 - Assuming dominance is a fixed personality trait rather than a role that specifically demands reading the other person well.
-- Believing oral sex, rimming, or fisting carry no HIV risk simply because they aren't anal intercourse — the book uses three tiers, not two, and several "gentler" acts still carry non-trivial hepatitis or STI risk.
-- Skipping a safe word or check-in because "it hasn't come up before" — the book treats the check-in as routine maintenance, not a sign of distrust.
+- Believing oral sex, rimming, or fisting carry no HIV risk simply because they aren't anal intercourse: the book uses three tiers, not two, and several "gentler" acts still carry non-trivial hepatitis or STI risk.
+- Skipping a safe word or check-in because "it hasn't come up before": the book treats the check-in as routine maintenance, not a sign of distrust.
 - Leaving a bound, blindfolded, or gagged partner unattended, mistaking physical restraint for a safe condition.
 - Confusing consensual, mutually desired "using" of a partner with actually using someone who hasn't consented — the book's own distinction turns entirely on both parties wanting the dynamic.
 - Treating a hanky-code color or a negotiated slave contract as legally binding or universally understood, rather than as a local, revocable signal between the specific people using it.
@@ -205,7 +205,7 @@ Five short fictional interludes (two couples, Brad/Corey and Bruce/Joaquin) illu
 - **plot_systems:** contextual — the signal-consent-escalate loop (Diagram 2) is a reusable scene-pacing structure for any negotiated-intensity scene, sexual or not (a fight, an interrogation, a seduction), wherever consent and escalation both need to be dramatized rather than assumed
 - **Setting:** none directly; the book's sensory-manipulation toolkit (light, sound, scent, texture) is a usable reference for staging any scene that depends on deliberately engineered atmosphere
 
-For character work, this book's real contribution is vocabulary and mechanism, not psychology: it gives concrete, specific acts and signals (rather than a vague "he's adventurous") to hang on `practice_repertoire`, gives a working nonverbal grammar for `signal_language` that can vary independently of a character's stated desires (fluent vs. illiterate in reading signals is its own trait), and gives `boundary_architecture` a testable mechanism — a stated limit is dramatically inert until something tests whether it's honored under pressure. The dominant/submissive-as-role argument (Invariant 5) is the single most transferable idea outside a sexual context: it argues against writing a character's `drive_texture` as a fixed type, instead treating it as a default under normal conditions that the story can specifically invert.
+For character work, this book's real contribution is vocabulary and mechanism, not psychology: it gives concrete, specific acts and signals (rather than a vague "he's adventurous") to hang on `practice_repertoire`, gives a working nonverbal grammar for `signal_language` that can vary independently of a character's stated desires (fluent vs. illiterate in reading signals is its own trait), and gives `boundary_architecture` a testable mechanism: a stated limit is dramatically inert until something tests whether it's honored under pressure. The dominant/submissive-as-role argument (Invariant 5) is the single most transferable idea outside a sexual context: it argues against writing a character's `drive_texture` as a fixed type, instead treating it as a default under normal conditions that the story can specifically invert.
 
 ---
 
