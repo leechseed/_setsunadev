@@ -73,7 +73,7 @@ Sex tourism (travel chosen mainly for anal intercourse) is common among MSM (28%
 *Required. Minimum two diagrams, maximum five.*
 
 **Diagram 1 — the whole argument.**
-Caption: *five moving parts — definition, who travels, what they do while traveling, what it costs them, and what clinics should do about it.*
+Caption: *five moving parts: definition, who travels, what they do while traveling, what it costs them, and what clinics should do about it.*
 
 ```mermaid
 mindmap
