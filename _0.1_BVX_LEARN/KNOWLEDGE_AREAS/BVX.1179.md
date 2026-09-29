@@ -195,14 +195,14 @@ The book moves from SETTING craft outward to game crunch: a history chapter that
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Writing a setting's history | Write a present-tense timeline where the most recent entries are still open questions | Write history that stops cleanly with "and so it has been ever since" |
-| Designing a ruling body | Split power between a figurehead and a council that needs a real vote count to act | Give one ruler unchecked authority with no in-fiction friction |
-| Building law enforcement | Split it into two competing bodies with different loyalties, recruiting rules, and reputations | Write a single unified police force with one culture |
-| Building a criminal underworld | Break the last dominant syndicate in the backstory and leave several rivals splitting the wreckage | Install one crime boss who owns the whole underworld uncontested |
-| Making a setting travel to other campaigns | Keep names generic at the edges (titled gods, a vague wider world) and dense at the center (the one city) | Fully name and fix every god, nation, and neighbor before anyone needs them |
-| Giving a district identity fast | Assign one social class and one hazard, then give it a numeric stat-block header | List buildings and population without a class or danger throughline |
-| Threading an economic crisis | Run one environmental or resource crisis through daily life, factions, and a single beneficiary faction | Treat economy as a flat price list disconnected from any character or conflict |
-| Ending a history/current-events section | Stop on an unresolved vote, an open investigation, or an unexplained recent event | Stop on a tidy resolution that leaves nothing for the GM to finish |
+| Writing a setting's history | Write a present-tense timeline whose most recent entries are still open questions | Stop cleanly with "and so it has been ever since" |
+| Designing a ruling body | Split power between a figurehead and a council that needs a real vote count | Give one ruler unchecked authority with no in-fiction friction |
+| Building law enforcement | Split it into two competing bodies with different loyalties | Write a single unified force with one culture |
+| Building a criminal underworld | Break the last dominant syndicate in the backstory, leave rivals splitting the wreckage | Install one crime boss who owns the underworld uncontested |
+| Making a setting travel to other campaigns | Keep names generic at the edges, dense at the center | Fully name every god, nation, and neighbor up front |
+| Giving a district identity fast | Assign one class and one hazard, then a numeric stat-block header | List buildings and population with no class or danger throughline |
+| Threading an economic crisis | Run one crisis through daily life, factions, and a named beneficiary | Treat economy as a flat price list, disconnected from conflict |
+| Ending a history/current-events section | Stop on an unresolved vote or an unexplained recent event | Stop on a tidy resolution that leaves nothing to finish |
 
 ---
 

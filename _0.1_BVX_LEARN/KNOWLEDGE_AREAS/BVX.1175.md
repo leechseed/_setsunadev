@@ -199,13 +199,13 @@ Everything else (classes, equipment, spells, combat) is mechanics that assumes, 
 
 ## 7 · PITFALLS / MYTHS
 
-- Writing a race or culture entry as a neutral reference article, stripping out the bias that makes it read as a living perspective rather than a wiki stub.
-- Treating a background as cosmetic flavor text with no institutional weight and no forced "what changed" tension behind it.
-- Assuming a species must carry identical politics and culture in every sub-setting it appears in, instead of letting culture vary while the trait-core holds.
-- Publishing a reusable template without stating what parts are meant to be swapped, leaving remixers guessing at the boundary between fixed and open.
-- Defaulting to one pantheon size and tone for every world or story, rather than tuning the register (teeming vs. focused) to the story's actual needs.
-- Building a cosmology or afterlife purely as nested geography, with no ontological sort explaining what each tier is actually made of.
-- Leaving a big abstract cosmology with no concrete, walkable hub where its rules become literal and negotiable.
+- Writing a race or culture entry as a neutral reference article, stripping the bias that makes it read as a living perspective rather than a wiki stub.
+- Treating a background as cosmetic flavor text with no institutional weight and no forced "what changed" tension.
+- Forcing identical politics and culture onto a species in every sub-setting, instead of letting culture vary while the trait-core holds.
+- Publishing a reusable template without stating what parts are meant to be swapped, leaving remixers guessing.
+- Defaulting to one pantheon size and tone for every world, rather than tuning the register to the story's needs.
+- Building a cosmology purely as nested geography, with no ontological sort for what each tier is made of.
+- Leaving a big abstract cosmology with no concrete, walkable hub where its rules become literal.
 
 ---
 
