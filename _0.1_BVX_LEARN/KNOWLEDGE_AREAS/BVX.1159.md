@@ -14,11 +14,11 @@ feeds:
   - layer: SETTING
     variable: S4_law
     strength: primary
-    note: "Full geopolitical theory's triangular typology (anarchy / hierarchy / negarchy, Fig. 8.2) plus the violence-interdependence spectrum (Table 8.2) is a drop-in method for deciding what government a space faction actually runs, keyed to material context — distance, weapons volume, frontier status — not to authorial convenience."
+    note: "Full geopolitical theory's triangular typology (anarchy / hierarchy / negarchy, Fig. 8.2) plus the violence-interdependence spectrum (Table 8.2) is a drop-in method for deciding what government a space faction actually runs, keyed to material context (distance, weapons volume, frontier status), not to authorial convenience."
   - layer: SETTING
     variable: S6_economy
     strength: primary
-    note: "The Von Braun (military) and Tsiolkovsky (habitat) ladders name concrete dual-use tech tiers — asteroid movers, mass drivers, orbital solar power, terraforming mirrors — where the economic infrastructure and the weapon are the same object. Economy and war-fighting capacity should be designed as one line, not two."
+    note: "The Von Braun (military) and Tsiolkovsky (habitat) ladders name concrete dual-use tech tiers (asteroid movers, mass drivers, orbital solar power, terraforming mirrors) where the economic infrastructure and the weapon are the same object. Economy and war-fighting capacity should be designed as one line, not two."
   - layer: SETTING
     variable: S9_allure
     strength: primary
