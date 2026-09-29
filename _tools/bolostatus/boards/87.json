@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-29",
   "asof": "2026-09-29",
-  "s": "hot",
-  "status": "🟢 **PAGE UP 9/29** — BOOK HUNT: https://claude.ai/artifact/Pb1YJvbZ1VQnLa7We6bw11 · 28 of 74 free-readable for $0 (3 already held · 11 Everand · 11 borrow · 3 online), 46 wait on cash · setting shelf: 1,537 held items judged, 29 to get (5 free official editions) · 38 distills landed 9/29 across three waves, all pass RANGE · next: Chief grabs the free list into `Q:/_PDF_DROP/_NEW`, then \"rescan Zotero\".",
+  "s": "open",
+  "status": "🟢 **HUNT CLOSED, SHELF DISTILLED 9/29** — Chief: \"I'm done getting other books … pull from the Zotero tab, everything you got.\" Every held tier-1 book is now distilled: +42 setting (TTRPG core books, campaign settings, worldbuilding craft, Campbell's myth books) and +4 sexuality (Foucault, Jung, Mendoza, Sexpigs), 46/46 pass RANGE · Drive sweep: 171 new files into `Q:/_PDF_DROP/_NEW/_gdrive/` · next: fold the distills into TM 03 (the setting system).",
   "decider": "HOTLINE ACTUAL",
   "feeds": "TM 03 (setting)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 87",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -170,8 +170,21 @@
     },
     {
      "n": 5,
-     "t": "**Next** — Chief grabs the free list into `Q:/_PDF_DROP/_NEW`, then orders \"rescan Zotero\"; borrowed books come back as his dictated notes. Two findings flagged: Dictionary of Imaginary Places + Timeless Way are image-only scans (need text copies); Ulysses Unbound in the drop is the wrong book (Killeen, not Elster).",
-     "s": "open"
+     "t": "**Drive swept, hunt closed** — Google Drive (`D:` and `I:\\My Drive\\ZOTERO_DATA_DIRECTORY`) swept against the Find list: only 2 of 109 were on it. 171 unseen files copied to the drop and rescanned. Chief closed the hunt.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 6,
+     "s": "done",
+     "when": "9/29",
+     "t": "**Tier-1 held shelf distilled** — 46 books, one MS each, 46/46 pass RANGE: BVX.0343 · 0056 · 0362 · 0387 · 0394 · 0575 · 0822 · 0823 · 0141 · 0479 · 0483 · 0508 · 0538 · 0831 · 0835 · 0836 · 0841 · 0630 · 0245 · 0258 · 1168–1177 · 1179–1190 · MSX.34–36 · PSY.13. Two staged texts were the wrong book (1172, 1187); both caught and redone from the right PDF."
+    },
+    {
+     "n": 7,
+     "s": "open",
+     "when": "next",
+     "t": "**TM 03 synthesis** — file every new feed into the setting system's S-layers and apply it to DCUS."
     }
    ],
    "coord": [],
@@ -289,31 +302,50 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Waves 2–3 landed: +14 new-drop distills (BVX.1140–1155) and +12 more (BVX.1156–1167), all pass RANGE; findings flagged (two image-only scans, one wrong book in the drop); next: Chief grabs the free list, then \"rescan Zotero\"."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Pull from the Zotero tab, everything you got. I'm done getting other books.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Swept both Drive copies of the Zotero folder, closed the hunt, and distilled all 46 held tier-1 books; 46/46 pass RANGE."
     }
    ]
   }
  ],
  "frago": {
   "mission": "Distill the setting shelf into one list of what we hold and what to get, TTRPG first, in order to give TM 03 (the setting system) a real library to build from, the same way BOLO 77's plot sweep fed the plot system.",
-  "order": "**Grab the free titles on BOOK HUNT's Find list into Zotero, then say \"rescan Zotero\".**",
-  "default": "Silence: the list waits on the BOOK HUNT page and nothing downloads.",
+  "order": "**Fold the 46 new distills into TM 03 (the setting system): one synthesis pass that files each book's feeds into the S1–S12 layers, fills the thin layers (S2 WEATHER, S3 SENSORIUM), and applies the method to DCUS.**",
+  "default": "Silence: the distills sit in KNOWLEDGE_AREAS, keyed and passing, and nothing downstream reads them yet.",
   "calls": [
    {
     "q": "The grab order: what goes first?",
     "options": "FREE first: the 28 free-readable titles, with the 5 free official editions leading (rec) · TTRPG first, free or not · one family at a time",
     "default": "FREE first (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "MOOT 9/29: the hunt is closed. Chief: \"let's forget about the ones that I don't have … I'm done getting other books.\""
    },
    {
     "q": "The 46 paid titles",
     "options": "WAIT on cash; the list holds (rec, BOLO 84 is on the same hold) · pick up to five to buy now · drop the paid tail",
     "default": "WAIT (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "DROPPED 9/29 with the hunt. The Find list stays on BOOK HUNT as a record only."
    },
    {
     "q": "The provisional ids BVX.1137–1139 (Ultraviolet Grasslands, Midgard, Shadows over Vathak)",
     "options": "KEEP as issued (rec) · renumber at the next BVX-LEARN pass",
     "default": "KEEP (rec)",
+    "s": "ruled",
+    "ruling": "KEEP (the default). The new run continued the same series: BVX.1168–1190, MSX.34–36, PSY.13."
+   },
+   {
+    "q": "Tier 2: distill the rest of the held shelf?",
+    "options": "HOLD until TM 03 has absorbed tier 1 (rec) · run a first batch of 20 · skip tier 2",
+    "default": "HOLD (rec)",
     "s": "open"
    }
   ]
