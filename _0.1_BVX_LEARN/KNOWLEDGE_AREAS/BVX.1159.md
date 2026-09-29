@@ -208,7 +208,7 @@ Ten chapters in four parts, each answering one question in the chain. Part One s
 4. **Enclosed, fragile habitats default to technocratic hierarchy.** The tighter the coupling between political dissent and catastrophic failure, the harder political freedom becomes to sustain.
 5. **Dissimilar polities, by species, technology, or circumstance, conflict more and cooperate less.** Divergence (biological, cybernetic, or merely cultural) is itself a geopolitical fact, not set dressing.
 6. **Every "solution from space" presupposes a prior definition of the Earth problem it solves.** A faction's stated space policy always reveals its politics about the home world first.
-7. **Success enlarges danger faster than institutions can restrain it.** The gravest outcomes in this book come from expansion working, not from it failing.
+7. **Success enlarges danger faster than institutions can restrain it.** The gravest outcomes come from expansion working, not failing.
 
 ---
 
@@ -229,7 +229,7 @@ Ten chapters in four parts, each answering one question in the chain. Part One s
 - **Spine level:** SETTING, primary; L6 (Theme) secondary, a setting-side source whose central claim ("success breeds domination, not freedom") is also a ready-made controlling idea for a space-set story's theme.
 - **12-layer character stack:** none directly load-bearing, though Table 2.1's five-position technopolitical spectrum (Promethean, Techno-Optimist, Soterian, Friend of the Earth, Luddite) is a fast way to season a faction's stated worldview.
 - **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens. The axial-region-capture mechanic (Diagram 2) and the four-stage colonization ladder (Diagram 4) are ready scene- and arc-generators: "who controls the chokepoint" and "which stage is this Movement."
-- **Setting:** primary, keyed to S4 LAW, S5 SCAR, S6 ECONOMY, S9 ALLURE, and S11 VECTOR (see `feeds:` above); the first distilled source in the library to carry a systematic *method* for deriving a space-faction's politics from its material situation rather than asserting a government type by narrative fiat.
+- **Setting:** primary, keyed to S4 LAW, S5 SCAR, S6 ECONOMY, S9 ALLURE, and S11 VECTOR (see `feeds:` above); the first library source with a systematic *method* for deriving a space faction's politics from its material situation rather than by fiat.
 
 This book's real export is Diagram 2's mechanism: violence interdependence, not narrative convenience, should decide whether a space setting's polities land in anarchy, hierarchy, or the rare negarchic union. Every other tool here (the two ladders, the colony-government typology, the colonization arc, the threat taxonomy) is that same mechanism applied to one setting layer. Where the Kobold Guide ([[BVX.0458]]) supplies terrain-first method for a world's geography, Dark Skies supplies the matching method for a *space* setting's politics: the missing chapter on "what government does my orbital colony have," answered with a checklist instead of a guess.
 

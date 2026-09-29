@@ -154,13 +154,13 @@ Ten chapters, each running the same odds-bundle through a different lens, book-e
 |---|---|
 | 1. Globals, Locals, and Mobals | What three mobility-classes does place of birth sort everyone into? |
 | 2. The Imperial Legacy of Language | Which mother tongues carry capital, and which trap their speakers? |
-| 3. The Fateful Geography of Religion | How does climate and latitude shape a religion's temperament and its reach? |
+| 3. The Fateful Geography of Religion | How does climate shape a religion's temperament and reach? |
 | 4. The Rough Topography of Human Health | Why does disease geography track poverty, not just latitude? |
-| 5. Geography of Jeopardy | Who lives on the fault lines, floodplains, and storm tracks, and why do they stay? |
-| 6. Places Open and Shut | How do state borders and landlockedness lock a population's odds in or out? |
-| 7. Same Place, Divergent Destinies | What changes when the variable is not location but gender? |
-| 8. Power and the City | What separates a networked "world city" from a merely dominant "primate city"? |
-| 9. Promise and Peril in the Provinces | Why does globalization provoke local and provincial reassertion instead of dissolving it? |
+| 5. Geography of Jeopardy | Who lives on the fault lines and storm tracks, and why do they stay? |
+| 6. Places Open and Shut | How do borders and landlockedness lock a population's odds in or out? |
+| 7. Same Place, Divergent Destinies | What changes when the variable is gender, not location? |
+| 8. Power and the City | What separates a networked "world city" from a "primate city"? |
+| 9. Promise and Peril in the Provinces | Why does globalization provoke local reassertion instead of dissolving it? |
 | 10. Lowering the Barriers | What actually narrows the gap, and what only looks like it does? |
 
 ---
@@ -188,15 +188,15 @@ Ten chapters, each running the same odds-bundle through a different lens, book-e
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Assigning an NPC or culture's home region | Roll language-capital, religion-temperament, disease-exposure, and hazard-exposure together, from the same climate band | Pick each one separately as unrelated flavor text |
+| Assigning an NPC or culture's home region | Roll language-capital, religion-temperament, disease-exposure, and hazard-exposure together, from one climate band | Pick each one separately as unrelated flavor text |
 | Writing a character who leaves home | Give them a specific push/pull motive and call them a mobal | Default them to a refugee, or wave away the motive as "wanderlust" |
 | Wanting a "the world is flat" feel for a character | Make them a global: mobile, capital-holding, insulated from the barriers others face | Give every character equal freedom of movement by default |
 | Designing a setting's dominant religion | Key its temperament (punitive/hierarchical vs. plural/ancestor-linked) to the climate it arose in | Copy real-world theology wholesale as unexamined flavor |
 | Building tension between locals and outsiders | Root it in a language, religion, or habit gap the way the book documents | Default to "they just don't like foreigners" |
-| Placing a capital or prestige city | Decide whether it is a world city (networked outward, decoupled from its hinterland) or a primate city (dominates only its own territory) | Assume every capital works the same way |
-| Writing a poor, remote character's arc | Treat their starting odds (mortality, literacy, mobility) as pre-assigned, and earn any escape on the page | Let them access global-tier options with no cost shown for it |
+| Placing a capital or prestige city | Decide whether it is a world city (networked outward) or a primate city (dominates only its own territory) | Assume every capital works the same way |
+| Writing a poor, remote character's arc | Treat their starting odds as pre-assigned, and earn any escape on the page | Let them access global-tier options with no cost shown for it |
 | Showing a rich/poor contrast in one scene | Juxtapose core and periphery structurally in the same frame (the favela ringing the tower) | Segregate them into separate scenes that never touch |
-| Depicting globalization spreading through a setting | Show it thinning the middle (integration) while thickening the edges (local reassertion) at the same time | Show it as one uniform, one-directional flattening force |
+| Depicting globalization spreading through a setting | Show it thinning the middle while thickening the edges at the same time | Show it as one uniform, one-directional flattening force |
 
 ---
 
