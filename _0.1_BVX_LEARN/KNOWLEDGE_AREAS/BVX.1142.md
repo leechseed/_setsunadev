@@ -209,7 +209,6 @@ The chapter order is the build order (Diagram 2): each step's output is the next
 | Populating a city | Generate five megacorps at world scale, pick two to four as locally dominant | Invent a new corp for every scene with no registry connecting them |
 | Making a faction feel distinct | Run the six-field card (focus, style, strength, event, goal, name) once per faction | Describe a faction only in prose with no reusable structure |
 | Keeping a campaign in motion | Give each major district player a Scheme with progress points and milestones | Let factions sit static until the GM improvises a reason for them to act |
-| Deciding how much to build before session one | Build only the starting district in full; sketch its two to four neighbors | Fully detail every district and every corp before the first game night |
 | Showing a corp's ideology | Write it a glossary entry or a recruiting pitch in its own voice | Explain the ideology in GM narration from outside the world |
 
 ---
