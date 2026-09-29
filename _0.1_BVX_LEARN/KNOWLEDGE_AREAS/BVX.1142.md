@@ -173,9 +173,8 @@ The book is two halves under one cover: a full OSR game system (character creati
 | Creating the World | World | Date, two Global Problems, regional focus, superpowers, five megacorps, one-paragraph history per era |
 | Creating the City | City | Pick or invent a seed city, two City Problems, a crude GM map, districts marked, major corps picked |
 | Building Your Districts | District | Two to four districts built; traits, government NPCs, gangs, corps, fixers, a district map, a name |
-| Creating Megacorps | Faction | Focus, style, strength, recent event, current goal, name; a repeatable six-field card |
-| Creating Gangs | Faction | Income, style, strengths, recent event, goal, name; the same six-field card, criminal-flavored |
-| Creating NPCs | Cast | Name, strength, want, reaction; the disposable-face generator behind every corp rep and gang boss |
+| Creating Megacorps / Gangs | Faction | Focus or income, style, strength, recent event, current goal, name; one six-field card for both |
+| Creating NPCs | Cast | Name, strength, want; the disposable-face generator behind every corp rep and gang boss |
 | Creating and Running Missions (Schemes) | Campaign motion | Progress-point plots per faction, at district, city, and region scale, advanced or damaged by missions |
 | The City | Worked instance | New Chicago: a full Timeline of Collapse, seven named Market Leader megacorps, city government, crime and punishment, a corp-authored ethos and glossary |
 
@@ -195,8 +194,7 @@ The chapter order is the build order (Diagram 2): each step's output is the next
 | **Schemes** | A named faction plot with progress points (1 to 10/20/30+ depending on scale) and milestones; missions push the count up or down | Converts "the world should feel alive" into an actual tracked number a GM can move at the table |
 | **Stay one session ahead** | The GM is told explicitly to prep only as far as the next game night | The book's own discipline against its own kitchen-sink temptation |
 | **The Market Leaders** | New Chicago's worked instance: seven named megacorps, each with a founding event, a value, and named Megacorp Traits | Proves the generator by running it seven times to a coherent cartel, not seven disconnected NPCs |
-| **The corp-authored glossary** | An in-world dictionary (Charity, Evil, Freedom, Truth) redefined around "self-actualization" as the only human good | Shows a setting's ideology through its own propaganda, not a GM description of the ideology |
-| **Gangs as street government** | Unpoliced districts are ruled by whichever gang can hold the turf, "the law" in practice | Removes the need for a separate civic-order layer for the underclass; the informal power already is the order |
+| **The corp-authored glossary** | An in-world dictionary (Charity, Evil, Freedom, Truth) redefined around "self-actualization" as the only human good | Shows a setting's ideology through its own propaganda, not a GM description of it |
 
 ---
 

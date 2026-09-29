@@ -164,13 +164,13 @@ The 7 January method lecture and the 17 March payoff lecture are the two load-be
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Building a biopower antagonist or system | Give it a stated, sincere mission to make live (health, growth, optimization) that requires a justified class of exceptions | Write a system that just wants to kill or dominate — that is sovereignty, not biopower, and skips the actual argument |
-| Staging the theme | Let a concrete mechanism (a screening, a quota, a classification) carry the argument, and let events test it | Have a character announce the theme ("this is about power over life") as dialogue |
-| Writing the "villain" of a biopower plot | Show them believing they are curating health, purity, or fitness for the whole, not indulging cruelty | Write generic malice; the mechanism only works dramatically if the killing reads as care to the killer |
-| Designing who gets protected vs. exposed | Root the cut in a measurable norm (a score, a status, a diagnosis) applied uniformly, then reveal its violence | Make the cut arbitrary or purely personal — it needs to look procedural to do the thematic work |
-| Writing an opposition faction | Ask whether it has actually rejected the administrative logic of "manage life" or only wants to run the machine itself | Assume any resistance to the regime is automatically outside its logic |
-| Placing a sovereign-style character inside a biopower world | Let their old life-and-death authority go unrecognized or become invisible to the new system, rather than dramatically defeated | Resolve them with a classic duel or execution that restores sovereignty as the story's real logic |
-| Deciding how much lecture-history to import | Use only the mechanism (biopower + racism's two functions) as a portable engine | Import the whole race-war-to-class-struggle history as setting lore; it is scaffolding for Foucault's argument, not required furniture for a new one |
+| Building a biopower antagonist or system | Give it a stated, sincere mission to make live (health, growth, optimization) that requires a justified class of exceptions | Write a system that just wants to kill or dominate — that is sovereignty, not biopower |
+| Staging the theme | Let a concrete mechanism (a screening, a quota, a classification) carry the argument, and let events test it | Have a character announce the theme as dialogue |
+| Writing the "villain" of a biopower plot | Show them believing they are curating health or fitness for the whole, not indulging cruelty | Write generic malice; the mechanism only works if the killing reads as care to the killer |
+| Designing who gets protected vs. exposed | Root the cut in a measurable norm (a score, a status, a diagnosis) applied uniformly, then reveal its violence | Make the cut arbitrary or purely personal — it needs to look procedural |
+| Writing an opposition faction | Ask whether it rejected the administrative logic of "manage life" or only wants to run the machine itself | Assume any resistance is automatically outside the regime's logic |
+| Placing a sovereign-style character inside a biopower world | Let their old life-and-death authority go unrecognized by the new system | Resolve them with a classic duel that restores sovereignty as the story's real logic |
+| Deciding how much lecture-history to import | Use only the mechanism (biopower + racism's two functions) as a portable engine | Import the race-war-to-class-struggle history as setting lore |
 
 ---
 
