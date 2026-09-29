@@ -45,7 +45,7 @@ date_created: 2026-09-29
 # BVX.1147 — Heterocosmica: Fiction and Possible Worlds — Lubomír Doležel (1998)
 ### Knowledge Entry — Distill
 
-A logician's grammar for what makes a fictional world hold together: four independent constraint systems that sort every entity and action into possible/impossible, permitted/forbidden, good/bad, known/unknown, plus a formal account of why every world is unfinished on purpose. The mechanism behind "world law" and behind "how much do I have to fill in."
+A logician's grammar for what makes a fictional world hold together: four independent constraint systems that sort every entity and action into possible/impossible, permitted/forbidden, good/bad, known/unknown, plus a formal account of why every world stays unfinished on purpose. The mechanism behind "world law" and "how much do I have to fill in."
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -63,7 +63,7 @@ A logician's grammar for what makes a fictional world hold together: four indepe
 
 ## 1 · CORE THESIS
 
-A fictional world is built from four independent constraint systems — alethic (what can happen), deontic (what is allowed), axiological (what is valued), epistemic (what is known) — each generating its own family of stories. A world's completeness is never physical; it is a function of how the text's wording (its texture) distributes fact, hint, and silence.
+A fictional world is built from four independent constraint systems: alethic (what can happen), deontic (what is allowed), axiological (what is valued), epistemic (what is known). Each generates its own family of stories. A world's completeness is never physical; it is a function of how the text's wording, its texture, distributes fact, hint, and silence.
 
 ---
 
@@ -150,7 +150,7 @@ Doležel builds in two matched movements, each opening with a "Starter Terms" pr
 | Eight — Modern Myth | The Hybrid World; The Visible/Invisible World | What happens to the classical two-domain (natural/supernatural) world once modernist fiction dissolves or re-tools its boundary? |
 | Epilogue | Fictional Worlds in Transduction | How do postmodern rewrites travel between, and destabilize, already-built fictional worlds? |
 
-This distill concentrates on Narrative Modalities (the four constraint systems), Authentication (how a text's wording confers fictional existence), and Saturation (how much of the world the text actually builds) — the three chapters that carry the book's method for what a world's law is and how thin a world is allowed to be.
+This distill concentrates on Narrative Modalities, Authentication, and Saturation: the three chapters carrying the book's method for what a world's law is and how thin a world is allowed to be.
 
 ---
 

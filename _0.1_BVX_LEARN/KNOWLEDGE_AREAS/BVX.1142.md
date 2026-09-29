@@ -61,7 +61,7 @@ date_created: 2026-09-29
 # BVX.1142 — Cities Without Number (Free Edition) — Kevin Crawford (2023)
 ### Knowledge Entry — Distill
 
-A cyberpunk OSR rulebook whose second half is a system-neutral GM toolbox for building a sandbox dystopia top-down, from a world down to a table-ready district, plus a fully worked instance (New Chicago) proving the method; read for the city-generation and campaign-motion chapters, not the character or combat rules.
+A cyberpunk OSR rulebook whose second half is a system-neutral GM toolbox for building a sandbox dystopia top-down, plus a fully worked instance (New Chicago); read for the city-generation and campaign-motion chapters, not the character or combat rules.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -178,7 +178,7 @@ The book is two halves under one cover: a full OSR game system (character creati
 | Creating and Running Missions (Schemes) | Campaign motion | Progress-point plots per faction, at district, city, and region scale, advanced or damaged by missions |
 | The City | Worked instance | New Chicago: a full Timeline of Collapse, seven named Market Leader megacorps, city government, crime and punishment, a corp-authored ethos and glossary |
 
-The chapter order is the build order (Diagram 2): each step's output is the next step's raw material, and the book repeatedly tells the GM to stop once a first session is covered rather than complete every table.
+The chapter order is the build order (Diagram 2): each step's output is the next step's raw material, and the GM is repeatedly told to stop once a first session is covered.
 
 ---
 
@@ -232,7 +232,6 @@ The chapter order is the build order (Diagram 2): each step's output is the next
 - Writing a lengthy invented history with no present-day consequence, rather than the guided seven-question paragraph method the book insists on.
 - Treating a megacorp or gang as a one-off description instead of running the repeatable six-field card, which produces an inconsistent faction roster over time.
 - Leaving factions static between sessions with no Scheme, then improvising motive on the fly when players ask "what have they been doing?"
-- Describing a corp's ideology in GM narration instead of writing it the in-world glossary or pitch that actually characterizes the culture from inside.
 - Assuming civic government is the real law in an unpoliced district when the book states plainly that gangs and enforcement agencies hold that role instead.
 
 ---
