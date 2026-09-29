@@ -1,6 +1,6 @@
 # OXO · the tracking file (BOLO 90 · BOLO 79, RULED 2026-09-29 "all recommendations")
 # One store, many views: this file holds the data; ssot_08_tracking_system.md defines the format;
-# the workspace only reads it (read-only v1). Time codes: M · Q · S | bar.beat.tick (ssot_08 §4).
+# the workspace edits it through `tracking.py pull` (step 6, RULED 2026-09-29; contract: _tools/bolostatus/work/90/EDIT-CONTRACT.md). Time codes: M · Q · S | bar.beat.tick (ssot_08 §4).
 # ⧗ = proposed, not ruled canon. First rows: the M2 grief trial (_tools/bolostatus/work/90/TRIAL-M2-grief.md).
 
 story: oxo

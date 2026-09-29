@@ -9,7 +9,8 @@ Reads ONE tracking file per story (ssot_08 format) —
 every trope slug against the trope register, and returns one JSON-able dict
 that build.py embeds for the Told lens (The Arrangement).
 
-This module only READS the tracking file — no editing (ruling 4, read-only v1).
+`load` only READS the tracking file; `pull` (step 6, RULED 2026-09-29) folds the page's
+edits into it per _tools/bolostatus/work/90/EDIT-CONTRACT.md.
 
 Grammar (ssot_08 §4): M<n> · Q<n> · S<nn> | bar.beat[.tick]
   - the M · Q · S must name a scene in `scenes:`
@@ -244,7 +245,186 @@ def load(story: str) -> dict:
     }
 
 
+# ---- step 6 · the pull (BOLO 90, RULED 2026-09-29 session 4) -------------------------
+# The page writes edits to its db (`edits`); Claude dumps them to disk with ArtifactData
+# (out_dir) and runs `tracking.py pull <story> <dir>`. Contract:
+# _tools/bolostatus/work/90/EDIT-CONTRACT.md. The yaml stays the one source; a bad edit is
+# flagged in the ledger with its reason, never dropped or guessed.
+
+def _ledger_path(story):
+    return TRACKING_DIR / f"{story}.edits.ledger.json"
+
+
+def load_ledger(story):
+    p = _ledger_path(story)
+    if not p.exists():
+        return {"applied": [], "undone": [], "flagged": {}}
+    led = json.loads(p.read_text(encoding="utf-8"))
+    for k, v in (("applied", []), ("undone", []), ("flagged", {})):
+        led.setdefault(k, v)
+    return led
+
+
+def _read_edits(edits_dir, story):
+    edits = []
+    for f in sorted(Path(edits_dir).rglob("*.json")):
+        obj = json.loads(f.read_text(encoding="utf-8"))
+        body = obj.get("data") if isinstance(obj.get("data"), dict) and "op" not in obj else obj
+        eid = obj.get("id") or f.stem
+        if body.get("story", story) != story or not body.get("op"):
+            continue
+        edits.append((eid, body))
+    edits.sort(key=lambda e: (e[1].get("seq", 0), e[0]))
+    return edits
+
+
+def pull(story, edits_dir):
+    import io
+    from datetime import date
+    from ruamel.yaml import YAML
+    from ruamel.yaml.comments import CommentedMap, CommentedSeq
+
+    def flow(d):
+        m = CommentedMap(d)
+        m.fa.set_flow_style()
+        return m
+
+    path = TRACKING_DIR / f"{story}.yaml"
+    original = path.read_text(encoding="utf-8")
+    ry = YAML()
+    ry.preserve_quotes = True
+    ry.width = 4096
+    ry.indent(mapping=2, sequence=4, offset=2)
+    data = ry.load(original)
+    led = load_ledger(story)
+    done = set(led["applied"]) | set(led["undone"]) | set(led["flagged"])
+    pending = [(i, b) for i, b in _read_edits(edits_dir, story) if i not in done]
+
+    # undo first: an undo cancels its target (the target stays in the log, marked undone)
+    cancelled = set()
+    for eid, b in pending:
+        if b["op"] != "undo":
+            continue
+        ref = (b.get("data") or {}).get("ref")
+        if ref in led["applied"]:
+            led["flagged"][eid] = f"undo target {ref} was already pulled into the yaml"
+        elif ref:
+            cancelled.add(ref)
+            led["applied"].append(eid)
+    for ref in cancelled:
+        if ref not in led["undone"]:
+            led["undone"].append(ref)
+
+    idx = _CodeIndex(data["scenes"], story)
+
+    def bad(code):
+        try:
+            idx.check(code, "edit")
+            return None
+        except SystemExit as e:
+            return str(e).split(" — ", 1)[-1]
+
+    def find_point(key):
+        for p in data.get("story_points") or []:
+            if (p.get("subject") == key.get("subject") and p.get("field") == key.get("field")
+                    and _strip_provisional(p.get("at")) == _strip_provisional(key.get("at"))):
+                return p
+        return None
+
+    applied_now = 0
+    for eid, b in pending:
+        op, d = b["op"], b.get("data") or {}
+        if op == "undo" or eid in cancelled or eid in led["flagged"]:
+            continue
+        why = None
+        if op == "point.move":
+            p = find_point(d.get("key") or {})
+            why = "no story point matches the key" if p is None else bad(d.get("to"))
+            if not why:
+                p["at"] = d["to"]
+        elif op == "point.add":
+            if not all(d.get(k) for k in ("subject", "field", "at")):
+                why = "point.add needs subject, field and at"
+            else:
+                why = bad(d["at"])
+            if not why:
+                row = {k: d[k] for k in ("subject", "at", "field")}
+                row["value"] = d.get("value", "")
+                if d.get("origin_event"):
+                    row["origin_event"] = d["origin_event"]
+                data.setdefault("story_points", CommentedSeq()).append(flow(row))
+        elif op == "point.remove":
+            p = find_point(d.get("key") or {})
+            if p is None:
+                why = "no story point matches the key"
+            else:
+                data["story_points"].remove(p)
+        elif op == "cable.add":
+            cid, setup, payoff = d.get("id"), d.get("setup") or {}, d.get("payoff")
+            if not cid or any(c.get("id") == cid for c in data.get("cables") or []):
+                why = f"cable id {cid!r} is missing or already used"
+            else:
+                why = bad(setup.get("at")) or (bad(payoff.get("at")) if payoff else None)
+            if not why:
+                row = CommentedMap()
+                row["id"] = cid
+                row["setup"] = flow({"track": setup["track"], "at": setup["at"]})
+                row["payoff"] = flow({"track": payoff["track"], "at": payoff["at"]}) if payoff else None
+                row["orphan"] = "provisional" if payoff else "setup_no_payoff"
+                row["why"] = d.get("why", "")
+                data.setdefault("cables", CommentedSeq()).append(row)
+        elif op == "cable.remove":
+            hit = [c for c in data.get("cables") or [] if c.get("id") == d.get("id")]
+            if not hit:
+                why = f"no cable {d.get('id')!r}"
+            else:
+                data["cables"].remove(hit[0])
+        elif op == "tempo.planned":
+            pts = d.get("points") or []
+            why = next((f"{p.get('at')}: {bad(p.get('at'))}" for p in pts if bad(p.get("at"))), None)
+            if not why and not all(isinstance(p.get("bpm"), (int, float)) and p["bpm"] > 0 for p in pts):
+                why = "every tempo point needs a bpm above 0"
+            if not why:
+                seq = CommentedSeq()
+                for p in pts:
+                    row = {"at": p["at"], "bpm": p["bpm"]}
+                    if p.get("ramp"):
+                        row["ramp"] = True
+                    seq.append(flow(row))
+                data.setdefault("tempo", CommentedMap())["planned"] = seq
+        else:
+            why = f"unknown op {op!r}"
+        if why:
+            led["flagged"][eid] = why
+        else:
+            led["applied"].append(eid)
+            applied_now += 1
+
+    if applied_now:
+        v = str(data.get("version", "0.1.0")).split(".")
+        v[-1] = str(int(v[-1]) + 1)
+        data["version"] = ".".join(v)
+        data["last_updated"] = date.today().isoformat()
+        buf = io.StringIO()
+        ry.dump(data, buf)
+        path.write_text(buf.getvalue(), encoding="utf-8")
+        try:
+            load(story)
+        except SystemExit:
+            path.write_text(original, encoding="utf-8")
+            raise
+    _ledger_path(story).write_text(json.dumps(led, indent=1, ensure_ascii=False), encoding="utf-8")
+    ids = {i for i, _ in pending}
+    return {"pending": len(pending), "applied": applied_now, "undone": len(cancelled),
+            "flagged": {k: v for k, v in led["flagged"].items() if k in ids},
+            "version": str(data.get("version"))}
+
+
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) >= 4 and sys.argv[1] == "pull":
+        print(json.dumps(pull(sys.argv[2], sys.argv[3]), indent=2, ensure_ascii=False))
+        raise SystemExit(0)
     data = load("oxo")
     print(json.dumps({
         "scenes": len(data["scenes"]), "points": len(data["points"]),
