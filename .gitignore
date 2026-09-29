@@ -53,3 +53,4 @@ _tools/dictation/_facepos.json
 # Stash queues and ledgers: filenames stay private (9/24)
 _tools/dictation/_stashplay_*
 _tools/dictation/_stashgrade_*
+_tools/workspace/out/edits_dump/

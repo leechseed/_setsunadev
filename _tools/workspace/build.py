@@ -35,6 +35,29 @@ OUT = Path(__file__).resolve().parent / "out" / "workspace.html"
 # `stories:` scope kept at OXO only — tracking.py fails loudly on a bad code/slug.
 TRACKING = tracking.load("oxo")
 
+# the edits ledger (BOLO 90 step 6, RULED 9/29 · the edit contract): the pull's
+# record of what's already folded into oxo.yaml. The page never re-applies an
+# id already in one of these three lists — see EDIT-CONTRACT.md "the ledger".
+LEDGER_PATH = ROOT / "ShroomsQ/_CANON/_TRACKING/oxo.edits.ledger.json"
+
+
+def _load_ledger():
+    default = {"applied": [], "undone": [], "flagged": {}}
+    if not LEDGER_PATH.exists():
+        return default
+    try:
+        raw = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return default
+    return {
+        "applied": raw.get("applied") or [],
+        "undone": raw.get("undone") or [],
+        "flagged": raw.get("flagged") or {},
+    }
+
+
+AR_LEDGER = _load_ledger()
+
 MISSING = []  # sources we could not find / had to skip — reported at the end
 
 
@@ -397,6 +420,7 @@ DATA = {
     },
     "glossary": GLOSSARY,
     "tracking": TRACKING,
+    "ar_ledger": AR_LEDGER,
     "character": {
         "id": "victoria_midnight",
         "name": "Victoria Midnight",
@@ -629,6 +653,42 @@ STYLE = r"""
   .ar-world-ev { stroke-width: 1; }
   .ar-link { fill: none; stroke: var(--ink-3); stroke-width: 1.2; opacity: .7; }
   .ar-link.back { stroke: var(--accent); opacity: .95; stroke-width: 2; }
+  .ar-pt.selected { stroke: #fff; stroke-width: 2.5; }
+  .ar-pt-pending-ring { fill: none; stroke: var(--accent-ink); stroke-width: 1.5; stroke-dasharray: 3 2; pointer-events: none; }
+  .ar-flag-pt { fill: var(--bad); stroke: var(--bg); stroke-width: 1.5; stroke-dasharray: 2 2; cursor: help; }
+  .ar-flag-cable { fill: none; stroke: var(--bad); stroke-width: 2; stroke-dasharray: 3 3; cursor: help; }
+  .ar-cable.pending { stroke-dasharray: 5 4 !important; }
+  .ar-cable.selected { stroke-width: 3.5; }
+
+  /* ---- edit layer chrome (BOLO 90 step 6, RULED 9/29 · the edit contract) ---- */
+  .told-edit-seg button[data-e="edit"][aria-pressed="true"] { background: var(--good); color: #06170F; }
+  .told-edit-seg button[data-e="cable"][aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .told-pending-btn { font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em; padding: 5px 9px; border: 1px dashed var(--accent-ink); color: var(--accent-ink); background: var(--accent-soft); white-space: nowrap; }
+  .told-pending-btn:hover { border-style: solid; }
+  .told-readonly { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); border: 1px solid var(--line-2); padding: 4px 8px; white-space: nowrap; }
+  .told-msg { font-family: var(--mono); font-size: 11px; color: var(--warn); white-space: nowrap; }
+
+  .told-addform, .told-history { position: fixed; z-index: 90; background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 10px 12px; font-size: 13px; }
+  .told-addform { width: 240px; display: grid; gap: 7px; }
+  .told-addform label { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+  .told-addform input { width: 100%; font: 13px var(--body); padding: 5px 7px; border: 1px solid var(--line-2); background: var(--well); color: var(--ink); }
+  .told-addform .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
+  .told-addform button { font-family: var(--mono); font-size: 11px; text-transform: uppercase; padding: 5px 10px; border: 1px solid var(--line-2); }
+  .told-addform button.go { border-color: var(--accent); color: var(--accent); }
+
+  .told-history { width: 360px; max-height: 60vh; overflow-y: auto; }
+  .told-history h4 { margin: 0 0 8px; font-family: var(--display); font-weight: 700; font-size: 15px; text-transform: uppercase; }
+  .told-history .hrow { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 6px 0; border-top: 1px solid var(--line); font-size: 12px; }
+  .told-history .hrow:first-of-type { border-top: 0; }
+  .told-history .hop { font-family: var(--mono); font-size: 10px; text-transform: uppercase; color: var(--ink-3); }
+  .told-history .htarget { overflow-wrap: anywhere; }
+  .told-history .hstate { font-family: var(--mono); font-size: 9.5px; text-transform: uppercase; letter-spacing: .06em; padding: 1px 6px; border: 1px solid currentColor; white-space: nowrap; align-self: start; }
+  .told-history .hstate.pending { color: var(--accent-ink); }
+  .told-history .hstate.applied { color: var(--good); }
+  .told-history .hstate.undone, .told-history .hstate.undone-pending { color: var(--ink-3); }
+  .told-history .hstate.flagged { color: var(--bad); }
+  .told-history .hreason { grid-column: 1 / -1; font-size: 11.5px; color: var(--bad); }
+  .told-history .hclose { position: absolute; top: 6px; right: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
 
   /* the playhead inspector — replaces the selection card while the Told lens is open */
   .told-insp .grp { display: grid; gap: 6px; }
@@ -800,7 +860,7 @@ def build_html() -> str:
 
     <section class="lens-view" id="view-told">
       <h2>Told — The Arrangement</h2>
-      <p class="sub">The <span class="t" data-tt="gloss" data-id="told">told order</span> the audience gets it in, on the <span class="t" data-tt="gloss" data-id="timecode">grid</span> — <span class="t" data-tt="gloss" data-id="bar">bar</span>.<span class="t" data-tt="gloss" data-id="beat">beat</span>.<span class="t" data-tt="gloss" data-id="tick">tick</span>. Read-only: from <span class="mono">ShroomsQ/_CANON/_TRACKING/oxo.yaml</span>. A lane with no data draws nothing — never a fake line.</p>
+      <p class="sub" id="toldSub">The <span class="t" data-tt="gloss" data-id="told">told order</span> the audience gets it in, on the <span class="t" data-tt="gloss" data-id="timecode">grid</span> — <span class="t" data-tt="gloss" data-id="bar">bar</span>.<span class="t" data-tt="gloss" data-id="beat">beat</span>.<span class="t" data-tt="gloss" data-id="tick">tick</span>. From <span class="mono">ShroomsQ/_CANON/_TRACKING/oxo.yaml</span> plus any pending edits. A lane with no data draws nothing — never a fake line.</p>
       <div class="told-toolbar" id="toldToolbar">
         <div class="seg" role="group" aria-label="Told ruler" id="toldRulerSeg">
           <button data-v="told" aria-pressed="true" class="t" data-tt="gloss" data-id="told">Told order</button>
@@ -808,13 +868,23 @@ def build_html() -> str:
           <button data-v="stack" aria-pressed="false" class="t" data-tt="gloss" data-id="stack">Stack</button>
         </div>
         <div class="seg" id="toldZoomSeg"></div>
+        <div class="seg told-edit-seg" id="toldEditSeg" hidden>
+          <button data-e="edit" aria-pressed="true" title="Toggle edit mode">Edit</button>
+          <button data-e="cable" aria-pressed="false" title="Cable tool — or Alt+drag a point">Cable</button>
+          <button data-e="undo" title="Undo the newest pending edit — Ctrl+Z">Undo</button>
+        </div>
+        <button class="told-pending-btn" id="toldPendingBtn" hidden title="Open the edit history">0 edits pending pull</button>
+        <span class="told-msg" id="toldMsg" hidden></span>
+        <span class="told-readonly" id="toldReadonly" hidden>read-only</span>
         <div class="told-tc"><small class="t" data-tt="gloss" data-id="timecode">Time code</small><b id="toldTcOut">—</b></div>
       </div>
       <div class="ar-wrap" id="arWrap">
         <div class="ar-tracks" id="arTracks" aria-hidden="true"></div>
         <div class="ar-lane" id="arLane"><svg class="ar-svg" id="arSvg" role="img" aria-label="Told-order timeline: scenes, tempo, story points and cables"></svg></div>
       </div>
-      <p class="hint" style="margin-top:8px">Key <b class="mono">T</b> flips this ruler (told / world / stack) · wheel to zoom, shift+wheel or drag to pan, click the ruler to move the playhead, ← → step one beat.</p>
+      <p class="hint" style="margin-top:8px">Key <b class="mono">T</b> flips this ruler (told / world / stack) · wheel to zoom, shift+wheel or drag to pan, click the ruler to move the playhead, ← → step one beat. In edit mode: drag a point to move it, dbl-click a state track to add one, select + Delete to remove, Alt+drag (or the Cable tool) to link a cable, Ctrl+Z to undo.</p>
+      <div class="told-addform" id="toldAddForm" hidden></div>
+      <div class="told-history" id="toldHistory" hidden></div>
     </section>
   </main>
 
@@ -1109,7 +1179,7 @@ $('#zoomCtl').addEventListener('click', e => { const b = e.target.closest('butto
 // ---- told lens: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ----
 // data-driven entirely from DATA.tracking (ShroomsQ/_CANON/_TRACKING/oxo.yaml,
 // loaded + validated by tracking.py). A lane with no data draws nothing —
-// never a fake line (ruling 3). Read-only: the tool only reads the file.
+// never a fake line (ruling 3). Edits ride the db and fold in through tracking.py pull (step 6).
 // ==================================================================
 const TS = DATA.tracking;
 const AR_NS = 'http://www.w3.org/2000/svg';
@@ -1149,47 +1219,309 @@ function arSubjLabel(subject){
 }
 function arIsPlace(subject){ return (subject || '').startsWith('place:'); }
 
-const AR_PTS = TS.points.map(p => ({ ...p, tr: arSubjTrack(p.subject), p: arPos(p.at) }));
+// locked lanes — no gesture ever edits these (contract point 4, last bullet)
 const AR_TROPE_PTS = TS.tropes.map(t => ({ ...t, tr: 'tropes', p: arPos(t.at) }));
-const AR_CABLES = TS.cables.map(c => ({
-  ...c,
-  fromTrack: arSubjTrack(c.setup.track), toTrack: c.payoff ? arSubjTrack(c.payoff.track) : null,
-  a: arPos(c.setup.at), b: c.payoff ? arPos(c.payoff.at) : null,
-}));
 const AR_WORLD = TS.world;
 const AR_AUTOMATION = TS.automation.map(a => ({ ...a, points: (a.points || []).map(p => ({ ...p, p: arPos(p.at) })) }));
-const AR_TEMPO_PLANNED = TS.tempo.planned.map(p => ({ ...p, p: arPos(p.at) }));
 const AR_TEMPO_MEASURED = TS.tempo.measured.map(p => ({ ...p, p: arPos(p.at) }));
 const AR_FREE_IN = TS.theme.in_world.map(p => ({ ...p, p: arPos(p.at) }));
 const AR_FREE_AUD = TS.theme.audience.map(p => ({ ...p, p: arPos(p.at) }));
 
+// editable lanes (BOLO 90 step 6, RULED 9/29 · the edit contract): story
+// points, cables, planned tempo. Rebuilt by arBuildEditable() from the
+// embedded base (TS, untouched) plus every pending edit replayed in seq
+// order — never mutated in place. `let`, not `const`: every write recomputes.
+let AR_PTS = [], AR_CABLES = [], AR_TEMPO_PLANNED = [];
+let AR_SUBJECTS_WITH_POINTS = [];
+let AR_TRACKS = [];
+let AR_PENDING_COUNT = 0;
+let AR_FLAGGED_POINTS = [], AR_FLAGGED_CABLES = [], AR_FLAGGED_TEMPO = null;
+
 // tracks: scenes + tempo always; one per automation lane; one state track per
 // subject seen in story points; theme + tropes only if they carry data (ruling 3)
-const AR_TRACKS = [];
-AR_TRACKS.push({ id: 'scenes', nm: 'Scenes', sub: 'clips · the told order', k: 'var(--accent)', h: 40 });
-AR_TRACKS.push({
-  id: 'tempo', nm: 'Tempo',
-  sub: AR_TEMPO_MEASURED.length ? 'planned —  measured - -' : 'planned —  · measured: none until a draft exists',
-  k: 'var(--accent)', h: 64, term: 'tempo',
-});
-for (const a of AR_AUTOMATION) {
-  if (!a.points.length) continue;
-  AR_TRACKS.push({
-    id: 'auto:' + a.id, nm: arSubjLabel(a.subject) + ' · ' + (a.field || '').split('.')[0].replace(/_/g, ' '),
-    sub: ((a.field || '').split('.').slice(1).join('.') || 'value') + ' · automation',
-    k: arIsPlace(a.subject) ? 'var(--c-place)' : 'var(--c-char)', h: 58, term: 'ramp', auto: a,
+function arBuildTracks(){
+  const tracks = [];
+  tracks.push({ id: 'scenes', nm: 'Scenes', sub: 'clips · the told order', k: 'var(--accent)', h: 40 });
+  tracks.push({
+    id: 'tempo', nm: 'Tempo',
+    sub: AR_TEMPO_MEASURED.length ? 'planned —  measured - -' : 'planned —  · measured: none until a draft exists',
+    k: 'var(--accent)', h: 64, term: 'tempo',
   });
+  for (const a of AR_AUTOMATION) {
+    if (!a.points.length) continue;
+    tracks.push({
+      id: 'auto:' + a.id, nm: arSubjLabel(a.subject) + ' · ' + (a.field || '').split('.')[0].replace(/_/g, ' '),
+      sub: ((a.field || '').split('.').slice(1).join('.') || 'value') + ' · automation',
+      k: arIsPlace(a.subject) ? 'var(--c-place)' : 'var(--c-char)', h: 58, term: 'ramp', auto: a,
+    });
+  }
+  for (const subj of AR_SUBJECTS_WITH_POINTS) {
+    const src = (AR_PTS.find(p => p.tr === subj) || {}).subject || '';
+    tracks.push({ id: subj, nm: arSubjLabel(src) + ' · state', sub: 'story points', k: arIsPlace(src) ? 'var(--c-place)' : 'var(--c-char)', h: 40 });
+  }
+  if (AR_FREE_IN.length || AR_FREE_AUD.length) {
+    tracks.push({ id: 'theme', nm: 'Theme · ' + (TS.theme.rail || ''), sub: (TS.theme.scale || '') + ' · in-world / audience', k: 'var(--c-theme)', h: 60, term: 'freedom' });
+  }
+  if (AR_TROPE_PTS.length) {
+    tracks.push({ id: 'tropes', nm: 'Tropes', sub: 'from the register', k: 'var(--c-trope)', h: 36 });
+  }
+  return tracks;
 }
-const AR_SUBJECTS_WITH_POINTS = Array.from(new Set(AR_PTS.map(p => p.tr).filter(Boolean)));
-for (const subj of AR_SUBJECTS_WITH_POINTS) {
-  const src = (TS.points.find(p => arSubjTrack(p.subject) === subj) || {}).subject || '';
-  AR_TRACKS.push({ id: subj, nm: arSubjLabel(src) + ' · state', sub: 'story points', k: arIsPlace(src) ? 'var(--c-place)' : 'var(--c-char)', h: 40 });
+
+// ==================================================================
+// ---- the edit layer: db hookup, replay, gestures (BOLO 90 step 6) ----
+// ==================================================================
+const AR_LEDGER = DATA.ar_ledger || { applied: [], undone: [], flagged: {} };
+const AR_EDIT = { db: null, mode: false, cableTool: false, readOnly: true, edits: [] };
+let AR_SELECTED_POINT = null, AR_SELECTED_CABLE = null;
+let AR_CABLE_DRAG = null;   // { fromPt } while alt-dragging a cable
+let AR_TEMPO_DRAFT = null;  // working copy of planned tempo points during a drag
+
+function arKeyMatch(pt, key){ return !!(pt && key && pt.subject === key.subject && pt.field === key.field && pt.at === key.at); }
+function arPKey(p){ return p.subject + '|' + p.field + '|' + p.at; }
+
+function arValidateCode(text){
+  const m = (text || '').match(/(M\d+)\s*·\s*(Q\d+)\s*·\s*(S\d+)\s*\|\s*(\d+)\.(\d+)(?:\.(\d+))?/);
+  if (!m) return false;
+  const sc = AR_SCENE_BY_KEY[m[1] + '|' + m[2] + '|' + m[3]];
+  if (!sc) return false;
+  const bar = +m[4], beat = +m[5];
+  if (!(bar >= 1 && bar <= sc.bars)) return false;
+  if (!(beat >= 1 && beat <= sc.num)) return false;
+  if (m[6] != null && +m[6] < 1) return false;
+  return true;
 }
-if (AR_FREE_IN.length || AR_FREE_AUD.length) {
-  AR_TRACKS.push({ id: 'theme', nm: 'Theme · ' + (TS.theme.rail || ''), sub: (TS.theme.scale || '') + ' · in-world / audience', k: 'var(--c-theme)', h: 60, term: 'freedom' });
+function arCodeForPos(p){
+  if (!AR_SCENES.length) return null;
+  const rounded = Math.max(0, Math.min(AR_TOTAL - 0.001, Math.round(p)));
+  const c = arCodeAt(rounded);
+  if (!c) return null;
+  const code = c.text + '.1';
+  return arValidateCode(code) ? code : null;
 }
-if (AR_TROPE_PTS.length) {
-  AR_TRACKS.push({ id: 'tropes', nm: 'Tropes', sub: 'from the register', k: 'var(--c-trope)', h: 36 });
+
+function arCategorizeEdits(){
+  const appliedSet = new Set(AR_LEDGER.applied || []);
+  const undoneSet = new Set(AR_LEDGER.undone || []);
+  const flaggedMap = AR_LEDGER.flagged || {};
+  const all = AR_EDIT.edits.slice().sort((a, b) => ((a.data||{}).seq || 0) - ((b.data||{}).seq || 0) || String(a.id).localeCompare(String(b.id)));
+  const cancelled = new Set();
+  for (const e of all) {
+    const d = e.data || {};
+    if (d.op === 'undo' && !appliedSet.has(e.id) && !undoneSet.has(e.id) && !flaggedMap[e.id]) cancelled.add(d.ref);
+  }
+  const pending = [], flagged = [], history = [];
+  for (const e of all) {
+    const d = e.data || {};
+    const reason = flaggedMap[e.id];
+    let st;
+    if (reason) st = 'flagged';
+    else if (appliedSet.has(e.id)) st = 'applied';
+    else if (undoneSet.has(e.id)) st = 'undone';
+    else if (d.op !== 'undo' && cancelled.has(e.id)) st = 'undone-pending';
+    else st = 'pending';
+    history.push({ e, state: st, reason });
+    if (reason) { flagged.push(e); continue; }
+    if (st === 'applied' || st === 'undone' || st === 'undone-pending') continue;
+    pending.push(e);
+  }
+  return { pending, flagged, history };
+}
+
+function arReplay(pendingList){
+  const points = TS.points.map(p => ({ ...p }));
+  const cables = TS.cables.map(c => ({ ...c, setup: { ...c.setup }, payoff: c.payoff ? { ...c.payoff } : null }));
+  let tempoPlanned = TS.tempo.planned.map(p => ({ ...p }));
+  const pendingPointKeys = new Map(), pendingCableIds = new Map();
+  let tempoPendingId = null;
+  for (const e of pendingList) {
+    const d = e.data || {};
+    if (d.op === 'point.move') {
+      const idx = points.findIndex(p => arKeyMatch(p, d.key));
+      if (idx === -1) continue;
+      points[idx] = { ...points[idx], at: d.to };
+      pendingPointKeys.set(arPKey(points[idx]), e.id);
+    } else if (d.op === 'point.add') {
+      const np = { subject: d.subject, field: d.field, value: d.value, at: d.at, origin_event: d.origin_event || null };
+      points.push(np);
+      pendingPointKeys.set(arPKey(np), e.id);
+    } else if (d.op === 'point.remove') {
+      const idx = points.findIndex(p => arKeyMatch(p, d.key));
+      if (idx !== -1) points.splice(idx, 1);
+    } else if (d.op === 'cable.add') {
+      const nc = { id: d.id, setup: { ...d.setup }, payoff: d.payoff ? { ...d.payoff } : null, orphan: d.payoff ? 'provisional' : 'setup_no_payoff', why: d.why || '' };
+      const already = cables.findIndex(c => c.id === nc.id);
+      if (already !== -1) cables[already] = nc; else cables.push(nc);
+      pendingCableIds.set(nc.id, e.id);
+    } else if (d.op === 'cable.remove') {
+      const idx = cables.findIndex(c => c.id === d.id);
+      if (idx !== -1) cables.splice(idx, 1);
+      pendingCableIds.delete(d.id);
+    } else if (d.op === 'tempo.planned') {
+      tempoPlanned = (d.points || []).map(p => ({ ...p }));
+      tempoPendingId = e.id;
+    }
+  }
+  return { points, cables, tempoPlanned, pendingPointKeys, pendingCableIds, tempoPendingId };
+}
+
+function arBuildEditable(){
+  const { pending, flagged } = arCategorizeEdits();
+  const r = arReplay(pending);
+  AR_PTS = r.points.map(p => ({ ...p, tr: arSubjTrack(p.subject), p: arPos(p.at), _pendingEdit: r.pendingPointKeys.get(arPKey(p)) || null }));
+  AR_CABLES = r.cables.map(c => ({
+    ...c,
+    fromTrack: arSubjTrack(c.setup.track), toTrack: c.payoff ? arSubjTrack(c.payoff.track) : null,
+    a: arPos(c.setup.at), b: c.payoff ? arPos(c.payoff.at) : null,
+    _pendingEdit: r.pendingCableIds.get(c.id) || null,
+  }));
+  const tempoBase = AR_TEMPO_DRAFT || r.tempoPlanned;
+  AR_TEMPO_PLANNED = tempoBase.map(p => ({ ...p, p: arPos(p.at), _pendingEdit: AR_TEMPO_DRAFT ? 'draft' : r.tempoPendingId }));
+  AR_SUBJECTS_WITH_POINTS = Array.from(new Set(AR_PTS.map(p => p.tr).filter(Boolean)));
+  AR_TRACKS = arBuildTracks();
+
+  AR_FLAGGED_POINTS = []; AR_FLAGGED_CABLES = []; AR_FLAGGED_TEMPO = null;
+  for (const e of flagged) {
+    const d = e.data || {}; const reason = (AR_LEDGER.flagged || {})[e.id] || 'flagged';
+    if (d.op === 'point.move' && d.key) {
+      AR_FLAGGED_POINTS.push({ subject: d.key.subject, field: d.key.field, at: d.to, tr: arSubjTrack(d.key.subject), p: arPos(d.to), editId: e.id, reason });
+    } else if (d.op === 'point.add') {
+      AR_FLAGGED_POINTS.push({ subject: d.subject, field: d.field, at: d.at, tr: arSubjTrack(d.subject), p: arPos(d.at), editId: e.id, reason });
+    } else if (d.op === 'cable.add' && d.setup) {
+      AR_FLAGGED_CABLES.push({ id: d.id, fromTrack: arSubjTrack(d.setup.track), toTrack: d.payoff ? arSubjTrack(d.payoff.track) : null, a: arPos(d.setup.at), b: d.payoff ? arPos(d.payoff.at) : null, editId: e.id, reason });
+    } else if (d.op === 'tempo.planned') {
+      AR_FLAGGED_TEMPO = { editId: e.id, reason };
+    }
+  }
+  AR_PENDING_COUNT = pending.length;
+}
+arBuildEditable(); // baseline: no edits yet, identical to the old read-only render
+
+function arEditLabel(e){
+  const d = e.data || {};
+  if (d.op === 'point.move') return `${arSubjLabel(d.key && d.key.subject)} · ${d.key && d.key.field} → ${d.to}`;
+  if (d.op === 'point.add') return `${arSubjLabel(d.subject)} · ${d.field} = ${d.value}`;
+  if (d.op === 'point.remove') return `${arSubjLabel(d.key && d.key.subject)} · ${d.key && d.key.field} (removed)`;
+  if (d.op === 'cable.add') return `cable ${d.id} — ${d.why || ''}`;
+  if (d.op === 'cable.remove') return `cable ${d.id} (removed)`;
+  if (d.op === 'tempo.planned') return `tempo curve · ${(d.points||[]).length} pts`;
+  if (d.op === 'undo') return `undo → ${d.ref}`;
+  return d.op || 'edit';
+}
+
+function arSetMsg(text){
+  const el = document.getElementById('toldMsg'); if (!el) return;
+  el.hidden = !text; el.textContent = text || '';
+  if (text) setTimeout(() => { if (el.textContent === text) { el.hidden = true; el.textContent = ''; } }, 5000);
+}
+function arSetReadOnly(flag, msg){
+  AR_EDIT.readOnly = flag;
+  if (flag) AR_EDIT.mode = false;
+  if (msg) arSetMsg(msg);
+  renderEditToolbar();
+}
+
+async function arWriteEdit(op, data){
+  if (!AR_EDIT.db || AR_EDIT.readOnly) return false;
+  const id = 'e' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
+  const body = { story: 'oxo', seq: Date.now(), op, data };
+  AR_EDIT.edits.push({ id, data: body }); // optimistic — a matching id from the next snapshot replaces it wholesale
+  arBuildEditable(); toldRender(); renderEditToolbar();
+  try {
+    await AR_EDIT.db.collection('edits').doc(id).set(body);
+    logEvent('told', `edit written · ${op} · ${arEditLabel({ data: body })}`);
+    return true;
+  } catch (err) {
+    AR_EDIT.edits = AR_EDIT.edits.filter(e => e.id !== id);
+    const code = err && err.code;
+    if (code === 'invalid_argument') arSetReadOnly(true, 'edit rejected — switched to read-only for this visit');
+    else if (code === 'quota_exceeded') arSetMsg('storage quota reached — edit not saved');
+    else arSetMsg('edit did not save');
+    arBuildEditable(); toldRender(); renderEditToolbar();
+    return false;
+  }
+}
+
+function arNewestUndoableId(){
+  const { pending } = arCategorizeEdits();
+  const real = pending.filter(e => (e.data || {}).op !== 'undo');
+  return real.length ? real[real.length - 1].id : null;
+}
+function arUndoLast(){
+  if (!AR_EDIT.mode || AR_EDIT.readOnly) return;
+  const id = arNewestUndoableId();
+  if (!id) { arSetMsg('nothing pending to undo'); return; }
+  arWriteEdit('undo', { ref: id });
+}
+
+function cloneEditDoc(d){
+  try { return { id: d.id, data: JSON.parse(JSON.stringify(d.data ? d.data() : d)) }; }
+  catch (err) { return { id: d.id, data: {} }; }
+}
+
+async function arInitDb(){
+  let db = null;
+  try { if (window.claude && window.claude.use) db = await window.claude.use('db'); }
+  catch (err) { db = null; }
+  AR_EDIT.db = db || null;
+  if (!db) { arSetReadOnly(true); return; }
+  AR_EDIT.readOnly = false; AR_EDIT.mode = true; // edit mode on by default once db is up
+  try {
+    db.collection('edits').onSnapshot(
+      snap => {
+        const docs = [];
+        if (snap && typeof snap.forEach === 'function') snap.forEach(d => docs.push(cloneEditDoc(d)));
+        else if (snap && Array.isArray(snap.docs)) snap.docs.forEach(d => docs.push(cloneEditDoc(d)));
+        AR_EDIT.edits = docs;
+        arBuildEditable(); toldRender(); renderEditToolbar();
+      },
+      err => { arSetMsg('edit sync lost'); }
+    );
+  } catch (err) { arSetReadOnly(true); }
+  renderEditToolbar();
+}
+arInitDb(); // never blocks first paint — the lens already rendered read-only above
+
+function renderEditToolbar(){
+  const seg = document.getElementById('toldEditSeg');
+  const pendBtn = document.getElementById('toldPendingBtn');
+  const ro = document.getElementById('toldReadonly');
+  if (!seg || !pendBtn || !ro) return;
+  const dbUp = !!AR_EDIT.db;
+  seg.hidden = !dbUp;
+  ro.hidden = !AR_EDIT.readOnly;
+  if (dbUp) {
+    seg.querySelector('[data-e="edit"]').setAttribute('aria-pressed', String(AR_EDIT.mode));
+    seg.querySelector('[data-e="cable"]').setAttribute('aria-pressed', String(AR_EDIT.cableTool));
+    seg.querySelectorAll('button').forEach(b => { b.disabled = AR_EDIT.readOnly; });
+  }
+  pendBtn.hidden = AR_PENDING_COUNT === 0;
+  pendBtn.textContent = `${AR_PENDING_COUNT} edit${AR_PENDING_COUNT === 1 ? '' : 's'} pending pull`;
+}
+document.getElementById('toldEditSeg').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.e === 'edit') { AR_EDIT.mode = !AR_EDIT.mode; if (!AR_EDIT.mode) { AR_EDIT.cableTool = false; AR_SELECTED_POINT = null; AR_SELECTED_CABLE = null; } renderEditToolbar(); toldRender(); }
+  else if (b.dataset.e === 'cable') { AR_EDIT.cableTool = !AR_EDIT.cableTool; renderEditToolbar(); }
+  else if (b.dataset.e === 'undo') { arUndoLast(); }
+});
+document.getElementById('toldPendingBtn').addEventListener('click', arToggleHistory);
+
+function arToggleHistory(){
+  const el = document.getElementById('toldHistory');
+  if (!el.hidden) { el.hidden = true; return; }
+  const { history } = arCategorizeEdits();
+  const rows = history.slice().reverse().map(h => `
+    <div class="hrow">
+      <div><span class="hop">${esc((h.e.data||{}).op||'?')}</span> <span class="htarget">${esc(arEditLabel(h.e))}</span></div>
+      <span class="hstate ${h.state}">${esc(h.state)}</span>
+      ${h.reason ? `<div class="hreason">${esc(h.reason)}</div>` : ''}
+    </div>`).join('') || '<p class="empty-detail">No edits yet.</p>';
+  el.innerHTML = `<button class="hclose" id="toldHistoryClose">&times;</button><h4>Edit history</h4>${rows}`;
+  const btn = document.getElementById('toldPendingBtn');
+  const r = btn.getBoundingClientRect();
+  el.style.left = Math.max(12, r.left) + 'px'; el.style.top = (r.bottom + 6) + 'px';
+  el.hidden = false;
+  document.getElementById('toldHistoryClose').addEventListener('click', () => { el.hidden = true; });
 }
 
 const TS_STATE = { view: 'told', ppb: 0, off: 0, ph: AR_SCENES.length ? AR_SCENES[0].start : 0, wph: 0 };
@@ -1313,9 +1645,10 @@ function arAutomationTrack(a, y, h){
   for (const pt of a.points) arEl('circle', { cx: arX(pt.p), cy: Y(pt.v), r: 3.5, fill: 'var(--c-char)', class: 'ar-pt' });
 }
 function arTempoTrack(y, h){
-  if (!AR_TEMPO_PLANNED.length) { arEl('text', { x: 6, y: y + 12 }, null, 'no tempo data'); return; }
   const vals = AR_TEMPO_PLANNED.concat(AR_TEMPO_MEASURED).map(p => p.bpm);
-  const lo = Math.min(...vals) - 10, hi = Math.max(...vals) + 10;
+  const lo = vals.length ? Math.min(...vals) - 10 : 60, hi = vals.length ? Math.max(...vals) + 10 : 180;
+  TS_STATE._tempoBox = { y, h, lo, hi }; // cached for the click/drag hit-test — planned tempo is the one editable curve here
+  if (!AR_TEMPO_PLANNED.length) { arEl('text', { x: 6, y: y + 12 }, null, AR_EDIT.mode ? 'no tempo data — click to add the first point' : 'no tempo data'); return; }
   const planned = AR_TEMPO_PLANNED.map(p => ({ p: p.p, v: p.bpm, ramp: p.ramp }));
   const pa = arStepPath(planned, y, h, lo, hi);
   if (AR_TEMPO_MEASURED.length) {
@@ -1329,7 +1662,17 @@ function arTempoTrack(y, h){
   } else {
     arEl('text', { x: 6, y: y + 12 }, null, 'bpm · planned —  · measured: none until a draft exists');
   }
-  arEl('path', { d: pa.d, fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2 });
+  arEl('path', { d: pa.d, fill: 'none', stroke: (AR_TEMPO_PLANNED[0] || {})._pendingEdit ? 'var(--accent-ink)' : 'var(--accent)', 'stroke-width': 2, 'stroke-dasharray': (AR_TEMPO_PLANNED[0] || {})._pendingEdit ? '5 4' : 'none' });
+  for (const pt of AR_TEMPO_PLANNED) {
+    const cx = arX(pt.p), cy = pa.Y(pt.v);
+    if (cx < -20 || cx > arW() + 20) continue;
+    arEl('circle', { cx, cy, r: 4.5, fill: 'var(--accent)', class: 'ar-pt', 'data-tempoat': pt.at });
+  }
+  if (AR_FLAGGED_TEMPO) {
+    const g = arEl('g', {});
+    arEl('text', { x: arW() - 10, y: y + 12, 'text-anchor': 'end', fill: 'var(--bad)', class: 'ar-sig' }, g, '⚑ flagged curve');
+    arEl('title', {}, g, `flagged · ${AR_FLAGGED_TEMPO.reason}`);
+  }
 }
 function arCurve(A, B, y, h, lo, hi, col, step){
   if (!A.length && !B.length) return; // no data — draw nothing (ruling 3)
@@ -1353,8 +1696,7 @@ function arPoints(t, mid){
   const isTropes = t.id === 'tropes';
   const mine = isTropes ? AR_TROPE_PTS : AR_PTS.filter(p => p.tr === t.id);
   const w = arW();
-  if (!mine.length) return;
-  if (TS_STATE.ppb < 6) {
+  if (mine.length && TS_STATE.ppb < 6) {
     for (const sc of AR_SCENES) {
       const n = mine.filter(p => p.p >= sc.start && p.p < sc.start + sc.len).length;
       if (!n) continue;
@@ -1362,17 +1704,30 @@ function arPoints(t, mid){
       arEl('rect', { x: cx - 11, y: mid - 9, width: 22, height: 18, rx: 9, class: 'ar-badge' });
       arEl('text', { x: cx, y: mid + 4, 'text-anchor': 'middle', class: 'ar-badge-t' }, null, String(n));
     }
-    return;
+  } else {
+    for (const p of mine) {
+      const x = arX(p.p);
+      if (x < -20 || x > w + 20) continue;
+      const g = arEl('g', {});
+      const isSel = !isTropes && AR_SELECTED_POINT && arPKey(AR_SELECTED_POINT) === arPKey(p);
+      if (isTropes) arEl('rect', { x: x - 5, y: mid - 5, width: 10, height: 10, fill: t.k, class: 'ar-pt', transform: `rotate(45 ${x} ${mid})` }, g);
+      else {
+        arEl('circle', { cx: x, cy: mid, r: 5.5, fill: t.k, class: 'ar-pt' + (isSel ? ' selected' : ''), 'data-ptkey': arPKey(p), 'data-track': t.id }, g);
+        if (p._pendingEdit) arEl('circle', { cx: x, cy: mid, r: 8.5, class: 'ar-pt-pending-ring' }, g);
+      }
+      const lbl = isTropes ? p.name : (p.field + (TS_STATE.ppb > 26 ? ' · ' + p.value : ''));
+      const show = TS_STATE.ppb > 120 ? lbl : TS_STATE.ppb > 26 ? (isTropes ? p.name : String(p.value)) : '';
+      if (show) arEl('text', { x: x + 9, y: mid + 3.5 }, g, show.length > 34 ? show.slice(0, 33) + '…' : show);
+    }
   }
-  for (const p of mine) {
-    const x = arX(p.p);
-    if (x < -20 || x > w + 20) continue;
-    const g = arEl('g', {});
-    if (isTropes) arEl('rect', { x: x - 5, y: mid - 5, width: 10, height: 10, fill: t.k, class: 'ar-pt', transform: `rotate(45 ${x} ${mid})` }, g);
-    else arEl('circle', { cx: x, cy: mid, r: 5.5, fill: t.k, class: 'ar-pt' }, g);
-    const lbl = isTropes ? p.name : (p.field + (TS_STATE.ppb > 26 ? ' · ' + p.value : ''));
-    const show = TS_STATE.ppb > 120 ? lbl : TS_STATE.ppb > 26 ? (isTropes ? p.name : String(p.value)) : '';
-    if (show) arEl('text', { x: x + 9, y: mid + 3.5 }, g, show.length > 34 ? show.slice(0, 33) + '…' : show);
+  // flagged points on this track are drawn even at low zoom, in red, never hidden
+  if (!isTropes) {
+    for (const fp of AR_FLAGGED_POINTS.filter(f => f.tr === t.id)) {
+      const x = arX(fp.p); if (x < -20 || x > w + 20) continue;
+      const g = arEl('g', {});
+      arEl('circle', { cx: x, cy: mid, r: 6, class: 'ar-flag-pt', 'data-flag': fp.editId }, g);
+      arEl('title', {}, g, `flagged · ${fp.reason}`);
+    }
   }
 }
 function arCables(tracks){
@@ -1382,15 +1737,36 @@ function arCables(tracks){
     const y1 = ty(c.fromTrack); if (y1 == null) continue;
     const x1 = arX(c.a);
     const col = c.orphan === 'setup_no_payoff' || c.orphan === 'payoff_no_setup' ? 'var(--bad)' : 'var(--accent)';
+    const extra = (c._pendingEdit ? ' pending' : '') + (AR_SELECTED_CABLE && AR_SELECTED_CABLE.id === c.id ? ' selected' : '');
     if (c.b == null) {
       const x2 = x1 + Math.max(40, 18 * Math.sqrt(TS_STATE.ppb));
-      arEl('path', { d: `M ${x1} ${y1} C ${x1 + 20} ${y1 + 26}, ${x2 - 10} ${y1 + 30}, ${x2} ${y1 + 22}`, class: 'ar-cable', stroke: col, 'data-cab': c.id });
+      arEl('path', { d: `M ${x1} ${y1} C ${x1 + 20} ${y1 + 26}, ${x2 - 10} ${y1 + 30}, ${x2} ${y1 + 22}`, class: 'ar-cable' + extra, stroke: col, 'data-cab': c.id });
       arEl('circle', { cx: x2, cy: y1 + 22, r: 4, class: 'ar-orphan' });
       continue;
     }
     const y2 = ty(c.toTrack); if (y2 == null) continue;
     const x2 = arX(c.b), sag = Math.min(90, Math.abs(x2 - x1) * .18 + 24);
-    arEl('path', { d: `M ${x1} ${y1} C ${x1 + (x2 - x1) * .3} ${Math.max(y1, y2) + sag}, ${x1 + (x2 - x1) * .7} ${Math.max(y1, y2) + sag}, ${x2} ${y2}`, class: 'ar-cable' + (c.orphan === 'provisional' ? ' provisional' : ''), stroke: col, 'data-cab': c.id, opacity: .9 });
+    arEl('path', { d: `M ${x1} ${y1} C ${x1 + (x2 - x1) * .3} ${Math.max(y1, y2) + sag}, ${x1 + (x2 - x1) * .7} ${Math.max(y1, y2) + sag}, ${x2} ${y2}`, class: 'ar-cable' + (c.orphan === 'provisional' ? ' provisional' : '') + extra, stroke: col, 'data-cab': c.id, opacity: .9 });
+  }
+  // flagged cables — drawn even though never replayed into state, red, never hidden
+  for (const fc of AR_FLAGGED_CABLES) {
+    const y1 = ty(fc.fromTrack); if (y1 == null) continue;
+    const x1 = arX(fc.a);
+    const g = arEl('g', {});
+    if (fc.b == null) {
+      const x2 = x1 + Math.max(40, 18 * Math.sqrt(TS_STATE.ppb));
+      arEl('path', { d: `M ${x1} ${y1} C ${x1 + 20} ${y1 + 26}, ${x2 - 10} ${y1 + 30}, ${x2} ${y1 + 22}`, class: 'ar-flag-cable', 'data-flag': fc.editId }, g);
+    } else {
+      const y2 = ty(fc.toTrack); if (y2 == null) continue;
+      const x2 = arX(fc.b), sag = Math.min(90, Math.abs(x2 - x1) * .18 + 24);
+      arEl('path', { d: `M ${x1} ${y1} C ${x1 + (x2 - x1) * .3} ${Math.max(y1, y2) + sag}, ${x1 + (x2 - x1) * .7} ${Math.max(y1, y2) + sag}, ${x2} ${y2}`, class: 'ar-flag-cable', 'data-flag': fc.editId }, g);
+    }
+    arEl('title', {}, g, `flagged · ${fc.reason}`);
+  }
+  // the cable draw gesture's live ghost line, alt-drag or the Cable tool
+  if (AR_CABLE_DRAG && AR_CABLE_DRAG.curX != null) {
+    const y1 = ty(AR_CABLE_DRAG.fromPt.tr); const x1 = arX(AR_CABLE_DRAG.fromPt.p);
+    if (y1 != null) arEl('line', { x1, y1, x2: AR_CABLE_DRAG.curX, y2: AR_CABLE_DRAG.curY, stroke: 'var(--accent-ink)', 'stroke-width': 2, 'stroke-dasharray': '4 3' });
   }
 }
 
@@ -1589,8 +1965,62 @@ function toldInspectorHtml(){
     else TS_STATE.ph = Math.max(0, Math.min(AR_TOTAL - .01, TS_STATE.off + x / (TS_STATE.ppb || 1)));
     toldRender();
   }
+  const arEditable = () => AR_EDIT.mode && !AR_EDIT.readOnly && TS_STATE.view === 'told';
+  function arTrackAtY(y){
+    return AR_TRACKS.find(t => AR_SUBJECTS_WITH_POINTS.includes(t.id) && t._y != null && y >= t._y && y < t._y + t._h) || null;
+  }
+  function arPosFromX(x){ return TS_STATE.off + x / (TS_STATE.ppb || 1); }
+  function arBpmFromY(y){
+    const box = TS_STATE._tempoBox; if (!box) return 100;
+    const frac = 1 - Math.max(0, Math.min(1, (y - box.y - 6) / Math.max(1, box.h - 12)));
+    return Math.round(box.lo + frac * (box.hi - box.lo));
+  }
+  function arCommitTempoDraft(){
+    if (!AR_TEMPO_DRAFT) return;
+    const pts = AR_TEMPO_DRAFT.slice().sort((a, b) => arPos(a.at) - arPos(b.at)).map(p => ({ at: p.at, bpm: p.bpm, ramp: !!p.ramp }));
+    AR_TEMPO_DRAFT = null;
+    arWriteEdit('tempo.planned', { points: pts });
+  }
   lane.addEventListener('pointerdown', e => {
     const r = lane.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    if (arEditable()) {
+      const ptEl = e.target.closest('[data-ptkey]');
+      if (ptEl) {
+        const pt = AR_PTS.find(p => arPKey(p) === ptEl.dataset.ptkey);
+        if (pt) {
+          AR_SELECTED_POINT = pt; AR_SELECTED_CABLE = null;
+          if (e.altKey || AR_EDIT.cableTool) { arDrag = { mode: 'cable' }; AR_CABLE_DRAG = { fromPt: pt, curX: x, curY: y }; }
+          else arDrag = { mode: 'point', target: pt, origKey: { subject: pt.subject, field: pt.field, at: pt.at }, curCode: pt.at };
+          toldRender(); lane.setPointerCapture(e.pointerId); return;
+        }
+      }
+      const cabEl = e.target.closest('[data-cab]');
+      if (cabEl) {
+        AR_SELECTED_CABLE = AR_CABLES.find(c => c.id === cabEl.dataset.cab) || null; AR_SELECTED_POINT = null;
+        toldRender(); return;
+      }
+      const box = TS_STATE._tempoBox;
+      if (box && y >= box.y && y < box.y + box.h) {
+        if (e.button === 2) return; // right-click delete handled by the 'contextmenu' listener below
+        const tEl = e.target.closest('[data-tempoat]');
+        if (e.altKey) {
+          const at = tEl ? tEl.dataset.tempoat : null;
+          if (at) { arWriteEdit('tempo.planned', { points: AR_TEMPO_PLANNED.filter(p => p.at !== at).map(p => ({ at: p.at, bpm: p.bpm, ramp: !!p.ramp })) }); }
+          return;
+        }
+        const draft = AR_TEMPO_PLANNED.map(p => ({ at: p.at, bpm: p.bpm, ramp: !!p.ramp }));
+        let idx;
+        if (tEl) { idx = draft.findIndex(p => p.at === tEl.dataset.tempoat); }
+        else {
+          const code = arCodeForPos(arPosFromX(x)); if (!code) return;
+          draft.push({ at: code, bpm: arBpmFromY(y), ramp: false });
+          idx = draft.length - 1;
+        }
+        if (idx == null || idx < 0) return;
+        AR_TEMPO_DRAFT = draft; arDrag = { mode: 'tempo', idx };
+        arBuildEditable(); toldRender(); lane.setPointerCapture(e.pointerId); return;
+      }
+    }
     const onRuler = y < AR_BAND_H * 2 + AR_RULE_H || (TS_STATE.view === 'stack' && y > arH() * .5 + 18 && y < arH() * .5 + 18 + AR_BAND_H * 2);
     if (TS_STATE.view === 'world' || onRuler) { arDrag = { mode: 'ph' }; arMovePH(x); }
     else arDrag = { mode: 'pan', x, off: TS_STATE.off };
@@ -1598,13 +2028,87 @@ function toldInspectorHtml(){
   });
   lane.addEventListener('pointermove', e => {
     if (!arDrag) return;
-    const x = e.clientX - lane.getBoundingClientRect().left;
-    if (arDrag.mode === 'ph') arMovePH(x);
-    else { if (!TS_STATE.ppb) arFit(); TS_STATE.off = arDrag.off - (x - arDrag.x) / TS_STATE.ppb; arClampOff(); toldRender(); }
+    const r = lane.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    if (arDrag.mode === 'ph') { arMovePH(x); return; }
+    if (arDrag.mode === 'pan') { if (!TS_STATE.ppb) arFit(); TS_STATE.off = arDrag.off - (x - arDrag.x) / TS_STATE.ppb; arClampOff(); toldRender(); return; }
+    if (arDrag.mode === 'point') {
+      const code = arCodeForPos(arPosFromX(x)); if (!code) return;
+      arDrag.curCode = code;
+      arDrag.target.at = code; arDrag.target.p = arPos(code);
+      toldRender(); return;
+    }
+    if (arDrag.mode === 'cable') { AR_CABLE_DRAG.curX = x; AR_CABLE_DRAG.curY = y; toldRender(); return; }
+    if (arDrag.mode === 'tempo' && AR_TEMPO_DRAFT) {
+      const code = arCodeForPos(arPosFromX(x)); if (code) AR_TEMPO_DRAFT[arDrag.idx].at = code;
+      AR_TEMPO_DRAFT[arDrag.idx].bpm = arBpmFromY(y);
+      arBuildEditable(); toldRender(); return;
+    }
   });
-  lane.addEventListener('pointerup', () => { arDrag = null; });
+  lane.addEventListener('pointerup', e => {
+    if (arDrag && arDrag.mode === 'point') {
+      if (arDrag.curCode && arDrag.curCode !== arDrag.origKey.at) arWriteEdit('point.move', { key: arDrag.origKey, to: arDrag.curCode });
+      else { arBuildEditable(); toldRender(); }
+    } else if (arDrag && arDrag.mode === 'cable') {
+      const r = lane.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+      const dropEl = document.elementFromPoint(e.clientX, e.clientY);
+      const toEl = dropEl && dropEl.closest && dropEl.closest('[data-ptkey]');
+      const toPt = toEl ? AR_PTS.find(p => arPKey(p) === toEl.dataset.ptkey) : null;
+      const from = AR_CABLE_DRAG.fromPt;
+      AR_CABLE_DRAG = null;
+      if (!toPt || arPKey(toPt) === arPKey(from)) { toldRender(); }
+      else {
+        const why = window.prompt('Why does this cable exist? (setup → payoff)', '');
+        if (why != null && why.trim()) {
+          arWriteEdit('cable.add', { id: 'c' + Date.now(), setup: { track: from.subject, at: from.at }, payoff: { track: toPt.subject, at: toPt.at }, why: why.trim() });
+        } else toldRender();
+      }
+    } else if (arDrag && arDrag.mode === 'tempo') {
+      arCommitTempoDraft();
+    }
+    arDrag = null;
+  });
+  lane.addEventListener('contextmenu', e => {
+    if (!arEditable()) return;
+    const tEl = e.target.closest('[data-tempoat]');
+    if (!tEl) return;
+    e.preventDefault();
+    arWriteEdit('tempo.planned', { points: AR_TEMPO_PLANNED.filter(p => p.at !== tEl.dataset.tempoat).map(p => ({ at: p.at, bpm: p.bpm, ramp: !!p.ramp })) });
+  });
+  lane.addEventListener('dblclick', e => {
+    if (!arEditable()) return;
+    if (e.target.closest('[data-ptkey], [data-cab], [data-tempoat]')) return;
+    const r = lane.getBoundingClientRect(), y = e.clientY - r.top, x = e.clientX - r.left;
+    const track = arTrackAtY(y); if (!track) return;
+    const code = arCodeForPos(arPosFromX(x)); if (!code) return;
+    arOpenAddForm(track.id, code, e.clientX, e.clientY);
+  });
   new ResizeObserver(() => { if (!TS_STATE.ppb) arFit(); arClampOff(); toldRender(); }).observe(lane);
 })();
+
+function arOpenAddForm(trackId, atCode, clientX, clientY){
+  const el = document.getElementById('toldAddForm'); if (!el) return;
+  const subject = (AR_PTS.find(p => p.tr === trackId) || {}).subject || trackId;
+  el.innerHTML = `
+    <div><b class="mono" style="font-size:11px;color:var(--ink-3)">${esc(arSubjLabel(subject))} · ${esc(atCode)}</b></div>
+    <div><label>Field</label><input type="text" id="afField" placeholder="e.g. control_state"></div>
+    <div><label>Value</label><input type="text" id="afValue" placeholder="e.g. captivity"></div>
+    <div><label>Origin event (optional)</label><input type="text" id="afOrigin"></div>
+    <div class="row"><button data-a="cancel">Cancel</button><button data-a="add" class="go">Add</button></div>`;
+  el.style.left = Math.max(12, Math.min(window.innerWidth - 260, clientX)) + 'px';
+  el.style.top = Math.max(12, Math.min(window.innerHeight - 180, clientY)) + 'px';
+  el.hidden = false;
+  el.querySelector('#afField').focus();
+  const close = () => { el.hidden = true; el.innerHTML = ''; };
+  el.querySelector('[data-a="cancel"]').addEventListener('click', close);
+  el.querySelector('[data-a="add"]').addEventListener('click', () => {
+    const field = el.querySelector('#afField').value.trim();
+    const value = el.querySelector('#afValue').value.trim();
+    const origin = el.querySelector('#afOrigin').value.trim();
+    if (!field || !value) { arSetMsg('field and value are both required'); return; }
+    arWriteEdit('point.add', { subject, field, value, at: atCode, origin_event: origin || undefined });
+    close();
+  });
+}
 function arStepBeat(dir){
   if (!AR_SCENES.length) return;
   TS_STATE.ph = Math.max(0, Math.min(AR_TOTAL - .01, Math.floor(TS_STATE.ph) + dir + .05));
@@ -1918,6 +2422,11 @@ document.addEventListener('keydown', e => {
   if (!e.ctrlKey && !e.metaKey && e.key === '=') { setZoom('in'); return; }
   if (state.lens === 'told' && e.key.toLowerCase() === 't') { arCycleRuler(); return; }
   if (state.lens === 'told' && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) { arStepBeat(e.key === 'ArrowRight' ? 1 : -1); e.preventDefault(); return; }
+  if (state.lens === 'told' && (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { arUndoLast(); e.preventDefault(); return; }
+  if (state.lens === 'told' && AR_EDIT.mode && !AR_EDIT.readOnly && (e.key === 'Delete' || e.key === 'Backspace')) {
+    if (AR_SELECTED_CABLE) { arWriteEdit('cable.remove', { id: AR_SELECTED_CABLE.id }); AR_SELECTED_CABLE = null; e.preventDefault(); return; }
+    if (AR_SELECTED_POINT) { arWriteEdit('point.remove', { key: { subject: AR_SELECTED_POINT.subject, field: AR_SELECTED_POINT.field, at: AR_SELECTED_POINT.at } }); AR_SELECTED_POINT = null; e.preventDefault(); return; }
+  }
   if (e.key === 'Escape') { if (tips.length) closeTips(1); else clearSelection(); return; }
   if (e.key === ' ') { if (state.hoverTarget){ e.preventDefault(); toggleTip(state.hoverTarget); } return; }
 });
