@@ -198,12 +198,11 @@ Every chapter runs the identical operation from Diagram 2 on two franchises at o
 ## 7 · PITFALLS / MYTHS
 
 - Treating a "gritty" or "realistic" tone as a neutral aesthetic upgrade rather than a specific ideological stance (capitalist realism dressed as maturity).
-- Assuming a storyworld's anticapitalist content (a rebellion, a critique of empire) automatically makes the work itself anticapitalist, ignoring the commercial machinery producing and monetizing that content.
-- Building a "complete" setting bible as a design goal, when unfinished, unmapped territory is what sustains a franchise's expansion and its audience's engagement.
-- Reading fan and community world-building purely as flattering evidence of a setting's success, without accounting for the unpaid labor it represents.
-- Flattening a setting's history into a list of events instead of a sequence of political conditions, losing the ability to say what kind of power a given era actually ran on.
+- Assuming a storyworld's anticapitalist content (a rebellion, a critique of empire) makes the work itself anticapitalist, ignoring the commercial machinery monetizing that content.
+- Building a "complete" setting bible as a goal, when unfinished, unmapped territory is what sustains a franchise's expansion and engagement.
+- Flattening a setting's history into a list of events instead of a sequence of political conditions, losing what kind of power a given era ran on.
 - Mistaking the absence of an explicit villain-ideology for the absence of ideology; the postideological condition is ideology at its most invisible, not its weakest.
-- Forcing a tidy resolution onto a world's internal contradictions, which erases the exact tension that made the world feel alive and contestable.
+- Forcing a tidy resolution onto a world's internal contradictions, erasing the exact tension that made the world feel alive.
 
 ---
 

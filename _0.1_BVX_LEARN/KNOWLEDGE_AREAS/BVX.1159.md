@@ -214,12 +214,12 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating "more space, more freedom" as automatic — the geopolitical evidence runs the other way more often than not.
+- Treating "more space, more freedom" as automatic: the geopolitical evidence runs the other way more often than not.
 - Writing a resource-moving or defensive technology with no weapon application in mind; in this book's logic, almost none exist.
-- Building an interstellar senate or federation without pricing in effective distance — travel-time lag, not shared ancestry, is what breaks unions (the failed British Imperial Federation is the closer analog than the American founding).
+- Building an interstellar senate or federation without pricing in effective distance. Travel-time lag, not shared ancestry, is what breaks unions (the failed British Imperial Federation is the closer analog than the American founding).
 - Confusing absolute distance with *effective* distance: what technology can traverse quickly is "close," regardless of the number of light-years.
 - The "Benign Parent Model": assuming a homeworld or corporation will nurture a colony toward independence rather than keep it small, dependent, and profitable.
-- Giving an expansionist ideology only material motives (resources, Lebensraum) and skipping its self-description as salvation, destiny, or evolution's next step — the seduction is the point.
+- Giving an expansionist ideology only material motives (resources, Lebensraum) and skipping its self-description as salvation, destiny, or evolution's next step. The seduction is the point.
 - Letting a "peaceful" megastructure exist without asking who it would let dominate everyone else if captured.
 
 ---
