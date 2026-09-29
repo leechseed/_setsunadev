@@ -14,11 +14,11 @@ feeds:
   - layer: L6
     variable: casual_partner_drive
     strength: primary
-    note: "Sex-party attendees carry a much higher casual-partner volume than nonattendees (recent casual partners: median 5 vs. 1; total 3-month partners: median 8 vs. 2; lifetime: median 18 vs. 11) — the same drive variable MSX.20 names as the dominant predictor of sex-on-premises venue use, now shown to hold for private parties too."
+    note: "Sex-party attendees carry a much higher casual-partner volume than nonattendees (recent casual partners: median 5 vs. 1; total 3-month partners: median 8 vs. 2; lifetime: median 18 vs. 11), the same drive variable MSX.20 names as the dominant predictor of sex-on-premises venue use, now shown to hold for private parties too."
   - layer: L7
     variable: subcultural_venue_stratification
     strength: primary
-    note: "Sex parties are a distinct rung below commercial and public sex environments: privately hosted (100% of attendees), themed, invite-only, word-of-mouth or internet-arranged (70% of access), not walk-in — a lower-visibility, harder-to-reach social layer than a bathhouse."
+    note: "Sex parties are a distinct rung below commercial and public sex environments: privately hosted (100% of attendees), themed, invite-only, word-of-mouth or internet-arranged (70% of access), not walk-in. A lower-visibility, harder-to-reach social layer than a bathhouse."
   - layer: L9
     variable: venue_comfort_and_practice
     strength: supporting
@@ -68,7 +68,7 @@ Among 540 young NYC gay, bisexual, and other MSM ages 18 to 29, only 8.7% (n=47)
 
 *Required. Minimum two diagrams, maximum five.*
 
-**Diagram 1 — the whole argument.**
+**Diagram 1, the whole argument.**
 Caption: *attendance is rare, parties are mostly not bareback, and the risk lives in who shows up more than in what happens at the door.*
 
 ```mermaid
@@ -94,8 +94,8 @@ mindmap
       Closure drives it further under
 ```
 
-**Diagram 2 — the central mechanism (individual burden meets environment burden).**
-Caption: *the paper's real claim is not "the party causes risk" — it's that a pre-existing individual risk profile and a permissive party environment compound each other, without that compounding showing up as more literal unprotected sex in this sample.*
+**Diagram 2, the central mechanism (individual burden meets environment burden).**
+Caption: *the paper's real claim is not "the party causes risk"; it's that a pre-existing individual risk profile and a permissive party environment compound each other, without that compounding showing up as more literal unprotected sex in this sample.*
 
 ```mermaid
 flowchart TD
@@ -105,7 +105,7 @@ flowchart TD
     S -.does NOT raise.-> U["Measured unprotected<br/>anal intercourse rate<br/>not significantly higher"]
 ```
 
-**Diagram 3 — mapped onto the Command's systems.**
+**Diagram 3, mapped onto the Command's systems.**
 Caption: *four findings, four feeds: partner volume is a drive variable, private/themed access is a sociological stratum below MSX.20's venues, party type is a scoreable intimacy practice, and supply gaps are a concrete harm-reduction prop.*
 
 ```mermaid
@@ -122,7 +122,7 @@ flowchart LR
 
 Project Desire, a single cross-sectional survey run in four moves:
 
-1. **Recruit.** Research staff spent 75 total hours across a summer 2008 window approaching men in venues across all five NYC boroughs — community events, bars, dance clubs, parks, street corners — regardless of perceived age or orientation, and screened verbally for eligibility (biologically male, ages 18-29). The sampling frame was deliberately stratified: Black and Latino men were guaranteed at least 67% of the sample, and each of three age bands (18-20, 21-25, 26-29) was targeted for roughly a third.
+1. **Recruit.** Research staff spent 75 total hours across a summer 2008 window approaching men in venues across all five NYC boroughs (community events, bars, dance clubs, parks, street corners), regardless of perceived age or orientation, and screened verbally for eligibility (biologically male, ages 18-29). The sampling frame was deliberately stratified: Black and Latino men were guaranteed at least 67% of the sample, and each of three age bands (18-20, 21-25, 26-29) was targeted for roughly a third.
 2. **Administer privately.** Eligible, consenting men (paid $10) completed the survey alone on a touchscreen PDA running ACASI-style (audio-computer-assisted self-interview) software, a method chosen specifically because it measurably increases honest reporting of sex and drug behavior over face-to-face interview. Data collection ran 90 days in summer 2008; the final sample was 540 men, mean age 22.79 (SD=3.42, median=22), 66% ages 18-24 and 34% ages 25-29.
 3. **Measure five domains.** (a) Sociodemographics and self-reported HIV status; (b) sex-party attendance in the past 3 months, and, for attendees, party type, cost, HIV-serostatus mix, prevention supplies present, how they found out, and location; (c) lifetime and recent (3-month) sexual behavior, including casual-partner counts and episodic unprotected anal intercourse (insertive, receptive, and any); (d) a 3-month drug-use checklist across 16 substances, licit and illicit; (e) arrest history and history of physical harm by a boyfriend.
 4. **Compare and composite.** Attendees vs. nonattendees were compared with chi-square and Kruskal-Wallis tests, plus a composite Total Burden score built from four dichotomous indicators (see Key Concepts) and compared by t-test.
@@ -134,12 +134,12 @@ Project Desire, a single cross-sectional survey run in four moves:
 | Concept | What it is | Why it matters |
 |---|---|---|
 | **Sex party** | A privately organized group-sex event (a hotel room, a rented space, a home), distinct from a commercial sex environment (CSE, e.g. bathhouse) or public sex environment (PSE, e.g. cruising park) because it is neither commercially operated nor publicly accessible | A third category of sex venue, below both of MSX.20's CSE/PSE categories on visibility, and the hardest for outreach to reach |
-| **Party type** | Host-set rule for condom use: "safe-sex only" (required), "mixed" (both protected and unprotected present), or "bareback" (condoms not used) | 63.3% (n=31) safe-sex-only, 32.7% (n=16) mixed, 4.1% (n=2) bareback-only — the popular image of the party as a uniformly bareback space is wrong for nearly two-thirds of them |
-| **Serostatus mix** | Whether a party's attendees were HIV-negative only, HIV-positive only, or both | 60.4% (n=29) negative-only, 6.2% (n=3) positive-only, 33% (n=16) mixed — a third of parties cross serostatus lines in the room |
+| **Party type** | Host-set rule for condom use: "safe-sex only" (required), "mixed" (both protected and unprotected present), or "bareback" (condoms not used) | 63.3% (n=31) safe-sex-only, 32.7% (n=16) mixed, 4.1% (n=2) bareback-only; the popular image of the party as a uniformly bareback space is wrong for nearly two-thirds of them |
+| **Serostatus mix** | Whether a party's attendees were HIV-negative only, HIV-positive only, or both | 60.4% (n=29) negative-only, 6.2% (n=3) positive-only, 33% (n=16) mixed; a third of parties cross serostatus lines in the room |
 | **Prevention-supply availability** | Whether condoms, lubricant, both, or neither were present at the party | 58% (n=28) had both, 14.6% (n=7) condoms only, 16.7% (n=8) lubricant only, 10.4% (n=5) neither |
-| **Access channel** | How the attendee learned the party existed | Friend (38.3%, n=18), internet (31.9%, n=15), clubs/bars (17%, n=8), magazines (12.8%, n=6) — nearly 70% word-of-mouth or online, never a public listing |
-| **Total Burden score** | A composite 0-4 score: 1 point each for (1) any unprotected anal intercourse with a casual partner in the past 3 months, (2) any drug/alcohol-to-intoxication use in the past 3 months, (3) ever arrested, (4) ever physically harmed by a boyfriend | Attendees scored higher on average (mean 1.7, SD=1.1) than nonattendees (mean 1.2, SD=1.0), t(436)=3.00, p<.01 — a single portable number for "how much is stacked on this character" |
-| **Syndemic theory** | The framework (Stall et al.) that co-occurring epidemics — drug use, psychosocial burden, sexual risk-taking — interact synergistically, producing more risk together than any one alone would predict | The paper's explanatory frame for why sex-party attendees are worth flagging even though their raw unprotected-sex rate isn't significantly elevated |
+| **Access channel** | How the attendee learned the party existed | Friend (38.3%, n=18), internet (31.9%, n=15), clubs/bars (17%, n=8), magazines (12.8%, n=6); nearly 70% word-of-mouth or online, never a public listing |
+| **Total Burden score** | A composite 0-4 score: 1 point each for (1) any unprotected anal intercourse with a casual partner in the past 3 months, (2) any drug/alcohol-to-intoxication use in the past 3 months, (3) ever arrested, (4) ever physically harmed by a boyfriend | Attendees scored higher on average (mean 1.7, SD=1.1) than nonattendees (mean 1.2, SD=1.0), t(436)=3.00, p<.01; a single portable number for "how much is stacked on this character" |
+| **Syndemic theory** | The framework (Stall et al.) that co-occurring epidemics (drug use, psychosocial burden, sexual risk-taking) interact synergistically, producing more risk together than any one alone would predict | The paper's explanatory frame for why sex-party attendees are worth flagging even though their raw unprotected-sex rate isn't significantly elevated |
 | **Cognitive escape model** | McKirnan et al.'s model: certain environments (like a party) lower self-monitoring and facilitate disinhibited behavior | The mechanism candidate offered for why the party environment itself, not just attendee traits, may add risk |
 | **ACASI / PDA administration** | Self-administered, computer-assisted survey delivery that increases honest disclosure of stigmatized behavior versus a live interviewer | Explains why this dataset can be trusted more than a face-to-face survey on the same topic |
 
@@ -154,7 +154,7 @@ Project Desire, a single cross-sectional survey run in four moves:
 | Setting the serostatus makeup of a party scene | A third of parties mix HIV-positive and HIV-negative attendees openly; write that as ordinary, not scandalous | Assume parties sort cleanly by status, or that mixed-status attendance is itself a plot bomb |
 | Showing how a character finds out about a party | Route it through a friend or the internet | Have a character stumble on a flyer, a public ad, or a walk-up door |
 | Depicting supplies at a party | Show real gaps: roughly 1 in 10 parties has neither condoms nor lube on hand | Assume every private party is fully stocked and harm-reduction-ready |
-| Raising the stakes on a party-attending character | Reach for the Total Burden score's four levers — recent unprotected casual sex, recent drug/alcohol use, an arrest, past partner violence — and stack two or more | Reach for one dramatic, isolated risk act with no surrounding pattern |
+| Raising the stakes on a party-attending character | Reach for the Total Burden score's four levers (recent unprotected casual sex, recent drug/alcohol use, an arrest, past partner violence) and stack two or more | Reach for one dramatic, isolated risk act with no surrounding pattern |
 | A public-health or clinician character responds to party attendance | Have them treat it as a distinct venue needing its own tailored outreach, not lumped with bathhouse or park-cruising strategies | Have them apply generic CSE/PSE prevention messaging unchanged |
 | Deciding whether unprotected sex "must" follow from party attendance | Know that this sample found no significant difference in unprotected anal intercourse rates between attendees and nonattendees | Write attendance itself as narrative shorthand for "and then he had unsafe sex" |
 
@@ -167,7 +167,7 @@ Project Desire, a single cross-sectional survey run in four moves:
 3. **Most parties are not bareback.** 63.3% require condoms, 32.7% are mixed, and only 4.1% are explicitly bareback.
 4. **Serostatus mixing at parties is common.** A third of attendees (33%, n=16) reported parties open to both HIV-positive and HIV-negative men.
 5. **Harm-reduction supplies are inconsistently available.** 58% of parties had both condoms and lubricant; 10.4% had neither.
-6. **Attendees carry a much larger casual-partner volume**, lifetime (median 18 vs. 11), recent casual (median 5 vs. 1), and total recent (median 8 vs. 2) — all statistically significant.
+6. **Attendees carry a much larger casual-partner volume**, lifetime (median 18 vs. 11), recent casual (median 5 vs. 1), and total recent (median 8 vs. 2), all statistically significant.
 7. **Attendees show significantly higher drug use**: more total unique drugs used (median 2 vs. 1) and higher rates of powdered cocaine, crack cocaine, inhalant nitrates, GHB, methamphetamine, nonprescribed PDE-5 inhibitors, nonprescribed benzodiazepines, and nonprescribed HIV medications.
 8. **Attendees carry more psychosocial burden**: 34% (n=16) report an arrest history versus 20% (n=99) of nonattendees; total syndemic burden score is significantly higher (mean 1.7 vs. 1.2).
 9. **Unprotected anal intercourse rates do not differ significantly by attendance** (UIAI, URAI, and any UA all nonsignificant), despite every other risk index being elevated.
