@@ -14,15 +14,15 @@ feeds:
   - layer: L6
     variable: drive_texture
     strength: primary
-    note: "Sex tourism is a deliberate context-shift that licenses risk-elevated sex — more condomless receptive anal intercourse, group sex, and substance use than at home. The risk-seeking is situational and travel-triggered, not a fixed trait the character carries everywhere."
+    note: "Sex tourism is a deliberate context-shift that licenses risk-elevated sex: more condomless receptive anal intercourse, group sex, and substance use than at home. The risk-seeking is situational and travel-triggered, not a fixed trait the character carries everywhere."
   - layer: L9
     variable: intimacy_mode
     strength: supporting
-    note: "Men in a relationship with a man reported higher lifetime sex-tourism engagement than single men (33.1% vs. 24.9%). Travel-sex is not only a singles behavior — partnered status and 'the shadow of the third' can coexist in the same character."
+    note: "Men in a relationship with a man reported higher lifetime sex-tourism engagement than single men (33.1% vs. 24.9%). Travel-sex is not only a singles behavior; partnered status and 'the shadow of the third' can coexist in the same character."
   - layer: L11
     variable: growth_requirement
     strength: contextual
-    note: "Episodic PrEP, proposed here for short high-risk travel windows, is the harm-reduction infrastructure a character who travels for sex would realistically carry, request, or lack — a concrete prop for rendering risk truthfully rather than either moralizing or ignoring it."
+    note: "Episodic PrEP, proposed here for short high-risk travel windows, is the harm-reduction infrastructure a character who travels for sex would realistically carry, request, or lack: a concrete prop for rendering risk truthfully rather than either moralizing or ignoring it."
 pdf_pages: 10
 date_created: 2026-09-29
 status: complete
@@ -64,7 +64,7 @@ A cross-sectional survey of 580 geosocial-app-using men who have sex with men (M
 
 ## 1 · CORE THESIS
 
-Sex tourism — travel chosen mainly for anal intercourse — is common among MSM (28% lifetime in this Paris sample) and behaves as a risk escalator: risk climbs from lifetime engagement, to recent engagement, to condomless engagement, where STI risk triples and HIV risk quadruples. It also tracks relationship status, not just singlehood.
+Sex tourism (travel chosen mainly for anal intercourse) is common among MSM (28% lifetime in this Paris sample) and behaves as a risk escalator: risk climbs from lifetime engagement, to recent engagement, to condomless engagement, where STI risk triples and HIV risk quadruples. It also tracks relationship status, not just singlehood.
 
 ---
 
