@@ -1,10 +1,10 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.3.0
+version: 1.4.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names provisional pending Chief's ruling; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed
+status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -117,11 +117,11 @@ A slice is the **baseline**; **states** are dated overlays keyed to ladder addre
 
 ## PART A · THE SETTING SLICE — twelve layers, mirror of the character stack
 
-Same architecture as the 12-Layer Character Database: surface → depth → structural function, S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest. **Layer names are house coinage — provisional, awaiting Chief's ruling.**
+Same architecture as the 12-Layer Character Database: surface → depth → structural function, S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest. **Layer names RULED 2026-09-29 as they stand** (Chief, "I'll recommend"; house coinage, held through two waves and 42 distills).
 
 | Layer | Name | Holds | Mirrors |
 |---|---|---|---|
-| **S1** | **BODY** | physical fabric: geography, terrain, architecture, dimensions, materials, layout; **border/seam sub-field** — a rated permeability between adjacent zones, the mechanism that lets incompatible terrain, genre, or era share one setting [[BVX.1181]] [[BVX.0630]] [[BVX.1177]] [[BVX.1179]] | L1 CORE |
+| **S1** | **BODY** | physical fabric: geography, terrain, architecture, dimensions, materials, layout; **border/seam sub-field** — a rated permeability between adjacent zones, the mechanism that lets incompatible terrain, genre, or era share one setting; **seam type `passageway`** — Truby's liminal threshold between subworlds, crossing it changes which rules bind (a rules change on crossing, noted on the SCENE CARD when a scene crosses one) [[BVX.1181]] [[BVX.0630]] [[BVX.1177]] [[BVX.1179]] | L1 CORE |
 | **S2** | **WEATHER** | climate, seasons, light, temperature, atmosphere; the place's rhythms (day/night, tides, terms) | L2 VITAL |
 | **S3** | **SENSORIUM** | how it meets the senses: soundscape, smellscape, texture, palette — the presentation surface | L3 SOCIAL |
 | **S4** | **LAW** | the rules that bind: governance, institutional mechanics, permission/forbiddance systems | L4 WILL |
@@ -132,11 +132,13 @@ Same architecture as the 12-Layer Character Database: surface → depth → stru
 | **S9** | **ALLURE** | the place's erotics: what it promises, what draws people in, its glamour and seduction; **cross-ref S5** — the same rupture that wounds a place can be the source of its promise [[BVX.0575]] [[BVX.0822]] | L9 EROS |
 | **S10** | **UNDERSIDE** | what it represses: hidden zones, the unspoken, basements literal and social, what surfaces under pressure; **three tiers** — public (stated) / folk (known informally, unstated) / secret (buried, recoverable under pressure), sharper than the old binary public/personal split [[BVX.1184]] | L10 SHADOW |
 | **S11** | **VECTOR** | trajectory: where the place is going — bloom, rot, collapse, redemption; feeds the setting arc; **optional forward-ledger sub-field** — dated future states fixed before they land (a dissolution date, a damage-status field) [[BVX.0362]] [[BVX.1176]] [[BVX.0387]] [[BVX.1184]] | L11 DESTINY |
-| **S12** | **FUNCTION** | storyform binding, fed from the spine, independent of S1–S11: which throughline Domain the place embodies, its argument role, its charge — **and its `narrative_invariant` set** (place-scoped invariants, e.g. Ecclesial Laws; mirrors L12's `narrative_invariant` field) | L12 FUNCTION |
+| **S12** | **FUNCTION** | storyform binding, fed from the spine, independent of S1–S11: which throughline Domain the place embodies, its argument role, its charge; **conflict level** — McKee's altitude (subconscious · personal · institutional · environmental), read here as how high the place's pressure reaches, not a fifth axis (SCALE nests space, this reads force); **tone → mechanic sub-note** — a tone claim counts only once converted to a checkable mechanic, beside `commandments` on the SCENE CARD [[BVX.1184]] [[BVX.1170]] [[BVX.1185]] — **and its `narrative_invariant` set** (place-scoped invariants, e.g. Ecclesial Laws; mirrors L12's `narrative_invariant` field) | L12 FUNCTION |
 
 **Slice header (machinery, not a layer):** `place_id` · names/aliases (the rename lattice) · scale class · parent/child places · canon node link · state track (dated overlays per Axis 4).
 
 **Binding rule (mirror of the character-storyform binding):** a place that embodies a throughline Domain gets an S12 record per storyform, keyed by `storyform_id`. Places without argument roles (mere locations) may run S1–S11 only — S12 empty is legal; S12 filled is what makes a setting *load-bearing*.
+
+**Fill rule (answers Kennedy, BVX.0349; RULED 1.4.0):** every place starts thin. Fill a layer only when a scene's pressure needs it; the header plus S12 (or the header alone, for a mere location) is a complete slice. A full twelve-layer fill is the encyclopaedic trap, not the goal.
 
 **S12 working rule (TAW/TRW discipline):** only what's actually narrated is canon for a place's binding clause — a fact stays out of the S12 record until a scene puts it onstage [[BVX.0538]].
 
@@ -222,21 +224,19 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 ## OPEN
 
 **From the setting wave, 2026-09-16 (BOLO 18; distills BVX.0458 · 0349 · 1122 + the Truby/McKee addenda):**
-- **Truby's passageway** (ch. 6): a liminal threshold between subworlds that signals a rules change on crossing. No home in the four axes or the twelve layers. Candidate: a STRATA or FUNCTION sub-type, or a field on the SCENE CARD.
-- **McKee's level of conflict** (ch. 3): a vertical axis from subconscious → personal → institutional → environmental. SCALE nests physical space, not conflict altitude. Candidate: a fifth axis, or a reading of S12 FUNCTION.
-- **Kennedy's challenge** (BVX.0349): a full twelve-layer fill for every place is the encyclopaedic trap. Answered structurally by the root claim, Axis 3 FUNCTION and the S12 binding rule (S1–S11 may run empty); make the answer explicit in PART A as a fill rule: thin by default, thick only where a scene's pressure needs it.
 - **What the trade cannot supply** (BVX.1122): a professional gazetteer fills BODY · LAW · ECONOMY · FOUNDING · HABIT · VECTOR richly, leaves WEATHER · SENSORIUM · SCAR · ALLURE · UNDERSIDE thin, and cannot fill FUNCTION at all. The Command's slice asks for exactly the layers the trade leaves out; that is the differentiation, and the cost.
 
 
-- **Tone-to-mechanic conversion step (synthesis change 5, BENCHED 2026-09-29)** — a step requiring tone to convert to a checkable mechanic on the SCENE CARD or as an S12 sub-note; recurs three times [[BVX.1184]] [[BVX.1170]] [[BVX.1185]]; may already live inside `commandments`; needs a ruling on whether it's a new field.
-- **The twelve layer names** (BODY … FUNCTION) — house coinage, awaiting Chief's ruling; bench on request.
-- **`03_SETTING_SYSTEMS/` placement** — new SSOT domain created this session, mirroring 02; movable on ruling.
+**RULED 1.4.0, 2026-09-29:** passageway (→ S1 seam type) · McKee's conflict level (→ S12 reading) · Kennedy's fill rule (→ PART A) · tone-to-mechanic, change 5 (→ S12 sub-note) · the twelve layer names (ruled as they stand) · `03_SETTING_SYSTEMS/` placement (kept) — all closed.
+
+**Still open (authoring, not calls):**
 - **S2 WEATHER for DCUS** — authorable gap, first writing target when Movements 2–4 open.
 - **Setting state architecture** — dated-overlay format specced at Axis 4; full doc mirrors `ssot_02_character_state_architecture` when first needed.
 - **Scene card field trial** — first real scene of OXO should run one card end-to-end.
 
 ## Version history
 
+- **1.4.0 — 2026-09-29.** RULED by Chief ("I'll recommend"): the six OPEN calls closed as recommended. S1 border/seam gains the `passageway` seam type (Truby). S12 gains McKee's conflict level as a reading and the tone-to-mechanic sub-note (synthesis change 5, unbenched). PART A gains the fill rule (Kennedy): thin by default. The twelve layer names ruled as they stand; `03_SETTING_SYSTEMS/` placement kept.
 - **1.3.0 — 2026-09-29.** RULED by Chief ("go on all those recs"): synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 applied. THE FACTION / NATION CARD added as a companion notation to the SCENE CARD (change 1). S1 BODY gets a border/seam sub-field (change 3). S7 FOUNDING gets the present-tense-bite grammar test (change 2). S5 SCAR and S9 ALLURE cross-reference each other (change 4). S12 FUNCTION gets the TAW/TRW binding-clause working rule (change 6). S10 UNDERSIDE upgraded from binary to three-tier public/folk/secret (change 7). Ryan's nine-axis ontological scoring named the primary L7 genre-contract tool, Baur's five-lineage taxonomy kept as shorthand (change 8). S11 VECTOR gets an optional forward-ledger sub-field (change 9). Change 5 (tone-to-mechanic conversion step) BENCHED, moved to OPEN. Change 10 reaffirmed — thin-by-default stays the rule, no structural change.
 - **1.2.0 — 2026-09-29.** Synthesis of 42 setting distills linked; proposed changes pending ruling. SETTING × LIBRARY section gets an additive paragraph pointing to ssot_03_setting_synthesis.md v0.1.0. No taxonomy or slice change.
 - **1.1.0 — 2026-09-16.** MIND MODELS section added (three diagrams: the system, the pressure field, the setting arc) so TM 03 renders; `sources:` declared. No taxonomy or slice change.
