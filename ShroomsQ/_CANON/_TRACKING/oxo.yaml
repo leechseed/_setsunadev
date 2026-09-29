@@ -1,0 +1,109 @@
+# OXO · the tracking file (BOLO 90 · BOLO 79, RULED 2026-09-29 "all recommendations")
+# One store, many views: this file holds the data; ssot_08_tracking_system.md defines the format;
+# the workspace only reads it (read-only v1). Time codes: M · Q · S | bar.beat.tick (ssot_08 §4).
+# ⧗ = proposed, not ruled canon. First rows: the M2 grief trial (_tools/bolostatus/work/90/TRIAL-M2-grief.md).
+
+story: oxo
+title: OVEREXITOUT · The Outliers
+version: 0.1.0
+last_updated: 2026-09-29
+
+movements:
+  - {id: M2, label: Movement 2}
+  - {id: M3, label: Movement 3}
+
+sequences:
+  - {id: "M2 · Q1", label: The grief sequence}
+  - {id: "M3 · Q2", label: The recovery ⧗}
+
+# told order: each scene carries its meter (time signature, default 4/4) and its fabula event
+scenes:
+  - {mv: M2, q: Q1, s: S01, sig: 7/8, bars: 16, label: "Grief montage · the glitches", event: m2_grief_outbursts, frequency_mode: iterative, card: _CANON_NODES/oxo-scene-card-M2-grief-summary.md}
+  - {mv: M2, q: Q1, s: S02, sig: 7/8, bars: 14, label: "The diagnostic · “Digital Puberty”", event: m2_grief_outbursts, frequency_mode: iterative, card: _CANON_NODES/oxo-scene-card-M2-grief-summary.md}
+  - {mv: M2, q: Q1, s: S03, sig: 4/4, bars: 12, label: "Row 9 · first Sync verified", event: m2_first_sync_verified, card: _CANON_NODES/oxo-scene-card-M2-row9.md}
+  - {mv: M3, q: Q2, s: S01, sig: 4/4, bars: 16, label: "The search · by hand ⧗", event: m3_underground_search}
+  - {mv: M3, q: Q2, s: S02, sig: 4/4, bars: 10, label: "Crash analepsis (flashback)", event: m1b_crash_jebb_death, card: _CANON_NODES/oxo-scene-card-M3-crash-analepsis.md}
+
+# story points: one field changing at one time code (ssot_08 §5); values step and hold unless ramp
+story_points:
+  - {subject: character:victoria_midnight, at: "M2 · Q1 · S01 | 001.1.1", field: L5_WOUND.containment, value: held, origin_event: m2_grief_outbursts}
+  - {subject: character:victoria_midnight, at: "M2 · Q1 · S01 | 004.2.1", field: sync_feed.artifact_visible, value: "true", origin_event: m2_grief_outbursts, repeat_count: "many ⧗", span: "M2 · Q1 · S01 | 004.2.1 → M2 · Q1 · S02 | 014.4.3"}
+  - {subject: character:victoria_midnight, at: "M2 · Q1 · S02 | 006.3.2", field: public_record.label, value: Digital Puberty, origin_event: m2_grief_outbursts}
+  - {subject: character:victoria_midnight, at: "M2 · Q1 · S02 | 014.4.3", field: grief_status, value: "leaking, unrecognized, on record", origin_event: m2_grief_outbursts}
+  - {subject: character:victoria_midnight, at: "M2 · Q1 · S03 | 006.1.1", field: sync.status, value: Verified, origin_event: m2_first_sync_verified}
+  - {subject: character:victoria_midnight, at: "M3 · Q2 · S01 | 014.2.1", field: record.recovered, value: "override real · deletion → Administration", origin_event: m3_underground_search}
+  - {subject: character:victoria_midnight, at: "M3 · Q2 · S02 | 004.1.1", field: L5_WOUND.containment, value: "broken open ⧗", origin_event: m1b_crash_jebb_death}
+  - {subject: place:dcus, at: "M2 · Q1 · S02 | 002.1.1", field: S4_LAW.diagnostic, value: routine diagnostic opened, origin_event: m2_grief_outbursts}
+  - {subject: place:dcus, at: "M2 · Q1 · S02 | 006.3.2", field: S4_LAW.diagnostic, value: "closed · filed", origin_event: m2_grief_outbursts}
+  - {subject: place:dcus, at: "M3 · Q2 · S01 | 014.2.1", field: S10_UNDERSIDE.exposed, value: "the deletion", origin_event: m3_underground_search}
+
+# tropes in play: register slugs (ssot_01_trope_register.md); the key shows the layer each serves
+tropes:
+  - {slug: StepfordSmiler, at: "M2 · Q1 · S01 | 008.1.1"}
+  - {slug: Gaslighting, at: "M2 · Q1 · S02 | 006.3.2"}
+  - {slug: ProperlyParanoid, at: "M3 · Q2 · S01 | 014.2.1"}
+  - {slug: SurvivorGuilt, at: "M3 · Q2 · S02 | 004.1.1"}
+
+# automation lanes: continuous values; ramp: true slopes to the point, otherwise the value steps
+automation:
+  - id: wound_exposure
+    subject: character:victoria_midnight
+    field: L5_WOUND.exposure
+    range: [0, 1]
+    points:
+      - {at: "M2 · Q1 · S01 | 001.1.1", v: 0.2}
+      - {at: "M2 · Q1 · S01 | 009.1.3", v: 0.6, ramp: true}
+      - {at: "M2 · Q1 · S02 | 014.4.3", v: 0.6}
+      - {at: "M3 · Q2 · S01 | 012.1.1", v: 0.85, ramp: true}
+      - {at: "M3 · Q2 · S02 | 004.1.1", v: 1.0, ramp: true}
+
+# tempo (ssot_08 §7): planned is set; measured is counted from the draft and stays empty until one exists
+tempo:
+  planned:
+    - {at: "M2 · Q1 · S01 | 001.1", bpm: 72}
+    - {at: "M2 · Q1 · S02 | 006.1", bpm: 112, ramp: true}
+    - {at: "M2 · Q1 · S02 | 006.3", bpm: 58}
+    - {at: "M2 · Q1 · S03 | 001.1", bpm: 88}
+    - {at: "M3 · Q2 · S01 | 001.1", bpm: 80}
+    - {at: "M3 · Q2 · S01 | 016.1", bpm: 122, ramp: true}
+    - {at: "M3 · Q2 · S02 | 001.1", bpm: 50}
+  measured: []
+
+# theme (ssot_07): the rail each stretch tests, and the value scale on two tracks
+theme:
+  rail: R2
+  scale: FREEDOM
+  in_world:
+    - {at: "M2 · Q1 · S01 | 001.1", v: -1}
+    - {at: "M3 · Q2 · S01 | 014.3", v: -2}
+  audience:
+    - {at: "M2 · Q1 · S01 | 001.1", v: -1}
+    - {at: "M2 · Q1 · S02 | 006.4", v: -2}
+
+# cables: setup → payoff on the fabula's enable edge (ssot_08 §6); orphan: none | setup_no_payoff | payoff_no_setup | provisional
+cables:
+  - id: label_to_recovery
+    setup: {track: character:victoria_midnight, at: "M2 · Q1 · S02 | 006.3.2"}
+    payoff: {track: character:victoria_midnight, at: "M3 · Q2 · S01 | 014.2.1"}
+    orphan: provisional
+    why: "The false label is created (77-V); the recovered record re-reads it as a cover (77-X). The M3 time code is still ⧗."
+  - id: glitch_to_grief
+    setup: {track: character:victoria_midnight, at: "M2 · Q1 · S01 | 004.2.1"}
+    payoff: {track: character:victoria_midnight, at: "M3 · Q2 · S02 | 004.1.1"}
+    orphan: none
+    why: "The first artifact in her channel (77-U) pays off when the flashback shows what the grief is for. ⧗"
+  - id: clothing_flicker
+    setup: {track: place:dcus, at: "M2 · Q1 · S01 | 011.3.1"}
+    payoff: null
+    orphan: setup_no_payoff
+    why: "Feed-linked clothing flickers with her. No payoff written yet. ⧗"
+
+# the world clock (fabula order); header names are the DCUS checkpoints (setting state architecture v1.1)
+world:
+  - {id: backstory_skeeter_creek_founding, m: backstory, label: Skeeter Creek founded, dcus_name: Skeeter Creek}
+  - {id: backstory_red_hills_rename, m: backstory, label: Renamed Red Hills, dcus_name: Red Hills Academy}
+  - {id: backstory_dcus_rebrand, m: backstory, label: "Bishops rebrand: DCUS", dcus_name: DCUS}
+  - {id: m1b_crash_jebb_death, m: M1, label: "The crash · Jebb dies"}
+  - {id: m2_grief_outbursts, m: M2, label: Grief outbursts (repeat)}
+  - {id: m2_first_sync_verified, m: M2, label: First Sync verified}
+  - {id: m3_underground_search, m: M3, label: The underground search}
