@@ -36,7 +36,7 @@ date_created: 2026-09-29
 # BVX.0823 — Myths to Live By — Joseph Campbell (1988)
 ### Knowledge Entry — Distill
 
-Thirteen Cooper Union Forum lectures (1958–1971) on what a living mythology is *for*; read here as a functional spec for the myth layer of a built culture, not a survey of world religions.
+Thirteen Cooper Union Forum lectures (1958-1971) on what a living mythology is *for*, read here as a functional spec for the myth layer of a built culture, not a survey of world religions.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -62,8 +62,8 @@ A working mythology is an organ, not decoration: it wakes awe at the universe, k
 
 *Required. Minimum two diagrams, maximum five.*
 
-**Diagram 1 — the whole argument.**
-Caption: *four named jobs, one biological necessity, and one closing frontier — the book is a function spec for a culture's myth layer, not a catalog of gods.*
+**Diagram 1: the whole argument.**
+Caption: *four named jobs, one biological necessity, and one closing frontier: the book is a function spec for a culture's myth layer, not a catalog of gods.*
 
 ```mermaid
 mindmap
@@ -85,7 +85,7 @@ mindmap
       No more horizons: tribal myth to species myth
 ```
 
-**Diagram 2 — the central mechanism (the four-function test, run against any candidate myth).**
+**Diagram 2: the central mechanism (the four-function test, run against any candidate myth).**
 Caption: *a myth doesn't fail generically — it fails at one of four specific, diagnosable jobs, and the failure has a name.*
 
 ```mermaid
@@ -101,7 +101,7 @@ flowchart TD
     Q4 -->|yes| Working["Working mythology:<br/>felt tie between person and world"]
 ```
 
-**Diagram 3 — mapped onto the Command's SETTING SLICE (S1–S12).**
+**Diagram 3: mapped onto the Command's SETTING SLICE (S1-S12).**
 Caption: *the book lands on four of twelve slice layers, each keyed to one of Campbell's own named mechanisms, not to "religion" as a single undifferentiated tag.*
 
 ```mermaid
@@ -116,7 +116,7 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Thirteen lectures, no single spine — each is a self-contained talk, but three carry the load-bearing argument for a setting builder:
+Thirteen lectures, no single spine: each is a self-contained talk, but three carry the load-bearing argument for a setting builder.
 
 | Lecture | Governing question |
 |---|---|
