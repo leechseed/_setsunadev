@@ -100,7 +100,7 @@ mindmap
 ```
 
 **Diagram 2 — the central mechanism (who holds authorial control over the world, and how that settles into canon).**
-Caption: *the same authority question runs through Ch. 2's forms table and Ch. 20's worldbuilding models, wherever control sits, it still has to resolve into an official canon with an unofficial fringe underneath.*
+Caption: *the same authority question runs through Ch. 2's forms table and Ch. 20's worldbuilding models: wherever control sits, it still has to resolve into an official canon with an unofficial fringe underneath.*
 
 ```mermaid
 flowchart TD
@@ -115,7 +115,7 @@ flowchart TD
 ```
 
 **Diagram 3 — mapped onto the Command's SETTING SLICE (S1–S12).**
-Caption: *this book supplies a second, reader-psychology vocabulary for four layers Kobold (BVX.0458) already staked out from the designer's side, mythos and backworld both land on S7, from a different direction.*
+Caption: *this book supplies a second, reader-psychology vocabulary for four layers Kobold (BVX.0458) already staked out from the designer's side; mythos and backworld both land on S7, from a different direction.*
 
 ```mermaid
 flowchart LR
@@ -150,17 +150,17 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 |---|---|---|
 | **RPGs as social, not natural, kind** | "Role-playing game" has no essence; it's a category people build and rebuild through talk and practice (Ch. 2) | Licenses a pluralist, perspective-first approach to any definition problem, including "what is a setting" |
 | **Game-world constitution** | How the fictional world is materially built: joint talk + props (TRPG), embodiment + physical space (larp), a computational model (CRPG/MORPG) (Ch. 2) | The medium sets a hard ceiling on who can edit the world mid-session and how fast |
-| **Fictional world vs. storyworld vs. backworld vs. possible world vs. virtual world vs. transmedia world** | Six adjacent but distinct terms (Ch. 20): the internally-consistent secondary world; the sensory world a specific story unfolds in (diegesis); the pre-history behind the "now" state; a logic-driven variant of our own world; a computer-simulated space; a world built to be told across platforms | Precision here prevents conflating "the setting" with "this campaign's current diegesis", they're related but not identical objects |
-| **Mythos / Topos / Ethos / Color** (Klastrup & Tosca) | Four axes of a working fictional world: the backstory-of-backstories, the geography-and-period, the moral rules, and the richness of sensory detail | A compact quality checklist, a world can be strong on topos and weak on ethos, and that imbalance is diagnosable |
+| **Fictional world vs. storyworld vs. backworld vs. possible world vs. virtual world vs. transmedia world** | Six adjacent but distinct terms (Ch. 20): the internally-consistent secondary world; the sensory world a specific story unfolds in (diegesis); the pre-history behind the "now" state; a logic-driven variant of our own world; a computer-simulated space; a world built to be told across platforms | Precision here prevents conflating "the setting" with "this campaign's current diegesis"; they're related but not identical objects |
+| **Mythos / Topos / Ethos / Color** (Klastrup & Tosca) | Four axes of a working fictional world: the backstory-of-backstories, the geography-and-period, the moral rules, and the richness of sensory detail | A compact quality checklist: a world can be strong on topos and weak on ethos, and that imbalance is diagnosable |
 | **Core canon** | The official elements agreed on by makers and audience; always a negotiation, not a fixed deliverable | Canon disputes (what "really" happened) are evidence the world is alive enough to fight over |
-| **Fringe / semi-canon** | Unofficial or half-accepted material, zines, wikis, fan theories, local house-canon | A world without a fringe has no interpretive community forming around it; fringe growth is a health signal |
-| **Metatext** | Extra-diegetic material (wikis, maps, timelines) that describes or organizes the world from outside it | Distinguishes "world material" (in-world) from "world documentation" (about the world), both matter, differently |
+| **Fringe / semi-canon** | Unofficial or half-accepted material: zines, wikis, fan theories, local house-canon | A world without a fringe has no interpretive community forming around it; fringe growth is a health signal |
+| **Metatext** | Extra-diegetic material (wikis, maps, timelines) that describes or organizes the world from outside it | Distinguishes "world material" (in-world) from "world documentation" (about the world); both matter, in different ways |
 | **World bible / core book** | The organizing document that establishes a world for production; format differs sharply by RPG type (TRPG core books vs. sensory exploration in CRPGs vs. blue-sheet handouts in larp) | The delivery medium for setting material is itself a design decision, not an afterthought |
 | **Bottom-up / top-down / co-creation worldbuilding** | Three authority models: players build the world through play (Microscope, The Quiet Year); designers pre-build a rich world players inhabit (WoW, Mass Effect); both share the load (Landmark, TRPG house rules) | Naming the model up front prevents a table or a writing team from silently drifting between them |
 | **Willing activation of pretense** (Saler) | An active, chosen belief in the secondary world, distinct from passive "suspension of disbelief" | Reframes audience buy-in as something the world must earn through craft, not something owed to it by genre |
-| **Fictive blocks** (Mackay) | Reusable literary motifs, tropes, and themes that let players and designers build on each other's input in real time without breaking the fiction | The unit of improvisation in collaborative worldbuilding, a table runs on shared blocks, not shared plans |
-| **Paratext** (Genette, via Ch. 14) | Material surrounding the "main text", titles, covers, back-cover copy (peritext) and trailers, reviews, walkthroughs (epitext) | A setting is pitched before it's entered; back-cover copy is doing real worldbuilding work, not just marketing |
-| **Ludology vs. narratology (resolved)** | The old debate over whether games can be narratives at all; resolved by treating RPG narrative as simulative, emergent, participatory, and simultaneous rather than scripted | Frees a setting-builder from designing a fixed plot, the world needs to generate story, not contain one |
+| **Fictive blocks** (Mackay) | Reusable literary motifs, tropes, and themes that let players and designers build on each other's input in real time without breaking the fiction | The unit of improvisation in collaborative worldbuilding: a table runs on shared blocks, not shared plans |
+| **Paratext** (Genette, via Ch. 14) | Material surrounding the "main text": titles, covers, back-cover copy (peritext) and trailers, reviews, walkthroughs (epitext) | A setting is pitched before it's entered; back-cover copy is doing real worldbuilding work, not just marketing |
+| **Ludology vs. narratology (resolved)** | The old debate over whether games can be narratives at all; resolved by treating RPG narrative as simulative, emergent, participatory, and simultaneous rather than scripted | Frees a setting-builder from designing a fixed plot: the world needs to generate story, not contain one |
 
 ---
 
@@ -173,7 +173,7 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 | Deciding what's official | Write down the core canon explicitly, even for a wholly original world | Assume "everyone just knows" what counts as true |
 | Handling fan theories, house rules, or discarded drafts | Let them live as fringe/semi-canon rather than deleting them | Treat anything not in the "real" canon as waste |
 | Choosing how to document the world | Match the medium to the audience: a core book for TRPG-style depth, sensory reveal for exploration-style media, a blue-sheet for players who need only what's load-bearing | Build one giant bible and assume every audience wants to read all of it |
-| Trying to hook an audience into the world | Design for willing activation of pretense, give them a reason to want in (Verino: make them feel welcome, not an outsider) | Assume genre alone (space opera, high fantasy) does the immersion work |
+| Trying to hook an audience into the world | Design for willing activation of pretense: give them a reason to want in (Verino: make them feel welcome, not an outsider) | Assume genre alone (space opera, high fantasy) does the immersion work |
 | Improvising world detail at the table or on the page | Reach for a fictive block, a motif, trope, or theme others can build on | Invent unconnected, one-off details that don't recur or accumulate meaning |
 | Writing the pitch, back cover, or logline | Treat it as a paratext that frames and commits the world's tone | Treat it as separate from "the real worldbuilding" |
 | Justifying a world's structure to a skeptic | Argue from use ("this framing is productive for X") | Argue from essence ("this is what a world/RPG really is") |
@@ -185,7 +185,7 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 1. **A world is negotiated, not discovered.** Canon, like the category "role-playing game" itself, is a social settlement, not a fact waiting to be found.
 2. **The medium constrains who can edit the world, and when.** Talk-and-props, embodiment, and computation each set different limits on real-time revision.
 3. **Mythos, topos, ethos, and color are separable axes.** A world can succeed on one and fail on another; they don't move together automatically.
-4. **Canon always implies a fringe.** Wherever an official version exists, unofficial and semi-official material accumulates beneath it, this is evidence of engagement, not contamination.
+4. **Canon always implies a fringe.** Wherever an official version exists, unofficial and semi-official material accumulates beneath it; this is evidence of engagement, not contamination.
 5. **Immersion is willingly chosen, not passively suffered.** The audience is an active participant in activating belief, which means the world has to give them something to activate belief with.
 6. **RPG narrative is generated, not contained.** A world built for RPG use should produce story through play (simulative, emergent, participatory) rather than pre-script one.
 7. **Documentation format is a design decision.** How a world's information reaches its audience (core book, exploration, blue sheet) shapes what that audience can know and when.
@@ -195,9 +195,9 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 ## 7 · PITFALLS / MYTHS
 
 - Treating "role-playing game" (or "setting") as if it had one true essential definition, rather than as a useful-for-some-purpose category.
-- Assuming worldbuilding authority is fixed by genre or medium rather than chosen and stated, TRPGs, larps, CRPGs, and MORPGs all show examples across the bottom-up/top-down/co-creation spectrum.
+- Assuming worldbuilding authority is fixed by genre or medium rather than chosen and stated: TRPGs, larps, CRPGs, and MORPGs all show examples across the bottom-up/top-down/co-creation spectrum.
 - Deleting or dismissing fringe and semi-canon material as noise, when its accumulation is a sign the world has an interpretive community.
-- Confusing "the setting" with "this session's diegesis", a storyworld is a narrower, sensory-specific instance of the broader fictional/secondary world.
+- Confusing "the setting" with "this session's diegesis": a storyworld is a narrower, sensory-specific instance of the broader fictional/secondary world.
 - Writing a monolithic world bible without matching its format to how the audience will actually receive the world (reading a book vs. exploring a game space vs. skimming a blue sheet).
 - Treating genre alone (space opera, dark fantasy) as sufficient to produce immersion, skipping the actual craft of mythos/topos/ethos/color.
 - Re-litigating the ludology-vs-narratology fight as though RPG narrative must be either fully scripted or not a narrative at all.
@@ -209,9 +209,9 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 - **Spine level:** SETTING (non-story-spine source, per the v4 binding rule) plus L7 contextually, via the genre/authority-contract angle
 - **12-layer character stack:** none directly; the willing-activation-of-pretense concept is the reader-side mirror of an L9 EROS seduction move but is not itself a character-layer feed
 - **plot_systems:** the "narrative as generated, not contained" resolution (Ch. 14) is a ready argument for why `04_PLOT_SYSTEMS/` should treat setting as a story-generator rather than a story-container once that module opens
-- **Setting:** primary, feeds S1, S3, S4, S7 (double-anchored via mythos and backworld), S9 primary, S10 supporting, S12 contextual, plus L7 genre-contract contextually
+- **Setting:** primary; feeds S1, S3, S4, S7 (double-anchored via mythos and backworld), S9 primary, S10 supporting, S12 contextual, plus L7 genre-contract contextually
 
-Read against the DCUS starter instance already in `ssot_03`: this book's mythos/backworld vocabulary for S7 confirms the same present-tense discipline Kobold's Baur argues from the designer's chair (BVX.0458), DCUS's founding stack (Skeeter Creek to Red Hills to DCUS) is exactly a mythos, "the central knowledge one needs to have in order to interact with or interpret events in the world successfully," and it should stay only as deep as it still bites. The canon/fringe split maps cleanly onto DCUS's S10 UNDERSIDE (the first name under the second) as a documentation-layer parallel, not a duplicate: S10 is what a place represses, canon/fringe is what a community half-admits. Where this book earns its keep over Kobold is Ch. 2's forms table and Ch. 20's authority models, DCUS's writers-room is closer to "top-down richly created" than "player bottom-up," and naming that model explicitly (per the heuristic above) heads off drift mid-project. The willing-activation-of-pretense framing is also a usable audience-facing test for any scene: does this scene give the reader a specific reason to want into DCUS, or does it assume the premise (Ultra-prestige campus) does that work by itself?
+Read against the DCUS starter instance already in `ssot_03`, this book's mythos/backworld vocabulary for S7 confirms the same present-tense discipline Kobold's Baur argues from the designer's chair (BVX.0458): DCUS's founding stack (Skeeter Creek to Red Hills to DCUS) is exactly a mythos, "the central knowledge one needs to have in order to interact with or interpret events in the world successfully," and it should stay only as deep as it still bites. The canon/fringe split maps cleanly onto DCUS's S10 UNDERSIDE (the first name under the second) as a documentation-layer parallel, not a duplicate: S10 is what a place represses, canon/fringe is what a community half-admits. Where this book earns its keep over Kobold is Ch. 2's forms table and Ch. 20's authority models: DCUS's writers-room is closer to "top-down richly created" than "player bottom-up," and naming that model explicitly (per the heuristic above) heads off drift mid-project. The willing-activation-of-pretense framing also gives a usable audience-facing test for any scene: does it give the reader a specific reason to want into DCUS, or does it assume the premise (Ultra-prestige campus) does that work by itself?
 
 ---
 

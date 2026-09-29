@@ -161,18 +161,16 @@ Ten chapters plus three appendices, bookended by design: Chapter 1 states the se
 | Chapter | Scale | Governing content |
 |---|---|---|
 | 1. Welcome to Midgard | World | Seven Secrets, Creation myth, cataclysm history, ley lines classified |
-| 2. Heroes of Midgard | Race | Playable races (human, dwarf, elf, gearforged, kobold, minotaur, and more) |
-| 3. The Crossroads | Region | The Free City of Zobeck as the model region entry, in full |
+| 2. Heroes of Midgard | Race | Playable races: human, dwarf, elf, gearforged, kobold, minotaur, more |
+| 3. The Crossroads | Region | Free City of Zobeck, the model region entry, in full |
 | 4. The Rothenian Plain | Region | Steppe kingdoms, the windrunner elves' Eight Great Clans |
 | 5. The Dragon Empire | Region | Elemental dragon-rulers, the Mharoti court |
 | 6. Nuria Natal | Region | Southern desert kingdom, city-states of the Ruby Sea |
-| 7. The Wasted West | Region | Post-magical-catastrophe wasteland, cursed ley lines |
+| 7. The Wasted West | Region | Post-catastrophe wasteland, cursed ley lines |
 | 8. Domains of the Princes | Region | Feudal Grand Duchy of Dornig, minor houses |
 | 9. The Northlands | Region | Norse-flavored kingdoms, honor and feud customs |
 | 10. The Pantheon | World | Masks doctrine, regional god-lists, new domains |
-| Appendix 1 | Mechanics | AGE System conversion, 26 new backgrounds (each place-keyed) |
-| Appendix 2 | Mechanics | Regional encounter tables, one per major region |
-| Appendix 3 | Reference | Further reading |
+| Appendices 1-3 | Mechanics/reference | AGE conversion, 26 place-keyed backgrounds, encounter tables, further reading |
 
 Back-cover claim, confirmed in the text: "more than 50 kingdom write-ups, with new feats and traits for each region." The book is a gallery of that one card, run 50-plus times.
 
@@ -184,14 +182,14 @@ Back-cover claim, confirmed in the text: "more than 50 kingdom write-ups, with n
 |---|---|---|
 | **Seven Secrets of Midgard** | A one-page numbered list (flat world, ley lines and shadow roads, elemental dragon-rulers, hidden races, optional Status/Time rules, gods that dabble and wear masks, shifting borders) opening Chapter 1 | Compresses the whole setting's distinguishing twists into a single orientation page, before 300 pages of gazetteer detail arrive |
 | **Ley line classification** | Three tiers (weak, strong, titanic) keyed to specific terrain (crossroads, hilltops, river confluences, mountain peaks, elven ruins), each with a power ceiling, a locked/unlocked state, and a burnout-backlash table | Magic is infrastructure with a location and a price, not an ambient "high magic" descriptor |
-| **The masks doctrine** | Gods are archetypal wellsprings, not fixed individuals; they wear regional names and avatars, hide their true relationships from their own priests, and are capped to roughly five or six active per city, fewer per town, one per village | Solves pantheon bloat and manufactures political mystery in the same move; a god's mask set is also its worship footprint |
-| **Regional pantheons** | Worship is organized by political geography (City Gods, Crossroads Gods, Dragon Gods, Northern Gods, Southern Gods) rather than by a single setting-wide god list | A settlement's active gods characterize it as directly as its geography or its ruler does |
-| **The region-entry stat block** | A fixed field set (Symbol, Ruler, Important Personages, Population with racial breakdown, Capital, Castles, Great Gods, Trade Goods) opening every kingdom's write-up, followed by prose (founding flavor, Government, notable factions and districts) | The repeatable card that lets 50-plus kingdoms stay internally consistent without becoming a reference-book slog |
-| **Government varies by binding principle** | Zobeck: elected Free City Consul. The Free Cantons: dwarves who "choose their own leaders" per canton. Dornig: hereditary Grand Duchy. Windrunner elf clans: single chieftain per bloodline group | Government type is a design choice per region, not a copy-pasted default; it is the fastest way to make one kingdom feel unlike its neighbor |
-| **Regional traits as mechanized habit** | Background traits keyed to one place or culture (Waste-Scarred, Ley-Liner of Allain, Goblin Slayer of the Grand Duchy of Bourgund) | Turns belonging and attachment into a character-sheet choice; a player's trait declares which region shaped them |
-| **Faction-by-practice** | Each named faction (the Eight Great Clans, the Crossroads Trading Houses, the Order of the Undying Sun) gets one distinguishing practice (kite-flying, dragon-companion-keeping, a chivalric order's mandate) and one stated relationship to a rival or neighbor | A faction defined by a practice and a stance is immediately usable at the table; a faction defined only by lore is not |
-| **The cataclysm chain** | The Reaving (dwarves' Northern kingdoms smashed into the sea), the fall of Ankesh (3,000 years ago), and the rise and fall of the 1,300-year elven empire overlap in time and geography | Connective scar tissue shared across multiple current regions, not an isolated backstory per kingdom |
-| **Present-tense dating** | Founding events stated as a distance from now ("900 years ago," "1,739 years ago") each attached to a present political fact (a throne, a bloodline, a border) | History earns its page count only by explaining something live today; the dating format itself enforces the discipline |
+| **The masks doctrine** | Gods are archetypal wellsprings, not fixed individuals; they wear regional names and avatars, hide their true relationships from their own priests, and cap out around five or six active per city, fewer per town, one per village | Solves pantheon bloat and manufactures political mystery in one move; a god's mask set is also its worship footprint |
+| **Regional pantheons** | Worship is organized by political geography (City Gods, Crossroads Gods, Dragon Gods, Northern Gods, Southern Gods), not a single setting-wide god list | A settlement's active gods characterize it as directly as its geography or ruler does |
+| **The region-entry stat block** | A fixed field set (Symbol, Ruler, Important Personages, Population by race, Capital, Castles, Great Gods, Trade Goods) opening every write-up, then prose (founding flavor, Government, factions, districts) | The repeatable card that keeps 50-plus kingdoms consistent without becoming a reference-book slog |
+| **Government varies by binding principle** | Zobeck: elected Free City Consul. The Free Cantons: dwarves who choose their own leaders. Dornig: hereditary Grand Duchy. Windrunner clans: single chieftain per bloodline | A per-region design choice, not a copy-pasted default; the fastest way to make one kingdom feel unlike its neighbor |
+| **Regional traits as mechanized habit** | Background traits keyed to one place or culture (Waste-Scarred, Ley-Liner of Allain, Goblin Slayer of Bourgund) | Turns belonging into a character-sheet choice; a trait declares which region shaped a player |
+| **Faction-by-practice** | Each named faction (the Eight Great Clans, the Crossroads Trading Houses, the Order of the Undying Sun) gets one distinguishing practice and one stated relationship to a rival or neighbor | A faction with a practice and a stance is usable at the table; one defined only by lore is not |
+| **The cataclysm chain** | The Reaving, the fall of Ankesh (3,000 years ago), and the rise and fall of the 1,300-year elven empire overlap in time and geography | Connective scar tissue shared across regions, not an isolated backstory per kingdom |
+| **Present-tense dating** | Founding events stated as a distance from now ("900 years ago"), each attached to a present political fact | History earns its length only by explaining something live today; the format itself enforces the discipline |
 
 ---
 
@@ -225,12 +223,12 @@ Back-cover claim, confirmed in the text: "more than 50 kingdom write-ups, with n
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating a magic-geography feature like ley lines as flavor text, with no classification, no location rule, and no cost.
-- Writing a pantheon where every god is a fixed, single-named vending machine; this kills the masks doctrine's entire reason for existing (mystery plus worship-capping).
-- Front-loading a region write-up with paragraphs of prose before establishing who rules it and who lives there, burying the reference facts a GM needs mid-session.
+- Treating a magic-geography feature like ley lines as flavor text, with no classification, location rule, or cost.
+- Writing a pantheon where every god is a fixed, single-named vending machine; this kills the masks doctrine's reason for existing (mystery plus worship-capping).
+- Front-loading a region write-up with prose before establishing who rules it and who lives there, burying facts a GM needs mid-session.
 - Writing deep dynastic history that never touches a currently playable border, feud, or ruin.
-- Giving every kingdom the same government type; Zobeck's elected consulate, the dwarven cantons' self-chosen leaders, Dornig's hereditary duchy, and the windrunner clans' single chieftains are deliberately different binding principles.
-- Naming a faction without giving it a stance toward at least one neighbor; a faction with no friction is inert at the table.
+- Giving every kingdom the same government type, when Zobeck's elected consulate, the cantons' self-chosen leaders, Dornig's hereditary duchy, and the clans' single chieftains are deliberately different principles.
+- Naming a faction without a stance toward at least one neighbor; a faction with no friction is inert at the table.
 
 ---
 

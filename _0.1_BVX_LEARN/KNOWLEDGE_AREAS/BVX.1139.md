@@ -65,7 +65,7 @@ date_created: 2026-09-29
 # BVX.1139 — Shadows over Vathak Campaign Setting — Jason Stoffa and Rick Hershey (2014)
 ### Knowledge Entry — Distill
 
-A Pathfinder-compatible campaign setting book of Lovecraftian survival horror: read here not for its rules crunch but for its engineering, a colonizer-versus-colonized world with a cosmic horror rising underneath it, and the gazetteer template that gets reused six times to build it.
+A Pathfinder-compatible campaign setting of Lovecraftian survival horror: read here for its engineering, a colonizer-versus-colonized world with cosmic horror rising underneath it, and the gazetteer template reused six times to build it.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -201,38 +201,38 @@ The introduction states the design origin directly: a 24-hour game-jam vote tied
 | Situation | Do this | Not this |
 |---|---|---|
 | Building a conquered setting | Write the conquest into a playable race choice, not a history footnote | State the war happened once, then let players ignore it |
-| Deciding whether a setting can hold two big threats | Stack a closed catastrophe (finished history) under an open one (active trajectory) | Pick one apocalypse and resolve or ignore the other |
-| Modeling belonging | Track it as a number with floor and ceiling states and rewards at each rung | Leave "are they trusted here" to GM improvisation every time |
+| Setting can hold two big threats | Stack a closed catastrophe (finished history) under an open one (active trajectory) | Pick one apocalypse and resolve or ignore the other |
+| Modeling belonging | Track it as a number with floor/ceiling states and rewards at each rung | Leave "are they trusted here" to improvisation every time |
 | Modeling dread from horror exposure | Cost it against a resource independent of hit points (Sanity, Will saves) | Let horror be purely descriptive, with no mechanical bite |
-| Tempting players with forbidden power | Put a price on the same table as the reward (DC, spells, Sanity loss together) | Hand out power for free and describe consequences only in prose |
-| Filling a settlement quickly at the table | Pull one quirk from a reusable list independent of that place's history | Improvise from nothing under time pressure, or leave the place generic |
-| Writing a settlement's numbers | Let population-by-race and law/economy scores imply the power structure | State the power structure in prose and leave the numbers generic |
-| Reusing a stock monster in a horror setting | Reflavor its presentation for dread regardless of its CR | Assume danger and dread are the same thing |
-| Committing to a horror sub-genre | Name the fusion up front (here: Lovecraftian and survival horror combined) and let every later chapter inherit it | Let tone drift setting-piece to setting-piece |
+| Tempting players with forbidden power | Put a price on the same table as the reward (DC, spells, Sanity loss) | Hand out power free, describe consequences only in prose |
+| Filling a settlement fast at the table | Pull one quirk from a reusable list independent of that place's history | Improvise from nothing, or leave the place generic |
+| Writing a settlement's numbers | Let population-by-race and law/economy scores imply the power structure | State the power structure in prose, leave numbers generic |
+| Reusing a stock monster in horror | Reflavor its presentation for dread regardless of CR | Assume danger and dread are the same thing |
+| Committing to a horror sub-genre | Name the fusion up front and let every chapter inherit it | Let tone drift setting-piece to setting-piece |
 
 ---
 
 ## 6 · INVARIANTS
 
 1. **A colonizer/colonized frame belongs in character creation, not just history.** The war is played, not read about, from the first race choice.
-2. **A scar repeats at every scale it touches.** The Great Cleansing is a continental wound; each region's History section restates it locally.
-3. **Two unresolved catastrophes can coexist if one is closed and one is open.** A finished genocide and a rising cosmic threat do not cancel each other; they compound.
-4. **Belonging, sanity, and forbidden power are more useful as tracked numbers than as GM fiat.** Each gets its own gauge (Trust, Sanity, the tome table) rather than sharing one vague "horror meter."
-5. **A gazetteer template earns its keep by repeating unchanged.** The region template runs six times with the same shape; variation lives in content, not structure.
+2. **A scar repeats at every scale it touches.** The Great Cleansing is a continental wound; each region restates it locally.
+3. **Two unresolved catastrophes can coexist if one is closed and one is open.** A finished genocide and a rising cosmic threat compound rather than cancel.
+4. **Belonging, sanity, and forbidden power are more useful as tracked numbers than as GM fiat.** Each gets its own gauge rather than one vague "horror meter."
+5. **A gazetteer template earns its keep by repeating unchanged.** The region template runs six times with the same shape; variation lives in content.
 6. **A settlement's numbers can carry political information the prose never states outright.** Demographics-by-race is a compressed history lesson.
-7. **Dread is a presentation choice, separable from mechanical challenge.** A CR 1 rat and a CR 20 Old One can both be staged for horror; the stat block does not decide this.
+7. **Dread is a presentation choice, separable from mechanical challenge.** A CR 1 rat and a CR 20 Old One can both be staged for horror.
 
 ---
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating the colonizer race as simply "the human option" rather than the setting's stated aggressor — the frame collapses if the vindari read as neutral.
-- Writing a genocide as one-time backstory instead of something every region's local history re-derives at smaller scale.
-- Letting a second apocalypse (the Old Ones) read as redundant with the first (the colonial war) rather than layering on top of it as a separate, ongoing arc.
-- Treating "trust," "sanity," and "temptation" as one vague horror-vibe instead of three separable, trackable gauges with their own trigger conditions.
-- Assuming a lookup table (Forbidden Knowledge) removes the need to narrate consequence — the table sets the price, the GM still stages the cost.
-- Mistaking a settlement's stat-block scores for flavor rather than reading them as the political structure of the place.
-- Assuming horror requires high-CR monsters — the book explicitly warns against this, insisting that presentation, not power level, produces dread.
+- Treating the colonizer race as simply "the human option" rather than the stated aggressor; the frame collapses if the vindari read as neutral.
+- Writing a genocide as one-time backstory instead of something every region's history re-derives at smaller scale.
+- Letting a second apocalypse read as redundant with the first rather than layering on top of it as a separate, ongoing arc.
+- Treating trust, sanity, and temptation as one vague horror-vibe instead of three separable, trackable gauges.
+- Assuming a lookup table removes the need to narrate consequence; the table sets the price, the GM still stages the cost.
+- Mistaking a settlement's stat-block scores for flavor rather than the political structure of the place.
+- Assuming horror requires high-CR monsters; the book warns against this, insisting presentation, not power level, produces dread.
 
 ---
 
