@@ -1,0 +1,246 @@
+---
+id: BVX.1147
+bvx_provisional: true
+title: "Heterocosmica: Fiction and Possible Worlds"
+author: "Lubomír Doležel"
+year: 1998
+type: distill
+source_type: book
+subjects: [CRE]
+primary_subject: CRE
+trunk: BLACK
+spine: [SETTING, L6]
+feeds:
+  - layer: S4
+    variable: s4_law
+    strength: primary
+    note: "The deontic system (P-operators: permitted / prohibited / obligatory) is the formal grammar underneath S4 LAW: a codex only becomes a story engine once it sorts every action into one of three bins, and the fall/test/predicament triad is what any S4 write-up is quietly promising to generate."
+  - layer: S9
+    variable: s9_allure
+    strength: primary
+    note: "The axiological system (G-operators: good / bad / indifferent) is the formal shape of ALLURE: a value codex plus a person who wants what it prizes. The quest is the axiological story; DCUS's meritocratic promise is a codex Tori has not yet exempted herself from."
+  - layer: S10
+    variable: s10_underside
+    strength: primary
+    note: "The epistemic system (K-operators: known / unknown / believed) is the formal shape of UNDERSIDE: a knowledge split between insiders and outsiders, plus deception as the tool that keeps the split standing. The mystery-story engine is this modality alone."
+  - layer: L7
+    variable: genre_setting_contract
+    strength: primary
+    note: "The alethic system (redistributing what is possible) is the formal logic underneath the genre-contract taxonomies already on the shelf (Baur's five lineages BVX.0458, Wolf's Four Realms BVX.0562): picking a lineage is picking which M-operator gets bent, and how far."
+  - layer: SETTING
+    variable: fill_rule
+    strength: supporting
+    note: "The saturation function (explicit / implicit / zero texture producing determinate / indeterminate / gap domains) gives Pavel's referential-density argument (BVX.0100) a three-way mechanism with a name: a gap is not an unanswered question, it is the zero-texture domain, structurally required, not a research failure."
+  - layer: L6
+    variable: argue_mode
+    strength: supporting
+    note: "A world's deontic and axiological codices ARE its law before anyone states a theme: the fall, the deontic alien, the axiological rebel are all a codex talking about itself. Theme-as-world-law (the BOLO 80 hook, tagged invariants) is this book's modal system read at the story-spine's L6 altitude instead of the setting's S-layer altitude."
+zotero_key: ""
+pdf_pages: 339
+status: complete
+confidence: high
+date_created: 2026-09-29
+---
+
+# BVX.1147 — Heterocosmica: Fiction and Possible Worlds — Lubomír Doležel (1998)
+### Knowledge Entry — Distill
+
+A logician's grammar for what makes a fictional world hold together: four independent constraint systems that sort every entity and action into possible/impossible, permitted/forbidden, good/bad, known/unknown, plus a formal account of why every world is unfinished on purpose. The mechanism behind "world law" and behind "how much do I have to fill in."
+
+## TABLE OF CONTENTS
+- [Core Thesis](#1-core-thesis)
+- [Mind Models](#2-mind-models)
+- [Framework](#3-framework--structure)
+- [Key Concepts](#4-key-concepts)
+- [Heuristics](#5-heuristics--decision-rules)
+- [Invariants](#6-invariants)
+- [Pitfalls](#7-pitfalls--myths)
+- [Application](#8-application)
+- [Cross-References](#9-cross-references)
+- [Provenance](#10-provenance--confidence)
+
+---
+
+## 1 · CORE THESIS
+
+A fictional world is built from four independent constraint systems — alethic (what can happen), deontic (what is allowed), axiological (what is valued), epistemic (what is known) — each generating its own family of stories. A world's completeness is never physical; it is a function of how the text's wording (its texture) distributes fact, hint, and silence.
+
+---
+
+## 2 · MIND MODELS
+
+*Required. Minimum two diagrams, maximum five.*
+
+**Diagram 1 — the whole argument.**
+Caption: *four modal systems generate story on their own, and a second, independent mechanism (texture, running to saturation) decides how much of any of it the reader actually gets.*
+
+```mermaid
+mindmap
+  root((Heterocosmica))
+    Four modal systems
+      Alethic: possible/impossible/necessary
+      Deontic: permitted/prohibited/obligatory
+      Axiological: good/bad/indifferent
+      Epistemic: known/unknown/believed
+    Dyadic worlds
+      Two domains, one system split
+      Mythological world as the model case
+    Authentication
+      Performative not descriptive
+      Authoritative vs virtual domains
+      Graded authenticity
+    Saturation
+      Explicit / implicit / zero texture
+      Determinate / indeterminate / gap
+      Density as an authorial dial
+    Modern myth
+      Hybrid world: boundary dissolved
+      Visible/invisible: boundary kept, modal swapped for textural
+```
+
+**Diagram 2 — the central mechanism (a taxonomy: how one modal system produces a story family).**
+Caption: *every modal system runs the same three moves — a codex, a person who deviates from it, one of three fixed plot shapes — alethic, deontic, axiological, and epistemic are the same machine loaded with different values.*
+
+```mermaid
+flowchart TD
+    Codex["A codex:<br/>what's possible / allowed /<br/>valued / known, world-wide"] --> Person["A person whose own<br/>endowment or belief differs"]
+    Person --> Align{"Aligned or deviant?"}
+    Align -->|"aligned, then codex changes"| Shift["Acquisition or loss story<br/>(liberation / enslavement)"]
+    Align -->|"deviant by choice"| Alien["The 'alien' role:<br/>alethic alien, deontic alien,<br/>axiological rebel, epistemic outsider"]
+    Alien --> Fall["Fall: rebellion punished"]
+    Alien --> Test["Test: rebellion vindicated"]
+    Alien --> Predicament["Predicament: two codices collide"]
+```
+
+**Diagram 3 — the saturation function (a state change: texture to world structure).**
+Caption: *the same page can be doing three different jobs at once — writing a fact, implying one, or leaving a hole — and the ratio between them, not the page count, is what "thin" or "thick" actually measures.*
+
+```mermaid
+flowchart LR
+    Explicit["Explicit texture"] --> Determinate["Determinate domain:<br/>solid fictional facts"]
+    Implicit["Implicit texture"] --> Indeterminate["Indeterminate domain:<br/>inferred, plastic, gradable"]
+    Zero["Zero texture"] --> Gap["Gap domain:<br/>no fact of the matter, ever"]
+```
+
+**Diagram 4 — mapped onto the Command's SETTING SLICE and story spine.**
+Caption: *the four modal systems land on four S-layers almost one-to-one, and the same systems, read at L6 instead of S-altitude, are theme stated as world law rather than setting stated as world law.*
+
+```mermaid
+flowchart LR
+    Alethic["Alethic:<br/>possible/impossible"] --> L7["L7 genre contract"]
+    Deontic["Deontic:<br/>permitted/prohibited"] --> S4["S4 LAW"]
+    Deontic --> L6a["L6 Theme:<br/>codex as argument"]
+    Axiological["Axiological:<br/>good/bad"] --> S9["S9 ALLURE"]
+    Axiological --> L6b["L6 Theme"]
+    Epistemic["Epistemic:<br/>known/unknown"] --> S10["S10 UNDERSIDE"]
+    Saturation["Saturation:<br/>gaps as zero texture"] --> FillRule["SETTING fill rule"]
+```
+
+---
+
+## 3 · FRAMEWORK / STRUCTURE
+
+Doležel builds in two matched movements, each opening with a "Starter Terms" primer before its analytical chapters, so theory and worked reading alternate rather than sitting in separate halves of the book.
+
+| Part | Chapters | Governing question |
+|---|---|---|
+| Prologue | From Nonexistent Entities to Fictional Worlds | Why does treating fiction as reference to nothing fail, and what does a possible-worlds account replace it with? |
+| One — Narrative Worlds | One-Person Worlds; Action and Motivation; Multiperson Worlds; Interaction and Power; **Narrative Modalities** | What is the smallest unit of a narrative world, and what global systems constrain everyone acting inside it? |
+| Two — Intensional Functions | **Authentication**; **Saturation** | What makes a possible entity into a fictional fact, and how much of the world actually gets built? |
+| Eight — Modern Myth | The Hybrid World; The Visible/Invisible World | What happens to the classical two-domain (natural/supernatural) world once modernist fiction dissolves or re-tools its boundary? |
+| Epilogue | Fictional Worlds in Transduction | How do postmodern rewrites travel between, and destabilize, already-built fictional worlds? |
+
+This distill concentrates on Narrative Modalities (the four constraint systems), Authentication (how a text's wording confers fictional existence), and Saturation (how much of the world the text actually builds) — the three chapters that carry the book's method for what a world's law is and how thin a world is allowed to be.
+
+---
+
+## 4 · KEY CONCEPTS
+
+| Concept | What it is | Why it matters |
+|---|---|---|
+| **The four modal systems** | Alethic (possible/impossible/necessary), deontic (permitted/prohibited/obligatory), axiological (good/bad/indifferent), epistemic (known/unknown/believed) — four independent operator triplets, each shaped like a quantifier | Any world's "law" decomposes into exactly these four kinds; conflating them (treating a value clash as if it were a rule violation) blurs which story engine is actually running |
+| **Codexal vs. subjective operators** | A codex is a world-wide setting of a modal system (the world's law, its values, its knowledge base); subjective operators are one person's endowment, norms, values, or beliefs, which can diverge from the codex | The gap between codex and person is where every story in this book comes from — a world with no possible divergence generates no narrative |
+| **The "alien" role** | A person who deviates from the world's codex on purpose: the alethic alien (deviant capacity), the deontic alien (self-exempted from norms), the axiological alien — nihilist or rebel (rejects the value order), the epistemic alien (rejects the shared belief) | One template, four modalities; naming which kind of alien a character is tells you which codex the story is actually testing |
+| **The fixed plot triad** | Fall (violation, then punishment), test (obligation met, then reward), predicament (two valid codices collide, satisfying one violates the other) | These three shapes recur across all four modal systems; a codex is not fully designed until it is clear which of the three shapes a violation of it produces |
+| **Dyadic worlds** | A single fictional world split into two domains by one modal system's redistribution — natural/supernatural (alethic), permitted/forbidden zones (deontic), rival value orders (axiological), known/hidden (epistemic) | The formal shape of "there are two of this place" — a home turf and its shadow, built by picking one modality and running it twice with opposite settings |
+| **Authentication (performative, not descriptive)** | A fictional text does not report facts, it performs them into existence; an entity or event becomes a "fictional fact" only when the text's wording carries the authority to make it so | Explains why the narrator's plain statement outranks a character's claim inside the same scene (windmills, not giants) — authority, not truth-value, decides what exists |
+| **Authoritative vs. virtual domain** | The authoritative domain is what the narrating voice states outright; the virtual domain is what only a character believes, claims, or imagines, and may or may not later be confirmed | A world's "official record" and its rumor mill are structurally different domains, not the same domain at different confidence levels |
+| **Graded authentication** | Fictional existence is not binary; subjective narration modes assign entities a rank on a scale from fully authentic to non-authentic, rather than a flat yes/no | A world can hold facts, near-facts, beliefs, and lies all at once without contradiction, because each has its own authentication grade |
+| **Texture (explicit / implicit / zero)** | The exact wording of the text, sorted by what work it does: explicit wording states a fact outright, implicit wording implies one that must be inferred, zero wording states nothing at all | The technical hinge concept of the whole method — everything about a world's completeness traces back to which of these three modes produced each detail |
+| **Saturation (determinate / indeterminate / gap)** | The three-part structure texture projects onto a world: explicit texture builds the determinate (solid) domain, implicit texture the indeterminate (inferred, gradable) domain, zero texture the gap domain | Gives Pavel's "thin by default" instinct (BVX.0100) a mechanism with three named parts instead of one fuzzy periphery |
+| **Gaps as structural, not accidental** | A gap is not a fact the author forgot to supply; it is what zero texture necessarily produces, and it is permanent — no amount of later inference recovers it | The formal license for "there is no answer to that, and there never will be," as opposed to treating every unanswered question as an oversight to fix |
+
+---
+
+## 5 · HEURISTICS & DECISION RULES
+
+| Situation | Do this | Not this |
+|---|---|---|
+| Writing a setting's laws | Ask whether the constraint is alethic (what CAN happen), deontic (what's ALLOWED), axiological (what's VALUED), or epistemic (what's KNOWN) before writing it | Write one undifferentiated pile of "world rules" that mixes physics, law, virtue, and secrecy |
+| Introducing a rule-breaking character | Decide up front which of the three shapes the break produces: punished (fall), rewarded (test), or unresolvable (predicament) | Let the character break a rule and improvise the consequence scene by scene |
+| Deciding how much backstory or geography to write | Sort each candidate detail into explicit (write it outright), implicit (plant a marker and let it be inferred), or zero (leave it a gap on purpose) | Try to write everything explicitly, or leave everything vague by default without choosing per detail |
+| A reader or player asks about something never covered | Confirm it as a genuine gap if it was never even implied | Retroactively invent an answer just because the silence feels uncomfortable |
+| Building a secret society or hidden history | Model it as an epistemic split (a known domain and an unknown one) with deception as the connective tissue, not as a second undocumented setting | Write the secret layer with the same explicitness as the public layer and then simply withhold it from the reader |
+| Wanting a place or institution to carry theme | Write its deontic codex (what it forbids/requires) and its axiological codex (what it prizes) explicitly; the theme is what happens when someone deviates from either | State the theme directly through a character's speech, bypassing the world's own law |
+| Choosing a setting's realism level | Pick, explicitly, which alethic operator gets redistributed and how far (a little magic vs. a fully supernatural cosmos) before writing scenes | Let physical possibility drift scene to scene depending on what's convenient for the plot |
+| Deciding what the narrator states vs. what a character merely claims | Reserve narrator-voice statements for what must be true in the world; let character speech carry doubt, error, and bias | Blend narrator and character claims so a reader cannot tell which is authenticated |
+
+---
+
+## 6 · INVARIANTS
+
+1. **Four modal systems are independent of one another.** A rule about what's possible, what's allowed, what's valued, and what's known are four separate axes; a violation on one axis does not automatically imply a violation on another.
+2. **Every modal system produces the same three story shapes.** Fall, test, and predicament are not genre conventions, they are what a codex-versus-person structure mathematically produces, in any of the four systems.
+3. **A fictional fact exists because the text performs it, not because it reports something already true.** Authority, not accuracy, is the test.
+4. **Fictional existence comes in degrees.** Full authentication, collective (consensus) authentication, and pure belief or error can all coexist in one world without contradiction.
+5. **A world's completeness is a property of its texture, not of its physical scope.** A short text can build a densely determinate world; a long one can leave it mostly a gap.
+6. **A gap is permanent and structural, not a placeholder.** Some questions about a world have no answer and are not meant to acquire one.
+7. **A dyadic world is one modal system run twice, with opposite settings, inside a single frame.** The two-domain structure (light/shadow, known/hidden, permitted/forbidden) is one mechanism wearing many costumes.
+
+---
+
+## 7 · PITFALLS / MYTHS
+
+- Treating "world rules" as one undifferentiated category instead of four separable constraint systems (physical, legal, evaluative, cognitive) — this is the same failure Wolf's "eight undifferentiated infrastructures" pitfall names from the craft side (BVX.0562).
+- Confusing a value clash (axiological) with a rule violation (deontic) — a character who disagrees with what a society prizes has not necessarily broken any of its laws, and vice versa.
+- Assuming an unanswered question is an author's oversight rather than a deliberate, permanent gap; chasing it down "fixes" nothing and can flatten what the silence was doing.
+- Judging what "really" happened in a scene by which character sounds most confident, rather than by which discourse (narrator vs. character) carries authenticating authority.
+- Reading "texture" here as sensory description (soundscape, palette) — Doležel's texture is the wording's factual mode (explicit/implicit/zero), a different concept from a setting's sensory presentation even though the word is the same.
+- Writing a secret society's hidden layer with the same explicit density as its public face, then simply telling the reader to forget it — an epistemic split needs to actually be built as implicit or zero texture, not just declared secret.
+- Letting physical possibility (the alethic codex) drift scene to scene for plot convenience instead of committing to one redistribution of what's possible and holding it.
+
+---
+
+## 8 · APPLICATION
+
+- **Spine level:** SETTING, L6 — the four modal systems are a setting-side toolkit (S4, S9, S10, L7) whose deontic and axiological halves are also, read at story-spine altitude, exactly what L6 Theme means by "the argument the world makes in matter"
+- **12-layer character stack:** none directly; the codex-versus-person mechanism (the "alien" role) is formally the same shape as any character's relationship to L4/L8-level social codes, but this source stays world-side
+- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens — the fixed plot triad (fall/test/predicament) is a ready-made scene-outcome menu the instant a character deviates from any S4/S9/S10 codex; run the deviation through the triad before deciding how the scene resolves
+- **Setting:** primary — feeds S4 LAW and S9 ALLURE and S10 UNDERSIDE directly (each gets the formal grammar for what it already asserts by ruling), L7 genre-contract primary (the alethic redistribution behind Baur's and Wolf's taxonomies), and the SETTING fill rule supporting (the saturation function names Pavel's three domains precisely)
+
+Read against the DCUS starter instance, the mapping holds concretely. S4 LAW's Star-Rating and Sync Cult mechanics are a deontic codex in this book's exact sense — every student action sorts into permitted, prohibited, or obligatory the moment the Feed is watching, and the predicament shape (two valid obligations in conflict) is the untapped scene-generator: a legacy student's loyalty to "Red Hills" and their obligation to the Administration's current name are two codices that cannot both be honored in the same sentence. S9 ALLURE, the meritocratic promise Tori must stop believing, is precisely the axiological codex a nihilist or rebel abandons; her arc is the axiological-rebel shape run once. S10 UNDERSIDE, the buried first name under the rebrand, is a textbook epistemic split: the campus's public face is the known domain, "Red Hills" and what it covered is the unknown one, and every legacy student who still says the old name is running a small act of epistemic rebellion, not just nostalgia. Doležel's saturation function also resolves an open question live in `ssot_03`: S2 WEATHER is flagged canon-thin, and this book says plainly that canon-thin is not automatically a problem — the test is whether that thinness is zero texture (a deliberate gap DCUS's story never needs) or an accidental hole the story's own inferences already require filled. That test, not a completeness checklist, is what should close the S2 gap.
+
+---
+
+## 9 · CROSS-REFERENCES
+
+| Related entry | Relation |
+|---|---|
+| [[BVX.0100]] | Pavel, *Fictional Worlds* — the direct predecessor Doležel names as a friend and interlocutor in his own preface; Pavel supplies the correspondence/salience argument for why a world has a lit center and dark periphery, this book supplies the four-system law that governs what happens inside the lit part and names the periphery's three parts (determinate/indeterminate/gap) formally |
+| [[BVX.0562]] | Wolf, *Building Imaginary Worlds* — the craft-side counterpart; Wolf's Four Realms of Invention (nominal/cultural/natural/ontological) is the same move as this book's alethic redistribution, arrived at independently and named for builders rather than logicians |
+| [[BVX.0458]] | *The Kobold Guide to Worldbuilding* — Baur's five-lineage genre taxonomy (hard historical to wild-eyed wahoo) is this book's alethic system read as a menu instead of a formalism; picking a lineage is picking how far the M-operator gets redistributed |
+| `ssot_03_setting_system.md` | The house SETTING SSOT this distill feeds directly: S4 LAW, S9 ALLURE, S10 UNDERSIDE gain their formal grammar, L7 gains the logic behind its genre-contract menu, and the S2 WEATHER canon-thin flag gets a concrete test (zero texture vs. an accidental hole) |
+| **BOLO 80 theme hook** | Tagged `invariants` on the merged reading list — this is the theme-as-world-law reading of the same book: a setting's deontic codex (what it forbids or requires) and axiological codex (what it prizes) are not backdrop to theme, they ARE the world's law, stated in matter rather than in a character's mouth. Read at L6 altitude, "the alien who deviates from the codex" is simply what a protagonist testing a Touchstone looks like from the world's side of the ledger |
+
+---
+
+## 10 · PROVENANCE & CONFIDENCE
+
+Full text, pdftotext extraction (~339pp, OCR quality uneven throughout — running heads, page numbers, and occasional letters garbled but the prose recoverable by context). Read in full, per the brief's focus: the Preface (method statement, the zigzag between theory and analysis); Chapter V, "Narrative Modalities," in its entirety — Modal Systems, Alethic Constraints, Deontic Constraints, Axiological Constraints, Epistemic Constraints, and Dyadic Worlds including the mythological-world case study; Chapter VI, "Authentication," through World Construction as Performative Force, Dyadic Authentication, and the opening of Graded Authentication; Chapter VII, "Saturation," in full — Facts and Gaps, the fictional encyclopedia, and the Saturation Function itself. Sampled for framework and cross-reference only (chapter openings and the Contents/Subject Index, not deep-extracted): the Prologue; Chapters I–IV (One-Person Worlds, Action and Motivation, Multiperson Worlds, Interaction and Power); Chapter VIII, "Modern Myth" (the hybrid-world and visible/invisible-world case studies, read for the dyadic-world payoff, not for the postmodern-fiction argument); the Epilogue on transduction, not read.
+
+The S-layer keying in `feeds:` and Diagram 4 is this distill's own synthesis against `ssot_03_setting_system.md` and against the DCUS starter instance already on record; asserted here, not separately ruled by Chief. `bvx_provisional: true` is set per the task brief — this is a new id minted for this distill, not yet reconciled against the Zotero library's own record.
+
+## META
+- Template: BVX-LEARN-v4.0
+- Source classification: full-text book, deep extraction on Chapters V–VII (Narrative Modalities, Authentication, Saturation), sampled on the Prologue, Chapters I–IV, VIII, and the Epilogue
+- Created / Updated: 2026-09-29
