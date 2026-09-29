@@ -2,7 +2,7 @@
 id: BVX-LEARN.inventory-live
 title: "Zotero live-library inventory"
 type: report
-generated: 2026-09-24
+generated: 2026-09-29
 source: "C:\Users\U01_LEECHSEED\Zotero\zotero.sqlite"
 status: BOLO 18 stage 2 - step 1
 ---
@@ -13,12 +13,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8839** |
-| With a PDF attachment | 8839 |
-| PDF present on disk | 8748 |
-| Already in catalog.json (BVX id) | 1001 |
-| **New since the Dec-2023 catalog** | **7838** |
-| Story-side (CRE + LIT by catalog) | 336 |
+| Top-level items | **8873** |
+| With a PDF attachment | 8873 |
+| PDF present on disk | 8782 |
+| Already in catalog.json (BVX id) | 1010 |
+| **New since the Dec-2023 catalog** | **7863** |
+| Story-side (CRE + LIT by catalog) | 630 |
 | **Spine-keyed from Chief's tags** | **605** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
@@ -40,24 +40,24 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 7661 |
-| GAM | 334 |
-| CRE | 228 |
-| LIT | 108 |
-| MSX | 101 |
-| VIS | 99 |
-| TEC | 62 |
-| BIZ | 48 |
-| MIL | 42 |
-| PHI | 30 |
-| FIT | 25 |
-| SOC | 23 |
-| PRD | 19 |
-| POL | 18 |
-| PRF | 15 |
-| DSN | 12 |
-| PSY | 9 |
-| SLF | 5 |
+| NEW | 5555 |
+| GAM | 1234 |
+| CRE | 464 |
+| PHI | 284 |
+| SLF | 204 |
+| VIS | 198 |
+| MSX | 195 |
+| TEC | 182 |
+| LIT | 166 |
+| MIL | 84 |
+| BIZ | 82 |
+| FIT | 66 |
+| POL | 38 |
+| PRD | 31 |
+| SOC | 25 |
+| DSN | 24 |
+| PSY | 21 |
+| PRF | 20 |
 
 ## All tags
 
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7838)
+## New since the catalog (7863)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -622,6 +622,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 4eupdate |  |  |
 |  | 5 |  |  |
 |  | 5 RSD Protagonist Change Worksheet |  |  |
+|  | 50 round pistol cof 1 051322 |  |  |
 |  | 510521m_vol2 |  |  |
 |  | 510521m_vol2 |  |  |
 |  | 52-in-52 - 05 Runeblades |  |  |
@@ -723,6 +724,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 911 ST |  |  |
 |  | 911 ST-1 |  |  |
 |  | 91500821-Eros-and-Psyche |  |  |
+|  | 98575214 Uscca Accuracy Secrets Unknown |  |  |
 |  | [NASA SP 2016 6105_Rev2_]nasa_systems_engineering_handbook_0 |  |  |
 |  | A Broken Sky - Boundless Horizons | Patreon Extras |  |
 |  | A Broken Sky - Fantastic Ramblings |  |  |
@@ -1178,6 +1180,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Beginner Box Cover |  |  |
 |  | BeginnersGuidetoBranding_2020 |  |  |
 |  | Belkzen, Hold of the Orc Hordes |  |  |
+|  | Bentham - The Works of Jeremy Bentham Vol 4 | 1843 |  |
 |  | Bestial Ancestries - The Gnoll |  |  |
 |  | Bestial Ancestries - The Medusae |  |  |
 |  | Bestial Ancestries - The Taurine |  |  |
@@ -1442,6 +1445,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Champions of Purity |  |  |
 |  | Chaos Campaign Rulebook |  |  |
 |  | Chaos Monk: Bringing Magical Creativity to the New Monastic Path | Dee |  |
+|  | CHAPTER 2 |  |  |
 |  | Char Sheet - Adept |  |  |
 |  | Char Sheet - Decker |  |  |
 |  | Char Sheet - Generic |  |  |
@@ -1813,6 +1817,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2021 | Docs for Developers: An Engineer’s Field Guide to Technical Writing | Bhatti, Corleissen, Lambourne, |  |
 |  | document-10-1 |  |  |
 |  | Donal Graeme Archive ((Compiled by) udream-hunter) |  |  |
+|  | Donella H. Meadows - Thinking in Systems (Leverage Points essay) - exc | 1999 |  |
 |  | Dong Ho Kim - Space Drawing Perspective |  |  |
 |  | Doom Comes to Dustpawn | Variant Cover |  |
 |  | Doom Comes to Dustpawn |  |  |
@@ -2288,6 +2293,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Drow of Porphyra - The Karza, Children of the Loomqueen |  |  |
 |  | Drow of Porphyra - The Nalbrezu, Devils In Disguise |  |  |
 |  | DrugUsersBible |  |  |
+|  | Dry Fire Practise |  |  |
 |  | DS11_Complete |  | 080007 - TABLE TOP GAME DESIGN |
 |  | Duck n Roll Games - The Flavour Handbook |  |  |
 |  | Duergar of the Obsidian Citadel | open with Adobe |  |
@@ -2575,6 +2581,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dyslexic Studeos - Pathfinder Character Sheets |  |  |
 |  | E1 - Carnival of Tears |  |  |
 |  | E2 - Blood of Dragonscar |  |  |
+|  | Ejercicios de Cualificacion de Pistola |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
 |  | Eldritch Archetypes - Arbalesteur |  |  |
 |  | Eldritch Dedications - Lich |  |  |
@@ -2915,6 +2922,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Fire Mountain - Throne of Night Book 2 - The Earth's Wound |  |  |
 |  | Firearm Fanciness |  |  |
 |  | Firearms Design Worksheet |  |  |
+|  | First Step Pistol |  |  |
 |  | First Steps, Part I - In Service to Lore |  |  |
 |  | First Steps, Part II - To Delve the Dungeon Deep |  |  |
 |  | First Steps, Part III - A Vision of Betrayal |  |  |
@@ -3045,6 +3053,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Fundamentals of Drawing from Life | Volume 1 | 080004 - art |
 |  | Gallows of Madness |  |  |
 |  | Gallows of Madness - Poster Map |  |  |
+|  | Galtung - Violence, Peace, and Peace Research | 1969 |  |
 |  | Game - How To Meet, Attract, And Date Attractive Women |  | HEALTH & FITNESS |
 |  | Game Changer - Alchemical Tools |  |  |
 |  | Game Design How to Create Video and Tabletop Games, Start to Finish | Lewis Pulsipher |  |
@@ -3096,6 +3105,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Giger H.R. - Necronomicon I - 2008 |  |  |
 |  | Giger H.R. - Necronomicon II - 2005 |  |  |
 |  | GIRL GENIUS Sourcebook and Roleplaying Game | Andrew, Childs, Foglio, Foglio |  |
+|  | gitgud 1 rev2 1 |  |  |
 |  | GM Kit |  |  |
 |  | GM Screen Alt Cover |  |  |
 |  | GM's Gallery - Useful and Interesting NPCs |  |  |
@@ -3729,10 +3739,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Kyra - Level 1 Cleric |  |  |
 |  | Kyra - Level 3 Cleric |  |  |
 |  | Kyra - Level 5 Cleric |  |  |
+|  | L1 Dry Fire EN |  |  |
 |  | Labanan Solo The Combat Exercises (Anyo) of Modern Arnis (Anderson, Pr |  | MILITARY SCIENCE |
 |  | Lair of the Fat Man |  |  |
 |  | Lair Of The Fat Man |  |  |
 |  | Lajos Egri s Character Bone Structure |  |  |
+|  | Lamport - Specifying Systems | 2002 |  |
 |  | Lands of Conflict |  |  |
 |  | Lands of GOW - Redwall |  |  |
 |  | Lands of GOW - Suliawa, the Twisted Forest |  |  |
@@ -3823,6 +3835,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Lem - Level 5 Bard |  |  |
 |  | Lemon, Bill - Light, Shadow & Skin Tone_ The Complete Guide to Shootin | 2013 |  |
 |  | Letters from the Flaming Crab - Culinary Magic |  |  |
+|  | Leveson - Engineering a Safer World | 2011 |  |
 |  | LFCC SOP |  | MILITARY SCIENCE |
 |  | LG021KM01 - Cold Mountain |  |  |
 |  | LG022KM02 - Beasts of Legend - Coldwood Codex |  |  |
@@ -4100,6 +4113,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Mark of the Mantis - Chronicle Sheet |  |  |
 |  | Mark of the Mantis - Pregens |  |  |
 |  | Marketing Director T LEONARD BALSERA Director of Sales T ROSS JEPSON A | Brackin, West, Holschuh, Smirl |  |
+|  | Marksmanship Lesson 3 |  |  |
+|  | Marksmanship Lesson 3 1 |  |  |
 |  | Mary Buckham - Writing Active Setting Book 2_ Emotion, Conflict and Ba | 2013 | 06_NARRATOR |
 |  | Masks of the Living God |  |  |
 |  | Master Guide for Glamour Photography... |  |  |
@@ -4161,6 +4176,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 1995 | Metafiction | Currie | 02_PLOT SYUHZET |
 |  | Metal & Myth - Dredan, Realm of Metal & Myth |  |  |
 | 2014 | Metaphor | Donoghue |  |
+|  | Meyer - Object-Oriented Software Construction 2nd ed | 1997 |  |
 |  | MFC_CHOREO_NOTES_08_Empezo_El_Show |  |  |
 |  | MFC_CHOREO_NOTES_08_Empezo_El_Show |  |  |
 |  | MI1 - Feast or Famine |  |  |
@@ -4299,7 +4315,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | More Malcontent - Additional Content for The Malefactor |  |  |
 |  | More Random Encounters Remastered |  |  |
 |  | More Whispering Homunculus |  |  |
-|  | Morphology of the Folktale | Vladimir Propp, Laurence Scott |  |
 |  | Mothership Gradient Descent (Sean McCay)— |  | 080007 - TABLE TOP GAME DESIGN |
 |  | Mountains And Canyons |  |  |
 |  | Multiman |  |  |
@@ -4564,6 +4579,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Narratology Beyond Literary Criticism Mediality and Disciplinarity (Na | Jan Christoph Meister |  |
 |  | Narratology in the Age of Cross-Disciplinary Narrative Research (Narra | Sandra Heinen, Roy Sommer |  |
 |  | narratology_framework_thesis_draft_08092024 |  |  |
+|  | NASA - Space Shuttle Operational Flight Rules NSTS-12820 Vol A | 1996 |  |
 |  | NASA Systems Engineering Handbook |  |  |
 |  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar |  |  |
 |  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar | 2011 |  |
@@ -4713,6 +4729,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Outlaws of Alkenstar AP - Players Guide |  |  |
 |  | Outline Your Books Or Die Secrets of Writing Fiction that Sells Plotti | Jim Driver |  |
 |  | Outlines And The Thematic Method (Screenwriting Blue Books Book 2) | William C. Martell |  |
+|  | P226 Armorers Manual |  |  |
 |  | packing slip reverb-6ddffc51e36d332ad8c6f2d89468d871 |  |  |
 |  | Pact Magic Unbound - Volume I |  |  |
 |  | Pact Magic Unbound - Volume II |  |  |
@@ -5067,6 +5084,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Photographing the Nude - 2002 |  | 080009 - PHOTOGRAPHY |
 |  | Photoplay plot encyclopedia an analysis of the use in photoplays of th | Palmer Frederick |  |
 |  | Pirates of the Inner Sea |  |  |
+|  | pistoltraininghacks |  |  |
 |  | Planes of Power |  |  |
 |  | Planewalker Adventures - Celestian's Compass |  |  |
 |  | Playboy February 1976 |  |  |
@@ -5977,6 +5995,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Salt and Sage Books - How to Write Asexual Characters_ An Incomplete G | 2020 | 03_CHARACTER |
 |  | Salt and Sage Books - How to Write Black Characters_ An Incomplete Gui | 2020 | 03_CHARACTER |
 |  | Salt and Sage Books - Writing Fat Positivity_ An Incomplete Guide (Inc | 2020 | 03_CHARACTER |
+|  | sample |  |  |
+|  | sample |  |  |
+|  | sample |  |  |
 |  | Samurai Sheepdog - Ancestries of Omen - Drakorin |  |  |
 |  | Samurai Sheepdog - Lands of Theia |  |  |
 |  | Samurai Sheepdog - The Book of Many Things |  |  |
@@ -6966,6 +6987,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2023 | Systems 4.0: Systems Foundations for Industry 4.0 | Badiru, Omitaomu |  |
 |  | Systems Thinking Made Simple | Derek Cabrera, Laura Cabrera |  |
 |  | Tactical Operations v3.3 2014 06 04 |  |  |
+|  | Tactical Pistol Marksmanship How to Improve Your Combat Shooting Skill |  |  |
 |  | Taldor, Echoes of Glory |  |  |
 |  | Taldor, the First Empire |  |  |
 |  | Tales of the Old Margreve |  |  |
@@ -7451,6 +7473,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | tmux 2 Productive Mouse-Free Development | Brian P. Hogan |  |
 |  | TOC pattern catalog schema |  |  |
 |  | Token Sheets |  |  |
+|  | Tolkien, J.R.R. - On Fairy-Stories - excerpt | 1947 |  |
 |  | Tom of Finland XXL | John Waters, Camille Paglia, T | SEX |
 |  | Tomb of the Iron Medusa |  |  |
 |  | Tombs of Golarion |  |  |
@@ -7644,6 +7667,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Unrighteous Villains |  |  |
 |  | Unusual Suspects |  |  |
 |  | Urban Dressing - Mining Town |  |  |
+|  | US Army - ADP 6-0 Mission Command | 2012 ed. |  |
 |  | UTC A SOP |  | MILITARY SCIENCE |
 |  | UTC D SOP |  | MILITARY SCIENCE |
 |  | Vaida Bogdan. - The Secrets of the 16 types of personalities from the  |  | 03_CHARACTER |
@@ -7910,6 +7934,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | xo3qq5od |  |  |
 |  | Yorke, John - Into the woods _ how stories work and why we tell them-P | 2014 |  |
 |  | You Can Farm The Entrepreneurs Guide to Start  Succeed in a Farming En | Salatin, Joel | AGRICULTURE & ANIMAL HUSBANDRY |
+|  | Your Competition Handgun Training Program eBook |  |  |
 |  | Your Whispering Homunculus |  |  |
 |  | zach-like-standard |  | 080006 - VIDEO GAME DESIGN |
 |  | Zarins, Uldis - Form of the Head and Neck - 2021 |  | 080004 - art |

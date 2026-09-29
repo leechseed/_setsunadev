@@ -2,7 +2,7 @@
 id: BVX-LEARN.classify-live
 title: "Classification of the live library"
 type: report
-generated: 2026-09-24
+generated: 2026-09-29
 status: BOLO 18 stage 2 - step 2
 ---
 
@@ -12,41 +12,41 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 
 | Source | Items |
 |---|---|
-| none | 5400 |
-| rule | 1817 |
-| catalog | 1178 |
-| tag | 315 |
-| junk | 129 |
+| none | 5418 |
+| catalog | 3318 |
+| junk | 132 |
+| rule | 5 |
 
 ## By subject (all 1,031)
 
 | Subject | Items |
 |---|---|
-| NONE | 5529 |
+| NONE | 5550 |
 | GAM | 1234 |
 | CRE | 464 |
 | PHI | 284 |
 | SLF | 204 |
 | VIS | 198 |
-| MSX | 190 |
-| TEC | 182 |
+| MSX | 195 |
+| TEC | 184 |
 | LIT | 166 |
-| MIL | 84 |
+| MIL | 87 |
 | BIZ | 82 |
 | FIT | 66 |
-| POL | 37 |
+| POL | 38 |
 | PRD | 31 |
 | SOC | 25 |
 | DSN | 24 |
+| PSY | 21 |
 | PRF | 20 |
-| PSY | 19 |
 
 ## Story side: 630 CRE + LIT · 276 spine-keyed from tags · **354 still need a spine key** (step 2b: classifier by title, then a PS pass on the TOC of each)
 
-## Unmatched, needs eyes (5400)
+## Unmatched, needs eyes (5418)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
+| 1968 | Morphology of the Folktale | Vladimir Propp (trans. Laurenc |  |
 |  | #01 _ The Island at the Axis of the World |  |  |
 |  | #02 _ The Dying Skyseer |  |  |
 |  | #03 _ Digging for Lies |  |  |
@@ -174,6 +174,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 488623754-Add-Mass-to-That-Ass |  |  |
 |  | 493783999-412596051-The-Complete-Idiot-s-Guide-to-T-Arlene-Tognetti |  |  |
 |  | 5 RSD Protagonist Change Worksheet |  |  |
+|  | 50 round pistol cof 1 051322 |  |  |
 |  | 52-in-52 - 05 Runeblades |  |  |
 |  | 52-in-52 - 06 Gadget Crossbows |  |  |
 |  | 52-in-52 - 08 Magic Mishap Items |  |  |
@@ -249,6 +250,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | 911 ST |  |  |
 |  | 911 ST-1 |  |  |
 |  | 91500821-Eros-and-Psyche |  |  |
+|  | 98575214 Uscca Accuracy Secrets Unknown |  |  |
 |  | A Broken Sky - Boundless Horizons | Patreon Extras |  |
 |  | A Broken Sky - Fantastic Ramblings |  |  |
 |  | A Broken Sky - Pirates of the Unknown Horizon - Primer |  |  |
@@ -589,6 +591,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Beginner Box - Token Sheets |  |  |
 |  | Beginner Box Cover |  |  |
 |  | Belkzen, Hold of the Orc Hordes |  |  |
+|  | Bentham - The Works of Jeremy Bentham Vol 4 | 1843 |  |
 |  | Bestial Ancestries - The Gnoll |  |  |
 |  | Bestial Ancestries - The Medusae |  |  |
 |  | Bestial Ancestries - The Taurine |  |  |
@@ -776,6 +779,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Champions of Corruption |  |  |
 |  | Champions of Purity |  |  |
 |  | Chaos Monk: Bringing Magical Creativity to the New Monastic Path | Dee |  |
+|  | CHAPTER 2 |  |  |
 |  | Char Sheet - Adept |  |  |
 |  | Char Sheet - Decker |  |  |
 |  | Char Sheet - Generic |  |  |
@@ -1022,6 +1026,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | DnD_BasicRules_2018 |  |  |
 |  | document-10-1 |  |  |
 |  | Donal Graeme Archive ((Compiled by) udream-hunter) |  |  |
+|  | Donella H. Meadows - Thinking in Systems (Leverage Points essay) - exc | 1999 |  |
 |  | Doom Comes to Dustpawn | Variant Cover |  |
 |  | Doom Comes to Dustpawn |  |  |
 |  | Doug Church - Formal Abstract Design Tools | 1999 |  |
@@ -1483,6 +1488,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Drow of Porphyra - The Karza, Children of the Loomqueen |  |  |
 |  | Drow of Porphyra - The Nalbrezu, Devils In Disguise |  |  |
 |  | DrugUsersBible |  |  |
+|  | Dry Fire Practise |  |  |
 |  | Duck n Roll Games - The Flavour Handbook |  |  |
 |  | Duergar of the Obsidian Citadel | open with Adobe |  |
 |  | Duergar of the Obsidian Citadel |  |  |
@@ -1755,6 +1761,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dynamic Action! |  |  |
 |  | E1 - Carnival of Tears |  |  |
 |  | E2 - Blood of Dragonscar |  |  |
+|  | Ejercicios de Cualificacion de Pistola |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
 |  | Eldritch Archetypes - Arbalesteur |  |  |
 |  | Eldritch Dedications - Lich |  |  |
@@ -2034,6 +2041,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Fire Mountain - Throne of Night Book 2 - The Earth's Wound |  |  |
 |  | Firearm Fanciness |  |  |
 |  | Firearms Design Worksheet |  |  |
+|  | First Step Pistol |  |  |
 |  | First Steps, Part I - In Service to Lore |  |  |
 |  | First Steps, Part II - To Delve the Dungeon Deep |  |  |
 |  | First Steps, Part III - A Vision of Betrayal |  |  |
@@ -2150,6 +2158,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Fuck Yeah Menswear Bespoke Knowledge for the Crispy Gentleman | Kevin Burrows, Lawrence Schlos |  |
 |  | Gallows of Madness |  |  |
 |  | Gallows of Madness - Poster Map |  |  |
+|  | Galtung - Violence, Peace, and Peace Research | 1969 |  |
 |  | Gamestorming (Dave Gray)— |  |  |
 |  | Gaming Paper - Edgewaters Folly |  |  |
 |  | Gatewalkers AP - 1 of 3 - The Seventh Arch |  |  |
@@ -2173,6 +2182,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Giantslayer - Poster Map Folio |  |  |
 |  | Giger H.R. - Necronomicon I - 2008 |  |  |
 |  | Giger H.R. - Necronomicon II - 2005 |  |  |
+|  | gitgud 1 rev2 1 |  |  |
 |  | GM Kit |  |  |
 |  | GM Screen Alt Cover |  |  |
 |  | GM's Gallery - Useful and Interesting NPCs |  |  |
@@ -2505,8 +2515,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Kyra - Level 1 Cleric |  |  |
 |  | Kyra - Level 3 Cleric |  |  |
 |  | Kyra - Level 5 Cleric |  |  |
+|  | L1 Dry Fire EN |  |  |
 |  | Lair of the Fat Man |  |  |
 |  | Lair Of The Fat Man |  |  |
+|  | Lamport - Specifying Systems | 2002 |  |
 |  | Lands of Conflict |  |  |
 |  | Lands of GOW - Redwall |  |  |
 |  | Lands of GOW - Suliawa, the Twisted Forest |  |  |
@@ -2967,7 +2979,6 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | More Malcontent - Additional Content for The Malefactor |  |  |
 |  | More Random Encounters Remastered |  |  |
 |  | More Whispering Homunculus |  |  |
-|  | Morphology of the Folktale | Vladimir Propp, Laurence Scott |  |
 |  | Mountains And Canyons |  |  |
 |  | multimedia forms v001 7142023 |  |  |
 |  | Mummy's Mask - 01 - The Half-Dead City |  |  |
@@ -2982,6 +2993,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | mymusic5_076579_[Pianella Piano] JVKE - golden hour |  |  |
 |  | Mystery Monsters Revisited |  |  |
 |  | Naked Lunch | William S. Burroughs |  |
+|  | NASA - Space Shuttle Operational Flight Rules NSTS-12820 Vol A | 1996 |  |
 |  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar |  |  |
 |  | Nathan Myhrvold, Chris Young, Maxime Bilet - Modernist Cuisine_ The Ar | 2011 |  |
 | 2006 | Natural disasters | Watts |  |
@@ -3087,6 +3099,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Outlaws of Alkenstar AP - 1 of 3 - Punks in a Powderkeg |  |  |
 |  | Outlaws of Alkenstar AP - 2 of 3 - Cradle of Quartz |  |  |
 |  | Outlaws of Alkenstar AP - 3 of 3 - Smoking Gun |  |  |
+|  | P226 Armorers Manual |  |  |
 |  | packing slip reverb-6ddffc51e36d332ad8c6f2d89468d871 |  |  |
 |  | Pact Magic Unbound - Volume I |  |  |
 |  | Pact Magic Unbound - Volume II |  |  |
@@ -3377,6 +3390,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 | 2018 | Phallicism and Phallic Worship | Blavatsky | BVX |
 |  | Phantasia Zoologica I - Cats, Dogs & Horses |  |  |
 |  | Pirates of the Inner Sea |  |  |
+|  | pistoltraininghacks |  |  |
 |  | Planes of Power |  |  |
 |  | Planewalker Adventures - Celestian's Compass |  |  |
 |  | Playboy February 1976 |  |  |
@@ -5055,6 +5069,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Tinkering 303 - Matroishka Automatons |  |  |
 |  | TOC pattern catalog schema |  |  |
 |  | Token Sheets |  |  |
+|  | Tolkien, J.R.R. - On Fairy-Stories - excerpt | 1947 |  |
 |  | Tomb of the Iron Medusa |  |  |
 |  | Tome of Adventure Design |  |  |
 |  | Tome of Blighted Horrors |  |  |
@@ -5223,6 +5238,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Unrighteous Villains |  |  |
 |  | Unusual Suspects |  |  |
 |  | Urban Dressing - Mining Town |  |  |
+|  | US Army - ADP 6-0 Mission Command | 2012 ed. |  |
 |  | Valeros - Level 1 Fighter |  |  |
 |  | Valeros - Level 3 Fighter |  |  |
 |  | Valeros - Level 5 Fighter |  |  |
@@ -5422,6 +5438,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Written by PHIL MASTERS Edited by NIKOLA VRTIS Illustrated by ERIC DES | Peters, Pulver, Punch, Stoddar |  |
 |  | Written by WILLIAM H. STODDARD Edited by NIKOLA VRTIS Illustrated by P | Hite, Pulver, Rice |  |
 |  | Wyrd of Questhaven |  |  |
+|  | Your Competition Handgun Training Program eBook |  |  |
 |  | Your Whispering Homunculus |  |  |
 |  | Zenith Games - 101 Spells for the Common Man |  |  |
 |  | ZGA1 - NPC Cards |  |  |
