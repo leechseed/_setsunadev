@@ -112,6 +112,7 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 | The Deepstate North (America as BioShock Infinite) | WB-GRP-0007 | Liberty | Tyranny that calls itself liberty |
 | Providence, the techno-corpo state (named 9/29) | WB-GRP-0006 | Safety | A prison that calls itself protection |
 | The Kudzu | WB-GRP-0005 | Life | A death that calls itself life |
+| The Power Line (the Coast's shield; named 9/29) | WB-INS-0004 | Protection | A wall that calls itself a shield |
 
 The Kudzu is the controlling idea made literal: no one in it is evil at all; it only grows. Plain words are drafts for Chief to re-pick, the way FREEDOM and FAIRNESS were.
 
@@ -181,7 +182,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
-- **1.1.0 · 2026-09-29** · THE CIVILIZATION GAUGES added (BOLO 93, "all rec"): five powers, one value each, the steps on their catalog entries.
+- **1.1.0 · 2026-09-29** · THE CIVILIZATION GAUGES added (BOLO 93, "all rec"): five powers, one value each (a sixth, the Power Line, added the same night), the steps on their catalog entries.
 
 - **0.1.0 · 2026-09-29** — bootstrap: the controlling idea and the mechanism line, ruled; the storyform map; the open calls.
 - **0.2.0 · 2026-09-29** — the rails: four debates ruled (80-B.1), plain words handpicked (1B · 2B · 3B · 4A).

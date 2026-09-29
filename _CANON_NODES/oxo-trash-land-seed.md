@@ -1,5 +1,5 @@
 ---
-entity: "Trash Land (placeholder — name UNRULED)"
+entity: "The Power Line (RULED 2026-09-29; was the placeholder Trash Land)"
 entity_id: oxo_trash_land_seed
 kind: setting — region (Axis 1 scale class: region; parent: world)
 ip: OVEREXITOUT / ASTRO7EX
@@ -19,7 +19,7 @@ captured: 2026-09-06
 bolo: 30
 ---
 
-# TRASH LAND — region seed
+# THE POWER LINE — region seed (was TRASH LAND)
 
 > *A mountain range nobody climbs. Everything the Spiral ever deleted is under your feet.*
 
@@ -42,6 +42,8 @@ Chief, 2026-09-29, paraphrased close to his words; his own doubts kept as ⧗:
 - ⧗ **Mutation:** growing up in the waste through a hundred years of mutation may give a huge resistance to radiation-type damage ("I don't know").
 - **It is where the Outliers live and where they are from:** the last part, the ghetto, the boondocks.
 - **There are cities inside the belt**: Kowloon Walled City cities (heard as "Kalunwald"), and the belt as a whole is like **The Line** Saudi Arabia is building, a linear city, "except terrible trash."
+
+**RULED 2026-09-29 (Chief: "go recommendations"):** the belt is named **the Power Line**: officially a utility line, really the line that guards the Delta Coast's power. Local names: the Outliers call it **the Zona**; Coast church folk pray for **the Hedge**. "Trash Land" is retired to an alias. Its gauge is **Protection** (07). The belt-to-DCUS intake is filed as [WB-CUS-0002](../ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/CUS/WB-CUS-0002.md). Tori stays Red Hills legacy; the belt recruits are who she meets at DCUS.
 
 **Spoken later the same night (2026-09-29):**
 - **It is a shield**: the Delta Coast put it there to protect itself from the outside.
