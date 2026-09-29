@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_02_character_systems category: state_architecture version: 1.1.0 last_updated: 2026-09-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula"]
+## type: ssot_02_character_systems category: state_architecture version: 1.2.0 last_updated: 2026-09-29 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
 ---
 # 🔮 SSOT: Character State Architecture
 
@@ -10,12 +10,13 @@
 2. [The Core Principle](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-core-principle)
 3. [What Is Static vs What Is Dynamic](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-is-static-vs-what-is-dynamic)
 4. [State Record Format](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-record-format)
-5. [State Diff Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-diff-rules)
-6. [Querying a Character at a Narrative Moment](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#querying-a-character-at-a-narrative-moment)
-7. [State Sources](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-sources)
-8. [Relationship Records](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#relationship-records)
-9. [Boundaries with plot_systems](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#boundaries-with-plot-systems)
-10. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+5. [Checkpoints and Story Points (v1.2)](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#checkpoints-and-story-points-v12)
+6. [State Diff Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-diff-rules)
+7. [Querying a Character at a Narrative Moment](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#querying-a-character-at-a-narrative-moment)
+8. [State Sources](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-sources)
+9. [Relationship Records](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#relationship-records)
+10. [Boundaries with plot_systems](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#boundaries-with-plot-systems)
+11. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
 
 ---
 
@@ -93,10 +94,11 @@ A state record is a structured data block that describes the delta between the b
 |`character_id`|Character this state belongs to|`victoria_midnight`|
 |`state_id`|Unique identifier for this state|`vm_m1b_post_crash`|
 |`origin_event`|The fabula event that produced this state (v1.1). An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event|`m1b_crash_jebb_death`|
-|`narrative_moment`|Human-readable description of when. Kept for readers; `origin_event` is the structured link|`Movement 1B — immediately after the crash`|
+|`told_at`|NEW (v1.2). A list of time codes — [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4 — marking every point the audience is shown this state on the grid. An empty list means the state is true but offstage: it holds, but the audience is never told it at this moment|`["M2 · S04 \| 012.3.2"]`|
+|`narrative_moment`|v1.2: generated from the time code, not authored. A readable label only, produced from `origin_event` and `told_at` so it can never drift from the real coordinate|`Movement 1B — immediately after the crash`|
 |`movement`|Which movement this state falls in|`m1b`|
-|`mc_distance_temporal`|Temporal distance from MC's current scene|`0` (this IS the MC)|
-|`mc_distance_narrative`|Causal steps from MC's throughline|`0`|
+|`mc_distance_temporal`|v1.2: computed, not authored. Distance from Tori's own time code, with Tori fixed at (0,0) — see [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|`0` (this IS Tori)|
+|`mc_distance_narrative`|Causal steps from MC's throughline. Stays authored — a judgment call, not derivable from time codes|`0`|
 |`state_version`|Version of this state record|`1.0`|
 |`base_record_version`|Version of the base record this diffs against|`1.0.0`|
 
@@ -184,6 +186,16 @@ ASTROLOGY_OVERLAY:
 
 ---
 
+## Checkpoints and Story Points (v1.2)
+
+Everything above this line — a full state record, `state_diffs`, the three MODIFIED blocks — is a **checkpoint**: a complete state at a fabula event. That name is new in v1.2; the format it names is not — it is what this document has always built.
+
+A checkpoint is heavy: it re-derives every value, every derived statistic, every flag. That is the right weight for a fabula event, but too heavy for a single trait tick or a single flag flip between events. Those lighter, single-field changes are **story points**, and they do not live in this document — they live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §5, which defines their shape and how a value moves between them (step by default, `ramp: true` for continuous values).
+
+**Rule 6, amended:** "one state per narrative moment per character" applies to checkpoints. A moment may carry many story points — a trait can tick several times between two checkpoints without either one being revised.
+
+---
+
 ## State Diff Rules
 
 **Rule 1: Diffs are additive, not destructive.** A state diff adds or modifies values. It never deletes base record fields. If a value returns to its base record level (e.g., DRIVE recovers to VITAL), the state diff for that moment simply omits the field, and the base record value is read.
@@ -196,7 +208,7 @@ ASTROLOGY_OVERLAY:
 
 **Rule 5: State diffs are versioned.** If a state diff is revised (because the narrative designer changes what happens at that moment), the old version is archived and a new version replaces it. The base record is never involved in this revision.
 
-**Rule 6: One state per narrative moment per character.** A character does not have two simultaneous state diffs for the same moment. If a narrative moment is subdivided (e.g., M1B pre-crash and M1B post-crash), they are separate states with separate `state_id` values.
+**Rule 6: One state per narrative moment per character.** A character does not have two simultaneous state diffs for the same moment. If a narrative moment is subdivided (e.g., M1B pre-crash and M1B post-crash), they are separate states with separate `state_id` values. **v1.2: this rule governs checkpoints.** Story points (see §Checkpoints and Story Points above) may be many per moment — a moment can carry several single-field changes without any of them counting as a second checkpoint.
 
 ---
 
@@ -307,12 +319,12 @@ This document defines character state tracking. It does not define story structu
 
 **What plot_systems will eventually provide to this architecture:**
 
-- The formal timeline coordinate system (replacing the current freeform `narrative_moment` field with structured temporal keys).
 - The movement sequence definition (which moments belong to which movements).
 - The scene-to-state mapping (which scenes produce which state diffs).
-- The Victoria-as-(0,0) coordinate system for measuring all other characters' temporal and narrative distance.
 
 **v1.1 (2026-09-24):** the first structured key has landed. Every state carries `origin_event`, an `event_id` in the fabula's registry, and one event may produce states in several characters. `narrative_moment` and `movement` stay as readable tags. Calendar coordinates wait on a world calendar (fabula OPEN call 5, ruled: date by movement until then).
+
+**v1.2 (2026-09-29):** the formal timeline coordinate system is ruled, and it is provided by [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md), not by plot_systems — the time code (`M2 · S04 | 012.3.2`) is the structured temporal key that `told_at` carries and `narrative_moment` is generated from. **Victoria-as-(0,0) is ruled**: Tori sits at the origin, and `mc_distance_temporal` is computed from time codes against her position, not typed in by hand. `mc_distance_narrative` is unaffected — causal steps stay a judgment call, authored as before.
 
 ---
 
@@ -320,5 +332,6 @@ This document defines character state tracking. It does not define story structu
 
 |Version|Date|Changes|
 |---|---|---|
+|1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 ("go"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distance_temporal` redefined as computed from time codes with Tori fixed at (0,0); `mc_distance_narrative` stays authored · new §Checkpoints and Story Points (v1.2): today's state records are checkpoints, story points (single-field changes, any time code) live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) · Rule 6 amended to govern checkpoints only, story points may be many per moment · Boundaries with plot_systems updated: the timeline coordinate system and Victoria-as-(0,0) are ruled, provided by ssot_08. Additive; no field removed.|
 |1.1.0|2026-09-24|BOLO 77 handshake, ruled "all recs" 2026-09-24: `origin_event` required field (the fabula's `event_id`, `<movement>_<slug>`; null only for progression overlays) · the three MODIFIED blocks grouped under a `state_diffs` parent (v1.0 top-level blocks stay valid) · the plot_systems boundary points to the fabula doc. Additive; no field removed.|
 |1.0.0|2026-03-03|Initial state architecture. Establishes static/dynamic boundary, state diff format, diff rules, query assembly protocol, five state source categories, relationship record format, and plot_systems boundaries.|
