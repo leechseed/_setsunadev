@@ -180,7 +180,7 @@ const G = {
   s03: { t: 'Setting (03)', k: 'system', d: 'Place at character grade: the 12-layer setting slice per place. 03 owns places and the faction card; a catalog entry points at a place by its place id.' },
   term: { t: 'Terms', k: 'how to read this page', d: 'Every underlined word opens a card. Cards nest: hover a term inside a card. Space locks the top card; a click pins it until Esc.' },
   era: { t: 'Era', k: 'filter · 08 time code', d: 'When an entry begins and when it is last current: backstory, then the movements M1 to M6. The era filter shows every entry whose range covers the chosen era.' },
-  WAIT: { t: 'Waiting types', k: 'ruled 9/29 · call 4', d: 'Four more types are defined in 09 but not open: goods and trade, language, creatures, world rules. Each opens when the first story needs it.' },
+  WAIT: { t: 'Waiting types', k: 'ruled 9/29 · call 4', d: 'Three more types are defined in 09 but not open: goods and trade, language, world rules. Creatures (BIO) opened 9/29 for the Kudzu. Each opens when the first story needs it.' },
 };
 for (const [c, [n, d]] of Object.entries(D.types)) G['ty-' + c] = { t: n, k: 'type · ' + c, d };
 for (const [id, p] of Object.entries(D.places)) G['pl-' + id] = { t: p.name, k: 'place · 03 · ' + id, d: `Scale: ${p.scale}. Also called: ${p.aliases.join(' · ') || 'nothing else'}.` };
@@ -197,7 +197,7 @@ const F = { types: new Set(), place: '', group: '', era: '' };
 function buildFilters() {
   const n = t => D.entries.filter(e => e.type === t).length;
   $('#typeChips').innerHTML = Object.keys(D.types).map(t => `<button class="chip" data-ty="${t}" aria-pressed="false">${t}<b class="num">${n(t)}</b></button>`).join('')
-    + `<button class="chip" disabled title="Four types wait for a story">+4 ${term('WAIT', 'waiting')}</button>`;
+    + `<button class="chip" disabled title="Three types wait for a story">+3 ${term('WAIT', 'waiting')}</button>`;
   const pls = [...new Set(D.entries.flatMap(e => e.places || []))];
   $('#fPlace').innerHTML = '<option value="">all</option>' + pls.map(p => `<option value="${esc(p)}">${esc(D.places[p]?.name || p)}</option>`).join('');
   const grs = [...new Set(D.entries.flatMap(e => e.groups || []))];

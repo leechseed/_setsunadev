@@ -124,7 +124,9 @@ cables:
 world:
   - {id: backstory_skeeter_creek_founding, m: backstory, label: Skeeter Creek founded, dcus_name: Skeeter Creek}
   - {id: backstory_red_hills_rename, m: backstory, label: Renamed Red Hills, dcus_name: Red Hills Academy}
+  - {id: backstory_narco_republic_rises, m: backstory, label: "The Narco Republic rises ⧗ (era 1)"}
   - {id: backstory_dcus_rebrand, m: backstory, label: "Bishops rebrand: DCUS", dcus_name: DCUS}
+  - {id: backstory_south_pole_third_impact, m: backstory, label: "The south-pole 3rd impact wakes the Kudzu ⧗ (era 2)"}
   - {id: m1b_race_arrest, m: M1, label: "The finish-line arrest ⧗ (before the crash)"}
   - {id: m1b_crash_jebb_death, m: M1, label: "The crash · Jebb dies"}
   - {id: m2_grief_outbursts, m: M2, label: Grief outbursts (repeat)}

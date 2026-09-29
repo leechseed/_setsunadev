@@ -30,7 +30,7 @@ REPO = 'https://github.com/leechseed/_setsunadev/blob/main/'
 ERAS = ['backstory', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6']
 SCALES = {'world-economy', 'nation-state', 'locality'}
 
-# ruled 9/29 (call 4 "Eight"): the open types; the other four wait for a story
+# ruled 9/29 (call 4 "Eight"; BIO opened 9/29 for the Kudzu): the open types; the rest wait for a story
 TYPES = {
     'GRP': ('Groups', 'A body of people with a shared identity, rule and edge: clan, class, faction, nation, species. The faction card stays in 03; the entry links to it.'),
     'ARC': ('Architecture', 'A reusable way of building, with its materials and what it says about its makers. One building\'s fabric stays in 03 S1 BODY.'),
@@ -40,8 +40,9 @@ TYPES = {
     'INS': ('Institutions', 'A standing body or form of authority: a court, a school board, a guild, a standards body.'),
     'BEL': ('Beliefs', 'A religion, folk belief, cult, myth or philosophy, including the hidden layer under the public one.'),
     'FSU': ('Food & substances', 'What people eat, drink and take, and the system that supplies it.'),
+    'BIO': ('Creatures', 'A kind of animal, plant or non-human being, with where it fits in the food web. Opened 9/29 for the Kudzu.'),
 }
-WAITING = {'ECO': 'Goods, money and trade', 'LNG': 'Language and naming', 'BIO': 'Creatures and flora', 'RUL': 'World rules'}
+WAITING = {'ECO': 'Goods, money and trade', 'LNG': 'Language and naming', 'RUL': 'World rules'}
 
 INFRA = [  # I1–I10 → which catalog types (or other systems) answer for it
     ('I1', 'Space', 'Geography, climate, terrain, borders, settlements.', ['03']),
