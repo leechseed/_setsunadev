@@ -206,7 +206,7 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 2. **An uncontrolled axial region (chokepoint, orbital ring, single habitable world) tends toward domination unless someone deliberately neutralizes it.** Control is never neutral by default.
 3. **Frontiers generate conflict by structure, not by author choice.** Weak property claims plus core/periphery power asymmetry produces violence in any open system.
 4. **Enclosed, fragile habitats default to technocratic hierarchy.** The tighter the coupling between political dissent and catastrophic failure, the harder political freedom becomes to sustain.
-5. **Dissimilar polities — by species, technology, or circumstance — conflict more and cooperate less.** Divergence (biological, cybernetic, or merely cultural) is itself a geopolitical fact, not set dressing.
+5. **Dissimilar polities, by species, technology, or circumstance, conflict more and cooperate less.** Divergence (biological, cybernetic, or merely cultural) is itself a geopolitical fact, not set dressing.
 6. **Every "solution from space" presupposes a prior definition of the Earth problem it solves.** A faction's stated space policy always reveals its politics about the home world first.
 7. **Success enlarges danger faster than institutions can restrain it.** The gravest outcomes in this book come from expansion working, not from it failing.
 
