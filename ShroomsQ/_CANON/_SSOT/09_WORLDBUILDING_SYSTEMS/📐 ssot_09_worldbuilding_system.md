@@ -1,10 +1,10 @@
 ---
 type: ssot_09_worldbuilding_systems
 category: worldbuilding_system
-version: 0.2.0
+version: 1.0.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, MOON/SAGA, all future IPs]
-status: "RULED 2026-09-29 (Chief, 'all recommended'): OPEN 1–7 as recommended; 8–9 closed by the CDR. The catalog is live (8 types open, 11 stubs); the world view's first build is published. Entries stay ⧗ until filled."
+status: "1.0 — RULED 2026-09-29 (Chief, \"run the recs\"): clears the six-part 1.0 bar (SOP §5). Catalog proved on DCUS (7 filled, 5 stubs, 1 retired); world view second build reads 02 · 03 · 04 · 08 · tropes; the lens ran (script 7 + reader 9, no fails). Entries stay ⧗ until narrated."
 purpose: "THE WORLDBUILDING SYSTEM — the definition of a world (its infrastructures, its coherence tests, the compiler that reads every system into one world view) plus the CATALOG it owns: the shared things of a world (groups, styles, customs, tech, food, institutions) that no other system holds."
 dependencies: ["ssot_03_setting_system (v1.5.0, places)", "ssot_02_character_systems (people)", "ssot_08_tracking_system (v0.2.0, state over time)", "ssot_04_fabula / ssot_04_plot_system (origin events)", "ssot_01_trope_register (BOLO 89 layer)"]
 trunk: BLACK
@@ -319,7 +319,7 @@ Named from the canon nodes; none is filled. Each is a stub to be created only wh
 | ASTRO7EX Space Cuisine (three rows) ⧗ | FSU | `astro7ex-space-cuisine-seed.md` |
 | The moon societies (May 2024) ⧗ | GRP | `moon-saga-seed.md` ("The societies of the moon") |
 | The MOON/SAGA Civ table (Jul 2025) ⧗ | GRP | `moon-saga-seed.md` ("The Civ table") |
-| Tremor Cult ⧗ | BEL | `tremor-cult-seed.md` |
+| ~~Tremor Cult~~ RETIRED 9/29 | BEL | `tremor-cult-seed.md`: a story (01 registry `tremor_cult`), not a belief |
 | Sync Cult (held) ⧗ | BEL | `ssot_03_setting_system.md` (DCUS faction cards, "held") |
 
 ---
@@ -338,6 +338,30 @@ The **world view** is the compiled, read-only page. A script reads 02, 03, 04, 0
 **Filters:** era (the 08 time code) · place (03 `place_id`) · group (GRP id) · type (type code). Era and place are the two that every other system already keys on.
 
 **Edits happen at the owning file.** Each row links to the file that owns the fact: a catalog entry to its file, a place to its 03 slice, a person to their 02 record, a change to its 08 story point. The world view has no input fields. The read-only rule is what keeps it a view ⧗ and not a second store.
+
+---
+
+## THE PROOF — DCUS (1.0, 2026-09-29)
+
+The catalog proved itself on DCUS the way 03 did: filled from canon on the first pass, every inference marked ⧗.
+
+| Entry | Type | Era | Origin | Rung |
+|---|---|---|---|---|
+| WB-INS-0001 The Administration | INS | backstory → M4 | backstory_dcus_rebrand ⧗ | nation-state ⧗ |
+| WB-GRP-0001 The Bishops | GRP | backstory → M4 | backstory_dcus_rebrand | locality |
+| WB-INS-0002 Delta Coast Ultra School (institution) | INS | backstory → M4 | backstory_dcus_rebrand | locality |
+| WB-ARC-0001 Southern Gothic prestige brick | ARC | backstory → M4 | backstory_skeeter_creek_founding | locality |
+| WB-CUS-0001 The Star-Rating (ritual life) | CUS | M2 → M4 | backstory_dcus_rebrand ⧗ | locality |
+| WB-TEC-0001 The Feed (DCUS) | TEC | M2 → M4 | backstory_dcus_rebrand ⧗ | locality |
+| WB-WDR-0001 Feed-linked clothing | WDR | M2 → M4 | none in canon | locality |
+
+**What the proof found.** Tremor Cult was misfiled as a belief; it is a story (01 registry) and its entry is retired, id never reused. Quinn Bishop has no 02 node yet: the L02 link check reports it as owed by 02, not a 09 failure. Every era ends at M4 because canon casts DCUS for Movements 2–4.
+
+**State ids.** `state:` names the entry's 08 subject as `<kind>:<slug>`: `place:` · `group:` · `belief:` · `custom:` · `tech:` · `wardrobe:` · `architecture:`. A subject need not have story points yet.
+
+**The lens, run 9/29.** Script tests: CT1 pass · CT3 pass on the filled set · CT4 no ruins yet · CT5 pass on the filled set · CT6 pass on the filled set · CT9 no canon claims yet · CT13 pass; link checks pass, L02 owed. Reader tests (a PS, by reading): CT10 · CT11 · CT14 · CT16 pass; CT2 · CT7 · CT8 · CT12 · CT15 stub (narration-blocked, or no departure scored yet). No fails. Stubs on the non-DCUS entries read "stub", never "fail".
+
+**The 1.0 bar (SOP §5).** Shape ✓ · Shelf ✓ (27 books) · Proof ✓ (DCUS) · Ruled ✓ (OPEN 1–9) · Wired ✓ (02 · 03 · 04 · 08 · tropes) · Store ✓ (7 filled).
 
 ---
 
@@ -402,6 +426,8 @@ Each call has one rec. The Chief rules in one word.
 ---
 
 ## Version history
+
+- **1.0.0 · 2026-09-29** · "09 to 1.0" (Chief: "run the recs"). The 1.0 bar ruled into SOP §5. THE PROOF — DCUS added: seven entries filled from canon on an MS (three of them new: ARC, CUS, TEC). The world view compiler's second build reads 02 nodes, 04 fabula events, 08 tracking story points and the trope register; runs CT1 · CT3 · CT4 · CT5 · CT6 · CT9 · CT13 plus four link checks; folds in the reader tests. Tremor Cult entry retired (a story). State-id convention written.
 
 - **0.2.0 · 2026-09-29** · OPEN 1–7 RULED as recommended (Chief: "all recommended"): the vocabulary adopted (SOP §5) · Fabula/Told renamed views in the plot workspace (`_tools/workspace/build.py`, labels only) · the faction card stays in 03, catalog entries link · eight types open (GRP ARC WDR CUS TEC INS BEL FSU) · `catalog/<TYPE>/<id>.md` with a generated `_INDEX.md` · the thin compiler `_tools/worldview/build.py` → the world view https://claude.ai/artifact/867xamh5LuEnqDegBdJoGa · `WB-<TYPE>-<nnnn>` ids. Eleven stubs seeded (the ten named plus WB-WDR-0001 Feed-linked clothing, from 03 DCUS S3/S4). OPEN 8 (Wolf) and 9 (05/06) closed by the CDR.
 

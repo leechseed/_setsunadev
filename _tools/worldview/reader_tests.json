@@ -1,0 +1,65 @@
+[
+  {
+    "id": "CT2",
+    "name": "Geography feeds economy",
+    "verdict": "stub",
+    "note": "WB-ARC-0001 names habitat materials (century brick, moss, kudzu) correctly. DCUS's S6 ECONOMY describes acquisition capital and ownership war, not resources the place supplies to the wider economy; institution-type entries describe internal systems, not economic output.",
+    "rec": ""
+  },
+  {
+    "id": "CT7",
+    "name": "Departure consistency",
+    "verdict": "stub",
+    "note": "Departures exist (Feed signal, Star-Rating measurement, Administration governance) but none are scored on the nine axes. Scoring required to verify consistency.",
+    "rec": ""
+  },
+  {
+    "id": "CT8",
+    "name": "Distinctiveness",
+    "verdict": "stub",
+    "note": "WB-CUS-0001 names a planned onstage scene (m2_first_sync_verified) but it is not yet narrated. Until entries appear in narrated scenes, pressure vs. scenery distinction cannot be checked.",
+    "rec": ""
+  },
+  {
+    "id": "CT10",
+    "name": "Compossibility and retcon cost",
+    "verdict": "pass",
+    "note": "Seven new entries cross-check cleanly: WB-INS-0001 and WB-INS-0002 both point at WB-GRP-0001; WB-WDR-0001, WB-CUS-0001, WB-TEC-0001 all point at WB-INS-0001; WB-ARC-0001 points at WB-INS-0002. No contradictions. Retcon cost cannot be checked until entries are narrated.",
+    "rec": ""
+  },
+  {
+    "id": "CT11",
+    "name": "Reinforcement",
+    "verdict": "pass",
+    "note": "Mechanics (WB-TEC-0001 Feed measurement, WB-CUS-0001 Star-Rating verification, WB-INS-0001 issued legitimacy) embody the mechanism line 'trains you, measures you, calls the result your nature.' Environment (WB-ARC-0001 prestige-retrofit, S3 palette descent clean→NEON-ROT, S2 cooled-building split) embodies Inequity. Narrative (Victoria's Growth Stop, invariant 'rating rises when memory goes missing') points at the controlling idea 'nobody has to be evil when everyone does their job.' All three reinforce biopower theme.",
+    "rec": ""
+  },
+  {
+    "id": "CT12",
+    "name": "Honest consequence",
+    "verdict": "stub",
+    "note": "Rules are stated (WB-INS-0001 legitimacy by verification; WB-CUS-0001 invariant no rating rises without memory loss) but their consequences cannot be verified without narrated scenes showing the rules in play.",
+    "rec": ""
+  },
+  {
+    "id": "CT14",
+    "name": "Referential density",
+    "verdict": "pass",
+    "note": "DCUS (story center) is dense: 7 filled entries plus full 12-layer slice in 03. Every other place and type is stub or unfilled. The world feels complete at center without full build-out, matching the rule.",
+    "rec": ""
+  },
+  {
+    "id": "CT15",
+    "name": "What a character knows",
+    "verdict": "stub",
+    "note": "CT15 is a character-system rule checking what individuals know. Catalog entries describe shared world things (groups, customs, tech), not character knowledge. The rule cannot be checked on catalog data; it belongs to 02.",
+    "rec": ""
+  },
+  {
+    "id": "CT16",
+    "name": "Tension generator",
+    "verdict": "pass",
+    "note": "Filled entries describe systems that create built-in pressures: WB-TEC-0001 (constant measurement via Feed), WB-INS-0001 (legitimacy issued not earned), WB-CUS-0001 (live scoring and memory cost), WB-ARC-0001 (false prestige). These pressures are ready for scenes to use.",
+    "rec": ""
+  }
+]
