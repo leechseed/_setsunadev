@@ -25,19 +25,19 @@ feeds:
   - layer: L9
     variable: intimacy_practice
     strength: primary
-    note: "Empathic communication (verbal + touch, given and received) is the operating mechanism that actually crosses Perel's (MSX.17) separateness gap — this book supplies the how where Perel supplies the why."
+    note: "Empathic communication (verbal + touch, given and received) is the operating mechanism that actually crosses Perel's (MSX.17) separateness gap: this book supplies the how where Perel supplies the why."
   - layer: L6
     variable: drive_texture
     strength: supporting
-    note: "Orgasm and intercourse are minor, dispensable components; the drive underneath magnificent sex is presence and connection, not genital release — reframes what a character's sexual want is actually for."
+    note: "Orgasm and intercourse are minor, dispensable components; the drive underneath magnificent sex is presence and connection, not genital release. Reframes what a character's sexual want is actually for."
   - layer: L11
     variable: sexual_maturation_arc
     strength: primary
-    note: "'Great lovers are made, not born' — the book's central developmental claim. Optimal sex is reached by unlearning shame and normative scripts, most commonly discovered in midlife, never handed down by youth or beauty."
+    note: "'Great lovers are made, not born': the book's central developmental claim. Optimal sex is reached by unlearning shame and normative scripts, most commonly discovered in midlife, never handed down by youth or beauty."
   - layer: L8
     variable: vulnerability_capacity
     strength: supporting
-    note: "Surrender and being 'emotionally naked in full view of another' is a named component, not a byproduct — a character's tolerance for exposure gates their access to the erotic register."
+    note: "Surrender and being 'emotionally naked in full view of another' is a named component, not a byproduct. A character's tolerance for exposure gates their access to the erotic register."
 zotero_key: "BT7IDPQH"
 pdf_pages: 230
 status: complete
@@ -66,7 +66,7 @@ The largest phenomenological interview study of people having extraordinary sex 
 
 ## 1 · CORE THESIS
 
-Magnificent sex is eight learnable components — led by presence, connection, and empathic communication — not a body in the right position. Genitals, intercourse, and orgasm are minor and dispensable. Great lovers are made, not born: optimal sex is built through deliberate unlearning and relational risk, most often discovered at midlife.
+Magnificent sex is eight learnable components, led by presence, connection, and empathic communication, not a body in the right position. Genitals, intercourse, and orgasm are minor and dispensable. Great lovers are made, not born: optimal sex is built through deliberate unlearning and relational risk, most often discovered at midlife.
 
 ---
 
@@ -75,7 +75,7 @@ Magnificent sex is eight learnable components — led by presence, connection, a
 *Required. Minimum two diagrams, maximum five.*
 
 **Diagram 1 — the whole argument.**
-Caption: *eight major components dwarf the minor, physical ones — the book's real surprise is how little genitals and orgasm matter to the people actually having the best sex of their lives.*
+Caption: *eight major components dwarf the minor, physical ones: the book's real surprise is how little genitals and orgasm matter to the people actually having the best sex of their lives.*
 
 ```mermaid
 mindmap
@@ -106,7 +106,7 @@ mindmap
 ```
 
 **Diagram 2 — the central mechanism (a state change: dread versus anticipation).**
-Caption: *the same feedback loop runs in both directions — the quality of last time, not the frequency of sex, decides whether next time is dreaded or wanted.*
+Caption: *the same feedback loop runs in both directions: the quality of last time, not the frequency of sex, decides whether next time is dreaded or wanted.*
 
 ```mermaid
 flowchart TD
@@ -123,7 +123,7 @@ flowchart TD
 ```
 
 **Diagram 3 — mapped onto the Command's 12-layer character stack.**
-Caption: *the book's four contributing-factor chapters land on four different layers — this is a character's sex life built in parts, not one dial.*
+Caption: *the book's four contributing-factor chapters land on four different layers: this is a character's sex life built in parts, not one dial.*
 
 ```mermaid
 flowchart LR
@@ -141,12 +141,12 @@ A phenomenological interview study (descriptive, discovery-oriented, not hypothe
 
 | Part | Chapters | Governing question |
 |---|---|---|
-| I — Introduction | 1 | How and why was this studied, and who counts as an expert on great sex? |
-| II — Components | 2–3 | What *is* magnificent sex, and how does it differ from the media myth? |
-| III — Contributing Factors | 4–12 | What brings magnificent sex about, across development, preparation, individual and relational qualities, skills, and the pathways lovers actually take? |
-| IV — Implications | 13–14 | What does this mean for lovers and for sex therapy, especially around low desire? |
+| I, Introduction | 1 | How and why was this studied, and who counts as an expert on great sex? |
+| II, Components | 2–3 | What *is* magnificent sex, and how does it differ from the media myth? |
+| III, Contributing Factors | 4–12 | What brings magnificent sex about, across development, preparation, individual and relational qualities, skills, and the pathways lovers actually take? |
+| IV, Implications | 13–14 | What does this mean for lovers and for sex therapy, especially around low desire? |
 
-Participants: 30 individuals over 60 in relationships of 25+ years, 25 self-identified sexual-minority individuals (LGBTQ, kink, poly), and 20 sex therapists — recruited because each group had been forced, by age, marginalization, or profession, to think outside normative sex scripts. Masked-transcript analysis found the research team could not distinguish participants by sex, age, or kink status — but could reliably spot the sex-therapist transcripts, which skewed pessimistic about long-term desire.
+Participants: 30 individuals over 60 in relationships of 25+ years, 25 self-identified sexual-minority individuals (LGBTQ, kink, poly), and 20 sex therapists, recruited because each group had been forced, by age, marginalization, or profession, to think outside normative sex scripts. Masked-transcript analysis found the research team could not distinguish participants by sex, age, or kink status, but could reliably spot the sex-therapist transcripts, which skewed pessimistic about long-term desire.
 
 ---
 
