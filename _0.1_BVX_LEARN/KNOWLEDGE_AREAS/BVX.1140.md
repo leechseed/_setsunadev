@@ -53,7 +53,7 @@ date_created: 2026-09-29
 # BVX.1140 — Worlds Without Number (Free Edition) — Kevin Crawford (2021)
 ### Knowledge Entry — Distill
 
-A fantasy OSR core rulebook whose middle third is a system-neutral GM toolbox for building a sandbox campaign top-down, generating ruins and dungeons with a repeatable method, and keeping the world moving between sessions with a faction-turn engine; read for the world/region/kingdom, adventure-creation, and faction chapters, not character or combat rules.
+A fantasy OSR core rulebook whose middle third is a system-neutral GM toolbox for building a sandbox campaign top-down and keeping the world moving with a faction-turn engine; read for the world/region/kingdom, adventure-creation, and faction chapters, not character or combat rules.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -152,7 +152,7 @@ flowchart TD
 ```
 
 **Diagram 5 — mapped onto the Command's SETTING SLICE (S1–S12).**
-Caption: *six of twelve layers land on a named procedure, not an inference; the faction turn is the one piece that reaches past SETTING into plot_systems.*
+Caption: *seven of twelve layers land on a named procedure, not an inference; the faction turn is the one piece that reaches past SETTING into plot_systems.*
 
 ```mermaid
 flowchart LR
@@ -175,10 +175,10 @@ The free edition's GM-facing content sits in four chapters, one of them a worked
 
 | Chapter | Scale | Governing content |
 |---|---|---|
-| The World of the Latter Earth | World (worked instance) | A single worked setting, the Gyre: nations, epochs, and peoples proving the backdrop method holds up at full scale; sampled for structure, not deep-extracted for lore |
-| Creating Your Campaign | World → Region → Kingdom | The three-level top-down backdrop; geography, nation, society, government, history, and religion construction; Location Tags (Community, Court, Ruin, Wilderness); ruin placement |
-| Creating Adventures | Session | Sandbox vs. story arc; the four challenge types (combat, exploration, investigation, social); the nine-step exploration-site method; hex points of interest; just-in-time prep |
-| Factions and Major Projects | Between-session | Faction attributes (Cunning, Force, Wealth, Magic) and Assets; the faction-turn sequence and its six actions; Background Actors; Major Projects and Renown for PC-scale ambitions |
+| The World of the Latter Earth | World (worked instance) | The Gyre: nations, epochs, peoples, proving the backdrop method at full scale; sampled for structure, not lore |
+| Creating Your Campaign | World → Region → Kingdom | The three-level backdrop; geography, nation, society, government, history, religion; Location Tags; ruin placement |
+| Creating Adventures | Session | Sandbox vs. story arc; four challenge types; the nine-step exploration-site method; hex points of interest; just-in-time prep |
+| Factions and Major Projects | Between-session | Faction attributes and Assets; the turn sequence and its six actions; Background Actors; Major Projects and Renown |
 
 The chapter order mirrors the play order: backdrop before the first session, one adventure at a time as players choose, faction turn in the gaps to keep everything else moving.
 
@@ -208,50 +208,50 @@ The chapter order mirrors the play order: backdrop before the first session, one
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Starting a new setting from scratch | Build world → region → kingdom, spending effort only as you descend | Draw a finished continental map before the first session exists |
-| Deciding whether to build something | Ask "will I need this for the very next session?" | Ask "could this be useful someday?" |
-| Placing ruins or wastelands on a map | Put them in the empty spaces between trade routes, with a sentence of context each | Scatter them anywhere and invent a full civilization for each one |
-| Fleshing out a ruin | Fix what it was, how it fell, who has used it since, and why it isn't picked clean | Roll a monster table and call the result a finished dungeon |
-| Building a government | Pick one governmental density so you know what force a ruler can muster | Design a full org chart of ministries no one will ever consult |
-| Writing a nation's or a family's history | Run origin → rise → peak → fall, a sentence or two per stage | Draft a decade-by-decade chronicle nobody at the table will read |
-| Characterizing a site fast | Roll or pick two Tags and synthesize their Enemies, Friends, and Things | Invent every NPC and hook from a blank page each time |
-| Running an exploration or hexcrawl | Use the abstract room/hex map; exact distances and corridors are optional | Hand-draw a full graph-paper dungeon before session one |
-| Keeping the world moving between sessions | Run a rough faction turn on roughly a monthly clock | Leave every NPC power frozen in place until the PCs happen by |
+| Starting a new setting from scratch | Build world → region → kingdom, effort only as you descend | Draw a finished continental map first |
+| Deciding whether to build something | Ask "will I need this next session?" | Ask "could this be useful someday?" |
+| Placing ruins or wastelands on a map | Put them in the gaps between trade routes, one sentence of context each | Scatter them anywhere with a full invented civilization |
+| Fleshing out a ruin | Fix what it was, how it fell, who's used it since, why it isn't picked clean | Roll a monster table and call it done |
+| Building a government | Pick one governmental density so you know what force a ruler can muster | Design a full org chart no one consults |
+| Writing a history | Run origin → rise → peak → fall, a sentence or two per stage | Draft a decade-by-decade chronicle nobody reads |
+| Characterizing a site fast | Pick two Tags and synthesize their Enemies, Friends, and Things | Invent every NPC and hook from a blank page |
+| Running an exploration or hexcrawl | Use the abstract room/hex map; distances are optional | Hand-draw a full graph-paper dungeon first |
+| Keeping the world moving between sessions | Run a rough faction turn on a monthly clock | Leave every NPC power frozen until the PCs arrive |
 
 ---
 
 ## 6 · INVARIANTS
 
-1. **Detail is budgeted by distance from actual play.** The level closest to next session's table gets full development; everything farther out gets a name and a sentence.
-2. **A ruin needs a builder and a fall, or it is inert.** Context, not monster density, is what makes a dungeon usable.
+1. **Detail is budgeted by distance from actual play.** The level closest to next session gets full development; everything farther out gets a name and a sentence.
+2. **A ruin needs a builder and a fall, or it is inert.** Context, not monster density, makes a dungeon usable.
 3. **Geography and history exist to generate adventure hooks, not to document a world.** A fact with no play consequence is recreation, not preparation.
-4. **A sandbox campaign only ever needs to be one session ahead of the players.** Deeper prep is optional indulgence, not a requirement.
+4. **A sandbox campaign only ever needs to be one session ahead of the players.** Deeper prep is optional indulgence.
 5. **A government, court, or faction is defined by what someone in it wants**, never by simply existing as a label.
-6. **A tracked faction or background actor keeps moving on its own clock**, whether or not the PCs are present to see it.
-7. **Two synthesized Tags beat one invented trope.** The combination, not either half alone, produces a specific, non-generic hook.
+6. **A tracked faction or background actor keeps moving on its own clock**, whether or not the PCs are watching.
+7. **Two synthesized Tags beat one invented trope.** The combination, not either half alone, produces a specific hook.
 
 ---
 
 ## 7 · PITFALLS / MYTHS
 
 - Building a fully detailed world or continent before running the first session, recreational worldbuilding mistaken for preparation.
-- Placing a dungeon or magic hole in the ground with no builder, no fall, and no current inhabitant, exactly the failure the ruin-context method exists to prevent.
-- Packing every dungeon room with a monster or a treasure, leaving no calm rooms to set the danger in relief.
-- Forcing a combat, social, or exploration challenge toward a predetermined outcome instead of letting the PCs' choices decide it.
-- Fully developing every wilderness hex or every ruin in a region before the players ever reach it, instead of just-in-time prep on commitment.
-- Treating a government as a single label like "monarchy" instead of the separable dials (density, ruling class, legitimacy, enforcer) that actually predict its behavior.
-- Letting factions and background actors sit static between sessions, then improvising a motive on the spot when a player asks what they have been doing.
+- Placing a dungeon with no builder, no fall, and no current inhabitant, exactly the failure the ruin-context method prevents.
+- Packing every dungeon room with a monster or treasure, leaving no calm rooms to set the danger in relief.
+- Forcing a challenge toward a predetermined outcome instead of letting the PCs' choices decide it.
+- Fully developing every hex or ruin before the players reach it, instead of just-in-time prep on commitment.
+- Treating a government as one label like "monarchy" instead of separable dials that actually predict its behavior.
+- Letting factions sit static between sessions, then improvising a motive on the spot when a player asks what they've been doing.
 
 ---
 
 ## 8 · APPLICATION
 
-- **Spine level:** SETTING (non-story-spine source, per ssot_03's binding rule that setting is a Domain embodied, never an L0–L7 level)
-- **12-layer character stack:** none directly; the Tags' five-part synthesis (Enemy/Friend/Complication/Thing/Place) is structurally the same combinatorial move as pairing two character layers to produce one specific scene beat, but this source stays setting-side
-- **plot_systems:** primary candidate once `04_PLOT_SYSTEMS/` opens; the faction turn (four attributes, Assets, a six-action monthly cycle) and Major Projects/Renown (difficulty = probability × scope × opposition) are both numeric, GM-run engines for off-screen world motion, a direct sibling to the Scheme mechanism already flagged from BVX.1142 for the same slot
-- **Setting:** primary; lands on six of twelve S-layers at primary or supporting strength (S1, S4, S5, S6, S7, S8, S11), the SETTING shelf's clearest source yet for the LAW and SCAR layers specifically
+- **Spine level:** SETTING (a Domain embodied, per ssot_03's binding rule, never an L0–L7 level)
+- **12-layer character stack:** none directly; the Tags' five-part synthesis is the same combinatorial move as pairing two character layers, but this source stays setting-side
+- **plot_systems:** primary candidate once `04_PLOT_SYSTEMS/` opens; the faction turn and Major Projects/Renown are numeric, GM-run engines for off-screen world motion, a sibling to BVX.1142's Scheme mechanism for the same slot
+- **Setting:** primary; lands on seven of twelve S-layers (S1, S4, S5, S6, S7, S8, S11), the shelf's clearest source yet for LAW and SCAR
 
-Tested against DCUS in `ssot_03_setting_system.md`: the ruin-context method is the same shape as DCUS's S5 SCAR rename lattice (Skeeter Creek to Red Hills to DCUS) run at institutional scale, and argues for stating that history in exactly four beats rather than a longer chronicle. Governmental density gives the Administration's S4 LAW record a concrete dial: DCUS reads high-density (a bureaucratic OS, the Star-Rating, enforced legibility), which predicts how fast and how bureaucratically it should respond to PC-scale disruption. The origin-rise-peak-fall pattern reinforces Baur's present-tense-history rule from BVX.0458: DCUS's century of prestige only needs the beats that bite the active Movement. The single most exportable idea, though, is the **Tags five-part synthesis**: any two named tropes, blended across Enemy, Friend, Complication, Thing, and Place, generate a specific, non-generic hook on demand, a direct answer to Kennedy's kitchen-sink challenge (BVX.0349) that neither Cities Without Number's Schemes (BVX.1142) nor Midgard's region template (BVX.1138) offer in this combinatorial a form.
+Tested against DCUS in `ssot_03_setting_system.md`: the ruin-context method is the same shape as DCUS's S5 SCAR rename lattice (Skeeter Creek to Red Hills to DCUS) run at institutional scale, and argues for stating that history in four beats, not a longer chronicle. Governmental density gives S4 LAW a concrete dial: DCUS reads high-density (a bureaucratic OS, the Star-Rating, enforced legibility), predicting how fast it should respond to PC-scale disruption. The origin-rise-peak-fall pattern reinforces Baur's present-tense-history rule (BVX.0458): DCUS's century of prestige only needs the beats that bite the active Movement. The single most exportable idea, though, is the **Tags five-part synthesis**: any two named tropes, blended across Enemy, Friend, Complication, Thing, and Place, generate a specific hook on demand, a direct answer to Kennedy's kitchen-sink challenge (BVX.0349) that neither BVX.1142's Schemes nor BVX.1138's region template offer in this combinatorial a form.
 
 ---
 
@@ -259,19 +259,19 @@ Tested against DCUS in `ssot_03_setting_system.md`: the ruin-context method is t
 
 | Related entry | Relation |
 |---|---|
-| [[BVX.0458]] | Kobold Guide to Worldbuilding — the craft-book counterpart; this book's present-tense four-stage history and governmental-density dial are Baur's rules turned into runnable procedures |
-| [[BVX.1142]] | Cities Without Number (Free Edition) — closest sibling, same author, same free-edition GM-toolbox structure; its Schemes and this book's Faction Turn are the same progress-tracking move in different skins, and both propose the same `plot_systems` slot |
-| [[BVX.1138]] | Midgard Campaign Setting — a finished worked instance rather than a generator; where Midgard proves one region template run many times, this book supplies the generator Midgard's template could have been built from |
-| [[BVX.1139]] | Shadows over Vathak Campaign Setting — its Trust score and this book's faction Assets/Treasure are the same move, a trackable number standing in for GM fiat about standing or motion |
-| [[BVX.0349]] | Kennedy, *Against Worldbuilding* — the kitchen-sink counter-argument; the Golden Rule of Preparation and just-in-time site prep are this book's own worked answer to Kennedy's warning |
+| [[BVX.0458]] | Kobold Guide to Worldbuilding — the craft-book counterpart; this book's four-stage history and governmental-density dial are Baur's rules turned into runnable procedures |
+| [[BVX.1142]] | Cities Without Number (Free Edition) — closest sibling, same author and structure; its Schemes and this book's Faction Turn are the same progress-tracking move, and both propose the same `plot_systems` slot |
+| [[BVX.1138]] | Midgard Campaign Setting — a finished instance, not a generator; Midgard proves one region template run many times, this book supplies a generator like the one it could have been built from |
+| [[BVX.1139]] | Shadows over Vathak Campaign Setting — its Trust score and this book's faction Assets/Treasure are the same move, a trackable number standing in for GM fiat |
+| [[BVX.0349]] | Kennedy, *Against Worldbuilding* — the kitchen-sink counter-argument; the Golden Rule of Preparation and just-in-time prep are this book's worked answer |
 
 ---
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text, pdftotext extraction, 346-page free edition. Read in full or near-full: the opening fiction; Creating Your Campaign through An Overview of Creation, Planning Your Work, the Golden Rule of Preparation, Building Your Backdrop (World/Region/Kingdom), Geography Construction, Nation Construction (borders, population, urbanization, city placement, marking wastelands), Society Construction's framing, Government Construction in full, History Construction in full, the opening of Religion Construction, Placing/Establishing Ruins in full, the Tags framing section, the Courts framing section, One-Roll Ruin Generation in full, and the Wilderness framing sections. Creating Adventures read through Planning and Running Adventures, Creating Exploration Challenges in full (all nine steps plus Hex Points of Interest), and the opening of Combat Challenges for contrast. Factions and Major Projects read through the Faction Turn, Faction Tags, Faction Turn Actions, Creating Factions, Background Actors, and Major Projects and Party Goals.
+Full text, pdftotext extraction, 346-page free edition. Read in full or near-full: the opening fiction; Creating Your Campaign through Planning Your Work, the Golden Rule of Preparation, Building Your Backdrop (World/Region/Kingdom), Geography Construction, Nation Construction, Government Construction in full, History Construction in full, Placing/Establishing Ruins in full, the Tags and Courts framing sections, One-Roll Ruin Generation in full, and the Wilderness framing. Creating Adventures read through Planning and Running Adventures and Creating Exploration Challenges in full (all nine steps plus Hex Points of Interest). Factions and Major Projects read through the Faction Turn, Faction Tags, Faction Turn Actions, Creating Factions, Background Actors, and Major Projects and Party Goals.
 
-Sampled at heading level only: The World of the Latter Earth (the Gyre's write-ups, read as a worked instance, not method); the bulk of the Tag catalogs past their framing; Character Creation, Rules of the Game, Magic; Combat/Investigation/Social Challenges past their opening; treasure and magic-item tables; Creatures of a Far Age (out of scope for a setting distill); the faction Asset catalogs past their framing; Using This Game in Other Settings.
+Sampled at heading level only: The World of the Latter Earth (a worked instance, not method); the bulk of the Tag catalogs past their framing; Character Creation, Rules of the Game, Magic; Combat/Investigation/Social Challenges; treasure tables; Creatures of a Far Age (out of scope for a setting distill); faction Asset catalogs past their framing; Using This Game in Other Settings.
 
 The S-layer keying in `feeds:` and Diagram 5 is this distill's synthesis against `ssot_03_setting_system.md`'s twelve-layer schema, following the method BVX.0458, BVX.1138, BVX.1139, and BVX.1142 already set for this shelf. `bvx_provisional: true` reflects a first-pass id assignment with no Zotero key yet on file.
 

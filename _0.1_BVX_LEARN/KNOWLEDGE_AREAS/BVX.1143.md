@@ -57,7 +57,7 @@ date_created: 2026-09-29
 # BVX.1143 — The Ultimate RPG Game Master's Worldbuilding Guide — James D'Amato (2020)
 ### Knowledge Entry — Distill
 
-A GM-facing exercise workbook (30+ games and thought exercises across Fantasy, Sci-Fi, Horror, X-Punk, and Neutral chapters) that runs one reusable generation mechanism — axis decomposition plus forced ranking — against geography, culture, religion, economy, and history in turn; the SETTING shelf's second toolkit entry, companion and counterweight to Kobold (BVX.0458).
+A GM-facing exercise workbook (30+ games and thought exercises across Fantasy, Sci-Fi, Horror, X-Punk, and Neutral chapters) that runs one reusable mechanism, axis decomposition plus forced ranking, against geography, culture, religion, economy, and history in turn; the SETTING shelf's second toolkit entry, companion to Kobold (BVX.0458).
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -171,7 +171,7 @@ Five chapters, four genre-bound and one cross-genre, each a bin of standalone ex
 | **X-Punk** | oppression, identity, resistance | tool/weapon design, self-modification, Attitude (outsiders, initiation) |
 | **Neutral** | villainy, place, city | Impregnable Except..., The Prize, Five Battles, The Bar, We Built This City |
 
-Every chapter opens with **d20 Questions** (roll once per player, answer the matching prompt — a scattershot orientation pass, not a system) and leans on three repeated tools: the **Priority System** (rank 1–5, no ties, read the text), **prompts** (open questions to answer in your own words), and **dice/card tables** (random or chosen results keyed to a suit, value, or roll). The book never states a philosophy the way Kobold's Baur does; the philosophy is implicit in which five domains keep reappearing under different genre skins — geography, culture, religion, economy, history — chapter after chapter.
+Every chapter opens with **d20 Questions** (roll once per player, answer the matching prompt) and leans on three repeated tools: the **Priority System** (rank 1–5, no ties, read the text), **prompts** (open questions), and **dice/card tables**. The book never states a philosophy the way Kobold's Baur does; the philosophy is implicit in which five domains keep reappearing under different genre skins: geography, culture, religion, economy, history.
 
 ---
 
@@ -245,17 +245,17 @@ Tested against the DCUS starter instance in `ssot_03`: Boom and Bust's origin-wo
 
 | Related entry | Relation |
 |---|---|
-| [[BVX.0458]] | Sibling SETTING-shelf toolkit; Kobold supplies the theory register (why a setting works), this book supplies the exercise-at-the-table register (how to generate one) — read together |
-| [[BVX.1122]] | GURPS Hot Spots: Renaissance Venice — a worked instance; this book is closer to the generator that could produce something like it |
-| [[BVX.1137]] | Ultraviolet Grasslands and the Black City — shares this book's dice/table-driven generation instinct, but at pointcrawl/region scale rather than per-subject axis-ranking |
-| [[BVX.1138]] | Midgard Campaign Setting — a shipped setting; candidate check for whether Five Factions- or Boom and Bust-shaped patterns already appear there informally |
-| [[BVX.0349]] | *Against Worldbuilding, and Other Provocations* — counter-argument sibling; the Priority System's forced weakness is this book's built-in answer to the charge that worldbuilding kills narrative pressure |
+| [[BVX.0458]] | Sibling SETTING-shelf toolkit. Kobold supplies the theory register (why a setting works), this book the exercise-at-the-table register (how to generate one); read together |
+| [[BVX.1122]] | GURPS Hot Spots: Renaissance Venice, a worked instance. This book is closer to the generator that could produce something like it |
+| [[BVX.1137]] | Ultraviolet Grasslands and the Black City. Shares this book's dice/table-driven generation instinct, but at pointcrawl/region scale rather than per-subject axis-ranking |
+| [[BVX.1138]] | Midgard Campaign Setting, a shipped setting. Candidate check for whether Five Factions- or Boom and Bust-shaped patterns already appear there informally |
+| [[BVX.0349]] | *Against Worldbuilding, and Other Provocations*, counter-argument sibling. The Priority System's forced weakness is this book's built-in answer to the charge that worldbuilding kills narrative pressure |
 
 ---
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text, pdftotext extraction, ~264pp (print pagination per the index), clean text layer with a legible table of contents and running index. Read in full: the introduction and "How to Use This Book"; the Fantasy chapter's Six Paths of Magic (scientific, artisan, and arcane paths in full, natural sampled, legendary and forbidden lightly sampled), One Thing to Rule Them All, Five Factions, Questover Country, and Designing a Pantheon (aspects, domain, relationships, and Following in full, including the worked Gods of the Glas Isles sample); the Sci-Fi chapter's Time to Face the Strange, How Far How Fast, It's McGuffium, and Unions; the Horror chapter's Boom and Bust in full, plus 52 Ways to Find a Body and I Wouldn't Want to Live There; the Neutral chapter's Impregnable Except..., The Prize, Five Battles, The Bar, and We Built This City in full. Sampled only (opening pages): the X-Punk chapter's tool design, self-modification, and Attitude sections, plus back matter.
+Full text, pdftotext extraction, ~264pp (print pagination per the index), clean text layer with a legible table of contents and running index. Read in full: the introduction; the Fantasy chapter's Six Paths of Magic (scientific, artisan, arcane in full, natural and legendary sampled), One Thing to Rule Them All, Five Factions, Questover Country, and Designing a Pantheon (aspects, domain, relationships, and Following, with the worked Gods of the Glas Isles sample); the Sci-Fi chapter's Time to Face the Strange, How Far How Fast, It's McGuffium, and Unions; the Horror chapter's Boom and Bust, plus 52 Ways to Find a Body and I Wouldn't Want to Live There; the Neutral chapter's Impregnable Except..., The Prize, Five Battles, The Bar, and We Built This City. Sampled only (opening pages): the X-Punk chapter's tool design, self-modification, and Attitude sections, plus back matter.
 
 The S-layer keying in `feeds:` and Diagram 4 is this distill's synthesis against `ssot_03_setting_system.md`, reading this book as a second, exercise-driven data point beside Kobold's essay-driven one. `spine: [SETTING]` and the empty character-stack line follow the v4 template's binding rule. This is a new entry (`bvx_provisional: true`), not yet in the Zotero library (a `_PDF_DROP` item, `zotero_key` left blank). Its copyright page reads 2021 (Adams Media, first printing May 2021) against the 2020 year supplied with this tasking; flagged here, not silently corrected.
 
