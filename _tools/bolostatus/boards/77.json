@@ -5,8 +5,8 @@
   "trunk": "BLACK",
   "issued": "2026-09-23",
   "asof": "2026-09-29",
-  "s": "hot",
-  "status": "Plot is the thinnest story system (about 40%, v0.2.4). Boresight 9/29 session 4: the rails, the fabula and the told order stand; what's missing is drafted prose, cards across all six movements, the genre obligation, and four unruled OPEN calls (8–11).",
+  "s": "open",
+  "status": "🟢 **PLOT 1.0.0 (9/29, 77-AC)** — OPEN 1–15 closed · P10 = cultcore + Institutionalized · a card in every movement (M1 · M4 · M5 · M6 skeletons, 167 ⧗ between them) · cultcore in the genre system (0.1.3, five ⧗ conventions). No prose in the path (77-Y). Nine story calls out for Chief, 77-AD to 77-AL.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -41,7 +41,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.13 · DOPE SHEET"
+  "version": "v0.14 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -62,8 +62,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Rule 77-Y to 77-AC, then draft the M2 grief scene (first pass, about 45 min) against its card and the tracking grid.**",
-  "default": "Silence: plot holds at 0.2.4; no prose is written.",
+  "order": "**Rule 77-AD to 77-AL; each ruling fills ⧗ on the skeleton cards.**",
+  "default": "Silence: plot stands at 1.0.0 with the skeleton cards' ⧗ fields open.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -235,53 +235,133 @@
    },
    {
     "q": "77-Y · the order of work",
-    "s": "open",
+    "s": "ruled",
     "options": [
      "prose first: draft the M2 grief scene, then widen",
      "widen first: card every movement, then draft"
     ],
     "default": "prose first",
-    "ruling": ""
+    "ruling": "RULED 2026-09-29, Chief: \"I don't want to draft.\" No prose in the 1.0 path."
    },
    {
     "q": "77-Z · P10 genre obligation for OXO",
-    "s": "open",
+    "s": "ruled",
     "options": [
      "P10 reads cultcore (the ruled series genre) with Snyder's Institutionalized as the scene-level obligation; cultcore gets 3–5 written conventions in the genre system",
      "leave P10 blank until the genre system hits 1.0"
     ],
     "default": "cultcore + Institutionalized",
-    "ruling": ""
+    "ruling": "RULED 2026-09-29 (\"1.0\"). Cultcore (series) + Institutionalized (scene); cultcore's five conventions ⧗ in ssot_01_genre_system 0.1.3."
    },
    {
     "q": "77-AA · OPEN 8–11 (repeat turn · multi-POV stacking · percentage addressing · discovery ladder)",
-    "s": "open",
+    "s": "ruled",
     "options": [
      "take all four recs, fold at the next bump",
      "rule one at a time"
     ],
     "default": "take all four",
-    "ruling": ""
+    "ruling": "RULED 2026-09-29 (\"1.0\"). All four recs folded into the plot doc 1.0.0."
    },
    {
     "q": "77-AB · widen the arc",
-    "s": "open",
+    "s": "ruled",
     "options": [
      "after the first draft, skeleton-card one scene each in M1, M4, M5, M6 so the fabula and the told order span the whole story",
      "card only as scenes get drafted"
     ],
     "default": "one skeleton card per movement",
-    "ruling": ""
+    "ruling": "RULED + DONE 2026-09-29. Skeleton cards M1 · M4 · M5 · M6 in _CANON_NODES/."
    },
    {
     "q": "77-AC · the 1.0 bar for plot",
-    "s": "open",
+    "s": "ruled",
     "options": [
      "plot 1.0 = every movement has a carded scene, one scene drafted and tracked on the grid, OPEN 1–15 closed",
      "no fixed bar"
     ],
     "default": "that bar",
-    "ruling": ""
+    "ruling": "RULED + MET 2026-09-29. Plot doc 1.0.0."
+   },
+   {
+    "q": "77-AD · P10 across movements",
+    "s": "open",
+    "options": [
+     "cultcore stays the story-level genre; the scene-level obligation varies by movement (M1 opening · M2–M3 Institutionalized · M4–M5 reversal · M6 war/attrition), ruled later",
+     "one fixed value for all six"
+    ],
+    "default": "vary by movement"
+   },
+   {
+    "q": "77-AE · Anna's presence in M4–M6",
+    "s": "open",
+    "options": [
+     "task an Anna M4–M6 presence pass (her IC signpost Memories converges with the ending)",
+     "leave her absent"
+    ],
+    "default": "task the pass"
+   },
+   {
+    "q": "77-AF · M1: the finish-line arrest",
+    "s": "open",
+    "options": [
+     "before the crash, the world's own Fairness turn",
+     "after the crash",
+     "cut"
+    ],
+    "default": "before the crash"
+   },
+   {
+    "q": "77-AG · M4: what fires the Critical Error reclassification",
+    "s": "open",
+    "options": [
+     "Chief's fact (no rec: canon is silent)"
+    ],
+    "default": "open"
+   },
+   {
+    "q": "77-AH · M4: Quinn and Riley's cyborg turn",
+    "s": "open",
+    "options": [
+     "a parallel body-horror thread crossing Tori's erasure on campus",
+     "the same event"
+    ],
+    "default": "parallel thread"
+   },
+   {
+    "q": "77-AI · M4: erasure's Freedom step",
+    "s": "open",
+    "options": [
+     "hold both readings (Tori vs the audience), the ironic charge row 9 uses",
+     "deeper Control",
+     "a bitter step to Freedom"
+    ],
+    "default": "hold both"
+   },
+   {
+    "q": "77-AJ · M5: QB's coup at the parade",
+    "s": "open",
+    "options": [
+     "a world event the Diaspora answers; Tori's scene is her choice to lead",
+     "Tori's own scene"
+    ],
+    "default": "world event"
+   },
+   {
+    "q": "77-AK · M5: the Diaspora's first act of resistance",
+    "s": "open",
+    "options": [
+     "Chief's fact (no rec: canon gives only that it forms)"
+    ],
+    "default": "open"
+   },
+   {
+    "q": "77-AL · M6: how the fault line collapses",
+    "s": "open",
+    "options": [
+     "Chief's fact (working id m6_fault_line_collapse ⧗)"
+    ],
+    "default": "open"
    }
   ]
  },
@@ -652,6 +732,36 @@
      "path": "_CANON_NODES/oxo-scene-card-M3-crash-analepsis.md",
      "what": "77-W/X ruled + theme read appended",
      "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md",
+     "what": "1.0.0 — OPEN 1–15 closed, P10, the 1.0 bar",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_genre_system.md",
+     "what": "0.1.3 — cultcore as G1, five ⧗ conventions",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/oxo-scene-card-M1-skeleton.md",
+     "what": "M1 skeleton, 37 ⧗",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/oxo-scene-card-M4-skeleton.md",
+     "what": "M4 skeleton, 42 ⧗",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/oxo-scene-card-M5-skeleton.md",
+     "what": "M5 skeleton, 48 ⧗",
+     "s": "done"
+    },
+    {
+     "path": "_CANON_NODES/oxo-scene-card-M6-skeleton.md",
+     "what": "M6 skeleton, 40 ⧗",
+     "s": "done"
     }
    ],
    "cost": [
@@ -930,6 +1040,16 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Boresight: plot at about 40% (v0.2.4, 36 ⧗). Five calls out, 77-Y to 77-AC, each with a rec; order = rule them, then draft the M2 grief scene."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"I don't want to draft … is this drafting part of getting to 1.0?\" → \"1.0.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Plot to 1.0.0: two writers on disjoint files (four skeleton cards · plot doc + genre doc), RANGE checked the bar's six card paths and P10 on every card. Nine story calls out, 77-AD to 77-AL."
     }
    ]
   }
