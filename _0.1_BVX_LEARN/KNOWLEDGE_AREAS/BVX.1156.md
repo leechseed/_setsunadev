@@ -200,15 +200,15 @@ There is always exactly one Crossroad live. Resolving it runs a separate eight-s
 3. **Nothing already decided can be un-happened, only reversed going forward.** A later Crossroad can free people the Kingdom enslaved; it cannot make them never have been enslaved.
 4. **Changing a Role voluntarily always costs something beyond the Role itself.** No price, no change.
 5. **Losing a Role by force (Overthrow) never removes a player's ability to act.** They immediately hold a different Role with full rights.
-6. **An empty Role seat is not silence, it is a defined outcome** (stalemate, an unexpected consequence, or public anger), resolved by a fixed sub-procedure rather than left to table judgment.
-7. **During Crossroad resolution, each player affects the outcome with exactly one Role and may Interrupt exactly once.** Sequence and scarcity apply even to the moment of greatest stakes.
+6. **An empty Role seat is a defined outcome, not silence** (stalemate, an unexpected consequence, or public anger), resolved by a fixed sub-procedure, not table judgment.
+7. **During Crossroad resolution, each player affects the outcome with exactly one Role and may Interrupt once.** Sequence and scarcity apply even at the moment of greatest stakes.
 
 ---
 
 ## 7 · PITFALLS / MYTHS
 
 - Writing a Crossroad's consequences into its own introduction, instead of leaving them to Perspective and Power to discover in play.
-- Playing Touchstone as a pollster reporting the crowd's opinion, rather than as an ordinary person whose own feeling simply is the crowd's, unknowingly.
+- Playing Touchstone as a pollster reporting the crowd's opinion, rather than an ordinary person whose own feeling simply is the crowd's.
 - Treating "no Power wants to act" as a stalled game rather than the built-in Power Vacuum state it already is.
 - Believing Overthrow removes a player from meaningful participation — it relocates their voice, never revokes it.
 - Skipping the price when voluntarily changing Role, which turns an identity-defining moment into a costless reshuffle.

@@ -194,33 +194,33 @@ The three chapters are not sequential in play; a referee may build worlds first 
 
 ## 6 · INVARIANTS
 
-1. **A world's physical stack is one cascading roll, not eight independent facts.** Size sets Atmosphere's modifier; Atmosphere sets Hydrographics' and Temperature's; nothing is rolled in a vacuum.
-2. **Economy is read off physics and politics, never authored separately.** Trade codes are a mechanical consequence of the UWP already rolled, not a fresh design pass.
-3. **A starport's law is not the planet's law.** Extraterritorial status is structural, not flavor, and explains smuggling, sanctuary, and Tech Level mismatches in one rule.
+1. **A world's physical stack is one cascading roll, not eight independent facts.** Size sets Atmosphere's modifier; Atmosphere sets Hydrographics' and Temperature's.
+2. **Economy is read off physics and politics, never authored separately.** Trade codes are a mechanical consequence of the UWP already rolled.
+3. **A starport's law is not the planet's law.** Extraterritorial status explains smuggling, sanctuary, and Tech Level mismatches in one rule.
 4. **Law Level is a banned-goods ladder, not an adjective.** Every level adds a specific category on top of the one before it.
-5. **A career's culture is implied by its risk and payoff structure, not described directly.** Survival odds, Events, and Mustering Out Benefits do the characterization work.
-6. **Character generation and world generation are the same discipline run at two scales.** Background Skills, career terms, and Connections all answer "what must have been true for this biography to happen," exactly as the UWP answers "what must be true for this world to be consistent."
-7. **Every generator yields to the referee's vision, including the published setting.** Traveller Rule Zero is stated as an explicit override, not an implied one.
+5. **A career's culture is implied by its risk and payoff structure, not described directly.** Survival odds, Events, and Mustering Out do the characterization work.
+6. **Character generation and world generation are the same discipline at two scales.** Background Skills, terms, and Connections answer "what must have been true for this biography," exactly as the UWP answers "what must be true for this world."
+7. **Every generator yields to the referee's vision, including the published setting.** Traveller Rule Zero is an explicit override, not an implied one.
 
 ---
 
 ## 7 · PITFALLS / MYTHS
 
-- Rolling Government or Tech Level before Size and Atmosphere are settled, breaking the chain of modifiers the book relies on for internal consistency.
+- Rolling Government or Tech Level before Size and Atmosphere are settled, breaking the chain of modifiers the book relies on for consistency.
 - Hand-authoring a world's economy from taste instead of reading its Trade codes off the UWP already rolled.
 - Treating a starport as subject to the planetary government's law, missing why it functions as a sanctuary and a Tech Level outlier.
-- Describing a world's Law Level in prose only ("strict," "lawless") instead of using the banned-goods ladder to say exactly what that means for a visiting Traveller.
-- Designing every career's parent organization in full before a single character serves in it, when the term-by-term risk and reward structure was built to imply that culture on its own.
-- Starting every campaign with strangers meeting in a bar instead of using the Connections Rule to build shared history at zero extra cost.
-- Picking Background Skills at random with no thought to the homeworld they imply, wasting the character generator's second, quieter job.
+- Describing a world's Law Level in prose only ("strict," "lawless") instead of pricing exactly what that means for a visiting Traveller.
+- Designing a career's parent organization in full before a character serves in it, when term-by-term risk and reward was built to imply that culture alone.
+- Starting a campaign with strangers meeting in a bar instead of using the Connections Rule to build shared history at zero cost.
+- Picking Background Skills at random, wasting the character generator's quieter job of implying a homeworld.
 
 ---
 
 ## 8 · APPLICATION
 
 - **Spine level:** SETTING (non-story-spine source; a procedural generator, not bound to one story)
-- **12-layer character stack:** none directly. Career terms, Events and the Connections Rule are structurally the same move as building an L-layer trait outward from L1 CORE, but they stay SETTING-side (they build the world through the character, not the character's psychology) until a formal bridge opens
-- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens; the Speculative Trade checklist (find a supplier, determine price, travel, find a buyer) and the Factions/Rivals-on-a-government mechanic are ready-made background-conflict engines, close cousins to BVX.1141's faction-turn loop
+- **12-layer character stack:** none directly. Career terms and the Connections Rule build the world through the character, not the character's psychology, so they stay SETTING-side until a formal bridge opens
+- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens; the Speculative Trade checklist and the Factions-on-a-government mechanic are ready-made background-conflict engines, close cousins to BVX.1141's faction-turn loop
 - **Setting:** primary. This is the SETTING shelf's third generative sci-fi toolkit, alongside BVX.1141 (Stars Without Number) and BVX.1146 (GURPS Space): feeding S1, S4, and S6 at primary strength, S8 at supporting strength from two directions, and L7 contextually
 
 Traveller's most exportable idea for the reader's own universe is not the UWP table, it is Diagram 3: character generation as a second, human-scale world generator. A writer building a setting from career backstories instead of a gazetteer gets S8 HABIT and S6 ECONOMY texture for free every time a job history is worked out in detail, exactly as a Traveller's four-year terms imply a homeworld and employer the referee never described. Tested against the shelf: where BVX.1141 (SWN) rations depth by "will the PCs reach this world next session," Traveller rations it by "what does this Traveller's own life already require to be true," a finer-grained, character-first version of the same just-in-time discipline. Where BVX.1146 (GURPS Space) writes concept before dice for its worlds, Traveller inverts that for its UWP, then converges with GURPS Space's concept-first method for careers, since a player has usually decided who this person is before the dice run.
