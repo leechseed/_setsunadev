@@ -145,9 +145,9 @@ flowchart LR
 
 Setup runs once, as a group, in fixed steps:
 
-1. **Make the Kingdom** — name it, brainstorm three Threats (a mix of external and internal pressures, not yet active), and have each player add two Locations.
-2. **Make Your Characters** — each player picks a starting Role (Power, Perspective, or Touchstone, never all the same), a concept that fits it, two Locations, a Wish or Fear about the Kingdom's future, a personal Issue that holds the character back, and a Bond with the player to their left.
-3. Three blank index cards go on the table: **Crossroad** (unwritten until turn one), **Crisis**, and **Time Passes** — each a line of checkboxes, a countdown to an event, not the event itself.
+1. **Make the Kingdom** — name it, brainstorm three Threats (external and internal pressures, not yet active), have each player add two Locations.
+2. **Make Your Characters** — each player picks a starting Role (never all the same), a fitting concept, two Locations, a Wish or Fear, a personal Issue, and a Bond with the player to their left.
+3. Three blank index cards go on the table: **Crossroad**, **Crisis**, **Time Passes** — each a line of checkboxes, a countdown to an event, not the event itself.
 
 Play then loops with no fixed end, one player at a time:
 
@@ -171,12 +171,10 @@ There is always exactly one Crossroad live. Resolving it runs a separate eight-s
 | **Change Your Role** | Declare the change, show it in play, then pay a price unrelated to the Role itself; requires a full scene already held in the old Role | The only voluntary way to get a new voice; the price is mandatory, which keeps switching from being free |
 | **Challenge** | Contest one specific thing a character did or established with their Role; the defender alone decides Yes, No, or Yes If | A first, cheaper line of resistance to something you don't like, resolvable without taking anyone's Role away |
 | **Overthrow** | Take a character's Role by proving they don't really have it; requires switching to their Role first, then a defender-judged bid, then a choice to cancel what they already did | The only way to remove a Role against its holder's will; it never removes the player, only relocates their voice |
-| **Overthrow Duel** | When two same-Role characters try to Overthrow each other, or a Role was only just claimed this turn, the defender can turn it into a simultaneous mutual attempt | Prevents "whoever speaks first wins" from being the real rule underneath Overthrow |
-| **When Roles Disagree** | Power vs. Power risks stalemate; Perspective vs. Perspective means one is provably wrong by a fixed tie-break order; Touchstone vs. Touchstone adds Crisis for every character involved | Each Role's failure mode is different in kind, not just in degree — division among the people is structurally more dangerous than a disagreement among leaders |
-| **Vacuum rules** | An empty Role seat is not skipped, it triggers a named random sub-procedure (Power: automatic stalemate; Perspective: a coin-flip-style unexpected consequence; Touchstone: a coin-flip-style Crisis hit) | An absent authority is still modeled as a fact about the Kingdom, not treated as a rules gap |
-| **Musical chairs, no scarcity** | Losing a Role never removes a player from play; there is always another seat | Distinguishes what happens to the character (who can be stripped of everything) from what happens to the player (who is never sidelined) |
-| **"What's your Kingdom for?"** | The one question the game deliberately never asks players to answer on a sheet; it stays as pure friction between all three Roles | The center of the whole design: writing the answer down in advance would end the argument that the entire game exists to have |
-| **Pawn Power** | A Power character who answers to an off-screen chain of command rather than holding personal authority | Lets you play a station on the edge of a huge empire as a Kingdom without needing every character to sit at the top of it |
+| **When Roles Disagree** | Power vs. Power risks stalemate; Perspective vs. Perspective means one is provably wrong by a fixed tie-break order; Touchstone vs. Touchstone adds Crisis for every character involved | Each Role's failure mode differs in kind: division among the people is structurally more dangerous than a disagreement among leaders |
+| **Vacuum rules** | An empty Role seat is not skipped, it triggers a named random sub-procedure (Power: automatic stalemate; Perspective/Touchstone: a coin-flip-style unexpected consequence or Crisis hit) | An absent authority is still a fact about the Kingdom, not a rules gap |
+| **Musical chairs, no scarcity** | Losing a Role never removes a player from play; there is always another seat | Distinguishes what happens to the character (stripped of everything) from what happens to the player (never sidelined) |
+| **"What's your Kingdom for?"** | The one question the game deliberately never asks players to answer on a sheet; it stays as pure friction between all three Roles | Writing the answer down in advance would end the argument the entire game exists to have |
 
 ---
 
@@ -189,7 +187,6 @@ There is always exactly one Crossroad live. Resolving it runs a separate eight-s
 | Writing a Touchstone reaction | State only what your own character feels ("I'm furious") | Report on the crowd ("people are saying they're furious") |
 | You dislike what a character did with their Role | Challenge the specific thing first | Jump straight to Overthrow before testing a cheaper fix |
 | A Challenge you set the bar too high on fails against you | Expect escalation to Overthrow — the failed Challenger can go straight for your seat | Treat "no" as the end of the exchange |
-| Two characters share a Role and clash | Let the disagreement stand until the Crossroad resolves, or Overthrow one to end it early | Quietly average their positions into one consensus outcome |
 | No one holds a needed Role when a Crossroad resolves | Run the named vacuum sub-procedure (stalemate / random consequence / random Crisis) | Skip that step, or let another Role fill in for it |
 | Deciding how big to make the Kingdom | Twenty to thirty people minimum, no upper limit, enough that it outscales the played characters | A Kingdom sized to exactly the cast, with no unplayed populace behind it |
 | Wanting a wise, compassionate ruler | Have the Power player simply agree with what Perspective and Touchstone already established | Give the Power character private insight or empathy the rules didn't grant them |
@@ -214,7 +211,6 @@ There is always exactly one Crossroad live. Resolving it runs a separate eight-s
 - Playing Touchstone as a pollster reporting the crowd's opinion, rather than as an ordinary person whose own feeling simply is the crowd's, unknowingly.
 - Treating "no Power wants to act" as a stalled game rather than the built-in Power Vacuum state it already is.
 - Believing Overthrow removes a player from meaningful participation — it relocates their voice, never revokes it.
-- Assuming a wise, all-seeing ruler needs a special exception to the one-Role rule, instead of simply agreeing with whichever players hold Perspective and Touchstone.
 - Skipping the price when voluntarily changing Role, which turns an identity-defining moment into a costless reshuffle.
 - Writing "what's my Kingdom for" onto a character sheet in advance, which quietly closes the argument the entire game is built to keep open.
 
