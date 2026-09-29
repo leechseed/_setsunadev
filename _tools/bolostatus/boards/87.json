@@ -6,7 +6,7 @@
   "issued": "2026-09-29",
   "asof": "2026-09-29",
   "s": "open",
-  "status": "🟢 **FOLDED INTO TM 03 9/29** — 46 tier-1 distills done (46/46 RANGE) · synthesis `03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md` v0.2.0 · setting system v1.3.0: faction/nation card · present-tense-bite test (S7) · border/seam field (S1) · S5↔S9 link · narrated-only canon (S12) · three-tier underside (S10) · Ryan's nine axes (L7) · forward ledger (S11) · tier 2 held · next: the DCUS setting work.",
+  "status": "🟢 **SETTING v1.5.0 · 9/29**: six OPEN calls ruled (v1.4.0), DCUS S2 WEATHER + faction cards (v1.4.1), the setting state architecture v1.0→1.1 (BOLO 90), the SEQUENCE CARD (v1.5.0); tier-2 shelf still held",
   "decider": "HOTLINE ACTUAL",
   "feeds": "TM 03 (setting)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 87",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -98,6 +98,23 @@
       },
       {
        "t": "12 distills landed 9/29, all pass RANGE, then waves 2–3 added 14 more (BVX.1140–1155) and 12 more (BVX.1156–1167) — 38 distills total, all pass RANGE.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "9/29 · the second session",
+     "items": [
+      {
+       "t": "Six OPEN calls RULED \"I'll recommend\": passageway → S1 seam type · McKee's conflict level → S12 reading · the fill rule (thin by default) · tone-to-mechanic → S12 sub-note · layer names ruled · 03 placement kept (v1.4.0).",
+       "s": "ruled"
+      },
+      {
+       "t": "DCUS S2 WEATHER filled (the cooled-building split) + faction cards: the Administration and the Bishops as two factions, three stubs, the Sync Cult held, the bells benched (v1.4.1).",
+       "s": "ruled"
+      },
+      {
+       "t": "Setting state architecture v1.0→1.1 (BOLO 90 step 3): the DCUS rename lattice as three checkpoints; backward diffs allowed; the `backstory` tag. The SEQUENCE CARD added beside the scene card (v1.5.0). A TROPES section points at the register's S1–S12 lists.",
        "s": "done"
       }
      ]
@@ -338,13 +355,23 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Synthesis written; changes 1–4 and 6–9 applied to the setting system v1.3.0; tier 2 held."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"All right, let's work on setting.\" · \"I'll recommend.\" · \"Go. All recommendations.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Setting v1.4.0 → v1.5.0 and the setting state doc built the same day; FRAGO'd at Oscar Mike."
     }
    ]
   }
  ],
  "frago": {
   "mission": "Distill the setting shelf into one list of what we hold and what to get, TTRPG first, in order to give TM 03 (the setting system) a real library to build from, the same way BOLO 77's plot sweep fed the plot system.",
-  "order": "**Apply the new tools to DCUS: write S2 WEATHER, and build faction cards for the Administration, the Bishops and the Sync Cult.**",
+  "order": "Chief grabs the free list into Q:/_PDF_DROP/_NEW, then \"rescan Zotero\"; the tier-2 shelf (~1,260) waits on it.",
   "default": "Silence: the tools sit in TM 03 v1.3.0 and DCUS stays at its starter slice.",
   "calls": [
    {

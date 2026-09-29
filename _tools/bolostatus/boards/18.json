@@ -4,9 +4,9 @@
   "title": "The two-stage spine sweep",
   "trunk": "BLACK",
   "issued": "2026-08-26",
-  "asof": "2026-09-17",
+  "asof": "2026-09-29",
   "s": "open",
-  "status": "GATE CLOSED 9/16; story-side work resumes. The drop-folder intake ran the same night: 6,664 PDFs scanned (67 GB, mostly RPG lines), the five real acquisitions minted BVX.1123–1127, distilled and folded into the character, plot and genre docs (thirty-one v4 distills), four of the eight asked-for books turned out to be fakes, the wrong title or a translation, and the bulk is held unkeyed pending an intake order.",
+  "status": "🟢 **CHARACTER v2.2.0 · 9/29**: the 9/16 rulings finally applied (v2.1.0, calls 12–15 too) + the ten L9 EROS changes (v2.2.0); 34 more sexuality distills (wave 3)",
   "decider": "HOTLINE ACTUAL",
   "feeds": "story-side work across the Command (BOLO 24's own slice stays free of the gate); the new SSOT docs (plot_systems v0.1.1 done, setting and character owed); the TM pages (04 plot, 03 setting, 02 character)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 18",
   "card": "none",
-  "version": "v0.10 · DOPE SHEET"
+  "version": "v0.11 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -847,6 +847,16 @@
      "when": "9/17",
      "who": "Claude",
      "t": "All five TMs were already live (02 character · 03 setting · 04 plot · 05 texture · 06 genre); TM 05 and 06 added to pages.json so `view TM-05` / `view TM-06` open them. The Story Lattice (built 8/25–26, complete) is the system the TMs document, and this sheet is its home. Republished with the address ruling applied: Chief, everywhere (RULED 9/17)."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Rex\" (recs) on the six character calls and on the ten L9 changes."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "v2.1.0: relational_refs · L8 from Attached · WILL as the capacity to decide · heredity on L7; v2.2.0: consent_posture · signal_fluency · exposure/role shame · arousal_curve · template_origin; Victoria kept valid."
     }
    ]
   }

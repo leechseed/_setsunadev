@@ -4,9 +4,9 @@
   "title": "The Amazon applications — the number-one candidate for every posting",
   "trunk": "OPERATOR",
   "issued": "2026-09-24",
-  "asof": "2026-09-24",
+  "asof": "2026-09-29",
   "s": "hot",
-  "status": "🟢 9/24: 6 of 8 SUBMITTED (Food Safety · DSP ×2 · HR Partner · Just Walk Out · Mechatronic Apprentice). Held: both Prime Air jobs. Ground Handler needs no Part 107; Flight Monitor waits on BOLO 84.",
+  "status": "🟡 **PRIME AIR DROPPED 9/29**: Ground Handler and Flight Monitor off the list; the six submitted applications stand; BOLO 84 (Part 107) closed with it",
   "decider": "HOTLINE ACTUAL",
   "feeds": "PMCS Employment · BOLO 24",
   "related": [
@@ -17,7 +17,7 @@
   ],
   "home": "BOLO.md · row 83",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -38,7 +38,7 @@
  ],
  "frago": {
   "mission": "Build one tailored application per Amazon posting, in order to make Chief the number-one candidate on each while the driver jobs cover income and Part 107 opens Flight Monitor.",
-  "order": "**Submit Prime Air Ground Handler now** (no Part 107 needed; out/10479287-ground-handler). Flight Monitor goes in the day the temporary certificate arrives (BOLO 84).",
+  "order": "Watch the six submitted applications; no Prime Air work.",
   "default": "Silence: six applications wait on callbacks; Ground Handler sits built.",
   "calls": [
    {
@@ -404,6 +404,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "BOLO 84 captured for Part 107 (links verified, 3-day and 2-week plans in PART107.md)."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Get rid of Prime Air. We're not doing that.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Both Prime Air postings dropped; BOLO 84 closed on \"all recommendations\"."
     }
    ]
   }
