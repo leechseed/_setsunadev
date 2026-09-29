@@ -191,11 +191,11 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 | Deciding a space faction's government | Run it through Diagram 3: how constrained is survival, how real is interworld war | Assign "democracy" or "empire" because it fits the faction's vibe |
 | Designing a resource-extraction technology (asteroid movers, mass drivers, orbital energy) | Build in its weapon use from the start: dual-use is the default, not the exception | Write a peaceful economic technology with no military shadow |
 | Writing a colony's founding charter | Show it drift under the environment's real pressure (isolation, fragility, technocratic necessity) | Assume a well-written constitution holds regardless of circumstance (the "Good Seed" fallacy) |
-| Placing a frontier zone (asteroid belt, unclaimed orbit, new colony world) | Make it violent, weakly propertied, and prone to core/periphery conflict by default | Write frontiers as empty opportunity with no one fighting over them yet |
-| Building an interstellar or interplanetary federation | Weight it against distance, travel-time lag, and how different the member polities have become | Assume shared origin guarantees political union (the American-founding analogy oversells) |
-| Escalating danger across a campaign | Raise violence interdependence stepwise (Diagram 4's four stages), not the enemy's numbers | Keep threat flat and just add bigger ships |
-| Writing an expansionist faction's ideology | Give it the Promethean register: cosmic destiny, species vocation, impatience with doubters | Write "we need resources" as the whole motive; the real sell is salvation |
-| Placing a strategic chokepoint (orbital ring, wormhole, single habitable moon) | Make control of it decide the whole region's political order, unless someone deliberately neutralizes it | Let a chokepoint exist without anyone contesting or weaponizing it |
+| Placing a frontier zone (asteroid belt, unclaimed orbit, new colony) | Make it violent, weakly propertied, prone to core/periphery conflict by default | Write frontiers as empty opportunity nobody is fighting over yet |
+| Building an interstellar or interplanetary federation | Weight it against distance, travel-time lag, and member divergence | Assume shared origin guarantees union (the American-founding analogy oversells) |
+| Escalating danger across a campaign | Raise violence interdependence stepwise (Diagram 4's four stages) | Keep threat flat and just add bigger ships |
+| Writing an expansionist faction's ideology | Give it the Promethean register: cosmic destiny, species vocation | Write "we need resources" as the whole motive; the real sell is salvation |
+| Placing a strategic chokepoint (orbital ring, wormhole, one habitable moon) | Make control of it decide the region's political order, unless neutralized | Let a chokepoint sit uncontested and unweaponized |
 | Writing a "peaceful" orbital megastructure | Ask who it would let dominate the planet below if seized, before deciding it is benign | Treat size and utility as automatically good for everyone |
 
 ---
