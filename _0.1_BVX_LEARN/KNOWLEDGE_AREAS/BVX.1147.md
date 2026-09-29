@@ -176,14 +176,12 @@ This distill concentrates on Narrative Modalities, Authentication, and Saturatio
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Writing a setting's laws | Ask whether the constraint is alethic (what CAN happen), deontic (what's ALLOWED), axiological (what's VALUED), or epistemic (what's KNOWN) before writing it | Write one undifferentiated pile of "world rules" that mixes physics, law, virtue, and secrecy |
-| Introducing a rule-breaking character | Decide up front which of the three shapes the break produces: punished (fall), rewarded (test), or unresolvable (predicament) | Let the character break a rule and improvise the consequence scene by scene |
-| Deciding how much backstory or geography to write | Sort each candidate detail into explicit (write it outright), implicit (plant a marker and let it be inferred), or zero (leave it a gap on purpose) | Try to write everything explicitly, or leave everything vague by default without choosing per detail |
-| A reader or player asks about something never covered | Confirm it as a genuine gap if it was never even implied | Retroactively invent an answer just because the silence feels uncomfortable |
-| Building a secret society or hidden history | Model it as an epistemic split (a known domain and an unknown one) with deception as the connective tissue, not as a second undocumented setting | Write the secret layer with the same explicitness as the public layer and then simply withhold it from the reader |
-| Wanting a place or institution to carry theme | Write its deontic codex (what it forbids/requires) and its axiological codex (what it prizes) explicitly; the theme is what happens when someone deviates from either | State the theme directly through a character's speech, bypassing the world's own law |
-| Choosing a setting's realism level | Pick, explicitly, which alethic operator gets redistributed and how far (a little magic vs. a fully supernatural cosmos) before writing scenes | Let physical possibility drift scene to scene depending on what's convenient for the plot |
-| Deciding what the narrator states vs. what a character merely claims | Reserve narrator-voice statements for what must be true in the world; let character speech carry doubt, error, and bias | Blend narrator and character claims so a reader cannot tell which is authenticated |
+| Writing a setting's laws | Ask whether the constraint is alethic, deontic, axiological, or epistemic before writing it | Write one undifferentiated pile of "world rules" mixing physics, law, virtue, and secrecy |
+| Introducing a rule-breaking character | Decide up front which shape the break produces: punished (fall), rewarded (test), or unresolvable (predicament) | Let the character break a rule and improvise the consequence scene by scene |
+| Deciding how much backstory or geography to write | Sort each detail into explicit (state it), implicit (imply it), or zero (leave it a gap on purpose) | Write everything explicitly, or leave everything vague by default with no per-detail choice |
+| A reader or player asks about something never covered | Confirm it as a genuine gap if it was never even implied | Invent an answer on the spot just because the silence feels uncomfortable |
+| Building a secret society or hidden history | Model it as an epistemic split (known domain, unknown domain) with deception as the connective tissue | Write the secret layer as explicitly as the public one, then just withhold it from the reader |
+| Wanting a place or institution to carry theme | Write its deontic and axiological codex explicitly; the theme is what happens when someone deviates from either | State the theme directly through a character's speech, bypassing the world's own law |
 
 ---
 
