@@ -94,18 +94,18 @@ One table, twelve layers, the same architecture the SETTING SLICE and the PLOT S
 
 | Layer | Name | Question it answers | Source | Field it writes | Tier |
 |---|---|---|---|---|---|
-| **L1** | **CORE** | How much cognitive and ideological mass does the mind carry? | [[BVX.0075]], [[BVX.0233]] the Big Five | `CORE` | Tier 1 |
-| **L2** | **VITAL** | How much physical and energetic presence does the body carry? | [[BVX.0075]], [[BVX.0233]] the stress-response cascade | `VITAL` | Tier 1 |
-| **L3** | **SOCIAL** | How does the character project into and read the social world? | [[BVX.0233]] the interpersonal circumplex, [[BVX.0061]] reputation | `SOCIAL` | Tier 1 |
-| **L4** | **WILL** | How much resistance to coercion holds, and where does it bend? | [[BVX.0075]] counter-will, [[BVX.0045]] coping strategy | `WILL` | Tier 2 |
-| **L5** | **WOUND** | What accumulated damage failed to resolve, and how severe is it? | [[BVX.0209]] the wound card, [[BVX.0196]] the ghost, [[BVX.0075]] back-story placement | `WOUND` | Tier 2 |
+| **L1** | **CORE** | How much cognitive and ideological mass does the mind carry? | [[BVX.0075]], [[BVX.0233]] the Big Five, [[BVX.1123]] Egri's psychology dimension | `CORE`, `psychology_stack` | Tier 1 |
+| **L2** | **VITAL** | How much physical and energetic presence does the body carry? | [[BVX.0075]], [[BVX.0233]] the stress-response cascade, [[BVX.1123]] Egri's physiology dimension | `VITAL`, `physiology_stack` | Tier 1 |
+| **L3** | **SOCIAL** | How does the character project into and read the social world? | [[BVX.0233]] the interpersonal circumplex (pilot dial), [[BVX.0061]] reputation, [[BVX.1123]] Egri's sociology dimension | `SOCIAL`, `sociology_stack` | Tier 1 |
+| **L4** | **WILL** | How much resistance holds under pressure, and where does the capacity to decide bend? | [[BVX.0075]] counter-will, [[BVX.0045]] coping strategy, [[BVX.1123]] strength of will | `WILL`, `coping_strategy` | Tier 2 |
+| **L5** | **WOUND** | What accumulated damage failed to resolve, and how severe is it? | [[BVX.0209]] the wound card, [[BVX.0196]] the ghost, [[BVX.0075]] back-story placement | `WOUND`, `severity`, `triggers`, `relational_refs` | Tier 2 |
 | **L6** | **DRIVE** | What fuels the active goal-pursuit, and from what source? | [[BVX.0075]] super-objective, [[BVX.0233]] the fifteen motivations, [[BVX.0045]] cares-about/motivates | `DRIVE` | Tier 2 |
-| **L7** | **ORIGIN** | What birth context and formation set the starting conditions? | [[BVX.0075]] birth marks, [[BVX.0061]] justification | `origin_class`, `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level`, `system_exposure` | Tier 3 |
-| **L8** | **IMPRINT** | What formative conditioning locked in before the story began? | [[BVX.0075]], [[BVX.0233]] life-stage emotional concerns | `attachment_style`, `attachment_style_score`, `emotional_range`, `conditional_patterns`, `imprint_flexibility`, `primary_attachment_object` | Tier 3 |
+| **L7** | **ORIGIN** | What birth context and formation set the starting conditions? | [[BVX.0075]] birth marks, [[BVX.0061]] justification, [[BVX.1123]] heredity (provisional) | `origin_class`, `origin_stability`, `family_coherence`, `origin_wound_seed`, `tech_level`, `system_exposure`, `hereditary_predisposition` | Tier 3 |
+| **L8** | **IMPRINT** | What formative conditioning locked in before the story began? | [[BVX.0075]], [[BVX.0233]] life-stage emotional concerns, [[BVX.1127]] attachment theory | `attachment_style`, `attachment_style_score`, `attachment_dimensions`, `protest_behaviors`, `deactivating_strategies`, `emotional_range`, `conditional_patterns`, `imprint_flexibility`, `secure_base_object` (was `primary_attachment_object`, kept as a read alias) | Tier 3 |
 | **L9** | **EROS** | How is desire structured, armored, and made safe? | [[BVX.0075]] sexuality as attitude, and the L9 v2 doc, [victoria-midnight-L9-eros.md](../../../../_CANON_NODES/victoria-midnight-L9-eros.md) | `erotic_blueprint_type`, `desire_vector`, `shame_index`, `armor_index`, `satisfaction_cycle_truncation`, `erotic_safety_precondition`, `intimacy_mode` | Tier 3 |
-| **L10** | **SHADOW** | What is repressed, projected, or denied, and what does it generate? | [[BVX.0064]] true character vs characterization, [[BVX.0196]] secrets and the adaptation hierarchy, [[BVX.0045]] the shadow face, [[BVX.0233]] the Dark Triad | `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content` | Tier 3 |
-| **L11** | **DESTINY** | What is the character building toward, not where they stand? | [[BVX.0045]] the two journeys, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement` | Tier 3 |
-| **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | [[BVX.0089]] the eight archetypes, [[BVX.0061]] the hierarchy, [[BVX.0064]] the cast map | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `narrative_invariant`, `story_outcome`, `story_judgement`, `limit_type`, `resolve` | Tier 3 |
+| **L10** | **SHADOW** | What is repressed, projected, or denied, and what does it generate? | [[BVX.0064]] true character vs characterization, [[BVX.0196]] secrets and the adaptation hierarchy, [[BVX.0045]] the shadow face, [[BVX.0233]] the Dark Triad (pilot dial) | `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content` | Tier 3 |
+| **L11** | **DESTINY** | What is the character building toward, not where they stand? | [[BVX.0045]] the two journeys, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement`, `arc_type`, `change_cause`, `catalyst_archetype` | Tier 3 |
+| **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | [[BVX.0089]] the eight archetypes, [[BVX.0061]] the hierarchy, [[BVX.0064]] the cast map, [[BVX.1123]] the pivotal character | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `narrative_invariant`, `story_outcome`, `story_judgement`, `limit_type`, `resolve` | Tier 3 |
 
 **Binding rule (mirror of the plot and setting bindings):** L12 FUNCTION is fed independently from the storyform, keyed by `storyform_id`, exactly as P12 FUNCTION and S12 FUNCTION are. A character with no storyform link may run L1 through L11 only; L12 filled is what makes a character load-bearing to the argument, not merely present.
 
@@ -127,33 +127,41 @@ Tier 1 is sufficient for background characters. Tier 2 is sufficient for recurri
 
 ---
 
+### The Hierarchy Rule
+
+*(call 4, [[BVX.0061]] Card's hierarchy, [[BVX.0064]] McKee's cast map — APPLIED 2.1.0, RULED 2026-09-29)*
+
+Characterization effort tracks narrative rank. Tier depth already encodes this loosely — Tier 1 for background, Tier 2 for recurring support, Tier 3 mandatory for protagonists and antagonists — and this states it as a rule rather than a convention: a character earns deeper tiers and denser Tier 3 sub-field population in proportion to how much load-bearing weight the story places on them, not by default completeness. Filling every field on a background character is not thoroughness, it is a schema error in the other direction.
+
+---
+
 ### The 12 Layers: Domain Declarations
 
 Each layer governs one and only one domain. Overlap between layers constitutes a schema error, not a character note.
 
-**L1 — CORE:** Cognitive and psychological mass. Governs all mental skill defaults, ideological frameworks, and problem-solving capacity. Default value: 10. Point cost: 20 pts per level above 10 (IQ equivalent).
+**L1 — CORE:** Cognitive and psychological mass. Governs all mental skill defaults, ideological frameworks, and problem-solving capacity. Default value: 10. Point cost: 20 pts per level above 10 (IQ equivalent). Carries `psychology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the psychology third of Egri's bone structure (moral standards, ambition, frustrations, temperament, attitude toward life, complexes, extrovert/introvert, abilities, qualities, IQ) as an auditable text checklist beneath the number, not replacing it.
 
-**L2 — VITAL:** Physical and energetic presence. Governs body precision, endurance, reaction capacity, and physical expressiveness. Default value: 10. Point cost: 20 pts per level above 10 (DX equivalent).
+**L2 — VITAL:** Physical and energetic presence. Governs body precision, endurance, reaction capacity, and physical expressiveness. Default value: 10. Point cost: 20 pts per level above 10 (DX equivalent). Carries `physiology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the physiology third of the bone structure (heredity, appearance, defects, posture, health) as the same kind of text checklist. Heredity itself resolved to L7's `hereditary_predisposition`, not here — see L7.
 
-**L3 — SOCIAL:** Relational interface. Governs projection into the world, reception of others, social legibility, and reaction modifier math. Default value: 10. Point cost: 10 pts per level above 10 (HT equivalent).
+**L3 — SOCIAL:** Relational interface. Governs projection into the world, reception of others, social legibility, and reaction modifier math. Default value: 10. Point cost: 10 pts per level above 10 (HT equivalent). Carries `sociology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the sociology third of the bone structure (class, occupation, education, home life, political affiliation) as text. The interpersonal circumplex ([[BVX.0233]], call 8) is noted here as a pilot dial only — RULED 2026-09-29 concrete enough to pilot on one character, not retrofitted onto Victoria now, and not yet a scored field.
 
-**L4 — WILL:** Psychological resistance to coercion, manipulation, and systemic pressure. Derives from CORE by default (`WILL = CORE`). Buyable up or down at 5 pts per level.
+**L4 — WILL:** Redefined 2026-09-29 (call 13, [[BVX.1123]] strength of will): the capacity to decide under pressure, not raw toughness. Psychological resistance to coercion, manipulation, and systemic pressure is still what it governs, but the number measures whether a choice can be made at all, not how much punishment the character can absorb before bending. Derives from CORE by default (`WILL = CORE`). Buyable up or down at 5 pts per level. Carries `coping_strategy` (call 10, [[BVX.0045]] Schmidt's five strategies — APPLIED 2.1.0, sited on L4 rather than L8 per the 2026-09-29 ruling).
 
-**L5 — WOUND:** Accumulated psychological damage that failed to resolve. Assigned during character history entry. High WOUND reduces effective WILL and SOCIAL under trigger conditions. Scale: 0 (undamaged) to 10 (functional collapse threshold).
+**L5 — WOUND:** Accumulated psychological damage that failed to resolve. Assigned during character history entry. High WOUND reduces effective WILL and SOCIAL under trigger conditions. Scale: 0 (undamaged) to 10 (functional collapse threshold) — this scale is now named `severity` (call 6, [[BVX.0209]] the wound card's severity dial — APPLIED 2.1.0), the same number under Puglisi & Ackerman's name for it, not a second value. Carries `triggers` (call 6, a list of the conditions that fire the wound) and `relational_refs` (call 1 folded into call 15, [[BVX.0196]] ghost/revenant — APPLIED 2.1.0): a list of `{kind: ghost|revenant|mentor|shapeshifter, character_id, note}` entries, one relational field for every meaning this layer keys to another character, superseding the separate `ghost_ref`/`revenant_ref` fields originally proposed.
 
 **L6 — DRIVE:** Narrative motivation fuel. Derives from VITAL by default (`DRIVE = VITAL`). Spent on active goal-pursuit; recovered through narrative resolution. Buyable at 3 pts per level.
 
-**L7 — ORIGIN:** Birth context, socioeconomic class, family architecture, environmental formation, and system exposure timing. Numeric variables feed WOUND base and SOCIAL defaults.
+**L7 — ORIGIN:** Birth context, socioeconomic class, family architecture, environmental formation, and system exposure timing. Numeric variables feed WOUND base and SOCIAL defaults. Carries `hereditary_predisposition` (call 12, [[BVX.1123]] Egri's one homeless field — APPLIED 2.1.0, provisional until a second character tests it): the trait or tendency inherited rather than formed, the field that fit neither ORIGIN nor VITAL cleanly and is parked here on the origin side of that seam.
 
-**L8 — IMPRINT:** Formative emotional conditioning. Attachment architecture, emotional range, and operational belief patterns established prior to story entry.
+**L8 — IMPRINT:** Formative emotional conditioning. Attachment architecture, emotional range, and operational belief patterns established prior to story entry. The field list is now [[BVX.1127]] Levine & Heller, *Attached* (call 14, APPLIED 2.1.0): `attachment_style` as a four-way enum (secure · anxious · avoidant · fearful_avoidant), a two-dimension `attachment_dimensions` {anxiety, avoidance} beside the existing scalar `attachment_style_score`, and new list fields `protest_behaviors` and `deactivating_strategies`. `primary_attachment_object` is renamed `secure_base_object`; the old name is kept as a read alias, the only rename in this bump.
 
 **L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode.
 
-**L10 — SHADOW:** Repressed, projected, and denied content. High SHADOW values generate active disadvantage clusters and modify stress-state behavior.
+**L10 — SHADOW:** Repressed, projected, and denied content. High SHADOW values generate active disadvantage clusters and modify stress-state behavior. [[BVX.0233]]'s Dark Triad (call 8) is noted here as the same pilot-only dial as L3's circumplex — RULED 2026-09-29 available to pilot on one character, not scored on Victoria, not yet a schema field.
 
-**L11 — DESTINY:** Directional growth vector. The MC Solution element, growth requirement, resistance index, and soul evolution archetype. Describes what the character is building toward, not where they currently stand.
+**L11 — DESTINY:** Directional growth vector. The MC Solution element, growth requirement, resistance index, and soul evolution archetype. Describes what the character is building toward, not where they currently stand. Carries `arc_type` and `change_cause` (call 2, [[BVX.0196]] growth vs transformation, [[BVX.0061]] the four causes of change — APPLIED 2.1.0) and `catalyst_archetype` (call 10, [[BVX.0045]] growth-pairing — APPLIED 2.1.0).
 
-**L12 — FUNCTION:** Dramatica narrative role, objective story function, throughline assignment, and mechanical purpose in the story engine. Bridges psychological construction to narrative mechanics.
+**L12 — FUNCTION:** Dramatica narrative role, objective story function, throughline assignment, and mechanical purpose in the story engine. Bridges psychological construction to narrative mechanics. Rule (call 13, [[BVX.1123]] the pivotal character — APPLIED 2.1.0): a Protagonist assignment requires a documented necessity, not just a storyform assignment — the character must be shown forced into the role, not merely placed there.
 
 ---
 
@@ -174,6 +182,8 @@ Derived statistics are computed columns. They are not entered — they are calcu
 **Truth Exposure Index** is the primary systemic legibility metric. A score above 15 indicates a character who cannot effectively manage their own signal visibility. This metric directly feeds antagonist targeting logic and systemic response escalation.
 
 **Expressive Range** (added 2026-08-24, L9 v2 propagation) is the deliberate-signal metric. TEI measures what leaks; Expressive Range measures what the character can intentionally send. Low Expressive Range with high TEI is the armored-but-readable paradox: the system gets everything and the character gets nothing out.
+
+**Stress Threshold** (redefined 2026-09-29, call 13, [[BVX.1123]]) reads as decision-capacity under load now that L4 WILL is the capacity to decide rather than raw toughness: the number is where the choice stops being avoidable, not where the character physically breaks. The formula is unchanged (`WILL - WOUND`); only the reading changes.
 
 ---
 

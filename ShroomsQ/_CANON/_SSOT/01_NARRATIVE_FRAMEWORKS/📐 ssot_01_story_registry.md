@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 0.1.0
+version: 0.1.1
 last_updated: 2026-09-29
 applies_to: [every story in the LEECHSEED universe]
 status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock"
@@ -25,6 +25,7 @@ sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", 
 | **EVIL CHECK** (`evil_check`) | — | 1 · DCUS | Earth (same universe as OXO) | ⧗ | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
 | **LAKAD** (`lakad`) | codename, "for now" (2/9) | 2 · LAKAD | cislunar space | ⧗ | **named only** | none | none |
 | **ASTRO7EX** (`astro7ex`) | — | 3 · ASTRO7EX | the Moon | ⧗ | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
+| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ | ⧗ | ⧗ | **named only**: spoken 2026-09-29, the whiteboard concept; Chief sending a photo | none | none |
 
 **Not a story:** *The Outliers* is OXO's series title, not a second story. BVIPDS / Bold Venture is the methodology and studio, not a story.
 
@@ -41,4 +42,5 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 ## Version history
 
+- **0.1.1 — 2026-09-29.** TREMOR CULT added (named only; the whiteboard photo is coming).
 - **0.1.0 — 2026-09-29.** Registry stood up (BOLO 82, RULED "yes to all recommendations"): four rows, the three universe eras, the 2/9 simultaneous ruling kept as superseded history in the fabula.
