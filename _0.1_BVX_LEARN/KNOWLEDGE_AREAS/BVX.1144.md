@@ -158,8 +158,8 @@ The book is bookended the same way BVX.0458 is: chapter one states the premise (
 
 | Concept | What it is | Why it matters |
 |---|---|---|
-| **GCPESRIAH** | Nine-part checklist: Geography, Climate, Politics, Economic, Social, Religion, Intellectual/science, Arts, History | Anderson's own expansion of his stepson's grade-school PERSIA mnemonic (Political, Economic, Religion, Society, Intellectual, Arts); a session-zero questionnaire a writer or GM can run per culture |
-| **Scale invariance** | The claim, demonstrated across five of his own book series plus one childhood town, that worldbuilding technique doesn't change between a street and a galaxy | Frees a sci-fi universe-builder from treating "big" and "small" worldbuilding as different skills; the same nine questions apply to a starport bar and a stellar empire |
+| **GCPESRIAH** | Nine-part checklist: Geography, Climate, Politics, Economic, Social, Religion, Intellectual/science, Arts, History | Anderson's expansion of a grade-school PERSIA mnemonic; a session-zero questionnaire a writer or GM can run per culture |
+| **Scale invariance** | Demonstrated across five of his own series plus one childhood town: worldbuilding technique doesn't change between a street and a galaxy | Frees a sci-fi universe-builder from treating "big" and "small" worldbuilding as different skills |
 | **Concrete-detail rule** | One lived, specific, slightly uncomfortable sensory detail (a frozen sauerkraut-juice skating pond, spinifex thorns working through fabric) convinces a reader faster than any amount of general description | The book's sharpest craft point; belief comes from specificity a reader could not have invented, not from scope |
 | **Questions-before-answers method** | Ask a question, get an answer, test it against "does it make sense," then ask the next question the answer implies | Reverses the instinct to draft a setting bible of answers first; keeps worldbuilding generative rather than encyclopedic |
 | **Wistful vs. inspirational geography** | Wistful: a map drawn for dramatic effect with no logic (rivers draining to a landlocked center, a fortress city with no road, water, or food supply). Inspirational: geography that explains why anyone settled, traded, or fought there | Names, from the novelist's side, exactly the failure GM worldbuilding guides also warn against; a portable map sanity-check |
@@ -201,8 +201,8 @@ The book is bookended the same way BVX.0458 is: chapter one states the premise (
 - **The unsupplied fortress**: a large population center placed in a wasteland with no road, no water source, and no food supply, excused by "the villain used magic" (or, in SF, "advanced tech") as Spontaneous Construction.
 - **History as trophy case**: dumping an author's full researched timeline into the story because it exists, rather than filtering it to what a character would know.
 - **Assuming political systems transplant freely**: the Iraq anecdote, handing a population "democracy" (or, for SF, any imported system) without the cultural underpinning it presumes.
-- **Treating an invented power system as a grab bag**: a wizard, or an SF equivalent like a device or an AI, pulling out a conveniently-timed solution with no established cost or rule.
-- **Broad-stroke description mistaken for worldbuilding**: naming a culture's traits in the abstract instead of anchoring it with one specific, sense-level detail.
+- **Treating an invented power system as a grab bag**: a wizard, or an SF device or AI, pulling out a conveniently-timed solution with no established cost.
+- **Broad-stroke description mistaken for worldbuilding**: naming a culture's traits in the abstract instead of anchoring it with one sense-level detail.
 
 ---
 
