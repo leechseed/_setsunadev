@@ -161,11 +161,11 @@ flowchart LR
 
 The setting-relevant material spans four locations across two chapters:
 
-**Chapter 1, Gamemastery Basics** — Campaign Structure gives five named campaign shapes (one-shot through epic campaign), each with a fixed adventure count, level range, and real-world time frame, then closes with Changing the World: a short, explicit doctrine that the campaign's setting must visibly register what the PCs did. Drawing Maps gives a five-step process for any adventure-scale map, independent of world scale.
+**Chapter 1, Gamemastery Basics** — Campaign Structure gives five named campaign shapes (one-shot through epic), each with a fixed adventure count, level range, and time frame, closing with Changing the World: an explicit doctrine that the setting must visibly register what the PCs did. Drawing Maps gives a five-step process for any adventure-scale map, independent of world scale.
 
-**Chapter 2, Tools** — Building Worlds runs the top-down/bottom-up build pipeline (concept, planetary basics, landmass, environment, societal benchmarks, technology, religion, cosmology) that 1E also ran, but folds cosmology's planetary and solar-system menus directly into this chapter rather than a separate section. Nations and Settlements each deliver a formal stat block: named traits plus fixed prose fields plus one freeform ability. Planes closes the chapter with the six-axis planar trait system and per-plane stat blocks for the Great Beyond.
+**Chapter 2, Tools** — Building Worlds runs the same top-down/bottom-up pipeline 1E used (concept, geography, culture, cosmology), folding planetary and solar-system menus directly in. Nations and Settlements each deliver a stat block: named traits, fixed prose fields, one freeform ability. Planes closes the chapter with the six-axis planar trait system and per-plane stat blocks.
 
-Where 1E organized its Chapter 7 around six recurring adventure environments (dungeon, tavern, urban, water, wilderness, planar) and treated the settlement stat block as one entry inside that toolbox, 2E has no equivalent environment-behavior chapter; the settlement and nation stat blocks stand alone as Chapter 2 tools, and the "behaves like" doctrine (BVX.0480, Key Concepts) does not reappear here.
+1E organized its Chapter 7 around six recurring adventure environments (dungeon, tavern, urban, water, wilderness, planar), with the settlement stat block as one entry inside that toolbox. 2E has no equivalent chapter here; the settlement and nation stat blocks stand alone, and 1E's "behaves like" doctrine does not reappear.
 
 ---
 
