@@ -31,6 +31,12 @@ RAILS_MD = ROOT / "_tools/bolostatus/work/77/tropes/PS-R.rails.md"
 GLOSSARY_JSON = ROOT / "_tools/sitrep/glossary.json"
 OUT = Path(__file__).resolve().parent / "out" / "workspace.html"
 
+# the playhead inspector's base records (BOLO 90 step 7, RULED 9/29): parsed at
+# build time from canon, per ssot_02_character_state_architecture.md
+# §"Querying a Character at a Narrative Moment" (base -> diffs -> derived -> flags).
+CHARACTER_NODE_MD = ROOT / "_CANON_NODES" / "victoria-midnight.md"
+SETTING_SYSTEM_MD = ROOT / "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md"
+
 # the Told lens (The Arrangement, BOLO 79 ruled 9/29): one tracking file per story,
 # `stories:` scope kept at OXO only — tracking.py fails loudly on a bad code/slug.
 TRACKING = tracking.load("oxo")
@@ -73,6 +79,89 @@ def need(haystack: str, needle: str, label: str):
     so this build fails loudly instead of silently drifting from canon."""
     if needle not in haystack:
         raise SystemExit(f"SOURCE DRIFT: {label!r} no longer found verbatim in source — rebuild the extract.")
+
+
+# ------------------------------------------------------- BASES (BOLO 90 step 7) ---
+# the playhead inspector's base records: parsed straight out of the canon tables
+# named in the tasking (victoria-midnight.md's 12-layer table + Flags line;
+# ssot_03_setting_system.md's DCUS proof table). Every parser fails loudly
+# (SystemExit) on a missing section, a short table, or a missing Flags line —
+# never guesses a layer value or invents a flag.
+
+_MD_WIKI_RE = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
+_MD_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+_MD_BOLD_RE = re.compile(r"\*\*([^*]+)\*\*")
+_MD_ITAL_RE = re.compile(r"(?<!\*)\*([^*]+)\*(?!\*)")
+_MD_CODE_RE = re.compile(r"`([^`]+)`")
+
+
+def strip_md(text):
+    """Strip the light markdown canon prose carries — wiki links, markdown
+    links, bold, italics, inline code — down to plain display text."""
+    if not text:
+        return ""
+    t = text
+    t = _MD_WIKI_RE.sub(lambda m: m.group(2) or m.group(1), t)
+    t = _MD_LINK_RE.sub(r"\1", t)
+    t = _MD_BOLD_RE.sub(r"\1", t)
+    t = _MD_ITAL_RE.sub(r"\1", t)
+    t = _MD_CODE_RE.sub(r"\1", t)
+    return t.strip()
+
+
+_LAYER_ROW_RE = re.compile(r"^\|\s*([LS]\d+)\s+([A-Z]+)\s*\|\s*(.*?)\s*\|\s*(.*?)\s*\|$")
+_LAYER_ROW_2COL_RE = re.compile(r"^\|\s*([LS]\d+)\s+([A-Z]+)\s*\|\s*(.*?)\s*\|$")
+
+
+def parse_character_base(path):
+    """Tori's base record (BOLO 90 step 7 ruling 1): the '## The 12 layers'
+    table (L1..L12 | Value | Fed by) plus the '**Flags:**' line under it."""
+    md = read(path)
+    if not md:
+        raise SystemExit(f"build.py: can't read character base at {path}")
+    sec = re.search(r"##\s*The 12 layers\b(.*?)(?:\n##\s|\Z)", md, re.S)
+    if not sec:
+        raise SystemExit(f"build.py: no '## The 12 layers' section in {path}")
+    body = sec.group(1)
+    layers = []
+    for line in body.splitlines():
+        m = _LAYER_ROW_RE.match(line.strip())
+        if not m:
+            continue
+        code, name, value, fed_by = m.groups()
+        layers.append({"code": code, "name": name, "value": strip_md(value), "fed_by": strip_md(fed_by)})
+    if len(layers) < 12:
+        raise SystemExit(f"build.py: '## The 12 layers' table in {path} has only {len(layers)} L-rows — need 12")
+    flag_m = re.search(r"\*\*Flags:\*\*\s*(.+)", body)
+    if not flag_m:
+        raise SystemExit(f"build.py: no '**Flags:**' line under the 12-layer table in {path}")
+    flags = [{"name": n, "state": s} for n, s in re.findall(r"([A-Z][A-Z0-9_]*)\s*`([^`]+)`", flag_m.group(1))]
+    if not flags:
+        raise SystemExit(f"build.py: '**Flags:**' line in {path} carries no NAME `state` entries")
+    return {"layers": layers, "flags": flags}
+
+
+def parse_place_base(path):
+    """DCUS's base record (BOLO 90 step 7 ruling 2): the DCUS proof table
+    (S1..S12 | DCUS). No 'Fed by' column here — values are long prose, kept
+    full for the tooltip and trimmed for display on the page side."""
+    md = read(path)
+    if not md:
+        raise SystemExit(f"build.py: can't read place base at {path}")
+    sec = re.search(r"##\s*THE INSTANCE\s*—\s*DCUS starter slice\b(.*?)\n---\n", md, re.S)
+    if not sec:
+        raise SystemExit(f"build.py: no DCUS starter-slice instance table in {path}")
+    body = sec.group(1)
+    layers = []
+    for line in body.splitlines():
+        m = _LAYER_ROW_2COL_RE.match(line.strip())
+        if not m:
+            continue
+        code, name, value = m.groups()
+        layers.append({"code": code, "name": name, "value": strip_md(value), "fed_by": ""})
+    if len(layers) < 12:
+        raise SystemExit(f"build.py: DCUS proof table in {path} has only {len(layers)} S-rows — need 12")
+    return {"layers": layers, "flags": []}
 
 
 # ---------------------------------------------------------------- FABULA ---
@@ -415,6 +504,13 @@ ORIGIN_LAYERS = [
     {"layer": "L10", "name": "SHADOW", "needs": True, "event": None, "note": "No datable antecedent filled in this wave's instance — gap, not omission."},
 ]
 
+# the playhead inspector's base records (BOLO 90 step 7), keyed by the same
+# subject id the tracking file's story_points use.
+AR_BASES = {
+    "character:victoria_midnight": parse_character_base(CHARACTER_NODE_MD),
+    "place:dcus": parse_place_base(SETTING_SYSTEM_MD),
+}
+
 # ------------------------------------------------------------- ASSEMBLE ---
 
 DATA = {
@@ -436,6 +532,7 @@ DATA = {
     "glossary": GLOSSARY,
     "tracking": TRACKING,
     "ar_ledger": AR_LEDGER,
+    "bases": AR_BASES,
     "character": {
         "id": "victoria_midnight",
         "name": "Victoria Midnight",
@@ -644,6 +741,9 @@ STYLE = r"""
   .ar-th .nm { font-family: var(--display); font-weight: 700; font-size: 13.5px; line-height: 1.05; text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .ar-th .sub { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .ar-th.ruler { background: var(--panel-2); }
+  .ar-th.ar-th-pick { cursor: pointer; }
+  .ar-th.ar-th-sel { background: color-mix(in srgb, var(--k, var(--accent)) 12%, transparent); }
+  .ar-th.ar-th-sel .nm { color: var(--accent-ink); }
   .ar-th .ar-resize { position: absolute; left: 0; right: 0; bottom: -3px; height: 7px; cursor: row-resize; z-index: 2; }
   .ar-th .ar-resize::after { content: ""; position: absolute; left: 40%; right: 40%; top: 3px; height: 1px; background: var(--ink-3); opacity: 0; }
   .ar-th:hover .ar-resize::after, .ar-th .ar-resize:hover::after { opacity: 1; }
@@ -718,12 +818,17 @@ STYLE = r"""
   .told-insp .kv dt { color: var(--ink-2); font-family: var(--mono); font-size: 11px; padding-top: 1px; overflow-wrap: anywhere; }
   .told-insp .kv dd { margin: 0; text-align: right; color: var(--ink); }
   .told-insp .kv dd.chg { color: var(--accent-ink); }
+  .told-insp .kv dd.pending { border-bottom: 1px dashed var(--warn); padding-bottom: 1px; }
+  .told-insp .kv dt.base-only { color: var(--ink-3); }
   .told-insp .meter { height: 6px; background: var(--well); border: 1px solid var(--line); position: relative; margin-top: 2px; }
   .told-insp .meter b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--c-char); }
   .told-insp .chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid currentColor; white-space: nowrap; }
   .told-insp .chip.prov { color: var(--warn); border-style: dashed; }
   .told-insp .chip.orph { color: var(--bad); }
   .told-insp .chip.ok { color: var(--good); }
+  .told-insp .chip.who { all: unset; display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid var(--line); color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+  .told-insp .chip.who.on { color: var(--ink); border-color: var(--accent); }
+  .told-insp .chip.who:hover { border-color: var(--accent-ink); }
   .told-insp .cab { display: grid; gap: 3px; padding: 7px 8px; border: 1px solid var(--line); background: var(--well); font-size: 12px; margin-bottom: 6px; }
   .told-insp .cab b { font-weight: 700; }
 
@@ -1316,6 +1421,20 @@ let AR_SELECTED_POINT = null, AR_SELECTED_CABLE = null;
 let AR_CABLE_DRAG = null;   // { fromPt } while alt-dragging a cable
 let AR_TEMPO_DRAFT = null;  // working copy of planned tempo points during a drag
 
+// the playhead inspector's base records (BOLO 90 step 7): parsed at build time
+// from canon (character-state-architecture protocol, base -> diffs -> derived
+// -> flags); keyed by the same subject id the tracking file's story points use.
+const AR_BASES = DATA.bases || {};
+// "Who" the inspector is assembled for — clicking a state track header or one
+// of its points in the Told lens (ruling 6) changes this; default is Tori.
+let AR_INSPECT_SUBJECT = 'character:victoria_midnight';
+function arSubjectForTrack(trackId){ return (AR_PTS.find(p => p.tr === trackId) || {}).subject || null; }
+function arSetInspectSubject(subject){
+  if (!subject || subject === AR_INSPECT_SUBJECT) return;
+  AR_INSPECT_SUBJECT = subject;
+  if (typeof renderDetail === 'function') renderDetail();
+}
+
 function arKeyMatch(pt, key){ return !!(pt && key && pt.subject === key.subject && pt.field === key.field && pt.at === key.at); }
 function arPKey(p){ return p.subject + '|' + p.field + '|' + p.at; }
 
@@ -1599,6 +1718,16 @@ function arHeaders(rows){
     d.style.top = r.y + 'px'; d.style.height = r.h + 'px';
     d.style.setProperty('--k', r.k || 'var(--line-2)');
     d.innerHTML = `<span class="nm">${r.term ? `<span class="t" data-tt="gloss" data-id="${r.term}">${esc(r.nm)}</span>` : esc(r.nm)}</span><span class="sub">${esc(r.sub || '')}</span>`;
+    // clicking a character/place state track's header selects that subject for
+    // the playhead inspector (ruling 6) — works in any ruler view, edit mode or not
+    if (!r.ruler && r.id && AR_SUBJECTS_WITH_POINTS.includes(r.id)) {
+      const subject = arSubjectForTrack(r.id);
+      if (subject) {
+        d.classList.add('ar-th-pick');
+        if (subject === AR_INSPECT_SUBJECT) d.classList.add('ar-th-sel');
+        d.addEventListener('click', () => arSetInspectSubject(subject));
+      }
+    }
     if (!r.ruler && r.id && TS_STATE.view === 'told') {
       const hd = document.createElement('div');
       hd.className = 'ar-resize'; hd.title = 'Drag to resize this lane · double-click to reset';
@@ -1933,6 +2062,78 @@ function arValAt(arr, p, ramp){
   return arr[arr.length - 1].v;
 }
 const AR_FREE_LBL = { '0': '0 · Neutral', '-1': '− Conformity', '-2': '−− Control', '-3': '−−− Captivity' };
+
+// ---- the assembled record (BOLO 90 step 7): base record + pending-replayed
+// diffs, per ssot_02_character_state_architecture.md's query protocol (base ->
+// diffs -> derived -> flags) — one subject (ruling 6's "Who"), at the playhead.
+const AR_LAYER_CODE_RE = /^([LS]\d+)_/;
+function arLayerCode(field){ const m = AR_LAYER_CODE_RE.exec(field || ''); return m ? m[1] : null; }
+function arTrim90(s){ s = String(s == null ? '' : s); return s.length > 90 ? s.slice(0, 89) + '…' : s; }
+// latest point (base yaml or a replayed pending edit — arBuildEditable already
+// folded both into AR_PTS) at or before the playhead, one per exact field
+function arSubjPointsAt(subject, ph){
+  const byField = new Map();
+  for (const p of AR_PTS) {
+    if (p.subject !== subject || p.p > ph + 1e-6) continue;
+    const cur = byField.get(p.field);
+    if (!cur || p.p >= cur.p) byField.set(p.field, p);
+  }
+  return byField;
+}
+function arKnownSubjects(){
+  const s = new Set();
+  for (const id of AR_SUBJECTS_WITH_POINTS) { const full = arSubjectForTrack(id); if (full) s.add(full); }
+  for (const k of Object.keys(AR_BASES)) s.add(k);
+  return Array.from(s);
+}
+function arWhoRowHtml(){
+  const subs = arKnownSubjects();
+  if (subs.length < 2) return '';
+  return `<div class="grp" style="margin-bottom:10px"><div class="glbl"><i></i>Who</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">${subs.map(s => `<button type="button" class="chip who${s === AR_INSPECT_SUBJECT ? ' on' : ''}" data-whosubj="${esc(s)}">${esc(arSubjLabel(s))}</button>`).join('')}</div></div>`;
+}
+function arAssembledRecordHtml(subject, ph){
+  const base = AR_BASES[subject] || null;
+  const isPlace = arIsPlace(subject);
+  const byField = arSubjPointsAt(subject, ph);
+  let html = arWhoRowHtml();
+  html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:${isPlace ? 'var(--c-place)' : 'var(--c-char)'}"><i></i>${esc(arSubjLabel(subject))}${base ? '' : ' — no base record yet'}</div>`;
+  if (base) {
+    html += '<dl class="kv">';
+    for (const l of base.layers) {
+      const disp = isPlace ? arTrim90(l.value) : l.value;
+      const title = isPlace ? l.value : (l.fed_by ? `Fed by: ${l.fed_by}` : '');
+      const subs = [];
+      for (const [field, pt] of byField) { if (arLayerCode(field) === l.code) subs.push({ field, pt }); }
+      if (!subs.length) {
+        html += `<dt class="base-only" title="${esc(title)}">${esc(l.code)} ${esc(l.name)}</dt><dd title="${esc(title)}">${esc(disp)}</dd>`;
+        continue;
+      }
+      for (const s of subs) {
+        const sub = s.field.includes('.') ? s.field.split('.').slice(1).join('.') : s.field;
+        const pend = s.pt._pendingEdit ? ' pending' : '';
+        html += `<dt title="${esc(title)}">${esc(l.code)} ${esc(l.name)} · ${esc(sub)}</dt>
+          <dd class="chg${pend}">${esc(disp)} → ${esc(String(s.pt.value))} <span class="mono" style="font-size:10px;color:var(--ink-3)">${esc(s.pt.at)}</span>${s.pt.origin_event ? ' · ' + esc(s.pt.origin_event) : ''}${s.pt._pendingEdit ? ' <span class="chip prov">pending</span>' : ''}</dd>`;
+      }
+    }
+    html += '</dl>';
+  }
+  html += '</div>';
+  const stateRows = [];
+  for (const [field, pt] of byField) { if (!arLayerCode(field)) stateRows.push({ field, pt }); }
+  stateRows.sort((a, b) => a.field.localeCompare(b.field));
+  html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:var(--ink-3)"><i></i>State</div><dl class="kv">`;
+  html += stateRows.length
+    ? stateRows.map(s => `<dt>${esc(s.field)}</dt><dd class="${s.pt._pendingEdit ? 'chg pending' : ''}">${esc(String(s.pt.value))} <span class="mono" style="font-size:10px;color:var(--ink-3)">${esc(s.pt.at)}</span>${s.pt._pendingEdit ? ' <span class="chip prov">pending</span>' : ''}</dd>`).join('')
+    : `<dt>no change yet</dt><dd>—</dd>`;
+  html += `</dl></div>`;
+  html += `<p class="note" style="font-size:12.5px;color:var(--ink-2)">derived: none ruled yet</p>`;
+  if (base && base.flags.length) {
+    html += `<div class="grp"><div class="glbl" style="--k:var(--c-char)"><i></i>Flags</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">${base.flags.map(f => `<span class="chip${f.state === 'active' ? ' ok' : f.state === 'pending' ? ' prov' : ''}" title="${esc(f.state)}">${esc(f.name)}</span>`).join('')}</div></div>`;
+  }
+  return html;
+}
 function toldInspectorHtml(){
   if (!AR_SCENES.length) return '<p class="empty-detail">No scenes in the tracking file yet.</p>';
   if (TS_STATE.view === 'world') {
@@ -1948,15 +2149,10 @@ function toldInspectorHtml(){
       <p class="note" style="font-size:12.5px;color:var(--ink-2)">Drag the playhead across the backstory to watch the live name flip at each rename. Flip to <span class="t" data-tt="gloss" data-id="told">told order</span> or <span class="t" data-tt="gloss" data-id="stack">stack</span> for the told-order read.</p>`;
   }
   const c = arCodeAt(TS_STATE.ph);
-  const upTo = tr => { const o = {}; for (const p of AR_PTS) if (p.tr === tr && p.p <= TS_STATE.ph + 1e-6) o[p.field] = { v: p.value, recent: TS_STATE.ph - p.p < c.sc.num * 1.01 }; return o; };
-  const kv = o => Object.keys(o).length ? Object.entries(o).map(([k, x]) => `<dt>${esc(k)}</dt><dd class="${x.recent ? 'chg' : ''}">${esc(String(x.v))}</dd>`).join('') : `<dt>no change yet</dt><dd>base</dd>`;
   let html = `<h3 style="margin:0 0 2px;font-family:var(--display);font-weight:800;font-size:18px;text-transform:uppercase">${esc(c.sc.mv)} · ${esc(c.sc.q)} · ${esc(c.sc.s)} · ${c.sc.num}/${c.sc.den}</h3>
     <div style="font-size:14px;margin-bottom:4px">${esc(c.sc.label)}</div>
     <div class="mono" style="font-size:12.5px;color:var(--ink-3);background:var(--well);border:1px solid var(--line);padding:5px 7px;margin-bottom:10px">${esc(c.text)}</div>`;
-  for (const subj of AR_SUBJECTS_WITH_POINTS) {
-    const track = AR_TRACKS.find(t => t.id === subj);
-    html += `<div class="grp" style="margin-bottom:10px"><div class="glbl" style="--k:${track ? track.k : 'var(--c-char)'}"><i></i>${esc(arSubjLabel(subj.includes(':') ? subj : 'character:' + subj))} · state</div><dl class="kv">${kv(upTo(subj))}</dl></div>`;
-  }
+  html += arAssembledRecordHtml(AR_INSPECT_SUBJECT, TS_STATE.ph);
   for (const a of AR_AUTOMATION) {
     if (!a.points.length) continue;
     const v = arValAt(a.points, TS_STATE.ph);
@@ -2042,6 +2238,14 @@ function toldInspectorHtml(){
   }
   lane.addEventListener('pointerdown', e => {
     const r = lane.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    // clicking a story point selects its subject for the playhead inspector
+    // (ruling 6) whether or not edit mode is on — falls through to the
+    // existing edit-mode drag/select logic below unchanged
+    const ptElAny = e.target.closest('[data-ptkey]');
+    if (ptElAny) {
+      const ptAny = AR_PTS.find(p => arPKey(p) === ptElAny.dataset.ptkey);
+      if (ptAny && ptAny.subject) arSetInspectSubject(ptAny.subject);
+    }
     if (arEditable()) {
       const ptEl = e.target.closest('[data-ptkey]');
       if (ptEl) {
@@ -2195,6 +2399,8 @@ function renderDetail(){
 $('#detail').addEventListener('click', e => {
   const t = e.target.closest('.detail-tabs button');
   if (t){ detailTab = t.dataset.t; renderDetail(); return; }
+  const who = e.target.closest('[data-whosubj]');
+  if (who){ arSetInspectSubject(who.dataset.whosubj); return; }
   const trait = e.target.closest('.trait.linked');
   if (trait){ detailTab = 'detail'; select('event', trait.dataset.event); return; }
 });
