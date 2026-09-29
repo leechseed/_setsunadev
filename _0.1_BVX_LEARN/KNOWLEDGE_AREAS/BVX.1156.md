@@ -231,10 +231,10 @@ Kingdom's real export for a written setting is the Crossroad: a device for stagi
 
 | Related entry | Relation |
 |---|---|
-| [[BVX.0465]] | Microscope: A Fractal Role-Playing Game of Epic Histories — same designer (Ben Robbins); the book's own "Mixing with Microscope" chapter treats Kingdom as the zoom-in engine for a single turning point inside a Microscope history, and Microscope as the zoom-out engine for what a Kingdom's Crossroads lead to or came from |
-| [[BVX.0458]] | The Kobold Guide to Worldbuilding — sibling SETTING-shelf source; Baur's tribe/city-state/nation binding-principle essay is the static structure Kingdom's Crossroad procedure sets in motion: Kingdom shows the LAW mechanism actually running a decision |
-| [[BVX.1146]] | GURPS Space (4th ed.) — sibling S4 LAW source; GURPS catalogs government types and Control Rating as static traits, where Kingdom generates a specific decision inside whatever government the table already has |
-| [[BVX.0349]] | Against Worldbuilding, and Other Provocations — counter-argument sibling; Kingdom's refusal to let players write "what's your Kingdom for" on a sheet is a structural answer to the same over-planning failure mode this source warns against |
+| [[BVX.0465]] | Microscope — same designer (Ben Robbins); its own "Mixing with Microscope" chapter treats Kingdom as the zoom-in engine for one turning point inside a Microscope history, and Microscope as the zoom-out engine for what a Crossroad leads to or came from |
+| [[BVX.0458]] | The Kobold Guide to Worldbuilding — sibling SETTING source; Baur's tribe/city-state/nation essay is the static structure Kingdom's Crossroad sets in motion, LAW actually running a decision |
+| [[BVX.1146]] | GURPS Space (4th ed.) — sibling S4 LAW source; GURPS catalogs government types as static traits, where Kingdom generates one decision inside whatever government the table has |
+| [[BVX.0349]] | Against Worldbuilding — counter-argument sibling; refusing to let players write "what's your Kingdom for" on a sheet answers the same over-planning failure mode this source warns against |
 
 ---
 
