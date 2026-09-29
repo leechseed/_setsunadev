@@ -11,6 +11,7 @@ from pathlib import Path
 R = Path(__file__).parent
 D = R / "data" / "domains"
 idx = json.loads((D / "index.json").read_text(encoding="utf-8"))
+defs = json.loads((D / "defs.json").read_text(encoding="utf-8")) if (D / "defs.json").exists() else {}  # first sentences for index lines with no def
 links = {}
 for l in (D / "tropes.jsonl").read_text(encoding="utf-8").splitlines():
     if l.strip():
@@ -25,7 +26,7 @@ reg = {}
 for s, v in idx.items():
     if not v.get("domains"): continue
     k = keys.get(s, {})
-    reg[s] = {"name": v["name"], "def": v["def"], "domains": v["domains"], "keys": k.get("keys", {}),
+    reg[s] = {"name": v["name"], "def": v["def"] or defs.get(s, ""), "domains": v["domains"], "keys": k.get("keys", {}),
               "conf": k.get("conf"), "links": links.get(s, [])}
 (D / "register.json").write_text(json.dumps(reg, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 ORDER = {"character": [f"L{i}" for i in range(1, 13)], "sexuality": [f"L{i}" for i in range(1, 13)],
