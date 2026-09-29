@@ -156,7 +156,7 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Ten chapters plus three appendices, bookended by design principle: Chapter 1 states the setting's non-negotiable twists before any gazetteer detail, and Chapter 10 (The Pantheon) closes the substantive content by explaining the mechanism that keeps 30-plus gods legible. Everything between is regional detail built on the same card.
+Ten chapters plus three appendices, bookended by design: Chapter 1 states the setting's twists before any gazetteer detail, and Chapter 10 closes by explaining the mechanism keeping 30-plus gods legible. Everything between is regional detail built on the same card.
 
 | Chapter | Scale | Governing content |
 |---|---|---|
