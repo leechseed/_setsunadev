@@ -1,7 +1,7 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.5
+version: 0.1.6
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
 status: "v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
@@ -156,7 +156,7 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 | **2 · the LAKAD era** | LAKAD (codename) | cislunar space | band only; no events on record |
 | **3 · the ASTRO7EX era** | ASTRO7EX | the Moon | band only; its backstory's own events are not yet loaded |
 
-**The hinge ⧗:** the **Moon Severance** and the **AI Collapse** (named in ASTRO7EX's Dramatica reports, `.ASTRO7EX.SYNC.JOPLIN/`) close the LAKAD era and open the ASTRO7EX era, as ASTRO7EX backstory. Placement is provisional until Chief places it. Future ids: `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse` ⧗.
+**The hinge (RULED 2026-09-29, Chief: "number two, yes"): the Deep Meridian beam.** At **Deep Meridian**, a geothermal drill front at a caldera run like a navy (its crews, the Drill Rangers, seal themselves behind rock on suicide missions), a needle probe into "the old city", a pressurized hot-water chamber, loses control and fires **a beam of radiation that punches a hole a mile wide into the sky. The beam signals the quasar that reaches the time of Vivian** (ASTRO7EX), "a century or two after" on the surface. **The Moon Severance and the AI Collapse** (ASTRO7EX's Dramatica reports, `.ASTRO7EX.SYNC.JOPLIN/`) follow from it ⧗ (order and mechanism not yet placed). In-world holidays: **Laser Core Admissions Day**, the day after **Space Laser Repentance Day**. Source: Chief's Apple Notes 2025 (BOLO 91). Future ids ⧗: `deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
 
 **Superseded, kept as history:** on 2026-02-09 Chief ruled the three "occur simultaneously… one entire eon" (`_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md`). The eon still holds as the umbrella; its inside is now three eras in order. Each era's movements keep their own `Mn` dating; an era prefix (`era: dcus | lakad | astro7ex`) is read when the clock spans stories. The story list lives in the [story registry](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md) (BOLO 82).
 
@@ -396,6 +396,7 @@ causal_edges: []   # no stated causal edge to the crash's data-deletion mechanis
 
 ## Version history
 
+- **0.1.6 — 2026-09-29.** The hinge ruled (Chief: "number two, yes"): the Deep Meridian beam signals the quasar that reaches Vivian's time; the Moon Severance and the AI Collapse follow ⧗.
 - **0.1.5 — 2026-09-29.** THE WORLD CLOCK gains the universe eras (RULED, Chief: "yes to all recommendations"): DCUS → LAKAD → ASTRO7EX, sequential with overlap at the seams; the Moon Severance + AI Collapse as the ⧗ hinge; the 2/9 "simultaneous" ruling kept as superseded history; applies_to gains LAKAD and ASTRO7EX.
 - **v0.1.4 (2026-09-29):** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE WORLD CLOCK gains a short paragraph on backstory events: deep past with no Mn carries `movement: "backstory"` and `event_id: backstory_<slug>`, additive to the existing `<movement>_<slug>` grammar. No event records changed.
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 1, "go 77" ruled 2026-09-24. Built from three disjoint extractions: PS1 (syuzhet-side hooks, DCUS setting facts), PS2 (the twelve-layer origin-moment rule, the state architecture v1.0 gap, Tori's dated backstory), MS-T (the fabula/syuzhet/trope-graph theory digest, Bal/Chatman/Genette/Rimmon-Kenan/Wolf/Sternberg/Propp). Instance scoped to Tori only per the ruled default; EVIL CHECK's events reserved for wave 2; the state architecture v1.1 patch spec ships inside THE HANDSHAKE rather than in the state doc itself, pending OPEN call 6.
