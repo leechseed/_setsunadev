@@ -51,3 +51,10 @@ captured: 2026-08-26
 - The Sync-dive girl — new character seed; name, chart, whether she survives knowing what she'll find.
 - Where it sits — nested storyform (R6, episode-scale argument) vs plot thread inside the primary form; likely M2–M3.
 - The tone register's scope — this story only, or a ruled register available series-wide.
+
+
+## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
+
+- **fantasy:** Hearing the thing nobody admits hearing — and being the one who says it out loud *(three-check pass 1.0, kept 2026-09-29; F4)*
+- **sexy:** Its job is dread in a comic register; heat here would blunt the horror *(three-check pass 1.0, kept 2026-09-29; S4)*
+- **aesthetic:** The hole — a thousand-foot circle of nothing; the purest shape in canon *(three-check pass 1.0, kept 2026-09-29; A4)*

@@ -1,22 +1,22 @@
 ---
 type: ssot_01_narrative_frameworks
 category: three_check_pass
-version: 0.1.0
-last_updated: 2026-08-31
-status: DRAFT — BOLO 21 fired 2026-08-31; every line below is ⧗ (Claude draft) until Chief keeps or speaks it over. Kept lines migrate to the owning entity sheets and this file records the pass.
+version: 1.0.0
+last_updated: 2026-09-29
+status: canonical — 1.0; all 36 lines KEPT by Chief 2026-09-29 ('keep all'); S2 and A2 stay open as Anna gaps until her sheet is authored
 purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy Check · Aesthetic Check over the flagship canon roster. Three sweeps, never bundled per element."
 dependencies: ["ssot_01_modern_poetics"]
 trunk: BLACK/ORANGE
 ---
 
-# 📐 THE THREE-CHECK PASS — sweep 1, flagship roster (all lines ⧗)
+# 📐 THE THREE-CHECK PASS — sweep 1, flagship roster (canonical 1.0)
 
 **Roster (12):** Tori · Anna · DCUS · The Drop · the Sync-dive · the Star-Rating · the storyform · the scream etiquette · the Story Lattice · the Collision Engine · DARKROOM · the taxonomy engine.
-**Protocol:** Chief strikes/keeps by number (F/S/A + row). Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.
+**Protocol:** Chief struck/kept by number (F/S/A + row); ruled 2026-09-29 'keep all'. Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.
 
-## SWEEP 1 · FANTASY DRIVE (P8) — ⧗ all
+## SWEEP 1 · FANTASY DRIVE (P8) — all
 
-| # | Element | ⧗ the intended fantasy |
+| # | Element | the intended fantasy |
 |---|---|---|
 | F1 | Tori | Being untouchable at the wheel — one arena where desire and action fuse and nobody can own you |
 | F2 | Anna | The rival who reads you perfectly — being *seen* whole by the one person you can't afford to trust |
@@ -31,9 +31,9 @@ trunk: BLACK/ORANGE
 | F11 | DARKROOM | Commander at the light table — sixty thousand pieces of desire sorted at your word |
 | F12 | Taxonomy engine | Your own taste mapped from orbit — seeing the shape of what you want |
 
-## SWEEP 2 · SEXY CHECK (P9) — ⧗ all
+## SWEEP 2 · SEXY CHECK (P9) — all
 
-| # | Element | Verdict | ⧗ the line |
+| # | Element | Verdict | the line |
 |---|---|---|---|
 | S1 | Tori | **YES** | Labor-built body, grease and sweat, striking *because* nonconforming — the trine makes desire and action one motion |
 | S2 | Anna | **YES — thin** | The manipulator-equal is an erotic archetype; carries by role only until her body/chart is authored (gap) |
@@ -48,9 +48,9 @@ trunk: BLACK/ORANGE
 | S11 | DARKROOM | **YES** | Deliberately — amber on void-black, the loupe, the corpus itself; a browser you want to touch |
 | S12 | Taxonomy engine | **YES** | By content — it is literally the desire archive becoming legible |
 
-## SWEEP 3 · AESTHETIC CHECK (P10) — ⧗ all — carrier: COLOR / SHAPE / TEXTURE
+## SWEEP 3 · AESTHETIC CHECK (P10) — all — carrier: COLOR / SHAPE / TEXTURE
 
-| # | Element | Carrier | ⧗ the line |
+| # | Element | Carrier | the line |
 |---|---|---|---|
 | A1 | Tori | **TEXTURE** (color 2nd) | Grease under nails, sweat, improvised gear — against the neon-blue verified glow |
 | A2 | Anna | **GAP** | No visual tissue authored — flagged; her line lands with her sheet |
@@ -67,9 +67,27 @@ trunk: BLACK/ORANGE
 
 ## NEXT
 
-- Chief strikes/keeps by number; kept lines migrate to entity sheets.
+- Done 2026-09-29: all 36 kept; migrated where a sheet exists (table below).
 - Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.
 - A2 gap rides Anna's sheet authoring (also blocks the Tori×Anna collision proof).
 
+## WHERE EACH LINE LANDED
+
+| Element | Lines | Landed at |
+|---|---|---|
+| Tori | F1 S1 A1 | `_CANON_NODES/victoria-midnight.md` |
+| Anna | F2 (S2, A2 open) | `_CANON_NODES/anna-colson-conway.md` (F2 only); S2 thin and A2 GAP stay here until her sheet is authored |
+| DCUS | F3 S3 A3 | `_CANON_NODES/delta-coast-ultra-school.md` |
+| The Drop | F4 S4 A4 | `_CANON_NODES/oxo-the-drop-seed.md` |
+| Sync-dive | F5 S5 A5 | no sheet yet — the line lives here |
+| Star-Rating | F6 S6 A6 | no sheet yet — the line lives here |
+| The storyform | F7 S7 A7 | `_CANON_NODES/oxo-storyform.md` |
+| Scream etiquette | F8 S8 A8 | no sheet yet — the line lives here |
+| Story Lattice | F9 S9 A9 | no sheet yet — the line lives here |
+| Collision Engine | F10 S10 A10 | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_collision_engine.md` |
+| DARKROOM | F11 S11 A11 | no sheet yet — the line lives here |
+| Taxonomy engine | F12 S12 A12 | no sheet yet — the line lives here |
+
 ## Version history
 - **0.1.0 — 2026-08-31.** Sweep 1 drafted, 12 elements, all ⧗.
+- **1.0.0 — 2026-09-29.** Chief ruled "keep all": all 36 lines kept, ⧗ marks stripped, status canonical. Migrated to six sheets (Tori, Anna F2 only, DCUS, The Drop, storyform, Collision Engine); six elements have no sheet yet; S2/A2 remain Anna gaps.

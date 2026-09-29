@@ -40,7 +40,15 @@ DOMAIN_SEEDS = {
     "DeathTropes": "theme", "FamilyTropes": "theme", "BetrayalTropes": "theme",
     "RevengeTropes": "theme", "AuthorityTropes": "theme", "MemoryTropes": "theme",
     "TheSecretIndex": "theme", "PromisesAndVowsIndex": "theme",
+    # 9/29 session 4, WAVE A (Chief: "more pulls on tvtropes.com" → "all recs"; probed by probe.py):
+    # narration → texture (T1–T12) · time → tracking · OXO's world + war → setting
+    "NarrativeDevices": "texture", "FramingDevice": "texture", "NarrativeTropes": "texture", "PointOfView": "texture",
+    "TimeTropes": "tracking",
+    "ReligionTropes": "setting", "SchoolTropes": "setting", "MotorVehicleTropes": "setting",
+    "CyberpunkTropes": "setting", "ThisIsYourIndexOnDrugs": "setting", "MilitaryAndWarfareTropes": "setting",
 }
+# WAVE B (queued, same ruling): theme (LoveTropes · Power · EmotionTropes · IdentityIndex) and style
+# (LanguageTropes · CostumeTropes · GraphicalTropes · LightingTropes · AmazingTechnicolorIndex) — add after wave A keys.
 LINK = re.compile(r"""<a class='twikilink' href='/pmwiki/pmwiki\.php/Main/([A-Za-z0-9]+)'[^>]*>(.*?)</a>""", re.S)
 ENTRY = re.compile(r"""<li>\s*<a class='twikilink' href='/pmwiki/pmwiki\.php/Main/([A-Za-z0-9]+)'[^>]*>(.*?)</a>\s*:?\s*(.*?)</li>""", re.S)
 

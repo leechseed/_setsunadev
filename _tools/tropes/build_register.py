@@ -31,7 +31,12 @@ for s, v in idx.items():
               "conf": k.get("conf"), "links": links.get(s, [])}
 (D / "register.json").write_text(json.dumps(reg, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 ORDER = {"character": [f"L{i}" for i in range(1, 13)], "sexuality": [f"L{i}" for i in range(1, 13)],
-         "setting": [f"S{i}" for i in range(1, 13)], "genre": [f"G{i}" for i in range(1, 13)], "theme": ["R1", "R2", "R3", "R4"]}
+         "setting": [f"S{i}" for i in range(1, 13)], "genre": [f"G{i}" for i in range(1, 13)], "theme": ["R1", "R2", "R3", "R4"],
+         # 9/29 session 4 (wave A/B, "all recs"): texture keys to T1–T12 (ssot_01_texture_system) · tracking keys to the
+         # ssot_08 parts · style keys to the two 06 guides that carry look and language
+         "texture": [f"T{i}" for i in range(1, 13)],
+         "tracking": ["world_clock", "told_order", "grid", "story_point", "cable", "tempo"],
+         "style": ["06.1", "06.3"]}
 by = defaultdict(list)
 for s, r in reg.items():
     for d, k in r["keys"].items():

@@ -189,3 +189,10 @@ The entered form rotates the morning's four perspective assignments — every ru
 **Plot appreciations:** Goal **The Past** · Consequence **Memories** · Cost **Developing a Plan** · Dividend **Understanding** · Requirement **The Present** · Prerequisite **Contemplation** · Precondition **Conceiving an Idea** · Forewarnings **Gathering Information**
 
 **Noted:** even rotated, the engine handed back the story's own poetry — Goal = The Past, Consequence = Memories: fail to reclaim the past and the memories are forfeit. The Master Bible's LOCKED cost ("Memories — personal history deleted for programming space") surfaces here as the **Consequence**, one slot over. Act-by-act variation quads per throughline live in `plot_sequence.TXT`.
+
+
+## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
+
+- **fantasy:** Losing everything and being right — walking out of the wreck holding the one thing that mattered *(three-check pass 1.0, kept 2026-09-29; F7)*
+- **sexy:** Chassis, not skin; it protects the heat (Failure/Good keeps every cost real) *(three-check pass 1.0, kept 2026-09-29; S7)*
+- **aesthetic:** Personal Triumph geometry — a fall that lands upright; Goal=The Past runs the story facing backward *(three-check pass 1.0, kept 2026-09-29; A7)*

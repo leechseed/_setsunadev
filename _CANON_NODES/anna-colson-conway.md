@@ -204,3 +204,8 @@ Her name is ruled: **Anna Colson Conway**. Legacy identity: "Colson," Student Bo
 ## ⚠️ Naming
 
 **RULED 2026-09-23: the short form is Anna Colson**, never bare "Anna".
+
+
+## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
+
+- **fantasy:** The rival who reads you perfectly — being *seen* whole by the one person you can't afford to trust *(three-check pass 1.0, kept 2026-09-29; F2)*

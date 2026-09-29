@@ -226,3 +226,10 @@ Missing: 9 storyform dynamics (driver, goal, consequence, cost, dividend, forewa
 - The series is **The Outliers**. Never "The Outsiders" — an *Outlier* is a high-value statistical anomaly the system acquires and rebuilds, and Tori's whole arc is becoming a true one. "Outsider" destroys the meaning. Your largest single conversation is titled `THE OUTSIDERS SYSTEM`.
 - **Quinn Bishop.** Not "Quinton."
 - There is no character named **Barnes**.
+
+
+## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
+
+- **fantasy:** Being untouchable at the wheel — one arena where desire and action fuse and nobody can own you *(three-check pass 1.0, kept 2026-09-29; F1)*
+- **sexy:** Labor-built body, grease and sweat, striking *because* nonconforming — the trine makes desire and action one motion *(three-check pass 1.0, kept 2026-09-29; S1)*
+- **aesthetic:** Grease under nails, sweat, improvised gear — against the neon-blue verified glow *(three-check pass 1.0, kept 2026-09-29; A1)*

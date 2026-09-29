@@ -59,3 +59,10 @@ The Southern Ultra School · Red Hills Ultra School · The Ultra School at Red H
 
 - **Unblocked:** Movements 2–4 can name their setting; every school open problem in `_OXO_SCHOOL_HANDOFF/00_START_HERE.md` §5 (faculty · curriculum · Star-Rating mechanics · ownership-war wiring · legacy-cast reconciliation) now hangs off a ruled name.
 - **Still blocking Tori:** the Dramatica storyform extraction (STATE #1) and the IC ruling (STATE #2). The name ruling does not touch them.
+
+
+## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
+
+- **fantasy:** Getting the letter from the school that eats people — being special enough that the trap wants YOU *(three-check pass 1.0, kept 2026-09-29; F3)*
+- **sexy:** Seduction is its mechanism — an institution that *wants* you; feed-linked clothing makes the gaze a uniform *(three-check pass 1.0, kept 2026-09-29; S3)*
+- **aesthetic:** Southern Gothic rot: kudzu over century brick, a product word bolted onto prestige stone *(three-check pass 1.0, kept 2026-09-29; A3)*

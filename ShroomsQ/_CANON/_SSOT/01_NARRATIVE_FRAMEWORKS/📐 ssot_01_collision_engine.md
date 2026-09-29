@@ -83,3 +83,10 @@ Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victo
 ## Version history
 
 - **1.0.0 — 2026-08-26.** Built on Chief's go (BOLO 17): four classes, contact vocabulary, output contract, Tori×DCUS twelve-row proof run from canon.
+
+
+## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)
+
+- **fantasy:** God of chemistry — cast two charts and read the sparks off the table *(three-check pass 1.0, kept 2026-09-29; F10)*
+- **sexy:** Synastry is *about* chemistry; the tool stays clinical so the output can burn *(three-check pass 1.0, kept 2026-09-29; S10)*
+- **aesthetic:** The mirror diagonal; aspect angles as architecture *(three-check pass 1.0, kept 2026-09-29; A10)*
