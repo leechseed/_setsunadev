@@ -8,8 +8,10 @@ definition, which indexes list it, and the Main/ links inside each trope's artic
 Direct fetch with a browser user agent (proven 9/23; WebFetch gets 403).
 Polite: one request a second, resumable (a slug already in the cache is skipped).
 
-usage: python _tools/tropes/fetch.py [--limit N]
+usage: python _tools/tropes/fetch.py [--limit N] [--domains] [--index-only]
 out:   _tools/tropes/data/index.json · _tools/tropes/data/tropes.jsonl
+       --domains: _tools/tropes/data/domains/ (BOLO 89, the cross-domain register;
+       each index entry also carries `domains`)
 """
 import html, json, re, sys, time, urllib.request
 from pathlib import Path
@@ -24,6 +26,17 @@ OUT = Path(__file__).parent / "data"
 SEEDS = ["Plots", "BeginningTropes", "CallToAdventure", "ClimacticTropes", "EndingTropes",
          "FlashbacksAndChronology", "GoalsAndObjectivesIndex", "TheHerosJourney", "PlotTwist",
          "RomanceArc"]
+# BOLO 89 (ruled 9/29): the cross-domain pull, seed -> domain. Probed 9/29; the thematic
+# indexes dropped from the plot pull on 9/24 are the theme domain here.
+DOMAIN_SEEDS = {
+    "CharactersAsDevice": "character", "CharacterizationTropes": "character",
+    "ArchetypalCharacter": "character",
+    "Settings": "setting",
+    "Genres": "genre", "GenreTropes": "genre",
+    "SexTropes": "sexuality", "QueerRomance": "sexuality",
+    "Death": "theme", "TruthAndLies": "theme", "Family": "theme", "Betrayal": "theme",
+    "Revenge": "theme", "FateAndProphecy": "theme",
+}
 LINK = re.compile(r"""<a class='twikilink' href='/pmwiki/pmwiki\.php/Main/([A-Za-z0-9]+)'[^>]*>(.*?)</a>""", re.S)
 ENTRY = re.compile(r"""<li>\s*<a class='twikilink' href='/pmwiki/pmwiki\.php/Main/([A-Za-z0-9]+)'[^>]*>(.*?)</a>\s*:?\s*(.*?)</li>""", re.S)
 
@@ -49,7 +62,11 @@ def text(s):
 
 
 def main():
+    global OUT, SEEDS
     limit = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 2000
+    domains = "--domains" in sys.argv
+    if domains:
+        OUT, SEEDS, limit = OUT / "domains", list(DOMAIN_SEEDS), max(limit, 10000)
     OUT.mkdir(parents=True, exist_ok=True)
     idx_path, tr_path = OUT / "index.json", OUT / "tropes.jsonl"
     index = json.loads(idx_path.read_text(encoding="utf-8")) if idx_path.exists() else {}
@@ -71,10 +88,18 @@ def main():
             e = index.setdefault(slug, {"name": text(name), "def": text(d)[:300], "indexes": []})
             if seed not in e["indexes"]:
                 e["indexes"].append(seed)
+            if domains and DOMAIN_SEEDS[seed] not in e.setdefault("domains", []):
+                e["domains"].append(DOMAIN_SEEDS[seed])
             n += 1
         print(f"index {seed:28} {n:4} entries")
         idx_path.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
         time.sleep(1)
+
+    if "--index-only" in sys.argv:
+        from collections import Counter
+        c = Counter(d for v in index.values() for d in v.get("domains", []))
+        print(f"index: {len(index)} unique · by domain {dict(c)} · multi-domain {sum(len(v.get('domains', [])) > 1 for v in index.values())}")
+        return
 
     # 2 · every listed trope: its outbound Main/ links (the raw edges)
     todo = [s for s in index if s not in done][:limit]
