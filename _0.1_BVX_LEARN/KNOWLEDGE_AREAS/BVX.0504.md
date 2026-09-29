@@ -140,7 +140,7 @@ Three chapters, three jobs, read as one setting-craft argument:
 | Ch. 14, Literary Studies and RPGs | Jara & Torner | Imports narratology and textual-interpretation tools: what counts as "the text," fictive blocks, paratexts, canon, the ludology-vs-narratology debate. |
 | Ch. 20, Worldbuilding in Role-Playing Games | Schrier, Torner & Hammer | The direct setting-craft chapter: defines the six world-types, the mythos/topos/ethos/color quality-axes, the documentation stack (canon/fringe/metatext/bible), and the three worldbuilding-authority models. |
 
-The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch. 20) is to refuse a single essentialist definition and instead ask "what is useful if we see X as ___?", applied first to "role-playing game," then implicitly to "world."
+The book's unifying move, stated in Ch. 2 and re-enacted in Ch. 20, is to refuse a single essentialist definition and ask "what is useful if we see X as ___?" — applied first to "role-playing game," then implicitly to "world."
 
 ---
 
@@ -155,7 +155,7 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 | **Core canon** | The official elements agreed on by makers and audience; always a negotiation, not a fixed deliverable | Canon disputes (what "really" happened) are evidence the world is alive enough to fight over |
 | **Fringe / semi-canon** | Unofficial or half-accepted material: zines, wikis, fan theories, local house-canon | A world without a fringe has no interpretive community forming around it; fringe growth is a health signal |
 | **Metatext** | Extra-diegetic material (wikis, maps, timelines) that describes or organizes the world from outside it | Distinguishes "world material" (in-world) from "world documentation" (about the world); both matter, in different ways |
-| **World bible / core book** | The organizing document that establishes a world for production; format differs sharply by RPG type (TRPG core books vs. sensory exploration in CRPGs vs. blue-sheet handouts in larp) | The delivery medium for setting material is itself a design decision, not an afterthought |
+| **World bible / core book** | The document that establishes a world for production; format differs by RPG type (TRPG core books, sensory exploration in CRPGs, blue-sheet handouts in larp) | The delivery medium for setting material is itself a design decision |
 | **Bottom-up / top-down / co-creation worldbuilding** | Three authority models: players build the world through play (Microscope, The Quiet Year); designers pre-build a rich world players inhabit (WoW, Mass Effect); both share the load (Landmark, TRPG house rules) | Naming the model up front prevents a table or a writing team from silently drifting between them |
 | **Willing activation of pretense** (Saler) | An active, chosen belief in the secondary world, distinct from passive "suspension of disbelief" | Reframes audience buy-in as something the world must earn through craft, not something owed to it by genre |
 | **Fictive blocks** (Mackay) | Reusable literary motifs, tropes, and themes that let players and designers build on each other's input in real time without breaking the fiction | The unit of improvisation in collaborative worldbuilding: a table runs on shared blocks, not shared plans |
@@ -172,7 +172,7 @@ The book's own unifying move (stated explicitly in Ch. 2, then re-enacted in Ch.
 | Checking whether a setting is actually working | Audit it against mythos, topos, ethos, and color separately | Judge it as one vague "does it feel real" impression |
 | Deciding what's official | Write down the core canon explicitly, even for a wholly original world | Assume "everyone just knows" what counts as true |
 | Handling fan theories, house rules, or discarded drafts | Let them live as fringe/semi-canon rather than deleting them | Treat anything not in the "real" canon as waste |
-| Choosing how to document the world | Match the medium to the audience: a core book for TRPG-style depth, sensory reveal for exploration-style media, a blue-sheet for players who need only what's load-bearing | Build one giant bible and assume every audience wants to read all of it |
+| Choosing how to document the world | Match the medium to the audience: a core book for depth, sensory reveal for exploration media, a blue-sheet for what's load-bearing | Build one giant bible and assume every audience wants all of it |
 | Trying to hook an audience into the world | Design for willing activation of pretense: give them a reason to want in (Verino: make them feel welcome, not an outsider) | Assume genre alone (space opera, high fantasy) does the immersion work |
 | Improvising world detail at the table or on the page | Reach for a fictive block, a motif, trope, or theme others can build on | Invent unconnected, one-off details that don't recur or accumulate meaning |
 | Writing the pitch, back cover, or logline | Treat it as a paratext that frames and commits the world's tone | Treat it as separate from "the real worldbuilding" |
