@@ -1,11 +1,11 @@
 ---
 type: ssot_03_setting_synthesis
 category: setting_system
-version: 0.1.0
+version: 0.2.0
 last_updated: 2026-09-29
 feeds: ssot_03_setting_system (TM 03)
 applies_to: [OVEREXITOUT, all future IPs]
-status: draft — proposed changes NOT applied; awaiting Chief's ruling, item by item
+status: RULED 2026-09-29 by Chief ("go on all those recs") — items 1–4 and 6–9 applied in ssot_03_setting_system.md v1.3.0; item 5 BENCHED; item 10 reaffirmed (no structural change)
 purpose: "Fold 42 new setting-shelf distills into the existing four-axis taxonomy and twelve-layer SETTING SLICE: what each layer gained, what recurs across books, what the system should change, and what it means for the DCUS instance."
 sources: [BVX.0343, BVX.0056, BVX.0362, BVX.0387, BVX.0394, BVX.0575, BVX.0822, BVX.0823, BVX.0141, BVX.0479, BVX.0483, BVX.0508, BVX.0538, BVX.0831, BVX.0835, BVX.0836, BVX.0841, BVX.0630, BVX.0245, BVX.0258, BVX.1168, BVX.1169, BVX.1170, BVX.1171, BVX.1172, BVX.1173, BVX.1174, BVX.1175, BVX.1176, BVX.1177, BVX.1179, BVX.1180, BVX.1181, BVX.1182, BVX.1183, BVX.1184, BVX.1185, BVX.1186, BVX.1187, BVX.1188, BVX.1189, BVX.1190, BVX.0458]
 ---
@@ -62,16 +62,16 @@ Depth call: what ssot_03 v1.1.0 already carried (mostly BVX.0458/0349/1122), aga
 
 ## PART THREE · PROPOSED CHANGES TO THE SYSTEM (not applied)
 
-1. **Add a FACTION / NATION CARD as a companion notation to the SCENE CARD.** Reason: nine sources independently build the same bounded stat block [[BVX.0343]] [[BVX.1170]] [[BVX.1171]] [[BVX.1177]] [[BVX.1179]] [[BVX.1181]] [[BVX.1174]] [[BVX.0483]] [[BVX.1168]]. Recommend: yes — fields: founding sentence, binding principle, government, economy tier, border rating, one secret; fed mainly by S4/S6/S7.
-2. **Formalize the present-tense-bite rule as a checkable test in S7's Part A description.** Reason: the most-reinforced single move in the wave; BVX.1190 supplies a grammar test the current row lacks. Recommend: yes, one line appended to S7.
-3. **Add a border/seam sub-field to S1 or S4.** Reason: four sources build the same mechanism for letting incompatible genres or eras share a setting [[BVX.1181]] [[BVX.0630]] [[BVX.1177]] [[BVX.1179]]; directly useful for DCUS's campus/Middle-Bands boundary. Recommend: yes, home (S1 vs. S4) benched for ruling.
-4. **Cross-reference the S5/S9 fusion in Part A.** Reason: two sources show one rupture generating both the wound and the promise in a single move [[BVX.0575]] [[BVX.0822]], currently unlinked rows. Recommend: yes, a one-line note, no structural change.
-5. **Require a tone-to-mechanic conversion step on the SCENE CARD or as an S12 sub-note.** Reason: recurs three times [[BVX.1184]] [[BVX.1170]] [[BVX.1185]]. Recommend: bench — may already live inside `commandments`; needs a ruling on whether it's a new field.
-6. **Formalize the TAW/TRW discipline as S12's binding-clause working rule.** Reason: "only what's actually narrated is canon" [[BVX.0538]] is exactly what S12 needs stated. Recommend: yes, one line.
-7. **Upgrade S10 from binary (public/personal) to three-tier (public/folk/secret).** Reason: a sharper model [[BVX.1184]] than the existing Cook-derived split; DCUS's own underside is already at least two buried layers. Recommend: yes.
-8. **Adopt Ryan's nine-axis ontological scoring as the primary L7 genre-contract tool**, keeping Baur's five-lineage taxonomy as shorthand. Reason: BVX.0630's own frontmatter states it supersedes the existing tool. Recommend: yes — a straight upgrade, not a new concept.
-9. **Add an optional forward-ledger sub-field to S11 VECTOR.** Reason: four sources build the same device [[BVX.0362]] [[BVX.1176]] [[BVX.0387]] [[BVX.1184]], mapping directly onto DCUS's six-movement descent. Recommend: yes.
-10. **Do not chase full S1–S11 completeness despite the new volume of material.** Reason: BVX.0630 shows completeness trades against consistency, reinforcing the existing thin-by-default rule rather than overturning it. Recommend: no structural change; restate the rule so this wave isn't misread as a mandate to fill everything.
+1. **Add a FACTION / NATION CARD as a companion notation to the SCENE CARD.** Reason: nine sources independently build the same bounded stat block [[BVX.0343]] [[BVX.1170]] [[BVX.1171]] [[BVX.1177]] [[BVX.1179]] [[BVX.1181]] [[BVX.1174]] [[BVX.0483]] [[BVX.1168]]. Recommend: yes — fields: founding sentence, binding principle, government, economy tier, border rating, one secret; fed mainly by S4/S6/S7. **RULED 2026-09-29, applied in v1.3.0.**
+2. **Formalize the present-tense-bite rule as a checkable test in S7's Part A description.** Reason: the most-reinforced single move in the wave; BVX.1190 supplies a grammar test the current row lacks. Recommend: yes, one line appended to S7. **RULED 2026-09-29, applied in v1.3.0.**
+3. **Add a border/seam sub-field to S1 or S4.** Reason: four sources build the same mechanism for letting incompatible genres or eras share a setting [[BVX.1181]] [[BVX.0630]] [[BVX.1177]] [[BVX.1179]]; directly useful for DCUS's campus/Middle-Bands boundary. Recommend: yes, home (S1 vs. S4) benched for ruling. **RULED 2026-09-29, applied in v1.3.0 — home given to S1 (geography/border is native to BODY; S4's permeability reading noted as a related deploy).**
+4. **Cross-reference the S5/S9 fusion in Part A.** Reason: two sources show one rupture generating both the wound and the promise in a single move [[BVX.0575]] [[BVX.0822]], currently unlinked rows. Recommend: yes, a one-line note, no structural change. **RULED 2026-09-29, applied in v1.3.0.**
+5. **Require a tone-to-mechanic conversion step on the SCENE CARD or as an S12 sub-note.** Reason: recurs three times [[BVX.1184]] [[BVX.1170]] [[BVX.1185]]. Recommend: bench — may already live inside `commandments`; needs a ruling on whether it's a new field. **BENCHED 2026-09-29 — no edit; carried to OPEN in ssot_03_setting_system.md v1.3.0.**
+6. **Formalize the TAW/TRW discipline as S12's binding-clause working rule.** Reason: "only what's actually narrated is canon" [[BVX.0538]] is exactly what S12 needs stated. Recommend: yes, one line. **RULED 2026-09-29, applied in v1.3.0.**
+7. **Upgrade S10 from binary (public/personal) to three-tier (public/folk/secret).** Reason: a sharper model [[BVX.1184]] than the existing Cook-derived split; DCUS's own underside is already at least two buried layers. Recommend: yes. **RULED 2026-09-29, applied in v1.3.0.**
+8. **Adopt Ryan's nine-axis ontological scoring as the primary L7 genre-contract tool**, keeping Baur's five-lineage taxonomy as shorthand. Reason: BVX.0630's own frontmatter states it supersedes the existing tool. Recommend: yes — a straight upgrade, not a new concept. **RULED 2026-09-29, applied in v1.3.0 (SETTING × LIBRARY section — the genre system's own home, ssot_01_genre_system.md, is out of this ruling's scope).**
+9. **Add an optional forward-ledger sub-field to S11 VECTOR.** Reason: four sources build the same device [[BVX.0362]] [[BVX.1176]] [[BVX.0387]] [[BVX.1184]], mapping directly onto DCUS's six-movement descent. Recommend: yes. **RULED 2026-09-29, applied in v1.3.0.**
+10. **Do not chase full S1–S11 completeness despite the new volume of material.** Reason: BVX.0630 shows completeness trades against consistency, reinforcing the existing thin-by-default rule rather than overturning it. Recommend: no structural change; restate the rule so this wave isn't misread as a mandate to fill everything. **Reaffirmed 2026-09-29 — thin-by-default stands, no structural change, noted in ssot_03_setting_system.md v1.3.0 version history.**
 
 ---
 
@@ -100,4 +100,5 @@ Depth call: what ssot_03 v1.1.0 already carried (mostly BVX.0458/0349/1122), aga
 
 ## Version history
 
+- **0.2.0 — 2026-09-29.** RULED by Chief ("go on all those recs"): proposed changes 1, 2, 3, 4, 6, 7, 8, 9 applied to ssot_03_setting_system.md v1.3.0, item by item, as recommended. Change 5 BENCHED (no edit, carried to that doc's OPEN). Change 10 reaffirmed — thin-by-default stands, no structural change. Each item in Part Three now carries its ruling inline.
 - **0.1.0 — 2026-09-29.** First synthesis pass, 42 distills folded against ssot_03 v1.1.0. Per-layer register, nine cross-book methods, ten proposed changes (none applied), DCUS application (eight lines), four contradictions read. Companion to the additive SETTING × LIBRARY note in ssot_03_setting_system.md v1.2.0.

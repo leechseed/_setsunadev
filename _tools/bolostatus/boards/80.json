@@ -6,7 +6,7 @@
   "issued": "2026-09-24",
   "asof": "2026-09-29",
   "s": "open",
-  "status": "🟢 **ALL CALLS RULED 9/29** — controlling idea: \"Nobody has to be evil when everyone does their job.\" · rails in Chief's words · value FREEDOM (Tori) + FAIRNESS (the world, 80-G) · motifs: the uniform and the mirror · a door she could walk out of · the Feed · doc v0.6.0 `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` · theme no longer gates BOLO 77; 81 (last-in-line) still does.",
+  "status": "🟢 **ALL CALLS RULED 9/29** — controlling idea: \"Nobody has to be evil when everyone does their job.\" · rails in Chief's words · FREEDOM (Tori) and FAIRNESS (the world) gauges both worded · motifs: the uniform and the mirror · a door she could walk out of · the Feed · doc v0.7.0 · theme no longer gates BOLO 77; 81 (last-in-line) still does.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the theme doc for `07_THEME_SYSTEMS/` (not yet written) · BOLO 77's four open syuzhet calls (77-U to 77-X), gated until this lands · the theme/invariants handshake BOLO 81 shares (`cost_and_meaning`, named \"theme with enforcement teeth\")",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 80",
   "card": "none",
-  "version": "v0.7 · DOPE SHEET"
+  "version": "v0.8 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the theme system as one doc, **in order to** give every scene a value it moves and an argument it serves before any scene is written.",
-  "order": "**Pick plain words for the Fairness gauge's four steps; the handshake table with BOLO 81 waits on 81's release.**",
-  "default": "Silence: theme stands ruled; the gauge carries the technical step names.",
+  "order": "**Theme is done for OXO. Next on 80: the BOLO 81 handshake at 81's release, and EVIL CHECK's controlling idea in wave 2.**",
+  "default": "Silence: theme stands ruled and waits for 81.",
   "calls": [
    {
     "q": "80-A · Where does the theme doc live?",
@@ -224,9 +224,15 @@
     },
     {
      "n": 5,
-     "s": "open",
-     "when": "next",
-     "t": "**Fairness gauge plain words** · then the 81 handshake (at 81's release) · EVIL CHECK wave 2."
+     "s": "done",
+     "when": "9/29",
+     "t": "**Fairness gauge worded** — Everyone gets a real shot · Some people get a head start · They change the rules when you start winning · They cheat you and give you a grade for it (A · A · C · B)."
+    },
+    {
+     "n": 6,
+     "s": "gated",
+     "when": "at 81",
+     "t": "**The handshake table with BOLO 81** · then EVIL CHECK (wave 2)."
     }
    ],
    "coord": [
@@ -783,6 +789,11 @@
      "when": "9/29",
      "who": "Claude",
      "t": "80-C, 80-E, 80-G ruled into the theme doc v0.6.0; TM 03 changes 1–4 and 6–9 sent to an MS to apply; BOLO 87 tier-2 held."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "Fairness gauge: \"A, A, C, B.\""
     }
    ]
   }
