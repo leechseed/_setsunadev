@@ -210,10 +210,10 @@ The Introduction's Seven Qualities of Thule (barbaric; savage wilderness; wicked
 
 ## 8 · APPLICATION
 
-- **Spine level:** SETTING (non-story-spine source; keys to the entity beside the L0–L7 spine, per the SETTING SSOT's binding rule that setting is a Domain embodied, never a level)
+- **Spine level:** SETTING (non-story-spine source; setting is a Domain embodied beside the L0–L7 spine, never a level, per the SETTING SSOT's binding rule)
 - **12-layer character stack:** none directly; the material-tier and public/secret-god splits are structurally the same move as auditing an L4 WILL constraint or an L10 SHADOW gap, but this source stays setting-side
-- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens; the three proactive adventure models (Survival, Treasure Race, Caper) are ready-made scene-generation templates keyed to PC ambition rather than villain action
-- **Setting:** primary; this is a worked SETTING-shelf instance alongside GURPS Hot Spots: Renaissance Venice, but its strongest contribution is a craft move Venice doesn't carry: a history built as a strict stack of fallen precursor civilizations, each one's ruin becoming the next age's dungeon, with the whole arc foretold to end in ice.
+- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens; the Survival/Treasure Race/Caper models are ready-made scene-generation templates keyed to PC ambition, not villain action
+- **Setting:** primary; a worked SETTING-shelf instance alongside GURPS Hot Spots: Renaissance Venice, but its strongest contribution is a craft move Venice doesn't carry: history as a strict stack of fallen precursor civilizations, each ruin the next age's dungeon, the whole arc foretold to end in ice.
 
 The one idea worth stealing outright for a science-fiction setting: **the tone-to-rule conversion.** Primeval Thule names its genre contract in three lines (ancient not medieval, fantastic horror, sword-and-sorcery episodic scale) and hands each line exactly one subsystem: a material-tier table, a Madness Check track, a no-market magic economy. Dread and scarcity get enforced by rules a player touches every session, not by prose the GM keeps re-selling. A science-fiction universe can run the same play: name the genre contract, then build one mechanic per line (resource scarcity for a scavenger economy, a contact meter for cosmic-horror exposure, a tech-tier table gating who holds lost precursor knowledge). The layered-falls history (S5 SCAR stacked five deep, feeding S11 VECTOR's foretold ending) is the second reusable move: decline staged as a genealogy of falls, each one legible as the next age's dungeon, not a single flat backstory event.
 
