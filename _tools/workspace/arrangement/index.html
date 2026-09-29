@@ -1,0 +1,685 @@
+<title>The Arrangement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* The Arrangement · BOLO 90 × BOLO 79 · a prototype of the tracking system's told-order view.
+     Colorway RULED 9/10–9/11: creator-cases orange, DARK is the only theme; the E-INK gray face shows only when the viewer forces light. */
+  :root {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C; --well: #12161B;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --line: #2B313B; --line-2: #3C4452;
+    --good: #5CC48A; --warn: #D9C48A; --bad: #E9788A;
+    --c-char: #7FB2E5; --c-char-soft: #1B2A3A;
+    --c-place: #D2AE72; --c-place-soft: #33291A;
+    --c-theme: #B89AE6; --c-theme-soft: #2A2238;
+    --c-trope: #6CC4A1; --c-trope-soft: #16302A;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.4);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4; --well: #D0D0C9;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --line: #B5B5AE; --line-2: #97978F;
+    --good: #1F6B45; --warn: #5E4F22; --bad: #962C37;
+    --c-char: #2F5F8F; --c-char-soft: #C9D3DC;
+    --c-place: #7A5A1E; --c-place-soft: #DCD2BE;
+    --c-theme: #5E4394; --c-theme-soft: #D3CCDD;
+    --c-trope: #1E6B52; --c-trope-soft: #C6D8CF;
+    --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.12);
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 14px; line-height: 1.45; -webkit-font-smoothing: antialiased; overflow: hidden; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .t { color: var(--accent-ink); border-bottom: 1px dotted color-mix(in srgb, var(--accent-ink) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+
+  .app { height: 100%; display: grid; grid-template-rows: 44px minmax(0, 1fr) 26px; grid-template-columns: 196px minmax(0, 1fr) 300px; grid-template-areas: "head head head" "tracks lane insp" "foot foot foot"; }
+
+  /* the one ~44px strip (thin chrome, 9/24) */
+  header { grid-area: head; display: flex; align-items: center; gap: 14px; padding: 0 14px; border-bottom: 1px solid var(--line-2); background: var(--panel); min-width: 0; }
+  .brand { display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+  .brand b { font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: .03em; text-transform: uppercase; }
+  .brand i { width: 9px; height: 9px; background: var(--accent); display: inline-block; transform: translateY(-1px); }
+  .brand small { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: .08em; }
+  .seg { display: flex; border: 1px solid var(--line-2); }
+  .seg button { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 5px 9px; color: var(--ink-2); white-space: nowrap; }
+  .seg button + button { border-left: 1px solid var(--line-2); }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .seg button:disabled { color: var(--ink-3); opacity: .5; cursor: default; }
+  .tc { margin-left: auto; display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+  .tc small { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tc b { font-family: var(--mono); font-weight: 500; font-size: 16px; color: var(--accent-ink); }
+  .scroller { display: flex; gap: 14px; align-items: center; overflow-x: auto; min-width: 0; scrollbar-width: none; }
+
+  /* track headers */
+  .tracks { grid-area: tracks; border-right: 1px solid var(--line-2); background: var(--panel); overflow: hidden; position: relative; }
+  .th { position: absolute; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 10px 0 12px; border-bottom: 1px solid var(--line); overflow: hidden; }
+  .th::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--k, var(--line-2)); }
+  .th .nm { font-family: var(--display); font-weight: 700; font-size: 15px; line-height: 1.05; text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .th .sub { font-family: var(--mono); font-size: 10px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .th.ruler { background: var(--panel-2); }
+
+  /* the lane */
+  .lane { grid-area: lane; position: relative; overflow: hidden; background: var(--well); cursor: crosshair; touch-action: none; }
+  svg#tl { display: block; width: 100%; height: 100%; }
+  svg text { font-family: var(--mono); font-size: 10px; fill: var(--ink-2); }
+  .band { fill: var(--panel-2); }
+  .band-lbl { font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: .04em; fill: var(--ink); text-transform: uppercase; }
+  .grid-bar { stroke: var(--line-2); stroke-width: 1; }
+  .grid-beat { stroke: var(--line); stroke-width: 1; }
+  .rowline { stroke: var(--line); }
+  .clip { stroke-width: 1; }
+  .clip-lbl { font-family: var(--body); font-size: 11px; fill: var(--ink); }
+  .sig { font-family: var(--mono); font-size: 10px; fill: var(--accent-ink); font-weight: 500; }
+  .pt { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+  .pt:hover { stroke: var(--ink); }
+  .badge { fill: var(--panel); stroke: var(--line-2); }
+  .badge-t { font-size: 10px; fill: var(--ink); font-weight: 500; }
+  .cable { fill: none; stroke-width: 2; cursor: pointer; }
+  .cable.provisional { stroke-dasharray: 6 5; }
+  .orphan { fill: var(--bad); }
+  .playhead { stroke: var(--accent); stroke-width: 1.5; }
+  .ph-cap { fill: var(--accent); }
+  .auto-fill { opacity: .18; }
+  .gap { fill: var(--bad); opacity: .16; }
+  .world-ev { stroke-width: 1; }
+  .link { fill: none; stroke: var(--ink-3); stroke-width: 1.2; opacity: .7; }
+  .link.back { stroke: var(--accent); opacity: .95; stroke-width: 2; }
+
+  /* inspector */
+  .insp { grid-area: insp; border-left: 1px solid var(--line-2); background: var(--panel); overflow-y: auto; padding: 12px 14px 20px; display: flex; flex-direction: column; gap: 14px; }
+  .insp h2 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .02em; line-height: 1; }
+  .insp h2 small { display: block; font-family: var(--mono); font-weight: 400; font-size: 10px; letter-spacing: .14em; color: var(--accent-ink); margin-bottom: 4px; }
+  .insp .code { font-family: var(--mono); font-size: 13px; color: var(--ink); background: var(--well); border: 1px solid var(--line); padding: 6px 8px; }
+  .grp { display: grid; gap: 6px; }
+  .grp > .lbl { font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--line); padding-bottom: 4px; display: flex; gap: 8px; align-items: center; }
+  .grp > .lbl i { width: 8px; height: 8px; display: inline-block; background: var(--k); }
+  .kv { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 3px 10px; font-size: 13px; }
+  .kv dt { color: var(--ink-2); font-family: var(--mono); font-size: 11px; padding-top: 1px; overflow-wrap: anywhere; }
+  .kv dd { margin: 0; text-align: right; color: var(--ink); }
+  .kv dd.chg { color: var(--accent-ink); }
+  .meter { height: 6px; background: var(--well); border: 1px solid var(--line); position: relative; margin-top: 2px; }
+  .meter b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--c-char); }
+  .note { font-size: 12.5px; color: var(--ink-2); line-height: 1.45; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid currentColor; white-space: nowrap; }
+  .chip.prov { color: var(--warn); border-style: dashed; }
+  .chip.orph { color: var(--bad); }
+  .chip.ok { color: var(--good); }
+  .cab { display: grid; gap: 3px; padding: 7px 8px; border: 1px solid var(--line); background: var(--well); font-size: 12.5px; }
+  .cab b { font-weight: 700; }
+  .cab .mono { font-size: 10.5px; color: var(--ink-3); }
+
+  footer { grid-area: foot; display: flex; gap: 16px; align-items: center; padding: 0 14px; border-top: 1px solid var(--line-2); background: var(--panel); font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); white-space: nowrap; overflow-x: auto; scrollbar-width: none; }
+  footer kbd { font-family: var(--mono); font-size: 10px; padding: 0 5px; border: 1px solid var(--line-2); color: var(--ink-2); margin-right: 3px; }
+  footer .r { margin-left: auto; }
+
+  /* the hover layer (CK3, ruled 9/16): hover shows, Space locks, click pins */
+  .tip { position: fixed; z-index: 50; width: 300px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2); border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 10px 12px 8px; font-size: 13px; line-height: 1.45; pointer-events: auto; }
+  .tip .th2 { display: flex; align-items: baseline; gap: 8px; margin-bottom: 3px; }
+  .tip .th2 b { font-family: var(--display); font-weight: 700; font-size: 18px; text-transform: uppercase; }
+  .tip .th2 span { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .w { margin-top: 6px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); overflow-wrap: anywhere; }
+  .tip .hint { margin-top: 6px; font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); }
+  .tip.locked { border-top-color: var(--ink); }
+
+  @media (max-width: 900px) {
+    body { overflow: auto; }
+    .app { height: auto; min-height: 100%; grid-template-columns: 112px minmax(0, 1fr); grid-template-rows: auto 460px auto 26px; grid-template-areas: "head head" "tracks lane" "insp insp" "foot foot"; }
+    header { flex-wrap: wrap; height: auto; padding: 6px 16px; gap: 8px; }
+    .scroller { width: 100%; }
+    .tc { margin-left: 0; }
+    .th .sub { display: none; }
+    .th .nm { font-size: 12.5px; }
+    .insp { border-left: 0; border-top: 1px solid var(--line-2); padding: 14px 16px 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="app" id="app">
+  <header>
+    <div class="brand"><i></i><b>The Arrangement</b><small>OXO · sample</small></div>
+    <div class="scroller">
+      <div class="seg" role="group" aria-label="Ruler" id="rulerSeg">
+        <button id="r-told" aria-pressed="true" data-v="told">Told order</button>
+        <button id="r-world" aria-pressed="false" data-v="world">World clock</button>
+        <button id="r-stack" aria-pressed="false" data-v="stack">Stack</button>
+      </div>
+      <div class="seg" role="group" aria-label="Zoom stop" id="zoomSeg"></div>
+    </div>
+    <div class="tc"><small><span class="t" data-t="timecode">Time code</span></small><b id="tcOut">M2 · Q1 · S01 | 001.1</b></div>
+  </header>
+
+  <div class="tracks" id="tracks" aria-hidden="true"></div>
+  <div class="lane" id="lane"><svg id="tl" role="img" aria-label="Told-order timeline: scenes, tempo, story points and cables"></svg></div>
+
+  <aside class="insp" id="insp" aria-live="polite"></aside>
+
+  <footer>
+    <span><kbd>wheel</kbd>zoom</span>
+    <span><kbd>shift</kbd>+<kbd>wheel</kbd> or drag · pan</span>
+    <span><kbd>click</kbd>ruler · move playhead</span>
+    <span><kbd>←</kbd><kbd>→</kbd> one beat</span>
+    <span><kbd>T</kbd> flip ruler</span>
+    <span>hover a <span class="t" data-t="storypoint">term</span> · <kbd>Space</kbd> lock · <kbd>Esc</kbd> close</span>
+    <span class="r">sample data · the M2 grief trial, 9/29 · ssot_08 v0.2.0</span>
+  </footer>
+</div>
+
+<script>
+(() => {
+/* ---------- the terms (the hover layer) ---------- */
+const TERMS = {
+  timecode: ["Time code", "grid", "Where a moment sits: movement · sequence · scene | bar.beat.tick. M2 · Q1 · S02 | 006.3.2 is movement 2, sequence 1, scene 2, bar 6, beat 3, tick 2.", "ssot_08 §4 · ruled 9/29"],
+  tick: ["Tick", "grid", "The smallest thing that happens: one line, one gesture, one look. Counted in order, no fixed number per beat.", "ssot_08 §3"],
+  beat: ["Beat", "grid", "One action and its reaction. The ladder's R1.", "ssot_08 §3 · ssot_01_scale_ladder R1"],
+  bar: ["Bar", "grid", "A run of beats that lands one push: a tactic tried and answered. Sits between beat and scene. Chief's word over 'measure'.", "ssot_08 §3 · ruled 9/29"],
+  sig: ["Time signature", "grid", "A scene's meter: beats per bar. 4/4 steady · 3/4 lilting · 7/8 off-balance, a lurch. Set per scene, default 4/4.", "ssot_08 §3"],
+  tempo: ["Tempo", "automation", "Two lanes. Planned is the pace you intend. Measured is counted from the draft (beats per 1,000 words). Where they split, the draft drags or rushes.", "ssot_08 §7"],
+  storypoint: ["Story point", "record", "One field changing at one time code: a trait ticks, a flag fires, a label lands. Like an Ableton automation point. Values step and hold unless ramp is on.", "ssot_08 §5"],
+  checkpoint: ["Checkpoint", "record", "A full state at a fabula event, like an Ableton clip. Story points ride between checkpoints.", "ssot_08 §5 · character state v1.2"],
+  cable: ["Cable", "setup → payoff", "A setup linked to its payoff, on any tracks, any distance apart. Rides the fabula's enable edge.", "ssot_08 §6"],
+  provisional: ["Provisional", "cable state", "Both ends exist in the story, but at least one time code is still proposed (⧗).", "ssot_08 §6 · ruled 9/29"],
+  orphan: ["Orphan", "cable state", "A setup with no payoff, or a payoff with no setup. Drawn as a dangling cable with a red end.", "ssot_08 §6"],
+  told: ["Told order", "ruler", "The order and speed the audience gets the story. Runs on the grid.", "ssot_08 §2"],
+  world: ["World clock", "ruler", "When things actually happened: backstory, M1, M2… No bars, no tempo. Nobody experiences world time at a pace.", "ssot_08 §2 · fabula"],
+  stack: ["Stack", "ruler", "Both rulers at once, with a line from each told scene down to its world event. A flashback is a line that runs backward.", "ssot_08 §2 · ruled 9/29"],
+  ramp: ["Ramp", "value behavior", "A value that slopes between two points (tension, exposure, dread). Everything else steps and holds.", "ssot_08 §5"],
+  freedom: ["The Freedom scale", "theme", "Tori's value gauge. Two tracks here: in-world (what the system records) and audience (what the reader sees). The gap is the ironic charge.", "ssot_07 · the value scale"],
+  zoom: ["Zoom stops", "ladder", "The scroll wheel walks the ladder: tick · beat · bar · scene · sequence · movement · story. Zoomed out, story points bundle into a count.", "ssot_08 §4"]
+};
+
+/* ---------- sample data: the M2 grief trial (TRIAL-M2-grief.md, ruled 9/29) + the M3 payoff ---------- */
+const SCENES = [
+  { mv: "M2", q: "Q1", s: "S01", num: 7, den: 8, bars: 16, lbl: "Grief montage · the glitches", ev: "m2_grief_outbursts" },
+  { mv: "M2", q: "Q1", s: "S02", num: 7, den: 8, bars: 14, lbl: "The diagnostic · “Digital Puberty”", ev: "m2_grief_outbursts" },
+  { mv: "M2", q: "Q1", s: "S03", num: 4, den: 4, bars: 12, lbl: "Row 9 · first Sync verified", ev: "m2_first_sync_verified" },
+  { mv: "M3", q: "Q2", s: "S01", num: 4, den: 4, bars: 16, lbl: "The search · by hand", ev: "m3_underground_search" },
+  { mv: "M3", q: "Q2", s: "S02", num: 4, den: 4, bars: 10, lbl: "Crash analepsis (flashback)", ev: "m1b_crash_jebb_death" }
+];
+let acc = 0;
+for (const sc of SCENES) { sc.start = acc; sc.len = sc.num * sc.bars; acc += sc.len; }
+const TOTAL = acc;
+const SEQS = [{ id: "M2 · Q1", lbl: "The grief sequence" }, { id: "M3 · Q2", lbl: "The recovery" }];
+const MOVS = [{ id: "M2", lbl: "Movement 2" }, { id: "M3", lbl: "Movement 3" }];
+
+// time code -> beat position
+function pos(code) {
+  const m = code.match(/(M\d)\s*·\s*(Q\d)\s*·\s*(S\d+)\s*\|\s*(\d+)\.(\d+)(?:\.(\d+))?/);
+  const sc = SCENES.find(s => s.mv === m[1] && s.q === m[2] && s.s === m[3]);
+  const tick = m[6] ? (+m[6] - 1) * 0.22 : 0;
+  return sc.start + (+m[4] - 1) * sc.num + (+m[5] - 1) + Math.min(tick, 0.9);
+}
+function codeAt(p) {
+  p = Math.max(0, Math.min(TOTAL - 0.001, p));
+  const sc = SCENES.find(s => p >= s.start && p < s.start + s.len) || SCENES[SCENES.length - 1];
+  const inS = p - sc.start;
+  const bar = Math.floor(inS / sc.num) + 1, beat = Math.floor(inS % sc.num) + 1;
+  return { sc, text: `${sc.mv} · ${sc.q} · ${sc.s} | ${String(bar).padStart(3, "0")}.${beat}` };
+}
+
+// tracks
+const TRACKS = [
+  { id: "scenes", nm: "Scenes", sub: "clips · the told order", k: "var(--accent)", h: 40 },
+  { id: "tempo", nm: "Tempo", sub: "planned — · measured - -", k: "var(--accent)", h: 64, term: "tempo" },
+  { id: "wound", nm: "Tori · L5 Wound", sub: "exposure · automation", k: "var(--c-char)", h: 58, term: "ramp" },
+  { id: "tori", nm: "Tori · state", sub: "story points", k: "var(--c-char)", h: 40, term: "storypoint" },
+  { id: "dcus", nm: "DCUS · S4 Law", sub: "place · story points", k: "var(--c-place)", h: 40 },
+  { id: "theme", nm: "Theme · Rail 2", sub: "Freedom · in-world / audience", k: "var(--c-theme)", h: 60, term: "freedom" },
+  { id: "tropes", nm: "Tropes", sub: "from the register", k: "var(--c-trope)", h: 36 }
+];
+
+const PTS = [
+  { tr: "tori", at: "M2 · Q1 · S01 | 001.1.1", f: "L5_WOUND.containment", v: "held" },
+  { tr: "tori", at: "M2 · Q1 · S01 | 004.2.1", f: "sync_feed.artifact_visible", v: "true" },
+  { tr: "tori", at: "M2 · Q1 · S02 | 006.3.2", f: "public_record.label", v: "Digital Puberty" },
+  { tr: "tori", at: "M2 · Q1 · S02 | 014.4.3", f: "grief_status", v: "leaking, unrecognized, on record" },
+  { tr: "tori", at: "M2 · Q1 · S03 | 006.1.1", f: "sync.status", v: "Verified" },
+  { tr: "tori", at: "M3 · Q2 · S01 | 014.2.1", f: "record.recovered", v: "override real · deletion → Administration" },
+  { tr: "tori", at: "M3 · Q2 · S02 | 004.1.1", f: "L5_WOUND.containment", v: "broken open" },
+  { tr: "dcus", at: "M2 · Q1 · S02 | 002.1.1", f: "S4_LAW.diagnostic", v: "routine diagnostic opened" },
+  { tr: "dcus", at: "M2 · Q1 · S02 | 006.3.2", f: "S4_LAW.diagnostic", v: "closed · filed" },
+  { tr: "dcus", at: "M3 · Q2 · S01 | 014.2.1", f: "S10_UNDERSIDE.exposed", v: "the deletion" },
+  { tr: "tropes", at: "M2 · Q1 · S01 | 008.1.1", f: "Stepford Smiler", v: "character L10" },
+  { tr: "tropes", at: "M2 · Q1 · S02 | 006.3.2", f: "Gaslighting", v: "theme R2" },
+  { tr: "tropes", at: "M3 · Q2 · S01 | 014.2.1", f: "Properly Paranoid", v: "character L1 · theme R2" },
+  { tr: "tropes", at: "M3 · Q2 · S02 | 004.1.1", f: "Survivor Guilt", v: "theme R4" }
+].map(p => ({ ...p, p: pos(p.at) }));
+
+// automation: exposure 0–1 (ramps), tempo bpm, freedom -3..+3
+const WOUND = [["M2 · Q1 · S01 | 001.1.1", .2, 0], ["M2 · Q1 · S01 | 009.1.3", .6, 1], ["M2 · Q1 · S02 | 014.4.3", .6, 0], ["M3 · Q2 · S01 | 012.1.1", .85, 1], ["M3 · Q2 · S02 | 004.1.1", 1, 1], ["M3 · Q2 · S02 | 010.4.1", 1, 0]].map(a => ({ p: pos(a[0]), v: a[1], ramp: a[2] }));
+const TEMPO_PLAN = [["M2 · Q1 · S01 | 001.1", 72], ["M2 · Q1 · S02 | 006.1", 112], ["M2 · Q1 · S02 | 006.3", 58], ["M2 · Q1 · S03 | 001.1", 88], ["M3 · Q2 · S01 | 001.1", 80], ["M3 · Q2 · S01 | 016.1", 122], ["M3 · Q2 · S02 | 001.1", 50], ["M3 · Q2 · S02 | 010.4", 50]].map(a => ({ p: pos(a[0]), v: a[1] }));
+const TEMPO_MEAS = [["M2 · Q1 · S01 | 001.1", 70], ["M2 · Q1 · S01 | 010.1", 84], ["M2 · Q1 · S02 | 006.1", 90], ["M2 · Q1 · S02 | 008.1", 64], ["M2 · Q1 · S03 | 001.1", 92], ["M3 · Q2 · S01 | 001.1", 78], ["M3 · Q2 · S01 | 016.1", 104], ["M3 · Q2 · S02 | 001.1", 66], ["M3 · Q2 · S02 | 010.4", 60]].map(a => ({ p: pos(a[0]), v: a[1] }));
+const FREE_IN = [["M2 · Q1 · S01 | 001.1", -1], ["M3 · Q2 · S01 | 014.2", -1], ["M3 · Q2 · S01 | 014.3", -2], ["M3 · Q2 · S02 | 010.4", -2]].map(a => ({ p: pos(a[0]), v: a[1] }));
+const FREE_AUD = [["M2 · Q1 · S01 | 001.1", -1], ["M2 · Q1 · S02 | 006.3", -1], ["M2 · Q1 · S02 | 006.4", -2], ["M3 · Q2 · S02 | 010.4", -2]].map(a => ({ p: pos(a[0]), v: a[1] }));
+
+const CABLES = [
+  { id: "label → recovery", from: ["tori", "M2 · Q1 · S02 | 006.3.2"], to: ["tori", "M3 · Q2 · S01 | 014.2.1"], state: "provisional", why: "The false label is created (77-V); the recovered record re-reads it as a cover (77-X). The M3 time code is still ⧗." },
+  { id: "glitch → grief", from: ["tori", "M2 · Q1 · S01 | 004.2.1"], to: ["tropes", "M3 · Q2 · S02 | 004.1.1"], state: "none", why: "The first artifact in her channel (77-U) pays off when the flashback shows what the grief is for. Example cable." },
+  { id: "the clothing flicker", from: ["dcus", "M2 · Q1 · S01 | 011.3.1"], to: null, state: "orphan", why: "Feed-linked clothing flickers with her. No payoff written yet: the tool flags it red." }
+].map(c => ({ ...c, a: pos(c.from[1]), b: c.to ? pos(c.to[1]) : null }));
+
+// world clock (fabula order) + DCUS name checkpoints
+const WORLD = [
+  { id: "backstory_skeeter_creek_founding", m: "backstory", lbl: "Skeeter Creek founded", name: "Skeeter Creek" },
+  { id: "backstory_red_hills_rename", m: "backstory", lbl: "Renamed Red Hills", name: "Red Hills Academy" },
+  { id: "backstory_dcus_rebrand", m: "backstory", lbl: "Bishops rebrand: DCUS", name: "DCUS" },
+  { id: "m1b_crash_jebb_death", m: "M1", lbl: "The crash · Jebb dies" },
+  { id: "m2_grief_outbursts", m: "M2", lbl: "Grief outbursts (repeat)" },
+  { id: "m2_first_sync_verified", m: "M2", lbl: "First Sync verified" },
+  { id: "m3_underground_search", m: "M3", lbl: "The underground search" }
+];
+
+/* ---------- state ---------- */
+const S = { view: "told", ppb: 0, off: 0, ph: pos("M2 · Q1 · S02 | 006.3.2") + .05, wph: 4.5 };
+const ZOOMS = [["Story", 1.6], ["Movement", 2.6], ["Sequence", 4], ["Scene", 9], ["Bar", 26], ["Beat", 70], ["Tick", 190]];
+const lane = document.getElementById("lane"), svg = document.getElementById("tl");
+const NS = "http://www.w3.org/2000/svg";
+const RULE_H = 30, BAND_H = 22;
+
+function el(tag, attrs, parent, text) {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  (parent || svg).appendChild(e);
+  return e;
+}
+const W = () => lane.clientWidth, H = () => lane.clientHeight;
+const X = p => (p - S.off) * S.ppb;
+function stopName() { let n = ZOOMS[0][0]; for (const [nm, v] of ZOOMS) if (S.ppb >= v * .8) n = nm; return n; }
+function fit() { S.ppb = Math.max(1, (W() - 24) / TOTAL); S.off = -8 / S.ppb; }
+function clampOff() { const w = W() / S.ppb; S.off = Math.max(-w * .3, Math.min(TOTAL - w * .7, S.off)); }
+function setZoom(ppb, anchorX) {
+  const ax = anchorX == null ? W() / 2 : anchorX;
+  const p = S.off + ax / S.ppb;
+  S.ppb = Math.max(0.6, Math.min(400, ppb));
+  S.off = p - ax / S.ppb; clampOff(); render();
+}
+
+/* ---------- track headers ---------- */
+function headers(rows) {
+  const box = document.getElementById("tracks"); box.innerHTML = "";
+  for (const r of rows) {
+    const d = document.createElement("div");
+    d.className = "th" + (r.ruler ? " ruler" : "");
+    d.style.top = r.y + "px"; d.style.height = r.h + "px";
+    d.style.setProperty("--k", r.k || "var(--line-2)");
+    d.innerHTML = `<span class="nm">${r.term ? `<span class="t" data-t="${r.term}">${r.nm}</span>` : r.nm}</span><span class="sub">${r.sub || ""}</span>`;
+    box.appendChild(d);
+  }
+}
+
+/* ---------- the told-order view ---------- */
+function drawTold(y0, h, compact) {
+  const w = W(), stop = stopName();
+  const rows = [];
+  // rung band: movements + sequences
+  el("rect", { x: 0, y: y0, width: w, height: BAND_H * 2, class: "band" });
+  for (const mv of MOVS) {
+    const sc = SCENES.filter(s => s.mv === mv.id), a = X(sc[0].start), b = X(sc.at(-1).start + sc.at(-1).len);
+    el("line", { x1: a, x2: a, y1: y0, y2: y0 + BAND_H * 2, class: "grid-bar" });
+    el("text", { x: Math.max(a, 0) + 6, y: y0 + 15, class: "band-lbl" }, null, `${mv.id} · ${mv.lbl}`);
+    const seq = SEQS.find(q => q.id.startsWith(mv.id));
+    el("text", { x: Math.max(a, 0) + 6, y: y0 + BAND_H + 15 }, null, `${seq.id} · ${seq.lbl}`);
+  }
+  // bar ruler with time signatures
+  const ry = y0 + BAND_H * 2;
+  el("rect", { x: 0, y: ry, width: w, height: RULE_H, fill: "var(--panel)" });
+  const ruler = el("rect", { x: 0, y: y0, width: w, height: BAND_H * 2 + RULE_H, fill: "transparent", "data-ruler": "1", style: "cursor:col-resize" });
+  rows.push({ nm: "Ladder", sub: "movement · sequence", y: y0, h: BAND_H * 2, ruler: 1, term: "zoom" });
+  rows.push({ nm: "Bars", sub: "bar ruler · meter", y: ry, h: RULE_H, ruler: 1, term: "bar" });
+  const gy0 = ry + RULE_H, gy1 = y0 + h;
+  for (const sc of SCENES) {
+    const sx = X(sc.start);
+    if (sx > w + 40 || X(sc.start + sc.len) < -40) continue;
+    el("text", { x: sx + 4, y: ry + 12, class: "sig" }, null, `${sc.num}/${sc.den}`);
+    const barPx = sc.num * S.ppb, every = barPx > 34 ? 1 : barPx > 16 ? 2 : barPx > 7 ? 4 : 99;
+    for (let b = 0; b < sc.bars; b++) {
+      const bx = X(sc.start + b * sc.num);
+      if (bx < -2 || bx > w + 2) continue;
+      el("line", { x1: bx, x2: bx, y1: b === 0 ? y0 : ry + 16, y2: gy1, class: b === 0 ? "grid-bar" : "grid-beat", opacity: b === 0 ? 1 : (every < 99 ? .9 : .35) });
+      if (every < 99 && b % every === 0) el("text", { x: bx + 3, y: ry + 26 }, null, String(b + 1));
+      if (S.ppb > 18) for (let bt = 1; bt < sc.num; bt++) {
+        const tx = X(sc.start + b * sc.num + bt);
+        el("line", { x1: tx, x2: tx, y1: ry + 22, y2: gy1, class: "grid-beat", opacity: .35 });
+      }
+    }
+  }
+  let y = gy0;
+  const tracks = compact ? TRACKS.filter(t => ["scenes", "tori", "dcus"].includes(t.id)) : TRACKS;
+  for (const t of tracks) {
+    const th = compact ? 30 : t.h;
+    rows.push({ ...t, y, h: th });
+    el("line", { x1: 0, x2: w, y1: y + th, y2: y + th, class: "rowline" });
+    const mid = y + th / 2;
+    if (t.id === "scenes") {
+      for (const sc of SCENES) {
+        const a = X(sc.start) + 1, b = X(sc.start + sc.len) - 1;
+        if (b < 0 || a > w) continue;
+        el("rect", { x: a, y: y + 4, width: Math.max(2, b - a), height: th - 8, fill: "var(--accent-soft)", stroke: "var(--accent)", class: "clip" });
+        if (b - a > 60) el("text", { x: Math.max(a, 0) + 6, y: y + th / 2 + 4, class: "clip-lbl" }, null, (b - a > 170 ? `${sc.s} · ${sc.lbl}` : sc.s));
+      }
+    }
+    if (t.id === "tempo") curve(TEMPO_PLAN, TEMPO_MEAS, y, th, 40, 130, "var(--accent)");
+    if (t.id === "wound") automation(WOUND, y, th, 0, 1, "var(--c-char)");
+    if (t.id === "theme") curve(FREE_IN, FREE_AUD, y, th, -3, 1, "var(--c-theme)", true);
+    if (["tori", "dcus", "tropes"].includes(t.id)) points(t, mid);
+    t._y = y; t._h = th;
+    y += th;
+  }
+  cables(tracks);
+  return rows;
+}
+
+function stepPath(arr, y, h, lo, hi, rampAll) {
+  const Y = v => y + h - 6 - (v - lo) / (hi - lo) * (h - 12);
+  let d = `M ${X(arr[0].p)} ${Y(arr[0].v)}`;
+  for (let i = 1; i < arr.length; i++) {
+    const ramp = rampAll || arr[i].ramp;
+    d += ramp ? ` L ${X(arr[i].p)} ${Y(arr[i].v)}` : ` L ${X(arr[i].p)} ${Y(arr[i - 1].v)} L ${X(arr[i].p)} ${Y(arr[i].v)}`;
+  }
+  return { d, Y };
+}
+function automation(arr, y, h, lo, hi, col) {
+  const { d, Y } = stepPath(arr, y, h, lo, hi);
+  el("path", { d: d + ` L ${X(arr.at(-1).p)} ${y + h - 6} L ${X(arr[0].p)} ${y + h - 6} Z`, fill: col, class: "auto-fill" });
+  el("path", { d, fill: "none", stroke: col, "stroke-width": 2 });
+  for (const a of arr) el("circle", { cx: X(a.p), cy: Y(a.v), r: 3.5, fill: col, class: "pt" });
+}
+function curve(A, B, y, h, lo, hi, col, step) {
+  const pa = stepPath(A, y, h, lo, hi, !step), pb = stepPath(B, y, h, lo, hi, !step);
+  // the gap between planned and measured (or in-world and audience)
+  const back = [...B].reverse();
+  let g = pa.d;
+  for (const b of back) g += ` L ${X(b.p)} ${pb.Y(b.v)}`;
+  el("path", { d: g + " Z", class: "gap" });
+  el("path", { d: pa.d, fill: "none", stroke: col, "stroke-width": 2 });
+  el("path", { d: pb.d, fill: "none", stroke: col, "stroke-width": 1.6, "stroke-dasharray": "5 4", opacity: .85 });
+  if (step) {
+    el("text", { x: 6, y: y + 12 }, null, "in-world —  audience - -");
+  } else {
+    el("text", { x: 6, y: y + 12 }, null, "bpm · planned —  measured - - (example)");
+  }
+}
+function points(t, mid) {
+  const mine = PTS.filter(p => p.tr === t.id);
+  const col = t.id === "dcus" ? "var(--c-place)" : t.id === "tropes" ? "var(--c-trope)" : "var(--c-char)";
+  if (S.ppb < 6) {
+    // bundle per scene: a count badge (semantic zoom, ruled 9/29)
+    for (const sc of SCENES) {
+      const n = mine.filter(p => p.p >= sc.start && p.p < sc.start + sc.len).length;
+      if (!n) continue;
+      const cx = X(sc.start + sc.len / 2);
+      el("rect", { x: cx - 11, y: mid - 9, width: 22, height: 18, rx: 9, class: "badge" });
+      el("text", { x: cx, y: mid + 4, "text-anchor": "middle", class: "badge-t" }, null, String(n));
+    }
+    return;
+  }
+  for (const p of mine) {
+    const x = X(p.p);
+    if (x < -20 || x > W() + 20) continue;
+    const g = el("g", { "data-pt": PTS.indexOf(p) });
+    if (t.id === "tropes") el("rect", { x: x - 5, y: mid - 5, width: 10, height: 10, fill: col, class: "pt", transform: `rotate(45 ${x} ${mid})` }, g);
+    else el("circle", { cx: x, cy: mid, r: 5.5, fill: col, class: "pt" }, g);
+    const lbl = S.ppb > 120 ? `${p.f} · .${p.at.split(".").at(-1)}` : S.ppb > 26 ? (t.id === "tropes" ? p.f : p.v) : "";
+    if (lbl) el("text", { x: x + 9, y: mid + 3.5 }, g, lbl.length > 34 ? lbl.slice(0, 33) + "…" : lbl);
+  }
+}
+function cables(tracks) {
+  const ty = id => { const t = tracks.find(t => t.id === id); return t ? t._y + t._h / 2 : null; };
+  for (const c of CABLES) {
+    const y1 = ty(c.from[0]); if (y1 == null) continue;
+    const x1 = X(c.a);
+    const col = c.state === "orphan" ? "var(--bad)" : "var(--accent)";
+    if (c.b == null) {
+      const x2 = x1 + Math.max(40, 18 * Math.sqrt(S.ppb));
+      el("path", { d: `M ${x1} ${y1} C ${x1 + 20} ${y1 + 26}, ${x2 - 10} ${y1 + 30}, ${x2} ${y1 + 22}`, class: "cable", stroke: col, "data-cab": c.id });
+      el("circle", { cx: x2, cy: y1 + 22, r: 4, class: "orphan" });
+      continue;
+    }
+    const y2 = ty(c.to[0]); if (y2 == null) continue;
+    const x2 = X(c.b), sag = Math.min(90, Math.abs(x2 - x1) * .18 + 24);
+    el("path", { d: `M ${x1} ${y1} C ${x1 + (x2 - x1) * .3} ${Math.max(y1, y2) + sag}, ${x1 + (x2 - x1) * .7} ${Math.max(y1, y2) + sag}, ${x2} ${y2}`, class: "cable" + (c.state === "provisional" ? " provisional" : ""), stroke: col, "data-cab": c.id, opacity: .9 });
+  }
+}
+
+/* ---------- the world-clock view ---------- */
+function drawWorld(y0, h) {
+  const w = W(), n = WORLD.length, colW = (w - 24) / n, rows = [];
+  const cx = i => 12 + colW * (i + .5);
+  el("rect", { x: 0, y: y0, width: w, height: BAND_H * 2, class: "band" });
+  let last = null;
+  WORLD.forEach((e, i) => {
+    if (e.m !== last) {
+      el("line", { x1: 12 + colW * i, x2: 12 + colW * i, y1: y0, y2: y0 + h, class: "grid-bar" });
+      el("text", { x: 12 + colW * i + 6, y: y0 + 15, class: "band-lbl" }, null, e.m === "backstory" ? "Backstory" : e.m);
+      last = e.m;
+    }
+  });
+  el("rect", { x: 0, y: y0, width: w, height: BAND_H * 2, fill: "transparent", "data-wruler": "1", style: "cursor:col-resize" });
+  rows.push({ nm: "World clock", sub: "fabula order · no bars", y: y0, h: BAND_H * 2, ruler: 1, term: "world" });
+  const ey = y0 + BAND_H * 2, eh = 64;
+  rows.push({ nm: "Events", sub: "the fabula", y: ey, h: eh, k: "var(--ink-3)" });
+  WORLD.forEach((e, i) => {
+    const bw = Math.min(colW - 10, 150), x = cx(i) - bw / 2;
+    el("rect", { x, y: ey + 8, width: bw, height: eh - 16, fill: "var(--panel-2)", stroke: "var(--line-2)", class: "world-ev" });
+    el("text", { x: x + 6, y: ey + 26, class: "clip-lbl" }, null, e.lbl.length * 6.2 > bw - 10 ? e.lbl.slice(0, Math.max(6, Math.floor((bw - 10) / 6.2))) + "…" : e.lbl);
+    el("text", { x: x + 6, y: ey + 42 }, null, e.m);
+  });
+  el("line", { x1: 0, x2: w, y1: ey + eh, y2: ey + eh, class: "rowline" });
+  // DCUS name track: checkpoints, the live name flips as you scrub (the 9/24 test)
+  const ny = ey + eh, nh = 44;
+  rows.push({ nm: "DCUS · name", sub: "checkpoints · header", y: ny, h: nh, k: "var(--c-place)", term: "checkpoint" });
+  const cps = WORLD.map((e, i) => ({ e, i })).filter(o => o.e.name);
+  cps.forEach((o, k) => {
+    const a = cx(o.i), b = k < cps.length - 1 ? cx(cps[k + 1].i) : w - 4;
+    el("rect", { x: a, y: ny + 8, width: b - a - 3, height: nh - 16, fill: "var(--c-place-soft)", stroke: "var(--c-place)", class: "clip" });
+    el("text", { x: a + 6, y: ny + nh / 2 + 4, class: "clip-lbl" }, null, o.e.name);
+  });
+  el("line", { x1: 0, x2: w, y1: ny + nh, y2: ny + nh, class: "rowline" });
+  S._wcx = cx; S._colW = colW;
+  return { rows, evY: ey + 8, cx };
+}
+
+/* ---------- render ---------- */
+let HEADER_ROWS = [];
+function render() {
+  svg.innerHTML = "";
+  const w = W(), h = H();
+  let rows = [];
+  if (S.view === "told") rows = drawTold(0, h, false);
+  else if (S.view === "world") rows = drawWorld(0, h).rows;
+  else {
+    const topH = Math.floor(h * .5);
+    rows = drawTold(0, topH, true);
+    const wr = drawWorld(topH + 18, h - topH - 18);
+    rows = rows.concat(wr.rows);
+    // told scene -> world event; a flashback runs backward
+    for (const sc of SCENES) {
+      const i = WORLD.findIndex(e => e.id === sc.ev);
+      const x1 = X(sc.start + sc.len / 2), x2 = wr.cx(i);
+      const back = sc.s === "S02" && sc.mv === "M3";
+      el("path", { d: `M ${x1} ${topH - 60 + 30} C ${x1} ${topH + 20}, ${x2} ${topH - 10}, ${x2} ${wr.evY}`, class: "link" + (back ? " back" : "") });
+      if (back) el("text", { x: (x1 + x2) / 2 - 40, y: topH + 12, class: "sig" }, null, "flashback ← runs backward");
+    }
+  }
+  // playhead
+  if (S.view !== "world") {
+    const px = X(S.ph);
+    if (px >= 0 && px <= w) {
+      el("line", { x1: px, x2: px, y1: 0, y2: S.view === "stack" ? Math.floor(h * .5) : h, class: "playhead" });
+      el("path", { d: `M ${px - 6} 0 L ${px + 6} 0 L ${px} 8 Z`, class: "ph-cap" });
+    }
+  } else {
+    const px = 12 + S._colW * S.wph;
+    el("line", { x1: px, x2: px, y1: 0, y2: h, class: "playhead" });
+    el("path", { d: `M ${px - 6} 0 L ${px + 6} 0 L ${px} 8 Z`, class: "ph-cap" });
+  }
+  headers(rows);
+  // header controls
+  const stop = stopName();
+  document.querySelectorAll("#zoomSeg button").forEach(b => { b.setAttribute("aria-pressed", String(b.dataset.z === stop)); b.disabled = S.view === "world"; });
+  document.querySelectorAll("#rulerSeg button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === S.view)));
+  inspector();
+}
+
+/* ---------- the inspector: assemble state at the playhead (base + every change up to here) ---------- */
+function valAt(arr, p, ramp) {
+  if (p <= arr[0].p) return arr[0].v;
+  for (let i = 1; i < arr.length; i++) if (p < arr[i].p) {
+    const r = ramp === true || arr[i].ramp;
+    return r ? arr[i - 1].v + (arr[i].v - arr[i - 1].v) * (p - arr[i - 1].p) / (arr[i].p - arr[i - 1].p) : arr[i - 1].v;
+  }
+  return arr.at(-1).v;
+}
+const FREE_LBL = { "0": "0 · Neutral", "-1": "− Conformity", "-2": "−− Control", "-3": "−−− Captivity" };
+function inspector() {
+  const box = document.getElementById("insp");
+  if (S.view === "world") {
+    const i = Math.max(0, Math.min(WORLD.length - 1, Math.floor(S.wph)));
+    let name = "—";
+    for (let k = 0; k <= i; k++) if (WORLD[k].name) name = WORLD[k].name;
+    const e = WORLD[i];
+    box.innerHTML = `<h2><small>WORLD CLOCK · ${e.m.toUpperCase()}</small>${e.lbl}</h2>
+      <div class="code">${e.id}</div>
+      <div class="grp"><div class="lbl" style="--k:var(--c-place)"><i></i>DCUS · <span class="t" data-t="checkpoint">checkpoint</span></div>
+      <dl class="kv"><dt>header.live_name</dt><dd class="chg">${name}</dd></dl>
+      <p class="note">Drag the playhead across the backstory. The live name flips at each rename: Skeeter Creek → Red Hills Academy → DCUS. That is the 9/24 test case.</p></div>
+      <p class="note">The world clock has no bars and no tempo. Flip to <span class="t" data-t="told">told order</span> to hear how the audience gets it, or <span class="t" data-t="stack">stack</span> to see both.</p>`;
+    return;
+  }
+  const c = codeAt(S.ph);
+  document.getElementById("tcOut").textContent = c.text;
+  const upTo = tr => { const o = {}; for (const p of PTS) if (p.tr === tr && p.p <= S.ph + 1e-6) o[p.f] = { v: p.v, recent: S.ph - p.p < c.sc.num * 1.01 }; return o; };
+  const tori = upTo("tori"), dcus = upTo("dcus");
+  const tropes = PTS.filter(p => p.tr === "tropes" && p.p <= S.ph).slice(-2).reverse();
+  const exp = valAt(WOUND, S.ph);
+  const fi = valAt(FREE_IN, S.ph, true), fa = valAt(FREE_AUD, S.ph, true);
+  const tp = valAt(TEMPO_PLAN, S.ph, true), tm = valAt(TEMPO_MEAS, S.ph, true);
+  const kv = o => Object.keys(o).length ? Object.entries(o).map(([k, x]) => `<dt>${k}</dt><dd class="${x.recent ? "chg" : ""}">${x.v}</dd>`).join("") : `<dt>no change yet</dt><dd>base</dd>`;
+  const live = CABLES.filter(k => k.a <= S.ph + 1e-6);
+  const chip = s => s === "provisional" ? `<span class="chip prov"><span class="t" data-t="provisional">provisional</span></span>` : s === "orphan" ? `<span class="chip orph"><span class="t" data-t="orphan">orphan</span></span>` : `<span class="chip ok">paid off</span>`;
+  box.innerHTML = `<h2><small>${c.sc.mv} · ${c.sc.q} · ${c.sc.s} · ${c.sc.num}/${c.sc.den}</small>${c.sc.lbl}</h2>
+    <div class="code">${c.text}</div>
+    <div class="grp"><div class="lbl" style="--k:var(--c-char)"><i></i>Tori · state at the playhead</div>
+      <dl class="kv"><dt>L5_WOUND.exposure <span class="t" data-t="ramp">ramp</span></dt><dd>${exp.toFixed(2)}</dd></dl>
+      <div class="meter"><b style="width:${Math.round(exp * 100)}%"></b></div>
+      <dl class="kv">${kv(tori)}</dl></div>
+    <div class="grp"><div class="lbl" style="--k:var(--c-place)"><i></i>DCUS · live name DCUS</div><dl class="kv">${kv(dcus)}</dl></div>
+    <div class="grp"><div class="lbl" style="--k:var(--c-theme)"><i></i>Theme · Rail 2 · <span class="t" data-t="freedom">Freedom</span></div>
+      <dl class="kv"><dt>in-world</dt><dd>${FREE_LBL[Math.round(fi)]}</dd><dt>audience</dt><dd class="${fa !== fi ? "chg" : ""}">${FREE_LBL[Math.round(fa)]}</dd></dl>
+      <p class="note">${fa !== fi ? "The gap is open: the record says one thing, the reader sees another. That is the ironic charge." : "No gap yet: record and reader agree."}</p></div>
+    <div class="grp"><div class="lbl" style="--k:var(--accent)"><i></i><span class="t" data-t="tempo">Tempo</span></div>
+      <dl class="kv"><dt>planned</dt><dd>${Math.round(tp)} bpm</dd><dt>measured (example)</dt><dd class="${Math.abs(tp - tm) > 12 ? "chg" : ""}">${Math.round(tm)} bpm</dd></dl>
+      <p class="note">${Math.abs(tp - tm) > 12 ? (tm < tp ? "The draft drags here against the plan." : "The draft rushes here against the plan.") : "The draft holds the planned pace."}</p></div>
+    <div class="grp"><div class="lbl" style="--k:var(--accent)"><i></i><span class="t" data-t="cable">Cables</span> set up so far</div>
+      ${live.length ? live.map(k => `<div class="cab"><div><b>${k.id}</b> ${chip(k.state)}</div><span class="mono">${k.from[1]}${k.to ? " → " + k.to[1] : " → (no payoff)"}</span><span>${k.why}</span></div>`).join("") : `<p class="note">None yet. Move the playhead right.</p>`}</div>
+    ${tropes.length ? `<div class="grp"><div class="lbl" style="--k:var(--c-trope)"><i></i>Tropes in play</div><dl class="kv">${tropes.map(t => `<dt>${t.f}</dt><dd>${t.v}</dd>`).join("")}</dl></div>` : ""}`;
+}
+
+/* ---------- controls ---------- */
+const zs = document.getElementById("zoomSeg");
+zs.innerHTML = ZOOMS.map(([nm]) => `<button data-z="${nm}" aria-pressed="false">${nm}</button>`).join("");
+zs.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const z = ZOOMS.find(z => z[0] === b.dataset.z)[1];
+  if (b.dataset.z === "Story") { fit(); render(); return; }
+  S.off = S.ph - (W() / 2) / z; S.ppb = z; clampOff(); render();
+});
+document.getElementById("rulerSeg").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  S.view = b.dataset.v; if (S.view === "stack") fit(); render();
+});
+lane.addEventListener("wheel", e => {
+  e.preventDefault();
+  if (S.view === "world") return;
+  const r = lane.getBoundingClientRect();
+  if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) { S.off += (e.deltaX || e.deltaY) / S.ppb; clampOff(); render(); return; }
+  setZoom(S.ppb * Math.exp(-e.deltaY * 0.0015), e.clientX - r.left);
+}, { passive: false });
+let drag = null;
+lane.addEventListener("pointerdown", e => {
+  const r = lane.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  const onRuler = y < BAND_H * 2 + RULE_H || (S.view === "stack" && y > H() * .5 + 18 && y < H() * .5 + 18 + BAND_H * 2);
+  if (S.view === "world" || onRuler || e.target.closest("[data-pt]")) {
+    drag = { mode: "ph" }; movePH(x);
+  } else drag = { mode: "pan", x, off: S.off };
+  lane.setPointerCapture(e.pointerId);
+});
+lane.addEventListener("pointermove", e => {
+  if (!drag) return;
+  const x = e.clientX - lane.getBoundingClientRect().left;
+  if (drag.mode === "ph") movePH(x);
+  else { S.off = drag.off - (x - drag.x) / S.ppb; clampOff(); render(); }
+});
+lane.addEventListener("pointerup", () => { drag = null; });
+function movePH(x) {
+  if (S.view === "world") { S.wph = Math.max(0, Math.min(WORLD.length - .01, (x - 12) / S._colW)); }
+  else S.ph = Math.max(0, Math.min(TOTAL - .01, S.off + x / S.ppb));
+  render();
+}
+document.addEventListener("keydown", e => {
+  if (e.target.closest("input,textarea")) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const d = e.key === "ArrowRight" ? 1 : -1;
+    if (S.view === "world") S.wph = Math.max(0, Math.min(WORLD.length - .01, S.wph + d * .5));
+    else { S.ph = Math.max(0, Math.min(TOTAL - .01, Math.floor(S.ph) + d + .05)); const px = X(S.ph); if (px < 20 || px > W() - 20) { S.off = S.ph - W() / 2 / S.ppb; clampOff(); } }
+    render(); e.preventDefault();
+  }
+  if (e.key === "t" || e.key === "T") { S.view = S.view === "told" ? "world" : S.view === "world" ? "stack" : "told"; if (S.view === "stack") fit(); render(); }
+});
+new ResizeObserver(() => { if (!S.ppb) fit(); clampOff(); render(); }).observe(lane);
+
+/* ---------- the hover layer: hover shows · Space locks · click pins · Esc closes ---------- */
+let tip = null, locked = false, cur = null;
+function showTip(t) {
+  const d = TERMS[t.dataset.t]; if (!d) return;
+  hideTip(true);
+  tip = document.createElement("div"); tip.className = "tip";
+  tip.innerHTML = `<div class="th2"><b>${d[0]}</b><span>${d[1]}</span></div><p>${d[2].replace(/\b(bar|tick|beat|cable|ramp|checkpoint)\b/g, (m) => TERMS[m] && m !== t.dataset.t ? `<span class="t" data-t="${m}">${m}</span>` : m)}</p><div class="w">${d[3]}</div><div class="hint">Space · lock  ·  click · pin  ·  Esc · close</div>`;
+  document.body.appendChild(tip);
+  const r = t.getBoundingClientRect(), tw = tip.offsetWidth, thh = tip.offsetHeight;
+  let x = Math.min(window.innerWidth - tw - 12, Math.max(12, r.left)), y = r.bottom + 8;
+  if (y + thh > window.innerHeight - 8) y = r.top - thh - 8;
+  tip.style.left = x + "px"; tip.style.top = Math.max(8, y) + "px";
+  cur = t; t.classList.add("on");
+}
+function hideTip(force) {
+  if (locked && !force) return;
+  if (tip) tip.remove(); tip = null; locked = false;
+  if (cur) cur.classList.remove("on"); cur = null;
+}
+document.addEventListener("mouseover", e => {
+  const t = e.target.closest(".t");
+  if (t && !locked && t !== cur && !(tip && tip.contains(t))) showTip(t);
+  if (tip && tip.contains(e.target)) { const inner = e.target.closest(".t"); if (inner && locked) { /* nested: open the inner term */ locked = false; showTip(inner); } }
+});
+document.addEventListener("mouseout", e => {
+  const t = e.target.closest(".t");
+  if (!t || locked) return;
+  const to = e.relatedTarget;
+  if (to && (to.closest && (to.closest(".tip") || to.closest(".t") === t))) return;
+  setTimeout(() => { if (!locked && tip && !tip.matches(":hover")) hideTip(); }, 120);
+});
+document.addEventListener("click", e => {
+  const t = e.target.closest(".t");
+  if (t) { if (cur !== t) showTip(t); locked = true; tip && tip.classList.add("locked"); e.stopPropagation(); return; }
+  if (tip && !tip.contains(e.target)) hideTip(true);
+});
+document.addEventListener("keydown", e => {
+  if (e.code === "Space" && tip) { locked = !locked; tip.classList.toggle("locked", locked); e.preventDefault(); }
+  if (e.key === "Escape") hideTip(true);
+});
+
+fit(); S.ppb = Math.max(S.ppb, 2.2); S.off = S.ph - (W() * .45) / S.ppb; clampOff(); render();
+})();
+</script>
