@@ -33,11 +33,11 @@ feeds:
   - layer: SETTING
     variable: S10_underside
     strength: primary
-    note: "Fairy-tale forensics is the mechanism of S10: Estés reads Grimm-collected tales as scoured surfaces over pre-Christian, pagan, and female-mystery content — a healer renamed a witch, a caul renamed a handkerchief. The buried layer is UNDERSIDE; the sanctioned collected text is the S4/S8 surface, exactly the public/personal split BVX.0458 already keyed from Cook."
+    note: "Fairy-tale forensics is the mechanism of S10: Estés reads Grimm-collected tales as scoured surfaces over pre-Christian, pagan, and female-mystery content (a healer renamed a witch, a caul renamed a handkerchief). The buried layer is UNDERSIDE; the sanctioned collected text is the S4/S8 surface, exactly the public/personal split BVX.0458 already keyed from Cook."
   - layer: SETTING
     variable: S8_habit
     strength: supporting
-    note: "The cantadora/cuentista transmission ethic (godparents of a story, permission, the master-apprentice line) is a belonging architecture for who may carry a culture's lore — a second, oral-tradition instance of the same binding-principle logic BVX.0458 keyed from Baur's tribe/city-state/nation essay."
+    note: "The cantadora/cuentista transmission ethic (godparents of a story, permission, the master-apprentice line) is a belonging architecture for who may carry a culture's lore, a second, oral-tradition instance of the same binding-principle logic BVX.0458 keyed from Baur's tribe/city-state/nation essay."
 zotero_key: "CU944BAM"
 pdf_pages: 537
 status: complete
@@ -152,7 +152,7 @@ No single spine; sixteen chapters, each keyed to one or two fairy tales, arrange
 
 | Concept | What it is | Why it matters |
 |---|---|---|
-| **Fairy-tale forensics / paleomythology** | Comparing leitmotifs across cultural variants of a tale, plus anthropological and archeological cross-checks, to reconstruct what a corrupted or fragmentary telling originally carried | The book's actual method; treats a story like an artifact with a recoverable original state, not a fixed text |
+| **Fairy-tale forensics** | Comparing leitmotifs across cultural variants, plus anthropological cross-checks, to reconstruct what a corrupted telling originally carried | The book's actual method; treats a story as an artifact with a recoverable original state, not a fixed text |
 | **Cultural overlay** | Later religious or political layers painted over older tale content: Grimm-era informants "purifying" stories for the collecting brothers, turning a healer into a witch, a caul into a handkerchief | Names the failure mode a worldbuilder can reverse-engineer: what a culture's official myth-version is hiding, and why |
 | **The Wild Woman archetype / La Que Sabe** | A single psychic force personified under dozens of local names (Rio Abajo Rio, Durga, Hekate, Dakini, Amaterasu) across cultures that never contacted one another | Demonstrates that an archetype is the invariant; its name, iconography, and ritual are the culturally local mask |
 | **The natural predator of the psyche (Bluebeard)** | An internalized, repressed complex common to the species, not a personal biography, read through a lineage of "failed magician" figures (Icarus, Lucifer, the sorcerer's apprentice) | A template for an antagonist as a psychic force with mythic ancestry, not a one-off villain |
@@ -162,7 +162,7 @@ No single spine; sixteen chapters, each keyed to one or two fairy tales, arrange
 | **The eight Traps (Self-Preservation)** | A named catalog: the gilded carriage, the dry old woman, burning the treasure, injury to instinct, the split-in-two secret life, cringing before the collective, faking it, dancing out of control | A checklist for how a freed or awakened character gets recaptured; each trap is a distinct failure mode, not a generic relapse |
 | **Kinds of Mothers** | The ambivalent, collapsed, and unmothered mother, read through "The Ugly Duckling": an internal mother complex shaped by both personal and cultural images of "good" mothering | A formative-conditioning typology for how a culture's expectations get internalized as a character's own inner voice |
 | **Battle Scars / the Scar Clan** | Membership formed by shared, disclosed wounds rather than by choice or blood | Treats trauma as a source of community and identity, not only private damage to be hidden |
-| **Story as medicine vs. story as entertainment** | Medicine-telling requires training, permission, timing, and knowing what *not* to do; entertainment requires none of this | The dividing line the book insists on: extracting a myth's content without its transmission context defangs it |
+| **Story as medicine vs. entertainment** | Medicine-telling requires training, permission, timing, and knowing what *not* to do | The dividing line the book insists on: content extracted from its transmission context is defanged |
 
 ---
 
@@ -200,7 +200,7 @@ No single spine; sixteen chapters, each keyed to one or two fairy tales, arrange
 - Extracting a myth's content while discarding its transmission ethics: the "story collector" error the book names directly, taking a story of consequence without knowing what one is asking for.
 - Writing trauma as an isolated plot event rather than an accumulating condition with its own severity and behavior under triggers.
 - Making an antagonist purely external and biographical, missing the more resonant register of an internalized, species-wide predator complex.
-- Assuming intellectual analysis alone can "know" an archetype; Estés is explicit that contact without change in the teller is "rhetorical translation," not transmission.
+- Assuming intellectual analysis alone can "know" an archetype; contact without change in the teller is "rhetorical translation," not transmission.
 
 ---
 
