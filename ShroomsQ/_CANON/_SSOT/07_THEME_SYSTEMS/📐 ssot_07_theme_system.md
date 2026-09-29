@@ -47,6 +47,17 @@ Theme runs as four debates at once, one per point of view, each the storyform's 
 
 The four sum to the controlling idea: the world forecasts everyone doing their job (1); Tori stops trusting the story over her own eyes (2); Anna proves the forecast by winning the game as dealt (3); the rivalry settles whose account survives (4).
 
+## THE VALUE SCALE — the per-scene gauge (80-B.2)
+
+**The value is FREEDOM** — RULED 2026-09-29 (Chief: "I like option two"). It tracks the mechanism line (biopower). Every scene moves freedom up or down this scale (Coyne/McKee, [[BVX.0236]]); the plot card's value in/out (P3 · P5) name a step.
+
+| Step | Name | Plain words |
+|---|---|---|
+| + Positive | Freedom | *pending Chief's pick* |
+| − Contrary | Conformity | *pending* |
+| −− Contradictory | Control | *pending* |
+| −−− Negation of the negation | Control that feels like freedom | *pending* |
+
 ## PROVENANCE
 
 - The 9/24 research verdict holds: Foucault supplies the **mechanism** (power produces the person); the **moral** claim that ordinary people carry out evil belongs to Arendt (the banality of evil), Bauman, Milgram and Browning. The ruled sentence is that moral claim, and the mechanism line is Foucault's. `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
