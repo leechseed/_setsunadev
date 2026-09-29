@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: prose_style
-version: 0.1.0
+version: 1.0.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "draft — BOLO 92, RULED 2026-09-29; ⧗ rules await Chief"
+status: "canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
 purpose: "06.1 PROSE — the universe-wide prose style guide: how the LEECHSEED stories read on the page. Sibling to 06.2 Documents and 06.3 Pages under 06_STYLE_GUIDES; per-story telling profiles (OXO's, first) are instances of this guide, not replacements for it."
 dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)"]
 trunk: BLACK
@@ -138,14 +138,15 @@ Canon docs already carrying citations this guide reuses rather than re-sources: 
 
 ## OPEN
 
-Numbered calls awaiting Chief; each carries one recommendation and stays ⧗ until struck or kept.
+All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* below is now the rule. Call 5 rules a HOLD: the disclaimer's wording waits for its own front-matter pass.
 
-1. **⧗ Tense/person default for a new IP.** No house-wide default is ruled. *Rec:* past tense, single internal-fixed focalization, matching OXO's own instance, struck or kept per IP.
-2. **⧗ Sentence rhythm.** The shelf gives craft claims, not Chief's ear. *Rec:* short-to-medium base gait, stretch licensed only where T4 duration calls for it (Sync-dive, trance, dread).
-3. **⧗ Profanity level.** No ceiling or floor is ruled house-wide. *Rec:* no universe ceiling; profanity follows the speaker (their register and L-layers) and the story's T6 register. (CDR correction 2026-09-29: an earlier draft rec called OXO "YA-adjacent"; nothing in canon says so, so that rec was struck.)
-4. **⧗ Explicitness register across stories.** P3 SATURATION states the doctrine, not a page-level dial. *Rec:* explicit is allowed by default, written as fantasy first, with the container living outside the story as the front-matter viewer-discretion disclaimer (TS 1:1, soft, Chief 2026-09-29: "it needs to be that fantasy"); a story may dial down per its own genre contract. (CDR correction 2026-09-29: an earlier draft rec made "fade to paratext" the default, which contradicts Chief's TS 1:1 refinement; struck.)
-5. **⧗ The disclaimer's exact wording.** TS 1:1's refinement rules that the container lives in front matter, not the wording itself. *Rec:* hold for a dedicated paratext pass (06.2 or 06.3's territory) rather than drafting it inside this prose guide.
+1. **✅ Tense/person default for a new IP.** No house-wide default is ruled. *Rec:* past tense, single internal-fixed focalization, matching OXO's own instance, struck or kept per IP.
+2. **✅ Sentence rhythm.** The shelf gives craft claims, not Chief's ear. *Rec:* short-to-medium base gait, stretch licensed only where T4 duration calls for it (Sync-dive, trance, dread).
+3. **✅ Profanity level.** No ceiling or floor is ruled house-wide. *Rec:* no universe ceiling; profanity follows the speaker (their register and L-layers) and the story's T6 register. (CDR correction 2026-09-29: an earlier draft rec called OXO "YA-adjacent"; nothing in canon says so, so that rec was struck.)
+4. **✅ Explicitness register across stories.** P3 SATURATION states the doctrine, not a page-level dial. *Rec:* explicit is allowed by default, written as fantasy first, with the container living outside the story as the front-matter viewer-discretion disclaimer (TS 1:1, soft, Chief 2026-09-29: "it needs to be that fantasy"); a story may dial down per its own genre contract. (CDR correction 2026-09-29: an earlier draft rec made "fade to paratext" the default, which contradicts Chief's TS 1:1 refinement; struck.)
+5. **✅ The disclaimer's exact wording.** TS 1:1's refinement rules that the container lives in front matter, not the wording itself. *Rec:* hold for a dedicated paratext pass (06.2 or 06.3's territory) rather than drafting it inside this prose guide.
 
 ## Version history
 
+- **1.0.0 · 2026-09-29** — OPEN 1–5 RULED as recommended (Chief, "all right"): past tense + one fixed viewpoint by default · short-to-medium gait, stretched only where pace calls for it · no universe profanity ceiling, it follows the speaker · explicit allowed by default, fantasy first, the container is the front-matter disclaimer (TS 1:1) · the disclaimer wording held for a front-matter pass.
 - **0.1.0 · 2026-09-29** — bootstrap: BOLO 92 RULED ("all recs," after the Zotero pass). Built from the OXO Telling Profile (worked instance), the texture system/layer, Modern Poetics (P3), the medium grammars (M1 PROSE), the Touchstones register (TS 1:1), the theme doc's motifs, and the genre system's cultcore instance; sourced from the BOLO 92 shelf's 06.1 Prose list, held not read. Five ⧗ calls await Chief.

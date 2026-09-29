@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 0.1.0
+version: 1.0.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
-status: "draft — BOLO 92, RULED 2026-09-29"
+status: "canonical — 1.0 per BOLO 92's bar; all three OPEN calls ruled"
 purpose: "How artifacts and pages look: the foundation design system, then the page rulings (colorway, chrome, the hover layer, diagram rendering, the dashboard pattern, learning-tool density) gathered from memory for the first time; held-not-distilled sources from the Zotero shelf."
 dependencies: ["[[📐 ssot_00_bold_venture_design_system]]"]
 trunk: BLACK
@@ -40,6 +40,7 @@ Every artifact and tool page the Command publishes answers to two layers. The **
 | A Mermaid diagram is written into the static `<pre class="mermaid">` markup the artifact host receives at build time; a page script must never inject it via `innerHTML` — the host's Mermaid pass runs once, over the DOM it is handed. | Found 2026-09-16, TM 04 (memory: mermaid-static-dom-only) |
 | Every sit rep — and its siblings, DOPE SHEET N and the SOI — republishes as a dashboard page to one standing URL, never a new one, in the internal working palette (CK3 information architecture × Death Stranding surface). | RULED 2026-09-10–11, BOLO 38 (memory: sitrep-front-page) |
 | Chief-facing learning material ships as the head version first — the sentence and the buttons, nothing else on the card, a score at the end. The complete, machine-facing version is offered only after, never by default. | Feedback 2026-09-06 (memory: learning-tools-minimal) |
+| Type is three faces: **Barlow Condensed** (display, headings, labels) · **Atkinson Hyperlegible** (body) · **IBM Plex Mono** (codes, counts, metadata), loaded from Google Fonts | default-colorway memory (RULED 2026-09-10/11); folded here 2026-09-29 (BOLO 92, OPEN 3 rec) |
 
 ## SOURCES — HELD, NOT YET DISTILLED
 
@@ -61,10 +62,13 @@ Tier 1 of the Zotero shelf's **06.3 Pages** section, `_tools/bolostatus/work/92/
 
 ## OPEN
 
+RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): (1) the five id-less sources get BVX ids on the next inventory pass · (2) page rules pull from Harris and Lidwell/Holden/Butler first when they need backing · (3) the typography tokens are now a ruling row above (done).
+
 - **Five of the eleven held sources carry no BVX id** — the shelf pass logged them by title only. Rec: run the next Zotero inventory pass (`_tools/zotero/inventory.py`) against these five titles and assign ids so they can be cited precisely instead of by title.
 - **No ruling distills any of the eleven sources into a page rule yet.** Rec: when a page rule needs backing beyond memory (e.g. the CK3 hover pattern's information-density claim), pull first from Harris (*Information Graphics*) and Lidwell/Holden/Butler (*Universal Principles of Design*) — both are general-audience references already tier-1 and closest to the working-tool page problem.
 - **Typography tokens** (Barlow Condensed / Atkinson Hyperlegible / IBM Plex Mono) live inside the default-colorway memory but have no SSOT home yet. Rec: fold them into this page's rulings table on the next FRAGO once a live reference page is repointed here.
 
 ## VERSION HISTORY
 
+- **1.0.0 · 2026-09-29** — all three OPEN calls RULED as recommended; the typography tokens folded in as a page ruling.
 - **0.1.0 · 2026-09-29** — bootstrap: the foundation link to 00_EPISTEMOLOGY; six page rulings gathered from memory for the first time (colorway/dark-only, thin chrome, CK3 hover layer, Mermaid static DOM, the sit-rep dashboard pattern, minimal learning tools); eleven tier-1 SOURCES from the BOLO 92 shelf (one misfit skipped); three OPEN calls.

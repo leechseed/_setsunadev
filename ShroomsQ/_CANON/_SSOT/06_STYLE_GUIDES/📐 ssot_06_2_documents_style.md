@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 0.1.0
+version: 1.0.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
-status: "draft — BOLO 92, RULED 2026-09-29"
+status: "canonical — 1.0 per BOLO 92's bar; both OPEN calls ruled"
 purpose: "The index and the rules for how the Command writes: replies, readbacks, and the SSOT documentation conventions. Points to the writing guide (06.2a) and the markdown-marking standard (06.2b); gathers the reply-format rulings that today live only in SOP §7 and in memory."
 dependencies: ["[[📐 ssot_06_2a_writing_guide]]", "[[📐 ssot_06_2b_markdown_marking]]", "SOP.md §7"]
 trunk: BLACK
@@ -69,9 +69,12 @@ These never made it into SOP §7's numbered list because they are not reply-form
 
 ## OPEN
 
+RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distill into the rule rows when it lands; the 06.1/06.2 split is drawn by the cross-reference lines (done 2026-09-29).
+
 - **The learning-science distill of the reply format is still pending** — SOP §7 itself is marked "v0.1 — the full learning-science distill is BOLO 6." Rec: fold BOLO 6's findings into this table's rule 1–7 rows when BOLO 6 lands, rather than reopening SOP §7 directly.
 - **The boundary between 06.2 (documents) and 06.1 (prose)** is drawn by convention here, not by a ruling — no Chief ruling was found naming the split. Rec: once [[📐 ssot_06_1_prose_style]] publishes, add one cross-reference line each way and confirm neither page claims a rule the other already owns.
 
 ## VERSION HISTORY
 
+- **1.0.0 · 2026-09-29** — both OPEN calls RULED as recommended: BOLO 6 folds in on landing; the 06.1/06.2 split is set by cross-reference.
 - **0.1.0 · 2026-09-29** — bootstrap: indexes 06.2a and 06.2b; SOP §7's twelve rules summarized with citations; five naming rulings gathered from memory for the first time (plain register, Command format, clickable file links, Touchstone naming, the Command naming); two OPEN calls.
