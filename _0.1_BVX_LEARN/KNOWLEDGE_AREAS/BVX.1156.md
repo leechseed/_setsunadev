@@ -37,7 +37,7 @@ date_created: 2026-09-29
 # BVX.1156 — Kingdom: A Role-Playing Game About Communities (2nd ed.) — Ben Robbins (2019)
 ### Knowledge Entry — Distill
 
-A GM-less tabletop game where three to five players run one community (a "Kingdom") through a chain of binding decisions, each player holding exactly one of three checks-and-balances Roles at a time; the setting shelf's cleanest model of a faction actually deciding something.
+A GM-less tabletop game where three to five players run one community through a chain of binding decisions, each holding exactly one of three checks-and-balances Roles at a time; the setting shelf's cleanest model of a faction actually deciding something.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
