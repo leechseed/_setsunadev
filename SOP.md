@@ -142,6 +142,8 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 
 ## 7 · Command format — how transmissions are written
 
+> **Style home (BOLO 92, 2026-09-29):** the documents style guide, `ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2_documents_style.md`, indexes these rules with the writing guide and markdown marking; this section stays the authority for replies.
+
 **Coded 2026-08-21 after the readback-wall incident.** The rhetoric stays; the formatting serves scanning. This is v0.1 — the full learning-science distill is BOLO 6.
 
 1. **Readbacks are bulleted.** One order per bullet, bold anchor up front. Never a prose wall.
