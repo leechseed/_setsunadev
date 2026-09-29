@@ -19,7 +19,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | Already in catalog.json (BVX id) | 1010 |
 | **New since the Dec-2023 catalog** | **7863** |
 | Story-side (CRE + LIT by catalog) | 630 |
-| **Spine-keyed from Chief's tags** | **605** |
+| **Spine-keyed from Chief's tags** | **908** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
 
@@ -27,29 +27,29 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Level | Items |
 |---|---|
-| L7 | 174 |
-| L4 | 162 |
-| SETTING | 154 |
-| TEXTURE | 105 |
-| L5 | 82 |
-| L6 | 27 |
-| L0 | 27 |
-| CRAFT-PROCESS | 23 |
+| L7 | 252 |
+| SETTING | 233 |
+| L4 | 218 |
+| TEXTURE | 160 |
+| L5 | 146 |
+| L0 | 46 |
+| L6 | 39 |
+| CRAFT-PROCESS | 28 |
 
 ## By catalog subject
 
 | Subject | Items |
 |---|---|
-| NEW | 5555 |
+| NEW | 5550 |
 | GAM | 1234 |
 | CRE | 464 |
 | PHI | 284 |
 | SLF | 204 |
 | VIS | 198 |
 | MSX | 195 |
-| TEC | 182 |
+| TEC | 184 |
 | LIT | 166 |
-| MIL | 84 |
+| MIL | 87 |
 | BIZ | 82 |
 | FIT | 66 |
 | POL | 38 |
