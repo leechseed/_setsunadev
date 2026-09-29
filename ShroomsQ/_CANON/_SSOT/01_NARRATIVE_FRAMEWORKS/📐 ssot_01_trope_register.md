@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 0.2.0
+version: 0.3.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
 status: "RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
@@ -35,15 +35,15 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 
 ## THE COUNTS (2026-09-29)
 
-**4,948 tropes**, all keyed (v0.2.0, after the theme sub-index pass) · confidence: high 3,835 · medium 564 · low 707 · 207 serve more than one domain.
+**4,948 tropes**, all keyed (v0.2.0, after the theme sub-index pass) · confidence: high 3,919 · medium 797 · low 232 (v0.3.0, after the re-key on real definitions) · 207 serve more than one domain · 380 still have no definition.
 
 | Domain (index) | Keyed by layer |
 |---|---|
-| **character** (Characters As Device · Characterization · Archetypal Character) | L1 291 · L2 38 · L3 156 · L4 32 · L5 26 · L6 34 · L7 31 · L8 43 · L9 26 · L10 40 · L11 51 · **L12 508** · null 348 |
-| **sexuality** (Sex Tropes · Queer Romance) | **L9 428** · L5 11 · L2 2 · L1 1 · L7 1 · null 2 |
-| **setting** (Settings) | **S1 276** · S2 3 · S3 24 · S4 40 · S5 21 · S6 14 · S7 30 · S8 37 · S9 21 · S10 35 · S11 55 · S12 21 · null 66 |
-| **genre** (Genres · Genre Tropes) | **G1 60** · G2 11 · G3 2 · G5 2 · G8 2 · G11 2 · null 26 |
-| **theme** (Truth and Lies · Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) | R1 274 · **R2 560** · R3 321 · R4 386 · null 797 |
+| **character** (Characters As Device · Characterization · Archetypal Character) | L1 316 · L2 59 · L3 198 · L4 54 · L5 37 · L6 63 · L7 70 · L8 47 · L9 60 · L10 85 · L11 56 · **L12 485** · null 94 |
+| **sexuality** (Sex Tropes · Queer Romance) | **L9 430** · L5 10 · L2 2 · L1 1 · L7 1 · null 1 |
+| **setting** (Settings) | **S1 282** · S2 4 · S3 27 · S4 45 · S5 25 · S6 14 · S7 32 · S8 40 · S9 29 · S10 41 · S11 62 · S12 18 · null 24 |
+| **genre** (Genres · Genre Tropes) | **G1 66** · G2 8 · G3 5 · G4 3 · G5 6 · G6 2 · G8 3 · G9 3 · G10 1 · G11 3 · null 5 |
+| **theme** (Truth and Lies · Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) | R1 274 · **R2 566** · R3 324 · R4 383 · null 791 |
 
 **The pull list:** [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) lists every layer with every trope keyed to it.
 
@@ -57,10 +57,11 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 ## OPEN
 
 - **Theme sub-index pass — DONE 0.2.0.**
-- **The 658 low-confidence keys** — a second pass once definitions are pulled from the trope pages' first line (one-line only, the public-repo rule).
+- **The low-confidence pass — DONE 0.3.0.** 952 definitions fetched (first sentence only), re-keyed by two PS; low confidence fell 707 → 232. 380 tropes still have no definition (their pages open without a plain first paragraph).
 - **Consumers** — each system gets a TROPES section pointing at its layer lists (character, setting, genre, theme); the tracking system's story points can carry a trope id ([ssot_08](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)).
 
 ## Version history
 
+- **0.3.0 — 2026-09-29.** The low-confidence pass: `fetch_defs.py` pulled 952 first-sentence definitions; two PS re-keyed them on 6 batches (R1–R6), RANGE 0 findings; character nulls 348 → 94, low confidence 707 → 232.
 - **0.2.0 — 2026-09-29.** Theme sub-index pass (Chief, "Recommendations"): eight sub-indexes added, 1,854 new tropes (4,948 total), 2,012 theme keys by two PS on 9 batches (T1–T9); RANGE caught four files in the wrong JSON shape, string nulls, and five misspelled slugs, all fixed → 0.
 - **0.1.0 — 2026-09-29.** BOLO 89: register stood up. 3,094 tropes fetched (`fetch.py --domains`), keyed by three PS (haiku) on 16 disjoint batches, RANGE (`work/89/range.py`) 5 findings fixed → 0.

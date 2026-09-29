@@ -21,7 +21,8 @@ for f in sorted(glob.glob(str(R.parent / "bolostatus/work/89/keys.batch*.json"))
     for r in json.loads(Path(f).read_text(encoding="utf-8")):
         k = keys.setdefault(r["slug"], {"keys": {}, "conf": r.get("conf")})
         k["keys"].update(r.get("keys", {}))  # theme batches (batchT*) add a key, never replace
-        if k["conf"] != "low" and r.get("conf") == "low": k["conf"] = "low"
+        if "batchR" in f: k["conf"] = r.get("conf")  # the re-key read the real definition: its confidence replaces the name-only one
+        elif k["conf"] != "low" and r.get("conf") == "low": k["conf"] = "low"
 reg = {}
 for s, v in idx.items():
     if not v.get("domains"): continue
