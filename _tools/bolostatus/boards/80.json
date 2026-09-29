@@ -6,7 +6,7 @@
   "issued": "2026-09-24",
   "asof": "2026-09-29",
   "s": "open",
-  "status": "🟢 **SHAPE RULED 9/29** — controlling idea: \"Nobody has to be evil when everyone does their job.\" · rails: four debates in Chief's words · value: FREEDOM (Your life is yours → You go along to get along → You're managed, not free → The cage feels like home) · motifs: the uniform and the mirror · a door she could walk out of · the Feed · doc v0.5.0 `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` · open: 80-C, 80-E, 80-G (all rec yes).",
+  "status": "🟢 **ALL CALLS RULED 9/29** — controlling idea: \"Nobody has to be evil when everyone does their job.\" · rails in Chief's words · value FREEDOM (Tori) + FAIRNESS (the world, 80-G) · motifs: the uniform and the mirror · a door she could walk out of · the Feed · doc v0.6.0 `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` · theme no longer gates BOLO 77; 81 (last-in-line) still does.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the theme doc for `07_THEME_SYSTEMS/` (not yet written) · BOLO 77's four open syuzhet calls (77-U to 77-X), gated until this lands · the theme/invariants handshake BOLO 81 shares (`cost_and_meaning`, named \"theme with enforcement teeth\")",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 80",
   "card": "none",
-  "version": "v0.6 · DOPE SHEET"
+  "version": "v0.7 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the theme system as one doc, **in order to** give every scene a value it moves and an argument it serves before any scene is written.",
-  "order": "**Rule the last three recs (80-C handshake · 80-E held books · Fairness as the world's second gauge); then theme hands BOLO 77 its gate.**",
-  "default": "Silence: the shape stands; 77 stays gated on 80 + 81.",
+  "order": "**Pick plain words for the Fairness gauge's four steps; the handshake table with BOLO 81 waits on 81's release.**",
+  "default": "Silence: theme stands ruled; the gauge carries the technical step names.",
   "calls": [
    {
     "q": "80-A · Where does the theme doc live?",
@@ -67,7 +67,8 @@
     "q": "80-C · How does theme relate to the rules (BOLO 81)?",
     "options": "two docs joined by a table: theme = what the story argues, invariants = what it can never break · one merged doc",
     "default": "two docs + a handshake table (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): two docs joined by a handshake table; `cost_and_meaning` sits in both; the table is built when 81 reaches release."
    },
    {
     "q": "80-D · Which story goes first?",
@@ -80,7 +81,8 @@
     "q": "80-E · Which books?",
     "options": "read only what's held (Egri, McKee, Coyne, Truby, Dramatica) · also hunt Weiland (named in the spine, but none of his books is distilled)",
     "default": "held books only, do without Weiland (rec): Truby and McKee cover the craft",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): held books only (Egri, McKee, Coyne, Truby, Dramatica, plus Foucault MSX.36); no Weiland."
    },
    {
     "q": "80-F · What order?",
@@ -100,7 +102,8 @@
     "q": "80-G · Fairness as a second gauge for world scenes?",
     "options": "yes, world scenes read Fairness, Tori's read Freedom · no, Freedom only",
     "default": "yes (rec): the world's debate already runs Equity → Inequity",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): yes — world scenes read Fairness, Tori's scenes read Freedom."
    }
   ]
  },
@@ -215,9 +218,15 @@
     },
     {
      "n": 4,
+     "s": "done",
+     "when": "9/29",
+     "t": "**The last three recs ruled** — 80-C · 80-E · 80-G on \"all recs\". Theme clears its half of BOLO 77's gate."
+    },
+    {
+     "n": 5,
      "s": "open",
      "when": "next",
-     "t": "**The last three recs** — 80-C · 80-E · 80-G; then the gate on BOLO 77 is theme-clear."
+     "t": "**Fairness gauge plain words** · then the 81 handshake (at 81's release) · EVIL CHECK wave 2."
     }
    ],
    "coord": [
@@ -764,6 +773,16 @@
      "when": "9/29",
      "who": "Chief",
      "t": "\"Replace the last one with A\": the Feed takes the third motif slot from the legibility violation."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Go on all those recs.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "80-C, 80-E, 80-G ruled into the theme doc v0.6.0; TM 03 changes 1–4 and 6–9 sent to an MS to apply; BOLO 87 tier-2 held."
     }
    ]
   }

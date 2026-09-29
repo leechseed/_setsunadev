@@ -1,10 +1,10 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 0.5.0
+version: 0.6.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT first, EVIL CHECK second (80-D)]
-status: shape ruled 2026-09-29 — controlling idea, rails, value scale and motifs all ruled; 80-C and 80-E recs open
+status: RULED 2026-09-29 — every BOLO 80 call ruled; open items are plain words for the Fairness gauge, the BOLO 81 handshake, and EVIL CHECK (wave 2)
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
 dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
 trunk: BLACK
@@ -58,6 +58,8 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 | −− Contradictory | Control | *You're managed, not free.* |
 | −−− Negation of the negation | Control that feels like freedom | *The cage feels like home.* |
 
+**Second gauge, FAIRNESS, for world scenes** — RULED 2026-09-29 (80-G). World scenes (the factions, DCUS) also read Fairness, since the world's debate runs Equity → Inequity; Tori's scenes read Freedom. Steps: + Fairness · − Unfairness · −− Injustice · −−− a rigged game that calls itself fair. Plain words not yet picked.
+
 ## THE MOTIFS — three images (80-B.3, RULED 2026-09-29)
 
 Recurring images that carry the theme without anyone saying it (Tomashevsky, Greimas isotopy); fed to the texture system. Each appearance moves the Freedom scale. Chosen by Chief 2026-09-29 (G · F · E), then amended the same night: the Feed replaces the legibility violation (G · F · A). The Sync score and the clothing glow stay as setting, not motif; the legibility violation stays a setting mechanic.
@@ -73,11 +75,18 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 - The 9/24 research verdict holds: Foucault supplies the **mechanism** (power produces the person); the **moral** claim that ordinary people carry out evil belongs to Arendt (the banality of evil), Bauman, Milgram and Browning. The ruled sentence is that moral claim, and the mechanism line is Foucault's. `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
 - Chief's 9/24 phrasing, *"the system enables evil; the person is a symptom,"* stays on record as the Overall Story's world-claim.
 
-## OPEN (walked piece by piece, per Chief 9/24)
+## RULED 2026-09-29 (Chief: "go on all those recs")
 
-- **80-B · the shape: RULED 2026-09-29, fully walked** — the rails · the one sentence · the value scale · the motifs (all above). Side call open: Fairness as a second gauge for world scenes (rec yes).
-- **80-C · theme vs. the Touchstones (BOLO 81):** rec, two docs joined by a handshake table (`cost_and_meaning` sits in both).
-- **80-E · which books:** rec, held books only (Egri, McKee, Coyne, Truby, Dramatica); no Weiland.
+- **80-B · the shape:** fully walked (above).
+- **80-C · theme vs. the Touchstones (BOLO 81):** two docs joined by a handshake table. Theme = what the story argues; the Touchstones = what it can never break. `cost_and_meaning` sits in both. The table is built when BOLO 81's register reaches release (81 comes last).
+- **80-E · which books:** held books only (Egri, McKee, Coyne, Truby, Dramatica, plus Foucault now distilled as MSX.36); no Weiland.
+- **80-G · Fairness as a second gauge for world scenes:** yes (above).
+
+## OPEN
+
+- Fairness gauge plain words (four steps).
+- The handshake table with BOLO 81 (waits on 81's release).
+- EVIL CHECK's controlling idea (wave 2, per 80-D).
 
 ## Version history
 
@@ -86,3 +95,4 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 - **0.3.0 · 2026-09-29** — the value scale: FREEDOM ruled (80-B.2), plain words handpicked (B · A · B · B).
 - **0.4.0 · 2026-09-29** — the motifs ruled (80-B.3: the uniform and the mirror · a door she could walk out of · the legibility violation); 80-B fully walked.
 - **0.5.0 · 2026-09-29** — motif amended: the Feed replaces the legibility violation (G · F · A).
+- **0.6.0 · 2026-09-29** — 80-C, 80-E, 80-G ruled on "all recs"; Fairness added as the world's second gauge.
