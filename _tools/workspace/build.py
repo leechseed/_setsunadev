@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-BOLO 79 · MS-UI build — the story workspace, one page, three lenses
+BOLO 79 · MS-UI build — the story workspace, one page, three views
 (Fabula / Rails / Told) over OXO's plot system, filled with real data.
 
 Reads:
@@ -37,7 +37,7 @@ OUT = Path(__file__).resolve().parent / "out" / "workspace.html"
 CHARACTER_NODE_MD = ROOT / "_CANON_NODES" / "victoria-midnight.md"
 SETTING_SYSTEM_MD = ROOT / "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md"
 
-# the Told lens (The Arrangement, BOLO 79 ruled 9/29): one tracking file per story,
+# the Told view (The Arrangement, BOLO 79 ruled 9/29): one tracking file per story,
 # `stories:` scope kept at OXO only — tracking.py fails loudly on a bad code/slug.
 TRACKING = tracking.load("oxo")
 
@@ -405,7 +405,7 @@ GLOSSARY.update(
             "d": "One record standing for a repeated class rather than one row per occurrence — “not a single portion of elapsed time but... several portions taken as if they were alike and to some extent repetitive” (Genette 1980: 53). The fabula's `repeat` flag.",
             "w": "ssot_04_fabula.md · THE WORLD CLOCK",
         },
-        # ---- the Told lens's own terms, ported from The Arrangement's TERMS (BOLO 90 × 79, ruled 9/29) ----
+        # ---- the Told view's own terms, ported from The Arrangement's TERMS (BOLO 90 × 79, ruled 9/29) ----
         "timecode": {
             "t": "Time code", "k": "grid",
             "d": "Where a moment sits: movement · sequence · scene | bar.beat.tick. M2 · Q1 · S02 | 006.3.2 is movement 2, sequence 1, scene 2, bar 6, beat 3, tick 2.",
@@ -723,7 +723,7 @@ STYLE = r"""
   .node-chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
   .provisional { margin: 10px 0 16px; font-family: var(--mono); font-size: 11px; color: var(--warn); overflow-wrap: anywhere; }
 
-  /* ---- told lens: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ---- */
+  /* ---- told view: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ---- */
   .told-toolbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
   .told-toolbar .seg { display: flex; border: 1px solid var(--line-2); }
   .told-toolbar .seg button { font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; color: var(--ink-2); white-space: nowrap; }
@@ -810,7 +810,7 @@ STYLE = r"""
   .told-history .hreason { grid-column: 1 / -1; font-size: 11.5px; color: var(--bad); }
   .told-history .hclose { position: absolute; top: 6px; right: 8px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
 
-  /* the playhead inspector — replaces the selection card while the Told lens is open */
+  /* the playhead inspector — replaces the selection card while the Told view is open */
   .told-insp .grp { display: grid; gap: 6px; }
   .told-insp .grp > .glbl { font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--line); padding-bottom: 4px; display: flex; gap: 8px; align-items: center; }
   .told-insp .grp > .glbl i { width: 8px; height: 8px; display: inline-block; background: var(--k); }
@@ -1025,7 +1025,7 @@ def build_html() -> str:
     </div>
     <div class="infoview" id="infoView">
       <span class="iv-icon">i</span><span id="ivText">Hover a term, node, event, or cell for its definition.</span>
-      <span class="footer-hint">[ outliner &nbsp;·&nbsp; ] inspector &nbsp;·&nbsp; L log &nbsp;·&nbsp; &#96; maximize &nbsp;·&nbsp; 1/2/3 lens (Map/Seat/Write) &nbsp;·&nbsp; − / = zoom (Rails) &nbsp;·&nbsp; T ruler (Told)</span>
+      <span class="footer-hint">[ outliner &nbsp;·&nbsp; ] inspector &nbsp;·&nbsp; L log &nbsp;·&nbsp; &#96; maximize &nbsp;·&nbsp; 1/2/3 view (Map/Seat/Write) &nbsp;·&nbsp; − / = zoom (Rails) &nbsp;·&nbsp; T ruler (Told)</span>
     </div>
   </footer>
 
@@ -1052,7 +1052,7 @@ function trimJs(s, n){ s = s || ''; return s.length > n ? s.slice(0, n - 1).trim
 // throughline color, existing tokens only (call 79-6: color carries throughline, not a text tag alone)
 const TL_COLOR = { OS: 'var(--accent)', MC: 'var(--good)', IC: 'var(--warn)', RS: 'var(--bad)' };
 
-// three workspaces bound to the lenses (call 79-5): Map / Seat / Write panel presets
+// three workspaces bound to the views (call 79-5): Map / Seat / Write panel presets
 const WORKSPACE = {
   fabula: { ol: false, det: false },
   rails:  { ol: true,  det: false },
@@ -1127,13 +1127,13 @@ function describeSelection(type, id){
 }
 
 function highlightSelection(){
-  $$('[data-sel-type].on').forEach(el => el.classList.remove('on'));  // only selection marks; lens views and filters keep their own .on
+  $$('[data-sel-type].on').forEach(el => el.classList.remove('on'));  // only selection marks; views and filters keep their own .on
   if (!state.selection) return;
   $$(`[data-sel-type="${state.selection.type}"][data-sel-id="${CSS.escape(String(state.selection.id))}"]`).forEach(el => el.classList.add('on'));
   $$(`.lenses button[data-lens="${state.lens}"], nav.tabbar button[data-lens="${state.lens}"]`).forEach(el => el.classList.add('on'));
 }
 
-// ---- lens switching: 1/2/3 also apply that workspace's panel layout (call 79-5) ----
+// ---- view switching (machine name: lens): 1/2/3 also apply that workspace's panel layout (call 79-5) ----
 function setLens(lens){
   state.lens = lens;
   $$('.lens-view').forEach(v => v.classList.toggle('on', v.id === 'view-' + lens));
@@ -1143,7 +1143,7 @@ function setLens(lens){
   state.panels.det = preset.det;
   applyLayout();
   renderOutliner();
-  renderDetail();  // told's inspector is playhead-driven, not selection-gated — refresh on every lens switch
+  renderDetail();  // told's inspector is playhead-driven, not selection-gated — refresh on every view switch
 }
 $('#lensNav').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLens(b.dataset.lens); });
 $('#tabbar').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLens(b.dataset.lens); });
@@ -1171,10 +1171,10 @@ $('#ol').addEventListener('click', e => {
   select(b.dataset.selType, b.dataset.selId);
 });
 
-// ---- fabula lens (call 79-1: era bands sized by content, events spread + truncated) ----
+// ---- fabula view (call 79-1: era bands sized by content, events spread + truncated) ----
 function renderFabula(){
   const track = $('#fabTrack');
-  if (!track || track.offsetParent === null) return;  // hidden lens — skip, re-render on show/resize
+  if (!track || track.offsetParent === null) return;  // hidden view — skip, re-render on show/resize
   const eras = DATA.fabula.eras;
   const dcusEra = eras.find(e => e.id === 'era_dcus');
   const emptyEras = eras.filter(e => e.id !== 'era_dcus' && !e.universe);
@@ -1238,7 +1238,7 @@ function renderFabula(){
 }
 window.addEventListener('resize', () => { if (state.lens === 'fabula') renderFabula(); });
 
-// ---- rails lens ----
+// ---- rails view ----
 function nodeCountFor(tlId, act){ return DATA.rails.nodes.filter(n => n.throughline === tlId && n.column === 'act' + act).length; }
 function anyActCountFor(tlId){ return DATA.rails.nodes.filter(n => n.throughline === tlId && n.column === 'side').length; }
 
@@ -1307,7 +1307,7 @@ function setZoom(z){
 $('#zoomCtl').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setZoom(b.dataset.z); });
 
 // ==================================================================
-// ---- told lens: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ----
+// ---- told view: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ----
 // data-driven entirely from DATA.tracking (ShroomsQ/_CANON/_TRACKING/oxo.yaml,
 // loaded + validated by tracking.py). A lane with no data draws nothing —
 // never a fake line (ruling 3). Edits ride the db and fold in through tracking.py pull (step 6).
@@ -1426,7 +1426,7 @@ let AR_TEMPO_DRAFT = null;  // working copy of planned tempo points during a dra
 // -> flags); keyed by the same subject id the tracking file's story points use.
 const AR_BASES = DATA.bases || {};
 // "Who" the inspector is assembled for — clicking a state track header or one
-// of its points in the Told lens (ruling 6) changes this; default is Tori.
+// of its points in the Told view (ruling 6) changes this; default is Tori.
 let AR_INSPECT_SUBJECT = 'character:victoria_midnight';
 function arSubjectForTrack(trackId){ return (AR_PTS.find(p => p.tr === trackId) || {}).subject || null; }
 function arSetInspectSubject(subject){
@@ -1644,7 +1644,7 @@ async function arInitDb(){
   } catch (err) { arSetReadOnly(true); }
   renderEditToolbar();
 }
-arInitDb(); // never blocks first paint — the lens already rendered read-only above
+arInitDb(); // never blocks first paint — the view already rendered read-only above
 
 function renderEditToolbar(){
   const seg = document.getElementById('toldEditSeg');
@@ -2192,7 +2192,7 @@ function toldInspectorHtml(){
   return html;
 }
 
-// ---- Told lens controls ----
+// ---- Told view controls ----
 (function(){
   const zs = document.getElementById('toldZoomSeg');
   if (zs) {
@@ -2482,7 +2482,7 @@ $('#detail').addEventListener('click', e => {
   if (jb){
     setLens('told');
     // the same beat the Rails signpost cell names (M2 row 9) — move the Arrangement's
-    // playhead there so the jump lands on the actual scene, not just the lens.
+    // playhead there so the jump lands on the actual scene, not just the view.
     const sc = AR_SCENES.find(s => s.mv === 'M2' && s.q === 'Q1' && s.s === 'S03');
     if (sc) { TS_STATE.ph = sc.start + 0.05; if (!TS_STATE.ppb) arFit(); TS_STATE.off = TS_STATE.ph - (arW() / 2) / (TS_STATE.ppb || 2.2); arClampOff(); }
     toldRender();
@@ -2526,7 +2526,7 @@ $('#logFilter').addEventListener('click', e => { const b = e.target.closest('but
 
 // ---- canvas click delegation (fabula/rails/told selection; empty canvas clears it) ----
 $('#canvas').addEventListener('click', e => {
-  if (state.lens === 'told' && e.target.closest('#arWrap, #toldToolbar')) return;  // the Told lens runs its own playhead click model
+  if (state.lens === 'told' && e.target.closest('#arWrap, #toldToolbar')) return;  // the Told view runs its own playhead click model
   const el = e.target.closest('[data-sel-type]');
   if (el) { select(el.dataset.selType, el.dataset.selId); return; }
   if (e.target.closest('button, input, a, .t')) return;  // an interactive control, not "empty canvas"
@@ -2678,7 +2678,7 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.tip')) closeTips(1);
 });
 
-// ---- keyboard: 1/2/3 lenses+workspace · [ ] L ` panels · - / = rails zoom · Space opens/closes the hovered term · Esc closes ----
+// ---- keyboard: 1/2/3 views+workspace · [ ] L ` panels · - / = rails zoom · Space opens/closes the hovered term · Esc closes ----
 document.addEventListener('keydown', e => {
   if (e.target.matches('input')) { if (e.key === 'Escape') e.target.blur(); return; }
   if (e.key === '1') { setLens('fabula'); return; }
@@ -2712,12 +2712,12 @@ renderSignpostGrid();
 renderFamFilter();
 renderNodeColumns();
 setZoom('out');
-// the Told lens (The Arrangement) renders lazily on first switch — its lane
+// the Told view (The Arrangement) renders lazily on first switch — its lane
 // has zero size while hidden; applyLayout()/setLens() trigger toldRender() then.
 renderLogFilter();
 detailTab = 'detail';
 // seed the log with the session's opening moves, then land on the crash event
-logEvent('fabula', 'workspace opened · Fabula lens (default) · Map workspace');
+logEvent('fabula', 'workspace opened · Fabula view (default) · Map workspace');
 select('event', 'm1b_crash_jebb_death', { lensLabel: 'fabula' });
 logEvent('fabula', "Tori's six fabula events loaded · 3 DCUS eras banded (fuzzy)");
 })();

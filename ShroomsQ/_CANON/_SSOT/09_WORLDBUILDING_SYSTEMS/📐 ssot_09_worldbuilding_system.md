@@ -1,10 +1,10 @@
 ---
 type: ssot_09_worldbuilding_systems
 category: worldbuilding_system
-version: 0.1.0
+version: 0.2.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, MOON/SAGA, all future IPs]
-status: provisional — BOLO 93 first draft; nothing here is ruled except the standing rulings it quotes; every ⧗ is a draft the Chief is weighing
+status: "RULED 2026-09-29 (Chief, 'all recommended'): OPEN 1–7 as recommended; 8–9 closed by the CDR. The catalog is live (8 types open, 11 stubs); the world view's first build is published. Entries stay ⧗ until filled."
 purpose: "THE WORLDBUILDING SYSTEM — the definition of a world (its infrastructures, its coherence tests, the compiler that reads every system into one world view) plus the CATALOG it owns: the shared things of a world (groups, styles, customs, tech, food, institutions) that no other system holds."
 dependencies: ["ssot_03_setting_system (v1.5.0, places)", "ssot_02_character_systems (people)", "ssot_08_tracking_system (v0.2.0, state over time)", "ssot_04_fabula / ssot_04_plot_system (origin events)", "ssot_01_trope_register (BOLO 89 layer)"]
 trunk: BLACK
@@ -62,7 +62,7 @@ The books agree on this shape. They define it as building "a representation of a
 
 ### Vocabulary ⧗ provisional
 
-The Chief is weighing these words. This document uses them as drafted and marks them ⧗.
+**RULED 2026-09-29** (OPEN 1, "Adopt"); recorded in SOP §5.
 
 - **System** ⧗: owns its data. 02, 03, 04, 07, 08, and this one.
 - **Layer** ⧗: owns data that attaches across systems. The trope layer.
@@ -402,5 +402,7 @@ Each call has one rec. The Chief rules in one word.
 ---
 
 ## Version history
+
+- **0.2.0 · 2026-09-29** · OPEN 1–7 RULED as recommended (Chief: "all recommended"): the vocabulary adopted (SOP §5) · Fabula/Told renamed views in the plot workspace (`_tools/workspace/build.py`, labels only) · the faction card stays in 03, catalog entries link · eight types open (GRP ARC WDR CUS TEC INS BEL FSU) · `catalog/<TYPE>/<id>.md` with a generated `_INDEX.md` · the thin compiler `_tools/worldview/build.py` → the world view https://claude.ai/artifact/867xamh5LuEnqDegBdJoGa · `WB-<TYPE>-<nnnn>` ids. Eleven stubs seeded (the ten named plus WB-WDR-0001 Feed-linked clothing, from 03 DCUS S3/S4). OPEN 8 (Wolf) and 9 (05/06) closed by the CDR.
 
 - **0.1.0 · 2026-09-29** — BOLO 93 first draft (MS). Definition, three mind models, ten infrastructures, sixteen coherence tests, fifteen boundary warnings, the catalog schema with twelve types and ten seed stubs, the world view, the library table, nine OPEN calls. Status provisional. Nothing ruled. Standing rulings quoted, not changed: 03 owns places; 02 owns people; 08 owns change over time; the trope layer crosses every system; 01 lists stories.

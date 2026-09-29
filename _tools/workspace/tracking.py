@@ -7,7 +7,7 @@ Reads ONE tracking file per story (ssot_08 format) —
   ShroomsQ/_CANON/_TRACKING/<story>.yaml
 — validates every time code against that file's own `scenes:` list, resolves
 every trope slug against the trope register, and returns one JSON-able dict
-that build.py embeds for the Told lens (The Arrangement).
+that build.py embeds for the Told view (The Arrangement).
 
 `load` only READS the tracking file; `pull` (step 6, RULED 2026-09-29) folds the page's
 edits into it per _tools/bolostatus/work/90/EDIT-CONTRACT.md.

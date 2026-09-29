@@ -1,0 +1,291 @@
+<title>World View</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* layout: one 44px strip · a filter bar · the ledger of entries left, the checks column right; stacks on a phone.
+     DARK is the only theme (ruled 9/11); accent orange (ruled 9/10). */
+  :root {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20;
+    --line: #2B313B; --line-2: #3C4452;
+    --grid: color-mix(in srgb, #E8EAEE 7%, transparent);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body);
+    background-image: radial-gradient(var(--grid) 1px, transparent 1px); background-size: 22px 22px; }
+  a { color: var(--accent-ink); }
+  button, select { font: inherit; color: inherit; }
+  button { background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lbl { font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .num { font-variant-numeric: tabular-nums; }
+  .t { color: var(--accent-ink); border-bottom: 1px dotted color-mix(in srgb, var(--accent-ink) 55%, transparent); cursor: help; }
+  .t:hover, .t.on { border-bottom-style: solid; }
+
+  header.mast { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; height: 44px; display: flex; align-items: center; gap: 14px;
+    padding-inline: 16px; background: var(--panel); border-bottom: 1px solid var(--line-2); }
+  header.mast h1 { margin: 0; font: 800 21px/1 var(--display); letter-spacing: .04em; text-transform: uppercase; }
+  header.mast h1 span { color: var(--accent); }
+  header.mast .sp { flex: 1; }
+  header.mast .meta { display: flex; gap: 12px; align-items: center; }
+  #aboutBtn { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--line-2); padding: 3px 9px; }
+  #aboutBtn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent-ink); }
+  #about { padding: 14px 16px; background: var(--panel-2); border-bottom: 1px solid var(--line-2); }
+  #about p { margin: 0 0 6px; max-width: 72ch; color: var(--ink-2); }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-family: var(--mono); font-size: 12px; padding: 3px 9px; border: 1px solid var(--line-2); background: var(--panel); }
+  .chip b { font-weight: 500; color: var(--ink-3); margin-left: 5px; }
+  .chip.on { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+  .chip.on b { color: var(--accent-ink); }
+  .chip[disabled] { opacity: .45; cursor: default; }
+  .sel { display: flex; gap: 6px; align-items: center; }
+  .sel select { background: var(--panel); border: 1px solid var(--line-2); padding: 3px 6px; max-width: 220px; }
+  #clear { font-family: var(--mono); font-size: 11px; color: var(--ink-3); text-decoration: underline; }
+
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 0; }
+  .ledger { padding: 14px 16px 40px; min-width: 0; border-right: 1px solid var(--line); }
+  .side { padding: 14px 16px 40px; min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+  h2 { margin: 0 0 8px; font: 700 17px/1.2 var(--display); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); text-wrap: balance; }
+  .count { color: var(--ink-3); font-family: var(--mono); font-size: 12px; margin-left: 6px; }
+
+  .entry { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 4px 14px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .entry:first-of-type { border-top: 0; }
+  .entry .code { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); padding-top: 3px; }
+  .entry .code .ty { display: inline-block; color: var(--ink); border: 1px solid var(--line-2); padding: 0 5px; margin-bottom: 4px; }
+  .entry h3 { margin: 0; font: 700 19px/1.2 var(--display); letter-spacing: .02em; }
+  .entry h3 a { color: var(--ink); text-decoration: none; }
+  .entry h3 a:hover { color: var(--accent-ink); text-decoration: underline; }
+  .entry p { margin: 2px 0 6px; color: var(--ink-2); max-width: 70ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--ink-3); }
+  .facts span b { font-family: var(--mono); font-size: 10.5px; font-weight: 400; letter-spacing: .1em; text-transform: uppercase; margin-right: 5px; }
+  .pill { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 6px; border: 1px solid; }
+  .pill.stub { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 45%, transparent); background: var(--warn-soft); }
+  .pill.canon { color: var(--good); border-color: color-mix(in srgb, var(--good) 45%, transparent); background: var(--good-soft); }
+  .empty { padding: 26px 0; color: var(--ink-3); }
+
+  .test { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 2px 10px; padding: 9px 0; border-top: 1px solid var(--line); align-items: start; }
+  .test .c { font-family: var(--mono); font-size: 12px; padding-top: 1px; }
+  .test .n { font-weight: 700; }
+  .test .d { grid-column: 2 / 4; color: var(--ink-3); font-size: 13px; }
+  .st { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 6px; }
+  .st.pass { color: var(--good); background: var(--good-soft); }
+  .st.fail { color: var(--bad); background: var(--bad-soft); }
+  .st.stub { color: var(--warn); background: var(--warn-soft); }
+
+  .infra { display: grid; grid-template-columns: 38px minmax(0, 1fr) auto; gap: 0 10px; padding: 6px 0; border-top: 1px solid var(--line); font-size: 14px; }
+  .infra .c { font-family: var(--mono); font-size: 12px; color: var(--ink-3); padding-top: 1px; }
+  .infra .who { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .infra.gap .nm { color: var(--ink-3); }
+  .bar { height: 3px; margin-top: 4px; background: var(--line); }
+  .bar i { display: block; height: 100%; background: var(--accent); }
+  .infra.gap .bar i { background: transparent; }
+  .foot { font-size: 12.5px; color: var(--ink-3); }
+  .foot kbd { font-family: var(--mono); font-size: 11px; border: 1px solid var(--line-2); padding: 0 4px; }
+
+  .tip { position: fixed; z-index: 50; width: 340px; max-width: calc(100vw - 24px); background: var(--panel); border: 1px solid var(--line-2);
+    border-top: 3px solid var(--accent); box-shadow: var(--shadow); padding: 12px 14px 10px; font-size: 14.5px; line-height: 1.45; }
+  .tip .th { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .tip .th b { font: 700 19px/1.1 var(--display); text-transform: uppercase; }
+  .tip .th .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .tip p { margin: 0; }
+  .tip .lock { height: 2px; background: var(--line); margin-top: 10px; position: relative; }
+  .tip .lock b { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent); }
+  .tip.locked .lock b { width: 100%; }
+  .tip.locked { border-top-color: var(--ink); }
+  .tip.pinned { border-top-color: var(--good); }
+  .tip .hint { font-family: var(--mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .06em; }
+
+  @media (max-width: 860px) {
+    main { grid-template-columns: minmax(0, 1fr); }
+    .ledger { border-right: 0; border-bottom: 1px solid var(--line); }
+    header.mast .meta .lbl { display: none; }
+  }
+  @media (max-width: 480px) { .entry { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="mast">
+  <h1>World <span>View</span></h1>
+  <span class="lbl" id="sub">09 · the <a class="t" data-t="view" tabindex="0">view</a></span>
+  <span class="sp"></span>
+  <div class="meta"><span class="lbl num" id="built"></span><button id="aboutBtn" aria-expanded="false" aria-controls="about">About</button></div>
+</header>
+<div id="about" hidden>
+  <p>The world view compiles the <a class="t" data-t="catalog" tabindex="0">catalog</a> and the <a class="t" data-t="s03" tabindex="0">setting</a> place headers into one read-only page. It is a <a class="t" data-t="view" tabindex="0">view</a>: it stores nothing and has no input fields.</p>
+  <p>To change an entry, open its file (the name links to it) and edit it there. Then rerun <code>python _tools/worldview/build.py</code> and republish.</p>
+  <p>This is the first, thin build (ruled 9/29). It reads the catalog and 03 only. Later builds add character (02), plot (04) and tracking (08).</p>
+</div>
+
+<div class="filters" role="group" aria-label="Filters">
+  <div class="chips" id="typeChips"></div>
+  <label class="sel"><span class="lbl">Place</span><select id="fPlace"></select></label>
+  <label class="sel"><span class="lbl">Group</span><select id="fGroup"></select></label>
+  <label class="sel"><span class="lbl">Era</span><select id="fEra"></select></label>
+  <button id="clear">clear filters</button>
+</div>
+
+<main>
+  <section class="ledger" aria-labelledby="hLedger">
+    <h2 id="hLedger">The catalog <span class="count num" id="nShown"></span></h2>
+    <div id="entries"></div>
+  </section>
+  <aside class="side">
+    <section aria-labelledby="hTests">
+      <h2 id="hTests">Coherence tests</h2>
+      <div id="tests"></div>
+    </section>
+    <section aria-labelledby="hInfra">
+      <h2 id="hInfra">Infrastructures</h2>
+      <div id="infra"></div>
+    </section>
+    <section aria-labelledby="hPlaces">
+      <h2 id="hPlaces">Places in 03</h2>
+      <div id="places"></div>
+    </section>
+    <p class="foot">Hover a <a class="t" data-t="term" tabindex="0">term</a> · <kbd>Space</kbd> locks it · click pins it · <kbd>Esc</kbd> closes.</p>
+  </aside>
+</main>
+
+<script>
+const D = {"entries": [{"id": "WB-BEL-0001", "type": "BEL", "name": "Tremor Cult", "aliases": [], "era": [], "places": ["dcus"], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "The cult transcribed from Chief's chalkboard; era 1 DCUS (BOLO 91, ruled 9/29).", "fields": {}, "sources": ["tremor-cult-seed.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/BEL/WB-BEL-0001.md"}, {"id": "WB-BEL-0002", "type": "BEL", "name": "Sync Cult (held)", "aliases": [], "era": [], "places": ["dcus"], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "HELD in 03 until it has its own canon node; binding principle and secret are proposals.", "fields": {}, "sources": ["ssot_03_setting_system"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/BEL/WB-BEL-0002.md"}, {"id": "WB-FSU-0001", "type": "FSU", "name": "ASTRO7EX Space Cuisine", "aliases": [], "era": [], "places": [], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "The space cuisine seed: three rows, nothing ruled.", "fields": {}, "sources": ["astro7ex-space-cuisine-seed.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/FSU/WB-FSU-0001.md"}, {"id": "WB-GRP-0001", "type": "GRP", "name": "The Bishops", "aliases": [], "era": [], "places": ["dcus"], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "The acquisition-capital owners who bought Red Hills Academy and rebranded it DCUS.", "fields": {}, "sources": ["ssot_03_setting_system"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0001.md"}, {"id": "WB-GRP-0002", "type": "GRP", "name": "The moon societies (May 2024)", "aliases": [], "era": [], "places": [], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "The societies of the moon from the MOON/SAGA seed; not The Outliers.", "fields": {}, "sources": ["moon-saga-seed.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0002.md"}, {"id": "WB-GRP-0003", "type": "GRP", "name": "The MOON/SAGA Civ table (Jul 2025)", "aliases": [], "era": [], "places": [], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "The civilization table from the MOON/SAGA seed.", "fields": {}, "sources": ["moon-saga-seed.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/GRP/WB-GRP-0003.md"}, {"id": "WB-INS-0001", "type": "INS", "name": "The Administration", "aliases": [], "era": [], "places": ["dcus"], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "DCUS's depersonalized operating layer: legitimacy is issued, not earned (the Sacrament of Verification).", "fields": {}, "sources": ["dcus-standards-body.md", "ssot_03_setting_system"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0001.md"}, {"id": "WB-INS-0002", "type": "INS", "name": "Delta Coast Ultra School (the institution)", "aliases": [], "era": [], "places": ["dcus"], "groups": ["WB-GRP-0001"], "origin": "", "state": "", "tropes": [], "one_line": "The school as an institution; the campus as a place is 03 `dcus`.", "fields": {}, "sources": ["delta-coast-ultra-school.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0002.md"}, {"id": "WB-INS-0003", "type": "INS", "name": "The ASTRO7EX Standards Body", "aliases": [], "era": [], "places": [], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "The standards body of ASTRO7EX.", "fields": {}, "sources": ["astro7ex-standards-body.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0003.md"}, {"id": "WB-INS-0004", "type": "INS", "name": "The Trash Land Standards Body", "aliases": [], "era": [], "places": [], "groups": [], "origin": "", "state": "", "tropes": [], "one_line": "Trash Land as a standards body.", "fields": {}, "sources": ["oxo-trash-land-standards-body.md"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/INS/WB-INS-0004.md"}, {"id": "WB-WDR-0001", "type": "WDR", "name": "Feed-linked clothing (DCUS)", "aliases": [], "era": [], "places": ["dcus"], "groups": ["WB-INS-0001"], "origin": "", "state": "", "tropes": [], "one_line": "Clothing that glows on the Feed: enforced legibility (03 DCUS S3 SENSORIUM and S4 LAW).", "fields": {}, "sources": ["ssot_03_setting_system"], "status": "stub ⧗", "_path": "ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/WDR/WB-WDR-0001.md"}], "places": {"dcus": {"id": "dcus", "name": "Delta Coast Ultra School", "aliases": ["DCUS", "the Ultra School", "Red Hills Academy (legacy)", "Skeeter Creek (founding, buried)", "Inner Spiral Academy (pre-ruling)"], "scale": "site (campus)"}}, "tests": [["CT1", "Four pillars", "The world has at least a stub for governance, economics, social relations and cultural influences.", "pass", "governance 4 · economics 1 · social relations 3 · cultural influences 3", "BVX.0067"], ["CT3", "The gap-fill", "Every institution names the rupture or need it fills, as a fabula event or an S5 SCAR.", "stub", "0 of 4 institutions name an origin", "BVX.0575"], ["CT5", "Bookends", "Each group has a founding endpoint and a current endpoint; a founding line counts only if it still bites now.", "stub", "0 of 3 groups carry eras", "BVX.0465"], ["CT9", "Onstage canon", "A fact enters canon only when a scene narrates it.", "pass", "no canon entries yet", "BVX.0538"]], "gaps": [{"code": "I1", "name": "Space", "holds": "Geography, climate, terrain, borders, settlements.", "owners": ["03"], "n": 0, "other": ["03"], "state": "owned", "waiting": []}, {"code": "I2", "name": "Time", "holds": "History, founding, ruins, genealogy, events.", "owners": ["04"], "n": 0, "other": ["04"], "state": "owned", "waiting": []}, {"code": "I3", "name": "Peoples and groups", "holds": "Clans, classes, factions, species.", "owners": ["GRP"], "n": 3, "other": [], "state": "held", "waiting": []}, {"code": "I4", "name": "Governance and law", "holds": "Who rules, by what right, how enforced.", "owners": ["INS"], "n": 4, "other": [], "state": "held", "waiting": []}, {"code": "I5", "name": "Economy and material life", "holds": "Trade, goods, money, food, work.", "owners": ["FSU", "ECO"], "n": 1, "other": [], "state": "held", "waiting": ["ECO"]}, {"code": "I6", "name": "Belief, myth and thought", "holds": "Religion, cosmology, philosophy, values.", "owners": ["BEL"], "n": 2, "other": [], "state": "held", "waiting": []}, {"code": "I7", "name": "Custom and belonging", "holds": "Rites, festivals, taboos, dress, daily habit.", "owners": ["CUS", "WDR"], "n": 1, "other": [], "state": "held", "waiting": []}, {"code": "I8", "name": "Knowledge, craft and tech", "holds": "Science, tools, transport, language, arts.", "owners": ["TEC", "LNG"], "n": 0, "other": [], "state": "gap", "waiting": ["LNG"]}, {"code": "I9", "name": "Nature", "holds": "Flora, fauna, ecosystem, non-human beings.", "owners": ["BIO"], "n": 0, "other": [], "state": "gap", "waiting": ["BIO"]}, {"code": "I10", "name": "World rules", "holds": "Magic, physics, causality: how the world departs from ours.", "owners": ["RUL"], "n": 0, "other": [], "state": "gap", "waiting": ["RUL"]}], "types": {"GRP": ["Groups", "A body of people with a shared identity, rule and edge: clan, class, faction, nation, species. The faction card stays in 03; the entry links to it."], "ARC": ["Architecture", "A reusable way of building, with its materials and what it says about its makers. One building's fabric stays in 03 S1 BODY."], "WDR": ["Wardrobe", "How a group dresses and adorns itself, keyed to class and role. One person's outfit stays in 02."], "CUS": ["Customs", "A patterned group practice: ritual, festival, taboo, rite of passage, etiquette. A place's habit stays in 03 S8 HABIT."], "TEC": ["Tech & vehicles", "A working technique or device, including how people move and carry things. Vehicles live here."], "INS": ["Institutions", "A standing body or form of authority: a court, a school board, a guild, a standards body."], "BEL": ["Beliefs", "A religion, folk belief, cult, myth or philosophy, including the hidden layer under the public one."], "FSU": ["Food & substances", "What people eat, drink and take, and the system that supplies it."]}, "waiting": {"ECO": "Goods, money and trade", "LNG": "Language and naming", "BIO": "Creatures and flora", "RUL": "World rules"}, "names": {"WB-BEL-0001": "Tremor Cult", "WB-BEL-0002": "Sync Cult (held)", "WB-FSU-0001": "ASTRO7EX Space Cuisine", "WB-GRP-0001": "The Bishops", "WB-GRP-0002": "The moon societies (May 2024)", "WB-GRP-0003": "The MOON/SAGA Civ table (Jul 2025)", "WB-INS-0001": "The Administration", "WB-INS-0002": "Delta Coast Ultra School (the institution)", "WB-INS-0003": "The ASTRO7EX Standards Body", "WB-INS-0004": "The Trash Land Standards Body", "WB-WDR-0001": "Feed-linked clothing (DCUS)"}, "repo": "https://github.com/leechseed/_setsunadev/blob/main/", "built": "2026-09-29"};
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const term = (k, label) => `<a class="t" data-t="${esc(k)}" tabindex="0">${esc(label)}</a>`;
+// [[key|label]] inside a definition becomes a nested term
+const rich = s => esc(s).replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_, k, l) => term(k, l));
+
+// ---- the glossary: every hover term on the page ----
+const G = {
+  view: { t: 'View', k: 'vocabulary · ruled 9/29', d: 'A page that shows data other files own and stores none. The world view is one; so are the plot workspace\'s Fabula view and Told view. Compare [[lens|lens]], [[layer|layer]], [[system|system]].' },
+  lens: { t: 'Lens', k: 'vocabulary · ruled 9/29', d: 'A set of questions asked across every system. A lens owns no data; each answer lives in the system it belongs to. The [[ct|coherence tests]] are 09\'s lens.' },
+  layer: { t: 'Layer', k: 'vocabulary · ruled 9/29', d: 'Owns data that attaches across every system. The tropes (BOLO 89) are the one layer so far.' },
+  system: { t: 'System', k: 'vocabulary · ruled 9/29', d: 'Owns its own data: 02 character, 03 setting, 04 plot, 07 theme, 08 tracking, and 09 worldbuilding through its [[catalog|catalog]].' },
+  catalog: { t: 'The catalog', k: '09 · the store', d: 'One file per shared thing of the world, by type: groups, architecture, wardrobe, customs, tech, institutions, beliefs, food. It is why 09 is a [[system|system]]. Files live at catalog/<type>/<id>.md.' },
+  ct: { t: 'Coherence tests', k: '09 · the lens', d: 'The checks 09 runs across the whole world. This first build runs the four a script can check: CT1, CT3, CT5, CT9. The rest need a reader.' },
+  infra: { t: 'Infrastructures', k: '09 · I1–I10', d: 'What a complete world has to answer for, merged from nine book lists. Wolf\'s eight (maps, timelines, genealogies, nature, culture, language, mythology, philosophy) all land inside it.' },
+  stub: { t: 'Stub', k: 'status', d: 'An entry with a name and one line, nothing more. The fill rule: a stub fills only when a story needs it. Tests on a stub read "stub", never "fail".' },
+  s03: { t: 'Setting (03)', k: 'system', d: 'Place at character grade: the 12-layer setting slice per place. 03 owns places and the faction card; a catalog entry points at a place by its place id.' },
+  term: { t: 'Terms', k: 'how to read this page', d: 'Every underlined word opens a card. Cards nest: hover a term inside a card. Space locks the top card; a click pins it until Esc.' },
+  era: { t: 'Era', k: 'filter', d: 'The eras an entry exists in, on the 08 time code. No entry carries an era yet; they fill with the stubs.' },
+  WAIT: { t: 'Waiting types', k: 'ruled 9/29 · call 4', d: 'Four more types are defined in 09 but not open: goods and trade, language, creatures, world rules. Each opens when the first story needs it.' },
+};
+for (const [c, [n, d]] of Object.entries(D.types)) G['ty-' + c] = { t: n, k: 'type · ' + c, d };
+for (const [id, p] of Object.entries(D.places)) G['pl-' + id] = { t: p.name, k: 'place · 03 · ' + id, d: `Scale: ${p.scale}. Also called: ${p.aliases.join(' · ') || 'nothing else'}.` };
+for (const c of D.tests) G['ct-' + c[0]] = { t: c[0] + ' · ' + c[1], k: 'coherence test · ' + c[5], d: c[2] + ' Result: ' + c[4] + '.' };
+for (const g of D.gaps) G['in-' + g.code] = { t: g.code + ' · ' + g.name, k: 'infrastructure', d: g.holds + ' Answered by: ' + g.owners.join(', ') + '.' };
+for (const e of D.entries) G['en-' + e.id] = { t: e.name, k: e.id, d: e.one_line };
+
+// ---- filters ----
+const F = { types: new Set(), place: '', group: '', era: '' };
+function buildFilters() {
+  const n = t => D.entries.filter(e => e.type === t).length;
+  $('#typeChips').innerHTML = Object.keys(D.types).map(t => `<button class="chip" data-ty="${t}" aria-pressed="false">${t}<b class="num">${n(t)}</b></button>`).join('')
+    + `<button class="chip" disabled title="Four types wait for a story">+4 ${term('WAIT', 'waiting')}</button>`;
+  const pls = [...new Set(D.entries.flatMap(e => e.places || []))];
+  $('#fPlace').innerHTML = '<option value="">all</option>' + pls.map(p => `<option value="${esc(p)}">${esc(D.places[p]?.name || p)}</option>`).join('');
+  const grs = [...new Set(D.entries.flatMap(e => e.groups || []))];
+  $('#fGroup').innerHTML = '<option value="">all</option>' + grs.map(g => `<option value="${esc(g)}">${esc(D.names[g] || g)}</option>`).join('');
+  const eras = [...new Set(D.entries.flatMap(e => e.era || []))];
+  $('#fEra').innerHTML = '<option value="">all</option>' + eras.map(x => `<option>${esc(x)}</option>`).join('');
+  $('#fEra').disabled = !eras.length; if (!eras.length) $('#fEra').title = 'No entry carries an era yet';
+}
+function match(e) {
+  return (!F.types.size || F.types.has(e.type)) && (!F.place || (e.places || []).includes(F.place))
+    && (!F.group || (e.groups || []).includes(F.group) || e.id === F.group) && (!F.era || (e.era || []).includes(F.era));
+}
+
+// ---- render ----
+function renderEntries() {
+  const list = D.entries.filter(match);
+  $('#nShown').textContent = list.length === D.entries.length ? `${list.length}` : `${list.length} of ${D.entries.length}`;
+  $('#entries').innerHTML = list.length ? list.map(e => {
+    const st = String(e.status || '');
+    const pill = st.startsWith('stub') ? `<span class="pill stub">${term('stub', 'stub')}</span>` : `<span class="pill canon">${esc(st)}</span>`;
+    const places = (e.places || []).map(p => D.places[p] ? term('pl-' + p, D.places[p].name) : esc(p)).join(', ');
+    const groups = (e.groups || []).map(g => term('en-' + g, D.names[g] || g)).join(', ');
+    return `<article class="entry">
+      <div class="code"><span class="ty">${term('ty-' + e.type, e.type)}</span><br><span class="num">${esc(e.id)}</span></div>
+      <div><h3><a href="${D.repo}${encodeURI(e._path)}" target="_blank" rel="noopener">${esc(e.name)}</a></h3>
+        <p>${esc(e.one_line)}</p>
+        <div class="facts">${pill}
+          <span><b>place</b>${places || '—'}</span>
+          ${groups ? `<span><b>kept by</b>${groups}</span>` : ''}
+          <span><b>${term('era', 'era')}</b>${(e.era || []).map(esc).join(', ') || '—'}</span>
+          <span><b>sources</b>${(e.sources || []).map(esc).join(', ')}</span>
+        </div></div></article>`;
+  }).join('') : '<p class="empty">No entry matches these filters. Clear a filter to see more.</p>';
+}
+function renderSide() {
+  $('#tests').innerHTML = D.tests.map(c => `<div class="test"><span class="c">${term('ct-' + c[0], c[0])}</span><span class="n">${esc(c[1])}</span>
+    <span class="st ${c[3]}">${esc(c[3])}</span><span class="d">${esc(c[4])}</span></div>`).join('');
+  const max = Math.max(1, ...D.gaps.map(g => g.n));
+  $('#infra').innerHTML = D.gaps.map(g => `<div class="infra ${g.state}"><span class="c">${term('in-' + g.code, g.code)}</span>
+    <span><span class="nm">${esc(g.name)}</span><div class="bar"><i style="width:${g.other.length ? 100 : Math.round(100 * g.n / max)}%"></i></div></span>
+    <span class="who num">${g.other.length ? 'in ' + g.other.join(' · ') : g.n ? g.n + ' held' : 'gap'}</span></div>`).join('');
+  $('#places').innerHTML = Object.values(D.places).map(p => {
+    const n = D.entries.filter(e => (e.places || []).includes(p.id)).length;
+    return `<div class="infra"><span class="c">${esc(p.id)}</span><span>${term('pl-' + p.id, p.name)}</span><span class="who num">${n} entries</span></div>`;
+  }).join('') || '<p class="foot">No 03 place headers found.</p>';
+}
+function render() { renderEntries(); }
+
+$('#typeChips').addEventListener('click', e => {
+  const b = e.target.closest('.chip[data-ty]'); if (!b) return;
+  F.types.has(b.dataset.ty) ? F.types.delete(b.dataset.ty) : F.types.add(b.dataset.ty);
+  b.classList.toggle('on'); b.setAttribute('aria-pressed', b.classList.contains('on')); render();
+});
+$('#fPlace').addEventListener('change', e => { F.place = e.target.value; render(); });
+$('#fGroup').addEventListener('change', e => { F.group = e.target.value; render(); });
+$('#fEra').addEventListener('change', e => { F.era = e.target.value; render(); });
+$('#clear').addEventListener('click', () => { F.types.clear(); F.place = F.group = F.era = ''; $$('.chip.on').forEach(c => { c.classList.remove('on'); c.setAttribute('aria-pressed', 'false'); }); $('#fPlace').value = $('#fGroup').value = $('#fEra').value = ''; render(); });
+$('#aboutBtn').addEventListener('click', e => { const a = $('#about'); a.hidden = !a.hidden; e.currentTarget.setAttribute('aria-expanded', !a.hidden); });
+
+// ---- the hover layer: hover opens · Space or 1.5 s locks · click pins · nested to depth 3 · Esc closes ----
+let tips = [], openT = null, closeT = null;
+function place(el, target) {
+  const r = target.getBoundingClientRect(), w = el.offsetWidth, h = el.offsetHeight;
+  let x = Math.min(Math.max(12, r.left), innerWidth - w - 12), y = r.bottom + 8;
+  if (y + h > innerHeight - 12) y = Math.max(12, r.top - h - 8);
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+}
+function openTip(target, depth) {
+  const g = G[target.dataset.t]; if (!g) return;
+  const el = document.createElement('div'); el.className = 'tip'; el.dataset.depth = depth; el.setAttribute('role', 'tooltip');
+  el.innerHTML = `<div class="th"><b>${esc(g.t)}</b><span class="k">${esc(g.k)}</span></div><p>${depth < 3 ? rich(g.d) : esc(g.d.replace(/\[\[[^|]+\|([^\]]+)\]\]/g, '$1'))}</p><div class="lock"><b></b></div><div class="hint">Space or hold 1.5 s to lock · click pins · Esc closes</div>`;
+  document.body.appendChild(el); place(el, target);
+  const rec = { el, target, depth, locked: false, pinned: false };
+  rec.timer = setTimeout(() => lock(rec), 1500);
+  el.querySelector('.lock b').style.transition = 'width 1.5s linear'; requestAnimationFrame(() => el.querySelector('.lock b').style.width = '100%');
+  el.addEventListener('mouseenter', () => clearTimeout(closeT));
+  el.addEventListener('mouseleave', () => schedClose(depth));
+  target.classList.add('on'); tips.push(rec);
+}
+function lock(rec) { rec.locked = true; rec.el.classList.add('locked'); }
+function closeFrom(d) { tips.filter(t => t.depth >= d).forEach(t => { clearTimeout(t.timer); t.el.remove(); t.target.classList.remove('on'); }); tips = tips.filter(t => t.depth < d); }
+function schedClose(d) { clearTimeout(closeT); closeT = setTimeout(() => { const u = tips.filter(t => t.depth >= d && !t.locked && !t.pinned); if (u.length) closeFrom(Math.min(...u.map(t => t.depth))); }, 220); }
+const depthOf = t => { const p = t.closest('.tip'); return p ? +p.dataset.depth + 1 : 1; };
+document.addEventListener('mouseover', e => { const t = e.target.closest('.t'); if (!t) return; clearTimeout(openT); clearTimeout(closeT); const d = depthOf(t); if (tips.some(x => x.target === t)) return; openT = setTimeout(() => { closeFrom(d); openTip(t, d); }, 120); });
+document.addEventListener('mouseout', e => { const t = e.target.closest('.t'); if (t) { clearTimeout(openT); schedClose(depthOf(t)); } });
+document.addEventListener('focusin', e => { const t = e.target.closest('.t'); if (t) { const d = depthOf(t); closeFrom(d); openTip(t, d); } });
+document.addEventListener('click', e => {
+  const t = e.target.closest('.t');
+  if (t) { e.preventDefault(); let rec = tips.find(x => x.target === t); if (!rec) { const d = depthOf(t); closeFrom(d); openTip(t, d); rec = tips[tips.length - 1]; } if (rec) { rec.pinned = true; lock(rec); rec.el.classList.add('pinned'); } return; }
+  if (!e.target.closest('.tip')) closeFrom(1);
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && tips.length) { closeFrom(1); return; }
+  if (e.key === ' ' && tips.length && !e.target.closest('input,select,textarea')) { e.preventDefault(); lock(tips[tips.length - 1]); }
+});
+
+$('#built').textContent = 'built ' + D.built + ' · ' + D.entries.length + ' entries';
+buildFilters(); render(); renderSide();
+</script>
