@@ -12,37 +12,37 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 
 | Source | Items |
 |---|---|
-| none | 5418 |
-| catalog | 3318 |
-| junk | 132 |
-| rule | 5 |
+| none | 5464 |
+| catalog | 3324 |
+| junk | 134 |
+| rule | 52 |
 
 ## By subject (all 1,031)
 
 | Subject | Items |
 |---|---|
-| NONE | 5550 |
-| GAM | 1234 |
-| CRE | 464 |
-| PHI | 284 |
+| NONE | 5598 |
+| GAM | 1240 |
+| CRE | 486 |
+| PHI | 286 |
 | SLF | 204 |
 | VIS | 198 |
-| MSX | 195 |
-| TEC | 184 |
-| LIT | 166 |
-| MIL | 87 |
-| BIZ | 82 |
+| MSX | 198 |
+| TEC | 185 |
+| LIT | 173 |
+| MIL | 88 |
+| BIZ | 84 |
 | FIT | 66 |
-| POL | 38 |
+| POL | 46 |
 | PRD | 31 |
 | SOC | 25 |
 | DSN | 24 |
-| PSY | 21 |
+| PSY | 22 |
 | PRF | 20 |
 
-## Story side: 630 CRE + LIT · 276 spine-keyed from tags · **354 still need a spine key** (step 2b: classifier by title, then a PS pass on the TOC of each)
+## Story side: 659 CRE + LIT · 435 spine-keyed from tags · **224 still need a spine key** (step 2b: classifier by title, then a PS pass on the TOC of each)
 
-## Unmatched, needs eyes (5418)
+## Unmatched, needs eyes (5464)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -286,6 +286,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | A Necromancer's Grimoire - The Secret of Herbs |  |  |
 |  | A Place Beyond Hell |  |  |
 |  | A Score of Trapped Chests |  |  |
+|  | A Theory of Justice | John Rawls |  |
 | 2025 | A Tightly Coupled IMU-Based Motion Capture Approach for Estimating Mul | Osman, Kanter, Boelens, Kok |  |
 |  | A Time of War v2.01 2014 12 12 |  |  |
 |  | A24 Return to the Crypt of the Sun Lord |  |  |
@@ -554,6 +555,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Asian Archetypes - Martial |  |  |
 |  | Assassins of Porphyra |  |  |
 |  | Astonishing Races - Leprechaun Revised |  |  |
+|  | Automating Inequality | Virginia Eubanks |  |
 |  | Avalon Games - Infinite Futures - The Future is Now |  |  |
 |  | Aventyr - Underworld Races - Drow |  |  |
 |  | Aventyr - Underworld Races - Drow - Errata |  |  |
@@ -600,12 +602,15 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Bible of Cock Volume 2 |  |  |
 |  | Big Lizzie |  |  |
 |  | Bill Webb's Book of Dirty Tricks |  |  |
+|  | Biopower Today | Paul Rabinow Nikolas Rose |  |
 |  | Bioware Selection |  |  |
 |  | Birdies Menu_Spring 2025 |  |  |
 |  | Black Cross | Greg Iles |  |
 |  | Black Markets |  |  |
 |  | Blackbyrne - BP1 - The Hidden Current |  |  |
 |  | Blackbyrne - BP2 - The Manor of Deceit |  |  |
+|  | blades_core_playsheets |  |  |
+|  | blades_playerkit_v8_2 |  |  |
 |  | Blake Ascending |  |  |
 |  | Bleached Skull Gnolls |  |  |
 |  | Bleeding Hearts and Chocolates |  |  |
@@ -800,6 +805,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Chronica - Age of Exploration |  |  |
 |  | Chronicle of the Righteous |  |  |
 |  | Cities And Roads |  |  |
+|  | CitiesWithoutNumber_FreeVersion_083023 |  |  |
+|  | CitiesWithoutNumber_FreeVersion_Lightweight_083023 |  |  |
 |  | City Map Folio |  |  |
 |  | City of Golden Death |  |  |
 |  | City Of Strangers |  |  |
@@ -950,6 +957,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dalrock Archive ((Compiled by) udream-hunter) |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
+|  | Damn Fine Story Mastering the Tools o... |  |  |
 | 2013 | Dance Medicine in Practice | Simmel |  |
 |  | Dangerous Curves Women In Action (SQP INC)— |  |  |
 |  | Dark Age Turning Points Irian |  |  |
@@ -1008,6 +1016,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dinner at Lionlodge |  |  |
 |  | Dinner at Lionlodge - Chronicle Sheet |  |  |
 |  | Disasters - Meltdown and Fallout |  |  |
+|  | Discipline Punish | Michel Foucault |  |
 |  | Distant Shores |  |  |
 |  | Distant Worlds |  |  |
 |  | Divergent Paths - Fools Errand |  |  |
@@ -1761,6 +1770,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Dynamic Action! |  |  |
 |  | E1 - Carnival of Tears |  |  |
 |  | E2 - Blood of Dragonscar |  |  |
+|  | EclipsePhaseSecondEdition_RulesPrimer |  |  |
 |  | Ejercicios de Cualificacion de Pistola |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
 |  | Eldritch Archetypes - Arbalesteur |  |  |
@@ -2143,6 +2153,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Forgotten Tomb of Felgar the Goblin King |  |  |
 |  | Fotografia obnażona. Mistrzowskie sesje aktu (Brzozowski R.)— |  |  |
 |  | Fotohits - Februar 2021 (Fotohits)— |  |  |
+|  | Foucault (Gilles Deleuze, Sean Hand (translator)) |  |  |
+|  | Foucault A Very Short Introduction | Gary Gutting |  |
 |  | Four Horsemen - Heralds of the Apocalypse |  |  |
 |  | Four Horsemen Present Even More Horrifically Overpowered Feats |  |  |
 |  | Four Horsemen Present Yet More Horrifically Overpowered Feats |  |  |
@@ -2291,6 +2303,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Historical Turning Points New Dallas |  |  |
 |  | Historical Turning Points Tortuga |  |  |
 |  | Hoard of the Dragon Queen |  |  |
+|  | Homo Sacer | Georgio Agamben |  |
 |  | Horror - The Madness Dossier |  |  |
 |  | Horror Adventures |  |  |
 |  | Horror Realms |  |  |
@@ -2369,6 +2382,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Inner Sea Temples |  |  |
 |  | Inner Sea World Guide |  |  |
 |  | Inside Book Publishing | Clark |  |
+|  | Inside Story The Power of the Transfo... |  |  |
 |  | Insidious Intentions - The Book of Villainy, Volume I |  |  |
 |  | Instant Pot Fried Rice - Little Sunny Kitchen |  |  |
 |  | Institut Paul Bocuse Gastronomique The definitive step-by-step guide t | Institut Paul Bocuse | 0800011 - CULINARY |
@@ -2488,6 +2502,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Kineticists of Porphyra II |  |  |
 |  | Kineticists of Porphyra III |  |  |
 |  | Kineticists of Porphyra IV |  |  |
+|  | Kingdom a role-playing game about communities | Robbins Ben |  |
 |  | Kingmaker - 01 - Stolen Land |  |  |
 |  | Kingmaker - 02 - Rivers Run Red |  |  |
 |  | Kingmaker - 03 - The Varnhold Vanishing |  |  |
@@ -2741,6 +2756,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | magician_data_sheet |  |  |
 |  | Magnimar, City of Monuments |  |  |
 |  | Malevolence - Rules and Chronicle Sheet |  |  |
+|  | Man, Play and Games | Roger Caillois |  |
 |  | Map of Darkmoon Vale |  |  |
 |  | Map of Korvosa |  |  |
 |  | Map of Varisia |  |  |
@@ -2919,6 +2935,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Missions Season 5 Contacts |  |  |
 |  | Missions Season 5 FAQ |  |  |
 |  | Missions Season 5 Transfer Log |  |  |
+|  | Modernity and the Holocaust | Zygmunt Bauman |  |
 |  | Mongoose - Van Graaf's Journal of Dragons |  |  |
 |  | Monk Archetypes |  |  |
 |  | Monster Advancement - Enhanced Aberrations |  |  |
@@ -3034,6 +3051,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Noble Cause, Bloodied Hands |  |  |
 |  | Nobles of Porphyra |  |  |
 |  | Nobuyoshi Araki - Araki by Araki-TASCHEN | 2014 |  |
+|  | Normal Accidents | Charles Perrow |  |
 |  | NPC Codex Box - Pawn Collection |  |  |
 |  | NPC Fixer |  |  |
 |  | NPC Guide |  |  |
@@ -3041,6 +3059,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | NPC Index - Warriors | PF2e |  |
 |  | Numeria, Land of Fallen Stars |  |  |
 |  | Numeria, Land of Fallen Stars Maps |  |  |
+|  | Obedience To Authority An Experimental View | Stanley Milgram |  |
 |  | Obsidian Apocalypse |  |  |
 |  | Obsidian Apocalypse - World of Abaddon |  |  |
 |  | Obsidian Twilight |  |  |
@@ -3073,6 +3092,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Opertaional Turning Points Falcon Incursion |  |  |
 |  | Opertaional Turning Points The Red Corsair |  |  |
 |  | Oracle Mysteries of Porphyra |  |  |
+|  | Ordinary Men | Browning, Christopher, R |  |
 |  | original-dramatica-tables |  |  |
 |  | original-dramatica-tables |  |  |
 |  | Orphans of the Hanged Man |  |  |
@@ -3233,6 +3253,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Pathways - 59 |  |  |
 |  | Pathways - 60 |  |  |
 |  | Pathways - 61 |  |  |
+|  | Pedagogy of the Oppressed, 30th Anniversary Edition | Paulo Freire, Myra Bergman Ram |  |
 |  | People In Glass Houses |  |  |
 |  | People of the North |  |  |
 |  | People of the River |  |  |
@@ -3621,6 +3642,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Polyhedron Index 001-118 |  |  |
 |  | Polyhedron Introductory Issue |  |  |
 |  | Polyhedron Magazine - Caves of Confection |  |  |
+|  | Postscript on the Societies of Control | Gilles Deleuze |  |
 |  | Potions & Poisons |  |  |
 |  | Power-Ups 1 - Imbuements |  |  |
 |  | Power-Ups 2 - Perks |  |  |
@@ -3804,6 +3826,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Qadira, Jewel of the East |  |  |
 |  | Quests and Campaigns |  |  |
 |  | Quests of Doom |  |  |
+|  | Race After Technology Abolitionist Tools for the New Jim Code | Ruha Benjamin |  |
 |  | Radiance House - Age of Electrotech |  |  |
 |  | Radiance House - Pact Magic Unbound 1 |  |  |
 |  | Radiance House - Pact Magic Unbound 2 |  |  |
@@ -3883,6 +3906,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Remedial Tinkering - Obligatory Lovecraft Expansion |  |  |
 |  | Remedial Tinkering - Rockets Red Glare |  |  |
 |  | remote_control_sheet |  |  |
+|  | Reproduction in Education, Society and Culture | Pierre Bourdieu, Jean-Claude P |  |
 |  | Restless Souls |  |  |
 |  | Return of the Drow - Advanced Racial Handbook |  |  |
 |  | Return of the Drow - Alternate Racial Traits and Race Traits |  |  |
@@ -4302,6 +4326,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Secret Societies of Vathak - The Final Phase |  |  |
 |  | Secrets of Pact Magic |  |  |
 |  | Secrets Of Story | Martell, William, C |  |
+|  | Security, Territory, Population Lectures at the College de France 1977 | Michel Foucault |  |
 |  | Seekers of Secrets |  |  |
 |  | Seelah - Level 1 Champion |  |  |
 |  | Seelah - Level 5 Champion |  |  |
@@ -4398,6 +4423,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Snow White |  |  |
 |  | So What's for Sale, Anyway |  |  |
 |  | So What's the Pirate Ship Like, Anyway |  |  |
+|  | Society Must be Defended | Michel Foucault |  |
 |  | Society Quest - Ambush in Absalom |  |  |
 |  | Society Quest - Fane of Fangs |  |  |
 |  | Society Quest - Phantom Phenomena |  |  |
@@ -4801,6 +4827,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Starjammer - Medical Marvels |  |  |
 |  | Starjammer - Prometheus Protocols |  |  |
 |  | Starjammer - Races of the Void Book One |  |  |
+|  | StarsWithoutNumberRevised FreeEdition 122917 |  |  |
 |  | Starter Set - Lost Mine of Phandelver |  |  |
 |  | Steelforge - Book 1 |  |  |
 |  | Steps of the Sanguine Path | Alternate Font |  |
@@ -4886,8 +4913,10 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Bleeding Hollow |  |  |
 |  | The Book of Beginnings |  |  |
 |  | The Book of Forbidden Magic |  |  |
+|  | The Burnout Society | Byung-Chul Han |  |
 |  | The City of Graves |  |  |
 |  | The Cleric Reforged |  |  |
+|  | The Collapse of Complex Societies (New Studies in Archaeology) | Joseph Tainter |  |
 |  | The Collected Monsters of Sin |  |  |
 |  | The Collected Works of C. G. Jung, Vol. 9, Part 1 The Archetypes and t | Carl Gustav Jung, William McGu |  |
 |  | The collected works of C. G. Jung. Vol. 8 The structure and dynamics o | Adler, Gerhard Fordham, Michae |  |
@@ -4897,9 +4926,11 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 | 2010 | The Crusades: the authoritative history of the war for the Holy Land |  |  |
 |  | The Deductionist |  |  |
 |  | The Deluxe Guide to Fiend Summoning and Faustian Bargains |  |  |
+|  | The Dictionary of Imaginary Places | Alberto Manguel, Gianni Guadal |  |
 |  | The Dragon's Demand |  |  |
 |  | The Dragon's Demand Poster Maps |  |  |
 |  | The Dread Codex, Goblins |  |  |
+|  | The Dynamics of Ancient Empires State Power from Assyria to Byzantium  | Ian Morris, Walter Scheidel |  |
 |  | The Ebon Vault - Adamant Armors |  |  |
 |  | The Ebon Vault - Bows of War |  |  |
 |  | The Ebon Vault - Fantastic Footgear |  |  |
@@ -4947,6 +4978,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Knights of the Crucible |  |  |
 |  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Last Fifty Pages The Art and Craf... |  |  |
+|  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Lonely Coast |  |  |
 |  | The Making of a Story | fAlice LaPlante |  |
 |  | The Making of a Story | fAlice LaPlante |  |
@@ -4954,7 +4986,9 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Making of a Story | Alice LaPlante |  |
 |  | The Malefactor |  |  |
 |  | The Man Who Fell to Urth | Master |  |
+|  | The managed heart commercialization of human feeling | Arlie Russell Hochschild |  |
 |  | The Mechromancer - A Theurge Tinker Prestige Class |  |  |
+|  | The Metric Society On the Quantification of the Social | Steffen Mau |  |
 |  | The Midnight Mirror |  |  |
 |  | The Mismade Girl | Sasha Grey |  |
 |  | The Mismade Girl | Sasha Grey |  |
@@ -4964,6 +4998,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Northlands Saga III - The Death Curse of Sven Oakenfist |  |  |
 |  | The Northlands Saga IV - Blood On the Snow |  |  |
 |  | The Nova in the Embers |  |  |
+|  | The Ones Who Walk Away From Omelas | Ursula K. le Guin |  |
 |  | The Opened Mind |  |  |
 |  | The Origin of Satan | Elaine Pagels | RELIGION & SPIRIT |
 |  | The Overture of ELDEN RING (ファミ通書籍編集部 電撃ゲーム書籍編集部)— |  |  |
@@ -4971,10 +5006,15 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
+|  | The power of place geography, destiny, and globalizations rough landsc | Harm de Blij |  |
+|  | The Practice of Everyday Life | Michel de Certeau |  |
 |  | The Pudding Shot 2 for $5 | Minze |  |
 |  | THE QI BOOK OF QUOTATIONS | Lloyd, Mitchinson |  |
+|  | The Real World of Technology | Ursula M. Franklin |  |
 |  | The Reaping Stone |  |  |
 |  | The Reign of the Phallus | Keuls |  |
+|  | The return of thematic criticism | Sollors, Werner |  |
+|  | The Rise of the Meritocracy, 1870-2033 | Michael Dunlop Young |  |
 |  | The Rite Review 1 | No Ads |  |
 |  | The Rite Review 2 | No Ads |  |
 |  | The Robot Summoner |  |  |
@@ -5018,6 +5058,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | The Steamsinger - A Bard Tinker Prestige Class |  |  |
 |  | The Templars The Rise and Spectacular Fall of God’s Holy Warriors | Dan Jones |  |
 |  | The Thirty-Six Dramatic Situations | Georges Polti |  |
+|  | The Timeless Way of Building | Christopher Alexander |  |
 |  | The Tinker Master of Modular Mechanical Mayhem |  |  |
 |  | The Tomb of Caragthax the Reaver | Revised |  |
 |  | The Trading Mindwheel Eight Essential... |  |  |
@@ -5204,6 +5245,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Ultra Lite |  |  |
 |  | Ultra Tech |  |  |
 |  | Ultra-Tech - Weapon Tables |  |  |
+|  | Ulysses Unbound | Terence Killeen |  |
 |  | Undead Revisited |  |  |
 |  | Undead Slayer's Handbook |  |  |
 |  | Undead Unleashed |  |  |
@@ -5259,6 +5301,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | Villains of Pact Magic |  |  |
 |  | Vim Reference Guide (Sundeep Agarwal)— |  |  |
 |  | Virginia Postrel - The Power of Glamour_ Longing and the Art of Visual | 2013 |  |
+|  | VOICE The Secret Power of Great Writi... |  |  |
 |  | VoicemeeterBanana_UserManual |  |  |
 |  | Volo's Guide to Monsters |  |  |
 |  | W1 - Conquest of Bloodsworn Vale |  |  |
@@ -5307,6 +5350,7 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | We Be Goblins! |  |  |
 |  | Weapon Master's Handbook |  |  |
 |  | weapon_record_sheet |  |  |
+|  | Weapons of the Weak Everyday Forms of Peasant Resistance | James C. Scott |  |
 |  | Weather Spaces, Mobilities and Affect... |  |  |
 | 2021 | Weather: spaces, mobilities and affects | Barry, Borovnik, Edensor |  |
 |  | Webpage-link to NTSS_0 |  |  |
@@ -5416,6 +5460,8 @@ Subject source per item: the Dec-2023 catalog where it had one, else Chief's own
 |  | World of Aruneus - Clerics & Wizards |  |  |
 |  | World of Aruneus - Contagion Infected Human Zombies | screen |  |
 |  | World of Aruneus - Orcs |  |  |
+|  | WorldsWithoutNumber_FreePDF_040221 |  |  |
+|  | WorldsWithoutNumber_FreePDF_Lightweight_040221 |  |  |
 |  | WPA Pit Fighter |  |  |
 |  | WPA Smuggler Guide |  |  |
 |  | WPA Stalwart Defender |  |  |

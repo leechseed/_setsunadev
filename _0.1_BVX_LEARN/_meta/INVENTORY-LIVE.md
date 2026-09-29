@@ -13,12 +13,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **8873** |
-| With a PDF attachment | 8873 |
-| PDF present on disk | 8782 |
-| Already in catalog.json (BVX id) | 1010 |
-| **New since the Dec-2023 catalog** | **7863** |
-| Story-side (CRE + LIT by catalog) | 630 |
+| Top-level items | **8974** |
+| With a PDF attachment | 8974 |
+| PDF present on disk | 8883 |
+| Already in catalog.json (BVX id) | 1011 |
+| **New since the Dec-2023 catalog** | **7963** |
+| Story-side (CRE + LIT by catalog) | 631 |
 | **Spine-keyed from Chief's tags** | **908** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
@@ -40,9 +40,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 5550 |
+| NEW | 5650 |
 | GAM | 1234 |
-| CRE | 464 |
+| CRE | 465 |
 | PHI | 284 |
 | SLF | 204 |
 | VIS | 198 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (7863)
+## New since the catalog (7963)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -279,6 +279,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 101 Special Materials & Power Components |  |  |
 |  | 101 Subterranean Spells |  |  |
 |  | 101 Weapon Properties |  |  |
+|  | 101 Worldbuilding Prompts - Forging Fantasy Realms 02 | M. D. Presley |  |
 |  | 101ArtNudebyDanHecho20112020 |  |  |
 |  | 107694593-Stretching-Charts |  |  |
 |  | 11 |  |  |
@@ -326,6 +327,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 26 |  |  |
 |  | 2600A - SR4 Anniversary Two Page Character Sheet |  |  |
 |  | 27 |  |  |
+|  | 27 Fiction Writing Blunders - And How... |  |  |
 |  | 28 |  |  |
 |  | 2d20 SRD |  |  |
 |  | 2d20_SRD |  |  |
@@ -338,6 +340,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 30 Battle Standards |  |  |
 |  | 30 Cloaks of Deception | v.2 |  |
 |  | 30 Cloaks of Deception |  |  |
+|  | 30 Days of Worldbuilding An Authors Step-by-Step Guide to Building Fic | A. Trevena |  |
 |  | 30 Fleshgrafts |  |  |
 |  | 30 Haunts for Houses |  |  |
 |  | 30 Haunts for Objects |  |  |
@@ -769,6 +772,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | A Place Beyond Hell |  |  |
 |  | A Score of Trapped Chests |  |  |
 |  | A System for Writing How an Unconventional Approach to Note-Making Can |  |  |
+|  | A Theory of Justice | John Rawls |  |
 | 2025 | A Tightly Coupled IMU-Based Motion Capture Approach for Estimating Mul | Osman, Kanter, Boelens, Kok |  |
 |  | A Time of War v2.01 2014 12 12 |  |  |
 |  | A Womans Guide to Oral Sex | Adams Media |  |
@@ -1110,6 +1114,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | aste4dzo |  |  |
 |  | aste4dzo |  |  |
 |  | Astonishing Races - Leprechaun Revised |  |  |
+|  | Asylums | Erving Goffman |  |
+|  | Automating Inequality | Virginia Eubanks |  |
 |  | Avalon Games - Infinite Futures - The Future is Now |  |  |
 |  | Aventyr - Underworld Races - Drow |  |  |
 |  | Aventyr - Underworld Races - Drow - Errata |  |  |
@@ -1121,6 +1127,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Azukail Games - A Baker's Dozen of Witch Hexes |  |  |
 |  | B0829C1F91 The Mythology Book (Big Ideas Simply Explained by DK |  |  |
 |  | BACHELORETTES ON THE PROWL | State-Of-The-Art |  |
+|  | Back in the Saddle In Angeles City and Bangkok 2022-2023 | Bangkok Byron |  |
 |  | Bag of Tricks |  |  |
 |  | Ballenger, Bruce - Curious Writer, Brief Edition, The | 2016 | 06_NARRATOR |
 |  | ballistix-sport-lt-ddr4-productflyer |  |  |
@@ -1209,6 +1216,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Bible of Cock Volume 2 |  |  |
 |  | Big Lizzie |  |  |
 |  | Bill Webb's Book of Dirty Tricks |  |  |
+|  | Biopolitics An Advanced Introduction (Biopolitics Medicine, Technoscie | Thomas Lemke, Monica Casper, L |  |
+|  | Biopower Today | Paul Rabinow Nikolas Rose |  |
 |  | Bioshock Art Book Breaking the Mold (Take-Two Interactive Software)— |  |  |
 |  | BioshockPitch |  | 080007 - TABLE TOP GAME DESIGN |
 |  | Bioware Selection |  |  |
@@ -1219,6 +1228,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Blackbyrne - Age of Lords - Campaign Setting |  |  |
 |  | Blackbyrne - BP1 - The Hidden Current |  |  |
 |  | Blackbyrne - BP2 - The Manor of Deceit |  |  |
+|  | blades_core_playsheets |  |  |
+|  | blades_playerkit_v8_2 |  |  |
 |  | Bladestorm |  |  |
 |  | Blake Ascending |  |  |
 |  | Bleached Skull Gnolls |  |  |
@@ -1487,6 +1498,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Chronicle of the Righteous |  |  |
 |  | Cities And Roads |  |  |
 |  | Cities of Golarion |  |  |
+|  | CitiesWithoutNumber_FreeVersion_083023 |  |  |
+|  | CitiesWithoutNumber_FreeVersion_Lightweight_083023 |  |  |
 |  | City Map Folio |  |  |
 |  | City of Golden Death |  |  |
 |  | City Of Strangers |  |  |
@@ -1585,6 +1598,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Condensed Campaigns - A Broken Sky |  |  |
 |  | Conflict Games - Conflict Roleplaying Rulebook |  |  |
 |  | Conquering Heroes - Pregenerated Characters |  |  |
+|  | Contemporary Dystopian Fiction for Young Adults Brave New Teenagers (B |  |  |
 | 2020 | Contemporary publishing and the culture of books | Baverstock, Bradford, Gonzalez |  |
 |  | Conventions and Obligatory Moments Th... |  |  |
 |  | Conversion Guide |  |  |
@@ -1615,6 +1629,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2024 | Creating Suspenseful Stories: Iterative Planning with Large Language M | Xie, Riedl |  |
 |  | Creative Confidence | Kelley |  |
 |  | Creative-Writing-Worksheets-by-Eva-Deverell |  | 02_PLOT SYUHZET |
+|  | Creativity from Constraints The Psychology of Breakthrough | Patricia D. Stokes PhD |  |
 |  | Creatures of Distant Worlds - Sand Cobras |  |  |
 |  | Creatures Of The Night, Volume 1 |  |  |
 |  | Creatures Of The Night, Volume 2 |  |  |
@@ -1661,6 +1676,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Curse of the Golden Spear Part 2 - Dim Spirit | PFRPG |  |
 |  | Curse of the Golden Spear Part 3 - Dark Path | PFRPG |  |
 |  | Curse of the Riven Sky |  |  |
+|  | CWN_Character_Sheet_FormFillable |  |  |
+|  | CWN_Character_Sheet_NonFormFillable |  |  |
 |  | Cyberware & Bioware Selection |  |  |
 |  | Cyberware Selection |  |  |
 |  | D&D System Reference Document 5.1 Edition SRD5 OGL |  | 080007 - TABLE TOP GAME DESIGN |
@@ -1695,6 +1712,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | DAMA - DMBOOK data management body of knowledge |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
+|  | Damn Fine Story Mastering the Tools o... |  |  |
 | 2013 | Dance Medicine in Practice | Simmel |  |
 |  | Dangerous Curves Women In Action (SQP INC)— |  |  |
 |  | Dark Age Turning Points Irian |  |  |
@@ -1709,6 +1727,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dark Psychology and Manipulation Discover 40 Covert Emotional Manipula |  |  |
 |  | Dark Roads and Golden Hells |  |  |
 |  | Dark Roads and Golden Hells - Shadow Planes and Pocket Worlds |  |  |
+|  | Dark Skies Space Expansionism, Planetary Geopolitics, and the Ends of  | Daniel Deudney |  |
 |  | Dark Waters Rising |  |  |
 |  | Darklands Revisited |  |  |
 |  | Data Sketches A Journey of Imagination, Exploration, and Beautiful Dat | Nadieh Bremer Shirley Wu |  |
@@ -1797,6 +1816,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dirty Tactics Toolbox |  |  |
 |  | Dirty Thirty A Memoir | Asa Akira | SEX |
 |  | Disasters - Meltdown and Fallout |  |  |
+|  | Discipline Punish | Michel Foucault |  |
 |  | Distant Shores |  |  |
 |  | Distant Worlds |  |  |
 | 2015 | Distilling the Knowledge in a Neural Network | Hinton, Vinyals, Dean |  |
@@ -2581,6 +2601,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dyslexic Studeos - Pathfinder Character Sheets |  |  |
 |  | E1 - Carnival of Tears |  |  |
 |  | E2 - Blood of Dragonscar |  |  |
+|  | EclipsePhaseSecondEdition_CharacterPack1.3_creativecommons |  |  |
+|  | EclipsePhaseSecondEdition_RulesPrimer |  |  |
+|  | Eichmann in Jerusalem A Report on the Banality of Evil | Hannah Arendt |  |
 |  | Ejercicios de Cualificacion de Pistola |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
 |  | Eldritch Archetypes - Arbalesteur |  |  |
@@ -2590,6 +2613,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Elemental Masters Handbook |  |  |
 |  | Elementals Lords of Porphyra |  |  |
 |  | Elements of Fiction Writing - Charact... |  |  |
+|  | Elements of Fiction Writing - Conflic... |  |  |
 |  | Elements of Fiction Writing - Conflic... |  |  |
 |  | Elements of Fiction Writing - Conflic... |  |  |
 |  | Elements of Game Design | Robert Zubek |  |
@@ -2815,6 +2839,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | fanpro_shadowrun_shockwaves |  |  |
 |  | Fansadox Collection - bonus - Fernando - The art of FERNANDO volume 1 | Fansadox Collection | 04_SETTING |
 |  | Fantastic Careers - OOPS! All Reactions |  |  |
+|  | Fantasy World-Building A Guide to Developing Mythic Worlds and Legenda | Mark Nelson |  |
 |  | faq |  |  |
 | 2009 | Fashion: the key concepts | Craik |  |
 |  | Fat Dragon - Dragonlore, Thousand Maw |  |  |
@@ -2878,6 +2903,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | FGG2 - Strange Bedfellows |  |  |
 |  | FGG3 - Ursined, Sealed, and Delivered |  |  |
 |  | FHM UK - October 2021 (FHM)— |  | 080009 - PHOTOGRAPHY |
+|  | Fiction Attack Insider Secrets for Wr... |  |  |
 |  | Fiction Formula Plotting | Deborah Chester |  |
 |  | Fiction is Folks (Robert Newton Peck)— |  |  |
 |  | Field Manual 3085 |  |  |
@@ -3032,6 +3058,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Forgotten Tomb of Felgar the Goblin King |  |  |
 |  | Fotografia obnażona. Mistrzowskie sesje aktu (Brzozowski R.)— |  |  |
 |  | Fotohits - Februar 2021 (Fotohits)— |  |  |
+|  | Foucault (Gilles Deleuze, Sean Hand (translator)) |  |  |
+|  | Foucault A Very Short Introduction | Gary Gutting |  |
 |  | Four Core Fiction A Story Grid Conten... |  |  |
 |  | Four Horsemen - Heralds of the Apocalypse |  |  |
 |  | Four Horsemen Present Even More Horrifically Overpowered Feats |  |  |
@@ -3271,6 +3299,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | GURPS Social Engineering: Keeping in Contact | Games |  |
 |  | GURPS Social Engineering: Pulling Rank | Games |  |
 |  | GURPS Sorcery: Protection and Warning Spells | Games |  |
+|  | GURPS Space | Jon F Zeigler, James L Cambias |  |
 |  | GURPS Space Atlas: Grissom | Games |  |
 |  | GURPS Spaceships |  | 080007 - TABLE TOP GAME DESIGN |
 |  | GURPS Steampunk 2: Steam and Shellfire | Games |  |
@@ -3292,6 +3321,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Gymnastics Skills- Techniques- Training | Lloyd Readhead |  |
 |  | Half-Goblins of the Tangled Wood | open with Adobe |  |
 |  | Half-Goblins of the Tangled Wood |  |  |
+|  | Half-Real Video Games between Real Rules and Fictional Worlds | Jesper Juul |  |
 |  | Halflings of Golarion |  |  |
 |  | Halls of the Mountain King |  |  |
 |  | Hammerdog Games - The Grande Temple of Jing |  |  |
@@ -3374,6 +3404,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Heroes of the Siwathi Desert |  |  |
 |  | Heroes of the Streets |  |  |
 |  | Heroes of the Wild |  |  |
+|  | Heterocosmica fiction and possible worlds | Doležel, Lubomír |  |
 |  | Hidden City, Forbidden Lore | Pulver, Vrtis, Burwell, Smith |  |
 |  | Highmoon Games - Liber Sodalitas - Dream Healers |  |  |
 |  | Hill Terrain Set |  |  |
@@ -3387,6 +3418,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Historical Turning Points Tortuga |  |  |
 |  | Hoard of the Dragon Queen |  |  |
 |  | Home Grown Booty (Dannibelle)— |  | HEALTH & FITNESS |
+|  | Homo Sacer | Georgio Agamben |  |
 |  | Horror - The Madness Dossier |  |  |
 |  | Horror Adventures |  |  |
 |  | Horror Realms |  |  |
@@ -3399,6 +3431,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Houserule Footnotes - Stocking Stuffers |  |  |
 |  | Houserule Handbooks - Spellpoints Expansion |  |  |
 |  | How Can I Pay for PrEP? |  |  |
+|  | How Fiction Works | James Wood |  |
 |  | How To Be A GURPS GM |  |  |
 |  | How to Create History An Authors Guide to Creating Histories, Myths, a | A. Trevena |  |
 |  | How to Draw Fantasy Females Create Sexy Cyberpunks, Seductive Supergir |  |  |
@@ -3420,6 +3453,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | How to Write a Dynamite Scene Using t... |  |  |
 |  | How to Write Dazzling Dialogue The Fastest Way to Improve Any Manuscri |  |  |
 |  | How to Write Dazzling Dialogue The Fastest Way to Improve Any Manuscri |  |  |
+|  | How to Write Pulp Fiction (Bell James... |  |  |
 |  | human-integration-design-handbook-revision-1 |  |  |
 |  | Humans of Golarion |  |  |
 |  | Hunicke, LeBlanc, Zubek - MDA A Formal Approach to Game Design and Gam | 2004 |  |
@@ -3500,6 +3534,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Inner Sea Temples |  |  |
 |  | Inner Sea World Guide |  |  |
 |  | Inside Book Publishing | Clark |  |
+|  | Inside Story The Power of the Transfo... |  |  |
 |  | Inside Story The Power of the Transfo... |  | 02_PLOT SYUHZET |
 |  | Insidious Intentions - The Book of Villainy, Volume I |  |  |
 |  | Instant Pot Fried Rice - Little Sunny Kitchen |  |  |
@@ -3523,6 +3558,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Introduction DNM Bible |  | COMPUTER SCIENCE & WEBDEV |
 |  | Introduction: Confessions of a |  |  |
 |  | Investing For Dummies | Tyson |  |
+|  | Investing For Dummies (Eric Tyson)978... |  |  |
 |  | IPG - Kingdoms of Legend - Relics of the Lost Gods, Pt 1 - Hidden Thre |  |  |
 |  | IPG - Kingdoms of Legend - World Guide |  |  |
 |  | Ire of the Storm |  |  |
@@ -3669,6 +3705,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Kineticists of Porphyra II |  |  |
 |  | Kineticists of Porphyra III |  |  |
 |  | Kineticists of Porphyra IV |  |  |
+|  | Kingdom a role-playing game about communities | Robbins Ben |  |
 |  | Kingmaker - 01 - Stolen Land |  |  |
 |  | Kingmaker - 02 - Rivers Run Red |  |  |
 |  | Kingmaker - 03 - The Varnhold Vanishing |  |  |
@@ -3988,6 +4025,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Lost Treasures |  |  |
 |  | Louis Hebert - Tools for Text and Image Analysis, The Actantial Model | sample chapter, pre-2019 |  |
 |  | Lovecraft Fantasy Gaming Toolkit |  |  |
+|  | Loves Knowledge Essays on Philosophy and Literature | Martha C. Nussbaum |  |
 |  | Low Tech |  |  |
 |  | Low Tech - Instant Armor |  |  |
 |  | Low-Tech Companion 1 - Philosophers And Kings |  |  |
@@ -4018,6 +4056,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Malevolence |  |  |
 |  | Malevolence - Rules and Chronicle Sheet |  |  |
 |  | Mammoth_Pack |  |  |
+|  | Man, Play and Games | Roger Caillois |  |
 |  | Manhwa Mania - How to Draw Korean Comics | Manga Mania | 080004 - art |
 |  | Map of Darkmoon Vale |  |  |
 |  | Map of Korvosa |  |  |
@@ -4255,6 +4294,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Mitch Leeuwe Illustrated Guide to Drawing |  | 080007 - TABLE TOP GAME DESIGN |
 |  | Modern Arnis For The New Millennium The MA80 System Arnis-Eskrima | Anderson, Prof Dan. | HEALTH & FITNESS |
 |  | Modern Software Engineering: Doing What Works to Build Better Software | Farley |  |
+|  | Modernity and the Holocaust | Zygmunt Bauman |  |
 |  | Mongoose - Van Graaf's Journal of Dragons |  |  |
 |  | Monk Archetypes |  |  |
 |  | Monster Advancement - Enhanced Aberrations |  |  |
@@ -4564,6 +4604,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | MYTHS OF BABYLONIA AND ASSYRIA | Mackenzie |  |
 |  | Naked Lunch | William S. Burroughs |  |
 |  | Narration in the Fiction Film | David Bordwell |  |
+|  | Narrative as theme studies in French fiction | Prince, Gerald |  |
 |  | Narrative as Virtual Reality 2 Revisiting Immersion and Interactivity  | Marie-Laure Ryan |  |
 |  | Narrative as virtual reality immersion and interactivity in literature | Marie-Laure Ryan |  |
 | 2025 | Narrative Context Protocol: An Open-Source Storytelling Framework for  | Gerba |  |
@@ -4591,6 +4632,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Natural Penis Enlarg... by Platinum Millennium |  |  |
 | 2025 | Navigating the Path of Writing: Outline-guided Text Generation with La | Lee, Ka, Son, Kang |  |
 |  | Necromo Nightmare |  |  |
+|  | Necropolitics | Achille Mbembe Steve Corcoran |  |
 |  | NeoExodus - A House Divided - Adventure Planner |  |  |
 |  | NeoExodus - A House Divided - Campaign Setting |  |  |
 |  | NeoExodus - Campaign Setting |  |  |
@@ -4635,6 +4677,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Noble Cause, Bloodied Hands |  |  |
 |  | Nobles of Porphyra |  |  |
 |  | Nobuyoshi Araki - Araki by Araki-TASCHEN | 2014 |  |
+|  | Normal Accidents | Charles Perrow |  |
 |  | Northwinter Press - Mystical Kingdom of Monsters |  |  |
 |  | Northwinter Press - Mystical Kingdom of Monsters - Haunted Eve Monster |  |  |
 | 2021 | Novel & Short Story Writer's Market 40th Edition: The Most Trusted Gui | Jones |  |
@@ -4651,6 +4694,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | NUDE magazine issue 34 WET issue December 2022 |  |  |
 |  | Numeria, Land of Fallen Stars |  |  |
 |  | Numeria, Land of Fallen Stars Maps |  |  |
+|  | Obedience To Authority An Experimental View | Stanley Milgram |  |
 |  | Obsidian Apocalypse |  |  |
 |  | Obsidian Apocalypse - World of Abaddon |  |  |
 |  | Obsidian Twilight |  |  |
@@ -4693,6 +4737,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Oracle Mysteries of Porphyra |  |  |
 |  | Oral Sex Hell Never Forget (WorldMags)— |  |  |
 |  | Orcs of Golarion |  |  |
+|  | Ordinary Men | Browning, Christopher, R |  |
 |  | original-dramatica-tables |  |  |
 |  | original-dramatica-tables |  |  |
 |  | Orphans of the Hanged Man |  |  |
@@ -4718,6 +4763,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Otyughnomicon - Flensing Otyugh |  |  |
 |  | Otyughnomicon - Northern Waste Otyugh |  |  |
 |  | Otyughnomicon - Wyvern Spawn Otyugh |  |  |
+|  | Oulipo A Primer of Potential Literature | Warren F. Motte Jr. |  |
+|  | Oulipo A Primer of Potential Literature (Warren F. Motte Jr.)-1 |  |  |
 |  | Out of the Abyss |  |  |
 |  | Outdoor LIfe The Ultimate Self-Sufficiency Manual (200+ Tips for Livin | Tim MacWelch |  |
 |  | Outlaws of Alkenstar AP - 1 of 3 - Punks in a Powderkeg |  |  |
@@ -4906,6 +4953,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Paul Hill - Approaching Photography_ An Introduction to Understanding  | 2021 |  |
 |  | Pawns |  |  |
 |  | Pawns - Pathfinder Society v4 |  |  |
+|  | Pedagogy of the Oppressed, 30th Anniversary Edition | Paulo Freire, Myra Bergman Ram |  |
 |  | Penis Enlargement Techniques And Exer... |  |  |
 |  | Penis Enlargement Techniques And Exer... |  |  |
 |  | Penis Exercises  A H... by Michaels  Rob |  |  |
@@ -5152,6 +5200,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Podemskis Standard Snare Drum Method (Podemski Benjamin.)— |  | 0800012 - SOUND |
 | 2013 | Poetics | Aristotle, Kenny | 00_THEORY OF COMPOSITION |
 | 2018 | Pole dance fitness: with over 300 exercises | Kartaly |  |
+|  | Political geography world-economy, nation-state, and locality | Flint, Colin 1965-, Taylor etc |  |
 |  | Polyface Micro Success with Livestock on a Homestead Scale | Joel Salatin |  |
 |  | Polyhedron 001 |  |  |
 |  | Polyhedron 002 |  |  |
@@ -5336,9 +5385,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Portraits | Helmut Newton |  |
 |  | Portraits | Helmut Newton |  |
 |  | position_illustration_supervio |  |  |
+|  | Possible Worlds in Literary Theory (Literature, Culture, Theory) | Ruth Ronen |  |
 |  | Possible Worlds Theory And Contemporary Narratology | Marie-Laure Ryan, Alice Bell |  |
 |  | Possible Worlds, Artificial Intelligence and Narrative Theory | Marie-Laure Ryan |  |
 |  | Postclassical narratology approaches and analyses | Alber, Jan Fludernik, Monika |  |
+|  | Postscript on the Societies of Control | Gilles Deleuze |  |
 |  | Potions & Poisons |  |  |
 |  | Power Booty Gym (Lauren Simpson)— |  | HEALTH & FITNESS |
 |  | Power Booty Home (Lauren Simpson)— |  | HEALTH & FITNESS |
@@ -5378,7 +5429,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Princes of the Apocalypse |  |  |
 |  | Princes of the Plains - Halfling Archetypes |  |  |
 |  | Professional digital techniques for n... |  |  |
+|  | Profile |  |  |
 |  | Progressive steps to syncopation for... |  | 0800012 - SOUND |
+|  | Project management for small projects | Sandra F. Rowe |  |
 |  | Project Management with AI For Dummies (4th edition) | Daniel Stanton |  |
 |  | Prompt Book for SD 2.1 |  | ARTIFICIAL INTELLIGENCE |
 |  | Protean Lords of Porphyra |  |  |
@@ -5419,6 +5472,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Psionics Unleashed Revised |  |  |
 |  | Psychic Anthology |  |  |
 |  | Psychology of the unconscious a study of the transformations and symbo |  |  |
+|  | Psychopolitics | Byung-Chul Han |  |
 | 2014 | Publishing 101: A First-Time Author's Guide to Getting Published, Mark | Friedman |  |
 |  | Pure Steam - Westbound |  |  |
 |  | Purple Duck Diversions - Antipaladin feats |  |  |
@@ -5568,6 +5622,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | QuestWorlds |  |  |
 |  | Quinn - Level 1 Investigator |  |  |
 |  | Quinn - Level 5 Investigator |  |  |
+|  | Rabelais and His World | Mikhail Bakhtin |  |
+|  | Race After Technology Abolitionist Tools for the New Jim Code | Ruha Benjamin |  |
 |  | Radiance House - Age of Electrotech |  |  |
 |  | Radiance House - Pact Magic Unbound 1 |  |  |
 |  | Radiance House - Pact Magic Unbound 2 |  |  |
@@ -5680,6 +5736,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Remedial Tinkering - Obligatory Lovecraft Expansion |  |  |
 |  | Remedial Tinkering - Rockets Red Glare |  |  |
 |  | remote_control_sheet |  |  |
+|  | Reproduction in Education, Society and Culture | Pierre Bourdieu, Jean-Claude P |  |
 |  | Restless Souls |  |  |
 |  | Retribution |  |  |
 |  | Return of the Drow - Advanced Racial Handbook |  |  |
@@ -5774,6 +5831,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Rolando Gomezs Posing Techniques for... |  |  |
 |  | Ron Edwards - GNS and Other Matters of Role-Playing Theory | 2001 |  |
 |  | Ron Edwards - System Does Matter | 2004 |  |
+|  | Routledge Handbook of Strategic Culture | Kerry M. Kartchner, Briana D.  |  |
 |  | Roy Peter Clark - Writing Tools_ 50 Essential Strategies for Every Wri | 2008 |  |
 |  | Roy Peter Clark - Writing Tools_ 50 Essential Strategies for Every Wri | 2008 |  |
 |  | Roy Stuart Volume 1 | Roy Stuart, Jean-Claude Baboul |  |
@@ -5801,6 +5859,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Ruins of Azlant - 5 - Tower of the Drowned - Interactive Maps |  |  |
 |  | Ruins of Azlant - Player's Guide |  |  |
 |  | Rule of Fear |  |  |
+|  | Rules of Play - Game Design Fundamentals Team DDU | by Katie Salen Eric Zimmerman |  |
 |  | Rules Summary - GM |  |  |
 |  | Runesmithing Expanded ‐ The Animator Archetype |  |  |
 |  | Rusted Iron Games - Frozen Gardens Winter Special |  |  |
@@ -6032,6 +6091,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Savage Tide 2 Supplement |  |  |
 |  | Savage Tide 3 Supplement |  |  |
 |  | Savage Tide 4 Supplement |  |  |
+|  | Savage Worlds Deluxe Explorers Edition | Shane Hensley |  |
 |  | Save The Cat The Last Book on Screenwriting Youll Ever Need | Blake Snyder | 080002 - film |
 |  | Save the Cat Writes a Young Adult Novel | Jessica Brody |  |
 |  | Sawmill Camping Resort Guest Rules and Regulations May 2024 copy |  |  |
@@ -6129,6 +6189,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Science Fiction Codex of Lists 90 Ran... |  |  |
 |  | Science Fiction Writers Phrase Book ... |  |  |
 |  | Science Fiction Writers Phrase Book ... |  |  |
+|  | Science Fiction, Fantasy, And Politics Transmedia World-Building Beyon | Dan Hassler-Fores |  |
 |  | Scions of Evil |  |  |
 |  | Scions of Sin - Tiefling Archetypes |  |  |
 |  | Scions of Stone |  |  |
@@ -6164,6 +6225,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Secrets of Pact Magic |  |  |
 |  | Secrets of Speed Seduction Mastery (Ross Jeffries)055738849X |  | HEALTH & FITNESS |
 |  | Secrets Of Story | Martell, William, C |  |
+|  | Security, Territory, Population Lectures at the College de France 1977 | Michel Foucault |  |
 |  | Seekers of Secrets |  |  |
 |  | Seelah - Level 1 Champion |  |  |
 |  | Seelah - Level 5 Champion |  |  |
@@ -6331,6 +6393,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Social Engineering |  |  |
 |  | Social Engineering - Back to School |  |  |
 |  | Social Engineering - Pulling Rank |  |  |
+|  | Society Must be Defended | Michel Foucault |  |
 |  | Society Quest - Ambush in Absalom |  |  |
 |  | Society Quest - Fane of Fangs |  |  |
 |  | Society Quest - Pathfinder Quests - Honor's Echo |  |  |
@@ -6901,6 +6964,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Starjammer - Medical Marvels |  |  |
 |  | Starjammer - Prometheus Protocols |  |  |
 |  | Starjammer - Races of the Void Book One |  |  |
+|  | StarsWithoutNumberRevised Character_Sheet Form_Fillable |  |  |
+|  | StarsWithoutNumberRevised FreeEdition 122917 |  |  |
 |  | Starter Set - Characters |  |  |
 |  | Starter Set - Lost Mine of Phandelver |  |  |
 |  | Starter Set - Rulebook |  |  |
@@ -7038,6 +7103,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The 36 dramatic situations for film | Figgis, Mike |  |
 | 2016 | The Aesthetics of Atmospheres | Böhme, Thibaud | 04_SETTING |
 |  | The Aesthetics of Atmospheres (Gernot... |  |  |
+|  | The Age of Surveillance Capitalism The Fight for a Human Future at the | Shoshana Zuboff |  |
 |  | The Art and Soul of Dune | Tanya Lapointe |  |
 |  | The Art of Death Stranding (Titan Books)— |  | 04_SETTING |
 |  | The Art of Fallout 4. Official Artbook ()— |  | 04_SETTING |
@@ -7055,20 +7121,25 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Barbarian Reforged |  |  |
 |  | The Big Book of Bloodlines |  |  |
 |  | The Big Pink Book: A Beginner’s Guide To Bimbofication |  |  |
+|  | The Birth of Biopolitics Lectures at the College de France, 1978-1979 | Michel Foucault |  |
+|  | The Black Box Society The Secret Algorithms That Control Money and Inf | Frank Pasquale |  |
 |  | The Black Monastery |  |  |
 |  | The Blackshire Mercenary Company |  |  |
 |  | The Bleeding Hollow |  |  |
 |  | The Board Game Designers Guide The Easy 4 Step Process to Create Amazi |  |  |
 |  | The Book of Beginnings |  |  |
 |  | The Book of Forbidden Magic |  |  |
+|  | The Burnout Society | Byung-Chul Han |  |
 | 2022 | The Business of Fine Art Photography: Art Markets, Galleries, Museums, | Werner |  |
 |  | The Cambridge Introduction to Narrative | H. Porter Abbott |  |
 |  | The Camera | Ansel Adams, Robert Hardy Bake | 080002 - film & 080003 - television |
 |  | The City of Graves |  |  |
 |  | The Cleric Reforged |  |  |
+|  | The Collapse of Complex Societies (New Studies in Archaeology) | Joseph Tainter |  |
 |  | The Collected Monsters of Sin |  |  |
 |  | The Collected Works of C. G. Jung, Vol. 9, Part 1 The Archetypes and t | Carl Gustav Jung, William McGu |  |
 |  | The collected works of C. G. Jung. Vol. 8 The structure and dynamics o | Adler, Gerhard Fordham, Michae |  |
+|  | The Company We Keep An Ethics of Fiction | Wayne C. Booth |  |
 |  | The Complete Advanced Feats |  |  |
 |  | The Complete Book of Drawing Techniques - A Complete Guide for the Art |  | 080004 - art |
 |  | THE COMPLETE BOOK OF PENIS The Effect... |  | SEX |
@@ -7077,6 +7148,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Complete Photo Guide To Great Sex |  | SEX |
 |  | The Complete Photography Manual - 18th Edition, 2023 ( etc.)— |  |  |
 |  | The Cores of Game Design Mechanics, Economics, Narrative, and Aestheti | Yvens R. Serpa |  |
+|  | The Craft of Wargaming (Jeff Appleget... |  |  |
 |  | The Craft of Wargaming (Jeff Appleget... |  |  |
 |  | The Craft of Wargaming (Jeff Appleget... |  |  |
 |  | The CRPG Book Expanded Edition 3 |  |  |
@@ -7090,9 +7162,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The dialogic imagination Four essays by M. M. Bakhtin | Mikhail M. Bakhtin, Michael Ho |  |
 |  | The Dialogue Thesaurus A Fiction Writ... |  |  |
 |  | The Dialogue Thesaurus A Fiction Writ... |  |  |
+|  | The Dictionary of Imaginary Places | Alberto Manguel, Gianni Guadal |  |
 |  | The Dragon's Demand |  |  |
 |  | The Dragon's Demand Poster Maps |  |  |
 |  | The Dread Codex, Goblins |  |  |
+|  | The Dynamics of Ancient Empires State Power from Assyria to Byzantium  | Ian Morris, Walter Scheidel |  |
 |  | The Dynamics of Narrative Form Studies in Anglo-American Narratology ( |  |  |
 |  | The Ebon Vault - Adamant Armors |  |  |
 |  | The Ebon Vault - Bows of War |  |  |
@@ -7246,6 +7320,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Harrowing |  |  |
 |  | The Hermetic Brotherhood of Luxor Ini... |  | RELIGION & SPIRIT |
 |  | The Hermetica: The Lost Wisdom of the Pharaohs | Freke, Gandy |  |
+|  | The History of Sexuality, Volume 1 - An Introduction | Michel Foucault |  |
+|  | The History of Sexuality, Volume 1 - An Introduction (Michel Foucault) |  |  |
 |  | The History of the Knights Templars | Addison |  |
 |  | The Hive of Corruption |  |  |
 |  | The house of the scorpion | Nancy Farmer |  |
@@ -7261,6 +7337,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Language of Drum... by Greb Benny. |  | 0800012 - SOUND |
 |  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Last Fifty Pages The Art and Craf... |  |  |
+|  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Last of Us Part II Artbook |  | 04_SETTING |
 |  | The Lesbian Sex Book - A Guide for Women Who Love Women (Wendy Caster, |  |  |
 |  | The Lesbian Sex Book - A Guide for Women Who Love Women (Wendy Caster, | 1 |  |
@@ -7274,10 +7351,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Malefactor |  |  |
 |  | The mammoth book of erotic women in photographs |  |  |
 |  | The Man Who Fell to Urth | Master |  |
+|  | The managed heart commercialization of human feeling | Arlie Russell Hochschild |  |
 |  | The Masculine Cross A History of Ancient and Modern Crosses and Their  |  |  |
 |  | The Masculine Principle Blog Writings | compiled by dream-hunter |  |
 |  | The Masks of God, Volume 1 Primitive Mythology |  |  |
 |  | The Mechromancer - A Theurge Tinker Prestige Class |  |  |
+|  | The Metric Society On the Quantification of the Social | Steffen Mau |  |
 |  | The Midnight Mirror |  |  |
 |  | The Minto Pyramid Principle Logic In Writing, Thinking And Problem Sol | Barbara Minto |  |
 |  | The Mismade Girl | Sasha Grey |  |
@@ -7294,6 +7373,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Nova in the Embers |  |  |
 |  | The Nude in Black And White - Creative Approaches to Photographing the |  |  |
 |  | The Nude in Black And White - Creative Approaches to Photographing the |  |  |
+|  | The Ones Who Walk Away From Omelas | Ursula K. le Guin |  |
 |  | The Opened Mind |  |  |
 |  | The Origin of Satan | Elaine Pagels | RELIGION & SPIRIT |
 |  | The Overture of ELDEN RING (ファミ通書籍編集部 電撃ゲーム書籍編集部)— |  |  |
@@ -7308,14 +7388,19 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
+|  | The power of place geography, destiny, and globalizations rough landsc | Harm de Blij |  |
+|  | The Practice of Everyday Life | Michel de Certeau |  |
 |  | The Practice of Rhetoric |  |  |
 |  | The Private Man Blog Writings | compiled by dream-hunter |  |
 |  | The Psychology of CreativeWriting | Kaufman, Kaufman |  |
 |  | The Pudding Shot 2 for $5 | Minze |  |
 |  | THE QI BOOK OF QUOTATIONS | Lloyd, Mitchinson |  |
+|  | The Real World of Technology | Ursula M. Franklin |  |
 |  | The Reaping Stone |  |  |
 |  | The Reign of the Phallus | Keuls |  |
+|  | The return of thematic criticism | Sollors, Werner |  |
 |  | The Rhetoric of Fiction, 2nd Edition (1983, The University of Chicago  | Wayne C. Booth |  |
+|  | The Rise of the Meritocracy, 1870-2033 | Michael Dunlop Young |  |
 | 2014 | The rise of Tiamat | Winter, Winter, Baur | 080007 - TABLE TOP GAME DESIGN |
 |  | The Rite Review 1 | No Ads |  |
 |  | The Rite Review 2 | No Ads |  |
@@ -7394,9 +7479,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Song of Fodin |  |  |
 |  | The Space of Sex The Porn Aesthetic in Contemporary Film and Televisio | Shelton Waldrep |  |
 |  | The Steamsinger - A Bard Tinker Prestige Class |  |  |
+|  | The structure of scientific revolutions 50th anniversary edition (Thom |  |  |
 |  | The Sublime (Blooms Literary Themes) (Harold Bloom (Editor) etc.) |  | 01_THEME |
 |  | The Templars The Rise and Spectacular Fall of God’s Holy Warriors | Dan Jones |  |
 |  | The Thirty-Six Dramatic Situations | Georges Polti |  |
+|  | The Timeless Way of Building | Christopher Alexander |  |
 |  | The Tinker Master of Modular Mechanical Mayhem |  |  |
 |  | The Tomb of Caragthax the Reaver | Revised |  |
 |  | The Trading Mindwheel Eight Essential... |  |  |
@@ -7410,6 +7497,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Ultimate Guide to Prostate Pleasure Erotic Exploration for Men and | Charlie Glickman, Aislinn Emir |  |
 |  | The Ultimate Guide to Prostate Pleasure Erotic Exploration for Men and | Charlie Glickman, Aislinn Emir |  |
 |  | The Ultimate RPG Character Backstory Guide | James D’Amato | 03_CHARACTER |
+|  | The Ultimate RPG Game Masters Worldbuilding Guide | James DAmato |  |
 |  | The Universal Traveler A Soft-Systems Guide to Creativity, Problem-Sol |  |  |
 | 2024 | The Use of Motion Capture Technology in 3D Animation | Caroline Wibowo, Nugroho, Wibo |  |
 |  | The Visual Language of Comics Introduction to the Structure and Cognit | Neil Cohn |  |
@@ -7440,6 +7528,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | This and That - Secret and Cypher |  |  |
 |  | Thornkeep |  |  |
 |  | Thornkeep - Flip-Mat |  |  |
+|  | Those Dark Places Industrial Science Fiction Roleplaying | Jonathan Hicks |  |
 |  | Threshold of Knowledge |  |  |
 |  | Thunderscape - A Goreauxs Guide to Golems |  |  |
 |  | Thunderscape - Aden Wildlife Journal Vol 1 |  |  |
@@ -7554,6 +7643,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Traveller - Interstellar Wars |  |  |
 |  | Traveller - Interstellar Wars - Combat Counters |  |  |
 |  | Traveller - Psionics Institutes |  |  |
+|  | Traveller Core Rulebook Update 2022 | Marc Miller, Matthew Sprange |  |
 |  | Treasury of the Fleet |  |  |
 |  | Treasury of the Kingdom |  |  |
 |  | Treasury of the Orient |  |  |
@@ -7577,9 +7667,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Troy Francis Archive ((compiled by) udream-hunter) |  |  |
 |  | True Style The History and Principles of Classic Menswear | G. Bruce Boyer |  |
 |  | Trust the Hand Book (18+) | Bert Herrman |  |
+|  | Truth, Fiction, and Literature A Philosophical Perspective | Peter Lamarque, Stein Haugom O |  |
 |  | TSE-S800-15C |  |  |
 |  | Turning Points Arcturus |  |  |
 |  | Turning Points Epsilon Eridani |  |  |
+|  | TV Writing on Demand Creating Great C... |  |  |
 |  | Twilight Archer |  |  |
 |  | Two Dozen Dangers - Curses |  |  |
 |  | Two Dozen Dangers - Diseases |  |  |
@@ -7628,6 +7720,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Ultra Lite |  |  |
 |  | Ultra Tech |  |  |
 |  | Ultra-Tech - Weapon Tables |  |  |
+|  | Ulysses Unbound | Terence Killeen |  |
 |  | Undead Revisited |  |  |
 |  | Undead Slayer's Handbook |  |  |
 |  | Undead Unleashed |  |  |
@@ -7698,6 +7791,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Villains of Pact Magic |  |  |
 |  | Vim Reference Guide (Sundeep Agarwal)— |  |  |
 |  | Virginia Postrel - The Power of Glamour_ Longing and the Art of Visual | 2013 |  |
+|  | VOICE The Secret Power of Great Writi... |  |  |
 |  | VoicemeeterBanana_UserManual |  |  |
 |  | Volo's Guide to Monsters |  |  |
 |  | Vorkosigan Saga Sourcebook And Roleplaying Game |  |  |
@@ -7755,6 +7849,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | We Be Goblins! |  |  |
 |  | Weapon Master's Handbook |  |  |
 |  | weapon_record_sheet |  |  |
+|  | Weapons of the Weak Everyday Forms of Peasant Resistance | James C. Scott |  |
 |  | Weather Spaces, Mobilities and Affect... |  |  |
 | 2021 | Weather: spaces, mobilities and affects | Barry, Borovnik, Edensor |  |
 |  | Webpage-link to NTSS_0 |  |  |
@@ -7881,6 +7976,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | World of Aruneus - Contagion Infected Human Zombies | screen |  |
 |  | World of Aruneus - Orcs |  |  |
 |  | World Redlight Guide Sex Tourism, Sin Cities, Escorts, (Tony Kelbrat)B |  | SEX |
+|  | Worldbuilding From Small Towns to Entire Universes (The Million Dollar | Kevin J. Anderson |  |
+|  | WorldsWithoutNumber_FreePDF_040221 |  |  |
+|  | WorldsWithoutNumber_FreePDF_Lightweight_040221 |  |  |
 |  | WPA Pit Fighter |  |  |
 |  | WPA Smuggler Guide |  |  |
 |  | WPA Stalwart Defender |  |  |
@@ -7916,6 +8014,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Writing Fiction A Guide to Narrative... |  |  |
 |  | Writing Unforgettable Characters How... |  |  |
 |  | Writing Unforgettable Characters How... |  |  |
+|  | Writing Unforgettable Characters How... |  |  |
 | 2016 | Writing with Clarity and Style | Harris |  |
 |  | Writing Workflows Beyond Word Processing | Tim Lockridge Derek Van Itters |  |
 |  | Writing Your Storys Theme The Writers Guide to Plotting Stories That M | K.M. Weiland |  |
@@ -7929,6 +8028,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | WTBN R3 SOP |  | MILITARY SCIENCE |
 |  | WTBN RANGE 4 SOP 26 OCT 2022 |  | MILITARY SCIENCE |
 |  | WTBN SAT Range SOP |  | MILITARY SCIENCE |
+|  | WWN_Character_Sheet_031521 |  |  |
 |  | Wyrd of Questhaven |  |  |
 |  | xo3qq5od |  |  |
 |  | xo3qq5od |  |  |
