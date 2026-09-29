@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 0.1.4
+version: 0.1.5
 last_updated: 2026-09-29
 applies_to: [every story in the LEECHSEED universe]
 status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1."
@@ -27,7 +27,7 @@ sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", 
 | **EVIL CHECK** (`evil_check`) | — | ⧗ | 1 · DCUS | Earth (same universe as OXO) | ⧗ | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
 | **LAKAD** (`lakad`) | codename, "for now" (2/9) | ⧗ | 2 · LAKAD | cislunar space | ⧗ | **named only** | none | none |
 | **ASTRO7EX** (`astro7ex`) | — | ⧗ | 3 · ASTRO7EX | the Moon | ⧗ | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
-| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ | 1 · DCUS (RULED 2026-09-29, BOLO 91: inside the universe's eras, not outside them; set on Earth — Chief leaves Earth vs cislunar vs the Moon open on purpose for many stories, so this pin is provisional) | Earth: the front line, Ukraine (board) | standard story size, "like a movie almost" (RULED 2026-09-29, BOLO 91) — **not** short-form; the "two readings" question stays open ⧗ | **seed**: the chalkboard transcribed 2026-09-29 | none | [tremor-cult-seed.md](../../../../_CANON_NODES/tremor-cult-seed.md) |
+| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ | 1 · DCUS (RULED 2026-09-29, BOLO 91: inside the universe's eras, not outside them; set on Earth; DCUS confirmed by Chief 2026-09-29: the universe's stories flow from Earth outward to space, so an Earth story sits in the first era) | Earth: the front line, Ukraine (board) | standard story size, "like a movie almost" (RULED 2026-09-29, BOLO 91) — **not** short-form; the "two readings" question stays open ⧗ | **seed**: the chalkboard transcribed 2026-09-29 | none | [tremor-cult-seed.md](../../../../_CANON_NODES/tremor-cult-seed.md) |
 | **She Her Own** (`she_her_own`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: "a jaded young strip-club chef who basically runs the place falls in love with a violent and traumatized new girl. She challenges the ownership of the club for him, and the toxic relationship that forms runs them both to the end of their lives." | none | none |
 | **KING TOWNIE** (`king_townie`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: "old genius cook, young hungry hood rat." | none | none |
 | **Hellfighters** (`hellfighters`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: firefighters through hell. | none | none |
@@ -57,6 +57,7 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 ## Version history
 
+- **0.1.5 — 2026-09-29.** TREMOR CULT's era 1 · DCUS confirmed by Chief; the universe's stories flow from Earth outward to space.
 - **0.1.4 — 2026-09-29 (BOLO 91 rulings).** Three provisional story rows added (She Her Own, King Townie, Hellfighters, sourced from the Apple Notes 2026 digest); the registry's genre slot (G1) added and set for OXO (cultcore); TREMOR CULT ruled inside era 1 · DCUS, set on Earth, standard story size ("like a movie almost") not short-form, its "two readings" question left open.
 - **0.1.3 — 2026-09-29.** The hinge ruled (the Deep Meridian beam); a PROJECTS section added (the pinball roguelite, Goonernaut Ventures); Ariel ruled an older name for Tori (see the OXO row).
 - **0.1.2 — 2026-09-29.** TREMOR CULT moved to seed: the chalkboard transcribed (`_CANON_NODES/tremor-cult-seed.md`).
