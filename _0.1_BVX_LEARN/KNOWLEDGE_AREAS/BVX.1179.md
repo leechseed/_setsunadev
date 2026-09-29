@@ -158,7 +158,7 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-The book runs from theory outward to crunch: a short history chapter that is really a hook-and-timeline document; one long city-overview chapter (districts, life, government, law, religion, the underworld -- the densest SETTING material in the book); ten gazetteer chapters, one per district, each stacked with named locations, NPC stat blocks, and business listings; then a widening-lens sequence -- the Serpent's Teeth (the island chain beyond the walls), Beyond Freeport (an optional, explicitly skippable cosmology and continent), a citywide Denizens roster, race write-ups, and finally the Pathfinder-specific game-mechanical back half (classes, feats, spells, gear, and a set of ready-to-run one-shot adventures set in named Freeport locations).
+The book moves from SETTING craft outward to game crunch: a history chapter that doubles as a hook-and-timeline document; one dense city-overview chapter (districts, life, government, law, religion, underworld); ten gazetteer chapters, one per district, stacked with named locations and NPC stat blocks; then a widening lens -- the Serpent's Teeth island chain, an optional and explicitly skippable cosmology/continent chapter, a Denizens roster, races, and finally the Pathfinder-specific rules back half (classes, gear, spells, a dozen ready-to-run one-shots).
 
 | Slot | Content | SETTING weight |
 |---|---|---|
