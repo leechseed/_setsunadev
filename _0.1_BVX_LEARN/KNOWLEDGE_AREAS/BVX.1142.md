@@ -193,11 +193,10 @@ The chapter order is the build order (Diagram 2): each step's output is the next
 | **The one-direction build order** | World, then city, then two to four districts, then that district's cast, in that order, never reversed | A GM who starts with district-level detail before the world exists has nothing for the district to be a consequence of |
 | **The six-field faction card** | Focus/income, style, strength, recent event, current goal, name — run identically for megacorps and gangs | One repeatable card generates an unlimited faction roster without the GM inventing structure each time |
 | **Schemes** | A named faction plot with progress points (1 to 10/20/30+ depending on scale) and milestones; missions push the count up or down | Converts "the world should feel alive" into an actual tracked number a GM can move at the table |
-| **Stay one session ahead** | The GM is told explicitly to prep only as far as the next game night, not the whole campaign | The book's own discipline against its own kitchen-sink temptation; depth is added only when play reaches it |
-| **The Market Leaders** | New Chicago's worked instance: seven named megacorps (Acheron, Kamigawa, Legau-Durach, Lianghe, Nova Vida, Obelisk, Taotie), each with a founding event, a value, and named Megacorp Traits | Proves the generator by running it seven times to a single coherent cartel, not seven disconnected NPCs |
-| **Objective democracy** | New Chicago's elections are decided by a data model, not by counted votes; voting in person is treated as tampering | One invented civic mechanism does more world-characterizing work than a page of description would |
-| **The corp-authored glossary** | An in-world dictionary (Charity, Evil, Freedom, Truth) redefined around "self-actualization" as the only human good | Shows a setting's ideology by handing the reader its own propaganda rather than describing the ideology from outside |
-| **Gangs as street government** | Stated outright: unpoliced districts are ruled by whichever gang can hold the turf, "the law" in practice | Removes the need to invent a separate civic-order layer for the underclass; the informal power already is the order |
+| **Stay one session ahead** | The GM is told explicitly to prep only as far as the next game night | The book's own discipline against its own kitchen-sink temptation |
+| **The Market Leaders** | New Chicago's worked instance: seven named megacorps, each with a founding event, a value, and named Megacorp Traits | Proves the generator by running it seven times to a coherent cartel, not seven disconnected NPCs |
+| **The corp-authored glossary** | An in-world dictionary (Charity, Evil, Freedom, Truth) redefined around "self-actualization" as the only human good | Shows a setting's ideology through its own propaganda, not a GM description of the ideology |
+| **Gangs as street government** | Unpoliced districts are ruled by whichever gang can hold the turf, "the law" in practice | Removes the need for a separate civic-order layer for the underclass; the informal power already is the order |
 
 ---
 
