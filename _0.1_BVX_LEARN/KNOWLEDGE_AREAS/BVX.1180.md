@@ -196,13 +196,13 @@ The book never states "technology drives class conflict" as a thesis. It states 
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Deciding what a new technology displaces | Trace what it makes obsolete (here: magic, and by extension religion and the old aristocracy that controlled it) before detailing what it enables | Add the technology as a new option alongside everything that already existed, unchanged |
-| Writing a setting's founding myth | Tie the government's actual laws to the specific oppression the founding revolt was against | Write a constitution as generic scene-dressing disconnected from the history chapter |
-| Populating factions | Give each faction a plausible origin (a grievance, a business need, a subculture) that the tech-and-class premise explains | Invent factions as a grab-bag of adventure-hook providers with no shared cause |
-| Showing class without a lecture | Encode it in slang, brand names, and faction membership lists (who joins, who's excluded) | State "there is a class system" and describe it abstractly |
-| Letting an institution evolve | Let a union, church, or company drift from its founding purpose under pressure (safety protest to racket) | Freeze every institution at its most flattering origin story forever |
-| Building regional variety | Re-run the same premise locally with different specifics (the Bastion's railroads, Keystone's mine safety) instead of inventing an unrelated conflict per region | Give each region a bespoke, thematically disconnected problem just for variety |
-| Handling the "why hasn't magic disappeared" hole | Keep magic present but marginalized and explain the marginalization mechanically (fewer apprentices, museum pieces, disused churches) | Simply remove the old system without narrating why it lost |
+| Deciding what a new technology displaces | Trace what it makes obsolete (magic, and the old aristocracy that controlled it) before detailing what it enables | Add the technology as a new option alongside everything unchanged |
+| Writing a setting's founding myth | Tie the government's laws to the specific oppression the founding revolt was against | Write a constitution as generic scene-dressing |
+| Populating factions | Give each faction an origin (a grievance, a business need, a subculture) the premise explains | Invent factions as a grab-bag of hook providers with no shared cause |
+| Showing class without a lecture | Encode it in slang, brand names, faction rosters (who joins, who's excluded) | State "there is a class system" and describe it abstractly |
+| Letting an institution evolve | Let a union, church, or company drift from its founding purpose under pressure | Freeze every institution at its most flattering origin story |
+| Building regional variety | Re-run the same premise locally with different specifics | Give each region a bespoke, disconnected problem for variety |
+| Handling "why hasn't magic disappeared" | Keep magic marginal and explain the marginalization mechanically | Remove the old system without narrating why it lost |
 
 ---
 

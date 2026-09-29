@@ -148,7 +148,7 @@ Seven chapters plus an appendix, but the book's own logic runs in five working b
 | The worked instance | Ch.5: Quodeth, City of Thieves | One city built out in full, with three ready-to-play adventures (sampled) |
 | Bestiary and magic | Ch.6–7, Appendix | Monster and spell content, game-system conversions (not read for this distill) |
 
-The Introduction's "Seven Qualities of Thule" (barbaric; the wilderness is savage; cities are wicked places; the world is mysterious; magic is a secret man was not meant to know; ancient evils threaten mankind; freebooters, mercenaries, opportunists) is the charter every later chapter is answerable to. Chapter 4 is the payoff chapter: it is where each of those seven lines gets a rule.
+The Introduction's Seven Qualities of Thule (barbaric; savage wilderness; wicked cities; a mysterious world; forbidden magic; ancient evils; freebooters and opportunists) is the charter every later chapter answers to. Chapter 4 is the payoff: where each of those seven lines gets a rule.
 
 ---
 
@@ -163,8 +163,8 @@ The Introduction's "Seven Qualities of Thule" (barbaric; the wilderness is savag
 | **Fantastic horror + sword-and-sorcery** | The explicit genre contract: episodic personal stakes, low magic, monsters that cannot always be beaten, heroes who barely change | Names the sub-genre precisely enough that it converts cleanly into rules rather than staying a mood board |
 | **Material tiers (stone / bronze / iron)** | Weapon and armor materials gated by culture: savage tribes use stone/bone, city-states and barbarians use bronze/copper, only dwarves (and lost Atlantis) know iron and steel | Arms and armor literally encode who is civilized and who still holds lost knowledge; a combat penalty enforces the fiction |
 | **Madness Checks** | A leveled sanity-track subsystem (exposure, DC, cumulative penalties, recovery on rest) triggered by aberrant creatures, alien runes, or a Great Old One's voice | Converts "encountering Lovecraftian horror" from narration into a resource cost players actually feel |
-| **Low-magic economy** | Magic items cannot be bought or sold, NPC spellcasters are scarce, alternate rewards (blessings, scaling gear) replace the usual magic-shop loop | Structural scarcity, not a difficulty dial the GM can quietly ignore |
-| **Public / folk / secret gods** | Nine Powers (public pantheon, inscrutable), Forest Gods (barbarian nature spirits), Other Gods (Great Old Ones, secret, degenerate-cult only) | The Lovecraftian horror always sits one tier below what is sanctioned; nothing cosmic is ever the state religion |
+| **Low-magic economy** | Magic items can't be bought or sold; NPC spellcasters are scarce; blessings and scaling gear replace the usual shop loop | Structural scarcity, not a difficulty dial the GM can quietly ignore |
+| **Public / folk / secret gods** | Nine Powers (public, inscrutable), Forest Gods (nature spirits), Other Gods (Great Old Ones, secret, cultist-only) | Cosmic horror sits one tier below what is sanctioned; it is never the state religion |
 | **Proactive adventure models** | Survival Adventure, Treasure Race, Caper: three templates that put the PCs' own ambition in the driver's seat instead of a villain's opening move | Keeps play episodic and greed-driven by structure, not just by GM reminder |
 | **Region-first Atlas method** | Six continental regions plus two island regions, each summarized by one governing tension before terrain is described; city entries close with two-line Concerns and Secrets fields | Geography is subordinate to the region's dramatic question; the Concerns/Secrets pair is a compressed dread-and-decline instance per place |
 
@@ -199,12 +199,12 @@ The Introduction's "Seven Qualities of Thule" (barbaric; the wilderness is savag
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating "ancient world" as reskinned medieval fantasy with more sand. The book insists on specific factual swaps (materials, timekeeping, stirrup-less cavalry), not a change of adjectives.
-- Letting Lovecraftian horror stay purely descriptive. Without a mechanic like the Madness Check, cosmic horror is flavor text a table quickly stops respecting.
-- Writing dungeons as "ancient evil place, builder unknown." This breaks the stacked-empire logic the whole cosmology and Atlas depend on.
-- Defaulting to reactive adventure design (a threat acts, the PCs respond) inside a sword-and-sorcery frame. It quietly converts an episodic, greed-driven game back into a conventional heroic-fantasy one.
-- Holding a setting's collapse back as a late reveal. Thule's Age of Ice is stated in the introduction and the timeline both; the dread comes from knowing the ending, not from discovering it.
-- Making every god equally visible. Collapsing the public/folk/secret tiering removes the exact gap that secret cults and Lovecraftian infiltration (Imystrahl's Black Milk) are built to occupy.
+- Treating "ancient world" as reskinned medieval fantasy with more sand, instead of swapping specific materials, timekeeping, and cavalry facts.
+- Letting Lovecraftian horror stay purely descriptive. Without a mechanic like the Madness Check, cosmic horror is flavor text a table stops respecting.
+- Writing dungeons as "ancient evil place, builder unknown," which breaks the stacked-empire logic the cosmology and Atlas depend on.
+- Defaulting to reactive adventure design (a threat acts, the PCs respond), which quietly converts an episodic, greed-driven game back into conventional heroic fantasy.
+- Holding a setting's collapse back as a late reveal, instead of stating it up front the way Thule's Age of Ice is stated in the introduction and the timeline.
+- Making every god equally visible, which erases the exact gap secret cults and Lovecraftian infiltration (Imystrahl's Black Milk) are built to occupy.
 
 ---
 
