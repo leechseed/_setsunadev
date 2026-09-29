@@ -1,10 +1,10 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.4.0
+version: 1.4.1
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept
+status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations")
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -197,7 +197,7 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 | Layer | DCUS |
 |---|---|
 | S1 BODY | century-old Southern prestige campus, Delta Coast; Middle-Bands address ("Inner Spiral" reverting to geography per provisional tissue) |
-| S2 WEATHER | Gulf-South: heat, humidity, hurricane season; Southern Gothic light. ⚠️ **canon-thin — authorable gap** |
+| S2 WEATHER | Gulf-South heat, humidity, and hurricane season (June–November); Southern Gothic light under the live oaks, gold in M1 and the Feed's glow by M2–4 (tracks S3 clean → NEON-ROT). **The cooled-building split (RULED 1.4.1):** Feed-conditioned interiors, the Gulf heat left outside for whoever doesn't rate a cooled building: class by budget line, not verdict (the controlling idea as climate). Storms are the one variable the Administration did not create. Arc: brochure weather (M1, Anchor + Mood) → a cost (M2–4, Pressure + Argue). Draft: `_tools/bolostatus/work/87/dcus/DCUS-S2-FACTIONS.md` |
 | S3 SENSORIUM | Southern Gothic register (ruled) — old brick and moss carrying a retrofit: Feed-linked clothing glow; the six-movement palette descent **clean → NEON-ROT** |
 | S4 LAW | the Administration as depersonalized OS · Star-Rating · Sync Cult mechanics · Feed-linked clothing as enforced legibility |
 | S5 SCAR | the rename lattice — **Skeeter Creek → Red Hills → DCUS**: erasure done twice; legacy students saying "Red Hills" commit a small legibility violation every time they speak |
@@ -208,6 +208,32 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 | S10 UNDERSIDE | the first name under the second (Movement 3's forensic mode); what the rebrand-as-Boot-Sequence overwrote; the disruption→collapse skeleton |
 | S11 VECTOR | the six-movement descent: clean → NEON-ROT → hunt; collapse trajectory |
 | S12 FUNCTION | `storyform_id: oxo_primary_v1` — **the OS Domain embodied: Situation / The Past.** Goal = The Past, story_cost = Memories: the campus IS personal history deleted for programming space, done to a place. The rebrand is the world's Boot Sequence at institutional scale. **Invariant set: the Institutional Invariants (Ecclesial Laws)** — `THE_ADMINISTRATION.md`, place-scoped |
+
+**DCUS faction cards (RULED 1.4.1, 2026-09-29; Chief, "go, all recommendations").** Full cards for the two factions the story centers, stubs for the rest. **The Administration and the Bishops are two factions** (the owners buy the school; the system runs it without them; THE_ADMINISTRATION.md's "(The Bishops)" parenthetical reads as the Bishops being its instrument, not its identity). ⧗ = proposal held, not canon.
+
+```
+FACTION CARD · THE ADMINISTRATION (full)
+founding sentence:    ⧗ none canon; always-already the Spiral's operating layer, "the 10th House gone sterile"
+binding principle:    legitimacy is issued, not earned (the Sacrament of Verification)
+government:           church-state bureaucracy; the holder is unnamed, the "Silent Hand" acting through the Bishops
+economy tier:         ⧗ apex / unrated: it controls legibility, not currency
+border/seam rating:   near zero: to be Un-Verified is excommunication from the infrastructure of survival
+one secret:           its plan covers logic, fear, and rebellion, but not the exhaustion hunt, Noise that outlasts it
+
+FACTION CARD · THE BISHOPS (full)
+founding sentence:    bought Red Hills Academy when the son sold his father's century of prestige for spoils; rebranded it DCUS
+binding principle:    the Ultra School as a chain; DCUS is the flagship (provisional tissue)
+government:           private acquisition capital; Quinn Bishop runs "Administrative Fixes" for the Administration; ⧗ no fuller hierarchy canon
+economy tier:         acquisition capital converting inherited prestige into product
+border/seam rating:   high friction at the seam they made: saying "Red Hills" is a legibility violation
+one secret:           ⧗ CONDITIONAL: the sale "for spoils" was an inside deal dressed as a rescue; in only if M2–4 want an ownership-war reveal
+
+STUB · the alumni-legacy bloc: descends from Red Hills' 100+ year student body · loyalty to the old name, carried in speech · ⧗ may hold oral memory of Skeeter Creek (Movement 3's forensic target)
+STUB · the faculty split: carried over from the ownership war · ⧗ legacy old guard vs Sync-era hires · secret not yet drawn
+STUB · the Sync Cult: ⧗ HELD until it has its own canon node (binding principle and secret are both proposals)
+```
+
+Benched: the dueling bells (the Red Hills bell tower against the Feed's period signal), until a scene needs a bell.
 
 **The proof reads:** every layer filled from canon on the first try, one authorable gap surfaced (S2), and S12 snapped onto the storyform without force — the schema fits the house.
 
@@ -230,12 +256,12 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 **RULED 1.4.0, 2026-09-29:** passageway (→ S1 seam type) · McKee's conflict level (→ S12 reading) · Kennedy's fill rule (→ PART A) · tone-to-mechanic, change 5 (→ S12 sub-note) · the twelve layer names (ruled as they stand) · `03_SETTING_SYSTEMS/` placement (kept) — all closed.
 
 **Still open (authoring, not calls):**
-- **S2 WEATHER for DCUS** — authorable gap, first writing target when Movements 2–4 open.
 - **Setting state architecture** — dated-overlay format specced at Axis 4; full doc mirrors `ssot_02_character_state_architecture` when first needed.
 - **Scene card field trial** — first real scene of OXO should run one card end-to-end.
 
 ## Version history
 
+- **1.4.1 — 2026-09-29.** RULED by Chief ("go, all recommendations"): DCUS S2 WEATHER filled (the cooled-building split kept); DCUS faction cards added under THE INSTANCE, the Administration and the Bishops ruled as two factions, the Bishops' secret conditional, the Sync Cult held, the bells benched. No schema change.
 - **1.4.0 — 2026-09-29.** RULED by Chief ("I'll recommend"): the six OPEN calls closed as recommended. S1 border/seam gains the `passageway` seam type (Truby). S12 gains McKee's conflict level as a reading and the tone-to-mechanic sub-note (synthesis change 5, unbenched). PART A gains the fill rule (Kennedy): thin by default. The twelve layer names ruled as they stand; `03_SETTING_SYSTEMS/` placement kept.
 - **1.3.0 — 2026-09-29.** RULED by Chief ("go on all those recs"): synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 applied. THE FACTION / NATION CARD added as a companion notation to the SCENE CARD (change 1). S1 BODY gets a border/seam sub-field (change 3). S7 FOUNDING gets the present-tense-bite grammar test (change 2). S5 SCAR and S9 ALLURE cross-reference each other (change 4). S12 FUNCTION gets the TAW/TRW binding-clause working rule (change 6). S10 UNDERSIDE upgraded from binary to three-tier public/folk/secret (change 7). Ryan's nine-axis ontological scoring named the primary L7 genre-contract tool, Baur's five-lineage taxonomy kept as shorthand (change 8). S11 VECTOR gets an optional forward-ledger sub-field (change 9). Change 5 (tone-to-mechanic conversion step) BENCHED, moved to OPEN. Change 10 reaffirmed — thin-by-default stays the rule, no structural change.
 - **1.2.0 — 2026-09-29.** Synthesis of 42 setting distills linked; proposed changes pending ruling. SETTING × LIBRARY section gets an additive paragraph pointing to ssot_03_setting_synthesis.md v0.1.0. No taxonomy or slice change.
