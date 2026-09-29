@@ -1,0 +1,1058 @@
+{
+ "meta": {
+  "date": "2026-09-29",
+  "when": "2026-09-29 09:40",
+  "trigger": "run launch sequence",
+  "countersign": "launch sequence",
+  "version": "v0.9 · the formation (BOLO 54)",
+  "box": [
+   {
+    "name": "Stash",
+    "port": ":9999",
+    "up": true,
+    "k": "stash"
+   },
+   {
+    "name": "DARKROOM",
+    "port": ":8484",
+    "up": true,
+    "k": "darkroom"
+   }
+  ],
+  "rack": {
+   "flushed": "2026-09-29-2.session.md, 2026-09-29-3.session.md, 2026-09-29.session.md → _LOG/",
+   "staged": "2026-09-29-3.session.md"
+  },
+  "tree": "clean at open",
+  "stack": "empty",
+  "agents": [],
+  "stats": {
+   "blocked": 0,
+   "agents_deployed": 3,
+   "stations": "7/7 GO"
+  },
+  "main_effort": "Push the 41 staged commits: origin is verified clean, and it is one command.",
+  "build": {
+   "calls": 3,
+   "rounds": 1
+  }
+ },
+ "blocks": [
+  {
+   "id": "0",
+   "name": "Last session",
+   "kind": "list",
+   "plain": "Session 2026-09-29-3 (fifteenth launch) stood up four new systems — tracking (BOLO 90, time model + grid + bar tempo), trope register (BOLO 89, 4,948 tropes keyed), character v2.2 with 34 sexuality distills, and universe eras (DCUS → LAKAD → ASTRO7EX) — then ruled Ariel = Tori and Tremor Cult's seed. Session 2026-09-29-2 (fourteenth) closed BOOK HUNT hunt shelf with 46 distills, locked OXO controlling idea + mechanism line, ruled theme whole v0.7.0 with both proof-scene cards verified, and ungated plot. Combined sessions delivered: setting v1.5.0 ruled, workspace v8 with tracking wired, library now 105 total distills all RANGE-pass, universe locked.",
+   "strand": {
+    "last": "Session 2026-09-29-3 (fifteenth): setting system v1.5.0 ruled six calls (DCUS S2 weather + faction cards) · tracking system opened BOLO 90 (time model · grid · bar not measure · tempo · one store/two rulers) · trope register opened BOLO 89 (4,948 tropes keyed · 3,919 high 797 medium 232 low) · character v2.2 delivered with 34 sexuality distills (PSY.14–42 · MSX.37–41 · L9 eros synthesis) · universe eras ruled three sequential (DCUS → LAKAD → ASTRO7EX · Deep Meridian beam hinge) · Ariel = Tori ruled (\"I built a lot of stuff out of Tori from Ariel\") · Tremor Cult seeded · The Arrangement artifact · workspace v8 with oxo.yaml + tracking.py · FRAGO 77 advanced (77-U/V/W/X; RX chosen) · FRAGO 80 six calls ruled · BOLO 79 six calls ruled · DOPE SHEET 77 v0.12 · FRAGO 87 · FRAGO 83 · FRAGO 18 · Apple notes digested · phone notes digested · Stash 16,482 scenes before rescan. Session 2026-09-29-2 (fourteenth): BOOK HUNT hunt shelf closed · 46 distills delivered _0.1_BVX_LEARN/KNOWLEDGE_AREAS/ all RANGE pass · OXO controlling idea ruled \"Nobody has to be evil when everyone does their job.\" · mechanism line locked \"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\" · theme system v0.7.0 ruled (new folder 📐 ssot_07_theme_system.md) · both proof-scene cards ruled (M2-grief-summary · M3-crash-analepsis theme-verified) · setting v1.3.0 ruled (TM 03 changes 1–4 6–9 benched 10 reaffirmed) · plot ungated · FRAGO 80 v0.4–0.8 · FRAGO 77 v0.11 built locally (DOPE republish owed) · BOLO 83 skipped · BOLO 87 tier 2 held · 2 wrong books caught (1172 1187). Session 2026-09-29 (thirteenth): BOOK HUNT v7 (Master Find 109 Theme Setting Plot Sexuality) · 59 distills _0.1_BVX_LEARN (38 setting 15 theme 46 sexuality all RANGE pass provisional) · BOLO 87/88 opened (setting 1,537 held judged · sexuality 340 held 199 on-topic 36 tier-1) · Part 107 held funds · GitHub verified clean 41 local · no-download ruled (Chief finds rescan) · IA 32/43 demoted · knockoffs (Le Grand Come As You Are · Killeen Ulysses Unbound · image scans).",
+    "plan": "Setting v1.5.0: DCUS S2 weather + faction cards ruled. Tracking (BOLO 90) step 2 ruled (time model grid bar tempo); step 6/7 next (workspace editing wire read). Trope register (BOLO 89): all recs keyed by domain slice. Character: six calls ruled + ten L9 changes. Universe: three eras locked, Deep Meridian hinge confirmed. FRAGO 77: draft proof-scene prose, republish DOPE SHEET. FRAGO 80: 81 handshake at release. BOLO 79: six calls ruled. BOLO 87: DCUS S2 weather + faction cards. BOLO 88: tier 2 continue. FRAGO 83 · 18 next. Apple/phone finds: Setsuna/Mayari/LEECHSEED cluster; Ariel's wound; bounded container Touchstone. Stash rescan queued.",
+    "you": "Session 2026-09-29-3 (fifteenth, systems up): setting system v1.5.0 ruled (six calls · DCUS S2 weather faction cards) · tracking system opened BOLO 90 (time model · grid · bar · tempo · one store/two rulers ruled \"it sounds good\") · step 2 ruled (seven trial calls line up recs) · trope register opened BOLO 89 (4,948 keyed 3919 high 797 med 232 low) · all recs keyed domain slice · character v2.2 delivered (34 sexuality distills PSY.14–42 MSX.37–41 all pass) · L9 eros synthesis v0.2.0 · universe eras ruled three sequential (DCUS LAKAD ASTRO7EX overlap seams Deep Meridian hinge \"number two yes\") · Ariel = Tori ruled (\"I built a lot of stuff out of Tori from Ariel\") · Tremor Cult seed · The Arrangement artifact 45VaiZ1qxsJaw3uei1KaTp · workspace v8 SRgr5uoVNbTcRxTi3WmC79 (oxo.yaml tracking.py wired) · FRAGO 77 advanced (77-U/V/W/X RX chosen · DOPE 77 v0.12) · FRAGO 80 six calls ruled · FRAGO 79 six calls ruled · FRAGO 83/18 built · Apple 2025/2026 notes digested · phone 2022–2023 notes digested · Stash 16,482 scenes pre-rescan. Session 2026-09-29-2 (fourteenth, spine locked): BOOK HUNT hunt shelf closed · 46 distills v1 published all RANGE pass · library 59→105 total · Drive sweep 171 files Q:/_PDF_DROP/_NEW/_gdrive/ · OXO controlling idea locked \"Nobody has to be evil when everyone does their job.\" · mechanism locked \"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\" · theme v0.7.0 ruled new folder · setting v1.3.0 ruled (TM 03: fold 1–4 bench 5 reaffirm 6–9) · both proof scenes ruled (M2 grief M3 crash theme-verified) · plot ungated · FRAGO 80 v0.4–0.8 · FRAGO 77 v0.11 local (DOPE republish owed) · rails ruled (4 Chief debates) · value FREEDOM world FAIRNESS motifs uniform/mirror/door/Feed · BOLO 83 skipped · BOLO 87 tier 2 held · 2 wrong books caught. Session 2026-09-29 (thirteenth, hunt): BOOK HUNT v7 Master Find Theme Setting Plot Sexuality · 59 distills (38 setting 15 theme 46 sexuality all RANGE provisional) · BOLO 87/88 opened (1,537 held 340 held 199 on-topic) · Part 107 gated funds · GitHub 41 local · no-download (Chief finds rescan) · IA 32 demoted · knockoffs (Le Grand Come As You Are · Killeen Ulysses Unbound · image scans).",
+    "next": "Setting v1.5.0: DCUS S2 weather + faction cards. Tracking: step 2 ruled; step 6/7 next (workspace editing wire read). Trope: keyed by domain. Character: six calls + ten L9 ruled; next steps TBD. Universe: three eras locked. FRAGO 77: draft prose, republish DOPE SHEET. FRAGO 80: 81 handshake. FRAGO 79: next. BOLO 87/88: tier 2 held. FRAGO 83/18 next. Apple/phone finds: cluster note · wound · Touchstone. Stash rescan queued. Git push 41 local."
+   },
+   "items": [
+    {
+     "t": "**Setting system v1.5.0 ruled (six calls · DCUS S2 weather + faction cards); workspace v8 wired** — Session 2026-09-29-3 (fifteenth launch). Setting 📐 ssot_03_setting_state_architecture.md v1.1.0. Workspace v8 (Artifact SRgr5uoVNbTcRxTi3WmC79): oxo.yaml + tracking.py integrated. Six Chief calls ruled (\"I'll recommend\" pattern). DCUS S2 weather + faction cards ruled (\"go, all recommendations\").",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Tracking system opened (BOLO 90); time model · grid · bar · tempo ruled** — Session 2026-09-29-3. 📐 ssot_08_tracking_system.md v0.2.0 (tick · beat · bar · time signature · tempo · time code M2 · Q1 · S03 · 012.3.2 · checkpoints · story points · cables). Time model ruled (bar not measure, tempo, one store/two rulers: \"it sounds good\"). Step 2 of 7 ruled; step 6/7 (workspace editing, wire read) next.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Trope register opened (BOLO 89); 4,948 tropes keyed by domain slice** — Session 2026-09-29-3. 📐 ssot_01_trope_register.md v0.3.0. Registry: 3,919 high · 797 medium · 232 low (from 707). All recs keyed to each domain's slice. PROJECTS section added to registry.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Universe eras established (three sequential: DCUS → LAKAD → ASTRO7EX); Deep Meridian hinge ruled** — Session 2026-09-29-3. Three sequential eras with overlap at seams. Deep Meridian beam as the hinge confirmed (\"number two, yes\"). All recommendations. Ariel narrative cluster: Ariel = Tori's older name (\"I built a lot of stuff out of Tori from Ariel\").",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Character v2.2 delivered (34 sexuality distills wave 3: PSY.14–42 · MSX.37–41); L9 eros synthesis v0.2.0** — Session 2026-09-29-3. Vertical slice v2.2.0 + 📐 ssot_02_l9_eros_synthesis.md v0.2.0. Wave 3: 34/34 pass. Six Chief calls ruled + ten L9 changes (\"Rex\").",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Tremor Cult seeded (canon node); three trial calls pending (outside eras? short-form? two readings)** — Session 2026-09-29-3. 📄 _CANON_NODES/tremor-cult-seed.md. From chalkboard photo. Three calls on hold: placement, format, narrative readings.",
+     "trunk": "ORANGE",
+     "s": "held",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Apple notes 2025 · 2026 + phone notes 2022–2023 digested; Setsuna/Mayari/LEECHSEED cluster found** — Session 2026-09-29-3. Digests in `_PRIVATE/notes/`. Phone notes yield: Setsuna/Mayari/LEECHSEED cluster; Ariel's bikini-atoll wound vs car crash. Bounded container Touchstone call pending.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**Non-nude PMV playlist (50/50 gay BBC) delivered; Stash 16,482 scenes before rescan** — Session 2026-09-29-3. `_PRIVATE/playlists/` (non-nude PMV · 50/50 gay BBC). Stash `non-nude` tag: 26 scenes. Rescan queued behind sprite job.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**FRAGO 77 advanced (77-U/V/W/X; RX chosen); DOPE SHEET 77 v0.12 delivered** — Session 2026-09-29-3 and 2026-09-29-2. Session -3: 77-U to 77-X ruled, RX chosen, DOPE SHEET 77 v0.12. Session -2: FRAGO 77 v0.11 built locally. Next: draft proof-scene prose, republish DOPE SHEET 77.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**FRAGO 80 six calls ruled; FRAGO 79 six calls ruled** — Session 2026-09-29-3. FRAGO 80 six Chief calls (\"line up the recs\"). FRAGO 79 six calls ruled. Session 2026-09-29-2: FRAGO 80 v0.4–0.8 incremented. Next: 81 handshake at 81's release.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/29 21:30"
+    },
+    {
+     "t": "**OXO controlling idea ruled; mechanism line locked** — Session 2026-09-29-2 (fourteenth launch). Controlling idea: **\"Nobody has to be evil when everyone does their job.\"** Mechanism: **\"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\"** Both set from Chief's four rails debates.",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "9/29 14:15"
+    },
+    {
+     "t": "**Theme system v0.7.0 ruled (new folder 📐 ssot_07_theme_system.md); both proof-scene cards verified** — Session 2026-09-29-2. Theme spine locked. Proof scenes M2-grief-summary · M3-crash-analepsis both verified with theme reads. Collide-point system confirmed.",
+     "trunk": "BLACK",
+     "s": "ruled",
+     "when": "9/29 14:15"
+    },
+    {
+     "t": "**Setting system v1.3.0 ruled (TM 03 changes: fold 1–4, bench 5, reaffirm 6–9)** — Session 2026-09-29-2. Setting synthesis 📐 ssot_03_setting_synthesis.md v0.2.0. TM 03 changes 1–4 folded, 5 benched, 6–9 reaffirmed, 10 benched.",
+     "trunk": "ORANGE",
+     "s": "ruled",
+     "when": "9/29 14:15"
+    },
+    {
+     "t": "**Plot ungated; proof scenes ruled (rails · value FREEDOM · world FAIRNESS · motifs uniform/mirror/door/Feed)** — Session 2026-09-29-2. Proof scenes M2 grief, M3 crash analepsis both ruled. Rails ruled (4 Chief debates: 1B 2B 3B 4A). Value FREEDOM (Freedom picked: B A B B) · world FAIRNESS (A A C B) · motifs uniform · mirror · door · Feed.",
+     "trunk": "ORANGE",
+     "s": "ruled",
+     "when": "9/29 14:15"
+    },
+    {
+     "t": "**BOOK HUNT hunt shelf closed; 46 new distills delivered (library now 105 total)** — Session 2026-09-29-2. BOOK HUNT v8 closed the held shelf. 46 distills published in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/` (BVX.0343–1190, MSX.34–36, PSY.13, all RANGE-verified). Library 59→105 total. Title matcher caught 2 wrong books (1172, 1187) before fan-out. Drive sweep: 171 files → Q:/_PDF_DROP/_NEW/_gdrive/.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "9/29 14:15"
+    },
+    {
+     "t": "**BOLO 83 skipped; 6 of 8 Amazon jobs remain open (Prime Air · Flight Monitor held)** — Session 2026-09-29-2 explicitly skipped. Prior state 9/24-5: 6 of 8 submitted (Food Safety · DSP×2 · HR Partner · Just Walk Out · Apprentice). Chief's focus on library. Next: Prime Air submit, DSP checks, Flight Monitor post Part 107.",
+     "trunk": "ORANGE",
+     "s": "open",
+     "when": "9/29 14:15"
+    },
+    {
+     "t": "**BOLO 87 tier 2 held (~1,260 items); DCUS S2 weather + faction cards next** — Sessions 2026-09-29-3, -2, and 2026-09-29. Tier 1 work complete. Tier 2 (~1,260 held) deferred. Setting shelf: 1,537 held judged. Next: DCUS S2 weather + faction cards, ruled in session -3.",
+     "trunk": "ORANGE",
+     "s": "held",
+     "when": "9/29"
+    },
+    {
+     "t": "**BOOK HUNT v7 delivered with 59 distills (all RANGE-passed); Find list 109 titles** — Session 2026-09-29 (thirteenth launch). BOOK HUNT artifact (Pb1YJvbZ1VQnLa7We6bw11) with Master list · Find list (109 titles) · Theme · Setting · Plot · Sexuality tabs. 59 distills: setting 38 (BVX.0405/0480/0465/0399/0562/0530/0504/0100/1137–1147/1156–1167) · theme 15 (BVX.0054/1148–1152/1154/1155) · sexuality 46 (MSX.18–33 · PSY.08–12 · BVX.1147–1167, provisional). All RANGE-verified.",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "9/29 05:39"
+    },
+    {
+     "t": "**BOLO 87 + 88 opened; setting shelf 1,537 held · sexuality shelf 340 held 199 on-topic 36 tier-1** — Session 2026-09-29. Setting shelf keyed. Sexuality shelf: 340 held, 199 on-topic, 36 tier-1. Get list 71 items (29 free borrow). Tier 2 (~220 items) held. Work in _tools/bolostatus/work/87/ and 88/.",
+     "trunk": "ORANGE",
+     "s": "held",
+     "when": "9/29 05:39"
+    },
+    {
+     "t": "**Part 107 held on funds; GitHub verified clean (41 local commits await push); no-download ruled** — Session 2026-09-29. BOLO 84 deferred until Chief funds available. GitHub verification: phone + gmail 0 hits on origin/main. 41 local commits staged, waiting Chief's 'git push origin main'. No-download ruled: Chief finds PDFs, I rescan Zotero.",
+     "trunk": "ORANGE",
+     "s": "gated",
+     "when": "9/29 05:39"
+    },
+    {
+     "t": "**IA borrow claims demoted; knockoff files identified** — Session 2026-09-29. IA 'print-disabled' copies not borrowable (32 of 43 agent claims demoted). Come As You Are = Le Grand 2021 knockoff. Ulysses Unbound = Killeen not Elster. Dictionary of Imaginary Places + Timeless Way = image scans. MSX.32 = second Anand distill (PHI.01 exists).",
+     "trunk": "ORANGE",
+     "s": "ruled",
+     "when": "9/29 05:39"
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "name": "The Fresh Ten",
+   "kind": "list",
+   "plain": "The ten things touched most recently, newest first. Today's third session (9/29, the fifteenth launch, still running — Chief said \"pick up right where we left off\" mid-session) takes the top slot: board republished v41, setting system to v1.5.0, BOLO 90 (the tracking system) and BOLO 89 (the trope register, 4,948 keyed) opened, The Arrangement and workspace bumped to v8, character system to v2.2.0, 34 more sexuality distills, the universe ruled as three eras around the Deep Meridian hinge, the story registry (BOLO 82) advanced, Tremor Cult seeded, the Apple/phone notes digested (BOLO 91), and Prime Air dropped with BOLO 84 closed. The earlier 9/29 session (the fourteenth launch, closed book hunt, 46 distills, theme ruled whole, BOLO 77 ungated) shifts down to second, and the session before that (the thirteenth launch, the scrub re-verify, BOLO 84 held, the BOOK HUNT page, 59 distills) shifts to third. Everything from the 9/24–9/28 sessions shifts down one slot each, and the Zotero library tooling row (9/24), which held the tenth slot last pass, ages off this one.",
+   "strand": {
+    "last": "Today's third session (05:41 → , still running) is working the fifteenth launch — board republished v41 — and has already landed: the setting system at v1.5.0; BOLO 90, the tracking system (`ssot_08`: tick · beat · bar, the time code, one store two rulers); BOLO 89, the trope register (4,948 tropes keyed); The Arrangement plus workspace v8 on `oxo.yaml`; the character system at v2.2.0 (the 9/16 bump plus ten L9 changes); 34 more sexuality distills (wave 3); the universe ruled as three eras hinged on the Deep Meridian; the story registry (BOLO 82) moved forward; Tremor Cult seeded; the Apple 2025/2026 and phone 2022–23 notes digested (BOLO 91); and Prime Air dropped with BOLO 84 closed.",
+    "plan": "Still BOLO 64's doctrine: work the cheap rulings and let the build fire behind each one the same turn. This session kept building — a tracking system, a trope register, a story-registry advance, a character-system bump — rather than clearing the Blocked table, which stays empty.",
+    "you": "Chief's one spoken call mid-session was \"pick up right where we left off,\" which resumed the session rather than ruling a numbered row; no fresh Blocked-table entry came out of this pass either.",
+    "next": "Six pending calls sit at the front of the queue: Anna Colson's origin on the fabula, three registry rows, \"cultcore,\" Tremor Cult's three calls, the phone-notes finds (the Setsuna/Mayari cluster, Ariel's second wound), and the \"bounded container\" Touchstone — then tracking step 6/7. Behind those: republishing DOPE SHEET 77 (v0.11, still local), the five Zotero records still missing a PDF, and the booth range-test/first voice-clone sample."
+   },
+   "items": [
+    {
+     "n": 1,
+     "t": "**The fifteenth launch, the tracking system, the trope register, and the story registry advanced.** Board republished 2026-09-29-2 v41. **Setting system to v1.5.0.** **BOLO 90** (the tracking system) opened — `ssot_08`: tick · beat · bar, the time code, one store two rulers. **BOLO 89** (the trope register) — 4,948 tropes keyed. **The Arrangement** plus workspace bumped to v8 on `oxo.yaml`. **Character system to v2.2.0** (the 9/16 bump plus ten L9 changes). **34 more sexuality distills** (wave 3). **The universe ruled as three eras**, hinged on the Deep Meridian. **The story registry (BOLO 82)** moved forward. **Tremor Cult** seeded. Apple 2025/2026 + phone 2022–23 notes digested (**BOLO 91**). **Prime Air dropped, BOLO 84 closed.** Session paused mid-work on Chief's \"pick up right where we left off.\"",
+     "next": "Rule Anna Colson's origin on the fabula, the three registry rows, \"cultcore,\" Tremor Cult's three calls, the phone-notes finds, and the \"bounded container\" Touchstone — then tracking step 6/7.",
+     "trunk": "BLACK/OPERATOR",
+     "s": "open",
+     "when": "9/29 09:29"
+    },
+    {
+     "n": 2,
+     "t": "**The fourteenth launch, the closed book hunt, and the theme system ruled whole.** \"run launch sequence\" went 7/7 GO, board republished v40, commits pushed. Chief closed the BOOK HUNT (\"I'm done getting other books\") after a Drive sweep (D: and I:) landed 171 files at `Q:/_PDF_DROP/_NEW/_gdrive/`. **46 tier-1 held books distilled**, 46/46 RANGE (BVX.0343…1190 · MSX.34–36 · PSY.13); `03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md` v0.2.0 + setting system v1.3.0, DOPE SHEET 87 v0.3. **OXO controlling idea RULED**: \"Nobody has to be evil when everyone does their job\" — mechanism line, rails, FREEDOM/FAIRNESS gauges, three motifs — `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` v0.7.0, DOPE SHEET 80 v0.8. **BOLO 77 ungated**, calls 77-U–X ruled into both proof-scene cards, DOPE SHEET 77 v0.11 built locally.",
+     "next": "Republish DOPE SHEET 77 (v0.11, built locally, still owed).",
+     "trunk": "BLACK/ORANGE/OPERATOR",
+     "s": "open",
+     "when": "9/29 05:40"
+    },
+    {
+     "n": 3,
+     "t": "**The thirteenth launch, the BOOK HUNT page, and 59 distills.** \"run launch sequence\" went 7/7 GO, board republished 2026-09-28 v39; the scrubbed history verified clean (0 hits for phone and gmail, `git push origin main` owed, 41 commits); BOLO 84 (Part 107) held, no money; JUDY relaunched after dropping. **BOOK HUNT** published — theme, setting, plot, and sexuality shelves plus the 109-title Find list — and **BOLO 87** (the setting shelf) + **BOLO 88** (the sexuality shelf) opened; 59 distills passed RANGE (setting 30 · theme 8 · sexuality 21, provisional ids BVX.1137–1167). Five Zotero records still need a PDF; Chief ruled Claude downloads no more books — he finds the PDF, then says \"rescan Zotero.\"",
+     "next": "Resolved — item 2's session re-verified the push and closed the hunt; only the five missing Zotero PDFs remain.",
+     "trunk": "BLACK/ORANGE/OPERATOR",
+     "s": "open",
+     "when": "9/29 03:16"
+    },
+    {
+     "n": 4,
+     "t": "**The launch and the booth.** \"run launch sequence\" went 7/7 GO, board republished as 2026-09-24-6 (v38) in the formation, leverage line unchanged (book Part 107), main effort unchanged (the push); BREVITY's picks re-applied, no change. BOLO 57 booth advice landed: the 100 ft XLR run needs no booster (NT1 Signature → Scarlett 2i2) provided it stays one star-quad run away from power; for monitoring, a 50 ft headphone extension or the SteelSeries 2.4 GHz headset (dongle on an active USB extension, no live self-monitoring) both work, recording from the 2i2 input.",
+     "next": "Chief range-tests the headset in the closet, then records the first clone sample.",
+     "trunk": "ORANGE/OPERATOR",
+     "s": "open",
+     "when": "9/28 20:10"
+    },
+    {
+     "n": 5,
+     "t": "**Session 6 ran the twelfth launch, re-aimed BOLO 57 to a self-voice clone, and ran the Stash grading pass.** \"run launch sequence\" went 7/7 GO, board republished 2026-09-24-5 (v37) with every block rebuilt; BREVITY at zero open slots now shows the quote book (`_tools/sitrep/build.py`). **BOLO 57** re-aimed by Chief mid-session to a studio-grade Voice Library clone of his own voice (Fiverr parked): MARKET.md, a ~25,600-word kit (≈2:50) at `_tools/bolostatus/work/57/kit/`, a dashboard (db checklist + Guide), DOPE SHEET 57 v0.7; ruled: no processing on clone audio, the tube preamp out, levels -20/-3/-60, pay-at-upload with a 90-day kill line, one voice at a time. **Stash**: `stashgrade.py` built (unrated queue, newest first, VLC + a panel on :8485); `_stashplay_*` sits untracked across 24 commits, scrub left as Chief's call. FRAGO 80 v0.3 (74 books to get, 11 on Everand). **BOLO 85** (UEFN, self-guided) and **BOLO 86** (the self-closing loop, four recs) captured.",
+     "next": "Superseded — the range-test/recording step is now the live next action (item 4).",
+     "trunk": "ORANGE/OPERATOR",
+     "s": "open",
+     "when": "9/24 20:58"
+    },
+    {
+     "n": 6,
+     "t": "**Session 5 ran the eleventh launch, ruled BREVITY's eight slots, and opened the job hunt plus Part 107.** \"run launch sequence\" went 7/7 GO, board republished as 2026-09-24-4 (v36); the \"undefined\" header tiles on the sit rep template got fixed. BREVITY's eight slots ruled from Chief's picks: PRIORITY · INTEL ×2 · ROUGH · PRIMER · DIGEST · DOCTRINE · THROTTLE (SOP §5, SOI edition 2026-09-24-2, DOPE SHEET 37 v0.5) — the gear→THROTTLE rename still owed. **BOLO 83** opened: nine postings read and ranked, seven tailored packages built in `_PRIVATE/bolo83-applications/out/` (résumé .docx + paste sheet each, tooling at `_tools/bolo83/`), **six of eight submitted** (Food Safety · DSP ×2 · HR Partner · Just Walk Out · Mechatronic Apprentice); both Prime Air jobs held. DOPE SHEET 83 published (v0.3). **BOLO 84** (Part 107, the drone certificate) opened with the links and plans in `PART107.md`.",
+     "next": "Ground Handler's application still needs submitting; Part 107 is now closed per item 1 (BOLO 84 closed, Prime Air dropped).",
+     "trunk": "BLACK/OPERATOR",
+     "s": "open",
+     "when": "9/24 16:40"
+    },
+    {
+     "n": 7,
+     "t": "**Session 4 ran the tenth launch, closed BOLO 77 to a gate, and opened Theme, Touchstones, and the story registry.** \"run launch sequence\" went 7/7 GO, board 2026-09-24-3 republished as v35. BOLO 77: seat calls 1–3 ruled on recs, call 12 built (`m2_first_sync_verified`), calls 13–14 carded as draft ⧗ scenes (`oxo-scene-card-M2-grief-summary.md` · `oxo-scene-card-M3-crash-analepsis.md`) — then gated on new BOLO 80, DOPE SHEET 77 at v0.10. BOLO 79's Ableton/Premiere consult ruled all recs, workspace v7. Fixes rode along: the MPK pads (stale listeners, restarted from Bash), the SOI header cut to one strip, \"Red Stick Creek\" → \"Skeeter Creek\", \"agents in flight\" → \"agents deployed\", and the scrubbed-history push found `origin` already held it. **BOLO 80** (theme) opened: `07_THEME_SYSTEMS/`, OXO-first, controlling idea first (biopower leads 13 candidates), DOPE SHEET 80. **BOLO 81** ruled \"invariant\" → **TOUCHSTONE** (cite TS 1:3), built last / read first, bootstrap register `📐 ssot_01_touchstones_register.md`, DOPE SHEET 81. **BOLO 82** captured (the story registry). THE ONE LIST landed: `_tools/bolostatus/work/80/READING-LIST.md`, 106 texts (HAVE 20 · GOT 6 · EXCERPT 6 · TO GET 74).",
+     "next": "Superseded — BOLO 80's theme system was ruled whole (item 2: controlling idea, mechanism line, rails, gauges, motifs, v0.7.0) and BOLO 77 ungated with its scene calls ruled; BOLO 82's story registry advanced this session (item 1) and BOLO 81's Touchstone register still waits on Chief's read.",
+     "trunk": "BLACK/OPERATOR",
+     "s": "open",
+     "when": "9/24 13:01"
+    },
+    {
+     "n": 8,
+     "t": "**Session 3 ran the ninth launch and closed out BOLO 77 through three built docs, then opened BOLO 79.** \"go for launch\" went 7/7 GO, board 2026-09-24-3 republished as v34. The GitHub backup step failed at the edges: all remotes had been gone since the scrub, `origin` got re-added, but both the force-push and a push-on-stop hook were guard-denied — Chief runs `git push --force origin main` by hand (session 4 later found `origin` already held the scrubbed history). BOLO 77 landed three docs: the fabula v0.1.2, the state architecture v1.1.0, and the trope graph v0.1.3 (135 nodes, 1,678 tropes fetched, 1,034 keyed, 2,584 links); the syuzhet (plot doc) reached v0.2.1; the movements map ruled the Bourne pivot; all 135 nodes got seated; DOPE SHEET 77 reached v0.5. BOLO 79 opened and captured four IA studies plus the Story Workspace mockup v3. Eight drop distills landed (BVX.1128–1135, Propp BVX.1136). Sensei rode the launch without her picture (`--naked-no-face`).",
+     "next": "Superseded — the three docs are built; BOLO 77 ungated (item 2), its 77-U–X calls ruled into both proof-scene cards; the trope register grew further to 4,948 keyed this session (item 1).",
+     "trunk": "BLACK/OPERATOR",
+     "s": "done",
+     "when": "9/24 07:33"
+    },
+    {
+     "n": 9,
+     "t": "**The eighth launch stood the Command up again and opened BOLO 78, the victory lap.** \"go launch sequence\" ran clean (7/7 GO), board 2026-09-24 republished (v33) with the leverage line set to force-pushing the scrubbed history. BOLO 78 then boresighted a 21-day solo Berlin trip, July 2028, $20k, funded from Ultrasin + Bold Venture income; steps 1–3 of a 13-step method got ruled or deferred, the plan banked at `_PRIVATE/BOLO-78-victory-lap.md`, and July 2028 became BOLO 11's physique deadline. Stash queue reset behind it: Sensei off, 86 Firefox-tagged gay/bbc scenes, played ledger cleared.",
+     "next": "Parked at the bottom of the list (\"it's not that important\") — nothing owed unless Chief reopens it.",
+     "trunk": "OPERATOR/ORANGE",
+     "s": "parked",
+     "when": "9/24 03:03"
+    },
+    {
+     "n": 10,
+     "t": "**BOLO 77 opened and closed the same session — the plot system boresighted \"all recs\" and its plot shelf built.** The fabula (world time) ruled as its own universe-level doc shared by OXO and EVIL CHECK; a trope graph (book situations as nodes, TV Tropes links as edges) ruled to walk inside the storyform's fixed signposts, syuzhet revised last. The plot sweep judged 2,429 titles (RANGE 2,429/2,429) → 813 sources work, 396 held at the close of uploads; seven upload rounds landed ~95 books; canon settled at 40 of 43 held. Ruled: do without the last 7 core texts + 3 classics — 8 open-access substitutes + 5 essays banked in `Q:\\_PDF_DROP\\_NEW`, plus the Riedl & Young paper.",
+     "next": "Superseded — the three docs are built; BOLO 77 ungated (item 2); the plot shelf's remaining gaps sit inside the BOOK HUNT page (item 3, plot 40/43 canon held, 7 gaps).",
+     "trunk": "BLACK",
+     "s": "done",
+     "when": "9/24"
+    },
+    {
+     "t": "**Dropping off the top ten this pass** — the Zotero library tooling row (9/24: `_tools/zotero/inventory.py` reading ~1,130 loose attachments, the drop folder move to `Q:\\_PDF_DROP`) drops off now that today's session (the fifteenth launch, the tracking system, the trope register, the story registry, the character-system bump, and Prime Air dropped/BOLO 84 closed) takes the top slot and pushes everything else down one. Still off from before: the scrub row (re-verified clean twice more since), the character-system dashboard findings (9/24: eleven unapplied 9/16 calls, calls 12–15 unruled, Tori's L12 blocked on ~65 Dramatica fields), BOLO 24's launch month/back-plan/decision ledger, BOLO 35's ruling, Rebel Rhyder's playlists, the declined likeness request, Gate 3, and the sixth launch sequence.",
+     "trunk": "BLACK/OPERATOR",
+     "s": "done",
+     "when": "9/24",
+     "note": true
+    }
+   ]
+  },
+  {
+   "id": "II",
+   "name": "The Ancients",
+   "kind": "list",
+   "plain": "What has gone quiet, oldest first, and what each one is waiting on. Nothing here is dead. Almost all of it is waiting on one word from you. All ten sessions since 9/24 — the six 9/24 launches (BOLO 78 parked, the BOLO 77/79/80/81/82 chain, BREVITY plus the job hunt), the 9/28 booth session, and all three 9/29 sessions (the thirteenth launch's scrub re-verify/BOLO 84/BOOK HUNT/59 distills, the fourteenth launch's closed hunt/46 distills/theme ruled whole/BOLO 77 ungated, and today's fifteenth launch's tracking system/trope register/story registry/character bump) — ran on other work instead of touching any of these; the groups carry forward unchanged from the last board.",
+   "strand": {
+    "last": "The true-ancients tier is still empty. The same items remain past the three-week line (GBD/shoot set/Bongobabe, the multimedia-seed trio, and the Tori×Anna collision proof) with nothing crossed off. The collision proof's blocker is still the one sharpened several sessions ago: the character-system dashboard found Tori's L12 blocked on roughly 65 Dramatica fields, with eleven 9/16 calls never applied and calls 12–15 still unruled.",
+    "plan": "Keep the tier empty. Anything that sits three weeks or more gets named here until it is ruled or retired.",
+    "you": "Nothing on this block moved by your hand today either — today's third session ran the fifteenth launch, opened the tracking system and the trope register, advanced the story registry, and bumped the character system, not an Ancients row. That follows the same pattern as all nine sessions before it since 9/24.",
+    "next": "The cheapest three: the Kata name, the BBRT fill-ins, the Birthday re-rule. One word each — and the Tori×Anna collision proof still has a named blocker (Tori's L12, ~65 Dramatica fields), which makes it a cheaper ask than it was several days ago."
+   },
+   "groups": [
+    {
+     "label": "True ancients",
+     "note": "tier empty since 9/9",
+     "items": []
+    },
+    {
+     "label": "Longest untouched · three weeks or more",
+     "items": [
+      {
+       "t": "**Berlin pivot + Germany field month** — waiting on the fold into BERLIN-PIVOT; converges on Atlanta, whose 9/1 dossier still awaits your ruling.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "8/16-19"
+      },
+      {
+       "t": "**Kobra S1 / SlimeVR** — waiting on the Phase 1 order.",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "8/20"
+      },
+      {
+       "t": "**Kata rename · BBRT fill-ins (BOLO 3)** — waiting on you.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "8/19"
+      },
+      {
+       "t": "**Birthday 2026** — shelved on a new-job assumption that no longer holds; re-rule Plan B or leave shelved.",
+       "trunk": "OPERATOR",
+       "s": "held",
+       "when": "8/21"
+      },
+      {
+       "t": "**Focus doctrine · interface · pedagogy (BOLO 4/5/6)** — waiting on your go.",
+       "trunk": "OPERATOR",
+       "s": "gated",
+       "when": "8/21"
+      },
+      {
+       "t": "**DOCTRINE 0 rename** — Standing Order versus the bench.",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "8/21"
+      },
+      {
+       "t": "**Strip follow-ons (BOLO 8/9)** — owner-only; you file the GitHub ticket and the Google removal. Well past three weeks now.",
+       "trunk": "BLACK/ORANGE",
+       "s": "open",
+       "when": "8/24"
+      },
+      {
+       "t": "**GBD plan · shoot set · Bongobabe (BOLO 10/11/12)** — the GBD answers · the §B ruling · your go. Past the three-week line since 9/16.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "8/25"
+      },
+      {
+       "t": "**Multimedia seed · grammar pass · spine sweep stage 2 (BOLO 15/16/18)** — your call, or scriptable. Past the three-week line since 9/16.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "8/25-26"
+      },
+      {
+       "t": "**Tori×Anna collision proof** — needed Anna's chart; Anna's node is built AND her twelve calls are ruled under BOLO 46. The character-dashboard pass named the remaining blocker precisely: Tori's L12 is blocked on roughly 65 Dramatica fields, with eleven 9/16 calls never applied and calls 12–15 still unruled. Past the three-week line since 9/16.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "8/26"
+      }
+     ]
+    },
+    {
+     "label": "Going quiet · two to three weeks",
+     "items": [
+      {
+       "t": "**Glute reference · cleaning service · Lab venture** — parked; the Lab venture holds six queued decisions.",
+       "trunk": "ORANGE",
+       "s": "parked",
+       "when": "8/30-31"
+      },
+      {
+       "t": "**Three-check pass (BOLO 21)** — fired 8/31; waiting on your strike/keep over sweep 1.",
+       "trunk": "BLACK/ORANGE",
+       "s": "held",
+       "when": "8/31"
+      },
+      {
+       "t": "**Physique set (BOLO 23) · Atlanta (BOLO 22)** — morphology-cell calls · the recommendation ruling.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "9/1"
+      }
+     ]
+    },
+    {
+     "label": "Recently parked · a week or less",
+     "items": [
+      {
+       "t": "Project flow (BOLO 25) · dictation dictionary (BOLO 26) · directory-of-dir promote candidates · Discord intros (none sent) · [[block-c|ULTRA DARK Block C]] · [[d9|D-9]] · TikTok ([[bolo29|BOLO 29]]) · verb kit · MIL.01 read-through · [[warroom|WARROOM]] name · story timeline · [[trash-land|Trash Land]] (seven rulings) · Ableton · the [[register|register]] · the pages · the formation and its eight offload phases (9/12).",
+       "trunk": "BLACK/ORANGE",
+       "s": "parked",
+       "when": "9/3-9/12"
+      }
+     ]
+    },
+    {
+     "label": "Wire gap · fifth board running",
+     "items": [
+      {
+       "t": "**[[modmigrate]]** (opened 9/7, the Minecraft modpack) still has no STATE row, no BOLO, no journal on record — over two weeks unwired now.",
+       "trunk": "OPERATOR",
+       "s": "missing",
+       "when": "9/7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "III",
+   "name": "The Deep Stacks",
+   "kind": "bars",
+   "plain": "How much thinking went into each project, measured as characters of conversation. It says where the thought has been spent, not what it is worth. Frozen at the August 15 export because the counting script is broken.",
+   "strand": {
+    "last": "Rank 10 was struck on 9/9: Business ops was a keyword bucket, never a project.",
+    "plan": "Repair the cluster script, then rerun after the next export so the ranks move again.",
+    "you": "You retired rank 10 with one word.",
+    "next": "The script repair is a Known-rot item; nobody has ordered it."
+   },
+   "unit": "k characters",
+   "rows": [
+    {
+     "rank": 1,
+     "p": "[[outliers|OVEREXITOUT / The Outliers]]",
+     "trunk": "BLACK",
+     "v": 880,
+     "convs": 19,
+     "state": "live"
+    },
+    {
+     "rank": 2,
+     "p": "BVIPDS / LEECHSEED",
+     "trunk": "BLACK",
+     "v": 580,
+     "convs": 25,
+     "state": "live"
+    },
+    {
+     "rank": 3,
+     "p": "Adult content venture",
+     "trunk": "ORANGE",
+     "v": 504,
+     "convs": 16,
+     "state": "live"
+    },
+    {
+     "rank": 4,
+     "p": "Desire Profile",
+     "trunk": "ORANGE",
+     "v": 492,
+     "convs": 19,
+     "state": "live"
+    },
+    {
+     "rank": 5,
+     "p": "Character system",
+     "trunk": "BLACK",
+     "v": 489,
+     "convs": 8,
+     "state": "unstalled 8/24"
+    },
+    {
+     "rank": 6,
+     "p": "Social channels",
+     "trunk": "BOTH",
+     "v": 432,
+     "convs": 25,
+     "state": "live · zero artifacts"
+    },
+    {
+     "rank": 7,
+     "p": "Food ventures",
+     "trunk": "BLACK",
+     "v": 411,
+     "convs": 17,
+     "state": "cooling"
+    },
+    {
+     "rank": 8,
+     "p": "ULTRASIN / GDP",
+     "trunk": "ORANGE",
+     "v": 400,
+     "convs": 11,
+     "state": "live"
+    },
+    {
+     "rank": 9,
+     "p": "Tooling",
+     "trunk": "BLACK",
+     "v": 266,
+     "convs": 16,
+     "state": "support"
+    },
+    {
+     "rank": 10,
+     "p": "Business ops",
+     "trunk": "BLACK",
+     "v": 203,
+     "convs": 6,
+     "state": "retired 9/9",
+     "retired": true
+    }
+   ],
+   "totals": [
+    {
+     "k": "BLACK",
+     "v": "~2,830k"
+    },
+    {
+     "k": "ORANGE",
+     "v": "~1,400k"
+    },
+    {
+     "k": "shared",
+     "v": "~430k"
+    }
+   ]
+  },
+  {
+   "id": "IV",
+   "name": "The BOLO board",
+   "kind": "board",
+   "plain": "Eighty-eight live, fourteen hot on board. BOLO 79 story workspace ruled · BOLO 77 plot nodes seated (135 nodes, four acts, ten calls ruled) · BOLO 80–81 reading lists merged + ordered (106 texts, ~$863 floor) · BOLO 82 story registry filed · BOLO 83 six applications submitted, Part 107 held on funds · BOLO 84 Part 107 held on funds · BOLO 85–86 ready to fire · BOLO 87–88 captured 9/29, book hunt live (14 distills landed). Held seven on ruling. Cores ORANGE/BLACK/OPERATOR running steady.",
+   "strand": {
+    "last": "BOLO 79 timeline mockup v7 published · BOLO 77 plot sweep DONE 9/24 (135 nodes, ten calls ruled) · BOLO 80–81 boresight received, merged reading list 106 texts ordered · BOLO 83 six of eight applications submitted 9/24 (Food Safety · DSP ×2 · HR Partner · JWO · Mechatronic); Part 107 study queued · BOLO 87–88 captured 9/29; setting/sexuality shelf distills begun.",
+    "plan": "BOLO 77 two scene cards written (M2 + M3 flashback) · BOLO 80–81 reading list ordered, acquisitions in flight · BOLO 78 step 4 when steps 2–3 ruled · BOLO 83 Food Safety due 9/25, Part 107 test on hold pending funds · BOLO 84 test fee $175, study free meanwhile · BOLO 85–86 fires on go · BOLO 87 book hunt 28/74 free routes live, 46 wait on cash · BOLO 88 44 sexuality titles borrow-free on Open Library.",
+    "you": "Eighty-eight BOLOs live · fourteen hot on board · seven held on ruling. BOLO 74 (Sensei) complete · BOLO 75 (Stash deck) live · BOLO 76 (playlists) set · BOLO 77 gated on 80+81 bootstrap (landed 9/24) · BOLO 87–88 captured 9/29, book hunt launched. ORANGE/BLACK/OPERATOR cores unproven.",
+    "next": "BOLO 77 scene cards for review · BOLO 80–81 reading list 106 texts acquisitions ordered · BOLO 78 step 4 when steps 2–3 ruled · BOLO 83 Food Safety 9/25 + Part 107 study + remaining packages · BOLO 84 funds trigger test booking · BOLO 85–86 fire on go · BOLO 87 Chief grabs free list into Q:/_PDF_DROP/_NEW, then sweep the drop · BOLO 88 Master grab list copyable on BOOK HUNT page · Block V release when held seven clear"
+   },
+   "groups": [
+    {
+     "label": "Hot · moving or owed this week",
+     "items": [
+      {
+       "t": "**90** The tracking system — state over time as its own full system; the distill landed 9/29 in `_tools/bolostatus/work/90/`.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/29"
+      },
+      {
+       "t": "**89** The trope system — one trope layer across every system; all four recs ruled 9/29 (\"I'll recommend\"), register built.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/29"
+      },
+      {
+       "t": "**91** The Apple Notes intake — 2025 parsed 9/29; calls out to Chief (Ariel vs Tori, since ruled: Ariel is Tori); more years to come.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "9/29"
+      },
+      {
+       "t": "**83** The Amazon applications — six of eight submitted 9/24; Food Safety due 9/25 · HR Partner · JWO · DSP ×2 · Mechatronic out; Part 107 study queued.",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "9/24"
+      },
+      {
+       "t": "**24** [[bolo24|zero-budget ORANGE launch]] — launch month RULED February 2027; Gate 3 six evenings open (sculpt · skin · hair · pose · dressing · render).",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**27** [[ultra-dark|ULTRA DARK + video engine]] — curation account staged; first posts queued on Chief's edit pass; commissioned edits = first-dollar line.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/16"
+      },
+      {
+       "t": "**28** StashDB configured; grading pass `stashgrade.py` BUILT 9/24; 15,264 scenes, 13,264 unrated; v0 pipeline DONE.",
+       "trunk": "ORANGE/BLACK",
+       "s": "hot",
+       "when": "9/4"
+      },
+      {
+       "t": "**30** [[trash-land|Trash Land DMZ biome]] — seed node written; three S12 invariants RULED KEEP 9/15; name + placement open.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/15"
+      },
+      {
+       "t": "**44** [[bolo44|tag rail + Tier 1 & 2 tagging]] — DARKROOM 1.1 running; 16,511 human rulings banked; calibration advance ongoing.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/16"
+      },
+      {
+       "t": "**45** [[bolo45|creator sweep + manager path]] — wave one ✅ (15 cases); wave two (21-name core) queued on token budget.",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/11"
+      },
+      {
+       "t": "**46** [[bolo46|OXO series Telling Profile + Anna node]] — PRIORITY ONE; Telling Profile ruled, Anna's node BUILT + 12 calls GOVERNED; next: 14 Movement-1 questions.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/23"
+      },
+      {
+       "t": "**56** JUDY — voice loop stable; console all eight panels live (:8787); three attitudes BUILT (lock in · put the fries · goon time).",
+       "trunk": "OPERATOR",
+       "s": "hot",
+       "when": "9/17"
+      },
+      {
+       "t": "**64** The Claude Code doctrine — four steps RULED RECON · ORDER · EXECUTE · CONSOLIDATE; five fixes executed 9/23.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/17"
+      },
+      {
+       "t": "**72** The Bold Venture patch — composition v0.3 delivered (Marionette · the Ride · Hand-and-strings six); pose52.py staged.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/18"
+      },
+      {
+       "t": "**79** The story workspace — UI/UX RULED 9/24 'all recs' (the timeline is the map, CK3-style nested windows); mockup v7 published.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/24"
+      },
+      {
+       "t": "**87** The setting shelf — 1,537 held items judged, 29 to get (5 free); book hunt 28 of 74 readable for $0 (3 held · 11 Everand · 11 borrow · 3 online); 12 distills landed 9/29.",
+       "trunk": "BLACK",
+       "s": "hot",
+       "when": "9/29"
+      },
+      {
+       "t": "**88** The sexuality shelf — 340 held items, 24 distills (MSX/PSY), 442 on wish list; wave 1 (9 distills) + wave 2 (12 distills) DONE 9/29; 56 to get (14 borrow free verified).",
+       "trunk": "ORANGE",
+       "s": "hot",
+       "when": "9/29"
+      }
+     ]
+    },
+    {
+     "label": "Held on a ruling",
+     "items": [
+      {
+       "t": "**84** FAA Part 107 — test day ~$175 at PSI center; HELD 9/28 on funds; study free meanwhile.",
+       "trunk": "OPERATOR",
+       "s": "held",
+       "when": "9/28"
+      },
+      {
+       "t": "**63** JUDY's ears — Whisper inventing words over tail. HELD by Chief's word; fires on 'go 63'.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "held",
+       "when": "9/17"
+      },
+      {
+       "t": "**15** multimedia ingestion (seed) · **29** Fortnite SFW TikTok (RULED: SFW side lane on leftover evenings 9/23) · **34** long-watch palette (RULED) · **35** story timeline (HELD) · **36** music syllabus (waits on 35) · **37** [[bolo37|proword loop]] (BREVITY panel BUILT + RULING, stands in SOI 9/23).",
+       "trunk": "BLACK/ORANGE",
+       "s": "held"
+      },
+      {
+       "t": "**57** Voice work as income — ElevenLabs venture; ranked second in four-way on on-target read, behind 24. Fires on 'go 57 build'.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "9/16"
+      },
+      {
+       "t": "**78** The victory lap — July 2028, Berlin only, $20k budget, Step 1–3 RULED 9/24; Berlin content shoot booked (faceless); fires on step 4.",
+       "trunk": "ORANGE",
+       "s": "held",
+       "when": "9/24"
+      },
+      {
+       "t": "**80** theme system (L6, the argument's value layer) — BORESIGHT 9/24: five calls out; gates BOLO 77; one merged reading list 106 texts.",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "9/24"
+      },
+      {
+       "t": "**81** Touchstones (narrative invariants + pushbacks) — RULED 9/24: name = TOUCHSTONE, built last, read first; gates BOLO 77.",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "9/24"
+      },
+      {
+       "t": "**82** story registry — CAPTURED 9/24: rec = one registry file, one row per story (name · aliases · universe · medium · status · nodes · storyform).",
+       "trunk": "BLACK",
+       "s": "held",
+       "when": "9/24"
+      }
+     ]
+    },
+    {
+     "label": "Fires on your go",
+     "items": [
+      {
+       "t": "**85** Learn Unreal through UEFN — Fortnite's free editor as the way into Unreal 5; course picked 9/24, four stages; self-guided.",
+       "trunk": "ORANGE",
+       "s": "open",
+       "when": "9/24"
+      },
+      {
+       "t": "**4** focus doctrine · **10** Bongobabe v0 · **11** GBD plan (target: July 2028 peak physique) · **12** shoot set · **20** Forza wheelspin · **26** dictation dictionary · **40** cuisine syllabus.",
+       "trunk": "BLACK/ORANGE",
+       "s": "gated"
+      },
+      {
+       "t": "**47** dashboard consult · **48** name bench · **49** Massive presets ([[bolo49|shortlist delivered]]) · **52** gearbox (gear 1 in force).",
+       "trunk": "BLACK/OPERATOR",
+       "s": "gated"
+      },
+      {
+       "t": "**65** The lineage question · **66** GitHub field survey · **67** The plain register · **68** The workflows.",
+       "trunk": "BLACK/OPERATOR",
+       "s": "gated",
+       "when": "9/17"
+      },
+      {
+       "t": "**69** The yo-yo — quick idea inbox on MPK pad. Phase 1 explore BUILT 9/18; DOPE SHEET 69 carries blank calls. Fires on 'go 69'.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "gated",
+       "when": "9/18"
+      },
+      {
+       "t": "**70** The affiliate register — how listicle sites explain hard things in plain words. Fires on 'go 70'.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "9/17"
+      },
+      {
+       "t": "**71** The look — off the slop. Recommendation delivered 9/18 (pick a lineage: printed form · terminal · broadsheet). Fires on 'go 71'.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "9/18"
+      },
+      {
+       "t": "**73** The driver resets — Warframe and Phasmophobia GPU kicks on XELLA-PC (not Chief's machine). Fires on 'go 73'.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "9/19"
+      },
+      {
+       "t": "**76** Sensei's set list — 49-clip gay hour queued 9/20; set filter working (no `straight` tag, no female performers). Fires on 'go 76'.",
+       "trunk": "ORANGE",
+       "s": "gated",
+       "when": "9/20"
+      },
+      {
+       "t": "**86** The loop closes itself — Oscar Mike stages the next launch; four recs out for 'go 86'.",
+       "trunk": "BLACK",
+       "s": "gated",
+       "when": "9/24"
+      }
+     ]
+    },
+    {
+     "label": "Open, slow",
+     "items": [
+      {
+       "t": "**3** BBRT profile · **5** Chief↔Claude interface · **6** transmission pedagogy · **8** GitHub purge · **9** Google outdated-content · **14** taxonomy Stage 2/3 · **16** music-video grammar · **18** spine Stage 2 · **41** locus system.",
+       "trunk": "BLACK/ORANGE",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Done, not yet moved to Done",
+     "items": [
+      {
+       "t": "**74** The goon agent — Sensei — BUILT end to end 9/20. Local Magnum-Diamond 24B, ElevenLabs Serafina v3, full personality, images, Stash hands. Running live, stable.",
+       "trunk": "ORANGE",
+       "s": "done",
+       "when": "9/20"
+      },
+      {
+       "t": "**75** The Stash deck — video library front door, live on :9999 with live counts + search + random buttons. Station wired into launch.",
+       "trunk": "ORANGE/OPERATOR",
+       "s": "done",
+       "when": "9/20"
+      },
+      {
+       "t": "**77** The plot system, expanded on rails — fabula · trope graph · syuzhet; ⛔ GATED 9/24 on BOLO 80 + 81; all six docs stand · all ten calls ruled 9/24.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "9/24"
+      },
+      {
+       "t": "**62** The knobs — MPK rotary dials, BUILT 9/17: CC 1 2 3 scroll Y/X/zoom. Open: Chief proves directions.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**61** The quote library — [QUOTES.md](QUOTES.md), BUILT 9/17: one quote per row with source.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**60** The PCP visit — care + physical + sexual-health chain established. Chief booked 9/17.",
+       "trunk": "OPERATOR",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**59** The Fresh Ten autosave fold — sit rep prep folds autosave commits into one footprint. BUILT 9/17.",
+       "trunk": "BLACK",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**58** The launch sequence — 'go for launch' stands Command up. BUILT 9/17.",
+       "trunk": "OPERATOR",
+       "s": "done",
+       "when": "9/17"
+      },
+      {
+       "t": "**1** · **2** · **7** · **13** · **17** · **19** · **21** · **22** · **23** (nine early) · **25** [[bolo25|PM flow/MCDP ✅]] · **31** [[bolo31|vocabulary page]] · **32** [[bolo32|learnable premise]] · **33** [[bolo33|L2b morphology ✅ 9/16]] · **38** [[bolo38|sit rep front page ✅ 9/10]] · **39** [[bolo39|oral canon]] · **42** [[bolo42|performer register ✅ 9/8]] · **43** [[bolo43|L2b signatures ✅ 9/10]] · **50** [[bolo50|standards campaign ✅ 9/15]] · **51** [[bolo51|logistics front ✅ 9/12]] · **53** [[bolo53|development standard ✅ 9/15]] · **54** [[bolo54|sit rep formation ✅ 9/16]] · **55** [[bolo55|DOPE SHEET format ✅ 9/16]] — twenty-four complete.",
+       "trunk": "OPERATOR/BLACK",
+       "s": "done"
+      }
+     ]
+    }
+   ],
+   "pmcs": [
+    {
+     "item": "PCP — establish care + physical",
+     "s": "gated",
+     "status": "booked 9/17 · BOLO 60 · prep boresight delivered",
+     "next": "Attend visit (history + bring list); sexual-health chain follows: PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral"
+    },
+    {
+     "item": "Pelvic-floor PT",
+     "s": "gated",
+     "status": "gated on PCP referral",
+     "next": "Referral from the PCP consult"
+    },
+    {
+     "item": "Employment",
+     "s": "hot",
+     "status": "unemployed since 9/3 · BOLO 83 six applications submitted 9/24, two held; Part 107 study queued · Food Safety due 9/25 · funds hold BOLO 84",
+     "next": "Food Safety interview 9/25 · wait for callbacks; Part 107 test on funds; [[bolo24|BOLO 24]] is the standing income answer"
+    }
+   ]
+  },
+  {
+   "id": "V",
+   "name": "Blocked on you",
+   "kind": "numbered",
+   "plain": "The Blocked table is still empty — nothing landed on it today either. This pass ran the fifteenth launch (board v41), opened BOLO 90 (the tracking system) and BOLO 89 (the trope register), advanced the story registry, bumped the character system, and closed BOLO 84 with Prime Air dropped — all of it outside this table. The one loose thread still survives from 9/12: the standing `force` order for cross-session republishes, raised inside BOLO 51's own confirmation and still unruled.",
+   "strand": {
+    "last": "Nothing new reached the Blocked table today. The table's last three rows closed 9/23: #12 (BOLO 35) RULED, #14 (BOLO 41) RATIFIED, #19 (BOLO 51) CONFIRMED — that record stands unchanged.",
+    "plan": "Table order was unblock order. With the table empty, the next decision that lands here starts a fresh one.",
+    "you": "No rulings were asked of you on this block today — today's third session (the fifteenth launch, the tracking system, the trope register, the story registry, the character-system bump, and BOLO 84 closed) ran on status updates and builds taken inline, not a numbered Blocked row, same as the two sessions before it today.",
+    "next": "Nothing formally blocked. The one open thread is BOLO 51's standing force-order question (cross-session republishes of sheets built from repo JSON) — not a numbered row, but still unruled since 9/12 night. Six pending calls from today's session (Anna Colson's origin, three registry rows, \"cultcore,\" Tremor Cult's three calls, the phone-notes finds, the \"bounded container\" Touchstone) plus tracking step 6/7 sit ahead of it; DOPE SHEET 77 (v0.11, built locally) still wants a republish; BOLO 81's Touchstone register still waits on Chief's read; Part 107 is closed per today's session, with the two held Prime Air postings dropped alongside it; the character dashboard's unapplied/unruled Telling Profile calls and BOLO 57's first recorded clone sample are still waiting behind all of it, once they're tabled here."
+   },
+   "items": []
+  },
+  {
+   "id": "VI",
+   "name": "The leverage line",
+   "kind": "line",
+   "plain": "The last session stood up the tracking system (BOLO 90) and the trope register (BOLO 89), shipped character v2.2 and setting v1.5.0, and parsed the 2025 Apple Notes (BOLO 91). The public repo now holds 41 local commits that have not gone up; the push is one command. The Find list for the book hunt waits on Chief pulling PDFs into Zotero.",
+   "strand": {
+    "last": "Session 2026-09-29-3 built the tracking and trope systems, character v2.2, setting v1.5.0, and ruled Ariel is Tori.",
+    "plan": "Stand the Command up on one word and bring the board.",
+    "you": "You said 'run launch sequence'. All seven stations came up GO.",
+    "next": "Push the 41 commits. Grab the Find list into Zotero, then say 'rescan Zotero'."
+   },
+   "line": "Push the 41 staged commits: one command, free, and the main effort since two boards ago.",
+   "why": "Origin is verified clean, so the push carries no risk and clears the longest-standing main effort. After that, the book hunt Find list is the only thing gating more distills, and it needs your hands in Zotero. Employment stays the only red PMCS row."
+  },
+  {
+   "id": "VII",
+   "name": "The SOI card",
+   "kind": "card",
+   "plain": "The words that run this operation. Say one and the protocol fires. Every term on this page is a live link; hover it, hold, and the definition opens. The full book is the SOI: the BREVITY.",
+   "strand": {
+    "last": "Ruled 9/11: DOPE SHEET (the status page) · SOI is the book · \"the house tongue\" and \"glossary\" retired · dark is the only theme.",
+    "plan": "The SOI page replaces the in-page glossary once it publishes (Charlie Mike pages, step 4). BOLO 37 moves rulings into a daily loop.",
+    "you": "You clarified FRAGO on your own read of doctrine: the update, never the page.",
+    "next": "Confirm OPORD as the page's word. Name the loop; MINT is the recommendation."
+   },
+   "soi": [
+    {
+     "k": "sitrep",
+     "w": "sit rep",
+     "g": "The full board, cold start. Spoken, it flushes the [[ready-rack|Ready Rack]] and delivers blocks 0 to VII in fixed order. From 9/10 it also "
+    },
+    {
+     "k": "oscar-mike",
+     "w": "Oscar Mike",
+     "g": "The close-out, all in one — RULED 9/11 (\"when I say we're Oscar Mike, I wanna close out the session… just one thing\"). Spoken, it ends the s"
+    },
+    {
+     "k": "how-copy",
+     "w": "how copy?",
+     "g": "End of orders. The reply opens Good copy plus a readback, then executes. Solid copy means nothing to add. Bad copy on an item means one ques"
+    },
+    {
+     "k": "boresight",
+     "w": "boresight",
+     "g": "The understanding check before delivery: readback, the read, clarifying questions only. Nothing builds until you clear it. Boresight in on X"
+    },
+    {
+     "k": "bolo",
+     "w": "BOLO",
+     "g": "\"BOLO that\" / \"put that down\": a tasking captured in BOLO.md the turn it is spoken. Be On the Lookout, named for the bolas: thrown on sighti"
+    },
+    {
+     "k": "ivory-tower",
+     "w": "ivory tower",
+     "g": "Academic mode: published literature only, every claim cited inline, established versus contested marked."
+    },
+    {
+     "k": "break-break",
+     "w": "break-break",
+     "g": "Open a detour; the main thread parks where it stands. [[buttonhook|Buttonhook back]] closes it."
+    },
+    {
+     "k": "buttonhook",
+     "w": "buttonhook back",
+     "g": "Close the detour and return to the parked thread unprompted, restating where we were."
+    },
+    {
+     "k": "run-the-darkroom",
+     "w": "run the darkroom",
+     "g": "Launch [[darkroom|DARKROOM]] in the background, no questions. The garbles black room and dark room read the same."
+    },
+    {
+     "k": "main-effort",
+     "w": "PRIORITY",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the command proword for the one thing everything else supports; Block VI's title rides on it. "
+    },
+    {
+     "k": "challenge",
+     "w": "the challenge phrase",
+     "g": "The formal challenge, spoken as written in STATE.md's header. The countersign follows, first line, exact, then the board. The ritual is neve"
+    },
+    {
+     "k": "out-block",
+     "w": "the OUT block",
+     "g": "Every reply that executes an [[oscar-mike|Oscar Mike]] or an [[endex|ENDEX]] closes with the fenced end-of-transmission block and nothing af"
+    },
+    {
+     "k": "status-on-bolo",
+     "w": "status on BOLO N",
+     "g": "The plain-speech form of [[opord|OPORD N]]: \"give me the status on BOLO 45\" shows that BOLO's page. Dictation garble \"Frango\" reads as FRAGO"
+    },
+    {
+     "k": "recon",
+     "w": "INTEL",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the boresight aimed outside the wire (web and literature). Your ranking: INTEL · RECON · SCOUT"
+    },
+    {
+     "k": "napkin",
+     "w": "ROUGH",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the modifier for a one-pass read: rough numbers, no question loop (\"rough boresight\"). Your ra"
+    },
+    {
+     "k": "syllabus",
+     "w": "PRIMER",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step one: pull the tier-one 101 text of a field, one per field. Your ranking: PRIME"
+    },
+    {
+     "k": "distill",
+     "w": "DIGEST",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step three: the book through the Zotero pipeline, out as a one-sheet. Your ranking:"
+    },
+    {
+     "k": "grammar",
+     "w": "DOCTRINE",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step four: derive how a system's language operates. Your ranking: DOCTRINE · SYNTAX"
+    },
+    {
+     "k": "rtb",
+     "w": "RTB",
+     "g": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, th"
+    },
+    {
+     "k": "charlie-mike",
+     "w": "Charlie Mike",
+     "g": "Continue mission. Resume a parked card: open it, one line on where it stood, pick up at its resume order, no re-derivation. Ruled 9/10. The "
+    },
+    {
+     "k": "frago",
+     "w": "FRAGO",
+     "g": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Chief's clarification 9/10 late (\"FRAGO is just th"
+    },
+    {
+     "k": "dope-sheet",
+     "w": "DOPE SHEET",
+     "g": "The standing status page for one BOLO — the [[smeac|five-paragraph order]] with the next action on top, plus the log; changed by [[frago|FRA"
+    },
+    {
+     "k": "actual",
+     "w": "ACTUAL",
+     "g": "The suffix for the commander in person on the net (\"Six Actual\"). RULED 9/11 as the formal form of the operator's callsign: [[hotline|HOTLIN"
+    },
+    {
+     "k": "abort",
+     "w": "ABORT",
+     "g": "The cancel word, RULED 9/11: \"abort abort abort\" spoken three times, then the correction. Cancels the immediately preceding order; the recor"
+    },
+    {
+     "k": "hotline",
+     "w": "HOTLINE",
+     "g": "The operator's callsign, RULED 9/11. Casual: \"Hotline\", \"word from Hotline\". On the net and on every page: **HOTLINE ACTUAL**. The point: th"
+    },
+    {
+     "k": "gear",
+     "w": "THROTTLE",
+     "g": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the agent ceiling: throttle 1 = 3 agents (the default), 2 = 6, 3 = 9, 4 = 12, 5 = 15 never. Yo"
+    },
+    {
+     "k": "go",
+     "w": "go N",
+     "g": "The phase go-word on a [[dope-sheet|DOPE SHEET]]: \"go 6\" fires phase 6 of the sheet's execution paragraph, nothing more. Coded 9/15 (dictati"
+    },
+    {
+     "k": "go-for-launch",
+     "w": "go for launch",
+     "g": "The word that fires [[launch-sequence|the launch sequence]], RULED 9/17 over a bench of ten (five Marine, five NASA). Lineage: the flight di"
+    },
+    {
+     "k": "good-traffic",
+     "w": "good traffic, stand by",
+     "g": "One of [[judy|JUDY]]'s two acknowledgments, RULED 9/17: your transmission came through clean, wait for the reply. The other is \"Copy.\" She s"
+    },
+    {
+     "k": "lock-in",
+     "w": "JUDY, lock in",
+     "g": "Switches [[judy|JUDY]] to the military-comms attitude, RULED 9/17: radiotelephone register, prowords, no jokes, brat 0, nine sentences at mo"
+    },
+    {
+     "k": "fries-in-the-bag",
+     "w": "JUDY, put the fries in the bag",
+     "g": "Switches [[judy|JUDY]] to the comfortable-day attitude, RULED 9/17: warm, dry, a light flirt, the information first; brat 45. The standing d"
+    },
+    {
+     "k": "goon-time",
+     "w": "JUDY, it's goon time",
+     "g": "Switches [[judy|JUDY]] to the full-brat attitude, RULED 9/17: teasing, knowing, innuendo allowed, facts intact; brat 100, sixteen sentences."
+    }
+   ],
+   "nouns": [
+    "bolo",
+    "pmcs",
+    "fresh-ten",
+    "ancients",
+    "deep-stacks",
+    "ready-rack",
+    "magazine",
+    "sop",
+    "ttp"
+   ]
+  }
+ ]
+}
