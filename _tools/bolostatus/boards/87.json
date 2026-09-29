@@ -6,7 +6,7 @@
   "issued": "2026-09-29",
   "asof": "2026-09-29",
   "s": "open",
-  "status": "🟢 **HUNT CLOSED, SHELF DISTILLED 9/29** — Chief: \"I'm done getting other books … pull from the Zotero tab, everything you got.\" Every held tier-1 book is now distilled: +42 setting (TTRPG core books, campaign settings, worldbuilding craft, Campbell's myth books) and +4 sexuality (Foucault, Jung, Mendoza, Sexpigs), 46/46 pass RANGE · Drive sweep: 171 new files into `Q:/_PDF_DROP/_NEW/_gdrive/` · next: fold the distills into TM 03 (the setting system).",
+  "status": "🟢 **FOLDED INTO TM 03 9/29** — 46 tier-1 distills done (46/46 RANGE) · synthesis `03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md` v0.2.0 · setting system v1.3.0: faction/nation card · present-tense-bite test (S7) · border/seam field (S1) · S5↔S9 link · narrated-only canon (S12) · three-tier underside (S10) · Ryan's nine axes (L7) · forward ledger (S11) · tier 2 held · next: the DCUS setting work.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "TM 03 (setting)",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 87",
   "card": "none",
-  "version": "v0.2 · DOPE SHEET"
+  "version": "v0.3 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -182,9 +182,15 @@
     },
     {
      "n": 7,
+     "s": "done",
+     "when": "9/29",
+     "t": "**TM 03 synthesis + changes applied** — synthesis v0.2.0 (all 42 ids cited, script-checked); setting system v1.2.0 → v1.3.0, additive edits only (77+/33−, every replaced line preserved)."
+    },
+    {
+     "n": 8,
      "s": "open",
      "when": "next",
-     "t": "**TM 03 synthesis** — file every new feed into the setting system's S-layers and apply it to DCUS."
+     "t": "**DCUS instance** — S2 WEATHER · faction cards (Administration · Bishops · Sync Cult) · the rename lattice as one image in the place · the forward ledger over the six movements."
     }
    ],
    "coord": [],
@@ -217,6 +223,16 @@
      "path": "Q:/_PDF_DROP/_NEW",
      "what": "target folder for the free-route grabs Chief pulls next",
      "s": "open"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md",
+     "what": "the fold of the 42 setting distills: per-layer register, cross-book methods, ten proposed changes (ruled), DCUS application",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+     "what": "v1.3.0 — the ruled changes applied",
+     "s": "done"
     }
    ],
    "cost": [
@@ -312,14 +328,24 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Swept both Drive copies of the Zotero folder, closed the hunt, and distilled all 46 held tier-1 books; 46/46 pass RANGE."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Go on all those recs.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Synthesis written; changes 1–4 and 6–9 applied to the setting system v1.3.0; tier 2 held."
     }
    ]
   }
  ],
  "frago": {
   "mission": "Distill the setting shelf into one list of what we hold and what to get, TTRPG first, in order to give TM 03 (the setting system) a real library to build from, the same way BOLO 77's plot sweep fed the plot system.",
-  "order": "**Fold the 46 new distills into TM 03 (the setting system): one synthesis pass that files each book's feeds into the S1–S12 layers, fills the thin layers (S2 WEATHER, S3 SENSORIUM), and applies the method to DCUS.**",
-  "default": "Silence: the distills sit in KNOWLEDGE_AREAS, keyed and passing, and nothing downstream reads them yet.",
+  "order": "**Apply the new tools to DCUS: write S2 WEATHER, and build faction cards for the Administration, the Bishops and the Sync Cult.**",
+  "default": "Silence: the tools sit in TM 03 v1.3.0 and DCUS stays at its starter slice.",
   "calls": [
    {
     "q": "The grab order: what goes first?",
@@ -346,7 +372,13 @@
     "q": "Tier 2: distill the rest of the held shelf?",
     "options": "HOLD until TM 03 has absorbed tier 1 (rec) · run a first batch of 20 · skip tier 2",
     "default": "HOLD (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): HOLD until TM 03 has absorbed tier 1."
+   },
+   {
+    "q": "TM 03 synthesis: the ten proposed changes",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): 1–4 and 6–9 applied in setting system v1.3.0 · 5 (tone-to-mechanic) benched · 10 reaffirmed (thin by default). Judgment call flagged inline: the border/seam field lives on S1, with S4's permeability reading noted."
    }
   ]
  }
