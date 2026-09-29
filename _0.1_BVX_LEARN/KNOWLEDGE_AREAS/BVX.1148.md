@@ -143,7 +143,7 @@ Five parts, one continuous argument, read here in the order the brief set (Five,
 | Four · The Deployment of Sexuality | Rejects the "juridico-discursive" model of power (law, prohibition, the sovereign); gives an analytics of power instead (four methodological rules); names four strategic unities and the alliance/sexuality distinction; periodizes the technology of sex | Full |
 | Five · Right of Death and Power over Life | The sovereign's right to kill becomes biopower: discipline of bodies + regulation of populations; the norm displaces the law; sex is the hinge between the two poles | Full |
 
-The book's shape is bookended by method: Part Four opens with four propositions for analyzing power (immanence, continual variation, double conditioning, tactical polyvalence of discourse) and Part Five is the payoff — the concrete history that those propositions make visible once you stop assuming power only says no.
+The book's shape is bookended by method: Part Four opens with four rules for analyzing power (immanence, continual variation, double conditioning, tactical polyvalence of discourse), and Part Five is the payoff, the concrete history those rules make visible once power is no longer assumed to only say no.
 
 ---
 
@@ -156,12 +156,12 @@ The book's shape is bookended by method: Part Four opens with four propositions 
 | **Perverse implantation** | Four operations by which nineteenth-century power did not exclude "deviant" sexualities but produced, named, and fixed them as species (the homosexual, the onanist, the hysteric) | Power classifies and multiplies rather than simply forbidding; a villain who "bans" the different is doing the easy, less accurate version of this |
 | **Juridico-discursive power** | The model Foucault rejects: power as a king who forbids, a law that says no, a taboo with one direction | The model most stories default to by instinct (a tyrant issuing edicts); Foucault's whole method is built to replace it |
 | **Analytics of power** | Foucault's alternative: power as a name for a complex strategic situation, exercised from innumerable points, intentional but not centrally authored, always meeting resistance from inside itself | Explains why no single villain "runs" biopower — it is a field of relations, which is a harder, better story problem than a single controller |
-| **Deployment of alliance vs. deployment of sexuality** | Alliance = kinship, marriage, transmission of names and property, governed by law. Sexuality = a newer apparatus keyed to bodily sensation and pleasure, governed by norm and technique, that grew up alongside and inside the family | Two different power-systems can occupy the same institution (the family) at once, pulling in different directions — a rich source of internal story conflict |
-| **The four strategic unities** | Hysterization of women's bodies, pedagogization of children's sex, socialization of procreative behavior, psychiatrization of perverse pleasure | Four concrete, filmable mechanisms of biopower in action, each centered on a "privileged figure" (the nervous woman, the masturbating child, the Malthusian couple, the pervert) |
-| **Bio-power (the two poles)** | Anatomo-politics of the body (discipline: drill, schedule, examination) plus biopolitics of the population (regulation: birthrate, health, statistics) | The two machines a biopower setting needs both of — one working on individuals, one working on the aggregate — to feel structurally real rather than merely oppressive |
-| **The norm replaces the law** | Where sovereign law worked by the sword and the binary licit/illicit, biopower works by measuring, appraising, and distributing bodies around a statistical norm | The single most useful mechanism for a setting: normal/abnormal, not legal/illegal, is biopower's real border, and it has no fixed line — it moves with the data |
-| **State racism** | The point where the older thematics of blood is called back in to justify biopower: "protecting the race," a caesura drawn within the population itself, between those who must live and those who may be let die | The load-bearing mechanism for any story that wants biopower to turn openly lethal without reverting to a sovereign-style tyrant; it is biopower's own logic taken to its worst conclusion, not a betrayal of it |
-| **Sex as pivot** | Sex sits at the exact junction of the two poles — disciplined at the level of the individual body, regulated at the level of the population — which is why it became the West's obsessive object of knowledge | Explains why a biopower story keeps returning to bodies, reproduction, and intimacy even when its real subject is institutional power |
+| **Deployment of alliance vs. deployment of sexuality** | Alliance: kinship, marriage, transmission of names and property, governed by law. Sexuality: a newer apparatus keyed to bodily sensation and pleasure, governed by norm and technique, grown up inside the family | Two power-systems can occupy one institution at once, pulling different ways: a source of internal story conflict |
+| **The four strategic unities** | Hysterization of women's bodies, pedagogization of children's sex, socialization of procreative behavior, psychiatrization of perverse pleasure | Four filmable mechanisms of biopower, each centered on a "privileged figure": the nervous woman, the masturbating child, the Malthusian couple, the pervert |
+| **Bio-power (two poles)** | Anatomo-politics of the body (discipline: drill, schedule, examination) plus biopolitics of the population (regulation: birthrate, health, statistics) | Both machines are needed for a setting to feel structurally biopower-driven, not merely oppressive |
+| **The norm replaces the law** | Sovereign law worked by the sword and licit/illicit; biopower works by measuring and distributing bodies around a statistical norm | Normal/abnormal, not legal/illegal, is biopower's real border, and that border moves with the data |
+| **State racism** | The older thematics of blood recalled to justify biopower: "protecting the race," a line drawn inside the population between who must live and who may be let die | The load-bearing mechanism for biopower turning lethal without a sovereign-style tyrant; its own logic taken to the worst conclusion |
+| **Sex as pivot** | Sex sits at the junction of the two poles, disciplined at the body's level, regulated at the population's | Explains why a biopower story keeps returning to bodies and reproduction even when its real subject is institutional power |
 
 ---
 
@@ -171,12 +171,12 @@ The book's shape is bookended by method: Part Four opens with four propositions 
 |---|---|---|
 | Writing the antagonist power | Make it a system of normalizing, data-driven relations with no single author who could be dethroned | Write a tyrant-king whose death would end the oppression |
 | Showing power controlling a character | Show it compelling them to speak, confess, be measured, be classified | Show it only gagging them or banning their desire outright |
-| Building the "liberation" beat | Make the character's proclaimed freedom double back into the same system (new confession, new norm, new expert) | Let "we broke free of the repression" be the actual resolution — that is the repressive hypothesis restated as a happy ending |
+| Building the "liberation" beat | Make the character's proclaimed freedom double back into the same system (new confession, new norm, new expert) | Let "we broke free of the repression" be the actual resolution: the repressive hypothesis restated as a happy ending |
 | Designing an institution (school, clinic, ministry) | Give it both a discipline function (bodies, schedules, exams) and a regulation function (population statistics, targets, rates) | Give it only rules and punishments; that is sovereignty's model, not biopower's |
-| Writing a "deviant" character the system targets | Show the system naming, studying, and producing them as a type — a file, a diagnosis, a case history | Show the system simply hiding or forbidding them and stopping there |
-| Escalating the antagonist power to its worst point | Reach for a racism/eugenics logic: a line drawn inside the population between who must live and who may be let die | Reach for an old-style massacre-by-decree; that is sovereign violence, a different (and less biopower-specific) argument |
-| Testing whether a scene argues the Issue (biopower) | Ask whether the scene shows power producing, inciting, measuring, or normalizing something | Ask only whether a character is punished or forbidden something — that tests the Counterpoint (the repressive-hypothesis model) instead |
-| Writing resistance | Root it inside the same network of relations it opposes — a point of friction, not an outside sanctuary | Give the resistance a pure "outside" (an untouched wilderness, an uncorrupted rebel base) where power's logic simply does not reach |
+| Writing a "deviant" character the system targets | Show the system naming, studying, and producing them as a type: a file, a diagnosis, a case history | Show the system simply hiding or forbidding them and stopping there |
+| Escalating the antagonist power to its worst point | Reach for a racism/eugenics logic: a line drawn inside the population between who must live and who may be let die | Reach for an old-style massacre-by-decree, a sovereign, less biopower-specific argument |
+| Testing whether a scene argues the Issue (biopower) | Ask whether the scene shows power producing, inciting, measuring, or normalizing something | Ask only whether a character is punished or forbidden something; that tests the Counterpoint instead |
+| Writing resistance | Root it inside the same network of relations it opposes: a point of friction, not an outside sanctuary | Give the resistance a pure "outside" (untouched wilderness, uncorrupted rebel base) where power's logic does not reach |
 
 ---
 
@@ -184,7 +184,7 @@ The book's shape is bookended by method: Part Four opens with four propositions 
 
 1. **Power that only prohibits is the weaker, less accurate story.** The stronger, more Foucauldian move is power that produces, incites, and classifies.
 2. **There is no single seat of power.** It is a field of relations; the strategic-looking unity of "the system" is an effect assembled from many local, tactical points, not a command center.
-3. **The norm has no fixed line.** Because normalization runs on measurement and comparison rather than a fixed code, the border of the acceptable can always move — which is what makes it harder to fight than a law.
+3. **The norm has no fixed line.** Normalization runs on measurement and comparison, not a fixed code, so the border of the acceptable can always move; that is what makes it harder to fight than a law.
 4. **Sex, the body, and reproduction are never incidental in a biopower story.** They are the literal pivot where the discipline of the individual and the regulation of the population meet.
 5. **Resistance is inscribed inside the power it resists, never fully outside it.** A rebellion that believes itself to be outside the system is dramatizing the repressive hypothesis, not escaping it.
 6. **Knowledge and power are not opposites.** Every technique for knowing a population (census, diagnosis, confession, data) is simultaneously a technique for governing it.
@@ -194,24 +194,24 @@ The book's shape is bookended by method: Part Four opens with four propositions 
 
 ## 7 · PITFALLS / MYTHS
 
-- Writing "the age of repression, then liberation" as literal history rather than as the trap the story exists to expose — Foucault's whole point is that this narrative is itself a product of the power it claims to oppose.
+- Writing "the age of repression, then liberation" as literal history rather than the trap the story exists to expose: the narrative is itself a product of the power it claims to oppose.
 - Assuming power and knowledge are enemies: a school, clinic, or ministry that "just wants to help" via data collection is already exercising power, not standing apart from it.
-- Collapsing biopower into an evil individual's plan; the analytics-of-power model explicitly denies that anyone "presides over its rationality."
-- Confusing tolerance with absence of power: Foucault's account of Victorian-era sodomy shows severe law and widespread practice coexisting — silence is a tactic inside the discourse network, not evidence of its absence.
+- Collapsing biopower into an evil individual's plan; the analytics-of-power model denies that anyone "presides over its rationality."
+- Confusing tolerance with absence of power: severe law and widespread practice can coexist; silence is a tactic inside the discourse network, not evidence of its absence.
 - Treating "the pervert," "the deviant," or any classified figure as pre-existing and merely persecuted, rather than as a category the power/knowledge apparatus manufactured.
-- Writing the family, school, or clinic as a pure instrument of repression, missing that (per the deployment of alliance vs. sexuality) it can carry two different power-systems in tension at once.
-- Mistaking population-level regulation (birthrate policy, health statistics, eugenics logic) for mere background — in a biopower story it is a main engine of plot, not scenery.
+- Writing the family, school, or clinic as a pure instrument of repression, missing that it can carry two power-systems in tension at once.
+- Mistaking population-level regulation (birthrate policy, health statistics, eugenics logic) for background; in a biopower story it is a main engine of plot.
 
 ---
 
 ## 8 · APPLICATION
 
-- **Spine level:** L6 — the controlling idea and its Issue/Counterpoint pair. This text supplies the Issue side directly: power is productive, not merely prohibitive, and the story must demonstrate that through events (a scene showing an institution measure, name, and normalize a body) rather than assert it in dialogue.
-- **12-layer character stack:** L4 WILL (contextual) — Part Four's "resistance is never outside power" rule is a constraint on any character's rebellion arc: the win condition cannot be "escape the system," only "shift where you sit inside it," which is a harder and more Foucauldian victory condition to write.
-- **plot_systems:** primary candidate for BOLO 77's Issue/Counterpoint argumentation — a scene-level test: does this beat show power *producing* (a confession extracted, a body measured, a population counted) or only power *forbidding*? The former argues the biopower Issue; the latter argues the Counterpoint (the repressive hypothesis) and should be reserved for the moments the story wants the audience to catch the trap, not the moments it wants them to believe it.
-- **Setting:** contextual — any biopower institution (a clinic, a school, a census bureau, a fertility ministry) needs both an S4/S8-style discipline layer (bodies, schedules, exams, belonging) and a population-level regulation layer (rates, targets, statistics) to read as biopower rather than as an ordinary tyranny; Part Five's two-pole model is a ready checklist for building one.
+- **Spine level:** L6, the controlling idea and its Issue/Counterpoint pair. This text supplies the Issue directly: power is productive, not merely prohibitive, argued through events (an institution measuring, naming, normalizing a body), not through dialogue.
+- **12-layer character stack:** L4 WILL (contextual). Part Four's "resistance is never outside power" rule constrains any rebellion arc: the win condition cannot be "escape the system," only "shift where you sit inside it," a harder victory condition.
+- **plot_systems:** primary candidate for BOLO 77's Issue/Counterpoint argumentation. Scene-level test: does the beat show power *producing* (a confession extracted, a body measured, a population counted) or only power *forbidding*? The former argues the Issue; the latter argues the Counterpoint and belongs at the moments the story wants the audience to catch the trap, not believe it.
+- **Setting:** contextual. Any biopower institution needs both an S4/S8-style discipline layer (bodies, schedules, exams) and a population-level regulation layer (rates, targets, statistics) to read as biopower rather than ordinary tyranny; Part Five's two-pole model is a ready checklist.
 
-Read against BOLO 80's own theme-system record (`_tools/bolostatus/work/80/DISTILL.md`): the shelf already names McKee's controlling idea, Dramatica's Issue/Counterpoint, and the house's `cost_and_meaning` invariant as theme's working parts, but had no primary text arguing biopower itself as a controlling idea. This entry is that primary text. Its clearest handoff to the open theme/invariants handshake (BOLO 80 call 3) is the norm-replaces-law argument in Part Five: a norm is a Law with no lawgiver, which is exactly the shape `cost_and_meaning` needs if the story's judgment is meant to fall on a system rather than a dethronable villain.
+Read against BOLO 80's theme-system record (`_tools/bolostatus/work/80/DISTILL.md`): the shelf already names the controlling idea, Issue/Counterpoint, and `cost_and_meaning`, but had no primary text arguing biopower itself. This entry is that text. Its clearest handoff to the open theme/invariants handshake (BOLO 80 call 3): a norm is a Law with no lawgiver, the shape `cost_and_meaning` needs when judgment falls on a system rather than a dethronable villain.
 
 ---
 
