@@ -381,19 +381,19 @@ Twenty-seven books read through PS-A and PS-B. Not read for this draft: Wolf's i
 
 Each call has one rec. The Chief rules in one word.
 
-1. **The vocabulary: system / layer / lens / view.** The draft in this document uses all four. Rec: adopt them as the doc's terms, and apply them to 09 as: catalog = system, coherence tests = lens, world view = view. One word: **Adopt**.
+1. **The vocabulary: system / layer / lens / view.** **RULED 9/29 as recommended.** The draft in this document uses all four. Rec: adopt them as the doc's terms, and apply them to 09 as: catalog = system, coherence tests = lens, world view = view. One word: **Adopt**.
 
-2. **The Fabula / Told rename.** The plot workspace calls them "Fabula lens" and "Told lens." They read records 04 owns and store nothing, so by the draft vocabulary they are views. Rec: rename them "Fabula view" and "Told view" in the plot workspace. The rename is a change in 04's files and needs the Chief's word there. One word: **Rename**.
+2. **The Fabula / Told rename.** **RULED 9/29 as recommended.** The plot workspace calls them "Fabula lens" and "Told lens." They read records 04 owns and store nothing, so by the draft vocabulary they are views. Rec: rename them "Fabula view" and "Told view" in the plot workspace. The rename is a change in 04's files and needs the Chief's word there. One word: **Rename**.
 
-3. **The faction card's home: 03 or the catalog.** 03 v1.5.0 holds the card, fed by S4, S6, S7. The group is a catalog thing; the card is a notation. Rec: the card notation stays in 03 as ruled. The catalog group entry (GRP) links to the card and copies nothing. One word: **Link**.
+3. **The faction card's home: 03 or the catalog.** **RULED 9/29 as recommended.** 03 v1.5.0 holds the card, fed by S4, S6, S7. The group is a catalog thing; the card is a notation. Rec: the card notation stays in 03 as ruled. The catalog group entry (GRP) links to the card and copies nothing. One word: **Link**.
 
-4. **The first type list.** Twelve types are supported; building all now breaks the fill rule. Rec: open eight first: GRP, ARC, WDR, CUS, TEC (the Chief's named examples: wardrobe, architecture, behaviors, clans, groups, vehicles) plus INS, BEL, FSU, because the seed entries already sit in those three (the standards bodies, the Tremor Cult, the space cuisine). ECO, LNG, BIO, RUL wait for the first story that visits them. One word: **Eight**. *(CDR amendment 9/29: the draft rec was five, which left every seed but the groups without a type.)*
+4. **The first type list.** **RULED 9/29 as recommended.** Twelve types are supported; building all now breaks the fill rule. Rec: open eight first: GRP, ARC, WDR, CUS, TEC (the Chief's named examples: wardrobe, architecture, behaviors, clans, groups, vehicles) plus INS, BEL, FSU, because the seed entries already sit in those three (the standards bodies, the Tremor Cult, the space cuisine). ECO, LNG, BIO, RUL wait for the first story that visits them. One word: **Eight**. *(CDR amendment 9/29: the draft rec was five, which left every seed but the groups without a type.)*
 
-5. **The catalog file layout.** Rec: one file per entry under `catalog/<type code>/<id>.md`, YAML frontmatter, generated `_INDEX.md`. One word: **Folders**.
+5. **The catalog file layout.** **RULED 9/29 as recommended.** Rec: one file per entry under `catalog/<type code>/<id>.md`, YAML frontmatter, generated `_INDEX.md`. One word: **Folders**.
 
-6. **The compiler's first build.** Rec: a script reads only the catalog files and the 03 place slice headers, writes a static filterable page with the four filters (era, place, group, type), and runs the script-tests CT1, CT3, CT5, CT9 only. Later builds add 02, 04, 08 reads. One word: **Thin**.
+6. **The compiler's first build.** **RULED 9/29 as recommended.** Rec: a script reads only the catalog files and the 03 place slice headers, writes a static filterable page with the four filters (era, place, group, type), and runs the script-tests CT1, CT3, CT5, CT9 only. Later builds add 02, 04, 08 reads. One word: **Thin**.
 
-7. **The ID scheme.** `WB-<TYPE>-<nnnn>` is drafted here; no other system uses this prefix. Rec: keep it. One word: **Keep**.
+7. **The ID scheme.** **RULED 9/29 as recommended.** `WB-<TYPE>-<nnnn>` is drafted here; no other system uses this prefix. Rec: keep it. One word: **Keep**.
 
 8. **Wolf's infrastructures.** CLOSED 9/29 by the CDR from BVX.0562's own distill: Wolf's eight are maps · timelines · genealogies · nature · culture · language · mythology · philosophy, each built atop the last. All eight land in the spine: maps → I1 · timelines and genealogies → I2 · mythology and philosophy → I6 · culture → I7 · language → I8 · nature → I9. The other books add I3 peoples, I4 governance, I5 economy and I10 world rules. No rec owed.
 
