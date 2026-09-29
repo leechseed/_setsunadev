@@ -43,6 +43,12 @@ Chief, 2026-09-29, paraphrased close to his words; his own doubts kept as ⧗:
 - **It is where the Outliers live and where they are from:** the last part, the ghetto, the boondocks.
 - **There are cities inside the belt**: Kowloon Walled City cities (heard as "Kalunwald"), and the belt as a whole is like **The Line** Saudi Arabia is building, a linear city, "except terrible trash."
 
+**Spoken later the same night (2026-09-29):**
+- **It is a shield**: the Delta Coast put it there to protect itself from the outside.
+- **An ironic name "like the Power Line"**: the line protects the *power* of the Delta Coast. Name not yet ruled.
+- **The Delta Coast's strength is isolationism, and building the best.**
+- **Like the Spartans in *300*: almost too good.** So the Coast has to pull people from the belt into itself, because "there has to be randomosity": fresh blood, variation. The belt feeds the school.
+
 **This supersedes one 9/6 line in part:** the 9/6 canon said the DMZ runs between the southern US and the northern US. On 9/29 it walls the Delta Coast against the Kudzu and splits Providence from the Real Cartel. Where the South/North line survives inside this, and how "the Outliers are from the belt" meets Tori's Red Hills legacy, are open ⧗.
 
 Everything below this line is ⧗ development against those six lines.
