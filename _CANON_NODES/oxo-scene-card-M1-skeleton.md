@@ -23,7 +23,7 @@ links:
 
 # SCENE CARD · M1 · "the race the government allows, until it doesn't" · skeleton
 
-**What this card is.** The first of four movement-grain skeleton cards ordered on BOLO 77 call 77-AB (Chief: "1.0") to close the gap left by the two carded movements (M2, M3): a card for every movement that has none, so the plot system's coverage runs the whole six-movement arc. M1 is the story's own origin point — "M1A salvage economy → M1B racing. Jebb dies. 'I will become untouchable.'" ([[victoria-midnight]], Where she appears, M1 row) — and the fabula's own first two dated events, `m1b_crash_jebb_death` and `m1b_untouchable_resolve` ([📐 ssot_04_fabula.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), THE INSTANCE), already sit here unlinked to any scene card. Every field below is sourced to the canon read for this order unless marked ⧗; Chief's Apple Notes idea about the tolerated illegal race is offered once, as an ⧗ candidate, never as fact.
+**What this card is.** The first of four movement-grain skeleton cards ordered on BOLO 77 call 77-AB (Chief: "1.0") to close the gap left by the two carded movements (M2, M3): a card for every movement that has none, so the plot system's coverage runs the whole six-movement arc. M1 is the story's own origin point — "M1A salvage economy → M1B racing. Jebb dies. 'I will become untouchable.'" ([[victoria-midnight]], Where she appears, M1 row) — and the fabula's own first two dated events, `m1b_crash_jebb_death` and `m1b_untouchable_resolve` ([📐 ssot_04_fabula.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), THE INSTANCE), already sit here unlinked to any scene card. Every field below is sourced to the canon read for this order unless marked ⧗. **RULED 2026-09-29 (77-AF, rec taken):** Chief's Apple Notes finish-line-arrest idea is promoted from ⧗ candidate to ruled placement — it sits BEFORE the crash, as the world's own Fairness turn, a separate beat from Tori's crash in the same movement; the proposed event id `m1b_race_arrest` stays ⧗ as a proposed id only, its content still Chief's note, cited. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation now varies by movement — M1 reads as the opening, Snyder's Opening Image/Catalyst register.
 
 ---
 
@@ -38,22 +38,26 @@ value-in:       whole / clean channel, polarity plus — "Venus trine Mars... th
                 the chart... why racing is the one coherent place" (victoria-midnight.md, load-bearing
                 aspects) — read on the theme system's FREEDOM scale as + Freedom, "Your life is yours"
                 ⧗ interpretive application of ssot_07_theme_system.md's scale to a pre-theme-system card ·
-                world-half ⧗ candidate: the tolerated illegal race, pots high enough the government
-                "just allows it" (Chief's Apple Notes 2026, §1 OXO, "Tori and the races") — a Fairness(+)
-                reading, "everyone gets a real shot," offered as ⧗ candidate only                     (P3)
-turn:           the crash — "She overrode the pace notes because she calculated she knew better...
-                The weighing killed her brother" (victoria-midnight.md REORIENT); Moon□Mars, "the crash.
-                Equity instinct freezes kinetic capacity" (victoria-midnight.md, load-bearing aspects);
-                fabula pointer: cause edge m1b_crash_jebb_death -> m1b_untouchable_resolve · ⧗ candidate
-                second, world-half turn: the arrest at the finish line, the government shutting the race
-                down "the second the race organizers reach over... à la the Venezuela Maduro raid"
-                (Chief's Apple Notes 2026, §1 OXO) — proposed event m1b_race_arrest ⧗, sequence against
-                the crash unplaced, see Open question 1                                                (P4)
+                world-half — RULED 2026-09-29 (77-AF, rec taken): the tolerated illegal race, pots high
+                enough the government "just allows it" (Chief's Apple Notes 2026, §1 OXO, "Tori and the
+                races") — a Fairness(+) reading, "everyone gets a real shot," now the ruled setup for the
+                arrest turn at P4                                                                      (P3)
+turn:           two turns, same movement, sequence RULED 2026-09-29 (77-AF, rec taken) — first, the
+                world's own Fairness turn: the finish-line arrest, the government shutting the race down
+                "the second the race organizers reach over... à la the Venezuela Maduro raid" (Chief's
+                Apple Notes 2026, §1 OXO) — proposed event_id m1b_race_arrest ⧗ (id stays a proposed id;
+                its content is Chief's note, cited), placed BEFORE the crash, a separate beat on its own
+                gauge · second, Tori's own crash — "She overrode the pace notes because she calculated
+                she knew better... The weighing killed her brother" (victoria-midnight.md REORIENT);
+                Moon□Mars, "the crash. Equity instinct freezes kinetic capacity" (victoria-midnight.md,
+                load-bearing aspects); fabula pointer: cause edge m1b_crash_jebb_death ->
+                m1b_untouchable_resolve                                                                (P4)
 value-out:      the closed resolve — "I will become untouchable" / "Control is the only form of safety
                 left" (victoria-midnight.md REORIENT) — read on the FREEDOM scale as self-imposed Control
                 (−−, "You're managed, not free") ⧗ interpretive; McKee ironic charge: she reads control
-                as safety, the record reads it as the first cage · ⧗ candidate Fairness value-out if the
-                arrest beat lands here: −−− "A rigged game that calls itself fair"                     (P5)
+                as safety, the record reads it as the first cage · world-half Fairness value-out —
+                RULED 2026-09-29 (77-AF): −−− "A rigged game that calls itself fair," the arrest beat's
+                own close, ahead of and separate from Tori's crash close, above                        (P5)
 signpost seat:  Act 1 (M1+M2), per the trope graph's ruled movements map — MC (Tori) The Past ·
                 OS (the Factions) Conceiving an Idea · IC (Anna) Impulsive Responses · RS (Tori↔Anna)
                 Obtaining (ssot_04_trope_graph.md, THE RAILS, "The movements map"). This card PROVES the
@@ -72,9 +76,10 @@ collision:      unassigned ⧗ — no collision-engine row is read for this card
 stakes delta:   baseline — the story's own origin point; nothing upstream exists to escalate against.
                 This is the zero point every other carded unit (row 9, the grief-summary, the crash
                 analepsis, and this order's M4/M5/M6 cards) escalates from ⧗ interpretive              (P9)
-genre oblig:    cultcore (series genre) · Snyder's Institutionalized (scene obligation) — per 77-Z ·
-                ⧗ flagged fit: M1 predates the Academy entirely; Institutionalized (newcomer-induction)
-                reads as a stretch for a pre-school racing movement — see Open question 2              (P10)
+genre oblig:    cultcore (series genre, story-level, unchanged, per 77-Z) · scene-level obligation now
+                varies by movement — RULED 2026-09-29 (77-AD, rec taken): M1 = opening, Snyder's Opening
+                Image/Catalyst register (M2-M3 = Institutionalized · M4-M5 = reversal · M6 = war/
+                attrition — full table in ssot_04_plot_system.md's P10 layer description)              (P10)
 time:           order_told = order_happened; anachrony none — M1 is the story's own start, nothing
                 precedes it to reorder against. Duration ⧗ open, no scene is carded yet to measure
                 scene/summary/stretch against (see oxo-telling-profile.md T4's own movement list, which
@@ -138,7 +143,7 @@ gap_effect: none ⧗   # this is the original telling of the crash, not a withhe
 
 ## CANON GAPS THIS CARD HIT
 
-- **The arrest beat's placement.** Does it precede, follow, or fuse with the crash — same session or a separate M1A/M1B beat? Not given anywhere in the read canon.
+- **The arrest beat's placement is RULED (77-AF): before the crash, a separate beat, same movement.** Its exact staging within M1A/M1B beyond that ordering is still open.
 - **Anna's total absence.** Confirmed by her own node, not invented here, but it leaves two of four signposts undramatized for this card.
 - **No collision-engine row** is read for this card (P8), matching the gap M3's own card hit.
 - **Duration mode (P11)** is unassigned; no scene exists yet to measure against.
@@ -146,11 +151,12 @@ gap_effect: none ⧗   # this is the original telling of the crash, not a withhe
 
 ## OPEN
 
-1. **The finish-line arrest beat's placement.** Chief's Apple Notes candidate gives no sequence against the crash. *Rec: place it before the crash, in M1A/early M1B, as the world's own Fairness turn — a separate beat from Tori's personal crash, on a different gauge, in the same movement.*
-2. **P10 genre obligation fit.** The fixed 77-Z value (cultcore / Institutionalized) reads oddly for a pre-Academy racing movement. *Rec: keep the fixed value for series-wide consistency, but flag M1 as functionally closer to Snyder's Opening Image/Catalyst beat, pending a genre-obligation review across all six movements once OXO's genre is formally ruled (ssot_04_plot_system.md OPEN call 7, still unruled).*
+1. **RULED 2026-09-29 (77-AF, rec taken).** The finish-line arrest (Chief's Apple Notes 2026 candidate) sits BEFORE the crash, in M1A/early M1B, as the world's own Fairness turn — a separate beat from Tori's personal crash, on a different gauge, in the same movement. Proposed event id `m1b_race_arrest` stays ⧗ as a proposed id only; its content is Chief's note, cited. See P4/P5.
+2. **RULED 2026-09-29 (77-AD, rec taken).** P10's scene-level genre obligation now varies by movement instead of holding one fixed value: M1 reads as the opening, Snyder's Opening Image/Catalyst register — cultcore stays the story-level genre throughout. Full per-movement table in ssot_04_plot_system.md's P10 layer description.
 3. **Anna's absence leaves IC/RS undramatized.** *Rec: leave undramatized, consistent with her own node's ruled absence; no invention.*
 4. **No motif fits M1.** *Rec: treat M1 as pre-motif establishing ground; the three ruled motifs activate once the Academy exists (M2 on).*
 5. **P8 collision row, P1 address, P11 duration mode** — all unassigned. *Rec: card the crash as its own R2 SCENE next, mirroring oxo-scene-card-M3-crash-analepsis.md's own worked instance, rather than leave the whole movement at this R4 grain.*
 
 ## Version history
+- **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AF and 77-AD, "all recs"). 77-AF: the finish-line arrest promoted from ⧗ candidate to ruled placement — before the crash, the world's own Fairness turn, a separate beat from Tori's crash, same movement; event id `m1b_race_arrest` stays ⧗ as a proposed id only. 77-AD: P10 genre obligation now varies by movement; M1 = opening (Snyder's Opening Image/Catalyst register), cultcore unchanged at story level. Closes Open questions 1 and 2.
 - **0.1.0 ⧗ · 2026-09-29.** First skeleton card for Movement 1, BOLO 77 call 77-AB (Chief: "1.0") — one card for every movement with none. Reads the fabula's own `m1b_crash_jebb_death` / `m1b_untouchable_resolve` pair; offers Chief's Apple Notes tolerated-race/arrest idea as one ⧗ candidate event, `m1b_race_arrest`, never asserted as canon. Five open questions for Chief.

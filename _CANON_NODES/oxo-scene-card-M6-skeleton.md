@@ -22,7 +22,7 @@ links:
 
 # SCENE CARD · M6 · "the Fault Line" · skeleton
 
-**What this card is.** Last of four movement-grain skeletons ordered on BOLO 77 call 77-AB, and the series' own ending movement: "The Pacific — War / Attrition. The Fault Line. Failure + Good: total destruction that yields meaning" ([[victoria-midnight]], Where she appears, M6 row) — the storyform's own locked ending shape (oxo-storyform.md §1: Outcome **Failure**, Judgment **Good**, "Failure/Good, personal triumph"; [📐 ssot_04_trope_graph.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md), THE RAILS, same reading). No idea from Chief's read notes names an M6-specific beat; every specific beyond the storyform's own locked shape is ⧗, offered as interpretation, not invention.
+**What this card is.** Last of four movement-grain skeletons ordered on BOLO 77 call 77-AB, and the series' own ending movement: "The Pacific — War / Attrition. The Fault Line. Failure + Good: total destruction that yields meaning" ([[victoria-midnight]], Where she appears, M6 row) — the storyform's own locked ending shape (oxo-storyform.md §1: Outcome **Failure**, Judgment **Good**, "Failure/Good, personal triumph"; [📐 ssot_04_trope_graph.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md), THE RAILS, same reading). No idea from Chief's read notes names an M6-specific beat; every specific beyond the storyform's own locked shape is ⧗, offered as interpretation, not invention. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M6 reads as war/attrition, matching the movement's own name. **RULED 2026-09-29 (77-AE):** an Anna presence pass across M4-M6 is TASKED, not done; IC/RS stay ⧗ until it lands. Still open, Chief's fact, open: 77-AL, the fault-line collapse mechanism.
 
 ---
 
@@ -49,9 +49,11 @@ signpost seat:  Act 4 (M6 alone), per the trope graph's ruled movements map — 
                 OS (the Factions) Changing One's Nature · IC (Anna) Memories · RS (Tori↔Anna) Gathering
                 Information (ssot_04_trope_graph.md, THE RAILS, "The movements map"). Anna Colson is
                 "⧗ not documented" in M6 either ([[anna-colson-conway]], Where she appears, M6 row) —
-                flagged, though the IC's own signpost here, Memories, is thematically loaded: it is also
-                the OS Cost, Memories (oxo-storyform.md §5), landing on the IC's own act at the same
-                moment it lands on the story's ending — ⧗ interpretive convergence, see Open question 1  (P6)
+                RULED 2026-09-29 (77-AE): an Anna presence pass across M4-M6 is TASKED, not done; IC/RS
+                stay ⧗ until it lands, though the IC's own signpost here, Memories, is thematically
+                loaded: it is also the OS Cost, Memories (oxo-storyform.md §5), landing on the IC's own
+                act at the same moment it lands on the story's ending — ⧗ interpretive convergence, see
+                Open question 1                                                                          (P6)
 reveal:         to the audience: the cost_and_meaning Touchstone itself lands here — by the ladder's own
                 R5 STORY completion test ("all four throughlines complete; Outcome and Judgment
                 delivered," ssot_04_plot_system.md Axis 1), Failure/Good cannot resolve earlier than this
@@ -59,10 +61,10 @@ reveal:         to the audience: the cost_and_meaning Touchstone itself lands he
 collision:      unassigned ⧗ — no collision-engine row is read for this card                            (P8)
 stakes delta:   the terminal escalation — from M5's organized insurgency to total war/attrition, the
                 highest stakes in the sequence by definition, the story's own last movement ⧗ interpretive (P9)
-genre oblig:    cultcore (series genre) · Snyder's Institutionalized (scene obligation) — per 77-Z ·
-                ⧗ flagged fit: the strongest mismatch of the four skeletons — a War/Attrition finale
-                reads far closer to Snyder's Final Battle/Dark Night obligation than Institutionalized's
-                newcomer-induction beat — see Open question 2                                            (P10)
+genre oblig:    cultcore (series genre, story-level, unchanged, per 77-Z) · scene-level obligation now
+                varies by movement — RULED 2026-09-29 (77-AD, rec taken): M6 = war/attrition (M1 =
+                opening · M2-M3 = Institutionalized · M4-M5 = reversal — full table in
+                ssot_04_plot_system.md's P10 layer description)                                          (P10)
 time:           ⧗ open — T3's one licensed analepsis class ("recovered data," oxo-telling-profile.md T3)
                 could plausibly recur here as a last look back, but nothing in canon confirms it; not
                 invented                                                                                 (P11)
@@ -80,8 +82,8 @@ function:       discharges the full storyform at R5 STORY grain — "all four th
 |---|---|---|---|
 | MC (Tori) | **The Future** | Yes — this card proves it | ssot_04_trope_graph.md, movements map |
 | OS (the Factions) | Changing One's Nature | ⧗ interpretive — the system's own final form, whatever survives the Fault Line | ssot_04_trope_graph.md |
-| IC (Anna Colson) | Memories | **⧗ not documented** — no M6 presence in canon; thematically loaded convergence with OS Cost, see P6 | anna-colson-conway.md, Where she appears, M6 row |
-| RS (Tori↔Anna) | Gathering Information | **⧗ not documented** — same absence | anna-colson-conway.md, Where she appears, M6 row |
+| IC (Anna Colson) | Memories | **⧗ not documented** — RULED 2026-09-29 (77-AE): presence pass TASKED, not done; thematically loaded convergence with OS Cost, see P6 | anna-colson-conway.md, Where she appears, M6 row |
+| RS (Tori↔Anna) | Gathering Information | **⧗ not documented** — same, pass tasked (77-AE) | anna-colson-conway.md, Where she appears, M6 row |
 
 ---
 
@@ -121,18 +123,19 @@ gap_effect: ⧗ open
 
 ## CANON GAPS THIS CARD HIT
 
-- **The Fault Line's mechanism.** Canon gives the name and the outcome-shape only.
-- **Anna's total absence** from M4 through M6 (all three "⧗ not documented" per her own node) — leaves the IC throughline's entire back half formally seated but never dramatized.
+- **The Fault Line's mechanism.** Canon gives the name and the outcome-shape only — Chief's fact, open (77-AL).
+- **Anna's total absence** from M4 through M6 (all three "⧗ not documented" per her own node) — RULED 2026-09-29 (77-AE): a presence pass across M4-M6 is tasked, not done; leaves the IC throughline's entire back half formally seated but not yet dramatized.
 - **No collision-engine row**, no address, no duration/frequency mode.
 - **Ladder rung ambiguity** — this is the one card of the four that plausibly closes at R5 STORY rather than R4 MOVEMENT.
 
 ## OPEN
 
-1. **Anna's total absence from M4-M6.** The IC's own signpost here (Memories) converges with the OS Cost at the exact movement where she has no documented presence at all. *Rec: task an Anna M4-M6 presence pass before carding a real M6 scene, since this convergence is load-bearing to the ending, not incidental.*
-2. **P10 genre obligation mismatch — the strongest of the four cards.** *Rec: revisit 77-Z's fixed P10 value against Coyne's clover / Snyder's ten genres (ssot_04_plot_system.md OPEN call 7, still unruled) once OXO's genre is formally ruled; a War/Attrition finale is the clearest evidence that the fixed value needs review.*
+1. **RULED 2026-09-29 (77-AE).** An Anna presence pass across M4-M6 is TASKED, not done; IC/RS stay ⧗ until it lands. The IC's own signpost here (Memories) converges with the OS Cost at the exact movement where she has no documented presence yet — load-bearing to the ending, not incidental, and the reason the pass is tasked rather than deferred indefinitely.
+2. **RULED 2026-09-29 (77-AD, rec taken).** P10's scene-level genre obligation now varies by movement; M6 = war/attrition, matching the movement's own name. Full per-movement table in ssot_04_plot_system.md's P10 layer description.
 3. **Ladder rung: R4 or R5?** *Rec: keep this card at R4 (movement grain, matching M1/M4/M5 for consistency across the order), reserve a separate R5 card for the whole series once all six movements are carded.*
-4. **P2/P4/P11 mechanism entirely open.** No fabula event exists yet for M6. *Rec: propose `m6_fault_line_collapse` as the working id (done above) pending Chief's ruling on the mechanism itself.*
+4. **P2/P4/P11 mechanism entirely open — the fault-line collapse mechanism is Chief's fact, open (77-AL).** No fabula event exists yet for M6. *Rec: propose `m6_fault_line_collapse` as the working id (done above) pending Chief's ruling on the mechanism itself.*
 5. **P8 collision row, P1 address** — unassigned, same recurring gap as the other three skeletons.
 
 ## Version history
+- **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AD and 77-AE, "all recs"). 77-AD: P10 for M6 = war/attrition, matching the movement's own name. 77-AE: an Anna M4-M6 presence pass is tasked, not done; IC/RS marked accordingly on the signpost table and P6. 77-AL (the fault-line collapse mechanism) stays open, Chief's fact. Closes Open questions 1 and 2.
 - **0.1.0 ⧗ · 2026-09-29.** First skeleton card for Movement 6, BOLO 77 call 77-AB (Chief: "1.0") — the last of the four movements ordered with none. No fabula event exists yet for M6; proposes `m6_fault_line_collapse` ⧗ as the working id. No Chief's-notes candidate was available for this movement in the read sources; every specific beyond the storyform's own locked Failure/Good ending shape is ⧗. Five open questions for Chief.

@@ -1,0 +1,17 @@
+{
+ "status": "🟢 **PLOT 1.0.1 (9/29)** — 77-AD to 77-AJ ruled \"all recs\" and folded into the cards: P10 varies by movement (opening · Institutionalized · reversal · war) · the arrest sits before the crash · the cyborg turn runs parallel · erasure reads both ways · QB's coup is a world event. Anna's M4–M6 pass tasked. Three facts only Chief has: 77-AG · 77-AK · 77-AL.",
+ "order": "**Give 77-AG, 77-AK, 77-AL when you have them; the Anna M4–M6 presence pass (77-AE) fires on \"go\".**",
+ "default": "Silence: plot stands at 1.0.1; the three facts stay open.",
+ "calls": [
+  {"q": "77-AD · P10 across movements", "s": "ruled", "ruling": "RULED 2026-09-29 (\"all recs\"). M1 opening · M2–M3 Institutionalized · M4–M5 reversal · M6 war/attrition; plot doc 1.0.1."},
+  {"q": "77-AE · Anna's presence in M4–M6", "s": "ruled", "ruling": "RULED 2026-09-29. The presence pass is tasked; IC/RS stay ⧗ until it lands."},
+  {"q": "77-AF · M1: the finish-line arrest", "s": "ruled", "ruling": "RULED 2026-09-29. Before the crash, the world's own Fairness turn."},
+  {"q": "77-AH · M4: Quinn and Riley's cyborg turn", "s": "ruled", "ruling": "RULED 2026-09-29. A parallel body-horror thread crossing Tori's erasure on campus."},
+  {"q": "77-AI · M4: erasure's Freedom step", "s": "ruled", "ruling": "RULED 2026-09-29. Both readings held: Tori's and the audience's."},
+  {"q": "77-AJ · M5: QB's coup at the parade", "s": "ruled", "ruling": "RULED 2026-09-29. A world event the Diaspora answers; Tori's scene is her choice to lead."}
+ ],
+ "log": [
+  {"who": "Chief", "t": "\"All recs\" on 77-AD to 77-AJ."},
+  {"who": "Claude", "t": "Folded into the four skeleton cards and the plot doc (1.0.1); three Chief's-fact calls stay open."}
+ ]
+}
