@@ -186,11 +186,11 @@ The three sequences are not identical (Norse alone ends on an eschaton; Celtic a
 
 ## 6 · INVARIANTS
 
-1. **Fate outranks every god.** In all three systems the chief deity or greatest hero can slow fate's operation but never overturn it — stated three separate times, once per pantheon, in the book's own Preface.
+1. **Fate outranks every god.** In all three systems the chief deity or greatest hero can slow fate's operation but never overturn it, stated three separate times, once per pantheon, in the book's own Preface.
 2. **Ruins and dooms need a mechanism, not just a mood.** Ragnarok is inevitable because the universe was "flawed from the outset," not because the narrative needed an ending.
 3. **A founder myth is inseparable from what the city becomes.** The founding act and the resulting institution are told as one unit, never as separate facts.
 4. **An otherworld runs on its own time, not the traveler's.** Every Otherworld-type myth in the book marks the time distortion explicitly; it is never incidental detail.
-5. **A myth-type recurs across cultures because it answers a fixed human question**, not because cultures copied each other — the same ~15 questions (§4) surface independently in Greek, Celtic, and Norse material.
+5. **A myth-type recurs across cultures because it answers a fixed human question**, not because cultures copied each other; the same ~15 questions (§4) surface independently in Greek, Celtic, and Norse material.
 
 ---
 
