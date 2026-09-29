@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 0.3.0
+version: 0.3.1
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
 status: "RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
@@ -54,6 +54,26 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 - **Theme nulls run high (797)** because Death (1,035) and Family are broad: most of those tropes argue none of the four rails. That is the rails being narrow, not a keying fault.
 - **1,157 tropes had no one-line definition** on their index page and were keyed from the name alone; most of the 658 low-confidence keys are these.
 
+## COMMAND-LOCAL RECORDS (ruled 9/29, BOLO 91)
+
+Not every pattern is a TV Tropes import. A record Chief keeps on purpose across the Command's own worlds files here in the register's format, flagged `source: command-local`, for attachment onto a matching TV Tropes entry in `register.json` on the next data pass.
+
+```yaml
+slug:    SignatureWound             # Command-local; not a TV Tropes page id
+name:    The Signature Wound — a sibling dies in a vehicle disaster
+def:     Chief's own recurring wound, kept on purpose across separate worlds, not a contradiction between them
+source:  command-local
+domains: [character, theme]
+keys:    {character: L5, theme: R2}   # WOUND · Death — the character/theme skew's own heaviest bins
+conf:    high
+instances:
+  - Tori (OXO/DCUS): car crash, brother Jebb dies (Ariel is Tori's earlier name)
+  - Mayari (LEECHSEED): helicopter crash, brother ejected, father burns alive
+note:    "likely match already in register.json (Dead Sibling / Survivor Guilt candidates) — not cross-checked against the data file in this pass; attach there once confirmed"
+```
+
+No character is changed by this ruling — it names a pattern, not a fix.
+
 ## OPEN
 
 - **Theme sub-index pass — DONE 0.2.0.**
@@ -62,6 +82,7 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 
 ## Version history
 
+- **0.3.1 — 2026-09-29 (BOLO 91).** Command-local record added: the SIGNATURE WOUND (a sibling dies in a vehicle disaster), Chief's own recurring pattern kept on purpose across worlds (Tori/Jebb in OXO, Mayari/brother+father in LEECHSEED); flagged for attachment to a matching TV Tropes entry (Dead Sibling / Survivor Guilt candidates) in `register.json` on the next data pass. No character changed.
 - **0.3.0 — 2026-09-29.** The low-confidence pass: `fetch_defs.py` pulled 952 first-sentence definitions; two PS re-keyed them on 6 batches (R1–R6), RANGE 0 findings; character nulls 348 → 94, low confidence 707 → 232.
 - **0.2.0 — 2026-09-29.** Theme sub-index pass (Chief, "Recommendations"): eight sub-indexes added, 1,854 new tropes (4,948 total), 2,012 theme keys by two PS on 9 batches (T1–T9); RANGE caught four files in the wrong JSON shape, string nulls, and five misspelled slugs, all fixed → 0.
 - **0.1.0 — 2026-09-29.** BOLO 89: register stood up. 3,094 tropes fetched (`fetch.py --domains`), keyed by three PS (haiku) on 16 disjoint batches, RANGE (`work/89/range.py`) 5 findings fixed → 0.
