@@ -4,9 +4,9 @@
   "title": "The theme system — L6, the argument's value layer, before the scenes",
   "trunk": "BLACK",
   "issued": "2026-09-24",
-  "asof": "2026-09-24",
-  "s": "hot",
-  "status": "🟡 **the controlling idea first** (biopower: the system enables evil, the person is its symptom) · home and OXO-first RULED 9/24 · research running",
+  "asof": "2026-09-29",
+  "s": "open",
+  "status": "🟢 **CONTROLLING IDEA RULED 9/29** — \"Nobody has to be evil when everyone does their job.\" · mechanism line (biopower): \"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\" · doc bootstrapped: `ShroomsQ/_CANON/_SSOT/07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` v0.1.0 · Foucault now distilled from the primary text (MSX.36) · next: walk 80-B, the shape, starting with Dramatica's argument as the rails · 80-C and 80-E recs out.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the theme doc for `07_THEME_SYSTEMS/` (not yet written) · BOLO 77's four open syuzhet calls (77-U to 77-X), gated until this lands · the theme/invariants handshake BOLO 81 shares (`cost_and_meaning`, named \"theme with enforcement teeth\")",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 80",
   "card": "none",
-  "version": "v0.3 · DOPE SHEET"
+  "version": "v0.4 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the theme system as one doc, **in order to** give every scene a value it moves and an argument it serves before any scene is written.",
-  "order": "**The controlling idea goes first.** Research on Foucault's biopower and systemic evil is running; then we walk the shape one piece at a time, starting with the one sentence OXO argues.",
-  "default": "Silence: the research lands and waits for your read.",
+  "order": "**Walk 80-B, the doc's shape, one piece at a time — first piece: Dramatica's argument as the rails.**",
+  "default": "Silence: the sentence stands at the top of the theme doc; the shape waits.",
   "calls": [
    {
     "q": "80-A · Where does the theme doc live?",
@@ -88,6 +88,13 @@
     "default": "81 first (rec): theme's handshake needs the register to exist",
     "s": "ruled",
     "ruling": "RULED 2026-09-24, reversed: theme first; invariants come LAST, after every system reaches a stable release (81 keeps a bootstrap placeholder)."
+   },
+   {
+    "q": "The controlling idea — OXO's one sentence",
+    "options": "35 candidates walked 9/29 (20 in two registers, 5 biopower, 10 one-sentence fusions of #8 + #16)",
+    "default": "#6 fusion",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29, Chief: \"number six is fucking it\" — **Nobody has to be evil when everyone does their job.** Mechanism line kept alongside (biopower C): \"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\""
    }
   ]
  },
@@ -187,6 +194,18 @@
      "t": "**The distill** — nine models read across the shelf (Dramatica argument, Egri premise, McKee controlling idea, Coyne value spectrum, Truby moral argument, Weiland theme-craft [confirmed empty], Tomashevsky theme & motif, Tomashevsky thematics, Greimas isotopy, Bloom's sexuality one-sheet), 69 cites, RANGE 0 bad lines.",
      "s": "done",
      "when": "9/24"
+    },
+    {
+     "n": 2,
+     "s": "done",
+     "when": "9/29",
+     "t": "**The controlling idea, ruled** — 35 candidates walked; Chief short-listed #8 and #16, then ruled their one-sentence fusion #6. Doc bootstrapped at `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` v0.1.0 with the storyform map (Equity → Inequity · Stop · Failure/Good · Anna as the proof)."
+    },
+    {
+     "n": 3,
+     "s": "open",
+     "when": "next",
+     "t": "**80-B, the shape** — walk the four pieces one at a time: Dramatica rails · McKee sentence (filled) · Coyne gauge · motifs."
     }
    ],
    "coord": [
@@ -253,6 +272,16 @@
      "path": "_CANON_NODES/oxo-storyform.md",
      "what": "OXO's premise line, Growth Stop, the ending matrix (Failure/Good), the thematic conflict, `narrative_invariant: cost_and_meaning` at L12",
      "s": "held"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/07_THEME_SYSTEMS/📐 ssot_07_theme_system.md",
+     "what": "the theme doc, v0.1.0 bootstrap: the controlling idea, the mechanism line, the storyform map, the open calls",
+     "s": "done"
+    },
+    {
+     "path": "_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬 MSX.36 — The History of Sexuality — Foucault (1978).md",
+     "what": "Foucault from the primary text: the biopower section the theme leans on",
+     "s": "done"
     }
    ],
    "cost": [
@@ -698,6 +727,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "FRAGO 80: the shopping list from READING-LIST.md v2 pushed into Admin as five price tiers (74 rows). 11 are free on Everand; the rest come to about $863, plus 7 not yet priced."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "Short-listed #8 (\"when the rules are the problem, following them is the trap\") and #16 (\"evil at scale is a working system full of ordinary people…\"), kept biopower C, then: \"number six is fucking it.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Walked 35 candidates; locked \"Nobody has to be evil when everyone does their job.\" and bootstrapped the theme doc v0.1.0."
     }
    ]
   }

@@ -1,0 +1,50 @@
+---
+type: ssot_07_theme_systems
+category: theme_system
+version: 0.1.0
+last_updated: 2026-09-29
+applies_to: [OVEREXITOUT first, EVIL CHECK second (80-D)]
+status: bootstrap — the controlling idea RULED 2026-09-29; the doc's shape (80-B) is walked piece by piece before it is built out
+purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
+dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
+trunk: BLACK
+sources: [MSX.36, BVX.0236, BVX.0193, "_tools/bolostatus/work/80/DISTILL.md", "_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md"]
+---
+
+# 📐 SSOT: THE THEME SYSTEM — the argument, in one sentence first
+
+## THE CONTROLLING IDEA — OVEREXITOUT
+
+> **Nobody has to be evil when everyone does their job.**
+
+**RULED 2026-09-29** by Chief ("number six is fucking it"), picked from 35 candidates walked the same night. It fuses two he short-listed: *"When the rules are the problem, following them is the trap"* and *"Evil at scale is a working system full of ordinary people, and integrity is the refusal to be the part that fits."*
+
+### The mechanism line (how the system does it)
+
+> *It doesn't find out who you are. It trains you, measures you, then calls the result your nature.*
+
+Kept by Chief 2026-09-29 as the biopower register. The controlling idea says **what** the story argues; the mechanism line says **how** the system does it. Source: Foucault's biopower (the norm replaces the law; discipline of the body and regulation of the population make the subject), distilled as [[MSX.36]].
+
+## HOW THE SENTENCE MAPS ONTO THE LOCKED STORYFORM
+
+| Storyform cell (`oxo-storyform.md`) | Where it lives in the sentence |
+|---|---|
+| OS Problem → Solution: **Equity → Inequity** | "everyone does their job": the fairness premise is the system's operating cover |
+| MC Growth: **Stop** | Tori stops doing her job, stops fitting, stops performing for the score |
+| Outcome **Failure** / Judgment **Good** | the system still wins the board; she wins herself by refusing to be one of "everyone" |
+| IC: **Anna** (Steadfast) | Anna does her job perfectly and ascends: the sentence's proof, lived |
+
+## PROVENANCE
+
+- The 9/24 research verdict holds: Foucault supplies the **mechanism** (power produces the person); the **moral** claim that ordinary people carry out evil belongs to Arendt (the banality of evil), Bauman, Milgram and Browning. The ruled sentence is that moral claim, and the mechanism line is Foucault's. `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
+- Chief's 9/24 phrasing, *"the system enables evil; the person is a symptom,"* stays on record as the Overall Story's world-claim.
+
+## OPEN (walked piece by piece, per Chief 9/24)
+
+- **80-B · the shape:** Dramatica's argument as the rails · McKee's controlling idea as the one sentence (now filled) · Coyne's value scale as the per-scene gauge · motifs fed to texture. Walk next, starting with the rails.
+- **80-C · theme vs. the Touchstones (BOLO 81):** rec, two docs joined by a handshake table (`cost_and_meaning` sits in both).
+- **80-E · which books:** rec, held books only (Egri, McKee, Coyne, Truby, Dramatica); no Weiland.
+
+## Version history
+
+- **0.1.0 · 2026-09-29** — bootstrap: the controlling idea and the mechanism line, ruled; the storyform map; the open calls.
