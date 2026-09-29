@@ -265,13 +265,19 @@ Produce the structured data block in the format defined in the Examples section.
 
 Victoria Midnight operates a sophisticated causal model (merit earns freedom), applies it consistently across conditions, and updates it only under catastrophic contradictory evidence. Her MC Problem is Equity — a philosophical framework error, not an intellectual failure. The cognitive architecture is sound; the premise is wrong. Score above average but not maximum. Point cost: 60 pts.
 
+`psychology_stack`: ⧗ — the Egri checklist has not been run against her yet; the paragraph above covers the ground informally.
+
 **L2 VITAL: 14**
 
 Racing driver. Reaction time, spatial processing, mechanical intuition, and physical courage are primary operational tools pre-crash. Post-crash hardware requires a VITAL ceiling high enough to carry the manifestation load. "Motion under pressure, never ornamental" is a 14. Point cost: 80 pts.
 
+`physiology_stack`: ⧗ — not yet run.
+
 **L3 SOCIAL: 10**
 
 Her MC Critical Flaw is Truth — when she speaks truth, it desyncs her hardware and triggers Noise. Her social interface is not weak. It is accurate in a world that cannot process accuracy. She does not lack social intelligence; she lacks the capacity for social dishonesty. Average SOCIAL with a specific catastrophic exploit vector is more precise than a modified score. Point cost: 0 pts.
+
+`sociology_stack`: ⧗ — not yet run. Circumplex dial (call 8): not scored, pilot note only.
 
 **Tier 1 Total: 140 pts**
 
@@ -281,13 +287,17 @@ Her MC Critical Flaw is Truth — when she speaks truth, it desyncs her hardware
 
 **L4 WILL: 14 (CORE + 1)**
 
-Resolve is Change — she bends eventually. The story arc requires maximum systemic pressure to achieve that change. She survives the crash, the brother's death, the academy intake, and the Ban before breaking. WILL sits one point above CORE: she is slightly more stubborn than she is intelligent. Buy-up cost: 5 pts.
+Resolve is Change — she bends eventually. The story arc requires maximum systemic pressure to achieve that change. She survives the crash, the brother's death, the academy intake, and the Ban before breaking. WILL sits one point above CORE: she is slightly more stubborn than she is intelligent. Buy-up cost: 5 pts. Read under the 2026-09-29 definition (call 13), this is decision-capacity, not hardness — 14 is how much pressure she can absorb before a choice becomes unavoidable, not how much damage she can take.
+
+`coping_strategy`: ⧗ — no documented match to one of Schmidt's five named strategies yet.
 
 **L5 WOUND: 8 / 10**
 
-The wound is the pace-notes. She ignored her brother's guidance during the rally. The car exploded. He died. She survived. The wound is not grief — it is the knowledge that she chose not to listen. That choice killed him. Score 8 because the story requires her to continue functioning as protagonist. Score 9 or 10 produces behavioral collapse incompatible with protagonist load-bearing.
+The wound is the pace-notes. She ignored her brother's guidance during the rally. The car exploded. He died. She survived. The wound is not grief — it is the knowledge that she chose not to listen. That choice killed him. Score 8 because the story requires her to continue functioning as protagonist. Score 9 or 10 produces behavioral collapse incompatible with protagonist load-bearing. `severity`: 8 — the same number, the call-6 name for this scale.
 
-Active wound triggers: mechanical failure events; guidance she is inclined to refuse; her brother's name; scenes where listening would prevent harm and she does not.
+Active wound triggers: mechanical failure events; guidance she is inclined to refuse; her brother's name; scenes where listening would prevent harm and she does not. Formalized as `triggers`: [mechanical_failure_events, guidance_she_is_inclined_to_refuse, brothers_name, scenes_where_listening_would_prevent_harm].
+
+`relational_refs`: ⧗ — the brother (`brother_deceased`, L8) reads as the ghost this wound orbits, but he carries no formal `character_id` of his own yet in this slice; not populated until that card exists, to avoid inventing one here.
 
 **L6 DRIVE: 12 (VITAL - 2)**
 
@@ -309,6 +319,7 @@ Meaning-driven characters burn below their physical ceiling because their fuel s
 |`origin_wound_seed`|6|
 |`tech_level`|6|
 |`system_exposure`|early_pre_awareness|
+|`hereditary_predisposition`|⧗ provisional field, not yet populated|
 
 Her origin is outside institutional legibility. The salvage economy phase (M1A) precedes system awareness. The Delta Coast racing scene is the first context in which her output becomes visible at scale. The system's attention during M1B is acquisition, not admiration. She does not know the difference until the Ban is already in motion.
 
@@ -318,14 +329,19 @@ Her origin is outside institutional legibility. The salvage economy phase (M1A) 
 
 |Variable|Value|
 |---|---|
-|`attachment_style`|secure_anxious|
+|`attachment_style`|secure_anxious — predates the four-way enum (call 14), locked value retained, not reclassified|
 |`attachment_style_score`|6|
+|`attachment_dimensions`|⧗ {anxiety, avoidance} not yet scored|
+|`protest_behaviors`|⧗ not yet documented|
+|`deactivating_strategies`|⧗ not yet documented|
 |`emotional_range`|9|
 |`conditional_patterns`|[merit_earns_freedom, loyalty_to_kinship, distrust_of_institution]|
 |`imprint_flexibility`|3|
-|`primary_attachment_object`|brother_deceased|
+|`secure_base_object`|brother_deceased|
 
-Her primary attachment object was her brother. He functioned as navigator to her driver — the pace-notes were not technical data, they were the communication system of two people in complete mutual trust. When she overrode them, she did not commit a driving error. She violated the founding logic of her attachment architecture. WOUND at L5 is the damage. IMPRINT at L8 is why the damage is catastrophic rather than survivable.
+*Renamed 2026-09-29 (call 14, RULED "Rex"): `primary_attachment_object` → `secure_base_object`; the old name is kept as a read alias, the value unchanged.*
+
+Her secure base object was her brother. He functioned as navigator to her driver — the pace-notes were not technical data, they were the communication system of two people in complete mutual trust. When she overrode them, she did not commit a driving error. She violated the founding logic of her attachment architecture. WOUND at L5 is the damage. IMPRINT at L8 is why the damage is catastrophic rather than survivable.
 
 ---
 
@@ -367,6 +383,9 @@ The shadow is the choice, not the grief. She heard the pace-notes and decided sh
 |`soul_evolution_archetype`|tactical_disruptor|
 |`karmic_memory`|meritocratic_certainty|
 |`growth_requirement`|accept_asymmetry|
+|`arc_type`|⧗ transformation reads likely (a premise reversal, not incremental growth) but not formally classified against [[BVX.0196]]'s pair yet|
+|`change_cause`|⧗ not yet mapped to [[BVX.0061]]'s four causes|
+|`catalyst_archetype`|⧗ not yet mapped to Schmidt's growth-pairing|
 
 Her Destiny vector points toward a specific disillusionment that becomes precision rather than cynicism. The arc moves: "Merit earns freedom" → "Visibility invites ownership" → "Control is the only form of safety left" → [story climax] "Rigged is not the same as wrong." Resistance index 8 is why the arc requires the full story duration. She is constitutionally opposed to her own solution.
 
