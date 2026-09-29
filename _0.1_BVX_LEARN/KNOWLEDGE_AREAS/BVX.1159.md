@@ -45,7 +45,7 @@ date_created: 2026-09-29
 # BVX.1159 — Dark Skies: Space Expansionism, Planetary Geopolitics, and the Ends of Humanity — Daniel Deudney (2020)
 ### Knowledge Entry — Distill
 
-A political scientist's book-length argument that space expansion is not automatically progress. Applying "full geopolitical theory" to the actual and proposed military and habitat space programs, Deudney concludes both tend toward war, garrison hierarchy, or despotic colonies: a systematic, citable machine for building a space setting's politics rather than decorating one.
+A political scientist's argument that space expansion is not automatically progress. Applying "full geopolitical theory" to actual and proposed military and habitat space programs, Deudney concludes both tend toward war or garrison hierarchy: a citable machine for building a space setting's politics rather than decorating one.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -162,7 +162,7 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-Ten chapters in four parts, each part answering one question in the chain. Part One ("The Earth, Technology, and Space") surveys what has actually happened in space and names seven live debates on "Planetary Earth": anarchy vs. world government, closure vs. frontier, freedom vs. technocracy, that space choices will help decide either way. Part Two ("Geographic and Technological Horizons") maps the astrography of near and solar space and audits which expansionist technologies are actually feasible. Part Three ("Space Expansionism") profiles the two live rival programs in full: military (the Von Braun ladder) and habitat (the Tsiolkovsky ladder), plus the underrecognized "planetary security" critics (arms controllers, environmentalists). Part Four ("Assessment") builds "full geopolitical theory," twelve propositions relating material context to political order, and fires it at Earth orbital space, then at solar space, then states a counter-program.
+Ten chapters in four parts, each answering one question in the chain. Part One surveys what has actually happened in space and names seven live debates on "Planetary Earth": anarchy vs. world government, closure vs. frontier, freedom vs. technocracy. Part Two maps the astrography of near and solar space and audits which expansionist technologies are actually feasible. Part Three profiles the two live rival programs: military (Von Braun) and habitat (Tsiolkovsky), plus the underrecognized "planetary security" critics. Part Four builds "full geopolitical theory," twelve propositions relating material context to political order, and fires it at Earth orbital space, then solar space, then states a counter-program.
 
 ---
 
@@ -202,8 +202,8 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 
 ## 6 · INVARIANTS
 
-1. **Political order is a function of material context, not intention.** Violence interdependence, distribution of power, and frontier status set what government is *possible*, before anyone's virtue or vice enters in.
-2. **An uncontrolled axial region (chokepoint, orbital ring, single habitable world) tends toward domination unless someone deliberately neutralizes it.** Control is never neutral by default.
+1. **Political order is a function of material context, not intention.** Violence interdependence, power distribution, and frontier status set what government is *possible*, before virtue or vice enters in.
+2. **An uncontrolled axial region (chokepoint, orbital ring, single habitable world) tends toward domination unless deliberately neutralized.** Control is never neutral by default.
 3. **Frontiers generate conflict by structure, not by author choice.** Weak property claims plus core/periphery power asymmetry produces violence in any open system.
 4. **Enclosed, fragile habitats default to technocratic hierarchy.** The tighter the coupling between political dissent and catastrophic failure, the harder political freedom becomes to sustain.
 5. **Dissimilar polities, by species, technology, or circumstance, conflict more and cooperate less.** Divergence (biological, cybernetic, or merely cultural) is itself a geopolitical fact, not set dressing.
@@ -215,11 +215,11 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 ## 7 · PITFALLS / MYTHS
 
 - Treating "more space, more freedom" as automatic: the geopolitical evidence runs the other way more often than not.
-- Writing a resource-moving or defensive technology with no weapon application in mind; in this book's logic, almost none exist.
-- Building an interstellar senate or federation without pricing in effective distance. Travel-time lag, not shared ancestry, is what breaks unions (the failed British Imperial Federation is the closer analog than the American founding).
-- Confusing absolute distance with *effective* distance: what technology can traverse quickly is "close," regardless of the number of light-years.
-- The "Benign Parent Model": assuming a homeworld or corporation will nurture a colony toward independence rather than keep it small, dependent, and profitable.
-- Giving an expansionist ideology only material motives (resources, Lebensraum) and skipping its self-description as salvation, destiny, or evolution's next step. The seduction is the point.
+- Writing a resource-moving or defensive technology with no weapon application in mind; almost none exist.
+- Building a federation without pricing in effective distance. Travel-time lag, not shared ancestry, breaks unions (the failed British Imperial Federation is the closer analog than the American founding).
+- Confusing absolute distance with *effective* distance: what technology traverses quickly is "close," regardless of light-years.
+- The "Benign Parent Model": assuming a homeworld or corporation nurtures a colony toward independence rather than keeping it small and dependent.
+- Giving an expansionist ideology only material motives and skipping its self-description as salvation or destiny. The seduction is the point.
 - Letting a "peaceful" megastructure exist without asking who it would let dominate everyone else if captured.
 
 ---
@@ -227,11 +227,11 @@ Ten chapters in four parts, each part answering one question in the chain. Part 
 ## 8 · APPLICATION
 
 - **Spine level:** SETTING, primary; L6 (Theme) secondary, a setting-side source whose central claim ("success breeds domination, not freedom") is also a ready-made controlling idea for a space-set story's theme.
-- **12-layer character stack:** none directly load-bearing, though Table 2.1's five-position technopolitical spectrum (Promethean, Techno-Optimist, Soterian, Friend of the Earth, Luddite) is a fast way to season an individual character's or faction's stated worldview without inventing one from nothing.
-- **plot_systems:** strong contextual candidate once `04_PLOT_SYSTEMS/` opens. The axial-region-capture mechanic (Diagram 2) and the four-stage colonization ladder (Diagram 4) are both ready scene- and arc-generators: "who controls the chokepoint" and "which stage is this Movement" are reusable structural questions.
+- **12-layer character stack:** none directly load-bearing, though Table 2.1's five-position technopolitical spectrum (Promethean, Techno-Optimist, Soterian, Friend of the Earth, Luddite) is a fast way to season a faction's stated worldview.
+- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens. The axial-region-capture mechanic (Diagram 2) and the four-stage colonization ladder (Diagram 4) are ready scene- and arc-generators: "who controls the chokepoint" and "which stage is this Movement."
 - **Setting:** primary, keyed to S4 LAW, S5 SCAR, S6 ECONOMY, S9 ALLURE, and S11 VECTOR (see `feeds:` above); the first distilled source in the library to carry a systematic *method* for deriving a space-faction's politics from its material situation rather than asserting a government type by narrative fiat.
 
-This book's real export is Diagram 2's mechanism: violence interdependence, not narrative convenience, should decide whether a space setting's polities land in anarchy, hierarchy, or the rare negarchic union. Every other tool here, the two expansion ladders, the colony-government typology, the colonization-stage arc, the catastrophic-threat taxonomy, is that same mechanism applied to one setting layer. Where the Kobold Guide ([[BVX.0458]]) supplies the terrain-first method for a world's geography and culture, Dark Skies supplies the matching method for a *space* setting's politics: the missing chapter on "how do I know what government my orbital colony has," answered with a checklist instead of a guess.
+This book's real export is Diagram 2's mechanism: violence interdependence, not narrative convenience, should decide whether a space setting's polities land in anarchy, hierarchy, or the rare negarchic union. Every other tool here (the two ladders, the colony-government typology, the colonization arc, the threat taxonomy) is that same mechanism applied to one setting layer. Where the Kobold Guide ([[BVX.0458]]) supplies terrain-first method for a world's geography, Dark Skies supplies the matching method for a *space* setting's politics: the missing chapter on "what government does my orbital colony have," answered with a checklist instead of a guess.
 
 ---
 
