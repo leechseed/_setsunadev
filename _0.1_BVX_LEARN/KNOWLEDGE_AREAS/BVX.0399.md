@@ -157,16 +157,16 @@ flowchart LR
 
 ## 3 · FRAMEWORK / STRUCTURE
 
-The book is a stack of four load-bearing chapters, front-loaded doctrine then progressively concrete instances:
+Four load-bearing chapters, doctrine first then progressively concrete instances:
 
 | Chapter | Governing move |
 |---|---|
 | Soul of the New Machine (intro) | States the genre's attitude as four numbered rules before a single stat exists |
 | Tales From the Street (the Lifepath) | Converts the attitude into a chargen flowchart: seven sections, random tables, a yearly loop |
 | Megacorps 2020 + Corporate Profiles | Converts the attitude into a faction template: one fixed-slot card, filled per corporation |
-| Welcome to Night City / Running Cyberpunk | Converts the attitude into a place and a GM-behavior checklist: a generic city plus four running tricks |
+| Welcome to Night City / Running Cyberpunk | Converts the attitude into a place plus a GM-behavior checklist |
 
-Nothing in the book argues for the attitude. Rule 1 is asserted on page one and never re-litigated. Everything downstream (city, corp, character) is judged by whether it performs the rule, not by internal consistency with some deeper theory of the world.
+Nothing in the book argues for the attitude. Rule 1 is asserted on page one and never re-litigated. Everything downstream is judged by whether it performs the rule, not by consistency with a deeper theory of the world.
 
 ---
 
