@@ -1,0 +1,12 @@
+{
+ "order": "**Rule 77-AM to 77-AP (Anna's M4–M6 candidates); give 77-AG · 77-AK · 77-AL when you have them.**",
+ "calls": [
+  {"q": "77-AE · Anna's presence in M4–M6", "s": "ruled", "ruling": "RULED 2026-09-29; PASS LANDED 2026-09-29: _tools/bolostatus/work/77/ANNA-M4-M6.md; candidates ⧗ on the M4 · M5 · M6 cards."},
+  {"q": "77-AM · M4: Anna inside the rank/Sync ceremony", "s": "open", "options": ["take: composed, rising, intercut with Tori's reclassification (IC Contemplation · RS Doing)", "other"], "default": "take"},
+  {"q": "77-AN · M5: the Feed broadcasts Anna's ascent", "s": "open", "options": ["take: the system's counter-message as the Diaspora forms", "other"], "default": "take"},
+  {"q": "77-AO · M6: the collapse exposes Anna's origin file", "s": "open", "options": ["take: Tori and the Diaspora gather the rebuild record, closing the rivalry (IC Memories · RS Gathering Information)", "other"], "default": "take"},
+  {"q": "77-AP · the copy of Colson in M6", "s": "open", "options": ["hold: nothing on record; the records collapse could surface her, decide later", "place her now"], "default": "hold"}
+ ],
+ "files": [{"path": "_tools/bolostatus/work/77/ANNA-M4-M6.md", "what": "the Anna M4–M6 presence pass (77-AE)", "s": "done"}],
+ "log": [{"who": "Chief", "t": "\"Go\" on the Anna pass."}, {"who": "Claude", "t": "Pass landed: one candidate per movement, cited to canon; four calls out, 77-AM to 77-AP."}]
+}

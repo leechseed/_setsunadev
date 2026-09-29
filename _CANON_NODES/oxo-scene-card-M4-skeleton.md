@@ -22,7 +22,7 @@ links:
 
 # SCENE CARD · M4 · "Student to Noise" · skeleton
 
-**What this card is.** Second of four movement-grain skeletons ordered on BOLO 77 call 77-AB. M4 is canon's own Bourne pivot: "Bourne — Espionage / Body Horror. Erased and hunted across campus. Transitions from *Student* to *Noise*" ([[victoria-midnight]], Where she appears, M4 row) — the same pivot the trope graph's movements map names "M4 (Bourne) + M5" as one act ([📐 ssot_04_trope_graph.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md), THE RAILS). No fabula event exists yet for M4; every event id below is a proposed `m4_<slug>` ⧗ candidate, not canon. **RULED 2026-09-29 (77-AH, rec taken):** Chief's Quinn-and-Riley cyborg idea is a PARALLEL body-horror thread crossing Tori's erasure at one shared location (the campus), not the same event. **RULED 2026-09-29 (77-AI, rec taken):** the erasure's Freedom step holds both readings at once — Tori's own and the audience's — the ironic charge row 9 already uses. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M4 reads as reversal. **RULED 2026-09-29 (77-AE):** an Anna M4 presence pass is TASKED, not done; IC/RS stay ⧗ until it lands. Still open, Chief's fact pending: 77-AG, the Critical Error trigger.
+**What this card is.** Second of four movement-grain skeletons ordered on BOLO 77 call 77-AB. M4 is canon's own Bourne pivot: "Bourne — Espionage / Body Horror. Erased and hunted across campus. Transitions from *Student* to *Noise*" ([[victoria-midnight]], Where she appears, M4 row) — the same pivot the trope graph's movements map names "M4 (Bourne) + M5" as one act ([📐 ssot_04_trope_graph.md](../ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md), THE RAILS). No fabula event exists yet for M4; every event id below is a proposed `m4_<slug>` ⧗ candidate, not canon. **RULED 2026-09-29 (77-AH, rec taken):** Chief's Quinn-and-Riley cyborg idea is a PARALLEL body-horror thread crossing Tori's erasure at one shared location (the campus), not the same event. **RULED 2026-09-29 (77-AI, rec taken):** the erasure's Freedom step holds both readings at once — Tori's own and the audience's — the ironic charge row 9 already uses. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M4 reads as reversal. **RULED 2026-09-29 (77-AE):** pass landed 2026-09-29; candidates ⧗ await Chief (`_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4). Still open, Chief's fact pending: 77-AG, the Critical Error trigger.
 
 ---
 
@@ -59,8 +59,8 @@ signpost seat:  Act 3 (M4+M5, the Bourne pivot), per the trope graph's ruled mov
                 begins that signpost's journey; oxo-scene-card-M5-skeleton.md continues it — one act,
                 two movements, the same shape row 9 and the grief-summary card share for Act 1. IC/RS
                 content is formally seated but undramatized: Anna Colson is "⧗ not documented" in M4
-                ([[anna-colson-conway]], Where she appears, M4 row) — RULED 2026-09-29 (77-AE): an Anna
-                presence pass across M4-M6 is TASKED, not done; IC/RS stay ⧗ until it lands            (P6)
+                ([[anna-colson-conway]], Where she appears, M4 row) — RULED 2026-09-29 (77-AE): pass
+                landed 2026-09-29; candidates ⧗ await Chief (see `ANNA-M4-M6.md` §M4)                 (P6)
 reveal:         to the audience: the Administration's classification ladder is itself a revisable fiction,
                 not a diagnosis — "Critical Error" names a target, not a fact about her ⧗ interpretive,
                 matching the controlling idea's mechanism line, "it trains you, measures you, then calls
@@ -93,8 +93,8 @@ function:       discharges toward story_cost Memories directly (oxo-storyform.md
 |---|---|---|---|
 | MC (Tori) | **How Things are Changing** | Yes — this card proves the opening of it | ssot_04_trope_graph.md, movements map |
 | OS (the Factions) | Playing a Role | ⧗ candidate — the Administration's own reclassification procedure as role-play (a file, not a person, deciding) | ssot_04_trope_graph.md; interpretive |
-| IC (Anna Colson) | Contemplation | **⧗ not documented** — RULED 2026-09-29 (77-AE): presence pass TASKED, not done | anna-colson-conway.md, Where she appears, M4 row |
-| RS (Tori↔Anna) | Doing | **⧗ not documented** — same, pass tasked (77-AE) | anna-colson-conway.md, Where she appears, M4 row |
+| IC (Anna Colson) | Contemplation | **⧗ proposed** — pass landed 2026-09-29 (77-AE): Anna staged inside the Feed's own rank/Sync ceremony, composed and unreacting, intercut with Tori's reclassification — she demonstrates rather than argues. Candidate, not canon; awaits Chief. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4(c) | anna-colson-conway.md, Where she appears, M4 row; ANNA-M4-M6.md |
+| RS (Tori↔Anna) | Doing | **⧗ proposed** — same pass: the ranking apparatus itself (rank, Sync scores, the ascent) carries both Anna's rise and Tori's fall on one ledger, satisfying Doing directly. Candidate, not canon; awaits Chief. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4(c) | anna-colson-conway.md, Where she appears, M4 row; ANNA-M4-M6.md |
 
 ---
 
@@ -134,7 +134,7 @@ gap_effect: ⧗ open
 
 - **The reclassification mechanism.** Canon gives the transition's fact, not its trigger — Chief's fact, open (77-AG).
 - **Whether the Quinn/Riley cyborg turn is the same scene as Tori's erasure, a parallel thread, or unconnected — RULED 2026-09-29 (77-AH): parallel thread, one shared location (the campus), not the same event.**
-- **Anna's total absence** from M4, per her own node — RULED 2026-09-29 (77-AE): a presence pass is tasked, not done.
+- **Anna's total absence** from M4, per her own node — RULED 2026-09-29 (77-AE): pass landed 2026-09-29; candidates ⧗ await Chief (see `ANNA-M4-M6.md` §M4).
 - **No collision-engine row**, no address, no duration/frequency mode.
 
 ## OPEN
@@ -142,9 +142,10 @@ gap_effect: ⧗ open
 1. **The reclassification mechanism (Critical Error trigger).** What act or actor fires Critical Error? Still open — Chief's fact, open (77-AG); not invented here. *Rec: card this as the movement's own R2 SCENE next, once Chief rules a trigger.*
 2. **RULED 2026-09-29 (77-AH, rec taken).** The Quinn/Riley cyborg turn is a PARALLEL Body Horror thread crossing Tori's erasure at one shared location, the campus — not the same event. See P4.
 3. **RULED 2026-09-29 (77-AI, rec taken).** P5 Freedom-step polarity holds both readings at once: Tori reads it as deeper Control, the audience reads it as Control that feels like freedom — the ironic-charge pattern the series already uses (row 9), not resolved flat. See P5.
-4. **RULED 2026-09-29 (77-AE).** An Anna presence pass across M4-M6 is TASKED, not done; IC/RS stay ⧗ until it lands.
+4. **RULED 2026-09-29 (77-AE).** Pass landed 2026-09-29; candidates ⧗ await Chief (see `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4).
 5. **RULED 2026-09-29 (77-AD, rec taken).** P10's scene-level genre obligation now varies by movement; M4 = reversal. Full per-movement table in ssot_04_plot_system.md's P10 layer description.
 
 ## Version history
+- **0.1.2 · 2026-09-29.** 77-AE pass landed: `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M4 proposes Anna staged inside the Feed's rank/Sync ceremony (IC Contemplation) intercut with Tori's reclassification, the ledger itself carrying both women's ranks (RS Doing) — both ⧗ candidates, await Chief.
 - **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AD, 77-AE, 77-AH, 77-AI, "all recs"). 77-AH: the Quinn/Riley cyborg turn is a parallel Body-Horror thread crossing Tori's erasure at the campus, not the same event. 77-AI: the erasure's Freedom step holds both Tori's and the audience's readings at once. 77-AD: P10 for M4 = reversal. 77-AE: an Anna M4-M6 presence pass is tasked, not done; IC/RS marked accordingly. 77-AG (the Critical Error trigger) stays open, Chief's fact. Closes Open questions 2, 3, 4, 5.
 - **0.1.0 ⧗ · 2026-09-29.** First skeleton card for Movement 4, BOLO 77 call 77-AB (Chief: "1.0"). No fabula event exists yet for M4; proposes `m4_critical_error_reclassification` ⧗ as the working id and offers Chief's Quinn/Riley cyborg idea as one ⧗ candidate parallel event, `m4_quinn_riley_cyborg_transformation`, never asserted as canon. Five open questions for Chief.

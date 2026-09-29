@@ -22,7 +22,7 @@ links:
 
 # SCENE CARD · M5 · "the coup company faces the wrong way, on purpose" · skeleton
 
-**What this card is.** Third of four movement-grain skeletons ordered on BOLO 77 call 77-AB. M5 is canon's Fight Club / Radicalization movement — "The Diaspora forms around her" ([[victoria-midnight]], Where she appears, M5 row); she is their "Radicalizing Spark," and "their primary bond is to her" ([[victoria-midnight]], Relationships table). No fabula event exists yet for M5. **RULED 2026-09-29 (77-AJ, rec taken):** Quinn Bishop's coup at the parade is a WORLD EVENT the Diaspora answers, not Tori's own scene; Tori's own signpost scene is her choice to lead. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M5 reads as reversal. Still open, Chief's fact, open: 77-AK, the Diaspora's first act of resistance.
+**What this card is.** Third of four movement-grain skeletons ordered on BOLO 77 call 77-AB. M5 is canon's Fight Club / Radicalization movement — "The Diaspora forms around her" ([[victoria-midnight]], Where she appears, M5 row); she is their "Radicalizing Spark," and "their primary bond is to her" ([[victoria-midnight]], Relationships table). No fabula event exists yet for M5. **RULED 2026-09-29 (77-AJ, rec taken):** Quinn Bishop's coup at the parade is a WORLD EVENT the Diaspora answers, not Tori's own scene; Tori's own signpost scene is her choice to lead. **RULED 2026-09-29 (77-AD, rec taken):** P10's scene-level genre obligation for M5 reads as reversal. **RULED 2026-09-29 (77-AE):** pass landed 2026-09-29; candidates ⧗ await Chief (`_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5). Still open, Chief's fact, open: 77-AK, the Diaspora's first act of resistance.
 
 ---
 
@@ -58,8 +58,8 @@ signpost seat:  Act 3 (M4+M5, the Bourne pivot), per the trope graph's ruled mov
                 scene here is her choice to lead the Diaspora, staged separately from the QB coup world-
                 event she and they answer. IC/RS content is formally seated but undramatized: Anna
                 Colson is "⧗ not documented" in M5 either ([[anna-colson-conway]], Where she appears,
-                M5 row) — same gap as M4, no 77-AE pass ruling applies to M5's own P6 line (77-AE names
-                M4-M6 generally; see Open question, below)                                              (P6)
+                M5 row) — RULED 2026-09-29 (77-AE): pass landed 2026-09-29, in scope for M5 per the
+                order's own wording ("across M4-M6"); candidates ⧗ await Chief (see `ANNA-M4-M6.md` §M5) (P6)
 reveal:         to the audience: the Administration's "Elimination of Noise" doctrine (canon quoted in
                 oxo-scene-card-M2-row9.md, CANON GAPS, the Ecclesial Law citation) has a cost — noise
                 organizes once it cannot be erased one student at a time ⧗ interpretive. To Tori:
@@ -88,8 +88,8 @@ function:       discharges toward IC Anna's own signpost (Contemplation) by cont
 |---|---|---|---|
 | MC (Tori) | **How Things are Changing** | Yes — this card continues the journey M4 opened | ssot_04_trope_graph.md, movements map |
 | OS (the Factions) | Playing a Role | RULED (77-AJ) — Quinn Bishop's own coup-company role-reversal at the parade, a world event the Diaspora answers | ssot_04_trope_graph.md; Chief's Apple Notes, ruled 77-AJ |
-| IC (Anna Colson) | Contemplation | **⧗ not documented** — no M5 presence in canon | anna-colson-conway.md, Where she appears, M5 row |
-| RS (Tori↔Anna) | Doing | **⧗ not documented** — same absence | anna-colson-conway.md, Where she appears, M5 row |
+| IC (Anna Colson) | Contemplation | **⧗ proposed** — pass landed 2026-09-29 (77-AE): a Feed-staged broadcast of Anna's continued ascent (Verified ceremony, leaderboard, assembly) circulates while the Diaspora coalesces — she is shown once, composed, needing no scene with Tori. Candidate, not canon; awaits Chief. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5(c) | anna-colson-conway.md, Where she appears, M5 row; ANNA-M4-M6.md |
+| RS (Tori↔Anna) | Doing | **⧗ proposed** — same pass: the ascent-broadcast is the same ledger mechanism (rank/Sync) as M4, now read as the system's counter-message to the Diaspora forming. Candidate, not canon; awaits Chief. See `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5(c) | anna-colson-conway.md, Where she appears, M5 row; ANNA-M4-M6.md |
 
 ---
 
@@ -152,7 +152,7 @@ causal_edges: []   # RULED 2026-09-29 (77-AJ, rec taken): the Diaspora answers t
 
 - **The Diaspora's formation mechanism.** Canon gives only the fact, not the process. Its first named act of resistance is Chief's fact, open (77-AK).
 - **Whether the QB coup is Tori's own scene or a world-event she learns of — RULED 2026-09-29 (77-AJ): a world event the Diaspora answers; Tori's own signpost scene is her choice to lead.**
-- **Anna's total absence** from M5, per her own node — no ruling settles this for M5 specifically (77-AE's tasked pass covers M4 and M6 by name; M5's own Anna gap stays open).
+- **Anna's total absence** from M5, per her own node — RULED 2026-09-29 (77-AE): pass landed 2026-09-29, M5 in scope; candidates ⧗ await Chief (see `ANNA-M4-M6.md` §M5).
 - **No collision-engine row**, no address, no duration/frequency mode.
 
 ## OPEN
@@ -161,7 +161,9 @@ causal_edges: []   # RULED 2026-09-29 (77-AJ, rec taken): the Diaspora answers t
 2. **RULED 2026-09-29 (77-AD, rec taken).** P10's scene-level genre obligation now varies by movement; M5 = reversal. Full per-movement table in ssot_04_plot_system.md's P10 layer description.
 3. **The Diaspora's first named act of resistance — Chief's fact, open (77-AK).** Canon gives only the fact of formation. *Rec: card this next, once Chief rules one.*
 4. **P8 collision row, P1 address, P11 duration/frequency** — all unassigned. *Rec: same recommendation as the other three skeletons — card a specific R2 SCENE here once a turn is ruled.*
+5. **RULED 2026-09-29 (77-AE).** Pass landed 2026-09-29; candidates ⧗ await Chief (see `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5).
 
 ## Version history
+- **0.1.2 · 2026-09-29.** 77-AE pass landed: `_tools/bolostatus/work/77/ANNA-M4-M6.md` §M5 proposes a Feed-staged broadcast of Anna's ascent circulating as the Diaspora forms (IC Contemplation, RS Doing) — ⧗ candidate, awaits Chief.
 - **0.1.1 · 2026-09-29.** RULED 2026-09-29 (BOLO 77 calls 77-AD and 77-AJ, "all recs"). 77-AJ: Quinn Bishop's coup at the parade is a world event the Diaspora answers, not Tori's own scene; her own signpost scene is her choice to lead. 77-AD: P10 for M5 = reversal. 77-AK (the Diaspora's first act of resistance) stays open, Chief's fact. Closes Open questions 1 and 2.
 - **0.1.0 ⧗ · 2026-09-29.** First skeleton card for Movement 5, BOLO 77 call 77-AB (Chief: "1.0"). No fabula event exists yet for M5; proposes `m5_diaspora_forms` ⧗ as the working id and offers Chief's Quinn Bishop coup/Nuremberg-parade idea as one ⧗ candidate event, `m5_qb_coup_parade`, never asserted as canon or as Tori's own scene. Four open questions for Chief.

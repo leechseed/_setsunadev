@@ -41,7 +41,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.15 · DOPE SHEET"
+  "version": "v0.16 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -62,7 +62,7 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Give 77-AG, 77-AK, 77-AL when you have them; the Anna M4–M6 presence pass (77-AE) fires on \"go\".**",
+  "order": "**Rule 77-AM to 77-AP (Anna's M4–M6 candidates); give 77-AG · 77-AK · 77-AL when you have them.**",
   "default": "Silence: plot stands at 1.0.1; the three facts stay open.",
   "calls": [
    {
@@ -301,7 +301,7 @@
      "leave her absent"
     ],
     "default": "task the pass",
-    "ruling": "RULED 2026-09-29. The presence pass is tasked; IC/RS stay ⧗ until it lands."
+    "ruling": "RULED 2026-09-29; PASS LANDED 2026-09-29: _tools/bolostatus/work/77/ANNA-M4-M6.md; candidates ⧗ on the M4 · M5 · M6 cards."
    },
    {
     "q": "77-AF · M1: the finish-line arrest",
@@ -368,6 +368,42 @@
      "Chief's fact (working id m6_fault_line_collapse ⧗)"
     ],
     "default": "open"
+   },
+   {
+    "q": "77-AM · M4: Anna inside the rank/Sync ceremony",
+    "s": "open",
+    "options": [
+     "take: composed, rising, intercut with Tori's reclassification (IC Contemplation · RS Doing)",
+     "other"
+    ],
+    "default": "take"
+   },
+   {
+    "q": "77-AN · M5: the Feed broadcasts Anna's ascent",
+    "s": "open",
+    "options": [
+     "take: the system's counter-message as the Diaspora forms",
+     "other"
+    ],
+    "default": "take"
+   },
+   {
+    "q": "77-AO · M6: the collapse exposes Anna's origin file",
+    "s": "open",
+    "options": [
+     "take: Tori and the Diaspora gather the rebuild record, closing the rivalry (IC Memories · RS Gathering Information)",
+     "other"
+    ],
+    "default": "take"
+   },
+   {
+    "q": "77-AP · the copy of Colson in M6",
+    "s": "open",
+    "options": [
+     "hold: nothing on record; the records collapse could surface her, decide later",
+     "place her now"
+    ],
+    "default": "hold"
    }
   ]
  },
@@ -768,6 +804,11 @@
      "path": "_CANON_NODES/oxo-scene-card-M6-skeleton.md",
      "what": "M6 skeleton, 40 ⧗",
      "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/77/ANNA-M4-M6.md",
+     "what": "the Anna M4–M6 presence pass (77-AE)",
+     "s": "done"
     }
    ],
    "cost": [
@@ -1066,6 +1107,16 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Folded into the four skeleton cards and the plot doc (1.0.1); three Chief's-fact calls stay open."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Go\" on the Anna pass."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Pass landed: one candidate per movement, cited to canon; four calls out, 77-AM to 77-AP."
     }
    ]
   }
