@@ -233,9 +233,9 @@ Every chapter opens with **d20 Questions** (roll once per player, answer the mat
 ## 8 · APPLICATION
 
 - **Spine level:** SETTING (non-story-spine source; keys to the entity beside the L0–L7 spine, per ssot_03's binding rule)
-- **12-layer character stack:** none directly — setting-side source; Five Factions' binding-principle-plus-treasure pairing is structurally the same move as keying an L8 IMPRINT belonging-architecture, but this is not itself a character-layer feed
-- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens — the Priority System's forced ranking is a ready scene-hook generator: rank any drafted faction, item, or location now, and the forced-low axis is the scene's built-in obstacle
-- **Setting:** primary — feeds S1, S5, S6, S7, S8, S9, S10, S11 of the SETTING SLICE
+- **12-layer character stack:** none directly. Setting-side source; Five Factions' binding-principle-plus-treasure pairing is structurally the same move as keying an L8 IMPRINT belonging-architecture, but this is not itself a character-layer feed
+- **plot_systems:** contextual candidate once `04_PLOT_SYSTEMS/` opens. The Priority System's forced ranking is a ready scene-hook generator: rank any drafted faction, item, or location now, and the forced-low axis is the scene's built-in obstacle
+- **Setting:** primary. Feeds S1, S5, S6, S7, S8, S9, S10, S11 of the SETTING SLICE
 
 Tested against the DCUS starter instance in `ssot_03`: Boom and Bust's origin-wound, dream, collapse, decay chain is the same shape as DCUS's own rename lattice (Skeeter Creek to Red Hills to DCUS), run at architectural rather than institutional grain, and is a usable model for writing DCUS's S5 SCAR record with more mechanical detail than prose alone gives. Five Factions' binding-principle axis (state, family, clan, school, company, order) sits beside Kobold's tribe/city-state/nation axis, adding school and company as binding types, both applicable to how DCUS's alumni-legacy bloc and Sync-era students split along different loyalties (S8 HABIT). The punk Attitude framework, keyed to a stance toward an oppressor, is a second, non-institutional culture model worth holding in reserve for a setting built around a power asymmetry rather than shared residence or blood. As with Kobold, the book is silent on S2 WEATHER, S3 SENSORIUM, and S12 FUNCTION: the first two are craft-of-description territory this workbook never enters, and the third sits outside a TTRPG exercise book's vocabulary.
 
