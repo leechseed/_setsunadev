@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.11 · DOPE SHEET"
+  "version": "v0.12 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,7 +54,7 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Draft the two proof scenes' prose, M2 grief montage first, against their ruled cards and theme reads.**",
+  "order": "Proof scenes ruled whole (77-U to 77-X, 9/29). Next: the scene card field trial on the M2 grief card (BOLO 90 step 7), then draft the prose.",
   "default": "Silence: the cards stand ruled; no prose is written.",
   "calls": [
    {
@@ -202,28 +202,28 @@
     "options": "Sync-feed glitches (visual/audio artifacts in the channel) · other",
     "default": "Sync-feed glitches (rec): canon calls row 9's flare a \"Digital Puberty glitch\"",
     "s": "ruled",
-    "ruling": "RULED 2026-09-29 (\"all recs\"): Sync-feed glitches, visual and audio artifacts in her channel. Theme: the Feed motif · debate 2."
+    "ruling": "RULED 2026-09-29, Chief: \"recs.\" Sync-feed glitches: visual and audio artifacts in her channel."
    },
    {
     "q": "77-V · M2: who dismisses her as \"Digital Puberty\"",
     "options": "the Administration, as a routine diagnostic · a named faculty member (none exists yet) · other",
     "default": "the Administration (rec): the only authority on record",
     "s": "ruled",
-    "ruling": "RULED 2026-09-29 (\"all recs\"): the Administration, as a routine diagnostic. Theme: the mechanism line performed · Freedom −− \"You're managed, not free.\""
+    "ruling": "RULED 2026-09-29 (recs). The Administration, as a routine diagnostic: nobody is cruel, the system files it."
    },
    {
     "q": "77-W · M3: how she gets the data",
     "options": "manual retrieval (scene pace) · V-Sync dive (stretch)",
     "default": "manual retrieval (rec): the card's default",
     "s": "ruled",
-    "ruling": "RULED 2026-09-29 (\"all recs\"): manual retrieval, no V-Sync dive. Theme: a door she could walk out of."
+    "ruling": "RULED 2026-09-29 (recs). Manual retrieval, at scene pace."
    },
    {
     "q": "77-X · M3: what the recovered record shows",
     "options": "her override is real, and the deletion itself points at the Administration · her fault only · tampering only",
     "default": "both, layered (rec): keeps her guilt and the MC Concern The Past; opens a later thread",
     "s": "ruled",
-    "ruling": "RULED 2026-09-29 (\"all recs\"): both, layered: her override is real, and the deletion points at the Administration. Theme: the controlling idea exactly · debate 4."
+    "ruling": "RULED 2026-09-29 (recs). Both, layered: her override is real, and the deletion itself points at the Administration."
    }
   ]
  },
@@ -839,6 +839,16 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Put the four scene calls with theme reads; ruled all four into both scene cards."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"recs\" on 77-U to 77-X."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "All four ruled on the recs; the M2 grief card's scene card trial runs next on these rulings."
     }
    ]
   }
