@@ -133,3 +133,18 @@ gap_effect: curiosity        # Sternberg: "the telling opens with an effect and 
 
 ## Version history
 - **0.1.0 ⧗ · 2026-09-24.** First anachrony card, run against ssot_04_plot_system.md OPEN call 14 (ruled, rec taken, Chief: "take both"). Verified the candidate's "internal analepsis" label against THE TOLD ORDER's own external/internal/mixed test — confirmed, not corrected. P3–P5 and P8–P10 left open rather than invented per the hard rule.
+
+---
+
+## RULED 2026-09-29 (BOLO 77, "all recs") · the open specifics, closed
+
+- **77-W · how she gets the data:** **manual retrieval** (scene pace; the card's default). No V-Sync dive: she reaches the truth by hand, outside the Feed.
+- **77-X · what the recovered record shows:** **both, layered**: her override is real (her guilt stands; MC Concern The Past holds), **and** the deletion itself points at the Administration (opens a later thread).
+
+### THEME READ (07_THEME_SYSTEMS v0.7.0)
+
+- **Debate tested:** 4 · *Whose memory of what happened counts?* (the deleted record against the Feed's cut and the Reset's funeral)
+- **Freedom step:** moves from −− *You're managed, not free* toward + *Your life is yours*: the first step she takes outside the system's channel
+- **Fairness step (world):** −−− *They cheat you and give you a grade for it.* (the deletion was procedure)
+- **Motif:** **a door she could walk out of**: manual retrieval is the door, taken one step at a time
+- **Controlling idea, performed:** the people who deleted the record did their jobs; nobody had to be evil for the truth to disappear.

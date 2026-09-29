@@ -4,9 +4,9 @@
   "title": "The plot system, expanded on rails — fabula · trope graph · syuzhet",
   "trunk": "BLACK",
   "issued": "2026-09-23",
-  "asof": "2026-09-24",
-  "s": "gated",
-  "status": "⛔ **GATED on BOLO 80 (theme)** · 81 is last-in-line, its bootstrap landed 9/24 · both proof scenes CARDED (draft ⧗)",
+  "asof": "2026-09-29",
+  "s": "open",
+  "status": "🟢 **UNGATED + SCENE CALLS RULED 9/29** — theme (BOLO 80) ruled in full; 81's bootstrap landed 9/24, so the gate is clear · 77-U Sync-feed glitches · 77-V the Administration as routine diagnostic · 77-W manual retrieval · 77-X both, layered · each proof scene now carries its theme read (debate · Freedom step · Fairness step · motif).",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the three docs under `04_PLOT_SYSTEMS/` (fabula · trope graph · syuzhet) · the character system's origin-moment handshake · BOLO 18's L4 plot shelf · BOLO 46's Anna Colson node and the Telling Profile",
   "related": [
@@ -33,7 +33,7 @@
   ],
   "home": "BOLO.md · row 77",
   "card": "none",
-  "version": "v0.10 · DOPE SHEET"
+  "version": "v0.11 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -54,8 +54,8 @@
  ],
  "frago": {
   "mission": "Build the plot system as three docs on rails (fabula, trope graph, syuzhet), **in order to** give every character layer an origin moment on one world timeline shared by OXO and EVIL CHECK.",
-  "order": "**Gated on BOLO 80.** 77 resumes when the theme doc lands (81 comes last, after the systems are stable). Then: the four scene questions (77-U to 77-X).",
-  "default": "Silence: 77 waits on 80 and 81; nothing else moves here.",
+  "order": "**Draft the two proof scenes' prose, M2 grief montage first, against their ruled cards and theme reads.**",
+  "default": "Silence: the cards stand ruled; no prose is written.",
   "calls": [
    {
     "q": "77-A · the boresight (five calls)",
@@ -201,25 +201,29 @@
     "q": "77-U · M2: what the grief outbursts look like",
     "options": "Sync-feed glitches (visual/audio artifacts in the channel) · other",
     "default": "Sync-feed glitches (rec): canon calls row 9's flare a \"Digital Puberty glitch\"",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): Sync-feed glitches, visual and audio artifacts in her channel. Theme: the Feed motif · debate 2."
    },
    {
     "q": "77-V · M2: who dismisses her as \"Digital Puberty\"",
     "options": "the Administration, as a routine diagnostic · a named faculty member (none exists yet) · other",
     "default": "the Administration (rec): the only authority on record",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): the Administration, as a routine diagnostic. Theme: the mechanism line performed · Freedom −− \"You're managed, not free.\""
    },
    {
     "q": "77-W · M3: how she gets the data",
     "options": "manual retrieval (scene pace) · V-Sync dive (stretch)",
     "default": "manual retrieval (rec): the card's default",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): manual retrieval, no V-Sync dive. Theme: a door she could walk out of."
    },
    {
     "q": "77-X · M3: what the recovered record shows",
     "options": "her override is real, and the deletion itself points at the Administration · her fault only · tampering only",
     "default": "both, layered (rec): keeps her guilt and the MC Concern The Past; opens a later thread",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"): both, layered: her override is real, and the deletion points at the Administration. Theme: the controlling idea exactly · debate 4."
    }
   ]
  },
@@ -570,13 +574,13 @@
     },
     {
      "path": "_CANON_NODES/oxo-scene-card-M2-grief-summary.md",
-     "what": "call 13 — the first summary + iterative unit, draft ⧗",
-     "s": "open"
+     "what": "77-U/V ruled + theme read appended",
+     "s": "done"
     },
     {
      "path": "_CANON_NODES/oxo-scene-card-M3-crash-analepsis.md",
-     "what": "call 14 — the first worked anachrony, draft ⧗",
-     "s": "open"
+     "what": "77-W/X ruled + theme read appended",
+     "s": "done"
     }
    ],
    "cost": [
@@ -825,6 +829,16 @@
      "when": "9/24",
      "who": "Claude",
      "t": "Gate narrowed: invariants ruled last-in-line 9/24, so 77 waits on 80 plus 81's bootstrap (landed)."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Go 77.\" · \"All recs.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Put the four scene calls with theme reads; ruled all four into both scene cards."
     }
    ]
   }

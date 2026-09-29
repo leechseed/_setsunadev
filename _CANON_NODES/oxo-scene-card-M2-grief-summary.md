@@ -154,3 +154,18 @@ Every item below is a specific the fabula and telling-profile records leave sile
 
 ## Version history
 - **0.1.0 ⧗ · 2026-09-24.** First card for ssot_04_plot_system.md OPEN call 13 (Chief: "take both," BOLO 77, syuzhet OPEN call 13). Reads fabula event `m2_grief_outbursts` at `duration: summary` / `frequency: iterative`, the pair row 9 could not prove on its own scene-speed/singulative reading of the same event class. Eleven open questions, no story specifics invented beyond the fabula record, victoria-midnight.md, oxo-telling-profile.md, and row 9's own card.
+
+---
+
+## RULED 2026-09-29 (BOLO 77, "all recs") · the open specifics, closed
+
+- **77-U · what the outbursts look like:** **Sync-feed glitches**: visual and audio artifacts in her channel (canon already names row 9's flare a "Digital Puberty glitch").
+- **77-V · who dismisses her:** **the Administration, as a routine diagnostic**. No named faculty member; the dismissal is procedure, not cruelty.
+
+### THEME READ (07_THEME_SYSTEMS v0.7.0)
+
+- **Debate tested:** 2 · *Believe the story, or believe your eyes?* (her grief is real; the diagnosis says it is a phase)
+- **Freedom step:** −− *You're managed, not free.* (the Administration relabels grief as development)
+- **Fairness step (world):** − *Some people get a head start.* (the system decides whose distress counts as signal)
+- **Motif:** **the Feed**: the grief leaks into the channel the system watches
+- **Controlling idea, performed:** nobody in the diagnostic is evil; everyone is doing their job. The mechanism line made visible: *it trains you, measures you, then calls the result your nature.*
