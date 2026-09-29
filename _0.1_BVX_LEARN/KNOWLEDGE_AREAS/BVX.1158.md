@@ -181,14 +181,14 @@ The three chapters are not sequential in play; a referee may build worlds first 
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Building a new world | Roll Size, then Atmosphere, then Hydrographics and Temperature, then Population, then Government, then Law Level, in that order | Decide Government or Tech Level first and retrofit the physical stack to match |
-| Deciding what a world trades | Read its Trade codes off the finished UWP | Invent an economy from scratch that ignores the world's own physical and political profile |
-| Writing a government | Roll or pick from the 16-entry table and use its Common Contraband column to seed what it restricts | Invent a government's stance on weapons or drugs independently of its type |
-| Fleshing out a Traveller's origin | Choose Background Skills that imply a specific kind of homeworld (agricultural, belter, urban) | Pick skills at random with no thought to what kind of world would produce them |
-| Running a career the referee never designed | Let its Survival risk, Events table and Mustering Out Benefits imply its institutional culture | Insist on writing the organization's full history before any character can serve in it |
-| Linking two player characters' backstories | Use the Connections Rule to share one rolled Event between them | Default to "you all meet in the starport bar" with no shared history |
-| Setting a world's Law Level | Treat it as a lookup table for exactly what a Traveller cannot carry, from poison gas at Law 1 to all weapons at Law 9+ | Describe a world as "strict" without pricing out what that strictness actually bans |
-| Choosing a campaign's tone | Pick one of the named campaign types (Trader, Military, Explorer, or the everything-at-once Traveller campaign) before play | Let tone drift session to session with no named contract |
+| Building a new world | Roll Size, then Atmosphere, then Hydrographics/Temperature, then Population, then Government, then Law Level, in order | Decide Government or Tech Level first and retrofit the physical stack |
+| Deciding what a world trades | Read its Trade codes off the finished UWP | Invent an economy that ignores the world's own profile |
+| Writing a government | Pick from the 16-entry table and use its Contraband column to seed what it restricts | Invent a stance on weapons or drugs independent of type |
+| Fleshing out a Traveller's origin | Choose Background Skills that imply a specific homeworld | Pick skills at random with no thought to the world behind them |
+| Running a career the referee never designed | Let its Survival risk, Events and Mustering Out imply its culture | Write the organization's full history before anyone serves in it |
+| Linking two backstories | Use the Connections Rule to share one rolled Event | Default to "you all meet in the starport bar" |
+| Setting a world's Law Level | Use it as a lookup for exactly what cannot be carried | Describe a world as "strict" with nothing priced out |
+| Choosing a campaign's tone | Pick a named campaign type before play | Let tone drift with no named contract |
 
 ---
 
