@@ -17,11 +17,11 @@ feeds:
   - layer: SETTING
     variable: S4_law
     strength: primary
-    note: "Megacorps read as quasi-nations with their own law, police, and covert forces; Night City's political section (Corp-owned Council, C-SWAT) is the same claim at city scale. Governance is a function of who holds power, not a separate civic layer."
+    note: "Megacorps read as quasi-nations with their own law, police, and covert forces; Night City's Corp-owned Council and C-SWAT restate the same claim at city scale. Governance follows power, not a separate civic layer."
   - layer: SETTING
     variable: S6_economy
     strength: primary
-    note: "The World Stock Exchange, the Eurodollar, and the corporate-profile card's shareholder/employee/troop counts are the book's whole S6 method: economy expressed as a faction stat block, not a market simulation."
+    note: "The World Stock Exchange, the Eurodollar, and the profile card's shareholder/employee/troop counts are the book's S6 method: economy as a faction stat block, not a market simulation."
   - layer: SETTING
     variable: S7_founding
     strength: primary
@@ -33,7 +33,7 @@ feeds:
   - layer: SETTING
     variable: S11_vector
     strength: supporting
-    note: "The Future History Timeline (headline-per-year, 1990 to 2020) and the doctrine that corporate wars must stay short and covert or invite government intervention both model VECTOR as an escalation with a ceiling, not an open slope."
+    note: "The Future History Timeline (headline-per-year, 1990-2020) and the rule that corporate wars stay short and covert or invite intervention both model VECTOR as escalation with a ceiling, not an open slope."
   - layer: L5
     variable: L5_wound
     strength: primary
@@ -218,13 +218,13 @@ Nothing in the book argues for the attitude. Rule 1 is asserted on page one and 
 
 ## 7 · PITFALLS / MYTHS
 
-- Writing deep, static lore that never touches present-day stakes: the opposite failure to the Future History Timeline's headline-escalation method.
-- Letting a player invent a backstory that names no faction, place, or setting fact; this defeats the entire point of running a Lifepath.
-- Treating a corporation (or any faction) as a monolithic, undetailed antagonist with no fillable stat block, so nobody at the table can improvise a heist or a firefight against it.
-- Removing the "staggering contrasts" between rich and poor, safe and dangerous; a uniformly grim setting loses the punk half of cyberpunk as fast as a uniformly safe one loses the cyber half.
-- Treating a Role (Rockerboy, Solo, Netrunner, etc.) as a costume rather than a mechanical badge tied to one Special Ability and one genre promise.
-- Declaring an open, visible war between major factions; it breaks the setting's own stated physics (corporate war must stay covert or short).
-- Mistaking "the important thing is the feel, not the substance" for permission to skip preparation entirely. The book still hands the Referee a filled-in Night City to start from; genericity is a template, not an absence.
+- Writing deep, static lore that never touches present-day stakes: the opposite failure to the Timeline's headline-escalation method.
+- Letting a player invent a backstory naming no faction, place, or setting fact; this defeats the point of running a Lifepath.
+- Treating a faction as a monolithic, undetailed antagonist with no fillable stat block, so nobody can improvise a heist or firefight against it.
+- Removing the "staggering contrasts" between rich and poor; a uniformly grim setting loses the punk half of cyberpunk as fast as a uniformly safe one loses the cyber half.
+- Treating a Role as a costume rather than a mechanical badge tied to one Special Ability and one genre promise.
+- Declaring an open, visible war between major factions; it breaks the setting's stated physics (corporate war stays covert or short).
+- Mistaking "feel, not substance" for permission to skip preparation. The book still hands the Referee a filled-in Night City; genericity is a template, not an absence.
 
 ---
 
@@ -255,7 +255,7 @@ This is the first SETTING-shelf source in the library built for a science-fictio
 
 Full text, extracted via OCR/pdftotext from the scanned original (visible OCR noise throughout, garbled running headers and table borders; body prose legible). Read in full: front matter and table of contents; "Soul of the New Machine" (the intro, the four numbered Rules, the Role/Special Ability list); the Lifepath chapter "Tales From the Street" through Origins & Style, Family Background, and the start of Motivations and the yearly Life Events loop; "Welcome to Night City" (Overview, History, Present, Particulars: political, public services, transportation); a sample of the Night City encounter tables; "Megacorps 2020" (Corporate Life, Mediacorporations, Agricorps, the World Stock Exchange, Corporate Espionage, Corporate Wars, the Corporate City); two full corporate profiles (Biotechnica, Infocomp) and partial profiles (WorldSat, Arasaka, Merrill Asukaga & Finch, WNS, Petrochem); "Future Shock: History of An Alternate Time" and its Future History Timeline (1990-1995 sampled in full, structure confirmed across the range); "Running Cyberpunk" in full.
 
-Not read in this pass: character-creation rules beyond Lifepath (stats, skills, combat, cybertechnology, netrunning), the remaining Corporate Profiles, the "Never Fade Away" adventure, and the Screamsheets supplements: out of scope for a SETTING-shelf distill focused on world-building chapters over rules crunch.
+Not read: character-creation rules beyond Lifepath, the remaining Corporate Profiles, the "Never Fade Away" adventure, and the Screamsheets: out of scope for a SETTING-shelf distill focused on world-building over rules crunch.
 
 The `feeds:` keying against the SETTING SLICE (S1–S12) and the 12-layer character stack follows the v4 template's binding rule and mirrors BVX.0458's method; the L5/L6/L7/L8 character-layer feeds are this distill's own synthesis, reading the Lifepath as a chargen-to-setting bridge rather than as a setting-only source, per the brief naming "the Lifepath as a way to seed a world into characters" as a required focus.
 
