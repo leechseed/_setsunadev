@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **9124** |
-| With a PDF attachment | 9124 |
-| PDF present on disk | 9033 |
+| Top-level items | **9126** |
+| With a PDF attachment | 9126 |
+| PDF present on disk | 9035 |
 | Already in catalog.json (BVX id) | 1016 |
-| **New since the Dec-2023 catalog** | **8108** |
+| **New since the Dec-2023 catalog** | **8110** |
 | Story-side (CRE + LIT by catalog) | 660 |
 | **Spine-keyed from Chief's tags** | **909** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 5743 |
+| NEW | 5745 |
 | GAM | 1241 |
 | CRE | 487 |
 | PHI | 286 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (8108)
+## New since the catalog (8110)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -1842,6 +1842,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Dian Hanson - The Big Book of Breasts-Taschen | 2006 |  |
 |  | Dian Hanson - The Big Book of Breasts-Taschen America | 2006 |  |
 |  | Dian Hanson - The Big Butt Book _ the dawning of the age of ass-Tasche | 2010 |  |
+|  | Diaspora SRD 0.2.0 |  |  |
 |  | DIE HEISSESTEN BEACH-GIRLS DES SOMMERS | Spleiss |  |
 |  | Digital Marketing Fundamentals |  |  |
 |  | Digital Marketing Fundamentals OMCPs... |  |  |
@@ -4314,6 +4315,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2012 | Michael Freeman's Photo School: Exposure | Freeman, Wignall | 080009 - PHOTOGRAPHY |
 |  | Michael Suileabhain-Wilson - GURPS Classic_ Deadlands_ Varmints-Steve  | 2020 |  |
 |  | Michael Suileabhain-Wilson - GURPS Classic_ Deadlands_ Varmints-Steve  | 2020 |  |
+|  | Microlite2020 Core Rules 1.02 |  |  |
 | 2012 | Microsoft manual of style | Microsoft Corporation |  |
 | 2012 | Microsoft manual of style: your everyday guide to usage, terminology,  | Woolley, Microsoft Corporation |  |
 |  | Midgard - Bestiary |  |  |
