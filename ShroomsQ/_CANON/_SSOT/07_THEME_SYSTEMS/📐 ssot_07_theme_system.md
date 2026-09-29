@@ -1,10 +1,10 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 0.7.0
+version: 1.0.0
 last_updated: 2026-09-29
-applies_to: [OVEREXITOUT first, EVIL CHECK second (80-D)]
-status: RULED 2026-09-29 — every BOLO 80 call ruled; open items are the BOLO 81 handshake and EVIL CHECK (wave 2)
+applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
+status: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
 dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
 trunk: BLACK
@@ -12,6 +12,40 @@ sources: [MSX.36, BVX.0236, BVX.0193, "_tools/bolostatus/work/80/DISTILL.md", "_
 ---
 
 # 📐 SSOT: THE THEME SYSTEM — the argument, in one sentence first
+
+## THE METHOD — how any story builds its theme
+
+Four parts, not a twelve-layer stack. The character and setting systems (L1–L12, S1–S12) exist to hold a record — everything true about a person or a place. Theme exists to pick a fight: it is one argument a story is making, and one argument needs four moving parts, not twelve. Any story builds them in this order.
+
+**(a) The controlling idea — value + cause, plus a mechanism line.**
+- *What it is:* one sentence in the form *[value] happens because [cause]* — a value wired to the mechanism that moves it (Egri's premise, McKee's controlling idea). A second sentence, the mechanism line, restates the *how* in the story's own idiom, so the claim reads as something the world actually does, not an abstraction.
+- *How to build it:* draft candidates until cutting the story down to one sentence leaves exactly one survivor; then write the mechanism line by answering "how does the system pull this off, concretely."
+- *Test it's done:* a reader can rebuild the story's whole shape from the sentence alone, and the mechanism line explains the sentence's *how* without repeating its *what*.
+- *Worked below:* OVEREXITOUT's controlling idea and mechanism line, under THE WORKED INSTANCE.
+
+**(b) The rails — 3–5 debates.**
+- *What it is:* one debate per major point of view, each a plain question the story argues both sides of across its whole length — never settled once, argued scene by scene. Each debate is the storyform's own locked Issue vs. Counterpoint pair for that throughline (world/OS, protagonist/MC, foil/IC, relationship/RS), put in plain words.
+- *How to build it:* take the storyform's Issue/Counterpoint pairs, one per throughline, and phrase each as a question a character could actually ask out loud.
+- *Test it's done:* every debate has scenes arguing each side, not just the winning one, and the full set of debates sums back to the controlling idea.
+- *Worked below:* OVEREXITOUT's four rails.
+
+**(c) The value scale — one or two gauges, stepped per scene.**
+- *What it is:* the value the controlling idea turns on, broken into four steps — positive, contrary, contradictory, negation of the negation (the McKee/Coyne value spectrum) — so any scene's turn can be named as a step up or down. A second gauge is added only when one point of view runs on a genuinely different value than the rest.
+- *How to build it:* name the value, then write plain words for each of the four steps, worst to best.
+- *Test it's done:* every scene's value turn (the plot card's value-in/value-out fields) names one of the four steps, and the steps read as a ladder, not four unrelated moods.
+- *Worked below:* OVEREXITOUT's Freedom (primary) and Fairness (world) scales.
+
+**(d) The motifs — 2–4 recurring images.**
+- *What it is:* images, objects, or actions that recur across the story and carry a rail or a scale step without anyone saying it aloud (Tomashevsky's motif, Greimas's isotopy).
+- *How to build it:* pick images already present in the setting/character material, tie each to one rail or one scale step, and check that each appearance can be read as advancing or reversing that tie.
+- *Test it's done:* a reader who has never seen the theme sentence can still point at the pattern; every motif ties to a named rail or step, none floats free.
+- *Worked below:* OVEREXITOUT's three motifs.
+
+Derived entirely from OVEREXITOUT's own worked sections below and this doc's PROVENANCE (Egri, McKee, Coyne, Tomashevsky/Greimas via Foucault-adjacent theory reading) — no new theory invented for this pass.
+
+## THE WORKED INSTANCE — OVEREXITOUT
+
+Everything from here through THE MOTIFS is OVEREXITOUT's worked instance of the method above: one controlling idea (with mechanism line), four rails, two gauges, three motifs. EVIL CHECK gets its own worked instance later — PARKED, wave 2, see below.
 
 ## THE CONTROLLING IDEA — OVEREXITOUT
 
@@ -93,10 +127,43 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 
 Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is keyed to the four rails R1–R4 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **theme**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. The theme sub-index pass (Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) is keying as of 2026-09-29.
 
+## THE HANDSHAKE — theme × Touchstones (BOLO 81)
+
+Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene to scene, and can pressure-test a Touchstone hard — but no scene may write past what a live Touchstone locks. Today exactly one Touchstone is live: **TS 1:1, the bounded container** (soft — a tendency, not a rule; see [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md)).
+
+| Rail | The debate | Live Touchstone(s) it must never break | How the rail may still argue around it |
+|---|---|---|---|
+| R1 · the world | *They already know how you'll turn out. Can you prove them wrong?* | TS 1:1 (soft) | world scenes can stage erotic/ritual power as uncontained, for dread — TS 1:1's own container lives outside the book (a front-of-book disclaimer, per its refinement), not inside the scene |
+| R2 · Tori | *Believe the story, or believe your eyes?* | TS 1:1 (soft) | Tori's scenes can dramatize a container failing her (the fall's own ironic charge) without breaking TS 1:1 — a soft Touchstone names a tendency to fade or turn dangerous *without* a container, so showing that danger is the Touchstone working, not broken |
+| R3 · Anna | *Don't fight the game. Win it.* | TS 1:1 (soft) | Anna's ascent can stage ritual/erotic power inside a bounded rite (a ceremony, a Sync session with a clear end) and argue "win it" with no tension against TS 1:1 at all |
+| R4 · Tori ↔ Anna | *Whose memory of what happened counts?* | TS 1:1 (soft) | the rivalry can contest whose account of a contained-vs-uncontained scene is true — the debate can be *about* the container itself and still honor TS 1:1 |
+
+**The rule:** a new Touchstone gets this same row check against every rail (R1–R4) the day it goes live, before any scene already carded under that rail is treated as bound by it.
+
+## 1.0 BAR (RULED 2026-09-29, BOLO 80)
+
+Every gate Chief set for 1.0, checked:
+
+- ✓ **Method written** — THE METHOD, above.
+- ✓ **OXO worked instance** — THE WORKED INSTANCE — OVEREXITOUT (controlling idea, four rails, two gauges, three motifs).
+- ✓ **A theme read on all 7 cards:**
+  - [`oxo-scene-card-M1-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M1-skeleton.md)
+  - [`oxo-scene-card-M2-grief-summary.md`](../../../../_CANON_NODES/oxo-scene-card-M2-grief-summary.md)
+  - [`oxo-scene-card-M2-row9.md`](../../../../_CANON_NODES/oxo-scene-card-M2-row9.md)
+  - [`oxo-scene-card-M3-crash-analepsis.md`](../../../../_CANON_NODES/oxo-scene-card-M3-crash-analepsis.md)
+  - [`oxo-scene-card-M4-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M4-skeleton.md)
+  - [`oxo-scene-card-M5-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M5-skeleton.md)
+  - [`oxo-scene-card-M6-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M6-skeleton.md)
+- ✓ **The 81 handshake** — THE HANDSHAKE, above.
+- ✓ **OPEN closed or parked** — the handshake is closed (built above); EVIL CHECK's controlling idea is PARKED (wave 2, below). Nothing left open.
+
+## PARKED (wave 2)
+
+- **EVIL CHECK's controlling idea** — outside the 1.0 bar, per 80-D. No controlling idea, rails, scale, or motifs are drafted for EVIL CHECK; the method above applies to it unchanged whenever wave 2 opens.
+
 ## OPEN
 
-- The handshake table with BOLO 81 (waits on 81's release).
-- EVIL CHECK's controlling idea (wave 2, per 80-D).
+None. Both items formerly listed here are resolved: the BOLO 81 handshake is built above; EVIL CHECK's controlling idea is PARKED (wave 2), not open.
 
 ## Version history
 
@@ -107,3 +174,4 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is key
 - **0.5.0 · 2026-09-29** — motif amended: the Feed replaces the legibility violation (G · F · A).
 - **0.6.0 · 2026-09-29** — 80-C, 80-E, 80-G ruled on "all recs"; Fairness added as the world's second gauge.
 - **0.7.0 · 2026-09-29** — Fairness gauge plain words handpicked (A · A · C · B).
+- **1.0.0 · 2026-09-29** — 1.0 per BOLO 80's bar, RULED: THE METHOD written (the general four-part method, ahead of any single story's instance); OVEREXITOUT's sections relabeled THE WORKED INSTANCE; theme reads confirmed present on all 7 cards (M1 · M2-grief-summary · M2-row9 · M3 · M4 · M5 · M6); THE HANDSHAKE built (BOLO 81, TS 1:1 × R1–R4); EVIL CHECK's controlling idea moved from OPEN to PARKED (wave 2, 80-D). Status: canonical.

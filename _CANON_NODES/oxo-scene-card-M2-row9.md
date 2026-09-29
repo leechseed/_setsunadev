@@ -83,3 +83,13 @@ exit state:     Tori is Verified (neon blue) for the first time · the Feed's ca
 
 ## Version history
 - **0.1.0 ⧗ · 2026-09-10.** First card, run end to end (the setting system's OPEN item "scene card field trial"). Prose instance in `OUTLIERS_FINAL_DRAFT/oxo-row9-scene-DRAFT.fountain`.
+
+---
+
+### THEME READ (07_THEME_SYSTEMS v1.0.0)
+
+- **Debate tested:** 2 · *Tori* — Interpretation vs Senses, "Believe the story, or believe your eyes?" — she says the missing human line herself ("breathe"); the Feed archives it as noise and rates her anyway, and she takes the Feed's story (Verified) over the felt refusal underneath
+- **Freedom step:** ⧗ holds both readings, same shape as the M4 card's own 77-AI ruling for this identical ironic charge — Tori reads + *Your life is yours* (whole again, thirty seconds); the true reading is −−− *Control that feels like freedom* (the cage feels like home) — matches the card's own value turn verbatim (whole −→+ for Tori · owned +→− underneath)
+- **Fairness step (world):** ⧗ interpretive — −−− *They cheat you and give you a grade for it*: the Feed archives her one true (human) input as "Unrecognized," then lets her rating climb anyway — graded on a channel it just declared invalid
+- **Motif:** ⧗ **the uniform and the mirror** over **the Feed** (both are present; picked this one because the exit beat is specifically about being *seen* — the hall turns to look, the uniform glows Verified, and she likes what she sees) — the mechanism line made visible: she sees herself as they just made her
+- **Controlling idea, performed:** no one in the hall does anything cruel; the Feed runs its ordinary rating procedure — mirror, score, verify — and doing that job is the whole of the hook
