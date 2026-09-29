@@ -6,7 +6,7 @@
   "issued": "2026-09-24",
   "asof": "2026-09-29",
   "s": "open",
-  "status": "🟢 **CONTROLLING IDEA RULED 9/29** — \"Nobody has to be evil when everyone does their job.\" · mechanism line (biopower): \"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\" · doc bootstrapped: `ShroomsQ/_CANON/_SSOT/07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` v0.1.0 · Foucault now distilled from the primary text (MSX.36) · next: walk 80-B, the shape, starting with Dramatica's argument as the rails · 80-C and 80-E recs out.",
+  "status": "🟢 **SHAPE RULED 9/29** — controlling idea: \"Nobody has to be evil when everyone does their job.\" · rails: four debates in Chief's words · value: FREEDOM (Your life is yours → You go along to get along → You're managed, not free → The cage feels like home) · motifs: the uniform and the mirror · a door she could walk out of · the legibility violation · doc v0.4.0 `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` · open: 80-C, 80-E, Fairness side gauge (all rec yes).",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the theme doc for `07_THEME_SYSTEMS/` (not yet written) · BOLO 77's four open syuzhet calls (77-U to 77-X), gated until this lands · the theme/invariants handshake BOLO 81 shares (`cost_and_meaning`, named \"theme with enforcement teeth\")",
   "related": [
@@ -25,7 +25,7 @@
   ],
   "home": "BOLO.md · row 80",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -46,8 +46,8 @@
  ],
  "frago": {
   "mission": "Build the theme system as one doc, **in order to** give every scene a value it moves and an argument it serves before any scene is written.",
-  "order": "**Walk 80-B, the doc's shape, one piece at a time — first piece: Dramatica's argument as the rails.**",
-  "default": "Silence: the sentence stands at the top of the theme doc; the shape waits.",
+  "order": "**Rule the last three recs (80-C handshake · 80-E held books · Fairness as the world's second gauge); then theme hands BOLO 77 its gate.**",
+  "default": "Silence: the shape stands; 77 stays gated on 80 + 81.",
   "calls": [
    {
     "q": "80-A · Where does the theme doc live?",
@@ -60,8 +60,8 @@
     "q": "80-B · What is the theme doc built from?",
     "options": "four parts: Dramatica's argument as the rails (Issue vs Counterpoint, Problem → Solution, Outcome + Judgment) · McKee's controlling idea as the one sentence · Coyne's value scale (positive → contrary → contradictory → negation of the negation) as the gauge each scene reads · motifs (Tomashevsky, Greimas) fed to texture · or a smaller set",
     "default": "all four (rec)",
-    "s": "open",
-    "ruling": "9/24: Chief wants the shape walked piece by piece before ruling."
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29, walked piece by piece: (1) the rails, the four storyform debates in Chief's words: \"They already know how you'll turn out. Can you prove them wrong?\" · \"Believe the story, or believe your eyes?\" · \"Don't fight the game. Win it.\" · \"Whose memory of what happened counts?\" (2) the one sentence (the controlling idea). (3) the value scale, FREEDOM: Your life is yours · You go along to get along · You're managed, not free · The cage feels like home. (4) motifs: the uniform and the mirror · a door she could walk out of · the legibility violation."
    },
    {
     "q": "80-C · How does theme relate to the rules (BOLO 81)?",
@@ -95,6 +95,12 @@
     "default": "#6 fusion",
     "s": "ruled",
     "ruling": "RULED 2026-09-29, Chief: \"number six is fucking it\" — **Nobody has to be evil when everyone does their job.** Mechanism line kept alongside (biopower C): \"It doesn't find out who you are. It trains you, measures you, then calls the result your nature.\""
+   },
+   {
+    "q": "80-G · Fairness as a second gauge for world scenes?",
+    "options": "yes, world scenes read Fairness, Tori's read Freedom · no, Freedom only",
+    "default": "yes (rec): the world's debate already runs Equity → Inequity",
+    "s": "open"
    }
   ]
  },
@@ -203,9 +209,15 @@
     },
     {
      "n": 3,
+     "s": "done",
+     "when": "9/29",
+     "t": "**80-B, the shape, fully walked** — rails (1B · 2B · 3B · 4A), value scale FREEDOM (B · A · B · B), motifs (G · F · E). Doc v0.4.0."
+    },
+    {
+     "n": 4,
      "s": "open",
      "when": "next",
-     "t": "**80-B, the shape** — walk the four pieces one at a time: Dramatica rails · McKee sentence (filled) · Coyne gauge · motifs."
+     "t": "**The last three recs** — 80-C · 80-E · 80-G; then the gate on BOLO 77 is theme-clear."
     }
    ],
    "coord": [
@@ -737,6 +749,16 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Walked 35 candidates; locked \"Nobody has to be evil when everyone does their job.\" and bootstrapped the theme doc v0.1.0."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "Walked 80-B piece by piece: rails \"1B, 2B, 3B, 4A\" · value \"I like option two\" (Freedom), words \"B A B B\" · motifs \"G, F, E\"."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Wrote each ruling into the theme doc as it landed (v0.2.0 → v0.4.0)."
     }
    ]
   }
