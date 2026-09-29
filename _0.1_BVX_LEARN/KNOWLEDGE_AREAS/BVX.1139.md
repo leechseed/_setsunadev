@@ -174,7 +174,7 @@ The book commits in a fixed order, and the order argues something: character opt
 | **Game Mastering** | The horror engine as usable subsystems: Adventure Generator, Trust, Fear and Insanity, Forbidden Knowledge, Weather, disease, settlement creation | The tools that turn "a dark setting" into a played one |
 | **Monsters, Templates, Bestiary** | Creature stats plus a note on reflavoring familiar monsters for dread | The last mile: even an ordinary rat should not read as safe |
 
-The introduction states the design origin directly: a 24-hour game-jam vote tied between "Lovecraftian/Eldritch horror" and "Survival horror," so the designers fused both rather than picking one. That fusion is the book's one unifying idea, expanded once per subsystem exactly as Kobold's "dynamite not encyclopedia" filter runs once per essay (BVX.0458).
+The introduction states the design origin directly: a 24-hour game-jam vote tied between "Lovecraftian/Eldritch horror" and "Survival horror," so the designers fused both. That fusion is the book's one unifying idea, expanded once per subsystem exactly as Kobold's "dynamite not encyclopedia" filter runs once per essay (BVX.0458).
 
 ---
 

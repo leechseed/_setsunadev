@@ -207,7 +207,7 @@ Back-cover claim, confirmed in the text: "more than 50 kingdom write-ups, with n
 | Rewarding regional identity | Write one background trait per notable region or culture, keyed to its defining hazard or practice | Leave regional flavor as read-only description |
 | Designing a faction or clan | Give it one named distinguishing practice and one explicit stance toward a neighbor or rival | Write a lore paragraph with no actionable stance |
 | Linking regions into one world | Run at least one cataclysm or empire-fall whose ruins and grudges touch multiple current regions | Isolate each kingdom's history to itself |
-| Varying government across a setting | Choose a distinct binding principle per region (elected, cantonal, hereditary, clan-chieftain) | Default every kingdom to the same monarchy template |
+| Varying government across a setting | Choose a distinct binding principle per region | Default every kingdom to the same monarchy template |
 
 ---
 
@@ -257,9 +257,9 @@ The two devices most worth stealing for a science-fiction setting system: the re
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text, pdftotext extraction from a ~320-page PDF (two-column layout, legible text with a machine-readable table of contents). Read in full: Chapter 1 (Welcome to Midgard: the Seven Secrets, the Creation myth, the Reaving/fall-of-Ankesh/elven-empire cataclysm chain, and the full Ley Lines section including classification, locking, and the burnout-backlash table); the Chapter 10 Pantheon sections "Power Granted, Power Stolen," "How Gods Use Masks," and both Design Note sidebars ("Masks and Mystery," "Gods and Alignment"); the Free City of Zobeck region entry in Chapter 3 (the model region-entry card, stat block through Government); the Eight Great Clans faction write-up in Chapter 4. Sampled: individual god entries in Chapter 10 (Thor, Freyr and Freyja, read for format rather than exhaustively); the New Backgrounds appendix (regional traits, several read in full as the mechanical-habit example, remainder skimmed for pattern); chapter openings for Chapters 5 through 9 (region stat blocks scanned to confirm the card recurs, not deep-read). Not read: full racial write-ups in Chapter 2, spell and magic-item lists, the AGE System appendix, and the regional encounter tables in Appendix 2.
+Full text, pdftotext extraction from a ~320-page PDF (two-column layout, machine-readable TOC). Read in full: Chapter 1 (Seven Secrets, Creation myth, the Reaving/Ankesh/elven-empire cataclysm chain, and the Ley Lines section including classification, locking, and the burnout-backlash table); Chapter 10's "Power Granted, Power Stolen," "How Gods Use Masks," and both Design Note sidebars; the Free City of Zobeck region entry in Chapter 3 (the model card, stat block through Government); the Eight Great Clans faction write-up in Chapter 4. Sampled: individual god entries (Thor, Freyr and Freyja, read for format); the New Backgrounds appendix (several traits read in full, remainder skimmed for pattern); chapter openings for Chapters 5 through 9 (stat blocks scanned to confirm the card recurs). Not read: full racial write-ups in Chapter 2, spell and magic-item lists, the AGE System appendix, and Appendix 2's encounter tables.
 
-The `bvx_provisional: true` flag reflects a first-pass id assignment; the library previously listed this book as NEW with no Zotero key. The S-layer keying in frontmatter `feeds:` and Diagram 3 is this distill's synthesis against `ssot_03_setting_system.md` (PART A, the twelve-layer SETTING SLICE), following the same mapping method BVX.0458 and BVX.1122 already established for this shelf.
+The `bvx_provisional: true` flag reflects a first-pass id assignment; the library previously listed this book as NEW with no Zotero key. The S-layer keying in `feeds:` and Diagram 3 is this distill's synthesis against `ssot_03_setting_system.md` (PART A), following the mapping method BVX.0458 and BVX.1122 already set for this shelf.
 
 ## META
 - Template: BVX-LEARN-v4.0

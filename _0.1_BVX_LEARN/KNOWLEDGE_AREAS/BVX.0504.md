@@ -78,7 +78,7 @@ A role-playing game world isn't handed down, it's negotiated: "role-playing game
 
 *Required. Minimum two diagrams, maximum five.*
 
-**Diagram 1, the whole argument.**
+**Diagram 1 — the whole argument.**
 Caption: *three chapters, one throughline: RPGs are a social category, not a natural one, so both "what is an RPG" and "what is a setting" get settled by negotiation, not definition.*
 
 ```mermaid
@@ -99,7 +99,7 @@ mindmap
       Narratology story plot discourse
 ```
 
-**Diagram 2, the central mechanism (who holds authorial control over the world, and how that settles into canon).**
+**Diagram 2 — the central mechanism (who holds authorial control over the world, and how that settles into canon).**
 Caption: *the same authority question runs through Ch. 2's forms table and Ch. 20's worldbuilding models, wherever control sits, it still has to resolve into an official canon with an unofficial fringe underneath.*
 
 ```mermaid
@@ -114,7 +114,7 @@ flowchart TD
     Canon --> Fringe["Fringe / semi-canon:<br/>wikis, zines, fan theory, unvetted"]
 ```
 
-**Diagram 3, mapped onto the Command's SETTING SLICE (S1–S12).**
+**Diagram 3 — mapped onto the Command's SETTING SLICE (S1–S12).**
 Caption: *this book supplies a second, reader-psychology vocabulary for four layers Kobold (BVX.0458) already staked out from the designer's side, mythos and backworld both land on S7, from a different direction.*
 
 ```mermaid

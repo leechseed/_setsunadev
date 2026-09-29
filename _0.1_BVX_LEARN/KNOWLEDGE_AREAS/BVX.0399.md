@@ -166,7 +166,7 @@ The book is a stack of four load-bearing chapters, front-loaded doctrine then pr
 | Megacorps 2020 + Corporate Profiles | Converts the attitude into a faction template: one fixed-slot card, filled per corporation |
 | Welcome to Night City / Running Cyberpunk | Converts the attitude into a place and a GM-behavior checklist: a generic city plus four running tricks |
 
-Nothing in the book argues for the attitude — Rule 1 is asserted on page one and never re-litigated. Everything downstream (city, corp, character) is judged by whether it performs the rule, not by internal consistency with some deeper theory of the world.
+Nothing in the book argues for the attitude. Rule 1 is asserted on page one and never re-litigated. Everything downstream (city, corp, character) is judged by whether it performs the rule, not by internal consistency with some deeper theory of the world.
 
 ---
 
