@@ -1,14 +1,14 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 0.1.3
+version: 0.1.4
 last_updated: 2026-09-29
 applies_to: [every story in the LEECHSEED universe]
-status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock"
-purpose: "THE STORY REGISTRY: the one place that lists every story in the universe, its aliases, era, medium, status, nodes, and storyform. The workspace's `stories:` filter and every doc's `applies_to` read from here."
+status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1."
+purpose: "THE STORY REGISTRY: the one place that lists every story in the universe, its aliases, genre, era, medium, status, nodes, and storyform. The workspace's `stories:` filter and every doc's `applies_to` read from here."
 dependencies: ["ssot_04_fabula (THE WORLD CLOCK · the universe eras)", "ssot_08_tracking_system (one tracking file per story)"]
 trunk: BLACK
-sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", "_CANON_NODES/oxo-storyform.md", ".ASTRO7EX.SYNC.JOPLIN/", "Q:/_PDF_DROP (EVIL CHECK Dramatica reports)"]
+sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", "_CANON_NODES/oxo-storyform.md", ".ASTRO7EX.SYNC.JOPLIN/", "Q:/_PDF_DROP (EVIL CHECK Dramatica reports)", "_PRIVATE/notes/apple-notes-2026.digest.md", "_PRIVATE/notes/phone-notes-2022-2023.digest.md"]
 ---
 
 # 📐 SSOT · THE STORY REGISTRY
@@ -19,13 +19,18 @@ sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", 
 
 ## THE REGISTRY
 
-| Story | Aliases | Era | Where | Medium | Status | Storyform | Nodes · data |
-|---|---|---|---|---|---|---|---|
-| **OVEREXITOUT** (`oxo`) | *The Outliers* (series title) · OXO · lead Tori was first built as **Ariel** (Apple Notes 2025) | 1 · DCUS | Earth, the Delta Coast (DCUS) | series ⧗ | **active**: storyform locked, systems built, proof scenes ruled | [oxo-storyform.md](../../../../_CANON_NODES/oxo-storyform.md) | `_CANON_NODES/oxo-*` · tracking [oxo.yaml](../../_TRACKING/oxo.yaml) |
-| **EVIL CHECK** (`evil_check`) | — | 1 · DCUS | Earth (same universe as OXO) | ⧗ | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
-| **LAKAD** (`lakad`) | codename, "for now" (2/9) | 2 · LAKAD | cislunar space | ⧗ | **named only** | none | none |
-| **ASTRO7EX** (`astro7ex`) | — | 3 · ASTRO7EX | the Moon | ⧗ | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
-| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ (present day? see OPEN) | Earth: the front line, Ukraine (board) | short-form video? ("TIK-TOK" boxed on the board) ⧗ | **seed**: the chalkboard transcribed 2026-09-29 | none | [tremor-cult-seed.md](../../../../_CANON_NODES/tremor-cult-seed.md) |
+**Genre (RULED 2026-09-29, BOLO 91):** the registry's genre slot is **G1**. Apple Notes 2026: *"cultcore — the genre of the outsiders"* — cultcore is the genre of OXO's series (*The Outliers*). Other rows carry ⧗ until Chief names theirs.
+
+| Story | Aliases | Genre | Era | Where | Medium | Status | Storyform | Nodes · data |
+|---|---|---|---|---|---|---|---|---|
+| **OVEREXITOUT** (`oxo`) | *The Outliers* (series title) · OXO · lead Tori was first built as **Ariel** (Apple Notes 2025) | **G1: cultcore** (RULED 2026-09-29, BOLO 91, Apple Notes 2026) | 1 · DCUS | Earth, the Delta Coast (DCUS) | series ⧗ | **active**: storyform locked, systems built, proof scenes ruled | [oxo-storyform.md](../../../../_CANON_NODES/oxo-storyform.md) | `_CANON_NODES/oxo-*` · tracking [oxo.yaml](../../_TRACKING/oxo.yaml) |
+| **EVIL CHECK** (`evil_check`) | — | ⧗ | 1 · DCUS | Earth (same universe as OXO) | ⧗ | **reports in**: three Dramatica reports held; loads onto the fabula in wave 2 (77-D) | Dramatica reports, `Q:/_PDF_DROP` (Story Guide · Character · Plot and Themes) | none yet |
+| **LAKAD** (`lakad`) | codename, "for now" (2/9) | ⧗ | 2 · LAKAD | cislunar space | ⧗ | **named only** | none | none |
+| **ASTRO7EX** (`astro7ex`) | — | ⧗ | 3 · ASTRO7EX | the Moon | ⧗ | **storyform drafted** (legacy Joplin notes); not yet in the SSOT systems | Dramatica reports in `.ASTRO7EX.SYNC.JOPLIN/` (MC Vivian · IC the MODS · Goal Understanding) | `_CANON_NODES/astro7ex-standards-body.md` · `astro7ex-space-cuisine-seed.md` |
+| **TREMOR CULT** (`tremor_cult`) | working title ⧗ | ⧗ | 1 · DCUS (RULED 2026-09-29, BOLO 91: inside the universe's eras, not outside them; set on Earth — Chief leaves Earth vs cislunar vs the Moon open on purpose for many stories, so this pin is provisional) | Earth: the front line, Ukraine (board) | standard story size, "like a movie almost" (RULED 2026-09-29, BOLO 91) — **not** short-form; the "two readings" question stays open ⧗ | **seed**: the chalkboard transcribed 2026-09-29 | none | [tremor-cult-seed.md](../../../../_CANON_NODES/tremor-cult-seed.md) |
+| **She Her Own** (`she_her_own`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: "a jaded young strip-club chef who basically runs the place falls in love with a violent and traumatized new girl. She challenges the ownership of the club for him, and the toxic relationship that forms runs them both to the end of their lives." | none | none |
+| **KING TOWNIE** (`king_townie`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: "old genius cook, young hungry hood rat." | none | none |
+| **Hellfighters** (`hellfighters`) | ⧗ — provisional (BOLO 91, Apple Notes 2026) | ⧗ | ⧗ | ⧗ | ⧗ | **provisional (seed)**: firefighters through hell. | none | none |
 
 ## PROJECTS (not stories)
 
@@ -40,17 +45,19 @@ Games, businesses and tools that are not stories in the universe (RULED 2026-09-
 
 ## THE ROW
 
-A new story fills: `id` (short, lowercase, used by tracking files and the `stories:` filter) · name · aliases · era · where · medium · status (named only → reports in → storyform drafted → active) · storyform (link) · nodes · data (its tracking file, once one exists).
+A new story fills: `id` (short, lowercase, used by tracking files and the `stories:` filter) · name · aliases · genre (the **G1** slot, added RULED 2026-09-29, BOLO 91 — blank ⧗ until named) · era · where · medium · status (named only → reports in → storyform drafted → active; **provisional (seed)** for a story sourced from a digest and not yet ruled) · storyform (link) · nodes · data (its tracking file, once one exists).
 
 ## OPEN
 
-- **Medium per story** — blank (⧗) for all four; OXO reads as a series from the telling profile but no ruling fixes the medium.
+- **Medium per story** — blank (⧗) for most rows; OXO reads as a series from the telling profile but no ruling fixes the medium. TREMOR CULT's size is ruled (standard, not short-form); its "two readings" question stays open.
+- **Genre per story** — only OXO carries a genre (G1: cultcore); She Her Own, King Townie, Hellfighters, EVIL CHECK, LAKAD, and ASTRO7EX are all open.
 - **ASTRO7EX into the SSOT systems** — its Joplin storyform is not yet read into the fabula, the registry's storyform link, or a tracking file.
 - **The hinge** — the Moon Severance and the AI Collapse placed as ASTRO7EX backstory, ⧗ until Chief places them.
-- **More stories** — Chief's 9/24 ask named "OXO, Evil Check, The Outliers, ASTRO7EX, etc."; any further story joins as a row.
+- **More stories** — Chief's 9/24 ask named "OXO, Evil Check, The Outliers, ASTRO7EX, etc."; any further story joins as a row. She Her Own, King Townie, and Hellfighters (BOLO 91, Apple Notes 2026) joined this way as provisional seeds — era, where, medium, and full detail all still open.
 
 ## Version history
 
+- **0.1.4 — 2026-09-29 (BOLO 91 rulings).** Three provisional story rows added (She Her Own, King Townie, Hellfighters, sourced from the Apple Notes 2026 digest); the registry's genre slot (G1) added and set for OXO (cultcore); TREMOR CULT ruled inside era 1 · DCUS, set on Earth, standard story size ("like a movie almost") not short-form, its "two readings" question left open.
 - **0.1.3 — 2026-09-29.** The hinge ruled (the Deep Meridian beam); a PROJECTS section added (the pinball roguelite, Goonernaut Ventures); Ariel ruled an older name for Tori (see the OXO row).
 - **0.1.2 — 2026-09-29.** TREMOR CULT moved to seed: the chalkboard transcribed (`_CANON_NODES/tremor-cult-seed.md`).
 - **0.1.1 — 2026-09-29.** TREMOR CULT added (named only; the whiteboard photo is coming).

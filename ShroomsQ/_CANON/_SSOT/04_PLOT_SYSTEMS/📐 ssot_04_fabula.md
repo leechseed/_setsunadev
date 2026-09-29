@@ -1,14 +1,14 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.6
+version: 0.1.7
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
-sources: [BVX.0591, BVX.0167, BVX.0562]
+sources: [BVX.0591, BVX.0167, BVX.0562, "_PRIVATE/notes/apple-notes-2026.digest.md (BOLO 91, Anna Colson's origin)", "_PRIVATE/notes/phone-notes-2022-2023.digest.md (BOLO 91, Tori's family origin)"]
 purpose: "THE FABULA, v0.1: the universe-level world-time layer beneath 04's syuzhet doc, one shared timeline for OXO and EVIL CHECK, the EVENT RECORD schema, typed CAUSAL EDGES, THE WORLD CLOCK, the ORIGIN MOMENTS rule for the twelve character layers, the Tori-only instance, and the state architecture v1.1 patch spec."
 ---
 
@@ -364,7 +364,142 @@ provenance:
 causal_edges: []   # no stated causal edge to the crash's data-deletion mechanism; flagged uncertain, not invented
 ```
 
+**A note on Tori's family origin (RULED 2026-09-29, BOLO 91).** Per Chief's ruling, Tori's family origin is **the trash zone, not Bikini Atoll** — where the trash land runs out into the ocean, a delta with room for islands; her family were holdouts there. This supersedes an earlier, discarded variant carried in the phone notes: "Ariel lived on an old army base on an island where she would race and her small community lived in peace. One day the army forcefully evacuated them....the story of the bikini atoll people" (`_PRIVATE/notes/phone-notes-2022-2023.digest.md`, §1 OXO). That Bikini-Atoll draft is now superseded, kept only as discarded history, not canon. The ruled version instead confirms the *other* line from the same source — "Her family was a 'holdout' from pre-skyfall. They own the biggest fucking Island... the 'girl who lives in the dusk,' trash girl" — as the one that stands: a trash-zone delta, not a military-island evacuation. This is background condition feeding **L7 ORIGIN**, not a dated transition, so (per the same Bal 2017: 155-156 rule the note below applies to Tori's racing career) it is not filled as its own event record. **The car crash stays her WOUND**: `m1b_crash_jebb_death` above is unchanged and remains the L5 WOUND trigger; the family-origin ruling adds birth-context color to L7, it does not touch or replace the crash.
+
 **A note on what is left out.** Tori's pre-M1B racing career (working/criminal-adjacent origin, "salvage economy phase," feeding L7 ORIGIN) is not filled as an event record: PS2 gives it as a background condition, not a dated transition, and Bal's own definition rules a state that never changes on record out of the event schema (Bal 2017: 155-156). It stays as context for L7 ORIGIN, not a fabula event.
+
+---
+
+## ANNA COLSON'S ORIGIN (BOLO 91, RULED 2026-09-29)
+
+**Scope note.** THE INSTANCE above scoped wave 1 to Tori only, leaving Anna Colson's L7 ORIGIN and L8 IMPRINT author-pending (OPEN call 1, 77-C). Chief's 2026-09-29 ruling fills that gap: a dated (fuzzily-dated, pre-story) origin chain, sourced from `_PRIVATE/notes/apple-notes-2026.digest.md` §1 OXO, quoting Chief's own note verbatim: *"Colson dies in a freak ice-skating accident. Her father seeks out a scientist who says she can build her back, but better. The scientist grows too close to Colson, so the father steals her back — but what the father doesn't know is that she's made her own copy of Colson."* Five backstory events follow, using the `backstory_<slug>` grammar (v0.1.4, BOLO 90 step 7). **The copy is not a state diff on Anna Colson** — per Chief's ruling it "gets her own fabula node, separate from Colson" — so the fifth event below doubles as the copy's own L7 ORIGIN moment, a distinct actor from the original.
+
+```yaml
+event_id: "backstory_colson_skating_death"
+transition: "Colson skating -> Colson dies in a freak ice-skating accident"
+actors:
+  - actor: "Anna Colson"
+    actant_role: object
+kernel_satellite: kernel   # opens the entire rebuild/copy chain; branches L7 ORIGIN
+time:
+  movement: "backstory"
+  reach: "pre-story; distance from story-present unspecified"
+  extent: "point (a single accident)"
+gap_type: logged
+repeat: false
+location: "unspecified in canon"
+stories: [OXO]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  confidence: direct_quote
+causal_edges:
+  - type: cause
+    to: "backstory_colson_father_seeks_scientist"
+```
+
+```yaml
+event_id: "backstory_colson_father_seeks_scientist"
+transition: "Colson dead -> her father seeks out a scientist who says she can be built back, but better"
+actors:
+  - actor: "Colson's father"
+    actant_role: subject
+  - actor: "the scientist"
+    actant_role: helper
+  - actor: "Anna Colson"
+    actant_role: object
+kernel_satellite: kernel   # Bal's Choice criterion — the father chooses the rebuild path
+time:
+  movement: "backstory"
+  reach: "immediately after backstory_colson_skating_death; unspecified distance"
+  extent: "point"
+gap_type: logged
+repeat: false
+location: "unspecified in canon"
+stories: [OXO]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  confidence: direct_quote
+causal_edges:
+  - type: enable
+    to: "backstory_colson_scientist_attachment"
+```
+
+```yaml
+event_id: "backstory_colson_scientist_attachment"
+transition: "the rebuild proceeds as a professional project -> the scientist grows too close to Colson"
+actors:
+  - actor: "the scientist"
+    actant_role: subject
+  - actor: "Anna Colson"
+    actant_role: object
+kernel_satellite: kernel   # the turn that provokes the father's reclaim
+time:
+  movement: "backstory"
+  reach: "during or after the rebuild; unspecified distance"
+  extent: "extended (a growing attachment, not a point) ⧗"
+gap_type: logged
+repeat: false
+location: "unspecified in canon"
+stories: [OXO]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  confidence: direct_quote
+causal_edges:
+  - type: cause
+    to: "backstory_colson_father_reclaims"
+```
+
+```yaml
+event_id: "backstory_colson_father_reclaims"
+transition: "Colson in the scientist's care -> the father steals her back"
+actors:
+  - actor: "Colson's father"
+    actant_role: subject
+  - actor: "the scientist"
+    actant_role: opponent
+  - actor: "Anna Colson"
+    actant_role: object
+kernel_satellite: kernel   # closes the rebuild chain for the Colson the father recovers
+time:
+  movement: "backstory"
+  reach: "after backstory_colson_scientist_attachment; unspecified distance"
+  extent: "point"
+gap_type: logged
+repeat: false
+location: "unspecified in canon"
+stories: [OXO]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  confidence: direct_quote
+causal_edges:
+  - type: simultaneous
+    to: "backstory_colson_copy_made"   # the father does not know this happens at the same time
+```
+
+```yaml
+event_id: "backstory_colson_copy_made"
+transition: "one Colson exists -> the scientist secretly keeps her own copy of Colson, made without the father's knowledge — a second, distinct Colson"
+actors:
+  - actor: "the scientist"
+    actant_role: subject
+  - actor: "Anna Colson (the copy)"   # NOTE: a distinct actor from "Anna Colson" above — her own fabula node per Chief's ruling, not a state diff on the original
+    actant_role: object
+kernel_satellite: kernel   # this event is ALSO the copy's own L7 ORIGIN moment — she begins existing here
+time:
+  movement: "backstory"
+  reach: "concurrent with backstory_colson_father_reclaims; unspecified distance"
+  extent: "point (the copy is made)"
+gap_type: logged
+repeat: false
+location: "unspecified in canon"
+stories: [OXO]
+provenance:
+  source: "_PRIVATE/notes/apple-notes-2026.digest.md, §1 OXO — Anna Colson's origin"
+  confidence: direct_quote
+causal_edges: []   # downstream events for the copy are not yet on record — open for a future wave
+```
+
+**What this does and does not settle.** This fills L7 ORIGIN's dated antecedent for Anna Colson (and gives "Anna Colson (the copy)" her own L7 ORIGIN event, distinct from the original). It does **not** fill L8 IMPRINT, L9 EROS, or L10 SHADOW for either Colson — those stay author-pending per the original node's Open Questions #3, #4, #9 — and it does not place either Colson's post-origin events (what either of them does afterward) on the fabula. That is future wave work, not this ruling.
 
 ---
 
@@ -396,6 +531,7 @@ causal_edges: []   # no stated causal edge to the crash's data-deletion mechanis
 
 ## Version history
 
+- **0.1.7 — 2026-09-29 (BOLO 91 rulings).** Anna Colson's origin fabula-filled: five `backstory_<slug>` event records (ice-skating death → father seeks the scientist → the scientist's attachment → the father's reclaim → the scientist's own kept copy); "Anna Colson (the copy)" given her own fabula node and L7 ORIGIN moment, distinct from the original. Tori's family origin ruled the trash-zone delta, not Bikini Atoll (superseding the earlier phone-notes draft); the car crash (`m1b_crash_jebb_death`) confirmed unchanged as her L5 WOUND.
 - **0.1.6 — 2026-09-29.** The hinge ruled (Chief: "number two, yes"): the Deep Meridian beam signals the quasar that reaches Vivian's time; the Moon Severance and the AI Collapse follow ⧗.
 - **0.1.5 — 2026-09-29.** THE WORLD CLOCK gains the universe eras (RULED, Chief: "yes to all recommendations"): DCUS → LAKAD → ASTRO7EX, sequential with overlap at the seams; the Moon Severance + AI Collapse as the ⧗ hinge; the 2/9 "simultaneous" ruling kept as superseded history; applies_to gains LAKAD and ASTRO7EX.
 - **v0.1.4 (2026-09-29):** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE WORLD CLOCK gains a short paragraph on backstory events: deep past with no Mn carries `movement: "backstory"` and `event_id: backstory_<slug>`, additive to the existing `<movement>_<slug>` grammar. No event records changed.
