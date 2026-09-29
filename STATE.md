@@ -141,6 +141,10 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 ---
 
+## ✅ Moved 2026-09-29 (**the thirteenth launch, board 2026-09-28 v39** · **the history scrub verified clean** · **BOLO 84 held on funds** · **the BOOK HUNT page** · **BOLO 87 the setting shelf + BOLO 88 the sexuality shelf** · **59 distills, three waves**)
+
+- **9/28 20:48 → 9/29 03:16, session 7cf37501.** Launch 7/7 GO, board v39 · origin verified clean (0 hits for phone and gmail; `git push origin main` owed, 41 commits) · BOLO 84 Part 107 held, no money · JUDY relaunched (she had dropped), knobs restarted · **BOOK HUNT** https://claude.ai/artifact/Pb1YJvbZ1VQnLa7We6bw11: theme list free routes (54 of 74 now held after Chief's drop), setting shelf (1,537 held judged, 29 to get), plot (40/43 canon held, 7 gaps), sexuality (340 held, 71 to get), master checklist, the 109-title Find list · **59 distills pass RANGE** (setting 30 · theme 8 · sexuality 21; BVX.1137–1167 provisional ids) · Zotero: 5 records need a PDF · Chief's rule: no more downloads by Claude, he finds PDFs, then "rescan Zotero". Note: `_CACHE/2026-09-29.session.md`.
+
 ## ✅ Moved 2026-09-28 (**the twelfth launch (opened 9/24 22:55), board 2026-09-24-6 v38** · **the booth's cable and headset answered**)
 - **The launch and the booth.** "run launch sequence": 7/7 GO, board 2026-09-24-6 (v38) in the formation, leverage line unchanged (book Part 107), main effort unchanged (the push); BREVITY picks re-applied, no change. BOLO 57 booth advice: the 100 ft XLR needs no booster (NT1 Signature → Scarlett 2i2), one star-quad run away from power, a 50 ft headphone extension or the SteelSeries 2.4 GHz headset with its dongle on an active USB extension and no live self-monitoring; record from the 2i2 input. Next: range-test the headset in the closet, record the first clone sample. Note: `_CACHE/2026-09-28.session.md`.
 
