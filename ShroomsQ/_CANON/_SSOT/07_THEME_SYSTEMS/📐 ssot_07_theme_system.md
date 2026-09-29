@@ -110,7 +110,7 @@ The four sum to the controlling idea: the world forecasts everyone doing their j
 | The Delta Coast / DCUS | WB-INS-0002 | Worth | A score that calls itself your nature |
 | The Narco Republic / Real Federale | WB-GRP-0004 | Belonging | A racket that calls itself a nation |
 | The Deepstate North (America as BioShock Infinite) | WB-GRP-0007 | Liberty | Tyranny that calls itself liberty |
-| The techno-corpo state (name open) | WB-GRP-0006 | Safety | A prison that calls itself protection |
+| Providence, the techno-corpo state (named 9/29) | WB-GRP-0006 | Safety | A prison that calls itself protection |
 | The Kudzu | WB-GRP-0005 | Life | A death that calls itself life |
 
 The Kudzu is the controlling idea made literal: no one in it is evil at all; it only grows. Plain words are drafts for Chief to re-pick, the way FREEDOM and FAIRNESS were.

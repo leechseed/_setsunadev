@@ -5,7 +5,7 @@ kind: setting — region (Axis 1 scale class: region; parent: world)
 ip: OVEREXITOUT / ASTRO7EX
 series: The Outliers
 trunk: BLACK
-status: SEED — spoken 2026-09-06 (stacked break-break), captured same turn; nothing ruled except the spoken lines
+status: SEED — spoken 2026-09-06 (stacked break-break), captured same turn; more spoken 2026-09-29 (BOLO 93); nothing ruled except the spoken lines
 capture_protocol: Chief's spoken lines = canon · ⧗ = Claude development, strike or keep
 slice: Setting System S1–S12 (📐 ssot_03_setting_system.md) — second instance after DCUS
 links:
@@ -31,6 +31,19 @@ bolo: 30
 - **The DMZ is a massive border of trash.**
 - **Man-made.** A built border between the South and the North.
 - **The size and width of a mountain range.**
+
+## As spoken — CANON (2026-09-29, BOLO 93)
+
+Chief, 2026-09-29, paraphrased close to his words; his own doubts kept as ⧗:
+- **Name wanted**, "like the waste belt." "Trash Land" stays a placeholder.
+- **The Delta Coast built it.** All of its trash and "all the stuff from space": instead of throwing anything away, they built with it.
+- **A Great Wall of China, built against the Kudzu.** It is also **the barrier between Providence and the Real Cartel** (the Narco Republic). So it separates the three other powers from the Delta Coast and from each other.
+- **Not just trash: toxic.** It raises the land. Nuclear ⧗ ("maybe not nuclear, I don't know").
+- ⧗ **Mutation:** growing up in the waste through a hundred years of mutation may give a huge resistance to radiation-type damage ("I don't know").
+- **It is where the Outliers live and where they are from:** the last part, the ghetto, the boondocks.
+- **There are cities inside the belt**: Kowloon Walled City cities (heard as "Kalunwald"), and the belt as a whole is like **The Line** Saudi Arabia is building, a linear city, "except terrible trash."
+
+**This supersedes one 9/6 line in part:** the 9/6 canon said the DMZ runs between the southern US and the northern US. On 9/29 it walls the Delta Coast against the Kudzu and splits Providence from the Real Cartel. Where the South/North line survives inside this, and how "the Outliers are from the belt" meets Tori's Red Hills legacy, are open ⧗.
 
 Everything below this line is ⧗ development against those six lines.
 
