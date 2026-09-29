@@ -60,7 +60,7 @@ date_created: 2026-09-29
 # BVX.0399 — Cyberpunk 2020 (Version 2.0) — Mike Pondsmith (1991)
 ### Knowledge Entry — Distill
 
-The core rulebook for the original Cyberpunk tabletop RPG: a genre-attitude stated as four rules, a placeholder city (Night City) built to be stolen and renamed, a corporation stat-block usable for any faction, and the Lifepath — a chargen flowchart that manufactures backstory by rolling characters into the setting's institutions.
+The core rulebook for the original Cyberpunk tabletop RPG: a genre attitude stated as four rules, a placeholder city (Night City) built to be stolen and renamed, a corporation stat block usable for any faction, and the Lifepath, a chargen flowchart that manufactures backstory by rolling characters into the setting's institutions.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -78,7 +78,7 @@ The core rulebook for the original Cyberpunk tabletop RPG: a genre-attitude stat
 
 ## 1 · CORE THESIS
 
-A setting doesn't need to be described, it needs to be performed: state the attitude ("style over substance") as four rules, then build every downstream piece — city, corporation, character — as a reusable card that manufactures that attitude on contact. Depth comes from the roll, not the writeup.
+A setting doesn't need to be described, it needs to be performed: state the attitude ("style over substance") as four rules, then build every downstream piece, city, corporation, character, as a reusable card that manufactures that attitude on contact. Depth comes from the roll, not the writeup.
 
 ---
 
@@ -116,7 +116,7 @@ mindmap
 ```
 
 **Diagram 2 — the central mechanism (the Lifepath as a world-seeding flowchart).**
-Caption: *every table a Lifepath player rolls on names a world institution — nation, family, corp, gang — so the backstory that comes out already points at the setting, not away from it.*
+Caption: *every table a Lifepath player rolls on names a world institution (nation, family, corp, gang), so the backstory that comes out already points at the setting, not away from it.*
 
 ```mermaid
 flowchart TD
@@ -135,7 +135,7 @@ flowchart TD
 ```
 
 **Diagram 3 — mapped onto the Command's SETTING SLICE and character stack.**
-Caption: *the book splits cleanly down the middle — Night City and Megacorps feed the place-side SETTING SLICE, the Lifepath feeds the person-side L-layers, and both halves are built from the same four rules.*
+Caption: *the book splits cleanly down the middle: Night City and Megacorps feed the place-side SETTING SLICE, the Lifepath feeds the person-side L-layers, and both halves are built from the same four rules.*
 
 ```mermaid
 flowchart LR

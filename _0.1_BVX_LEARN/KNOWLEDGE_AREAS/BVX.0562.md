@@ -41,7 +41,7 @@ feeds:
   - layer: SETTING
     variable: fill_discipline
     strength: primary
-    note: "Ch. 1 as a whole — Invention/Completeness/Consistency is the book's actual central mechanism: a three-part audit runnable against any single S-layer or the whole slice at once, independent of which layer is being filled."
+    note: "Ch. 1 as a whole: Invention/Completeness/Consistency is the book's actual central mechanism: a three-part audit runnable against any single S-layer or the whole slice at once, independent of which layer is being filled."
 zotero_key: "TEULD53V"
 pdf_pages: 537
 status: complete
@@ -49,8 +49,8 @@ confidence: high
 date_created: 2026-09-29
 ---
 
-# BVX.0562 — Building Imaginary Worlds: The Theory and History of Subcreation — Mark J. P. Wolf (2012)
-### Knowledge Entry — Distill
+# BVX.0562 · Building Imaginary Worlds: The Theory and History of Subcreation · Mark J. P. Wolf (2012)
+### Knowledge Entry: Distill
 
 A media-studies theory of world-building as its own object of study, independent of any one story told in a world; the audit method (invention, completeness, consistency) and the eight-infrastructure stack in Chapter 3 are directly usable as a setting-build checklist, TTRPG or otherwise.
 

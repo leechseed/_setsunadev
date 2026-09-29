@@ -49,8 +49,8 @@ confidence: high
 date_created: 2026-09-29
 ---
 
-# BVX.0504, Role-Playing Game Studies: Transmedia Foundations, eds. Zagal & Deterding (2018)
-### Knowledge Entry, Distill
+# BVX.0504 — Role-Playing Game Studies: Transmedia Foundations — eds. Zagal & Deterding (2018)
+### Knowledge Entry — Distill
 
 A 27-chapter academic textbook surveying RPG Studies across disciplines and media; this distill pulls the three chapters load-bearing for setting craft, Definitions (Ch. 2), Worldbuilding in RPGs (Ch. 20), and Literary Studies (Ch. 14), as the theory layer underneath the Command's SETTING SLICE.
 

@@ -14,43 +14,43 @@ feeds:
   - layer: SETTING
     variable: s1_body
     strength: supporting
-    note: "The four-paragraph regional landscape sketch (frozen north, windswept west, mist-shrouded south, thorny east) makes terrain itself hostile before any creature or NPC appears — geography carries dread as a base rate, not a decoration."
+    note: "Four regional landscape paragraphs (frozen north, windswept west, misty south, thorny east) make terrain hostile before any creature appears; geography carries dread as a base rate."
   - layer: SETTING
     variable: s3_sensorium
     strength: contextual
-    note: "No dedicated sensorium pass; texture arrives through body horror (weeping boils, mucus, unblinking eyes, writhing limbs) attached to cults and Old Ones rather than through a scene-setting register."
+    note: "No dedicated sensorium pass; texture arrives through body horror (weeping boils, mucus, unblinking eyes) attached to cults and Old Ones."
   - layer: SETTING
     variable: s4_law
     strength: primary
-    note: "The vindari Church-and-King law stack (Courts of Faith, the Exonerated, a full Crime and Punishment penalty table) is colonial administration written as game mechanics — law is the occupying power's tool, not a neutral rule set."
+    note: "The vindari Church-and-King law stack (Courts of Faith, the Exonerated, a Crime and Punishment table) is colonial administration written as game mechanics."
   - layer: SETTING
     variable: s5_scar
     strength: primary
-    note: "The Great Cleansing (a stated genocide) is the setting's founding wound; every region's History section restates it at a smaller scale — Delhain's burned ward, Sileasia's forced rename, Ina'oth's plague-sealed borders. The wound repeats at nested scales rather than existing once."
+    note: "The Great Cleansing (a stated genocide) is the founding wound; each region's History restates it smaller — Delhain's burned ward, Sileasia's forced rename, Ina'oth's sealed borders."
   - layer: SETTING
     variable: s6_economy
     strength: supporting
-    note: "Each city carries a Marketplace block (Base Value, Purchase Limit, item dice) plus named trade goods (mines, salt, war machines); economy reads as what the colonizer extracts, not a generic gold-per-capita number."
+    note: "Each city carries a Marketplace block (Base Value, Purchase Limit, item dice) plus named trade goods; economy reads as what the colonizer extracts."
   - layer: SETTING
     variable: s7_founding
     strength: primary
-    note: "Each of the six regions opens with a History section that is a founding-and-conquest stack written in prose before a single mechanic appears — the vindari invasion, the romni exile, Ina'oth's plague and sealed borders."
+    note: "Each region opens with a History section that is a founding-and-conquest stack in prose before any mechanic: the vindari invasion, the romni exile, Ina'oth's plague."
   - layer: SETTING
     variable: s8_habit
     strength: primary
-    note: "The Trust score is S8 HABIT made numeric: a 0-36+ scale of insider/outsider standing per settlement, with cumulative rewards (friendly locals, free healing, a cohort) and a floor state (Angry Mob) — belonging is tracked, not asserted."
+    note: "The Trust score is S8 made numeric: a 0-36+ insider/outsider scale per settlement, cumulative rewards, a floor state (Angry Mob); belonging is tracked, not asserted."
   - layer: SETTING
     variable: s9_allure
     strength: primary
-    note: "Forbidden Knowledge tomes convert 'wanting power' into a costed trade: an examination period, a Knowledge (arcana) DC, spells gained, and a Sanity-point price, all on one lookup table. Allure is a bargain with a printed exchange rate."
+    note: "Forbidden Knowledge tomes convert wanting power into a costed trade: examination period, Knowledge (arcana) DC, spells gained, Sanity price, one table."
   - layer: SETTING
     variable: s10_underside
     strength: primary
-    note: "Four Old One cults (Ka'sogrotha, Orthu'mech, Tel'egoth, Yegh'niths) plus wildcard secret societies (Order of Black Earth, Dark Passion Society, Church of the Unspeakable Masses run by a hidden Mi-Go) operate beneath the public Church of the One True God — a second religion given equal structural weight to the first."
+    note: "Four Old One cults plus wildcard secret societies (Order of Black Earth, Dark Passion Society, Church of the Unspeakable Masses) run beneath the public Church — a second religion of equal weight."
   - layer: SETTING
     variable: s11_vector
     strength: primary
-    note: "The Rise of the Old Ones is the setting's active, still-accelerating trajectory, layered on top of — not instead of — the finished colonial history. Two arcs run at once, one closed, one open."
+    note: "The Rise of the Old Ones is the setting's active, accelerating trajectory, layered on top of the finished colonial history — two arcs at once, one closed, one open."
   - layer: L7
     variable: genre_setting_contract
     strength: contextual
