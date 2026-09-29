@@ -178,9 +178,8 @@ Every chapter runs the identical operation from Diagram 2 on two franchises at o
 | Drawing a map with magical or "old-world" zones | Give each zone its own internal time and rule-set, then decide what process is eroding those boundaries and at what rate | Scatter magic geographically with no account of why some places keep it and others lose it |
 | Writing a setting's deep history | Tell it as a sequence of political conditions the world is moving through (imperial to networked, ideological to "realist," democratic to technocratic) | Tell it as a list of wars and dynasties with no account of what kind of power replaced what kind |
 | Designing a franchise or shared setting meant to grow | Build in deliberate unmapped territory and reward layers for deeper audiences (drillability) | Try to make the setting bible complete; a "finished" world stops inviting expansion |
-| Handling fan or player creative contribution to a shared world | Recognize it explicitly as valuable, unpaid, and worth crediting or compensating in some form | Treat community world-building as free marketing with no cost to the people doing it |
 | Choosing a franchise's ideological "message" | Let the contradiction between the world's anticapitalist content and its commercial form stay visible and unresolved | Force a tidy political resolution that erases the tension a good storyworld runs on |
-| Testing whether a "neutral" setting choice (a currency, a border, a founding myth) is actually political | Run Jameson's question on it directly: what contradiction does this specific choice quietly settle? | Assume worldbuilding choices are apolitical by default because no character states an opinion about them |
+| Testing whether a "neutral" setting choice is actually political | Run Jameson's question directly: what real contradiction does this choice quietly settle? | Assume worldbuilding choices are apolitical because no character states an opinion about them |
 
 ---
 
