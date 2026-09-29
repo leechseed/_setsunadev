@@ -163,16 +163,16 @@ The book is organized as a rules-first Pathfinder supplement, but its worldbuild
 
 | Section | What it establishes | What it hands downstream |
 |---|---|---|
-| **What in Tarnation?!** (intro) | The genre commitment: Appalachian, not Victorian; coal is king; a re-derived history, not a costume swap on our own | The tone every later chapter has to match |
-| **Eureka!** (frame narrative) | Pure steam itself is a lost, hunted energy source, a MacGuffin the whole setting is arguably about | S9 allure, the reason anyone wants this technology at all |
-| **Races** | Each subrace's origin story is already a tech-and-history story (Brey as empire marines, Borndrin enslaved then scattered) | Peoples pre-loaded with the class and conflict lines the rest of the book runs on |
-| **Science / Fields of Science** | The explicit case for why science displaced magic: usable by the common man, fuel not gift | The premise stated as doctrine, not just implied by tone |
-| **Ullera** (geography + Timeline of Ulleran History) | 10,000+ years compressed into one page-spread timeline; the Abolition War as founding trauma | S7 founding, S11 vector, the dates every faction and region cites |
-| **The Rational Orders** | A nine-article constitution in Latin-titled clauses | S4 law as the direct legal residue of the founding revolt |
-| **Regional chapters** (the Bastion, Sunderland, Keystone, etc.) | Local instances of the premise: Expansionist railroads vs. Commonist land rights in the Bastion, mine-safety politics in Keystone | Proof that the premise isn't stated once and dropped, it's re-run region by region |
-| **Factions** | Named organizations (unions, communes, crime rings, fraternities, anarchist cells) each keyed to alignment, membership, races, classes, activities | S8 habit and S10 underside as a roster, not a paragraph |
+| **Intro** ("What in Tarnation?!") | Genre commitment: Appalachian, not Victorian; coal is king; re-derived history | The tone every later chapter matches |
+| **Eureka!** (frame narrative) | Pure steam itself is a lost, hunted energy source, the setting's MacGuffin | S9 allure, the reason anyone wants this tech |
+| **Races** | Each subrace's origin is already a tech-and-history story (Brey as empire marines, Borndrin enslaved then scattered) | Peoples pre-loaded with the book's class and conflict lines |
+| **Science / Fields of Science** | The explicit case for science displacing magic: usable by the common man, fuel not gift | The premise stated as doctrine, not just tone |
+| **Ullera** (geography + Timeline) | 10,000+ years compressed to one timeline; the Abolition War as founding trauma | S7 founding, S11 vector, dates every faction cites |
+| **The Rational Orders** | A nine-article constitution in Latin-titled clauses | S4 law as direct legal residue of the founding revolt |
+| **Regional chapters** (Bastion, Sunderland, Keystone) | Local instances: Expansionist railroads vs. Commonist land rights, mine-safety politics | Proof the premise is re-run region by region, not stated once |
+| **Factions** | Unions, communes, crime rings, fraternities, anarchist cells, each keyed to alignment, membership, activities | S8 habit and S10 underside as a roster, not a paragraph |
 
-The book never states "technology drives class conflict" as a thesis sentence. It states the premise once (Science, p.85) and then lets every region and faction independently demonstrate it. The reader has to assemble the thesis from the pattern, exactly the move a Command setting distill should steal.
+The book never states "technology drives class conflict" as a thesis. It states the premise once (Science, p.85), then lets every region and faction demonstrate it independently. The reader assembles the thesis from the pattern.
 
 ---
 
