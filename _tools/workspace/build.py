@@ -20,6 +20,9 @@ import sys
 from pathlib import Path
 from html.parser import HTMLParser
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import tracking  # noqa: E402 — ShroomsQ/_CANON/_TRACKING/<story>.yaml loader (BOLO 79/90, RULED 9/29)
+
 ROOT = Path(__file__).resolve().parents[2]
 FABULA_MD = ROOT / "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md"
 PLOT_MD = ROOT / "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md"
@@ -27,6 +30,10 @@ TROPE_JSON = ROOT / "_tools/tropes/data/trope_graph.json"
 RAILS_MD = ROOT / "_tools/bolostatus/work/77/tropes/PS-R.rails.md"
 GLOSSARY_JSON = ROOT / "_tools/sitrep/glossary.json"
 OUT = Path(__file__).resolve().parent / "out" / "workspace.html"
+
+# the Told lens (The Arrangement, BOLO 79 ruled 9/29): one tracking file per story,
+# `stories:` scope kept at OXO only — tracking.py fails loudly on a bad code/slug.
+TRACKING = tracking.load("oxo")
 
 MISSING = []  # sources we could not find / had to skip — reported at the end
 
@@ -271,6 +278,92 @@ GLOSSARY.update(
             "d": "One record standing for a repeated class rather than one row per occurrence — “not a single portion of elapsed time but... several portions taken as if they were alike and to some extent repetitive” (Genette 1980: 53). The fabula's `repeat` flag.",
             "w": "ssot_04_fabula.md · THE WORLD CLOCK",
         },
+        # ---- the Told lens's own terms, ported from The Arrangement's TERMS (BOLO 90 × 79, ruled 9/29) ----
+        "timecode": {
+            "t": "Time code", "k": "grid",
+            "d": "Where a moment sits: movement · sequence · scene | bar.beat.tick. M2 · Q1 · S02 | 006.3.2 is movement 2, sequence 1, scene 2, bar 6, beat 3, tick 2.",
+            "w": "ssot_08 §4 · ruled 9/29",
+        },
+        "tick": {
+            "t": "Tick", "k": "grid",
+            "d": "The smallest thing that happens: one line, one gesture, one look. Counted in order, no fixed number per beat.",
+            "w": "ssot_08 §3",
+        },
+        "beat": {
+            "t": "Beat", "k": "grid",
+            "d": "One action and its reaction. The ladder's R1.",
+            "w": "ssot_08 §3 · ssot_01_scale_ladder R1",
+        },
+        "bar": {
+            "t": "Bar", "k": "grid",
+            "d": "A run of beats that lands one push: a tactic tried and answered. Sits between beat and scene. Chief's word over 'measure'.",
+            "w": "ssot_08 §3 · ruled 9/29",
+        },
+        "sig": {
+            "t": "Time signature", "k": "grid",
+            "d": "A scene's meter: beats per bar. 4/4 steady · 3/4 lilting · 7/8 off-balance, a lurch. Set per scene, default 4/4.",
+            "w": "ssot_08 §3",
+        },
+        "tempo": {
+            "t": "Tempo", "k": "automation",
+            "d": "Two lanes. Planned is the pace you intend. Measured is counted from the draft (beats per 1,000 words). Where they split, the draft drags or rushes.",
+            "w": "ssot_08 §7",
+        },
+        "storypoint": {
+            "t": "Story point", "k": "record",
+            "d": "One field changing at one time code: a trait ticks, a flag fires, a label lands. Like an Ableton automation point. Values step and hold unless ramp is on.",
+            "w": "ssot_08 §5",
+        },
+        "checkpoint": {
+            "t": "Checkpoint", "k": "record",
+            "d": "A full state at a fabula event, like an Ableton clip. Story points ride between checkpoints.",
+            "w": "ssot_08 §5 · character state v1.2",
+        },
+        "cable": {
+            "t": "Cable", "k": "setup → payoff",
+            "d": "A setup linked to its payoff, on any tracks, any distance apart. Rides the fabula's enable edge.",
+            "w": "ssot_08 §6",
+        },
+        "provisional": {
+            "t": "Provisional", "k": "cable state",
+            "d": "Both ends exist in the story, but at least one time code is still proposed (⧗).",
+            "w": "ssot_08 §6 · ruled 9/29",
+        },
+        "orphan": {
+            "t": "Orphan", "k": "cable state",
+            "d": "A setup with no payoff, or a payoff with no setup. Drawn as a dangling cable with a red end.",
+            "w": "ssot_08 §6",
+        },
+        "told": {
+            "t": "Told order", "k": "ruler",
+            "d": "The order and speed the audience gets the story. Runs on the grid.",
+            "w": "ssot_08 §2",
+        },
+        "world": {
+            "t": "World clock", "k": "ruler",
+            "d": "When things actually happened: backstory, M1, M2… No bars, no tempo. Nobody experiences world time at a pace.",
+            "w": "ssot_08 §2 · fabula",
+        },
+        "stack": {
+            "t": "Stack", "k": "ruler",
+            "d": "Both rulers at once, with a line from each told scene down to its world event. A flashback is a line that runs backward.",
+            "w": "ssot_08 §2 · ruled 9/29",
+        },
+        "ramp": {
+            "t": "Ramp", "k": "value behavior",
+            "d": "A value that slopes between two points (tension, exposure, dread). Everything else steps and holds.",
+            "w": "ssot_08 §5",
+        },
+        "freedom": {
+            "t": "The Freedom scale", "k": "theme",
+            "d": "Tori's value gauge. Two tracks here: in-world (what the system records) and audience (what the reader sees). The gap is the ironic charge.",
+            "w": "ssot_07 · the value scale",
+        },
+        "toldzoom": {
+            "t": "Zoom stops", "k": "ladder",
+            "d": "The scroll wheel walks the ladder: tick · beat · bar · scene · sequence · movement · story. Zoomed out, story points bundle into a count.",
+            "w": "ssot_08 §4",
+        },
     }
 )
 
@@ -303,6 +396,7 @@ DATA = {
         "columns": COLUMN_LABEL,
     },
     "glossary": GLOSSARY,
+    "tracking": TRACKING,
     "character": {
         "id": "victoria_midnight",
         "name": "Victoria Midnight",
@@ -315,6 +409,8 @@ DATA = {
         "rails_nodes": len(RAILS_NODES),
         "rails_tropes": len(raw_tropes),
         "fabula_events": len(fabula_events),
+        "told_scenes": len(TRACKING["scenes"]),
+        "told_points": len(TRACKING["points"]),
     },
 }
 
@@ -327,11 +423,15 @@ STYLE = r"""
 <style>
   /* ---- tokens, lifted from SITREP.html: the Command's own palette (RULED 9/10 default colorway, 9/11 dark-only) ---- */
   :root {
-    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C;
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C; --well: #12161B;
     --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
     --accent: #FF6B35; --accent-ink: #FF8F62; --accent-soft: #3A2117;
     --link: #FF8F62; --good: #5CC48A; --good-soft: #16301F; --warn: #D9C48A; --warn-soft: #3A3320; --bad: #E9788A; --bad-soft: #3A1B20; --help: #A9B0BC;
     --mark: #3A3320;
+    --c-char: #7FB2E5; --c-char-soft: #1B2A3A;
+    --c-place: #D2AE72; --c-place-soft: #33291A;
+    --c-theme: #B89AE6; --c-theme-soft: #2A2238;
+    --c-trope: #6CC4A1; --c-trope-soft: #16302A;
     --line: #2B313B; --line-2: #3C4452;
     --grid: color-mix(in srgb, var(--ink) 8%, transparent);
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
@@ -341,11 +441,15 @@ STYLE = r"""
     color-scheme: dark;
   }
   :root[data-theme="light"] {
-    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4;
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4; --well: #D0D0C9;
     --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
     --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
     --link: #A83409; --good: #1F6B45; --good-soft: #CFE0D3; --warn: #5E4F22; --warn-soft: #E2D9BE; --bad: #962C37; --bad-soft: #E6CCCF; --help: #44453F;
     --mark: #E2D9BE;
+    --c-char: #2F5F8F; --c-char-soft: #C9D3DC;
+    --c-place: #7A5A1E; --c-place-soft: #DCD2BE;
+    --c-theme: #5E4394; --c-theme-soft: #D3CCDD;
+    --c-trope: #1E6B52; --c-trope-soft: #C6D8CF;
     --line: #B5B5AE; --line-2: #97978F;
     --shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.10);
     color-scheme: light;
@@ -378,30 +482,32 @@ STYLE = r"""
   .app {
     height: 100%; display: grid;
     --w-ol: 0px; --w-det: 0px;
-    grid-template-rows: auto minmax(0,1fr) auto;
+    grid-template-rows: 44px minmax(0,1fr) auto;
     grid-template-columns: var(--w-ol) minmax(0,1fr) var(--w-det);
     grid-template-areas: "head head head" "ol canvas detail" "foot foot foot";
   }
   .app.show-ol { --w-ol: 210px; }
   .app.show-det { --w-det: 320px; }
   .app.maximized { --w-ol: 0px !important; --w-det: 0px !important; }
+  /* the thin one-strip header (~44px), ported from The Arrangement (BOLO 79 ruled 9/29) — one strip for the whole app */
   header.head {
-    grid-area: head; display: flex; align-items: center; gap: 0; border-bottom: 1px solid var(--line-2);
-    background: color-mix(in srgb, var(--panel) 85%, transparent); flex-wrap: wrap;
+    grid-area: head; height: 44px; display: flex; align-items: stretch; gap: 0; border-bottom: 1px solid var(--line-2);
+    background: color-mix(in srgb, var(--panel) 85%, transparent); overflow-x: auto; overflow-y: hidden; scrollbar-width: none;
   }
-  .brand { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-right: 1px solid var(--line); }
-  .brand i { width: 10px; height: 10px; background: var(--accent); display: inline-block; }
-  .brand b { font-family: var(--display); font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: .02em; }
-  nav.lenses { display: flex; gap: 0; }
-  nav.lenses button { font-family: var(--display); font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: .03em; padding: 12px 18px; border-right: 1px solid var(--line); color: var(--ink-2); }
-  nav.lenses button .k { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); letter-spacing: .1em; }
+  .brand { display: flex; align-items: center; gap: 8px; padding: 0 14px; border-right: 1px solid var(--line); white-space: nowrap; flex: 0 0 auto; }
+  .brand i { width: 9px; height: 9px; background: var(--accent); display: inline-block; transform: translateY(-1px); }
+  .brand b { font-family: var(--display); font-weight: 800; font-size: 18px; text-transform: uppercase; letter-spacing: .02em; }
+  nav.lenses { display: flex; align-items: stretch; gap: 0; flex: 0 0 auto; }
+  nav.lenses button { height: 100%; display: flex; align-items: center; font-family: var(--display); font-weight: 700; font-size: 13.5px; text-transform: uppercase; letter-spacing: .03em; padding: 0 13px; border-right: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
+  nav.lenses button .k { display: inline-block; margin-left: 7px; font-family: var(--mono); font-size: 9.5px; font-weight: 500; letter-spacing: .06em; color: var(--ink-3); border: 1px solid var(--line-2); padding: 1px 5px; border-radius: 2px; }
   nav.lenses button:hover { color: var(--ink); background: var(--panel-2); }
   nav.lenses button.on { color: var(--accent); background: var(--panel-2); box-shadow: inset 0 -3px 0 var(--accent); }
+  nav.lenses button.on .k { color: var(--accent-ink); border-color: var(--accent-ink); }
   .headspace { flex: 1 1 auto; }
-  .char-btn { font-family: var(--display); font-weight: 700; font-size: 14px; text-transform: uppercase; padding: 8px 16px; border-left: 1px solid var(--line); color: var(--ink-2); }
+  .char-btn { height: 100%; display: flex; align-items: center; font-family: var(--display); font-weight: 700; font-size: 13px; text-transform: uppercase; padding: 0 15px; border-left: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; flex: 0 0 auto; }
   .char-btn:hover, .char-btn.on { color: var(--accent); }
-  .paneltoggles { display: flex; align-items: stretch; }
-  .ptbtn { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; padding: 8px 10px; border-left: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
+  .paneltoggles { display: flex; align-items: stretch; flex: 0 0 auto; }
+  .ptbtn { height: 100%; display: flex; align-items: center; font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em; padding: 0 9px; border-left: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
   .ptbtn:hover { color: var(--ink); background: var(--panel-2); }
   .ptbtn.on { color: var(--accent); background: var(--panel-2); box-shadow: inset 0 -3px 0 var(--accent); }
 
@@ -480,15 +586,66 @@ STYLE = r"""
   .node-chip.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
   .provisional { margin: 10px 0 16px; font-family: var(--mono); font-size: 11px; color: var(--warn); overflow-wrap: anywhere; }
 
-  /* ---- told lens ---- */
-  .told-tracks { display: grid; gap: 26px; min-width: 620px; }
-  .track-row { }
-  .track-row .tlbl { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
-  .track-line { position: relative; height: 54px; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); }
-  .scene-card { position: absolute; top: 10px; left: 24px; width: 260px; border: 1px solid var(--accent); background: var(--accent-soft); border-radius: 3px; padding: 6px 10px; font-size: 12.5px; cursor: pointer; }
-  .scene-card b { display: block; font-family: var(--display); font-size: 13.5px; color: var(--accent-ink); }
-  .empty-track { padding: 14px 4px; font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
-  .jump-note { margin-top: 4px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  /* ---- told lens: The Arrangement, ported (BOLO 90 × 79, ruled 9/29) ---- */
+  .told-toolbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+  .told-toolbar .seg { display: flex; border: 1px solid var(--line-2); }
+  .told-toolbar .seg button { font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; color: var(--ink-2); white-space: nowrap; }
+  .told-toolbar .seg button + button { border-left: 1px solid var(--line-2); }
+  .told-toolbar .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .told-tc { margin-left: auto; display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+  .told-tc small { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .told-tc b { font-family: var(--mono); font-weight: 500; font-size: 15px; color: var(--accent-ink); }
+  .told-empty { padding: 14px 2px; font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+
+  .ar-wrap { display: grid; grid-template-columns: 172px minmax(0,1fr); border: 1px solid var(--line-2); min-width: 620px; }
+  .ar-tracks { position: relative; border-right: 1px solid var(--line-2); background: var(--panel); overflow: hidden; height: 560px; }
+  .ar-th { position: absolute; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 8px 0 10px; border-bottom: 1px solid var(--line); overflow: hidden; }
+  .ar-th::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--k, var(--line-2)); }
+  .ar-th .nm { font-family: var(--display); font-weight: 700; font-size: 13.5px; line-height: 1.05; text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ar-th .sub { font-family: var(--mono); font-size: 9.5px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ar-th.ruler { background: var(--panel-2); }
+  .ar-lane { position: relative; overflow: hidden; background: var(--well); cursor: crosshair; touch-action: none; height: 560px; }
+  svg.ar-svg { display: block; width: 100%; height: 100%; }
+  svg.ar-svg text { font-family: var(--mono); font-size: 10px; fill: var(--ink-2); }
+  .ar-band { fill: var(--panel-2); }
+  .ar-band-lbl { font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: .04em; fill: var(--ink); text-transform: uppercase; }
+  .ar-grid-bar { stroke: var(--line-2); stroke-width: 1; }
+  .ar-grid-beat { stroke: var(--line); stroke-width: 1; }
+  .ar-rowline { stroke: var(--line); }
+  .ar-clip { stroke-width: 1; }
+  .ar-clip-lbl { font-family: var(--body); font-size: 11px; fill: var(--ink); }
+  .ar-sig { font-family: var(--mono); font-size: 10px; fill: var(--accent-ink); font-weight: 500; }
+  .ar-pt { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+  .ar-pt:hover { stroke: var(--ink); }
+  .ar-badge { fill: var(--panel); stroke: var(--line-2); }
+  .ar-badge-t { font-size: 10px; fill: var(--ink); font-weight: 500; }
+  .ar-cable { fill: none; stroke-width: 2; cursor: pointer; }
+  .ar-cable.provisional { stroke-dasharray: 6 5; }
+  .ar-orphan { fill: var(--bad); }
+  .ar-playhead { stroke: var(--accent); stroke-width: 1.5; }
+  .ar-ph-cap { fill: var(--accent); }
+  .ar-auto-fill { opacity: .18; }
+  .ar-gap { fill: var(--bad); opacity: .16; }
+  .ar-world-ev { stroke-width: 1; }
+  .ar-link { fill: none; stroke: var(--ink-3); stroke-width: 1.2; opacity: .7; }
+  .ar-link.back { stroke: var(--accent); opacity: .95; stroke-width: 2; }
+
+  /* the playhead inspector — replaces the selection card while the Told lens is open */
+  .told-insp .grp { display: grid; gap: 6px; }
+  .told-insp .grp > .glbl { font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--line); padding-bottom: 4px; display: flex; gap: 8px; align-items: center; }
+  .told-insp .grp > .glbl i { width: 8px; height: 8px; display: inline-block; background: var(--k); }
+  .told-insp .kv { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 3px 10px; font-size: 13px; }
+  .told-insp .kv dt { color: var(--ink-2); font-family: var(--mono); font-size: 11px; padding-top: 1px; overflow-wrap: anywhere; }
+  .told-insp .kv dd { margin: 0; text-align: right; color: var(--ink); }
+  .told-insp .kv dd.chg { color: var(--accent-ink); }
+  .told-insp .meter { height: 6px; background: var(--well); border: 1px solid var(--line); position: relative; margin-top: 2px; }
+  .told-insp .meter b { position: absolute; left: 0; top: 0; bottom: 0; background: var(--c-char); }
+  .told-insp .chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 1px 7px; border: 1px solid currentColor; white-space: nowrap; }
+  .told-insp .chip.prov { color: var(--warn); border-style: dashed; }
+  .told-insp .chip.orph { color: var(--bad); }
+  .told-insp .chip.ok { color: var(--good); }
+  .told-insp .cab { display: grid; gap: 3px; padding: 7px 8px; border: 1px solid var(--line); background: var(--well); font-size: 12px; margin-bottom: 6px; }
+  .told-insp .cab b { font-weight: 700; }
 
   /* ---- detail rail (selection-only inspector, call 79-3) — hidden unless .app.show-det ---- */
   aside.detail { display: none; grid-area: detail; border-left: 1px solid var(--line-2); overflow-y: auto; overflow-wrap: anywhere; padding: 16px 16px 22px; background: color-mix(in srgb, var(--panel) 55%, transparent); }
@@ -575,7 +732,8 @@ STYLE = r"""
     nav.tabbar button { flex: 1 1 0; font-family: var(--display); font-weight: 700; font-size: 13px; text-transform: uppercase; padding: 10px 0; color: var(--ink-2); }
     nav.tabbar button.on { color: var(--accent); box-shadow: inset 0 3px 0 var(--accent); }
     main.canvas { padding: 12px 14px 18px; }
-    .fab-scroll, .signpost-grid, .node-cols, .told-tracks { overflow-x: auto; }
+    .fab-scroll, .signpost-grid, .node-cols, .ar-wrap { overflow-x: auto; }
+    .ar-tracks, .ar-lane { height: 420px; }
   }
 </style>
 """
@@ -591,9 +749,9 @@ def build_html() -> str:
   <header class="head">
     <div class="brand"><i></i><b>Story Workspace</b></div>
     <nav class="lenses" id="lensNav">
-      <button data-lens="fabula" class="on">Fabula<span class="k">1 · Map</span></button>
-      <button data-lens="rails">Rails<span class="k">2 · Seat</span></button>
-      <button data-lens="told">Told<span class="k">3 · Write</span></button>
+      <button data-lens="fabula" class="on" title="Map workspace — key 1">Fabula<span class="k">1</span></button>
+      <button data-lens="rails" title="Seat workspace — key 2">Rails<span class="k">2</span></button>
+      <button data-lens="told" title="Write workspace — key 3">Told<span class="k">3</span></button>
     </nav>
     <div class="headspace"></div>
     <div class="paneltoggles" id="panelToggles">
@@ -641,9 +799,22 @@ def build_html() -> str:
     </section>
 
     <section class="lens-view" id="view-told">
-      <h2>Told — two stacked tracks</h2>
-      <p class="sub">Told order above world time. A jump line marks a scene that jumps back or forward from where the reader's told order last stood.</p>
-      <div class="fab-scroll"><div class="told-tracks" id="toldTracks"></div></div>
+      <h2>Told — The Arrangement</h2>
+      <p class="sub">The <span class="t" data-tt="gloss" data-id="told">told order</span> the audience gets it in, on the <span class="t" data-tt="gloss" data-id="timecode">grid</span> — <span class="t" data-tt="gloss" data-id="bar">bar</span>.<span class="t" data-tt="gloss" data-id="beat">beat</span>.<span class="t" data-tt="gloss" data-id="tick">tick</span>. Read-only: from <span class="mono">ShroomsQ/_CANON/_TRACKING/oxo.yaml</span>. A lane with no data draws nothing — never a fake line.</p>
+      <div class="told-toolbar" id="toldToolbar">
+        <div class="seg" role="group" aria-label="Told ruler" id="toldRulerSeg">
+          <button data-v="told" aria-pressed="true" class="t" data-tt="gloss" data-id="told">Told order</button>
+          <button data-v="world" aria-pressed="false" class="t" data-tt="gloss" data-id="world">World clock</button>
+          <button data-v="stack" aria-pressed="false" class="t" data-tt="gloss" data-id="stack">Stack</button>
+        </div>
+        <div class="seg" id="toldZoomSeg"></div>
+        <div class="told-tc"><small class="t" data-tt="gloss" data-id="timecode">Time code</small><b id="toldTcOut">—</b></div>
+      </div>
+      <div class="ar-wrap" id="arWrap">
+        <div class="ar-tracks" id="arTracks" aria-hidden="true"></div>
+        <div class="ar-lane" id="arLane"><svg class="ar-svg" id="arSvg" role="img" aria-label="Told-order timeline: scenes, tempo, story points and cables"></svg></div>
+      </div>
+      <p class="hint" style="margin-top:8px">Key <b class="mono">T</b> flips this ruler (told / world / stack) · wheel to zoom, shift+wheel or drag to pan, click the ruler to move the playhead, ← → step one beat.</p>
     </section>
   </main>
 
