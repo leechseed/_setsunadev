@@ -555,6 +555,10 @@ The L5 shelf holds 82 items keyed 9/16 (BOLO 18), twelve distilled to date, this
 
 ---
 
+## TROPES
+
+Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **character** domain is keyed to L1–L12 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **character**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. Sexuality tropes key onto these same layers (mostly L9 EROS) and are listed under **sexuality** in the pull list.
+
 ## OPEN
 
 Numbered calls surfaced by the five new distills' own "For the character system" sections. **RULED 2026-09-16 (Chief: "character calls go"): all eleven as recommended, applying at the next schema bump.** Nothing in the schema changes until that bump; each call below now reads as an order for it, not a proposal. Provisional a week like every ruling.

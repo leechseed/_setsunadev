@@ -89,6 +89,10 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 - **80-E · which books:** held books only (Egri, McKee, Coyne, Truby, Dramatica, plus Foucault now distilled as MSX.36); no Weiland.
 - **80-G · Fairness as a second gauge for world scenes:** yes (above).
 
+## TROPES
+
+Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is keyed to the four rails R1–R4 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **theme**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. The theme sub-index pass (Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) is keying as of 2026-09-29.
+
 ## OPEN
 
 - The handshake table with BOLO 81 (waits on 81's release).

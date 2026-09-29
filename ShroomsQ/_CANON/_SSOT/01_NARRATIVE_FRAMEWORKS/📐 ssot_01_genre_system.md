@@ -221,6 +221,10 @@ The L7 shelf holds 174 items keyed 9/16 (BOLO 18), nine distilled to date, this 
 
 ---
 
+## TROPES
+
+Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **genre** domain is keyed to G1–G12 in the [trope register](📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **genre**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. 
+
 ## OPEN
 
 Built from the six wave distills' "For the genre system" bullets. **RULED 2026-09-16 (Chief: "genre calls go"): all thirteen as recommended.** Twelve layers hold; the names and the OXO contract bench stay provisional; Truby's fourteen become the spine of the GENRE CARD register with the other three vocabularies as aliases; the four clauses become required card fields; the rest apply at the next bump or pass to their home docs as recommended. Provisional a week like every ruling.

@@ -36,6 +36,10 @@ DOMAIN_SEEDS = {
     "SexTropes": "sexuality", "QueerRomance": "sexuality",
     "Death": "theme", "TruthAndLies": "theme", "Family": "theme", "Betrayal": "theme",
     "Revenge": "theme", "FateAndProphecy": "theme",
+    # 9/29 theme sub-index pass: the pages above now list sub-indexes; these hold the tropes
+    "DeathTropes": "theme", "FamilyTropes": "theme", "BetrayalTropes": "theme",
+    "RevengeTropes": "theme", "AuthorityTropes": "theme", "MemoryTropes": "theme",
+    "TheSecretIndex": "theme", "PromisesAndVowsIndex": "theme",
 }
 LINK = re.compile(r"""<a class='twikilink' href='/pmwiki/pmwiki\.php/Main/([A-Za-z0-9]+)'[^>]*>(.*?)</a>""", re.S)
 ENTRY = re.compile(r"""<li>\s*<a class='twikilink' href='/pmwiki/pmwiki\.php/Main/([A-Za-z0-9]+)'[^>]*>(.*?)</a>\s*:?\s*(.*?)</li>""", re.S)
