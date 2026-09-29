@@ -408,6 +408,8 @@ Her Destiny vector points toward a specific disillusionment that becomes precisi
 
 *Renamed 2026-08-24 (STATE #4 ruling): `motivation_element` → `mc_problem_element`, holding the MC Problem. The Motivation-quad primary (`Consider`) relocates to `L12_DRAMATICA_EXTENDED.motivation_quad`.*
 
+**Necessity (call 13 rule, RULED 2026-09-29):** satisfied. She is the storyform's sole MC anchor — the Protagonist assignment is load-bearing to the Optionlock and the Equity throughline, not an unforced narrative placement; the wound-and-resistance combination in L5/L11 is what forces her into the role.
+
 The Optionlock fires because her wound and resistance index combination systematically eliminates exits. The Truth-is-Enough Veto, the Heroic Recognition Veto, and the Reset Veto are narrative invariants that correspond directly to flag logic — each veto closes one option class permanently.
 
 ---
@@ -464,9 +466,9 @@ Fires at story climax. WILL 14 provides sufficient internal structure to assign 
 
 **FLAG: KINSHIP_COLLAPSE — FIRED_PRE_STORY**
 
-Trigger: `IMPRINT.attachment_style_score > 5 AND primary_attachment_object = "deceased" AND WOUND > 7`
+Trigger: `IMPRINT.attachment_style_score > 5 AND secure_base_object = "deceased" AND WOUND > 7` *(field renamed 2026-09-29, call 14; was `primary_attachment_object`, kept as a read alias)*
 
-This flag fired at the crash. The character enters the story in a post-collapse attachment state. No primary attachment object is currently active. All relational behavior post-crash operates without a secure base.
+This flag fired at the crash. The character enters the story in a post-collapse attachment state. No secure base object is currently active. All relational behavior post-crash operates without a secure base.
 
 ---
 
@@ -480,13 +482,22 @@ VERSION: 1.0.0
 
 TIER_1:
   CORE: 13
+  psychology_stack: null   # ⧗ Egri checklist not yet run
   VITAL: 14
+  physiology_stack: null   # ⧗ not yet run
   SOCIAL: 10
+  sociology_stack: null    # ⧗ not yet run; circumplex dial not scored (pilot note only)
 
 TIER_2:
   WILL: 14
+  coping_strategy: null    # ⧗ no documented match to Schmidt's five strategies
   WOUND: 8
   DRIVE: 12
+
+L5_WOUND:
+  severity: 8              # same scale as TIER_2.WOUND, named per Puglisi & Ackerman (call 6)
+  triggers: [mechanical_failure_events, guidance_she_is_inclined_to_refuse, brothers_name, scenes_where_listening_would_prevent_harm]
+  relational_refs: []      # ⧗ brother_deceased (L8) is the likely ghost, no character_id carded yet
 
 L7_ORIGIN:
   origin_class: working_criminal_adjacent
@@ -495,14 +506,18 @@ L7_ORIGIN:
   origin_wound_seed: 6
   tech_level: 6
   system_exposure: early_pre_awareness
+  hereditary_predisposition: null   # ⧗ provisional field (call 12), not yet populated
 
 L8_IMPRINT:
-  attachment_style: secure_anxious
+  attachment_style: secure_anxious   # predates the four-way enum (call 14); locked value retained, not reclassified
   attachment_style_score: 6
+  attachment_dimensions: null        # ⧗ {anxiety, avoidance} not yet scored
+  protest_behaviors: []              # ⧗ not yet documented
+  deactivating_strategies: []        # ⧗ not yet documented
   emotional_range: 9
   conditional_patterns: [merit_earns_freedom, loyalty_to_kinship, distrust_of_institution]
   imprint_flexibility: 3
-  primary_attachment_object: brother_deceased
+  secure_base_object: brother_deceased   # renamed 2026-09-29 from primary_attachment_object (read alias kept)
 
 L9_EROS:
   erotic_blueprint_type: kinesthetic
@@ -526,6 +541,9 @@ L11_DESTINY:
   soul_evolution_archetype: tactical_disruptor
   karmic_memory: meritocratic_certainty
   growth_requirement: accept_asymmetry
+  arc_type: null            # ⧗ not yet formally classified (call 2)
+  change_cause: null        # ⧗ not yet mapped to the four causes (call 2)
+  catalyst_archetype: null  # ⧗ not yet mapped to Schmidt's growth-pairing (call 10)
 
 L12_FUNCTION:
   dramatica_archetype: Protagonist
@@ -538,6 +556,7 @@ L12_FUNCTION:
   story_judgement: Good
   limit_type: Optionlock
   resolve: Change
+  necessity: satisfied      # call 13 rule (RULED 2026-09-29): sole MC anchor, load-bearing to the Optionlock
 
 L12_DRAMATICA_EXTENDED:
   motivation_quad: [Consider, Pursuit]   # quad primary relocated here 2026-08-24 (STATE #4)
@@ -590,37 +609,37 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **character** domain is
 
 ## OPEN
 
-Numbered calls surfaced by the five new distills' own "For the character system" sections. **RULED 2026-09-16 (Chief: "character calls go"): all eleven as recommended, applying at the next schema bump.** Nothing in the schema changes until that bump; each call below now reads as an order for it, not a proposal. Provisional a week like every ruling.
+Numbered calls surfaced by the five new distills' own "For the character system" sections, RULED 2026-09-16 (Chief: "character calls go") as recommended, at the next schema bump. **RULED 2026-09-29 (Chief: "Rex" — recs): that bump is this version.** Calls 1, 2, 4, 6, 8, 10, 12, 13, 14, 15 APPLIED at 2.1.0 as below; calls 3, 5, 7, 9 HELD exactly as ruled 9/16; call 11 CLOSED. Provisional a week like every ruling.
 
-1. **Ghost and revenant cross-links on L5.** [[BVX.0196]]'s ghost and revenant are pointers to other characters, not attributes of one, and WOUND and DRIVE currently resolve against them with no named field. *Ruled 9/16, as recommended:* add `ghost_ref` and `revenant_ref` as relational sub-fields on L5 at the next bump, not now.
+1. **Ghost and revenant cross-links on L5.** APPLIED 2.1.0 — folded into call 15's `relational_refs` (list of `{kind, character_id, note}`) rather than standalone `ghost_ref`/`revenant_ref` fields.
 
-2. **A typed arc field on L11.** Corbett's growth vs transformation ([[BVX.0196]]) and Card's four causes of change ([[BVX.0061]]) both force a choice DESTINY currently leaves implicit. *Ruled 9/16, as recommended:* add `arc_type` and `change_cause` as L11 sub-fields at the next bump.
+2. **A typed arc field on L11.** APPLIED 2.1.0 — `arc_type` and `change_cause` added as L11 sub-fields.
 
-3. **The tyranny of motive as a narration rule, not schema.** [[BVX.0196]] names a cross-cutting authoring constraint: no single layer's value should read as *the* stated cause of an action. *Ruled 9/16, as recommended:* adopt as a house writing rule for narrating character queries, not a new field on any layer.
+3. **The tyranny of motive as a narration rule, not schema.** HELD, as ruled 9/16 — a house writing rule for narrating character queries, not a field on any layer. Unchanged.
 
-4. **The hierarchy as an allocation rule over all twelve layers.** Card's hierarchy ([[BVX.0061]]) and McKee's cast map ([[BVX.0064]]) both say characterization effort should track narrative rank; tier depth already encodes this loosely. *Ruled 9/16, as recommended:* state the rule explicitly in Core Methodology at the next bump, no new field needed.
+4. **The hierarchy as an allocation rule over all twelve layers.** APPLIED 2.1.0 — stated explicitly in Core Methodology as "The Hierarchy Rule," no new field.
 
-5. **Viewpoint declared out of scope, the texture layer's.** Card ([[BVX.0061]]) shows person, tense, and penetration map onto none of the twelve layers. *Ruled 9/16, as recommended:* the exclusion is now stated above in "What it does not own"; no further schema action.
+5. **Viewpoint declared out of scope, the texture layer's.** HELD, as ruled 9/16 — already stated above in "What it does not own." No further action.
 
-6. **The wound card as L5's field list, plus a severity dial.** [[BVX.0209]]'s eleven-field entry and severity dial are close to a drop-in for L5, alongside a trigger list and a reveal strategy the schema doesn't currently name. *Ruled 9/16, as recommended:* adopt the severity dial and trigger list as L5 sub-fields at the next bump.
+6. **The wound card as L5's field list, plus a severity dial.** APPLIED 2.1.0 — `severity` (the existing 0–10 WOUND scale, now named per Puglisi & Ackerman) and `triggers` (a list) added as L5 sub-fields.
 
-7. **The villain-arc fork, why an L5-to-L8 pipeline stalls.** [[BVX.0209]] names a fork, self-blame, a failed prior healing attempt, preference for the dysfunction, that L12 FUNCTION records the outcome of but never the mechanism of. *Ruled 9/16, as recommended:* hold for now, revisit once a second antagonist instance is carded.
+7. **The villain-arc fork, why an L5-to-L8 pipeline stalls.** HELD, as ruled 9/16 — revisit once a second antagonist instance is carded.
 
-8. **The interpersonal circumplex and the Dark/Light Triad as dials.** [[BVX.0233]] offers two continuous SOCIAL dials and six scored SHADOW inventories; the fifteen motivations sit beside Maslow under DRIVE. *Ruled 9/16, as recommended:* concrete enough to pilot on one character at the next bump, not retrofitted onto Victoria now.
+8. **The interpersonal circumplex and the Dark/Light Triad as dials.** APPLIED 2.1.0 as a pilot note only — documented in Core Methodology under L3 SOCIAL and L10 SHADOW as available dials, concrete enough to pilot on a future character; not scored, not retrofitted onto Victoria, no new field in the structured data block.
 
-9. **The audience trust ledger as a stack-external reader model.** Pelican's moral-emotion bookkeeping ([[BVX.0233]]) tracks the audience's judgement, not the character's own interface. *Ruled 9/16, as recommended:* hold outside the twelve layers entirely, a future reader-model document.
+9. **The audience trust ledger as a stack-external reader model.** HELD, as ruled 9/16 — outside the twelve layers entirely, a future reader-model document.
 
-10. **Growth-pairing and a coping-strategy field.** [[BVX.0045]]'s growth-pairing (a catalyst archetype) and five coping strategies suggest sub-fields under L11 and L4/L8. *Ruled 9/16, as recommended:* candidate `catalyst_archetype` (L11) and `coping_strategy` (L4 or L8) at the next bump.
+10. **Growth-pairing and a coping-strategy field.** APPLIED 2.1.0 — `catalyst_archetype` added on L11; `coping_strategy` added on L4 (RULED 2026-09-29, not L8).
 
-11. **Attachment theory absent from the shelf.** L8 IMPRINT already claims attachment architecture, but [[BVX.0233]] notes the shelf has never distilled attachment theory itself, staying at the need-to-belong level. *Ruled 9/16, as recommended:* an acquisition target for the next wave, or a pull from the PSY shelf, not a schema change.
+11. **Attachment theory absent from the shelf.** CLOSED — distilled: [[BVX.1127]], Levine & Heller, *Attached*, now folds in directly at call 14. No longer an acquisition target.
 
-12. **[[the-bone-structure|The bone structure]] as Tier 1's text stack.** [[BVX.1123]]'s CORE, VITAL, and SOCIAL should carry Egri's descriptive sub-fields beneath the number, auditable against his own checklist rather than freestanding; heredity is the one field genuinely homeless, sitting in neither ORIGIN nor VITAL. *Recommendation:* adopt the text stack at the next bump, plus a `hereditary_predisposition` sub-field on L7 or L2, whichever proves load-bearing on a second character.
+12. **[[the-bone-structure|The bone structure]] as Tier 1's text stack.** APPLIED 2.1.0 — Egri's descriptive checklist added as `psychology_stack` (L1), `physiology_stack` (L2), and `sociology_stack` (L3); `hereditary_predisposition` added on L7 ORIGIN, provisional until a second character tests it.
 
-13. **[[strength-of-will|Strength of will]] and [[the-pivotal-character|the pivotal character]].** [[BVX.1123]] defines L4 WILL as the capacity to decide, not toughness, which reframes Stress Threshold as decision-capacity under load rather than raw hardness; the pivotal character, forced into the role by necessity, argues L12 FUNCTION's Protagonist archetype should require a documented necessity, not just a storyform assignment. *Recommendation:* the L4 definition now as a gloss, the L12 rule at the next bump.
+13. **[[strength-of-will|Strength of will]] and [[the-pivotal-character|the pivotal character]].** APPLIED 2.1.0 — L4 WILL redefined as the capacity to decide, not toughness (Stress Threshold now reads as decision-capacity under load, formula unchanged); L12 rule added: a Protagonist assignment requires a documented necessity, not just a storyform assignment.
 
-14. **The L8 IMPRINT field list from *Attached*.** [[BVX.1127]] proposes `attachment_style` as an enum of secure, anxious, avoidant, plus the rare fearful-avoidant; a two-dimension `attachment_style_score` (anxiety, avoidance) beside the single scalar; new list-typed fields `protest_behaviors` and `deactivating_strategies`; and `secure_base_object` as a clearer name for `primary_attachment_object`. [[the-secure-base|The secure base]]'s buffering effect, one character's presence measurably lowering another's stress response, is a dyadic variable with no home on either side; Victoria Midnight's `KINSHIP_COLLAPSE` flag reads as the same claim under a different name, consistent rather than redundant wiring. *Recommendation:* the field list at the next bump, Cassidy & Shaver or Bowlby as the research-base acquisition.
+14. **The L8 IMPRINT field list from *Attached*.** APPLIED 2.1.0 — `attachment_style` as a four-way enum (secure · anxious · avoidant · fearful_avoidant); a two-dimension `attachment_dimensions` {anxiety, avoidance} beside the existing scalar `attachment_style_score`; new list fields `protest_behaviors` and `deactivating_strategies`; `primary_attachment_object` renamed `secure_base_object`, old name kept as a read alias — the only rename in this bump.
 
-15. **Masks, the Shapeshifter, and the Mentor.** [[BVX.1124]]'s [[archetypes-as-masks|archetypes as masks]] confirms Schmidt's non-collision with Dramatica's eight from a second source, since Vogler's eight are situational functions any character can trade mid-scene rather than fixed Story Mind bundles. The Shapeshifter's relational uncertainty has no single-layer home, sitting closer to L9 EROS or L3 SOCIAL than to L12 FUNCTION. The Mentor is a relational pointer, not a portable attribute, joining call 1's ghost/revenant cross-link as another meaning keyed to another character's WOUND that the schema still can't natively express. *Recommendation:* fold into call 1's sub-field at the next bump.
+15. **Masks, the Shapeshifter, and the Mentor.** APPLIED 2.1.0 — folded into one relational field, `relational_refs` (list of `{kind: ghost|revenant|mentor|shapeshifter, character_id, note}`), sited on L5, superseding call 1's separate `ghost_ref`/`revenant_ref` proposal and absorbing the Mentor and Shapeshifter pointers this call raised.
 
 ## Version history
 
@@ -631,3 +650,4 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 |2.0.0|2026-09-16|BOLO 18 character wave: proper YAML frontmatter (was a malformed single-line block); intro block (What this is / owns / does not own / Root claim); MIND MODELS (three diagrams); PART A slice table (twelve layers, Question/Source/Field/Tier columns) sourced against five new distills (Corbett, Card, Puglisi & Ackerman, Pelican, Schmidt) plus the four already in the library (McKee, Davis, Truby, Dramatica); THE INSTANCE gained a Victoria Midnight summary table ahead of the existing full slice; CHARACTER × LIBRARY table and shelf note; eleven OPEN calls. Schema, formulas, and every value in the Victoria Midnight instance are unchanged.|
 |2.0.1|2026-09-16|The eleven OPEN calls ruled as recommended, applying at the next schema bump ("character calls go"). No schema change.|
 |2.0.2|2026-09-16|The drop-folder intake folded in: three new CHARACTER × LIBRARY rows (Egri, Levine & Heller, Vogler); sources gained BVX.1123, BVX.1124, BVX.1127; four OPEN calls added (12-15), unruled. Schema, formulas, and the Victoria Midnight instance unchanged.|
+|2.1.0|2026-09-29|RULED 2026-09-29, Chief: "Rex" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory distilled, BVX.1127). Schema additions: L1/L2/L3 gain an Egri text stack (`psychology_stack`, `physiology_stack`, `sociology_stack`); the Hierarchy Rule stated in Core Methodology; L4 WILL redefined as decision-capacity not toughness, gains `coping_strategy`; L5 WOUND gains `severity` (formalizing the existing 0–10 scale), `triggers`, and `relational_refs` (list of {kind: ghost\|revenant\|mentor\|shapeshifter, character_id, note}, superseding the separate `ghost_ref`/`revenant_ref` proposal and folding in calls 1 and 15); L7 ORIGIN gains provisional `hereditary_predisposition`; L8 IMPRINT gains `attachment_style` as a four-way enum, two-dimension `attachment_dimensions` {anxiety, avoidance} beside the scalar `attachment_style_score`, list fields `protest_behaviors` and `deactivating_strategies`, and the rename `primary_attachment_object` → `secure_base_object` (old name kept as a read alias, the only rename this bump); L11 DESTINY gains `arc_type`, `change_cause`, `catalyst_archetype`; L12 FUNCTION gains the Protagonist-necessity rule; the circumplex and Dark/Light Triad dials (call 8) documented as pilot-only under L3 and L10, not scored. Victoria Midnight instance kept valid throughout: every new field either carries an existing documented value (severity, triggers) or is marked ⧗/null with no canon invented; her locked scalar values (CORE 13, VITAL 14, SOCIAL 10, WILL 14, WOUND 8, DRIVE 12) and every Tier 3 value present before this bump are unchanged.|
