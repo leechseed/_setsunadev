@@ -52,7 +52,7 @@ date_created: 2026-09-29
 # BVX.0504 — Role-Playing Game Studies: Transmedia Foundations — eds. Zagal & Deterding (2018)
 ### Knowledge Entry — Distill
 
-A 27-chapter academic textbook surveying RPG Studies across disciplines and media; this distill pulls the three chapters load-bearing for setting craft, Definitions (Ch. 2), Worldbuilding in RPGs (Ch. 20), and Literary Studies (Ch. 14), as the theory layer underneath the Command's SETTING SLICE.
+A 27-chapter textbook surveying RPG Studies across disciplines; this distill pulls the three chapters load-bearing for setting craft, Definitions (Ch. 2), Worldbuilding (Ch. 20), and Literary Studies (Ch. 14), as the theory layer underneath the Command's SETTING SLICE.
 
 ## TABLE OF CONTENTS
 - [Core Thesis](#1-core-thesis)
@@ -156,7 +156,7 @@ The book's unifying move, stated in Ch. 2 and re-enacted in Ch. 20, is to refuse
 | **Fringe / semi-canon** | Unofficial or half-accepted material: zines, wikis, fan theories, local house-canon | A world without a fringe has no interpretive community forming around it; fringe growth is a health signal |
 | **Metatext** | Extra-diegetic material (wikis, maps, timelines) that describes or organizes the world from outside it | Distinguishes "world material" (in-world) from "world documentation" (about the world); both matter, in different ways |
 | **World bible / core book** | The document that establishes a world for production; format differs by RPG type (TRPG core books, sensory exploration in CRPGs, blue-sheet handouts in larp) | The delivery medium for setting material is itself a design decision |
-| **Bottom-up / top-down / co-creation worldbuilding** | Three authority models: players build the world through play (Microscope, The Quiet Year); designers pre-build a rich world players inhabit (WoW, Mass Effect); both share the load (Landmark, TRPG house rules) | Naming the model up front prevents a table or a writing team from silently drifting between them |
+| **Bottom-up / top-down / co-creation worldbuilding** | Three authority models: players build the world through play (Microscope), designers pre-build a rich world players inhabit (WoW), or both share the load (Landmark) | Naming the model up front prevents drift mid-project |
 | **Willing activation of pretense** (Saler) | An active, chosen belief in the secondary world, distinct from passive "suspension of disbelief" | Reframes audience buy-in as something the world must earn through craft, not something owed to it by genre |
 | **Fictive blocks** (Mackay) | Reusable literary motifs, tropes, and themes that let players and designers build on each other's input in real time without breaking the fiction | The unit of improvisation in collaborative worldbuilding: a table runs on shared blocks, not shared plans |
 | **Paratext** (Genette, via Ch. 14) | Material surrounding the "main text": titles, covers, back-cover copy (peritext) and trailers, reviews, walkthroughs (epitext) | A setting is pitched before it's entered; back-cover copy is doing real worldbuilding work, not just marketing |
