@@ -1,0 +1,321 @@
+{
+ "bolo": {
+  "n": 87,
+  "title": "The setting shelf: what we hold, what to get, TTRPG first",
+  "trunk": "BLACK",
+  "issued": "2026-09-29",
+  "asof": "2026-09-29",
+  "s": "hot",
+  "status": "🟢 **PAGE UP 9/29** — BOOK HUNT: https://claude.ai/artifact/Pb1YJvbZ1VQnLa7We6bw11 · 28 of 74 free-readable for $0 (3 already held · 11 Everand · 11 borrow · 3 online), 46 wait on cash · setting shelf: 1,537 held items judged, 29 to get (5 free official editions) · 38 distills landed 9/29 across three waves, all pass RANGE · next: Chief grabs the free list into `Q:/_PDF_DROP/_NEW`, then \"rescan Zotero\".",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "TM 03 (setting)",
+  "related": [
+   {
+    "n": 18,
+    "why": "the two-stage spine sweep's Zotero inventory (1,031 items, spine-keyed shelves) is the same library BOLO 87 pools; its SETTING shelf count (154 items, 91 of them TTRPG sourcebooks) is the base this row distills from."
+   },
+   {
+    "n": 77,
+    "why": "the plot sweep is the method BOLO 87 repeats for setting: pool held + drop + z-lib into one register, RANGE-check every line, mark what's free versus what needs an upload."
+   },
+   {
+    "n": 80,
+    "why": "the theme system's book hunt is the book hunt that set BOLO 87 off — the 74 TO GET on BOLO 80's list is the source list this row is narrowing to $0 routes."
+   }
+  ],
+  "home": "BOLO.md · row 87",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The library already holds 1,537 setting items and 28 of the 74 wanted books are free right now — reading starts before any money moves."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "TTRPG sourcebooks are the weighted target. Distill what's already on the shelf before chasing anything new."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "Naming what's still missing — 29 to get, 46 waiting on cash — turns a vague shelf into a costed list, even with no money in hand."
+  }
+ ],
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where this came from: one line spoken on the heels of the book hunt, what was already true before it was said, and what the record shows now.",
+   "strand": {
+    "last": "BOLO 80's book hunt already produced a 74-item TO GET list, free routes only, because Chief said he doesn't have the money right now.",
+    "plan": "Pool the SETTING shelf plus the drop folder's RPG sourcebooks into one list — HAVE by family, TO GET weighted toward TTRPG — and mark which routes are free.",
+    "you": "You named the same move BOLO 77 already ran for plot: distill what's on the shelf, then write down what's missing, TTRPG first.",
+    "next": "Chief grabs the free list into the drop folder, then orders \"rescan Zotero\" to fold the new PDFs in."
+   },
+   "groups": [
+    {
+     "label": "The transmission · verbatim",
+     "items": [
+      {
+       "t": "\"do that with setting … distill what we got in the library we have now already on board, what books that we have and what books we need to get to really get a good setting going on … get a lot of TTRPG stuff, focus on that.\"",
+       "s": "done",
+       "when": "9/29"
+      },
+      {
+       "t": "\"dont have the money rn\"",
+       "s": "done",
+       "when": "9/29"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "Same pattern as BOLO 77's plot sweep: keep the library current, pool the SETTING shelf + the drop folder's RPG sourcebooks, write one list (HAVE by family · TO GET, TTRPG weighted), and mark free-legal routes.",
+       "s": "done"
+      },
+      {
+       "t": "The book hunt that set it off: the 74 TO GET on BOLO 80's list, free routes only.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "BOOK HUNT page: 28 of 74 readable for $0 (3 already held · 11 Everand · 11 borrow · 3 online), 46 wait on cash.",
+       "s": "done"
+      },
+      {
+       "t": "Setting shelf: 1,537 held items judged, 29 to get (5 free official editions); work lives in `_tools/bolostatus/work/87/`.",
+       "s": "done"
+      },
+      {
+       "t": "12 distills landed 9/29, all pass RANGE, then waves 2–3 added 14 more (BVX.1140–1155) and 12 more (BVX.1156–1167) — 38 distills total, all pass RANGE.",
+       "s": "done"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason is that a story's setting is only as deep as the books behind it, and the TTRPG sourcebooks are the fastest way to get there.",
+   "strand": {
+    "last": "The theme system's book hunt (BOLO 80) had just landed when Chief turned the same method on setting.",
+    "plan": "Judge what the library already holds, write one HAVE and TO GET list weighted toward TTRPG books, mark the free routes, and distill the read-first set.",
+    "you": "You gave the order on 9/29 and ruled that you find the PDFs yourself; Claude never downloads books.",
+    "next": "You grab the free titles into Zotero or the drop folder, then say \"rescan Zotero\"."
+   },
+   "task": "Distill the setting shelf into one list of what we hold and what to get, TTRPG first,",
+   "intent": "in order to give TM 03 (the setting system) a real library to build from, the same way BOLO 77's plot sweep fed the plot system.",
+   "spoken": "\"Do that with setting … distill what we got in the library we have now already on board, what books that we have and what books we need to get to really get a good setting going on … get a lot of TTRPG stuff, focus on that.\"",
+   "endstate": [
+    "Every setting book the library holds is judged and on one list, with the TTRPG sourcebooks weighted first.",
+    "Every book still to get carries a route: free official edition, Everand, a library borrow, online, or cash.",
+    "The read-first set is distilled, and every distill passes RANGE.",
+    "New PDFs flow in one way: Chief attaches them in Zotero, then says \"rescan Zotero\"."
+   ]
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "What happened between the order and today, and what's left before the next hand-off.",
+   "strand": {
+    "last": "BOLO 77's plot sweep already proved the method: pool held + drop + z-lib, one register, RANGE-check every line.",
+    "plan": "Judge the setting shelf, build the book hunt page, then distill in waves, TTRPG weighted, until RANGE clears every batch.",
+    "you": "You gave the order once, on the heels of the book hunt; everything since has run without another word from you.",
+    "next": "Grab the free list into the drop folder, then say \"rescan Zotero\" to fold the new PDFs in."
+   },
+   "main_effort": "Distill the setting shelf — TTRPG weighted — into one HAVE/TO GET list, then let Chief pull the free ones into the drop and sweep them in.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Captured** on 9/29, same pattern as BOLO 77's plot sweep: pool the SETTING shelf + the drop folder's RPG sourcebooks into one list, TTRPG weighted, free-legal routes marked.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 1,
+     "t": "**Setting shelf judged** — 1,537 held items judged, 29 to get (5 free official editions); work in `_tools/bolostatus/work/87/`.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 2,
+     "t": "**BOOK HUNT page built** — https://claude.ai/artifact/Pb1YJvbZ1VQnLa7We6bw11 — 28 of 74 readable for $0 (3 already held · 11 Everand · 11 borrow · 3 online), 46 wait on cash.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 3,
+     "t": "**Wave 1, 12 distills landed, all pass RANGE** — BVX.0405 DMG 5e · 0480 Pathfinder GMG · 0465 Microscope · 1137 Ultraviolet Grasslands · 1138 Midgard · 1139 Shadows over Vathak (1137–1139 provisional ids) · 0399 Cyberpunk 2020 · 0562 Wolf · 0530 Mizer · 0504 RPG Studies · 0100 Pavel · 0054 Lyons (theme/plot); the master grab list is the BOOK HUNT page's first tab (32 free, 74 paid).",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 4,
+     "t": "**Waves 2–3 done** — +14 new-drop distills (BVX.1140–1155) and +12 more (BVX.1156–1167: Kingdom · Those Dark Places · Traveller 2022 · Dark Skies · Collapse · Political Geography · Ancient Empires · Power of Place · SF Fantasy & Politics · Nelson · 30 Days · Strategic Culture), all pass RANGE.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 5,
+     "t": "**Next** — Chief grabs the free list into `Q:/_PDF_DROP/_NEW`, then orders \"rescan Zotero\"; borrowed books come back as his dictated notes. Two findings flagged: Dictionary of Imaginary Places + Timeless Way are image-only scans (need text copies); Ulysses Unbound in the drop is the wrong book (Killeen, not Elster).",
+     "s": "open"
+    }
+   ],
+   "coord": [],
+   "running": [],
+   "groups": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "What this row costs and where it's written down.",
+   "strand": {
+    "last": "The book hunt list came off BOLO 80's 74-item TO GET; this row's own work started fresh in its own folder.",
+    "plan": "Keep the register and the grab list in `_tools/bolostatus/work/87/`; nothing spent until Chief pulls from the free list.",
+    "you": "You haven't spent anything yet; the 46 books waiting on cash stay waiting.",
+    "next": "The free-list grab into the drop folder; no cost before it."
+   },
+   "files": [
+    {
+     "path": "BOLO.md",
+     "what": "row 87 — the setting shelf order, TTRPG first, spoken 9/29",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/87/",
+     "what": "the setting-shelf work: 1,537 held items judged, 29 to get, the distill batches",
+     "s": "done"
+    },
+    {
+     "path": "Q:/_PDF_DROP/_NEW",
+     "what": "target folder for the free-route grabs Chief pulls next",
+     "s": "open"
+    }
+   ],
+   "cost": [
+    {
+     "k": "book hunt",
+     "v": "28 of 74 free ($0): 3 already held · 11 Everand · 11 borrow · 3 online; 46 wait on cash"
+    },
+    {
+     "k": "setting to get",
+     "v": "29 to get, 5 free official editions"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what. This row is not blocked on work; the next step is a grab only you can make.",
+   "strand": {
+    "last": "Three distill waves landed on 9/29, and every one passed RANGE.",
+    "plan": "Hold until new PDFs arrive, then run the next wave off the rescan.",
+    "you": "You find and attach the books. Claude never downloads them (ruled 9/29).",
+    "next": "Charlie Mike on this sheet: the grab plus \"rescan Zotero\" is the whole resume order."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL**: which books to grab, what to buy with cash, and when to rescan. **Claude**: judging the shelf, the lists, the distills and RANGE; downloads nothing, buys nothing.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**Waiting on the grab.** The free titles on BOOK HUNT's Find list sit until you pull them into Zotero or `Q:/_PDF_DROP/_NEW`. 46 titles also wait on cash.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "Say **\"rescan Zotero\"** once the PDFs are attached. That fires the inventory and the next distill wave. \"FRAGO 87\" pushes an update onto this sheet.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on this row, in order.",
+   "strand": {
+    "last": "Two Claude updates landed the same day the order was spoken: the book hunt page and three waves of distills.",
+    "plan": "One more entry lands when Chief grabs the free list and calls \"rescan Zotero\".",
+    "you": "Yours started it, twice — the order, then the money constraint that made free routes the rule.",
+    "next": "The drop-sweep transmission, whenever you call it."
+   },
+   "entries": [
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"do that with setting … distill what we got in the library we have now already on board, what books that we have and what books we need to get to really get a good setting going on … get a lot of TTRPG stuff, focus on that.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"dont have the money rn\" — free routes only on the book hunt that set BOLO 87 off."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "PAGE UP: BOOK HUNT page built (28 of 74 readable for $0, 46 wait on cash); setting shelf judged (1,537 held items, 29 to get, 5 free official editions); wave 1, 12 distills landed, all pass RANGE."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Waves 2–3 landed: +14 new-drop distills (BVX.1140–1155) and +12 more (BVX.1156–1167), all pass RANGE; findings flagged (two image-only scans, one wrong book in the drop); next: Chief grabs the free list, then \"rescan Zotero\"."
+    }
+   ]
+  }
+ ],
+ "frago": {
+  "mission": "Distill the setting shelf into one list of what we hold and what to get, TTRPG first, in order to give TM 03 (the setting system) a real library to build from, the same way BOLO 77's plot sweep fed the plot system.",
+  "order": "**Grab the free titles on BOOK HUNT's Find list into Zotero, then say \"rescan Zotero\".**",
+  "default": "Silence: the list waits on the BOOK HUNT page and nothing downloads.",
+  "calls": [
+   {
+    "q": "The grab order: what goes first?",
+    "options": "FREE first: the 28 free-readable titles, with the 5 free official editions leading (rec) · TTRPG first, free or not · one family at a time",
+    "default": "FREE first (rec)",
+    "s": "open"
+   },
+   {
+    "q": "The 46 paid titles",
+    "options": "WAIT on cash; the list holds (rec, BOLO 84 is on the same hold) · pick up to five to buy now · drop the paid tail",
+    "default": "WAIT (rec)",
+    "s": "open"
+   },
+   {
+    "q": "The provisional ids BVX.1137–1139 (Ultraviolet Grasslands, Midgard, Shadows over Vathak)",
+    "options": "KEEP as issued (rec) · renumber at the next BVX-LEARN pass",
+    "default": "KEEP (rec)",
+    "s": "open"
+   }
+  ]
+ }
+}
