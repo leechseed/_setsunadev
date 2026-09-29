@@ -196,10 +196,10 @@ The three sequences are not identical (Norse alone ends on an eschaton; Celtic a
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating an encyclopedia's alphabetical order as its actual structure — the real organizing scheme is the thematic feature-spread layer underneath, and that layer is what a setting designer should copy.
+- Treating an encyclopedia's alphabetical order as its actual structure: the real organizing scheme is the thematic feature-spread layer underneath, and that layer is what a setting designer should copy.
 - Writing a doom-myth or apocalypse as scenery: the book is explicit that Ragnarok's power comes from the gods losing something real, not from the imagery of fire and flood alone.
-- Inventing a founder without an institutional consequence — a name-only founder does none of the civic identity work the Classical Founders spread describes.
-- Building a hidden/otherworld layer that behaves like ordinary geography with a curtain over it — the source's Otherworld myths all carry a time-cost or entry-cost that ordinary places don't.
+- Inventing a founder without an institutional consequence: a name-only founder does none of the civic identity work the Classical Founders spread describes.
+- Building a hidden/otherworld layer that behaves like ordinary geography with a curtain over it: the source's Otherworld myths all carry a time-cost or entry-cost that ordinary places don't.
 - Assuming "myth" means "pantheon and creation story" and stopping there — the Preface's ~15-item question list shows how much more ground a culture's myths are expected to cover (love, betrayal, madness, fertility, the unknown, and so on).
 
 ---
