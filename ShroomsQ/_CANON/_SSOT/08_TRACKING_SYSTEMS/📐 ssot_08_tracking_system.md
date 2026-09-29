@@ -1,10 +1,10 @@
 ---
 type: ssot_08_tracking_systems
 category: tracking_system
-version: 0.1.0
+version: 0.2.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "RULED 2026-09-29 — BOLO 90 steps 1–2"
+status: "RULED 2026-09-29 — BOLO 90 steps 1–2; 0.2.0 2026-09-29: BOLO 90 step 7 trial, seven calls RULED, Chief 'line up the recs' — the time code gains the sequence segment, story points gain an iterative field, cables gain the provisional orphan state, backstory movement tag noted"
 purpose: "THE TRACKING SYSTEM: the shared time grid and record model under character state, setting overlays, and world time — the grid (tick · beat · bar · time signature · tempo), the time code, checkpoints and story points, setup → payoff cables, and the Ableton-style track map. One store, many views."
 dependencies: ["ssot_01_scale_ladder", "ssot_02_character_state_architecture", "ssot_03_setting_system", "ssot_04_fabula", "ssot_04_plot_system"]
 trunk: BLACK
@@ -41,7 +41,7 @@ Tracking means writing down what's true at one moment, and writing down the even
 
 Chief asked whether fabula needs its own store (DISTILL §12). Ruled: one store, two rulers, not two tools.
 
-- **The world clock** is when things happened. The fabula runs on it — `M1`, `M2`… movement-relative dating, locked until something needs finer precision (DISTILL §13, Step 1 call 1; [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), THE WORLD CLOCK). It has no bars and no tempo — nobody experiences world time at a pace.
+- **The world clock** is when things happened. The fabula runs on it — `M1`, `M2`… movement-relative dating, locked until something needs finer precision (DISTILL §13, Step 1 call 1; [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), THE WORLD CLOCK). It has no bars and no tempo — nobody experiences world time at a pace. Events before M1 carry the movement tag `backstory` instead of an `Mn` (RULED 2026-09-29, BOLO 90 step 7 trial), for deep past history with no Mn to file under — their event ids read `backstory_<slug>` in place of the usual `<movement>_<slug>` ([🔮 ssot_03_setting_state_architecture.md](../03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md) §11 has the worked case).
 - **The grid** is when the audience is told. The told order runs on it — ticks, beats, bars, time signature, tempo. Every told unit already points at a fabula event ([📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), THE TOLD ORDER), so nothing is stored twice (DISTILL §12).
 
 **Flip or stack.** One key flips the ruler, the way Ableton flips Session and Arrangement. A split view stacks both, with a cable running from every told unit down to its world event. A flashback is a cable running backward — a told unit early on the grid pointing at a fabula event late on the world clock, or vice versa (DISTILL §12).
@@ -73,23 +73,24 @@ The grid is the musical time layer under the timeline — Ableton's bars and bea
 
 ## 4. The Time Code
 
-A time code is the address of one moment on the grid. Grammar (DISTILL §10, §13):
+A time code is the address of one moment on the grid. Grammar (DISTILL §10, §13; sequence segment RULED 2026-09-29, BOLO 90 step 7 trial):
 
 ```
-M2 · S04 | 012.3.2
+M2 · Q1 · S04 | 012.3.2
 ```
 
-Read left to right: **movement** (`M2`) · **scene** (`S04`), then a bar `|`, then **bar.beat.tick** (`012.3.2`).
+Read left to right: **movement** (`M2`) · **sequence** (`Q1`) · **scene** (`S04`), then a bar `|`, then **bar.beat.tick** (`012.3.2`).
 
 **Grammar:**
 - `M<n>` — movement number, no padding (`M2`, `M12`).
+- `Q<n>` — sequence number, no padding (`Q1`, `Q12`) — the R3 SEQUENCE unit the scene sits inside (RULED 2026-09-29, closing the field trial's flagged two-grammar gap; see [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) for the legacy q-scheme's conversion).
 - `S<nn>` — scene number, zero-padded to 2 digits (`S04`, `S23`).
 - `<bar>.<beat>.<tick>` — bar zero-padded to 3 digits (`012`), beat and tick unpadded integers within that bar's time signature and that beat's tick count (`3.2`).
-- The movement·scene half and the bar.beat.tick half are joined by ` | `.
+- The movement·sequence·scene half and the bar.beat.tick half are joined by ` | `.
 
 **Examples:**
-- `M1 · S02 | 004.1.1` — Movement 1, Scene 2, bar 4, beat 1, tick 1 (a scene's opening tick).
-- `M3 · S09 | 041.2.3` — Movement 3, Scene 9, bar 41, beat 2, tick 3.
+- `M1 · Q1 · S02 | 004.1.1` — Movement 1, Sequence 1, Scene 2, bar 4, beat 1, tick 1 (a scene's opening tick).
+- `M3 · Q2 · S09 | 041.2.3` — Movement 3, Sequence 2, Scene 9, bar 41, beat 2, tick 3.
 
 Every story point, cable end, and state change carries one, so any moment is addressable (DISTILL §10).
 
@@ -99,7 +100,7 @@ Every story point, cable end, and state change carries one, so any moment is add
 |---|---|---|
 | Finest | R1 BEAT | single ticks inside one beat |
 | | R2 SCENE | the full bar.beat.tick string inside one scene |
-| | R3 SEQUENCE | scenes bundle; bar counts collapse to a scene-level count badge |
+| | R3 SEQUENCE | the address's `Q<n>` segment names the sequence directly (RULED 2026-09-29); scenes bundle under it, bar counts collapse to a scene-level count badge |
 | | R4 ACT/MOVEMENT | scenes bundle further under the movement |
 | | R5 STORY | movements lay out end to end |
 | | R6 NESTED | a nested storyform's own time code runs in a sub-lane |
@@ -129,10 +130,14 @@ subject:
   id: "<subject_id>"
 field: "<field path>"              # e.g. L5_WOUND.value, or a trope_id's status
 value: "<new value>"
-at: "M2 · S04 | 012.3.2"           # the time code (§4)
+at: "M2 · Q1 · S04 | 012.3.2"      # the time code (§4)
 origin_event: "<fabula event_id>"  # optional — the world-clock anchor, when this point reads from a dated fabula event
 ramp: false                        # true = continuous slope to the next point; false/omitted = step (holds until the next point)
+repeat_count: "<int>"              # optional — how many times this point's change recurred; used only when frequency_mode: iterative (Genette's "happened many times, told once")
+span: "<time-code range>"          # optional — e.g. "M2 · Q1 · S01 | 001.1.1 – M2 · Q1 · S02 | 014.4.3", the range the repeats cover; used only when frequency_mode: iterative
 ```
+
+**Iterative field (RULED 2026-09-29, BOLO 90 step 7 trial).** `repeat_count` and `span` are additive, optional fields for a story point whose `frequency_mode` (the syuzhet's own field, [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) THE TOLD ORDER) reads `iterative` — Genette's "told once, happened many times." A `ramp: true` value already draws the slope between two points; `repeat_count`/`span` name how many happenings and what stretch of grid that slope stands for, closing the field trial's flagged gap that `bar.beat.tick` addresses one instant only.
 
 A checkpoint keeps the shape already defined in [🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §State Record Format; that shape is unchanged by this document.
 
@@ -151,13 +156,15 @@ cable_id: "<slug>"
 type: setup_payoff
 setup:
   track: "<thread id>"           # e.g. character:victoria_midnight, trope:t114
-  at: "M1 · S02 | 004.1.1"
+  at: "M1 · Q1 · S02 | 004.1.1"
 payoff:
   track: "<thread id>"
-  at: "M3 · S09 | 041.2.3"
+  at: "M3 · Q2 · S09 | 041.2.3"
 edge: enable                     # the fabula causal-edge type this cable rides on
-orphan: none                     # none | setup_no_payoff | payoff_no_setup
+orphan: none                     # none | setup_no_payoff | payoff_no_setup | provisional
 ```
+
+**`provisional` (RULED 2026-09-29, BOLO 90 step 7 trial).** A fourth `orphan` value for the case the field trial surfaced: both ends exist narratively — a setup dated, a payoff card drafted — but at least one time code is still ⧗, so the cable is neither finished (`none`) nor genuinely missing an end. `none` and `provisional` both mean "not an orphan"; `provisional` additionally flags that a real time code is still owed before the cable is load-bearing for scrubbing or the query engine.
 
 Comparing two versions of a passage — Ableton's take-lane sense of "A/B" — is a separate, deferred idea (DISTILL §9 requirement 4, "can come later"; §8 take lanes).
 
@@ -220,4 +227,5 @@ Steps 3–7 of the build order (DISTILL §7), amended by §9:
 
 |Version|Date|Changes|
 |---|---|---|
+|0.2.0|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). The time code (§4) gains a `Q<n>` sequence segment, `M2 · Q1 · S04 \| 012.3.2`; every time-code example in this document updated. Story points (§5) gain optional `repeat_count` and `span` fields for `frequency_mode: iterative`. Cables (§6) gain a fourth `orphan` value, `provisional` — both ends exist narratively, at least one time code still ⧗. §2 The Two Rulers notes the `backstory` movement tag for events before M1. Additive; no field removed.|
 |0.1.0|2026-09-29|Initial document. BOLO 90 steps 1–2, RULED 2026-09-29 (DISTILL §13, §14): the two rulers (world clock vs grid), the grid (tick/beat/bar/time signature/tempo, "bar" not "measure"), the time code and its mapping to scale-ladder zoom stops, checkpoints and story points as the two record kinds (step vs ramp value behavior), setup → payoff cables on the fabula `enable` edge with orphan flags, tempo curves and two-tempo (story/audience) automation, and the Ableton concept map. Consumers and open build steps recorded.|

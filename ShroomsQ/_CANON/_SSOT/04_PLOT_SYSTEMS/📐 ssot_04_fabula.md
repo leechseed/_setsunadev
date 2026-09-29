@@ -1,10 +1,10 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.1.3
-last_updated: 2026-09-24
+version: 0.1.4
+last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, EVIL CHECK, all future IPs]
-status: "v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -153,6 +153,8 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 **Iterative events.** Genette's iterative note models a class of fabula record that is not one occurrence: "not... a single portion of elapsed time but... several portions taken as if they were alike and to some extent repetitive" (Genette 1980: 53). The `repeat` flag marks these; THE INSTANCE below carries a worked example (Tori's M2 outbursts).
 
 **Gaps.** A `gap_type: unknown` event window is not a claim that nothing happened in the world during that span, only that nothing is on record for it (Bal 2017: 164) — distinct from a span this doc has deliberately not filled because the wave-1 instance is Tori-only (see THE INSTANCE, scope note).
+
+**Backstory events (RULED 2026-09-29, BOLO 90 step 7 trial, "line up the recs").** Deep past with no Mn to file under — DCUS's founding lattice is the worked case ([🔮 ssot_03_setting_state_architecture.md](../03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md) §11) — carries `movement: "backstory"` instead of an `Mn`, and its `event_id` reads `backstory_<slug>` in place of the usual `<movement>_<slug>`'s `Mn_<slug>` half. This is additive to OPEN call 3's `<movement>_<slug>` grammar (ruled 2026-09-24): `backstory` is a legal value everywhere `<movement>` would otherwise be `M1`, `M2`… for an event that precedes the story's own M1.
 
 ---
 
@@ -382,6 +384,7 @@ causal_edges: []   # no stated causal edge to the crash's data-deletion mechanis
 
 ## Version history
 
+- **v0.1.4 (2026-09-29):** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE WORLD CLOCK gains a short paragraph on backstory events: deep past with no Mn carries `movement: "backstory"` and `event_id: backstory_<slug>`, additive to the existing `<movement>_<slug>` grammar. No event records changed.
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 1, "go 77" ruled 2026-09-24. Built from three disjoint extractions: PS1 (syuzhet-side hooks, DCUS setting facts), PS2 (the twelve-layer origin-moment rule, the state architecture v1.0 gap, Tori's dated backstory), MS-T (the fabula/syuzhet/trope-graph theory digest, Bal/Chatman/Genette/Rimmon-Kenan/Wolf/Sternberg/Propp). Instance scoped to Tori only per the ruled default; EVIL CHECK's events reserved for wave 2; the state architecture v1.1 patch spec ships inside THE HANDSHAKE rather than in the state doc itself, pending OPEN call 6.
 - **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended (Tori-only instance · EVIL CHECK in wave 2 · `<movement>_<slug>` ids · DCUS eras cross-referenced · date by movement · the v1.1 patch shipped now). The patch landed in the state architecture v1.1.0: `origin_event` field, `state_diffs` parent, additive, `narrative_moment` kept.
 - **v0.1.2 (2026-09-24):** the HANDSHAKE P6 row re-pointed to the trope graph's walk (plot doc OPEN call 15, ruled).

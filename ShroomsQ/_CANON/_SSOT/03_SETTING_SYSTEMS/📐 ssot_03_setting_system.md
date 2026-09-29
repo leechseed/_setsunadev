@@ -1,10 +1,10 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.4.2
+version: 1.5.0
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3)
+status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial)
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -171,6 +171,27 @@ The card is the working notation for plot_systems when it opens; until then it d
 
 ---
 
+## THE SEQUENCE CARD — the R3 notation (added 2026-09-29, BOLO 90 step 7 trial)
+
+RULED 2026-09-29 (Chief, "line up the recs"): the field trial that ran a real R3 SEQUENCE unit (the M2 grief-outburst montage) through THE SCENE CARD found no card built for that grain — the ten-field template assumes an R2 floor (one value turn, one pass of Coyne's five commandments) and had to be stretched to cover a run of scenes answering one dramatic question (`_tools/bolostatus/work/90/TRIAL-M2-grief.md`, WHAT BROKE 1). THE SEQUENCE CARD is the thin card that grain actually needs, a sibling of THE SCENE CARD, not a replacement for it — a sequence still bundles N scene-slots, each of which may carry its own SCENE CARD when a scene needs one.
+
+One card per R3 SEQUENCE unit. Seven fields, one screen:
+
+```
+SEQUENCE CARD
+address:            OXO.primary.M2.q1              (ladder address, R3 SEQUENCE)
+sequence question:  the dramatic question this run answers, usually replaced by a worse one  (Axis 1, ssot_04_plot_system.md)
+scene-slots:        s1, s2                          (N scenes bundled under this sequence; each may stay thin or carry its own SCENE CARD)
+rolled-up turn:     value in → value out, one line for the whole run                (McKee, read at sequence grain, not per scene)
+commandments:       II / TP / CR / CL / RES         (Coyne's five, read across all scene-slots — one line each, not one pass per scene)
+threads:            what advances through this container            (shared field with THE SCENE CARD)
+exit state:         what is now true that wasn't    (feeds the next sequence, or the first SCENE CARD after it)
+```
+
+THE SEQUENCE CARD does not carry `active strata`, `sensorium`, `function mode`, `telling`, `invariants`, or `collision` — those stay per-scene, filled on a SCENE CARD for whichever scene-slot actually needs them. A sequence with no scene-slot pressured enough to earn its own SCENE CARD is legal; the sequence card alone documents it, the same thin-by-default discipline as PART A's fill rule.
+
+---
+
 ## THE FACTION / NATION CARD — companion notation to the SCENE CARD
 
 Added 2026-09-29 (synthesis change 1, RULED): nine sources independently converge on the same bounded stat block [[BVX.0343]] [[BVX.1170]] [[BVX.1171]] [[BVX.1177]] [[BVX.1179]] [[BVX.1181]] [[BVX.1174]] [[BVX.0483]] [[BVX.1168]]. One card per faction, nation, or bounded institution — a stub is legal, depth is reserved for whatever the story actually visits:
@@ -269,6 +290,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 ## Version history
 
+- **1.5.0 — 2026-09-29.** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE SEQUENCE CARD added right after THE SCENE CARD: a thin seven-field card for R3 SEQUENCE units (sequence question, N scene-slots, one rolled-up turn, commandments read at sequence grain, threads, exit state), closing the field trial's WHAT BROKE 1 gap. No taxonomy or slice change.
 - **1.4.2 — 2026-09-29.** BOLO 90 step 3, setting state architecture landed as its own doc: [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs mirroring `ssot_02_character_state_architecture` v1.2 layer for layer, checkpoints and story points per `ssot_08_tracking_system`, and the DCUS rename lattice (Skeeter Creek → Red Hills → DCUS) instanced as the first three checkpoints. OPEN list's "Setting state architecture" bullet moved to Landed; Axis 4 TIME gets one sentence pointing at the new doc and ssot_08. No taxonomy or slice change.
 - **1.4.1 — 2026-09-29.** RULED by Chief ("go, all recommendations"): DCUS S2 WEATHER filled (the cooled-building split kept); DCUS faction cards added under THE INSTANCE, the Administration and the Bishops ruled as two factions, the Bishops' secret conditional, the Sync Cult held, the bells benched. No schema change.
 - **1.4.0 — 2026-09-29.** RULED by Chief ("I'll recommend"): the six OPEN calls closed as recommended. S1 border/seam gains the `passageway` seam type (Truby). S12 gains McKee's conflict level as a reading and the tone-to-mechanic sub-note (synthesis change 5, unbenched). PART A gains the fill rule (Kennedy): thin by default. The twelve layer names ruled as they stand; `03_SETTING_SYSTEMS/` placement kept.

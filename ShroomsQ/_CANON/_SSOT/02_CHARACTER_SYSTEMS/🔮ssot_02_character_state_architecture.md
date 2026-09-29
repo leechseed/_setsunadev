@@ -1,6 +1,6 @@
 ---
 
-## type: ssot_02_character_systems category: state_architecture version: 1.2.0 last_updated: 2026-09-29 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
+## type: ssot_02_character_systems category: state_architecture version: 1.2.1 last_updated: 2026-09-29 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: "canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar" purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
 ---
 # 🔮 SSOT: Character State Architecture
 
@@ -94,7 +94,7 @@ A state record is a structured data block that describes the delta between the b
 |`character_id`|Character this state belongs to|`victoria_midnight`|
 |`state_id`|Unique identifier for this state|`vm_m1b_post_crash`|
 |`origin_event`|The fabula event that produced this state (v1.1). An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event|`m1b_crash_jebb_death`|
-|`told_at`|NEW (v1.2). A list of time codes — [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4 — marking every point the audience is shown this state on the grid. An empty list means the state is true but offstage: it holds, but the audience is never told it at this moment|`["M2 · S04 \| 012.3.2"]`|
+|`told_at`|NEW (v1.2). A list of time codes — [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4 — marking every point the audience is shown this state on the grid. An empty list means the state is true but offstage: it holds, but the audience is never told it at this moment|`["M2 · Q1 · S04 \| 012.3.2"]`|
 |`narrative_moment`|v1.2: generated from the time code, not authored. A readable label only, produced from `origin_event` and `told_at` so it can never drift from the real coordinate|`Movement 1B — immediately after the crash`|
 |`movement`|Which movement this state falls in|`m1b`|
 |`mc_distance_temporal`|v1.2: computed, not authored. Distance from Tori's own time code, with Tori fixed at (0,0) — see [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|`0` (this IS Tori)|
@@ -210,6 +210,8 @@ A checkpoint is heavy: it re-derives every value, every derived statistic, every
 
 **Rule 6: One state per narrative moment per character.** A character does not have two simultaneous state diffs for the same moment. If a narrative moment is subdivided (e.g., M1B pre-crash and M1B post-crash), they are separate states with separate `state_id` values. **v1.2: this rule governs checkpoints.** Story points (see §Checkpoints and Story Points above) may be many per moment — a moment can carry several single-field changes without any of them counting as a second checkpoint.
 
+**Rule 7: Backward diffs are allowed (RULED 2026-09-29, BOLO 90 step 7 trial, "line up the recs").** A character's base record is whatever state canon describes — not necessarily their earliest chronological state. A checkpoint dated earlier than the base record's own narrative position diffs *backward*: each field is modified to its earlier value, the same additive shape as Rule 1, nothing deleted. This mirrors [🔮 ssot_03_setting_state_architecture.md](../03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md) §6 Rule 7, ruled the same pass — DCUS's base slice is written at its present-day era and its two earliest checkpoints diff backward from it; the same is legal for a character whose base record is authored at a late narrative position.
+
 ---
 
 ## Querying a Character at a Narrative Moment
@@ -324,7 +326,7 @@ This document defines character state tracking. It does not define story structu
 
 **v1.1 (2026-09-24):** the first structured key has landed. Every state carries `origin_event`, an `event_id` in the fabula's registry, and one event may produce states in several characters. `narrative_moment` and `movement` stay as readable tags. Calendar coordinates wait on a world calendar (fabula OPEN call 5, ruled: date by movement until then).
 
-**v1.2 (2026-09-29):** the formal timeline coordinate system is ruled, and it is provided by [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md), not by plot_systems — the time code (`M2 · S04 | 012.3.2`) is the structured temporal key that `told_at` carries and `narrative_moment` is generated from. **Victoria-as-(0,0) is ruled**: Tori sits at the origin, and `mc_distance_temporal` is computed from time codes against her position, not typed in by hand. `mc_distance_narrative` is unaffected — causal steps stay a judgment call, authored as before.
+**v1.2 (2026-09-29):** the formal timeline coordinate system is ruled, and it is provided by [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md), not by plot_systems — the time code (`M2 · Q1 · S04 | 012.3.2`) is the structured temporal key that `told_at` carries and `narrative_moment` is generated from. **Victoria-as-(0,0) is ruled**: Tori sits at the origin, and `mc_distance_temporal` is computed from time codes against her position, not typed in by hand. `mc_distance_narrative` is unaffected — causal steps stay a judgment call, authored as before.
 
 ---
 
@@ -332,6 +334,7 @@ This document defines character state tracking. It does not define story structu
 
 |Version|Date|Changes|
 |---|---|---|
+|1.2.1|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). New Rule 7: backward diffs are allowed — a character's base record is whatever state canon describes, and a checkpoint dated earlier than it may diff backward (mirrors ssot_03_setting_state_architecture.md §6 Rule 7). Time-code examples updated to the ruled sequence grammar, `M2 · Q1 · S04 \| 012.3.2` (both the `told_at` field example and the Boundaries section). Additive; no field removed.|
 |1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 ("go"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distance_temporal` redefined as computed from time codes with Tori fixed at (0,0); `mc_distance_narrative` stays authored · new §Checkpoints and Story Points (v1.2): today's state records are checkpoints, story points (single-field changes, any time code) live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) · Rule 6 amended to govern checkpoints only, story points may be many per moment · Boundaries with plot_systems updated: the timeline coordinate system and Victoria-as-(0,0) are ruled, provided by ssot_08. Additive; no field removed.|
 |1.1.0|2026-09-24|BOLO 77 handshake, ruled "all recs" 2026-09-24: `origin_event` required field (the fabula's `event_id`, `<movement>_<slug>`; null only for progression overlays) · the three MODIFIED blocks grouped under a `state_diffs` parent (v1.0 top-level blocks stay valid) · the plot_systems boundary points to the fabula doc. Additive; no field removed.|
 |1.0.0|2026-03-03|Initial state architecture. Establishes static/dynamic boundary, state diff format, diff rules, query assembly protocol, five state source categories, relationship record format, and plot_systems boundaries.|
