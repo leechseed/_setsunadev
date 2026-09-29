@@ -175,13 +175,13 @@ Ten chapters run one accumulating argument: number re-creates social worth, and 
 
 | Situation | Do this | Not this |
 |---|---|---|
-| Building a biopower system's day-to-day texture | Give it visible, mundane devices — a health score, a star rating, a credit-style number, an h-index analog — that people check obsessively | Write an abstract, unnamed "control" with no concrete artifact anyone can point to |
-| Staging why characters comply without being forced | Show status data functioning as symbolic capital they want, not just a threat they fear | Make compliance purely coerced; Mau's whole point is that most participation is voluntary and even eager |
-| Writing the system's enforcers | Let them administer scores sincerely, believing they are measuring real merit or real health, not villainy | Write scoring officials as cartoonishly punitive; the mechanism argues something only if it reads as objective and fair to the people running it |
-| Showing inequality without a villain | Use cumulative advantage: let one early, small, plausible measured difference compound over the story into a large gap | Trace the gap to one character's deliberate sabotage — that turns structure into a whodunit |
-| Giving a character a way to resist | Let them refuse to disclose data (self-exclusion) and show the real cost of opting out (lost access, lost standing) | Let opting out be free or without consequence; the book insists withholding data always has a price |
-| Writing a self-tracking or "optimization" subplot | Frame it as the character's own ambition and self-authored discipline, not an order from above | Have a supervisor command the tracking; the digital-panopticon point is that no one has to order it |
-| Ending a status arc | Show status as never fully secure — even a "win" invites the next comparison | Let a character reach a final, stable rank and stop there; the book's whole argument is that the game never ends |
+| Building a biopower system's day-to-day texture | Give it visible, mundane devices (a health score, a star rating, an h-index analog) people check obsessively | Write an abstract, unnamed "control" with no concrete artifact anyone can point to |
+| Staging why characters comply without being forced | Show status data functioning as symbolic capital they want, not just a threat they fear | Make compliance purely coerced; most participation in the book is voluntary and even eager |
+| Writing the system's enforcers | Let them administer scores sincerely, believing they measure real merit or real health | Write scoring officials as cartoonishly punitive; the mechanism only argues if it reads as fair |
+| Showing inequality without a villain | Use cumulative advantage: let one early, small, plausible gap compound over the story | Trace the gap to one character's deliberate sabotage; that turns structure into a whodunit |
+| Giving a character a way to resist | Let them refuse to disclose data and show the real cost of opting out (lost access, lost standing) | Let opting out be free; the book insists withholding data always has a price |
+| Writing a self-tracking or "optimization" subplot | Frame it as the character's own ambition and self-authored discipline | Have a supervisor command the tracking; the digital-panopticon point is no one has to order it |
+| Ending a status arc | Show status as never fully secure; even a "win" invites the next comparison | Let a character reach a final, stable rank and stop; the game never ends |
 
 ---
 
@@ -199,23 +199,23 @@ Ten chapters run one accumulating argument: number re-creates social worth, and 
 
 ## 7 · PITFALLS / MYTHS
 
-- Treating a score or rating as neutral description — the book's central warning is that numbers carry "inherent preconceptions as to what is relevant, valuable or authoritative," never a view from nowhere.
-- Assuming resistance means simply refusing to participate; self-exclusion from a ranking or a data system carries real costs (lost credit, lost visibility, lost mobility), so refusal is rarely free.
-- Writing surveillance as always external and hostile — most of the book's evidence is about *voluntary*, even eager, self-disclosure and self-tracking, not coerced monitoring.
-- Confusing a system that measures with a system that lies — Mau is explicit that the danger is not inaccurate data but the unquestioned authority granted to accurate-seeming data ("data never lie" is the trap, not the fact).
-- Assuming a data-driven meritocracy is fairer than the hierarchies it replaces — cumulative advantage shows measured "merit" and actual reward decouple over time, entrenching rather than flattening inequality.
-- Reaching only for a state actor (a ministry, a police force) as the biopower antagonist — insurers, credit bureaus, universities and dating platforms run the same mechanism as private, market-based institutions.
+- Treating a score or rating as neutral description: numbers carry "inherent preconceptions as to what is relevant, valuable or authoritative," never a view from nowhere.
+- Assuming resistance means simply refusing to participate; self-exclusion carries real costs (lost credit, visibility, mobility), so refusal is rarely free.
+- Writing surveillance as always external and hostile: most of the book's evidence is *voluntary*, even eager, self-disclosure and self-tracking, not coerced monitoring.
+- Confusing a system that measures with a system that lies: the danger is not inaccurate data but the unquestioned authority granted to accurate-seeming data.
+- Assuming a data-driven meritocracy is fairer than what it replaces; cumulative advantage decouples measured "merit" from actual reward over time.
+- Reaching only for a state actor as the biopower antagonist; insurers, credit bureaus, universities and dating platforms run the same mechanism as private institutions.
 
 ---
 
 ## 8 · APPLICATION
 
-- **Spine level:** L6 — the controlling idea's argument gets its concrete devices here: a Sync-style system is not an abstraction once it has a named score, a visible rank, and a self-tracking ritual attached to it
-- **12-layer character stack:** none directly by layer number; the book's mechanism (measure -> assign value -> hierarchize -> self-administer) is the plot-and-institution-level device that makes an L6 controlling idea visible in the world, the same relationship BVX.1149 draws between the racism mechanism and the character stack
-- **plot_systems:** primary candidate once a plot-systems layer opens for BOLO 77/81 — the state-diagram loop in Diagram 2 (data generated -> scored -> compared -> self-optimized -> locked in) is a ready-made engine for any subplot where a character's status rises or falls without anyone forcing them
-- **Setting:** contextual — the four device families (rankings/ratings, scoring/screening, the evaluation cult, self-tracking) are a stocked menu for building the visible apparatus (a school's Sync board, a health index, a peer-review star system) that BVX.1149's Application section calls the most portable device from the theory
+- **Spine level:** L6 — a Sync-style system is not an abstraction once it has a named score, a visible rank and a self-tracking ritual attached to it
+- **12-layer character stack:** none directly; the mechanism (measure -> assign value -> hierarchize -> self-administer) makes an L6 controlling idea visible in the world, the same relationship BVX.1149 draws between its racism mechanism and the character stack
+- **plot_systems:** primary candidate once a plot-systems layer opens for BOLO 77/81; Diagram 2's loop (data generated -> scored -> compared -> self-optimized -> locked in) is a ready-made engine for a status subplot
+- **Setting:** contextual — the four device families (rankings/ratings, scoring/screening, the evaluation cult, self-tracking) stock the visible apparatus a school's Sync board or health index needs
 
-Read against BOLO 80's controlling idea, this book is the empirical floor under Foucault's theory and Le Guin's structural demonstration. Where BVX.1149 supplies the argument (a life-administering power needs a justified exception to kill) and BVX.1154 supplies the narrative shape (state a bargain, hold it constant, decline to resolve it), Mau supplies the actual furniture: a credit score, a health index, an h-index, a star rating, a step count. The book's single most useful sentence for a Sync-style system is its account of self-tracking: the measured person becomes their own supervisor, so no scene needs a warden standing over a screen for the biopower argument to be visibly running. Its second most useful idea is the Matthew effect — a way to let inequality deepen across the story's timeline through ordinary compounding, not through any character's malice, which is the exact "structural, not personal" quality BOLO 80's controlling idea needs its antagonist system to have.
+This book is the empirical floor under Foucault's theory and Le Guin's structural demonstration. Where BVX.1149 supplies the argument and BVX.1154 supplies the narrative shape, Mau supplies the furniture: a credit score, a health index, an h-index, a star rating, a step count. Its most useful line for a Sync-style system is self-tracking: the measured person becomes their own supervisor, so no scene needs a warden standing over a screen. Its second is the Matthew effect, a way to deepen inequality across the timeline through ordinary compounding, not any character's malice, the "structural, not personal" quality the controlling idea needs.
 
 ---
 
@@ -223,13 +223,13 @@ Read against BOLO 80's controlling idea, this book is the empirical floor under 
 
 | Related entry | Relation |
 |---|---|
-| [[BVX.1149]] | Foucault, *Society Must Be Defended* — the theoretical parent; Mau's "norm," self-tracking and market-run health scoring are the empirical instances of the norm-as-hinge and biopower mechanisms BVX.1149 names at the lecture level |
-| [[BVX.1154]] | Le Guin, *The Ones Who Walk Away from Omelas* — the narrative-structure sibling; Mau's inescapability/status-fluidity double bind is a real-world version of Omelas's bargain, a cost that is total and a status that is never resolved, restated as sociology instead of parable |
-| [[BVX.0054]] | Lyons, *Anatomy of a Premise Line* — the L6 want/need split this entry keys to; the metric society's status seeker (want: a higher score) versus the unmeasurable self (need: worth outside the number) is a direct instance of Lyons's moral-component engine |
-| Byung-Chul Han, *Psychopolitics* / *The Transparency Society* (not yet in the library) | Directly quoted twice in this text (digital panopticon, p.153; psychopolitics adjacent framing, p.19) — the next natural acquisition, since Mau's self-tracking chapter is effectively a field report on Han's thesis |
-| Shoshana Zuboff, *The Age of Surveillance Capitalism* (not yet in the library) | Cited implicitly through the book's account of data brokers (Acxiom) and prediction-driven credit/insurance markets; extends Mau's market-side biopower into an explicitly corporate, prediction-and-behavior-shaping register |
-| Pierre Bourdieu (not yet in the library) | Symbolic capital and "distinction" are load-bearing, repeatedly cited concepts throughout; Fourcade and Healy's "übercapital" (ch.10) is an explicit extension of Bourdieu's own categories into data-based worth |
-| Robert K. Merton (not yet in the library) | Source of the Matthew effect (ch.10), the book's mechanism for inequality that compounds without a villain — a sociological parallel to Galtung's structural violence named in `_tools/bolostatus/work/80/BIOPOWER-PLAIN.md` |
+| [[BVX.1149]] | Foucault, *Society Must Be Defended* — the theoretical parent; Mau's norm, self-tracking and market-run health scoring are empirical instances of the norm-as-hinge and biopower mechanisms |
+| [[BVX.1154]] | Le Guin, *Omelas* — the narrative-structure sibling; Mau's inescapability/status-fluidity double bind is a real-world Omelas bargain, restated as sociology instead of parable |
+| [[BVX.0054]] | Lyons, *Anatomy of a Premise Line* — the L6 want/need split; the status seeker's want (a higher score) versus the unmeasurable self's need is a direct instance of the moral-component engine |
+| Byung-Chul Han, *Psychopolitics* (not yet held) | Quoted directly (digital panopticon, p.153); Mau's self-tracking chapter is effectively a field report on Han's thesis |
+| Shoshana Zuboff, *Surveillance Capitalism* (not yet held) | Cited implicitly via data brokers (Acxiom) and prediction-driven markets; extends Mau's market-side biopower into a corporate, behavior-shaping register |
+| Pierre Bourdieu (not yet held) | Symbolic capital and "distinction" are load-bearing throughout; Fourcade and Healy's "übercapital" (ch.10) extends his categories into data-based worth |
+| Robert K. Merton (not yet held) | Source of the Matthew effect (ch.10), a sociological parallel to Galtung's structural violence named in `_tools/bolostatus/work/80/BIOPOWER-PLAIN.md` |
 
 ---
 

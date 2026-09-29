@@ -179,17 +179,17 @@ Every chapter opens with **d20 Questions** (roll once per player, answer the mat
 
 | Concept | What it is | Why it matters |
 |---|---|---|
-| **Priority System** | Decompose a subject into 3–5 named axes; assign priorities 1–5 without repeating; read the canned description for each rank | The book's one mechanism, reused for weapons, gods, cities, travel, prizes, bars — a forced weakness every time |
+| **Priority System** | Decompose a subject into 3–5 named axes, assign priorities 1–5 without repeating, read the canned text for each rank | The book's one mechanism, reused for weapons, gods, cities, travel, prizes, bars: a forced weakness every time |
 | **d20 Questions** | Roll once per player, answer the matching numbered prompt from a genre-specific list of twenty | Cheap, parallel genre orientation before any heavier exercise runs |
-| **Five Factions** | Roll a culture's binding type (state/family/clan/school/company/order) plus a treasure it loves, then define what it loves about one of five values (strength/knowledge/communication/nature/order) | Culture built from exactly two anchors — why people belong, what they collectively love — rather than a trait list |
-| **Six Paths of Magic** | Scientific, artisan, arcane, natural, legendary, forbidden — each defined by source, cost, potency, commonality/accessibility, and pillars of mastery | Treats magic as an institution with economics and a career ladder, not a spell list |
-| **Designing a Pantheon** | Five aspects (power, interest, passion, form, thought), each 1–5, constrained by one shared similarity, one narrow similarity, and one hard limit across the whole pantheon; a summed faith pool converts into a Following (loyalty/influence/size) | Coherence across many gods is engineered by constraining values, not by writing consistent flavor text; allure (Following) is computed, not asserted |
-| **Time to Face the Strange** | Draw an Innovation card (suit = field, value = prompt), then a Change card (how the world reacts); repeat; a card that breaks the ring starts a Doomsday Clock | History as a card-driven causal chain of innovation and unintended consequence, with a mechanical endgame |
-| **Boom and Bust** | A place is built over a buried wound (mine, battlefield, burial ground...); a dream is built on top and partly succeeds; it collapses; one decay-force is rolled per abandoned decade | The book's clearest SCAR-and-VECTOR engine: origin, rise, fall, and ongoing decay in one chained roll sequence |
-| **Five Battles** | A place's history read through five conflict registers at once — ancient/forgotten, recent/political, recurring/ritual, simmering/unspoken, petty/absurd | History as simultaneous depths rather than a single chronological spine |
-| **Unions / It's McGuffium / The Prize** | Labor (industry, worker composition, status), a plot-enabling resource (benefit/danger/curiosity), and a valuable object (rarity/utility/tradeability/mobility/notoriety) | Three angles on the same claim: an economy is legible once you can name who works it, what fuels it, and what people will risk stealing |
-| **We Built This City** | Roll population, shape, age, and wealth; each roll contributes an Asset, Eccentricity, or Corruption trait; then add one landmark, one resident, one event/rumor | Geography, economy, and history fused into a single settlement generator that ends in three hooks, not a gazetteer entry |
-| **Punk Community & Attitude** | A culture's identity keyed to its stance toward an oppressor — marginalized (forced outsider), underground (opted-in resistance), radical (open rebellion) — expressed through language, greeting, pastime, iconography, taboo, and music | Belonging built from a power relation instead of a shared institution — a second, non-Kobold model for how a culture holds together |
+| **Five Factions** | Roll a culture's binding type (state, family, clan, school, company, order) plus a loved treasure, then pick what it loves about one core value | Culture built from two anchors: why people belong, what they collectively love, not a trait list |
+| **Six Paths of Magic** | Scientific, artisan, arcane, natural, legendary, forbidden, each defined by source, cost, potency, accessibility, and pillars of mastery | Treats magic as an institution with economics and a career ladder, not a spell list |
+| **Designing a Pantheon** | Five aspects (power, interest, passion, form, thought), each 1–5, constrained by one shared similarity, one narrow similarity, one hard limit across the pantheon; a summed faith pool converts into a Following | Pantheon coherence engineered by constraining values, not flavor text; allure (Following) is computed, not asserted |
+| **Time to Face the Strange** | Draw an Innovation card (suit sets field, value sets prompt), then a Change card; repeat; a card that breaks the ring starts a Doomsday Clock | History as a card-driven chain of innovation and unintended consequence, with a mechanical endgame |
+| **Boom and Bust** | A place built over a buried wound (mine, battlefield, burial ground); a dream built on top partly succeeds, then collapses; one decay-force rolls per abandoned decade | The book's clearest SCAR-and-VECTOR engine: origin, rise, fall, and ongoing decay in one chained sequence |
+| **Five Battles** | A place's history read through five conflict registers at once: ancient, recent, recurring, simmering, petty | History as simultaneous depths, not a single chronological spine |
+| **Unions / It's McGuffium / The Prize** | Labor (industry, composition, status), a plot resource (benefit, danger, curiosity), a valuable object (rarity, utility, tradeability, mobility, notoriety) | Three angles on one claim: an economy is legible once you name who works it, what fuels it, what people will risk stealing |
+| **We Built This City** | Roll population, shape, age, wealth; each contributes an Asset, Eccentricity, or Corruption trait; add one landmark, resident, event | Geography, economy, and history fused into one generator ending in three hooks, not a gazetteer entry |
+| **Punk Community & Attitude** | Identity keyed to a stance toward an oppressor: marginalized (forced outsider), underground (opted-in), radical (open rebellion), expressed through language, greeting, taboo, music | Belonging built from a power relation, not a shared institution: a second, non-Kobold culture model |
 
 ---
 
@@ -204,7 +204,7 @@ Every chapter opens with **d20 Questions** (roll once per player, answer the mat
 | Making a religion or magic system load-bearing | Trace its cost, accessibility, and its following's loyalty/influence/size | Publish a god or spell list with no consequence attached |
 | Grounding a setting's economy | Key it to a labor tier (Unions) and a scarce plot-resource (McGuffium) | Say "the economy runs on X" and move on |
 | Assigning priority ranks | Deliberately put a real weakness at the worst rank | Rank everything high to avoid giving anything a flaw |
-| Building a culture defined by oppression | Choose its stance toward the oppressor (marginalized/underground/radical) | Design it as costume — leather and slang with no power relation |
+| Building a culture defined by oppression | Choose its stance toward the oppressor (marginalized, underground, radical) | Design it as costume: leather and slang with no power relation |
 
 ---
 
