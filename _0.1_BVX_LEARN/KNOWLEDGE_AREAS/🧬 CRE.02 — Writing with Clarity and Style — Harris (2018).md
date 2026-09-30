@@ -2,7 +2,7 @@
 id: CRE.02
 title: "Writing with Clarity and Style: A Guide to Rhetorical Devices for Contemporary Writers"
 author: "Robert A. Harris"
-year: 2016
+year: 2018
 type: distill
 source_type: book
 subjects: [CRE]
