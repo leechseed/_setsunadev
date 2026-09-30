@@ -12,3 +12,7 @@ JUDY · BOLO 56
 
   voice  session · reader=script · keep the chat box focused
   following 86f4272f-1e6e-4865-bcc8-42a3c1817c79.jsonl
+  judy > I restarted JUDY with her console logging.   [say-line · 1.73s synth]
+  judy > Press the pad once and say a test line, then tell me.   [say-line · 0.29s synth]
+
+  you  > oscar mike ill just restart everything
