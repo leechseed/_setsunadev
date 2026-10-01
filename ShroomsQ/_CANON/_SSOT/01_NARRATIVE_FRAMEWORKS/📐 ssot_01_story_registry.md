@@ -1,8 +1,8 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 0.1.8
-last_updated: 2026-09-29
+version: 0.1.9
+last_updated: 2026-10-01
 applies_to: [every story in the LEECHSEED universe]
 status: "RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1; a further BOLO 91 pass (phone notes digest) adds LEECHSEED as an open-universe seed."
 purpose: "THE STORY REGISTRY: the one place that lists every story in the universe, its aliases, genre, era, medium, status, nodes, and storyform. The workspace's `stories:` filter and every doc's `applies_to` read from here."
@@ -44,6 +44,18 @@ Games, businesses and tools that are not stories in the universe (RULED 2026-09-
 
 **Not a story:** *The Outliers* is OXO's series title, not a second story. BVIPDS / Bold Venture is the methodology and studio, not a story.
 
+## VIGNETTES (a kind of story, not a story row)
+
+**RULED 2026-10-01 (BOLO 96, Chief: "all rec").** A **vignette** is a short told piece with no full arc: it shows one place, group, or custom so the world builds up around it. It sits beside the stories, never counted as one, and carries no storyform.
+
+- **Wiring:** each vignette tags the worldbuilding catalog entries it shows (`WB-<TYPE>-<nnnn>`, `ssot_09_worldbuilding_system`), so the world view can list it under each place.
+- **Canon status:** **lineage** by default (the Ariel rule): it may float ideas without locking canon; Chief rules it in, and only then does it read as canon.
+- **Tags:** era **required** (1 Skeeter Creek · 2 DCUS · 3 LAKAD · 4 ASTRO7EX · 5 beyond); time code optional (`M2 · Q1 · S03 | bar.beat.tick`, `ssot_08_tracking_system`).
+- **Intake:** spoken by Chief (10/1: "I'll just have to voice everything"). The text lands in `_CANON_NODES/vignette-<slug>.md`, near-verbatim; the row lands here.
+
+| ID | Title | Era | Shows (catalog) | Time code | Status | Gist | Node |
+|---|---|---|---|---|---|---|---|
+
 ## THE ROW
 
 A new story fills: `id` (short, lowercase, used by tracking files and the `stories:` filter) · name · aliases · genre (the **G1** slot, added RULED 2026-09-29, BOLO 91 — blank ⧗ until named) · era · where · medium · status (named only → reports in → storyform drafted → active; **provisional (seed)** for a story sourced from a digest and not yet ruled) · storyform (link) · nodes · data (its tracking file, once one exists).
@@ -59,6 +71,7 @@ A new story fills: `id` (short, lowercase, used by tracking files and the `stori
 
 ## Version history
 
+- **0.1.9 — 2026-10-01 (BOLO 96, "all rec").** VIGNETTES section added: short world pieces as their own kind; tagged to catalog entries; lineage until ruled in; era required, time code optional; IDs `VG-<nnnn>`; intake by voice.
 - **0.1.8 — 2026-09-29.** Eras renumbered: Skeeter Creek inserted as era 1 (Chief: "era one will be the Skeeter Creek"); OXO, EVIL CHECK and TREMOR CULT now read 2 · DCUS, LAKAD 3, ASTRO7EX 4.
 - **0.1.7 — 2026-09-29 (BOLO 91, "all recommendations").** LEECHSEED added as a SEED row (the Setsuna/Mayari cluster, `_PRIVATE/notes/phone-notes-2022-2023.digest.md`): universe left open (⧗), not placed in OXO's eras; the goop bookends, Mayari's helicopter-racing backstory, the "choppies" coast gig market, the shipbreaker kids sent "deep under," and Generation Zero's computer DER:G (Deus Ex Replicator: General) summarized, all provisional. Generation Zero's echo of the AI Collapse/Deep Meridian logged but not linked. Mayari's full name ruled **May Lasseur**; San La Sur stays unplaced. The Sockett attached to the row, marked PORTABLE.
 - **0.1.6 — 2026-09-29.** TREMOR CULT's two readings merged (BOLO 91): the soldier couple are the drone kids who film their kills for clout; TikTok is the in-world feed. See `_CANON_NODES/tremor-cult-seed.md`.
