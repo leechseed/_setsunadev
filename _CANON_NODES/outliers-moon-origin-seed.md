@@ -69,3 +69,11 @@ Chief 10/1: "let's figure out how the heat works … a scientific way this whole
 - **The rig.** The crawler parks at the G2/G3 line a quarter mile back: distance is shielding (inverse square law), and the Mother would die in the heat. The line runs in to her. The **spine ports** seat in the vertebrae, which hold much of the adult marrow, and stream broth straight into it: a bone-marrow transplant running live. The **calf ports** are the pump: the calf muscles squeeze the broth up the veins, so she has to keep moving or the flow stalls.
 - **The Mother and the broth.** The film on top is radiotrophic (melanin, the Chernobyl fungi): it feeds on the dose that rides back down the line in her blood, and powers the broth. Beneath, her own pluripotent cells. Unspent, they organize and **quicken** into a parthenote. A hard dose breaks the quickened tissue down for parts: the kid is spent.
 - **The year (rec).** OXO's present **2199**; the Severance **2099**, the turn of the century, one hundred years back. The Moon colony goes up in the 2050s–70s and has turned hell by the 2090s.
+
+## The dozers and the line (spoken 10/1)
+
+> What's cool if the sky is still falling: a lot of it is irradiated, so they just push all of it, using autonomous dozers or whatever, and the South and the North and everyone else has just kind of agreed that this separates us. A giant trash heap, where the HOTLINE is, or whatever we called it.
+
+- **The fall is pushed, not just caught.** Wherever debris lands, autonomous dozers shove it onto the belt. The belt grows with every reentry.
+- **Everyone agreed to it.** The North (the Deepstate North), the South (the Narco Republic, Providence's rival) and the rest treat the hot heap as the border that keeps them apart: a treaty line made of fallout. Matches the ruled belt (WB-INS-0004): the Coast's shield, the Great Wall against the Kudzu, the barrier between Providence and the Real Cartel.
+- **The name.** Ruled 9/29: **the Power Line** (the Zona and the Hedge as local names). Chief reached for "the HOTLINE" here, unsure of the ruled word. Open as a call.
