@@ -31,6 +31,8 @@ captured: 2026-10-01
 
 > *(Added the same turn.)* Maybe they're plugged into their calves too, because it's all about that second heart. Calves aren't really seen as erotic body parts, so it's a cool way to sexualize them, bank off of that, and create a whole genre of eroticism.
 
+> *(Next turn, 10/1.)* The whole idea with the DNA is that it's locked to her genome, so it only works on her. It's her DNA in the thing. So in a way, that little fetus thing she's killing all the time is like her kid, that she's sacrificing every time she walks into the heat.
+
 ## The pieces (as heard)
 
 1. **The belt is hot.** Radiation in grades; the people born there carry exceptional resistance.
@@ -41,6 +43,7 @@ captured: 2026-10-01
 6. **The Outliers' blood.** Descendants of Moon people who came back to Earth and survived in the trash pit. Their DNA carries a mission they don't know they carry: take Earth so the Moon can come home. Petty at the root.
 
 7. **The calf ports.** The rig also seats in both calves, the body's "second heart." An in-world erotic genre grows up around them.
+8. **Genome-locked.** Each diver's broth is grown from her own DNA and works only on her. The fetal thing is, in a way, her child; every dive into the heat spends it. She sacrifices her kid each time she walks in.
 
 ## Science hooks (CDR, offered, not ruled)
 
@@ -51,3 +54,4 @@ captured: 2026-10-01
 - **Radiation-proof partners.** *Deinococcus radiodurans* rebuilds its own shattered DNA; the tardigrade's Dsup protein shields DNA. Either can be the belt-born resistance in the blood.
 - **The broth.** Pluripotent stem cells under the film: the repair stock pushed down the line into a diver with acute radiation syndrome (the gut and the marrow fail first; a marrow transplant is the real-world fix).
 - **The fetal thing.** A teratoma is a real tumor of disorganized tissue (hair, teeth, sometimes eye) grown from pluripotent cells. Left unspent, the broth organizes. Name the moment: the broth *quickens*.
+- **Her own cells.** Genome-locked reads as *autologous*: grown from the patient's own cells, so the body never rejects it (induced pluripotent stem cells are made by rewinding a person's adult cells to the embryo-like state). A fetus from one parent's cells alone is a *parthenote*, the product of parthenogenesis, a virgin birth. Every spent broth is a parthenote she never carried.
