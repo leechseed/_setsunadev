@@ -141,6 +141,10 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 ---
 
+## ✅ Moved 2026-10-01 (**the nineteenth launch, board 2026-10-01 v46** · **the Akai cable fault fixed, knobs + pads back** · **BOLO 96 opened and ruled: the actor lane (four rows), vignettes as a registry kind, the Outliers' moon origin filed** · **OXO 2199, the Moon Severance 2099**)
+
+- **BOLO 96** (spoken after launch): lane **A** in `_CANON_NODES/performer-register.md` (Merced · del Toro · Blunt · Renner) · story registry 0.1.9 VIGNETTES (all rec) · the moon origin voiced in four passes → `_CANON_NODES/outliers-moon-origin-seed.md`, nine calls "all rec" → WB-TEC-0002 the dive rig · WB-BIO-0002 the Mother · WB-CUS-0003 the hot-zone divers · WB-INS-0004 the heat (G0–G4, dozers, the fallout treaty, the Hotline) · fabula 0.2.0 (OXO 2199, Severance 2099, era 1; ASTRO7EX = Earth's return) · Tori's node THE DIVE · world view v8. Open: the sleeper DNA's mechanism · Severance vs the Deep Meridian beam · "Aloha" · the calf genre's name. BOLO 95 1.2 readback still owed. Note: `_CACHE/2026-10-01.session.md`.
+
 ## ✅ Moved 2026-09-30 (**the eighteenth launch, board 2026-09-30 v44** · **BOLO 95 the documentation SOP opened** · **the documentation shelf read: six distills TEC.01–03 · CRE.02–04, RANGE 6/6** · **DOC-SOP 1.1 locked by teach-back**)
 
 - **BOLO 95** — Chief ordered a documentation SOP modeled on the SOI, Zotero first, awesome-documentation as the outside reference, built one small part at a time with a teach-back. Shelf synthesis `_tools/bolostatus/work/95/SHELF-READ.md`; the SOP draft `_tools/bolostatus/work/95/DOC-SOP.md` (1.1 locked; 1.2 the four types taught, readback owed). Note: `_CACHE/2026-09-30.session.md`.
