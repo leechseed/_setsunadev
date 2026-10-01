@@ -233,3 +233,8 @@ Missing: 9 storyform dynamics (driver, goal, consequence, cost, dividend, forewa
 - **fantasy:** Being untouchable at the wheel — one arena where desire and action fuse and nobody can own you *(three-check pass 1.0, kept 2026-09-29; F1)*
 - **sexy:** Labor-built body, grease and sweat, striking *because* nonconforming — the trine makes desire and action one motion *(three-check pass 1.0, kept 2026-09-29; S1)*
 - **aesthetic:** Grease under nails, sweat, improvised gear — against the neon-blue verified glow *(three-check pass 1.0, kept 2026-09-29; A1)*
+
+
+## THE DIVE (RULED 2026-10-01, BOLO 96)
+
+- Tori is a **hot-zone diver** ([WB-CUS-0003](../ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/CUS/WB-CUS-0003.md)): belt-born, Moon blood she doesn't know about, Red Hills legacy at school; all three hold. She wears the [dive rig](../ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/TEC/WB-TEC-0002.md) (spine and calf ports) and spends her [Mother](../ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/catalog/BIO/WB-BIO-0002.md)'s quickened tissue, her kid, on every hard dive. Source: `outliers-moon-origin-seed.md`.

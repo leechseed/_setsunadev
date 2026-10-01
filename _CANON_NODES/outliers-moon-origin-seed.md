@@ -4,7 +4,7 @@ entity_id: outliers_moon_origin_seed
 kind: seed — spoken by Chief, lineage until ruled in (BOLO 96)
 ip: OXO (OVEREXITOUT) · the universe's eras 1–2
 trunk: BLACK
-status: LINEAGE 2026-10-01 — spoken; consult out (six calls); nothing ruled into canon yet
+status: RULED 2026-10-01 (BOLO 96, Chief: "all rec", nine calls) — filed as WB-TEC-0002 the dive rig · WB-BIO-0002 the Mother · WB-CUS-0003 the hot-zone divers · WB-INS-0004 the heat, grades, dozers, the Hotline · fabula 0.2.0 the Moon Severance 2099, OXO 2199. The sleeper mission's mechanism stays lineage ⧗
 links:
   - "[[victoria-midnight]]"
   - "[[ssot_09_worldbuilding_system]] (WB-INS-0004 the Power Line)"
@@ -15,7 +15,7 @@ captured: 2026-10-01
 
 # THE OUTLIERS' MOON ORIGIN — seed
 
-**Status:** lineage. Spoken by Chief 2026-10-01, right after the vignette kind was ruled. It is world lore more than a told scene; how it files is call 1 in the consult.
+**Status:** RULED 10/1 on all nine recs (see the frontmatter); this node stays as the spoken record. Spoken by Chief 2026-10-01, right after the vignette kind was ruled. It is world lore more than a told scene; how it files is call 1 in the consult.
 
 ## What Chief said (near-verbatim, cleaned of dictation stumbles)
 
