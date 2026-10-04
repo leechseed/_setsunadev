@@ -39,3 +39,5 @@ Rules of the road: PDFs never enter the repo (public); only paths. A distill nee
 ## Files
 
 `inventory-live.json` · `INVENTORY-LIVE.md` · `CLASSIFY-LIVE.md` · `SPINE-KEYS.md` · `GAP-BY-SHELF.md` · `spinekeys-*.json` all live in `_0.1_BVX_LEARN/_meta/`. Distills live in `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/BVX.####.md`.
+
+**Keying rule for critic-coined genres (ruled 2026-09-16, genre OPEN 8; landed 2026-10-04, BOLO 100).** A term the industry never used, like film noir, is still a valid key (Neale). The keyer writes the criteria down first. The keyer does not build the corpus backward from an already-canonized core.

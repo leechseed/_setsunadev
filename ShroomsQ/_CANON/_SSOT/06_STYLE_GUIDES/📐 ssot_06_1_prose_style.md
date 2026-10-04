@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: prose_style
-version: 1.2.0
+version: 1.3.0
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
+status: "v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
 purpose: "06.1 PROSE — the universe-wide prose style guide: how the LEECHSEED stories read on the page. Sibling to 06.2 Documents and 06.3 Pages under 06_STYLE_GUIDES; per-story telling profiles (OXO's, first) are instances of this guide, not replacements for it."
 dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)"]
 trunk: BLACK
@@ -108,6 +108,10 @@ Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking
 
 This section applies only where an IP's own G1 rules cultcore or a related institutional-dystopia label; it is not a universal register, only a worked pattern for the genre family OXO opened.
 
+## Meta-genre: the style bible
+
+**Ruled 2026-09-16, genre OPEN 9; landed 2026-10-04.** This guide is the Command's style bible. Bawarshi and Reiff call a style bible a meta-genre. A showrunner's tone memo is another. A meta-genre describes a genre's social life beyond its contract. This guide is that home for the universe. Each IP's telling profile is a meta-genre instance under it. The other two terms, kairotic coordination (timing) and typification (cognition), are noted here and used nowhere else yet.
+
 ## The check
 
 A short pass-list, read against a draft before it counts as ready. One line, one rule, one citation.
@@ -157,6 +161,7 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 
 ## Version history
 
+- **1.3.0 · 2026-10-04** — RULED 9/16, landed 10/4 (BOLO 100 genre cross-doc): new section §Meta-genre: the style bible, the home ruled in genre OPEN 9. No other rule changed.
 - **1.2.0 · 2026-10-04** — RULED (Chief: "all rec", BOLO 100 character batch 1): the tyranny of motive moved here from the character system (OPEN call 3) as the rule in §Motive on the page; check item 10 added. No other rule changed.
 - **1.1.0 · 2026-10-04** — the disclaimer's wording RULED (Chief: "B recommendation", BOLO 92): "Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised." Call 5's hold closed.
 - **1.0.0 · 2026-09-29** — OPEN 1–5 RULED as recommended (Chief, "all right"): past tense + one fixed viewpoint by default · short-to-medium gait, stretched only where pace calls for it · no universe profanity ceiling, it follows the speaker · explicit allowed by default, fantasy first, the container is the front-matter disclaimer (TS 1:1) · the disclaimer wording held for a front-matter pass.

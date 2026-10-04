@@ -1,10 +1,10 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.7.0
+version: 1.8.0
 last_updated: 2026-10-04
 applies_to: [all IPs]
-status: "v1.7.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stale marks stripped; DCUS faction-card gaps parked; SETTING FLAGS starter set (six flags) written; scene-card field trial parked; scope set to all IPs; instance labeled worked example. Earlier: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, \"go on all those recs\"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, \"I'll recommend\"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, \"go, all recommendations\"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial)"
+status: "v1.8.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: the dystopia mechanism written as method (genre OPEN 11). v1.7.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stale marks stripped; DCUS faction-card gaps parked; SETTING FLAGS starter set (six flags) written; scene-card field trial parked; scope set to all IPs; instance labeled worked example. Earlier: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, \"go on all those recs\"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, \"I'll recommend\"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, \"go, all recommendations\"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial)"
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -260,6 +260,10 @@ A story may add its own place flags in its instance file.
 
 ---
 
+## THE FREEDOM-AND-RESTRICTION CLAIM — the dystopia mechanism (ruled 2026-09-16, genre OPEN 11; landed 2026-10-04)
+
+Truby's dystopia mechanism is a touchpoint on S12 FUNCTION. It names the claim a genre's world makes about freedom and restriction. The world offers apparent choice. Hidden restriction sits underneath. The writer records the claim in one line on the S12 entry, keyed by `storyform_id`. P10 records which obligatory beat fires. P10 does not record this claim. This field does.
+
 ## THE INSTANCE — DCUS starter slice (proof of rig) — worked example (phase 2 fills)
 
 Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_CANON_NODES/delta-coast-ultra-school.md) + storyform §9 + handoff bundle). Starter depth — full instance lives with the canon node when Movements 2–4 open.
@@ -339,6 +343,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 ## Version history
 
+- **1.8.0 — 2026-10-04.** RULED 9/16, landed 10/4 (BOLO 100 genre cross-doc): the dystopia mechanism written as method, new section THE FREEDOM-AND-RESTRICTION CLAIM (genre OPEN 11). No schema change.
 - **1.7.0 — 2026-10-04.** RULED by Chief ("REC", BOLO 100 setting batch 1): the proposal-mark legend is gone; the seven DCUS faction-card gaps are parked as `⏸ DCUS faction fill pass (phase 2)`; SETTING FLAGS starter set added (SEAM_CROSSING, SCAR_ACCRETED, WOUND_PROMISE_FUSED, UNDERSIDE_SURFACING, LEDGER_DUE, LOAD_BEARING), with the rule that a story may add its own place flags in its instance file; the scene-card field trial is parked as `⏸ OXO scene-card fill pass (phase 2)`; `applies_to` is now all IPs and THE INSTANCE is labeled a worked example. This doc is the head of the setting lattice; the state architecture and the synthesis are its modules.
 - **1.6.0 — 2026-10-04.** RULED by Chief ("all recs", BOLO 87 wave 1): THE POLDER TEST added (Ekman, CRE.08); the SCENE CARD gains `citation` and `transcript` fields from the theme system's scene tests (07 v1.2.0).
 - **1.5.0 — 2026-09-29.** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE SEQUENCE CARD added right after THE SCENE CARD: a thin seven-field card for R3 SEQUENCE units (sequence question, N scene-slots, one rolled-up turn, commandments read at sequence grain, threads, exit state), closing the field trial's WHAT BROKE 1 gap. No taxonomy or slice change.
