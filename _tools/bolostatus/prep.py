@@ -64,7 +64,7 @@ WRITE: {rel(os.path.join(HERE, 'boards', n + '.draft.json'))} — the whole shee
   mantra: three lines (speed · focus · boldness) specific to this BOLO
   paragraphs S (Situation: groups = the transmission, verbatim where Chief ruled · what exists already · what the record says) · E (Execution: main_effort + phases with n/t/s/when, done phases first) · A (Admin & Logistics: files with path/what/s · cost with k/v) · L (Log: one entry per transmission in the sources, dated, who = Chief or Claude).
   Leave paragraphs M and C as the schema's shape with empty strings; leave frago.order / default / calls empty. The main line writes those.
-RULES: every strand (last · plan · you · next) in plain words for a reader who was not there; nothing not in the sources; file paths verbatim; [[key|label]] links only for keys you saw in schema.json. Do not read any other file. Reply with the path and nothing else.
+RULES: write to the documentation SOP (BOLO 95, 3.1-3.2): one word for each thing, the word the sources use; one idea per sentence, 20 words at most, and each ' · ' list item counts as a sentence; every sentence names who does what ('the script checks the file', never 'the file is checked'); Chief's quoted words stay verbatim. Every strand (last · plan · you · next) in plain words for a reader who was not there; nothing not in the sources; file paths verbatim; [[key|label]] links only for keys you saw in schema.json. Do not read any other file. Reply with the path and nothing else.
 """
     write(os.path.join(wd, "brief.SHEET.md"), brief)
     print(f"DOPE SHEET prep · BOLO {n} · names {named or '-'} · STATE mentions {len(smentions)} · note mentions {len(nmentions)} · sheets {len(sheets)}")

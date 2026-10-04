@@ -44,6 +44,19 @@ def main():
                 if ph.get("s") not in ("done", "open", "gated", "held", "hot", "parked", "tabled"): W.append(f"E phase {ph.get('n')}: s={ph.get('s')!r}")
         if x.get("id") == "L" and not x.get("entries"): W.append("L: no entries")
         if x.get("id") == "M" and not x.get("task"): W.append("M: task empty (the main line's write)")
+    # DOC-SOP 3.2 (BOLO 95): long sentences, advisory; quoted speech is Chief's and does not count
+    def _strs(o):
+        if isinstance(o, str): yield o
+        elif isinstance(o, dict):
+            for k, v in o.items():
+                if k not in ("path", "url", "home", "version", "when", "s", "trunk", "n"): yield from _strs(v)
+        elif isinstance(o, list):
+            for v in o: yield from _strs(v)
+    longs = 0
+    for s in _strs(b.get("paragraphs", [])):
+        s = re.sub(r"\[\[[^\]|]+\|([^\]]+)\]\]", r"", re.sub(r'"[^"]*"', "", s))
+        longs += sum(1 for x in re.split(r"(?<=[.!?;])\s+|\s+·\s+", s) if len(x.split()) > 20)
+    if longs: W.append(f"{longs} sentences over 20 words (advisory, SOP 3.2)")
     text = json.dumps(b, ensure_ascii=False)
     gl = json.load(io.open(os.path.join(ROOT, "_tools", "sitrep", "glossary.json"), encoding="utf-8"))
     missing = sorted({k for k in re.findall(r"\[\[([^\]|]+)", text) if k not in gl})

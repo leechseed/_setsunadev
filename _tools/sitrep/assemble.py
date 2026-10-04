@@ -116,7 +116,7 @@ def main():
     # DOC-SOP 3.2 (BOLO 95): long sentences, advisory only; quoted speech is Chief's and does not count
     def _long(s):
         s = re.sub(r"\[\[[^\]|]+\|([^\]]+)\]\]", r"", re.sub(r'"[^"]*"', "", s))
-        return [x for x in re.split(r"(?<=[.!?;])\s+", s) if len(x.split()) > 20]
+        return [x for x in re.split(r"(?<=[.!?;])\s+|\s+·\s+", s) if len(x.split()) > 20]  # a · list item is its own idea
     longs = {}
     for b in blocks:
         txt = [b.get("plain", ""), b.get("line", ""), b.get("why", "")] + list((b.get("strand") or {}).values()) + [i.get("t", "") for i in items_of(b) if isinstance(i, dict)]
