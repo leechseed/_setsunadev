@@ -122,6 +122,31 @@ def station_stash():
             "note": ("already live · " if was_up else "started · %.0f s · " % (time.time() - t0)) + deck}
 
 
+def station_nahimic():
+    """Chief, 10/4 ("fuck that" · "add that to the launch startup"): Nahimic, the board's audio add-on, crashed ~20x
+    on 10/4 and re-routed the audio devices under JUDY's mic. Its service and four logon tasks were disabled 10/4.
+    Runs before JUDY: kills any Nahimic process still alive and reports whether the service or a task came back
+    (a driver update can re-enable them; re-disabling needs admin, so this station reports it, never prompts)."""
+    t0 = time.time()
+    ps = ("$k = @(Get-Process | Where-Object { $_.Name -match 'nahimic' }); $k | Stop-Process -Force -ErrorAction SilentlyContinue; "
+          "$s = (Get-Service NahimicService -ErrorAction SilentlyContinue).StartType; "
+          "$t = @(Get-ScheduledTask -ErrorAction SilentlyContinue | Where-Object { $_.TaskName -match 'nahimic' -and $_.State -ne 'Disabled' }).Count; "
+          "'{0}|{1}|{2}' -f $k.Count, $s, $t")
+    try:
+        r = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True, timeout=30)
+        killed, start, tasks = (r.stdout.strip().splitlines() or ["0||0"])[-1].split("|")
+    except Exception as e:
+        return {"station": "NAHIMIC", "go": False, "addr": "audio guard", "note": "check failed: %s" % e}
+    back = []
+    if start and start != "Disabled":
+        back.append("service is %s again" % start)
+    if tasks not in ("", "0"):
+        back.append("%s logon task(s) re-enabled" % tasks)
+    note = ("killed %s process(es) · " % killed if killed not in ("", "0") else "") + \
+           ("; ".join(back) + " · re-disable as admin" if back else "service + tasks disabled") + " · %.1f s" % (time.time() - t0)
+    return {"station": "NAHIMIC", "go": not back, "addr": "audio guard", "note": note}
+
+
 def station_judy():
     t0 = time.time()
     running = procs(r"judy\.py")
@@ -266,6 +291,7 @@ def main():
     ap.add_argument("--no-darkroom", action="store_true")
     ap.add_argument("--no-stash", action="store_true")
     ap.add_argument("--no-judy", action="store_true")
+    ap.add_argument("--no-nahimic", action="store_true")
     ap.add_argument("--no-faces", action="store_true")
     ap.add_argument("--no-wire", action="store_true")
     ap.add_argument("--no-knobs", action="store_true")
@@ -276,6 +302,8 @@ def main():
         rows.append(station_darkroom())
     if not a.no_stash:
         rows.append(station_stash())
+    if not a.no_nahimic:
+        rows.append(station_nahimic())   # before JUDY: her mic needs the devices to hold still
     if not a.no_judy:
         rows.append(station_judy())
     if not a.no_faces:
