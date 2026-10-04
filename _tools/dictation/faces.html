@@ -169,7 +169,27 @@ let shuffleOn={idle:true,listening:true,thinking:true,talking:true};
 try{shuffleOn={...shuffleOn,...JSON.parse(localStorage.getItem("faceDeck.shuffle")||"{}")};}catch(_){}
 
 const isVid=n=>/\.mp4$/i.test(n||"");
+const isGif=n=>/\.gif$/i.test(n||"");
 const media=(url,name,alt)=>isVid(name)?`<video src="${url}" autoplay loop muted playsinline></video>`:`<img src="${url}" alt="${alt}"${alt?"":" loading=\"lazy\""}>`;
+/* library tiles hold still until hovered: a video shows its first frame, a GIF a frozen first frame */
+const stillMedia=(url,name)=>isVid(name)?`<video src="${url}#t=0.1" muted loop playsinline preload="metadata" data-hover></video>`
+  :isGif(name)?`<img data-gif="${url}" alt="" data-hover>`:media(url,name,"");
+const frozen=new Map();
+function freeze(img){
+  const url=img.dataset.gif;
+  if(frozen.has(url)){img.src=frozen.get(url);return;}
+  const src=new Image();
+  src.onload=()=>{try{const c=document.createElement("canvas");c.width=src.naturalWidth;c.height=src.naturalHeight;
+      c.getContext("2d").drawImage(src,0,0);frozen.set(url,c.toDataURL());}catch(_){frozen.set(url,url);}
+    $$(`img[data-gif="${CSS.escape(url)}"]`).forEach(i=>{if(!i.matches(":hover"))i.src=frozen.get(url);});};
+  src.src=url;
+}
+function wireHover(tile){
+  const m=tile.querySelector("[data-hover]"); if(!m)return;
+  if(m.tagName==="IMG")freeze(m);
+  tile.addEventListener("mouseenter",()=>{if(m.tagName==="VIDEO")m.play().catch(()=>{});else m.src=m.dataset.gif;});
+  tile.addEventListener("mouseleave",()=>{if(m.tagName==="VIDEO"){m.pause();m.currentTime=0.1;}else if(frozen.has(m.dataset.gif))m.src=frozen.get(m.dataset.gif);});
+}
 
 function renderSlots(){
   $("#slots").innerHTML=STATES.map(s=>{const v=S.slots[s]||{};
@@ -206,7 +226,7 @@ function renderLib(){
   $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
   if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
   $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
-    <div class="well">${media(i.url,i.name,"")}</div>
+    <div class="well">${stillMedia(i.url,i.name)}</div>
     <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
     <div class="acts">${STATES.map(s=>`<button class="k${(i.pools||[]).includes(s)?" on":""}" data-k="${s}" title="${(i.pools||[]).includes(s)?"take out of":"add to"} the ${s} pool">${KEY[s]}</button>`).join("")}
       <span class="sp"></span><button class="del" data-del>delete</button></div>
@@ -215,6 +235,7 @@ function renderLib(){
   </div>`).join("");
   $$(".tile").forEach(t=>{
     const name=t.dataset.name;
+    wireHover(t);
     t.addEventListener("click",async e=>{
       const k=e.target.closest("[data-k]");
       if(k){e.stopPropagation();const s=k.dataset.k,on=!k.classList.contains("on");
