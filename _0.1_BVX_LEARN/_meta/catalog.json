@@ -18520,5 +18520,35 @@
   "primary": "MSX",
   "trunk": "ORANGE",
   "id": "BVX.1272"
+ },
+ {
+  "t": "Human Sexual Response",
+  "a": "William H. Masters, Virginia E. Johnson",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "ORANGE",
+  "id": "BVX.1273"
+ },
+ {
+  "t": "Manhood in America: A Cultural History",
+  "a": "Michael S. Kimmel",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "MSX"
+  ],
+  "primary": "MSX",
+  "trunk": "ORANGE",
+  "id": "BVX.1274"
  }
 ]
