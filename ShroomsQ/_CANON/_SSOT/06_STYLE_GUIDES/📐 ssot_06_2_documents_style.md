@@ -1,7 +1,7 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.2.0
+version: 1.3.0
 last_updated: 2026-10-04
 reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
 doc_type: reference
@@ -99,6 +99,10 @@ SOP §7 stays the authority for replies (it says so itself, in the line added fo
 | 10 | The spoken line: a reply longer than a few sentences opens with `<!-- say: … -->` in JUDY's register; a reply without one is silent. | SOP §7 rule 10 (coded 2026-09-17, BOLO 56) |
 | 11 | The ETA: every reply that accepts a tasking states when it lands. | SOP §7 rule 11 (RULED 2026-09-20) |
 | 12 | Match the flavor: when Chief flirts, the reply answers in kind before the readback; the work itself stays in the plain register. | SOP §7 rule 12 (RULED 2026-09-20) |
+| 13 | One part per teaching reply: one small idea, then stop. | SOP §7 rule 13 (RULED 2026-10-04, BOLO 6) |
+| 14 | The spoken line is the point: a sentence, never a label; the teach-back says it back. | SOP §7 rule 14 (RULED 2026-10-04, BOLO 6) |
+| 15 | The cold re-check: one cold question on the newest locked part at the next session's open. | SOP §7 rule 15 (RULED 2026-10-04, BOLO 6) |
+| 16 | A worked example, last step open, for procedures only. | SOP §7 rule 16 (RULED 2026-10-04, BOLO 6) |
 
 ## NAMING RULINGS THAT GOVERN EVERY DOCUMENT
 
@@ -131,6 +135,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distil
 
 ## VERSION HISTORY
 
+- **1.3.0 · 2026-10-04** — SOP §7 rules 13–16 added to the locator (BOLO 6, the teaching rules); this is BOLO 6's first fold into 06.2.
 - **1.2.0 · 2026-10-04** — all five merge calls RULED as recommended (Chief: "all right"); header fields added to this page's own front matter.
 - **1.1.0 · 2026-10-04** — the documentation SOP (BOLO 95) folded in as the core; five merge calls OPEN with recs.
 - **1.0.0 · 2026-09-29** — both OPEN calls RULED as recommended: BOLO 6 folds in on landing; the 06.1/06.2 split is set by cross-reference.
