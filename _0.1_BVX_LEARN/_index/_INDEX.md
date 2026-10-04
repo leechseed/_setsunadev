@@ -4,7 +4,7 @@ title: "BVX-LEARN master index"
 type: index
 status: complete
 created: 2026-08-15
-next_id: BVX.1242
+next_id: BVX.1273
 ---
 
 # BVX-LEARN — master index
