@@ -30,7 +30,7 @@ Every artifact and tool page the Command publishes answers to two layers. The **
 
 ## THE FOUNDATION
 
-**[📐 ssot_00_bold_venture_design_system.md](../00_EPISTEMOLOGY/📐%20ssot_00_bold_venture_design_system.md)** stays in `00_EPISTEMOLOGY` — it is not moved or duplicated here. It holds the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER · PUNCH · DUST · NOIR), the Luminance Law, and the one-red ledger, ruled 2026-09-01 (v2.0.0). Read it before designing anything brand-facing or DARKROOM-facing.
+**[📐 ssot_00_bold_venture_design_system.md](../05_OPERATIONS/📐%20ssot_00_bold_venture_design_system.md)** stays in `05_OPERATIONS` — it is not moved or duplicated here. It holds the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER · PUNCH · DUST · NOIR), the Luminance Law, and the one-red ledger, ruled 2026-09-01 (v2.0.0). Read it before designing anything brand-facing or DARKROOM-facing.
 
 ## THE PAGE RULINGS
 

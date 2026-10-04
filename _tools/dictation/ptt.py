@@ -92,6 +92,19 @@ class Recorder:
         import sounddevice as sd
         while not self.q.empty():
             self.q.get_nowait()
+        try:
+            self._open(sd)
+        except Exception as e:
+            # 10/4: Nahimic's audio service crashes ~20x a day and re-routes the devices; PortAudio keeps
+            # the stale device list and every later hold fails. Re-scan the devices once and retry.
+            print(f"  ! mic open failed ({e}); re-scanning audio devices")
+            self.stream = None
+            sd._terminate()
+            sd._initialize()
+            self._open(sd)
+            print("  mic recovered after the re-scan")
+
+    def _open(self, sd):
         self.stream = sd.InputStream(
             samplerate=SR, channels=1, dtype="float32",
             device=self.input_device, callback=self._cb, blocksize=0,
