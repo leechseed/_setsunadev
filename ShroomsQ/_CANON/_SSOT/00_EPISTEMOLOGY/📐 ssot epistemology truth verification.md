@@ -1,7 +1,7 @@
 ---
 type: ssot_methodology
 category: epistemology
-version: 1.0.1
+version: 1.0.2
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
@@ -64,6 +64,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Requires access to measurement tools
 - Cannot verify non-physical claims
 
+**Sources:** PSY.67 (Masters and Johnson, *Human Sexual Response*: laboratory observation and measurement) · PSY.52 (*Homosexuality in Perspective*: the same laboratory method).
+
 ### Framework 2: Logical Reasoning
 
 **Definition**: Logical reasoning employs deductive, inductive, and abductive processes to derive truth from premises.
@@ -92,6 +94,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Induction cannot guarantee universal truth
 - Abduction identifies likelihood, not certainty
 
+**Sources:** [TEC.04](../../../../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬%20TEC.04%20—%20The%20Minto%20Pyramid%20Principle%20—%20Minto%20%282010%29.md) (Minto: deduction versus induction as the two ways an argument groups).
+
 ### Framework 3: Intuition and A Priori Knowledge
 
 **Definition**: A priori knowledge establishes truth through self-evident principles independent of sensory experience.
@@ -111,6 +115,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Difficulty distinguishing intuition from bias
 - Cultural variance in "self-evident" claims
 - Limited to abstract domains
+
+Sources: method, no source (BOLO 100 D3, 10/4).
 
 ### Framework 4: Consensus
 
@@ -133,6 +139,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Authority appeals can override evidence
 - Group dynamics may suppress dissent
 
+Sources: method, no source (BOLO 100 D3, 10/4).
+
 ### Framework 5: Coherence Theory
 
 **Definition**: Coherence theory establishes truth as consistency within a belief system.
@@ -153,6 +161,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Multiple coherent but contradictory systems possible
 - Coherence does not guarantee correspondence to reality
 - May preserve systematic errors
+
+**Sources:** BVX.0575 (Wolf and others: consistency, cohesion and coherence as how a world holds together).
 
 ### Framework 6: Correspondence Theory
 
@@ -175,6 +185,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Observer effect in quantum mechanics
 - Interpretation variance of "facts"
 
+**Sources:** BVX.0100 (Pavel, *Fictional Worlds*: a secondary universe tied to the primary one by correspondence).
+
 ### Framework 7: Pragmatic Theory
 
 **Definition**: Pragmatic theory establishes truth as what functions effectively in practice.
@@ -196,6 +208,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Context-dependent outcomes
 - Short-term vs. long-term effectiveness conflicts
 
+**Sources:** [TEC.03](../../../../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬%20TEC.03%20—%20NASA%20Systems%20Engineering%20Handbook%20—%20NASA%20%282016%29.md) (NASA handbook: validation, checking that the right thing was built for the stakeholder need).
+
 ### Framework 8: Skepticism and Critical Thinking
 
 **Definition**: Skepticism requires rigorous evidence and systematic questioning of knowledge claims.
@@ -216,6 +230,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Excessive skepticism prevents knowledge accumulation
 - Infinite regress of justification
 - Practical decision-making paralysis
+
+**Sources:** [TEC.06](../../../../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬%20TEC.06%20—%20Challenger%20Launch%20Decision%20—%20Vaughan%20%281996%29.md) (Vaughan: who carries the burden of proof) · [MIL.05](../../../../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬%20MIL.05%20—%20MCDP%202%20Intelligence%20—%20USMC%20%281997%29.md) (MCDP 2: signal versus noise, and mindset as a filter).
 
 ### Framework 9: Revelation or Faith
 
@@ -239,6 +255,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Personal experience variance
 - Limited intersubjective verification
 
+**Sources:** BVX.0836 (Campbell, *Creative Mythology*: private revelation, and how it becomes a communal church).
+
 ### Framework 10: Historical Method
 
 **Definition**: Historical method verifies truth through documentary analysis and corroborated evidence.
@@ -260,6 +278,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 - Survivor bias in documentation
 - Interpretation variance across historians
 - Anachronistic projection risks
+
+**Sources:** MSX.55 (Katz, *Gay American History*: dated primary documents reprinted with commentary).
 
 ---
 
@@ -378,3 +398,4 @@ This epistemological SSOT has no dependencies on other LEECHSEED SSOTs. Other SS
 |---------|------|---------|
 | 1.0.0 | 2026-02-10 | Initial SSOT extracted from legacy documentation, restructured with MCDP standards |
 | 1.0.1 | 2026-10-04 | BOLO 100 base batch 1 (B2, B11, B13, B15), RULED Chief "REC.": `trunk: BLACK` added; new section "How the Frameworks Check the Systems" ties the ten frameworks to the character, setting, plot, theme, tracking and worldbuilding systems. The raw twin note `2_on_ascertaining_truth.md` is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` (B4): this file is the one source. |
+| 1.0.2 | 2026-10-04 | BOLO 100 D3: a Sources line added to each of the ten frameworks (F3, F4: method, no source). |
