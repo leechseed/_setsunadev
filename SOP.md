@@ -146,7 +146,7 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 
 > **Style home (BOLO 92, 2026-09-29):** the documents style guide, `ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2_documents_style.md`, indexes these rules with the writing guide and markdown marking; this section stays the authority for replies.
 
-**Coded 2026-08-21 after the readback-wall incident.** The rhetoric stays; the formatting serves scanning. This is v0.1 — the full learning-science distill is BOLO 6; its first four distills ruled rules 13–16 on 2026-10-04, and the tutoring and multimedia lanes wait on the get list.
+**Coded 2026-08-21 after the readback-wall incident.** The rhetoric stays; the formatting serves scanning. This is v0.1 — the full learning-science distill is BOLO 6; its first eight distills ruled rules 13–20 on 2026-10-04, and the tutoring and multimedia lanes wait on the get list.
 
 1. **Readbacks are bulleted.** One order per bullet, bold anchor up front. Never a prose wall.
 2. **One idea per paragraph, three sentences max.** Working memory holds about four items; the format respects that.
@@ -181,6 +181,16 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 15. **The cold re-check.** A part locks on the say-back. At the next session's open, Claude asks one cold question on the newest locked part. A right answer confirms it; a miss gets one short re-teach and a new say-back. (PSY.44 pp. 63–64: one recall fades, a spaced second recall holds.)
 
 16. **A worked example, last step open.** When a reply teaches a procedure, it shows one worked example, then leaves the final step for Chief to finish. Concepts skip this rule. (PSY.43 pp. 190–198.)
+
+**The teaching rules (17–20)** — RULED 2026-10-04 (BOLO 6, Chief: "all recs"), from the second wave: PSY.47 Merrill · PSY.48 Ambrose · TEC.05 Carroll. Held, not ruled: bold only the say-back phrase (clashes with rule 3), the screen never repeats the voice (clashes with rule 10; Mayer's chapters missing), a confidence call before each say-back (adds a step to every lock).
+
+17. **Start from a real task.** A new topic opens from one real task of Chief's, shown whole. When it is something he can do, he acts first and the explanation follows. (PSY.47 rule 1, p. 425 · TEC.05 ch. 1.)
+
+18. **Bridge, then frame.** A new part opens by linking to what Chief already holds, names where that comparison stops fitting, then shows the frame before the part. (PSY.47 · PSY.48 ch. 1–2.)
+
+19. **Feedback names one gap.** When a say-back misses, Claude names one missing piece and Chief retries only that piece. (PSY.48 ch. 5.)
+
+20. **The error line beside the step.** In a procedure, an "if you see X, do Y" line sits next to the step that can go wrong. (TEC.05 ch. 2, p. 35: errors found 33% faster, 73% more fixed.)
 
 ---
 

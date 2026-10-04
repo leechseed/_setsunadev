@@ -1,7 +1,7 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.3.0
+version: 1.4.0
 last_updated: 2026-10-04
 reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
 doc_type: reference
@@ -103,6 +103,10 @@ SOP §7 stays the authority for replies (it says so itself, in the line added fo
 | 14 | The spoken line is the point: a sentence, never a label; the teach-back says it back. | SOP §7 rule 14 (RULED 2026-10-04, BOLO 6) |
 | 15 | The cold re-check: one cold question on the newest locked part at the next session's open. | SOP §7 rule 15 (RULED 2026-10-04, BOLO 6) |
 | 16 | A worked example, last step open, for procedures only. | SOP §7 rule 16 (RULED 2026-10-04, BOLO 6) |
+| 17 | Start from a real task, shown whole; Chief acts first when he can. | SOP §7 rule 17 (RULED 2026-10-04, BOLO 6) |
+| 18 | Bridge, then frame: link to what he holds, name where it stops fitting, frame before part. | SOP §7 rule 18 (RULED 2026-10-04, BOLO 6) |
+| 19 | Feedback names one gap; Chief retries only that piece. | SOP §7 rule 19 (RULED 2026-10-04, BOLO 6) |
+| 20 | The error line beside the step that can go wrong. | SOP §7 rule 20 (RULED 2026-10-04, BOLO 6) |
 
 ## NAMING RULINGS THAT GOVERN EVERY DOCUMENT
 
@@ -135,6 +139,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distil
 
 ## VERSION HISTORY
 
+- **1.4.0 · 2026-10-04** — SOP §7 rules 17–20 added (BOLO 6, second wave).
 - **1.3.0 · 2026-10-04** — SOP §7 rules 13–16 added to the locator (BOLO 6, the teaching rules); this is BOLO 6's first fold into 06.2.
 - **1.2.0 · 2026-10-04** — all five merge calls RULED as recommended (Chief: "all right"); header fields added to this page's own front matter.
 - **1.1.0 · 2026-10-04** — the documentation SOP (BOLO 95) folded in as the core; five merge calls OPEN with recs.
