@@ -235,7 +235,7 @@ The book proves its claim by return. Chapter 8 retells the launch night in thick
 | Related entry | Relation |
 |---|---|
 | [[BVX.1205]] | O'Neil, *Weapons of Math Destruction*. Same shape in code: operators do the job and the score never learns it is wrong. |
-| [[BVX.1206]] | Zimbardo, *The Lucifer Effect*. Cites Challenger as a systemic failure (ch.11), but repeats the amoral-calculator reading Vaughan rejects. |
+| [[BVX.1206]] | Zimbardo, *The Lucifer Effect*. Cites Challenger as a systemic failure (ch.10), but repeats the amoral-calculator reading Vaughan rejects. |
 | [[MSX.36]] | Foucault on biopower. Supplies the mechanism line's register; Vaughan supplies a case where the norm rewrites itself. |
 | [[BVX.0236]] | Coyne on the value spectrum. The method behind the FREEDOM and FAIRNESS gauges. |
 | [[BVX.0054]] | Lyons on the moral blind spot. A person-level cause. Vaughan argues the opposite level. |
