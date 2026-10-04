@@ -1,12 +1,12 @@
 ---
 type: ssot_09_worldbuilding_systems
 category: worldbuilding_system
-version: 1.0.0
-last_updated: 2026-09-29
+version: 1.1.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, MOON/SAGA, all future IPs]
-status: "1.0 — RULED 2026-09-29 (Chief, \"run the recs\"): clears the six-part 1.0 bar (SOP §5). Catalog proved on DCUS (7 filled, 5 stubs, 1 retired); world view second build reads 02 · 03 · 04 · 08 · tropes; the lens ran (script 7 + reader 9, no fails). Entries stay ⧗ until narrated."
+status: "v1.1.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: stale marks stripped, inferred-mark rule, stub-promotion and retired-entry rules, instance marks parked. 1.0 stamped 2026-09-29."
 purpose: "THE WORLDBUILDING SYSTEM — the definition of a world (its infrastructures, its coherence tests, the compiler that reads every system into one world view) plus the CATALOG it owns: the shared things of a world (groups, styles, customs, tech, food, institutions) that no other system holds."
-dependencies: ["ssot_03_setting_system (v1.5.0, places)", "ssot_02_character_systems (people)", "ssot_08_tracking_system (v0.2.0, state over time)", "ssot_04_fabula / ssot_04_plot_system (origin events)", "ssot_01_trope_register (BOLO 89 layer)"]
+dependencies: ["ssot_03_setting_system (v1.5.0, places)", "ssot_02_character_systems (people)", "ssot_08_tracking_system (v1.0.0, state over time)", "ssot_04_fabula / ssot_04_plot_system (origin events)", "ssot_01_trope_register (BOLO 89 layer)"]
 trunk: BLACK
 sources: [BVX.0562, BVX.0575, BVX.0630, BVX.0100, BVX.0349, BVX.0530, BVX.0504, BVX.0538, BVX.0458, BVX.0141, BVX.0405, BVX.0480, BVX.0465, BVX.1156, BVX.1137, BVX.1138, BVX.1161, BVX.1162, BVX.1165, BVX.0067, BVX.0144, NEW-tremblay, NEW-blueprint, NEW-pyramid341, NEW-ultimate-gm, NEW-anderson, NEW-101prompts, "_tools/bolostatus/work/93/PS-A.json", "_tools/bolostatus/work/93/PS-B.json"]
 ---
@@ -31,8 +31,8 @@ The books agree on this shape. They define it as building "a representation of a
 
 - **The catalog.** Entries for shared things, by type (see THE CATALOG). Data. Owned here.
 - **The infrastructures.** The list of what a complete world has to answer for (see THE INFRASTRUCTURES). Reference, owned here.
-- **The coherence tests.** The named checks run across the whole world (see THE COHERENCE TESTS). Owned here as a **lens** ⧗ (they own no data; see vocabulary).
-- **The world view.** The compiled read-only page. A **view** ⧗ (see THE WORLD VIEW).
+- **The coherence tests.** The named checks run across the whole world (see THE COHERENCE TESTS). Owned here as a **lens** (they own no data; see vocabulary).
+- **The world view.** The compiled read-only page. A **view** (see THE WORLD VIEW).
 
 ### What it does not own
 
@@ -57,17 +57,17 @@ The books agree on this shape. They define it as building "a representation of a
 | 05 Operations | Checked 9/29 by the CDR: owns procedures and registries, no world-fact type. It runs the compiler as a procedure. | none |
 | 06 Style | Checked 9/29 by the CDR: 06.1 prose · 06.2 documents · 06.3 pages; no world-fact type. How a world thing is written up follows 06.1. | none |
 | 07 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the answer. | lens asks 07 |
-| 08 Tracking | Every change over time is a 08 record. Entries hold a pointer, `state`. | catalog points to 08 |
+| 08 Tracking | Every change over time is a 08 record. Entries hold a pointer, `state`. 08 holds a reader track per character in §9A; the catalog does not copy it. | catalog points to 08 |
 | Trope layer | Every entry carries `tropes`; the register owns the trope. | catalog points to layer |
 
-### Vocabulary ⧗ provisional
+### Vocabulary (ruled 9/29)
 
 **RULED 2026-09-29** (OPEN 1, "Adopt"); recorded in SOP §5.
 
-- **System** ⧗: owns its data. 02, 03, 04, 07, 08, and this one.
-- **Layer** ⧗: owns data that attaches across systems. The trope layer.
-- **Lens** ⧗: owns no data. It is a set of questions asked across every system; the answers live where they belong. The coherence tests are a lens.
-- **View** ⧗: a read-only arrangement of records other files own. The world view is a view. The plot workspace's "Fabula lens" and "Told lens" are views by this rule (see OPEN 2).
+- **System**: owns its data. 02, 03, 04, 07, 08, and this one.
+- **Layer**: owns data that attaches across systems. The trope layer.
+- **Lens**: owns no data. It is a set of questions asked across every system; the answers live where they belong. The coherence tests are a lens.
+- **View**: a read-only arrangement of records other files own. The world view is a view. The plot workspace's "Fabula lens" and "Told lens" are views by this rule (see OPEN 2).
 
 ### The plain verdict
 
@@ -158,7 +158,7 @@ flowchart TD
 
 An **infrastructure** here is one of the areas a complete world must be able to answer for. The list is the organizing model: it tells the compiler what to look for and tells the author what a world is missing.
 
-**Sourcing note.** The brief expected Mark Wolf's infrastructures (BVX.0562, BVX.0575, BVX.0630) to be the spine. The shelf extraction does not contain Wolf's infrastructure list. PS-A gives Wolf's three mechanisms (Invention, Completeness, Consistency) and four realms (nominal, cultural, natural, ontological) from BVX.0562, and a nine-axis scoring from Ryan in BVX.0630. Wolf's own list is therefore not cited here. It is a ⧗ call to check BVX.0562 directly before ruling (see OPEN 8). The spine below is built from what the extraction does show. Nine sources list the same areas independently.
+**Sourcing note.** The brief expected Mark Wolf's infrastructures (BVX.0562, BVX.0575, BVX.0630) to be the spine. The shelf extraction does not contain Wolf's infrastructure list. PS-A gives Wolf's three mechanisms (Invention, Completeness, Consistency) and four realms (nominal, cultural, natural, ontological) from BVX.0562, and a nine-axis scoring from Ryan in BVX.0630. Wolf's own list is therefore not cited here. The check of BVX.0562 is closed in OPEN 8. The spine below is built from what the extraction does show. Nine sources list the same areas independently.
 
 **Convergence check.** Anderson's nine [NEW-anderson], the four structures [BVX.0067], the six-part list [BVX.0144], the blueprint list [NEW-blueprint], the culture list [NEW-101prompts], and Tremblay's list [NEW-tremblay] all cover the same ground under different names. The table merges them into ten infrastructures. Column "Home" says where the data lives, not where it is discussed.
 
@@ -188,7 +188,7 @@ An **infrastructure** here is one of the areas a complete world must be able to 
 
 ## THE COHERENCE TESTS
 
-A **coherence test** is a named check stated so a reader or script can pass or fail it. The tests are a lens ⧗: they own no data. "Runs as" says whether the compiler can check it by script (S) or a person checks it by reading (R).
+A **coherence test** is a named check stated so a reader or script can pass or fail it. The tests are a lens: they own no data. "Runs as" says whether the compiler can check it by script (S) or a person checks it by reading (R).
 
 | # | Test | Rule, as checkable | Runs as | Source |
 |---|---|---|---|---|
@@ -268,8 +268,14 @@ tropes: ["<trope_id>"]        # -> trope layer; never restate the trope
 one_line: "<a stub is one sentence>"
 fields: {}                    # type-specific short fields (see each type); keep bounded
 sources: ["<BVX / NEW / canon node>"]
-status: "stub | filled | canon | ⧗"   # ⧗ = provisional
+status: "stub | filled | canon | provisional"   # provisional = not yet narrated; never a glyph
 ```
+
+**How an inference is written.** An inferred field reads `inferred`. A field not yet narrated reads `—`. The `status` value is `provisional`, never a glyph, so the compiler reads plain words.
+
+**Stub promotion.** A stub becomes `filled` when it has a source, a state id, and one era.
+
+**Retired entries.** A retired entry keeps its file. It gets `status: retired` and a pointer to the doc that took it. Its id is never reused.
 
 ### The types
 
@@ -294,7 +300,7 @@ Each type says what it holds, its sources, and where it stops (so it does not st
 
 **Twelve types is the ceiling, not the plan.** The fill rule says a type opens when a story needs it (OPEN 4).
 
-### Where the files live (proposal ⧗)
+### Where the files live
 
 ```
 ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/
@@ -305,22 +311,24 @@ ShroomsQ/_CANON/_SSOT/09_WORLDBUILDING_SYSTEMS/
 
 Rules: one entry, one file. The id never changes. An entry's file is the only place its fields are edited. The compiler builds `_INDEX.md` and the world view from the files.
 
-### Seed entries (names only, status ⧗)
+### Seed entries (names only)
+
+⏸ catalog fills (phase 2)
 
 Named from the canon nodes; none is filled. Each is a stub to be created only when the Chief orders the catalog built.
 
 | Seed | Type | Named in |
 |---|---|---|
-| The Administration (DCUS) ⧗ | INS | `dcus-standards-body.md` ("The Administration as a Standards Body") |
-| The Bishops (DCUS) ⧗ | GRP | `ssot_03_setting_system.md` (DCUS faction cards, ruled 1.4.1) |
-| Delta Coast Ultra School ⧗ | INS | `delta-coast-ultra-school.md` (ruled 2026-08-24) |
-| ASTRO7EX Standards Body ⧗ | INS | `astro7ex-standards-body.md` |
-| Trash Land Standards Body ⧗ | INS | `oxo-trash-land-standards-body.md` |
-| ASTRO7EX Space Cuisine (three rows) ⧗ | FSU | `astro7ex-space-cuisine-seed.md` |
-| The moon societies (May 2024) ⧗ | GRP | `moon-saga-seed.md` ("The societies of the moon") |
-| The MOON/SAGA Civ table (Jul 2025) ⧗ | GRP | `moon-saga-seed.md` ("The Civ table") |
+| The Administration (DCUS) | INS | `dcus-standards-body.md` ("The Administration as a Standards Body") |
+| The Bishops (DCUS) | GRP | `ssot_03_setting_system.md` (DCUS faction cards, ruled 1.4.1) |
+| Delta Coast Ultra School | INS | `delta-coast-ultra-school.md` (ruled 2026-08-24) |
+| ASTRO7EX Standards Body | INS | `astro7ex-standards-body.md` |
+| Trash Land Standards Body | INS | `oxo-trash-land-standards-body.md` |
+| ASTRO7EX Space Cuisine (three rows) | FSU | `astro7ex-space-cuisine-seed.md` |
+| The moon societies (May 2024) | GRP | `moon-saga-seed.md` ("The societies of the moon") |
+| The MOON/SAGA Civ table (Jul 2025) | GRP | `moon-saga-seed.md` ("The Civ table") |
 | ~~Tremor Cult~~ RETIRED 9/29 | BEL | `tremor-cult-seed.md`: a story (01 registry `tremor_cult`), not a belief |
-| Sync Cult (held) ⧗ | BEL | `ssot_03_setting_system.md` (DCUS faction cards, "held") |
+| Sync Cult (held) | BEL | `ssot_03_setting_system.md` (DCUS faction cards, "held") |
 
 ---
 
@@ -337,22 +345,24 @@ The **world view** is the compiled, read-only page. A script reads 02, 03, 04, 0
 
 **Filters:** era (the 08 time code) · place (03 `place_id`) · group (GRP id) · type (type code). Era and place are the two that every other system already keys on.
 
-**Edits happen at the owning file.** Each row links to the file that owns the fact: a catalog entry to its file, a place to its 03 slice, a person to their 02 record, a change to its 08 story point. The world view has no input fields. The read-only rule is what keeps it a view ⧗ and not a second store.
+**Edits happen at the owning file.** Each row links to the file that owns the fact: a catalog entry to its file, a place to its 03 slice, a person to their 02 record, a change to its 08 story point. The world view has no input fields. The read-only rule is what keeps it a view and not a second store.
 
 ---
 
 ## THE PROOF — DCUS (1.0, 2026-09-29)
 
-The catalog proved itself on DCUS the way 03 did: filled from canon on the first pass, every inference marked ⧗.
+⏸ DCUS narration (phase 2)
+
+The catalog proved itself on DCUS the way 03 did: filled from canon on the first pass, every inference marked `inferred`.
 
 | Entry | Type | Era | Origin | Rung |
 |---|---|---|---|---|
-| WB-INS-0001 The Administration | INS | backstory → M4 | backstory_dcus_rebrand ⧗ | nation-state ⧗ |
+| WB-INS-0001 The Administration | INS | backstory → M4 | backstory_dcus_rebrand (inferred) | nation-state (inferred) |
 | WB-GRP-0001 The Bishops | GRP | backstory → M4 | backstory_dcus_rebrand | locality |
 | WB-INS-0002 Delta Coast Ultra School (institution) | INS | backstory → M4 | backstory_dcus_rebrand | locality |
 | WB-ARC-0001 Southern Gothic prestige brick | ARC | backstory → M4 | backstory_skeeter_creek_founding | locality |
-| WB-CUS-0001 The Star-Rating (ritual life) | CUS | M2 → M4 | backstory_dcus_rebrand ⧗ | locality |
-| WB-TEC-0001 The Feed (DCUS) | TEC | M2 → M4 | backstory_dcus_rebrand ⧗ | locality |
+| WB-CUS-0001 The Star-Rating (ritual life) | CUS | M2 → M4 | backstory_dcus_rebrand (inferred) | locality |
+| WB-TEC-0001 The Feed (DCUS) | TEC | M2 → M4 | backstory_dcus_rebrand (inferred) | locality |
 | WB-WDR-0001 Feed-linked clothing | WDR | M2 → M4 | none in canon | locality |
 
 **What the proof found.** Tremor Cult was misfiled as a belief; it is a story (01 registry) and its entry is retired, id never reused. Quinn Bishop has no 02 node yet: the L02 link check reports it as owed by 02, not a 09 failure. Every era ends at M4 because canon casts DCUS for Movements 2–4.
@@ -426,6 +436,8 @@ Each call has one rec. The Chief rules in one word.
 ---
 
 ## Version history
+
+- **1.1.0 · 2026-10-04** · BOLO 100 tracking/worldbuilding batch 1 (Chief: "REC"). Stale marks stripped from the vocabulary, status, layout, and Wolf note. Inference rule written (`inferred`, `—`, `provisional`). Stub-promotion and retired-entry rules added to THE CATALOG. Seed entries and DCUS proof inferences parked as phase 2. Tracking dependency set to v1.0.0; reader-track pointer added to the 08 relation row.
 
 - **1.0.0 · 2026-09-29** · "09 to 1.0" (Chief: "run the recs"). The 1.0 bar ruled into SOP §5. THE PROOF — DCUS added: seven entries filled from canon on an MS (three of them new: ARC, CUS, TEC). The world view compiler's second build reads 02 nodes, 04 fabula events, 08 tracking story points and the trope register; runs CT1 · CT3 · CT4 · CT5 · CT6 · CT9 · CT13 plus four link checks; folds in the reader tests. Tremor Cult entry retired (a story). State-id convention written.
 

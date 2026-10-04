@@ -4,7 +4,7 @@ story: OVEREXITOUT
 category: character
 entity: Victoria "Tori" Midnight
 ssot_dependencies:
-  - [[📐_ssot_narrative_astrology_framework]]
+  - [[📐 ssot_02_character_astrology]]
   - [[📐_ssot_epistemology_truth_verification]]
 version: 1.2.0
 last_updated: 2026-02-10

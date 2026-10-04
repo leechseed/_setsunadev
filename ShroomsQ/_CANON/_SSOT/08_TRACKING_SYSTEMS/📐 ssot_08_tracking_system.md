@@ -1,12 +1,12 @@
 ---
 type: ssot_08_tracking_systems
 category: tracking_system
-version: 0.3.0
+version: 1.0.0
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v0.3.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: new §9A, the reader model (the audience trust ledger, moved from the character system's OPEN call 9). RULED 2026-09-29 — BOLO 90 steps 1–2; 0.2.0 2026-09-29: BOLO 90 step 7 trial, seven calls RULED, Chief 'line up the recs' — the time code gains the sequence segment, story points gain an iterative field, cables gain the provisional orphan state, backstory movement tag noted"
+status: "v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: theme and trope hooks, tempo and meter shapes, time-code ordering, reader track in the map, open steps closed. Earlier: 0.3.0 reader model (9A); 0.2.0 sequence segment, iterative fields, provisional cables."
 purpose: "THE TRACKING SYSTEM: the shared time grid and record model under character state, setting overlays, and world time — the grid (tick · beat · bar · time signature · tempo), the time code, checkpoints and story points, setup → payoff cables, and the Ableton-style track map. One store, many views."
-dependencies: ["ssot_01_scale_ladder", "ssot_02_character_state_architecture", "ssot_03_setting_system", "ssot_04_fabula", "ssot_04_plot_system"]
+dependencies: ["ssot_01_scale_ladder", "ssot_02_character_state_architecture", "ssot_03_setting_system", "ssot_04_fabula", "ssot_04_plot_system", "ssot_09_worldbuilding_system", "ssot_01_trope_register"]
 trunk: BLACK
 sources: ["_tools/bolostatus/work/90/DISTILL.md"]
 ---
@@ -95,6 +95,8 @@ Read left to right: **movement** (`M2`) · **sequence** (`Q1`) · **scene** (`S0
 
 Every story point, cable end, and state change carries one, so any moment is addressable (DISTILL §10).
 
+**Ordering rule.** To sort two time codes, compare movement first, then sequence, then scene, then bar, beat, and tick. Every segment compares as a number, so `M2` sorts before `M12` and `S04` before `S23`. A different told order never changes the world-clock order of events; the world clock (§2) sorts by its own `Mn` dating.
+
 **Zoom stops map to the ladder rungs.** The scroll wheel zooms time, like Premiere's and Ableton's arrangement view; each stop shows the detail that rung holds — semantic zoom, ruled for the rails 2026-09-24 and extended here to the whole tracking system (DISTILL §9 requirement 1, §9 requirement 5).
 
 | Zoom stop | Rung | What the time code shows |
@@ -140,6 +142,8 @@ span: "<time-code range>"          # optional — e.g. "M2 · Q1 · S01 | 001.1.
 
 **Iterative field (RULED 2026-09-29, BOLO 90 step 7 trial).** `repeat_count` and `span` are additive, optional fields for a story point whose `frequency_mode` (the syuzhet's own field, [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) THE TOLD ORDER) reads `iterative` — Genette's "told once, happened many times." A `ramp: true` value already draws the slope between two points; `repeat_count`/`span` name how many happenings and what stretch of grid that slope stands for, closing the field trial's flagged gap that `bar.beat.tick` addresses one instant only.
 
+**Theme and trope hooks (RULED 2026-10-04, BOLO 100).** A trope is a track of `kind: trope`; its story points use the trope's `id` as `subject.id`. A theme motif is a story point whose `field` is `motif.<id>`. The trope register and the theme doc own the ids; this document gives only the address.
+
 A checkpoint keeps the shape already defined in [🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §State Record Format; that shape is unchanged by this document.
 
 ---
@@ -165,7 +169,7 @@ edge: enable                     # the fabula causal-edge type this cable rides 
 orphan: none                     # none | setup_no_payoff | payoff_no_setup | provisional
 ```
 
-**`provisional` (RULED 2026-09-29, BOLO 90 step 7 trial).** A fourth `orphan` value for the case the field trial surfaced: both ends exist narratively — a setup dated, a payoff card drafted — but at least one time code is still ⧗, so the cable is neither finished (`none`) nor genuinely missing an end. `none` and `provisional` both mean "not an orphan"; `provisional` additionally flags that a real time code is still owed before the cable is load-bearing for scrubbing or the query engine.
+**`provisional` (RULED 2026-09-29, BOLO 90 step 7 trial).** A fourth `orphan` value for the case the field trial surfaced: both ends exist narratively — a setup dated, a payoff card drafted — but at least one time code is still unset, so the cable is neither finished (`none`) nor genuinely missing an end. `none` and `provisional` both mean "not an orphan"; `provisional` additionally flags that a real time code is still owed before the cable is load-bearing for scrubbing or the query engine.
 
 Comparing two versions of a passage — Ableton's take-lane sense of "A/B" — is a separate, deferred idea (DISTILL §9 requirement 4, "can come later"; §8 take lanes).
 
@@ -180,6 +184,20 @@ The grid itself is automated, like Ableton's tempo lane (DISTILL §11).
 - **Two tempos, because the story has two clocks** (DISTILL §11):
   - **Story tempo** — how much world time passes per beat. The syuzhet already names the moves this measures: compress, stretch, elide, repeat — Genette's duration (summary, scene, stretch, pause, ellipsis).
   - **Audience tempo** — how fast beats reach the reader or viewer: beats per 1,000 words for prose, beats per minute for screen.
+- **Record shapes.** The tool reads two short records for the tempo lane.
+
+```yaml
+tempo_point:
+  at: "M2 · Q1 · S04 | 012.1.1"   # the time code (§4)
+  story_bpm: "<beats per unit of world time>"
+  audience_bpm: "<beats per 1,000 words, or per minute>"
+  ramp: false                      # true = slope to the next point; false = step
+
+meter_marker:
+  at: "M2 · Q1 · S04 | 012.1.1"
+  beats_per_bar: 4                 # 3, 4, 7 and so on; the marker holds until the next one
+```
+
 - **Planned vs measured lanes.** Chief sets the intended tempo curve; the tool measures the real one from the draft by counting beats against words or seconds. The gap between the planned lane and the measured lane is the readout — where the draft drags or rushes against the plan.
 
 ---
@@ -194,6 +212,7 @@ One table maps the whole tracking system onto Ableton's own vocabulary (DISTILL 
 | **Clips / locators** | Rungs — the ladder's containers (R1–R8, §4) |
 | **Automation lanes** | Continuous values under a track — a trait's value, tension, a setting layer |
 | **Session ↔ Arrangement** | Fabula ↔ told order — the two rulers (§2) |
+| **Reader track** | An automation lane per character: the reader's belief and trust over time (§9A) |
 | **Take lanes** | A/B version compare — deferred (§6) |
 
 ---
@@ -203,6 +222,7 @@ One table maps the whole tracking system onto Ableton's own vocabulary (DISTILL 
 - **Character state** ([🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md), v1.2) — checkpoints keep their existing shape; `told_at` and `mc_distance_temporal` now read time codes from this document (see v1.2's own record, §Boundaries with plot_systems).
 - **Setting overlays (Axis 4)** ([📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)) — dated the same way fabula is, per Step 1 call 2 (DISTILL §13): the same world-clock dating this document's §2 defines.
 - **Fabula** ([📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)) — supplies the world clock and the `enable` edge that cables (§6) ride on.
+- **Character state** also reads the reader track: `disclosure` marks what the reader has been shown (§9A). The character system's OPEN call 9 is closed here and moved to §9A.
 - **The story workspace** (BOLO 79) — the arrangement view (tracks, rung ruler, playhead, cables) is this document's shell (DISTILL §9, "What this changes in the build order").
 - **The timeline tool** (BOLO 35) — its store-shape fork is answered here: one store, every track reads it (DISTILL §9; see §1 of this document).
 
@@ -229,17 +249,14 @@ disclosure: revealed | concealed   # revealed = the reader has been shown the tr
 
 ## 10. Open
 
-Steps 3–7 of the build order (DISTILL §7), amended by §9:
+The method is complete. The items below are build work or phase 2, one line each (DISTILL §7 steps 3–7).
 
-3. **Setting state full doc** — write Axis 4 past outline level, dated on the world clock this document defines (§2). Still open.
-4. **Timeline-tool data model** — **answered**: one store, every track a view (DISTILL §9). No longer open.
-5. **Trope-graph movements-to-acts map** — close the flagged "single most load-bearing gap" so the node walk can run on real scenes. Still open.
-6. **Workspace shell** — build as an **arrangement view first**: tracks, the rung ruler, the playhead, cables (DISTILL §9, amending the original Map/Seat/Write framing for the tracking build specifically).
-7. **Wire the read** — connect the query-assembly protocol (base + diffs + recompute, [🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §Querying a Character at a Narrative Moment) to the workspace's inspector panel.
-
-**Theme and trope hooks (BOLO 89)** — how theme motifs and trope-graph signposts attach to tracks and story points is not yet designed; flagged for a future pass.
-
-**Not yet built:** a real UI for any of §3–§8; the setting Axis 4 full doc (step 3); the world calendar (locked out for now, DISTILL §13, Step 1 call 1).
+- **Setting state full doc** (step 3): ⏸ setting state full doc (phase 2). The setting system owns it.
+- **Timeline-tool data model** (step 4): answered. One store, every track a view (DISTILL §9).
+- **Trope-graph movements-to-acts map** (step 5): ⏸ trope-graph act map (phase 2). The trope register owns it.
+- **Workspace shell** (step 6): a tool build, not method. Build it as an arrangement view first (DISTILL §9).
+- **Inspector wiring** (step 7): a tool build, not method. It connects the query-assembly protocol ([🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §Querying a Character at a Narrative Moment) to the inspector panel.
+- **World calendar**: a ruled non-goal (DISTILL §13, Step 1 call 1). The world clock stays movement-relative.
 
 ---
 
@@ -247,6 +264,7 @@ Steps 3–7 of the build order (DISTILL §7), amended by §9:
 
 |Version|Date|Changes|
 |---|---|---|
+|1.0.0|2026-10-04|RULED 2026-10-04, Chief ("REC"), BOLO 100 tracking/worldbuilding batch 1. Theme and trope hooks (§5); `tempo_point` and `meter_marker` shapes (§7); time-code ordering rule (§4); reader track in the map and consumers (§8, §9); §10 rewritten, with the open build steps tagged phase 2 or tool builds; dependencies add the worldbuilding system and trope register. The `provisional` rule reworded to "still unset". Method gaps closed.|
 |0.3.0|2026-10-04|RULED 2026-10-04, Chief: "all rec" (BOLO 100 character batch 1). New §9A, the reader model: the audience trust ledger, moved from the character system's OPEN call 9. Fields kept minimal: `character_id`, `belief`, `trust` (0–10), `shifted_at`, `disclosure` (revealed or concealed). Additive; no existing section changed.|
-|0.2.0|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). The time code (§4) gains a `Q<n>` sequence segment, `M2 · Q1 · S04 \| 012.3.2`; every time-code example in this document updated. Story points (§5) gain optional `repeat_count` and `span` fields for `frequency_mode: iterative`. Cables (§6) gain a fourth `orphan` value, `provisional` — both ends exist narratively, at least one time code still ⧗. §2 The Two Rulers notes the `backstory` movement tag for events before M1. Additive; no field removed.|
+|0.2.0|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). The time code (§4) gains a `Q<n>` sequence segment, `M2 · Q1 · S04 \| 012.3.2`; every time-code example in this document updated. Story points (§5) gain optional `repeat_count` and `span` fields for `frequency_mode: iterative`. Cables (§6) gain a fourth `orphan` value, `provisional` — both ends exist narratively, at least one time code still unset. §2 The Two Rulers notes the `backstory` movement tag for events before M1. Additive; no field removed.|
 |0.1.0|2026-09-29|Initial document. BOLO 90 steps 1–2, RULED 2026-09-29 (DISTILL §13, §14): the two rulers (world clock vs grid), the grid (tick/beat/bar/time signature/tempo, "bar" not "measure"), the time code and its mapping to scale-ladder zoom stops, checkpoints and story points as the two record kinds (step vs ramp value behavior), setup → payoff cables on the fabula `enable` edge with orphan flags, tempo curves and two-tempo (story/audience) automation, and the Ableton concept map. Consumers and open build steps recorded.|

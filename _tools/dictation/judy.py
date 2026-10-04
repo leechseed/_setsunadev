@@ -72,26 +72,23 @@ class Face:
 
     def __init__(self, size=220):
         import tkinter as tk
-        from PIL import Image, ImageTk
 
         self.q = queue.Queue()
         self.state = "idle"
         self.tk = tk
+        self.size = size
         self.root = tk.Tk()
         self.root.overrideredirect(True)
         self.root.attributes("-topmost", True)
         self.root.configure(bg="#0F1216")
 
-        slots = (cfg().get("face", {}) or {}).get("slots", {}) or {}
-        self.img = {}
-        for s in STATES:
-            p = slots.get(s)
-            if p and os.path.exists(p):
-                im = Image.open(p).convert("RGBA").resize((size, size), Image.LANCZOS)
-                bg = Image.new("RGBA", im.size, (15, 18, 22, 255))
-                self.img[s] = ImageTk.PhotoImage(Image.alpha_composite(bg, im))
+        self.img = {}       # state -> [(PhotoImage, ms)], one entry for a still, many for a GIF
+        self._sig = None    # (path, mtime) per slot, so a swap in the console reloads live
+        self._anim = None
+        self._frame = 0
+        self._load()
         if not self.img:
-            raise RuntimeError("no faces registered — drop PNGs in the console's Face panel")
+            raise RuntimeError("no faces registered — drop PNGs or GIFs in the console's Face panel")
 
         self.label = tk.Label(self.root, bd=0, highlightthickness=0, bg="#0F1216")
         self.label.pack()
@@ -105,6 +102,52 @@ class Face:
         self._drag()
         self.root.bind("<Button-3>", lambda e: self.stop())
         self.root.after(80, self._pump)
+        self.root.after(1500, self._watch)
+
+    def _slots(self):
+        slots = (cfg().get("face", {}) or {}).get("slots", {}) or {}
+        return {s: slots.get(s) for s in STATES}
+
+    def _signature(self, slots):
+        return tuple((s, p, os.path.getmtime(p) if p and os.path.exists(p) else None)
+                     for s, p in sorted(slots.items()))
+
+    def _load(self):
+        """Read every slot. A GIF (or animated WebP) keeps all its frames, capped at 300."""
+        from PIL import Image, ImageSequence, ImageTk
+
+        slots = self._slots()
+        img = {}
+        for s, p in slots.items():
+            if not (p and os.path.exists(p)):
+                continue
+            try:
+                src = Image.open(p)
+                frames = []
+                for fr in ImageSequence.Iterator(src):
+                    im = fr.convert("RGBA").resize((self.size, self.size), Image.LANCZOS)
+                    bg = Image.new("RGBA", im.size, (15, 18, 22, 255))
+                    ms = max(20, int(fr.info.get("duration", src.info.get("duration", 80)) or 80))
+                    frames.append((ImageTk.PhotoImage(Image.alpha_composite(bg, im)), ms))
+                    if len(frames) >= 300:
+                        break
+                if frames:
+                    img[s] = frames
+            except Exception as e:  # a bad upload must not take the face down
+                print(f"face[{s}]: could not read {p}: {e}", file=sys.stderr)
+        if img:
+            self.img = img
+        self._sig = self._signature(slots)
+
+    def _watch(self):
+        """Poll judy.json + the slot files; reload when the console swaps one."""
+        try:
+            if self._signature(self._slots()) != self._sig:
+                self._load()
+                self._paint(self.state)
+        except Exception:
+            pass
+        self.root.after(1500, self._watch)
 
     def _place(self, size):
         try:
@@ -144,10 +187,22 @@ class Face:
             w.bind("<ButtonRelease-1>", up)
 
     def _paint(self, state):
-        im = self.img.get(state) or self.img.get("idle")
-        if im:
-            self.label.configure(image=im)
-            self.label.image = im
+        if self._anim:
+            self.root.after_cancel(self._anim)
+            self._anim = None
+        self._frames = self.img.get(state) or self.img.get("idle") or []
+        self._frame = 0
+        self._show()
+
+    def _show(self):
+        if not self._frames:
+            return
+        im, ms = self._frames[self._frame]
+        self.label.configure(image=im)
+        self.label.image = im
+        if len(self._frames) > 1:
+            self._frame = (self._frame + 1) % len(self._frames)
+            self._anim = self.root.after(ms, self._show)
 
     def _pump(self):
         try:

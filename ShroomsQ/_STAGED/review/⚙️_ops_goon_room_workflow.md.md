@@ -378,7 +378,7 @@ Display Filters:
 Session files link to Canon documents using standard wikilink syntax:
 
 ```markdown
-Referencing the [[📐_ssot_narrative_astrology_framework]] for this analysis.
+Referencing the [[📐 ssot_02_character_astrology]] for this analysis.
 
 Victoria's profile ([[🎯_auth_victoria_midnight]]) demonstrates this principle.
 ```
@@ -448,7 +448,7 @@ Investigating how house placement modifies Mars aspects
 ## Notes
 
 Been thinking about Mars conjunct Venus. Current framework in 
-[[📐_ssot_narrative_astrology_framework]] treats it as pure passion.
+[[📐 ssot_02_character_astrology]] treats it as pure passion.
 
 Too simple.
 
