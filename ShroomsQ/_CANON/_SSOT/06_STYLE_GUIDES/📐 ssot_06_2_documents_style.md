@@ -1,10 +1,15 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.1.0
+version: 1.2.0
 last_updated: 2026-10-04
+reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
+doc_type: reference
+owner: "Chief (HOTLINE ACTUAL); Claude keeps it"
+state: ruled
+reviewed: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
-status: "canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); five merge calls OPEN"
+status: "canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
 purpose: "The index and the rules for how the Command writes: replies, readbacks, and the SSOT documentation conventions. Points to the writing guide (06.2a) and the markdown-marking standard (06.2b); gathers the reply-format rulings that today live only in SOP §7 and in memory."
 dependencies: ["_tools/bolostatus/work/95/DOC-SOP.md (the teach-back record)", "[[📐 ssot_06_2a_writing_guide]]", "[[📐 ssot_06_2b_markdown_marking]]", "SOP.md §7"]
 trunk: BLACK
@@ -31,7 +36,7 @@ Two things are called "style" in the Command and they are not the same thing. **
 
 ## THE DOCUMENTATION RULES — THE CORE (BOLO 95)
 
-> **Folded in 2026-10-04 (BOLO 92, Chief: "go ahead with a recommendation").** These rules are the core of 06.2. Chief locked each one by teach-back between 2026-09-30 and 2026-10-03; his readbacks and the sources live in the record, [DOC-SOP.md](../../../../_tools/bolostatus/work/95/DOC-SOP.md). Where 06.2a or 06.2b disagree, this section wins once the merge calls in [OPEN](#open) are ruled.
+> **Folded in 2026-10-04 (BOLO 92, Chief: "go ahead with a recommendation").** These rules are the core of 06.2. Chief locked each one by teach-back between 2026-09-30 and 2026-10-03; his readbacks and the sources live in the record, [DOC-SOP.md](../../../../_tools/bolostatus/work/95/DOC-SOP.md). Where 06.2a or 06.2b disagree, this section wins (merge calls ruled 2026-10-04).
 
 **1 · One page, one job**
 
@@ -109,7 +114,7 @@ These never made it into SOP §7's numbered list because they are not reply-form
 
 ## OPEN
 
-**The merge calls (2026-10-04, BOLO 92).** Folding the core in exposed five places where the older guides disagree with it. Each carries a rec.
+✅ **The merge calls (2026-10-04, BOLO 92), ALL FIVE RULED as recommended (Chief: "all right").** Folding the core in exposed five places where the older guides disagreed with it. Each *Rec* below is now the rule; 06.2a 2.2.0 carries 1–4.
 
 1. **Contractions.** 06.2a bans them ("do not," never "don't"). The core's 3.2 asks for text that reads clean out loud, and the plain register (BOLO 67) writes like the Claude Code docs, which use them. *Rec:* allow contractions everywhere; strike the 06.2a ban.
 2. **The fixed eight-part skeleton.** 06.2a makes every SSOT document carry Core Methodology, Implementation, and at least two Examples. That puts a concept, a how-to, and a reference on one page, against 1.1. *Rec:* keep the frame (YAML, title, contents, purpose, version history); the body follows the page's type (1.2); two examples stay required on concept pages only.
@@ -126,6 +131,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distil
 
 ## VERSION HISTORY
 
+- **1.2.0 · 2026-10-04** — all five merge calls RULED as recommended (Chief: "all right"); header fields added to this page's own front matter.
 - **1.1.0 · 2026-10-04** — the documentation SOP (BOLO 95) folded in as the core; five merge calls OPEN with recs.
 - **1.0.0 · 2026-09-29** — both OPEN calls RULED as recommended: BOLO 6 folds in on landing; the 06.1/06.2 split is set by cross-reference.
 - **0.1.0 · 2026-09-29** — bootstrap: indexes 06.2a and 06.2b; SOP §7's twelve rules summarized with citations; five naming rulings gathered from memory for the first time (plain register, Command format, clickable file links, Touchstone naming, the Command naming); two OPEN calls.
