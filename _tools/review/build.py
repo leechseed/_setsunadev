@@ -1210,7 +1210,7 @@ def main():
     held = [d for d in sdocs if d not in stubs and shape and any(h in d["file"] for h in shape.get("held", []))]
     if held:
         checks.append(na("Held docs sit out the checks", ", ".join(f"{d['file']} ({d['version'] or 'no version'}, ⧗ {d['open']})" for d in held)
-                         + " held to phase 2 by ruling (BOLO 100 D5, 10/4)"))
+                         + " held by ruling: " + shape.get("held_why", "phase 2 (BOLO 100 D5, 10/4)")))
     sdocs_all, sdocs = sdocs, [d for d in sdocs if d not in held and d not in stubs]
     ev = [{"k": d["file"], "v": d["version"] or "none", "ok": bool(d["version"]) and sv(d["version"]) >= (1, 0, 0)} for d in sdocs]
     checks.append({"label": f"Every {short.lower()} doc is at 1.0.0 or later", "ok": all(x["ok"] for x in ev), "ev": ev,

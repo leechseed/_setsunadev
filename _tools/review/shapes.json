@@ -236,7 +236,12 @@
   "tags_na": "operations docs define procedures and instruments, not stored fields with a static/dynamic split",
   "instance": null,
   "instance_na": "no worked-instance section: it carries three Examples (BVIPDS retro-fit, BOLO 24, BOLO 26), which are not a parked instance",
-  "shelf": true
+  "shelf": true,
+  "held": [
+   "development_standard",
+   "project_flow"
+  ],
+  "held_why": "DOCTRINE 0 promotes them to 1.0 only after two project uses (BOLO 100, ruled 10/4)"
  },
  "06": {
   "main": "06_STYLE_GUIDES/📐 ssot_06_1_prose_style.md",
