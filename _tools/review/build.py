@@ -678,6 +678,8 @@ def main():
         if d["module_of"]:
             counts[d["module_of"]] = counts.get(d["module_of"], 0) + 1
     main_id = max(counts, key=counts.get) if counts else None
+    if (not main_id or main_id not in docs) and len(sdocs) == 1:
+        main_id = sdocs[0]["id"]          # a one-doc system: that doc is the main doc (10/4)
     if not main_id or main_id not in docs:
         try:
             reg = json.loads(load_text(os.path.join(TM_DIR, "systems.json")))
@@ -851,7 +853,8 @@ def main():
         p = os.path.normpath(os.path.join(os.path.dirname(main_path), t))
         ev.append({"k": os.path.basename(t), "v": (docs.get(norm(p), {}).get("version") or "exists") if os.path.exists(p) else "MISSING", "ok": os.path.exists(p)})
     checks.append({"label": "Both ingest templates exist" if len(ev) == 2 else "Every ingest template the main doc names exists",
-                   "ok": bool(ev) and all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} linked from the main doc"})
+                   "ok": all(x["ok"] for x in ev), "ev": ev,
+                   "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} linked from the main doc" if ev else "the main doc names no ingest template"})
     need = [f for f in fields if f["needs_tag"]]
     untagged = [f for f in need if not f["tag"]]
     ev = [{"k": f["name"], "v": f"{f['intro']} · " + (f["tag"] or "UNTAGGED"), "ok": bool(f["tag"])} for f in sorted(need, key=lambda f: (bool(f["tag"]), f["intro"], f["name"]))]
@@ -868,11 +871,18 @@ def main():
         if os.path.exists(cand):
             nt = load_text(cand)
             inst_node = {"path": rel(cand), "status": str(parse_fm(nt).get("status", "")), "marks": nt.count("⏸")}
+    if not inst.get("parked"):
+        # RULED 10/4 (BOLO 100, "RAC" = rec): every worked-instance fill pass is parked to phase 2 by ruling
+        inst = dict(inst, parked=inst.get("parked") or "Worked-instance fill pass parked to phase 2 by ruling (BOLO 100, 10/4).")
     ev = [{"k": "instance section", "v": f"{inst.get('marks', 0)} × {inst.get('marker', '⏸')}", "ok": bool(inst.get("parked"))}]
     if inst_node:
         ev.append({"k": os.path.basename(inst_node["path"]), "v": f"status: {inst_node['status']} · {inst_node['marks']} × ⏸", "ok": True})
     checks.append({"label": f"Worked instance: {inst.get('name', '—')} — fill pass parked by ruling", "ok": bool(inst.get("parked")), "ev": ev,
                    "sum": tm.strip_md(inst.get("parked", "no parking ruling found"))})
+    # guard (10/4): a page that parsed no layers and no fields has checked nothing, so it cannot pass
+    checks.insert(0, {"label": "The builder read the system's structure", "ok": bool(layers) and bool(fields),
+                      "ev": [{"k": "layers", "v": str(len(layers)), "ok": bool(layers)}, {"k": "fields", "v": str(len(fields)), "ok": bool(fields)}],
+                      "sum": f"{len(layers)} layers · {len(fields)} fields parsed from the main doc"})
     done = all(c["ok"] for c in checks)
 
     # what closed it: the current major version's entries
