@@ -1,7 +1,7 @@
 {
- "edition": "2026-09-24-2",
- "effective": "2026-09-24 · until superseded by the next edition",
- "supersedes": "edition 2026-09-17-4. Adds the 9/24 rulings: TOUCHSTONE (was invariant) · agents deployed (was in flight) · Skeeter Creek (was Red Stick Creek). The SOP §0 card remains the pocket extract; SOP.md remains canonical on any conflict.",
+ "edition": "2026-10-03",
+ "effective": "2026-10-03 · until superseded by the next edition",
+ "supersedes": "edition 2026-09-24-2. The first page built to the documentation SOP (BOLO 95, 2.1–2.3): the strip names who it's for · what it does · which type; owner · state · reviewed sit in this block. SOP.md remains canonical on any conflict.",
  "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
  "prepared_by": "Claude (every session)",
  "approved_by": "Chief — every proword marked RULED carries his word",
@@ -150,5 +150,11 @@
    "date": "2026-09-24",
    "t": "**BREVITY's first pass ruled eight slots**: PRIORITY (main effort) · INTEL (the outside read, and its product) · ROUGH (napkin) · PRIMER (syllabus) · DIGEST (distill) · DOCTRINE (grammar) · THROTTLE (gear N). Edition 2026-09-24-2."
   }
- ]
+ ],
+ "reader": "Chief, and every Claude session",
+ "job": "look up what a proword means and what it fires",
+ "type": "Reference",
+ "owner": "Chief (HOTLINE ACTUAL); Claude keeps it",
+ "state": "ruled",
+ "reviewed": "2026-10-03"
 }
