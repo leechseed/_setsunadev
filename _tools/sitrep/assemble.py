@@ -48,6 +48,10 @@ def main():
     pp = os.path.join(wd, "meta.patch.json")
     if os.path.exists(pp):
         meta.update(jload(pp))
+    # the page maps stats as a list of "label: value" strings; a dict here blanks the whole board (10/4, twice)
+    if isinstance(meta.get("stats"), dict):
+        meta["stats"] = [f"{k.replace('_', ' ')}: {v}" for k, v in meta["stats"].items()]
+        findings.append("meta.stats was a dict — coerced to a list of 'label: value' strings (write a list next time)")
     for k in ("prev_board", "sizes_kb", "commits_since_prev"):
         meta.pop(k, None)
 

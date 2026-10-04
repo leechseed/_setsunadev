@@ -26,12 +26,12 @@
   "tree": "clean at open",
   "stack": "empty",
   "agents": [],
-  "stats": {
-   "blocked": 0,
-   "main_effort_idle_days": 0,
-   "agents_deployed": 5,
-   "stations": "7/7 GO"
-  },
+  "stats": [
+   "blocked: 0",
+   "stations: 7/7 GO",
+   "agents deployed: 5 (RACK haiku · INDEX sonnet · WATCH haiku · two reruns)",
+   "long sentences: 2 left after one rerun (SOP 3.2)"
+  ],
   "main_effort": "Pick the fourth page for the documentation SOP. The ORANGE board is the strongest candidate.",
   "build": {
    "calls": 5,
