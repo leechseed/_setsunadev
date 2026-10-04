@@ -46,7 +46,7 @@ feeds:
     strength: contextual
     note: "The Subject-Object relation is desire, which becomes quest in manifested stories (pp. 203, 207). Souriau's list of thematic forces (pp. 208-209) splits desires and needs from fears, obsession against phobia."
 zotero_key: ""
-pdf_pages: [330]
+pdf_pages: [377]
 status: complete
 confidence: medium
 date_created: 2026-10-04
