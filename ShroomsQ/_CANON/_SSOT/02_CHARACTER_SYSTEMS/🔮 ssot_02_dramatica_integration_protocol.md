@@ -2,10 +2,10 @@
 type: ssot_02_character_systems
 category: dramatica_integration
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.2.0
+version: 1.2.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.2.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+status: "v1.2.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass, CL15: `convention_role` defined (L12, Static, advisory). v1.2.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest."
 dependencies: ["ssot_02_character_systems_vertical_slice"]
 ---
@@ -191,6 +191,8 @@ The core block contains the variables that the 12-layer system actively uses for
 |`limit_type`|Storyform dynamics|Flag triggers|
 |`resolve`|Storyform dynamics|Flag triggers, derived stats|
 
+**Convention role (1.2.1, CL15, RULED 2026-10-04, BOLO 100 library pass, "rec").** `convention_role` is an advisory L12 field, Static: {genre_role: text, actant_slot: subject | object | sender | receiver | helper | opponent}. Genre casting and the Greimas and Bal actants are one taxonomy here. The field stays blank when no genre applies. It never overrides `dramatica_archetype`, and it gives the erotic triangle a pointer. The main doc cites it from the L12 row. Books: BVX.0576, BVX.0596, BVX.0191, CRE.07, MSX.44, MSX.70. The same call extends L5 `relational_refs` kinds with helper, opponent, sender, receiver, rival and beloved, and adds `mentor_state` (present | absent | flawed, Dynamic). Both are defined in the main doc.
+
 **Tier 2 L12 Core:**
 
 |Variable|Source|
@@ -346,3 +348,4 @@ A revised storyform is a new version, not an edit (see above). The chart, the L1
 |1.0.0|2026-03-02|Initial SSOT. Establishes Dramatica role, storyform architecture, tier integration, L12 Option C structure, report manifest, pipeline position.|
 |1.1.0|2026-08-24|L12 core rename: `motivation_element` → `mc_problem_element` (holds the MC Problem; STATE #4 ruling, #3 execution). Motivation-quad primary lives in `L12_DRAMATICA_EXTENDED.motivation_quad`.|
 |1.2.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system (version continues from 1.1.0). Rule: this doc is the single home of the L12 field lists; the main doc points here. `narrative_invariant` named a Touchstone in prose (machine field unchanged until the schema pass). New section: Cascade on a Revised Storyform (C19). L7-L11 corrected to L1-L11. Dependency path fixed. Frontmatter repaired and table of contents links made in-page. Blank templates linked.|
+|1.2.1|2026-10-04|RULED, Chief ("rec") — BOLO 100 library pass, CL15: `convention_role` {genre_role, actant_slot} defined as an advisory Static L12 field; cited from the main doc. No other change.|
