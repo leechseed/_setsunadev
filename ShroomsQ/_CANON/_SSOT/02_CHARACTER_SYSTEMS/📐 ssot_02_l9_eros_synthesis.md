@@ -1,14 +1,15 @@
 ---
 type: ssot_synthesis
 category: character_systems
-version: 0.2.0
-last_updated: 2026-09-29
+version: 1.0.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT]
-status: "RULED 2026-09-29 — all ten applied in the character system v2.2.0"
+status: "v1.0.0 2026-10-04: RULED, Chief — BOLO 100 C20: stamped the L9 EROS module of the character system. RULED 2026-09-29 — all ten applied in the character system v2.2.0"
 purpose: One synthesis pass (Chief RULED 2026-09-29, "Rex") reading the 9/29 sexuality distill shelf — MSX.18 through MSX.36, PSY.08 through PSY.13 — against L9 EROS for the first time. All ten PROPOSED CHANGES below are RULED and APPLIED in [ssot_02_character_systems_vertical_slice.md](📐%20ssot_02_character_systems_vertical_slice.md) v2.2.0; this document stands as the derivation record.
 dependencies:
   - "📐 ssot_02_character_systems_vertical_slice.md"
   - "victoria-midnight-L9-eros.md"
+module_of: ssot_02_character_systems_vertical_slice
 trunk: BLACK
 sources: [MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13]
 ---
@@ -130,3 +131,4 @@ Numbered, at most ten, each a concrete rule change with cites and a one-line rec
 |:--|:--|:--|
 |0.1.0|2026-09-29|Initial synthesis: the per-distill register (25 sources), recurring methods, the trope-side survey, ten PROPOSED CHANGES, and four open questions. Status PROPOSED, pending Chief's ruling.|
 |0.2.0|2026-09-29|RULED 2026-09-29, Chief: "Rex" — all ten proposed changes APPLIED in [ssot_02_character_systems_vertical_slice.md](📐%20ssot_02_character_systems_vertical_slice.md) v2.2.0: `consent_posture`, `client_script`, `signal_fluency`, `resolution_type` (under `desire_vector`), `exposure_shame`/`role_shame` (splitting `shame_index`, kept as a read alias), `arousal_curve` (under `erotic_blueprint_type`), `erotic_pacing` (Core Methodology writing rule, no field), `erotic_safety_precondition_scope`, `disclosure_posture` (on L9, L3's kept), and `template_origin` (L9→L8 pointer). The WLW/lesbian gap (open question) logged to the acquisition list. Status updated PROPOSED → RULED.|
+|1.0.0|2026-10-04|RULED, Chief ("rec", BOLO 100 C20): stamped 1.0.0 as the L9 EROS module of the character system (`module_of` set). Content unchanged; its ten changes have been live since character 2.2.0.|
