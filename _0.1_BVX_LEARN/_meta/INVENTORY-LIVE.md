@@ -13,12 +13,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **9136** |
-| With a PDF attachment | 9136 |
-| PDF present on disk | 9045 |
-| Already in catalog.json (BVX id) | 1026 |
-| **New since the Dec-2023 catalog** | **8110** |
-| Story-side (CRE + LIT by catalog) | 660 |
+| Top-level items | **9217** |
+| With a PDF attachment | 9217 |
+| PDF present on disk | 9126 |
+| Already in catalog.json (BVX id) | 1029 |
+| **New since the Dec-2023 catalog** | **8188** |
+| Story-side (CRE + LIT by catalog) | 661 |
 | **Spine-keyed from Chief's tags** | **909** |
 | With PDF annotations | 5 (375 highlights) |
 | With notes | 8 |
@@ -40,13 +40,13 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 5755 |
+| NEW | 5833 |
 | GAM | 1241 |
-| CRE | 487 |
+| CRE | 488 |
 | PHI | 286 |
 | SLF | 204 |
-| VIS | 198 |
-| MSX | 198 |
+| VIS | 199 |
+| MSX | 199 |
 | TEC | 185 |
 | LIT | 173 |
 | MIL | 88 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (8110)
+## New since the catalog (8188)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -754,6 +754,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | 91500821-Eros-and-Psyche |  |  |
 |  | 98575214 Uscca Accuracy Secrets Unknown |  |  |
 |  | [NASA SP 2016 6105_Rev2_]nasa_systems_engineering_handbook_0 |  |  |
+|  | A Billion Wicked Thoughts What the Worlds Largest Experiment Reveals a | Ogi Ogas, Sai Gaddam |  |
 |  | A Broken Sky - Boundless Horizons | Patreon Extras |  |
 |  | A Broken Sky - Fantastic Ramblings |  |  |
 |  | A Broken Sky - Pirates of the Unknown Horizon - Primer |  |  |
@@ -982,6 +983,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Akashic Mysteries - Guru |  |  |
 |  | Akashic Mysteries - Vizier |  |  |
 | 2019 | Akt-Shooting | Dombrow |  |
+|  | Aktfotografie (David Daye)3874677745 |  |  |
 |  | Al Essentials for Project Professionals | Project Management Institute |  |
 |  | Alchemical Baroque | Games |  |
 |  | Alchemy Deck |  |  |
@@ -1243,8 +1245,10 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Bestiary 6 |  |  |
 |  | Betsy Prioleau - Seductress_ Women Who Ravished the World and Their Lo | 2003 |  |
 |  | Betsy Prioleau - Swoon _ Great Seducers and Why Women Love Them-W. W.  | 2013 |  |
+|  | Between Men English Literature and Male Homosocial Desire | Eve Kosofsky Sedgwick |  |
 |  | Bible of Cock Volume 2 |  |  |
 |  | Big Lizzie |  |  |
+|  | Bigger Than Life The History of Gay Porn Cinema from Beefcake to Hardc | Jeffrey Escoffier |  |
 |  | Bill Webb's Book of Dirty Tricks |  |  |
 |  | Biopolitics An Advanced Introduction (Biopolitics Medicine, Technoscie | Thomas Lemke, Monica Casper, L |  |
 |  | Biopower Today | Paul Rabinow Nikolas Rose |  |
@@ -1372,6 +1376,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Boudoir Flow Posing ak3n |  |  |
 |  | Boudoir Inspiration - Best of Boudoir 2020 (Boudoir Inspiration)— |  |  |
 |  | Boudoir Inspiration – Best of Boudoir 2022 (Boudoir)— |  |  |
+|  | Bound and gagged pornography and the politics of fantasy in America | Kipnis, Laura |  |
 |  | Bounty #01 - The Whitefang Wyrm |  |  |
 |  | Bounty #02 - Blood of the Beautiful |  |  |
 |  | Bounty #03 - Shadows and Scarecrows |  |  |
@@ -1434,6 +1439,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Caravan To Ein Arris |  |  |
 |  | Cardstock Miniatures - Giants - Large and in Charge |  |  |
 |  | Cardstock Miniatures - Undead - Grave Threats |  |  |
+|  | Carnal resonance affect and online pornography | Paasonen, Susanna |  |
 |  | Carrion Crown - 01 - Haunting Of Harrowstone |  |  |
 |  | Carrion Crown - 01 - The Haunting of Harrowstone - Interactive Maps |  |  |
 |  | Carrion Crown - 02 - Trial of the Beast |  |  |
@@ -1617,6 +1623,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Combat Town SOP |  | MILITARY SCIENCE |
 |  | combat_record_sheet |  |  |
 |  | Comics and Sequential Art Principles and Practice of the Worlds Most P | Will Eisner |  |
+|  | Coming out homosexual politics in Britain from the nineteenth century  | Weeks, Jeffrey, 1945- |  |
 |  | Communication Strategy |  | MILITARY SCIENCE |
 |  | Companions of the Firmament |  |  |
 |  | Companions of the Firmament - Monster Sheets Dragons, Expanded Flying |  |  |
@@ -1633,6 +1640,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Conflict Games - Conflict Roleplaying Rulebook |  |  |
 |  | Conquering Heroes - Pregenerated Characters |  |  |
 |  | Contemporary Dystopian Fiction for Young Adults Brave New Teenagers (B |  |  |
+|  | Contemporary Male Sexuality Confronting Myths and Promoting Change (Mc |  |  |
 | 2020 | Contemporary publishing and the culture of books | Baverstock, Bradford, Gonzalez |  |
 |  | Conventions and Obligatory Moments Th... |  |  |
 |  | Conversion Guide |  |  |
@@ -1693,6 +1701,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Critical Hit Deck |  |  |
 |  | Crown of the Kobold King |  |  |
 |  | Crown of the Kobold King - Flip Mat |  |  |
+|  | Cruise Control Understanding Sex Addiction in Gay Men | Robert Weiss, Patrick Carnes |  |
+|  | Cruising Utopia The Then and There of Queer Futurity | José Esteban Muñoz |  |
 |  | Crusader Codex |  |  |
 | 2019 | Crusaders: an epic history of the wars for the holy lands | Jones |  |
 |  | Crusades |  |  |
@@ -1752,6 +1762,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | D4 - Hungry are the Dead |  |  |
 |  | Dahlia Evans - The Body Thesaurus_ A Fiction Writer’s Sourcebook of Wo | 2016 | 03_CHARACTER |
 |  | Dalrock Archive ((Compiled by) udream-hunter) |  |  |
+|  | DAMA - DMBOOK data management body of knowledge | Library of Congress Control Nu |  |
 |  | DAMA - DMBOOK data management body of knowledge |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
 |  | Damn Fine Story Mastering the Tools o... |  |  |
@@ -1831,6 +1842,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Detective Carnacki's Serial Killers of Vathak |  |  |
 |  | Developing a Series with Series Bibles A Production Guide for Writing  | Phil Zizza, Wade Pena | 080002 - film & 080003 - television |
 |  | Developing Story Ideas The Power and... |  |  |
+|  | Deviations A Gayle Rubin Reader | Gayle S. Rubin |  |
 |  | Devil's Workshop - Adventure Planner |  |  |
 |  | Devil's Workshop - Horrific Fears |  |  |
 |  | Devil’s Workshop - Blood and Sand - The Gladiator Sourcebook |  |  |
@@ -2664,6 +2676,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | eco-tutorial-standard US copyright office standard application tutoria |  |  |
 |  | eco-upload US copyright office uploading your work to eco |  |  |
 |  | ecommerce | 1 |  |
+|  | Economics, Sexuality, and Male Sex Work | Trevon D. Logan |  |
 |  | Educational Management Administration & Leadership-2002-Samier-27-45 |  |  |
 |  | Eichmann Before Jerusalem The Unexamined Life of a Mass Murderer | Bettina Stangneth, Ruth Martin |  |
 |  | Eichmann in Jerusalem A Report on the Banality of Evil | Hannah Arendt |  |
@@ -2712,6 +2725,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Epic Level NPC - Occult Rituals of the Necronomicon Vol 1 - Undead |  |  |
 |  | Epidemic - Oathbound Bestiary |  |  |
 |  | Epidemic Books - Oathbound Eclipse - Director's Cut |  |  |
+|  | Epistemology of the Closet (Eve Kosofsky Sedgwick)0520078748 |  |  |
 |  | Era Digest Age Of War |  |  |
 |  | Era Digest Dark Age |  |  |
 |  | Era Digest Golden Century |  |  |
@@ -2959,6 +2973,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Feiya - Level 5 Witch |  |  |
 |  | Fellow Travelers - Animal Companions |  |  |
 |  | Fellow Travelers - Cohorts, Followers & Hirelings |  |  |
+|  | Female Masculinity | Jack Halberstam |  |
 |  | Female Nudes | Alina Reyes, Bernard Matussier |  |
 |  | Fen of the Five-Fold Maw |  |  |
 |  | Fey Revisited |  |  |
@@ -3141,6 +3156,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Free Markets in Higher Education |  |  |
 |  | Friends of Eldoria - Eldoria - 200 Mundane Items |  |  |
 |  | Friends of Eldoria - Eldoria - Ten Market Stalls |  |  |
+|  | From Drag Queens to Leathermen Language, Gender, and Gay Male Subcultu | Rusty Barrett |  |
 |  | From Shore to Sea |  |  |
 |  | From Shore to Sea - Ten Interesting Ruins | Web Enhancement |  |
 |  | From the Bags of Giants II |  |  |
@@ -3183,8 +3199,14 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Gaming Paper - Edgewaters Folly |  |  |
 |  | Gatewalkers AP - 1 of 3 - The Seventh Arch |  |  |
 |  | Gatewalkers AP - 1 of 3 - The Seventh Arch - Interactive Maps |  |  |
+|  | Gay American history lesbians and gay men in the U.S.A. a documentary  | Katz, Jonathan, 1938- |  |
+|  | Gay Bar Why We Went Out | Jeremy Atherton Lin |  |
+|  | Gay macho the life and death of the homosexual clone | Levine, Martin P |  |
+|  | Gay New York gender, urban culture, and the makings of the gay male wo | Chauncey, George |  |
+|  | Gay Pornography Representations of Sexuality and Masculinity | Mercer, John |  |
 |  | Gazetteer |  |  |
 |  | Gear |  |  |
+|  | Gender Trouble Feminism and the Subversion of Identity | Judith Butler |  |
 |  | General Help |  |  |
 | 2024 | Generating Long-form Story Using Dynamic Hierarchical Outlining with M | Wang, Hu, Li, Wang |  |
 |  | Genius A Mosaic of One Hundred Exemplary Creative Minds (Harold Bloom) |  |  |
@@ -3257,6 +3279,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Green Ronin - Peril in Freeport |  |  |
 |  | Green Ronin - Player's Guide to Freeport |  |  |
 |  | Greg Costikyan - I Have No Words & I Must Design | 2002 |  |
+|  | Grid Systems in Graphic Design Raster Systeme Fur Die Visuele Gestaltu |  |  |
 |  | grm specifications |  |  |
 |  | grm wireframes |  |  |
 |  | Groundwork of Evangelion 2.0 |  | 04_SETTING |
@@ -3416,6 +3439,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Handbook of Sports Medicine and Science Gymnastics | Dennis J. Caine |  |
 |  | Handbook on Interactive Storytelling | Jouni Smed, Tomi bgt Suovuo et |  |
 |  | Handwritten_2023-08-24_065542 |  | PROJECT_LAWD |
+|  | Hard Core Power, Pleasure, and the “Frenzy of the Visible” | Linda Williams |  |
 |  | Harrow Deck |  |  |
 |  | Harrow Deck Deluxe |  |  |
 |  | Harry Potter and the Cursed Child The Journey, Behind the Scenes of th | Harry Potter Theatrical Produc | 080008 - THEATRE |
@@ -3473,6 +3497,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Helmut Newton - White Women |  |  |
 |  | helpme |  |  |
 |  | Henchfolk and Hirelings |  |  |
+|  | Here Be Dragons Exploring Fantasy Maps and Settings | Ekman Stefan |  |
 |  | Hero's Bastard |  |  |
 |  | Heroes for Highdelve |  |  |
 |  | Heroes Handbook |  |  |
@@ -3502,6 +3527,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Hoard of the Dragon Queen |  |  |
 |  | Home Grown Booty (Dannibelle)— |  | HEALTH & FITNESS |
 |  | Homo Sacer | Georgio Agamben |  |
+|  | Homos | Leo Bersani |  |
+|  | Homosexual Desire | Guy Hocquenghem |  |
+|  | Homosexuality in Perspective | William H. Masters Virginia E. |  |
 |  | Horror - The Madness Dossier |  |  |
 |  | Horror Adventures |  |  |
 |  | Horror Realms |  |  |
@@ -3516,6 +3544,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | How Can I Pay for PrEP? |  |  |
 |  | How Fiction Works | James Wood |  |
 |  | How To Be A GURPS GM |  |  |
+|  | How to Build a Culture An Authors Guide to Building Rich and Diverse C | A Trevena |  |
 |  | How to Create History An Authors Guide to Creating Histories, Myths, a | A. Trevena |  |
 |  | How to Draw Fantasy Females Create Sexy Cyberpunks, Seductive Supergir |  |  |
 |  | How to Draw Krappy Kartoons Really Well |  | 080004 - art |
@@ -3537,6 +3566,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | How to Write Dazzling Dialogue The Fastest Way to Improve Any Manuscri |  |  |
 |  | How to Write Dazzling Dialogue The Fastest Way to Improve Any Manuscri |  |  |
 |  | How to Write Pulp Fiction (Bell James... |  |  |
+|  | Human Sexual Response | William H. Masters, Viginia E. |  |
+|  | Human Sexuality and Its Problems | John Bancroft |  |
 |  | human-integration-design-handbook-revision-1 |  |  |
 |  | Humans of Golarion |  |  |
 |  | Hunicke, LeBlanc, Zubek - MDA A Formal Approach to Game Design and Gam | 2004 |  |
@@ -3629,6 +3660,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | International Baccalaureate |  | 06_NARRATOR |
 |  | Interstellar Expeditions - Interstellar Player 3 |  |  |
 | 2021 | Intertextuality | Allen |  |
+|  | Intimate Matters A History of Sexuality in America | John DEmilio, Estelle B. Freed |  |
 |  | INTJ - Architect (16personalities premium profile) (INTJ)— |  | 03_CHARACTER |
 |  | Into the Armory |  |  |
 |  | Into the Breach The Magus |  |  |
@@ -4115,6 +4147,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Lost Treasures |  |  |
 |  | Louis Hebert - Tools for Text and Image Analysis, The Actantial Model | sample chapter, pre-2019 |  |
 |  | Lovecraft Fantasy Gaming Toolkit |  |  |
+|  | Lovemaps Clinical Concepts of SexualErotic Health and Pathology, Parap | John Money |  |
 |  | Loves Knowledge Essays on Philosophy and Literature | Martha C. Nussbaum |  |
 |  | Low Tech |  |  |
 |  | Low Tech - Instant Armor |  |  |
@@ -4147,6 +4180,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Malevolence - Rules and Chronicle Sheet |  |  |
 |  | Mammoth_Pack |  |  |
 |  | Man, Play and Games | Roger Caillois |  |
+|  | Manhood in America A cultural history | Michael S. Kimmel |  |
 |  | Manhwa Mania - How to Draw Korean Comics | Manga Mania | 080004 - art |
 |  | Map of Darkmoon Vale |  |  |
 |  | Map of Korvosa |  |  |
@@ -4280,6 +4314,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Members Club A Users guide to the Pen... |  |  |
 |  | Members Club A Users guide to the Pen... |  | SEX |
 |  | Members Club A Users guide to the Pen... |  |  |
+|  | Men Who Sell Sex Global Perspectives | Peter Aggleton Richard Parker |  |
 |  | Mental Models  30 Th... by Peter Hollins |  |  |
 |  | Mental Models  30 Th... by Peter Hollins |  |  |
 |  | Merchant's Manifest |  |  |
@@ -4306,6 +4341,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 1995 | Metafiction | Currie | 02_PLOT SYUHZET |
 |  | Metal & Myth - Dredan, Realm of Metal & Myth |  |  |
 | 2014 | Metaphor | Donoghue |  |
+|  | Methamphetamine addiction biological foundations, psychological factor | Perry N. Halkitis |  |
 |  | Meyer - Object-Oriented Software Construction 2nd ed | 1997 |  |
 |  | MFC_CHOREO_NOTES_08_Empezo_El_Show |  |  |
 |  | MFC_CHOREO_NOTES_08_Empezo_El_Show |  |  |
@@ -4316,6 +4352,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2012 | Michael Freeman's Photo School: Exposure | Freeman, Wignall | 080009 - PHOTOGRAPHY |
 |  | Michael Suileabhain-Wilson - GURPS Classic_ Deadlands_ Varmints-Steve  | 2020 |  |
 |  | Michael Suileabhain-Wilson - GURPS Classic_ Deadlands_ Varmints-Steve  | 2020 |  |
+|  | Michelangelo The Complete Paintings, Sculptures and Architecture | Frank Zöllner |  |
 |  | Microlite2020 Core Rules 1.02 |  |  |
 | 2012 | Microsoft manual of style | Microsoft Corporation |  |
 | 2012 | Microsoft manual of style: your everyday guide to usage, terminology,  | Woolley, Microsoft Corporation |  |
@@ -4765,6 +4802,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Night of the Gray Death - Flip Mat |  |  |
 |  | Nirvana Magazine — Issue 18 (Nirvana Magazine)— |  |  |
 |  | Nirvana Magazine — Issue 18 (Nirvana Magazine)— |  |  |
+|  | No Future Queer Theory and the Death Drive | Lee Edelman |  |
 |  | No Maam Blog Writings | compiled by dream-hunter |  |
 |  | No Response from Deepmar |  |  |
 |  | Noble Cause, Bloodied Hands |  |  |
@@ -4803,6 +4841,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Occult Origins |  |  |
 |  | Occult Realms |  |  |
 |  | One Bling to Rule Them All, Scaling Magic Items |  |  |
+|  | One Hundred Years of Homosexuality And Other Essays on Greek Love (New | David Halperin |  |
 |  | One Night Stands 1 - Jungle Ruins of Madaro-Shanti |  |  |
 |  | One Night Stands 2 - Death in the Painted Canyons |  |  |
 |  | One Night Stands 3 - Spire of Iron and Crystal |  |  |
@@ -4822,6 +4861,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Ooh, Shiny! - The Clothes Make the Man |  |  |
 |  | OOO-014-enabled release form florida department of environmental prote |  |  |
 |  | OOO-015-enabled_0 florida department of environemtnal protection model |  |  |
+|  | Opening Up A Guide to Creating and Sustaining Open Relationships | Tristan Taormino |  |
 |  | Operation Klondike |  |  |
 |  | Operation Tips | Consejos de operación | Conseils d'utilisation | Prevaciados |  |
 |  | Operational Turning Points Capellan Crusades |  |  |
@@ -5285,7 +5325,9 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Player's Options - Halflings |  |  |
 |  | Players Guide |  |  |
 |  | Playground Adventures - Creature Components Vol.1 |  |  |
+|  | Playing on the Edge Sadomasochism, Risk, and Intimacy | Staci Newmahr |  |
 |  | Playtest - Fantasy Firearms |  |  |
+|  | Pleasure Consuming Medicine The Queer Politics of Drugs | Kane Race |  |
 | 1988 | Plot | Dibell |  |
 |  | Plot (Elements of Fiction Writing) (A... |  |  |
 |  | Plotting A Fantasy Novel Learn Elements of Plot and Structure, Outlini | Tasha Dunn |  |
@@ -5487,6 +5529,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Polyhedron Index 001-118 |  |  |
 |  | Polyhedron Introductory Issue |  |  |
 |  | Polyhedron Magazine - Caves of Confection |  |  |
+|  | Polysecure Attachment, Trauma and Consensual Nonmonogamy | Jessica Fern |  |
 |  | Portfolio - Eileen Sorg - Beginning Colored Pencil - 2017 |  | 080004 - art |
 |  | Portraits | Helmut Newton |  |
 |  | Portraits | Helmut Newton |  |
@@ -5523,6 +5566,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | PRIMA GUIDE Mass Effect 2 Prima Official Game Guide | Catherine Browne | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE Mass Effect 3 - Collectors Edition Guide (Bioware)— |  | 080006 - VIDEO GAME DESIGN |
 |  | PRIMA GUIDE Red Dead Redemption 2 - The Complete Official Guide, Colle | Piggyback | 080006 - VIDEO GAME DESIGN |
+|  | PRIMA GUIDE The Elder Scrolls V Skyrim Official Game Guide (David S. J |  |  |
 |  | PRIMA GUIDE The Legend of Zelda Breath of the Wild The complete offici | VVAA | 080006 - VIDEO GAME DESIGN |
 |  | Prime Directive |  |  |
 |  | Prime Directive - Adventure Planet Aldo |  |  |
@@ -5580,6 +5624,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Psychic Anthology |  |  |
 |  | Psychology of the unconscious a study of the transformations and symbo |  |  |
 |  | Psychopolitics | Byung-Chul Han |  |
+|  | Public Sex The Culture of Radical Sex | Pat Califia |  |
+|  | Publics and Counterpublics | Michael Warner |  |
 | 2014 | Publishing 101: A First-Time Author's Guide to Getting Published, Mark | Friedman |  |
 |  | Pure Steam - Westbound |  |  |
 |  | Purple Duck Diversions - Antipaladin feats |  |  |
@@ -5725,6 +5771,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Qadira, Gateway to the East |  |  |
 |  | Qadira, Jewel of the East |  |  |
 |  | QCIncentiveApplication_QueueC_v9 |  |  |
+|  | Queer London perils and pleasures in the sexual metropolis, 1918-1957 | Matt Houlbrook |  |
 |  | questions to ask during the interview |  |  |
 |  | Quests and Campaigns |  |  |
 |  | Quests of Doom |  |  |
@@ -5845,6 +5892,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Remedial Tinkering - Obligatory Lovecraft Expansion |  |  |
 |  | Remedial Tinkering - Rockets Red Glare |  |  |
 |  | remote_control_sheet |  |  |
+|  | Rent boys the world of male sex workers | Michel Dorais |  |
 |  | Reproduction in Education, Society and Culture | Pierre Bourdieu, Jean-Claude P |  |
 |  | Research on Sociology Theory Building |  |  |
 |  | Restless Souls |  |  |
@@ -6373,9 +6421,14 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Setsuna Digital Industries | 1 |  |
 |  | Setting up your shots  great camera moves every filmmaker should know | Jeremy Vineyard José Cruz | 080002 - film & 080003 - television |
 |  | Sex Arcade Erotic Artbook Compilation (The Sabu)— |  | 04_SETTING |
+|  | Sex at Dawn How We Mate, Why We Stray, and What It Means for Modern Re | Christopher Ryan Cacilda Jetha |  |
+|  | Sex from Plato to Paglia a philosophical encyclopedia | Soble, Alan |  |
 |  | sex position guide sexbenches |  |  |
 |  | Sex Work, Labour, and Empowerment Lessons from the Informal Entertainm | Sutirtha Sahariah |  |
+|  | Sexual Behavior in the Human Female | Alfred C Kinsey, Institute for |  |
+|  | Sexual Behavior in the Human Male | Alfred C. Kinsey |  |
 | 2021 | Sexual Deviance and Society: A Sociological Examination | Worthen |  |
+|  | Sexual Politics, Sexual Communities The Making of the Homosexual Minor | John DEmilio |  |
 |  | Shadow Planes and Pocket Worlds |  |  |
 |  | Shadowed Keep On The Borderlands |  |  |
 |  | Shadowed Keep On The Borderlands - Compiled Stat Blocks |  |  |
@@ -6506,6 +6559,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Slumbering Tsar - ST7 - Temple-City of Orcus, Pt 4 |  |  |
 |  | Slumbering Tsar - ST8 - Temple-City of Orcus, Pt 5 |  |  |
 |  | Slumbering Tsar - ST9 - Hidden Citadel, Pt 1 |  |  |
+|  | SM 101 a realistic introduction | Wiseman, Jay |  |
 |  | Small-Scale Homesteading | Stephanie Thurow |  |
 |  | Smart Thinking Skills for Critical Understanding and Writing | Matthew Allen | HEALTH & FITNESS |
 |  | SmartBill |  |  |
@@ -7159,6 +7213,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Stroh Hammer - Gravity Age - Cybernetics Emporium |  |  |
 |  | Stroh Hammer - Gravity Age - Nanotech Emporium |  |  |
 |  | Structural Anthropology | etc. |  |
+|  | Structural Semantics An Attempt at a Method | A.-J. Greimas, Daniele McDowel |  |
 |  | structure_chart |  |  |
 |  | Stuck Diagrams Help | Abby Covert |  |
 |  | Successful Glamour Photography Secrets of Indoor and Outdoor Model Pho | John Kelly |  |
@@ -7196,6 +7251,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | TDK_DS_000577_ICM_45686 |  |  |
 |  | teacher_and_students_steps_for_global_inferences |  |  |
 |  | TEAM DEAD NOTEBOOK 1 SCANNED |  | PROJECT_LAWD |
+|  | Tearoom Trade Impersonal sex in public places | Laud Humphreys |  |
 |  | Tears at Bitter Manor |  |  |
 |  | Tears at Bitter Manor Poster Map |  |  |
 |  | TechManual v3.0 Battle Value |  |  |
@@ -7221,6 +7277,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Technical Readout Vehicle Annex |  |  |
 |  | technical standards catalog |  |  |
 |  | Technology Guide |  |  |
+|  | Tell Me What You Want The Science of Sexual Desire and How It Can Help | Justin Lehmiller |  |
 |  | Templar, A Divine Magus Class Archetype |  |  |
 |  | Temporary+Tattoos+ +Reverse+ +English,+Spanish+&+Arabic |  |  |
 |  | Tenochtitlan Map | 4E |  |
@@ -7251,6 +7308,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Art of The Last of Us | Naugthy Dog | 04_SETTING |
 |  | The Art of the Last of Us Part II | Naughty Dog |  |
 |  | The Art of The Matrix (Lana Wachowski, Larry Wachowski, Andy Wachowski |  | 04_SETTING |
+|  | The Art of War for Writers Fiction Writing Strategies, Tactics, and Ex |  |  |
 |  | The Barbarian Reforged |  |  |
 |  | The Big Book of Bloodlines |  |  |
 |  | The Big Pink Book: A Beginner’s Guide To Bimbofication |  |  |
@@ -7266,6 +7324,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2022 | The Business of Fine Art Photography: Art Markets, Galleries, Museums, | Werner |  |
 |  | The Cambridge Introduction to Narrative | H. Porter Abbott |  |
 |  | The Camera | Ansel Adams, Robert Hardy Bake | 080002 - film & 080003 - television |
+|  | The Challenger Launch Decision Risky Technology, Culture, and Deviance | Diane Vaughan |  |
 |  | The City of Graves |  |  |
 |  | The Cleric Reforged |  |  |
 |  | The Collapse of Complex Societies (New Studies in Archaeology) | Joseph Tainter |  |
@@ -7286,6 +7345,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Craft of Wargaming (Jeff Appleget... |  |  |
 |  | The CRPG Book Expanded Edition 3 |  |  |
 | 2010 | The Crusades: the authoritative history of the war for the Holy Land |  |  |
+|  | The Culture of Queers | Richard Dyer |  |
 |  | The Dan Anderson Encyclopedia of Modern Arnis Volume 1 A - J (Dan Ande |  | HEALTH & FITNESS |
 |  | The Dan Anderson Encyclopedia of Modern Arnis Volume ll K - Z (Dan And |  | HEALTH & FITNESS |
 |  | The Deductionist |  |  |
@@ -7314,9 +7374,12 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Emerald Spire Superdungeon |  |  |
 |  | The Emerald Spire Superdungeon - Flip-Mats |  |  |
 |  | The Emerald Spire Superdungeon Maps |  |  |
+|  | The Erotic Mind Unlocking the Inner Sources of Passion and Fulfillment | Jack Morin |  |
 | 2013 | The esoteric tradition | Purucker, Hart, Knoche |  |
 |  | The essential Epicurus letters, principal doctrines, Vatican sayings,  | Epicurus, Eugene OConnor |  |
 |  | The Essential Worldbuilding Blueprint and Workbook (Scribe Forge)— |  | 04_SETTING |
+|  | The ethical slut a practical guide to polyamory, open relationships an | Hardy, Janet W., author, Easto |  |
+|  | The Evolution of Desire Strategies of Human Mating | David M. Buss |  |
 |  | The Fabulous Women of Boris Vallejo and Julie Bell (Boris Vallejo, Jul |  |  |
 |  | The Fall of Plaguestone |  |  |
 |  | The Fall of Plaguestone - Chronicle Sheet |  |  |
@@ -7335,6 +7398,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The game design reader a Rules of play anthology | Tekinbaş, Katie Salen Zimmerma |  |
 |  | The Game Neil Strauss | Neil Strauss |  |
 |  | The Gauntlet |  |  |
+|  | The Gay Science Intimate Experiments with the Problem of HIV | Kane Race |  |
 |  | The Genius Guide to 110 Spell Variants |  |  |
 |  | The Genius Guide to 110 Spell Variants Volume 3 |  |  |
 |  | The Genius Guide to 110 Spell Variants Volume 4 |  |  |
@@ -7472,11 +7536,13 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Last Fifty Pages The Art and Craf... |  |  |
 |  | The Last of Us Part II Artbook |  | 04_SETTING |
+|  | The leathermans Handbook | Larry Townsend |  |
 |  | The Lesbian Sex Book - A Guide for Women Who Love Women (Wendy Caster, |  |  |
 |  | The Lesbian Sex Book - A Guide for Women Who Love Women (Wendy Caster, | 1 |  |
 |  | The Lesbian Sex Book - A Guide for Women Who Love Women (Wendy Caster, | 1 |  |
 |  | The Lesbian Sex Book - A Guide for Women Who Love Women (Wendy Caster, |  |  |
 |  | The Lonely Coast |  |  |
+|  | The Lucifer Effect Understanding How Good People Turn Evil | Philip Zimbardo |  |
 |  | The Making of a Story | fAlice LaPlante |  |
 |  | The Making of a Story | fAlice LaPlante |  |
 |  | The Making of a Story | Alice LaPlante |  |
@@ -7517,6 +7583,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Plot Thickens 8 Ways to Bring Fic... |  |  |
 |  | The Plot Thickens 8 Ways to Bring Fic... |  |  |
 |  | The poetics of prose | Todorov, Tzvetan, 1939-2017 |  |
+|  | The Pornography Industry What Everyone Needs to Know | Shira Tarrant |  |
+|  | The Pornography Wars The Past, Present, and Future of Americas Obscene | Kelsy Burke |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
 |  | The Power of Glamour Longing and the Art of Visual Persuasion | Virginia Postrel |  |
@@ -7525,8 +7593,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Practice of Rhetoric |  |  |
 |  | The Private Man Blog Writings | compiled by dream-hunter |  |
 |  | The Psychology of CreativeWriting | Kaufman, Kaufman |  |
+|  | The Psychology of Sex | Meg John Barker |  |
 |  | The Pudding Shot 2 for $5 | Minze |  |
 |  | THE QI BOOK OF QUOTATIONS | Lloyd, Mitchinson |  |
+|  | The Queer Art of Failure | Jack Halberstam |  |
+|  | The Queer Art of Failure (Jack Halberstam)-1 |  |  |
 |  | The Real World of Technology | Ursula M. Franklin |  |
 |  | The Reaping Stone |  |  |
 |  | The Reign of the Phallus | Keuls |  |
@@ -7606,11 +7677,13 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Slithering - Flip Mat |  |  |
 |  | The Slithering - Pregenerated Characters |  |  |
 |  | The Slumbering Tsar Saga |  |  |
+|  | The Social Organization of Sexuality Sexual Practices in the United St | Edward O. Laumann et al. |  |
 |  | The Solo Adventurer’s Toolbox | Bimler |  |
 |  | The Solo Adventurer’s Toolbox | Bimler |  |
 |  | The Song of Fodin |  |  |
 |  | The Space of Sex The Porn Aesthetic in Contemporary Film and Televisio | Shelton Waldrep |  |
 |  | The Steamsinger - A Bard Tinker Prestige Class |  |  |
+|  | The Straight State Sexuality and Citizenship in Twentieth-Century Amer | Margot Canaday |  |
 |  | The structure of scientific revolutions 50th anniversary edition (Thom |  |  |
 |  | The Sublime (Blooms Literary Themes) (Harold Bloom (Editor) etc.) |  | 01_THEME |
 |  | The Templars The Rise and Spectacular Fall of God’s Holy Warriors | Dan Jones |  |
@@ -7621,6 +7694,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Trading Mindwheel Eight Essential... |  |  |
 |  | The Trading Mindwheel Eight Essential... |  |  |
 |  | The Traveler's Guide to the Elemental Plane of Fire |  |  |
+|  | The Trouble with Normal Sex, Politics, and the Ethics of Queer Life | Michael Warner |  |
 |  | The Ultimate Encyclopedia of Mythology | Arthur Cotterell |  |
 |  | The Ultimate Gladiator |  |  |
 |  | The Ultimate Guide to Fellatio How to Go Down on a Man and Give Him Mi | Violet Blue |  |
@@ -7689,6 +7763,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Timeout Diversions - Sovereign Stone - Campaign Setting |  |  |
 |  | Timeout Diversions - Sovereign Stone - Codex Mysterium |  |  |
 |  | Timeout Diversions - Sovereign Stone - Scions of the Void |  |  |
+|  | Times Square Red, Times Square Blue | Samuel R. Delany |  |
 |  | Tinkering 201 - 27 Inventions for the Tinker Base Class |  |  |
 |  | Tinkering 301 - Pimp My Alpha |  |  |
 |  | Tinkering 302 - Modules - Tinker Magic Items |  |  |
@@ -7892,12 +7967,15 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | UndeFEATable 9 - Monks |  |  |
 |  | Under the Knife - The Grafter a Tinker Prestige Class |  |  |
 |  | Underground Adventures |  |  |
+|  | Understanding Human Sexuality | Janet Shibley Hyde, John D. De |  |
+|  | Understanding Non-Monogamies | Meg Barker, Darren Langdridge |  |
 |  | Underworld Races & Classes |  |  |
 |  | Unfamiliar Faces - New Medium Spirits |  |  |
 | 2023 | Universal principles of design: 200 ways to increase appeal, enhance u | Lidwell, Holden, Butler |  |
 |  | Unnatural Narratology Extensions, Rev... |  |  |
 |  | Unrighteous Villains |  |  |
 |  | Unusual Suspects |  |  |
+|  | Urban aboriginals a celebration of leather sexuality | Mains, Geoffrey |  |
 |  | Urban Dressing - Mining Town |  |  |
 |  | US Army - ADP 6-0 Mission Command | 2012 ed. |  |
 |  | usgl_annual_report_IVxxi |  |  |
