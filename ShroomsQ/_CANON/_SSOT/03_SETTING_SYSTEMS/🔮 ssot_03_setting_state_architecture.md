@@ -1,10 +1,11 @@
 ---
 type: ssot_03_setting_systems
 category: state_architecture
-version: 1.1.0
-last_updated: 2026-09-29
-applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "RULED 2026-09-29 — BOLO 90 step 3; 1.1.0 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Checkpoint 3 gets a told_at note, the backstory movement tag is ruled (not proposed), backward diffs stated as Rule 7"
+version: 1.2.0
+module_of: ssot_03_setting_system
+last_updated: 2026-10-04
+applies_to: [all IPs]
+status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stamped module_of ssot_03_setting_system; origin_event no-record rule written; DCUS rename lattice values parked; Modified Flags block points to the SETTING FLAGS starter set; scope set to all IPs. Earlier: RULED 2026-09-29 — BOLO 90 step 3; 1.1.0 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Checkpoint 3 gets a told_at note, the backstory movement tag is ruled (not proposed), backward diffs stated as Rule 7"
 purpose: "Defines the architecture for tracking place change over narrative time without modifying the static base Setting Slice. Establishes the state diff system for places, the state record format, checkpoints and story points, state sources, faction-card state, and boundaries with the static Setting Slice, the tracking system, and the fabula. Mirrors ssot_02_character_state_architecture layer for layer, the way the Setting Slice itself mirrors the 12-Layer Character Database."
 dependencies: ["ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_08_tracking_system", "ssot_04_fabula", "delta-coast-ultra-school (first instance)"]
 ---
@@ -23,7 +24,7 @@ dependencies: ["ssot_03_setting_system", "ssot_02_character_state_architecture",
 8. [State Sources](#8-state-sources)
 9. [Faction States](#9-faction-states)
 10. [Boundaries](#10-boundaries)
-11. [THE INSTANCE — the DCUS rename lattice](#11-the-instance--the-dcus-rename-lattice)
+11. [THE INSTANCE — the DCUS rename lattice, worked example](#11-the-instance--the-dcus-rename-lattice--worked-example-phase-2-fills)
 12. [Version History](#12-version-history)
 
 ---
@@ -100,7 +101,7 @@ A state record is a structured data block that describes the delta between the b
 |---|---|---|
 | `place_id` | Place this state belongs to | `dcus` |
 | `state_id` | Unique identifier for this state | `dcus_red_hills_rename` |
-| `origin_event` | The fabula event that produced this state. An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event. ⧗ when no fabula record exists yet — see §11 | `⧗ backstory_red_hills_rename` |
+| `origin_event` | The fabula event that produced this state. An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event. If no fabula record exists, write the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`. The field is never left blank or invented as canon — see §11 | `backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)` |
 | `told_at` | A list of time codes ([📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4) marking every point the audience is shown this state on the grid. An empty list means the state is true but offstage | `["M3 · S06 \| 021.1.1"]` or `[]` |
 | `narrative_moment` | Generated from the time code, not authored. A readable label only, produced from `origin_event` and `told_at` so it can never drift from the real coordinate | `The first erasure — Skeeter Creek sanded to Red Hills` |
 | `movement` | Which movement this state falls in, where one applies. Deep past with no Mn to file under carries the ruled `backstory` tag (RULED 2026-09-29, BOLO 90 step 7 trial) — see §11 | `backstory` |
@@ -144,10 +145,10 @@ MODIFIED_HEADER:
 
 ### Modified Flags Block
 
-Flags are re-evaluated against the modified values, mirroring the character doc exactly. Setting does not yet have a ruled flag taxonomy the way character has (`KINSHIP_COLLAPSE`, `SHADOW_DENIAL`); this block is reserved and stays empty until one exists. Cite the gap rather than inventing flags to fill it.
+Flags are re-evaluated against the modified values, mirroring the character doc exactly. Setting has a starter flag set, defined in [📐 ssot_03_setting_system.md](📐%20ssot_03_setting_system.md), SETTING FLAGS: SEAM_CROSSING, SCAR_ACCRETED, WOUND_PROMISE_FUSED, UNDERSIDE_SURFACING, LEDGER_DUE and LOAD_BEARING. A story may add its own place flags in its instance file. List a flag here only when its state changes at this checkpoint.
 
 ```yaml
-MODIFIED_FLAGS: {}   # reserved — no place-flag taxonomy ruled yet
+MODIFIED_FLAGS: {}   # no flag changes at this checkpoint
 ```
 
 ### State Narrative Note
@@ -187,7 +188,7 @@ Six rules, mirroring the character doc's six exactly, adapted for places.
 
 **Rule 3: WEATHER_EXPERIENCED is a state-only field, mirroring the character doc's WILL_EFFECTIVE special case.** The base slice's S2 WEATHER holds the permanent climate facts. State diffs may contain a `WEATHER_EXPERIENCED` value — the functional read of weather under current institutional conditions (who gets relief, what it costs). The formula, if any, is authored by the narrative designer, not computed automatically.
 
-**Rule 4: Flag re-evaluation is mandatory once a place-flag taxonomy exists.** Every state diff must re-evaluate all flag trigger conditions against the modified values. Until a taxonomy is ruled (§4, Modified Flags Block), this rule is prospective.
+**Rule 4: Flag re-evaluation is mandatory.** Every state diff must re-evaluate all flag trigger conditions against the modified values. The flags are the SETTING FLAGS starter set in ssot_03, plus any a story adds in its instance file (§4, Modified Flags Block).
 
 **Rule 5: State diffs are versioned.** If a state diff is revised, the old version is archived and a new version replaces it. The base slice is never involved in this revision.
 
@@ -209,7 +210,7 @@ To assemble the complete place at a given moment:
 
 **Step 4:** Apply `MODIFIED_HEADER`. This determines which name is *live* for narration at this moment — the field the scrub test (§11) exists to guarantee is read correctly.
 
-**Step 5:** Apply `MODIFIED_FLAGS`, once any exist.
+**Step 5:** Apply `MODIFIED_FLAGS`.
 
 **Step 6:** Apply any story points logged between the checkpoint found in Step 2 and the requested moment (ssot_08 §5) — single-field ticks that haven't yet been folded into a new checkpoint.
 
@@ -225,7 +226,7 @@ State diffs for a place are produced by five categories of narrative event, mirr
 
 **Signature:** S1 BODY changes (a structure built, damaged, or demolished). S5 SCAR may accrete an entry if the damage is not repaired. S11 VECTOR may shift.
 
-**Example (hypothetical, ⧗):** a wing of DCUS damaged in a hurricane, left unrepaired as a budget signal — S1 changes, S5 gains an entry, S11's collapse trajectory reads one notch further along.
+**Example (hypothetical, not DCUS canon):** a wing of DCUS damaged in a hurricane, left unrepaired as a budget signal — S1 changes, S5 gains an entry, S11's collapse trajectory reads one notch further along.
 
 ### Category 2: Institutional Change Events
 
@@ -266,18 +267,18 @@ A FACTION / NATION CARD ([📐 ssot_03_setting_system.md](📐%20ssot_03_setting
 This document defines place state tracking: the base-slice/diff split, the record format, the diff rules, and the query protocol. It does not own the following, each of which belongs elsewhere:
 
 - **The grid, the time code, and the checkpoint/story-point split** live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) — exactly as they do for character state (ssot_02 v1.2, its own Boundaries section). `told_at` and the time code this document's checkpoints carry are ssot_08's fields, read the same way.
-- **World events** live in [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). Every event, including a rename, is an `event_id` in the fabula's registry; a place checkpoint points to one through `origin_event`, the same field character checkpoints use. Where no fabula record exists yet, `origin_event` is marked ⧗ proposed rather than invented as canon — see §11.
+- **World events** live in [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). Every event, including a rename, is an `event_id` in the fabula's registry; a place checkpoint points to one through `origin_event`, the same field character checkpoints use. Where no fabula record exists yet, `origin_event` carries the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`, never an invented canon id — see §11.
 - **The DCUS eras themselves are not re-authored here as a new timeline.** The fabula's own ruling already settled this (ssot_04_fabula.md, OPEN call 4, RULED 2026-09-24): "the setting doc stays the one authoring surface" for the Skeeter Creek → Red Hills → DCUS lattice; the fabula only cross-references it. This document is additive to that boundary — it gives the lattice its formal checkpoint shape for the first time, still authored in the setting system.
 
 ---
 
-## 11. THE INSTANCE — the DCUS rename lattice
+## 11. THE INSTANCE — the DCUS rename lattice — worked example (phase 2 fills)
 
 The first instance of this architecture, built entirely from existing canon: [📐 ssot_03_setting_system.md](📐%20ssot_03_setting_system.md) THE INSTANCE (base slice, v1.4.1), [_CANON_NODES/delta-coast-ultra-school.md](../../../../_CANON_NODES/delta-coast-ultra-school.md) (the ruling and the fusion table), and [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md) THE WORLD CLOCK, which already reads the lattice as three eras and explicitly declines to re-author them (§10, above).
 
 **A note on direction.** Tori's checkpoints (ssot_04_fabula.md, THE INSTANCE) all move forward from an early moment toward story-present. DCUS's base slice (ssot_03 v1.4.1) is already written at the *current* era — its S4 LAW, S6 ECONOMY, and S9 ALLURE content describes the Administration, the Bishops, and the Feed, all DCUS-era-only facts. The two earlier checkpoints below therefore diff *backward*: they show what the base slice's dynamic layers looked like before they held their current values. This stays legal under Rule 1 — nothing is deleted, each field is modified to its earlier value — but it is a new usage pattern this document is the first to need, flagged here originally; **RULED 2026-09-29 as Rule 7 (§6)** — backward diffs are now legal by rule, not merely an allowed-but-unlabeled usage.
 
-**A note on `origin_event`.** No fabula record exists for any of the three transitions. The fabula's own world clock is explicit: "No calendar date exists in these sources for any of the three transitions; this doc records reach and extent as ranges... and does not invent a year" (ssot_04_fabula.md, THE WORLD CLOCK). All three `origin_event` values below are therefore ⧗ proposed, offered in the fabula's `backstory_<slug>` grammar, not yet entered in the fabula's own registry. **RULED 2026-09-29 (BOLO 90 step 7 trial, "line up the recs"):** the `backstory` movement tag and `backstory_<slug>` event-id grammar are now the rule, not a proposal, for deep pre-M1 history with no Mn ([📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §2 states it too) — the ⧗ on these three values marks only that the fabula's own registry has no entry for them yet, not that the grammar itself is unsettled.
+**A note on `origin_event`.** No fabula record exists for any of the three transitions. The fabula's own world clock is explicit: "No calendar date exists in these sources for any of the three transitions; this doc records reach and extent as ranges... and does not invent a year" (ssot_04_fabula.md, THE WORLD CLOCK). The general rule applies: if no fabula record exists, write the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`; the field is never left blank or invented as canon. All three values below carry `⏸ DCUS rename lattice fill pass (phase 2)` until the fabula pass enters them in its registry. **RULED 2026-09-29 (BOLO 90 step 7 trial, "line up the recs"):** the `backstory` movement tag and `backstory_<slug>` event-id grammar are the rule for deep pre-M1 history with no Mn ([📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §2 states it too). The park marker means only that the fabula's registry has no entry yet. The grammar is settled.
 
 **A note on `movement`.** The fabula's `<movement>_<slug>` grammar and `movement` field assume every event lands in some `Mn`, even a pre-story one (Tori's crash carries `movement: "M1B"` despite a `reach` of "pre-story"). DCUS's founding lattice has no such mapping — it is a century-plus of history with no scene, movement, or reach relative to any Mn. `movement: "backstory"` below carries the ruled tag for exactly this case (RULED 2026-09-29, BOLO 90 step 7 trial): events before M1 take `movement: "backstory"` instead of an `Mn`, with event ids in that stratum reading `backstory_<slug>`.
 
@@ -286,7 +287,7 @@ The first instance of this architecture, built entirely from existing canon: [�
 ```yaml
 place_id: dcus
 state_id: dcus_skeeter_creek_founding
-origin_event: "⧗ backstory_skeeter_creek_founding"   # proposed; no fabula record exists
+origin_event: "backstory_skeeter_creek_founding ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
 told_at: []   # true but offstage; no scene card exists yet to log a time code
 narrative_moment: "The founding — before either erasure"
 movement: "backstory"   # ruled tag for deep pre-story history with no Mn (RULED 2026-09-29) — see note above
@@ -305,7 +306,7 @@ state_diffs:
     aliases_active: ["Skeeter Creek"]
     aliases_legacy: []   # nothing to bury yet — this IS the unburied name
 
-  MODIFIED_FLAGS: {}   # reserved, no taxonomy
+  MODIFIED_FLAGS: {}   # no flag changes recorded; re-evaluate per Rule 4
 
 STATE_NOTE: >
   Before any rename, the place is Skeeter Creek — the founding stratum
@@ -320,7 +321,7 @@ STATE_NOTE: >
 ```yaml
 place_id: dcus
 state_id: dcus_red_hills_rename
-origin_event: "⧗ backstory_red_hills_rename"   # proposed; no fabula record exists
+origin_event: "backstory_red_hills_rename ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
 told_at: []   # true but offstage; Movement 3's forensic mode is expected to surface this
               # (ssot_03 §S10 UNDERSIDE: "the first name under the second") but no scene card
               # exists yet, so no time code can be logged
@@ -339,10 +340,10 @@ state_diffs:
     S8_HABIT: "the alumni-legacy student bloc forms; split faculty loyalties begin under a single ownership line, no Sync-era cohort yet"
       # was the alumni-legacy-vs-Sync-era split in base; here it's the origin of that bloc, not yet the split itself
       # source: delta-coast-ultra-school.md, WHAT FUSED — Red Hills lineage
-    S9_ALLURE: "⧗ old-money prestige draw — a century of private standing, pre-Feed, pre-meritocratic-promise reframing"
+    S9_ALLURE: "⏸ DCUS rename lattice fill pass (phase 2) old-money prestige draw — a century of private standing, pre-Feed, pre-meritocratic-promise reframing"
       # inferred from "100+ year private prestige school" (delta-coast-ultra-school.md);
       # the Feed and the meritocratic-promise framing (base S9) don't exist until the Bishops
-    S10_UNDERSIDE: "⧗ Skeeter Creek sinks from stated name to folk/secret tier — legacy speech may still carry it, but it is no longer the name on record"
+    S10_UNDERSIDE: "⏸ DCUS rename lattice fill pass (phase 2) Skeeter Creek sinks from stated name to folk/secret tier — legacy speech may still carry it, but it is no longer the name on record"
       # inferred from the S5/S10 cross-reference pattern (ssot_03 §S5, §S10); not a direct quote
 
   MODIFIED_HEADER:
@@ -350,7 +351,7 @@ state_diffs:
     aliases_active: ["Red Hills Academy", "The Academy"]
     aliases_legacy: ["Skeeter Creek"]   # buried, still true, no longer live
 
-  MODIFIED_FLAGS: {}   # reserved, no taxonomy
+  MODIFIED_FLAGS: {}   # no flag changes recorded; re-evaluate per Rule 4
 
 STATE_NOTE: >
   The founding name is sanded to Red Hills a century before the Bishops
@@ -365,7 +366,7 @@ STATE_NOTE: >
 ```yaml
 place_id: dcus
 state_id: dcus_bishop_rebrand
-origin_event: "⧗ backstory_dcus_rebrand"   # proposed; no fabula record exists
+origin_event: "backstory_dcus_rebrand ⏸ DCUS rename lattice fill pass (phase 2)"   # no fabula record exists yet
 told_at: []   # true but offstage; the ownership war and the rebrand are referenced across
               # M1-M4 by the base slice itself, but no single scene card logs the moment
               # of acquisition, so no time code can be given
@@ -389,7 +390,7 @@ state_diffs:
     # matches the base slice's own header exactly — restated here because this checkpoint
     # is the event that PRODUCES that header state, not because it differs from it
 
-  MODIFIED_FLAGS: {}   # reserved, no taxonomy
+  MODIFIED_FLAGS: {}   # no flag changes recorded; re-evaluate per Rule 4
 
 STATE_NOTE: >
   The son sells his father's century of Red Hills prestige for spoils, to
@@ -417,5 +418,6 @@ STATE_NOTE: >
 
 | Version | Date | Changes |
 |---|---|---|
-| 1.1.0 | 2026-09-29 | RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). Checkpoint 3 (§11) gets a note: the M2 grief sequence is its first onstage attestation of the Administration's diagnostic, time code pending. `movement: "backstory ⧗"` reworded to `movement: "backstory"` throughout (§4 table, all three checkpoints, the "note on movement" paragraph) — the tag is now ruled, not proposed; `origin_event` values stay ⧗, unchanged, since the fabula's own registry still has no entry for these transitions. §6 gains Rule 7: backward diffs are allowed by rule, not merely an unlabeled usage; §11's "note on direction" updated to point at it. Additive; no field removed. |
-| 1.0.0 | 2026-09-29 | Initial document. BOLO 90 step 3, RULED 2026-09-29 ("Recommendations"): mirrors ssot_02_character_state_architecture v1.2.0 for places — the core principle (static base slice vs dynamic diffs), the per-S-layer static/dynamic table (S5 SCAR accretes, S7 FOUNDING static, header names dynamic), the state record format (`place_id`/`state_id`/`origin_event`/`told_at`/`narrative_moment`/`movement`/`state_version`/`base_slice_version`), the `state_diffs` parent (`MODIFIED_LAYERS`/`MODIFIED_HEADER`/`MODIFIED_FLAGS`), the six diff rules (Rule 1a for S5's append-only accretion, Rule 6 amended to checkpoints only), checkpoints and story points per ssot_08, the query protocol, five state-source categories (construction/damage, institutional change, ownership change, rename/erasure, seasonal/cyclic), a short faction-state section, and boundaries with ssot_08 and the fabula. THE INSTANCE: the DCUS rename lattice as three checkpoints (Skeeter Creek founding → Red Hills rename → DCUS/Bishop rebrand), all three `origin_event` values ⧗ proposed pending a fabula ruling, the 9/24-ruled scrub test stated as a mechanical requirement. |
+| 1.2.0 | 2026-10-04 | RULED 2026-10-04, Chief ("REC"), BOLO 100 setting batch 1. Stamped `module_of: ssot_03_setting_system`. `applies_to` is now all IPs; §11 labeled a worked example (phase 2 fills). §4 `origin_event` gains the general rule: if no fabula record exists, write the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`, never blank, never invented. The three DCUS `origin_event` values and the S9 and S10 checkpoint values are parked as `⏸ DCUS rename lattice fill pass (phase 2)`; the hurricane example is labeled hypothetical. The Modified Flags block and Rule 4 point to the SETTING FLAGS starter set in ssot_03. Proposal-glyph history text reworded. |
+| 1.1.0 | 2026-09-29 | RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). Checkpoint 3 (§11) gets a note: the M2 grief sequence is its first onstage attestation of the Administration's diagnostic, time code pending. `movement` tag reworded to `movement: "backstory"` throughout (§4 table, all three checkpoints, the "note on movement" paragraph) — the tag is now ruled, not proposed; `origin_event` values stay proposed, unchanged, since the fabula's own registry still has no entry for these transitions. §6 gains Rule 7: backward diffs are allowed by rule, not merely an unlabeled usage; §11's "note on direction" updated to point at it. Additive; no field removed. |
+| 1.0.0 | 2026-09-29 | Initial document. BOLO 90 step 3, RULED 2026-09-29 ("Recommendations"): mirrors ssot_02_character_state_architecture v1.2.0 for places — the core principle (static base slice vs dynamic diffs), the per-S-layer static/dynamic table (S5 SCAR accretes, S7 FOUNDING static, header names dynamic), the state record format (`place_id`/`state_id`/`origin_event`/`told_at`/`narrative_moment`/`movement`/`state_version`/`base_slice_version`), the `state_diffs` parent (`MODIFIED_LAYERS`/`MODIFIED_HEADER`/`MODIFIED_FLAGS`), the six diff rules (Rule 1a for S5's append-only accretion, Rule 6 amended to checkpoints only), checkpoints and story points per ssot_08, the query protocol, five state-source categories (construction/damage, institutional change, ownership change, rename/erasure, seasonal/cyclic), a short faction-state section, and boundaries with ssot_08 and the fabula. THE INSTANCE: the DCUS rename lattice as three checkpoints (Skeeter Creek founding → Red Hills rename → DCUS/Bishop rebrand), all three `origin_event` values proposed pending a fabula ruling, the 9/24-ruled scrub test stated as a mechanical requirement. |
