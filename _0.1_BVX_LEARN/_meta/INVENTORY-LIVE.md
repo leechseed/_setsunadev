@@ -2,7 +2,7 @@
 id: BVX-LEARN.inventory-live
 title: "Zotero live-library inventory"
 type: report
-generated: 2026-09-29
+generated: 2026-10-04
 source: "C:\Users\U01_LEECHSEED\Zotero\zotero.sqlite"
 status: BOLO 18 stage 2 - step 1
 ---
@@ -16,8 +16,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | Top-level items | **9126** |
 | With a PDF attachment | 9126 |
 | PDF present on disk | 9035 |
-| Already in catalog.json (BVX id) | 1016 |
-| **New since the Dec-2023 catalog** | **8110** |
+| Already in catalog.json (BVX id) | 1020 |
+| **New since the Dec-2023 catalog** | **8106** |
 | Story-side (CRE + LIT by catalog) | 660 |
 | **Spine-keyed from Chief's tags** | **909** |
 | With PDF annotations | 5 (375 highlights) |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (8110)
+## New since the catalog (8106)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -1823,9 +1823,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | design language types v001 7102023 |  |  |
 |  | Design methods seeds of human futures (Jones, J. Christopher (John Chr |  |  |
 |  | Design Patterns of Successful Role-Playing Games by Whitson John Kirk  |  | 080006 - VIDEO GAME DESIGN |
-|  | Design Systems - A practical guide to creating design languages for di | Alla Kholmatova | 080004 - art & 080005 - design |
 |  | Design to Value The Architecture of Holistic Design and Creative Techn | Mark Bryden, John Dyson, Jaimi |  |
-|  | Designing Interfaces Patterns for Effective Interaction Design | Jenifer Tidwell, Charles Brewe | COMPUTER SCIENCE & WEBDEV |
 |  | designpatternscard |  |  |
 |  | designpatternscard 1 |  |  |
 |  | Destroyer - Class Guide |  |  |
@@ -3597,7 +3595,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Infinium - Dark Obelisk - Berinncorte - Adventure Book |  |  |
 |  | Infinium - Dark Obelisk - Berinncorte - Dramatis Personae & Bestiary |  |  |
 |  | INFJ - Advocate (16personalities premium profile) (16personalities)— |  | 03_CHARACTER |
-|  | Information Graphics A Comprehensive Illustrated Reference Visual Tool | Robert L. Harris |  |
 |  | Initiation: Ancient and Modern | Keizer |  |
 |  | Inkantations - A Sourcebook of Tattoo Magic & Body Art |  |  |
 |  | Inner Sea Bestiary |  |  |
@@ -7513,7 +7510,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Oxford Essential Guide to Writing | Thomas S. Kane | 06_NARRATOR |
 |  | The Penguin Dictionary of Literary Terms and Literary Theory Fifth Edi |  |  |
 | 1989 | The phallic quest: Priapus and masculine inflation | Wyly |  |
-|  | The Photographer’s Eye Graphic Guide Composition and Design for Better | Michael Freeman | 080009 - PHOTOGRAPHY |
 |  | The Pickup Artist The New and Improved Art of Seduction | Mystery |  |
 |  | The Pictorial Key To The Tarot | Waite |  |
 |  | The Plot Thickens 8 Ways to Bring Fic... |  |  |

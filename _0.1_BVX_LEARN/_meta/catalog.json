@@ -4469,7 +4469,7 @@
   "id": "BVX.0294"
  },
  {
-  "t": "Designing Interfaces Patterns for Effective Interaction Design 9781492051961",
+  "t": "Designing Interfaces: Patterns for Effective Interaction Design",
   "a": "Jenifer Tidwell, Charles Brewer, Aynne Valencia",
   "p": "",
   "x": "",
@@ -17305,5 +17305,50 @@
   "trunk": "BLACK",
   "id": "BVX.1136",
   "drop_file": "Morphology of the Folktale (Vladimir Propp, Laurence Scott etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf"
+ },
+ {
+  "t": "Design Systems: A Practical Guide to Creating Design Languages for Digital Products",
+  "a": "Alla Kholmatova",
+  "p": "",
+  "x": "",
+  "src": "zotero",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "DSN"
+  ],
+  "primary": "DSN",
+  "trunk": "BLACK",
+  "id": "BVX.1137"
+ },
+ {
+  "t": "Information Graphics: A Comprehensive Illustrated Reference: Visual Tools for Analyzing, Managing, and Communicating",
+  "a": "Robert L. Harris",
+  "p": "",
+  "x": "",
+  "src": "zotero",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "MSX"
+  ],
+  "primary": "MSX",
+  "trunk": "BLACK",
+  "id": "BVX.1138"
+ },
+ {
+  "t": "The Photographer's Eye Graphic Guide: Composition and Design for Better Digital Photos",
+  "a": "Michael Freeman",
+  "p": "",
+  "x": "",
+  "src": "zotero",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "VIS"
+  ],
+  "primary": "VIS",
+  "trunk": "BLACK",
+  "id": "BVX.1139"
  }
 ]
