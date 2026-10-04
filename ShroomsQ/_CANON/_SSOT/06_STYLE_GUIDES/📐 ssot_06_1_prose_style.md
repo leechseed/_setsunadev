@@ -1,8 +1,8 @@
 ---
 type: ssot_06_style_guides
 category: prose_style
-version: 1.0.0
-last_updated: 2026-09-29
+version: 1.1.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
 status: "canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
 purpose: "06.1 PROSE — the universe-wide prose style guide: how the LEECHSEED stories read on the page. Sibling to 06.2 Documents and 06.3 Pages under 06_STYLE_GUIDES; per-story telling profiles (OXO's, first) are instances of this guide, not replacements for it."
@@ -88,6 +88,10 @@ Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking
 
 **Universal rule (T8 THRESHOLDS): every book in the universe carries a front-matter disclaimer** — fantasy, not a how-to — as its bounded container. This is a paratext rule, not a content rule; the scenes themselves are judged by P3 SATURATION below, never by the disclaimer. A detail earns a place in the front matter the same way it earns a place in a description, per Kennedy's gutter caution (texture_layer T8, [[BVX.0349]]): the disclaimer is one line, not a policy document restated at every book's door.
 
+**The disclaimer, verbatim** (RULED 2026-10-04, Chief: "B recommendation", BOLO 92; draft B over a plain draft and a minimal one). Every book prints exactly this line in its front matter, unchanged:
+
+> Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised.
+
 **P3 SATURATION** (Modern Poetics, [ssot_01_modern_poetics.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md)): sexuality is aesthetic, not genre — woven into the narrative's bloodstream, mastered rather than indulged, earned always. Forbidden: working around it (failure of nerve), spectacle without depth, refusing it outright (refusal of truth).
 
 **⧗ OPEN — Chief's own explicitness register across stories.** P3 states the doctrine; it does not set a page-level dial for how far prose goes before fading to paratext. *Rec:* OXO's own instance as the YA-adjacent default — T9 metalepsis withheld, no direct address, nothing crossed into second person (oxo-telling-profile T9) — with a more explicit register opt-in per IP on that IP's own genre contract, never as a universe default.
@@ -144,9 +148,10 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 2. **✅ Sentence rhythm.** The shelf gives craft claims, not Chief's ear. *Rec:* short-to-medium base gait, stretch licensed only where T4 duration calls for it (Sync-dive, trance, dread).
 3. **✅ Profanity level.** No ceiling or floor is ruled house-wide. *Rec:* no universe ceiling; profanity follows the speaker (their register and L-layers) and the story's T6 register. (CDR correction 2026-09-29: an earlier draft rec called OXO "YA-adjacent"; nothing in canon says so, so that rec was struck.)
 4. **✅ Explicitness register across stories.** P3 SATURATION states the doctrine, not a page-level dial. *Rec:* explicit is allowed by default, written as fantasy first, with the container living outside the story as the front-matter viewer-discretion disclaimer (TS 1:1, soft, Chief 2026-09-29: "it needs to be that fantasy"); a story may dial down per its own genre contract. (CDR correction 2026-09-29: an earlier draft rec made "fade to paratext" the default, which contradicts Chief's TS 1:1 refinement; struck.)
-5. **✅ The disclaimer's exact wording.** TS 1:1's refinement rules that the container lives in front matter, not the wording itself. *Rec:* hold for a dedicated paratext pass (06.2 or 06.3's territory) rather than drafting it inside this prose guide.
+5. **✅ The disclaimer's exact wording.** TS 1:1's refinement rules that the container lives in front matter, not the wording itself. *Rec:* hold for a dedicated paratext pass (06.2 or 06.3's territory) rather than drafting it inside this prose guide. **Wording RULED 2026-10-04** (Chief: "B recommendation"): see §Explicit content & paratext for the verbatim line.
 
 ## Version history
 
+- **1.1.0 · 2026-10-04** — the disclaimer's wording RULED (Chief: "B recommendation", BOLO 92): "Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised." Call 5's hold closed.
 - **1.0.0 · 2026-09-29** — OPEN 1–5 RULED as recommended (Chief, "all right"): past tense + one fixed viewpoint by default · short-to-medium gait, stretched only where pace calls for it · no universe profanity ceiling, it follows the speaker · explicit allowed by default, fantasy first, the container is the front-matter disclaimer (TS 1:1) · the disclaimer wording held for a front-matter pass.
 - **0.1.0 · 2026-09-29** — bootstrap: BOLO 92 RULED ("all recs," after the Zotero pass). Built from the OXO Telling Profile (worked instance), the texture system/layer, Modern Poetics (P3), the medium grammars (M1 PROSE), the Touchstones register (TS 1:1), the theme doc's motifs, and the genre system's cultcore instance; sourced from the BOLO 92 shelf's 06.1 Prose list, held not read. Five ⧗ calls await Chief.
