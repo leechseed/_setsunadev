@@ -3,6 +3,7 @@
 # the workspace edits it through `tracking.py pull` (step 6, RULED 2026-09-29; contract: _tools/bolostatus/work/90/EDIT-CONTRACT.md). Time codes: M · Q · S | bar.beat.tick (ssot_08 §4).
 # ⧗ = proposed, not ruled canon. First rows: the M2 grief trial (_tools/bolostatus/work/90/TRIAL-M2-grief.md).
 # M1 · M4 · M5 · M6 skeleton scenes loaded 2026-09-29 (BOLO 90), lengths ⧗ 16 bars.
+# RULED 2026-10-03 (Chief, "all recommendations"): the backstory events (Narco Republic · south-pole and ocean third impacts), the finish-line arrest, and the M4 · M5 · M6 beats are canon; bar lengths stay ⧗.
 
 story: oxo
 title: OVEREXITOUT · The Outliers
@@ -21,9 +22,9 @@ sequences:
   - {id: "M1 · Q1", label: "The crash and the resolve ⧗"}
   - {id: "M2 · Q1", label: The grief sequence}
   - {id: "M3 · Q2", label: The recovery ⧗}
-  - {id: "M4 · Q1", label: "Student to Noise ⧗"}
-  - {id: "M5 · Q1", label: "The coup company faces the wrong way, on purpose ⧗"}
-  - {id: "M6 · Q1", label: "The Fault Line ⧗"}
+  - {id: "M4 · Q1", label: "Student to Noise"}
+  - {id: "M5 · Q1", label: "The coup company faces the wrong way, on purpose"}
+  - {id: "M6 · Q1", label: "The Fault Line"}
 
 # told order: each scene carries its meter (time signature, default 4/4) and its fabula event
 scenes:
@@ -33,9 +34,9 @@ scenes:
   - {mv: M2, q: Q1, s: S03, sig: 4/4, bars: 12, label: "Row 9 · first Sync verified", event: m2_first_sync_verified, card: _CANON_NODES/oxo-scene-card-M2-row9.md}
   - {mv: M3, q: Q2, s: S01, sig: 4/4, bars: 16, label: "The search · by hand ⧗", event: m3_underground_search}
   - {mv: M3, q: Q2, s: S02, sig: 4/4, bars: 10, label: "Crash analepsis (flashback)", event: m1b_crash_jebb_death, card: _CANON_NODES/oxo-scene-card-M3-crash-analepsis.md}
-  - {mv: M4, q: Q1, s: S01, sig: 4/4, bars: 16, label: "Student to Noise ⧗", event: m4_critical_error_reclassification, card: _CANON_NODES/oxo-scene-card-M4-skeleton.md}
-  - {mv: M5, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The coup company faces the wrong way, on purpose ⧗", event: m5_diaspora_forms, card: _CANON_NODES/oxo-scene-card-M5-skeleton.md}
-  - {mv: M6, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The Fault Line ⧗", event: m6_fault_line_collapse, card: _CANON_NODES/oxo-scene-card-M6-skeleton.md}
+  - {mv: M4, q: Q1, s: S01, sig: 4/4, bars: 16, label: "Student to Noise", event: m4_critical_error_reclassification, card: _CANON_NODES/oxo-scene-card-M4-skeleton.md}
+  - {mv: M5, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The coup company faces the wrong way, on purpose", event: m5_diaspora_forms, card: _CANON_NODES/oxo-scene-card-M5-skeleton.md}
+  - {mv: M6, q: Q1, s: S01, sig: 4/4, bars: 16, label: "The Fault Line", event: m6_fault_line_collapse, card: _CANON_NODES/oxo-scene-card-M6-skeleton.md}
 
 # story points: one field changing at one time code (ssot_08 §5); values step and hold unless ramp
 story_points:
@@ -125,15 +126,15 @@ world:
   - {id: backstory_skeeter_creek_founding, m: backstory, label: Skeeter Creek founded, dcus_name: Skeeter Creek}
   - {id: backstory_red_hills_rename, m: backstory, label: Renamed Red Hills, dcus_name: Red Hills Academy}
   - {id: backstory_moon_severance, m: backstory, label: "The Moon Severance: the Moon nukes orbit into a Kessler cascade (2099, era 1)"}
-  - {id: backstory_narco_republic_rises, m: backstory, label: "The Narco Republic rises ⧗ (era 1)"}
+  - {id: backstory_narco_republic_rises, m: backstory, label: "The Narco Republic rises (era 1)"}
   - {id: backstory_dcus_rebrand, m: backstory, label: "Bishops rebrand: DCUS", dcus_name: DCUS}
-  - {id: backstory_south_pole_third_impact, m: backstory, label: "The south-pole 3rd impact wakes the Kudzu ⧗ (era 2)"}
-  - {id: backstory_ocean_third_impact, m: backstory, label: "The ocean 3rd impact: the Atlantic nexus ⧗ (era 2, paired with the south pole)"}
-  - {id: m1b_race_arrest, m: M1, label: "The finish-line arrest ⧗ (before the crash)"}
+  - {id: backstory_south_pole_third_impact, m: backstory, label: "The south-pole 3rd impact wakes the Kudzu (era 2)"}
+  - {id: backstory_ocean_third_impact, m: backstory, label: "The ocean 3rd impact: the Atlantic nexus (era 2, paired with the south pole)"}
+  - {id: m1b_race_arrest, m: M1, label: "The finish-line arrest (before the crash)"}
   - {id: m1b_crash_jebb_death, m: M1, label: "The crash · Jebb dies"}
   - {id: m2_grief_outbursts, m: M2, label: Grief outbursts (repeat)}
   - {id: m2_first_sync_verified, m: M2, label: First Sync verified}
   - {id: m3_underground_search, m: M3, label: The underground search}
-  - {id: m4_critical_error_reclassification, m: M4, label: "Critical Error reclassification ⧗"}
-  - {id: m5_diaspora_forms, m: M5, label: "The Diaspora forms ⧗"}
-  - {id: m6_fault_line_collapse, m: M6, label: "The Fault Line collapse ⧗"}
+  - {id: m4_critical_error_reclassification, m: M4, label: "Critical Error reclassification"}
+  - {id: m5_diaspora_forms, m: M5, label: "The Diaspora forms"}
+  - {id: m6_fault_line_collapse, m: M6, label: "The Fault Line collapse"}
