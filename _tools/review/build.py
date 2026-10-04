@@ -480,6 +480,7 @@ def parse_main(text):
         pre = re.search(r"predate (\d+\.\d+\.\d+)", "\n".join(lines[rng_t[0]:rng_t[1]]))
         res["tag_since"] = pre.group(1) if pre else None
         res["tag_line"] = rng_t[0]
+        res["tag_every"] = "every field" in " ".join(lines[max(0, rng_t[0] - 2):rng_t[0] + 2]).lower()
 
     # tiers
     rng_3 = section(lines, hs, r"Three-Tier")
@@ -714,7 +715,9 @@ def main():
             d["role"] = "doc"
 
     # ---- fields
-    since = sv(P.get("tag_since") or "2.1.0")
+    # 10/4 (BOLO 100 FU-1): a table titled "every field" means every field must carry a tag, whatever version added it
+    every = bool(P.get("tag_every"))
+    since = sv("0.0.0") if every else sv(P.get("tag_since") or "2.1.0")
     fields = []
     for name, f in P["fields"].items():
         intro = first_seen.get(name, "")
@@ -852,7 +855,7 @@ def main():
     need = [f for f in fields if f["needs_tag"]]
     untagged = [f for f in need if not f["tag"]]
     ev = [{"k": f["name"], "v": f"{f['intro']} · " + (f["tag"] or "UNTAGGED"), "ok": bool(f["tag"])} for f in sorted(need, key=lambda f: (bool(f["tag"]), f["intro"], f["name"]))]
-    checks.append({"label": f"Every field added {sv_str(since)}+ carries a static/dynamic tag", "ok": not untagged, "ev": ev,
+    checks.append({"label": ("Every field carries a static/dynamic/derived tag" if P.get("tag_every") else f"Every field added {sv_str(since)}+ carries a static/dynamic tag"), "ok": not untagged, "ev": ev,
                    "sum": f"{len(need) - len(untagged)} of {len(need)} tagged" + (f" · untagged: {', '.join(f['name'] for f in untagged)}" if untagged else "")
                           + f" · first-seen from {len(hist_versions)} committed versions ({', '.join(hist_versions)})"})
     ev = [{"k": f"{L['id']} {L['name']}", "v": f"{len(L['src_ids']) + len(L['src_links'])} cited", "ok": (len(L['src_ids']) + len(L['src_links'])) > 0} for L in layers]
