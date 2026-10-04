@@ -1,0 +1,471 @@
+{
+ "bolo": {
+  "n": 89,
+  "title": "The trope system: one trope layer across every system, not just plot",
+  "trunk": "BLACK",
+  "issued": "2026-09-29",
+  "asof": "2026-10-03",
+  "s": "open",
+  "status": "🟢 **WAVE B FETCHING 10/03** — register v0.4.0 holds 7,070 keyed tropes; wave A (2,122 tropes) is keyed and RANGE-clean; wave B (1,632 theme and style tropes) is being fetched at 1 request a second, keying behind it. Open: 380 tropes with no definition, and the plot trope graph as a consumer.",
+  "decider": "HOTLINE ACTUAL",
+  "feeds": "the plot trope graph (`ssot_04_trope_graph.md`, the first consumer) · the TROPES sections in the character, genre, theme and setting systems · the 01 NARRATIVE_FRAMEWORKS register",
+  "related": [
+   {
+    "n": 77,
+    "why": "the plot system; its trope graph keys 1,034 TV Tropes plot tropes onto 135 plot nodes and is the first consumer of this register, and the formation that keyed it is the one this BOLO reuses"
+   },
+   {
+    "n": 87,
+    "why": "the setting shelf; the setting slice of the register (S1–S12) keys into the setting system it built"
+   },
+   {
+    "n": 88,
+    "why": "the sexuality shelf; sexuality tropes are keyed onto the character layers, and its character-layer work (L9) reads the register's sexuality tropes"
+   },
+   {
+    "n": 81,
+    "why": "the invariants layer that runs through every system; named on the row as a sibling system-wide layer"
+   }
+  ],
+  "home": "BOLO.md · row 89",
+  "card": "none",
+  "version": "v0.1 · DOPE SHEET"
+ },
+ "mantra": [
+  {
+   "k": "speed",
+   "w": "Speed",
+   "line": "The register went from a spoken question to 4,948 keyed tropes in one day (9/29), and wave A's 2,122 were keyed in one run on 10/03."
+  },
+  {
+   "k": "focus",
+   "w": "Focus",
+   "line": "One trope record, many domains: name and one-line definition only, keyed into each system's own layers. No second register per system."
+  },
+  {
+   "k": "boldness",
+   "w": "Boldness",
+   "line": "The first pass dumped 797 setting tropes on one layer and 336 texture tropes on another. The fan-in caught it and the batches were re-keyed rather than shipped."
+  }
+ ],
+ "frago": {
+  "mission": "Build one cross-domain TV Tropes register in 01 NARRATIVE_FRAMEWORKS, **in order to** let every system (character, setting, theme, genre, sexuality, plot) key into the same trope layer.",
+  "order": "**Nothing owed by you. Wave B keys when its fetch lands (about 30 minutes); say \"hold 89\" to stop it.**",
+  "default": "Silence: wave B keys on the wave A rules, RANGE runs, register goes to v0.5.0.",
+  "calls": [
+   {
+    "q": "89-A · the shape (four recs)",
+    "options": "register in 01 · name + one-line def + domains · fetch by script · key in the BOLO 77 formation",
+    "default": "all recs",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29, Chief: \"I'll recommend.\""
+   },
+   {
+    "q": "89-B · keying",
+    "options": "key each trope to a layer of its own domain's slice",
+    "default": "rec",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29, Chief: \"all recommendations.\""
+   },
+   {
+    "q": "89-C · waves A and B (the new indexes)",
+    "options": "texture · tracking · OXO settings · war (A) · theme + style (B)",
+    "default": "all recs",
+    "s": "ruled",
+    "ruling": "RULED 2026-09-29 (\"all recs\"); fired 2026-10-03 (\"get BOLO 89 all approved running\")."
+   },
+   {
+    "q": "89-D · wave B keying rules",
+    "options": "the wave A rules + the spread check at the fan-in · a sonnet pass instead of haiku",
+    "default": "wave A rules + spread check (rec)",
+    "s": "open"
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "S",
+   "name": "Situation",
+   "kind": "list",
+   "plain": "Where the trope system stands: what Chief asked on 9/29, what existed before, and how far the register has grown.",
+   "strand": {
+    "last": "The plot system had a trope graph, but it covered only the Plot indexes of TV Tropes. Character, setting, theme, genre and sexuality had no trope layer at all.",
+    "plan": "Build one trope register that every system can key into, fetched by script from TV Tropes, keyed by specialists in batches, and checked by a script at the end of each batch.",
+    "you": "You asked on 9/29 for one trope layer across everything, ruled all four recs, and have since said go on each wave. On 10/03 you ordered BOLO 89 \"all approved running\".",
+    "next": "Wave B (theme and style) finishes fetching, then gets keyed and checked."
+   },
+   "groups": [
+    {
+     "label": "The transmission · 9/29, Chief's words",
+     "items": [
+      {
+       "t": "\"do we have one for tropes in general to apply through all of these? … a whole one for tropes using TV Tropes … overall, so it's able to be applied for everything like sexuality.\"",
+       "s": "ruled"
+      },
+      {
+       "t": "\"I'll recommend\" — all four recs ruled: the register lives in 01 NARRATIVE_FRAMEWORKS · each trope carries its name, a one-line definition and a `domains:` list · the tropes are fetched by script · keying runs in the BOLO 77 formation.",
+       "s": "ruled"
+      },
+      {
+       "t": "\"all recommendations\" — the keying call: each trope keys to a layer of its own domain's slice (character L1–L12 · setting S1–S12 · genre G1–G12 · sexuality onto the character layers · theme onto the four rails R1–R4, or null).",
+       "s": "ruled"
+      },
+      {
+       "t": "\"Recommendations\" — the theme sub-index pass (Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows).",
+       "s": "ruled"
+      },
+      {
+       "t": "\"can we do more development and more pulls on tvtropes.com\" — a second probe of candidate indexes, then all recs ruled.",
+       "s": "ruled"
+      },
+      {
+       "t": "\"get BOLO 89 all approved running\" (10/03) — wave A keyed and wave B fetching.",
+       "s": "ruled"
+      }
+     ]
+    },
+    {
+     "label": "What exists already",
+     "items": [
+      {
+       "t": "The plot trope graph (`ssot_04_trope_graph.md`, v0.1.3) keys 1,034 TV Tropes tropes, but only from the Plot indexes, onto 135 plot nodes.",
+       "s": "done"
+      },
+      {
+       "t": "The register `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md` is at v0.4.0 with 7,070 keyed tropes; its data is `_tools/tropes/data/domains/register.json` and its pull list is `LAYERS.md`.",
+       "s": "done"
+      },
+      {
+       "t": "TROPES sections were added to the character, genre, theme and setting systems.",
+       "s": "done"
+      },
+      {
+       "t": "Public-repo rule stands: names and one-line definitions only.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "What the record says",
+     "items": [
+      {
+       "t": "Index probe 9/29: character = CharactersAsDevice 1,447 + CharacterizationTropes 122 + ArchetypalCharacter 104 · setting = Settings 650 · genre = Genres 79 + GenreTropes 26 · sexuality = SexTropes 441 · theme = TopicalTropes, an index of indexes. About 3,000 tropes before de-duplication.",
+       "s": "done"
+      },
+      {
+       "t": "Fetch 9/29: 3,094 unique tropes (character 1,624 · setting 643 · sexuality 445 · theme 326 · genre 105; 49 in more than one domain; 97 overlap the plot pull). 3,093 of 3,094 links fetched. Theme was thin because Death, Family, Betrayal and Revenge list sub-indexes, not tropes, and FateAndProphecy returns 404.",
+       "s": "done"
+      },
+      {
+       "t": "Register v0.1.0 (9/29): 3,094 keyed (high 2,193 · medium 243 · low 658); the script reviewer found 5 problems, all fixed to 0.",
+       "s": "done"
+      },
+      {
+       "t": "Theme pass (9/29): register v0.2.0 at 4,948 tropes; theme R1 274 · R2 560 · R3 321 · R4 386 · null 797.",
+       "s": "done"
+      },
+      {
+       "t": "Low-confidence pass (9/29): 952 definitions fetched and re-keyed; register v0.3.0 (high 3,919 · medium 797 · low 232); character nulls fell from 348 to 94.",
+       "s": "done"
+      },
+      {
+       "t": "Probe 9/29 (`_tools/tropes/probe.py`) ran 60 candidate indexes and found about 4,000 tropes new to the register: texture, time, OXO settings (religion, school, cyberpunk, vehicles, drugs), war, theme (love, power, identity, emotion) and style.",
+       "s": "done"
+      },
+      {
+       "t": "Wave A keyed 10/03: 2,122 tropes on 12 batches, script check at 0 after fixes. The first pass put 797 setting tropes on S1 and 336 texture tropes on T7; the fan-in caught it and they were re-keyed (S1 now 366 · T7 25 · texture null 318, which are plot-content tropes the index carries).",
+       "s": "done"
+      },
+      {
+       "t": "Open: 380 tropes with no definition, and wiring the plot trope graph as a consumer of the register.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "name": "Mission",
+   "kind": "mission",
+   "plain": "A mission is a task plus the reason for it. This one's reason: the plot system had tropes, but character, setting, theme, genre, sexuality, texture and tracking had none, so no layer could pull a known pattern.",
+   "strand": {
+    "last": "Wave A keyed on 10/3: 2,122 new tropes, re-keyed twice after the first pass dumped them on two default layers.",
+    "plan": "One register in 01 that every system keys into; fetch by script, key by Payload Specialists, check by RANGE the script.",
+    "you": "You said \"get BOLO 89 all approved running\" on 10/3. Wave A landed; wave B is fetching.",
+    "next": "Wave B fetch finishes, then keying for theme and style, then RANGE and register v0.5.0."
+   },
+   "task": "Build one cross-domain trope register under every system,",
+   "intent": "in order to give every layer of every system (character, setting, genre, sexuality, theme, texture, tracking, style) a keyed pull list of known patterns, with the plot trope graph as the first consumer.",
+   "spoken": "\"Do we have one for tropes in general to apply through all of these? … a whole one for tropes using TV Tropes … overall, so it's able to be applied for everything like sexuality.\" · \"Can we do more development and more pulls on tvtropes.com\" · \"Get BOLO 89 all approved running.\"",
+   "endstate": [
+    "One register (`register.json` + `LAYERS.md`): every trope with name, one-line definition, domains, one key per domain, and confidence.",
+    "Every system's TROPES section points at its own layer list.",
+    "Waves A and B keyed and RANGE-clean; no default-dumping on a single layer.",
+    "Names and one-line definitions only, never page text (the repo is public)."
+   ],
+   "groups": []
+  },
+  {
+   "id": "E",
+   "name": "Execution",
+   "kind": "phases",
+   "plain": "Fetch the tropes by script, key them in batches with a script check at the end of each, then fold the result into the register and the systems.",
+   "strand": {
+    "last": "Wave A is keyed and checked: 2,122 tropes, register v0.4.0.",
+    "plan": "Wave B pulls the theme and style indexes at one request a second, then specialists key them in batches and the script checks the result.",
+    "you": "You ordered everything approved and running on 10/03.",
+    "next": "Wave B finishes fetching; keying and the check follow."
+   },
+   "main_effort": "Wave B: fetch, then key, the theme and style tropes.",
+   "phases": [
+    {
+     "n": 0,
+     "t": "**Rulings and fetch.** Four recs ruled; `fetch.py --domains` pulled 3,094 tropes into `_tools/tropes/data/domains/` (3,093 of 3,094 links).",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 1,
+     "t": "**First keying and register v0.1.0.** 16 batches of about 194, three specialists on disjoint batches, script check `_tools/bolostatus/work/89/range.py`; 3,094 keyed, 5 findings fixed to 0.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 2,
+     "t": "**Theme sub-index pass, register v0.2.0.** 4,948 tropes; 2,012 needed a theme key, in 9 batches (T1–T9) with two specialists keying; TROPES sections added to character, genre, theme and setting.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 3,
+     "t": "**Low-confidence second pass, register v0.3.0.** 952 definitions fetched with `fetch_defs.py` and re-keyed (R1–R6); script check 0.",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 4,
+     "t": "**Probe of 60 more indexes.** `_tools/tropes/probe.py` found about 4,000 new tropes; all recs ruled; seeds added to `fetch.py` and new domains to `build_register.py` (texture T1–T12 · tracking world_clock/told_order/grid/story_point/cable/tempo · style 06.1/06.3).",
+     "s": "done",
+     "when": "9/29"
+    },
+    {
+     "n": 5,
+     "t": "**Wave A keyed.** 2,122 tropes on 12 batches; script check 0 after fixes; the S1 and T7 pile-ups re-keyed (AR1–AR6, then AT1); register v0.4.0, 7,070 keyed.",
+     "s": "done",
+     "when": "10/03"
+    },
+    {
+     "n": 6,
+     "t": "**Wave B fetching.** Love · Power · Emotion · Identity (theme) plus Language · Costume · Graphical · Lighting · Amazing Technicolor (style): 1,632 tropes at 1 request a second; keying runs behind the fetch.",
+     "s": "hot",
+     "when": "10/03"
+    },
+    {
+     "n": 7,
+     "t": "**Close the open items.** Definitions for the 380 tropes that have none, and the plot trope graph wired as a consumer of the register. The 292 plot tropes held from BOLO 77 are re-keyed in the same run.",
+     "s": "open",
+     "when": "owed"
+    }
+   ],
+   "coord": [],
+   "running": [
+    "Wave B fetch of 1,632 theme and style tropes at 1 request a second; keying behind it."
+   ],
+   "groups": []
+  },
+  {
+   "id": "A",
+   "name": "Admin & Logistics",
+   "kind": "files",
+   "plain": "The register, its data, and the tools that fetch, key and check it.",
+   "strand": {
+    "last": "Register v0.4.0 landed with wave A.",
+    "plan": "Fetch and key into the same register, check each batch by script, bump the version when a wave lands.",
+    "you": "Public-repo rule applies: names and one-line definitions only.",
+    "next": "Wave B lands as the next register bump."
+   },
+   "files": [
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md",
+     "what": "the cross-domain trope register, v0.4.0",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/data/domains/register.json",
+     "what": "the register data",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/data/domains/LAYERS.md",
+     "what": "the pull list",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/fetch.py",
+     "what": "the fetch script; `--domains` pulls the cross-domain indexes, seeds added for wave A",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/fetch_defs.py",
+     "what": "fetches the one-line definitions for tropes that have none",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/build_register.py",
+     "what": "builds the register; new domains added for wave A",
+     "s": "done"
+    },
+    {
+     "path": "_tools/tropes/probe.py",
+     "what": "probe that ran 60 candidate indexes on 9/29",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/89/range.py",
+     "what": "the script reviewer that checks each keying batch",
+     "s": "done"
+    },
+    {
+     "path": "ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md",
+     "what": "the plot trope graph, the first consumer of the register",
+     "s": "open"
+    }
+   ],
+   "cost": [
+    {
+     "k": "register",
+     "v": "7,070 keyed tropes at v0.4.0"
+    },
+    {
+     "k": "wave A",
+     "v": "2,122 tropes on 12 batches, script check 0 after fixes"
+    },
+    {
+     "k": "wave B",
+     "v": "1,632 tropes, fetched at 1 request a second"
+    },
+    {
+     "k": "confidence at v0.3.0",
+     "v": "high 3,919 · medium 797 · low 232 (of 4,948)"
+    }
+   ],
+   "groups": []
+  },
+  {
+   "id": "C",
+   "name": "Command & Signal",
+   "kind": "list",
+   "plain": "Who calls what on BOLO 89. Every scope call is ruled; the work left is fetch and keying.",
+   "strand": {
+    "last": "All four recs ruled 9/29; wave A and B seeds ruled 'all recs' the same day.",
+    "plan": "You rule scope; Claude fetches, keys and checks with a script, never a checker agent.",
+    "you": "You are the only decider on scope and on which indexes join.",
+    "next": "One call below: whether wave B keys under the same rules once it lands."
+   },
+   "groups": [
+    {
+     "label": "Who decides",
+     "items": [
+      {
+       "t": "**ACTUAL**: scope, which TV Tropes indexes join, what a domain means. **Claude**: the fetch, the keys, the checks; adds no trope the index does not list.",
+       "s": "held"
+      }
+     ]
+    },
+    {
+     "label": "The gate",
+     "items": [
+      {
+       "t": "**RANGE is a script.** `_tools/bolostatus/work/89/range.py` checks every keys file against its batch: each slug once, a legal key per domain, a legal confidence. A spread check (no layer swallowing a domain) is done by the main line at the fan-in.",
+       "s": "open"
+      }
+     ]
+    },
+    {
+     "label": "Signal",
+     "items": [
+      {
+       "t": "Register doc version bumps on every keyed wave; BOLO row 89 carries the status; this sheet takes FRAGOs.",
+       "s": "open"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "Log",
+   "kind": "log",
+   "plain": "Every transmission on the trope system, from the first question to wave B fetching.",
+   "strand": {
+    "last": "Chief ordered BOLO 89 all approved and running on 10/03; wave A landed and wave B started fetching.",
+    "plan": "One entry per transmission.",
+    "you": "Six of the entries are yours; the rest are results reported back.",
+    "next": "Wave B keying and the check."
+   },
+   "entries": [
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"do we have one for tropes in general to apply through all of these? … a whole one for tropes using TV Tropes … overall, so it's able to be applied for everything like sexuality.\""
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"I'll recommend\" — all four recs: register in 01 · name, one-line definition and `domains:` · fetch by script · key in the BOLO 77 formation."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Index probe and fetch: 3,094 unique tropes (character 1,624 · setting 643 · sexuality 445 · theme 326 · genre 105); 3,093 of 3,094 links fetched."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"all recommendations\" — keying call: each trope keys to a layer of its own domain's slice."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Keying deployed (16 batches, three specialists, script check); register v0.1.0 up, 3,094 keyed, 5 findings fixed to 0."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"Recommendations\" — theme sub-index pass on eight sub-indexes."
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Theme pass and low-confidence pass done: register v0.2.0 (4,948 tropes) then v0.3.0 (952 definitions re-keyed); TROPES sections added to character, genre, theme and setting."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "\"can we do more development and more pulls on tvtropes.com\""
+    },
+    {
+     "when": "9/29",
+     "who": "Claude",
+     "t": "Probe of 60 candidate indexes found about 4,000 new tropes; calls put out with recs."
+    },
+    {
+     "when": "9/29",
+     "who": "Chief",
+     "t": "All recs ruled; wave A fired, wave B queued behind it."
+    },
+    {
+     "when": "10/03",
+     "who": "Chief",
+     "t": "\"get BOLO 89 all approved running\""
+    },
+    {
+     "when": "10/03",
+     "who": "Claude",
+     "t": "Wave A keyed: 2,122 tropes on 12 batches, script check 0 after fixes (S1 and T7 pile-ups caught and re-keyed); register v0.4.0, 7,070 keyed. Wave B fetching: 1,632 tropes at 1 request a second."
+    }
+   ]
+  }
+ ]
+}

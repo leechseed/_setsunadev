@@ -1,8 +1,8 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 0.3.1
-last_updated: 2026-09-29
+version: 0.4.0
+last_updated: 2026-10-03
 applies_to: [OVEREXITOUT, all future IPs]
 status: "RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
 purpose: "THE TROPE REGISTER: one trope layer under every system. 4,948 TV Tropes tropes, each tagged with the domains it serves and keyed to a layer of that domain's slice, so any layer can pull its tropes."
@@ -31,19 +31,21 @@ conf:    high | medium | low
 links:   [...]                          # the trope's Main/ links, the raw edges
 ```
 
-**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md), or null.
+**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md), or null. **Added 0.4.0 (wave A, ruled 9/29 "all recs"):** texture → T1–T12 of the [texture system](📐%20ssot_01_texture_system.md) · tracking → the parts of the [tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo.
 
-## THE COUNTS (2026-09-29)
+## THE COUNTS (2026-10-03, v0.4.0)
 
-**4,948 tropes**, all keyed (v0.2.0, after the theme sub-index pass) · confidence: high 3,919 · medium 797 · low 232 (v0.3.0, after the re-key on real definitions) · 207 serve more than one domain · 380 still have no definition.
+**7,070 tropes keyed** (wave A added 2,122: texture, tracking, and OXO's setting indexes) · **1,630 listed, not yet keyed** (wave B, fetching: theme + style) · 8,700 in the index.
 
 | Domain (index) | Keyed by layer |
 |---|---|
 | **character** (Characters As Device · Characterization · Archetypal Character) | L1 316 · L2 59 · L3 198 · L4 54 · L5 37 · L6 63 · L7 70 · L8 47 · L9 60 · L10 85 · L11 56 · **L12 485** · null 94 |
 | **sexuality** (Sex Tropes · Queer Romance) | **L9 430** · L5 10 · L2 2 · L1 1 · L7 1 · null 1 |
-| **setting** (Settings) | **S1 282** · S2 4 · S3 27 · S4 45 · S5 25 · S6 14 · S7 32 · S8 40 · S9 29 · S10 41 · S11 62 · S12 18 · null 24 |
+| **setting** (Settings + wave A: Religion · School · Motor Vehicle · Cyberpunk · Drugs · Military and Warfare) | **S1 366** · S2 33 · S3 52 · **S4 339** · S5 67 · S6 118 · S7 58 · **S8 278** · S9 38 · S10 105 · S11 102 · S12 21 · null 475 |
 | **genre** (Genres · Genre Tropes) | **G1 66** · G2 8 · G3 5 · G4 3 · G5 6 · G6 2 · G8 3 · G9 3 · G10 1 · G11 3 · null 5 |
 | **theme** (Truth and Lies · Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) | R1 274 · **R2 566** · R3 324 · R4 383 · null 791 |
+| **texture** (wave A: Narrative Devices · Framing Device · Narrative Tropes · Point of View) | T1 39 · T2 46 · T3 35 · T4 32 · T5 13 · T6 37 · T7 25 · T8 21 · T9 39 · T10 7 · T11 19 · T12 11 · **null 318** |
+| **tracking** (wave A: Time Tropes) | world_clock 49 · grid 43 · tempo 6 · told_order 4 · null 9 |
 
 **The pull list:** [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) lists every layer with every trope keyed to it.
 
@@ -76,11 +78,15 @@ No character is changed by this ruling — it names a pattern, not a fix.
 
 ## OPEN
 
+- **Wave B — FETCHING 10/03.** Love · Power · Emotion · Identity (theme) and Language · Costume · Graphical · Lighting · Amazing Technicolor (style → 06.1 / 06.3). Keying follows the fetch.
+
 - **Theme sub-index pass — DONE 0.2.0.**
 - **The low-confidence pass — DONE 0.3.0.** 952 definitions fetched (first sentence only), re-keyed by two PS; low confidence fell 707 → 232. 380 tropes still have no definition (their pages open without a plain first paragraph).
 - **Consumers** — each system gets a TROPES section pointing at its layer lists (character, setting, genre, theme); the tracking system's story points can carry a trope id ([ssot_08](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)).
 
 ## Version history
+
+- **0.4.0 — 2026-10-03.** Wave A keyed: 2,122 tropes (texture 641 · tracking 111 · setting 1,412, some multi-domain) on 12 batches (A1–A12) by PS; RANGE caught a broken file, two misspelled slugs and five illegal keys → 0. **The default-dump caught at the fan-in:** the first pass put 797 setting tropes on S1 and 336 texture tropes on T7; a re-key on six batches (AR1–AR6) with sharper rules brought S1 to 366 overall and T7 to 25, and a third pass on the 281 texture nulls (AT1) confirmed most are plot content the Narrative Tropes index carries, not the telling (texture null 318). Keys for texture and tracking added to `work/89/keys.md`; `range.py` and `build_register.py` learn them.
 
 - **0.3.1 — 2026-09-29 (BOLO 91).** Command-local record added: the SIGNATURE WOUND (a sibling dies in a vehicle disaster), Chief's own recurring pattern kept on purpose across worlds (Tori/Jebb in OXO, Mayari/brother+father in LEECHSEED); flagged for attachment to a matching TV Tropes entry (Dead Sibling / Survivor Guilt candidates) in `register.json` on the next data pass. No character changed.
 - **0.3.0 — 2026-09-29.** The low-confidence pass: `fetch_defs.py` pulled 952 first-sentence definitions; two PS re-keyed them on 6 batches (R1–R6), RANGE 0 findings; character nulls 348 → 94, low confidence 707 → 232.

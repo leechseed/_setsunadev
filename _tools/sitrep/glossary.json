@@ -1143,5 +1143,11 @@
   "k": "item",
   "d": "Vignettes: short world pieces as their own category, and the actor lane in the performer register. Captured 10/1.",
   "w": "BOLO.md #96 · DOPE SHEET 96"
+ },
+ "bolo89": {
+  "t": "BOLO 89",
+  "k": "item",
+  "d": "The trope system: one TV Tropes register under every system (character, setting, genre, sexuality, theme, texture, tracking, style), each trope keyed to a layer of its domain.",
+  "w": "BOLO.md #89 · _tools/tropes/ · _tools/bolostatus/work/89/ · ssot_01_trope_register.md · DOPE SHEET 89 https://claude.ai/artifact/SgBz3sQpuynWYgP7M6WaVT"
  }
 }
