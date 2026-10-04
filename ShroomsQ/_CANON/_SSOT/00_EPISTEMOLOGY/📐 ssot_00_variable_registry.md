@@ -1059,7 +1059,7 @@ Layer paragraph: slice, L9 EROS. `desire_vector` is the L9 parent; its group, fa
 |`T3.EROS.consent_posture`|object|N/A|Dynamic|authored|Distinct from `erotic_safety_precondition`|`scope`, `redefended_per_scene`, `enthusiasm_standard`, `precommitments`, `veto_points`, `limits{hard,soft}`, `recall`, `negotiation`, `signals`, `debrief`, and a consent model.|
 |`T3.EROS.client_script`|enum|N/A|Dynamic|authored|Staged or paid intimacy|The scripted to spontaneous axis. Revisable mid-scene.|
 |`T3.EROS.signal_fluency`|enum|N/A|Dynamic|authored|Contextual|`{fluent, functional, illiterate}`.|
-|`T3.EROS.exposure_shame`|int|SC-12|Dynamic|authored|`DRV.truth_exposure_index` via the `shame_index` alias|Plus `direction` and `coping_style`. The slice text says 0 to 10. This registry holds SC-12 to match `shame_index`.|
+|`T3.EROS.exposure_shame`|int|SC-12|Dynamic|authored|`DRV.truth_exposure_index` via the `shame_index` alias|Plus `direction` and `coping_style`. Slice 3.3.2 runs it on SC-12 to match `shame_index`.|
 |`T3.EROS.role_shame`|int|SC-12|Dynamic|authored|Contextual|Plus `target`: erection, orgasm, pretense, receiving, initiative, femininity, other. Same SC-12 as its sibling.|
 |`T3.EROS.erotic_safety_precondition_scope`|enum|N/A|Dynamic|authored|Contextual|`{internal, external}`.|
 |`T3.EROS.risk_role`|enum|N/A|Dynamic|authored|Contextual|`{precondition, spark, trust_token}`. Reads `erotic_safety_precondition`.|
@@ -1193,9 +1193,9 @@ All derived stats compute in internal (0-60) space per Base 60 SSOT.
 |Field|Value|
 |---|---|
 |Canonical Path|`DRV.expressive_range`|
-|Formula (display)|`10 - T3.EROS.armor_index`|
+|Formula (display)|`12 - T3.EROS.armor_index`|
 |Input Constraints|None|
-|Output Space|Display `10 - armor_index`. The internal mapping follows `armor_index` at SC-12. The formula constant belongs to the slice. A value of 11 or 12 gives a negative result, and the slice has not ruled on it.|
+|Output Space|Display `12 - armor_index`, 0 to 12. The internal mapping follows `armor_index` at SC-12. Slice 3.3.2 ruled the constant (Chief, 10/4: "Rick").|
 |Source|`computed`|
 |Behavior|The deliberate-signal metric — `DRV.truth_exposure_index` measures what leaks; this measures what the character can intentionally send. Low range with high TEI marks a character the system reads completely while they can express almost nothing.|
 |Tag|Derived|
