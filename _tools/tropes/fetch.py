@@ -46,6 +46,10 @@ DOMAIN_SEEDS = {
     "TimeTropes": "tracking",
     "ReligionTropes": "setting", "SchoolTropes": "setting", "MotorVehicleTropes": "setting",
     "CyberpunkTropes": "setting", "ThisIsYourIndexOnDrugs": "setting", "MilitaryAndWarfareTropes": "setting",
+    # 2026-10-03 WAVE B (Chief: "get BOLO 89 all approved running"; slugs probed the same hour)
+    "LoveTropes": "theme", "Power": "theme", "EmotionTropes": "theme", "IdentityIndex": "theme",
+    "LanguageTropes": "style", "CostumeTropes": "style", "GraphicalTropes": "style", "LightingTropes": "style",
+    "AmazingTechnicolorIndex": "style",
 }
 # WAVE B (queued, same ruling): theme (LoveTropes · Power · EmotionTropes · IdentityIndex) and style
 # (LanguageTropes · CostumeTropes · GraphicalTropes · LightingTropes · AmazingTechnicolorIndex) — add after wave A keys.

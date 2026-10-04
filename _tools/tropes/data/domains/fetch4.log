@@ -1,0 +1,14 @@
+index Family                          0 entries
+index Revenge                         0 entries
+Traceback (most recent call last):
+  File "C:\Users\U01_LEECHSEED\Desktop\_setsunadev\_tools\tropes\fetch.py", line 143, in <module>
+    main()
+  File "C:\Users\U01_LEECHSEED\Desktop\_setsunadev\_tools\tropes\fetch.py", line 111, in main
+    idx_path.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+  File "C:\Users\U01_LEECHSEED\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1078, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\U01_LEECHSEED\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\tropes\\data\\domains\\index.json'
