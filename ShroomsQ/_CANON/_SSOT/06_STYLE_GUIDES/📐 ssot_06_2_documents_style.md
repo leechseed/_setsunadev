@@ -2,6 +2,7 @@
 type: ssot_06_style_guides
 category: style_guide
 version: 1.5.0
+module_of: ssot_06_1_prose_style
 last_updated: 2026-10-04
 reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
 doc_type: reference

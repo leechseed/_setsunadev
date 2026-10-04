@@ -1,6 +1,7 @@
 ---
 title: PM Holdings Inventory — everything project-management-shaped the operation already holds
 type: register / survey
+version: 1.0.0
 domain: 05_OPERATIONS
 status: survey banked 2026-09-03 — feeds BOLO 25 (the standard PM flow)
 date: 2026-09-03

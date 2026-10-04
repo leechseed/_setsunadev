@@ -1,3 +1,9 @@
+---
+type: ssot_05_operations
+version: 1.0.0
+last_updated: 2026-03-03
+status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0")
+---
 # SSOT: Template Prompt for Summarizing Novels & Books
 
 **Document Type**: Single Source of Truth (SSOT)  

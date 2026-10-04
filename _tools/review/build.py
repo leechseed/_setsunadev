@@ -889,6 +889,7 @@ def parse_shape(text, shape):
         src_text = L["src_cell"] if L.get("src_cell") is not None else (L["row"] if L.get("row") is not None else body)
         L["src_ids"], L["src_links"] = cites_in(src_text, idre)
         L["src_raw"] = " ".join(f"[[{i}]]" for i in L["src_ids"])
+        L["no_source"] = "method, no source" in (src_text + " " + body).lower()   # D3 10/4: a ruled no-source layer, named in the doc
         L["tier"] = None
         if not L["q"]:
             for (a, b) in L["ranges"][:1]:
@@ -1201,6 +1202,16 @@ def main():
     def na(label, reason):
         return {"label": label, "ok": True, "na": True, "ev": [], "sum": "n/a for this layout: " + reason}
 
+    # D5 10/4: a doc held by ruling (the fabula, phase 2) shows on the page but sits out the checks
+    # D6 10/4: a moved stub (its status says "moved … →") points at the doc's new home and is not a doc of this system
+    stubs = [d for d in sdocs if str(d.get("status", "")).lower().startswith("moved")]
+    if stubs:
+        checks.append(na("Moved stubs sit out the checks", ", ".join(d["file"] for d in stubs) + " moved to their new homes (BOLO 92); each file keeps only the pointer"))
+    held = [d for d in sdocs if d not in stubs and shape and any(h in d["file"] for h in shape.get("held", []))]
+    if held:
+        checks.append(na("Held docs sit out the checks", ", ".join(f"{d['file']} ({d['version'] or 'no version'}, ⧗ {d['open']})" for d in held)
+                         + " held to phase 2 by ruling (BOLO 100 D5, 10/4)"))
+    sdocs_all, sdocs = sdocs, [d for d in sdocs if d not in held and d not in stubs]
     ev = [{"k": d["file"], "v": d["version"] or "none", "ok": bool(d["version"]) and sv(d["version"]) >= (1, 0, 0)} for d in sdocs]
     checks.append({"label": f"Every {short.lower()} doc is at 1.0.0 or later", "ok": all(x["ok"] for x in ev), "ev": ev,
                    "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} docs"})
@@ -1208,7 +1219,10 @@ def main():
     checks.append({"label": "Open ⧗ marks = 0", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(d['open'] for d in sdocs)} open across {len(sdocs)} docs"})
     mods = [d for d in sdocs if d["id"] != main_id]
     sys_ids = {d["id"] for d in sdocs}
-    if shape and not mods:
+    if shape and shape.get("shelf"):
+        # D1 10/4: a shelf holds standalone docs; each must clear the version and ⧗ checks above, none is a module
+        checks.append(na("Every other doc is a module_of a doc of this system", "this folder is a shelf of standalone docs (BOLO 100 D1, 10/4); each doc clears the version and ⧗ checks on its own"))
+    elif shape and not mods:
         checks.append(na("Every other doc is a module_of a doc of this system", "the system has one doc, so there is no module to point anywhere"))
     elif shape:
         # a shaped system's docs may hang from more than one parent: a module must point at a doc of THIS system
@@ -1246,7 +1260,8 @@ def main():
                        "sum": f"{len(need) - len(untagged)} of {len(need)} tagged" + (f" · untagged: {', '.join(f['name'] for f in untagged)}" if untagged else "")
                               + f" · first-seen from {len(hist_versions)} committed versions ({', '.join(hist_versions)})"})
     main_layers = [L for L in layers if not L.get("aux")]
-    ev = [{"k": f"{L['id']} {L['name']}", "v": f"{len(L['src_ids']) + len(L['src_links'])} cited", "ok": (len(L['src_ids']) + len(L['src_links'])) > 0} for L in (main_layers if shape else layers)]
+    ev = [{"k": f"{L['id']} {L['name']}", "v": (f"{len(L['src_ids']) + len(L['src_links'])} cited" if (L['src_ids'] or L['src_links']) or not L.get("no_source") else "method, no source (ruled D3)"),
+           "ok": (len(L['src_ids']) + len(L['src_links'])) > 0 or bool(L.get("no_source"))} for L in (main_layers if shape else layers)]
     checks.append({"label": "Every layer has at least one cited source", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} layers"})
     if shape:
         if shape.get("layers_need_fields"):
@@ -1375,7 +1390,7 @@ def main():
                  "out": f"_tools/review/out/REVIEW-{nn}.html", "hist": hist_versions, "status": tm.strip_md(str(main_fm.get("status", "")))[:900]},
         "systems": [{k: s[k] for k in ("id", "name", "folder", "docs", "open", "vmin", "vmax", "deps")} for s in systems.values()],
         "docs": {d["id"]: {k: d.get(k) for k in ("id", "sys", "path", "file", "version", "role", "purpose", "module_of", "deps", "deps_sys", "open", "last_updated", "category")}
-                 for d in sdocs},
+                 for d in sdocs_all},
         "layers": layers_out,
         "tiers": P["tiers"], "tier_note": P.get("tier_note", ""),
         "fields": {f["name"]: f for f in fields},
@@ -1405,7 +1420,7 @@ def main():
     kinds = {}
     for n in gn.values():
         kinds[n["kind"]] = kinds.get(n["kind"], 0) + 1
-    print(f"REVIEW {nn} · {short} {MD['version']} · systems {len(systems)} · docs {len(docs)} ({len(sdocs)} in system) · layers {len(main_layers)}{(' + ' + str(len(layers) - len(main_layers)) + ' aux') if len(layers) != len(main_layers) else ''} "
+    print(f"REVIEW {nn} · {short} {MD['version']} · systems {len(systems)} · docs {len(docs)} ({len(sdocs_all)} in system) · layers {len(main_layers)}{(' + ' + str(len(layers) - len(main_layers)) + ' aux') if len(layers) != len(main_layers) else ''} "
           f"· fields {len(fields)} · feeds {len(feed_edges)} · books {len(book_ids)} (library {len(P['library'])})")
     print(f"graph: {len(gn)} nodes ({', '.join(f'{k} {v}' for k, v in sorted(kinds.items()))}) · {len(gl)} edges")
     print("DONE:", "ALL PASS" if done else "OPEN", "·", " | ".join(("n/a " if c.get("na") else ("✓ " if c["ok"] else "✗ ")) + c["label"] for c in checks))
