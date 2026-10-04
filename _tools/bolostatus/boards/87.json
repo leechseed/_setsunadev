@@ -4,9 +4,9 @@
   "title": "The setting shelf: what we hold, what to get, TTRPG first",
   "trunk": "BLACK",
   "issued": "2026-09-29",
-  "asof": "2026-09-29",
+  "asof": "2026-10-04",
   "s": "open",
-  "status": "🟢 **SETTING v1.5.0 · 9/29**: six OPEN calls ruled (v1.4.0), DCUS S2 WEATHER + faction cards (v1.4.1), the setting state architecture v1.0→1.1 (BOLO 90), the SEQUENCE CARD (v1.5.0); tier-2 shelf still held",
+  "status": "🟢 **BOOK HUNT v14 · 10/4**: authors on every find line · held titles drop off on every build (live library check) · copy buttons fixed · Pedagogy (BOLO 6) list added · 9 books found tonight (4 pedagogy, 5 theme) · find list 117 → 107.",
   "decider": "HOTLINE ACTUAL",
   "feeds": "TM 03 (setting)",
   "related": [
@@ -21,11 +21,15 @@
    {
     "n": 80,
     "why": "the theme system's book hunt is the book hunt that set BOLO 87 off — the 74 TO GET on BOLO 80's list is the source list this row is narrowing to $0 routes."
+   },
+   {
+    "n": 6,
+    "why": "its pedagogy get list rides the BOOK HUNT Find tab (10/4)"
    }
   ],
   "home": "BOLO.md · row 87",
   "card": "none",
-  "version": "v0.4 · DOPE SHEET"
+  "version": "v0.5 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -115,6 +119,31 @@
       },
       {
        "t": "Setting state architecture v1.0→1.1 (BOLO 90 step 3): the DCUS rename lattice as three checkpoints; backward diffs allowed; the `backstory` tag. The SEQUENCE CARD added beside the scene card (v1.5.0). A TROPES section points at the register's S1–S12 lists.",
+       "s": "done"
+      }
+     ]
+    },
+    {
+     "label": "10/4 · the book hunt pass",
+     "items": [
+      {
+       "t": "Every find line now names its author: Theme (BOLO 80) pulls authors from BOLO 80's reading list; Plot (BOLO 77) has full names and years.",
+       "s": "done"
+      },
+      {
+       "t": "Held titles drop off every list on each build, checked against the live library. Two had been listed though held: *Ulysses Unbound* and *Kingdom*.",
+       "s": "done"
+      },
+      {
+       "t": "The copy buttons had never worked: a raw line break broke the page script since 9/29. Fixed and render-tested.",
+       "s": "done"
+      },
+      {
+       "t": "Chief found 9 books: Mayer (partial, back on the list), Merrill, Ambrose, Carroll for BOLO 6; O'Neil, Burke, Stangneth, Bremond et al., Scott for BOLO 80.",
+       "s": "done"
+      },
+      {
+       "t": "The inventory's personal-file filter hid Scott's *Hidden Transcripts*; the rule now matches the singular word only.",
        "s": "done"
       }
      ]
@@ -250,6 +279,21 @@
      "path": "ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
      "what": "v1.3.0 — the ruled changes applied",
      "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/87/build_page.py",
+     "what": "the BOOK HUNT builder: authors on every line, live held check, Pedagogy (BOLO 6) list",
+     "s": "done"
+    },
+    {
+     "path": "_tools/bolostatus/work/87/page_template.html",
+     "what": "copy-button script fixed (10/4)",
+     "s": "done"
+    },
+    {
+     "path": "_tools/zotero/inventory.py",
+     "what": "personal-file filter narrowed to the word \"transcript\" (10/4)",
+     "s": "done"
     }
    ],
    "cost": [
@@ -365,14 +409,29 @@
      "when": "9/29",
      "who": "Claude",
      "t": "Setting v1.4.0 → v1.5.0 and the setting state doc built the same day; FRAGO'd at Oscar Mike."
+    },
+    {
+     "when": "10/4",
+     "who": "Chief",
+     "t": "\"For the book hunt page, I need to update them with authors as well.\" Then dropped 9 books across two batches."
+    },
+    {
+     "when": "10/4",
+     "who": "Claude",
+     "t": "Authors on every line; held titles drop off live; copy buttons fixed; Pedagogy list added; rescans found all 9; BOOK HUNT published v9 to v14."
+    },
+    {
+     "when": "10/4",
+     "who": "Chief",
+     "t": "\"FRAGO the book hunt.\""
     }
    ]
   }
  ],
  "frago": {
   "mission": "Distill the setting shelf into one list of what we hold and what to get, TTRPG first, in order to give TM 03 (the setting system) a real library to build from, the same way BOLO 77's plot sweep fed the plot system.",
-  "order": "Chief grabs the free list into Q:/_PDF_DROP/_NEW, then \"rescan Zotero\"; the tier-2 shelf (~1,260) waits on it.",
-  "default": "Silence: the tools sit in TM 03 v1.3.0 and DCUS stays at its starter slice.",
+  "order": "Chief keeps hunting the Find tab (107 titles) into Q:/_PDF_DROP/_NEW, then says \"rescan Zotero\"; the page rebuilds and found titles drop off.",
+  "default": "Silence: the list waits; nothing is downloaded by Claude (ruled 9/29).",
   "calls": [
    {
     "q": "The grab order: what goes first?",
