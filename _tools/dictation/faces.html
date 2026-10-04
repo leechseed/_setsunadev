@@ -29,6 +29,11 @@
   header .status b{color:var(--accent);font-weight:500}
   header a{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);text-decoration:none;white-space:nowrap}
   header a:hover{color:var(--accent)}
+  #sfw{border:1px solid var(--line-2);background:var(--panel-2);padding:5px 14px;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
+  #sfw:hover{border-color:var(--good);color:var(--good)}
+  #sfw[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:var(--bg)}
+  .sfwnote{border:1px solid var(--good);background:var(--good-soft);color:var(--good);padding:16px;font-family:var(--mono);font-size:12px}
+  body.sfw .k, body.sfw #shuffle, body.sfw .dropzone{pointer-events:none;opacity:.35}
 
   main{max-width:1500px;margin:0 auto;padding:18px 16px 60px}
   .bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 12px}
@@ -99,6 +104,7 @@
 <header>
   <h1><i></i>JUDY · Face Deck</h1>
   <div class="status" id="status">JUDY picks up a swap within 2 seconds.</div>
+  <button type="button" id="sfw" aria-pressed="false" title="JUDY shows the four original faces; slots and pools stay as they are for later">SFW</button>
   <a href="/">console →</a>
 </header>
 <main>
@@ -165,7 +171,7 @@ function renderSlots(){
     return `<div class="slot${sel?" armed":""}" data-slot="${s}">
       <div class="top"><h3><em>${KEY[s]}</em> ${s}</h3><span class="note">${NOTE[s]}</span>
         <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>
-      <div class="well">${v.url?media(v.url,v.file,`${s} face`):`<span>empty · drop a file here</span>`}</div>
+      <div class="well">${S.sfw&&v.sfw?media(v.sfw.url,v.sfw.file,`${s} face`):v.url?media(v.url,v.file,`${s} face`):`<span>empty · drop a file here</span>`}</div>
       <div class="file">${v.pick?`<b>${esc(v.pick)}</b>`:v.file?`<b>${esc(v.file)}</b> <span style="color:var(--ink-3)">· not in library</span>`:"—"}</div>
       <div class="pool">${(v.pool||[]).length>1?`<b>pool · ${v.pool.length}</b> JUDY picks one each time she goes ${s}`:`pool · ${(v.pool||[]).length} · add more with the <em>${KEY[s]}</em> button on a tile`}</div>
     </div>`;}).join("");
@@ -191,6 +197,7 @@ function renderSlots(){
 
 function renderLib(){
   const L=S.library;
+  if(S.sfw){$("#libCount").textContent="hidden";$("#grid").innerHTML=`<div class="sfwnote">SFW is on. JUDY shows the four original faces. The library, slots and pools are untouched; press SFW again to bring them back.</div>`;return;}
   $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
   if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
   $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
@@ -218,6 +225,8 @@ function renderLib(){
 }
 
 function render(){
+  document.body.classList.toggle("sfw",!!S.sfw);
+  $("#sfw").setAttribute("aria-pressed",S.sfw?"true":"false");
   renderSlots(); renderLib();
   if(!sel) $("#status").textContent="JUDY picks up a swap within 2 seconds.";
 }
@@ -249,6 +258,11 @@ $("#shuffle").onclick=async()=>{
   if(!slots.length)return toast("no slot is checked for shuffle",true);
   const j=await api("/api/face/shuffle",{slots}).catch(()=>null);
   if(j)toast("shuffled · "+Object.entries(j.picks).map(([s,n])=>KEY[s]+" "+n).join(" · "));
+  refresh(true);
+};
+$("#sfw").onclick=async()=>{
+  const on=!S.sfw, j=await api("/api/face/sfw",{on}).catch(()=>null);
+  if(j)toast(on?"SFW on · JUDY shows the original faces":"SFW off · back to your faces");
   refresh(true);
 };
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;confirming=null;render();}});

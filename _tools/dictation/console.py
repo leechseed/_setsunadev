@@ -77,7 +77,9 @@ JUDY_DEFAULTS = {
                                   "style": 0.35, "use_speaker_boost": True,
                                   "speed": 1.0}},
     "face": {"slots": {s: None for s in STATES},
-             "pools": {s: [] for s in STATES}},   # 10/4: library names per state; JUDY picks one on each entry
+             "pools": {s: [] for s in STATES},    # 10/4: library names per state; JUDY picks one on each entry
+             "sfw": False,                         # 10/4: SFW on = JUDY shows the original four faces, nothing else
+             "sfw_set": {s: f"{s}.png" for s in STATES}},
     "chat": {"model": "claude-haiku-4-5-20251001"},
     "wire": {"mode": "mcp", "server": "_tools/dictation/wire.py"},
     "session": {"reader": "script", "max_sentences": 12, "acks": True},
@@ -370,7 +372,17 @@ def build_state():
     }
 
 
+def sfw_path(judy, slot):
+    """The SFW face for a state: faces/library/<sfw_set[slot]>, or None when that file is gone."""
+    name = ((judy.get("face") or {}).get("sfw_set") or {}).get(slot) or f"{slot}.png"
+    p = os.path.join(LIB, os.path.basename(name))
+    return p if os.path.isfile(p) else None
+
+
 def face_url(judy, slot):
+    if (judy.get("face") or {}).get("sfw") and sfw_path(judy, slot):
+        p = sfw_path(judy, slot)
+        return f"/face/library/{quote(os.path.basename(p))}?v={int(os.path.getmtime(p))}"
     p = (judy.get("face", {}).get("slots", {}) or {}).get(slot)
     if p and os.path.exists(p):
         kind = "&t=mp4" if p.lower().endswith(".mp4") else ""   # the page shows a video, not an img
@@ -484,12 +496,28 @@ def lib_state():
                       "slots": [s for s, p in paths.items() if p and _same(p, e.path)],
                       "pools": [s for s in STATES if e.name in pools[s]]})
     slots = {}
+    sfw = bool(judy["face"].get("sfw"))
     for s, p in paths.items():
+        sp = sfw_path(judy, s)
         slots[s] = {"file": os.path.basename(p) if p else None,
                     "url": f"/face/{s}?v={os.stat(p).st_mtime_ns}" if p else None,
+                    "sfw": {"file": os.path.basename(sp), "url": f"/face/library/{quote(os.path.basename(sp))}?v={os.stat(sp).st_mtime_ns}"} if sp else None,
                     "pick": next((i["name"] for i in items if s in i["slots"]), None),
                     "pool": pools[s]}
-    return {"library": items, "slots": slots, "states": STATES}
+    return {"library": items, "slots": slots, "states": STATES, "sfw": sfw}
+
+
+def face_sfw(on):
+    """SFW on: JUDY shows the four original faces and ignores slots and pools. Off: everything as it was."""
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        missing = [s for s in STATES if not sfw_path(judy, s)]
+        if on and missing:
+            raise ValueError(f"no SFW face for {', '.join(missing)} in the library")
+        judy["face"]["sfw"] = bool(on)
+        write_json(JUDY, judy)
+    LOG.append(f"— face SFW {'on' if on else 'off'}")
+    return bool(on)
 
 
 def lib_add(files):
@@ -779,6 +807,9 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/face/assign":
                 dst = face_assign(b.get("slot"), b.get("name"))
                 return self._send(200, {"ok": True, "slot": b.get("slot"), "file": os.path.basename(dst)})
+
+            if path == "/api/face/sfw":
+                return self._send(200, {"ok": True, "sfw": face_sfw(bool(b.get("on")))})
 
             if path == "/api/face/pool":
                 face_pool(b.get("slot"), b.get("name"), bool(b.get("on")))

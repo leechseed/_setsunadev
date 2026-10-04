@@ -110,11 +110,17 @@ class Face:
         self.root.after(1500, self._watch)
 
     def _slots(self):
-        slots = (cfg().get("face", {}) or {}).get("slots", {}) or {}
+        face = cfg().get("face", {}) or {}
+        if face.get("sfw"):     # 10/4: SFW = the four original faces from the library, nothing else
+            sfw = face.get("sfw_set") or {}
+            return {s: os.path.join(LIB, os.path.basename(sfw.get(s) or f"{s}.png")) for s in STATES}
+        slots = face.get("slots", {}) or {}
         return {s: slots.get(s) for s in STATES}
 
     def _pools(self):
         """10/4: each state's pool of library faces (names in faces/library/); JUDY picks one per entry."""
+        if (cfg().get("face", {}) or {}).get("sfw"):
+            return {s: [] for s in STATES}
         pools = (cfg().get("face", {}) or {}).get("pools", {}) or {}
         out = {}
         for s in STATES:
