@@ -1,8 +1,8 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 1.1.0
-last_updated: 2026-09-29
+version: 1.2.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
 status: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
@@ -138,6 +138,15 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 - **80-E · which books:** held books only (Egri, McKee, Coyne, Truby, Dramatica, plus Foucault now distilled as MSX.36); no Weiland.
 - **80-G · Fairness as a second gauge for world scenes:** yes (above).
 
+## THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, "all recs")
+
+Three tests carry "Nobody has to be evil when everyone does their job" down to the single scene. They ride the SCENE CARD in [ssot_03](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields.
+
+- **The citation test** (Vaughan, [TEC.06](../../../../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/)). In any scene where the system does harm, every actor can name the rule they followed. A scene that needs a hidden evil motive is arguing a different idea; rewrite it or mark it as the exception.
+- **The knowledge gradient** (Zimbardo, PSY.49), a field inside the citation test. The card names who in the scene knows better. The idea holds fully for those who follow the rule in ignorance; a character who knows better and complies is the idea's hard case, and the scene should feel it.
+- **The two-transcripts test** (Scott, PHI.03). The card says whether the scene plays on the **public script** (what people say in front of power) or the **hidden transcript** (what they say out of its sight), and what changes between the two.
+- **The rider** (Stangneth, PHI.04). The controlling idea describes what the system **allows**, never what each person **is**. Anna stays a question (cog, believer or mask), not an answer.
+
 ## TROPES
 
 Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is keyed to the four rails R1–R4 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **theme**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. The theme sub-index pass (Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) is keying as of 2026-09-29.
@@ -182,6 +191,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.2.0 · 2026-10-04** · THE SCENE TESTS added (BOLO 80 wave 1 distills, Chief: "all recs"): the citation test with the knowledge gradient · the two-transcripts test · the system-not-person rider.
 - **1.1.0 · 2026-09-29** · THE CIVILIZATION GAUGES added (BOLO 93, "all rec"): five powers, one value each (a sixth, the Power Line, added the same night), the steps on their catalog entries.
 
 - **0.1.0 · 2026-09-29** — bootstrap: the controlling idea and the mechanism line, ruled; the storyform map; the open calls.

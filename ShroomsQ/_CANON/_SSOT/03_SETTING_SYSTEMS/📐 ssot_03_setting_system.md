@@ -1,8 +1,8 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.5.0
-last_updated: 2026-09-29
+version: 1.6.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, all future IPs]
 status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial)
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
@@ -165,6 +165,8 @@ threads:        tori.arc · rs.rivalry         (what advances through this conta
 invariants:     in-scope set, checked          (a breach means the scene is wrong, not the invariant)
 collision:      seeding row(s), e.g. L9×S9     (a scene seeded by no row should justify itself — Module 5)
 exit state:     what is now true that wasn't  (feeds the next card)
+citation:       each actor's rule · who knows better   (theme: the citation test + knowledge gradient, 07, 10/4)
+transcript:     public | hidden · what changes        (theme: the two-transcripts test, 07, 10/4)
 ```
 
 The card is the working notation for plot_systems when it opens; until then it documents any scene worth pinning.
@@ -210,6 +212,15 @@ one secret:           the single thing not on the public face         [[BVX.1177
 Fed mainly by S4 LAW, S6 ECONOMY, S7 FOUNDING. Depth call: a stub — founding sentence + binding principle + one secret — for any place the story doesn't center; the full six-field card is warranted only where the story actually visits, per the synthesis's read of the tension between BVX.0343's eight-field NATION block and BVX.1177/BVX.1179's stub argument.
 
 ---
+
+## THE POLDER TEST — for an enclosed place (RULED 2026-10-04, BOLO 87, "all recs")
+
+From Ekman, *Here Be Dragons* (CRE.08). Four questions for a ringed place like DCUS. Run it only where a scene's pressure needs it (the fill rule: thin by default).
+
+1. **The ring (S1):** is there a boundary, and what is it made of?
+2. **The keepers (S4):** who maintains it, and by what right?
+3. **The flood (S11):** what outside force would collapse it? S11 records it as a threat clock.
+4. **The inside law (S4):** what rules hold inside that do not hold outside?
 
 ## THE INSTANCE — DCUS starter slice (proof of rig)
 
@@ -290,6 +301,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 ## Version history
 
+- **1.6.0 — 2026-10-04.** RULED by Chief ("all recs", BOLO 87 wave 1): THE POLDER TEST added (Ekman, CRE.08); the SCENE CARD gains `citation` and `transcript` fields from the theme system's scene tests (07 v1.2.0).
 - **1.5.0 — 2026-09-29.** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE SEQUENCE CARD added right after THE SCENE CARD: a thin seven-field card for R3 SEQUENCE units (sequence question, N scene-slots, one rolled-up turn, commandments read at sequence grain, threads, exit state), closing the field trial's WHAT BROKE 1 gap. No taxonomy or slice change.
 - **1.4.2 — 2026-09-29.** BOLO 90 step 3, setting state architecture landed as its own doc: [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs mirroring `ssot_02_character_state_architecture` v1.2 layer for layer, checkpoints and story points per `ssot_08_tracking_system`, and the DCUS rename lattice (Skeeter Creek → Red Hills → DCUS) instanced as the first three checkpoints. OPEN list's "Setting state architecture" bullet moved to Landed; Axis 4 TIME gets one sentence pointing at the new doc and ssot_08. No taxonomy or slice change.
 - **1.4.1 — 2026-09-29.** RULED by Chief ("go, all recommendations"): DCUS S2 WEATHER filled (the cooled-building split kept); DCUS faction cards added under THE INSTANCE, the Administration and the Bishops ruled as two factions, the Bishops' secret conditional, the Sync Cult held, the bells benched. No schema change.
