@@ -1,0 +1,1009 @@
+"""SYSTEM REVIEW page — build (BOLO 100).
+
+Usage:  python _tools/review/build.py 02
+
+Reads one storytelling system's docs from ShroomsQ/_CANON/_SSOT/<NN>_*/ and the frontmatter of
+every system folder, computes the Definition of Done, and renders _tools/review/out/REVIEW-<NN>.html
+from _tools/review/template.html. Nothing on the page is hand-typed: every box, line, field, tag,
+check and citation comes from a file, and every feed arrow carries the line it was parsed from.
+
+Inputs : ShroomsQ/_CANON/_SSOT/0*/*.md       frontmatter of every system doc (level 1 map)
+         ShroomsQ/_CANON/_SSOT/<NN>_*/*.md   the system's docs (main doc + modules + templates)
+         the main doc's git history          the version each field first appeared in
+         _CANON_NODES/<instance>-chart.md    the worked instance's status line only
+         _tools/tm/terms.json                the hover-term register (shared with the TM pages)
+         _tools/tm/build.py                  reused: inline renderer, auto-linker, table parser
+Outputs: _tools/review/out/REVIEW-<NN>.html  (an artifact fragment: no doctype/html/head/body)
+"""
+import glob, importlib.util, io, json, os, re, subprocess, sys, datetime
+from urllib.parse import unquote
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+SSOT = os.path.join(ROOT, "ShroomsQ", "_CANON", "_SSOT")
+TM_DIR = os.path.join(ROOT, "_tools", "tm")
+
+# reuse the TM page's renderer (render_inline, auto_link_section, parse_table, esc, strip_md)
+_spec = importlib.util.spec_from_file_location("tmbuild", os.path.join(TM_DIR, "build.py"))
+tm = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(tm)
+
+MISSES = []          # parse misses, printed at the end
+SEMVER = re.compile(r"(\d+)\.(\d+)\.(\d+)")
+ID_RE = r"(?:BVX|MSX|PSY)\.\d+"
+
+
+def miss(msg):
+    MISSES.append(msg)
+
+
+def load_text(p):
+    with io.open(p, encoding="utf-8-sig") as f:
+        return f.read().replace("\r\n", "\n")
+
+
+def sv(s):
+    m = SEMVER.search(s or "")
+    return tuple(int(x) for x in m.groups()) if m else None
+
+
+def sv_str(t):
+    return ".".join(map(str, t)) if t else ""
+
+
+def rel(p):
+    return os.path.relpath(p, ROOT).replace("\\", "/")
+
+
+# ---------------------------------------------------------------- frontmatter (tolerant)
+
+FM_KEYS = ("type", "category", "version", "last_updated", "status", "purpose", "module_of", "dependencies", "trunk", "sources", "applies_to")
+
+
+def _val(v):
+    v = v.strip()
+    if v.startswith("[") and v.endswith("]"):
+        return [x.strip().strip('"').strip("'") for x in v[1:-1].split(",") if x.strip()]
+    if len(v) >= 2 and v[0] == v[-1] and v[0] in "\"'":
+        return v[1:-1].replace('\\"', '"')
+    return v
+
+
+def parse_fm(text):
+    fm = {}
+    m = re.match(r"^---\n(.*?)\n---", text, re.S)
+    if m:
+        lines = m.group(1).split("\n")
+        i = 0
+        while i < len(lines):
+            mm = re.match(r"^([A-Za-z_][A-Za-z0-9_]*):\s*(.*)$", lines[i])
+            if mm:
+                k, v = mm.group(1), mm.group(2)
+                if v.strip() == "":
+                    items = []
+                    j = i + 1
+                    while j < len(lines) and re.match(r"^\s+-\s+", lines[j]):
+                        items.append(_val(re.sub(r"^\s+-\s+", "", lines[j])))
+                        j += 1
+                    if items:
+                        fm[k] = items
+                        i = j
+                        continue
+                else:
+                    fm[k] = _val(v)
+            i += 1
+    if "version" not in fm:
+        # malformed single-line frontmatter ("## type: … version: 1.0.0 …"): scan the head of the file
+        head = text[:4000]
+        for k in FM_KEYS:
+            if k in fm:
+                continue
+            mm = re.search(r"(?:^|[\s#])" + k + r':\s*("(?:[^"\\]|\\.)*"|\[[^\]]*\]|[^\s]+)', head)
+            if mm:
+                fm[k] = _val(mm.group(1))
+    return fm
+
+
+def norm(s):
+    s = unquote(str(s)).replace("[[", "").replace("]]", "")
+    s = os.path.basename(s)
+    s = re.sub(r"\.md$", "", s, flags=re.I)
+    s = s.lower().replace(" ", "_")
+    s = re.sub(r"[^a-z0-9_]", "", s)
+    s = re.sub(r"_+", "_", s).strip("_")
+    return s
+
+
+# ---------------------------------------------------------------- level 1: every system
+
+def load_systems():
+    systems, docs = {}, {}
+    for d in sorted(glob.glob(os.path.join(SSOT, "0*_*"))):
+        if not os.path.isdir(d):
+            continue
+        folder = os.path.basename(d)
+        nn = folder[:2]
+        name = re.sub(r"_SYSTEMS$", "", folder[3:]).replace("_", " ")
+        sys_rec = {"id": nn, "name": name, "folder": rel(d), "docs": [], "open": 0, "vmin": None, "vmax": None, "deps": {}}
+        for p in sorted(glob.glob(os.path.join(d, "*.md"))):
+            text = load_text(p)
+            fm = parse_fm(text)
+            stem = norm(p)
+            v = sv(str(fm.get("version", "")))
+            deps = fm.get("dependencies", [])
+            if isinstance(deps, str):
+                deps = [deps] if deps else []
+            doc = {
+                "id": stem, "sys": nn, "path": rel(p), "file": os.path.basename(p),
+                "version": sv_str(v), "status": str(fm.get("status", ""))[:600],
+                "purpose": str(fm.get("purpose", "")), "module_of": norm(fm.get("module_of", "")) if fm.get("module_of") else "",
+                "category": str(fm.get("category", "")), "type": str(fm.get("type", "")),
+                "last_updated": str(fm.get("last_updated", "")),
+                "deps_raw": deps, "open": text.count("⧗"), "bytes": len(text.encode("utf-8")),
+                "has_fm": bool(fm),
+            }
+            docs[stem] = doc
+            sys_rec["docs"].append(stem)
+            sys_rec["open"] += doc["open"]
+            if v:
+                sys_rec["vmin"] = v if not sys_rec["vmin"] or v < sys_rec["vmin"] else sys_rec["vmin"]
+                sys_rec["vmax"] = v if not sys_rec["vmax"] or v > sys_rec["vmax"] else sys_rec["vmax"]
+        systems[nn] = sys_rec
+    # resolve dependencies doc -> doc (or doc -> system when the doc is not found)
+    by_suffix = {}
+    for k in docs:
+        mm = re.match(r"ssot_\d\d_(.+)$", k)
+        if mm:
+            by_suffix.setdefault(mm.group(1), []).append(k)
+    unresolved = []
+    for d in docs.values():
+        d["deps"], d["deps_sys"] = [], []
+        for raw in d["deps_raw"]:
+            n = norm(raw)
+            tgt = None
+            if n in docs:
+                tgt = n
+            else:
+                mm = re.match(r"ssot_\d\d_(.+)$", n)
+                cands = by_suffix.get(mm.group(1), []) if mm else []
+                if len(cands) == 1:
+                    tgt = cands[0]
+            if tgt and tgt != d["id"]:
+                d["deps"].append(tgt)
+            else:
+                mm = re.search(r"ssot_(\d\d)_", n)
+                if mm and mm.group(1) in systems:
+                    d["deps_sys"].append(mm.group(1))
+                else:
+                    unresolved.append(f"{d['id']} -> {raw}")
+        for t in d["deps"]:
+            ts = docs[t]["sys"]
+            if ts != d["sys"]:
+                systems[d["sys"]]["deps"][ts] = systems[d["sys"]]["deps"].get(ts, 0) + 1
+        for ts in d["deps_sys"]:
+            if ts != d["sys"]:
+                systems[d["sys"]]["deps"][ts] = systems[d["sys"]]["deps"].get(ts, 0) + 1
+    for s in systems.values():
+        s["vmin"], s["vmax"] = sv_str(s["vmin"]), sv_str(s["vmax"])
+    return systems, docs, unresolved
+
+
+# ---------------------------------------------------------------- main-doc sectioning
+
+def headings(lines):
+    out = []
+    fence = False
+    for i, l in enumerate(lines):
+        if l.strip().startswith("```"):
+            fence = not fence
+            continue
+        if fence:
+            continue
+        m = re.match(r"^(#{2,4})\s+(.*)$", l)
+        if m:
+            out.append((i, len(m.group(1)), m.group(2).strip()))
+    return out
+
+
+def section(lines, hs, pattern, level=None, first=True):
+    """(start, end) line indexes of the body under the first heading matching pattern."""
+    for idx, (i, lv, txt) in enumerate(hs):
+        if re.search(pattern, txt, re.I) and (level is None or lv == level):
+            end = len(lines)
+            for (j, lv2, _) in hs[idx + 1:]:
+                if lv2 <= lv:
+                    end = j
+                    break
+            return i + 1, end
+    return None
+
+
+def tables_in(lines, rng):
+    out, i = [], rng[0]
+    while i < rng[1]:
+        if re.match(r"^\|.*\|\s*$", lines[i].strip()):
+            start = i
+            buf = []
+            while i < rng[1] and re.match(r"^\|.*\|\s*$", lines[i].strip()):
+                buf.append(lines[i].strip())
+                i += 1
+            h, rows = tm.parse_table(buf)
+            out.append({"start": start, "header": [tm.strip_md(x).lower() for x in h], "rows": rows})
+        else:
+            i += 1
+    return out
+
+
+def col(header, *pats):
+    for p in pats:
+        for i, h in enumerate(header):
+            if re.search(p, h, re.I):
+                return i
+    return None
+
+
+# ---------------------------------------------------------------- layer mentions & feeds
+
+LAYER_ID_RE = re.compile(r"\bL(\d{1,2})\b")
+
+
+def layer_mentions(text, names):
+    """[(pos, Lid)] for 'L5' and for upper-case layer names (WOUND), merged when adjacent."""
+    hits = [(m.start(), "L" + m.group(1)) for m in LAYER_ID_RE.finditer(text) if ("L" + m.group(1)) in names.values()]
+    for lid, nm in [(v, k) for k, v in names.items()]:
+        for m in re.finditer(r"(?<![A-Za-z_.])" + re.escape(nm) + r"(?![A-Za-z_])", text):
+            hits.append((m.start(), lid))
+    hits.sort()
+    out = []
+    for pos, lid in hits:
+        if out and out[-1][1] == lid and pos - out[-1][0] < 12:
+            continue
+        out.append((pos, lid))
+    return out
+
+
+def sentences(text):
+    parts = re.split(r"(?<=[.;:])\s+(?=[A-Z`*(\[])", text)
+    return [p for p in parts if p.strip()]
+
+
+def parse_feeds(text, line_no, cur, names, edges, kind_hint=""):
+    for s in sentences(text):
+        plain = s
+        cite = {"line": line_no, "text": tm.strip_md(s)[:320]}
+        found = False
+        # a. `WILL = CORE` — a default derivation
+        for m in re.finditer(r"`([A-Z]+)\s*=\s*([A-Z]+)`", plain):
+            a, b = names.get(m.group(1)), names.get(m.group(2))
+            if a and b and a != b:
+                edges.append({"from": b, "to": a, "kind": "derives", "cite": cite})
+                found = True
+        if found:
+            continue
+        # b. "fed independently from the storyform"
+        if re.search(r"\bfed\b[^.]*\bfrom the storyform", plain, re.I):
+            tgts = [lid for _, lid in layer_mentions(plain[:re.search(r"\bfed\b", plain).start()], names)] or ([cur] if cur else [])
+            for t in tgts:
+                edges.append({"from": "storyform", "to": t, "kind": "fed", "cite": cite})
+            continue
+        # c. "X feeds Y" / "Numeric variables feed WOUND base and SOCIAL defaults"
+        mv = re.search(r"\bfeeds?\b", plain)
+        if mv:
+            left = [lid for _, lid in layer_mentions(plain[:mv.start()], names)] or ([cur] if cur else [])
+            right = [lid for _, lid in layer_mentions(plain[mv.end():], names)]
+            for a in left:
+                for b in right:
+                    if a != b:
+                        edges.append({"from": a, "to": b, "kind": "feeds", "cite": cite})
+            if left and right:
+                continue
+        # d. "High WOUND reduces effective WILL and SOCIAL"
+        mv = re.search(r"\breduces?\b", plain)
+        if mv and cur:
+            right = [lid for _, lid in layer_mentions(plain[mv.end():], names)]
+            for b in right:
+                if b != cur:
+                    edges.append({"from": cur, "to": b, "kind": "reduces", "cite": cite})
+        # e. "L9 reads L3's `knowledge_map`"
+        for m in re.finditer(r"\breads (L\d{1,2})'s", plain):
+            before = [lid for _, lid in layer_mentions(plain[:m.start()], names)]
+            subj = before[-1] if before else cur
+            if subj and subj != m.group(1):
+                edges.append({"from": m.group(1), "to": subj, "kind": "reads", "cite": cite})
+        # f. "a relational pointer from L9 to the L8 imprint event"
+        for m in re.finditer(r"\bfrom (L\d{1,2}) to (?:the )?(L\d{1,2})\b", plain):
+            edges.append({"from": m.group(1), "to": m.group(2), "kind": "points", "cite": cite})
+        # g. "Shared with L9"
+        for m in re.finditer(r"\b[Ss]hared with (L\d{1,2})\b", plain):
+            if cur and cur != m.group(1):
+                edges.append({"from": cur, "to": m.group(1), "kind": "shares", "cite": cite})
+
+
+# ---------------------------------------------------------------- fields
+
+TOK = re.compile(r"`([A-Za-z][A-Za-z0-9_]*)`")
+
+
+def paren_ctx(s):
+    """for each char index: the opening-paren text of its innermost group ('' when at depth 0)."""
+    ctx, stack = [], []
+    for i, ch in enumerate(s):
+        if ch == "(":
+            stack.append(i)
+        ctx.append(s[stack[-1] + 1:stack[-1] + 4] if stack else None)
+        if ch == ")" and stack:
+            stack.pop()
+    return ctx
+
+
+def table_fields(cell):
+    """fields named in the PART A 'field it writes' cell: top-level tokens, '(+ x)' sub-fields; '(was x…)' and
+    '(incl. type x)' are notes, not fields."""
+    out, ctx = [], paren_ctx(cell)
+    last_top = None
+    for m in TOK.finditer(cell):
+        c = ctx[m.start()]
+        name = m.group(1)
+        if c is None:
+            out.append({"name": name, "parent": None})
+            last_top = name
+        elif c.lstrip().startswith("+"):
+            out.append({"name": name, "parent": last_top})
+    # notes after a field: "(adults only)", "(optional)"
+    notes = {}
+    for m in re.finditer(r"`([A-Za-z][A-Za-z0-9_]*)`\s*\(([^`()]+)\)", cell):
+        notes[m.group(1)] = m.group(2).strip()
+    for f in out:
+        if f["name"] in notes:
+            f["note"] = notes[f["name"]]
+    return out
+
+
+def decl_fields(text, cur, table_owner):
+    """fields a domain declaration names, with the owner layer, parent (for 'X gains y') and co-cited ids."""
+    out = []
+    for s in sentences(text):
+        ids = set(re.findall(ID_RE, s))
+        clauses = re.split(r";\s+", s)
+        for cl in clauses:
+            gains = re.search(r"`([a-z][a-z0-9_]*)` gains\b", cl)
+            for m in TOK.finditer(cl):
+                name = m.group(1)
+                if not re.match(r"^[a-z][a-z0-9_]*$", name):
+                    continue
+                before, after = cl[:m.start()], cl[m.end():]
+                in_table = name in table_owner
+                if not in_table:
+                    if "not a field" in cl or re.match(r"^\s+is renamed", after) or "superseding" in before \
+                            or re.match(r"^[^`]{0,40}read alias", after) or re.search(r"\b(?:was|renamed)\s*$", before):
+                        continue
+                mo = re.search(r"(L\d{1,2})'s (?:own )?$", before)
+                owner = mo.group(1) if mo else cur
+                if in_table and owner not in table_owner[name]:
+                    continue  # a mention of another layer's field
+                parent = gains.group(1) if gains and m.start() > gains.end() else None
+                shared = []
+                nxt = TOK.search(cl, m.end())
+                tail = cl[m.end(): nxt.start() if nxt else len(cl)]
+                ms = re.search(r"shared with (L\d{1,2})", tail, re.I)
+                if ms:
+                    shared.append(ms.group(1))
+                out.append({"name": name, "owner": owner, "parent": parent, "ids": sorted(ids), "shared": shared})
+    # "Shared with L9." as its own sentence after the field's sentence
+    sents = sentences(text)
+    for i, s in enumerate(sents):
+        ms = re.match(r"^[Ss]hared with (L\d{1,2})\b", s.strip())
+        if ms and i > 0:
+            prev = [m.group(1) for m in TOK.finditer(sents[i - 1])]
+            for f in out:
+                if prev and f["name"] == prev[-1] and ms.group(1) not in f["shared"]:
+                    f["shared"].append(ms.group(1))
+    return out
+
+
+def parse_main(text):
+    """everything the review needs from one version of the main doc."""
+    lines = text.split("\n")
+    hs = headings(lines)
+    res = {"layers": [], "names": {}, "fields": {}, "decl": {}, "edges": [], "tiers": [], "tags": {}, "tag_groups": {},
+           "derived": [], "library": [], "versions": [], "binding": None, "fork": None, "instance": None}
+
+    # PART A
+    rng = section(lines, hs, r"PART A", 2)
+    if not rng:
+        miss("no PART A section")
+        return res
+    tb = next((t for t in tables_in(lines, rng) if col(t["header"], r"^layer") is not None), None)
+    if not tb:
+        miss("no layer table in PART A")
+        return res
+    h = tb["header"]
+    ci = {"name": col(h, r"^name"), "q": col(h, r"question"), "src": col(h, r"source"), "fld": col(h, r"field"), "tier": col(h, r"tier")}
+    for k, v in ci.items():
+        if v is None:
+            miss(f"PART A table: no '{k}' column")
+    for r_i, r in enumerate(tb["rows"]):
+        mm = re.search(r"\b([A-Z]\d{1,2})\b", r[0] if r else "")
+        if not mm:
+            continue
+        lid = mm.group(1)
+        g = lambda key: r[ci[key]] if ci[key] is not None and ci[key] < len(r) else ""
+        name = tm.strip_md(g("name"))
+        src = g("src")
+        ids = []
+        for m in re.finditer(r"\[\[(" + ID_RE + r")\]\]|(" + ID_RE + r")(?:\s*[–-]\s*(" + ID_RE + r"))?", src):
+            if m.group(1):
+                ids.append(m.group(1))
+            elif m.group(3):
+                p1, n1 = m.group(2).split(".")
+                p2, n2 = m.group(3).split(".")
+                if p1 == p2:
+                    w = len(n1)
+                    ids += [f"{p1}.{str(n).zfill(w)}" for n in range(int(n1), int(n2) + 1)]
+                else:
+                    ids += [m.group(2), m.group(3)]
+            else:
+                ids.append(m.group(2))
+        ids = list(dict.fromkeys(ids))
+        links = [unquote(m.group(1)) for m in re.finditer(r"\]\(([^)]+)\)", src)]
+        tier_m = re.search(r"(\d+)", tm.strip_md(g("tier")))
+        res["layers"].append({"id": lid, "name": name, "q": tm.strip_md(g("q")), "src_raw": src, "src_ids": ids, "src_links": links,
+                              "tier": int(tier_m.group(1)) if tier_m else None, "fields_raw": g("fld"), "line": tb["start"] + 3 + r_i})
+        res["names"][name] = lid
+        if not tier_m:
+            miss(f"{lid}: no tier in PART A")
+    names = res["names"]
+    table_owner = {}
+    for L in res["layers"]:
+        L["tfields"] = table_fields(L["fields_raw"])
+        for f in L["tfields"]:
+            table_owner.setdefault(f["name"], set()).add(L["id"])
+    # the binding rule (PART A prose)
+    for i in range(rng[0], rng[1]):
+        if re.match(r"^\*\*Binding rule", lines[i]):
+            res["binding"] = {"line": i + 1, "text": lines[i]}
+            parse_feeds(lines[i], i + 1, None, names, res["edges"])
+
+    # field tags
+    rng_t = section(lines, hs, r"Field tags")
+    if rng_t:
+        t = next(iter(tables_in(lines, rng_t)), None)
+        if t:
+            for r in t["rows"]:
+                tag_cell = tm.strip_md(r[0])
+                tag = tag_cell.split(",")[0].strip().lower()
+                for m in TOK.finditer(r[1] if len(r) > 1 else ""):
+                    res["tags"][m.group(1)] = tag
+                    res["tag_groups"][m.group(1)] = tag_cell
+        pre = re.search(r"predate (\d+\.\d+\.\d+)", "\n".join(lines[rng_t[0]:rng_t[1]]))
+        res["tag_since"] = pre.group(1) if pre else None
+        res["tag_line"] = rng_t[0]
+
+    # tiers
+    rng_3 = section(lines, hs, r"Three-Tier")
+    if rng_3:
+        t = next(iter(tables_in(lines, rng_3)), None)
+        if t:
+            for r in t["rows"]:
+                n = re.search(r"(\d+)", tm.strip_md(r[0]))
+                res["tiers"].append({"n": int(n.group(1)) if n else None, "layers": tm.strip_md(r[1]) if len(r) > 1 else "",
+                                     "cls": tm.strip_md(r[2]) if len(r) > 2 else "", "budget": tm.strip_md(r[3]) if len(r) > 3 else ""})
+        txt = " ".join(l for l in lines[rng_3[0]:rng_3[1]] if l.strip() and not l.startswith("|") and not l.startswith("---"))
+        res["tier_note"] = txt.strip()
+
+    # domain declarations
+    rng_d = section(lines, hs, r"Domain Declarations")
+    if rng_d:
+        for i in range(rng_d[0], rng_d[1]):
+            m = re.match(r"^\*\*(L\d{1,2})\s*[—-]\s*([A-Z]+):\*\*\s*(.*)$", lines[i])
+            if m:
+                res["decl"][m.group(1)] = {"line": i + 1, "text": m.group(3)}
+                parse_feeds(m.group(3), i + 1, m.group(1), names, res["edges"])
+        res["decl_rule"] = next((lines[i] for i in range(rng_d[0], rng_d[1]) if lines[i].strip() and not lines[i].startswith("**")), "")
+    else:
+        miss("no 'Domain Declarations' section")
+
+    # fields: table + declarations
+    fields = {}
+
+    def addf(name, lid, parent, origin, note=None, ids=()):
+        f = fields.setdefault(name, {"name": name, "layers": [], "parent": parent, "origin": origin, "note": note, "ids": set()})
+        if lid not in f["layers"]:
+            f["layers"].append(lid)
+        if parent and not f["parent"]:
+            f["parent"] = parent
+        if note and not f["note"]:
+            f["note"] = note
+        f["ids"].update(ids)
+
+    for L in res["layers"]:
+        for f in L["tfields"]:
+            addf(f["name"], L["id"], f["parent"], "table", f.get("note"))
+    for lid, d in res["decl"].items():
+        for f in decl_fields(d["text"], lid, table_owner):
+            addf(f["name"], f["owner"], f["parent"], "declaration", ids=f["ids"])
+            for s in f["shared"]:
+                addf(f["name"], s, f["parent"], "declaration")
+    res["fields"] = fields
+
+    # the fork
+    rng_f = section(lines, hs, r"Villain-Arc Fork|\bFork\b")
+    if rng_f:
+        body = [(i, lines[i]) for i in range(rng_f[0], rng_f[1]) if lines[i].strip() and not lines[i].startswith("---")]
+        main_p = max(body, key=lambda x: len(x[1])) if body else None
+        if main_p:
+            i, ptxt = main_p
+            sents = sentences(ptxt)
+            parse_feeds(sents[0], i + 1, None, names, res["edges"])
+            entry = [lid for _, lid in layer_mentions(sents[0], names)]
+            pa = ptxt.find("Path (a)")
+            pb = ptxt.find("Path (b)")
+            fork = {"line": i + 1, "text": ptxt, "cite_note": body[0][1] if body[0][0] != i else "", "entry": entry[:1], "paths": {}}
+            if pa >= 0 and pb > pa:
+                for key, seg in (("a", ptxt[pa:pb]), ("b", ptxt[pb:])):
+                    ls = [lid for _, lid in layer_mentions(seg, names)]
+                    fork["paths"][key] = {"text": tm.strip_md(seg.split(". A writer")[0]).replace("**", "")[:400], "layers": list(dict.fromkeys(ls))}
+                    for lid in dict.fromkeys(ls):
+                        if lid not in fork["entry"]:
+                            res["edges"].append({"from": "fork", "to": lid, "kind": "path " + key,
+                                                 "cite": {"line": i + 1, "text": tm.strip_md(seg)[:320]}})
+                for e in fork["entry"]:
+                    res["edges"].append({"from": e, "to": "fork", "kind": "stalls at", "cite": {"line": i + 1, "text": tm.strip_md(sents[0])}})
+            else:
+                miss("fork: no Path (a)/(b) split")
+            title_h = next((txt for (j, lv, txt) in hs if j == rng_f[0] - 1), "The Fork")
+            fork["title"] = title_h
+            res["fork"] = fork
+
+    # derived statistics (the method's, not the instance's: the first section of that name)
+    rng_s = section(lines, hs, r"^Derived Statistics")
+    if rng_s:
+        t = next(iter(tables_in(lines, rng_s)), None)
+        if t:
+            for r in t["rows"]:
+                res["derived"].append({"name": tm.strip_md(r[0]), "formula": tm.strip_md(r[1]) if len(r) > 1 else ""})
+
+    # library
+    rng_l = section(lines, hs, r"×\s*LIBRARY|LIBRARY", 2)
+    if rng_l:
+        t = next(iter(tables_in(lines, rng_l)), None)
+        if t:
+            hh = t["header"]
+            c_id, c_bk, c_fd, c_gv = col(hh, r"^id"), col(hh, r"book"), col(hh, r"feed"), col(hh, r"give|what")
+            tiers = {}
+            for L in res["layers"]:
+                tiers.setdefault(L["tier"], []).append(L["id"])
+            for r_i, r in enumerate(t["rows"]):
+                mid = re.search(ID_RE, r[c_id] if c_id is not None else "")
+                if not mid:
+                    miss(f"library row {r_i + 1}: no id")
+                    continue
+                feeds_txt = r[c_fd] if c_fd is not None else ""
+                ls = [lid for _, lid in layer_mentions(tm.strip_md(feeds_txt), names)]
+                for m in re.finditer(r"Tier (\d)", feeds_txt):
+                    ls += tiers.get(int(m.group(1)), [])
+                res["library"].append({"id": mid.group(0), "book": r[c_bk] if c_bk is not None else "", "feeds": list(dict.fromkeys(ls)),
+                                       "feeds_raw": feeds_txt, "gives": r[c_gv] if c_gv is not None else "", "line": t["start"] + 3 + r_i})
+                if not ls:
+                    miss(f"library {mid.group(0)}: no layer parsed from '{tm.strip_md(feeds_txt)}'")
+
+    # version history
+    rng_v = section(lines, hs, r"Version history", 2)
+    if rng_v:
+        for i in range(rng_v[0], rng_v[1]):
+            l = lines[i]
+            m = re.match(r"^-\s+\*\*(\d+\.\d+\.\d+)\s*·\s*([0-9-]+)\*\*\s*[—-]\s*(.*)$", l)
+            if m:
+                res["versions"].append({"v": m.group(1), "date": m.group(2), "text": m.group(3), "line": i + 1})
+                continue
+            m = re.match(r"^\|\s*(\d+\.\d+\.\d+)\s*\|\s*([0-9-]+)\s*\|(.*)\|\s*$", l)
+            if m:
+                res["versions"].append({"v": m.group(1), "date": m.group(2), "text": m.group(3).strip(), "line": i + 1})
+
+    # the worked instance
+    rng_i = section(lines, hs, r"THE INSTANCE", 2)
+    if rng_i:
+        htxt = lines[rng_i[0] - 1]
+        mname = re.search(r"·\s*([^,]+)", htxt)
+        body = "\n".join(lines[rng_i[0]:rng_i[1]])
+        parked = next((l for l in lines[rng_i[0]:rng_i[1]] if re.search(r"\bparked\b", l, re.I)), "")
+        marker = re.search(r"`(⏸[^`]*)`", parked)
+        res["instance"] = {"name": mname.group(1).strip() if mname else "", "line": rng_i[0], "parked": parked.strip(),
+                           "marker": marker.group(1) if marker else "⏸", "marks": body.count("⏸")}
+    return res
+
+
+# ---------------------------------------------------------------- git: the version each field first appeared in
+
+def field_history(main_path):
+    relp = rel(main_path)
+    try:
+        log = subprocess.run(["git", "-C", ROOT, "-c", "core.quotepath=off", "log", "--follow", "--name-only", "--format=@@%H", "--", relp],
+                             capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60).stdout
+    except Exception as e:
+        miss(f"git log failed: {e}")
+        return {}, []
+    commits, cur = [], None
+    for l in log.split("\n"):
+        if l.startswith("@@"):
+            cur = [l[2:], None]
+            commits.append(cur)
+        elif l.strip() and cur and cur[1] is None:
+            cur[1] = l.strip().strip('"')
+    by_version = {}
+    for h, p in commits:   # newest first: keep each version's newest commit (autosaves catch a bump mid-edit)
+        try:
+            txt = subprocess.run(["git", "-C", ROOT, "-c", "core.quotepath=off", "show", f"{h}:{p}"], capture_output=True, encoding="utf-8",
+                                 errors="replace", timeout=60).stdout
+        except Exception:
+            continue
+        v = sv(str(parse_fm(txt.replace("\r\n", "\n")).get("version", "")))
+        if v and v not in by_version:
+            by_version[v] = txt.replace("\r\n", "\n")
+    first = {}
+    seen = []
+    saved = list(MISSES)
+    for v in sorted(by_version):
+        r = parse_main(by_version[v])
+        for name in r["fields"]:
+            first.setdefault(name, sv_str(v))
+        seen.append(sv_str(v))
+    MISSES[:] = saved  # misses in old versions are history, not this build's problem
+    return first, seen
+
+
+# ---------------------------------------------------------------- main
+
+def main():
+    if len(sys.argv) < 2:
+        print("usage: build.py <NN>")
+        sys.exit(2)
+    nn = sys.argv[1].zfill(2)
+    TERMS = json.loads(load_text(os.path.join(TM_DIR, "terms.json")))
+    BASE_TERMS = dict(TERMS)
+
+    systems, docs, unresolved = load_systems()
+    if nn not in systems:
+        print("unknown system", nn, "- known:", ", ".join(systems))
+        sys.exit(2)
+    S = systems[nn]
+    sdocs = [docs[d] for d in S["docs"]]
+
+    # the main doc: the one the others are module_of; fall back to the TM registry
+    counts = {}
+    for d in sdocs:
+        if d["module_of"]:
+            counts[d["module_of"]] = counts.get(d["module_of"], 0) + 1
+    main_id = max(counts, key=counts.get) if counts else None
+    if not main_id or main_id not in docs:
+        try:
+            reg = json.loads(load_text(os.path.join(TM_DIR, "systems.json")))
+            main_id = norm(reg[nn]["path"])
+        except Exception:
+            print("cannot find the main doc for", nn)
+            sys.exit(1)
+    MD = docs[main_id]
+    main_path = os.path.join(ROOT, MD["path"])
+    main_text = load_text(main_path)
+    P = parse_main(main_text)
+    main_fm = parse_fm(main_text)
+    first_seen, hist_versions = field_history(main_path)
+
+    names = P["names"]
+    layers = P["layers"]
+    lids = [L["id"] for L in layers]
+    term_of_layer = {}
+    for L in layers:
+        k = tm.LAYER_TERM_MAP.get(L["id"])
+        term_of_layer[L["id"]] = k if k in TERMS else None
+    short = S["name"].split()[0]
+
+    # ---- doc roles
+    for d in sdocs:
+        if d["id"] == main_id:
+            d["role"] = "main doc"
+        elif d["category"].startswith("template") or "template" in d["id"]:
+            d["role"] = "template"
+        elif "synthesis" in d["type"] or "synthesis" in d["id"]:
+            d["role"] = "synthesis module"
+        elif d["module_of"]:
+            d["role"] = "module"
+        else:
+            d["role"] = "doc"
+
+    # ---- fields
+    since = sv(P.get("tag_since") or "2.1.0")
+    fields = []
+    for name, f in P["fields"].items():
+        intro = first_seen.get(name, "")
+        tag = P["tags"].get(name)
+        needs_tag = bool(intro) and sv(intro) >= since and not (f["origin"] == "declaration" and f["parent"])
+        if not intro:
+            needs_tag = True  # not in any committed version: new, must be tagged
+        rec = {"name": name, "layers": f["layers"], "parent": f["parent"], "origin": f["origin"], "note": f["note"],
+               "tag": tag, "tag_group": P["tag_groups"].get(name, ""), "intro": intro or "uncommitted", "needs_tag": needs_tag,
+               "ids": sorted(f["ids"]), "scalar": name.isupper()}
+        tkey = name.replace("_", "-")
+        rec["term"] = tkey if tkey in TERMS else None
+        fields.append(rec)
+    tagged_unknown = [k for k in P["tags"] if k not in P["fields"]]
+    for k in tagged_unknown:
+        miss(f"tag table names `{k}` but no layer lists it")
+
+    # ---- books
+    lib = {b["id"]: b for b in P["library"]}
+    feeds_book = []   # (book, layer, kind, cite)
+    for b in P["library"]:
+        for lid in b["feeds"]:
+            feeds_book.append((b["id"], lid, "feeds hardest", b["line"]))
+    for L in layers:
+        for bid in L["src_ids"]:
+            feeds_book.append((bid, L["id"], "cited in PART A", L["line"]))
+    for lid, d in P["decl"].items():
+        for bid in dict.fromkeys(re.findall(ID_RE, d["text"])):
+            feeds_book.append((bid, lid, "cited in the declaration", d["line"]))
+    book_ids = list(dict.fromkeys([b["id"] for b in P["library"]] + [x[0] for x in feeds_book]))
+
+    # ---- synthetic hover terms (systems, docs, fields, uncarded books, fork)
+    def tlink(k, label):
+        return f"[[{k}|{label}]]" if k else label
+
+    def layer_link(lid):
+        L = next((x for x in layers if x["id"] == lid), None)
+        return tlink(term_of_layer.get(lid), f"{lid} {L['name'] if L else ''}".strip())
+
+    for s in systems.values():
+        deps = ", ".join(tlink(f"sys:{t}", f"{t} {systems[t]['name']}") for t in sorted(s["deps"]))
+        TERMS[f"sys:{s['id']}"] = {"t": f"{s['id']} {s['name']}", "k": "system",
+                                   "d": f"{len(s['docs'])} docs · versions {s['vmin'] or '—'} to {s['vmax'] or '—'} · {s['open']} open ⧗ marks."
+                                        + (f" Depends on {deps}." if deps else " No dependencies declared."),
+                                   "w": s["folder"]}
+    for d in docs.values():
+        extra = ""
+        if d["module_of"] and d["module_of"] in docs:
+            extra = f" Module of {tlink('doc:' + d['module_of'], docs[d['module_of']]['id'])}."
+        TERMS[f"doc:{d['id']}"] = {"t": d["id"], "k": d.get("role", "doc") + (f" · {d['version']}" if d["version"] else ""),
+                                   "d": (tm.strip_md(d["purpose"])[:420] or "No purpose in frontmatter.") + extra
+                                        + f" ⧗ {d['open']}.", "w": d["path"]}
+    for f in fields:
+        on = ", ".join(layer_link(l) for l in f["layers"])
+        tag = (f"{f['tag']} ({f['tag_group']})" if f["tag"] else ("untagged" if f["needs_tag"] else f"no tag needed: predates {sv_str(since)}, the state module's Decision Test decides"))
+        cites = ", ".join(tlink(i if i in TERMS else None, i) for i in f["ids"])
+        TERMS[f"fld:{f['name']}"] = {"t": f["name"], "k": "field" + (f" · {f['tag']}" if f["tag"] else ""),
+                                     "d": f"On {on}." + (f" Sub-field of {tlink('fld:' + f['parent'], f['parent'])}." if f["parent"] else "")
+                                          + f" Tag: {tag}. First in {f['intro']}." + (f" Note: {f['note']}." if f["note"] else "")
+                                          + (f" Cited with {cites}." if cites else "")
+                                          + (f" Term: {tlink(f['term'], TERMS[f['term']]['t'])}." if f["term"] else ""),
+                                     "w": MD["path"]}
+    for bid in book_ids:
+        if bid not in TERMS:
+            ls = sorted({x[1] for x in feeds_book if x[0] == bid}, key=lambda x: int(x[1:]))
+            TERMS[bid] = {"t": bid, "k": "book", "d": "Cited by " + ", ".join(layer_link(l) for l in ls) + ". No distill card in the term register yet.",
+                          "w": f"_0.1_BVX_LEARN/KNOWLEDGE_AREAS/{bid}.md"}
+    if P["fork"]:
+        TERMS["x:fork"] = {"t": P["fork"]["title"], "k": "method rule", "d": tm.strip_md(P["fork"]["text"])[:600], "w": f"{MD['path']} · line {P['fork']['line']}"}
+    if "storyform" not in TERMS:
+        TERMS["storyform"] = {"t": "the storyform", "k": "external", "d": "The storyform feeds the last layer independently.", "w": ""}
+
+    # ---- rendering helpers: auto-link with the register's own terms, then render with everything
+
+    MARK = "\u2063"  # invisible separator: marks a field label so it renders as code inside the link
+
+    def render(text):
+        # auto-link the register's own terms first (it protects `code`), then turn known field names into field hover terms
+        tm.TERMS = BASE_TERMS
+        t = tm.auto_link_section(text)
+        tm.TERMS = TERMS
+        t = re.sub(r"`([A-Za-z][A-Za-z0-9_]*)`", lambda m: f"[[fld:{m.group(1)}|{MARK}{m.group(1)}{MARK}]]" if m.group(1) in P["fields"] else m.group(0), t)
+        h = tm.render_inline(t)
+        return re.sub(MARK + r"([^<" + MARK + r"]*)" + MARK, lambda m: '<code class="inl">' + m.group(1) + '</code>', h)
+
+    tm.TERMS = TERMS
+    missing_keys = sorted({k for L in layers for k in re.findall(r"\[\[([^\]|]+)", L["src_raw"]) if k not in TERMS})
+    for k in missing_keys:
+        miss(f"source key [[{k}]] not in terms.json")
+
+    # ---- layers out
+    layers_out = []
+    for L in layers:
+        lf = [f for f in fields if L["id"] in f["layers"]]
+        order = {n: i for i, n in enumerate(f2["name"] for f2 in L["tfields"])}
+        lf.sort(key=lambda f: (order.get(f["name"], 999), f["intro"]))
+        d = P["decl"].get(L["id"])
+        if not d:
+            miss(f"{L['id']}: no domain declaration")
+        layers_out.append({
+            "id": L["id"], "name": L["name"], "q": L["q"], "tier": L["tier"], "term": term_of_layer.get(L["id"]),
+            "src_html": render(L["src_raw"]), "src_ids": L["src_ids"], "src_links": L["src_links"], "line": L["line"],
+            "fields": [f["name"] for f in lf],
+            "decl_html": render(d["text"]) if d else "", "decl_line": d["line"] if d else None,
+        })
+
+    # ---- feed edges (dedupe exact repeats, keep every cite)
+    edges = {}
+    for e in P["edges"]:
+        k = (e["from"], e["to"], e["kind"])
+        if k not in edges:
+            edges[k] = {"from": e["from"], "to": e["to"], "kind": e["kind"], "cites": []}
+        c = {"line": e["cite"]["line"], "text": e["cite"]["text"].replace("**", "")}
+        if c not in edges[k]["cites"]:
+            edges[k]["cites"].append(c)
+    feed_edges = list(edges.values())
+
+    # ---- DONE: the definition of done, every line with evidence
+    checks = []
+    ev = [{"k": d["file"], "v": d["version"] or "none", "ok": bool(d["version"]) and sv(d["version"]) >= (1, 0, 0)} for d in sdocs]
+    checks.append({"label": f"Every {short.lower()} doc is at 1.0.0 or later", "ok": all(x["ok"] for x in ev), "ev": ev,
+                   "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} docs"})
+    ev = [{"k": d["file"], "v": f"⧗ {d['open']}", "ok": d["open"] == 0} for d in sdocs]
+    checks.append({"label": "Open ⧗ marks = 0", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(d['open'] for d in sdocs)} open across {len(sdocs)} docs"})
+    mods = [d for d in sdocs if d["id"] != main_id]
+    ev = [{"k": d["file"], "v": ("module_of " + d["module_of"]) if d["module_of"] else "no module_of", "ok": d["module_of"] == main_id} for d in mods]
+    checks.append({"label": "Every module carries module_of", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} point at {main_id}"})
+    tlinks = list(dict.fromkeys(unquote(m.group(1)) for m in re.finditer(r"\]\(([^)]*template[^)]*\.md)\)", main_text)))
+    ev = []
+    for t in tlinks:
+        p = os.path.normpath(os.path.join(os.path.dirname(main_path), t))
+        ev.append({"k": os.path.basename(t), "v": (docs.get(norm(p), {}).get("version") or "exists") if os.path.exists(p) else "MISSING", "ok": os.path.exists(p)})
+    checks.append({"label": "Both ingest templates exist" if len(ev) == 2 else "Every ingest template the main doc names exists",
+                   "ok": bool(ev) and all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} linked from the main doc"})
+    need = [f for f in fields if f["needs_tag"]]
+    untagged = [f for f in need if not f["tag"]]
+    ev = [{"k": f["name"], "v": f"{f['intro']} · " + (f["tag"] or "UNTAGGED"), "ok": bool(f["tag"])} for f in sorted(need, key=lambda f: (bool(f["tag"]), f["intro"], f["name"]))]
+    checks.append({"label": f"Every field added {sv_str(since)}+ carries a static/dynamic tag", "ok": not untagged, "ev": ev,
+                   "sum": f"{len(need) - len(untagged)} of {len(need)} tagged" + (f" · untagged: {', '.join(f['name'] for f in untagged)}" if untagged else "")
+                          + f" · first-seen from {len(hist_versions)} committed versions ({', '.join(hist_versions)})"})
+    ev = [{"k": f"{L['id']} {L['name']}", "v": f"{len(L['src_ids']) + len(L['src_links'])} cited", "ok": (len(L['src_ids']) + len(L['src_links'])) > 0} for L in layers]
+    checks.append({"label": "Every layer has at least one cited source", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} layers"})
+    inst = P["instance"] or {}
+    inst_node = None
+    if inst.get("name"):
+        slug = re.sub(r"[^a-z0-9]+", "-", inst["name"].lower()).strip("-")
+        cand = os.path.join(ROOT, "_CANON_NODES", f"{slug}-chart.md")
+        if os.path.exists(cand):
+            nt = load_text(cand)
+            inst_node = {"path": rel(cand), "status": str(parse_fm(nt).get("status", "")), "marks": nt.count("⏸")}
+    ev = [{"k": "instance section", "v": f"{inst.get('marks', 0)} × {inst.get('marker', '⏸')}", "ok": bool(inst.get("parked"))}]
+    if inst_node:
+        ev.append({"k": os.path.basename(inst_node["path"]), "v": f"status: {inst_node['status']} · {inst_node['marks']} × ⏸", "ok": True})
+    checks.append({"label": f"Worked instance: {inst.get('name', '—')} — fill pass parked by ruling", "ok": bool(inst.get("parked")), "ev": ev,
+                   "sum": tm.strip_md(inst.get("parked", "no parking ruling found"))})
+    done = all(c["ok"] for c in checks)
+
+    # what closed it: the current major version's entries
+    curv = sv(MD["version"])
+    closed = [v for v in P["versions"] if sv(v["v"]) and sv(v["v"])[0] == curv[0]]
+    closed.sort(key=lambda v: sv(v["v"]), reverse=True)
+    closed_out = []
+    for v in closed:
+        txt = v["text"]
+        head, _, rest = txt.partition(":")
+        items, depth, cur = [], 0, ""
+        for ch_i, ch in enumerate(rest):   # split on " · " outside parentheses
+            depth += (ch == "(") - (ch == ")")
+            if depth == 0 and rest[ch_i:ch_i + 3] == " · ":
+                items.append(cur.strip())
+                cur = ""
+                continue
+            cur += ch
+        items.append(cur.strip())
+        items = [re.sub(r"^·\s*", "", x).strip() for x in items] if rest else [txt]
+        closed_out.append({"v": v["v"], "date": v["date"], "head": render(head.strip()), "items": [render(x) for x in items if x], "line": v["line"]})
+
+    # ---- TRACE matrix
+    trace = {"cols": [b["id"] for b in P["library"]], "cells": {}, "fcells": {}}
+    for bid, lid, kind, line in feeds_book:
+        if bid in lib:
+            c = trace["cells"].setdefault(f"{lid}|{bid}", {"strong": False, "how": []})
+            if kind == "feeds hardest":
+                c["strong"] = True
+            if kind not in c["how"]:
+                c["how"].append(kind)
+    for f in fields:
+        for bid in f["ids"]:
+            if bid in lib:
+                trace["fcells"][f"{f['name']}|{bid}"] = 1
+
+    # ---- GRAPH
+    gn, gl = {}, []
+
+    def node(i, label, kind, t=None, extra=None):
+        if i not in gn:
+            gn[i] = {"id": i, "label": label, "kind": kind, "t": t}
+            if extra:
+                gn[i].update(extra)
+
+    for s in systems.values():
+        node(f"sys:{s['id']}", f"{s['id']} {s['name']}", "system", f"sys:{s['id']}")
+    for d in docs.values():
+        node(f"doc:{d['id']}", d["id"].replace("ssot_", ""), "doc", f"doc:{d['id']}", {"sys": d["sys"]})
+        gl.append({"s": f"sys:{d['sys']}", "t": f"doc:{d['id']}", "k": "contains"})
+        for t in d["deps"]:
+            gl.append({"s": f"doc:{d['id']}", "t": f"doc:{t}", "k": "depends-on"})
+        for t in d["deps_sys"]:
+            gl.append({"s": f"doc:{d['id']}", "t": f"sys:{t}", "k": "depends-on"})
+        if d["module_of"] and d["module_of"] in docs:
+            gl.append({"s": f"doc:{d['id']}", "t": f"doc:{d['module_of']}", "k": "module-of"})
+    for L in layers:
+        node(f"lay:{L['id']}", f"{L['id']} {L['name']}", "layer", term_of_layer.get(L["id"]))
+        gl.append({"s": f"doc:{main_id}", "t": f"lay:{L['id']}", "k": "defines"})
+    for f in fields:
+        node(f"fld:{f['name']}", f["name"], "field", f"fld:{f['name']}")
+        for lid in f["layers"]:
+            gl.append({"s": f"lay:{lid}", "t": f"fld:{f['name']}", "k": "layer-has-field"})
+    for e in feed_edges:
+        a = "lay:" + e["from"] if e["from"] in lids else ("x:" + e["from"])
+        b = "lay:" + e["to"] if e["to"] in lids else ("x:" + e["to"])
+        for x in (a, b):
+            if x == "x:storyform":
+                node(x, "the storyform", "external", "storyform")
+            if x == "x:fork":
+                node(x, P["fork"]["title"] if P["fork"] else "fork", "external", "x:fork")
+        gl.append({"s": a, "t": b, "k": "layer-feeds-layer", "kind": e["kind"]})
+    for bid in book_ids:
+        node(f"bk:{bid}", bid, "book", bid, {"title": tm.strip_md(lib[bid]["book"]) if bid in lib else ""})
+    seen_bl = set()
+    for bid, lid, kind, line in feeds_book:
+        if (bid, lid) in seen_bl:
+            continue
+        seen_bl.add((bid, lid))
+        gl.append({"s": f"bk:{bid}", "t": f"lay:{lid}", "k": "source-feeds-layer"})
+    gl = [l for l in gl if l["s"] in gn and l["t"] in gn]
+
+    # ---- meta + data
+    data = {
+        "meta": {"key": nn, "short": short.upper(), "system": S["name"], "main": main_id, "main_path": MD["path"], "version": MD["version"],
+                 "last_updated": MD["last_updated"], "trunk": str(main_fm.get("trunk", "")), "applies_to": main_fm.get("applies_to", []),
+                 "done": done, "built": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "builder": "_tools/review/build.py",
+                 "out": f"_tools/review/out/REVIEW-{nn}.html", "hist": hist_versions, "status": tm.strip_md(str(main_fm.get("status", "")))[:900]},
+        "systems": [{k: s[k] for k in ("id", "name", "folder", "docs", "open", "vmin", "vmax", "deps")} for s in systems.values()],
+        "docs": {d["id"]: {k: d.get(k) for k in ("id", "sys", "path", "file", "version", "role", "purpose", "module_of", "deps", "deps_sys", "open", "last_updated", "category")}
+                 for d in sdocs},
+        "layers": layers_out,
+        "tiers": P["tiers"], "tier_note": P.get("tier_note", ""),
+        "fields": {f["name"]: f for f in fields},
+        "feeds": feed_edges,
+        "fork": ({"title": P["fork"]["title"], "line": P["fork"]["line"], "paths": P["fork"]["paths"], "entry": P["fork"]["entry"]} if P["fork"] else None),
+        "binding": ({"line": P["binding"]["line"], "html": render(P["binding"]["text"])} if P["binding"] else None),
+        "derived": [{"name": x["name"], "formula": x["formula"], "layers": [lid for _, lid in layer_mentions(x["formula"], names)]} for x in P["derived"]],
+        "library": [{"id": b["id"], "book_html": render(b["book"]), "feeds": b["feeds"], "gives_html": render(b["gives"]), "line": b["line"]} for b in P["library"]],
+        "trace": trace,
+        "checks": checks, "closed": closed_out,
+        "instance": {"name": inst.get("name"), "marks": inst.get("marks", 0), "node": inst_node},
+        "graph": {"nodes": list(gn.values()), "links": gl},
+        "terms": TERMS,
+    }
+
+    text_json = json.dumps(data, ensure_ascii=False, default=list).replace("</", "<\\/")
+    tpl = load_text(os.path.join(HERE, "template.html"))
+    assert tpl.count("/*__DATA__*/null") == 1, "template.html must hold exactly one /*__DATA__*/null slot"
+    title = f"{short.capitalize()} System Review"
+    frag = tpl.replace("/*__DATA__*/null", text_json).replace("<title>System Review</title>", f"<title>{tm.esc(title)}</title>")
+    out_dir = os.path.join(HERE, "out")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, f"REVIEW-{nn}.html")
+    with io.open(out_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(frag)
+
+    kinds = {}
+    for n in gn.values():
+        kinds[n["kind"]] = kinds.get(n["kind"], 0) + 1
+    print(f"REVIEW {nn} · {short} {MD['version']} · systems {len(systems)} · docs {len(docs)} ({len(sdocs)} in system) · layers {len(layers)} "
+          f"· fields {len(fields)} · feeds {len(feed_edges)} · books {len(book_ids)} (library {len(P['library'])})")
+    print(f"graph: {len(gn)} nodes ({', '.join(f'{k} {v}' for k, v in sorted(kinds.items()))}) · {len(gl)} edges")
+    print("DONE:", "ALL PASS" if done else "OPEN", "·", " | ".join(("✓ " if c["ok"] else "✗ ") + c["label"] for c in checks))
+    if unresolved:
+        print(f"note: {len(unresolved)} dependency string(s) across all systems name no doc on disk (drawn to the system when the number is known)")
+    if MISSES:
+        print("parse misses:")
+        for m in MISSES:
+            print(" -", m)
+    else:
+        print("parse misses: none")
+    print("wrote", rel(out_path), f"({os.path.getsize(out_path) // 1024} KB)")
+
+
+if __name__ == "__main__":
+    main()
