@@ -39,15 +39,11 @@ Every sub below was seen in the archive, so every name is a real subreddit. **La
 | Amouranth | E | [r/Amouranth](https://www.reddit.com/r/Amouranth/) | Oct (alive) |
 | Bella Poarch | E | [r/BellaPoarch](https://www.reddit.com/r/BellaPoarch/) | Oct (alive) |
 | Emiru | E | [r/Emiru](https://www.reddit.com/r/Emiru/) | Oct (alive) |
-| Helly Valentine | E | [r/HellyValentine](https://www.reddit.com/r/HellyValentine/) (alive) · [r/Helly_Valentine](https://www.reddit.com/r/Helly_Valentine/) (2022) | Sep |
+| Helly Valentine | E | [r/HellyValentine](https://www.reddit.com/r/HellyValentine/) | Sep (alive) |
 | Shirogane Sama | E | [r/ShiroganeSama](https://www.reddit.com/r/ShiroganeSama/) | Aug (alive) |
 | Ari Maj | E | [r/AriMaj](https://www.reddit.com/r/AriMaj/) | Feb |
-| Alyri | E | [r/AlyriTV](https://www.reddit.com/r/AlyriTV/) | Dec 2022 (quiet) |
-| Waifu Mia | E | [r/WaifuMia](https://www.reddit.com/r/WaifuMia/) | Jun 2021 (quiet) |
-| Angie Varona | E | [r/AngieVarona](https://www.reddit.com/r/AngieVarona/) | Aug 2019 (dead) |
-| Julia Burch | E | [r/JuliaBurch](https://www.reddit.com/r/JuliaBurch/) | Jul 2019 (dead) |
-| Belle Delphine | E | [r/BelleDelphine](https://www.reddit.com/r/BelleDelphine/) | Jan 2019 (dead, reported banned) |
-| Lisa Manoban | O | [r/LisaManoban](https://www.reddit.com/r/LisaManoban/) | Jul 2020 (dead) |
+
+**Cut 10/4 (Chief: dead and banned):** Belle Delphine (banned) · Angie Varona · Julia Burch · Lisa Manoban (no post since 2019–2020) · Waifu Mia · Alyri (quiet since 2021–2022) · r/Helly_Valentine (the 2022 duplicate; r/HellyValentine stays).
 
 **Not found under the obvious spelling:** Hannah OwO · Violet Summers · Lauren Burch · Cherry Crush · Alice Delish · Emma Langevin · Haruhi. The archive started rate-limiting before the last four were checked, so those four are untested, not proven missing.
 
