@@ -1,0 +1,388 @@
+{
+  "_about": "Per-system layout maps for _tools/review/build.py (BOLO 100, ruled 10/4: teach the builder each system's OWN layout; the canon docs are read only). A system with no entry here (02 character) takes the original PART A path. Every value below names a thing the doc itself defines; nothing is invented. Kinds: layers.table (a table whose rows are the layers) | layers.headings (a heading per layer) | layers.bold (a bold line per layer). Field rules: ticks (backticked names) | labels (a regex over lines, one group) | table_rows | table_headers | fence_keys (key: lines in a code fence) | bullet_ticks. 'only' limits a rule to layer ids; 'section' + 'layer' read a named section into one layer. 'extra' maps a layer id to a section whose lines also count for that layer (fields and citations).",
+  "00": {
+    "main": "00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md",
+    "why_main": "folder is named for it; the other six docs are independent registers/standards, not parts of the truth-framework method",
+    "layer_word": "framework",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
+    "layers": {
+      "kind": "headings",
+      "within": "The 10 Truth Frameworks",
+      "within_level": 2,
+      "level": 3,
+      "match": "^Framework (\\d+): (.+)$",
+      "id": "F{0}",
+      "name": "{1}"
+    },
+    "fields": [
+      {
+        "kind": "labels",
+        "re": "^\\*\\*([^*]+?)\\*\\*\\s*:",
+        "scope": "layer"
+      }
+    ],
+    "required_parts": [
+      "Definition",
+      "Components",
+      "Application",
+      "Limitations"
+    ],
+    "layers_need_fields": true,
+    "tags": null,
+    "tags_na": "this doc defines truth-checking frameworks, not stored fields: it states no static/dynamic split for anything",
+    "instance": null,
+    "instance_na": "no worked-instance section: it carries two short Examples (Example 1, Example 2), which are not a parked instance"
+  },
+  "01": {
+    "main": "01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md",
+    "why_main": "the spine is the canonical tree the other 01 docs hang from; two of the thirteen docs already say module_of it directly or through a sibling",
+    "layer_word": "spine level",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
+    "layers": {
+      "kind": "headings",
+      "within": "^THE TREE",
+      "within_level": 2,
+      "level": 3,
+      "match": "^L(\\d+) · (.+)$",
+      "id": "L{0}",
+      "name": "{1}"
+    },
+    "fields": [
+      {
+        "kind": "table_rows",
+        "header_skip": "^rival",
+        "col": 0
+      },
+      {
+        "kind": "labels",
+        "re": "^\\s*[-*]\\s+\\*\\*([^*]+?)\\*\\*"
+      }
+    ],
+    "required_parts": [],
+    "layers_need_fields": false,
+    "tags": null,
+    "tags_na": "the spine names no stored fields to split into static and dynamic; it is a reference tree",
+    "instance": null,
+    "instance_na": "no worked-instance section (OXO appears only as a column inside the dynamics table)"
+  },
+  "03": {
+    "main": "03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md",
+    "layer_word": "layer",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
+    "layers": {
+      "kind": "table",
+      "within": "PART A",
+      "within_level": 2,
+      "table_has": "^layer",
+      "cols": {
+        "id": "^layer",
+        "name": "^name",
+        "q": null,
+        "src": null,
+        "fields": [
+          "^holds"
+        ],
+        "tier": null,
+        "mirror": "^mirrors"
+      },
+      "id_re": "\\b(S\\d{1,2})\\b",
+      "cell_style": "ticks",
+      "cell_bold": true
+    },
+    "aux": [
+      {
+        "id": "HDR",
+        "name": "Slice header (machinery, not a layer)",
+        "line_re": "^\\*\\*Slice header",
+        "rules": [
+          {
+            "kind": "ticks",
+            "fences": false
+          }
+        ]
+      },
+      {
+        "id": "SC",
+        "name": "Scene card",
+        "section": "THE SCENE CARD",
+        "level": 2,
+        "rules": [
+          {
+            "kind": "fence_keys"
+          }
+        ]
+      },
+      {
+        "id": "SQ",
+        "name": "Sequence card",
+        "section": "THE SEQUENCE CARD",
+        "level": 2,
+        "rules": [
+          {
+            "kind": "fence_keys"
+          }
+        ]
+      },
+      {
+        "id": "FC",
+        "name": "Faction / nation card",
+        "section": "THE FACTION / NATION CARD",
+        "level": 2,
+        "rules": [
+          {
+            "kind": "fence_keys"
+          }
+        ]
+      }
+    ],
+    "fields": [],
+    "required_parts": [],
+    "layers_need_fields": true,
+    "tags": {
+      "kind": "layer_sections",
+      "doc": "03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md",
+      "section": "What Is Static vs What Is Dynamic",
+      "section_level": 2,
+      "sub": {
+        "static": "^Static",
+        "dynamic": "^Dynamic"
+      },
+      "id_re": "^(S\\d{1,2})\\b"
+    },
+    "instance": "^THE INSTANCE",
+    "exclude": [
+      "^and ",
+      "^passageway$"
+    ]
+  },
+  "04": {
+    "main": "04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md",
+    "layer_word": "layer",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
+    "layers": {
+      "kind": "table",
+      "within": "PART A",
+      "within_level": 2,
+      "table_has": "^layer",
+      "cols": {
+        "id": "^layer",
+        "name": "^name",
+        "q": "question",
+        "src": "^source",
+        "fields": [
+          "field"
+        ],
+        "tier": null
+      },
+      "id_re": "\\b(P\\d{1,2})\\b",
+      "cell_style": "table_fields"
+    },
+    "aux": [
+      {
+        "id": "PC",
+        "name": "Plot card",
+        "section": "THE PLOT CARD",
+        "level": 2,
+        "rules": [
+          {
+            "kind": "fence_keys"
+          }
+        ]
+      }
+    ],
+    "fields": [],
+    "required_parts": [],
+    "layers_need_fields": true,
+    "tags": null,
+    "tags_na": "the plot doc has no static/dynamic tag table and no state-architecture module (the plot's change over time lives in 04 fabula and 08 tracking); it tags 1 field in prose (`opposition_goal`, dynamic, lines 174 and 205)",
+    "instance": "^THE INSTANCE"
+  },
+  "05": {
+    "main": "05_OPERATIONS/📐 ssot_05_operations_project_flow.md",
+    "why_main": "no 05 doc is module_of another; project_flow is the one the other operations docs name as the project-level doc (the development standard governs the loop inside a session, SOP.md the session)",
+    "layer_word": "component",
+    "ids": "MCDP[ -]\\d[\\d-]*|BVIPDS|PMBOK|DOCTRINE 0|BVX\\.\\d+",
+    "layers": {
+      "kind": "headings",
+      "within": "^Core Methodology",
+      "within_level": 2,
+      "level": 3,
+      "match": "^([A-I]) · (.+)$",
+      "id": "{0}",
+      "name": "{1}"
+    },
+    "fields": [
+      {
+        "kind": "table_rows",
+        "header_match": "^section$",
+        "hcol": 1,
+        "col": 1
+      },
+      {
+        "kind": "table_rows",
+        "header_match": "^instrument$",
+        "hcol": 0,
+        "col": 0
+      }
+    ],
+    "required_parts": [],
+    "layers_need_fields": false,
+    "tags": null,
+    "tags_na": "operations docs define procedures and instruments, not stored fields with a static/dynamic split",
+    "instance": null,
+    "instance_na": "no worked-instance section: it carries three Examples (BVIPDS retro-fit, BOLO 24, BOLO 26), which are not a parked instance"
+  },
+  "06": {
+    "main": "06_STYLE_GUIDES/📐 ssot_06_1_prose_style.md",
+    "why_main": "06.1 is the only style guide that governs the stories themselves; 06.2 governs the Command's own docs and replies and 06.3 its pages, and 06.1's purpose declares all three siblings",
+    "layer_word": "style rule",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
+    "layers": {
+      "kind": "headings",
+      "within": null,
+      "level": 2,
+      "match": "^(?!Purpose$|Scope$|The check$|SOURCES$|OPEN$|Version history$)(.+)$",
+      "id": "§{n}",
+      "name": "{0}",
+      "start_after": "^Scope$",
+      "stop_at": "^The check$"
+    },
+    "fields": [
+      {
+        "kind": "labels",
+        "re": "^\\*\\*((?:Universal|Chief's|The disclaimer|[PGT]\\d+ |Touchstone)[^*]{0,80}?)\\*\\*",
+        "scope": "layer"
+      }
+    ],
+    "required_parts": [],
+    "layers_need_fields": false,
+    "tags": null,
+    "tags_na": "a style guide holds rules, not stored fields with a static/dynamic split",
+    "instance": null,
+    "instance_na": "the worked instance is OXO's Telling Profile, a separate canon node cited throughout; the doc has no worked-instance section of its own"
+  },
+  "07": {
+    "main": "07_THEME_SYSTEMS/📐 ssot_07_theme_system.md",
+    "layer_word": "part",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
+    "layers": {
+      "kind": "bold",
+      "within": "^THE METHOD",
+      "within_level": 2,
+      "match": "^\\*\\*\\(([a-d])\\)\\s+(.*?)\\*\\*",
+      "id": "{0}",
+      "name": "{1}"
+    },
+    "extra": {
+      "a": "^THE CONTROLLING IDEA",
+      "b": "^THE RAILS",
+      "c": "^THE VALUE SCALE",
+      "d": "^THE MOTIFS"
+    },
+    "fields": [
+      {
+        "kind": "labels",
+        "re": "^\\s*[-*]\\s+\\*(?!\\*)([^*]+?)\\*",
+        "scope": "layer"
+      },
+      {
+        "kind": "table_headers",
+        "skip": "^(#|step)$"
+      }
+    ],
+    "required_parts": [
+      "What it is",
+      "How to build it",
+      "Test it's done",
+      "Worked below"
+    ],
+    "required_skip_fields": true,
+    "layers_need_fields": true,
+    "tags": null,
+    "tags_na": "the theme doc defines one argument and its four parts, not stored fields with a static/dynamic split",
+    "instance": "^THE WORKED INSTANCE"
+  },
+  "08": {
+    "main": "08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md",
+    "layer_word": "section",
+    "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+|DISTILL §\\d+",
+    "layers": {
+      "kind": "headings",
+      "within": null,
+      "level": 2,
+      "match": "^(\\d+A?)\\. (?!What This Is$|Open$|Version History$)(.+)$",
+      "id": "§{0}",
+      "name": "{1}"
+    },
+    "fields": [
+      {
+        "kind": "fence_keys",
+        "lang": "yaml"
+      },
+      {
+        "kind": "bullet_ticks",
+        "only": [
+          "§4"
+        ],
+        "token_re": "^[A-Za-z<][^ ·|]*$"
+      },
+      {
+        "kind": "table_rows",
+        "header_match": "^unit$",
+        "hcol": 0,
+        "col": 0,
+        "only": [
+          "§3"
+        ]
+      }
+    ],
+    "required_parts": [],
+    "layers_need_fields": false,
+    "tags": null,
+    "tags_na": "the tracking doc IS the dynamic layer (every record is a dated change); it defines record shapes, not a static/dynamic split of fields",
+    "instance": null,
+    "instance_na": "no worked-instance section: it carries inline examples of time codes only"
+  },
+  "09": {
+    "main": "09_WORLDBUILDING_SYSTEMS/📐 ssot_09_worldbuilding_system.md",
+    "layer_word": "infrastructure",
+    "ids": "BVX\\.\\d+|MSX\\.\\d+|PSY\\.\\d+|NEW-[a-z0-9-]+",
+    "layers": {
+      "kind": "table",
+      "within": "^THE INFRASTRUCTURES",
+      "within_level": 2,
+      "table_has": "^#",
+      "cols": {
+        "id": "^#",
+        "name": "infrastructure",
+        "q": "answers",
+        "src": "^sources",
+        "fields": [],
+        "tier": null,
+        "home": "^home"
+      },
+      "id_re": "\\b(I\\d{1,2})\\b",
+      "cell_style": "ticks"
+    },
+    "aux": [
+      {
+        "id": "ENTRY",
+        "name": "Catalog entry schema",
+        "section": "The entry schema",
+        "level": 3,
+        "rules": [
+          {
+            "kind": "fence_keys",
+            "lang": "yaml"
+          }
+        ]
+      }
+    ],
+    "fields": [],
+    "required_parts": [],
+    "layers_need_fields": false,
+    "tags": null,
+    "tags_na": "the catalog entry schema carries a `status` word (stub | filled | canon | provisional) but no static/dynamic tag on any field; state over time lives in 08",
+    "instance": "^THE PROOF"
+  }
+}

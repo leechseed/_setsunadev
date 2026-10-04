@@ -616,9 +616,355 @@ def parse_main(text):
     return res
 
 
+# ---------------------------------------------------------------- shapes: each system's OWN layout (BOLO 100, ruled 10/4)
+# shapes.json maps a system number to the layout its main doc really has. 02 (character) has no entry and takes parse_main.
+
+SHAPES = {}
+_sp = os.path.join(HERE, "shapes.json")
+if os.path.exists(_sp):
+    SHAPES = json.loads(load_text(_sp))
+
+TICK2 = re.compile(r"`([a-z][a-z0-9_]*(?: [a-z][a-z0-9_]*){0,2})`")
+TICK_STOP = {"yes", "no", "core", "semi", "fringe", "stub", "filled", "canon", "provisional", "retired", "none", "true", "false", "optional", "step", "ramp"}
+MDLINK = re.compile(r"(?<!!)\[[^\]]*\]\(([^)]+\.md[^)]*)\)")
+
+
+def clean_label(s):
+    s = tm.strip_md(s).replace("`", "").replace("**", "").strip()
+    s = re.split(r"\s+[—–]\s+|:\s", s)[0]
+    s = re.sub(r"[\s.:—–-]+$", "", s)
+    s = re.sub(r"\s+", " ", s)
+    return s[:60]
+
+
+def fenced_mask(lines):
+    """True for every line inside a code fence (fence lines included)."""
+    mask, inside = [], False
+    for l in lines:
+        if l.strip().startswith("```"):
+            mask.append(True)
+            inside = not inside
+        else:
+            mask.append(inside)
+    return mask
+
+
+def parse_versions(lines, hs):
+    out = []
+    rng_v = section(lines, hs, r"Version history", 2)
+    if rng_v:
+        for i in range(rng_v[0], rng_v[1]):
+            l = lines[i]
+            m = re.match(r"^-\s+\*\*(\d+\.\d+\.\d+)\s*·\s*([0-9-]+)\*\*\s*[—-]\s*(.*)$", l)
+            if m:
+                out.append({"v": m.group(1), "date": m.group(2), "text": m.group(3), "line": i + 1})
+                continue
+            m = re.match(r"^\|\s*(\d+\.\d+\.\d+)\s*\|\s*([0-9-]+)\s*\|(.*)\|\s*$", l)
+            if m:
+                out.append({"v": m.group(1), "date": m.group(2), "text": m.group(3).strip(), "line": i + 1})
+    return out
+
+
+def cites_in(text, idre):
+    ids = list(dict.fromkeys(re.findall(idre, text)))
+    links = list(dict.fromkeys(unquote(m.group(1)) for m in MDLINK.finditer(text)))
+    return ids, links
+
+
+def parse_shape(text, shape):
+    """everything the review needs from the main doc of a system with its own layout; returns parse_main's shape."""
+    lines = text.split("\n")
+    hs = headings(lines)
+    fm = fenced_mask(lines)
+    idre = shape.get("ids", ID_RE)
+    res = {"layers": [], "names": {}, "fields": {}, "decl": {}, "edges": [], "tiers": [], "tags": {}, "tag_groups": {},
+           "derived": [], "library": [], "versions": parse_versions(lines, hs), "binding": None, "fork": None, "instance": None,
+           "shape": True}
+    spec = shape["layers"]
+    layer_recs = []
+
+    def sec(pat, level=None):
+        return section(lines, hs, pat, level)
+
+    kind = spec["kind"]
+    if kind == "table":
+        rng = sec(spec["within"], spec.get("within_level"))
+        if not rng:
+            miss(f"no '{spec['within']}' section")
+            return res
+        tb = next((t for t in tables_in(lines, rng) if col(t["header"], spec["table_has"]) is not None), None)
+        if not tb:
+            miss(f"no layer table in '{spec['within']}'")
+            return res
+        h = tb["header"]
+        cols = spec["cols"]
+        ci = {k: (col(h, v) if isinstance(v, str) else None) for k, v in cols.items() if k != "fields"}
+        fcols = [col(h, p) for p in cols.get("fields", [])]
+        for k, v in cols.items():
+            if k != "fields" and isinstance(v, str) and ci[k] is None:
+                miss(f"layer table: no '{k}' column ({v})")
+        for r_i, r in enumerate(tb["rows"]):
+            idc = ci.get("id") if ci.get("id") is not None else 0
+            mm = re.search(spec["id_re"], tm.strip_md(r[idc]) if idc < len(r) else "")
+            if not mm:
+                continue
+            g = lambda k: r[ci[k]] if ci.get(k) is not None and ci[k] < len(r) else ""
+            qtxt = tm.strip_md(g("q")) or (("mirrors " + tm.strip_md(g("mirror"))) if g("mirror") else "")
+            layer_recs.append({"id": mm.group(1), "name": tm.strip_md(g("name")), "q": qtxt, "line": tb["start"] + 3 + r_i, "ranges": [],
+                               "row": " | ".join(r), "src_cell": g("src") if ci.get("src") is not None else None,
+                               "fcells": [r[c] for c in fcols if c is not None and c < len(r)]})
+    else:
+        within = None
+        if spec.get("within"):
+            within = sec(spec["within"], spec.get("within_level"))
+            if not within:
+                miss(f"no '{spec['within']}' section")
+                return res
+        lo, hi = within if within else (0, len(lines))
+        starts = []
+        if kind == "headings":
+            level = spec["level"]
+            pat = re.compile(spec["match"])
+            after = re.compile(spec["start_after"]) if spec.get("start_after") else None
+            stop = re.compile(spec["stop_at"]) if spec.get("stop_at") else None
+            active = after is None
+            n = 0
+            for (i, lv, txt) in hs:
+                if i < lo or i >= hi or lv != level:
+                    continue
+                if not active:
+                    if after.search(txt):
+                        active = True
+                    continue
+                if stop and stop.search(txt):
+                    break
+                m = pat.search(txt)
+                if m:
+                    n += 1
+                    starts.append((i, spec["id"].format(*m.groups(), n=n), spec["name"].format(*m.groups(), n=n)))
+            for (i, lid, name) in starts:
+                end = hi
+                for (j, lv2, _t) in hs:
+                    if j > i and lv2 <= level:
+                        end = min(end, j)
+                        break
+                layer_recs.append({"id": lid, "name": name, "line": i + 1, "ranges": [(i + 1, end)], "row": None, "q": ""})
+        elif kind == "bold":
+            pat = re.compile(spec["match"])
+            for i in range(lo, hi):
+                m = None if fm[i] else pat.match(lines[i])
+                if m:
+                    starts.append((i, spec["id"].format(*m.groups()), spec["name"].format(*m.groups())))
+            for k, (i, lid, name) in enumerate(starts):
+                end = starts[k + 1][0] if k + 1 < len(starts) else hi
+                layer_recs.append({"id": lid, "name": tm.strip_md(name).strip(" .:—-"), "line": i + 1, "ranges": [(i + 1, end)], "row": None, "q": ""})
+        else:
+            miss(f"unknown layers kind {kind}")
+            return res
+    if not layer_recs:
+        miss("shape matched no layers")
+    # extra sections feed a layer's fields and citations (07: the worked section of each part)
+    for lid, pat in (shape.get("extra") or {}).items():
+        r = sec(pat, 2)
+        for L in layer_recs:
+            if L["id"] == lid and r:
+                L["ranges"].append(r)
+    # aux layers: other structures the doc defines whose named items a writer fills (cards, header, schema)
+    for a in shape.get("aux", []):
+        rec = {"id": a["id"], "name": a["name"], "aux": True, "row": None, "q": "", "ranges": [], "line": 0, "rules": a.get("rules", [])}
+        if a.get("section"):
+            r = sec(a["section"], a.get("level"))
+            if not r:
+                miss(f"aux '{a['name']}': no '{a['section']}' section")
+                continue
+            rec["ranges"], rec["line"] = [r], r[0]
+        elif a.get("line_re"):
+            ln = next((i for i, l in enumerate(lines) if re.match(a["line_re"], l)), None)
+            if ln is None:
+                miss(f"aux '{a['name']}': no line matches {a['line_re']}")
+                continue
+            rec["ranges"], rec["line"] = [(ln, ln + 1)], ln + 1
+        layer_recs.append(rec)
+
+    fields = {}
+
+    def addf(name, lid, parent=None, origin="text", note=None, ids=()):
+        if not name or name.lower() in ("e.g", "i.e") or any(re.search(x, name, re.I) for x in shape.get("exclude", [])):
+            return
+        f = fields.setdefault(name, {"name": name, "layers": [], "parent": parent, "origin": origin, "note": note, "ids": set()})
+        if lid not in f["layers"]:
+            f["layers"].append(lid)
+        if parent and not f["parent"]:
+            f["parent"] = parent
+        f["ids"].update(ids)
+
+    def scoped(rule, lid, name):
+        return f"{lid}·{name}" if rule.get("scope") == "layer" else name
+
+    def each_line(rng, with_fences):
+        for i in range(rng[0], rng[1]):
+            if with_fences or not fm[i]:
+                yield i, lines[i]
+
+    rules = list(shape.get("fields", []))
+    for L in layer_recs:
+        L["tfields"] = []
+        lrules = list(L.get("rules") or []) if L.get("aux") else [r for r in rules if not r.get("only") or L["id"] in r["only"]]
+        for cell in L.get("fcells", []):          # table layers: the field cells
+            if spec.get("cell_style") == "table_fields":
+                for f in table_fields(cell):
+                    addf(f["name"], L["id"], f["parent"], "table", f.get("note"))
+                    L["tfields"].append({"name": f["name"]})
+            else:
+                for m in TICK2.finditer(cell):
+                    if m.group(1) not in TICK_STOP:
+                        addf(m.group(1), L["id"], None, "table")
+                        L["tfields"].append({"name": m.group(1)})
+                if spec.get("cell_bold"):       # bold-led named items in the cell (not cross-references)
+                    for m in re.finditer(r"\*\*([^*]+)\*\*", cell):
+                        nm = clean_label(m.group(1))
+                        if nm and not re.match(r"^cross-ref", nm, re.I):
+                            addf(nm, L["id"], None, "table")
+                            L["tfields"].append({"name": nm})
+        for rule in lrules:
+            k = rule["kind"]
+            for rng in L["ranges"]:
+                if k == "ticks":
+                    for i, l in each_line(rng, rule.get("fences", False)):
+                        for m in TICK2.finditer(l):
+                            if m.group(1) not in TICK_STOP:
+                                addf(m.group(1), L["id"], None, "text", ids=cites_in(l, idre)[0])
+                elif k == "labels":
+                    pat = re.compile(rule["re"])
+                    for i, l in each_line(rng, False):
+                        m = pat.match(l)
+                        nm = clean_label(m.group(1)) if m else ""
+                        if nm:
+                            addf(scoped(rule, L["id"], nm), L["id"], None, "text", ids=cites_in(l, idre)[0])
+                elif k == "bullet_ticks":
+                    for i, l in each_line(rng, False):
+                        m = re.match(r"^\s*[-*]\s+\*{0,2}`([^`]+)`\*{0,2}\s*[—:–-]", l)
+                        if m and re.match(rule.get("token_re", ".*"), m.group(1)):
+                            addf(clean_label(m.group(1)), L["id"], None, "text")
+                elif k in ("table_rows", "table_headers"):
+                    for t in tables_in(lines, rng):
+                        if k == "table_rows":
+                            hc = rule.get("hcol", rule.get("col", 0))
+                            if rule.get("header_match") and not (hc < len(t["header"]) and re.search(rule["header_match"], t["header"][hc], re.I)):
+                                continue
+                            if rule.get("header_skip") and t["header"] and re.search(rule["header_skip"], t["header"][0], re.I):
+                                continue
+                            for r in t["rows"]:
+                                c = rule.get("col", 0)
+                                nm = clean_label(r[c]) if c < len(r) else ""
+                                if nm:
+                                    addf(scoped(rule, L["id"], nm), L["id"], None, "table")
+                        else:
+                            for hcell in t["header"]:
+                                nm = clean_label(hcell)
+                                if nm and not (rule.get("skip") and re.search(rule["skip"], nm, re.I)):
+                                    addf(scoped(rule, L["id"], nm), L["id"], None, "table")
+                elif k == "fence_keys":
+                    inside, lang, top = False, "", None
+                    for i in range(rng[0], rng[1]):
+                        l = lines[i]
+                        if l.strip().startswith("```"):
+                            if not inside:
+                                inside, lang, top = True, l.strip()[3:].strip().lower(), None
+                            else:
+                                inside = False
+                            continue
+                        if not inside or lang == "mermaid" or (rule.get("lang") and lang != rule["lang"]):
+                            continue
+                        m = re.match(r"^(\s*)([A-Za-z][A-Za-z0-9_ /-]{0,30}?):(\s|$)", l)
+                        if not m or m.group(2).lower().startswith(("e.g", "i.e")):
+                            continue
+                        key = m.group(2).strip()
+                        if len(m.group(1)) == 0:
+                            top = key
+                            addf(key, L["id"], None, "text")
+                        else:
+                            addf(f"{top}.{key}" if top else key, L["id"], top, "text")
+        body = "\n".join("\n".join(lines[a:b]) for (a, b) in L["ranges"])
+        src_text = L["src_cell"] if L.get("src_cell") is not None else (L["row"] if L.get("row") is not None else body)
+        L["src_ids"], L["src_links"] = cites_in(src_text, idre)
+        L["src_raw"] = " ".join(f"[[{i}]]" for i in L["src_ids"])
+        L["tier"] = None
+        if not L["q"]:
+            for (a, b) in L["ranges"][:1]:
+                for i in range(a, b):
+                    s = lines[i].strip()
+                    if s and not fm[i] and not s.startswith(("|", "#", ">", "---")):
+                        s = tm.strip_md(re.sub(r"^[-*]\s+", "", s))
+                        L["q"] = (s[:170] + "…") if len(s) > 170 else s
+                        break
+        L["fields_raw"] = ""
+        L["labels"] = []
+        for rule in [r for r in rules if r["kind"] == "labels"]:   # the named parts the layer carries (required-parts check)
+            pat = re.compile(rule["re"])
+            for (a, b) in L["ranges"]:
+                for i in range(a, b):
+                    m = None if fm[i] else pat.match(lines[i])
+                    if m:
+                        L["labels"].append(clean_label(m.group(1)).lower())
+        res["names"][L["name"]] = L["id"]
+    res["layers"] = layer_recs
+    res["fields"] = fields
+    ipat = shape.get("instance")
+    if ipat:
+        for idx, (i, lv, txt) in enumerate(hs):
+            if lv == 2 and re.search(ipat, txt):
+                end = len(lines)
+                for (j, lv2, _t) in hs[idx + 1:]:
+                    if lv2 <= 2:
+                        end = j
+                        break
+                body = "\n".join(lines[i + 1:end])
+                nm = re.sub(r"^THE (?:WORKED )?(?:INSTANCE|PROOF)\W*", "", txt).strip()
+                nm = re.split(r"\s+[—–]\s+|\s+\(", nm)[0].strip(" ,—–-")
+                parked = next((l for l in lines[i + 1:end] if re.search(r"\bparked\b", l, re.I)), "")
+                marker = re.search(r"`(⏸[^`]*)`", parked)
+                res["instance"] = {"name": nm, "line": i + 1, "parked": parked.strip(), "marker": marker.group(1) if marker else "⏸", "marks": body.count("⏸")}
+                break
+    return res
+
+
+def layer_tags(shape):
+    """{layer id: 'static'|'dynamic'} read from the module the shape names (03: the state architecture's section 3 tables)."""
+    spec = shape.get("tags")
+    if not spec or spec.get("kind") != "layer_sections":
+        return None
+    p = os.path.join(SSOT, spec["doc"])
+    if not os.path.exists(p):
+        return {}
+    lines = load_text(p).split("\n")
+    hs = headings(lines)
+    rng = section(lines, hs, spec["section"], spec.get("section_level"))
+    out = {}
+    if not rng:
+        return out
+    sub = [(i, lv, txt) for (i, lv, txt) in hs if rng[0] <= i < rng[1]]
+    for idx, (i, lv, txt) in enumerate(sub):
+        tag = next((t for t, pat in spec["sub"].items() if re.search(pat, txt)), None)
+        if not tag:
+            continue
+        end = rng[1]
+        for (j, lv2, _t) in sub[idx + 1:]:
+            if lv2 <= lv:
+                end = j
+                break
+        for t in tables_in(lines, (i + 1, end)):
+            for r in t["rows"]:
+                m = re.match(spec["id_re"], tm.strip_md(r[0]))
+                if m:
+                    out.setdefault(m.group(1), tag)
+    return out
+
+
 # ---------------------------------------------------------------- git: the version each field first appeared in
 
-def field_history(main_path):
+def field_history(main_path, parser=None):
+    parser = parser or parse_main
     relp = rel(main_path)
     try:
         log = subprocess.run(["git", "-C", ROOT, "-c", "core.quotepath=off", "log", "--follow", "--name-only", "--format=@@%H", "--", relp],
@@ -647,7 +993,7 @@ def field_history(main_path):
     seen = []
     saved = list(MISSES)
     for v in sorted(by_version):
-        r = parse_main(by_version[v])
+        r = parser(by_version[v])
         for name in r["fields"]:
             first.setdefault(name, sv_str(v))
         seen.append(sv_str(v))
@@ -687,19 +1033,27 @@ def main():
         except Exception:
             print("cannot find the main doc for", nn)
             sys.exit(1)
+    shape = SHAPES.get(nn)       # 10/4: a system with its own layout is read by its own shape map; 02 keeps the PART A path
+    if shape:
+        main_id = norm(shape["main"])
+        if main_id not in docs:
+            print("shapes.json names a main doc that is not on disk:", shape["main"])
+            sys.exit(1)
     MD = docs[main_id]
     main_path = os.path.join(ROOT, MD["path"])
     main_text = load_text(main_path)
-    P = parse_main(main_text)
+    parser = (lambda t: parse_shape(t, shape)) if shape else parse_main
+    P = parser(main_text)
     main_fm = parse_fm(main_text)
-    first_seen, hist_versions = field_history(main_path)
+    first_seen, hist_versions = field_history(main_path, parser)
 
+    LTAGS = layer_tags(shape) if shape else None
     names = P["names"]
     layers = P["layers"]
     lids = [L["id"] for L in layers]
     term_of_layer = {}
     for L in layers:
-        k = tm.LAYER_TERM_MAP.get(L["id"])
+        k = None if shape else tm.LAYER_TERM_MAP.get(L["id"])
         term_of_layer[L["id"]] = k if k in TERMS else None
     short = S["name"].split()[0]
 
@@ -727,6 +1081,8 @@ def main():
         needs_tag = bool(intro) and sv(intro) >= since and not (f["origin"] == "declaration" and f["parent"])
         if not intro:
             needs_tag = True  # not in any committed version: new, must be tagged
+        if shape:
+            needs_tag = False  # a shaped system tags per layer or not at all (see the tag check)
         rec = {"name": name, "layers": f["layers"], "parent": f["parent"], "origin": f["origin"], "note": f["note"],
                "tag": tag, "tag_group": P["tag_groups"].get(name, ""), "intro": intro or "uncommitted", "needs_tag": needs_tag,
                "ids": sorted(f["ids"]), "scalar": name.isupper()}
@@ -784,7 +1140,7 @@ def main():
                                      "w": MD["path"]}
     for bid in book_ids:
         if bid not in TERMS:
-            ls = sorted({x[1] for x in feeds_book if x[0] == bid}, key=lambda x: int(x[1:]))
+            ls = sorted({x[1] for x in feeds_book if x[0] == bid}, key=lambda x: [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", x)])
             TERMS[bid] = {"t": bid, "k": "book", "d": "Cited by " + ", ".join(layer_link(l) for l in ls) + ". No distill card in the term register yet.",
                           "w": f"_0.1_BVX_LEARN/KNOWLEDGE_AREAS/{bid}.md"}
     if P["fork"]:
@@ -817,13 +1173,14 @@ def main():
         order = {n: i for i, n in enumerate(f2["name"] for f2 in L["tfields"])}
         lf.sort(key=lambda f: (order.get(f["name"], 999), f["intro"]))
         d = P["decl"].get(L["id"])
-        if not d:
+        if not d and not shape:
             miss(f"{L['id']}: no domain declaration")
         layers_out.append({
             "id": L["id"], "name": L["name"], "q": L["q"], "tier": L["tier"], "term": term_of_layer.get(L["id"]),
             "src_html": render(L["src_raw"]), "src_ids": L["src_ids"], "src_links": L["src_links"], "line": L["line"],
             "fields": [f["name"] for f in lf],
             "decl_html": render(d["text"]) if d else "", "decl_line": d["line"] if d else None,
+            "aux": bool(L.get("aux")), "tag": (LTAGS or {}).get(L["id"]),
         })
 
     # ---- feed edges (dedupe exact repeats, keep every cite)
@@ -838,31 +1195,73 @@ def main():
     feed_edges = list(edges.values())
 
     # ---- DONE: the definition of done, every line with evidence
+    # A check with "na": True does not apply to this system's layout; the reason is shown on the page and listed in the build output.
     checks = []
+
+    def na(label, reason):
+        return {"label": label, "ok": True, "na": True, "ev": [], "sum": "n/a for this layout: " + reason}
+
     ev = [{"k": d["file"], "v": d["version"] or "none", "ok": bool(d["version"]) and sv(d["version"]) >= (1, 0, 0)} for d in sdocs]
     checks.append({"label": f"Every {short.lower()} doc is at 1.0.0 or later", "ok": all(x["ok"] for x in ev), "ev": ev,
                    "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} docs"})
     ev = [{"k": d["file"], "v": f"⧗ {d['open']}", "ok": d["open"] == 0} for d in sdocs]
     checks.append({"label": "Open ⧗ marks = 0", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(d['open'] for d in sdocs)} open across {len(sdocs)} docs"})
     mods = [d for d in sdocs if d["id"] != main_id]
-    ev = [{"k": d["file"], "v": ("module_of " + d["module_of"]) if d["module_of"] else "no module_of", "ok": d["module_of"] == main_id} for d in mods]
-    checks.append({"label": "Every module carries module_of", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} point at {main_id}"})
+    sys_ids = {d["id"] for d in sdocs}
+    if shape and not mods:
+        checks.append(na("Every other doc is a module_of a doc of this system", "the system has one doc, so there is no module to point anywhere"))
+    elif shape:
+        # a shaped system's docs may hang from more than one parent: a module must point at a doc of THIS system
+        ev = [{"k": d["file"], "v": ("module_of " + d["module_of"]) if d["module_of"] else "no module_of",
+               "ok": d["module_of"] in sys_ids} for d in mods]
+        checks.append({"label": "Every other doc is a module_of a doc of this system", "ok": all(x["ok"] for x in ev), "ev": ev,
+                       "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} point at a doc in {S['folder'].split('/')[-1]}"})
+    else:
+        ev = [{"k": d["file"], "v": ("module_of " + d["module_of"]) if d["module_of"] else "no module_of", "ok": d["module_of"] == main_id} for d in mods]
+        checks.append({"label": "Every module carries module_of", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} point at {main_id}"})
     tlinks = list(dict.fromkeys(unquote(m.group(1)) for m in re.finditer(r"\]\(([^)]*template[^)]*\.md)\)", main_text)))
     ev = []
     for t in tlinks:
         p = os.path.normpath(os.path.join(os.path.dirname(main_path), t))
         ev.append({"k": os.path.basename(t), "v": (docs.get(norm(p), {}).get("version") or "exists") if os.path.exists(p) else "MISSING", "ok": os.path.exists(p)})
-    checks.append({"label": "Both ingest templates exist" if len(ev) == 2 else "Every ingest template the main doc names exists",
-                   "ok": all(x["ok"] for x in ev), "ev": ev,
-                   "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} linked from the main doc" if ev else "the main doc names no ingest template"})
-    need = [f for f in fields if f["needs_tag"]]
-    untagged = [f for f in need if not f["tag"]]
-    ev = [{"k": f["name"], "v": f"{f['intro']} · " + (f["tag"] or "UNTAGGED"), "ok": bool(f["tag"])} for f in sorted(need, key=lambda f: (bool(f["tag"]), f["intro"], f["name"]))]
-    checks.append({"label": ("Every field carries a static/dynamic/derived tag" if P.get("tag_every") else f"Every field added {sv_str(since)}+ carries a static/dynamic tag"), "ok": not untagged, "ev": ev,
-                   "sum": f"{len(need) - len(untagged)} of {len(need)} tagged" + (f" · untagged: {', '.join(f['name'] for f in untagged)}" if untagged else "")
-                          + f" · first-seen from {len(hist_versions)} committed versions ({', '.join(hist_versions)})"})
-    ev = [{"k": f"{L['id']} {L['name']}", "v": f"{len(L['src_ids']) + len(L['src_links'])} cited", "ok": (len(L['src_ids']) + len(L['src_links'])) > 0} for L in layers]
+    if shape and not ev:
+        checks.append(na("Every ingest template the main doc names exists", "the main doc names no ingest template, so there is nothing to find"))
+    else:
+        checks.append({"label": "Both ingest templates exist" if len(ev) == 2 else "Every ingest template the main doc names exists",
+                       "ok": all(x["ok"] for x in ev), "ev": ev,
+                       "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} linked from the main doc" if ev else "the main doc names no ingest template"})
+    if shape:
+        if shape.get("tags"):
+            lt = LTAGS or {}
+            ev = [{"k": f"{L['id']} {L['name']}", "v": lt.get(L["id"]) or "NO TAG", "ok": bool(lt.get(L["id"]))} for L in layers if not L.get("aux")]
+            checks.append({"label": "Every layer carries a static/dynamic tag (read from the state module's section 3)", "ok": all(x["ok"] for x in ev), "ev": ev,
+                           "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} layers tagged in {os.path.basename(shape['tags']['doc'])}"})
+        else:
+            checks.append(na("Every field carries a static/dynamic tag", shape["tags_na"]))
+    else:
+        need = [f for f in fields if f["needs_tag"]]
+        untagged = [f for f in need if not f["tag"]]
+        ev = [{"k": f["name"], "v": f"{f['intro']} · " + (f["tag"] or "UNTAGGED"), "ok": bool(f["tag"])} for f in sorted(need, key=lambda f: (bool(f["tag"]), f["intro"], f["name"]))]
+        checks.append({"label": ("Every field carries a static/dynamic/derived tag" if P.get("tag_every") else f"Every field added {sv_str(since)}+ carries a static/dynamic tag"), "ok": not untagged, "ev": ev,
+                       "sum": f"{len(need) - len(untagged)} of {len(need)} tagged" + (f" · untagged: {', '.join(f['name'] for f in untagged)}" if untagged else "")
+                              + f" · first-seen from {len(hist_versions)} committed versions ({', '.join(hist_versions)})"})
+    main_layers = [L for L in layers if not L.get("aux")]
+    ev = [{"k": f"{L['id']} {L['name']}", "v": f"{len(L['src_ids']) + len(L['src_links'])} cited", "ok": (len(L['src_ids']) + len(L['src_links'])) > 0} for L in (main_layers if shape else layers)]
     checks.append({"label": "Every layer has at least one cited source", "ok": all(x["ok"] for x in ev), "ev": ev, "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} layers"})
+    if shape:
+        if shape.get("layers_need_fields"):
+            ev = [{"k": f"{L['id']} {L['name']}", "v": f"{sum(1 for f in fields if L['id'] in f['layers'])} fields", "ok": any(L['id'] in f['layers'] for f in fields)} for L in main_layers]
+            checks.append({"label": f"Every {shape['layer_word']} defines at least one named field", "ok": all(x["ok"] for x in ev), "ev": ev,
+                           "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} {shape['layer_word']}s name a field"})
+        if shape.get("required_parts"):
+            need_parts = [x.lower() for x in shape["required_parts"]]
+            ev = []
+            for L in main_layers:
+                have = set(L.get("labels", []))
+                miss_p = [x for x in shape["required_parts"] if x.lower() not in have]
+                ev.append({"k": f"{L['id']} {L['name']}", "v": ("all " + str(len(need_parts)) + " parts") if not miss_p else "missing: " + ", ".join(miss_p), "ok": not miss_p})
+            checks.append({"label": f"Every {shape['layer_word']} carries its {len(need_parts)} parts ({', '.join(shape['required_parts'])})", "ok": all(x["ok"] for x in ev), "ev": ev,
+                           "sum": f"{sum(x['ok'] for x in ev)} of {len(ev)} {shape['layer_word']}s complete"})
     inst = P["instance"] or {}
     inst_node = None
     if inst.get("name"):
@@ -871,14 +1270,17 @@ def main():
         if os.path.exists(cand):
             nt = load_text(cand)
             inst_node = {"path": rel(cand), "status": str(parse_fm(nt).get("status", "")), "marks": nt.count("⏸")}
-    if not inst.get("parked"):
-        # RULED 10/4 (BOLO 100, "RAC" = rec): every worked-instance fill pass is parked to phase 2 by ruling
-        inst = dict(inst, parked=inst.get("parked") or "Worked-instance fill pass parked to phase 2 by ruling (BOLO 100, 10/4).")
-    ev = [{"k": "instance section", "v": f"{inst.get('marks', 0)} × {inst.get('marker', '⏸')}", "ok": bool(inst.get("parked"))}]
-    if inst_node:
-        ev.append({"k": os.path.basename(inst_node["path"]), "v": f"status: {inst_node['status']} · {inst_node['marks']} × ⏸", "ok": True})
-    checks.append({"label": f"Worked instance: {inst.get('name', '—')} — fill pass parked by ruling", "ok": bool(inst.get("parked")), "ev": ev,
-                   "sum": tm.strip_md(inst.get("parked", "no parking ruling found"))})
+    if shape and not inst:
+        checks.append(na("Worked instance: fill pass parked by ruling", shape.get("instance_na", "the main doc has no worked-instance section")))
+    else:
+        if not inst.get("parked"):
+            # RULED 10/4 (BOLO 100, "RAC" = rec): every worked-instance fill pass is parked to phase 2 by ruling
+            inst = dict(inst, parked=inst.get("parked") or "Worked-instance fill pass parked to phase 2 by ruling (BOLO 100, 10/4).")
+        ev = [{"k": "instance section", "v": f"{inst.get('marks', 0)} × {inst.get('marker', '⏸')}", "ok": bool(inst.get("parked"))}]
+        if inst_node:
+            ev.append({"k": os.path.basename(inst_node["path"]), "v": f"status: {inst_node['status']} · {inst_node['marks']} × ⏸", "ok": True})
+        checks.append({"label": f"Worked instance: {inst.get('name', '—')} — fill pass parked by ruling", "ok": bool(inst.get("parked")), "ev": ev,
+                       "sum": tm.strip_md(inst.get("parked", "no parking ruling found"))})
     # guard (10/4): a page that parsed no layers and no fields has checked nothing, so it cannot pass
     checks.insert(0, {"label": "The builder read the system's structure", "ok": bool(layers) and bool(fields),
                       "ev": [{"k": "layers", "v": str(len(layers)), "ok": bool(layers)}, {"k": "fields", "v": str(len(fields)), "ok": bool(fields)}],
@@ -969,7 +1371,7 @@ def main():
     data = {
         "meta": {"key": nn, "short": short.upper(), "system": S["name"], "main": main_id, "main_path": MD["path"], "version": MD["version"],
                  "last_updated": MD["last_updated"], "trunk": str(main_fm.get("trunk", "")), "applies_to": main_fm.get("applies_to", []),
-                 "done": done, "built": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "builder": "_tools/review/build.py",
+                 "done": done, "shaped": bool(shape), "built": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "builder": "_tools/review/build.py",
                  "out": f"_tools/review/out/REVIEW-{nn}.html", "hist": hist_versions, "status": tm.strip_md(str(main_fm.get("status", "")))[:900]},
         "systems": [{k: s[k] for k in ("id", "name", "folder", "docs", "open", "vmin", "vmax", "deps")} for s in systems.values()],
         "docs": {d["id"]: {k: d.get(k) for k in ("id", "sys", "path", "file", "version", "role", "purpose", "module_of", "deps", "deps_sys", "open", "last_updated", "category")}
@@ -1003,10 +1405,16 @@ def main():
     kinds = {}
     for n in gn.values():
         kinds[n["kind"]] = kinds.get(n["kind"], 0) + 1
-    print(f"REVIEW {nn} · {short} {MD['version']} · systems {len(systems)} · docs {len(docs)} ({len(sdocs)} in system) · layers {len(layers)} "
+    print(f"REVIEW {nn} · {short} {MD['version']} · systems {len(systems)} · docs {len(docs)} ({len(sdocs)} in system) · layers {len(main_layers)}{(' + ' + str(len(layers) - len(main_layers)) + ' aux') if len(layers) != len(main_layers) else ''} "
           f"· fields {len(fields)} · feeds {len(feed_edges)} · books {len(book_ids)} (library {len(P['library'])})")
     print(f"graph: {len(gn)} nodes ({', '.join(f'{k} {v}' for k, v in sorted(kinds.items()))}) · {len(gl)} edges")
-    print("DONE:", "ALL PASS" if done else "OPEN", "·", " | ".join(("✓ " if c["ok"] else "✗ ") + c["label"] for c in checks))
+    print("DONE:", "ALL PASS" if done else "OPEN", "·", " | ".join(("n/a " if c.get("na") else ("✓ " if c["ok"] else "✗ ")) + c["label"] for c in checks))
+    for c in checks:
+        if c.get("na"):
+            print("n/a:", c["label"], "->", c["sum"])
+        elif not c["ok"]:
+            bad = [x for x in c["ev"] if not x["ok"]]
+            print("FAIL:", c["label"], "|", c["sum"][:200], "|", "; ".join(f"{x['k']} [{x['v']}]" for x in bad)[:1500])
     if unresolved:
         print(f"note: {len(unresolved)} dependency string(s) across all systems name no doc on disk (drawn to the system when the number is known)")
     if MISSES:

@@ -470,21 +470,22 @@ const EDGE_CLS = { derives: 'acc', feeds: 'acc', fed: 'acc', reduces: 'warn', re
 function tierOf(n) { return (DATA.tiers || []).find(t => t.n === n) || {}; }
 function level3() {
   WIRES = DATA.feeds.map(e => ({ a: e.from, b: e.to, cls: EDGE_CLS[e.kind] || 'mid', title: `${e.from} ${e.kind} ${e.to} · line ${e.cites.map(c => c.line).join(', ')}`, bend: e.kind.startsWith('path') ? 0.08 : 0.16 }));
+  const flat = !LAYERS.some(l => l.tier);   // a system whose layers carry no tier: one plain grid, four across
   const t3 = LAYERS.filter(l => l.tier === 3), half = Math.ceil(t3.length / 2);
-  const colOf = l => l.tier === 1 ? 1 : l.tier === 2 ? 2 : (t3.indexOf(l) < half ? 3 : 4);
-  const rowOf = l => { const same = LAYERS.filter(x => colOf(x) === colOf(l)); return 2 + same.indexOf(l); };
+  const colOf = l => flat ? (LAYERS.indexOf(l) % 4) + 1 : l.tier === 1 ? 1 : l.tier === 2 ? 2 : (t3.indexOf(l) < half ? 3 : 4);
+  const rowOf = l => flat ? 1 + Math.floor(LAYERS.indexOf(l) / 4) : (() => { const same = LAYERS.filter(x => colOf(x) === colOf(l)); return 2 + same.indexOf(l); })();
   const lbox = l => `<button class="box" data-node="${l.id}" data-t="${esc(l.term || '')}" data-layer="${l.id}" style="grid-column:${colOf(l)};grid-row:${rowOf(l)}">
-      <span class="id">${esc(l.id)} · tier ${l.tier}</span><span class="nm">${esc(l.name)}</span>
+      <span class="id">${esc(l.id)}${l.tier ? ' · tier ' + l.tier : ''}${l.aux ? ' · aux' : ''}</span><span class="nm">${esc(l.name)}</span>
       <span class="ln">${esc(l.q)}</span>
       <span class="meta"><span>${l.fields.length} fields</span><span>${l.src_ids.length + l.src_links.length} sources</span></span></button>`;
   const th = (n, col, span) => { const t = tierOf(n); return `<div class="tierh" style="grid-column:${col} / span ${span};grid-row:1"><b>Tier ${n} · ${esc(t.layers || '')}</b><span>${esc(t.cls || '')} · ${esc(t.budget || '')}</span></div>`; };
   const hasSF = DATA.feeds.some(e => e.from === 'storyform'), hasFork = !!DATA.fork;
-  const maxRow = 2 + Math.max(...[1, 2, 3, 4].map(c => LAYERS.filter(l => colOf(l) === c).length));
+  const maxRow = flat ? 2 + Math.ceil(LAYERS.length / 4) : 2 + Math.max(...[1, 2, 3, 4].map(c => LAYERS.filter(l => colOf(l) === c).length));
   const ext = (hasFork ? `<button class="box ext" data-node="fork" data-t="x:fork" style="grid-column:3;grid-row:${maxRow}"><span class="id">method rule · line ${DATA.fork.line}</span><span class="nm">${esc(DATA.fork.title)}</span><span class="ln">path (a) refused · path (b) faced</span></button>` : '') +
     (hasSF ? `<button class="box ext" data-node="storyform" data-t="storyform" style="grid-column:4;grid-row:${maxRow}"><span class="id">outside the stack</span><span class="nm">The storyform</span><span class="ln">feeds the last layer independently</span></button>` : '');
   const elist = DATA.feeds.map(e => `<div class="e"><div><b>${nodeLabel(e.from)} → ${nodeLabel(e.to)}</b><span class="k">${esc(e.kind)}</span></div><div>${e.cites.map(c => `<span class="lnum">line ${c.line}</span><q>${esc(c.text)}</q>`).join('<br>')}</div></div>`).join('');
   const derived = (DATA.derived || []).map(d => `<dt>${T(d.name.toLowerCase().replace(/\s+/g, '-'), esc(d.name))}</dt><dd>${esc(d.formula)}</dd>`).join('');
-  return `<div class="stage"><svg class="wires" aria-hidden="true"></svg><div class="grid g3" style="grid-template-rows:repeat(${maxRow}, auto)">${[1, 2, 3].map(n => th(n, n, n === 3 ? 2 : 1) + LAYERS.filter(l => l.tier === n).map(lbox).join('')).join('')}${ext}</div></div>
+  return `<div class="stage"><svg class="wires" aria-hidden="true"></svg><div class="grid g3" style="grid-template-rows:repeat(${maxRow}, auto)">${flat ? LAYERS.map(lbox).join('') : [1, 2, 3].map(n => th(n, n, n === 3 ? 2 : 1) + LAYERS.filter(l => l.tier === n).map(lbox).join('')).join('')}${ext}</div></div>
   <div class="legend"><span><i style="border-color:var(--acc)"></i>derives · feeds</span><span><i class="dash" style="border-color:var(--warn)"></i>reduces · stalls (path a)</span><span><i class="dash" style="border-color:var(--ok)"></i>path b</span><span><i style="border-color:var(--dim)"></i>reads · points · shares</span><span>click a layer for its fields</span></div>
   <div class="cols2">
     <div class="card"><h3>Feed arrows <small>${DATA.feeds.length} parsed · each cites its line in <span class="pathref">${esc(shortDoc(META.main))}</span></small></h3><div class="edgelist">${elist}</div></div>
@@ -504,9 +505,9 @@ function fieldRows(l) {
   top.forEach(f => { out.push([f, false]); l.fields.filter(c => FIELDS[c].parent === f).forEach(c => out.push([c, true])); });
   return out.map(([f, sub]) => {
     const r = FIELDS[f];
-    const tag = r.tag ? `<span class="chip tag-${r.tag}">${esc(r.tag)}</span>` : `<span class="chip tag-none" title="${r.needs_tag ? 'needs a tag' : 'predates the tag table: the state module\'s Decision Test decides'}">${r.needs_tag ? 'untagged' : 'pre-tag'}</span>`;
+    const tag = r.tag ? `<span class="chip tag-${r.tag}">${esc(r.tag)}</span>` : `<span class="chip tag-none" title="${DATA.meta.shaped ? 'this layout tags per layer or not at all (see DONE)' : r.needs_tag ? 'needs a tag' : 'predates the tag table: the state module\'s Decision Test decides'}">${DATA.meta.shaped ? 'n/a' : r.needs_tag ? 'untagged' : 'pre-tag'}</span>`;
     const notes = [r.note, r.layers.length > 1 ? 'also on ' + r.layers.filter(x => x !== l.id).join(', ') : '', r.scalar ? 'the layer\'s scalar' : ''].filter(Boolean).join(' · ');
-    return `<tr class="${sub ? 'sub' : ''}"><td>${T('fld:' + f, `<code class="inl">${esc(f)}</code>`)}${notes ? `<span class="n">${esc(notes)}</span>` : ''}</td><td>${tag}</td><td class="v">${esc(r.intro)}</td><td class="v">${esc(r.origin === 'table' ? 'table' : 'decl.')}</td></tr>`;
+    return `<tr class="${sub ? 'sub' : ''}"><td>${T('fld:' + f, `<code class="inl">${esc(f)}</code>`)}${notes ? `<span class="n">${esc(notes)}</span>` : ''}</td><td>${tag}</td><td class="v">${esc(r.intro)}</td><td class="v">${esc(r.origin === 'table' ? 'table' : r.origin === 'text' ? 'text' : 'decl.')}</td></tr>`;
   }).join('');
 }
 function level4() {
@@ -518,13 +519,13 @@ function level4() {
   const libs = DATA.library.filter(b => b.feeds.includes(l.id));
   const tagged = l.fields.filter(f => FIELDS[f].tag).length;
   return `<div class="navrow">${prev ? `<button class="btn" data-goto="${prev.id}">‹ ${esc(prev.id)} ${esc(prev.name)}</button>` : ''}${next ? `<button class="btn" data-goto="${next.id}">${esc(next.id)} ${esc(next.name)} ›</button>` : ''}</div>
-  <div class="panel-head"><h2>${layerT(l.id)}</h2><span class="sub">tier ${l.tier} · ${esc(tierOf(l.tier).cls || '')} · PART A line ${l.line}</span></div>
+  <div class="panel-head"><h2>${layerT(l.id)}</h2><span class="sub">${l.tier ? 'tier ' + l.tier + ' · ' + esc(tierOf(l.tier).cls || '') + ' · ' : ''}${l.tag ? esc(l.tag) + ' · ' : ''}${l.aux ? 'aux structure · ' : ''}${DATA.meta.shaped ? 'main doc' : 'PART A'} line ${l.line}</span></div>
   <p class="l4 q" style="display:block">${esc(l.q)}</p>
   <div class="l4">
-    <div class="card"><h3>Fields <small>${l.fields.length} · ${tagged} tagged static/dynamic · first-seen version from git</small></h3>
+    <div class="card"><h3>Fields <small>${l.fields.length}${DATA.meta.shaped ? '' : ' · ' + tagged + ' tagged static/dynamic'} · first-seen version from git</small></h3>
       <table class="fl"><thead><tr><th>Field</th><th>Tag</th><th>First in</th><th>From</th></tr></thead><tbody>${fieldRows(l)}</tbody></table></div>
     <div class="stack">
-      <div class="card"><h3>Sources <small>PART A</small></h3><div class="prose">${l.src_html}</div>
+      <div class="card"><h3>Sources <small>${DATA.meta.shaped ? 'cited in the layer' : 'PART A'}</small></h3><div class="prose">${l.src_html}</div>
         ${libs.length ? `<div style="margin-top:8px" class="lbl">feeds hardest (library)</div><div class="prose">${libs.map(b => T(b.id, esc(b.id)) + ' ' + b.book_html).join('<br>')}</div>` : ''}</div>
       <div class="card"><h3>Feeds <small>${ins.length} in · ${outs.length} out</small></h3><div class="edgelist">${ins.map(e => fe(e, 'in')).join('') + outs.map(e => fe(e, 'out')).join('') || '<span class="c-dim">The declarations state no feed for this layer.</span>'}</div></div>
     </div>
@@ -634,11 +635,11 @@ window.addEventListener('resize', () => { if (gReady && TAB === 'graph') { clear
 
 /* =================================================================== DONE */
 (function renderDone() {
-  const C = DATA.checks, pass = C.filter(c => c.ok).length;
-  const checks = C.map(c => `<details class="chk" ${c.ok ? '' : 'open'}><summary><span class="mk ${c.ok ? 'c-ok' : 'c-warn'}">${c.ok ? '✓' : '✗'}</span><span class="lb">${esc(c.label)}<span class="sm">${esc(c.sum)}</span></span><span class="ct">${c.ev.filter(x => x.ok).length}/${c.ev.length} ▾</span></summary>
+  const C = DATA.checks, pass = C.filter(c => c.ok && !c.na).length, nNa = C.filter(c => c.na).length;
+  const checks = C.map(c => `<details class="chk" ${c.ok ? '' : 'open'}><summary><span class="mk ${c.na ? 'c-dim' : c.ok ? 'c-ok' : 'c-warn'}">${c.na ? '–' : c.ok ? '✓' : '✗'}</span><span class="lb">${esc(c.label)}<span class="sm">${esc(c.sum)}</span></span><span class="ct">${c.ev.filter(x => x.ok).length}/${c.ev.length} ▾</span></summary>
     <div class="ev">${c.ev.map(x => `<div><span class="${x.ok ? 'c-ok' : 'c-warn'}">${x.ok ? '✓' : '✗'}</span><span class="k" title="${esc(x.k)}">${FIELDS[x.k] ? T('fld:' + x.k, esc(x.k)) : esc(x.k)}</span><span class="v">${esc(x.v)}</span></div>`).join('')}</div></details>`).join('');
   const closed = DATA.closed.map(v => `<div class="card"><div class="vh"><b>${esc(v.v)}</b><span>${esc(v.date)} · version history line ${v.line}</span></div><div class="prose" style="margin-top:4px">${v.head}</div><ul>${v.items.map(i => `<li>${i}</li>`).join('')}</ul></div>`).join('');
-  $('#p-done').innerHTML = `<div class="verdict"><span class="big ${META.done ? 'c-ok' : 'c-warn'}">${META.done ? 'DONE' : 'OPEN'}</span><p><b>${pass} of ${C.length}</b> Definition-of-Done lines pass for ${esc(META.short)} ${esc(META.version)}. Each line is computed by the builder from the docs, their frontmatter and the main doc's git history; open a line for its evidence.</p></div>
+  $('#p-done').innerHTML = `<div class="verdict"><span class="big ${META.done ? 'c-ok' : 'c-warn'}">${META.done ? 'DONE' : 'OPEN'}</span><p><b>${pass} of ${C.length - nNa}</b> Definition-of-Done lines pass${nNa ? ` (${nNa} more n/a for this layout, each with its reason)` : ''} for ${esc(META.short)} ${esc(META.version)}. Each line is computed by the builder from the docs, their frontmatter and the main doc's git history; open a line for its evidence.</p></div>
     <div class="checks">${checks}</div>
     <div class="panel-head"><h2>What closed it</h2><span class="sub">the ${esc(META.version.split('.')[0])}.x entries of the version history</span></div><div class="closed">${closed}</div>`;
 })();
