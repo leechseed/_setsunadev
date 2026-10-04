@@ -16,8 +16,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | Top-level items | **9126** |
 | With a PDF attachment | 9126 |
 | PDF present on disk | 9035 |
-| Already in catalog.json (BVX id) | 1020 |
-| **New since the Dec-2023 catalog** | **8106** |
+| Already in catalog.json (BVX id) | 1022 |
+| **New since the Dec-2023 catalog** | **8104** |
 | Story-side (CRE + LIT by catalog) | 660 |
 | **Spine-keyed from Chief's tags** | **909** |
 | With PDF annotations | 5 (375 highlights) |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (8106)
+## New since the catalog (8104)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -7190,7 +7190,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Tatham C., Seaman J. - Fashion Design Drawing Course - 2003 |  | 080004 - art |
 |  | TC1 - Into the Haunted Forest |  |  |
 |  | TDK_DS_000577_ICM_45686 |  |  |
-|  | Teach Yourself How to Learn Strategies You Can Use to Ace Any Course a |  etc. | HEALTH & FITNESS |
 |  | teacher_and_students_steps_for_global_inferences |  |  |
 |  | TEAM DEAD NOTEBOOK 1 SCANNED |  | PROJECT_LAWD |
 |  | Tears at Bitter Manor |  |  |
@@ -7488,7 +7487,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | The Mechromancer - A Theurge Tinker Prestige Class |  |  |
 |  | The Metric Society On the Quantification of the Social | Steffen Mau |  |
 |  | The Midnight Mirror |  |  |
-|  | The Minto Pyramid Principle Logic In Writing, Thinking And Problem Sol | Barbara Minto |  |
 |  | The Mismade Girl | Sasha Grey |  |
 |  | The Mismade Girl | Sasha Grey |  |
 |  | The Moonscar |  |  |

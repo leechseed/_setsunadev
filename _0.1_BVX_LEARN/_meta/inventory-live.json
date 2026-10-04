@@ -6844,7 +6844,7 @@
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\GQSXDTTL\\Design Systems - A practical guide to creating design languages for digital products (Alla Kholmatova)9783945749593 (z-lib.org).pdf",
   "annotations": 0,
   "notes": [],
-  "bvx": "BVX.1137",
+  "bvx": "BVX.1191",
   "subject": "DSN",
   "added": "",
   "modified": "",
@@ -13704,7 +13704,7 @@
   "pdf": "C:\\Users\\U01_LEECHSEED\\Zotero\\storage\\PFQ7IBKS\\Information Graphics A Comprehensive Illustrated Reference Visual Tools for Analyzing, Managing, and Communicating (Robert L. Harris)9780964692503 (Z-Library).pdf",
   "annotations": 0,
   "notes": [],
-  "bvx": "BVX.1138",
+  "bvx": "BVX.1192",
   "subject": "MSX",
   "added": "",
   "modified": "",
@@ -23076,6 +23076,38 @@
   "junk_title": false
  },
  {
+  "zid": 979,
+  "zkey": "R2NSK9RP",
+  "type": "loose-attachment",
+  "title": "Teach Yourself How to Learn Strategies You Can Use to Ace Any Course at Any Level",
+  "authors": [
+   " etc."
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [
+   "HEALTH & FITNESS"
+  ],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\R2NSK9RP\\Teach Yourself How to Learn Strategies You Can Use to Ace Any Course at Any Level ( etc.) (z-lib.org).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": "BVX.1194",
+  "subject": "FIT",
+  "added": "",
+  "modified": "",
+  "src": "zotero-loose",
+  "spine_src": "subject-off",
+  "subject_src": "catalog",
+  "junk_title": false
+ },
+ {
   "zid": 1773,
   "zkey": "FY3RS7NE",
   "type": "journalArticle",
@@ -26505,6 +26537,35 @@
   "subject_src": "catalog"
  },
  {
+  "zid": null,
+  "zkey": "",
+  "type": "drop",
+  "title": "The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving",
+  "authors": [
+   "Barbara Minto"
+  ],
+  "year": "",
+  "publisher": "",
+  "isbn": "",
+  "pages": "",
+  "abstract": false,
+  "tags": [],
+  "collections": [],
+  "spine": [],
+  "has_pdf": true,
+  "pdf_exists": true,
+  "pdf": "Q:/_PDF_DROP\\The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving (Barbara Minto)9780273710516 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "annotations": 0,
+  "notes": [],
+  "bvx": "BVX.1195",
+  "subject": "CRE",
+  "added": "2026-10-04",
+  "modified": "2026-10-04",
+  "src": "drop",
+  "spine_src": "drop-unkeyed",
+  "subject_src": "catalog"
+ },
+ {
   "zid": 1103,
   "zkey": "CB8IQVLQ",
   "type": "loose-attachment",
@@ -27166,7 +27227,7 @@
   "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\ELGMFHLV\\The Photographer’s Eye Graphic Guide Composition and Design for Better Digital Photos (Michael Freeman)9780240824260 (z-lib.org).pdf",
   "annotations": 0,
   "notes": [],
-  "bvx": "BVX.1139",
+  "bvx": "BVX.1193",
   "subject": "VIS",
   "added": "",
   "modified": "",
@@ -227141,38 +227202,6 @@
   "junk_title": false
  },
  {
-  "zid": 979,
-  "zkey": "R2NSK9RP",
-  "type": "loose-attachment",
-  "title": "Teach Yourself How to Learn Strategies You Can Use to Ace Any Course at Any Level",
-  "authors": [
-   " etc."
-  ],
-  "year": "",
-  "publisher": "",
-  "isbn": "",
-  "pages": "",
-  "abstract": false,
-  "tags": [
-   "HEALTH & FITNESS"
-  ],
-  "collections": [],
-  "spine": [],
-  "has_pdf": true,
-  "pdf_exists": true,
-  "pdf": "D:\\My Google Drive\\ZOTERO_DATA_DIRECTORY\\storage\\R2NSK9RP\\Teach Yourself How to Learn Strategies You Can Use to Ace Any Course at Any Level ( etc.) (z-lib.org).pdf",
-  "annotations": 0,
-  "notes": [],
-  "bvx": null,
-  "subject": "FIT",
-  "added": "",
-  "modified": "",
-  "src": "zotero-loose",
-  "spine_src": "subject-off",
-  "subject_src": "catalog",
-  "junk_title": false
- },
- {
   "zid": null,
   "zkey": "",
   "type": "drop",
@@ -235474,35 +235503,6 @@
   "src": "drop",
   "spine_src": "drop-unkeyed",
   "subject_src": "none"
- },
- {
-  "zid": null,
-  "zkey": "",
-  "type": "drop",
-  "title": "The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving",
-  "authors": [
-   "Barbara Minto"
-  ],
-  "year": "",
-  "publisher": "",
-  "isbn": "",
-  "pages": "",
-  "abstract": false,
-  "tags": [],
-  "collections": [],
-  "spine": [],
-  "has_pdf": true,
-  "pdf_exists": true,
-  "pdf": "Q:/_PDF_DROP\\The Minto Pyramid Principle Logic In Writing, Thinking And Problem Solving (Barbara Minto)9780273710516 (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-  "annotations": 0,
-  "notes": [],
-  "bvx": null,
-  "subject": "CRE",
-  "added": "2026-10-04",
-  "modified": "2026-10-04",
-  "src": "drop",
-  "spine_src": "drop-unkeyed",
-  "subject_src": "catalog"
  },
  {
   "zid": 1583,

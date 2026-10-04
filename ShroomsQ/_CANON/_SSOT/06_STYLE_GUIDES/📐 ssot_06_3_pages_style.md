@@ -49,14 +49,14 @@ Tier 1 of the Zotero shelf's **06.3 Pages** section, `_tools/bolostatus/work/92/
 | BVX | Title | Author | Year |
 |---|---|---|---|
 | BVX.0292 | Building Design Systems: Unify User Experiences through a Shared Design Language | Vesselov, Davis | 2019 |
-| BVX.1137 | Design Systems: A Practical Guide to Creating Design Languages for Digital Products | Kholmatova | — |
+| BVX.1191 | Design Systems: A Practical Guide to Creating Design Languages for Digital Products | Kholmatova | — |
 | BVX.0294 | Designing Information: Human Factors and Common Sense in Information Design | Katz | — |
 | BVX.0295 | Designing Interfaces: Patterns for Effective Interaction Design | Tidwell, Brewer, Valencia | — |
 | BVX.1031 | Elements of Design: Rowena Reed Kostellow and the Structure of Visual Relationships | Hannah | 2002 |
 | BVX.1042 | Grammar of the Shot | Bowen | 2018 |
-| BVX.1138 | Information Graphics: A Comprehensive Illustrated Reference | Harris | — |
+| BVX.1192 | Information Graphics: A Comprehensive Illustrated Reference | Harris | — |
 | BVX.1047 | Layout and Composition for Animation | Ghertner | 2010 |
-| BVX.1139 | The Photographer's Eye Graphic Guide: Composition and Design for Better Digital Photos | Freeman | — |
+| BVX.1193 | The Photographer's Eye Graphic Guide: Composition and Design for Better Digital Photos | Freeman | — |
 | BVX.1103 | The Visual Story: Creating the Structure of Film, TV, and Digital Media | Block | 2013 |
 | BVX.0301 | Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions | Lidwell, Holden, Butler | 2023 |
 
@@ -64,7 +64,7 @@ Tier 1 of the Zotero shelf's **06.3 Pages** section, `_tools/bolostatus/work/92/
 
 RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): (1) the five id-less sources get BVX ids on the next inventory pass · (2) page rules pull from Harris and Lidwell/Holden/Butler first when they need backing · (3) the typography tokens are now a ruling row above (done).
 
-- ✅ **DONE 2026-10-04:** all eleven sources now carry BVX ids (two were already in the catalog, BVX.0295 and BVX.0301; three were new, BVX.1137–1139). ~~**Five of the eleven held sources carry no BVX id** — the shelf pass logged them by title only. Rec: run the next Zotero inventory pass (`_tools/zotero/inventory.py`) against these five titles and assign ids so they can be cited precisely instead of by title.~~
+- ✅ **DONE 2026-10-04:** all eleven sources now carry BVX ids (two were already in the catalog, BVX.0295 and BVX.0301; three were new, BVX.1191–1193). ~~**Five of the eleven held sources carry no BVX id** — the shelf pass logged them by title only. Rec: run the next Zotero inventory pass (`_tools/zotero/inventory.py`) against these five titles and assign ids so they can be cited precisely instead of by title.~~
 - **No ruling distills any of the eleven sources into a page rule yet.** Rec: when a page rule needs backing beyond memory (e.g. the CK3 hover pattern's information-density claim), pull first from Harris (*Information Graphics*) and Lidwell/Holden/Butler (*Universal Principles of Design*) — both are general-audience references already tier-1 and closest to the working-tool page problem.
 - **Typography tokens** (Barlow Condensed / Atkinson Hyperlegible / IBM Plex Mono) live inside the default-colorway memory but have no SSOT home yet. Rec: fold them into this page's rulings table on the next FRAGO once a live reference page is repointed here.
 

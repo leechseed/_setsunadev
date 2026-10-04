@@ -17319,7 +17319,7 @@
   ],
   "primary": "DSN",
   "trunk": "BLACK",
-  "id": "BVX.1137"
+  "id": "BVX.1191"
  },
  {
   "t": "Information Graphics: A Comprehensive Illustrated Reference: Visual Tools for Analyzing, Managing, and Communicating",
@@ -17334,7 +17334,7 @@
   ],
   "primary": "MSX",
   "trunk": "BLACK",
-  "id": "BVX.1138"
+  "id": "BVX.1192"
  },
  {
   "t": "The Photographer's Eye Graphic Guide: Composition and Design for Better Digital Photos",
@@ -17349,6 +17349,36 @@
   ],
   "primary": "VIS",
   "trunk": "BLACK",
-  "id": "BVX.1139"
+  "id": "BVX.1193"
+ },
+ {
+  "t": "Teach Yourself How to Learn: Strategies You Can Use to Ace Any Course at Any Level",
+  "a": "Saundra Yancy McGuire",
+  "p": "",
+  "x": "",
+  "src": "zotero",
+  "pages": "",
+  "year": "2018",
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "BLACK",
+  "id": "BVX.1194"
+ },
+ {
+  "t": "The Minto Pyramid Principle: Logic in Writing, Thinking and Problem Solving",
+  "a": "Barbara Minto",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "2009",
+  "subjects": [
+   "TEC"
+  ],
+  "primary": "TEC",
+  "trunk": "BLACK",
+  "id": "BVX.1195"
  }
 ]
