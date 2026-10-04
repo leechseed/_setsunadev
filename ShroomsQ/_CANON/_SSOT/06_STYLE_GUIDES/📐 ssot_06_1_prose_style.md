@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: prose_style
-version: 1.1.0
+version: 1.2.0
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
+status: "v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
 purpose: "06.1 PROSE — the universe-wide prose style guide: how the LEECHSEED stories read on the page. Sibling to 06.2 Documents and 06.3 Pages under 06_STYLE_GUIDES; per-story telling profiles (OXO's, first) are instances of this guide, not replacements for it."
 dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)"]
 trunk: BLACK
@@ -45,6 +45,10 @@ T2 WHO SEES is a separate decision from T1: **who speaks is not who sees** — t
 **Universal default: internal fixed, one focal character per scene.** Variable or multiple focalization is licensed only when an IP's Telling Profile rules it explicitly — OXO's instance rules Tori-fixed by default with one licensed second lens (the Feed's surveillance eye, external, never a character POV) and denies Anna a POV outright, "a demonstration, not an argument" (oxo-telling-profile T2, RULED 2026-09-23).
 
 The **distance dial** — cinematic / light / deep — is the house vocabulary for how close prose sits to the focal mind, named identically by Card (*Characters and Viewpoint*, [[BVX.0061]]) and Hall (*Writing Deep Point of View*, [[BVX.0273]]) twenty-six years apart. A scene's distance setting is recorded on its telling line (T6), not invented fresh each time.
+
+## Motive on the page
+
+**Universal rule (the tyranny of motive):** narration never states a character's motive outright. The reader infers it from what the character does, says and refuses. A line that says why a character acts, in the narrator's own voice, fails this guide. Source: Corbett ([[BVX.0196]]), whose ghost anchors the failure that motive-explaining would explain away; moved here from the character system, [ssot_02_character_systems_vertical_slice.md](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), OPEN call 3 (MOVED 2026-10-04, RULED, Chief: "all rec", BOLO 100). The character's L5 WOUND and L6 DRIVE set the motive; the page shows only its effects.
 
 ## Register & diction
 
@@ -117,6 +121,7 @@ A short pass-list, read against a draft before it counts as ready. One line, one
 7. **Pace** — does the draft's measured tempo match its planned curve, scene by scene? (§Pace on the page)
 8. **Paratext** — does the book carry the front-matter disclaimer, one line, plain? (§Explicit content & paratext)
 9. **Genre (cultcore IPs only)** — does the institution's voice read as a register distinct from the outsider's own? (§Genre register)
+10. **Motive** — does the narration leave every character's motive unstated, for the reader to infer? (§Motive on the page)
 
 ## SOURCES
 
@@ -138,7 +143,7 @@ Held, not read (per BOLO 92 shelf); each cited above for the well-known claim na
 | [[BVX.0253]] | Understanding Show, Don't Tell | Hardy | Description & the sensorium |
 | [[BVX.0084]] | Dialogue: Techniques and Exercises | Kempton | Dialogue — the seven-function test |
 
-Canon docs already carrying citations this guide reuses rather than re-sources: [[BVX.0175]] (McKee, show-don't-tell as a distance dial, via texture_layer T6), [[BVX.0349]] (Kennedy, the gutter of implication, via texture_layer T8), [[BVX.0599]] (Mendlesohn, delivery modes, via genre_system G6). Plot-structure books on the shelf (Save the Cat, McKee's *Story*, Vogler, Field) are excluded from this SOURCES list by the BOLO 92 order — they belong to Plot (04).
+Canon docs already carrying citations this guide reuses rather than re-sources: [[BVX.0196]] (Corbett, the tyranny of motive, via the character system's OPEN call 3), [[BVX.0175]] (McKee, show-don't-tell as a distance dial, via texture_layer T6), [[BVX.0349]] (Kennedy, the gutter of implication, via texture_layer T8), [[BVX.0599]] (Mendlesohn, delivery modes, via genre_system G6). Plot-structure books on the shelf (Save the Cat, McKee's *Story*, Vogler, Field) are excluded from this SOURCES list by the BOLO 92 order — they belong to Plot (04).
 
 ## OPEN
 
@@ -152,6 +157,7 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 
 ## Version history
 
+- **1.2.0 · 2026-10-04** — RULED (Chief: "all rec", BOLO 100 character batch 1): the tyranny of motive moved here from the character system (OPEN call 3) as the rule in §Motive on the page; check item 10 added. No other rule changed.
 - **1.1.0 · 2026-10-04** — the disclaimer's wording RULED (Chief: "B recommendation", BOLO 92): "Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised." Call 5's hold closed.
 - **1.0.0 · 2026-09-29** — OPEN 1–5 RULED as recommended (Chief, "all right"): past tense + one fixed viewpoint by default · short-to-medium gait, stretched only where pace calls for it · no universe profanity ceiling, it follows the speaker · explicit allowed by default, fantasy first, the container is the front-matter disclaimer (TS 1:1) · the disclaimer wording held for a front-matter pass.
 - **0.1.0 · 2026-09-29** — bootstrap: BOLO 92 RULED ("all recs," after the Zotero pass). Built from the OXO Telling Profile (worked instance), the texture system/layer, Modern Poetics (P3), the medium grammars (M1 PROSE), the Touchstones register (TS 1:1), the theme doc's motifs, and the genre system's cultcore instance; sourced from the BOLO 92 shelf's 06.1 Prose list, held not read. Five ⧗ calls await Chief.

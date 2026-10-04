@@ -1,10 +1,10 @@
 ---
 type: ssot_08_tracking_systems
 category: tracking_system
-version: 0.2.0
-last_updated: 2026-09-29
+version: 0.3.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "RULED 2026-09-29 — BOLO 90 steps 1–2; 0.2.0 2026-09-29: BOLO 90 step 7 trial, seven calls RULED, Chief 'line up the recs' — the time code gains the sequence segment, story points gain an iterative field, cables gain the provisional orphan state, backstory movement tag noted"
+status: "v0.3.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: new §9A, the reader model (the audience trust ledger, moved from the character system's OPEN call 9). RULED 2026-09-29 — BOLO 90 steps 1–2; 0.2.0 2026-09-29: BOLO 90 step 7 trial, seven calls RULED, Chief 'line up the recs' — the time code gains the sequence segment, story points gain an iterative field, cables gain the provisional orphan state, backstory movement tag noted"
 purpose: "THE TRACKING SYSTEM: the shared time grid and record model under character state, setting overlays, and world time — the grid (tick · beat · bar · time signature · tempo), the time code, checkpoints and story points, setup → payoff cables, and the Ableton-style track map. One store, many views."
 dependencies: ["ssot_01_scale_ladder", "ssot_02_character_state_architecture", "ssot_03_setting_system", "ssot_04_fabula", "ssot_04_plot_system"]
 trunk: BLACK
@@ -24,6 +24,7 @@ sources: ["_tools/bolostatus/work/90/DISTILL.md"]
 7. [Tempo](#7-tempo)
 8. [The Ableton Map](#8-the-ableton-map)
 9. [Who Consumes This](#9-who-consumes-this)
+    - 9A. [The Reader Model](#9a-the-reader-model)
 10. [Open](#10-open)
 11. [Version History](#11-version-history)
 
@@ -207,6 +208,25 @@ One table maps the whole tracking system onto Ableton's own vocabulary (DISTILL 
 
 ---
 
+## 9A. The Reader Model
+
+The audience trust ledger (RULED 2026-10-04, BOLO 100, Chief: "all rec"; moved from the character system's OPEN call 9). It sits outside the twelve character layers. It tracks what the reader believes about a character, and how far the reader trusts that belief, over time. The character record holds who the character is; this ledger holds what the reader thinks. The two can differ, and the gap is a source of dramatic irony.
+
+Each entry is one story point (§5) on a reader track. It carries the fields below and no others.
+
+```yaml
+reader_entry_id: "<slug>"
+character_id: "<subject_id>"       # the character the reader is judging
+belief: "<what the reader believes about the character>"
+trust: 0                           # 0-10, how far the reader trusts that belief
+shifted_at: "M2 · Q1 · S04 | 012.3.2"   # the time code (§4) of the scene where it shifted
+disclosure: revealed | concealed   # revealed = the reader has been shown the truth; concealed = the story still hides it
+```
+
+**Reading it.** The value steps by default (§5). A scene that moves the reader's belief or trust writes a new entry at its time code. A `concealed` entry with high `trust` marks a lie the reader still holds; the reveal scene flips it to `revealed` and drops `trust`. A cable (§6) can run from the scene that plants a belief to the scene that overturns it.
+
+---
+
 ## 10. Open
 
 Steps 3–7 of the build order (DISTILL §7), amended by §9:
@@ -227,5 +247,6 @@ Steps 3–7 of the build order (DISTILL §7), amended by §9:
 
 |Version|Date|Changes|
 |---|---|---|
+|0.3.0|2026-10-04|RULED 2026-10-04, Chief: "all rec" (BOLO 100 character batch 1). New §9A, the reader model: the audience trust ledger, moved from the character system's OPEN call 9. Fields kept minimal: `character_id`, `belief`, `trust` (0–10), `shifted_at`, `disclosure` (revealed or concealed). Additive; no existing section changed.|
 |0.2.0|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). The time code (§4) gains a `Q<n>` sequence segment, `M2 · Q1 · S04 \| 012.3.2`; every time-code example in this document updated. Story points (§5) gain optional `repeat_count` and `span` fields for `frequency_mode: iterative`. Cables (§6) gain a fourth `orphan` value, `provisional` — both ends exist narratively, at least one time code still ⧗. §2 The Two Rulers notes the `backstory` movement tag for events before M1. Additive; no field removed.|
 |0.1.0|2026-09-29|Initial document. BOLO 90 steps 1–2, RULED 2026-09-29 (DISTILL §13, §14): the two rulers (world clock vs grid), the grid (tick/beat/bar/time signature/tempo, "bar" not "measure"), the time code and its mapping to scale-ladder zoom stops, checkpoints and story points as the two record kinds (step vs ramp value behavior), setup → payoff cables on the fabula `enable` edge with orphan flags, tempo curves and two-tempo (story/audience) automation, and the Ableton concept map. Consumers and open build steps recorded.|
