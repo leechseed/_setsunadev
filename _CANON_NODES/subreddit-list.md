@@ -11,6 +11,8 @@ captured: 2026-10-03
 
 **What it is.** These are Reddit subreddits that are each about one person. Chief gave four on 10/3 (Solomia Maievska · Chloë Grace Moretz · Cara Delevingne · Anya Taylor-Joy). The rest were found by working out from those four.
 
+**The sheet (10/4):** https://claude.ai/artifact/Rd6NSrhxuihbBvaWDfCxSU, built from this file. Each sub opens in a new tab, and a seen box remembers your place.
+
 **How it was pulled.** Reddit blocks this machine with a 403 error. The data comes from **PullPush**, a public archive of Reddit posts (api.pullpush.io).
 - **Register check:** the archive was asked for each register name's subreddit by its likely spelling.
 - **Discovery:** the archive pulled the last 100 posts from each seed sub. It then pulled each poster's other posts across Reddit, two rounds. Subs that the same posters feed show up together.
