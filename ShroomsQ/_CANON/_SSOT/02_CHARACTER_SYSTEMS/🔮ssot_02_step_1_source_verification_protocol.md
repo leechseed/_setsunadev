@@ -1,25 +1,32 @@
 ---
-
-## type: ssot_02_character_systems category: vertical_slice_protocol version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Replaces the single-sentence Step 1 of the Vertical Slice protocol with a formal source verification gate. Defines exactly what 'canonical documentation exists and is locked' means, specifies the required upstream documents, and establishes the verification checklist that must pass before the Vertical Slice proceeds to Step 2." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_dramatica_integration", "ssot_02_character_astrology", "template_dramatica_ingest", "template_character_astrology_ingest"]
+type: ssot_02_character_systems
+category: vertical_slice_protocol
+module_of: ssot_02_character_systems_vertical_slice
+version: 1.1.0
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+purpose: "Replaces the single-sentence Step 1 of the Vertical Slice protocol with a formal source verification gate. Defines exactly what 'canonical documentation exists and is locked' means, specifies the required upstream documents, and establishes the verification checklist that must pass before the Vertical Slice proceeds to Step 2."
+dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_dramatica_integration_protocol", "ssot_02_character_astrology", "ssot_02_template_dramatica_ingest", "ssot_02_template_astrology_ingest"]
 ---
 # 🔮 SSOT: Step 1 — Source Verification Protocol
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [What This Replaces](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-this-replaces)
-3. [The Source Verification Gate](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-source-verification-gate)
-4. [Required Documents by Tier](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#required-documents-by-tier)
-5. [Verification Sequence](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#verification-sequence)
-6. [Pass and Fail Conditions](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#pass-and-fail-conditions)
-7. [Canonical Folder Structure](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#canonical-folder-structure)
-8. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [What This Replaces](#what-this-replaces)
+3. [The Source Verification Gate](#the-source-verification-gate)
+4. [Required Documents by Tier](#required-documents-by-tier)
+5. [Verification Sequence](#verification-sequence)
+6. [Pass and Fail Conditions](#pass-and-fail-conditions)
+7. [Canonical Folder Structure](#canonical-folder-structure)
+8. [Version History](#version-history)
 
 ---
 
 ## Purpose
 
-The Vertical Slice protocol (ssot_03_character_systems_vertical_slice) defines Step 1 as: "Before assigning any values, confirm that canonical documentation for the character exists and is locked. Do not run a Vertical Slice against a character whose narrative role, Dramatica function, or origin is still in development."
+The Vertical Slice protocol ([ssot_02_character_systems_vertical_slice.md](📐%20ssot_02_character_systems_vertical_slice.md)) defines Step 1 as: "Before assigning any values, confirm that canonical documentation for the character exists and is locked. Do not run a Vertical Slice against a character whose narrative role, Dramatica function, or origin is still in development."
 
 That instruction is correct but insufficient. It does not define what canonical documentation looks like, what format it arrives in, which upstream systems must have completed their work, or how to verify completeness. This document replaces that single sentence with a formal verification gate.
 
@@ -29,7 +36,7 @@ Step 1 is now a checkpoint. The Vertical Slice does not proceed to Step 2 (Tier 
 
 ## What This Replaces
 
-This document replaces **Step 1** of the Vertical Slice protocol only. Steps 2 through 7 of the Vertical Slice remain unchanged. When the Vertical Slice document is next revised, its Step 1 section should reference this SSOT rather than containing its own abbreviated instruction.
+This document replaces **Step 1** of the Vertical Slice protocol only. Steps 2 through 7 of the Vertical Slice remain unchanged. When the Vertical Slice document is next revised, its Step 1 section should reference this SSOT rather than containing its own abbreviated instruction. As of 2026-10-04 the main doc still carries the old sentence; replacing it with a pointer is open on the main-doc writer.
 
 ---
 
@@ -46,6 +53,8 @@ All three components must pass before the Vertical Slice proceeds. The component
 ---
 
 ## Required Documents by Tier
+
+The two ingest templates are blank forms: [ssot_02_template_dramatica_ingest.md](📐%20ssot_02_template_dramatica_ingest.md) and [ssot_02_template_astrology_ingest.md](📐%20ssot_02_template_astrology_ingest.md). Section numbers in the checks below follow those forms.
 
 ### Tier 3 (Deep Characters — Full Verification Required)
 
@@ -103,7 +112,7 @@ The authoritative document is the character's canonical bible — the locked doc
 
 ### Component 2: Dramatica Ingest Verification
 
-The Dramatica Ingest Template captures the complete storyform data for this character. It is produced by extracting data from the locked Dramatica storyform using the report manifest and extraction priority defined in ssot_02_character_dramatica_integration.
+The Dramatica Ingest Template captures the complete storyform data for this character. It is produced by extracting data from the locked Dramatica storyform using the report manifest and extraction priority defined in ssot_02_dramatica_integration_protocol.
 
 **Check 2.1: Template exists.** The Dramatica Ingest Template file is present in the character's canonical folder.
 
@@ -117,9 +126,9 @@ The Dramatica Ingest Template captures the complete storyform data for this char
 
 **Check 2.6: Applicable throughline sections are complete.** If the character is MC, Section 4 is populated. If IC, Section 5. Section 6 (OS) is always required. Section 7 (RS) is required if the character is an RS principal.
 
-**Check 2.7: Section 9 (Narrative Invariants) contains at least one invariant.** Every Tier 3 character has at least one structural law derived from the storyform.
+**Check 2.7: Section 9 (Touchstones) contains at least one Touchstone.** Every Tier 3 character has at least one structural law derived from the storyform. The machine field is still `narrative_invariant` until the schema pass.
 
-**Check 2.8: Section 10 (L12 Core Block) is populated and matches the data in preceding sections.** The auto-generated block must be consistent with the template data.
+**Check 2.8: Section 10 (L12 Core Block) is populated and matches the data in preceding sections.** The block must list exactly the Tier 3 L12 core variables in [ssot_02_dramatica_integration_protocol.md](🔮%20ssot_02_dramatica_integration_protocol.md), the single home of that list. If that list changes, this check follows it.
 
 **Check 2.9: Downstream handoff checklist is complete.** All items checked.
 
@@ -169,8 +178,8 @@ All three components pass. The Vertical Slice proceeds to Step 2 (Tier 1 Assignm
 
 Components 1 and 2 pass. Component 3 passes at minimum-viable level. The Vertical Slice may proceed, but the following constraints apply:
 
-- L7-L11 assignments that depend on Character Astrology data carry an `[ASTROLOGY_PENDING]` tag until the full chart is completed.
-- The Feed Validation Checklist (from ssot_02_character_astrology_12layer_mapping) cannot be run until the full chart is locked.
+- L1-L11 assignments that depend on Character Astrology data carry an `[ASTROLOGY_PENDING]` tag until the full chart is completed.
+- The Feed Validation Checklist (from ssot_02_character_astrology_12_layer_mapping) cannot be run until the full chart is locked.
 - The Vertical Slice structured data block is versioned as `draft` until the Character Astrology Ingest Template reaches full status and the Feed Validation Checklist passes.
 
 ### Fail (Red Light)
@@ -224,3 +233,4 @@ _AUTHORITATIVE/[IP]/relationships/
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-03|Initial Step 1 Source Verification Protocol. Three-component gate with per-tier requirements, 22 verification checks across components, pass/conditional/fail logic, failure diagnostics, and canonical folder structure specification.|
+|1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. Dependency names fixed (vertical slice, Dramatica integration, 12-layer mapping, the two ingest templates). Checks 2.7 and 2.8 re-pinned: Touchstone wording, and the L12 core list now read from the integration doc. L7-L11 corrected to L1-L11. Template pointers added. Frontmatter repaired and table of contents links made in-page.|

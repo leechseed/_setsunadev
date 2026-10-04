@@ -1,22 +1,30 @@
 ---
-
-## type: ssot_02_character_systems category: character_astrology version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the 12-Layer Character Database." dependencies: ["ssot_02_character_dramatica_integration", "ssot_03_character_systems_vertical_slice"] supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_modular_toolkit"]
+type: ssot_02_character_systems
+category: character_astrology
+module_of: ssot_02_character_systems_vertical_slice
+version: 1.1.0
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the 12-Layer Character Database."
+dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_systems_vertical_slice"]
+supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_modular_toolkit"]
 ---
 # 📐 SSOT: Character Astrology
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [What Character Astrology Is](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-character-astrology-is)
-3. [What Character Astrology Is Not](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-character-astrology-is-not)
-4. [The Narrative-First Policy](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-narrative-first-policy)
-5. [Domain Classification: Character-Level vs Story-Level](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#domain-classification)
-6. [Character-Level Categories](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#character-level-categories)
-7. [Story-Level Categories](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#story-level-categories)
-8. [The Dramatica-Astrology Interface (DAI)](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-dramatica-astrology-interface)
-9. [Pipeline Position](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#pipeline-position)
-10. [Relationship to the 12-Layer Character Database](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#relationship-to-the-12-layer-character-database)
-11. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [What Character Astrology Is](#what-character-astrology-is)
+3. [What Character Astrology Is Not](#what-character-astrology-is-not)
+4. [The Narrative-First Policy](#the-narrative-first-policy)
+5. [Domain Classification](#domain-classification)
+6. [Character-Level Categories](#character-level-categories)
+7. [Story-Level Categories](#story-level-categories)
+8. [The Dramatica-Astrology Interface (DAI)](#the-dramatica-astrology-interface-dai)
+9. [Pipeline Position](#pipeline-position)
+10. [Relationship to the 12-Layer Character Database](#relationship-to-the-12-layer-character-database)
+11. [Version History](#version-history)
 
 ---
 
@@ -64,7 +72,7 @@ Character Astrology is also not traditional astrology applied to fictional chara
     
 3. Chart generation follows a fixed derivation sequence (defined in the DAI Expansion document, deliverable 2B). The sequence begins with the Dramatica ingest and proceeds outward through planetary assignments. No step in the sequence is skipped or reordered.
     
-4. Complete chart generation is not required for the Vertical Slice to proceed. A partial chart with core planets assigned (Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant) is sufficient for L7-L11 population. Outer planets (Jupiter, Uranus, Neptune, Pluto) and advanced configurations (progressions, transits) are populated as development continues.
+4. Complete chart generation is not required for the Vertical Slice to proceed. A partial chart with core planets assigned (Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant) is sufficient for L1-L11 population. Outer planets (Jupiter, Uranus, Neptune, Pluto) and advanced configurations (progressions, transits) are populated as development continues.
     
 5. The narrative-first policy applies to all tiers. Tier 3 characters receive full chart generation. Tier 2 characters receive a partial chart (Sun, Moon, and one or two defining aspects) derived from their element signature. Tier 1 characters do not receive Character Astrology treatment.
     
@@ -73,7 +81,7 @@ Character Astrology is also not traditional astrology applied to fictional chara
 
 ## Domain Classification
 
-The original framework defined 15 categories. These categories remain valid. What changes is their classification: some are **character-level** (belonging to the static character record and the Character Astrology Ingest Template) and others are **story-level** (belonging to the state overlay system, relationship tables, or plot_systems).
+The original framework defined 15 categories. These categories remain valid. What changes is their classification: some are **character-level** (belonging to the static character record and the Character Astrology Ingest Template, blank form: [ssot_02_template_astrology_ingest.md](📐%20ssot_02_template_astrology_ingest.md)) and others are **story-level** (belonging to the state overlay system, relationship tables, or plot_systems).
 
 The classification principle: if the data describes who the character IS at the point of canonical definition, it is character-level. If the data describes what is HAPPENING TO the character at a specific narrative moment, it is story-level.
 
@@ -282,28 +290,11 @@ This category belongs entirely to **plot_systems**. It references the static cha
 
 The DAI is the translation layer between Dramatica outputs and Character Astrology inputs. It is the API specification that governs how narrative positions convert to astrological configurations.
 
-The DAI is summarized here and expanded in full in **deliverable 2B: DAI Expansion**.
+The DAI is expanded in full in **deliverable 2B: DAI Expansion** ([ssot_02_character_astrology_dai.md](🔮ssot_02_character_astrology_dai.md)).
 
-### Summary Table
+### Where the rules live
 
-|Dramatica Input|Astrological Output|Derivation Logic|
-|---|---|---|
-|MC Domain + MC Concern|**Sun Sign**|The domain-concern intersection defines the character's identity axis. The sign that best encodes this intersection is assigned.|
-|MC Problem + MC Response|**Moon Sign**|The problem-response pair defines the stress-collapse pattern. The sign that best encodes this instinctual default is assigned.|
-|Unique Ability + Methodology Quad|**Mercury Configuration**|How the character processes information and what gives them an edge in doing so.|
-|MC Concern + Purpose Quad|**Venus Configuration**|What the character values and what they pursue as meaningful.|
-|Approach + Motivation Quad|**Mars Configuration**|How the character acts and what drives them to act.|
-|MC Unique Ability|**Jupiter Placement**|Where the character finds expansion, permission, and temporary safety.|
-|MC Critical Flaw + Inhibitor|**Saturn Placement**|The hard-coded limit. The wall that cannot be bypassed without transformation.|
-|MC Solution|**Uranus Configuration**|The disruption that is actually the answer. Initially experienced as threat.|
-|MC Symptom|**Neptune Configuration**|The false signal. The illusion the character chases instead of facing the real problem.|
-|Story Outcome + Story Judgment|**Pluto Configuration**|The terminal condition. How the argument ends and what that ending means.|
-|Approach + MC Critical Flaw|**Ascendant**|The visible interface, including its exploit vector.|
-|Story Goal + Character's OS Role|**Midheaven**|The public output. What the character achieves or fails to achieve in the world's eyes.|
-|MC Direction|**Descendant**|What the character seeks in others. The shadow complement.|
-|MC Benchmark|**IC**|The hidden measurement standard. The buried origin metric.|
-
-Each row in this table expands to a full derivation rule in the DAI Expansion document.
+The full table is in [ssot_02_character_astrology_dai.md](🔮ssot_02_character_astrology_dai.md). It lists each Dramatica input, the planet or angle it sets, and the derivation rule. This doc does not repeat it, so the two cannot drift apart.
 
 ---
 
@@ -343,7 +334,7 @@ Each row in this table expands to a full derivation rule in the DAI Expansion do
          ▼
 ┌─────────────────────────────────┐
 │   12-LAYER VERTICAL SLICE        │
-│   (Feeds L7-L11 via             │
+│   (Feeds L1-L11 via             │
 │    Astrology-to-Layer Mapping)   │
 │   [Deliverable 3A]              │
 └─────────────────────────────────┘
@@ -371,6 +362,8 @@ Character Astrology and the 12-Layer system are **parallel datasets** that descr
 - Machine-readable structured data blocks suitable for ingestion into hard-coded database infrastructure.
 - Derived statistics (Stress Threshold, Collapse Risk, Truth Exposure Index) that produce actionable diagnostic outputs.
 
+**Not chart-fed:** the twelve fields added in schema 2.5.0 and the 3.0.0 additions have no chart feed. The authors set them from the authoritative document. The per-field notes are in the schema-pass table of [ssot_02_character_astrology_12_layer_mapping.md](🔮ssot_02_character_astrology_12_layer_mapping.md).
+
 **The connection:** Specific astrological variables feed specific layers. Sun sign feeds L1 CORE justification. Moon sign feeds L8 IMPRINT. Venus feeds L9 EROS. Mars feeds L2 VITAL. Saturn feeds L4 WILL and L5 WOUND. Shadow-related aspects feed L10 SHADOW. Destiny-related configurations (North Node, growth axis) feed L11 DESTINY. The complete mapping is defined in deliverable 3A.
 
 The two systems coexist. A complete Tier 3 character has both a Character Astrology Ingest Template and a 12-Layer Vertical Slice in their canonical folder. Both are valid, complete representations. Neither replaces the other.
@@ -382,3 +375,4 @@ The two systems coexist. A complete Tier 3 character has both a Character Astrol
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-03|Initial SSOT. Renamed from Narrative Astrology to Character Astrology. Relocated to 02_CHARACTER_SYSTEMS. Separated 15 categories into character-level (9 categories) and story-level (6 categories). Established narrative-first policy. Defined pipeline position and relationship to 12-Layer system. Supersedes both prior Narrative Astrology documents.|
+|1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. DAI summary table replaced by a pointer to the DAI doc. L7-L11 corrected to L1-L11. Dependency names fixed. Added: the 2.5.0 schema fields are not chart-fed. Frontmatter repaired and table of contents links made in-page. Blank template: ssot_02_template_astrology_ingest.md.|

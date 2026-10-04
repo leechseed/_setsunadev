@@ -1,21 +1,29 @@
 ---
-
-## type: ssot_02_character_systems category: dramatica_integration version: 1.1.0 last_updated: 2026-08-24 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest." dependencies: ["ssot_03_character_systems_vertical_slice"]
+type: ssot_02_character_systems
+category: dramatica_integration
+module_of: ssot_02_character_systems_vertical_slice
+version: 1.2.0
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v1.2.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest."
+dependencies: ["ssot_02_character_systems_vertical_slice"]
 ---
 # 🔮 SSOT: Dramatica Integration Protocol
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [What Dramatica Is in This System](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-dramatica-is-in-this-system)
-3. [What Dramatica Is Not](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-dramatica-is-not)
-4. [Storyform Architecture](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#storyform-architecture)
-5. [Character-Storyform Binding](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#character-storyform-binding)
-6. [Tier Integration Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#tier-integration-rules)
-7. [L12 FUNCTION Architecture](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#l12-function-architecture)
-8. [Dramatica Report Manifest](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#dramatica-report-manifest)
-9. [Pipeline Position](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#pipeline-position)
-10. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [What Dramatica Is in This System](#what-dramatica-is-in-this-system)
+3. [What Dramatica Is Not](#what-dramatica-is-not)
+4. [Storyform Architecture](#storyform-architecture)
+5. [Character-Storyform Binding](#character-storyform-binding)
+6. [Tier Integration Rules](#tier-integration-rules)
+7. [L12 FUNCTION Architecture](#l12-function-architecture)
+8. [Dramatica Report Manifest](#dramatica-report-manifest)
+9. [Cascade on a Revised Storyform](#cascade-on-a-revised-storyform)
+10. [Pipeline Position](#pipeline-position)
+11. [Version History](#version-history)
 
 ---
 
@@ -114,7 +122,7 @@ Tier 3 characters receive:
 - A complete storyform binding record.
 - A full L12 FUNCTION core block (10 variables).
 - A full L12_DRAMATICA_EXTENDED sub-table (all throughline and element data).
-- A locked Dramatica Ingest Template (.md) as source documentation.
+- A locked Dramatica Ingest Template (.md) as source documentation (blank form: [ssot_02_template_dramatica_ingest.md](📐%20ssot_02_template_dramatica_ingest.md)).
 
 Tier 3 is the only tier that requires a Dramatica ingest before the Vertical Slice can proceed.
 
@@ -156,6 +164,10 @@ Tier 1 characters do not interact with Dramatica. They carry L1-L3 values only. 
 
 ## L12 FUNCTION Architecture
 
+**One home for the field lists.** This doc holds the only copy of the L12 core block and the L12_DRAMATICA_EXTENDED sub-table. The main doc's L12 row points here and does not repeat them.
+
+**Touchstone wording.** The invariant a Tier 3 character carries is now called a Touchstone in prose. The machine field stays `narrative_invariant` until the schema pass. Cite a Touchstone as TS n:m.
+
 ### Design Decision: Option C — Core + Sub-Table
 
 L12 operates as a two-part structure: a core block that participates in derived statistics and flag triggers, and an extended sub-table that holds the complete Dramatica dataset for reference and cross-character querying.
@@ -173,7 +185,7 @@ The core block contains the variables that the 12-layer system actively uses for
 |`methodology_element`|Character element set|Behavioral reference|
 |`evaluation_element`|Character element set|Behavioral reference|
 |`purpose_element`|Character element set|Behavioral reference|
-|`narrative_invariant`|Authored|Flag triggers|
+|`narrative_invariant` (a Touchstone; machine field name until the schema pass)|Authored|Flag triggers|
 |`story_outcome`|Storyform dynamics|Flag triggers|
 |`story_judgement`|Storyform dynamics|Flag triggers|
 |`limit_type`|Storyform dynamics|Flag triggers|
@@ -272,6 +284,16 @@ Reports not listed in the extraction priority are consulted as needed but do not
 
 ---
 
+## Cascade on a Revised Storyform
+
+A revised storyform is a new version, not an edit (see above). The chart, the L12 block and the state diffs all hang off the old version. Three steps follow, in this order.
+
+1. **Regenerate the chart.** The narrative designer re-runs the DAI derivation sequence ([ssot_02_character_astrology_dai.md](🔮ssot_02_character_astrology_dai.md)) on the new Dramatica Ingest. The new ingest passes the Step 1 gate first ([ssot_02_step_1_source_verification_protocol.md](🔮ssot_02_step_1_source_verification_protocol.md)). The new chart gets its own file, stamped to the new storyform version. The old chart stays on file, marked superseded.
+2. **Re-run the L12 block.** The narrative designer re-extracts the L12 core block and the L12_DRAMATICA_EXTENDED sub-table from the new ingest. The Vertical Slice then re-runs Steps 5 and 6, the derived statistics and the flags, because they read L12. The result is a new base record version.
+3. **Re-check each state diff against the new base.** The narrative designer reads the character's state diffs one by one. Each value a diff names as "was ..." must match the new base record. A diff that no longer matches is revised or retired, and the change is logged. A diff never edits the base.
+
+---
+
 ## Pipeline Position
 
 ```
@@ -303,7 +325,7 @@ Reports not listed in the extraction priority are consulted as needed but do not
 │  CHAR ASTROLOGY      │            │
 │  INGEST TEMPLATE     │            │
 │  (.md) [LOCKED]      │────────────┘
-└─────────────────────┘     (also feeds L7-L11
+└─────────────────────┘     (also feeds L1-L11
                              via astrology-to-layer
                              mapping)
 ```
@@ -312,8 +334,8 @@ Reports not listed in the extraction priority are consulted as needed but do not
 
 1. A locked Dramatica storyform produces a Dramatica Ingest Template.
 2. The Dramatica Ingest Template feeds two consumers simultaneously: Character Astrology (which derives the natal chart from narrative positions) and the 12-Layer system (which populates L12 directly).
-3. Character Astrology produces its own ingest template, which feeds additional data into L7-L11 of the 12-Layer system.
-4. Step 1 Source Verification confirms both ingest templates exist and are locked before the Vertical Slice proceeds to Step 2.
+3. Character Astrology produces its own ingest template, which feeds additional data into L1-L11 of the 12-Layer system.
+4. Step 1 Source Verification ([ssot_02_step_1_source_verification_protocol.md](🔮ssot_02_step_1_source_verification_protocol.md)) confirms both ingest templates exist and are locked before the Vertical Slice proceeds to Step 2. The blank forms are [ssot_02_template_dramatica_ingest.md](📐%20ssot_02_template_dramatica_ingest.md) and [ssot_02_template_astrology_ingest.md](📐%20ssot_02_template_astrology_ingest.md).
 
 ---
 
@@ -323,3 +345,4 @@ Reports not listed in the extraction priority are consulted as needed but do not
 |---|---|---|
 |1.0.0|2026-03-02|Initial SSOT. Establishes Dramatica role, storyform architecture, tier integration, L12 Option C structure, report manifest, pipeline position.|
 |1.1.0|2026-08-24|L12 core rename: `motivation_element` → `mc_problem_element` (holds the MC Problem; STATE #4 ruling, #3 execution). Motivation-quad primary lives in `L12_DRAMATICA_EXTENDED.motivation_quad`.|
+|1.2.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system (version continues from 1.1.0). Rule: this doc is the single home of the L12 field lists; the main doc points here. `narrative_invariant` named a Touchstone in prose (machine field unchanged until the schema pass). New section: Cascade on a Revised Storyform (C19). L7-L11 corrected to L1-L11. Dependency path fixed. Frontmatter repaired and table of contents links made in-page. Blank templates linked.|

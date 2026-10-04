@@ -1,24 +1,31 @@
 ---
-
-## type: ssot_02_character_systems category: character_astrology_dai version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the complete Dramatica-Astrology Interface (DAI) — the translation rules that convert locked Dramatica storyform outputs into Character Astrology planetary assignments. This is the API specification between the two systems." dependencies: ["ssot_02_character_dramatica_integration", "ssot_02_character_astrology"]
+type: ssot_02_character_systems
+category: character_astrology_dai
+module_of: ssot_02_character_systems_vertical_slice
+version: 1.1.0
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+purpose: "Defines the complete Dramatica-Astrology Interface (DAI) — the translation rules that convert locked Dramatica storyform outputs into Character Astrology planetary assignments. This is the API specification between the two systems."
+dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_astrology"]
 ---
 # 🔮 SSOT: Dramatica-Astrology Interface (DAI) Expansion
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [How to Use This Document](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#how-to-use-this-document)
-3. [The Derivation Sequence](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-derivation-sequence)
-4. [Element-to-Sign Mapping Tables](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#element-to-sign-mapping-tables)
-5. [Planetary Derivation Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#planetary-derivation-rules)
-6. [Angle Derivation Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#angle-derivation-rules)
-7. [Aspect Derivation Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#aspect-derivation-rules)
-8. [House Assignment Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#house-assignment-rules)
-9. [Dignity Calculation Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#dignity-calculation-rules)
-10. [Void Variable (12th House) Assignment](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#void-variable-assignment)
-11. [Tier 2 Abbreviated Derivation](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#tier-2-abbreviated-derivation)
-12. [Worked Example: Victoria Midnight](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#worked-example-victoria-midnight)
-13. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [How to Use This Document](#how-to-use-this-document)
+3. [The Derivation Sequence](#the-derivation-sequence)
+4. [Element-to-Sign Mapping Tables](#element-to-sign-mapping-tables)
+5. [Planetary Derivation Rules](#planetary-derivation-rules)
+6. [Angle Derivation Rules](#angle-derivation-rules)
+7. [Aspect Derivation Rules](#aspect-derivation-rules)
+8. [House Assignment Rules](#house-assignment-rules)
+9. [Dignity Calculation Rules](#dignity-calculation-rules)
+10. [Void Variable (12th House) Assignment](#void-variable-12th-house-assignment)
+11. [Tier 2 Abbreviated Derivation](#tier-2-abbreviated-derivation)
+12. [Worked Example: Victoria Midnight](#worked-example-victoria-midnight)
+13. [Version History](#version-history)
 
 ---
 
@@ -26,13 +33,13 @@
 
 This document is the API specification between Dramatica and Character Astrology. It defines the exact translation rules that convert a locked Dramatica Ingest Template into a Character Astrology natal chart. Every rule traces a specific Dramatica output to a specific astrological assignment.
 
-The narrative designer works through this document sequentially — from Sun to Pluto, then Angles, then Aspects, then Houses, then Dignities — to produce a complete character chart. The output of this process is the data that populates the Character Astrology Ingest Template (deliverable 2C).
+The narrative designer works through this document sequentially — from Sun to Pluto, then Angles, then Aspects, then Houses, then Dignities — to produce a complete character chart. The output of this process is the data that populates the Character Astrology Ingest Template (deliverable 2C; blank form: [ssot_02_template_astrology_ingest.md](📐%20ssot_02_template_astrology_ingest.md)).
 
 ---
 
 ## How to Use This Document
 
-1. Open the character's locked Dramatica Ingest Template.
+1. Open the character's locked Dramatica Ingest Template (blank form: [ssot_02_template_dramatica_ingest.md](📐%20ssot_02_template_dramatica_ingest.md)).
 2. Follow the Derivation Sequence (Section 3) step by step.
 3. For each planet, read the Derivation Rule (Section 5) and consult the Element-to-Sign Mapping Table (Section 4) to select the sign.
 4. After all planets are placed, derive Angles (Section 6), then Aspects (Section 7), then Houses (Section 8), then Dignities (Section 9).
@@ -333,94 +340,13 @@ Tier 2 characters receive a partial chart derived from their element signature (
 
 No house assignments, no dignity calculations, no angles, no outer planets. The Tier 2 chart is a behavioral sketch, not a full rendering.
 
+**Checked against the mapping doc (2026-10-04):** [ssot_02_character_astrology_12_layer_mapping.md](🔮ssot_02_character_astrology_12_layer_mapping.md) assumes a full chart. A Tier 2 chart feeds two layers only: the Sun feeds L1 and the Moon feeds L8. The mapping doc now carries a Tier 2 section that says so.
+
 ---
 
 ## Worked Example: Victoria Midnight
 
-**Source:** Dramatica Ingest (from authoritative document)
-
-|Dramatica Variable|Value|
-|---|---|
-|MC Domain|Situation|
-|MC Concern|_(to be extracted from storyform)_|
-|MC Issue|Interdiction|
-|MC Problem|Equity|
-|MC Solution|Inequity|
-|MC Focus|Desire|
-|MC Direction|Ability|
-|MC Unique Ability|Destiny|
-|MC Critical Flaw|Truth|
-|Approach|Do-er|
-|Resolve|Change|
-|Motivation|Consider, Pursuit|
-|Methodology|Certainty, Proaction|
-|Evaluation|Proven, Effect|
-|Purpose|Knowledge, Actuality|
-|Story Outcome|Failure|
-|Story Judgment|Good|
-|Limit|Optionlock|
-
-### Step 1: Sun Sign
-
-MC Domain = Situation → Element = Earth. MC Concern = _(pending full extraction)_. MC Issue = Interdiction, which deals with prohibition, being blocked, external constraint on action. This suggests a Fixed concern area (the problem is about what IS, resistance to change imposed from outside). Earth + Fixed = **Taurus**.
-
-**Validation:** Taurus encodes a character whose identity axis is material, embodied, earned through labor, resistant to being moved by external force. Victoria believes she is what she has built with her own hands. Merit earns freedom. "Beauty that is earned, not curated; motion under pressure, never ornamental." Taurus confirmed.
-
-### Step 2: Moon Sign
-
-MC Problem = Equity → Venus/Libra axis affinity. MC Response = _(to be extracted)_. Stress collapse pattern: when her Sun-level processing fails, she defaults to Equity logic — fairness calculus, merit evaluation, weighing what is deserved versus what is given. Under maximum stress she does not rage or withdraw, she **recalculates**.
-
-Moon in **Libra** encodes the instinctual retreat into fairness logic. When everything breaks, she weighs. When weighing fails, she freezes — the Libra Moon's paralysis state is the decision loop that fires when no option satisfies the equity requirement.
-
-**Validation:** The crash. She overrode the pace-notes because she calculated she knew better. The Moon in Libra is the mechanism — under stress, she does not listen, she evaluates. The evaluation kills her brother.
-
-### Step 3: Ascendant
-
-Approach = Do-er → Cardinal or Fire signs. MC Critical Flaw = Truth → The exploit vector embedded in the mask is radical transparency. She cannot manage her signal.
-
-Ascendant in **Aries** encodes a visible, kinetic, confrontational interface. She enters rooms like a force. The Aries mask contains Truth as its exploit: Aries does not hedge, does not perform, does not code-switch. What you see is what is actually there. In a system that rewards managed legibility, an Aries Ascendant with Truth as its flaw is maximally vulnerable.
-
-**Validation:** Truth Exposure Index = 18. The Ascendant explains why.
-
-### Step 4: Mercury
-
-Unique Ability = Destiny. Methodology = Certainty, Proaction. Mercury governs how she processes information. Her unique ability is that she can see where things are going — not prediction, but pattern recognition so acute it reads as inevitability. She processes through certainty (she commits to her reading) and proaction (she moves on it before others have finished deliberating).
-
-Mercury in **Capricorn** encodes methodical, structural, building-oriented cognition that commits to conclusions and acts on them with authority. Capricorn Mercury does not speculate — it determines.
-
-### Step 5: Venus
-
-MC Concern = _(pending)_, mapped through Interdiction. Purpose = Knowledge, Actuality. She values knowing what is real. She pursues actuality — the thing beneath appearances. Her desire structure is kinesthetic, earned, physical (from L9 EROS: erotic_blueprint_type = kinesthetic, intimacy_mode = parallel_presence).
-
-Venus in **Virgo** encodes desire oriented toward precision, earned competence, and the tangible. Virgo Venus does not want to be adored — it wants to be useful, accurate, and present in the body.
-
-### Step 6: Mars
-
-Approach = Do-er. Motivation = Consider, Pursuit. She acts through pursuit once she has considered. She does not wait. She does not ask permission. She converts fear into action.
-
-Mars in **Capricorn** (Exaltation) encodes disciplined, strategic, relentless kinetic energy. Mars in Capricorn does not fight emotionally — it fights structurally. This is a racing driver's Mars: precision under pressure, physical courage channeled through technique.
-
-**Dignity note:** Mars in Capricorn = Essential Dignity (Exaltation). This is consistent — her physical execution is her highest-functioning system. VITAL = 14 in the 12-Layer system.
-
-### Step 7: Saturn
-
-MC Critical Flaw = Truth. Inhibitor = _(to be extracted)_. The wall is Truth itself. When she speaks truth, she desyncs her hardware and triggers systemic response. The system cannot categorize a signal it can read completely and that refuses to self-regulate.
-
-Saturn in **Gemini** (Detriment) encodes a limit located in communication and signal management. Saturn in Gemini means the character's words are the cage — not because she speaks poorly, but because the system punishes transparent speech. Saturn in detriment means the limit is structurally inefficient: it should not function as a limit, but it does, and the character cannot fix it because fixing it would require becoming less truthful.
-
-**Dignity note:** Saturn in Gemini = Essential Debility (Detriment). The limit is a glitch — it works against the natural function of the sign. Gemini wants to communicate freely. Saturn in Gemini says communication itself has become the boundary.
-
-### Remaining Steps (Partial — Pending Full Storyform Data)
-
-**Jupiter** in a sign encoding Destiny as expansion source — Sagittarius (domicile) is the direct candidate. Her ability to see where things are going is her one zone of grace.
-
-**Uranus** encoding Inequity as the disruption-solution — Aquarius (domicile). The thing she must eventually accept is that the system is not and was never fair. This acceptance is initially experienced as threat to her entire Equity-based identity.
-
-**Neptune** encoding Desire as the false signal — Pisces (domicile). She chases wanting as if getting what she wants will solve the problem. It will not. Desire is the symptom, not the disease.
-
-**Pluto** encoding Failure + Good as the terminal condition — Scorpio (domicile). Total destruction that yields meaning. She loses everything and it matters.
-
-_(Full angle, house, and remaining aspect assignments require complete storyform extraction.)_
+The Victoria Midnight chart moved out of this doc on 2026-10-04 (BOLO 100 C13). It is an instance, not method. It lives at [victoria-midnight-chart.md](../../../../_CANON_NODES/victoria-midnight-chart.md). It is partial: the MC Concern is missing, flagged `⏸ VM fill pass (phase 2)`.
 
 ---
 
@@ -429,3 +355,4 @@ _(Full angle, house, and remaining aspect assignments require complete storyform
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-03|Initial DAI Expansion. Complete derivation sequence, element-to-sign mapping tables, all planetary derivation rules, angle rules, aspect rules, house assignment rules, dignity calculation rules, Void Variable assignment protocol, Tier 2 abbreviated derivation, and partial Victoria Midnight worked example.|
+|1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. The Victoria Midnight worked example moved to _CANON_NODES/victoria-midnight-chart.md, with a one-line pointer here (C13). Tier 2 path re-checked against the mapping doc. Dependency names fixed. Frontmatter repaired and table of contents links made in-page. Blank templates linked.|

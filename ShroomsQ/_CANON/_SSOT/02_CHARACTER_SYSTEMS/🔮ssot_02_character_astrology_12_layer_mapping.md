@@ -1,19 +1,28 @@
 ---
-
-## type: ssot_02_character_systems category: integration_mapping version: 1.0.0 last_updated: 2026-03-03 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the formal mapping between Character Astrology chart variables and the 12-Layer Character Database. Specifies which astrological data feeds which layers, the translation logic for each feed, and the independence boundaries where the two systems do not overlap." dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_03_character_systems_vertical_slice"]
+type: ssot_02_character_systems
+category: integration_mapping
+module_of: ssot_02_character_systems_vertical_slice
+version: 1.1.0
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
+purpose: "Defines the formal mapping between Character Astrology chart variables and the 12-Layer Character Database. Specifies which astrological data feeds which layers, the translation logic for each feed, and the independence boundaries where the two systems do not overlap."
+dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_02_character_systems_vertical_slice"]
 ---
 # 🔮 SSOT: Character Astrology ↔ 12-Layer Mapping
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [Governing Principles](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#governing-principles)
-3. [The Master Feed Table](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-master-feed-table)
-4. [Layer-by-Layer Feed Specifications](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#layer-by-layer-feed-specifications)
-5. [Independence Boundaries](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#independence-boundaries)
-6. [Conflict Resolution Protocol](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#conflict-resolution-protocol)
-7. [Feed Validation Checklist](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#feed-validation-checklist)
-8. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [Governing Principles](#governing-principles)
+3. [The Master Feed Table](#the-master-feed-table)
+4. [Layer-by-Layer Feed Specifications](#layer-by-layer-feed-specifications)
+5. [Schema-Pass Fields: Feed Notes](#schema-pass-fields-feed-notes)
+6. [Tier 2 Charts](#tier-2-charts)
+7. [Independence Boundaries](#independence-boundaries)
+8. [Conflict Resolution Protocol](#conflict-resolution-protocol)
+9. [Feed Validation Checklist](#feed-validation-checklist)
+10. [Version History](#version-history)
 
 ---
 
@@ -206,7 +215,7 @@ The **Sun's dignity** informs the ceiling. A Sun in domicile or exaltation is co
 
 ### L8 IMPRINT ← Moon (Primary)
 
-**What L8 needs:** A variable stack including attachment_style, attachment_style_score, emotional_range, conditional_patterns, imprint_flexibility, primary_attachment_object.
+**What L8 needs:** A variable stack including attachment_style (a four-way enum: secure, anxious, avoidant, fearful_avoidant), attachment_style_score, attachment_dimensions {anxiety, avoidance}, emotional_range, conditional_patterns, imprint_flexibility, secure_base_object (renamed from `primary_attachment_object` in 2.1.0; the old name is a read alias), protest_behaviors, deactivating_strategies, vandalism_event, somatic_archive and sexual_script_acquisition.
 
 **What Character Astrology provides (primary feed):**
 
@@ -225,13 +234,15 @@ The Moon is the primary source for L8. The Moon sign, its aspects, and its digni
 - Moon square Saturn: Attachment is tested by duty and limitation. Conditional patterns likely include duty-based love language.
 - Moon opposition Pluto: Attachment is marked by power dynamics and loss. Secure attachment is difficult. Primary attachment objects may have been lost or threatening.
 
+**Feed scope inside L8:** the Moon feeds attachment_style, attachment_dimensions, conditional_patterns and imprint_flexibility, as a lean and never a pick. A Water Moon leans toward high anxiety. An Earth or Air Moon leans toward high avoidance. The fearful_avoidant style has no single Moon signature. These fields have no feed: secure_base_object, protest_behaviors, deactivating_strategies, vandalism_event, somatic_archive, sexual_script_acquisition. The authors set them from the authoritative document.
+
 **Moon dignity** informs imprint_flexibility. Moon in dignity (Cancer domicile, Taurus exaltation): the emotional conditioning system is functional and relatively healthy. Moon in debility (Capricorn detriment, Scorpio fall): the emotional conditioning system is operational but structurally compromised — it works, but at cost.
 
 ---
 
 ### L9 EROS ← Venus, Mars-Venus, 5th/8th House
 
-**What L9 needs:** A variable stack including erotic_blueprint_type, desire_vector, shame_index, intimacy_mode. Partially authored, partially inferred.
+**What L9 needs:** About twenty variables. Core: erotic_blueprint_type (with arousal_curve), desire_vector (with resolution_type), exposure_shame and role_shame (the split of `shame_index`; the old name is a read alias for exposure_shame), intimacy_mode, armor_index, satisfaction_cycle_truncation, erotic_safety_precondition (with its scope), consent_posture, client_script, signal_fluency, disclosure_posture, template_origin, orientation_dimensions, charmed_circle_position, resonance_profile, polarity_role and love_lust_cleft. Partially authored, partially inferred.
 
 **What Character Astrology provides (supplemental feed):**
 
@@ -239,14 +250,16 @@ The Moon is the primary source for L8. The Moon sign, its aspects, and its digni
 
 **Mars-Venus aspect** encodes the relationship between desire and action:
 
-- Conjunction: "To desire is to act." Desire and pursuit are fused. Low shame index likely.
-- Square: Desire and action conflict. What the character wants and what they do about it are in tension. Higher shame index likely.
+- Conjunction: "To desire is to act." Desire and pursuit are fused. Low exposure_shame likely.
+- Square: Desire and action conflict. What the character wants and what they do about it are in tension. Higher exposure_shame and role_shame likely.
 - Trine: Desire flows naturally into action. Comfortable sexuality. Low friction.
 - Opposition: Desire and action are split. The character may want one thing and pursue another.
 
 **5th House contents** encode creative and romantic expression — how desire manifests in the character's expressive life.
 
 **8th House contents** encode intimate transformation — how the character changes through deep relational and sexual experience.
+
+**Feed scope inside L9:** the chart hints at erotic_blueprint_type and desire_vector (Venus), exposure_shame and role_shame (Mars-Venus aspect), and polarity_role and love_lust_cleft (check only). All other L9 variables have no feed.
 
 **Feed logic:** L9 is the most inference-heavy layer. The chart provides the symbolic scaffolding but much of L9 is authored from the character's documented intimate history and aesthetic DNA. The chart validates authored choices rather than producing them.
 
@@ -301,6 +314,42 @@ L12 is fed entirely from the Dramatica Ingest Template. Character Astrology has 
 
 ---
 
+## Schema-Pass Fields: Feed Notes
+
+The main doc added fields after this doc's 1.0.0. This table gives each one a feed note, or "no feed". The chart justifies a layer value. It never sets these fields. The authors set them from the authoritative document. These notes are the writer's first call, open to the narrative designer's review.
+
+|Layer|Field (added)|Chart feed|
+|---|---|---|
+|L1|`identity_frame` (2.5.0)|No feed. The Sun sign does not name the gender persona or the label he uses.|
+|L3|`community_membership` (2.5.0)|No feed.|
+|L3|`agreement_style` (2.5.0)|No feed.|
+|L3|`self_presentation` (2.5.0)|No feed. The Ascendant already feeds L3 SOCIAL; it does not set the built public self.|
+|L3/L6|`risk_management_practice` (2.5.0)|No feed.|
+|L4|`resistance_mode` (2.5.0)|No feed.|
+|L6|`motivation_stack` (2.5.0)|Texture only, through the existing L6 feed (Mars, Jupiter). Never sets the stated or real motives.|
+|L6|`drive_texture` (2.5.0)|Texture only, through the existing L6 feed (Mars, Jupiter).|
+|L7|`origin_disciplinary_formation` (2.5.0)|No feed. The IC and 4th House do not name an institution.|
+|L8|`sexual_script_acquisition` (2.5.0)|No feed.|
+|L9|`polarity_role` (2.5.0)|Check only, through the existing L9 feed (Mars-Venus aspect). Never sets the role.|
+|L9|`love_lust_cleft` (2.5.0)|Check only, through the existing L9 feed (Venus, Mars-Venus aspect).|
+|L2|`body_capital` (3.0.0)|No feed.|
+|L3|`circumplex` (3.0.0)|No feed. Optional scored dial.|
+|L4|`locus_of_control` (3.0.0)|No feed.|
+|L6|`futurity_stance` (3.0.0)|No feed.|
+|L10|`dark_triad`, `light_triad` (3.0.0)|No feed. Optional scored dials. The L10 feed above covers shadow content only.|
+|L7|`hereditary_predisposition` (2.1.0)|No feed.|
+|L1-L3|`psychology_stack`, `physiology_stack`, `sociology_stack` (2.1.0)|No feed. The L1-L3 feeds above justify the numbers, not the Egri checklists.|
+
+Fields added in 2.2.0 to 2.4.0 (the L9 synthesis, the wave 2 and wave 3 lists) follow the L9 and L8 notes above.
+
+---
+
+## Tier 2 Charts
+
+A Tier 2 chart is Sun, Moon and one defining aspect (see the Tier 2 section of the DAI doc). It feeds only two layers. The Sun feeds L1 CORE. The Moon feeds L8 IMPRINT. Every other row of the feed table reads "no feed" for a Tier 2 character, and the Feed Validation Checklist runs only its L1 and L8 lines.
+
+---
+
 ## Independence Boundaries
 
 The following elements of Character Astrology have **no feed relationship** to the 12-Layer system:
@@ -348,7 +397,7 @@ When the Character Astrology chart and the 12-Layer values are inconsistent:
 
 ## Feed Validation Checklist
 
-Run this checklist after completing both the Character Astrology Ingest Template and the Vertical Slice for a character. Every item must pass or carry a documented exception.
+Run this checklist after completing both the Character Astrology Ingest Template (blank form: [ssot_02_template_astrology_ingest.md](📐%20ssot_02_template_astrology_ingest.md)) and the Vertical Slice for a character. Every item must pass or carry a documented exception.
 
 - [ ] Sun sign is consistent with L1 CORE justification prose
 - [ ] Mars sign + dignity is consistent with L2 VITAL value and justification
@@ -373,3 +422,4 @@ Run this checklist after completing both the Character Astrology Ingest Template
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-03|Initial mapping specification. Complete feed table, layer-by-layer specifications for all 12 layers, independence boundaries, conflict resolution protocol, and feed validation checklist.|
+|1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. L8 field list updated (`secure_base_object` replaces `primary_attachment_object`; `attachment_dimensions` and the 2.1.0 to 2.5.0 L8 fields added). L9 field list updated (`shame_index` split into `exposure_shame` and `role_shame`; about twenty variables). New table: feed notes for the schema-pass fields and the 3.0.0 additions. New section: Tier 2 charts. Dependency path fixed. Frontmatter repaired and table of contents links made in-page.|

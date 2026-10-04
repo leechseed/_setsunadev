@@ -1,22 +1,29 @@
 ---
-
-## type: ssot_02_character_systems category: state_architecture version: 1.2.1 last_updated: 2026-09-29 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: "canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar" purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems." dependencies: ["ssot_03_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
+type: ssot_02_character_systems
+category: state_architecture
+module_of: ssot_02_character_systems_vertical_slice
+version: 1.3.0
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: "v1.3.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar"
+purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems."
+dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
 ---
 # 🔮 SSOT: Character State Architecture
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [The Core Principle](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-core-principle)
-3. [What Is Static vs What Is Dynamic](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-is-static-vs-what-is-dynamic)
-4. [State Record Format](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-record-format)
-5. [Checkpoints and Story Points (v1.2)](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#checkpoints-and-story-points-v12)
-6. [State Diff Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-diff-rules)
-7. [Querying a Character at a Narrative Moment](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#querying-a-character-at-a-narrative-moment)
-8. [State Sources](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#state-sources)
-9. [Relationship Records](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#relationship-records)
-10. [Boundaries with plot_systems](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#boundaries-with-plot-systems)
-11. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [The Core Principle](#the-core-principle)
+3. [What Is Static vs What Is Dynamic](#what-is-static-vs-what-is-dynamic)
+4. [State Record Format](#state-record-format)
+5. [Checkpoints and Story Points (v1.2)](#checkpoints-and-story-points-v12)
+6. [State Diff Rules](#state-diff-rules)
+7. [Querying a Character at a Narrative Moment](#querying-a-character-at-a-narrative-moment)
+8. [State Sources](#state-sources)
+9. [Relationship Records](#relationship-records)
+10. [Boundaries with plot_systems](#boundaries-with-plot_systems)
+11. [Version History](#version-history)
 
 ---
 
@@ -42,38 +49,18 @@ The 12-Layer Vertical Slice and the Character Astrology natal chart represent th
 
 ## What Is Static vs What Is Dynamic
 
-### Static (Lives in the Base Record, Never Changes)
+**The rule.** The main doc's layer table carries a static/dynamic column; this doc reads it. No field ships without the tag.
 
-|Data|Reason|
-|---|---|
-|L1 CORE value|Cognitive capacity does not change within a single story arc|
-|L2 VITAL value|Physical capacity baseline does not change (injuries are state diffs)|
-|L3 SOCIAL value|Social interface baseline does not change (reputation is a state diff)|
-|L12 FUNCTION (entire layer)|Dramatica structural role is fixed for the storyform|
-|Character Astrology natal chart|The chart is the source code — it does not mutate|
-|Natal aspects|Internal friction architecture is permanent|
-|Natal dignities|Efficiency ratings are permanent|
-|House placements|Environmental directories are permanent|
-|L7 ORIGIN variable stack|Origin does not change — it is historical record|
-|L8 IMPRINT conditional_patterns|Core conditioning patterns are permanent (their activation state changes)|
+Static fields live in the base record and never change. Dynamic fields live in state diffs. This doc no longer keeps its own list, so there is one place to look and one place to fix.
 
-### Dynamic (Lives in State Diffs)
+Until the column lands in the main doc, the Decision Test below breaks ties.
 
-|Data|Reason|
-|---|---|
-|L4 WILL (effective value)|Systemic pressure can temporarily reduce effective WILL|
-|L5 WOUND value|Wounds accumulate and occasionally partially heal|
-|L6 DRIVE value|Drive is spent and recovered across the narrative|
-|L8 IMPRINT attachment_style_score|Attachment security fluctuates based on relational events|
-|L8 IMPRINT primary_attachment_object|Attachment targets change (death, new bonds, betrayal)|
-|L9 EROS desire_vector, shame_index|Sexual and intimate patterns shift with experience|
-|L10 SHADOW shadow_density, projection_tendency|Shadow content surfaces or deepens across the arc|
-|L11 DESTINY resistance_index|Resistance to growth changes as the character approaches transformation|
-|All derived statistics|Recomputed from modified layer values in the state diff|
-|All flag states|Re-evaluated against modified values in the state diff|
-|Progressed planetary positions|Progressions create slow-moving state overlays|
-|Active transits|Transits create temporary state overlays|
-|Relationship states|Tracked in separate relationship records (see Section 8)|
+**Outside the layer table.** The main doc's column does not cover these items, so the rule for them stays here:
+
+- The Character Astrology natal chart, natal aspects, natal dignities and house placements are static. The chart never mutates.
+- Progressed planetary positions and active transits are dynamic. They are overlays (see the Character Astrology State Overlay below).
+- All derived statistics and all flag states are dynamic. They are recomputed from the modified layer values in the state diff.
+- Relationship states are dynamic. They live in separate relationship records (see Relationship Records).
 
 ### The Decision Test
 
@@ -125,7 +112,7 @@ MODIFIED_VALUES:
   WILL_EFFECTIVE: 13 # base WILL is 14, reduced under active trauma
   
   L8_IMPRINT:
-    primary_attachment_object: brother_deceased  # was brother_alive
+    secure_base_object: brother_deceased  # was brother_alive (renamed from primary_attachment_object; old name is a read alias)
     attachment_style_score: 6  # was 7 pre-crash
 
   L10_SHADOW:
@@ -173,7 +160,7 @@ STATE_NOTE: >
 
 ### Character Astrology State Overlay (Optional)
 
-If progressions or transits are active at this narrative moment, they are documented here as chart overlays.
+If progressions or transits are active at this narrative moment, they are documented here as chart overlays. The natal chart never mutates. Only this overlay changes from one state to the next, and it sits on top of the chart without editing it.
 
 ```
 ASTROLOGY_OVERLAY:
@@ -334,6 +321,7 @@ This document defines character state tracking. It does not define story structu
 
 |Version|Date|Changes|
 |---|---|---|
+|1.3.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. The hand-kept static and dynamic tables replaced by a rule: the main doc's layer table carries a static/dynamic column and this doc reads it; no field ships without the tag (C17). Example block updated (`secure_base_object`). The astrology overlay section now says the chart never mutates (C15). Dependency path fixed. Frontmatter repaired and table of contents links made in-page. Additive; no rule removed.|
 |1.2.1|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). New Rule 7: backward diffs are allowed — a character's base record is whatever state canon describes, and a checkpoint dated earlier than it may diff backward (mirrors ssot_03_setting_state_architecture.md §6 Rule 7). Time-code examples updated to the ruled sequence grammar, `M2 · Q1 · S04 \| 012.3.2` (both the `told_at` field example and the Boundaries section). Additive; no field removed.|
 |1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 ("go"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distance_temporal` redefined as computed from time codes with Tori fixed at (0,0); `mc_distance_narrative` stays authored · new §Checkpoints and Story Points (v1.2): today's state records are checkpoints, story points (single-field changes, any time code) live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) · Rule 6 amended to govern checkpoints only, story points may be many per moment · Boundaries with plot_systems updated: the timeline coordinate system and Victoria-as-(0,0) are ruled, provided by ssot_08. Additive; no field removed.|
 |1.1.0|2026-09-24|BOLO 77 handshake, ruled "all recs" 2026-09-24: `origin_event` required field (the fabula's `event_id`, `<movement>_<slug>`; null only for progression overlays) · the three MODIFIED blocks grouped under a `state_diffs` parent (v1.0 top-level blocks stay valid) · the plot_systems boundary points to the fabula doc. Additive; no field removed.|
