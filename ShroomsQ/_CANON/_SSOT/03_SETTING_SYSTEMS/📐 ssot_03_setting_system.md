@@ -1,10 +1,10 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.6.0
+version: 1.7.0
 last_updated: 2026-10-04
-applies_to: [OVEREXITOUT, all future IPs]
-status: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, "go on all those recs"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, "I'll recommend"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, "go, all recommendations"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial)
+applies_to: [all IPs]
+status: "v1.7.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stale marks stripped; DCUS faction-card gaps parked; SETTING FLAGS starter set (six flags) written; scene-card field trial parked; scope set to all IPs; instance labeled worked example. Earlier: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, \"go on all those recs\"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, \"I'll recommend\"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, \"go, all recommendations\"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial)"
 purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
@@ -222,7 +222,45 @@ From Ekman, *Here Be Dragons* (CRE.08). Four questions for a ringed place like D
 3. **The flood (S11):** what outside force would collapse it? S11 records it as a threat clock.
 4. **The inside law (S4):** what rules hold inside that do not hold outside?
 
-## THE INSTANCE — DCUS starter slice (proof of rig)
+## SETTING FLAGS — starter set (RULED 2026-10-04, Chief "REC", BOLO 100)
+
+Setting flags work like character flags. The place record computes each flag. Nobody assigns one. A flag takes one of four states: ACTIVE (condition met now), PENDING (met at a named story event), FIRED_PRE_STORY (met before story entry), INACTIVE (dormant). The character form is in `ssot_02_character_systems_vertical_slice.md`, "Flag Trigger Conditions". Setting scores few fields, so each trigger reads fields this doc already names: the S1 border/seam rating, the S10 tiers, the S5 and S9 entries, the S11 forward-ledger sub-field, the S12 record per `storyform_id`, and the SCENE CARD fields `setting`, `function mode` and `active strata`. A state diff re-evaluates every flag (state architecture, Rule 4).
+
+**SEAM_CROSSING**
+- Trigger: the SCENE CARD `setting` spans two zones, and the S1 border/seam sub-field gives that pair a rating.
+- Signals a writer: crossing changes which rules bind. Note the rules change on the card, with seam type `passageway` where it applies.
+- Layers: S1 BODY, S4 LAW.
+
+**SCAR_ACCRETED**
+- Trigger: a state diff adds an entry to S5 SCAR.
+- Signals a writer: the place took new damage or a new erasure. The old entries stay on record (Rule 1a). Check S11 VECTOR for a shift.
+- Layers: S5 SCAR, S11 VECTOR.
+
+**WOUND_PROMISE_FUSED**
+- Trigger: one rupture appears in S5 SCAR and in S9 ALLURE through the cross-ref entry.
+- Signals a writer: the same event made the wound and the draw. A scene can play both at once.
+- Layers: S5 SCAR, S9 ALLURE.
+
+**UNDERSIDE_SURFACING**
+- Trigger: a state diff moves an S10 UNDERSIDE fact one tier, from secret to folk or from folk to public.
+- Signals a writer: a hidden fact is now easier to find. Pair it with a scene that shows how it surfaced.
+- Layers: S10 UNDERSIDE, S5 SCAR.
+
+**LEDGER_DUE**
+- Trigger: the S11 forward-ledger sub-field holds a dated future state, and the checkpoint's time code reaches that date.
+- Signals a writer: a state fixed in advance now lands. Write the new state diff at this checkpoint. The flag reads PENDING until the date arrives.
+- Layers: S11 VECTOR, S5 SCAR.
+
+**LOAD_BEARING**
+- Trigger: the place has an S12 FUNCTION record keyed by a `storyform_id`.
+- Signals a writer: this place carries a throughline Domain. Every scene set here deploys one or two Axis 3 `function mode` values on purpose.
+- Layers: S12 FUNCTION, plus the S4 and S9 layers that carry the argument.
+
+A story may add its own place flags in its instance file.
+
+---
+
+## THE INSTANCE — DCUS starter slice (proof of rig) — worked example (phase 2 fills)
 
 Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_CANON_NODES/delta-coast-ultra-school.md) + storyform §9 + handoff bundle). Starter depth — full instance lives with the canon node when Movements 2–4 open.
 
@@ -243,28 +281,28 @@ Filled entirely from existing canon ([delta-coast-ultra-school.md](../../../../_
 | S11 VECTOR | the six-movement descent: clean → NEON-ROT → hunt; collapse trajectory |
 | S12 FUNCTION | `storyform_id: oxo_primary_v1` — **the OS Domain embodied: Situation / The Past.** Goal = The Past, story_cost = Memories: the campus IS personal history deleted for programming space, done to a place. The rebrand is the world's Boot Sequence at institutional scale. **Invariant set: the Institutional Invariants (Ecclesial Laws)** — `THE_ADMINISTRATION.md`, place-scoped |
 
-**DCUS faction cards (RULED 1.4.1, 2026-09-29; Chief, "go, all recommendations").** Full cards for the two factions the story centers, stubs for the rest. **The Administration and the Bishops are two factions** (the owners buy the school; the system runs it without them; THE_ADMINISTRATION.md's "(The Bishops)" parenthetical reads as the Bishops being its instrument, not its identity). ⧗ = proposal held, not canon.
+**DCUS faction cards (RULED 1.4.1, 2026-09-29; Chief, "go, all recommendations").** Full cards for the two factions the story centers, stubs for the rest. **The Administration and the Bishops are two factions** (the owners buy the school; the system runs it without them; THE_ADMINISTRATION.md's "(The Bishops)" parenthetical reads as the Bishops being its instrument, not its identity).
 
 ```
 FACTION CARD · THE ADMINISTRATION (full)
-founding sentence:    ⧗ none canon; always-already the Spiral's operating layer, "the 10th House gone sterile"
+founding sentence:    ⏸ DCUS faction fill pass (phase 2) none canon; always-already the Spiral's operating layer, "the 10th House gone sterile"
 binding principle:    legitimacy is issued, not earned (the Sacrament of Verification)
 government:           church-state bureaucracy; the holder is unnamed, the "Silent Hand" acting through the Bishops
-economy tier:         ⧗ apex / unrated: it controls legibility, not currency
+economy tier:         ⏸ DCUS faction fill pass (phase 2) apex / unrated: it controls legibility, not currency
 border/seam rating:   near zero: to be Un-Verified is excommunication from the infrastructure of survival
 one secret:           its plan covers logic, fear, and rebellion, but not the exhaustion hunt, Noise that outlasts it
 
 FACTION CARD · THE BISHOPS (full)
 founding sentence:    bought Red Hills Academy when the son sold his father's century of prestige for spoils; rebranded it DCUS
 binding principle:    the Ultra School as a chain; DCUS is the flagship (provisional tissue)
-government:           private acquisition capital; Quinn Bishop runs "Administrative Fixes" for the Administration; ⧗ no fuller hierarchy canon
+government:           private acquisition capital; Quinn Bishop runs "Administrative Fixes" for the Administration; ⏸ DCUS faction fill pass (phase 2) no fuller hierarchy canon
 economy tier:         acquisition capital converting inherited prestige into product
 border/seam rating:   high friction at the seam they made: saying "Red Hills" is a legibility violation
-one secret:           ⧗ CONDITIONAL: the sale "for spoils" was an inside deal dressed as a rescue; in only if M2–4 want an ownership-war reveal
+one secret:           ⏸ DCUS faction fill pass (phase 2) CONDITIONAL: the sale "for spoils" was an inside deal dressed as a rescue; in only if M2–4 want an ownership-war reveal
 
-STUB · the alumni-legacy bloc: descends from Red Hills' 100+ year student body · loyalty to the old name, carried in speech · ⧗ may hold oral memory of Skeeter Creek (Movement 3's forensic target)
-STUB · the faculty split: carried over from the ownership war · ⧗ legacy old guard vs Sync-era hires · secret not yet drawn
-STUB · the Sync Cult: ⧗ HELD until it has its own canon node (binding principle and secret are both proposals)
+STUB · the alumni-legacy bloc: descends from Red Hills' 100+ year student body · loyalty to the old name, carried in speech · ⏸ DCUS faction fill pass (phase 2) may hold oral memory of Skeeter Creek (Movement 3's forensic target)
+STUB · the faculty split: carried over from the ownership war · ⏸ DCUS faction fill pass (phase 2) legacy old guard vs Sync-era hires · secret not yet drawn
+STUB · the Sync Cult: ⏸ DCUS faction fill pass (phase 2) HELD until it has its own canon node (binding principle and secret are both proposals)
 ```
 
 Benched: the dueling bells (the Red Hills bell tower against the Feed's period signal), until a scene needs a bell.
@@ -277,7 +315,7 @@ Benched: the dueling bells (the Red Hills bell tower against the Feed's period s
 
 `feeds:` for this limb: Buckham 0268/0269/0270 (Active Setting 1–3) + 0267/0056 → Axis 3 + S3 · Rozelle 0081, Hall 0288 → S3 craft · Alderson 0274 → scene card · Kobold 0458/0541, GURPS 0447, Collaborative Worldbuilding 0067 → Axis 2 strata + R7/R8 scale · Against Worldbuilding 0349 → the counter-argument (worldbuilding serves pressure, not inventory — the doc's own root claim) · Bal 0591/0596, Chatman 0167 → space/description theory (deepens in Module 3) · Once Upon a Pixel 0144, narrative-design shelf → Afford mode (environmental storytelling).
 
-**Synthesis, 2026-09-29:** 42 further setting-shelf distills were folded against this system on 9/29 — [ssot_03_setting_synthesis.md](📐%20ssot_03_setting_synthesis.md) v0.2.0 has the full per-layer register, nine cross-book recurring methods, ten proposed changes to the taxonomy and slice (changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied in this version; change 5 benched; change 10 reaffirmed), the DCUS application, and four read contradictions. Headline: ten of twelve S-layers move from adequate to deep; S3 SENSORIUM clears its flagged-thin status; S2 WEATHER's method gap closes but the DCUS instance itself stays unwritten; S12 FUNCTION gets its first non-DCUS worked instance.
+**Synthesis, 2026-09-29:** 42 further setting-shelf distills were folded against this system on 9/29 — [ssot_03_setting_synthesis.md](📐%20ssot_03_setting_synthesis.md) v1.0.0 has the full per-layer register, nine cross-book recurring methods, ten changes to the taxonomy and slice (changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied; change 5 RULED 1.4.0 and applied; change 10 reaffirmed), the DCUS application, and four read contradictions. Headline: ten of twelve S-layers move from adequate to deep; S3 SENSORIUM clears its flagged-thin status; S2 WEATHER's method gap closes but the DCUS instance itself stays unwritten; S12 FUNCTION gets its first non-DCUS worked instance.
 
 **Genre-contract tool, 2026-09-29 (synthesis change 8, RULED):** Ryan's nine-axis ontological scoring [[BVX.0630]] is the primary L7 genre-contract tool; Baur's five-lineage taxonomy (Kobold, [[BVX.0458]]) stays as shorthand only — BVX.0630's own frontmatter states it supersedes the five-lineage tool, a sharpening, not a new concept.
 
@@ -293,14 +331,15 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 **RULED 1.4.0, 2026-09-29:** passageway (→ S1 seam type) · McKee's conflict level (→ S12 reading) · Kennedy's fill rule (→ PART A) · tone-to-mechanic, change 5 (→ S12 sub-note) · the twelve layer names (ruled as they stand) · `03_SETTING_SYSTEMS/` placement (kept) — all closed.
 
-**Still open (authoring, not calls):**
-- **Scene card field trial** — first real scene of OXO should run one card end-to-end.
+**Parked (authoring, not calls):**
+- ⏸ OXO scene-card fill pass (phase 2) — the BOLO 90 M2 grief trial already ran the card; the first real OXO scene fills it.
 
 **Landed:**
 - **Setting state architecture — landed 2026-09-29** (BOLO 90 step 3): [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs, checkpoints and story points, the DCUS rename lattice instanced as three checkpoints.
 
 ## Version history
 
+- **1.7.0 — 2026-10-04.** RULED by Chief ("REC", BOLO 100 setting batch 1): the proposal-mark legend is gone; the seven DCUS faction-card gaps are parked as `⏸ DCUS faction fill pass (phase 2)`; SETTING FLAGS starter set added (SEAM_CROSSING, SCAR_ACCRETED, WOUND_PROMISE_FUSED, UNDERSIDE_SURFACING, LEDGER_DUE, LOAD_BEARING), with the rule that a story may add its own place flags in its instance file; the scene-card field trial is parked as `⏸ OXO scene-card fill pass (phase 2)`; `applies_to` is now all IPs and THE INSTANCE is labeled a worked example. This doc is the head of the setting lattice; the state architecture and the synthesis are its modules.
 - **1.6.0 — 2026-10-04.** RULED by Chief ("all recs", BOLO 87 wave 1): THE POLDER TEST added (Ekman, CRE.08); the SCENE CARD gains `citation` and `transcript` fields from the theme system's scene tests (07 v1.2.0).
 - **1.5.0 — 2026-09-29.** RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). THE SEQUENCE CARD added right after THE SCENE CARD: a thin seven-field card for R3 SEQUENCE units (sequence question, N scene-slots, one rolled-up turn, commandments read at sequence grain, threads, exit state), closing the field trial's WHAT BROKE 1 gap. No taxonomy or slice change.
 - **1.4.2 — 2026-09-29.** BOLO 90 step 3, setting state architecture landed as its own doc: [🔮 ssot_03_setting_state_architecture.md](🔮%20ssot_03_setting_state_architecture.md) — base slice vs. state diffs mirroring `ssot_02_character_state_architecture` v1.2 layer for layer, checkpoints and story points per `ssot_08_tracking_system`, and the DCUS rename lattice (Skeeter Creek → Red Hills → DCUS) instanced as the first three checkpoints. OPEN list's "Setting state architecture" bullet moved to Landed; Axis 4 TIME gets one sentence pointing at the new doc and ssot_08. No taxonomy or slice change.
