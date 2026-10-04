@@ -1,10 +1,10 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 2.4.0
+version: 2.5.0
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v2.4.0 2026-10-04: RULED, Chief: \"all rec\" — wave 3: L3/L9 knowledge_map · L9 template_origin.core_erotic_theme + arousal_curve SES/SIS · L9 consent_posture sub-fields (negotiation · signals · debrief + consent model) · L10 moral_incongruence. Victoria Midnight unchanged; new fields ⧗/null. v2.3.0 2026-10-04: RULED 2026-10-04, Chief: \"rec\" — four wave-2 additions: L9 orientation_dimensions · L8 vandalism_event + L9 template_origin holds the lovemap · L9 charmed_circle_position (beside consent_posture, adults only) · L9 resonance_profile + L8 somatic_archive. Victoria Midnight instance unchanged; new fields ⧗/null, no canon invented. About twelve more coined names wait for the schema pass (BOLO 88). v2.2.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" — the L9 EROS synthesis (ssot_02_l9_eros_synthesis.md) applied in full, all ten PROPOSED CHANGES: L9 EROS gains consent_posture, client_script (the scripted↔spontaneous axis), signal_fluency, resolution_type (under desire_vector), exposure_shame/role_shame (splitting shame_index, kept as a read alias), arousal_curve (under erotic_blueprint_type), erotic_safety_precondition_scope (internal/external), disclosure_posture (on L9, cross-linked to L3's), and template_origin (an L9→L8 pointer); erotic_pacing adopted as a Core Methodology writing rule, not a field. Victoria Midnight instance kept valid: exposure_shame, erotic_safety_precondition_scope, and template_origin backfilled from documented text (victoria-midnight-L9-eros.md); consent_posture, client_script, signal_fluency, resolution_type, role_shame, arousal_curve, and disclosure_posture marked ⧗/null, no canon invented. The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions) logged to the acquisition list — the whole-spectrum library sweep already running covers it. ## TROPES untouched. v2.1.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory now distilled, BVX.1127). New fields: L1/L2/L3 gain an Egri text stack; L4 gains coping_strategy and is redefined as decision-capacity not toughness; L5 gains severity, triggers, relational_refs; L7 gains provisional hereditary_predisposition; L8 gains attachment_dimensions, protest_behaviors, deactivating_strategies, and the rename primary_attachment_object → secure_base_object (old name kept as a read alias); L11 gains arc_type, change_cause, catalyst_archetype; L12 gains the Protagonist-necessity rule. Victoria Midnight instance kept valid: new fields empty or ⧗ where undocumented, no canon invented. v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Chief: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
+status: "v2.5.0 2026-10-04: RULED, Chief: \"all recommendations\" — the schema pass: 12 fields (identity_frame · community_membership · agreement_style · risk_management_practice · self_presentation · resistance_mode · motivation_stack · drive_texture · origin_disciplinary_formation · sexual_script_acquisition · polarity_role · love_lust_cleft); 139 coined names mapped as aliases or dropped; 4 held. Victoria Midnight unchanged. v2.4.0 2026-10-04: RULED, Chief: \"all rec\" — wave 3: L3/L9 knowledge_map · L9 template_origin.core_erotic_theme + arousal_curve SES/SIS · L9 consent_posture sub-fields (negotiation · signals · debrief + consent model) · L10 moral_incongruence. Victoria Midnight unchanged; new fields ⧗/null. v2.3.0 2026-10-04: RULED 2026-10-04, Chief: \"rec\" — four wave-2 additions: L9 orientation_dimensions · L8 vandalism_event + L9 template_origin holds the lovemap · L9 charmed_circle_position (beside consent_posture, adults only) · L9 resonance_profile + L8 somatic_archive. Victoria Midnight instance unchanged; new fields ⧗/null, no canon invented. About twelve more coined names wait for the schema pass (BOLO 88). v2.2.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" — the L9 EROS synthesis (ssot_02_l9_eros_synthesis.md) applied in full, all ten PROPOSED CHANGES: L9 EROS gains consent_posture, client_script (the scripted↔spontaneous axis), signal_fluency, resolution_type (under desire_vector), exposure_shame/role_shame (splitting shame_index, kept as a read alias), arousal_curve (under erotic_blueprint_type), erotic_safety_precondition_scope (internal/external), disclosure_posture (on L9, cross-linked to L3's), and template_origin (an L9→L8 pointer); erotic_pacing adopted as a Core Methodology writing rule, not a field. Victoria Midnight instance kept valid: exposure_shame, erotic_safety_precondition_scope, and template_origin backfilled from documented text (victoria-midnight-L9-eros.md); consent_posture, client_script, signal_fluency, resolution_type, role_shame, arousal_curve, and disclosure_posture marked ⧗/null, no canon invented. The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions) logged to the acquisition list — the whole-spectrum library sweep already running covers it. ## TROPES untouched. v2.1.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory now distilled, BVX.1127). New fields: L1/L2/L3 gain an Egri text stack; L4 gains coping_strategy and is redefined as decision-capacity not toughness; L5 gains severity, triggers, relational_refs; L7 gains provisional hereditary_predisposition; L8 gains attachment_dimensions, protest_behaviors, deactivating_strategies, and the rename primary_attachment_object → secure_base_object (old name kept as a read alias); L11 gains arc_type, change_cause, catalyst_archetype; L12 gains the Protagonist-necessity rule. Victoria Midnight instance kept valid: new fields empty or ⧗ where undocumented, no canon invented. v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Chief: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
 rung: standard
 dependencies: ["[[📐_ssot_05_operations_writing_guide]]", "[[📐_ssot_05_operations_ai_instruction_protocol]]", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_character_state_architecture", "ssot_02_dramatica_integration_protocol", "ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_l9_eros_synthesis"]
 trunk: BLACK
@@ -147,23 +147,23 @@ A four-device toolkit — withhold, fragment, bound, interrupt — governs how a
 
 Each layer governs one and only one domain. Overlap between layers constitutes a schema error, not a character note.
 
-**L1 — CORE:** Cognitive and psychological mass. Governs all mental skill defaults, ideological frameworks, and problem-solving capacity. Default value: 10. Point cost: 20 pts per level above 10 (IQ equivalent). Carries `psychology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the psychology third of Egri's bone structure (moral standards, ambition, frustrations, temperament, attitude toward life, complexes, extrovert/introvert, abilities, qualities, IQ) as an auditable text checklist beneath the number, not replacing it.
+**L1 — CORE:** Cognitive and psychological mass. Governs all mental skill defaults, ideological frameworks, and problem-solving capacity. Default value: 10. Point cost: 20 pts per level above 10 (IQ equivalent). Carries `psychology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the psychology third of Egri's bone structure (moral standards, ambition, frustrations, temperament, attitude toward life, complexes, extrovert/introvert, abilities, qualities, IQ) as an auditable text checklist beneath the number, not replacing it. **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `identity_frame` (the frame he names himself by: gender persona, orientation label, era category, and the gender script he plays for each audience).
 
 **L2 — VITAL:** Physical and energetic presence. Governs body precision, endurance, reaction capacity, and physical expressiveness. Default value: 10. Point cost: 20 pts per level above 10 (DX equivalent). Carries `physiology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the physiology third of the bone structure (heredity, appearance, defects, posture, health) as the same kind of text checklist. Heredity itself resolved to L7's `hereditary_predisposition`, not here — see L7.
 
-**L3 — SOCIAL:** Relational interface. Governs projection into the world, reception of others, social legibility, and reaction modifier math. Default value: 10. Point cost: 10 pts per level above 10 (HT equivalent). Carries `sociology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the sociology third of the bone structure (class, occupation, education, home life, political affiliation) as text. The interpersonal circumplex ([[BVX.0233]], call 8) is noted here as a pilot dial only — RULED 2026-09-29 concrete enough to pilot on one character, not retrofitted onto Victoria now, and not yet a scored field. **Added 2.4.0 (RULED 2026-10-04, wave 3, "all rec"):** `knowledge_map` (Sedgwick, [[MSX.68]]), per relationship: what each knows, what each knows the other knows, and who may claim not to know; reveal, near-reveal and refusal scenes come from changes in the map. Shared with L9.
+**L3 — SOCIAL:** Relational interface. Governs projection into the world, reception of others, social legibility, and reaction modifier math. Default value: 10. Point cost: 10 pts per level above 10 (HT equivalent). Carries `sociology_stack` (call 12, [[BVX.1123]] Egri — APPLIED 2.1.0): the sociology third of the bone structure (class, occupation, education, home life, political affiliation) as text. The interpersonal circumplex ([[BVX.0233]], call 8) is noted here as a pilot dial only — RULED 2026-09-29 concrete enough to pilot on one character, not retrofitted onto Victoria now, and not yet a scored field. **Added 2.4.0 (RULED 2026-10-04, wave 3, "all rec"):** `knowledge_map` (Sedgwick, [[MSX.68]]), per relationship: what each knows, what each knows the other knows, and who may claim not to know; reveal, near-reveal and refusal scenes come from changes in the map. Shared with L9. **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `community_membership` (the chosen community, its places, press and codes, and the rooms he belongs in, with each room's code) · `agreement_style` (relationship agreements: fuzzy or legalistic, open or closed) · `risk_management_practice` (the safety rules he makes and keeps; shared with L6) · `self_presentation` (the desirable self he builds for a public: apps, sites, a brand).
 
-**L4 — WILL:** Redefined 2026-09-29 (call 13, [[BVX.1123]] strength of will): the capacity to decide under pressure, not raw toughness. Psychological resistance to coercion, manipulation, and systemic pressure is still what it governs, but the number measures whether a choice can be made at all, not how much punishment the character can absorb before bending. Derives from CORE by default (`WILL = CORE`). Buyable up or down at 5 pts per level. Carries `coping_strategy` (call 10, [[BVX.0045]] Schmidt's five strategies — APPLIED 2.1.0, sited on L4 rather than L8 per the 2026-09-29 ruling).
+**L4 — WILL:** Redefined 2026-09-29 (call 13, [[BVX.1123]] strength of will): the capacity to decide under pressure, not raw toughness. Psychological resistance to coercion, manipulation, and systemic pressure is still what it governs, but the number measures whether a choice can be made at all, not how much punishment the character can absorb before bending. Derives from CORE by default (`WILL = CORE`). Buyable up or down at 5 pts per level. Carries `coping_strategy` (call 10, [[BVX.0045]] Schmidt's five strategies — APPLIED 2.1.0, sited on L4 rather than L8 per the 2026-09-29 ruling). **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `resistance_mode` (everyday tactics against a system: dress, space, passing, hidden worlds; 17 distills).
 
 **L5 — WOUND:** Accumulated psychological damage that failed to resolve. Assigned during character history entry. High WOUND reduces effective WILL and SOCIAL under trigger conditions. Scale: 0 (undamaged) to 10 (functional collapse threshold) — this scale is now named `severity` (call 6, [[BVX.0209]] the wound card's severity dial — APPLIED 2.1.0), the same number under Puglisi & Ackerman's name for it, not a second value. Carries `triggers` (call 6, a list of the conditions that fire the wound) and `relational_refs` (call 1 folded into call 15, [[BVX.0196]] ghost/revenant — APPLIED 2.1.0): a list of `{kind: ghost|revenant|mentor|shapeshifter, character_id, note}` entries, one relational field for every meaning this layer keys to another character, superseding the separate `ghost_ref`/`revenant_ref` fields originally proposed.
 
-**L6 — DRIVE:** Narrative motivation fuel. Derives from VITAL by default (`DRIVE = VITAL`). Spent on active goal-pursuit; recovered through narrative resolution. Buyable at 3 pts per level.
+**L6 — DRIVE:** Narrative motivation fuel. Derives from VITAL by default (`DRIVE = VITAL`). Spent on active goal-pursuit; recovered through narrative resolution. Buyable at 3 pts per level. **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `motivation_stack` (ordered motives, stated versus real) · `drive_texture` (the felt shape of the drive: more, risk, novelty, abundance).
 
-**L7 — ORIGIN:** Birth context, socioeconomic class, family architecture, environmental formation, and system exposure timing. Numeric variables feed WOUND base and SOCIAL defaults. Carries `hereditary_predisposition` (call 12, [[BVX.1123]] Egri's one homeless field — APPLIED 2.1.0, provisional until a second character tests it): the trait or tendency inherited rather than formed, the field that fit neither ORIGIN nor VITAL cleanly and is parked here on the origin side of that seam.
+**L7 — ORIGIN:** Birth context, socioeconomic class, family architecture, environmental formation, and system exposure timing. Numeric variables feed WOUND base and SOCIAL defaults. Carries `hereditary_predisposition` (call 12, [[BVX.1123]] Egri's one homeless field — APPLIED 2.1.0, provisional until a second character tests it): the trait or tendency inherited rather than formed, the field that fit neither ORIGIN nor VITAL cleanly and is parked here on the origin side of that seam. **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `origin_disciplinary_formation` (the institution that bonded and policed him: team, unit, club, church).
 
-**L8 — IMPRINT:** Formative emotional conditioning. Attachment architecture, emotional range, and operational belief patterns established prior to story entry. The field list is now [[BVX.1127]] Levine & Heller, *Attached* (call 14, APPLIED 2.1.0): `attachment_style` as a four-way enum (secure · anxious · avoidant · fearful_avoidant), a two-dimension `attachment_dimensions` {anxiety, avoidance} beside the existing scalar `attachment_style_score`, and new list fields `protest_behaviors` and `deactivating_strategies`. `primary_attachment_object` is renamed `secure_base_object`; the old name is kept as a read alias, the only rename in this bump. **Added 2.3.0 (RULED 2026-10-04, wave 2, "rec"):** `vandalism_event` (Money, [[PSY.54]]): the dated early event that bent the lovemap, paired with L9's `template_origin`; `somatic_archive` (Paasonen, [[MSX.67]]): what the body has learned to answer, built up by habit, with no trauma story required.
+**L8 — IMPRINT:** Formative emotional conditioning. Attachment architecture, emotional range, and operational belief patterns established prior to story entry. The field list is now [[BVX.1127]] Levine & Heller, *Attached* (call 14, APPLIED 2.1.0): `attachment_style` as a four-way enum (secure · anxious · avoidant · fearful_avoidant), a two-dimension `attachment_dimensions` {anxiety, avoidance} beside the existing scalar `attachment_style_score`, and new list fields `protest_behaviors` and `deactivating_strategies`. `primary_attachment_object` is renamed `secure_base_object`; the old name is kept as a read alias, the only rename in this bump. **Added 2.3.0 (RULED 2026-10-04, wave 2, "rec"):** `vandalism_event` (Money, [[PSY.54]]): the dated early event that bent the lovemap, paired with L9's `template_origin`; `somatic_archive` (Paasonen, [[MSX.67]]): what the body has learned to answer, built up by habit, with no trauma story required. **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `sexual_script_acquisition` (who and what taught him what sex means, and at which level).
 
-**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode. Nine sub-fields added 2026-09-29 (the L9 EROS synthesis, RULED 2026-09-29, Chief: "Rex" — APPLIED 2.2.0), read against the 9/29 sexuality distill shelf (MSX.18–MSX.36, PSY.08–PSY.13), full derivation in [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md): `consent_posture` alongside `desire_vector`, distinct from `erotic_safety_precondition` — a "yes" and a want are different facts (cites MSX.18, MSX.22, MSX.27, PSY.11); `client_script` — scripted↔spontaneous, revisable mid-scene, for staged or paid intimacy (cites MSX.18, MSX.19, MSX.27); `signal_fluency` — fluent / functional / illiterate, nonverbal desire-and-consent literacy independent of desire's content (cites MSX.21, MSX.22, MSX.29); `resolution_type` under `desire_vector` — terminating / additive, for desire that accumulates without a finish line (cites MSX.24, MSX.32, PSY.13); `exposure_shame` and `role_shame` splitting `shame_index`, both 0–10, same convention — `shame_index` kept as a read alias for `exposure_shame`, the same pattern as L8's `secure_base_object` rename (cites MSX.23, MSX.25, MSX.34); `arousal_curve` under `erotic_blueprint_type` — spike / plateau / current (cites MSX.23, MSX.30, MSX.32); `erotic_safety_precondition_scope` on `erotic_safety_precondition` — internal / external, for a chemical or structural precondition invisible to the scene itself, e.g. PrEP, U=U (cites MSX.18, MSX.24, MSX.29); `disclosure_posture` on L9 — the sexual-health disclosure register, cross-linked to but distinct from L3's own `disclosure_posture` (cites MSX.28, MSX.29, MSX.31, MSX.35); and `template_origin`, a relational pointer from L9 to the L8 imprint event a character's adult desire is downstream of, echoing L5's `relational_refs` pattern (cites PSY.08, PSY.13, MSX.23). `erotic_pacing` (MSX.26, MSX.33) is adopted as a Core Methodology writing rule above, not a field. **Added 2.3.0 (RULED 2026-10-04, wave 2, "rec"):** `orientation_dimensions` (Laumann, [[PSY.53]]): behavior · desire · identity as three separate settings, so a character can want and never act, or act and never name it; Kinsey's 0–6 rides along as a per-age score ([[PSY.50]]). `template_origin` now also holds the lovemap design itself, the fixed erotic template (Money, [[PSY.54]]). `charmed_circle_position` (Rubin, [[MSX.46]]): for each act the character wants, which side of the world's good-sex line it falls on and how they carry it; it reads beside `consent_posture`; adults only. `resonance_profile` (Paasonen, [[MSX.67]]): what lands now, how it shifts, and how it goes stale through habit. **Added 2.4.0 (RULED 2026-10-04, wave 3, "all rec"):** `template_origin` gains `core_erotic_theme`, one sentence per lead, worded from its wound (Morin, [[PSY.63]]); `arousal_curve` gains an excitation/inhibition setting, SES · SIS1 · SIS2 (Bancroft, [[PSY.58]]); `consent_posture` gains three sub-fields, `negotiation` · `signals` · `debrief`, plus the consent model the character works from (Wiseman, [[MSX.80]]; Barker, [[PSY.65]]), kept inside the one variable; L9 reads L3's `knowledge_map`.
+**L9 — EROS:** Psycho-sexual conditioning. Desire structure, erotic patterning, shame architecture, body armor, satisfaction-cycle integrity, safety preconditions, and intimacy mode. Nine sub-fields added 2026-09-29 (the L9 EROS synthesis, RULED 2026-09-29, Chief: "Rex" — APPLIED 2.2.0), read against the 9/29 sexuality distill shelf (MSX.18–MSX.36, PSY.08–PSY.13), full derivation in [ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md): `consent_posture` alongside `desire_vector`, distinct from `erotic_safety_precondition` — a "yes" and a want are different facts (cites MSX.18, MSX.22, MSX.27, PSY.11); `client_script` — scripted↔spontaneous, revisable mid-scene, for staged or paid intimacy (cites MSX.18, MSX.19, MSX.27); `signal_fluency` — fluent / functional / illiterate, nonverbal desire-and-consent literacy independent of desire's content (cites MSX.21, MSX.22, MSX.29); `resolution_type` under `desire_vector` — terminating / additive, for desire that accumulates without a finish line (cites MSX.24, MSX.32, PSY.13); `exposure_shame` and `role_shame` splitting `shame_index`, both 0–10, same convention — `shame_index` kept as a read alias for `exposure_shame`, the same pattern as L8's `secure_base_object` rename (cites MSX.23, MSX.25, MSX.34); `arousal_curve` under `erotic_blueprint_type` — spike / plateau / current (cites MSX.23, MSX.30, MSX.32); `erotic_safety_precondition_scope` on `erotic_safety_precondition` — internal / external, for a chemical or structural precondition invisible to the scene itself, e.g. PrEP, U=U (cites MSX.18, MSX.24, MSX.29); `disclosure_posture` on L9 — the sexual-health disclosure register, cross-linked to but distinct from L3's own `disclosure_posture` (cites MSX.28, MSX.29, MSX.31, MSX.35); and `template_origin`, a relational pointer from L9 to the L8 imprint event a character's adult desire is downstream of, echoing L5's `relational_refs` pattern (cites PSY.08, PSY.13, MSX.23). `erotic_pacing` (MSX.26, MSX.33) is adopted as a Core Methodology writing rule above, not a field. **Added 2.3.0 (RULED 2026-10-04, wave 2, "rec"):** `orientation_dimensions` (Laumann, [[PSY.53]]): behavior · desire · identity as three separate settings, so a character can want and never act, or act and never name it; Kinsey's 0–6 rides along as a per-age score ([[PSY.50]]). `template_origin` now also holds the lovemap design itself, the fixed erotic template (Money, [[PSY.54]]). `charmed_circle_position` (Rubin, [[MSX.46]]): for each act the character wants, which side of the world's good-sex line it falls on and how they carry it; it reads beside `consent_posture`; adults only. `resonance_profile` (Paasonen, [[MSX.67]]): what lands now, how it shifts, and how it goes stale through habit. **Added 2.4.0 (RULED 2026-10-04, wave 3, "all rec"):** `template_origin` gains `core_erotic_theme`, one sentence per lead, worded from its wound (Morin, [[PSY.63]]); `arousal_curve` gains an excitation/inhibition setting, SES · SIS1 · SIS2 (Bancroft, [[PSY.58]]); `consent_posture` gains three sub-fields, `negotiation` · `signals` · `debrief`, plus the consent model the character works from (Wiseman, [[MSX.80]]; Barker, [[PSY.65]]), kept inside the one variable; L9 reads L3's `knowledge_map`. **Added 2.5.0 (RULED 2026-10-04, the schema pass, "all recommendations"):** `polarity_role` (top · bottom · switch · dom · sub, chosen or assigned) · `love_lust_cleft` (how he settles saintly love against sinful lust).
 
 **L10 — SHADOW:** Repressed, projected, and denied content. High SHADOW values generate active disadvantage clusters and modify stress-state behavior. [[BVX.0233]]'s Dark Triad (call 8) is noted here as the same pilot-only dial as L3's circumplex — RULED 2026-09-29 available to pilot on one character, not scored on Victoria, not yet a schema field. **Added 2.4.0 (RULED 2026-10-04, wave 3, "all rec"):** `moral_incongruence` (Burke, [[MSX.84]]): the gap between what a character believes about his desire and what he does; a ready-made secret for scenes to test.
 
@@ -608,6 +608,152 @@ FLAGS:
 
 ---
 
+## THE SCHEMA PASS — aliases and drops (RULED 2026-10-04, BOLO 88, "all recommendations")
+
+The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0 notes on L1, L3, L4, L6, L7, L8, L9). Four wait as too thin (`body_capital` adults only, `locus_of_control`, `minority_stress`, `futurity_stance`). The rest are read aliases: a distill that names one maps to the field shown, so one idea keeps one name (06.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`.
+
+| Coined name | Layer | Call |
+|---|---|---|
+| `gender_performance` | L1 | MERGE INTO `gender_performance_register` |
+| `identity_coherence_effect` | L1 | MERGE INTO `identity_frame` |
+| `orientation_components` | L1 | MERGE INTO `orientation_dimensions` |
+| `preference_spectrum_position` | L1 | MERGE INTO `orientation_dimensions` |
+| `shame_free_pleasure_value` | L1 | MERGE INTO `psychology_stack` |
+| `straight_acting_frame` | L1 | MERGE INTO `gender_performance_register` |
+| `body_boundary_marking` | L2 | MERGE INTO `charmed_circle_position` |
+| `body_marketability_window` | L2 | MERGE INTO `body_capital` |
+| `body_price` | L2 | MERGE INTO `body_capital` |
+| `sexual_response_physiology` | L2 | MERGE INTO `physiology_stack` |
+| `belonging_in_difference` | L3 | MERGE INTO `community_membership` |
+| `body_display` | L3 | MERGE INTO `self_presentation` |
+| `breastplate_compensation` | L3 | MERGE INTO `knowledge_map` |
+| `camp_register` | L3 | MERGE INTO `gender_performance_register` |
+| `chain_network` | L3 | MERGE INTO `community_membership` |
+| `chosen_family` | L3 | MERGE INTO `community_membership` |
+| `class_position` | L3 | MERGE INTO `sociology_stack` |
+| `contact_capacity` | L3 | MERGE INTO `community_membership` |
+| `contested_zone` | L3 | MERGE INTO `venue_belonging` |
+| `counterpublic_membership` | L3 | MERGE INTO `community_membership` |
+| `digital_self_presentation` | L3 | MERGE INTO `self_presentation` |
+| `elder_transmission` | L3 | MERGE INTO `community_membership` |
+| `era_legal_exposure` | L3 | MERGE INTO `system_exposure` |
+| `homosocial_continuum_position` | L3 | MERGE INTO `intimacy_mode` |
+| `imposed_value_system` | L3 | DROP |
+| `masculinity_market_value` | L3 | MERGE INTO `body_capital` |
+| `master_status_signals` | L3 | MERGE INTO `sociology_stack` |
+| `mate_value_matching` | L3 | DROP |
+| `moral_tribe` | L3 | MERGE INTO `community_membership` |
+| `networking_posture` | L3 | DROP |
+| `partnering_network` | L3 | MERGE INTO `community_membership` |
+| `public_secret` | L3 | MERGE INTO `knowledge_map` |
+| `relation_to_women` | L3 | MERGE INTO `intimacy_mode` |
+| `relationality_style` | L3 | MERGE INTO `intimacy_mode` |
+| `scene_responsibility` | L3 | MERGE INTO `risk_management_practice` |
+| `sex_as_status_declaration` | L3 | MERGE INTO `charmed_circle_position` |
+| `sexual_citizenship` | L3 | MERGE INTO `system_exposure` |
+| `sexual_script` | L3 | MERGE INTO `sexual_script_acquisition` |
+| `social_code_gate` | L3 | DROP |
+| `stranger_address` | L3 | MERGE INTO `self_presentation` |
+| `subcultural_venue_stratification` | L3 | MERGE INTO `venue_belonging` |
+| `tribe_entry_by_attitude` | L3 | MERGE INTO `community_membership` |
+| `venue_exposure` | L3 | MERGE INTO `venue_belonging` |
+| `control_relinquishment` | L4 | MERGE INTO `locus_of_control` |
+| `emotion_ownership` | L4 | MERGE INTO `locus_of_control` |
+| `label_stance` | L4 | MERGE INTO `identity_frame` |
+| `perceived_control` | L4 | MERGE INTO `locus_of_control` |
+| `proof_of_capacity` | L4 | DROP |
+| `resistance_tradition` | L4 | MERGE INTO `resistance_mode` |
+| `self_authorship` | L4 | MERGE INTO `resistance_mode` |
+| `speech_act_silence` | L4 | MERGE INTO `resistance_mode` |
+| `will_that_it_be_different` | L4 | MERGE INTO `resistance_mode` |
+| `abuse_history_link` | L5 | MERGE INTO `wound` |
+| `betrayal_trigger` | L5 | MERGE INTO `triggers` |
+| `comorbid_wound` | L5 | MERGE INTO `wound` |
+| `cost_of_openness` | L5 | MERGE INTO `wound` |
+| `insecurity_worked_in_play` | L5 | MERGE INTO `wound` |
+| `internalized_treatment_wound` | L5 | MERGE INTO `minority_stress` |
+| `jealousy_mask` | L5 | MERGE INTO `projection_tendency` |
+| `spectator_fear` | L5 | MERGE INTO `exposure_shame` |
+| `wound_source` | L5 | MERGE INTO `wound` |
+| `boredom_and_repetition` | L6 | MERGE INTO `drive_texture` |
+| `money_meaning` | L6 | MERGE INTO `motivation_stack` |
+| `motive_for_use` | L6 | MERGE INTO `motivation_stack` |
+| `partner_gender_neutrality` | L6 | MERGE INTO `orientation_dimensions` |
+| `scarcity_or_abundance_economy` | L6 | MERGE INTO `drive_texture` |
+| `value_scale` | L6 | MERGE INTO `intimacy_mode` |
+| `work_motive_pattern` | L6 | MERGE INTO `motivation_stack` |
+| `class_origin` | L7 | MERGE INTO `origin_class` |
+| `desire_template_origin` | L7 | MERGE INTO `sexual_script_acquisition` |
+| `forbidden_fruit_first_contact` | L7 | MERGE INTO `vandalism_event` |
+| `genre_setting_contract` | L7 | DROP |
+| `historical_situatedness` | L7 | MERGE INTO `system_exposure` |
+| `initiation_rite` | L7 | MERGE INTO `origin_disciplinary_formation` |
+| `marginal_formation` | L7 | MERGE INTO `origin_disciplinary_formation` |
+| `monogamy_norm_origin` | L7 | MERGE INTO `agreement_style` |
+| `origin_cultural_script` | L7 | MERGE INTO `sexual_script_acquisition` |
+| `origin_generational_script` | L7 | MERGE INTO `sexual_script_acquisition` |
+| `origin_open_secret` | L7 | MERGE INTO `knowledge_map` |
+| `origin_polis_formation` | L7 | MERGE INTO `origin_disciplinary_formation` |
+| `origin_social_level_pattern` | L7 | MERGE INTO `origin_class` |
+| `origin_status_pattern` | L7 | MERGE INTO `origin_class` |
+| `place_formation` | L7 | MERGE INTO `origin_disciplinary_formation` |
+| `sex_law_exposure` | L7 | MERGE INTO `system_exposure` |
+| `sexual_regime_formation` | L7 | MERGE INTO `system_exposure` |
+| `sexual_script_origin` | L7 | MERGE INTO `sexual_script_acquisition` |
+| `state_category_exposure` | L7 | MERGE INTO `system_exposure` |
+| `venue_etiquette_code` | L7/L9 | MERGE INTO `venue_belonging` |
+| `erotic_education_source` | L8 | MERGE INTO `sexual_script_acquisition` |
+| `first_experience_conditioning` | L8 | MERGE INTO `vandalism_event` |
+| `racial_sexual_stereotype_imprint` | L8 | MERGE INTO `polarity_role` |
+| `scene_as_imprint` | L8 | MERGE INTO `formative_scene` |
+| `sensory_imprint_rewiring` | L8 | MERGE INTO `vandalism_event` |
+| `utopian_memory_imprint` | L8 | MERGE INTO `formative_scene` |
+| `aftercare_practice` | L9 | MERGE INTO `consent_posture` |
+| `attraction_fluidity` | L9 | MERGE INTO `orientation_dimensions` |
+| `authentic_pleasure_standard` | L9 | MERGE INTO `pleasure_evidence` |
+| `chemical_disinhibition` | L9 | MERGE INTO `arousal_curve` |
+| `compulsion_cycle` | L9 | MERGE INTO `satisfaction_cycle_truncation` |
+| `cruising_signal_literacy` | L9 | MERGE INTO `signal_fluency` |
+| `cue_profile` | L9 | MERGE INTO `resonance_profile` |
+| `disclosure_practice` | L9 | MERGE INTO `disclosure_posture` |
+| `excitation_inhibition_balance` | L9 | MERGE INTO `arousal_curve` |
+| `fantasy_exchange` | L9 | MERGE INTO `client_script` |
+| `fantasy_register` | L9 | MERGE INTO `resonance_profile` |
+| `kink_identity` | L9 | MERGE INTO `orientation_dimensions` |
+| `known_unknown_pairing` | L9 | MERGE INTO `knowledge_map` |
+| `negotiated_role_play` | L9 | MERGE INTO `consent_posture` |
+| `orientation_position` | L9 | MERGE INTO `orientation_dimensions` |
+| `position_persona` | L9 | MERGE INTO `polarity_role` |
+| `psychosexual_arousal_range` | L9 | MERGE INTO `arousal_curve` |
+| `public_sex_as_world_making` | L9 | MERGE INTO `venue_belonging` |
+| `risk_account_style` | L9 | MERGE INTO `risk_management_practice` |
+| `safety_practice_repertoire` | L9 | MERGE INTO `risk_management_practice` |
+| `scene_vocabulary` | L9 | DROP |
+| `self_shattering_capacity` | L9 | MERGE INTO `arousal_curve` |
+| `sex_gender_desire_alignment` | L9 | MERGE INTO `orientation_dimensions` |
+| `sex_versus_affection_split` | L9 | MERGE INTO `love_lust_cleft` |
+| `shame_architecture` | L9 | MERGE INTO `exposure_shame` |
+| `sociosexual_orientation` | L9 | MERGE INTO `love_lust_cleft` |
+| `triangle_position` | L9 | MERGE INTO `desire_vector` |
+| `venue_comfort_and_practice` | L9 | MERGE INTO `venue_belonging` |
+| `deactivated_love_shadow` | L10 | MERGE INTO `love_lust_cleft` |
+| `disappointment_shadow` | L10 | MERGE INTO `shadow_content` |
+| `disgust_shame_pull` | L10 | MERGE INTO `shadow_content` |
+| `double_life_structure` | L10 | MERGE INTO `shadow_content` |
+| `hidden_in_plain_view` | L10 | MERGE INTO `knowledge_map` |
+| `internalized_homonegativity` | L10 | MERGE INTO `minority_stress` |
+| `passing_cover` | L10 | MERGE INTO `knowledge_map` |
+| `shadow_double` | L10 | MERGE INTO `shadow_content` |
+| `ecstasy_and_balance` | L11 | MERGE INTO `growth_requirement` |
+| `horizon_not_yet_here` | L11 | MERGE INTO `futurity_stance` |
+| `protagonist_antagonist_role` | L12 | DROP |
+| `trust_signal_strategy` | L12 | MERGE INTO `body_capital` |
+| `venue_belonging` | L3 | MERGE INTO community_membership |
+| `gender_performance_register` | L3 | MERGE INTO identity_frame |
+| `formative_scene` | L8 | MERGE INTO vandalism_event (adult history only) |
+| `wound_belief_set` | L5 | MERGE INTO L5 WOUND (sub-field) |
+| `pleasure_evidence` | L9 | MERGE INTO resonance_profile |
+
 ## CHARACTER × LIBRARY
 
 `feeds:` for this limb, the nine distills read in full for this document:
@@ -672,6 +818,8 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 16. **L9 synthesis ruled and applied 2.2.0.** RULED 2026-09-29 (Chief: "Rex") — all ten PROPOSED CHANGES in the L9 EROS synthesis ([ssot_02_l9_eros_synthesis.md](📐%20ssot_02_l9_eros_synthesis.md)) applied: `consent_posture`, `client_script`, `signal_fluency`, `resolution_type` (under `desire_vector`), `exposure_shame`/`role_shame` (splitting `shame_index`, kept as a read alias), `arousal_curve` (under `erotic_blueprint_type`), `erotic_pacing` (Core Methodology rule, no field), `erotic_safety_precondition_scope`, `disclosure_posture` (on L9, cross-linked to L3's), and `template_origin` (an L9→L8 pointer). The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions — no source in the 9/29 wave addresses lesbian or WLW-specific desire architecture) is logged to the acquisition list; the whole-spectrum sexuality library sweep already running covers it.
 
 ## Version history
+
+- **2.5.0 · 2026-10-04** — RULED ("all recommendations", BOLO 88 schema pass): 12 new fields; 139 aliases and drops in THE SCHEMA PASS table; 4 held.
 
 - **2.4.0 · 2026-10-04** — RULED ("all rec", BOLO 88 wave 3): knowledge_map · core_erotic_theme · SES/SIS on arousal_curve · consent_posture sub-fields · moral_incongruence.
 
