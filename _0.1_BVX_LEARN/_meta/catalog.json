@@ -17380,5 +17380,65 @@
   "primary": "TEC",
   "trunk": "BLACK",
   "id": "BVX.1195"
+ },
+ {
+  "t": "Multimedia Learning",
+  "a": "Richard E. Mayer",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "BLACK",
+  "id": "BVX.1196"
+ },
+ {
+  "t": "First Principles of Instruction",
+  "a": "M. David Merrill",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "BLACK",
+  "id": "BVX.1197"
+ },
+ {
+  "t": "How Learning Works: Seven Research-Based Principles for Smart Teaching",
+  "a": "Susan A. Ambrose et al.",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "2010",
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "BLACK",
+  "id": "BVX.1198"
+ },
+ {
+  "t": "Minimalism Beyond the Nurnberg Funnel",
+  "a": "John M. Carroll, ed.",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "1998",
+  "subjects": [
+   "TEC"
+  ],
+  "primary": "TEC",
+  "trunk": "BLACK",
+  "id": "BVX.1199"
  }
 ]
