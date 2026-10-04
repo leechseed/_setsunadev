@@ -1,7 +1,7 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.4.1
+version: 1.5.0
 last_updated: 2026-10-04
 reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
 doc_type: reference
@@ -9,11 +9,11 @@ owner: "Chief (HOTLINE ACTUAL); Claude keeps it"
 state: ruled
 reviewed: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
-status: "v1.4.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: module stamps on 06.2a and 06.2b recorded. canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
+status: "v1.5.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: rules 3.5 voice by page type, 3.6 order of ideas, and five word-pass questions in 3.4. Earlier: v1.4.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: module stamps on 06.2a and 06.2b recorded. canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
 purpose: "The index and the rules for how the Command writes: replies, readbacks, and the SSOT documentation conventions. Points to the writing guide (06.2a) and the markdown-marking standard (06.2b); gathers the reply-format rulings that today live only in SOP §7 and in memory."
 dependencies: ["_tools/bolostatus/work/95/DOC-SOP.md (the teach-back record)", "[[📐 ssot_06_2a_writing_guide]]", "[[📐 ssot_06_2b_markdown_marking]]", "SOP.md §7"]
 trunk: BLACK
-sources: ["SOP.md §7", "memory: plain-register", "memory: house-format", "memory: one-value-one-block", "memory: clickable-file-links", "memory: touchstone-name", "memory: the-command"]
+sources: ["SOP.md §7", "memory: plain-register", "memory: house-format", "memory: one-value-one-block", "memory: clickable-file-links", "memory: touchstone-name", "memory: the-command", "CRE.03 — Clear and Simple as the Truth — Thomas & Turner (2011)", "CRE.02 — Writing with Clarity and Style — Harris (2018)", "TEC.04 — The Minto Pyramid Principle — Minto (2010)", "CRE.04 — Several Short Sentences About Writing — Klinkenborg (2012)"]
 ---
 
 # 📐 ssot_06_2_documents_style — how the Command writes
@@ -61,7 +61,9 @@ Two things are called "style" in the Command and they are not the same thing. **
 | 3.1 | One word for each thing, and only that word. Define it the first time it shows up. | 2026-10-03 |
 | 3.2 | One idea per sentence. Every sentence names who does what. Read it out loud; where the reader runs out of breath, the sentence is too long (20 words is the check the scripts run). | 2026-10-03 |
 | 3.3 | Docs stay plain. The rich, verbose description goes in one marked section, "The long read," at the bottom of a concept page. Story prose follows [06.1](📐%20ssot_06_1_prose_style.md). | 2026-10-03 |
-| 3.4 | Review in separate passes: facts, then words, then out loud. A ruled page is never edited quietly; Chief rules the change and the reviewed date updates. | 2026-10-03 |
+| 3.4 | Review in separate passes: facts, then words, then out loud. Put each sentence on its own line. The words pass asks five questions of each: who acts, is the verb active, can any word go, can a literal reader take the wrong branch, is the key word at the end. A script can run the first two. A ruled page is never edited quietly; Chief rules the change and the reviewed date updates. | 2026-10-03 |
+| 3.5 | Doing pages (how-to, tutorial, reference) use practical voice, with the point in the expected place. Concept pages use classic voice: one voice, state it, no hedges, show the evidence. Session notes and logs stay out of classic voice, since they exist to show the work. | 2026-10-04 |
+| 3.6 | Order of ideas on a page. Headings state ideas, not topic labels such as "Background". Each list passes the plural-noun test and has a named order: argument, time, structure or importance. The opening holds only what the reader already accepts. A hinge sentence joins sections and repeats the last key word. | 2026-10-04 |
 
 **4 · The extra page types**
 
@@ -139,6 +141,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distil
 
 ## VERSION HISTORY
 
+- **1.5.0 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 follow-up (ST-L1 to ST-L3): rule 3.5 voice by page type; rule 3.6 order of ideas; rule 3.4 words pass written as five questions. Sources CRE.02, CRE.03, CRE.04, TEC.04 cited.
 - **1.4.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1: 06.2a and 06.2b stamped `module_of` this page; no rule changed.
 - **1.4.0 · 2026-10-04** — SOP §7 rules 17–20 added (BOLO 6, second wave).
 - **1.3.0 · 2026-10-04** — SOP §7 rules 13–16 added to the locator (BOLO 6, the teaching rules); this is BOLO 6's first fold into 06.2.

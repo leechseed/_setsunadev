@@ -10,6 +10,8 @@ page. Same shape as DARKROOM on :8484.
     python _tools/dictation/console.py --port N
     python _tools/dictation/console.py --no-open
 
+    /faces        the face deck (10/4): the four state slots + the library of saved faces
+
 Stdlib only. Nothing here is billed and no audio leaves the box.
 
 Two config files, deliberately separate:
@@ -20,10 +22,12 @@ The console edits both; ptt.py only ever reads the first.
 
 import argparse
 import base64
+import filecmp
 import io
 import json
 import mimetypes
 import os
+import random
 import re
 import shutil
 import subprocess
@@ -33,6 +37,7 @@ import time
 import webbrowser
 from collections import deque
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from urllib.parse import quote, unquote
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -41,6 +46,11 @@ CONFIG = os.path.join(HERE, "config.json")
 JUDY = os.path.join(HERE, "judy.json")
 FACES = os.path.join(HERE, "faces")
 PAGE = os.path.join(HERE, "console.html")
+DECK = os.path.join(HERE, "faces.html")          # the face deck (10/4)
+LIB = os.path.join(FACES, "library")             # every saved face; the slots are copies out of it
+FACE_EXTS = ("png", "gif", "jpg", "jpeg", "webp")
+FACE_CAP = 25 * 1024 * 1024                      # per file
+FACE_LOCK = threading.Lock()                     # one writer at a time on the slots + judy.json
 
 sys.path.insert(0, HERE)
 import codebook  # noqa: E402
@@ -366,6 +376,183 @@ def face_url(judy, slot):
     return None
 
 
+# ---------------------------------------------------------------- the face deck (10/4)
+#
+# faces/library/ holds every saved face. A slot is a COPY of a library file at
+# faces/<slot>.<ext>, and judy.json face.slots points at that copy, so judy.py's
+# watcher (path + mtime) sees every swap. Which library file sits on a slot is read
+# by comparing bytes, so there is no second record to drift.
+
+_MAGIC = (b"\x89PNG\r\n\x1a\n", b"GIF87a", b"GIF89a", b"\xff\xd8\xff")
+_RESERVED = {"CON", "PRN", "AUX", "NUL"} | {f"COM{i}" for i in range(1, 10)} | {f"LPT{i}" for i in range(1, 10)}
+
+
+def slot_path(judy, slot):
+    p = (judy.get("face", {}).get("slots", {}) or {}).get(slot)
+    return p if p and os.path.isfile(p) else None
+
+
+def lib_seed():
+    """First run: the four current slot images go into the library, so nothing is lost."""
+    if os.path.isdir(LIB):
+        return
+    os.makedirs(LIB, exist_ok=True)
+    judy = read_json(JUDY, JUDY_DEFAULTS)
+    for s in STATES:
+        p = slot_path(judy, s)
+        ext = os.path.splitext(p or "")[1].lower().lstrip(".")
+        if p and ext in FACE_EXTS:
+            shutil.copyfile(p, os.path.join(LIB, lib_unique(f"{s}.{ext}")))
+    LOG.append("— face library seeded from the four slots")
+
+
+def lib_clean(filename):
+    """An uploaded filename → a safe library name. Raises on a type the face can't show."""
+    base = os.path.basename((filename or "").replace("\\", "/"))
+    stem, ext = os.path.splitext(base)
+    ext = ext.lower().lstrip(".")
+    if ext not in FACE_EXTS:
+        raise ValueError(f"{base or 'file'}: png, gif, jpg, jpeg or webp only")
+    stem = re.sub(r"[^A-Za-z0-9 ._-]+", "_", stem).strip(" ._-")[:80] or "face"
+    if stem.upper() in _RESERVED:
+        stem += "_"
+    return f"{stem}.{ext}"
+
+
+def lib_unique(name):
+    """De-dupe by name: face.png → face-2.png → face-3.png."""
+    stem, ext = os.path.splitext(name)
+    out, n = name, 1
+    while os.path.exists(os.path.join(LIB, out)):
+        n += 1
+        out = f"{stem}-{n}{ext}"
+    return out
+
+
+def lib_file(name):
+    """A library name → its path. Nothing outside faces/library/ resolves."""
+    name = name or ""
+    ext = name.rsplit(".", 1)[-1].lower() if "." in name else ""
+    if (not name or name != os.path.basename(name) or "/" in name or "\\" in name
+            or name.startswith(".") or ext not in FACE_EXTS):
+        raise ValueError(f"bad face name {name!r}")
+    p = os.path.realpath(os.path.join(LIB, name))
+    if os.path.dirname(p) != os.path.realpath(LIB):
+        raise ValueError(f"bad face name {name!r}")
+    if not os.path.isfile(p):
+        raise ValueError(f"no face named {name!r} in the library")
+    return p
+
+
+def _same(a, b):
+    try:
+        return filecmp.cmp(a, b, shallow=False)
+    except OSError:
+        return False
+
+
+def lib_state():
+    lib_seed()
+    judy = read_json(JUDY, JUDY_DEFAULTS)
+    paths = {s: slot_path(judy, s) for s in STATES}
+    items = []
+    for e in sorted(os.scandir(LIB), key=lambda e: e.name.lower()):
+        if not e.is_file() or e.name.rsplit(".", 1)[-1].lower() not in FACE_EXTS:
+            continue
+        st = e.stat()
+        items.append({"name": e.name, "size": st.st_size, "mtime": int(st.st_mtime),
+                      "url": f"/face/library/{quote(e.name)}?v={st.st_mtime_ns}",
+                      "slots": [s for s, p in paths.items() if p and _same(p, e.path)]})
+    slots = {}
+    for s, p in paths.items():
+        slots[s] = {"file": os.path.basename(p) if p else None,
+                    "url": f"/face/{s}?v={os.stat(p).st_mtime_ns}" if p else None,
+                    "pick": next((i["name"] for i in items if s in i["slots"]), None)}
+    return {"library": items, "slots": slots, "states": STATES}
+
+
+def lib_add(files):
+    """[{name, data}] → saved names + per-file errors. Base64 in, de-duped by name."""
+    os.makedirs(LIB, exist_ok=True)
+    saved, errors = [], []
+    for f in files:
+        try:
+            name = lib_clean(f.get("name"))
+            raw = base64.b64decode((f.get("data") or "").split(",")[-1])
+            if not raw:
+                raise ValueError(f"{name}: empty")
+            if len(raw) > FACE_CAP:
+                raise ValueError(f"{name}: {len(raw) // 1048576} MB is over the 25 MB cap")
+            if not (raw.startswith(_MAGIC) or (raw[:4] == b"RIFF" and raw[8:12] == b"WEBP")):
+                raise ValueError(f"{name}: not a PNG, GIF, JPG or WebP inside")
+            with FACE_LOCK:
+                name = lib_unique(name)
+                with open(os.path.join(LIB, name), "wb") as out:
+                    out.write(raw)
+            saved.append(name)
+        except Exception as e:
+            errors.append(str(e))
+    if saved:
+        LOG.append(f"— face library +{len(saved)}: {', '.join(saved)}")
+    return saved, errors
+
+
+def face_assign(slot, name):
+    """Copy a library face onto faces/<slot>.<ext> and point judy.json at it."""
+    if slot not in STATES:
+        raise ValueError(f"unknown slot {slot!r}")
+    src = lib_file(name)
+    ext = os.path.splitext(src)[1].lower()
+    dst = os.path.join(FACES, slot + ext)
+    with FACE_LOCK:
+        tmp = dst + ".part"
+        shutil.copyfile(src, tmp)
+        try:
+            os.replace(tmp, dst)          # whole-file swap; JUDY never reads half a GIF
+        except OSError:
+            shutil.copyfile(tmp, dst)     # the face holds the old file open; write through it
+            os.remove(tmp)
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        judy["face"]["slots"][slot] = dst
+        write_json(JUDY, judy)
+        for other in FACE_EXTS:           # one file per slot: drop the other-extension siblings
+            sib = os.path.join(FACES, f"{slot}.{other}")
+            if "." + other != ext and os.path.exists(sib):
+                try:
+                    os.remove(sib)
+                except OSError:
+                    pass
+    LOG.append(f"— face[{slot}] ← {name}")
+    return dst
+
+
+def face_delete(name):
+    p = lib_file(name)
+    judy = read_json(JUDY, JUDY_DEFAULTS)
+    on = [s for s in STATES if slot_path(judy, s) and _same(slot_path(judy, s), p)]
+    if on:
+        raise ValueError(f"{name} is on the {' and '.join(on)} slot — swap it off first")
+    os.remove(p)
+    LOG.append(f"— face library -{name}")
+
+
+def face_shuffle(slots):
+    slots = slots or STATES
+    bad = [s for s in slots if s not in STATES]
+    if bad:
+        raise ValueError(f"unknown slot {bad[0]!r}")
+    st = lib_state()
+    names = [i["name"] for i in st["library"]]
+    if not names:
+        raise ValueError("the library is empty — add a face first")
+    picks = {}
+    for s in slots:
+        pool = [n for n in names if n != st["slots"][s]["pick"]] or names
+        picks[s] = random.choice(pool)
+        face_assign(s, picks[s])
+    return picks
+
+
 # ---------------------------------------------------------------- server
 
 class Handler(BaseHTTPRequestHandler):
@@ -407,6 +594,24 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:
                 return self._send(500, f"console.html missing: {e}", "text/plain; charset=utf-8")
             return self._send(200, html, "text/html; charset=utf-8")
+
+        if path == "/faces":
+            try:
+                html = io.open(DECK, encoding="utf-8").read()
+            except Exception as e:
+                return self._send(500, f"faces.html missing: {e}", "text/plain; charset=utf-8")
+            return self._send(200, html, "text/html; charset=utf-8")
+
+        if path == "/api/face/library":
+            return self._send(200, lib_state())
+
+        if path.startswith("/face/library/"):
+            try:
+                p = lib_file(unquote(path[len("/face/library/"):]))
+            except ValueError as e:
+                return self._send(404, {"error": str(e)})
+            with open(p, "rb") as f:
+                return self._send(200, f.read(), mimetypes.guess_type(p)[0] or "image/png")
 
         if path == "/api/state":
             return self._send(200, build_state())
@@ -514,6 +719,26 @@ class Handler(BaseHTTPRequestHandler):
                 LOG.append(f"— face[{slot}] set")
                 return self._send(200, {"ok": True, "url": face_url(judy, slot)})
 
+            if path == "/api/face/library":
+                files = b.get("files") or ([b] if b.get("data") else [])
+                if not files:
+                    raise ValueError("no files")
+                saved, errors = lib_add(files)
+                if not saved:
+                    raise ValueError("; ".join(errors))
+                return self._send(200, {"ok": True, "saved": saved, "errors": errors})
+
+            if path == "/api/face/assign":
+                dst = face_assign(b.get("slot"), b.get("name"))
+                return self._send(200, {"ok": True, "slot": b.get("slot"), "file": os.path.basename(dst)})
+
+            if path == "/api/face/delete":
+                face_delete(b.get("name"))
+                return self._send(200, {"ok": True})
+
+            if path == "/api/face/shuffle":
+                return self._send(200, {"ok": True, "picks": face_shuffle(b.get("slots"))})
+
             if path == "/api/daemon":
                 act = b.get("action")
                 if act == "start":
@@ -553,6 +778,7 @@ def main():
     if not os.path.exists(JUDY):
         write_json(JUDY, JUDY_DEFAULTS)
     os.makedirs(FACES, exist_ok=True)
+    lib_seed()
 
     url = f"http://127.0.0.1:{a.port}"
     srv = ThreadingHTTPServer(("127.0.0.1", a.port), Handler)
@@ -560,6 +786,7 @@ def main():
     print(f"JUDY console · {url}")
     print(f"  dictation config  {CONFIG}")
     print(f"  judy config       {JUDY}")
+    print(f"  face deck         {url}/faces")
     print("  ctrl-c to stop")
     if not a.no_open:
         threading.Timer(0.6, lambda: webbrowser.open(url)).start()
