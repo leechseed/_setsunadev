@@ -32,7 +32,7 @@ feeds:
     strength: contextual
     note: "Ch. 1, pp. 27-28, and Conclusion, pp. 250-251: the authors argue the gender cue sets early and resists social input. They cite David Reimer and the Sambia. Treat as one contested model of why a character's orientation feels fixed to him."
 zotero_key: ""
-pdf_pages: [465]
+pdf_pages: [470]
 status: complete
 confidence: medium
 date_created: 2026-10-04
@@ -211,7 +211,7 @@ The most usable move is the cue profile. A character's EROS layer would list his
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full-text pdftotext extraction, 465 pdf pages, with page markers for pdf pages. Title page confirms Ogi Ogas and Sai Gaddam, Dutton (Penguin), first printing May 2011. Page cites are pdf pages, not printed pages.
+Full-text pdftotext extraction, 470 pdf pages, with page markers for pdf pages. Title page confirms Ogi Ogas and Sai Gaddam, Dutton (Penguin), first printing May 2011. Page cites are pdf pages, not printed pages.
 
 Read: the Preface (pp. 12-16), Ch. 1 (pp. 17-30 and the Reimer and Sambia pages near pp. 27-28, plus the Kinsey section, the Gergen dark-room study, and the start of the Dogpile method), the opening of Ch. 2 (pp. 38-41), the opening of Ch. 4 (pp. 79-81), the opening of Ch. 5 (pp. 103-106), most of Ch. 7 (pp. 145-158), the opening of Ch. 10 (pp. 207-209), and the Conclusion (pp. 250-252).
 

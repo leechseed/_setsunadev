@@ -1,0 +1,68 @@
+<title>The ORANGE Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one thin strip, a lane index, then lanes as stacked sections of row cards; hot rows first in each lane.
+     Colorway: the Command's ruled default (creator-cases orange, DARK first; the light face is E-INK gray, never white). */
+  :root {
+    --bg: #0F1216; --panel: #171B21; --panel-2: #1F242C; --line: #2B313B;
+    --ink: #E8EAEE; --ink-2: #A9B0BC; --ink-3: #7B8492;
+    --accent: #FF5A1F; --accent-ink: #FF8F62; --accent-soft: #3A2117;
+    --hot: #FF6B35; --live: #5CC48A; --open: #D9C48A; --parked: #7B8492; --done: #5CC48A;
+    --display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    --body: "Atkinson Hyperlegible", "Segoe UI", Verdana, sans-serif;
+    --mono: "IBM Plex Mono", Consolas, "Liberation Mono", monospace;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4; --line: #B5B5AE;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --hot: #C2410C; --live: #1F6B45; --open: #5E4F22; --parked: #6B6C65; --done: #1F6B45; color-scheme: light; } }
+  :root[data-theme="light"] {
+    --bg: #D8D8D2; --panel: #E4E4DE; --panel-2: #CBCBC4; --line: #B5B5AE;
+    --ink: #1B1B19; --ink-2: #44453F; --ink-3: #6B6C65;
+    --accent: #E04E18; --accent-ink: #A83409; --accent-soft: #E9D5CA;
+    --hot: #C2410C; --live: #1F6B45; --open: #5E4F22; --parked: #6B6C65; --done: #1F6B45; color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+  .strip { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    min-height: 44px; padding: 6px 16px; background: color-mix(in srgb, var(--panel) 92%, transparent); border-bottom: 1px solid var(--line); }
+  .strip h1 { margin: 0; font: 800 20px/1 var(--display); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+  .strip .sub { font: 12px var(--mono); color: var(--ink-3); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tiles { display: flex; gap: 6px; flex-wrap: wrap; }
+  .t { font: 11px var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--ink-2); padding: 2px 8px; border: 1px solid var(--line); }
+  .t b { font: 700 15px var(--display); margin-right: 5px; color: var(--ink); }
+  .t.s-hot b { color: var(--hot); } .t.s-live b { color: var(--live); } .t.s-open b { color: var(--open); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 18px 64px; display: grid; gap: 28px; }
+  nav.idx { display: flex; flex-wrap: wrap; gap: 8px; }
+  nav.idx a { font: 700 15px var(--display); text-transform: uppercase; letter-spacing: .03em; color: var(--ink-2); text-decoration: none; padding: 4px 10px; border: 1px solid var(--line); background: var(--panel); }
+  nav.idx a:hover, nav.idx a:focus-visible { color: var(--ink); border-color: var(--accent); outline: none; }
+  nav.idx em { font: 11px var(--mono); font-style: normal; color: var(--accent-ink); margin-left: 4px; }
+  .lane { scroll-margin-top: 56px; }
+  .lane header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; border-bottom: 2px solid var(--accent); padding-bottom: 6px; margin-bottom: 12px; }
+  .lane h2 { margin: 0; font: 800 28px/1 var(--display); text-transform: uppercase; text-wrap: balance; }
+  .lane h2 em { font: 13px var(--mono); font-style: normal; color: var(--accent-ink); vertical-align: middle; }
+  .lane header p { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 70ch; }
+  .lane ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 10px; }
+  .row { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--parked); padding: 10px 12px; display: grid; gap: 6px; min-width: 0; }
+  .row.s-hot { border-left-color: var(--hot); } .row.s-live { border-left-color: var(--live); } .row.s-open { border-left-color: var(--open); } .row.s-done { opacity: .78; border-left-color: var(--done); }
+  .hd { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+  .hd .no { font: 800 20px/1 var(--display); color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+  .hd b { font: 700 16px/1.2 var(--display); text-transform: uppercase; letter-spacing: .01em; flex: 1; min-width: 0; }
+  .chip { font: 10px var(--mono); text-transform: uppercase; letter-spacing: .12em; padding: 1px 7px; border: 1px solid currentColor; color: var(--parked); white-space: nowrap; }
+  .s-hot .chip { color: var(--hot); } .s-live .chip { color: var(--live); } .s-open .chip { color: var(--open); } .s-done .chip { color: var(--done); }
+  .st { margin: 0; font-size: 13.5px; color: var(--ink-2); overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+  .row:hover .st, .row:focus-within .st { -webkit-line-clamp: unset; }
+  .ft { display: flex; justify-content: space-between; gap: 8px; font: 11px var(--mono); color: var(--ink-3); }
+  @media (prefers-reduced-motion: no-preference) { nav.idx a { transition: border-color .15s; } }
+</style>
+
+<header class="strip">
+  <h1>ORANGE</h1>
+  <span class="sub" title="owner: Chief · state: ruled · built from BOLO.md {{WHEN}}">Reference · for Chief, across the ORANGE trunk · every ORANGE BOLO by lane, hot first · {{N}} rows · {{WHEN}}</span>
+  <div class="tiles">{{TILES}}</div>
+</header>
+<main class="wrap">
+  <nav class="idx" aria-label="Lanes">{{NAV}}</nav>
+  {{LANES}}
+</main>

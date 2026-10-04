@@ -41,6 +41,8 @@ date_created: 2026-10-04
 # 🧬 PSY.57 — Cruise Control — Weiss (2013)
 ### Knowledge Entry — Distill
 
+Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised.
+
 Robert Weiss, a clinical social worker, wrote this recovery guide for gay and bisexual men. Patrick Carnes wrote the foreword. The book argues that compulsive sex is a coping habit, and it gives the cycle, the beliefs under it, and a plan to interrupt it.
 
 ## TABLE OF CONTENTS
@@ -226,7 +228,7 @@ The ORANGE prose rulings apply here as written. Explicit scenes are allowed, wri
 | Related entry | Relation |
 |---|---|
 | [[🧬 PSY.08 — Lust, Men, and Meth — Fawcett (2015)]] | Same recovery territory from a sex-therapist angle. Fawcett builds the template-and-meth model. Weiss builds the cycle-and-boundary model. |
-| [[🧬 PSY.59 — Methamphetamine Addiction — Halkitis (2009)]] | Halkitis supplies the research behind Weiss's chapter 5 on meth and sex. |
+| [[🧬 PSY.59 — Methamphetamine Addiction — Halkitis (2009)]] | Halkitis reviews the research literature on the meth and sex link that Weiss's chapter 5 covers for a lay reader. |
 | [[🧬 PSY.65 — The Psychology of Sex — Barker (2018)]] | Barker challenges the sex addiction label and asks what the label opens and closes. |
 | [[🧬 MSX.81 — The Gay Science — Race (2018)]] | Race attacks the recovery-by-abstinence advice that Weiss's school gives. |
 | [[🧬 MSX.46 — Deviations — Rubin (2011)]] | Rubin's sex hierarchy explains why the "signs of addiction" list reads as a list of stigmatized acts. |
