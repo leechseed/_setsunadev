@@ -1,13 +1,19 @@
 ---
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
-type: ssot_05_operations
-category: operations
-version: 1.0.1
-last_updated: 2026-09-29
+type: ssot_06_style_guides
+category: style_guide
+version: 1.0.2
+last_updated: 2026-10-04
+module_of: ssot_06_2_documents_style
+reader: "anyone marking a Command document, as writer or as reader"
+doc_type: reference
+owner: "Chief (HOTLINE ACTUAL); Claude keeps it"
+state: ruled
+reviewed: 2026-10-04
 applies_to: [BVX-LEARN, OVEREXITOUT, ASTRO7EX, SSOT]
-status: canonical — RULED 2026-09-06 on the BOLO 32 boresight
+status: "v1.0.2 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: module stamp, type and header fields, links repaired. canonical — RULED 2026-09-06 on the BOLO 32 boresight"
 purpose: "Assigns one meaning to each inline mark in Command Markdown so that writer-side structure and reader-side capture never share ink."
-dependencies: ["[[📐 ssot_writing_guide]]", "[[📐ssot_SSOT_CREATION]]", "[[📐 ssot_template_prompt_for_summarizing_novels_and_books]]"]
+dependencies: ["[[📐 ssot_06_2a_writing_guide]]", "[[📐ssot_SSOT_CREATION]]", "[[📐 ssot_template_prompt_for_summarizing_novels_and_books]]"]
 trunk: BLACK
 bolo: 32
 tool: _tools/vocab_harvest.py
@@ -32,7 +38,7 @@ Two people mark the same document. The writer marks structure and first-instance
 
 | Mark | Syntax | Owner | Meaning |
 |---|---|---|---|
-| **Bold** | `**term**` | writer | Structure (lead-in sentences, labels such as **Key Idea**) and the first instance of a technical term, defined immediately, per [[📐 ssot_writing_guide]] Technical Precision. |
+| **Bold** | `**term**` | writer | Structure (lead-in sentences, labels such as **Key Idea**) and the first instance of a technical term, defined immediately, per [[📐 ssot_06_2a_writing_guide]] Technical Precision. |
 | ==Highlight== | `==term==` | reader | A load-bearing term captured while reading. Input to the harvest. The only mark a reader makes. |
 | _Italic_ | `_text_` | writer | Captions, source lines, asides. Never a term. |
 | [[Wikilink]] | `[[term]]` | promoter | A term that has earned its own note. Replaces the highlight on promotion. |
@@ -69,7 +75,7 @@ The script reads every `==term==` with its section heading and the sentence it s
 
 ### Writer protocol
 
-The writer follows [[📐 ssot_writing_guide]] as written. Bold is spent on structure and on the first instance of a technical term, defined immediately. Italic is written with underscores. The writer does not pre-highlight terms for the reader.
+The writer follows [[📐 ssot_06_2a_writing_guide]] as written. Bold is spent on structure and on the first instance of a technical term, defined immediately. Italic is written with underscores. The writer does not pre-highlight terms for the reader.
 
 ### Retro-conversion
 
@@ -106,3 +112,4 @@ Harvest writes to `MIL.01.vocab.md`:
 |---|---|---|
 | 1.0.0 | 2026-09-06 | Ruled on the BOLO 32 boresight: four marks, reader/writer split, harvest tool, retro-conversion of MIL.01. |
 | 1.0.1 | 2026-09-29 | Moved to 06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md (BOLO 92); no content change. |
+| 1.0.2 | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): stamped module_of 06.2; type, category, and header fields set; links repaired to 06.2a. |

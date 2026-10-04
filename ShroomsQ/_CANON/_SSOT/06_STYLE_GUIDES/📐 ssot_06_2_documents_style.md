@@ -1,7 +1,7 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.4.0
+version: 1.4.1
 last_updated: 2026-10-04
 reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
 doc_type: reference
@@ -9,7 +9,7 @@ owner: "Chief (HOTLINE ACTUAL); Claude keeps it"
 state: ruled
 reviewed: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
-status: "canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
+status: "v1.4.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: module stamps on 06.2a and 06.2b recorded. canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
 purpose: "The index and the rules for how the Command writes: replies, readbacks, and the SSOT documentation conventions. Points to the writing guide (06.2a) and the markdown-marking standard (06.2b); gathers the reply-format rulings that today live only in SOP §7 and in memory."
 dependencies: ["_tools/bolostatus/work/95/DOC-SOP.md (the teach-back record)", "[[📐 ssot_06_2a_writing_guide]]", "[[📐 ssot_06_2b_markdown_marking]]", "SOP.md §7"]
 trunk: BLACK
@@ -139,6 +139,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distil
 
 ## VERSION HISTORY
 
+- **1.4.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1: 06.2a and 06.2b stamped `module_of` this page; no rule changed.
 - **1.4.0 · 2026-10-04** — SOP §7 rules 17–20 added (BOLO 6, second wave).
 - **1.3.0 · 2026-10-04** — SOP §7 rules 13–16 added to the locator (BOLO 6, the teaching rules); this is BOLO 6's first fold into 06.2.
 - **1.2.0 · 2026-10-04** — all five merge calls RULED as recommended (Chief: "all right"); header fields added to this page's own front matter.

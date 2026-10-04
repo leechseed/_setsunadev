@@ -2,7 +2,7 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_procedure
 category: operations
-version: 0.2.0
+version: 0.2.1
 last_updated: 2026-09-15
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document
@@ -54,7 +54,7 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 | `SOP.md` | procedure | stamped |
 | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_project_flow.md` | procedure | stamped |
 | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_development_standard.md` | procedure | stamped |
-| `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_markdown_marking.md` | procedure | stamped |
+| `ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md` | procedure | stamped |
 | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_variable_registry.md` | standard | stamped |
 | `_0.1_BVX_LEARN/_meta/WATCH-REGISTER.md` | standard | stamped |
 | `_0.1_BVX_LEARN/_meta/CK3-IA-STUDY.md` | handbook | stamped |
@@ -70,7 +70,7 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬 MIL.09 — MCDP 6 Command and Control — USMC (1996).md` | handbook | stamped |
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬 MIL.10 — MCDP 7 Learning — USMC (2020).md` | handbook | stamped |
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬 MIL.11 — MCDP 8 Information — USMC (2022).md` | handbook | stamped |
-| `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_writing_guide.md` | standard | read-only file, listed here only |
+| `ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2a_writing_guide.md` | standard | read-only file, listed here only |
 | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md` | procedure | read-only file, listed here only |
 | `_CANON_NODES/dcus-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
 | `_CANON_NODES/oxo-trash-land-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
@@ -90,11 +90,11 @@ This index links all 26 filed Command documents in the BOLO 50 network to the Co
 | `📐 ssot_05_operations_project_flow.md` | procedure | the project (applies_to: BOLD_VENTURE, ULTRASIN, OPERATOR) | `SOP.md`, `DOCTRINE-0-INVARIANTS.md`, `📐 ssot_05_operations_development_standard.md`, `📐 ssot_05_operations_pm_holdings_inventory.md`, `🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997).md`, `🧬 MIL.03 — MCDP 1-2 Campaigning — USMC (1997).md`, `🧬 MIL.07 — MCDP 4 Logistics — USMC (2023).md`, `🧬 MIL.08 — MCDP 5 Planning — USMC (1997).md`, `🧬 MIL.09 — MCDP 6 Command and Control — USMC (1996).md`, `🧬 MIL.11 — MCDP 8 Information — USMC (2022).md` | PMI standards — PMBOK Guide (8th ed.) + Practice Guides + global standards (register) |
 | `📐 ssot_05_operations_development_standard.md` | procedure | the build loop inside a session (applies_to: BOLD_VENTURE, ULTRASIN, OPERATOR) | `SOP.md`, `📐 ssot_05_operations_project_flow.md`, `DOCTRINE-0-INVARIANTS.md`, `standards.register.md` | none in the register |
 | `📐 ssot_05_operations_standards_ladder.md` | procedure | the Command, document rung classification (applies_to: BOLD_VENTURE, ULTRASIN, OPERATOR) | `DOCTRINE-0-INVARIANTS.md`, `SOP.md`, `📐 ssot_05_operations_project_flow.md`, `📐 ssot_05_operations_development_standard.md`, `standards.register.md` | NASA NODIS directives (register); DLA Defense Standardization Program (register) |
-| `📐 ssot_05_operations_markdown_marking.md` | procedure | BVX-LEARN · OVEREXITOUT · ASTRO7EX · SSOT (applies_to) | `📐 ssot_writing_guide.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_template_prompt_for_summarizing_novels_and_books.md` | none in the register |
+| `📐 ssot_06_2b_markdown_marking.md` | procedure | BVX-LEARN · OVEREXITOUT · ASTRO7EX · SSOT (applies_to) | `📐 ssot_06_2a_writing_guide.md`, `📐ssot_SSOT_CREATION.md`, `📐 ssot_template_prompt_for_summarizing_novels_and_books.md` | none in the register |
 | `📐ssot_SSOT_CREATION.md` | procedure | unscoped (applies_to blank) | none | none in the register |
 | `📐ssot_variable_registry.md` | standard | unscoped (no applies_to given) | none | none in the register |
 | `WATCH-REGISTER.md` | standard | WARROOM | none | MIL-STD-1472H — DoD Design Criteria Standard: Human Engineering (register) |
-| `📐 ssot_writing_guide.md` | standard | OVEREXITOUT · ASTRO7EX · LAKAD (applies_to) | `📐_ssot_05_operations_standard_structure_template.md` | none in the register |
+| `📐 ssot_06_2a_writing_guide.md` | standard | OVEREXITOUT · ASTRO7EX · LAKAD (applies_to) | `📐_ssot_05_operations_standard_structure_template.md` | none in the register |
 | `CK3-IA-STUDY.md` | handbook | the MCDP Doctrine Browser (a planned tool, per title-line) | none | none in the register |
 | `🧬 MIL.01 — MCDP 1 Warfighting — USMC (1997).md` | handbook | the project (feeds the project flow's methodology) | none | USMC MCDP corpus (outside the register) |
 | `🧬 MIL.02 — MCDP 1-1 Strategy — USMC (1997).md` | handbook | the project | none | USMC MCDP corpus (outside the register) |
@@ -141,7 +141,7 @@ This index links all 26 filed Command documents in the BOLO 50 network to the Co
 - `WATCH-REGISTER.md`'s lead cites both MIL-STD-1472H and FAA HF-STD-001B, but only MIL-STD-1472H is a register row; FAA HF-STD-001B does not appear anywhere in the register's sections 1-2.
 - Five of the eleven MCDP one-sheets (MIL.02 Strategy, MIL.04 Tactics, MIL.05 Intelligence, MIL.06 Expeditionary Operations, MIL.10 Learning) are filed at the handbook rung but no other filed document's frontmatter names them as a dependency; only MIL.01, MIL.03, MIL.07, MIL.08, MIL.09, and MIL.11 are wired into `📐 ssot_05_operations_project_flow.md`.
 - BLACK and DARKROOM have no filed document governing them among the 26; both names surface only in the standards register's Command-area column, never as a governs target in this network.
-- 12 of the 26 filed documents carry no outside parent at all: `DOCTRINE-0-INVARIANTS.md`, `SOP.md`, `📐 ssot_05_operations_development_standard.md`, `📐 ssot_05_operations_markdown_marking.md`, `📐ssot_SSOT_CREATION.md`, `📐ssot_variable_registry.md`, `📐 ssot_writing_guide.md`, `CK3-IA-STUDY.md`, `BOLO-24-charter.md`, and the three in-world standards-body nodes (DCUS, Trash Land, ASTRO7EX).
+- 12 of the 26 filed documents carry no outside parent at all: `DOCTRINE-0-INVARIANTS.md`, `SOP.md`, `📐 ssot_05_operations_development_standard.md`, `📐 ssot_06_2b_markdown_marking.md`, `📐ssot_SSOT_CREATION.md`, `📐ssot_variable_registry.md`, `📐 ssot_06_2a_writing_guide.md`, `CK3-IA-STUDY.md`, `BOLO-24-charter.md`, and the three in-world standards-body nodes (DCUS, Trash Land, ASTRO7EX).
 - The Command's own generic handbook rung is empty; the only handbooks in the network sit at the project level (the 11 MIL one-sheets) or govern a still-unbuilt tool (`CK3-IA-STUDY.md`, the MCDP Doctrine Browser).
 - Trash Land and ASTRO7EX have no named standards-body entity yet; both spec nodes record the body as a working title rather than a proper name.
 
@@ -155,3 +155,4 @@ DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after 
 |---|---|---|
 | 0.1.0 | 2026-09-15 | Ruled: the NASA four (policy · procedure · standard · handbook), spec as a tag. First filing pass: 20 documents stamped, 2 listed. |
 | 0.2.0 | 2026-09-15 | Phase 6, the network: flat index added (by document · by outside body · by level and world · the gaps). 26 documents, 3 outside bodies cited, 11 levels and worlds. The browsable page waits on the count. |
+| 0.2.1 | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): filing-table rows and parent column repointed from the 05 redirect stubs to 06.2a and 06.2b. |

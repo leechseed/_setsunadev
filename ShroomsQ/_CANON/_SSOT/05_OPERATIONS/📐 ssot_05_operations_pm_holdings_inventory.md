@@ -65,7 +65,7 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 | `SOP.md` §1 boresight | readback → read → questions, no delivery until cleared | finished | the requirements sign-off gate |
 | `STATE.md` Pyramid audit | source text absent from all libraries; `BVX.1107` reserved | earmark | known gap, slot held |
 | `…/conversations/2026-03-28_the-pyramid-principle-explained.md` · `2026-04-04_mckinsey-pyramid-model-explained.md` | one-shot recalls | stub | superseded by the artifact |
-| `05_OPERATIONS/📐 ssot_05_operations_legacy_styleguide_2024.md` | the 2024 ancestor style + naming guide | historical | naming section only |
+| `06_STYLE_GUIDES/_history/📐 ssot_06_legacy_styleguide_2024.md` | the 2024 ancestor style + naming guide | historical | naming section only |
 
 ## 4 · Templates, registries, gates, process docs
 

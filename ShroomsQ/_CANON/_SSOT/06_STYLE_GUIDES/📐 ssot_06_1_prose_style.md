@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: prose_style
-version: 1.3.0
+version: 1.3.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
+status: "v1.3.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: stale OPEN marks struck, intro convention reworded. v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
 purpose: "06.1 PROSE — the universe-wide prose style guide: how the LEECHSEED stories read on the page. Sibling to 06.2 Documents and 06.3 Pages under 06_STYLE_GUIDES; per-story telling profiles (OXO's, first) are instances of this guide, not replacements for it."
 dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)"]
 trunk: BLACK
@@ -13,7 +13,7 @@ sources: ["_tools/bolostatus/work/92/SHELF.md — 06.1 Prose shelf, tier 1/2, he
 
 # 📐 SSOT: 06.1 PROSE — how the LEECHSEED stories read on the page
 
-**What this is.** The universe-wide prose style guide: the rules a page of draft is checked against before it counts as house prose, whichever IP it belongs to. It sits beside [06.2 Documents] and [06.3 Pages] as a sibling style guide (06_STYLE_GUIDES), and it draws its authority from five places already ruled or built: the texture system's T1–T12 discourse layers, Modern Poetics' P1–P10 constitution, the medium grammars' M1 PROSE contract, the Touchstones register, and the genre system's cultcore instance. It does not invent a house voice. Every rule below cites the canon doc or shelf book it comes from; where the universe needs Chief's own taste and no canon doc has ruled it yet, the rule is written as a question, marked **⧗**, with one recommendation.
+**What this is.** The universe-wide prose style guide: the rules a page of draft is checked against before it counts as house prose, whichever IP it belongs to. It sits beside [06.2 Documents] and [06.3 Pages] as a sibling style guide (06_STYLE_GUIDES), and it draws its authority from five places already ruled or built: the texture system's T1–T12 discourse layers, Modern Poetics' P1–P10 constitution, the medium grammars' M1 PROSE contract, the Touchstones register, and the genre system's cultcore instance. It does not invent a house voice. Every rule below cites the canon doc or shelf book it comes from; where the universe needs Chief's own taste and no canon doc has ruled it yet, the rule is written as a question, marked **OPEN**, with one recommendation.
 
 **The worked instance.** [OXO's Telling Profile](../../../../_CANON_NODES/oxo-telling-profile.md) is the first IP to rule its own T1–T10 answers (RULED 2026-09-23, "take the recs for row 18"). It is cited throughout below as the proof that this guide's universal principles can be instanced, never as the universe's default by itself — a second IP is free to rule its own Telling Profile differently, inside the floor this guide sets.
 
@@ -36,7 +36,7 @@ T1 WHO SPEAKS separates four decisions that craft talk collapses into one: perso
 
 Reliability is judged against the **implied author**, not the real author or the narrator's own claims — the narrator's account can diverge from what the work as a whole is shown to endorse (Booth, *The Rhetoric of Fiction* — SHELF tier 1, held, not read; cited for this well-known claim only). OXO's worked instance: heterodiegetic, subsequent narration, "reliable narrator with a reliability gap reserved for the Administration's documents" (oxo-telling-profile T1, RULED 2026-09-23).
 
-**⧗ OPEN — Chief's tense/person default.** No canon doc rules a house-wide default; each IP rules its own. *Rec:* past tense, single internal-fixed focalization as the starting menu item for a new IP (matches OXO), struck or kept per IP's own storyform.
+**Chief's tense/person default.** No canon doc rules a house-wide default; each IP rules its own. *Rec:* past tense, single internal-fixed focalization as the starting menu item for a new IP (matches OXO), struck or kept per IP's own storyform.
 
 ## Focalization
 
@@ -56,7 +56,7 @@ T6 IN WHAT WORDS covers diction, syntax, distance policy, and free indirect disc
 
 A story may license a heavier register on its own Telling Profile — never as a universe default. OXO's instance rules three dialogue registers keyed to canon (Axiom/Noise/Truth) plus Southern Gothic diction for the Delta Coast bloc (oxo-telling-profile T6, RULED 2026-09-23); that register is OXO's, not the house's.
 
-**⧗ OPEN — Chief's profanity level.** No canon doc sets a house-wide ceiling or floor. *Rec:* none for a YA-adjacent cultcore IP (OXO's own audience contract, per its G1/G10 genre entries), ruled per-IP on that IP's genre contract otherwise.
+**Chief's profanity level.** No canon doc sets a house-wide ceiling or floor. *Rec:* none for a YA-adjacent cultcore IP (OXO's own audience contract, per its G1/G10 genre entries), ruled per-IP on that IP's genre contract otherwise.
 
 ## Sentence craft
 
@@ -64,7 +64,7 @@ No canon doc yet rules a house sentence style; this section runs on the shelf al
 
 **Universal rule:** short-to-medium sentences as the base gait; length varies with T4 DURATION (below), not with the writer's mood.
 
-**⧗ OPEN — Chief's own sentence rhythm.** The shelf gives craft claims, not Chief's ear. *Rec:* the base gait above, with stretch beats (Sync-dive, trance, dread) licensed to run long and dilating, exactly as OXO's T4 already reserves stretch for Sync (oxo-telling-profile T4).
+**Chief's own sentence rhythm.** The shelf gives craft claims, not Chief's ear. *Rec:* the base gait above, with stretch beats (Sync-dive, trance, dread) licensed to run long and dilating, exactly as OXO's T4 already reserves stretch for Sync (oxo-telling-profile T4).
 
 ## Description & the sensorium
 
@@ -98,11 +98,11 @@ Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking
 
 **P3 SATURATION** (Modern Poetics, [ssot_01_modern_poetics.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md)): sexuality is aesthetic, not genre — woven into the narrative's bloodstream, mastered rather than indulged, earned always. Forbidden: working around it (failure of nerve), spectacle without depth, refusing it outright (refusal of truth).
 
-**⧗ OPEN — Chief's own explicitness register across stories.** P3 states the doctrine; it does not set a page-level dial for how far prose goes before fading to paratext. *Rec:* OXO's own instance as the YA-adjacent default — T9 metalepsis withheld, no direct address, nothing crossed into second person (oxo-telling-profile T9) — with a more explicit register opt-in per IP on that IP's own genre contract, never as a universe default.
+**Chief's own explicitness register across stories.** P3 states the doctrine; it does not set a page-level dial for how far prose goes before fading to paratext. *Rec:* OXO's own instance as the YA-adjacent default — T9 metalepsis withheld, no direct address, nothing crossed into second person (oxo-telling-profile T9) — with a more explicit register opt-in per IP on that IP's own genre contract, never as a universe default.
 
 ## Genre register (cultcore)
 
-**G1 LABEL — cultcore**, RULED 2026-09-29 (BOLO 91, "cultcore — the genre of the outsiders"), is OXO's own series genre ([ssot_01_genre_system.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md), THE INSTANCE). Its ⧗-proposed G3 conventions are the worked instance for any future cultcore IP's prose: outsiders set against an identity-shaping institution, the cult-as-container (TS 1:1 again, now as a genre convention, not just a Touchstone), the newcomer-vs-group induction beat, visibility as currency, belonging and selfhood trending opposite.
+**G1 LABEL — cultcore**, RULED 2026-09-29 (BOLO 91, "cultcore — the genre of the outsiders"), is OXO's own series genre ([ssot_01_genre_system.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md), THE INSTANCE). Its G3 conventions, proposed in the genre system and RULED 2026-09-29, are the worked instance for any future cultcore IP's prose: outsiders set against an identity-shaping institution, the cult-as-container (TS 1:1 again, now as a genre convention, not just a Touchstone), the newcomer-vs-group induction beat, visibility as currency, belonging and selfhood trending opposite.
 
 **G6 DELIVERY — immersive**: natives, not visitors; the world's own terms are used, never explained (Mendlesohn, [[BVX.0599]], genre_system G6). **Universal rule for cultcore IPs: prose does not stop to explain its own world's vocabulary — the reader is a native, per G6, and the institution's voice reads as a register distinct from the outsider's own** (OXO's Axiom vs. Truth, above, is the worked case).
 
@@ -161,8 +161,9 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 
 ## Version history
 
+- **1.3.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1 (Y1–Y3): the stale OPEN marks struck from the five ruled calls; intro convention reworded to "marked OPEN"; cultcore line reworded. No rule changed.
 - **1.3.0 · 2026-10-04** — RULED 9/16, landed 10/4 (BOLO 100 genre cross-doc): new section §Meta-genre: the style bible, the home ruled in genre OPEN 9. No other rule changed.
 - **1.2.0 · 2026-10-04** — RULED (Chief: "all rec", BOLO 100 character batch 1): the tyranny of motive moved here from the character system (OPEN call 3) as the rule in §Motive on the page; check item 10 added. No other rule changed.
 - **1.1.0 · 2026-10-04** — the disclaimer's wording RULED (Chief: "B recommendation", BOLO 92): "Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised." Call 5's hold closed.
 - **1.0.0 · 2026-09-29** — OPEN 1–5 RULED as recommended (Chief, "all right"): past tense + one fixed viewpoint by default · short-to-medium gait, stretched only where pace calls for it · no universe profanity ceiling, it follows the speaker · explicit allowed by default, fantasy first, the container is the front-matter disclaimer (TS 1:1) · the disclaimer wording held for a front-matter pass.
-- **0.1.0 · 2026-09-29** — bootstrap: BOLO 92 RULED ("all recs," after the Zotero pass). Built from the OXO Telling Profile (worked instance), the texture system/layer, Modern Poetics (P3), the medium grammars (M1 PROSE), the Touchstones register (TS 1:1), the theme doc's motifs, and the genre system's cultcore instance; sourced from the BOLO 92 shelf's 06.1 Prose list, held not read. Five ⧗ calls await Chief.
+- **0.1.0 · 2026-09-29** — bootstrap: BOLO 92 RULED ("all recs," after the Zotero pass). Built from the OXO Telling Profile (worked instance), the texture system/layer, Modern Poetics (P3), the medium grammars (M1 PROSE), the Touchstones register (TS 1:1), the theme doc's motifs, and the genre system's cultcore instance; sourced from the BOLO 92 shelf's 06.1 Prose list, held not read. Five calls then open, awaiting Chief.
