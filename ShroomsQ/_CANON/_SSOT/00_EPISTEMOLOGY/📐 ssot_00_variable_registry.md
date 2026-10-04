@@ -1182,6 +1182,7 @@ All derived stats compute in internal (0-60) space per Base 60 SSOT.
 |---|---|
 |Canonical Path|`DRV.truth_exposure_index`|
 |Formula (internal)|`(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`|
+|Formula (display)|`T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)` — slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC.")|
 |Input Constraints|None|
 |Output Space|Internal, uncapped (may exceed 60)|
 |Source|`computed`|
