@@ -20,7 +20,7 @@ tool: _tools/vocab_harvest.py
 moved: "2026-09-29 from 05_OPERATIONS/📐 ssot_05_operations_markdown_marking.md to 06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md (BOLO 92)"
 ---
 
-# 📐 ssot_05_operations_markdown_marking
+# 📐 ssot_06_2b_markdown_marking
 
 ## TABLE OF CONTENTS
 

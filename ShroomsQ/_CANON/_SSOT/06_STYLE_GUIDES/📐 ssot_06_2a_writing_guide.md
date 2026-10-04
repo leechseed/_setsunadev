@@ -16,7 +16,7 @@ dependencies: ["[[♨️_template_ssot_05_operations_standard_structure_template
 moved: "2026-09-29 from 05_OPERATIONS/📐 ssot_writing_guide.md to 06_STYLE_GUIDES/📐 ssot_06_2a_writing_guide.md (BOLO 92)"
 ---
 
-# 📐 ssot_05_operations_writing_guide
+# 📐 ssot_06_2a_writing_guide
 
 ## Table of Contents
 
