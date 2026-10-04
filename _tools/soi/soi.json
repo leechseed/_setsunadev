@@ -1,7 +1,7 @@
 {
- "edition": "2026-10-03",
- "effective": "2026-10-03 · until superseded by the next edition",
- "supersedes": "edition 2026-09-24-2. The first page built to the documentation SOP (BOLO 95, 2.1–2.3): the strip names who it's for · what it does · which type; owner · state · reviewed sit in this block. SOP.md remains canonical on any conflict.",
+ "edition": "2026-10-04",
+ "effective": "2026-10-04 · until superseded by the next edition",
+ "supersedes": "edition 2026-10-03. The first page reviewed to the documentation SOP (BOLO 95, 3.4): facts, words, out loud. SOP.md remains canonical on any conflict.",
  "classification": "UNCLASSIFIED · public repo · nothing sensitive rides here; the challenge and countersign are referenced, never printed",
  "prepared_by": "Claude (every session)",
  "approved_by": "Chief — every proword marked RULED carries his word",
@@ -59,7 +59,7 @@
    "n": 9,
    "kind": "changes",
    "name": "Changes",
-   "plain": "Every ruling that changed the tongue, by date. Nothing is deleted; superseded words stay listed as retired."
+   "plain": "Every ruling that changed BREVITY, by date. This page deletes nothing; superseded words stay listed as retired."
   }
  ],
  "auth": [
@@ -149,6 +149,10 @@
   {
    "date": "2026-09-24",
    "t": "**BREVITY's first pass ruled eight slots**: PRIORITY (main effort) · INTEL (the outside read, and its product) · ROUGH (napkin) · PRIMER (syllabus) · DIGEST (distill) · DOCTRINE (grammar) · THROTTLE (gear N). Edition 2026-09-24-2."
+  },
+  {
+   "date": "2026-10-04",
+   "t": "**The first SOP review pass** (BOLO 95, 3.4): 46 entries rewritten plain, with stale facts fixed (JUDY's wire built · gear 6 = 16 · OPORD and ENDEX shown as retired). Arrows and dots swept from 26 entries so JUDY reads them clean. **Sensei** added as a proword entry. Edition 2026-10-04."
   }
  ],
  "reader": "Chief, and every Claude session",
@@ -156,5 +160,5 @@
  "type": "Reference",
  "owner": "Chief (HOTLINE ACTUAL); Claude keeps it",
  "state": "ruled",
- "reviewed": "2026-10-03"
+ "reviewed": "2026-10-04"
 }

@@ -2,7 +2,7 @@
  "sitrep": {
   "t": "sit rep",
   "k": "proword",
-  "d": "The full board, cold start. Spoken, it flushes the [[ready-rack|Ready Rack]] and delivers blocks 0 to VII in fixed order. From 9/10 it also lands as this page.",
+  "d": "The full board, cold start. Spoken, it flushes the [[ready-rack|Ready Rack]] and delivers blocks 0 to VII in fixed order. From 9/10 it also lands as the SITREP page.",
   "w": "SOP.md §1–2",
   "st": "ruled"
  },
@@ -10,7 +10,7 @@
   "t": "Oscar Mike",
   "k": "proword",
   "st": "ruled",
-  "d": "The close-out, all in one — RULED 9/11 (\"when I say we're Oscar Mike, I wanna close out the session… just one thing\"). Spoken, it ends the session: the Ready Rack note is finalized, STATE updated, the day's journal appended, the reply ends with the OUT block. Nothing is parked into a card any more; every BOLO's resume order lives on its [[dope-sheet|DOPE SHEET]]. [[charlie-mike|Charlie Mike]] resumes; [[rtb|RTB]] sends the old parked cards home.",
+  "d": "The close-out, all in one — RULED 9/11 (\"when I say we're Oscar Mike, I wanna close out the session… just one thing\"). Spoken, it ends the session. Claude finalizes the Ready Rack note, updates STATE, and appends the day's journal. The reply ends with the OUT block. Claude parks nothing into a card any more; every BOLO's resume order lives on its [[dope-sheet|DOPE SHEET]]. [[charlie-mike|Charlie Mike]] resumes; [[rtb|RTB]] sends the old parked cards home.",
   "w": "SOP.md §1 · §7 rule 9"
  },
  "sweep": {
@@ -37,7 +37,7 @@
  "bolo": {
   "t": "BOLO",
   "k": "proword",
-  "d": "\"BOLO that\" / \"put that down\": a tasking captured in BOLO.md the turn it is spoken. Be On the Lookout, named for the bolas: thrown on sighting, wraps, holds. The board noun is the watchlist itself.",
+  "d": "\"BOLO that\" / \"put that down\": Claude captures the tasking in BOLO.md the turn Chief speaks it. Be On the Lookout, named for the bolas: thrown on sighting, wraps, holds. The board noun is the watchlist itself.",
   "w": "BOLO.md",
   "st": "ruled"
  },
@@ -98,7 +98,7 @@
  "magazine": {
   "t": "Magazine",
   "k": "noun",
-  "d": "_LOG/. Deep storage for flushed session notes. Append-only; nothing is deleted, it is stowed.",
+  "d": "_LOG/. Deep storage for flushed session notes. Append-only; Claude deletes nothing and stows every note.",
   "w": "_LOG/"
  },
  "fresh-ten": {
@@ -122,13 +122,13 @@
  "leverage-line": {
   "t": "the leverage line",
   "k": "noun",
-  "d": "Block VI: the single highest-leverage next action. Provisional rename pending: the Main Effort, MCDP 1's term for the one point everything else supports.",
+  "d": "Block VI: the single highest-leverage next action. Rename pending. Chief picked PRIORITY on 9/24 over MAIN EFFORT (MCDP 1's term for the one point everything else supports); the block title has not changed yet.",
   "w": "SOP.md §2"
  },
  "soi": {
   "t": "SOI",
   "k": "noun",
-  "d": "Signal Operating Instructions: the [[brevity|BREVITY]]'s book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. \"Glossary\" is retired as a word (Chief, 9/11); every button and key says SOI.",
+  "d": "Signal Operating Instructions: the [[brevity|BREVITY]]'s book. The proword card (SOP §0), Block VII of every board, and since 9/11 its own page — search, A to Z, by section, the dictation codebook. Chief retired the word \"Glossary\" on 9/11; every button and key says SOI.",
   "w": "SOP.md §0 · _tools/soi/ · the SOI page",
   "st": "ruled"
  },
@@ -147,13 +147,13 @@
  "trunk-orange": {
   "t": "ORANGE",
   "k": "noun",
-  "d": "ORANGE = Ultrasin: venture, body, sexuality. The second house.",
+  "d": "ORANGE = Ultrasin: venture, body, sexuality. The second trunk.",
   "w": "SOP.md §2"
  },
  "trunk-operator": {
   "t": "OPERATOR",
   "k": "noun",
-  "d": "OPERATOR = you as equipment: [[pmcs|PMCS]], tooling, readiness. Not a house; the person who runs both.",
+  "d": "OPERATOR = Chief as equipment: [[pmcs|PMCS]], tooling, readiness. Not one of the two build trunks; the person who runs both.",
   "w": "SOP.md §2"
  },
  "stall-pattern": {
@@ -165,7 +165,7 @@
  "d9": {
   "t": "D-9",
   "k": "item",
-  "d": "Ledger item D-9 on the [[bolo24|BOLO 24]] charter: the [[boresight]] HOLD from 9/3, converted 9/4, undated for twelve days and named by five boards running. **RULED GO 2026-09-16** (\"rule D9 go\"), staged clear: the no-dependency items deliver, the rest as their gates (D-5 · D-6 · D-7) clear.",
+  "d": "Ledger item D-9 on the [[bolo24|BOLO 24]] charter: the [[boresight]] HOLD from 9/3, converted 9/4, undated for twelve days and named by five boards running. **RULED GO 2026-09-16** (\"rule D9 go\"), staged clear: the no-dependency items deliver, the rest as their gates (D-5, D-6, D-7) clear.",
   "w": "_PRIVATE/BOLO-24-charter.md · STATE Blocked #10",
   "st": "ruled"
  },
@@ -214,7 +214,7 @@
  "darkroom": {
   "t": "DARKROOM",
   "k": "system",
-  "d": "The corpus browser on :8484. 55,841 girls-only images, verdicts, and since 9/9 the tag rail plus the TAGGING and CAPTCHA modules. Stamped 1.0 on 9/6, 1.1 on 9/9.",
+  "d": "The corpus browser on :8484. 55,841 girls-only images with verdicts. Since 9/9 it adds the tag rail, the TAGGING module, the CAPTCHA module. Stamped 1.0 on 9/6, 1.1 on 9/9.",
   "w": "_PRIVATE/taxonomy_engine/"
  },
  "bolo44": {
@@ -226,7 +226,7 @@
  "tier2": {
   "t": "Tier 2",
   "k": "system",
-  "d": "Per-axis logistic-regression probes trained on your CAPTCHA rulings. They beat zero-shot on all six axes (66 to 82 combined against 52 to 62). Retrain after each tagging session.",
+  "d": "Per-axis logistic-regression probes trained on your CAPTCHA rulings. They beat zero-shot on all six axes. Probes scored 66 to 82 combined; zero-shot scored 52 to 62. Retrain after each tagging session.",
   "w": "_PRIVATE/taxonomy_engine/probe_pass.py"
  },
  "bolo43": {
@@ -238,7 +238,7 @@
  "l2b": {
   "t": "L2b MORPHOLOGY",
   "k": "system",
-  "d": "The body-shape layer of the character system. Chain ruled 9/9: SKELETON → MUSCLE → FAT → CONDITION. Module 1 is gluteal (27 cells, 13 named types); module 2 is [[bolo43|population signatures]].",
+  "d": "The body-shape layer of the character system. Chain ruled 9/9: SKELETON, then MUSCLE, then FAT, then CONDITION. Module 1 is gluteal (27 cells, 13 named types); module 2 is [[bolo43|population signatures]].",
   "w": "_CANON_NODES/L2b-morphology-gluteal.md"
  },
  "telling-profile": {
@@ -274,7 +274,7 @@
  "ck3-rules": {
   "t": "the CK3 rules",
   "k": "system",
-  "d": "Nineteen rules derived from Crusader Kings III's interface: concept links with nested tooltips capped at depth 3, timer or key lock, a character-sheet layout, an outliner plus an encyclopedia, one semantic color set. This page runs on them.",
+  "d": "Nineteen rules derived from Crusader Kings III's interface. They include nested tooltips capped at depth 3, a timer or key lock, and a character-sheet layout. They also include an outliner, an encyclopedia, and one semantic color set. This page runs on them.",
   "w": "_0.1_BVX_LEARN/_meta/CK3-IA-STUDY.md"
  },
  "bolo45": {
@@ -299,7 +299,7 @@
  "register": {
   "t": "the performer register",
   "k": "system",
-  "d": "138 names, any sex, 21 in the stable core. Lanes: performer · e-girl · creator case · Stash name. Built 9/8 from nine of your lists; widened 9/9.",
+  "d": "138 names, any sex, 21 in the stable core. Lanes: performer, e-girl, creator case, Stash name. Built 9/8 from nine of your lists; widened 9/9.",
   "w": "_CANON_NODES/performer-register.md"
  },
  "nasa-girl": {
@@ -317,7 +317,7 @@
  "explainer": {
   "t": "the explainer register",
   "k": "ruling",
-  "d": "The elementary landing-page voice you liked on 9/10: what we did last, what the plan was, what you did, in plain words. This board's right rail speaks it on every block.",
+  "d": "The elementary landing-page voice you liked on 9/10. It says what we did last, what the plan was, and what you did, in plain words. The SITREP board's right rail speaks it on every block.",
   "w": "https://claude.ai/code/artifact/68adc31f-f644-45de-881f-6d17a355021f"
  },
  "modmigrate": {
@@ -341,7 +341,7 @@
  "the-box": {
   "t": "the box",
   "k": "system",
-  "d": "The machine's servers: [[stash|Stash]] on :9999 and [[darkroom|DARKROOM]] on :8484. Both up this evening, the first time at a board since 9/4.",
+  "d": "The machine's servers: [[stash|Stash]] on :9999 and [[darkroom|DARKROOM]] on :8484.",
   "w": "localhost"
  },
  "bolo29": {
@@ -377,14 +377,14 @@
  "main-effort": {
   "t": "PRIORITY",
   "k": "proword",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the command proword for the one thing everything else supports; Block VI's title rides on it. Your ranking: PRIORITY · MAIN EFFORT · FOCUS OF EFFORT. Was \"main effort\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the command proword for the one thing everything else supports; Block VI's title rides on it. Your ranking: PRIORITY, MAIN EFFORT, FOCUS OF EFFORT. Was \"main effort\".",
   "w": "SOP.md §5",
   "st": "ruled"
  },
  "smeac": {
   "t": "the five-paragraph order",
   "k": "noun",
-  "d": "The Marine Corps operations order: Situation · Mission · Execution · Administration and Logistics · Command and Signal. Mission first, then how. A BOLO status page is written in this shape.",
+  "d": "The Marine Corps operations order: Situation, Mission, Execution, Administration and Logistics, Command and Signal. Mission first, then how. Every BOLO status page uses this shape.",
   "w": "MIL.05 · MCDP 5 Planning"
  },
  "speed": {
@@ -420,7 +420,7 @@
  "ofm": {
   "t": "OFM agency",
   "k": "noun",
-  "d": "The fansite-era management agency: an operations vendor running messages, traffic and posting on the creator's own account for 20 to 50 percent or more. A different business from the licensed booking agent of the studio era (10 to 15 percent).",
+  "d": "The fansite-era management agency. It is an operations vendor that runs messages, traffic and posting on the creator's own account. It charges 20 to 50 percent or more. A different business from the licensed booking agent of the studio era (10 to 15 percent).",
   "w": "_CANON_NODES/creator-management-recon.md §0"
  },
  "ash": {
@@ -470,49 +470,49 @@
   "t": "the OUT block",
   "k": "proword",
   "st": "ruled",
-  "d": "Every reply that executes an [[oscar-mike|Oscar Mike]] or an [[endex|ENDEX]] closes with the fenced end-of-transmission block and nothing after it: OSCAR MIKE · OUT · OUT · OUT. A visible seam between what was parked and what starts next. Coded 9/6 on your order.",
+  "d": "Every reply that executes an [[oscar-mike|Oscar Mike]] closes with the fenced end-of-transmission block and nothing after it: OSCAR MIKE, OUT, OUT, OUT. ([[endex|ENDEX]] once did the same; retired 9/11.) The block is a visible seam between the close-out and what starts next. Coded 9/6 on your order.",
   "w": "SOP.md §7 rule 9"
  },
  "status-on-bolo": {
   "t": "status on BOLO N",
   "k": "proword",
   "st": "ruled",
-  "d": "The plain-speech form of [[opord|OPORD N]]: \"give me the status on BOLO 45\" shows that BOLO's page. Dictation garble \"Frango\" reads as FRAGO, which is the update, not the page.",
+  "d": "The plain-speech form of the DOPE SHEET (called [[opord|OPORD N]] until 9/11): \"give me the status on BOLO 45\" shows that BOLO's page. Dictation garble \"Frango\" reads as FRAGO, which is the update, not the page.",
   "w": "SOP.md §1 · §8"
  },
  "recon": {
   "t": "INTEL",
   "k": "proword",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the boresight aimed outside the wire (web and literature). Your ranking: INTEL · RECON · SCOUT. Was \"recon\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the boresight aimed outside the wire (web and literature). Your ranking: INTEL, RECON, SCOUT. Was \"recon\".",
   "w": "SOP.md §5"
  },
  "napkin": {
   "t": "ROUGH",
   "k": "proword",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the modifier for a one-pass read: rough numbers, no question loop (\"rough boresight\"). Your ranking: ROUGH · QUICK LOOK · GLANCE. Was \"napkin\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the modifier for a one-pass read: rough numbers, no question loop (\"rough boresight\"). Your ranking: ROUGH, QUICK LOOK, GLANCE. Was \"napkin\".",
   "w": "SOP.md §5"
  },
  "syllabus": {
   "t": "PRIMER",
   "k": "proword",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step one: pull the tier-one 101 text of a field, one per field. Your ranking: PRIMER · CURRICULUM · SYLLABUS. Was \"syllabus\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step one: pull the tier-one 101 text of a field, one per field. Your ranking: PRIMER, CURRICULUM, SYLLABUS. Was \"syllabus\".",
   "w": "SOP.md §5"
  },
  "distill": {
   "t": "DIGEST",
   "k": "proword",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step three: the book through the Zotero pipeline, out as a one-sheet. Your ranking: DIGEST · SMARTBOOK · BRIEF. Was \"distill\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step three: the book through the Zotero pipeline, out as a one-sheet. Your ranking: DIGEST, SMARTBOOK, BRIEF. Was \"distill\".",
   "w": "SOP.md §5"
  },
  "grammar": {
   "t": "DOCTRINE",
   "k": "proword",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step four: derive how a system's language operates. Your ranking: DOCTRINE · SYNTAX · GRAMMAR. Was \"grammar\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): BVX intake step four: derive how a system's language operates. Your ranking: DOCTRINE, SYNTAX, GRAMMAR. Was \"grammar\".",
   "w": "SOP.md §5"
  },
  "mint": {
@@ -526,7 +526,7 @@
   "t": "READYROOM",
   "k": "proword",
   "st": "benched",
-  "d": "Recommended name for the sit rep front page program: the Navy's briefing room, sibling of DARKROOM and WARROOM. Bench: OPSROOM · FRONTPAGE · THE BOARD. Your ruling.",
+  "d": "Recommended name for the sit rep front page program: the Navy's briefing room, sibling of DARKROOM and WARROOM. Bench: OPSROOM, FRONTPAGE, THE BOARD. Your ruling.",
   "w": "BOLO.md #38"
  },
  "ttp": {
@@ -539,7 +539,7 @@
  "rtb": {
   "t": "RTB",
   "k": "proword",
-  "d": "Romeo Tango Bravo, return to base. The parked work goes home: every keeper in oscar-mike/ is promoted to its real file, the rest deleted, the folder cleared. Chief's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]]. 9/11: one meaning only — the pass that sends a parked card home and clears it; retires itself when oscar-mike/ is empty. The end of the sortie is Oscar Mike.",
+  "d": "Romeo Tango Bravo, return to base. The parked work goes home. Claude promotes every keeper in oscar-mike/ to its real file, deletes the rest, and clears the folder. Chief's own coinage 9/10; replaces the retired [[sweep|sweep]]. Third movement of the park trio with [[oscar-mike|Oscar Mike]] and [[charlie-mike|Charlie Mike]]. 9/11: one meaning only — the pass that sends a parked card home and clears it; retires itself when oscar-mike/ is empty. The end of the sortie is Oscar Mike.",
   "w": "SOP.md §1",
   "st": "ruled"
  },
@@ -561,7 +561,7 @@
   "t": "FRAGO",
   "k": "proword",
   "st": "ruled",
-  "d": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Chief's clarification 9/10 late (\"FRAGO is just the update after we've made the BOLO status page\"). \"FRAGO 45\" folds what changed since the last build into [[opord|OPORD 45]] and republishes; only what changed, everything not mentioned stands as ordered; the page's Log keeps every FRAGO.",
+  "d": "Fragmentary order: the UPDATE pushed onto a BOLO's standing page, never the page itself — Chief's clarification 9/10 late (\"FRAGO is just the update after we've made the BOLO status page\"). \"FRAGO 45\" folds what changed since the last build into DOPE SHEET 45 (called [[opord|OPORD 45]] until 9/11) and republishes; only what changed, everything not mentioned stands as ordered; the page's Log keeps every FRAGO.",
   "w": "SOP.md §0–1 · _tools/bolostatus/"
  },
  "opord": {
@@ -574,7 +574,7 @@
  "bolo46": {
   "t": "BOLO 46",
   "k": "item",
-  "d": "The OXO series follow-through: the [[telling-profile|Telling Profile]]'s 12 rulings · Anna's node · the pilot's page one. Captured 9/11 at priority one on Chief's word; it had no BOLO before.",
+  "d": "The OXO series follow-through: the [[telling-profile|Telling Profile]]'s 12 rulings, Anna's node, the pilot's page one. Captured 9/11 at priority one on Chief's word; it had no BOLO before.",
   "w": "BOLO.md #46"
  },
  "dope-sheet": {
@@ -593,7 +593,7 @@
  "bolo48": {
   "t": "BOLO 48",
   "k": "item",
-  "d": "The name bench: every unruled word with its bench on one sheet. Ruled 9/11: DOPE SHEET · ADORNED · ABORT (the cancel word) · BREVITY (what the SOI holds) · HOTLINE / HOTLINE ACTUAL (the operator's callsign). Closed 9/11: the close-out is Oscar Mike, ENDEX retired. Open: READYROOM · MINT. Pool: \"caught up\" · INTEL.",
+  "d": "The name bench: every unruled word with its bench on one sheet. Ruled 9/11: DOPE SHEET, ADORNED, ABORT (the cancel word), BREVITY (what the SOI holds), HOTLINE / HOTLINE ACTUAL (the operator's callsign). Closed 9/11: the close-out is Oscar Mike, ENDEX retired. Open: READYROOM, MINT. Pool: \"caught up\", INTEL.",
   "w": "BOLO.md #48 · SOP §5"
  },
  "bolo49": {
@@ -647,7 +647,7 @@
   "t": "HOTLINE",
   "k": "proword",
   "st": "ruled",
-  "d": "The operator's callsign, RULED 9/11. Casual: \"Hotline\", \"word from Hotline\". On the net and on every page: **HOTLINE ACTUAL**. The point: the word comes from on high, detached from the person, the way CENTCOM ACTUAL speaks for the command, not for a man (\"remove the artist from the art\"). Replaces \"you\" on the explainer rail.",
+  "d": "The operator's callsign, RULED 9/11. Casual: \"Hotline\", \"word from Hotline\". On the net and on every page: **HOTLINE ACTUAL**. The point: the word comes from on high, detached from the person. CENTCOM ACTUAL speaks the same way, for the command and not for a man (\"remove the artist from the art\"). Replaces \"you\" on the explainer rail.",
   "w": "SOP.md §0–1 · §5 · const WHO in the templates"
  },
  "bolo51": {
@@ -667,14 +667,14 @@
   "t": "THROTTLE",
   "k": "proword",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the agent ceiling: throttle 1 = 3 agents (the default), 2 = 6, 3 = 9, 4 = 12, 5 = 15 never. Your ranking: THROTTLE · GEAR · CONDITION. Was \"gear\".",
+  "d": "RULED 9/24 on [[brevity|BREVITY]] (the loop): the agent ceiling. Throttle 1 = 3 agents (the default); 2 = 6; 3 = 9; 4 = 12; 5 = 15; 6 = 16, unlocked 9/23. The repo still says gear; the rename is not done. Your ranking: THROTTLE, GEAR, CONDITION. Was \"gear\".",
   "w": "SOP.md §5"
  },
  "gearbox": {
   "t": "the gearbox",
   "k": "system",
   "st": "provisional",
-  "d": "The sustainable-speed system, opened 9/12 as BOLO 52: the [[gear|gears]] (the agent ceiling), the gauge (_tools/usage/, weighted tokens per day from the local transcripts), and the weekly budget the week must fit. Lineage: the 9/10 sixteen-agent run spent half a week in one session. Never sixteen again.",
+  "d": "The sustainable-speed system, opened 9/12 as BOLO 52. It has three parts. The [[gear|gears]] set the agent ceiling. The gauge (_tools/usage/) counts weighted tokens per day from the local transcripts. The weekly budget is what the week must fit. Lineage: the 9/10 sixteen-agent run spent half a week in one session. Gear 6 runs that number on purpose since 9/23, only when the job splits into that many disjoint inputs.",
   "w": "_tools/usage/ · BOLO 52 · SOP.md §1"
  },
  "bolo52": {
@@ -686,13 +686,13 @@
  "bolo53": {
   "t": "BOLO 53",
   "k": "item",
-  "d": "The Command's own development standard: the boresight → how-copy → build → FRAGO → Oscar Mike loop read as an iterative-incremental life cycle, filed beside the project flow. Tabled 9/12; OPENED 9/15 by Chief's \"Open 53\"; v0.1 working draft on disk.",
+  "d": "The Command's own development standard: the boresight then how-copy then build then FRAGO then Oscar Mike loop read as an iterative-incremental life cycle, filed beside the project flow. Tabled 9/12; OPENED 9/15 by Chief's \"Open 53\"; v0.1 working draft on disk.",
   "w": "BOLO.md #53 · DOPE SHEET 53 · ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_development_standard.md"
  },
  "bolo54": {
   "t": "BOLO 54",
   "k": "item",
-  "d": "The sit rep formation: orchestrator, independent specialists, one reviewer at the fan-in. Chief's doctrine 9/12 (Amdahl · Brooks · context is the cost unit · review at the merge). Built the same turn: prep.py · assemble.py · the sitrep skill. The main line's read drops from ~211 KB to ~3 KB.",
+  "d": "The sit rep formation: orchestrator, independent specialists, one reviewer at the fan-in. Chief's doctrine 9/12 (Amdahl, Brooks, context is the cost unit, review at the merge). Built the same turn: prep.py, assemble.py, the sitrep skill. The main line's read drops from ~211 KB to ~3 KB.",
   "w": "BOLO.md #54 · DOPE SHEET 54 · .claude/skills/sitrep/"
  },
  "formation": {
@@ -705,7 +705,7 @@
  "bolo55": {
   "t": "BOLO 55",
   "k": "item",
-  "d": "The DOPE SHEET format — the document layout. Captured 9/16 and RULED the same day (Chief: \"one page · keep the rail, keep it\"): one page, the explainer rail kept, the five-paragraph order with the order on top, the mantra, the log. Every sheet since builds to it.",
+  "d": "The DOPE SHEET format — the document layout. Captured 9/16 and RULED the same day (Chief: \"one page, keep the rail, keep it\"): one page, the explainer rail kept, the five-paragraph order with the order on top, the mantra, the log. Every sheet since builds to it.",
   "w": "BOLO.md #55 · DOPE SHEET 55"
  },
  "command": {
@@ -754,7 +754,7 @@
  "bolo57": {
   "t": "BOLO 57",
   "k": "item",
-  "d": "Voice work as income: Chief can already build voices in ElevenLabs, so it is a fourth candidate venture beside 24 · 27 · 29. Four paths named, none costed. Held until a boresight prices it.",
+  "d": "Voice work as income: Chief can already build voices in ElevenLabs, so it is a fourth candidate venture beside 24, 27, 29. Four paths named, none costed. Held until a boresight prices it.",
   "w": "https://claude.ai/artifact/19rjZFkarB1QvEYK1vubdo"
  },
  "bolo56": {
@@ -767,7 +767,7 @@
   "t": "crew grades",
   "k": "ruling",
   "st": "provisional",
-  "d": "The seats in [[formation|the formation]] are named by NASA shuttle crew grade. RULED 2026-09-16 (\"I like specialist, mission specialist… go CDR\"; bench: NASA crew grades (rec) · Marine fire team · Mission Control consoles). The grade says what kind of work a seat does, never which model sits in it: [[cdr|CDR]] · [[ms|MS]] · [[ps|PS]] · [[range|RANGE]]. Gear 1 = one MS + two PS under the CDR. \"Sonnet specialist\" and \"haiku specialist\" retired. Provisional until it survives a week.",
+  "d": "NASA shuttle crew grades name the seats in [[formation|the formation]]. RULED 2026-09-16 (\"I like specialist, mission specialist… go CDR\"; bench: NASA crew grades (rec), Marine fire team, Mission Control consoles). The grade names the kind of work a seat does, never which model sits in it. The four grades: [[cdr|CDR]], [[ms|MS]], [[ps|PS]], [[range|RANGE]]. Gear 1 = one MS + two PS under the CDR. \"Sonnet specialist\" and \"haiku specialist\" retired. Provisional since 9/16; it has now run almost three weeks, so Chief can rule it.",
   "w": "SOP.md §6 · BOLO 54"
  },
  "cdr": {
@@ -802,7 +802,7 @@
   "t": "TM",
   "k": "noun",
   "st": "ruled",
-  "d": "Technical Manual. The page type for a system document, RULED 2026-09-16 (\"TM go\"; bench TM (rec) · FM · SCHEMATIC), beside the SITREP (the board), the [[dope-sheet|DOPE SHEET]] (a BOLO's status) and the [[soi|SOI]] (the book). TM 04 = the plot system · TM 03 = the setting system · TM 02 = the character system, each built by _tools/tm/build.py from its SSOT markdown. Every TM carries the [[ck3-rules|CK3 hover layer]]; a section with no hover terms is a blocking finding.",
+  "d": "Technical Manual. The page type for a system document, RULED 2026-09-16 (\"TM go\"; bench TM (rec), FM, SCHEMATIC). It sits beside three other page types: the SITREP (the board), the [[dope-sheet|DOPE SHEET]] (a BOLO's status), and the [[soi|SOI]] (the book). TM 04 is the plot system, TM 03 the setting system, TM 02 the character system. _tools/tm/build.py builds each from its SSOT markdown. Every TM carries the [[ck3-rules|CK3 hover layer]]; a section with no hover terms is a blocking finding.",
   "w": "SOP.md §6 · _tools/tm/"
  },
  "organic": {
@@ -823,7 +823,7 @@
   "t": "JUDY",
   "k": "system",
   "st": "ruled",
-  "d": "The voice loop, [[bolo56|BOLO 56]]: Chief talks, she listens, she answers out loud. Name RULED 2026-09-16, spelled J-U-D-Y, superseding the provisional THE HANDLER. Persona TARS (affable, informative, bratty); voice the 007 handler register, Blondie on ElevenLabs ruled 9/17; face on the desktop as PNG state swaps. Ears local on the 3090 ([[bolo26|BOLO 26]]), brain the keyword router (ruled 9/17), the wire an MCP server to the VS Code session (ruled, unbuilt). Lives in _tools/dictation/.",
+  "d": "The voice loop, [[bolo56|BOLO 56]]: Chief talks, she listens, she answers out loud. Name RULED 2026-09-16, spelled J-U-D-Y, superseding the provisional THE HANDLER. Persona TARS (affable, informative, bratty); voice the 007 handler register, Blondie on ElevenLabs ruled 9/17; face on the desktop as PNG state swaps. Her ears run local on the 3090 ([[bolo26|BOLO 26]]). Her brain is the keyword router (ruled 9/17). Her wire is an MCP server to the VS Code session, built, with seven tools. Lives in _tools/dictation/.",
   "w": "BOLO.md row 56 · DOPE SHEET 56"
  },
  "go": {
@@ -837,14 +837,14 @@
   "t": "the Command's ladder",
   "k": "ruling",
   "st": "ruled",
-  "d": "The standards ladder from BOLO 50, RULED 2026-09-15: the NASA four rungs, policy → procedural requirement → standard → handbook, with spec as a tag on nodes. Every Command document carries its rung in the frontmatter (SOP.md sits on procedure). Each world's standards body is canon in its own right.",
+  "d": "The standards ladder from BOLO 50, RULED 2026-09-15. It uses the four NASA rungs: policy, then procedural requirement, then standard, then handbook. Spec is a tag on nodes. Every Command document carries its rung in the frontmatter (SOP.md sits on procedure). Each world's standards body is canon in its own right.",
   "w": "BOLO.md row 50 · _0.1_BVX_LEARN"
  },
  "digest": {
   "t": "the session-open digest",
   "k": "system",
   "st": "provisional",
-  "d": "What a session reads instead of the five files: the hook prints the Ready Rack, the blocked rows, the newest BOLOs, PMCS red, the box and the tree at open (SOP §4 under [[formation|the formation]], BOLO 54). The five are still read every sit rep, by the specialists and the prep script; the [[cdr|CDR]] reads the digest.",
+  "d": "What a session reads instead of the five files. The hook prints it at open: the Ready Rack, the blocked rows, the newest BOLOs, PMCS red, the box and the tree (SOP §4 under [[formation|the formation]], BOLO 54). The five are still read every sit rep, by the specialists and the prep script; the [[cdr|CDR]] reads the digest.",
   "w": "SOP.md §4 · _tools/sitrep/digest.py"
  },
  "bolo26": {
@@ -865,14 +865,14 @@
   "t": "the launch sequence",
   "k": "system",
   "st": "ruled",
-  "d": "What [[go-for-launch|go for launch]] fires (BOLO 58, built 9/17): a zero-token script brings the DARKROOM and [[judy|JUDY]] up, probes the wire, opens the board and the [[soi|SOI]]; then the [[sitrep|sit rep]] runs in the formation; the reply carries the station poll. Stations RULED 9/17 by Chief: the board · the SOI · zero DOPE SHEETs · the DARKROOM · JUDY · the seven tools. The name RULED 9/17: \"just launch sequence\".",
+  "d": "What [[go-for-launch|go for launch]] fires (BOLO 58, built 9/17). First, a zero-token script brings the DARKROOM and [[judy|JUDY]] up. It probes the wire, then opens the board and the [[soi|SOI]]. Next the [[sitrep|sit rep]] runs in the formation. The reply carries the station poll. Chief ruled the stations on 9/17: the board, the SOI, zero DOPE SHEETs, the DARKROOM, JUDY, the seven tools. The name RULED 9/17: \"just launch sequence\".",
   "w": "_tools/launch/launch.py · .claude/skills/launch/ · BOLO.md row 58"
  },
  "go-for-launch": {
   "t": "go for launch",
   "k": "proword",
   "st": "ruled",
-  "d": "The word that fires [[launch-sequence|the launch sequence]], RULED 9/17 over a bench of ten (five Marine, five NASA). Lineage: the flight director's go/no-go poll, every console answering go. Garbles: go for log · go for lunch. Never [[go|go N]], which is a phase go-word on a DOPE SHEET.",
+  "d": "The word that fires [[launch-sequence|the launch sequence]], RULED 9/17 over a bench of ten (five Marine, five NASA). Lineage: the flight director's go/no-go poll, every console answering go. Garbles: go for log, go for lunch. Never [[go|go N]], which is a phase go-word on a DOPE SHEET.",
   "w": "SOP.md §0–1 · §5 · §8 · .claude/skills/launch/"
  },
  "good-traffic": {
@@ -886,56 +886,56 @@
   "t": "JUDY, lock in",
   "k": "proword",
   "st": "ruled",
-  "d": "Switches [[judy|JUDY]] to the military-comms attitude, RULED 9/17: radiotelephone register, prowords, no jokes, brat 0, nine sentences at most. Preset key strac. Bench it beat: STRAC · BY THE BOOK · CONDITION ONE · NOMINAL.",
+  "d": "Switches [[judy|JUDY]] to the military-comms attitude, RULED 9/17: radiotelephone register, prowords, no jokes, brat 0, nine sentences at most. Preset key strac. Bench it beat: STRAC, BY THE BOOK, CONDITION ONE, NOMINAL.",
   "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
  },
  "fries-in-the-bag": {
   "t": "JUDY, put the fries in the bag",
   "k": "proword",
   "st": "ruled",
-  "d": "Switches [[judy|JUDY]] to the comfortable-day attitude, RULED 9/17: warm, dry, a light flirt, the information first; brat 45. The standing default. Preset key at-ease. Bench it beat: AT EASE · REST · CRUISE. Garble: \"put the fries in the best\".",
+  "d": "Switches [[judy|JUDY]] to the comfortable-day attitude, RULED 9/17: warm, dry, a light flirt, the information first; brat 45. The standing default. Preset key at-ease. Bench it beat: AT EASE, REST, CRUISE. Garble: \"put the fries in the best\".",
   "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
  },
  "goon-time": {
   "t": "JUDY, it's goon time",
   "k": "proword",
   "st": "ruled",
-  "d": "Switches [[judy|JUDY]] to the full-brat attitude, RULED 9/17: teasing, knowing, innuendo allowed, facts intact; brat 100, sixteen sentences. Preset key liberty. Bench it beat: LIBERTY CALL · ZERO-G · OFF THE LEASH.",
+  "d": "Switches [[judy|JUDY]] to the full-brat attitude, RULED 9/17: teasing, knowing, innuendo allowed, facts intact; brat 100, sixteen sentences. Preset key liberty. Bench it beat: LIBERTY CALL, ZERO-G, OFF THE LEASH.",
   "w": "SOP.md §1 · §5 · _tools/dictation/presets.py"
  },
  "volcano": {
   "t": "the volcano",
   "k": "ruling",
   "st": "provisional",
-  "d": "Chief's image for BOLO 24's edge (9/17): be the unexpected and immediately a contender while everyone else climbs ladders. The boresight priced it as a mechanism, not a wish: [[character-moat|character as moat]], [[motion-lane|motion as fuse]], a [[category-sentence|press-ready sentence]] as the attached audience, and a [[thirty-day-test|thirty-day test]] before a library is banked.",
+  "d": "Chief's image for BOLO 24's edge (9/17): be the unexpected and immediately a contender while everyone else climbs ladders. The boresight priced it as a mechanism, not a wish. The mechanism has four parts: [[character-moat|character as moat]]; [[motion-lane|motion as fuse]]; a [[category-sentence|press-ready sentence]] as the attached audience; a [[thirty-day-test|thirty-day test]] before the team banks a library.",
   "w": "_PRIVATE/_boresight-24/market-demand.md §5 · BORESIGHT 24"
  },
  "volcano-sequence": {
   "t": "the Volcano Sequence",
   "k": "system",
   "st": "provisional",
-  "d": "The fused method for BOLO 24 (method brief, 9/17): NASA's reviews and [[conops|ConOps]], the Marines' [[mcpp|problem framing and war game]], the Double Diamond and Jobs-to-be-Done for the audience, and category design's [[lightning-strike|Lightning Strike]] for the splash. Five phases slotted into M-002 to M-005 without renaming them; each closed by a review the charter did not have (MCR · SDR/PDR · CDR/SIR/ORR · FRR · Gate 4).",
+  "d": "The fused method for BOLO 24 (method brief, 9/17). It borrows from four sources. NASA gives reviews and [[conops|ConOps]]. The Marines give [[mcpp|problem framing and war game]]. The Double Diamond and Jobs-to-be-Done serve the audience. Category design gives the [[lightning-strike|Lightning Strike]] for the splash. Five phases slotted into M-002 to M-005 without renaming them; each closed by a review the charter did not have (MCR, SDR/PDR, CDR/SIR/ORR, FRR, Gate 4).",
   "w": "_PRIVATE/_boresight-24/method.md §5"
  },
  "conops": {
   "t": "ConOps",
   "k": "noun",
   "st": "ruled",
-  "d": "Concept of operations, NASA systems engineering: walk the whole system end to end from the user's seat before building it, including the off-nominal scenarios. For BOLO 24: a follower's first thirty seconds, a subscriber's first paid week, a platform trust-and-safety review, a month where the conservative gate is missed twice. The missing design-research artifact the method brief named.",
+  "d": "Concept of operations, from NASA systems engineering. Walk the whole system end to end from the user's seat before building it. Include the off-nominal scenarios. BOLO 24 walks four: a follower's first thirty seconds; a subscriber's first paid week; a platform trust-and-safety review; a month when the team misses the conservative gate twice. The missing design-research artifact the method brief named.",
   "w": "_PRIVATE/_boresight-24/method.md §2 · NASA SEH"
  },
  "mcpp": {
   "t": "MCPP",
   "k": "noun",
   "st": "ruled",
-  "d": "The Marine Corps Planning Process: problem framing → course-of-action development → COA war game → COA comparison and decision → orders development → transition. Problem framing is design research by another name; the war game is the pre-launch simulation BOLO 24 never had: play the launch three moves out against the algorithm, the platform and a rival account before a resource commits.",
+  "d": "The Marine Corps Planning Process. It has six steps, in order: problem framing; course-of-action (COA) development; COA war game; COA comparison and decision; orders development; transition. Problem framing is design research by another name. The war game is the pre-launch simulation BOLO 24 never had. It plays the launch three moves out against the algorithm, the platform and a rival account, before any resource commits.",
   "w": "_PRIVATE/_boresight-24/method.md §3 · MCWP 5-10"
  },
  "lightning-strike": {
   "t": "Lightning Strike",
   "k": "noun",
   "st": "ruled",
-  "d": "Play Bigger's category-design launch: a category announcement compressed into a short window to generate maximum attention, then repeated on a three-to-six-month cadence. The closest documented pattern to [[volcano|the volcano]]. For BOLO 24 it is workstream W8, the splash: one [[category-sentence|sentence]], one asset built to carry it, the day-one sequence, cleared by its own FRR.",
+  "d": "Play Bigger's category-design launch: a category announcement compressed into a short window to generate maximum attention, then repeated on a three-to-six-month cadence. The closest documented pattern to [[volcano|the volcano]]. For BOLO 24 it is workstream W8, the splash. The splash has one [[category-sentence|sentence]], one asset built to carry it, and the day-one sequence. Its own FRR clears it.",
   "w": "_PRIVATE/_boresight-24/method.md §4 · playbigger.com"
  },
  "trl": {
@@ -949,7 +949,7 @@
   "t": "the thirty-day test",
   "k": "ruling",
   "st": "provisional",
-  "d": "R9 from the creator-cases synthesis, dated by the boresight: the slice plus the first loop posted to X and Bluesky 10/1–10/31 under the disclosed frame, thresholds written before the first post. Follower growth at or above about 1,300 a month (the Variety Itsol rate) reads [[volcano|volcano]], bank forty; about 470 (the Kirenes rate) reads ladder, bank twenty; under 250 reads replan the positioning before November. Call D-15.",
+  "d": "R9 from the creator-cases synthesis, dated by the boresight. The slice plus the first loop go up on X and Bluesky from 10/1 to 10/31, under the disclosed frame. Thresholds come before the first post. Follower growth at or above about 1,300 a month (the Variety Itsol rate) reads [[volcano|volcano]], bank forty; about 470 (the Kirenes rate) reads ladder, bank twenty; under 250 reads replan the positioning before November. Call D-15.",
   "w": "BORESIGHT 24 · D-15 · _PRIVATE/_boresight-24/facts.md §7"
  },
  "motion-lane": {
@@ -963,7 +963,7 @@
   "t": "character as moat",
   "k": "ruling",
   "st": "provisional",
-  "d": "The boresight's read of MCDP 1's center of gravity for BOLO 24: the character bible (Remi's wound, register and arc) is the one thing the cautionary cases lack and competitors cannot copy quickly. It is the moat, not the fuse: it keeps an audience, it does not fetch one. The fuse is [[motion-lane|motion]] and a [[category-sentence|sentence]].",
+  "d": "The boresight's read of MCDP 1's center of gravity for BOLO 24. The character bible (Remi's wound, register, arc) is the one thing the cautionary cases lack. Competitors cannot copy it quickly. It is the moat, not the fuse: it keeps an audience, it does not fetch one. The fuse is [[motion-lane|motion]] and a [[category-sentence|sentence]].",
   "w": "BORESIGHT 24 · _PRIVATE/_boresight-24/method.md §3"
  },
  "category-sentence": {
@@ -977,7 +977,7 @@
   "t": "processor risk",
   "k": "noun",
   "st": "ruled",
-  "d": "Every adult platform sits downstream of the same card networks. Gumroad banned NSFW in March 2024 (Stripe/PayPal); in July 2025 Collective Shout pressured the processors and Steam retired a theme-based set of games (incest, non-consent, torture — not AI-specific, and adult games broadly still sell there) while itch.io lost paid adult entirely (free adult re-indexed within days); Civitai lost card processing in May 2025 and went to crypto. The chokepoint is the moment a platform is classified as existing to sell explicit content. Calls D-13 and D-18.",
+  "d": "Every adult platform sits downstream of the same card networks. Gumroad banned NSFW in March 2024 (Stripe/PayPal); in July 2025 Collective Shout pressured the processors and Steam retired a theme-based set of games (incest, non-consent, torture — not AI-specific, and adult games broadly still sell there) while itch.io lost paid adult entirely (free adult re-indexed within days); Civitai lost card processing in May 2025 and went to crypto. The chokepoint comes when the processors classify a platform as existing to sell explicit content. Calls D-13 and D-18.",
   "w": "_PRIVATE/_boresight-24/market-supply.md §3"
  },
  "fanvue": {
@@ -1005,21 +1005,21 @@
   "t": "the AI shock",
   "k": "noun",
   "st": "ruled",
-  "d": "What generative AI did to hand-rendered 3D by 2026: it split the lane instead of killing it. Civitai lost card processing (May 2025); 'slop' was Merriam-Webster's 2025 word of the year; the counter-trend is a human-made premium. The policy line everywhere is stylized versus photoreal-of-a-real-person, not AI versus hand. A consistent hand-posed 3D character reads as 'real 3D' against the flood.",
+  "d": "What generative AI did to hand-rendered 3D by 2026: it split the lane instead of killing it. Civitai lost card processing (May 2025); 'slop' was Merriam-Webster's 2025 word of the year; the counter-trend is a human-made premium. Platforms everywhere draw the policy line at stylized versus photoreal-of-a-real-person, not AI versus hand. A consistent hand-posed 3D character reads as 'real 3D' against the flood.",
   "w": "_PRIVATE/_boresight-24/market-demand.md §2"
  },
  "better-areas": {
   "t": "the better areas",
   "k": "noun",
   "st": "ruled",
-  "d": "Adjacent lanes for the same Blender skill, from the demand read: VTuber model commissions (1,300 to 3,800 dollars entry, five to ten thousand rigged; a booming, policy-safe market), adult VR (projected 19 billion dollars by 2026, 97 percent subscription), AI-hybrid pipelines with the human finish sold as the product, and 3D visual novels (top adult-VN creators about five thousand a month in 2023). Real lanes; none is the one on the sheet.",
+  "d": "Adjacent lanes for the same Blender skill, from the demand read. There are four. VTuber model commissions: 1,300 to 3,800 dollars at entry, five to ten thousand rigged; a booming, policy-safe market. Adult VR: projected 19 billion dollars by 2026, 97 percent subscription. AI-hybrid pipelines: the human finish is sold as the product. 3D visual novels: the top adult-VN creators earned about five thousand a month in 2023. Real lanes; none is the one on the sheet.",
   "w": "_PRIVATE/_boresight-24/market-demand.md §6"
  },
  "remi": {
   "t": "Remi Slate",
   "k": "person",
   "st": "provisional",
-  "d": "Ultrasin's first signing: 21 in canon, born August 11 2005, the mother lost in 2020 (D-7), evicted at 18; a disclosed 3D persona (D-6) with a bratty, direct register and a wound and an arc. The character sheet is v0.2; the name is ruled 'for now' with the spelling open. The boresight's read: she is the moat; she needs motion and a sentence to travel.",
+  "d": "Ultrasin's first signing: 21 in canon, born August 11 2005, the mother lost in 2020 (D-7), evicted at 18; a disclosed 3D persona (D-6) with a bratty, direct register, a wound, and an arc. The character sheet is v0.2; Chief ruled the name 'for now', with the spelling open. The boresight's read: she is the moat; she needs motion and a sentence to travel.",
   "w": "_PRIVATE/BOLO-24-character-sheet.md"
  },
  "route-b": {
@@ -1033,28 +1033,28 @@
   "t": "the lewd line",
   "k": "ruling",
   "st": "provisional",
-  "d": "Call D-18: suggestive-not-explicit (bikini, lingerie, implied; no nipples, no genitals, no act) versus explicit. Lewd-first keeps Instagram and TikTok reach, the brand-deal ceiling (Lu do Magalu about 34 thousand a post, Milla Sofia 10 to 25 thousand), rails under five percent and no age-verification net; explicit buys per-fan revenue nobody has quantified and costs all of that. The standard ladder: a second, separated Fanvue account once the free audience converts.",
+  "d": "Call D-18: suggestive-not-explicit (bikini, lingerie, implied; no nipples, no genitals, no act) versus explicit. Lewd-first keeps Instagram and TikTok reach. It keeps the brand-deal ceiling (Lu do Magalu about 34 thousand a post, Milla Sofia 10 to 25 thousand). It keeps rails under five percent. It faces no age-verification net. Explicit buys per-fan revenue nobody has quantified, and it costs all of that. The standard ladder: a second, separated Fanvue account once the free audience converts.",
   "w": "_PRIVATE/_boresight-24/lewd-lane.md §4–5"
  },
  "close-friends": {
   "t": "Close Friends",
   "k": "noun",
   "st": "ruled",
-  "d": "Two things wearing one name. Instagram Subscriptions is the real rail: a paid Stories tier, zero Meta commission through 2026, app-store cut on top, ten thousand followers to unlock. The informal version — a Close Friends tier paid off-platform by Venmo, Cash App or PayPal friends-and-family — inherits the payment app's adult ban and its freezes (PayPal up to 180 days). The trap, per the rails read.",
+  "d": "Two things wearing one name. Instagram Subscriptions is the real rail. It is a paid Stories tier. Meta takes zero commission through 2026, with the app-store cut on top. It unlocks at ten thousand followers. The informal version — a Close Friends tier paid off-platform by Venmo, Cash App or PayPal friends-and-family — inherits the payment app's adult ban and its freezes (PayPal up to 180 days). The trap, per the rails read.",
   "w": "_PRIVATE/_boresight-24/rails.md §B1"
  },
  "boring-rails": {
   "t": "the boring rails",
   "k": "noun",
   "st": "ruled",
-  "d": "The 2026 rails that hold under five percent effective cost for a lewd-not-nude persona and trigger no ID wall because none is legally an adult platform: Instagram Subscriptions, Fanfix (20 percent, brand-safe, no nudity and no AI nudes), Passes (flat 10 percent), Ko-fi and Buy Me a Coffee as tip jars, Throne wishlists. Fanvue (15 to 20 percent) is the one that also carries an explicit paywall behind a lewd public layer.",
+  "d": "These 2026 rails hold under five percent effective cost for a lewd-not-nude persona. They trigger no ID wall, because none is legally an adult platform. The rails: Instagram Subscriptions; Fanfix (20 percent, brand-safe, no nudity, no AI nudes); Passes (flat 10 percent); Ko-fi and Buy Me a Coffee, both tip jars; Throne wishlists. Fanvue (15 to 20 percent) is the one that also carries an explicit paywall behind a lewd public layer.",
   "w": "_PRIVATE/_boresight-24/rails.md §B2, §B6"
  },
  "age-verification": {
   "t": "the age-verification net",
   "k": "noun",
   "st": "ruled",
-  "d": "What attaches the moment content is sold as explicit: 26 US states with adult age-verification laws as of June 2026 (upheld 6–3 in Free Speech Coalition v. Paxton, June 2025), the UK Online Safety Act in force since July 2025 (document or facial age assurance; penalties up to ten percent of global revenue or 18 million pounds), the EU moving nationally. Lewd-not-nude content on mainstream apps sits under the legal definition and outside the net.",
+  "d": "What attaches the moment content is sold as explicit. Three regimes apply. Twenty-six US states have adult age-verification laws as of June 2026 (upheld 6–3 in Free Speech Coalition v. Paxton, June 2025). The UK Online Safety Act has been in force since July 2025 (document or facial age assurance; penalties up to ten percent of global revenue or 18 million pounds). The EU is moving nationally. Lewd-not-nude content on mainstream apps sits under the legal definition and outside the net.",
   "w": "_PRIVATE/_boresight-24/rails.md §B5 · _PRIVATE/_boresight-24/lewd-lane.md §4"
  },
  "steam-record": {
@@ -1116,14 +1116,14 @@
   "t": "Touchstone",
   "k": "ruling",
   "st": "ruled",
-  "d": "A rule the story can never break, formerly \"invariant\" (RULED 9/24). The thing you touch on the way out, like the PLAY LIKE A CHAMPION TODAY sign, and the stone goldsmiths tested gold against: every scene is tested on it. Guides, doesn't command. Holds across both trunks. Cite as TS 1:3 (book:number). Built last, read first ([[bolo81|BOLO 81]]).",
+  "d": "A rule the story can never break, formerly \"invariant\" (RULED 9/24). Two images name it. One is the thing you touch on the way out, like the PLAY LIKE A CHAMPION TODAY sign. The other is the stone goldsmiths tested gold against. Every scene has to pass it. Guides, doesn't command. Holds across both trunks. Cite as TS 1:3 (book:number). Built last, read first ([[bolo81|BOLO 81]]).",
   "w": "DOCTRINE-0-INVARIANTS.md §3 · ssot_01_touchstones_register.md"
  },
  "intel-noun": {
   "t": "INTEL (the product)",
   "k": "noun",
   "st": "ruled",
-  "d": "RULED 9/24 on [[brevity|BREVITY]]: the noun for what an outside read brings back, the product, not the pass. Your ranking: INTEL · DOPE · GOUGE. Same word as the outside-read proword ([[recon|INTEL]]).",
+  "d": "RULED 9/24 on [[brevity|BREVITY]]: the noun for what an outside read brings back, the product, not the pass. Your ranking: INTEL, DOPE, GOUGE. Same word as the outside-read proword ([[recon|INTEL]]).",
   "w": "SOP.md §5"
  },
  "bolo83": {
@@ -1149,5 +1149,12 @@
   "k": "item",
   "d": "The trope system: one TV Tropes register under every system (character, setting, genre, sexuality, theme, texture, tracking, style), each trope keyed to a layer of its domain.",
   "w": "BOLO.md #89 · _tools/tropes/ · _tools/bolostatus/work/89/ · ssot_01_trope_register.md · DOPE SHEET 89 https://claude.ai/artifact/SgBz3sQpuynWYgP7M6WaVT"
+ },
+ "sensei": {
+  "t": "Sensei",
+  "k": "proword",
+  "st": "ruled",
+  "d": "Opens a goon session, the second agent on the local model. RULED 9/20 (BOLO 74); she was Naked until 05:15, and \"Naked\" still reads as her. Spoken, Claude runs goon.cmd in the background with no questions: KoboldCpp runs the model and SillyTavern runs the chat. \"Naked, out\" stops it. JUDY stays up.",
+  "w": "SOP.md §5"
  }
 }
