@@ -2,8 +2,8 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_procedure
 category: operations
-version: 0.2.1
-last_updated: 2026-09-15
+version: 0.2.2
+last_updated: 2026-10-04
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document
 bolo: 50
@@ -17,6 +17,8 @@ sources: "standards.register.md §1 (how nine bodies tier their documents, 2026-
 ## Purpose
 
 Every Command document sits on one of four rungs. The rung says how binding the document is and what it may contain. **Ruled 2026-09-15: the NASA four**, in the Command's own words, with the spec borrowed from DoD as a tag on nodes rather than a fifth rung.
+
+**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
 ## The four rungs
 
@@ -156,3 +158,4 @@ DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after 
 | 0.1.0 | 2026-09-15 | Ruled: the NASA four (policy · procedure · standard · handbook), spec as a tag. First filing pass: 20 documents stamped, 2 listed. |
 | 0.2.0 | 2026-09-15 | Phase 6, the network: flat index added (by document · by outside body · by level and world · the gaps). 26 documents, 3 outside bodies cited, 11 levels and worlds. The browsable page waits on the count. |
 | 0.2.1 | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): filing-table rows and parent column repointed from the 05 redirect stubs to 06.2a and 06.2b. |
+| 0.2.2 | 2026-10-04 | BOLO 100 TOUCH BATCH 1, Chief "REC.": front-door line (TS-B10). |

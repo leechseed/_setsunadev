@@ -1,8 +1,8 @@
 ---
 type: ssot_01_narrative_frameworks
 category: scale_ladder
-version: 1.0.0
-last_updated: 2026-08-25
+version: 1.0.1
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, all future IPs, BVX-LEARN keying]
 status: canonical — Module 1 of the lattice, delivered on Chief's clear 2026-08-25
 purpose: "THE SCALE LADDER — the container hierarchy from beat to universe: what each unit IS, its completion test, its address, and how multiple stories nest inside one series. Lattice limb 1 of 4."
@@ -13,6 +13,8 @@ trunk: BLACK
 # 📐 SSOT: THE SCALE LADDER — from beat to universe
 
 **What this is:** the container hierarchy of narrative. The spine says what a story IS; the ladder says **what size things come in and how they nest** — the answer to "scene → sequence → arc → story → stories within one large series." Every unit gets: a definition, a **completion test** (what makes one whole), its governing system, and holdings.
+
+**Touchstones:** read [the Touchstones register](📐%20ssot_01_touchstones_register.md) first.
 
 **The core conceptual move — CONTAINERS vs THREADS.** The ladder's rungs are *containers*: units of presentation with boundaries. **Arcs are not a rung — arcs are *threads*:** tracked lines of change (character arc, setting arc, relationship arc, thematic motif) that run *through* containers at any span. TV vocabulary blurs this ("story arc" as a container of episodes); the house keeps it clean: **containers hold, threads change.** *(Provisional ruling — flagged for Chief; matches the Weiland arc vocabulary already in the library.)*
 
@@ -90,13 +92,13 @@ A thread is a tracked line of change with a span, not a boundary:
 | **Thematic motif** | an Issue/Counterpoint recurrence | any |
 | **Trope instance** | a register entry playing out (lattice trope register) | any |
 
-## THE CONSTRAINT CHECK — invariants over the ladder (wired 2026-08-25)
+## THE CONSTRAINT CHECK — Touchstones over the ladder (wired 2026-08-25)
 
-Invariants are neither containers nor threads — a thread changes, an invariant forbids. They are the standing constraint layer, governed by [DOCTRINE-0-INVARIANTS.md](../../../../DOCTRINE-0-INVARIANTS.md), and DOCTRINE 0's meta-rule IV ("holds at every scale — line, scene, movement, series") is literally this ladder's dimension.
+Touchstones are neither containers nor threads — a thread changes, a Touchstone forbids. They are the standing constraint layer, governed by [DOCTRINE-0-INVARIANTS.md](../../../../DOCTRINE-0-INVARIANTS.md), and DOCTRINE 0's meta-rule IV ("holds at every scale — line, scene, movement, series") is literally this ladder's dimension.
 
-**The enforcement rule:** every rung's completion test carries one final implicit clause — ***…and no in-scope invariant is breached.*** A scene that turns beautifully while violating a standing invariant is not a whole scene; it is a breach (meta-rule VII), and it invalidates downstream units that trusted it.
+**The enforcement rule:** every rung's completion test carries one final implicit clause — ***…and no in-scope Touchstone is breached.*** A scene that turns beautifully while violating a standing Touchstone is not a whole scene; it is a breach (meta-rule VII), and it invalidates downstream units that trusted it.
 
-**The census, scope-mapped to rungs:** Layer 0 Invariants 1–5 (world physics) → R8 · Invariants of Power (KLK) → R7 · `narrative_invariant` (e.g. `cost_and_meaning`) → R5 · Six Movements set (one per movement: Equity → Collapse) → R4 · Ecclesial Laws (place-scoped) → the setting slice S12 · per-character sets (Tori ×4) → character threads. An invariant declares its scope as a ladder address span — the lattice gives the corpus the address system it never had.
+**The census, scope-mapped to rungs:** Layer 0 Invariants 1–5 (world physics) → R8 · Invariants of Power (KLK) → R7 · `touchstone` (e.g. `cost_and_meaning`) → R5 · Six Movements set (one per movement: Equity → Collapse) → R4 · Ecclesial Laws (place-scoped) → the setting slice S12 · per-character sets (Tori ×4) → character threads. A Touchstone declares its scope as a ladder address span — the lattice gives the corpus the address system it never had.
 
 Threads are **addressed by their span** across rungs — which requires:
 
@@ -127,3 +129,4 @@ Tree addresses (`SPINE.Lx`) locate *concepts*; ladder addresses locate *instance
 ## Version history
 
 - **1.0.0 — 2026-08-25.** Module 1 of the lattice, delivered on Chief's clear: eight rungs with completion tests, containers-vs-threads doctrine, four series patterns, address scheme, library keying.
+- **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed (TS-B3); constraint-check prose swapped to Touchstone (TS-B4); front-door line (TS-B10).

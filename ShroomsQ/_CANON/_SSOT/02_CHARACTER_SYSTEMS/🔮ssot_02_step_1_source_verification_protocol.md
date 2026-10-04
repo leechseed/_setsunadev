@@ -2,7 +2,7 @@
 type: ssot_02_character_systems
 category: vertical_slice_protocol
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.1.0
+version: 1.1.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
@@ -126,7 +126,7 @@ The Dramatica Ingest Template captures the complete storyform data for this char
 
 **Check 2.6: Applicable throughline sections are complete.** If the character is MC, Section 4 is populated. If IC, Section 5. Section 6 (OS) is always required. Section 7 (RS) is required if the character is an RS principal.
 
-**Check 2.7: Section 9 (Touchstones) contains at least one Touchstone.** Every Tier 3 character has at least one structural law derived from the storyform. The machine field is still `narrative_invariant` until the schema pass.
+**Check 2.7: Section 9 (Touchstones) contains at least one Touchstone.** Every Tier 3 character has at least one structural law derived from the storyform. The machine field is `touchstone`; the old name `narrative_invariant` is an alias in the variable registry.
 
 **Check 2.8: Section 10 (L12 Core Block) is populated and matches the data in preceding sections.** The block must list exactly the Tier 3 L12 core variables in [ssot_02_dramatica_integration_protocol.md](🔮%20ssot_02_dramatica_integration_protocol.md), the single home of that list. If that list changes, this check follows it.
 
@@ -234,3 +234,4 @@ _AUTHORITATIVE/[IP]/relationships/
 |---|---|---|
 |1.0.0|2026-03-03|Initial Step 1 Source Verification Protocol. Three-component gate with per-tier requirements, 22 verification checks across components, pass/conditional/fail logic, failure diagnostics, and canonical folder structure specification.|
 |1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. Dependency names fixed (vertical slice, Dramatica integration, 12-layer mapping, the two ingest templates). Checks 2.7 and 2.8 re-pinned: Touchstone wording, and the L12 core list now read from the integration doc. L7-L11 corrected to L1-L11. Template pointers added. Frontmatter repaired and table of contents links made in-page.|
+|1.1.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed, schema-pass wording closed (TS-B3).|

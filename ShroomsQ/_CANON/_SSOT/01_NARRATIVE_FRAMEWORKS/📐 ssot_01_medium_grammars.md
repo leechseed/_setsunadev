@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: medium_grammars
-version: 1.2.0
+version: 1.2.1
 last_updated: 2026-10-04
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
 status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: per-medium texture table added (T3 order, T4 speed, T10 narratee). v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: mode row added. v1.0.0: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass"
@@ -49,7 +49,7 @@ Film grammar plus the R6/R7 machinery made native: seasons = nested storyforms, 
 
 ### M4 · GAMES
 The contract inverts: **the player co-authors.** Four native mechanisms:
-- **Ludonarrative** — mechanics ARE meaning; dissonance occurs when the systems argue against the story (the invariant layer applies to *rules*: a mechanic can breach a narrative invariant).
+- **Ludonarrative** — mechanics ARE meaning; dissonance occurs when the systems argue against the story (the Touchstone layer applies to *rules*: a mechanic can breach a Touchstone).
 - **Environmental storytelling** — the setting slice *narrates*: S5 SCAR and S10 UNDERSIDE read as level design; the player is the focalizer walking the strata.
 - **T3 order becomes topology** — quest structure is the ladder with player-variable sequence; the four R7 series patterns appear as campaign architectures.
 - **T10 collapses** — narratee = player; direct address is the tutorial voice.
@@ -58,7 +58,7 @@ The contract inverts: **the player co-authors.** Four native mechanisms:
 ### M5 · TTRPG
 The purest structural mirror the lattice has:
 - **The GM is a live extradiegetic narrator**; the table is collective authorship — emergent storyform.
-- **Rules are invariants made mechanical** — the constraint layer implemented as a game system; a rulebook is a DOCTRINE 0 artifact with dice.
+- **Rules are Touchstones made mechanical** — the constraint layer implemented as a game system; a rulebook is a DOCTRINE 0 artifact with dice.
 - **Sourcebooks/gazetteers are printed setting slices** (the Module 2 echo, confirmed: the scaffolding Chief called runs both directions — TTRPG books validate the slice; the slice can *author* TTRPG books).
 **Holdings:** GURPS 0447 · Kobold 0458/0541 · Against Worldbuilding 0349.
 
@@ -136,6 +136,7 @@ Each channel changes three texture answers most. The cells restate the grammars 
 
 ## Version history
 
+- **1.2.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": prose swapped invariant to Touchstone (TS-B4).
 - **1.2.0 — 2026-10-04.** RULED, Chief ("REC"), BOLO 100 texture batch 1 (texture T9): the TEXTURE BY MEDIUM table added, rows M1–M10, columns T3 order, T4 speed, T10 narratee. Closes the layer doc's "Module 4" deferral. No grammar change.
 - **1.1.0 — 2026-10-04.** RULED, Chief ("rec"), BOLO 100 genre batch 1 (genre OPEN 6): the MODE section added. Mode is a fence around genre, listed per medium, never a G-layer. No grammar change.
 - **1.0.0 — 2026-08-26.** Module 4, completing the lattice: the channel-contract law, ten medium grammars (three as v1 scaffolds pending BOLO 16), library keying, ORANGE rows firewalled to craft grammar.

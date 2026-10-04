@@ -1,8 +1,8 @@
 ---
 type: ssot_01_narrative_frameworks
 category: collision_engine
-version: 1.0.0
-last_updated: 2026-08-26
+version: 1.0.1
+last_updated: 2026-10-04
 applies_to: [all IPs, character pipeline, setting system]
 status: canonical — lattice Module 5, built on Chief's go 2026-08-26 (BOLO 17); contact vocabulary provisional
 purpose: "THE COLLISION ENGINE — generalized synastry: any slice against any slice, producing friction, and friction is dramatic material. Activates Character Astrology Cats 11/13, adds the C×S mirror diagonal, proven on Tori × DCUS."
@@ -13,6 +13,8 @@ trunk: BLACK
 # 📐 SSOT: THE COLLISION ENGINE — slice against slice
 
 **What this is:** the lattice's analysis layer. It takes two (or more) filled schemas — character stack, setting slice — and reads them against each other, producing **friction, which is dramatic material**. The full collision table for a pair is functionally a scene-generation menu.
+
+**Touchstones:** read [the Touchstones register](📐%20ssot_01_touchstones_register.md) first.
 
 **Architecture — RULED 2026-08-26:**
 - A layer **above** the entity schemas,
@@ -70,7 +72,7 @@ Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victo
 ## OUTPUT CONTRACT
 
 - **Collision record:** `{pair, class, scope (ladder address/span), rows[{layers, contact, reading, scene_potential}]}` — stored beside the slices, never inside them.
-- **Overlay record** (C×Situation): state diff on the character keyed to the firing address; the scene card's `invariants:`-adjacent line names its source.
+- **Overlay record** (C×Situation): state diff on the character keyed to the firing address; the scene card's `touchstones:`-adjacent line names its source.
 - **Scene card wiring:** the card gains a `collision:` line — which row(s) seeded the scene. A scene not seeded by any row should justify itself.
 
 ## OPEN
@@ -83,6 +85,7 @@ Run 2026-08-26 from canon: [victoria-midnight.md](../../../../_CANON_NODES/victo
 ## Version history
 
 - **1.0.0 — 2026-08-26.** Built on Chief's go (BOLO 17): four classes, contact vocabulary, output contract, Tori×DCUS twelve-row proof run from canon.
+- **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": scene-card `invariants:` renamed `touchstones:` (TS-B3); front-door line (TS-B10).
 
 
 ## THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)

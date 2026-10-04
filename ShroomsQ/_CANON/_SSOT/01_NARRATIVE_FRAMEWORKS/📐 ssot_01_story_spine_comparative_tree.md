@@ -1,8 +1,8 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_spine
-version: 1.0.0
-last_updated: 2026-08-25
+version: 1.0.1
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
 status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)
 purpose: "THE STORY SPINE — the canonical tree of what makes a story. The reference Chief designs IPs against, and the keying structure the BVX-LEARN library (CRE/LIT holdings) organizes onto. Front door to the BVX reference system."
@@ -212,7 +212,7 @@ The spine covers the STRUCTURE axis. Chief ordered the full milieu same session;
 
 **Cross-cutting, ruled same session:**
 - **THE COLLISION ENGINE — Module 5, BUILT 2026-08-26** ([📐 ssot_01_collision_engine.md](📐%20ssot_01_collision_engine.md)): generalized synastry over the lattice — C×C (Cat 11 activated) · C×S (the mirror diagonal) · C×Situation (Cat 13 transits) · C×G. Proven on Tori×DCUS, twelve rows.
-- **THE CONSTRAINT LAYER — narrative invariants (wired 2026-08-25, break-break).** Invariants are not a level of the tree — they are the prescriptive register *over* the whole lattice: constraints that hold at every scale (DOCTRINE 0, meta-rule IV). Governance: [DOCTRINE-0-INVARIANTS.md](../../../../DOCTRINE-0-INVARIANTS.md) (v0.1, **awaiting ratification**). The lattice's contribution: **scope gets a canonical address** — universe-scoped (Layer 0 Invariants 1–5) · IP-scoped (Invariants of Power) · story-scoped (`narrative_invariant`, e.g. `cost_and_meaning`) · movement-scoped (Six Movements set) · place-scoped (Ecclesial Laws → S12) · character-scoped (per-character sets, Tori ×4). Enforcement rides the ladder's completion tests. Polarity vs tropes: **tropes describe, invariants forbid.** Rename ruling (Tenet/Ethos leading) was gated on decision #3 — **#3 executed 8/24, the gate is open.**
+- **THE CONSTRAINT LAYER — Touchstones (wired 2026-08-25, break-break).** Touchstones are not a level of the tree — they are the prescriptive register *over* the whole lattice: constraints that hold at every scale (DOCTRINE 0, meta-rule IV). Governance: [DOCTRINE-0-INVARIANTS.md](../../../../DOCTRINE-0-INVARIANTS.md) (v0.1, **awaiting ratification**). The lattice's contribution: **scope gets a canonical address** — universe-scoped (Layer 0 Invariants 1–5) · IP-scoped (Invariants of Power) · story-scoped (`touchstone`, e.g. `cost_and_meaning`) · movement-scoped (Six Movements set) · place-scoped (Ecclesial Laws → S12) · character-scoped (per-character sets, Tori ×4). Enforcement rides the ladder's completion tests. Polarity vs tropes: **tropes describe, Touchstones forbid.** Rename ruling (Tenet/Ethos leading) was gated on decision #3 — **#3 executed 8/24, the gate is open.**
 - **Trope register** — not a limb; tropes are named recurring patterns keyed to lattice addresses. TV Tropes: hand-picked articles distilled to house-vocabulary summaries (no mining, no full ingestion) — BOLO 15.
 - **Domain lexicons** — subject-matter shelves (not tree nodes) keyed to the setting schema. **Starter shelf RULED: weaponology (seed: MIL's 46) · food · cars**; grows as tagging hits.
 - **TTRPG scaffolding** — feeds Setting (the sourcebook/gazetteer format is a candidate setting-slice notation) as well as Mediums.
@@ -227,3 +227,4 @@ The spine covers the STRUCTURE axis. Chief ordered the full milieu same session;
 ## Version history
 
 - **1.0.0 — 2026-08-25.** Authored on Chief's clear (boresight chain closed same session): comparative tree, Dramatica canonical, 14 rival models mapped, holdings + gaps recorded, library keying proposed.
+- **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed (TS-B3); constraint-layer prose swapped to Touchstone (TS-B4).

@@ -2,7 +2,7 @@
 type: ssot_02_character_systems
 category: template_dramatica_ingest
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.0.0
+version: 1.0.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.0.0 2026-10-04: RULED — BOLO 100 C18"
@@ -161,7 +161,7 @@ One line per report consulted, in extraction order.
 
 ## 9. Touchstones
 
-A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is still `narrative_invariant` until the schema pass.
+A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`; the old name `touchstone` is an alias in the variable registry.
 
 |Touchstone|Statement (one sentence)|Storyform source|What it costs the character|
 |---|---|---|---|
@@ -180,7 +180,7 @@ L12_FUNCTION:
   methodology_element: ____
   evaluation_element: ____
   purpose_element: ____
-  narrative_invariant: ____   # the Touchstone
+  touchstone: ____   # the Touchstone
   story_outcome: ____
   story_judgement: ____
   limit_type: ____
@@ -207,3 +207,4 @@ L12_FUNCTION:
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-10-04|v1.0.0 2026-10-04: RULED — BOLO 100 C18. First blank form, built from the integration doc and the Step 1 checks (2.1 to 2.9).|
+|1.0.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed, schema-pass wording closed (TS-B3).|

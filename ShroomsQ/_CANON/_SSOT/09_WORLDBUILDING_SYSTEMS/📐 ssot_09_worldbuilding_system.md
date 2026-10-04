@@ -1,7 +1,7 @@
 ---
 type: ssot_09_worldbuilding_systems
 category: worldbuilding_system
-version: 1.1.0
+version: 1.1.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, MOON/SAGA, all future IPs]
 status: "v1.1.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: stale marks stripped, inferred-mark rule, stub-promotion and retired-entry rules, instance marks parked. 1.0 stamped 2026-09-29."
@@ -16,6 +16,8 @@ sources: [BVX.0562, BVX.0575, BVX.0630, BVX.0100, BVX.0349, BVX.0530, BVX.0504, 
 ## What this is
 
 This document says exactly what worldbuilding is in the Command. The Command already has systems for people (02), places (03), plot (04), theme (07), and state over time (08). None of them owns the shared things a world is made of: a clan, a style of building, a way of dressing, a vehicle, a custom, a school of thought. Those things sit between the systems and get lost. This system gives them one home, the **catalog**, and gives the world one set of rules to check against, the **infrastructures** and the **coherence tests**. A read-only page, the **world view**, compiles everything into one picture.
+
+**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
 **Root claim:** a world is the set of shared things plus the rules that make them fit. The systems that already exist keep what they own. Worldbuilding owns the shared things nobody else owns, and it reads the rest.
 
@@ -437,6 +439,7 @@ Each call has one rec. The Chief rules in one word.
 
 ## Version history
 
+- **1.1.1 · 2026-10-04** BOLO 100 TOUCH BATCH 1, Chief "REC.": front-door line (TS-B10).
 - **1.1.0 · 2026-10-04** · BOLO 100 tracking/worldbuilding batch 1 (Chief: "REC"). Stale marks stripped from the vocabulary, status, layout, and Wolf note. Inference rule written (`inferred`, `—`, `provisional`). Stub-promotion and retired-entry rules added to THE CATALOG. Seed entries and DCUS proof inferences parked as phase 2. Tracking dependency set to v1.0.0; reader-track pointer added to the 08 relation row.
 
 - **1.0.0 · 2026-09-29** · "09 to 1.0" (Chief: "run the recs"). The 1.0 bar ruled into SOP §5. THE PROOF — DCUS added: seven entries filled from canon on an MS (three of them new: ARC, CUS, TEC). The world view compiler's second build reads 02 nodes, 04 fabula events, 08 tracking story points and the trope register; runs CT1 · CT3 · CT4 · CT5 · CT6 · CT9 · CT13 plus four link checks; folds in the reader tests. Tremor Cult entry retired (a story). State-id convention written.

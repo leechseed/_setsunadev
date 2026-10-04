@@ -48,7 +48,7 @@ FACES = os.path.join(HERE, "faces")
 PAGE = os.path.join(HERE, "console.html")
 DECK = os.path.join(HERE, "faces.html")          # the face deck (10/4)
 LIB = os.path.join(FACES, "library")             # every saved face; the slots are copies out of it
-FACE_EXTS = ("png", "gif", "jpg", "jpeg", "webp")
+FACE_EXTS = ("png", "gif", "jpg", "jpeg", "webp", "mp4")   # mp4 since 10/4: JUDY decodes it with cv2
 FACE_CAP = 25 * 1024 * 1024                      # per file
 FACE_LOCK = threading.Lock()                     # one writer at a time on the slots + judy.json
 
@@ -372,7 +372,8 @@ def build_state():
 def face_url(judy, slot):
     p = (judy.get("face", {}).get("slots", {}) or {}).get(slot)
     if p and os.path.exists(p):
-        return f"/face/{slot}?v={int(os.path.getmtime(p))}"
+        kind = "&t=mp4" if p.lower().endswith(".mp4") else ""   # the page shows a video, not an img
+        return f"/face/{slot}?v={int(os.path.getmtime(p))}{kind}"
     return None
 
 
@@ -412,7 +413,7 @@ def lib_clean(filename):
     stem, ext = os.path.splitext(base)
     ext = ext.lower().lstrip(".")
     if ext not in FACE_EXTS:
-        raise ValueError(f"{base or 'file'}: png, gif, jpg, jpeg or webp only")
+        raise ValueError(f"{base or 'file'}: png, gif, jpg, jpeg, webp or mp4 only")
     stem = re.sub(r"[^A-Za-z0-9 ._-]+", "_", stem).strip(" ._-")[:80] or "face"
     if stem.upper() in _RESERVED:
         stem += "_"
@@ -483,8 +484,8 @@ def lib_add(files):
                 raise ValueError(f"{name}: empty")
             if len(raw) > FACE_CAP:
                 raise ValueError(f"{name}: {len(raw) // 1048576} MB is over the 25 MB cap")
-            if not (raw.startswith(_MAGIC) or (raw[:4] == b"RIFF" and raw[8:12] == b"WEBP")):
-                raise ValueError(f"{name}: not a PNG, GIF, JPG or WebP inside")
+            if not (raw.startswith(_MAGIC) or (raw[:4] == b"RIFF" and raw[8:12] == b"WEBP") or raw[4:8] == b"ftyp"):
+                raise ValueError(f"{name}: not a PNG, GIF, JPG, WebP or MP4 inside")
             with FACE_LOCK:
                 name = lib_unique(name)
                 with open(os.path.join(LIB, name), "wb") as out:
@@ -698,7 +699,7 @@ class Handler(BaseHTTPRequestHandler):
                     if b.get("data"):
                         os.makedirs(FACES, exist_ok=True)
                         ext = (b.get("name") or "png").rsplit(".", 1)[-1].lower()
-                        if ext not in ("png", "gif", "jpg", "jpeg", "webp"):
+                        if ext not in FACE_EXTS:
                             ext = "png"
                         dst = os.path.join(FACES, f"{slot}.{ext}")
                         raw = base64.b64decode(b["data"].split(",")[-1])

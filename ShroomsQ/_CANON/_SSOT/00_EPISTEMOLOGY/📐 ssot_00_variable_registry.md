@@ -2,7 +2,7 @@
 type: ssot_00_foundations
 category: variable_registry
 rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
-version: 1.2.0
+version: 1.2.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
@@ -804,12 +804,13 @@ _Note: This field was previously named `motivation_element`. Renamed per Phase 4
 |Tier Min|3|
 |Tag|Static|
 
-### T3.FUNC.narrative_invariant
+### T3.FUNC.touchstone
 
 |Field|Value|
 |---|---|
-|Canonical Path|`T3.FUNC.narrative_invariant`|
-|Display Name|Narrative Invariant|
+|Canonical Path|`T3.FUNC.touchstone`|
+|Display Name|Touchstone|
+|Alias|`narrative_invariant` (old name; read alias for old ingests, renamed BOLO 100)|
 |Type|`str`|
 |Source|`authored`|
 |Feeds|Structural constraint on all downstream story development|
@@ -1354,3 +1355,4 @@ State diffs use the `STT` prefix and mirror the variable they modify, with addit
 |1.0.0|2026-03-08|Initial registry. 50+ layer variables, 6 derived statistics, 5 status flags, 25+ astrology variables, state diff fields, character metadata. Full namespace convention. All numeric variables assigned to base 60 scale classes with constraints.|
 |1.1.0|2026-08-24|STATE #3 executed: added `T3.EROS.armor_index`, `T3.EROS.satisfaction_cycle_truncation`, `T3.EROS.erotic_safety_precondition`, `DRV.expressive_range` (L9 v2 propagation). `mc_problem_element` rename was already present (Phase 4). armor_index scale-class assignment was left open then. Assigned SC-12 in 1.2.0.|
 |1.2.0|2026-10-04|BOLO 100 base batch 1 (B1 to B8, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk` and `rung`, table-of-contents links repointed; the 05 copy is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` and this file is the one registry (B5); Registry Format gains the `Tag` row and the `object` types; new Slice Fields section adds 94 field rows from slice 3.3.1, each with tag, scale class, source and consumer (B6); Tag row added to every entry; `T3.EROS.armor_index` assigned SC-12 and the two "pending" lines deleted (B7); Ownership Rule with five pointer rows (B8); `attachment_style` and `intimacy_mode` value sets brought to the slice; `exposure_shame` and `role_shame` held at SC-12 to match `shame_index`, where the slice text says 0 to 10; the `10 - armor_index` constant is the slice's and gives a negative value at 11 or 12; dependency names fixed to real stems (B13).|
+|1.2.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field `narrative_invariant` renamed `touchstone` (TS-B3), one alias row kept.|

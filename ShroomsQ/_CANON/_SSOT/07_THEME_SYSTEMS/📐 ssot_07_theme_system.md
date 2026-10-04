@@ -1,7 +1,7 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 1.3.0
+version: 1.3.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
 status: "v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
@@ -12,6 +12,8 @@ sources: [MSX.36, BVX.0236, BVX.0193, CRE.06, "_tools/bolostatus/work/80/DISTILL
 ---
 
 # 📐 SSOT: THE THEME SYSTEM — the argument, in one sentence first
+
+**Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
 ## THE METHOD — how any story builds its theme
 
@@ -159,7 +161,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is key
 
 ## THE HANDSHAKE — theme × Touchstones (BOLO 81)
 
-Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene to scene, and can pressure-test a Touchstone hard — but no scene may write past what a live Touchstone locks. Today exactly one Touchstone is live: **TS 1:1, the bounded container** (soft — a tendency, not a rule; see [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md)).
+Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene to scene, and can pressure-test a Touchstone hard — but no scene may write past what a live Touchstone locks. Live Touchstones are listed in [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md).
 
 | Rail | The debate | Live Touchstone(s) it must never break | How the rail may still argue around it |
 |---|---|---|---|
@@ -197,6 +199,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.3.1 · 2026-10-04** BOLO 100 TOUCH BATCH 1, Chief "REC.": count line replaced by pointer to the register (TS-B9); front-door line (TS-B10).
 - **1.3.0 · 2026-10-04** · BOLO 100 follow-up (call PL-3), Chief: "rec". THE METHOD gains a latent-theme line, two motif checks (recurs, converges), and a `meets` entry per rail, from CRE.06. OVEREXITOUT values parked as `⏸ OXO theme fill pass (phase 2)`.
 - **1.2.0 · 2026-10-04** · THE SCENE TESTS added (BOLO 80 wave 1 distills, Chief: "all recs"): the citation test with the knowledge gradient · the two-transcripts test · the system-not-person rider.
 - **1.1.0 · 2026-09-29** · THE CIVILIZATION GAUGES added (BOLO 93, "all rec"): five powers, one value each (a sixth, the Power Line, added the same night), the steps on their catalog entries.

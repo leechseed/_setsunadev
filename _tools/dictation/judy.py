@@ -122,6 +122,11 @@ class Face:
             if not (p and os.path.exists(p)):
                 continue
             try:
+                if p.lower().endswith(".mp4"):
+                    frames = self._load_mp4(p)
+                    if frames:
+                        img[s] = frames
+                    continue
                 src = Image.open(p)
                 frames = []
                 for fr in ImageSequence.Iterator(src):
@@ -138,6 +143,33 @@ class Face:
         if img:
             self.img = img
         self._sig = self._signature(slots)
+
+    def _load_mp4(self, p):
+        """An MP4 face (10/4): OpenCV decodes it, sound dropped, ~30 fps max, the same 300-frame cap."""
+        import cv2
+        from PIL import Image, ImageTk
+
+        cap = cv2.VideoCapture(p)
+        try:
+            fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
+            step = max(1, round(fps / 30.0))          # a 60 fps clip keeps every second frame
+            ms = max(20, int(1000.0 * step / fps))
+            frames, i = [], 0
+            while len(frames) < 300:
+                ok, bgr = cap.read()
+                if not ok:
+                    break
+                i += 1
+                if (i - 1) % step:
+                    continue
+                im = Image.fromarray(cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB))
+                im.thumbnail((self.size, self.size), Image.LANCZOS)   # keep the aspect, letterbox
+                bg = Image.new("RGB", (self.size, self.size), (15, 18, 22))
+                bg.paste(im, ((self.size - im.width) // 2, (self.size - im.height) // 2))
+                frames.append((ImageTk.PhotoImage(bg), ms))
+            return frames
+        finally:
+            cap.release()
 
     def _watch(self):
         """Poll judy.json + the slot files; reload when the console swaps one."""

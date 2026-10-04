@@ -55,7 +55,7 @@
   .slot label{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10.5px;color:var(--ink-2);cursor:pointer;user-select:none}
   .slot label input{accent-color:var(--accent);margin:0}
   .well{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:var(--panel-2);border:1px solid var(--line);overflow:hidden}
-  .well img{max-width:100%;max-height:100%;object-fit:contain}
+  .well img,.well video{max-width:100%;max-height:100%;object-fit:contain}
   .well span{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding:12px}
   .slot .file{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .slot .file b{color:var(--ink);font-weight:500}
@@ -113,8 +113,8 @@
   </div>
   <div class="dropzone" id="libDrop" tabindex="0" role="button">
     <b>Add faces to the library</b>
-    <span>drop PNG · JPG · GIF · WebP here, as many as you like, or click to pick · 25 MB each · nothing gets assigned</span>
-    <input type="file" id="picker" multiple accept=".png,.gif,.jpg,.jpeg,.webp" hidden>
+    <span>drop PNG · JPG · GIF · WebP · MP4 here, as many as you like, or click to pick · 25 MB each · nothing gets assigned</span>
+    <input type="file" id="picker" multiple accept=".png,.gif,.jpg,.jpeg,.webp,.mp4" hidden>
   </div>
   <div class="grid" id="grid"></div>
 </main>
@@ -154,12 +154,15 @@ async function upload(files){
 let shuffleOn={idle:true,listening:true,thinking:true,talking:true};
 try{shuffleOn={...shuffleOn,...JSON.parse(localStorage.getItem("faceDeck.shuffle")||"{}")};}catch(_){}
 
+const isVid=n=>/\.mp4$/i.test(n||"");
+const media=(url,name,alt)=>isVid(name)?`<video src="${url}" autoplay loop muted playsinline></video>`:`<img src="${url}" alt="${alt}"${alt?"":" loading=\"lazy\""}>`;
+
 function renderSlots(){
   $("#slots").innerHTML=STATES.map(s=>{const v=S.slots[s]||{};
     return `<div class="slot${sel?" armed":""}" data-slot="${s}">
       <div class="top"><h3><em>${KEY[s]}</em> ${s}</h3><span class="note">${NOTE[s]}</span>
         <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>
-      <div class="well">${v.url?`<img src="${v.url}" alt="${s} face">`:`<span>empty · drop a file here</span>`}</div>
+      <div class="well">${v.url?media(v.url,v.file,`${s} face`):`<span>empty · drop a file here</span>`}</div>
       <div class="file">${v.pick?`<b>${esc(v.pick)}</b>`:v.file?`<b>${esc(v.file)}</b> <span style="color:var(--ink-3)">· not in library</span>`:"—"}</div>
     </div>`;}).join("");
   $$(".slot").forEach(el=>{
@@ -187,7 +190,7 @@ function renderLib(){
   $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
   if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
   $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
-    <div class="well"><img src="${i.url}" alt="" loading="lazy"></div>
+    <div class="well">${media(i.url,i.name,"")}</div>
     <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
     <div class="acts">${STATES.map(s=>`<button class="k${i.slots.includes(s)?" on":""}" data-k="${s}" title="put on ${s}">${KEY[s]}</button>`).join("")}
       <span class="sp"></span><button class="del" data-del>delete</button></div>
