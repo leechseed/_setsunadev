@@ -2,6 +2,7 @@
 type: ssot_operations
 category: operations
 version: 1.0.0
+tier: operations
 last_updated: 2026-02-10
 applies_to: [all_stories]
 status: canonical

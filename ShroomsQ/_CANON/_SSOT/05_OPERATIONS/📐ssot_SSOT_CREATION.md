@@ -2,6 +2,7 @@
 type: ssot_methodology
 category: operations
 version: 1.8.0
+tier: operations
 last_updated: 2026-02-12
 applies_to:
   - OVEREXITOUT

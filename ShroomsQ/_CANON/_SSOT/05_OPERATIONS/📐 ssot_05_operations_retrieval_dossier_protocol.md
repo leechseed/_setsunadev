@@ -2,6 +2,7 @@
 type: ssot_05_operations
 category: operations
 version: 1.0.0
+tier: operations
 last_updated: 2026-02-12
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
