@@ -22,7 +22,7 @@ TAG2SPINE = {"00_THEORY OF COMPOSITION": "L0", "01_THEME": "L6", "02_PLOT": "L4"
 
 
 # personal documents that wander into a scanned folder: their filenames carry a phone number, an email, a transcript
-PERSONAL = re.compile(r"resume|r[eé]sum[eé]|cover letter|\bcover\b.*manager|transcript|references|@gmail|\b\d{10}\b|cardenas", re.I)
+PERSONAL = re.compile(r"resume|r[eé]sum[eé]|cover letter|\bcover\b.*manager|\btranscript\b|references|@gmail|\b\d{10}\b|cardenas", re.I)
 
 
 def norm(t):

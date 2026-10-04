@@ -13,11 +13,11 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | | |
 |---|---|
-| Top-level items | **9130** |
-| With a PDF attachment | 9130 |
-| PDF present on disk | 9039 |
+| Top-level items | **9136** |
+| With a PDF attachment | 9136 |
+| PDF present on disk | 9045 |
 | Already in catalog.json (BVX id) | 1026 |
-| **New since the Dec-2023 catalog** | **8104** |
+| **New since the Dec-2023 catalog** | **8110** |
 | Story-side (CRE + LIT by catalog) | 660 |
 | **Spine-keyed from Chief's tags** | **909** |
 | With PDF annotations | 5 (375 highlights) |
@@ -40,7 +40,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 
 | Subject | Items |
 |---|---|
-| NEW | 5749 |
+| NEW | 5755 |
 | GAM | 1241 |
 | CRE | 487 |
 | PHI | 286 |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (8104)
+## New since the catalog (8110)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -763,6 +763,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | A Dictionary of Sociology 4e (Oxford... |  |  |
 |  | A Dozen Armor and Shield Magical Properties |  |  |
 |  | A fresh approach to the Snare Drum (Wessels Mark.)— |  | 0800012 - SOUND |
+|  | A Grammar of Motives | Kenneth Burke |  |
 |  | A Guide to the Project Management Body of Knowledge (PMBOK® Guide) - E | Project Management Institute P |  |
 |  | A Learning Time |  |  |
 |  | A Manual for Writers of Research Papers, Theses, and Dissertations, Ni |  | 06_NARRATOR |
@@ -1880,6 +1881,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2021 | Docs for Developers: An Engineer’s Field Guide to Technical Writing | Bhatti, Corleissen, Lambourne, |  |
 |  | document |  |  |
 |  | document-10-1 |  |  |
+|  | Domination and the Arts of Resistance. Hidden transcripts | James C. Scott |  |
+|  | Domination and the Arts of Resistance. Hidden transcripts | James C. Scott |  |
 |  | Donal Graeme Archive ((Compiled by) udream-hunter) |  |  |
 |  | Donella H. Meadows - Thinking in Systems (Leverage Points essay) - exc | 1999 |  |
 |  | Dong Ho Kim - Space Drawing Perspective |  |  |
@@ -2662,6 +2665,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | eco-upload US copyright office uploading your work to eco |  |  |
 |  | ecommerce | 1 |  |
 |  | Educational Management Administration & Leadership-2002-Samier-27-45 |  |  |
+|  | Eichmann Before Jerusalem The Unexamined Life of a Mass Murderer | Bettina Stangneth, Ruth Martin |  |
 |  | Eichmann in Jerusalem A Report on the Banality of Evil | Hannah Arendt |  |
 |  | Ejercicios de Cualificacion de Pistola |  |  |
 |  | Eldritch Ancestries - Felsine |  |  |
@@ -7648,6 +7652,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | the_sentence attuned_teacher |  |  |
 |  | the_vocabulary attuned_educator |  |  |
 |  | thebook |  |  |
+|  | Thematics New Approaches (Claude Bremond (editor) etc.) |  |  |
 |  | TheReflexiveProcess |  |  |
 |  | Thinking Fast and Slow | Daniel Kahneman |  |
 |  | Thinking in Systems A Primer | Donella H. Meadows |  |
@@ -7987,6 +7992,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | We Be Goblins! |  |  |
 |  | Weapon Master's Handbook |  |  |
 |  | weapon_record_sheet |  |  |
+|  | Weapons of Math Destruction | Cathy O’Neil |  |
 |  | Weapons of the Weak Everyday Forms of Peasant Resistance | James C. Scott |  |
 |  | Weather Spaces, Mobilities and Affect... |  |  |
 | 2021 | Weather: spaces, mobilities and affects | Barry, Borovnik, Edensor |  |
