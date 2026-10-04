@@ -448,7 +448,7 @@ $('#footR').textContent = `${M.date} · trigger: ${M.trigger}`;
 const blocks = B.blocks;
 const countOf = b => b.items ? b.items.length : b.groups ? b.groups.reduce((n, g) => n + g.items.length, 0) : b.rows ? b.rows.length : b.soi ? b.soi.length : 1;
 $('#olRows').innerHTML = blocks.map((b, i) => `<button class="ol-row" data-i="${i}"><span class="node"><i></i></span><span><span class="id">Block ${esc(b.id)}</span><span class="name">${esc(b.name)}</span></span><span class="key">${i}</span></button>`).join('')
-  + `<button class="ol-row" data-b="1"><span class="node"><i></i></span><span><span class="id">Panel · the loop</span><span class="name">BREVITY</span></span><span class="key">B</span></button>`;
+  /* BREVITY panel retired 2026-10-04 (Chief: "eliminate the brevity panel … it's just taking up space"): all eight slots ruled 9/24; the code below stays dormant */
 $('#olFoot').innerHTML = `<b>${M.agents.length}</b> agents deployed<br><b>${countOf(blocks[4])}</b> decisions are yours`;
 
 /* ---- panel renderers ---- */
@@ -592,7 +592,7 @@ $('#panel').addEventListener('click', async e => {
   } catch (err) { dbState = 'none'; }
   if (cur === -1) renderBrevity();
 })();
-document.addEventListener('keydown', e => { if ((e.key === 'b' || e.key === 'B') && !e.target.closest('input')) goBrevity(); });
+/* the B shortcut retired with the panel (10/4) */
 /* the SOI button is an outbound link */
 
 /* ---- tooltips: hover → open · 1.5 s or Space → lock · nested to depth 3 · Esc closes ---- */

@@ -33,6 +33,8 @@ captured: 2026-10-01
 
 > *(Next turn, 10/1.)* The whole idea with the DNA is that it's locked to her genome, so it only works on her. It's her DNA in the thing. So in a way, that little fetus thing she's killing all the time is like her kid, that she's sacrificing every time she walks into the heat.
 
+> *(10/4, BOLO 93, ruling who the Outliers are.)* The Outliers are, well, the majority of them are descendants from the Moon: the progeny of the thousands that were sent there 100 years before. As well as various outsiders and outcasts of the normal from all the other Earth realms. They just head there, because that's the only place they can go.
+
 ## The pieces (as heard)
 
 1. **The belt is hot.** Radiation in grades; the people born there carry exceptional resistance.
