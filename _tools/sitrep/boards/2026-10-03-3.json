@@ -26,12 +26,13 @@
   "tree": "clean at open",
   "stack": "empty",
   "agents": [],
-  "stats": {
-   "blocked": 0,
-   "agents_deployed": 3,
-   "stations": "7/7 GO"
-  },
-  "main_effort": "Say DOC-SOP 1.2 back: the four doc types.",
+  "stats": [
+   "blocked: 0",
+   "DOC-SOP: 4.1 · 4.2 · 4.3 locked 10/3 late; the SOP is whole",
+   "agents deployed: 3 (RACK haiku · INDEX sonnet · WATCH haiku)",
+   "stations: 7/7 GO"
+  ],
+  "main_effort": "DOC-SOP whole 10/3: rule apply (the SOI first) or move BOLO 95 to done.",
   "build": {
    "calls": 3,
    "rounds": 1
@@ -810,15 +811,15 @@
    "id": "VI",
    "name": "The leverage line",
    "kind": "line",
-   "plain": "Third launch of 10/3, at 23:10, all stations GO. The DOC-SOP spine is whole and section 4 is under way: 4.1 the troubleshooting page locked tonight. The X pull is still running, @MrSuisssX queued behind it.",
+   "plain": "Third launch of 10/3, at 23:10, all stations GO. The documentation SOP is now whole: section 4 (troubleshooting, glossary, decision record) locked tonight. The X pull is still running, @MrSuisssX queued behind it.",
    "strand": {
     "last": "10/3 evening: BOLO 89 reached v0.5.0, the DOC-SOP spine locked through section 3, the SOI was rebuilt, and the X pull started.",
     "plan": "Teach the documentation SOP one small part at a time; Chief says each part back, then it locks.",
-    "you": "You said 4.1 back at 23:40 (symptom, cause, fix) and it locked.",
-    "next": "Say 4.2 back (the glossary page), then 4.3, the decision record."
+    "you": "You said 4.1, 4.2 and 4.3 back between 23:40 and 23:55; each locked on the gist.",
+    "next": "Rule apply (the SOI first) or done."
    },
-   "line": "Say DOC-SOP 4.2 back: the glossary page. One entry per term: the term, a one-line meaning, a link to where it's used.",
-   "why": "Sections 1-3 locked on 10/3 and 4.1 (troubleshooting) locked at 23:40. 4.2 is taught, so only the readback is owed; then 4.3 the decision record closes the SOP."
+   "line": "Rule BOLO 95's next step: apply the documentation SOP to its first real page (the SOI), or move it to done.",
+   "why": "The SOP went whole tonight: 4.1, 4.2 and 4.3 locked on three teach-backs. One page built to it proves the rules hold before every system page inherits them."
   },
   {
    "id": "VII",
