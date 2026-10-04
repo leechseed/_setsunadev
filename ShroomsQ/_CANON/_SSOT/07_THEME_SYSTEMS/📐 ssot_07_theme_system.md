@@ -1,14 +1,14 @@
 ---
 type: ssot_07_theme_systems
 category: theme_system
-version: 1.2.0
+version: 1.3.0
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
-status: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)
+status: "v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
 dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
 trunk: BLACK
-sources: [MSX.36, BVX.0236, BVX.0193, "_tools/bolostatus/work/80/DISTILL.md", "_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md"]
+sources: [MSX.36, BVX.0236, BVX.0193, CRE.06, "_tools/bolostatus/work/80/DISTILL.md", "_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md"]
 ---
 
 # 📐 SSOT: THE THEME SYSTEM — the argument, in one sentence first
@@ -21,12 +21,14 @@ Four parts, not a twelve-layer stack. The character and setting systems (L1–L1
 - *What it is:* one sentence in the form *[value] happens because [cause]* — a value wired to the mechanism that moves it (Egri's premise, McKee's controlling idea). A second sentence, the mechanism line, restates the *how* in the story's own idiom, so the claim reads as something the world actually does, not an abstraction.
 - *How to build it:* draft candidates until cutting the story down to one sentence leaves exactly one survivor; then write the mechanism line by answering "how does the system pull this off, concretely."
 - *Test it's done:* a reader can rebuild the story's whole shape from the sentence alone, and the mechanism line explains the sentence's *how* without repeating its *what*.
+- *Latent-theme line:* after the sentence, ask "what might this sentence be covering?" The stated key word may hide the real theme (CRE.06).
 - *Worked below:* OVEREXITOUT's controlling idea and mechanism line, under THE WORKED INSTANCE.
 
 **(b) The rails — 3–5 debates.**
 - *What it is:* one debate per major point of view, each a plain question the story argues both sides of across its whole length — never settled once, argued scene by scene. Each debate is the storyform's own locked Issue vs. Counterpoint pair for that throughline (world/OS, protagonist/MC, foil/IC, relationship/RS), put in plain words.
 - *How to build it:* take the storyform's Issue/Counterpoint pairs, one per throughline, and phrase each as a question a character could actually ask out loud.
 - *Test it's done:* every debate has scenes arguing each side, not just the winning one, and the full set of debates sums back to the controlling idea.
+- *`meets`:* each rail names one outside idea the debate touches. A theme meets outside texts (CRE.06).
 - *Worked below:* OVEREXITOUT's four rails.
 
 **(c) The value scale — one or two gauges, stepped per scene.**
@@ -39,6 +41,7 @@ Four parts, not a twelve-layer stack. The character and setting systems (L1–L1
 - *What it is:* images, objects, or actions that recur across the story and carry a rail or a scale step without anyone saying it aloud (Tomashevsky's motif, Greimas's isotopy).
 - *How to build it:* pick images already present in the setting/character material, tie each to one rail or one scale step, and check that each appearance can be read as advancing or reversing that tie.
 - *Test it's done:* a reader who has never seen the theme sentence can still point at the pattern; every motif ties to a named rail or step, none floats free.
+- *Two motif checks:* the image recurs, and its uses converge on one meaning. A motif gains meaning by recursion plus convergence (CRE.06).
 - *Worked below:* OVEREXITOUT's three motifs.
 
 Derived entirely from OVEREXITOUT's own worked sections below and this doc's PROVENANCE (Egri, McKee, Coyne, Tomashevsky/Greimas via Foucault-adjacent theory reading) — no new theory invented for this pass.
@@ -72,14 +75,16 @@ Kept by Chief 2026-09-29 as the biopower register. The controlling idea says **w
 
 Theme runs as four debates at once, one per point of view, each the storyform's locked Issue vs. Counterpoint (`oxo-storyform.md`, engine transcription). **Every scene declares which debate it tests**; the plot card's value fields (P3 · P5 · P9) read from these rows. Plain words handpicked by Chief, 2026-09-29.
 
-| # | Point of view | Storyform pair | The debate, in plain words | Problem → Solution |
-|---|---|---|---|---|
-| 1 | **The world** (the factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity → Inequity |
-| 2 | **Tori** | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity → Inequity |
-| 3 | **Anna** | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection → Speculation |
-| 4 | **Tori ↔ Anna** | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity → Inequity |
+| # | Point of view | Storyform pair | The debate, in plain words | Problem → Solution | Meets (outside idea) |
+|---|---|---|---|---|---|
+| 1 | **The world** (the factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` |
+| 2 | **Tori** | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` |
+| 3 | **Anna** | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection → Speculation | `⏸ OXO theme fill pass (phase 2)` |
+| 4 | **Tori ↔ Anna** | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` |
 
 The four sum to the controlling idea: the world forecasts everyone doing their job (1); Tori stops trusting the story over her own eyes (2); Anna proves the forecast by winning the game as dealt (3); the rivalry settles whose account survives (4).
+
+Latent-theme line for the controlling idea: `⏸ OXO theme fill pass (phase 2)`.
 
 ## THE VALUE SCALE — the per-scene gauge (80-B.2)
 
@@ -128,6 +133,7 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 
 ## PROVENANCE
 
+- 1.3.0 cite: CRE.06 *Thematics: New Approaches* (Bremond, Landy and Pavel, 1995) backs the latent-theme line, the two motif checks, and `meets`.
 - The 9/24 research verdict holds: Foucault supplies the **mechanism** (power produces the person); the **moral** claim that ordinary people carry out evil belongs to Arendt (the banality of evil), Bauman, Milgram and Browning. The ruled sentence is that moral claim, and the mechanism line is Foucault's. `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
 - Chief's 9/24 phrasing, *"the system enables evil; the person is a symptom,"* stays on record as the Overall Story's world-claim.
 
@@ -191,6 +197,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.3.0 · 2026-10-04** · BOLO 100 follow-up (call PL-3), Chief: "rec". THE METHOD gains a latent-theme line, two motif checks (recurs, converges), and a `meets` entry per rail, from CRE.06. OVEREXITOUT values parked as `⏸ OXO theme fill pass (phase 2)`.
 - **1.2.0 · 2026-10-04** · THE SCENE TESTS added (BOLO 80 wave 1 distills, Chief: "all recs"): the citation test with the knowledge gradient · the two-transcripts test · the system-not-person rider.
 - **1.1.0 · 2026-09-29** · THE CIVILIZATION GAUGES added (BOLO 93, "all rec"): five powers, one value each (a sixth, the Power Line, added the same night), the steps on their catalog entries.
 

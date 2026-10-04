@@ -7,7 +7,7 @@ spoken tools over the wire. This script brings the local stations up, opens the 
 boards, and prints the station poll (GO / NO-GO with an address) for the sit rep header.
 The sit rep itself runs in the formation after this (skill: launch → sitrep).
 
-Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-knobs] [--no-wire] [--json]
+Usage:  python _tools/launch/launch.py [--no-pages] [--no-darkroom] [--no-stash] [--no-judy] [--no-faces] [--no-knobs] [--no-wire] [--json]
 
 Safe to run twice: a live DARKROOM is reported, not restarted (its single-instance guard);
 a running JUDY session voice is reported, not restarted; a standalone JUDY (no --session)
@@ -22,6 +22,8 @@ DARK_URL = "http://127.0.0.1:8484/"
 JUDY = os.path.join(ROOT, "_tools", "dictation", "judy.py")
 PROBE = os.path.join(ROOT, "_tools", "dictation", "wire_probe.py")
 KNOBS = os.path.join(ROOT, "_tools", "dictation", "knobs.py")   # BOLO 62: the MPK knobs as scroll + zoom
+CONSOLE = os.path.join(ROOT, "_tools", "dictation", "console.py")   # JUDY's console; serves the face deck (10/4)
+FACES_URL = "http://127.0.0.1:8787/faces"
 VIEW = os.path.join(ROOT, "_tools", "pages", "view.cmd")
 STASH_EXE = os.path.join("Q:\\", "fun", ".StashApp", "stash-win.exe")          # BOLO 75: Stash is a station (9/20); shutdown leaves it running
 STASH_CFG = os.path.join("Q:\\", "fun", ".StashApp", "config.yml")
@@ -134,6 +136,33 @@ def station_judy():
             "note": "exited at start (code %s); run judy.py --session by hand to see why" % p.returncode}
 
 
+def station_faces():
+    """Chief, 10/4: JUDY's face deck comes up at every launch. The console (:8787) serves it;
+    a live console is reported, not restarted. The deck opens as a browser tab, never an app window."""
+    t0 = time.time()
+    try:
+        was_up = ping("http://127.0.0.1:8787/api/log")
+        if not was_up:
+            if not os.path.exists(CONSOLE):
+                return {"station": "FACES", "go": False, "addr": FACES_URL, "note": "console.py missing"}
+            spawn_console([PY, "-u", CONSOLE, "--no-open"])
+            for _ in range(30):
+                time.sleep(0.5)
+                if ping("http://127.0.0.1:8787/api/log"):
+                    break
+            else:
+                return {"station": "FACES", "go": False, "addr": FACES_URL, "note": "console gave no answer after 15 s"}
+        if not ping(FACES_URL):
+            return {"station": "FACES", "go": False, "addr": FACES_URL,
+                    "note": "console is up but has no /faces (an old console; restart it)"}
+        subprocess.Popen(["cmd", "/c", VIEW, FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return {"station": "FACES", "go": True, "addr": FACES_URL,
+                "note": ("already live" if was_up else "started · %.1f s" % (time.time() - t0)) + " · opened"}
+    except Exception as e:
+        return {"station": "FACES", "go": False, "addr": FACES_URL, "note": "failed: %s" % e}
+
+
 def station_knobs():
     """BOLO 62 (Chief, 9/17): the MPK knobs scroll and zoom whatever is under the pointer.
     The MIDI port is shareable, so this runs beside JUDY; a running daemon is reported, not restarted."""
@@ -199,6 +228,7 @@ def main():
     ap.add_argument("--no-darkroom", action="store_true")
     ap.add_argument("--no-stash", action="store_true")
     ap.add_argument("--no-judy", action="store_true")
+    ap.add_argument("--no-faces", action="store_true")
     ap.add_argument("--no-wire", action="store_true")
     ap.add_argument("--no-knobs", action="store_true")
     ap.add_argument("--json", action="store_true")
@@ -210,6 +240,8 @@ def main():
         rows.append(station_stash())
     if not a.no_judy:
         rows.append(station_judy())
+    if not a.no_faces:
+        rows.append(station_faces())
     if not a.no_knobs:
         rows.append(station_knobs())
     if not a.no_wire:

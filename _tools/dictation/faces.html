@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JUDY Face Deck</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* the face deck (10/4) · DARK is the only theme (RULED 9/11) · served by console.py at /faces */
+  :root{
+    --bg:#141210; --panel:#1c1916; --panel-2:#24201c; --line:#2e2925; --line-2:#3d3631;
+    --ink:#e8e2db; --ink-2:#b3aaa0; --ink-3:#857b71;
+    --accent:#FF5A1F; --accent-soft:#3a1d10; --good:#5CC48A; --bad:#E9788A; --bad-soft:#3A1B20;
+    --display:"Barlow Condensed","Arial Narrow",sans-serif;
+    --body:"Atkinson Hyperlegible","Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",Consolas,monospace;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  button:focus-visible,input:focus-visible,label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+  header{height:44px;display:flex;align-items:center;gap:16px;padding:0 16px;border-bottom:1px solid var(--line);
+    background:var(--panel);position:sticky;top:0;z-index:5}
+  header h1{margin:0;font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+  header h1 i{display:inline-block;width:9px;height:9px;background:var(--accent);margin-right:9px;transform:translateY(-2px)}
+  header .status{flex:1;min-width:0;font-family:var(--mono);font-size:11.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  header .status b{color:var(--accent);font-weight:500}
+  header a{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);text-decoration:none;white-space:nowrap}
+  header a:hover{color:var(--accent)}
+
+  main{max-width:1500px;margin:0 auto;padding:18px 16px 60px}
+  .bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 12px}
+  .bar h2{margin:0;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase}
+  .bar .sp{flex:1}
+  .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+  .btn{border:1px solid var(--line-2);background:var(--panel-2);padding:6px 14px;font-family:var(--display);font-weight:700;
+    font-size:16px;letter-spacing:.06em;text-transform:uppercase}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.hot{background:var(--accent);border-color:var(--accent);color:#141210}
+  .btn.hot:hover{filter:brightness(1.1);color:#141210}
+
+  /* the four slots */
+  .slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:30px}
+  @media (max-width:1000px){.slots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:520px){.slots{grid-template-columns:1fr}}
+  .slot{border:1px solid var(--line);background:var(--panel);padding:12px;display:flex;flex-direction:column;gap:8px;transition:border-color .12s}
+  .slot.drop,.slot.armed:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .slot.armed{cursor:copy;border-style:dashed;border-color:var(--line-2)}
+  .slot .top{display:flex;align-items:baseline;gap:8px}
+  .slot h3{margin:0;font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:.03em}
+  .slot h3 em{font-style:normal;color:var(--accent)}
+  .slot .note{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);flex:1}
+  .slot label{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10.5px;color:var(--ink-2);cursor:pointer;user-select:none}
+  .slot label input{accent-color:var(--accent);margin:0}
+  .well{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:var(--panel-2);border:1px solid var(--line);overflow:hidden}
+  .well img{max-width:100%;max-height:100%;object-fit:contain}
+  .well span{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding:12px}
+  .slot .file{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .slot .file b{color:var(--ink);font-weight:500}
+
+  /* the library */
+  .dropzone{border:1.5px dashed var(--line-2);background:var(--panel);padding:22px 16px;text-align:center;margin-bottom:14px;cursor:pointer;transition:border-color .12s}
+  .dropzone.drop,.dropzone:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .dropzone b{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.05em;text-transform:uppercase;display:block}
+  .dropzone span{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+  .tile{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;cursor:pointer;position:relative}
+  .tile:hover{border-color:var(--line-2)}
+  .tile.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+  .tile .well{border:0;border-bottom:1px solid var(--line)}
+  .tile .meta{padding:7px 9px 4px;font-family:var(--mono);font-size:11px;min-width:0}
+  .tile .meta div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tile .meta small{color:var(--ink-3);font-size:10.5px}
+  .tile .acts{display:flex;gap:4px;padding:4px 9px 9px;align-items:center}
+  .tile .acts button.k{width:26px;height:24px;border:1px solid var(--line-2);font-family:var(--mono);font-size:11px;color:var(--ink-2)}
+  .tile .acts button.k:hover{border-color:var(--accent);color:var(--accent)}
+  .tile .acts button.k.on{background:var(--accent);border-color:var(--accent);color:#141210}
+  .tile .acts .sp{flex:1}
+  .tile .acts button.del{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);padding:3px 4px}
+  .tile .acts button.del:hover{color:var(--bad)}
+  .confirm{position:absolute;inset:auto 0 0 0;background:var(--bad-soft);border-top:1px solid var(--bad);padding:8px 9px;
+    font-family:var(--mono);font-size:11px;display:flex;align-items:center;gap:6px}
+  .confirm span{flex:1}
+  .confirm button{border:1px solid var(--line-2);padding:2px 8px;font-size:11px}
+  .confirm button.yes{border-color:var(--bad);color:var(--bad)}
+  .empty{font-family:var(--mono);font-size:12px;color:var(--ink-3);padding:20px 0}
+
+  #toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);background:var(--panel-2);border:1px solid var(--line-2);
+    padding:8px 16px;font-family:var(--mono);font-size:12px;opacity:0;transition:opacity .15s;pointer-events:none;max-width:calc(100vw - 32px)}
+  #toast.on{opacity:1} #toast.bad{border-color:var(--bad);color:var(--bad)}
+</style>
+</head>
+<body>
+<header>
+  <h1><i></i>JUDY · Face Deck</h1>
+  <div class="status" id="status">JUDY picks up a swap within 2 seconds.</div>
+  <a href="/">console →</a>
+</header>
+<main>
+  <div class="bar">
+    <h2>The four states</h2>
+    <span class="lbl">drop a file on a slot · or pick a library tile, then click a slot</span>
+    <span class="sp"></span>
+    <button class="btn hot" id="shuffle" title="A random library face onto every checked slot">Shuffle</button>
+  </div>
+  <div class="slots" id="slots"></div>
+
+  <div class="bar">
+    <h2>The library</h2>
+    <span class="lbl" id="libCount"></span>
+  </div>
+  <div class="dropzone" id="libDrop" tabindex="0" role="button">
+    <b>Add faces to the library</b>
+    <span>drop PNG · JPG · GIF · WebP here, as many as you like, or click to pick · 25 MB each · nothing gets assigned</span>
+    <input type="file" id="picker" multiple accept=".png,.gif,.jpg,.jpeg,.webp" hidden>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+<div id="toast"></div>
+
+<script>
+const STATES=["idle","listening","thinking","talking"];
+const KEY={idle:"I",listening:"L",thinking:"T",talking:"K"};
+const NOTE={idle:"resting",listening:"hotkey down",thinking:"transcribing · waiting",talking:"speaking back"};
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let S={library:[],slots:{}}, sel=null, confirming=null, sig="";
+
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const mb=n=>n>=1048576?(n/1048576).toFixed(1)+" MB":Math.max(1,Math.round(n/1024))+" KB";
+let tt; function toast(msg,bad){const t=$("#toast");t.textContent=msg;t.className="on"+(bad?" bad":"");clearTimeout(tt);tt=setTimeout(()=>t.className="",bad?5000:2200);}
+
+async function api(path,body){
+  const r=await fetch(path,body?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:{});
+  const j=await r.json().catch(()=>({error:"bad reply"}));
+  if(!r.ok||j.error){toast(j.error||("HTTP "+r.status),true);throw new Error(j.error);}
+  return j;
+}
+const readFile=f=>new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>ok(fr.result);fr.onerror=no;fr.readAsDataURL(f);});
+
+/* one file per request keeps each body under ~34 MB */
+async function upload(files){
+  const saved=[], errs=[];
+  for(const f of files){
+    if(f.size>25*1048576){errs.push(f.name+": over 25 MB");continue;}
+    try{const j=await api("/api/face/library",{files:[{name:f.name,data:await readFile(f)}]});saved.push(...j.saved);}
+    catch(e){errs.push(e.message);}
+  }
+  if(errs.length) toast(errs.join(" · "),true);
+  return saved;
+}
+
+let shuffleOn={idle:true,listening:true,thinking:true,talking:true};
+try{shuffleOn={...shuffleOn,...JSON.parse(localStorage.getItem("faceDeck.shuffle")||"{}")};}catch(_){}
+
+function renderSlots(){
+  $("#slots").innerHTML=STATES.map(s=>{const v=S.slots[s]||{};
+    return `<div class="slot${sel?" armed":""}" data-slot="${s}">
+      <div class="top"><h3><em>${KEY[s]}</em> ${s}</h3><span class="note">${NOTE[s]}</span>
+        <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>
+      <div class="well">${v.url?`<img src="${v.url}" alt="${s} face">`:`<span>empty · drop a file here</span>`}</div>
+      <div class="file">${v.pick?`<b>${esc(v.pick)}</b>`:v.file?`<b>${esc(v.file)}</b> <span style="color:var(--ink-3)">· not in library</span>`:"—"}</div>
+    </div>`;}).join("");
+  $$(".slot").forEach(el=>{
+    const slot=el.dataset.slot;
+    el.addEventListener("dragover",e=>{e.preventDefault();el.classList.add("drop");});
+    el.addEventListener("dragleave",()=>el.classList.remove("drop"));
+    el.addEventListener("drop",async e=>{
+      e.preventDefault();el.classList.remove("drop");
+      const f=e.dataTransfer.files[0]; if(!f)return;
+      const saved=await upload([f]); if(!saved.length)return;
+      await api("/api/face/assign",{slot,name:saved[0]}); toast(`${slot} ← ${saved[0]}`); refresh(true);
+    });
+    el.addEventListener("click",async e=>{
+      if(e.target.closest("label")||!sel)return;
+      const name=sel; sel=null;
+      if(await api("/api/face/assign",{slot,name}).catch(()=>null))toast(`${slot} ← ${name}`); refresh(true);
+    });
+  });
+  $$("[data-sh]").forEach(c=>c.onchange=()=>{shuffleOn[c.dataset.sh]=c.checked;
+    try{localStorage.setItem("faceDeck.shuffle",JSON.stringify(shuffleOn));}catch(_){}});
+}
+
+function renderLib(){
+  const L=S.library;
+  $("#libCount").textContent=`${L.length} face${L.length===1?"":"s"} · ${mb(L.reduce((a,i)=>a+i.size,0))}`;
+  if(!L.length){$("#grid").innerHTML=`<div class="empty">The library is empty. Drop some faces above.</div>`;return;}
+  $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
+    <div class="well"><img src="${i.url}" alt="" loading="lazy"></div>
+    <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
+    <div class="acts">${STATES.map(s=>`<button class="k${i.slots.includes(s)?" on":""}" data-k="${s}" title="put on ${s}">${KEY[s]}</button>`).join("")}
+      <span class="sp"></span><button class="del" data-del>delete</button></div>
+    ${confirming===i.name?`<div class="confirm"><span>${i.slots.length?"on "+i.slots.join(", ")+" · swap off first":"delete for good?"}</span>
+      ${i.slots.length?"":`<button class="yes" data-yes>delete</button>`}<button data-no>keep</button></div>`:""}
+  </div>`).join("");
+  $$(".tile").forEach(t=>{
+    const name=t.dataset.name;
+    t.addEventListener("click",async e=>{
+      const k=e.target.closest("[data-k]");
+      if(k){e.stopPropagation();if(await api("/api/face/assign",{slot:k.dataset.k,name}).catch(()=>null))toast(`${k.dataset.k} ← ${name}`);return refresh(true);}
+      if(e.target.closest("[data-del]")){confirming=name;return renderLib();}
+      if(e.target.closest("[data-no]")){confirming=null;return renderLib();}
+      if(e.target.closest("[data-yes]")){confirming=null;if(sel===name)sel=null;
+        await api("/api/face/delete",{name}).then(()=>toast("deleted "+name)).catch(()=>null);return refresh(true);}
+      sel=sel===name?null:name; render();
+      if(sel) $("#status").innerHTML=`<b>${esc(sel)}</b> picked · click a slot to put it there · Esc to drop it`;
+    });
+  });
+}
+
+function render(){
+  renderSlots(); renderLib();
+  if(!sel) $("#status").textContent="JUDY picks up a swap within 2 seconds.";
+}
+
+async function refresh(force){
+  let j; try{j=await (await fetch("/api/face/library")).json();}catch(_){return;}
+  const s=JSON.stringify(j);
+  if(!force&&s===sig)return;
+  sig=s; S=j;
+  if(sel&&!S.library.some(i=>i.name===sel))sel=null;
+  render();
+}
+
+/* the library drop zone + picker */
+const dz=$("#libDrop"), pk=$("#picker");
+dz.onclick=()=>pk.click();
+dz.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pk.click();}};
+pk.onchange=async()=>{const n=(await upload([...pk.files])).length;pk.value="";if(n)toast(`${n} added to the library`);refresh(true);};
+dz.addEventListener("dragover",e=>{e.preventDefault();dz.classList.add("drop");});
+dz.addEventListener("dragleave",()=>dz.classList.remove("drop"));
+dz.addEventListener("drop",async e=>{e.preventDefault();dz.classList.remove("drop");
+  const n=(await upload([...e.dataTransfer.files])).length;if(n)toast(`${n} added to the library`);refresh(true);});
+/* a stray drop elsewhere must not navigate the tab away */
+window.addEventListener("dragover",e=>e.preventDefault());
+window.addEventListener("drop",e=>e.preventDefault());
+
+$("#shuffle").onclick=async()=>{
+  const slots=STATES.filter(s=>shuffleOn[s]);
+  if(!slots.length)return toast("no slot is checked for shuffle",true);
+  const j=await api("/api/face/shuffle",{slots}).catch(()=>null);
+  if(j)toast("shuffled · "+Object.entries(j.picks).map(([s,n])=>KEY[s]+" "+n).join(" · "));
+  refresh(true);
+};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){sel=null;confirming=null;render();}});
+
+refresh(true);
+setInterval(()=>refresh(false),3000);   /* picks up swaps made from the console or another tab */
+</script>
+</body>
+</html>
