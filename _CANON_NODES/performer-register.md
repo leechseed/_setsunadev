@@ -28,7 +28,7 @@ updated: 2026-09-10 (evening — creator-case nodes published; Siswet · Variety
 
 **What it is.** Every performer Chief has written down as admired — adult performers, e-girls, creators, idols, whoever comes next — merged from nine lists spanning 2022 → 2025 plus the names Chief speaks into it (source S) and deduplicated on name. **Scope ruled 9/9:** this is not a female-adult-star list. Adult performer is one lane of the register, and any sex rides in the same table on the same ranking; the men were already in it (the creator case studies, most of the gooner lane) and are now in it on purpose. Ranked by how many lists a name appears on: recurrence is the ranking Chief never wrote down. Sibling of the [film register](film-register.md), same merge-and-core method.
 
-**Counts.** 159 names (4 actors added 10/1, lane A) · **21 in the stable core** (on four or more lists) · lanes: 107 performers · 17 e-girls · 30 creators · 1 other · sex: 125 F · 9 M · 3 T · 1 NB · 1 pair · 16 unestablished · 90 of the names exist as performers in Stash (count as of 9/10 evening; the 9/10 list's 15 not checked).
+**Counts.** 163 names (4 actors added 10/1, lane A · 4 added 10/3 by subreddit, lanes A + O) · **21 in the stable core** (on four or more lists) · lanes: 107 performers · 17 e-girls · 30 creators · 1 other · sex: 125 F · 9 M · 3 T · 1 NB · 1 pair · 16 unestablished · 90 of the names exist as performers in Stash (count as of 9/10 evening; the 9/10 list's 15 not checked).
 
 **Lanes.** **P** adult performer (the admired roster, any sex) · **E** e-girl (the 2023 "Greatest Egirls of All Time" roster, influence order noted) · **A** actor, mainstream film and TV (added 10/1: an inspiration for a character or a performance; the note names the role and the film, the film itself lives in [[film-register]]) · **C** creator case study (2023 journal: Pornhub channels read as business cases, Chief's notes verbatim; widened 9/10 to the solo creators Chief names as BOLO 24 models — how they started, how they monetize) · **O** other performer (idol, dancer, athlete — the lane the widened scope grows into; Lisa Manoban was already here).
 
@@ -213,6 +213,10 @@ Adriana Chechik · Asa Akira · Ava Taylor · Katrina Jade · Nina Hartley · Ri
 | Benicio del Toro | A | M | 1 | S | 2026 | — | — | spoken 10/1: **Alejandro Gillick**, the hitman with the dead family, *Sicario* (2015) — "especially" this one — and *Day of the Soldado* (2018) | — |
 | Emily Blunt | A | F | 1 | S | 2026 | — | — | spoken 10/1 ("the cop lady in the first one"): **Kate Macer**, the FBI agent, *Sicario* (2015) · **Rita Vrataski**, "the Full Metal Bitch" in the exosuit, *Edge of Tomorrow* (2014) ⧗ "that robot movie" read as this; confirm | — |
 | Jeremy Renner | A | M | 1 | S | 2026 | — | — | spoken 10/1: **SSgt William James**, the bomb tech, *The Hurt Locker* (2008) | — |
+| Solomia Maievska | O | F | 1 | S | 2026 | — | — | spoken 10/3: Ukrainian model, given as a fan subreddit (r/SolomiaMaievska); subs in [[subreddit-list]] | — |
+| Chloë Grace Moretz | A | F | 1 | S | 2026 | — | — | spoken 10/3: given as a fan subreddit (r/ChloeGraceMoretzLove); subs in [[subreddit-list]] | — |
+| Cara Delevingne | O | F | 1 | S | 2026 | — | — | spoken 10/3: model and actress, given as a fan subreddit (r/Cara_J_Delevingne); subs in [[subreddit-list]] | — |
+| Anya Taylor-Joy | A | F | 1 | S | 2026 | — | — | spoken 10/3 ("another person that added to the list"): given as a fan subreddit (r/AnyaTaylor_Joy); subs in [[subreddit-list]] | — |
 
 ## The gooner lane (Stash, watched not listed)
 
