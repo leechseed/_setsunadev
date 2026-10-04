@@ -35,9 +35,24 @@
     "slots": {
       "idle": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\idle.gif",
       "listening": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\listening.png",
-      "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.gif",
+      "thinking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\thinking.mp4",
       "talking": "C:\\Users\\U01_LEECHSEED\\Desktop\\_setsunadev\\_tools\\dictation\\faces\\talking.png"
-    }
+    },
+    "pools": {
+      "idle": [
+        "2biia75qqwph1.gif"
+      ],
+      "listening": [
+        "listening.png"
+      ],
+      "thinking": [
+        "k8kcktkwnwrh1.mp4"
+      ],
+      "talking": [
+        "talking.png"
+      ]
+    },
+    "pools_seeded": true
   },
   "chat": {
     "model": "claude-haiku-4-5-20251001"

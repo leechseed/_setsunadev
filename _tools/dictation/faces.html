@@ -59,6 +59,9 @@
   .well span{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding:12px}
   .slot .file{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .slot .file b{color:var(--ink);font-weight:500}
+  .slot .pool{font-family:var(--mono);font-size:10.5px;color:var(--ink-3)}
+  .slot .pool b{color:var(--accent);font-weight:500;margin-right:4px}
+  .slot .pool em{font-style:normal;color:var(--ink-2)}
 
   /* the library */
   .dropzone{border:1.5px dashed var(--line-2);background:var(--panel);padding:22px 16px;text-align:center;margin-bottom:14px;cursor:pointer;transition:border-color .12s}
@@ -101,7 +104,7 @@
 <main>
   <div class="bar">
     <h2>The four states</h2>
-    <span class="lbl">drop a file on a slot · or pick a library tile, then click a slot</span>
+    <span class="lbl">drop a file on a slot · or toggle a tile's state buttons to build each state's pool</span>
     <span class="sp"></span>
     <button class="btn hot" id="shuffle" title="A random library face onto every checked slot">Shuffle</button>
   </div>
@@ -113,7 +116,7 @@
   </div>
   <div class="dropzone" id="libDrop" tabindex="0" role="button">
     <b>Add faces to the library</b>
-    <span>drop PNG · JPG · GIF · WebP · MP4 here, as many as you like, or click to pick · 25 MB each · nothing gets assigned</span>
+    <span>drop PNG · JPG · GIF · WebP · MP4 here, as many as you like, or click to pick · 50 MB each · nothing gets assigned</span>
     <input type="file" id="picker" multiple accept=".png,.gif,.jpg,.jpeg,.webp,.mp4" hidden>
   </div>
   <div class="grid" id="grid"></div>
@@ -139,11 +142,11 @@ async function api(path,body){
 }
 const readFile=f=>new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>ok(fr.result);fr.onerror=no;fr.readAsDataURL(f);});
 
-/* one file per request keeps each body under ~34 MB */
+/* one file per request keeps each body under ~67 MB */
 async function upload(files){
   const saved=[], errs=[];
   for(const f of files){
-    if(f.size>25*1048576){errs.push(f.name+": over 25 MB");continue;}
+    if(f.size>50*1048576){errs.push(f.name+": over 50 MB");continue;}
     try{const j=await api("/api/face/library",{files:[{name:f.name,data:await readFile(f)}]});saved.push(...j.saved);}
     catch(e){errs.push(e.message);}
   }
@@ -164,6 +167,7 @@ function renderSlots(){
         <label title="include in Shuffle"><input type="checkbox" data-sh="${s}" ${shuffleOn[s]?"checked":""}>shuffle</label></div>
       <div class="well">${v.url?media(v.url,v.file,`${s} face`):`<span>empty · drop a file here</span>`}</div>
       <div class="file">${v.pick?`<b>${esc(v.pick)}</b>`:v.file?`<b>${esc(v.file)}</b> <span style="color:var(--ink-3)">· not in library</span>`:"—"}</div>
+      <div class="pool">${(v.pool||[]).length>1?`<b>pool · ${v.pool.length}</b> JUDY picks one each time she goes ${s}`:`pool · ${(v.pool||[]).length} · add more with the <em>${KEY[s]}</em> button on a tile`}</div>
     </div>`;}).join("");
   $$(".slot").forEach(el=>{
     const slot=el.dataset.slot;
@@ -192,7 +196,7 @@ function renderLib(){
   $("#grid").innerHTML=L.map(i=>`<div class="tile${sel===i.name?" sel":""}" data-name="${esc(i.name)}" title="click, then click a slot">
     <div class="well">${media(i.url,i.name,"")}</div>
     <div class="meta"><div>${esc(i.name)}</div><small>${mb(i.size)}${i.slots.length?" · on "+i.slots.join(", "):""}</small></div>
-    <div class="acts">${STATES.map(s=>`<button class="k${i.slots.includes(s)?" on":""}" data-k="${s}" title="put on ${s}">${KEY[s]}</button>`).join("")}
+    <div class="acts">${STATES.map(s=>`<button class="k${(i.pools||[]).includes(s)?" on":""}" data-k="${s}" title="${(i.pools||[]).includes(s)?"take out of":"add to"} the ${s} pool">${KEY[s]}</button>`).join("")}
       <span class="sp"></span><button class="del" data-del>delete</button></div>
     ${confirming===i.name?`<div class="confirm"><span>${i.slots.length?"on "+i.slots.join(", ")+" · swap off first":"delete for good?"}</span>
       ${i.slots.length?"":`<button class="yes" data-yes>delete</button>`}<button data-no>keep</button></div>`:""}
@@ -201,7 +205,8 @@ function renderLib(){
     const name=t.dataset.name;
     t.addEventListener("click",async e=>{
       const k=e.target.closest("[data-k]");
-      if(k){e.stopPropagation();if(await api("/api/face/assign",{slot:k.dataset.k,name}).catch(()=>null))toast(`${k.dataset.k} ← ${name}`);return refresh(true);}
+      if(k){e.stopPropagation();const s=k.dataset.k,on=!k.classList.contains("on");
+        if(await api("/api/face/pool",{slot:s,name,on}).catch(()=>null))toast(on?`${name} → ${s} pool`:`${name} out of the ${s} pool`);return refresh(true);}
       if(e.target.closest("[data-del]")){confirming=name;return renderLib();}
       if(e.target.closest("[data-no]")){confirming=null;return renderLib();}
       if(e.target.closest("[data-yes]")){confirming=null;if(sel===name)sel=null;

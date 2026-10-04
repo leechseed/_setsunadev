@@ -28,6 +28,7 @@ import io
 import json
 import os
 import queue
+import random
 import sys
 import threading
 import time
@@ -43,6 +44,7 @@ import speak  # noqa: E402
 
 JUDY = os.path.join(HERE, "judy.json")
 POS = os.path.join(HERE, "_facepos.json")
+LIB = os.path.join(HERE, "faces", "library")    # the face deck's library (10/4 pools read from here)
 STATES = ("idle", "listening", "thinking", "talking")
 
 
@@ -86,6 +88,9 @@ class Face:
         self._sig = None    # (path, mtime) per slot, so a swap in the console reloads live
         self._anim = None
         self._frame = 0
+        self.pools = {}     # state -> [library paths]; two or more and JUDY picks one each time she enters it
+        self.cache = {}     # library path -> [[PIL or PhotoImage, ms]], filled off-thread
+        self._last = {}     # state -> the pool face shown last time, so a pick never repeats back to back
         self._load()
         if not self.img:
             raise RuntimeError("no faces registered — drop PNGs or GIFs in the console's Face panel")
@@ -108,13 +113,64 @@ class Face:
         slots = (cfg().get("face", {}) or {}).get("slots", {}) or {}
         return {s: slots.get(s) for s in STATES}
 
-    def _signature(self, slots):
-        return tuple((s, p, os.path.getmtime(p) if p and os.path.exists(p) else None)
-                     for s, p in sorted(slots.items()))
+    def _pools(self):
+        """10/4: each state's pool of library faces (names in faces/library/); JUDY picks one per entry."""
+        pools = (cfg().get("face", {}) or {}).get("pools", {}) or {}
+        out = {}
+        for s in STATES:
+            paths = [os.path.join(LIB, n) for n in (pools.get(s) or [])]
+            out[s] = [q for q in paths if os.path.exists(q)]
+        return out
+
+    def _signature(self, slots, pools=None):
+        pools = self._pools() if pools is None else pools
+        sig = lambda p: (p, os.path.getmtime(p) if p and os.path.exists(p) else None)
+        return (tuple((s, *sig(p)) for s, p in sorted(slots.items())),
+                tuple((s, tuple(sig(q) for q in qs)) for s, qs in sorted(pools.items())))
+
+    def _decode(self, p):
+        """Any face file -> [(PIL RGB image at the face size, ms)]. GIF/WebP keep every frame; MP4 via OpenCV.
+        300 frames at most. Pure PIL, so it runs off the Tk thread."""
+        from PIL import Image, ImageSequence
+
+        n = self.size
+        if p.lower().endswith(".mp4"):
+            import cv2
+            cap = cv2.VideoCapture(p)
+            try:
+                fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
+                step = max(1, round(fps / 30.0))          # a 60 fps clip keeps every second frame
+                ms = max(20, int(1000.0 * step / fps))
+                frames, i = [], 0
+                while len(frames) < 300:
+                    ok, bgr = cap.read()
+                    if not ok:
+                        break
+                    i += 1
+                    if (i - 1) % step:
+                        continue
+                    im = Image.fromarray(cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB))
+                    im.thumbnail((n, n), Image.LANCZOS)   # keep the aspect, letterbox
+                    bg = Image.new("RGB", (n, n), (15, 18, 22))
+                    bg.paste(im, ((n - im.width) // 2, (n - im.height) // 2))
+                    frames.append((bg, ms))
+                return frames
+            finally:
+                cap.release()
+        src = Image.open(p)
+        frames = []
+        for fr in ImageSequence.Iterator(src):
+            im = fr.convert("RGBA").resize((n, n), Image.LANCZOS)
+            bg = Image.new("RGBA", im.size, (15, 18, 22, 255))
+            ms = max(20, int(fr.info.get("duration", src.info.get("duration", 80)) or 80))
+            frames.append((Image.alpha_composite(bg, im).convert("RGB"), ms))
+            if len(frames) >= 300:
+                break
+        return frames
 
     def _load(self):
-        """Read every slot. A GIF (or animated WebP) keeps all its frames, capped at 300."""
-        from PIL import Image, ImageSequence, ImageTk
+        """Read every slot now (Tk images); decode the pools in the background."""
+        from PIL import ImageTk
 
         slots = self._slots()
         img = {}
@@ -122,57 +178,45 @@ class Face:
             if not (p and os.path.exists(p)):
                 continue
             try:
-                if p.lower().endswith(".mp4"):
-                    frames = self._load_mp4(p)
-                    if frames:
-                        img[s] = frames
-                    continue
-                src = Image.open(p)
-                frames = []
-                for fr in ImageSequence.Iterator(src):
-                    im = fr.convert("RGBA").resize((self.size, self.size), Image.LANCZOS)
-                    bg = Image.new("RGBA", im.size, (15, 18, 22, 255))
-                    ms = max(20, int(fr.info.get("duration", src.info.get("duration", 80)) or 80))
-                    frames.append((ImageTk.PhotoImage(Image.alpha_composite(bg, im)), ms))
-                    if len(frames) >= 300:
-                        break
+                frames = [(ImageTk.PhotoImage(im), ms) for im, ms in self._decode(p)]
                 if frames:
                     img[s] = frames
             except Exception as e:  # a bad upload must not take the face down
                 print(f"face[{s}]: could not read {p}: {e}", file=sys.stderr)
         if img:
             self.img = img
-        self._sig = self._signature(slots)
+        pools = self._pools()
+        self.pools = pools
+        self._sig = self._signature(slots, pools)
+        want = {q for qs in pools.values() for q in qs}
+        for q in list(self.cache):
+            if q not in want:
+                self.cache.pop(q, None)
+        todo = [q for q in want if q not in self.cache]
+        if todo:
+            threading.Thread(target=self._decode_pool, args=(todo,), daemon=True).start()
 
-    def _load_mp4(self, p):
-        """An MP4 face (10/4): OpenCV decodes it, sound dropped, ~30 fps max, the same 300-frame cap."""
-        import cv2
-        from PIL import Image, ImageTk
+    def _decode_pool(self, paths):
+        for q in paths:
+            try:
+                fr = self._decode(q)
+                if fr:
+                    self.cache[q] = [list(f) for f in fr]   # PIL now; the Tk thread swaps in PhotoImages as it plays
+            except Exception as e:
+                print(f"face pool: could not read {q}: {e}", file=sys.stderr)
 
-        cap = cv2.VideoCapture(p)
-        try:
-            fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
-            step = max(1, round(fps / 30.0))          # a 60 fps clip keeps every second frame
-            ms = max(20, int(1000.0 * step / fps))
-            frames, i = [], 0
-            while len(frames) < 300:
-                ok, bgr = cap.read()
-                if not ok:
-                    break
-                i += 1
-                if (i - 1) % step:
-                    continue
-                im = Image.fromarray(cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB))
-                im.thumbnail((self.size, self.size), Image.LANCZOS)   # keep the aspect, letterbox
-                bg = Image.new("RGB", (self.size, self.size), (15, 18, 22))
-                bg.paste(im, ((self.size - im.width) // 2, (self.size - im.height) // 2))
-                frames.append((ImageTk.PhotoImage(bg), ms))
-            return frames
-        finally:
-            cap.release()
+    def _pick(self, state):
+        """A pool of two or more: a random ready face, never the last one twice. Else the slot face."""
+        ready = [q for q in self.pools.get(state, []) if q in self.cache]
+        if len(self.pools.get(state, [])) < 2 or not ready:
+            return self.img.get(state) or self.img.get("idle") or []
+        choice = [q for q in ready if q != self._last.get(state)] or ready
+        q = random.choice(choice)
+        self._last[state] = q
+        return self.cache[q]
 
     def _watch(self):
-        """Poll judy.json + the slot files; reload when the console swaps one."""
+        """Poll judy.json + the slot and pool files; reload when the console swaps one."""
         try:
             if self._signature(self._slots()) != self._sig:
                 self._load()
@@ -222,14 +266,20 @@ class Face:
         if self._anim:
             self.root.after_cancel(self._anim)
             self._anim = None
-        self._frames = self.img.get(state) or self.img.get("idle") or []
+        self._frames = self._pick(state)
         self._frame = 0
         self._show()
 
     def _show(self):
         if not self._frames:
             return
-        im, ms = self._frames[self._frame]
+        fr = self._frames[self._frame]
+        im, ms = fr
+        from PIL import Image, ImageTk
+        if isinstance(im, Image.Image):                 # a pool frame still in PIL: convert once, keep it
+            im = ImageTk.PhotoImage(im)
+            if isinstance(fr, list):
+                fr[0] = im
         self.label.configure(image=im)
         self.label.image = im
         if len(self._frames) > 1:

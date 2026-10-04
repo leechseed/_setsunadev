@@ -49,7 +49,7 @@ PAGE = os.path.join(HERE, "console.html")
 DECK = os.path.join(HERE, "faces.html")          # the face deck (10/4)
 LIB = os.path.join(FACES, "library")             # every saved face; the slots are copies out of it
 FACE_EXTS = ("png", "gif", "jpg", "jpeg", "webp", "mp4")   # mp4 since 10/4: JUDY decodes it with cv2
-FACE_CAP = 25 * 1024 * 1024                      # per file
+FACE_CAP = 50 * 1024 * 1024                      # per file (50 MB since 10/4, Chief)
 FACE_LOCK = threading.Lock()                     # one writer at a time on the slots + judy.json
 
 sys.path.insert(0, HERE)
@@ -76,7 +76,8 @@ JUDY_DEFAULTS = {
               "eleven_settings": {"stability": 0.4, "similarity_boost": 0.75,
                                   "style": 0.35, "use_speaker_boost": True,
                                   "speed": 1.0}},
-    "face": {"slots": {s: None for s in STATES}},
+    "face": {"slots": {s: None for s in STATES},
+             "pools": {s: [] for s in STATES}},   # 10/4: library names per state; JUDY picks one on each entry
     "chat": {"model": "claude-haiku-4-5-20251001"},
     "wire": {"mode": "mcp", "server": "_tools/dictation/wire.py"},
     "session": {"reader": "script", "max_sentences": 12, "acks": True},
@@ -452,10 +453,27 @@ def _same(a, b):
         return False
 
 
+def pools_seed(judy, names, paths):
+    """First run of the pools (10/4): each state's pool starts as its current face, so nothing changes."""
+    if (judy.get("face") or {}).get("pools_seeded"):
+        return judy
+    for s in STATES:
+        pick = next((n for n in names if paths[s] and _same(paths[s], os.path.join(LIB, n))), None)
+        if pick and pick not in judy["face"]["pools"][s]:
+            judy["face"]["pools"][s].append(pick)
+    judy["face"]["pools_seeded"] = True
+    write_json(JUDY, judy)
+    return judy
+
+
 def lib_state():
     lib_seed()
     judy = read_json(JUDY, JUDY_DEFAULTS)
     paths = {s: slot_path(judy, s) for s in STATES}
+    names = sorted(n for n in os.listdir(LIB) if n.rsplit(".", 1)[-1].lower() in FACE_EXTS)
+    with FACE_LOCK:
+        judy = pools_seed(judy, names, paths)
+    pools = {s: [n for n in judy["face"]["pools"][s] if n in names] for s in STATES}
     items = []
     for e in sorted(os.scandir(LIB), key=lambda e: e.name.lower()):
         if not e.is_file() or e.name.rsplit(".", 1)[-1].lower() not in FACE_EXTS:
@@ -463,12 +481,14 @@ def lib_state():
         st = e.stat()
         items.append({"name": e.name, "size": st.st_size, "mtime": int(st.st_mtime),
                       "url": f"/face/library/{quote(e.name)}?v={st.st_mtime_ns}",
-                      "slots": [s for s, p in paths.items() if p and _same(p, e.path)]})
+                      "slots": [s for s, p in paths.items() if p and _same(p, e.path)],
+                      "pools": [s for s in STATES if e.name in pools[s]]})
     slots = {}
     for s, p in paths.items():
         slots[s] = {"file": os.path.basename(p) if p else None,
                     "url": f"/face/{s}?v={os.stat(p).st_mtime_ns}" if p else None,
-                    "pick": next((i["name"] for i in items if s in i["slots"]), None)}
+                    "pick": next((i["name"] for i in items if s in i["slots"]), None),
+                    "pool": pools[s]}
     return {"library": items, "slots": slots, "states": STATES}
 
 
@@ -483,7 +503,7 @@ def lib_add(files):
             if not raw:
                 raise ValueError(f"{name}: empty")
             if len(raw) > FACE_CAP:
-                raise ValueError(f"{name}: {len(raw) // 1048576} MB is over the 25 MB cap")
+                raise ValueError(f"{name}: {len(raw) // 1048576} MB is over the 50 MB cap")
             if not (raw.startswith(_MAGIC) or (raw[:4] == b"RIFF" and raw[8:12] == b"WEBP") or raw[4:8] == b"ftyp"):
                 raise ValueError(f"{name}: not a PNG, GIF, JPG, WebP or MP4 inside")
             with FACE_LOCK:
@@ -498,8 +518,8 @@ def lib_add(files):
     return saved, errors
 
 
-def face_assign(slot, name):
-    """Copy a library face onto faces/<slot>.<ext> and point judy.json at it."""
+def face_assign(slot, name, pool=True):
+    """Copy a library face onto faces/<slot>.<ext> and point judy.json at it (and into that state's pool)."""
     if slot not in STATES:
         raise ValueError(f"unknown slot {slot!r}")
     src = lib_file(name)
@@ -515,6 +535,8 @@ def face_assign(slot, name):
             os.remove(tmp)
         judy = read_json(JUDY, JUDY_DEFAULTS)
         judy["face"]["slots"][slot] = dst
+        if pool and name not in judy["face"]["pools"][slot]:
+            judy["face"]["pools"][slot].append(name)
         write_json(JUDY, judy)
         for other in FACE_EXTS:           # one file per slot: drop the other-extension siblings
             sib = os.path.join(FACES, f"{slot}.{other}")
@@ -527,6 +549,25 @@ def face_assign(slot, name):
     return dst
 
 
+def face_pool(slot, name, on):
+    """Put a library face into a state's pool, or take it out. The slot shows a pool member."""
+    if slot not in STATES:
+        raise ValueError(f"unknown slot {slot!r}")
+    lib_file(name)
+    if on:
+        return face_assign(slot, name)
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        pool = [n for n in judy["face"]["pools"][slot] if n != name]
+        judy["face"]["pools"][slot] = pool
+        write_json(JUDY, judy)
+    LOG.append(f"— face pool[{slot}] -{name}")
+    cur = slot_path(judy, slot)
+    if pool and cur and _same(cur, os.path.join(LIB, name)):
+        face_assign(slot, pool[0], pool=False)      # the slot keeps showing someone from the pool
+    return None
+
+
 def face_delete(name):
     p = lib_file(name)
     judy = read_json(JUDY, JUDY_DEFAULTS)
@@ -534,6 +575,11 @@ def face_delete(name):
     if on:
         raise ValueError(f"{name} is on the {' and '.join(on)} slot — swap it off first")
     os.remove(p)
+    with FACE_LOCK:
+        judy = read_json(JUDY, JUDY_DEFAULTS)
+        for s in STATES:
+            judy["face"]["pools"][s] = [n for n in judy["face"]["pools"][s] if n != name]
+        write_json(JUDY, judy)
     LOG.append(f"— face library -{name}")
 
 
@@ -548,9 +594,10 @@ def face_shuffle(slots):
         raise ValueError("the library is empty — add a face first")
     picks = {}
     for s in slots:
-        pool = [n for n in names if n != st["slots"][s]["pick"]] or names
+        src = st["slots"][s]["pool"] if len(st["slots"][s]["pool"]) >= 2 else names
+        pool = [n for n in src if n != st["slots"][s]["pick"]] or src
         picks[s] = random.choice(pool)
-        face_assign(s, picks[s])
+        face_assign(s, picks[s], pool=False)
     return picks
 
 
@@ -732,6 +779,10 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/face/assign":
                 dst = face_assign(b.get("slot"), b.get("name"))
                 return self._send(200, {"ok": True, "slot": b.get("slot"), "file": os.path.basename(dst)})
+
+            if path == "/api/face/pool":
+                face_pool(b.get("slot"), b.get("name"), bool(b.get("on")))
+                return self._send(200, {"ok": True})
 
             if path == "/api/face/delete":
                 face_delete(b.get("name"))
