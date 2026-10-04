@@ -1,10 +1,10 @@
 ---
 type: ssot_01_narrative_frameworks
 category: medium_grammars
-version: 1.0.0
-last_updated: 2026-08-26
+version: 1.1.0
+last_updated: 2026-10-04
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
-status: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass
+status: "v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: mode row added. v1.0.0: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass"
 purpose: "THE MEDIUM GRAMMARS — the channel contracts: how each medium re-instruments the texture layer and constrains the ladder. Lattice limb 4 of 4; completes the lattice."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_texture_layer", "ssot_03_setting_system"]
 trunk: BLACK (ORANGE rows ride the subsidiary firewall — craft grammar only in this public doc)
@@ -89,6 +89,19 @@ Live co-presence: duration is mostly scene-speed (T4 cannot cut), setting is phy
 
 ---
 
+## MODE · a fence around genre, listed per medium
+
+**Mode** (animation, documentary, mini-series, and the like) is a fence around genre, listed per medium, never a G-layer. Mode changes how a genre is made and sold, not what it owes the reader. The genre system (`ssot_01_genre_system`) does not hold mode; this doc does. Selbo fences mode off from genre ([[BVX.0576]]).
+
+| Medium | Modes listed here |
+|---|---|
+| M1 Prose | none listed yet |
+| M2 Film | animation · documentary |
+| M3 TV / serial | mini-series · animation · documentary series |
+| M4-M10 | none listed yet; add a mode when a work needs one |
+
+---
+
 ## MEDIUM × LIBRARY
 
 `feeds:` for this limb: McErlean 0126 → the transmedia law · Bowen 1042 + Kenworthy 0138/1053/1054 → M2 · Mittell 0565 → M3 · Berger 0093/0404, Breault 0534, Despain 0498, Paterson 0144, Finley 0104 → M4 · GURPS 0447, Kobold 0458/0541, Kennedy 0349 → M5 · Aronson 0188, Frayne 0228, Fink 0092 → M2 notation · PRF shelf → M10.
@@ -104,4 +117,5 @@ Live co-presence: duration is mostly scene-speed (T4 cannot cut), setting is phy
 
 ## Version history
 
+- **1.1.0 — 2026-10-04.** RULED, Chief ("rec"), BOLO 100 genre batch 1 (genre OPEN 6): the MODE section added. Mode is a fence around genre, listed per medium, never a G-layer. No grammar change.
 - **1.0.0 — 2026-08-26.** Module 4, completing the lattice: the channel-contract law, ten medium grammars (three as v1 scaffolds pending BOLO 16), library keying, ORANGE rows firewalled to craft grammar.
