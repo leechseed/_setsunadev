@@ -1,10 +1,10 @@
 ---
 type: ssot_01_narrative_frameworks
 category: medium_grammars
-version: 1.1.0
+version: 1.2.0
 last_updated: 2026-10-04
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
-status: "v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: mode row added. v1.0.0: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass"
+status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: per-medium texture table added (T3 order, T4 speed, T10 narratee). v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: mode row added. v1.0.0: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass"
 purpose: "THE MEDIUM GRAMMARS — the channel contracts: how each medium re-instruments the texture layer and constrains the ladder. Lattice limb 4 of 4; completes the lattice."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_texture_layer", "ssot_03_setting_system"]
 trunk: BLACK (ORANGE rows ride the subsidiary firewall — craft grammar only in this public doc)
@@ -89,6 +89,25 @@ Live co-presence: duration is mostly scene-speed (T4 cannot cut), setting is phy
 
 ---
 
+## TEXTURE BY MEDIUM · T3, T4, T10 per channel
+
+Each channel changes three texture answers most. The cells restate the grammars above in one phrase each; the texture system's T11 field points here.
+
+| Medium | T3 order | T4 speed | T10 narratee |
+|---|---|---|---|
+| M1 Prose | free; any anachrony by sentence | fully elastic; a sentence holds a year | implied reader; narratee optional in text |
+| M2 Film | made by the cut | the edit: cut is ellipsis, long take is stretch | the viewer; addressed only by VO |
+| M3 TV / serial | per episode, plus "previously on" repeats | film speed, with gaps between installments | the series audience, via series voice and paratext |
+| M4 Games | topology: quest order the player varies | player-paced; mechanics set the gait | collapsed: narratee is the player |
+| M5 TTRPG | emergent: the table sets sequence live | table-paced; the GM stretches or cuts | the table, addressed live by the GM |
+| M6 Music video | compressed to song length | dictated by the track's beat grid | the viewer of the track |
+| M7 Social / short-form | hook first; the whole container is R1/R2 | seconds-scale; retention decides each second | the follower of the creator-persona |
+| M8 PMV / HMV | escalation order cut to the beat grid | the edit escalates with the track | the viewer, addressed by the curated edit |
+| M9 Porn (live-action) | conventional escalation arc | scene-speed; the viewer scrubs | direct address, normalized |
+| M10 Theatre | act order fixed, played live | scene-speed; cannot cut | direct address, an honored tradition |
+
+---
+
 ## MODE · a fence around genre, listed per medium
 
 **Mode** (animation, documentary, mini-series, and the like) is a fence around genre, listed per medium, never a G-layer. Mode changes how a genre is made and sold, not what it owes the reader. The genre system (`ssot_01_genre_system`) does not hold mode; this doc does. Selbo fences mode off from genre ([[BVX.0576]]).
@@ -111,11 +130,12 @@ Live co-presence: duration is mostly scene-speed (T4 cannot cut), setting is phy
 ## OPEN
 
 - **BOLO 16 deepening pass** — M6/M7/M8 scaffolds → sourced grammar.
-- **Per-medium Telling Profile variants** — the profile template (Module 3) gains a medium field when first non-prose OXO artifact opens.
+- **Per-medium texture variants** — built in 1.2.0 (the table above); closed.
 - **Bongobabe grammar debt** — M4's duration-grammar reading of the clicker loop; feeds registry §8 art/loop decisions.
 - **Theatre shelf** — thin; grows only on demand.
 
 ## Version history
 
+- **1.2.0 — 2026-10-04.** RULED, Chief ("REC"), BOLO 100 texture batch 1 (texture T9): the TEXTURE BY MEDIUM table added, rows M1–M10, columns T3 order, T4 speed, T10 narratee. Closes the layer doc's "Module 4" deferral. No grammar change.
 - **1.1.0 — 2026-10-04.** RULED, Chief ("rec"), BOLO 100 genre batch 1 (genre OPEN 6): the MODE section added. Mode is a fence around genre, listed per medium, never a G-layer. No grammar change.
 - **1.0.0 — 2026-08-26.** Module 4, completing the lattice: the channel-contract law, ten medium grammars (three as v1 scaffolds pending BOLO 16), library keying, ORANGE rows firewalled to craft grammar.

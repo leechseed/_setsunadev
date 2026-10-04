@@ -1,10 +1,11 @@
 ---
 type: ssot_01_narrative_frameworks
 category: texture_layer
-version: 1.0.0
-last_updated: 2026-08-26
+version: 1.0.1
+last_updated: 2026-10-04
+module_of: ssot_01_texture_system
 applies_to: [OVEREXITOUT, all future IPs, BVX-LEARN keying]
-status: canonical — Module 3 of the lattice, delivered on Chief's clear 2026-08-26
+status: "v1.0.1 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: stamped module_of ssot_01_texture_system; pointer to T11, T12 and the sub-fields; naming OPEN closed. v1.0.0: canonical — Module 3 of the lattice, delivered on Chief's clear 2026-08-26"
 purpose: "THE TEXTURE LAYER — the discourse side of narrative: the critical-writing categories (narratology) organized as the Ten Questions of the Telling, the craft-term translation grid, and the TELLING PROFILE instrument. Lattice limb 3 of 4."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_03_setting_system (scene card)"]
 trunk: BLACK
@@ -103,6 +104,8 @@ T9 frames:    metalepsis policy (permitted? never?)
 T10 aimed at: narratee construction
 ```
 
+**Pointer:** T11 MEDIUM, T12 FUNCTION, and the T2 sub-fields live in [📐 ssot_01_texture_system.md](📐%20ssot_01_texture_system.md), which carries the full twelve-field profile. This doc keeps the ten-field original.
+
 **Scene card wiring:** the card gains a `telling:` line (T1+T2+T4 for that scene) — the per-scene override of the profile.
 
 **House finding, flagged:** **OXO has no ruled Telling Profile.** No prose exists (`outliers.fdx` empty), so the entire discourse configuration — whose voice, who focalizes, what the movements' paratext apparatus is — is an *unmade decision set*. This module hands Chief the decision menu; the profile is a rulable artifact whenever OXO prose opens.
@@ -118,10 +121,11 @@ T10 aimed at: narratee construction
 ## OPEN
 
 - **The OXO Telling Profile** — unruled; fires when OXO prose opens (or on Chief's call sooner).
-- **The Ten Questions naming** (T1–T10) — house coinage, awaiting ruling.
+- **The Ten Questions naming** (T1–T10) — ruled 9/16 in the texture system (OPEN 2); closed.
 - **Genette/Booth acquisitions** → BVX.1107+ queue.
-- Per-medium texture variants (game narration, PMV editing grammar as T3/T4 in video) → Module 4.
+- Per-medium texture variants (game narration, PMV editing grammar as T3/T4 in video) — built in medium grammars 1.2.0; closed.
 
 ## Version history
 
+- **1.0.1 — 2026-10-04.** BOLO 100 texture batch 1. Stamped `module_of: ssot_01_texture_system`. Pointer added to T11, T12, and the sub-fields in the system doc. Naming OPEN and per-medium OPEN closed. No change to the ten questions.
 - **1.0.0 — 2026-08-26.** Module 3 of the lattice: story/discourse frame, the Ten Questions taxonomy, craft translation grid, TELLING PROFILE instrument, scene-card `telling:` line, gaps queued.
