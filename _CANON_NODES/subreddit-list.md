@@ -11,7 +11,7 @@ captured: 2026-10-03
 
 **What it is.** These are Reddit subreddits that are each about one person. Chief gave four on 10/3 (Solomia Maievska · Chloë Grace Moretz · Cara Delevingne · Anya Taylor-Joy). The rest were found by working out from those four.
 
-**The sheet (10/4):** https://claude.ai/artifact/Rd6NSrhxuihbBvaWDfCxSU, built from this file. Each sub opens in a new tab, and a seen box remembers your place.
+**The sheet (10/4):** https://claude.ai/artifact/Rd6NSrhxuihbBvaWDfCxSU, built from this file plus `_tools/subsheet/extra.json` (AI · NSFW AI · gooning · BBC, 166 subs) by `_tools/subsheet/build.py`. Since v3 it is a keep-or-cut ballot: checked = keep, unchecked = cut; the checks live in the artifact's db, collection `keep`, so Claude reads them back.
 
 **How it was pulled.** Reddit blocks this machine with a 403 error. The data comes from **PullPush**, a public archive of Reddit posts (api.pullpush.io).
 - **Register check:** the archive was asked for each register name's subreddit by its likely spelling.
@@ -82,6 +82,7 @@ Every sub below was seen in the archive, so every name is a real subreddit. **La
 | Halle Von | Instagram model | [r/HalleVon](https://www.reddit.com/r/HalleVon/) | 1 |
 | Wendy Fiore | Instagram model | [r/WendyFiore4](https://www.reddit.com/r/WendyFiore4/) | 1 |
 | Jordan Carver | German glamour model | [r/JordanCarver](https://www.reddit.com/r/JordanCarver/) | 1 |
+| Emily Bloom | glamour + OnlyFans model (added 10/4, Chief) | [r/EmilyBloom](https://www.reddit.com/r/EmilyBloom/) | 228K members, alive Oct |
 
 ## Discovered — actresses
 
