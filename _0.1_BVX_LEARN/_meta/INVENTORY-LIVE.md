@@ -16,8 +16,8 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | Top-level items | **9130** |
 | With a PDF attachment | 9130 |
 | PDF present on disk | 9039 |
-| Already in catalog.json (BVX id) | 1022 |
-| **New since the Dec-2023 catalog** | **8108** |
+| Already in catalog.json (BVX id) | 1026 |
+| **New since the Dec-2023 catalog** | **8104** |
 | Story-side (CRE + LIT by catalog) | 660 |
 | **Spine-keyed from Chief's tags** | **909** |
 | With PDF annotations | 5 (375 highlights) |
@@ -106,7 +106,7 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 11_ETC | 1 |
 | paratext | 1 |
 
-## New since the catalog (8108)
+## New since the catalog (8104)
 
 | Year | Title | Author | Tags |
 |---|---|---|---|
@@ -3013,7 +3013,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Fire Mountain - Throne of Night Book 2 - The Earth's Wound |  |  |
 |  | Firearm Fanciness |  |  |
 |  | Firearms Design Worksheet |  |  |
-|  | First Principles of Instruction | M. David Merrill |  |
 |  | First Step Pistol |  |  |
 |  | First Steps, Part I - In Service to Lore |  |  |
 |  | First Steps, Part II - To Delve the Dungeon Deep |  |  |
@@ -3512,7 +3511,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Houserule Handbooks - Spellpoints Expansion |  |  |
 |  | How Can I Pay for PrEP? |  |  |
 |  | How Fiction Works | James Wood |  |
-|  | How Learning Works Seven Research-Based Principles for Smart Teaching | Ambrose, Susan A. |  |
 |  | How To Be A GURPS GM |  |  |
 |  | How to Create History An Authors Guide to Creating Histories, Myths, a | A. Trevena |  |
 |  | How to Draw Fantasy Females Create Sexy Cyberpunks, Seductive Supergir |  |  |
@@ -4358,7 +4356,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 | 2022 | Minecraft basics | Stay, Stay, Stay |  |
 |  | Minecraft Guide to Survival | Mojang AB, The Official Minecr |  |
 |  | Minecraft Guide to Survival (Updated) | Mojang AB, The Official Minecr |  |
-|  | Minimalism Beyond the Nurnberg Funnel | John M. Carroll |  |
 |  | MINING AND INDUSTRIAL SPACECRAFT TM | Pulver, Vetromile, Barrett, Mi |  |
 |  | Minotaur Games - Monster Focus - Ghouls |  |  |
 |  | Minotaur Games - Monster Focus - Gravelings |  |  |
@@ -4451,7 +4448,6 @@ Read from a copy of the live `zotero.sqlite`. Data written to `inventory-live.js
 |  | Moving Averages |  |  |
 |  | Multiman |  |  |
 |  | multimedia forms v001 7142023 |  |  |
-|  | Multimedia Learning | Richard E. Mayer |  |
 |  | Mummy's Mask - 01 - The Half-Dead City |  |  |
 |  | Mummy's Mask - 01 - The Half-Dead City - Interactive Maps |  |  |
 |  | Mummy's Mask - 02 - Empty Graves |  |  |
