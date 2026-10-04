@@ -1,7 +1,7 @@
 ---
 type: ssot_08_tracking_systems
 category: tracking_system
-version: 1.1.0
+version: 1.1.1
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: proportion lane in §7 (act and third shares, 25/50/25 default) and a reversibility score on stakes_delta. Earlier: v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: theme and trope hooks, tempo and meter shapes, time-code ordering, reader track in the map, open steps closed. Earlier: 0.3.0 reader model (9A); 0.2.0 sequence segment, iterative fields, provisional cables."
@@ -256,6 +256,8 @@ disclosure: revealed | concealed   # revealed = the reader has been shown the tr
 
 **Reading it.** The value steps by default (§5). A scene that moves the reader's belief or trust writes a new entry at its time code. A `concealed` entry with high `trust` marks a lie the reader still holds; the reveal scene flips it to `revealed` and drops `trust`. A cable (§6) can run from the scene that plants a belief to the scene that overturns it.
 
+**Sources:** BVX.0279 (Iglesias, the reader's emotion as the thing a script manages) · BVX.1147 (Doležel, the epistemic system: known, unknown, believed; deception keeps the split).
+
 ---
 
 ## 10. Open
@@ -275,6 +277,7 @@ The method is complete. The items below are build work or phase 2, one line each
 
 |Version|Date|Changes|
 |---|---|---|
+|1.1.1|2026-10-04|BOLO 100 D3: Sources line added to §9A (BVX.0279, BVX.1147).|
 |1.1.0|2026-10-04|RULED 2026-10-04, Chief ("rec"), BOLO 100 follow-up TR-1. §7 gains the `proportion` lane (`span`, `planned_share`, `measured_share`; 25/50/25 default; measured from P1 percentage addresses) and an optional 1 to 10 reversibility score on P9 `stakes_delta`. Source BVX.0236 cited. Additive.|
 |1.0.0|2026-10-04|RULED 2026-10-04, Chief ("REC"), BOLO 100 tracking/worldbuilding batch 1. Theme and trope hooks (§5); `tempo_point` and `meter_marker` shapes (§7); time-code ordering rule (§4); reader track in the map and consumers (§8, §9); §10 rewritten, with the open build steps tagged phase 2 or tool builds; dependencies add the worldbuilding system and trope register. The `provisional` rule reworded to "still unset". Method gaps closed.|
 |0.3.0|2026-10-04|RULED 2026-10-04, Chief: "all rec" (BOLO 100 character batch 1). New §9A, the reader model: the audience trust ledger, moved from the character system's OPEN call 9. Fields kept minimal: `character_id`, `belief`, `trust` (0–10), `shifted_at`, `disclosure` (revealed or concealed). Additive; no existing section changed.|
