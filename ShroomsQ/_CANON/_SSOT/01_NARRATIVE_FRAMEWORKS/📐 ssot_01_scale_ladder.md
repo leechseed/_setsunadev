@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: scale_ladder
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, all future IPs, BVX-LEARN keying]
 status: canonical — Module 1 of the lattice, delivered on Chief's clear 2026-08-25

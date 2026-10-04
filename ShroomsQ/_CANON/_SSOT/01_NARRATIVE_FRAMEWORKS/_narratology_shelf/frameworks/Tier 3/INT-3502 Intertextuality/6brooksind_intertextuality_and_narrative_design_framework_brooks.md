@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: INT-3502 Intertextuality
 TIER: Tier 3
 REASON: Studies intertextuality and its role in narrative design, aligning with intertextuality.
+tier: narratology
 ---
 
 - [1. Title: **Brooks's Intertextuality and Narrative Design Framework**](#1-title-brookss-intertextuality-and-narrative-design-framework)

@@ -3,6 +3,7 @@ type: ssot_02_character_systems
 category: vertical_slice_protocol
 module_of: ssot_02_character_systems_vertical_slice
 version: 1.1.1
+tier: [fabula, narratology]
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"

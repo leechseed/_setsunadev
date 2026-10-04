@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NR-3507 Narratee and Implied Reader
 TIER: Tier 3
 REASON: Involves shaping and responding to what the audience (narratee/implied reader) anticipates, tying audience reception into narrative construction.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Audience Expectation Framework**](#1-title-mckees-audience-expectation-framework)

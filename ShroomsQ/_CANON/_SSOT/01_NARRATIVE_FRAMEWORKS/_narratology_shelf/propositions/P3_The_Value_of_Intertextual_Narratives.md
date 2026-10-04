@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 # p3 The Value of Analyzing Narratives Across Intertextual Fields
 
 ---

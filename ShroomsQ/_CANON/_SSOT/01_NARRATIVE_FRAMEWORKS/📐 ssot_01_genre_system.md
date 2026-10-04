@@ -2,6 +2,7 @@
 type: ssot_01_genre_system
 category: genre_system
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [all IPs]
 status: "v1.0.1 2026-10-04: OPEN 8, 9, 11 LANDED in their home docs (BOLO 100 genre cross-doc). v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: stale marks stripped, OXO bench and cultcore conventions parked by name for phase 2, contract state track, ingredient triad rule, expiry_note field, G4 affect note and genre-load metric written, mode row landed in medium grammars, OPEN closed, scope relabeled method vs worked example. v0.1.3 2026-09-29: BOLO 77 (77-Z/77-AC), Chief: '1.0' — cultcore RULED as OXO's series genre (BOLO 91: 'cultcore — the genre of the outsiders'), slotted into THE INSTANCE's G1 LABEL; G3 CONTRACT gains 3-5 cultcore conventions, each then open pending Chief. v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Chief: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Chief: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names were house coinage then awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"

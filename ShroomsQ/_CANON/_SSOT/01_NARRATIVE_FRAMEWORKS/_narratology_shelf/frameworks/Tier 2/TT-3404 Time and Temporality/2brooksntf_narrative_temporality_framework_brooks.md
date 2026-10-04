@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Studies how temporality is structured in narratives, aligning with "Time and Temporality".
 
 
+tier: narratology
 ---
 
 - [1. **Title: Brooks's Narrative Temporality Framework**](#1-title-brookss-narrative-temporality-framework)

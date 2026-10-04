@@ -14,6 +14,7 @@ TIER: Tier 3
 REASON: Explores the role of the reader in constructing narrative meaning, aligning with "Narratee and Implied Reader".
 
 
+tier: narratology
 ---
 
 - [1. **Title: Forster's Reader's Role Framework**](#1-title-forsters-readers-role-framework)

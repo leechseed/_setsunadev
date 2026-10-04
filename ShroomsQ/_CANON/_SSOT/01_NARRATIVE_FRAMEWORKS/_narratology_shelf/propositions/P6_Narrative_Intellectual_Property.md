@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 
 # P6_Narrative_Intellectual_Property
 

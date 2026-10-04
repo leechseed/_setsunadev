@@ -13,6 +13,7 @@ CORE: NV-3405 Narrative Voice and Point of View
 TIER: Tier 2
 REASON: Directly examines the narrator's voice and narrative perspective, fitting within "Narrative Voice and Point of View".
 
+tier: narratology
 ---
 
 - [1. **Title: Booth's Narrator and Narrative Voice Framework**](#1-title-booths-narrator-and-narrative-voice-framework)

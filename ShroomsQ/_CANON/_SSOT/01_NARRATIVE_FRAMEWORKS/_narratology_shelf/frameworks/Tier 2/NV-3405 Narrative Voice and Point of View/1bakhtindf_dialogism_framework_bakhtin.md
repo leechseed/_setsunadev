@@ -17,6 +17,7 @@ TIER: Tier 2
 REASON: This framework examines the perspectives from which a narrative is presented, focusing on the narrator's voice and the point of view, aligning with the "Narrative Voice and Point of View" category.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Dialogism Framework**](#1-title-bakhtins-dialogism-framework)

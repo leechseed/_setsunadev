@@ -13,6 +13,7 @@ one_line: "A few Outliers wear the rig into the hottest craters of the Power Lin
 fields: {"scale": "world-economy", "work": "salvage from G4 crater cores: helium-3-rich regolith ballast, vacuum-forged alloys, Moon-built parts Earth can no longer make", "slang": "they call the belt the Hotline", "members": "Victoria (Tori)"}
 sources: ["outliers-moon-origin-seed.md (spoken 2026-10-01)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The hot-zone divers

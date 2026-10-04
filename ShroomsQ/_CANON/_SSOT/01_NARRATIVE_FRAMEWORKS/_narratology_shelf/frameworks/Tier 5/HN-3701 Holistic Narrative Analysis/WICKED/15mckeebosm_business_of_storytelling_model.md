@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: HN-3701 Holistic Narrative Analysis
 TIER: Tier 5
 REASON: Addresses the broader context in which storytelling operates (e.g., industry, commerce), requiring a holistic perspective that transcends narrative formalism.
+tier: narratology
 ---
 
 - [**1. Title: McKee’s Business of Storytelling Model**](#1-title-mckees-business-of-storytelling-model)

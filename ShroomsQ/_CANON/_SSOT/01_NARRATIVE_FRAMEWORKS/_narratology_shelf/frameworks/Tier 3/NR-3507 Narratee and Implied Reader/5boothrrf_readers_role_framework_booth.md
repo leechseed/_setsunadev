@@ -15,6 +15,7 @@ TIER: Tier 3
 REASON: Analyzes the role of the reader within narratives, fitting within "Narratee and Implied Reader".
 
 
+tier: narratology
 ---
 - [1. **Title: Booth's Reader's Role Framework**](#1-title-booths-readers-role-framework)
 - [2. **Key Concepts**](#2-key-concepts)

@@ -2,6 +2,7 @@
 type: ssot_01_texture_system
 category: texture_system
 version: 1.0.0
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [all IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: stale marks stripped, ruled items built (T2 split, silence and memory sub-values, reflection axis, t1_t2_gap flag, pause test, distance instrument, mood entry, payoff ledger), OXO bench parked as ⏸ OXO telling profile (phase 2). v0.1.1 2026-09-16: the thirteen OPEN calls ruled as recommended (Chief: \"texture calls go\"). v0.1.0 2026-09-16 (BOLO 18 texture wave): first version, written from the TEXTURE shelf"

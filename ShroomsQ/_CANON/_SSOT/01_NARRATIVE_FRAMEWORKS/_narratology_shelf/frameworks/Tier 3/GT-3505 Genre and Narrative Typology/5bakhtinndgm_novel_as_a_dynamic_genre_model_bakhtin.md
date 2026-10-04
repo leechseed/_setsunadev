@@ -17,6 +17,7 @@ REASON: Classifies novels as dynamic genres, aligning with genre and narrative t
 
 
 
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Novel as a Dynamic Genre Model**](#1-title-bakhtins-novel-as-a-dynamic-genre-model)

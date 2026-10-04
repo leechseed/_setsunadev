@@ -16,6 +16,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: HN-3701 Holistic Narrative Analysis
 TIER: Tier 5
 REASON: Integrates cognitive aspects into narrative analysis, fitting into holistic analysis.
+tier: narratology
 ---
 
 - [1. Title: **Herman's Narrative as a Cognitive Artifact Framework**](#1-title-hermans-narrative-as-a-cognitive-artifact-framework)

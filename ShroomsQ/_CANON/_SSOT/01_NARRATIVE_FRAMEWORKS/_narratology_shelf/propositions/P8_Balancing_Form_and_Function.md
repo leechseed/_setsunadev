@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 
 # P8_Balancing_Form_and_Function
 

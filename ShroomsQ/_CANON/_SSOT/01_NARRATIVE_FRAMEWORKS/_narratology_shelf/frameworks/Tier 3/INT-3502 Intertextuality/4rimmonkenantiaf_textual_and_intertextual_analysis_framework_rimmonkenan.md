@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Studies textual and intertextual relationships within narratives, aligning with intertextuality.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Rimmon-Kenan's Textual and Intertextual Analysis Framework**](#1-title-rimmon-kenans-textual-and-intertextual-analysis-framework)

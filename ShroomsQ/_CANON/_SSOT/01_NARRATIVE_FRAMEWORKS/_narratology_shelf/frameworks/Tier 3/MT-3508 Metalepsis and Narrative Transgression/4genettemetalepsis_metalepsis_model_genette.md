@@ -17,6 +17,7 @@ TIER: Tier 3
 REASON: Analyzes narrative shifts and transgressions, fitting into metalepsis and narrative transgression.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Genette's Metalepsis Model**](#1-title-genettes-metalepsis-model)

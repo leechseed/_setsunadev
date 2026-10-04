@@ -14,6 +14,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: TN-3602 Transmedia Narratology
 TIER: Tier 4
 REASON: Analyzes the impact of technology on storytelling across media, aligning with transmedia narratology.
+tier: narratology
 ---
 
 - [1. Title: **Ryan's Role of Technology in Storytelling Framework**](#1-title-ryans-role-of-technology-in-storytelling-framework)

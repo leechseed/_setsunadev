@@ -3,6 +3,7 @@ rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_06_style_guides
 category: style_guide
 version: 1.0.2
+tier: narratology
 last_updated: 2026-10-04
 module_of: ssot_06_2_documents_style
 reader: "anyone marking a Command document, as writer or as reader"

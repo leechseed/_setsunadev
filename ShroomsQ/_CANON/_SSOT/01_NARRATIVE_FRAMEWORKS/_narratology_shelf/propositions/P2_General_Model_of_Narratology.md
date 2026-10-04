@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 # P2_General_Model_of_Narratology
 
 **TL;DR:**

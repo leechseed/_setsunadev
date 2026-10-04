@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: PA-3303 Plot and Event Analysis
 TIER: Tier 1
 REASON: The “gap” refers to unexpected story events that generate plot tension, aligning with event analysis and how stories progress through surprises and reversals.
+tier: narratology
 ---
 
 - [**1. Title: McKee’s Gap Model**](#1-title-mckees-gap-model)

@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Focuses on the ordering of temporal events within narratives, fitting into "Time and Temporality".
 
 
+tier: narratology
 ---
 
 - [1. **Title: Sternberg's Temporal Ordering Framework**](#1-title-sternbergs-temporal-ordering-framework)

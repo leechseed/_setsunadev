@@ -16,6 +16,7 @@ TIER: Tier 5
 REASON: Approaches narrative from a cognitive perspective, combining various elements for holistic analysis.
 
 
+tier: narratology
 ---
 
 

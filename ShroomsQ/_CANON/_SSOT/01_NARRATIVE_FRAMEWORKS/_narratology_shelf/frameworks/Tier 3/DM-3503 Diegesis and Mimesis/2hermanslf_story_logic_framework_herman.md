@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Explores the logic of storytelling, fitting within diegesis and mimesis.
 
 
+tier: narratology
 ---
 
 - [1. **Herman's Story Logic Framework**](#1-hermans-story-logic-framework)

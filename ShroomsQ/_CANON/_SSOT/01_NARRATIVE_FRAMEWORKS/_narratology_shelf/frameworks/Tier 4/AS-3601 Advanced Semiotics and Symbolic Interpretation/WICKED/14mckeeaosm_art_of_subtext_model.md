@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: AS-3601 Advanced Semiotics and Symbolic Interpretation
 TIER: Tier 4
 REASON: Focuses on underlying meanings, symbolic depth, and semiotic interpretation of narrative elements.
+tier: narratology
 ---
 
 - [**1. Title: McKee’s The Art of Subtext Model**](#1-title-mckees-the-art-of-subtext-model)

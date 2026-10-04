@@ -14,6 +14,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: TI-3702 Theoretical Integration
 TIER: Tier 5
 REASON: Integrates multiple narratological theories for comprehensive analysis, aligning with theoretical integration.
+tier: narratology
 ---
 
 - [1. Title: **Ryan's Interdisciplinary Approaches Framework**](#1-title-ryans-interdisciplinary-approaches-framework)

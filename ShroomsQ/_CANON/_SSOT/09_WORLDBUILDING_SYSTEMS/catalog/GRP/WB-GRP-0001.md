@@ -13,6 +13,7 @@ one_line: "The acquisition-capital owners who bought Red Hills Academy and rebra
 fields: {"scale": "locality", "coercion": "ownership of the charter; the seam they made is policed (saying Red Hills is a legibility violation)", "rule_making": "holds the Ultra Charter; the Administration writes the running standards", "consent": "missing: the son sold the school, students and faculty were not asked", "kind": "owners / acquisition capital"}
 sources: ["ssot_03_setting_system", "delta-coast-ultra-school.md"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Bishops

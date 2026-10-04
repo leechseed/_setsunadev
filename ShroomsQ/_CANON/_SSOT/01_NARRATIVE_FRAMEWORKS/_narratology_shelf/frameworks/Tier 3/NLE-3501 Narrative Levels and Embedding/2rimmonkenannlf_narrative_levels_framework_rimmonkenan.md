@@ -17,6 +17,7 @@ TIER: Tier 3
 REASON: Studies different narrative levels within stories, aligning with narrative levels and embedding.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Rimmon-Kenan's Narrative Levels Framework**](#1-title-rimmon-kenans-narrative-levels-framework)

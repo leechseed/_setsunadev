@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Focuses on the communication aspects of narration, fitting within "Narration and Narrator Analysis".
 
 
+tier: narratology
 ---
 - [1. **Title: Chatman's Narrative Communication Model**](#1-title-chatmans-narrative-communication-model)
 - [2. **Key Concepts**](#2-key-concepts)

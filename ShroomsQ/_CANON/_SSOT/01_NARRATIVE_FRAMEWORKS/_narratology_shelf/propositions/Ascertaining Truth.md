@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 # Methods of Ascertaining Truth
 
 This document outlines various methods used to ascertain truth, categorized by their philosophical, scientific, and logical frameworks.

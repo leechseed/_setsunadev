@@ -3,6 +3,7 @@ rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_methodology
 category: operations
 version: 0.1.1
+tier: operations
 last_updated: 2026-09-15
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: working — v0.1; promotes to canonical after two project uses (DOCTRINE 0, Invariant I)

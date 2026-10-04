@@ -2,6 +2,7 @@
 type: ssot_00_foundations
 category: design_system
 version: 2.0.1
+tier: operations
 last_updated: 2026-10-04
 applies_to: [BOLD_VENTURE]
 status: canonical

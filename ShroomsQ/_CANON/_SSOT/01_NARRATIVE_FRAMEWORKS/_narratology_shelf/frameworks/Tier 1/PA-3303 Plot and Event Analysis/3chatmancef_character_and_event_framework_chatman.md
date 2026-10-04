@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: PA-3303 Plot and Event Analysis
 TIER: Tier 1
 REASON: Examines character and events within the plot, aligning with plot and event analysis.
+tier: narratology
 ---
 
 - [1. **Title: Chatman's Character and Event Framework**](#1-title-chatmans-character-and-event-framework)

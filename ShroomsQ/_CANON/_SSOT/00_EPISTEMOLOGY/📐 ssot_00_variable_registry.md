@@ -3,6 +3,7 @@ type: ssot_00_foundations
 category: variable_registry
 rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
 version: 1.2.1
+tier: foundation
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical

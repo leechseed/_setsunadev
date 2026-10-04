@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Analyzes the rhetoric used in constructing fictional worlds, fitting into narration and narrator analysis.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Booth's Rhetoric of Fictional Worlds Model**](#1-title-booths-rhetoric-of-fictional-worlds-model)

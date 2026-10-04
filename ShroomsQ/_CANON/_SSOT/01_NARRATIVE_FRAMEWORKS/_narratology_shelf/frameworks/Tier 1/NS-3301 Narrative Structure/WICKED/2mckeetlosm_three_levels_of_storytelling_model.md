@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: Explores layered narrative construction, fitting into fundamental structural understanding.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Three Levels of Storytelling Model**](#1-title-mckees-three-levels-of-storytelling-model)

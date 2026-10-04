@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: HN-3701 Holistic Narrative Analysis
 TIER: Tier 5
 REASON: Focuses on the creative process behind storytelling, requiring a holistic understanding of narrative creation beyond a single structural element.
+tier: narratology
 ---
 
 - [**1. Title: McKee’s Writer’s Process Model**](#1-title-mckees-writers-process-model)

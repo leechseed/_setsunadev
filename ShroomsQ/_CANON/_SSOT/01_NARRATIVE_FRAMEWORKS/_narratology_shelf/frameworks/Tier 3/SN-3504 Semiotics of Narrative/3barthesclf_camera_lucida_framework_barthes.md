@@ -18,6 +18,7 @@ TIER: Tier 3
 REASON: Analyzes the use of the camera and imagery in narrative structures, aligning with semiotics.
 
 
+tier: narratology
 ---
 
 - [1. **Definition**:](#1-definition)

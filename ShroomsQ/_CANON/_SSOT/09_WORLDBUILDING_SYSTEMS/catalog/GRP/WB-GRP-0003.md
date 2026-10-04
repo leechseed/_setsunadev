@@ -13,6 +13,7 @@ one_line: "The civilization table from the MOON/SAGA seed."
 fields: {}
 sources: ["moon-saga-seed.md"]
 status: "stub ⧗"
+tier: fabula
 ---
 
 # The MOON/SAGA Civ table (Jul 2025)

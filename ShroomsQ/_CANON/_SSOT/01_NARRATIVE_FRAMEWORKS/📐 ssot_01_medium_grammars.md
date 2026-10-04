@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: medium_grammars
 version: 1.2.1
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
 status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: per-medium texture table added (T3 order, T4 speed, T10 narratee). v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: mode row added. v1.0.0: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass"

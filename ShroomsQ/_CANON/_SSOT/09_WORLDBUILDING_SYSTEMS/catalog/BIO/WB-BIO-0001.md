@@ -13,6 +13,7 @@ one_line: "A techno-organic creep, part plant, part virus, part animal, that spr
 fields: {"scale": "world-economy", "kind": "techno-organic creep", "spreads": "over ground, like zerg creep ⧗", "woke_from": "a buried quantum-entangled object under the south pole ⧗"}
 sources: ["IDEAS - POSSIBLE SETUP (5/11/2025)", "apple-notes-2026 digest", "6/20/2025 world dump", "delta-coast-ultra-school.md (texture)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Kudzu (the creep)

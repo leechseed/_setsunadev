@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Booth's model examines the role of the implied author in shaping the narrative, which falls under narration and narrator analysis.
 
 
+tier: narratology
 ---
 
 - [1. **Title: Booth's Implied Author Model**](#1-title-booths-implied-author-model)

@@ -631,6 +631,14 @@ def face_shuffle(slots):
 
 # ---------------------------------------------------------------- server
 
+APP_FILES = {
+    "/manifest.webmanifest": ("manifest.webmanifest", "application/manifest+json"),
+    "/sw.js": ("sw.js", "text/javascript; charset=utf-8"),
+    "/app/icon-192.png": ("icon-192.png", "image/png"),
+    "/app/icon-512.png": ("icon-512.png", "image/png"),
+}
+
+
 class Handler(BaseHTTPRequestHandler):
     server_version = "JudyConsole/0.1"
 
@@ -677,6 +685,15 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:
                 return self._send(500, f"faces.html missing: {e}", "text/plain; charset=utf-8")
             return self._send(200, html, "text/html; charset=utf-8")
+
+        # JUDY as an installable app window (10/4): manifest, worker, icons from app/
+        if path in APP_FILES:
+            fn, ct = APP_FILES[path]
+            try:
+                with open(os.path.join(HERE, "app", fn), "rb") as f:
+                    return self._send(200, f.read(), ct)
+            except Exception as e:
+                return self._send(404, {"error": str(e)})
 
         if path == "/api/face/library":
             return self._send(200, lib_state())

@@ -13,6 +13,7 @@ one_line: "The campus signal that clothing, ratings, and Sync run on."
 fields: {"scale": "locality", "carries": "Star-Rating, Sync, Feed-linked clothing glow", "glow": "clean to NEON-ROT across the movements"}
 sources: ["ssot_03_setting_system", "dcus-standards-body.md"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Feed (DCUS)

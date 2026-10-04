@@ -16,6 +16,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NA-3402 Narration and Narrator Analysis
 TIER: Tier 2
 REASON: Heteroglossia involves multiple voices and social languages, aligning with narration and narrator analysis.
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Heteroglossia Model**](#1-title-bakhtins-heteroglossia-model)

@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Focuses on the narrative perspective and focalization, aligning with the "Focalization" category.
 
 
+tier: narratology
 ---
 
 - [1. **Title: Bal's Focalization Framework**](#1-title-bals-focalization-framework)

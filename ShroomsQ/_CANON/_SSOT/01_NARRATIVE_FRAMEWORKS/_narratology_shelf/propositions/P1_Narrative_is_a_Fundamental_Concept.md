@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 
 # P1_Narrative_is_a_Fundamental_Concept
 

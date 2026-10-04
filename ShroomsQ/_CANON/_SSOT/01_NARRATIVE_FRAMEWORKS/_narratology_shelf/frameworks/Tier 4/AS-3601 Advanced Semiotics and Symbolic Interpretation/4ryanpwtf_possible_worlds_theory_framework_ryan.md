@@ -15,6 +15,7 @@ TIER: Tier 4
 REASON: Examines narrative possibilities and their symbolic meanings, aligning with advanced semiotics.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Ryan's Possible Worlds Theory Framework**](#1-title-ryans-possible-worlds-theory-framework)

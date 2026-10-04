@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Examines the carnivalesque as a narrative technique, aligning with semiotics.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Carnivalesque Concept**](#1-title-bakhtins-carnivalesque-concept)

@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: SN-3504 Semiotics of Narrative
 TIER: Tier 3
 REASON: Analyzes narrative modalities through semiotic approaches, aligning with semiotics.
+tier: narratology
 ---
 
 - [1. **Title: Greimas's Modalities Framework**](#1-title-greimass-modalities-framework)

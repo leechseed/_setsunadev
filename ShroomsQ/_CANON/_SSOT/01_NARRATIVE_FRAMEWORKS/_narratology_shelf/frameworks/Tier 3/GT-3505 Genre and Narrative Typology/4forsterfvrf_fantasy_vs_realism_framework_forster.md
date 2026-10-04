@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Differentiates between fantasy and realism, aligning with genre and narrative typology.
 
 
+tier: narratology
 ---
 
 - [1. **Forster's Fantasy vs. Realism Framework**](#1-forsters-fantasy-vs-realism-framework)

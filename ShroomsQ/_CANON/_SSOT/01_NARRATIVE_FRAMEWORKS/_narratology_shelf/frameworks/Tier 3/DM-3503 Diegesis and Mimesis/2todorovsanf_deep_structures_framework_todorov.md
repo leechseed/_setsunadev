@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Explores deep narrative structures, aligning with diegesis and mimesis.
 
 
+tier: narratology
 ---
 
 - [**Todorov's Deep Structures Framework**](#todorovs-deep-structures-framework)

@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: modern_poetics
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [all IPs]
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: capture protocol reworded, applies_to added, Standing-Order candidates landed in the Touchstones register. Earlier: CANON — name RULED 2026-08-31 (Modern Poetics); disposition table RATIFIED same session; P8–P10 spoken into doctrine same session"

@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: three_check_pass
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: history line reworded, Anna and OXO element gaps parked by name, module_of stamped. Earlier: canonical 1.0; all 36 lines KEPT by Chief 2026-09-29 (\"keep all\")"
 purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy Check · Aesthetic Check over the flagship canon roster. Three sweeps, never bundled per element."

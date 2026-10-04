@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: PA-3303 Plot and Event Analysis
 TIER: Tier 1
 REASON: Turning points are key events that alter the narrative trajectory, fitting closely with plot and event examination.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Turning Points Model**](#1-title-mckees-turning-points-model)

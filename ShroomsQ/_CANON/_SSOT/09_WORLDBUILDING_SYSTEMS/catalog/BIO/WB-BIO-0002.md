@@ -13,6 +13,7 @@ one_line: "A kombucha-like culture locked to one diver's genome: a radiation-eat
 fields: {"scale": "locality", "film": "radiotrophic, melanized (the Chernobyl fungi); feeds on the dose that rides back down the line in her blood", "broth": "her own pluripotent cells (autologous): works on her alone", "quickening": "unspent, the broth organizes into a parthenote, a fetus from her cells alone", "cost": "a hard dose breaks the quickened tissue down for parts: her kid is spent"}
 sources: ["outliers-moon-origin-seed.md (spoken 2026-10-01)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Mother (the broth)

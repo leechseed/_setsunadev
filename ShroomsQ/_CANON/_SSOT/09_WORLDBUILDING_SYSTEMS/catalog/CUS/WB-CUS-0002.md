@@ -13,6 +13,7 @@ one_line: "The Delta Coast pulls young people from the Power Line into the Ultra
 fields: {"scale": "nation-state", "reference": "Sparta's mothakes: boys of helots and poor families raised in the agoge beside Spartan sons", "why": "randomosity: the Coast's Stock grows too uniform, 'almost too good'", "in_world_word": "Randoms (provisional, RULED 2026-10-04; a better word later)", "gauge": "Memory (RULED 2026-10-04)"}
 sources: ["oxo-trash-land-seed.md (spoken 9/29)", "6/20/2025 world dump (Stock as pure bloodline)", "ssot_04_fabula (m2_recruited)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The intake (belt-born into DCUS)

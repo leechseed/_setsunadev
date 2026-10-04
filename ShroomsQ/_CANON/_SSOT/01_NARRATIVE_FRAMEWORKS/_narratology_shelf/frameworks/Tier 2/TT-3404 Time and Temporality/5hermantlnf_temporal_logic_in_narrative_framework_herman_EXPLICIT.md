@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: TT-3404 Time and Temporality
 TIER: Tier 2
 REASON: Analyzes how temporal logic structures narratives, aligning with "Time and Temporality".
+tier: narratology
 ---
 
 - [1. **Title: Herman's Temporal Logic in Narrative Framework**](#1-title-hermans-temporal-logic-in-narrative-framework)

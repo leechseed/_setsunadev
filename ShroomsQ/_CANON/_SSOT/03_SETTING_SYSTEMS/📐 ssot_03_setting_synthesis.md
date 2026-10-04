@@ -2,6 +2,7 @@
 type: ssot_03_setting_synthesis
 category: setting_system
 version: 1.0.0
+tier: fabula
 module_of: ssot_03_setting_system
 last_updated: 2026-10-04
 feeds: ssot_03_setting_system (TM 03)

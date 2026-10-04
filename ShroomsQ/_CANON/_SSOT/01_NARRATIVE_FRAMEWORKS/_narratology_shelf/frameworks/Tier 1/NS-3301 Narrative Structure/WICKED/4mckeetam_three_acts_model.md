@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: The three-act paradigm is a cornerstone of narrative structure, guiding the core shape of the story.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Three Acts Model**](#1-title-mckees-three-acts-model)

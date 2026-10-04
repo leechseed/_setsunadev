@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: SD-3401 Story vs. Discourse (Fabula vs. Sjuzhet)
 TIER: Tier 2
 REASON: Focuses on discourse strategies within the narrative, aligning with "Story vs. Discourse".
+tier: narratology
 ---
 
 - [1. **Title: Rimmon-Kenan's Narrative Discourse Strategies Framework**](#1-title-rimmon-kenans-narrative-discourse-strategies-framework)

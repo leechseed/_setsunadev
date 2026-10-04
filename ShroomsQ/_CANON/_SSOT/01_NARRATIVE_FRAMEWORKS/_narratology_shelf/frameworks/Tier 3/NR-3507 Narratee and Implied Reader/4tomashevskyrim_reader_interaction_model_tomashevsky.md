@@ -17,6 +17,7 @@ REASON: Focuses on reader interaction and engagement, aligning with narratee and
 
 
 
+tier: narratology
 ---
 
 - [1. Title: **Tomashevsky's Reader Interaction Model**](#1-title-tomashevskys-reader-interaction-model)

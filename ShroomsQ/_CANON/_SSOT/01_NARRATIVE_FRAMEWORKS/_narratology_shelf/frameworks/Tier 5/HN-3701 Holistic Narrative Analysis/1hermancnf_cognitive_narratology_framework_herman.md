@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: HN-3701 Holistic Narrative Analysis
 TIER: Tier 5
 REASON: Combines various narrative elements from a cognitive perspective, fitting into a holistic analysis.
+tier: narratology
 ---
 
 - [1. Title: **Herman's Cognitive Narratology Framework**](#1-title-hermans-cognitive-narratology-framework)

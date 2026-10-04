@@ -13,6 +13,7 @@ one_line: "What is left of America in the North after Providence breaks away: a 
 fields: {"scale": "nation-state", "coercion": "the fascist cult ⧗", "rule_making": "the Deepstate ⧗", "consent": "nostalgia for America reborn ⧗", "region": "the Deepstate North", "figure": "John Smith the Eternal ⧗ (its Comstock)", "gauge": {"value": "Liberty", "steps": [{"s": "+", "name": "Liberty", "plain": "A free people under God."}, {"s": "−", "name": "Tradition", "plain": "Do it the way the founders did."}, {"s": "−−", "name": "Purity", "plain": "The unclean get cast out."}, {"s": "−−−", "name": "Tyranny that calls itself liberty", "plain": "The flag is free. You aren't."}]}}
 sources: ["6/20/2025 world dump", "5 OS Problem 3 (6/5/2025)", "25 John Smith the Eternal Introduction (6/24/2025)", "apple-notes-2026 (raw)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Deepstate North (America as BioShock Infinite)

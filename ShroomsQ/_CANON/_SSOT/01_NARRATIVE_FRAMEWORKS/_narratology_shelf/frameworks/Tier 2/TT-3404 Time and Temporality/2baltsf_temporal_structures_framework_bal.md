@@ -11,6 +11,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: TT-3404 Time and Temporality
 TIER: Tier 2
 REASON: Focuses on the structuring of time within narratives, fitting into "Time and Temporality".
+tier: narratology
 ---
 
 - [1. **Title: Bal's Temporal Structures Framework**](#1-title-bals-temporal-structures-framework)

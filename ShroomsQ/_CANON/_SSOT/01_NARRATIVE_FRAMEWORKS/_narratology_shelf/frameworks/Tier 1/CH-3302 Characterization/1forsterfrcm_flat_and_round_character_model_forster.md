@@ -15,6 +15,7 @@ TIER: Tier 1
 REASON: Forster's model classifies characters based on their depth and complexity, fitting within "Characterization".
 
 
+tier: narratology
 ---
 
 - [1. **Title: Forster's Flat and Round Characters Model**](#1-title-forsters-flat-and-round-characters-model)

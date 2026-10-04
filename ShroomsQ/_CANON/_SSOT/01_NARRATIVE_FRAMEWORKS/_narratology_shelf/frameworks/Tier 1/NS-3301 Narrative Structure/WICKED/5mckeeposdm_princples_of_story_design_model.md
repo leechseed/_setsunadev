@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: Concentrates on the underlying principles of constructing a story’s form, aligning with fundamental narrative structuring concepts.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Principles of Story Design Model**](#1-title-mckees-principles-of-story-design-model)

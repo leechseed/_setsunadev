@@ -13,6 +13,7 @@ one_line: "A cartel state that rises in era 1 out of Mexico, stands as one of th
 fields: {"scale": "nation-state", "coercion": "the cartels' force ⧗", "rule_making": "the cartels as the state ⧗", "consent": "citizenship through assimilation", "stages": "Cartel Federal → Real Federale → Pax Cartel", "flag": "a gold eagle diving at a rattlesnake coiled on cacao seeds, the snake facing the wrong way; Mexican red and gold", "motto": "CONSEQUENTIA REAL", "gauge": {"value": "Belonging", "steps": [{"s": "+", "name": "Family", "plain": "We take care of our own."}, {"s": "−", "name": "Debt", "plain": "You owe us for that."}, {"s": "−−", "name": "Fear", "plain": "Pay, or they find your mother."}, {"s": "−−−", "name": "A racket that calls itself a nation", "plain": "You're a citizen because you can't leave."}]}}
 sources: ["apple-notes-2025 digest", "6/20/2025 world dump", "ASTRO7EX Backdrop & Context (5/11/2025)", "flag of REAL FEDERAL (9/8/2025)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Narco Republic

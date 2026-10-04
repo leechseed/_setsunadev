@@ -13,6 +13,7 @@ one_line: "The cult transcribed from Chief's chalkboard; era 2 · DCUS (BOLO 91,
 fields: {"scale": "locality", "kind": "seed only, no cult described"}
 sources: ["tremor-cult-seed.md"]
 status: "retired"
+tier: fabula
 ---
 
 > **RETIRED 2026-09-29 by the CDR.** Tremor Cult is a **story** (01 story registry, `tremor_cult`, era 2 · DCUS since the 9/29 renumber; ruled 9/29 BOLO 91), not a belief. The CDR misfiled it as a seed; the fill pass caught it. The id stays retired and is never reused. If the story's world holds a cult of its own, it gets a new BEL entry when canon names it.

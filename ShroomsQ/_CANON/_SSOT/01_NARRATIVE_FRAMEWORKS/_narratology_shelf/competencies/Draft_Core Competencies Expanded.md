@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 # This is the sheet to use as reference to match YAML Code to Core Competency.
 
 - Keyword is **CORE**

@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NA-3402 Narration and Narrator Analysis
 TIER: Tier 2
 REASON: Examines the roles of author and hero within narrative aesthetics, aligning with narration and narrator analysis.
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Author and Hero in Aesthetic Activity Concept**](#1-title-bakhtins-author-and-hero-in-aesthetic-activity-concept)

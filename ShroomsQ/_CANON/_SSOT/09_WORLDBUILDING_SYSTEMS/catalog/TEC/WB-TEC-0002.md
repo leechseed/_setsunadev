@@ -13,6 +13,7 @@ one_line: "An umbilical seated along a diver's spine and in both calves, run a q
 fields: {"scale": "locality", "ports": "spine (the vertebral marrow) · both calves (the second heart, the pump)", "reach": "up to a quarter mile", "crawler": "autonomous; parks at the G2/G3 rim, because distance is shielding and the Mother would die in the heat", "model": "Evangelion's umbilical cable and LCL"}
 sources: ["outliers-moon-origin-seed.md (spoken 2026-10-01)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The dive rig (the line and the crawler)

@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: story_spine
 version: 1.0.2
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
 status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)

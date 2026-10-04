@@ -2,6 +2,7 @@
 type: ssot_09_worldbuilding_systems
 category: worldbuilding_system
 version: 1.1.1
+tier: fabula
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, MOON/SAGA, all future IPs]
 status: "v1.1.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: stale marks stripped, inferred-mark rule, stub-promotion and retired-entry rules, instance marks parked. 1.0 stamped 2026-09-29."

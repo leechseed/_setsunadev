@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 
 # P4_Model_for_Hyper-media
 

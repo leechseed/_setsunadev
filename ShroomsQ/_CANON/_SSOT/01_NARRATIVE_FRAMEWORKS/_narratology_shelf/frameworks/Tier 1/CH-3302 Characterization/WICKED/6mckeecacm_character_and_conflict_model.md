@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: CH-3302 Characterization
 TIER: Tier 1
 REASON: Emphasizes character formation and the conflicts they drive, central to characterization and narrative engagement.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Character and Conflict Model**](#1-title-mckees-character-and-conflict-model)

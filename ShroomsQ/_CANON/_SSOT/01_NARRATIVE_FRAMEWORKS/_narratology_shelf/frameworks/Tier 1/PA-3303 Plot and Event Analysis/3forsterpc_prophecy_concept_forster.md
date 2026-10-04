@@ -14,6 +14,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: PA-3303 Plot and Event Analysis
 TIER: Tier 1
 REASON: Focuses on the plot and prophecy elements within narratives, fitting into plot and event analysis.
+tier: narratology
 ---
 
 - [1. **Forster's Prophecy Concept**](#1-forsters-prophecy-concept)

@@ -2,6 +2,7 @@
 type: ssot_06_style_guides
 category: style_guide
 version: 1.0.0
+tier: narratology
 module_of: ssot_06_1_prose_style
 last_updated: 2026-09-29
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]

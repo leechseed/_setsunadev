@@ -15,6 +15,7 @@ TIER: Tier 3
 REASON: Examines the grammatical structures of narratives, aligning with semiotics.
 
 
+tier: narratology
 ---
 
 - [1. **Greimas's Narrative Grammar Framework**](#1-greimass-narrative-grammar-framework)

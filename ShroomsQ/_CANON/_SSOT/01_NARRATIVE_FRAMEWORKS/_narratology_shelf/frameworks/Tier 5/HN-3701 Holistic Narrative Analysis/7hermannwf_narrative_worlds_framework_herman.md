@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: HN-3701 Holistic Narrative Analysis
 TIER: Tier 5
 REASON: Studies the construction of narrative worlds in a holistic manner, aligning with holistic narrative analysis.
+tier: narratology
 ---
 
 - [1. Title: **Herman's Narrative Worlds Framework**](#1-title-hermans-narrative-worlds-framework)

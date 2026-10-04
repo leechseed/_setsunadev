@@ -13,6 +13,7 @@ one_line: "Providence, the techno-corpo state: a surveillance and data company t
 fields: {"scale": "nation-state", "coercion": "surveillance and data ⧗", "rule_making": "the company as the state ⧗", "consent": "missing ⧗", "region": "the Deepstate North ⧗", "rivals": "the narco state · the Kudzu", "gauge": {"value": "Safety", "steps": [{"s": "+", "name": "Safety", "plain": "Nothing bad can happen to you."}, {"s": "−", "name": "Watched", "plain": "Someone is always looking."}, {"s": "−−", "name": "Predicted", "plain": "They know what you'll do before you do."}, {"s": "−−−", "name": "A prison that calls itself protection", "plain": "They're saving you from yourself."}]}}
 sources: ["apple-notes-2026 (raw): palantir as the breakaway nation", "apple-notes-2026 (raw): techno corpo state · narco state · the kudzu"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # Providence

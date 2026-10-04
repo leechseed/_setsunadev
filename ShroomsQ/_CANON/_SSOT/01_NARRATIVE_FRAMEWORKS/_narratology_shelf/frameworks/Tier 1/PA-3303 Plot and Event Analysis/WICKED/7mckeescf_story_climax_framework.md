@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: PA-3303 Plot and Event Analysis
 TIER: Tier 1
 REASON: The climax is a crucial narrative event, pivotal in plot analysis and understanding the culmination of story events.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Story Climax Framework**](#1-title-mckees-story-climax-framework)

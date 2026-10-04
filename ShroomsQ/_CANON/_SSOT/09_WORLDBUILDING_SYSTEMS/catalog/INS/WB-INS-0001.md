@@ -13,6 +13,7 @@ one_line: "DCUS's depersonalized operating layer: legitimacy is issued, not earn
 fields: {"scale": "nation-state", "coercion": "Star-Rating and Sync Protocol: to be un-Verified is to lose legibility on the Feed", "rule_making": "the Administration issues the standards; the holder is unnamed, acting through the Bishops", "consent": "missing: nobody agrees to the rating, it is applied", "binding_principle": "legitimacy is issued, not earned"}
 sources: ["dcus-standards-body.md", "ssot_03_setting_system"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Administration

@@ -60,14 +60,21 @@ def procs(pattern):
             if "powershell" not in (d.get("CommandLine") or "")]
 
 
-def spawn_console(args, cwd=ROOT):
-    """A detached process in its own minimized console window."""
+def spawn_console(args, cwd=ROOT, log=None):
+    """A detached process in its own minimized console window. With log=path, stdout + stderr append there
+    (10/4: JUDY kept dying with no trace because both went to DEVNULL)."""
     si = subprocess.STARTUPINFO()
     si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
     si.wShowWindow = 7  # SW_SHOWMINNOACTIVE
-    return subprocess.Popen(args, cwd=cwd, startupinfo=si,
+    out, env = subprocess.DEVNULL, None
+    if log:
+        out = open(log, "a", encoding="utf-8")
+        out.write("\n==== start %s · %s\n" % (time.strftime("%Y-%m-%d %H:%M:%S"), " ".join(args[1:])))
+        out.flush()
+        env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONFAULTHANDLER="1")   # faulthandler: native crashes (CUDA, audio) dump a trace
+    return subprocess.Popen(args, cwd=cwd, startupinfo=si, env=env,
                             creationflags=subprocess.CREATE_NEW_CONSOLE | subprocess.CREATE_NEW_PROCESS_GROUP,
-                            stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                            stdin=subprocess.DEVNULL, stdout=out, stderr=subprocess.STDOUT if log else subprocess.DEVNULL,
                             close_fds=True)
 
 
@@ -127,18 +134,44 @@ def station_judy():
                         "Stop-Process -Id %d -Force -ErrorAction SilentlyContinue" % pid], capture_output=True)
     if running:
         time.sleep(1.0)
-    p = spawn_console([PY, "-u", JUDY, "--session", "--naked", "--naked-no-face"])   # BOLO 74 (9/20): Naked rides in JUDY's process; no picture at launch (Chief 9/24)
+    p = spawn_console([PY, "-u", JUDY, "--session", "--naked", "--naked-no-face"],
+                      log=os.path.join(os.path.dirname(JUDY), "judy.session.log"))   # BOLO 74 (9/20): Naked rides in JUDY's process; no picture at launch (Chief 9/24)
     time.sleep(6.0)  # whisper warm-loads in ~3 s; the face comes up with it
     if p.poll() is None:
         return {"station": "JUDY", "go": True, "addr": "session voice · pid %d" % p.pid,
                 "note": "started · %.0f s · hold the hotkey with the chat box focused" % (time.time() - t0)}
     return {"station": "JUDY", "go": False, "addr": "session voice",
-            "note": "exited at start (code %s); run judy.py --session by hand to see why" % p.returncode}
+            "note": "exited at start (code %s); see _tools/dictation/judy.session.log" % p.returncode}
+
+
+def chromium_app_exe():
+    """The default browser's exe when it is Chrome or Edge (for --app), else None. FACES only;
+    SITREP/SOI stay tabs (Chief 9/20)."""
+    try:
+        import winreg
+        k = winreg.OpenKey(winreg.HKEY_CURRENT_USER,
+                           r"Software\Microsoft\Windows\Shell\Associations\UrlAssociations\https\UserChoice")
+        prog = winreg.QueryValueEx(k, "ProgId")[0]
+        c = winreg.QueryValue(winreg.HKEY_CLASSES_ROOT, prog + r"\shell\open\command")
+        exe = c.split('"')[1] if c.startswith('"') else c.split()[0]
+        if os.path.basename(exe).lower() in ("chrome.exe", "msedge.exe") and os.path.exists(exe):
+            return exe
+    except Exception:
+        pass
+    # 10/4: the default is Firefox (no app mode); "make her an App" -> Chrome's --app window, Edge as the fallback
+    for exe in (os.path.expandvars(r"%ProgramFiles%\Google\Chrome\Application\chrome.exe"),
+                os.path.expandvars(r"%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe"),
+                os.path.expandvars(r"%LocalAppData%\Google\Chrome\Application\chrome.exe"),
+                os.path.expandvars(r"%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"),
+                os.path.expandvars(r"%ProgramFiles%\Microsoft\Edge\Application\msedge.exe")):
+        if os.path.exists(exe):
+            return exe
+    return None
 
 
 def station_faces():
     """Chief, 10/4: JUDY's face deck comes up at every launch. The console (:8787) serves it;
-    a live console is reported, not restarted. The deck opens as a browser tab, never an app window."""
+    a live console is reported, not restarted. The deck opens as an app window when the default browser is Chrome/Edge (10/4), else a tab."""
     t0 = time.time()
     try:
         was_up = ping("http://127.0.0.1:8787/api/log")
@@ -155,8 +188,13 @@ def station_faces():
         if not ping(FACES_URL):
             return {"station": "FACES", "go": False, "addr": FACES_URL,
                     "note": "console is up but has no /faces (an old console; restart it)"}
-        subprocess.Popen(["cmd", "/c", VIEW, FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
-                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        app = chromium_app_exe()
+        if app:   # Chrome/Edge default: an app window (own name, icon, no address bar)
+            subprocess.Popen([app, "--app=" + FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        else:
+            subprocess.Popen(["cmd", "/c", VIEW, FACES_URL], cwd=ROOT, stdin=subprocess.DEVNULL,
+                             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         return {"station": "FACES", "go": True, "addr": FACES_URL,
                 "note": ("already live" if was_up else "started · %.1f s" % (time.time() - t0)) + " · opened"}
     except Exception as e:

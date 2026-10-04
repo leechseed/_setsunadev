@@ -13,6 +13,7 @@ one_line: "The space cuisine seed: three rows, nothing ruled."
 fields: {}
 sources: ["astro7ex-space-cuisine-seed.md"]
 status: "stub ⧗"
+tier: fabula
 ---
 
 # ASTRO7EX Space Cuisine

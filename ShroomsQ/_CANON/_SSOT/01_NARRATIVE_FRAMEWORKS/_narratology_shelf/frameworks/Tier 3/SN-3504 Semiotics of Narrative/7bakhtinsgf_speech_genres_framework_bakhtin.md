@@ -15,6 +15,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: SN-3504 Semiotics of Narrative
 TIER: Tier 3
 REASON: Analyzes speech genres within narratives, aligning with semiotics.
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Speech Genres Framework**](#1-title-bakhtins-speech-genres-framework)

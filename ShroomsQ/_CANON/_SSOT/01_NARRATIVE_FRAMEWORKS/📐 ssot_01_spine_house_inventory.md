@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: spine_house_inventory
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: module_of stamped. Earlier: BOLO 18 stage-1 artifact — the house-corpus sweep, mapped to spine levels (agent pass 2026-08-26)"
 purpose: "Every processed in-house material keyed to its spine level(s) L0–L7 — the repo's own holdings as spine shelves. Stage 2 (the 353-source library feeds: sweep) keys the external catalog the same way."

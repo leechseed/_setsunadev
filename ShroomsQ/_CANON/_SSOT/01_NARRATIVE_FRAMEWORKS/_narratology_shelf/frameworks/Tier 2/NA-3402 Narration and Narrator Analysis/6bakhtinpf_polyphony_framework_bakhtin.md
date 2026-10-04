@@ -15,6 +15,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NA-3402 Narration and Narrator Analysis
 TIER: Tier 2
 REASON: Polyphony emphasizes multiple voices and perspectives within a narrative, aligning with narration and narrator analysis.
+tier: narratology
 ---
 
 - [1. Title: **Bakhtin's Polyphony Framework**](#1-title-bakhtins-polyphony-framework)

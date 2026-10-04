@@ -3,6 +3,7 @@ type: ssot_02_character_systems
 category: state_architecture
 module_of: ssot_02_character_systems_vertical_slice
 version: 1.3.0
+tier: fabula
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.3.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar"

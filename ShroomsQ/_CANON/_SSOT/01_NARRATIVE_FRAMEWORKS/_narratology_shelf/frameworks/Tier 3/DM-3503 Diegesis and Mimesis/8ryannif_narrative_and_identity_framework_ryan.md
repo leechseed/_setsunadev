@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: DM-3503 Diegesis and Mimesis
 TIER: Tier 3
 REASON: Mismatched theorist and framework; already covered under `7TomashevskyNDF`.
+tier: narratology
 ---
 
 - [1. Title: **Tomashevsky's Narrative Devices Framework**](#1-title-tomashevskys-narrative-devices-framework)

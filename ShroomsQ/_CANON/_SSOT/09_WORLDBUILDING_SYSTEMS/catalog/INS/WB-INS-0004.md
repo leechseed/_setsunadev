@@ -13,6 +13,7 @@ one_line: "The Delta Coast's shield: a man-made range of trash, toxins and space
 fields: {"scale": "nation-state", "coercion": "the cuts are checkpointed; crossing is a permission the Administration controls", "rule_making": "the Delta Coast sets the standard ⧗", "consent": "missing: the belt-born never agreed to live under it", "local_names": "the Zona (the Outliers) · the Hedge (Coast church folk) · the Hotline (divers and dozer crews)", "heat_grades": "G0 background · G1 streets (mSv/h) · G2 work zones (~0.1 Sv/h) · G3 crater rims (~1 Sv/h) · G4 the heat, crater cores (10+ Sv/h, divers only)", "growth": "the falling wreck of the Severance, pushed onto the belt by autonomous dozers", "gauge": {"value": "Protection", "steps": [{"s": "+", "name": "Shelter", "plain": "We keep you safe."}, {"s": "−", "name": "Walled in", "plain": "Stay behind the line."}, {"s": "−−", "name": "Shut out", "plain": "They built it on top of your home."}, {"s": "−−−", "name": "A wall that calls itself a shield", "plain": "It protects them from you."}]}}
 sources: ["oxo-trash-land-seed.md", "oxo-trash-land-standards-body.md"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Power Line (the standards body)

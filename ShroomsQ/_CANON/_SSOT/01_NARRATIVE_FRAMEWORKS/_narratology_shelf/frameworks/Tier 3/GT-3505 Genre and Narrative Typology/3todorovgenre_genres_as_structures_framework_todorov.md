@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Classifies narratives based on genre conventions and typologies, aligning with genre and narrative typology.
 
 
+tier: narratology
 ---
 
 - [1. **Todorov's Dynamic Genre Theory**](#1-todorovs-dynamic-genre-theory)

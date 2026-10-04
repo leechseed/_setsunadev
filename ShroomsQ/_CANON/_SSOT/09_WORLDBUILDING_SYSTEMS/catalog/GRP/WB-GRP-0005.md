@@ -13,6 +13,7 @@ one_line: "The power that owns the Outlaw West: the creep as a side on the map, 
 fields: {"scale": "nation-state", "region": "the Outlaw West", "rivals": "the techno-corpo state · the narco state", "gauge": {"value": "Life", "steps": [{"s": "+", "name": "Growth", "plain": "Life spreads."}, {"s": "−", "name": "Crowding", "plain": "There's no room left."}, {"s": "−−", "name": "Consumption", "plain": "It eats what it covers."}, {"s": "−−−", "name": "A death that calls itself life", "plain": "You're not dead. You're part of it now."}]}}
 sources: ["apple-notes-2026 digest", "6/20/2025 world dump", "IDEAS - POSSIBLE SETUP (5/11/2025)"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Kudzu (the faction)

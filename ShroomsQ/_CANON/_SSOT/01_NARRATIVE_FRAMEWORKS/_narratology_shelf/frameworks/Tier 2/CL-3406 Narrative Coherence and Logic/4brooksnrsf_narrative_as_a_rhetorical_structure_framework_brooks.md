@@ -16,6 +16,7 @@ TIER: Tier 2
 REASON: Studies narrative coherence and logical structures, aligning with narrative coherence and logic.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Brooks's Narrative as a Rhetorical Structure Framework**](#1-title-brookss-narrative-as-a-rhetorical-structure-framework)

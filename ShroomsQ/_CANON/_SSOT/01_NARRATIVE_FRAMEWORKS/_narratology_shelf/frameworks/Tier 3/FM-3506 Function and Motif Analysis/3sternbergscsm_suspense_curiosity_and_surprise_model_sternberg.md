@@ -17,6 +17,7 @@ TIER: Tier 3
 REASON: Analyzes elements that drive audience engagement and plot, fitting within function and motif analysis.
 
 
+tier: narratology
 ---
 - [1. Title: **Sternberg's Suspense, Curiosity, and Surprise Model**](#1-title-sternbergs-suspense-curiosity-and-surprise-model)
 - [2. Key Concepts](#2-key-concepts)

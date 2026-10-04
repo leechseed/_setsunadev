@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: trope_register
 version: 1.0.0
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, all future IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: undefined-trope rule written; OPEN list closed. Earlier: RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"

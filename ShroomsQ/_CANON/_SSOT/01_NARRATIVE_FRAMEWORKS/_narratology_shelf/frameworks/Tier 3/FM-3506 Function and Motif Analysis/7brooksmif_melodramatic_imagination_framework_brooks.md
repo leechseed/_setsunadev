@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: FM-3506 Function and Motif Analysis
 TIER: Tier 3
 REASON: Analyzes the function of melodrama in narratives, aligning with function and motif analysis.
+tier: narratology
 ---
 
 - [1. Title: **Brooks's Melodramatic Imagination Framework**](#1-title-brookss-melodramatic-imagination-framework)

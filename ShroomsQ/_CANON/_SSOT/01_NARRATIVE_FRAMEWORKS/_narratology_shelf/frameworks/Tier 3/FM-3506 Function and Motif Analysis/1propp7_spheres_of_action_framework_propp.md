@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: FM-3506 Function and Motif Analysis
 TIER: Tier 3
 REASON: Analyzes specific narrative functions that drive the plot, aligning with function and motif analysis.
+tier: narratology
 ---
 
 - [1. **Title: Propp's Spheres of Action Framework**](#1-title-propps-spheres-of-action-framework)

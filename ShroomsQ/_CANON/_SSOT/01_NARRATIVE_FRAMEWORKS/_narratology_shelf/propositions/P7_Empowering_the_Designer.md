@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 # P7_Empowering_the_Designer
 
 **TL;DR:** The General Model of Narrativity enables artists to align their vision with market demands, ensuring narratives are adaptable, relevant, and impactful across platforms and technologies while preserving artistic integrity.

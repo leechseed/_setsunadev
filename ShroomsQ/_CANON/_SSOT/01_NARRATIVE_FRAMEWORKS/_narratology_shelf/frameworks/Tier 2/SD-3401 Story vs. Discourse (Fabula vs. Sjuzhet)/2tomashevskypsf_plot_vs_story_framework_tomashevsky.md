@@ -15,6 +15,7 @@ TIER: Tier 2
 REASON: Differentiates between plot and story elements, fitting into "Story vs. Discourse".
 
 
+tier: narratology
 ---
 
 - [1. **Tomashevsky's Plot vs. Story Framework**](#1-tomashevskys-plot-vs-story-framework)

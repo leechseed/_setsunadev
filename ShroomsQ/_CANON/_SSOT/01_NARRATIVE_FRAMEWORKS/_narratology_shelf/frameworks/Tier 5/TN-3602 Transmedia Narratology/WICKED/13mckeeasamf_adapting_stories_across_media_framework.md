@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: TN-3602 Transmedia Narratology
 TIER: Tier 5
 REASON: Deals with how stories translate and adapt across different media forms, fitting into transmedia and cross-platform narrative studies.
+tier: narratology
 ---
 
 - [**1. Title: McKee’s Adapting Stories Across Media Framework**](#1-title-mckees-adapting-stories-across-media-framework)

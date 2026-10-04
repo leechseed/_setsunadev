@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: FM-3506 Function and Motif Analysis
 TIER: Tier 3
 REASON: Analyzes narrative roles and functions, fitting within function and motif analysis.
+tier: narratology
 ---
 
 - [1. **Title: Greimas's Actantial Model**](#1-title-greimass-actantial-model)

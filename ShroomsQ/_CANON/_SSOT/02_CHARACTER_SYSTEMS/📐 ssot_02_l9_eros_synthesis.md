@@ -2,6 +2,7 @@
 type: ssot_synthesis
 category: character_systems
 version: 1.0.0
+tier: fabula
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT]
 status: "v1.0.0 2026-10-04: RULED, Chief — BOLO 100 C20: stamped the L9 EROS module of the character system. RULED 2026-09-29 — all ten applied in the character system v2.2.0"

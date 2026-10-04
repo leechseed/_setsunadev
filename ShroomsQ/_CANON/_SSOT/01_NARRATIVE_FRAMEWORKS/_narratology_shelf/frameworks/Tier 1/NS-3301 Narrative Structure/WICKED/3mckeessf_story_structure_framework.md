@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: Explicitly addresses how stories are structurally organized, aligning directly with narrative structure.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Story Structure Framework**](#1-title-mckees-story-structure-framework)

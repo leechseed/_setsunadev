@@ -2,6 +2,7 @@
 type: ssot_07_theme_systems
 category: theme_system
 version: 1.3.1
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
 status: "v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"

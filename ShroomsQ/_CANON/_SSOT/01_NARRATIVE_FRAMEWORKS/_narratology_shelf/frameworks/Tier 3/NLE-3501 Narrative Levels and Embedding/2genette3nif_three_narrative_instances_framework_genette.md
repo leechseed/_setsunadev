@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NLE-3501 Narrative Levels and Embedding
 TIER: Tier 3
 REASON: Examines narrative instances and their levels within stories, aligning with narrative levels and embedding.
+tier: narratology
 ---
 
 - [1. **Title: Genette's Narrative Instances Framework**](#1-title-genettes-narrative-instances-framework)

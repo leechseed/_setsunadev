@@ -13,6 +13,7 @@ one_line: "HELD in 03 until it has its own canon node; binding principle and sec
 fields: {}
 sources: ["ssot_03_setting_system"]
 status: "stub ⧗"
+tier: fabula
 ---
 
 # Sync Cult (held)

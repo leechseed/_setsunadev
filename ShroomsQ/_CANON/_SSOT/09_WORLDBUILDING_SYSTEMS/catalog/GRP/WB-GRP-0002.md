@@ -13,6 +13,7 @@ one_line: "The societies of the moon from the MOON/SAGA seed; not The Outliers."
 fields: {}
 sources: ["moon-saga-seed.md"]
 status: "stub ⧗"
+tier: fabula
 ---
 
 # The moon societies (May 2024)

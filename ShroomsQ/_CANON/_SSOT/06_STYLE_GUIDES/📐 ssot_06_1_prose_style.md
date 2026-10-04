@@ -2,6 +2,7 @@
 type: ssot_06_style_guides
 category: prose_style
 version: 1.3.2
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
 status: "v1.3.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: stale OPEN marks struck, intro convention reworded. v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"

@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: GT-3505 Genre and Narrative Typology
 TIER: Tier 3
 REASON: Addresses how narrative fits into various genres, informing narrative typology and classification.
+tier: narratology
 ---
 
 - [**1. Title: McKee’s Genre Framework**](#1-title-mckees-genre-framework)

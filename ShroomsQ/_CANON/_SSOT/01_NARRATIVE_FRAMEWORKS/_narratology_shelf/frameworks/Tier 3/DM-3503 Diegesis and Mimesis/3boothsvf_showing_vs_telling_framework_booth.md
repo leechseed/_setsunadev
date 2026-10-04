@@ -18,6 +18,7 @@ TIER: Tier 3
 REASON: Differentiates between showing and telling in narratives, aligning with diegesis and mimesis.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Booth's Showing vs. Telling Framework**](#1-title-booths-showing-vs-telling-framework)

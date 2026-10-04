@@ -13,6 +13,7 @@ one_line: "The campus building style: century brick and moss carrying a Feed ret
 fields: {"scale": "locality", "material": "century-old brick, moss and kudzu, Feed-conditioned interiors", "says": "prestige stone with a product word bolted on"}
 sources: ["ssot_03_setting_system", "delta-coast-ultra-school.md"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # Southern Gothic prestige brick (DCUS campus)

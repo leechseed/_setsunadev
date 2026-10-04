@@ -10,6 +10,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: Focuses on defining what a story is at a fundamental level, addressing structural core principles of storytelling.
+tier: narratology
 ---
 
 - [**1. Title: McKee's Definition of Story Framework**](#1-title-mckees-definition-of-story-framework)

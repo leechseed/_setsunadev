@@ -12,6 +12,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: FO-3403 Focalization
 TIER: Tier 2
 REASON: Analyzes the perspective through which the narrative is presented, aligning with "Focalization".
+tier: narratology
 ---
 
 - [1. **Title: Genette's Focalization Framework**](#1-title-genettes-focalization-framework)

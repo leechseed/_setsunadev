@@ -14,6 +14,7 @@ TIER: Tier 2
 REASON: Chronotope integrates time and space in narratives, aligning with "Time and Temporality".
 
 
+tier: narratology
 ---
 
 - [1. **Title: Bakhtin's Chronotope Framework**](#1-title-bakhtins-chronotope-framework)

@@ -2,6 +2,7 @@
 type: ssot_08_tracking_systems
 category: tracking_system
 version: 1.1.1
+tier: fabula
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: proportion lane in §7 (act and third shares, 25/50/25 default) and a reversibility score on stakes_delta. Earlier: v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: theme and trope hooks, tempo and meter shapes, time-code ordering, reader track in the map, open steps closed. Earlier: 0.3.0 reader model (9A); 0.2.0 sequence segment, iterative fields, provisional cables."

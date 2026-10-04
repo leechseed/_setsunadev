@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: texture_layer
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 module_of: ssot_01_texture_system
 applies_to: [OVEREXITOUT, all future IPs, BVX-LEARN keying]

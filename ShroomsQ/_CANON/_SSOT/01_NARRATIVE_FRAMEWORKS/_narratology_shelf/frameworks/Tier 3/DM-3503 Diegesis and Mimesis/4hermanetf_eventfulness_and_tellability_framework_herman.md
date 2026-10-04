@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Focuses on event representation in narratives, aligning with diegesis and mimesis.
 
 
+tier: narratology
 ---
 
 

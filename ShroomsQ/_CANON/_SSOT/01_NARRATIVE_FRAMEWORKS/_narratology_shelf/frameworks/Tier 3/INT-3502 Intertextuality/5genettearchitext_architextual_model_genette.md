@@ -14,6 +14,7 @@ TIER: Tier 3
 REASON: Studies architextual relations between texts, aligning with intertextuality.
 
 
+tier: narratology
 ---
 
 - [1. **Title: Genette's Architextual Model**](#1-title-genettes-architextual-model)

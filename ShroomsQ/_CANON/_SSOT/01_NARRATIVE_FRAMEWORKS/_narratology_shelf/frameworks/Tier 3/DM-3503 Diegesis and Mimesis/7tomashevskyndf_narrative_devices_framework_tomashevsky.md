@@ -14,6 +14,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: DM-3503 Diegesis and Mimesis
 TIER: Tier 3
 REASON: Explores narrative devices and their role in storytelling, aligning with diegesis and mimesis.
+tier: narratology
 ---
 
 - [1. Title: **Tomashevsky's Narrative Devices Framework**](#1-title-tomashevskys-narrative-devices-framework)

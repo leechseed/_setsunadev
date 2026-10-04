@@ -16,6 +16,7 @@ TIER: Tier 3
 REASON: Analyzes the fantastic genre, aligning with genre and narrative typology.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Todorov's Fantastic Mode Framework**](#1-title-todorovs-fantastic-mode-framework)

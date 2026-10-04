@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: DM-3503 Diegesis and Mimesis
 TIER: Tier 3
 REASON: Explores how narratives transform through diegesis and mimesis.
+tier: narratology
 ---
 
 - [1. Title: **Todorov's Narrative Transformation Framework**](#1-title-todorovs-narrative-transformation-framework)

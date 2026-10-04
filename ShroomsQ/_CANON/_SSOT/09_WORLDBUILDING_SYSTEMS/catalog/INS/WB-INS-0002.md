@@ -13,6 +13,7 @@ one_line: "The school as an institution; the campus as a place is 03 `dcus`."
 fields: {"scale": "locality", "coercion": "Star-Rating, Sync Protocol, Feed-linked dress (run by the Administration)", "rule_making": "Bishop owners hold the charter; the Administration issues standards", "consent": "missing: students enroll into a rating they cannot refuse", "fused_from": "Red Hills Academy (2022-23) + Inner Spiral Academy (2025-26)", "gauge": {"value": "Worth", "steps": [{"s": "+", "name": "Earned worth", "plain": "You are what you make of yourself."}, {"s": "−", "name": "Pedigree", "plain": "Your name counts more than your work."}, {"s": "−−", "name": "Ownership", "plain": "You're a product the Bishops own."}, {"s": "−−−", "name": "A score that calls itself your nature", "plain": "The rating says who you are, and you believe it."}]}}
 sources: ["delta-coast-ultra-school.md", "ssot_03_setting_system"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # Delta Coast Ultra School (the institution)

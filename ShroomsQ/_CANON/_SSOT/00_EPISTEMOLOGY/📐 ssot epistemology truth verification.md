@@ -2,6 +2,7 @@
 type: ssot_methodology
 category: epistemology
 version: 1.0.2
+tier: foundation
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical

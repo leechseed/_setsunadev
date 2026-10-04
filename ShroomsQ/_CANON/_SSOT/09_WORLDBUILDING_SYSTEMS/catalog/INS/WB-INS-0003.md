@@ -13,6 +13,7 @@ one_line: "The standards body of ASTRO7EX."
 fields: {}
 sources: ["astro7ex-standards-body.md"]
 status: "stub ⧗"
+tier: fabula
 ---
 
 # The ASTRO7EX Standards Body

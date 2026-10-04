@@ -3,6 +3,7 @@ type: ssot_02_character_systems
 category: template_astrology_ingest
 module_of: ssot_02_character_systems_vertical_slice
 version: 1.0.0
+tier: fabula
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.0.0 2026-10-04: RULED — BOLO 100 C18"

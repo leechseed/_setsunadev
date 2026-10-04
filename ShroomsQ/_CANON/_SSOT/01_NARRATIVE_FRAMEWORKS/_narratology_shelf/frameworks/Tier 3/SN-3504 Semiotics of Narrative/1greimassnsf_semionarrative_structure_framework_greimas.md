@@ -16,6 +16,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: SN-3504 Semiotics of Narrative
 TIER: Tier 3
 REASON: Focuses on the semiotic structures within narratives, aligning with the study of semiotics.
+tier: narratology
 ---
 
 - [1. Title: **Greimas's Semio-Narrative Structure Framework**](#1-title-greimass-semio-narrative-structure-framework)

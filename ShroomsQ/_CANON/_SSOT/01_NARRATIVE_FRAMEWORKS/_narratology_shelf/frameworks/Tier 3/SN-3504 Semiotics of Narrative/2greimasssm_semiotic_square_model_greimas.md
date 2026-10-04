@@ -18,6 +18,7 @@ TIER: Tier 3
 REASON: Utilizes semiotic squares to analyze narrative structures, aligning with semiotics.
 
 
+tier: narratology
 ---
 - [**Greimas's Semiotic Square Model**](#greimass-semiotic-square-model)
   - [**Binary Oppositions**](#binary-oppositions)

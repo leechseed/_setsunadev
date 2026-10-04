@@ -13,6 +13,7 @@ one_line: "Clothing that glows on the Feed: enforced legibility (03 DCUS S3 SENS
 fields: {"scale": "locality", "material": "Feed-linked garments that glow", "marks": "legibility and, by 03 S3, the palette descent clean to NEON-ROT"}
 sources: ["ssot_03_setting_system", "dcus-standards-body.md"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # Feed-linked clothing (DCUS)

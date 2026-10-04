@@ -15,6 +15,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: Explores the syntactic organization of narratives, aligning with "Narrative Structure".
+tier: narratology
 ---
 
 - [1. **Todorov's Narrative Syntax Model**](#1-todorovs-narrative-syntax-model)

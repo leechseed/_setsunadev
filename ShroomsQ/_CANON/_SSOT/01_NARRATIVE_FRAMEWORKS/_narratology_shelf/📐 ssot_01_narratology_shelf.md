@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: narratology_shelf
 version: 1.0.0
+tier: narratology
 last_updated: 2026-09-03
 status: PROMOTED 2026-09-03 from the archived 1.04 MARIMARI EN build (the terminal build of the 2024 narratology lineage) — ruling: the ancients pass, sit rep 2026-09-03
 purpose: "The house narratology reference shelf: 109 framework distills (one per theorist-model, UID-keyed) filed by tier and competency, plus the competency catalog, the General Model propositions, and the pre-alpha Rulebook. Feeds BOLO 18 stage 2 (spine `feeds:` sweep) and the craft-shelf distill count."

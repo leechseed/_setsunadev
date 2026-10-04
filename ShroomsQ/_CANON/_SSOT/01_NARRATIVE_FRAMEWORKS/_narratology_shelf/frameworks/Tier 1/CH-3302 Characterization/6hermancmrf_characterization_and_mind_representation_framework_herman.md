@@ -13,6 +13,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: CH-3302 Characterization
 TIER: Tier 1
 REASON: Focuses on character development and psychological representation, aligning with "Characterization".
+tier: narratology
 ---
 
 - [1. **Title: Herman's Characterization and Mind Representation Framework**](#1-title-hermans-characterization-and-mind-representation-framework)

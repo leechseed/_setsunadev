@@ -3,6 +3,7 @@ rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_procedure
 category: operations
 version: 1.0.0
+tier: operations
 last_updated: 2026-10-04
 version_note: "1.0.0 stamped 2026-10-04, BOLO 100 (Chief: \"rec\")"
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]

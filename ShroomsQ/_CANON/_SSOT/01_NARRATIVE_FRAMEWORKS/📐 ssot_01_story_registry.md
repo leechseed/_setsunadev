@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: story_registry
 version: 1.0.0
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [every story in the LEECHSEED universe]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: stale marks stripped, blank-slot rule written, per-story blanks and fabula placements parked by name, OPEN list closed. Earlier: RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1; a further BOLO 91 pass (phone notes digest) adds LEECHSEED as an open-universe seed."

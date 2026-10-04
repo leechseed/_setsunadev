@@ -17,6 +17,7 @@ TIER: Tier 2
 REASON: Differentiates between the raw events of a story and how they are presented, directly aligning with the "Story vs. Discourse" category.
 
 
+tier: narratology
 ---
 
 - [1. **Chatman's Story vs. Discourse Framework**](#1-chatmans-story-vs-discourse-framework)

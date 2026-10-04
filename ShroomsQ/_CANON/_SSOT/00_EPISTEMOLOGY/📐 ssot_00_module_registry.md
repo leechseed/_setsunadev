@@ -3,6 +3,7 @@ type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
 version: 1.1.0
+tier: foundation
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical

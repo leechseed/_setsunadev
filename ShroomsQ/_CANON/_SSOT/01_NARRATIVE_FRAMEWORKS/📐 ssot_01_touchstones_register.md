@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: touchstones_register
 version: 1.0.0
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [all IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"REC.\") — BOLO 100 TOUCH BATCH 1: schema, rules, field rename, front-door links; ten Modern Poetics principles ruled in as TS 2:1 to TS 2:10."

@@ -15,6 +15,7 @@ CORE: NS-3301 Narrative Structure
 TIER: Tier 1
 REASON: Analyzes the central part of narratives as a meaningful structure, fitting within "Narrative Structure".
 
+tier: narratology
 ---
 
 - [1. **Brooks's Middle as a Site of Meaning Framework**](#1-brookss-middle-as-a-site-of-meaning-framework)

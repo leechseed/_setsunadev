@@ -2,6 +2,7 @@
 type: ssot_06_style_guides
 category: style_guide
 version: 2.2.1
+tier: narratology
 module_of: ssot_06_2_documents_style
 last_updated: 2026-10-04
 reader: "anyone writing or reviewing an SSOT document"

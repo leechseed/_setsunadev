@@ -2,6 +2,7 @@
 type: ssot_03_setting_systems
 category: state_architecture
 version: 1.2.0
+tier: fabula
 module_of: ssot_03_setting_system
 last_updated: 2026-10-04
 applies_to: [all IPs]

@@ -13,6 +13,7 @@ one_line: "The patterned campus practice of being rated and verified; the Star-R
 fields: {"scale": "locality", "practice": "every student carries a live score; Sync verification", "first_onstage": "m2_first_sync_verified (planned scene, not yet narrated)"}
 sources: ["dcus-standards-body.md", "ssot_03_setting_system"]
 status: "filled ⧗"
+tier: fabula
 ---
 
 # The Star-Rating (ritual life)

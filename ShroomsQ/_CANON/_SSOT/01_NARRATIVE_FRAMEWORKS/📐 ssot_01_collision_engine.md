@@ -2,6 +2,7 @@
 type: ssot_01_narrative_frameworks
 category: collision_engine
 version: 1.0.1
+tier: narratology
 last_updated: 2026-10-04
 applies_to: [all IPs, character pipeline, setting system]
 status: canonical — lattice Module 5, built on Chief's go 2026-08-26 (BOLO 17); contact vocabulary provisional

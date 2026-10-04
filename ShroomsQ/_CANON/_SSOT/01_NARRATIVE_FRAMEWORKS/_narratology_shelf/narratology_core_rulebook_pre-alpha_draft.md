@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 
 
 - [1. Narratology](#1-narratology)

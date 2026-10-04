@@ -15,6 +15,7 @@ TIER: Tier 1
 REASON: Focuses on character development and portrayal, aligning with "Characterization".
 
 
+tier: narratology
 ---
 
 - [1. **Title: Rimmon-Kenan's Characterization Framework**](#1-title-rimmon-kenans-characterization-framework)

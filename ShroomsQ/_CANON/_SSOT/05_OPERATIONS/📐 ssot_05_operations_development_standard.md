@@ -2,6 +2,7 @@
 type: ssot_standard
 category: operations
 version: 0.1.2
+tier: operations
 last_updated: 2026-09-15
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: working — v0.1; promotes to canonical after two project uses (DOCTRINE 0, Invariant I)

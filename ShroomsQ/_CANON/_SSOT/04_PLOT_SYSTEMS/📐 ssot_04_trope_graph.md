@@ -2,6 +2,7 @@
 type: ssot_04_trope_graph
 category: plot_system
 version: 1.0.0
+tier: narratology
 last_updated: 2026-10-04
 module_of: ssot_04_plot_system
 applies_to: [all IPs]

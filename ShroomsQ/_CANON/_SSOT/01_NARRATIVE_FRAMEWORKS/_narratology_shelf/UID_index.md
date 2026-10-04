@@ -1,3 +1,6 @@
+---
+tier: narratology
+---
 Certainly! Below is the comprehensive table that maps each **UID** to its corresponding **Framework**, **Category ID**, **Category Name**, and **Tier** based on your provided categorization.
 
 | **UID**               | **Framework**                                               | **Tier** | **Category ID** | **Category Name**                              |

@@ -17,6 +17,7 @@ KNOWLEDGE TYPE: TACIT
 CORE: NV-3405 Narrative Voice and Point of View
 TIER: Tier 2
 REASON: Examines how narratives immerse the reader through voice and perspective, fitting within "Narrative Voice and Point of View".
+tier: narratology
 ---
 
 - [1. Title: **Ryan's Immersion Framework**](#1-title-ryans-immersion-framework)

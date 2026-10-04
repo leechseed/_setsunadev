@@ -16,6 +16,7 @@ KNOWLEDGE TYPE: EXPLICIT
 CORE: FM-3506 Function and Motif Analysis
 TIER: Tier 3
 REASON: Focuses on themes and motifs, aligning with function and motif analysis.
+tier: narratology
 ---
 
 - [1. Title: **Tomashevsky's Theme and Motif Framework**](#1-title-tomashevskys-theme-and-motif-framework)

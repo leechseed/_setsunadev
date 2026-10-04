@@ -16,6 +16,7 @@ TIER: Tier 4
 REASON: Examines how the medium influences narrative interpretation, fitting into advanced semiotics.
 
 
+tier: narratology
 ---
 
 - [1. Title: **Ryan's Medium Specificity Framework**](#1-title-ryans-medium-specificity-framework)
