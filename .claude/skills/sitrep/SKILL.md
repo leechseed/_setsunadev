@@ -41,7 +41,9 @@ Model rule is the gearbox's (SOP §1): PS (haiku) extract, MS (sonnet) writes, C
 python _tools/sitrep/assemble.py <date>
 ```
 
-Runs the reviewer's checklist (eight blocks in order · text + trunk on every item · trunk values legal · every `[[key]]` in glossary.json · every BOLO number in Block IV real and placed once · Block V rows = the Blocked table · plain + strand complete · no stale fragment) and prints the digest: per-block counts against the previous board, first line of each, findings. Blocking findings (a missing fragment, an unknown glossary key) stop the write; fix the one fragment, rerun. Advisory findings go into the reply's one-line caveat, not into a re-run.
+Runs the reviewer's checklist (eight blocks in order · text + trunk on every item · trunk values legal · every `[[key]]` in glossary.json · every BOLO number in Block IV real and placed once · Block V rows = the Blocked table · plain + strand complete · no stale fragment) and prints the digest: per-block counts against the previous board, first line of each, findings. Blocking findings (a missing fragment, an unknown glossary key) stop the write; fix the one fragment, rerun. Advisory findings go into the reply's one-line caveat, not into a re-run, with one exception.
+
+**The auto-rerun (BOLO 95, ruled 10/4):** when the digest prints `RERUN <ROLE>` lines (sentences over 20 words, SOP 3.2), launch each named role once, in one message, with its `work/<date>/rerun.<ROLE>.md` brief verbatim, then rerun `assemble.py`. A role reruns once per board (the brief file is the marker); what survives goes into the caveat. Block VI is the main line's: write it plain the first time. Measured 10/4: the first pass carried 19 long sentences forward; one rerun took the board to 2.
 
 Then the main line does the only judgment work in the run, off the digest alone:
 

@@ -124,6 +124,24 @@ def main():
         if n: longs[b["id"]] = n
     if longs:
         findings.append("sentences over 20 words (advisory, SOP 3.2): " + " · ".join(f"{k} {v}" for k, v in longs.items()))
+        # the auto-rerun (BOLO 95, ruled 10/4 "recommend"): one rerun per role, the finding pasted; written once, never looped
+        ROLES = {"0": ("RACK", "haiku"), "I": ("INDEX", "sonnet"), "II": ("INDEX", "sonnet"), "V": ("INDEX", "sonnet"), "IV": ("WATCH", "haiku")}
+        byrole = {}
+        for bid, n in longs.items():
+            if bid in ROLES: byrole.setdefault(ROLES[bid], []).append((bid, n))
+        for (role, model), hits in byrole.items():
+            rp = os.path.join(wd, f"rerun.{role}.md")
+            if os.path.exists(rp): continue  # already rerun once this board; the rest rides as advisory
+            files = " · ".join(os.path.relpath(os.path.join(wd, "frag", f"{b}.json"), ROOT).replace("\\", "/") for b, _ in hits)
+            io.open(rp, "w", encoding="utf-8").write(
+                f"Repo root {ROOT}. You are {role}, rerun with one finding. Model: {model}. Write files as UTF-8.\n"
+                f"READ and REWRITE only: {files}.\n"
+                f"FINDING (RANGE, DOC-SOP 3.2): sentences over 20 words: " + ", ".join(f"{b} has {n}" for b, n in hits) + ". "
+                "Rule: one idea per sentence, 20 words at most; every sentence names who does what. A ' · ' list item counts as its own sentence.\n"
+                "Do: split or trim every sentence and list item over 20 words, in plain, strand, line, why and every item's text. Strand values stay strings. "
+                "Keep all facts, numbers, keys, [[key|label]] links, trunks, s, when and the JSON shape exactly. Text inside quotation marks is Chief's and stays verbatim. "
+                "Count the words yourself before you finish.\nReply in one line.\n")
+            print(f"RERUN {role} ({model}) · brief {os.path.relpath(rp, ROOT)}")
 
     # the digest: what changed vs the previous board
     prev_dir = os.path.join(wd, "prev")
