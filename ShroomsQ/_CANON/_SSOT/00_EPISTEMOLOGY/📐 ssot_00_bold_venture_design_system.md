@@ -1,38 +1,49 @@
 ---
-
-## type: ssot_00_foundations category: design_system version: 2.0.0 last_updated: 2026-09-01 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BOLD_VENTURE] status: canonical purpose: Defines the Bold Venture Design System as the mandatory visual and interaction standard for all Bold Venture digital output. Adapted wholesale from the Astro UXDS v7 military-grade design system with Bold Venture naming conventions. dependencies: [] source_system: Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force) compliance: [MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA]
+type: ssot_00_foundations
+category: design_system
+version: 2.0.1
+last_updated: 2026-10-04
+applies_to: [BOLD_VENTURE]
+status: canonical
+trunk: ORANGE
+purpose: "Command-wide base tool, not part of the storytelling stack. Defines the Bold Venture Design System as the mandatory visual and interaction standard for all Bold Venture digital output. Adapted wholesale from the Astro UXDS v7 military-grade design system with Bold Venture naming conventions."
+dependencies: []
+source_system: "Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force)"
+compliance: [MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA]
 ---
 # 📐 ssot_00_bold_venture_design_system
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [Core Methodology](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#core-methodology)
-    1. [Design System Architecture](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#design-system-architecture)
-    2. [Token Hierarchy](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#token-hierarchy)
-    3. [Color System — Reference Palettes](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#color-system-reference-palettes)
-    4. [Color System — Semantic Tokens Dark Theme](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#color-system-semantic-tokens-dark-theme)
-    5. [Color System — Semantic Tokens Light Theme](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#color-system-semantic-tokens-light-theme)
-    6. [Status System](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#status-system)
-    7. [Classification Markings](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#classification-markings)
-    8. [Data Visualization Palette](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#data-visualization-palette)
-    9. [Typography System](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#typography-system)
-    10. [Spacing System](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#spacing-system)
-    11. [Border Radius and Opacity](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#border-radius-and-opacity)
-    12. [Responsive Grid](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#responsive-grid)
-    13. [Component Inventory](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#component-inventory)
-    14. [Component Token Specifications](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#component-token-specifications)
-    15. [UX Patterns](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#ux-patterns)
-    16. [Compliance Framework](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#compliance-framework)
-    17. [Theming Architecture](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#theming-architecture)
-    18. [Naming Convention — Astro to Bold Venture Translation](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#naming-convention)
-3. [Implementation](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#implementation)
-4. [Examples](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#examples)
-5. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [Core Methodology](#core-methodology)
+    1. [Design System Architecture](#design-system-architecture)
+    2. [Token Hierarchy](#token-hierarchy)
+    3. [Color System — Reference Palettes](#color-system--reference-palettes)
+    4. [Color System — Semantic Tokens Dark Theme](#color-system--semantic-tokens-dark-theme)
+    5. [Color System — Semantic Tokens Light Theme](#color-system--semantic-tokens-light-theme)
+    6. [Status System](#status-system)
+    7. [Classification Markings](#classification-markings)
+    8. [Data Visualization Palette](#data-visualization-palette)
+    9. [Typography System](#typography-system)
+    10. [Spacing System](#spacing-system)
+    11. [Border Radius and Opacity](#border-radius-and-opacity)
+    12. [Responsive Grid](#responsive-grid)
+    13. [Component Inventory](#component-inventory)
+    14. [Component Token Specifications](#component-token-specifications)
+    15. [UX Patterns](#ux-patterns)
+    16. [Compliance Framework](#compliance-framework)
+    17. [Theming Architecture](#theming-architecture)
+    18. [Naming Convention — Astro to Bold Venture Translation](#naming-convention--astro-to-bold-venture-translation)
+3. [Implementation](#implementation)
+4. [Examples](#examples)
+5. [Version History](#version-history)
 
 ---
 
 ## Purpose
+
+**Scope: Command-wide base tool, not part of the storytelling stack.** It sets the look of Command output. It holds no story method, and no story system depends on it.
 
 This document defines the **Bold Venture Design System** as the mandatory visual and interaction standard for all digital output produced under the Bold Venture umbrella. Every application, dashboard, tool, template renderer, and interactive artifact conforms to this system. The system is adapted wholesale from the **Astro UXDS v7**, a military-grade, open-source design system built by **Rocket Communications Inc.** for the **U.S. Space Force**. Astro UXDS is compliant with **MIL-STD-1472H**, **MIL-STD-2525D**, and **WCAG 2.1 AA**. The Bold Venture Design System inherits all compliance properties, color science, typography specifications, spacing scales, component APIs, and UX patterns from Astro UXDS and rebrands them under Bold Venture naming conventions.
 
@@ -853,5 +864,6 @@ The **Database Editor** (Phase 4 deliverable) applies the Bold Venture Design Sy
 
 |Version|Date|Changes|
 |---|---|---|
+|**2.0.1**|**2026-10-04**|BOLO 100 base batch 1 (B1, B2, B3, B12, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block, `trunk: ORANGE` added, table-of-contents links repointed to in-page anchors, scope line added to the purpose (Command-wide base tool, not part of the storytelling stack), `applies_to` drops the three story IPs. No design content changed.|
 |**2.0.0**|**2026-09-01**|**THE ROSTER ruled — the proprietary brand color layer.** Rose anchor (#8A1F44) + flesh family locked (flesh shadows through the rose, never gray); rose-cast grounds; gold enters the core accent roster. Four registers stood up: EMBER (all-hours ambient, Autumn Kiss lineage) · PUNCH (the live edge, Tropical Punch lineage, time-boxed) · DUST (daylight, Dusty Drama lineage) · NOIR (the deep default, Garnet/Satin Berry donations). The Luminance Law (warm = light above flesh luminance, never midtone fill), the one-red ledger, the adhesive rule + rose quota, the surface map (labels→buildings), semantic dark/light token remap. Astro palettes demoted to legacy (greys + status retained). Challenge bench of 11 palettes adjudicated; 4-lens panel record wf_5b0af08b-c49.|
 |1.0.0|2026-03-09|Initial Bold Venture Design System SSOT. Wholesale adaptation of Astro UXDS v7. Complete reference palettes (15 hues, 100+ hex values), dark and light theme semantic tokens, six-level status system, classification markings, data visualization palettes, 18 typography styles, 15-step spacing scale, 40-component inventory, component token specifications, 5 navigation patterns, 3 notification types, three-tier compliance framework, theming architecture, and Astro-to-Bold-Venture naming translation.|

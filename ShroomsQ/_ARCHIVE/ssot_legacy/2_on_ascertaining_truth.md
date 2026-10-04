@@ -1,3 +1,5 @@
+> ARCHIVED 2026-10-04 (BOLO 100, B4): the same ten methods live in `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`. Read that file; this note is a twin and is not maintained.
+
 ### **Knowledgebase Entry: The Importance of Understanding the Process of Ascertaining Truth**
 
 ---

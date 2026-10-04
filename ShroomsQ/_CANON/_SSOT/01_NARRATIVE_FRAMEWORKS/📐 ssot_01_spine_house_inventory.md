@@ -20,7 +20,7 @@ The repo's own processed materials, mapped to the spine. Ordered by level; "also
 | `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md` | the spine itself | L1–L7 |
 | `01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_layer.md` | story/discourse frame, Ten Questions | L4, L7 |
 | `DOCTRINE-0-INVARIANTS.md` | what qualifies as a story rule | L6 |
-| `00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md` (+ `2_on_ascertaining_truth.md`) | the validity layer under "grand argument" | — |
+| `00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md` (the raw twin note is archived, BOLO 100 B4) | the validity layer under "grand argument" | — |
 | `_0.1_BVX_LEARN/_index/_INDEX.md` | the 1,106-source registry the shelves cite | all |
 
 ## L1 · Throughlines

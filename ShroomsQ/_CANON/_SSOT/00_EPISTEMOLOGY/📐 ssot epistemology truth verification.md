@@ -1,11 +1,12 @@
 ---
 type: ssot_methodology
 category: epistemology
-version: 1.0.0
-last_updated: 2026-02-10
+version: 1.0.1
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
-purpose: Defines frameworks for determining truth across empirical, logical, intuitive, consensual, and pragmatic methods
+trunk: BLACK
+purpose: Defines frameworks for determining truth across empirical, logical, intuitive, consensual, and pragmatic methods, and says which framework checks which claim in each storytelling system
 dependencies: []
 ---
 
@@ -15,10 +16,11 @@ dependencies: []
 1. [Purpose](#purpose)
 2. [Core Concepts](#core-concepts)
 3. [The 10 Truth Frameworks](#the-10-truth-frameworks)
-4. [Implementation](#implementation)
-5. [Examples](#examples)
-6. [References](#references)
-7. [Version History](#version-history)
+4. [How the Frameworks Check the Systems](#how-the-frameworks-check-the-systems)
+5. [Implementation](#implementation)
+6. [Examples](#examples)
+7. [References](#references)
+8. [Version History](#version-history)
 
 ---
 
@@ -261,6 +263,26 @@ These ten frameworks operate independently and in combination. Effective truth v
 
 ---
 
+## How the Frameworks Check the Systems
+
+The ten frameworks are the validity layer under the grand argument. Each storytelling system makes one kind of claim. This table says which framework checks that claim.
+
+| System | The claim it makes | The framework that checks it |
+|---|---|---|
+| Character (02) | A trait or a change is true to the person. | Coherence (fits the rest of the character), Logical Reasoning (the change follows from its cause), Empirical Observation (the psychology holds up). |
+| Setting (03) | A canon fact: a place, rule or custom exists. | Coherence (no other fact contradicts it), Correspondence (the people act as the fact says). |
+| Plot (04) | An event happened and caused the next one. | Logical Reasoning (the cause chain holds), Historical Method (each event has a source in canon). |
+| Theme (07) | The argument: the story proves its premise. | Logical Reasoning (the conclusion follows from the premises), Pragmatic Theory (the premise produces the drama it claims). |
+| Tracking (08) | A record: a state, time code or story point matches the story. | Correspondence (the record matches the text), Coherence (no record contradicts another). |
+| Worldbuilding (09) | A world claim fits the rules the world sets for itself. | Coherence, Correspondence. |
+
+Two rules apply to every row.
+
+1. A claim that one framework cannot confirm needs a second framework. Example 1 and Example 2 show the pattern.
+2. Skepticism and Critical Thinking (Framework 8) tests any claim in any row. A claim that survives it is checked. A claim that fails it stays marked open.
+
+---
+
 ## Implementation
 
 ### Research Design Integration
@@ -355,3 +377,4 @@ This epistemological SSOT has no dependencies on other LEECHSEED SSOTs. Other SS
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0.0 | 2026-02-10 | Initial SSOT extracted from legacy documentation, restructured with MCDP standards |
+| 1.0.1 | 2026-10-04 | BOLO 100 base batch 1 (B2, B11, B13, B15), RULED Chief "REC.": `trunk: BLACK` added; new section "How the Frameworks Check the Systems" ties the ten frameworks to the character, setting, plot, theme, tracking and worldbuilding systems. The raw twin note `2_on_ascertaining_truth.md` is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` (B4): this file is the one source. |

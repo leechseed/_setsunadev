@@ -1,22 +1,29 @@
 ---
-
-## type: ssot_00_foundations category: module_architecture version: 1.0.0 last_updated: 2026-03-08 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the Layer-Locked Module system — the plugin/extension architecture for attaching new capability to the 12-Layer Character Database without expanding the core schema. Establishes the module API contract, attachment protocol, data access rules, and the registry format for all current and planned modules." dependencies: ["ssot_00_variable_registry", "ssot_00_base60_number_system", "ssot_03_character_systems_vertical_slice"]
+type: ssot_00_foundations
+category: module_architecture
+version: 1.0.1
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: canonical
+trunk: BLACK
+purpose: "Defines the Layer-Locked Module system, the plugin/extension architecture for attaching new capability to the 12-Layer Character Database without expanding the core schema. Establishes the module API contract, attachment protocol, data access rules, and the registry format for all current and planned modules."
+dependencies: ["ssot_00_variable_registry", "ssot_00_base_60_number_system", "ssot_02_character_systems_vertical_slice"]
 ---
 # 📐 SSOT: Module Architecture
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [The Core Principle](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-core-principle)
-3. [What a Module Is](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#what-a-module-is)
-4. [Module Anatomy](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#module-anatomy)
-5. [The Attachment Protocol](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-attachment-protocol)
-6. [Data Access Rules](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#data-access-rules)
-7. [Module API Contract](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#module-api-contract)
-8. [Module Lifecycle](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#module-lifecycle)
-9. [Module Registry Format](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#module-registry-format)
-10. [Application Architecture Vision](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#application-architecture-vision)
-11. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [The Core Principle](#the-core-principle)
+3. [What a Module Is](#what-a-module-is)
+4. [Module Anatomy](#module-anatomy)
+5. [The Attachment Protocol](#the-attachment-protocol)
+6. [Data Access Rules](#data-access-rules)
+7. [Module API Contract](#module-api-contract)
+8. [Module Lifecycle](#module-lifecycle)
+9. [Module Registry Format](#module-registry-format)
+10. [Application Architecture Vision](#application-architecture-vision)
+11. [Version History](#version-history)
 
 ---
 
@@ -61,6 +68,15 @@ A module does NOT:
 - Modify core layer variables
 - Override derived statistics or flag triggers defined in the core system
 - Require other modules to function (modules are independent)
+
+### Field Modules and Doc Modules
+
+The word "module" has two meanings in the Command. Each meaning gets its own name.
+
+- A **field module** is a Layer-Locked Module. It is a set of variables that attaches beneath a layer and lives under `MOD.<ID>`. This document and the Module Registry govern field modules.
+- A **doc module** is a sibling document in `02_CHARACTER_SYSTEMS`, stamped `module_of: ssot_02_character_systems_vertical_slice`. It holds one method: the Step 1 gate, an ingest template, the Dramatica integration, or the state architecture. It adds no variables to a layer.
+
+The slice governs a doc module. The registry never lists one. Write "field module" or "doc module" whenever the bare word could mean either.
 
 ---
 
@@ -402,7 +418,7 @@ Each module entry in the Layer-Locked Module Registry contains:
 |`module_id`|Unique code|
 |`display_name`|Human readable|
 |`version`|Current version|
-|`status`|`planned`, `draft`, `active`, `retired`|
+|`status`|`conceptual`, `planned`, `draft`, `active`, `absorbed`, `retired`. `absorbed` means the core schema now holds the module's fields, so the module is closed.|
 |`attachment_points`|Layer code(s)|
 |`tier_min`|Minimum tier|
 |`variable_count`|Number of variables|
@@ -411,7 +427,7 @@ Each module entry in the Layer-Locked Module Registry contains:
 |`depends_on`|Dependencies|
 |`description`|One sentence|
 
-The registry is the next deliverable.
+The registry is [📐 ssot_00_module_registry.md](📐%20ssot_00_module_registry.md). It lists field modules only.
 
 ---
 
@@ -420,3 +436,4 @@ The registry is the next deliverable.
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-08|Initial module architecture. Establishes Layer-Locked Module system, attachment protocol, data access rules, API contract, module lifecycle, application architecture vision, and registry format.|
+|1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B9, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`; table-of-contents links repointed to in-page anchors; dependency names fixed to the real file stems; new subsection separating field modules from doc modules; registry format gains the `conceptual` and `absorbed` statuses; the registry pointer replaces "the next deliverable".|

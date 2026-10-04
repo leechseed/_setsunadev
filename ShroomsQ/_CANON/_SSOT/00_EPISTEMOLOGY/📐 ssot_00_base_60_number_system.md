@@ -1,26 +1,34 @@
 ---
-
-## type: ssot_00_foundations category: number_systems version: 1.0.0 last_updated: 2026-03-08 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD] status: canonical purpose: "Defines the base 60 (sexagesimal) number system as the foundational source for all integers in the LEECHSEED character pipeline. Establishes the divisor lattice, valid scale classes, pattern catalog, scale assignments, point budget recalibration, derived stat recalibration, and flag threshold recalibration." dependencies: [] supersedes_ranges_in: ["ssot_03_character_systems_vertical_slice"]
+type: ssot_00_foundations
+category: number_systems
+version: 1.0.1
+last_updated: 2026-10-04
+applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
+status: canonical
+trunk: BLACK
+purpose: "Defines the base 60 (sexagesimal) number system as the foundational source for all integers in the LEECHSEED character pipeline. Establishes the divisor lattice, valid scale classes, pattern catalog, scale assignments, point budget recalibration, derived stat recalibration, and flag threshold recalibration."
+dependencies: []
+supersedes_ranges_in: ["ssot_02_character_systems_vertical_slice"]
 ---
 
 # 📐 SSOT: Base 60 Number System
 
 ## Table of Contents
 
-1. [Purpose](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#purpose)
-2. [Why Base 60](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#why-base-60)
-3. [The Divisor Lattice of 60](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#the-divisor-lattice-of-60)
-4. [Pattern Catalog: Divisor Chains](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#pattern-catalog-divisor-chains)
-5. [Pattern Catalog: Matrix Decompositions](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#pattern-catalog-matrix-decompositions)
-6. [Pattern Catalog: Tensor Decompositions](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#pattern-catalog-tensor-decompositions)
-7. [Scale Classes](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#scale-classes)
-8. [Scale Assignment Table](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#scale-assignment-table)
-9. [Point Budget Recalibration](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#point-budget-recalibration)
-10. [Derived Statistic Recalibration](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#derived-statistic-recalibration)
-11. [Flag Trigger Threshold Recalibration](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#flag-trigger-threshold-recalibration)
-12. [Victoria Midnight Re-Expression](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#victoria-midnight-re-expression)
-13. [Design Rules for Future Variables](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#design-rules-for-future-variables)
-14. [Version History](https://claude.ai/chat/cbd60897-8768-4f3b-885b-d07c31f028c1#version-history)
+1. [Purpose](#purpose)
+2. [Why Base 60](#why-base-60)
+3. [The Divisor Lattice of 60](#the-divisor-lattice-of-60)
+4. [Pattern Catalog: Divisor Chains](#pattern-catalog-divisor-chains)
+5. [Pattern Catalog: Matrix Decompositions](#pattern-catalog-matrix-decompositions)
+6. [Pattern Catalog: Tensor Decompositions](#pattern-catalog-tensor-decompositions)
+7. [Scale Classes](#scale-classes)
+8. [Scale Assignment Table](#scale-assignment-table)
+9. [Point Budget Recalibration](#point-budget-recalibration)
+10. [Derived Statistic Recalibration](#derived-statistic-recalibration)
+11. [Flag Trigger Threshold Recalibration](#flag-trigger-threshold-recalibration)
+12. [Victoria Midnight Re-Expression](#victoria-midnight-re-expression)
+13. [Design Rules for Future Variables](#design-rules-for-future-variables)
+14. [Version History](#version-history)
 
 ---
 
@@ -235,6 +243,7 @@ This table assigns every numeric variable in the character system to a scale cla
 |Density scores|0-10|**SC-12**|0–12|SC-12 default|
 |Tendency scores|0-10|**SC-12**|0–12|SC-12 default|
 |Index scores (shame, desire)|0-10|**SC-12**|0–12|SC-12 default|
+|Armor index (L9)|0-10|**SC-12**|0–12|Sibling of the shame index. Assigned 2026-10-04 by Selection Rules 1 to 4. The one formula that reads it, `10 - armor_index`, subtracts and never divides, so Rule 3 holds.|
 |Resistance index|0-10|**SC-12**|0–12|SC-12 default|
 |Origin seeds|0-10|**SC-12**|0–12|SC-12 default|
 |Coherence scores|0-10|**SC-12**|0–12|SC-12 default|
@@ -532,3 +541,4 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-03-08|Initial SSOT. Establishes base 60 as foundational number system. Divisor lattice, 18 maximal chains, 10 matrix decompositions, 10 tensor decompositions, 9 scale classes, complete scale assignment table, point budget validation (no changes required), derived stat recalibration with divisibility constraints, flag threshold recalibration, Victoria Midnight full re-expression with diagnostic analysis.|
+|1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B7, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`, table-of-contents links repointed to in-page anchors, `supersedes_ranges_in` names the real file stem, armor index added to the Scale Assignment Table as SC-12.|

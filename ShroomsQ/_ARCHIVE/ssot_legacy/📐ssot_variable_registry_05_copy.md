@@ -1,3 +1,5 @@
+> ARCHIVED 2026-10-04 (BOLO 100, B5): the one registry is `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`. This copy is not maintained.
+
 ---
 rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
 
