@@ -41,6 +41,8 @@ date_created: 2026-10-04
 # 🧬 MSX.77 — Rent Boys — Dorais (2005)
 ### Knowledge Entry — Distill
 
+Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised.
+
 Michel Dorais, a Quebec sociologist and former youth social worker, interviewed forty male sex workers and sorted them into four life patterns. The book is short, plain, and the shelf's best source on why men sell sex to men and how they see their clients.
 
 ## TABLE OF CONTENTS

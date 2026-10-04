@@ -41,6 +41,8 @@ date_created: 2026-10-04
 # 🧬 MSX.71 — Homos — Bersani (1995)
 ### Knowledge Entry — Distill
 
+Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised.
+
 Leo Bersani's 1995 polemic asks what gay desire can do politically if gay identity is both necessary and suspect. It answers with homo-ness: a desire for sameness that dissolves the self instead of defending it.
 
 ## TABLE OF CONTENTS

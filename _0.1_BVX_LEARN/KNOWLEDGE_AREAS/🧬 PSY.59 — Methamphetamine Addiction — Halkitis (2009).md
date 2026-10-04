@@ -41,6 +41,8 @@ date_created: 2026-10-04
 # 🧬 PSY.59 — Methamphetamine Addiction — Halkitis (2009)
 ### Knowledge Entry — Distill
 
+Fantasy, not a how-to: what happens in these pages stays in them. Reader discretion advised.
+
 Perry Halkitis, a public-health psychologist, synthesizes the research on methamphetamine for clinicians and community workers. Most of the sexual-behavior research he cites comes from gay and bisexual men, so the book is this shelf's data source for the meth and sex link.
 
 ## TABLE OF CONTENTS
