@@ -17440,5 +17440,155 @@
   "primary": "TEC",
   "trunk": "BLACK",
   "id": "BVX.1199"
+ },
+ {
+  "t": "A Grammar of Motives",
+  "a": "Kenneth Burke",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1200"
+ },
+ {
+  "t": "Thematics New Approaches (Claude Bremond (editor) etc.)",
+  "a": "",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1201"
+ },
+ {
+  "t": "Domination and the Arts of Resistance. Hidden transcripts",
+  "a": "James C. Scott",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "PHI"
+  ],
+  "primary": "PHI",
+  "trunk": "BLACK",
+  "id": "BVX.1202"
+ },
+ {
+  "t": "Eichmann Before Jerusalem The Unexamined Life of a Mass Murderer",
+  "a": "Bettina Stangneth, Ruth Martin",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "PHI"
+  ],
+  "primary": "PHI",
+  "trunk": "BLACK",
+  "id": "BVX.1203"
+ },
+ {
+  "t": "The Challenger Launch Decision Risky Technology, Culture, and Deviance at NASA",
+  "a": "Diane Vaughan",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "TEC"
+  ],
+  "primary": "TEC",
+  "trunk": "BLACK",
+  "id": "BVX.1204"
+ },
+ {
+  "t": "Weapons of Math Destruction",
+  "a": "Cathy O’Neil",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "TEC"
+  ],
+  "primary": "TEC",
+  "trunk": "BLACK",
+  "id": "BVX.1205"
+ },
+ {
+  "t": "The Lucifer Effect Understanding How Good People Turn Evil",
+  "a": "Philip Zimbardo",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "PSY"
+  ],
+  "primary": "PSY",
+  "trunk": "BLACK",
+  "id": "BVX.1206"
+ },
+ {
+  "t": "Structural Semantics An Attempt at a Method",
+  "a": "A.-J. Greimas, Daniele McDowell etc.",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1207"
+ },
+ {
+  "t": "Here Be Dragons Exploring Fantasy Maps and Settings",
+  "a": "Ekman Stefan",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1208"
+ },
+ {
+  "t": "How to Build a Culture An Authors Guide to Building Rich and Diverse Cultures",
+  "a": "A Trevena",
+  "p": "",
+  "x": "",
+  "src": "drop",
+  "pages": "",
+  "year": "",
+  "subjects": [
+   "CRE"
+  ],
+  "primary": "CRE",
+  "trunk": "BLACK",
+  "id": "BVX.1209"
  }
 ]
