@@ -1,7 +1,7 @@
 ---
 type: ssot_06_style_guides
 category: prose_style
-version: 1.3.1
+version: 1.3.2
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
 status: "v1.3.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: stale OPEN marks struck, intro convention reworded. v1.3.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: meta-genre has its home here as the style bible (genre OPEN 9). v1.2.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: the tyranny of motive moved here from the character system (OPEN call 3) as a numbered prose rule, new check item 10. v1.1.0 2026-10-04: disclaimer wording ruled. canonical — 1.0 per BOLO 92's bar; the five OPEN calls ruled as recommended"
@@ -112,6 +112,8 @@ This section applies only where an IP's own G1 rules cultcore or a related insti
 
 **Ruled 2026-09-16, genre OPEN 9; landed 2026-10-04.** This guide is the Command's style bible. Bawarshi and Reiff call a style bible a meta-genre. A showrunner's tone memo is another. A meta-genre describes a genre's social life beyond its contract. This guide is that home for the universe. Each IP's telling profile is a meta-genre instance under it. The other two terms, kairotic coordination (timing) and typification (cognition), are noted here and used nowhere else yet.
 
+**Sources:** [[BVX.0581]] (Bawarshi and Reiff, *Genre*: meta-genre after Giltrow, style guides as genre about genre; typification after Schutz).
+
 ## The check
 
 A short pass-list, read against a draft before it counts as ready. One line, one rule, one citation.
@@ -161,6 +163,7 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 
 ## Version history
 
+- **1.3.2 · 2026-10-04** — BOLO 100 D3: Sources line added to §Meta-genre (BVX.0581).
 - **1.3.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1 (Y1–Y3): the stale OPEN marks struck from the five ruled calls; intro convention reworded to "marked OPEN"; cultcore line reworded. No rule changed.
 - **1.3.0 · 2026-10-04** — RULED 9/16, landed 10/4 (BOLO 100 genre cross-doc): new section §Meta-genre: the style bible, the home ruled in genre OPEN 9. No other rule changed.
 - **1.2.0 · 2026-10-04** — RULED (Chief: "all rec", BOLO 100 character batch 1): the tyranny of motive moved here from the character system (OPEN call 3) as the rule in §Motive on the page; check item 10 added. No other rule changed.

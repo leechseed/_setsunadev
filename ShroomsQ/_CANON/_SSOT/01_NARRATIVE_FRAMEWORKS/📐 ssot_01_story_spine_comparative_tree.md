@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_spine
-version: 1.0.1
+version: 1.0.2
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
 status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)
@@ -30,6 +30,8 @@ trunk: BLACK
 | Egri | proof of a premise ("X leads to Y") — the direct ancestor of the Grand Argument |
 | McKee | character revealed through choice under pressure; the controlling idea |
 | Storr / Cron (neuro school) | a simulation the brain runs to learn; models the *audience*, not the artifact |
+
+**Sources:** BVX.0089 (Dramatica, the Grand Argument) · BVX.1123 (Egri, premise as proof) · BVX.1126 (Aristotle, *Poetics*) · BVX.0175 (McKee, controlling idea).
 
 ### L1 · The four throughlines — one problem, four perspectives
 
@@ -74,6 +76,8 @@ Structure says where the problem lives; dynamics say how the story *moves* and h
 
 **Outcome × Judgment is the ending matrix:** Success/Good (triumph) · Failure/Good (**personal triumph** — OXO's shape) · Success/Bad (hollow victory) · Failure/Bad (tragedy). Weiland's arc taxonomy (positive / flat / negative) is this matrix plus Resolve, renamed.
 
+**Sources:** BVX.0089 (Dramatica, the eight dynamics: Resolve, Growth, Limit, Outcome, Judgment).
+
 ### L4 · Plot — the argument dramatized in time
 
 - **Static appreciations (8):** Goal · Consequence · Cost · Dividend · Requirements · Prerequisites · Preconditions · Forewarnings.
@@ -89,6 +93,8 @@ Structure says where the problem lives; dynamics say how the story *moves* and h
 | Story Grid (Coyne) | five commandments (inciting → turn → crisis → climax → resolution) recur fractally scene → sequence → act → global; the scene-level grammar the spine doesn't specify |
 | McKee | gap between expectation and result; value charge per scene — the beat-level dramatization engine |
 | Propp / plot genotypes (Murphy) | function sequences = the signpost grammar's folk ancestor |
+
+**Sources:** BVX.0089 (Dramatica, signposts and appreciations) · BVX.0175 (McKee, the Gap and scene value charge) · BVX.0236 (Coyne, five commandments) · BVX.0163 (Snyder, beat template) · BVX.1124 (Vogler, mythic stations).
 
 ### L5 · Character — functions before persons
 
@@ -109,11 +115,15 @@ Structure says where the problem lives; dynamics say how the story *moves* and h
 
 Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoint (the 64-level pair) argued through the throughline; Problem vs Solution at the atomic level; Outcome + Judgment pass the verdict. McKee's controlling idea = OS Problem/Solution + Outcome compressed to a sentence; Egri's premise = the same, stated up front; Weiland's theme book = the craft of dramatizing it.
 
+**Sources:** BVX.0175 (McKee, controlling idea) · BVX.1123 (Egri, premise) · BVX.0193 (Truby, moral argument).
+
 ### L7 · Genre, medium, audience — the outermost ring
 
 - **Dramatica's own stance:** genre = audience appreciations (arena, style, feel) — thin, the model's weakest ring.
 - **Coyne's genre clover + obligatory conventions** and **Truby's Anatomy of Genres** are the strong holdings here: genre as reader-contract (conventions owed) and as moral-argument tradition respectively. Snyder's genre wheels = the commercial compression.
 - **Storyforming vs storyencoding vs storyweaving vs reception** — the spine's four production stages: decide the argument → clothe it in subject matter → order its exposure → the audience runs it. The library's neuro shelf (Storr, Cron) explains stage four.
+
+**Sources:** BVX.0236 (Coyne, genre conventions) · BVX.0191 (Truby, *Anatomy of Genres*) · BVX.0576 (Selbo, film genre).
 
 ---
 
@@ -228,3 +238,4 @@ The spine covers the STRUCTURE axis. Chief ordered the full milieu same session;
 
 - **1.0.0 — 2026-08-25.** Authored on Chief's clear (boresight chain closed same session): comparative tree, Dramatica canonical, 14 rival models mapped, holdings + gaps recorded, library keying proposed.
 - **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed (TS-B3); constraint-layer prose swapped to Touchstone (TS-B4).
+- **1.0.2 — 2026-10-04.** BOLO 100 D3: added Sources lines to L0, L3, L4, L6, L7.
