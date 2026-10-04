@@ -6,7 +6,7 @@
   "issued": "2026-09-29",
   "asof": "2026-10-03",
   "s": "open",
-  "status": "🟢 **WAVE B FETCHING 10/03** — register v0.4.0 holds 7,070 keyed tropes; wave A (2,122 tropes) is keyed and RANGE-clean; wave B (1,632 theme and style tropes) is being fetched at 1 request a second, keying behind it. Open: 380 tropes with no definition, and the plot trope graph as a consumer.",
+  "status": "🟢 Waves A and B keyed 10/3 · register v0.5.0: 8,700 tropes, all keyed · open: 1,018 without a definition",
   "decider": "HOTLINE ACTUAL",
   "feeds": "the plot trope graph (`ssot_04_trope_graph.md`, the first consumer) · the TROPES sections in the character, genre, theme and setting systems · the 01 NARRATIVE_FRAMEWORKS register",
   "related": [
@@ -29,7 +29,7 @@
   ],
   "home": "BOLO.md · row 89",
   "card": "none",
-  "version": "v0.1 · DOPE SHEET"
+  "version": "v0.2 · DOPE SHEET"
  },
  "mantra": [
   {
@@ -50,8 +50,8 @@
  ],
  "frago": {
   "mission": "Build one cross-domain TV Tropes register in 01 NARRATIVE_FRAMEWORKS, **in order to** let every system (character, setting, theme, genre, sexuality, plot) key into the same trope layer.",
-  "order": "**Nothing owed by you. Wave B keys when its fetch lands (about 30 minutes); say \"hold 89\" to stop it.**",
-  "default": "Silence: wave B keys on the wave A rules, RANGE runs, register goes to v0.5.0.",
+  "order": "**Nothing owed by you. Next pass when you call it: fetch the 1,018 missing definitions and re-key the low-confidence keys (the 0.3.0 pattern).**",
+  "default": "Silence: the register stands at v0.5.0; the definitions pass waits for a go.",
   "calls": [
    {
     "q": "89-A · the shape (four recs)",
@@ -78,7 +78,8 @@
     "q": "89-D · wave B keying rules",
     "options": "the wave A rules + the spread check at the fan-in · a sonnet pass instead of haiku",
     "default": "wave A rules + spread check (rec)",
-    "s": "open"
+    "s": "ruled",
+    "ruling": "RULED 2026-10-03, Chief: \"whatever you need to do, all approved.\" Wave A rules + the spread check at the fan-in; wave B keyed clean on them."
    }
   ]
  },
@@ -464,6 +465,16 @@
      "when": "10/03",
      "who": "Claude",
      "t": "Wave A keyed: 2,122 tropes on 12 batches, script check 0 after fixes (S1 and T7 pile-ups caught and re-keyed); register v0.4.0, 7,070 keyed. Wave B fetching: 1,632 tropes at 1 request a second."
+    },
+    {
+     "when": "10/3",
+     "who": "Chief",
+     "t": "\"Whatever you need to do, all approved.\""
+    },
+    {
+     "when": "10/3",
+     "who": "Claude",
+     "t": "Wave B keyed: 2,175 keys on 9 PS batches (theme 1,013 · style 831 · 351 stragglers), RANGE 0 after fixing one unquoted file and three missing keys; spread clean (style 06.3 404 · 06.1 264 · null 164). Register v0.5.0: 8,700 tropes, all keyed."
     }
    ]
   }

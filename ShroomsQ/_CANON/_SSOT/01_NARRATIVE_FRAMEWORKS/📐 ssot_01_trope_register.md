@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 0.4.0
+version: 0.5.0
 last_updated: 2026-10-03
 applies_to: [OVEREXITOUT, all future IPs]
 status: "RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
@@ -33,19 +33,20 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 
 **The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md), or null. **Added 0.4.0 (wave A, ruled 9/29 "all recs"):** texture → T1–T12 of the [texture system](📐%20ssot_01_texture_system.md) · tracking → the parts of the [tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo.
 
-## THE COUNTS (2026-10-03, v0.4.0)
+## THE COUNTS (2026-10-03, v0.5.0)
 
-**7,070 tropes keyed** (wave A added 2,122: texture, tracking, and OXO's setting indexes) · **1,630 listed, not yet keyed** (wave B, fetching: theme + style) · 8,700 in the index.
+**8,700 tropes, all keyed** · confidence: high 6,241 · medium 1,435 · low 1,024 · 1,018 still have no one-line definition.
 
 | Domain (index) | Keyed by layer |
 |---|---|
 | **character** (Characters As Device · Characterization · Archetypal Character) | L1 316 · L2 59 · L3 198 · L4 54 · L5 37 · L6 63 · L7 70 · L8 47 · L9 60 · L10 85 · L11 56 · **L12 485** · null 94 |
 | **sexuality** (Sex Tropes · Queer Romance) | **L9 430** · L5 10 · L2 2 · L1 1 · L7 1 · null 1 |
-| **setting** (Settings + wave A: Religion · School · Motor Vehicle · Cyberpunk · Drugs · Military and Warfare) | **S1 366** · S2 33 · S3 52 · **S4 339** · S5 67 · S6 118 · S7 58 · **S8 278** · S9 38 · S10 105 · S11 102 · S12 21 · null 475 |
+| **setting** (Settings · Religion · School · Motor Vehicle · Cyberpunk · Drugs · Military and Warfare) | S1 385 · S2 36 · S3 54 · **S4 399** · S5 74 · S6 133 · S7 63 · **S8 328** · S9 41 · S10 108 · S11 104 · S12 23 · null 549 |
 | **genre** (Genres · Genre Tropes) | **G1 66** · G2 8 · G3 5 · G4 3 · G5 6 · G6 2 · G8 3 · G9 3 · G10 1 · G11 3 · null 5 |
-| **theme** (Truth and Lies · Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) | R1 274 · **R2 566** · R3 324 · R4 383 · null 791 |
-| **texture** (wave A: Narrative Devices · Framing Device · Narrative Tropes · Point of View) | T1 39 · T2 46 · T3 35 · T4 32 · T5 13 · T6 37 · T7 25 · T8 21 · T9 39 · T10 7 · T11 19 · T12 11 · **null 318** |
-| **tracking** (wave A: Time Tropes) | world_clock 49 · grid 43 · tempo 6 · told_order 4 · null 9 |
+| **theme** (the nine thematic indexes + wave B: Love · Power · Emotion · Identity) | R1 448 · **R2 853** · R3 409 · R4 460 · null 1,182 |
+| **texture** (Narrative Devices · Framing Device · Narrative Tropes · Point of View) | T1 44 · T2 51 · T3 68 · T4 35 · T5 17 · T6 38 · T7 36 · T8 28 · T9 41 · T10 9 · T11 19 · T12 14 · null 344 |
+| **tracking** (Time Tropes) | world_clock 51 · grid 43 · tempo 7 · told_order 4 · null 11 |
+| **style** (wave B: Language · Costume · Graphical · Lighting · Amazing Technicolor) | 06.1 PROSE 264 · **06.3 PAGES 404** · null 164 |
 
 **The pull list:** [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) lists every layer with every trope keyed to it.
 
@@ -78,13 +79,16 @@ No character is changed by this ruling — it names a pattern, not a fix.
 
 ## OPEN
 
-- **Wave B — FETCHING 10/03.** Love · Power · Emotion · Identity (theme) and Language · Costume · Graphical · Lighting · Amazing Technicolor (style → 06.1 / 06.3). Keying follows the fetch.
+- **Wave B — DONE 0.5.0.**
+- **1,018 tropes without a one-line definition** — a definitions pass (`fetch_defs.py`) and a re-key of the low-confidence keys, the 0.3.0 pattern.
 
 - **Theme sub-index pass — DONE 0.2.0.**
 - **The low-confidence pass — DONE 0.3.0.** 952 definitions fetched (first sentence only), re-keyed by two PS; low confidence fell 707 → 232. 380 tropes still have no definition (their pages open without a plain first paragraph).
 - **Consumers** — each system gets a TROPES section pointing at its layer lists (character, setting, genre, theme); the tracking system's story points can carry a trope id ([ssot_08](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)).
 
 ## Version history
+
+- **0.5.0 — 2026-10-03.** Wave B keyed: 2,175 keys on 9 PS batches (B1–B9) — theme 1,013 (Love · Power · Emotion · Identity) · style 831 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 06.1 PROSE / 06.3 PAGES) · plus 351 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.
 
 - **0.4.0 — 2026-10-03.** Wave A keyed: 2,122 tropes (texture 641 · tracking 111 · setting 1,412, some multi-domain) on 12 batches (A1–A12) by PS; RANGE caught a broken file, two misspelled slugs and five illegal keys → 0. **The default-dump caught at the fan-in:** the first pass put 797 setting tropes on S1 and 336 texture tropes on T7; a re-key on six batches (AR1–AR6) with sharper rules brought S1 to 366 overall and T7 to 25, and a third pass on the 281 texture nulls (AT1) confirmed most are plot content the Narrative Tropes index carries, not the telling (texture null 318). Keys for texture and tracking added to `work/89/keys.md`; `range.py` and `build_register.py` learn them.
 
