@@ -1,9 +1,13 @@
 ---
-title: "The Touchstones register — BOOTSTRAP (was the invariants register)"
-rung: standard (placeholder)
-status: "BOOTSTRAP 2026-09-24 — a placeholder so the layer is on record. RULED by Chief 9/24: invariants come LAST, after every other system reaches a stable release; this file holds the pointers until then. The name RULED 2026-09-24: **Touchstone** (was 'invariant'); cite as TS 1:3. BOLO 91 (2026-09-29): first live entry landed early, out of bootstrap order, by direct ruling — TS 1:1, \"the bounded container.\""
-bolo: 81
-updated: 2026-09-29
+type: ssot_01_narrative_frameworks
+category: touchstones_register
+version: 0.9.0
+last_updated: 2026-10-04
+applies_to: [all IPs]
+status: "v0.9.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: frontmatter normalized (BOLO 100 R10); the schema and 1.0.0 are the sweep's LAST step (ruled 9/24: built last, read first). Earlier: BOOTSTRAP 2026-09-24 — a placeholder so the layer is on record. RULED by Chief 9/24: invariants come LAST, after every other system reaches a stable release; this file holds the pointers until then. The name RULED 2026-09-24: **Touchstone** (was 'invariant'); cite as TS 1:3. BOLO 91 (2026-09-29): first live entry landed early, out of bootstrap order, by direct ruling — TS 1:1, \"the bounded container.\""
+purpose: "THE TOUCHSTONES REGISTER: the one home for every Touchstone, the rules the story can never break. A bootstrap until the other systems reach stable releases."
+dependencies: ["ssot_01_modern_poetics"]
+trunk: BLACK
 ---
 
 # The Touchstones register — BOOTSTRAP
@@ -34,3 +38,17 @@ Erotic or ritual power tends to hold inside a container — a circle, a rite, an
 **Sources:** PSY.33 *Magia Sexualis*, MSX.15 *The New Topping Book*.
 
 **Ruled:** 2026-09-29, BOLO 91.
+
+## CANDIDATES — P1–P10 of Modern Poetics (landed 2026-10-04, BOLO 100 R7)
+
+[Modern Poetics](📐%20ssot_01_modern_poetics.md) gives ten principles, each with a forbid-list. They are candidate Touchstones. No candidate holds a TS id yet. Chief rules each one in when the schema lands.
+
+- **P1 Entertainment-First** · **P2 The American Center** · **P3 Saturation** · **P4 Originality as Craft** · **P5 The Setpiece Principle** · **P6 The Serial Hook** · **P7 The Narrative Dilemma**
+- **P8 The Fantasy Drive** · **P9 The Sexy Check** · **P10 The Aesthetic Check**
+
+Pointer back: each principle's law, forbids and dictum live in Modern Poetics. This register holds the list only.
+
+## Version history
+
+- **0.9.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Frontmatter normalized to the 01 shape (R10). P1–P10 listed as candidate Touchstones (R7). The schema and the 1.0.0 stamp wait for the sweep's last step.
+- **0.1.0 — 2026-09-29.** TS 1:1, the bounded container, landed early by direct ruling (BOLO 91). Bootstrap register stood up 2026-09-24.

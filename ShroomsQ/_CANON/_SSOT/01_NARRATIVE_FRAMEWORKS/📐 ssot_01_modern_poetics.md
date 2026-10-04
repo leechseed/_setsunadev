@@ -1,9 +1,10 @@
 ---
 type: ssot_01_narrative_frameworks
 category: modern_poetics
-version: 1.0.0
-last_updated: 2026-08-31
-status: CANON — name RULED 2026-08-31 (“Modern Poetics”); disposition table RATIFIED same session; P8–P10 spoken into doctrine same session
+version: 1.0.1
+last_updated: 2026-10-04
+applies_to: [all IPs]
+status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: capture protocol reworded, applies_to added, Standing-Order candidates landed in the Touchstones register. Earlier: CANON — name RULED 2026-08-31 (Modern Poetics); disposition table RATIFIED same session; P8–P10 spoken into doctrine same session"
 purpose: "The prescriptive half of the lattice — what house stories MUST BE. The lattice describes what a story is; this doc commands what ours are for. Canonized from the May-2025 Leechseed Manifesto (16 docs, imported-Joplin) + three native principles coined 2026-08-31."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_texture_layer", "ssot_01_scale_ladder"]
 trunk: BLACK (P3 and the three checks bridge ORANGE)
@@ -71,7 +72,7 @@ trunk: BLACK (P3 and the three checks bridge ORANGE)
 
 ### P8 · THE FANTASY DRIVE
 **The law:** every element in the system — every character, place, object, scene, mechanic, every little tiny thing — carries its **intended fantasy**: what the audience gets to *be, feel, or do* through it. If no one can say the fantasy of a thing in one breath, the thing is not done.
-**The capture (protocol RULED 2026-08-31):** spoken by Chief in-chat, dictation as-is — **Chief's voice is the line of quality and the canon form.** Claude may draft candidate lines, marked **⧗ draft**; a draft becomes canon only when Chief keeps it or speaks it over. Off the cuff, esoteric welcome, never systematized.
+**The capture (protocol RULED 2026-08-31):** spoken by Chief in-chat, dictation as-is — **Chief's voice is the line of quality and the canon form.** Claude may draft candidate lines, marked **`draft`**; a draft becomes canon only when Chief keeps it or speaks it over. Off the cuff, esoteric welcome, never systematized.
 **Rank:** Chief, on coining it: *"probably the most important thing."*
 **Address:** systemic — every spine level, every ladder rung, every 12-layer sheet, every plot element. No exceptions by design.
 **Sweep order (RULED 2026-08-31):** the three checks run as three full sweeps — fantasy across everything, then sexy across everything, then aesthetic across everything — never bundled per element.
@@ -97,10 +98,11 @@ P1's "engagement before message" vs the spine's "story = Grand Argument": they c
 
 ## OPEN
 
-- **Constraint-layer entry** (ask #3): P1–P10 as Standing-Order candidates rides the open DOCTRINE 0 ratification. Deferred by ruling.
+- **Constraint-layer entry** (ask #3): landed in the TS register. P1–P10 stand as candidate Touchstones in [the Touchstones register](📐%20ssot_01_touchstones_register.md).
 - **The application pass** — running P8–P10 over the existing canon (Tori, DCUS, the Drop, storyform, scene cards) = **BOLO 21**; fires on Chief's go.
 - **plot_systems physical shelf** — P5–P7 + extracted tools land wherever decision #8 puts the domain.
 - Name garble flag: "Modern Poetics" ruled from the final utterance; "Modern Entertainment Poetics" was voiced mid-stream — correct on request, one line.
 
 ## Version history
+- **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Capture protocol reworded (draft marker is now `draft`); `applies_to` added; the Standing-Order candidate entry landed in the Touchstones register and closed here.
 - **1.0.0 — 2026-08-31.** Stood up: 7 principles canonized from the May-2025 manifesto (disposition ratified), P8–P10 coined same session, lineage recorded, tension resolved.

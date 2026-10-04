@@ -1,10 +1,10 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 0.5.0
-last_updated: 2026-10-03
+version: 1.0.0
+last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, all future IPs]
-status: "RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
+status: "v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: undefined-trope rule written; OPEN list closed. Earlier: RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
 purpose: "THE TROPE REGISTER: one trope layer under every system. 4,948 TV Tropes tropes, each tagged with the domains it serves and keyed to a layer of that domain's slice, so any layer can pull its tropes."
 dependencies: ["ssot_04_trope_graph (the plot consumer)", "ssot_02_character_systems_vertical_slice", "ssot_03_setting_system", "ssot_01_genre_system", "ssot_07_theme_system"]
 trunk: BLACK
@@ -30,6 +30,8 @@ keys:    {character: L3}                # one key per domain: a layer id, or nul
 conf:    high | medium | low
 links:   [...]                          # the trope's Main/ links, the raw edges
 ```
+
+**Undefined tropes (RULED 2026-10-04):** a trope with no one-line definition keys by its title and its domain tags. The record carries `def: undefined`. No run is needed to fill it.
 
 **The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md), or null. **Added 0.4.0 (wave A, ruled 9/29 "all recs"):** texture → T1–T12 of the [texture system](📐%20ssot_01_texture_system.md) · tracking → the parts of the [tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo.
 
@@ -79,14 +81,13 @@ No character is changed by this ruling — it names a pattern, not a fix.
 
 ## OPEN
 
-- **Wave B — DONE 0.5.0.**
-- **1,018 tropes without a one-line definition** — a definitions pass (`fetch_defs.py`) and a re-key of the low-confidence keys, the 0.3.0 pattern.
-
-- **Theme sub-index pass — DONE 0.2.0.**
-- **The low-confidence pass — DONE 0.3.0.** 952 definitions fetched (first sentence only), re-keyed by two PS; low confidence fell 707 → 232. 380 tropes still have no definition (their pages open without a plain first paragraph).
-- **Consumers** — each system gets a TROPES section pointing at its layer lists (character, setting, genre, theme); the tracking system's story points can carry a trope id ([ssot_08](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)).
+- **Definitions (closed 2026-10-04)** — 1,018 tropes keep `def: undefined` under the rule above. The keys stand.
+- **Consumer TROPES sections** — `⏸ TROPES pointer sections (phase 2)`. Each system doc gets one section pointing at its layer lists, as a call in that doc's own batch. The tracking system's story points can carry a trope id ([ssot_08](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)).
+- **Done earlier:** wave B (0.5.0) · theme sub-index pass (0.2.0) · low-confidence pass (0.3.0).
 
 ## Version history
+
+- **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Undefined-trope rule written: no definition means key by title and domain tags, flagged `undefined`. OPEN list closed; consumer TROPES sections parked as `⏸ TROPES pointer sections (phase 2)`.
 
 - **0.5.0 — 2026-10-03.** Wave B keyed: 2,175 keys on 9 PS batches (B1–B9) — theme 1,013 (Love · Power · Emotion · Identity) · style 831 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 06.1 PROSE / 06.3 PAGES) · plus 351 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.
 

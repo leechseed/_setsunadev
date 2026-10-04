@@ -1,10 +1,11 @@
 ---
 type: ssot_01_narrative_frameworks
 category: spine_house_inventory
-version: 1.0.0
-last_updated: 2026-08-26
-status: BOLO 18 stage-1 artifact — the house-corpus sweep, mapped to spine levels (agent pass 2026-08-26)
+version: 1.0.1
+last_updated: 2026-10-04
+status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: module_of stamped. Earlier: BOLO 18 stage-1 artifact — the house-corpus sweep, mapped to spine levels (agent pass 2026-08-26)"
 purpose: "Every processed in-house material keyed to its spine level(s) L0–L7 — the repo's own holdings as spine shelves. Stage 2 (the 353-source library feeds: sweep) keys the external catalog the same way."
+module_of: ssot_01_story_spine_comparative_tree
 dependencies: ["ssot_01_story_spine_comparative_tree"]
 trunk: BLACK
 ---
@@ -90,6 +91,7 @@ The one-sheet template v2 + SPEC v3 (the distill instrument) · taxonomy proposa
 6. **Dedupe candidates:** the byte-identical variable registries (00 vs 05); the authoritative/handoff Victoria dupe pairs (known, by design — the handoff is a bundle).
 
 ## Version history
+- **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** `module_of: ssot_01_story_spine_comparative_tree` stamped.
 - **1.0.0 — 2026-08-26.** Stage-1 sweep banked (Explore agent pass). Stage 2 = the library `feeds:` sweep.
 
 ---

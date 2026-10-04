@@ -1,10 +1,11 @@
 ---
 type: ssot_01_narrative_frameworks
 category: three_check_pass
-version: 1.0.0
-last_updated: 2026-09-29
-status: canonical — 1.0; all 36 lines KEPT by Chief 2026-09-29 ('keep all'); S2 and A2 stay open as Anna gaps until her sheet is authored
+version: 1.0.1
+last_updated: 2026-10-04
+status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: history line reworded, Anna and OXO element gaps parked by name, module_of stamped. Earlier: canonical 1.0; all 36 lines KEPT by Chief 2026-09-29 (\"keep all\")"
 purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy Check · Aesthetic Check over the flagship canon roster. Three sweeps, never bundled per element."
+module_of: ssot_01_modern_poetics
 dependencies: ["ssot_01_modern_poetics"]
 trunk: BLACK/ORANGE
 ---
@@ -69,25 +70,27 @@ trunk: BLACK/ORANGE
 
 - Done 2026-09-29: all 36 kept; migrated where a sheet exists (table below).
 - Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.
-- A2 gap rides Anna's sheet authoring (also blocks the Tori×Anna collision proof).
+- A2 gap: `⏸ Anna sheet (phase 2)`. It also blocks the Tori×Anna collision proof.
+- Six elements have no sheet yet: `⏸ OXO element sheets (phase 2)`.
 
 ## WHERE EACH LINE LANDED
 
 | Element | Lines | Landed at |
 |---|---|---|
 | Tori | F1 S1 A1 | `_CANON_NODES/victoria-midnight.md` |
-| Anna | F2 (S2, A2 open) | `_CANON_NODES/anna-colson-conway.md` (F2 only); S2 thin and A2 GAP stay here until her sheet is authored |
+| Anna | F2 (S2, A2 open) | `_CANON_NODES/anna-colson-conway.md` (F2 only); S2 thin and A2 GAP stay here (`⏸ Anna sheet (phase 2)`) |
 | DCUS | F3 S3 A3 | `_CANON_NODES/delta-coast-ultra-school.md` |
 | The Drop | F4 S4 A4 | `_CANON_NODES/oxo-the-drop-seed.md` |
-| Sync-dive | F5 S5 A5 | no sheet yet — the line lives here |
-| Star-Rating | F6 S6 A6 | no sheet yet — the line lives here |
+| Sync-dive | F5 S5 A5 | no sheet yet — the line lives here (`⏸ OXO element sheets (phase 2)`) |
+| Star-Rating | F6 S6 A6 | no sheet yet — the line lives here (`⏸ OXO element sheets (phase 2)`) |
 | The storyform | F7 S7 A7 | `_CANON_NODES/oxo-storyform.md` |
-| Scream etiquette | F8 S8 A8 | no sheet yet — the line lives here |
-| Story Lattice | F9 S9 A9 | no sheet yet — the line lives here |
+| Scream etiquette | F8 S8 A8 | no sheet yet — the line lives here (`⏸ OXO element sheets (phase 2)`) |
+| Story Lattice | F9 S9 A9 | no sheet yet — the line lives here (`⏸ OXO element sheets (phase 2)`) |
 | Collision Engine | F10 S10 A10 | `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_collision_engine.md` |
-| DARKROOM | F11 S11 A11 | no sheet yet — the line lives here |
-| Taxonomy engine | F12 S12 A12 | no sheet yet — the line lives here |
+| DARKROOM | F11 S11 A11 | no sheet yet — the line lives here (`⏸ OXO element sheets (phase 2)`) |
+| Taxonomy engine | F12 S12 A12 | no sheet yet — the line lives here (`⏸ OXO element sheets (phase 2)`) |
 
 ## Version history
-- **0.1.0 — 2026-08-31.** Sweep 1 drafted, 12 elements, all ⧗.
-- **1.0.0 — 2026-09-29.** Chief ruled "keep all": all 36 lines kept, ⧗ marks stripped, status canonical. Migrated to six sheets (Tori, Anna F2 only, DCUS, The Drop, storyform, Collision Engine); six elements have no sheet yet; S2/A2 remain Anna gaps.
+- **0.1.0 — 2026-08-31.** Sweep 1 drafted, 12 elements, all drafts.
+- **1.0.0 — 2026-09-29.** Chief ruled "keep all": all 36 lines kept, draft marks stripped, status canonical. Migrated to six sheets (Tori, Anna F2 only, DCUS, The Drop, storyform, Collision Engine); six elements have no sheet yet; S2/A2 remain Anna gaps.
+- **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** The 0.1.0 history line reworded without the glyph. Anna gaps parked as `⏸ Anna sheet (phase 2)`; sheetless elements parked as `⏸ OXO element sheets (phase 2)`. `module_of: ssot_01_modern_poetics` stamped.
