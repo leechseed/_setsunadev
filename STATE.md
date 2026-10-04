@@ -141,6 +141,14 @@ The 2026-08-16 **scrubbed-mirror design is superseded** by the in-place strip. S
 
 ---
 
+## ✅ Moved 2026-10-03 (**the twentieth and twenty-first launches, boards 2026-10-03 v47 + 2026-10-03-2 v48, ALL GO** · **BOLO 89 to register v0.5.0: 8,700 tropes, all keyed (waves A + B), DOPE SHEET 89** · **BOLO 95: the DOC-SOP spine whole, nine locks + the long read** · **the SOI rebuilt to the SOP** · **BOLO 94 · 27 · 90 ruled**)
+
+- **BOLO 89:** wave A (2,122: setting · texture · tracking) and wave B (theme 1,013 · style 831) keyed on PS batches; the default-dump caught at the fan-in and re-keyed (S1 797 → 366 · T7 336 → 25); definitions pass, low 1,024 → 642; `ssot_01_trope_register.md` v0.5.0; [DOPE SHEET 89](https://claude.ai/artifact/SgBz3sQpuynWYgP7M6WaVT) v0.2. Open: 791 tropes with no plain definition.
+- **BOLO 95:** `_tools/bolostatus/work/95/DOC-SOP.md` 1.2 · 1.3 (Chief's writing order: concept → reference → how-to → tutorial) · 2.1–2.3 (the header) · 3.1–3.2 · 3.3 THE LONG READ (ruled "rec") · 3.4; the SOI edition 2026-10-03 is the first page built to it. Optional next: section 4.
+- **Rulings:** BOLO 94 the seven first calls ("all recommendations"; next P1) · BOLO 27 one account for gay + straight BBC · BOLO 90 seven canon beats locked in `oxo.yaml` (workspace v13).
+- **ORANGE side:** `_CANON_NODES/subreddit-list.md` + four names on the performer register (163) · the BREVITY store cleared · `_PRIVATE/vr-worlds.md` (thin) · the X restock pull (`_PRIVATE/pull/xpull.sh`, @ThatMaskedDuo · @superiorblk, 103+ clips; three hunt accounts unfound) · the fresh gay BBC shelf under 5 min is spent.
+- Note: `_CACHE/2026-10-03.session.md`.
+
 ## ✅ Moved 2026-10-01 (**the nineteenth launch, board 2026-10-01 v46** · **the Akai cable fault fixed, knobs + pads back** · **BOLO 96 opened and ruled: the actor lane (four rows), vignettes as a registry kind, the Outliers' moon origin filed** · **OXO 2199, the Moon Severance 2099**)
 
 - **BOLO 96** (spoken after launch): lane **A** in `_CANON_NODES/performer-register.md` (Merced · del Toro · Blunt · Renner) · story registry 0.1.9 VIGNETTES (all rec) · the moon origin voiced in four passes → `_CANON_NODES/outliers-moon-origin-seed.md`, nine calls "all rec" → WB-TEC-0002 the dive rig · WB-BIO-0002 the Mother · WB-CUS-0003 the hot-zone divers · WB-INS-0004 the heat (G0–G4, dozers, the fallout treaty, the Hotline) · fabula 0.2.0 (OXO 2199, Severance 2099, era 1; ASTRO7EX = Earth's return) · Tori's node THE DIVE · world view v8. Open: the sleeper DNA's mechanism · Severance vs the Deep Meridian beam · "Aloha" · the calf genre's name. BOLO 95 1.2 readback still owed. Note: `_CACHE/2026-10-01.session.md`.
