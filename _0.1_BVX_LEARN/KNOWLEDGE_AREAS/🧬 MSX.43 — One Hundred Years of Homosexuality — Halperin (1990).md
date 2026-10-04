@@ -32,7 +32,7 @@ feeds:
     strength: contextual
     note: "Ch. 5 (pp. 89-90): the hora, the narrow window between puberty and the beard, set a male's sexual price. Age as market value is a VITAL-layer clock."
 zotero_key: ""
-pdf_pages: [240]
+pdf_pages: [244]
 status: complete
 confidence: high
 date_created: 2026-10-04
@@ -217,7 +217,7 @@ Halperin's Athenian evidence is about public speech among elite men. He says him
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text by pdftotext, 240 pdf pages; book page = pdf page minus 12. Title page and copyright confirm David M. Halperin, *One Hundred Years of Homosexuality and Other Essays on Greek Love*, Routledge, New York and London, 1990. The Preface says the essays were revised from three years of earlier publications.
+Full text by pdftotext, 244 pdf pages; book page = pdf page minus 12. Title page and copyright confirm David M. Halperin, *One Hundred Years of Homosexuality and Other Essays on Greek Love*, Routledge, New York and London, 1990. The Preface says the essays were revised from three years of earlier publications.
 
 Read in full: Preface and Introduction; ch. 1, pp. 16-33; ch. 4's opening comparison (pp. 75-77); ch. 5, pp. 89-103. Skipped: chs. 2 and 3 (the Schneider interview and the Patzer-Foucault critique), the second half of ch. 4, all of ch. 6 on Diotima, the endnotes, the addendum, and the bibliography. The chapter 2 to 3 arguments are known only from the preface summary. Ch. 6 feeds nothing here.
 

@@ -36,7 +36,7 @@ feeds:
     strength: contextual
     note: "Ch. 3 (pp. 25-26): 'sex is nice and pleasure is good for you' as a core value. A CORE-layer belief a character holds or fights."
 zotero_key: ""
-pdf_pages: [330]
+pdf_pages: [324]
 status: complete
 confidence: high
 date_created: 2026-10-04
@@ -225,7 +225,7 @@ Proposed use: give each partner a different agreement style, and make the fricti
 
 ## 10 · PROVENANCE & CONFIDENCE
 
-Full text by pdftotext, about 330 pdf pages; book page = pdf page minus 10. Copyright page confirms Janet W. Hardy and Dossie Easton, *The Ethical Slut*, 3rd edition, Ten Speed Press, 2017. Dossie Easton coined "ethical slut" in 1995 (ch. 4, p. 31). Janet Hardy appeared as Catherine A. Liszt in the first edition (ch. 1, p. 3).
+Full text by pdftotext, 324 pdf pages; book page = pdf page minus 10. Copyright page confirms Janet W. Hardy and Dossie Easton, *The Ethical Slut*, 3rd edition, Ten Speed Press, 2017. Dossie Easton coined "ethical slut" in 1995 (ch. 4, p. 31). Janet Hardy appeared as Catherine A. Liszt in the first edition (ch. 1, p. 3).
 
 Read in full: ch. 1 opening; ch. 3 (pp. 23-30); the consent chapter's closing sections (pp. 54-57); ch. 15 on jealousy (pp. 135-143, the diagnostic half); ch. 17 on agreements (pp. 172-178); the Conclusion (pp. 292-294). Skipped: chs. 2, 4, 5, 7 to 14, 16, 18 to 24, the glossary, and further reading. The second half of the jealousy chapter, on practical work, was not read.
 
