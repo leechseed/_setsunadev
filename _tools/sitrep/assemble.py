@@ -113,6 +113,18 @@ def main():
         if rows != len(v.get("items", [])):
             findings.append(f"V has {len(v.get('items', []))} items; the Blocked table has {rows} numbered rows")
 
+    # DOC-SOP 3.2 (BOLO 95): long sentences, advisory only; quoted speech is Chief's and does not count
+    def _long(s):
+        s = re.sub(r"\[\[[^\]|]+\|([^\]]+)\]\]", r"", re.sub(r'"[^"]*"', "", s))
+        return [x for x in re.split(r"(?<=[.!?;])\s+", s) if len(x.split()) > 20]
+    longs = {}
+    for b in blocks:
+        txt = [b.get("plain", ""), b.get("line", ""), b.get("why", "")] + list((b.get("strand") or {}).values()) + [i.get("t", "") for i in items_of(b) if isinstance(i, dict)]
+        n = sum(len(_long(t)) for t in txt if isinstance(t, str))
+        if n: longs[b["id"]] = n
+    if longs:
+        findings.append("sentences over 20 words (advisory, SOP 3.2): " + " · ".join(f"{k} {v}" for k, v in longs.items()))
+
     # the digest: what changed vs the previous board
     prev_dir = os.path.join(wd, "prev")
     print(f"SITREP assemble · {date}")

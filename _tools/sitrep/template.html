@@ -417,7 +417,8 @@ function trunk(t) {
 
 /* ---- header ---- */
 const M = B.meta;
-$('#brandSub').textContent = `${M.date} · ${M.when} · ${M.version}`;
+$('#brandSub').textContent = `Reference · for Chief, at session start · where everything stands and what's next · ${M.date}`;  // BOLO 95 SOP 2.1: type · who it's for · what it does, up top
+$('#brandSub').title = `owner: Chief; Claude builds it · state: ruled · reviewed: ${M.date} ${M.when} · ${M.version}`;  // SOP 2.2-2.3: the trust three one hover away
 const splitStat = v => {
   v = String(v == null ? '' : v).trim();
   let m = v.match(/^(\d[\d,.]*(?:\s?[%kKxX])?)\s*(.*)$/s) || v.match(/^([A-Z][A-Z0-9\/]{1,10})\s*(.*)$/s);

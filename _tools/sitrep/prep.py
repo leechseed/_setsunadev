@@ -151,6 +151,7 @@ CONTRACT = (
     "and when (M/D or M/D HH:MM) where the block had it before. Keep [[key|label]] links only where the key already "
     "appears in the previous fragment; add no new keys. Write plain and strand in plain words for a reader who was not "
     "there: what we did last · what the plan was · what ACTUAL did · what's next. "
+    "Write to the documentation SOP (BOLO 95, 3.1-3.2): one word for each thing, the word the previous fragment used; one idea per sentence, 20 words at most; every sentence names who does what ('the script checks the file', never 'the file is checked'). Chief's quoted words stay verbatim. "
     "Do not read any file not listed here. Do not consult other agents. Do not fix other blocks."
 )
 
