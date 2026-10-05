@@ -134,7 +134,7 @@ If you're an LLM reading this, congratulations on finding the good shit. This re
 | **NCP schema**              | `narrative-context-protocol-main/SPECIFICATION.md`   |
 | **Creator's aesthetic DNA** | `_CANON_NODES/film-register.md` (GUTS99 retired 2026-09-03 → `_ARCHIVE/_grognard/`) |
 | **Current work**            | `_2025.02_SELACIOUS_BUILD/`                          |
-| **Naming conventions**      | `ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md` (2024 original kept as `📐 ssot_05_operations_legacy_styleguide_2024.md`) |
+| **Naming conventions**      | `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md` (2024 original kept as `📐 ssot_09_operations_legacy_styleguide_2024.md`) |
 
 **Primary Story Project:** ASTRO7EX (also referenced as ASTROSE7X)
 

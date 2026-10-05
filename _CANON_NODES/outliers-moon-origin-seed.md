@@ -7,7 +7,7 @@ trunk: BLACK
 status: RULED 2026-10-01 (BOLO 96, Chief: "all rec", nine calls) — filed as WB-TEC-0002 the dive rig · WB-BIO-0002 the Mother · WB-CUS-0003 the hot-zone divers · WB-INS-0004 the heat, grades, dozers, the Hotline · fabula 0.2.0 the Moon Severance 2099, OXO 2199. The sleeper mission's mechanism stays lineage ⧗
 links:
   - "[[victoria-midnight]]"
-  - "[[ssot_09_worldbuilding_system]] (WB-INS-0004 the Power Line)"
+  - "[[ssot_05_worldbuilding_system]] (WB-INS-0004 the Power Line)"
   - "[[ssot_04_fabula]] (the hinge · the Moon Severance ⧗)"
   - "[[ssot_01_story_registry]] (VIGNETTES)"
 captured: 2026-10-01

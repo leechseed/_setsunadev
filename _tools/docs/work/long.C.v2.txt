@@ -1,0 +1,6 @@
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/2-reference.md
+- Closed 2026-09-03: ~~one document that says how a project runs here~~ (the project flow); ~~a project lifecycle in the repo proper~~ (the flow's P0 to P6); ~~a sprint/cadence layer beyond the CDPR paragraph~~ (the flow's section F); ~~the DOCTRINE-0 ratification~~ (ratified).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/2-reference.md
+- The source has type `ssot_procedure`, category operations, frontmatter version 0.2.3 (the 1.0.0 stamp of 2026-10-04 is withdrawn).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/3-how-to.md
+- Let the AI sanitize the input and map it to the frame and the body for its page type (07.2).

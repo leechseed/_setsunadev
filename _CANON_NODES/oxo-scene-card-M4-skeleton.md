@@ -64,7 +64,7 @@ signpost seat:  Act 3 (M4+M5, the Bourne pivot), per the trope graph's ruled mov
 reveal:         to the audience: the Administration's classification ladder is itself a revisable fiction,
                 not a diagnosis — "Critical Error" names a target, not a fact about her ⧗ interpretive,
                 matching the controlling idea's mechanism line, "it trains you, measures you, then calls
-                the result your nature" (ssot_07_theme_system.md). To Tori: ⧗ open — whether she learns
+                the result your nature" (ssot_06_theme_system.md). To Tori: ⧗ open — whether she learns
                 this or only survives it is not given in canon                                          (P7)
 collision:      unassigned ⧗ — no collision-engine row is read for this card                            (P8)
 stakes delta:   escalates from M3's private, solitary search (m3_underground_search, "ongoing across
@@ -116,7 +116,7 @@ gap_effect: ⧗ open
 
 ---
 
-### THEME READ (07_THEME_SYSTEMS v0.7.0)
+### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
 - **Debate tested:** 2 · *Tori* — Interpretation vs Senses, "Believe the story, or believe your eyes?" (the Feed's file says Noise; her senses say she is still herself)
 - **Freedom step:** RULED 2026-09-29 (77-AI, rec taken) — holds BOTH readings: Tori reads −− *You're managed, not free*; the audience reads −−− *The cage feels like home*, the ironic charge row 9 already uses

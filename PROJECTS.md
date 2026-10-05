@@ -26,7 +26,7 @@ Every project, ranked by how much development actually went into it. Volume = ch
 | 7 | **Food ventures** — bakery, takeout, eating show | BLACK | ~411k | 17 | Mar→Jul | 🟡 cooling |
 | 8 | **ULTRASIN / GDP** — physique, gym build, training | ORANGE | ~400k | 11 | Feb→Aug | 🟢 live |
 | 9 | **Tooling** — scripts, scrapers, UI builds | BLACK | ~266k | 16 | Feb→Jul | ⚪ support |
-| 10 | ~~**Business ops** — PM, charters, market entry~~ | BLACK | ~203k | 6 | Feb→Jul | ⚫ **RETIRED 2026-09-09 (R8)** — a keyword bucket, never a project; PM half → `05_OPERATIONS` (9/3), venture half dead or homed elsewhere |
+| 10 | ~~**Business ops** — PM, charters, market entry~~ | BLACK | ~203k | 6 | Feb→Jul | ⚫ **RETIRED 2026-09-09 (R8)** — a keyword bucket, never a project; PM half → `09_OPERATIONS` (9/3), venture half dead or homed elsewhere |
 
 **BLACK ~2,830k · ORANGE ~1,400k · shared ~430k.** Black runs at roughly twice the volume of orange.
 
@@ -100,7 +100,7 @@ GDP-1 BOOTYCAMP four phases, Gate Keeper's Kata, FAC-1 NIGHTYARD build spec, tra
 yt-dlp, clipboard monitors, JSX, debugging. Serves other projects, no independent goal.
 
 ### 10 · Business ops — ⚫ RETIRED 2026-09-09
-PMBOK, charters, market entry. Dormant since spring. **Ruled R8 on the true-ancients pass:** the PM material (PMBOK 6 study guides · the BVI charter + assumption log · the WBS note) was harvested into `05_OPERATIONS/📐 ssot_05_operations_pm_holdings_inventory.md` and THE PROJECT FLOW v0.1 on 9/3. The venture conversations were never PM: SPINDLE (dead), the anime snack box (→ Food ventures), the SlimeVR market-entry plan (→ the SlimeVR line below), the June content-rights briefing (→ pointed from the PM inventory for BOLO 27 / ULTRA DARK). Nothing deleted; the archive holds all six.
+PMBOK, charters, market entry. Dormant since spring. **Ruled R8 on the true-ancients pass:** the PM material (PMBOK 6 study guides · the BVI charter + assumption log · the WBS note) was harvested into `09_OPERATIONS/📐 ssot_09_operations_pm_holdings_inventory.md` and THE PROJECT FLOW v0.1 on 9/3. The venture conversations were never PM: SPINDLE (dead), the anime snack box (→ Food ventures), the SlimeVR market-entry plan (→ the SlimeVR line below), the June content-rights briefing (→ pointed from the PM inventory for BOLO 27 / ULTRA DARK). Nothing deleted; the archive holds all six.
 
 ---
 

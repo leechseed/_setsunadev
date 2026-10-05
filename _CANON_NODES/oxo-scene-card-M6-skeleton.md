@@ -107,7 +107,7 @@ gap_effect: ⧗ open
 
 ---
 
-### THEME READ (07_THEME_SYSTEMS v0.7.0)
+### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
 - **Debate tested:** 2 · *Tori* — "Believe the story, or believe your eyes?" — resolved: she believes her eyes, permanently, the Growth = Stop payoff (oxo-storyform.md §1)
 - **Freedom step:** + *Your life is yours* — the terminal step, per Judgment Good

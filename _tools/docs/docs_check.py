@@ -9,6 +9,8 @@ ShroomsQ/_CANON/_DOCS/<system>/<stem>/. For every core doc it checks:
   - front matter carries title · type · for · does · owner · state · reviewed · source
   - the thin strip (Who it's for · What it does · Type) is the first body line
   - the reference page has an H2 for every component and an H3 for every part (exact names)
+  - visuals (DOC-SOP 5.3–5.4, BOLO 104): the concept page opens with a Mermaid diagram, and the
+    reference page carries one when the doc has more than five components; each has a caption line
 Advisory: sentences over 20 words (DOC-SOP 3.2), OPEN lines (gaps the writers found).
 """
 import io
@@ -46,6 +48,17 @@ def split_front(text):
         return yaml.safe_load(m.group(1)) or {}, m.group(2)
     except yaml.YAMLError:
         return None, m.group(2)
+
+
+def first_visual(body):
+    """The first ```mermaid block sits before the first H2, with an italic caption line right above it."""
+    head = body.split("\n## ", 1)[0]
+    m = re.search(r"(?m)^(.*)\n+```mermaid", head)
+    if not m:
+        return "no diagram before the first H2"
+    if not re.match(r"^\*[^*].*\*\s*$", m.group(1).strip()):
+        return "diagram has no italic caption line above it"
+    return None
 
 
 def long_sentences(body):
@@ -101,6 +114,11 @@ def main():
                     blocking.append(f"{tag}/{p}: thin strip is not the first body line")
                     bad = True
                 longs += long_sentences(body)
+                if not retired and comps and (p == "1-concept.md" or (p == "2-reference.md" and len(comps) > 5)):
+                    v = first_visual(body)
+                    if v:
+                        blocking.append(f"{tag}/{p}: {v} (DOC-SOP 5.3)")
+                        bad = True
                 opens += len(re.findall(r"\*\*OPEN:\*\*", body))
                 if p == "2-reference.md" and not retired:
                     h2 = {norm(h) for h in re.findall(r"^##\s+(.+?)\s*$", body, re.M)}

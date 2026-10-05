@@ -162,7 +162,7 @@ Every item below is a specific the fabula and telling-profile records leave sile
 - **77-U · what the outbursts look like:** **Sync-feed glitches**: visual and audio artifacts in her channel (canon already names row 9's flare a "Digital Puberty glitch").
 - **77-V · who dismisses her:** **the Administration, as a routine diagnostic**. No named faculty member; the dismissal is procedure, not cruelty.
 
-### THEME READ (07_THEME_SYSTEMS v0.7.0)
+### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
 - **Debate tested:** 2 · *Believe the story, or believe your eyes?* (her grief is real; the diagnosis says it is a phase)
 - **Freedom step:** −− *You're managed, not free.* (the Administration relabels grief as development)

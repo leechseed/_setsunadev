@@ -86,7 +86,7 @@ exit state:     Tori is Verified (neon blue) for the first time · the Feed's ca
 
 ---
 
-### THEME READ (07_THEME_SYSTEMS v1.0.0)
+### THEME READ (06_THEME_SYSTEMS v1.0.0)
 
 - **Debate tested:** 2 · *Tori* — Interpretation vs Senses, "Believe the story, or believe your eyes?" — she says the missing human line herself ("breathe"); the Feed archives it as noise and rates her anyway, and she takes the Feed's story (Verified) over the felt refusal underneath
 - **Freedom step:** ⧗ holds both readings, same shape as the M4 card's own 77-AI ruling for this identical ironic charge — Tori reads + *Your life is yours* (whole again, thirty seconds); the true reading is −−− *Control that feels like freedom* (the cage feels like home) — matches the card's own value turn verbatim (whole −→+ for Tori · owned +→− underneath)

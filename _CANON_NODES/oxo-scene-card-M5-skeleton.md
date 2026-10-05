@@ -134,7 +134,7 @@ causal_edges: []   # RULED 2026-09-29 (77-AJ, rec taken): the Diaspora answers t
 
 ---
 
-### THEME READ (07_THEME_SYSTEMS v0.7.0)
+### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
 - **Debate tested:** 1 · *the world* — Interdiction vs Prediction, "They already know how you'll turn out. Can you prove them wrong?" — the coup is the proof attempt at scale
 - **Freedom step:** moving from −− *Control* toward + *Your life is yours*, collectively — ⧗ open, see P5

@@ -37,7 +37,7 @@ driver:         Action — OXO's ruled story-level Driver (ssot_04_plot_system.m
 value-in:       whole / clean channel, polarity plus — "Venus trine Mars... the only clean channel in
                 the chart... why racing is the one coherent place" (victoria-midnight.md, load-bearing
                 aspects) — read on the theme system's FREEDOM scale as + Freedom, "Your life is yours"
-                ⧗ interpretive application of ssot_07_theme_system.md's scale to a pre-theme-system card ·
+                ⧗ interpretive application of ssot_06_theme_system.md's scale to a pre-theme-system card ·
                 world-half — RULED 2026-09-29 (77-AF, rec taken): the tolerated illegal race, pots high
                 enough the government "just allows it" (Chief's Apple Notes 2026, §1 OXO, "Tori and the
                 races") — a Fairness(+) reading, "everyone gets a real shot," now the ruled setup for the
@@ -127,7 +127,7 @@ gap_effect: none ⧗   # this is the original telling of the crash, not a withhe
 
 ---
 
-### THEME READ (07_THEME_SYSTEMS v0.7.0)
+### THEME READ (06_THEME_SYSTEMS v0.7.0)
 
 - **Debate tested:** 1 · *the world* — Interdiction vs Prediction, "They already know how you'll turn out. Can you prove them wrong?" ⧗ candidate, riding the tolerated-race idea
 - **Freedom step:** + *Your life is yours* (racing, pre-crash) falling to −− *You're managed, not free* (the resolve, self-imposed) — ironic charge
