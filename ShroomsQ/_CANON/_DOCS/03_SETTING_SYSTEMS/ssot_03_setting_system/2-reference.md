@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.11.0
+source_version: 1.11.1
 ---
 
 **Who it's for:** a writer or maintainer looking up a setting field · **What it does:** lists each component, part and field · **Type:** reference
@@ -119,7 +119,7 @@ S12 is fed independently from the storyform, as L12 is fed from the Dramatica in
 
 ## THE SCENE CARD — the R2 notation (slot reserved in the ladder, delivered here)
 
-One card per scene, one screen. Fields:
+One card per scene, one screen. Twenty-four fields:
 
 | Field | Holds |
 |---|---|
@@ -147,8 +147,6 @@ One card per scene, one screen. Fields:
 | fantasy | one breath: what the audience gets to be, feel or do (the P8 check) |
 | sexy | yes or no, plus one line why (the P9 check) |
 | aesthetic | color, shape or texture: the one that carries it (the P10 check) |
-
-> **OPEN:** the source says "Ten fields, one screen" but lists twenty-four.
 
 Notes: an enclosure ends on a gate walked through; a modulation ends on a code granted or a rate moved. The SEAM_CROSSING flag fires on a crossing.
 

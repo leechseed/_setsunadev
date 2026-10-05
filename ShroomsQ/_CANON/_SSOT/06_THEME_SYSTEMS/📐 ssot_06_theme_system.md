@@ -1,7 +1,7 @@
 ---
 type: ssot_06_theme_systems
 category: theme_system
-version: 1.4.0
+version: 1.4.1
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
@@ -43,7 +43,7 @@ Four parts, not a twelve-layer stack. The character and setting systems (L1–L1
 
 **(c) The value scale — one or two gauges, stepped per scene.**
 - *What it is:* the value the controlling idea turns on, broken into four steps — positive, contrary, contradictory, negation of the negation (the McKee/Coyne value spectrum) — so any scene's turn can be named as a step up or down. A second gauge is added only when one point of view runs on a genuinely different value than the rest.
-- *How to build it:* name the value, then write plain words for each of the four steps, worst to best.
+- *How to build it:* name the value, then write plain words for each of the four steps, best to worst (positive first, the negation of the negation last).
 - *Test it's done:* every scene's value turn (the plot card's value-in/value-out fields) names one of the four steps, and the steps read as a ladder, not four unrelated moods.
 - *Worked below:* OVEREXITOUT's Freedom (primary) and Fairness (world) scales.
 
@@ -239,6 +239,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.4.1 · 2026-10-05** BOLO 102 batch D (Chief: "All recommendations"): the value scale's build step reads "best to worst", matching the four-step lists (positive first, the negation of the negation last).
 - **1.4.0 · 2026-10-05** BOLO 102 stage 2 (Chief: "My word"): `holders:` on each rail; `motif.<slug>` ids and `motif_ref` in THE MOTIFS; the theme record (`rail_tested` · `side_argued` · `gauge`) stated as 06's output; G4 `core_binary` as the idea's seed; the CT11 verdict (`argues` · `neutral` · `undercuts`); the citation test runs on the scene plan; the 1.0 bar is SOP §5's six.
 - **1.3.2 · 2026-10-05** BOLO 102 batch C (Chief: "all recs"): TROPES gains the five-step procedure for keying a trope to one rail; Chief decides any trope that needs two.
 - **1.3.1 · 2026-10-04** BOLO 100 TOUCH BATCH 1, Chief "REC.": count line replaced by pointer to the register (TS-B9); front-door line (TS-B10).

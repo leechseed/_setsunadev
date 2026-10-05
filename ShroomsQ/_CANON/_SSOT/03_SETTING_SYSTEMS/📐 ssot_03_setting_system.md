@@ -1,7 +1,7 @@
 ---
 type: ssot_03_setting_systems
 category: setting_system
-version: 1.11.0
+version: 1.11.1
 tier: [fabula, narratology]
 last_updated: 2026-10-05
 applies_to: [all IPs]
@@ -169,7 +169,7 @@ Same architecture as the LEECHSEED Character System: surface → depth → struc
 
 ## THE SCENE CARD — the R2 notation (slot reserved in the ladder, delivered here)
 
-One card per scene. Ten fields, one screen:
+One card per scene. Twenty-four fields, one screen:
 
 ```
 SCENE CARD
@@ -421,6 +421,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **setting** domain is k
 
 ## Version history
 
+- **1.11.1 — 2026-10-05.** BOLO 102 batch D (Chief: "All recommendations"): THE SCENE CARD heading line counts its fields, twenty-four, in place of "Ten".
 - **1.11.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): IF catalog calls 1, 2, 5, 6 and 10 land. LEDGER_DUE future states carry the 08 time code. The SCENE CARD gains the theme record, `focal`, and `fantasy` / `sexy` / `aesthetic`. UNDERSIDE_SURFACING hands P7, LOAD_BEARING hands P12, and S8 `witness` takes a character id. Ryan's scoring is the genre-contract tool for 03 and 01. SETTING × LIBRARY gains six interface lines.
 - **1.10.2 — 2026-10-04.** Chief "rec" (BOLO 100, call D4): S2 WEATHER names `climate_band`, `seasons`, `light`, `rhythms`; S9 ALLURE names `promise`, `draw`, `glamour`, `source_rupture`. No tag change.
 - **1.10.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": field and scene-card line renamed (TS-B3); prose swapped (TS-B4); front-door line (TS-B10).

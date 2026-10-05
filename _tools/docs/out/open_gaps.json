@@ -26,61 +26,13 @@
  {
   "n": 4,
   "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_interface_catalog",
-  "page": "2-reference.md",
-  "line": 85,
-  "gap": "The page rules that an id never changes. But `ifc_build.py` numbers each pair's rows by sort order on every build, by kind, status, side and doc. A new row or a proposed-to-built flip can shift later ids. The source states no rule that pins ids."
- },
- {
-  "n": 5,
-  "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_interface_catalog",
-  "page": "2-reference.md",
-  "line": 416,
-  "gap": "The test reads register rows, not source docs. The source does not say how a closed wiring leaves these lists. A silent-side line in a source doc changes no row. See [how-to](3-how-to.md#close-a-one-sided-wiring)."
- },
- {
-  "n": 6,
-  "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_interface_catalog",
-  "page": "3-how-to.md",
-  "line": 51,
-  "gap": "The build numbers each pair's rows by sort order, not by arrival. A new row can renumber the rows after it, which clashes with the page's rule that an id never changes. The source states no fix."
- },
- {
-  "n": 7,
-  "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_interface_catalog",
-  "page": "3-how-to.md",
-  "line": 66,
-  "gap": "`ifc_build.py` builds the findings from register rows only. A new line in a source doc changes no row, so the pair stays listed. Adding the silent side's row (see Add a new interface) removes the pair. The source does not say whether this is the intended close."
- },
- {
-  "n": 8,
-  "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_module_architecture",
-  "page": "2-reference.md",
-  "line": 59,
-  "gap": "the source says a module requires no other module, yet Cross-Module Dependencies lets one module depend on another."
- },
- {
-  "n": 9,
-  "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_module_architecture",
-  "page": "2-reference.md",
-  "line": 180,
-  "gap": "the source still calls the registry \"next deliverable\" in Creation step 2, though its version 1.0.1 note says the registry pointer replaced that phrase."
- },
- {
-  "n": 10,
-  "system": "00_EPISTEMOLOGY",
   "doc": "ssot_00_pattern_library",
   "page": "2-reference.md",
   "line": 107,
   "gap": "the step names of Pattern 2 (Chief has not ruled the words)."
  },
  {
-  "n": 11,
+  "n": 5,
   "system": "00_EPISTEMOLOGY",
   "doc": "ssot_00_pattern_library",
   "page": "2-reference.md",
@@ -88,7 +40,7 @@
   "gap": "the format a pattern entry takes when the sim (BOLO 101) consumes it."
  },
  {
-  "n": 12,
+  "n": 6,
   "system": "00_EPISTEMOLOGY",
   "doc": "ssot_00_pattern_library",
   "page": "2-reference.md",
@@ -96,15 +48,7 @@
   "gap": "which existing docs move into the Pattern half beyond the four listed."
  },
  {
-  "n": 13,
-  "system": "00_EPISTEMOLOGY",
-  "doc": "ssot_00_variable_registry",
-  "page": "2-reference.md",
-  "line": 557,
-  "gap": "the source gives the internal formula with `12 - shame_index` and the display formula with `10 - shame_index`. It does not say why the two differ."
- },
- {
-  "n": 14,
+  "n": 7,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_collision_engine",
   "page": "3-how-to.md",
@@ -112,7 +56,7 @@
   "gap": "the C×C first run (Tori × Anna) needs Anna's chart before this task can run on that pair."
  },
  {
-  "n": 15,
+  "n": 8,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_genre_system",
   "page": "2-reference.md",
@@ -120,7 +64,7 @@
   "gap": "the first genre-load trial on OXO is parked as \"genre-load trial (phase 2)\"."
  },
  {
-  "n": 16,
+  "n": 9,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_genre_system",
   "page": "2-reference.md",
@@ -128,7 +72,7 @@
   "gap": "every OXO line except G1, and all five cultcore conventions, wait for Chief and the phase 2 genre reading."
  },
  {
-  "n": 17,
+  "n": 10,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_genre_system",
   "page": "3-how-to.md",
@@ -136,7 +80,7 @@
   "gap": "the source gives no steps for entering a new OXO line before phase 2. Chief strikes or keeps each parked line."
  },
  {
-  "n": 18,
+  "n": 11,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_modern_poetics",
   "page": "3-how-to.md",
@@ -144,7 +88,7 @@
   "gap": "the application pass over Tori, DCUS, the Drop, storyform and scene cards is BOLO 21 and fires only on Chief's go."
  },
  {
-  "n": 19,
+  "n": 12,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_modern_poetics",
   "page": "4-tutorial.md",
@@ -152,7 +96,7 @@
   "gap": "the source gives no sample answers for P8 to P10. Chief's own spoken lines are the canon form."
  },
  {
-  "n": 20,
+  "n": 13,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_scale_ladder",
   "page": "2-reference.md",
@@ -160,7 +104,7 @@
   "gap": "the Movement-to-Signpost mapping table is plot_systems work, flagged and not yet built."
  },
  {
-  "n": 21,
+  "n": 14,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_scale_ladder",
   "page": "3-how-to.md",
@@ -168,7 +112,7 @@
   "gap": "the source gives no steps for mapping six OXO movements onto four signposts. That table is plot_systems work and is not yet built."
  },
  {
-  "n": 22,
+  "n": 15,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_story_spine_comparative_tree",
   "page": "4-tutorial.md",
@@ -176,7 +120,7 @@
   "gap": "the source gives no Domain for the MC, IC or RS seats. Leave those three blank."
  },
  {
-  "n": 23,
+  "n": 16,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_texture_layer",
   "page": "4-tutorial.md",
@@ -184,7 +128,7 @@
   "gap": "the texture layer gives no ruled OXO values for T1 to T10. Only the texture system holds proposals."
  },
  {
-  "n": 24,
+  "n": 17,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_texture_system",
   "page": "3-how-to.md",
@@ -192,7 +136,7 @@
   "gap": "the source gives no calibrated barrier-word cut points. The first trial passage sets them."
  },
  {
-  "n": 25,
+  "n": 18,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_texture_system",
   "page": "4-tutorial.md",
@@ -200,15 +144,7 @@
   "gap": "the source names the emotions for each movement but gives no technique or payoff text for an OXO mood-curve entry."
  },
  {
-  "n": 26,
-  "system": "01_NARRATIVE_FRAMEWORKS",
-  "doc": "ssot_01_trope_register",
-  "page": "2-reference.md",
-  "line": 122,
-  "gap": "the source says wave B (0.5.0) keyed 2,175 keys, but its parts (theme 1,013, style 831, stragglers 351) sum to 2,195."
- },
- {
-  "n": 27,
+  "n": 19,
   "system": "01_NARRATIVE_FRAMEWORKS",
   "doc": "ssot_01_trope_register",
   "page": "4-tutorial.md",
@@ -216,7 +152,7 @@
   "gap": "the source says the cross-check was not done. This tutorial does not report its result."
  },
  {
-  "n": 28,
+  "n": 20,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_00_process_illustration_character_pipeline",
   "page": "4-tutorial.md",
@@ -224,7 +160,7 @@
   "gap": "the source gives no single character walked through all four flows, so the lesson stitches its separate examples."
  },
  {
-  "n": 29,
+  "n": 21,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_astrology",
   "page": "3-how-to.md",
@@ -232,7 +168,7 @@
   "gap": "the source gives the rules for each task but not the sign choice. The DAI doc owns the sign tables. These steps stop where the source stops."
  },
  {
-  "n": 30,
+  "n": 22,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_astrology",
   "page": "4-tutorial.md",
@@ -240,7 +176,7 @@
   "gap": "the source holds no complete worked chart with signs. This lesson uses the examples it does hold: Equity and Inequity as Problem and Solution, and Mars for a Proaction-driven character. Sign choices stay with the DAI doc."
  },
  {
-  "n": 31,
+  "n": 23,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_astrology_12_layer_mapping",
   "page": "4-tutorial.md",
@@ -248,7 +184,7 @@
   "gap": "the source gives no 7th House contents or Venus aspects for Victoria. This check uses the two placements it does give."
  },
  {
-  "n": 32,
+  "n": 24,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_astrology_12_layer_mapping",
   "page": "4-tutorial.md",
@@ -256,7 +192,7 @@
   "gap": "the source does not rule whether Aries and Virgo count as harmonious or tense here. It gives its own reading in Step 5."
  },
  {
-  "n": 33,
+  "n": 25,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_astrology_dai",
   "page": "2-reference.md",
@@ -264,7 +200,7 @@
   "gap": "the moved chart is partial. The MC Concern is missing, flagged `⏸ VM fill pass (phase 2)`."
  },
  {
-  "n": 34,
+  "n": 26,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_astrology_dai",
   "page": "4-tutorial.md",
@@ -272,7 +208,7 @@
   "gap": "the source holds no worked chart in this document, and the moved chart lacks the MC Concern. This lesson uses a training input marked as invented for practice. It is not canon for any character."
  },
  {
-  "n": 35,
+  "n": 27,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_character_state_architecture",
   "page": "4-tutorial.md",
@@ -280,7 +216,7 @@
   "gap": "the source gives no `told_at` value for this state. The example `[\"M2 · Q1 · S04 | 012.3.2\"]` shows the shape only. Fill it from the tracking system."
  },
  {
-  "n": 36,
+  "n": 28,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_dramatica_integration_protocol",
   "page": "4-tutorial.md",
@@ -288,7 +224,7 @@
   "gap": "the source gives no Victoria values for `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement` or `limit_type`. The MC Problem in the sub-table is `Equity`. Fill the rest from her locked ingest."
  },
  {
-  "n": 37,
+  "n": 29,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_dramatica_integration_protocol",
   "page": "4-tutorial.md",
@@ -296,15 +232,7 @@
   "gap": "the source gives no Victoria values for the OS, IC and RS fields or for `mc_concern`, `mc_symptom`, `mc_response` and `mc_benchmark`."
  },
  {
-  "n": 38,
-  "system": "02_CHARACTER_SYSTEMS",
-  "doc": "ssot_02_step_1_source_verification_protocol",
-  "page": "2-reference.md",
-  "line": 130,
-  "gap": "check 2.3 names `story_limit`, but the Dramatica ingest form renamed that field `limit_type` in version 1.0.2. The source still reads `story_limit`."
- },
- {
-  "n": 39,
+  "n": 30,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_step_1_source_verification_protocol",
   "page": "4-tutorial.md",
@@ -312,7 +240,7 @@
   "gap": "the source documents no actual gate run for Victoria. This lesson shows the method on a made-up state of her folder, marked as such, not a recorded result."
  },
  {
-  "n": 40,
+  "n": 31,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_template_astrology_ingest",
   "page": "4-tutorial.md",
@@ -320,7 +248,7 @@
   "gap": "the source holds no completed instance of this form. It is blank. Victoria Midnight has Dramatica values in the vertical slice, but her signs are not on record. This lesson fills structure and derivations. Signs come from the DAI doc, and you supply them."
  },
  {
-  "n": 41,
+  "n": 32,
   "system": "02_CHARACTER_SYSTEMS",
   "doc": "ssot_02_template_dramatica_ingest",
   "page": "4-tutorial.md",
@@ -328,7 +256,7 @@
   "gap": "the source form is blank. The only worked values on record sit in the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) instance. That instance holds the L12 fields and the motivation quad, not the full storyform. The lesson fills what it can and marks the rest `⏸`."
  },
  {
-  "n": 42,
+  "n": 33,
   "system": "03_SETTING_SYSTEMS",
   "doc": "ssot_03_setting_state_architecture",
   "page": "4-tutorial.md",
@@ -336,7 +264,7 @@
   "gap": "the `origin_event` ids stay parked until the fabula registry enters them."
  },
  {
-  "n": 43,
+  "n": 34,
   "system": "03_SETTING_SYSTEMS",
   "doc": "ssot_03_setting_synthesis",
   "page": "2-reference.md",
@@ -344,7 +272,7 @@
   "gap": "the source gives no field list for the full eight-field faction block beyond the six fields in change 1."
  },
  {
-  "n": 44,
+  "n": 35,
   "system": "03_SETTING_SYSTEMS",
   "doc": "ssot_03_setting_synthesis",
   "page": "4-tutorial.md",
@@ -352,23 +280,15 @@
   "gap": "the synthesis does not quote the exact wording of the S7 test line. Read it in ssot_03_setting_system, layer S7."
  },
  {
-  "n": 45,
+  "n": 36,
   "system": "03_SETTING_SYSTEMS",
   "doc": "ssot_03_setting_system",
   "page": "2-reference.md",
-  "line": 151,
-  "gap": "the source says \"Ten fields, one screen\" but lists twenty-four."
- },
- {
-  "n": 46,
-  "system": "03_SETTING_SYSTEMS",
-  "doc": "ssot_03_setting_system",
-  "page": "2-reference.md",
-  "line": 227,
+  "line": 225,
   "gap": "many DCUS instance fields are parked as \"DCUS faction fill pass (phase 2)\", including the Administration's `goal`, `clock` and `fault line`."
  },
  {
-  "n": 47,
+  "n": 37,
   "system": "03_SETTING_SYSTEMS",
   "doc": "ssot_03_setting_system",
   "page": "4-tutorial.md",
@@ -376,7 +296,7 @@
   "gap": "the instance leaves many fields parked (\"DCUS faction fill pass, phase 2\"), so steps 4 to 6 rely on predicted flags."
  },
  {
-  "n": 48,
+  "n": 38,
   "system": "04_PLOT_SYSTEMS",
   "doc": "ssot_04_fabula",
   "page": "2-reference.md",
@@ -384,7 +304,7 @@
   "gap": "the Severance's order against the Deep Meridian beam, and whether ASTRO7EX's own \"Moon Severance\" is this event."
  },
  {
-  "n": 49,
+  "n": 39,
   "system": "04_PLOT_SYSTEMS",
   "doc": "ssot_04_fabula",
   "page": "2-reference.md",
@@ -392,7 +312,7 @@
   "gap": "what the ocean impact wakes, and how both impacts sit against the Deep Meridian beam."
  },
  {
-  "n": 50,
+  "n": 40,
   "system": "04_PLOT_SYSTEMS",
   "doc": "ssot_04_fabula",
   "page": "4-tutorial.md",
@@ -400,7 +320,7 @@
   "gap": "the canon gives no location for the crash, so `location` reads \"unspecified in canon\"."
  },
  {
-  "n": 51,
+  "n": 41,
   "system": "04_PLOT_SYSTEMS",
   "doc": "ssot_04_plot_system",
   "page": "4-tutorial.md",
@@ -408,23 +328,7 @@
   "gap": "the source parks several row 9 fields as \"row 9 fill pass (phase 2)\", so the instance is incomplete by design."
  },
  {
-  "n": 52,
-  "system": "04_PLOT_SYSTEMS",
-  "doc": "ssot_04_trope_graph",
-  "page": "2-reference.md",
-  "line": 106,
-  "gap": "the source says Love sits in seven of the ten pairs, but its own table shows six."
- },
- {
-  "n": 53,
-  "system": "04_PLOT_SYSTEMS",
-  "doc": "ssot_04_trope_graph",
-  "page": "2-reference.md",
-  "line": 194,
-  "gap": "the source body still says Propp has no BVX id, while its OPEN call 5 mints BVX.1136."
- },
- {
-  "n": 54,
+  "n": 42,
   "system": "04_PLOT_SYSTEMS",
   "doc": "ssot_04_trope_graph",
   "page": "4-tutorial.md",
@@ -432,7 +336,7 @@
   "gap": "the source gives no second worked walk. For the OS, IC and RS throughlines you must read the movements map."
  },
  {
-  "n": 55,
+  "n": 43,
   "system": "05_WORLDBUILDING_SYSTEMS",
   "doc": "ssot_05_worldbuilding_system",
   "page": "2-reference.md",
@@ -440,39 +344,15 @@
   "gap": "the seed entries and the catalog fill wait for phase 2, when Chief orders the catalog built."
  },
  {
-  "n": 56,
+  "n": 44,
   "system": "06_THEME_SYSTEMS",
   "doc": "ssot_06_theme_system",
   "page": "2-reference.md",
-  "line": 64,
-  "gap": "the source says to write the four steps \"worst to best\" but lists them best to worst (Freedom first, the negation of the negation last)."
- },
- {
-  "n": 57,
-  "system": "06_THEME_SYSTEMS",
-  "doc": "ssot_06_theme_system",
-  "page": "2-reference.md",
-  "line": 128,
+  "line": 126,
   "gap": "the `meets` values and the latent-theme line for OVEREXITOUT wait for the phase 2 theme fill pass."
  },
  {
-  "n": 58,
-  "system": "06_THEME_SYSTEMS",
-  "doc": "ssot_06_theme_system",
-  "page": "3-how-to.md",
-  "line": 49,
-  "gap": "the source says to write the four steps \"worst to best\" but lists them best to worst (positive first, the negation of the negation last)."
- },
- {
-  "n": 59,
-  "system": "06_THEME_SYSTEMS",
-  "doc": "ssot_06_theme_system",
-  "page": "4-tutorial.md",
-  "line": 53,
-  "gap": "the source says to write the four steps \"worst to best\" but lists them best to worst (Freedom first, control that feels like freedom last)."
- },
- {
-  "n": 60,
+  "n": 45,
   "system": "07_STYLE_GUIDES",
   "doc": "ssot_07_1_prose_style",
   "page": "2-reference.md",
@@ -480,15 +360,7 @@
   "gap": "the source's SOURCES table lists Booth, Genette, Rimmon-Kenan, Pinker, Clark and Johnston with no BVX id (\"—\")."
  },
  {
-  "n": 61,
-  "system": "07_STYLE_GUIDES",
-  "doc": "ssot_07_1_prose_style",
-  "page": "2-reference.md",
-  "line": 172,
-  "gap": "the source's body recs on profanity and explicitness still say \"YA-adjacent\" and \"opt-in per IP\". Its OPEN calls 3 and 4 struck both. This page follows calls 3 and 4."
- },
- {
-  "n": 62,
+  "n": 46,
   "system": "07_STYLE_GUIDES",
   "doc": "ssot_07_2_documents_style",
   "page": "2-reference.md",
@@ -496,7 +368,7 @@
   "gap": "the source's OPEN section records one pending item: BOLO 6's learning-science distill is to be folded into reply rules 1–7 when it lands."
  },
  {
-  "n": 63,
+  "n": 47,
   "system": "08_TRACKING_SYSTEMS",
   "doc": "ssot_08_tracking_system",
   "page": "2-reference.md",
@@ -504,7 +376,7 @@
   "gap": "setting state full doc and the trope-graph act map are marked phase 2 in the source."
  },
  {
-  "n": 64,
+  "n": 48,
   "system": "09_OPERATIONS",
   "doc": "ssot_09_operations_goon_room_protocol",
   "page": "2-reference.md",
@@ -512,7 +384,7 @@
   "gap": "the source names no successor protocol. For the current workspace guide, see the [Goon Room how-to](../how_to_use_goon_room/2-reference.md)."
  },
  {
-  "n": 65,
+  "n": 49,
   "system": "09_OPERATIONS",
   "doc": "ssot_09_operations_project_flow",
   "page": "4-tutorial.md",
@@ -520,7 +392,7 @@
   "gap": "the source does not record the conversion date for the BOLO 26 HOLD."
  },
  {
-  "n": 66,
+  "n": 50,
   "system": "09_OPERATIONS",
   "doc": "ssot_SSOT_CREATION",
   "page": "4-tutorial.md",
@@ -528,7 +400,7 @@
   "gap": "the source carries no worked example of a creation run."
  },
  {
-  "n": 67,
+  "n": 51,
   "system": "09_OPERATIONS",
   "doc": "ssot_ai_instruction_protocol",
   "page": "4-tutorial.md",

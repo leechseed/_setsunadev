@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.1.0"
+source_version: "1.1.1"
 ---
 
 **Who it's for:** a designer looking up a module rule · **What it does:** lists every block, rule and stage in the module architecture doc · **Type:** reference
@@ -54,9 +54,7 @@ A module has:
 - an optional flag;
 - a tier requirement (minimum character tier).
 
-A module does not add layers, modify core variables, override core derived stats or flags, or require other modules.
-
-> **OPEN:** the source says a module requires no other module, yet Cross-Module Dependencies lets one module depend on another.
+A module does not add layers, modify core variables, or override core derived stats or flags. A module runs without any module it does not declare in `depends_on`.
 
 ### Field Modules and Doc Modules
 
@@ -174,10 +172,8 @@ Five stages.
 ### Creation
 
 1. The author writes the module declaration and variable declarations.
-2. The module is registered in the Layer-Locked Module Registry.
+2. The module is registered in the Layer-Locked Module Registry, the file `ssot_00_module_registry`.
 3. Variables are added to the Variable Registry under `MOD.[CODE].*`.
-
-> **OPEN:** the source still calls the registry "next deliverable" in Creation step 2, though its version 1.0.1 note says the registry pointer replaced that phrase.
 
 ### Activation
 

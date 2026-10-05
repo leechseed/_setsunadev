@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md
-source_version: 1.1.1
+source_version: 1.1.2
 ---
 
 **Who it's for:** a narrative designer checking a character against the gate · **What it does:** lists every requirement, check and result · **Type:** reference
@@ -117,7 +117,7 @@ The ingest holds the complete storyform data for the character. It is extracted 
 |---|---|
 | 2.1 | Template exists in the canonical folder. |
 | 2.2 | Template is locked: header status and `storyform_status` both read `locked`. |
-| 2.3 | Section 1 (Storyform Dynamics) complete: story_outcome, story_judgement, story_driver, story_limit populated. |
+| 2.3 | Section 1 (Storyform Dynamics) complete: story_outcome, story_judgement, story_driver, limit_type populated. |
 | 2.4 | Section 2 (Structural Role) complete: structural_role, dramatica_archetype, resolve, growth, approach, mental_sex. |
 | 2.5 | Section 3 (Element Quads) complete: all eight element fields, plus a written structural meaning statement. |
 | 2.6 | Applicable throughline sections complete: Section 4 if MC, Section 5 if IC, Section 6 (OS) always, Section 7 (RS) if an RS principal. |
@@ -126,8 +126,6 @@ The ingest holds the complete storyform data for the character. It is extracted 
 | 2.9 | Downstream handoff checklist is complete, all items checked. |
 
 Result: PASS if all applicable checks hold. FAIL if any required check does not.
-
-> **OPEN:** check 2.3 names `story_limit`, but the Dramatica ingest form renamed that field `limit_type` in version 1.0.2. The source still reads `story_limit`.
 
 ### Component 3: Character Astrology Ingest Verification
 

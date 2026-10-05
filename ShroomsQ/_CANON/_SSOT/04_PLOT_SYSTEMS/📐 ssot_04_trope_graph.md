@@ -1,7 +1,7 @@
 ---
 type: ssot_04_trope_graph
 category: plot_system
-version: 1.1.0
+version: 1.1.1
 tier: narratology
 last_updated: 2026-10-05
 module_of: ssot_04_plot_system
@@ -102,13 +102,13 @@ Tobias and Schmidt are whole-plot or whole-situation inventories, so MS-N ruled 
  "name": "Departure",
  "def": "The hero leaves home to begin the search or the journey proper.",
  "cite": "Propp 1968: p.39",
- "bvx": null,
+ "bvx": "BVX.1136",
  "phase": "middle",
  "same_as": ["cam.04_crossing_of_the_first_threshold", "vog.05_crossing_the_first_threshold"]
 }
 ```
 
-`bvx` is `null` on every Propp node: Propp has no catalog id yet — the PDF is a 9/24 acquisition and `catalog.json` has not re-run since (MS-N.notes.md). This is a data gap, not an authoring gap; every other family carries its BVX id (Tobias BVX.0043, Schmidt BVX.0238, Campbell BVX.0616, Vogler BVX.1124).
+`bvx` is `BVX.1136` on every Propp node: OPEN call 5 minted the id for Propp's *Morphology of the Folktale* and patched all 31 nodes. Every family carries its BVX id (Tobias BVX.0043, Schmidt BVX.0238, Campbell BVX.0616, Vogler BVX.1124).
 
 ---
 
@@ -166,7 +166,7 @@ Two edge types, both weighted differently:
 | 40 | `tob.06_revenge` (Revenge) | `tob.20_descension` (Descension) |
 | 40 | `tob.14_love` (Love) | `vog.05_crossing_the_first_threshold` (Crossing the First Threshold) |
 
-`tob.14_love` is the busiest node in the whole graph, 94 tropes keyed to it and present in seven of these ten strongest pairs — Love is the node every other family's strongest content gravitates toward, from Wedding (Propp's ending) to Return with the Elixir (Vogler's ending) to Rivalry and Transformation (Tobias's own family).
+`tob.14_love` is the busiest node in the whole graph, 94 tropes keyed to it and present in six of these ten strongest pairs — Love is the node every other family's strongest content gravitates toward, from Wedding (Propp's ending) to Return with the Elixir (Vogler's ending) to Rivalry and Transformation (Tobias's own family).
 
 ---
 
@@ -282,7 +282,7 @@ Four real signposts, one throughline, four acts — the fixed order the rail req
 |---|---|---|
 | Tobias, *20 Master Plots* | 20 any-phase nodes, whole-plot inventory | [[BVX.0043]] |
 | Schmidt, *Story Structure Architect* | 55 any-phase nodes, the largest single family, including the Blank Situation Template | [[BVX.0238]] |
-| Propp, *Morphology of the Folktale* | 31 sequenced nodes, the only family with no catalog id yet | Propp 1968 (no BVX id; 9/24 acquisition) |
+| Propp, *Morphology of the Folktale* | 31 sequenced nodes, Propp's functions | [[BVX.1136]] |
 | Campbell, *Hero With a Thousand Faces* | 17 sequenced nodes, Departure/Initiation/Return | [[BVX.0616]] |
 | Vogler, *The Writer's Journey* | 12 sequenced nodes mapped onto the three-act seam | [[BVX.1124]] |
 | TV Tropes (fetch.py) | 1,678 trope names, one-line index definitions, and the raw `Main/` link graph between them | external index; names and one-line defs only, no page bodies |
@@ -306,6 +306,7 @@ Four real signposts, one throughline, four acts — the fixed order the rail req
 
 ## Version history
 
+- **v1.1.1 (2026-10-05):** BOLO 102 batch D (Chief: "All recommendations"): Love sits in six of the ten strongest pairs, matching the table; the body cites BVX.1136 for Propp, in place of "no BVX id" and `bvx: null`.
 - **v1.1.0 (2026-10-05):** BOLO 102 stage 2 (Chief: "My word"): the graph reads the trope register's `register.json` as the one key store (call 10; IF-01-04-22, IF-03-04-24).
 - **v1.0.0 (2026-10-04):** RULED, Chief ("REC"), BOLO 100 plot batch 1 (stamped 1.0.0 by CDR ruling). `module_of: ssot_04_plot_system` added; `applies_to` set to all IPs; status line and `last_updated` refreshed. OPEN 1-6 settled (seating: method rule plus parked OXO seating; empty nodes bypassed; unkeyed 352 permanent, 292 held as `⏸ trope second keying pass (phase 2)`; movements map marked stale-closed; the "or:" tooltip verified built at `_tools/workspace/build.py:2576-2585` and `:2445`). OXO movement seating labeled as the instance, apart from the method rule.
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 2. Built from MS-N's 135 book nodes (Tobias 20 · Schmidt 55 · Propp 31 · Campbell 17 · Vogler 12, 31 same_as edges), PS-R's rails extraction (16 signposts × 4 throughlines, OXO's eight dynamics, the twelve P-layers, six blocking gaps), and the fetch.py/build_graph.py pipeline (1,678 tropes fetched, 1,034 keyed, 644 unkeyed, 2,584 trope_link edges). Six OPEN calls, none yet ruled. Workspace-view handshake written against HOI4-FOCUS-TREE-STUDY.md §6 per BOLO 79's ruling that the graph draws as a focus tree, not a free network, by default.

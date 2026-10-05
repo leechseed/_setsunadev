@@ -2,9 +2,9 @@
 type: ssot_02_character_systems
 category: vertical_slice_protocol
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.1.1
+version: 1.1.2
 tier: [fabula, narratology]
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Replaces the single-sentence Step 1 of the Vertical Slice protocol with a formal source verification gate. Defines exactly what 'canonical documentation exists and is locked' means, specifies the required upstream documents, and establishes the verification checklist that must pass before the Vertical Slice proceeds to Step 2."
@@ -120,7 +120,7 @@ The Dramatica Ingest Template captures the complete storyform data for this char
 
 **Check 2.2: Template is locked.** The header status field reads `locked`. The storyform_status field reads `locked`.
 
-**Check 2.3: Section 1 (Storyform Dynamics) is complete.** At minimum: story_outcome, story_judgement, story_driver, story_limit are populated.
+**Check 2.3: Section 1 (Storyform Dynamics) is complete.** At minimum: story_outcome, story_judgement, story_driver, limit_type are populated.
 
 **Check 2.4: Section 2 (Structural Role) is complete.** All six fields populated: structural_role, dramatica_archetype, resolve, growth, approach, mental_sex.
 
@@ -237,3 +237,4 @@ _AUTHORITATIVE/[IP]/relationships/
 |1.0.0|2026-03-03|Initial Step 1 Source Verification Protocol. Three-component gate with per-tier requirements, 22 verification checks across components, pass/conditional/fail logic, failure diagnostics, and canonical folder structure specification.|
 |1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. Dependency names fixed (vertical slice, Dramatica integration, 12-layer mapping, the two ingest templates). Checks 2.7 and 2.8 re-pinned: Touchstone wording, and the L12 core list now read from the integration doc. L7-L11 corrected to L1-L11. Template pointers added. Frontmatter repaired and table of contents links made in-page.|
 |1.1.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed, schema-pass wording closed (TS-B3).|
+|1.1.2|2026-10-05|BOLO 102 batch D (Chief: "All recommendations"): check 2.3 names `limit_type`, the ingest template's field name since its 1.0.2, in place of `story_limit`.|

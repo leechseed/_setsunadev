@@ -1,7 +1,7 @@
 ---
 type: ssot_00_foundations
 category: module_architecture
-version: 1.1.0
+version: 1.1.1
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -69,7 +69,7 @@ A module does NOT:
 - Add new layers to the core 12
 - Modify core layer variables
 - Override derived statistics or flag triggers defined in the core system
-- Require other modules to function (modules are independent)
+- Require other modules to function: a module runs without any module it does not declare in `depends_on`
 
 ### Field Modules and Doc Modules
 
@@ -330,7 +330,7 @@ MOD_WALK:
 ### Creation
 
 1. Author writes module declaration + variable declarations following the API contract
-2. Module is registered in the Layer-Locked Module Registry (next deliverable)
+2. Module is registered in the Layer-Locked Module Registry (see [📐 ssot_00_module_registry.md](📐%20ssot_00_module_registry.md))
 3. Variables are added to the Variable Registry under `MOD.[CODE].*` namespace
 
 ### Activation
@@ -448,3 +448,4 @@ The registry is [📐 ssot_00_module_registry.md](📐%20ssot_00_module_registry
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B9, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`; table-of-contents links repointed to in-page anchors; dependency names fixed to the real file stems; new subsection separating field modules from doc modules; registry format gains the `conceptual` and `absorbed` statuses; the registry pointer replaces "the next deliverable".|
 |1.0.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C7, the four flag states defined by link to the slice; C8, the rule for when a module moves from `planned` to `draft` to `active`.|
 |1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): Variable Declaration Block gains `tag: Static or Dynamic` (call 4); the flag block gains `event_id` for PENDING and FIRED_PRE_STORY (call 5).|
+|1.1.1|2026-10-05|BOLO 102 batch D (Chief: "All recommendations"): a module runs without any module it does not declare in `depends_on`, so the module rule matches Cross-Module Dependencies; Creation step 2 names the registry file in place of "next deliverable".|

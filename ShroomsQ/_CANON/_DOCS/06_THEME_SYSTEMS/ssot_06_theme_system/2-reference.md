@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.4.0
+source_version: 1.4.1
 ---
 
 **Who it's for:** a writer or script author looking things up · **What it does:** lists every theme-system component, field and value · **Type:** reference
@@ -57,11 +57,9 @@ Four parts, built in this order. Each part has what it is, how to build it, and 
 - `meets`: each rail names one outside idea the debate touches (CRE.06).
 
 **(c) The value scale.** One or two gauges, four steps: positive, contrary, contradictory, negation of the negation.
-- Build: name the value, then write plain words for each step, worst to best.
+- Build: name the value, then write plain words for each step. Write them best to worst: positive first, the negation of the negation last.
 - Done-test: every scene's value turn (plot card value-in and value-out) names a step. The steps read as a ladder.
 - Add a second gauge only when one point of view runs on a different value.
-
-> **OPEN:** the source says to write the four steps "worst to best" but lists them best to worst (Freedom first, the negation of the negation last).
 
 
 **(d) The motifs.** 2 to 4 recurring images that carry a rail or a scale step.

@@ -1,2 +1,2 @@
-## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_touchstones_register/2-reference.md
-- **Version history.** 1.0.1 (2026-10-05, BOLO 102 batch C): command-line form and output of the check script written into rule 3.
+## ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/2-reference.md
+- - Build: name the value, then write plain words for each step, best to worst (positive first, the negation of the negation last).

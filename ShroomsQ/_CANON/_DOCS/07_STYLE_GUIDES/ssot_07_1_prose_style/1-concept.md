@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md"
-source_version: "1.4.0"
+source_version: "1.4.1"
 ---
 
 **Who it's for:** a writer or reviewer judging a page of story prose · **What it does:** explains why 07.1 sets a floor, not a house voice · **Type:** concept

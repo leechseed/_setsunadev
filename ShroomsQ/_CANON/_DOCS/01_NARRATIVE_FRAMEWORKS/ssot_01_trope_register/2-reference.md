@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer, designer or script author looking up a field, key or count · **What it does:** lists every component of the trope register · **Type:** reference
@@ -112,14 +112,12 @@ No character is changed by this ruling. It names a pattern, not a fix.
 | 1.0.2 | 2026-10-05 | BOLO 102 batch C: Rebuild the register section written with the command steps for fetch.py and build_register.py |
 | 1.0.1 | 2026-10-05 | BOLO 102 batch A: purpose line says 8,700 tropes; skew section recomputed from the counts table |
 | 1.0.0 | 2026-10-04 | Undefined-trope rule written; OPEN list closed; TROPES pointer sections parked |
-| 0.5.0 | 2026-10-03 | Wave B keyed: 2,175 keys on 9 PS batches (theme 1,013, style 831, 351 stragglers); RANGE caught one file with unquoted keys and three missing domain keys, then 0; the spread check passed |
+| 0.5.0 | 2026-10-03 | Wave B keyed: 2,198 keys on 2,175 tropes on 9 PS batches (theme 1,014, style 832, 352 stragglers); RANGE caught one file with unquoted keys and three missing domain keys, then 0; the spread check passed |
 | 0.4.0 | 2026-10-03 | Wave A keyed: 2,122 tropes (texture 641, tracking 111, setting 1,412) on 12 batches; default dumps caught and re-keyed (S1 797 to 366, T7 336 to 25) |
 | 0.3.1 | 2026-09-29 | Command-local Signature Wound added (BOLO 91) |
 | 0.3.0 | 2026-09-29 | Low-confidence pass: 952 definitions pulled; character nulls 348 to 94; low confidence 707 to 232 |
 | 0.2.0 | 2026-09-29 | Theme sub-index pass: 1,854 new tropes (4,948 total), 2,012 theme keys on 9 batches |
 | 0.1.0 | 2026-09-29 | BOLO 89: register stood up; 3,094 tropes fetched, keyed on 16 batches |
-
-> **OPEN:** the source says wave B (0.5.0) keyed 2,175 keys, but its parts (theme 1,013, style 831, stragglers 351) sum to 2,195.
 
 ## Rebuild the register
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.11.0
+source_version: 1.11.1
 ---
 
 **Who it's for:** a writer building or editing a place · **What it does:** steps for the setting system's tasks · **Type:** how-to

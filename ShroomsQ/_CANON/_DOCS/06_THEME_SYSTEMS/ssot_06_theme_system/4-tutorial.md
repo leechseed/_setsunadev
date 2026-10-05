@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.4.0
+source_version: 1.4.1
 ---
 
 **Who it's for:** a writer new to theme · **What it does:** walks the four-part method on OVEREXITOUT · **Type:** tutorial
@@ -45,12 +45,10 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 ## Step 3: step the value scale
 
 1. Name the value. For OVEREXITOUT it is Freedom, because the mechanism line is about biopower.
-2. Write four steps, worst to best: Freedom, Conformity, Control, and control that feels like freedom.
+2. Write four steps, best to worst: Freedom, Conformity, Control, and control that feels like freedom.
 3. Give each step plain words. Check yours against the reference.
 4. Pick a scene turn. Say which step it moves from and to.
 5. Add the second gauge, Fairness, for world scenes. Its last step is "A rigged game that calls itself fair."
-
-> **OPEN:** the source says to write the four steps "worst to best" but lists them best to worst (Freedom first, control that feels like freedom last).
 
 ## Step 4: choose three motifs
 

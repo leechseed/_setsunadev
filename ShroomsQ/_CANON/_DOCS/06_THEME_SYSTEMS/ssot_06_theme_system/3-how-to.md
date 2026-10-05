@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.4.0
+source_version: 1.4.1
 ---
 
 **Who it's for:** a writer who already knows what theme is · **What it does:** step-by-step recipes for the theme system's tasks · **Type:** how-to
@@ -41,12 +41,10 @@ Look up terms in the [reference](2-reference.md). Read the [concept](1-concept.m
 ## Build a value scale
 
 1. Name the value the controlling idea turns on.
-2. Write plain words for four steps, worst to best: positive, contrary, contradictory, negation of the negation.
+2. Write plain words for four steps, best to worst: positive, contrary, contradictory, negation of the negation.
 3. Read the four as a ladder. Rewrite any step that reads as an unrelated mood.
 4. Add a second gauge only if one point of view runs on a different value. Give it the same four steps.
 5. Test it: every scene's value-in and value-out on the plot card names one step.
-
-> **OPEN:** the source says to write the four steps "worst to best" but lists them best to worst (positive first, the negation of the negation last).
 
 ## Choose and check motifs
 

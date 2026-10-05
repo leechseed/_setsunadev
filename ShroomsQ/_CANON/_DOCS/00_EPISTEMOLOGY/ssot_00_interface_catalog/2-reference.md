@@ -82,7 +82,7 @@ An interface is a boundary where two systems exchange something (NASA SE Handboo
 
 **The id.** The format is `IF-ab-cd-nn`. `ab` and `cd` are the two systems, lower number first. `nn` is the row's place in that pair. The 09 subsection that covers every system uses `ALL` as `cd`, as in `IF-09-ALL-01`. The source rules that an id never changes once published. A retired row keeps its id and says so.
 
-> **OPEN:** The page rules that an id never changes. But `ifc_build.py` numbers each pair's rows by sort order on every build, by kind, status, side and doc. A new row or a proposed-to-built flip can shift later ids. The source states no rule that pins ids.
+The build keeps every published id (fixed 2026-10-05). `ifc_build.py` gives a new row the next number in its pair. A proposed-to-built flip changes no id.
 
 **Both sides, as stated.** Each side logs what its own docs say. When A says "I write X to B" and B never says "I read X from A", both rows stand. The gap is a finding (see THE WIRING FINDINGS). The catalog records the statements. It does not make them agree.
 
@@ -413,7 +413,7 @@ A DATA row is one-sided when one system states it and the other never does. The 
 
 **The closing rule.** Each gap closes with one line on the silent side that names the IF id. The fix batch runs after the calls are ruled.
 
-> **OPEN:** The test reads register rows, not source docs. The source does not say how a closed wiring leaves these lists. A silent-side line in a source doc changes no row. See [how-to](3-how-to.md#close-a-one-sided-wiring).
+A pair leaves THE WIRING FINDINGS when the silent side names the interface by its IF id. The apply script (`ifc_apply.py`) marks the row "silent side named it", and the next build drops the pair. A pair also leaves when the silent side logs its own row. See [how-to](3-how-to.md#close-a-one-sided-wiring).
 
 **Where it connects.** Each entry points at a pair in THE REGISTER. The pair's rows name the stating side.
 

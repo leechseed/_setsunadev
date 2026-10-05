@@ -1,7 +1,7 @@
 ---
 type: ssot_07_style_guides
 category: prose_style
-version: 1.4.0
+version: 1.4.1
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
@@ -76,7 +76,7 @@ T6 IN WHAT WORDS covers diction, syntax, distance policy, and free indirect disc
 
 A story may license a heavier register on its own Telling Profile — never as a universe default. OXO's instance rules three dialogue registers keyed to canon (Axiom/Noise/Truth) plus Southern Gothic diction for the Delta Coast bloc (oxo-telling-profile T6, RULED 2026-09-23); that register is OXO's, not the house's.
 
-**Chief's profanity level.** No canon doc sets a house-wide ceiling or floor. *Rec:* none for a YA-adjacent cultcore IP (OXO's own audience contract, per its G1/G10 genre entries), ruled per-IP on that IP's genre contract otherwise.
+**Chief's profanity level.** No canon doc sets a house-wide ceiling or floor. *Rec:* no universe ceiling; profanity follows the speaker (their register and L-layers) and the story's T6 register (OPEN call 3).
 
 ## Sentence craft
 
@@ -118,7 +118,7 @@ Ties [ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking
 
 **P3 SATURATION** (Modern Poetics, [ssot_01_modern_poetics.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md)): sexuality is aesthetic, not genre — woven into the narrative's bloodstream, mastered rather than indulged, earned always. Forbidden: working around it (failure of nerve), spectacle without depth, refusing it outright (refusal of truth).
 
-**Chief's own explicitness register across stories.** P3 states the doctrine; it does not set a page-level dial for how far prose goes before fading to paratext. *Rec:* OXO's own instance as the YA-adjacent default — T9 metalepsis withheld, no direct address, nothing crossed into second person (oxo-telling-profile T9) — with a more explicit register opt-in per IP on that IP's own genre contract, never as a universe default.
+**Chief's own explicitness register across stories.** P3 states the doctrine; it does not set a page-level dial for how far prose goes before fading to paratext. *Rec:* explicit is allowed by default, written as fantasy first, with the container living outside the story as the front-matter viewer-discretion disclaimer (TS 1:1, soft); a story may dial down per its own genre contract (OPEN call 4). OXO's own instance keeps T9 metalepsis withheld, no direct address, nothing crossed into second person (oxo-telling-profile T9).
 
 ## Genre register (cultcore)
 
@@ -183,6 +183,7 @@ All five RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): each *Rec* 
 
 ## Version history
 
+- **1.4.1 · 2026-10-05** BOLO 102 batch D (Chief: "All recommendations"): the body recs on profanity and explicitness follow OPEN calls 3 and 4; "YA-adjacent" and "opt-in per IP" struck.
 - **1.4.0 · 2026-10-05** — BOLO 102 stage 2 (Chief: "My word"): the five named inputs, the beat-boundary mark, `focal:`, and the scene-plan note for theme tests land in §Scope; IF-00-07-01 silent-side line added.
 - **1.3.2 · 2026-10-04** — BOLO 100 D3: Sources line added to §Meta-genre (BVX.0581).
 - **1.3.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1 (Y1–Y3): the stale OPEN marks struck from the five ruled calls; intro convention reworded to "marked OPEN"; cultcore line reworded. No rule changed.

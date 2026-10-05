@@ -2,7 +2,7 @@
 type: ssot_00_foundations
 category: variable_registry
 rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
-version: 1.3.0
+version: 1.3.1
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -1205,7 +1205,7 @@ All derived stats compute in internal (0-60) space per Base 60 SSOT.
 |---|---|
 |Canonical Path|`DRV.truth_exposure_index`|
 |Formula (internal)|`(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`|
-|Formula (display)|`T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)` — slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC.")|
+|Formula (display)|`T1.SOCIAL + max(0, 12 - T3.EROS.shame_index)` — slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC.")|
 |Input Constraints|None|
 |Output Space|Internal, uncapped (may exceed 60)|
 |Source|`computed`|
@@ -1384,3 +1384,4 @@ State diffs use the `STT` prefix and mirror the variable they modify, with addit
 |1.2.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field `narrative_invariant` renamed `touchstone` (TS-B3), one alias row kept.|
 |1.2.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C18, a note under the `REL` prefix (Chief decides each REL variable, check the three relational fields first); C19, a "Retire a variable" subsection under Registry Format.|
 |1.3.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 4, prefixes `SET` and `PLT`, ownership rows for 01, 02 (REL), 07 and 09, the storyform record owned by 04, the `touchstone` field holds the TS id, the alias table cited; call 1, `STT.narrative_moment` is the Tracking time code and `STT.movement` retires; call 2, `T3.DESTINY.rail_ref`; call 3, `catalog_ref` sub-field; call 5, PENDING and FIRED_PRE_STORY flags store the fabula `event_id`.|
+|1.3.1|2026-10-05|BOLO 102 batch D (Chief: "All recommendations"): `DRV.truth_exposure_index` display formula uses `12 - shame_index`, matching the internal formula and the base 60 range of 0 to 12.|

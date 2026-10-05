@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.3.0"
+source_version: "1.3.1"
 ---
 
 **Who it's for:** a writer or designer looking up a variable · **What it does:** lists every variable, formula, flag and path in the registry · **Type:** reference
@@ -552,9 +552,7 @@ All derived stats compute in internal (0-60) space per the Base 60 SSOT. Source 
 
 ### DRV.truth_exposure_index
 
-`DRV.truth_exposure_index`. Internal formula `(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`. Display formula `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)`. Slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC."). No constraints. Output internal, uncapped, may exceed 60. A value over 60 means the character's legibility exceeds the system's containment threshold.
-
-> **OPEN:** the source gives the internal formula with `12 - shame_index` and the display formula with `10 - shame_index`. It does not say why the two differ.
+`DRV.truth_exposure_index`. Internal formula `(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`. Display formula `T1.SOCIAL + max(0, 12 - T3.EROS.shame_index)`. Slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC."). No constraints. Output internal, uncapped, may exceed 60. A value over 60 means the character's legibility exceeds the system's containment threshold.
 
 ### DRV.expressive_range
 

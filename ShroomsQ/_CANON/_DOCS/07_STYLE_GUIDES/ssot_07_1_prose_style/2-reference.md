@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md"
-source_version: "1.4.0"
+source_version: "1.4.1"
 ---
 
 **Who it's for:** a writer or reviewer looking up one prose rule · **What it does:** lists every component of 07.1 with its rules · **Type:** reference
@@ -169,4 +169,4 @@ A ten-question pass a reviewer reads against a draft before it counts as ready.
 
 > **OPEN:** the source's SOURCES table lists Booth, Genette, Rimmon-Kenan, Pinker, Clark and Johnston with no BVX id ("—").
 
-> **OPEN:** the source's body recs on profanity and explicitness still say "YA-adjacent" and "opt-in per IP". Its OPEN calls 3 and 4 struck both. This page follows calls 3 and 4.
+The source body now matches its OPEN calls 3 and 4. The universe sets no profanity ceiling. Explicit content is allowed by default.

@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 1.1.0
+version: 1.1.1
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, all future IPs]
@@ -97,12 +97,13 @@ The author runs `python _tools/tropes/fetch.py --domains` to pull the indexes. T
 
 ## Version history
 
+- **1.1.1 — 2026-10-05.** BOLO 102 batch D (Chief: "All recommendations"): the 0.5.0 wave B count is corrected to the batch files, 2,198 keys on 2,175 tropes (theme 1,014 · style 832 · stragglers 352); the old line said 2,175 keys and its parts summed to 2,195.
 - **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): `register.json` is the one key store and the trope graph reads it (call 10); interfaces line for 06.
 - **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): Rebuild the register section: command steps for fetch.py and build_register.py (C40).
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): purpose line says 8,700 tropes; skew section recomputed from the counts table.
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Undefined-trope rule written: no definition means key by title and domain tags, flagged `undefined`. OPEN list closed; consumer TROPES sections parked as `⏸ TROPES pointer sections (phase 2)`.
 
-- **0.5.0 — 2026-10-03.** Wave B keyed: 2,175 keys on 9 PS batches (B1–B9) — theme 1,013 (Love · Power · Emotion · Identity) · style 831 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 07.1 PROSE / 07.3 PAGES) · plus 351 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.
+- **0.5.0 — 2026-10-03.** Wave B keyed: 2,198 keys on 2,175 tropes on 9 PS batches (B1–B9) — theme 1,014 (Love · Power · Emotion · Identity) · style 832 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 07.1 PROSE / 07.3 PAGES) · plus 352 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.
 
 - **0.4.0 — 2026-10-03.** Wave A keyed: 2,122 tropes (texture 641 · tracking 111 · setting 1,412, some multi-domain) on 12 batches (A1–A12) by PS; RANGE caught a broken file, two misspelled slugs and five illegal keys → 0. **The default-dump caught at the fan-in:** the first pass put 797 setting tropes on S1 and 336 texture tropes on T7; a re-key on six batches (AR1–AR6) with sharper rules brought S1 to 366 overall and T7 to 25, and a third pass on the 281 texture nulls (AT1) confirmed most are plot content the Narrative Tropes index carries, not the telling (texture null 318). Keys for texture and tracking added to `work/89/keys.md`; `range.py` and `build_register.py` learn them.
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md
-source_version: 1.1.1
+source_version: 1.1.2
 ---
 
 **Who it's for:** a narrative designer starting a Vertical Slice · **What it does:** explains why the Step 1 gate exists and how it decides · **Type:** concept

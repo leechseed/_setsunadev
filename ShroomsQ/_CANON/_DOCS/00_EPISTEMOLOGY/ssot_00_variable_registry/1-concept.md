@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.3.0"
+source_version: "1.3.1"
 ---
 
 **Who it's for:** a writer or designer asking why variables live in one registry · **What it does:** explains why the registry exists and how its parts fit · **Type:** concept

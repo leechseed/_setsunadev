@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.1.0"
+source_version: "1.1.1"
 ---
 
 **Who it's for:** a designer or writer extending the character system · **What it does:** explains why modules attach under fixed layers · **Type:** concept

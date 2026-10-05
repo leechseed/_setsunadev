@@ -48,7 +48,7 @@ Use this when you find a place where one system hands another something and the 
 11. Run `python _tools/docs/ifc_build.py`.
 12. Read the one-line result. It gives the new row count, the interface count and the pair count. Open the page and find your row in its pair.
 
-> **OPEN:** The build numbers each pair's rows by sort order, not by arrival. A new row can renumber the rows after it, which clashes with the page's rule that an id never changes. The source states no fix.
+The build never renumbers a published row (fixed 2026-10-05). It gives your new row the next number in its pair, and every earlier id stays.
 
 ## Close a one-sided wiring
 
@@ -63,7 +63,7 @@ Use this when THE WIRING FINDINGS lists a pair and you own the silent side.
 7. Write the ids you closed into `_tools/docs/work/ifc/done.<system>.json`, a JSON list of IF ids.
 8. Run `python _tools/docs/ifc_apply.py`. The script flips each done `proposed` row to `built`, tags a one-sided row with a note, and rebuilds the catalog.
 
-> **OPEN:** `ifc_build.py` builds the findings from register rows only. A new line in a source doc changes no row, so the pair stays listed. Adding the silent side's row (see Add a new interface) removes the pair. The source does not say whether this is the intended close.
+The pair leaves THE WIRING FINDINGS when the silent side names it (fixed 2026-10-05). The script in step 8 marks the done rows, and the next build drops the pair. Logging the silent side's own row (see Add a new interface) closes it too.
 
 ## Rule a design call
 

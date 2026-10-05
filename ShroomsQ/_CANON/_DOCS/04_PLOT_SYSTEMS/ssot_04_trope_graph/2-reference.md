@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or maintainer looking up a trope-graph fact · **What it does:** lists each component, part and count · **Type:** reference
@@ -101,9 +101,7 @@ The ten strongest `trope_link` pairs:
 | 40 | `tob.06_revenge` | `tob.20_descension` |
 | 40 | `tob.14_love` | `vog.05_crossing_the_first_threshold` |
 
-`tob.14_love` is the busiest node: 94 tropes, in seven of the ten pairs.
-
-> **OPEN:** the source says Love sits in seven of the ten pairs, but its own table shows six.
+`tob.14_love` is the busiest node: 94 tropes, in six of the ten strongest pairs.
 
 ## THE RAILS
 
@@ -191,7 +189,7 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 | PS-R.rails.md | The signpost order, OXO's eight dynamics, the twelve P-layers, six blocking gaps. | quotes the spine, the Dramatica protocol and the plot doc |
 | HOI4-FOCUS-TREE-STUDY.md §6 | The H-rules for the workspace view. | internal study |
 
-> **OPEN:** the source body still says Propp has no BVX id, while its OPEN call 5 mints BVX.1136.
+Propp's id is BVX.1136, and the source body now cites it.
 
 ## Other sections
 
