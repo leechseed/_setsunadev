@@ -20,9 +20,9 @@ Source: [📐 ssot_01_genre_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/�
 
 The source carries three Mermaid diagrams.
 
-- **Diagram 1, the whole system.** Root: THE GENRE SYSTEM. Branches: the four words (Genre, Medium, Audience, Market); the Genre Slice (twelve G-layers, G12 fed from the storyform); the instruments (GENRE CARD per genre, GENRE CONTRACT per work); the library (BVX.0191, 0576, 0580, 0581, 0614, 0599, 0236, 0163, 0175); the boundaries (medium is the medium grammars doc, beats are P10 on the plot card, world is the setting slice, telling is the texture slice).
+- **Diagram 1, the whole system.** Root: THE GENRE SYSTEM. Branches: the four words (Genre, Medium, Audience, Market). The Genre Slice has twelve G-layers, with G12 fed from the storyform. The instruments are GENRE CARD per genre and GENRE CONTRACT per work. The library holds BVX.0191, 0576, 0580, 0581, 0614, 0599, 0236, 0163, 0175. The boundaries: medium is the medium grammars doc, and beats are P10 on the plot card. World is the setting slice, and telling is the texture slice.
 - **Diagram 2, Neale's process loop.** Industry label plus market position feeds the text's contract. The contract feeds audience expectation plus verisimilitude regime. That feeds uptake, and uptake feeds the industry label again. The four vocabularies (Snyder, Coyne, Selbo, Truby) feed the contract node.
-- **Diagram 3, the contract discharged per unit.** States: Owed, Discharged (P10 fires on a plot unit), Breached (withheld by design), Revised, then Owed again at the next unit. A breach is design, never error.
+- **Diagram 3, the contract discharged per unit.** States: Owed, Discharged (P10 fires on a plot unit). Then Breached (withheld by design), Revised, and Owed again at the next unit. A breach is design, never error.
 
 ## PART B · THE TAXONOMY, the four words and the four vocabularies
 
@@ -48,7 +48,7 @@ The source carries three Mermaid diagrams.
 - Truby's fourteen are the spine of the GENRE CARD register. The other three are aliases (OPEN 3, ruled 2026-09-16).
 - Bawarshi and Reiff name three traditions: literary, linguistic, rhetorical. The Command's contract language is literary-structuralist.
 - Neale's law: genre is a process, not a corpus. G1 carries three labels as three fields.
-- A critic-coined genre (film noir) is a legitimate study object when criteria are explicit and the corpus is not built backward from a canonized core.
+- A critic-coined genre (film noir) is a legitimate study object when criteria are explicit. The corpus must also not be built backward from a canonized core.
 
 ## PART A · THE GENRE SLICE, twelve layers, mirror of the character, setting, plot and texture stacks
 
@@ -151,7 +151,7 @@ A worked example, not a ruling, except G1. Each line stays parked until Chief st
 
 **Cultcore conventions (G3 basic elements, each parked until Chief rules).**
 1. Outsiders set against an institution that shapes identity, not merely one that restrains.
-2. The cult-as-container: power holds inside a bounded space and fades or turns dangerous once the container breaks (Touchstone TS 1:1, soft strength, BOLO 91).
+2. The cult-as-container: power holds inside a bounded space and fades or turns dangerous once the container breaks. It is Touchstone TS 1:1, soft strength, BOLO 91.
 3. The newcomer-vs-group induction beat: Snyder's Institutionalized obligatory scene, discharged at scene level per P10 (call 77-Z).
 4. Visibility as the institution's currency: being seen and ranked is both reward and danger.
 5. Belonging and selfhood trend opposite: the closer she is drawn in, the more of her prior self she gives up.
@@ -176,10 +176,10 @@ The L7 shelf holds 174 items keyed 9/16 (BOLO 18), nine distilled to date.
 | BVX.1125 | Brody, *Save the Cat! Writes a Novel* | G3 | Her ten alias Snyder's; the ingredient triad |
 | BVX.1126 | Aristotle, *Poetics* | G4 | Hamartia as action-level error; catharsis maps to the mood curve; wonder as tragedy's telos |
 
-Next candidates by name: BVX.0840 Carroll, BVX.0577 Grant, BVX.0620 Horsley, BVX.0190 Black, BVX.0232 Storr, BVX.0257 Cron, BVX.0564 Dunleavy, BVX.0642 Bould. Truby's two Anatomy books (BVX.0193, BVX.0191) have no Zotero record: an orphan pair.
+Next candidates by name: BVX.0840 Carroll, BVX.0577 Grant, BVX.0620 Horsley, BVX.0190 Black. After those come BVX.0232 Storr, BVX.0257 Cron, BVX.0564 Dunleavy, BVX.0642 Bould. Truby's two Anatomy books (BVX.0193, BVX.0191) have no Zotero record: an orphan pair.
 
 ## TROPES
 
-Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the genre domain is keyed to G1 through G12 in the [trope register](../ssot_01_trope_register/2-reference.md). The pull list lives at `_tools/tropes/data/domains/LAYERS.md` under genre. A layer that needs a known pattern pulls from its list. The register holds each trope's one-line definition.
+Added 2026-09-29 (BOLO 89). The [trope register](../ssot_01_trope_register/2-reference.md) keys every TV Tropes trope in the genre domain to G1 through G12. The pull list lives at `_tools/tropes/data/domains/LAYERS.md` under genre. A layer that needs a known pattern pulls from its list. The register holds each trope's one-line definition.
 
 **Closed OPEN calls (ruled 2026-09-16 or 2026-10-04).** Twelve layers hold (1). Names stay provisional (2). Truby is the register spine (3). Four clauses become required fields (4). Balance adopted, metric defined (5). Mode row built in medium grammars v1.1.0 (6). `contract_state` built (7). Neale keying rule landed in the Zotero README (8). Meta-genre landed in ssot_06_1_prose_style (9). `expiry_note` built (10). Dystopia mechanism landed in the setting system (11). OXO bench is the worked example (12). Three label fields (13). Ingredient triad rule (14). G4 affect note (15).

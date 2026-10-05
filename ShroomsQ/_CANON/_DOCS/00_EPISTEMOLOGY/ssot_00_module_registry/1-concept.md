@@ -36,7 +36,7 @@ The 2026-10-04 audit checked every planned module against the slice. None droppe
 
 ## Dependencies set the build order
 
-Two modules depend on others: Decompensation on Coping, and the LoL taxonomy on Combat. The rest are independent. The build order that gives the most independence is Walk, Physical Detail, Combat, Fashion, Music, Coping, Decompensation, then the LoL taxonomy.
+Two modules depend on others: Decompensation on Coping, and the LoL taxonomy on Combat. The rest are independent. The build order that gives the most independence starts with Walk, Physical Detail, Combat and Fashion. It continues with Music, Coping, Decompensation, then the LoL taxonomy.
 
 ## The long read
 

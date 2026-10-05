@@ -50,4 +50,4 @@ The house finding says OXO has no ruled Telling Profile. No prose exists. So you
 
 ## What you did
 
-You split voice from vision, used the grid to translate three terms, and met the rule that a profile waits for ruling. Next, read the [how-to](3-how-to.md) for the full profile steps.
+You split voice from vision and used the grid to translate three terms. You also met the rule that a profile waits for ruling. Next, read the [how-to](3-how-to.md) for the full profile steps.

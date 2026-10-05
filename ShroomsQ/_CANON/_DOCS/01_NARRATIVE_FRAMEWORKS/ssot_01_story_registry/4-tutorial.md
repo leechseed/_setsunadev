@@ -46,4 +46,4 @@ Ask whether the row joined the registry before any doc named it. The rule says i
 
 ## Check yourself
 
-You did it right if every unknown field carries one of two marks, a dash or a parked marker, and no field is blank.
+You did it right if every unknown field carries one of two marks, a dash or a parked marker. You also did it right if no field is blank.

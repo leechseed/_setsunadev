@@ -28,7 +28,7 @@ Truth is the cornerstone of knowledge. A writer who uses several methods gets cl
 
 The ten frameworks run independently or in combination. One claim often needs several frameworks. Each framework shows a different side of validity.
 
-The ten are Empirical Observation, Logical Reasoning, Intuition and A Priori Knowledge, Consensus, Coherence Theory, Correspondence Theory, Pragmatic Theory, Skepticism and Critical Thinking, Revelation or Faith, and Historical Method. The [reference](2-reference.md) lists each one.
+The ten start with Empirical Observation, Logical Reasoning, Intuition and A Priori Knowledge, Consensus, and Coherence Theory. They end with Correspondence Theory, Pragmatic Theory, Skepticism and Critical Thinking, Revelation or Faith, and Historical Method. The [reference](2-reference.md) lists each one.
 
 ## Every framework carries its own limits
 
@@ -48,6 +48,6 @@ The source pairs each domain with primary and secondary frameworks. Narrative de
 
 ## The long read
 
-The source names five benefits of knowing the frameworks: credibility, nuanced analysis, bias mitigation, shared language across fields, and sharper critical thinking. The doc has no dependencies on other SSOTs. Other SSOTs may cite it for truth verification. Its trunk is BLACK. The two worked examples, an economic system and Victoria Midnight's change of belief, show a claim confirmed when three or four frameworks converge. See the [tutorial](4-tutorial.md).
+The source names five benefits of knowing the frameworks. They are credibility, nuanced analysis, bias mitigation, shared language across fields, and sharper critical thinking. The doc has no dependencies on other SSOTs. Other SSOTs may cite it for truth verification. Its trunk is BLACK. The two worked examples are an economic system and Victoria Midnight's change of belief. Each shows a claim confirmed when three or four frameworks converge. See the [tutorial](4-tutorial.md).
 
 Related pages: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

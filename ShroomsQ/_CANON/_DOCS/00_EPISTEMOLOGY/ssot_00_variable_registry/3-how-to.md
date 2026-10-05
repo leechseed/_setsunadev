@@ -20,7 +20,7 @@ Entries live in the [reference](2-reference.md).
 
 1. Check that no variable already has the name. No two share a canonical name in any namespace.
 2. Build the path `[DOMAIN].[LAYER_CODE].[variable_name]`, with a name in snake_case under 30 characters.
-3. Fill every Registry Format field: path, display name, type, scale class, display range, constraint, default, source, tag, feeds, tier min, behavior.
+3. Fill every Registry Format field. The fields are path, display name, type, scale class, display range, constraint, default, source, tag, feeds, tier min, behavior.
 4. Take the scale class from the Base 60 SSOT for a numeric variable.
 5. Set the tag: Static, Dynamic or Derived. No variable ships without one.
 6. Write one behavior sentence in LoL-ability style.

@@ -30,7 +30,7 @@ The divisors of 60 form a lattice: a divisor sits below every divisor it divides
 
 ## Matrices and tensors give each system a shape
 
-A matrix splits 60 into rows and columns. A tensor splits it into three or more dimensions. The doc names the ones that matter: 3 tiers by 20 attribute units, 5 planets by 12 layers, 12 layers by 5 variables, and 3 tiers by 4 throughlines by 5 variables.
+A matrix splits 60 into rows and columns. A tensor splits it into three or more dimensions. The doc names the ones that matter. They are 3 tiers by 20 attribute units, 5 planets by 12 layers, and 12 layers by 5 variables. The last is 3 tiers by 4 throughlines by 5 variables.
 
 ## Each variable picks one scale class
 
@@ -42,7 +42,7 @@ The doc re-expresses Victoria Midnight in base 60 as the proof case. Her point c
 
 ## Future variables follow seven rules
 
-A new variable takes a scale class from the doc, respects the divisibility constraints, and names its place in the lattice. No ad hoc ranges.
+A new variable takes a scale class from the doc and respects the divisibility constraints. The writer also names its place in the lattice. No ad hoc ranges.
 
 ## The long read
 

@@ -44,6 +44,6 @@ The three-check lines state the stance. The fantasy line is "God of chemistry". 
 
 ## The long read
 
-The engine joins two vocabularies for one relationship. When a pair of characters is the storyform's RS, the composite chart is the RS throughline's astrological body. The Dramatica reading and the astrology reading describe one object. The proof shows the same join at larger scale. Row 12 of the Tori run needs no interpretation, because the storyform already binds the main character into the OS arena. The engine reads that row for nothing. It is the storyform itself.
+The engine joins two vocabularies for one relationship. When a pair of characters is the storyform's RS, the composite chart is the RS throughline's astrological body. The Dramatica reading and the astrology reading describe one object. The proof shows the same join at larger scale. Row 12 of the Tori run needs no interpretation. The storyform already binds the main character into the OS arena. The engine reads that row for nothing. It is the storyform itself.
 
 Next, see the [reference](2-reference.md) for every class, contact and row.

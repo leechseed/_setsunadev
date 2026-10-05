@@ -22,7 +22,7 @@ Rungs are containers. Each has a definition, a completion test, a governing syst
 
 ### R1 · BEAT
 
-- **Is:** the smallest dramatic exchange: one action met by one reaction, producing one micro-shift in a value or intention (McKee's behavior-exchange unit).
+- **Is:** the smallest dramatic exchange: one action met by one reaction. It produces one micro-shift in a value or intention (McKee's behavior-exchange unit).
 - **Completion test:** something was tried, something answered, something is now slightly different.
 - **Governed by:** plot_systems (below the spine's floor). Storyform-blind: beats serve the scene.
 - **Holdings:** McKee *Story* (0175); Coyne (0236, micro-beats within commandments).
@@ -37,13 +37,13 @@ Rungs are containers. Each has a definition, a completion test, a governing syst
 
 ### R3 · SEQUENCE
 
-- **Is:** a chain of scenes unified by one dramatic question or objective, raised at the head and answered at the tail. Classical Hollywood ran films as about 8 sequences.
+- **Is:** a chain of scenes unified by one dramatic question or objective. The head raises it and the tail answers it. Classical Hollywood ran films as about 8 sequences.
 - **Completion test:** the sequence-level question is answered, and usually replaced by a worse one.
 - **Holdings:** Aronson (0188); Frayne (0228); Coyne (0236). The five commandments repeat at scene, sequence, act and global scale.
 
 ### R4 · ACT / MOVEMENT
 
-- **Is:** one span of the argument. Structurally, the span in which each throughline consumes one Signpost (Dramatica: 4 signposts plus 3 journeys per throughline), turned by a Driver.
+- **Is:** one span of the argument. Structurally, the span in which each throughline consumes one Signpost (Dramatica: 4 signposts plus 3 journeys per throughline). A Driver turns the span.
 - **Completion test:** all four throughlines have advanced one signpost, and a driver (action or decision) has turned the story.
 - **House note:** OXO's six Movements are presentation containers (storyweaving). Signposts are structural order (storyforming). Six movements can carry four signposts, since journeys and multi-movement signposts absorb the difference.
 - **Holdings:** Dramatica (0089); Yorke (0127, fractal five-act); three-act via Aronson and Fink (0188/0092).
@@ -60,7 +60,7 @@ Rungs are containers. Each has a definition, a completion test, a governing syst
 
 - **Is:** a complete argument inside a parent argument. Canon already: integration protocol Pattern 1. It has its own `storyform_id`. A character may hold different roles across forms (MC in the parent, IC in a nested form). The parent has authority on conflict.
 - **Completion test:** complete as a storyform (the R5 test) and consistent with the parent.
-- **Use cases:** an episode with its own argument; a movement-level mini-form; a book inside a series; a flashback story; a story a character tells.
+- **Use cases:** an episode with its own argument; a movement-level mini-form; a book inside a series. More use cases: a flashback story; a story a character tells.
 - **Holdings:** integration protocol; Mittell (0565).
 
 ### R7 · IP / SERIES — many stories, one container
@@ -148,6 +148,6 @@ Tree addresses (`SPINE.Lx`) locate concepts. Ladder addresses locate instances. 
 | McErlean 0126 | R7 |
 | Collaborative Worldbuilding 0067 | R8 |
 
-**Open items the source lists:** arc-as-thread ruling; address notation; the Movement-to-Signpost table (6 movements × 4 signposts × 4 throughlines); IP-level and cross-IP meta-forms (supported, not designed). The SCENE CARD slot was delivered with Module 2.
+**Open items the source lists:** arc-as-thread ruling; address notation; the Movement-to-Signpost table (6 movements × 4 signposts × 4 throughlines). The source also lists IP-level and cross-IP meta-forms (supported, not designed). The SCENE CARD slot was delivered with Module 2.
 
 Dependencies: ssot_01_story_spine_comparative_tree, ssot_02_dramatica_integration_protocol.

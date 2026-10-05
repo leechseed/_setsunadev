@@ -91,7 +91,7 @@ Holdings: GURPS 0447; Kobold 0458/0541; Against Worldbuilding 0349.
 ### M9 · PORN (live-action) — ORANGE
 
 - Direct address is normalized metalepsis (T9/T10). Performer-to-camera is the default contract.
-- The scene is the native unit, with a conventionalized escalation arc. Register vocabulary is the house register (taxonomy engine ruling 10: photo-type production, dress and expression axes shared with the shoot set).
+- The scene is the native unit, with a conventionalized escalation arc. Register vocabulary is the house register (taxonomy engine ruling 10). It covers photo-type production, dress and expression axes shared with the shoot set.
 - Craft grammar lives here. Content systems live Ultrasin-side (§B, shoot set, taxonomy engine).
 
 ### M10 · THEATRE
@@ -132,6 +132,6 @@ Feeds for this limb: McErlean 0126 feeds the transmedia law. Bowen 1042 and Kenw
 
 Acquisition and research queue (BOLO 16): Vernallis (music video); short-form and creator-economy grammar sources; PMV/HMV grammar (community-documented, research-pass territory). The v1 scaffolds stand until the pass runs.
 
-**Open items the source lists:** the BOLO 16 deepening pass for M6, M7 and M8; Bongobabe grammar debt (M4's duration reading of the clicker loop, feeding registry §8 art and loop decisions); the theatre shelf grows only on demand. Per-medium texture variants closed in 1.2.0.
+**Open items the source lists:** the BOLO 16 deepening pass for M6, M7 and M8. Bongobabe grammar debt (M4's duration reading of the clicker loop, feeding registry §8 art and loop decisions). The theatre shelf grows only on demand. Per-medium texture variants closed in 1.2.0.
 
 Dependencies: ssot_01_story_spine_comparative_tree, [scale ladder](../ssot_01_scale_ladder/2-reference.md), ssot_01_texture_layer, ssot_03_setting_system.

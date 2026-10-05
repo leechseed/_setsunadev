@@ -48,7 +48,7 @@ Three shapes. Each is written in a MODULE block with ATTACHMENT, TIER_MIN, VARIA
 
 ### Minimal Module (Data Only)
 
-Descriptive variables, no computation, no flags. Example `walking_style`: attaches to L2.VITAL, TIER_MIN 3. Variables `MOD.WALK.gait_type` (enum: measured, urgent, languid, predatory, bouncing, shuffling), `MOD.WALK.pace_default` (enum: slow, moderate, brisk, variable), `MOD.WALK.signature_tell` (str, freeform). Reads `T1.VITAL.base_value` and `T3.SHADOW.regression_pattern`.
+Descriptive variables, no computation, no flags. Example `walking_style`: attaches to L2.VITAL, TIER_MIN 3. The module's variables are `MOD.WALK.gait_type` (enum: measured, urgent, languid, predatory, bouncing, shuffling). Its other variables are `MOD.WALK.pace_default` (enum: slow, moderate, brisk, variable) and `MOD.WALK.signature_tell` (str, freeform). Reads `T1.VITAL.base_value` and `T3.SHADOW.regression_pattern`.
 
 ### Standard Module (Data + Computation)
 
@@ -87,7 +87,7 @@ Each layer has one domain, from the Vertical Slice SSOT.
 
 ### Step 3: Register Variables
 
-Variables use the namespace `MOD.[MODULE_CODE].[variable_name]`. A module code is a unique 3-8 character uppercase identifier registered in the Layer-Locked Module Registry. Every variable uses a Base 60 scale class (if numeric), declares a type from the standard set, declares its source (`authored`, `derived`, `computed`) and lists its core read dependencies.
+Variables use the namespace `MOD.[MODULE_CODE].[variable_name]`. A module code is a unique 3-8 character uppercase identifier registered in the Layer-Locked Module Registry. Every variable uses a Base 60 scale class (if numeric) and declares a type from the standard set. It declares its source (`authored`, `derived`, `computed`) and lists its core read dependencies.
 
 ### Step 4: Declare Access Pattern
 
@@ -102,11 +102,11 @@ Module derived stats and flags use `MOD.[CODE].derived_name` and `MOD.[CODE].FLG
 
 ### What Modules CAN Read
 
-Any core layer variable (T1, T2, T3); any derived statistic (DRV); any flag state (FLG); any Character Astrology variable (AST); any other module's variables (MOD), declared as a dependency.
+A module reads any core layer variable (T1, T2, T3), any derived statistic (DRV) and any flag state (FLG). It also reads any Character Astrology variable (AST) and any other module's variables (MOD), declared as a dependency.
 
 ### What Modules CANNOT Read
 
-State diff fields from other characters; relationship records (REL), since synastry belongs to the relationship system; raw Dramatica ingest template fields (modules read structured L12 data).
+A module never reads state diff fields from other characters. It never reads relationship records (REL), since synastry belongs to the relationship system. It never reads raw Dramatica ingest template fields (modules read structured L12 data).
 
 ### What Modules CAN Write
 
@@ -114,7 +114,7 @@ Their own `MOD.[CODE].*` variables, and their own derived stats and flags.
 
 ### What Modules CANNOT Write
 
-Core layer variables (T1, T2, T3); core derived statistics (DRV); core flags (FLG); character metadata (META); Character Astrology variables (AST); any other module's variables.
+A module never writes core layer variables (T1, T2, T3), core derived statistics (DRV) or core flags (FLG). It never writes character metadata (META), Character Astrology variables (AST) or any other module's variables.
 
 ### Cross-Module Dependencies
 
@@ -126,11 +126,11 @@ The interface any tool, plugin or extension implements.
 
 ### Module Declaration Block
 
-YAML `MODULE_DECLARATION` with fields: `module_id`, `display_name`, `version` (semver), `author`, `attachment_points` (layer codes), `tier_min` (1, 2 or 3), `depends_on` (module ids or empty), `description` (one sentence).
+YAML `MODULE_DECLARATION` with fields: `module_id`, `display_name`, `version` (semver), `author`. It also has `attachment_points` (layer codes), `tier_min` (1, 2 or 3), `depends_on` (module ids or empty), `description` (one sentence).
 
 ### Variable Declaration Block
 
-YAML `VARIABLES`, one item per variable, fields: `path` (`MOD.[CODE].[name]`), `display_name`, `type` (int, float, str, enum, array_str, array_enum, bool), `scale_class` (SC-N or N/A), `display_range`, `constraint` (divisibility or none), `default`, `source` (authored, derived, computed), `behavior` (one sentence).
+YAML `VARIABLES`, one item per variable, fields: `path` (`MOD.[CODE].[name]`), `display_name`. The fields continue with `type` (int, float, str, enum, array_str, array_enum, bool) and `scale_class` (SC-N or N/A). Then come `display_range`, `constraint` (divisibility or none) and `default`. The last two are `source` (authored, derived, computed) and `behavior` (one sentence).
 
 ### Read Dependencies Block
 
@@ -197,11 +197,11 @@ A menu bar with a Browse/Edit mode toggle on top. A Layer Rack (L1-L12 as vertic
 
 ### Data Flow in the Application
 
-When the user edits `T2.WOUND.wound_score` in Edit mode: the application validates the SC-12 even constraint; recomputes every DRV that uses WOUND; re-evaluates every FLG and `MOD.*.FLG.*` that references WOUND; updates the Bottom Panel; and fires a visual indicator if a flag changes state.
+When the user edits `T2.WOUND.wound_score` in Edit mode, the application validates the SC-12 even constraint. It recomputes every DRV that uses WOUND. It re-evaluates every FLG and `MOD.*.FLG.*` that references WOUND. It updates the Bottom Panel and fires a visual indicator if a flag changes state.
 
 ### File System Integration (Phase 4B+)
 
-The local server watches the Obsidian vault's `_AUTHORITATIVE/` folder, loads character records from `.md` structured blocks, and saves edited records back in the canonical folder format. Module data is stored as extra YAML blocks in the character's `.md` file.
+The local server watches the Obsidian vault's `_AUTHORITATIVE/` folder and loads character records from `.md` structured blocks. It saves edited records back in the canonical folder format. Module data is stored as extra YAML blocks in the character's `.md` file.
 
 ## Module Registry Format
 

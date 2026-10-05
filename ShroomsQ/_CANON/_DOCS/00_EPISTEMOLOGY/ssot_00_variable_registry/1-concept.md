@@ -20,7 +20,7 @@ The registry is the single lookup for every variable in the character system. An
 
 ## A path says what a variable is
 
-Every path reads `[DOMAIN].[LAYER_CODE].[variable_name]`. The domain says the kind: tier 1, 2 or 3 attribute, derived statistic, flag, astrology, state diff, metadata, relationship or module. The layer code says the layer. The name says the variable. A reader decodes the whole variable from the path.
+Every path reads `[DOMAIN].[LAYER_CODE].[variable_name]`. The domain says the kind. The kinds are tier 1, 2 or 3 attribute, derived statistic, flag, astrology, state diff, metadata, relationship or module. The layer code says the layer. The name says the variable. A reader decodes the whole variable from the path.
 
 ## Naming rules keep names unique
 

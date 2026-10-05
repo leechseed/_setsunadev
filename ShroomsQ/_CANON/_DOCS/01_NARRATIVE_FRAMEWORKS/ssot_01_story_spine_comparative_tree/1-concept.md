@@ -36,7 +36,7 @@ Egri's premise is the direct ancestor of this claim. McKee's controlling idea an
 
 ## Four seats make the argument complete
 
-The spine examines one problem from four seats: Overall Story (they), Main Character (I), Influence Character (you), and Relationship Story (we). No rival model has all four. Most rivals fold the main character into the overall story and treat the other two as subplot. This is the spine's largest structural advantage.
+The spine examines one problem from four seats. They are Overall Story (they), Main Character (I), Influence Character (you), and Relationship Story (we). No rival model has all four. Most rivals fold the main character into the overall story and treat the other two as subplot. This is the spine's largest structural advantage.
 
 The second advantage is that function and perspective are independent. A protagonist is not always the main character. An antagonist is not always the influence character.
 
@@ -68,4 +68,4 @@ The spine answers a question that most craft books answer in pieces. Aristotle n
 
 Dramatica claims the whole and earns it by structure. Its four throughlines make four complete perspectives. Its nesting runs Domain, Concern, Issue, Problem, in quads of four. Its eight dynamics say how the story moves and how it ends. The outcome and judgment pair gives the ending matrix: triumph, personal triumph, hollow victory, tragedy. The Outliers takes the personal triumph shape: Failure with Good judgment.
 
-The Command adds a house layer. Every library source gets a spine address through the `feeds:` field. The spine becomes the keying structure for the library, so a book on Egri files at L0 and a book on genre files at L7.
+The Command adds a house layer. Every library source gets a spine address through the `feeds:` field. The spine becomes the keying structure for the library. A book on Egri files at L0, and a book on genre files at L7.

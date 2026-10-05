@@ -14,7 +14,7 @@ source_version: "1.0.2"
 
 # Truth verification: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.0.2, status canonical, trunk BLACK, tier foundation, applies to OVEREXITOUT, ASTRO7EX and LAKAD, dependencies none, last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.0.2, status canonical. The source sits on trunk BLACK at tier foundation and applies to OVEREXITOUT, ASTRO7EX and LAKAD. It has no dependencies and was last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
 
 ## Core Concepts
 
@@ -43,7 +43,7 @@ Each framework has a Definition, Components, Application and Limitations, and a 
 ### Framework 2: Logical Reasoning
 
 - **Definition:** deductive, inductive and abductive processes derive truth from premises.
-- **Components:** deductive (general to specific; validity depends on premise truth); inductive (specific to general; probability-based, falsifiable); abductive (most likely explanation; inference to best explanation).
+- **Components:** deductive (general to specific; validity depends on premise truth). Inductive (specific to general; probability-based, falsifiable). Abductive (most likely explanation; inference to best explanation).
 - **Application:** mathematical proof; hypothesis generation; argument validity.
 - **Limitations:** deduction needs true premises; induction cannot guarantee universal truth; abduction gives likelihood, not certainty.
 - **Sources:** TEC.04 (Minto, *The Minto Pyramid Principle*, 2010: deduction versus induction).
@@ -134,7 +134,7 @@ How to apply the frameworks.
 
 ### Research Design Integration
 
-Methodology alignment has five steps: identify the nature of inquiry; select frameworks for the domain; apply several for cross-validation; assess each one's limits; document epistemological assumptions. Interdisciplinary pairs: empirical with logical for science; consensus with correspondence for history; coherence with pragmatic for worldbuilding.
+Methodology alignment has five steps. The user identifies the nature of inquiry and selects frameworks for the domain. The user applies several for cross-validation, assesses each one's limits, and documents epistemological assumptions. Interdisciplinary pairs: empirical with logical for science; consensus with correspondence for history; coherence with pragmatic for worldbuilding.
 
 ### Truth Framework Selection Guide
 

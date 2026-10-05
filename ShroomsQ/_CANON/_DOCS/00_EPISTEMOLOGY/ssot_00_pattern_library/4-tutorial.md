@@ -60,6 +60,6 @@ The nine steps map to the SOP's four: recon, order, execute, consolidate. Steps 
 
 ## What you did
 
-You ran one cycle. On 10/4 the loop ran about eight times, and the pages went from 1 of 10 to 10 of 10 passing. Next, try Pattern 2 on a scene: want, push, cost, change. The [how-to](3-how-to.md) holds the steps and the [reference](2-reference.md) holds both patterns.
+You ran one cycle. On 10/4 the loop ran about eight times. The pages went from 1 of 10 to 10 of 10 passing. Next, try Pattern 2 on a scene: want, push, cost, change. The [how-to](3-how-to.md) holds the steps and the [reference](2-reference.md) holds both patterns.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [how-to](3-how-to.md)

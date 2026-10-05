@@ -18,7 +18,7 @@ Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/
 
 ## A trope is a reusable pattern
 
-A trope is a reusable pattern a layer can draw on. A character's L5 WOUND, a place's S10 UNDERSIDE and a genre's G1 LABEL each get a pull list of known patterns. The patterns are keyed and ready.
+A trope is a reusable pattern a layer can draw on. A character's L5 WOUND, a place's S10 UNDERSIDE and a genre's G1 LABEL each get a pull list. Each list holds known patterns. The patterns are keyed and ready.
 
 ## One register serves every system
 
@@ -52,6 +52,6 @@ Not every pattern comes from TV Tropes. Chief keeps some on purpose across the C
 
 The register is built to be pulled from. A writer working Tori's L5 WOUND asks the register for the tropes keyed there. A builder working a place's S10 UNDERSIDE does the same. The pull list for every layer sits in LAYERS.md.
 
-The keying was done by Payload Specialists on disjoint batches. A script reviewer caught broken files, misspelled slugs and illegal keys at the fan-in, and the count of findings fell to zero each time. The same method re-keyed the default dumps. The register's confidence field says how far to trust each key: high, medium or low.
+The keying was done by Payload Specialists on disjoint batches. A script reviewer caught broken files, misspelled slugs and illegal keys at the fan-in. The count of findings fell to zero each time. The same method re-keyed the default dumps. The register's confidence field says how far to trust each key: high, medium or low.
 
 The register stays honest about what it does not know. A large block of tropes has no one-line definition. A large block of theme tropes argues none of the four rails. The register records both as facts about its source, not flaws to hide.

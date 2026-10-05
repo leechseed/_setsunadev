@@ -18,7 +18,7 @@ Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORK
 
 ## Modern Poetics gives three questions
 
-The three-check pass applies principles P8, P9 and P10 of Modern Poetics. P8 is the Fantasy Drive. P9 is the Sexy Check. P10 is the Aesthetic Check. The [Touchstones register](../ssot_01_touchstones_register/1-concept.md) rules all three in as TS 2:8, TS 2:9 and TS 2:10.
+The three-check pass applies principles P8, P9 and P10 of Modern Poetics. P8 is the Fantasy Drive. P9 is the Sexy Check. P10 is the Aesthetic Check. The [Touchstones register](../ssot_01_touchstones_register/1-concept.md) rules all three in. They are TS 2:8, TS 2:9 and TS 2:10.
 
 The pass runs them over the flagship canon roster of twelve elements. It is a module of Modern Poetics.
 

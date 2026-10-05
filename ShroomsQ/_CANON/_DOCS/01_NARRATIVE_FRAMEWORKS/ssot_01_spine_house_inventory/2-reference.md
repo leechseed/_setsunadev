@@ -93,20 +93,20 @@ Everything in `02_CHARACTER_SYSTEMS/`, plus:
 
 ## Archived conversations (story-craft relevant; titles + paths in CLAUDEARCHIVE2026-08-15/INDEX.md)
 
-Index path in the source: `_CLAUDE_ARCHIVE_2026-08-15/INDEX.md`. Listed conversations: character DB architecture with Dramatica plus astrology (259k, 2/25); desires taxonomy; replicating Dramatica in a local client (3/27); integrating TV Tropes data (3/29, feeds BOLO 15); chess as narrative structure (6/10); MC doctrine × narrative production (6/8); emotional systems for character design (8/5); misfit-group naming; 28 female body archetypes; shooting vs reading script; novel-summarization template; BVX-LEARN taxonomy org (66k); LoL character DB schema.
+Index path in the source: `_CLAUDE_ARCHIVE_2026-08-15/INDEX.md`. Listed conversations: character DB architecture with Dramatica plus astrology (259k, 2/25); desires taxonomy. Also listed: replicating Dramatica in a local client (3/27); integrating TV Tropes data (3/29, feeds BOLO 15). Also listed: chess as narrative structure (6/10); MC doctrine × narrative production (6/8). Also listed: emotional systems for character design (8/5); misfit-group naming; 28 female body archetypes; shooting vs reading script. Also listed: novel-summarization template; BVX-LEARN taxonomy org (66k); LoL character DB schema.
 
-`PROJECT-MEMORIES.md` load-bearing lines: Narrative Layer Stack 0 to 6 ruling (L20); five Layer-0 axioms (L34); GURPS plus Dramatica plus LoL foundation (L77); stated weakness, long-arc cohesion (L198); Outliers system-mapping steps (L212 to 222).
+`PROJECT-MEMORIES.md` load-bearing lines: Narrative Layer Stack 0 to 6 ruling (L20); five Layer-0 axioms (L34). Also: GURPS plus Dramatica plus LoL foundation (L77); stated weakness, long-arc cohesion (L198); Outliers system-mapping steps (L212 to 222).
 
 ## Keying infrastructure (unmapped by design)
 
-The one-sheet template v2 plus SPEC v3 (the distill instrument); taxonomy proposal and analysis (the subject codes); library state reports (gap, orphans, review); the summarization prompt; the writing guide (the doctrine standard); SSOT-creation protocols; `README.md`, `PROJECT_BRIEF.md`, `PROJECTS.md` (the repo's self-account).
+The one-sheet template v2 plus SPEC v3 (the distill instrument); taxonomy proposal and analysis (the subject codes). Also: library state reports (gap, orphans, review); the summarization prompt; the writing guide (the doctrine standard); SSOT-creation protocols. Also: `README.md`, `PROJECT_BRIEF.md`, `PROJECTS.md` (the repo's self-account).
 
 ## FINDINGS — what the sweep surfaced
 
 1. **Domain numbering collision, RULED 2026-09-16.** Plot is `04_PLOT_SYSTEMS/`; style guides are `06_`. `_SSOT/03_PLOT_SYSTEMS/` already existed empty, and Setting was stood up 8/25 as `03_SETTING_SYSTEMS/`. `04_STYLE_GUIDES/` also existed empty. `_AUTHORITATIVE/OVEREXITOUT/{plot,theme,world}/` are reserved and empty.
 2. **The distill gap, about 0.6%.** Of 353 CRE/LIT craft sources, two have one-sheets (BVX.0064, CRE.01). The distill queue is the depth lever. (Corrected in the addendum below.)
 3. **Engine exports are machine-readable L2/L3.** The `.dsf` and two TXTs let a future tool parse the storyform.
-4. **The INSPIRATION shelf is a complete worked method.** It is the L6/L7 branch's strongest native asset and proof of meta-rule IV.
+4. **The INSPIRATION shelf is a complete worked method.** It is the L6/L7 branch's strongest native asset. It is also proof of meta-rule IV.
 5. **The TV Tropes integration conversation (2026-03-29) predates BOLO 15.** It is prior art for the distill flow.
 6. **Dedupe candidates:** the byte-identical variable registries (00 versus 05); the authoritative and handoff Victoria dupe pairs (known, by design).
 

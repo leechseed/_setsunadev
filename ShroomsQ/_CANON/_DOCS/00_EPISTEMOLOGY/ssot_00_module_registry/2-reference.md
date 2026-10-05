@@ -14,7 +14,7 @@ source_version: "1.1.0"
 
 # Module registry: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.0, status canonical, trunk BLACK, tier foundation, `module_of: ssot_00_module_architecture`, last updated 2026-10-04. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.0, status canonical. The source sits on trunk BLACK at tier foundation, with `module_of: ssot_00_module_architecture`. It was last updated 2026-10-04. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
 
 All modules use tier 3. All declarations use `tier_min: 3`.
 
@@ -221,7 +221,7 @@ These modules reserve their IDs and attachment points. Their variable lists are 
 ### MOD.DESIGN — Design Focus Power Board
 
 - **ID:** `DESIGN`. **Attachment:** Meta (all layers).
-- **Concept:** the meta-distribution of design energy across all domains: which aspects got the most authorial investment and which stayed at default. 14 domains from the LoL taxonomy, rated on SC-12.
+- **Concept:** the meta-distribution of design energy across all domains. It shows which aspects got the most authorial investment and which stayed at default. 14 domains from the LoL taxonomy, rated on SC-12.
 - **Scope:** rates authorial investment per domain. Reads every layer's base value and writes none.
 - **Status:** conceptual.
 

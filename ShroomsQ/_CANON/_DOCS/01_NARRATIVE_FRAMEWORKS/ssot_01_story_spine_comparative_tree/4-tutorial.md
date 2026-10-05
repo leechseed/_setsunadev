@@ -63,4 +63,4 @@ Tori's function lives in L12_FUNCTION. Her body, psychology and origin live in L
 
 ## What you did
 
-You read a populated storyform top to bottom. You used the spine as a checklist. Next, open [oxo-storyform.md](../../../../../_CANON_NODES/oxo-storyform.md) to see the full instance, and read the [how-to](3-how-to.md) to design your own.
+You read a populated storyform top to bottom. You used the spine as a checklist. Next, open [oxo-storyform.md](../../../../../_CANON_NODES/oxo-storyform.md) to see the full instance. Then read the [how-to](3-how-to.md) to design your own.

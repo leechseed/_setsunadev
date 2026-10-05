@@ -98,7 +98,7 @@ P1's "engagement before message" against the spine's "story = Grand Argument" co
 ## DISPOSITION RECORD — ratified 2026-08-31
 
 - **Canonized (7):** Entertainment-First, American Experience, Sexuality as Saturation, Originality as Craft, Setpiece Principle, Serial Hook, Narrative Dilemma.
-- **Folded (9):** Architecture of Narrative Mastery plus its five pillar docs (Ascendant Second Act, Earned Climax, Payoff With Setup, Dynamic Character Arcs, Harmonized Plotlines), seated in the spine's rival map. Their tool inventories (Tension Index, Setup Tracker Grid, Conflict Grid, Plotline Matrix, Beat Convergence Tracker, Scene Patterning table, climax archetypes) go to the future plot_systems shelf.
+- **Folded (9):** Architecture of Narrative Mastery plus its five pillar docs. The pillars are Ascendant Second Act, Earned Climax, Payoff With Setup, Dynamic Character Arcs, Harmonized Plotlines. The spine's rival map seats them. Their tool inventories go to the future plot_systems shelf. These are Tension Index, Setup Tracker Grid, Conflict Grid, Plotline Matrix, Beat Convergence Tracker, Scene Patterning table, climax archetypes.
 - **Superseded:** the Narrative Structure survey (by the rival map). The 12 Basic Components (as a model; its POV/Tone/Style/Voice tail is Texture Layer territory). Emotional & Thematic Constructs: six glossary terms go to the Codex.
 
 **Other facts the source holds:**

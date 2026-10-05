@@ -52,13 +52,13 @@ Eras: 1 Skeeter Creek, 2 DCUS, 3 LAKAD, 4 ASTRO7EX, 5 beyond.
   - May finds Generation Zero's old computer, the replicator DER:G (Deus Ex Replicator: General). It is not a weapon. It is proof Generation Zero left the universe on purpose.
   - Echo noted, not linked (ruled 2026-09-29): Generation Zero echoes the AI Collapse / Deep Meridian hinge. LEECHSEED stays its own unplaced universe.
   - The Sockett (an analog bio-access socket worn as a status symbol) is marked PORTABLE (ruled 2026-09-29, BOLO 91). Other stories may borrow it.
-  - The Civil War jump (`⏸ fabula placements (phase 2)`, ruled 2026-09-29, "all rec"): "After the degen world, Setsuna moves to the civil war era" is tagged as the likely seed of the Lincoln / Underground Railroad historical fiction Chief remembers. No draft is on file.
+  - The Civil War jump (`⏸ fabula placements (phase 2)`, ruled 2026-09-29, "all rec") is parked. "After the degen world, Setsuna moves to the civil war era" is tagged as the likely seed of the Lincoln / Underground Railroad historical fiction Chief remembers. No draft is on file.
 
-**The universe (ruled 2026-09-29).** One eon, five eras in order, moving outward from Earth, overlap allowed at the seams. The hinge is the Deep Meridian beam: a drill probe at Deep Meridian, a geothermal front on Earth, fires the radiation beam that signals the quasar reaching Vivian's time. The Moon Severance and the AI Collapse follow (`⏸ fabula placements (phase 2)`). Deep Meridian is a place and an event, not a story. Full note: the fabula's world clock, `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md`.
+**The universe (ruled 2026-09-29).** One eon, five eras in order, moving outward from Earth, overlap allowed at the seams. The hinge is the Deep Meridian beam. A drill probe at Deep Meridian, a geothermal front on Earth, fires the radiation beam. The beam signals the quasar reaching Vivian's time. The Moon Severance and the AI Collapse follow (`⏸ fabula placements (phase 2)`). Deep Meridian is a place and an event, not a story. Full note: the fabula's world clock, `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md`.
 
 **Not a story:** *The Outliers* is OXO's series title. BVIPDS / Bold Venture is the methodology and studio.
 
-**Open items parked by name (Chief rules each in its pass):** medium per story; genre per story (only OXO carries G1); ASTRO7EX into the SSOT systems; the hinge placements; LEECHSEED placement. Standing intake rule: a row joins the registry before any doc names the story.
+**Open items parked by name (Chief rules each in its pass):** medium per story. Genre per story (only OXO carries G1); ASTRO7EX into the SSOT systems; the hinge placements; LEECHSEED placement. Standing intake rule: a row joins the registry before any doc names the story.
 
 ## PROJECTS (not stories)
 

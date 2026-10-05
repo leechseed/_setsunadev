@@ -45,7 +45,7 @@ Source: [📐 ssot_01_story_spine_comparative_tree.md](../../../_SSOT/01_NARRATI
 1. Keep the setting as its own entity in domain 03. Do not add it as a spine level.
 2. Open the touchpoint map.
 3. Pick the spine level you are working at.
-4. Use the touchpoint for that level: S12 at L2, S11 at L3, scene cards at L4, the collision diagonal at L5, the Argue mode at L6, a genre-setting contract at L7.
+4. Use the touchpoint for that level: S12 at L2, S11 at L3, scene cards at L4. Then use the collision diagonal at L5, the Argue mode at L6, a genre-setting contract at L7.
 
 ## Decide whether a branch becomes a domain
 

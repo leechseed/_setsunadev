@@ -57,11 +57,11 @@ Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORK
 2. Find the element's sheet in the landing table.
 3. Add the kept line as the `fantasy:`, `sexy:` or `aesthetic:` field.
 4. Update the landing table.
-5. If the element has no sheet, leave the line in the pass and park it as ⏸ OXO element sheets (phase 2).
+5. If the element has no sheet, leave the line in the pass. Then park it as ⏸ OXO element sheets (phase 2).
 
 ## Expand the roster
 
-1. Take the next element from the expansion queue: scene cards (the 7 hot rows), the six movements, the Administration, the Diaspora, Bongobabe, or the ladder rungs.
+1. Take the next element from the expansion queue. It holds scene cards (the 7 hot rows), the six movements, the Administration, the Diaspora, Bongobabe and the ladder rungs.
 2. Run all three sweeps on it.
 3. Add its rows to the pass.
 

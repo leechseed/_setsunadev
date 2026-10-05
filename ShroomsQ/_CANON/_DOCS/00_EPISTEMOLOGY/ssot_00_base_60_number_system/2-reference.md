@@ -14,13 +14,13 @@ source_version: "1.0.1"
 
 # Base 60 number system: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.1, status canonical, trunk BLACK, tier foundation, dependencies none, supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.1, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
 
 Notation: SC-N is a scale class with N+1 valid values (0 through N), where N divides 60. Internal means the 0-60 space. `internal = display × step`; `display = internal / step`.
 
 ## Why Base 60
 
-- 60 is the smallest number divisible by 1, 2, 3, 4, 5 and 6, and a superior highly composite number.
+- 60 is the smallest number divisible by 1, 2, 3, 4, 5 and 6. It is also a superior highly composite number.
 - Prime factorization: 60 = 2² × 3 × 5.
 - Divisors (12): 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
 - Effect: any formula dividing by 2, 3, 4, 5 or 6 gives an exact integer.
@@ -167,7 +167,7 @@ Assigns every numeric variable to a scale class. It replaces all earlier implici
 
 ### Tier 3: Sub-Variables (All Layers)
 
-All sub-variables move from the old 0-10 range to SC-12 (0–12). The categories: attachment scores, emotional range, flexibility, stability, density, tendency, index scores (shame, desire), armor index (L9), resistance index, origin seeds, coherence scores, tech level. The armor index was assigned 2026-10-04 by Selection Rules 1 to 4. Its one formula, `10 - armor_index`, subtracts and never divides, so Rule 3 holds.
+All sub-variables move from the old 0-10 range to SC-12 (0–12). The categories are attachment scores, emotional range, flexibility, stability, density and tendency. They also include index scores (shame, desire), armor index (L9), resistance index, origin seeds, coherence scores and tech level. The armor index was assigned 2026-10-04 by Selection Rules 1 to 4. Its one formula, `10 - armor_index`, subtracts and never divides, so Rule 3 holds.
 
 ### Dualism Charges (Layer-Locked Module)
 
@@ -206,7 +206,7 @@ The point budget needs no structural change.
 - SC-20 keeps its default (10) and cost structure.
 - Tier totals are unchanged.
 - The one change is a documentation convention: note each cost's lattice position.
-- Format example: `L1 CORE: 13 (SC-20, display)`, internal 39 (13 × 3), cost 3 levels × 20 pts = 60 pts, one full base unit.
+- Format example: `L1 CORE: 13 (SC-20, display)`, internal 39 (13 × 3). The cost is 3 levels × 20 pts = 60 pts, one full base unit.
 
 ## Derived Statistic Recalibration
 
@@ -340,7 +340,7 @@ Apply when any new variable enters the system, including Layer-Locked Module sub
 3. With no formula dependency, prefer SC-12.
 4. Point costs for any buyable variable must divide 60.
 5. Flag thresholds must use values valid on the variable's class and its constraints.
-6. Document the variable's position in the lattice chain, and name the effective grid. Example: SC-12 with even-only is {0, 2, 4, 6, 8, 10, 12}, which maps to internal {0, 10, 20, 30, 40, 50, 60}, the SC-6 grid in SC-12 notation.
+6. Document the variable's position in the lattice chain, and name the effective grid. Example: SC-12 with even-only is {0, 2, 4, 6, 8, 10, 12}. It maps to internal {0, 10, 20, 30, 40, 50, 60}, the SC-6 grid in SC-12 notation.
 7. Converting old SC-10 values to SC-12, map proportionally and round to the nearest valid value. Document the direction and the narrative reason.
 
 Related pages: [concept](1-concept.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

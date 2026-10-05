@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # The trope register: reference
 
-Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md), version 1.0.0, trunk BLACK, RULED by Chief 2026-10-04 ("rec", BOLO 100 registers batch 1). Earlier ruling: 2026-09-29, BOLO 89. Applies to OVEREXITOUT and all future IPs. Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md), version 1.0.0, trunk BLACK. Chief RULED it 2026-10-04 ("rec", BOLO 100 registers batch 1). Earlier ruling: 2026-09-29, BOLO 89. Applies to OVEREXITOUT and all future IPs. Why it exists: [concept](1-concept.md).
 
 **Dependencies:** `ssot_04_trope_graph` (the plot consumer), `ssot_02_character_systems_vertical_slice`, `ssot_03_setting_system`, `ssot_01_genre_system`, `ssot_07_theme_system`. **Sources:** `_tools/tropes/fetch.py --domains`, `_tools/bolostatus/work/89/keys.batch01–16.json`, `_tools/tropes/build_register.py`.
 
@@ -71,7 +71,7 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 
 The source reads each pile as a fact about the index.
 
-- **Character piles on L12 FUNCTION (508) and L1 CORE (291).** The Characters As Device index is mostly cast roles and types.
+- **Character piles on L12 FUNCTION (508) and L1 CORE (291)**. The Characters As Device index is mostly cast roles and types.
 - **Setting piles on S1 BODY (276).** The Settings index lists place types such as the castle and the diner. Deeper layers, such as S2 WEATHER (3), are thin because TV Tropes has few tropes for them.
 - **Theme nulls run high (797).** Death (1,035) and Family are broad. Most of their tropes argue none of the four rails. The rails are narrow. That is not a keying fault.
 - **1,157 tropes had no one-line definition** on their index page and were keyed from the name alone. Most of the 658 low-confidence keys are these.

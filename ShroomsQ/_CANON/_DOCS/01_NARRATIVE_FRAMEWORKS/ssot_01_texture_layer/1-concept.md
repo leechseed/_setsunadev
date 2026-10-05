@@ -28,7 +28,7 @@ Chatman's communication model has six stations: real author, implied author, nar
 
 ## A telling is ten answers
 
-Every telling is one configuration of ten answers. The Ten Questions are the taxonomy. They ask who speaks, who sees, in what order, at what speed, how often, in what words, with what feeling, through what thresholds, breaking which frames, and to whom.
+Every telling is one configuration of ten answers. The Ten Questions are the taxonomy. They ask who speaks, who sees, in what order, at what speed and how often. They also ask in what words, with what feeling, through what thresholds, breaking which frames, and to whom.
 
 The questions are separate on purpose. Each question is one decision a writer can make and change.
 

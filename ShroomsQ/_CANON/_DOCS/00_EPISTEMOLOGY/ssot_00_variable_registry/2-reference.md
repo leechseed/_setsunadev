@@ -14,7 +14,7 @@ source_version: "1.2.1"
 
 # Variable registry: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`, version 1.2.1, status canonical, trunk BLACK, tier foundation, rung "standard · NASA four, ruled 2026-09-15 (BOLO 50)", last updated 2026-10-04. Dependencies: `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`, version 1.2.1, status canonical. The source sits on trunk BLACK at tier foundation, rung "standard · NASA four, ruled 2026-09-15 (BOLO 50)". It was last updated 2026-10-04. Dependencies: `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md).
 
 Entry shorthand: "SC-12" is a scale class from the [base 60 reference](../ssot_00_base_60_number_system/2-reference.md). Tag is Static, Dynamic or Derived. "Contextual" means the field feeds no formula and gives reference for other fields.
 
@@ -67,7 +67,7 @@ Every variable path is `[DOMAIN].[LAYER_CODE].[variable_name]`.
 
 ## Ownership Rule
 
-Each system owns its fields in its own doc. The registry holds the character fields (L1 to L12), derived statistics, flags, astrology and state-diff paths, and the `MOD` namespace. For every other system it holds one pointer row and never copies a field, because a field kept in two places drifts.
+Each system owns its fields in its own doc. The registry holds the character fields (L1 to L12), derived statistics, flags, astrology and state-diff paths, and the `MOD` namespace. For every other system it holds one pointer row. It never copies a field, because a field kept in two places drifts.
 
 | System | Owning doc | Owns |
 |---|---|---|
@@ -98,7 +98,7 @@ Each variable entry has these fields.
 | Tier Min | Minimum tier that requires it |
 | Behavior | One-sentence LoL-ability-style description |
 
-The Slice Fields section uses one table row per field with columns Canonical Path, Type, Scale Class, Tag, Source, Consumer, Values and sub-fields. The Behavior of each slice field lives in the slice layer paragraph it cites.
+The Slice Fields section uses one table row per field. Its columns are Canonical Path, Type, Scale Class, Tag, Source, Consumer, Values and sub-fields. The Behavior of each slice field lives in the slice layer paragraph it cites.
 
 ## Tier 1 Variables
 
@@ -118,11 +118,11 @@ The Slice Fields section uses one table row per field with columns Canonical Pat
 
 ### T2.WILL.basevalue
 
-`T2.WILL.base_value`, WILL. int, SC-20, 0–20, default `= T1.CORE.base_value`, source derived from CORE (buyable ±1-3 at 5 pts per level), tier min 2, Dynamic. Feeds `DRV.basic_damage_resistance`, `DRV.stress_threshold`, `FLG.earned_judgement`, `FLG.optionlock_progression`. Behavior: WILL above CORE is more stubborn than smart; below CORE the character understands but cannot sustain resistance.
+`T2.WILL.base_value`, WILL. int, SC-20, 0–20, default `= T1.CORE.base_value`, source derived from CORE (buyable ±1-3 at 5 pts per level). Tier min 2, Dynamic. Feeds `DRV.basic_damage_resistance`, `DRV.stress_threshold`, `FLG.earned_judgement`, `FLG.optionlock_progression`. Behavior: WILL above CORE is more stubborn than smart; below CORE the character understands but cannot sustain resistance.
 
 ### T2.WOUND.woundscore
 
-`T2.WOUND.wound_score`, WOUND. int, SC-12, 0–12, constraint even values only {0, 2, 4, 6, 8, 10, 12}, default 0, authored from history (not purchased), tier 2, Dynamic. Feeds `DRV.basic_damage_resistance`, `DRV.stress_threshold`, `DRV.collapse_risk`, `FLG.shadow_denial`, `FLG.optionlock_progression`, `FLG.kinship_collapse`. Behavior: records damage that failed to resolve. At 12 the character reaches the functional collapse threshold.
+`T2.WOUND.wound_score`, WOUND. int, SC-12, 0–12, constraint even values only {0, 2, 4, 6, 8, 10, 12}, default 0. It is authored from history (not purchased), tier 2, Dynamic. Feeds `DRV.basic_damage_resistance`, `DRV.stress_threshold`, `DRV.collapse_risk`, `FLG.shadow_denial`, `FLG.optionlock_progression`, `FLG.kinship_collapse`. Behavior: records damage that failed to resolve. At 12 the character reaches the functional collapse threshold.
 
 ### T2.DRIVE.basevalue
 
@@ -514,7 +514,7 @@ All derived stats compute in internal (0-60) space per the Base 60 SSOT. Source 
 
 ### DRV.truthexposureindex
 
-`DRV.truth_exposure_index`. Internal formula `(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`. Display formula `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)`: slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC."). No constraints. Output internal, uncapped, may exceed 60. A value over 60 means the character's legibility exceeds the system's containment threshold.
+`DRV.truth_exposure_index`. Internal formula `(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`. Display formula `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)`. Slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC."). No constraints. Output internal, uncapped, may exceed 60. A value over 60 means the character's legibility exceeds the system's containment threshold.
 
 ### DRV.expressiverange
 

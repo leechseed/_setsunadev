@@ -141,6 +141,6 @@ The `feeds:` keys for this limb:
 
 **Acquisition gaps (BVX.1107+ candidates):** Genette *Narrative Discourse* (the T3 to T5 source text) · Booth *The Rhetoric of Fiction* (reliability, implied author) · Wood *How Fiction Works* (optional, FID popularizer).
 
-**OPEN items in the source.** The OXO Telling Profile is unruled; it fires when OXO prose opens, or sooner on Chief's call. The Ten Questions naming (T1 to T10) was ruled 9/16 in the texture system and is closed. The Genette and Booth acquisitions sit in the BVX.1107+ queue. Per-medium texture variants were built in medium grammars 1.2.0 and are closed.
+**OPEN items in the source.** The OXO Telling Profile is unruled. It fires when OXO prose opens, or sooner on Chief's call. The Ten Questions naming (T1 to T10) was ruled 9/16 in the texture system and is closed. The Genette and Booth acquisitions sit in the BVX.1107+ queue. Per-medium texture variants were built in medium grammars 1.2.0 and are closed.
 
-**Version history.** 1.0.1 (2026-10-04, BOLO 100 texture batch 1): stamped `module_of: ssot_01_texture_system`, added the pointer to T11, T12 and the sub-fields, closed the naming and per-medium OPENs, no change to the ten questions. 1.0.0 (2026-08-26): Module 3 of the lattice delivered.
+**Version history.** 1.0.1 (2026-10-04, BOLO 100 texture batch 1): stamped `module_of: ssot_01_texture_system`. It added the pointer to T11, T12 and the sub-fields. It closed the naming and per-medium OPENs and left the ten questions unchanged. 1.0.0 (2026-08-26): Module 3 of the lattice delivered.

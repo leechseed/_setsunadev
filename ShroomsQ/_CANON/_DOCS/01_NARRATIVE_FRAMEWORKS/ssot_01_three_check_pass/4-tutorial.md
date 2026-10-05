@@ -20,7 +20,7 @@ You will run each check on the Delta Coast Ultra School (DCUS). Then you will co
 
 Ask: what does the audience get to be, feel or do through DCUS? Write one line. Number it F3.
 
-Compare with the kept line: getting the letter from the school that eats people, being special enough that the trap wants you.
+Compare with the kept line. It reads: getting the letter from the school that eats people, being special enough that the trap wants you.
 
 Check: your line states an audience experience, not a feature of the school.
 
@@ -44,7 +44,7 @@ DCUS has a sheet: `_CANON_NODES/delta-coast-ultra-school.md`. Kept lines F3, S3 
 
 ## Step 5: try an element with a gap
 
-Look at Anna. Her sexy line is thin. Her aesthetic carrier is GAP. Run Step 3 on Anna. The honest answer is the one the pass gave: no visual tissue is authored, so you write GAP and park the sheet. You do not invent a carrier.
+Look at Anna. Her sexy line is thin. Her aesthetic carrier is GAP. Run Step 3 on Anna. The honest answer is the one the pass gave: no visual tissue is authored. So you write GAP and park the sheet. You do not invent a carrier.
 
 ## What you did
 

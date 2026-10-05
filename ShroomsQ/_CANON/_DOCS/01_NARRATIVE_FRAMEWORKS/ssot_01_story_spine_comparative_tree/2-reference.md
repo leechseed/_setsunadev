@@ -26,7 +26,7 @@ The canonical tree, levels L0 to L7. Each level names the Dramatica position, th
 
 ### L0 · What a story is — the root claim
 
-Dramatica: a story is a **Grand Argument**. One Story Mind makes a complete argument that an approach to a problem succeeds or fails, and that it is worth it or not.
+Dramatica: a story is a **Grand Argument**. One Story Mind makes a complete argument that an approach to a problem succeeds or fails. It also argues that the approach is worth it or not.
 
 | Rival | Root claim |
 |---|---|

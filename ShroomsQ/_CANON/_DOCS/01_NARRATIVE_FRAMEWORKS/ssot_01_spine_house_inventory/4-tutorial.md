@@ -42,4 +42,4 @@ Go to the addendum. It says the first craft-shelf count missed 109 distills. Not
 
 ## Check yourself
 
-You did it right if you can name three levels where `oxo-storyform.md` appears and say why the Also column exists. The spine is a tree, and one file can serve many levels.
+You did it right if you can name three levels where `oxo-storyform.md` appears. You also did it right if you can say why the Also column exists. The spine is a tree, and one file can serve many levels.

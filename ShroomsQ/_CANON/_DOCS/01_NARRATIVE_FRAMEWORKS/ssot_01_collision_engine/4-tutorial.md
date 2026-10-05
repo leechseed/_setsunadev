@@ -42,7 +42,7 @@ Pair L12 FUNCTION with S12 FUNCTION. You interpret nothing here. The storyform a
 
 ## Step 7: read the verdict
 
-Count your rows. You should have seven hot rows (3, 4, 5, 8, 9, 10, 11), two cold rows (1, 2), one gap, one re-derived beat (row 6) and one structural row (12). The hot rows are the scene menu for Movements 2–4.
+Count your rows. You should have seven hot rows (3, 4, 5, 8, 9, 10, 11) and two cold rows (1, 2). You should also have one gap, one re-derived beat (row 6) and one structural row (12). The hot rows are the scene menu for Movements 2–4.
 
 ## Check yourself
 

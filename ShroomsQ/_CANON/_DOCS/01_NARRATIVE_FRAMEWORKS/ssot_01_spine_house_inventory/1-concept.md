@@ -24,7 +24,7 @@ The inventory runs by level. A file that serves several levels appears at its ho
 
 ## A sweep is a measurement
 
-The sweep was stage 1 of BOLO 18, an agent pass on 2026-08-26. It measured as well as listed. It found a numbering collision, a distill gap, machine-readable storyform exports, a complete worked method on the INSPIRATION shelf, prior art for the TV Tropes work, and duplicate files. Stage 2 keys the external library the same way.
+The sweep was stage 1 of BOLO 18, an agent pass on 2026-08-26. It measured as well as listed. It found a numbering collision, a distill gap and machine-readable storyform exports. It found a complete worked method on the INSPIRATION shelf and prior art for the TV Tropes work. It also found duplicate files. Stage 2 keys the external library the same way.
 
 ## The first count was wrong
 
@@ -32,7 +32,7 @@ The sweep scored the craft shelf at 0.6% distilled, two of 353 sources. That mis
 
 ## Some files sit outside the map on purpose
 
-The keying infrastructure is unmapped by design. It is the instrument that does the keying: the one-sheet template, the spec, the taxonomy, the library state reports and the repo's self-account. A map does not list its own tools.
+The keying infrastructure is unmapped by design. It is the instrument that does the keying. It includes the one-sheet template, the spec, the taxonomy, the library state reports and the repo's self-account. A map does not list its own tools.
 
 ## The long read
 

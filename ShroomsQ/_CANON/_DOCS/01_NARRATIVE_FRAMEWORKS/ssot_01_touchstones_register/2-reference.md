@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # The Touchstones register: reference
 
-Source: [📐 ssot_01_touchstones_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md), version 1.0.0, trunk BLACK, RULED by Chief 2026-10-04 (BOLO 100 TOUCH BATCH 1, "REC."). Applies to all IPs. Dependency: `ssot_01_modern_poetics`. Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_touchstones_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md), version 1.0.0, trunk BLACK. Chief RULED it 2026-10-04 (BOLO 100 TOUCH BATCH 1, "REC."). Applies to all IPs. Dependency: `ssot_01_modern_poetics`. Why it exists: [concept](1-concept.md).
 
 **What it holds.** Every Touchstone (formerly "invariants") and the pushbacks beside them. Cite as TS book:number.
 
@@ -54,8 +54,8 @@ Eleven entries stand, all soft.
 
 **TS 1:1 — the bounded container.** Strength: soft.
 
-- **Statement:** erotic or ritual power tends to hold inside a container (a circle, a rite, an end date, a boundary) and fade or turn dangerous without one. Soft means a tendency, never a rule: the sex stays fantasy first.
-- **Chief's refinement:** the container lives outside the story, as a viewer-discretion disclaimer at the front of every book (fantasy, not a how-to). The scenes inside the book stay free of it.
+- **Statement:** erotic or ritual power tends to hold inside a container. The container is a circle, a rite, an end date or a boundary. Without one, the power fades or turns dangerous. Soft means a tendency, never a rule: the sex stays fantasy first.
+- **Chief's refinement:** the container lives outside the story. It is a viewer-discretion disclaimer at the front of every book (fantasy, not a how-to). The scenes inside the book stay free of it.
 - **Sources:** PSY.33 *Magia Sexualis*, MSX.15 *The New Topping Book*.
 - **Ruled:** 2026-09-29, BOLO 91.
 
@@ -104,6 +104,6 @@ The ten systems, one line each.
 | 08 Tracking | [tracking system](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) | tracks state |
 | 09 Worldbuilding | [worldbuilding system](../../../_SSOT/09_WORLDBUILDING_SYSTEMS/📐%20ssot_09_worldbuilding_system.md) | holds the shared world |
 
-**Sources and shelf.** Nothing in the register is new canon. The rules about rules: [DOCTRINE 0](../../../../../DOCTRINE-0-INVARIANTS.md), ratified 2026-09-03, seven rules; the file keeps its name. The 9/24 distill: [DISTILL.md](../../../../../_tools/bolostatus/work/81/DISTILL.md) (22 invariants in canon, 5 contradictions). The old reference shelf: [NNI-INDEX.md](../../../../../_tools/bolostatus/work/81/NNI-INDEX.md) (47 works, 188 invariants, three pushbacks quoted in full). Live wires: the scale ladder's completion tests, the collision engine's L12 × S12 row, character L12 `touchstone`, setting S12, and the scene cards' `touchstones:` field.
+**Sources and shelf.** Nothing in the register is new canon. The rules about rules: [DOCTRINE 0](../../../../../DOCTRINE-0-INVARIANTS.md), ratified 2026-09-03, seven rules; the file keeps its name. The 9/24 distill: [DISTILL.md](../../../../../_tools/bolostatus/work/81/DISTILL.md) (22 invariants in canon, 5 contradictions). The old reference shelf: [NNI-INDEX.md](../../../../../_tools/bolostatus/work/81/NNI-INDEX.md). It holds 47 works, 188 invariants, and three pushbacks quoted in full. Live wires: the scale ladder's completion tests, the collision engine's L12 × S12 row, character L12 `touchstone`. Also setting S12 and the scene cards' `touchstones:` field.
 
-**Version history.** 1.0.0 (2026-10-04, BOLO 100 TOUCH BATCH 1): schema, rules, field rename, front-door links; TS 2:1 to TS 2:10 ruled in; vetoes and instance rules parked. 0.9.0 (2026-10-04, registers batch 1): frontmatter normalized; P1 to P10 listed as candidates. 0.1.0 (2026-09-29): TS 1:1 landed by direct ruling (BOLO 91); bootstrap stood up 2026-09-24.
+**Version history.** 1.0.0 (2026-10-04, BOLO 100 TOUCH BATCH 1): schema, rules, field rename, front-door links. TS 2:1 to TS 2:10 ruled in; vetoes and instance rules parked. 0.9.0 (2026-10-04, registers batch 1): frontmatter normalized; P1 to P10 listed as candidates. 0.1.0 (2026-09-29): TS 1:1 landed by direct ruling (BOLO 91); bootstrap stood up 2026-09-24.

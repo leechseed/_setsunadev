@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # The texture system: reference
 
-Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md), version 1.0.0, trunk BLACK, rung standard, RULED by Chief 2026-10-04 ("REC", BOLO 100 texture batch 1). Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md), version 1.0.0, trunk BLACK, rung standard. Chief RULED it 2026-10-04 ("REC", BOLO 100 texture batch 1). Why it exists: [concept](1-concept.md).
 
 **Header facts.** Applies to all IPs. Sources: BVX.0598, 0596, 0273, 0084, 0279, 0061, 0175, 0349. Dependencies: `ssot_01_texture_layer`, `ssot_01_story_spine_comparative_tree`, `ssot_01_scale_ladder`, `ssot_01_medium_grammars`, `ssot_03_setting_system`, `ssot_04_plot_system`, `ssot_02_character_systems_vertical_slice`.
 
@@ -26,9 +26,9 @@ Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/
 
 Three diagrams hold the whole system. The source draws them in Mermaid. This page describes them in words.
 
-- **Diagram 1, the whole system on one screen.** Root: THE TEXTURE SYSTEM. Branches: the Ten Questions · the Texture Slice (twelve T-layers, T11 medium, T12 fed from storyform) · the Telling Profile (R5 instrument, scene card override) · Library (BVX.0598 the DNS, 0596 the focalizor, 0273 the distance dial, 0084 the seven functions, 0279 the mood curve, 0061 levels of penetration, 0175 show not tell, 0349 the gutter) · Boundaries (structure is Dramatica, events are plot systems, place is the setting slice, persons are the 12 layer DB).
-- **Diagram 2, the mediation chain and the distance dial.** Flow: Fabula → the focalizor (who sees) → the narrator (who speaks) → the words (register, distance policy, FID) → the narratee and implied reader. The distance dial (cinematic, light, deep) sets the words. T11 medium governs the focalizor, the narrator and the words.
-- **Diagram 3, the telling per unit.** States: Baseline → Override (the scene card's telling line fires) → Response (focal shift, duration change, register change) → MoodCurve (interest, curiosity, anticipation, suspense, surprise) → Payoff (surprise, disappointment or relief) → Baseline. The cycle recurs at every ladder rung. T2 and T6 carry most of the mood curve's weight.
+- **Diagram 1, the whole system on one screen.** Root: THE TEXTURE SYSTEM. Branches: the Ten Questions · the Texture Slice (twelve T-layers, T11 medium, T12 fed from storyform) · the Telling Profile (R5 instrument, scene card override) · Library (BVX.0598 the DNS, 0596 the focalizor, 0273 the distance dial, 0084 the seven functions). Also in the library: 0279 the mood curve, 0061 levels of penetration, 0175 show not tell, 0349 the gutter · Boundaries (structure is Dramatica, events are plot systems, place is the setting slice, persons are the 12 layer DB).
+- **Diagram 2, the mediation chain and the distance dial.** Flow: Fabula → the focalizor (who sees). Next: the narrator (who speaks) → the words (register, distance policy, FID). Last: the narratee and implied reader. The distance dial (cinematic, light, deep) sets the words. T11 medium governs the focalizor, the narrator and the words.
+- **Diagram 3, the telling per unit.** States: Baseline → Override (the scene card's telling line fires). Next: Response (focal shift, duration change, register change) → MoodCurve (interest, curiosity, anticipation, suspense, surprise). Last: Payoff (surprise, disappointment or relief) → Baseline. The cycle recurs at every ladder rung. T2 and T6 carry most of the mood curve's weight.
 
 ## PART B · THE TAXONOMY, the Ten Questions restated as axes
 
@@ -49,7 +49,7 @@ The Ten Questions as one table. The layer doc stays the taxonomy source: [📐 s
 
 **The law.** Who speaks is not who sees. The DNS model of Hühn, Schmid and Schönert splits mediation into perception, reflection and mediation proper (BVX.0598). Bal names the split EF against CF (BVX.0596). Both sources show the single `focalization_mode` value bundles two decisions. PART A carries them as separate fields.
 
-**The dial.** Distance has three settings inside limited third person (BVX.0061): cinematic (camera only, no thoughts), light (the narrator dips in and out), deep (no thought tags; the character's judgment colors every clause). Hall (BVX.0273) turns deep into a checkable technique inventory. T6's distance policy carries this scale as house vocabulary.
+**The dial.** Distance has three settings inside limited third person (BVX.0061): cinematic (camera only, no thoughts). Light (the narrator dips in and out). Deep (no thought tags; the character's judgment colors every clause). Hall (BVX.0273) turns deep into a checkable technique inventory. T6's distance policy carries this scale as house vocabulary.
 
 ## PART A · THE TEXTURE SLICE, twelve layers, mirror of the character, setting and plot stacks
 
@@ -74,12 +74,12 @@ The architecture mirrors the 12-Layer Character Database, the setting slice and 
 
 - **T2 split.** `perceptual_scope` records whose view the reader gets. `informational_denial` records what the reader is denied.
 - **T2 sub-values.** `focalization_mode` allows `silence` and `memory`. Silence is a focalized character's deliberate non-report of her own thought (BVX.0084). Memory is retrospective, unreliable, sense-based and itself narrativized (BVX.0596).
-- **T1/T2 gap flag.** `t1_t2_gap: none | flagged (note)` records the gap between a T1 reading and a T2 reading of one passage. It is Bal's manipulation check as one field.
+- **T1/T2 gap flag.** `t1_t2_gap: none | flagged (note)` records the gap. The gap lies between a T1 reading and a T2 reading of one passage. It is Bal's manipulation check as one field.
 - **T4 pause test.** Where a scene marks the Pause speed, check delimitation, motivation and rhetorical binding (BVX.0596).
 - **T6 distance instrument.** Count barrier words per 100 words (BVX.0273). Bands: cinematic, light, deep. The first trial passage calibrates the cut points.
 - **T7 reflection axis.** T7 absorbs the cognitive, emotive and normative mark-up of what is perceived (BVX.0598).
 - **T7 mood-curve entry.** One line of three fields: emotion · technique · payoff owed (BVX.0279).
-- **T7 payoff ledger.** A running list of owed payoffs. An entry closes when the story pays it. It sits outside the twelve layers as a reader model. The reader's trust in a character is tracked in [§9A The Reader Model](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md#9a-the-reader-model), keyed by `character_id` and `shifted_at`. The ledger uses the same time code.
+- **T7 payoff ledger.** A running list of owed payoffs. An entry closes when the story pays it. It sits outside the twelve layers as a reader model. The reader's trust in a character is tracked in [§9A The Reader Model](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md#9a-the-reader-model). The tracker keys it by `character_id` and `shifted_at`. The ledger uses the same time code.
 - **Dialogue function count.** Kempton's seven-function test audits a line by removal (BVX.0084). It is a named revision check, not a schema field (OPEN 7).
 
 **Binding rule.** T12 is fed independently from the storyform, keyed by `storyform_id`, as L12, S12 and P12 are. T12 empty means a style with no argument. T12 filled means the telling serves the argument. The count is twelve (OPEN 1, ruled 9/16). T11 and T12 are house additions beyond the layer doc's ten questions.
@@ -111,7 +111,7 @@ No new card. The TELLING PROFILE from the layer doc is the slice's instance form
 telling:  voice/level + focal character (T1+T2) · speed (T4) · register (T6) · t1_t2_gap
 ```
 
-**Register slot.** Kempton's seven genre registers are the readiest source (BVX.0084). They could seed the translation grid's craft-term column and let a scene card flag a mismatch, as `duration:` flags pace. **Deep-PoV checklist.** Hall's checklist shows T1, T2 and T6 at the strictest setting: hetero or homodiegetic voice, internal fixed focalization, one mind per scene, distance at deep (BVX.0273).
+**Register slot.** Kempton's seven genre registers are the readiest source (BVX.0084). They could seed the translation grid's craft-term column and let a scene card flag a mismatch, as `duration:` flags pace. **Deep-PoV checklist.** Hall's checklist shows T1, T2 and T6 at the strictest setting. They use hetero or homodiegetic voice, internal fixed focalization, one mind per scene, distance at deep (BVX.0273).
 
 ## THE INSTANCE · worked example (phase 2 fills)
 
@@ -134,7 +134,7 @@ The method does not depend on this example. Every value below is a proposal. Chi
 | T11 | M1 prose with an M3 serial grammar |
 | T12 | The MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 record, the OS Domain Situation, the Past |
 
-The values rest on canon: Tori as MC, the Driver ruled Action ([story spine](../ssot_01_story_spine_comparative_tree/2-reference.md)), the six-movement descent and Southern Gothic register on the DCUS instance, and the rename lattice (Skeeter Creek to Red Hills to DCUS) as S5 SCAR paratext ([📐 ssot_03_setting_system.md](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)).
+The values rest on canon: Tori as MC, the Driver ruled Action ([story spine](../ssot_01_story_spine_comparative_tree/2-reference.md)). They also rest on the six-movement descent and Southern Gothic register on the DCUS instance. They rest on the rename lattice (Skeeter Creek to Red Hills to DCUS) as S5 SCAR paratext. The setting system covers it ([📐 ssot_03_setting_system.md](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)).
 
 ## TEXTURE × LIBRARY
 
@@ -149,7 +149,7 @@ The values rest on canon: Tori as MC, the Driver ruled Action ([story spine](../
 | BVX.0175 | McKee | T6 | show, don't tell as a distance dial; text against subtext |
 | BVX.0349 | Kennedy | T8 | the gutter of implication; apophatic detail; a caution against over-filling paratext |
 
-**The shelf.** 105 items keyed 9/16 (BOLO 18); eight distilled to date. Next candidates: Bell's *VOICE* (BVX.0256), Block's *The Visual Story* (BVX.1103), the Routledge handbook of stylistics (BVX.0647), the *Handbook of Narratology* (BVX.0584), Thomas and Turner's *Clear and Simple as the Truth*, Landon's *Building Great Sentences*. Queued acquisitions: Genette *Narrative Discourse*, Booth *The Rhetoric of Fiction*, and Bal's theory volume (BVX.0591), undistilled.
+**The shelf.** 105 items keyed 9/16 (BOLO 18); eight distilled to date. Next candidates: Bell's *VOICE* (BVX.0256), Block's *The Visual Story* (BVX.1103), the Routledge handbook of stylistics (BVX.0647). After those come the *Handbook of Narratology* (BVX.0584) and Thomas and Turner's *Clear and Simple as the Truth*. The last is Landon's *Building Great Sentences*. Queued acquisitions: Genette *Narrative Discourse*, Booth *The Rhetoric of Fiction*, and Bal's theory volume (BVX.0591), undistilled.
 
 **OPEN calls, all closed** (ruled 9/16, "texture calls go"; built 2026-10-04). 1 Twelve layers. 2 The twelve names stand. 3 T2 perceptual and informational sub-fields. 4 Reflection axis absorbed by T7. 5 T6 distance scale and instrument. 6 Register slot on the telling line. 7 Dialogue function count held as a revision check. 8 Viewpoint silence as a T2 sub-value. 9 The `t1_t2_gap` flag. 10 Memory as a T2 sub-value and the T4 pause test. 11 Mood-curve entry format and the reader ledger. 12 OXO profile parked (⏸ OXO telling profile). 13 Acquisitions queued.
 
