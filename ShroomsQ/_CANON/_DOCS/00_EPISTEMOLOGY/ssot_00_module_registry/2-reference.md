@@ -74,7 +74,7 @@ Audit 2026-10-04 (slice 3.3.1): 1 active, 2 absorbed, 8 planned, 3 conceptual. N
 | `MOD.DUALISM.[LAYER].pole_positive` | str | N/A | freeform trait label | Static |
 | `MOD.DUALISM.[LAYER].behavior_desc` | str | N/A | freeform, a LoL ability-style sentence | Static |
 
-Every module variable carries a `Static` or `Dynamic` tag, as the module architecture requires (IF-00-02-27; IF catalog call 4, ruled 2026-10-05). Each planned module declares its tags when it moves to `draft`.
+Every module variable carries a `Static` or `Dynamic` tag (IF-00-02-27; IF catalog call 4, ruled 2026-10-05). The module architecture requires the tag. Each planned module declares its tags when it moves to `draft`.
 
 - **Reads:** all core layer base values, `T3.FUNC.resolve`.
 - **Derived:** `MOD.DUALISM.total_charge` (sum of the 12 charge values); `MOD.DUALISM.charge_variance` (standard deviation of the 12).

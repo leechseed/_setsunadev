@@ -18,7 +18,7 @@ Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORK
 
 **Roster (12):** Tori · Anna · DCUS · The Drop · the Sync-dive · the Star-Rating · the storyform · the scream etiquette · the Story Lattice · the Collision Engine · DARKROOM · the taxonomy engine.
 
-**Protocol.** Chief struck or kept by number (F, S, A plus the row). Ruled 2026-09-29: "keep all." Kept lines land on entity sheets as `fantasy:`, `sexy:` and `aesthetic:` fields. The plot card and the scene card carry the same three fields, so a plot element or scene lands its lines there (IF catalog call 6, ruled 2026-10-05). All 36 lines are kept.
+**Protocol.** Chief struck or kept by number (F, S, A plus the row). Ruled 2026-09-29: "keep all." Kept lines land on entity sheets as `fantasy:`, `sexy:` and `aesthetic:` fields. The plot card and the scene card carry the same three fields. The writer lands the lines of a plot element or scene there (IF catalog call 6, ruled 2026-10-05). All 36 lines are kept.
 
 ## SWEEP 1 · FANTASY DRIVE (P8) — all
 

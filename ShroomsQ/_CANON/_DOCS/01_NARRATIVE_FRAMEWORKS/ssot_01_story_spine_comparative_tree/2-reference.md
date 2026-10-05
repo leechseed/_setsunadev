@@ -132,7 +132,7 @@ Sources: BVX.0089 · BVX.0175 · BVX.0236 · BVX.0163 · BVX.1124.
 
 ### L6 · Theme — the argument's value layer
 
-Theme is structural position, not a bolted-on message. Issue against Counterpoint is the 64-level pair. Problem against Solution is the atomic pair. Outcome and Judgment pass the verdict. McKee's controlling idea equals OS Problem/Solution plus Outcome compressed to a sentence. The [06 theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) holds this layer's Issue/Counterpoint pairs and its controlling idea as rails R1–R4 (IF catalog call 2, ruled 2026-10-05). L6 points at that controlling idea. Sources: BVX.0175 · BVX.1123 · BVX.0193.
+Theme is structural position, not a bolted-on message. Issue against Counterpoint is the 64-level pair. Problem against Solution is the atomic pair. Outcome and Judgment pass the verdict. McKee's controlling idea equals OS Problem/Solution plus Outcome compressed to a sentence. The [06 theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) holds this layer's Issue/Counterpoint pairs as rails R1–R4. It holds the layer's controlling idea the same way (IF catalog call 2, ruled 2026-10-05). L6 points at that controlling idea. Sources: BVX.0175 · BVX.1123 · BVX.0193.
 
 ### L7 · Genre, medium, audience — the outermost ring
 

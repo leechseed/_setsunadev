@@ -71,7 +71,7 @@ Terms are defined in the [reference](2-reference.md).
 1. Decide which rung the Touchstone governs.
 2. Write its scope as a ladder address span.
 3. Check the census table for the matching rung.
-4. If a unit breaches the Touchstone, log it in the 08 §9A Touchstone breach log with the unit's time code, the TS id and the units it invalidates.
+4. If a unit breaches the Touchstone, log it in the 08 §9A Touchstone breach log. Add the unit's time code, the TS id and the units it invalidates.
 
 ## Track a thread
 

@@ -135,7 +135,7 @@ A table of system, claim and checking framework. Three rules apply to every row.
 
 How to apply the frameworks.
 
-Reads from 07 (IF-00-07-02): Style writes one vocabulary page per source, `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`. Style also writes one register row per term and source to `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
+Reads from 07 (IF-00-07-02): Style writes one vocabulary page per source, `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`. Style also writes one register row per term and source. Style puts the rows in `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
 
 ### Research Design Integration
 

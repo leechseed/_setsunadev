@@ -61,7 +61,7 @@ Each entry gives the law, what it forbids, its dictum and its address.
 - **Forbids:** empty teases, unpaid hooks, uniform intensity.
 - **Dictum:** "A great hook doesn't ask you to keep going — it dares you not to."
 - **Address:** L4 plus the ladder. Feeds the M6 to M8 serialized grammars (BOLO 16).
-- **Ledger (IF catalog call 6, ruled 2026-10-05):** every hook is an entry in the hook ledger in 08 §9A: hook type, container it closes, payoff address (an 08 time code).
+- **Ledger (IF catalog call 6, ruled 2026-10-05):** every hook is an entry in the hook ledger in 08 §9A. Each entry holds hook type, container it closes, payoff address (an 08 time code).
 
 ### P7 · THE NARRATIVE DILEMMA — plot_systems seed #3
 
@@ -80,7 +80,7 @@ Each entry gives the law, what it forbids, its dictum and its address.
 - **Capture (RULED 2026-08-31):** Chief speaks it in-chat, dictation as-is. Chief's voice is the line of quality and the canon form. Claude may draft candidate lines, marked `draft`. A draft becomes canon only when Chief keeps it or speaks it over.
 - **Rank:** Chief: "probably the most important thing."
 - **Address:** systemic. Every spine level, ladder rung, 12-layer sheet and plot element. No exceptions.
-- **Landing (IF catalog call 6, ruled 2026-10-05):** the three checks land as `fantasy:`, `sexy:` and `aesthetic:` fields on the entity sheet, the plot card and the scene card.
+- **Landing (IF catalog call 6, ruled 2026-10-05):** the three checks land as `fantasy:`, `sexy:` and `aesthetic:` fields. The writer puts the fields on the entity sheet, the plot card and the scene card.
 - **Sweep order (RULED 2026-08-31):** three full sweeps: fantasy across everything, then sexy across everything, then aesthetic across everything. Never bundled per element.
 
 ### P9 · THE SEXY CHECK

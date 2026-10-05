@@ -10,7 +10,7 @@ source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md
 source_version: 0.2.0
 ---
 
-**Who it's for:** the CDR and the writers, who already know what the catalog is and need to do one of its four tasks · **What it does:** gives the steps to look up an interface, add one, close a one-sided wiring and rule a design call · **Type:** how-to
+**Who it's for:** the CDR and the writers. They already know what the catalog is and need to do one of its four tasks · **What it does:** gives the steps to look up an interface and add one. It also gives the steps to close a one-sided wiring and rule a design call · **Type:** how-to
 
 # Interface catalog: how-to
 

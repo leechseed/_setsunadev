@@ -38,7 +38,7 @@ flowchart TD
 
 Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.1.0, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
 
-Scope: the doc covers every scaled number in any system. The S1 to S12 setting numerics and the P1 to P12 plot numerics take scale classes from this doc. A time code takes none, because a time code is an address and not a scale (IF catalog call 8, ruled 2026-10-05).
+Scope: the doc covers every scaled number in any system. The S1 to S12 setting numerics and the P1 to P12 plot numerics take scale classes from this doc. A time code takes none (IF catalog call 8, ruled 2026-10-05). A time code is an address and not a scale.
 
 Notation: SC-N is a scale class with N+1 valid values (0 through N), where N divides 60. Internal means the 0-60 space. `internal = display × step`; `display = internal / step`.
 

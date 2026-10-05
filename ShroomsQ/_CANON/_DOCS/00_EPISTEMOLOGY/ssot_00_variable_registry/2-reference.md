@@ -130,7 +130,7 @@ The Slice Fields section uses one table row per field. Its columns are Canonical
 
 Chief rules each retirement. The author keeps the entry and marks it retired, with the date and the BOLO. The author names any replacement and keeps an alias row for the old name. The author removes the variable from every Feeds line. Character records keep their data. The author adds a version-history row.
 
-The vertical slice keeps the 139-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list and does not copy it (IF-00-02-28; IF catalog call 4, ruled 2026-10-05). The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
+The vertical slice keeps the 139-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list (IF-00-02-28; IF catalog call 4, ruled 2026-10-05). It does not copy the table. The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
 
 ### Read aliases
 
@@ -658,7 +658,7 @@ State diffs use the `STT` prefix. They mirror the variable they modify, with ext
 | `STT.WILL_EFFECTIVE` | int SC-20 | State-only field: temporary WILL reduction |
 | `STT.state_note` | str | Prose justification for the diff |
 
-`STT.narrative_moment` holds the one Tracking address, for example `M2 · Q1 · S03 | bar.beat.tick`. Movement is M, sequence is Q, scene is S, and beat is `bar.beat` (IF-00-08-03; IF catalog call 1, ruled 2026-10-05). `STT.mc_distance_temporal` and `STT.mc_distance_narrative` key to the same time code.
+`STT.narrative_moment` holds the one Tracking address, for example `M2 · Q1 · S03 | bar.beat.tick`. Movement is M and sequence is Q. Scene is S, and beat is `bar.beat` (IF-00-08-03; IF catalog call 1, ruled 2026-10-05). `STT.mc_distance_temporal` and `STT.mc_distance_narrative` key to the same time code.
 
 ## Character Metadata
 

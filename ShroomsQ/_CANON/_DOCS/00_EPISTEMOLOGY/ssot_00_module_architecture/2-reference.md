@@ -109,7 +109,7 @@ Each layer has one domain, from the Vertical Slice SSOT.
 
 ### Step 3: Register Variables
 
-Variables use the namespace `MOD.[MODULE_CODE].[variable_name]`. A module code is a unique 3-8 character uppercase identifier registered in the Layer-Locked Module Registry. Every variable uses a Base 60 scale class (if numeric) and declares a type from the standard set. It declares its source (`authored`, `derived`, `computed`) and its tag, `Static` or `Dynamic`, and lists its core read dependencies. The tag tells the state architecture whether to record a state diff for the variable (IF-00-02-27; IF catalog call 4, ruled 2026-10-05).
+Variables use the namespace `MOD.[MODULE_CODE].[variable_name]`. A module code is a unique 3-8 character uppercase identifier registered in the Layer-Locked Module Registry. Every variable uses a Base 60 scale class (if numeric) and declares a type from the standard set. It declares its source (`authored`, `derived`, `computed`) and its tag, `Static` or `Dynamic`, and lists its core read dependencies. The state architecture reads the tag (IF-00-02-27; IF catalog call 4, ruled 2026-10-05). The tag says whether to record a state diff for the variable.
 
 ### Step 4: Declare Access Pattern
 
@@ -161,7 +161,7 @@ YAML `READS`: a list of core variable paths, such as `T1.VITAL.base_value`.
 ### Computation Block (Optional)
 
 - `DERIVED` items: `path`, `formula_internal` (0-60 space), `output_space` (SC-N or internal), `input_constraints`.
-- `FLAGS` items: `path` (`MOD.[CODE].FLG.[flag_name]`), `trigger` (boolean expression), `states` (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE), `event_id` (the fabula event id, required in PENDING and FIRED_PRE_STORY).
+- `FLAGS` items: `path` (`MOD.[CODE].FLG.[flag_name]`), `trigger` (boolean expression) and `states` (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE). They also carry `event_id` (the fabula event id, required in PENDING and FIRED_PRE_STORY).
 
 ### Data Exchange Format
 

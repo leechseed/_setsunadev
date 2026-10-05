@@ -10,11 +10,11 @@ source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md
 source_version: 0.2.0
 ---
 
-**Who it's for:** the CDR, the writers and Chief, who want to understand why the Command keeps a map of where its ten systems touch · **What it does:** explains what an interface is, why the catalog records both sides, and how the findings and the ten design calls close the gaps · **Type:** concept
+**Who it's for:** the CDR, the writers and Chief. They want to understand why the Command keeps a map of where its ten systems touch · **What it does:** explains what an interface is and why the catalog records both sides. It shows how the findings and the ten design calls close the gaps · **Type:** concept
 
 # Interface catalog: concept
 
-*Start at the catalog and follow the arrows: the ten systems feed one register, and the register feeds the findings that the ten calls close.*
+*Start at the catalog and follow the arrows. The ten systems feed one register, and the register feeds the findings that the ten calls close.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

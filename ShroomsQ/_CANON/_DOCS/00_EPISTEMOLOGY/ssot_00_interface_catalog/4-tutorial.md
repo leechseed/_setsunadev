@@ -10,7 +10,7 @@ source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md
 source_version: 0.2.0
 ---
 
-**Who it's for:** a writer or the CDR using the catalog for the first time, who has the source page open · **What it does:** teaches the lookup by doing one: find `IF-02-04-01`, read both sides and test whether it is one-sided · **Type:** tutorial
+**Who it's for:** a writer or the CDR using the catalog for the first time. They have the source page open · **What it does:** teaches the lookup by doing one: find `IF-02-04-01`, read both sides and test whether it is one-sided · **Type:** tutorial
 
 # Interface catalog: tutorial
 
@@ -91,6 +91,6 @@ You have found a row-level gap that the pair-level test cannot see. The catalog'
 
 ## What you did
 
-You split an id, found its pair, read a row, read the other side and ran the one-sided test twice: once on a pair and once on a row. You also saw the limit of the test.
+You split an id, found its pair, read a row and read the other side. You ran the one-sided test twice: once on a pair and once on a row. You also saw the limit of the test.
 
 To go on, learn the four tasks in the [how-to](3-how-to.md). To close a gap like the one you found, follow "Add a new interface" or "Close a one-sided wiring" there. For why the catalog keeps both sides, read the [concept](1-concept.md).

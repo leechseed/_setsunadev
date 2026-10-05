@@ -10,11 +10,11 @@ source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md
 source_version: 0.2.0
 ---
 
-**Who it's for:** the CDR and the writers, looking up an interface, a count or a ruling before touching a field another system reads · **What it does:** lists every part of the interface catalog, in the source's order · **Type:** reference
+**Who it's for:** the CDR and the writers. They look up an interface, a count or a ruling before touching a field another system reads · **What it does:** lists every part of the interface catalog, in the source's order · **Type:** reference
 
 # Interface catalog: reference
 
-*Read the diagram top to bottom: the catalog has five looked-up parts, and the register holds one subsection per system pair.*
+*Read the diagram top to bottom. The catalog has five looked-up parts, and the register holds one subsection per system pair.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
@@ -247,7 +247,7 @@ This page lists each pair with one line on what crosses and its counts. The full
 
 ### 02 Character (LEECHSEED) ↔ 07 Style
 
-**What crosses:** Six of the seven rows are CONTROL: narration never states motive, erotic pacing devices and one idea, one name. 07 reads L5 and L6.
+**What crosses:** Six of the seven rows are CONTROL. They cover: narration never states motive, erotic pacing devices and one idea, one name. 07 reads L5 and L6.
 
 **Rows:** 7 interfaces (1 DATA, 6 CONTROL) · 7 built, 0 parked, 0 proposed · ids `IF-02-07-01` to `IF-02-07-07` · named-only citations: none
 
@@ -367,7 +367,7 @@ This page lists each pair with one line on what crosses and its counts. The full
 
 ### 06 Theme ↔ 09 Operations
 
-**What crosses:** Three rows, none built: Theme Report data for 09, a folder category for 06 and SOP §5's 1.0 bar.
+**What crosses:** Three rows, none built. They are Theme Report data for 09, a folder category for 06 and SOP §5's 1.0 bar.
 
 **Rows:** 3 interfaces (1 DATA, 2 CONTROL) · 0 built, 1 parked, 2 proposed · ids `IF-06-09-01` to `IF-06-09-03` · named-only citations: none
 

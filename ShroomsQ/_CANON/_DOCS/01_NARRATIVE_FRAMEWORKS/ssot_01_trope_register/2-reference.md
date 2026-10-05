@@ -50,7 +50,7 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 
 **One key store (IF catalog call 10, ruled 2026-10-05).** `register.json` is the one key store for every trope. The plot trope graph reads its keys from it. The graph's node keying (`node`, `alt`, `conf`) is a view of the same fetch, not a second store. The setting-domain keys S1 to S12 live here only.
 
-**Interfaces.** Read from 06 (IF-01-06-06): rail ids R1 to R4 as the value of `keys.theme`; null if a trope argues no rail; `conf` low when `def` is undefined; Chief decides tropes that need two rails.
+**Interfaces.** Read from 06 (IF-01-06-06): rail ids R1 to R4 as the value of `keys.theme`. The writer leaves `keys.theme` null if a trope argues no rail. The writer sets `conf` low when `def` is undefined. Chief decides tropes that need two rails.
 
 ## THE COUNTS (2026-10-03, v0.5.0)
 

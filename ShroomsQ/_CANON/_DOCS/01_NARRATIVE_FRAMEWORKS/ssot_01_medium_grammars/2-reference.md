@@ -14,7 +14,7 @@ source_version: 1.3.0
 
 # The medium grammars: reference
 
-Source: [📐 ssot_01_medium_grammars.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_medium_grammars.md). Version 1.3.0 (1.3.0 pointed M1 at 07.1; 1.2.0 added the texture table; 1.1.0 added mode). Trunk: BLACK; ORANGE rows carry craft grammar only. Why: [concept](1-concept.md).
+Source: [📐 ssot_01_medium_grammars.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_medium_grammars.md). The current version is 1.3.0, which pointed M1 at 07.1. Version 1.2.0 added the texture table. Version 1.1.0 added mode. Trunk: BLACK; ORANGE rows carry craft grammar only. Why: [concept](1-concept.md).
 
 ## THE CONTRACT TABLE — ten mediums at a glance
 
@@ -37,7 +37,7 @@ Law: story-side is medium-independent; discourse-side is where the medium bites.
 
 ### M1 · PROSE
 
-Full interiority access. T2 internal focalization is native and free. Free indirect discourse is the signature instrument. Duration (T4) is fully elastic. Style guide (IF catalog call 7, ruled 2026-10-05): M1 selects [07.1 prose style](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) as the style guide that governs the telling. Holdings: the entire CRE craft shelf. The Telling Profile applies verbatim.
+Full interiority access. T2 internal focalization is native and free. Free indirect discourse is the signature instrument. Duration (T4) is fully elastic. Style guide (IF catalog call 7, ruled 2026-10-05): M1 selects [07.1 prose style](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md). It is the style guide that governs the telling. Holdings: the entire CRE craft shelf. The Telling Profile applies verbatim.
 
 ### M2 · FILM
 
