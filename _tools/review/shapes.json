@@ -203,7 +203,7 @@
   ]
  },
  "05": {
-  "main": "05_OPERATIONS/📐 ssot_05_operations_project_flow.md",
+  "main": "09_OPERATIONS/📐 ssot_09_operations_project_flow.md",
   "why_main": "no 05 doc is module_of another; project_flow is the one the other operations docs name as the project-level doc (the development standard governs the loop inside a session, SOP.md the session)",
   "layer_word": "component",
   "ids": "MCDP[ -]\\d[\\d-]*|BVIPDS|PMBOK|DOCTRINE 0|BVX\\.\\d+",
@@ -244,8 +244,8 @@
   "held_why": "DOCTRINE 0 promotes them to 1.0 only after two project uses (BOLO 100, ruled 10/4)"
  },
  "06": {
-  "main": "06_STYLE_GUIDES/📐 ssot_06_1_prose_style.md",
-  "why_main": "06.1 is the only style guide that governs the stories themselves; 06.2 governs the Command's own docs and replies and 06.3 its pages, and 06.1's purpose declares all three siblings",
+  "main": "07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md",
+  "why_main": "07.1 is the only style guide that governs the stories themselves; 07.2 governs the Command's own docs and replies and 07.3 its pages, and 07.1's purpose declares all three siblings",
   "layer_word": "style rule",
   "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
   "layers": {
@@ -273,7 +273,7 @@
   "instance_na": "the worked instance is OXO's Telling Profile, a separate canon node cited throughout; the doc has no worked-instance section of its own"
  },
  "07": {
-  "main": "07_THEME_SYSTEMS/📐 ssot_07_theme_system.md",
+  "main": "06_THEME_SYSTEMS/📐 ssot_06_theme_system.md",
   "layer_word": "part",
   "ids": "(?:BVX|MSX|PSY|CRE|PHI)\\.\\d+",
   "layers": {
@@ -355,7 +355,7 @@
   "instance_na": "no worked-instance section: it carries inline examples of time codes only"
  },
  "09": {
-  "main": "09_WORLDBUILDING_SYSTEMS/📐 ssot_09_worldbuilding_system.md",
+  "main": "05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md",
   "layer_word": "infrastructure",
   "ids": "BVX\\.\\d+|MSX\\.\\d+|PSY\\.\\d+|NEW-[a-z0-9-]+",
   "layers": {

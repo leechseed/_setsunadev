@@ -484,7 +484,7 @@ GLOSSARY.update(
         "freedom": {
             "t": "The Freedom scale", "k": "theme",
             "d": "Tori's value gauge. Two tracks here: in-world (what the system records) and audience (what the reader sees). The gap is the ironic charge.",
-            "w": "ssot_07 · the value scale",
+            "w": "ssot_06 · the value scale",
         },
         "toldzoom": {
             "t": "Zoom stops", "k": "ladder",

@@ -26,7 +26,7 @@ The [texture layer](../ssot_01_texture_layer/1-concept.md) stays the taxonomy so
 
 The system owns the discourse side: who speaks, who sees, order, speed, frequency, words, feeling, thresholds, frames and narratee. It owns the TELLING PROFILE and the scene card's `telling:` line. It owns the way a medium re-instruments all of it.
 
-It owns nothing story-side. Dramatica's storyform owns structure. Plot systems own events. The setting system owns place. The 12-Layer Character Database owns who a character is.
+It owns nothing story-side. Dramatica's storyform owns structure. Plot systems own events. The setting system owns place. The LEECHSEED Character System owns who a character is.
 
 ## The exclusion runs both ways
 

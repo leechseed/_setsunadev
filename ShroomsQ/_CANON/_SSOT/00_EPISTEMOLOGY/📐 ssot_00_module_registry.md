@@ -28,7 +28,7 @@ dependencies: ["ssot_00_module_architecture", "ssot_00_variable_registry", "ssot
 
 ## Purpose
 
-This is the complete catalog of every field module that attaches to the 12-Layer Character Database. A field module is a set of variables beneath a layer. A doc module is a sibling document in `02_CHARACTER_SYSTEMS`. This registry lists field modules only ([📐 ssot_00_module_architecture.md](📐%20ssot_00_module_architecture.md), Field Modules and Doc Modules). When a new module is conceived, it is registered here before any variables are defined. When a module moves from planned to active, its full API declaration is documented here.
+This is the complete catalog of every field module that attaches to the LEECHSEED Character System. A field module is a set of variables beneath a layer. A doc module is a sibling document in `02_CHARACTER_SYSTEMS`. This registry lists field modules only ([📐 ssot_00_module_architecture.md](📐%20ssot_00_module_architecture.md), Field Modules and Doc Modules). When a new module is conceived, it is registered here before any variables are defined. When a module moves from planned to active, its full API declaration is documented here.
 
 ---
 

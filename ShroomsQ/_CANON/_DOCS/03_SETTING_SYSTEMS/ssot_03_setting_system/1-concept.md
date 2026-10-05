@@ -20,7 +20,7 @@ The system's root claim is that setting is the pressure field. It is the total s
 
 ## A place gets the same twelve layers a character gets
 
-Chief ruled that setting is built at character grade. The setting slice has twelve S-layers and mirrors the 12-layer character database layer for layer. S1 BODY mirrors L1 CORE, and S12 FUNCTION mirrors L12 FUNCTION. The writer reads a place the way the writer reads a person: surface first, then depth, then structural function.
+Chief ruled that setting is built at character grade. The setting slice has twelve S-layers and mirrors the LEECHSEED character system layer for layer. S1 BODY mirrors L1 CORE, and S12 FUNCTION mirrors L12 FUNCTION. The writer reads a place the way the writer reads a person: surface first, then depth, then structural function.
 
 ## Four axes classify a place before the slice describes it
 

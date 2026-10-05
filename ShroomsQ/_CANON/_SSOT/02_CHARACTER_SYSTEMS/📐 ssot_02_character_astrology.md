@@ -7,7 +7,7 @@ tier: fabula
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
-purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the 12-Layer Character Database."
+purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the LEECHSEED Character System."
 dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_systems_vertical_slice"]
 supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_modular_toolkit"]
 ---
@@ -24,14 +24,14 @@ supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_mod
 7. [Story-Level Categories](#story-level-categories)
 8. [The Dramatica-Astrology Interface (DAI)](#the-dramatica-astrology-interface-dai)
 9. [Pipeline Position](#pipeline-position)
-10. [Relationship to the 12-Layer Character Database](#relationship-to-the-12-layer-character-database)
+10. [Relationship to the LEECHSEED Character System](#relationship-to-the-12-layer-character-database)
 11. [Version History](#version-history)
 
 ---
 
 ## Purpose
 
-This document defines **Character Astrology** — a deterministic character rendering engine that translates Dramatica storyform outputs into astrological notation, producing a secondary symbolic dataset for each character. Character Astrology sits between Dramatica and the 12-Layer Character Database in the pipeline. It consumes locked Dramatica data and produces astrological variables that feed Layers 1 through 11 of the Vertical Slice.
+This document defines **Character Astrology** — a deterministic character rendering engine that translates Dramatica storyform outputs into astrological notation, producing a secondary symbolic dataset for each character. Character Astrology sits between Dramatica and the LEECHSEED Character System in the pipeline. It consumes locked Dramatica data and produces astrological variables that feed Layers 1 through 11 of the Vertical Slice.
 
 This SSOT supersedes both prior "Narrative Astrology" documents. The system has been renamed to **Character Astrology** to reflect its function: it operates on characters, not on narratives broadly. It is classified under `02_CHARACTER_SYSTEMS`.
 
@@ -88,7 +88,7 @@ The classification principle: if the data describes who the character IS at the 
 
 ### Character-Level Categories (Static Chart)
 
-These categories produce data that enters the Character Astrology Ingest Template and feeds the 12-Layer Vertical Slice.
+These categories produce data that enters the Character Astrology Ingest Template and feeds the LEECHSEED Vertical Slice.
 
 |#|Category|Domain|Function|
 |---|---|---|---|
@@ -347,7 +347,7 @@ Character Astrology sits in the middle of the pipeline. It consumes Dramatica. I
 
 ---
 
-## Relationship to the 12-Layer Character Database
+## Relationship to the LEECHSEED Character System
 
 Character Astrology and the 12-Layer system are **parallel datasets** that describe the same character in different notation systems. They are not hierarchical — neither contains the other. They share a common upstream source (Dramatica) and are connected by a formal mapping (deliverable 3A).
 
@@ -369,7 +369,7 @@ Character Astrology and the 12-Layer system are **parallel datasets** that descr
 
 **The connection:** Specific astrological variables feed specific layers. Sun sign feeds L1 CORE justification. Moon sign feeds L8 IMPRINT. Venus feeds L9 EROS. Mars feeds L2 VITAL. Saturn feeds L4 WILL and L5 WOUND. Shadow-related aspects feed L10 SHADOW. Destiny-related configurations (North Node, growth axis) feed L11 DESTINY. The complete mapping is defined in deliverable 3A.
 
-The two systems coexist. A complete Tier 3 character has both a Character Astrology Ingest Template and a 12-Layer Vertical Slice in their canonical folder. Both are valid, complete representations. Neither replaces the other.
+The two systems coexist. A complete Tier 3 character has both a Character Astrology Ingest Template and a LEECHSEED Vertical Slice in their canonical folder. Both are valid, complete representations. Neither replaces the other.
 
 ---
 

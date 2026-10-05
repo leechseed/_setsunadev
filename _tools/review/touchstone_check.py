@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SSOT = ROOT / "ShroomsQ" / "_CANON" / "_SSOT"
 REGISTER = next(SSOT.glob("01_NARRATIVE_FRAMEWORKS/*ssot_01_touchstones_register.md"))
 # Format examples, not entries: the naming rule cites "TS 1:3" to show book:number.
-EXAMPLES = {("ssot_06_2_documents_style.md", "1:3")}
+EXAMPLES = {("ssot_07_2_documents_style.md", "1:3")}
 ID = re.compile(r"\bTS (\d+:\d+)\b")
 
 registered = set(re.findall(r"\*\*TS (\d+:\d+) —", REGISTER.read_text(encoding="utf-8")))

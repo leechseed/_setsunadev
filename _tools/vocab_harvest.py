@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """vocab_harvest.py — harvest reader marks (==term==) from a BVX-LEARN one-sheet.
 
-Reader protocol (SSOT: 05_OPERATIONS/📐 ssot_05_operations_markdown_marking):
+Reader protocol (SSOT: 09_OPERATIONS/📐 ssot_09_operations_markdown_marking):
   the reader marks a load-bearing term as ==term== while reading;
   this script pulls every mark with its section and sentence and writes
   (1) the per-source VOCAB page  KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md

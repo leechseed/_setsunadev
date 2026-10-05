@@ -307,9 +307,9 @@ A prose summary of the complete chart in 6-10 sentences. This summary is the hum
 
 ---
 
-## Section 9: 12-Layer Feed Map — REQUIRED
+## Section 9: LEECHSEED Feed Map — REQUIRED
 
-Identify which chart elements feed which layers in the 12-Layer Vertical Slice.
+Identify which chart elements feed which layers in the LEECHSEED Vertical Slice.
 
 |12-Layer|Chart Element(s) Feeding It|Feed Type|
 |---|---|---|
@@ -344,7 +344,7 @@ Before locking this template, confirm:
 - [ ] All planets have house assignments
 - [ ] Dignity assessment is complete for all assigned planets
 - [ ] Chart Summary is written
-- [ ] 12-Layer Feed Map is completed
+- [ ] LEECHSEED Feed Map is completed
 - [ ] Chart validated against character's authoritative documentation — no contradictions
 - [ ] Template status changed to locked
 - [ ] Template placed in character's canonical folder
@@ -355,4 +355,4 @@ Before locking this template, confirm:
 
 |Version|Date|Changes|
 |---|---|---|
-|1.0.0|2026-03-03|Initial template. 10 sections covering Personal Stack, Structural Stack, Interface Layer, Aspect Map, House Placements, Dignity Assessment, Void Variable, Chart Summary, 12-Layer Feed Map, and downstream handoff checklist.|
+|1.0.0|2026-03-03|Initial template. 10 sections covering Personal Stack, Structural Stack, Interface Layer, Aspect Map, House Placements, Dignity Assessment, Void Variable, Chart Summary, LEECHSEED Feed Map, and downstream handoff checklist.|

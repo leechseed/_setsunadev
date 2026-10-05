@@ -1,5 +1,5 @@
 ---
-title: "Character system (12-layer vertical slice): how-to"
+title: "Character system (LEECHSEED vertical slice): how-to"
 type: how-to
 for: "A writer or builder who knows the character system and needs to build, check or extend a slice"
 does: "Gives numbered steps for each task the character system defines"
@@ -12,7 +12,7 @@ source_version: 3.3.4
 
 **Who it's for:** a writer or builder building, checking or extending a slice · **What it does:** numbered steps for each task · **Type:** how-to
 
-# Character system (12-layer vertical slice): how-to
+# Character system (LEECHSEED vertical slice): how-to
 
 Lookups: [reference](2-reference.md). Why: [concept](1-concept.md). A worked pass: [tutorial](4-tutorial.md).
 

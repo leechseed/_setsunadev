@@ -52,7 +52,7 @@ One schema clarification issue was identified and requires resolution.
 |3.4 Aspect map (3+ aspects)|PASS|7 aspects with Dramatica sources|
 |3.5 House placements|PASS|All 10 planets placed|
 |3.6 Chart Summary|PASS|Written|
-|3.7 12-Layer Feed Map|PASS|All 11 fed layers validated|
+|3.7 LEECHSEED Feed Map|PASS|All 11 fed layers validated|
 |3.8 Template status|PASS|minimum_viable|
 
 ### Gate Result: CONDITIONAL PASS (Yellow Light)

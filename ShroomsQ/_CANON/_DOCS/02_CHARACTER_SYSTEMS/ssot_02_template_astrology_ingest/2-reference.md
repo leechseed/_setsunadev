@@ -119,7 +119,7 @@ Columns: Planet, Submerged Dramatica function, Link to L10 SHADOW content. This 
 
 Six to ten sentences in plain words. The summary says what the chart says about the character and where it pulls in two directions.
 
-## 9. 12-Layer Feed Map
+## 9. LEECHSEED Feed Map
 
 Fill in against the 12-layer mapping doc. The chart justifies a layer value and never sets one. Schema 2.5.0 and 3.0.0 fields are not chart-fed.
 

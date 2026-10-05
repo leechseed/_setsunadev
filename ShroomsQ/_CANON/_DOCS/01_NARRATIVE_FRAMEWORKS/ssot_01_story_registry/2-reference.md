@@ -73,7 +73,7 @@ Games, businesses and tools that are not stories in the universe (ruled 2026-09-
 
 Ruled 2026-10-01 (BOLO 96, Chief: "all rec"). A vignette is a short told piece with no full arc. It sits beside the stories, never counted as one, and carries no storyform.
 
-- **Wiring:** each vignette tags the worldbuilding catalog entries it shows (`WB-<TYPE>-<nnnn>`, ssot_09_worldbuilding_system).
+- **Wiring:** each vignette tags the worldbuilding catalog entries it shows (`WB-<TYPE>-<nnnn>`, ssot_05_worldbuilding_system).
 - **Canon status:** lineage by default (the Ariel rule, where Ariel is Tori's earlier name). It may float ideas without locking canon. Chief rules it in, and only then it reads as canon.
 - **Tags:** era required (1 Skeeter Creek, 2 DCUS, 3 LAKAD, 4 ASTRO7EX, 5 beyond). Time code optional (`M2 · Q1 · S03 | bar.beat.tick`, ssot_08_tracking_system).
 - **Intake:** spoken by Chief (10/1). The text lands in `_CANON_NODES/vignette-<slug>.md`, near-verbatim. The row lands here.

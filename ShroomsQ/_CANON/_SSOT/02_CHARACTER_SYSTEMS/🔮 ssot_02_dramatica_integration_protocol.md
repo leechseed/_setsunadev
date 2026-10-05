@@ -30,7 +30,7 @@ dependencies: ["ssot_02_character_systems_vertical_slice"]
 
 ## Purpose
 
-This document defines the role of Dramatica within the LEECHSEED character development pipeline. It establishes how Dramatica storyform outputs bind to characters, which data Dramatica provides at each tier of the 12-Layer Character Database, and where Dramatica sits relative to Character Astrology and the Vertical Slice protocol.
+This document defines the role of Dramatica within the LEECHSEED character development pipeline. It establishes how Dramatica storyform outputs bind to characters, which data Dramatica provides at each tier of the LEECHSEED Character System, and where Dramatica sits relative to Character Astrology and the Vertical Slice protocol.
 
 Dramatica is the first upstream system in the character pipeline. Its outputs are consumed by Character Astrology and by the 12-Layer system directly. No Tier 3 character enters the Vertical Slice without a locked Dramatica ingest.
 
@@ -50,7 +50,7 @@ Dramatica output is deterministic. A locked storyform produces a fixed set of ch
 
 ## What Dramatica Is Not
 
-Dramatica does not produce personality, psychology, physicality, sexuality, origin, trauma, shadow content, or aesthetic presentation. Those domains belong to the 12-Layer Character Database and to Character Astrology. Dramatica produces the **narrative skeleton**. The other systems produce the flesh.
+Dramatica does not produce personality, psychology, physicality, sexuality, origin, trauma, shadow content, or aesthetic presentation. Those domains belong to the LEECHSEED Character System and to Character Astrology. Dramatica produces the **narrative skeleton**. The other systems produce the flesh.
 
 Dramatica also does not produce plot. Plot is the sequence of events that dramatizes the storyform. The storyform constrains what the plot must accomplish, but the specific events, scenes, and beats are authored in the plot_systems domain, which is outside the scope of this document.
 
@@ -108,7 +108,7 @@ Every character who holds a Dramatica structural role is bound to at least one s
 |`resolve`|Change / Steadfast|`Change`|
 |`throughline`|Assigned throughline|`mc`|
 
-A character with roles in multiple storyforms has multiple binding records. The core 12-layer character record (L1-L11) remains singular regardless of how many storyform bindings exist.
+A character with roles in multiple storyforms has multiple binding records. The core LEECHSEED character record (L1-L11) remains singular regardless of how many storyform bindings exist.
 
 ---
 

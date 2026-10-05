@@ -18,7 +18,7 @@ Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/
 
 **Header facts.** Applies to all IPs. Sources: BVX.0598, 0596, 0273, 0084, 0279, 0061, 0175, 0349. Dependencies: `ssot_01_texture_layer`, `ssot_01_story_spine_comparative_tree`, `ssot_01_scale_ladder`, `ssot_01_medium_grammars`, `ssot_03_setting_system`, `ssot_04_plot_system`, `ssot_02_character_systems_vertical_slice`.
 
-**Owns:** the discourse side of the telling, the TELLING PROFILE, the scene card's `telling:` line, and the medium's re-instrumenting. **Does not own:** structure (Dramatica), events (plot systems), place (setting slice), persons (12-Layer Character Database).
+**Owns:** the discourse side of the telling, the TELLING PROFILE, the scene card's `telling:` line, and the medium's re-instrumenting. **Does not own:** structure (Dramatica), events (plot systems), place (setting slice), persons (LEECHSEED Character System).
 
 **Root claim.** Every telling is one configuration of a fixed set of answers. Who speaks and who sees are two decisions.
 
@@ -53,7 +53,7 @@ The Ten Questions as one table. The layer doc stays the taxonomy source: [📐 s
 
 ## PART A · THE TEXTURE SLICE, twelve layers, mirror of the character, setting and plot stacks
 
-The architecture mirrors the 12-Layer Character Database, the setting slice and the plot slice. T12 is fed independently from the storyform. The layer names are ruled (OPEN 2, 9/16).
+The architecture mirrors the LEECHSEED Character System, the setting slice and the plot slice. T12 is fed independently from the storyform. The layer names are ruled (OPEN 2, 9/16).
 
 | Layer | Name | Question | Source | Field it writes |
 |---|---|---|---|---|

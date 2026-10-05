@@ -16,7 +16,7 @@ source_version: 1.3.0
 
 ## The base record never changes
 
-A story changes its characters. Layer values shift. Flags fire. Wounds deepen. The 12-Layer Vertical Slice captures a character only at the point of canonical definition.
+A story changes its characters. Layer values shift. Flags fire. Wounds deepen. The LEECHSEED Vertical Slice captures a character only at the point of canonical definition.
 
 The source answers with one rule: the static character record never changes. The designer produces the record once, locks it and never edits it during story development. A needed revision creates a new version with a documented reason. The old version is archived.
 

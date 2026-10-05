@@ -121,7 +121,7 @@ The ingest holds the natal chart derived from the Dramatica Ingest by the DAI ru
 | 3.4 | Aspect map holds at least 3 aspects. Each cites its Dramatica tension source. |
 | 3.5 | House placements assigned for the seven minimum planets, with justifications. |
 | 3.6 | Chart Summary (Section 8) written: 6-10 sentences of prose. |
-| 3.7 | 12-Layer Feed Map (Section 9) completed. |
+| 3.7 | LEECHSEED Feed Map (Section 9) completed. |
 | 3.8 | Template status is `locked` or `minimum_viable`. Either passes. |
 
 Result: PASS if 3.1-3.8 hold. CONDITIONAL PASS if 3.8 reads `minimum_viable`: the slice proceeds and the astrology template is completed during or after. FAIL if any check fails.

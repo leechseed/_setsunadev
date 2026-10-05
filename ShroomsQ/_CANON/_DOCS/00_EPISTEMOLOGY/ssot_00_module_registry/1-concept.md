@@ -16,7 +16,7 @@ source_version: "1.1.1"
 
 ## The registry is the complete catalog
 
-The registry lists every field module that attaches to the 12-Layer Character Database. A field module is a set of variables beneath a layer. The registry lists no doc modules. A doc module is a sibling document in `02_CHARACTER_SYSTEMS`.
+The registry lists every field module that attaches to the LEECHSEED Character System. A field module is a set of variables beneath a layer. The registry lists no doc modules. A doc module is a sibling document in `02_CHARACTER_SYSTEMS`.
 
 ## A module registers before it has variables
 

@@ -7,7 +7,7 @@ module_of: ssot_03_setting_system
 last_updated: 2026-10-04
 applies_to: [all IPs]
 status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stamped module_of ssot_03_setting_system; origin_event no-record rule written; DCUS rename lattice values parked; Modified Flags block points to the SETTING FLAGS starter set; scope set to all IPs. Earlier: RULED 2026-09-29 — BOLO 90 step 3; 1.1.0 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Checkpoint 3 gets a told_at note, the backstory movement tag is ruled (not proposed), backward diffs stated as Rule 7"
-purpose: "Defines the architecture for tracking place change over narrative time without modifying the static base Setting Slice. Establishes the state diff system for places, the state record format, checkpoints and story points, state sources, faction-card state, and boundaries with the static Setting Slice, the tracking system, and the fabula. Mirrors ssot_02_character_state_architecture layer for layer, the way the Setting Slice itself mirrors the 12-Layer Character Database."
+purpose: "Defines the architecture for tracking place change over narrative time without modifying the static base Setting Slice. Establishes the state diff system for places, the state record format, checkpoints and story points, state sources, faction-card state, and boundaries with the static Setting Slice, the tracking system, and the fabula. Mirrors ssot_02_character_state_architecture layer for layer, the way the Setting Slice itself mirrors the LEECHSEED Character System."
 dependencies: ["ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_08_tracking_system", "ssot_04_fabula", "delta-coast-ultra-school (first instance)"]
 ---
 

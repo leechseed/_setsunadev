@@ -5,7 +5,7 @@ import glob, os, re, collections
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SSOT = os.path.join(ROOT, "ShroomsQ", "_CANON", "_SSOT")
 SYS = {"character": ["02_CHARACTER_SYSTEMS"], "setting": ["03_SETTING_SYSTEMS"], "plot": ["04_PLOT_SYSTEMS"],
-       "texture": ["01_NARRATIVE_FRAMEWORKS"], "genre": ["01_NARRATIVE_FRAMEWORKS"], "theme": ["07_THEME_SYSTEMS"]}
+       "texture": ["01_NARRATIVE_FRAMEWORKS"], "genre": ["01_NARRATIVE_FRAMEWORKS"], "theme": ["06_THEME_SYSTEMS"]}
 def sys_of(tag):
     if re.fullmatch(r"L(1[0-2]|[1-9])", tag): return "character"
     if tag.startswith("SETTING") or re.fullmatch(r"S\d{1,2}", tag): return "setting"

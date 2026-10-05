@@ -18,7 +18,7 @@ source_version: 1.2.2
 
 Dramatica is the narrative structure engine of the Command's character pipeline. It states what the story is about. It assigns each character a mechanical role in that argument. It sets the terms of transformation: resolve, growth, outcome and judgment.
 
-Dramatica does not produce personality, psychology, physicality, sexuality, origin, trauma, shadow or aesthetics. The 12-Layer Character Database and Character Astrology own those. The source puts it in one line: Dramatica produces the narrative skeleton, and the other systems produce the flesh.
+Dramatica does not produce personality, psychology, physicality, sexuality, origin, trauma, shadow or aesthetics. The LEECHSEED Character System and Character Astrology own those. The source puts it in one line: Dramatica produces the narrative skeleton, and the other systems produce the flesh.
 
 Dramatica does not produce plot either. The storyform constrains what the plot must accomplish. The plot_systems domain authors the events, scenes and beats.
 

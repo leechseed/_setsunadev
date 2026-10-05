@@ -790,7 +790,7 @@
 |   |   |   |   `-- Untitled.md
 |   |   |   |-- 03_PLOT_SYSTEMS
 |   |   |   |-- 04_STYLE_GUIDES
-|   |   |   `-- 05_OPERATIONS
+|   |   |   `-- 09_OPERATIONS
 |   |   |       |-- SSOT.MD
 |   |   |       |-- Untitled.md
 |   |   |       `-- how_to_use_goon_room.md

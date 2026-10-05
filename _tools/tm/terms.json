@@ -483,7 +483,7 @@
  "plot-slice": {
   "t": "PLOT SLICE",
   "k": "card",
-  "d": "The twelve-layer P1 through P12 schema, mirror of the 12-Layer Character Database and the [[setting-slice|Setting Slice]]. See [[p1-address|P1]] through [[p12-function|P12]].",
+  "d": "The twelve-layer P1 through P12 schema, mirror of the LEECHSEED Character System and the [[setting-slice|Setting Slice]]. See [[p1-address|P1]] through [[p12-function|P12]].",
   "w": "ssot_04_plot_system.md"
  },
  "collision-engine": {
@@ -603,7 +603,7 @@
  "setting-slice": {
   "t": "SETTING SLICE",
   "k": "card",
-  "d": "The twelve-layer S1 through S12 schema, architectural twin of the 12-Layer Character Database. See [[s1-body|S1]] through [[s12-function|S12]].",
+  "d": "The twelve-layer S1 through S12 schema, architectural twin of the LEECHSEED Character System. See [[s1-body|S1]] through [[s12-function|S12]].",
   "w": "ssot_03_setting_system.md"
  },
  "sitrep": {
@@ -751,7 +751,7 @@
   "src": "SSOT 02"
  },
  "twelve-layer-character": {
-  "t": "the 12-layer character database",
+  "t": "the LEECHSEED character system",
   "k": "command-term",
   "d": "The Command's character system: twelve layers from [[l1-core|CORE]] to [[l12-function|FUNCTION]], three tiers (primary layers, secondary derivations, numeric variables), derived statistics and flag triggers, instanced per character as a vertical slice. The setting slice (S1 to S12) and the plot slice (P1 to P12) mirror its form.",
   "w": "ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md · 00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md",

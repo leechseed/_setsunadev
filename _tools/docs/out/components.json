@@ -872,7 +872,7 @@
     "parts": []
    },
    {
-    "name": "Relationship to the 12-Layer Character Database",
+    "name": "Relationship to the LEECHSEED Character System",
     "parts": []
    }
   ],
@@ -1009,7 +1009,7 @@
     "parts": []
    },
    {
-    "name": "9. 12-Layer Feed Map",
+    "name": "9. LEECHSEED Feed Map",
     "parts": []
    },
    {
@@ -1599,7 +1599,297 @@
    }
   ]
  },
- "05_OPERATIONS": {
+ "05_WORLDBUILDING_SYSTEMS": {
+  "📐 ssot_05_worldbuilding_system.md": [
+   {
+    "name": "What this is",
+    "parts": []
+   },
+   {
+    "name": "THE DEFINITION",
+    "parts": [
+     "What this system owns",
+     "What it does not own",
+     "How it relates to each system",
+     "Vocabulary (ruled 9/29)",
+     "The plain verdict"
+    ]
+   },
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "THE INFRASTRUCTURES",
+    "parts": []
+   },
+   {
+    "name": "THE COHERENCE TESTS",
+    "parts": []
+   },
+   {
+    "name": "THE BOUNDARY",
+    "parts": []
+   },
+   {
+    "name": "THE CATALOG",
+    "parts": [
+     "The entry schema",
+     "The types",
+     "Where the files live",
+     "Seed entries (names only)"
+    ]
+   },
+   {
+    "name": "THE WORLD VIEW",
+    "parts": []
+   },
+   {
+    "name": "THE PROOF — DCUS (1.0, 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "WORLDBUILDING × LIBRARY",
+    "parts": []
+   }
+  ]
+ },
+ "06_THEME_SYSTEMS": {
+  "📐 ssot_06_theme_system.md": [
+   {
+    "name": "THE METHOD — how any story builds its theme",
+    "parts": []
+   },
+   {
+    "name": "THE WORKED INSTANCE — OVEREXITOUT",
+    "parts": []
+   },
+   {
+    "name": "THE CONTROLLING IDEA — OVEREXITOUT",
+    "parts": [
+     "The mechanism line (how the system does it)"
+    ]
+   },
+   {
+    "name": "HOW THE SENTENCE MAPS ONTO THE LOCKED STORYFORM",
+    "parts": []
+   },
+   {
+    "name": "THE RAILS — four debates (80-B.1, RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "THE VALUE SCALE — the per-scene gauge (80-B.2)",
+    "parts": []
+   },
+   {
+    "name": "THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "THE MOTIFS — three images (80-B.3, RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "PROVENANCE",
+    "parts": []
+   },
+   {
+    "name": "RULED 2026-09-29 (Chief: \"go on all those recs\")",
+    "parts": []
+   },
+   {
+    "name": "THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, \"all recs\")",
+    "parts": []
+   },
+   {
+    "name": "TROPES",
+    "parts": []
+   },
+   {
+    "name": "THE HANDSHAKE — theme × Touchstones (BOLO 81)",
+    "parts": []
+   },
+   {
+    "name": "1.0 BAR (RULED 2026-09-29, BOLO 80)",
+    "parts": []
+   },
+   {
+    "name": "PARKED (wave 2)",
+    "parts": []
+   }
+  ]
+ },
+ "07_STYLE_GUIDES": {
+  "📐 ssot_07_1_prose_style.md": [
+   {
+    "name": "Scope",
+    "parts": []
+   },
+   {
+    "name": "Voice & person",
+    "parts": []
+   },
+   {
+    "name": "Focalization",
+    "parts": []
+   },
+   {
+    "name": "Motive on the page",
+    "parts": []
+   },
+   {
+    "name": "Register & diction",
+    "parts": []
+   },
+   {
+    "name": "Sentence craft",
+    "parts": []
+   },
+   {
+    "name": "Description & the sensorium",
+    "parts": []
+   },
+   {
+    "name": "Dialogue",
+    "parts": []
+   },
+   {
+    "name": "Pace on the page",
+    "parts": []
+   },
+   {
+    "name": "Explicit content & paratext",
+    "parts": []
+   },
+   {
+    "name": "Genre register (cultcore)",
+    "parts": []
+   },
+   {
+    "name": "Meta-genre: the style bible",
+    "parts": []
+   },
+   {
+    "name": "The check",
+    "parts": []
+   }
+  ],
+  "📐 ssot_07_2_documents_style.md": [
+   {
+    "name": "THE DOCUMENTATION RULES — THE CORE (BOLO 95)",
+    "parts": []
+   },
+   {
+    "name": "THE INDEX — 07.2a AND 07.2b",
+    "parts": []
+   },
+   {
+    "name": "THE REPLY FORMAT — SOP §7, SUMMARIZED",
+    "parts": []
+   },
+   {
+    "name": "NAMING RULINGS THAT GOVERN EVERY DOCUMENT",
+    "parts": []
+   }
+  ],
+  "📐 ssot_07_2a_writing_guide.md": [
+   {
+    "name": "Linguistic Authority Standards",
+    "parts": []
+   },
+   {
+    "name": "Structural Requirements",
+    "parts": []
+   },
+   {
+    "name": "The Flat-Syntax YAML Standard",
+    "parts": []
+   }
+  ],
+  "📐 ssot_07_2b_markdown_marking.md": [
+   {
+    "name": "CORE METHODOLOGY — the four marks",
+    "parts": []
+   },
+   {
+    "name": "IMPLEMENTATION",
+    "parts": [
+     "Reader protocol",
+     "Harvest",
+     "Writer protocol",
+     "Retro-conversion"
+    ]
+   },
+   {
+    "name": "EXAMPLES",
+    "parts": []
+   }
+  ],
+  "📐 ssot_07_3_pages_style.md": [
+   {
+    "name": "THE FOUNDATION",
+    "parts": []
+   },
+   {
+    "name": "THE PAGE RULINGS",
+    "parts": []
+   }
+  ]
+ },
+ "08_TRACKING_SYSTEMS": {
+  "📐 ssot_08_tracking_system.md": [
+   {
+    "name": "1. What This Is",
+    "parts": []
+   },
+   {
+    "name": "2. The Two Rulers",
+    "parts": []
+   },
+   {
+    "name": "3. The Grid",
+    "parts": []
+   },
+   {
+    "name": "4. The Time Code",
+    "parts": []
+   },
+   {
+    "name": "5. The Records",
+    "parts": []
+   },
+   {
+    "name": "6. Cables",
+    "parts": []
+   },
+   {
+    "name": "7. Tempo",
+    "parts": []
+   },
+   {
+    "name": "8. The Ableton Map",
+    "parts": []
+   },
+   {
+    "name": "9. Who Consumes This",
+    "parts": []
+   },
+   {
+    "name": "9A. The Reader Model",
+    "parts": []
+   },
+   {
+    "name": "10. Open",
+    "parts": []
+   },
+   {
+    "name": "11. Version History",
+    "parts": []
+   }
+  ]
+ },
+ "09_OPERATIONS": {
   "how_to_use_goon_room.md": [
    {
     "name": "Daily Workflow",
@@ -1702,7 +1992,7 @@
     ]
    },
    {
-    "name": "Flow C: Both Ingests → 12-Layer Vertical Slice",
+    "name": "Flow C: Both Ingests → LEECHSEED Vertical Slice",
     "parts": [
      "Overview",
      "Flow Diagram",
@@ -1733,7 +2023,7 @@
     "parts": []
    }
   ],
-  "📐 ssot_05_operations_development_standard.md": [
+  "📐 ssot_09_operations_development_standard.md": [
    {
     "name": "Core Methodology",
     "parts": [
@@ -1760,7 +2050,7 @@
     ]
    }
   ],
-  "📐 ssot_05_operations_goon_room_protocol.md": [
+  "📐 ssot_09_operations_goon_room_protocol.md": [
    {
     "name": "Operational Environment",
     "parts": []
@@ -1782,9 +2072,9 @@
     "parts": []
    }
   ],
-  "📐 ssot_05_operations_legacy_styleguide_2024.md": [],
-  "📐 ssot_05_operations_markdown_marking.md": [],
-  "📐 ssot_05_operations_pm_holdings_inventory.md": [
+  "📐 ssot_09_operations_legacy_styleguide_2024.md": [],
+  "📐 ssot_09_operations_markdown_marking.md": [],
+  "📐 ssot_09_operations_pm_holdings_inventory.md": [
    {
     "name": "1 · PMBOK / PMI material",
     "parts": []
@@ -1810,7 +2100,7 @@
     "parts": []
    },
    {
-    "name": "7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot05operationsprojectflow.md v0.1",
+    "name": "7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot09operationsprojectflow.md v0.1",
     "parts": []
    },
    {
@@ -1818,7 +2108,7 @@
     "parts": []
    }
   ],
-  "📐 ssot_05_operations_project_flow.md": [
+  "📐 ssot_09_operations_project_flow.md": [
    {
     "name": "Core Methodology",
     "parts": [
@@ -1851,7 +2141,7 @@
     ]
    }
   ],
-  "📐 ssot_05_operations_retrieval_dossier_protocol.md": [
+  "📐 ssot_09_operations_retrieval_dossier_protocol.md": [
    {
     "name": "Core Methodology",
     "parts": [
@@ -1879,7 +2169,7 @@
     ]
    }
   ],
-  "📐 ssot_05_operations_standards_ladder.md": [
+  "📐 ssot_09_operations_standards_ladder.md": [
    {
     "name": "The four rungs",
     "parts": []
@@ -1996,296 +2286,6 @@
      "Naming Convention",
      "Emoji Taxonomy"
     ]
-   }
-  ]
- },
- "06_STYLE_GUIDES": {
-  "📐 ssot_06_1_prose_style.md": [
-   {
-    "name": "Scope",
-    "parts": []
-   },
-   {
-    "name": "Voice & person",
-    "parts": []
-   },
-   {
-    "name": "Focalization",
-    "parts": []
-   },
-   {
-    "name": "Motive on the page",
-    "parts": []
-   },
-   {
-    "name": "Register & diction",
-    "parts": []
-   },
-   {
-    "name": "Sentence craft",
-    "parts": []
-   },
-   {
-    "name": "Description & the sensorium",
-    "parts": []
-   },
-   {
-    "name": "Dialogue",
-    "parts": []
-   },
-   {
-    "name": "Pace on the page",
-    "parts": []
-   },
-   {
-    "name": "Explicit content & paratext",
-    "parts": []
-   },
-   {
-    "name": "Genre register (cultcore)",
-    "parts": []
-   },
-   {
-    "name": "Meta-genre: the style bible",
-    "parts": []
-   },
-   {
-    "name": "The check",
-    "parts": []
-   }
-  ],
-  "📐 ssot_06_2_documents_style.md": [
-   {
-    "name": "THE DOCUMENTATION RULES — THE CORE (BOLO 95)",
-    "parts": []
-   },
-   {
-    "name": "THE INDEX — 06.2a AND 06.2b",
-    "parts": []
-   },
-   {
-    "name": "THE REPLY FORMAT — SOP §7, SUMMARIZED",
-    "parts": []
-   },
-   {
-    "name": "NAMING RULINGS THAT GOVERN EVERY DOCUMENT",
-    "parts": []
-   }
-  ],
-  "📐 ssot_06_2a_writing_guide.md": [
-   {
-    "name": "Linguistic Authority Standards",
-    "parts": []
-   },
-   {
-    "name": "Structural Requirements",
-    "parts": []
-   },
-   {
-    "name": "The Flat-Syntax YAML Standard",
-    "parts": []
-   }
-  ],
-  "📐 ssot_06_2b_markdown_marking.md": [
-   {
-    "name": "CORE METHODOLOGY — the four marks",
-    "parts": []
-   },
-   {
-    "name": "IMPLEMENTATION",
-    "parts": [
-     "Reader protocol",
-     "Harvest",
-     "Writer protocol",
-     "Retro-conversion"
-    ]
-   },
-   {
-    "name": "EXAMPLES",
-    "parts": []
-   }
-  ],
-  "📐 ssot_06_3_pages_style.md": [
-   {
-    "name": "THE FOUNDATION",
-    "parts": []
-   },
-   {
-    "name": "THE PAGE RULINGS",
-    "parts": []
-   }
-  ]
- },
- "07_THEME_SYSTEMS": {
-  "📐 ssot_07_theme_system.md": [
-   {
-    "name": "THE METHOD — how any story builds its theme",
-    "parts": []
-   },
-   {
-    "name": "THE WORKED INSTANCE — OVEREXITOUT",
-    "parts": []
-   },
-   {
-    "name": "THE CONTROLLING IDEA — OVEREXITOUT",
-    "parts": [
-     "The mechanism line (how the system does it)"
-    ]
-   },
-   {
-    "name": "HOW THE SENTENCE MAPS ONTO THE LOCKED STORYFORM",
-    "parts": []
-   },
-   {
-    "name": "THE RAILS — four debates (80-B.1, RULED 2026-09-29)",
-    "parts": []
-   },
-   {
-    "name": "THE VALUE SCALE — the per-scene gauge (80-B.2)",
-    "parts": []
-   },
-   {
-    "name": "THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)",
-    "parts": []
-   },
-   {
-    "name": "THE MOTIFS — three images (80-B.3, RULED 2026-09-29)",
-    "parts": []
-   },
-   {
-    "name": "PROVENANCE",
-    "parts": []
-   },
-   {
-    "name": "RULED 2026-09-29 (Chief: \"go on all those recs\")",
-    "parts": []
-   },
-   {
-    "name": "THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, \"all recs\")",
-    "parts": []
-   },
-   {
-    "name": "TROPES",
-    "parts": []
-   },
-   {
-    "name": "THE HANDSHAKE — theme × Touchstones (BOLO 81)",
-    "parts": []
-   },
-   {
-    "name": "1.0 BAR (RULED 2026-09-29, BOLO 80)",
-    "parts": []
-   },
-   {
-    "name": "PARKED (wave 2)",
-    "parts": []
-   }
-  ]
- },
- "08_TRACKING_SYSTEMS": {
-  "📐 ssot_08_tracking_system.md": [
-   {
-    "name": "1. What This Is",
-    "parts": []
-   },
-   {
-    "name": "2. The Two Rulers",
-    "parts": []
-   },
-   {
-    "name": "3. The Grid",
-    "parts": []
-   },
-   {
-    "name": "4. The Time Code",
-    "parts": []
-   },
-   {
-    "name": "5. The Records",
-    "parts": []
-   },
-   {
-    "name": "6. Cables",
-    "parts": []
-   },
-   {
-    "name": "7. Tempo",
-    "parts": []
-   },
-   {
-    "name": "8. The Ableton Map",
-    "parts": []
-   },
-   {
-    "name": "9. Who Consumes This",
-    "parts": []
-   },
-   {
-    "name": "9A. The Reader Model",
-    "parts": []
-   },
-   {
-    "name": "10. Open",
-    "parts": []
-   },
-   {
-    "name": "11. Version History",
-    "parts": []
-   }
-  ]
- },
- "09_WORLDBUILDING_SYSTEMS": {
-  "📐 ssot_09_worldbuilding_system.md": [
-   {
-    "name": "What this is",
-    "parts": []
-   },
-   {
-    "name": "THE DEFINITION",
-    "parts": [
-     "What this system owns",
-     "What it does not own",
-     "How it relates to each system",
-     "Vocabulary (ruled 9/29)",
-     "The plain verdict"
-    ]
-   },
-   {
-    "name": "MIND MODELS",
-    "parts": []
-   },
-   {
-    "name": "THE INFRASTRUCTURES",
-    "parts": []
-   },
-   {
-    "name": "THE COHERENCE TESTS",
-    "parts": []
-   },
-   {
-    "name": "THE BOUNDARY",
-    "parts": []
-   },
-   {
-    "name": "THE CATALOG",
-    "parts": [
-     "The entry schema",
-     "The types",
-     "Where the files live",
-     "Seed entries (names only)"
-    ]
-   },
-   {
-    "name": "THE WORLD VIEW",
-    "parts": []
-   },
-   {
-    "name": "THE PROOF — DCUS (1.0, 2026-09-29)",
-    "parts": []
-   },
-   {
-    "name": "WORLDBUILDING × LIBRARY",
-    "parts": []
    }
   ]
  }

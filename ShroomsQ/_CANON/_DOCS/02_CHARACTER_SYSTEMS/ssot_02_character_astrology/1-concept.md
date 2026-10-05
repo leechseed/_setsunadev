@@ -46,7 +46,7 @@ Not every character needs a full chart. A Tier 3 character gets full chart gener
 
 ## The chart sits in the middle of a pipeline and feeds the 12 layers
 
-Dramatica data goes in. The Dramatica-Astrology Interface (DAI) translates it. The chart comes out and feeds layers 1 through 11 of the 12-layer vertical slice. Layer 12 comes straight from Dramatica, so the chart never touches it.
+Dramatica data goes in. The Dramatica-Astrology Interface (DAI) translates it. The chart comes out and feeds layers 1 through 11 of the LEECHSEED vertical slice. Layer 12 comes straight from Dramatica, so the chart never touches it.
 
 The chart and the 12 layers are parallel datasets, not a hierarchy. The chart supplies symbolic depth, internal contradiction and a way to detect collisions between two characters. The 12 layers supply numbers, derived statistics and machine-readable blocks. A complete Tier 3 character holds both, and neither replaces the other.
 

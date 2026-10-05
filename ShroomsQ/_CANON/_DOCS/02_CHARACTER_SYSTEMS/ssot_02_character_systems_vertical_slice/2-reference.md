@@ -1,5 +1,5 @@
 ---
-title: "Character system (12-layer vertical slice): reference"
+title: "Character system (LEECHSEED vertical slice): reference"
 type: reference
 for: "A writer or builder looking up a layer, field, formula, flag, alias or library source of the character system"
 does: "Lists every component and part of the vertical slice doc with its fields, values, formulas and connections"
@@ -12,11 +12,11 @@ source_version: 3.3.4
 
 **Who it's for:** a writer or builder looking up a layer, field, formula, flag or alias · **What it does:** lists every component of the character system doc · **Type:** reference
 
-# Character system (12-layer vertical slice): reference
+# Character system (LEECHSEED vertical slice): reference
 
 Why the system exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked slice: [tutorial](4-tutorial.md). Source: [ssot_02_character_systems_vertical_slice.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), version 3.3.3, RULED 2026-10-04. Trunk: BLACK. Applies to OVEREXITOUT, ASTRO7EX, LAKAD. Tier: fabula and narratology.
 
-The system is the 12-Layer Character Database promoted to a system. It has three tiers, twelve layers, seven derived statistics, flag trigger conditions and one machine-readable structured data block. It sits beside 03 (setting) and 04 (plot).
+The system is the LEECHSEED Character System promoted to a system. It has three tiers, twelve layers, seven derived statistics, flag trigger conditions and one machine-readable structured data block. It sits beside 03 (setting) and 04 (plot).
 
 **Owns:** who a character is. The twelve domain declarations, the derived statistics, the flag states and the data block.
 
@@ -557,7 +557,7 @@ A plain-text block with these top-level keys, in order:
 
 ## THE SCHEMA PASS — aliases and drops (RULED 2026-10-04, BOLO 88, "all recommendations")
 
-The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0). Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4) and `futurity_stance` (L6). The fourth is `minority_stress`, a trigger type under L5 `triggers`. The rest are read aliases. A distill that names one maps to the field shown. So one idea keeps one name (06.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`.
+The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0). Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4) and `futurity_stance` (L6). The fourth is `minority_stress`, a trigger type under L5 `triggers`. The rest are read aliases. A distill that names one maps to the field shown. So one idea keeps one name (07.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`.
 
 Call values: MERGE INTO a field, or DROP.
 
@@ -861,7 +861,7 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the character domain is key
 |---|---|---|
 | 1 | Ghost and revenant links on L5 | APPLIED 2.1.0, folded into call 15 |
 | 2 | Typed arc field on L11 | APPLIED 2.1.0: `arc_type`, `change_cause` |
-| 3 | Tyranny of motive as a narration rule | MOVED 2026-10-04 to 06.1 prose, CLOSED |
+| 3 | Tyranny of motive as a narration rule | MOVED 2026-10-04 to 07.1 prose, CLOSED |
 | 4 | Hierarchy as an allocation rule | APPLIED 2.1.0 |
 | 5 | Viewpoint out of scope | CLOSED 2026-10-04, owned by the texture system |
 | 6 | Wound card and severity dial | APPLIED 2.1.0: `severity`, `triggers` |

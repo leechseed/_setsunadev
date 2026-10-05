@@ -20,7 +20,7 @@ Source: [🔮ssot_02_character_state_architecture.md](../../../_SSOT/02_CHARACTE
 
 The static character record never changes.
 
-- The 12-Layer Vertical Slice and the Character Astrology natal chart are the canonical identity. The designer produces them once and locks them.
+- The LEECHSEED Vertical Slice and the Character Astrology natal chart are the canonical identity. The designer produces them once and locks them.
 - A needed revision creates a new version with a documented reason. The old version is archived.
 - A state record is an overlay. It lists only the changed values and the reason.
 - Base record plus state diff equals the character at that moment.
@@ -158,7 +158,7 @@ ASTROLOGY_OVERLAY:
 
 The six steps that assemble the character at a given moment:
 
-1. Load the base record (12-Layer Vertical Slice structured data block).
+1. Load the base record (LEECHSEED Vertical Slice structured data block).
 2. Load the state diff for the requested moment.
 3. Apply the diff (the `state_diffs` parent, or the top-level blocks in a v1.0 record). Fields in `MODIFIED_VALUES` replace base values. Absent fields keep the base value.
 4. Apply `MODIFIED_DERIVED`. These replace the base derived statistics.

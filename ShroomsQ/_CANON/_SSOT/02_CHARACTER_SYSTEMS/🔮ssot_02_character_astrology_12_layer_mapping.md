@@ -7,7 +7,7 @@ tier: fabula
 last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
-purpose: "Defines the formal mapping between Character Astrology chart variables and the 12-Layer Character Database. Specifies which astrological data feeds which layers, the translation logic for each feed, and the independence boundaries where the two systems do not overlap."
+purpose: "Defines the formal mapping between Character Astrology chart variables and the LEECHSEED Character System. Specifies which astrological data feeds which layers, the translation logic for each feed, and the independence boundaries where the two systems do not overlap."
 dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_02_character_systems_vertical_slice"]
 ---
 # 🔮 SSOT: Character Astrology ↔ 12-Layer Mapping
@@ -29,7 +29,7 @@ dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai",
 
 ## Purpose
 
-Character Astrology and the 12-Layer Character Database are parallel datasets describing the same character in different notation systems. This document is the formal interface between them. It defines exactly which astrological variables feed which layers, how the translation works, and where the two systems are independent of each other.
+Character Astrology and the LEECHSEED Character System are parallel datasets describing the same character in different notation systems. This document is the formal interface between them. It defines exactly which astrological variables feed which layers, how the translation works, and where the two systems are independent of each other.
 
 Without this mapping, the connection between chart data and layer values is implicit — dependent on the narrative designer's intuition rather than a documented specification. This document eliminates that dependency. When a Vertical Slice assigns a value to L8 IMPRINT, this document tells you which chart elements that value should be consistent with and how to verify the consistency.
 

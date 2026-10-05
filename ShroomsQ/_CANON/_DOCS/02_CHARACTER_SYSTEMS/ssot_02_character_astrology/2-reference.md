@@ -252,11 +252,11 @@ The chain, in order:
 1. Dramatica Ingest Template [LOCKED].
 2. Dramatica-Astrology Interface, DAI translation rules (deliverable 2B).
 3. Character Astrology Ingest Template [LOCKED] (deliverable 2C). It holds the five personal planets, the five structural planets and the four angles. It also holds aspects, house placements, dignities and 12th House contents.
-4. 12-Layer Vertical Slice, which receives L1-L11 through the astrology-to-layer mapping (deliverable 3A).
+4. LEECHSEED Vertical Slice, which receives L1-L11 through the astrology-to-layer mapping (deliverable 3A).
 
 The chart consumes Dramatica and is consumed by the 12-layer system. It does not work independently of either.
 
-## Relationship to the 12-Layer Character Database
+## Relationship to the LEECHSEED Character System
 
 The two systems are parallel datasets in different notations. Neither contains the other. They share Dramatica upstream and connect through the formal mapping (3A).
 
@@ -279,4 +279,4 @@ Specific feeds named in the source:
 
 Not chart-fed: the twelve fields added in schema 2.5.0 and the 3.0.0 additions. Authors set them from the authoritative document. Per-field notes are in the schema-pass table of [ssot_02_character_astrology_12_layer_mapping.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md).
 
-A complete Tier 3 character holds two records in the canonical folder. One is a Character Astrology Ingest Template. The other is a 12-Layer Vertical Slice. Blank form: [astrology ingest template reference](../ssot_02_template_astrology_ingest/2-reference.md).
+A complete Tier 3 character holds two records in the canonical folder. One is a Character Astrology Ingest Template. The other is a LEECHSEED Vertical Slice. Blank form: [astrology ingest template reference](../ssot_02_template_astrology_ingest/2-reference.md).

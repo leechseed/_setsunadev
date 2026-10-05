@@ -1,5 +1,5 @@
 ---
-title: "Character system (12-layer vertical slice): concept"
+title: "Character system (LEECHSEED vertical slice): concept"
 type: concept
 for: "A writer or builder who needs to understand why the character system is built as twelve layers, three tiers and one data block"
 does: "Explains the idea behind the character system: a wound-shaped want revealed under pressure, stored in layers and computed into statistics and flags"
@@ -12,7 +12,7 @@ source_version: 3.3.4
 
 **Who it's for:** a writer or builder asking why the character system is built this way · **What it does:** explains the idea behind twelve layers, three tiers and one data block · **Type:** concept
 
-# Character system (12-layer vertical slice): concept
+# Character system (LEECHSEED vertical slice): concept
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_character_systems_vertical_slice.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md).
 

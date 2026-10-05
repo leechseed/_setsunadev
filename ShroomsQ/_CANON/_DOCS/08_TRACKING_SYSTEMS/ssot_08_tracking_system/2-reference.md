@@ -14,7 +14,7 @@ source_version: 1.1.1
 
 # The tracking system: reference
 
-Front matter facts: trunk BLACK, tier fabula, applies to OVEREXITOUT, ASTRO7EX and LAKAD. Dependencies: ssot_01_scale_ladder, ssot_02_character_state_architecture, ssot_03_setting_system, ssot_04_fabula, ssot_04_plot_system, ssot_09_worldbuilding_system, ssot_01_trope_register. Sources: the BOLO 90 DISTILL file and BVX.0236 (Coyne).
+Front matter facts: trunk BLACK, tier fabula, applies to OVEREXITOUT, ASTRO7EX and LAKAD. Dependencies: ssot_01_scale_ladder, ssot_02_character_state_architecture, ssot_03_setting_system, ssot_04_fabula, ssot_04_plot_system, ssot_05_worldbuilding_system, ssot_01_trope_register. Sources: the BOLO 90 DISTILL file and BVX.0236 (Coyne).
 
 ## 1. What This Is
 

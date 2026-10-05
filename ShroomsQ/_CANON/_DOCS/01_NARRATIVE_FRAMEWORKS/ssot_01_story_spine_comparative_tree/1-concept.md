@@ -42,7 +42,7 @@ The second advantage is that function and perspective are independent. A protago
 
 ## The spine stops at the floor of plot
 
-The spine says what a story is. It does not author events, psychology or presentation. Plot systems author scenes, beats and sequences. The 12-Layer Character Database and Character Astrology flesh out persons. The texture system governs the telling.
+The spine says what a story is. It does not author events, psychology or presentation. Plot systems author scenes, beats and sequences. The LEECHSEED Character System and Character Astrology flesh out persons. The texture system governs the telling.
 
 The spine constrains. It never authors. This boundary lets the spine stay one tree while other systems grow from it.
 

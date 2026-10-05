@@ -291,7 +291,7 @@
 
 ---
 
-## Section 9: 12-Layer Feed Map — REQUIRED
+## Section 9: LEECHSEED Feed Map — REQUIRED
 
 |12-Layer|Chart Element(s) Feeding It|Feed Type|Validation Against Existing Slice|
 |---|---|---|---|
@@ -324,7 +324,7 @@
 - [x] All planets have house assignments
 - [x] Dignity assessment complete for all 10 planets
 - [x] Chart Summary written
-- [x] 12-Layer Feed Map completed — **all 11 fed layers validated CONSISTENT**
+- [x] LEECHSEED Feed Map completed — **all 11 fed layers validated CONSISTENT**
 - [x] Chart validated against authoritative documentation — no contradictions
 - [ ] Template status: **minimum_viable** (Dramatica Ingest not yet locked; full lock pending storyform extraction)
 - [ ] Template placed in canonical folder — **PENDING**

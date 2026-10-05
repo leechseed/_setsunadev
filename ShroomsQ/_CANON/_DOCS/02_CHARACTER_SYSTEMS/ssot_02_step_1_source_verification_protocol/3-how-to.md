@@ -58,7 +58,7 @@ Check wording lives in the [reference](2-reference.md).
 1. No ingest: run the DAI derivation from the locked Dramatica Ingest.
 2. Incomplete chart: add Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant with justifications.
 3. Add at least 3 aspects, each with its Dramatica tension source.
-4. Add houses for the seven planets, the Chart Summary and the 12-Layer Feed Map.
+4. Add houses for the seven planets, the Chart Summary and the LEECHSEED Feed Map.
 5. Point `dramatica_ingest_ref` at the locked Dramatica Ingest.
 6. Re-run Component 3.
 

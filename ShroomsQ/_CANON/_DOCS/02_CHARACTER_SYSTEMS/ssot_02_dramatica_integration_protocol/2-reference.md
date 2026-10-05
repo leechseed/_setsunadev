@@ -30,7 +30,7 @@ The narrative structure engine. It produces the thematic argument and assigns ea
 
 Dramatica does not produce personality, psychology, physicality, sexuality, origin, trauma, shadow content or aesthetic presentation.
 
-- Those belong to the 12-Layer Character Database and Character Astrology.
+- Those belong to the LEECHSEED Character System and Character Astrology.
 - Dramatica does not produce plot. The plot_systems domain authors events, scenes and beats.
 
 ## Storyform Architecture

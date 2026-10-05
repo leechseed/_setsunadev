@@ -6,10 +6,10 @@ last_updated: 2026-02-12
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 purpose: "Defines the mandatory structural payload for all SSOT documents to ensure system-wide interoperability and proper Obsidian Property rendering."
-dependencies: ["[[📐_ssot_05_operations_writing_guide]]"]
+dependencies: ["[[📐_ssot_09_operations_writing_guide]]"]
 ---
 
-# ♨️_template_ssot_05_operations_standard_structure_template
+# ♨️_template_ssot_09_operations_standard_structure_template
 
 ## Table of Contents
 

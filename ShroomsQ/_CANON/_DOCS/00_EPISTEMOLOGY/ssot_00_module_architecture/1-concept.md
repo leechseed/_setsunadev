@@ -16,7 +16,7 @@ source_version: "1.0.1"
 
 ## The 12 layers do not change
 
-The 12-Layer Character Database is a fixed schema. It does not grow. The layers are L1 CORE, L2 VITAL, L3 SOCIAL, L4 WILL, L5 WOUND and L6 DRIVE. The rest are L7 ORIGIN, L8 IMPRINT, L9 EROS, L10 SHADOW, L11 DESTINY and L12 FUNCTION. Together they define the complete character.
+The LEECHSEED Character System is a fixed schema. It does not grow. The layers are L1 CORE, L2 VITAL, L3 SOCIAL, L4 WILL, L5 WOUND and L6 DRIVE. The rest are L7 ORIGIN, L8 IMPRINT, L9 EROS, L10 SHADOW, L11 DESTINY and L12 FUNCTION. Together they define the complete character.
 
 ## New dimensions attach as modules
 

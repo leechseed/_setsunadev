@@ -7,7 +7,7 @@ last_updated: 2026-10-04
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
-purpose: "Defines the Layer-Locked Module system, the plugin/extension architecture for attaching new capability to the 12-Layer Character Database without expanding the core schema. Establishes the module API contract, attachment protocol, data access rules, and the registry format for all current and planned modules."
+purpose: "Defines the Layer-Locked Module system, the plugin/extension architecture for attaching new capability to the LEECHSEED Character System without expanding the core schema. Establishes the module API contract, attachment protocol, data access rules, and the registry format for all current and planned modules."
 dependencies: ["ssot_00_variable_registry", "ssot_00_base_60_number_system", "ssot_02_character_systems_vertical_slice"]
 ---
 # 📐 SSOT: Module Architecture
@@ -30,7 +30,7 @@ dependencies: ["ssot_00_variable_registry", "ssot_00_base_60_number_system", "ss
 
 ## Purpose
 
-The 12-Layer Character Database is a fixed schema. It does not grow. New character dimensions — physical sexuality analysis, walking style taxonomy, music interests, combat archetypes, cultural conditioning profiles — attach as **Layer-Locked Modules** (sub-tables under existing layers) rather than as new layers.
+The LEECHSEED Character System is a fixed schema. It does not grow. New character dimensions — physical sexuality analysis, walking style taxonomy, music interests, combat archetypes, cultural conditioning profiles — attach as **Layer-Locked Modules** (sub-tables under existing layers) rather than as new layers.
 
 This document defines the architecture that makes that possible. It specifies how a module declares itself, which layer it attaches to, what data it can read and write, what format its variables take, and how it integrates with the core system's derived statistics and flag triggers.
 
@@ -52,7 +52,7 @@ The attachment point is not arbitrary. Every module must declare which layer it 
 
 ## What a Module Is
 
-A module is a self-contained extension that adds variables, sub-scales, or analytical frameworks to one or more layers of the 12-Layer Character Database. It has:
+A module is a self-contained extension that adds variables, sub-scales, or analytical frameworks to one or more layers of the LEECHSEED Character System. It has:
 
 - A **module ID** and display name
 - One or more **attachment points** (layer codes it connects to)

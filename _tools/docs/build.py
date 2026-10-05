@@ -43,9 +43,9 @@ TERMS = json.load(io.open(os.path.join(TM, "terms.json"), encoding="utf-8"))
 # the reading order of the systems (Touchstones first: built last, read first)
 SYSTEM_NAMES = {
     "00": "Base", "01": "Narrative frameworks", "02": "Character", "03": "Setting", "04": "Plot",
-    "05": "Operations", "06": "Style", "07": "Theme", "08": "Tracking", "09": "Worldbuilding",
+    "05": "Worldbuilding", "06": "Theme", "07": "Style", "08": "Tracking", "09": "Operations",
 }
-SYSTEM_ORDER = ["00", "02", "04", "07", "03", "01", "08", "09", "06", "05"]
+SYSTEM_ORDER = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09"]   # the numbers ARE the reading order (BOLO 103, 10/5)
 
 
 def read(p):

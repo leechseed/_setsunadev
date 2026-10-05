@@ -6,7 +6,7 @@ tier: [fabula, narratology]
 last_updated: 2026-10-04
 applies_to: [all IPs]
 status: "v1.10.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: build order, premise ripple and derivation chain; faction `fault line` and `drift`; `boundary_kind` and `crossing`; S5 `overwritten_by` and `trace_kept`; S12 `link`; S8 tier `price`; header `real_anchor`. v1.9.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass: faction goal, clock, wound; S4 dials and power mode; S5 record and RUIN_INERT; S11 phase; gauges; canon tier; derivation check; three new flags. v1.8.0 2026-10-04: RULED 9/16, landed 10/4 — BOLO 100 genre cross-doc: the dystopia mechanism written as method (genre OPEN 11). v1.7.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stale marks stripped; DCUS faction-card gaps parked; SETTING FLAGS starter set (six flags) written; scene-card field trial parked; scope set to all IPs; instance labeled worked example. Earlier: canonical — Module 2 of the lattice, delivered on Chief's clear 2026-08-25; layer names RULED 2026-09-29; 1.1.0 2026-09-16: MIND MODELS added (three diagrams) for TM 03; 1.2.0 2026-09-29: synthesis of 42 setting distills linked, proposed changes pending ruling; 1.3.0 2026-09-29: synthesis changes 1, 2, 3, 4, 6, 7, 8, 9 RULED and applied (Chief, \"go on all those recs\"); change 5 benched; change 10 reaffirmed; 1.4.0 2026-09-29: the six OPEN calls RULED as recommended (Chief, \"I'll recommend\"): passageway → S1 seam type · conflict level → S12 reading · fill rule written · tone → S12 sub-note · layer names ruled · 03 placement kept; 1.4.1 2026-09-29: DCUS S2 WEATHER filled + DCUS faction cards (Chief, \"go, all recommendations\"); 1.4.2 2026-09-29: setting state architecture landed (BOLO 90 step 3); 1.5.0 2026-09-29: THE SEQUENCE CARD added, RULED 2026-09-29, Chief: \"line up the recs\" (BOLO 90 step 7 trial)"
-purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the 12-Layer Character Database), the SCENE CARD notation, and the DCUS starter instance as proof."
+purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what setting IS, the 12-layer SETTING SLICE schema (mirror of the LEECHSEED Character System), the SCENE CARD notation, and the DCUS starter instance as proof."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
 sources: [BVX.0458, BVX.0349, BVX.1122, BVX.0193, BVX.0175, BVX.0100, BVX.0399, BVX.0405, BVX.0465, BVX.0504, BVX.0530, BVX.0562, BVX.1137, BVX.1139, BVX.1140, BVX.1141, BVX.1142, BVX.1143, BVX.1144, BVX.1146, BVX.1147, BVX.1151, BVX.1152, BVX.1155, BVX.1156, BVX.1157, BVX.1158, BVX.1159, BVX.1160, BVX.1161, BVX.1162, BVX.1163, BVX.1164, BVX.1165, BVX.1166, BVX.1167, CRE.09, CRE.07, BVX.0480, BVX.1180, BVX.1188, BVX.1182, BVX.1179, BVX.1128, BVX.1170, BVX.0479, CRE.08, PHI.02]
@@ -14,7 +14,7 @@ sources: [BVX.0458, BVX.0349, BVX.1122, BVX.0193, BVX.0175, BVX.0100, BVX.0399, 
 
 # 📐 SSOT: THE SETTING SYSTEM — place at character grade
 
-**What this is:** setting promoted from backdrop to system — built B→A→instance per Chief's ruling: the **taxonomy** (what setting is), the **SETTING SLICE** (a 12-layer schema instanced per place, the architectural twin of the 12-Layer Character Database), the **SCENE CARD** (the notation slot reserved at ladder R2), and **DCUS instanced** as the proof of rig.
+**What this is:** setting promoted from backdrop to system — built B→A→instance per Chief's ruling: the **taxonomy** (what setting is), the **SETTING SLICE** (a 12-layer schema instanced per place, the architectural twin of the LEECHSEED Character System), the **SCENE CARD** (the notation slot reserved at ladder R2), and **DCUS instanced** as the proof of rig.
 
 **Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
@@ -122,7 +122,7 @@ The full state architecture — base slice vs. state diffs, checkpoints and stor
 
 ## PART A · THE SETTING SLICE — twelve layers, mirror of the character stack
 
-Same architecture as the 12-Layer Character Database: surface → depth → structural function, S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest. **Layer names RULED 2026-09-29 as they stand** (Chief, "I'll recommend"; house coinage, held through two waves and 42 distills).
+Same architecture as the LEECHSEED Character System: surface → depth → structural function, S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest. **Layer names RULED 2026-09-29 as they stand** (Chief, "I'll recommend"; house coinage, held through two waves and 42 distills).
 
 | Layer | Name | Holds | Mirrors |
 |---|---|---|---|

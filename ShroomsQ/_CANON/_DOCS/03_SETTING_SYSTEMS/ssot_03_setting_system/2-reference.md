@@ -24,7 +24,7 @@ Three diagrams.
 - **Diagram 2, the pressure field.** Layers S1 to S11 deploy six functions: Anchor, Characterize, Pressure, Mood, Argue, Afford. They meet in one scene (a story address), then feed the collision engine (L-layer × S-layer).
 - **Diagram 3, the setting arc.** Baseline, then a dated state overlay, then place changed. The arc recurs one scale class up. It draws Axis 4, not the fill rule.
 
-Boundaries: structure belongs to Dramatica, psychology to the 12-layer character database, events to plot_systems.
+Boundaries: structure belongs to Dramatica, psychology to the LEECHSEED character system, events to plot_systems.
 
 ## PART B · THE TAXONOMY — four axes
 

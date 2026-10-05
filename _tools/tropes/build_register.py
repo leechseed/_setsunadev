@@ -36,7 +36,7 @@ ORDER = {"character": [f"L{i}" for i in range(1, 13)], "sexuality": [f"L{i}" for
          # ssot_08 parts · style keys to the two 06 guides that carry look and language
          "texture": [f"T{i}" for i in range(1, 13)],
          "tracking": ["world_clock", "told_order", "grid", "story_point", "cable", "tempo"],
-         "style": ["06.1", "06.3"]}
+         "style": ["07.1", "07.3"]}
 by = defaultdict(list)
 for s, r in reg.items():
     for d, k in r["keys"].items():

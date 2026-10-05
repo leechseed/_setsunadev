@@ -7,7 +7,7 @@ last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, all future IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: undefined-trope rule written; OPEN list closed. Earlier: RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
 purpose: "THE TROPE REGISTER: one trope layer under every system. 8,700 TV Tropes tropes, each tagged with the domains it serves and keyed to a layer of that domain's slice, so any layer can pull its tropes."
-dependencies: ["ssot_04_trope_graph (the plot consumer)", "ssot_02_character_systems_vertical_slice", "ssot_03_setting_system", "ssot_01_genre_system", "ssot_07_theme_system"]
+dependencies: ["ssot_04_trope_graph (the plot consumer)", "ssot_02_character_systems_vertical_slice", "ssot_03_setting_system", "ssot_01_genre_system", "ssot_06_theme_system"]
 trunk: BLACK
 sources: ["_tools/tropes/fetch.py --domains", "_tools/bolostatus/work/89/keys.batch01–16.json", "_tools/tropes/build_register.py"]
 ---
@@ -34,7 +34,7 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 
 **Undefined tropes (RULED 2026-10-04):** a trope with no one-line definition keys by its title and its domain tags. The record carries `def: undefined`. No run is needed to fill it.
 
-**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md), or null. **Added 0.4.0 (wave A, ruled 9/29 "all recs"):** texture → T1–T12 of the [texture system](📐%20ssot_01_texture_system.md) · tracking → the parts of the [tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo.
+**The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or null. **Added 0.4.0 (wave A, ruled 9/29 "all recs"):** texture → T1–T12 of the [texture system](📐%20ssot_01_texture_system.md) · tracking → the parts of the [tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo.
 
 ## THE COUNTS (2026-10-03, v0.5.0)
 
@@ -49,7 +49,7 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 | **theme** (the nine thematic indexes + wave B: Love · Power · Emotion · Identity) | R1 448 · **R2 853** · R3 409 · R4 460 · null 1,182 |
 | **texture** (Narrative Devices · Framing Device · Narrative Tropes · Point of View) | T1 44 · T2 51 · T3 68 · T4 35 · T5 17 · T6 38 · T7 36 · T8 28 · T9 41 · T10 9 · T11 19 · T12 14 · null 344 |
 | **tracking** (Time Tropes) | world_clock 51 · grid 43 · tempo 7 · told_order 4 · null 11 |
-| **style** (wave B: Language · Costume · Graphical · Lighting · Amazing Technicolor) | 06.1 PROSE 264 · **06.3 PAGES 404** · null 164 |
+| **style** (wave B: Language · Costume · Graphical · Lighting · Amazing Technicolor) | 07.1 PROSE 264 · **07.3 PAGES 404** · null 164 |
 
 **The pull list:** [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) lists every layer with every trope keyed to it.
 
@@ -91,7 +91,7 @@ No character is changed by this ruling — it names a pattern, not a fix.
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): purpose line says 8,700 tropes; skew section recomputed from the counts table.
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Undefined-trope rule written: no definition means key by title and domain tags, flagged `undefined`. OPEN list closed; consumer TROPES sections parked as `⏸ TROPES pointer sections (phase 2)`.
 
-- **0.5.0 — 2026-10-03.** Wave B keyed: 2,175 keys on 9 PS batches (B1–B9) — theme 1,013 (Love · Power · Emotion · Identity) · style 831 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 06.1 PROSE / 06.3 PAGES) · plus 351 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.
+- **0.5.0 — 2026-10-03.** Wave B keyed: 2,175 keys on 9 PS batches (B1–B9) — theme 1,013 (Love · Power · Emotion · Identity) · style 831 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 07.1 PROSE / 07.3 PAGES) · plus 351 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.
 
 - **0.4.0 — 2026-10-03.** Wave A keyed: 2,122 tropes (texture 641 · tracking 111 · setting 1,412, some multi-domain) on 12 batches (A1–A12) by PS; RANGE caught a broken file, two misspelled slugs and five illegal keys → 0. **The default-dump caught at the fan-in:** the first pass put 797 setting tropes on S1 and 336 texture tropes on T7; a re-key on six batches (AR1–AR6) with sharper rules brought S1 to 366 overall and T7 to 25, and a third pass on the 281 texture nulls (AT1) confirmed most are plot content the Narrative Tropes index carries, not the telling (texture null 318). Keys for texture and tracking added to `work/89/keys.md`; `range.py` and `build_register.py` learn them.
 

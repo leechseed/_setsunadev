@@ -161,7 +161,7 @@ The Character Astrology Ingest Template captures the natal chart derived from th
 
 **Check 3.6: Chart Summary (Section 8) is written.** The 6-10 sentence prose summary exists.
 
-**Check 3.7: 12-Layer Feed Map (Section 9) is completed.** The table connecting chart elements to layer targets is filled in.
+**Check 3.7: LEECHSEED Feed Map (Section 9) is completed.** The table connecting chart elements to layer targets is filled in.
 
 **Check 3.8: Template status is `locked` or `minimum_viable`.** Either status passes the gate. Full chart completion is not required.
 

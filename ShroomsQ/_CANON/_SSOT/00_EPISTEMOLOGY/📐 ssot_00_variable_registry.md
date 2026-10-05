@@ -105,9 +105,9 @@ All variables follow this path structure:
 |---|---|---|
 |Setting (03)|[📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)|The S1 to S12 layer fields, including S12 FUNCTION.|
 |Plot (04)|[📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)|The P1 to P12 layer fields, including P12 FUNCTION. The fabula owns the event ids.|
-|Theme (07)|[📐 ssot_07_theme_system.md](../07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md)|The theme fields and the argument record.|
+|Theme (07)|[📐 ssot_06_theme_system.md](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md)|The theme fields and the argument record.|
 |Tracking (08)|[📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|Time codes and story points.|
-|Worldbuilding (09)|[📐 ssot_09_worldbuilding_system.md](../09_WORLDBUILDING_SYSTEMS/📐%20ssot_09_worldbuilding_system.md)|The worldbuilding fields.|
+|Worldbuilding (09)|[📐 ssot_05_worldbuilding_system.md](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md)|The worldbuilding fields.|
 
 L12 FUNCTION is fed from the storyform. Its field list lives in the [Dramatica integration protocol](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), and this registry mirrors it.
 

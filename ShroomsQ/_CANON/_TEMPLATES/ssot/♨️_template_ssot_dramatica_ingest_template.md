@@ -255,7 +255,7 @@ _(Add rows as needed)_
 
 ## Section 10: L12 Core Block (Auto-Generated)
 
-This section is populated automatically from the data above. It represents the variables that enter the L12 FUNCTION core in the 12-Layer Vertical Slice.
+This section is populated automatically from the data above. It represents the variables that enter the L12 FUNCTION core in the LEECHSEED Vertical Slice.
 
 ```
 L12_FUNCTION:

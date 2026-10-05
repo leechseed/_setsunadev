@@ -73,9 +73,9 @@ Each system owns its fields in its own doc. The registry holds the character fie
 |---|---|---|
 | Setting (03) | `ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md` | S1 to S12 layer fields, including S12 FUNCTION |
 | Plot (04) | `04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md` and `📐 ssot_04_fabula.md` | P1 to P12 layer fields, including P12 FUNCTION. The fabula owns event ids. |
-| Theme (07) | `07_THEME_SYSTEMS/📐 ssot_07_theme_system.md` | Theme fields and the argument record |
+| Theme (07) | `06_THEME_SYSTEMS/📐 ssot_06_theme_system.md` | Theme fields and the argument record |
 | Tracking (08) | `08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md` | Time codes and story points |
-| Worldbuilding (09) | `09_WORLDBUILDING_SYSTEMS/📐 ssot_09_worldbuilding_system.md` | Worldbuilding fields |
+| Worldbuilding (09) | `05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md` | Worldbuilding fields |
 
 L12 FUNCTION is fed from the storyform. Its field list lives in `02_CHARACTER_SYSTEMS/🔮 ssot_02_dramatica_integration_protocol.md`. This registry mirrors it.
 

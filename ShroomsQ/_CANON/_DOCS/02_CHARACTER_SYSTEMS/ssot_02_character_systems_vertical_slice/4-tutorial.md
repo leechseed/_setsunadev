@@ -1,5 +1,5 @@
 ---
-title: "Character system (12-layer vertical slice): tutorial"
+title: "Character system (LEECHSEED vertical slice): tutorial"
 type: tutorial
 for: "A newcomer who has never computed a character's statistics and flags"
 does: "Walks one learner through Victoria Midnight's slice from layer values to statistics, flags and the data block"
@@ -12,7 +12,7 @@ source_version: 3.3.4
 
 **Who it's for:** a newcomer who has never computed a slice · **What it does:** one guided pass through Victoria Midnight's statistics and flags · **Type:** tutorial
 
-# Character system (12-layer vertical slice): tutorial
+# Character system (LEECHSEED vertical slice): tutorial
 
 You will take Victoria Midnight's locked layer values and compute her seven statistics. You will test her five flags and spot one open item. Every number comes from the source. Lookups are in the [reference](2-reference.md).
 

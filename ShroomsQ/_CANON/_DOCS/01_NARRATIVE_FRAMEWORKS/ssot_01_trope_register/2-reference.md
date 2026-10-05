@@ -16,7 +16,7 @@ source_version: 1.0.1
 
 Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md), version 1.0.0, trunk BLACK. Chief RULED it 2026-10-04 ("rec", BOLO 100 registers batch 1). Earlier ruling: 2026-09-29, BOLO 89. Applies to OVEREXITOUT and all future IPs. Why it exists: [concept](1-concept.md).
 
-**Dependencies:** `ssot_04_trope_graph` (the plot consumer), `ssot_02_character_systems_vertical_slice`, `ssot_03_setting_system`, `ssot_01_genre_system`, `ssot_07_theme_system`. **Sources:** `_tools/tropes/fetch.py --domains`, `_tools/bolostatus/work/89/keys.batch01–16.json`, `_tools/tropes/build_register.py`.
+**Dependencies:** `ssot_04_trope_graph` (the plot consumer), `ssot_02_character_systems_vertical_slice`, `ssot_03_setting_system`, `ssot_01_genre_system`, `ssot_06_theme_system`. **Sources:** `_tools/tropes/fetch.py --domains`, `_tools/bolostatus/work/89/keys.batch01–16.json`, `_tools/tropes/build_register.py`.
 
 **Root claim.** A trope is a reusable pattern a layer can draw on. The register is the trope layer for every system. The plot [trope graph](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_trope_graph.md) keys 1,034 Plot-index tropes onto 135 plot nodes. The register keys the other indexes to each domain's own twelve-layer slice.
 
@@ -44,7 +44,7 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 | setting | S1 to S12 |
 | genre | G1 to G12 |
 | sexuality | the character layers (mostly L9 EROS) |
-| theme | the four rails R1 to R4 of the [theme system](../../../_SSOT/07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md), or null |
+| theme | the four rails R1 to R4 of the [theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or null |
 | texture (added 0.4.0, ruled 9/29) | T1 to T12 of the [texture system](../ssot_01_texture_system/2-reference.md) |
 | tracking (added 0.4.0) | the parts of the [tracking system](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo |
 
@@ -61,7 +61,7 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 | theme (nine thematic indexes plus wave B: Love · Power · Emotion · Identity) | R1 448 · R2 853 · R3 409 · R4 460 · null 1,182 |
 | texture (Narrative Devices · Framing Device · Narrative Tropes · Point of View) | T1 44 · T2 51 · T3 68 · T4 35 · T5 17 · T6 38 · T7 36 · T8 28 · T9 41 · T10 9 · T11 19 · T12 14 · null 344 |
 | tracking (Time Tropes) | world_clock 51 · grid 43 · tempo 7 · told_order 4 · null 11 |
-| style (wave B: Language · Costume · Graphical · Lighting · Amazing Technicolor) | 06.1 PROSE 264 · 06.3 PAGES 404 · null 164 |
+| style (wave B: Language · Costume · Graphical · Lighting · Amazing Technicolor) | 07.1 PROSE 264 · 07.3 PAGES 404 · null 164 |
 
 **The pull list.** [LAYERS.md](../../../../../_tools/tropes/data/domains/LAYERS.md) lists every layer with every trope keyed to it.
 

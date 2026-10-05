@@ -129,7 +129,7 @@ Six to ten sentences, plain words. Say what the chart says about this character 
 
 ---
 
-## 9. 12-Layer Feed Map
+## 9. LEECHSEED Feed Map
 
 Fill this in against the [mapping doc](🔮ssot_02_character_astrology_12_layer_mapping.md). The chart justifies a layer value. It never sets one. Fields added in schema 2.5.0 and 3.0.0 are not chart-fed (see the mapping doc's schema-pass table).
 

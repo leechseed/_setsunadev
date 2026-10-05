@@ -30,7 +30,7 @@ dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_character_as
 
 ## Purpose
 
-Characters change over the course of a story. Layer values shift. Flags fire. Wounds deepen or partially heal. Relationships form and collapse. The 12-Layer Vertical Slice captures the character at the point of canonical definition — but the story demands that we track who the character is at Movement 1A, at the moment of the crash, at the Ban, at collapse.
+Characters change over the course of a story. Layer values shift. Flags fire. Wounds deepen or partially heal. Relationships form and collapse. The LEECHSEED Vertical Slice captures the character at the point of canonical definition — but the story demands that we track who the character is at Movement 1A, at the moment of the crash, at the Ban, at collapse.
 
 This document defines how to track that change without modifying the static core record. The architecture is: one immutable base record per character, plus any number of state diffs keyed to narrative time coordinates. The base record is the birth certificate. The state diffs are the medical history.
 
@@ -40,7 +40,7 @@ This document defines how to track that change without modifying the static core
 
 **The static character record never changes.**
 
-The 12-Layer Vertical Slice and the Character Astrology natal chart represent the character's canonical identity — who they ARE. This record is produced once, locked, and placed in the character's canonical folder. It is never edited during story development. If the record needs revision, a new version is created with a documented reason, and the old version is archived.
+The LEECHSEED Vertical Slice and the Character Astrology natal chart represent the character's canonical identity — who they ARE. This record is produced once, locked, and placed in the character's canonical folder. It is never edited during story development. If the record needs revision, a new version is created with a documented reason, and the old version is archived.
 
 **Character states are overlays.** A state record describes what is different about the character at a specific narrative moment compared to their base record. It does not duplicate the base record. It lists only the values that have changed and the reason for the change.
 
@@ -206,7 +206,7 @@ A checkpoint is heavy: it re-derives every value, every derived statistic, every
 
 To assemble the complete character at a given moment:
 
-**Step 1:** Load the base record (12-Layer Vertical Slice structured data block).
+**Step 1:** Load the base record (LEECHSEED Vertical Slice structured data block).
 
 **Step 2:** Load the state diff for the requested narrative moment.
 

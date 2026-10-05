@@ -16,7 +16,7 @@ source_version: 1.1.0
 
 ## Two notations describe one character
 
-Character Astrology and the 12-Layer Character Database are parallel datasets. They describe the same character in different notation systems. This document is the formal interface between them.
+Character Astrology and the LEECHSEED Character System are parallel datasets. They describe the same character in different notation systems. This document is the formal interface between them.
 
 Without it, the link between chart and layers lives in the designer's intuition. With it, the link is written down. When the designer assigns a value to L8 IMPRINT, the document says which chart elements the value must agree with. It also says how to verify it.
 

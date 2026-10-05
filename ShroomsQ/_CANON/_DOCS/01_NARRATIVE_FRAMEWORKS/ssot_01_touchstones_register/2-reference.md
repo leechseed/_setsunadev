@@ -98,11 +98,11 @@ The ten systems, one line each.
 | 02 Character | [character system](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) | carries a Touchstone at L12 |
 | 03 Setting | [setting system](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) | carries Touchstones on the scene card |
 | 04 Plot | [plot system](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) | tells the argument in time |
-| 05 Operations | [standards ladder](../../../_SSOT/05_OPERATIONS/📐%20ssot_05_operations_standards_ladder.md) | sets the rung of every document |
-| 06 Style guides | [prose style guide](../../../_SSOT/06_STYLE_GUIDES/📐%20ssot_06_1_prose_style.md) | cites TS 1:1 |
-| 07 Theme | [theme system](../../../_SSOT/07_THEME_SYSTEMS/📐%20ssot_07_theme_system.md) | argues; Touchstones hold |
+| 05 Operations | [standards ladder](../../../_SSOT/09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) | sets the rung of every document |
+| 06 Style guides | [prose style guide](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) | cites TS 1:1 |
+| 07 Theme | [theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) | argues; Touchstones hold |
 | 08 Tracking | [tracking system](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) | tracks state |
-| 09 Worldbuilding | [worldbuilding system](../../../_SSOT/09_WORLDBUILDING_SYSTEMS/📐%20ssot_09_worldbuilding_system.md) | holds the shared world |
+| 09 Worldbuilding | [worldbuilding system](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) | holds the shared world |
 
 **Sources and shelf.** Nothing in the register is new canon. The rules about rules: [DOCTRINE 0](../../../../../DOCTRINE-0-INVARIANTS.md), ratified 2026-09-03, seven rules; the file keeps its name. The 9/24 distill: [DISTILL.md](../../../../../_tools/bolostatus/work/81/DISTILL.md) (22 invariants in canon, 5 contradictions). The old reference shelf: [NNI-INDEX.md](../../../../../_tools/bolostatus/work/81/NNI-INDEX.md). It holds 47 works, 188 invariants, and three pushbacks quoted in full. Live wires: the scale ladder's completion tests, the collision engine's L12 × S12 row, character L12 `touchstone`. Also setting S12 and the scene cards' `touchstones:` field.
 
