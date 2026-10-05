@@ -131,8 +131,8 @@ Completed BOLOs get a dated strike-through, then move to the bottom under **Done
 | Item | Status | Next action |
 |---|---|---|
 | **PCP — establish care + physical** | 🟢 **BOOKED 9/17** — date and provider in the private file · **BOLO 60** | **Prep the visit** (boresight delivered 9/17, `_PRIVATE/PMCS-CONTACTS.md` §PCP carries the prep sheet). Provider + number stay in the private file (the repo is public). The physical is the gate; the sexual-health chain sequences after it: PrEP · DoxyPEP · site-specific panel · anal Pap · pelvic-floor PT referral — ask which are in this slot and book the second visit before leaving |
-| **Pelvic-floor PT** | ⬜ gated | Referral comes out of the PCP consult above |
-| **Fitness + diet — lift 5×5 again, a good diet** (spoken 10/4: "physical health is probably the most important thing … to really fulfill BoldVenture") | 🟡 **opened 10/4** | Raise at the PCP visit 10/5 (lithium + heavy sweating, Adderall + appetite, dietitian referral) → join the gym → StrongLifts 5×5 from the empty bar |
+| **Pelvic-floor PT** | ⬛ **dropped 10/4** (Chief: "I don't really need that") | — |
+| **Fitness + diet — lift 5×5 again, a good diet** (spoken 10/4: "physical health is probably the most important thing … to really fulfill BoldVenture") | 🟡 **opened 10/4** | Raise at the PCP visit 10/5 (lithium + heavy sweating, Adderall + appetite, **dietitian / nutritionist referral, a must-do**) → join the gym → StrongLifts 5×5 from the empty bar |
 | **Employment** — the Amazon job did not work out | 🔴 **unemployed as of 9/3** | The zero-budget ORANGE launch = **BOLO 24**. **The Amazon applications = BOLO 83** (captured 9/24). Runway · claim · backstop lines not yet spoken — capture when they are |
 
 ## Done
