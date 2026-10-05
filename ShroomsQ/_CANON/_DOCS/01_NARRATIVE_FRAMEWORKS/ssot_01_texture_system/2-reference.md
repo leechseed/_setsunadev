@@ -103,7 +103,7 @@ No new card. The TELLING PROFILE from the layer doc is the slice's instance form
 | T10 aimed at | narratee construction |
 | T11 medium | channel and grammar overrides |
 | T12 function | story point discharged · `storyform_id` |
-| `gap` | `t1_t2_gap: none | flagged (note)` |
+| `gap` | `t1_t2_gap`: none, or flagged with a note |
 
 **The `telling:` line** is the per-unit override. Its content stays lean:
 

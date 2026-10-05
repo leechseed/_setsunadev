@@ -158,7 +158,7 @@ Each level has branches and a starter shelf. Doctrine: a branch that outgrows it
 - **Branches:** the eight switches · the ending matrix · the arc-taxonomy translation.
 - **Shelf:** 0071/0072 (Weiland arcs) · 0127 (Yorke). House: storyform §1.
 
-### L4 · Plot — the richest branch; next domain candidate (plot_systems, 04)
+### L4 · Plot — the richest branch; next domain candidate (plotsystems, 04)
 
 - **Branches:** static appreciations · signposts and journeys · drivers and act turns · act theory (3/4/5-act) · sequence method · scene grammar · beat mechanics · the Movement↔Signpost mapping (standing flag) · plot templates as instances · pacing of events (T4's story-side twin).
 - **Shelf:** 0175 · 0236 · 0154 · 0226 · 0274 · 0238 · 0188 · 0092 · 0228 · 0163/0164 · 0127 · 0105 · 0244. House: plot_sequence.TXT · story_engine_settings.TXT · the Six Movements sources · Character Astrology Cat 10 and Cat 13.

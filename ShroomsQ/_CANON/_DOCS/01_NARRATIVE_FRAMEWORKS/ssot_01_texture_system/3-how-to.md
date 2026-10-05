@@ -51,9 +51,10 @@ Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/
 ## Run the pause test
 
 1. Find a scene marked Pause in T4.
-2. Check delimitation: does the description have a clear start and end?
-3. Check motivation: does a perceiver or a purpose justify it?
-4. Check rhetorical binding: does it tie to the story's argument?
+2. Check delimitation.
+3. Check motivation.
+4. Check rhetorical binding.
+5. Take the test's definitions from Bal (BVX.0596). The source names the three checks and does not define them.
 
 ## Measure distance with barrier words
 
