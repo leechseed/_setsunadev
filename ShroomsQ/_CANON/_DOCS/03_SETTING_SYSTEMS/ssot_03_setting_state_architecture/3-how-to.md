@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md
-source_version: 1.2.0
+source_version: 1.3.0
 ---
 
 **Who it's for:** a writer recording a place's change · **What it does:** steps for state-architecture tasks · **Type:** how-to
@@ -27,12 +27,13 @@ Field meanings are in the [reference](2-reference.md).
 
 1. Write `place_id` and a unique `state_id`.
 2. Write `origin_event`: the fabula `event_id`. If none exists, write the `backstory_<slug>` id plus `⏸ <pass name> (phase 2)`. Never leave it blank or invent canon.
-3. Write `told_at` as a list of time codes. Use `[]` if the state is true but offstage.
-4. Set `movement`. Use `backstory` for deep past with no Mn.
-5. Write `state_version` and `base_slice_version`.
-6. Add the `state_diffs:` parent with `MODIFIED_LAYERS`, `MODIFIED_HEADER` and `MODIFIED_FLAGS`.
-7. List only layers that differ from the base.
-8. Write a `STATE_NOTE` of 2 to 5 sentences.
+3. Read the event's `source_kind:` to see which S-layers it touches.
+4. Write `told_at` as a list of time codes. Use `[]` if the state is true but offstage.
+5. Set `movement`. Use `backstory` for deep past with no Mn.
+6. Write `state_version` and `base_slice_version`.
+7. Add the `state_diffs:` parent with `MODIFIED_LAYERS`, `MODIFIED_HEADER` and `MODIFIED_FLAGS`.
+8. List only layers that differ from the base.
+9. Write a `STATE_NOTE` of 2 to 5 sentences.
 
 ## Record a rename
 
@@ -79,6 +80,7 @@ flowchart TD
 1. Read each flag trigger in the setting-system SETTING FLAGS list.
 2. Test it against the modified values.
 3. List in `MODIFIED_FLAGS` only the flags whose state changed here.
+4. For LEDGER_DUE, read the future state from the fabula event's `scheduled:` field. It carries the 08 time code.
 
 ## Change a faction card over time
 

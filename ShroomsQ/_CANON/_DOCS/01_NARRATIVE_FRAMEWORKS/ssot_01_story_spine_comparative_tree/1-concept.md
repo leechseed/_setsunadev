@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md
-source_version: 1.0.3
+source_version: 1.1.0
 ---
 
 **Who it's for:** a designer building an IP · **What it does:** explains why one tree answers "what is a story" · **Type:** concept

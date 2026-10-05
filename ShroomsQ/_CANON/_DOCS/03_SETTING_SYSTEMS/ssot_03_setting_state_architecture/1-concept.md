@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md
-source_version: 1.2.0
+source_version: 1.3.0
 ---
 
 **Who it's for:** a writer or Chief asking how a place changes over a story · **What it does:** explains base slice plus state diffs · **Type:** concept

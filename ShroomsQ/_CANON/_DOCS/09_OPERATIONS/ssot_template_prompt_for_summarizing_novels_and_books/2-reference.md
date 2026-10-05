@@ -32,7 +32,7 @@ flowchart TD
   R --> G["Usage rules"]
 ```
 
-The source has type `ssot_09_operations`, version 1.0.0, tier operations, last updated 2026-03-03. Status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0"). The body header names it a Single Source of Truth with scope "Novel & Book Summarization — All Formats," derived from batch extraction. The extraction ran across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
+The source has type `ssot_09_operations`, version 1.1.0, tier operations, last updated 2026-10-05. Status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0"). The body header names it a Single Source of Truth with scope "Novel & Book Summarization — All Formats," derived from batch extraction. The extraction ran across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
 
 ## 1. Purpose & Scope
 
@@ -62,7 +62,7 @@ The writer appends any add-on to the Universal System Prompt depending on the ty
 
 ### 3A. Narratological Deep Dive
 
-Use for narratology theory, literary criticism, or composition craft books (the source names Bal, McKee, Eagleton, Cron, Gavins). For each concept, model, or framework the summarizer gives a short definition (1-2 sentences). It also gives an explanation of mechanics and internal logic. It adds its relevance to a writer, and the lineage if the author builds on prior theorists. Each model uses the format: `### Title: **[Author's] [Framework/Model Name]**` with Definition, Explanation, Relevance to Writer, and Lineage.
+Use for narratology theory, literary criticism, or composition craft books (the source names Bal, McKee, Eagleton, Cron, Gavins). For each concept, model, or framework the summarizer gives a short definition (1-2 sentences). It also gives an explanation of mechanics and internal logic. It adds its relevance to a writer, and the lineage if the author builds on prior theorists. Each model uses the format: `### Title: **[Author's] [Framework/Model Name]**` with Definition, Explanation, Relevance to Writer, and Lineage. The writer files each model as one distill on the 01 narratology shelf (`ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/`), under `frameworks/Tier N/<CODE> <Competency>/`. The writer then adds the model's row to the shelf's `UID_index.md` (IF-01-09-05; IF catalog call 9, ruled 2026-10-05).
 
 ### 3B. Dramatica Framework Extension
 

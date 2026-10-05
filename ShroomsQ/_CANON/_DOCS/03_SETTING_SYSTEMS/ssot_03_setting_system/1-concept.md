@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.10.2
+source_version: 1.11.0
 ---
 
 **Who it's for:** a writer or Chief learning why place is a system · **What it does:** explains the idea behind the setting system · **Type:** concept

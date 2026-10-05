@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.10.2
+source_version: 1.11.0
 ---
 
 **Who it's for:** a writer building or editing a place · **What it does:** steps for the setting system's tasks · **Type:** how-to
@@ -46,6 +46,7 @@ Field definitions are in the [reference](2-reference.md).
 3. Add `contradiction`, `salient surplus` and the `touchstone` set.
 4. Add `link` if a ruler or protagonist is tied to the place.
 5. Put in only what a scene has narrated.
+6. Know that P12 `domain_ref` reads this Domain for each plot unit set at the place.
 
 ## Pin a scene with the SCENE CARD
 
@@ -55,6 +56,9 @@ Field definitions are in the [reference](2-reference.md).
 4. Write the commandments, the value turn and the collision row.
 5. Write the exit state. It feeds the next card.
 6. If the scene crosses a seam, fill `crossing` and note which rules change.
+7. Fill the theme record: `rail_tested` (R1 to R4), `side_argued` and `gauge` (name and step), beside `citation` and `transcript`.
+8. Name `focal`: one character id.
+9. Answer `fantasy`, `sexy` and `aesthetic` in one breath each.
 
 ## Pin a run of scenes with the SEQUENCE CARD
 
@@ -85,7 +89,8 @@ Field definitions are in the [reference](2-reference.md).
 1. Open the place record after any state diff.
 2. Check each flag's trigger against the named fields.
 3. Act on each active flag as its signal says. For example, add the cause for RUIN_INERT, or cut the entry.
-4. Add a story-specific flag to the instance file if the story needs one.
+4. Hand off two flags. UNDERSIDE_SURFACING gives the plot card P7 `reveal_content` and `reveal_type`. LEDGER_DUE gives the fabula event `scheduled:` the future state's 08 time code.
+5. Add a story-specific flag to the instance file if the story needs one.
 
 ## Handle a contradiction in canon
 

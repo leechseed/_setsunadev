@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md
-source_version: 1.2.0
+source_version: 1.3.0
 ---
 
 **Who it's for:** a new writer learning place state · **What it does:** one worked checkpoint, then a query · **Type:** tutorial

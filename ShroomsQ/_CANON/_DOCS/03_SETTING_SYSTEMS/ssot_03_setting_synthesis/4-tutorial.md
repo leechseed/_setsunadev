@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a new writer learning the synthesis · **What it does:** one worked fold, start to finish · **Type:** tutorial

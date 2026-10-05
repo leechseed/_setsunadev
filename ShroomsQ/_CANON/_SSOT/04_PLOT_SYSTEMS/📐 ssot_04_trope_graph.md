@@ -114,7 +114,7 @@ Tobias and Schmidt are whole-plot or whole-situation inventories, so MS-N ruled 
 
 ## THE TROPES
 
-**One key store (IF catalog call 10, ruled 2026-10-05; IF-01-04-22).** The trope register's `register.json` is the one key store for every trope key, and this graph reads it. The graph keeps no key file of its own. A trope's `node`, `alt` and `conf` are read from the register's record for that `slug`, beside the setting keys S1 to S12 on the same record. One TV Tropes fetch therefore has one record, not two.
+**One key store (IF catalog call 10, ruled 2026-10-05; IF-01-04-22).** The trope register's `register.json` is the one key store for every trope key. This graph reads it and keeps no key file of its own. A trope's `node`, `alt` and `conf` sit on the register's record for that `slug`. The setting keys S1 to S12 sit on the same record. One TV Tropes fetch therefore has one record, not two.
 
 **How keyed:** eight Payload Specialist batches read the 1,678 fetched TV Tropes entries against the 135 nodes and wrote a keying decision per trope — `node` (the best-fit node id, or `null`), `alt` (a second plausible node, or `null`), and `conf` (`high`, `medium`, or `low`). Every batch was RANGE-checked before the join. `build_graph.py` then joined those keys against the fetched index definitions and the node list.
 

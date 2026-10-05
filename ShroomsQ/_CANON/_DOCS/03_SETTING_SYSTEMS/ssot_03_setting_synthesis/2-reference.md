@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or maintainer looking up a finding · **What it does:** lists each synthesis part and its entries · **Type:** reference
 
 # Setting synthesis: reference
 
-Frontmatter facts: category `setting_system`, tier `fabula`, `module_of: ssot_03_setting_system`, `feeds: ssot_03_setting_system (TM 03)`, `applies_to: [all IPs]`, last updated 2026-10-04. The host system is [ssot_03_setting_system](../ssot_03_setting_system/2-reference.md).
+Frontmatter facts: category `setting_system`, tier `fabula`, `module_of: ssot_03_setting_system`, `feeds: ssot_03_setting_system (TM 03)`, `applies_to: [all IPs]`, last updated 2026-10-05. The host system is [ssot_03_setting_system](../ssot_03_setting_system/2-reference.md).
 
 *The structure: the five parts in order, from the per-layer register to the contradictions the wave left open.*
 
@@ -73,7 +73,7 @@ Ten changes. Chief ruled on 2026-09-29 ("go on all those recs"). Applied in ssot
 | 5 | Tone-to-mechanic conversion. | Benched, then ruled into an S12 sub-note in v1.4.0 |
 | 6 | Make the TAW/TRW discipline S12's binding-clause working rule. | Applied v1.3.0 |
 | 7 | Upgrade S10 from public and personal to public, folk, secret. | Applied v1.3.0 |
-| 8 | Adopt Ryan's nine-axis scoring as the primary L7 genre-contract tool. Baur's five lineages stay as shorthand. | Applied v1.3.0, in SETTING × LIBRARY |
+| 8 | Adopt Ryan's nine-axis scoring as the primary L7 genre-contract tool. Baur's five lineages stay as shorthand. | Applied v1.3.0, in SETTING × LIBRARY. Shared with 01 by IF catalog call 10 (ruled 2026-10-05) |
 | 9 | Add an optional forward-ledger sub-field to S11 VECTOR. | Applied v1.3.0 |
 | 10 | Do not chase full S1 to S11 completeness. | Reaffirmed, no structural change |
 
@@ -99,11 +99,11 @@ Five contradictions, each with a lean.
 - **Top-down versus location-first.** Lean: pick a direction and commit. DCUS is already location-first.
 - **Completeness versus risk.** Lean: keep thin-by-default as ruled.
 - **Gated history versus printed timelines.** Not truly opposed, since printed timelines keep only entries that still bite. Lean: immersive for DCUS, with one portal-style beat per movement.
-- **Which genre-contract tool is primary.** Lean: Ryan's nine axes, which state they supersede the five-lineage tool.
+- **Which genre-contract tool is primary.** Lean: Ryan's nine axes, which state they supersede the five-lineage tool. Settled 2026-10-05 (IF catalog call 10): Ryan's scoring is the tool for 03 and 01 both, and Baur stays as lineage.
 - **How much a faction card holds.** Lean: the stub (founding sentence, principle, one secret). Use it for places the story does not center. Use the full eight-field block only for the Administration, the Bishops and the Sync Cult.
 
 > **OPEN:** the source gives no field list for the full eight-field faction block beyond the six fields in change 1.
 
 ## Version history
 
-Three entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0). The second is 0.2.0 (2026-09-29, ruled "go on all those recs"). The third is 1.0.0 (2026-10-04, ruled "REC", BOLO 100 setting batch 1). It was stamped `module_of`, with scope set to all IPs.
+The newest entry is 1.1.0 (2026-10-05, BOLO 102 stage 2, Chief "My word": IF catalog call 10, Ryan's scoring is the genre-contract tool for 03 and 01 both). Three earlier entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0). The second is 0.2.0 (2026-09-29, ruled "go on all those recs"). The third is 1.0.0 (2026-10-04, ruled "REC", BOLO 100 setting batch 1). It was stamped `module_of`, with scope set to all IPs.

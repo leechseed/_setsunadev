@@ -26,7 +26,7 @@ source_version: 1.0.0
 
 ## Choose an add-on
 
-1. For narratology, criticism, or craft books, use 3A.
+1. For narratology, criticism, or craft books, use 3A. File each extracted model as one distill on the 01 narratology shelf (`_narratology_shelf/frameworks/Tier N/<CODE> <Competency>/`), and add its row to `UID_index.md`.
 2. For summaries that feed Dramatica work, use 3B.
 3. For output that goes straight into Obsidian, Hugo, or a similar system, use 3C.
 4. For a single-author theoretical work where you want the author's models, use 3D.

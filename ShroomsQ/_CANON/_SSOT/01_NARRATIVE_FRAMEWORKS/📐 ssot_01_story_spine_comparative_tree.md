@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_spine
-version: 1.0.3
+version: 1.1.0
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
@@ -115,6 +115,8 @@ Structure says where the problem lives; dynamics say how the story *moves* and h
 ### L6 · Theme — the argument's value layer
 
 Not a "message" bolted on: theme is **structural position**. Issue vs Counterpoint (the 64-level pair) argued through the throughline; Problem vs Solution at the atomic level; Outcome + Judgment pass the verdict. McKee's controlling idea = OS Problem/Solution + Outcome compressed to a sentence; Egri's premise = the same, stated up front; Weiland's theme book = the craft of dramatizing it.
+
+**Held in 06 (IF-01-06-10; IF catalog call 2, ruled 2026-10-05):** the [06 theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) keeps this layer's Issue/Counterpoint pairs and its controlling idea as rails R1–R4. L6 points at 06's controlling idea. The genre system's G4 `core_binary` is that idea's seed.
 
 **Sources:** BVX.0175 (McKee, controlling idea) · BVX.1123 (Egri, premise) · BVX.0193 (Truby, moral argument).
 
@@ -243,3 +245,4 @@ The spine covers the STRUCTURE axis. Chief ordered the full milieu same session;
 - **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed (TS-B3); constraint-layer prose swapped to Touchstone (TS-B4).
 - **1.0.2 — 2026-10-04.** BOLO 100 D3: added Sources lines to L0, L3, L4, L6, L7.
 - **1.0.3 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): procedure for adding a rival model written under the acquisition gaps (C31).
+- **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): L6 points at the 06 theme system's controlling idea (call 2).

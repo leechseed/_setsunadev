@@ -2,7 +2,7 @@
 type: ssot_00_foundations
 category: variable_registry
 rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
-version: 1.2.2
+version: 1.3.0
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -66,9 +66,13 @@ All variables follow this path structure:
 |`STT`|State diff fields|`STT.wound_score`|
 |`META`|Character metadata|`META.character_id`|
 |`REL`|Relationship records|`REL.relationship_type`|
+|`SET`|Setting layer fields S1 to S12, owned by 03|`SET.S8.reason_remembered`|
+|`PLT`|Plot layer fields P1 to P12, owned by 04|`PLT.P7.reveal_content`|
 |`MOD`|Layer-Locked Module variables|`MOD.[MODULE_CODE].[variable_name]`|
 
-**`REL` note.** Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. Until Chief rules, `REL` stays a declared prefix with its one example.
+**`REL` note.** The 02 state architecture owns the `REL.*` fields (IF-00-02-26; IF catalog call 4, ruled 2026-10-05), and this registry holds one pointer row for them. Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it in the state architecture. The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`.
+
+**`SET` and `PLT` note.** The `SET` prefix names the S1 to S12 setting fields and the `PLT` prefix names the P1 to P12 plot fields (IF-00-03-04 and IF-00-04-08; IF catalog call 4, ruled 2026-10-05). The path is `[SET or PLT].[S or P layer].[field_name]`. Setting (03) and Plot (04) own the fields, and this registry holds the prefixes and the pointer rows only.
 
 ### Layer Codes
 
@@ -105,11 +109,15 @@ All variables follow this path structure:
 
 |System|Doc that owns the fields|What it owns|
 |---|---|---|
-|Setting (03)|[📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)|The S1 to S12 layer fields, including S12 FUNCTION.|
-|Plot (04)|[📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)|The P1 to P12 layer fields, including P12 FUNCTION. The fabula owns the event ids.|
+|Narrative (01)|[📐 ssot_01_story_spine_comparative_tree.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_spine_comparative_tree.md), [📐 ssot_01_spine_house_inventory.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_spine_house_inventory.md)|The `feeds:` library-keying field, the `module_of:` front-matter field and the spine addresses (`SPINE.L4`, `SPINE.L2.OS.concern`) (IF-00-01-10, IF-00-01-05, IF-00-01-06).|
+|Character state (02)|[🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md)|The `REL.*` relationship fields (IF-00-02-26). The 139-row alias table stays in the vertical slice (see Read aliases).|
+|Setting (03)|[📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)|The S1 to S12 layer fields under the `SET` prefix, including S12 FUNCTION.|
+|Plot (04)|[📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md), [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)|The P1 to P12 layer fields under the `PLT` prefix, including P12 FUNCTION. The fabula owns the event ids. The storyform record is Plot's, and `META.storyform_id` and `T3X.FUNC_EXT.storyform_id` point at it (IF-00-04-07).|
 |Theme (06)|[📐 ssot_06_theme_system.md](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md)|The theme fields and the argument record.|
 |Tracking (08)|[📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|Time codes and story points.|
 |Worldbuilding (05)|[📐 ssot_05_worldbuilding_system.md](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md)|The worldbuilding fields.|
+|Style (07)|[📐 ssot_07_1_prose_style.md](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md)|No fields. Style consumes `T1.SOCIAL.voice_sheet`, which stays an L3 field in this registry (IF-00-07-05).|
+|Operations (09)|[📐 ssot_ai_instruction_protocol.md](../09_OPERATIONS/📐%20ssot_ai_instruction_protocol.md)|The front-matter keys every doc carries.|
 
 L12 FUNCTION is fed from the storyform. Its field list lives in the [Dramatica integration protocol](../02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), and this registry mirrors it.
 
@@ -139,6 +147,10 @@ The Slice Fields section (1.2.0) lists the fields the slice added after the firs
 ### Retire a variable
 
 Chief rules each retirement. The author keeps the entry and marks it retired with the date and BOLO. The author names any replacement. The author keeps an alias row for the old name. The author removes the variable from every Feeds line that lists it. Character records keep their data. The author adds a version-history row.
+
+### Read aliases
+
+The vertical slice keeps the 139-row alias table, THE SCHEMA PASS: the coined names the schema pass aliased or dropped. This registry cites that table as its alias list and does not copy it (IF-00-02-28; IF catalog call 4, ruled 2026-10-05). The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
 
 ---
 
@@ -819,6 +831,7 @@ _Note: This field was previously named `motivation_element`. Renamed per Phase 4
 |Display Name|Touchstone|
 |Alias|`narrative_invariant` (old name; read alias for old ingests, renamed BOLO 100)|
 |Type|`str`|
+|Value|The Touchstone id in the register form `TS n:m`, for example `TS 1:3`, so the field joins the Touchstones register. The slug the field held before is a read alias of the id (IF catalog call 4, ruled 2026-10-05).|
 |Source|`authored`|
 |Feeds|Structural constraint on all downstream story development|
 |Tier Min|3|
@@ -1104,6 +1117,7 @@ Layer paragraph: slice, L11 DESTINY. Value sets for these three come from the ci
 |`T3.DESTINY.arc_type`|str|N/A|Static|authored|The Villain-Arc Fork|Growth versus transformation (BVX.0196).|
 |`T3.DESTINY.change_cause`|str|N/A|Static|authored|The Villain-Arc Fork|The four causes of change (BVX.0061).|
 |`T3.DESTINY.catalyst_archetype`|str|N/A|Static|authored|Contextual|Growth pairing (BVX.0045).|
+|`T3.DESTINY.rail_ref`|str|N/A|Static|authored|Theme (06) rails|The 06 rail the character argues for, so the character's side of the argument names its rail (IF catalog call 2, ruled 2026-10-05).|
 
 ### Slice fields · L12 FUNCTION
 
@@ -1121,6 +1135,7 @@ One sub-field serves several parents.
 |Canonical Path|Type|Scale Class|Tag|Source|Consumer|Values and sub-fields|
 |---|---|---|---|---|---|---|
 |`setting_ref` (sub-field of `triggers`, `origin_class`, `origin_disciplinary_formation` entries)|object|N/A|Static|authored|Step 4: cite the S4, S6 or S8 entry|`{setting_id, S-layer}`. Optional.|
+|`catalog_ref` (sub-field of `T3.ORIGIN.system_exposure.layers` `regime`, `T1.SOCIAL.civic_standing`, `T1.SOCIAL.community_membership`, `T3.ORIGIN.tech_level`)|str|N/A|Same as its parent|authored|Worldbuilding (05) catalog|The id of the 05 catalog entry that the free-text world field names (IF catalog call 3, ruled 2026-10-05). Optional.|
 
 ---
 
@@ -1330,14 +1345,16 @@ State diffs use the `STT` prefix and mirror the variable they modify, with addit
 |Canonical Path|Type|Purpose|
 |---|---|---|
 |`STT.state_id`|`str`|Unique state identifier|
-|`STT.narrative_moment`|`str`|Human-readable when|
-|`STT.movement`|`str`|Movement tag|
+|`STT.narrative_moment`|`str`|The Tracking (08) time code of the state (IF-00-08-03). Free text retires as an alias.|
+|`STT.movement`|`str`|Retired 2026-10-05 (BOLO 102, IF catalog call 1). The M part of `narrative_moment` replaces it. Read alias for old records.|
 |`STT.mc_distance_temporal`|`int`|Temporal distance from MC|
 |`STT.mc_distance_narrative`|`int`|Causal distance from MC|
 |`STT.base_record_version`|`str`|Version of base record|
 |`STT.[any_layer_variable]`|(matches source type)|Modified value — replaces base on query|
 |`STT.WILL_EFFECTIVE`|`int` SC-20|State-only field — temporary WILL reduction|
 |`STT.state_note`|`str`|Prose justification for diff|
+
+`STT.narrative_moment` holds the one Tracking address, for example `M2 · Q1 · S03 | bar.beat.tick`. Movement is M, sequence is Q, scene is S, and beat is `bar.beat` (IF catalog call 1, ruled 2026-10-05). `STT.mc_distance_temporal` and `STT.mc_distance_narrative` key to the same time code.
 
 ---
 
@@ -1364,3 +1381,4 @@ State diffs use the `STT` prefix and mirror the variable they modify, with addit
 |1.2.0|2026-10-04|BOLO 100 base batch 1 (B1 to B8, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk` and `rung`, table-of-contents links repointed; the 05 copy is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` and this file is the one registry (B5); Registry Format gains the `Tag` row and the `object` types; new Slice Fields section adds 94 field rows from slice 3.3.1, each with tag, scale class, source and consumer (B6); Tag row added to every entry; `T3.EROS.armor_index` assigned SC-12 and the two "pending" lines deleted (B7); Ownership Rule with five pointer rows (B8); `attachment_style` and `intimacy_mode` value sets brought to the slice; `exposure_shame` and `role_shame` held at SC-12 to match `shame_index`, where the slice text says 0 to 10; the `10 - armor_index` constant is the slice's and gives a negative value at 11 or 12; dependency names fixed to real stems (B13).|
 |1.2.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field `narrative_invariant` renamed `touchstone` (TS-B3), one alias row kept.|
 |1.2.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C18, a note under the `REL` prefix (Chief decides each REL variable, check the three relational fields first); C19, a "Retire a variable" subsection under Registry Format.|
+|1.3.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 4, prefixes `SET` and `PLT`, ownership rows for 01, 02 (REL), 07 and 09, the storyform record owned by 04, the `touchstone` field holds the TS id, the alias table cited; call 1, `STT.narrative_moment` is the Tracking time code and `STT.movement` retires; call 2, `T3.DESTINY.rail_ref`; call 3, `catalog_ref` sub-field; call 5, PENDING and FIRED_PRE_STORY flags store the fabula `event_id`.|

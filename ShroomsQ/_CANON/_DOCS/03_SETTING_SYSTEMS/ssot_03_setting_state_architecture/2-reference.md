@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md
-source_version: 1.2.0
+source_version: 1.3.0
 ---
 
 **Who it's for:** a writer or maintainer looking up place-state rules · **What it does:** lists sections, fields, rules and checkpoints · **Type:** reference
 
 # Setting state architecture: reference
 
-Frontmatter: category `state_architecture`, tier `fabula`, `module_of: ssot_03_setting_system`, `applies_to: [all IPs]`, last updated 2026-10-04. It mirrors `ssot_02_character_state_architecture` layer for layer. The base system is [ssot_03_setting_system](../ssot_03_setting_system/2-reference.md).
+Frontmatter: category `state_architecture`, tier `fabula`, `module_of: ssot_03_setting_system`, `applies_to: [all IPs]`, last updated 2026-10-05. It mirrors `ssot_02_character_state_architecture` layer for layer. The base system is [ssot_03_setting_system](../ssot_03_setting_system/2-reference.md).
 
 *The structure: the base slice plus a checkpoint diff, then story points, gives the place at a moment. Five kinds of event produce the diffs.*
 
@@ -160,6 +160,8 @@ The result is a complete place record: twelve S-layers, the header with the live
 
 Five categories of event produce state diffs.
 
+Reads from 04 (IF-03-04-18): each fabula event carries `source_kind:`, one of the five categories (construction, institutional, ownership, rename, seasonal) or `character`. This doc reads it to learn which S-layers an event touches. The event's `produces:` field lists the `state_id`s it yields. Its `scheduled:` field holds a LEDGER_DUE future state, which carries the 08 time code (IF catalog calls 1 and 5, ruled 2026-10-05).
+
 ### Category 1: Construction/Damage Events
 
 S1 BODY changes. S5 may accrete an entry. S11 may shift. Example (hypothetical, not canon): a hurricane-damaged wing left unrepaired.
@@ -227,6 +229,7 @@ Scrubbing the timeline past a rename's time code must flip the place's live name
 
 ## 12. Version History
 
+- **1.3.0 (2026-10-05):** BOLO 102 stage 2 (Chief: "My word"). §8 names the fabula event's `source_kind:` as this doc's read, with `produces:` and `scheduled:`. LEDGER_DUE future states carry the 08 time code.
 - **1.2.0 (2026-10-04):** ruled "REC" (BOLO 100 setting batch 1). Stamped `module_of`; scope all IPs; the `origin_event` no-record rule; DCUS values parked.
 - **1.1.0 (2026-09-29):** ruled "line up the recs". `backstory` tag ruled; Rule 7 added; Checkpoint 3 `told_at` note.
 - **1.0.0 (2026-09-29):** initial document, BOLO 90 step 3.

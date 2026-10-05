@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md
-source_version: 1.10.2
+source_version: 1.11.0
 ---
 
 **Who it's for:** a writer or maintainer looking up a setting field · **What it does:** lists each component, part and field · **Type:** reference
 
 # The setting system: reference
 
-Frontmatter: category `setting_system`, tier `[fabula, narratology]`, trunk BLACK, `applies_to: [all IPs]`, last updated 2026-10-04. Root claim: setting is the pressure field, the total state of the world at a story address. A place that pressures nothing is scenery. Companions: [synthesis](../ssot_03_setting_synthesis/2-reference.md) and [state architecture](../ssot_03_setting_state_architecture/2-reference.md). Read the Touchstones register first.
+Frontmatter: category `setting_system`, tier `[fabula, narratology]`, trunk BLACK, `applies_to: [all IPs]`, last updated 2026-10-05. Root claim: setting is the pressure field, the total state of the world at a story address. A place that pressures nothing is scenery. Companions: [synthesis](../ssot_03_setting_synthesis/2-reference.md) and [state architecture](../ssot_03_setting_state_architecture/2-reference.md). Read the Touchstones register first.
 
 *The structure: the taxonomy classifies the place. The slice describes it. The cards put it on the page. DCUS is the worked example.*
 
@@ -94,11 +94,11 @@ S12 is fed independently from the storyform, as L12 is fed from the Dramatica in
 | S5 SCAR | Damage in the fabric: ruins, erasures, renames. Fields: `record` (five entries: what it was, yearly upkeep, how it fell, who used it since, why it is not picked clean); `repeats_at`; `overwritten_by`; `trace_kept` (yes or no). Cross-reference S9. | L5 WOUND |
 | S6 ECONOMY | What fuels the place. Field: `position` (core, semi-periphery or periphery; it can flip across states). | L6 DRIVE |
 | S7 FOUNDING | Origin and deep history. Fields: present-tense-bite test; `founding_type` (conquest, inheritance or alliance); `capital_type` (organic, primate or relocated). | L7 ORIGIN |
-| S8 HABIT | Rituals, routines, belonging gradients, insider and outsider. Fields: `reason_remembered` (yes, partly or no); incorporation strategy (destroy-or-tribute, co-opt, assimilate); up to three gauges; `price` on each belonging tier. | L8 IMPRINT |
+| S8 HABIT | Rituals, routines, belonging gradients, insider and outsider. Fields: `reason_remembered` (yes, partly or no); incorporation strategy (destroy-or-tribute, co-opt, assimilate); up to three gauges; `price` on each belonging tier, `{criterion, cost, witness}`, where `witness` is the `character_id` of one named member who pays, read from the character system (IF catalog call 5, ruled 2026-10-05). | L8 IMPRINT |
 | S9 ALLURE | The place's erotics. Fields: `promise`, `draw`, `glamour`, `source_rupture`. Cross-reference S5. | L9 EROS |
 | S10 UNDERSIDE | What the place represses. Three tiers: public (stated), folk (known, unstated), secret (buried, recoverable). | L10 SHADOW |
-| S11 VECTOR | Trajectory: bloom, rot, collapse, redemption. Fields: optional forward-ledger sub-field; `phase` (rising, plateau, declining, past-disintegration); `vacuum` (yes or no); state `tone` (Light or Dark); up to three gauges. | L11 DESTINY |
-| S12 FUNCTION | Storyform binding, independent of S1 to S11. Fields: conflict level (subconscious, personal, institutional, environmental); tone-to-mechanic sub-note; `touchstone` set; `contradiction`; `salient surplus`; `link` (`{character_id, kind: none, political, direct or metonymic}`). | L12 FUNCTION |
+| S11 VECTOR | Trajectory: bloom, rot, collapse, redemption. Fields: optional forward-ledger sub-field (each dated state carries the 08 time code and sits on the fabula event's `scheduled:` field; IF catalog calls 1 and 5, ruled 2026-10-05); `phase` (rising, plateau, declining, past-disintegration); `vacuum` (yes or no); state `tone` (Light or Dark); up to three gauges. | L11 DESTINY |
+| S12 FUNCTION | Storyform binding, independent of S1 to S11. Fields: conflict level (subconscious, personal, institutional, environmental); tone-to-mechanic sub-note; `touchstone` set; `contradiction`; `salient surplus`; `link` (`{character_id, kind: none, political, direct or metonymic}`). The Domain it names is what P12 `domain_ref` reads for a unit set at the place (IF catalog call 5, ruled 2026-10-05). | L12 FUNCTION |
 
 **Slice header (machinery, not a layer).** Fields: `place_id`, names and aliases (the rename lattice), scale class, parent and child places. It also has canon node link, state track, `job`, `dramatic role` and `adjacent` (neighbors with travel cost). The last fields are `canon_tier` per fact (core, semi or fringe) and `real_anchor` (dynamic: `{source, as_of date, categories kept}`).
 
@@ -140,10 +140,19 @@ One card per scene, one screen. Fields:
 | crossing | optional; staged entry steps |
 | citation | each actor's rule, who knows better |
 | transcript | public or hidden, and what changes |
+| rail_tested | theme record: R1, R2, R3 or R4, the debate this scene tests (IF catalog call 2, ruled 2026-10-05) |
+| side_argued | theme record: the side of that debate the scene argues |
+| gauge | theme record: the 08 gauge name and the step this scene moves |
+| focal | one character id, the focal character for this scene; 07.1 reads it (IF catalog call 6, ruled 2026-10-05) |
+| fantasy | one breath: what the audience gets to be, feel or do (the P8 check) |
+| sexy | yes or no, plus one line why (the P9 check) |
+| aesthetic | color, shape or texture: the one that carries it (the P10 check) |
 
-> **OPEN:** the source says "Ten fields, one screen" but lists seventeen.
+> **OPEN:** the source says "Ten fields, one screen" but lists twenty-four.
 
 Notes: an enclosure ends on a gate walked through; a modulation ends on a code granted or a rate moved. The SEAM_CROSSING flag fires on a crossing.
+
+Theme record, focal and checks (1.11.0): the writer fills `rail_tested`, `side_argued` and `gauge` from 06, beside the `citation` and `transcript` tests. The writer fills `focal` with one character id. The writer answers `fantasy`, `sexy` and `aesthetic` in one breath each (IF catalog calls 2 and 6, ruled 2026-10-05).
 
 ## THE SEQUENCE CARD — the R3 notation (added 2026-09-29, BOLO 90 step 7 trial)
 
@@ -184,6 +193,12 @@ The place record computes each flag. Nobody assigns one. States: ACTIVE, PENDING
 | GAUGE_AT_LIMIT | A gauge sits at its floor or ceiling. | S8, S11 |
 | REASON_LOST | An S8 custom has `reason_remembered: no` and still binds. | S8, S7 |
 
+Flag hand-offs (IF catalog calls 1 and 5, ruled 2026-10-05):
+
+- UNDERSIDE_SURFACING hands the plot card P7 `reveal_content` (the surfaced fact) and `reveal_type`.
+- LEDGER_DUE future states carry the 08 time code. The writer records them on the fabula event's `scheduled:` field.
+- LOAD_BEARING hands the plot card the S12 Domain, which P12 `domain_ref` records for each unit set at the place.
+
 ## THE FREEDOM-AND-RESTRICTION CLAIM — the dystopia mechanism (ruled 2026-09-16, genre OPEN 11; landed 2026-10-04)
 
 Truby's dystopia mechanism is a touchpoint on S12. The world offers apparent choice over hidden restriction. The writer records the claim in one line on the S12 entry, keyed by `storyform_id`. P10 records which obligatory beat fires, not this claim.
@@ -213,7 +228,16 @@ The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School and
 
 ## SETTING × LIBRARY
 
-Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. Two rulings follow. The first is the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the primary L7 genre-contract tool, with Baur's five lineages as shorthand. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
+Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. Two rulings follow. The first is the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the genre-contract tool for 03 and 01 both (IF catalog call 10, ruled 2026-10-05), with Baur's five lineages as lineage. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
+
+Interfaces (IF catalog, ruled 2026-10-05), one line for each wiring another system states first:
+
+- Reads from 05 (IF-03-05-02): 05 shows the catalog entries found at each place beside that place's slice header. Its filter keys are `place` (this doc's `place_id`) and `era`.
+- Read by 05 (IF-03-05-03): 05 takes S5 (ruins and SCARs) and S7 (present-tense bite) as test inputs.
+- Read by 00 (IF-00-03-01): the variable registry reads `setting_ref` {setting_id, S-layer}, an optional sub-field of T2.WOUND.triggers and of T3.ORIGIN `origin_class` and `origin_disciplinary_formation` entries.
+- Read by 06 (IF-03-06-04): 06 reads images already present in the setting material, such as the Feed and the uniform, as motif candidates.
+- Read by 07 (IF-03-07-01): 07.1 reads S3 SENSORIUM, the setting's sensory layer, to feed description.
+- Read by 09 (IF-03-09-01): the process pipeline cites `setting_ref` in the L7 to L12 variable stacks where the place has an S4, S6 or S8 entry.
 
 ## TROPES
 
@@ -221,4 +245,4 @@ Added 2026-09-29 (BOLO 89). Every setting-domain TV Tropes trope is keyed to S1 
 
 ## Other sections
 
-The source also holds OPEN (trade-gap note, parked OXO scene-card fill pass). It also holds a version history from 1.0.0 (2026-08-25) to 1.10.2 (2026-10-04).
+The source also holds OPEN (trade-gap note, parked OXO scene-card fill pass). It also holds a version history from 1.0.0 (2026-08-25) to 1.11.0 (2026-10-05).
