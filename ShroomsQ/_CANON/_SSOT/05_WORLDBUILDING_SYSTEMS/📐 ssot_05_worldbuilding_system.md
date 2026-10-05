@@ -1,11 +1,11 @@
 ---
 type: ssot_05_worldbuilding_systems
 category: worldbuilding_system
-version: 1.1.1
+version: 1.2.0
 tier: fabula
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, MOON/SAGA, all future IPs]
-status: "v1.1.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: stale marks stripped, inferred-mark rule, stub-promotion and retired-entry rules, instance marks parked. 1.0 stamped 2026-09-29."
+status: "v1.2.0 2026-10-05: RULED, Chief (\"My word\") — IF catalog calls 1, 3, 7, 10 landed: the entry schema widened, the reach renamed, one 1.0 bar. v1.1.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 tracking/worldbuilding batch 1: stale marks stripped, inferred-mark rule, stub-promotion and retired-entry rules, instance marks parked. 1.0 stamped 2026-09-29."
 purpose: "THE WORLDBUILDING SYSTEM — the definition of a world (its infrastructures, its coherence tests, the compiler that reads every system into one world view) plus the CATALOG it owns: the shared things of a world (groups, styles, customs, tech, food, institutions) that no other system holds."
 dependencies: ["ssot_03_setting_system (v1.5.0, places)", "ssot_02_character_systems (people)", "ssot_08_tracking_system (v1.0.0, state over time)", "ssot_04_fabula / ssot_04_plot_system (origin events)", "ssot_01_trope_register (BOLO 89 layer)"]
 trunk: BLACK
@@ -59,9 +59,19 @@ The books agree on this shape. They define it as building "a representation of a
 | 04 Plot | Each entry's `origin` names a fabula event. | catalog points to 04 |
 | 09 Operations | Checked 9/29 by the CDR: owns procedures and registries, no world-fact type. It runs the compiler as a procedure. | none |
 | 07 Style | Checked 9/29 by the CDR: 07.1 prose · 07.2 documents · 07.3 pages; no world-fact type. How a world thing is written up follows 07.1. | none |
-| 06 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the answer. | lens asks 06 |
+| 06 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the controlling idea; each entry's `ct11_verdict:` records the answer (IF catalog call 3, ruled 2026-10-05). | lens asks 06 |
 | 08 Tracking | Every change over time is a 08 record. Entries hold a pointer, `state`. 08 holds a reader track per character in §9A; the catalog does not copy it. | catalog points to 08 |
 | Trope layer | Every entry carries `tropes`; the register owns the trope. | catalog points to layer |
+
+**Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
+
+- Read by 01 (IF-01-05-06): the Touchstones register reads the S12 Star-Rating rule from WB-CUS-0001, ruled keep 9/15.
+- Read by 06 (IF-05-06-03, IF-05-06-05): 06 reads `motif_ref:` to link a motif to its setting object, such as WB-TEC-0001.
+- Read by 06 (IF-05-06-04, IF-05-06-06): 06 reads `gauge:` and `ct11_verdict:` from each entry.
+- Read by 07.1 (IF-05-07-01, IF-05-07-02): 07.1 reads LNG entries as the world words prose may use unexplained.
+- Ruled by 07.3 (IF-05-07-05, IF-05-07-07): 07.3 rules the world view page; see THE WORLD VIEW.
+- Read by 04 and 08 (IF-04-05-03, IF-05-08-04): `narrated_in:`, `founded:` and `current:` are 08 time codes.
+- Read by 08 (IF-05-08-05, IF-05-08-06, IF-05-08-07): 08 `subject.kind` accepts the state kinds below, `world` included.
 
 ### Vocabulary (ruled 9/29)
 
@@ -181,7 +191,7 @@ An **infrastructure** here is one of the areas a complete world must be able to 
 **Two dials that sit across all ten** (not infrastructures; measures):
 
 - **Departure dial.** How far each infrastructure departs from our world: nominal, cultural, natural, ontological [BVX.0562], scored on nine axes as same, augmented, or different [BVX.0630]. Fantasy conceits are the departures; analogue cultures are the real-world baseline the audience carries in [NEW-101prompts].
-- **Scale ladder.** World-economy, nation-state, locality [BVX.1161]. Pressure comes from one rung; the dial says which.
+- **The reach.** World-economy, nation-state, locality [BVX.1161]. Pressure comes from one tier; the dial says which. "Scale ladder" now means only 01's R1 BEAT to R8 UNIVERSE, and the reach is a separate scale (IF-01-05-12; IF catalog call 10, ruled 2026-10-05).
 
 **What the extraction does not support as a separate infrastructure:** "Stars and Planets" [NEW-blueprint] is a place at S1 scale, so it goes to 03. "Urban Fantasy and Paranormal Romance" [NEW-blueprint] is a genre choice, not a world area, so it goes to the departure dial. "Game Mechanics" and "Audio-Visual Design" [BVX.0144] are for games; Audio-Visual maps to S3 SENSORIUM in 03; Game Mechanics is dropped.
 
@@ -199,15 +209,15 @@ A **coherence test** is a named check stated so a reader or script can pass or f
 | CT2 | **Geography feeds economy** | Every economy line for a place names a resource the place supplies; every catalog building style names the habitat material it uses. | R | NEW-anderson; NEW-blueprint; BVX.1165; BVX.0480 |
 | CT3 | **The gap-fill** | Every institution entry names the rupture or need it fills, and that rupture is a fabula event or a S5 SCAR. | S | BVX.0575 |
 | CT4 | **Apocalypso** | Every ruin (S5) has a dated fall on the timeline, and every dungeon-like ruin has a builder. | S | BVX.0458; BVX.1137; BVX.0405 |
-| CT5 | **Bookends** | Each place or group has a founding endpoint and a current endpoint; mid-history sits between them without contradiction; a founding line counts only if it still bites now (present-tense-bite, S7). | S | BVX.0465; ssot_03 S7 |
+| CT5 | **Bookends** | Each place or group has a founding endpoint and a current endpoint, held as `founded:` and `current:` 08 time codes (IF catalog call 1, ruled 2026-10-05); mid-history sits between them without contradiction; a founding line counts only if it still bites now (present-tense-bite, S7). | S | BVX.0465; ssot_03 S7 |
 | CT6 | **Legitimacy** | Every governing entry states coercion, rule-making, and consent, or says which is missing. | S | BVX.1162 |
 | CT7 | **Departure consistency** | Each departure from our world is scored on the nine axes once, and applied the same way wherever it appears. | R | BVX.0630; BVX.0562; NEW-101prompts |
 | CT8 | **Distinctiveness** | An entry used in a scene either exerts pressure there or is marked scenery. Quality is distinctiveness, not volume. | R | BVX.0349; NEW-tremblay |
-| CT9 | **Onstage canon** | A fact enters canon for a story's binding clause only when a scene narrates it. | S | BVX.0538 |
+| CT9 | **Onstage canon** | A fact enters canon for a story's binding clause only when a scene narrates it; the entry's `narrated_in:` holds that scene's 08 time code (IF catalog call 1, ruled 2026-10-05). | S | BVX.0538 |
 | CT10 | **Compossibility and retcon cost** | A new entry is checked against existing entries for whether both can hold; a change to a narrated entry is logged as a retcon with its cost. | R | BVX.0630 |
-| CT11 | **Reinforcement** | Mechanics, environment, and narrative point at the same theme and tone. Answer lives in 06. | R | BVX.0144; BVX.0349 |
+| CT11 | **Reinforcement** | Mechanics, environment, and narrative point at the same theme and tone. Each entry carries `ct11_verdict:` (argues · neutral · undercuts), judged against 06's controlling idea (IF catalog call 3, ruled 2026-10-05). | R | BVX.0144; BVX.0349 |
 | CT12 | **Honest consequence** | When a rule or entry is in play, its consequences run as stated, not bent to convenience. | R | BVX.0530 |
-| CT13 | **Scale source** | Every pressure names the rung it starts at: world-economy, nation-state, locality. | S | BVX.1161 |
+| CT13 | **Reach source** | Every pressure names the tier of the reach it starts at: world-economy, nation-state, locality. | S | BVX.1161 |
 | CT14 | **Referential density** | The world is dense at the center of the story and fuzzy at the edge; it feels whole without being complete. | R | BVX.0100 |
 | CT15 | **What a character knows** | A character knows only history relevant to that person; a peasant does not recite royal genealogies. Owner: 02. | R | NEW-anderson |
 | CT16 | **Tension generator** | The world's systems create built-in pressures a scene can use. | R | NEW-tremblay |
@@ -262,7 +272,18 @@ id: "WB-<TYPE>-<nnnn>"        # e.g. WB-GRP-0001; type code in the table below
 type: "<type code>"
 name: "<working name>"
 aliases: []                   # rename lattice, like 03's slice header
-era: ["<time code range>"]    # eras it exists in; uses the 08 time code
+founded: "<08 time code>"     # CT5 founding endpoint; replaces the one `era:` (IF catalog call 3)
+current: "<08 time code>"     # CT5 current endpoint; the entry's state now
+narrated_in: "<08 time code>" # the scene that first narrates it (CT9); `—` until narrated
+portable: false               # true = other stories may borrow this entry
+motif_ref: "<motif.slug>"     # -> 06: the motif this entry is the setting object of
+ct11_verdict: "<argues | neutral | undercuts>"   # CT11: does it argue 06's controlling idea
+gauge:                        # civilizations only; omit on every other entry
+  value: "<gauge value>"
+  positive: "<step 1>"
+  contrary: "<step 2>"
+  contradictory: "<step 3>"
+  negation_of_negation: "<step 4>"
 places: ["<place_id>"]        # -> 03 setting slice(s) where it is found
 groups: ["<WB-GRP id>"]       # groups or users who keep it; people point -> 02
 origin: "<fabula event_id>"   # -> 04: the event that brought it into being
@@ -274,9 +295,11 @@ sources: ["<BVX / NEW / canon node>"]
 status: "stub | filled | canon | provisional"   # provisional = not yet narrated; never a glyph
 ```
 
+**The widened schema (IF catalog call 3, ruled 2026-10-05).** The author writes `founded:` and `current:` in place of the one `era:`. Only a civilization carries `gauge:`: its value and the four steps 06 defines. `portable:` marks an entry other stories may borrow (IF-01-05-10). Every time code in an entry is the 08 time code (IF catalog call 1).
+
 **How an inference is written.** An inferred field reads `inferred`. A field not yet narrated reads `—`. The `status` value is `provisional`, never a glyph, so the compiler reads plain words.
 
-**Stub promotion.** A stub becomes `filled` when it has a source, a state id, and one era.
+**Stub promotion.** A stub becomes `filled` when it has a source, a state id, and a `founded:` time code.
 
 **Retired entries.** A retired entry keeps its file. It gets `status: retired` and a pointer to the doc that took it. Its id is never reused.
 
@@ -295,7 +318,7 @@ Each type says what it holds, its sources, and where it stops (so it does not st
 | FSU | **Food and substances** | What people eat, drink, and take, and the system that supplies it. Merged from food, subsistence, and drug culture. | BVX.0141 (Food systems); BVX.0067 (Drugs and Drug Culture); NEW-101prompts (food); BVX.0562 (food-and-water audit) |
 | INS | **Institutions and forms of rule** | A standing body or form of authority: a court, a school board, a guild, a standards body. | BVX.0405 (Forms of Government); BVX.0480; BVX.0458 (binding principle); BVX.1162; BVX.1138 (Trading Houses, Mercenary Companies) |
 | ECO | **Goods, money, and trade** | A traded good, a currency, or a trade route as a thing in itself; a place's economy stays in 03 S6. | BVX.1138 (Trade Goods); BVX.0141 (Money); BVX.0458 (trade routes); BVX.1161 |
-| LNG | **Language and naming** | A tongue, a naming custom, or a body of terms; untranslated words carry belonging. | BVX.0144 (Languages); NEW-101prompts (language); BVX.0562 (custom-word) |
+| LNG | **Language and naming** | A tongue, a naming custom, or a body of terms; untranslated words carry belonging. LNG entries are the list of world words 07.1 lets prose use unexplained (IF catalog call 7, ruled 2026-10-05). | BVX.0144 (Languages); NEW-101prompts (language); BVX.0562 (custom-word) |
 | BIO | **Creatures and flora** | A kind of animal, plant, or non-human being, with where it fits in the food web. | NEW-tremblay; NEW-blueprint (Fictional Beings); NEW-101prompts (Biology); BVX.1165 |
 | RUL | **World rules** | A rule that departs from our world: magic, physics, causality, with its source, cost, limits. Scored on the nine axes. | BVX.0630; BVX.0562; NEW-ultimate-gm; NEW-101prompts |
 
@@ -340,13 +363,16 @@ Named from the canon nodes; none is filled. Each is a stub to be created only wh
 The **world view** is the compiled, read-only page. A script reads 02, 03, 04, 08, the catalog, and the trope layer, then writes one page. It edits nothing.
 
 **What it shows:**
-- Each catalog entry as a row with its type, name, eras, places, and groups.
+- Each catalog entry as a row with its type, name, founded and current time codes, places, and groups.
+- Each civilization's gauge: its value and four steps (IF catalog call 3, ruled 2026-10-05).
 - For each place, the catalog entries found there (from `places`) beside the place's 03 slice header.
 - For each group, its members (02), its customs, dress, and building styles (catalog), and its faction card (03).
 - The result of every script-run coherence test (CT1, CT3, CT4, CT5, CT6, CT9, CT13): pass, fail, or "stub, not yet checkable."
 - A gap list: infrastructures I1 to I10 with no entry, shown as gaps, not as failures.
 
-**Filters:** era (the 08 time code) · place (03 `place_id`) · group (GRP id) · type (type code). Era and place are the two that every other system already keys on.
+**Page rules.** 07.3 rules this page: dark palette, thin header strip, CK3 hover terms on catalog types and tests, and Mermaid written as static markup (IF catalog call 7, ruled 2026-10-05).
+
+**Filters:** era (the span from `founded:` to `current:`, in the 08 time code) · place (03 `place_id`) · group (GRP id) · type (type code). Era and place are the two that every other system already keys on.
 
 **Edits happen at the owning file.** Each row links to the file that owns the fact: a catalog entry to its file, a place to its 03 slice, a person to their 02 record, a change to its 08 story point. The world view has no input fields. The read-only rule is what keeps it a view and not a second store.
 
@@ -358,7 +384,7 @@ The **world view** is the compiled, read-only page. A script reads 02, 03, 04, 0
 
 The catalog proved itself on DCUS the way 03 did: filled from canon on the first pass, every inference marked `inferred`.
 
-| Entry | Type | Era | Origin | Rung |
+| Entry | Type | Era | Origin | Reach |
 |---|---|---|---|---|
 | WB-INS-0001 The Administration | INS | backstory → M4 | backstory_dcus_rebrand (inferred) | nation-state (inferred) |
 | WB-GRP-0001 The Bishops | GRP | backstory → M4 | backstory_dcus_rebrand | locality |
@@ -370,11 +396,11 @@ The catalog proved itself on DCUS the way 03 did: filled from canon on the first
 
 **What the proof found.** Tremor Cult was misfiled as a belief; it is a story (01 registry) and its entry is retired, id never reused. Quinn Bishop has no 02 node yet: the L02 link check reports it as owed by 02, not a 05 failure. Every era ends at M4 because canon casts DCUS for Movements 2–4.
 
-**State ids.** `state:` names the entry's 08 subject as `<kind>:<slug>`: `place:` · `group:` · `belief:` · `custom:` · `tech:` · `wardrobe:` · `architecture:`. A subject need not have story points yet.
+**State ids.** `state:` names the entry's 08 subject as `<kind>:<slug>`: `place:` · `group:` · `belief:` · `custom:` · `tech:` · `wardrobe:` · `architecture:` · `world:` (a world-level change, such as a rebrand). 08 `subject.kind` accepts all eight (IF catalog call 3, ruled 2026-10-05). A subject need not have story points yet.
 
 **The lens, run 9/29.** Script tests: CT1 pass · CT3 pass on the filled set · CT4 no ruins yet · CT5 pass on the filled set · CT6 pass on the filled set · CT9 no canon claims yet · CT13 pass; link checks pass, L02 owed. Reader tests (a PS, by reading): CT10 · CT11 · CT14 · CT16 pass; CT2 · CT7 · CT8 · CT12 · CT15 stub (narration-blocked, or no departure scored yet). No fails. Stubs on the non-DCUS entries read "stub", never "fail".
 
-**The 1.0 bar (SOP §5).** Shape ✓ · Shelf ✓ (27 books) · Proof ✓ (DCUS) · Ruled ✓ (OPEN 1–9) · Wired ✓ (02 · 03 · 04 · 08 · tropes) · Store ✓ (7 filled).
+**The 1.0 bar is SOP §5's six, and no other list counts (IF catalog call 10, ruled 2026-10-05).** Shape ✓ · Shelf ✓ (27 books) · Proof ✓ (DCUS) · Ruled ✓ (OPEN 1–9) · Wired ✓ (02 · 03 · 04 · 08 · tropes) · Store ✓ (7 filled).
 
 ---
 
@@ -398,7 +424,7 @@ The catalog proved itself on DCUS the way 03 did: filled from canon on the first
 | BVX.1156 Robbins, *Kingdom* | Touchstone and Roles; the Crossroad procedure. |
 | BVX.1137 Rejec, *Ultraviolet Grasslands* | Pointcrawl; reusable precursor fall; the strangeness gradient. |
 | BVX.1138 Baur et al., *Midgard* | Trade goods; trading houses; the Masks doctrine; ley lines; founding dated by distance from now. |
-| BVX.1161 Flint and Taylor, *Political Geography* | Scale ladder; core and periphery; sovereignty and boundaries; capital types. |
+| BVX.1161 Flint and Taylor, *Political Geography* | The reach (three tiers); core and periphery; sovereignty and boundaries; capital types. |
 | BVX.1162 Morris and Scheidel, *Dynamics of Ancient Empires* | Coercion, rule-making, consent; three imperial strategies. |
 | BVX.1165 Nelson, *Fantasy World-Building* | Habitats as raw material for architecture; wardrobe; texture and patina. |
 | BVX.0067 *Collaborative Worldbuilding for Writers and Gamers* | Definition; four pillars; scope, sequence, perspective; separate world from story. |
@@ -440,6 +466,7 @@ Each call has one rec. The Chief rules in one word.
 
 ## Version history
 
+- **1.2.0 · 2026-10-05** · BOLO 102 stage 2 (Chief: "My word"): entry schema gains `gauge:`, `portable:`, `narrated_in:`, `founded:` and `current:` (for `era:`), `motif_ref:`, `ct11_verdict:`; the reach replaces "scale ladder" for the three tiers; LNG is the unexplained-word list; 07.3 rules the world view page; one 1.0 bar; Interfaces lines added.
 - **1.1.1 · 2026-10-04** BOLO 100 TOUCH BATCH 1, Chief "REC.": front-door line (TS-B10).
 - **1.1.0 · 2026-10-04** · BOLO 100 tracking/worldbuilding batch 1 (Chief: "REC"). Stale marks stripped from the vocabulary, status, layout, and Wolf note. Inference rule written (`inferred`, `—`, `provisional`). Stub-promotion and retired-entry rules added to THE CATALOG. Seed entries and DCUS proof inferences parked as phase 2. Tracking dependency set to v1.0.0; reader-track pointer added to the 08 relation row.
 

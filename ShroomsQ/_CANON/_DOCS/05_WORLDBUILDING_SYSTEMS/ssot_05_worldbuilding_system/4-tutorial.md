@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md
-source_version: 1.1.1
+source_version: 1.2.0
 ---
 
 **Who it's for:** a writer new to the catalog · **What it does:** walks one DCUS entry from route to checked · **Type:** tutorial
@@ -40,7 +40,7 @@ You will file the Feed from DCUS, the way the proof did. Keep the [reference](2-
 
 ## Step 4: link it
 
-1. Set `era` to `M2 to M4`. The proof ends every DCUS era at M4, because canon casts DCUS for Movements 2 to 4.
+1. Set `founded:` to `M2` and `current:` to `M4`, both 08 time codes. The proof ends every DCUS era at M4, because canon casts DCUS for Movements 2 to 4.
 2. Set `origin` to `backstory_dcus_rebrand`. The proof marks it `inferred`, so write that word.
 3. Set `state` to a `tech:` id, in the form `<kind>:<slug>`.
 4. Set `places` to the DCUS place id.
@@ -48,7 +48,7 @@ You will file the Feed from DCUS, the way the proof did. Keep the [reference](2-
 ## Step 5: promote it
 
 1. Add a source to `sources`.
-2. Check that the entry has a source, a state id and one era.
+2. Check that the entry has a source, a state id and a `founded:` time code.
 3. Set `status: filled`.
 
 ## Step 6: run the lens

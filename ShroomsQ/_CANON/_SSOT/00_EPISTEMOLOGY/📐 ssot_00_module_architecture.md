@@ -1,7 +1,7 @@
 ---
 type: ssot_00_foundations
 category: module_architecture
-version: 1.0.2
+version: 1.1.0
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -180,6 +180,7 @@ Every module variable must:
 - Use a scale class from the Base 60 SSOT (for numeric variables)
 - Declare its type from the standard type set
 - Declare its source (`authored`, `derived`, `computed`)
+- Declare its tag, `Static` or `Dynamic`, so the state architecture knows whether to record a state diff for it (IF-00-02-27; IF catalog call 4, ruled 2026-10-05)
 - List its read dependencies from core variables
 
 ### Step 4: Declare Access Pattern
@@ -267,6 +268,7 @@ VARIABLES:
     constraint: [divisibility constraint or none]
     default: [value or none]
     source: [authored, derived, computed]
+    tag: [Static or Dynamic]
     behavior: [one sentence]
 ```
 
@@ -292,9 +294,12 @@ FLAGS:
   - path: MOD.[CODE].FLG.[flag_name]
     trigger: [boolean expression using module + core variables]
     states: [ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE]
+    event_id: [fabula event_id, required in PENDING and FIRED_PRE_STORY]
 ```
 
 A module flag uses the four core definitions unchanged. ACTIVE means the condition is met now. PENDING means it is met at a defined narrative event. FIRED_PRE_STORY means it was met before story entry. INACTIVE means it is not met. The author of a module links to the vertical slice's "Flag Trigger Conditions" section instead of redefining them.
+
+A flag in PENDING stores the fabula `event_id` of the event that makes it true. A flag in FIRED_PRE_STORY stores the `event_id` of the story-entry marker. The fabula owns both ids (IF-00-04-06; IF catalog call 5, ruled 2026-10-05).
 
 ### Data Exchange Format
 
@@ -441,3 +446,4 @@ The registry is [📐 ssot_00_module_registry.md](📐%20ssot_00_module_registry
 |1.0.0|2026-03-08|Initial module architecture. Establishes Layer-Locked Module system, attachment protocol, data access rules, API contract, module lifecycle, application architecture vision, and registry format.|
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B9, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`; table-of-contents links repointed to in-page anchors; dependency names fixed to the real file stems; new subsection separating field modules from doc modules; registry format gains the `conceptual` and `absorbed` statuses; the registry pointer replaces "the next deliverable".|
 |1.0.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C7, the four flag states defined by link to the slice; C8, the rule for when a module moves from `planned` to `draft` to `active`.|
+|1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): Variable Declaration Block gains `tag: Static or Dynamic` (call 4); the flag block gains `event_id` for PENDING and FIRED_PRE_STORY (call 5).|

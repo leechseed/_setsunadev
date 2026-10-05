@@ -2,7 +2,7 @@
 type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
-version: 1.1.2
+version: 1.2.0
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -76,12 +76,14 @@ MODULE_DECLARATION:
 
 **Variables (per layer, 12 instances):**
 
-|Path|Type|Scale|Range|Constraint|
-|---|---|---|---|---|
-|`MOD.DUALISM.[LAYER].charge_value`|`int`|SC-60 (signed)|-30 to +30|None|
-|`MOD.DUALISM.[LAYER].pole_negative`|`str`|N/A|Freeform label|Trait name|
-|`MOD.DUALISM.[LAYER].pole_positive`|`str`|N/A|Freeform label|Trait name|
-|`MOD.DUALISM.[LAYER].behavior_desc`|`str`|N/A|Freeform|LoL ability-style sentence|
+|Path|Type|Scale|Range|Constraint|Tag|
+|---|---|---|---|---|---|
+|`MOD.DUALISM.[LAYER].charge_value`|`int`|SC-60 (signed)|-30 to +30|None|Dynamic|
+|`MOD.DUALISM.[LAYER].pole_negative`|`str`|N/A|Freeform label|Trait name|Static|
+|`MOD.DUALISM.[LAYER].pole_positive`|`str`|N/A|Freeform label|Trait name|Static|
+|`MOD.DUALISM.[LAYER].behavior_desc`|`str`|N/A|Freeform|LoL ability-style sentence|Static|
+
+Every module variable carries a `Static` or `Dynamic` tag, as the Variable Declaration Block in the module architecture requires (IF-00-02-27; IF catalog call 4, ruled 2026-10-05). Each planned module declares its tags when it moves to `draft`.
 
 **Reads:** All core layer base values, `T3.FUNC.resolve`
 
@@ -473,3 +475,4 @@ Build order for maximum independence: WALK → PHYS → COMBAT → FASHION → M
 |1.1.0|2026-10-04|BOLO 100 base batch 1 (B1, B2, B3, B9, B10, B13, B15), RULED Chief "REC.": frontmatter repaired with `trunk`; `module_of: ssot_00_module_architecture` stamped; table-of-contents links repointed; audit against slice 3.3.1 (SEX_PROF and VOICE absorbed, COPING narrowed, the rest still planned, none dropped); conceptual scopes written for CULTURE, SPIRIT and DESIGN with their variable lists parked as `⏸ module build (phase 2)`; dependency map and build order redone.|
 |1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): DESIGN and LOL_TAX counts set to 12 to match the 12-row mapping table.|
 |1.1.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C11, who reports and who rules an audit verdict (absorbed, retired, still planned).|
+|1.2.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 4, the DUALISM variables carry the `Static` or `Dynamic` tag the module architecture now requires.|

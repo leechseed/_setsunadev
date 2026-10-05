@@ -1,13 +1,13 @@
 ---
 type: ssot_00_foundations
 category: number_systems
-version: 1.0.3
+version: 1.1.0
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
-purpose: "Defines the base 60 (sexagesimal) number system as the foundational source for all integers in the LEECHSEED character pipeline. Establishes the divisor lattice, valid scale classes, pattern catalog, scale assignments, point budget recalibration, derived stat recalibration, and flag threshold recalibration."
+purpose: "Defines the base 60 (sexagesimal) number system as the foundational source for every scaled number in any system. Establishes the divisor lattice, valid scale classes, pattern catalog, scale assignments, point budget recalibration, derived stat recalibration, and flag threshold recalibration."
 dependencies: []
 supersedes_ranges_in: ["ssot_02_character_systems_vertical_slice"]
 ---
@@ -35,9 +35,11 @@ supersedes_ranges_in: ["ssot_02_character_systems_vertical_slice"]
 
 ## Purpose
 
-Every integer in the LEECHSEED character system derives from base 60. No numeric scale, point cost, threshold, or range is arbitrary. All are locked to patterns within the sexagesimal divisor lattice.
+Every scaled number in any system derives from base 60. No numeric scale, point cost, threshold, or range is arbitrary. All are locked to patterns within the sexagesimal divisor lattice.
 
 This document is the mathematical foundation. The Variable Registry (Phase 1) consumes this document for all numeric range definitions. The Vertical Slice SSOT consumes this document for point budgets, derived stat formulas, and flag trigger thresholds. Every downstream system that touches a number references this SSOT as the authority on why that number exists.
+
+**Scope.** This document covers every scaled number in any system of the Command, not the LEECHSEED character pipeline alone. The author gives every numeric field in the S1 to S12 setting layers and the P1 to P12 plot layers a scale class from this document. A time code takes no scale class, because a time code is an address and not a scale (IF catalog call 8, ruled 2026-10-05).
 
 ---
 
@@ -545,3 +547,4 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B7, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`, table-of-contents links repointed to in-page anchors, `supersedes_ranges_in` names the real file stem, armor index added to the Scale Assignment Table as SC-12.|
 |1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): C13 retired as a duplicate of C02, no renumbering; derived-stat display rule reworded to match the formula table (SC-30, SC-20, SC-60); the armor index row's formula corrected to `12 - armor_index`, matching the variable registry.|
 |1.0.3|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C6, rounding rule for a converted threshold added to Rule 7 (nearest valid value; Chief picks the direction on a tie or a broken constraint).|
+|1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): call 8, the scope line becomes "every scaled number in any system"; S1 to S12 and P1 to P12 numerics take scale classes; time codes take none (IF-00-03-07, IF-00-04-12, IF-00-08-06).|

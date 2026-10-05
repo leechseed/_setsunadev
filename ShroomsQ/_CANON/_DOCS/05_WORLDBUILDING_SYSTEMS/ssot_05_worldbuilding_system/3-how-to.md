@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md
-source_version: 1.1.1
+source_version: 1.2.0
 ---
 
 **Who it's for:** a writer who knows what the catalog is · **What it does:** step-by-step recipes for worldbuilding tasks · **Type:** how-to
@@ -45,7 +45,7 @@ Look up fields in the [reference](2-reference.md). Read the [concept](1-concept.
 
 1. Add a source to `sources`.
 2. Add a state id to `state`, in the form `<kind>:<slug>`.
-3. Add one era to `era`, using the 08 time code.
+3. Add `founded:`, an 08 time code, in place of the old `era`.
 4. Set `status: filled`.
 5. Fill other fields only when a scene, place or person needs them.
 
@@ -56,6 +56,11 @@ Look up fields in the [reference](2-reference.md). Read the [concept](1-concept.
 3. Set `origin` to the fabula event that brought it into being.
 4. Set `state` to the 08 subject id. Never copy state into the entry.
 5. Set `tropes` to the trope ids. Never restate the trope.
+6. Set `founded:` and `current:` to 08 time codes.
+7. Set `narrated_in:` to the 08 time code of the scene that first narrates the entry. Write `—` until then.
+8. Set `portable: true` when other stories may borrow the entry.
+9. Set `motif_ref:` to the 06 motif id when the entry is that motif's setting object.
+10. For a civilization only, fill `gauge:` with its value and the four steps.
 
 ## Retire an entry
 
@@ -67,7 +72,7 @@ Look up fields in the [reference](2-reference.md). Read the [concept](1-concept.
 ## Check the world with the coherence tests
 
 1. Run the script tests: CT1, CT3, CT4, CT5, CT6, CT9, CT13.
-2. Have a person read the reader tests: CT2, CT7, CT8, CT10, CT11, CT12, CT14, CT15, CT16.
+2. Have a person read the reader tests: CT2, CT7, CT8, CT10, CT11, CT12, CT14, CT15, CT16. Record the CT11 result on the entry as `ct11_verdict:`.
 3. Read each result as pass, fail, or "stub, not yet checkable".
 4. Treat a stub as not failing.
 5. Drop any test you cannot turn into a checkable statement.

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md
-source_version: 1.1.1
+source_version: 1.2.0
 ---
 
 **Who it's for:** a writer or script author looking things up · **What it does:** lists every worldbuilding component, field and value · **Type:** reference
@@ -76,9 +76,19 @@ Worldbuilding is the work of defining the shared things of a story's world (grou
 | 04 Plot | Entry `origin` names a fabula event | catalog points to 04 |
 | 09 Operations | No world-fact type; runs the compiler as a procedure | none |
 | 07 Style | No world-fact type; write-up follows 07.1 | none |
-| 06 Theme | The coherence lens asks 07 whether mechanics, environment and narrative reinforce one theme (BVX.0144) | lens asks 07 |
+| 06 Theme | The coherence lens asks 06 whether mechanics, environment and narrative reinforce one theme (BVX.0144); each entry's `ct11_verdict:` records the answer (IF catalog call 3, ruled 2026-10-05) | lens asks 06 |
 | 08 Tracking | Every change is a 08 record; entries hold a `state` pointer; the reader track is in 08 §9A | catalog points to 08 |
 | Trope layer | Every entry carries `tropes` | catalog points to layer |
+
+**Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
+
+- Read by 01 (IF-01-05-06): the Touchstones register reads the S12 Star-Rating rule from WB-CUS-0001, ruled keep 9/15.
+- Read by 06 (IF-05-06-03, IF-05-06-05): 06 reads `motif_ref:` to link a motif to its setting object, such as WB-TEC-0001.
+- Read by 06 (IF-05-06-04, IF-05-06-06): 06 reads `gauge:` and `ct11_verdict:` from each entry.
+- Read by 07.1 (IF-05-07-01, IF-05-07-02): 07.1 reads LNG entries as the world words prose may use unexplained.
+- Ruled by 07.3 (IF-05-07-05, IF-05-07-07): 07.3 rules the world view page; see THE WORLD VIEW.
+- Read by 04 and 08 (IF-04-05-03, IF-05-08-04): `narrated_in:`, `founded:` and `current:` are 08 time codes.
+- Read by 08 (IF-05-08-05, IF-05-08-06, IF-05-08-07): 08 `subject.kind` accepts the state kinds below, `world` included.
 
 ### Vocabulary (ruled 9/29)
 
@@ -126,7 +136,7 @@ An infrastructure is an area a complete world must answer for. Ten merge nine so
 
 - **Sourcing:** Wolf's list (BVX.0562) is not in the shelf extraction. OPEN 8 closed it from BVX.0562's distill. Wolf's eight (maps, timelines, genealogies, nature, culture, language, mythology, philosophy) all land in the spine.
 - **Departure dial:** how far each infrastructure departs from our world: nominal, cultural, natural, ontological (BVX.0562). Scored on nine axes as same, augmented or different (BVX.0630).
-- **Scale ladder:** world-economy, nation-state, locality (BVX.1161). The dial says which rung pressure starts from.
+- **The reach:** world-economy, nation-state, locality (BVX.1161). The dial says which tier pressure starts from. "Scale ladder" now means only 01's R1 BEAT to R8 UNIVERSE; the reach is a separate scale (IF-01-05-12; IF catalog call 10, ruled 2026-10-05).
 - **Not separate infrastructures:** Stars and Planets go to 03 S1. Urban Fantasy and Paranormal Romance is a genre choice, so it goes to the departure dial. Audio-Visual maps to 03 S3 SENSORIUM. Game Mechanics is dropped.
 - **Method:** bricolage (BVX.0141). Two build orders, top-down and bottom-up (NEW-blueprint). Geography comes before culture (BVX.0458).
 
@@ -140,15 +150,15 @@ A coherence test is a named, checkable pass-or-fail check. "Runs as": S is scrip
 | CT2 | Geography feeds economy | Every economy line names a resource the place supplies; every building style names its habitat material | R |
 | CT3 | The gap-fill | Every institution names the rupture it fills; the rupture is a fabula event or an S5 SCAR | S |
 | CT4 | Apocalypso | Every ruin has a dated fall; every dungeon-like ruin has a builder | S |
-| CT5 | Bookends | Each place or group has a founding and a current endpoint; a founding line counts only if it still bites now | S |
+| CT5 | Bookends | Each place or group has a founding and a current endpoint, held as `founded:` and `current:` 08 time codes; a founding line counts only if it still bites now | S |
 | CT6 | Legitimacy | Every governing entry states coercion, rule-making and consent, or says which is missing | S |
 | CT7 | Departure consistency | Each departure is scored on nine axes once and applied the same everywhere | R |
 | CT8 | Distinctiveness | An entry used in a scene exerts pressure or is marked scenery | R |
-| CT9 | Onstage canon | A fact enters canon only when a scene narrates it | S |
+| CT9 | Onstage canon | A fact enters canon only when a scene narrates it; the entry's `narrated_in:` holds that scene's 08 time code | S |
 | CT10 | Compossibility and retcon cost | A new entry is checked against existing entries; a change to a narrated entry is logged as a retcon with its cost | R |
-| CT11 | Reinforcement | Mechanics, environment and narrative point at the same theme; the answer lives in 06 | R |
+| CT11 | Reinforcement | Mechanics, environment and narrative point at the same theme; each entry carries `ct11_verdict:` (argues, neutral or undercuts), judged against 06's controlling idea | R |
 | CT12 | Honest consequence | Consequences run as stated, not bent to convenience | R |
-| CT13 | Scale source | Every pressure names its starting rung | S |
+| CT13 | Reach source | Every pressure names the tier of the reach it starts at | S |
 | CT14 | Referential density | Dense at the story's center, fuzzy at the edge | R |
 | CT15 | What a character knows | A character knows only history relevant to that person; owner 02 | R |
 | CT16 | Tension generator | The world's systems create built-in pressures a scene can use | R |
@@ -198,7 +208,18 @@ id: "WB-<TYPE>-<nnnn>"
 type: "<type code>"
 name: "<working name>"
 aliases: []
-era: ["<time code range>"]       # uses the 08 time code
+founded: "<08 time code>"        # CT5 founding endpoint; replaces `era:`
+current: "<08 time code>"        # CT5 current endpoint
+narrated_in: "<08 time code>"    # the scene that first narrates it (CT9); — until narrated
+portable: false                  # true = other stories may borrow this entry
+motif_ref: "<motif.slug>"        # -> 06 motif this entry is the setting object of
+ct11_verdict: "<argues | neutral | undercuts>"   # CT11
+gauge:                           # civilizations only; omit elsewhere
+  value: "<gauge value>"
+  positive: "<step 1>"
+  contrary: "<step 2>"
+  contradictory: "<step 3>"
+  negation_of_negation: "<step 4>"
 places: ["<place_id>"]           # -> 03
 groups: ["<WB-GRP id>"]
 origin: "<fabula event_id>"      # -> 04
@@ -210,8 +231,9 @@ sources: ["<BVX / NEW / canon node>"]
 status: "stub | filled | canon | provisional"
 ```
 
+- **The widened schema (IF catalog call 3, ruled 2026-10-05):** `founded:` and `current:` replace the one `era:`. Only a civilization carries `gauge:`: its value and four steps. `portable:` marks an entry other stories may borrow. Every time code is the 08 time code.
 - **Inference:** an inferred field reads `inferred`. A field not yet narrated reads `—`. `status` reads `provisional`, never a glyph.
-- **Stub promotion:** a stub becomes `filled` with a source, a state id and one era.
+- **Stub promotion:** a stub becomes `filled` with a source, a state id and a `founded:` time code.
 - **Retired entries:** keep the file, set `status: retired`, point to the doc that took it. The id is never reused.
 
 ### The types
@@ -229,7 +251,7 @@ The code is the id prefix. Twelve types is the ceiling. OPEN 4 opened eight firs
 | FSU | Food and substances | What people eat, drink and take; merged from food, subsistence, drug culture | none stated |
 | INS | Institutions and forms of rule | A court, school board, guild, standards body | none stated |
 | ECO | Goods, money, and trade | A good, currency or route | A place's economy stays in 03 S6 |
-| LNG | Language and naming | A tongue, naming custom or term body | none stated |
+| LNG | Language and naming | A tongue, naming custom or term body; its entries are the list of world words 07.1 lets prose use unexplained | none stated |
 | BIO | Creatures and flora | An animal, plant or non-human being | none stated |
 | RUL | World rules | A rule departing from our world, with source, cost, limits; nine-axis score | none stated |
 
@@ -269,17 +291,19 @@ Marked "catalog fills (phase 2)". None is filled.
 
 The compiled, read-only page. A script reads 02, 03, 04, 08, the catalog and the trope layer. It edits nothing.
 
-- **Shows:** each catalog entry as a row (type, name, eras, places, groups). Each place's catalog entries beside its 03 slice header. Each group's members, customs, dress, styles and faction card.
+- **Shows:** each catalog entry as a row (type, name, founded and current time codes, places, groups). Each place's catalog entries beside its 03 slice header. Each group's members, customs, dress, styles and faction card.
 - **Test results:** CT1, CT3, CT4, CT5, CT6, CT9, CT13 as pass, fail, or "stub, not yet checkable".
 - **Gap list:** infrastructures I1 to I10 with no entry, shown as gaps, not failures.
-- **Filters:** era (08 time code), place (03 `place_id`), group (GRP id), type (type code).
+- **Gauges:** each civilization's gauge, its value and four steps.
+- **Page rules:** 07.3 rules the page: dark palette, thin header strip, CK3 hover terms and static Mermaid markup (IF catalog call 7, ruled 2026-10-05).
+- **Filters:** era (the span from `founded:` to `current:`, in the 08 time code), place (03 `place_id`), group (GRP id), type (type code).
 - **Edits:** happen at the owning file. The view has no input fields.
 
 ## THE PROOF — DCUS (1.0, 2026-09-29)
 
 DCUS narration is marked phase 2. The catalog proved itself on DCUS: filled from canon, every inference marked `inferred`.
 
-| Entry | Type | Era | Origin | Rung |
+| Entry | Type | Era | Origin | Reach |
 |---|---|---|---|---|
 | WB-INS-0001 The Administration | INS | backstory to M4 | backstory_dcus_rebrand (inferred) | nation-state (inferred) |
 | WB-GRP-0001 The Bishops | GRP | backstory to M4 | backstory_dcus_rebrand | locality |
@@ -290,9 +314,9 @@ DCUS narration is marked phase 2. The catalog proved itself on DCUS: filled from
 | WB-WDR-0001 Feed-linked clothing | WDR | M2 to M4 | none in canon | locality |
 
 - **Findings:** Tremor Cult was misfiled; its entry is retired. Quinn Bishop has no 02 node yet; the link check reports it owed by 02. Every era ends at M4 because canon casts DCUS for Movements 2 to 4.
-- **State ids:** `state:` reads `<kind>:<slug>`, with kind one of `place`, `group`, `belief`, `custom`, `tech`, `wardrobe`, `architecture`. A subject need not have story points yet.
+- **State ids:** `state:` reads `<kind>:<slug>`, with kind one of `place`, `group`, `belief`, `custom`, `tech`, `wardrobe`, `architecture`, or `world` for a world-level change. 08 `subject.kind` accepts all eight. A subject need not have story points yet.
 - **The lens, run 9/29:** script tests CT1, CT3, CT5, CT6, CT13 pass on the filled set. CT4 has no ruins yet. CT9 has no canon claims yet. Reader tests CT10, CT11, CT14, CT16 pass. CT2, CT7, CT8, CT12, CT15 stub. No fails.
-- **1.0 bar (SOP §5):** Shape, Shelf (27 books), Proof (DCUS), Ruled (OPEN 1 to 9). Wired (02, 03, 04, 08, tropes) and Store (7 filled) follow. The system meets all of them.
+- **1.0 bar (SOP §5):** Shape, Shelf (27 books), Proof (DCUS), Ruled (OPEN 1 to 9). Wired (02, 03, 04, 08, tropes) and Store (7 filled) follow. The system meets all of them. The 1.0 bar is SOP §5's six, and no other list counts (IF catalog call 10, ruled 2026-10-05).
 
 ## WORLDBUILDING × LIBRARY
 
@@ -316,7 +340,7 @@ The 27 books the system reads, with what each gave.
 | BVX.1156 Robbins, *Kingdom* | Touchstone and Roles; Crossroad procedure |
 | BVX.1137 Rejec | Pointcrawl; reusable precursor fall |
 | BVX.1138 Baur et al., *Midgard* | Trade goods; trading houses; Masks doctrine |
-| BVX.1161 Flint and Taylor | Scale ladder; sovereignty and boundaries |
+| BVX.1161 Flint and Taylor | The reach (three tiers); sovereignty and boundaries |
 | BVX.1162 Morris and Scheidel | Coercion, rule-making, consent |
 | BVX.1165 Nelson | Habitats as raw material; wardrobe |
 | BVX.0067 *Collaborative Worldbuilding for Writers and Gamers* | Definition; four pillars |

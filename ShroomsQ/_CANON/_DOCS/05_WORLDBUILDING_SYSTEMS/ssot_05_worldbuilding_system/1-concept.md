@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md
-source_version: 1.1.1
+source_version: 1.2.0
 ---
 
 **Who it's for:** a writer or Chief who wants the why · **What it does:** explains why a world needs a catalog, a lens and a view · **Type:** concept

@@ -169,9 +169,9 @@ Rule 6 of the character state doc (one state per narrative moment) is too heavy 
 ```yaml
 story_point_id: "<slug>"
 subject:
-  kind: character | trait | trope | place | relationship
+  kind: character | trait | trope | place | relationship | theme | gauge | group | belief | custom | tech | wardrobe | architecture | world
   id: "<subject_id>"
-field: "<field path>"              # e.g. L5_WOUND.value, or a trope_id's status
+field: "<field path>"              # e.g. L5_WOUND.value, a trope_id's status, or motif.<slug>
 value: "<new value>"
 at: "M2 · Q1 · S04 | 012.3.2"      # the time code (§4)
 origin_event: "<fabula event_id>"  # optional — the world-clock anchor, when this point reads from a dated fabula event
@@ -182,7 +182,18 @@ span: "<time-code range>"          # optional — e.g. "M2 · Q1 · S01 | 001.1.
 
 **Iterative field (RULED 2026-09-29, BOLO 90 step 7 trial).** `repeat_count` and `span` are additive, optional fields for a story point whose `frequency_mode` (the syuzhet's own field, [📐 ssot_04_plot_system.md](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) THE TOLD ORDER) reads `iterative` — Genette's "told once, happened many times." A `ramp: true` value already draws the slope between two points; `repeat_count`/`span` name how many happenings and what stretch of grid that slope stands for, closing the field trial's flagged gap that `bar.beat.tick` addresses one instant only.
 
-**Theme and trope hooks (RULED 2026-10-04, BOLO 100).** A trope is a track of `kind: trope`; its story points use the trope's `id` as `subject.id`. A theme motif is a story point whose `field` is `motif.<id>`. The trope register and the theme doc own the ids; this document gives only the address.
+**Subject kinds (IF catalog calls 2 and 3, ruled 2026-10-05).** The first five kinds are the original set. The rest are new.
+
+| `subject.kind` | Holds | Id form |
+|---|---|---|
+| `theme` | A theme track. 06 names the rails and motifs; a point at a scene's time code records the rail that scene tests (R1 to R4) and the side it argues (IF-06-08-04). 06's scene card is the source | `holders:` on each 06 rail name 08 track ids; motif points use `field: motif.<slug>` |
+| `gauge` | A continuous value lane under a character or world track: the Freedom, Fairness and civilization gauges, each one of four steps (IF-06-08-03, IF-06-08-06). It is an automation lane (§8) | The gauge name |
+| `group` · `belief` · `custom` · `tech` · `wardrobe` · `architecture` | A catalog thing from 05 Worldbuilding, with `place` already in the set (IF-05-08-05, IF-05-08-06) | `<kind>:<slug>`; the catalog entry id is `WB-<TYPE>-<nnnn>` |
+| `world` | The story world itself, for world-level changes such as a rebrand or a world rule (IF-05-08-07) | `world:<slug>` |
+
+**Which fields a story point may change.** A story point changes only a field the 02 field-tag table marks Dynamic. It never changes a Static field. Derived values are never stored (IF-02-08-11).
+
+**Theme and trope hooks (RULED 2026-10-04, BOLO 100).** A trope is a track of `kind: trope`; its story points use the trope's `id` as `subject.id`. A theme motif is a story point whose `field` is `motif.<id>`. The trope register owns trope ids, and 06 mints the `motif.<slug>` ids (IF-06-08-02). This document gives only the address.
 
 A checkpoint keeps the shape already defined in [🔮ssot_02_character_state_architecture.md](../02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md) §State Record Format; that shape is unchanged by this document.
 
@@ -238,7 +249,7 @@ meter_marker:
   beats_per_bar: 4                 # 3, 4, 7 and so on; the marker holds until the next one
 ```
 
-- **Planned vs measured lanes.** Chief sets the intended tempo curve; the tool measures the real one from the draft by counting beats against words or seconds. The gap between the planned lane and the measured lane is the readout — where the draft drags or rushes against the plan.
+- **Planned vs measured lanes.** Chief sets the intended tempo curve; the tool measures the real one from the draft by counting beats against words or seconds. 07.1 reads the planned audience tempo for prose and sets the beat-boundary mark the tool counts (IF catalog calls 6 and 7, ruled 2026-10-05; IF-07-08-02, IF-07-08-03). The gap between the planned lane and the measured lane is the readout — where the draft drags or rushes against the plan.
 
 - **Proportion lane.** A `proportion` lane sits beside the tempo lane. It plans and measures how much of the story each act or third takes (BVX.0236: Beginning, Middle and End average 25/50/25). The default plan is 25/50/25. The tool measures the share from P1 percentage addresses. The readout is the drift between plan and draft.
 
@@ -261,7 +272,7 @@ One table maps the whole tracking system onto Ableton's own vocabulary (DISTILL 
 |---|---|
 | **Tracks** | Threads — one lane per character, trait, trope, place, or relationship ([📐 ssot_01_scale_ladder.md](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md), THREADS) |
 | **Clips / locators** | Rungs — the ladder's containers (R1–R8, §4) |
-| **Automation lanes** | Continuous values under a track — a trait's value, tension, a setting layer |
+| **Automation lanes** | Continuous values under a track — a trait's value, tension, a setting layer, a gauge (§5) |
 | **Session ↔ Arrangement** | Fabula ↔ told order — the two rulers (§2) |
 | **Reader track** | An automation lane per character: the reader's belief and trust over time (§9A) |
 | **Take lanes** | A/B version compare — deferred (§6) |
@@ -274,8 +285,16 @@ One table maps the whole tracking system onto Ableton's own vocabulary (DISTILL 
 - **Setting overlays (Axis 4)** ([📐 ssot_03_setting_system.md](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md)) — dated the same way fabula is, per Step 1 call 2 (DISTILL §13): the same world-clock dating this document's §2 defines.
 - **Fabula** ([📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md)) — supplies the world clock and the `enable` edge that cables (§6) ride on.
 - **Character state** also reads the reader track: `disclosure` marks what the reader has been shown (§9A). The character system's OPEN call 9 is closed here and moved to §9A.
-- **The story workspace** (BOLO 79) — the arrangement view (tracks, rung ruler, playhead, cables) is this document's shell (DISTILL §9, "What this changes in the build order").
+- **The story workspace** (BOLO 79) — the arrangement view (tracks, rung ruler, playhead, cables) is this document's shell (DISTILL §9, "What this changes in the build order"). 07.3 rules its hover and Info View behavior (IF-07-08-05).
 - **The timeline tool** (BOLO 35) — its store-shape fork is answered here: one store, every track reads it (DISTILL §9; see §1 of this document).
+
+**Interfaces.** One line per wiring that another system states.
+
+- Reads from 00 (IF-00-08-01): `T3.IMPRINT.primary_attachment_object` (a character id, `deceased`, `absent` or `none`) is a field a story point may change.
+- Read by 05 (IF-05-08-02, IF-05-08-03): each catalog entry's `state: "<08 subject id>"` is a `<kind>:<slug>`. The world-view compiler reads that subject's story points and checkpoints.
+- Read by 09 (IF-08-09-01): the character pipeline writes a single-field change between fabula events as a §5 story point, never as a checkpoint.
+- Read by 01 texture (IF-01-08-04): the T7 payoff ledger reads `character_id` and `shifted_at` from §9A.
+- Read by 07.1 (IF-07-08-01): 07.1 reads the audience tempo (beats per 1,000 words for prose) and the planned and measured tempo lanes from §7.
 
 ---
 
@@ -295,6 +314,29 @@ disclosure: revealed | concealed   # revealed = the reader has been shown the tr
 ```
 
 **Reading it.** The value steps by default (§5). A scene that moves the reader's belief or trust writes a new entry at its time code. A `concealed` entry with high `trust` marks a lie the reader still holds; the reveal scene flips it to `revealed` and drops `trust`. A cable (§6) can run from the scene that plants a belief to the scene that overturns it.
+
+**Anna's reader track (IF catalog call 2, ruled 2026-10-05).** Anna's reader track lives here. 06 cites it to hold open whether she is a cog, a believer or a mask (IF-06-08-05). Her entries stay `concealed` while the story holds the question open, and the reveal scene flips them to `revealed`.
+
+**Hook ledger (IF catalog call 6, ruled 2026-10-05).** The ledger sits beside the T7 payoff ledger that 01 texture keeps. It tracks serial hooks a container leaves open. Each entry holds the fields below.
+
+```yaml
+hook_id: "<slug>"
+type: "<P6 hook type>"             # Mystery | Consequence | Thematic Echo | Character | Mechanical
+container: "<ladder rung unit>"    # the unit that closes on the hook, as a time code (§4A)
+payoff_at: "M3 · Q2 · S09"         # the time code (§4A) where the hook pays off; unset while the hook is open
+```
+
+A hook with no `payoff_at` is open, and the tool flags it the way it flags an orphan cable (§6) (IF-01-08-14).
+
+**Touchstone breach log (IF catalog call 6, ruled 2026-10-05).** A breach invalidates every downstream unit that trusted the breached unit. The log records each breach once.
+
+```yaml
+breach_at: "M2 · Q1 · S04 | 012.3.2"   # the time code (§4A) of the breach
+touchstone_id: "TS 1:3"                # the Touchstone breached, by its TS id
+invalidated_units: ["<time code>"]     # downstream units that trusted the breached unit
+```
+
+(IF-01-08-16.)
 
 **Sources:** BVX.0279 (Iglesias, the reader's emotion as the thing a script manages) · BVX.1147 (Doležel, the epistemic system: known, unknown, believed; deception keeps the split).
 
@@ -317,6 +359,7 @@ The method is complete. The items below are build work or phase 2, one line each
 
 |Version|Date|Changes|
 |---|---|---|
+|1.2.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): new §4A, The Address (the time code is the one address in every system, the ladder mapping, the fields that carry it, no SC class); `subject.kind` gains `theme`, `gauge`, 05's kinds and `world`; §9A gains Anna's reader track, a hook ledger and a Touchstone breach log; §7 names 07.1 as reader of planned tempo; Interfaces lines in §9.|
 |1.1.1|2026-10-04|BOLO 100 D3: Sources line added to §9A (BVX.0279, BVX.1147).|
 |1.1.0|2026-10-04|RULED 2026-10-04, Chief ("rec"), BOLO 100 follow-up TR-1. §7 gains the `proportion` lane (`span`, `planned_share`, `measured_share`; 25/50/25 default; measured from P1 percentage addresses) and an optional 1 to 10 reversibility score on P9 `stakes_delta`. Source BVX.0236 cited. Additive.|
 |1.0.0|2026-10-04|RULED 2026-10-04, Chief ("REC"), BOLO 100 tracking/worldbuilding batch 1. Theme and trope hooks (§5); `tempo_point` and `meter_marker` shapes (§7); time-code ordering rule (§4); reader track in the map and consumers (§8, §9); §10 rewritten, with the open build steps tagged phase 2 or tool builds; dependencies add the worldbuilding system and trope register. The `provisional` rule reworded to "still unset". Method gaps closed.|
