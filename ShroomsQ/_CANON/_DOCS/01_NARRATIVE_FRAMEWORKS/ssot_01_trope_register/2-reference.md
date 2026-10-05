@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer, designer or script author looking up a field, key or count · **What it does:** lists every component of the trope register · **Type:** reference
@@ -65,18 +65,16 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 
 **The pull list.** [LAYERS.md](../../../../../_tools/tropes/data/domains/LAYERS.md) lists every layer with every trope keyed to it.
 
-> **OPEN:** the source's `purpose` line says "4,948 TV Tropes tropes," while the counts say 8,700. The 4,948 figure is the 0.2.0 total. The doc leaves the purpose line unchanged.
 
 ## READING THE SKEW
 
 The source reads each pile as a fact about the index.
 
-- **Character piles on L12 FUNCTION (508) and L1 CORE (291)**. The Characters As Device index is mostly cast roles and types.
-- **Setting piles on S1 BODY (276).** The Settings index lists place types such as the castle and the diner. Deeper layers, such as S2 WEATHER (3), are thin because TV Tropes has few tropes for them.
-- **Theme nulls run high (797).** Death (1,035) and Family are broad. Most of their tropes argue none of the four rails. The rails are narrow. That is not a keying fault.
-- **1,157 tropes had no one-line definition** on their index page and were keyed from the name alone. Most of the 658 low-confidence keys are these.
+- **Character piles on L12 FUNCTION (485) and L1 CORE (316)**. The Characters As Device index is mostly cast roles and types.
+- **Setting piles on S1 BODY (385).** The Settings index lists place types such as the castle and the diner. Deeper layers, such as S2 WEATHER (36), are thin because TV Tropes has few tropes for them.
+- **Theme nulls run high (1,182).** Death (1,035) and Family are broad. Most of their tropes argue none of the four rails. The rails are narrow. That is not a keying fault.
+- **1,018 tropes have no one-line definition** on their index page and were keyed from the name alone. Most of the 1,024 low-confidence keys are these.
 
-> **OPEN:** the skew figures (508, 291, 276, 797, 1,157, 658) do not match the counts table (485, 316, 385, 1,182, 1,018, 1,024). The skew section appears to hold earlier figures. The source does not say.
 
 ## COMMAND-LOCAL RECORDS (ruled 9/29, BOLO 91)
 

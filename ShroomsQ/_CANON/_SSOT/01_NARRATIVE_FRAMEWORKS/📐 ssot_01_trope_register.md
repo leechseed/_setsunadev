@@ -1,12 +1,12 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 1.0.0
+version: 1.0.1
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, all future IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: undefined-trope rule written; OPEN list closed. Earlier: RULED 2026-09-29 — BOLO 89 (Chief, \"I'll recommend\" · \"go\" · \"all recommendations\"); keyed by three PS batches, RANGE-checked (0 findings)"
-purpose: "THE TROPE REGISTER: one trope layer under every system. 4,948 TV Tropes tropes, each tagged with the domains it serves and keyed to a layer of that domain's slice, so any layer can pull its tropes."
+purpose: "THE TROPE REGISTER: one trope layer under every system. 8,700 TV Tropes tropes, each tagged with the domains it serves and keyed to a layer of that domain's slice, so any layer can pull its tropes."
 dependencies: ["ssot_04_trope_graph (the plot consumer)", "ssot_02_character_systems_vertical_slice", "ssot_03_setting_system", "ssot_01_genre_system", "ssot_07_theme_system"]
 trunk: BLACK
 sources: ["_tools/tropes/fetch.py --domains", "_tools/bolostatus/work/89/keys.batch01–16.json", "_tools/tropes/build_register.py"]
@@ -55,10 +55,10 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 
 ## READING THE SKEW
 
-- **Character piles on L12 FUNCTION (508) and L1 CORE (291).** The Characters As Device index is mostly cast roles and types; that is what the index holds, not a keying fault.
-- **Setting piles on S1 BODY (276).** The Settings index lists place types (the castle, the diner); the deeper layers (S2 WEATHER 3) are thin because TV Tropes has few tropes for them.
-- **Theme nulls run high (797)** because Death (1,035) and Family are broad: most of those tropes argue none of the four rails. That is the rails being narrow, not a keying fault.
-- **1,157 tropes had no one-line definition** on their index page and were keyed from the name alone; most of the 658 low-confidence keys are these.
+- **Character piles on L12 FUNCTION (485) and L1 CORE (316).** The Characters As Device index is mostly cast roles and types; that is what the index holds, not a keying fault.
+- **Setting piles on S1 BODY (385).** The Settings index lists place types (the castle, the diner); the deeper layers (S2 WEATHER 36) are thin because TV Tropes has few tropes for them.
+- **Theme nulls run high (1,182)** because Death (1,035) and Family are broad: most of those tropes argue none of the four rails. That is the rails being narrow, not a keying fault.
+- **1,018 tropes have no one-line definition** on their index page and were keyed from the name alone; most of the 1,024 low-confidence keys are these.
 
 ## COMMAND-LOCAL RECORDS (ruled 9/29, BOLO 91)
 
@@ -88,6 +88,7 @@ No character is changed by this ruling — it names a pattern, not a fix.
 
 ## Version history
 
+- **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): purpose line says 8,700 tropes; skew section recomputed from the counts table.
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Undefined-trope rule written: no definition means key by title and domain tags, flagged `undefined`. OPEN list closed; consumer TROPES sections parked as `⏸ TROPES pointer sections (phase 2)`.
 
 - **0.5.0 — 2026-10-03.** Wave B keyed: 2,175 keys on 9 PS batches (B1–B9) — theme 1,013 (Love · Power · Emotion · Identity) · style 831 (Language · Costume · Graphical · Lighting · Amazing Technicolor → 06.1 PROSE / 06.3 PAGES) · plus 351 straggler setting/texture/tracking keys from tropes that wave A's index re-run tagged after keying. RANGE caught one file with unquoted keys and three missing domain keys → 0. The spread check passed: no layer swallowed a domain. Every trope in the index is keyed.

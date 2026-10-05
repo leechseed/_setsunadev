@@ -1,17 +1,17 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.5.0
+version: 1.6.0
 tier: narratology
 module_of: ssot_06_1_prose_style
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 reader: "anyone writing for the Command: Claude sessions first, Chief when he checks"
 doc_type: reference
 owner: "Chief (HOTLINE ACTUAL); Claude keeps it"
 state: ruled
-reviewed: 2026-10-04
+reviewed: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
-status: "v1.5.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: rules 3.5 voice by page type, 3.6 order of ideas, and five word-pass questions in 3.4. Earlier: v1.4.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: module stamps on 06.2a and 06.2b recorded. canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
+status: "v1.6.0 2026-10-05: RULED, Chief (\"All recs go\") — BOLO 104: section 5, visuals. Earlier: v1.5.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: rules 3.5 voice by page type, 3.6 order of ideas, and five word-pass questions in 3.4. Earlier: v1.4.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: module stamps on 06.2a and 06.2b recorded. canonical core (the documentation SOP, BOLO 95, folded in 2026-10-04); all five merge calls ruled"
 purpose: "The index and the rules for how the Command writes: replies, readbacks, and the SSOT documentation conventions. Points to the writing guide (06.2a) and the markdown-marking standard (06.2b); gathers the reply-format rulings that today live only in SOP §7 and in memory."
 dependencies: ["_tools/bolostatus/work/95/DOC-SOP.md (the teach-back record)", "[[📐 ssot_06_2a_writing_guide]]", "[[📐 ssot_06_2b_markdown_marking]]", "SOP.md §7"]
 trunk: BLACK
@@ -74,6 +74,16 @@ Two things are called "style" in the Command and they are not the same thing. **
 | 4.1 | **Troubleshooting**: starts from what the reader sees. One entry per problem: symptom, then cause, then fix. The heading is the symptom in the reader's words. | 2026-10-03 |
 | 4.2 | **Glossary**: one entry per term, alphabetical. Each entry is the term, a one-line plain meaning, and a link to where it is used. An old name points to the current one. | 2026-10-03 |
 | 4.3 | **Decision record**: one decision per page, dated, with who ruled it. Three parts: what we decided, why, and what we gave up. Never edited after it is ruled; a new decision gets a new record that points back. | 2026-10-03 |
+
+**5 · Visuals** (BOLO 104, ruled 2026-10-05, Chief: "All recs go")
+
+| # | Rule | Locked |
+|---|---|---|
+| 5.1 | A visual makes the same claim as the words, a second way. It never carries a claim the text lacks. | 2026-10-05 |
+| 5.2 | The job picks the picture. A **flow** shows a process. A **tree** shows a hierarchy. A **graph** shows how parts connect. A **state diagram** shows change over time. A **timeline** shows order. A **matrix** crosses two dimensions. A **mind model** shows a whole system in one view. | 2026-10-05 |
+| 5.3 | Every concept page opens with a mind model. A reference page adds a structure diagram when its system has more than five components. | 2026-10-05 |
+| 5.4 | Every visual carries a one-line caption that tells the reader what to look at. | 2026-10-05 |
+| 5.5 | Diagrams are Mermaid, written into the page's static markup ([06.3](📐%20ssot_06_3_pages_style.md)), in the Command's colors. | 2026-10-05 |
 
 **Applied so far (2026-10-04):** the SOI (reviewed in three passes, 46 entries rewritten), the sit rep page and the DOPE SHEETs (header, writer briefs, and a long-sentence check in the reviewer script).
 
@@ -143,6 +153,7 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): fold BOLO 6's distil
 
 ## VERSION HISTORY
 
+- **1.6.0 · 2026-10-05** — RULED, Chief ("All recs go"), BOLO 104: section 5, visuals (rules 5.1–5.5), proposed as recs the same turn.
 - **1.5.0 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 follow-up (ST-L1 to ST-L3): rule 3.5 voice by page type; rule 3.6 order of ideas; rule 3.4 words pass written as five questions. Sources CRE.02, CRE.03, CRE.04, TEC.04 cited.
 - **1.4.1 · 2026-10-04** — RULED, Chief ("rec"), BOLO 100 style batch 1: 06.2a and 06.2b stamped `module_of` this page; no rule changed.
 - **1.4.0 · 2026-10-04** — SOP §7 rules 17–20 added (BOLO 6, second wave).
