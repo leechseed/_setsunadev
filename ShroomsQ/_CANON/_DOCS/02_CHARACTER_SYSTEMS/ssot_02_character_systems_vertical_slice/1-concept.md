@@ -80,7 +80,7 @@ No new field ships without a tag: static, dynamic or derived. The tag says wheth
 
 ## The long read
 
-The document grew by waves, and the waves explain its shape. The first version held the slice and Victoria's instance. On 2026-09-16 the character shelf of the library arrived and the system gained mind models and a library table. On 2026-09-29 the L9 EROS synthesis added ten changes. On 2026-10-04 four waves landed in one day: wave 2, wave 3, the schema pass and the library pass.
+The document grew by waves, and the waves explain its shape. The first version held the slice and Victoria's instance. On 2026-09-16 the character shelf of the library arrived and the system gained mind models and a library table. On 2026-09-29 the L9 EROS synthesis added ten changes. On 2026-10-04 versions 2.3.0 to 3.3.3 landed in one day. They include wave 2, wave 3, the schema pass and the library pass.
 
 The schema pass shows the discipline best. The three waves coined 155 variable names. Twelve became fields. Four were added by ruling. Everything else became an alias of an existing field or was dropped. One idea keeps one name. The pass reads as a refusal to let the vocabulary sprawl.
 

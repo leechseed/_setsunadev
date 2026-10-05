@@ -29,7 +29,7 @@ One entry per component and part, in source order. The tool is `_tools/vocab_har
 
 1. A reader never bolds. A writer never highlights. Ink identifies the hand.
 2. A highlight names a load-bearing term: a word or phrase the argument cannot stand without in this source. Unknown words go to the dictation lexicon or the spell dictionary.
-3. A highlight carries no definition inline. The writer supplies the sense at harvest, in the meaning the term has in that source.
+3. A highlight carries no definition inline. The sense is written at harvest, in the meaning the term has in that source.
 4. Every mark survives the Command editors. Prettier rewrites `*x*` to `_x_` and pads tables, and leaves `**`, `==` and `[[ ]]` alone. So write italic with underscores.
 5. A highlight is removed in two cases: the term is promoted to a wikilink, or review finds it not load-bearing.
 6. Highlight renders in Obsidian, and in VS Code with a preview extension. VS Code's source view shows two equals signs. The end-state renderer is the MCDP browser (BOLO 33).
@@ -38,7 +38,7 @@ Connects to: the writer's bold rule in [07.2a](../ssot_07_2a_writing_guide/2-ref
 
 ## IMPLEMENTATION
 
-The four protocols below run in order for a reading block. Each is one part.
+Implementation has four parts. Each is one entry below.
 
 ### Reader protocol
 

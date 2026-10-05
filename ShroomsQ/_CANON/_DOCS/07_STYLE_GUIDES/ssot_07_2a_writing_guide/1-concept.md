@@ -59,7 +59,7 @@ The header also carries the page's keeping fields: reader, doc_type, owner, stat
 
 ## The long read
 
-Three of the five 2026-10-04 merge calls reshaped this guide. Contractions are allowed. The frame stays while the body follows type. The header fields are added. A fourth call split a stray Goon Room protocol out of this file into 09_OPERATIONS. So the guide holds one job.
+Four of the five 2026-10-04 merge calls landed in this guide. Contractions are allowed. The frame stays while the body follows type. The header fields are added. The fourth call split a stray Goon Room protocol out of this file into 09_OPERATIONS. So the guide holds one job.
 
 See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md). The governing rules live in [documents style](../ssot_07_2_documents_style/2-reference.md).
 

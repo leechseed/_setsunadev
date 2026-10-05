@@ -160,3 +160,5 @@ A ten-question pass a reviewer reads against a draft before it counts as ready.
 10. **Motive:** does the narration leave every motive unstated?
 
 > **OPEN:** the source's SOURCES table lists Booth, Genette, Rimmon-Kenan, Pinker, Clark and Johnston with no BVX id ("—").
+
+> **OPEN:** the source's body recs on profanity and explicitness still say "YA-adjacent" and "opt-in per IP". Its OPEN calls 3 and 4 struck both. This page follows calls 3 and 4.

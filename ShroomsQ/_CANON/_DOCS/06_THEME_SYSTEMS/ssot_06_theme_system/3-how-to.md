@@ -42,6 +42,8 @@ Look up terms in the [reference](2-reference.md). Read the [concept](1-concept.m
 4. Add a second gauge only if one point of view runs on a different value. Give it the same four steps.
 5. Test it: every scene's value-in and value-out on the plot card names one step.
 
+> **OPEN:** the source says to write the four steps "worst to best" but lists them best to worst (positive first, the negation of the negation last).
+
 ## Choose and check motifs
 
 1. Pick 2 to 4 images already present in the setting or character material.

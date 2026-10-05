@@ -86,7 +86,7 @@ A visual gives the reader the shape of a page before the sentences. Every concep
 
 ## The long read
 
-Chief locked each documentation rule by teach-back between 2026-09-30 and 2026-10-03. The record is the DOC-SOP. Where the older guides 07.2a and 07.2b disagree with the core, the core wins. All five merge calls were ruled on 2026-10-04 and now live in those two guides.
+Chief locked each documentation rule by teach-back between 2026-09-30 and 2026-10-03. The record is the DOC-SOP. Where the older guides 07.2a and 07.2b disagree with the core, the core wins. All five merge calls were ruled on 2026-10-04. The 07.2a guide carries the first four.
 
 The [reference](2-reference.md) gives each rule. The [how-to](3-how-to.md) covers tasks. The [tutorial](4-tutorial.md) walks a worked page.
 

@@ -49,6 +49,8 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 4. Pick a scene turn. Say which step it moves from and to.
 5. Add the second gauge, Fairness, for world scenes. Its last step is "A rigged game that calls itself fair."
 
+> **OPEN:** the source says to write the four steps "worst to best" but lists them best to worst (Freedom first, control that feels like freedom last).
+
 ## Step 4: choose three motifs
 
 1. List images in the setting that recur. Pick the uniform with its mirror, a door, and the Feed.

@@ -40,4 +40,4 @@ The internal-tool layer. Seven rulings, each with its citation.
 
 **Held sources.** The source also lists eleven tier-1 references from the Zotero shelf's 07.3 section. Nobody has read any of them into a rule yet. The first six are BVX.0292, BVX.1191, BVX.0294, BVX.0295, BVX.1031, BVX.1042. The last five are BVX.1192, BVX.1047, BVX.1193, BVX.1103, BVX.0301. BVX.1002 is skipped as a misfit.
 
-**Pending rec (source OPEN):** when a page rule needs backing beyond memory, pull first from Harris, *Information Graphics* (BVX.1192). Also pull from Lidwell, Holden and Butler, *Universal Principles of Design* (BVX.0301).
+**Ruled 2026-09-29 (source OPEN):** when a page rule needs backing beyond memory, pull first from Harris, *Information Graphics* (BVX.1192). Also pull from Lidwell, Holden and Butler, *Universal Principles of Design* (BVX.0301).
