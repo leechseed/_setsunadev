@@ -72,7 +72,7 @@ All variables follow this path structure:
 
 **`REL` note.** The 02 state architecture owns the `REL.*` fields (IF-00-02-26; IF catalog call 4, ruled 2026-10-05), and this registry holds one pointer row for them. Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it in the state architecture. The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`.
 
-**`SET` and `PLT` note.** The `SET` prefix names the S1 to S12 setting fields and the `PLT` prefix names the P1 to P12 plot fields (IF-00-03-04 and IF-00-04-08; IF catalog call 4, ruled 2026-10-05). The path is `[SET or PLT].[S or P layer].[field_name]`. Setting (03) and Plot (04) own the fields, and this registry holds the prefixes and the pointer rows only.
+**`SET` and `PLT` note.** The `SET` prefix names the S1 to S12 setting fields. The `PLT` prefix names the P1 to P12 plot fields (IF-00-03-04 and IF-00-04-08; IF catalog call 4, ruled 2026-10-05). The path is `[SET or PLT].[S or P layer].[field_name]`. Setting (03) and Plot (04) own the fields. This registry holds the prefixes and the pointer rows only.
 
 ### Layer Codes
 
@@ -831,7 +831,7 @@ _Note: This field was previously named `motivation_element`. Renamed per Phase 4
 |Display Name|Touchstone|
 |Alias|`narrative_invariant` (old name; read alias for old ingests, renamed BOLO 100)|
 |Type|`str`|
-|Value|The Touchstone id in the register form `TS n:m`, for example `TS 1:3`, so the field joins the Touchstones register. The slug the field held before is a read alias of the id (IF catalog call 4, ruled 2026-10-05).|
+|Value|The Touchstone id in the register form `TS n:m`, for example `TS 1:3`. The field then joins the Touchstones register. The slug the field held before is a read alias of the id (IF catalog call 4, ruled 2026-10-05).|
 |Source|`authored`|
 |Feeds|Structural constraint on all downstream story development|
 |Tier Min|3|

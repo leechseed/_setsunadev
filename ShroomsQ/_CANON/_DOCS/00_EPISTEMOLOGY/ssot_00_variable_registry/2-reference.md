@@ -322,7 +322,7 @@ L12 entries: tier min 3 unless stated, tag Static.
 
 ### T3.FUNC.touchstone
 
-`T3.FUNC.touchstone`. str, authored. Alias `narrative_invariant` (old name, read alias for old ingests, renamed BOLO 100). The value is the Touchstone id in the register form `TS n:m`, for example `TS 1:3`, so the field joins the Touchstones register. The slug the field held before is a read alias of the id (IF catalog call 4, ruled 2026-10-05). Feeds as a structural constraint on all downstream story development.
+`T3.FUNC.touchstone`. str, authored. Alias `narrative_invariant` (old name, read alias for old ingests, renamed BOLO 100). The value is the Touchstone id in the register form `TS n:m`, for example `TS 1:3`. The field then joins the Touchstones register. The slug the field held before is a read alias of the id (IF catalog call 4, ruled 2026-10-05). Feeds as a structural constraint on all downstream story development.
 
 ### T3.FUNC.story_outcome
 
@@ -668,6 +668,6 @@ State diffs use the `STT` prefix. They mirror the variable they modify, with ext
 | `META.version` | str | Record version |
 | `META.storyform_id` | str | Bound storyform |
 
-Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it. Three fields hold relations today. They are `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. The 02 state architecture owns the `REL.*` fields, and this registry holds one pointer row for them (IF-00-02-26). The `SET` prefix names the S1 to S12 setting fields and the `PLT` prefix names the P1 to P12 plot fields. Setting (03) and Plot (04) own those fields, and this registry holds the prefixes and the pointer rows only (IF-00-03-04, IF-00-04-08).
+Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it. Three fields hold relations today. They are `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. The 02 state architecture owns the `REL.*` fields, and this registry holds one pointer row for them (IF-00-02-26). The `SET` prefix names the S1 to S12 setting fields. The `PLT` prefix names the P1 to P12 plot fields. Setting (03) and Plot (04) own those fields. This registry holds the prefixes and the pointer rows only (IF-00-03-04, IF-00-04-08).
 
 Related pages: [concept](1-concept.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

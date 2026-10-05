@@ -39,7 +39,7 @@ Every scaled number in any system derives from base 60. No numeric scale, point 
 
 This document is the mathematical foundation. The Variable Registry (Phase 1) consumes this document for all numeric range definitions. The Vertical Slice SSOT consumes this document for point budgets, derived stat formulas, and flag trigger thresholds. Every downstream system that touches a number references this SSOT as the authority on why that number exists.
 
-**Scope.** This document covers every scaled number in any system of the Command, not the LEECHSEED character pipeline alone. The author gives every numeric field in the S1 to S12 setting layers and the P1 to P12 plot layers a scale class from this document. A time code takes no scale class, because a time code is an address and not a scale (IF catalog call 8, ruled 2026-10-05).
+**Scope.** This document covers every scaled number in any system of the Command, not the LEECHSEED character pipeline alone. The S1 to S12 setting numerics and the P1 to P12 plot numerics take scale classes from this document. A time code takes no scale class, because a time code is an address and not a scale (IF catalog call 8, ruled 2026-10-05).
 
 ---
 

@@ -305,7 +305,7 @@ Three rules apply to every row.
 
 1. A claim that one framework cannot confirm needs a second framework. Example 1 and Example 2 show the pattern.
 2. Skepticism and Critical Thinking (Framework 8) tests any claim in any row. A claim that survives it is checked. A claim that fails it stays marked open.
-3. The status (`checked` or `open`) and the framework or frameworks that checked the claim sit on the claim's own record, in the doc that owns the claim. Tracking (08) does not hold them (IF catalog call 8, ruled 2026-10-05).
+3. The status (`checked` or `open`) and the checking frameworks sit on the claim's own record. That record lives in the doc that owns the claim, not in Tracking (08) (IF catalog call 8, ruled 2026-10-05).
 
 ---
 
@@ -392,7 +392,7 @@ This epistemological SSOT has no dependencies on other LEECHSEED SSOTs. Other SS
 
 ### Interfaces
 
-Reads from 07 (IF-00-07-02): Style writes one per-source vocabulary page, `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`, and one register row per term and source in `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
+Reads from 07 (IF-00-07-02): Style writes one vocabulary page per source, `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`. Style also writes one register row per term and source to `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
 
 ### External Sources
 - Philosophical epistemology literature

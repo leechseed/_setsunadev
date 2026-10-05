@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md
-source_version: 3.3.4
+source_version: 3.4.0
 ---
 
 **Who it's for:** a writer or builder building, checking or extending a slice · **What it does:** numbered steps for each task · **Type:** how-to
