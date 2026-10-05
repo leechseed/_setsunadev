@@ -1,13 +1,13 @@
 ---
-title: Truth verification: concept
-type: concept
-for: A writer or Chief deciding how to prove a claim in a story system
-does: Explains why the Command checks every canon claim with named truth frameworks
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md
-source_version: 1.0.2
+title: "Truth verification: concept"
+type: "concept"
+for: "A writer or Chief deciding how to prove a claim in a story system"
+does: "Explains why the Command checks every canon claim with named truth frameworks"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a writer or Chief deciding how to prove a claim · **What it does:** explains why the ten truth frameworks exist · **Type:** concept

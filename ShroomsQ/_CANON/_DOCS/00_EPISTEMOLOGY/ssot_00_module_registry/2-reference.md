@@ -1,13 +1,13 @@
 ---
-title: Module registry: reference
-type: reference
-for: A designer looking up one field module's declaration, variables or status
-does: Lists every module in the registry with its declaration and variables
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md
-source_version: 1.1.0
+title: "Module registry: reference"
+type: "reference"
+for: "A designer looking up one field module's declaration, variables or status"
+does: "Lists every module in the registry with its declaration and variables"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer looking up a field module · **What it does:** lists every module declaration, variable and status · **Type:** reference

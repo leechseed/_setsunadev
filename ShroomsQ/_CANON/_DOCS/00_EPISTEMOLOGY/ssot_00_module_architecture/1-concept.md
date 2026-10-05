@@ -1,13 +1,13 @@
 ---
-title: Module architecture: concept
-type: concept
-for: A designer or writer asking how new character dimensions join a fixed 12-layer schema
-does: Explains why new capability attaches as modules beneath the layers
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md
-source_version: 1.0.1
+title: "Module architecture: concept"
+type: "concept"
+for: "A designer or writer asking how new character dimensions join a fixed 12-layer schema"
+does: "Explains why new capability attaches as modules beneath the layers"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a designer or writer extending the character system · **What it does:** explains why modules attach under fixed layers · **Type:** concept

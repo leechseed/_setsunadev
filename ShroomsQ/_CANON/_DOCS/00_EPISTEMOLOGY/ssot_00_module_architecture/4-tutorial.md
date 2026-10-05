@@ -1,13 +1,13 @@
 ---
-title: Module architecture: tutorial
-type: tutorial
-for: A designer new to modules, learning by declaring the walking style module
-does: Walks the source's walking_style example from attachment to data exchange
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md
-source_version: 1.0.1
+title: "Module architecture: tutorial"
+type: "tutorial"
+for: "A designer new to modules, learning by declaring the walking style module"
+does: "Walks the source's walking_style example from attachment to data exchange"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a designer new to modules · **What it does:** builds the walking style module step by step · **Type:** tutorial

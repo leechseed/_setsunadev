@@ -1,13 +1,13 @@
 ---
-title: Base 60 number system: how-to
-type: how-to
-for: A designer adding or converting a numeric variable
-does: Gives the steps for the number tasks the base 60 doc defines
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md
-source_version: 1.0.1
+title: "Base 60 number system: how-to"
+type: "how-to"
+for: "A designer adding or converting a numeric variable"
+does: "Gives the steps for the number tasks the base 60 doc defines"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a designer adding or converting a numeric variable · **What it does:** gives the steps for each number task · **Type:** how-to

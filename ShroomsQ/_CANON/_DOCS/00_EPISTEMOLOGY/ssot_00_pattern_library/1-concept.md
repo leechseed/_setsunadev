@@ -1,13 +1,13 @@
 ---
-title: Pattern library: concept
-type: concept
-for: Chief or a writer asking why simple cycles repeat at every scale of the Command
-does: Explains the Pattern half of the foundation and why patterns stack
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md
-source_version: 1.0.0
+title: "Pattern library: concept"
+type: "concept"
+for: "Chief or a writer asking why simple cycles repeat at every scale of the Command"
+does: "Explains the Pattern half of the foundation and why patterns stack"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
+source_version: "1.0.0"
 ---
 
 **Who it's for:** Chief or a writer asking why simple cycles repeat · **What it does:** explains why patterns are the foundation's second half · **Type:** concept

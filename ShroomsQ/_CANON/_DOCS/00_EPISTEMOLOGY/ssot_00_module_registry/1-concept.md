@@ -1,13 +1,13 @@
 ---
-title: Module registry: concept
-type: concept
-for: A designer or writer asking why every field module is listed in one registry
-does: Explains why the registry exists and how module status works
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md
-source_version: 1.1.0
+title: "Module registry: concept"
+type: "concept"
+for: "A designer or writer asking why every field module is listed in one registry"
+does: "Explains why the registry exists and how module status works"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer or writer tracking field modules · **What it does:** explains why one registry lists every module and what its statuses mean · **Type:** concept

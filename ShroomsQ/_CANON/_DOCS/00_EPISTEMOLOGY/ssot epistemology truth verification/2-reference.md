@@ -1,13 +1,13 @@
 ---
-title: Truth verification: reference
-type: reference
-for: A writer looking up one framework, its limits or its source
-does: Lists every component and part of the truth verification doc
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md
-source_version: 1.0.2
+title: "Truth verification: reference"
+type: "reference"
+for: "A writer looking up one framework, its limits or its source"
+does: "Lists every component and part of the truth verification doc"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a writer looking up a framework · **What it does:** lists every framework, table and example in the doc · **Type:** reference

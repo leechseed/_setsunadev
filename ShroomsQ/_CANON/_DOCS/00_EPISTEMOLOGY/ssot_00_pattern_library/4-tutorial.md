@@ -1,13 +1,13 @@
 ---
-title: Pattern library: tutorial
-type: tutorial
-for: A writer new to patterns, learning by running the Command loop once
-does: Walks one task through the nine steps of the Command loop
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md
-source_version: 1.0.0
+title: "Pattern library: tutorial"
+type: "tutorial"
+for: "A writer new to patterns, learning by running the Command loop once"
+does: "Walks one task through the nine steps of the Command loop"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
+source_version: "1.0.0"
 ---
 
 **Who it's for:** a writer new to patterns · **What it does:** runs one task through the Command loop · **Type:** tutorial

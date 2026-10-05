@@ -1,13 +1,13 @@
 ---
-title: Module architecture: how-to
-type: how-to
-for: A designer building, enabling or retiring a field module
-does: Gives the steps for each module task the architecture defines
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md
-source_version: 1.0.1
+title: "Module architecture: how-to"
+type: "how-to"
+for: "A designer building, enabling or retiring a field module"
+does: "Gives the steps for each module task the architecture defines"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a designer building or running a field module · **What it does:** gives the steps for each module task · **Type:** how-to

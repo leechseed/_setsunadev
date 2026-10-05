@@ -1,13 +1,13 @@
 ---
-title: Module architecture: reference
-type: reference
-for: A designer looking up a module block, rule or lifecycle stage
-does: Lists every component and part of the module architecture doc
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md
-source_version: 1.0.1
+title: "Module architecture: reference"
+type: "reference"
+for: "A designer looking up a module block, rule or lifecycle stage"
+does: "Lists every component and part of the module architecture doc"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a designer looking up a module rule · **What it does:** lists every block, rule and stage in the module architecture doc · **Type:** reference

@@ -1,13 +1,13 @@
 ---
-title: Truth verification: how-to
-type: how-to
-for: A writer who must check a canon claim
-does: Gives the steps to pick and apply truth frameworks to one claim
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md
-source_version: 1.0.2
+title: "Truth verification: how-to"
+type: "how-to"
+for: "A writer who must check a canon claim"
+does: "Gives the steps to pick and apply truth frameworks to one claim"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a writer checking a canon claim · **What it does:** gives the steps for picking and applying frameworks · **Type:** how-to

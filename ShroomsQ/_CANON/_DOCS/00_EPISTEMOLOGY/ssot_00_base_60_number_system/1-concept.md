@@ -1,13 +1,13 @@
 ---
-title: Base 60 number system: concept
-type: concept
-for: A writer or designer who must understand why every number in the character system is a divisor of 60
-does: Explains why base 60 is the one source of all integers in the character pipeline
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md
-source_version: 1.0.1
+title: "Base 60 number system: concept"
+type: "concept"
+for: "A writer or designer who must understand why every number in the character system is a divisor of 60"
+does: "Explains why base 60 is the one source of all integers in the character pipeline"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a writer or designer asking why the numbers are what they are · **What it does:** explains why base 60 sits under every number · **Type:** concept

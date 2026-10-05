@@ -1,13 +1,13 @@
 ---
-title: Module registry: tutorial
-type: tutorial
-for: A designer new to the registry, learning by tracing the Coping module
-does: Walks the Coping module from planned entry to narrowed entry
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md
-source_version: 1.1.0
+title: "Module registry: tutorial"
+type: "tutorial"
+for: "A designer new to the registry, learning by tracing the Coping module"
+does: "Walks the Coping module from planned entry to narrowed entry"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer new to the registry · **What it does:** traces one module through the 2026-10-04 audit · **Type:** tutorial

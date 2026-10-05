@@ -1,13 +1,13 @@
 ---
-title: Pattern library: reference
-type: reference
-for: Chief or a writer looking up a pattern, its steps, tier and scales
-does: Lists every component of the pattern library
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md
-source_version: 1.0.0
+title: "Pattern library: reference"
+type: "reference"
+for: "Chief or a writer looking up a pattern, its steps, tier and scales"
+does: "Lists every component of the pattern library"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
+source_version: "1.0.0"
 ---
 
 **Who it's for:** Chief or a writer looking up a pattern · **What it does:** lists the stack, the halves, the cycles and both patterns · **Type:** reference

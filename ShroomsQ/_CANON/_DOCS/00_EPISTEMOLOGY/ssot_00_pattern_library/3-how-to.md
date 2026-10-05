@@ -1,13 +1,13 @@
 ---
-title: Pattern library: how-to
-type: how-to
-for: Chief or a writer adding or applying a pattern
-does: Gives the steps for each pattern task
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md
-source_version: 1.0.0
+title: "Pattern library: how-to"
+type: "how-to"
+for: "Chief or a writer adding or applying a pattern"
+does: "Gives the steps for each pattern task"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
+source_version: "1.0.0"
 ---
 
 **Who it's for:** Chief or a writer working with patterns · **What it does:** gives the steps for each pattern task · **Type:** how-to

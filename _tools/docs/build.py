@@ -9,6 +9,7 @@ center, its contents on the right. Nothing on the page is hand-typed except the 
 Inputs : ShroomsQ/_CANON/_SSOT/0*/**/*.md     the systems (top-level docs + their shelves)
          ShroomsQ/_CANON/_AUTHORITATIVE/**/*.md the authoritative story docs
          _CANON_NODES/*.md                      the story canon nodes
+         ShroomsQ/_CANON/_DOCS/<system>/<doc>/*.md the core docs, four types each (BOLO 102, 10/5)
          _tools/docs/landing.md                 the concept landing page
          _tools/tm/terms.json                   the hover-term register (shared with TM + review)
          _tools/tm/template.html                the Command's color tokens (copied, never forked)
@@ -33,6 +34,7 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 SSOT = os.path.join(ROOT, "ShroomsQ", "_CANON", "_SSOT")
 AUTH = os.path.join(ROOT, "ShroomsQ", "_CANON", "_AUTHORITATIVE")
 NODES = os.path.join(ROOT, "_CANON_NODES")
+DOCS = os.path.join(ROOT, "ShroomsQ", "_CANON", "_DOCS")
 TM = os.path.join(ROOT, "_tools", "tm")
 OUT = os.path.join(HERE, "out", "REFERENCE.html")
 
@@ -134,7 +136,7 @@ def wiki(s):
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "sane_lists"])
 
 
-def render(body, doc_id, by_stem, live_mermaid=True):
+def render(body, doc_id, by_stem, live_mermaid=True, here=None, by_path=None):
     body = re.sub(r"(?is)<script.*?</script>", "", body)
     body = autolink(body)
 
@@ -142,7 +144,13 @@ def render(body, doc_id, by_stem, live_mermaid=True):
         txt, url = m.group(1), m.group(2).strip()
         if re.match(r"^https?://", url):
             return m.group(0)
-        stem = os.path.splitext(os.path.basename(url.split("#")[0]).replace("%20", " "))[0]
+        rel = url.split("#")[0].replace("%20", " ")
+        if by_path and rel:
+            for base in ([here] if here else []) + [ROOT]:
+                tgt = by_path.get(os.path.abspath(os.path.join(base, rel)))
+                if tgt:
+                    return f"[{txt}](#{tgt})"
+        stem = os.path.splitext(os.path.basename(rel))[0]
         stem = re.sub(r"^[^\w]+\s*", "", stem)
         tgt = by_stem.get(stem.lower())
         if tgt:
@@ -181,7 +189,8 @@ def gather():
     def add(group, path, kind):
         fm, body = split_front(read(path))
         d = {"path": path, "rel": os.path.relpath(path, ROOT).replace("\\", "/"), "fm": fm, "body": body,
-             "title": title_of(fm, body, path), "kind": kind, "shelf": bool(group.get("shelf"))}
+             "title": title_of(fm, body, path), "kind": kind, "shelf": bool(group.get("shelf")),
+             "core": bool(group.get("core"))}
         d["id"] = slug(d["title"], used)
         docs.append(d)
         group["docs"].append(d)
@@ -205,6 +214,17 @@ def gather():
             p = os.path.join(base, f)
             if f.lower().endswith(".md") and os.path.isfile(p) and os.path.abspath(p) != os.path.abspath(ts):
                 add(g, p, "reference")
+        dsys = os.path.join(DOCS, os.path.basename(base))
+        if os.path.isdir(dsys):
+            cg = {"name": f"{nn} · {SYSTEM_NAMES[nn]} · the docs", "key": f"{nn}-docs", "docs": [], "open": False,
+                  "core": True}
+            groups.append(cg)
+            for stem_dir in sorted(os.listdir(dsys), key=str.lower):
+                sd = os.path.join(dsys, stem_dir)
+                if os.path.isdir(sd):
+                    for f in sorted(x for x in os.listdir(sd) if x.lower().endswith(".md")):
+                        fm, _ = split_front(read(os.path.join(sd, f)))
+                        add(cg, os.path.join(sd, f), str((fm or {}).get("type") or "reference"))
         for dp, dns, fns in sorted(os.walk(base)):
             dns.sort(key=str.lower)
             if dp == base or "_ARCHIVE" in dp:
@@ -261,7 +281,9 @@ def meta_line(d):
     bits = []
     if fm.get("version"):
         bits.append(f'<span><i>version</i>{html.escape(str(fm["version"]))}</span>')
-    lu = fm.get("last_updated") or fm.get("updated")
+    if fm.get("state"):
+        bits.append(f'<span><i>state</i>{html.escape(str(fm["state"]))}</span>')
+    lu = fm.get("last_updated") or fm.get("updated") or fm.get("reviewed")
     if lu:
         bits.append(f'<span><i>reviewed</i>{html.escape(str(lu))}</span>')
     if fm.get("trunk"):
@@ -273,7 +295,9 @@ def meta_line(d):
 
 def header(d):
     fm = d["fm"]
-    if d["kind"] == "concept":
+    if d.get("core"):
+        who, what = str(fm.get("for") or ""), str(fm.get("does") or "")
+    elif d["kind"] == "concept":
         who, what = "Chief, before phase 2, reading the whole stack", "Explains how the pieces fit, so every other page makes sense."
     else:
         story = d["rel"].startswith("_CANON_NODES") or "_AUTHORITATIVE" in d["rel"]
@@ -289,8 +313,10 @@ def header(d):
 
 def main():
     docs, groups = gather()
-    by_stem = {}
+    by_stem, by_path = {}, {os.path.abspath(d["path"]): d["id"] for d in docs}
     for d in docs:
+        if d.get("core"):
+            continue
         st = re.sub(r"^[^\w]+\s*", "", os.path.splitext(os.path.basename(d["path"]))[0]).lower()
         by_stem.setdefault(st, d["id"])
 
@@ -299,7 +325,8 @@ def main():
         body = d["body"]
         body = re.sub(r"^\s*#\s+.+\n", "", body, count=1)      # the header carries the title
         body = re.sub(r"^\*\*Who it's for:\*\*.*\n", "", body, count=1, flags=re.M)   # the header carries the three
-        h, toc = render(body, d["id"], by_stem, live_mermaid=not d["shelf"])
+        h, toc = render(body, d["id"], by_stem, live_mermaid=not d["shelf"],
+                        here=os.path.dirname(d["path"]), by_path=by_path)
         tocs[d["id"]] = toc
         arts.append(f'<article id="{d["id"]}" class="doc" hidden>{header(d)}<div class="body">{h}</div>'
                     f'<footer class="df"><button type="button" class="mark" data-mark="{d["id"]}">Mark read</button>'
@@ -332,13 +359,15 @@ def main():
 
     # RANGE: every .md on disk is in the side panel exactly once
     found = set()
-    for base in (SSOT, AUTH):
+    for base in (SSOT, AUTH, DOCS):
+        if not os.path.isdir(base):
+            continue
         for dp, _, fns in os.walk(base):
             if "_ARCHIVE" in dp:
                 continue
             found |= {os.path.abspath(os.path.join(dp, f)) for f in fns if f.lower().endswith(".md")}
     found |= {os.path.abspath(os.path.join(NODES, f)) for f in os.listdir(NODES) if f.lower().endswith(".md")}
-    listed = [os.path.abspath(d["path"]) for d in docs if d["kind"] != "concept"]
+    listed = [os.path.abspath(d["path"]) for d in docs if d["kind"] != "concept" or d.get("core")]
     missing = found - set(listed)
     dupes = len(listed) - len(set(listed))
     print(f"docs {len(docs)} · groups {sum(1 for g in groups if g['docs'])} · terms wired {len(G)} · "

@@ -1,13 +1,13 @@
 ---
-title: Base 60 number system: reference
-type: reference
-for: A writer or designer looking up a chain, scale class, formula, threshold or rule
-does: Lists every component and part of the base 60 doc
-owner: Chief
-state: draft
-reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md
-source_version: 1.0.1
+title: "Base 60 number system: reference"
+type: "reference"
+for: "A writer or designer looking up a chain, scale class, formula, threshold or rule"
+does: "Lists every component and part of the base 60 doc"
+owner: "Chief"
+state: "draft"
+reviewed: "2026-10-05"
+source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a writer or designer looking up a number rule · **What it does:** lists every table, formula and rule in the base 60 doc · **Type:** reference
