@@ -133,7 +133,8 @@ Any unit or thread span gets a canonical address: `IP.form.act.sequence.scene.be
 | `OXO.primary.M2.q3.s12.b4` | A beat (R1) |
 | `tori.arc[OXO.primary.M1–M6]` | A thread span |
 
-Tree addresses (`SPINE.Lx`) locate concepts. Ladder addresses locate instances. A library source keys to tree addresses. A manuscript unit keys to ladder addresses. 
+Tree addresses (`SPINE.Lx`) locate concepts. Ladder addresses locate instances. A library source keys to tree addresses. A manuscript unit keys to ladder addresses.
+
 **One address (IF catalog call 1, ruled 2026-10-05).** The 08 time code (`M2 · Q1 · S04 | 012.3.2`, 08 §The address) is the one address for anything dated, in any system. This scheme maps onto it, as the table below shows. `IP.form` names the story, and the story's tracking file carries it, not the code.
 
 | Ladder part | Time-code part |
