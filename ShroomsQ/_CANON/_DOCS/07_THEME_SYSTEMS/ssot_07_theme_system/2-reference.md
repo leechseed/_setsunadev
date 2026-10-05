@@ -143,7 +143,7 @@ Motifs feed the texture system. Each appearance moves the Freedom scale. The Fee
 
 ## THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, "all recs")
 
-Three tests carry the idea down to the scene. They ride the scene card in [ssot_03](../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields.
+Three tests carry the idea down to the scene. They ride the scene card in [ssot_03](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields.
 
 | Test | Source | Rule |
 |---|---|---|
@@ -155,11 +155,11 @@ Three tests carry the idea down to the scene. They ride the scene card in [ssot_
 
 ## TROPES
 
-Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the theme domain is keyed to rails R1 to R4 in the [trope register](../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list is `_tools/tropes/data/domains/LAYERS.md`, under theme. The sub-index pass is keying as of 2026-09-29: Death, Family, Betrayal, Revenge, Authority, Memory, The Secret, Promises and Vows.
+Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the theme domain is keyed to rails R1 to R4 in the [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list is `_tools/tropes/data/domains/LAYERS.md`, under theme. The sub-index pass is keying as of 2026-09-29: Death, Family, Betrayal, Revenge, Authority, Memory, The Secret, Promises and Vows.
 
 ## THE HANDSHAKE — theme × Touchstones (BOLO 81)
 
-Themes argue; Touchstones hold. No scene writes past a live Touchstone. Live ones are in [the Touchstones register](../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md).
+Themes argue; Touchstones hold. No scene writes past a live Touchstone. Live ones are in [the Touchstones register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md).
 
 | Rail | Debate | Live Touchstone | How the rail argues around it |
 |---|---|---|---|
