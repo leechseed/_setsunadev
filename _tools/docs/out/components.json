@@ -126,6 +126,75 @@
     "parts": []
    }
   ],
+  "📐 ssot_00_interface_catalog.md": [
+   {
+    "name": "WHAT AN INTERFACE IS",
+    "parts": []
+   },
+   {
+    "name": "THE N² GRID",
+    "parts": []
+   },
+   {
+    "name": "THE REGISTER",
+    "parts": [
+     "00 Base ↔ 01 Narrative frameworks",
+     "00 Base ↔ 02 Character (LEECHSEED)",
+     "00 Base ↔ 03 Setting",
+     "00 Base ↔ 04 Plot",
+     "00 Base ↔ 05 Worldbuilding",
+     "00 Base ↔ 06 Theme",
+     "00 Base ↔ 07 Style",
+     "00 Base ↔ 08 Tracking",
+     "00 Base ↔ 09 Operations",
+     "01 Narrative frameworks ↔ 02 Character (LEECHSEED)",
+     "01 Narrative frameworks ↔ 03 Setting",
+     "01 Narrative frameworks ↔ 04 Plot",
+     "01 Narrative frameworks ↔ 05 Worldbuilding",
+     "01 Narrative frameworks ↔ 06 Theme",
+     "01 Narrative frameworks ↔ 07 Style",
+     "01 Narrative frameworks ↔ 08 Tracking",
+     "01 Narrative frameworks ↔ 09 Operations",
+     "02 Character (LEECHSEED) ↔ 03 Setting",
+     "02 Character (LEECHSEED) ↔ 04 Plot",
+     "02 Character (LEECHSEED) ↔ 05 Worldbuilding",
+     "02 Character (LEECHSEED) ↔ 06 Theme",
+     "02 Character (LEECHSEED) ↔ 07 Style",
+     "02 Character (LEECHSEED) ↔ 08 Tracking",
+     "02 Character (LEECHSEED) ↔ 09 Operations",
+     "03 Setting ↔ 04 Plot",
+     "03 Setting ↔ 05 Worldbuilding",
+     "03 Setting ↔ 06 Theme",
+     "03 Setting ↔ 07 Style",
+     "03 Setting ↔ 08 Tracking",
+     "03 Setting ↔ 09 Operations",
+     "04 Plot ↔ 05 Worldbuilding",
+     "04 Plot ↔ 06 Theme",
+     "04 Plot ↔ 07 Style",
+     "04 Plot ↔ 08 Tracking",
+     "04 Plot ↔ 09 Operations",
+     "05 Worldbuilding ↔ 06 Theme",
+     "05 Worldbuilding ↔ 07 Style",
+     "05 Worldbuilding ↔ 08 Tracking",
+     "05 Worldbuilding ↔ 09 Operations",
+     "06 Theme ↔ 07 Style",
+     "06 Theme ↔ 08 Tracking",
+     "06 Theme ↔ 09 Operations",
+     "07 Style ↔ 08 Tracking",
+     "07 Style ↔ 09 Operations",
+     "08 Tracking ↔ 09 Operations",
+     "09 Operations → every system"
+    ]
+   },
+   {
+    "name": "THE WIRING FINDINGS",
+    "parts": []
+   },
+   {
+    "name": "THE DESIGN CALLS — OPEN 2026-10-05, one rec each",
+    "parts": []
+   }
+  ],
   "📐 ssot_00_module_architecture.md": [
    {
     "name": "The Core Principle",

@@ -16,7 +16,7 @@ sources: [BVX.0562, BVX.0575, BVX.0630, BVX.0100, BVX.0349, BVX.0530, BVX.0504, 
 
 ## What this is
 
-This document says exactly what worldbuilding is in the Command. The Command already has systems for people (02), places (03), plot (04), theme (07), and state over time (08). None of them owns the shared things a world is made of: a clan, a style of building, a way of dressing, a vehicle, a custom, a school of thought. Those things sit between the systems and get lost. This system gives them one home, the **catalog**, and gives the world one set of rules to check against, the **infrastructures** and the **coherence tests**. A read-only page, the **world view**, compiles everything into one picture.
+This document says exactly what worldbuilding is in the Command. The Command already has systems for people (02), places (03), plot (04), theme (06), and state over time (08). None of them owns the shared things a world is made of: a clan, a style of building, a way of dressing, a vehicle, a custom, a school of thought. Those things sit between the systems and get lost. This system gives them one home, the **catalog**, and gives the world one set of rules to check against, the **infrastructures** and the **coherence tests**. A read-only page, the **world view**, compiles everything into one picture.
 
 **Touchstones:** read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
@@ -59,7 +59,7 @@ The books agree on this shape. They define it as building "a representation of a
 | 04 Plot | Each entry's `origin` names a fabula event. | catalog points to 04 |
 | 09 Operations | Checked 9/29 by the CDR: owns procedures and registries, no world-fact type. It runs the compiler as a procedure. | none |
 | 07 Style | Checked 9/29 by the CDR: 07.1 prose · 07.2 documents · 07.3 pages; no world-fact type. How a world thing is written up follows 07.1. | none |
-| 06 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the answer. | lens asks 07 |
+| 06 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the answer. | lens asks 06 |
 | 08 Tracking | Every change over time is a 08 record. Entries hold a pointer, `state`. 08 holds a reader track per character in §9A; the catalog does not copy it. | catalog points to 08 |
 | Trope layer | Every entry carries `tropes`; the register owns the trope. | catalog points to layer |
 
@@ -132,7 +132,7 @@ flowchart LR
   Q3 -- the thing itself --> Q4{An event or its telling?}
   Q4 -- yes --> S04[04 PLOT: fabula and told order]
   Q4 -- no --> Q5{The story's argument?}
-  Q5 -- yes --> S07[06 THEME]
+  Q5 -- yes --> S06[06 THEME]
   Q5 -- no --> S09[09 CATALOG: shared thing, by type]
 ```
 
@@ -144,7 +144,7 @@ flowchart TD
   S03[03 places] --> C
   S04[04 fabula events] --> C
   S08[08 state records] --> C
-  CAT[09 catalog entries] --> C
+  CAT[05 catalog entries] --> C
   TR[trope layer] --> C
   C --> T[Coherence tests: the lens]
   T --> W[WORLD VIEW: read-only page]
@@ -368,7 +368,7 @@ The catalog proved itself on DCUS the way 03 did: filled from canon on the first
 | WB-TEC-0001 The Feed (DCUS) | TEC | M2 → M4 | backstory_dcus_rebrand (inferred) | locality |
 | WB-WDR-0001 Feed-linked clothing | WDR | M2 → M4 | none in canon | locality |
 
-**What the proof found.** Tremor Cult was misfiled as a belief; it is a story (01 registry) and its entry is retired, id never reused. Quinn Bishop has no 02 node yet: the L02 link check reports it as owed by 02, not a 09 failure. Every era ends at M4 because canon casts DCUS for Movements 2–4.
+**What the proof found.** Tremor Cult was misfiled as a belief; it is a story (01 registry) and its entry is retired, id never reused. Quinn Bishop has no 02 node yet: the L02 link check reports it as owed by 02, not a 05 failure. Every era ends at M4 because canon casts DCUS for Movements 2–4.
 
 **State ids.** `state:` names the entry's 08 subject as `<kind>:<slug>`: `place:` · `group:` · `belief:` · `custom:` · `tech:` · `wardrobe:` · `architecture:`. A subject need not have story points yet.
 
@@ -434,7 +434,7 @@ Each call has one rec. The Chief rules in one word.
 
 8. **Wolf's infrastructures.** CLOSED 9/29 by the CDR from BVX.0562's own distill: Wolf's eight are maps · timelines · genealogies · nature · culture · language · mythology · philosophy, each built atop the last. All eight land in the spine: maps → I1 · timelines and genealogies → I2 · mythology and philosophy → I6 · culture → I7 · language → I8 · nature → I9. The other books add I3 peoples, I4 governance, I5 economy and I10 world rules. No rec owed.
 
-9. **The unread neighbors.** CLOSED 9/29 by the CDR: 05 and 06 own no world-fact type (relation rows updated). No rec owed.
+9. **The unread neighbors.** CLOSED 9/29 by the CDR: 09 Operations and 07 Style own no world-fact type (relation rows updated). No rec owed.
 
 ---
 
