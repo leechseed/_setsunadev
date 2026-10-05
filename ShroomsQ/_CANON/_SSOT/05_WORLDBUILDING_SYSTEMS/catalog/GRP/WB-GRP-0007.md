@@ -3,7 +3,8 @@ id: "WB-GRP-0007"
 type: "GRP"
 name: "The Deepstate North (America as BioShock Infinite)"
 aliases: ["the Deepstate North", "the North", "the fascist cult", "America reborn"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: []
 groups: ["WB-GRP-0006"]
 origin: ""

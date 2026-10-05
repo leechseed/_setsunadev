@@ -3,7 +3,8 @@ id: "WB-WDR-0001"
 type: "WDR"
 name: "Feed-linked clothing (DCUS)"
 aliases: []
-era: ["M2", "M4"]
+founded: "M2"
+current: "M4"
 places: ["dcus"]
 groups: ["WB-INS-0001"]
 origin: ""

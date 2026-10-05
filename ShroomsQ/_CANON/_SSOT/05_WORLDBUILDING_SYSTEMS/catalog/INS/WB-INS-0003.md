@@ -3,7 +3,8 @@ id: "WB-INS-0003"
 type: "INS"
 name: "The ASTRO7EX Standards Body"
 aliases: []
-era: []
+founded: "—"
+current: "—"
 places: []
 groups: []
 origin: ""

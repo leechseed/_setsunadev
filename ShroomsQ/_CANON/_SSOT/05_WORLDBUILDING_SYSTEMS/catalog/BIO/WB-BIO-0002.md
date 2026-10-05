@@ -3,7 +3,8 @@ id: "WB-BIO-0002"
 type: "BIO"
 name: "The Mother (the broth)"
 aliases: ["the goop", "the broth"]
-era: ["backstory", "M1", "M2"]
+founded: "backstory"
+current: "M2"
 places: []
 groups: ["WB-CUS-0003"]
 origin: "backstory_moon_severance"

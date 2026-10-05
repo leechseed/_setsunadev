@@ -3,7 +3,8 @@ id: "WB-GRP-0006"
 type: "GRP"
 name: "Providence"
 aliases: ["the techno-corpo state", "Palantir (the 2026 note's placeholder, retired 9/29)"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: []
 groups: ["WB-GRP-0007"]
 origin: ""

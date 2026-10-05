@@ -3,7 +3,8 @@ id: "WB-TEC-0001"
 type: "TEC"
 name: "The Feed (DCUS)"
 aliases: []
-era: ["M2", "M4"]
+founded: "M2"
+current: "M4"
 places: ["dcus"]
 groups: ["WB-INS-0001"]
 origin: "backstory_dcus_rebrand"

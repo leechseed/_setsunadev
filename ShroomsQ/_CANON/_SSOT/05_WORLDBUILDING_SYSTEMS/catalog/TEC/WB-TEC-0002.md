@@ -3,7 +3,8 @@ id: "WB-TEC-0002"
 type: "TEC"
 name: "The dive rig (the line and the crawler)"
 aliases: ["the umbilical", "the line"]
-era: ["backstory", "M1", "M2"]
+founded: "backstory"
+current: "M2"
 places: []
 groups: ["WB-CUS-0003", "WB-INS-0004"]
 origin: "backstory_moon_severance"

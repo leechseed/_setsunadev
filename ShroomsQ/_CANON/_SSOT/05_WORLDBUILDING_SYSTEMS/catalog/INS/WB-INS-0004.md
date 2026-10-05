@@ -3,7 +3,8 @@ id: "WB-INS-0004"
 type: "INS"
 name: "The Power Line (the standards body)"
 aliases: ["Trash Land (placeholder, retired 9/29)", "the Zona", "the Hedge", "the Hotline (divers and dozer crews, 10/1)", "the Trash Land standards body"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: []
 groups: ["WB-INS-0002"]
 origin: "backstory_moon_severance"

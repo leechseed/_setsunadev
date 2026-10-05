@@ -3,7 +3,8 @@ id: "WB-ARC-0001"
 type: "ARC"
 name: "Southern Gothic prestige brick (DCUS campus)"
 aliases: []
-era: ["backstory", "M4"]
+founded: "backstory"
+current: "M4"
 places: ["dcus"]
 groups: ["WB-INS-0002"]
 origin: "backstory_skeeter_creek_founding"

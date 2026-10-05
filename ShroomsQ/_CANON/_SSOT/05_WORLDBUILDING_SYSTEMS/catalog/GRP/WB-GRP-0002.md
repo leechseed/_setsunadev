@@ -3,7 +3,8 @@ id: "WB-GRP-0002"
 type: "GRP"
 name: "The moon societies (May 2024)"
 aliases: []
-era: []
+founded: "—"
+current: "—"
 places: []
 groups: []
 origin: ""

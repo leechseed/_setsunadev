@@ -3,7 +3,8 @@ id: "WB-INS-0002"
 type: "INS"
 name: "Delta Coast Ultra School (the institution)"
 aliases: ["DCUS", "the Ultra School", "Red Hills Academy", "Skeeter Creek", "Inner Spiral Academy", "The Academy"]
-era: ["backstory", "M4"]
+founded: "backstory"
+current: "M4"
 places: ["dcus"]
 groups: ["WB-GRP-0001"]
 origin: "backstory_dcus_rebrand"

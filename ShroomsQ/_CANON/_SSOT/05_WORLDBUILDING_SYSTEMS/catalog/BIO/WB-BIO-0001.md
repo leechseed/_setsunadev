@@ -3,7 +3,8 @@ id: "WB-BIO-0001"
 type: "BIO"
 name: "The Kudzu (the creep)"
 aliases: ["the kudzu zerg", "the techno kudzu", "the creep"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: []
 groups: ["WB-GRP-0005"]
 origin: "backstory_south_pole_third_impact"

@@ -3,7 +3,8 @@ id: "WB-FSU-0001"
 type: "FSU"
 name: "ASTRO7EX Space Cuisine"
 aliases: []
-era: []
+founded: "—"
+current: "—"
 places: []
 groups: []
 origin: ""

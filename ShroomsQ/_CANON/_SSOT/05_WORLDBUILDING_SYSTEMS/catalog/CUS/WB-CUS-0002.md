@@ -3,7 +3,8 @@ id: "WB-CUS-0002"
 type: "CUS"
 name: "The intake (belt-born into DCUS)"
 aliases: ["the mothakes pattern"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: ["dcus"]
 groups: ["WB-INS-0002", "WB-INS-0004"]
 origin: ""

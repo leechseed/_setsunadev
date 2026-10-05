@@ -3,7 +3,8 @@ id: "WB-GRP-0004"
 type: "GRP"
 name: "The Narco Republic"
 aliases: ["Cartel Federal", "Real Federale", "Pax Cartel", "the Real Cartel"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: []
 groups: []
 origin: "backstory_narco_republic_rises"

@@ -3,7 +3,8 @@ id: "WB-CUS-0001"
 type: "CUS"
 name: "The Star-Rating (ritual life)"
 aliases: []
-era: ["M2", "M4"]
+founded: "M2"
+current: "M4"
 places: ["dcus"]
 groups: ["WB-INS-0001"]
 origin: "backstory_dcus_rebrand"

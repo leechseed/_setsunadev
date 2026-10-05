@@ -3,7 +3,8 @@ id: "WB-CUS-0003"
 type: "CUS"
 name: "The hot-zone divers"
 aliases: ["divers"]
-era: ["backstory", "M1", "M2"]
+founded: "backstory"
+current: "M2"
 places: []
 groups: ["WB-INS-0004"]
 origin: "backstory_moon_severance"

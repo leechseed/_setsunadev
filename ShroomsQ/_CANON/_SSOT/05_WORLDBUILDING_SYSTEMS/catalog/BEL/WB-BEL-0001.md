@@ -3,7 +3,8 @@ id: "WB-BEL-0001"
 type: "BEL"
 name: "Tremor Cult"
 aliases: []
-era: []
+founded: "—"
+current: "—"
 places: ["dcus"]
 groups: []
 origin: ""

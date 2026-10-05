@@ -3,7 +3,8 @@ id: "WB-GRP-0005"
 type: "GRP"
 name: "The Kudzu (the faction)"
 aliases: ["the kudzu zerg", "the techno kudzu"]
-era: ["backstory", "M6"]
+founded: "backstory"
+current: "M6"
 places: []
 groups: ["WB-BIO-0001"]
 origin: "backstory_south_pole_third_impact"

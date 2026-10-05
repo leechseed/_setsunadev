@@ -3,7 +3,8 @@ id: "WB-BEL-0002"
 type: "BEL"
 name: "Sync Cult (held)"
 aliases: []
-era: []
+founded: "—"
+current: "—"
 places: ["dcus"]
 groups: []
 origin: ""

@@ -3,7 +3,8 @@ id: "WB-GRP-0001"
 type: "GRP"
 name: "The Bishops"
 aliases: []
-era: ["backstory", "M4"]
+founded: "backstory"
+current: "M4"
 places: ["dcus"]
 groups: ["character:quinn_bishop"]
 origin: "backstory_dcus_rebrand"

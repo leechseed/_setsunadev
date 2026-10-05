@@ -3,7 +3,8 @@ id: "WB-INS-0001"
 type: "INS"
 name: "The Administration"
 aliases: ["the Administration"]
-era: ["backstory", "M4"]
+founded: "backstory"
+current: "M4"
 places: ["dcus"]
 groups: ["WB-GRP-0001"]
 origin: "backstory_dcus_rebrand"

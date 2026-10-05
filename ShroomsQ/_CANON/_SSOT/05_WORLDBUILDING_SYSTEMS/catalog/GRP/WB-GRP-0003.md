@@ -3,7 +3,8 @@ id: "WB-GRP-0003"
 type: "GRP"
 name: "The MOON/SAGA Civ table (Jul 2025)"
 aliases: []
-era: []
+founded: "—"
+current: "—"
 places: []
 groups: []
 origin: ""
