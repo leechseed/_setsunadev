@@ -14,6 +14,21 @@ source_version: 0.2.0
 
 # The fabula: why one world timeline sits under every story
 
+*The mind model: one world timeline sits under every story, made of single-transition events joined by typed edges and dated by movement.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["One fabula, one world timeline under every story"]
+  H --> A["The fabula is world order, the syuzhet is told order"]
+  H --> B["An event is one transition"]
+  H --> C["Kernels carry the logic, satellites carry the texture"]
+  H --> D["Edges say why, six types"]
+  H --> E["The record admits what it does not know"]
+  H --> F["Five of twelve layers need a dated origin"]
+  H --> G["It feeds the plot card, the character state records and the setting"]
+```
+
 ## A shared universe needs exactly one fabula
 
 OXO and EVIL CHECK are two tellings of one world. Wolf's internarrative theory gives the warrant: separate stories in one world nest inside the history of that world. Each new story must fit the events already there. So the Command keeps one timeline, not one per story.

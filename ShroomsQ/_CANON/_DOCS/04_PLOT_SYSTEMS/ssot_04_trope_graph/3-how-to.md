@@ -18,6 +18,18 @@ Counts and fields are in the [reference](2-reference.md).
 
 ## Walk the graph for one throughline
 
+*The walk in order: pick a throughline, move one signpost at a time, seat one sequenced node, then pull tropes for detail.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["Pick the throughline, OS, MC, IC or RS"] --> B["Start at signpost 1"]
+  B --> C["Move to signpost 2 only after signpost 1 resolves"]
+  C --> D["Choose one sequenced node, Propp, Vogler or Campbell"]
+  D --> E["Attach an any-phase node, Tobias or Schmidt, if the beat needs a type"]
+  E --> F["Pull tropes keyed to the chosen node for dramatization detail"]
+```
+
 1. Pick the throughline: OS, MC, IC or RS.
 2. Start at signpost 1 of that throughline.
 3. Move to signpost 2 only after signpost 1 resolves. Never skip ahead or go back.

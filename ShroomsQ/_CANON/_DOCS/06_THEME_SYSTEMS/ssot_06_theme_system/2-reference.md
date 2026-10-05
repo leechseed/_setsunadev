@@ -14,7 +14,7 @@ source_version: 1.3.1
 
 # The theme system: reference
 
-*The structure: the method builds four parts in order, the worked instance fills them for OVEREXITOUT, and the scene tests and the handshake check them.*
+*The structure: the method builds four parts in order; the scene tests and the handshake check them.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

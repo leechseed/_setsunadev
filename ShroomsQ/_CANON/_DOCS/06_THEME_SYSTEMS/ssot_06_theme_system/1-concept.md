@@ -14,7 +14,7 @@ source_version: 1.3.1
 
 # The theme system: one argument, four parts
 
-*The mind model: four parts build in order from the controlling idea to the motifs, and the live Touchstones check the rails.*
+*The mind model: four parts build in order, and the live Touchstones check the rails.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

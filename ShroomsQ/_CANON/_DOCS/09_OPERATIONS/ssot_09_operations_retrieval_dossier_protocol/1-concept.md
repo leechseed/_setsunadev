@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # The dossier tells the operator what to do
 
-*The mind model: two documents go in, one dossier comes out, and its fixed structure ends in directives for the operator.*
+*The mind model: two documents go in, one dossier comes out, and it ends in directives.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

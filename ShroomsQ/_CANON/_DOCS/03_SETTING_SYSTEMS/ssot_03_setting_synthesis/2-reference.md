@@ -16,6 +16,19 @@ source_version: 1.0.0
 
 Frontmatter facts: category `setting_system`, tier `fabula`, `module_of: ssot_03_setting_system`, `feeds: ssot_03_setting_system (TM 03)`, `applies_to: [all IPs]`, last updated 2026-10-04. The host system is [ssot_03_setting_system](../ssot_03_setting_system/2-reference.md).
 
+*The structure: the five parts in order, from the per-layer register to the contradictions the wave left open.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  W["42 distills read against the setting system"] --> P1["Part One, per-layer register, S1 to S12"]
+  P1 --> P2["Part Two, nine cross-book methods"]
+  P2 --> P3["Part Three, ten changes, ruled and applied"]
+  P3 --> P4["Part Four, eight DCUS application items"]
+  P4 --> P5["Part Five, five contradictions, each with a lean"]
+  P4 --> D["Items 1, 4 and 7 done, the rest parked for phase 2"]
+```
+
 ## PART ONE · PER-LAYER REGISTER
 
 One entry per layer. Each entry gives the depth move and what the wave added.

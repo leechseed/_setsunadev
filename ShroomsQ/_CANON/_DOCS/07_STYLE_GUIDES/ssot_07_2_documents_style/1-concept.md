@@ -14,7 +14,7 @@ source_version: "1.6.0"
 
 # Documents style: why every page has one job
 
-*The mind model: one job per page leads to four types, and the header, the words, the voice, the scan, the review and the replies serve that page.*
+*The mind model: one job per page leads to four types, and the other rules serve that page.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
@@ -82,7 +82,7 @@ The reply format lives in SOP §7. This guide only locates its rules. The naming
 
 ## A visual says the same thing a second way
 
-A visual gives the reader the shape of a page before the sentences. Every concept page opens with a mind model, and the job picks the picture: a flow for a process, a tree for a hierarchy. A visual never carries a claim the words lack, because a reviewer checks the picture against the text.
+A visual gives the reader the shape of a page before the sentences. Every concept page opens with a mind model. The job picks the picture: a flow for a process, a tree for a hierarchy. A visual never carries a claim the words lack, because a reviewer checks the picture against the text.
 
 ## The long read
 

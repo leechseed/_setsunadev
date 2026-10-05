@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # PM Holdings Inventory: reference
 
-*The structure: five sections sort the holdings by source; three more name what is missing, the path taken and the addendum.*
+*The structure: five sections sort the holdings; three more name the gap, the path taken and the addendum.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
@@ -115,7 +115,7 @@ The registry is `files/2026-08-05_ultrasin-master-registrymd.md` (v0.1, living).
 ## 6 · Finished vs missing
 
 - **Finished:** the six-phase lifecycle and gates (four-domains artifact), the PMBOK-7 mapping, the charter instance, the assumption log. The finished list continues with the decision ledger (STATE and registry), the task register (BOLO), the portfolio board (PROJECTS). It also holds backlog discipline (oscar-mike), session handoff (Ready Rack), stage gates (lab venture). It then adds the document container (SSOT template) and Command style (Marine standard and SOP §7). It ends with 11 MCDP summaries (numbering drift on 4 and 8).
-- **Missing (as of 2026-10-05):** the list now reads as follows. Closed 2026-09-03: ~~one document that says how a project runs here~~ (the project flow); ~~a project lifecycle in the repo proper~~ (the flow's P0 to P6); ~~a sprint/cadence layer beyond the CDPR paragraph~~ (the flow's section F); ~~the DOCTRINE-0 ratification~~ (ratified). Blank charter and gate templates also closed 2026-09-03 (the flow's blank brief and gate checklist). The blank close-out template stays open.
+- **Missing (as of 2026-10-05):** the list now reads as follows. Closed 2026-09-03: ~~one document that says how a project runs here~~ (the project flow). Also closed: ~~a project lifecycle in the repo proper~~ (the flow's P0 to P6). Also closed: ~~a sprint/cadence layer beyond the CDPR paragraph~~ (the flow's section F). Also closed: ~~the DOCTRINE-0 ratification~~ (ratified). Blank charter and gate templates also closed 2026-09-03 (the flow's blank brief and gate checklist). The blank close-out template stays open.
 - **Known gaps already flagged:** the Pyramid Principle source text (BVX.1107 reserved); 7 of 11 MCDP PDFs (BOLO 1). Summaries exist for all 11, and the PDFs feed the catalog, not the method. DOCTRINE-0 is unratified.
 
 ## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot09operationsprojectflow.md v0.1

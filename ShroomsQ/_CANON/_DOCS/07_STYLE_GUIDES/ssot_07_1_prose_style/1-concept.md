@@ -14,7 +14,7 @@ source_version: "1.3.2"
 
 # Prose style: why the guide is a floor
 
-*The mind model: the guide is a floor built on five earlier rulings, it sits under each IP's Telling Profile, and it ends in a ten-question check.*
+*The mind model: a floor built on five rulings, under each IP's Telling Profile, ending in a ten-question check.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

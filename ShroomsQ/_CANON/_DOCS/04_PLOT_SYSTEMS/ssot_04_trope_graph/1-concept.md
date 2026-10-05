@@ -14,6 +14,21 @@ source_version: 1.0.0
 
 # The trope graph: why patterns ride a rail
 
+*The mind model: every trope gets an address among 135 nodes, and a walk moves only along the rail Dramatica locked.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Every trope gets an address on a rail"]
+  H --> A["Five books supply 135 nodes, Tobias, Schmidt, Propp, Vogler, Campbell"]
+  H --> B["Edges count real TV Tropes links, same_as comes from the books"]
+  H --> C["The rail, 16 signposts across four throughlines"]
+  H --> D["P6 is the anchor, the walk fixes the seat"]
+  H --> E["A walked node proposes and never writes"]
+  H --> F["Contested cells are resolved by commitment"]
+  H --> G["644 of 1,678 tropes stay unkeyed"]
+```
+
 ## A trope names a pattern, and a pattern needs an address
 
 A trope is a recurring pattern. TV Tropes holds thousands and supplies volume. It supplies no order. The graph gives each trope an address: one of 135 structural units drawn from five books. Without an address, a trope floats free and cannot help a writer place anything.

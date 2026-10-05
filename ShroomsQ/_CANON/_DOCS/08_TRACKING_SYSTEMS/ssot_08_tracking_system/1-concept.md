@@ -14,7 +14,7 @@ source_version: 1.1.1
 
 # The tracking system: one store, many views
 
-*The mind model: one store of dated records sits under two rulers and feeds the views; the time code addresses every moment.*
+*The mind model: one store of dated records sits under two rulers and feeds the views.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

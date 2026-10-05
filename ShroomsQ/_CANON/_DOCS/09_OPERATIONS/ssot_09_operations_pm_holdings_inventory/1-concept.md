@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # The method was already written; assembly was missing
 
-*The mind model: the inventory sorts holdings into five kinds, finds that assembly was missing, and takes the cheapest path to the Project Flow.*
+*The mind model: five kinds of holdings, one finding, and the cheapest path to the Project Flow.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

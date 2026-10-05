@@ -14,6 +14,20 @@ source_version: 1.0.0
 
 # Setting synthesis: why the wave changed the system
 
+*The mind model: 42 distills read against a fixed frame produce deeper layers, nine recurring moves and ten ruled changes, with instance work parked.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The synthesis reads 42 new distills against a fixed frame"]
+  H --> A["The frame, four axes and twelve layers S1 to S12"]
+  H --> B["Ten of twelve layers deepened, the work moved from collecting to ruling"]
+  H --> C["Nine moves recur, the strongest is present-tense history"]
+  H --> D["Ten changes proposed, Chief ruled all of them"]
+  H --> E["Thin-by-default stands, the wave is not a mandate to fill every layer"]
+  H --> F["Instance work stays parked, the method and the DCUS record are different jobs"]
+```
+
 ## A new shelf of books is worth reading only against a fixed frame
 
 The setting system already has a frame: four axes and a twelve-layer slice (S1 to S12). The synthesis reads 42 new setting-shelf distills against that frame. A distill is a short, structured digest of one book. Each distill carries a `feeds:` block that maps it to S-layers at a strength: primary, supporting or contextual. The synthesis sorts that load by layer, then reads across it.

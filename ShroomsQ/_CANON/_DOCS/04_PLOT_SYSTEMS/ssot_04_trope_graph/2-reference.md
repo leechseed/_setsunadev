@@ -21,6 +21,20 @@ Frontmatter: category `plot_system`, tier `narratology`, `module_of: ssot_04_plo
 
 **Root claim:** every trope sits on one of 135 fixed structural units. Every unit sits on a rail Dramatica already locked. TV Tropes supplies volume and cross-reference, never order. A walk moves only along the rail.
 
+*The structure: nodes, tropes and edges feed the walk, and the walk hands a proposal to the fabula, a seat to the plot card and a grid to the workspace view.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  N["The nodes, 135 in five families"] --> W["The walk, along the rails only"]
+  TR["The tropes, 1,678 fetched, 1,034 keyed"] --> W
+  ED["The edges, trope_link and same_as"] --> W
+  RL["The rails, 16 signposts across four throughlines"] --> W
+  W --> FB["The fabula, a walked node proposes an event"]
+  W --> PC["The plot card, P6 is the anchor"]
+  W --> WV["The workspace view"]
+```
+
 ## MIND MODELS
 
 - **Diagram 1.** Root: the trope graph. Branches: The Nodes (135, five families, 31 `same_as` edges), The Tropes (1,678 fetched, 1,034 keyed, 644 unkeyed). Then come The Edges (`trope_link` 2,584; `same_as` 31; busiest node `tob.14` Love with 94 tropes). The last branches are The Rails (16 signposts across 4 throughlines; P6 is the anchor), The Walk, Boundaries.

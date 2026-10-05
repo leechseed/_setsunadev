@@ -19,6 +19,26 @@ source_version: 0.2.0
 **Owns:** world time, the EVENT RECORD schema, typed CAUSAL EDGES, THE WORLD CLOCK, the ORIGIN MOMENTS rule.
 **Does not own:** the told order (the plot doc, P11); the pattern layer ([trope graph](../ssot_04_trope_graph/2-reference.md)). It also does not own place itself (03) or the static character layers (02).
 
+*The structure: the fabula owns the event record, the edges, the clock and the origin moments, and hands events to three neighbors.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  F["The fabula, world time"]
+  F --> E["The event record, one transition per record"]
+  F --> CE["Causal edges, six types"]
+  F --> WC["The world clock, five universe eras"]
+  F --> OM["Origin moments"]
+  F --> HS["The handshake"]
+  E --> E1["Kernel or satellite"]
+  E --> E2["Time, movement, reach, extent"]
+  E --> E3["Provenance, source and confidence"]
+  OM --> O1["Needed by L5, L7, L8, L9, L10"]
+  HS --> H1["To the syuzhet, the plot card"]
+  HS --> H2["To the state architecture, origin_event"]
+  HS --> H3["To the setting, dated states"]
+```
+
 ## MIND MODELS
 
 - **Diagram 1.** Root: the fabula. Branches: World layer (one timeline), the Event Record, Causal Edges, The World Clock, Origin Moments, Boundaries.

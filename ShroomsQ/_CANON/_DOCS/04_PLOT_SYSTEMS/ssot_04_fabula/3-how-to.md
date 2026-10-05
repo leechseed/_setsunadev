@@ -31,6 +31,20 @@ Field meanings are in the [reference](2-reference.md).
 
 ## Choose an edge type
 
+*The edge types as a choice: pick the one that matches what A does to B, and never claim cause from sequence alone.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  Q["Choose an edge type"]
+  Q --> P["Not causal, precede"]
+  Q --> C["A's full realization produces B, cause"]
+  Q --> E["A only opens a possibility B later realizes, enable"]
+  Q --> M["A opens a nested second process, embed"]
+  M --> S["The nested series specifies the main one, specify"]
+  Q --> SI["Both happen at once, simultaneous"]
+```
+
 1. Ask whether the link is causal. If not, use `precede`.
 2. If A's full realization produces B, use `cause`.
 3. If A only opens the possibility B later realizes, use `enable`.

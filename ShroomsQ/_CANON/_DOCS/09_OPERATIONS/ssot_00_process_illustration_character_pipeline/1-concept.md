@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # Character data moves through four flows
 
-*The mind model: flows A, B and C run in order for each new Tier 3 character; flow D repeats, and a revised storyform re-enters at flow A.*
+*The mind model: flows A, B and C run in order; flow D repeats; a revised storyform re-enters at A.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

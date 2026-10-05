@@ -14,7 +14,7 @@ source_version: 2.0.2
 
 # One design system sets the look of all Bold Venture output
 
-*The mind model: one design system adapted from Astro governs all output; the Roster, the token tiers and the status rule are its main parts.*
+*The mind model: one design system governs all output through the Roster, three token tiers and status.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

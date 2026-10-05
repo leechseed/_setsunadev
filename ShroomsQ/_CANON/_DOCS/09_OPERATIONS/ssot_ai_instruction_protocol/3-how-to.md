@@ -19,7 +19,7 @@ source_version: 1.2.1
 1. Give the AI the protocol as its instruction set.
 2. Supply the raw concept.
 3. Let the AI categorize it into one of six categories: epistemology, narrative_frameworks, character_systems, plot_systems, style_guides, operations.
-4. Let the AI sanitize the input and map it to the frame and the body for its page type (07.2).
+4. Let the AI sanitize the input. Let it map the input to the frame and the body for its page type (07.2).
 5. Let the AI refine for hedging.
 6. Let the AI name the file `📐 ssot_[category]_[name].md`.
 

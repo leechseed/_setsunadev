@@ -14,6 +14,21 @@ source_version: 1.10.2
 
 # The setting system: why place is a pressure field
 
+*The mind model: setting is the pressure field, built at character grade, thin by default and bound to the argument at S12.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Setting is the pressure field"]
+  H --> A["Twelve S-layers mirror the LEECHSEED character system layer for layer"]
+  H --> B["Four axes classify a place, scale, strata, function, time"]
+  H --> C["S12 is fed from the storyform, which makes a place load-bearing"]
+  H --> D["Every place starts thin, completeness is a trap"]
+  H --> E["Cards turn the schema into notation, scene, sequence, faction or nation"]
+  H --> F["DCUS proved the rig, one gap surfaced, S2 WEATHER"]
+  H --> G["Boundaries, structure to Dramatica, psychology to the character database, events to the plot systems"]
+```
+
 ## Setting is pressure, and a place that pressures nothing is scenery
 
 The system's root claim is that setting is the pressure field. It is the total state of the world at a story address. That field presses on every unit of the ladder. In spine terms, setting is where the argument becomes matter, a Domain embodied. A backdrop does none of that work.

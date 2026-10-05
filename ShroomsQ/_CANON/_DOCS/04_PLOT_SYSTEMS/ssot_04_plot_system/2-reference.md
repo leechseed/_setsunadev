@@ -21,6 +21,27 @@ Frontmatter: category `plot_system`, tier `narratology`, trunk BLACK, rung stand
 
 **Root claim:** plot converts the storyform's static checkpoints into felt experience. Every unit runs value-in, turn, value-out at some rung of the ladder. A unit that does not turn is exposition, description or scenery.
 
+*The structure: the taxonomy classifies a unit, the twelve-layer slice describes it, and the plot card and told order put it on the page.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The plot system, the syuzhet"]
+  H --> T["Part B, the taxonomy, four axes"]
+  H --> SL["Part A, the plot slice, twelve P-layers"]
+  H --> PC["The plot card, one plot unit"]
+  H --> TO["The told order"]
+  H --> IN["The instance, M2 row 9, a worked example"]
+  H --> LB["Plot by library"]
+  T --> T1["Scale, R1 BEAT to R5 STORY"]
+  T --> T2["The turn"]
+  T --> T3["Function"]
+  T --> T4["Drive"]
+  SL --> P12["P12 FUNCTION, fed from the storyform"]
+  FB["The fabula"] --> PC
+  TG["The trope graph walk, seats P6"] --> PC
+```
+
 ## MIND MODELS
 
 - **Diagram 1.** Root: the syuzhet. Branches: Taxonomy (four axes), The Told Order, The Plot Slice (twelve P-layers, P12 from the storyform). The other branches are The Plot Card (paired to the Scene Card), Library (five distills), Boundaries.

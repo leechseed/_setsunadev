@@ -20,6 +20,25 @@ Dependencies named in the source: the Dramatica integration protocol, the Step 1
 
 The old name `narrative_invariant` is an alias for `touchstone` in the variable registry.
 
+*The fill order: Section 1 first, then 4, then 3 and 2, then 6, 5 and 7, the log alongside, and Section 10 last before the handoff.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  S1["1 Storyform Dynamics"] --> S4["4 MC Throughline"]
+  S4 --> S3["3 Element Quads"]
+  S3 --> S2["2 Structural Role"]
+  S2 --> S6["6 OS Throughline"]
+  S6 --> S5["5 IC Throughline"]
+  S5 --> S7["7 RS Throughline"]
+  S7 --> S9["9 Touchstones"]
+  S9 --> S10["10 L12 Core Block, generated"]
+  S10 --> S11["11 Downstream Handoff Checklist"]
+  S8["8 Report Source Log, kept alongside"]
+  S1 -.-> S8
+  S7 -.-> S8
+```
+
 ## How to use this form
 
 1. Copy the file to the character's folder as `[CHARACTER_ID]_dramatica_ingest.md`, as the Step 1 protocol sets out.

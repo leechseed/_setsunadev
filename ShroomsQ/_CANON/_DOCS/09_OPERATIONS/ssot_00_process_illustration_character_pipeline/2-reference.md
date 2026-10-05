@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # Process Illustration: reference
 
-*The structure: the four flows run in order from A to D, with the overview, the cascade, the module attachment and the appendix beside them.*
+*The structure: flows A to D run in order, with the cascade, modules and appendix beside them.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

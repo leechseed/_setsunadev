@@ -30,7 +30,7 @@ flowchart TD
   E --> E3["Table 3, by level and world"]
 ```
 
-The source has type `ssot_procedure`, category operations, frontmatter version 0.2.3 (the 1.0.0 stamp of 2026-10-04 is withdrawn). Its last update is 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
+The source has type `ssot_procedure`, category operations, frontmatter version 0.2.3. The 1.0.0 stamp of 2026-10-04 is withdrawn. Its last update is 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
 
 ## The four rungs
 

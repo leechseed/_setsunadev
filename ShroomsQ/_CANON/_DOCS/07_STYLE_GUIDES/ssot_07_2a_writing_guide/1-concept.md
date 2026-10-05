@@ -14,7 +14,7 @@ source_version: "2.2.1"
 
 # SSOT writing guide: why the standard is rigid
 
-*The mind model: a rigid language and a rigid frame keep an SSOT canonical, and the metadata rules make the header render.*
+*The mind model: rigid language and a rigid frame keep an SSOT canonical, and the metadata must render.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

@@ -14,7 +14,7 @@ source_version: 0.2.3
 
 # Every document sits on one rung
 
-*The mind model: one question order sorts every document onto one of four rungs; a spec is a tag, not a fifth rung.*
+*The mind model: one question order sorts every document onto a rung; a spec is a tag.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

@@ -14,6 +14,23 @@ source_version: 1.3.2
 
 # The plot system: why plot is one turning engine
 
+*The mind model: plot is the argument dramatized in time, one turning engine at every rung, split across three docs.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Plot is the argument dramatized in time"]
+  H --> A["One engine runs at every rung, value in, turn, value out"]
+  H --> B["A unit that does not turn is not plot"]
+  H --> C["Three docs answer three questions"]
+  C --> C1["The fabula, when an event happened"]
+  C --> C2["The trope graph, which moves are legal where"]
+  C --> C3["The syuzhet, what the audience sees and when"]
+  H --> D["The told order is a choice, curiosity, suspense, surprise"]
+  H --> E["Twelve layers, parallel to character and setting, P12 from the storyform"]
+  H --> F["Templates are lenses, not rivals"]
+```
+
 ## Plot is the argument dramatized in time
 
 Plot answers three questions: what happens, in what order, and what changes because it happened. Dramatica supplies the fixed structure. The plot system fills that structure with events. A writer who treats plot as a list of beats misses the change.

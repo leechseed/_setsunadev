@@ -14,7 +14,7 @@ source_version: 0.1.1
 
 # A project runs on events, a brief, and gates
 
-*The mind model: the flow sizes the work in three levels, ends each phase on an event gate, and exists to end the stall pattern.*
+*The mind model: three levels size the work, event gates end each phase, and the flow ends the stall pattern.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

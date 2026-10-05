@@ -16,6 +16,25 @@ source_version: 1.10.2
 
 Frontmatter: category `setting_system`, tier `[fabula, narratology]`, trunk BLACK, `applies_to: [all IPs]`, last updated 2026-10-04. Root claim: setting is the pressure field, the total state of the world at a story address. A place that pressures nothing is scenery. Companions: [synthesis](../ssot_03_setting_synthesis/2-reference.md) and [state architecture](../ssot_03_setting_state_architecture/2-reference.md). Read the Touchstones register first.
 
+*The structure: the taxonomy classifies the place, the slice describes it, the cards put it on the page, and DCUS is the worked example.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The setting system"]
+  H --> T["Part B, the taxonomy, four axes, scale, strata, function, time"]
+  H --> SL["Part A, the setting slice, twelve S-layers and a header"]
+  H --> CD["The scene card, the sequence card and the faction or nation card"]
+  H --> CK["The polder test and the setting flags"]
+  H --> FR["The freedom-and-restriction claim"]
+  H --> IN["The instance, DCUS starter slice, a worked example"]
+  H --> LB["Setting by library, and tropes"]
+  SL --> S12["S12 FUNCTION, fed from the storyform"]
+  T -.-> SL
+  SL --> CD
+  CD --> IN
+```
+
 ## MIND MODELS
 
 Three diagrams.

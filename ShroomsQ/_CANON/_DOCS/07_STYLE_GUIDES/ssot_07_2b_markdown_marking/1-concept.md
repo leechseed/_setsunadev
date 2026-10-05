@@ -14,7 +14,7 @@ source_version: "1.0.3"
 
 # Markdown marking: one ink per hand
 
-*The mind model: the writer and the reader each have their own ink; a highlight ends as a vocabulary entry or a wikilink.*
+*The mind model: the writer and the reader each have their own ink, and a highlight ends two ways.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

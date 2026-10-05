@@ -55,6 +55,19 @@ Field meanings are in the [reference](2-reference.md).
 
 ## Query a place at a moment
 
+*The query in order: load the base, load the checkpoint, apply the three blocks, then the story points; the live name comes from the header.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["Load the base slice and header"] --> B["Load the checkpoint at or just before the time code"]
+  B --> C["Apply MODIFIED_LAYERS"]
+  C --> D["Apply MODIFIED_HEADER"]
+  D --> E["Apply MODIFIED_FLAGS"]
+  E --> F["Apply story points after the checkpoint and before the moment"]
+  F --> G["Read the live name from the header result"]
+```
+
 1. Load the base slice and header.
 2. Load the checkpoint at or just before the time code.
 3. Apply `MODIFIED_LAYERS`, then `MODIFIED_HEADER`, then `MODIFIED_FLAGS`.

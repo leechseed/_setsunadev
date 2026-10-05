@@ -14,7 +14,7 @@ source_version: 1.1.1
 
 # The worldbuilding system: a world, defined once, built around a catalog
 
-*The mind model: the catalog, the coherence tests and the world view sit between the systems that already own their data; the boundary keeps all of it thin.*
+*The mind model: the catalog, the tests and the world view sit beside the systems that own their data.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

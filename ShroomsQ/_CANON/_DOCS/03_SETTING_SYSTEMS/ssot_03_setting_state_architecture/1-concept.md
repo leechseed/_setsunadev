@@ -14,6 +14,21 @@ source_version: 1.2.0
 
 # Setting state architecture: why a place changes by diff
 
+*The mind model: one base slice never changes, and every version of a place is a dated diff laid on top of it.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["A place changes by diff"]
+  H --> A["One immutable base slice per place, the deed and the survey"]
+  H --> B["A diff lists only what changed"]
+  H --> C["One test sorts static from dynamic"]
+  H --> D["S5 SCAR is append-only"]
+  H --> E["The live name is the proof, the scrub test"]
+  H --> F["A mirror of the character state architecture, with one new block, the header diff"]
+  H --> G["Checkpoints are heavy, story points are single-field ticks"]
+```
+
 ## Places change like characters, and the story needs to know each version
 
 A campus is built, damaged, renamed, sold and rebranded. A faction's grip tightens or slips. The story must know what Delta Coast Ultra School (DCUS) is at its founding as Skeeter Creek. It must also know it at the Red Hills rename and at the Bishop acquisition. One record per place cannot hold all of those at once.
