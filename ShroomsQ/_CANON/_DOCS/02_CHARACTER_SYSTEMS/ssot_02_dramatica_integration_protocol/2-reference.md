@@ -147,7 +147,7 @@ Dramatica integration: none.
 
 This document holds the only copy of the L12 core block and the L12_DRAMATICA_EXTENDED sub-table.
 
-- Prose says Touchstone. The machine field is `touchstone`. The old name `narrative_invariant` is an alias in the variable registry. Cite as TS n:m. The field holds the Touchstone's TS n:m id, for example `TS 1:1` (1.3.0, IF catalog call 4, ruled 2026-10-05). The slug is kept as an alias that reads back to the id. A slug with no minted id stays as the value until the register mints one.
+- Prose says Touchstone. The machine field is `touchstone`. The old name `narrative_invariant` is an alias in the variable registry. Cite as TS n:m. The field holds the Touchstone's TS n:m id (1.3.0, IF catalog call 4, ruled 2026-10-05). An example is `TS 1:1`. The slug is kept as an alias that reads back to the id. A slug with no minted id stays as the value until the register mints one.
 
 ### Design Decision: Option C — Core + Sub-Table
 

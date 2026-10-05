@@ -105,9 +105,9 @@ One table, twelve layers. The setting slice and the plot slice mirror this archi
 **Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
 
 - Reads from 05 (IF-02-05-02): WB-GRP ids from a catalog entry's `groups` field. A person points at a group through `community_membership.catalog_ref`. The group's style and customs stay in 05.
-- Read by 05 (IF-02-05-03): the 05 L02 link check resolves each catalog group or person pointer to a 02 node. A missing node is owed by 02.
+- Read by 05 (IF-02-05-03): the 05 L02 link check takes each catalog group or person pointer. It resolves the pointer to a 02 node. A missing node is owed by 02.
 - Read by 03 (IF-02-03-04): 03 reads the four flag states for place flags: ACTIVE, PENDING, FIRED_PRE_STORY and INACTIVE. The record computes them and never assigns them.
-- Read by 01 (IF-01-02-14): the trope register reads Tori's L5 WOUND instance, the car crash that kills Jebb, as its SIGNATURE WOUND record.
+- Read by 01 (IF-01-02-14): the trope register reads Tori's L5 WOUND instance as its SIGNATURE WOUND record. The instance is the car crash that kills Jebb.
 - Read by 06 (IF-02-06-01): 06 reads images already present in the character material as motif candidates.
 - Read by 07.1 (IF-02-07-01): 07.1 reads L5 WOUND and L6 DRIVE, which set a character's motive. The page shows only its effects.
 
@@ -224,12 +224,12 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - `sociology_stack` (call 12, 2.1.0): class, occupation, education, home life, political affiliation, as text.
 - `circumplex` (3.0.0): optional scored dial {agency, communion}, each -5 to +5. Agency runs yielding to dominant. Communion runs cold to warm. Null by default.
 - `knowledge_map` (2.4.0, Sedgwick, MSX.68): per relationship, it records what each knows. It also records what each knows the other knows, and who may claim not to know. Shared with L9. It gains `cover` (3.2.0, CL8, Dynamic): list of {kind: overcompensation | double_life | passing | hidden_in_plain_view, sized_to: text, cost: text}. For a double life, the writer picks one home per case, `cover` or `shadow_content`.
-- `community_membership` (2.5.0): the chosen community, its places, press and codes. It also holds the rooms he belongs in with each room's code. Gains `standing` (3.3.0, CH-3, Dynamic): {earned_by: list of dated acts, vouched_by: list of character_ids, cost_to_lose: text}. Keep apart from `civic_standing`. Takes `catalog_ref` (3.4.0, IF catalog call 3): a list of 05 catalog entry ids (`WB-<TYPE>-<nnnn>`), such as the community's WB-GRP entry. The free text stays as the gloss until the entry exists.
+- `community_membership` (2.5.0): the chosen community, its places, press and codes. It also holds the rooms he belongs in with each room's code. Gains `standing` (3.3.0, CH-3, Dynamic): {earned_by: list of dated acts, vouched_by: list of character_ids, cost_to_lose: text}. Keep apart from `civic_standing`. The field takes `catalog_ref` (3.4.0, IF catalog call 3). It is a list of 05 catalog entry ids (`WB-<TYPE>-<nnnn>`). An example is the community's WB-GRP entry. The free text stays as the gloss until the entry exists.
 - `agreement_style` (2.5.0): relationship agreements, fuzzy or legalistic, open or closed. It gains (3.2.0, CL3) form: spoken | unspoken_pretense. It also gains symmetry: symmetric | asymmetric. It gains veto: held | given | none, plus a cost note. It gains reopen_triggers: list of text.
 - `risk_management_practice` (2.5.0): the safety rules he makes and keeps. Shared with L6.
 - `self_presentation` (2.5.0): the desirable self he builds for a public, such as apps, sites, a brand.
 - `pair_register` (3.2.0, CL1, Dynamic): list keyed by character_id. Each entry holds attachment_dimensions {anxiety, avoidance} and pacing: slow | goal. It also holds rules: list of {rule: text, form: spoken | tacit, status: kept | bent | broken}. The last field is rule_gap: text or null.
-- `civic_standing` (3.2.0, CL6, Dynamic): the record holds category: text, rank_or_score: number or null and rights_held: list. It also holds what_can_be_taken: list, by_whom: text, exemptions: list and last_reranked: story_beat. Class modifies it. Takes `catalog_ref` (3.4.0, IF catalog call 3): a list of 05 catalog entry ids, such as the regime that ranks him. A `story_beat` is a fabula `event_id` (IF catalog call 5): `<movement>_<slug>`, or `backstory_<slug>` before M1. `last_reranked` stores one.
+- `civic_standing` (3.2.0, CL6, Dynamic): the record holds category: text, rank_or_score: number or null and rights_held: list. It also holds what_can_be_taken: list, by_whom: text, exemptions: list and last_reranked: story_beat. Class modifies it. The field takes `catalog_ref` (3.4.0, IF catalog call 3): a list of 05 catalog entry ids. An example is the regime that ranks him. A `story_beat` is a fabula `event_id` (IF catalog call 5): `<movement>_<slug>`, or `backstory_<slug>` before M1. `last_reranked` stores one.
 - `disclosure_posture` (3.2.0, CL7, Dynamic): outness. It holds a list of {audience, concealed_trait, strategy: open | selective | covering | double_living | none, stake: text}. It also holds stages: list of {stage: self_recognition | circle | public, year}. It also holds cost_ledger: list of text and hiding_incentive: text or null. It is a view onto `knowledge_map`, not a second store. L9 keeps its own for the sexual-health register.
 - `voice_sheet` (3.2.0, CL28, Dynamic): {register: text, dialect: text, native_pace: slow | even | fast, tic_with_reason: text, noticing_filter: list}. Derive `noticing_filter` from `sociology_stack` and L8 `conditional_patterns`. Texture keeps how the voice is narrated.
 
@@ -269,8 +269,8 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - `layers` (3.2.0, CL6, Static), under `system_exposure`: list of {regime: text, years: range, trace_still_showing: bool}. `system_exposure` holds when he met the system. L3 `civic_standing` holds the standing it gives him now.
 - `life_script` (3.2.0, CL29): {source: text, version: text, stance: accept | bend | refuse, cost: text}. `source` and `version` are Static. `stance` and `cost` are Dynamic. L11 `growth_requirement` may read `stance`.
 - `origin_class` and `origin_disciplinary_formation` entries take an optional `setting_ref` (CL30).
-- `catalog_ref` (3.4.0, IF catalog call 3) sits on `system_exposure.layers.regime` and on `tech_level`: a 05 catalog entry id (`WB-<TYPE>-<nnnn>`). `tech_level` reads the scale of the TEC entry it points at. Where the entry states a scale, the entry wins and the writer types no per-character number.
-- `origin_event` (3.4.0, IF catalog call 5, Static): an optional pointer to the fabula `event_id` that begins the character's existence. A copy, such as Anna Colson (the copy), carries one.
+- `catalog_ref` (3.4.0, IF catalog call 3) sits on `system_exposure.layers.regime` and on `tech_level`. It holds a 05 catalog entry id (`WB-<TYPE>-<nnnn>`). `tech_level` reads the scale of the TEC entry it points at. Where the entry states a scale, the entry wins and the writer types no per-character number.
+- `origin_event` (3.4.0, IF catalog call 5, Static): an optional pointer to the fabula `event_id`. That event begins the character's existence. A copy, such as Anna Colson (the copy), carries one.
 
 #### L8 IMPRINT
 
@@ -339,7 +339,7 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - **Domain:** directional growth vector. The MC Solution element, growth requirement, resistance index, soul evolution archetype. It describes what the character builds toward, not where they stand.
 - Fields: `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement`.
 - `arc_type` and `change_cause` (call 2, BVX.0196, BVX.0061, 2.1.0). `catalyst_archetype` (call 10, BVX.0045).
-- `rail_ref` (3.4.0, IF catalog call 2, Static): a list of the 06 theme rails (R1 to R4) this character carries, for example R2 for Tori. 06 lists the character in each rail's `holders:`. `growth_axis`, `growth_requirement`, `resistance_index` and the MC Solution element stay the character-side carrier of the theme's proposition. 06 reads them through `rail_ref`.
+- `rail_ref` (3.4.0, IF catalog call 2, Static): a list of the 06 theme rails (R1 to R4). This character carries them, for example R2 for Tori. 06 lists the character in each rail's `holders:`. `growth_axis`, `growth_requirement`, `resistance_index` and the MC Solution element stay the character-side carrier of the theme's proposition. 06 reads them through `rail_ref`.
 
 #### L12 FUNCTION
 
@@ -347,7 +347,7 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - Fields: `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement`, `limit_type`, `resolve`, `convention_role`.
 - **Necessity rule** (call 13, BVX.1123, 2.1.0): a Protagonist assignment needs a documented necessity. The character must be shown forced into the role.
 - `convention_role` (3.2.0, CL15, Static, advisory): {genre_role: text, actant_slot: subject | object | sender | receiver | helper | opponent}. Blank when no genre applies. It never overrides `dramatica_archetype`.
-- `touchstone` (3.4.0, IF catalog call 4): holds the TS n:m id, for example `TS 1:1`, so a query joins the Touchstones register. The old slug stays as an alias and reads back to the id. A slug with no minted id stays as the value until the register mints one.
+- `touchstone` (3.4.0, IF catalog call 4): holds the TS n:m id, for example `TS 1:1`. A query then joins the Touchstones register. The old slug stays as an alias and reads back to the id. A slug with no minted id stays as the value until the register mints one.
 
 ### Derived Statistics
 
@@ -378,7 +378,7 @@ Status Flags are boolean conditions that fire when numeric thresholds are met. F
 | FIRED_PRE_STORY | The condition was met before story entry. |
 | INACTIVE | The condition is not met. The flag is dormant. |
 
-**Flag event (IF catalog call 5, ruled 2026-10-05).** A PENDING flag stores the `event_id` of the fabula event that fires it, beside the flag state. A FIRED_PRE_STORY flag stores the `event_id` of the event that fired it. The key reads `<FLAG>_event_id`. ACTIVE and INACTIVE flags store none. A PENDING flag whose event is not yet in the fabula reads `null`, marked ⏸. The `origin_event` of the state record that fires the flag matches this `event_id`.
+**Flag event (IF catalog call 5, ruled 2026-10-05).** A PENDING flag stores its firing fabula event's `event_id`. The `event_id` sits beside the flag state. A FIRED_PRE_STORY flag stores the `event_id` of the event that fired it. The key reads `<FLAG>_event_id`. ACTIVE and INACTIVE flags store none. A PENDING flag whose event is not yet in the fabula reads `null`, marked ⏸. The `origin_event` of the state record that fires the flag matches this `event_id`.
 
 ### The Structured Data Block
 
@@ -592,7 +592,7 @@ A plain-text block with these top-level keys, in order:
 - `FLAGS` holds the five flag states above, with `EARNED_JUDGEMENT_event_id: null` (⏸) and `KINSHIP_COLLAPSE_event_id: m1b_crash_jebb_death` beside them.
 - `L11_DESTINY` holds `rail_ref: [R2, R4]`.
 
-**Anna Colson (the copy), record stub (IF catalog call 5, ruled 2026-10-05).** The fabula gives the copy her own origin event, `backstory_colson_copy_made`. She is a person apart from Anna Colson. She gets her own record, never a state diff on the original.
+**Anna Colson (the copy), record stub (IF catalog call 5, ruled 2026-10-05).** The fabula gives her own origin event, `backstory_colson_copy_made`. She is a person apart from Anna Colson. She gets her own record, never a state diff on the original.
 
 - `CHARACTER_ID: anna_colson_copy` · `IP: overexitout` · `STATUS: stub` · `VERSION: 0.1.0`.
 - `L7_ORIGIN` holds `origin_event: backstory_colson_copy_made`. Every other field is not started, author pending.
@@ -600,7 +600,7 @@ A plain-text block with these top-level keys, in order:
 
 ## THE SCHEMA PASS — aliases and drops (RULED 2026-10-04, BOLO 88, "all recommendations")
 
-The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0). Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4) and `futurity_stance` (L6). The fourth is `minority_stress`, a trigger type under L5 `triggers`. The rest are read aliases. A distill that names one maps to the field shown. So one idea keeps one name (07.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`. The variable registry cites this table for every alias it does not carry itself (IF-00-02-28, IF catalog call 4, ruled 2026-10-05).
+The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0). Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4) and `futurity_stance` (L6). The fourth is `minority_stress`, a trigger type under L5 `triggers`. The rest are read aliases. A distill that names one maps to the field shown. So one idea keeps one name (07.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`. The variable registry cites this table (IF-00-02-28, IF catalog call 4, ruled 2026-10-05). It does so for every alias it does not carry itself.
 
 Call values: MERGE INTO a field, or DROP.
 

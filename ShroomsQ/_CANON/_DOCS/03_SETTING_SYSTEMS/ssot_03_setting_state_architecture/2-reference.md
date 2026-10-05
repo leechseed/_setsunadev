@@ -160,7 +160,7 @@ The result is a complete place record: twelve S-layers, the header with the live
 
 Five categories of event produce state diffs.
 
-Reads from 04 (IF-03-04-18): each fabula event carries `source_kind:`, one of the five categories (construction, institutional, ownership, rename, seasonal) or `character`. This doc reads it to learn which S-layers an event touches. The event's `produces:` field lists the `state_id`s it yields. Its `scheduled:` field holds a LEDGER_DUE future state, which carries the 08 time code (IF catalog calls 1 and 5, ruled 2026-10-05).
+Reads from 04 (IF-03-04-18): each fabula event carries `source_kind:`. It is one of the five categories (construction, institutional, ownership, rename, seasonal) or `character`. This doc reads it to learn which S-layers an event touches. The event's `produces:` field lists the `state_id`s it yields. Its `scheduled:` field holds a LEDGER_DUE future state (IF catalog calls 1 and 5, ruled 2026-10-05). That state carries the 08 time code.
 
 ### Category 1: Construction/Damage Events
 

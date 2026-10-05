@@ -145,7 +145,7 @@ One line per report consulted, in extraction order. Columns: Report, Used for, F
 
 ## 9. Touchstones
 
-A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`. It holds the TS n:m id, and the slug is its alias (1.1.0, IF catalog call 4, ruled 2026-10-05).
+A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`. It holds the TS n:m id (1.1.0, IF catalog call 4, ruled 2026-10-05). The slug is its alias.
 
 Columns: Touchstone (written TS and a number), Statement (one sentence), Storyform source, What it costs the character.
 

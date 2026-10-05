@@ -133,7 +133,7 @@ MODIFIED_DERIVED:
 
 ### Modified Flags Block
 
-Flags are re-evaluated against the modified values. Only flags whose state changes from the base appear. A PENDING flag that fires here matches the `event_id` stored beside it in the base record (IF catalog call 5, ruled 2026-10-05). That `event_id` is this state's `origin_event`.
+Flags are re-evaluated against the modified values. Only flags whose state changes from the base appear. The base record stores an `event_id` beside each PENDING flag (IF catalog call 5, ruled 2026-10-05). A PENDING flag that fires here matches that `event_id`. That `event_id` is this state's `origin_event`.
 
 ```
 MODIFIED_FLAGS:
@@ -252,7 +252,7 @@ Relationships live in a separate structure, so one character's event never force
 ### Relationship State Changes
 
 - A relationship record keeps its own timeline of status changes keyed to narrative moments.
-- Each `moment` is the 08 time code, the same code a character state's `narrative_moment` carries, so the two records line up by value.
+- Each `moment` is the 08 time code. A character state's `narrative_moment` carries the same code, so the two records line up by value.
 - The changes are linked to, but not stored in, character state diffs.
 - When a diff changes `primary_attachment_object`, the relationship record should show a status change at the same moment.
 
@@ -267,15 +267,15 @@ Relationships live in a separate structure, so one character's event never force
 This document defines character state tracking. It does not define story structure, scene sequencing or timeline management.
 
 - Since v1.1 the world timeline is [📐 ssot_04_fabula.md](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). It owns every event. A state points to one through `origin_event`.
-- This doc provides to plot_systems the state diff format and the narrative moment identification scheme. It also provides the MC-relative distance fields and the movement tag, which is a read alias for the `M` of the 08 time code since 1.4.0.
+- This doc provides to plot_systems the state diff format and the narrative moment identification scheme. It also provides the MC-relative distance fields and the movement tag. The movement tag is a read alias for the `M` of the 08 time code since 1.4.0.
 - plot_systems will provide: the movement sequence definition and the scene-to-state mapping.
 - v1.1 (2026-09-24): the first structured key landed. One event may produce states in several characters. `narrative_moment` and `movement` stay as readable tags. Calendar coordinates wait on a world calendar (dated by movement until then).
 - v1.2 (2026-09-29): the time code (`M2 · Q1 · S04 | 012.3.2`) comes from ssot_08. It is the key that `told_at` carries. Victoria-as-(0,0) is ruled. `mc_distance_narrative` stays authored.
-- v1.4 (2026-10-05): `narrative_moment` and relationship `state_history.moment` carry the 08 time code, and the movement tag is a read alias (IF catalog call 1). This doc owns the REL.* variables (call 4). A PENDING or FIRED_PRE_STORY flag stores an `event_id` (call 5).
+- v1.4 (2026-10-05): `narrative_moment` and relationship `state_history.moment` carry the 08 time code (IF catalog call 1). The movement tag is a read alias. This doc owns the REL.* variables (call 4). A PENDING or FIRED_PRE_STORY flag stores an `event_id` (call 5).
 
 **Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
 
-- Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history` when an event changes a bond. For example, `active` becomes `severed` after a trauma event.
-- Read by 09 (IF-02-09-05): Flow D reads the checkpoint: `character_id`, `state_id`, `origin_event`, `told_at`, `base_record_version`, `state_diffs`, STATE_NOTE, ASTROLOGY_OVERLAY and the five event types.
+- Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history`. It does so when an event changes a bond. For example, `active` becomes `severed` after a trauma event.
+- Read by 09 (IF-02-09-05): Flow D reads the checkpoint. It reads `character_id`, `state_id`, `origin_event`, `told_at`, `base_record_version`, `state_diffs`, STATE_NOTE, ASTROLOGY_OVERLAY and the five event types.
 - Read by 08 (IF-02-08-08): 08 reads the query-assembly protocol, "Querying a Character at a Narrative Moment", to wire its inspector panel.
 - Written to 04 (IF-02-04-14): each fabula event's `produces:` list names the `state_id`s whose `origin_event` is that event. The state record keeps only the forward pointer.

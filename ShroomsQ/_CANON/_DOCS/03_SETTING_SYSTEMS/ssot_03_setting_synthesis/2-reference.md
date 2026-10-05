@@ -99,11 +99,11 @@ Five contradictions, each with a lean.
 - **Top-down versus location-first.** Lean: pick a direction and commit. DCUS is already location-first.
 - **Completeness versus risk.** Lean: keep thin-by-default as ruled.
 - **Gated history versus printed timelines.** Not truly opposed, since printed timelines keep only entries that still bite. Lean: immersive for DCUS, with one portal-style beat per movement.
-- **Which genre-contract tool is primary.** Lean: Ryan's nine axes, which state they supersede the five-lineage tool. Settled 2026-10-05 (IF catalog call 10): Ryan's scoring is the tool for 03 and 01 both, and Baur stays as lineage.
+- **Which genre-contract tool is primary.** Lean: Ryan's nine axes, which state they supersede the five-lineage tool. Settled 2026-10-05 (IF catalog call 10): Ryan's scoring is the tool for 03 and 01 both. Baur stays as lineage.
 - **How much a faction card holds.** Lean: the stub (founding sentence, principle, one secret). Use it for places the story does not center. Use the full eight-field block only for the Administration, the Bishops and the Sync Cult.
 
 > **OPEN:** the source gives no field list for the full eight-field faction block beyond the six fields in change 1.
 
 ## Version history
 
-The newest entry is 1.1.0 (2026-10-05, BOLO 102 stage 2, Chief "My word": IF catalog call 10, Ryan's scoring is the genre-contract tool for 03 and 01 both). Three earlier entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0). The second is 0.2.0 (2026-09-29, ruled "go on all those recs"). The third is 1.0.0 (2026-10-04, ruled "REC", BOLO 100 setting batch 1). It was stamped `module_of`, with scope set to all IPs.
+The newest entry is 1.1.0 (2026-10-05, BOLO 102 stage 2, Chief "My word": IF catalog call 10). It says Ryan's scoring is the genre-contract tool for 03 and 01 both. Three earlier entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0). The second is 0.2.0 (2026-09-29, ruled "go on all those recs"). The third is 1.0.0 (2026-10-04, ruled "REC", BOLO 100 setting batch 1). It was stamped `module_of`, with scope set to all IPs.

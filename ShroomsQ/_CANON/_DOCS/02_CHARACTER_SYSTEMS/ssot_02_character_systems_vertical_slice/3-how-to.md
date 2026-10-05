@@ -65,7 +65,7 @@ Lookups: [reference](2-reference.md). Why: [concept](1-concept.md). A worked pas
 5. Where the setting has a matching S4, S6 or S8 entry, cite it through `setting_ref`.
 6. Fill L12 from the storyform, keyed by `storyform_id`. Use the Dramatica integration protocol for the field list.
 7. For a Protagonist, document the necessity: show the character forced into the role.
-8. Where a field names a world fact (a regime, a community, a civic standing or a tech level), set its `catalog_ref` to the 05 catalog entry id.
+8. Where a field names a world fact, the writer sets its `catalog_ref` to the 05 catalog entry id. A world fact is a regime, a community, a civic standing or a tech level.
 9. Set L11 `rail_ref` to the 06 theme rails (R1 to R4) the character carries.
 10. Write L12 `touchstone` as the TS n:m id, with the slug as alias.
 

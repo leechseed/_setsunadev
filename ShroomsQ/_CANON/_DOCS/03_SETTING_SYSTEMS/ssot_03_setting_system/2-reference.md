@@ -152,7 +152,7 @@ One card per scene, one screen. Fields:
 
 Notes: an enclosure ends on a gate walked through; a modulation ends on a code granted or a rate moved. The SEAM_CROSSING flag fires on a crossing.
 
-Theme record, focal and checks (1.11.0): the writer fills `rail_tested`, `side_argued` and `gauge` from 06, beside the `citation` and `transcript` tests. The writer fills `focal` with one character id. The writer answers `fantasy`, `sexy` and `aesthetic` in one breath each (IF catalog calls 2 and 6, ruled 2026-10-05).
+Theme record, focal and checks (1.11.0): the writer fills `rail_tested`, `side_argued` and `gauge` from 06. The writer fills them beside the `citation` and `transcript` tests. The writer fills `focal` with one character id. The writer answers `fantasy`, `sexy` and `aesthetic` in one breath each (IF catalog calls 2 and 6, ruled 2026-10-05).
 
 ## THE SEQUENCE CARD — the R3 notation (added 2026-09-29, BOLO 90 step 7 trial)
 
@@ -228,16 +228,16 @@ The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School and
 
 ## SETTING × LIBRARY
 
-Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. Two rulings follow. The first is the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the genre-contract tool for 03 and 01 both (IF catalog call 10, ruled 2026-10-05), with Baur's five lineages as lineage. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
+Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. Two rulings follow. The first is the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the genre-contract tool for 03 and 01 both. IF catalog call 10 ruled it on 2026-10-05, with Baur's five lineages as lineage. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
 
 Interfaces (IF catalog, ruled 2026-10-05), one line for each wiring another system states first:
 
 - Reads from 05 (IF-03-05-02): 05 shows the catalog entries found at each place beside that place's slice header. Its filter keys are `place` (this doc's `place_id`) and `era`.
 - Read by 05 (IF-03-05-03): 05 takes S5 (ruins and SCARs) and S7 (present-tense bite) as test inputs.
-- Read by 00 (IF-00-03-01): the variable registry reads `setting_ref` {setting_id, S-layer}, an optional sub-field of T2.WOUND.triggers and of T3.ORIGIN `origin_class` and `origin_disciplinary_formation` entries.
-- Read by 06 (IF-03-06-04): 06 reads images already present in the setting material, such as the Feed and the uniform, as motif candidates.
+- Read by 00 (IF-00-03-01): the variable registry reads `setting_ref` {setting_id, S-layer}. It is an optional sub-field of T2.WOUND.triggers and of T3.ORIGIN `origin_class` and `origin_disciplinary_formation` entries.
+- Read by 06 (IF-03-06-04): 06 reads images already present in the setting material as motif candidates. Examples are the Feed and the uniform.
 - Read by 07 (IF-03-07-01): 07.1 reads S3 SENSORIUM, the setting's sensory layer, to feed description.
-- Read by 09 (IF-03-09-01): the process pipeline cites `setting_ref` in the L7 to L12 variable stacks where the place has an S4, S6 or S8 entry.
+- Read by 09 (IF-03-09-01): the process pipeline cites `setting_ref` in the L7 to L12 variable stacks. It does so where the place has an S4, S6 or S8 entry.
 
 ## TROPES
 

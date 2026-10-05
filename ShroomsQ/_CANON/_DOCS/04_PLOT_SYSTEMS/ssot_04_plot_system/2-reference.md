@@ -16,8 +16,8 @@ source_version: 1.4.0
 
 Frontmatter: category `plot_system`, tier `narratology`, trunk BLACK, rung standard, `applies_to: [all IPs]`, last updated 2026-10-05. This doc is the told-order third of the plot system. The other two are the [fabula](../ssot_04_fabula/2-reference.md) (world time) and the [trope graph](../ssot_04_trope_graph/2-reference.md) (the rails). Read the Touchstones register first.
 
-**Owns:** the told order, turns, escalation, the twelve-layer PLOT SLICE, the PLOT CARD. It also owns the storyform record: the entry keyed by `storyform_id` that character (02), setting (03) and P12 bind to (IF catalog call 4). Dramatica supplies the structure the record holds.
-**Does not own:** world time (fabula), legal moves (trope graph), structure (Dramatica sets it; this doc keeps the storyform record), psychology (the character database), place (03).
+**Owns:** the told order, turns, escalation, the twelve-layer PLOT SLICE, the PLOT CARD. It also owns the storyform record, the entry keyed by `storyform_id` (IF catalog call 4). Character (02), setting (03) and P12 bind to it. Dramatica supplies the structure the record holds.
+**Does not own:** world time (fabula), legal moves (trope graph), structure, psychology (the character database), place (03). Dramatica sets structure, and this doc keeps the storyform record.
 
 **Root claim:** plot converts the storyform's static checkpoints into felt experience. Every unit runs value-in, turn, value-out at some rung of the ladder. A unit that does not turn is exposition, description or scenery.
 
@@ -124,10 +124,10 @@ Layer names are house coinage, ruled 2026-09-16. P12 is fed from the storyform.
 - **P7 cascade recipe (1.3.0).** Choose one rule that binds an institution. Show a near-miss. Break it through a personal-scale event. Each step is an existing `cause` or `enable` edge. The collapse has no villain.
 - **P9 repeat-turn exception.** A resurrection beat forces a second full pass, so `stakes_delta` may show a repeated peak.
 - **P9 first-unit baseline (ruled 2026-10-04).** The first unit of a sequence sets `stakes_delta: baseline`. The trend test starts at the second unit.
-- **P7 receives from UNDERSIDE_SURFACING (2026-10-05).** When 03's flag fires, an S10 fact moves from secret to folk, or from folk to public. The paired unit takes `reveal_content` and `reveal_type` from that fact. The fabula event stays `gap_type: logged` (IF catalog call 5).
+- **P7 receives from UNDERSIDE_SURFACING (2026-10-05).** When 03's flag fires, an S10 fact moves. It goes from secret to folk, or from folk to public. The paired unit takes `reveal_content` and `reveal_type` from that fact. The fabula event stays `gap_type: logged` (IF catalog call 5).
 - **P12 `domain_ref` (2026-10-05).** A unit set at a LOAD_BEARING place records the S12 Domain that place embodies. It sits beside `story_point` and `storyform_id` (IF catalog call 5).
-- **P11 `order_told` is a time code (2026-10-05).** The writer gives the unit's position in the telling as an 08 time code. The anachrony is the gap between it and the fabula's `time` (IF catalog call 1).
-- **The theme record (2026-10-05).** The plot card carries `rail_tested` (R1 to R4), `side_argued` and `gauge` (a name and a step). It also holds the `citation` test with its knowledge gradient and the `transcript` test. The scene card already holds the two tests (IF catalog call 2).
+- **P11 `order_told` is a time code (2026-10-05).** The writer gives the unit's telling position as an 08 time code. The anachrony is the gap between it and the fabula's `time` (IF catalog call 1).
+- **The theme record (2026-10-05).** The plot card carries `rail_tested` (R1 to R4), `side_argued` and `gauge`. A gauge is a name and a step. It also holds the `citation` test with its knowledge gradient and the `transcript` test. The scene card already holds the two tests (IF catalog call 2).
 - **The three checks (2026-10-05).** The plot card carries `fantasy:`, `sexy:` and `aesthetic:`. Each holds the one line the three-check pass writes for that element (IF catalog call 6).
 
 **P10 ruling (2026-09-29, BOLO 91).** Story level reads cultcore. Scene level reads Snyder's Institutionalized, then varies by movement:
@@ -164,7 +164,7 @@ Fields: address (P1) · driver (P2) · opposition goal (P2) · value-in (P3) · 
 
 **Interfaces (IF catalog).**
 
-- Reads from 00 (IF-00-04-03): `T1.SOCIAL.community_membership.standing` `{earned_by, vouched_by, cost_to_lose}` is the standing a unit can put at risk. P9 `stakes_delta` reads it.
+- Reads from 00 (IF-00-04-03): `T1.SOCIAL.community_membership.standing` `{earned_by, vouched_by, cost_to_lose}`. A unit can put that standing at risk. P9 `stakes_delta` reads it.
 - Reads from 06 (IF-04-06-02): the value scale steps set the step each unit names. P3 `polarity_in` and P5 `polarity_out` read them.
 - Read by 08 (IF-04-08-09): P1 percentage addresses. The `proportion` lane measures act and third shares from them.
 

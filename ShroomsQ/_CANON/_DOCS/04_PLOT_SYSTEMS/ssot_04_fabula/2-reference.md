@@ -159,7 +159,7 @@ A layer needs an origin moment when its baseline forms from one datable event.
 
 **To the setting.** Axis 4 TIME states read the world-clock eras for dating. S7, S11 and S5 stay the authoring surface for what happened. The fabula is the surface for when.
 
-**To the readers of the world clock.** Read by 01 (IF-01-04-06): the story registry reads the universe eras 1 to 5 and the world clock. Each story row carries an era. Read by 05 (IF-04-05-01): a catalog entry's `origin: "<fabula event_id>"` names the event that brought the entry into being.
+**To the readers of the world clock.** Read by 01 (IF-01-04-06). The story registry reads the universe eras 1 to 5 and the world clock. Each story row carries an era. Read by 05 (IF-04-05-01): a catalog entry's `origin: "<fabula event_id>"` names the event that brought the entry into being.
 
 ## THE INSTANCE
 
