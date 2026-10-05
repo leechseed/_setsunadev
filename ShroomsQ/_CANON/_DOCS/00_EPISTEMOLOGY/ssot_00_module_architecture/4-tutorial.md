@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.0.2"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer new to modules · **What it does:** builds the walking style module step by step · **Type:** tutorial

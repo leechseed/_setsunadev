@@ -7,7 +7,7 @@ owner: Chief
 state: retired
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_goon_room_protocol.md
-source_version: 1.1.0
+source_version: 1.2.0
 ---
 
 **Who it's for:** a reader checking what the 2026-02 Goon Room protocol said · **What it does:** records every component of the legacy protocol, kept as the record and not as doctrine · **Type:** reference

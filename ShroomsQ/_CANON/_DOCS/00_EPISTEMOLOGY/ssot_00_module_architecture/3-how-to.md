@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.0.2"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer building or running a field module · **What it does:** gives the steps for each module task · **Type:** how-to
@@ -39,7 +39,9 @@ Blocks and tables live in the [reference](2-reference.md).
 2. Give a numeric variable a scale class from the Base 60 SSOT.
 3. Declare its type from the standard set.
 4. Declare its source: authored, derived or computed.
-5. List the core variables it reads.
+5. Declare its tag: Static or Dynamic.
+6. List the core variables it reads.
+7. If the module has a flag, write the fabula `event_id` on every flag in PENDING or FIRED_PRE_STORY.
 
 ## Read another module's variable
 

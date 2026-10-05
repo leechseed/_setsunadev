@@ -83,7 +83,7 @@ Rungs are containers. Each has a definition, a completion test, a governing syst
 - **Is:** multiple IPs sharing substrate: world rules, entities, systems. The integration protocol scopes `applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]`.
 - **Completion test:** none. A universe never completes. The test is canon integrity.
 - **Governed by:** the canon machinery: `_CANON_NODES/` plus the SSOT system. Cross-IP arguments would be R7 meta-forms spanning IPs (flagged).
-- **Catalog (IF catalog call 3, ruled 2026-10-05):** the writer holds R8's shared world rules, entities and systems as entries in the [05 worldbuilding catalog](../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) (`WB-<TYPE>-<nnnn>`). The canon-integrity test reads those entries.
+- **Catalog (IF catalog call 3, ruled 2026-10-05):** the writer holds R8's shared world rules, entities and systems as entries in the [05 worldbuilding catalog](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) (`WB-<TYPE>-<nnnn>`). The canon-integrity test reads those entries.
 - **Holdings:** Collaborative Worldbuilding (0067); the worldbuilding shelf.
 
 ## THREADS — what runs through the containers

@@ -862,7 +862,7 @@ Named only: ssot_09_operations_goon_room_protocol → ssot_07_2a_writing_guide; 
 
 ## THE WIRING FINDINGS
 
-A DATA row is one-sided when one system states it and the other never does. The silent side is the gap.
+A DATA row is one-sided when one system states it and the other never does. The silent side is the gap. A pair leaves this list when the silent side names the interface by its id (the apply batch) or logs its own row.
 
 **Stated as written, never stated as read** (A → B): 00→04, 00→07, 00→08, 05→02, 05→03, 05→08, 05→09, 06→01, 06→04, 07→00, 07→01, 07→09, 09→02, 09→08.
 

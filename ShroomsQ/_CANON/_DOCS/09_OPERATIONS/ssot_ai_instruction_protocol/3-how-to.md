@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_ai_instruction_protocol.md
-source_version: 1.2.2
+source_version: 1.3.0
 ---
 
 **Who it's for:** an operator who wants an AI to produce one SSOT document · **What it does:** gives the steps to run the master prompt and check its output · **Type:** how-to

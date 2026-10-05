@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_template_prompt_for_summarizing_novels_and_books.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or agent summarizing one book into the vault · **What it does:** gives the steps to build, extend, and run the summary prompt · **Type:** how-to

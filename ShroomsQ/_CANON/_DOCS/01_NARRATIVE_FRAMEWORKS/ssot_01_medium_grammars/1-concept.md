@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_medium_grammars.md
-source_version: 1.2.2
+source_version: 1.3.0
 ---
 
 **Who it's for:** a writer asking why each medium re-tells a story · **What it does:** explains the channel-contract law · **Type:** concept

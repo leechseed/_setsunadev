@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_standards_ladder.md
-source_version: 0.2.3
+source_version: 0.3.0
 ---
 
 **Who it's for:** an agent or Chief learning to rung-classify by filing one real document · **What it does:** walks the ladder's own rung, the Development Standard, from the deciding rule to its filing row · **Type:** tutorial

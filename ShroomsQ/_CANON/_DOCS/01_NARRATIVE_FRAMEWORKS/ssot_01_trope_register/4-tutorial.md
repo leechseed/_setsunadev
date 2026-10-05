@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a new writer · **What it does:** teaches the register by keying one worked record · **Type:** tutorial

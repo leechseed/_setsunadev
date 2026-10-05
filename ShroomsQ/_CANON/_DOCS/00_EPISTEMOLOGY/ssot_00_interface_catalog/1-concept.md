@@ -85,7 +85,7 @@ The statuses keep three kinds of claim apart. The source states one. The source 
 
 The grid counts rows for every ordered pair of systems. The row is the system whose docs state the interface. The column is the other system.
 
-All 45 pairs touch. The heaviest cells are 01 Narrative frameworks to 03 Setting (32 rows), 00 Base to 02 Character (30) and 01 to 02 (25). The gaps show where a system speaks about a neighbor little or not at all.
+All 45 pairs touch. The heaviest cells are 01 Narrative frameworks to 03 Setting (32 rows) and 00 Base to 02 Character (30). Next is 01 to 02 (25). The gaps show where a system speaks about a neighbor little or not at all.
 
 The grid also marks proposed rows in parentheses. A cell with many parentheses names a pair that needs more wiring than its docs state.
 
@@ -124,4 +124,4 @@ The build script, `_tools/docs/ifc_build.py`, writes the page. A reader who want
 
 The generated page, not a hand-kept list, makes the map cheap to keep honest. A fix batch changes a status in the JSON. The rebuild moves every count on the page at once.
 
-Next, see the [reference](2-reference.md) for the full list of pairs, the [how-to](3-how-to.md) for the four tasks, and the [tutorial](4-tutorial.md) for a worked lookup. The source is [ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md](../../../_SSOT/00_EPISTEMOLOGY/📐%20ssot_00_interface_catalog.md).
+Next, see three pages. The [reference](2-reference.md) lists every pair. The [how-to](3-how-to.md) gives the four tasks. The [tutorial](4-tutorial.md) walks one lookup. The source is [ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md](../../../_SSOT/00_EPISTEMOLOGY/📐%20ssot_00_interface_catalog.md).

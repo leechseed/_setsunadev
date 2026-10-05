@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.2.2"
+source_version: "1.3.0"
 ---
 
 **Who it's for:** a designer new to the registry · **What it does:** traces one variable through its entry, formulas and flags · **Type:** tutorial

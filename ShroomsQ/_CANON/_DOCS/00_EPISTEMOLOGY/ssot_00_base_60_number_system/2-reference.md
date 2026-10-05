@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.3"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a writer or designer looking up a number rule · **What it does:** lists every table, formula and rule in the base 60 doc · **Type:** reference
@@ -36,7 +36,9 @@ flowchart TD
   V --> DR["Design Rules for Future Variables"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.3, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.1.0, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
+
+Scope: the doc covers every scaled number in any system. Numeric fields in the S1 to S12 setting layers and the P1 to P12 plot layers take scale classes. A time code takes none, because a time code is an address and not a scale (IF catalog call 8, ruled 2026-10-05).
 
 Notation: SC-N is a scale class with N+1 valid values (0 through N), where N divides 60. Internal means the 0-60 space. `internal = display × step`; `display = internal / step`.
 

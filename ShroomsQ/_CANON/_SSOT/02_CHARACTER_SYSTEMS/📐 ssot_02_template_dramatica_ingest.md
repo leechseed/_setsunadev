@@ -2,7 +2,7 @@
 type: ssot_02_character_systems
 category: template_dramatica_ingest
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.0.2
+version: 1.1.0
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -162,7 +162,7 @@ One line per report consulted, in extraction order.
 
 ## 9. Touchstones
 
-A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`; the old name `narrative_invariant` is an alias in the variable registry.
+A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`; the old name `narrative_invariant` is an alias in the variable registry. The field holds the TS n:m id (IF catalog call 4, ruled 2026-10-05), and the slug is its alias.
 
 |Touchstone|Statement (one sentence)|Storyform source|What it costs the character|
 |---|---|---|---|
@@ -181,7 +181,7 @@ L12_FUNCTION:
   methodology_element: ____
   evaluation_element: ____
   purpose_element: ____
-  touchstone: ____   # the Touchstone
+  touchstone: ____   # the Touchstone's TS n:m id; the slug is an alias
   story_outcome: ____
   story_judgement: ____
   limit_type: ____
@@ -210,3 +210,4 @@ L12_FUNCTION:
 |1.0.0|2026-10-04|v1.0.0 2026-10-04: RULED — BOLO 100 C18. First blank form, built from the integration doc and the Step 1 checks (2.1 to 2.9).|
 |1.0.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed, schema-pass wording closed (TS-B3).|
 |1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): Section 1 `story_limit` renamed `limit_type`; Section 4 `mc_problem` renamed `mc_problem_element`, matching Section 10; Section 9's `touchstone` alias corrected to its old name, `narrative_invariant`, as the variable registry records it.|
+|1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): Section 9 and Section 10 name the `touchstone` value as the TS n:m id, with the slug as alias.|

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_pm_holdings_inventory.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** an agent or Chief looking up where a PM instrument, template, or source lives in the repo · **What it does:** lists every section of the PM Holdings Inventory and the holdings each one records · **Type:** reference

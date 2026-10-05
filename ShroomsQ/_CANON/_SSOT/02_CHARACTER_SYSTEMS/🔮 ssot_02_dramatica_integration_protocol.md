@@ -2,9 +2,9 @@
 type: ssot_02_character_systems
 category: dramatica_integration
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.2.2
+version: 1.3.0
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.2.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass, CL15: `convention_role` defined (L12, Static, advisory). v1.2.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest."
@@ -167,7 +167,7 @@ Tier 1 characters do not interact with Dramatica. They carry L1-L3 values only. 
 
 **One home for the field lists.** This doc holds the only copy of the L12 core block and the L12_DRAMATICA_EXTENDED sub-table. The main doc's L12 row points here and does not repeat them.
 
-**Touchstone wording.** The invariant a Tier 3 character carries is now called a Touchstone in prose. The machine field is `touchstone`; the old name `narrative_invariant` is an alias in the variable registry. Cite a Touchstone as TS n:m.
+**Touchstone wording.** The invariant a Tier 3 character carries is now called a Touchstone in prose. The machine field is `touchstone`; the old name `narrative_invariant` is an alias in the variable registry. Cite a Touchstone as TS n:m. **Added 1.3.0 (IF catalog call 4, ruled 2026-10-05):** the field holds the Touchstone's TS n:m id, for example `TS 1:1`, so a query joins the Touchstones register. The slug is kept as an alias that reads back to the id. A slug with no minted id stays as the value until the register mints one.
 
 ### Design Decision: Option C — Core + Sub-Table
 
@@ -351,3 +351,4 @@ A revised storyform is a new version, not an edit (see above). The chart, the L1
 |1.2.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system (version continues from 1.1.0). Rule: this doc is the single home of the L12 field lists; the main doc points here. `narrative_invariant` named a Touchstone in prose (machine field unchanged until the schema pass). New section: Cascade on a Revised Storyform (C19). L7-L11 corrected to L1-L11. Dependency path fixed. Frontmatter repaired and table of contents links made in-page. Blank templates linked.|
 |1.2.1|2026-10-04|RULED, Chief ("rec") — BOLO 100 library pass, CL15: `convention_role` {genre_role, actant_slot} defined as an advisory Static L12 field; cited from the main doc. No other change.|
 |1.2.2|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed, schema-pass wording closed (TS-B3).|
+|1.3.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): L12 `touchstone` holds the TS n:m id, with the slug as alias.|

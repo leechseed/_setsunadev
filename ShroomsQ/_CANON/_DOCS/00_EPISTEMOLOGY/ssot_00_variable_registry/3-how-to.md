@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.2.2"
+source_version: "1.3.0"
 ---
 
 **Who it's for:** a designer working with character variables · **What it does:** gives the steps for each registry task · **Type:** how-to
@@ -39,11 +39,13 @@ Entries live in the [reference](2-reference.md).
 3. For a computed value, use `DRV`. For a boolean trigger, use `FLG`.
 4. For a state-only value, use `STT`. For a record field, use `META`.
 5. For a module variable, use `MOD.[MODULE_CODE].[variable_name]`.
+6. For a setting layer field, use `SET`. For a plot layer field, use `PLT`. Setting (03) and Plot (04) own those fields.
+7. For a relationship record, use `REL`. The 02 state architecture owns those fields.
 
 ## Point to another system's field
 
 1. Find the owning doc in the Ownership Rule table.
-2. Add one pointer row for that system. Do not copy the field.
+2. Add one pointer row for that system. Do not copy the field. Narrative (01), Character state (02), Style (07) and Operations (09) have rows too.
 3. If the owner is none of the listed systems, check the Ownership Rule before adding anything.
 
 ## Rename a variable and keep the old name readable
@@ -52,6 +54,7 @@ Entries live in the [reference](2-reference.md).
 2. Add an alias row with the old name, marked as a read alias.
 3. Note the rename and its BOLO in the version history.
 4. The source's example: `narrative_invariant` became `touchstone`, with one alias row kept.
+5. For a coined name from the schema pass, cite THE SCHEMA PASS table in the vertical slice. Do not copy its rows.
 
 ## Add a derived statistic
 
@@ -64,7 +67,7 @@ Entries live in the [reference](2-reference.md).
 ## Add a status flag
 
 1. Write the trigger as a boolean expression over registered variables.
-2. Use the four states: ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE.
+2. Use the four states: ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE. Store the fabula `event_id` on a flag in PENDING or FIRED_PRE_STORY.
 3. Set source `computed` and tag Derived.
 4. Add the flag to each input variable's Feeds field.
 

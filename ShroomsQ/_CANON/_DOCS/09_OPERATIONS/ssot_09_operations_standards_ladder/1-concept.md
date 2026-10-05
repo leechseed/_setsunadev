@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_standards_ladder.md
-source_version: 0.2.3
+source_version: 0.3.0
 ---
 
 **Who it's for:** Chief or an agent deciding how binding a Command document is and where it files · **What it does:** explains why every Command document sits on one of four rungs and how the rung is chosen · **Type:** concept

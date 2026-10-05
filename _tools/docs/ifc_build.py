@@ -136,16 +136,18 @@ def main():
         title = f"### {a} {NAMES[a]} ↔ {b} {NAMES[b]}" if b != "ALL" else f"### {a} {NAMES[a]} → every system"
         reg.append(title + "\n")
         reg.append("| id | side | kind | payload | trigger | stated in | status |\n|---|---|---|---|---|---|---|")
-        n = 0
         mentions = []
+        taken = [int(e["id"].rsplit("-", 1)[1]) for e in rows if e.get("id")]
+        nxt = max(taken) + 1 if taken else 1
         for e in rows:
             if e["kind"] == "MENTION":
                 mentions.append(f"{e['from_doc']} → {e['to_doc']}")
                 continue
-            n += 1
             n_if += 1
-            iid = f"IF-{a}-{b}-{n:02d}"
-            e["id"] = iid
+            if not e.get("id"):            # an id never changes once published; new rows take the next number
+                e["id"] = f"IF-{a}-{b}-{nxt:02d}"
+                nxt += 1
+            iid = e["id"]
             side = f"{e['from_sys']} {e['direction']}"
             where = f"{e['from_doc']} › {e['where']}" if e["where"] else e["from_doc"]
             note = f" *({esc(e['note'])})*" if e["note"] else ""
@@ -178,8 +180,10 @@ def main():
     wired = [e for e in E if e["kind"] == "DATA" and e["status"] != "proposed" and e["to_sys"] != "ALL"]
     reads = {(e["to_sys"], e["from_sys"]) for e in wired if e["direction"] == "reads"}
     writes = {(e["from_sys"], e["to_sys"]) for e in wired if e["direction"] == "writes"}
-    one_w = sorted(writes - reads)
-    one_r = sorted(reads - writes)
+    closed = {(e["from_sys"], e["to_sys"]) for e in wired if "silent side named it" in e["note"]}   # the apply batch closed it
+    closed |= {(b, a) for a, b in closed}
+    one_w = sorted((writes - reads) - closed)
+    one_r = sorted((reads - writes) - closed)
     n_pairs = sum(1 for k in pairs if k[1] != "ALL")
     kinds = Counter(e["kind"] for e in E)
     props = sum(1 for e in E if e["status"] == "proposed")
@@ -187,7 +191,8 @@ def main():
                f"{kinds['MENTION']} named-only citations · {props} proposed · {n_pairs} of 45 system pairs touch.**")
 
     findings = ["## THE WIRING FINDINGS", "",
-                "A DATA row is one-sided when one system states it and the other never does. The silent side is the gap.", "",
+                "A DATA row is one-sided when one system states it and the other never does. The silent side is the gap. "
+                "A pair leaves this list when the silent side names the interface by its id (the apply batch) or logs its own row.", "",
                 "**Stated as written, never stated as read** (A → B): " + ", ".join(f"{a}→{b}" for a, b in one_w) + ".", "",
                 "**Stated as read, never stated as written** (B reads A): " + ", ".join(f"{a}→{b}" for a, b in one_r) + ".", "",
                 "Each closes by one line on the silent side naming the IF id. The fix batch runs after the calls are ruled.", ""]

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_project_flow.md
-source_version: 0.1.1
+source_version: 0.2.0
 ---
 
 **Who it's for:** Chief or an agent starting, running, or closing a project in the Command · **What it does:** explains why the project flow exists and how its phases, brief, and gates end the stall pattern · **Type:** concept

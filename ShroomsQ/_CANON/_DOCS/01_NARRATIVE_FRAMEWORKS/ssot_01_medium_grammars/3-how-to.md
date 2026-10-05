@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_medium_grammars.md
-source_version: 1.2.2
+source_version: 1.3.0
 ---
 
 **Who it's for:** a writer adapting a story across media · **What it does:** steps for adaptation, mode and scaffold tasks · **Type:** how-to
@@ -23,6 +23,7 @@ Terms are defined in the [reference](2-reference.md).
 3. Rebuild the Telling Profile. Re-answer the Ten Questions with that medium's machinery.
 4. Check T3 order, T4 speed and T10 narratee in the texture-by-medium table.
 5. For games, check each Touchstone against the rules.
+6. For prose (M1), apply [07.1 prose style](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md). The medium selects it.
 
 ## Re-answer focalization and duration for film
 

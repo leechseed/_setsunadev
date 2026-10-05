@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_system.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or tool builder working a telling · **What it does:** steps for the system's recurring tasks · **Type:** how-to
@@ -63,6 +63,7 @@ Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/
 3. Divide by the passage length and scale to 100 words.
 4. Read the band: cinematic, light or deep.
 5. On the first trial passage, set the cut points from your result. The source says the first trial calibrates them.
+6. Hand the band and the register to 07.1 prose style, which applies them to the draft.
 
 ## Add a mood-curve entry
 

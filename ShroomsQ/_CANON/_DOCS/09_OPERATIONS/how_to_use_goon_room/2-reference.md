@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/how_to_use_goon_room.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer looking up a Goon Room file name, tag, or review step · **What it does:** lists every part of the Goon Room workflow, file naming, and focus rules · **Type:** reference

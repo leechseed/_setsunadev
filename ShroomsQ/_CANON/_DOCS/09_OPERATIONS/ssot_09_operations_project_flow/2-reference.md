@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_project_flow.md
-source_version: 0.1.1
+source_version: 0.2.0
 ---
 
 **Who it's for:** an agent or Chief. They look up a phase, brief section, gate rule, instrument, or size in the project flow · **What it does:** lists every component of the Project Flow · **Type:** reference

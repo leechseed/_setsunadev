@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_standards_ladder.md
-source_version: 0.2.3
+source_version: 0.3.0
 ---
 
 **Who it's for:** an agent or Chief. They look up a rung, the deciding rule, the tag, a filed document, or an index row · **What it does:** lists every component of the Command Ladder · **Type:** reference
@@ -30,7 +30,7 @@ flowchart TD
   E --> E3["Table 3, by level and world"]
 ```
 
-The source has type `ssot_procedure`, category operations, frontmatter version 0.2.3. The 1.0.0 stamp of 2026-10-04 is withdrawn. Its last update is 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
+The source has type `ssot_procedure`, category operations, frontmatter version 0.3.0. The 1.0.0 stamp of 2026-10-04 is withdrawn. Its last update is 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
 
 ## The four rungs
 
@@ -60,6 +60,8 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 
 ## The filing table · 2026-09-15
 
+The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level (IF catalog call 9, ruled 2026-10-05). The writer picks each rung by the rule above. A script then stamps the rung into each doc's front matter. Every row below then reads `stamped`. Two files moved out of 09 under the same ruling. The character pipeline illustration now lives in 02, and the Bold Venture Design System now lives in 00. Their rows below carry the new folders. Read by 07 (IF-07-09-04): 07.3 reads the Bold Venture Design System (ROSE anchor #8A1F44, FLESH ramp, four registers, Luminance Law, one-red ledger), now filed in 00.
+
 | Document | Rung | Status |
 |---|---|---|
 | `DOCTRINE-0-INVARIANTS.md` | policy | stamped |
@@ -68,6 +70,59 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 | `📐 ssot_09_operations_development_standard.md` (09_OPERATIONS) | procedure | stamped |
 | `📐 ssot_07_2b_markdown_marking.md` (07_STYLE_GUIDES) | procedure | stamped |
 | `📐 ssot_00_variable_registry.md` (00_EPISTEMOLOGY) | standard | stamped |
+| `📐 ssot epistemology truth verification.md` (00_EPISTEMOLOGY) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_base_60_number_system.md` (00_EPISTEMOLOGY) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_bold_venture_design_system.md` (00_EPISTEMOLOGY) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_interface_catalog.md` (00_EPISTEMOLOGY) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_module_architecture.md` (00_EPISTEMOLOGY) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_module_registry.md` (00_EPISTEMOLOGY) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_pattern_library.md` (00_EPISTEMOLOGY) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_collision_engine.md` (01_NARRATIVE_FRAMEWORKS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_genre_system.md` (01_NARRATIVE_FRAMEWORKS) | standard | stamped |
+| `📐 ssot_01_medium_grammars.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_modern_poetics.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_scale_ladder.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_spine_house_inventory.md` (01_NARRATIVE_FRAMEWORKS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_story_registry.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_story_spine_comparative_tree.md` (01_NARRATIVE_FRAMEWORKS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_texture_layer.md` (01_NARRATIVE_FRAMEWORKS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_texture_system.md` (01_NARRATIVE_FRAMEWORKS) | standard | stamped |
+| `📐 ssot_01_three_check_pass.md` (01_NARRATIVE_FRAMEWORKS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_touchstones_register.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_01_trope_register.md` (01_NARRATIVE_FRAMEWORKS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_00_process_illustration_character_pipeline.md` (02_CHARACTER_SYSTEMS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_02_character_astrology.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_02_character_systems_vertical_slice.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_02_l9_eros_synthesis.md` (02_CHARACTER_SYSTEMS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_02_template_astrology_ingest.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_02_template_dramatica_ingest.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `🔮 ssot_02_dramatica_integration_protocol.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `🔮ssot_02_character_astrology_12_layer_mapping.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `🔮ssot_02_character_astrology_dai.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `🔮ssot_02_character_state_architecture.md` (02_CHARACTER_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `🔮ssot_02_step_1_source_verification_protocol.md` (02_CHARACTER_SYSTEMS) | procedure | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_03_setting_synthesis.md` (03_SETTING_SYSTEMS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_03_setting_system.md` (03_SETTING_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `🔮 ssot_03_setting_state_architecture.md` (03_SETTING_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_04_fabula.md` (04_PLOT_SYSTEMS) | standard | stamped |
+| `📐 ssot_04_plot_system.md` (04_PLOT_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_04_trope_graph.md` (04_PLOT_SYSTEMS) | standard | stamped |
+| `📐 ssot_05_worldbuilding_system.md` (05_WORLDBUILDING_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_06_theme_system.md` (06_THEME_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_07_1_prose_style.md` (07_STYLE_GUIDES) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_07_2_documents_style.md` (07_STYLE_GUIDES) | procedure | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_07_3_pages_style.md` (07_STYLE_GUIDES) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_08_tracking_system.md` (08_TRACKING_SYSTEMS) | standard | to stamp (BOLO 102 stage 2) |
+| `how_to_use_goon_room.md` (09_OPERATIONS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_09_operations_goon_room_protocol.md` (09_OPERATIONS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_09_operations_legacy_styleguide_2024.md` (09_OPERATIONS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_09_operations_markdown_marking.md` (09_OPERATIONS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_09_operations_pm_holdings_inventory.md` (09_OPERATIONS) | handbook | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_09_operations_retrieval_dossier_protocol.md` (09_OPERATIONS) | procedure | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_09_operations_standards_ladder.md` (09_OPERATIONS) | procedure | stamped |
+| `📐 ssot_ai_instruction_protocol.md` (09_OPERATIONS) | procedure | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_template_prompt_for_summarizing_novels_and_books.md` (09_OPERATIONS) | standard | to stamp (BOLO 102 stage 2) |
+| `📐 ssot_writing_guide.md` (09_OPERATIONS) | handbook | to stamp (BOLO 102 stage 2) |
 | `_0.1_BVX_LEARN/_meta/WATCH-REGISTER.md` | standard | stamped |
 | `_0.1_BVX_LEARN/_meta/CK3-IA-STUDY.md` | handbook | stamped |
 | `_PRIVATE/BOLO-24-charter.md` | spec | stamped |
@@ -139,4 +194,4 @@ The index links all 26 filed Command documents to the level or project they gove
 
 ## Governance
 
-DOCTRINE 0 governs. The ladder is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth. A document found without one is filed at the next sit rep.
+DOCTRINE 0 governs. The ladder is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth. A document found without one is filed at the next sit rep. A system doc reaches version 1.0.0 only when it clears SOP §5's 1.0 bar: Shape · Shelf · Proof · Ruled · Wired · Store. Chief rules the bar, and no other list of 1.0 criteria stands in the Command (IF catalog call 10, ruled 2026-10-05).

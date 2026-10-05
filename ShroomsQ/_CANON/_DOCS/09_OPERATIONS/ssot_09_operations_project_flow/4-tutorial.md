@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_project_flow.md
-source_version: 0.1.1
+source_version: 0.2.0
 ---
 
 **Who it's for:** an agent or Chief learning the flow by sizing and briefing one small project · **What it does:** walks the source's S-size example, BOLO 26, from five-line brief to parked HOLD · **Type:** tutorial

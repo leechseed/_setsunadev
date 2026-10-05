@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.0.2"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer looking up a module rule · **What it does:** lists every block, rule and stage in the module architecture doc · **Type:** reference
@@ -34,7 +34,7 @@ flowchart TD
   R --> I["Module Registry Format"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md`, version 1.0.2, status canonical, trunk BLACK, tier foundation, last updated 2026-10-05. Dependencies: `ssot_00_variable_registry`, `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Registry of modules: [ssot_00_module_registry](../ssot_00_module_registry/2-reference.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md`, version 1.1.0, status canonical, trunk BLACK, tier foundation, last updated 2026-10-05. Dependencies: `ssot_00_variable_registry`, `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Registry of modules: [ssot_00_module_registry](../ssot_00_module_registry/2-reference.md).
 
 ## The Core Principle
 
@@ -109,7 +109,7 @@ Each layer has one domain, from the Vertical Slice SSOT.
 
 ### Step 3: Register Variables
 
-Variables use the namespace `MOD.[MODULE_CODE].[variable_name]`. A module code is a unique 3-8 character uppercase identifier registered in the Layer-Locked Module Registry. Every variable uses a Base 60 scale class (if numeric) and declares a type from the standard set. It declares its source (`authored`, `derived`, `computed`) and lists its core read dependencies.
+Variables use the namespace `MOD.[MODULE_CODE].[variable_name]`. A module code is a unique 3-8 character uppercase identifier registered in the Layer-Locked Module Registry. Every variable uses a Base 60 scale class (if numeric) and declares a type from the standard set. It declares its source (`authored`, `derived`, `computed`) and its tag, `Static` or `Dynamic`, and lists its core read dependencies. The tag tells the state architecture whether to record a state diff for the variable (IF-00-02-27; IF catalog call 4, ruled 2026-10-05).
 
 ### Step 4: Declare Access Pattern
 
@@ -152,7 +152,7 @@ YAML `MODULE_DECLARATION` with fields: `module_id`, `display_name`, `version` (s
 
 ### Variable Declaration Block
 
-YAML `VARIABLES`, one item per variable, fields: `path` (`MOD.[CODE].[name]`), `display_name`. The fields continue with `type` (int, float, str, enum, array_str, array_enum, bool) and `scale_class` (SC-N or N/A). Then come `display_range`, `constraint` (divisibility or none) and `default`. The last two are `source` (authored, derived, computed) and `behavior` (one sentence).
+YAML `VARIABLES`, one item per variable, fields: `path` (`MOD.[CODE].[name]`), `display_name`. The fields continue with `type` (int, float, str, enum, array_str, array_enum, bool) and `scale_class` (SC-N or N/A). Then come `display_range`, `constraint` (divisibility or none) and `default`. Then come `source` (authored, derived, computed) and `tag` (Static or Dynamic). The last is `behavior` (one sentence).
 
 ### Read Dependencies Block
 
@@ -161,7 +161,7 @@ YAML `READS`: a list of core variable paths, such as `T1.VITAL.base_value`.
 ### Computation Block (Optional)
 
 - `DERIVED` items: `path`, `formula_internal` (0-60 space), `output_space` (SC-N or internal), `input_constraints`.
-- `FLAGS` items: `path` (`MOD.[CODE].FLG.[flag_name]`), `trigger` (boolean expression), `states` (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE).
+- `FLAGS` items: `path` (`MOD.[CODE].FLG.[flag_name]`), `trigger` (boolean expression), `states` (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE), `event_id` (the fabula event id, required in PENDING and FIRED_PRE_STORY).
 
 ### Data Exchange Format
 
@@ -248,5 +248,7 @@ Each registry entry carries these fields.
 The registry is `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`. It lists field modules only.
 
 A module flag uses the four core definitions unchanged. ACTIVE means the condition is met now. PENDING means it is met at a defined narrative event. FIRED_PRE_STORY means it was met before story entry. INACTIVE means it is not met. The author of a module links to the vertical slice's "Flag Trigger Conditions" section instead of redefining them.
+
+A flag in PENDING stores the fabula `event_id` of the event that makes it true. A flag in FIRED_PRE_STORY stores the `event_id` of the story-entry marker. The fabula owns both ids (IF-00-04-06; IF catalog call 5, ruled 2026-10-05).
 
 Related pages: [concept](1-concept.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

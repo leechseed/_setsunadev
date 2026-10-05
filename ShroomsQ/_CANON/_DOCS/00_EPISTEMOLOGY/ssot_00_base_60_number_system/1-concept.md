@@ -1,13 +1,13 @@
 ---
 title: "Base 60 number system: concept"
 type: "concept"
-for: "A writer or designer who must understand why every number in the character system is a divisor of 60"
-does: "Explains why base 60 is the one source of all integers in the character pipeline"
+for: "A writer or designer who must understand why every scaled number in any system is a divisor of 60"
+does: "Explains why base 60 is the one source of every scaled number in any system"
 owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.3"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a writer or designer asking why the numbers are what they are · **What it does:** explains why base 60 sits under every number · **Type:** concept
@@ -29,9 +29,9 @@ flowchart TD
   H --> I["Future variables follow seven rules"]
 ```
 
-## No number in the character system is arbitrary
+## No scaled number in any system is arbitrary
 
-Every integer in the character system derives from base 60. Scales, point costs, thresholds and ranges all lock to patterns in the divisor lattice of 60. The doc is the mathematical foundation. Every downstream system that touches a number cites it as the authority on why that number exists.
+Every scaled number in any system derives from base 60. A time code is an address, not a scale, so it takes no scale class. Scales, point costs, thresholds and ranges all lock to patterns in the divisor lattice of 60. The doc is the mathematical foundation. Every downstream system that touches a number cites it as the authority on why that number exists.
 
 ## 60 divides cleanly
 

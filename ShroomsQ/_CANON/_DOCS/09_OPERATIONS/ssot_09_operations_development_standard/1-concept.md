@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_development_standard.md
-source_version: 0.1.2
+source_version: 0.2.0
 ---
 
 **Who it's for:** Chief or an agent who runs work inside a session. That reader wants to know why the loop has its stages · **What it does:** explains why the development standard exists and how its loop ends the stall pattern · **Type:** concept

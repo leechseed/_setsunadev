@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_ai_instruction_protocol.md
-source_version: 1.2.2
+source_version: 1.3.0
 ---
 
 **Who it's for:** a writer or Chief deciding whether to give an AI the SSOT master prompt · **What it does:** explains why one master prompt turns raw concepts into SSOT documents · **Type:** concept

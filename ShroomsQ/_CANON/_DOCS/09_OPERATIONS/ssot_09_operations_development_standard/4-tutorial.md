@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_development_standard.md
-source_version: 0.1.2
+source_version: 0.2.0
 ---
 
 **Who it's for:** an agent or Chief learning the loop by running it once · **What it does:** walks one real run, the 9/15 sit rep, through the formation and its reviewer · **Type:** tutorial

@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer, designer or script author looking up a field, key or count · **What it does:** lists every component of the trope register · **Type:** reference
 
 # The trope register: reference
 
-Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md), version 1.0.2, trunk BLACK. Chief RULED it 2026-10-04 ("rec", BOLO 100 registers batch 1). Earlier ruling: 2026-09-29, BOLO 89. Applies to OVEREXITOUT and all future IPs. Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md), version 1.1.0, trunk BLACK. Chief RULED it 2026-10-04 ("rec", BOLO 100 registers batch 1). Earlier ruling: 2026-09-29, BOLO 89. Applies to OVEREXITOUT and all future IPs. Why it exists: [concept](1-concept.md).
 
 **Dependencies:** `ssot_04_trope_graph` (the plot consumer), `ssot_02_character_systems_vertical_slice`, `ssot_03_setting_system`, `ssot_01_genre_system`, `ssot_06_theme_system`. **Sources:** `_tools/tropes/fetch.py --domains`, `_tools/bolostatus/work/89/keys.batch01–16.json`, `_tools/tropes/build_register.py`.
 
@@ -47,6 +47,10 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 | theme | the four rails R1 to R4 of the [theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or null |
 | texture (added 0.4.0, ruled 9/29) | T1 to T12 of the [texture system](../ssot_01_texture_system/2-reference.md) |
 | tracking (added 0.4.0) | the parts of the [tracking system](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo |
+
+**One key store (IF catalog call 10, ruled 2026-10-05).** `register.json` is the one key store for every trope. The plot trope graph reads its keys from it. The graph's node keying (`node`, `alt`, `conf`) is a view of the same fetch, not a second store. The setting-domain keys S1 to S12 live here only.
+
+**Interfaces.** Read from 06 (IF-01-06-06): rail ids R1 to R4 as the value of `keys.theme`; null if a trope argues no rail; `conf` low when `def` is undefined; Chief decides tropes that need two rails.
 
 ## THE COUNTS (2026-10-03, v0.5.0)
 
@@ -104,6 +108,7 @@ No character is changed by this ruling. It names a pattern, not a fix.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): `register.json` is the one key store and the trope graph reads it; interfaces line for 06 |
 | 1.0.2 | 2026-10-05 | BOLO 102 batch C: Rebuild the register section written with the command steps for fetch.py and build_register.py |
 | 1.0.1 | 2026-10-05 | BOLO 102 batch A: purpose line says 8,700 tropes; skew section recomputed from the counts table |
 | 1.0.0 | 2026-10-04 | Undefined-trope rule written; OPEN list closed; TROPES pointer sections parked |

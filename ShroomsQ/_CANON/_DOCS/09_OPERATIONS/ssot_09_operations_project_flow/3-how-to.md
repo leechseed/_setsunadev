@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_project_flow.md
-source_version: 0.1.1
+source_version: 0.2.0
 ---
 
 **Who it's for:** Chief or an agent doing one project task: starting, briefing, gating, tailoring, or closing · **What it does:** gives the steps for each task the project flow asks of a project · **Type:** how-to

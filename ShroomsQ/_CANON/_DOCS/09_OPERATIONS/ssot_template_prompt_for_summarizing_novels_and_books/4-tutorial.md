@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_template_prompt_for_summarizing_novels_and_books.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer running a first book summary through the template · **What it does:** walks one theory book through the passes with a narratology add-on · **Type:** tutorial

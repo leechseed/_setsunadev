@@ -95,7 +95,7 @@ Layer names are house coinage, ruled 2026-09-16 (OPEN 2).
 - G4 holds only the propositional binary. Affective telos (catharsis, wonder) lives on the texture mood curve, T7.
 - G1 keeps three label fields, never one.
 
-**Handoffs (IF catalog calls 2 and 3, ruled 2026-10-05).** The writer hands G4's `core_binary`, `mind_action_view` and `thematic_recipe` to the [06 theme system](../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) as the seed of the controlling idea. The writer points G8's `world_build` promise at the [05 worldbuilding catalog](../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md): the `WB-<TYPE>-<nnnn>` entries (rules, institutions) that make the promise good.
+**Handoffs (IF catalog calls 2 and 3, ruled 2026-10-05).** The writer hands G4's `core_binary`, `mind_action_view` and `thematic_recipe` to the [06 theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) as the seed of the controlling idea. The writer points G8's `world_build` promise at the [05 worldbuilding catalog](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md): the `WB-<TYPE>-<nnnn>` entries (rules, institutions) that make the promise good.
 
 **Binding rule.** G12 is fed independently from the storyform, keyed by `storyform_id`. G12 empty means a shelf label. G12 filled means the argument's contract. Medium is deliberately not a G-layer.
 

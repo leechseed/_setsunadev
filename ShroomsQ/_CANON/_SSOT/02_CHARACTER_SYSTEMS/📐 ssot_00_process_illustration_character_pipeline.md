@@ -2,9 +2,9 @@
 type: ssot_00_foundations
 category: process_illustration
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.0.1
+version: 1.1.0
 tier: operations
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -411,8 +411,12 @@ flowchart TD
 
     SAVE --> RELCHECK{"Does this event affect a relationship?"}
     RELCHECK --> |Yes| RELUPDATE["Update relationship record status + state_history in _AUTHORITATIVE/IP/relationships/"]
-    RELCHECK --> |No| DONE["State diff complete"]
-    RELUPDATE --> DONE
+    RELCHECK --> |No| SETCHECK
+    RELUPDATE --> SETCHECK
+    SETCHECK{"Does this event change a place's state?"}
+    SETCHECK --> |Yes| SETUPDATE["Check the setting state: write or revise the place checkpoint with the same origin_event in the setting state architecture"]
+    SETCHECK --> |No| DONE["State diff complete"]
+    SETUPDATE --> DONE
 
     style START fill:#0d1117,stroke:#fbbf24,color:#e2e8f0
     style DONE fill:#0d1117,stroke:#34d399,color:#e2e8f0
@@ -429,6 +433,8 @@ flowchart TD
 **DP-D4: "Whole state or one field?"** — A checkpoint re-derives every value, every derived statistic and every flag. That weight fits a fabula event. A single trait tick or flag flip between events is a story point. Write it in the tracking system.
 
 **DP-D5: "Is the field Dynamic?"** — Only fields the slice tags Dynamic appear in `MODIFIED_VALUES`. A Static field never changes. A revision makes a new base record. Derived values are recomputed from the modified values and never stored as a diff.
+
+**DP-D6: "Does this event change a place's state?"** — (IF catalog call 9, ruled 2026-10-05) One fabula event can change a character and a place at once, for example the rename of a school. The narrative designer runs this check beside the relationship check. If the event changes a place's layers, the designer writes or revises the place checkpoint in the [setting state architecture](../03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md). The character checkpoint and the place checkpoint share one `origin_event`, and both must agree on what the event did.
 
 ---
 
@@ -522,6 +528,7 @@ Module flags are re-evaluated alongside core flags during state diff creation.
 | Vertical Slice complete but derived stats feel wrong | Corrected layer values | Re-enter Flow C at Step 2 or Step 4. Stats are diagnostic. Fix the inputs, not the outputs. |
 | Flag fires unexpectedly | Corrected layer values | Re-enter Flow C at Step 4. The flag is right. The inputs are wrong. |
 | Character needs to exist at two narrative moments | Two checkpoints | Execute Flow D twice, once per fabula event. Each diff is independent of the other. Both diff against the base record, not against each other. |
+| A checkpoint is saved | The relationship check and the setting-state check | Flow D, last two decisions: update the relationship record, then check the place checkpoint that shares the same `event_id`. |
 | A checkpoint falls earlier than the base record's own narrative position | A backward diff | Flow D with Rule 7 of the state architecture. Each field is modified to its earlier value. Nothing is deleted. |
 | One trait or flag changes between two fabula events | A story point | Write it in the tracking system, section 5. Do not build a checkpoint. |
 | Storyform revised after the ingests locked | New chart, new base record version, re-checked diffs | The Cascade section. |
@@ -534,3 +541,4 @@ Module flags are re-evaluated alongside core flags during state diff creation.
 |---|---|---|
 | 1.0.0 | 2026-03-08 | Initial process illustration. Four flows (A-D) plus module cross-flow. Mermaid diagrams for all flows. Decision point annotations. Quick reference table. |
 | 1.0.1 | 2026-10-04 | BOLO 100 base batch 1 (B1, B2, B3, B13, B14, B15), RULED Chief "REC.": frontmatter repaired with `trunk` and `module_of`; table-of-contents anchors fixed; dependency names fixed to real stems. Flows A to D re-run against slice 3.3.1: Flow A follows the ingest form's own section order and extraction priority (the old Section 8 relationships step and the old Section 9 invariants step are replaced by the Report Source Log and Touchstones); Flow B names the astrology form, its sections and the minimum viable chart; Flow C adds the Step 1 gate counts and yellow-light rule, the want_need check, the [INFERRED] and setting_ref rules, seven derived statistics, and the tag rule; Flow D uses checkpoints, fabula `origin_event`, told_at, story points and the Dynamic-only rule. New Cascade section for a revised storyform. Cross-Flow separates field modules from doc modules. |
+| 1.1.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): Flow D adds the setting-state check beside the relationship check (new decision point DP-D6). |

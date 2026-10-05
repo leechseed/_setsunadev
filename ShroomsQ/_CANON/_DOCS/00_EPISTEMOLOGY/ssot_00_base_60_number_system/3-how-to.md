@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.3"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a designer adding or converting a numeric variable · **What it does:** gives the steps for each number task · **Type:** how-to
@@ -25,6 +25,8 @@ Tables and rules live in the [reference](2-reference.md).
 5. If no formula depends on the variable, pick SC-12.
 6. Pick SC-20 for a primary attribute (L1-L3).
 7. Add the variable to the Scale Assignment Table.
+8. Follow the same steps for a numeric field in an S1 to S12 or P1 to P12 layer.
+9. Give a time code no scale class. A time code is an address, not a scale.
 
 ## Set the point cost of a buyable variable
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_system.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or tool builder looking up a layer or field · **What it does:** lists every component of the texture system doc · **Type:** reference
@@ -33,7 +33,7 @@ flowchart TD
   R --> BD["Boundaries, structure is Dramatica, events are plot systems, place is the setting slice, persons are the 12 layer DB"]
 ```
 
-Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md), version 1.0.0, trunk BLACK, rung standard. Chief RULED it 2026-10-04 ("REC", BOLO 100 texture batch 1). Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md), version 1.1.0, trunk BLACK, rung standard. Chief RULED it 2026-10-04 ("REC", BOLO 100 texture batch 1). Why it exists: [concept](1-concept.md).
 
 **Header facts.** Applies to all IPs. Sources: BVX.0598, 0596, 0273, 0084, 0279, 0061, 0175, 0349. Dependencies: `ssot_01_texture_layer`, `ssot_01_story_spine_comparative_tree`, `ssot_01_scale_ladder`, `ssot_01_medium_grammars`, `ssot_03_setting_system`, `ssot_04_plot_system`, `ssot_02_character_systems_vertical_slice`.
 
@@ -96,6 +96,7 @@ The architecture mirrors the LEECHSEED Character System, the setting slice and t
 - **T1/T2 gap flag.** `t1_t2_gap: none | flagged (note)` records the gap. The gap lies between a T1 reading and a T2 reading of one passage. It is Bal's manipulation check as one field.
 - **T4 pause test.** Where a scene marks the Pause speed, check delimitation, motivation and rhetorical binding (BVX.0596).
 - **T6 distance instrument.** Count barrier words per 100 words (BVX.0273). Bands: cinematic, light, deep. The first trial passage calibrates the cut points.
+- **T6 terms applied by 07.1 (IF catalog call 7, ruled 2026-10-05).** The writer applies T6's `register`, `distance_policy`, `fid`, barrier words per 100 words and Kempton's seven genre registers through [07.1 prose style](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md). Those values are the terms 07.1 uses.
 - **T7 reflection axis.** T7 absorbs the cognitive, emotive and normative mark-up of what is perceived (BVX.0598).
 - **T7 mood-curve entry.** One line of three fields: emotion · technique · payoff owed (BVX.0279).
 - **T7 payoff ledger.** A running list of owed payoffs. An entry closes when the story pays it. It sits outside the twelve layers as a reader model. The reader's trust in a character is tracked in [§9A The Reader Model](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md#9a-the-reader-model). The tracker keys it by `character_id` and `shifted_at`. The ledger uses the same time code.

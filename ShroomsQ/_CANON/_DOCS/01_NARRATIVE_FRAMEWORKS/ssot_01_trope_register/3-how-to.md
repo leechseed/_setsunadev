@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer, designer or script author working with tropes · **What it does:** steps for the register's recurring tasks · **Type:** how-to
@@ -26,7 +26,7 @@ Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/
 ## Key a trope to a layer
 
 1. Choose the trope's domain or domains: character, setting, genre, sexuality, theme, texture, tracking or style.
-2. For each domain, pick one key from that domain's vocabulary. Use null if no layer fits.
+2. For each domain, pick one key from that domain's vocabulary. Use null if no layer fits. Write it in `register.json`, the one key store.
 3. Set `conf` to `high`, `medium` or `low`.
 4. Write the record in the register's format.
 

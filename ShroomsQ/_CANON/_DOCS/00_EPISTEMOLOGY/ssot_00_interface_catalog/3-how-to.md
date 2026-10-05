@@ -41,8 +41,8 @@ Use this when you find a place where one system hands another something and the 
 4. Set `from_doc` and `to_doc` to the two doc stems, such as `ssot_02_character_astrology`.
 5. Set `kind` to `DATA`, `CONTROL` or `MENTION`. A MENTION shows only as a "named only" line.
 6. Set `direction` to `writes`, `reads`, `gates` or `gated_by`, from the stating doc's side.
-7. Fill `payload` with the named thing that crosses, `trigger` with when it fires, and `where` with the section of the stating doc.
-8. Set `status`. Use `built` if the source states it as working, `parked` if the source marks it phase 2, and `proposed` if you argue the system needs it.
+7. Fill `payload` with the named thing that crosses. Fill `trigger` with when it fires. Fill `where` with the section of the stating doc.
+8. Set `status`. Use `built` if the source states it as working. Use `parked` if the source marks it phase 2. Use `proposed` if you argue the system needs it.
 9. Fill `evidence` with the sentence from the stating doc. Fill `note` with anything odd, or leave it empty.
 10. Leave `id` out. The build assigns it and writes it back.
 11. Run `python _tools/docs/ifc_build.py`.

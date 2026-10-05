@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: medium_grammars
-version: 1.2.2
+version: 1.3.0
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
@@ -37,7 +37,7 @@ trunk: BLACK (ORANGE rows ride the subsidiary firewall — craft grammar only in
 ## THE GRAMMARS — how each medium re-instruments texture
 
 ### M1 · PROSE
-Full interiority access — the only medium where T2 internal focalization is native and free; free indirect discourse is prose's signature instrument. Duration (T4) fully elastic: a sentence can hold a year, a chapter a second. **Holdings:** the entire CRE craft shelf; the Telling Profile applies verbatim.
+Full interiority access — the only medium where T2 internal focalization is native and free; free indirect discourse is prose's signature instrument. Duration (T4) fully elastic: a sentence can hold a year, a chapter a second. **Style guide (IF-01-07-08; IF catalog call 7, ruled 2026-10-05):** M1 selects [07.1 prose style](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) as the style guide that governs the telling. **Holdings:** the entire CRE craft shelf; the Telling Profile applies verbatim.
 
 ### M2 · FILM
 - **T2 focalization = shot selection** — POV shot, over-shoulder, insert: the camera decides who sees (Grammar of the Shot 1042; Master Shots 0138/1053/1054).
@@ -139,6 +139,7 @@ Each channel changes three texture answers most. The cells restate the grammars 
 
 ## Version history
 
+- **1.3.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): M1 selects 07.1 prose style as its style guide (call 7).
 - **1.2.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): procedure for running the BOLO 16 research pass written into the acquisition queue (C24).
 - **1.2.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": prose swapped invariant to Touchstone (TS-B4).
 - **1.2.0 — 2026-10-04.** RULED, Chief ("REC"), BOLO 100 texture batch 1 (texture T9): the TEXTURE BY MEDIUM table added, rows M1–M10, columns T3 order, T4 speed, T10 narratee. Closes the layer doc's "Module 4" deferral. No grammar change.

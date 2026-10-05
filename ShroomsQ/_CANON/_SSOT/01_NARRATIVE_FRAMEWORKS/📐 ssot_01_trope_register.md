@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 1.0.2
+version: 1.1.0
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, all future IPs]
@@ -35,6 +35,10 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 **Undefined tropes (RULED 2026-10-04):** a trope with no one-line definition keys by its title and its domain tags. The record carries `def: undefined`. No run is needed to fill it.
 
 **The keys (ruled 9/29):** character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS) · theme → the four rails R1–R4 of the [theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md), or null. **Added 0.4.0 (wave A, ruled 9/29 "all recs"):** texture → T1–T12 of the [texture system](📐%20ssot_01_texture_system.md) · tracking → the parts of the [tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md): world_clock · told_order · grid · story_point · cable · tempo.
+
+**One key store (IF-01-04-22; IF catalog call 10, ruled 2026-10-05).** `register.json` is the one key store for every trope. The plot trope graph reads its keys from it. The graph's node keying (`node`, `alt`, `conf`) is a view of the same fetch, not a second store. The setting-domain keys S1–S12 live here only.
+
+**Interfaces.** Read from 06 (IF-01-06-06): rail ids R1–R4 as the value of `keys.theme`; null if a trope argues no rail; `conf` low when `def` is undefined; Chief decides tropes that need two rails.
 
 ## THE COUNTS (2026-10-03, v0.5.0)
 
@@ -92,6 +96,7 @@ The author runs `python _tools/tropes/fetch.py --domains` to pull the indexes. T
 
 ## Version history
 
+- **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): `register.json` is the one key store and the trope graph reads it (call 10); interfaces line for 06.
 - **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): Rebuild the register section: command steps for fetch.py and build_register.py (C40).
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): purpose line says 8,700 tropes; skew section recomputed from the counts table.
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Undefined-trope rule written: no definition means key by title and domain tags, flagged `undefined`. OPEN list closed; consumer TROPES sections parked as `⏸ TROPES pointer sections (phase 2)`.

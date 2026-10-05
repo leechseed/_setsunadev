@@ -1,9 +1,9 @@
 ---
 type: ssot_01_texture_system
 category: texture_system
-version: 1.0.0
+version: 1.1.0
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [all IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: stale marks stripped, ruled items built (T2 split, silence and memory sub-values, reflection axis, t1_t2_gap flag, pause test, distance instrument, mood entry, payoff ledger), OXO bench parked as ⏸ OXO telling profile (phase 2). v0.1.1 2026-09-16: the thirteen OPEN calls ruled as recommended (Chief: \"texture calls go\"). v0.1.0 2026-09-16 (BOLO 18 texture wave): first version, written from the TEXTURE shelf"
 rung: standard
@@ -141,6 +141,7 @@ Same architecture as the LEECHSEED Character System, the SETTING SLICE, and the 
 - **T1/T2 gap flag.** `t1_t2_gap: none | flagged (note)` records the gap between a T1 reading and a T2 reading of one passage. It is Bal's manipulation check as one portable field ([[BVX.0596]]).
 - **T4 pause test.** Where a scene marks the Pause speed, check three things: delimitation, motivation, and rhetorical binding ([[BVX.0596]]).
 - **T6 distance instrument.** Count barrier words per 100 words of a passage ([[BVX.0273]]). Bands are cinematic, light, and deep. The first trial passage calibrates the cut points.
+- **T6 terms applied by 07.1 (IF-01-07-09; IF catalog call 7, ruled 2026-10-05).** The writer applies T6's `register`, `distance_policy`, `fid`, barrier words per 100 words and Kempton's seven genre registers through [07.1 prose style](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md). Those values are the terms 07.1 uses.
 - **T7 reflection axis.** T7 absorbs the narrator's or character's cognitive, emotive, and normative mark-up of what is perceived ([[BVX.0598]]).
 - **T7 mood-curve entry.** Each entry is one three-field line: emotion · technique · payoff owed ([[BVX.0279]]).
 - **T7 payoff ledger.** The ledger is a running list of owed payoffs. Each entry closes when the story pays it. It sits outside the twelve layers, as a reader model. The reader's trust in a character is tracked in [§9A The Reader Model](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md#9a-the-reader-model), which keys entries by `character_id` and `shifted_at` (the time code). The ledger uses the same time code to mark where a payoff is owed and where it is paid.
@@ -244,6 +245,7 @@ The calls came from the five wave distills' "For the texture system" bullets. **
 
 ## Version history
 
+- **1.1.0, 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): T6's register and distance values are named as the terms 07.1 applies (call 7).
 - **1.0.0, 2026-10-04.** RULED, Chief ("REC"), BOLO 100 texture batch 1. Stale marks stripped from the twelve layer names and the status. Ruled items built: T2 split and sub-values, T1/T2 gap flag, T4 pause test, T6 distance instrument, T7 reflection axis, mood-curve entry, and payoff ledger (cross-linked to tracking §9A). OXO bench parked as ⏸ OXO telling profile (phase 2); `applies_to` is now all IPs. OPEN calls closed. The layer doc is stamped `module_of` this system.
 - **0.1.1, 2026-09-16.** The thirteen OPEN calls ruled as recommended ("texture calls go"): twelve layers hold; T2 splits into perceptual and informational sub-fields at the next bump; the three-point distance scale adopted; the register slot added to the telling line; the reflection axis absorbed by T7 provisionally; the OXO profile stays a bench. No slice or instrument change tonight.
 - **0.1.0, 2026-09-16.** First texture_system document, written on Chief's order ("texture wave go", BOLO 18) from the TEXTURE shelf's eight distills: the Ten Questions restated as axes, twelve-layer TEXTURE SLICE mirroring the character, setting, and plot stacks, the TELLING PROFILE and telling line as the instance format, OXO benched as a proposed profile, not a ruling. Layer names, count, and every OXO value were provisional then; ruled 9/16.

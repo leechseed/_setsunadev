@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
-source_version: "1.1.2"
+source_version: "1.2.0"
 ---
 
 **Who it's for:** a designer looking up a field module · **What it does:** lists every module declaration, variable and status · **Type:** reference
@@ -34,7 +34,7 @@ flowchart TD
   M --> M2["LOL_TAX depends on COMBAT"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.2, status canonical. The source sits on trunk BLACK at tier foundation, with `module_of: ssot_00_module_architecture`. It was last updated 2026-10-05. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.2.0, status canonical. The source sits on trunk BLACK at tier foundation, with `module_of: ssot_00_module_architecture`. It was last updated 2026-10-05. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
 
 All modules use tier 3. All declarations use `tier_min: 3`.
 
@@ -67,12 +67,14 @@ Audit 2026-10-04 (slice 3.3.1): 1 active, 2 absorbed, 8 planned, 3 conceptual. N
 - **Description:** assigns a bipolar charge (-30 to +30) to each layer. It encodes the character's position on a dualistic spectrum per domain. Snap boundaries sit at ±60 for transcendent outliers.
 - **Variables (per layer, 12 instances):**
 
-| Path | Type | Scale | Range |
-|---|---|---|---|
-| `MOD.DUALISM.[LAYER].charge_value` | int | SC-60 (signed) | -30 to +30 |
-| `MOD.DUALISM.[LAYER].pole_negative` | str | N/A | freeform trait label |
-| `MOD.DUALISM.[LAYER].pole_positive` | str | N/A | freeform trait label |
-| `MOD.DUALISM.[LAYER].behavior_desc` | str | N/A | freeform, a LoL ability-style sentence |
+| Path | Type | Scale | Range | Tag |
+|---|---|---|---|---|
+| `MOD.DUALISM.[LAYER].charge_value` | int | SC-60 (signed) | -30 to +30 | Dynamic |
+| `MOD.DUALISM.[LAYER].pole_negative` | str | N/A | freeform trait label | Static |
+| `MOD.DUALISM.[LAYER].pole_positive` | str | N/A | freeform trait label | Static |
+| `MOD.DUALISM.[LAYER].behavior_desc` | str | N/A | freeform, a LoL ability-style sentence | Static |
+
+Every module variable carries a `Static` or `Dynamic` tag, as the module architecture requires (IF-00-02-27; IF catalog call 4, ruled 2026-10-05). Each planned module declares its tags when it moves to `draft`.
 
 - **Reads:** all core layer base values, `T3.FUNC.resolve`.
 - **Derived:** `MOD.DUALISM.total_charge` (sum of the 12 charge values); `MOD.DUALISM.charge_variance` (standard deviation of the 12).

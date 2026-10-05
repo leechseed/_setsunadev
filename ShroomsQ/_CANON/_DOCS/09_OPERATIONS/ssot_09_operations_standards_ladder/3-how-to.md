@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_standards_ladder.md
-source_version: 0.2.3
+source_version: 0.3.0
 ---
 
 **Who it's for:** Chief or an agent filing a new or untagged Command document · **What it does:** gives the steps to pick a rung, tag a document, and add its filing row · **Type:** how-to
@@ -35,7 +35,7 @@ source_version: 0.2.3
 
 ## Add a document to the filing table
 
-1. Add one row: document, rung, status.
+1. Add one row: document, rung, status. Every core SSOT doc under `_SSOT/0*/` has a row, and a new one gets its row at birth (IF catalog call 9, ruled 2026-10-05).
 2. Add a row to Table 1 with what it governs, its Command parents, and its outside parents.
 3. Add the document to its level or world row in Table 3.
 4. If it cites an outside body, add it to Table 2.
