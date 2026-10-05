@@ -1,9 +1,9 @@
 ---
 type: ssot_00_foundations
 category: design_system
-version: 2.0.1
+version: 2.0.2
 tier: operations
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [BOLD_VENTURE]
 status: canonical
 trunk: ORANGE
@@ -436,7 +436,7 @@ CSS tokens follow the pattern `--color-classification-{level}`. Banner component
 
 ### Data Visualization Palette
 
-A maximum of **11 colors per data set** is permitted. Status colors are reserved exclusively for status indication and shall never be used for general data visualization.
+A maximum of **8 colors per data set** is permitted. Status colors are reserved exclusively for status indication and shall never be used for general data visualization.
 
 #### Dark Theme Data Visualization
 
@@ -853,11 +853,13 @@ All CSS Custom Property names for tokens (colors, spacing, typography, borders) 
 
 ### Example 1: System Explorer Application
 
-The **System Explorer** (Phase 3 deliverable of the character systems pipeline) applies the Bold Venture Design System as follows. The application background uses `--color-background-base-default` (#101923). The navigation tabs use `--tab-color-text-default` (#4dacff) for default state and `--tab-color-text-selected` (#ffffff) for the active tab with a 4px bottom border in `--tab-border-color-selected` (#4dacff). Layer cards use `--color-background-surface-default` (#1b2d3e) with `--color-background-surface-hover` (#1c3851) on hover. Status flags use the temperature-based status colors: ACTIVE flags display in `--color-status-critical` (#ff3838), PENDING flags display in `--color-status-serious` (#ffb302), FIRED_PRE_STORY flags display in `--color-status-off` (#a4abb6). Derived statistics that exceed their expected range (Truth Exposure Index exceeding 60) display in `--color-status-serious` (#ffb302) with a caution indicator. Derived statistics that go negative (Stress Threshold below zero) display in `--color-status-critical` (#ff3838) with a critical indicator.
+Hex values in both examples are the Roster (v2) dark-theme values. Status colors are unchanged. `--input-color-border-default` keeps its v1 value, because the remap sets none.
+
+The **System Explorer** (Phase 3 deliverable of the character systems pipeline) applies the Bold Venture Design System as follows. The application background uses `--color-background-base-default` (#140A0E). The navigation tabs use `--tab-color-text-default` (#E38AA6) for default state and `--tab-color-text-selected` (#F5EDE9) for the active tab with a 4px bottom border in `--tab-border-color-selected` (#B03A5B). Layer cards use `--color-background-surface-default` (#241018) with `--color-background-surface-hover` (#341820) on hover. Status flags use the temperature-based status colors: ACTIVE flags display in `--color-status-critical` (#ff3838), PENDING flags display in `--color-status-serious` (#ffb302), FIRED_PRE_STORY flags display in `--color-status-off` (#a4abb6). Derived statistics that exceed their expected range (Truth Exposure Index exceeding 60) display in `--color-status-serious` (#ffb302) with a caution indicator. Derived statistics that go negative (Stress Threshold below zero) display in `--color-status-critical` (#ff3838) with a critical indicator.
 
 ### Example 2: Character Database Editor Application
 
-The **Database Editor** (Phase 4 deliverable) applies the Bold Venture Design System to a read-write interface. In browse mode, all fields render as read-only text using `--color-text-primary` (#ffffff) on `--color-background-surface-default` (#1b2d3e). The mode toggle button uses the secondary button style with `--button-color-text-secondary-default` (#4dacff). When the operator switches to edit mode, input fields activate with `--input-color-background` (#101923) and `--input-color-border-default` (#2b659b). A persistent indicator in the **Global Status Bar** changes to `--color-status-caution` (#fce83a) to signal that the application is in an editable state. Form validation follows the inline validation pattern: fields that violate scale class constraints (such as an odd number entered for a variable that requires even values) display `--input-color-border-invalid` (#ff3838) with red error text stating the constraint and the nearest valid value. The point budget tracker in the bottom panel uses `--progress-color-inner` (#4dacff) for the budget utilization bar and shifts to `--color-status-serious` (#ffb302) when utilization exceeds 90%.
+The **Database Editor** (Phase 4 deliverable) applies the Bold Venture Design System to a read-write interface. In browse mode, all fields render as read-only text using `--color-text-primary` (#F5EDE9) on `--color-background-surface-default` (#241018). The mode toggle button uses the secondary button style with `--button-color-text-secondary-default` (#E38AA6). When the operator switches to edit mode, input fields activate with `--input-color-background` (#140A0E) and `--input-color-border-default` (#2b659b). A persistent indicator in the **Global Status Bar** changes to `--color-status-caution` (#fce83a) to signal that the application is in an editable state. Form validation follows the inline validation pattern: fields that violate scale class constraints (such as an odd number entered for a variable that requires even values) display `--input-color-border-invalid` (#ff3838) with red error text stating the constraint and the nearest valid value. The point budget tracker in the bottom panel uses `--progress-color-inner` (#B03A5B) for the budget utilization bar and shifts to `--color-status-serious` (#ffb302) when utilization exceeds 90%.
 
 ---
 
@@ -865,6 +867,7 @@ The **Database Editor** (Phase 4 deliverable) applies the Bold Venture Design Sy
 
 |Version|Date|Changes|
 |---|---|---|
+|**2.0.2**|**2026-10-05**|BOLO 102 batch A (Chief: "All recs go"): the data-visualization cap is 8 colors per data set, matching the 8 tokens listed per theme; the two examples now cite the Roster (v2) dark-theme hex values.|
 |**2.0.1**|**2026-10-04**|BOLO 100 base batch 1 (B1, B2, B3, B12, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block, `trunk: ORANGE` added, table-of-contents links repointed to in-page anchors, scope line added to the purpose (Command-wide base tool, not part of the storytelling stack), `applies_to` drops the three story IPs. No design content changed.|
 |**2.0.0**|**2026-09-01**|**THE ROSTER ruled — the proprietary brand color layer.** Rose anchor (#8A1F44) + flesh family locked (flesh shadows through the rose, never gray); rose-cast grounds; gold enters the core accent roster. Four registers stood up: EMBER (all-hours ambient, Autumn Kiss lineage) · PUNCH (the live edge, Tropical Punch lineage, time-boxed) · DUST (daylight, Dusty Drama lineage) · NOIR (the deep default, Garnet/Satin Berry donations). The Luminance Law (warm = light above flesh luminance, never midtone fill), the one-red ledger, the adhesive rule + rose quota, the surface map (labels→buildings), semantic dark/light token remap. Astro palettes demoted to legacy (greys + status retained). Challenge bench of 11 palettes adjudicated; 4-lens panel record wf_5b0af08b-c49.|
 |1.0.0|2026-03-09|Initial Bold Venture Design System SSOT. Wholesale adaptation of Astro UXDS v7. Complete reference palettes (15 hues, 100+ hex values), dark and light theme semantic tokens, six-level status system, classification markings, data visualization palettes, 18 typography styles, 15-step spacing scale, 40-component inventory, component token specifications, 5 navigation patterns, 3 notification types, three-tier compliance framework, theming architecture, and Astro-to-Bold-Venture naming translation.|

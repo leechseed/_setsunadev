@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_bold_venture_design_system.md
-source_version: 2.0.1
+source_version: 2.0.2
 ---
 
 **Who it's for:** a builder making a screen, component, or surface that must follow the Bold Venture Design System · **What it does:** gives the steps for each task the design system asks of a builder · **Type:** how-to

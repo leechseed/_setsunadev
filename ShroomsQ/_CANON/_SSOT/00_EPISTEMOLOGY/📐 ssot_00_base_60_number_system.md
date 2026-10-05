@@ -1,9 +1,9 @@
 ---
 type: ssot_00_foundations
 category: number_systems
-version: 1.0.1
+version: 1.0.2
 tier: foundation
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -108,7 +108,7 @@ Every maximal chain passes through 1 and 60 and cannot be extended by inserting 
 |C10|1 → 5 → 10 → 20 → 60|×5, ×2, ×2, ×3|Pentad → decimal → vigesimal → full|
 |C11|1 → 5 → 10 → 30 → 60|×5, ×2, ×3, ×2|Pentad → decimal → 30-unit → full|
 |C12|1 → 5 → 15 → 30 → 60|×5, ×3, ×2, ×2|Pentad → 15 categories → 30-unit → full|
-|C13|1 → 2 → 4 → 20 → 60|×2, ×2, ×5, ×3|Binary subdivisions of vigesimal|
+|C13|~~1 → 2 → 4 → 20 → 60~~|—|**Retired** as a duplicate of C02. Use C02.|
 |C14|1 → 3 → 12 → 60|×3, ×4, ×5|**Layer chain**: 3 tiers → 12 layers → 60|
 |C15|1 → 4 → 12 → 60|×4, ×3, ×5|Quad → dodecimal → full|
 |C16|1 → 5 → 20 → 60|×5, ×4, ×3|Pentad → vigesimal → full|
@@ -375,7 +375,7 @@ For SC-20 → SC-12 conversion to produce integers: SC20_value × 3 must be divi
 
 ```
 All derived statistics are computed in internal (0-60) space.
-All derived statistics display on SC-12 (divide internal result by 5).
+Each derived statistic displays on the output class its row assigns in the formula table below (SC-30, SC-20 or SC-60).
 All input variables are converted to internal before computation.
 ```
 
@@ -543,3 +543,4 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 |---|---|---|
 |1.0.0|2026-03-08|Initial SSOT. Establishes base 60 as foundational number system. Divisor lattice, 18 maximal chains, 10 matrix decompositions, 10 tensor decompositions, 9 scale classes, complete scale assignment table, point budget validation (no changes required), derived stat recalibration with divisibility constraints, flag threshold recalibration, Victoria Midnight full re-expression with diagnostic analysis.|
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B7, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`, table-of-contents links repointed to in-page anchors, `supersedes_ranges_in` names the real file stem, armor index added to the Scale Assignment Table as SC-12.|
+|1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): C13 retired as a duplicate of C02, no renumbering; derived-stat display rule reworded to match the formula table (SC-30, SC-20, SC-60).|

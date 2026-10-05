@@ -71,7 +71,7 @@ One record per trope, in `_tools/tropes/data/domains/register.json`.
 The source reads each pile as a fact about the index.
 
 - **Character piles on L12 FUNCTION (485) and L1 CORE (316)**. The Characters As Device index is mostly cast roles and types.
-- **Setting piles on S1 BODY (385).** The Settings index lists place types such as the castle and the diner. Deeper layers, such as S2 WEATHER (36), are thin because TV Tropes has few tropes for them.
+- **Setting piles on S4 LAW (399), S1 BODY (385) and S8 HABIT (328).** The Settings index lists place types such as the castle and the diner. Deeper layers, such as S2 WEATHER (36), are thin because TV Tropes has few tropes for them.
 - **Theme nulls run high (1,182).** Death (1,035) and Family are broad. Most of their tropes argue none of the four rails. The rails are narrow. That is not a keying fault.
 - **1,018 tropes have no one-line definition** on their index page and were keyed from the name alone. Most of the 1,024 low-confidence keys are these.
 

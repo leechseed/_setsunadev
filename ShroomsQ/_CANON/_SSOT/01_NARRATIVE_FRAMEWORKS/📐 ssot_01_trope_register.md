@@ -56,7 +56,7 @@ links:   [...]                          # the trope's Main/ links, the raw edges
 ## READING THE SKEW
 
 - **Character piles on L12 FUNCTION (485) and L1 CORE (316).** The Characters As Device index is mostly cast roles and types; that is what the index holds, not a keying fault.
-- **Setting piles on S1 BODY (385).** The Settings index lists place types (the castle, the diner); the deeper layers (S2 WEATHER 36) are thin because TV Tropes has few tropes for them.
+- **Setting piles on S4 LAW (399), S1 BODY (385) and S8 HABIT (328).** The Settings index lists place types (the castle, the diner); the deeper layers (S2 WEATHER 36) are thin because TV Tropes has few tropes for them.
 - **Theme nulls run high (1,182)** because Death (1,035) and Family are broad: most of those tropes argue none of the four rails. That is the rails being narrow, not a keying fault.
 - **1,018 tropes have no one-line definition** on their index page and were keyed from the name alone; most of the 1,024 low-confidence keys are these.
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_bold_venture_design_system.md
-source_version: 2.0.1
+source_version: 2.0.2
 ---
 
 **Who it's for:** a builder making a first screen in the design system · **What it does:** walks the source's System Explorer example, from background to status flags · **Type:** tutorial
@@ -16,13 +16,11 @@ source_version: 2.0.1
 
 You will follow the source's first example, the System Explorer. You finish with a screen whose background, tabs, cards, and flags use the right tokens.
 
-The source's example uses the v1 (Astro) hex values. The Roster remap now sets the dark defaults, so the tutorial names tokens first and hex second.
-
-> **OPEN:** the source's examples still cite v1 hex values. It does not say whether the Roster remap replaces them in these two examples.
+The source's examples cite the Roster (v2) dark-theme hex values. The tutorial names tokens first and hex second.
 
 ## Step 1. Set the background
 
-Use `--color-background-base-default` for the application background. The source gives `#101923` (v1). The Roster remap gives `#140A0E`.
+Use `--color-background-base-default` for the application background. The source gives `#140A0E`.
 
 ## Step 2. Style the tabs
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_bold_venture_design_system.md
-source_version: 2.0.1
+source_version: 2.0.2
 ---
 
 **Who it's for:** Chief or a builder deciding how any BoldVenture screen, label, or page should look and behave · **What it does:** explains why one design system governs all Bold Venture output. It also shows how the Roster and the token tiers fit together · **Type:** concept

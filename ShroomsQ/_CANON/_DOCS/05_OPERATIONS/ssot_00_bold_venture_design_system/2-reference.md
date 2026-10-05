@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_bold_venture_design_system.md
-source_version: 2.0.1
+source_version: 2.0.2
 ---
 
 **Who it's for:** a builder or designer. They look up a token, color, component, status rule, or pattern in the design system · **What it does:** lists every component of the Bold Venture Design System · **Type:** reference
@@ -228,12 +228,11 @@ CSS tokens follow `--color-classification-{level}`. Banner component tokens foll
 
 ### Data Visualization Palette
 
-A data set holds at most **11 colors**. Status colors are reserved for status indication and never serve general data visualization. Tokens are `--color-data-visualization-1` to `-8` in the source.
+A data set holds at most **8 colors**. Status colors are reserved for status indication and never serve general data visualization. Tokens are `--color-data-visualization-1` to `-8` in the source.
 
 - **Dark theme:** 1 `#00c7cb` (teal-500) · 2 `#938bdb` (purple-400) · 3 `#4dacff` (brightblue-500) · 4 `#70dde0` (teal-300) · 5 `#c9c5ed` (purple-200) · 6 `#92cbff` (brightblue-400) · 7 `#a1e9eb` (teal-200) · 8 `#b7dcff` (brightblue-300)
 - **Light theme:** 1 `#035051` (teal-800) · 2 `#6058a8` (purple-600) · 3 `#1c3851` (brightblue-800) · 4 `#00777a` (teal-700) · 5 `#786dd3` (purple-500) · 6 `#2b659b` (brightblue-700) · 7 `#009fa3` (teal-600) · 8 `#3a87cf` (brightblue-600)
 
-> **OPEN:** the source allows 11 colors but lists only 8 data-visualization tokens per theme.
 
 ### Typography System
 
@@ -433,9 +432,9 @@ All CSS Custom Property names for tokens (colors, spacing, typography, borders) 
 
 The **System Explorer** (Phase 3 deliverable of the character systems pipeline) applies the system as follows:
 
-- The application background uses `--color-background-base-default` (#101923).
-- Navigation tabs use `--tab-color-text-default` (#4dacff). The active tab uses `--tab-color-text-selected` (#ffffff) with a 4px bottom border in `--tab-border-color-selected` (#4dacff).
-- Layer cards use `--color-background-surface-default` (#1b2d3e) with `--color-background-surface-hover` (#1c3851) on hover.
+- The application background uses `--color-background-base-default` (#140A0E).
+- Navigation tabs use `--tab-color-text-default` (#E38AA6). The active tab uses `--tab-color-text-selected` (#F5EDE9) with a 4px bottom border in `--tab-border-color-selected` (#B03A5B).
+- Layer cards use `--color-background-surface-default` (#241018) with `--color-background-surface-hover` (#341820) on hover.
 - Status flags use the status colors. ACTIVE flags show `--color-status-critical` (#ff3838). PENDING flags show `--color-status-serious` (#ffb302). FIRED_PRE_STORY flags show `--color-status-off` (#a4abb6).
 - A derived statistic above its expected range (Truth Exposure Index above 60) shows `--color-status-serious` (#ffb302) with a caution indicator.
 - A derived statistic below zero (Stress Threshold below zero) shows `--color-status-critical` (#ff3838) with a critical indicator.
@@ -444,9 +443,9 @@ The **System Explorer** (Phase 3 deliverable of the character systems pipeline) 
 
 The **Database Editor** (Phase 4 deliverable) applies the system to a read-write interface:
 
-- In browse mode, all fields are read-only text in `--color-text-primary` (#ffffff) on `--color-background-surface-default` (#1b2d3e).
-- The mode toggle uses the secondary button style with `--button-color-text-secondary-default` (#4dacff).
-- In edit mode, inputs activate with `--input-color-background` (#101923) and `--input-color-border-default` (#2b659b).
+- In browse mode, all fields are read-only text in `--color-text-primary` (#F5EDE9) on `--color-background-surface-default` (#241018).
+- The mode toggle uses the secondary button style with `--button-color-text-secondary-default` (#E38AA6).
+- In edit mode, inputs activate with `--input-color-background` (#140A0E) and `--input-color-border-default` (#2b659b).
 - A persistent indicator in the Global Status Bar changes to `--color-status-caution` (#fce83a) to show the editable state.
 - Form validation is inline. A field that breaks a scale class constraint (an odd number where the variable needs even values) shows `--input-color-border-invalid` (#ff3838). It also shows red error text with the constraint and the nearest valid value.
-- The point budget tracker in the bottom panel uses `--progress-color-inner` (#4dacff) and shifts to `--color-status-serious` (#ffb302) above 90% utilization.
+- The point budget tracker in the bottom panel uses `--progress-color-inner` (#B03A5B) and shifts to `--color-status-serious` (#ffb302) above 90% utilization.
