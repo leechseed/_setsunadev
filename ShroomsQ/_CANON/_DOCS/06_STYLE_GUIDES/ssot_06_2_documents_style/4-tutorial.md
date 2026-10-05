@@ -14,7 +14,7 @@ source_version: "1.5.0"
 
 # Documents style: write one page, start to finish
 
-The source records one real worked case: on 2026-10-04 the writers applied the core to the SOI, the sit rep page and the DOPE SHEETs. This lesson follows the same moves on a small page of your own.
+The source records one real worked case. On 2026-10-04 the writers applied the core to the SOI, the sit rep page and the DOPE SHEETs. This lesson follows the same moves on a small page of your own.
 
 ## Before you start
 

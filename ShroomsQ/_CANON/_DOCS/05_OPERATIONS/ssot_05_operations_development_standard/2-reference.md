@@ -22,13 +22,13 @@ The source has type `ssot_standard`, category operations, version 0.1.2, last up
 
 The Command loop is **iterative-incremental development**. Five outside parents each describe a piece, in one line:
 
-- **ISO/IEC/IEEE 12207:2017 and 15288:** life-cycle process standards that name the iterative and incremental model as a standing process pattern.
-- **The Agile Manifesto's principles and Scrum's inspect-and-adapt:** deliver on a short cycle, inspect, adapt; transparency, inspection, and adaptation are the three pillars.
+- **ISO/IEC/IEEE 12207:2017 and 15288:** life-cycle process standards. They name the iterative and incremental model as a standing process pattern.
+- **The Agile Manifesto's principles and Scrum's inspect-and-adapt:** deliver on a short cycle, inspect, adapt. Transparency, inspection, and adaptation are the three pillars.
 - **Deming's PDCA:** Plan, Do, Check, Act, a closed loop where the check feeds the next plan.
 - **Boyd's OODA:** Observe, Orient, Decide, Act, the same cycle the project flow names as one session's shape (§F there).
 - **MCDP 6:** control is the feedback returning from the action, not the orders going out.
 
-The Command's three grains: the **increment** is one turn's delivery, recorded as a FRAGO onto the sheet; the **iteration** is one session, closed by Oscar Mike; the **release** is a project's gate, run inside the project flow. The read was ruled and is no longer provisional (version 0.1.1); the standard itself promotes on two uses.
+The Command's three grains: the **increment** is one turn's delivery, which lands as a FRAGO onto the sheet. The **iteration** is one session, which Oscar Mike closes. The **release** is a project's gate, which runs inside the project flow. The read was ruled and is no longer provisional (version 0.1.1); the standard itself promotes on two uses.
 
 ### B · The loop, stage by stage
 
@@ -46,7 +46,7 @@ The Command's three grains: the **increment** is one turn's delivery, recorded a
 Three correction channels fire at any stage:
 
 - **Abort abort abort** cancels the immediately preceding order; the record keeps the abort line, not the order.
-- **Break-break / buttonhook back** parks the current stage where it stands and opens a detour; buttonhook back returns unprompted, restating where the loop was.
+- **Break-break / buttonhook back** parks the current stage where it stands and opens a detour. Buttonhook back returns unprompted, restating where the loop was.
 - **BOLO capture** is the alarm channel: a spoken tasking interrupts any stage and is written the same turn.
 
 ### C · Nesting
@@ -103,7 +103,7 @@ This mirrors the project flow's S/M/L table (§H there).
 
 ### G · Governance
 
-DOCTRINE 0 is the promotion mechanic: v0.1 working, promotes to canonical after two project uses, and any rule unused across those uses is struck at the next revision. The rung is **procedure** (NASA four, ruled 2026-09-15): it governs how the Command works, not what a product measures. Revisions belong to P6 of any project that used this loop, or to a standalone FRAGO 53.
+DOCTRINE 0 is the promotion mechanic: v0.1 working, promotes to canonical after two project uses. The next revision strikes any rule unused across those uses. The rung is **procedure** (NASA four, ruled 2026-09-15): it governs how the Command works, not what a product measures. Revisions belong to P6 of any project that used this loop, or to a standalone FRAGO 53.
 
 ## Implementation
 
@@ -124,8 +124,8 @@ Eight steps:
 
 ### Example 1 · the 9/15 sit rep, run as the formation
 
-The board ran under the formation (BOLO 54): three specialists read disjoint sources with no cross-talk, then one script reviewer ran at the fan-in. The reviewer's first pass stopped on three findings. Each specialist fixed its own finding; the main line stripped one stray key by hand; the third pass cleared; the board republished to its standing page. No peer cross-check ran, per Rule 5.
+The board ran under the formation (BOLO 54): three specialists read disjoint sources with no cross-talk. Then one script reviewer ran at the fan-in. The reviewer's first pass stopped on three findings. Each specialist fixed its own finding, and the main line stripped one stray key by hand. The third pass cleared, and the board republished to its standing page. No peer cross-check ran, per Rule 5.
 
 ### Example 2 · DOPE SHEET 53, this document's own first increment
 
-BOLO 53 was tabled 2026-09-12 and opened 2026-09-15 on the spoken word "Open 53." This document is that opening's first increment, built by one specialist (DRAFT) at gear 1, as Rule 7 requires. Its next increment is a FRAGO onto DOPE SHEET 53, not a rewrite of the file.
+BOLO 53 was tabled 2026-09-12 and opened 2026-09-15 on the spoken word "Open 53". This document is that opening's first increment, built by one specialist (DRAFT) at gear 1, as Rule 7 requires. Its next increment is a FRAGO onto DOPE SHEET 53, not a rewrite of the file.

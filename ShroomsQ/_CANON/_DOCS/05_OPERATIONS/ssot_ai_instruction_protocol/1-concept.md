@@ -34,4 +34,4 @@ For every field, rule, and step, read the [reference](2-reference.md). For the t
 
 ## The long read
 
-The protocol consolidates two earlier documents: the SSOT Template and the Writing Guide. Its version history records that merge at 1.2.0 on 2026-02-12. The result reads as law, with the Marine Standard's no-contraction, no-hedge, present-tense filters. A later ruling, the BOLO 92 merge calls recorded in the 06.2 style guide, allowed contractions and changed the fixed skeleton. A reader checks the current style guide before trusting Phase 2 and Phase 3 of this prompt.
+The protocol consolidates two earlier documents: the SSOT Template and the Writing Guide. Its version history records that merge at 1.2.0 on 2026-02-12. The result reads as law, with the Marine Standard's no-contraction, no-hedge, present-tense filters. A later ruling allowed contractions and changed the fixed skeleton. The ruling is the BOLO 92 merge calls recorded in the 06.2 style guide. A reader checks the current style guide before trusting Phase 2 and Phase 3 of this prompt.

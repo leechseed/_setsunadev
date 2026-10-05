@@ -25,14 +25,14 @@ Four parts, built in this order. Each part has what it is, how to build it, and 
 - Done-test: a reader rebuilds the story's shape from the sentence. The mechanism line explains the how without repeating the what.
 - Latent-theme line: after the sentence, ask what it might be covering (CRE.06).
 
-**(b) The rails.** 3 to 5 debates, one per major point of view, each argued both sides across the whole story.
+**(b) The rails.** 3 to 5 debates, one per major point of view. Each debate argues both sides across the whole story.
 - Build: take each throughline's storyform Issue/Counterpoint pair and phrase it as a question a character could ask aloud.
 - Done-test: every debate has scenes for each side, and the set sums to the controlling idea.
 - `meets`: each rail names one outside idea the debate touches (CRE.06).
 
 **(c) The value scale.** One or two gauges, four steps: positive, contrary, contradictory, negation of the negation.
 - Build: name the value, then write plain words for each step, worst to best.
-- Done-test: every scene's value turn (plot card value-in and value-out) names a step, and the steps read as a ladder.
+- Done-test: every scene's value turn (plot card value-in and value-out) names a step. The steps read as a ladder.
 - Add a second gauge only when one point of view runs on a different value.
 
 **(d) The motifs.** 2 to 4 recurring images that carry a rail or a scale step.
@@ -129,7 +129,7 @@ Motifs feed the texture system. Each appearance moves the Freedom scale. The Fee
 
 ## PROVENANCE
 
-- 1.3.0 cite: CRE.06 *Thematics: New Approaches* (Bremond, Landy and Pavel, 1995) backs the latent-theme line, the two motif checks and `meets`.
+- 1.3.0 cite: CRE.06 *Thematics: New Approaches* (Bremond, Landy and Pavel, 1995) backs the latent-theme line. It also backs the two motif checks and `meets`.
 - The 9/24 verdict: Foucault supplies the mechanism. Arendt, Bauman, Milgram and Browning supply the moral claim. The ruled sentence is the moral claim.
 - Chief's 9/24 phrasing, "the system enables evil; the person is a symptom," stays on record as the Overall Story's world-claim.
 - Research file: `_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md`.
@@ -155,7 +155,7 @@ Three tests carry the idea down to the scene. They ride the scene card in [ssot_
 
 ## TROPES
 
-Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the theme domain is keyed to rails R1 to R4 in the [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list is `_tools/tropes/data/domains/LAYERS.md`, under theme. The sub-index pass is keying as of 2026-09-29: Death, Family, Betrayal, Revenge, Authority, Memory, The Secret, Promises and Vows.
+Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the theme domain is keyed to rails R1 to R4. The [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md) holds the keys. The pull list is `_tools/tropes/data/domains/LAYERS.md`, under theme. The sub-index pass is keying as of 2026-09-29: Death, Family, Betrayal, Revenge, Authority, Memory, The Secret, Promises and Vows.
 
 ## THE HANDSHAKE — theme × Touchstones (BOLO 81)
 
@@ -168,7 +168,7 @@ Themes argue; Touchstones hold. No scene writes past a live Touchstone. Live one
 | R3, Anna | *Don't fight the game. Win it.* | TS 1:1 (soft) | Stages power inside a bounded rite with a clear end. |
 | R4, Tori and Anna | *Whose memory counts?* | TS 1:1 (soft) | Contests whose account of a contained scene is true. |
 
-**The rule:** a new Touchstone gets this row check against R1 to R4 the day it goes live, before any carded scene counts as bound by it.
+**The rule:** a new Touchstone gets this row check against R1 to R4 the day it goes live. No carded scene counts as bound by it before then.
 
 ## 1.0 BAR (RULED 2026-09-29, BOLO 80)
 

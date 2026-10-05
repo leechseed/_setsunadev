@@ -50,4 +50,4 @@ The board republishes to one standing URL. Publish there and never mint a new on
 
 ## Step 8: check your work
 
-Walk the seven rulings once: palette, thin chrome, hover layer, static Mermaid, standing URL, minimal learning tools (not needed here), and type. Fix any miss. For single tasks, see the [how-to](3-how-to.md).
+Walk the seven rulings once. They are palette, thin chrome, hover layer, static Mermaid, standing URL, minimal learning tools (not needed here), and type. Fix any miss. For single tasks, see the [how-to](3-how-to.md).

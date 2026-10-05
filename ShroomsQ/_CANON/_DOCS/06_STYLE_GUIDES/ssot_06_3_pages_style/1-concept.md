@@ -46,7 +46,7 @@ A sit rep and its siblings, the DOPE SHEET and the SOI, republish to one standin
 
 ## Learning material ships small first
 
-Learning pages for Chief ship as the head version: the sentence and the buttons, nothing else, and a score at the end. The complete machine version comes only on request. Dense learning pages read as noise.
+Learning pages for Chief ship as the head version. They hold the sentence and the buttons, nothing else, and a score at the end. The complete machine version comes only on request. Dense learning pages read as noise.
 
 ## The long read
 

@@ -90,7 +90,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 ## Pace on the page
 
 - **What it is:** T4 AT WHAT SPEED. It names five speeds: scene, summary, stretch, pause, ellipsis.
-- **Two tempos:** story tempo (world time per beat) and audience tempo (beats per 1,000 words for prose), from the tracking system §7.
+- **Two tempos:** story tempo (world time per beat) and audience tempo (beats per 1,000 words for prose). Both come from the tracking system §7.
 - **Rule:** the writer checks a draft's duration pattern against its own planned tempo curve before calling it done.
 - **No universal number:** each IP sets beats per 1,000 words per movement on its own lanes.
 - **OXO instance:** the Ban is a hard cut, "a person removed mid-scene and never returned to."
@@ -111,7 +111,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 ## Genre register (cultcore)
 
 - **G1 LABEL:** cultcore, OXO's series genre (RULED 2026-09-29).
-- **G3 conventions:** outsiders against an identity-shaping institution; the cult as container; the newcomer-versus-group induction beat; visibility as currency; belonging and selfhood trending opposite.
+- **G3 conventions:** outsiders against an identity-shaping institution; the cult as container; the newcomer-versus-group induction beat. The list ends with visibility as currency and belonging and selfhood trending opposite.
 - **G6 DELIVERY:** immersive. The reader is a native. Prose never stops to explain its own world's vocabulary.
 - **Rule for cultcore IPs:** the institution's voice reads as a register distinct from the outsider's own. OXO's Axiom against Truth is the case.
 - **Scope:** only IPs whose G1 rules cultcore or a related institutional-dystopia label.

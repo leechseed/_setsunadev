@@ -32,7 +32,7 @@ A highlight names a load-bearing term: one the argument cannot stand without in 
 
 ## Meaning comes later, at harvest
 
-The reader does not stop to define. A script reads the marks later and writes the sense into a vocabulary page, in the meaning the term has in that source. This keeps reading fast and keeps definitions in one place.
+The reader does not stop to define. A script reads the marks later and writes the sense into a vocabulary page. It writes the meaning the term has in that source. This keeps reading fast and keeps definitions in one place.
 
 ## Marks must survive the editor
 

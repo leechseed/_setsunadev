@@ -116,7 +116,7 @@ span: "<time-code range>"           # optional, frequency_mode: iterative only
 ```
 
 - **Iterative field:** `repeat_count` and `span` serve a story point whose `frequency_mode` reads `iterative` (Genette: told once, happened many times). `span` names the grid stretch the repeats cover.
-- **Theme and trope hooks:** a trope is a track of `kind: trope`; its points use the trope's `id` as `subject.id`. A theme motif is a story point whose `field` is `motif.<id>`. The trope register and the theme doc own the ids.
+- **Theme and trope hooks:** a trope is a track of `kind: trope`. Its points use the trope's `id` as `subject.id`. A theme motif is a story point whose `field` is `motif.<id>`. The trope register and the theme doc own the ids.
 
 ## 6. Cables
 

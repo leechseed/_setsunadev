@@ -30,10 +30,10 @@ The dossier uses eight H2 sections in a fixed order, with none omitted and none 
 
 ## Decision-grade is a test, not a mood
 
-A dossier is **decision-grade** when it meets six conditions: it classifies, finds duplicates and drift, extracts recurring constraints, enumerates gaps, ranks actions with impact and complexity, and ends with directives. A dossier that fails one condition is not decision-grade.
+A dossier is **decision-grade** when it meets six conditions. It classifies, finds duplicates and drift, and extracts recurring constraints. It enumerates gaps, ranks actions with impact and complexity, and ends with directives. A dossier that fails one condition is not decision-grade.
 
 For every component, read the [reference](2-reference.md). For the tasks, read the [how-to](3-how-to.md). For a worked example, read the [tutorial](4-tutorial.md).
 
 ## The long read
 
-The protocol inherits the SSOT language standards: no contractions, no hedging, present tense, active voice, and bolded first terms. It uses directive verbs because the reader of a dossier is an operator about to act: Consolidate, Canonicalize, Deprecate, Extract, Refactor, Archive. The two examples in the source show the typical shape of a conclusion: collapse drifted copies into one canonical file, and split methodology from project application.
+The protocol inherits the SSOT language standards: no contractions, no hedging, present tense, active voice, and bolded first terms. It uses directive verbs because the reader of a dossier is an operator about to act. The verbs are Consolidate, Canonicalize, Deprecate, Extract, Refactor, Archive. The two examples in the source show the typical shape of a conclusion. One collapses drifted copies into one canonical file, and the other splits methodology from project application.

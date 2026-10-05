@@ -28,7 +28,7 @@ Every SSOT document follows these constraints.
 | Active Voice | Subjects perform specified actions without ambiguity. |
 | Contractions allowed | RULED 2026-10-04 (BOLO 92 merge call 1). The older ban is struck. |
 
-Connects to: [06.2b markdown marking](../ssot_06_2b_markdown_marking/2-reference.md) for the reader's mark, and 06.2 rule 3.2 for the reasoning on contractions.
+Connects to: [06.2b markdown marking](../ssot_06_2b_markdown_marking/2-reference.md) for the reader's mark. It also connects to 06.2 rule 3.2 for the reasoning on contractions.
 
 ## Structural Requirements
 

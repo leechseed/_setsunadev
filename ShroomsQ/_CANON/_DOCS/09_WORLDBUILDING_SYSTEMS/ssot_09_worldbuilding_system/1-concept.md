@@ -16,7 +16,7 @@ source_version: 1.1.1
 
 ## Some world things belong to no system
 
-The Command already has systems for people (02), places (03), plot (04), theme (07) and state over time (08). None owns a clan, a style of building, a way of dressing, a vehicle, a custom or a school of thought.
+The Command already has systems for people (02), places (03), plot (04), theme (07) and state over time (08). None owns a clan, a style of building, a way of dressing, or a vehicle. None owns a custom or a school of thought.
 
 Those shared things sit between the systems and get lost. The worldbuilding system gives them one home, the catalog.
 
@@ -74,7 +74,7 @@ Each row links to the file that owns the fact. That read-only rule keeps the vie
 
 The worldbuilding system began as the BOLO 93 first draft on 2026-09-29. It held a definition, three mind models, ten infrastructures, sixteen coherence tests, fifteen boundary warnings and a twelve-type catalog.
 
-Chief ruled OPEN calls 1 to 7 as recommended the same day. The first catalog opens eight types, not twelve, because the fill rule says a type opens when a story needs it.
+Chief ruled OPEN calls 1 to 7 as recommended the same day. The first catalog opens eight types, not twelve. The fill rule says a type opens when a story needs it.
 
 The DCUS proof then filled seven entries from canon. The proof found that the Tremor Cult was misfiled as a belief. It is a story, so its entry is retired and its id is never reused.
 

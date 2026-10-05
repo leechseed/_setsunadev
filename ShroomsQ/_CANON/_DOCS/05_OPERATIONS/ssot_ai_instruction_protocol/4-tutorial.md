@@ -14,7 +14,7 @@ source_version: 1.2.0
 
 # Run the master prompt once
 
-You will take one raw concept through the four phases and check the first lines of the result. The source holds no full worked example, so this lesson uses a made-up concept: a one-line note about how a team files its weekly summaries. It stands for any raw note.
+You will take one raw concept through the four phases and check the first lines of the result. The source holds no full worked example, so this lesson uses a made-up concept. The concept is a one-line note about how a team files its weekly summaries. It stands for any raw note.
 
 > **OPEN:** the source carries no worked example of a run.
 

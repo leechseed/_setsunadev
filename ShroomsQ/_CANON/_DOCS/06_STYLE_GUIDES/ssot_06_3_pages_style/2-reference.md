@@ -19,7 +19,7 @@ One entry per component of the source, in source order. See the [concept](1-conc
 ## THE FOUNDATION
 
 - **What it is:** the Bold Venture Design System, `ssot_00_bold_venture_design_system.md`, which stays in `05_OPERATIONS`. It is not moved or duplicated.
-- **Holds:** the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER, PUNCH, DUST, NOIR), the Luminance Law, and the one-red ledger.
+- **Holds:** the ROSE anchor (`#8A1F44`), the FLESH ramp, the four registers (EMBER, PUNCH, DUST, NOIR). It also holds the Luminance Law and the one-red ledger.
 - **Ruled:** 2026-09-01, v2.0.0.
 - **Use for:** anything brand-facing or DARKROOM-facing. Read it before designing either.
 - **Connects to:** the page rulings below, which cover the internal-tool layer.
@@ -38,8 +38,8 @@ The internal-tool layer. Seven rulings, each with its citation.
 | 6 | **Learning tools minimal.** Chief-facing learning material ships as the head version first: the sentence and the buttons, nothing else on the card, a score at the end. The complete machine version is offered only after, never by default. | Feedback 2026-09-06 |
 | 7 | **Type.** Three faces, loaded from Google Fonts: Barlow Condensed (display, headings, labels), Atkinson Hyperlegible (body), IBM Plex Mono (codes, counts, metadata). | RULED 2026-09-10/11; folded here 2026-09-29 (BOLO 92, OPEN 3 rec) |
 
-**Held sources.** The source also lists eleven tier-1 references from the Zotero shelf's 06.3 section, none yet read into a rule: BVX.0292, BVX.1191, BVX.0294, BVX.0295, BVX.1031, BVX.1042, BVX.1192, BVX.1047, BVX.1193, BVX.1103, BVX.0301. BVX.1002 is skipped as a misfit.
+**Held sources.** The source also lists eleven tier-1 references from the Zotero shelf's 06.3 section. Nobody has read any of them into a rule yet. The first six are BVX.0292, BVX.1191, BVX.0294, BVX.0295, BVX.1031, BVX.1042. The last five are BVX.1192, BVX.1047, BVX.1193, BVX.1103, BVX.0301. BVX.1002 is skipped as a misfit.
 
-**Pending rec (source OPEN):** when a page rule needs backing beyond memory, pull first from Harris, *Information Graphics* (BVX.1192), and Lidwell, Holden and Butler, *Universal Principles of Design* (BVX.0301).
+**Pending rec (source OPEN):** when a page rule needs backing beyond memory, pull first from Harris, *Information Graphics* (BVX.1192). Also pull from Lidwell, Holden and Butler, *Universal Principles of Design* (BVX.0301).
 
 > **OPEN:** the source's front matter dates the page 2026-09-29 and carries no `owner`, `state` or `reviewed` fields. No ruling distills any held source into a page rule yet.

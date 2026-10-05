@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # Turn a drifted template batch into directives
 
-You will run the protocol on the source's first example: a batch of prompt templates that repeat the same rules with minor version differences. You finish with the directive list a dossier must end on.
+You will run the protocol on the source's first example. It is a batch of prompt templates that repeat the same rules with minor version differences. You finish with the directive list a dossier must end on.
 
 ## Step 1. Set the inputs
 
@@ -26,7 +26,7 @@ The agent reads the ranked batch and turns each fragment into a comparable unit.
 
 ## Step 3. Cluster and audit
 
-The agent groups the templates by function and finds the drift: the same rules ("no hallucination," "markdown only," "linked TOC") repeated across copies with minor version differences.
+The agent groups the templates by function and finds the drift. The same rules ("no hallucination," "markdown only," "linked TOC") repeat across copies with minor version differences.
 
 ## Step 4. Extract and scan
 

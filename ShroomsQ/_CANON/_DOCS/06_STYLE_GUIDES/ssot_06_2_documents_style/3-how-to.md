@@ -36,7 +36,7 @@ Rule numbers refer to the [reference](2-reference.md).
 
 1. Put each sentence on its own line.
 2. Pass one, facts: check each claim against its source.
-3. Pass two, words: for each sentence, ask who acts, whether the verb is active, whether any word can go, whether a literal reader could take the wrong branch, and whether the key word is at the end.
+3. Pass two, words: for each sentence, ask who acts and whether the verb is active. Ask whether any word can go. Ask whether a literal reader could take the wrong branch, and whether the key word is at the end.
 4. Pass three, aloud: read the page out loud. Where you run out of breath, cut the sentence.
 5. Run the script check for 20 words per sentence.
 6. Update the reviewed date.

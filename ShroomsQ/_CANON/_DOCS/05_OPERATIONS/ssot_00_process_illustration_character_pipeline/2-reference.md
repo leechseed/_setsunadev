@@ -10,11 +10,11 @@ source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_process_illustration_ch
 source_version: 1.0.1
 ---
 
-**Who it's for:** a narrative designer looking up a flow, step, decision point, or the next action in the character pipeline · **What it does:** lists every component of the Process Illustration · **Type:** reference
+**Who it's for:** a narrative designer. They look up a flow, step, decision point, or the next action in the character pipeline · **What it does:** lists every component of the Process Illustration · **Type:** reference
 
 # Process Illustration: reference
 
-The source has type `ssot_00_foundations`, category process_illustration, version 1.0.1, module of `ssot_02_character_systems_vertical_slice`, tier operations, trunk BLACK, last updated 2026-10-04. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Status: canonical. Its purpose: it "illustrates the complete LEECHSEED character pipeline as four sequential flows with decision points, inputs, outputs, and embedded Mermaid diagrams for Obsidian rendering."
+The source has type `ssot_00_foundations`, category process_illustration, version 1.0.1, and module of `ssot_02_character_systems_vertical_slice`. It has tier operations, trunk BLACK, and last updated 2026-10-04. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Status: canonical. Its purpose: it "illustrates the complete LEECHSEED character pipeline as four sequential flows with decision points, inputs, outputs, and embedded Mermaid diagrams for Obsidian rendering."
 
 The doc modules per flow:
 
@@ -43,8 +43,8 @@ The master diagram has six groups:
 - **Upstream sources:** Dramatica software (locked storyform) and the authoritative document (character bible).
 - **Flow A:** extract reports (Dynamics, Theme, Character) into the Dramatica Ingest Template.
 - **Flow B:** the DAI derivation sequence (18 steps) into the Character Astrology Ingest Template.
-- **Flow C:** Step 1 source verification gate (PASS or FAIL/BLOCKED), then Step 2 Tier 1 assignment, Step 3 Tier 2 derivation, Step 4 Tier 3 population, Step 5 derived stats, Step 6 flag evaluation, Step 7 structured data block.
-- **Flow D:** the structured data block is the base record; a fabula event (`event_id`) and the base record compute a state diff, which yields a checkpoint (.md).
+- **Flow C:** Step 1 source verification gate (PASS or FAIL/BLOCKED). Then Step 2 Tier 1 assignment, Step 3 Tier 2 derivation, and Step 4 Tier 3 population. Then Step 5 derived stats, Step 6 flag evaluation, and Step 7 structured data block.
+- **Flow D:** the structured data block is the base record. A fabula event (`event_id`) and the base record compute a state diff, which yields a checkpoint (.md).
 - **Canonical folder:** `_AUTHORITATIVE/IP/characters/CHARACTER_ID/` receives the Dramatica ingest, astrology ingest, structured data block, and checkpoint.
 
 ## Flow A: Dramatica → Dramatica Ingest Template
@@ -55,14 +55,14 @@ The designer extracts structural data from the locked Dramatica storyform and fi
 
 ### Flow Diagram
 
-The order follows the form's extraction priority: Section 1, then 4, then 3 and 2, then 6, 5 and 7, with Section 8 as the log. The form serves Tier 3 characters only. Steps:
+The order follows the form's extraction priority. Section 1 comes first, then 4, then 3 and 2, then 6, 5 and 7. Section 8 is the log. The form serves Tier 3 characters only. Steps:
 
 1. Open Dramatica and load the storyform. Check whether it is LOCKED. If not, lock it first; no extraction from drafts.
 2. Copy the blank form to the character folder as `CHARACTER_ID_dramatica_ingest.md`. Delete the how-to section and the frontmatter. Keep the section numbers.
 3. Fill the Header: `character_id`, `storyform_id`, `storyform_version`, `authoritative_doc_ref`.
 4. Extract 1: Story Dynamics Report to Section 1 (outcome, judgement, driver, limit).
 5. Extract 2: Theme Report (MC) to Section 4 (the MC throughline variable set).
-6. Extract 3: Character Report to Section 3 (the eight element fields and the meaning statement), then Section 2 (structural role, archetype, resolve, growth, approach, mental sex).
+6. Extract 3: Character Report to Section 3 (the eight element fields and the meaning statement). Then Character Report to Section 2 (structural role, archetype, resolve, growth, approach, mental sex).
 7. Choose throughlines. OS (every character) to Section 6; IC to Section 5; RS principal to Section 7.
 8. Log Section 8, the Report Source Log: one line per report read, in extraction order.
 9. Derive Section 9, Touchstones, from the storyform (minimum 1).
@@ -110,24 +110,24 @@ The designer translates locked Dramatica data into astrological notation with th
 
 - **DP-B1: "Does sign encode identity axis?"** The Sun sign validation gate. Compare the sign's elemental and modal qualities against the character's MC Domain plus Concern. A sign that describes a different kind of person than the Dramatica data is wrong. The common error is misidentifying the Concern's modality, so revisit that step first.
 - **DP-B2: "Does sign encode stress-collapse pattern?"** The Moon sign validation gate. The Moon is where the character goes when Sun-level processing fails. A Moon that feels too comfortable, too rational, or too like the Sun is wrong. It should feel like a regression: older, more instinctual.
-- **DP-B3: "Minimum Viable Chart complete?"** The minimum viable chart is Sections 1 to 5 and 8 to 10: the Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant signs, at least three aspects, houses for those seven planets, the chart summary and the feed map. Sections 6 and 7 (dignities, the 12th House) can wait. The designer marks the template `minimum_viable`. The Step 1 gate reads that as a yellow light. The full chart is complete before the final Vertical Slice lock.
+- **DP-B3: "Minimum Viable Chart complete?"** The minimum viable chart is Sections 1 to 5 and 8 to 10. It holds the Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant signs, and at least three aspects. It also holds houses for those seven planets, the chart summary and the feed map. Sections 6 and 7 (dignities, the 12th House) can wait. The designer marks the template `minimum_viable`. The Step 1 gate reads that as a yellow light. The full chart is complete before the final Vertical Slice lock.
 
 ## Flow C: Both Ingests → 12-Layer Vertical Slice
 
 ### Overview
 
-The main production flow. It consumes both locked ingest templates plus the authoritative document and produces the complete 12-layer character record with derived statistics, flags, and a structured data block.
+The main production flow. It consumes both locked ingest templates plus the authoritative document. It produces the complete 12-layer character record with derived statistics, flags, and a structured data block.
 
 ### Flow Diagram
 
-1. **Step 1, Source Verification:** Component 1 (authoritative doc, 7 checks), Component 2 (Dramatica ingest, 9 checks), Component 3 (astrology ingest, 8 checks). Gate result: GREEN proceeds. YELLOW proceeds, with chart-fed values tagged ASTROLOGY_PENDING and the block draft until the chart locks. RED is BLOCKED; see the failure diagnostic in the Step 1 protocol.
+1. **Step 1, Source Verification:** the gate runs three components. Component 1 checks the authoritative doc (7 checks). Component 2 checks the Dramatica ingest (9 checks). Component 3 checks the astrology ingest (8 checks). Gate result: GREEN proceeds. YELLOW proceeds, with chart-fed values tagged ASTROLOGY_PENDING and the block draft until the chart locks. RED is BLOCKED; see the failure diagnostic in the Step 1 protocol.
 2. **Step 2, Tier 1 assignment:** assign T1.CORE, T1.VITAL, T1.SOCIAL. Check that Tier 1 alone suggests the character; if not, the primary values are wrong.
 3. **Step 3, Tier 2 derivation:**
    - 3A: derive T2.WILL from T1.CORE, buying up or down on documented resolve.
    - 3B: assign T2.WOUND from character history (even values only, SC-12). It is a record, not a choice.
    - 3C: derive T2.DRIVE from T1.VITAL. Ambition-driven: DRIVE = VITAL. Meaning-driven: DRIVE < VITAL.
    - 3D: check `want_need.need` is not empty (Tier 2 and 3).
-4. **Step 4, Tier 3 population** (L7 to L12 variable stacks): mark [INFERRED] where the source is silent; cite `setting_ref` where the setting has an S4, S6 or S8 entry.
+4. **Step 4, Tier 3 population** (L7 to L12 variable stacks): mark [INFERRED] where the source is silent. Cite `setting_ref` where the setting has an S4, S6 or S8 entry.
    - 4A: L7 ORIGIN (authoritative doc plus AST.ANGLE.ic_sign).
    - 4B: L8 IMPRINT (authoritative doc plus AST.PERSONAL.moon_sign).
    - 4C: L9 EROS (authoritative doc plus AST Venus/Mars data); mark INFERRED if needed.
@@ -141,11 +141,11 @@ The main production flow. It consumes both locked ingest templates plus the auth
 
 ### Decision Point Annotations
 
-- **DP-C1: "Gate Result?"** Component 1 has seven checks, Component 2 nine, Component 3 eight. Green means all pass. Yellow means Components 1 and 2 pass and Component 3 is at minimum_viable; chart-fed values carry `[ASTROLOGY_PENDING]` and the block stays draft until the chart locks and the Feed Validation Checklist passes. Red means any component fails and is a hard block. The designer completes the missing upstream document.
-- **DP-C2: "Tier 1 alone suggests the character?"** Three numbers (CORE, VITAL, SOCIAL) must produce a recognizable human outline without any other layer. The source's example: CORE=13, VITAL=14, SOCIAL=10 should read as "smart, physically elite, socially unfiltered." This gate prevents downstream waste, since every later layer builds on Tier 1.
-- **DP-C3: "Stats feel right?"** Derived statistics are diagnostic instruments. A positive Stress Threshold for a character who operates past their limit, or a low Truth Exposure Index for a maximally legible character, means something is wrong upstream. The stats expose numeric assignment errors.
-- **DP-C4: "Any flags fire unexpectedly?"** A flag that fires when it should not, or fails to fire when it should, indicates a schema inconsistency between the trigger condition and the layer values. The designer does not adjust the flag; the flag correctly evaluates the numbers given.
-- **DP-C5: "Does every key carry a tag?"** No field ships without a tag. Static or dynamic follows the state architecture's Decision Test: would the value differ if the character froze at two points in the narrative? Derived values are recomputed from layer values and never stored as a diff. The tag table is in the slice, under "Field tags · every field".
+- **DP-C1: "Gate Result?"** Component 1 has seven checks, Component 2 nine, Component 3 eight. Green means all pass. Yellow means Components 1 and 2 pass and Component 3 is at minimum_viable. Chart-fed values carry `[ASTROLOGY_PENDING]`. The block stays draft until the chart locks and the Feed Validation Checklist passes. Red means any component fails and is a hard block. The designer completes the missing upstream document.
+- **DP-C2: "Tier 1 alone suggests the character?"** Three numbers (CORE, VITAL, SOCIAL) must produce a recognizable human outline without any other layer. The source's example: CORE=13, VITAL=14, SOCIAL=10 should read as "smart, physically elite, socially unfiltered". This gate prevents downstream waste, since every later layer builds on Tier 1.
+- **DP-C3: "Stats feel right?"** Derived statistics are diagnostic instruments. A positive Stress Threshold for a character who operates past their limit means something is wrong upstream. So does a low Truth Exposure Index for a maximally legible character. The stats expose numeric assignment errors.
+- **DP-C4: "Any flags fire unexpectedly?"** A flag that fires when it should not indicates a schema inconsistency. So does a flag that fails to fire when it should. The inconsistency sits between the trigger condition and the layer values. The designer does not adjust the flag; the flag correctly evaluates the numbers given.
+- **DP-C5: "Does every key carry a tag?"** No field ships without a tag. Static or dynamic follows the state architecture's Decision Test. The test asks whether the value would differ if the character froze at two points in the narrative. Derived values are recomputed from layer values and never stored as a diff. The tag table is in the slice, under "Field tags · every field".
 
 ## Flow D: Vertical Slice → State Diffs
 
@@ -163,7 +163,7 @@ Flow D produces state records that describe how a character differs from the bas
    - **Relational:** bond forms, breaks, or transforms. IMPRINT variables change, EROS may shift, create or update a relationship record.
    - **Awakening:** perception breakthrough. `resistance_index` drops sharply, shadow may begin integrating, PENDING flags may fire.
    - **Progression:** slow internal change. Progressed Moon shifts, emotional baseline drifts, attachment score may drift by 1.
-4. Create the checkpoint: (1) set required fields (`character_id`, `state_id`, `origin_event` = the fabula `event_id`, `told_at` time codes, `base_record_version`); (2) list MODIFIED_VALUES under `state_diffs`, Dynamic fields only, only values that differ from base; (3) recompute MODIFIED_DERIVED; (4) re-evaluate MODIFIED_FLAGS; (5) write STATE_NOTE (2 to 5 sentences of justification); (6) add ASTROLOGY_OVERLAY if transits or progressions are active.
+4. Create the checkpoint. (1) Set required fields (`character_id`, `state_id`, `origin_event` = the fabula `event_id`, `told_at` time codes, `base_record_version`). (2) List MODIFIED_VALUES under `state_diffs`, Dynamic fields only, only values that differ from base. (3) Recompute MODIFIED_DERIVED. (4) Re-evaluate MODIFIED_FLAGS. (5) Write STATE_NOTE (2 to 5 sentences of justification). (6) Add ASTROLOGY_OVERLAY if transits or progressions are active.
 5. Check that modified values respect scale class constraints; if not, adjust to the nearest valid grid value. Check that flags re-evaluate correctly; if not, investigate the values.
 6. Save the state record (.md) in the character's `states/` subfolder.
 7. If the event affects a relationship, update the relationship record's status and `state_history` in `_AUTHORITATIVE/IP/relationships/`.
@@ -188,7 +188,7 @@ A revised storyform is a new version, not an edit. The chart, the L12 block, and
 
 ## Cross-Flow: Module Attachment
 
-This section covers field modules (Layer-Locked Modules). A doc module, such as the Step 1 gate or the state architecture, is a step inside Flows A to D and is not activated here (see `📐 ssot_00_module_architecture.md`). Field modules attach at any point after the base record exists. They do not take part in Flows A to C. They activate during or after Flow C and persist through Flow D.
+This section covers field modules (Layer-Locked Modules). A doc module is a step inside Flows A to D. Examples are the Step 1 gate and the state architecture. This page does not activate a doc module (see `📐 ssot_00_module_architecture.md`). Field modules attach at any point after the base record exists. They do not take part in Flows A to C. They activate during or after Flow C and persist through Flow D.
 
 ### Module Activation Flow
 

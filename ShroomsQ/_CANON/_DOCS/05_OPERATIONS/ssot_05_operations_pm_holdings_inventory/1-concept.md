@@ -22,19 +22,19 @@ The source states it: the method is already written, and what is missing is asse
 
 ## No single document had assembled them
 
-The instruments are a charter, an assumption log, a decision ledger, a task register, a portfolio board, stage gates, a document container, and the Command style. The repo held each one, but no single document said how a project runs here. SOP.md governs the session, not the project.
+The instruments are a charter, an assumption log, a decision ledger, and a task register. They also include a portfolio board, stage gates, a document container, and the Command style. The repo held each one, but no single document said how a project runs here. SOP.md governs the session, not the project.
 
 ## The survey sorts holdings by source
 
-The inventory groups holdings into five kinds: PMBOK and PMI material, Marine Corps doctrine used as PM method, the Pyramid Principle and answer-first doctrine, templates and registries and gates, and the Ultrasin master registry format. Each table gives the path, what the item is, its state, and what it offers the standard flow.
+The inventory groups holdings into five kinds. The first two are PMBOK and PMI material, and Marine Corps doctrine used as PM method. The next are the Pyramid Principle and answer-first doctrine, then templates and registries and gates. The last is the Ultrasin master registry format. Each table gives the path, what the item is, its state, and what it offers the standard flow.
 
 ## The inventory names what is finished and what is missing
 
-Section 6 lists both. It flags the known gaps: the Pyramid Principle source text, seven of eleven MCDP PDFs, and the DOCTRINE-0 ratification, which later happened.
+Section 6 lists both. It flags the known gaps: the Pyramid Principle source text, seven of eleven MCDP PDFs, and the DOCTRINE-0 ratification. That ratification later happened.
 
 ## The cheapest path was taken
 
-Section 7 says to promote the four-domains lifecycle into an SSOT, strip the charter and assumption log into blanks, generalise the gate pattern, and adopt the registry's status flags and ledger. The Project Flow v0.1 is that path, taken on 2026-09-03.
+Section 7 says to promote the four-domains lifecycle into an SSOT and strip the charter and assumption log into blanks. It also says to generalise the gate pattern and adopt the registry's status flags and ledger. The Project Flow v0.1 is that path, taken on 2026-09-03.
 
 For every section, read the [reference](2-reference.md). For the tasks, read the [how-to](3-how-to.md). For a worked pass, read the [tutorial](4-tutorial.md).
 

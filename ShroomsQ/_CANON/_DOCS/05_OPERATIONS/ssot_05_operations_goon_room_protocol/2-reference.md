@@ -56,4 +56,4 @@ The source gives four steps:
 - **Example 1:** tuning the "Decay" variable in Movement 3 (Year 2 School) using the Narrative Astrology SSOT.
 - **Example 2:** drafting an insurgency protocol for Movement 5 (Fight Club) based on the Resistance methodology.
 
-The version history holds two rows: 1.0.0 (2026-02-12, initial protocol) and 1.1.0 (2026-02-12, mandatory triple-dash YAML boundaries).
+The version history holds two rows. Row one is 1.0.0 (2026-02-12, initial protocol). Row two is 1.1.0 (2026-02-12, mandatory triple-dash YAML boundaries).

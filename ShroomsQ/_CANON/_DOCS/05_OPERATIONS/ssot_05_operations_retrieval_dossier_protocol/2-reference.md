@@ -20,7 +20,7 @@ The source has type `ssot_05_operations`, category operations, status canonical,
 
 ### Retrieval Dossier
 
-A **Retrieval Dossier** is an operational analysis output that converts noisy retrieval results into structured signal, explicit risks, and prioritized operator directives.
+A **Retrieval Dossier** is an operational analysis output. It converts noisy retrieval results into structured signal, explicit risks, and prioritized operator directives.
 
 ### Doctrinal Constraints
 
@@ -41,7 +41,7 @@ The protocol assumes a two-document input pair:
 
 ### Output Model
 
-The agent outputs **Document C (Dossier)**, a decision-grade dossier that answers one question: what must the operator do with this dataset.
+The agent outputs **Document C (Dossier)**, a decision-grade dossier that answers one question. The question is what the operator must do with this dataset.
 
 ### Mandatory Output Structure
 
@@ -101,8 +101,8 @@ The agent runs eight steps internally:
 
 ### Example 1: Prompt Template Drift Cleanup
 
-Input: a batch showing multiple prompt templates that repeat "no hallucination," "markdown only," and "linked TOC," with minor version differences. The dossier concludes with directives similar to: canonicalize one prompt as v3; extract common hard rules into a standalone doctrine file; deprecate legacy copies and replace with wikilinks; add version headers to all surviving templates; create a template registry index.
+Input: a batch showing multiple prompt templates that repeat "no hallucination," "markdown only," and "linked TOC," with minor version differences. The dossier concludes with directives similar to: canonicalize one prompt as v3. Extract common hard rules into a standalone doctrine file. Deprecate legacy copies and replace with wikilinks. Add version headers to all surviving templates. Create a template registry index.
 
 ### Example 2: Mixed Workflow and Standards Bundle
 
-Input: a batch mixing workflow procedures, YAML formatting rules, and operational environment notes. The dossier concludes with directives similar to: split methodology (SSOT) from project application (Authoritative); merge all YAML rules into a single canonical "YAML Standard" file; move environment notes into operations protocols; add dependencies wikilinks across all operational documents; create a lifecycle policy of Draft, Spec, Locked, Canonical, Deprecated.
+Input: a batch mixing workflow procedures, YAML formatting rules, and operational environment notes. The dossier concludes with directives similar to: split methodology (SSOT) from project application (Authoritative). Merge all YAML rules into a single canonical "YAML Standard" file. Move environment notes into operations protocols. Add dependencies wikilinks across all operational documents. Create a lifecycle policy of Draft, Spec, Locked, Canonical, Deprecated.

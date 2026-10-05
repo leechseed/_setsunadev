@@ -14,7 +14,7 @@ source_version: 0.1.1
 
 # A project runs on events, a brief, and gates
 
-The **Project Flow** states how a project runs in the Command. It assembles instruments that already exist into one flow: the six-phase lifecycle of the Bold Venture Development Doctrine, the brief, the gate, the decision ledger, and the session protocol. It governs the **project**. The SOP governs the **session**.
+The **Project Flow** states how a project runs in the Command. It assembles instruments that already exist into one flow. They are the six-phase lifecycle of the Bold Venture Development Doctrine and the brief. They also include the gate, the decision ledger, and the session protocol. It governs the **project**. The SOP governs the **session**.
 
 ## The flow ends one failure above all others
 
@@ -30,7 +30,7 @@ The end state says what the finished thing changes in the world. The intent is t
 
 ## Phases end on events, and each boundary is a gate
 
-The six phases end on events, never dates. Each boundary is a gate, and a gate is a decision, not a meeting. A gate returns GO, NO-GO, or HOLD. A HOLD names the blocking decision, the decider, and the date it converts to a call, because an unnamed hold is the stall pattern.
+The six phases end on events, never dates. Each boundary is a gate, and a gate is a decision, not a meeting. A gate returns GO, NO-GO, or HOLD. A HOLD names the blocking decision, the decider, and the date it converts to a call. It does so because an unnamed hold is the stall pattern.
 
 ## The commander does the thinking that cannot be delegated
 
@@ -44,4 +44,4 @@ For every component, read the [reference](2-reference.md). For the tasks, read t
 
 ## The long read
 
-The flow is v0.1 working. DOCTRINE 0, ratified 2026-09-03, is its promotion mechanic: it earns canonical status after two project uses, and a rule unused across two projects is struck at the next revision. Its sibling, the Development Standard, governs the loop inside a session; this flow governs the project the loop runs in. The flow's controlling idea comes from MCDP 6: control is the feedback returning from the action, not the orders going out. The Command's prowords are that feedback system.
+The flow is v0.1 working. DOCTRINE 0, ratified 2026-09-03, is its promotion mechanic: it earns canonical status after two project uses. The next revision strikes a rule unused across two projects. Its sibling, the Development Standard, governs the loop inside a session; this flow governs the project the loop runs in. The flow's controlling idea comes from MCDP 6. Control is the feedback returning from the action, not the orders going out. The Command's prowords are that feedback system.

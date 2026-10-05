@@ -21,7 +21,7 @@ One entry per component of the source, in source order. See the [concept](1-conc
 - **What it is:** the core of 06.2. Folded in 2026-10-04 (BOLO 92). Chief locked each rule by teach-back between 2026-09-30 and 2026-10-03.
 - **Record:** `_tools/bolostatus/work/95/DOC-SOP.md` holds the readbacks and sources.
 - **Precedence:** where 06.2a or 06.2b disagree, this section wins.
-- **Applied so far (2026-10-04):** the SOI (three passes, 46 entries rewritten), the sit rep page, and the DOPE SHEETs (header, writer briefs, a long-sentence check in the reviewer script).
+- **Applied so far (2026-10-04):** the SOI (three passes, 46 entries rewritten), and the sit rep page. The DOPE SHEETs got it too (header, writer briefs, a long-sentence check in the reviewer script).
 
 **1 · One page, one job**
 

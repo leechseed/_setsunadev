@@ -56,7 +56,7 @@ The value is the thing the idea turns on. It breaks into four steps: positive, c
 
 Any scene turn then reads as a step up or down a ladder. OVEREXITOUT's primary value is Freedom, and world scenes also read Fairness.
 
-Each civilization runs its own value on the same four steps. Each one is a face of the controlling idea, and each one's last step is the lie it tells about itself.
+Each civilization runs its own value on the same four steps. Each one is a face of the controlling idea. Each one's last step is the lie it tells about itself.
 
 ## Motifs carry the argument without words
 

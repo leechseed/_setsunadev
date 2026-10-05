@@ -22,7 +22,7 @@ source_version: 1.0.1
 4. Extract the Story Dynamics Report into Section 1.
 5. Extract the Theme Report (MC) into Section 4.
 6. Extract the Character Report into Section 3, then Section 2.
-7. Fill the throughline sections the character's roles call for: OS to Section 6 (every character), IC to Section 5, RS principal to Section 7.
+7. Fill the throughline sections the character's roles call for. Fill OS to Section 6 (every character), IC to Section 5, and RS principal to Section 7.
 8. Log each report you read in Section 8, one line each, in order.
 9. Derive Section 9, Touchstones, with at least one.
 10. Generate Section 10, the L12 Core Block, last.
@@ -43,13 +43,13 @@ source_version: 1.0.1
 
 ## Mark a minimum viable chart
 
-1. Complete Sections 1 to 5 and 8 to 10: the seven signs, at least three aspects, houses for the seven planets, the summary, and the feed map.
+1. Complete Sections 1 to 5 and 8 to 10. Include the seven signs, at least three aspects, houses for the seven planets, the summary, and the feed map.
 2. Set the template status to `minimum_viable`.
 3. Plan to complete the full chart before the final Vertical Slice lock.
 
 ## Build the Vertical Slice (Flow C)
 
-1. Run the Step 1 gate: seven checks on the authoritative document, nine on the Dramatica ingest, eight on the astrology ingest.
+1. Run the Step 1 gate. It makes seven checks on the authoritative document, nine on the Dramatica ingest, and eight on the astrology ingest.
 2. On GREEN, proceed. On YELLOW, proceed and tag chart-fed values `ASTROLOGY_PENDING`. On RED, stop and complete the missing document.
 3. Assign T1.CORE, T1.VITAL, T1.SOCIAL. Check that the three numbers alone suggest the character.
 4. Derive T2.WILL, T2.WOUND (even values only), and T2.DRIVE. Check that `want_need.need` is not empty.

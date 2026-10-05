@@ -10,13 +10,13 @@ source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_bold_venture_design_sys
 source_version: 2.0.1
 ---
 
-**Who it's for:** a builder or designer looking up a token, color, component, status rule, or pattern in the design system · **What it does:** lists every component of the Bold Venture Design System · **Type:** reference
+**Who it's for:** a builder or designer. They look up a token, color, component, status rule, or pattern in the design system · **What it does:** lists every component of the Bold Venture Design System · **Type:** reference
 
 # Bold Venture Design System: reference
 
 The source has type `ssot_00_foundations`, category design_system, version 2.0.1, tier operations, trunk ORANGE, last updated 2026-10-04. It applies to BOLD_VENTURE. Status: canonical. Source system: Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force). Compliance: MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA. Dependencies: none.
 
-The purpose line: a Command-wide base tool, not part of the storytelling stack; the mandatory visual and interaction standard for all Bold Venture digital output, adapted wholesale from Astro UXDS v7 with Bold Venture naming.
+The purpose line calls it a Command-wide base tool, not part of the storytelling stack. It calls it the mandatory visual and interaction standard for all Bold Venture digital output. The system adapts Astro UXDS v7 wholesale, with Bold Venture naming.
 
 
 ## THE BOLD VENTURE ROSTER — the brand color layer (RULED 2026-09-01)
@@ -34,7 +34,7 @@ The doctrine: one identity, four registers, every surface assigned. It is a tota
 | **GOLD** (core accent, ruled in via Ember) | deep `#D97706` · light `#FDE68A` |
 | **Neutrals** | pure `#FFFFFF` / `#000000` free agents; the Astro grey ramp survives for chrome and disabled only |
 
-**The adhesive rule:** every surface in every register carries at least one identity element: the mark in rose, a rose-black ground, or a flesh moment. **The rose quota (panel-ratified):** a rose-family hue holds a top-two role on every branded surface, in every register.
+**The adhesive rule:** every surface in every register carries at least one identity element. The element can be the mark in rose, a rose-black ground, or a flesh moment. **The rose quota (panel-ratified):** a rose-family hue holds a top-two role on every branded surface, in every register.
 
 ### The four registers
 
@@ -47,7 +47,7 @@ The doctrine: one identity, four registers, every surface assigned. It is a tota
 
 ### THE LUMINANCE LAW (panel-derived, measurable — supersedes the vibe-rule)
 
-Warm color **flatters** skin when it outshines the brightest flesh token. Gold `#FDE68A` (L about 92) above flesh-300 `#FFDAC6` (L about 91) reads as key light. Warm color **jaundices** when it sinks below flesh luminance inside the skin's hue band. Yellow `#FACC15` (L about 86) reads as stain. Therefore ambers and golds are legal only (a) above flesh luminance, or (b) as small source-motivated accents on dark grounds (candle, lamp, foil). They are never a midtone fill near skin. Skin always keeps the FLESH ramp with rose shadows. Warmth is applied as a photographic grade over the scene, never by re-tokenizing skin.
+Warm color **flatters** skin when it outshines the brightest flesh token. Gold `#FDE68A` (L about 92) above flesh-300 `#FFDAC6` (L about 91) reads as key light. Warm color **jaundices** when it sinks below flesh luminance inside the skin's hue band. Yellow `#FACC15` (L about 86) reads as stain. Therefore ambers and golds are legal in only two cases. (a) They sit above flesh luminance. (b) They appear as small source-motivated accents on dark grounds (candle, lamp, foil). They are never a midtone fill near skin. Skin always keeps the FLESH ramp with rose shadows. Warmth is applied as a photographic grade over the scene, never by re-tokenizing skin.
 
 ### The one-red ledger
 
@@ -69,7 +69,7 @@ The system holds one deep red family. Campaign reds resolve inward. `#E11D48` (K
 | `--color-border-focus-default` | `#da9ce7` | `#FDE68A` (gold, contrasts the rose field) |
 | Status tokens | unchanged | unchanged, sacred |
 
-The light theme is the DUST register: base `#F3F4F6`, surface `#FFFFFF`, interactive rose-700 `#8A1F44`, text `#1F1B1E`, selected blush `#E5B8C2`, focus violet `#6D28D9`. Status light-theme fills and mandatory borders are unchanged.
+The light theme is the DUST register. Its base is `#F3F4F6`, its surface `#FFFFFF`, and interactive rose-700 `#8A1F44`. Its text is `#1F1B1E`, selected blush `#E5B8C2`, and focus violet `#6D28D9`. Status light-theme fills and mandatory borders are unchanged.
 
 ### The surface map
 
@@ -89,19 +89,19 @@ Guest colors are admitted by the sing-rule, enforced as the rose quota. PUNCH sh
 
 ### Design System Architecture
 
-The system is a **three-tier token system** with a processing pipeline. A structured token file is the source of truth. A build pipeline turns it into CSS Custom Properties, SCSS variables, and JSON. The upstream pipeline runs Figma design files into `tokens.json`, then **Token Transformer** into structured token sets, then **Style Dictionary** into distributable formats (CSS, SCSS, JSON, iOS Swift).
+The system is a **three-tier token system** with a processing pipeline. A structured token file is the source of truth. A build pipeline turns it into CSS Custom Properties, SCSS variables, and JSON. The upstream pipeline runs Figma design files into `tokens.json`. **Token Transformer** then converts that file into structured token sets. **Style Dictionary** then converts those sets into distributable formats (CSS, SCSS, JSON, iOS Swift).
 
-The Bold Venture fork replaces the reference-level palette with Bold Venture brand colors, replaces the **Roboto** typeface with a Bold Venture selection, and renames the `rux-` component prefix to `bvx-`. System-level and component-level tokens cascade from the reference-level replacements.
+The Bold Venture fork replaces the reference-level palette with Bold Venture brand colors. It replaces the **Roboto** typeface with a Bold Venture selection. It renames the `rux-` component prefix to `bvx-`. System-level and component-level tokens cascade from the reference-level replacements.
 
 The upstream web component library uses **Stencil.js** and ships W3C-compliant Web Components with React and Angular wrappers. Upstream packages: `@astrouxds/tokens`, `@astrouxds/astro-web-components`, `@astrouxds/react`, `@astrouxds/angular`. Bold Venture equivalents: `@boldventure/tokens`, `@boldventure/web-components`, `@boldventure/react`, `@boldventure/angular`.
 
 ### Token Hierarchy
 
-- **Tier 1, Reference Tokens:** raw palette values with no semantic meaning; the complete color space, font size scale, spacing scale, and other primitives. Accessed as `var(--color-palette-{hue}-{shade})` and `var(--font-size-{scale})`. They do not change between themes.
+- **Tier 1, Reference Tokens:** raw palette values with no semantic meaning. They hold the complete color space, font size scale, spacing scale, and other primitives. Accessed as `var(--color-palette-{hue}-{shade})` and `var(--font-size-{scale})`. They do not change between themes.
 - **Tier 2, System Tokens:** semantic intent; they map Reference Tokens to functional roles. The preferred tier for custom UI. Accessed as `var(--color-background-interactive-default)` or `var(--color-text-error)`. They change between dark and light themes.
 - **Tier 3, Component Tokens:** scoped to individual components. They may change across releases. Accessed as `var(--button-color-background-default)` or `var(--table-row-color-background-hover)`. They follow their parent System Token references automatically.
 
-The **Token Naming Convention** follows up to nine levels: `[group]-[component]-[element]-[category]-[property]-[concept]-[variant]-[state]-[scale]`. Not every token uses every level.
+The **Token Naming Convention** follows up to nine levels. The levels run `[group]-[component]-[element]-[category]-[property]-[concept]-[variant]-[state]-[scale]`. Not every token uses every level.
 
 ### Color System — Reference Palettes
 
@@ -202,7 +202,7 @@ The Status System is the most critical pattern in the design system. It uses a *
 
 Dark theme status colors (pass WCAG AA on dark backgrounds without borders): Critical `#ff3838` (255, 56, 56) `--color-status-critical` · Serious `#ffb302` (255, 179, 2) `--color-status-serious` · Caution `#fce83a` (252, 232, 58) `--color-status-caution` · Normal `#56f000` (86, 240, 0) `--color-status-normal` · Standby `#2dccff` (45, 204, 255) `--color-status-standby` · Off `#a4abb6` (164, 171, 182) `--color-status-off`.
 
-Light theme status (fill and required border; fills alone fail WCAG AA, so the darker border is mandatory), tokens `--status-symbol-color-fill-{level}` and `--status-symbol-color-border-{level}`: Critical `#ff2a04` / `#661102` · Serious `#ffaf3d` / `#664618` · Caution `#fad800` / `#645600` · Normal `#00e200` / `#005a00` · Standby `#64d9ff` / `#285766` · Off `#7b8089` / `#3c3e42`.
+Light theme status takes a fill and a required border. Fills alone fail WCAG AA, so the darker border is mandatory. The tokens are `--status-symbol-color-fill-{level}` and `--status-symbol-color-border-{level}`: Critical `#ff2a04` / `#661102` · Serious `#ffaf3d` / `#664618` · Caution `#fad800` / `#645600` · Normal `#00e200` / `#005a00` · Standby `#64d9ff` / `#285766` · Off `#7b8089` / `#3c3e42`.
 
 Status System rules:
 
@@ -371,7 +371,7 @@ Bold Venture targets **Tier 3** for all character system tooling and **Tier 2** 
 
 ### Theming Architecture
 
-The Dark Theme is the default for all Bold Venture applications; all properties resolve to dark values when no theme class is applied. The Light Theme activates with the `.light-theme` class on a wrapping element, which overrides System and Component Tokens by CSS specificity. Reference Tokens stay constant across themes. The Global Status Bar stays dark in either theme. The cascade: Reference Tokens constant; System Tokens change between themes; Component Tokens follow their parent System Token references. A rebrand replaces the Reference palette, and the token pipeline (Style Dictionary) regenerates all output formats.
+The Dark Theme is the default for all Bold Venture applications. All properties resolve to dark values when no theme class applies. The Light Theme activates with the `.light-theme` class on a wrapping element. That class overrides System and Component Tokens by CSS specificity. Reference Tokens stay constant across themes. The Global Status Bar stays dark in either theme. The cascade: Reference Tokens constant; System Tokens change between themes; Component Tokens follow their parent System Token references. A rebrand replaces the Reference palette, and the token pipeline (Style Dictionary) regenerates all output formats.
 
 ### Naming Convention — Astro to Bold Venture Translation
 
@@ -436,7 +436,7 @@ The **System Explorer** (Phase 3 deliverable of the character systems pipeline) 
 - The application background uses `--color-background-base-default` (#101923).
 - Navigation tabs use `--tab-color-text-default` (#4dacff). The active tab uses `--tab-color-text-selected` (#ffffff) with a 4px bottom border in `--tab-border-color-selected` (#4dacff).
 - Layer cards use `--color-background-surface-default` (#1b2d3e) with `--color-background-surface-hover` (#1c3851) on hover.
-- Status flags use the status colors: ACTIVE flags show `--color-status-critical` (#ff3838), PENDING flags show `--color-status-serious` (#ffb302), FIRED_PRE_STORY flags show `--color-status-off` (#a4abb6).
+- Status flags use the status colors. ACTIVE flags show `--color-status-critical` (#ff3838). PENDING flags show `--color-status-serious` (#ffb302). FIRED_PRE_STORY flags show `--color-status-off` (#a4abb6).
 - A derived statistic above its expected range (Truth Exposure Index above 60) shows `--color-status-serious` (#ffb302) with a caution indicator.
 - A derived statistic below zero (Stress Threshold below zero) shows `--color-status-critical` (#ff3838) with a critical indicator.
 
@@ -448,5 +448,5 @@ The **Database Editor** (Phase 4 deliverable) applies the system to a read-write
 - The mode toggle uses the secondary button style with `--button-color-text-secondary-default` (#4dacff).
 - In edit mode, inputs activate with `--input-color-background` (#101923) and `--input-color-border-default` (#2b659b).
 - A persistent indicator in the Global Status Bar changes to `--color-status-caution` (#fce83a) to show the editable state.
-- Form validation is inline. A field that breaks a scale class constraint (an odd number where the variable needs even values) shows `--input-color-border-invalid` (#ff3838) and red error text with the constraint and the nearest valid value.
+- Form validation is inline. A field that breaks a scale class constraint (an odd number where the variable needs even values) shows `--input-color-border-invalid` (#ff3838). It also shows red error text with the constraint and the nearest valid value.
 - The point budget tracker in the bottom panel uses `--progress-color-inner` (#4dacff) and shifts to `--color-status-serious` (#ffb302) above 90% utilization.

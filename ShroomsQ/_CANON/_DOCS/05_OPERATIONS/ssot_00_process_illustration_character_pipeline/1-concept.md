@@ -28,11 +28,11 @@ Flows A, B, and C run in order for each new Tier 3 character. Flow D runs repeat
 
 ## Gates stop bad data early
 
-Each flow has hard gates. A designer never extracts from a draft storyform. A red source-verification result blocks the slice. A value that fails a check sends the designer upstream. The rule across the flows is the same: derived statistics and flags are diagnostic, so a wrong result means wrong inputs, never a wrong flag.
+Each flow has hard gates. A designer never extracts from a draft storyform. A red source-verification result blocks the slice. A value that fails a check sends the designer upstream. The rule across the flows is the same: derived statistics and flags are diagnostic. A wrong result means wrong inputs, never a wrong flag.
 
 ## A revised storyform re-enters the flows
 
-A revised storyform is a new version, not an edit. The cascade re-runs flows A and B, then parts of C, then checks each state diff against the new base record.
+A revised storyform is a new version, not an edit. The cascade re-runs flows A and B, then parts of C. It then checks each state diff against the new base record.
 
 ## Field modules attach after the base record
 
@@ -42,4 +42,4 @@ For every component, read the [reference](2-reference.md). For the tasks, read t
 
 ## The long read
 
-Tier matters. Tier 3 characters use the ingest forms. Tier 2 and Tier 1 characters do not: a Tier 2 character gets an element signature and relational roles from the integration protocol, plus a partial chart, and the Step 1 gate checks what the tier requires. The source ties each flow to a doc module: A to the Dramatica ingest template and integration protocol, B to the DAI and astrology ingest template, C to the Step 1 source verification protocol, and D to the character state architecture. The page holds Mermaid diagrams for Obsidian; this documentation set restates each as steps in the reference.
+Tier matters. Tier 3 characters use the ingest forms. Tier 2 and Tier 1 characters do not. A Tier 2 character gets an element signature and relational roles from the integration protocol, plus a partial chart. The Step 1 gate checks what the tier requires. The source ties each flow to a doc module. It ties A to the Dramatica ingest template and integration protocol, and B to the DAI and astrology ingest template. It ties C to the Step 1 source verification protocol, and D to the character state architecture. The page holds Mermaid diagrams for Obsidian; this documentation set restates each as steps in the reference.

@@ -58,12 +58,12 @@ The reviewer checks facts, then words, then reads aloud. A ruled page is never e
 
 ## Replies and names follow the same law
 
-The reply format lives in SOP §7. This guide only locates its rules. The naming rulings apply to every document, this one included: the plain register, the Command format, clickable file links, Touchstone, and the Command.
+The reply format lives in SOP §7. This guide only locates its rules. The naming rulings apply to every document, this one included. They are the plain register, the Command format, clickable file links, Touchstone, and the Command.
 
 ## The long read
 
 Chief locked each documentation rule by teach-back between 2026-09-30 and 2026-10-03. The record is the DOC-SOP. Where the older guides 06.2a and 06.2b disagree with the core, the core wins. All five merge calls were ruled on 2026-10-04 and now live in those two guides.
 
-See the [reference](2-reference.md) for each rule, the [how-to](3-how-to.md) for tasks, and the [tutorial](4-tutorial.md) for a worked page.
+The [reference](2-reference.md) gives each rule. The [how-to](3-how-to.md) covers tasks. The [tutorial](4-tutorial.md) walks a worked page.
 
 Source: `ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2_documents_style.md`.

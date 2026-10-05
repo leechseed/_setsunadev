@@ -16,13 +16,13 @@ source_version: "1.3.2"
 
 ## The guide asks one question
 
-06.1 asks what must be true of a page of prose, in any IP, before anyone judges it on its own merits. It is a floor. It is not a voice.
+06.1 asks what must be true of a page of prose, in any IP. The answer comes before anyone judges the page on its own merits. It is a floor. It is not a voice.
 
 An IP is one story line in the universe: OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, and every later one. Each IP answers the telling questions in its own Telling Profile. The guide sits under those answers.
 
 ## The guide borrows its authority
 
-The guide invents no house voice. It draws on five rulings already made: the texture system's discourse layers, Modern Poetics, the medium grammars, the Touchstones register, and the genre system. Every rule cites its source. Where canon is silent, the guide writes a question marked OPEN with one recommendation.
+The guide invents no house voice. It draws on five rulings already made. They are the texture system's discourse layers, Modern Poetics, the medium grammars, the Touchstones register, and the genre system. Every rule cites its source. Where canon is silent, the guide writes a question marked OPEN with one recommendation.
 
 ## A ruled profile beats the default
 

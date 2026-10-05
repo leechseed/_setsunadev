@@ -84,7 +84,7 @@ The tracking system started as BOLO 90 on 2026-09-29. Chief asked whether fabula
 
 The grid took "bar", not "measure". That was Chief's pick over the recommendation. Ticks are counted in order, with no fixed number per beat.
 
-The time code gained a sequence segment in 0.2.0 after the field trial showed a two-grammar gap. Cables gained a `provisional` orphan value for the case where both ends exist narratively but a time code is still unset.
+The time code gained a sequence segment in 0.2.0 after the field trial showed a two-grammar gap. Cables gained a `provisional` orphan value. It covers the case where both ends exist narratively but a time code is still unset.
 
 Version 0.3.0 moved the audience trust ledger here from the character system. Version 1.0.0 closed the method gaps: theme and trope hooks, tempo and meter shapes, and the ordering rule.
 

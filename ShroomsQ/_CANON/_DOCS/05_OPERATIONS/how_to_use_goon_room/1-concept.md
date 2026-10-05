@@ -24,7 +24,7 @@ The source tells the writer not to worry about organization, cleanup, structure,
 
 ## Tags do the sorting later
 
-Freedom needs one safeguard, or the signal drowns. The writer tags as the work goes, and the tag marks what the passage may become: canon, a method update, a story update, a test, or a keeper.
+Freedom needs one safeguard, or the signal drowns. The writer tags as the work goes. The tag marks what the passage may become: canon, a method update, a story update, a test, or a keeper.
 
 The weekly review reads those tags. The writer searches for `#canon-ready`, moves those passages to `_STAGED/`, and eventually promotes them to `_CANON/`. The mess stays in the Goon Room, and only tagged signal travels on.
 
@@ -32,7 +32,7 @@ The weekly review reads those tags. The writer searches for `#canon-ready`, move
 
 The source names two things to focus on: capturing ideas, and tagging for later retrieval. Everything else waits. The dated file name gives each session one findable home.
 
-See the [reference](2-reference.md) for every field and tag, the [how-to](3-how-to.md) for the tasks, and the [tutorial](4-tutorial.md) for a first session.
+The [reference](2-reference.md) lists every field and tag. The [how-to](3-how-to.md) covers the tasks. The [tutorial](4-tutorial.md) walks a first session.
 
 ## The long read
 

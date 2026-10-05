@@ -25,7 +25,7 @@ The Command's systems cover people (02), places (03), plot (04), theme (07) and 
 
 ## THE DEFINITION
 
-Worldbuilding is the work of defining the shared things of a story's world (groups, styles, customs, tools, beliefs) and checking that they fit together with the places, people and events other systems hold. Cited definitions: BVX.0067, NEW-ultimate-gm, NEW-anderson.
+Worldbuilding is the work of defining the shared things of a story's world (groups, styles, customs, tools, beliefs). It also checks that they fit together with the places, people and events other systems hold. Cited definitions: BVX.0067, NEW-ultimate-gm, NEW-anderson.
 
 ### What this system owns
 
@@ -85,7 +85,7 @@ System 09 is a system because of the catalog. Without it, 09 would be a lens onl
 
 Three Mermaid diagrams in the source.
 
-- **Diagram 1, the whole system on one screen:** a mindmap with root 09 WORLDBUILDING. Branches: Definition (infrastructures), Catalog (twelve type families), Lens (coherence tests), View (the world view; filters era, place, group, type), Boundary (thin by default, Kennedy counter-voice).
+- **Diagram 1, the whole system on one screen:** a mindmap with root 09 WORLDBUILDING. Branches: Definition (infrastructures), Catalog (twelve type families), Lens (coherence tests). Next comes View (the world view; filters era, place, group, type). Last comes Boundary (thin by default, Kennedy counter-voice).
 - **Diagram 2, the owner map:** a flowchart that routes a world fact. About one place goes to 03. One person goes to 02. A change over time goes to 08 (story points and checkpoints). An event or its telling goes to 04. The story's argument goes to 07. Anything else goes to the 09 catalog.
 - **Diagram 3, the compile flow:** 02, 03, 04, 08, the catalog and the trope layer feed a read-only compiler. The compiler runs the coherence tests, then writes the world view. Edits happen at the owning file, not in the view.
 
@@ -106,7 +106,7 @@ An infrastructure is an area a complete world must answer for. Ten merge nine so
 | I9 | Nature | Flora, fauna, ecosystem, non-human beings | 09 catalog (kinds); 03 S1 (where) |
 | I10 | World rules | Magic, physics, causality | 09 catalog (rules) |
 
-- **Sourcing:** Wolf's list (BVX.0562) is not in the shelf extraction. OPEN 8 closed it from BVX.0562's distill: Wolf's eight (maps, timelines, genealogies, nature, culture, language, mythology, philosophy) all land in the spine.
+- **Sourcing:** Wolf's list (BVX.0562) is not in the shelf extraction. OPEN 8 closed it from BVX.0562's distill. Wolf's eight (maps, timelines, genealogies, nature, culture, language, mythology, philosophy) all land in the spine.
 - **Departure dial:** how far each infrastructure departs from our world: nominal, cultural, natural, ontological (BVX.0562). Scored on nine axes as same, augmented or different (BVX.0630).
 - **Scale ladder:** world-economy, nation-state, locality (BVX.1161). The dial says which rung pressure starts from.
 - **Not separate infrastructures:** Stars and Planets go to 03 S1. Urban Fantasy and Paranormal Romance is a genre choice, so it goes to the departure dial. Audio-Visual maps to 03 S3 SENSORIUM. Game Mechanics is dropped.
@@ -273,8 +273,8 @@ DCUS narration is marked phase 2. The catalog proved itself on DCUS: filled from
 
 - **Findings:** Tremor Cult was misfiled; its entry is retired. Quinn Bishop has no 02 node yet; the link check reports it owed by 02. Every era ends at M4 because canon casts DCUS for Movements 2 to 4.
 - **State ids:** `state:` reads `<kind>:<slug>`, with kind one of `place`, `group`, `belief`, `custom`, `tech`, `wardrobe`, `architecture`. A subject need not have story points yet.
-- **The lens, run 9/29:** script tests CT1, CT3, CT5, CT6, CT13 pass on the filled set; CT4 has no ruins yet; CT9 has no canon claims yet. Reader tests CT10, CT11, CT14, CT16 pass. CT2, CT7, CT8, CT12, CT15 stub. No fails.
-- **1.0 bar (SOP §5):** Shape, Shelf (27 books), Proof (DCUS), Ruled (OPEN 1 to 9), Wired (02, 03, 04, 08, tropes), Store (7 filled): all met.
+- **The lens, run 9/29:** script tests CT1, CT3, CT5, CT6, CT13 pass on the filled set. CT4 has no ruins yet. CT9 has no canon claims yet. Reader tests CT10, CT11, CT14, CT16 pass. CT2, CT7, CT8, CT12, CT15 stub. No fails.
+- **1.0 bar (SOP §5):** Shape, Shelf (27 books), Proof (DCUS), Ruled (OPEN 1 to 9). Wired (02, 03, 04, 08, tropes) and Store (7 filled) follow. The system meets all of them.
 
 ## WORLDBUILDING × LIBRARY
 

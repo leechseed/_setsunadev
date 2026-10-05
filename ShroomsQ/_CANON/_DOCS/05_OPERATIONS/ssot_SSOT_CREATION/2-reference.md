@@ -45,7 +45,7 @@ The writer generates the Obsidian-compliant YAML block. The standardized templat
 
 ### Phase 4: The Manual UI Kickstart
 
-If the YAML shows as a code block instead of the Properties UI, the writer runs the Kickstart Protocol (next component).
+If the YAML shows as a code block instead of the Properties UI, the writer runs the Kickstart Protocol. The Kickstart Protocol is the next component.
 
 ### Phase 5: Naming and Storage
 
@@ -75,4 +75,4 @@ The protocol applies when YAML pasted from an external source (AI or clipboard) 
 | 🎯 Authoritative | Story/Project content |
 | ⚙️ Operations | Workflow/AI Instructions |
 
-The source also carries a closing "Pro-Tip" (use the Templater plugin to automate the kickstart) and a three-row version history: 1.0.0 (initial Marine Corps standard), 1.7.0 (metadata troubleshooting), 1.8.0 (Manual UI Kickstart).
+The source also carries a closing "Pro-Tip" (use the Templater plugin to automate the kickstart). It also carries a three-row version history. The first row is 1.0.0 (initial Marine Corps standard). The next is 1.7.0 (metadata troubleshooting). The last is 1.8.0 (Manual UI Kickstart).

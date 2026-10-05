@@ -10,15 +10,15 @@ source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_template_prompt_for_summar
 source_version: 1.0.0
 ---
 
-**Who it's for:** a writer or agent looking up a rule, add-on, section, pass, or usage rule of the book-summary template · **What it does:** lists every component of the Template Prompt for Summarizing Novels and Books · **Type:** reference
+**Who it's for:** a writer or agent. They look up a rule, add-on, section, pass, or usage rule of the book-summary template · **What it does:** lists every component of the Template Prompt for Summarizing Novels and Books · **Type:** reference
 
 # Template Prompt for Summarizing Novels and Books: reference
 
-The source has type `ssot_05_operations`, version 1.0.0, tier operations, last updated 2026-03-03. Status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0"). The body header names it a Single Source of Truth with scope "Novel & Book Summarization — All Formats," derived from batch extraction across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
+The source has type `ssot_05_operations`, version 1.0.0, tier operations, last updated 2026-03-03. Status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0"). The body header names it a Single Source of Truth with scope "Novel & Book Summarization — All Formats," derived from batch extraction. The extraction ran across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
 
 ## 1. Purpose & Scope
 
-The document consolidates every summarization prompt pattern in the vault into one template. It replaces the scattered "professional summarizer" prompt, the "Understanding" report template instructions, the wicked_figures process order, and the MCDP doctrinal summary spec. It covers novels, screenwriting craft books, narratology theory texts, literary criticism, workbooks, and any long-form prose requiring structured extraction.
+The document consolidates every summarization prompt pattern in the vault into one template. It replaces the scattered "professional summarizer" prompt and the "Understanding" report template instructions. It also replaces the wicked_figures process order and the MCDP doctrinal summary spec. It covers novels, screenwriting craft books, narratology theory texts, literary criticism, workbooks, and any long-form prose requiring structured extraction.
 
 ## 2. Universal System Prompt
 
@@ -44,20 +44,20 @@ The writer appends any add-on to the Universal System Prompt depending on the ty
 
 ### 3A. Narratological Deep Dive
 
-Use for narratology theory, literary criticism, or composition craft books (the source names Bal, McKee, Eagleton, Cron, Gavins). For each concept, model, or framework the summarizer gives a short definition (1-2 sentences), an explanation of mechanics and internal logic, its relevance to a writer, and the lineage if the author builds on prior theorists. Each model uses the format: `### Title: **[Author's] [Framework/Model Name]**` with Definition, Explanation, Relevance to Writer, and Lineage.
+Use for narratology theory, literary criticism, or composition craft books (the source names Bal, McKee, Eagleton, Cron, Gavins). For each concept, model, or framework the summarizer gives a short definition (1-2 sentences). It also gives an explanation of mechanics and internal logic. It adds its relevance to a writer, and the lineage if the author builds on prior theorists. Each model uses the format: `### Title: **[Author's] [Framework/Model Name]**` with Definition, Explanation, Relevance to Writer, and Lineage.
 
 ### 3B. Dramatica Framework Extension
 
 Use when the summary feeds Dramatica methodology development (ASTRO7EX throughline reports, storyforming, storyweaving). After the standard summary the summarizer appends:
 
-- **Dramatica Summary:** one continuous paragraph, no bullets, mapping the material to the Overall Story, Main Character, Impact Character, and Relationship Story throughlines. If the material does not map to all four, the summary states which apply and why.
-- **Dramatica-to-Narrative Translation Notes:** for each applicable element (Concern, Issue, Problem, Solution, Symptom, Response, Benchmark, Signpost), the note says whether the material illuminates, contradicts, or extends the current storyform.
+- **Dramatica Summary:** one continuous paragraph, no bullets. It maps the material to the Overall Story, Main Character, Impact Character, and Relationship Story throughlines. If the material does not map to all four, the summary states which apply and why.
+- **Dramatica-to-Narrative Translation Notes:** for each applicable element (Concern, Issue, Problem, Solution, Symptom, Response, Benchmark, Signpost). The note says whether the material illuminates, contradicts, or extends the current storyform.
 
 ### 3C. Knowledgebase Entry Formatter
 
 Use when the output goes directly into an Obsidian vault, Hugo build, or similar system.
 
-- The output carries YAML front matter with `id` (auto-generate or blank), `title` ("[Book Title] — Summary"), `author`, `type: summary`, `source_type` (book, paper, article, or workbook), `tags`, `status: draft`, and `updated` (YYYY-MM-DD).
+- The output carries YAML front matter with `id` (auto-generate or blank), `title` ("[Book Title] — Summary"), and `author`. The front matter also holds `type: summary`, `source_type` (book, paper, article, or workbook), `tags`, `status: draft`, and `updated` (YYYY-MM-DD).
 - Internal headers use `##` or `###`.
 - Concepts that cross-reference other vault entries use `[[wikilinks]]`, with suggested link targets in brackets.
 - The output ends with a `## Related Entries` section of 3-5 suggested bidirectional links.
@@ -102,15 +102,15 @@ The end-to-end sequence for a new book:
 2. **Pass 2 — Template Overlay:** run the same text against the Universal System Prompt plus the relevant add-on(s). The output is an enriched summary.
 3. **Pass 3 — Merge & Deduplicate:** combine Pass 1 and Pass 2, remove redundancy, and match the Output Structure Specification exactly.
 4. **Pass 4 — Elaboration** (optional): run the merged document with the directive "Fully elaborate, contextualize, and provide additional supporting information for the following text."
-5. **Pass 5 — Split** (optional): if the output holds multiple discrete models or propositions, split them into individual `.md` files named `[author_last]_[model_short_name].md`.
+5. **Pass 5 — Split** (optional): if the output holds multiple discrete models or propositions, split them into individual `.md` files. Name each `[author_last]_[model_short_name].md`.
 
 ## 6. Reference Sources Directive
 
-When a task needs cross-referencing, the writer appends a "Reference Sources" block to the system prompt and edits the list per task. It tells the summarizer to use the listed texts and authors as analytical lenses to reinforce, contextualize, or challenge claims, with bulleted examples. The source's list: Robert McKee (*Story*); Harold Bloom (*Themes in American Literature*); Joseph Campbell (studies of myth); Jeff Lyons (*Rapid Story Development*, *Anatomy of a Premise Line*); Noah Lukeman (*The First Five Pages*); Les Edgerton (*Hooked*); Donald Maass (*The Emotional Craft of Fiction*); Martha Alderson and Jordan Rosenfeld (*Writing Deep Scenes*); Karl Iglesias (*Writing for Emotional Impact*); late 2000s sci-fi anime archetypes and tropes; Narrative Astrology (Natal Chart, Transits, Progressions).
+When a task needs cross-referencing, the writer appends a "Reference Sources" block to the system prompt. The writer edits the list per task. It tells the summarizer to use the listed texts and authors as analytical lenses to reinforce, contextualize, or challenge claims. It gives bulleted examples. The source's list: Robert McKee (*Story*); Harold Bloom (*Themes in American Literature*); Joseph Campbell (studies of myth). It continues with Jeff Lyons (*Rapid Story Development*, *Anatomy of a Premise Line*); Noah Lukeman (*The First Five Pages*). It adds Les Edgerton (*Hooked*); Donald Maass (*The Emotional Craft of Fiction*); Martha Alderson and Jordan Rosenfeld (*Writing Deep Scenes*). It also lists Karl Iglesias (*Writing for Emotional Impact*) and late 2000s sci-fi anime archetypes and tropes. Its last entry is Narrative Astrology (Natal Chart, Transits, Progressions).
 
 ## 7. Usage Rules
 
-1. **This document is the SSOT.** Nobody creates new summarization prompts elsewhere in the vault; a new pattern is added as a modular add-on in section 3.
+1. **This document is the SSOT.** Nobody creates new summarization prompts elsewhere in the vault. The writer adds a new pattern as a modular add-on in section 3.
 2. **No commentary in output.** No preamble, sign-off, or meta-discussion.
 3. **Preserve numbering and structure.** If the source has chapters, parts, or numbered sections, the summary mirrors them.
 4. **Paraphrase doctrinally.** No long verbatim quotes; paraphrase with precision and fidelity.

@@ -10,11 +10,11 @@ source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_standards_la
 source_version: 1.0.0
 ---
 
-**Who it's for:** an agent or Chief looking up a rung, the deciding rule, the tag, a filed document, or an index row · **What it does:** lists every component of the Command Ladder · **Type:** reference
+**Who it's for:** an agent or Chief. They look up a rung, the deciding rule, the tag, a filed document, or an index row · **What it does:** lists every component of the Command Ladder · **Type:** reference
 
 # Command Ladder: reference
 
-The source has type `ssot_procedure`, category operations, frontmatter version 1.0.0 (stamped 2026-10-04, BOLO 100, Chief: "rec"), last updated 2026-10-04. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
+The source has type `ssot_procedure`, category operations, frontmatter version 1.0.0 (stamped 2026-10-04, BOLO 100, Chief: "rec"). Its last update is 2026-10-04. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
 
 > **OPEN:** the version history ends at 0.2.2 (2026-10-04), while the frontmatter says 1.0.0.
 
@@ -27,7 +27,7 @@ The source has type `ssot_procedure`, category operations, frontmatter version 1
 | **standard** | NASA-STD | The measurable "shall" for a class of product or process. | yes | the WATCH register · the variable registry · the writing guide |
 | **handbook** | NASA-HDBK | Guidance. "Should." Forbids nothing. | no | the MCDP one-sheets · the CK3 IA study · the explainers · the DOPE SHEET pattern |
 
-**Spec** is a tag, not a rung: one document saying what one specific product must be (DoD's MIL-SPEC). In the Command a spec is a node or a charter: the BOLO 24 charter, every canon node's invariants (Touchstones), a persona sheet.
+**Spec** is a tag, not a rung: one document saying what one specific product must be (DoD's MIL-SPEC). In the Command a spec is a node or a charter. Examples are the BOLO 24 charter, every canon node's invariants (Touchstones), and a persona sheet.
 
 ## The rule that decides the rung
 
@@ -67,7 +67,7 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 
 ## The network · flat index (phase 6, 2026-09-15)
 
-The index links all 26 filed Command documents to the level or project they govern, to the filed documents they depend on, and to their outside parents in the standards register. Read Table 1 document by document, Table 2 body by body, Table 3 level by level. A browsable page comes later, once the count earns it.
+The index links all 26 filed Command documents to the level or project they govern. It also links them to the filed documents they depend on, and to their outside parents in the standards register. Read Table 1 document by document, Table 2 body by body, Table 3 level by level. A browsable page comes later, once the count earns it.
 
 ### Table 1 · By document
 
@@ -117,11 +117,11 @@ The index links all 26 filed Command documents to the level or project they gove
 **Gaps the index shows** (the source's list):
 
 - `WATCH-REGISTER.md` cites both MIL-STD-1472H and FAA HF-STD-001B, but only MIL-STD-1472H is a register row.
-- Five of the eleven MCDP one-sheets (MIL.02, MIL.04, MIL.05, MIL.06, MIL.10) are named by no other filed document's frontmatter. Only MIL.01, MIL.03, MIL.07, MIL.08, MIL.09, and MIL.11 are wired into the project flow.
+- No other filed document's frontmatter names five of the eleven MCDP one-sheets. They are MIL.02, MIL.04, MIL.05, MIL.06, and MIL.10. Only MIL.01, MIL.03, MIL.07, MIL.08, MIL.09, and MIL.11 are wired into the project flow.
 - BLACK and DARKROOM have no governing document among the 26.
 - Twelve of the 26 documents carry no outside parent.
-- The Command's generic handbook rung is empty; handbooks sit only at the project level or govern the unbuilt MCDP Doctrine Browser.
-- Trash Land and ASTRO7EX have no named standards-body entity yet; both spec nodes record the body as a working title.
+- The Command's generic handbook rung is empty. Handbooks sit only at the project level or govern the unbuilt MCDP Doctrine Browser.
+- Trash Land and ASTRO7EX have no named standards-body entity yet. Both spec nodes record the body as a working title.
 
 ## Governance
 

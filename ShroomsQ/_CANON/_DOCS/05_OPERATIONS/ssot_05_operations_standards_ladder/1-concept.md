@@ -22,7 +22,7 @@ NASA tiers its directives in four levels, and the Command borrows them in its ow
 
 ## A spec is a tag, not a fifth rung
 
-DoD's spec idea fits one document saying what one specific product must be. The Command keeps it as a tag on nodes and charters, such as the BOLO 24 charter or a persona sheet. A fifth rung would mix a kind of document with a kind of binding.
+DoD's spec idea fits one document saying what one specific product must be. The Command keeps it as a tag on nodes and charters. Examples are the BOLO 24 charter and a persona sheet. A fifth rung would mix a kind of document with a kind of binding.
 
 ## One rule decides the rung
 
@@ -34,10 +34,10 @@ The ladder keeps policy small: DOCTRINE 0 and nothing else until something earns
 
 ## The tag makes the rung visible
 
-Every document carries one frontmatter line, first after the opening fence. The filing table records which documents carry it, and a flat index shows where documents govern, depend, and cite outside bodies. The index also exposes the gaps: empty rungs at several levels.
+Every document carries one frontmatter line, first after the opening fence. The filing table records which documents carry it. A flat index shows where documents govern, depend, and cite outside bodies. The index also exposes the gaps: empty rungs at several levels.
 
 For every component, read the [reference](2-reference.md). For the tasks, read the [how-to](3-how-to.md). For a worked filing, read the [tutorial](4-tutorial.md).
 
 ## The long read
 
-The ladder is itself a procedure. DOCTRINE 0 governs it: it is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth, and a document found without one is filed at the next sit rep. The source's frontmatter stamps 1.0.0 on 2026-10-04 (BOLO 100, Chief: "rec"), while its version history stops at 0.2.2. The index also names its own findings: BLACK and DARKROOM have no governing document, and twelve of the twenty-six filed documents have no outside parent.
+The ladder is itself a procedure. DOCTRINE 0 governs it: it is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth. The next sit rep files any document found without one. The source's frontmatter stamps 1.0.0 on 2026-10-04 (BOLO 100, Chief: "rec"). Its version history stops at 0.2.2. The index also names its own findings. BLACK and DARKROOM have no governing document, and twelve of the twenty-six filed documents have no outside parent.

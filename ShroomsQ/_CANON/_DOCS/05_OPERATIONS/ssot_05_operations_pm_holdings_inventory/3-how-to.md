@@ -16,8 +16,8 @@ source_version: 1.0.0
 
 ## Find an existing instrument before building one
 
-1. Name the instrument you need: a charter, assumption log, decision ledger, task register, portfolio board, gate sheet, document container, or style guide.
-2. Open the reference page and find the matching section: PMBOK material (1), Marine doctrine (2), answer-first (3), templates and gates (4), or the Ultrasin registry (5).
+1. Name the instrument you need. Pick from a charter, assumption log, decision ledger, task register, portfolio board, gate sheet, document container, or style guide.
+2. Open the reference page and find the matching section. The sections are PMBOK material (1), Marine doctrine (2), answer-first (3), templates and gates (4), or the Ultrasin registry (5).
 3. Read the "Reuse" column for the row.
 4. Open the path.
 

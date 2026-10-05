@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # Summarize your first book
 
-You will run the template on one book from the source's own list of lenses: a screenwriting craft book such as McKee's *Story*. You finish with a merged summary in the canonical order.
+You will run the template on one book from the source's own list of lenses. The book is a screenwriting craft book such as McKee's *Story*. You finish with a merged summary in the canonical order.
 
 ## Step 1. Build the prompt
 

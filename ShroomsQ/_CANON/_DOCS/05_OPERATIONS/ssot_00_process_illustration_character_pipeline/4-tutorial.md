@@ -10,7 +10,7 @@ source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_00_process_illustration_ch
 source_version: 1.0.1
 ---
 
-**Who it's for:** a narrative designer learning the pipeline by following one character from storyform to a first checkpoint · **What it does:** walks the source's own checks and examples from the Flow A gate through Flow C stats to a Flow D diff · **Type:** tutorial
+**Who it's for:** a narrative designer learning the pipeline by following one character from storyform to a first checkpoint · **What it does:** walks the source's own checks and examples. The walk runs from the Flow A gate through Flow C stats to a Flow D diff · **Type:** tutorial
 
 # Follow one character through the pipeline
 
@@ -24,7 +24,7 @@ Open Dramatica and load the storyform. The status must read LOCKED. If it is a d
 
 ## Step 2. Fill the Dramatica Ingest (Flow A)
 
-Copy the blank form. Fill the header, then Section 1 from the Story Dynamics Report, Section 4 from the MC Theme Report, and Sections 3 and 2 from the Character Report. Fill Section 6 because every character does. Log each report in Section 8. Derive at least one Touchstone for Section 9. Generate Section 10 last. Run the Section 11 checklist.
+Copy the blank form. Fill the header. Then fill Section 1 from the Story Dynamics Report and Section 4 from the MC Theme Report. Then fill Sections 3 and 2 from the Character Report. Fill Section 6 because every character does. Log each report in Section 8. Derive at least one Touchstone for Section 9. Generate Section 10 last. Run the Section 11 checklist.
 
 ## Step 3. Build the chart (Flow B)
 

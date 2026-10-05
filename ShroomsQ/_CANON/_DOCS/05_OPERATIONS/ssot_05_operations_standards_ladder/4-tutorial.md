@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # File one document: the Development Standard
 
-You will classify a document the way the ladder's first filing pass did, using a document the source files: the Development Standard. You finish with the rung, the tag line, and the table row.
+You will classify a document the way the ladder's first filing pass did. You will use a document the source files: the Development Standard. You finish with the rung, the tag line, and the table row.
 
 ## Step 1. Run the rule in order
 

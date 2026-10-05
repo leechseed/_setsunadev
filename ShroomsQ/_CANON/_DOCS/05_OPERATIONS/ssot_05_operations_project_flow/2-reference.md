@@ -10,7 +10,7 @@ source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_project_flow
 source_version: 0.1.1
 ---
 
-**Who it's for:** an agent or Chief looking up a phase, brief section, gate rule, instrument, or size in the project flow · **What it does:** lists every component of the Project Flow · **Type:** reference
+**Who it's for:** an agent or Chief. They look up a phase, brief section, gate rule, instrument, or size in the project flow · **What it does:** lists every component of the Project Flow · **Type:** reference
 
 # Project Flow: reference
 
@@ -20,10 +20,10 @@ The source has type `ssot_methodology`, category operations, version 0.1.1, last
 
 ### A · The shape: campaign, operation, engagement
 
-MCDP 1-2 supplies the levels: **campaign = project, operation = session, engagement = task.** Every project carries one **end state** (in policy terms: what the finished thing changes in the world), one **intent** (the "in order to" that outlasts any task), and one declared **mode**:
+MCDP 1-2 supplies the levels: **campaign = project, operation = session, engagement = task**. Every project carries one **end state** (in policy terms: what the finished thing changes in the world). It carries one **intent** (the "in order to" that outlasts any task). It also carries one declared **mode**:
 
 - **Annihilation:** finish the artifact outright; victory is simple and measurable; the build is the main effort.
-- **Erosion:** raise the value of the position over time until it yields; victory is defined by a threshold; the main effort may sit outside the build.
+- **Erosion:** raise the value of the position over time until it yields. A threshold defines victory. The main effort may sit outside the build.
 
 A project that declares neither end state, intent, nor mode has failed before it starts.
 
@@ -45,7 +45,7 @@ P0 and P1 are the commander's work and are not delegated. The AI partner facilit
 
 ### C · The brief
 
-A plan without four components is not a plan (MCDP 5): **desired outcome with intent, actions, resources, a control process.** The brief carries those four across eleven sections. It fits one page for a small project and three for a venture. It is written answer-first and passes the ten-second test (SOP §7).
+A plan without four components is not a plan (MCDP 5): **desired outcome with intent, actions, resources, a control process**. The brief carries those four across eleven sections. It fits one page for a small project and three for a venture. It is written answer-first and passes the ten-second test (SOP §7).
 
 | # | Section | Content | Source |
 |---|---|---|---|
@@ -66,14 +66,14 @@ A plan without four components is not a plan (MCDP 5): **desired outcome with in
 A gate is a decision, not a meeting. It happens when the phase event fires, fits one page, and takes under thirty minutes. Three doctrines meet in it:
 
 - **Attainability (MCDP 4):** sufficient support exists to start the next phase at an acceptable level of risk. The gate states it and names the risk posture.
-- **Ends-means reconciliation (MCDP 1-1):** when resources fall short, cut the end state or seek more; when the position is stronger than expected, expand. A gate that passes without touching either has not been run.
+- **Ends-means reconciliation (MCDP 1-1):** when resources fall short, cut the end state or seek more. When the position is stronger than expected, expand. A gate that passes without touching either has not been run.
 - **The greenlight checklist (PMBOK/DoD/studio gates):** entry criteria met · assumptions reviewed · risks named · value still present.
 
 The gate returns one of three words:
 
 - **GO:** the next phase opens, and resources commit inside its horizon.
 - **NO-GO:** the project is killed or parked with Oscar Mike, and the reason is logged.
-- **HOLD:** allowed only with the single blocking decision named, the decider named, and the date the hold converts to a call. An unnamed hold is the stall pattern.
+- **HOLD:** allowed only when it names the single blocking decision and the decider. It must also name the date the hold converts to a call. An unnamed hold is the stall pattern.
 
 ### E · The instruments
 
@@ -111,7 +111,7 @@ Ten cross-cutting principles, each derived from a source:
 3. **Answer first.** Every document readable in thirty seconds, five minutes, and in depth. (Pyramid Principle, ratified)
 4. **Vertical slice before scale.** No full commitment until one complete piece proves the approach. (studio pipelines, DoD TRL)
 5. **Living documentation.** STATE.md is the plan; a plan not updated after contact is a static document. (MCDP 5)
-6. **Launch with what is in hand.** The flow runs from the current repo and kit, or it is not the flow. (MCDP 3)
+6. **Launch with what is in hand.** The flow runs from the current repo and kit. Otherwise it is not the flow. (MCDP 3)
 7. **Detail only the current horizon.** Later phases carry intent and options. (MCDP 1-2, MCDP 5)
 8. **Tempo over heroics.** Simultaneous work, the next step queued, decentralized decisions inside the intent. (MCDP 1-2, MCDP 1-3)
 9. **Webs, not chains.** One income source, one tool, or one file everything depends on is a chain. Audit for a second path. (MCDP 4)
@@ -140,14 +140,14 @@ Seven steps:
 1. **P0 in one sitting.** Name the two or three PIRs. Scan the environment against them. Write the problem statement. Form the hypothesis. Seed the command narrative. Decide: project, BOLO, or nothing.
 2. **Write the brief (P1).** Use the blank below. The operator writes §1 personally. The partner drafts §3 to §9 from the holdings and the operator rules each. Declare the mode. Set milestones as events.
 3. **Gate 1.** Worth solving; decomposition complete. GO opens P2 with its resources.
-4. **Run sessions under the SOP.** Sit rep opens, how copy closes orders, boresight when spoken, BOLO capture the same turn, ENDEX closes with the cache note and the STATE update.
+4. **Run sessions under the SOP.** Sit rep opens, and how copy closes orders. Boresight runs when spoken, and BOLO capture runs the same turn. ENDEX closes with the cache note and the STATE update.
 5. **Gate on the event.** When the phase event fires, run the gate checklist. Record GO, NO-GO, or HOLD with its conversion date in the brief's decision ledger and in STATE.md.
 6. **AAR** weekly in P4 and P5, and at every gate. Three questions, recorded.
-7. **Close.** Exit criteria true, then the P6 AAR, then registries updated, the brief marked complete, and the project's cards swept from oscar-mike.
+7. **Close.** Confirm the exit criteria are true, then run the P6 AAR. Then update the registries, mark the brief complete, and sweep the project's cards from oscar-mike.
 
 ### The brief — blank
 
-The blank is a fenced template with these headings: `# BRIEF — [project] · size [S/M/L] · mode [ANNIHILATION/EROSION] · v0.1 · [date]`, then sections 1 End state and intent (End state, Intent), 2 Success criteria, 3 Scope (In, Out, Boundary rule), 4 Decomposition (workstream to work packages of one session or less), 5 Phases and gates (table M, Phase, Gate condition (event), Deliverables), 6 Sustainment line (Consumes, Runway, Attainable, Disruptions planned for: two), 7 Assumptions and risks (table A, Assumption, Category, Impact, Risk if false, Validation, Status), 8 Information line (Audiences, Narrative, Deny list, Measure), 9 Control process (Sit rep cadence, Decision points, Replan triggers), 10 Exit and termination (Complete when, Killed or parked when, Transition), 11 Authority and AI model (Commander: Chief, full. Partner: mission-type orders, 5-80-15), and a Decision ledger table (#, Decision, Blocking?, Ruled).
+The blank is a fenced template with these headings: `# BRIEF — [project] · size [S/M/L] · mode [ANNIHILATION/EROSION] · v0.1 · [date]`. The template then holds eleven sections. Section 1 is End state and intent (End state, Intent). Section 2 is Success criteria. Section 3 is Scope (In, Out, Boundary rule). Section 4 is Decomposition (workstream to work packages of one session or less). Section 5 is Phases and gates (table M, Phase, Gate condition (event), Deliverables). Section 6 is Sustainment line (Consumes, Runway, Attainable, Disruptions planned for: two). Section 7 is Assumptions and risks (table A, Assumption, Category, Impact, Risk if false, Validation, Status). Section 8 is Information line (Audiences, Narrative, Deny list, Measure). Section 9 is Control process (Sit rep cadence, Decision points, Replan triggers). Section 10 is Exit and termination (Complete when, Killed or parked when, Transition). Section 11 is Authority and AI model (Commander: Chief, full. Partner: mission-type orders, 5-80-15), and a Decision ledger table (#, Decision, Blocking?, Ruled).
 
 ### The gate — checklist
 
@@ -164,17 +164,17 @@ Its last line is `DECISION: GO / NO-GO / HOLD (blocker: ___ · decider: ___ · c
 
 ### The assumption — row
 
-The row format is `| A-00n | [statement believed true] | Business / Environmental / Process / Technical | §[brief sections] | [what breaks] | [how and when tested] | OPEN |`.
+The row format follows. `| A-00n | [statement believed true] | Business / Environmental / Process / Technical | §[brief sections] | [what breaks] | [how and when tested] | OPEN |`.
 
 ## Examples
 
 ### Example 1 · BVIPDS, retro-fitted (2026-03-19 charter)
 
-The BVIPDS charter is the flow's ancestor and passes as an **L-size, annihilation-mode** brief. Its M-001 to M-007 milestones are event gates keyed to artifacts. Its assumption log has twelve rows in the six-field format. The flow adds what it lacked: a declared mode, a sustainment line with runway, an information line, and a hold rule with a conversion date. The April stall on the character system was a HOLD with no conversion date; the flow forbids that state.
+The BVIPDS charter is the flow's ancestor and passes as an **L-size, annihilation-mode** brief. Its M-001 to M-007 milestones are event gates keyed to artifacts. Its assumption log has twelve rows in the six-field format. The flow adds what it lacked: a declared mode and a sustainment line with runway. It also adds an information line and a hold rule with a conversion date. The April stall on the character system was a HOLD with no conversion date; the flow forbids that state.
 
 ### Example 2 · BOLO 24, the studio launch (2026-09-03, first live instance)
 
-An **L-size** venture in two modes: **annihilation** for the build (the persona, the season beat sheet, the launch library shipped complete) and **erosion** for the climb (monthly revenue gates until the exit threshold). The brief lives in `_PRIVATE/` because it carries the monthly nut and persona internals. Its gates are rent-tied attainability decisions with conservative, on-target, and ideal values. Its information line is the persona's command narrative and deny list. Its open decisions sit in the brief's ledger, with the boresight hold recorded as a HOLD carrying a decider and a conversion date. Brief: `_PRIVATE/BOLO-24-charter.md`.
+An **L-size** venture runs in two modes. The first is **annihilation** for the build (the persona, the season beat sheet, the launch library shipped complete). The second is **erosion** for the climb (monthly revenue gates until the exit threshold). The brief lives in `_PRIVATE/` because it carries the monthly nut and persona internals. Its gates are rent-tied attainability decisions with conservative, on-target, and ideal values. Its information line is the persona's command narrative and deny list. Its open decisions sit in the brief's ledger. The ledger records the boresight hold as a HOLD carrying a decider and a conversion date. Brief: `_PRIVATE/BOLO-24-charter.md`.
 
 ### Example 3 · BOLO 26, the dictation dictionary (S-size)
 

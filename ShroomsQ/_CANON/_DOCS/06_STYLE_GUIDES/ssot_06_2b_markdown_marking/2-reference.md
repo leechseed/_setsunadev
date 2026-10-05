@@ -94,6 +94,6 @@ The harvest writes to `MIL.01.vocab.md`:
   - ↳ "Friction resists all action and saps energy."
 ```
 
-**Example 2: promotion.** The term `==commander's intent==` appears in MIL.01, MIL.08 and MIL.09 and receives its own note. In all three sheets the highlight becomes `[[commander's intent]]`. The register rows remain, now pointing at a note.
+**Example 2: promotion.** The term `==commander's intent==` appears in MIL.01, MIL.08 and MIL.09. It receives its own note. In all three sheets the highlight becomes `[[commander's intent]]`. The register rows remain, now pointing at a note.
 
 > **OPEN:** the source says "invariant" in Example 1. The Touchstone rename retired that word in prose; the source has not been updated.

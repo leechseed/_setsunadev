@@ -39,7 +39,7 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 4. Do Anna's pair, Circumstances versus Situation.
 5. Do the relationship pair, Suspicion versus Evidence.
 6. Compare with the reference's rails table. Your wording may differ; Chief handpicked the plain words.
-7. Read the four together. They should sum to the controlling idea: the world forecasts, Tori trusts her eyes, Anna wins as dealt, the rivalry settles whose account survives.
+7. Read the four together. They should sum to the controlling idea. The world forecasts, Tori trusts her eyes, Anna wins as dealt, and the rivalry settles whose account survives.
 
 ## Step 3: step the value scale
 

@@ -51,4 +51,4 @@ source_version: 0.1.2
 ## Check a rule was followed
 
 1. Find the rule in the audit hooks table.
-2. Look for its evidence in the place the table names (transcript, BOLO.md, the sheet's Log, STATE.md, or git log).
+2. Look for its evidence in the place the table names. The places are the transcript, BOLO.md, the sheet's Log, STATE.md, or git log.

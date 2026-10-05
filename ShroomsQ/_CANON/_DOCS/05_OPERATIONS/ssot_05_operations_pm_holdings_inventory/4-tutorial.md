@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # Trace the survey to the Project Flow
 
-You will repeat the move the inventory made on 2026-09-03: read the finding, pick the holdings, and arrive at the standard flow. You finish knowing where the Project Flow's parts came from.
+You will repeat the move the inventory made on 2026-09-03. You will read the finding, pick the holdings, and arrive at the standard flow. You finish knowing where the Project Flow's parts came from.
 
 ## Step 1. Read the finding
 
@@ -22,7 +22,7 @@ Open the reference page. The finding: the method is already written, and what is
 
 ## Step 2. Find the lifecycle
 
-Go to section 3. The first row is the Feb-2026 four-domains artifact. It holds a full-lifecycle doctrine: Phase 0 Problem Framing, 1 Concept and Intent, 2 Design and War-Gaming, 3 Vertical Slice, 4 Production, then close, with a decision gate at each boundary. The Reuse column says: this is the standard flow, already written.
+Go to section 3. The first row is the Feb-2026 four-domains artifact. It holds a full-lifecycle doctrine. Phases run 0 Problem Framing, 1 Concept and Intent, 2 Design and War-Gaming. Then 3 Vertical Slice, 4 Production, then close. A decision gate sits at each boundary. The Reuse column says: this is the standard flow, already written.
 
 ## Step 3. Find the instruments
 
@@ -30,7 +30,7 @@ Go to section 1. The BVIPDS charter and its assumption log are the charter and l
 
 ## Step 4. Read the plan
 
-Open section 7. It lists four moves: promote the lifecycle into an SSOT, strip the charter and log into blanks, generalise the G1/G2/G3 gates, and adopt the registry's flags and ledger.
+Open section 7. It lists four moves: promote the lifecycle into an SSOT, strip the charter and log into blanks. The other two: generalise the G1/G2/G3 gates, and adopt the registry's flags and ledger.
 
 ## Step 5. Check the result
 

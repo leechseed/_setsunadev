@@ -14,11 +14,11 @@ source_version: 1.0.0
 
 # One template governs every book summary
 
-The **Template Prompt for Summarizing Novels and Books** consolidates every summarization prompt pattern found across the vault into one canonical template. It replaces the scattered "professional summarizer" prompt, the "Understanding" report template, the wicked_figures process order, and the MCDP doctrinal summary spec. Any future book or novel summary begins here.
+The **Template Prompt for Summarizing Novels and Books** is one canonical template. It consolidates every summarization prompt pattern found across the vault. It replaces the scattered "professional summarizer" prompt, the "Understanding" report template, the wicked_figures process order, and the MCDP doctrinal summary spec. Any future book or novel summary begins here.
 
 ## The prompt is fixed, and the add-ons flex
 
-The universal system prompt carries the rules every summary shares. The writer appends modular add-ons for the kind of book: a narratology deep dive, a Dramatica extension, a knowledgebase formatter, or a key-contributions extractor. The base stays the same, so every summary has the same skeleton.
+The universal system prompt carries the rules every summary shares. The writer appends modular add-ons for the kind of book. The choices are a narratology deep dive, a Dramatica extension, a knowledgebase formatter, or a key-contributions extractor. The base stays the same, so every summary has the same skeleton.
 
 ## Fidelity comes first
 
@@ -40,4 +40,4 @@ For every component, read the [reference](2-reference.md). For the tasks, read t
 
 ## The long read
 
-The document derives from batch extraction across several vaults and builds, named in its header: `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds. Its frontmatter was stamped canonical on 2026-10-04 (BOLO 100 D6), while the body still carries "Version: 1.0." The reference sources directive lists the lenses a summary may use: McKee, Bloom, Campbell, Lyons, Lukeman, Edgerton, Maass, Alderson and Rosenfeld, Iglesias, late-2000s sci-fi anime archetypes, and Narrative Astrology. The writer edits that list per task.
+The document derives from batch extraction across several vaults and builds. Its header names `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds. Its frontmatter was stamped canonical on 2026-10-04 (BOLO 100 D6), while the body still carries "Version: 1.0". The reference sources directive lists the lenses a summary may use. They are McKee, Bloom, Campbell, Lyons, Lukeman, Edgerton, and Maass. They also include Alderson and Rosenfeld, Iglesias, late-2000s sci-fi anime archetypes, and Narrative Astrology. The writer edits that list per task.
