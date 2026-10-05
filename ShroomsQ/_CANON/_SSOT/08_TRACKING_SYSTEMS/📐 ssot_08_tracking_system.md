@@ -186,7 +186,7 @@ span: "<time-code range>"          # optional — e.g. "M2 · Q1 · S01 | 001.1.
 
 | `subject.kind` | Holds | Id form |
 |---|---|---|
-| `theme` | A theme track. 06 names the rails and motifs; a point at a scene's time code records the rail that scene tests (R1 to R4) and the side it argues (IF-06-08-04). 06's scene card is the source | `holders:` on each 06 rail name 08 track ids; motif points use `field: motif.<slug>` |
+| `theme` | A theme track. 06 names the rails and motifs. A point at a scene's time code records the rail it tests (R1 to R4) and the side it argues (IF-06-08-04). 06's scene card is the source | `holders:` on each 06 rail name 08 track ids; motif points use `field: motif.<slug>` |
 | `gauge` | A continuous value lane under a character or world track: the Freedom, Fairness and civilization gauges, each one of four steps (IF-06-08-03, IF-06-08-06). It is an automation lane (§8) | The gauge name |
 | `group` · `belief` · `custom` · `tech` · `wardrobe` · `architecture` | A catalog thing from 05 Worldbuilding, with `place` already in the set (IF-05-08-05, IF-05-08-06) | `<kind>:<slug>`; the catalog entry id is `WB-<TYPE>-<nnnn>` |
 | `world` | The story world itself, for world-level changes such as a rebrand or a world rule (IF-05-08-07) | `world:<slug>` |

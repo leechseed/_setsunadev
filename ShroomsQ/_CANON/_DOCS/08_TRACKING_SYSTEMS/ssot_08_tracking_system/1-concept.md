@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md
-source_version: 1.1.1
+source_version: 1.2.0
 ---
 
 **Who it's for:** a writer or tool builder who wants the why · **What it does:** explains why one store feeds many views · **Type:** concept

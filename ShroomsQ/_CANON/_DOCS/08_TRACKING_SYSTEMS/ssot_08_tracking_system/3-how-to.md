@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md
-source_version: 1.1.1
+source_version: 1.2.0
 ---
 
 **Who it's for:** a writer or tool builder who knows what the grid is · **What it does:** step-by-step recipes for tracking tasks · **Type:** how-to
@@ -24,6 +24,15 @@ Look up shapes in the [reference](2-reference.md). Read the [concept](1-concept.
 4. Write ` | ` after the scene.
 5. Write the bar zero-padded to 3 digits, then the beat and tick unpadded: `012.3.2`.
 6. Join them: `M2 · Q1 · S04 | 012.3.2`.
+
+## Convert a ladder address or an old date to a time code
+
+1. Copy the movement, sequence and scene numbers: `M2.q3.s12` becomes `M2 · Q3 · S12`.
+2. Drop the IP and form prefix. The track or record that holds the code names the story.
+3. Write the bar half only when the fact sits inside a scene: the bar, then the beat in that bar.
+4. Replace free text and movement tags such as `m1a` with the time code.
+5. Leave the `backstory` tag alone. It dates events before M1.
+6. Write no SC class on the code. An address is not a scale.
 
 ## Sort two time codes
 
@@ -45,11 +54,12 @@ Look up shapes in the [reference](2-reference.md). Read the [concept](1-concept.
 ## Record a story point
 
 1. Name a `story_point_id` slug.
-2. Set `subject.kind` to character, trait, trope, place or relationship, and set `subject.id`.
+2. Set `subject.kind` to character, trait, trope, place, relationship, theme, gauge, group, belief, custom, tech, wardrobe, architecture or world, and set `subject.id`.
 3. Write the `field` path and the new `value`.
 4. Write `at` as a time code.
 5. Add `origin_event` if the point reads from a dated fabula event.
 6. Leave `ramp` false for a step. Set `ramp: true` for a continuous slope, as with tension, attraction or dread.
+7. Check the 02 field-tag table. Change only a field tagged Dynamic.
 
 ## Record an iterative story point
 
@@ -62,6 +72,19 @@ Look up shapes in the [reference](2-reference.md). Read the [concept](1-concept.
 1. For a trope, make a track of `kind: trope`. Use the trope's `id` as `subject.id`.
 2. For a theme motif, write a story point whose `field` is `motif.<id>`.
 3. Take the ids from the trope register and the theme doc. This system gives only the address.
+
+## Track a gauge, a catalog thing or the story world
+
+1. For a gauge, make a track of `kind: gauge` under a character or world track. Set each value to one of four steps.
+2. For a catalog thing, set `kind` to group, belief, custom, tech, wardrobe or architecture. Write `subject.id` as `<kind>:<slug>`.
+3. For a world-level change such as a rebrand, set `kind: world` and write `subject.id` as `world:<slug>`.
+
+## Log a hook or a Touchstone breach
+
+1. For a hook, write a `hook_id`, its P6 `type` and the `container` that closes on it.
+2. Set `payoff_at` to the payoff's time code. Leave it unset while the hook is open.
+3. For a breach, write `breach_at` as a time code and the `touchstone_id` as a TS id.
+4. List every downstream time code that trusted the breached unit in `invalidated_units`.
 
 ## Link a setup to its payoff with a cable
 

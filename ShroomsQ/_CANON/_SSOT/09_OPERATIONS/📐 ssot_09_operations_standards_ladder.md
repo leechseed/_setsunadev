@@ -2,7 +2,7 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_procedure
 category: operations
-version: 0.2.3
+version: 0.3.0
 tier: operations
 last_updated: 2026-10-05
 version_note: "0.2.3 set 2026-10-05, BOLO 102 batch A (Chief: \"All recs go\"); the 1.0.0 stamp of 2026-10-04 contradicted the version history, which ends at 0.2.2"
@@ -52,6 +52,8 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 
 ## The filing table · 2026-09-15
 
+The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level (IF catalog call 9, ruled 2026-10-05). The writer picks each rung by the rule above. A script then stamps the rung into each doc's front matter. Every row below then reads `stamped`. Two files moved out of 09 under the same ruling. The character pipeline illustration now lives in 02, and the Bold Venture Design System now lives in 00. Their rows below carry the new folders.
+
 | Document | Rung | Status |
 |---|---|---|
 | `DOCTRINE-0-INVARIANTS.md` | policy | stamped |
@@ -76,6 +78,59 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/🧬 MIL.11 — MCDP 8 Information — USMC (2022).md` | handbook | stamped |
 | `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md` | standard | read-only file, listed here only |
 | `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md` | procedure | read-only file, listed here only |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_interface_catalog.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_collision_engine.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_genre_system.md` | standard | stamped |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_medium_grammars.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_scale_ladder.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_spine_house_inventory.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_layer.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_texture_system.md` | standard | stamped |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_touchstones_register.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_l9_eros_synthesis.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_astrology_ingest.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_dramatica_ingest.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮 ssot_02_dramatica_integration_protocol.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md` | procedure | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_synthesis.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/🔮 ssot_03_setting_state_architecture.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md` | standard | stamped |
+| `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md` | standard | stamped |
+| `ShroomsQ/_CANON/_SSOT/05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_1_prose_style.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2_documents_style.md` | procedure | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_3_pages_style.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/how_to_use_goon_room.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_goon_room_protocol.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_legacy_styleguide_2024.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_markdown_marking.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_pm_holdings_inventory.md` | handbook | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_retrieval_dossier_protocol.md` | procedure | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_standards_ladder.md` | procedure | stamped |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_ai_instruction_protocol.md` | procedure | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_template_prompt_for_summarizing_novels_and_books.md` | standard | to stamp (BOLO 102 stage 2) |
+| `ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_writing_guide.md` | handbook | to stamp (BOLO 102 stage 2) |
 | `_CANON_NODES/dcus-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
 | `_CANON_NODES/oxo-trash-land-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
 | `_CANON_NODES/astro7ex-standards-body.md` | spec | stamped at birth, 2026-09-15 (BOLO 50 phase 5) |
@@ -151,7 +206,7 @@ This index links all 26 filed Command documents in the BOLO 50 network to the Co
 
 ## Governance
 
-DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth; a document found without one is filed at the next sit rep.
+DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth; a document found without one is filed at the next sit rep. A system doc reaches version 1.0.0 only when it clears SOP §5's 1.0 bar: Shape · Shelf · Proof · Ruled · Wired · Store. Chief rules the bar, and no other list of 1.0 criteria stands in the Command (IF catalog call 10, ruled 2026-10-05).
 
 ## Version History
 
@@ -162,3 +217,4 @@ DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after 
 | 0.2.1 | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): filing-table rows and parent column repointed from the 05 redirect stubs to 07.2a and 07.2b. |
 | 0.2.2 | 2026-10-04 | BOLO 100 TOUCH BATCH 1, Chief "REC.": front-door line (TS-B10). |
 | 0.2.3 | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): the version is 0.2.2 plus this patch. The 1.0.0 stamp is withdrawn, because the history ends at 0.2.2. |
+| 0.3.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): the filing table gains one row per core SSOT doc (59), each with its rung, for the front-matter stamp; the two moved files point to their new homes in 02 and 00; the 1.0 bar is SOP §5's six. |
