@@ -13,6 +13,7 @@ dependencies:
     "[[📐 ssot_09_operations_ai_instruction_protocol]]",
     "[[📐 ssot_methodology_creation_standard]]",
   ]
+rung: procedure
 ---
 
 # 📐 ssot_09_operations_retrieval_dossier_protocol

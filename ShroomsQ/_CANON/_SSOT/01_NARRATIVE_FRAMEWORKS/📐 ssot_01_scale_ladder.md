@@ -9,6 +9,7 @@ status: canonical — Module 1 of the lattice, delivered on Chief's clear 2026-0
 purpose: "THE SCALE LADDER — the container hierarchy from beat to universe: what each unit IS, its completion test, its address, and how multiple stories nest inside one series. Lattice limb 1 of 4."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_02_dramatica_integration_protocol"]
 trunk: BLACK
+rung: standard
 ---
 
 # 📐 SSOT: THE SCALE LADDER — from beat to universe

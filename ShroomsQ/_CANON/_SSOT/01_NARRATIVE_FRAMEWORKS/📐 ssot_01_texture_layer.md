@@ -10,6 +10,7 @@ status: "v1.0.1 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1:
 purpose: "THE TEXTURE LAYER — the discourse side of narrative: the critical-writing categories (narratology) organized as the Ten Questions of the Telling, the craft-term translation grid, and the TELLING PROFILE instrument. Lattice limb 3 of 4."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_03_setting_system (scene card)"]
 trunk: BLACK
+rung: handbook
 ---
 
 # 📐 SSOT: THE TEXTURE LAYER — how the telling is made

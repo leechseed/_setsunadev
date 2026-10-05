@@ -9,6 +9,7 @@ status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramati
 purpose: "THE STORY SPINE — the canonical tree of what makes a story. The reference Chief designs IPs against, and the keying structure the BVX-LEARN library (CRE/LIT holdings) organizes onto. Front door to the BVX reference system."
 dependencies: ["ssot_02_dramatica_integration_protocol", "oxo-storyform (populated instance)"]
 trunk: BLACK
+rung: handbook
 ---
 
 # 📐 SSOT: THE STORY SPINE — the comparative tree of what makes a story

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a narrative designer. They look up a flow, step, decision point, or the next action in the character pipeline · **What it does:** lists every component of the Process Illustration · **Type:** reference
@@ -30,7 +30,7 @@ flowchart TD
   C --> D["Flow D, vertical slice to state diffs"]
 ```
 
-The source has type `ssot_00_foundations`, category process_illustration, version 1.0.1, and module of `ssot_02_character_systems_vertical_slice`. It has tier operations, trunk BLACK, and last updated 2026-10-04. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Status: canonical. Its purpose: it "illustrates the complete LEECHSEED character pipeline as four sequential flows with decision points, inputs, outputs, and embedded Mermaid diagrams for Obsidian rendering."
+The source has type `ssot_00_foundations`, category process_illustration, version 1.1.0, and module of `ssot_02_character_systems_vertical_slice`. It has tier operations, trunk BLACK, and last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Status: canonical. Its purpose: it "illustrates the complete LEECHSEED character pipeline as four sequential flows with decision points, inputs, outputs, and embedded Mermaid diagrams for Obsidian rendering."
 
 The doc modules per flow:
 
@@ -183,6 +183,7 @@ Flow D produces state records that describe how a character differs from the bas
 5. Check that modified values respect scale class constraints; if not, adjust to the nearest valid grid value. Check that flags re-evaluate correctly; if not, investigate the values.
 6. Save the state record (.md) in the character's `states/` subfolder.
 7. If the event affects a relationship, update the relationship record's status and `state_history` in `_AUTHORITATIVE/IP/relationships/`.
+8. If the event changes a place, check the setting state (IF catalog call 9, ruled 2026-10-05). Write or revise the place checkpoint that shares the same `origin_event` in the [setting state architecture](../../../_SSOT/03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md).
 
 ### Decision Point Annotations
 
@@ -191,6 +192,7 @@ Flow D produces state records that describe how a character differs from the bas
 - **DP-D3: "Does this event affect a relationship?"** State diffs and relationship records are separate structures that often change at the same moment. The source's example: Victoria's crash killing Jebb. The state diff records the WOUND increase and attachment change, and the relationship record changes status from `active` to `severed`. Both update together.
 - **DP-D4: "Whole state or one field?"** A checkpoint re-derives every value, derived statistic, and flag, a weight that fits a fabula event. A single trait tick or flag flip between events is a story point in the tracking system.
 - **DP-D5: "Is the field Dynamic?"** Only fields the slice tags Dynamic appear in `MODIFIED_VALUES`. A Static field never changes; a revision makes a new base record. Derived values are recomputed, never stored as a diff.
+- **DP-D6: "Does this event change a place's state?"** One fabula event can change a character and a place at once. An example is the rename of a school. The designer runs this check beside the relationship check. The character checkpoint and the place checkpoint share one `origin_event`, and both must agree on what the event did.
 
 ## Cascade: A Revised Storyform
 
@@ -250,5 +252,6 @@ Module flags are re-evaluated alongside core flags during state diff creation.
 | Flag fires unexpectedly | Corrected layer values | Re-enter Flow C at Step 4. The flag is right. The inputs are wrong. |
 | Character needs to exist at two narrative moments | Two checkpoints | Run Flow D twice, once per fabula event. Both diff against the base record, not against each other. |
 | A checkpoint falls earlier than the base record's own narrative position | A backward diff | Flow D with Rule 7 of the state architecture. Each field is modified to its earlier value. Nothing is deleted. |
+| A checkpoint is saved | The relationship check and the setting-state check | Flow D, last two decisions: update the relationship record, then check the place checkpoint that shares the same `event_id`. |
 | One trait or flag changes between two fabula events | A story point | Write it in the tracking system, section 5. Do not build a checkpoint. |
 | Storyform revised after the ingests locked | New chart, new base record version, re-checked diffs | The Cascade section. |

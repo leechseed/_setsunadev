@@ -10,6 +10,7 @@ purpose: "THE WORLDBUILDING SYSTEM — the definition of a world (its infrastruc
 dependencies: ["ssot_03_setting_system (v1.5.0, places)", "ssot_02_character_systems (people)", "ssot_08_tracking_system (v1.0.0, state over time)", "ssot_04_fabula / ssot_04_plot_system (origin events)", "ssot_01_trope_register (BOLO 89 layer)"]
 trunk: BLACK
 sources: [BVX.0562, BVX.0575, BVX.0630, BVX.0100, BVX.0349, BVX.0530, BVX.0504, BVX.0538, BVX.0458, BVX.0141, BVX.0405, BVX.0480, BVX.0465, BVX.1156, BVX.1137, BVX.1138, BVX.1161, BVX.1162, BVX.1165, BVX.0067, BVX.0144, NEW-tremblay, NEW-blueprint, NEW-pyramid341, NEW-ultimate-gm, NEW-anderson, NEW-101prompts, "_tools/bolostatus/work/93/PS-A.json", "_tools/bolostatus/work/93/PS-B.json"]
+rung: standard
 ---
 
 # 📐 SSOT: THE WORLDBUILDING SYSTEM — the world, defined once, built around a catalog

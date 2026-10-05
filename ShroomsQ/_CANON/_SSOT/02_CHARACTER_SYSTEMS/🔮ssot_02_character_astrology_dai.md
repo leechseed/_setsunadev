@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Defines the complete Dramatica-Astrology Interface (DAI) — the translation rules that convert locked Dramatica storyform outputs into Character Astrology planetary assignments. This is the API specification between the two systems."
 dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_astrology"]
+rung: standard
 ---
 # 🔮 SSOT: Dramatica-Astrology Interface (DAI) Expansion
 

@@ -10,6 +10,7 @@ purpose: "THE SETTING SYSTEM — character-grade place: the taxonomy of what set
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_02_character_astrology_12_layer_mapping (mirrored)", "delta-coast-ultra-school (first instance)"]
 trunk: BLACK
 sources: [BVX.0458, BVX.0349, BVX.1122, BVX.0193, BVX.0175, BVX.0100, BVX.0399, BVX.0405, BVX.0465, BVX.0504, BVX.0530, BVX.0562, BVX.1137, BVX.1139, BVX.1140, BVX.1141, BVX.1142, BVX.1143, BVX.1144, BVX.1146, BVX.1147, BVX.1151, BVX.1152, BVX.1155, BVX.1156, BVX.1157, BVX.1158, BVX.1159, BVX.1160, BVX.1161, BVX.1162, BVX.1163, BVX.1164, BVX.1165, BVX.1166, BVX.1167, CRE.09, CRE.07, BVX.0480, BVX.1180, BVX.1188, BVX.1182, BVX.1179, BVX.1128, BVX.1170, BVX.0479, CRE.08, PHI.02]
+rung: standard
 ---
 
 # 📐 SSOT: THE SETTING SYSTEM — place at character grade

@@ -11,6 +11,7 @@ purpose: "Command-wide base tool, not part of the storytelling stack. Defines th
 dependencies: []
 source_system: "Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force)"
 compliance: [MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA]
+rung: standard
 ---
 # 📐 ssot_00_bold_venture_design_system
 

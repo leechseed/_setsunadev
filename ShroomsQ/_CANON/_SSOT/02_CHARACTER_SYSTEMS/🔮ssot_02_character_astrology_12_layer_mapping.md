@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Defines the formal mapping between Character Astrology chart variables and the LEECHSEED Character System. Specifies which astrological data feeds which layers, the translation logic for each feed, and the independence boundaries where the two systems do not overlap."
 dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_02_character_systems_vertical_slice"]
+rung: standard
 ---
 # 🔮 SSOT: Character Astrology ↔ 12-Layer Mapping
 

@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.4.0 2026-10-05: BOLO 102 stage 2 (Chief: \"My word\"), IF catalog calls 1, 4 and 5: `narrative_moment` and relationship `state_history.moment` carry the 08 time code, REL.* owned here, flag event ids. v1.3.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar"
 purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems."
 dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
+rung: standard
 ---
 # 🔮 SSOT: Character State Architecture
 
@@ -322,7 +323,7 @@ This document defines character state tracking. It does not define story structu
 
 **Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
 
-- Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history` when an event changes a bond, for example `active` to `severed` after a trauma event.
+- Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history` when an event changes a bond. For example, `active` becomes `severed` after a trauma event.
 - Read by 09 (IF-02-09-05): Flow D reads the checkpoint: `character_id`, `state_id`, `origin_event`, `told_at`, `base_record_version`, `state_diffs`, STATE_NOTE, ASTROLOGY_OVERLAY and the five event types.
 - Read by 08 (IF-02-08-08): 08 reads the query-assembly protocol, "Querying a Character at a Narrative Moment", to wire its inspector panel.
 - Written to 04 (IF-02-04-14): each fabula event's `produces:` list names the `state_id`s whose `origin_event` is that event. The state record keeps only the forward pointer.

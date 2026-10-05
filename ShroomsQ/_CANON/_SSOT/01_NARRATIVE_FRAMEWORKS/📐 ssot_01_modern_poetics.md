@@ -9,6 +9,7 @@ status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 
 purpose: "The prescriptive half of the lattice — what house stories MUST BE. The lattice describes what a story is; this doc commands what ours are for. Canonized from the May-2025 Leechseed Manifesto (16 docs, imported-Joplin) + three native principles coined 2026-08-31."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_texture_layer", "ssot_01_scale_ladder"]
 trunk: BLACK (P3 and the three checks bridge ORANGE)
+rung: standard
 ---
 
 # 📐 SSOT: MODERN POETICS — the house constitution

@@ -1,6 +1,7 @@
 ---
 status: moved 2026-09-29 → 07_STYLE_GUIDES/_history/📐 ssot_06_legacy_styleguide_2024.md (BOLO 92)
 tier: operations
+rung: handbook
 ---
 
 # 📐 ssot_09_operations_legacy_styleguide_2024 — moved

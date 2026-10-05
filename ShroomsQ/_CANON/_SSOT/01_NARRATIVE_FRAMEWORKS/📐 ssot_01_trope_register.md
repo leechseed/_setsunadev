@@ -10,6 +10,7 @@ purpose: "THE TROPE REGISTER: one trope layer under every system. 8,700 TV Trope
 dependencies: ["ssot_04_trope_graph (the plot consumer)", "ssot_02_character_systems_vertical_slice", "ssot_03_setting_system", "ssot_01_genre_system", "ssot_06_theme_system"]
 trunk: BLACK
 sources: ["_tools/tropes/fetch.py --domains", "_tools/bolostatus/work/89/keys.batch01–16.json", "_tools/tropes/build_register.py"]
+rung: standard
 ---
 
 # 📐 SSOT · THE TROPE REGISTER — one trope layer through every system

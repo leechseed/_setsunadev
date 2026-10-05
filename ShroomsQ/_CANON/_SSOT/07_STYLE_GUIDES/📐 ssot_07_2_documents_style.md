@@ -16,6 +16,7 @@ purpose: "The index and the rules for how the Command writes: replies, readbacks
 dependencies: ["_tools/bolostatus/work/95/DOC-SOP.md (the teach-back record)", "[[📐 ssot_07_2a_writing_guide]]", "[[📐 ssot_07_2b_markdown_marking]]", "SOP.md §7"]
 trunk: BLACK
 sources: ["SOP.md §7", "memory: plain-register", "memory: house-format", "memory: one-value-one-block", "memory: clickable-file-links", "memory: touchstone-name", "memory: the-command", "CRE.03 — Clear and Simple as the Truth — Thomas & Turner (2011)", "CRE.02 — Writing with Clarity and Style — Harris (2018)", "TEC.04 — The Minto Pyramid Principle — Minto (2010)", "CRE.04 — Several Short Sentences About Writing — Klinkenborg (2012)"]
+rung: procedure
 ---
 
 # 📐 ssot_07_2_documents_style — how the Command writes

@@ -15,6 +15,7 @@ status: "v2.2.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 style batch 1: m
 purpose: "Defines mandatory linguistic and structural standards for SSOT documentation using Marine Corps doctrinal precision."
 dependencies: ["[[♨️_template_ssot_09_operations_standard_structure_template]]"]
 moved: "2026-09-29 from 09_OPERATIONS/📐 ssot_writing_guide.md to 07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md (BOLO 92)"
+rung: standard
 ---
 
 # 📐 ssot_07_2a_writing_guide

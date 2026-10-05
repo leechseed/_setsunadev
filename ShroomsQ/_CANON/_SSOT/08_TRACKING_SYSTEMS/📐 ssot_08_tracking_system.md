@@ -10,6 +10,7 @@ purpose: "THE TRACKING SYSTEM: the shared time grid and record model under chara
 dependencies: ["ssot_01_scale_ladder", "ssot_02_character_state_architecture", "ssot_03_setting_system", "ssot_04_fabula", "ssot_04_plot_system", "ssot_05_worldbuilding_system", "ssot_01_trope_register"]
 trunk: BLACK
 sources: ["_tools/bolostatus/work/90/DISTILL.md", "BVX.0236 — The Story Grid: What Good Editors Know — Coyne (2015)"]
+rung: standard
 ---
 
 # 📐 SSOT: THE TRACKING SYSTEM — one store, many views

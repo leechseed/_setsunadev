@@ -7,6 +7,7 @@ last_updated: 2026-10-05
 applies_to: [all_stories]
 status: canonical
 purpose: Defines how to use the _GOON_ROOM workspace
+rung: handbook
 ---
 
 # How to Use The Goon Room

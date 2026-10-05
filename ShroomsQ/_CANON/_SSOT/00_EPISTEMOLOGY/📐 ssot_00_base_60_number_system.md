@@ -10,6 +10,7 @@ trunk: BLACK
 purpose: "Defines the base 60 (sexagesimal) number system as the foundational source for every scaled number in any system. Establishes the divisor lattice, valid scale classes, pattern catalog, scale assignments, point budget recalibration, derived stat recalibration, and flag threshold recalibration."
 dependencies: []
 supersedes_ranges_in: ["ssot_02_character_systems_vertical_slice"]
+rung: standard
 ---
 
 # 📐 SSOT: Base 60 Number System

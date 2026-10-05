@@ -132,6 +132,10 @@ Chief rules each retirement. The author keeps the entry and marks it retired, wi
 
 The vertical slice keeps the 139-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list and does not copy it (IF-00-02-28; IF catalog call 4, ruled 2026-10-05). The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
 
+### Read aliases
+
+The vertical slice keeps the 139-row alias table, THE SCHEMA PASS. This registry cites that table as its alias list and does not copy it (IF-00-02-28, call 4). The table names three read aliases: `shame_index` for `exposure_shame`, `primary_attachment_object` for `secure_base_object`, and `motivation_element` for `mc_problem_element`. The author keeps an alias row on the entry of each renamed field.
+
 ## Tier 1 Variables
 
 ### T1.CORE.base_value

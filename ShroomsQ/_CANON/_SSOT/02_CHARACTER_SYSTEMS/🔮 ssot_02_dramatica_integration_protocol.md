@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.2.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass, CL15: `convention_role` defined (L12, Static, advisory). v1.2.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Defines the role of Dramatica within the LEECHSEED character pipeline, establishes storyform-to-character binding architecture, L12 sub-table structure, tier-level integration rules, and report manifest."
 dependencies: ["ssot_02_character_systems_vertical_slice"]
+rung: standard
 ---
 # 🔮 SSOT: Dramatica Integration Protocol
 

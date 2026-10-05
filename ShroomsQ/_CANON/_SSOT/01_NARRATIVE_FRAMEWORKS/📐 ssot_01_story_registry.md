@@ -10,6 +10,7 @@ purpose: "THE STORY REGISTRY: the one place that lists every story in the univer
 dependencies: ["ssot_04_fabula (THE WORLD CLOCK · the universe eras)", "ssot_08_tracking_system (one tracking file per story)"]
 trunk: BLACK
 sources: ["_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md", "_CANON_NODES/oxo-storyform.md", ".ASTRO7EX.SYNC.JOPLIN/", "Q:/_PDF_DROP (EVIL CHECK Dramatica reports)", "_PRIVATE/notes/apple-notes-2026.digest.md", "_PRIVATE/notes/phone-notes-2022-2023.digest.md"]
+rung: standard
 ---
 
 # 📐 SSOT · THE STORY REGISTRY

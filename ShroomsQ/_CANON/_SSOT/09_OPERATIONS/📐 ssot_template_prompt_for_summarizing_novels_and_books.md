@@ -5,6 +5,7 @@ tier: operations
 last_updated: 2026-10-05
 version_note: "1.1.0 set 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the 3A output files to the 01 narratology shelf."
 status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0")
+rung: standard
 ---
 # SSOT: Template Prompt for Summarizing Novels & Books
 

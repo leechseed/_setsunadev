@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Replaces the single-sentence Step 1 of the Vertical Slice protocol with a formal source verification gate. Defines exactly what 'canonical documentation exists and is locked' means, specifies the required upstream documents, and establishes the verification checklist that must pass before the Vertical Slice proceeds to Step 2."
 dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_dramatica_integration_protocol", "ssot_02_character_astrology", "ssot_02_template_dramatica_ingest", "ssot_02_template_astrology_ingest"]
+rung: procedure
 ---
 # 🔮 SSOT: Step 1 — Source Verification Protocol
 

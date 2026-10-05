@@ -9,6 +9,7 @@ purpose: "Every processed in-house material keyed to its spine level(s) L0–L7 
 module_of: ssot_01_story_spine_comparative_tree
 dependencies: ["ssot_01_story_spine_comparative_tree"]
 trunk: BLACK
+rung: handbook
 ---
 
 # 📐 SSOT: THE SPINE — HOUSE INVENTORY (BOLO 18 · stage 1)

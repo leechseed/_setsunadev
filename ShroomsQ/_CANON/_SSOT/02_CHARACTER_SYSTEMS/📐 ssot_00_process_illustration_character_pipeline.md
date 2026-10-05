@@ -10,6 +10,7 @@ status: canonical
 trunk: BLACK
 purpose: "Illustrates the complete LEECHSEED character pipeline as four sequential flows with decision points, inputs, outputs, and embedded Mermaid diagrams for Obsidian rendering."
 dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_02_character_systems_vertical_slice", "ssot_02_character_state_architecture", "ssot_02_step_1_source_verification_protocol", "ssot_02_template_dramatica_ingest", "ssot_02_template_astrology_ingest", "ssot_00_variable_registry", "ssot_00_base_60_number_system"]
+rung: handbook
 ---
 
 # 📐 SSOT: Process Illustration
@@ -434,7 +435,7 @@ flowchart TD
 
 **DP-D5: "Is the field Dynamic?"** — Only fields the slice tags Dynamic appear in `MODIFIED_VALUES`. A Static field never changes. A revision makes a new base record. Derived values are recomputed from the modified values and never stored as a diff.
 
-**DP-D6: "Does this event change a place's state?"** — (IF catalog call 9, ruled 2026-10-05) One fabula event can change a character and a place at once, for example the rename of a school. The narrative designer runs this check beside the relationship check. If the event changes a place's layers, the designer writes or revises the place checkpoint in the [setting state architecture](../03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md). The character checkpoint and the place checkpoint share one `origin_event`, and both must agree on what the event did.
+**DP-D6: "Does this event change a place's state?"** — (IF catalog call 9, ruled 2026-10-05) One fabula event can change a character and a place at once. An example is the rename of a school. The narrative designer runs this check beside the relationship check. If the event changes a place's layers, the designer writes or revises the place checkpoint in the [setting state architecture](../03_SETTING_SYSTEMS/🔮%20ssot_03_setting_state_architecture.md). The character checkpoint and the place checkpoint share one `origin_event`, and both must agree on what the event did.
 
 ---
 

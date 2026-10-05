@@ -9,6 +9,7 @@ status: canonical
 trunk: BLACK
 purpose: "Defines the Layer-Locked Module system, the plugin/extension architecture for attaching new capability to the LEECHSEED Character System without expanding the core schema. Establishes the module API contract, attachment protocol, data access rules, and the registry format for all current and planned modules."
 dependencies: ["ssot_00_variable_registry", "ssot_00_base_60_number_system", "ssot_02_character_systems_vertical_slice"]
+rung: standard
 ---
 # 📐 SSOT: Module Architecture
 

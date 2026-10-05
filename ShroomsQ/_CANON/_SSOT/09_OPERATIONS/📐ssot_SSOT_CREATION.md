@@ -12,6 +12,7 @@ status: canonical
 purpose: "This document establishes the authoritative standard for SSOT creation, including manual 'kickstart' protocols for Obsidian Properties."
 dependencies:
   - "[[📐_ssot_09_operations_obsidian_yaml_standard]]"
+rung: procedure
 ---
 
 # 📐 SSOT Writing Guide: Marine Corps Doctrinal Standard

@@ -10,6 +10,7 @@ purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story ar
 dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
 trunk: BLACK
 sources: [MSX.36, BVX.0236, BVX.0193, CRE.06, "_tools/bolostatus/work/80/DISTILL.md", "_tools/bolostatus/work/80/RESEARCH-BIOPOWER.md"]
+rung: standard
 ---
 
 # 📐 SSOT: THE THEME SYSTEM — the argument, in one sentence first

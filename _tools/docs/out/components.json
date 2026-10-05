@@ -126,6 +126,59 @@
     "parts": []
    }
   ],
+  "📐 ssot_00_bold_venture_design_system.md": [
+   {
+    "name": "THE BOLD VENTURE ROSTER — the brand color layer (RULED 2026-09-01)",
+    "parts": [
+     "Layer 0 · THE IDENTITY — present on every surface, every hour",
+     "The four registers",
+     "THE LUMINANCE LAW (panel-derived, measurable — supersedes the vibe-rule)",
+     "The one-red ledger",
+     "Semantic token remap — dark theme (the Noir default)",
+     "The surface map",
+     "Governance"
+    ]
+   },
+   {
+    "name": "Core Methodology",
+    "parts": [
+     "Design System Architecture",
+     "Token Hierarchy",
+     "Color System — Reference Palettes",
+     "Color System — Semantic Tokens Dark Theme",
+     "Color System — Semantic Tokens Light Theme",
+     "Status System",
+     "Classification Markings",
+     "Data Visualization Palette",
+     "Typography System",
+     "Spacing System",
+     "Border Radius and Opacity",
+     "Responsive Grid",
+     "Component Inventory",
+     "Component Token Specifications",
+     "UX Patterns",
+     "Compliance Framework",
+     "Theming Architecture",
+     "Naming Convention — Astro to Bold Venture Translation"
+    ]
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Adopting the Design System for a New Application",
+     "Applying the Status System",
+     "Building a Custom Component",
+     "Extending the Color System"
+    ]
+   },
+   {
+    "name": "Examples",
+    "parts": [
+     "Example 1: System Explorer Application",
+     "Example 2: Character Database Editor Application"
+    ]
+   }
+  ],
   "📐 ssot_00_interface_catalog.md": [
    {
     "name": "WHAT AN INTERFACE IS",
@@ -191,7 +244,7 @@
     "parts": []
    },
    {
-    "name": "THE DESIGN CALLS — OPEN 2026-10-05, one rec each",
+    "name": "THE DESIGN CALLS — RULED 2026-10-05 (Chief: \"My word\", all ten as recommended)",
     "parts": []
    }
   ],
@@ -350,7 +403,8 @@
    {
     "name": "Registry Format",
     "parts": [
-     "Retire a variable"
+     "Retire a variable",
+     "Read aliases"
     ]
    },
    {
@@ -892,6 +946,63 @@
   ]
  },
  "02_CHARACTER_SYSTEMS": {
+  "📐 ssot_00_process_illustration_character_pipeline.md": [
+   {
+    "name": "The Four Flows",
+    "parts": []
+   },
+   {
+    "name": "Master Pipeline Overview",
+    "parts": []
+   },
+   {
+    "name": "Flow A: Dramatica → Dramatica Ingest Template",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Flow B: Dramatica Ingest → Character Astrology Ingest (via DAI)",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Flow C: Both Ingests → LEECHSEED Vertical Slice",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Flow D: Vertical Slice → State Diffs",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Cascade: A Revised Storyform",
+    "parts": []
+   },
+   {
+    "name": "Cross-Flow: Module Attachment",
+    "parts": [
+     "Module Activation Flow",
+     "Module Data in State Diffs"
+    ]
+   },
+   {
+    "name": "Appendix: Quick Reference — \"What Do I Do Next?\"",
+    "parts": []
+   }
+  ],
   "📐 ssot_02_character_astrology.md": [
    {
     "name": "What Character Astrology Is",
@@ -1935,6 +2046,10 @@
     "parts": []
    },
    {
+    "name": "4A. The Address",
+    "parts": []
+   },
+   {
     "name": "5. The Records",
     "parts": []
    },
@@ -1989,116 +2104,6 @@
    },
    {
     "name": "Focus On",
-    "parts": []
-   }
-  ],
-  "📐 ssot_00_bold_venture_design_system.md": [
-   {
-    "name": "THE BOLD VENTURE ROSTER — the brand color layer (RULED 2026-09-01)",
-    "parts": [
-     "Layer 0 · THE IDENTITY — present on every surface, every hour",
-     "The four registers",
-     "THE LUMINANCE LAW (panel-derived, measurable — supersedes the vibe-rule)",
-     "The one-red ledger",
-     "Semantic token remap — dark theme (the Noir default)",
-     "The surface map",
-     "Governance"
-    ]
-   },
-   {
-    "name": "Core Methodology",
-    "parts": [
-     "Design System Architecture",
-     "Token Hierarchy",
-     "Color System — Reference Palettes",
-     "Color System — Semantic Tokens Dark Theme",
-     "Color System — Semantic Tokens Light Theme",
-     "Status System",
-     "Classification Markings",
-     "Data Visualization Palette",
-     "Typography System",
-     "Spacing System",
-     "Border Radius and Opacity",
-     "Responsive Grid",
-     "Component Inventory",
-     "Component Token Specifications",
-     "UX Patterns",
-     "Compliance Framework",
-     "Theming Architecture",
-     "Naming Convention — Astro to Bold Venture Translation"
-    ]
-   },
-   {
-    "name": "Implementation",
-    "parts": [
-     "Adopting the Design System for a New Application",
-     "Applying the Status System",
-     "Building a Custom Component",
-     "Extending the Color System"
-    ]
-   },
-   {
-    "name": "Examples",
-    "parts": [
-     "Example 1: System Explorer Application",
-     "Example 2: Character Database Editor Application"
-    ]
-   }
-  ],
-  "📐 ssot_00_process_illustration_character_pipeline.md": [
-   {
-    "name": "The Four Flows",
-    "parts": []
-   },
-   {
-    "name": "Master Pipeline Overview",
-    "parts": []
-   },
-   {
-    "name": "Flow A: Dramatica → Dramatica Ingest Template",
-    "parts": [
-     "Overview",
-     "Flow Diagram",
-     "Decision Point Annotations"
-    ]
-   },
-   {
-    "name": "Flow B: Dramatica Ingest → Character Astrology Ingest (via DAI)",
-    "parts": [
-     "Overview",
-     "Flow Diagram",
-     "Decision Point Annotations"
-    ]
-   },
-   {
-    "name": "Flow C: Both Ingests → LEECHSEED Vertical Slice",
-    "parts": [
-     "Overview",
-     "Flow Diagram",
-     "Decision Point Annotations"
-    ]
-   },
-   {
-    "name": "Flow D: Vertical Slice → State Diffs",
-    "parts": [
-     "Overview",
-     "Flow Diagram",
-     "Decision Point Annotations"
-    ]
-   },
-   {
-    "name": "Cascade: A Revised Storyform",
-    "parts": []
-   },
-   {
-    "name": "Cross-Flow: Module Attachment",
-    "parts": [
-     "Module Activation Flow",
-     "Module Data in State Diffs"
-    ]
-   },
-   {
-    "name": "Appendix: Quick Reference — \"What Do I Do Next?\"",
     "parts": []
    }
   ],

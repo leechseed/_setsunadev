@@ -65,6 +65,9 @@ Lookups: [reference](2-reference.md). Why: [concept](1-concept.md). A worked pas
 5. Where the setting has a matching S4, S6 or S8 entry, cite it through `setting_ref`.
 6. Fill L12 from the storyform, keyed by `storyform_id`. Use the Dramatica integration protocol for the field list.
 7. For a Protagonist, document the necessity: show the character forced into the role.
+8. Where a field names a world fact (a regime, a community, a civic standing or a tech level), set its `catalog_ref` to the 05 catalog entry id.
+9. Set L11 `rail_ref` to the 06 theme rails (R1 to R4) the character carries.
+10. Write L12 `touchstone` as the TS n:m id, with the slug as alias.
 
 ## Compute the derived statistics
 
@@ -83,7 +86,7 @@ Lookups: [reference](2-reference.md). Why: [concept](1-concept.md). A worked pas
 1. Take each flag's trigger. Each is a SQL WHERE clause.
 2. Test it against the computed values.
 3. Set the state: ACTIVE, PENDING, FIRED_PRE_STORY or INACTIVE.
-4. Record the narrative timing.
+4. Record the narrative timing. For a PENDING or FIRED_PRE_STORY flag, store the fabula `event_id` beside it as `<FLAG>_event_id`. A PENDING flag with no event yet reads `null` with a `⏸` comment.
 5. If a flag fires unexpectedly, investigate the contributing layer values before going on.
 
 ## Generate the structured data block

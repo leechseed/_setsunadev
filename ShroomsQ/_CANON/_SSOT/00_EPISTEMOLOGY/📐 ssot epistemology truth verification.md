@@ -9,6 +9,7 @@ status: canonical
 trunk: BLACK
 purpose: Defines frameworks for determining truth across empirical, logical, intuitive, consensual, and pragmatic methods, and says which framework checks which claim in each storytelling system
 dependencies: []
+rung: handbook
 ---
 
 # 📐 SSOT: Epistemology - Truth Verification Methods

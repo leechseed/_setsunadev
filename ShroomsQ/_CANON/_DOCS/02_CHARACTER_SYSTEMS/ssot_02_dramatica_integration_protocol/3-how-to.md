@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮 ssot_02_dramatica_integration_protocol.md
-source_version: 1.2.2
+source_version: 1.3.0
 ---
 
 **Who it's for:** a narrative designer who already knows the pipeline · **What it does:** step lists for the protocol's recurring tasks · **Type:** how-to
@@ -50,7 +50,7 @@ Field definitions live in the [reference](2-reference.md).
 ## Build the L12 block for a Tier 3 character
 
 1. Fill the 10 core variables from the storyform and the element set.
-2. Author the `touchstone`. Cite it as TS n:m.
+2. Author the `touchstone`. Write its TS n:m id as the value, with the slug as alias.
 3. Fill the L12_DRAMATICA_EXTENDED sub-table from the ingest.
 4. Leave a field empty if the ingest has not yielded it yet.
 5. Add `convention_role` only if a genre applies.

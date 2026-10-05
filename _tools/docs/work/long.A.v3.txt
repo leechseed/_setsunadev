@@ -1,0 +1,54 @@
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/2-reference.md
+- Style also writes one register row per term and source to `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/3-how-to.md
+- Name the system the claim belongs to: Narrative (01), Character (02), Setting (03), Plot (04), Theme (06), Style (07), Tracking (08) or Worldbuilding (05).
+- Write the status and the frameworks that checked the claim on the claim's own record, in the doc that owns it.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/2-reference.md
+- A time code takes none, because a time code is an address and not a scale (IF catalog call 8, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/1-concept.md
+- **Who it's for:** the CDR, the writers and Chief, who want to understand why the Command keeps a map of where its ten systems touch
+- **What it does:** explains what an interface is, why the catalog records both sides, and how the findings and the ten design calls close the gaps
+- *Start at the catalog and follow the arrows: the ten systems feed one register, and the register feeds the findings that the ten calls close.*
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/2-reference.md
+- **Who it's for:** the CDR and the writers, looking up an interface, a count or a ruling before touching a field another system reads
+- *Read the diagram top to bottom: the catalog has five looked-up parts, and the register holds one subsection per system pair.*
+- **What crosses:** Six of the seven rows are CONTROL: narration never states motive, erotic pacing devices and one idea, one name.
+- **What crosses:** Three rows, none built: Theme Report data for 09, a folder category for 06 and SOP §5's 1.0 bar.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/3-how-to.md
+- **Who it's for:** the CDR and the writers, who already know what the catalog is and need to do one of its four tasks
+- **What it does:** gives the steps to look up an interface, add one, close a one-sided wiring and rule a design call
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_interface_catalog/4-tutorial.md
+- **Who it's for:** a writer or the CDR using the catalog for the first time, who has the source page open
+- You split an id, found its pair, read a row, read the other side and ran the one-sided test twice: once on a pair and once on a row.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_architecture/2-reference.md
+- The tag tells the state architecture whether to record a state diff for the variable (IF-00-02-27; IF catalog call 4, ruled 2026-10-05).
+- - `FLAGS` items: `path` (`MOD.[CODE].FLG.[flag_name]`), `trigger` (boolean expression), `states` (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE), `event_id` (the fabula event id, required in PENDING and FIRED_PRE_STORY).
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_module_registry/2-reference.md
+- Every module variable carries a `Static` or `Dynamic` tag, as the module architecture requires (IF-00-02-27; IF catalog call 4, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/2-reference.md
+- This registry cites that table as its alias list and does not copy it (IF-00-02-28; IF catalog call 4, ruled 2026-10-05).
+- Movement is M, sequence is Q, scene is S, and beat is `bar.beat` (IF-00-08-03; IF catalog call 1, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_genre_system/2-reference.md
+- **Handoffs (IF catalog calls 2 and 3, ruled 2026-10-05).** The writer hands G4's `core_binary`, `mind_action_view` and `thematic_recipe` to the [06 theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) as the seed of the controlling idea.
+- The writer points G8's `world_build` promise at the [05 worldbuilding catalog](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md): the `WB-<TYPE>-<nnnn>` entries (rules, institutions) that make the promise good.
+- **Genre-contract tool (IF catalog call 10, ruled 2026-10-05).** Ryan's nine-axis ontological scoring (BVX.0630) is the genre-contract tool for 01 and 03 both.
+- **Interfaces.** Read from 07: the 07.1 style bible is the home of the meta-genre, and each IP's telling profile is a meta-genre instance under it (IF-01-07-07).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_medium_grammars/2-reference.md
+- Version 1.3.0 (1.3.0 pointed M1 at 07.1; 1.2.0 added the texture table; 1.1.0 added mode).
+- Style guide (IF catalog call 7, ruled 2026-10-05): M1 selects [07.1 prose style](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) as the style guide that governs the telling.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_modern_poetics/2-reference.md
+- - **Ledger (IF catalog call 6, ruled 2026-10-05):** every hook is an entry in the hook ledger in 08 §9A: hook type, container it closes, payoff address (an 08 time code).
+- - **Landing (IF catalog call 6, ruled 2026-10-05):** the three checks land as `fantasy:`, `sexy:` and `aesthetic:` fields on the entity sheet, the plot card and the scene card.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/2-reference.md
+- - **Catalog (IF catalog call 3, ruled 2026-10-05):** the writer holds R8's shared world rules, entities and systems as entries in the [05 worldbuilding catalog](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) (`WB-<TYPE>-<nnnn>`).
+- **Breach record (IF catalog call 6, ruled 2026-10-05):** the writer logs each breach in the Touchstone breach log in 08 §9A (address
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_scale_ladder/3-how-to.md
+- If a unit breaches the Touchstone, log it in the 08 §9A Touchstone breach log with the unit's time code, the TS id and the units it invalidates.
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_story_spine_comparative_tree/2-reference.md
+- The [06 theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) holds this layer's Issue/Counterpoint pairs and its controlling idea as rails R1–R4 (IF catalog call 2, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_texture_system/2-reference.md
+- - **T6 terms applied by 07.1 (IF catalog call 7, ruled 2026-10-05).** The writer applies T6's `register`, `distance_policy`, `fid`, barrier words per 100 words and Kempton's seven genre registers through [07.1 prose style](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_three_check_pass/2-reference.md
+- The plot card and the scene card carry the same three fields, so a plot element or scene lands its lines there (IF catalog call 6, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/01_NARRATIVE_FRAMEWORKS/ssot_01_trope_register/2-reference.md
+- **Interfaces.** Read from 06 (IF-01-06-06): rail ids R1 to R4 as the value of `keys.theme`; null if a trope argues no rail; `conf` low when `def` is undefined; Chief decides tropes that need two rails.

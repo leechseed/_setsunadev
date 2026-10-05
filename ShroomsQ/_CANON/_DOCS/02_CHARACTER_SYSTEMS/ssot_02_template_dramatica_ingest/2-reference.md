@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_dramatica_ingest.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer filling the blank Dramatica ingest form · **What it does:** lists every section of the form with its fields, values and rules · **Type:** reference
@@ -145,7 +145,7 @@ One line per report consulted, in extraction order. Columns: Report, Used for, F
 
 ## 9. Touchstones
 
-A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`.
+A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`. It holds the TS n:m id, and the slug is its alias (1.1.0, IF catalog call 4, ruled 2026-10-05).
 
 Columns: Touchstone (written TS and a number), Statement (one sentence), Storyform source, What it costs the character.
 

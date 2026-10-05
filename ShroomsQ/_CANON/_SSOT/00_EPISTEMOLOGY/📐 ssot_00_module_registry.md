@@ -10,6 +10,7 @@ status: canonical
 trunk: BLACK
 purpose: "The complete registry of all Layer-Locked Modules (field modules): current, absorbed, planned, and conceptual. Each entry defines the module's attachment point, variable set, access pattern, and development status."
 dependencies: ["ssot_00_module_architecture", "ssot_00_variable_registry", "ssot_02_character_systems_vertical_slice"]
+rung: standard
 ---
 # 📐 SSOT: Layer-Locked Module Registry
 

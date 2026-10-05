@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_dramatica_ingest.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a newcomer filling the form for the first time · **What it does:** one guided pass using Victoria Midnight's L12 values · **Type:** tutorial

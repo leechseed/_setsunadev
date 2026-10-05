@@ -9,6 +9,7 @@ status: canonical — lattice Module 5, built on Chief's go 2026-08-26 (BOLO 17)
 purpose: "THE COLLISION ENGINE — generalized synastry: any slice against any slice, producing friction, and friction is dramatic material. Activates Character Astrology Cats 11/13, adds the C×S mirror diagonal, proven on Tori × DCUS."
 dependencies: ["ssot_02_character_astrology (Cats 11–13)", "ssot_03_setting_system", "ssot_01_scale_ladder (addresses)", "oxo-storyform §9", "victoria-midnight", "delta-coast-ultra-school"]
 trunk: BLACK
+rung: handbook
 ---
 
 # 📐 SSOT: THE COLLISION ENGINE — slice against slice

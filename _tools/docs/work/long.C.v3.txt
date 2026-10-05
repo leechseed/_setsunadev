@@ -1,1 +1,44 @@
-
+## ShroomsQ/_CANON/_DOCS/05_WORLDBUILDING_SYSTEMS/ssot_05_worldbuilding_system/2-reference.md
+- Q now means only 01's R1 BEAT to R8 UNIVERSE; the reach is a separate scale (IF-01-05-12; IF catalog call 10, ruled 2026-10-05).
+- - **Page rules:** 07.3 rules the page: dark palette, thin header strip, CK3 hover terms and static Mermaid markup (IF catalog call 7, ruled 2026-10-05).
+- - **Filters:** era (the span from `founded:` to `current:`, in the 08 time code), place (03 `place_id`), group (GRP id), type (type code).
+- - **State ids:** `state:` reads `<kind>:<slug>`, with kind one of `place`, `group`, `belief`, `custom`, `tech`, `wardrobe`, `architecture`, or `world` for a world-level change.
+## ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/2-reference.md
+- `holders:` lists the 08 track ids of the characters or worlds that carry each rail's debate (IF catalog call 2, ruled 2026-10-05; IF-02-06-04).
+- - Reads from 02 (IF-06-09-01): the Dramatica ingest's Theme Report throughline variable sets feed the rails' pairs (IF catalog call 9).
+- The theme record's `gauge` field names one gauge beside the step: Freedom, Fairness or a civilization's value (IF catalog call 2).
+- Each civilization's four steps live on its catalog entry in 05, in the entry's `gauge:` field (IF catalog call 3; IF-05-06-04).
+- Motif ids: 06 mints each `motif.<slug>` id, and 08 uses it as the story point `field: motif.<id>` (IF catalog call 2; IF-06-08-01, IF-06-08-02).
+- Where the tests run (IF catalog call 7, ruled 2026-10-05): the citation test and the knowledge gradient run on the scene plan, not on the narrated text.
+- OVEREXITOUT carries the instance, and a theme read sits on all 7 cards: M1-skeleton, M2-grief-summary, M2-row9, M3-crash-analepsis, M4-skeleton, M5-skeleton, M6-skeleton, in `_CANON_NODES/` as `oxo-scene-card-*.md`.
+## ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_1_prose_style/2-reference.md
+- - **Theme tests (call 2, IF-06-07-06, IF-06-07-07):** theme's citation test and knowledge gradient run on the scene plan, not the narrated text.
+## ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_3_pages_style/2-reference.md
+- - **Reads from 00 (IF-07-09-05):** the design system's color tokens (`--color-*`), `.bvx-*` typography classes and voice guidelines style any rendered page or template.
+- **Pages ruled by name (IF catalog call 7, ruled 2026-10-05).** The compiled world view page (IF-05-07-05, IF-05-07-07) takes the dark palette, the thin header strip, CK3 hover terms on every catalog type and test, and static Mermaid.
+## ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/2-reference.md
+- - Read by 05 (IF-05-08-02, IF-05-08-03): each catalog entry's `state` is a `<kind>:<slug>` subject; the world-view compiler reads its points and checkpoints.
+- Each entry holds `hook_id`, `type` (P6 hook type), `container` (the unit that closes on the hook) and `payoff_at` (a time code; unset while open).
+- - **Touchstone breach log (IF catalog call 6):** each entry holds `breach_at` (a time code), `touchstone_id` (a TS id) and `invalidated_units` (downstream time codes that trusted the breached unit).
+## ShroomsQ/_CANON/_DOCS/08_TRACKING_SYSTEMS/ssot_08_tracking_system/3-how-to.md
+- Set `subject.kind` to character, trait, trope, place, relationship, theme, gauge, group, belief, custom, tech, wardrobe, architecture or world, and set `subject.id`.
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/2-reference.md
+- Chief decides the folder for domains 03, 05, 06 and 08, so the writer parks those candidates in Chief's queue (IF catalog call 9, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/3-how-to.md
+- Chief decides the folder for domains 03, 05, 06 and 08, so the writer parks those candidates in Chief's queue (IF catalog call 9, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_development_standard/2-reference.md
+- The pattern library's loop steps 1 to 3 map to RECON, 4 and 5 to ORDER, 6 and 7 to EXECUTE, 8 and 9 to CONSOLIDATE.
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/2-reference.md
+- **Interfaces.** The 05 compiler `_tools/worldview/build.py` generates `catalog/_INDEX.md` and the world view page from the catalog files (IF-05-09-01).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/2-reference.md
+- The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level (IF catalog call 9, ruled 2026-10-05).
+- Read by 07 (IF-07-09-04): 07.3 reads the Bold Venture Design System (ROSE anchor #8A1F44, FLESH ramp, four registers, Luminance Law, one-red ledger), now filed in 00.
+- Chief rules the bar, and no other list of 1.0 criteria stands in the Command (IF catalog call 10, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_standards_ladder/3-how-to.md
+- Every core SSOT doc under `_SSOT/0*/` has a row, and a new one gets its row at birth (IF catalog call 9, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/3-how-to.md
+- Confirm the YAML has `type`, `category`, `applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]`, `status: canonical`, wikilink `dependencies`, a `rung` (policy, procedure, standard or handbook), and a `trunk` (BLACK or ORANGE).
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/2-reference.md
+- The writer files each model as one distill on the 01 narratology shelf (`ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/`), under `frameworks/Tier N/<CODE> <Competency>/`.
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_template_prompt_for_summarizing_novels_and_books/3-how-to.md
+- File each extracted model as one distill on the 01 narratology shelf (`_narratology_shelf/frameworks/Tier N/<CODE> <Competency>/`), and add its row to `UID_index.md`.

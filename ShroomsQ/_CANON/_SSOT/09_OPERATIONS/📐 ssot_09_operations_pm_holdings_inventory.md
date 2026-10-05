@@ -9,6 +9,7 @@ date: 2026-09-03
 method: Explore-agent sweep of the repo + archive (medium breadth), paths verified where load-bearing
 trunk: BLACK (systems) — serves every trunk
 related: BOLO.md #25 · SOP.md · STATE.md · PROJECTS.md · DOCTRINE-0-INVARIANTS.md · BVX-ULTRASIN-twin-track.md · oscar-mike/lab-venture.md
+rung: handbook
 ---
 
 # PM HOLDINGS INVENTORY

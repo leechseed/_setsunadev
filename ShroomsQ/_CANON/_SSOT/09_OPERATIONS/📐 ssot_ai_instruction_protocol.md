@@ -8,6 +8,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 purpose: This document serves as the master prompt and operational standard for AI systems tasked with generating SSOT-compliant documentation.
 dependencies: [[[📐_ssot_writing_guide_specification]]]
+rung: procedure
 ---
 
 # Master Prompt: SSOT Doctrinal Architect

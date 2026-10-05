@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.0.0 2026-10-04: RULED — BOLO 100 C18"
 purpose: "Blank fill-in form for the Dramatica Ingest Template. One copy per Tier 3 character. It holds the locked storyform data that feeds the L12 block and the Character Astrology derivation."
 dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_step_1_source_verification_protocol", "ssot_02_character_astrology_dai"]
+rung: standard
 ---
 # 📐 SSOT: Template — Dramatica Ingest
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a narrative designer running one step of the character pipeline · **What it does:** gives the steps for each pipeline task, from Dramatica extraction to state diffs and cascades · **Type:** how-to
@@ -77,6 +77,7 @@ source_version: 1.0.1
 8. Check every modified value sits on its scale class grid. Round to the nearest valid value and document the direction.
 9. Save to the character's `states/` subfolder.
 10. If the event affects a relationship, update the relationship record's status and `state_history` too.
+11. If the event changes a place, check the setting state. Write or revise the place checkpoint that shares the same `origin_event`.
 
 ## Handle a revised storyform (Cascade)
 

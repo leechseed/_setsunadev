@@ -9,6 +9,7 @@ purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy 
 module_of: ssot_01_modern_poetics
 dependencies: ["ssot_01_modern_poetics"]
 trunk: BLACK/ORANGE
+rung: handbook
 ---
 
 # 📐 THE THREE-CHECK PASS — sweep 1, flagship roster (canonical 1.0)

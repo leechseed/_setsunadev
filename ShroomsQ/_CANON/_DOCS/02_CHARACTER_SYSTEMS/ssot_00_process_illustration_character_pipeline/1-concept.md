@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a narrative designer who needs to see how character data moves from storyform to state diffs · **What it does:** explains why the character pipeline runs as four flows with gates and how to read the illustration · **Type:** concept

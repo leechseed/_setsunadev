@@ -9,6 +9,7 @@ applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.0.0 2026-10-04: RULED — BOLO 100 C18"
 purpose: "Blank fill-in form for the Character Astrology Ingest Template. One copy per Tier 3 character. It holds the natal chart derived from the Dramatica Ingest through the DAI rules."
 dependencies: ["ssot_02_character_astrology", "ssot_02_character_astrology_dai", "ssot_02_character_astrology_12_layer_mapping", "ssot_02_template_dramatica_ingest", "ssot_02_step_1_source_verification_protocol"]
+rung: standard
 ---
 # 📐 SSOT: Template — Character Astrology Ingest
 

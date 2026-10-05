@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md
-source_version: 1.3.0
+source_version: 1.4.0
 ---
 
 **Who it's for:** a narrative designer who knows the base record · **What it does:** step lists for authoring and reading state diffs · **Type:** how-to
@@ -32,7 +32,7 @@ Field definitions live in the [reference](2-reference.md).
 flowchart TD
   A["1 Pick the fabula event_id and set origin_event"] --> B["2 Write the identifying fields"]
   B --> C["3 Fill told_at"]
-  C --> D["4 Leave narrative_moment and mc_distance_temporal generated"]
+  C --> D["4 Set narrative_moment to the time code, leave mc_distance_temporal computed"]
   D --> E["5 Author mc_distance_narrative"]
   E --> F["6 Write MODIFIED_VALUES, changed values only"]
   F --> G["7 Recompute MODIFIED_DERIVED"]
@@ -42,13 +42,13 @@ flowchart TD
 ```
 
 1. Pick the fabula `event_id` that causes the state. Set `origin_event` to it.
-2. Write `character_id`, `state_id`, `movement`, `state_version` and `base_record_version`.
+2. Write `character_id`, `state_id`, `state_version` and `base_record_version`. `movement` is a read alias now and may be left out.
 3. Fill `told_at` with the time codes where the audience sees the state. Leave it empty if the state is offstage.
-4. Leave `narrative_moment` and `mc_distance_temporal` to be generated and computed.
+4. Set `narrative_moment` to the first `told_at` time code, or to the code of `origin_event` when the state is offstage. Leave `mc_distance_temporal` to be computed. The readable label is generated.
 5. Author `mc_distance_narrative` as a judgment call.
 6. Write `MODIFIED_VALUES` under `state_diffs:`. List only changed values.
 7. Recompute the affected derived statistics. List only those that changed in `MODIFIED_DERIVED`.
-8. Re-evaluate every flag. List only those that changed in `MODIFIED_FLAGS`.
+8. Re-evaluate every flag. List only those that changed in `MODIFIED_FLAGS`. A PENDING flag that fires matches the `event_id` stored beside it in the base record.
 9. Write a `STATE_NOTE` of 2-5 sentences.
 10. Add an `ASTROLOGY_OVERLAY` only if a progression or transit is active.
 
@@ -102,6 +102,6 @@ flowchart TD
 ## Add a relationship record
 
 1. Write `relationship_id`, `character_a`, `character_b`, `relationship_type` and `status`.
-2. Start the `state_history` with the first status and moment.
+2. Start the `state_history` with the first status and its 08 time code.
 3. Add `synastry_data` only if both characters have locked charts. Compute it once.
 4. When a character diff changes `primary_attachment_object`, add a matching status change to the relationship record.

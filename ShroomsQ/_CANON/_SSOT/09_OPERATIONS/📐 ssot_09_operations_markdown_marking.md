@@ -1,6 +1,7 @@
 ---
 status: moved 2026-09-29 → 07_STYLE_GUIDES/📐 ssot_07_2b_markdown_marking.md (BOLO 92)
 tier: operations
+rung: handbook
 ---
 
 # 📐 ssot_09_operations_markdown_marking — moved

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md
-source_version: 1.3.0
+source_version: 1.4.0
 ---
 
 **Who it's for:** a new narrative designer · **What it does:** one state diff built from the source's own example · **Type:** tutorial
@@ -23,7 +23,7 @@ The crash kills Jebb and Victoria survives. Write the identity fields.
 - `character_id`: `victoria_midnight`
 - `state_id`: `vm_m1b_post_crash`
 - `origin_event`: `m1b_crash_jebb_death`
-- `movement`: `m1b`
+- `movement`: `m1b` (a read alias since 1.4.0)
 - `state_version`: `1.0`
 - `base_record_version`: `1.0.0`
 

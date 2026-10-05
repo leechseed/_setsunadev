@@ -9,6 +9,7 @@ status: "v1.0.0 2026-10-04: RULED, Chief (\"REC.\") — BOLO 100 TOUCH BATCH 1: 
 purpose: "THE TOUCHSTONES REGISTER: the one home for every Touchstone, the rules the story guides itself by, and the front door a reader enters by."
 dependencies: ["ssot_01_modern_poetics"]
 trunk: BLACK
+rung: standard
 ---
 
 # The Touchstones register

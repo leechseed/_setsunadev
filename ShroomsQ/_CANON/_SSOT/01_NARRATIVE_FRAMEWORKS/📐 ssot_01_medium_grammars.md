@@ -9,6 +9,7 @@ status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1:
 purpose: "THE MEDIUM GRAMMARS — the channel contracts: how each medium re-instruments the texture layer and constrains the ladder. Lattice limb 4 of 4; completes the lattice."
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder", "ssot_01_texture_layer", "ssot_03_setting_system"]
 trunk: BLACK (ORANGE rows ride the subsidiary firewall — craft grammar only in this public doc)
+rung: standard
 ---
 
 # 📐 SSOT: THE MEDIUM GRAMMARS — the channel contracts

@@ -10,6 +10,7 @@ applies_to: [all IPs]
 status: "v1.1.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2, IF catalog call 10: Ryan's nine-axis scoring is the genre-contract tool for 03 and 01 both; Baur stays as lineage. v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stamped module_of ssot_03_setting_system; intro refreshed (Part Three ruled and applied); item 5 closed; Part Four labeled DCUS application (phase 2) and parked; scope set to all IPs. Earlier: RULED 2026-09-29 by Chief (\"go on all those recs\") — items 1–4 and 6–9 applied in ssot_03_setting_system.md v1.3.0; item 5 BENCHED; item 10 reaffirmed (no structural change)"
 purpose: "Fold 42 new setting-shelf distills into the existing four-axis taxonomy and twelve-layer SETTING SLICE: what each layer gained, what recurs across books, what the system should change, and what it means for the DCUS instance."
 sources: [BVX.0343, BVX.0056, BVX.0362, BVX.0387, BVX.0394, BVX.0575, BVX.0822, BVX.0823, BVX.0141, BVX.0479, BVX.0483, BVX.0508, BVX.0538, BVX.0831, BVX.0835, BVX.0836, BVX.0841, BVX.0630, BVX.0245, BVX.0258, BVX.1168, BVX.1169, BVX.1170, BVX.1171, BVX.1172, BVX.1173, BVX.1174, BVX.1175, BVX.1176, BVX.1177, BVX.1179, BVX.1180, BVX.1181, BVX.1182, BVX.1183, BVX.1184, BVX.1185, BVX.1186, BVX.1187, BVX.1188, BVX.1189, BVX.1190, BVX.0458]
+rung: handbook
 ---
 
 # 📐 SSOT: THE SETTING SYSTEM — synthesis of 42 distills

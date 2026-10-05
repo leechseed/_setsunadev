@@ -10,6 +10,7 @@ status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module 
 purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the LEECHSEED Character System."
 dependencies: ["ssot_02_dramatica_integration_protocol", "ssot_02_character_systems_vertical_slice"]
 supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_modular_toolkit"]
+rung: standard
 ---
 # 📐 SSOT: Character Astrology
 

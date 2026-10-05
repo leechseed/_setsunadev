@@ -1,1 +1,46 @@
-
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/2-reference.md
+- A PENDING flag that fires here matches the `event_id` stored beside it in the base record (IF catalog call 5, ruled 2026-10-05).
+- - Each `moment` is the 08 time code, the same code a character state's `narrative_moment` carries, so the two records line up by value.
+- It also provides the MC-relative distance fields and the movement tag, which is a read alias for the `M` of the 08 time code since 1.4.0.
+- - v1.4 (2026-10-05): `narrative_moment` and relationship `state_history.moment` carry the 08 time code, and the movement tag is a read alias (IF catalog call 1).
+- - Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history` when an event changes a bond.
+- - Read by 09 (IF-02-09-05): Flow D reads the checkpoint: `character_id`, `state_id`, `origin_event`, `told_at`, `base_record_version`, `state_diffs`, STATE_NOTE, ASTROLOGY_OVERLAY and the five event types.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/2-reference.md
+- - Read by 05 (IF-02-05-03): the 05 L02 link check resolves each catalog group or person pointer to a 02 node.
+- - Read by 01 (IF-01-02-14): the trope register reads Tori's L5 WOUND instance, the car crash that kills Jebb, as its SIGNATURE WOUND record.
+- Takes `catalog_ref` (3.4.0, IF catalog call 3): a list of 05 catalog entry ids (`WB-<TYPE>-<nnnn>`), such as the community's WB-GRP entry.
+- Takes `catalog_ref` (3.4.0, IF catalog call 3): a list of 05 catalog entry ids, such as the regime that ranks him.
+- - `catalog_ref` (3.4.0, IF catalog call 3) sits on `system_exposure.layers.regime` and on `tech_level`: a 05 catalog entry id (`WB-<TYPE>-<nnnn>`).
+- - `origin_event` (3.4.0, IF catalog call 5, Static): an optional pointer to the fabula `event_id` that begins the character's existence.
+- - `rail_ref` (3.4.0, IF catalog call 2, Static): a list of the 06 theme rails (R1 to R4) this character carries, for example R2 for Tori.
+- - `touchstone` (3.4.0, IF catalog call 4): holds the TS n:m id, for example `TS 1:1`, so a query joins the Touchstones register.
+- **Flag event (IF catalog call 5, ruled 2026-10-05).** A PENDING flag stores the `event_id` of the fabula event that fires it, beside the flag state.
+- **Anna Colson (the copy), record stub (IF catalog call 5, ruled 2026-10-05).** The fabula gives the copy her own origin event, `backstory_colson_copy_made`.
+- The variable registry cites this table for every alias it does not carry itself (IF-00-02-28, IF catalog call 4, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/3-how-to.md
+- Where a field names a world fact (a regime, a community, a civic standing or a tech level), set its `catalog_ref` to the 05 catalog entry id.
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_dramatica_integration_protocol/2-reference.md
+- The field holds the Touchstone's TS n:m id, for example `TS 1:1` (1.3.0, IF catalog call 4, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/2-reference.md
+- It holds the TS n:m id, and the slug is its alias (1.1.0, IF catalog call 4, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/2-reference.md
+- Reads from 04 (IF-03-04-18): each fabula event carries `source_kind:`, one of the five categories (construction, institutional, ownership, rename, seasonal) or `character`.
+- Its `scheduled:` field holds a LEDGER_DUE future state, which carries the 08 time code (IF catalog calls 1 and 5, ruled 2026-10-05).
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/2-reference.md
+- Settled 2026-10-05 (IF catalog call 10): Ryan's scoring is the tool for 03 and 01 both, and Baur stays as lineage.
+- The newest entry is 1.1.0 (2026-10-05, BOLO 102 stage 2, Chief Q: IF catalog call 10, Ryan's scoring is the genre-contract tool for 03 and 01 both).
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/2-reference.md
+- Theme record, focal and checks (1.11.0): the writer fills `rail_tested`, `side_argued` and `gauge` from 06, beside the `citation` and `transcript` tests.
+- The second is Ryan's nine-axis scoring (BVX.0630) as the genre-contract tool for 03 and 01 both (IF catalog call 10, ruled 2026-10-05), with Baur's five lineages as lineage.
+- - Read by 00 (IF-00-03-01): the variable registry reads `setting_ref` {setting_id, S-layer}, an optional sub-field of T2.WOUND.triggers and of T3.ORIGIN `origin_class` and `origin_disciplinary_formation` entries.
+- - Read by 06 (IF-03-06-04): 06 reads images already present in the setting material, such as the Feed and the uniform, as motif candidates.
+- - Read by 09 (IF-03-09-01): the process pipeline cites `setting_ref` in the L7 to L12 variable stacks where the place has an S4, S6 or S8 entry.
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/2-reference.md
+- **To the readers of the world clock.** Read by 01 (IF-01-04-06): the story registry reads the universe eras 1 to 5 and the world clock.
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_plot_system/2-reference.md
+- It also owns the storyform record: the entry keyed by `storyform_id` that character (02), setting (03) and P12 bind to (IF catalog call 4).
+- **Does not own:** world time (fabula), legal moves (trope graph), structure (Dramatica sets it; this doc keeps the storyform record), psychology (the character database), place (03).
+- - **P7 receives from UNDERSIDE_SURFACING (2026-10-05).** When 03's flag fires, an S10 fact moves from secret to folk, or from folk to public.
+- - **P11 `order_told` is a time code (2026-10-05).** The writer gives the unit's position in the telling as an 08 time code.
+- - **The theme record (2026-10-05).** The plot card carries `rail_tested` (R1 to R4), `side_argued` and `gauge` (a name and a step).
+- - Reads from 00 (IF-00-04-03): `T1.SOCIAL.community_membership.standing` `{earned_by, vouched_by, cost_to_lose}` is the standing a unit can put at risk.

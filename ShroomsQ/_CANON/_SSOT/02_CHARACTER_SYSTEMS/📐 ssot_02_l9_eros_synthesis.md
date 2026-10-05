@@ -1,7 +1,7 @@
 ---
 type: ssot_synthesis
 category: character_systems
-version: 1.0.1
+version: 1.1.0
 tier: fabula
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT]
@@ -13,6 +13,7 @@ dependencies:
 module_of: ssot_02_character_systems_vertical_slice
 trunk: BLACK
 sources: [MSX.18, MSX.19, MSX.20, MSX.21, MSX.22, MSX.23, MSX.24, MSX.25, MSX.26, MSX.27, MSX.28, MSX.29, MSX.30, MSX.31, MSX.32, MSX.33, MSX.34, MSX.35, MSX.36, PSY.08, PSY.09, PSY.10, PSY.11, PSY.12, PSY.13]
+rung: handbook
 ---
 
 # 📐 SSOT: L9 EROS Synthesis — the sexuality shelf read against the schema
@@ -138,7 +139,7 @@ Numbered, at most ten, each a concrete rule change with cites and a one-line rec
 - **`practice_repertoire` and `scene_vocabulary` (MSX.21, MSX.35) may be one field, not two.** Both name a concrete-acts-and-dialogue vocabulary; whether they merge or stay separate (technique versus register) is unresolved here.
 - **Foucault's claim (MSX.36) is structurally different from the other 24 distills.** Every other source treats `shame_index` as a value to score; Foucault argues the naming event that produces a sexual identity is itself a power mechanism, prior to any scoring. This may mean `shame_index`/`shadow_content` need an origin-event field, not just a number — closer to proposal #10 than to proposal #5, and possibly the same open item.
 - **No source in this wave addresses lesbian or WLW-specific desire architecture.** The whole shelf is gay/bi/queer male plus mixed-gender academic and clinical sources; L9's only AUTHORED instance (Victoria Midnight) is a woman, but the wave that was supposed to fill her "orientation and partners" gap skews male. Whether that gap is now closed, widened, or simply relocated is a call for Chief, not this synthesis. **RULED 2026-09-29:** logged to the acquisition list as a shelf gap — the whole-spectrum sexuality library sweep already running covers it; no new acquisition action fired by this synthesis alone.
-- **`venue_comfort_and_practice` (three sources: MSX.20, MSX.29, PSY.12) sits ambiguously between L7 and L9.** All three distills' own `feeds:` blocks split it across both layers. This synthesis followed the majority keying (L9 primary) but the schema owner should confirm which layer actually owns "comfort in a sexualized space." Not ruled this pass — `venue_comfort_and_practice` was not among the ten applied changes.
+- **`venue_comfort_and_practice` (three sources: MSX.20, MSX.29, PSY.12) sits ambiguously between L7 and L9.** All three distills' own `feeds:` blocks split it across both layers. This synthesis followed the majority keying (L9 primary) but the schema owner should confirm which layer actually owns "comfort in a sexualized space." Not ruled this pass — `venue_comfort_and_practice` was not among the ten applied changes. **Update 1.1.0 (IF catalog call 3, ruled 2026-10-05, IF-02-03-07):** the schema pass merged this field into `community_membership` (L3). That field now takes `catalog_ref`, a pointer to the 05 catalog entry for the room or venue.
 
 ## 7. Version history
 
@@ -148,3 +149,4 @@ Numbered, at most ten, each a concrete rule change with cites and a one-line rec
 |0.2.0|2026-09-29|RULED 2026-09-29, Chief: "Rex" — all ten proposed changes APPLIED in [ssot_02_character_systems_vertical_slice.md](📐%20ssot_02_character_systems_vertical_slice.md) v2.2.0: `consent_posture`, `client_script`, `signal_fluency`, `resolution_type` (under `desire_vector`), `exposure_shame`/`role_shame` (splitting `shame_index`, kept as a read alias), `arousal_curve` (under `erotic_blueprint_type`), `erotic_pacing` (Core Methodology writing rule, no field), `erotic_safety_precondition_scope`, `disclosure_posture` (on L9, L3's kept), and `template_origin` (L9→L8 pointer). The WLW/lesbian gap (open question) logged to the acquisition list. Status updated PROPOSED → RULED.|
 |1.0.0|2026-10-04|RULED, Chief ("rec", BOLO 100 C20): stamped 1.0.0 as the L9 EROS module of the character system (`module_of` set). Content unchanged; its ten changes have been live since character 2.2.0.|
 |1.0.1|2026-10-05|BOLO 102 batch C (Chief: "all recs"): a Method section added before section 1: the nine-step procedure, Chief orders the pass and rules each change (C60). Content otherwise unchanged.|
+|1.1.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): open question on `venue_comfort_and_practice` notes the merge into `community_membership` and its new `catalog_ref`.|

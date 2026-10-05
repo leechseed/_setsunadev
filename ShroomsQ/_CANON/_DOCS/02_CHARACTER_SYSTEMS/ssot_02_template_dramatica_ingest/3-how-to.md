@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_dramatica_ingest.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer filling a Dramatica ingest for a Tier 3 character · **What it does:** numbered steps for each fill, generate and lock task · **Type:** how-to

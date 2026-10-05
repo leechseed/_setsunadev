@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md
-source_version: 1.3.0
+source_version: 1.4.0
 ---
 
 **Who it's for:** a narrative designer or writer looking up a field or rule · **What it does:** lists every component of the state architecture · **Type:** reference
@@ -79,8 +79,8 @@ A state record is a structured block. It describes the delta between the base re
 | `state_id` | Unique identifier | `vm_m1b_post_crash` |
 | `origin_event` | (v1.1) The fabula event that produced the state. An `event_id` from [📐 ssot_04_fabula.md](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays | `m1b_crash_jebb_death` |
 | `told_at` | (v1.2) List of time codes where the audience is shown this state, per [📐 ssot_08_tracking_system.md](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4. An empty list means true but offstage | `["M2 · Q1 · S04 \| 012.3.2"]` |
-| `narrative_moment` | (v1.2) Generated from the time code, not authored. A readable label from `origin_event` and `told_at` | `Movement 1B — immediately after the crash` |
-| `movement` | Which movement the state falls in | `m1b` |
+| `narrative_moment` | The 08 time code of the moment the state takes hold (IF catalog call 1, ruled 2026-10-05). It is the first entry in `told_at`. An offstage state takes the code of its `origin_event`. The readable label is generated from the code. Free text retires as an alias | `M2 · Q1 · S04 \| 012.3.2` |
+| `movement` | Read alias (IF catalog call 1, ruled 2026-10-05): the `M` of the time code. The movement tag retires as a key. A v1.3 record keeps it for reading | `m1b` |
 | `mc_distance_temporal` | (v1.2) Computed, not authored. Distance from Tori's time code, with Tori fixed at (0,0) | `0` (this IS Tori) |
 | `mc_distance_narrative` | Causal steps from the MC's throughline. Stays authored | `0` |
 | `state_version` | Version of this state record | `1.0` |
@@ -133,7 +133,7 @@ MODIFIED_DERIVED:
 
 ### Modified Flags Block
 
-Flags are re-evaluated against the modified values. Only flags whose state changes from the base appear.
+Flags are re-evaluated against the modified values. Only flags whose state changes from the base appear. A PENDING flag that fires here matches the `event_id` stored beside it in the base record (IF catalog call 5, ruled 2026-10-05). That `event_id` is this state's `origin_event`.
 
 ```
 MODIFIED_FLAGS:
@@ -245,11 +245,14 @@ Relationships live in a separate structure, so one character's event never force
 | `relationship_type` | Category | `sibling` / `romantic` / `antagonist` / `mentor` / `institutional` |
 | `status` | Current state | `active` / `severed` / `transformed` / `dormant` |
 | `synastry_data` | Chart comparison data, if both have charts | `[aspect mesh, composite chart variables]` |
-| `state_history` | Array of relationship state changes | `[{moment: m1a, status: active}, {moment: m1b_post_crash, status: severed}]` |
+| `state_history` | Array of relationship state changes. Each `moment` is an 08 time code (IF catalog call 1, ruled 2026-10-05); movement tags retire as aliases | `[{moment: "<time code before the crash>", status: active}, {moment: "<time code of the crash>", status: severed}]` |
+
+**Ownership (IF catalog call 4, ruled 2026-10-05).** This doc owns the REL.* variables. Each field in the table is `REL.<field>`, for example `REL.relationship_type`, `REL.status` and `REL.state_history`. The variable registry cites this table and does not restate it. `status` and `state_history` are Dynamic. Every other field is Static.
 
 ### Relationship State Changes
 
 - A relationship record keeps its own timeline of status changes keyed to narrative moments.
+- Each `moment` is the 08 time code, the same code a character state's `narrative_moment` carries, so the two records line up by value.
 - The changes are linked to, but not stored in, character state diffs.
 - When a diff changes `primary_attachment_object`, the relationship record should show a status change at the same moment.
 
@@ -264,7 +267,15 @@ Relationships live in a separate structure, so one character's event never force
 This document defines character state tracking. It does not define story structure, scene sequencing or timeline management.
 
 - Since v1.1 the world timeline is [📐 ssot_04_fabula.md](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). It owns every event. A state points to one through `origin_event`.
-- This doc provides to plot_systems the state diff format and the narrative moment identification scheme. It also provides the MC-relative distance fields and the movement tagging.
+- This doc provides to plot_systems the state diff format and the narrative moment identification scheme. It also provides the MC-relative distance fields and the movement tag, which is a read alias for the `M` of the 08 time code since 1.4.0.
 - plot_systems will provide: the movement sequence definition and the scene-to-state mapping.
 - v1.1 (2026-09-24): the first structured key landed. One event may produce states in several characters. `narrative_moment` and `movement` stay as readable tags. Calendar coordinates wait on a world calendar (dated by movement until then).
 - v1.2 (2026-09-29): the time code (`M2 · Q1 · S04 | 012.3.2`) comes from ssot_08. It is the key that `told_at` carries. Victoria-as-(0,0) is ruled. `mc_distance_narrative` stays authored.
+- v1.4 (2026-10-05): `narrative_moment` and relationship `state_history.moment` carry the 08 time code, and the movement tag is a read alias (IF catalog call 1). This doc owns the REL.* variables (call 4). A PENDING or FIRED_PRE_STORY flag stores an `event_id` (call 5).
+
+**Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
+
+- Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history` when an event changes a bond. For example, `active` becomes `severed` after a trauma event.
+- Read by 09 (IF-02-09-05): Flow D reads the checkpoint: `character_id`, `state_id`, `origin_event`, `told_at`, `base_record_version`, `state_diffs`, STATE_NOTE, ASTROLOGY_OVERLAY and the five event types.
+- Read by 08 (IF-02-08-08): 08 reads the query-assembly protocol, "Querying a Character at a Narrative Moment", to wire its inspector panel.
+- Written to 04 (IF-02-04-14): each fabula event's `produces:` list names the `state_id`s whose `origin_event` is that event. The state record keeps only the forward pointer.

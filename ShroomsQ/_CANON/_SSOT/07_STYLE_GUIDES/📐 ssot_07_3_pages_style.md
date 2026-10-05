@@ -14,6 +14,7 @@ purpose: "How artifacts and pages look: the foundation design system, then the p
 dependencies: ["[[📐 ssot_00_bold_venture_design_system]]"]
 trunk: BLACK
 sources: ["memory: default-colorway", "memory: thin-chrome", "memory: ck3-hover-layer-required", "memory: mermaid-static-dom-only", "memory: sitrep-front-page", "memory: learning-tools-minimal", "_tools/bolostatus/work/92/SHELF.md §07.3 Pages"]
+rung: standard
 ---
 
 # 📐 ssot_07_3_pages_style — how the Command's pages look

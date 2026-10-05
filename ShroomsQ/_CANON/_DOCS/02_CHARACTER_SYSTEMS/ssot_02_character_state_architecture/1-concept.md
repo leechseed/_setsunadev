@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md
-source_version: 1.3.0
+source_version: 1.4.0
 ---
 
 **Who it's for:** a narrative designer or writer tracking change over a story · **What it does:** explains why a character's record never changes while the character does · **Type:** concept

@@ -9,6 +9,7 @@ status: "canonical — Pattern 1 and Pattern 2 ruled 10/4 (BOLO 100/101); the ha
 trunk: BLACK
 purpose: "The Pattern half of the foundation: the simple cycles the Command reuses at every scale, stacked into emergent structure. Lists each pattern with its steps, its tier, and its scales."
 dependencies: ["ssot_00_epistemology_truth_verification", "ssot_00_variable_registry", "ssot_00_module_architecture", "ssot_00_base_60_number_system", "ssot_01_scale_ladder", "SOP.md §1"]
+rung: handbook
 ---
 
 # 📐 SSOT: Pattern Library

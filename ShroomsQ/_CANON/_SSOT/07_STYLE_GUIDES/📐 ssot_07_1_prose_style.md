@@ -10,6 +10,7 @@ purpose: "07.1 PROSE — the universe-wide prose style guide: how the LEECHSEED 
 dependencies: ["oxo-telling-profile", "ssot_01_texture_system", "ssot_01_texture_layer", "ssot_01_modern_poetics", "ssot_01_medium_grammars (M1 PROSE)", "ssot_01_touchstones_register (TS 1:1)", "ssot_01_genre_system (cultcore)", "ssot_08_tracking_system (tempo)", "ssot_05_worldbuilding_system (LNG entries)", "ssot_06_theme_system (THE MOTIFS)"]
 trunk: BLACK
 sources: ["_tools/bolostatus/work/92/SHELF.md — 07.1 Prose shelf, tier 1/2, held not read"]
+rung: standard
 ---
 
 # 📐 SSOT: 07.1 PROSE — how the LEECHSEED stories read on the page

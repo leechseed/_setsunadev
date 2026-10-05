@@ -9,6 +9,7 @@ status: legacy
 purpose: "Defines the operational protocol for the Goon Room environment within the LEECHSEED narrative system."
 dependencies: ["[[📐_ssot_09_operations_writing_guide]]"]
 status_note: "legacy (2026-02); split out of 07.2a on 2026-10-04, BOLO 92 merge call 4. Kept as the record, not read as doctrine."
+rung: handbook
 ---
 
 # 📐 ssot_09_operations_goon_room_protocol
