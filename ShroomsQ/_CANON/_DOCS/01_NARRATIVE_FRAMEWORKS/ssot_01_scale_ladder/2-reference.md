@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_scale_ladder.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or builder looking up a ladder fact · **What it does:** lists each rung, thread, address and rule · **Type:** reference
 
 # The scale ladder: reference
 
-Source: [📐 ssot_01_scale_ladder.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md). Version 1.0.1. Canonical, Module 1 of the lattice, delivered on Chief's clear 2026-08-25. Trunk: BLACK. Applies to OVEREXITOUT, all future IPs, BVX-LEARN keying. Why: [concept](1-concept.md).
+Source: [📐 ssot_01_scale_ladder.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_scale_ladder.md). Version 1.1.0. Canonical, Module 1 of the lattice, delivered on Chief's clear 2026-08-25. Trunk: BLACK. Applies to OVEREXITOUT, all future IPs, BVX-LEARN keying. Why: [concept](1-concept.md).
 
 ## THE RUNGS — bottom-up
 
@@ -83,6 +83,7 @@ Rungs are containers. Each has a definition, a completion test, a governing syst
 - **Is:** multiple IPs sharing substrate: world rules, entities, systems. The integration protocol scopes `applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]`.
 - **Completion test:** none. A universe never completes. The test is canon integrity.
 - **Governed by:** the canon machinery: `_CANON_NODES/` plus the SSOT system. Cross-IP arguments would be R7 meta-forms spanning IPs (flagged).
+- **Catalog (IF catalog call 3, ruled 2026-10-05):** the writer holds R8's shared world rules, entities and systems as entries in the [05 worldbuilding catalog](../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) (`WB-<TYPE>-<nnnn>`). The canon-integrity test reads those entries.
 - **Holdings:** Collaborative Worldbuilding (0067); the worldbuilding shelf.
 
 ## THREADS — what runs through the containers
@@ -94,7 +95,7 @@ A thread is a tracked line of change with a span, not a boundary.
 | Character arc | Resolve line: the MC's Change or Steadfast progression | R5, visible per scene |
 | Setting arc | A place's state over time (Module 2) | Any, scene to universe |
 | Relationship arc | The RS throughline's growth | R5; braids across R6 forms |
-| Thematic motif | An Issue or Counterpoint recurrence | Any |
+| Thematic motif | An Issue or Counterpoint recurrence; the 06 theme system supplies the rails R1–R4 and the `motif.<slug>` ids | Any |
 | Trope instance | A register entry playing out | Any |
 
 Rule: arcs are threads, never containers. Provisional house ruling, awaiting Chief.
@@ -104,6 +105,8 @@ Rule: arcs are threads, never containers. Provisional house ruling, awaiting Chi
 Touchstones are neither containers nor threads. A thread changes. A Touchstone forbids. They are the standing constraint layer, governed by `DOCTRINE-0-INVARIANTS.md`. Its meta-rule IV ("holds at every scale: line, scene, movement, series") is this ladder's dimension.
 
 **Enforcement rule:** every rung's completion test carries one last implicit clause: and no in-scope Touchstone is breached. A scene that turns while breaking a Touchstone is a breach (meta-rule VII). It invalidates downstream units that trusted it.
+
+**Breach record (IF catalog call 6, ruled 2026-10-05):** the writer logs each breach in the Touchstone breach log in 08 §9A (address · TS id · invalidated units). The address is an 08 time code.
 
 **Census mapped to rungs:**
 
@@ -130,7 +133,17 @@ Any unit or thread span gets a canonical address: `IP.form.act.sequence.scene.be
 | `OXO.primary.M2.q3.s12.b4` | A beat (R1) |
 | `tori.arc[OXO.primary.M1–M6]` | A thread span |
 
-Tree addresses (`SPINE.Lx`) locate concepts. Ladder addresses locate instances. A library source keys to tree addresses. A manuscript unit keys to ladder addresses. Notation is provisional until Chief rules.
+Tree addresses (`SPINE.Lx`) locate concepts. Ladder addresses locate instances. A library source keys to tree addresses. A manuscript unit keys to ladder addresses. 
+**One address (IF catalog call 1, ruled 2026-10-05).** The 08 time code (`M2 · Q1 · S04 | 012.3.2`, 08 §The address) is the one address for anything dated, in any system. This scheme maps onto it, as the table below shows. `IP.form` names the story, and the story's tracking file carries it, not the code.
+
+| Ladder part | Time-code part |
+|---|---|
+| Movement `M<n>` | `M<n>` |
+| Sequence `q<n>` | `Q<n>` |
+| Scene `s<nn>` | `S<nn>` |
+| Beat `b<n>` | The `bar.beat` after the `|` |
+
+So `OXO.primary.M2.q3.s12` reads `M2 · Q3 · S12`.
 
 ## LADDER × LIBRARY
 
@@ -148,6 +161,8 @@ Tree addresses (`SPINE.Lx`) locate concepts. Ladder addresses locate instances. 
 | McErlean 0126 | R7 |
 | Collaborative Worldbuilding 0067 | R8 |
 
-**Open items the source lists:** arc-as-thread ruling; address notation; the Movement-to-Signpost table (6 movements × 4 signposts × 4 throughlines). The source also lists IP-level and cross-IP meta-forms (supported, not designed). The SCENE CARD slot was delivered with Module 2.
+**Interfaces.** Read by 00: the pattern library takes R1–R8 as the values of each pattern's Scales field (IF-00-01-01). Naming rule (IF catalog call 10, ruled 2026-10-05): "scale ladder" means R1–R8 only. The 05 worldbuilding system calls its three tiers "the reach".
+
+**Open items the source lists:** arc-as-thread ruling; the Movement-to-Signpost table (6 movements × 4 signposts × 4 throughlines). The source also lists IP-level and cross-IP meta-forms (supported, not designed). The SCENE CARD slot was delivered with Module 2.
 
 Dependencies: ssot_01_story_spine_comparative_tree, ssot_02_dramatica_integration_protocol.

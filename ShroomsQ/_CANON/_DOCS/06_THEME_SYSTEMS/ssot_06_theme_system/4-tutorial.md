@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.3.2
+source_version: 1.4.0
 ---
 
 **Who it's for:** a writer new to theme · **What it does:** walks the four-part method on OVEREXITOUT · **Type:** tutorial
@@ -40,6 +40,7 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 5. Do the relationship pair, Suspicion versus Evidence.
 6. Compare with the reference's rails table. Your wording may differ; Chief handpicked the plain words.
 7. Read the four together. They should sum to the controlling idea. The world forecasts, Tori trusts her eyes, Anna wins as dealt, and the rivalry settles whose account survives.
+8. Fill `holders:` on each rail. Rail 2 holds `character:tori`, and rail 3 holds `character:anna`.
 
 ## Step 3: step the value scale
 
@@ -57,6 +58,8 @@ You will rebuild OVEREXITOUT's theme in four steps. Keep the [reference](2-refer
 2. Tie each to a rail or a step. The Feed ties to debate 1 and the "You're managed, not free" step.
 3. Run the two checks. Does the image recur? Do its uses converge on one meaning?
 4. Confirm that the door ties to Tori's Growth, Stop. Her door is always in reach until she takes it.
+5. Mint each motif's id. The Feed becomes `motif.the_feed`.
+6. Set the Feed's `motif_ref` to WB-TEC-0001, the catalog entry for the Feed. The uniform and the door have no entry, so their `motif_ref` stays empty.
 
 ## Step 5: run the handshake
 

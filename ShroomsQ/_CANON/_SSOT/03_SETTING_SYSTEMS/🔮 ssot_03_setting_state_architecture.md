@@ -1,12 +1,12 @@
 ---
 type: ssot_03_setting_systems
 category: state_architecture
-version: 1.2.0
+version: 1.3.0
 tier: fabula
 module_of: ssot_03_setting_system
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [all IPs]
-status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stamped module_of ssot_03_setting_system; origin_event no-record rule written; DCUS rename lattice values parked; Modified Flags block points to the SETTING FLAGS starter set; scope set to all IPs. Earlier: RULED 2026-09-29 — BOLO 90 step 3; 1.1.0 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Checkpoint 3 gets a told_at note, the backstory movement tag is ruled (not proposed), backward diffs stated as Rule 7"
+status: "v1.3.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2, IF catalog calls 1 and 5: §8 names the fabula event's `source_kind:` as its read and the `scheduled:` field for LEDGER_DUE future states. v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 setting batch 1: stamped module_of ssot_03_setting_system; origin_event no-record rule written; DCUS rename lattice values parked; Modified Flags block points to the SETTING FLAGS starter set; scope set to all IPs. Earlier: RULED 2026-09-29 — BOLO 90 step 3; 1.1.0 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Checkpoint 3 gets a told_at note, the backstory movement tag is ruled (not proposed), backward diffs stated as Rule 7"
 purpose: "Defines the architecture for tracking place change over narrative time without modifying the static base Setting Slice. Establishes the state diff system for places, the state record format, checkpoints and story points, state sources, faction-card state, and boundaries with the static Setting Slice, the tracking system, and the fabula. Mirrors ssot_02_character_state_architecture layer for layer, the way the Setting Slice itself mirrors the LEECHSEED Character System."
 dependencies: ["ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_08_tracking_system", "ssot_04_fabula", "delta-coast-ultra-school (first instance)"]
 ---
@@ -223,6 +223,8 @@ To assemble the complete place at a given moment:
 
 State diffs for a place are produced by five categories of narrative event, mirroring the character doc's five-category structure.
 
+**Reads from 04 (IF-03-04-18).** Each fabula event carries `source_kind:`, one of these five categories (construction · institutional · ownership · rename · seasonal) or `character`. This doc reads it to learn which S-layers the event touches. The event's `produces:` field lists the `state_id`s it yields. Its `scheduled:` field holds a LEDGER_DUE future state, which carries the 08 time code (IF catalog calls 1 and 5, ruled 2026-10-05).
+
 ### Category 1: Construction/Damage Events
 
 **Signature:** S1 BODY changes (a structure built, damaged, or demolished). S5 SCAR may accrete an entry if the damage is not repaired. S11 VECTOR may shift.
@@ -419,6 +421,7 @@ STATE_NOTE: >
 
 | Version | Date | Changes |
 |---|---|---|
+| 1.3.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): IF catalog calls 1 and 5. §8 names the fabula event's `source_kind:` as this doc's read of which S-layers an event touches, with `produces:` and `scheduled:` (LEDGER_DUE future states carry the 08 time code). |
 | 1.2.0 | 2026-10-04 | RULED 2026-10-04, Chief ("REC"), BOLO 100 setting batch 1. Stamped `module_of: ssot_03_setting_system`. `applies_to` is now all IPs; §11 labeled a worked example (phase 2 fills). §4 `origin_event` gains the general rule: if no fabula record exists, write the `backstory_<slug>` id with `⏸ <pass name> (phase 2)`, never blank, never invented. The three DCUS `origin_event` values and the S9 and S10 checkpoint values are parked as `⏸ DCUS rename lattice fill pass (phase 2)`; the hurricane example is labeled hypothetical. The Modified Flags block and Rule 4 point to the SETTING FLAGS starter set in ssot_03. Proposal-glyph history text reworded. |
 | 1.1.0 | 2026-09-29 | RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). Checkpoint 3 (§11) gets a note: the M2 grief sequence is its first onstage attestation of the Administration's diagnostic, time code pending. `movement` tag reworded to `movement: "backstory"` throughout (§4 table, all three checkpoints, the "note on movement" paragraph) — the tag is now ruled, not proposed; `origin_event` values stay proposed, unchanged, since the fabula's own registry still has no entry for these transitions. §6 gains Rule 7: backward diffs are allowed by rule, not merely an unlabeled usage; §11's "note on direction" updated to point at it. Additive; no field removed. |
 | 1.0.0 | 2026-09-29 | Initial document. BOLO 90 step 3, RULED 2026-09-29 ("Recommendations"): mirrors ssot_02_character_state_architecture v1.2.0 for places — the core principle (static base slice vs dynamic diffs), the per-S-layer static/dynamic table (S5 SCAR accretes, S7 FOUNDING static, header names dynamic), the state record format (`place_id`/`state_id`/`origin_event`/`told_at`/`narrative_moment`/`movement`/`state_version`/`base_slice_version`), the `state_diffs` parent (`MODIFIED_LAYERS`/`MODIFIED_HEADER`/`MODIFIED_FLAGS`), the six diff rules (Rule 1a for S5's append-only accretion, Rule 6 amended to checkpoints only), checkpoints and story points per ssot_08, the query protocol, five state-source categories (construction/damage, institutional change, ownership change, rename/erasure, seasonal/cyclic), a short faction-state section, and boundaries with ssot_08 and the fabula. THE INSTANCE: the DCUS rename lattice as three checkpoints (Skeeter Creek founding → Red Hills rename → DCUS/Bishop rebrand), all three `origin_event` values proposed pending a fabula ruling, the 9/24-ruled scrub test stated as a mechanical requirement. |

@@ -1,15 +1,15 @@
 ---
 type: ssot_01_genre_system
 category: genre_system
-version: 1.0.1
+version: 1.1.0
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [all IPs]
 status: "v1.0.1 2026-10-04: OPEN 8, 9, 11 LANDED in their home docs (BOLO 100 genre cross-doc). v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: stale marks stripped, OXO bench and cultcore conventions parked by name for phase 2, contract state track, ingredient triad rule, expiry_note field, G4 affect note and genre-load metric written, mode row landed in medium grammars, OPEN closed, scope relabeled method vs worked example. v0.1.3 2026-09-29: BOLO 77 (77-Z/77-AC), Chief: '1.0' — cultcore RULED as OXO's series genre (BOLO 91: 'cultcore — the genre of the outsiders'), slotted into THE INSTANCE's G1 LABEL; G3 CONTRACT gains 3-5 cultcore conventions, each then open pending Chief. v0.1.2 2026-09-16: the drop-folder intake folded in (Brody, Aristotle), two OPEN calls added, slice unchanged. v0.1.1 2026-09-16: the thirteen OPEN calls RULED as recommended (Chief: \"genre calls go\"). v0.1.0 2026-09-16 (BOLO 18 genre wave, Chief: \"genre wave go\"): written from the L7 shelf; the twelve G-layer names were house coinage then awaiting ruling; the OXO genre contract instanced as a bench, not a ruling; provisional"
 rung: standard
 dependencies: ["ssot_01_story_spine_comparative_tree", "ssot_01_medium_grammars", "ssot_01_texture_system", "ssot_03_setting_system", "ssot_04_plot_system", "ssot_02_character_systems_vertical_slice"]
 trunk: BLACK
-sources: [BVX.0191, BVX.0576, BVX.0580, BVX.0581, BVX.0614, BVX.0599, BVX.0236, BVX.0163, BVX.0175, BVX.1125, BVX.1126]
+sources: [BVX.0630, BVX.0458, BVX.0191, BVX.0576, BVX.0580, BVX.0581, BVX.0614, BVX.0599, BVX.0236, BVX.0163, BVX.0175, BVX.1125, BVX.1126]
 purpose: "THE GENRE SYSTEM, v1.0: the fifth top-layer model beside character (02), setting (03), plot (04), and texture (01, the texture system); the outermost ring of the story spine, L7 genre, medium, audience, market, promoted to a twelve-layer GENRE SLICE, the GENRE CARD and GENRE CONTRACT instruments, and an OXO worked example (phase 2 fills) as proof of decision-menu use, not a ruling."
 ---
 
@@ -137,6 +137,8 @@ Same architecture as the LEECHSEED Character System, the SETTING SLICE, the PLOT
 
 A few of these layers compress a lot, and are worth unpacking once. G5 STANCE carries Todorov's spectrum: the hesitation, sustained or resolved, and the resolution mode it settles into, uncanny, marvelous, or the pure fantastic held at the median. G6 DELIVERY carries Mendlesohn's four delivery modes, portal-quest, immersive fantasy, intrusion, liminal, none interchangeable with another; a technique native to one reads as leaden or overcontrived in the next. G7 VERISIMILITUDE carries the two verisimilitudes (Neale), the generic regime a genre licenses internally and the cultural regime everyday belief still measures it against. G4 ARGUMENT holds only the propositional binary: affective telos (catharsis, wonder) lives on the texture mood curve, T7; G4 never takes it. G1 LABEL keeps Neale's own finding that industry label, marketing label, and critical label are three fields, never one, because the inter-textual relay, posters, trailers, reviews, is often the only place a genre's real definition ever gets tested against actual use.
 
+**Handoffs (IF-01-06-08, IF-01-05-08; IF catalog calls 2 and 3, ruled 2026-10-05).** The writer hands G4's `core_binary`, `mind_action_view` and `thematic_recipe` to the [06 theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) as the seed of the controlling idea. The writer points G8's `world_build` promise at the [05 worldbuilding catalog](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md): the `WB-<TYPE>-<nnnn>` entries (rules, institutions) that make the promise good. The setting slice still holds the places.
+
 **Binding rule (mirror of the character, setting, plot, and texture bindings):** G12 is fed independently from the storyform, exactly as L12, S12, P12, and T12 FUNCTION are, keyed by `storyform_id`. A genre entry with G12 empty is a shelf label, a set of owed conventions with no argument to serve; a genre entry with G12 filled is the argument's contract, the way a specific work's chosen genres are doing structural work for a throughline's signpost, not merely decorating it. Whether the count should hold at twelve or run to fewer, matching the shelf's actual convergence, is OPEN call 1; the twelve names are OPEN call 2. Medium is deliberately not a G-layer: it belongs to the medium grammars doc, linked here at G1 (a work's label can be medium-specific, a mini-series label reads differently from a novel's) and G8 (a genre's world promise re-instruments per M1 through M10), never re-derived on this slice.
 
 ---
@@ -184,9 +186,11 @@ contract_state:    a list, parallel to Axis 4 TIME; each entry
                    or resolution mode), and the new value
 ```
 
-**Contract state track:** the contract is fixed once per work unless `contract_state` says otherwise. When the mode shifts, the writer adds an entry. Example: an intrusion contract turns into portal-quest at a named unit ([[BVX.0599]]). Units before `from_unit` read the first value; units from it onward read the new one.
+**Contract state track:** the contract is fixed once per work unless `contract_state` says otherwise. When the mode shifts, the writer adds an entry. Example: an intrusion contract turns into portal-quest at a named unit ([[BVX.0599]]). Units before `from_unit` read the first value; units from it onward read the new one. The `from_unit` value is an 08 time code (IF-01-08-12; IF catalog call 1, ruled 2026-10-05).
 
 Selbo's overriding genre must clear its own criteria in full; a supporting genre only counts toward the mix if its own criteria are substantially met too, never merely gestured at by setting or iconography. The plot card's P10 line is the per-unit discharge of the GENRE CONTRACT's obligations owed, exactly as the scene card's telling line is texture's per-unit override of the Telling Profile: neither card restates the whole instrument, each fires the one field the unit actually needs.
+
+**Genre-contract tool (IF-01-03-34; IF catalog call 10, ruled 2026-10-05).** Ryan's nine-axis ontological scoring ([[BVX.0630]]) is the genre-contract tool for 01 and 03 both. Baur's five-lineage taxonomy ([[BVX.0458]]) stays as lineage.
 
 **The genre-load metric (method).** It measures how much of one unit's work goes to the contract. The writer scores each unit on `genre_load`, an integer from 0 to 3. 0 means the unit owes nothing and discharges nothing. 1 means it touches an obligation in passing. 2 means it discharges or breaches one obligation as a main beat. 3 means the unit exists to discharge or breach the contract. The writer scores only units whose `genre_obligation` (P10) is filled; the rest stay blank, not 0. The field sits on the plot card, and the scene card that inherits it, directly under P10 GENRE OBLIGATION. The movement average is the unit scores summed and divided by the scored units. The writer compares that average, and the share of units at 2 or 3, against the contract's mix percentages (Selbo). A supporting genre that never reaches 2 is gestured at, not met. Coyne's value-turn tracking stays a separate pass. The first trial on OXO: ⏸ genre-load trial (phase 2)
 
@@ -233,6 +237,8 @@ The L7 shelf holds 174 items keyed 9/16 (BOLO 18), nine distilled to date, this 
 
 ---
 
+**Interfaces.** Read from 07 (IF-01-07-07): the 07.1 style bible is the home of the meta-genre, and each IP's telling profile is a meta-genre instance under it.
+
 ## TROPES
 
 Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **genre** domain is keyed to G1–G12 in the [trope register](📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **genre**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. 
@@ -261,6 +267,7 @@ Closed 10/4 (BOLO 100 genre batch 1). Built from the six wave distills' "For the
 
 ## Version history
 
+- **1.1.0, 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): G4 handed to 06 and G8 pointed at the 05 catalog (calls 2, 3); `from_unit` is an 08 time code (call 1); Ryan's nine-axis scoring is the genre-contract tool, Baur as lineage (call 10); interfaces line for 07.
 - **1.0.1, 2026-10-04.** OPEN 8, 9, 11 LANDED in their home docs (BOLO 100 genre cross-doc): Zotero README keying rule, prose style §Meta-genre, setting system §THE FREEDOM-AND-RESTRICTION CLAIM. The `⏸ cross-doc rulings landing (phase 2)` markers are gone.
 - **1.0.0, 2026-10-04.** RULED, Chief ("rec"), BOLO 100 genre batch 1 (calls G1-G10, G12; G11 dropped, `module_of` stays on the main system doc). Stale marks stripped from the twelve layer names and the prose. OXO bench lines parked as `⏸ OXO genre reading (phase 2)`; the five cultcore conventions as `⏸ cultcore conventions pass (phase 2)`; THE INSTANCE relabeled "worked example (phase 2 fills)"; `applies_to` set to all IPs. Written: `contract_state` on the GENRE CONTRACT (OPEN 7), the three-ingredient completeness rule at G3 (OPEN 14), `expiry_note` on the GENRE CARD (OPEN 10), the G4 affect note (OPEN 15), the `genre_load` metric as method (OPEN 5; trial parked as `⏸ genre-load trial (phase 2)`). Mode row landed in the medium grammars doc (OPEN 6). OPEN 8, 9, 11 stay with their home docs. OPEN closed.
 - **0.1.3, 2026-09-29.** BOLO 77 (call 77-Z, folded per 77-AC): cultcore RULED as OXO's series genre (BOLO 91, Chief's Apple Notes 2026: "cultcore — the genre of the outsiders"), struck into THE INSTANCE's G1 LABEL, the one line off the bench; G3 CONTRACT gains a 5-item cultcore conventions list (outsiders vs. an identity-shaping institution, the cult-as-container per Touchstone TS 1:1, Institutionalized's newcomer-vs-group beat, visibility as currency, belonging vs. selfhood), each then open pending Chief. No layer or instrument change.

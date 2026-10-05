@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_genre_system.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a new writer learning the genre slice · **What it does:** walks OXO's genre lines from G1 to G12 · **Type:** tutorial

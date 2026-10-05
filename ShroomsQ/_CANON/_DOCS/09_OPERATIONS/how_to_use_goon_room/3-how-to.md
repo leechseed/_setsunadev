@@ -36,5 +36,5 @@ source_version: 1.0.1
 
 1. Confirm the passage carries `#canon-ready` and that Chief has ruled it in.
 2. Check the passage against the live Touchstones.
-3. Move it to its home. A `#ssot-candidate` goes to an SSOT doc. An `#auth-candidate` goes to `_AUTHORITATIVE/`.
+3. Move it to its home. A `#ssot-candidate` goes to an SSOT doc in the folder the AI instruction protocol's category-to-folder table names. Chief decides the folder for domains 03, 05, 06 and 08, so the writer parks those candidates in Chief's queue (IF catalog call 9, ruled 2026-10-05). An `#auth-candidate` goes to `_AUTHORITATIVE/`.
 4. Add a version-history row naming the date and the ruling.

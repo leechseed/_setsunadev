@@ -1,11 +1,11 @@
 ---
 type: ssot_04_fabula
 category: plot_system
-version: 0.2.0
+version: 0.3.0
 tier: fabula
-last_updated: 2026-09-29
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX, all future IPs]
-status: "v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
+status: "v0.3.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the event record gains `source_kind`, `canon_source`, `produces`, `scheduled` and the 08 time code beside the calendar year; the no-calendar line is corrected. v0.1.7 2026-09-29, BOLO 91 rulings: Anna Colson's origin fabula-filled (ice-skating death → the scientist's rebuild → the scientist's attachment → the father's reclaim → the scientist's own kept copy, a second Colson with her own origin node); Tori's family origin (the trash-zone delta, not Bikini Atoll) added as L7 ORIGIN context, the car crash confirmed as her WOUND. v0.1.4 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — THE WORLD CLOCK gets the `backstory` movement tag for deep pre-M1 history, `event_id` grammar `backstory_<slug>`. v0.1.3 2026-09-24: BOLO 77 wave 3, plot doc OPEN call 12 executed — sixth event record `m2_first_sync_verified` added (row 9's rating-system / 'Verified' / reach-vs-pull-out moment), sourced from oxo-scene-card-M2-row9.md rather than victoria-midnight.md; ssot_04_plot_system.md's row-9 P2/P3/P5/P9 now read it. v0.1.1 2026-09-24: all six OPEN calls RULED (Chief: \"go on all recommendations\"); the v1.1 patch landed in the state architecture. v0.1.0 draft — BOLO 77 wave 1, \"go 77\" ruled 2026-09-24; Tori-only instance, EVIL CHECK events reserved for wave 2, state architecture v1.1 patch spec ships inside this doc"
 rung: standard
 dependencies: ["ssot_04_plot_system", "ssot_03_setting_system", "ssot_02_character_state_architecture", "ssot_02_character_astrology_12_layer_mapping", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -91,15 +91,17 @@ flowchart TD
 
 **Kernel or satellite.** Bal narrows which transitions matter to fabula structure by two criteria beyond mere change: Choice (after Barthes, a functional event opens, realizes, or reveals the result of a choice between alternatives) and Confrontation (a functional event needs "two actors and one action... two arguments and one predicate," subject-predicate-object, both slots filled) ([[BVX.0591]], Bal 2017: 156-159). Chatman's parallel cut is kernel vs satellite: "Kernels are narrative moments that give rise to cruxes in the direction taken by events... Kernels cannot be deleted without destroying the narrative logic." A satellite "can be deleted without disturbing the logic of the plot... Satellites entail no choice, but are solely the workings-out of the choices made at the kernels." ([[BVX.0167]], Chatman 1980: 53-55) Bal's functional/non-functional split and Chatman's kernel/satellite split are the one clear cross-school agreement on what counts; every event record carries a `kernel_satellite` flag on that agreement, not on either school alone.
 
-**Ids.** The state architecture's own gap section names the requirement directly: "the fabula must assign each event a unique `event_id`. A state record must carry the corresponding ID in `origin_event`" (state_architecture.md v1.1 gap, per PS2 wave 1 handshake). The one worked example in canon: `event_id: "m1b_crash_jebb_death"` paired to state diff `vm_m1b_post_crash`. This doc adopts `<movement>_<slug>` as the working grammar (OPEN call 3) until a formal one is ruled.
+**Ids.** The state architecture's own gap section names the requirement directly: "the fabula must assign each event a unique `event_id`. A state record must carry the corresponding ID in `origin_event`" (state_architecture.md v1.1 gap, per PS2 wave 1 handshake). The one worked example in canon: `event_id: "m1b_crash_jebb_death"` paired to state diff `vm_m1b_post_crash`. This doc adopts `<movement>_<slug>` as the working grammar (OPEN call 3) until a formal one is ruled. The `story_beat` type that the character system uses is this `event_id` (IF catalog call 5, ruled 2026-10-05; IF-02-04-16). A PENDING or FIRED_PRE_STORY flag names its firing event by the same `event_id`, stored beside the flag state (IF catalog call 5; IF-00-04-06, IF-02-04-15).
 
-**Time, reach, and extent.** Bal: "Events have been defined as processes. A process is a change, a development, and presupposes therefore a succession in time" (Bal 2017: ch.3 §4). Genette's pair gives the two numbers a fabula record needs per event even when only fuzzily known: reach (distance from the narrating present) and extent (span covered) (Genette 1980: 48) — both can be ranges rather than points.
+**Time, reach, and extent.** Bal: "Events have been defined as processes. A process is a change, a development, and presupposes therefore a succession in time" (Bal 2017: ch.3 §4). Genette's pair gives the two numbers a fabula record needs per event even when only fuzzily known: reach (distance from the narrating present) and extent (span covered) (Genette 1980: 48) — both can be ranges rather than points. The 08 time code is the one address for an event's place on the grid, so `time` carries it beside the calendar year: `time_code` holds the code and `calendar_year` holds the year (IF catalog call 1, ruled 2026-10-05; IF-04-08-12).
 
 **Gaps and iteration.** Bal: a linked series is "sometimes interrupted by a span of time in which nothing occurs — at least nothing that is narrated" (Bal 2017: 164) — silence in the telling is not the same as a gap in the world, so `gap_type` distinguishes `logged` (an event is on record) from `unknown` (nothing recorded, not the same claim as "nothing happened"). Genette's frequency axis covers iterative events, one record standing for a repeated class rather than one row per occurrence (Genette 1980: ch.3 "Frequency," p.113; Genette 1980: 53) — the `repeat` flag.
 
 **Provenance.** Rimmon-Kenan is explicit that a story is a reconstruction, never the text itself: "Story… is not directly available to the reader… the text is the only observable and object-like aspect" (Rimmon-Kenan 2002: 3-6). When OXO and EVIL CHECK give conflicting glimpses of the same event, this doc is the adjudicated version, so every record carries a `provenance` block naming its source and a confidence level rather than silently picking one telling.
 
 **Shared universe.** Wolf's mechanics note is the warrant for the `stories:` field: each event marks which telling(s) it is visible in — OXO, EVIL CHECK, or backstory-only — so both syuzhet docs can query the same table ([[BVX.0562]], Wolf 2012, ch.4).
+
+**Source kind, canon source, products and schedule (IF catalog call 5, ruled 2026-10-05).** Four fields join the event record. `source_kind` tags the event with one of 03's five state-source categories (construction, institutional, ownership, rename, seasonal) or `character`, so 03 reads which S-layers the event moves (IF-03-04-18). `canon_source` holds the canon-source citation that the truth check reads on every event; `provenance.source` stays the working note (IF-00-04-05). `produces` lists the `state_id`s the event yields across characters, the back-reference to each state's `origin_event` (IF-02-04-14). `scheduled` holds the 08 time code of a future state that 03's LEDGER_DUE flag fixed in advance, and stays null for a past event (IF-03-04-20).
 
 **The template:**
 
@@ -112,10 +114,16 @@ actors:
 kernel_satellite: kernel | satellite          # Bal 2017: 156-159; Chatman 1980: 53-55
 time:
   movement: "<Mn or Mn stage>"
+  time_code: "<08 time code, e.g. M2 · Q1 · S03 | 012.3.2; null if not placed>"   # IF catalog call 1
+  calendar_year: "<year where canon gives one, e.g. 2199; null if not>"          # IF catalog call 1
   reach: "<distance from story-present, a range if fuzzy>"   # Genette 1980: 48
   extent: "<span covered, point or duration>"                # Genette 1980: 48
 gap_type: logged | unknown                    # Bal 2017: 164
 repeat: true | false                          # Genette 1980: ch.3 "Frequency"
+source_kind: construction | institutional | ownership | rename | seasonal | character   # IF catalog call 5
+canon_source: "<canon-source citation the truth check reads>"                 # IF catalog call 5
+produces: ["<state_id>", "<state_id>"]        # states this event yields, across characters; IF catalog call 5
+scheduled: "<08 time code of a future state fixed in advance, or null>"       # IF catalog call 5; LEDGER_DUE
 location: "<place, an S-doc address if known>"  # Bal 2017: ch.3 §5
 stories: [OXO, EVIL_CHECK, backstory_only]    # Wolf 2012, ch.4 — reserved field
 provenance:
@@ -171,7 +179,7 @@ Bal's process model behind `cause`, `enable`, `embed`, and `specify`: three phas
 
 **Superseded, kept as history:** on 2026-02-09 Chief ruled the three "occur simultaneously… one entire eon" (`_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-02-09_main-sonnet.md`). The eon still holds as the umbrella; its inside is now three eras in order. Each era's movements keep their own `Mn` dating; an era prefix (`era: skeeter_creek | dcus | lakad | astro7ex | beyond`) is read when the clock spans stories. The story list lives in the [story registry](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md) (BOLO 82).
 
-**Fuzzy and unknown dates.** None of the core narratology sources gives a formal null-value convention for an unknown date (a gap in the theory canon itself, not just this search); this doc's working answer is movement-relative dating — `M1`, `M2`, `M3`… with no calendar layer under it yet — carried in each event's `time.movement` field, reach and extent filled as ranges or marked unknown rather than left blank.
+**Fuzzy and unknown dates.** None of the core narratology sources gives a formal null-value convention for an unknown date (a gap in the theory canon itself, not just this search); this doc's working answer is movement-relative dating — `M1`, `M2`, `M3`… — carried in each event's `time.movement` field, reach and extent filled as ranges or marked unknown rather than left blank. A calendar layer now sits beside it (IF catalog call 1, ruled 2026-10-05): `time.calendar_year` holds the year where canon gives one (OXO's present 2199, the Moon Severance 2099), and `time.time_code` holds the 08 grid coordinate. Both stay null where canon is silent, and this doc never invents either.
 
 **Iterative events.** Genette's iterative note models a class of fabula record that is not one occurrence: "not... a single portion of elapsed time but... several portions taken as if they were alike and to some extent repetitive" (Genette 1980: 53). The `repeat` flag marks these; THE INSTANCE below carries a worked example (Tori's M2 outbursts).
 
@@ -215,9 +223,9 @@ PS2's wave-1 extraction reads all twelve character layers against "What Is Stati
 | P4 `turn_mechanism` | The `cause` or `enable` edge linking the value-in event to the value-out event |
 | P5 `polarity_out`, `irony_flag` | The referenced event's state-after half of `transition` |
 | P6 `throughline`, `signpost_or_journey`, `act` | **Not from the fabula** (ruled 2026-09-24, plot doc call 15): P6 is seated by the trope graph's walk ([📐 ssot_04_trope_graph.md](📐%20ssot_04_trope_graph.md)). The fabula supplies only the event's `time` |
-| P7 `reveal_content`, `reveal_type` | An event whose `gap_type` was `logged`-but-untold surfaces here as the syuzhet's reveal |
+| P7 `reveal_content`, `reveal_type` | An event whose `gap_type` was `logged`-but-untold surfaces here as the syuzhet's reveal. UNDERSIDE_SURFACING (03) hands P7 these two fields and logs the event as `gap_type: logged`, surfacing as untold (IF catalog call 5; IF-03-04-19) |
 | P9 `stakes_delta` | The chain of `cause`/`enable` edges back to the prior fabula event in sequence — this is the fix for the plot doc's own flagged gap, "P9 needs a prior unit to compare against... nothing upstream carded yet" |
-| P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is this doc's `time` field on the referenced event; `order_told` stays the syuzhet doc's own field; the gap between them is classified as an anachrony (external, internal, or mixed analepsis; prolepsis) so the trope graph can reason about foreshadowing and reveal structure ([[BVX.0562]] does not cover this; Genette 1980: 48-53) |
+| P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is this doc's `time` field on the referenced event (`time_code` and `calendar_year` included); `order_told` stays the syuzhet doc's own field, written as an 08 time code (IF catalog call 1; IF-04-08-13); the gap between them is classified as an anachrony (external, internal, or mixed analepsis; prolepsis) so the trope graph can reason about foreshadowing and reveal structure ([[BVX.0562]] does not cover this; Genette 1980: 48-53) |
 
 **To the state architecture.** The v1.1 gap PS2 flagged becomes a patch spec, **landed in `ssot_02_character_state_architecture.md` v1.1.0 on 2026-09-24** (OPEN call 6, ruled). As applied:
 
@@ -226,6 +234,8 @@ PS2's wave-1 extraction reads all twelve character layers against "What Is Stati
 3. **Event ID standardization** — the fabula assigns each event one `event_id` (this doc's `<movement>_<slug>` grammar); every state record that traces to it carries the same string in `origin_event`. Worked example: `event_id: "m1b_crash_jebb_death"` pairs to state diff `vm_m1b_post_crash`.
 
 **To the setting.** The setting doc's Axis 4 TIME states — "a slice is the baseline; states are dated overlays keyed to ladder addresses" — read this doc's world-clock eras for their dating rather than the setting doc re-deriving its own; S7 FOUNDING, S11 VECTOR, and S5 SCAR stay the authoring surface for what happened to the place, this doc stays the authoring surface for when.
+
+**To the readers of the world clock.** Read by 01 (IF-01-04-06): the story registry reads the universe eras 1–5 and the world clock, and each story row carries an era. Read by 05 (IF-04-05-01): a catalog entry's `origin: "<fabula event_id>"` names the event that brought the entry into being.
 
 ---
 
@@ -495,7 +505,7 @@ actors:
     actant_role: subject
   - actor: "Anna Colson (the copy)"   # NOTE: a distinct actor from "Anna Colson" above — her own fabula node per Chief's ruling, not a state diff on the original
     actant_role: object
-kernel_satellite: kernel   # this event is ALSO the copy's own L7 ORIGIN moment — she begins existing here
+kernel_satellite: kernel   # this event is ALSO the copy's own L7 ORIGIN moment — she begins existing here; her own 02 character record points its L7 `origin_event` here (IF catalog call 5)
 time:
   movement: "backstory"
   reach: "concurrent with backstory_colson_father_reclaims; unspecified distance"
@@ -509,6 +519,8 @@ provenance:
   confidence: direct_quote
 causal_edges: []   # downstream events for the copy are not yet on record — open for a future wave
 ```
+
+**The copy's own record (IF catalog call 5, ruled 2026-10-05; IF-02-04-17).** "Anna Colson (the copy)" gets her own 02 character record, apart from `_CANON_NODES/anna-colson-conway.md`. That record's L7 ORIGIN names `backstory_colson_copy_made` as its `origin_event`. The five Colson events feed L7 only.
 
 **What this does and does not settle.** This fills L7 ORIGIN's dated antecedent for Anna Colson (and gives "Anna Colson (the copy)" her own L7 ORIGIN event, distinct from the original). It does **not** fill L8 IMPRINT, L9 EROS, or L10 SHADOW for either Colson — those stay author-pending per the original node's Open Questions #3, #4, #9 — and it does not place either Colson's post-origin events (what either of them does afterward) on the fabula. That is future wave work, not this ruling.
 
@@ -542,6 +554,7 @@ causal_edges: []   # downstream events for the copy are not yet on record — op
 
 ## Version history
 
+- **0.3.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): the event record gains `source_kind`, `canon_source`, `produces` and `scheduled` (call 5); `time` carries the 08 time code and the calendar year, and the "no calendar layer" line is corrected (call 1); `story_beat` and flag `event_id` stated; the copy's 02 record named; two reader lines added (IF-01-04-06, IF-04-05-01).
 - **0.2.0 — 2026-10-01 (BOLO 96, "all rec").** THE WORLD CLOCK gains its first calendar years: OXO's present **2199**, the **Moon Severance 2099** (era 1): the Moon nukes orbit into a Kessler cascade on purpose; the Outliers descend from Moon people who came back down; ASTRO7EX is Earth's return. Event `backstory_moon_severance`. Its order against the Deep Meridian beam stays open.
 - **0.1.9 — 2026-09-29.** THE WORLD CLOCK gains a new era 1, **Skeeter Creek** (Chief: "era one will be the Skeeter Creek … it'll stay the same after"): the founding through the Red Hills century, ending at the Bishops' rebrand; DCUS → 2, LAKAD → 3, ASTRO7EX → 4, beyond → 5. The Narco Republic placed on the clock ⧗: rises in era 1.
 - **0.1.8 — 2026-09-29.** THE WORLD CLOCK gains era 4, **beyond** (past the Moon, ⧗ unnamed), after DCUS → LAKAD (cislunar) → ASTRO7EX (the Moon); Chief: "after DCUS, there's the cislunar space, and then the moon, and then beyond."

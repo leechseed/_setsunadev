@@ -1,7 +1,7 @@
 ---
 type: ssot_operations
 category: operations
-version: 1.0.1
+version: 1.1.0
 tier: operations
 last_updated: 2026-10-05
 applies_to: [all_stories]
@@ -43,7 +43,7 @@ Chief reviews everything in `_STAGED/`. The writer does not promote on the write
 Promotion steps:
 1. A passage qualifies when it carries `#canon-ready` and Chief rules it in.
 2. The writer checks the passage against the live Touchstones first.
-3. The writer moves it to its home. A `#ssot-candidate` goes to an SSOT doc. A `#auth-candidate` goes to `_AUTHORITATIVE/`.
+3. The writer moves it to its home. A `#ssot-candidate` goes to an SSOT doc in the folder the AI instruction protocol's category-to-folder table names. Chief decides the folder for domains 03, 05, 06 and 08, so the writer parks those candidates in Chief's queue (IF catalog call 9, ruled 2026-10-05). A `#auth-candidate` goes to `_AUTHORITATIVE/`.
 4. The writer adds a version-history row naming the date and the ruling.
 
 ## File Naming Convention
@@ -68,3 +68,4 @@ Example: `2026-02-10_mars_aspects_research.md`
 |---------|------------|--------|
 | 1.0.0   | 2026-02-10 | Initial release. |
 | 1.0.1   | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): Weekly Review names Chief as reviewer of `_STAGED/` and adds four promotion steps. |
+| 1.1.0   | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): promotion step 3 names the `#ssot-candidate` folder through the AIP category-to-folder table and parks 03, 05, 06 and 08 in Chief's queue. |

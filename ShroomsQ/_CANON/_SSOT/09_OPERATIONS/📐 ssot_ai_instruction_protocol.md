@@ -1,7 +1,7 @@
 ---
 type: ssot_09_operations
 category: operations
-version: 1.2.2
+version: 1.3.0
 tier: operations
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -41,6 +41,8 @@ Every output must begin with a YAML block.
 - **applies_to**: Always `[OVEREXITOUT, ASTRO7EX, LAKAD]`.
 - **status**: `canonical`.
 - **dependencies**: Use `[[wikilinks]]`.
+- **rung**: Choose exactly one: [policy, procedure, standard, handbook]. Pick it by the rule in [[📐 ssot_09_operations_standards_ladder]]. A new SSOT doc carries the tag from birth (IF catalog call 9, ruled 2026-10-05).
+- **trunk**: Choose exactly one: [BLACK, ORANGE]. The trunk names which side of the Command the doc serves (IF catalog call 9, ruled 2026-10-05).
 
 ---
 
@@ -105,3 +107,4 @@ Chief decides where content for domains 03, 05, 06 and 08 lands, because no cate
 | 1.2.0   | 2026-02-12 | Consolidated SSOT Template and Writing Guide into a unified AI Master Prompt. |
 | 1.2.1   | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): contractions allowed and the fixed skeleton replaced by a pointer to 07.2. |
 | 1.2.2   | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): Phase 4 gains "Start the run" and a category-to-folder table. |
+| 1.3.0   | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): `rung` and `trunk` join the required YAML keys of Phase 1, so a new SSOT doc is tagged from birth. |

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_scale_ladder.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer asking how story units nest · **What it does:** explains containers, threads and completion tests · **Type:** concept
@@ -60,6 +60,6 @@ Touchstones are neither containers nor threads. A thread changes. A Touchstone f
 
 ## The long read
 
-Addresses make the ladder usable. Every unit gets an address like `OXO.primary.M2.q3.s12.b4`, and every thread gets a span. The spine's tree addresses locate concepts. Ladder addresses locate instances. A library source keys to the first kind, and a manuscript unit keys to the second. The [collision engine](../ssot_01_collision_engine/1-concept.md) keys every output to these addresses. The notation is provisional until Chief rules it.
+Addresses make the ladder usable. Every unit gets an address like `OXO.primary.M2.q3.s12.b4`, and every thread gets a span. The spine's tree addresses locate concepts. Ladder addresses locate instances. A library source keys to the first kind, and a manuscript unit keys to the second. The [collision engine](../ssot_01_collision_engine/1-concept.md) keys every output to these addresses. Chief ruled on 2026-10-05 that the 08 time code is the one address, and ladder addresses map onto it.
 
 For each rung's test, see the [reference](2-reference.md).

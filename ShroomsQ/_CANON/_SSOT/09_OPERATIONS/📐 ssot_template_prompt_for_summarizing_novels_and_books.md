@@ -1,16 +1,17 @@
 ---
 type: ssot_09_operations
-version: 1.0.0
+version: 1.1.0
 tier: operations
-last_updated: 2026-03-03
+last_updated: 2026-10-05
+version_note: "1.1.0 set 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the 3A output files to the 01 narratology shelf."
 status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0")
 ---
 # SSOT: Template Prompt for Summarizing Novels & Books
 
 **Document Type**: Single Source of Truth (SSOT)  
 **Scope**: Novel & Book Summarization — All Formats  
-**Version**: 1.0  
-**Last Updated**: 2026-03-03  
+**Version**: 1.1  
+**Last Updated**: 2026-10-05  
 **Derived From**: Batch extraction across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds
 
 ---
@@ -115,6 +116,8 @@ Format each extracted model as:
 - **Relevance to Writer**: ...
 - **Lineage**: ...
 ```
+
+**Filing the 3A output.** The writer files each extracted model, with its four fields (Definition · Explanation · Relevance to Writer · Lineage), as one distill on the 01 narratology shelf: `ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/_narratology_shelf/`, under `frameworks/Tier N/<CODE> <Competency>/`. The writer adds the model's row to the shelf's `UID_index.md` (IF-01-09-05; IF catalog call 9, ruled 2026-10-05).
 
 ---
 

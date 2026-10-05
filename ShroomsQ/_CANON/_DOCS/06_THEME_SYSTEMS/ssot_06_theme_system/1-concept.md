@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.3.2
+source_version: 1.4.0
 ---
 
 **Who it's for:** a writer or Chief who wants the why behind theme · **What it does:** explains why theme is one argument built from four parts · **Type:** concept
@@ -65,6 +65,8 @@ The debates must sum back to the controlling idea. Every scene declares which de
 
 Each rail also names one outside idea it meets. A theme meets outside texts (CRE.06).
 
+Each rail lists its holders. A holder is the 08 track id of the character or world that carries the debate, such as `character:tori`. Tracking then binds each rail to a person or a place.
+
 ## The value scale makes each scene measurable
 
 The value is the thing the idea turns on. It breaks into four steps: positive, contrary, contradictory, and the negation of the negation.
@@ -81,6 +83,8 @@ Two checks apply to every motif. The image recurs, and its uses converge on one 
 
 A motif that ties to no rail and no step floats free. The method rejects it.
 
+Each motif gets an id, `motif.<slug>`, that Tracking uses as the story point's field. A motif may also link to the world entry behind it. The Feed links to WB-TEC-0001.
+
 ## Theme argues and Touchstones hold
 
 A rail may argue both sides of its debate. A rail may pressure-test a Touchstone hard.
@@ -92,6 +96,8 @@ A new Touchstone gets the same row check against rails R1 to R4 the day it goes 
 ## The idea describes the system, never the person
 
 The scene tests carry the idea down to one scene. Every actor in a harm scene can name the rule they followed.
+
+The tests run on the scene plan, not on the narrated text. The prose style rule that narration never states motive therefore does not clash with them.
 
 The rider (Stangneth, PHI.04) limits the idea. It describes what the system allows, never what each person is. Anna stays a question, not an answer.
 

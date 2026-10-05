@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_scale_ladder.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer placing and testing units · **What it does:** steps for tests, addresses, threads and Touchstone scope · **Type:** how-to
@@ -64,12 +64,14 @@ Terms are defined in the [reference](2-reference.md).
 3. Truncate to the depth you need.
 4. For a thread, write its span: `tori.arc[OXO.primary.M1–M6]`.
 5. Key manuscript units to ladder addresses and library sources to tree addresses.
+6. Write the same moment as an 08 time code: `OXO.primary.M2.q3.s12` becomes `M2 · Q3 · S12`. The beat becomes the `bar.beat` after the `|`. Tracking uses the time code.
 
 ## Scope a Touchstone
 
 1. Decide which rung the Touchstone governs.
 2. Write its scope as a ladder address span.
 3. Check the census table for the matching rung.
+4. If a unit breaches the Touchstone, log it in the 08 §9A Touchstone breach log with the unit's time code, the TS id and the units it invalidates.
 
 ## Track a thread
 

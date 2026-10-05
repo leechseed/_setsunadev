@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_scale_ladder.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a new writer learning the ladder · **What it does:** descends the OXO address from storyform to beat · **Type:** tutorial
@@ -30,7 +30,7 @@ Append `.q3.s12`. You now name sequence 3 and scene 12. For the sequence (R3), t
 
 ## Step 4: add the beat
 
-Append `.b4`. The address is now `OXO.primary.M2.q3.s12.b4`. This is R1. Its test: something was tried, something answered, something is now slightly different.
+Append `.b4`. The address is now `OXO.primary.M2.q3.s12.b4`. This is R1. Its test: something was tried, something answered, something is now slightly different. The tracking system reads this scene as `M2 · Q3 · S12`, and the beat as its `bar.beat` after the `|`.
 
 ## Step 5: add the Touchstone clause
 
@@ -42,4 +42,4 @@ Write a thread span: `tori.arc[OXO.primary.M1–M6]`. This is a character arc. I
 
 ## Check yourself
 
-You did it right if you can say why `M2` is a container and `tori.arc` is not. Containers hold. Threads change. The address notation is provisional until Chief rules it.
+You did it right if you can say why `M2` is a container and `tori.arc` is not. Containers hold. Threads change. The tracking system writes the same address as a time code. Chief ruled on 2026-10-05 that the time code is the one address.

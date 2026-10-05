@@ -1,12 +1,12 @@
 ---
 type: ssot_04_trope_graph
 category: plot_system
-version: 1.0.0
+version: 1.1.0
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 module_of: ssot_04_plot_system
 applies_to: [all IPs]
-status: "v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 plot batch 1: stamped 1.0.0 with module_of ssot_04_plot_system; OPEN 1-6 settled (seating rule layered on the plot doc's told-unit-to-act rule, OXO seating parked; empty nodes bypassed; 352 unkeyed permanent, 292 held for a named later pass; the \"or:\" tooltip verified built at _tools/workspace/build.py:2576-2585 and :2445). v0.1.0 draft — BOLO 77 wave 2, built from MS-N's 135 book nodes, PS-R's rails extraction, and the fetch.py/build_graph.py pipeline (RANGE-checked); workspace-view ruling (BOLO 79, HOI4-style focus tree on the rails) folded into THE HANDSHAKE"
+status: "v1.1.0 2026-10-05, BOLO 102 stage 2 (Chief: \"My word\"): the graph reads the trope register's `register.json` as the one key store. v1.0.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 plot batch 1: stamped 1.0.0 with module_of ssot_04_plot_system; OPEN 1-6 settled (seating rule layered on the plot doc's told-unit-to-act rule, OXO seating parked; empty nodes bypassed; 352 unkeyed permanent, 292 held for a named later pass; the \"or:\" tooltip verified built at _tools/workspace/build.py:2576-2585 and :2445). v0.1.0 draft — BOLO 77 wave 2, built from MS-N's 135 book nodes, PS-R's rails extraction, and the fetch.py/build_graph.py pipeline (RANGE-checked); workspace-view ruling (BOLO 79, HOI4-style focus tree on the rails) folded into THE HANDSHAKE"
 rung: standard
 dependencies: ["ssot_04_fabula", "ssot_04_plot_system", "ssot_02_dramatica_integration_protocol", "ssot_01_story_spine_comparative_tree", "ssot_01_scale_ladder"]
 trunk: BLACK
@@ -113,6 +113,8 @@ Tobias and Schmidt are whole-plot or whole-situation inventories, so MS-N ruled 
 ---
 
 ## THE TROPES
+
+**One key store (IF catalog call 10, ruled 2026-10-05; IF-01-04-22).** The trope register's `register.json` is the one key store for every trope key, and this graph reads it. The graph keeps no key file of its own. A trope's `node`, `alt` and `conf` are read from the register's record for that `slug`, beside the setting keys S1 to S12 on the same record. One TV Tropes fetch therefore has one record, not two.
 
 **How keyed:** eight Payload Specialist batches read the 1,678 fetched TV Tropes entries against the 135 nodes and wrote a keying decision per trope — `node` (the best-fit node id, or `null`), `alt` (a second plausible node, or `null`), and `conf` (`high`, `medium`, or `low`). Every batch was RANGE-checked before the join. `build_graph.py` then joined those keys against the fetched index definitions and the node list.
 
@@ -254,6 +256,8 @@ Four real signposts, one throughline, four acts — the fixed order the rail req
 
 **To the fabula.** A walked node **proposes** an event; it never writes canon. When the walk lands on `vog.02_call_to_adventure` for a given character, it proposes a candidate transition — the fabula's EVENT RECORD schema (`event_id`, `transition`, `actors`, `kernel_satellite`, `time`, `causal_edges`) is where that proposal becomes a dated, sourced fact, or does not. The graph supplies pattern; the fabula supplies world time and adjudication. This mirrors the fabula's own stated boundary: "the pattern layer across events (wave 2's trope graph owns that)... explicitly not a field this doc owns" (ssot_04_fabula.md).
 
+**To the register (IF catalog call 10; IF-01-04-22, IF-03-04-24).** The graph reads `register.json` and writes no second key. A place-type trope that no book node can place stays on the register's setting key (S1 BODY mostly) for the setting slice. It does not take a P6 seat.
+
 **To the plot card.** P6 SIGNPOST/JOURNEY SEAT is the anchor: a node's `phase` and its place in the walk fix P6 directly. From there:
 
 | P-layer | What a node/trope fills |
@@ -302,6 +306,7 @@ Four real signposts, one throughline, four acts — the fixed order the rail req
 
 ## Version history
 
+- **v1.1.0 (2026-10-05):** BOLO 102 stage 2 (Chief: "My word"): the graph reads the trope register's `register.json` as the one key store (call 10; IF-01-04-22, IF-03-04-24).
 - **v1.0.0 (2026-10-04):** RULED, Chief ("REC"), BOLO 100 plot batch 1 (stamped 1.0.0 by CDR ruling). `module_of: ssot_04_plot_system` added; `applies_to` set to all IPs; status line and `last_updated` refreshed. OPEN 1-6 settled (seating: method rule plus parked OXO seating; empty nodes bypassed; unkeyed 352 permanent, 292 held as `⏸ trope second keying pass (phase 2)`; movements map marked stale-closed; the "or:" tooltip verified built at `_tools/workspace/build.py:2576-2585` and `:2445`). OXO movement seating labeled as the instance, apart from the method rule.
 - **v0.1.0 (2026-09-24):** first draft, BOLO 77 wave 2. Built from MS-N's 135 book nodes (Tobias 20 · Schmidt 55 · Propp 31 · Campbell 17 · Vogler 12, 31 same_as edges), PS-R's rails extraction (16 signposts × 4 throughlines, OXO's eight dynamics, the twelve P-layers, six blocking gaps), and the fetch.py/build_graph.py pipeline (1,678 tropes fetched, 1,034 keyed, 644 unkeyed, 2,584 trope_link edges). Six OPEN calls, none yet ruled. Workspace-view handshake written against HOI4-FOCUS-TREE-STUDY.md §6 per BOLO 79's ruling that the graph draws as a focus tree, not a free network, by default.
 - **v0.1.1 (2026-09-24):** all six OPEN calls ruled as recommended; Propp minted BVX.1136 and patched onto its 31 nodes; the graph rebuilt (counts unchanged).

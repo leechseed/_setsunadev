@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.3.2
+source_version: 1.4.0
 ---
 
 **Who it's for:** a writer or script author looking things up · **What it does:** lists every theme-system component, field and value · **Type:** reference
@@ -43,6 +43,13 @@ Four parts, built in this order. Each part has what it is, how to build it, and 
 - Build: draft candidates until cutting the story to one sentence leaves one survivor. Then answer "how does the system pull this off, concretely."
 - Done-test: a reader rebuilds the story's shape from the sentence. The mechanism line explains the how without repeating the what.
 - Latent-theme line: after the sentence, ask what it might be covering (CRE.06).
+- Seed: the author reads genre G4 `core_binary` as the idea's seed and drafts the first candidate from it. Reads from 01 (IF-01-06-08).
+- Spine link: the spine's L6 theme points at this controlling idea (IF-01-06-10).
+- CT11 verdict: the author asks whether each 05 catalog entry argues the idea. The author sets the answer in `ct11_verdict` (IF-05-06-06).
+  - `argues`: the entry shows the idea working.
+  - `neutral`: the entry neither backs the idea nor works against it.
+  - `undercuts`: the entry works against the idea, so the author rewrites it or marks it as the exception.
+- Seed and CT11 verdict land with IF catalog calls 2 and 3, ruled 2026-10-05.
 
 **(b) The rails.** 3 to 5 debates, one per major point of view. Each debate argues both sides across the whole story.
 - Build: take each throughline's storyform Issue/Counterpoint pair and phrase it as a question a character could ask aloud.
@@ -93,14 +100,30 @@ Chief kept it 2026-09-29 as the biopower register. Source: Foucault's biopower, 
 
 One debate per point of view. Each is the storyform's locked Issue versus Counterpoint pair. Every scene declares which debate it tests. Plot card fields P3, P5 and P9 read from these rows.
 
-| # | Point of view | Storyform pair | Debate | Problem to Solution | Meets |
-|---|---|---|---|---|---|
-| 1 | The world (factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity to Inequity | parked |
-| 2 | Tori | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity to Inequity | parked |
-| 3 | Anna | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection to Speculation | parked |
-| 4 | Tori and Anna | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity to Inequity | parked |
+| # | Point of view | Storyform pair | Debate | Problem to Solution | Meets | `holders` |
+|---|---|---|---|---|---|---|
+| 1 | The world (factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity to Inequity | parked | `world:dcus` |
+| 2 | Tori | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity to Inequity | parked | `character:tori` |
+| 3 | Anna | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection to Speculation | parked | `character:anna` |
+| 4 | Tori and Anna | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity to Inequity | parked | `character:tori`, `character:anna` |
 
 The four sum to the controlling idea. Every Meets cell and the latent-theme line hold the mark "OXO theme fill pass (phase 2)".
+
+`holders:` lists the 08 track ids of the characters or worlds that carry each rail's debate (IF catalog call 2, ruled 2026-10-05; IF-02-06-04).
+
+The theme record is 06's output on the scene card (03) and the plot card (04) (IF-04-06-03, IF-04-06-04). It holds:
+- `rail_tested`: the rail, R1 to R4, that the unit tests.
+- `side_argued`: the side of that rail's debate the unit argues.
+- `gauge`: a gauge name plus its step.
+- The citation and transcript tests, defined under the scene tests.
+
+08 stores it per time code under `subject.kind` `theme` and `gauge` (IF-06-08-04).
+
+Interfaces:
+- Reads from 02 (IF-02-06-02): L11 `growth_axis`, `growth_requirement` and `resistance_index`. L11's `rail_ref` names the rail.
+- Reads from 02 (IF-06-09-01): the Dramatica ingest's Theme Report throughline variable sets feed the rails' pairs (IF catalog call 9).
+- Writes to 01 (IF-01-06-09): the rails' pairs source the scale ladder's thematic motif thread.
+- Reads from 08 (IF-06-08-05): Anna's reader track lives in 08 §9A. 06 cites it and does not copy it.
 
 > **OPEN:** the `meets` values and the latent-theme line for OVEREXITOUT wait for the phase 2 theme fill pass.
 
@@ -124,9 +147,13 @@ Second gauge: Fairness, for world scenes (80-G, ruled 2026-09-29). World scenes 
 | -- Contradictory | Injustice | *They change the rules when you start winning.* |
 | --- Negation of the negation | A rigged game that calls itself fair | *They cheat you and give you a grade for it.* |
 
+The theme record's `gauge` field names one gauge beside the step: Freedom, Fairness or a civilization's value (IF catalog call 2).
+
+08 holds each gauge as a value lane under a character or world track (IF-06-08-03, IF-06-08-06).
+
 ## THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)
 
-Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own value on the same four steps. The rule lives here. Each civilization's four steps live on its catalog entry in 05. World scenes may read a civilization's gauge beside Fairness.
+Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own value on the same four steps. The rule lives here. Each civilization's four steps live on its catalog entry in 05, in the entry's `gauge:` field (IF catalog call 3; IF-05-06-04). World scenes may read a civilization's gauge beside Fairness.
 
 | Civilization | Catalog entry | Value | Last step (the lie it tells) |
 |---|---|---|---|
@@ -143,11 +170,17 @@ The Kudzu is the idea made literal: no one in it is evil; it only grows. The pla
 
 Motifs feed the texture system. Each appearance moves the Freedom scale. The Feed replaced the legibility violation the same night. The Sync score and clothing glow stay as setting.
 
-| Motif | What it carries | Rail / step |
-|---|---|---|
-| The uniform and the mirror | Seeing yourself as they made you | the mechanism line; --- *The cage feels like home* |
-| A door she could walk out of | Freedom in reach, never taken until the Stop | Tori's Growth (Stop); + *Your life is yours* |
-| The Feed | The system watching and scoring you, always on | debate 1; -- *You're managed, not free* |
+| Motif | `motif.<slug>` | What it carries | Rail / step | `motif_ref` |
+|---|---|---|---|---|
+| The uniform and the mirror | `motif.uniform_mirror` | Seeing yourself as they made you | the mechanism line; --- *The cage feels like home* | none |
+| A door she could walk out of | `motif.open_door` | Freedom in reach, never taken until the Stop | Tori's Growth (Stop); + *Your life is yours* | none |
+| The Feed | `motif.the_feed` | The system watching and scoring you, always on | debate 1; -- *You're managed, not free* | WB-TEC-0001 |
+
+Motif ids: 06 mints each `motif.<slug>` id, and 08 uses it as the story point `field: motif.<id>` (IF catalog call 2; IF-06-08-01, IF-06-08-02).
+
+`motif_ref` links a motif to the catalog id of the setting object behind it (IF catalog call 3; IF-05-06-03, IF-05-06-05). The clothing glow links to WB-WDR-0001 and stays setting.
+
+Interfaces: writes to 07 (IF-06-07-01, IF-06-07-02). 07.1 routes sensory detail through this list when the detail touches theme.
 
 ## PROVENANCE
 
@@ -165,7 +198,7 @@ Motifs feed the texture system. Each appearance moves the Freedom scale. The Fee
 
 ## THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, "all recs")
 
-Three tests carry the idea down to the scene. They ride the scene card in [ssot_03](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields.
+Three tests carry the idea down to the scene. They ride the scene card in [ssot_03](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields. The plot card in 04 carries the same theme record (IF-04-06-03).
 
 | Test | Source | Rule |
 |---|---|---|
@@ -173,7 +206,9 @@ Three tests carry the idea down to the scene. They ride the scene card in [ssot_
 | Knowledge gradient | Zimbardo, PSY.49 | A field inside the citation test. The card names who knows better. A character who knows better and complies is the hard case. |
 | Two-transcripts test | Scott, PHI.03 | The card says whether the scene plays on the public script or the hidden transcript, and what changes between them. |
 
-**The rider** (Stangneth, PHI.04): the idea describes what the system allows, never what each person is. Anna stays a question: cog, believer or mask.
+Where the tests run (IF catalog call 7, ruled 2026-10-05): the citation test and the knowledge gradient run on the scene plan, not on the narrated text. 07.1's "narration never states motive" does not clash with them. The author shows the rule in speech or action (IF-06-07-06, IF-06-07-07).
+
+**The rider** (Stangneth, PHI.04): the idea describes what the system allows, never what each person is. Anna stays a question: cog, believer or mask. Her reader track in 08 §9A holds it open (IF-06-08-05).
 
 ## TROPES
 
@@ -194,12 +229,13 @@ Themes argue; Touchstones hold. No scene writes past a live Touchstone. Live one
 
 ## 1.0 BAR (RULED 2026-09-29, BOLO 80)
 
-Every gate for 1.0, checked:
-- Method written (THE METHOD).
-- OXO worked instance (idea, four rails, two gauges, three motifs).
-- A theme read on all 7 cards: M1-skeleton, M2-grief-summary, M2-row9, M3-crash-analepsis, M4-skeleton, M5-skeleton, M6-skeleton, in `_CANON_NODES/` as `oxo-scene-card-*.md`.
-- The 81 handshake.
-- OPEN closed or parked.
+This doc's own 1.0 list retires (IF catalog call 10, ruled 2026-10-05). The bar is SOP §5's six at equal weight (IF-06-09-03):
+- Shape: cleared. The method, the worked instance and the handshake are written.
+- Shelf: cleared. The method cites Egri, McKee, Coyne, Truby, Dramatica and Foucault (MSX.36).
+- Proof: cleared. OVEREXITOUT carries the instance, and a theme read sits on all 7 cards: M1-skeleton, M2-grief-summary, M2-row9, M3-crash-analepsis, M4-skeleton, M5-skeleton, M6-skeleton, in `_CANON_NODES/` as `oxo-scene-card-*.md`.
+- Ruled: cleared. No OPEN call remains in the source, and EVIL CHECK is parked.
+- Wired: written in 1.4.0. `holders`, the motif ids, `motif_ref`, the theme record and the CT11 verdict name the neighbours.
+- Store: open. The rails' `meets` values and the latent-theme line are stubs until the OXO theme fill pass.
 
 ## PARKED (wave 2)
 

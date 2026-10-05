@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_genre_system.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or builder looking up a genre fact · **What it does:** lists each layer, field, instrument and source · **Type:** reference
@@ -33,7 +33,7 @@ flowchart TD
   R --> T["TROPES"]
 ```
 
-Source: [📐 ssot_01_genre_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md). Version 1.0.1, ruled 2026-10-04 (Chief: "rec"; BOLO 100). Trunk: BLACK. Applies to all IPs. Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_genre_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md). Version 1.1.0, ruled 2026-10-04 (Chief: "rec"; BOLO 100). Trunk: BLACK. Applies to all IPs. Why it exists: [concept](1-concept.md).
 
 ## MIND MODELS
 
@@ -95,6 +95,8 @@ Layer names are house coinage, ruled 2026-09-16 (OPEN 2).
 - G4 holds only the propositional binary. Affective telos (catharsis, wonder) lives on the texture mood curve, T7.
 - G1 keeps three label fields, never one.
 
+**Handoffs (IF catalog calls 2 and 3, ruled 2026-10-05).** The writer hands G4's `core_binary`, `mind_action_view` and `thematic_recipe` to the [06 theme system](../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) as the seed of the controlling idea. The writer points G8's `world_build` promise at the [05 worldbuilding catalog](../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md): the `WB-<TYPE>-<nnnn>` entries (rules, institutions) that make the promise good.
+
 **Binding rule.** G12 is fed independently from the storyform, keyed by `storyform_id`. G12 empty means a shelf label. G12 filled means the argument's contract. Medium is deliberately not a G-layer.
 
 ## THE INSTRUMENTS · the GENRE CARD and the GENRE CONTRACT
@@ -132,9 +134,11 @@ Layer names are house coinage, ruled 2026-09-16 (OPEN 2).
 | storyform binding | `storyform_id` |
 | contract_state | A list parallel to Axis 4 TIME; each entry holds `from_unit`, the changed field and the new value |
 
-**Contract state track.** The contract is fixed once per work unless `contract_state` says otherwise. Units before `from_unit` read the first value. Units from it onward read the new one.
+**Contract state track.** The contract is fixed once per work unless `contract_state` says otherwise. Units before `from_unit` read the first value. Units from it onward read the new one. The `from_unit` value is an 08 time code (IF catalog call 1, ruled 2026-10-05).
 
 **Mix rule.** The overriding genre must clear its own criteria in full. A supporting genre counts toward the mix only if its criteria are substantially met.
+
+**Genre-contract tool (IF catalog call 10, ruled 2026-10-05).** Ryan's nine-axis ontological scoring (BVX.0630) is the genre-contract tool for 01 and 03 both. Baur's five-lineage taxonomy (BVX.0458) stays as lineage.
 
 **The genre-load metric (method).** The writer scores each unit on `genre_load`, an integer 0 to 3.
 
@@ -196,6 +200,8 @@ The L7 shelf holds 174 items keyed 9/16 (BOLO 18), nine distilled to date.
 | BVX.1126 | Aristotle, *Poetics* | G4 | Hamartia as action-level error; catharsis maps to the mood curve; wonder as tragedy's telos |
 
 Next candidates by name: BVX.0840 Carroll, BVX.0577 Grant, BVX.0620 Horsley, BVX.0190 Black. After those come BVX.0232 Storr, BVX.0257 Cron, BVX.0564 Dunleavy, BVX.0642 Bould. Truby's two Anatomy books (BVX.0193, BVX.0191) have no Zotero record: an orphan pair.
+
+**Interfaces.** Read from 07: the 07.1 style bible is the home of the meta-genre, and each IP's telling profile is a meta-genre instance under it (IF-01-07-07).
 
 ## TROPES
 

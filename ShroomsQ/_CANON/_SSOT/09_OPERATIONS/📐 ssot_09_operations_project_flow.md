@@ -2,9 +2,9 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_methodology
 category: operations
-version: 0.1.1
+version: 0.2.0
 tier: operations
-last_updated: 2026-09-15
+last_updated: 2026-10-05
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: working — v0.1; promotes to canonical after two project uses (DOCTRINE 0, Invariant I)
 working_title: true
@@ -56,7 +56,7 @@ Phases end on **events** (a decision made, an artifact shipped), never on dates.
 | **P0** | **Problem framing** | Priority questions (PIRs) named before research · environmental scan · problem statement · initial hypothesis · the **command narrative** seed (who this is for, what story it joins) | Is the problem worth a project? |
 | **P1** | **Concept and intent** | **The brief** (§C): end state, intent, mode, success criteria, MECE decomposition, phases and gates, sustainment line, information line, control process, exit criteria | Is the problem worth solving? Is the decomposition complete? |
 | **P2** | **Design and war-gaming** | Two or three courses of action tested against time, complexity, maintenance, runway · selected approach · skeleton of every deliverable · every critical unknown named · **attainability** stated | Is it feasible? Are the unknowns named? Is it attainable at acceptable risk? |
-| **P3** | **Vertical slice** | One complete section at target quality, proving the whole can be built · AAR · revised plan | Does the slice prove the system? |
+| **P3** | **Proof slice** | One complete section at target quality, proving the whole can be built · AAR · revised plan | Does the slice prove the system? |
 | **P4** | **Production** | Sprints scoped from the decomposition · mission-type orders to the AI partner · weekly AAR · living documentation | Complete, tested, documented, meets the intent? |
 | **P5** | **Transition and operate** | Shipped and monitored · continuous delivery · periodic value check against the intent | Does it still serve the intent? |
 | **P6** | **AAR and doctrine revision** | What happened, why, what applies next · revisions to this flow and to the owning registries | — |
@@ -127,7 +127,7 @@ Cross-cutting. Each is derived; none is declared without a source.
 1. **Commander's intent over instructions.** Purpose and end state; method left open. *(MCDP 1)*
 2. **MECE at every level.** No gaps, no overlaps in scope, documentation, or task allocation. *(McKinsey · PMBOK)*
 3. **Answer first.** Every document readable in thirty seconds, five minutes, and in depth. *(Pyramid Principle, ratified)*
-4. **Vertical slice before scale.** No full commitment until one complete piece proves the approach. *(studio pipelines · DoD TRL)*
+4. **Proof slice before scale.** No full commitment until one complete piece proves the approach. *(studio pipelines · DoD TRL)* The proof slice is this flow's own gate. It is not the LEECHSEED Vertical Slice in 02 (IF catalog call 9, ruled 2026-10-05).
 5. **Living documentation.** STATE.md is the plan; a plan not updated after contact is a static document. *(MCDP 5)*
 6. **Launch with what is in hand.** Expeditionary: the flow runs from the current repo and kit, or it is not the flow. *(MCDP 3)*
 7. **Detail only the current horizon.** Later phases carry intent and options. *(MCDP 1-2 · MCDP 5)*
@@ -248,3 +248,4 @@ Five-line brief: end state (the recognizer stops mangling the Command lexicon) �
 |---|---|---|
 | 0.1.0 | 2026-09-03 | Working assembly from finished holdings on Chief's order (BOLO 25, sequence held: PDFs → MCDP pass → template → BOLO 24). Sources named in frontmatter. Promotes on two uses. |
 | 0.1.1 | 2026-09-15 | Sibling filed: the development standard (BOLO 53) governs the loop inside a session; this flow governs the project. Dependency added; no rule changed. |
+| 0.2.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): P3 "Vertical slice" is renamed "Proof slice", ending the collision with the LEECHSEED Vertical Slice (02). |

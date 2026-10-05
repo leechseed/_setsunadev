@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_genre_system.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer filling genre instruments · **What it does:** steps for cards, contracts and the load metric · **Type:** how-to
@@ -36,7 +36,7 @@ Terms are defined in the [reference](2-reference.md).
 
 ## Write a GENRE CONTRACT for a work
 
-1. Name the primary genre.
+1. Name the primary genre. Score it with Ryan's nine-axis tool, the genre-contract tool for 01 and 03 both.
 2. Set the mix: the overriding genre plus supporting genres, with percentages.
 3. Check that the overriding genre clears its criteria in full.
 4. Check that each supporting genre has substantially met its own criteria.
@@ -49,7 +49,7 @@ Terms are defined in the [reference](2-reference.md).
 
 1. Find the unit where the mode changes, for example an intrusion contract turning into portal-quest.
 2. Add an entry to `contract_state`.
-3. Write `from_unit`, the changed field and the new value.
+3. Write `from_unit` as an 08 time code, then the changed field and the new value.
 4. Read units before `from_unit` with the first value and later units with the new one.
 
 ## Discharge an obligation

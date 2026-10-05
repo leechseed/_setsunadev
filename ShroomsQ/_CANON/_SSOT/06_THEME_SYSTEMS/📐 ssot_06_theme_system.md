@@ -1,11 +1,11 @@
 ---
 type: ssot_06_theme_systems
 category: theme_system
-version: 1.3.2
+version: 1.4.0
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
-status: "v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
+status: "v1.4.0 2026-10-05: RULED, Chief (\"My word\") — BOLO 102 stage 2: holders on the rails, motif ids and `motif_ref`, the theme record, the CT11 verdict, the SOP §5 bar. Earlier: v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
 dependencies: ["oxo-storyform (Outcome/Judgment, Problem/Solution, Growth)", "ssot_01_story_spine_comparative_tree (L6)", "ssot_01_touchstones_register (BOLO 81, the handshake)"]
 trunk: BLACK
@@ -25,6 +25,12 @@ Four parts, not a twelve-layer stack. The character and setting systems (L1–L1
 - *How to build it:* draft candidates until cutting the story down to one sentence leaves exactly one survivor; then write the mechanism line by answering "how does the system pull this off, concretely."
 - *Test it's done:* a reader can rebuild the story's whole shape from the sentence alone, and the mechanism line explains the sentence's *how* without repeating its *what*.
 - *Latent-theme line:* after the sentence, ask "what might this sentence be covering?" The stated key word may hide the real theme (CRE.06).
+- *Seed:* the author reads genre G4 `core_binary` as the controlling idea's seed and drafts the first candidate from it (IF catalog call 2, ruled 2026-10-05). Reads from 01 (IF-01-06-08).
+- *Spine link:* the spine's L6 theme points at this controlling idea, and the author states L6 as this sentence (IF-01-06-10).
+- *CT11 verdict:* the author asks of each 05 catalog entry whether it argues the controlling idea. The author sets the answer in the entry's `ct11_verdict` (IF catalog call 3, ruled 2026-10-05). Writes to 05 (IF-05-06-06).
+  - `argues`: the entry shows the idea working, so the world itself makes the claim.
+  - `neutral`: the entry neither backs the idea nor works against it.
+  - `undercuts`: the entry works against the idea, so the author rewrites it or marks it as the exception.
 - *Worked below:* OVEREXITOUT's controlling idea and mechanism line, under THE WORKED INSTANCE.
 
 **(b) The rails — 3–5 debates.**
@@ -78,16 +84,32 @@ Kept by Chief 2026-09-29 as the biopower register. The controlling idea says **w
 
 Theme runs as four debates at once, one per point of view, each the storyform's locked Issue vs. Counterpoint (`oxo-storyform.md`, engine transcription). **Every scene declares which debate it tests**; the plot card's value fields (P3 · P5 · P9) read from these rows. Plain words handpicked by Chief, 2026-09-29.
 
-| # | Point of view | Storyform pair | The debate, in plain words | Problem → Solution | Meets (outside idea) |
-|---|---|---|---|---|---|
-| 1 | **The world** (the factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` |
-| 2 | **Tori** | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` |
-| 3 | **Anna** | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection → Speculation | `⏸ OXO theme fill pass (phase 2)` |
-| 4 | **Tori ↔ Anna** | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` |
+| # | Point of view | Storyform pair | The debate, in plain words | Problem → Solution | Meets (outside idea) | `holders` |
+|---|---|---|---|---|---|---|
+| 1 | **The world** (the factions, DCUS) | Interdiction vs. Prediction | *They already know how you'll turn out. Can you prove them wrong?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` | `world:dcus` |
+| 2 | **Tori** | Interpretation vs. Senses | *Believe the story, or believe your eyes?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` | `character:tori` |
+| 3 | **Anna** | Circumstances vs. Situation | *Don't fight the game. Win it.* | Projection → Speculation | `⏸ OXO theme fill pass (phase 2)` | `character:anna` |
+| 4 | **Tori ↔ Anna** | Suspicion vs. Evidence | *Whose memory of what happened counts?* | Equity → Inequity | `⏸ OXO theme fill pass (phase 2)` | `character:tori`, `character:anna` |
 
 The four sum to the controlling idea: the world forecasts everyone doing their job (1); Tori stops trusting the story over her own eyes (2); Anna proves the forecast by winning the game as dealt (3); the rivalry settles whose account survives (4).
 
 Latent-theme line for the controlling idea: `⏸ OXO theme fill pass (phase 2)`.
+
+**`holders:`** (IF catalog call 2, ruled 2026-10-05). Each rail lists the 08 track ids of the characters or worlds that carry its debate, such as `character:tori`. Chief or the author reads them to bind a rail to a track (IF-02-06-04).
+
+**The theme record** (IF catalog call 2, ruled 2026-10-05). The scene card (03) and the plot card (04) each carry one record. This doc defines it as 06's output (IF-04-06-03, IF-04-06-04). The record holds:
+- `rail_tested`: the rail, R1–R4, that the unit tests.
+- `side_argued`: the side of that rail's debate the unit argues.
+- `gauge`: a gauge name plus its step.
+- The citation and transcript tests, defined below.
+
+08 stores the record per scene time code under `subject.kind` `theme` and `gauge` (IF-06-08-04).
+
+**Interfaces.**
+- Reads from 02 (IF-02-06-02): L11 DESTINY `growth_axis`, `growth_requirement` and `resistance_index` carry the character's side of the argument. The author reads them, and L11's `rail_ref` names the rail, so the argument is stated once.
+- Reads from 02 (IF-06-09-01): the Dramatica ingest holds the Theme Report throughline variable sets. The author reads the rails' Issue/Counterpoint pairs from them (IF catalog call 9, ruled 2026-10-05).
+- Writes to 01 (IF-01-06-09): the rails' Issue/Counterpoint pairs are the source of the scale ladder's thematic motif thread at any span.
+- Reads from 08 (IF-06-08-05): Anna's reader track lives in 08 §9A. 06 cites it and does not copy it.
 
 ## THE VALUE SCALE — the per-scene gauge (80-B.2)
 
@@ -109,9 +131,13 @@ Latent-theme line for the controlling idea: `⏸ OXO theme fill pass (phase 2)`.
 | −− Contradictory | Injustice | *They change the rules when you start winning.* |
 | −−− Negation of the negation | A rigged game that calls itself fair | *They cheat you and give you a grade for it.* |
 
+The `gauge` field on the theme record names one gauge beside the step: Freedom, Fairness or a civilization's value (IF catalog call 2, ruled 2026-10-05). A scene that reads two scales then stays unambiguous.
+
+08 holds each gauge as a continuous value lane under a character or world track. The lane's value is one of the four steps (IF-06-08-03, IF-06-08-06).
+
 ## THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)
 
-**RULED 2026-09-29** (Chief, BOLO 93: "all rec", calls 2 Keep and 3 Split). Every civilization in the world runs its own value on the same four steps (positive · contrary · contradictory · negation of the negation). Each one is a face of the controlling idea: a system where ordinary people doing their jobs adds up to evil, and each one's −−− step is the lie it tells about itself. **The rule lives here; each civilization's four steps live on its catalog entry** (05), and the world view shows them. World scenes set in a civilization may read its gauge beside FAIRNESS.
+**RULED 2026-09-29** (Chief, BOLO 93: "all rec", calls 2 Keep and 3 Split). Every civilization in the world runs its own value on the same four steps (positive · contrary · contradictory · negation of the negation). Each one is a face of the controlling idea: a system where ordinary people doing their jobs adds up to evil, and each one's −−− step is the lie it tells about itself. **The rule lives here; each civilization's four steps live on its catalog entry** (05), in the entry's `gauge:` field (value + four steps, civilizations only) (IF catalog call 3, ruled 2026-10-05), and the world view shows them (IF-05-06-04). World scenes set in a civilization may read its gauge beside FAIRNESS.
 
 | Civilization | Catalog entry | Value | −−− (the lie it tells) |
 |---|---|---|---|
@@ -128,11 +154,17 @@ The Kudzu is the controlling idea made literal: no one in it is evil at all; it 
 
 Recurring images that carry the theme without anyone saying it (Tomashevsky, Greimas isotopy); fed to the texture system. Each appearance moves the Freedom scale. Chosen by Chief 2026-09-29 (G · F · E), then amended the same night: the Feed replaces the legibility violation (G · F · A). The Sync score and the clothing glow stay as setting, not motif; the legibility violation stays a setting mechanic.
 
-| Motif | What it carries | Rail / step |
-|---|---|---|
-| **The uniform and the mirror** | Seeing yourself as they made you: the mechanism line made visible | the mechanism line · −−− *The cage feels like home* |
-| **A door she could walk out of** | Freedom always in reach and never taken, until the Stop | Tori's Growth (Stop) · + *Your life is yours* |
-| **The Feed** | The system watching and scoring you, always on: the norm made visible | debate 1 (*They already know how you'll turn out*) · −− *You're managed, not free* |
+| Motif | `motif.<slug>` | What it carries | Rail / step | `motif_ref` |
+|---|---|---|---|---|
+| **The uniform and the mirror** | `motif.uniform_mirror` | Seeing yourself as they made you: the mechanism line made visible | the mechanism line · −−− *The cage feels like home* | none |
+| **A door she could walk out of** | `motif.open_door` | Freedom always in reach and never taken, until the Stop | Tori's Growth (Stop) · + *Your life is yours* | none |
+| **The Feed** | `motif.the_feed` | The system watching and scoring you, always on: the norm made visible | debate 1 (*They already know how you'll turn out*) · −− *You're managed, not free* | WB-TEC-0001 |
+
+**Motif ids** (IF catalog call 2, ruled 2026-10-05). This doc mints each `motif.<slug>` id in the table above. 08 uses it as the story point `field: motif.<id>`. Writes to 08 (IF-06-08-01, IF-06-08-02).
+
+**`motif_ref`** (IF catalog call 3, ruled 2026-10-05). A motif links to the catalog id of the setting object behind it: the Feed to WB-TEC-0001 The Feed (DCUS). The clothing glow links to WB-WDR-0001 and stays setting, not motif. Writes to 05 (IF-05-06-03, IF-05-06-05).
+
+**Interfaces.** Writes to 07 (IF-06-07-01, IF-06-07-02): this motif list is the story's own motifs, and 07.1 routes sensory detail through it when the detail touches theme.
 
 ## PROVENANCE
 
@@ -149,12 +181,14 @@ Recurring images that carry the theme without anyone saying it (Tomashevsky, Gre
 
 ## THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, "all recs")
 
-Three tests carry "Nobody has to be evil when everyone does their job" down to the single scene. They ride the SCENE CARD in [ssot_03](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields.
+Three tests carry "Nobody has to be evil when everyone does their job" down to the single scene. They ride the SCENE CARD in [ssot_03](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) as two new fields, and the plot card in 04 carries the same theme record (IF-04-06-03).
+
+**Where the tests run** (IF catalog call 7, ruled 2026-10-05). The citation test and the knowledge gradient run on the scene plan, not on the narrated text. 07.1's "narration never states motive" therefore does not clash with them. The author shows the rule in speech or action, never in narration (IF-06-07-06, IF-06-07-07).
 
 - **The citation test** (Vaughan, [TEC.06](../../../../_0.1_BVX_LEARN/KNOWLEDGE_AREAS/)). In any scene where the system does harm, every actor can name the rule they followed. A scene that needs a hidden evil motive is arguing a different idea; rewrite it or mark it as the exception.
 - **The knowledge gradient** (Zimbardo, PSY.49), a field inside the citation test. The card names who in the scene knows better. The idea holds fully for those who follow the rule in ignorance; a character who knows better and complies is the idea's hard case, and the scene should feel it.
 - **The two-transcripts test** (Scott, PHI.03). The card says whether the scene plays on the **public script** (what people say in front of power) or the **hidden transcript** (what they say out of its sight), and what changes between the two.
-- **The rider** (Stangneth, PHI.04). The controlling idea describes what the system **allows**, never what each person **is**. Anna stays a question (cog, believer or mask), not an answer.
+- **The rider** (Stangneth, PHI.04). The controlling idea describes what the system **allows**, never what each person **is**. Anna stays a question (cog, believer or mask), not an answer. Her reader track in 08 §9A holds that question open (IF-06-08-05).
 
 ## TROPES
 
@@ -185,20 +219,14 @@ Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene
 
 ## 1.0 BAR (RULED 2026-09-29, BOLO 80)
 
-Every gate Chief set for 1.0, checked:
+This doc's own 1.0 list retires (IF catalog call 10, ruled 2026-10-05). The bar is SOP §5's six, at equal weight, and the doc reports each part below (IF-06-09-03).
 
-- ✓ **Method written** — THE METHOD, above.
-- ✓ **OXO worked instance** — THE WORKED INSTANCE — OVEREXITOUT (controlling idea, four rails, two gauges, three motifs).
-- ✓ **A theme read on all 7 cards:**
-  - [`oxo-scene-card-M1-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M1-skeleton.md)
-  - [`oxo-scene-card-M2-grief-summary.md`](../../../../_CANON_NODES/oxo-scene-card-M2-grief-summary.md)
-  - [`oxo-scene-card-M2-row9.md`](../../../../_CANON_NODES/oxo-scene-card-M2-row9.md)
-  - [`oxo-scene-card-M3-crash-analepsis.md`](../../../../_CANON_NODES/oxo-scene-card-M3-crash-analepsis.md)
-  - [`oxo-scene-card-M4-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M4-skeleton.md)
-  - [`oxo-scene-card-M5-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M5-skeleton.md)
-  - [`oxo-scene-card-M6-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M6-skeleton.md)
-- ✓ **The 81 handshake** — THE HANDSHAKE, above.
-- ✓ **OPEN closed or parked** — the handshake is closed (built above); EVIL CHECK's controlling idea is PARKED (wave 2, below). Nothing left open.
+- **Shape:** cleared. THE METHOD, the worked instance and the handshake are written.
+- **Shelf:** cleared. The method cites Egri, McKee, Coyne, Truby, Dramatica and Foucault (MSX.36).
+- **Proof:** cleared. OVEREXITOUT carries the instance, and a theme read sits on all 7 cards: [`oxo-scene-card-M1-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M1-skeleton.md), [`oxo-scene-card-M2-grief-summary.md`](../../../../_CANON_NODES/oxo-scene-card-M2-grief-summary.md), [`oxo-scene-card-M2-row9.md`](../../../../_CANON_NODES/oxo-scene-card-M2-row9.md), [`oxo-scene-card-M3-crash-analepsis.md`](../../../../_CANON_NODES/oxo-scene-card-M3-crash-analepsis.md), [`oxo-scene-card-M4-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M4-skeleton.md), [`oxo-scene-card-M5-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M5-skeleton.md), [`oxo-scene-card-M6-skeleton.md`](../../../../_CANON_NODES/oxo-scene-card-M6-skeleton.md).
+- **Ruled:** cleared. No OPEN call remains, and EVIL CHECK is parked (wave 2).
+- **Wired:** written in 1.4.0. `holders`, the motif ids, `motif_ref`, the theme record and the CT11 verdict name the neighbours; the neighbours confirm on their side.
+- **Store:** open. The rails' `meets` values and the latent-theme line are stubs until the OXO theme fill pass.
 
 ## PARKED (wave 2)
 
@@ -210,6 +238,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.4.0 · 2026-10-05** BOLO 102 stage 2 (Chief: "My word"): `holders:` on each rail; `motif.<slug>` ids and `motif_ref` in THE MOTIFS; the theme record (`rail_tested` · `side_argued` · `gauge`) stated as 06's output; G4 `core_binary` as the idea's seed; the CT11 verdict (`argues` · `neutral` · `undercuts`); the citation test runs on the scene plan; the 1.0 bar is SOP §5's six.
 - **1.3.2 · 2026-10-05** BOLO 102 batch C (Chief: "all recs"): TROPES gains the five-step procedure for keying a trope to one rail; Chief decides any trope that needs two.
 - **1.3.1 · 2026-10-04** BOLO 100 TOUCH BATCH 1, Chief "REC.": count line replaced by pointer to the register (TS-B9); front-door line (TS-B10).
 - **1.3.0 · 2026-10-04** · BOLO 100 follow-up (call PL-3), Chief: "rec". THE METHOD gains a latent-theme line, two motif checks (recurs, converges), and a `meets` entry per rail, from CRE.06. OVEREXITOUT values parked as `⏸ OXO theme fill pass (phase 2)`.

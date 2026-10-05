@@ -26,7 +26,7 @@ flowchart TD
   D --> E["Output Format Requirements"]
 ```
 
-The source has type `ssot_09_operations`, category operations, status canonical, version 1.2.2, last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD.
+The source has type `ssot_09_operations`, category operations, status canonical, version 1.3.0, last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD.
 
 ## Instructional Role
 
@@ -43,6 +43,8 @@ Every output begins with a YAML block. The fields:
 | `applies_to` | Always `[OVEREXITOUT, ASTRO7EX, LAKAD]` |
 | `status` | `canonical` |
 | `dependencies` | Use `[[wikilinks]]` |
+| `rung` | Exactly one of: policy, procedure, standard, handbook. Pick it by the standards ladder's rule. A new SSOT doc carries it from birth (IF catalog call 9, ruled 2026-10-05) |
+| `trunk` | Exactly one of: BLACK, ORANGE. It names which side of the Command the doc serves (IF catalog call 9, ruled 2026-10-05) |
 
 ## Phase 2: Linguistic Constraints (The Marine Standard)
 
