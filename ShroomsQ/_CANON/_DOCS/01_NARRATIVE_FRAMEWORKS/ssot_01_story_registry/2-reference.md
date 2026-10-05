@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or builder looking up a registry fact · **What it does:** lists each story row, project and field · **Type:** reference
 
 # The story registry: reference
 
-Source: [📐 ssot_01_story_registry.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md). Version 1.0.1; 1.0.0 ruled 2026-10-04 (Chief: "rec"; BOLO 100 registers batch 1). Applies to every story in the LEECHSEED universe. Trunk: BLACK. Dependencies: ssot_04_fabula (the world clock, the universe eras), ssot_08_tracking_system (one tracking file per story). Why: [concept](1-concept.md).
+Source: [📐 ssot_01_story_registry.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md). Version 1.1.0; 1.0.0 ruled 2026-10-04 (Chief: "rec"; BOLO 100 registers batch 1). Applies to every story in the LEECHSEED universe. Trunk: BLACK. Dependencies: ssot_04_fabula (the world clock, the universe eras), ssot_08_tracking_system (one tracking file per story). Why: [concept](1-concept.md).
 
 ## THE REGISTRY
 
@@ -51,7 +51,7 @@ Eras: 1 Skeeter Creek, 2 DCUS, 3 LAKAD, 4 ASTRO7EX, 5 beyond.
   - Present day: "choppies," a gig-driven helicopter-services market on the coast. Shipbreaker kids (Ferro kind, resistant to dark energy) are sent "deep under".
   - May finds Generation Zero's old computer, the replicator DER:G (Deus Ex Replicator: General). It is not a weapon. It is proof Generation Zero left the universe on purpose.
   - Echo noted, not linked (ruled 2026-09-29): Generation Zero echoes the AI Collapse / Deep Meridian hinge. LEECHSEED stays its own unplaced universe.
-  - The Sockett (an analog bio-access socket worn as a status symbol) is marked PORTABLE (ruled 2026-09-29, BOLO 91). Other stories may borrow it.
+  - The Sockett (an analog bio-access socket worn as a status symbol) is marked PORTABLE (ruled 2026-09-29, BOLO 91). Other stories may borrow it. The flag now lives on the Sockett's catalog entry as `portable:` (05; IF catalog call 3, ruled 2026-10-05). This row only points there.
   - The Civil War jump (`⏸ fabula placements (phase 2)`, ruled 2026-09-29, "all rec") is parked. "After the degen world, Setsuna moves to the civil war era" is tagged as the likely seed of the Lincoln / Underground Railroad historical fiction Chief remembers. No draft is on file.
 
 **The universe (ruled 2026-09-29).** One eon, five eras in order, moving outward from Earth, overlap allowed at the seams. The hinge is the Deep Meridian beam. A drill probe at Deep Meridian, a geothermal front on Earth, fires the radiation beam. The beam signals the quasar reaching Vivian's time. The Moon Severance and the AI Collapse follow (`⏸ fabula placements (phase 2)`). Deep Meridian is a place and an event, not a story. Full note: the fabula's world clock, `ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md`.

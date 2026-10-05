@@ -2,11 +2,11 @@
 type: ssot_02_character_systems
 category: state_architecture
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.3.0
+version: 1.4.0
 tier: fabula
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
-status: "v1.3.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar"
+status: "v1.4.0 2026-10-05: BOLO 102 stage 2 (Chief: \"My word\"), IF catalog calls 1, 4 and 5: `narrative_moment` and relationship `state_history.moment` carry the 08 time code, REL.* owned here, flag event ids. v1.3.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical; 1.2.1 2026-09-29: BOLO 90 step 7 trial, RULED 2026-09-29, Chief: 'line up the recs' — Rule 7 (backward diffs allowed) added, time-code examples updated to the ruled sequence grammar"
 purpose: "Defines the architecture for tracking character change over narrative time without modifying the static core record. Establishes the state diff system, state record format, overlay resolution rules, and boundaries with the static character record, relationship tables, and plot_systems."
 dependencies: ["ssot_02_character_systems_vertical_slice", "ssot_02_character_astrology", "ssot_04_fabula", "ssot_08_tracking_system"]
 ---
@@ -83,8 +83,8 @@ A state record is a structured data block that describes the delta between the b
 |`state_id`|Unique identifier for this state|`vm_m1b_post_crash`|
 |`origin_event`|The fabula event that produced this state (v1.1). An `event_id` from [📐 ssot_04_fabula.md](../04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md), grammar `<movement>_<slug>`. `null` only for Category 5 progression overlays, which have no single event|`m1b_crash_jebb_death`|
 |`told_at`|NEW (v1.2). A list of time codes — [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §4 — marking every point the audience is shown this state on the grid. An empty list means the state is true but offstage: it holds, but the audience is never told it at this moment|`["M2 · Q1 · S04 \| 012.3.2"]`|
-|`narrative_moment`|v1.2: generated from the time code, not authored. A readable label only, produced from `origin_event` and `told_at` so it can never drift from the real coordinate|`Movement 1B — immediately after the crash`|
-|`movement`|Which movement this state falls in|`m1b`|
+|`narrative_moment`|The 08 time code of the moment the state takes hold (IF catalog call 1, ruled 2026-10-05). It is the first entry in `told_at`; an offstage state takes the code of its `origin_event`. The readable label is generated from the code. Free text retires as an alias|`M2 · Q1 · S04 \| 012.3.2`|
+|`movement`|Read alias (IF catalog call 1, ruled 2026-10-05): the `M` of the time code. The movement tag retires as a key. A v1.3 record keeps it for reading|`m1b`|
 |`mc_distance_temporal`|v1.2: computed, not authored. Distance from Tori's own time code, with Tori fixed at (0,0) — see [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)|`0` (this IS Tori)|
 |`mc_distance_narrative`|Causal steps from MC's throughline. Stays authored — a judgment call, not derivable from time codes|`0`|
 |`state_version`|Version of this state record|`1.0`|
@@ -137,7 +137,7 @@ MODIFIED_DERIVED:
 
 ### Modified Flags Block
 
-Flags are re-evaluated against the modified values. Only flags whose state changes from the base record appear here.
+Flags are re-evaluated against the modified values. Only flags whose state changes from the base record appear here. A PENDING flag that fires here matches the `event_id` stored beside it in the base record (IF catalog call 5, ruled 2026-10-05). That `event_id` is this state's `origin_event`.
 
 ```
 MODIFIED_FLAGS:
@@ -282,11 +282,13 @@ Relationships between characters are tracked in a separate data structure, not i
 |`relationship_type`|Category|`sibling` / `romantic` / `antagonist` / `mentor` / `institutional`|
 |`status`|Current state|`active` / `severed` / `transformed` / `dormant`|
 |`synastry_data`|Chart comparison data (if both characters have charts)|`[aspect mesh, composite chart variables]`|
-|`state_history`|Array of relationship state changes|`[{moment: m1a, status: active}, {moment: m1b_post_crash, status: severed}]`|
+|`state_history`|Array of relationship state changes. Each `moment` is an 08 time code (IF catalog call 1, ruled 2026-10-05, IF-02-08-09); movement tags retire as aliases|`[{moment: "<time code before the crash>", status: active}, {moment: "<time code of the crash>", status: severed}]`|
+
+**Ownership (IF catalog call 4, ruled 2026-10-05, IF-00-02-26).** This doc owns the REL.* variables. Each field in the table is `REL.<field>`, for example `REL.relationship_type`, `REL.status` and `REL.state_history`. The variable registry cites this table and does not restate it. `status` and `state_history` are Dynamic. Every other field is Static.
 
 ### Relationship State Changes
 
-Relationship records carry their own state history — a timeline of status changes keyed to narrative moments. These changes are linked to but not stored inside the character state diffs. When a character state diff notes a change to `primary_attachment_object`, the corresponding relationship record should show a status change at the same narrative moment.
+Relationship records carry their own state history — a timeline of status changes keyed to narrative moments. Each `moment` is the 08 time code, the same code a character state's `narrative_moment` carries, so the two records line up by value. These changes are linked to but not stored inside the character state diffs. When a character state diff notes a change to `primary_attachment_object`, the corresponding relationship record should show a status change at the same narrative moment.
 
 ### Synastry Data
 
@@ -305,7 +307,7 @@ This document defines character state tracking. It does not define story structu
 - The state diff format that plot_systems will consume and produce.
 - The narrative moment identification scheme that plot_systems will use for timeline coordinates.
 - The MC-relative distance fields (`mc_distance_temporal`, `mc_distance_narrative`) that plot_systems will populate.
-- The movement tagging system that links character states to macro-arc positions.
+- The movement tag (a read alias for the `M` of the 08 time code, since 1.4.0) that links character states to macro-arc positions.
 
 **What plot_systems will eventually provide to this architecture:**
 
@@ -316,12 +318,22 @@ This document defines character state tracking. It does not define story structu
 
 **v1.2 (2026-09-29):** the formal timeline coordinate system is ruled, and it is provided by [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md), not by plot_systems — the time code (`M2 · Q1 · S04 | 012.3.2`) is the structured temporal key that `told_at` carries and `narrative_moment` is generated from. **Victoria-as-(0,0) is ruled**: Tori sits at the origin, and `mc_distance_temporal` is computed from time codes against her position, not typed in by hand. `mc_distance_narrative` is unaffected — causal steps stay a judgment call, authored as before.
 
+**v1.4 (2026-10-05):** `narrative_moment` and relationship `state_history.moment` carry the 08 time code, and the movement tag is a read alias (IF catalog call 1). This doc owns the REL.* variables (call 4). A PENDING or FIRED_PRE_STORY flag stores an `event_id` (call 5).
+
+**Interfaces (IF catalog, ruled 2026-10-05).** Each line names one wiring by its IF id.
+
+- Written by 09 (IF-02-09-06): the pipeline's Flow D updates a relationship record's `status` and `state_history` when an event changes a bond, for example `active` to `severed` after a trauma event.
+- Read by 09 (IF-02-09-05): Flow D reads the checkpoint: `character_id`, `state_id`, `origin_event`, `told_at`, `base_record_version`, `state_diffs`, STATE_NOTE, ASTROLOGY_OVERLAY and the five event types.
+- Read by 08 (IF-02-08-08): 08 reads the query-assembly protocol, "Querying a Character at a Narrative Moment", to wire its inspector panel.
+- Written to 04 (IF-02-04-14): each fabula event's `produces:` list names the `state_id`s whose `origin_event` is that event. The state record keeps only the forward pointer.
+
 ---
 
 ## Version History
 
 |Version|Date|Changes|
 |---|---|---|
+|1.4.0|2026-10-05|BOLO 102 stage 2 (Chief: "My word"): `narrative_moment` and relationship `state_history.moment` carry the 08 time code, movement tag a read alias · REL.* owned here · PENDING flag `event_id` rule · four interface lines.|
 |1.3.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. The hand-kept static and dynamic tables replaced by a rule: the main doc's layer table carries a static/dynamic column and this doc reads it; no field ships without the tag (C17). Example block updated (`secure_base_object`). The astrology overlay section now says the chart never mutates (C15). Dependency path fixed. Frontmatter repaired and table of contents links made in-page. Additive; no rule removed.|
 |1.2.1|2026-09-29|RULED 2026-09-29, Chief: "line up the recs" (BOLO 90 step 7 trial). New Rule 7: backward diffs are allowed — a character's base record is whatever state canon describes, and a checkpoint dated earlier than it may diff backward (mirrors ssot_03_setting_state_architecture.md §6 Rule 7). Time-code examples updated to the ruled sequence grammar, `M2 · Q1 · S04 \| 012.3.2` (both the `told_at` field example and the Boundaries section). Additive; no field removed.|
 |1.2.0|2026-09-29|BOLO 90 step 2, RULED 2026-09-29 ("go"): `told_at` added to Required Fields (a list of time codes; empty = true but offstage) · `narrative_moment` redefined as generated from the time code, readable label only · `mc_distance_temporal` redefined as computed from time codes with Tori fixed at (0,0); `mc_distance_narrative` stays authored · new §Checkpoints and Story Points (v1.2): today's state records are checkpoints, story points (single-field changes, any time code) live in [📐 ssot_08_tracking_system.md](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) · Rule 6 amended to govern checkpoints only, story points may be many per moment · Boundaries with plot_systems updated: the timeline coordinate system and Victoria-as-(0,0) are ruled, provided by ssot_08. Additive; no field removed.|

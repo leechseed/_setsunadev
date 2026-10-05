@@ -7,14 +7,14 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
-source_version: "1.0.3"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a writer looking up a framework · **What it does:** lists every framework, table and example in the doc · **Type:** reference
 
 # Truth verification: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.0.3, status canonical. The source sits on trunk BLACK at tier foundation and applies to OVEREXITOUT, ASTRO7EX and LAKAD. It has no dependencies and was last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.1.0, status canonical. The source sits on trunk BLACK at tier foundation and applies to OVEREXITOUT, ASTRO7EX and LAKAD. It has no dependencies and was last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
 
 ## Core Concepts
 
@@ -114,7 +114,7 @@ Each framework has a Definition, Components, Application and Limitations, and a 
 
 ## How the Frameworks Check the Systems
 
-A table of system, claim and checking framework. Two rules apply to every row.
+A table of system, claim and checking framework. Three rules apply to every row.
 
 | System | Claim | Frameworks |
 |---|---|---|
@@ -124,13 +124,18 @@ A table of system, claim and checking framework. Two rules apply to every row.
 | Theme (06) | The story proves its premise. | Logical Reasoning; Pragmatic Theory |
 | Tracking (08) | A record matches the story. | Correspondence; Coherence |
 | Worldbuilding (05) | A world claim fits the world's own rules. | Coherence; Correspondence |
+| Narrative (01) | A scale or framework fits the text it is applied to. | Correspondence; Coherence |
+| Style (07) | A voice or tone rule holds across the text. | Coherence |
 
 1. A claim one framework cannot confirm needs a second framework.
 2. Skepticism (Framework 8) tests any claim in any row. A claim that survives is checked. A claim that fails stays marked open.
+3. The status (`checked` or `open`) and the framework or frameworks that checked the claim sit on the claim's own record, in the doc that owns the claim. Tracking (08) does not hold them (IF catalog call 8, ruled 2026-10-05).
 
 ## Implementation
 
 How to apply the frameworks.
+
+Reads from 07 (IF-00-07-02): Style writes one per-source vocabulary page, `KNOWLEDGE_AREAS/_vocab/<ID>.vocab.md`, and one register row per term and source in `_0.1_BVX_LEARN/_meta/VOCABULARY.md`, from the reader's `==term==` marks.
 
 ### Research Design Integration
 

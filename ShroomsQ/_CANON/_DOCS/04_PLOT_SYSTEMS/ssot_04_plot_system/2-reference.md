@@ -7,17 +7,17 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md
-source_version: 1.3.2
+source_version: 1.4.0
 ---
 
 **Who it's for:** a writer or maintainer looking up a plot-system field · **What it does:** lists each component, part and field · **Type:** reference
 
 # The plot system (syuzhet): reference
 
-Frontmatter: category `plot_system`, tier `narratology`, trunk BLACK, rung standard, `applies_to: [all IPs]`, last updated 2026-10-04. This doc is the told-order third of the plot system. The other two are the [fabula](../ssot_04_fabula/2-reference.md) (world time) and the [trope graph](../ssot_04_trope_graph/2-reference.md) (the rails). Read the Touchstones register first.
+Frontmatter: category `plot_system`, tier `narratology`, trunk BLACK, rung standard, `applies_to: [all IPs]`, last updated 2026-10-05. This doc is the told-order third of the plot system. The other two are the [fabula](../ssot_04_fabula/2-reference.md) (world time) and the [trope graph](../ssot_04_trope_graph/2-reference.md) (the rails). Read the Touchstones register first.
 
-**Owns:** the told order, turns, escalation, the twelve-layer PLOT SLICE, the PLOT CARD.
-**Does not own:** world time (fabula), legal moves (trope graph), structure (Dramatica), psychology (the character database), place (03).
+**Owns:** the told order, turns, escalation, the twelve-layer PLOT SLICE, the PLOT CARD. It also owns the storyform record: the entry keyed by `storyform_id` that character (02), setting (03) and P12 bind to (IF catalog call 4). Dramatica supplies the structure the record holds.
+**Does not own:** world time (fabula), legal moves (trope graph), structure (Dramatica sets it; this doc keeps the storyform record), psychology (the character database), place (03).
 
 **Root claim:** plot converts the storyform's static checkpoints into felt experience. Every unit runs value-in, turn, value-out at some rung of the ladder. A unit that does not turn is exposition, description or scenery.
 
@@ -103,14 +103,14 @@ Layer names are house coinage, ruled 2026-09-16. P12 is fed from the storyform.
 | P4 | TURN | What mechanism flips the value? | `turn_mechanism`; optional `test_phase` (contract, contest, consequence) |
 | P5 | VALUE-OUT | What polarity on exit? Is it ironic? | `polarity_out`, `irony_flag` |
 | P6 | SIGNPOST/JOURNEY SEAT | Which throughline and act does the unit serve? | `throughline`, `signpost_or_journey`, `act` |
-| P7 | REVEAL | What is learned, and does it reverse expectation? | `reveal_content`, `reveal_type` (action or revelation), `reveal_quality` |
+| P7 | REVEAL | What is learned, and does it reverse expectation? | `reveal_content`, `reveal_type` (action or revelation), `reveal_quality`. UNDERSIDE_SURFACING (03) hands P7 the first two (IF catalog call 5). |
 | P8 | COLLISION | Which character × setting row fires? | `collision_row` (e.g. L9×S9) |
 | P9 | STAKES/ESCALATION | How does risk compare to the last unit? | `stakes_delta` |
 | P10 | GENRE OBLIGATION | Which reader-contract obligation does it discharge? | `genre_obligation` |
-| P11 | TIME | Order told versus order happened? | `order_told`, `order_happened`, `duration_mode`, `frequency_mode`, `anachrony` |
-| P12 | FUNCTION | What does the unit do for the Grand Argument? | `story_point`, `storyform_id` |
+| P11 | TIME | Order told versus order happened? | `order_told` (an 08 time code), `order_happened`, `duration_mode`, `frequency_mode`, `anachrony` |
+| P12 | FUNCTION | What does the unit do for the Grand Argument? | `story_point`, `storyform_id`, `domain_ref` |
 
-**Binding rule.** P12 is keyed by `storyform_id`. A unit with no storyform link may run P1 to P11 only. P12 filled makes the unit load-bearing.
+**Binding rule.** P12 is keyed by `storyform_id`. This doc owns the storyform record that key names. A unit with no storyform link may run P1 to P11 only. P12 filled makes the unit load-bearing.
 
 **Folded rules (2026-09-29, 77-AA).**
 
@@ -124,6 +124,11 @@ Layer names are house coinage, ruled 2026-09-16. P12 is fed from the storyform.
 - **P7 cascade recipe (1.3.0).** Choose one rule that binds an institution. Show a near-miss. Break it through a personal-scale event. Each step is an existing `cause` or `enable` edge. The collapse has no villain.
 - **P9 repeat-turn exception.** A resurrection beat forces a second full pass, so `stakes_delta` may show a repeated peak.
 - **P9 first-unit baseline (ruled 2026-10-04).** The first unit of a sequence sets `stakes_delta: baseline`. The trend test starts at the second unit.
+- **P7 receives from UNDERSIDE_SURFACING (2026-10-05).** When 03's flag fires, an S10 fact moves from secret to folk, or from folk to public. The paired unit takes `reveal_content` and `reveal_type` from that fact. The fabula event stays `gap_type: logged` (IF catalog call 5).
+- **P12 `domain_ref` (2026-10-05).** A unit set at a LOAD_BEARING place records the S12 Domain that place embodies. It sits beside `story_point` and `storyform_id` (IF catalog call 5).
+- **P11 `order_told` is a time code (2026-10-05).** The writer gives the unit's position in the telling as an 08 time code. The anachrony is the gap between it and the fabula's `time` (IF catalog call 1).
+- **The theme record (2026-10-05).** The plot card carries `rail_tested` (R1 to R4), `side_argued` and `gauge` (a name and a step). It also holds the `citation` test with its knowledge gradient and the `transcript` test. The scene card already holds the two tests (IF catalog call 2).
+- **The three checks (2026-10-05).** The plot card carries `fantasy:`, `sexy:` and `aesthetic:`. Each holds the one line the three-check pass writes for that element (IF catalog call 6).
 
 **P10 ruling (2026-09-29, BOLO 91).** Story level reads cultcore. Scene level reads Snyder's Institutionalized, then varies by movement:
 
@@ -140,7 +145,7 @@ Layer names are house coinage, ruled 2026-09-16. P12 is fed from the storyform.
 
 The plot card sits beside the SCENE CARD. The scene card carries setting and state. The plot card carries the turn. Four scene-card lines overlap it: `address`, `value turn`, `collision`, part of `threads`. The two stay siblings sharing one `address` key.
 
-Fields: address (P1) · driver (P2) · opposition goal (P2) · value-in (P3) · turn (P4) · value-out (P5) · signpost seat (P6) · reveal (P7) · collision (P8) · stakes delta (P9) · genre oblig (P10) · time (P11) · function (P12).
+Fields: address (P1) · driver (P2) · opposition goal (P2) · value-in (P3) · turn (P4) · value-out (P5) · signpost seat (P6) · reveal (P7) · collision (P8) · stakes delta (P9) · genre oblig (P10) · time (P11) · function (P12). The card also carries the theme record (`rail_tested` · `side_argued` · `gauge` · `citation` · `transcript`) and `fantasy` · `sexy` · `aesthetic`.
 
 **Address grammar (ruled 2026-09-29).** The q-scheme `OXO.primary.M2.q1.s3` is legacy. The canonical form is the tracking-system time code `M2 · Q1 · S03 | 012.3.2`. Conversion: `q1.s3` becomes `Q1 · S03`.
 
@@ -153,9 +158,15 @@ Fields: address (P1) · driver (P2) · opposition goal (P2) · value-in (P3) · 
 | P4 turn | The `cause` or `enable` edge from value-in to value-out. |
 | P5 value-out | The state-after half. |
 | P6 signpost seat | The trope graph's walk. |
-| P7 reveal | A fabula event that was `logged` but untold. |
+| P7 reveal | A fabula event that was `logged` but untold. `reveal_content` and `reveal_type` also arrive from UNDERSIDE_SURFACING (03). |
 | P9 stakes delta | The `cause` and `enable` chain back to the prior event. |
-| P11 time | `order_happened` is the fabula `time`. `order_told` is this doc's field. |
+| P11 time | `order_happened` is the fabula `time`. `order_told` is this doc's field, an 08 time code. |
+
+**Interfaces (IF catalog).**
+
+- Reads from 00 (IF-00-04-03): `T1.SOCIAL.community_membership.standing` `{earned_by, vouched_by, cost_to_lose}` is the standing a unit can put at risk. P9 `stakes_delta` reads it.
+- Reads from 06 (IF-04-06-02): the value scale steps set the step each unit names. P3 `polarity_in` and P5 `polarity_out` read them.
+- Read by 08 (IF-04-08-09): P1 percentage addresses. The `proportion` lane measures act and third shares from them.
 
 P1, P8, P10 and P12 are unchanged by the split.
 
@@ -171,7 +182,7 @@ The syuzhet's own record shows where a fabula event surfaces in the telling. It 
 - **What P11 measures (ruled 2026-10-04).** `frequency_mode` describes the telling, never the event. The event's repeat lives in the fabula `repeat` flag.
 - **Sternberg's three gap effects.** Curiosity (effect shown, cause withheld). Suspense (suspected future outcome withheld). Surprise (unforeshadowed reordering). All three are queries against the fabula, not stored fields.
 
-Template fields: `plot_unit_id`, `event_id`, `order_told`, `order_happened`. It also has `anachrony` (`type`: none, analepsis_external, analepsis_internal, analepsis_mixed, prolepsis; `reach`; `extent`). The last fields are `duration_mode`, `frequency_mode` and `gap_effect` (curiosity, suspense, surprise, none).
+Template fields: `plot_unit_id`, `event_id`, `order_told` (an 08 time code), `order_happened` (read from the fabula `time`, code included). It also has `anachrony` (`type`: none, analepsis_external, analepsis_internal, analepsis_mixed, prolepsis; `reach`; `extent`). The last fields are `duration_mode`, `frequency_mode` and `gap_effect` (curiosity, suspense, surprise, none).
 
 ## THE INSTANCE, M2 row 9 filled into the plot slice — worked example (phase 2 fills)
 
@@ -206,4 +217,4 @@ The fabula holds six Tori events: `m1b_crash_jebb_death`, `m1b_untouchable_resol
 
 ## Other sections
 
-The source also holds OPEN (fifteen calls, all closed or moved to phase 2). It also holds the 1.0 bar (one filled card per movement, M1 to M6). It holds a version history from 0.1.0 (2026-09-16) to 1.3.2 (2026-10-04).
+The source also holds OPEN (fifteen calls, all closed or moved to phase 2). It also holds the 1.0 bar (one filled card per movement, M1 to M6). It holds a version history from 0.1.0 (2026-09-16) to 1.4.0 (2026-10-05).

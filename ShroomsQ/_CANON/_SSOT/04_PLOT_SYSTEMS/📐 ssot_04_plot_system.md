@@ -180,9 +180,9 @@ Same architecture as the LEECHSEED Character System and the SETTING SLICE: surfa
 
 **Added 2026-10-05 (IF catalog calls 1, 2, 5 and 6, Chief: "My word").**
 
-- **P7 receives from UNDERSIDE_SURFACING** (call 5; IF-03-04-19). When 03's flag fires, an S10 fact has moved from secret to folk or folk to public. The paired unit takes `reveal_content` and `reveal_type` from that fact. The fabula event stays `gap_type: logged` and surfaces as untold.
+- **P7 receives from UNDERSIDE_SURFACING** (call 5; IF-03-04-19). When 03's flag fires, an S10 fact moves from secret to folk, or from folk to public. The paired unit takes `reveal_content` and `reveal_type` from that fact. The fabula event stays `gap_type: logged` and surfaces as untold.
 - **P12 `domain_ref`** (call 5; IF-03-04-21, IF-03-04-22). A unit set at a LOAD_BEARING place records the S12 Domain that place embodies. The field sits beside `story_point` and `storyform_id`.
-- **P11 `order_told` is a time code** (call 1; IF-04-08-13). The writer gives the unit's position in the telling as an 08 time code. The fabula's `time` gives `order_happened`, with its time code and calendar year. The anachrony is the gap between the two.
+- **P11 `order_told` is a time code** (call 1; IF-04-08-13). The writer writes the unit's position in the telling as an 08 time code. The fabula's `time` gives `order_happened`, with its time code and calendar year. The anachrony is the gap between the two.
 - **The theme record** (call 2; IF-04-06-03, IF-04-06-04). The plot card carries what the scene card already carries from the theme system. The fields are `rail_tested` (R1 to R4), `side_argued`, and `gauge` (a name and a step, such as Freedom at the Control step). The record also holds the `citation` test with its knowledge gradient and the `transcript` test. P12 and P7 score what a unit argues from this record.
 - **The three checks** (call 6; IF-01-04-21). The plot card gains `fantasy:`, `sexy:` and `aesthetic:`. Each holds the one line the three-check pass writes for that plot element. The fields match the entity sheets.
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a builder adding or promoting registry entries · **What it does:** steps for rows, blanks, projects and vignettes · **Type:** how-to
@@ -69,7 +69,7 @@ Terms are defined in the [reference](2-reference.md).
 ## Borrow from a story for a project
 
 1. Find the story row.
-2. Copy only what the project needs.
+2. Copy only what the project needs. For a world element, read the `portable:` field on its 05 catalog entry first.
 3. Keep the project's own row in the PROJECTS table.
 
 ## Assign a vignette's next ID

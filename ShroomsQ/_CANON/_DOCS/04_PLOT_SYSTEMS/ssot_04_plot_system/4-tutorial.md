@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md
-source_version: 1.3.2
+source_version: 1.4.0
 ---
 
 **Who it's for:** a new writer learning the plot card · **What it does:** one worked scene, layer by layer · **Type:** tutorial

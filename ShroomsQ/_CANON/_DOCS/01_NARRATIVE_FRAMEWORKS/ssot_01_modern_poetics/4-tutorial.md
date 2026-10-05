@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a new writer learning the three checks · **What it does:** runs one element through all three · **Type:** tutorial

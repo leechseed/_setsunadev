@@ -1,9 +1,9 @@
 ---
 type: ssot_standard
 category: operations
-version: 0.1.2
+version: 0.2.0
 tier: operations
-last_updated: 2026-09-15
+last_updated: 2026-10-05
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: working — v0.1; promotes to canonical after two project uses (DOCTRINE 0, Invariant I)
 working_title: true
@@ -38,6 +38,8 @@ sources: "SOP.md comms codes §1, rulings 2026-08-21 to 2026-09-12 · ssot_09_op
 This document states how one exchange between Chief and Claude becomes a built thing, from a single turn to a project. It governs the **loop**. The project flow governs the project the loop runs inside; the SOP governs the session that contains it.
 
 The loop exists to end two failure modes. The first is **the stall pattern**: a finished design blocked on one unanswered decision, then rebuilt from scratch later, because the block was never named and dated. The second is its cousin: **work built before the order was confirmed**, spending effort on a shared image that was never actually shared.
+
+**Interfaces.** Read by 00 (IF-00-09-01): the pattern library reads SOP.md §1's four steps (RECON, ORDER, EXECUTE, CONSOLIDATE). The pattern library's loop steps 1 to 3 map to RECON, 4 and 5 to ORDER, 6 and 7 to EXECUTE, 8 and 9 to CONSOLIDATE (IF catalog wiring findings, ruled 2026-10-05).
 
 ---
 
@@ -166,3 +168,4 @@ BOLO 53 was tabled 2026-09-12 and opened today, 2026-09-15, on one spoken word: 
 | 0.1.0 | 2026-09-15 | Working draft on Chief's "Open 53" (2026-09-15). Life-cycle read iterative-incremental, provisional. Rung provisional pending the BOLO 50 ladder. Promotes on two uses. |
 | 0.1.1 | 2026-09-15 | Chief: "Everything approved." The iterative-incremental read ruled, no longer provisional. Filing beside the project flow ruled; rung STANDARD, only the ladder (BOLO 50) still open. v0.1 accepted as working; canon on two uses. Use counter opens at the next M or L build. |
 | 0.1.2 | 2026-09-15 | NASA four ruled on BOLO 50. Rung moved from STANDARD (provisional) to PROCEDURE. No rule changed. |
+| 0.2.0 | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): one line names the interface IF-00-09-01 (the pattern library reads SOP §1's four steps). No rule changed. |

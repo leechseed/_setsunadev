@@ -1,9 +1,9 @@
 ---
 type: ssot_09_operations
 category: operations
-version: 1.1.0
+version: 1.2.0
 tier: operations
-last_updated: 2026-02-12
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: legacy
 purpose: "Defines the operational protocol for the Goon Room environment within the LEECHSEED narrative system."
@@ -28,6 +28,8 @@ status_note: "legacy (2026-02); split out of 07.2a on 2026-10-04, BOLO 92 merge 
 ## Purpose
 
 This document defines the operational standards and workflow protocols for the **Goon Room**, the primary environment for narrative synthesis, rapid prototyping, and systemic state analysis.
+
+**Interfaces.** Written by 07 (IF-07-09-03): the 07.2a writing guide pasted this protocol in, and 07 split it out to this file in 09, flagged legacy.
 
 ---
 
@@ -83,3 +85,4 @@ Every piece of data generated within the Goon Room must pass a **Canonicity Audi
 | :------ | :--------- | :-------------------------------------------------------- |
 | 1.0.0   | 2026-02-12 | Initial operational protocol for the Goon Room.           |
 | 1.1.0   | 2026-02-12 | Updated to reflect mandatory triple-dash YAML boundaries. |
+| 1.2.0   | 2026-10-05 | BOLO 102 stage 2 (Chief: "My word"): one line names the interface IF-07-09-03 (07.2a's pasted-in protocol, split out and flagged legacy). |

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer applying the principles · **What it does:** steps for the three checks, drafts and sweeps · **Type:** how-to
@@ -22,6 +22,7 @@ Terms are defined in the [reference](2-reference.md).
 2. Say its intended fantasy in one breath. State what the audience gets to be, feel or do.
 3. If you cannot say it in one breath, mark the element not done.
 4. Do not build a taxonomy, framework, meta-layer or rubric around the answer.
+5. Write the line in the element's `fantasy:` field. A plot element or scene uses its plot card or scene card.
 
 ## Capture a fantasy line
 
@@ -69,7 +70,8 @@ Terms are defined in the [reference](2-reference.md).
 1. Pick one of the five hook types: Mystery, Consequence, Thematic Echo, Character, Mechanical.
 2. Interlock or leapfrog it across installments.
 3. Plan the payoff. Never only tease.
-4. Vary the intensity.
+4. Write a hook-ledger entry in 08 §9A: hook type, the container it closes and the payoff address.
+5. Vary the intensity.
 
 ## Build a narrative dilemma
 

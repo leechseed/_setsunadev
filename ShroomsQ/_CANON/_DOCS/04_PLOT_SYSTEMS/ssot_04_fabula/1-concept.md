@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 0.2.0
+source_version: 0.3.0
 ---
 
 **Who it's for:** a writer or Chief learning why one fabula exists · **What it does:** explains world time under every story · **Type:** concept

@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or builder looking up a principle · **What it does:** lists each principle, check and record · **Type:** reference
 
 # Modern poetics: reference
 
-Source: [📐 ssot_01_modern_poetics.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md). Version 1.0.1. Name ruled 2026-08-31. Trunk: BLACK (P3 and the three checks bridge ORANGE). Applies to all IPs. Why: [concept](1-concept.md).
+Source: [📐 ssot_01_modern_poetics.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_modern_poetics.md). Version 1.1.0. Name ruled 2026-08-31. Trunk: BLACK (P3 and the three checks bridge ORANGE). Applies to all IPs. Why: [concept](1-concept.md).
 
 ## THE SEVEN CANONIZED PRINCIPLES (May 2025, ratified 2026-08-31)
 
@@ -61,6 +61,7 @@ Each entry gives the law, what it forbids, its dictum and its address.
 - **Forbids:** empty teases, unpaid hooks, uniform intensity.
 - **Dictum:** "A great hook doesn't ask you to keep going — it dares you not to."
 - **Address:** L4 plus the ladder. Feeds the M6 to M8 serialized grammars (BOLO 16).
+- **Ledger (IF catalog call 6, ruled 2026-10-05):** every hook is an entry in the hook ledger in 08 §9A: hook type, container it closes, payoff address (an 08 time code).
 
 ### P7 · THE NARRATIVE DILEMMA — plot_systems seed #3
 
@@ -79,6 +80,7 @@ Each entry gives the law, what it forbids, its dictum and its address.
 - **Capture (RULED 2026-08-31):** Chief speaks it in-chat, dictation as-is. Chief's voice is the line of quality and the canon form. Claude may draft candidate lines, marked `draft`. A draft becomes canon only when Chief keeps it or speaks it over.
 - **Rank:** Chief: "probably the most important thing."
 - **Address:** systemic. Every spine level, ladder rung, 12-layer sheet and plot element. No exceptions.
+- **Landing (IF catalog call 6, ruled 2026-10-05):** the three checks land as `fantasy:`, `sexy:` and `aesthetic:` fields on the entity sheet, the plot card and the scene card.
 - **Sweep order (RULED 2026-08-31):** three full sweeps: fantasy across everything, then sexy across everything, then aesthetic across everything. Never bundled per element.
 
 ### P9 · THE SEXY CHECK

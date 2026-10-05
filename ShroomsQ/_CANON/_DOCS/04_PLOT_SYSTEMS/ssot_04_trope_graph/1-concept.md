@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or Chief learning why the walk has a rail · **What it does:** explains the graph and its rule · **Type:** concept

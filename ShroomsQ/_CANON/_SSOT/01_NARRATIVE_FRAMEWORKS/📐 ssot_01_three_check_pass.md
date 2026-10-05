@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: three_check_pass
-version: 1.0.2
+version: 1.1.0
 tier: narratology
 last_updated: 2026-10-05
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: history line reworded, Anna and OXO element gaps parked by name, module_of stamped. Earlier: canonical 1.0; all 36 lines KEPT by Chief 2026-09-29 (\"keep all\")"
@@ -14,7 +14,7 @@ trunk: BLACK/ORANGE
 # 📐 THE THREE-CHECK PASS — sweep 1, flagship roster (canonical 1.0)
 
 **Roster (12):** Tori · Anna · DCUS · The Drop · the Sync-dive · the Star-Rating · the storyform · the scream etiquette · the Story Lattice · the Collision Engine · DARKROOM · the taxonomy engine.
-**Protocol:** Chief struck/kept by number (F/S/A + row); ruled 2026-09-29 'keep all'. Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.
+**Protocol:** Chief struck/kept by number (F/S/A + row); ruled 2026-09-29 'keep all'. Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields. The plot card and the scene card carry the same three fields, so a plot element or scene lands its lines there (IF-01-04-21; IF catalog call 6, ruled 2026-10-05).
 
 ## SWEEP 1 · FANTASY DRIVE (P8) — all
 
@@ -97,3 +97,4 @@ trunk: BLACK/ORANGE
 - **1.0.0 — 2026-09-29.** Chief ruled "keep all": all 36 lines kept, draft marks stripped, status canonical. Migrated to six sheets (Tori, Anna F2 only, DCUS, The Drop, storyform, Collision Engine); six elements have no sheet yet; S2/A2 remain Anna gaps.
 - **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** The 0.1.0 history line reworded without the glyph. Anna gaps parked as `⏸ Anna sheet (phase 2)`; sheetless elements parked as `⏸ OXO element sheets (phase 2)`. `module_of: ssot_01_modern_poetics` stamped.
 - **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): row numbering rule past row 12 written under NEXT (C36).
+- **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): the three fields land on the plot card and the scene card as well as entity sheets (call 6).

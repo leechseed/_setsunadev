@@ -14,9 +14,11 @@ source_version: 1.1.0
 
 # Goon Room protocol (legacy): reference
 
-The source has status `legacy`. Its status note reads: "legacy (2026-02); split out of 07.2a on 2026-10-04, BOLO 92 merge call 4. Kept as the record, not read as doctrine." It applies to OVEREXITOUT, ASTRO7EX, LAKAD, version 1.1.0, last updated 2026-02-12. This page is the only page written for it, because the source is legacy.
+The source has status `legacy`. Its status note reads: "legacy (2026-02); split out of 07.2a on 2026-10-04, BOLO 92 merge call 4. Kept as the record, not read as doctrine." It applies to OVEREXITOUT, ASTRO7EX, LAKAD, version 1.2.0, last updated 2026-10-05. This page is the only page written for it, because the source is legacy.
 
 > **OPEN:** the source names no successor protocol. For the current workspace guide, see the [Goon Room how-to](../how_to_use_goon_room/2-reference.md).
+
+**Interfaces.** The 07.2a writing guide pasted this protocol in. 07 split it out to this file in 09 and flagged it legacy (IF-07-09-03).
 
 ## Operational Environment
 

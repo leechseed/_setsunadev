@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or maintainer looking up a trope-graph fact · **What it does:** lists each component, part and count · **Type:** reference
 
 # The trope graph: reference
 
-Frontmatter: category `plot_system`, tier `narratology`, `module_of: ssot_04_plot_system`, trunk BLACK, rung standard, `applies_to: [all IPs]`, last updated 2026-10-04. The graph is the pattern layer. A trope names a recurring pattern. A node is a named unit from one of five structure books. An edge is a measured relationship between two nodes. Sibling docs: [plot system](../ssot_04_plot_system/2-reference.md) and [fabula](../ssot_04_fabula/2-reference.md).
+Frontmatter: category `plot_system`, tier `narratology`, `module_of: ssot_04_plot_system`, trunk BLACK, rung standard, `applies_to: [all IPs]`, last updated 2026-10-05. The graph is the pattern layer. A trope names a recurring pattern. A node is a named unit from one of five structure books. An edge is a measured relationship between two nodes. Sibling docs: [plot system](../ssot_04_plot_system/2-reference.md) and [fabula](../ssot_04_fabula/2-reference.md).
 
 **Owns:** the 135 nodes and their `same_as` clusters; trope keying; node-to-node edges; the rail for the walk. It also owns the handshake to the fabula, the plot card and the workspace view.
 **Does not own:** the storyform (Dramatica), world time (fabula), the told order (plot doc P11). It also does not own psychology, place, and the workspace view's rendering code (BOLO 79).
@@ -72,6 +72,7 @@ Tobias and Schmidt clusters: `tob.06_revenge` = `sch.05_vengeance_for_a_crime`; 
 
 ## THE TROPES
 
+- **One key store (IF catalog call 10).** The trope register's `register.json` is the one key store. The graph reads it and keeps no key file of its own. A trope's `node`, `alt` and `conf` sit on the register's record for that `slug`. The setting keys S1 to S12 sit beside them.
 - **Keying.** Eight Payload Specialist batches read 1,678 fetched TV Tropes entries against the 135 nodes. Each trope gets `node`, `alt` and `conf` (`high`, `medium` or `low`). Every batch was checked before the join.
 - **Keyed and unkeyed.** 1,034 keyed. 644 unkeyed. Of the unkeyed, 352 are high-confidence "does not belong" and 292 are low-confidence "might fit a finer node". No unkeyed trope has medium confidence.
 - **Confidence mix (keyed).** High 479, medium 368, low 187.
@@ -159,6 +160,8 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 
 **To the fabula.** A walked node proposes an event. The fabula's event record turns the proposal into a dated, sourced fact, or does not.
 
+**To the register (IF catalog call 10).** The graph reads `register.json` and writes no second key. A place-type trope that no book node can place stays on the register's setting key for the setting slice. It takes no P6 seat.
+
 **To the plot card.** P6 is the anchor. Other fields:
 
 | P-layer | What a node or trope fills |
@@ -192,4 +195,4 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 
 ## Other sections
 
-The source also holds OPEN (six calls, all closed 2026-10-04). The calls cover seating by method rule and 23 empty nodes bypassed. They also cover 352 unkeyed permanent and 292 held for `⏸ trope second keying pass (phase 2)`. They also cover the movements map and Propp's id. The `or:` tooltip is verified built at `_tools/workspace/build.py:2576-2585` and `:2445`. It also holds a version history from v0.1.0 (2026-09-24) to v1.0.0 (2026-10-04).
+The source also holds OPEN (six calls, all closed 2026-10-04). The calls cover seating by method rule and 23 empty nodes bypassed. They also cover 352 unkeyed permanent and 292 held for `⏸ trope second keying pass (phase 2)`. They also cover the movements map and Propp's id. The `or:` tooltip is verified built at `_tools/workspace/build.py:2576-2585` and `:2445`. It also holds a version history from v0.1.0 (2026-09-24) to v1.1.0 (2026-10-05).

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 0.2.0
+source_version: 0.3.0
 ---
 
 **Who it's for:** a new writer learning the event record · **What it does:** one worked event, start to finish · **Type:** tutorial
@@ -21,7 +21,7 @@ You will write the first Tori event, the crash. Keep the [reference](2-reference
 3. **Write the transition.** Write `Tori overrides the pace notes, calculating she knows better -> Jebb dies`.
 4. **List the actors.** Victoria Midnight (Tori) is the subject. Jebb Midnight is the object.
 5. **Flag it.** This is a kernel. It branches her WOUND, the family collapse and every state downstream.
-6. **Date it.** `movement: "M1B"`. The canon gives no birth date and no calendar date, so write `reach: "pre-story; distance from story-present unspecified in canon"`. Write `extent: "point (a single crash)"`.
+6. **Date it.** `movement: "M1B"`. The canon gives no birth date and no calendar date, so write `reach: "pre-story; distance from story-present unspecified in canon"`. Write `extent: "point (a single crash)"`. Leave `time_code` and `calendar_year` null, because canon gives neither.
 7. **Set the rest.** `gap_type: logged`, `repeat: false`, `stories: [OXO]`.
 8. **Cite it.** The source is victoria-midnight.md, REORIENT. The confidence is `direct_quote`.
 9. **Add the edge.** The crash causes the resolve "I will become untouchable". Write `type: cause`, `to: m1b_untouchable_resolve`.

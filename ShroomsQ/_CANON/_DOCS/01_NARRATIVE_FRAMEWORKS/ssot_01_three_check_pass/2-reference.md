@@ -7,18 +7,18 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or designer looking up an element's lines · **What it does:** lists every sweep and row · **Type:** reference
 
 # The three-check pass: reference
 
-Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_three_check_pass.md), version 1.0.2, trunk BLACK/ORANGE, RULED by Chief 2026-10-04 ("rec"). A module of `ssot_01_modern_poetics`. Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_three_check_pass.md), version 1.1.0, trunk BLACK/ORANGE, RULED by Chief 2026-10-04 ("rec"). A module of `ssot_01_modern_poetics`. Why it exists: [concept](1-concept.md).
 
 **Roster (12):** Tori · Anna · DCUS · The Drop · the Sync-dive · the Star-Rating · the storyform · the scream etiquette · the Story Lattice · the Collision Engine · DARKROOM · the taxonomy engine.
 
-**Protocol.** Chief struck or kept by number (F, S, A plus the row). Ruled 2026-09-29: "keep all." Kept lines land on entity sheets as `fantasy:`, `sexy:` and `aesthetic:` fields. All 36 lines are kept.
+**Protocol.** Chief struck or kept by number (F, S, A plus the row). Ruled 2026-09-29: "keep all." Kept lines land on entity sheets as `fantasy:`, `sexy:` and `aesthetic:` fields. The plot card and the scene card carry the same three fields, so a plot element or scene lands its lines there (IF catalog call 6, ruled 2026-10-05). All 36 lines are kept.
 
 ## SWEEP 1 · FANTASY DRIVE (P8) — all
 

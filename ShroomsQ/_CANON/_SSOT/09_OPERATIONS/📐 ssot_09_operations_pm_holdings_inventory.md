@@ -1,7 +1,7 @@
 ---
 title: PM Holdings Inventory — everything project-management-shaped the operation already holds
 type: register / survey
-version: 1.0.2
+version: 1.1.0
 tier: operations
 domain: 09_OPERATIONS
 status: survey banked 2026-09-03 — feeds BOLO 25 (the standard PM flow)
@@ -16,6 +16,8 @@ related: BOLO.md #25 · SOP.md · STATE.md · PROJECTS.md · DOCTRINE-0-INVARIAN
 **The finding in one line: the method is already written; what is missing is assembly.** A complete six-phase lifecycle with decision gates exists in the Feb-2026 four-domains artifact, a matched PMBOK-7 mapping sits beside it, and every instrument a lightweight flow needs (charter · assumption log · decision ledger · task register · portfolio board · stage gates · document container · Command style) exists as a finished artifact somewhere in the repo. No single document assembles them into "how a project runs here."
 
 **Keeping this inventory.** The Command keeps the inventory, and Chief owns it. The Command re-sweeps it when BOLO 25 (the standard PM flow) builds a step, and whenever a listed holding changes state. Chief decides any other re-sweep. The author verifies each path before listing it.
+
+**Interfaces.** Written by 05 (IF-05-09-01): the 05 compiler `_tools/worldview/build.py` generates `catalog/_INDEX.md` and the world view page from the catalog files.
 
 ## 1 · PMBOK / PMI material
 
@@ -84,7 +86,7 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 | `_0.1_BVX_LEARN/_meta/DECISIONS.md` · `REVIEW-QUEUE.md` · inventory/orphans/gap reports | per-subsystem decision log + review queue + reports | finished | the proven per-project document set |
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/*.md` | one-sheets with `Invariants` + structured `feeds:` block | finished | traceability (requirement → artifact) in YAML |
 | `…/files/2026-03-28_research-to-knowledgebase-templatemd.md` | two-stage prompt pipeline (research → KB) | finished template | the intake half of a research-driven flow |
-| `02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | worked end-to-end pipeline illustration | finished | the "flow, illustrated once" artifact |
+| `02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | worked end-to-end pipeline illustration; moved from 09 to 02 on 2026-10-05 (the Bold Venture Design System moved to 00 the same day) | finished | the "flow, illustrated once" artifact |
 | `…/files/2026-02-25_ssot-00-system-architecture-mapmd.md` | components mapped, **every undefined interface marked** | finished | an interface-gap register = risk log |
 
 ## 5 · The Ultrasin master registry format
@@ -105,6 +107,7 @@ PROJECTS rank 10 "Business ops" retired as a label. Of its six conversations, fo
 
 ## Version History
 
+- **1.1.0 · 2026-10-05** — BOLO 102 stage 2 (Chief: "My word"): the pipeline row points to the doc's new home in 02 and notes the design system's move to 00; one line names the interface IF-05-09-01.
 - **1.0.2 · 2026-10-05** — BOLO 102 batch C (Chief: "all recs"): added "Keeping this inventory": the Command keeps it, Chief owns it, re-sweep triggers named.
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): the "Missing" list in §6 is re-dated 2026-10-05; entries the repo shows closed are struck and marked "closed 2026-09-03".
 - **1.0.0 · 2026-09-03** — Survey banked.

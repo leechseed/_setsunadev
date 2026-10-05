@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a designer asking why three checks run per element · **What it does:** explains the pass and its method · **Type:** concept
@@ -57,7 +57,7 @@ Anna has no authored body, chart or visual tissue. The pass marks her sexy line 
 
 ## Chief kept every line
 
-Chief struck or kept by number. On 2026-09-29 he ruled "keep all." All 36 lines stand. Kept lines land on the entity sheets as `fantasy:`, `sexy:` and `aesthetic:` fields. Six elements have no sheet, so their lines live in the pass.
+Chief struck or kept by number. On 2026-09-29 he ruled "keep all." All 36 lines stand. Kept lines land on the entity sheets as `fantasy:`, `sexy:` and `aesthetic:` fields. The plot card and the scene card carry the same three fields. Six elements have no sheet, so their lines live in the pass.
 
 ## The long read
 

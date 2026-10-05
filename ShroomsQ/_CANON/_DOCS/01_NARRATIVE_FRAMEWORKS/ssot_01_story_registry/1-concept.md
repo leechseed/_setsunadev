@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer asking why one file lists all stories · **What it does:** explains the registry's single-list rule · **Type:** concept
@@ -62,6 +62,6 @@ Games, businesses and tools are projects, not stories. They get their own table.
 
 ## The long read
 
-The registry names its own boundaries. The Outliers is OXO's series title, not a second story. BVIPDS and Bold Venture are the methodology and studio, not a story. In the LEECHSEED row, the Sockett is marked PORTABLE, so other stories may borrow it. Generation Zero's vanished-precursor framing echoes the AI Collapse structurally. The registry logs that echo and does not link it. Linking later is free.
+The registry names its own boundaries. The Outliers is OXO's series title, not a second story. BVIPDS and Bold Venture are the methodology and studio, not a story. In the LEECHSEED row, the Sockett is marked PORTABLE, so other stories may borrow it. The flag lives on the catalog entry's `portable:` field. Generation Zero's vanished-precursor framing echoes the AI Collapse structurally. The registry logs that echo and does not link it. Linking later is free.
 
 For each row and field, see the [reference](2-reference.md).

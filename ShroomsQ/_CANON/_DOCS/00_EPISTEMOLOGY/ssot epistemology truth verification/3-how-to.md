@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
-source_version: "1.0.3"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a writer checking a canon claim · **What it does:** gives the steps for picking and applying frameworks · **Type:** how-to
@@ -18,12 +18,13 @@ Look up each framework in the [reference](2-reference.md).
 
 ## Check a claim in a story system
 
-1. Name the system the claim belongs to: Character (02), Setting (03), Plot (04), Theme (06), Tracking (08) or Worldbuilding (05).
+1. Name the system the claim belongs to: Narrative (01), Character (02), Setting (03), Plot (04), Theme (06), Style (07), Tracking (08) or Worldbuilding (05).
 2. Find the system's row in "How the Frameworks Check the Systems".
 3. Apply each framework named in that row to the claim.
 4. If one framework cannot confirm the claim, add a second framework.
 5. Run Skepticism and Critical Thinking on the claim.
 6. Mark the claim checked if it survives. Mark it open if it fails.
+7. Write the status and the frameworks that checked the claim on the claim's own record, in the doc that owns it. Do not write them in Tracking (08).
 
 ## Select frameworks for a research design
 

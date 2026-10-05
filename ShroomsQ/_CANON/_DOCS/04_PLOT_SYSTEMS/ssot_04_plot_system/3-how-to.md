@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md
-source_version: 1.3.2
+source_version: 1.4.0
 ---
 
 **Who it's for:** a writer carding plot units · **What it does:** steps for plot-system tasks · **Type:** how-to
@@ -25,9 +25,11 @@ Field meanings are in the [reference](2-reference.md).
 5. Write P4 as one line: the Gap, the commandment chain or the step. Read the `cause` or `enable` edge.
 6. Read P5 `polarity_out` from the state-after half. Set `irony_flag` if the audience read differs.
 7. Seat P6 from the trope graph's walk.
-8. Fill P7 if something is learned. Set `reveal_type` and `reveal_quality`.
-9. Name the P8 collision row, the P10 obligation and the P11 time fields.
-10. Add P12 `story_point` and `storyform_id` if the unit serves the argument.
+8. Fill P7 if something is learned. Set `reveal_type` and `reveal_quality`. Where 03's UNDERSIDE_SURFACING fires, take `reveal_content` and `reveal_type` from the surfaced fact.
+9. Name the P8 collision row, the P10 obligation and the P11 time fields. Write `order_told` as an 08 time code.
+10. Add P12 `story_point` and `storyform_id` if the unit serves the argument. At a LOAD_BEARING place, add `domain_ref`, the S12 Domain the place embodies.
+11. Fill the theme record: `rail_tested` (R1 to R4), `side_argued` and `gauge` (name and step). Add the `citation` and `transcript` lines.
+12. Write `fantasy:`, `sexy:` and `aesthetic:`, one line each.
 
 ## Test that a unit is plot
 

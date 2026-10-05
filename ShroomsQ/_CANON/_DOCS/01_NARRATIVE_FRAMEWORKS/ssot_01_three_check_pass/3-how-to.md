@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md
-source_version: 1.0.2
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or designer running the checks · **What it does:** steps for the pass's recurring tasks · **Type:** how-to
@@ -55,7 +55,7 @@ Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORK
 
 1. Wait for Chief to strike or keep the line by number.
 2. Find the element's sheet in the landing table.
-3. Add the kept line as the `fantasy:`, `sexy:` or `aesthetic:` field.
+3. Add the kept line as the `fantasy:`, `sexy:` or `aesthetic:` field. For a plot element or scene, add it to the plot card or scene card.
 4. Update the landing table.
 5. If the element has no sheet, leave the line in the pass. Then park it as ⏸ OXO element sheets (phase 2).
 

@@ -1228,6 +1228,8 @@ All derived stats compute in internal (0-60) space per Base 60 SSOT.
 
 ## Status Flags
 
+A flag in PENDING stores the fabula `event_id` of the event that makes it true. A flag in FIRED_PRE_STORY stores the `event_id` of the story-entry marker (IF-00-04-06; IF catalog call 5, ruled 2026-10-05).
+
 ### FLG.shadow_denial
 
 |Field|Value|

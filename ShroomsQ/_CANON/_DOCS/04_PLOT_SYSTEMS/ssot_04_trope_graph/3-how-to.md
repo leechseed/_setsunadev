@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_trope_graph.md
-source_version: 1.0.0
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer or maintainer using the graph · **What it does:** steps for trope-graph tasks · **Type:** how-to
@@ -68,11 +68,12 @@ flowchart TD
 
 ## Key a new trope to a node
 
-1. Read the trope's one-line TV Tropes index definition. Use no page body text.
+1. Open the trope's record in the register's `register.json`. Read its one-line TV Tropes index definition. Use no page body text.
 2. Pick the best-fit node, or `null` if none fits.
 3. Pick a second plausible node as `alt`, or `null`.
 4. Set `conf`: `high`, `medium` or `low`.
-5. Check the batch before joining it to the node list.
+5. Write the keys on that register record. Do not keep a second key file.
+6. Check the batch before joining it to the node list.
 
 ## Handle an unkeyed trope
 

@@ -32,7 +32,9 @@ flowchart TD
   R --> J["Addendum 2026-09-09"]
 ```
 
-The source has type `register / survey`, version 1.0.2, tier operations, domain 09_OPERATIONS. Status: survey banked 2026-09-03, feeding BOLO 25. Date 2026-09-03. Method: an Explore-agent sweep of the repo and archive at medium breadth, with paths verified where load-bearing. Trunk: BLACK (systems), serving every trunk. Related: BOLO.md #25, SOP.md, STATE.md, PROJECTS.md, DOCTRINE-0-INVARIANTS.md, BVX-ULTRASIN-twin-track.md, oscar-mike/lab-venture.md.
+The source has type `register / survey`, version 1.1.0, tier operations, domain 09_OPERATIONS. Status: survey banked 2026-09-03, feeding BOLO 25. Date 2026-09-03. Method: an Explore-agent sweep of the repo and archive at medium breadth, with paths verified where load-bearing. Trunk: BLACK (systems), serving every trunk. Related: BOLO.md #25, SOP.md, STATE.md, PROJECTS.md, DOCTRINE-0-INVARIANTS.md, BVX-ULTRASIN-twin-track.md, oscar-mike/lab-venture.md.
+
+**Interfaces.** The 05 compiler `_tools/worldview/build.py` generates `catalog/_INDEX.md` and the world view page from the catalog files (IF-05-09-01).
 
 The Command keeps the inventory, and Chief owns it. The Command re-sweeps it when BOLO 25, the standard PM flow, builds a step. It also re-sweeps whenever a listed holding changes state. Chief decides any other re-sweep. The author verifies each path before listing it.
 
@@ -107,7 +109,7 @@ The source adds: no agile/scrum/kanban thread exists on its own. Agile appears o
 | `_0.1_BVX_LEARN/_meta/DECISIONS.md`, `REVIEW-QUEUE.md`, inventory/orphans/gap reports | per-subsystem decision log, review queue, reports | finished | the proven per-project document set |
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/*.md` | one-sheets with `Invariants` and a structured `feeds:` block | finished | traceability (requirement to artifact) in YAML |
 | `files/2026-03-28_research-to-knowledgebase-templatemd.md` | two-stage prompt pipeline (research to KB) | finished template | the intake half of a research-driven flow |
-| `02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | worked end-to-end pipeline illustration | finished | the "flow, illustrated once" artifact |
+| `02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | worked end-to-end pipeline illustration; moved from 09 to 02 on 2026-10-05 (the Bold Venture Design System moved to 00 the same day) | finished | the "flow, illustrated once" artifact |
 | `files/2026-02-25_ssot-00-system-architecture-mapmd.md` | components mapped, every undefined interface marked | finished | an interface-gap register is a risk log |
 
 ## 5 · The Ultrasin master registry format

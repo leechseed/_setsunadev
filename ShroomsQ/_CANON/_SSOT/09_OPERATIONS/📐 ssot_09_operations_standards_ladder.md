@@ -52,7 +52,7 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 
 ## The filing table · 2026-09-15
 
-The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level (IF catalog call 9, ruled 2026-10-05). The writer picks each rung by the rule above. A script then stamps the rung into each doc's front matter. Every row below then reads `stamped`. Two files moved out of 09 under the same ruling. The character pipeline illustration now lives in 02, and the Bold Venture Design System now lives in 00. Their rows below carry the new folders.
+The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level (IF catalog call 9, ruled 2026-10-05). The writer picks each rung by the rule above. A script then stamps the rung into each doc's front matter. Every row below then reads `stamped`. Two files moved out of 09 under the same ruling. The character pipeline illustration now lives in 02, and the Bold Venture Design System now lives in 00. Their rows below carry the new folders. Read by 07 (IF-07-09-04): 07.3 reads the Bold Venture Design System (ROSE anchor #8A1F44, FLESH ramp, four registers, Luminance Law, one-red ledger), now filed in 00.
 
 | Document | Rung | Status |
 |---|---|---|

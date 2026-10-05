@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 0.2.0
+source_version: 0.3.0
 ---
 
 **Who it's for:** a writer or maintainer working the event registry · **What it does:** steps for fabula tasks · **Type:** how-to
@@ -23,11 +23,13 @@ Field meanings are in the [reference](2-reference.md).
 3. Write `transition` as `<state-before> -> <state-after>`.
 4. List each actor with an `actant_role`: subject, object, helper or opponent.
 5. Flag `kernel_satellite`. Ask: does the plot break if you delete it?
-6. Fill `time`: `movement`, `reach` and `extent`. Use ranges or "unspecified". Never invent a year.
+6. Fill `time`: `movement`, `time_code`, `calendar_year`, `reach` and `extent`. Use ranges or "unspecified". Write `calendar_year` only where canon gives a year. Never invent a year or a code.
 7. Set `gap_type` to `logged` and `repeat` to `true` only for an iterative class.
-8. Set `stories` to the tellings that show the event.
-9. Write `provenance`: the source and a confidence of `direct_quote`, `inferred` or `uncertain`.
-10. Add `causal_edges`.
+8. Set `source_kind` to construction, institutional, ownership, rename, seasonal or `character`.
+9. Set `stories` to the tellings that show the event.
+10. Write `provenance`: the source and a confidence of `direct_quote`, `inferred` or `uncertain`. Write `canon_source` as the citation the truth check reads.
+11. List the `state_id`s the event yields in `produces`. Set `scheduled` to a time code only for a future state fixed in advance.
+12. Add `causal_edges`.
 
 ## Choose an edge type
 
@@ -58,6 +60,7 @@ flowchart TD
 2. For deep past with no Mn, set `movement: "backstory"`.
 3. Write reach and extent as ranges, or mark them unknown.
 4. Do not leave them blank.
+5. Write `time_code` and `calendar_year` only where canon gives them. Leave each null where canon is silent.
 
 ## Decide whether a character layer needs an origin event
 
@@ -75,12 +78,14 @@ flowchart TD
 4. Read P9 from the edge chain back to the prior event.
 5. For P11, copy `time` into `order_happened`. The plot doc owns `order_told`.
 6. Do not read P6 from the fabula. The trope graph's walk seats it.
+7. Where 03's UNDERSIDE_SURFACING fires, give P7 `reveal_content` and `reveal_type`. Keep the event `logged`, surfacing as untold.
 
 ## Link a character state record to an event
 
 1. Find the event's `event_id` in the registry.
 2. Copy that exact string into the state record's `origin_event`.
 3. Keep `narrative_moment` as a readable tag.
+4. Add the record's `state_id` to the event's `produces` list.
 
 ## Place an era on the world clock
 

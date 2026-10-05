@@ -7,14 +7,14 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
-source_version: "1.0.3"
+source_version: "1.1.0"
 ---
 
 **Who it's for:** a writer or Chief deciding how to prove a claim · **What it does:** explains why the ten truth frameworks exist · **Type:** concept
 
 # Truth verification: why ten frameworks
 
-*The mind model: ten frameworks test many kinds of claim, and two rules decide checked or open.*
+*The mind model: ten frameworks test many kinds of claim, and three rules decide checked or open.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
@@ -51,11 +51,11 @@ Each framework lists its limits next to its strengths. Empirical observation can
 
 ## Each story system makes one kind of claim
 
-The ten frameworks form the validity layer under the grand argument. Character, setting, plot, theme, tracking and worldbuilding each make one kind of claim. The source assigns each system its checking frameworks.
+The ten frameworks form the validity layer under the grand argument. Narrative, character, setting, plot, theme, style, tracking and worldbuilding each make one kind of claim. The source assigns each system its checking frameworks.
 
-## Two rules cover every system
+## Rules cover every system
 
-First, a claim that one framework cannot confirm needs a second framework. Second, Skepticism tests any claim in any system. A claim that survives Skepticism is checked. A claim that fails it stays marked open.
+First, a claim that one framework cannot confirm needs a second framework. Second, Skepticism tests any claim in any system. A claim that survives Skepticism is checked. A claim that fails it stays marked open. Third, the status and the checking frameworks sit on the claim's own record in its owning doc, not in Tracking.
 
 ## Frameworks fit the domain
 

@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/04_PLOT_SYSTEMS/📐 ssot_04_fabula.md
-source_version: 0.2.0
+source_version: 0.3.0
 ---
 
 **Who it's for:** a writer or maintainer looking up a fabula fact · **What it does:** lists each component, field and event · **Type:** reference
 
 # The fabula: reference
 
-- Frontmatter: category `plot_system`, tier `fabula`, trunk BLACK, rung standard, `applies_to` OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX and all future IPs. It was last updated 2026-09-29. The fabula is the world-time layer. One timeline sits under OXO and EVIL CHECK. The told order lives in [ssot_04_plot_system](../ssot_04_plot_system/2-reference.md).
+- Frontmatter: category `plot_system`, tier `fabula`, trunk BLACK, rung standard, `applies_to` OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX and all future IPs. It was last updated 2026-10-05. The fabula is the world-time layer. One timeline sits under OXO and EVIL CHECK. The told order lives in [ssot_04_plot_system](../ssot_04_plot_system/2-reference.md).
 
 **Owns:** world time, the EVENT RECORD schema, typed CAUSAL EDGES, THE WORLD CLOCK, the ORIGIN MOMENTS rule.
 **Does not own:** the told order (the plot doc, P11); the pattern layer ([trope graph](../ssot_04_trope_graph/2-reference.md)). It also does not own place itself (03) or the static character layers (02).
@@ -52,13 +52,17 @@ Fields:
 
 | Field | Value or rule |
 |---|---|
-| `event_id` | `<movement>_<slug>`, e.g. `m1b_crash_jebb_death`. `backstory_<slug>` for pre-M1 history. |
+| `event_id` | `<movement>_<slug>`, e.g. `m1b_crash_jebb_death`. `backstory_<slug>` for pre-M1 history. The character system's `story_beat` type is this id, and a PENDING or FIRED_PRE_STORY flag stores its firing event's `event_id` (IF catalog call 5). |
 | `transition` | `<state-before> -> <state-after>`. |
 | `actors` | Each with `actant_role`: subject, object, helper or opponent. |
 | `kernel_satellite` | `kernel` (cannot be deleted without breaking the logic) or `satellite`. Bal's functional test and Chatman's kernel test agree. |
-| `time` | `movement` (Mn, Mn stage, or `backstory`); `reach` (distance from story-present, range allowed); `extent` (span, point or duration). |
+| `time` | `movement` (Mn, Mn stage, or `backstory`); `time_code` (the 08 time code, null if not placed); `calendar_year` (the year where canon gives one, null if not); `reach` (distance from story-present, range allowed); `extent` (span, point or duration). The code and the year sit side by side (IF catalog call 1). |
 | `gap_type` | `logged` (an event is on record) or `unknown` (nothing recorded, not the same as nothing happened). |
 | `repeat` | `true` for an iterative class (Genette frequency). |
+| `source_kind` | One of 03's five state-source categories (construction, institutional, ownership, rename, seasonal) or `character`. 03 reads from it which S-layers the event moves (IF catalog call 5). |
+| `canon_source` | The canon-source citation the truth check reads. `provenance.source` stays the working note (IF catalog call 5). |
+| `produces` | The `state_id`s the event yields across characters. It is the back-reference to each state's `origin_event` (IF catalog call 5). |
+| `scheduled` | The 08 time code of a future state that 03's LEDGER_DUE flag fixed in advance. Null for a past event (IF catalog call 5). |
 | `location` | A place, an S-doc address if known. |
 | `stories` | `[OXO, EVIL_CHECK, backstory_only]`. Reserved field. |
 | `provenance` | `source` plus `confidence`: `direct_quote`, `inferred` or `uncertain`. |
@@ -109,7 +113,7 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 
 **Superseded.** The 2026-02-09 ruling that the three stories occur simultaneously is kept as history. The eon stays the umbrella.
 
-**Fuzzy and unknown dates.** The working answer is movement-relative dating (M1, M2, M3). Reach and extent take ranges or are marked unknown.
+**Fuzzy and unknown dates.** The working answer is movement-relative dating (M1, M2, M3). Reach and extent take ranges or are marked unknown. A calendar layer now sits beside it (IF catalog call 1). `time.calendar_year` holds a year where canon gives one, and `time.time_code` holds the 08 grid coordinate. Both stay null where canon is silent.
 
 **Iterative events.** The `repeat` flag marks one record standing for a repeated class.
 
@@ -147,13 +151,15 @@ A layer needs an origin moment when its baseline forms from one datable event.
 | P4 `turn_mechanism` | The `cause` or `enable` edge from value-in to value-out. |
 | P5 `polarity_out`, `irony_flag` | The state-after half. |
 | P6 `throughline`, `signpost_or_journey`, `act` | Not the fabula (ruled 2026-09-24). The trope graph's walk seats P6. The fabula supplies only `time`. |
-| P7 `reveal_content`, `reveal_type` | An event that was `logged` but untold. |
+| P7 `reveal_content`, `reveal_type` | An event that was `logged` but untold. UNDERSIDE_SURFACING (03) hands P7 both fields and logs the event as `logged`, surfacing as untold (IF catalog call 5). |
 | P9 `stakes_delta` | The chain of `cause` and `enable` edges back to the prior event. |
-| P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is the event's `time`. The gap is classed as an anachrony. |
+| P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is the event's `time`, with its time code and year. `order_told` is a time code. The gap is classed as an anachrony. |
 
 **To the state architecture.** Landed in `ssot_02_character_state_architecture` v1.1.0 on 2026-09-24. It added an `origin_event` field and `state_diffs` as a parent field. It also added event id standardization (worked pair `m1b_crash_jebb_death` and `vm_m1b_post_crash`).
 
 **To the setting.** Axis 4 TIME states read the world-clock eras for dating. S7, S11 and S5 stay the authoring surface for what happened. The fabula is the surface for when.
+
+**To the readers of the world clock.** Read by 01 (IF-01-04-06): the story registry reads the universe eras 1 to 5 and the world clock. Each story row carries an era. Read by 05 (IF-04-05-01): a catalog entry's `origin: "<fabula event_id>"` names the event that brought the entry into being.
 
 ## THE INSTANCE
 
@@ -184,7 +190,7 @@ Five `backstory` events fill her L7 ORIGIN chain. The copy is not a state diff o
 | `backstory_colson_father_seeks_scientist` | The father seeks a scientist who can rebuild her, better. | enable to the attachment |
 | `backstory_colson_scientist_attachment` | The scientist grows too close to Colson. Extent is extended. | cause to the reclaim |
 | `backstory_colson_father_reclaims` | The father steals her back. | simultaneous with the copy |
-| `backstory_colson_copy_made` | The scientist secretly keeps her own copy, a second Colson. It is the copy's own L7 ORIGIN moment. | none yet |
+| `backstory_colson_copy_made` | The scientist secretly keeps her own copy, a second Colson. It is the copy's own L7 ORIGIN moment. Her own 02 character record, apart from `anna-colson-conway.md`, names it as `origin_event` (IF catalog call 5). | none yet |
 
 This does not fill L8, L9 or L10 for either Colson, and it does not place post-origin events.
 
@@ -202,4 +208,4 @@ This does not fill L8, L9 or L10 for either Colson, and it does not place post-o
 
 ## Other sections
 
-The source also holds OPEN (six calls, all ruled 2026-09-24). The calls cover the Tori-only instance, EVIL CHECK in wave 2 and `<movement>_<slug>` ids. They also cover DCUS eras cross-referenced, movement-relative dates and the v1.1 patch. It also holds a version history from 0.1.0 (2026-09-24) to 0.2.0 (2026-10-01).
+The source also holds OPEN (six calls, all ruled 2026-09-24). The calls cover the Tori-only instance, EVIL CHECK in wave 2 and `<movement>_<slug>` ids. They also cover DCUS eras cross-referenced, movement-relative dates and the v1.1 patch. It also holds a version history from 0.1.0 (2026-09-24) to 0.3.0 (2026-10-05).

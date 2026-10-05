@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_modern_poetics.md
-source_version: 1.0.1
+source_version: 1.1.0
 ---
 
 **Who it's for:** a writer asking what the Command's stories must be · **What it does:** explains the prescriptive constitution · **Type:** concept

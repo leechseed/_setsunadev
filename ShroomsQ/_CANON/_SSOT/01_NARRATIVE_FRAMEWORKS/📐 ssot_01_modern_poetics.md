@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: modern_poetics
-version: 1.0.1
+version: 1.1.0
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [all IPs]
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: capture protocol reworded, applies_to added, Standing-Order candidates landed in the Touchstones register. Earlier: CANON — name RULED 2026-08-31 (Modern Poetics); disposition table RATIFIED same session; P8–P10 spoken into doctrine same session"
 purpose: "The prescriptive half of the lattice — what house stories MUST BE. The lattice describes what a story is; this doc commands what ours are for. Canonized from the May-2025 Leechseed Manifesto (16 docs, imported-Joplin) + three native principles coined 2026-08-31."
@@ -58,6 +58,7 @@ trunk: BLACK (P3 and the three checks bridge ORANGE)
 **Forbids:** empty teases · unpaid hooks · uniform intensity.
 **Dictum:** *"A great hook doesn't ask you to keep going — it dares you not to."*
 **Address:** L4 + the ladder; feeds M6–M8 serialized grammars (BOLO 16).
+**Ledger (IF-01-04-20, IF-01-08-14; IF catalog call 6, ruled 2026-10-05):** every hook is an entry in the hook ledger in 08 §9A: hook type, container it closes, payoff address (an 08 time code).
 
 ### P7 · THE NARRATIVE DILEMMA — plot_systems seed #3
 **The law:** the highest-efficiency device — mutually exclusive options, real stakes on every path, double fallout for inaction; the choice advances plot and exposes character in one stroke. The folk form of the spine's Problem quad under Optionlock pressure, and its scene-level executable.
@@ -76,6 +77,7 @@ trunk: BLACK (P3 and the three checks bridge ORANGE)
 **The capture (protocol RULED 2026-08-31):** spoken by Chief in-chat, dictation as-is — **Chief's voice is the line of quality and the canon form.** Claude may draft candidate lines, marked **`draft`**; a draft becomes canon only when Chief keeps it or speaks it over. Off the cuff, esoteric welcome, never systematized.
 **Rank:** Chief, on coining it: *"probably the most important thing."*
 **Address:** systemic — every spine level, every ladder rung, every 12-layer sheet, every plot element. No exceptions by design.
+**Landing (IF-01-04-21; IF catalog call 6, ruled 2026-10-05):** the three checks land as `fantasy:` / `sexy:` / `aesthetic:` fields on the entity sheet, the plot card and the scene card.
 **Sweep order (RULED 2026-08-31):** the three checks run as three full sweeps — fantasy across everything, then sexy across everything, then aesthetic across everything — never bundled per element.
 
 ### P9 · THE SEXY CHECK
@@ -105,5 +107,6 @@ P1's "engagement before message" vs the spine's "story = Grand Argument": they c
 - Name garble flag: "Modern Poetics" ruled from the final utterance; "Modern Entertainment Poetics" was voiced mid-stream — correct on request, one line.
 
 ## Version history
+- **1.1.0 — 2026-10-05.** BOLO 102 stage 2 (Chief: "My word"): P6 names the hook ledger in 08 §9A; P8–P10 land their fields on the plot card and the scene card (call 6).
 - **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Capture protocol reworded (draft marker is now `draft`); `applies_to` added; the Standing-Order candidate entry landed in the Touchstones register and closed here.
 - **1.0.0 — 2026-08-31.** Stood up: 7 principles canonized from the May-2025 manifesto (disposition ratified), P8–P10 coined same session, lineage recorded, tension resolved.
