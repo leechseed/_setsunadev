@@ -2,9 +2,9 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_06_style_guides
 category: style_guide
-version: 1.0.2
+version: 1.0.3
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 module_of: ssot_06_2_documents_style
 reader: "anyone marking a Command document, as writer or as reader"
 doc_type: reference
@@ -84,7 +84,7 @@ Marks already made in bold are converted by listing the exact bold spans and pas
 
 ## EXAMPLES
 
-**Example 1 — a reader mark in an invariant.**
+**Example 1 — a reader mark in a Touchstone.**
 
 Before, writer-side only:
 
@@ -114,3 +114,4 @@ Harvest writes to `MIL.01.vocab.md`:
 | 1.0.0 | 2026-09-06 | Ruled on the BOLO 32 boresight: four marks, reader/writer split, harvest tool, retro-conversion of MIL.01. |
 | 1.0.1 | 2026-09-29 | Moved to 06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md (BOLO 92); no content change. |
 | 1.0.2 | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): stamped module_of 06.2; type, category, and header fields set; links repaired to 06.2a. |
+| 1.0.3 | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): Example 1 says "Touchstone" in place of "invariant". |

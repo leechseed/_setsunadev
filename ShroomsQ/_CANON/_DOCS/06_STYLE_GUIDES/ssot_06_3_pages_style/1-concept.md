@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_3_pages_style.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** anyone building a Command page or artifact · **What it does:** explains why pages style 06.3 sets two layers · **Type:** concept

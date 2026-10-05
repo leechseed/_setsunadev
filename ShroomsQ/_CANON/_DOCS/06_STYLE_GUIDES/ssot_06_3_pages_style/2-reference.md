@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_3_pages_style.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a page builder looking up one ruling · **What it does:** lists every component of 06.3 with values and citations · **Type:** reference
@@ -41,5 +41,3 @@ The internal-tool layer. Seven rulings, each with its citation.
 **Held sources.** The source also lists eleven tier-1 references from the Zotero shelf's 06.3 section. Nobody has read any of them into a rule yet. The first six are BVX.0292, BVX.1191, BVX.0294, BVX.0295, BVX.1031, BVX.1042. The last five are BVX.1192, BVX.1047, BVX.1193, BVX.1103, BVX.0301. BVX.1002 is skipped as a misfit.
 
 **Pending rec (source OPEN):** when a page rule needs backing beyond memory, pull first from Harris, *Information Graphics* (BVX.1192). Also pull from Lidwell, Holden and Butler, *Universal Principles of Design* (BVX.0301).
-
-> **OPEN:** the source's front matter dates the page 2026-09-29 and carries no `owner`, `state` or `reviewed` fields. No ruling distills any held source into a page rule yet.

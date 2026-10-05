@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_3_pages_style.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a new page builder learning by doing · **What it does:** builds one internal board page that follows the rulings · **Type:** tutorial

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_3_pages_style.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a page builder doing one page task · **What it does:** gives numbered steps for each recurring 06.3 task · **Type:** how-to

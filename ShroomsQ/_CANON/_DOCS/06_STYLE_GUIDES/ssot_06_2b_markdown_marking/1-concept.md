@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** anyone marking a Command document · **What it does:** explains why each inline mark has one owner · **Type:** concept
