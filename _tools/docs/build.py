@@ -368,8 +368,15 @@ def main():
                        f'<small>{len(g["docs"])}</small></summary>{"".join(item(d) for d in g["docs"])}</details>')
             continue
         n = sum(len(g["docs"]) for g in gs)
+        main = "".join(sub(g) for g in gs if not g.get("shelf"))
+        shelves = [g for g in gs if g.get("shelf")]
+        if shelves:   # STOWAGE (provisional 10/5): every shelf of the system stowed under one subheading
+            rows = "".join(f'<details class="grp doc shelf" data-key="{g["key"]}"><summary><span>{html.escape(g["name"].replace("Shelf · ", ""))}</span>'
+                           f'<small>{len(g["docs"])}</small></summary>{"".join(item(d) for d in g["docs"])}</details>' for g in shelves)
+            main += (f'<details class="grp sub shelf" data-key="{key}-stowage"><summary><span>Stowage</span>'
+                     f'<small>{sum(len(g["docs"]) for g in shelves)}</small></summary>{rows}</details>')
         nav.append(f'<details class="sys" data-key="{key}"><summary><span>{html.escape(gs[0]["toptitle"])}</span>'
-                   f'<small>{n}</small></summary>{"".join(sub(g) for g in gs)}</details>')
+                   f'<small>{n}</small></summary>{main}</details>')
 
     used_terms = set(re.findall(r'data-t="([^"]+)"', "".join(arts)))
     G = {k: TERMS[k] for k in used_terms if k in TERMS}
