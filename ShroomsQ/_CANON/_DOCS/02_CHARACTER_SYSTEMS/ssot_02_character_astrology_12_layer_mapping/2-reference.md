@@ -16,7 +16,7 @@ source_version: 1.1.0
 
 Source: [🔮ssot_02_character_astrology_12_layer_mapping.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md). Concept: [1-concept.md](1-concept.md).
 
-*The master feed table as a graph: each layer and the chart elements that feed it; L12 has no chart feed.*
+*The master feed table as a graph. Each layer and the chart elements that feed it. L12 has no chart feed.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

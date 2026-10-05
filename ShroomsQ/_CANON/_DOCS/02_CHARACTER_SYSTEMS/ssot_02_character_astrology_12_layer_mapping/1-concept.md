@@ -14,7 +14,7 @@ source_version: 1.1.0
 
 # Character Astrology to 12-Layer mapping: the idea
 
-*The mind model: the chart gives the reason behind a number, the layers own the number, and the authoritative document outranks both.*
+*The mind model: the chart gives the reason behind a number, the layers own the number. The authoritative document outranks both.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

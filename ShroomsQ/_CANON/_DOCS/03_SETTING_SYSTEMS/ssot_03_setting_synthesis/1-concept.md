@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # Setting synthesis: why the wave changed the system
 
-*The mind model: 42 distills read against a fixed frame produce deeper layers, nine recurring moves and ten ruled changes, with instance work parked.*
+*The mind model: 42 distills, read against a fixed frame, produce deeper layers, nine recurring moves and ten ruled changes. Instance work stays parked.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

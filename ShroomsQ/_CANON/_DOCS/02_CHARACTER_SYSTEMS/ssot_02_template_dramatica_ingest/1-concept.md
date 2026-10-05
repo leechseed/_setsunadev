@@ -16,7 +16,7 @@ source_version: 1.0.2
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_template_dramatica_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md).
 
-*The mind model: the form is the first gate of the character pipeline, filled by dependency, traceable by report, and ended by a lock.*
+*The mind model: the form is the character pipeline's first gate. The writer fills it by dependency, traces it by report and ends it with a lock.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

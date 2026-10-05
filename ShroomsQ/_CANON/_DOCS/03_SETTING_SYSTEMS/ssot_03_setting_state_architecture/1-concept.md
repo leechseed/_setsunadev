@@ -14,7 +14,7 @@ source_version: 1.2.0
 
 # Setting state architecture: why a place changes by diff
 
-*The mind model: one base slice never changes, and every version of a place is a dated diff laid on top of it.*
+*The mind model: one base slice never changes. Every version of a place is a dated diff laid on top of it.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

@@ -16,7 +16,7 @@ source_version: 1.2.0
 
 Frontmatter: category `state_architecture`, tier `fabula`, `module_of: ssot_03_setting_system`, `applies_to: [all IPs]`, last updated 2026-10-04. It mirrors `ssot_02_character_state_architecture` layer for layer. The base system is [ssot_03_setting_system](../ssot_03_setting_system/2-reference.md).
 
-*The structure: the base slice plus a checkpoint diff, then story points, gives the place at a moment; five kinds of event produce the diffs.*
+*The structure: the base slice plus a checkpoint diff, then story points, gives the place at a moment. Five kinds of event produce the diffs.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

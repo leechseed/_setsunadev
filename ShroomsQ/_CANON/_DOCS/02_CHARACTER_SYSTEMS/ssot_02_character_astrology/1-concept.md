@@ -16,7 +16,7 @@ source_version: 1.1.1
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_character_astrology.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_astrology.md).
 
-*The mind model: Dramatica feeds the chart through the DAI, the chart feeds layers 1 to 11, and the story rules the chart, never the reverse.*
+*The mind model: Dramatica feeds the chart through the DAI, the chart feeds layers 1 to 11. The story rules the chart, never the reverse.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

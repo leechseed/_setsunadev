@@ -16,7 +16,7 @@ source_version: 1.1.0
 
 Source: [🔮ssot_02_character_astrology_dai.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md). Concept: [1-concept.md](1-concept.md).
 
-*The derivation sequence in order: the planets first, then aspects, houses and dignities; the dashed line marks the minimum viable chart.*
+*The derivation sequence in order. The planets first, then aspects, houses and dignities. The dashed line marks the minimum viable chart.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

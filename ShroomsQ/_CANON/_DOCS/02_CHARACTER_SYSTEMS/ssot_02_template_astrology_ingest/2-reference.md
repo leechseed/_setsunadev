@@ -18,7 +18,7 @@ Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fi
 
 The source names these dependencies: character astrology, the DAI doc and the 12-layer mapping doc. It also names the Dramatica ingest template and the Step 1 source verification protocol. Applies to OVEREXITOUT, ASTRO7EX and LAKAD.
 
-*The form in order: the sections follow the DAI order and end at the lock; the dashed line marks the minimum viable chart.*
+*The form in order: the sections follow the DAI order and end at the lock. The dashed line marks the minimum viable chart.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

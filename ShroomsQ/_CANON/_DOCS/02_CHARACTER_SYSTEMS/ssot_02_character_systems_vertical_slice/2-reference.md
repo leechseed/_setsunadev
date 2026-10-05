@@ -32,7 +32,7 @@ The system is the LEECHSEED Character System promoted to a system. It has three 
 
 **Touchstones:** read the [Touchstones register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
-*The structure: three tiers hold the twelve layers, the layers feed the computed numbers, and the numbers end in one data block.*
+*The structure: three tiers hold the twelve layers, the layers feed the computed numbers. The numbers end in one data block.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

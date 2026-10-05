@@ -31,7 +31,7 @@ Field meanings are in the [reference](2-reference.md).
 
 ## Choose an edge type
 
-*The edge types as a choice: pick the one that matches what A does to B, and never claim cause from sequence alone.*
+*The edge types as a choice. Pick the one that matches what A does to B, and never claim cause from sequence alone.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

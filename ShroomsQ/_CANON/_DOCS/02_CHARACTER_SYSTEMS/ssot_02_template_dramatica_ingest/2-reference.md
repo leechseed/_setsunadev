@@ -20,7 +20,7 @@ Dependencies named in the source: the Dramatica integration protocol, the Step 1
 
 The old name `narrative_invariant` is an alias for `touchstone` in the variable registry.
 
-*The fill order: Section 1 first, then 4, then 3 and 2, then 6, 5 and 7, the log alongside, and Section 10 last before the handoff.*
+*The fill order: Section 1, then 4, then 3 and 2, then 6, 5 and 7. The log runs alongside. Section 10 comes last.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

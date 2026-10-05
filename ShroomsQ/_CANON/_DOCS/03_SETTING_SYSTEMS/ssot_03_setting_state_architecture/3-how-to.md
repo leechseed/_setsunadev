@@ -55,7 +55,7 @@ Field meanings are in the [reference](2-reference.md).
 
 ## Query a place at a moment
 
-*The query in order: load the base, load the checkpoint, apply the three blocks, then the story points; the live name comes from the header.*
+*The query in order: load the base, load the checkpoint, apply the three blocks, then the story points. The live name comes from the header.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

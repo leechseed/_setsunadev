@@ -14,7 +14,7 @@ source_version: 1.3.0
 
 # Character state architecture: the idea
 
-*The mind model: one base record never changes, and every change over the story is a diff that points to an event.*
+*The mind model: one base record never changes. Every change over the story is a diff that points to an event.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

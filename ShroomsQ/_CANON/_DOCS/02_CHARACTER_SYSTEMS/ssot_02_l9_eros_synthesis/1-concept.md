@@ -16,7 +16,7 @@ source_version: 1.0.0
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_l9_eros_synthesis.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_l9_eros_synthesis.md). The schema it changed is in the [vertical slice](../ssot_02_character_systems_vertical_slice/1-concept.md).
 
-*The mind model: one authored instance was too thin, so 25 sources were read as a whole, and ten ruled changes reshaped layer 9.*
+*The mind model: one authored instance was too thin. The Command read 25 sources as a whole. Ten ruled changes reshaped layer 9.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

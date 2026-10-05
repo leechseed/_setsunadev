@@ -14,7 +14,7 @@ source_version: 1.1.1
 
 # Step 1 source verification: the idea
 
-*The mind model: three checks run in order of dependence, a failure stops the chain at its root, and the result is a light.*
+*The mind model: three checks run in order of dependence, a failure stops the chain at its root. The result is a light.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

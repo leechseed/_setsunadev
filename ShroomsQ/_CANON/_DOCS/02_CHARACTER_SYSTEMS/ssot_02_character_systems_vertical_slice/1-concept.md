@@ -16,7 +16,7 @@ source_version: 3.3.4
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_character_systems_vertical_slice.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md).
 
-*The mind model: one claim, a wound-shaped want revealed under pressure, drives twelve layers, three tiers and one computed data block.*
+*The mind model: one claim drives the slice. A wound-shaped want, revealed under pressure, drives twelve layers, three tiers and one data block.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

@@ -14,7 +14,7 @@ source_version: 0.2.0
 
 # The fabula: why one world timeline sits under every story
 
-*The mind model: one world timeline sits under every story, made of single-transition events joined by typed edges and dated by movement.*
+*The mind model: one world timeline sits under every story. Typed edges join its single-transition events, and movements date them.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

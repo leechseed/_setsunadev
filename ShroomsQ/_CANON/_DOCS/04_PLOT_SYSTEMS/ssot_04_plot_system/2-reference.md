@@ -21,7 +21,7 @@ Frontmatter: category `plot_system`, tier `narratology`, trunk BLACK, rung stand
 
 **Root claim:** plot converts the storyform's static checkpoints into felt experience. Every unit runs value-in, turn, value-out at some rung of the ladder. A unit that does not turn is exposition, description or scenery.
 
-*The structure: the taxonomy classifies a unit, the twelve-layer slice describes it, and the plot card and told order put it on the page.*
+*The structure: the taxonomy classifies a unit, the twelve-layer slice describes it. The plot card and told order put it on the page.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

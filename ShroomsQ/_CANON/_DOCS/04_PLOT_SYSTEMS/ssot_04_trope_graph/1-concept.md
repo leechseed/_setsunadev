@@ -14,7 +14,7 @@ source_version: 1.0.0
 
 # The trope graph: why patterns ride a rail
 
-*The mind model: every trope gets an address among 135 nodes, and a walk moves only along the rail Dramatica locked.*
+*The mind model: every trope gets an address among 135 nodes. A walk moves only along the rail Dramatica locked.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

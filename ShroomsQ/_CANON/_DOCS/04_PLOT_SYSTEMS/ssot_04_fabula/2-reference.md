@@ -19,7 +19,7 @@ source_version: 0.2.0
 **Owns:** world time, the EVENT RECORD schema, typed CAUSAL EDGES, THE WORLD CLOCK, the ORIGIN MOMENTS rule.
 **Does not own:** the told order (the plot doc, P11); the pattern layer ([trope graph](../ssot_04_trope_graph/2-reference.md)). It also does not own place itself (03) or the static character layers (02).
 
-*The structure: the fabula owns the event record, the edges, the clock and the origin moments, and hands events to three neighbors.*
+*The structure: the fabula owns the event record, the edges, the clock and the origin moments. It hands events to three neighbors.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

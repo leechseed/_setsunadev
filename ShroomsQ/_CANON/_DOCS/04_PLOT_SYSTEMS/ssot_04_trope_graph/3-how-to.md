@@ -18,7 +18,7 @@ Counts and fields are in the [reference](2-reference.md).
 
 ## Walk the graph for one throughline
 
-*The walk in order: pick a throughline, move one signpost at a time, seat one sequenced node, then pull tropes for detail.*
+*The walk in order: pick a throughline and move one signpost at a time. Seat one sequenced node, then pull tropes for detail.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

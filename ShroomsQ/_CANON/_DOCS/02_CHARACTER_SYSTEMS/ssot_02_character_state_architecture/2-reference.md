@@ -16,7 +16,7 @@ source_version: 1.3.0
 
 Source: [🔮ssot_02_character_state_architecture.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md). Concept: [1-concept.md](1-concept.md).
 
-*The structure: an event produces a state diff, the diff plus the base gives the character at a moment, and relationships keep their own record.*
+*The structure: an event produces a state diff. The diff plus the base gives the character at a moment. Relationships keep their own record.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%

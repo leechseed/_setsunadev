@@ -1,0 +1,32 @@
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/1-concept.md
+- *The mind model: one base record never changes, and every change over the story is a diff that points to an event.*
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/2-reference.md
+- *The structure: an event produces a state diff, the diff plus the base gives the character at a moment, and relationships keep their own record.*
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/1-concept.md
+- *The mind model: one claim, a wound-shaped want revealed under pressure, drives twelve layers, three tiers and one computed data block.*
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/1-concept.md
+- *The mind model: one authored instance was too thin, so 25 sources were read as a whole, and ten ruled changes reshaped layer 9.*
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/1-concept.md
+- *The mind model: the form turns the astrology method into one fixed record that a checker can read the same way every time.*
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/1-concept.md
+- *The mind model: the form is the first gate of the character pipeline, filled by dependency, traceable by report, and ended by a lock.*
+## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/2-reference.md
+- *The fill order: Section 1 first, then 4, then 3 and 2, then 6, 5 and 7, the log alongside, and Section 10 last before the handoff.*
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/1-concept.md
+- *The mind model: one base slice never changes, and every version of a place is a dated diff laid on top of it.*
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/1-concept.md
+- *The mind model: 42 distills read against a fixed frame produce deeper layers, nine recurring moves and ten ruled changes, with instance work parked.*
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/1-concept.md
+- *The mind model: setting is the pressure field, built at character grade, thin by default and bound to the argument at S12.*
+## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/2-reference.md
+- *The structure: the taxonomy classifies the place, the slice describes it, the cards put it on the page, and DCUS is the worked example.*
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/1-concept.md
+- *The mind model: one world timeline sits under every story, made of single-transition events joined by typed edges and dated by movement.*
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/2-reference.md
+- *The structure: the fabula owns the event record, the edges, the clock and the origin moments, and hands events to three neighbors.*
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/1-concept.md
+- *The mind model: every trope gets an address among 135 nodes, and a walk moves only along the rail Dramatica locked.*
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/2-reference.md
+- *The structure: nodes, tropes and edges feed the walk, and the walk hands a proposal to the fabula, a seat to the plot card and a grid to the workspace view.*
+## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/3-how-to.md
+- *The walk in order: pick a throughline, move one signpost at a time, seat one sequenced node, then pull tropes for detail.*

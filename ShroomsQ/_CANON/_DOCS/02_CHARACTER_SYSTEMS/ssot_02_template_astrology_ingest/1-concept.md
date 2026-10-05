@@ -16,7 +16,7 @@ source_version: 1.0.1
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md). The method behind it is in [character astrology](../ssot_02_character_astrology/1-concept.md).
 
-*The mind model: the form turns the astrology method into one fixed record that a checker can read the same way every time.*
+*The mind model: the form turns the astrology method into one fixed record. A checker reads it the same way every time.*
 
 ```mermaid
 %%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
