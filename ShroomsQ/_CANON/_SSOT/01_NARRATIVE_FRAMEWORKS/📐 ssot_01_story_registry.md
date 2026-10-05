@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_registry
-version: 1.0.0
+version: 1.0.1
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [every story in the LEECHSEED universe]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: stale marks stripped, blank-slot rule written, per-story blanks and fabula placements parked by name, OPEN list closed. Earlier: RULED 2026-09-29 — BOLO 82 (Chief: \"yes to all recommendations\"): one registry file, one row per story; the eras per the fabula's world clock. BOLO 91 rulings (2026-09-29) folded: three new story rows, the genre slot, TREMOR CULT placed inside era 1; a further BOLO 91 pass (phone notes digest) adds LEECHSEED as an open-universe seed."
 purpose: "THE STORY REGISTRY: the one place that lists every story in the universe, its aliases, genre, era, medium, status, nodes, and storyform. The workspace's `stories:` filter and every doc's `applies_to` read from here."
@@ -53,6 +53,7 @@ Games, businesses and tools that are not stories in the universe (RULED 2026-09-
 - **Canon status:** **lineage** by default (the Ariel rule): it may float ideas without locking canon; Chief rules it in, and only then does it read as canon.
 - **Tags:** era **required** (1 Skeeter Creek · 2 DCUS · 3 LAKAD · 4 ASTRO7EX · 5 beyond); time code optional (`M2 · Q1 · S03 | bar.beat.tick`, `ssot_08_tracking_system`).
 - **Intake:** spoken by Chief (10/1: "I'll just have to voice everything"). The text lands in `_CANON_NODES/vignette-<slug>.md`, near-verbatim; the row lands here.
+- **Next ID:** the author greps the registry and `_CANON_NODES/` for the highest `VG-<nnnn>` before minting. The author takes that number plus one, padded to four digits. The author never reuses a number, even for a dropped vignette.
 
 | ID | Title | Era | Shows (catalog) | Time code | Status | Gist | Node |
 |---|---|---|---|---|---|---|---|
@@ -76,6 +77,7 @@ Each open item below is parked by name; Chief rules each in its pass.
 
 ## Version history
 
+- **1.0.1 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): rule for a vignette's next VG ID written under Intake (C30).
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Three stale marks stripped (TREMOR CULT two readings, era 5, G1 line). Blank-slot rule written into THE ROW. Per-story blanks parked as `⏸ story rows fill (phase 2)`; hinge and Civil War placements parked as `⏸ fabula placements (phase 2)`. OPEN list closed to one line per item.
 
 - **0.1.9 — 2026-10-01 (BOLO 96, "all rec").** VIGNETTES section added: short world pieces as their own kind; tagged to catalog entries; lineage until ruled in; era required, time code optional; IDs `VG-<nnnn>`; intake by voice.

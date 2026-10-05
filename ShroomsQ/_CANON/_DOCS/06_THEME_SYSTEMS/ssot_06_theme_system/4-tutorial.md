@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.3.1
+source_version: 1.3.2
 ---
 
 **Who it's for:** a writer new to theme · **What it does:** walks the four-part method on OVEREXITOUT · **Type:** tutorial

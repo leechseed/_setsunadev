@@ -1,7 +1,7 @@
 ---
 type: ssot_00_foundations
 category: number_systems
-version: 1.0.2
+version: 1.0.3
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -533,7 +533,7 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 
 **Rule 6:** Document the variable's position in the divisor lattice chain. Example: a SC-12 variable with an even-only constraint lives on the sub-chain {0, 2, 4, 6, 8, 10, 12}, which maps to internal {0, 10, 20, 30, 40, 50, 60} — this is the SC-6 grid promoted to SC-12 notation. Name the effective grid.
 
-**Rule 7:** When converting old SC-10 values to SC-12, use proportional mapping rounded to the nearest valid value on the target scale class. Document the rounding direction and narrative justification.
+**Rule 7:** When converting old SC-10 values to SC-12, use proportional mapping rounded to the nearest valid value on the target scale class. Document the rounding direction and narrative justification. The author rounds to the nearest valid value on the target scale and respects any divisibility constraint. When two valid values sit equally near, or the nearest breaks a constraint, Chief picks the direction by narrative need. The author records the direction and the reason.
 
 ---
 
@@ -544,3 +544,4 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 |1.0.0|2026-03-08|Initial SSOT. Establishes base 60 as foundational number system. Divisor lattice, 18 maximal chains, 10 matrix decompositions, 10 tensor decompositions, 9 scale classes, complete scale assignment table, point budget validation (no changes required), derived stat recalibration with divisibility constraints, flag threshold recalibration, Victoria Midnight full re-expression with diagnostic analysis.|
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B7, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`, table-of-contents links repointed to in-page anchors, `supersedes_ranges_in` names the real file stem, armor index added to the Scale Assignment Table as SC-12.|
 |1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): C13 retired as a duplicate of C02, no renumbering; derived-stat display rule reworded to match the formula table (SC-30, SC-20, SC-60); the armor index row's formula corrected to `12 - armor_index`, matching the variable registry.|
+|1.0.3|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C6, rounding rule for a converted threshold added to Rule 7 (nearest valid value; Chief picks the direction on a tie or a broken constraint).|

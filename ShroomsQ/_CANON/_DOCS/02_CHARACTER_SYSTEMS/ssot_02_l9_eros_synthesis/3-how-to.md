@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_l9_eros_synthesis.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a schema owner or writer tracing, extending or citing the synthesis · **What it does:** numbered steps for each synthesis task · **Type:** how-to
@@ -16,7 +16,7 @@ source_version: 1.0.0
 
 Lookups: [reference](2-reference.md). Why: [concept](1-concept.md). The current field definitions are in the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md).
 
-> **OPEN:** the source describes the synthesis method only by showing its output. The pass steps below are read from that output. The source does not state a formal procedure.
+The source states the method in its Method section. Chief orders each pass and rules each change.
 
 ## Trace an L9 field back to its sources
 

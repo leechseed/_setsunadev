@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_medium_grammars.md
-source_version: 1.2.1
+source_version: 1.2.2
 ---
 
 **Who it's for:** a writer or builder looking up a medium fact · **What it does:** lists each medium grammar, table and mode · **Type:** reference

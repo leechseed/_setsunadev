@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.0.1"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a designer building or running a field module · **What it does:** gives the steps for each module task · **Type:** how-to
@@ -69,7 +69,9 @@ Blocks and tables live in the [reference](2-reference.md).
 
 1. Fill every registry field: id, name, version, status, attachment points, tier_min, variable count, derived, flags, depends_on, description.
 2. Pick the status: `conceptual`, `planned`, `draft`, `active`, `absorbed` or `retired`.
-
-> **OPEN:** the source gives no rule for when a module moves from `planned` to `draft` to `active`.
+3. Move a module to `planned` when its registry entry holds every field and a variable list.
+4. Move it to `draft` when the author writes the module declaration and the variable declarations under `MOD.[CODE].*`.
+5. Move it to `active` when the application can enable it and Chief rules it in.
+6. Ask Chief to rule every move.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

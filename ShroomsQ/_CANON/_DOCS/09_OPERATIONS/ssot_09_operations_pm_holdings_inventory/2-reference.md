@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_pm_holdings_inventory.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** an agent or Chief looking up where a PM instrument, template, or source lives in the repo · **What it does:** lists every section of the PM Holdings Inventory and the holdings each one records · **Type:** reference
@@ -32,7 +32,9 @@ flowchart TD
   R --> J["Addendum 2026-09-09"]
 ```
 
-The source has type `register / survey`, version 1.0.0, tier operations, domain 09_OPERATIONS. Status: survey banked 2026-09-03, feeding BOLO 25. Date 2026-09-03. Method: an Explore-agent sweep of the repo and archive at medium breadth, with paths verified where load-bearing. Trunk: BLACK (systems), serving every trunk. Related: BOLO.md #25, SOP.md, STATE.md, PROJECTS.md, DOCTRINE-0-INVARIANTS.md, BVX-ULTRASIN-twin-track.md, oscar-mike/lab-venture.md.
+The source has type `register / survey`, version 1.0.2, tier operations, domain 09_OPERATIONS. Status: survey banked 2026-09-03, feeding BOLO 25. Date 2026-09-03. Method: an Explore-agent sweep of the repo and archive at medium breadth, with paths verified where load-bearing. Trunk: BLACK (systems), serving every trunk. Related: BOLO.md #25, SOP.md, STATE.md, PROJECTS.md, DOCTRINE-0-INVARIANTS.md, BVX-ULTRASIN-twin-track.md, oscar-mike/lab-venture.md.
+
+The Command keeps the inventory, and Chief owns it. The Command re-sweeps it when BOLO 25 (the standard PM flow) builds a step, and whenever a listed holding changes state. Chief decides any other re-sweep. The author verifies each path before listing it.
 
 **The finding:** the method is already written; what is missing is assembly.
 

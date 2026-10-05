@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/how_to_use_goon_room.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** Chief or a writer deciding how loose to keep early research · **What it does:** explains why the Goon Room has no structure and how tags carry the order instead · **Type:** concept

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_ai_instruction_protocol.md
-source_version: 1.2.1
+source_version: 1.2.2
 ---
 
 **Who it's for:** a first-time operator running the SSOT master prompt · **What it does:** walks one raw concept through the four phases to a finished file header · **Type:** tutorial

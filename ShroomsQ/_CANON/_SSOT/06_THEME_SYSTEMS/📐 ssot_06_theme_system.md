@@ -1,9 +1,9 @@
 ---
 type: ssot_06_theme_systems
 category: theme_system
-version: 1.3.1
+version: 1.3.2
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT (1.0, this doc) — EVIL CHECK PARKED, wave 2, per 80-D]
 status: "v1.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: latent-theme line, two motif checks, `meets` per rail. Earlier: canonical — 1.0 per BOLO 80's bar (RULED 2026-09-29)"
 purpose: "THE THEME SYSTEM — L6, the argument's value layer: what the story argues, stated as one sentence, and the rails that carry that argument through the throughlines and the scenes."
@@ -160,6 +160,16 @@ Three tests carry "Nobody has to be evil when everyone does their job" down to t
 
 Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the **theme** domain is keyed to the four rails R1–R4 in the [trope register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list, every layer with every trope keyed to it, is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **theme**. A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition. The theme sub-index pass (Death · Family · Betrayal · Revenge · Authority · Memory · The Secret · Promises and Vows) is keying as of 2026-09-29.
 
+**Keying a trope to a rail** (RULED 2026-10-05, BOLO 102 batch C):
+
+1. The author opens the trope's record in `register.json`.
+2. The author reads its one-line `def`.
+3. The author sets `keys.theme` to the one rail (R1 to R4) whose debate the trope argues, or to null if it argues none.
+4. The author sets `conf` to low when `def` is undefined.
+5. The author runs `build_register.py`.
+
+Chief decides any trope that needs two rails.
+
 ## THE HANDSHAKE — theme × Touchstones (BOLO 81)
 
 Themes argue; Touchstones hold. A rail can argue both sides of its debate, scene to scene, and can pressure-test a Touchstone hard — but no scene may write past what a live Touchstone locks. Live Touchstones are listed in [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md).
@@ -200,6 +210,7 @@ None. Both items formerly listed here are resolved: the BOLO 81 handshake is bui
 
 ## Version history
 
+- **1.3.2 · 2026-10-05** BOLO 102 batch C (Chief: "all recs"): TROPES gains the five-step procedure for keying a trope to one rail; Chief decides any trope that needs two.
 - **1.3.1 · 2026-10-04** BOLO 100 TOUCH BATCH 1, Chief "REC.": count line replaced by pointer to the register (TS-B9); front-door line (TS-B10).
 - **1.3.0 · 2026-10-04** · BOLO 100 follow-up (call PL-3), Chief: "rec". THE METHOD gains a latent-theme line, two motif checks (recurs, converges), and a `meets` entry per rail, from CRE.06. OVEREXITOUT values parked as `⏸ OXO theme fill pass (phase 2)`.
 - **1.2.0 · 2026-10-04** · THE SCENE TESTS added (BOLO 80 wave 1 distills, Chief: "all recs"): the citation test with the knowledge gradient · the two-transcripts test · the system-not-person rider.

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a builder adding or promoting registry entries · **What it does:** steps for rows, blanks, projects and vignettes · **Type:** how-to
@@ -72,4 +72,8 @@ Terms are defined in the [reference](2-reference.md).
 2. Copy only what the project needs.
 3. Keep the project's own row in the PROJECTS table.
 
-> **OPEN:** the source gives no procedure for assigning a vignette's next ID number.
+## Assign a vignette's next ID
+
+1. Grep the registry and `_CANON_NODES/` for the highest `VG-<nnnn>`.
+2. Take that number plus one. Pad it to four digits.
+3. Never reuse a number, even for a dropped vignette.

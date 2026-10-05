@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_registry.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer asking why one file lists all stories · **What it does:** explains the registry's single-list rule · **Type:** concept

@@ -1,9 +1,9 @@
 ---
 type: ssot_00_foundations
 category: pattern_library
-version: 1.0.0
+version: 1.0.1
 tier: foundation
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "canonical — Pattern 1 and Pattern 2 ruled 10/4 (BOLO 100/101); the half grows as emergence opens"
 trunk: BLACK
@@ -21,6 +21,7 @@ dependencies: ["ssot_00_epistemology_truth_verification", "ssot_00_variable_regi
 5. [Pattern 1: the Command loop](#pattern-1-the-command-loop)
 6. [Pattern 2: the change cycle](#pattern-2-the-change-cycle)
 7. [Open (provisional)](#open-provisional)
+8. [Version History](#version-history)
 
 ---
 
@@ -97,6 +98,15 @@ Chief, 10/4: "you can kind of see the pattern, though, right, the way I do thing
 8. Publish.
 9. Log.
 
+**Maps to the SOP.** The Command maps the loop onto the SOP's four steps as follows.
+
+| Loop steps | SOP step |
+|---|---|
+| 1 to 3 (Chief speaks, capture to the BOLO, recon) | RECON |
+| 4 and 5 (recs, one-word ruling) | ORDER |
+| 6 and 7 (build, script check) | EXECUTE |
+| 8 and 9 (publish, log) | CONSOLIDATE |
+
 **What it is.** It is the SOP's four steps (BOLO 64: RECON, ORDER, EXECUTE, CONSOLIDATE) seen as a pattern. See [SOP.md](../../../../SOP.md) §1.
 
 | Field | Value |
@@ -132,3 +142,16 @@ At the fabula tier the cycle moves the world forward. At the narratology tier it
 - The step names of Pattern 2. The CDR proposed them. Chief has not ruled the words.
 - The format a pattern entry takes when the sim (BOLO 101) consumes it.
 - Which existing docs move into the Pattern half, beyond the four listed above.
+
+### Stacking
+
+Chief decides each stack until the sim (BOLO 101) fixes a format. The writer names the lower pattern and the upper pattern, then the scale each runs at. The writer feeds the lower cycle's change into the upper cycle as its want or its cost. Chief rules the stack in as a pattern entry.
+
+---
+
+## Version History
+
+|Version|Date|Changes|
+|---|---|---|
+|1.0.0|2026-10-04|Initial: Pattern 1 and Pattern 2 ruled 10/4 (BOLO 100/101).|
+|1.0.1|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C15, a "Stacking" subsection under Open; C16, a "Maps to the SOP" table under the Pattern 1 steps.|

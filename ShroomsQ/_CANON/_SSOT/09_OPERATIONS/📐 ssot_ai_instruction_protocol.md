@@ -1,7 +1,7 @@
 ---
 type: ssot_09_operations
 category: operations
-version: 1.2.1
+version: 1.2.2
 tier: operations
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -75,6 +75,19 @@ When given a prompt, follow these steps internally:
 4.  **Refine:** Review specifically for hedging.
 5.  **Naming:** Format the final filename as `📐 ssot_[category]_[name].md`.
 
+**Start the run.** The operator pastes the whole protocol file, then one raw concept, in a single message. The six categories map to folders as follows.
+
+| Category | Folder |
+|---|---|
+| epistemology | `00_EPISTEMOLOGY` |
+| narrative_frameworks | `01_NARRATIVE_FRAMEWORKS` |
+| character_systems | `02_CHARACTER_SYSTEMS` |
+| plot_systems | `04_PLOT_SYSTEMS` |
+| operations | `09_OPERATIONS` |
+| style_guides | `07_STYLE_GUIDES` |
+
+Chief decides where content for domains 03, 05, 06 and 08 lands, because no category names them.
+
 ---
 
 ## Output Format Requirements
@@ -91,3 +104,4 @@ When given a prompt, follow these steps internally:
 | :------ | :--------- | :---------------------------------------------------------------------------- |
 | 1.2.0   | 2026-02-12 | Consolidated SSOT Template and Writing Guide into a unified AI Master Prompt. |
 | 1.2.1   | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): contractions allowed and the fixed skeleton replaced by a pointer to 07.2. |
+| 1.2.2   | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): Phase 4 gains "Start the run" and a category-to-folder table. |

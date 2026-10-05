@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
-source_version: "1.1.1"
+source_version: "1.1.2"
 ---
 
 **Who it's for:** a designer looking up a field module · **What it does:** lists every module declaration, variable and status · **Type:** reference
@@ -34,7 +34,7 @@ flowchart TD
   M --> M2["LOL_TAX depends on COMBAT"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.0, status canonical. The source sits on trunk BLACK at tier foundation, with `module_of: ssot_00_module_architecture`. It was last updated 2026-10-04. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.2, status canonical. The source sits on trunk BLACK at tier foundation, with `module_of: ssot_00_module_architecture`. It was last updated 2026-10-05. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
 
 All modules use tier 3. All declarations use `tier_min: 3`.
 

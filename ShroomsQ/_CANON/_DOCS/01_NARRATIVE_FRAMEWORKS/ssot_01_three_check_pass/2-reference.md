@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer or designer looking up an element's lines · **What it does:** lists every sweep and row · **Type:** reference

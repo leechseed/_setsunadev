@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer, designer or script author working with tropes · **What it does:** steps for the register's recurring tasks · **Type:** how-to
@@ -78,4 +78,9 @@ Changing a character is a separate step. A record names a pattern, not a fix.
 
 ⏸ TROPES pointer sections (phase 2) are parked until then.
 
-> **OPEN:** the source gives no command-line steps for `fetch.py` or `build_register.py`. It lists them only as sources.
+## Rebuild the register
+
+1. Run `python _tools/tropes/fetch.py --domains` to pull the indexes. The script waits one second per request, skips slugs already cached, and stores no page bodies.
+2. Have PS batches write the keys to `_tools/bolostatus/work/89/keys.batch*.json`.
+3. Run `python _tools/tropes/build_register.py` with no arguments.
+4. Read the output. The script writes `register.json` and `LAYERS.md` and prints the counts table.

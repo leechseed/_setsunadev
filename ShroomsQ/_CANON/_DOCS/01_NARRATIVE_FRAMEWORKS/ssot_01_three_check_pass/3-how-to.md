@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_three_check_pass.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer or designer running the checks · **What it does:** steps for the pass's recurring tasks · **Type:** how-to
@@ -64,5 +64,6 @@ Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORK
 1. Take the next element from the expansion queue. It holds scene cards (the 7 hot rows), the six movements, the Administration, the Diaspora, Bongobabe and the ladder rungs.
 2. Run all three sweeps on it.
 3. Add its rows to the pass.
-
-> **OPEN:** the source gives no row numbering rule for rows added past row 12.
+4. Number the new element 13 and count up, in expansion-queue order.
+5. Keep that one number across all three sweeps: F13, S13, A13.
+6. Never renumber a row.

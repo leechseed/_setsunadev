@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.2.1"
+source_version: "1.2.2"
 ---
 
 **Who it's for:** a writer or designer looking up a variable · **What it does:** lists every variable, formula, flag and path in the registry · **Type:** reference
@@ -34,7 +34,7 @@ flowchart TD
   R --> MD["Character Metadata"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`, version 1.2.1, status canonical. The source sits on trunk BLACK at tier foundation, rung "standard · NASA four, ruled 2026-09-15 (BOLO 50)". It was last updated 2026-10-04. Dependencies: `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`, version 1.2.2, status canonical. The source sits on trunk BLACK at tier foundation, rung "standard · NASA four, ruled 2026-09-15 (BOLO 50)". It was last updated 2026-10-05. Dependencies: `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md).
 
 Entry shorthand: "SC-12" is a scale class from the [base 60 reference](../ssot_00_base_60_number_system/2-reference.md). Tag is Static, Dynamic or Derived. "Contextual" means the field feeds no formula and gives reference for other fields.
 
@@ -650,6 +650,6 @@ State diffs use the `STT` prefix. They mirror the variable they modify, with ext
 | `META.version` | str | Record version |
 | `META.storyform_id` | str | Bound storyform |
 
-> **OPEN:** the `REL` prefix is declared in Domain Prefixes but the registry defines no `REL` variable beyond the example `REL.relationship_type`.
+Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. Until Chief rules, `REL` stays a declared prefix with its one example.
 
 Related pages: [concept](1-concept.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

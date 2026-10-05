@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** Chief or a writer working with patterns · **What it does:** gives the steps for each pattern task · **Type:** how-to
@@ -61,6 +61,12 @@ Entries live in the [reference](2-reference.md).
 5. Feed the change into the next want.
 6. Pick the tier: fabula for the world tick, narratology for the story beat.
 
-> **OPEN:** the source gives no step-by-step method for stacking patterns into emergent structure.
+## Stack one pattern on another
+
+1. Ask Chief to decide each stack. This holds until the sim (BOLO 101) fixes a format.
+2. Name the lower pattern and the upper pattern.
+3. Name the scale each pattern runs at.
+4. Feed the lower cycle's change into the upper cycle as its want or its cost.
+5. Ask Chief to rule the stack in as a pattern entry.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

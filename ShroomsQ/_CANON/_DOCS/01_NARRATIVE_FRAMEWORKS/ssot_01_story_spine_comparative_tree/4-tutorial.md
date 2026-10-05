@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md
-source_version: 1.0.2
+source_version: 1.0.3
 ---
 
 **Who it's for:** a new designer · **What it does:** teaches the spine by reading OXO through it · **Type:** tutorial

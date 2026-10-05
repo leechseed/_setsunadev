@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md"
-source_version: "1.2.1"
+source_version: "1.2.2"
 ---
 
 **Who it's for:** a designer working with character variables · **What it does:** gives the steps for each registry task · **Type:** how-to
@@ -73,6 +73,14 @@ Entries live in the [reference](2-reference.md).
 1. Open the variable's entry.
 2. Read the Constraint row. Four variables carry one: WOUND (even), shadow_density (even), projection_tendency (multiples of 3), resistance_index (even).
 
-> **OPEN:** the source gives no procedure for retiring a variable.
+## Retire a variable
+
+1. Ask Chief to rule the retirement.
+2. Keep the entry. Mark it retired with the date and BOLO.
+3. Name any replacement variable.
+4. Keep an alias row for the old name.
+5. Remove the variable from every Feeds line that lists it.
+6. Leave the data in the character records.
+7. Add a version-history row.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

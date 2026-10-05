@@ -2,7 +2,7 @@
 type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
-version: 1.1.1
+version: 1.1.2
 tier: foundation
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
@@ -400,6 +400,8 @@ MODULE_DECLARATION:
 |`DECOMP`|L5 `wound_work` covers how a wound is worked, not the breakdown pattern.|Still planned. Depends on COPING.|
 |`PHYS`|L2 `physiology_stack` is a text checklist. The typed fields here go beyond it.|Still planned. Reads `physiology_stack`.|
 
+An MS reads the vertical slice and reports one verdict per module. Chief rules the verdict: absorbed, retired, or still planned. The author then records where each variable went in the Absorbed Modules table.
+
 ---
 
 ## Conceptual Modules
@@ -470,3 +472,4 @@ Build order for maximum independence: WALK → PHYS → COMBAT → FASHION → M
 |1.0.0|2026-03-08|Initial registry. 1 active module (DUALISM), 10 planned modules with full declarations, 3 conceptual modules with reserved IDs. Dependency map and recommended build order.|
 |1.1.0|2026-10-04|BOLO 100 base batch 1 (B1, B2, B3, B9, B10, B13, B15), RULED Chief "REC.": frontmatter repaired with `trunk`; `module_of: ssot_00_module_architecture` stamped; table-of-contents links repointed; audit against slice 3.3.1 (SEX_PROF and VOICE absorbed, COPING narrowed, the rest still planned, none dropped); conceptual scopes written for CULTURE, SPIRIT and DESIGN with their variable lists parked as `⏸ module build (phase 2)`; dependency map and build order redone.|
 |1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): DESIGN and LOL_TAX counts set to 12 to match the 12-row mapping table.|
+|1.1.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C11, who reports and who rules an audit verdict (absorbed, retired, still planned).|

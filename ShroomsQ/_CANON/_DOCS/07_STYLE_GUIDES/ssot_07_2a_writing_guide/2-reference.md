@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md"
-source_version: "2.2.1"
+source_version: "2.2.2"
 ---
 
 **Who it's for:** a writer or reviewer looking up one rule · **What it does:** lists every component of 07.2a · **Type:** reference
@@ -70,4 +70,8 @@ All metadata uses flow style for lists, to guarantee Obsidian Property rendering
 
 `status` and `last_updated` stay until the schema pass.
 
-> **OPEN:** the source names a dependency on a template (`♨️_template_ssot_09_operations_standard_structure_template`) but gives no field list for it.
+The dependency template (`♨️_template_ssot_09_operations_standard_structure_template`) has eight components in order: YAML frontmatter, H1 title, Table of Contents, Purpose, Core Methodology, Implementation, Examples, Version History.
+
+Its YAML keys are `type`, `category`, `version`, `last_updated`, `applies_to`, `status`, `purpose` and `dependencies`.
+
+Chief decides whether the five header fields (`reader`, `doc_type`, `owner`, `state`, `reviewed`) join the template now or at the schema pass.

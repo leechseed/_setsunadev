@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_spine_house_inventory.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer or builder looking up a house holding · **What it does:** lists each level's files, findings and addendum · **Type:** reference

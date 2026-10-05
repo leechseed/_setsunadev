@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** a writer new to the frameworks · **What it does:** walks one claim through four frameworks · **Type:** tutorial

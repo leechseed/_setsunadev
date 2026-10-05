@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
-source_version: "1.1.1"
+source_version: "1.1.2"
 ---
 
 **Who it's for:** a designer keeping the module registry · **What it does:** gives the steps for each registry task · **Type:** how-to
@@ -51,8 +51,10 @@ Entries live in the [reference](2-reference.md).
 
 1. Check each planned module against the current slice.
 2. Ask whether the slice now holds its fields.
-3. Record a verdict per module: still planned, narrowed, absorbed or dropped.
-4. Update the overview counts and the build order.
+3. An MS reads the vertical slice and reports one verdict per module.
+4. Ask Chief to rule each verdict: absorbed, retired, or still planned.
+5. Record where each variable went in the Absorbed Modules table.
+6. Update the overview counts and the build order.
 
 ## Read the build order
 
@@ -60,7 +62,5 @@ Entries live in the [reference](2-reference.md).
 2. Build independent modules first.
 3. Build DECOMP after COPING, and LOL_TAX after COMBAT.
 4. Follow the source order: WALK, PHYS, COMBAT, FASHION, MUSIC, COPING, DECOMP, LOL_TAX.
-
-> **OPEN:** the source names the audit slice (3.3.1) but not who rules a module absorbed or dropped.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

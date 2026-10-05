@@ -7,14 +7,14 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** a writer looking up a framework · **What it does:** lists every framework, table and example in the doc · **Type:** reference
 
 # Truth verification: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.0.2, status canonical. The source sits on trunk BLACK at tier foundation and applies to OVEREXITOUT, ASTRO7EX and LAKAD. It has no dependencies and was last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md`, version 1.0.3, status canonical. The source sits on trunk BLACK at tier foundation and applies to OVEREXITOUT, ASTRO7EX and LAKAD. It has no dependencies and was last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
 
 ## Core Concepts
 

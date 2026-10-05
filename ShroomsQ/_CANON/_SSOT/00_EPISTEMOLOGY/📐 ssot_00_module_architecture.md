@@ -1,9 +1,9 @@
 ---
 type: ssot_00_foundations
 category: module_architecture
-version: 1.0.1
+version: 1.0.2
 tier: foundation
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -294,6 +294,8 @@ FLAGS:
     states: [ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE]
 ```
 
+A module flag uses the four core definitions unchanged. ACTIVE means the condition is met now. PENDING means it is met at a defined narrative event. FIRED_PRE_STORY means it was met before story entry. INACTIVE means it is not met. The author of a module links to the vertical slice's "Flag Trigger Conditions" section instead of redefining them.
+
 ### Data Exchange Format
 
 When the application loads a character record, modules receive their data as a flat key-value block:
@@ -419,7 +421,7 @@ Each module entry in the Layer-Locked Module Registry contains:
 |`module_id`|Unique code|
 |`display_name`|Human readable|
 |`version`|Current version|
-|`status`|`conceptual`, `planned`, `draft`, `active`, `absorbed`, `retired`. `absorbed` means the core schema now holds the module's fields, so the module is closed.|
+|`status`|`conceptual`, `planned`, `draft`, `active`, `absorbed`, `retired`. `absorbed` means the core schema now holds the module's fields, so the module is closed. A module moves to `planned` when its registry entry holds every field and a variable list. It moves to `draft` when the author writes the module declaration and the variable declarations under `MOD.[CODE].*`. It moves to `active` when the application can enable it and Chief rules it in. Chief rules every move.|
 |`attachment_points`|Layer code(s)|
 |`tier_min`|Minimum tier|
 |`variable_count`|Number of variables|
@@ -438,3 +440,4 @@ The registry is [📐 ssot_00_module_registry.md](📐%20ssot_00_module_registry
 |---|---|---|
 |1.0.0|2026-03-08|Initial module architecture. Establishes Layer-Locked Module system, attachment protocol, data access rules, API contract, module lifecycle, application architecture vision, and registry format.|
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B9, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`; table-of-contents links repointed to in-page anchors; dependency names fixed to the real file stems; new subsection separating field modules from doc modules; registry format gains the `conceptual` and `absorbed` statuses; the registry pointer replaces "the next deliverable".|
+|1.0.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C7, the four flag states defined by link to the slice; C8, the rule for when a module moves from `planned` to `draft` to `active`.|

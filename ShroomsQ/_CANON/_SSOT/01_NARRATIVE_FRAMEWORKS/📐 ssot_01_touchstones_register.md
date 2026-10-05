@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: touchstones_register
-version: 1.0.0
+version: 1.0.1
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [all IPs]
 status: "v1.0.0 2026-10-04: RULED, Chief (\"REC.\") — BOLO 100 TOUCH BATCH 1: schema, rules, field rename, front-door links; ten Modern Poetics principles ruled in as TS 2:1 to TS 2:10."
 purpose: "THE TOUCHSTONES REGISTER: the one home for every Touchstone, the rules the story guides itself by, and the front door a reader enters by."
@@ -39,7 +39,7 @@ Every Touchstone entry carries these fields.
 
 1. **Hard only on Chief's word.** A Touchstone is soft unless Chief says hard. Soft means a tendency, never a rule. A Touchstone guides the story and opens up the opportunity.
 2. **Claude never writes a Touchstone's content.** Claude proposes candidates quoted from their source. An id mints only on Chief's ruling.
-3. **Check the ids.** The script `_tools/review/touchstone_check.py` greps every `TS \d+:\d+` under `ShroomsQ/_CANON/_SSOT/`. It confirms each id exists in this register.
+3. **Check the ids.** The script `_tools/review/touchstone_check.py` greps every `TS \d+:\d+` under `ShroomsQ/_CANON/_SSOT/`. It confirms each id exists in this register. The author runs `python _tools/review/touchstone_check.py` from the repo root, with no arguments. The script prints `register ids: N | citations checked: M`, then one `MISSING TS x:y  path:line` per unknown id. It ends with `PASS` or `FAIL (n unregistered)`. It exits 0 on a pass and 1 on a fail.
 
 ## TOUCHSTONES (live)
 
@@ -174,6 +174,7 @@ The ten systems, one line each.
 
 ## Version history
 
+- **1.0.1 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): command-line form and output of the check script written into rule 3 (C37).
 - **1.0.0 — 2026-10-04 (BOLO 100 TOUCH BATCH 1, Chief "REC.").** Schema, rules, field rename, front-door links; Chief ruled the candidates in as TS 2:1 to TS 2:10. Vetoes and instance rules parked by name. The "What waits" list closed; its pointer, [DOPE SHEET 81](https://claude.ai/artifact/Uc8e84mmzY8gBjSHPjrCW7), moves here.
 - **0.9.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Frontmatter normalized to the 01 shape (R10). P1–P10 listed as candidate Touchstones (R7).
 - **0.1.0 — 2026-09-29.** TS 1:1, the bounded container, landed early by direct ruling (BOLO 91). Bootstrap register stood up 2026-09-24.

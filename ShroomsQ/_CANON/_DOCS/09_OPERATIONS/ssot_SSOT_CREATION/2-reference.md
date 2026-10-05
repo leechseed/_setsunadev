@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.1
+source_version: 1.8.2
 ---
 
 **Who it's for:** a writer looking up an SSOT writing rule, process phase, or naming rule · **What it does:** lists every standard, phase, and naming rule of the SSOT creation guide · **Type:** reference
 
 # SSOT creation guide: reference
 
-The source has type `ssot_methodology`, category operations, status canonical, version 1.8.0, last updated 2026-02-12. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Its stated purpose: it "establishes the authoritative standard for SSOT creation, including manual 'kickstart' protocols for Obsidian Properties."
+The source has type `ssot_methodology`, category operations, status canonical, version 1.8.2, last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Its stated purpose: it "establishes the authoritative standard for SSOT creation, including manual 'kickstart' protocols for Obsidian Properties."
 
 ## Linguistic Authority Standards
 
@@ -72,5 +72,7 @@ The protocol applies when YAML pasted from an external source (AI or clipboard) 
 | 📐 SSOT | Methodology/Framework |
 | 🎯 Authoritative | Story/Project content |
 | ⚙️ Operations | Workflow/AI Instructions |
+
+The author prefixes story or project content in `_AUTHORITATIVE/` with 🎯. The author names it `🎯 auth_[ip]_[name].md`, in lowercase with underscores. Chief rules whether the existing ingests and reports that carry 📐 there move to 🎯 or keep 📐.
 
 The source also carries a closing "Pro-Tip" (use the Templater plugin to automate the kickstart). It also carries a three-row version history. The first row is 1.0.0 (initial Marine Corps standard). The next is 1.7.0 (metadata troubleshooting). The last is 1.8.0 (Manual UI Kickstart).

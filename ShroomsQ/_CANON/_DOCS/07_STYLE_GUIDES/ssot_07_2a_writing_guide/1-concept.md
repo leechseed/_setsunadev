@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md"
-source_version: "2.2.1"
+source_version: "2.2.2"
 ---
 
 **Who it's for:** a writer or reviewer of an SSOT document · **What it does:** explains why 07.2a fixes language, frame and metadata · **Type:** concept

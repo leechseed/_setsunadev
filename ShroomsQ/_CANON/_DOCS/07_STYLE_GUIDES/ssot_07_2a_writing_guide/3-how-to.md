@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md"
-source_version: "2.2.1"
+source_version: "2.2.2"
 ---
 
 **Who it's for:** a writer or reviewer doing one SSOT task · **What it does:** gives numbered steps for each recurring 07.2a task · **Type:** how-to

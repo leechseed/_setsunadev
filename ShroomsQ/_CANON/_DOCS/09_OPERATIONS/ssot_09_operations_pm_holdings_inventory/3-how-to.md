@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_09_operations_pm_holdings_inventory.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** Chief or an agent hunting for an existing PM instrument or source before building a new one · **What it does:** gives the steps to find a holding, judge its state, and record a new one · **Type:** how-to
@@ -50,4 +50,11 @@ source_version: 1.0.1
 2. Add a row: path, what it is, state, reuse for the standard flow.
 3. Verify the path before you list it.
 
-> **OPEN:** the source does not name who maintains the inventory or when it is re-swept.
+## Re-sweep the inventory
+
+The Command keeps the inventory, and Chief owns it.
+
+1. Re-sweep when BOLO 25 (the standard PM flow) builds a step.
+2. Re-sweep when a listed holding changes state.
+3. Wait for Chief's decision before any other re-sweep.
+4. Verify each path before you list it.

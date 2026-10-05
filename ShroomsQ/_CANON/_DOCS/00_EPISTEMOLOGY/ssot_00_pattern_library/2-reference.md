@@ -7,14 +7,14 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** Chief or a writer looking up a pattern · **What it does:** lists the stack, the halves, the cycles and both patterns · **Type:** reference
 
 # Pattern library: reference
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md`, version 1.0.0, trunk BLACK, tier foundation, last updated 2026-10-04. Status: canonical. Pattern 1 and Pattern 2 are ruled 10/4 (BOLO 100/101). The half grows as emergence opens. Dependencies: `ssot_00_epistemology_truth_verification`, `ssot_00_variable_registry`, `ssot_00_module_architecture`, `ssot_00_base_60_number_system`, `ssot_01_scale_ladder`, `SOP.md §1`. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md`, version 1.0.1, trunk BLACK, tier foundation, last updated 2026-10-05. Status: canonical. Pattern 1 and Pattern 2 are ruled 10/4 (BOLO 100/101). The half grows as emergence opens. Dependencies: `ssot_00_epistemology_truth_verification`, `ssot_00_variable_registry`, `ssot_00_module_architecture`, `ssot_00_base_60_number_system`, `ssot_01_scale_ladder`, `SOP.md §1`. Why it exists: see the [concept](1-concept.md).
 
 A pattern entry gives a name, steps, a tier and scales.
 
@@ -71,6 +71,15 @@ Chief, 10/4: "you can kind of see the pattern, though, right, the way I do thing
 9. Log.
 
 It is the SOP's four steps (BOLO 64: RECON, ORDER, EXECUTE, CONSOLIDATE) seen as a pattern. See `SOP.md` §1.
+
+The Command maps the loop onto the SOP's four steps as follows.
+
+| Loop steps | SOP step |
+|---|---|
+| 1 to 3 (Chief speaks, capture to the BOLO, recon) | RECON |
+| 4 and 5 (recs, one-word ruling) | ORDER |
+| 6 and 7 (build, script check) | EXECUTE |
+| 8 and 9 (publish, log) | CONSOLIDATE |
 
 | Field | Value |
 |---|---|

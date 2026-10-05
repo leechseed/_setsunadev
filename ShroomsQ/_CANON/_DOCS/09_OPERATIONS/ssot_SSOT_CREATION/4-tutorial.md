@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.1
+source_version: 1.8.2
 ---
 
 **Who it's for:** a writer making a first SSOT document · **What it does:** walks one methodology from classification to a saved, working file · **Type:** tutorial

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_trope_register.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer, designer or script author looking up a field, key or count · **What it does:** lists every component of the trope register · **Type:** reference

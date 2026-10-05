@@ -1,7 +1,7 @@
 ---
 type: ssot_methodology
 category: operations
-version: 1.8.1
+version: 1.8.2
 tier: operations
 last_updated: 2026-10-05
 applies_to:
@@ -90,6 +90,8 @@ When pasting YAML from an external source (AI or Clipboard), Obsidian may fail t
 - **🎯 Authoritative:** Story/Project content.
 - **⚙️ Operations:** Workflow/AI Instructions.
 
+The author prefixes story or project content in `_AUTHORITATIVE/` with 🎯. The author names it `🎯 auth_[ip]_[name].md`, in lowercase with underscores. Chief rules whether the existing ingests and reports that carry 📐 there move to 🎯 or keep 📐.
+
 ---
 
 ## Version History
@@ -100,6 +102,7 @@ When pasting YAML from an external source (AI or Clipboard), Obsidian may fail t
 | 1.7.0   | 2026-02-12 | Added metadata troubleshooting.                                  |
 | 1.8.0   | 2026-02-12 | Integrated Manual UI Kickstart Protocol for Obsidian compliance. |
 | 1.8.1   | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): contractions are allowed, citing 07.2. |
+| 1.8.2   | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): Emoji Taxonomy gains the 🎯 prefix and name rule for `_AUTHORITATIVE/` files. |
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: story_spine
-version: 1.0.2
+version: 1.0.3
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, BVX-LEARN, all future IPs]
 status: canonical — spine ruled by Chief 2026-08-25 (comparative tree, Dramatica canonical + rivals mapped)
 purpose: "THE STORY SPINE — the canonical tree of what makes a story. The reference Chief designs IPs against, and the keying structure the BVX-LEARN library (CRE/LIT holdings) organizes onto. Front door to the BVX reference system."
@@ -198,6 +198,8 @@ Each level's first sub-layer plus its starter shelf (house holdings + library). 
 
 **Acquisition gaps (BVX.1107+ candidates):** Egri *The Art of Dramatic Writing* · Aristotle *Poetics* (primary) · Field *Screenplay* (historic completeness; model already covered).
 
+**Adding a rival (RULED 2026-10-05, BOLO 102 batch C):** Chief rules each new rival in. The author adds one row with the four columns: Model, Holdings, What it actually models, Verdict vs the spine. The author lists only held library ids and marks a missing book as not held. The author adds a missing book to the acquisition gaps line. The verdict names the spine level where the model lands.
+
 ---
 
 ## THE HOUSE LAYER — how the spine is wired in
@@ -240,3 +242,4 @@ The spine covers the STRUCTURE axis. Chief ordered the full milieu same session;
 - **1.0.0 — 2026-08-25.** Authored on Chief's clear (boresight chain closed same session): comparative tree, Dramatica canonical, 14 rival models mapped, holdings + gaps recorded, library keying proposed.
 - **1.0.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed (TS-B3); constraint-layer prose swapped to Touchstone (TS-B4).
 - **1.0.2 — 2026-10-04.** BOLO 100 D3: added Sources lines to L0, L3, L4, L6, L7.
+- **1.0.3 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): procedure for adding a rival model written under the acquisition gaps (C31).

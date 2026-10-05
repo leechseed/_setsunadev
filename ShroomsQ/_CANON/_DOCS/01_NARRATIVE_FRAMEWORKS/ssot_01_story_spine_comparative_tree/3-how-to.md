@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_story_spine_comparative_tree.md
-source_version: 1.0.2
+source_version: 1.0.3
 ---
 
 **Who it's for:** a designer or librarian using the spine · **What it does:** steps for the spine's recurring tasks · **Type:** how-to
@@ -66,4 +66,10 @@ Source: [📐 ssot_01_story_spine_comparative_tree.md](../../../_SSOT/01_NARRATI
 2. Write the Touchstone as `TS book:number`.
 3. Look up the id in the [Touchstones register](../ssot_01_touchstones_register/2-reference.md).
 
-> **OPEN:** the source gives no procedure for adding a new rival model to the rival map. Chief has not ruled one.
+## Add a rival model to the rival map
+
+1. Get Chief's ruling that the rival comes in. Chief rules each new rival in.
+2. Add one row with the four columns: Model, Holdings, What it actually models, Verdict vs the spine.
+3. List only held library ids in Holdings. Mark a missing book as not held.
+4. Add a missing book to the acquisition gaps line.
+5. Write the verdict so it names the spine level where the model lands.

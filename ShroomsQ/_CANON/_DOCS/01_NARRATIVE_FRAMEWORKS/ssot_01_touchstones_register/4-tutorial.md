@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_touchstones_register.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a new writer · **What it does:** teaches the register by reading, citing and checking TS 1:1 · **Type:** tutorial
@@ -45,11 +45,15 @@ Use the id, not the word "invariant."
 
 ## Step 4: check the id
 
-Run `_tools/review/touchstone_check.py`.
+From the repo root, run this command with no arguments:
+
+```
+python _tools/review/touchstone_check.py
+```
 
 The script greps every `TS \d+:\d+` under `ShroomsQ/_CANON/_SSOT/`. It confirms each id exists in the register.
 
-> **OPEN:** the source gives the script's path but not its command-line form or output format.
+The script prints `register ids: N | citations checked: M`, then one `MISSING TS x:y  path:line` per unknown id. It ends with `PASS` or `FAIL (n unregistered)`. It exits 0 on a pass and 1 on a fail.
 
 ## Step 5: meet a Modern Poetics entry
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.3.1
+source_version: 1.3.2
 ---
 
 **Who it's for:** a writer or Chief who wants the why behind theme · **What it does:** explains why theme is one argument built from four parts · **Type:** concept

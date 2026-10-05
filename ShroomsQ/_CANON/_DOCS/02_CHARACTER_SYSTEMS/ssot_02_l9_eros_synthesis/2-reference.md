@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_l9_eros_synthesis.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer or schema owner looking up a source, field or change · **What it does:** lists every section of the synthesis · **Type:** reference

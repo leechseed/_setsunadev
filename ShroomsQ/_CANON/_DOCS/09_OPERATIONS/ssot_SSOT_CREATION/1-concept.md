@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.1
+source_version: 1.8.2
 ---
 
 **Who it's for:** a writer or Chief creating or checking an SSOT document · **What it does:** explains why SSOT creation follows one fixed process and a manual Obsidian fix · **Type:** concept

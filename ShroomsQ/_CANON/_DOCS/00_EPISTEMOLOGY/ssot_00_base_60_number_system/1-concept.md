@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** a writer or designer asking why the numbers are what they are · **What it does:** explains why base 60 sits under every number · **Type:** concept

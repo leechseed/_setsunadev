@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_pattern_library.md"
-source_version: "1.0.0"
+source_version: "1.0.1"
 ---
 
 **Who it's for:** a writer new to patterns · **What it does:** runs one task through the Command loop · **Type:** tutorial
@@ -56,7 +56,7 @@ The CDR logs what happened. The log feeds the next loop.
 
 The nine steps map to the SOP's four: recon, order, execute, consolidate. Steps 1 to 3 are recon. Steps 4 and 5 are the order. Steps 6 and 7 are execute. Steps 8 and 9 are consolidate.
 
-> **OPEN:** the source does not give this step-to-SOP mapping. It only says the loop is the SOP's four steps seen as a pattern.
+The source's Pattern 1 holds this mapping in its "Maps to the SOP" table.
 
 ## What you did
 

@@ -1,9 +1,9 @@
 ---
 type: ssot_methodology
 category: epistemology
-version: 1.0.2
+version: 1.0.3
 tier: foundation
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -44,6 +44,8 @@ These ten frameworks operate independently and in combination. Effective truth v
 ---
 
 ## The 10 Truth Frameworks
+
+The author gives each framework one or two library ids on its Sources line. A qualifying id is a BVX number or a subject code (PSY, TEC, MIL, MSX) that names a held library file. Chief rules any third source in.
 
 ### Framework 1: Empirical Observation
 
@@ -400,3 +402,4 @@ This epistemological SSOT has no dependencies on other LEECHSEED SSOTs. Other SS
 | 1.0.0 | 2026-02-10 | Initial SSOT extracted from legacy documentation, restructured with MCDP standards |
 | 1.0.1 | 2026-10-04 | BOLO 100 base batch 1 (B2, B11, B13, B15), RULED Chief "REC.": `trunk: BLACK` added; new section "How the Frameworks Check the Systems" ties the ten frameworks to the character, setting, plot, theme, tracking and worldbuilding systems. The raw twin note `2_on_ascertaining_truth.md` is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` (B4): this file is the one source. |
 | 1.0.2 | 2026-10-04 | BOLO 100 D3: a Sources line added to each of the ten frameworks (F3, F4: method, no source). |
+| 1.0.3 | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): C2, a cap of one or two library ids per framework Sources line and the test for a qualifying id. |

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_ai_instruction_protocol.md
-source_version: 1.2.1
+source_version: 1.2.2
 ---
 
 **Who it's for:** a writer or AI operator looking up a rule in the SSOT master prompt · **What it does:** lists every phase, field, and rule of the SSOT Doctrinal Architect prompt · **Type:** reference
@@ -26,7 +26,7 @@ flowchart TD
   D --> E["Output Format Requirements"]
 ```
 
-The source has type `ssot_09_operations`, category operations, status canonical, version 1.2.1, last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD.
+The source has type `ssot_09_operations`, category operations, status canonical, version 1.2.2, last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD.
 
 ## Instructional Role
 
@@ -70,6 +70,19 @@ The AI follows five steps internally:
 3. **Structure:** map the input to the frame and the body for its page type (07.2).
 4. **Refine:** review specifically for hedging.
 5. **Naming:** format the filename as `📐 ssot_[category]_[name].md`.
+
+**Start the run.** The operator pastes the whole protocol file, then one raw concept, in a single message. The six categories map to folders as follows.
+
+| Category | Folder |
+|---|---|
+| epistemology | `00_EPISTEMOLOGY` |
+| narrative_frameworks | `01_NARRATIVE_FRAMEWORKS` |
+| character_systems | `02_CHARACTER_SYSTEMS` |
+| plot_systems | `04_PLOT_SYSTEMS` |
+| operations | `09_OPERATIONS` |
+| style_guides | `07_STYLE_GUIDES` |
+
+Chief decides where content for domains 03, 05, 06 and 08 lands, because no category names them.
 
 ## Output Format Requirements
 

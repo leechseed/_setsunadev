@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/06_THEME_SYSTEMS/📐 ssot_06_theme_system.md
-source_version: 1.3.1
+source_version: 1.3.2
 ---
 
 **Who it's for:** a writer who already knows what theme is · **What it does:** step-by-step recipes for the theme system's tasks · **Type:** how-to
@@ -77,8 +77,11 @@ Look up terms in the [reference](2-reference.md). Read the [concept](1-concept.m
 
 ## Key a trope to a rail
 
-1. Find the trope in the [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md).
-2. Key it to one or more rails R1 to R4.
-3. Pull known patterns for a layer from the theme list in `_tools/tropes/data/domains/LAYERS.md`.
+1. Open the trope's record in `register.json`. The [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md) is built from it.
+2. Read its one-line `def`.
+3. Set `keys.theme` to the one rail (R1 to R4) whose debate the trope argues, or to null if it argues none.
+4. Set `conf` to low when `def` is undefined.
+5. Run `build_register.py`.
+6. Ask Chief about any trope that needs two rails. Chief decides.
 
-> **OPEN:** the source gives no field-level steps for keying a trope. It says only that every theme-domain trope is keyed to R1 to R4.
+To pull known patterns for a layer, use the theme list in `_tools/tropes/data/domains/LAYERS.md`.

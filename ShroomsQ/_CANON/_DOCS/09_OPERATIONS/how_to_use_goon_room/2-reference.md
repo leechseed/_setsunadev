@@ -7,14 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/how_to_use_goon_room.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer looking up a Goon Room file name, tag, or review step · **What it does:** lists every part of the Goon Room workflow, file naming, and focus rules · **Type:** reference
 
 # The Goon Room workspace: reference
 
-The source applies to all stories (`applies_to: [all_stories]`) and has status canonical, version 1.0.0, last updated 2026-02-10.
+The source applies to all stories (`applies_to: [all_stories]`) and has status canonical, version 1.0.1, last updated 2026-10-05.
 
 ## Daily Workflow
 
@@ -44,7 +44,9 @@ The writer adds one of five tags as the work goes:
 
 The writer searches for `#canon-ready`, moves those passages to `_STAGED/` for review, and eventually promotes them to `_CANON/`.
 
-> **OPEN:** the source does not say who reviews in `_STAGED/` or what promotion requires.
+Chief reviews everything in `_STAGED/`. The writer does not promote on the writer's own call. Chief rules before anything reaches `_CANON/`.
+
+A passage qualifies for promotion when it carries `#canon-ready` and Chief rules it in. The writer checks it against the live Touchstones first. The writer then moves it to its home: a `#ssot-candidate` goes to an SSOT doc, and an `#auth-candidate` goes to `_AUTHORITATIVE/`. The writer adds a version-history row naming the date and the ruling.
 
 ## File Naming Convention
 

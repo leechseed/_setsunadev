@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: spine_house_inventory
-version: 1.0.1
+version: 1.0.2
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: module_of stamped. Earlier: BOLO 18 stage-1 artifact — the house-corpus sweep, mapped to spine levels (agent pass 2026-08-26)"
 purpose: "Every processed in-house material keyed to its spine level(s) L0–L7 — the repo's own holdings as spine shelves. Stage 2 (the 353-source library feeds: sweep) keys the external catalog the same way."
 module_of: ssot_01_story_spine_comparative_tree
@@ -13,7 +13,7 @@ trunk: BLACK
 
 # 📐 SSOT: THE SPINE — HOUSE INVENTORY (BOLO 18 · stage 1)
 
-The repo's own processed materials, mapped to the spine. Ordered by level; "also feeds" marks cross-level payload. Findings and flags at the bottom.
+The repo's own processed materials, mapped to the spine. Ordered by level; "also feeds" marks cross-level payload. Chief decides each tie between two levels. Until he does, the author gives the file the lower level number as its home and lists the other tied level in the Also column. Findings and flags at the bottom.
 
 ## L0 · Root theory
 | Path | Holds | Also |
@@ -92,6 +92,7 @@ The one-sheet template v2 + SPEC v3 (the distill instrument) · taxonomy proposa
 6. **Dedupe candidates:** the byte-identical variable registries (00 vs 05); the authoritative/handoff Victoria dupe pairs (known, by design — the handoff is a bundle).
 
 ## Version history
+- **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): tie rule for a file's home level written into the opening paragraph (C29).
 - **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** `module_of: ssot_01_story_spine_comparative_tree` stamped.
 - **1.0.0 — 2026-08-26.** Stage-1 sweep banked (Explore agent pass). Stage 2 = the library `feeds:` sweep.
 

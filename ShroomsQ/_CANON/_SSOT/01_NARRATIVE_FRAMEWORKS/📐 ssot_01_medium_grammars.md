@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: medium_grammars
-version: 1.2.1
+version: 1.2.2
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [all IPs, Ultrasin surfaces (grammar shared BOTH-trunk, surfaces stay Ultrasin-side)]
 status: "v1.2.0 2026-10-04: RULED, Chief (\"REC\") — BOLO 100 texture batch 1: per-medium texture table added (T3 order, T4 speed, T10 narratee). v1.1.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 genre batch 1: mode row added. v1.0.0: canonical — Module 4 of the lattice, delivered on Chief's clear 2026-08-26; gap-medium entries are v1 scaffolds pending the BOLO 16 deepening pass"
 purpose: "THE MEDIUM GRAMMARS — the channel contracts: how each medium re-instruments the texture layer and constrains the ladder. Lattice limb 4 of 4; completes the lattice."
@@ -128,6 +128,8 @@ Each channel changes three texture answers most. The cells restate the grammars 
 
 **Acquisition/research queue (BOLO 16):** Vernallis (music video) · short-form/creator-economy grammar sources · PMV/HMV grammar (community-documented, research-pass territory) — the v1 scaffolds above stand until the pass runs.
 
+**Running the pass (RULED 2026-10-05, BOLO 102 batch C):** Chief finds each source and attaches it in Zotero, then says "rescan Zotero". An MS reads the held source and writes sourced grammar for one scaffold medium (M6, M7 or M8). The author replaces the scaffold bullets, cites the source, and drops the "v1 scaffold" tag. A medium with no held source keeps its scaffold. ORANGE rows carry craft grammar only.
+
 ## OPEN
 
 - **BOLO 16 deepening pass** — M6/M7/M8 scaffolds → sourced grammar.
@@ -137,6 +139,7 @@ Each channel changes three texture answers most. The cells restate the grammars 
 
 ## Version history
 
+- **1.2.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): procedure for running the BOLO 16 research pass written into the acquisition queue (C24).
 - **1.2.1 — 2026-10-04.** BOLO 100 TOUCH BATCH 1, Chief "REC.": prose swapped invariant to Touchstone (TS-B4).
 - **1.2.0 — 2026-10-04.** RULED, Chief ("REC"), BOLO 100 texture batch 1 (texture T9): the TEXTURE BY MEDIUM table added, rows M1–M10, columns T3 order, T4 speed, T10 narratee. Closes the layer doc's "Module 4" deferral. No grammar change.
 - **1.1.0 — 2026-10-04.** RULED, Chief ("rec"), BOLO 100 genre batch 1 (genre OPEN 6): the MODE section added. Mode is a fence around genre, listed per medium, never a G-layer. No grammar change.

@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot epistemology truth verification.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** a writer checking a canon claim · **What it does:** gives the steps for picking and applying frameworks · **Type:** how-to
@@ -54,10 +54,10 @@ Look up each framework in the [reference](2-reference.md).
 
 ## Add a Sources line to a framework
 
-1. Find a source that supports the framework.
-2. Add a line starting `Sources:` under the framework's Limitations.
-3. If no source exists, write `method, no source` with the BOLO and date. The source does this for Frameworks 3 and 4.
-
-> **OPEN:** the source gives no rule for how many sources a framework may carry or which library ids qualify.
+1. Find a source that supports the framework. Give the framework one or two library ids at most.
+2. Check that each id qualifies. A qualifying id is a BVX number or a subject code (PSY, TEC, MIL, MSX) that names a held library file.
+3. Add a line starting `Sources:` under the framework's Limitations.
+4. If no source exists, write `method, no source` with the BOLO and date. The source does this for Frameworks 3 and 4.
+5. Ask Chief to rule in any third source.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

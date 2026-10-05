@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_medium_grammars.md
-source_version: 1.2.1
+source_version: 1.2.2
 ---
 
 **Who it's for:** a writer adapting a story across media · **What it does:** steps for adaptation, mode and scaffold tasks · **Type:** how-to
@@ -59,7 +59,14 @@ Terms are defined in the [reference](2-reference.md).
 3. Replace each scaffold bullet with the sourced version.
 4. Drop the "v1 scaffold" tag from the heading.
 
-> **OPEN:** the source names the research queue (Vernallis, short-form sources, PMV/HMV grammar) but gives no procedure for running the pass.
+Run the BOLO 16 pass one medium at a time:
+
+1. Chief finds each source and attaches it in Zotero. He then says "rescan Zotero".
+2. An MS reads the held source and writes sourced grammar for one scaffold medium (M6, M7 or M8).
+3. The author replaces the scaffold bullets and cites the source.
+4. The author drops the "v1 scaffold" tag.
+5. A medium with no held source keeps its scaffold.
+6. ORANGE rows carry craft grammar only.
 
 ## Keep ORANGE rows inside the firewall
 

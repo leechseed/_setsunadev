@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_ai_instruction_protocol.md
-source_version: 1.2.1
+source_version: 1.2.2
 ---
 
 **Who it's for:** an operator who wants an AI to produce one SSOT document · **What it does:** gives the steps to run the master prompt and check its output · **Type:** how-to
@@ -16,14 +16,13 @@ source_version: 1.2.1
 
 ## Generate an SSOT document with the master prompt
 
-1. Give the AI the protocol as its instruction set.
-2. Supply the raw concept.
-3. Let the AI categorize it into one of six categories: epistemology, narrative_frameworks, character_systems, plot_systems, style_guides, operations.
-4. Let the AI sanitize the input. Let it map the input to the frame and the body for its page type (07.2).
-5. Let the AI refine for hedging.
-6. Let the AI name the file `📐 ssot_[category]_[name].md`.
-
-> **OPEN:** the source does not say what the operator pastes to start the run or how the six categories map to folders.
+1. Paste the whole protocol file, then one raw concept, in a single message. This gives the AI its instruction set and its input together.
+2. Let the AI categorize it into one of six categories: epistemology, narrative_frameworks, character_systems, plot_systems, style_guides, operations.
+3. Let the AI sanitize the input. Let it map the input to the frame and the body for its page type (07.2).
+4. Let the AI refine for hedging.
+5. Let the AI name the file `📐 ssot_[category]_[name].md`.
+6. Save the file in the folder for its category: epistemology to `00_EPISTEMOLOGY`, narrative_frameworks to `01_NARRATIVE_FRAMEWORKS`, character_systems to `02_CHARACTER_SYSTEMS`, plot_systems to `04_PLOT_SYSTEMS`, operations to `09_OPERATIONS`, style_guides to `07_STYLE_GUIDES`.
+7. Ask Chief where content for domains 03, 05, 06 and 08 lands, because no category names them.
 
 ## Check the AI's output
 

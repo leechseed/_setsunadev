@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** a designer adding or converting a numeric variable · **What it does:** gives the steps for each number task · **Type:** how-to
@@ -60,9 +60,8 @@ Tables and rules live in the [reference](2-reference.md).
 
 1. Take the old threshold and its percentage of the old scale.
 2. Map it to the same percentage on SC-12.
-3. Round to a valid value, respecting constraints.
-4. Record the old and new threshold and the reason.
-
-> **OPEN:** the source gives no rule for choosing between rounding up and down. Its cases pick by narrative need.
+3. Round to the nearest valid value on the target scale. Respect any divisibility constraint.
+4. If two valid values sit equally near, or the nearest breaks a constraint, ask Chief to pick the direction by narrative need.
+5. Record the old and new threshold, the rounding direction and the reason.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

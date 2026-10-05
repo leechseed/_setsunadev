@@ -1,7 +1,7 @@
 ---
 title: PM Holdings Inventory — everything project-management-shaped the operation already holds
 type: register / survey
-version: 1.0.1
+version: 1.0.2
 tier: operations
 domain: 09_OPERATIONS
 status: survey banked 2026-09-03 — feeds BOLO 25 (the standard PM flow)
@@ -14,6 +14,8 @@ related: BOLO.md #25 · SOP.md · STATE.md · PROJECTS.md · DOCTRINE-0-INVARIAN
 # PM HOLDINGS INVENTORY
 
 **The finding in one line: the method is already written; what is missing is assembly.** A complete six-phase lifecycle with decision gates exists in the Feb-2026 four-domains artifact, a matched PMBOK-7 mapping sits beside it, and every instrument a lightweight flow needs (charter · assumption log · decision ledger · task register · portfolio board · stage gates · document container · Command style) exists as a finished artifact somewhere in the repo. No single document assembles them into "how a project runs here."
+
+**Keeping this inventory.** The Command keeps the inventory, and Chief owns it. The Command re-sweeps it when BOLO 25 (the standard PM flow) builds a step, and whenever a listed holding changes state. Chief decides any other re-sweep. The author verifies each path before listing it.
 
 ## 1 · PMBOK / PMI material
 
@@ -103,5 +105,6 @@ PROJECTS rank 10 "Business ops" retired as a label. Of its six conversations, fo
 
 ## Version History
 
+- **1.0.2 · 2026-10-05** — BOLO 102 batch C (Chief: "all recs"): added "Keeping this inventory": the Command keeps it, Chief owns it, re-sweep triggers named.
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): the "Missing" list in §6 is re-dated 2026-10-05; entries the repo shows closed are struck and marked "closed 2026-09-03".
 - **1.0.0 · 2026-09-03** — Survey banked.

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_l9_eros_synthesis.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a newcomer tracing a schema change for the first time · **What it does:** one guided trace of change 5, the shame split · **Type:** tutorial

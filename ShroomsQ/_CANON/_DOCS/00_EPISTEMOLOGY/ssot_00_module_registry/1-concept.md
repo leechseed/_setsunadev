@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
-source_version: "1.1.1"
+source_version: "1.1.2"
 ---
 
 **Who it's for:** a designer or writer tracking field modules · **What it does:** explains why one registry lists every module and what its statuses mean · **Type:** concept

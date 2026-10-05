@@ -1,10 +1,10 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 2.2.1
+version: 2.2.2
 tier: narratology
 module_of: ssot_07_2_documents_style
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 reader: "anyone writing or reviewing an SSOT document"
 doc_type: reference
 owner: "Chief (HOTLINE ACTUAL); Claude keeps it"
@@ -68,6 +68,7 @@ To guarantee Obsidian Property rendering, all metadata must use **Flow Style** f
 - **Wikilinks**: `"[[Document_Name]]"` (must be double-quoted).
 - **Key Spacing**: `key: value` (mandatory space after colon).
 - **The header fields** (RULED 2026-10-04, BOLO 92 merge call 3; 07.2 core rules 2.1–2.3): every new or reviewed document adds `reader`, `doc_type` (tutorial · how-to · reference · concept), `owner`, `state` (draft · ruled · retired), and `reviewed` (a date). `status` and `last_updated` stay until the schema pass.
+- **The template's field list** (the dependency template): the eight components in order: YAML frontmatter, H1 title, Table of Contents, Purpose, Core Methodology, Implementation, Examples, Version History. Its YAML keys are `type`, `category`, `version`, `last_updated`, `applies_to`, `status`, `purpose` and `dependencies`. Chief decides whether the five header fields (`reader`, `doc_type`, `owner`, `state`, `reviewed`) join the template now or at the schema pass.
 
 ---
 
@@ -80,3 +81,4 @@ To guarantee Obsidian Property rendering, all metadata must use **Flow Style** f
 | 2.1.1   | 2026-09-29 | Moved to 07_STYLE_GUIDES/📐 ssot_07_2a_writing_guide.md (BOLO 92); no content change. |
 | 2.2.0   | 2026-10-04 | BOLO 92 merge calls ruled: contractions allowed · frame kept, body by type · header fields added · the pasted-in Goon Room protocol split out to 09_OPERATIONS. |
 | 2.2.1   | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): stamped module_of 07.2; type and category fixed; template and stub links repaired; reviewer check for body-by-type added. |
+| 2.2.2   | 2026-10-05 | BOLO 102 batch C (Chief: "all recs"): the dependency template's field list added under the header-fields bullet. |

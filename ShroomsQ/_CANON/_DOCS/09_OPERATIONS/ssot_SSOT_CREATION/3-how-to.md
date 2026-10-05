@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.1
+source_version: 1.8.2
 ---
 
 **Who it's for:** a writer producing a new SSOT document · **What it does:** gives the steps to create, fix, and file an SSOT document · **Type:** how-to
@@ -36,4 +36,8 @@ source_version: 1.8.1
 3. Use lowercase and underscores in place of spaces.
 4. Pick the emoji by content: 📐 for methodology, 🎯 for story or project content, ⚙️ for workflow or AI instructions.
 
-> **OPEN:** the source does not say which emoji prefixes a file in `_AUTHORITATIVE/` beyond the taxonomy, or what the name rules are for `🎯` files.
+## Name a file in `_AUTHORITATIVE/`
+
+1. Prefix story or project content with 🎯.
+2. Name it `🎯 auth_[ip]_[name].md`, in lowercase with underscores.
+3. Ask Chief before you move an existing 📐 ingest or report there to 🎯. Chief rules whether it moves or keeps 📐.

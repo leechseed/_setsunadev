@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md"
-source_version: "1.0.1"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a designer looking up a module rule · **What it does:** lists every block, rule and stage in the module architecture doc · **Type:** reference
@@ -34,7 +34,7 @@ flowchart TD
   R --> I["Module Registry Format"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md`, version 1.0.1, status canonical, trunk BLACK, tier foundation, last updated 2026-10-04. Dependencies: `ssot_00_variable_registry`, `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Registry of modules: [ssot_00_module_registry](../ssot_00_module_registry/2-reference.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md`, version 1.0.2, status canonical, trunk BLACK, tier foundation, last updated 2026-10-05. Dependencies: `ssot_00_variable_registry`, `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Registry of modules: [ssot_00_module_registry](../ssot_00_module_registry/2-reference.md).
 
 ## The Core Principle
 
@@ -243,6 +243,6 @@ Each registry entry carries these fields.
 
 The registry is `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`. It lists field modules only.
 
-> **OPEN:** the source's `FLAGS` block lists four states (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE) but defines none of them here.
+A module flag uses the four core definitions unchanged. ACTIVE means the condition is met now. PENDING means it is met at a defined narrative event. FIRED_PRE_STORY means it was met before story entry. INACTIVE means it is not met. The author of a module links to the vertical slice's "Flag Trigger Conditions" section instead of redefining them.
 
 Related pages: [concept](1-concept.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

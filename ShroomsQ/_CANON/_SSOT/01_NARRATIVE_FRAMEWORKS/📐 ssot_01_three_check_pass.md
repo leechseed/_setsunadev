@@ -1,9 +1,9 @@
 ---
 type: ssot_01_narrative_frameworks
 category: three_check_pass
-version: 1.0.1
+version: 1.0.2
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 status: "v1.0.1 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 registers batch 1: history line reworded, Anna and OXO element gaps parked by name, module_of stamped. Earlier: canonical 1.0; all 36 lines KEPT by Chief 2026-09-29 (\"keep all\")"
 purpose: "The P8–P10 application pass (Modern Poetics): Fantasy Drive · Sexy Check · Aesthetic Check over the flagship canon roster. Three sweeps, never bundled per element."
 module_of: ssot_01_modern_poetics
@@ -73,6 +73,7 @@ trunk: BLACK/ORANGE
 - Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.
 - A2 gap: `⏸ Anna sheet (phase 2)`. It also blocks the Tori×Anna collision proof.
 - Six elements have no sheet yet: `⏸ OXO element sheets (phase 2)`.
+- Row numbers: the author numbers a new element 13 and counts up, in expansion-queue order. The element keeps one number across all three sweeps: F13, S13, A13. The author never renumbers a row.
 
 ## WHERE EACH LINE LANDED
 
@@ -95,3 +96,4 @@ trunk: BLACK/ORANGE
 - **0.1.0 — 2026-08-31.** Sweep 1 drafted, 12 elements, all drafts.
 - **1.0.0 — 2026-09-29.** Chief ruled "keep all": all 36 lines kept, draft marks stripped, status canonical. Migrated to six sheets (Tori, Anna F2 only, DCUS, The Drop, storyform, Collision Engine); six elements have no sheet yet; S2/A2 remain Anna gaps.
 - **1.0.1 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** The 0.1.0 history line reworded without the glyph. Anna gaps parked as `⏸ Anna sheet (phase 2)`; sheetless elements parked as `⏸ OXO element sheets (phase 2)`. `module_of: ssot_01_modern_poetics` stamped.
+- **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): row numbering rule past row 12 written under NEXT (C36).

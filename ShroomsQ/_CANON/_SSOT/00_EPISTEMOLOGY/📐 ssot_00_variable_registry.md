@@ -2,9 +2,9 @@
 type: ssot_00_foundations
 category: variable_registry
 rung: standard · NASA four, ruled 2026-09-15 (BOLO 50)
-version: 1.2.1
+version: 1.2.2
 tier: foundation
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -67,6 +67,8 @@ All variables follow this path structure:
 |`META`|Character metadata|`META.character_id`|
 |`REL`|Relationship records|`REL.relationship_type`|
 |`MOD`|Layer-Locked Module variables|`MOD.[MODULE_CODE].[variable_name]`|
+
+**`REL` note.** Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. Until Chief rules, `REL` stays a declared prefix with its one example.
 
 ### Layer Codes
 
@@ -133,6 +135,10 @@ Each variable entry contains:
 |**Behavior**|One-sentence LoL-ability-style description|
 
 The Slice Fields section (1.2.0) lists the fields the slice added after the first registry. It uses one table row per field with these columns: Canonical Path, Type, Scale Class, Tag, Source, Consumer, and Values and sub-fields. The row holds the same facts as an entry. The Behavior of each field lives in the slice layer paragraph it cites.
+
+### Retire a variable
+
+Chief rules each retirement. The author keeps the entry and marks it retired with the date and BOLO. The author names any replacement. The author keeps an alias row for the old name. The author removes the variable from every Feeds line that lists it. Character records keep their data. The author adds a version-history row.
 
 ---
 
@@ -1357,3 +1363,4 @@ State diffs use the `STT` prefix and mirror the variable they modify, with addit
 |1.1.0|2026-08-24|STATE #3 executed: added `T3.EROS.armor_index`, `T3.EROS.satisfaction_cycle_truncation`, `T3.EROS.erotic_safety_precondition`, `DRV.expressive_range` (L9 v2 propagation). `mc_problem_element` rename was already present (Phase 4). armor_index scale-class assignment was left open then. Assigned SC-12 in 1.2.0.|
 |1.2.0|2026-10-04|BOLO 100 base batch 1 (B1 to B8, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk` and `rung`, table-of-contents links repointed; the 05 copy is archived to `ShroomsQ/_ARCHIVE/ssot_legacy/` and this file is the one registry (B5); Registry Format gains the `Tag` row and the `object` types; new Slice Fields section adds 94 field rows from slice 3.3.1, each with tag, scale class, source and consumer (B6); Tag row added to every entry; `T3.EROS.armor_index` assigned SC-12 and the two "pending" lines deleted (B7); Ownership Rule with five pointer rows (B8); `attachment_style` and `intimacy_mode` value sets brought to the slice; `exposure_shame` and `role_shame` held at SC-12 to match `shame_index`, where the slice text says 0 to 10; the `10 - armor_index` constant is the slice's and gives a negative value at 11 or 12; dependency names fixed to real stems (B13).|
 |1.2.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field `narrative_invariant` renamed `touchstone` (TS-B3), one alias row kept.|
+|1.2.2|2026-10-05|BOLO 102 batch C (Chief: "all recs"): C18, a note under the `REL` prefix (Chief decides each REL variable, check the three relational fields first); C19, a "Retire a variable" subsection under Registry Format.|

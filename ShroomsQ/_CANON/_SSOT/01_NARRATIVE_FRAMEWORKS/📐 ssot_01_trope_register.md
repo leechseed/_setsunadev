@@ -1,7 +1,7 @@
 ---
 type: ssot_01_narrative_frameworks
 category: trope_register
-version: 1.0.1
+version: 1.0.2
 tier: narratology
 last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, all future IPs]
@@ -86,8 +86,13 @@ No character is changed by this ruling — it names a pattern, not a fix.
 - **Consumer TROPES sections** — `⏸ TROPES pointer sections (phase 2)`. Each system doc gets one section pointing at its layer lists, as a call in that doc's own batch. The tracking system's story points can carry a trope id ([ssot_08](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md)).
 - **Done earlier:** wave B (0.5.0) · theme sub-index pass (0.2.0) · low-confidence pass (0.3.0).
 
+## Rebuild the register
+
+The author runs `python _tools/tropes/fetch.py --domains` to pull the indexes. The script waits one second per request, skips slugs already cached, and stores no page bodies. PS batches write the keys to `_tools/bolostatus/work/89/keys.batch*.json`. The author then runs `python _tools/tropes/build_register.py` with no arguments. It writes `register.json` and `LAYERS.md` and prints the counts table.
+
 ## Version history
 
+- **1.0.2 — 2026-10-05.** BOLO 102 batch C (Chief: "all recs"): Rebuild the register section: command steps for fetch.py and build_register.py (C40).
 - **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): purpose line says 8,700 tropes; skew section recomputed from the counts table.
 - **1.0.0 — 2026-10-04 (BOLO 100 registers batch 1, Chief "rec").** Undefined-trope rule written: no definition means key by title and domain tags, flagged `undefined`. OPEN list closed; consumer TROPES sections parked as `⏸ TROPES pointer sections (phase 2)`.
 

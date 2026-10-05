@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_spine_house_inventory.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a builder keying house files to the spine · **What it does:** steps for finding, keying and deduping holdings · **Type:** how-to
@@ -29,8 +29,8 @@ Terms are defined in the [reference](2-reference.md).
 2. List the file's path and what it holds.
 3. Fill the Also column with every other level it serves.
 4. Order the row by level.
-
-> **OPEN:** the source gives no rule for choosing a home level when two levels tie.
+5. If two levels tie, Chief decides. Until he does, give the file the lower level number as its home.
+6. List the other tied level in the Also column.
 
 ## Key a library source to the spine
 

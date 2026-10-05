@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/how_to_use_goon_room.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer working in the Goon Room who needs the steps for one task · **What it does:** gives the steps for starting a session, tagging, and the weekly review · **Type:** how-to
@@ -30,6 +30,11 @@ source_version: 1.0.0
 
 1. Search the Goon Room for `#canon-ready`.
 2. Move each match to `_STAGED/` for review.
-3. Promote reviewed items to `_CANON/` when they are ready.
+3. Wait for Chief to review everything in `_STAGED/`. The writer does not promote on the writer's own call.
 
-> **OPEN:** the source gives no promotion criteria and no review owner.
+## Promote a passage
+
+1. Confirm the passage carries `#canon-ready` and that Chief has ruled it in.
+2. Check the passage against the live Touchstones.
+3. Move it to its home. A `#ssot-candidate` goes to an SSOT doc. An `#auth-candidate` goes to `_AUTHORITATIVE/`.
+4. Add a version-history row naming the date and the ruling.

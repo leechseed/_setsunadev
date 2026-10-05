@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/01_NARRATIVE_FRAMEWORKS/📐 ssot_01_spine_house_inventory.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a new builder learning the inventory · **What it does:** walks L1 to L3 using the storyform's files · **Type:** tutorial
