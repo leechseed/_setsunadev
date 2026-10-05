@@ -84,7 +84,7 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 | `_0.1_BVX_LEARN/_meta/DECISIONS.md` · `REVIEW-QUEUE.md` · inventory/orphans/gap reports | per-subsystem decision log + review queue + reports | finished | the proven per-project document set |
 | `_0.1_BVX_LEARN/KNOWLEDGE_AREAS/*.md` | one-sheets with `Invariants` + structured `feeds:` block | finished | traceability (requirement → artifact) in YAML |
 | `…/files/2026-03-28_research-to-knowledgebase-templatemd.md` | two-stage prompt pipeline (research → KB) | finished template | the intake half of a research-driven flow |
-| `09_OPERATIONS/📐 ssot_00_process_illustration_character_pipeline.md` | worked end-to-end pipeline illustration | finished | the "flow, illustrated once" artifact |
+| `02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md` | worked end-to-end pipeline illustration | finished | the "flow, illustrated once" artifact |
 | `…/files/2026-02-25_ssot-00-system-architecture-mapmd.md` | components mapped, **every undefined interface marked** | finished | an interface-gap register = risk log |
 
 ## 5 · The Ultrasin master registry format

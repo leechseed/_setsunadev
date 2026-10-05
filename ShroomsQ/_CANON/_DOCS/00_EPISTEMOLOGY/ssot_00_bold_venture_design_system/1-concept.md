@@ -6,7 +6,7 @@ does: "explains why one design system governs all Bold Venture output and how th
 owner: Chief
 state: draft
 reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_00_bold_venture_design_system.md
+source: ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_bold_venture_design_system.md
 source_version: 2.0.2
 ---
 

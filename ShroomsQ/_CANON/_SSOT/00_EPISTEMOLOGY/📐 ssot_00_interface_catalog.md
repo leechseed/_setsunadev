@@ -1,7 +1,7 @@
 ---
 type: ssot_00_epistemology
 category: interface_catalog
-version: 0.1.0
+version: 0.2.0
 tier: foundation
 last_updated: 2026-10-05
 reader: "the CDR and the writers, before touching a field another system reads; Chief, ruling the calls"
@@ -11,7 +11,7 @@ state: draft
 reviewed: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 trunk: BLACK
-status: "v0.1.0 2026-10-05: BUILT from the stage 2 extraction (BOLO 102; six MS extractors, one script fan-in); 514 interfaces across 45 system pairs; ten design calls OPEN with recs"
+status: "v0.2.0 2026-10-05: the ten design calls RULED (Chief: "My word"), source-fix batch fired; v0.1.0 2026-10-05: BUILT from the stage 2 extraction (BOLO 102; six MS extractors, one script fan-in); 514 interfaces across 45 system pairs"
 purpose: "The between-system map: every place one system hands another a field, an id, a record or a rule, in one register with one id per interface; the wiring findings (what one side states and the other never does); and the design calls that close the gaps."
 dependencies: ["_tools/docs/ifc_build.py (the build)", "_tools/docs/out/ifc_candidates.json (the register's truth)", "_tools/docs/out/N2.md (the RECON scan)", "[[📐 ssot_00_variable_registry]]", "[[📐 ssot_00_module_architecture]]", "[[📐 ssot_00_pattern_library]]"]
 sources: ["NASA Systems Engineering Handbook, interface management and the N² diagram (Zotero)", "the 58 core docs, read whole by six extractors on 2026-10-05"]
@@ -870,9 +870,9 @@ A DATA row is one-sided when one system states it and the other never does. The 
 
 Each closes by one line on the silent side naming the IF id. The fix batch runs after the calls are ruled.
 
-## THE DESIGN CALLS — OPEN 2026-10-05, one rec each
+## THE DESIGN CALLS — RULED 2026-10-05 (Chief: "My word", all ten as recommended)
 
-The 115 proposed rows fall into ten calls. Chief rules each; "all recs" takes the ten. A ruled call becomes a source-fix batch (one MS per system), and the rows it covers move from `proposed` to `built` on the next rebuild.
+The 115 proposed rows fell into ten calls. Chief ruled all ten as recommended on 2026-10-05. Each is now a source-fix batch (one MS per system); a row moves from `proposed` to `built` when its fix lands and the register rebuilds.
 
 **1 · One clock.** Fourteen rows date things five different ways: the Tracking time code (`M2 · Q1 · S03 | bar.beat.tick`), the ladder address (`OXO.primary.M2.q3.s12.b4`), movement tags (`m1a`), free text (`STT.narrative_moment`), and calendar years. **Rec:** the 08 time code is the one address for anything dated in any system. 08 gains a section, "The address", that maps the ladder address onto it (movement = M, sequence = Q, scene = S, beat = bar.beat) and lists the fields that must carry it: `STT.narrative_moment`, relationship `state_history.moment`, fabula `time` (beside the calendar year), P11 `order_told`, LEDGER_DUE future states, the hook ledger, the Touchstone breach log, catalog `narrated_in`, CT5 bookends. Free text and movement tags retire as aliases.
 
@@ -894,8 +894,9 @@ The 115 proposed rows fall into ten calls. Chief rules each; "all recs" takes th
 
 **10 · One of each.** Two trope keyings, two genre tools, two "scale ladders", two 1.0 bars. **Rec:** the trope register's `register.json` is the one key store and the trope graph reads it; Ryan's nine-axis scoring is the genre-contract tool for 03 and 01 both (Baur stays as lineage); "scale ladder" is 01's R1–R8 and 05's three tiers are renamed "the reach"; the 1.0 bar is SOP §5's six (Shape · Shelf · Proof · Ruled · Wired · Store) and 06's own list retires.
 
-**After the rulings:** the one-sided pairs in THE WIRING FINDINGS close by one line each: the silent side names the interface by its IF id. One MS per system, one pass.
+**With the rulings:** the one-sided pairs in THE WIRING FINDINGS close by one line each: the silent side names the interface by its IF id. One MS per system, one pass, fired 2026-10-05.
 
 ## VERSION HISTORY
 
+- **0.2.0 · 2026-10-05** — RULED: all ten design calls as recommended (Chief: "My word"); the source-fix batch and the catalog's four pages fired the same turn. Two files moved under call 9: the character pipeline to 02, the design system to 00.
 - **0.1.0 · 2026-10-05** — BUILT (BOLO 102 stage 2, Chief: "go"). Six extractors, 573 rows, 514 interfaces across 45 pairs; ten design calls OPEN with recs. Built on Fable (SOP §7 rule 21, the model call).

@@ -12,7 +12,8 @@
   "status": "proposed",
   "evidence": "Each storytelling system makes one kind of claim. This table says which framework checks that claim.",
   "note": "No row for Narrative (01) or Operations (09). Narratology is the lens (pattern library stack), so its claim is probably Correspondence plus Coherence.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-01-09"
  },
  {
   "from_sys": "00",
@@ -27,7 +28,8 @@
   "status": "built",
   "evidence": "The lens. The bard's telling.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-01-07"
  },
  {
   "from_sys": "00",
@@ -42,7 +44,8 @@
   "status": "proposed",
   "evidence": "For every other system it holds one pointer row, and the pointer never copies a field.",
   "note": "The table lists 03, 04, 05, 06, 08 only. 01, 07 and 09 have no row.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-01-10"
  },
  {
   "from_sys": "00",
@@ -57,7 +60,8 @@
   "status": "proposed",
   "evidence": "This defines the maximum nesting depth for hierarchical subdivisions.",
   "note": "The pattern library calls base 60 'one number base reused for every scale' and the scale ladder 'one ladder of scales that every pattern climbs'. Neither doc says how the two meet.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-01-04"
  },
  {
   "from_sys": "00",
@@ -72,7 +76,8 @@
   "status": "built",
   "evidence": "one ladder of scales that every pattern climbs.",
   "note": "The Scales values in Pattern 1 and Pattern 2 are not checked against the ladder's rung names in this doc.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-01-01"
  },
  {
   "from_sys": "00",
@@ -87,7 +92,8 @@
   "status": "built",
   "evidence": "At the narratology tier it becomes the beat the bard tells.",
   "note": "Step names provisional.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-01-02"
  },
  {
   "from_sys": "00",
@@ -102,7 +108,8 @@
   "status": "built",
   "evidence": "supersedes_ranges_in: [\"ssot_02_character_systems_vertical_slice\"]",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-29"
  },
  {
   "from_sys": "00",
@@ -117,7 +124,8 @@
   "status": "built",
   "evidence": "The variable must be assigned to a scale class from this document. No ad hoc ranges.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-30"
  },
  {
   "from_sys": "00",
@@ -132,7 +140,8 @@
   "status": "built",
   "evidence": "Coherence (fits the rest of the character), Logical Reasoning (the change follows from its cause), Empirical Observation (the psychology holds up).",
   "note": "Two rules apply to every row: a claim one framework cannot confirm needs a second framework; Framework 8 (Skepticism) tests any claim, and a claim that fails it stays marked open.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-31"
  },
  {
   "from_sys": "00",
@@ -147,7 +156,8 @@
   "status": "built",
   "evidence": "The 12 layers do not change. Modules attach beneath them.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-32"
  },
  {
   "from_sys": "00",
@@ -162,7 +172,8 @@
   "status": "built",
   "evidence": "Always \"own variables only\" — modules cannot write to core layer variables",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-33"
  },
  {
   "from_sys": "00",
@@ -177,7 +188,8 @@
   "status": "built",
   "evidence": "Relationship records (REL prefix) — synastry belongs to the relationship system, not to individual modules",
   "note": "'The relationship system' is not one of the ten numbered systems, and the variable registry holds REL as a declared prefix with no owner.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-34"
  },
  {
   "from_sys": "00",
@@ -192,7 +204,8 @@
   "status": "built",
   "evidence": "The slice governs a doc module. The registry never lists one.",
   "note": "The doc modules named: the Step 1 gate, an ingest template, the Dramatica integration, the state architecture.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-35"
  },
  {
   "from_sys": "00",
@@ -207,7 +220,8 @@
   "status": "built",
   "evidence": "An MS reads the vertical slice and reports one verdict per module.",
   "note": "Audit 2026-10-04: 1 active, 2 absorbed, 8 planned, 3 conceptual.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-36"
  },
  {
   "from_sys": "00",
@@ -222,7 +236,8 @@
   "status": "built",
   "evidence": "The Vertical Slice SSOT consumes this document for point budgets, derived stat formulas, and flag trigger thresholds.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-01"
  },
  {
   "from_sys": "00",
@@ -237,7 +252,8 @@
   "status": "built",
   "evidence": "SC-12 provides 20% more granularity than old SC-10.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-02"
  },
  {
   "from_sys": "00",
@@ -252,7 +268,8 @@
   "status": "built",
   "evidence": "All derived statistics are reformulated to operate on the new scale classes.",
   "note": "Check against the registry: DRV.truth_exposure_index display formula there is `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)` (slice 3.3.2) while this doc's formula uses 12 - shame_index; the registry internal formula agrees with this doc.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-03"
  },
  {
   "from_sys": "00",
@@ -267,7 +284,8 @@
   "status": "built",
   "evidence": "Old threshold 5 (SC-10) maps proportionally to 6 (SC-12).",
   "note": "This doc names flags in upper case (SHADOW_DENIAL); the registry's canonical paths are FLG.shadow_denial etc. TRUTH_VULNERABILITY kept 6 by decision rather than the proportional 8.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-04"
  },
  {
   "from_sys": "00",
@@ -282,7 +300,8 @@
   "status": "built",
   "evidence": "Victoria's complete numeric profile recalibrated to the base 60 system.",
   "note": "The record lives in the character instance; this doc holds the re-expression table.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-05"
  },
  {
   "from_sys": "00",
@@ -297,7 +316,8 @@
   "status": "built",
   "evidence": "Each layer has a single domain declaration (from the Vertical Slice SSOT).",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-06"
  },
  {
   "from_sys": "00",
@@ -312,7 +332,8 @@
   "status": "built",
   "evidence": "Any core layer variable (T1, T2, T3 prefixes)",
   "note": "Reading another module's variables must be declared as DEPENDS_ON: [MODULE_CODE]; circular dependencies are prohibited.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-07"
  },
  {
   "from_sys": "00",
@@ -327,7 +348,8 @@
   "status": "built",
   "evidence": "Raw Dramatica ingest template fields — modules read the L12 structured data, not the source template",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-08"
  },
  {
   "from_sys": "00",
@@ -342,7 +364,8 @@
   "status": "built",
   "evidence": "module data is written as a sub-table block within the character's structured data output",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-09"
  },
  {
   "from_sys": "00",
@@ -357,7 +380,8 @@
   "status": "built",
   "evidence": "The author of a module links to the vertical slice's \"Flag Trigger Conditions\" section instead of redefining them.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-10"
  },
  {
   "from_sys": "00",
@@ -372,7 +396,8 @@
   "status": "built",
   "evidence": "(minimum character tier that uses this module)",
   "note": "The character's tier is META.tier in the variable registry; the architecture does not name the field.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-11"
  },
  {
   "from_sys": "00",
@@ -387,7 +412,8 @@
   "status": "built",
   "evidence": "This module is the only module that attaches to ALL 12 layers.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-12"
  },
  {
   "from_sys": "00",
@@ -402,7 +428,8 @@
   "status": "built",
   "evidence": "**Reads:** All core layer base values, `T3.FUNC.resolve`",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-13"
  },
  {
   "from_sys": "00",
@@ -417,7 +444,8 @@
   "status": "parked",
   "evidence": "`T1.VITAL.base_value`, `T2.WILL.base_value`, `T3.SHADOW.regression_pattern`",
   "note": "Module status is planned (not built), so every read in the planned and conceptual modules is parked, not built.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-20"
  },
  {
   "from_sys": "00",
@@ -432,7 +460,8 @@
   "status": "parked",
   "evidence": "**Reads:** `T3.IMPRINT.emotional_range`, `T3.IMPRINT.conditional_patterns`",
   "note": "Planned modules.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-21"
  },
  {
   "from_sys": "00",
@@ -447,7 +476,8 @@
   "status": "parked",
   "evidence": "**Reads:** `T2.WILL.coping_strategy`",
   "note": "Planned modules. COPING was narrowed 10/4: the strategy now lives in L4 coping_strategy, so the module only reads it. The flag writes T2.WOUND bare, while the registry path is T2.WOUND.wound_score.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-22"
  },
  {
   "from_sys": "00",
@@ -462,7 +492,8 @@
   "status": "parked",
   "evidence": "Reads L7 `origin_class` and `origin_disciplinary_formation`, L8 `conditional_patterns` and L3 `community_membership`.",
   "note": "Conceptual modules; their variable lists are marked ⏸ module build (phase 2).",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-23"
  },
  {
   "from_sys": "00",
@@ -477,7 +508,8 @@
   "status": "parked",
   "evidence": "SEX_PROF is absorbed, so the Sexuality Profile domain reads the L9 fields directly.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-24"
  },
  {
   "from_sys": "00",
@@ -492,7 +524,8 @@
   "status": "proposed",
   "evidence": "Scene (a character), arc (a season), era (a faction or city over centuries)",
   "note": "The Scales field puts a character at the scene scale, but the pattern names no character field. The registry's STT diffs are the only way a character 'ends up different' (step 4).",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-25"
  },
  {
   "from_sys": "00",
@@ -507,7 +540,8 @@
   "status": "built",
   "evidence": "L12 FUNCTION is fed from the storyform.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-14"
  },
  {
   "from_sys": "00",
@@ -522,7 +556,8 @@
   "status": "built",
   "evidence": "Copied from the slice table \"Field tags · every field\"",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-15"
  },
  {
   "from_sys": "00",
@@ -537,7 +572,8 @@
   "status": "built",
   "evidence": "The slice reached 3.3.1. These are the fields it added after the first registry, one row each, in layer order.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-16"
  },
  {
   "from_sys": "00",
@@ -552,7 +588,8 @@
   "status": "built",
   "evidence": "State diffs use the `STT` prefix and mirror the variable they modify, with additional metadata.",
   "note": "The consumer is the state architecture (a doc module of 02); its file stem is not named in the registry.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-17"
  },
  {
   "from_sys": "00",
@@ -567,7 +604,8 @@
   "status": "proposed",
   "evidence": "Until Chief rules, `REL` stays a declared prefix with its one example.",
   "note": "The module architecture says 'synastry belongs to the relationship system'; no numbered system or doc is named for relationships. Existing relational fields: T1.SOCIAL.knowledge_map, T3.FUNC.relational_roles, T2.WOUND.relational_refs.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-26"
  },
  {
   "from_sys": "00",
@@ -582,7 +620,8 @@
   "status": "proposed",
   "evidence": "No variable ships without a Tag.",
   "note": "The module architecture's Variable Declaration Block (path, display_name, type, scale_class, display_range, constraint, default, source, behavior) has no tag field, so MOD.* variables can ship without one.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-02-27"
  },
  {
   "from_sys": "00",
@@ -642,7 +681,8 @@
   "status": "proposed",
   "evidence": "Every downstream system that touches a number references this SSOT as the authority on why that number exists.",
   "note": "The doc says every downstream system, but its scope line says 'the LEECHSEED character pipeline' and no setting doc is cited as consuming it. Ratify, or rule the claim down to the character system.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-07"
  },
  {
   "from_sys": "00",
@@ -657,7 +697,8 @@
   "status": "built",
   "evidence": "Coherence (no other fact contradicts it), Correspondence (the people act as the fact says).",
   "note": "Correspondence needs the people's behavior from the character system (02).",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-05"
  },
  {
   "from_sys": "00",
@@ -672,7 +713,8 @@
   "status": "built",
   "evidence": "The S1 to S12 layer fields, including S12 FUNCTION.",
   "note": "Pointer rows for 01 Narrative and 07 Style are missing (see proposed).",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-06"
  },
  {
   "from_sys": "00",
@@ -687,7 +729,8 @@
   "status": "proposed",
   "evidence": "Holds the cultural conditioning that shaped the character.",
   "note": "CULTURE's concept (language, religion, ethnic identity, diaspora status) is setting content. The scope names only character fields. The registry already has `setting_ref` for L7 fields.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-02"
  },
  {
   "from_sys": "00",
@@ -702,7 +745,8 @@
   "status": "proposed",
   "evidence": "Scene (a character), arc (a season), era (a faction or city over centuries)",
   "note": "A faction or city is a setting object, but the pattern cites no setting field. The change at era scale needs a place to be recorded.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-03"
  },
  {
   "from_sys": "00",
@@ -717,7 +761,8 @@
   "status": "built",
   "evidence": "Step 4: cite the S4, S6 or S8 entry",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-01"
  },
  {
   "from_sys": "00",
@@ -732,7 +777,8 @@
   "status": "proposed",
   "evidence": "The S1 to S12 layer fields, including S12 FUNCTION.",
   "note": "The Domain Prefixes table lists T1, T2, T3, T3X, DRV, FLG, AST, STT, META, REL and MOD; none for S layers. The Ownership Rule table uses S1 to S12 and P1 to P12 as layer codes.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-03-04"
  },
  {
   "from_sys": "00",
@@ -747,7 +793,8 @@
   "status": "proposed",
   "evidence": "Every downstream system that touches a number references this SSOT as the authority on why that number exists.",
   "note": "Same gap as for 03.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-12"
  },
  {
   "from_sys": "00",
@@ -762,7 +809,8 @@
   "status": "built",
   "evidence": "Logical Reasoning (the cause chain holds), Historical Method (each event has a source in canon).",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-09"
  },
  {
   "from_sys": "00",
@@ -777,7 +825,8 @@
   "status": "built",
   "evidence": "The world that runs. What happens.",
   "note": "The row quoted is the Fabula layer; the Foundation row reads 'Truth and Pattern. The ground everything else stands on.'",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-10"
  },
  {
   "from_sys": "00",
@@ -792,7 +841,8 @@
   "status": "built",
   "evidence": "The P1 to P12 layer fields, including P12 FUNCTION. The fabula owns the event ids.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-11"
  },
  {
   "from_sys": "00",
@@ -807,7 +857,8 @@
   "status": "proposed",
   "evidence": "Historical Method (each event has a source in canon).",
   "note": "The check needs a source field on every event. The variable registry says the fabula owns the event ids but names no source field.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-05"
  },
  {
   "from_sys": "00",
@@ -822,7 +873,8 @@
   "status": "proposed",
   "evidence": "PENDING means it is met at a defined narrative event.",
   "note": "A flag state tied to 'a defined narrative event' and 'story entry' needs an id to point at. The registry says the fabula owns the event ids; no flag field carries one.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-06"
  },
  {
   "from_sys": "00",
@@ -837,7 +889,8 @@
   "status": "parked",
   "evidence": "At the fabula tier the cycle moves the world forward.",
   "note": "Step names are provisional (the CDR proposed them, Chief has not ruled). 'The format a pattern entry takes when the sim (BOLO 101) consumes it' is an open item.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-04"
  },
  {
   "from_sys": "00",
@@ -852,7 +905,8 @@
   "status": "built",
   "evidence": "Structural constraint on all downstream story development",
   "note": "The 'downstream story development' system is not named; Plot (04) is assumed.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-01"
  },
  {
   "from_sys": "00",
@@ -867,7 +921,8 @@
   "status": "built",
   "evidence": "Arc design, `FLG.earned_judgement`",
   "note": "Several Feeds lines say 'arc design' or 'contextual for arc design'; Plot (04) is assumed to own arcs.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-02"
  },
  {
   "from_sys": "00",
@@ -882,7 +937,8 @@
   "status": "built",
   "evidence": "A reputation he can lose is a plot handle",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-03"
  },
  {
   "from_sys": "00",
@@ -897,7 +953,8 @@
   "status": "proposed",
   "evidence": "Bound storyform",
   "note": "The registry binds each character to a storyform but no doc in the Ownership table owns the storyform record. L12 'is fed from the storyform' and 'the storyform is locked, and a revision makes a new version'. Plot (04) is the likely owner.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-07"
  },
  {
   "from_sys": "00",
@@ -912,7 +969,8 @@
   "status": "proposed",
   "evidence": "The P1 to P12 layer fields, including P12 FUNCTION.",
   "note": "Same gap as 03: no prefix row for P layers.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-04-08"
  },
  {
   "from_sys": "00",
@@ -927,7 +985,8 @@
   "status": "built",
   "evidence": "A world claim fits the rules the world sets for itself.",
   "note": "The table lists Worldbuilding (05) last, out of numeric order. Example 1 also applies Coherence, Pragmatic and Correspondence to the OVEREXITOUT economic system.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-05-02"
  },
  {
   "from_sys": "00",
@@ -942,7 +1001,8 @@
   "status": "built",
   "evidence": "The worldbuilding fields.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-05-03"
  },
  {
   "from_sys": "00",
@@ -957,7 +1017,8 @@
   "status": "proposed",
   "evidence": "Holds the character's belief system and how it bends the growth vector.",
   "note": "No field name exists. The CDR may route this to 03 Setting instead of 05 Worldbuilding.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-05-01"
  },
  {
   "from_sys": "00",
@@ -987,7 +1048,8 @@
   "status": "built",
   "evidence": "Logical Reasoning (the conclusion follows from the premises), Pragmatic Theory (the premise produces the drama it claims).",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-06-01"
  },
  {
   "from_sys": "00",
@@ -1002,7 +1064,8 @@
   "status": "built",
   "evidence": "The theme fields and the argument record.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-06-02"
  },
  {
   "from_sys": "00",
@@ -1017,7 +1080,8 @@
   "status": "proposed",
   "evidence": "Each storytelling system makes one kind of claim. This table says which framework checks that claim.",
   "note": "The table has rows for 02, 03, 04, 05, 06 and 08 only. Style (07) has no row. Likely rows: Coherence (no passage breaks the voice rule), Correspondence (the voice matches the character's voice_sheet).",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-07-04"
  },
  {
   "from_sys": "00",
@@ -1032,7 +1096,8 @@
   "status": "proposed",
   "evidence": "For every other system it holds one pointer row, and the pointer never copies a field.",
   "note": "Texture and the voice_sheet are cited as consumers of L3 fields, so 07 touches the registry but has no row.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-07-05"
  },
  {
   "from_sys": "00",
@@ -1047,7 +1112,8 @@
   "status": "built",
   "evidence": "Contextual; Texture narrates the voice",
   "note": "Texture is assumed to belong to 07 Style. Other Feeds lines say 'behavioral texture' (L8 and L10 fields).",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-07-01"
  },
  {
   "from_sys": "00",
@@ -1077,7 +1143,8 @@
   "status": "proposed",
   "evidence": "Every downstream system that touches a number references this SSOT as the authority on why that number exists.",
   "note": "Time codes and story points are numbers, and the registry says Tracking owns them. Whether they take an SC class is not stated.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-08-06"
  },
  {
   "from_sys": "00",
@@ -1092,7 +1159,8 @@
   "status": "built",
   "evidence": "Correspondence (the record matches the text), Coherence (no record contradicts another).",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-08-04"
  },
  {
   "from_sys": "00",
@@ -1107,7 +1175,8 @@
   "status": "built",
   "evidence": "Time codes and story points.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-08-05"
  },
  {
   "from_sys": "00",
@@ -1122,7 +1191,8 @@
   "status": "proposed",
   "evidence": "A claim that survives it is checked. A claim that fails it stays marked open.",
   "note": "The source defines the states 'checked' and 'open' but no system holds a field for them. Tracking (08) is the nearest home; the CDR may route it to each system instead.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-08-02"
  },
  {
   "from_sys": "00",
@@ -1137,7 +1207,8 @@
   "status": "built",
   "evidence": "`FLG.kinship_collapse`, relational tracking",
   "note": "'Relational tracking' is not defined; Tracking (08) is assumed.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-08-01"
  },
  {
   "from_sys": "00",
@@ -1152,7 +1223,8 @@
   "status": "proposed",
   "evidence": "Human-readable when",
   "note": "Tracking owns 'Time codes and story points' (Ownership Rule), but STT.narrative_moment is a free-text 'human-readable when' with no time-code field. A state diff needs a machine key to the timeline.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-08-03"
  },
  {
   "from_sys": "00",
@@ -1167,7 +1239,8 @@
   "status": "built",
   "evidence": "Operations are the script.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-09-06"
  },
  {
   "from_sys": "00",
@@ -1182,7 +1255,8 @@
   "status": "parked",
   "evidence": "Module data is stored as additional YAML blocks within the character's `.md` file",
   "note": "Marked Phase 4B+. The target application is tooling, so 09 Operations is assumed as its home; the source does not name a system. Re-route if wrong.",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-09-04"
  },
  {
   "from_sys": "00",
@@ -1197,7 +1271,8 @@
   "status": "built",
   "evidence": "It is the SOP's four steps (BOLO 64: RECON, ORDER, EXECUTE, CONSOLIDATE) seen as a pattern.",
   "note": "",
-  "slice": "00"
+  "slice": "00",
+  "id": "IF-00-09-01"
  },
  {
   "from_sys": "01",
@@ -1212,7 +1287,8 @@
   "status": "built",
   "evidence": "The workspace's `stories:` filter and every doc's `applies_to` read from here.",
   "note": "Reaches every system's docs; recorded once to 00 (the field registry) rather than ten times.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-00-01-08"
  },
  {
   "from_sys": "01",
@@ -1227,7 +1303,8 @@
   "status": "proposed",
   "evidence": "`module_of: ssot_01_story_spine_comparative_tree` stamped.",
   "note": "Variable registry names every field (per the Touchstones register). `module_of`, `feeds:` and `applies_to` should be there; the source does not say they are.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-00-01-05"
  },
  {
   "from_sys": "01",
@@ -1242,7 +1319,8 @@
   "status": "proposed",
   "evidence": "every CRE/LIT source gets a spine address via the locked `feeds:` field",
   "note": "The variable registry names every field per the Touchstones register. `feeds:` is called locked here; the source does not say it is registered.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-00-01-06"
  },
  {
   "from_sys": "01",
@@ -1257,7 +1335,8 @@
   "status": "built",
   "evidence": "names every field, including `touchstone`.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-00-01-03"
  },
  {
   "from_sys": "01",
@@ -1287,7 +1366,8 @@
   "status": "built",
   "evidence": "none of these operations modify the natal record",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-29"
  },
  {
   "from_sys": "01",
@@ -1302,7 +1382,8 @@
   "status": "built",
   "evidence": "stored beside the slices, never inside them.",
   "note": "Same rule covers the setting slice; one entry per side would double it.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-30"
  },
  {
   "from_sys": "01",
@@ -1317,7 +1398,8 @@
   "status": "built",
   "evidence": "L6 theme + the L9 EROS bridge — the BLACK/ORANGE seam, stated as doctrine.",
   "note": "Also reaches 06 Theme (the L6 half of the address).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-31"
  },
  {
   "from_sys": "01",
@@ -1332,7 +1414,8 @@
   "status": "built",
   "evidence": "systemic — every spine level, every ladder rung, every 12-layer sheet, every plot element. No exceptions by design.",
   "note": "The evidence quote is P8's Address line; P9 and P10 say 'same coverage as P8'.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-32"
  },
  {
   "from_sys": "01",
@@ -1347,7 +1430,8 @@
   "status": "built",
   "evidence": "the parent has authority",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-33"
  },
  {
   "from_sys": "01",
@@ -1362,7 +1446,8 @@
   "status": "built",
   "evidence": "downstream of the spine, never in it.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-34"
  },
  {
   "from_sys": "01",
@@ -1377,7 +1462,8 @@
   "status": "built",
   "evidence": "map onto none of the twelve character layers and are declared out of scope for the stack",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-35"
  },
  {
   "from_sys": "01",
@@ -1392,7 +1478,8 @@
   "status": "built",
   "evidence": "character L12 `touchstone`",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-36"
  },
  {
   "from_sys": "01",
@@ -1407,7 +1494,8 @@
   "status": "built",
   "evidence": "It takes two (or more) filled schemas — character stack, setting slice — and reads them against each other",
   "note": "The proof run reads victoria-midnight.md layer values; the character system's own docs are not the cited source.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-01"
  },
  {
   "from_sys": "01",
@@ -1422,7 +1510,8 @@
   "status": "built",
   "evidence": "Relationship table row: two `character_id`s, mesh, composite.",
   "note": "to_doc is the astrology doc named in the dependencies; the character system is the owner. When the pair is the storyform's RS, the composite chart is the RS throughline's astrological body.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-02"
  },
  {
   "from_sys": "01",
@@ -1437,7 +1526,8 @@
   "status": "built",
   "evidence": "State diff on the character, keyed to the firing address.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-03"
  },
  {
   "from_sys": "01",
@@ -1452,7 +1542,8 @@
   "status": "parked",
   "evidence": "the character's L7 ORIGIN and L8 IMPRINT are the receiving surfaces.",
   "note": "C×G is not specced yet.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-24"
  },
  {
   "from_sys": "01",
@@ -1467,7 +1558,8 @@
   "status": "parked",
   "evidence": "read off the DCUS S9 ALLURE entry and Tori's Growth: Stop arc",
   "note": "Parked as ⏸ OXO genre reading (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-25"
  },
  {
   "from_sys": "01",
@@ -1482,7 +1574,8 @@
   "status": "built",
   "evidence": "G12 is fed independently from the storyform, exactly as L12, S12, P12, and T12 FUNCTION are, keyed by `storyform_id`.",
   "note": "The storyform itself is a spine instance (01); the id convention is the integration protocol's. Recorded to 02 for the id format.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-04"
  },
  {
   "from_sys": "01",
@@ -1497,7 +1590,8 @@
   "status": "built",
   "evidence": "Resolve line — the MC's Change/Steadfast progression",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-05"
  },
  {
   "from_sys": "01",
@@ -1512,7 +1606,8 @@
   "status": "built",
   "evidence": "a character may hold different roles across forms (MC in the parent, IC in a nested form)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-06"
  },
  {
   "from_sys": "01",
@@ -1527,7 +1622,8 @@
   "status": "built",
   "evidence": "the integration protocol already scopes `applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]`.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-07"
  },
  {
   "from_sys": "01",
@@ -1542,7 +1638,8 @@
   "status": "built",
   "evidence": "L12_FUNCTION carries `dramatica_archetype` · `mc_problem_element` (RULED 8/24)",
   "note": "Layer names here use underscores (`L12_FUNCTION`); other docs write 'L12 FUNCTION'.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-08"
  },
  {
   "from_sys": "01",
@@ -1557,7 +1654,8 @@
   "status": "built",
   "evidence": "focalization mode · focal character(s) · perceptual scope (whose view)",
   "note": "The source names no `character_id`; the reference is by name.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-09"
  },
  {
   "from_sys": "01",
@@ -1572,7 +1670,8 @@
   "status": "built",
   "evidence": "T12 is fed independently from the storyform, exactly as L12 FUNCTION, S12 FUNCTION, and P12 FUNCTION are, keyed by `storyform_id`.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-10"
  },
  {
   "from_sys": "01",
@@ -1587,7 +1686,8 @@
   "status": "built",
   "evidence": "Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.",
   "note": "Anna's S2 (thin) and A2 (GAP) stay here until her sheet exists.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-11"
  },
  {
   "from_sys": "01",
@@ -1602,7 +1702,8 @@
   "status": "parked",
   "evidence": "It also blocks the Tori×Anna collision proof.",
   "note": "Parked as ⏸ Anna sheet (phase 2). Also blocks the collision engine's first C×C run.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-26"
  },
  {
   "from_sys": "01",
@@ -1617,7 +1718,8 @@
   "status": "built",
   "evidence": "carries a Touchstone at L12.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-12"
  },
  {
   "from_sys": "01",
@@ -1632,7 +1734,8 @@
   "status": "built",
   "evidence": "character → L1–L12 · setting → S1–S12 · genre → G1–G12 · sexuality → the character layers (mostly L9 EROS)",
   "note": "TROPES pointer section for the character system is parked: ⏸ TROPES pointer sections (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-13"
  },
  {
   "from_sys": "01",
@@ -1647,7 +1750,8 @@
   "status": "built",
   "evidence": "Tori (OXO/DCUS): car crash, brother Jebb dies (Ariel is Tori's earlier name)",
   "note": "Keys character L5, theme R2.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-02-14"
  },
  {
   "from_sys": "01",
@@ -1722,7 +1826,8 @@
   "status": "built",
   "evidence": "stored beside the slices, never inside them.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-35"
  },
  {
   "from_sys": "01",
@@ -1737,7 +1842,8 @@
   "status": "built",
   "evidence": "every 12-layer sheet, every plot element. No exceptions by design.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-36"
  },
  {
   "from_sys": "01",
@@ -1752,7 +1858,8 @@
   "status": "built",
   "evidence": "never a spine level",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-37"
  },
  {
   "from_sys": "01",
@@ -1767,7 +1874,8 @@
   "status": "built",
   "evidence": "the scene cards' `touchstones:` field.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-38"
  },
  {
   "from_sys": "01",
@@ -1782,7 +1890,8 @@
   "status": "built",
   "evidence": "Lx against Sx straight down the twelve mirrored rows.",
   "note": "The proof surfaced a canon gap in S2 WEATHER (canon-thin) from this read.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-01"
  },
  {
   "from_sys": "01",
@@ -1797,7 +1906,8 @@
   "status": "built",
   "evidence": "the card gains a `collision:` line — which row(s) seeded the scene.",
   "note": "A scene not seeded by any row 'should justify itself'.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-02"
  },
  {
   "from_sys": "01",
@@ -1812,7 +1922,8 @@
   "status": "built",
   "evidence": "a situation = a setting state + social configuration **pinging** the static chart.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-03"
  },
  {
   "from_sys": "01",
@@ -1827,7 +1938,8 @@
   "status": "built",
   "evidence": "The world a genre promises is built inside the setting slice",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-04"
  },
  {
   "from_sys": "01",
@@ -1842,7 +1954,8 @@
   "status": "built",
   "evidence": "LANDED 2026-10-04 in ssot_03_setting_system.md §THE FREEDOM-AND-RESTRICTION CLAIM.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-05"
  },
  {
   "from_sys": "01",
@@ -1857,7 +1970,8 @@
   "status": "built",
   "evidence": "the sensorium promise (links texture T6, setting S3)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-06"
  },
  {
   "from_sys": "01",
@@ -1872,7 +1986,8 @@
   "status": "parked",
   "evidence": "read off the DCUS S9 ALLURE entry and Tori's Growth: Stop arc",
   "note": "Parked as ⏸ OXO genre reading (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-31"
  },
  {
   "from_sys": "01",
@@ -1887,7 +2002,8 @@
   "status": "built",
   "evidence": "the setting slice *narrates*: S5 SCAR and S10 UNDERSIDE read as level design",
   "note": "M10 line: 'S1 BODY is built, not described'.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-07"
  },
  {
   "from_sys": "01",
@@ -1902,7 +2018,8 @@
   "status": "built",
   "evidence": "Sourcebooks/gazetteers are printed setting slices",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-08"
  },
  {
   "from_sys": "01",
@@ -1917,7 +2034,8 @@
   "status": "built",
   "evidence": "Each channel changes three texture answers most.",
   "note": "Table points back at the texture system's T11 field; the scene card consumes T3/T4/T10 through `telling:`.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-09"
  },
  {
   "from_sys": "01",
@@ -1932,7 +2050,8 @@
   "status": "built",
   "evidence": "L2/L4 bridge; scene-card fuel.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-10"
  },
  {
   "from_sys": "01",
@@ -1947,7 +2066,8 @@
   "status": "built",
   "evidence": "(needs the setting slice's state fields); the ladder reserves its slot.",
   "note": "Delivered by the setting system the same session.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-11"
  },
  {
   "from_sys": "01",
@@ -1962,7 +2082,8 @@
   "status": "built",
   "evidence": "a place's state over time (Module 2 builds this)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-12"
  },
  {
   "from_sys": "01",
@@ -1977,7 +2098,8 @@
   "status": "built",
   "evidence": "S12 FUNCTION — a load-bearing place *embodies* a throughline's Domain",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-13"
  },
  {
   "from_sys": "01",
@@ -1992,7 +2114,8 @@
   "status": "built",
   "evidence": "scene cards (setting + state per scene)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-14"
  },
  {
   "from_sys": "01",
@@ -2007,7 +2130,8 @@
   "status": "built",
   "evidence": "the join tradition half-sees",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-15"
  },
  {
   "from_sys": "01",
@@ -2022,7 +2146,8 @@
   "status": "built",
   "evidence": "subject-matter shelves (not tree nodes) keyed to the setting schema.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-16"
  },
  {
   "from_sys": "01",
@@ -2037,7 +2162,8 @@
   "status": "built",
   "evidence": "the card gains a `telling:` line (T1+T2+T4 for that scene)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-17"
  },
  {
   "from_sys": "01",
@@ -2052,7 +2178,8 @@
   "status": "built",
   "evidence": "Already wired into the scene card's `duration:` field.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-18"
  },
  {
   "from_sys": "01",
@@ -2067,7 +2194,8 @@
   "status": "built",
   "evidence": "this is where Setting (Module 2) meets Texture.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-19"
  },
  {
   "from_sys": "01",
@@ -2082,7 +2210,8 @@
   "status": "built",
   "evidence": "the S8 HABIT layer renders iteratively",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-20"
  },
  {
   "from_sys": "01",
@@ -2097,7 +2226,8 @@
   "status": "built",
   "evidence": "telling: voice/level + focal character (T1+T2) · speed (T4) · register (T6) · t1_t2_gap",
   "note": "Wider than the layer doc's T1+T2+T4 line: adds register and the gap flag.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-21"
  },
  {
   "from_sys": "01",
@@ -2112,7 +2242,8 @@
   "status": "parked",
   "evidence": "the rename lattice, Skeeter Creek to Red Hills to DCUS, as S5 SCAR paratext",
   "note": "Parked as ⏸ OXO telling profile (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-32"
  },
  {
   "from_sys": "01",
@@ -2127,7 +2258,8 @@
   "status": "built",
   "evidence": "repetitive is trauma's signature, iterative is habit's, mirroring S8 HABIT",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-22"
  },
  {
   "from_sys": "01",
@@ -2142,7 +2274,8 @@
   "status": "built",
   "evidence": "Kept lines land on the entity sheets as `fantasy:` / `sexy:` / `aesthetic:` fields.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-23"
  },
  {
   "from_sys": "01",
@@ -2157,7 +2290,8 @@
   "status": "parked",
   "evidence": "Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.",
   "note": "The 7 hot rows come from the collision engine's Tori × DCUS table.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-33"
  },
  {
   "from_sys": "01",
@@ -2172,7 +2306,8 @@
   "status": "built",
   "evidence": "carries Touchstones on the scene card.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-24"
  },
  {
   "from_sys": "01",
@@ -2187,7 +2322,8 @@
   "status": "built",
   "evidence": "setting → S1–S12",
   "note": "TROPES pointer section parked: ⏸ TROPES pointer sections (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-03-25"
  },
  {
   "from_sys": "01",
@@ -2262,7 +2398,8 @@
   "status": "built",
   "evidence": "every 12-layer sheet, every plot element. No exceptions by design.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-23"
  },
  {
   "from_sys": "01",
@@ -2277,7 +2414,8 @@
   "status": "built",
   "evidence": "No turn, no scene — it's exposition wearing a costume.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-24"
  },
  {
   "from_sys": "01",
@@ -2292,7 +2430,8 @@
   "status": "built",
   "evidence": "plot_systems (below the spine's floor)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-25"
  },
  {
   "from_sys": "01",
@@ -2307,7 +2446,8 @@
   "status": "built",
   "evidence": "the storyform constrains what plot must accomplish; the events themselves are authored in plot_systems",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-26"
  },
  {
   "from_sys": "01",
@@ -2322,7 +2462,8 @@
   "status": "built",
   "evidence": "plot_systems (and the scene card) define when pings fire.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-01"
  },
  {
   "from_sys": "01",
@@ -2337,7 +2478,8 @@
   "status": "built",
   "evidence": "A genre's owed beats are discharged one by one on the PLOT CARD's P10 GENRE OBLIGATION line, not restated here.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-02"
  },
  {
   "from_sys": "01",
@@ -2352,7 +2494,8 @@
   "status": "built",
   "evidence": "The field sits on the plot card, and the scene card that inherits it, directly under P10 GENRE OBLIGATION.",
   "note": "Definition is built; the OXO trial is parked as '⏸ genre-load trial (phase 2)'.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-03"
  },
  {
   "from_sys": "01",
@@ -2367,7 +2510,8 @@
   "status": "built",
   "evidence": "The writer scores only units whose `genre_obligation` (P10) is filled",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-04"
  },
  {
   "from_sys": "01",
@@ -2382,7 +2526,8 @@
   "status": "parked",
   "evidence": "discharged at the scene level, per plot_systems' P10 ruling (ssot_04_plot_system.md, call 77-Z).",
   "note": "Parked as ⏸ cultcore conventions pass (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-14"
  },
  {
   "from_sys": "01",
@@ -2397,7 +2542,8 @@
   "status": "built",
   "evidence": "P5 · THE SETPIECE PRINCIPLE — plot_systems seed #1",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-05"
  },
  {
   "from_sys": "01",
@@ -2412,7 +2558,8 @@
   "status": "parked",
   "evidence": "extracted to the future plot_systems shelf via this record",
   "note": "OPEN line still reads 'wherever decision #8 puts the domain'; the domain now exists as 04, so check whether the tools landed.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-15"
  },
  {
   "from_sys": "01",
@@ -2427,7 +2574,8 @@
   "status": "proposed",
   "evidence": "paid off, never just teased.",
   "note": "A hook that must be paid off needs a ledger: hook type, container it closes, payoff address. The source has none. Texture's payoff ledger (T7) is the model; plot or tracking should hold the hook ledger.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-20"
  },
  {
   "from_sys": "01",
@@ -2442,7 +2590,8 @@
   "status": "proposed",
   "evidence": "every spine level, every ladder rung, every 12-layer sheet, every plot element.",
   "note": "The three-check pass lands lines only on entity sheets; no plot-card or scene-card field exists for them. Doctrine and schema disagree.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-21"
  },
  {
   "from_sys": "01",
@@ -2457,7 +2606,8 @@
   "status": "parked",
   "evidence": "The Movement↔Signpost mapping table is plot_systems work — flagged, not yet built.",
   "note": "The spine also flags this same table.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-16"
  },
  {
   "from_sys": "01",
@@ -2472,7 +2622,8 @@
   "status": "built",
   "evidence": "one eon, five eras in order, moving outward from Earth",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-06"
  },
  {
   "from_sys": "01",
@@ -2487,7 +2638,8 @@
   "status": "parked",
   "evidence": "loads onto the fabula in wave 2 (77-D)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-17"
  },
  {
   "from_sys": "01",
@@ -2502,7 +2654,8 @@
   "status": "parked",
   "evidence": "The Moon Severance and the AI Collapse wait for Chief to place them on the world clock.",
   "note": "Marked ⏸ fabula placements (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-18"
  },
  {
   "from_sys": "01",
@@ -2517,7 +2670,8 @@
   "status": "built",
   "evidence": "a fixed 4-act order per throughline (16 signposts across the form)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-07"
  },
  {
   "from_sys": "01",
@@ -2532,7 +2686,8 @@
   "status": "parked",
   "evidence": "Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-19"
  },
  {
   "from_sys": "01",
@@ -2547,7 +2702,8 @@
   "status": "built",
   "evidence": "The trope graph is the register's first consumer; nothing in it is rebuilt.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-04-08"
  },
  {
   "from_sys": "01",
@@ -2592,7 +2748,8 @@
   "status": "proposed",
   "evidence": "at first ensemble need (the Diaspora is the obvious candidate).",
   "note": "The group has to come from the worldbuilding catalog; the source names the Diaspora but no system or id.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-07"
  },
  {
   "from_sys": "01",
@@ -2607,7 +2764,8 @@
   "status": "proposed",
   "evidence": "What story-world does this genre promise to build, the genre-setting contract?",
   "note": "The source routes the promise to the setting slice only. The shared-world content (rules, institutions) lives in the worldbuilding catalog; G8 has no pointer there.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-08"
  },
  {
   "from_sys": "01",
@@ -2622,7 +2780,8 @@
   "status": "proposed",
   "evidence": "multiple IPs sharing substrate — world rules, entities, systems.",
   "note": "R8 says its test is canon integrity and points at `_CANON_NODES/` and the SSOT system, not at the worldbuilding catalog. The catalog (`WB-<TYPE>-<nnnn>`) is the shared substrate the rung describes.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-09"
  },
  {
   "from_sys": "01",
@@ -2637,7 +2796,8 @@
   "status": "built",
   "evidence": "each vignette tags the worldbuilding catalog entries it shows",
   "note": "The vignette table is empty, so the wire is specced but unexercised.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-01"
  },
  {
   "from_sys": "01",
@@ -2652,7 +2812,8 @@
   "status": "proposed",
   "evidence": "other stories may borrow it.",
   "note": "The PORTABLE ruling lives in a registry cell. The worldbuilding catalog has no field for portability, so the rule cannot be queried from the element.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-10"
  },
  {
   "from_sys": "01",
@@ -2667,7 +2828,8 @@
   "status": "proposed",
   "evidence": "episode titles, movement names, in-world documents.",
   "note": "T8 says paratext is a design surface including in-world documents; the worldbuilding catalog is where those documents would be listed.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-11"
  },
  {
   "from_sys": "01",
@@ -2682,7 +2844,8 @@
   "status": "parked",
   "evidence": "Six elements have no sheet yet: `⏸ OXO element sheets (phase 2)`.",
   "note": "The source does not file these under a system. They are classed as worldbuilding elements here by judgment. The Drop has a node file; the others have none.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-04"
  },
  {
   "from_sys": "01",
@@ -2697,7 +2860,8 @@
   "status": "parked",
   "evidence": "Sweep expansion queue: scene cards (the 7 hot rows) · the six movements · the Administration · the Diaspora · Bongobabe · the ladder rungs.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-05"
  },
  {
   "from_sys": "01",
@@ -2712,7 +2876,8 @@
   "status": "parked",
   "evidence": "ruled keep 9/15 in the worldbuilding catalog.",
   "note": "Parked as ⏸ S12 Star-Rating rule (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-05-06"
  },
  {
   "from_sys": "01",
@@ -2742,7 +2907,8 @@
   "status": "built",
   "evidence": "L6 theme + the L9 EROS bridge — the BLACK/ORANGE seam, stated as doctrine.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-06-11"
  },
  {
   "from_sys": "01",
@@ -2757,7 +2923,8 @@
   "status": "proposed",
   "evidence": "G4 ARGUMENT holds only the propositional binary",
   "note": "The theme system argues in rails R1–R4; the genre's core binary is a propositional argument of the same kind, but the source never names the theme system. A work whose G4 binary and theme rail disagree has no check.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-06-08"
  },
  {
   "from_sys": "01",
@@ -2772,7 +2939,8 @@
   "status": "proposed",
   "evidence": "an Issue/Counterpoint recurrence",
   "note": "Table lists the thread but not the owner; the theme system's rails R1–R4 are the natural source of the Issue/Counterpoint pairs.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-06-09"
  },
  {
   "from_sys": "01",
@@ -2787,7 +2955,8 @@
   "status": "proposed",
   "evidence": "Issue vs Counterpoint (the 64-level pair) argued through the throughline",
   "note": "The spine defines theme at L6 but does not name the theme system, which keys rails R1–R4.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-06-10"
  },
  {
   "from_sys": "01",
@@ -2802,7 +2971,8 @@
   "status": "built",
   "evidence": "theme → the four rails R1–R4 of the [theme system]",
   "note": "Theme null count is 1,182 because the rails are narrow.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-06-01"
  },
  {
   "from_sys": "01",
@@ -2847,7 +3017,8 @@
   "status": "built",
   "evidence": "as a viewer-discretion disclaimer at the front of every book (fantasy, not a how-to)",
   "note": "The prose style guide is the system that cites TS 1:1 per 'Where to go next'.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-07-10"
  },
  {
   "from_sys": "01",
@@ -2862,7 +3033,8 @@
   "status": "built",
   "evidence": "LANDED 2026-10-04 in ssot_07_1_prose_style.md §Meta-genre: the style bible.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-07-01"
  },
  {
   "from_sys": "01",
@@ -2877,7 +3049,8 @@
   "status": "proposed",
   "evidence": "every medium re-instruments the Ten Questions with its own machinery.",
   "note": "The source never names the style guides. The trope register keys style to 07.1 PROSE and 07.3 PAGES, so style guides are already channel-specific; the medium grammar should name which M each guide serves.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-07-08"
  },
  {
   "from_sys": "01",
@@ -2892,7 +3065,8 @@
   "status": "proposed",
   "evidence": "Count barrier words per 100 words of a passage",
   "note": "Texture defines the distance bands and the register vocabulary; the prose style guide (07.1) is where a writer would apply them. The source never names it.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-07-09"
  },
  {
   "from_sys": "01",
@@ -2907,7 +3081,8 @@
   "status": "built",
   "evidence": "(wave B: Language · Costume · Graphical · Lighting · Amazing Technicolor)",
   "note": "Style keys appear in the counts table but not in the keys paragraph.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-07-02"
  },
  {
   "from_sys": "01",
@@ -2967,7 +3142,8 @@
   "status": "built",
   "evidence": "A story is added here before any doc names it in `applies_to` or any tracking file is started for it.",
   "note": "Same sentence gates every system doc's `applies_to` (see next entry).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-19"
  },
  {
   "from_sys": "01",
@@ -2982,7 +3158,8 @@
   "status": "proposed",
   "evidence": "every output is keyed to a ladder address or span.",
   "note": "The source says outputs are time-keyed state diffs but never says where they are kept. The tracking system holds state per story; the diff log is its natural home.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-11"
  },
  {
   "from_sys": "01",
@@ -2997,7 +3174,8 @@
   "status": "proposed",
   "evidence": "contract_state:    a list, parallel to Axis 4 TIME; each entry holds from_unit",
   "note": "Axis 4 TIME is not defined in this doc. The tracking system's time axis is the likely owner; CDR to confirm. Source also does not say where `genre_load` per unit is stored.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-12"
  },
  {
   "from_sys": "01",
@@ -3012,7 +3190,8 @@
   "status": "proposed",
   "evidence": "T4 speed",
   "note": "The trope register lists `told_order` and `tempo` as parts of the tracking system; the medium table has no pointer to them. Evidence is the column heading; the need is inferred.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-13"
  },
  {
   "from_sys": "01",
@@ -3027,7 +3206,8 @@
   "status": "proposed",
   "evidence": "interlocked and leapfrogged across installments",
   "note": "See previous entry. Texture system already cross-links its payoff ledger to the tracking system §9A; hooks need the same.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-14"
  },
  {
   "from_sys": "01",
@@ -3042,7 +3222,8 @@
   "status": "proposed",
   "evidence": "ladder addresses locate *instances*.",
   "note": "The story registry cites a tracking time code `M2 · Q1 · S03 | bar.beat.tick`; the ladder address is `OXO.primary.M2.q3.s12`. Two notations for one job, neither source names the other.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-15"
  },
  {
   "from_sys": "01",
@@ -3057,7 +3238,8 @@
   "status": "proposed",
   "evidence": "it is a breach (meta-rule VII), and it invalidates downstream units that trusted it.",
   "note": "No field or log records a breach or the invalidated downstream units. Tracking is the system that holds state.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-16"
  },
  {
   "from_sys": "01",
@@ -3072,7 +3254,8 @@
   "status": "built",
   "evidence": "`id` (short, lowercase, used by tracking files and the `stories:` filter)",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-01"
  },
  {
   "from_sys": "01",
@@ -3087,7 +3270,8 @@
   "status": "built",
   "evidence": "time code optional (`M2 · Q1 · S03 | bar.beat.tick`, `ssot_08_tracking_system`)",
   "note": "Differs from the ladder's address `OXO.primary.M2.q3.s12`.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-02"
  },
  {
   "from_sys": "01",
@@ -3102,7 +3286,8 @@
   "status": "parked",
   "evidence": "Its Joplin storyform is not yet read into the fabula, the registry, or a tracking file.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-08"
  },
  {
   "from_sys": "01",
@@ -3117,7 +3302,8 @@
   "status": "proposed",
   "evidence": "T3 is the *telling's* rearrangement of it.",
   "note": "The trope register lists `told_order` as a part of the tracking system. Texture defines the baseline and anachronies but does not name the tracking field that records them.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-17"
  },
  {
   "from_sys": "01",
@@ -3132,7 +3318,8 @@
   "status": "built",
   "evidence": "which keys entries by `character_id` and `shifted_at` (the time code).",
   "note": "The ledger sits outside the twelve layers as a reader model. Texture writes owed/paid markers; tracking holds the trust-in-character entries.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-03"
  },
  {
   "from_sys": "01",
@@ -3147,7 +3334,8 @@
   "status": "built",
   "evidence": "The ledger uses the same time code to mark where a payoff is owed and where it is paid.",
   "note": "",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-04"
  },
  {
   "from_sys": "01",
@@ -3162,7 +3350,8 @@
   "status": "proposed",
   "evidence": "At what speed does the telling move, scene through ellipsis?",
   "note": "The trope register names `tempo` and `story_point` as parts of the tracking system; the texture slice does not name them. T4 and T12 are the producers.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-18"
  },
  {
   "from_sys": "01",
@@ -3177,7 +3366,8 @@
   "status": "built",
   "evidence": "world_clock · told_order · grid · story_point · cable · tempo.",
   "note": "This is the only place in the 01 slice that names the tracking system's parts.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-05"
  },
  {
   "from_sys": "01",
@@ -3192,7 +3382,8 @@
   "status": "parked",
   "evidence": "The tracking system's story points can carry a trope id",
   "note": "Marked ⏸ TROPES pointer sections (phase 2).",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-08-09"
  },
  {
   "from_sys": "01",
@@ -3222,7 +3413,8 @@
   "status": "built",
   "evidence": "ORANGE rows ride the subsidiary firewall — craft grammar only in this public doc",
   "note": "The firewall's owner is not named in the doc and the Ultrasin side is outside the 00–09 numbering; assigned to 09 Operations as the nearest fit. CDR may reassign.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-09-06"
  },
  {
   "from_sys": "01",
@@ -3237,7 +3429,8 @@
   "status": "built",
   "evidence": "It confirms each id exists in this register.",
   "note": "The script reads every system's docs. Assigned to 09 Operations as the tooling owner; the doc does not name one.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-09-07"
  },
  {
   "from_sys": "01",
@@ -3252,7 +3445,8 @@
   "status": "built",
   "evidence": "never page text: the repo is public",
   "note": "The public-repo rule's owner is not named; assigned to 09 Operations as the nearest fit.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-09-08"
  },
  {
   "from_sys": "01",
@@ -3267,7 +3461,8 @@
   "status": "built",
   "evidence": "rung: standard",
   "note": "Only the genre system and texture system docs carry `rung`; the other eleven 01 docs do not. Check against the standards ladder.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-09-01"
  },
  {
   "from_sys": "01",
@@ -3282,7 +3477,8 @@
   "status": "built",
   "evidence": "rung: standard",
   "note": "Only the genre system and texture system docs carry `rung`.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-09-02"
  },
  {
   "from_sys": "01",
@@ -3297,7 +3493,8 @@
   "status": "built",
   "evidence": "sets the rung of every document.",
   "note": "This doc's frontmatter carries no `rung`; only the genre and texture systems do.",
-  "slice": "01"
+  "slice": "01",
+  "id": "IF-01-09-03"
  },
  {
   "from_sys": "02",
@@ -3312,7 +3509,8 @@
   "status": "built",
   "evidence": "both on SC-12 (0–12) like `shame_index` (3.3.2)",
   "note": "to_sys and to_doc are inferred. The character docs use SC-12 but never say which doc defines it.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-00-02-18"
  },
  {
   "from_sys": "02",
@@ -3327,7 +3525,8 @@
   "status": "proposed",
   "evidence": "`shame_index` kept as a read alias for `exposure_shame`",
   "note": "Only `narrative_invariant` is said to sit in the variable registry. The other aliases and the 139-row alias table live in the character doc alone, so the registry can miss them.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-00-02-28"
  },
  {
   "from_sys": "02",
@@ -3342,7 +3541,8 @@
   "status": "built",
   "evidence": "the old name `narrative_invariant` is an alias in the variable registry.",
   "note": "Repeated in TD section 9, STEP1 check 2.7. VS 3.3.3 says the field is already renamed `touchstone`, including in the YAML example.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-00-02-19"
  },
  {
   "from_sys": "02",
@@ -3357,7 +3557,8 @@
   "status": "built",
   "evidence": "the Dramatica data governs. The astrological assignment is revised, not the storyform.",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-37"
  },
  {
   "from_sys": "02",
@@ -3372,7 +3573,8 @@
   "status": "built",
   "evidence": "Touchstones: read",
   "note": "A reading-order rule from the front door line (3.3.3, TS-B10).",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-38"
  },
  {
   "from_sys": "02",
@@ -3387,7 +3589,8 @@
   "status": "built",
   "evidence": "A revised storyform is a new version, not an edit (see above).",
   "note": "The cascade also reaches 04: Steps 5 and 6 recompute derived statistics and flags, which plot reads.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-39"
  },
  {
   "from_sys": "02",
@@ -3402,7 +3605,8 @@
   "status": "built",
   "evidence": "It is produced by extracting data from the locked Dramatica storyform",
   "note": "The storyform's lock state (storyform_status) is the upstream gate. The storyform itself is a 01 record.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-40"
  },
  {
   "from_sys": "02",
@@ -3417,7 +3621,8 @@
   "status": "built",
   "evidence": "L12 FUNCTION is fed independently from the storyform, keyed by `storyform_id`, exactly as P12 FUNCTION and S12 FUNCTION are.",
   "note": "Storyform records live in the 01 story registry (its Storyform column). The character doc cites Dramatica (BVX.0089) and the Dramatica integration module, never the registry by name.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-15"
  },
  {
   "from_sys": "02",
@@ -3432,7 +3637,8 @@
   "status": "built",
   "evidence": "A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition.",
   "note": "Pull list is _tools/tropes/data/domains/LAYERS.md (a tool file, not an SSOT doc).",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-16"
  },
  {
   "from_sys": "02",
@@ -3447,7 +3653,8 @@
   "status": "built",
   "evidence": "the bounded container, on `container`.",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-17"
  },
  {
   "from_sys": "02",
@@ -3462,7 +3669,8 @@
   "status": "built",
   "evidence": "are narrative invariants that correspond directly to flag logic",
   "note": "narrative invariants is the old name for Touchstones. The source does not cite TS ids for the three Vetoes, so the register link is implied, not stated.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-18"
  },
  {
   "from_sys": "02",
@@ -3477,7 +3685,8 @@
   "status": "proposed",
   "evidence": "Texture keeps how the voice is narrated.",
   "note": "The sentence splits the work (02 holds the voice facts, texture holds the narration) but gives no read rule from texture to voice_sheet.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-27"
  },
  {
   "from_sys": "02",
@@ -3492,7 +3701,8 @@
   "status": "proposed",
   "evidence": "touchstone: cost_and_meaning",
   "note": "The register cites Touchstones as TS n:m and the Dramatica Ingest template section 9 asks for 'TS ____', but the instance holds a slug. A query cannot join the character to the register's id.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-28"
  },
  {
   "from_sys": "02",
@@ -3507,7 +3717,8 @@
   "status": "built",
   "evidence": "Every storyform in the system carries the following metadata:",
   "note": "The doc defines the field set but does not say where the storyform records are kept; the 01 story registry has a Storyform column.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-19"
  },
  {
   "from_sys": "02",
@@ -3522,7 +3733,8 @@
   "status": "built",
   "evidence": "Genre casting and the Greimas and Bal actants are one taxonomy here.",
   "note": "Genre is a 01 slot (registry G1, genre system). The source does not say genre_role reads from it. The schema pass DROPPED `genre_setting_contract` (L7), so no other genre link exists on the character.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-20"
  },
  {
   "from_sys": "02",
@@ -3537,7 +3749,8 @@
   "status": "built",
   "evidence": "Cite a Touchstone as TS n:m.",
   "note": "Same line recurs in the Dramatica Ingest template section 9 and Step 1 check 2.7.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-21"
  },
  {
   "from_sys": "02",
@@ -3552,7 +3765,8 @@
   "status": "built",
   "evidence": "The pull list keys 430 tropes to sexuality · L9",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-22"
  },
  {
   "from_sys": "02",
@@ -3567,7 +3781,8 @@
   "status": "built",
   "evidence": "storyform_id: ____ # e.g. oxo_primary_v1",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-01-02-23"
  },
  {
   "from_sys": "02",
@@ -3597,7 +3812,8 @@
   "status": "built",
   "evidence": "where the setting has a matching S4, S6 or S8 entry, cite it through `setting_ref`.",
   "note": "One-way pointer: the character cites the setting. Tagged Static (sub-field) in the field tags table.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-03-01"
  },
  {
   "from_sys": "02",
@@ -3612,7 +3828,8 @@
   "status": "proposed",
   "evidence": "tech_level: 6",
   "note": "A world-level quantity sits as a per-character number with no source named. It could belong to 03 or 05. The source never says which.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-03-06"
  },
  {
   "from_sys": "02",
@@ -3627,7 +3844,8 @@
   "status": "proposed",
   "evidence": "`venue_comfort_and_practice` (three sources: MSX.20, MSX.29, PSY.12) sits ambiguously between L7 and L9.",
   "note": "setting_ref today attaches only to L5 triggers and L7 origin entries. The venue field is a place-comfort field with no setting pointer. Stale: the schema pass (VS) later merges venue_comfort_and_practice into venue_belonging, then into community_membership, while this doc still says 'not ruled this pass'.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-03-07"
  },
  {
   "from_sys": "02",
@@ -3672,7 +3890,8 @@
   "status": "built",
   "evidence": "It references Character Astrology variables (dominant planets per movement) but does not modify the static chart.",
   "note": "Movements are centered on the MC (Victoria Midnight for OVEREXITOUT). Whether 04 actually reads this table is unverified from this side.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-01"
  },
  {
   "from_sys": "02",
@@ -3687,7 +3906,8 @@
   "status": "built",
   "evidence": "It references the static chart (specifically the 12th House contents) to determine data persistence",
   "note": "The category belongs entirely to plot_systems; 02 only supplies the 12th House content.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-02"
  },
  {
   "from_sys": "02",
@@ -3702,7 +3922,8 @@
   "status": "built",
   "evidence": "The plot_systems domain defines when those transits fire.",
   "note": "Transit data lands in the character state overlay system (02). The firing schedule is owned by 04.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-03"
  },
  {
   "from_sys": "02",
@@ -3717,7 +3938,8 @@
   "status": "built",
   "evidence": "Story-structure data. Feeds plot_systems.",
   "note": "Duplicates the two AST entries; included so the CDR sees the mapping doc says the same.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-04"
  },
  {
   "from_sys": "02",
@@ -3732,7 +3954,8 @@
   "status": "built",
   "evidence": "Every state carries `origin_event`, an `event_id` in the fabula's registry, and one event may produce states in several characters.",
   "note": "`narrative_moment` and `movement` stay as readable tags beside it.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-05"
  },
  {
   "from_sys": "02",
@@ -3747,7 +3970,8 @@
   "status": "proposed",
   "evidence": "one event may produce states in several characters",
   "note": "Only the forward pointer exists (state.origin_event). The fabula has no stated way to ask which character states an event changed.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-14"
  },
  {
   "from_sys": "02",
@@ -3762,7 +3986,8 @@
   "status": "built",
   "evidence": "This metric directly feeds antagonist targeting logic and systemic response escalation.",
   "note": "The consumer is named only as antagonist targeting logic and systemic response. That may be 04 (plot) or 05 (worldbuilding, the system's response). Source does not say.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-06"
  },
  {
   "from_sys": "02",
@@ -3777,7 +4002,8 @@
   "status": "built",
   "evidence": "reveal, near-reveal and refusal scenes come from changes in the map",
   "note": "Lands on plot layer P7 REVEAL by implication; the source names scenes, not P7.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-07"
  },
  {
   "from_sys": "02",
@@ -3792,7 +4018,8 @@
   "status": "built",
   "evidence": "A reputation he can lose is a plot handle.",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-08"
  },
  {
   "from_sys": "02",
@@ -3807,7 +4034,8 @@
   "status": "proposed",
   "evidence": "PENDING — Condition will be met at a defined narrative event.",
   "note": "The flag states point at 'a defined narrative event' but the block stores no event_id. EARNED_JUDGEMENT reads only 'Fires at story climax'. Step 6 says 'Document flag state and narrative timing' without a field.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-15"
  },
  {
   "from_sys": "02",
@@ -3822,7 +4050,8 @@
   "status": "proposed",
   "evidence": "last_reranked: story_beat",
   "note": "Two character fields are typed story_beat, but the source never says what a story_beat id is. The state module already points to the fabula's event_id grammar for the same job.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-16"
  },
  {
   "from_sys": "02",
@@ -3837,7 +4066,8 @@
   "status": "parked",
   "evidence": "The `storyform_id` keying system supports them without schema changes.",
   "note": "Parked as future scaling. The 04 plot system already carries P12 FUNCTION keyed by storyform_id, so the plot side may already read it.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-12"
  },
  {
   "from_sys": "02",
@@ -3852,7 +4082,8 @@
   "status": "parked",
   "evidence": "These reports contain story-structure data relevant to plot_systems but not directly consumed by the character pipeline.",
   "note": "02 names the reports and their future use; nothing is extracted yet.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-04-13"
  },
  {
   "from_sys": "02",
@@ -3897,7 +4128,8 @@
   "status": "proposed",
   "evidence": "`system_exposure` holds when he met the system. L3 `civic_standing` holds the standing it gives him now.",
   "note": "Regimes, rankings and who may take what are world facts, but the fields are free text on the character. Only setting_ref (to 03) exists as a pointer; there is none to 05.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-05-04"
  },
  {
   "from_sys": "02",
@@ -3912,7 +4144,8 @@
   "status": "proposed",
   "evidence": "`community_membership` (the chosen community, its places, press and codes, and the rooms he belongs in, with each room's code)",
   "note": "Communities and their codes are world content. The schema pass merges `venue_belonging` into `community_membership`, so every venue and etiquette alias lands on this one field with no world-side home.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-05-05"
  },
  {
   "from_sys": "02",
@@ -3927,7 +4160,8 @@
   "status": "proposed",
   "evidence": "The MC Solution element, growth requirement, resistance index, and soul evolution archetype.",
   "note": "L11 holds the thematic answer the MC must reach, and no 02 doc mentions the 06 theme system. Theme needs to read it or the two will state the argument twice. The source names the Dramatica Theme Report only.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-06-02"
  },
  {
   "from_sys": "02",
@@ -3942,7 +4176,8 @@
   "status": "built",
   "evidence": "It was a house writing rule for narrating character queries, not a field on any layer",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-07-02"
  },
  {
   "from_sys": "02",
@@ -3957,7 +4192,8 @@
   "status": "built",
   "evidence": "A four-device toolkit — withhold, fragment, bound, interrupt — governs how any L9-driven scene is narrated",
   "note": "A prose rule stored in the character doc. The 07 side should list it.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-07-03"
  },
  {
   "from_sys": "02",
@@ -3972,7 +4208,8 @@
   "status": "built",
   "evidence": "so one idea keeps one name (07.2 rule 3.1)",
   "note": "The rule may sit in the 07.2a writing guide or 07.2b marking doc rather than 07.2; source cites '07.2 rule 3.1' only.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-07-04"
  },
  {
   "from_sys": "02",
@@ -3987,7 +4224,8 @@
   "status": "built",
   "evidence": "state as a narration rule for any L9-driven scene, no new field.",
   "note": "Same rule as the VS Core Methodology entry; the synthesis is its derivation record.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-07-05"
  },
  {
   "from_sys": "02",
@@ -4002,7 +4240,8 @@
   "status": "proposed",
   "evidence": "It never stores a derived value as a state diff.",
   "note": "The tag table is read by the state module (02). 08 defines story points and ramps but no source says they obey the tags. Without that, a story point could edit a Static field.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-08-11"
  },
  {
   "from_sys": "02",
@@ -4017,7 +4256,8 @@
   "status": "built",
   "evidence": "the time code (`M2 · Q1 · S04 | 012.3.2`) is the structured temporal key that `told_at` carries",
   "note": "",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-08-01"
  },
  {
   "from_sys": "02",
@@ -4032,7 +4272,8 @@
   "status": "built",
   "evidence": "`mc_distance_temporal` is computed from time codes against her position, not typed in by hand.",
   "note": "`mc_distance_narrative` stays authored by hand; only the temporal distance crosses.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-08-02"
  },
  {
   "from_sys": "02",
@@ -4047,7 +4288,8 @@
   "status": "built",
   "evidence": "Those lighter, single-field changes are story points, and they do not live in this document",
   "note": "Rule 6 is amended so a moment may carry many story points but one checkpoint per character.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-08-03"
  },
  {
   "from_sys": "02",
@@ -4062,7 +4304,8 @@
   "status": "proposed",
   "evidence": "`state_history`|Array of relationship state changes|`[{moment: m1a, status: active}, {moment: m1b_post_crash, status: severed}]`",
   "note": "Character states moved to origin_event plus time codes in v1.1 and v1.2. The relationship record example still keys changes by movement tags (m1a, m1b_post_crash), so the two can drift. The source says the relationship record 'should show a status change at the same narrative moment'.",
-  "slice": "02"
+  "slice": "02",
+  "id": "IF-02-08-09"
  },
  {
   "from_sys": "02",
@@ -4122,7 +4365,8 @@
   "status": "built",
   "evidence": "a breach means the scene is wrong, not the Touchstone",
   "note": "DCUS S12 uses the Institutional Invariants (Ecclesial Laws) as its set.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-39"
  },
  {
   "from_sys": "03",
@@ -4137,7 +4381,8 @@
   "status": "built",
   "evidence": "A scene (ladder R2) plays on some span of setting scale exactly as it sits at some ladder address.",
   "note": "The SCENE CARD example address still uses the legacy q-scheme (`q3.s12`); the canonical form is the ssot_08 time code.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-26"
  },
  {
   "from_sys": "03",
@@ -4152,7 +4397,8 @@
   "status": "built",
   "evidence": "the collision engine: L-layer x S-layer",
   "note": "Plot card P8 `collision_row` is the same field.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-27"
  },
  {
   "from_sys": "03",
@@ -4167,7 +4413,8 @@
   "status": "built",
   "evidence": "S12 fed independently from the storyform exactly as L12 FUNCTION is fed from the Dramatica ingest",
   "note": "The storyform itself lives in 02's Dramatica protocol; the spine is 01. to_sys 01 chosen for the spine.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-28"
  },
  {
   "from_sys": "03",
@@ -4182,7 +4429,8 @@
   "status": "built",
   "evidence": "(per-scene override of the Telling Profile — Module 3)",
   "note": "to_doc inferred: 'Telling Profile' appears in texture_system, texture_layer, medium_grammars and genre_system; 03 does not name the home doc.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-29"
  },
  {
   "from_sys": "03",
@@ -4197,7 +4445,8 @@
   "status": "built",
   "evidence": "Every TV Tropes trope in the **setting** domain is keyed to S1–S12 in the",
   "note": "Quote is the sentence stem before the link.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-30"
  },
  {
   "from_sys": "03",
@@ -4212,7 +4461,8 @@
   "status": "proposed",
   "evidence": "BVX.0630's own frontmatter states it supersedes the five-lineage tool, a sharpening, not a new concept.",
   "note": "03 adopted it; the synthesis says the genre system is out of that ruling's scope. Two systems may now hold different primary tools.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-03-34"
  },
  {
   "from_sys": "03",
@@ -4257,7 +4507,8 @@
   "status": "built",
   "evidence": "one query engine should be able to read a checkpoint for a character or a place with the same code",
   "note": "Rule 7 (backward diffs) is written here and mirrored back into 02 by the same ruling.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-03-09"
  },
  {
   "from_sys": "03",
@@ -4272,7 +4523,8 @@
   "status": "built",
   "evidence": "for places and, by the same reasoning, for characters",
   "note": "The source says 02 carries the mirrored line.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-03-02"
  },
  {
   "from_sys": "03",
@@ -4287,7 +4539,8 @@
   "status": "parked",
   "evidence": "so Tori's Growth: Stop has a concrete thing to stop believing in",
   "note": "Growth is an eight-dynamics value from the storyform (OXO: Stop).",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-03-05"
  },
  {
   "from_sys": "03",
@@ -4302,7 +4555,8 @@
   "status": "built",
   "evidence": "a ruler or protagonist tied to the place's condition; a direct or metonymic link seeds the collision engine",
   "note": "`character_id` is read from the LEECHSEED character system; its format is not stated in 03.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-03-03"
  },
  {
   "from_sys": "03",
@@ -4317,7 +4571,8 @@
   "status": "built",
   "evidence": "The character form is in `ssot_02_character_systems_vertical_slice.md`, \"Flag Trigger Conditions\".",
   "note": "Setting flags reuse the character flag grammar.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-03-04"
  },
  {
   "from_sys": "03",
@@ -4332,7 +4587,8 @@
   "status": "proposed",
   "evidence": "on each belonging tier — `{criterion: a testable test for belonging, cost: what a member gives up, witness: one named member who pays it}`",
   "note": "S12 `link` names a `character_id`; S8 `witness` names a member in free text. A shared id keeps the cast and the place in step.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-03-08"
  },
  {
   "from_sys": "03",
@@ -4362,7 +4618,8 @@
   "status": "built",
   "evidence": "\"the setting doc stays the one authoring surface\" for the Skeeter Creek → Red Hills → DCUS lattice",
   "note": "Fabula OPEN call 4 (ruled 2026-09-24) is the source of the rule.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-25"
  },
  {
   "from_sys": "03",
@@ -4377,7 +4634,8 @@
   "status": "built",
   "evidence": "`null` only for Category 5 progression overlays, which have no single event.",
   "note": "Same field the character state record uses.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-01"
  },
  {
   "from_sys": "03",
@@ -4392,7 +4650,8 @@
   "status": "built",
   "evidence": "`movement: \"backstory\"` below carries the ruled tag for exactly this case",
   "note": "Fabula v0.1.4 states the same tag from its side.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-02"
  },
  {
   "from_sys": "03",
@@ -4407,7 +4666,8 @@
   "status": "built",
   "evidence": "THE WORLD CLOCK, which already reads the lattice as three eras and explicitly declines to re-author them",
   "note": "The fabula reads the eras from 03 and does not author them.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-03"
  },
  {
   "from_sys": "03",
@@ -4422,7 +4682,8 @@
   "status": "parked",
   "evidence": "All three values below carry `⏸ DCUS rename lattice fill pass (phase 2)` until the fabula pass enters them in its registry.",
   "note": "The fabula world clock names these ids in eras 1 and 2 but has no event records for them.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-15"
  },
  {
   "from_sys": "03",
@@ -4437,7 +4698,8 @@
   "status": "built",
   "evidence": "Every event, including a rename, is an `event_id` in the fabula's registry",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-04"
  },
  {
   "from_sys": "03",
@@ -4452,7 +4714,8 @@
   "status": "built",
   "evidence": "a state diff can modify any field (`binding_principle`, `government`, `economy_tier`, `border_seam_rating`, `one_secret`)",
   "note": "Internal to 03 except that `origin_event` points into the fabula registry.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-05"
  },
  {
   "from_sys": "03",
@@ -4467,7 +4730,8 @@
   "status": "proposed",
   "evidence": "State diffs for a place are produced by five categories of narrative event",
   "note": "The source lists five categories but the fabula event record has no field to tag an event with one, so 03 cannot read from the event which layers it moves.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-18"
  },
  {
   "from_sys": "03",
@@ -4482,7 +4746,8 @@
   "status": "parked",
   "evidence": "give the slice a Current-Status field with M2–M4 already dated and named",
   "note": "The movements map lives in the trope graph and plot doc; a ledger date would also need the 08 time code.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-16"
  },
  {
   "from_sys": "03",
@@ -4497,7 +4762,8 @@
   "status": "parked",
   "evidence": "since Movement 3's forensic mode needs a stated seam between the old fabric and the Feed-linked retrofit",
   "note": "Item 7 (S10 tiers) is done; item 8 (rated border) is parked. The plot-side reader of the M3 reveal is not stated.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-17"
  },
  {
   "from_sys": "03",
@@ -4512,7 +4778,8 @@
   "status": "built",
   "evidence": "The card is the working notation for plot_systems when it opens; until then it documents any scene worth pinning.",
   "note": "The plot doc states the same overlap from its side and rules the two cards siblings sharing one `address` key.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-06"
  },
  {
   "from_sys": "03",
@@ -4527,7 +4794,8 @@
   "status": "built",
   "evidence": "A sequence may carry an optional `test_phase` (contract, contest, or consequence) when its role in a test is in doubt",
   "note": "The field is owned by the plot doc (P4) and borrowed by the setting doc's SEQUENCE CARD.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-07"
  },
  {
   "from_sys": "03",
@@ -4542,7 +4810,8 @@
   "status": "built",
   "evidence": "The plot doc lets P1 pair an entry unit with its exit unit.",
   "note": "Both halves cite CRE.08 (Ekman). Setting stages the entry; plot pairs the exit.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-08"
  },
  {
   "from_sys": "03",
@@ -4557,7 +4826,8 @@
   "status": "built",
   "evidence": "P10 records which obligatory beat fires. P10 does not record this claim. This field does.",
   "note": "A division of labor more than a data crossing. Kept as DATA because the claim and the P10 beat are meant to be read together.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-09"
  },
  {
   "from_sys": "03",
@@ -4572,7 +4842,8 @@
   "status": "proposed",
   "evidence": "a hidden fact is now easier to find. Pair it with a scene that shows how it surfaced.",
   "note": "The flag tells the writer to pair a scene but never names the plot field. P7 and the fabula HANDSHAKE P7 row are where that reveal is recorded.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-19"
  },
  {
   "from_sys": "03",
@@ -4587,7 +4858,8 @@
   "status": "proposed",
   "evidence": "Write the new state diff at this checkpoint. The flag reads PENDING until the date arrives.",
   "note": "The fabula is world time and records only past events; no field holds a state fixed in advance. Setting and plot would each re-derive it.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-20"
  },
  {
   "from_sys": "03",
@@ -4602,7 +4874,8 @@
   "status": "proposed",
   "evidence": "Every scene set here deploys one or two Axis 3 `function mode` values on purpose.",
   "note": "Both docs key to `storyform_id` independently; nothing says P12 must name the Domain the place's S12 holds.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-21"
  },
  {
   "from_sys": "03",
@@ -4662,7 +4935,8 @@
   "status": "built",
   "evidence": "citation:       each actor's rule · who knows better   (theme: the citation test + knowledge gradient, 07, 10/4)",
   "note": "RENUMBER LEFTOVER: the source says theme is `07`; theme is now 06. Version history 1.6.0 also says '07 v1.2.0'.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-06-01"
  },
  {
   "from_sys": "03",
@@ -4677,7 +4951,8 @@
   "status": "built",
   "evidence": "marking every point the audience is shown this state on the grid",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-08-01"
  },
  {
   "from_sys": "03",
@@ -4692,7 +4967,8 @@
   "status": "built",
   "evidence": "Single-field changes are **story points** and do not live in this document",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-08-02"
  },
  {
   "from_sys": "03",
@@ -4707,7 +4983,8 @@
   "status": "built",
   "evidence": "the time code and the two rulers it dates against live in",
   "note": "Quote is the sentence stem; the link text breaks the line.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-08-03"
  },
  {
   "from_sys": "04",
@@ -4722,7 +4999,8 @@
   "status": "built",
   "evidence": "Dramatica = the narrative structure engine... It does not produce plot events... those belong to plot_systems",
   "note": "OXO's story-level Driver is Action (spine L3); a unit's local driver may differ, but P2 rolled up to R5 must agree.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-27"
  },
  {
   "from_sys": "04",
@@ -4737,7 +5015,8 @@
   "status": "built",
   "evidence": "**Touchstones:** read",
   "note": "The plot doc states only 'read first'; the 03 scene card adds the breach rule. Quote is the stem before the link.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-28"
  },
  {
   "from_sys": "04",
@@ -4752,7 +5031,8 @@
   "status": "built",
   "evidence": "a writer or a tool moves from node to node only inside the signpost order the storyform already fixed",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-29"
  },
  {
   "from_sys": "04",
@@ -4767,7 +5047,8 @@
   "status": "built",
   "evidence": "The story list lives in the",
   "note": "Quote is a sentence stem; the link text breaks the line. `stories:` is marked a reserved field in the template.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-09"
  },
  {
   "from_sys": "04",
@@ -4782,7 +5063,8 @@
   "status": "built",
   "evidence": "Plot units do not invent a second hierarchy: they occupy the containers already ruled in",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-10"
  },
  {
   "from_sys": "04",
@@ -4797,7 +5079,8 @@
   "status": "built",
   "evidence": "Which character × setting (or character × character) row fires to produce this unit's friction?",
   "note": "A row pairs an L-layer (02) with an S-layer (03).",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-11"
  },
  {
   "from_sys": "04",
@@ -4812,7 +5095,8 @@
   "status": "built",
   "evidence": "P10 reads **cultcore** (\"cultcore — the genre of the outsiders,\" Chief's Apple Notes 2026, RULED on BOLO 91) at the story level",
   "note": "Per-movement values are parked: `⏸ OXO genre reading (phase 2)`.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-12"
  },
  {
   "from_sys": "04",
@@ -4827,7 +5111,8 @@
   "status": "built",
   "evidence": "Quoted from PS-R.rails.md, which extracted these verbatim from canonical SSOT.",
   "note": "Sources named: ssot_01_story_spine_comparative_tree, ssot_02_dramatica_integration_protocol, ssot_04_plot_system.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-13"
  },
  {
   "from_sys": "04",
@@ -4842,7 +5127,8 @@
   "status": "proposed",
   "evidence": "**1,034 keyed** to one of the 135 nodes and **644 stayed unkeyed**",
   "note": "03 says every setting-domain trope is keyed to S1-S12 in the trope register; this graph keys the same fetch to nodes and never mentions the register. One trope can carry two independent keys with no joint view.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-01-04-22"
  },
  {
   "from_sys": "04",
@@ -4872,7 +5158,8 @@
   "status": "built",
   "evidence": "a layer needs an origin moment when its baseline crystallizes from one datable (even if fuzzily dated) fabula event",
   "note": "The fabula sets the rule; 02's layer authors must supply the event.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-04-18"
  },
  {
   "from_sys": "04",
@@ -4887,7 +5174,8 @@
   "status": "built",
   "evidence": "every state record that traces to it carries the same string in `origin_event`",
   "note": "Patch landed in ssot_02_character_state_architecture v1.1.0 on 2026-09-24.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-04-09"
  },
  {
   "from_sys": "04",
@@ -4902,7 +5190,8 @@
   "status": "proposed",
   "evidence": "gets her own fabula node, separate from Colson",
   "note": "The fabula gives the copy her own origin event, but names no character-system record to receive it. The five Colson events feed L7 only; L8, L9, L10 stay author-pending.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-04-17"
  },
  {
   "from_sys": "04",
@@ -4917,7 +5206,8 @@
   "status": "built",
   "evidence": "P12 is fed independently from the storyform, exactly as L12 FUNCTION and S12 FUNCTION are, keyed by `storyform_id`.",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-04-10"
  },
  {
   "from_sys": "04",
@@ -4932,7 +5222,8 @@
   "status": "built",
   "evidence": "| Act | Movements | MC (Tori) | OS (the Factions) | IC (Anna Colson) | RS (Tori ↔ Anna Colson) |",
   "note": "The graph names characters; no character ids are used.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-02-04-11"
  },
  {
   "from_sys": "04",
@@ -4947,7 +5238,8 @@
   "status": "built",
   "evidence": "the world clock cross-references these eras rather than re-authoring them as its own filled event records",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-26"
  },
  {
   "from_sys": "04",
@@ -4962,7 +5254,8 @@
   "status": "built",
   "evidence": "place (03, the setting slice, owns where)",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-27"
  },
  {
   "from_sys": "04",
@@ -4977,7 +5270,8 @@
   "status": "built",
   "evidence": "the founding name sanded to 'Red Hills' a century before the Bishops arrived",
   "note": "No calendar date exists for any of the three transitions; the fabula does not invent a year.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-10"
  },
  {
   "from_sys": "04",
@@ -4992,7 +5286,8 @@
   "status": "built",
   "evidence": "S7 FOUNDING, S11 VECTOR, and S5 SCAR stay the authoring surface for what happened to the place, this doc stays the authoring surface for when.",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-11"
  },
  {
   "from_sys": "04",
@@ -5007,7 +5302,8 @@
   "status": "built",
   "evidence": "location: \"<place, an S-doc address if known>\"  # Bal 2017: ch.3 §5",
   "note": "Most records say 'unspecified in canon'; the field is wired but barely used.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-12"
  },
  {
   "from_sys": "04",
@@ -5022,7 +5318,8 @@
   "status": "built",
   "evidence": "Four fields already live on the SCENE CARD (`address`, the value-turn line spanning P3 to P5, `collision`, and part of `threads`).",
   "note": "Merging the cards was ruled out (OPEN 3).",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-13"
  },
  {
   "from_sys": "04",
@@ -5037,7 +5334,8 @@
   "status": "built",
   "evidence": "Use it at sequence grain on the SEQUENCE CARD in the setting doc.",
   "note": "",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-14"
  },
  {
   "from_sys": "04",
@@ -5052,7 +5350,8 @@
   "status": "proposed",
   "evidence": "P12 filled is what makes a plot unit load-bearing to the argument, not merely eventful.",
   "note": "Same word in two docs: 03's LOAD_BEARING flag keys on S12 `storyform_id`; plot P12 keys on `storyform_id`; nothing links the two.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-22"
  },
  {
   "from_sys": "04",
@@ -5067,7 +5366,8 @@
   "status": "proposed",
   "evidence": "A value enters a unit charged one way, a turn forces it to a different charge, and the unit closes changed.",
   "note": "The plot doc reads setting only through P8 collision rows; S9 `promise` is the natural value-in for a place-driven turn.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-23"
  },
  {
   "from_sys": "04",
@@ -5082,7 +5382,8 @@
   "status": "proposed",
   "evidence": "a pattern this wave's 135-node taxonomy is simply too coarse to place",
   "note": "The 644 unkeyed tropes include patterns with no book node; 03's TROPES section says most setting tropes land on S1 BODY, which the 135 nodes have no place layer for. The 292 low-confidence ones are held for a second keying pass.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-03-04-24"
  },
  {
   "from_sys": "04",
@@ -5097,7 +5398,8 @@
   "status": "proposed",
   "evidence": "Ids: `backstory_south_pole_third_impact` · `backstory_ocean_third_impact` (tracking file `world:`).",
   "note": "The source cites one catalog id (WB-INS-0004) and a `world:` tracking file; no other event names a 05 entry, though several are world-scale entities.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-05-02"
  },
  {
   "from_sys": "04",
@@ -5127,7 +5429,8 @@
   "status": "proposed",
   "evidence": "Plot is the argument dramatized in time",
   "note": "03's SCENE CARD carries `citation` and `transcript` from the theme system; the PLOT CARD carries none, though plot is the argument in time.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-06-03"
  },
  {
   "from_sys": "04",
@@ -5142,7 +5445,8 @@
   "status": "built",
   "evidence": "carries `movement: \"backstory\"` instead of an `Mn`, and its `event_id` reads `backstory_<slug>`",
   "note": "The fabula doc never cites 08 directly; the tag is mirrored from the state architecture's §2 reference.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-08-01"
  },
  {
   "from_sys": "04",
@@ -5157,7 +5461,8 @@
   "status": "proposed",
   "evidence": "this doc's working answer is movement-relative dating — `M1`, `M2`, `M3`… with no calendar layer under it yet",
   "note": "CONTRADICTION inside the doc: v0.2.0 adds calendar years (2199, 2099) while 'Fuzzy and unknown dates' still says no calendar layer exists. 08 owns the time code and rulers; the fabula never says it reads them.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-08-12"
  },
  {
   "from_sys": "04",
@@ -5172,7 +5477,8 @@
   "status": "built",
   "evidence": "that scheme now reads as legacy",
   "note": "Quote is a sentence stem; the full note names 08 §4's time code as canonical.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-08-02"
  },
  {
   "from_sys": "04",
@@ -5187,7 +5493,8 @@
   "status": "proposed",
   "evidence": "`order_told`, `order_happened`, `duration_mode`, `frequency_mode`, `anachrony`",
   "note": "P11 defines `order_told` as 'this unit's position in the telling' with no coordinate system, while 08 owns the time code and the plot card's own address already converts to it.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-08-13"
  },
  {
   "from_sys": "04",
@@ -5202,7 +5509,8 @@
   "status": "built",
   "evidence": "only the ~135 nodes draw as grid cells, the ~1,700 tropes live inside each node's capped tooltip",
   "note": "09 chosen as tooling; the doc names no system number for the view.",
-  "slice": "03-04"
+  "slice": "03-04",
+  "id": "IF-04-09-01"
  },
  {
   "from_sys": "05",
@@ -5217,7 +5525,8 @@
   "status": "built",
   "evidence": "read [the Touchstones register]",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-05-14"
  },
  {
   "from_sys": "05",
@@ -5232,7 +5541,8 @@
   "status": "proposed",
   "evidence": "WB-CUS-0001 The Star-Rating (ritual life)",
   "note": "05 seeds Sync Cult (BEL, held) and files the Star-Rating as ritual life. 06 §THE HANDSHAKE checks every live Touchstone against its rails; 05 has no equivalent row check and its 16 tests never name a Touchstone.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-05-15"
  },
  {
   "from_sys": "05",
@@ -5247,7 +5557,8 @@
   "status": "built",
   "evidence": "Registry lists stories; an entry's places and eras tell which stories it touches.",
   "note": "Registry version cited is v0.1.7.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-05-02"
  },
  {
   "from_sys": "05",
@@ -5262,7 +5573,8 @@
   "status": "built",
   "evidence": "-> trope layer; never restate the trope",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-05-03"
  },
  {
   "from_sys": "05",
@@ -5277,7 +5589,8 @@
   "status": "proposed",
   "evidence": "World-economy, nation-state, locality [BVX.1161]",
   "note": "Two different things carry the name 'scale ladder'. 08 §3 and §4 use 01's R1 to R8. No doc maps one to the other.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-05-12"
  },
  {
   "from_sys": "05",
@@ -5292,7 +5605,8 @@
   "status": "proposed",
   "evidence": "is a genre choice, not a world area, so it goes to the departure dial",
   "note": "05 routes genre to the dial but names no 01 field that supplies it.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-05-13"
  },
  {
   "from_sys": "05",
@@ -5307,7 +5621,8 @@
   "status": "built",
   "evidence": "A person's outfit is that person's record.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-05-06"
  },
  {
   "from_sys": "05",
@@ -5322,7 +5637,8 @@
   "status": "built",
   "evidence": "A character knows only history relevant to that person; a peasant does not recite royal genealogies. Owner: 02.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-05-07"
  },
  {
   "from_sys": "05",
@@ -5337,7 +5653,8 @@
   "status": "built",
   "evidence": "For each group, its members (02), its customs, dress, and building styles (catalog), and its faction card (03).",
   "note": "The 02 field that holds the group pointer is never named; the entry schema only says 'people point -> 02'.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-05-01"
  },
  {
   "from_sys": "05",
@@ -5352,7 +5669,8 @@
   "status": "built",
   "evidence": "A person belongs to a group in the catalog; the person's outfit and habits stay in 02.",
   "note": "Table direction reads 'catalog is pointed at by 02'.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-05-02"
  },
  {
   "from_sys": "05",
@@ -5367,7 +5685,8 @@
   "status": "built",
   "evidence": "Quinn Bishop has no 02 node yet: the L02 link check reports it as owed by 02, not a 09 failure.",
   "note": "'not a 09 failure' is an old number: the catalog was 09 before the 10/5 renumber, so it means 05.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-05-03"
  },
  {
   "from_sys": "05",
@@ -5382,7 +5701,8 @@
   "status": "built",
   "evidence": "The catalog group entry (GRP) links to the card and copies nothing.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-04"
  },
  {
   "from_sys": "05",
@@ -5397,7 +5717,8 @@
   "status": "built",
   "evidence": "one specific building's fabric stays in 03 S1.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-05"
  },
  {
   "from_sys": "05",
@@ -5412,7 +5733,8 @@
   "status": "built",
   "evidence": "Every economy line for a place names a resource the place supplies",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-06"
  },
  {
   "from_sys": "05",
@@ -5427,7 +5749,8 @@
   "status": "built",
   "evidence": "Tone claims follow 03's tone-to-mechanic sub-note.",
   "note": "The fill rule line reads 'same shape as 03's ruled fill rule, BVX.0349'.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-07"
  },
  {
   "from_sys": "05",
@@ -5442,7 +5765,8 @@
   "status": "built",
   "evidence": "-> 03 setting slice(s) where it is found",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-01"
  },
  {
   "from_sys": "05",
@@ -5457,7 +5781,8 @@
   "status": "built",
   "evidence": "For each place, the catalog entries found there (from `places`) beside the place's 03 slice header.",
   "note": "Table row calls this 'two-way pointers'; the 03 side is recorded by the 03 extractor.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-02"
  },
  {
   "from_sys": "05",
@@ -5472,7 +5797,8 @@
   "status": "built",
   "evidence": "Every ruin (S5) has a dated fall on the timeline",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-05-03"
  },
  {
   "from_sys": "05",
@@ -5487,7 +5813,8 @@
   "status": "built",
   "evidence": "Every institution entry names the rupture or need it fills",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-05-04"
  },
  {
   "from_sys": "05",
@@ -5502,7 +5829,8 @@
   "status": "built",
   "evidence": "A fact enters canon for a story's binding clause only when a scene narrates it.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-05-05"
  },
  {
   "from_sys": "05",
@@ -5517,7 +5845,8 @@
   "status": "built",
   "evidence": "rename them \"Fabula view\" and \"Told view\" in the plot workspace",
   "note": "05 vocabulary (system / layer / lens / view) gates 04's tool labels; the rename is recorded as done in the 0.2.0 history row.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-05-06"
  },
  {
   "from_sys": "05",
@@ -5532,7 +5861,8 @@
   "status": "built",
   "evidence": "-> 04: the event that brought it into being",
   "note": "Event ids with the `backstory_` prefix follow 08 §2; the proof table marks some origins `inferred`.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-05-01"
  },
  {
   "from_sys": "05",
@@ -5547,7 +5877,8 @@
   "status": "proposed",
   "evidence": "provisional = not yet narrated; never a glyph",
   "note": "CT9 needs the narrating scene to be known, but the entry schema carries no narrated_in pointer. A 08 time code or a 04 scene id would close the gap.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-05-03"
  },
  {
   "from_sys": "05",
@@ -5562,7 +5893,8 @@
   "status": "built",
   "evidence": "Mechanics, environment, and narrative point at the same theme and tone. Answer lives in 06.",
   "note": "The relation table writes 'lens asks 07', an old number for Theme. 06 has no matching text: it never says it answers CT11.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-06-01"
  },
  {
   "from_sys": "05",
@@ -5577,7 +5909,8 @@
   "status": "proposed",
   "evidence": "WB-TEC-0001 The Feed (DCUS)",
   "note": "06 THE MOTIFS names 'the Feed' with no catalog id; the catalog holds the same thing under WB-TEC-0001. No `motif` pointer exists on the entry schema.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-06-03"
  },
  {
   "from_sys": "05",
@@ -5592,7 +5925,8 @@
   "status": "proposed",
   "evidence": "type-specific short fields (see each type); keep bounded",
   "note": "06 THE CIVILIZATION GAUGES says each civilization's four steps live on its catalog entry. 05's schema has no gauge field, no type's Holds line names one, and 'What it shows' omits the gauges.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-06-04"
  },
  {
   "from_sys": "05",
@@ -5622,7 +5956,8 @@
   "status": "built",
   "evidence": "How a world thing is written up follows 07.1.",
   "note": "The same row lists direction 'none'. 05's front matter also lacks 07.2a's header fields (reader, doc_type, owner, state, reviewed).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-03"
  },
  {
   "from_sys": "05",
@@ -5637,7 +5972,8 @@
   "status": "proposed",
   "evidence": "A script reads 02, 03, 04, 08, the catalog, and the trope layer, then writes one page.",
   "note": "05 names no page style for its read-only page. 07.3 rules every Command page; the doc itself carries three Mermaid diagrams, which 07.2 rule 5.5 and 07.3 also govern.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-05"
  },
  {
   "from_sys": "05",
@@ -5652,7 +5988,8 @@
   "status": "proposed",
   "evidence": "untranslated words carry belonging",
   "note": "07.1 G6 says the world's own terms are used, never explained, but names no source list. The LNG type is that list; it is not wired to 07.1.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-01"
  },
  {
   "from_sys": "05",
@@ -5667,7 +6004,8 @@
   "status": "built",
   "evidence": "Change is a record in 08. The catalog points to it and never copies it.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-08"
  },
  {
   "from_sys": "05",
@@ -5682,7 +6020,8 @@
   "status": "built",
   "evidence": "uses the 08 time code",
   "note": "Proof-table eras are movement-level ('M2 → M4', 'backstory → M4'), not full 08 codes like `M2 · Q1 · S04 | 012.3.2`.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-01"
  },
  {
   "from_sys": "05",
@@ -5697,7 +6036,8 @@
   "status": "built",
   "evidence": "-> 08: story points and checkpoints; never copy state here",
   "note": "08 §5 lists subject kinds as character | trait | trope | place | relationship only; the six catalog kinds are not in it. See the proposed entry below.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-02"
  },
  {
   "from_sys": "05",
@@ -5712,7 +6052,8 @@
   "status": "built",
   "evidence": "reads 02 nodes, 04 fabula events, 08 tracking story points and the trope register",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-03"
  },
  {
   "from_sys": "05",
@@ -5727,7 +6068,8 @@
   "status": "proposed",
   "evidence": "Each place or group has a founding endpoint and a current endpoint",
   "note": "CT5 needs two dated endpoints per entry; the schema has one `era` list. 08 checkpoints are the store built for that.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-04"
  },
  {
   "from_sys": "05",
@@ -5742,7 +6084,8 @@
   "status": "proposed",
   "evidence": "A subject need not have story points yet.",
   "note": "05 already mints `<kind>:<slug>` ids; 08 §5 `subject.kind` does not accept them. One side must widen: 08 enum or 05's id kinds. Also note 08 §5 `kind: trope` is the only catalog-adjacent kind it has.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-05"
  },
  {
   "from_sys": "05",
@@ -5772,7 +6115,8 @@
   "status": "built",
   "evidence": "Checked 9/29 by the CDR: owns procedures and registries, no world-fact type. It runs the compiler as a procedure.",
   "note": "The row says direction 'none'. OPEN 9 reads '05 and 06 own no world-fact type': old numbers for Operations and Style.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-09-02"
  },
  {
   "from_sys": "05",
@@ -5787,7 +6131,8 @@
   "status": "built",
   "evidence": "recorded in SOP §5.",
   "note": "06's own 1.0 bar is a different list (Method, Worked instance, theme read on 7 cards, handshake, OPEN).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-09-03"
  },
  {
   "from_sys": "05",
@@ -5802,7 +6147,8 @@
   "status": "built",
   "evidence": "The compiler builds `_INDEX.md` and the world view from the files.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-09-01"
  },
  {
   "from_sys": "06",
@@ -5832,7 +6178,8 @@
   "status": "built",
   "evidence": "no scene may write past what a live Touchstone locks",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-12"
  },
  {
   "from_sys": "06",
@@ -5847,7 +6194,8 @@
   "status": "built",
   "evidence": "a new Touchstone gets this same row check against every rail (R1–R4) the day it goes live",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-13"
  },
  {
   "from_sys": "06",
@@ -5862,7 +6210,8 @@
   "status": "built",
   "evidence": "Each debate is the storyform's own locked Issue vs. Counterpoint pair for that throughline",
   "note": "oxo-storyform is a canon node; filed here under 01 by judgment (it may belong to 04).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-02"
  },
  {
   "from_sys": "06",
@@ -5877,7 +6226,8 @@
   "status": "built",
   "evidence": "TS 1:1 (soft)",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-03"
  },
  {
   "from_sys": "06",
@@ -5892,7 +6242,8 @@
   "status": "built",
   "evidence": "`cost_and_meaning` sits in both.",
   "note": "Neither the 06 body nor 05-08 defines the field; it appears only here.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-04"
  },
  {
   "from_sys": "06",
@@ -5907,7 +6258,8 @@
   "status": "built",
   "evidence": "fed to the texture system",
   "note": "No texture field is named for the intake.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-05"
  },
  {
   "from_sys": "06",
@@ -5922,7 +6274,8 @@
   "status": "built",
   "evidence": "sets `keys.theme` to the one rail (R1 to R4) whose debate the trope argues",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-06"
  },
  {
   "from_sys": "06",
@@ -5937,7 +6290,8 @@
   "status": "built",
   "evidence": "A layer that needs a known pattern pulls from its list; the register holds each trope's one-line definition.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-06-07"
  },
  {
   "from_sys": "06",
@@ -5967,7 +6321,8 @@
   "status": "built",
   "evidence": "The controlling idea describes what the system **allows**, never what each person **is**.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-06-05"
  },
  {
   "from_sys": "06",
@@ -5982,7 +6337,8 @@
   "status": "built",
   "evidence": "pick images already present in the setting/character material",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-06-01"
  },
  {
   "from_sys": "06",
@@ -5997,7 +6353,8 @@
   "status": "proposed",
   "evidence": "The card names who in the scene knows better.",
   "note": "The gradient needs a character's knowledge. 05's CT15 also owns 'what a character knows' in 02. No 02 field is named.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-06-03"
  },
  {
   "from_sys": "06",
@@ -6012,7 +6369,8 @@
   "status": "proposed",
   "evidence": "Theme runs as four debates at once, one per point of view",
   "note": "Rails are keyed to people by name only. 08 uses track ids like `character:victoria_midnight`; 06 uses none.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-06-04"
  },
  {
   "from_sys": "06",
@@ -6027,7 +6385,8 @@
   "status": "built",
   "evidence": "Three tests carry \"Nobody has to be evil when everyone does their job\" down to the single scene.",
   "note": "06 says the scene card lives in ssot_03 and says plot card for the value fields: check whether these are one card or two. Text says 'two new fields' but lists three tests plus a rider.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-06-02"
  },
  {
   "from_sys": "06",
@@ -6042,7 +6401,8 @@
   "status": "built",
   "evidence": "A theme read on all 7 cards",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-06-03"
  },
  {
   "from_sys": "06",
@@ -6057,7 +6417,8 @@
   "status": "built",
   "evidence": "pick images already present in the setting/character material",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-06-04"
  },
  {
   "from_sys": "06",
@@ -6072,7 +6433,8 @@
   "status": "built",
   "evidence": "every scene's value turn (the plot card's value-in/value-out fields) names one of the four steps",
   "note": "The declare-the-debate rule is in THE RAILS: 'Every scene declares which debate it tests'.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-06-06"
  },
  {
   "from_sys": "06",
@@ -6087,7 +6449,8 @@
   "status": "built",
   "evidence": "World scenes (the factions, DCUS) also read Fairness, since the world's debate runs Equity → Inequity",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-06-07"
  },
  {
   "from_sys": "06",
@@ -6102,7 +6465,8 @@
   "status": "built",
   "evidence": "the plot card's value fields (P3 · P5 · P9) read from these rows.",
   "note": "06 names the plot card but never '04' or 'Plot'. Elsewhere it says value in/out is 'P3 · P5' only, so P9's role here is unclear (08 §7 calls P9 `stakes_delta`).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-06-01"
  },
  {
   "from_sys": "06",
@@ -6117,7 +6481,8 @@
   "status": "built",
   "evidence": "the plot card's value in/out (P3 · P5) name a step.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-06-02"
  },
  {
   "from_sys": "06",
@@ -6132,7 +6497,8 @@
   "status": "proposed",
   "evidence": "Tori's scenes read Freedom.",
   "note": "One scene can read Freedom, Fairness and a civilization gauge. A step alone ('Control') is ambiguous across three scales. No plot-card field for the gauge is named.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-06-04"
  },
  {
   "from_sys": "06",
@@ -6147,7 +6513,8 @@
   "status": "proposed",
   "evidence": "Freedom always in reach and never taken, until the Stop",
   "note": "The motif depends on one named event; 06 gives it no event id or time code.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-06-05"
  },
  {
   "from_sys": "06",
@@ -6162,7 +6529,8 @@
   "status": "built",
   "evidence": "The rule lives here; each civilization's four steps live on its catalog entry",
   "note": "The text goes on: '(05), and the world view shows them'. 05's entry schema has no gauge field and its world view does not list gauges. Source ids WB-GRP-0004 to 0007 are not in 05's seven filled entries.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-06-02"
  },
  {
   "from_sys": "06",
@@ -6177,7 +6545,8 @@
   "status": "proposed",
   "evidence": "The system watching and scoring you, always on: the norm made visible",
   "note": "05's proof table has WB-TEC-0001 The Feed (DCUS). 06 does not cite it.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-06-05"
  },
  {
   "from_sys": "06",
@@ -6192,7 +6561,8 @@
   "status": "proposed",
   "evidence": "Each one is a face of the controlling idea: a system where ordinary people doing their jobs adds up to evil",
   "note": "05 says 'Answer lives in 06' but 06 defines no CT11 answer or field.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-06-06"
  },
  {
   "from_sys": "06",
@@ -6207,7 +6577,8 @@
   "status": "built",
   "evidence": "TS 1:1's own container lives outside the book (a front-of-book disclaimer, per its refinement), not inside the scene",
   "note": "07.1 carries the verbatim line (ruled 10/4). 06 front matter lacks 07.2a's header fields (reader, doc_type, owner, state, reviewed).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-04"
  },
  {
   "from_sys": "06",
@@ -6222,7 +6593,8 @@
   "status": "proposed",
   "evidence": "A scene that needs a hidden evil motive is arguing a different idea; rewrite it or mark it as the exception.",
   "note": "Possible clash: a narrator who states the rule a character followed breaks 07.1. The two docs never meet.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-06"
  },
  {
   "from_sys": "06",
@@ -6237,7 +6609,8 @@
   "status": "proposed",
   "evidence": "Recurring images that carry the theme without anyone saying it (Tomashevsky, Greimas isotopy)",
   "note": "07.1 states this rule and cites 06 THE MOTIFS. 06 never names 07.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-02"
  },
  {
   "from_sys": "06",
@@ -6252,7 +6625,8 @@
   "status": "proposed",
   "evidence": "Each appearance moves the Freedom scale.",
   "note": "08 §5 says the theme doc owns the motif ids. 06 names its three motifs by title and mints no id. 06 never mentions 08.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-08-02"
  },
  {
   "from_sys": "06",
@@ -6267,7 +6641,8 @@
   "status": "proposed",
   "evidence": "Every scene moves freedom up or down this scale",
   "note": "08 §5 `subject.kind` has no theme or gauge kind. 08 §8 automation lanes ('a trait's value, tension') is the natural fit.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-08-03"
  },
  {
   "from_sys": "06",
@@ -6282,7 +6657,8 @@
   "status": "proposed",
   "evidence": "every debate has scenes arguing each side, not just the winning one",
   "note": "The test needs a countable per-scene record. 06 holds none and names no 08 store.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-08-04"
  },
  {
   "from_sys": "06",
@@ -6297,7 +6673,8 @@
   "status": "proposed",
   "evidence": "Anna stays a question (cog, believer or mask), not an answer.",
   "note": "08 §9A models exactly 'what the reader believes about a character'. 06 never names it.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-08-05"
  },
  {
   "from_sys": "06",
@@ -6312,7 +6689,8 @@
   "status": "proposed",
   "evidence": "Every gate Chief set for 1.0, checked:",
   "note": "05 says the 1.0 bar is ruled into SOP §5 (Shape · Shelf · Proof · Ruled · Wired · Store). 06's own bar is another list; reconcile.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-09-03"
  },
  {
   "from_sys": "07",
@@ -6327,7 +6705,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "Not checked in this slice.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-00-07-03"
  },
  {
   "from_sys": "07",
@@ -6342,7 +6721,8 @@
   "status": "built",
   "evidence": "The script reads every `==term==` with its section heading and the sentence it sits in, dedupes by term, and writes:",
   "note": "00 is a guess for where the BVX-LEARN library sits; 09 (tools) is the other candidate.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-00-07-02"
  },
  {
   "from_sys": "07",
@@ -6357,7 +6737,8 @@
   "status": "built",
   "evidence": "It is the floor under every Telling Profile, not a replacement for one.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-11"
  },
  {
   "from_sys": "07",
@@ -6372,7 +6753,8 @@
   "status": "built",
   "evidence": "the Telling Profile applies verbatim",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-12"
  },
  {
   "from_sys": "07",
@@ -6387,7 +6769,8 @@
   "status": "built",
   "evidence": "a draft with no ruled T1 has not cleared this guide, whatever its sentences read like.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-13"
  },
  {
   "from_sys": "07",
@@ -6402,7 +6785,8 @@
   "status": "built",
   "evidence": "the container lives outside the story, as a viewer-discretion disclaimer at the front of every book",
   "note": "The disclaimer wording was ruled 10/4 (Chief: 'B recommendation').",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-14"
  },
  {
   "from_sys": "07",
@@ -6417,7 +6801,8 @@
   "status": "built",
   "evidence": "The rules a story can never break are cited **Touchstone(s)**, as **TS 1:3**",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-15"
  },
  {
   "from_sys": "07",
@@ -6432,7 +6817,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "Not checked in this slice.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-16"
  },
  {
   "from_sys": "07",
@@ -6447,7 +6833,8 @@
   "status": "built",
   "evidence": "T1 WHO SPEAKS separates four decisions that craft talk collapses into one",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-03"
  },
  {
   "from_sys": "07",
@@ -6462,7 +6849,8 @@
   "status": "built",
   "evidence": "A scene's distance setting is recorded on its telling line (T6), not invented fresh each time.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-04"
  },
  {
   "from_sys": "07",
@@ -6477,7 +6865,8 @@
   "status": "built",
   "evidence": "sexuality is aesthetic, not genre — woven into the narrative's bloodstream",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-05"
  },
  {
   "from_sys": "07",
@@ -6492,7 +6881,8 @@
   "status": "built",
   "evidence": "Its G3 conventions, proposed in the genre system and RULED 2026-09-29, are the worked instance for any future cultcore IP's prose",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-06"
  },
  {
   "from_sys": "07",
@@ -6507,7 +6897,8 @@
   "status": "built",
   "evidence": "This guide is the Command's style bible.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-07-07"
  },
  {
   "from_sys": "07",
@@ -6537,7 +6928,8 @@
   "status": "built",
   "evidence": "narration never states a character's motive outright.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-07-06"
  },
  {
   "from_sys": "07",
@@ -6552,7 +6944,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "Not checked in this slice.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-07-07"
  },
  {
   "from_sys": "07",
@@ -6567,7 +6960,8 @@
   "status": "built",
   "evidence": "The character's L5 WOUND and L6 DRIVE set the motive; the page shows only its effects.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-07-01"
  },
  {
   "from_sys": "07",
@@ -6582,7 +6976,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "Not checked in this slice.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-07-02"
  },
  {
   "from_sys": "07",
@@ -6597,7 +6992,8 @@
   "status": "built",
   "evidence": "description is T4's pause/stretch machinery meeting setting's sensory layer",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-07-01"
  },
  {
   "from_sys": "07",
@@ -6612,7 +7008,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "Not checked in this slice.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-07-02"
  },
  {
   "from_sys": "07",
@@ -6627,7 +7024,8 @@
   "status": "proposed",
   "evidence": "internal fixed, one focal character per scene",
   "note": "The focalization check (check item 2) needs a per-scene focal id. 06 files the scene card in ssot_03; this may belong to 03.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-07-01"
  },
  {
   "from_sys": "07",
@@ -6657,7 +7055,8 @@
   "status": "proposed",
   "evidence": "A detail earns its place by pointing at theme or distinctiveness — the rest is plumbing, not appeal",
   "note": "05 CT8 and B3 cite the same Kennedy source (BVX.0349); neither doc names the other.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-06"
  },
  {
   "from_sys": "07",
@@ -6672,7 +7071,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "The doc's front matter lacks reader, doc_type, owner, state and reviewed (07.2a asks every new or reviewed document to add them).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-04"
  },
  {
   "from_sys": "07",
@@ -6687,7 +7087,8 @@
   "status": "proposed",
   "evidence": "Every Command page is dense with the CK3 hover-term pattern: every system term is hoverable",
   "note": "05's world view is a Command page; 07.3 never names it.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-07"
  },
  {
   "from_sys": "07",
@@ -6702,7 +7103,8 @@
   "status": "proposed",
   "evidence": "the world's own terms are used, never explained",
   "note": "05's LNG type says 'untranslated words carry belonging'. 07.2 rule 3.1 (define on first use) is for docs; rule 3.3 sends story prose to 07.1.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-07-02"
  },
  {
   "from_sys": "07",
@@ -6717,7 +7119,8 @@
   "status": "proposed",
   "evidence": "A line that says why a character acts, in the narrator's own voice, fails this guide.",
   "note": "Mirror of the 06 entry; 07.1 never names theme tests.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-07"
  },
  {
   "from_sys": "07",
@@ -6732,7 +7135,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "The doc's front matter lacks reader, doc_type, owner, state and reviewed (07.2a asks every new or reviewed document to add them).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-05"
  },
  {
   "from_sys": "07",
@@ -6747,7 +7151,8 @@
   "status": "built",
   "evidence": "sensory detail routes through the story's own motifs when it touches theme",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-01"
  },
  {
   "from_sys": "07",
@@ -6762,7 +7167,8 @@
   "status": "proposed",
   "evidence": "so the scenes inside stay free of it.",
   "note": "06 THE HANDSHAKE relies on this container but 07.1 never names the handshake.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-07-03"
  },
  {
   "from_sys": "07",
@@ -6777,7 +7183,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "The doc's front matter lacks reader, doc_type, owner, state and reviewed (07.2a asks every new or reviewed document to add them).",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-08-04"
  },
  {
   "from_sys": "07",
@@ -6792,7 +7199,8 @@
   "status": "proposed",
   "evidence": "plain hover fills a fixed Info View strip; the nested tooltip opens on click or Space",
   "note": "The ruling cites BOLO 79. 08 §9 names BOLO 79 as the story workspace whose shell is 08's arrangement view.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-08-05"
  },
  {
   "from_sys": "07",
@@ -6807,7 +7215,8 @@
   "status": "built",
   "evidence": "measured for prose as beats per 1,000 words",
   "note": "Rule text: a draft's duration pattern is checked against its own planned tempo curve before it counts as done.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-08-01"
  },
  {
   "from_sys": "07",
@@ -6822,7 +7231,8 @@
   "status": "proposed",
   "evidence": "does the draft's measured tempo match its planned curve, scene by scene?",
   "note": "08 §7 measures by counting beats against words, but 07.1 sets no convention for marking beats in prose.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-08-02"
  },
  {
   "from_sys": "07",
@@ -6837,7 +7247,8 @@
   "status": "built",
   "evidence": "per the Command's own standing rule (CLAUDE.md, SOP §7)",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-06"
  },
  {
   "from_sys": "07",
@@ -6852,7 +7263,8 @@
   "status": "built",
   "evidence": "SOP §7 stays the authority for replies (it says so itself, in the line added for this BOLO).",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-07"
  },
  {
   "from_sys": "07",
@@ -6867,7 +7279,8 @@
   "status": "built",
   "evidence": "20 words is the check the scripts run",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-08"
  },
  {
   "from_sys": "07",
@@ -6882,7 +7295,8 @@
   "status": "built",
   "evidence": "the SOI (reviewed in three passes, 46 entries rewritten), the sit rep page and the DOPE SHEETs",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-09"
  },
  {
   "from_sys": "07",
@@ -6897,7 +7311,8 @@
   "status": "built",
   "evidence": "Every SSOT document keeps one frame",
   "note": "Not checked in this slice.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-10"
  },
  {
   "from_sys": "07",
@@ -6912,7 +7327,8 @@
   "status": "built",
   "evidence": "Every sit rep — and its siblings, DOPE SHEET N and the SOI — republishes as a dashboard page to one standing URL",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-11"
  },
  {
   "from_sys": "07",
@@ -6927,7 +7343,8 @@
   "status": "built",
   "evidence": "Chief locked each one by teach-back between 2026-09-30 and 2026-10-03",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-01"
  },
  {
   "from_sys": "07",
@@ -6942,7 +7359,8 @@
   "status": "built",
   "evidence": "the eight components in order: YAML frontmatter, H1 title, Table of Contents, Purpose, Core Methodology, Implementation, Examples, Version History",
   "note": "The template name still carries 'ssot_09_operations' (old number). The template's fixed eight parts differ from 07.2a's body-by-type rule; Chief decides when the five header fields join it.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-02"
  },
  {
   "from_sys": "07",
@@ -6957,7 +7375,8 @@
   "status": "built",
   "evidence": "the pasted-in Goon Room protocol split out to 09_OPERATIONS.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-03"
  },
  {
   "from_sys": "07",
@@ -6972,7 +7391,8 @@
   "status": "built",
   "evidence": "stays in `09_OPERATIONS` — it is not moved or duplicated here.",
   "note": "The file is named ssot_00_ but sits in 09_OPERATIONS; the 0.1.0 history row says 'the foundation link to 00_EPISTEMOLOGY'. The link in the body points to ../09_OPERATIONS/.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-09-04"
  },
  {
   "from_sys": "08",
@@ -6987,7 +7407,8 @@
   "status": "built",
   "evidence": "The grid belongs to the tracking system, not the scale ladder.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-08-20"
  },
  {
   "from_sys": "08",
@@ -7002,7 +7423,8 @@
   "status": "built",
   "evidence": "the grid is the clock the ladder's containers sit on",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-08-06"
  },
  {
   "from_sys": "08",
@@ -7017,7 +7439,8 @@
   "status": "built",
   "evidence": "A trope is a track of `kind: trope`; its story points use the trope's `id` as `subject.id`.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-08-07"
  },
  {
   "from_sys": "08",
@@ -7032,7 +7455,8 @@
   "status": "parked",
   "evidence": "⏸ trope-graph act map (phase 2). The trope register owns it.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-01-08-10"
  },
  {
   "from_sys": "08",
@@ -7047,7 +7471,8 @@
   "status": "built",
   "evidence": "Rule 6 of the character state doc (one state per narrative moment) is too heavy for tick-level tracking",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-08-10"
  },
  {
   "from_sys": "08",
@@ -7062,7 +7487,8 @@
   "status": "built",
   "evidence": "`told_at` and `mc_distance_temporal` now read time codes from this document",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-08-04"
  },
  {
   "from_sys": "08",
@@ -7077,7 +7503,8 @@
   "status": "built",
   "evidence": "full states at fabula events — what the character, place, or story world doc already builds",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-08-05"
  },
  {
   "from_sys": "08",
@@ -7092,7 +7519,8 @@
   "status": "built",
   "evidence": "e.g. L5_WOUND.value, or a trope_id's status",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-08-06"
  },
  {
   "from_sys": "08",
@@ -7107,7 +7535,8 @@
   "status": "built",
   "evidence": "`disclosure` marks what the reader has been shown (§9A)",
   "note": "02's OPEN call 9 is closed here and moved to §9A.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-08-07"
  },
  {
   "from_sys": "08",
@@ -7122,7 +7551,8 @@
   "status": "parked",
   "evidence": "It connects the query-assembly protocol",
   "note": "Tagged 'a tool build, not method', not phase 2.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-02-08-08"
  },
  {
   "from_sys": "08",
@@ -7137,7 +7567,8 @@
   "status": "built",
   "evidence": "dated the same way fabula is, per Step 1 call 2 (DISTILL §13)",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-08-04"
  },
  {
   "from_sys": "08",
@@ -7152,7 +7583,8 @@
   "status": "parked",
   "evidence": "⏸ setting state full doc (phase 2). The setting system owns it.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-08-06"
  },
  {
   "from_sys": "08",
@@ -7167,7 +7599,8 @@
   "status": "built",
   "evidence": "Threads — one lane per character, trait, trope, place, or relationship",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-03-08-05"
  },
  {
   "from_sys": "08",
@@ -7197,7 +7630,8 @@
   "status": "built",
   "evidence": "A different told order never changes the world-clock order of events",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-15"
  },
  {
   "from_sys": "08",
@@ -7212,7 +7646,8 @@
   "status": "built",
   "evidence": "is flagged an **orphan** rather than silently dropped",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-16"
  },
  {
   "from_sys": "08",
@@ -7227,7 +7662,8 @@
   "status": "built",
   "evidence": "supplies the world clock and the `enable` edge that cables (§6) ride on",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-03"
  },
  {
   "from_sys": "08",
@@ -7242,7 +7678,8 @@
   "status": "built",
   "evidence": "It rides on the fabula's `enable` edge — \"A opens the possibility B later realizes\"",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-04"
  },
  {
   "from_sys": "08",
@@ -7257,7 +7694,8 @@
   "status": "built",
   "evidence": "the world-clock anchor, when this point reads from a dated fabula event",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-05"
  },
  {
   "from_sys": "08",
@@ -7272,7 +7710,8 @@
   "status": "built",
   "evidence": "is when the audience is told. The told order runs on it",
   "note": "Legacy q-scheme conversion lives in 04.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-06"
  },
  {
   "from_sys": "08",
@@ -7287,7 +7726,8 @@
   "status": "built",
   "evidence": "used only when frequency_mode: iterative",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-07"
  },
  {
   "from_sys": "08",
@@ -7302,7 +7742,8 @@
   "status": "built",
   "evidence": "The syuzhet already names the moves this measures: compress, stretch, elide, repeat",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-08"
  },
  {
   "from_sys": "08",
@@ -7317,7 +7758,8 @@
   "status": "built",
   "evidence": "The tool measures the share from P1 percentage addresses.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-09"
  },
  {
   "from_sys": "08",
@@ -7332,7 +7774,8 @@
   "status": "built",
   "evidence": "P9 `stakes_delta` takes an optional `reversibility` score, 1 to 10.",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-10"
  },
  {
   "from_sys": "08",
@@ -7347,7 +7790,8 @@
   "status": "built",
   "evidence": "the arrangement view (tracks, rung ruler, playhead, cables) is this document's shell",
   "note": "05 calls it the plot workspace (`_tools/workspace/build.py`); filed under 04 by judgment.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-11"
  },
  {
   "from_sys": "08",
@@ -7362,7 +7806,8 @@
   "status": "proposed",
   "evidence": "A scene that moves the reader's belief or trust writes a new entry at its time code.",
   "note": "08 says scenes write reader entries; no 04 plot-card field is named for it.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-04-08-14"
  },
  {
   "from_sys": "08",
@@ -7377,7 +7822,8 @@
   "status": "proposed",
   "evidence": "dependencies add the worldbuilding system and trope register",
   "note": "08's body never mentions 05. 05 emits state subject kinds that 08 §5 `subject.kind` (character | trait | trope | place | relationship) does not list.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-06"
  },
  {
   "from_sys": "08",
@@ -7392,7 +7838,8 @@
   "status": "proposed",
   "evidence": "A moment can be a character, a place, a trope, or the story world itself.",
   "note": "`story world` is named as a moment kind but has no `subject.kind`. 05's proof uses `backstory_dcus_rebrand`, a world event.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-05-08-07"
  },
  {
   "from_sys": "08",
@@ -7407,7 +7854,8 @@
   "status": "built",
   "evidence": "The trope register and the theme doc own the ids; this document gives only the address.",
   "note": "06 gives its motifs titles but no ids.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-08-01"
  },
  {
   "from_sys": "08",
@@ -7422,7 +7870,8 @@
   "status": "proposed",
   "evidence": "Continuous values under a track — a trait's value, tension, a setting layer",
   "note": "06 steps every scene up or down a four-step scale, but 08 `subject.kind` has no value or theme kind.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-06-08-06"
  },
  {
   "from_sys": "08",
@@ -7437,7 +7886,8 @@
   "status": "proposed",
   "evidence": "the tool measures the real one from the draft by counting beats against words or seconds.",
   "note": "07.1 reads this; 08 never names 07.1.",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-07-08-03"
  },
  {
   "from_sys": "08",
@@ -7452,7 +7902,8 @@
   "status": "built",
   "evidence": "its store-shape fork is answered here: one store, every track reads it",
   "note": "",
-  "slice": "05-08"
+  "slice": "05-08",
+  "id": "IF-08-09-02"
  },
  {
   "from_sys": "09",
@@ -7467,7 +7918,8 @@
   "status": "built",
   "evidence": "ssot_00_variable_registry.md` | standard | stamped",
   "note": "Ladder Table 1 says the registry has no applies_to and no outside parent.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-00-09-07"
  },
  {
   "from_sys": "09",
@@ -7482,7 +7934,8 @@
   "status": "built",
   "evidence": "epistemology | `00_EPISTEMOLOGY`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-00-09-08"
  },
  {
   "from_sys": "09",
@@ -7497,7 +7950,8 @@
   "status": "parked",
   "evidence": "fields that violate scale class constraints (such as an odd number entered for a variable that requires even values)",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-00-09-05"
  },
  {
   "from_sys": "09",
@@ -7512,7 +7966,8 @@
   "status": "built",
   "evidence": "WOUND must be even on SC-12. projection_tendency must be a multiple of 3 on SC-12.",
   "note": "Frontmatter dependencies name ssot_00_variable_registry and ssot_00_base_60_number_system.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-00-09-02"
  },
  {
   "from_sys": "09",
@@ -7527,7 +7982,8 @@
   "status": "built",
   "evidence": "Module variables that are dynamic appear in state diffs under MOD.[CODE] namespace",
   "note": "Field modules (Layer-Locked Modules) are distinct from doc modules; DUALISM is the only active one.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-00-09-03"
  },
  {
   "from_sys": "09",
@@ -7572,7 +8028,8 @@
   "status": "built",
   "evidence": "The writer checks the passage against the live Touchstones first.",
   "note": "The Touchstones register is 01.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-01-09-09"
  },
  {
   "from_sys": "09",
@@ -7587,7 +8044,8 @@
   "status": "built",
   "evidence": "read [the Touchstones register](../01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first",
   "note": "Ladder cites DOCTRINE 0 Invariant III for the 'forbids nothing' test; the Touchstones register is the 01 doc that carries invariants.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-01-09-10"
  },
  {
   "from_sys": "09",
@@ -7602,7 +8060,8 @@
   "status": "built",
   "evidence": "narrative_frameworks | `01_NARRATIVE_FRAMEWORKS`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-01-09-11"
  },
  {
   "from_sys": "09",
@@ -7617,7 +8076,8 @@
   "status": "built",
   "evidence": "note whether the summarized material illuminates, contradicts, or extends the current storyform.",
   "note": "to_sys 01 is a judgment: the source names 'Dramatica methodology development' and the storyform but no SSOT doc; target could be 01, 02 (dramatica_integration_protocol) or 04. CDR to confirm.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-01-09-04"
  },
  {
   "from_sys": "09",
@@ -7632,7 +8092,8 @@
   "status": "proposed",
   "evidence": "Use when summarizing narratology theory, literary criticism, or composition craft books (e.g., Bal, McKee, Eagleton, Cron, Gavins).",
   "note": "Judgment: 01 holds a `_narratology_shelf`; the template never says where 3A output is filed. A named hand-off (summary file to the shelf, with the four-field model block) would close the gap.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-01-09-05"
  },
  {
   "from_sys": "09",
@@ -7662,7 +8123,8 @@
   "status": "built",
   "evidence": "targets **Tier 3** for all character system tooling and **Tier 2** minimum for all other digital output.",
   "note": "CONTRADICTION: the Purpose says 'no story system depends on it' and 'not part of the storytelling stack', yet this rule binds 02 tooling.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-10"
  },
  {
   "from_sys": "09",
@@ -7677,7 +8139,8 @@
   "status": "built",
   "evidence": "Where the two disagree, the module wins.",
   "note": "File stem and frontmatter say ssot_00_ and category process_illustration, but the doc sits in 09_OPERATIONS and is module_of the 02 slice.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-11"
  },
  {
   "from_sys": "09",
@@ -7692,7 +8155,8 @@
   "status": "built",
   "evidence": "Yellow = Components 1 and 2 pass, Component 3 at minimum_viable.",
   "note": "Component 1 authoritative doc 7 checks, Component 2 Dramatica ingest 9 checks, Component 3 astrology ingest 8 checks.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-12"
  },
  {
   "from_sys": "09",
@@ -7707,7 +8171,8 @@
   "status": "built",
   "evidence": "A revised storyform is a new version, not an edit.",
   "note": "Method lives in the 02 integration protocol, section 'Cascade on a Revised Storyform'.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-13"
  },
  {
   "from_sys": "09",
@@ -7722,7 +8187,8 @@
   "status": "proposed",
   "evidence": "No full commitment until one complete piece proves the approach.",
   "note": "Name collision: the flow's P3 'Vertical slice' and 02's 'LEECHSEED Vertical Slice' are different things. The flow never says whether a finished 02 slice counts as the P3 gate for the character system. Ruling needed.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-16"
  },
  {
   "from_sys": "09",
@@ -7737,7 +8203,8 @@
   "status": "parked",
   "evidence": "Chief rules whether the existing ingests and reports that carry 📐 there move to 🎯 or keep 📐.",
   "note": "Open ruling. The pipeline page files the character ingests under _AUTHORITATIVE/IP/characters/CHARACTER_ID/. to_sys 02 is a judgment: the ingests are 02 forms; 'reports' may include Dramatica reports.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-15"
  },
  {
   "from_sys": "09",
@@ -7752,7 +8219,8 @@
   "status": "built",
   "evidence": "character_systems | `02_CHARACTER_SYSTEMS`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-14"
  },
  {
   "from_sys": "09",
@@ -7767,7 +8235,8 @@
   "status": "parked",
   "evidence": "ACTIVE flags display in `--color-status-critical` (#ff3838), PENDING flags display in `--color-status-serious` (#ffb302)",
   "note": "System Explorer is 'Phase 3 deliverable of the character systems pipeline'; the doc does not say it is built.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-07"
  },
  {
   "from_sys": "09",
@@ -7782,7 +8251,8 @@
   "status": "parked",
   "evidence": "Derived statistics that go negative (Stress Threshold below zero) display in `--color-status-critical` (#ff3838)",
   "note": "Pipeline page says DRV.truth_exposure_index is 'uncapped'; the 60 ceiling appears only here. 02 should rule the expected range.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-08"
  },
  {
   "from_sys": "09",
@@ -7797,7 +8267,8 @@
   "status": "parked",
   "evidence": "The point budget tracker in the bottom panel uses `--progress-color-inner` (#B03A5B) for the budget utilization bar",
   "note": "The point budget itself is not defined in this doc; it must come from 02.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-09"
  },
  {
   "from_sys": "09",
@@ -7812,7 +8283,8 @@
   "status": "built",
   "evidence": "Dramatica Ingest Template (`[CHARACTER_ID]_dramatica_ingest.md`), copied from the blank form",
   "note": "Serves Tier 3 characters only; Tier 2 and Tier 1 do not use the ingest forms.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-01"
  },
  {
   "from_sys": "09",
@@ -7827,7 +8299,8 @@
   "status": "built",
   "evidence": "Character Astrology Ingest Template (`[CHARACTER_ID]_astrology_ingest.md`), `locked` or `minimum_viable`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-02"
  },
  {
   "from_sys": "09",
@@ -7842,7 +8315,8 @@
   "status": "built",
   "evidence": "LEECHSEED Vertical Slice (.md) with structured data block, every key tagged",
   "note": "The page re-states 02 field names; 02's slice is the source of truth.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-03"
  },
  {
   "from_sys": "09",
@@ -7857,7 +8331,8 @@
   "status": "built",
   "evidence": "Every key carries a tag: Static, Dynamic or Derived",
   "note": "The tag table lives in the slice, under 'Field tags · every field'.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-04"
  },
  {
   "from_sys": "09",
@@ -7872,7 +8347,8 @@
   "status": "built",
   "evidence": "Set required fields (character_id, state_id, origin_event = the fabula event_id, told_at time codes, base_record_version)",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-05"
  },
  {
   "from_sys": "09",
@@ -7887,7 +8363,8 @@
   "status": "built",
   "evidence": "Update relationship record status + state_history in _AUTHORITATIVE/IP/relationships/",
   "note": "The record's owning SSOT is not named on this page (02 relationship record or 08 tracking).",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-02-09-06"
  },
  {
   "from_sys": "09",
@@ -7917,7 +8394,8 @@
   "status": "parked",
   "evidence": "Chief decides where content for domains 03, 05, 06 and 08 lands, because no category names them.",
   "note": "Gap: the protocol's six categories predate the 10/5 renumber; four systems have no category and no `type` index. Fix is one new category per system in Phase 1 and the folder table.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-03-09-03"
  },
  {
   "from_sys": "09",
@@ -7932,7 +8410,8 @@
   "status": "built",
   "evidence": "Cite setting_ref where the setting has an S4, S6 or S8 entry",
   "note": "Page names S4/S6/S8 entries but not which 03 doc defines them.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-03-09-01"
  },
  {
   "from_sys": "09",
@@ -7947,7 +8426,8 @@
   "status": "proposed",
   "evidence": "State diffs and relationship records are separate data structures, but they often change at the same narrative moment.",
   "note": "Flow D asks 'Does this event affect a relationship?' but never asks whether it changes a setting, though a Systemic Pressure event is 'sustained institutional force'. 03 has its own state architecture doc.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-03-09-02"
  },
  {
   "from_sys": "09",
@@ -7962,7 +8442,8 @@
   "status": "built",
   "evidence": "Never extract from a draft. Lock the storyform first. This is a hard gate.",
   "note": "to_sys 04 is a judgment: the page says only 'Dramatica software'; the storyform home may be 01 or 04. CDR to confirm.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-04-09-03"
  },
  {
   "from_sys": "09",
@@ -7977,7 +8458,8 @@
   "status": "built",
   "evidence": "plot_systems | `04_PLOT_SYSTEMS`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-04-09-04"
  },
  {
   "from_sys": "09",
@@ -7992,7 +8474,8 @@
   "status": "built",
   "evidence": "Set required fields (character_id, state_id, origin_event = the fabula event_id, told_at time codes, base_record_version)",
   "note": "Page never links ssot_04_fabula; the fabula event is only a named input. The told_at time-code scale is not defined here.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-04-09-02"
  },
  {
   "from_sys": "09",
@@ -8007,7 +8490,8 @@
   "status": "built",
   "evidence": "(34 files) | spec | listed by folder; tagged one by one as each node is next touched",
   "note": "to_sys 05 is a judgment: canon nodes are world/setting records (DCUS, Trash Land, ASTRO7EX); could be 03 Setting. CDR to confirm. Table 3 flags Trash Land and ASTRO7EX standards bodies as working titles.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-05-09-04"
  },
  {
   "from_sys": "09",
@@ -8022,7 +8506,8 @@
   "status": "parked",
   "evidence": "Chief decides where content for domains 03, 05, 06 and 08 lands, because no category names them.",
   "note": "Gap: the protocol's six categories predate the 10/5 renumber; four systems have no category and no `type` index. Fix is one new category per system in Phase 1 and the folder table.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-05-09-05"
  },
  {
   "from_sys": "09",
@@ -8037,7 +8522,8 @@
   "status": "parked",
   "evidence": "Chief decides where content for domains 03, 05, 06 and 08 lands, because no category names them.",
   "note": "Gap: the protocol's six categories predate the 10/5 renumber; four systems have no category and no `type` index. Fix is one new category per system in Phase 1 and the folder table.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-06-09-02"
  },
  {
   "from_sys": "09",
@@ -8052,7 +8538,8 @@
   "status": "proposed",
   "evidence": "EXTRACT 2: Theme Report (MC) → Section 4 (the MC throughline variable set)",
   "note": "Judgment: 'Theme Report' is the Dramatica report name, but its OS/MC/IC/RS throughline data is theme data. The source never names the 06 theme system as a consumer or owner; CDR to check 06's extractor for a matching feed.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-06-09-01"
  },
  {
   "from_sys": "09",
@@ -8067,7 +8554,8 @@
   "status": "built",
   "evidence": "**No Contractions**: All statements use full forms.",
   "note": "CONTRADICTION: 07.2 now allows contractions (BOLO 92 merge call 1, per AIP 1.2.1 and SSOT_CREATION 1.8.1). This doc is v1.0.0 of 2026-02-12 and was not updated.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-12"
  },
  {
   "from_sys": "09",
@@ -8082,7 +8570,8 @@
   "status": "built",
   "evidence": "ssot_07_2b_markdown_marking.md` | procedure | stamped",
   "note": "0.2.1 repointed these rows from the 05 redirect stubs to 07.2a/07.2b. Table 1 lists 07.2a's Command parent as `📐_ssot_09_operations_standard_structure_template.md`, which AIP 1.2.1 says 07.2 replaced (fixed eight-part skeleton).",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-13"
  },
  {
   "from_sys": "09",
@@ -8097,7 +8586,8 @@
   "status": "built",
   "evidence": "\"Do not\" and \"don't\" both stand. The 07.2 style guide rules this (BOLO 92 merge call 1).",
   "note": "The ladder lists this doc as a 'procedure' with applies_to blank; the 07 pointer stubs say the writing guide now lives in 07.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-14"
  },
  {
   "from_sys": "09",
@@ -8112,7 +8602,8 @@
   "status": "built",
   "evidence": "style_guides | `07_STYLE_GUIDES`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-15"
  },
  {
   "from_sys": "09",
@@ -8127,7 +8618,8 @@
   "status": "built",
   "evidence": "The 07.2 style guide ([[📐 ssot_07_2_documents_style]]) replaced the fixed eight-part skeleton (BOLO 92 merge call 2). Follow 07.2.",
   "note": "pm_holdings_inventory still lists the 'mandatory 8-component SSOT structure' template as canonical; ladder Table 1 still cites it as a parent. Stale on both.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-16"
  },
  {
   "from_sys": "09",
@@ -8142,7 +8634,8 @@
   "status": "built",
   "evidence": "\"Don't\" and \"do not\" both stand. The 07.2 style guide rules this (BOLO 92 merge call 1).",
   "note": "retrieval_dossier_protocol (same slice) still says No Contractions.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-17"
  },
  {
   "from_sys": "09",
@@ -8157,7 +8650,8 @@
   "status": "proposed",
   "evidence": "Every application, dashboard, tool, template renderer, and interactive artifact conforms to this system.",
   "note": "Judgment, unverified: 07 holds a pages style (ssot_07_3_pages_style) and prose style; the design system sets its own voice ('direct, confident, and commanding', no pronouns). The doc never says which wins. CDR to check 07.3 for overlap.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-07-09-05"
  },
  {
   "from_sys": "09",
@@ -8307,7 +8801,8 @@
   "status": "parked",
   "evidence": "Chief decides where content for domains 03, 05, 06 and 08 lands, because no category names them.",
   "note": "Gap: the protocol's six categories predate the 10/5 renumber; four systems have no category and no `type` index. Fix is one new category per system in Phase 1 and the folder table.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-08-09-03"
  },
  {
   "from_sys": "09",
@@ -8322,7 +8817,8 @@
   "status": "built",
   "evidence": "A single trait tick or flag flip between events is a story point. Write it in the tracking system.",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-08-09-01"
  },
  {
   "from_sys": "09",
@@ -8337,7 +8833,8 @@
   "status": "built",
   "evidence": "Chief reviews everything in `_STAGED/`. The writer does not promote on the writer's own call.",
   "note": "Applies to every system's SSOT docs and to _AUTHORITATIVE/ (applies_to: all_stories).",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-02"
  },
  {
   "from_sys": "09",
@@ -8352,7 +8849,8 @@
   "status": "proposed",
   "evidence": "A `#ssot-candidate` goes to an SSOT doc.",
   "note": "The step says 'an SSOT doc' without a folder. AIP maps only six categories to folders and sends 03, 05, 06, 08 to Chief. Two 09 docs, one gap.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-16"
  },
  {
   "from_sys": "09",
@@ -8367,7 +8865,8 @@
   "status": "built",
   "evidence": "Every application, dashboard, tool, template renderer, and interactive artifact conforms to this system.",
   "note": "to_sys ALL: stated for all Bold Venture output (applies_to BOLD_VENTURE), scope line carves out the storytelling stack.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-03"
  },
  {
   "from_sys": "09",
@@ -8382,7 +8881,8 @@
   "status": "built",
   "evidence": "This document states how one exchange between Chief and Claude becomes a built thing, from a single turn to a project.",
   "note": "Status: working v0.1 (promotes after two project uses). Governs how every system is built, not what a system contains.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-04"
  },
  {
   "from_sys": "09",
@@ -8397,7 +8897,8 @@
   "status": "parked",
   "evidence": "Every authoritative file must reference the specific SSOT it employs.",
   "note": "Legacy (2026-02; split out of 07.2a 2026-10-04). A live rule of this shape (authoritative file cites its SSOT) is not restated in how_to_use_goon_room or SSOT_CREATION.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-15"
  },
  {
   "from_sys": "09",
@@ -8412,7 +8913,8 @@
   "status": "built",
   "evidence": "**M** | a system build | full brief, one page | P1 · P3 · P4",
   "note": "Status: working v0.1. Applies to building any SSOT system (00 to 08); the doc applies_to [BOLD_VENTURE, ULTRASIN, OPERATOR], not the story IPs.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-05"
  },
  {
   "from_sys": "09",
@@ -8427,7 +8929,8 @@
   "status": "built",
   "evidence": "the single blocking decision named, the decider named, and the date on which the hold converts to a call.",
   "note": "The stall pattern this ends is the stage 2 problem: finished designs blocked on one unanswered decision.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-06"
  },
  {
   "from_sys": "09",
@@ -8442,7 +8945,8 @@
   "status": "built",
   "evidence": "Every document carries one frontmatter line, first line after the opening fence:",
   "note": "Only the 09 ladder-era docs (flow, dev standard, ladder) carry `rung`. The SSOT docs in 00 to 08 shown in this slice do not; ladder Table 3 lists standard and handbook rungs empty.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-07"
  },
  {
   "from_sys": "09",
@@ -8457,7 +8961,8 @@
   "status": "proposed",
   "evidence": "the filing table grows a row per document",
   "note": "Ladder claims 'every Command document sits on one of four rungs' but files only 2 style docs and the variable registry from the story systems. Table 3 gaps never mention this.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-17"
  },
  {
   "from_sys": "09",
@@ -8472,7 +8977,8 @@
   "status": "built",
   "evidence": "If it is project-specific content, divert it to `_AUTHORITATIVE/`.",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-08"
  },
  {
   "from_sys": "09",
@@ -8487,7 +8993,8 @@
   "status": "built",
   "evidence": "Use the standardized template to ensure keys like `type`, `category`, and `applies_to` are present.",
   "note": "Frontmatter dependency [[📐_ssot_09_operations_obsidian_yaml_standard]] names no file in the slice.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-09"
  },
  {
   "from_sys": "09",
@@ -8502,7 +9009,8 @@
   "status": "built",
   "evidence": "`📐 ssot_[category]_[name].md`",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-10"
  },
  {
   "from_sys": "09",
@@ -8517,7 +9025,8 @@
   "status": "built",
   "evidence": "Every output must begin with a YAML block.",
   "note": "CONTRADICTION: applies_to is 'Always' the three story IPs, but this slice's design system, ladder, flow and dev standard use [BOLD_VENTURE, ...]. `type` and `category` values in 09 (design_system, process_illustration, ssot_procedure, ssot_standard) are not in the allowed list.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-11"
  },
  {
   "from_sys": "09",
@@ -8532,7 +9041,8 @@
   "status": "built",
   "evidence": "Every file **must** begin with `📐 ssot_`.",
   "note": "Not followed in this slice: how_to_use_goon_room.md, ssot_ai_instruction_protocol.md, ssot_writing_guide.md (pointer), 📐ssot_SSOT_CREATION.md (no space); SSOT_CREATION adds 🎯 for _AUTHORITATIVE/.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-12"
  },
  {
   "from_sys": "09",
@@ -8547,7 +9057,8 @@
   "status": "built",
   "evidence": "You distinguish strictly between abstract methodology (SSOT) and project-specific application (Authoritative).",
   "note": "Same rule as SSOT_CREATION Phase 1.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-13"
  },
  {
   "from_sys": "09",
@@ -8562,7 +9073,8 @@
   "status": "proposed",
   "evidence": "Every output must begin with a YAML block.",
   "note": "Phase 1 lists type, category, applies_to, status, dependencies; no rung. The ladder says 'the next document written in the Command carries the tag from birth'. The creation path and the ladder disagree.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-18"
  },
  {
   "from_sys": "09",
@@ -8577,7 +9089,8 @@
   "status": "built",
   "evidence": "Do not create new summarization prompts elsewhere in the vault.",
   "note": "Ladder Table 1 names this template as a parent of ssot_07_2b_markdown_marking; 07's extractor records its side.",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-14"
  },
  {
   "from_sys": "09",
@@ -8592,6 +9105,7 @@
   "status": "built",
   "evidence": "A `#ssot-candidate` goes to an SSOT doc. A `#auth-candidate` goes to `_AUTHORITATIVE/`.",
   "note": "",
-  "slice": "09"
+  "slice": "09",
+  "id": "IF-09-ALL-01"
  }
 ]

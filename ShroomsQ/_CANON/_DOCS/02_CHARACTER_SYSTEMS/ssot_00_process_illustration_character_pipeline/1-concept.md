@@ -6,7 +6,7 @@ does: "explains why the character pipeline runs as four flows with gates and how
 owner: Chief
 state: draft
 reviewed: 2026-10-05
-source: ShroomsQ/_CANON/_SSOT/09_OPERATIONS/📐 ssot_00_process_illustration_character_pipeline.md
+source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_00_process_illustration_character_pipeline.md
 source_version: 1.0.1
 ---
 
