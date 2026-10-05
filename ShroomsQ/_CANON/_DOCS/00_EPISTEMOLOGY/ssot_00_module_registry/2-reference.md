@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md"
-source_version: "1.1.0"
+source_version: "1.1.1"
 ---
 
 **Who it's for:** a designer looking up a field module · **What it does:** lists every module declaration, variable and status · **Type:** reference
@@ -35,11 +35,9 @@ All modules use tier 3. All declarations use `tier_min: 3`.
 | `PHYS` | Physical Detail | L2 VITAL | planned | 6 | No | No |
 | `CULTURE` | Cultural Conditioning | L7, L8 | conceptual | parked | parked | parked |
 | `SPIRIT` | Spiritual Framework | L11 DESTINY | conceptual | parked | parked | parked |
-| `DESIGN` | Design Focus Power Board | Meta | conceptual | 14 | Yes | No |
+| `DESIGN` | Design Focus Power Board | Meta | conceptual | 12 | Yes | No |
 
 Audit 2026-10-04 (slice 3.3.1): 1 active, 2 absorbed, 8 planned, 3 conceptual. None dropped. "Parked" means `⏸ module build (phase 2)`: the scope is written, the variable list waits for the module build.
-
-> **OPEN:** the overview lists `DESIGN` with 14 variables while its entry says "14 domains" and writes no variable list.
 
 ## Active Modules
 
@@ -90,7 +88,7 @@ An absorbed module is closed. The core schema holds its fields, so it never buil
 ### MOD.LOLTAX — LoL Character Taxonomy
 
 - **Declaration:** `LOL_TAX`, "League of Legends Character Taxonomy", version 0.1.0, author LEECHSEED, attachments VITAL, SOCIAL, WILL, IMPRINT, EROS, SHADOW, `depends_on: [COMBAT]`.
-- **Description:** the 14-domain character taxonomy from the LoL analysis project, consolidated under existing layers with foreign key references.
+- **Description:** the 12-domain character taxonomy from the LoL analysis project, consolidated under existing layers with foreign key references.
 - **Domain-to-layer mapping:**
 
 | LoL domain | Layer | Note |
@@ -109,8 +107,6 @@ An absorbed module is closed. The core schema holds its fields, so it never buil
 | Design Focus Power Board | Meta (via MOD.DESIGN) | Meta-distribution |
 
 - **Status:** still planned. Needs COMBAT built first. Several domains map to other planned modules, so the dependency chain is composite.
-
-> **OPEN:** the source says 14 domains but the mapping table lists 12.
 
 ### MOD.WALK — Walking Style
 
@@ -221,7 +217,7 @@ These modules reserve their IDs and attachment points. Their variable lists are 
 ### MOD.DESIGN — Design Focus Power Board
 
 - **ID:** `DESIGN`. **Attachment:** Meta (all layers).
-- **Concept:** the meta-distribution of design energy across all domains. It shows which aspects got the most authorial investment and which stayed at default. 14 domains from the LoL taxonomy, rated on SC-12.
+- **Concept:** the meta-distribution of design energy across all domains. It shows which aspects got the most authorial investment and which stayed at default. 12 domains from the LoL taxonomy, rated on SC-12.
 - **Scope:** rates authorial investment per domain. Reads every layer's base value and writes none.
 - **Status:** conceptual.
 

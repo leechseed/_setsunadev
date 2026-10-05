@@ -2,10 +2,10 @@
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
 type: ssot_procedure
 category: operations
-version: 1.0.0
+version: 0.2.3
 tier: operations
-last_updated: 2026-10-04
-version_note: "1.0.0 stamped 2026-10-04, BOLO 100 (Chief: \"rec\")"
+last_updated: 2026-10-05
+version_note: "0.2.3 set 2026-10-05, BOLO 102 batch A (Chief: \"All recs go\"); the 1.0.0 stamp of 2026-10-04 contradicted the version history, which ends at 0.2.2"
 applies_to: [BOLD_VENTURE, ULTRASIN, OPERATOR]
 status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document
 bolo: 50
@@ -161,3 +161,4 @@ DOCTRINE 0 governs: this ladder is v0.1, ruled, and promotes to canonical after 
 | 0.2.0 | 2026-09-15 | Phase 6, the network: flat index added (by document · by outside body · by level and world · the gaps). 26 documents, 3 outside bodies cited, 11 levels and worlds. The browsable page waits on the count. |
 | 0.2.1 | 2026-10-04 | BOLO 100 style batch 1, RULED (Chief, "rec"): filing-table rows and parent column repointed from the 05 redirect stubs to 06.2a and 06.2b. |
 | 0.2.2 | 2026-10-04 | BOLO 100 TOUCH BATCH 1, Chief "REC.": front-door line (TS-B10). |
+| 0.2.3 | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): the version is 0.2.2 plus this patch. The 1.0.0 stamp is withdrawn, because the history ends at 0.2.2. |

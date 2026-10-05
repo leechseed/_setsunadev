@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.1"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a writer or designer looking up a number rule · **What it does:** lists every table, formula and rule in the base 60 doc · **Type:** reference
@@ -58,14 +58,12 @@ Every maximal chain passes through 1 and 60 and cannot take another divisor. The
 | C10 | 1→5→10→20→60 | Pentad, decimal, vigesimal, full |
 | C11 | 1→5→10→30→60 | Pentad, decimal, 30-unit, full |
 | C12 | 1→5→15→30→60 | Pentad, 15 categories, 30-unit, full |
-| C13 | 1→2→4→20→60 | Binary subdivisions of vigesimal |
+| C13 | retired | Duplicate of C02. Use C02. |
 | C14 | 1→3→12→60 | Layer chain: 3 tiers, 12 layers, 60 |
 | C15 | 1→4→12→60 | Quad, dodecimal, full |
 | C16 | 1→5→20→60 | Pentad, vigesimal, full |
 | C17 | 1→6→12→60 | Movement chain: 6 movements, 12 layers, full |
 | C18 | 1→6→30→60 | 6 movements, 30-unit range, full |
-
-> **OPEN:** C13 repeats C02's sequence. The source lists both without comment.
 
 ### Architecturally Significant Chains
 
@@ -218,7 +216,7 @@ When a formula mixes scale classes, compute in internal 0-60 space, then assign 
 
 ### Recalibrated Formulas
 
-The final rule: compute every derived statistic in internal space. Source text says display on SC-12.
+The final rule: compute every derived statistic in internal space. Each stat displays on the output class its row assigns.
 
 | Stat | Internal formula | Output class | Constraint |
 |---|---|---|---|
@@ -231,7 +229,7 @@ The final rule: compute every derived statistic in internal space. Source text s
 
 The Truth Exposure Index uses `12 - shame_d`, replacing the old `10 - shame_d`.
 
-> **OPEN:** the source's rule says derived stats "display on SC-12", but its table assigns SC-30, SC-20 and SC-60 output classes, and the Victoria table shows SC-60. The source does not reconcile them. The source also keeps three abandoned formula attempts in this section.
+> **OPEN:** the source keeps three abandoned formula attempts in this section.
 
 ### Derived Stat Divisibility Constraints Summary
 

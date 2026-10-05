@@ -520,7 +520,7 @@ All derived stats compute in internal (0-60) space per the Base 60 SSOT. Source 
 
 `DRV.expressive_range`. Display formula `12 - T3.EROS.armor_index`, 0 to 12. Slice 3.3.2 ruled the constant (Chief, 10/4: "Rick"). The internal mapping follows `armor_index` at SC-12. It measures what the character can send on purpose. `truth_exposure_index` measures what leaks.
 
-> **OPEN:** the version history says the `10 - armor_index` constant "gives a negative value at 11 or 12", but this entry states the range as 0 to 12. The source does not reconcile them.
+The version history records an earlier constant, `10 - armor_index`. Chief replaced it with `12 - armor_index` on 2026-10-04, so the result never goes negative.
 
 ## Status Flags
 

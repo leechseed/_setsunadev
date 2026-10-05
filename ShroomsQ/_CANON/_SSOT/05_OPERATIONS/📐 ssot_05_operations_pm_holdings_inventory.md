@@ -1,7 +1,7 @@
 ---
 title: PM Holdings Inventory — everything project-management-shaped the operation already holds
 type: register / survey
-version: 1.0.0
+version: 1.0.1
 tier: operations
 domain: 05_OPERATIONS
 status: survey banked 2026-09-03 — feeds BOLO 25 (the standard PM flow)
@@ -91,7 +91,7 @@ No agile/scrum/kanban thread exists on its own. Agile appears only inside the PM
 ## 6 · Finished vs missing
 
 - **Finished:** the six-phase lifecycle + gates (four-domains artifact) · the PMBOK-7 mapping · charter instance · assumption log · decision ledger (STATE + registry) · task register (BOLO) · portfolio board (PROJECTS) · backlog discipline (oscar-mike) · session handoff (Ready Rack) · stage gates (lab venture) · document container (SSOT template) · Command style (Marine standard + SOP §7) · **11 MCDP summaries** (numbering drift on 4/8).
-- **Missing:** one document that says how a project runs here · blank charter/gate/close-out templates (the charter is an instance) · a project lifecycle in the repo proper (SOP governs sessions) · a sprint/cadence layer beyond the CDPR paragraph · DOCTRINE-0 ratification (the promotion mechanic).
+- **Missing (as of 2026-10-05):** ~~one document that says how a project runs here~~ closed 2026-09-03 (`📐 ssot_05_operations_project_flow.md`) · blank charter/gate/close-out templates (the charter is an instance) — blank charter and gate templates closed 2026-09-03 (the flow's blank brief and gate checklist); the close-out template stays open · ~~a project lifecycle in the repo proper (SOP governs sessions)~~ closed 2026-09-03 (the flow's P0–P6) · ~~a sprint/cadence layer beyond the CDPR paragraph~~ closed 2026-09-03 (the flow's §F, cadence and control) · ~~DOCTRINE-0 ratification (the promotion mechanic)~~ closed 2026-09-03 (ratified).
 - **Known gaps already flagged:** Pyramid Principle source text (BVX.1107 reserved) · 7 of 11 MCDP PDFs (BOLO 1) — **summaries exist for all 11; the PDFs feed the catalog, not the method** · DOCTRINE-0 unratified.
 
 ## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → `📐 ssot_05_operations_project_flow.md` v0.1
@@ -100,3 +100,8 @@ Promote the four-domains six-phase lifecycle into a `05_OPERATIONS` SSOT · stri
 ## 8 · Addendum 2026-09-09 — the Business-ops cluster, closed out (true-ancients R8)
 
 PROJECTS rank 10 "Business ops" retired as a label. Of its six conversations, four are already in §1 (PMBOK study guides · the BVI charter · WBS · the 3D-printing market entry) and one by output (the SPINDLE master plan). **Not previously cited, pointed here so it is never re-derived:** `_CLAUDE_ARCHIVE_2026-08-15/conversations/2026-06-06_buying-and-reselling-unpublished-content-rights.md` (BOTH, 37k, 1 artifact) — the adult-industry entry consult: creator-led economics, LTV:CAC, §2257, Visa VAMP, three capital tiers, flagship→network, the third-party repository assessed as funnel-only. BOLO 27 / ULTRA DARK (9/3) reached the same funnel-only conclusion from §N + registry §E without this file; the next Ultrasin entry question starts here.
+
+## Version History
+
+- **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): the "Missing" list in §6 is re-dated 2026-10-05; entries the repo shows closed are struck and marked "closed 2026-09-03".
+- **1.0.0 · 2026-09-03** — Survey banked.

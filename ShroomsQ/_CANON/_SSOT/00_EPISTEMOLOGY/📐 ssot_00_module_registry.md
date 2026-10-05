@@ -2,9 +2,9 @@
 type: ssot_00_foundations
 category: module_registry
 module_of: ssot_00_module_architecture
-version: 1.1.0
+version: 1.1.1
 tier: foundation
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 trunk: BLACK
@@ -49,7 +49,7 @@ This is the complete catalog of every field module that attaches to the 12-Layer
 |`PHYS`|Physical Detail|L2 VITAL|3|**planned**|6|No|No|
 |`CULTURE`|Cultural Conditioning|L7, L8|3|**conceptual**|⏸|⏸|⏸|
 |`SPIRIT`|Spiritual Framework|L11 DESTINY|3|**conceptual**|⏸|⏸|⏸|
-|`DESIGN`|Design Focus Power Board|Meta|3|**conceptual**|14|Yes|No|
+|`DESIGN`|Design Focus Power Board|Meta|3|**conceptual**|12|Yes|No|
 
 **Audit, 2026-10-04 (slice 3.3.1):** 1 active, 2 absorbed, 8 planned, 3 conceptual. None dropped. The core schema absorbed SEX_PROF and VOICE. COPING narrowed. Each planned module reads below. **⏸** marks `⏸ module build (phase 2)`: the scope is method and is written now, the variable list is instance content and waits for the module build.
 
@@ -144,7 +144,7 @@ MODULE_DECLARATION:
   attachment_points: [VITAL, SOCIAL, WILL, IMPRINT, EROS, SHADOW]
   tier_min: 3
   depends_on: [COMBAT]
-  description: The 14-domain character taxonomy from the LoL analysis project,
+  description: The 12-domain character taxonomy from the LoL analysis project,
     consolidated under existing layers with foreign key references.
 ```
 
@@ -434,7 +434,7 @@ These modules have been identified as potential extensions but do not yet have v
 |---|---|
 |Module ID|`DESIGN`|
 |Attachment|Meta (all layers)|
-|Concept|The meta-distribution of design energy across all other domains — which aspects of this character received the most authorial investment and which were left at default. 14 domains from the LoL taxonomy rated on SC-12.|
+|Concept|The meta-distribution of design energy across all other domains — which aspects of this character received the most authorial investment and which were left at default. 12 domains from the LoL taxonomy rated on SC-12.|
 |Scope|Rates the authorial investment per domain. Reads every layer's base value and writes none.|
 |Status|Conceptual|
 
@@ -469,3 +469,4 @@ Build order for maximum independence: WALK → PHYS → COMBAT → FASHION → M
 |---|---|---|
 |1.0.0|2026-03-08|Initial registry. 1 active module (DUALISM), 10 planned modules with full declarations, 3 conceptual modules with reserved IDs. Dependency map and recommended build order.|
 |1.1.0|2026-10-04|BOLO 100 base batch 1 (B1, B2, B3, B9, B10, B13, B15), RULED Chief "REC.": frontmatter repaired with `trunk`; `module_of: ssot_00_module_architecture` stamped; table-of-contents links repointed; audit against slice 3.3.1 (SEX_PROF and VOICE absorbed, COPING narrowed, the rest still planned, none dropped); conceptual scopes written for CULTURE, SPIRIT and DESIGN with their variable lists parked as `⏸ module build (phase 2)`; dependency map and build order redone.|
+|1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): DESIGN and LOL_TAX counts set to 12 to match the 12-row mapping table.|

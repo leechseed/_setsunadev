@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_pm_holdings_inventory.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** an agent or Chief learning to use the inventory by tracing one instrument from survey to flow · **What it does:** walks the survey's own outcome: from the finding to the Project Flow v0.1 · **Type:** tutorial

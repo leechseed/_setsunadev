@@ -7,7 +7,7 @@ owner: "Chief"
 state: "draft"
 reviewed: "2026-10-05"
 source: "ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md"
-source_version: "1.0.1"
+source_version: "1.0.2"
 ---
 
 **Who it's for:** a designer adding or converting a numeric variable · **What it does:** gives the steps for each number task · **Type:** how-to

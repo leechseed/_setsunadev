@@ -7,16 +7,14 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_standards_ladder.md
-source_version: 1.0.0
+source_version: 0.2.3
 ---
 
 **Who it's for:** an agent or Chief. They look up a rung, the deciding rule, the tag, a filed document, or an index row · **What it does:** lists every component of the Command Ladder · **Type:** reference
 
 # Command Ladder: reference
 
-The source has type `ssot_procedure`, category operations, frontmatter version 1.0.0 (stamped 2026-10-04, BOLO 100, Chief: "rec"). Its last update is 2026-10-04. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
-
-> **OPEN:** the version history ends at 0.2.2 (2026-10-04), while the frontmatter says 1.0.0.
+The source has type `ssot_procedure`, category operations, frontmatter version 0.2.3 (the 1.0.0 stamp of 2026-10-04 is withdrawn). Its last update is 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
 
 ## The four rungs
 

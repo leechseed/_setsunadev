@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_standards_ladder.md
-source_version: 1.0.0
+source_version: 0.2.3
 ---
 
 **Who it's for:** Chief or an agent filing a new or untagged Command document · **What it does:** gives the steps to pick a rung, tag a document, and add its filing row · **Type:** how-to

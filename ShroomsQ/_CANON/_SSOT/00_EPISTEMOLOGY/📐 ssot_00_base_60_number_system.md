@@ -244,7 +244,7 @@ This table assigns every numeric variable in the character system to a scale cla
 |Density scores|0-10|**SC-12**|0–12|SC-12 default|
 |Tendency scores|0-10|**SC-12**|0–12|SC-12 default|
 |Index scores (shame, desire)|0-10|**SC-12**|0–12|SC-12 default|
-|Armor index (L9)|0-10|**SC-12**|0–12|Sibling of the shame index. Assigned 2026-10-04 by Selection Rules 1 to 4. The one formula that reads it, `10 - armor_index`, subtracts and never divides, so Rule 3 holds.|
+|Armor index (L9)|0-10|**SC-12**|0–12|Sibling of the shame index. Assigned 2026-10-04 by Selection Rules 1 to 4. The one formula that reads it, `12 - armor_index` (the constant Chief ruled 2026-10-04, as the variable registry reads it), subtracts and never divides, so Rule 3 holds.|
 |Resistance index|0-10|**SC-12**|0–12|SC-12 default|
 |Origin seeds|0-10|**SC-12**|0–12|SC-12 default|
 |Coherence scores|0-10|**SC-12**|0–12|SC-12 default|
@@ -543,4 +543,4 @@ When any new variable is added to the system (including Layer-Locked Module sub-
 |---|---|---|
 |1.0.0|2026-03-08|Initial SSOT. Establishes base 60 as foundational number system. Divisor lattice, 18 maximal chains, 10 matrix decompositions, 10 tensor decompositions, 9 scale classes, complete scale assignment table, point budget validation (no changes required), derived stat recalibration with divisibility constraints, flag threshold recalibration, Victoria Midnight full re-expression with diagnostic analysis.|
 |1.0.1|2026-10-04|BOLO 100 base batch 1 (B1, B3, B7, B13, B15), RULED Chief "REC.": frontmatter repaired to a multi-line block with `trunk`, table-of-contents links repointed to in-page anchors, `supersedes_ranges_in` names the real file stem, armor index added to the Scale Assignment Table as SC-12.|
-|1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): C13 retired as a duplicate of C02, no renumbering; derived-stat display rule reworded to match the formula table (SC-30, SC-20, SC-60).|
+|1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): C13 retired as a duplicate of C02, no renumbering; derived-stat display rule reworded to match the formula table (SC-30, SC-20, SC-60); the armor index row's formula corrected to `12 - armor_index`, matching the variable registry.|

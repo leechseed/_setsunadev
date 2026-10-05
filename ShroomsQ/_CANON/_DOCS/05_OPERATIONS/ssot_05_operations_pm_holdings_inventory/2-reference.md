@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_pm_holdings_inventory.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** an agent or Chief looking up where a PM instrument, template, or source lives in the repo · **What it does:** lists every section of the PM Holdings Inventory and the holdings each one records · **Type:** reference
@@ -97,10 +97,8 @@ The registry is `files/2026-08-05_ultrasin-master-registrymd.md` (v0.1, living).
 ## 6 · Finished vs missing
 
 - **Finished:** the six-phase lifecycle and gates (four-domains artifact), the PMBOK-7 mapping, the charter instance, the assumption log. The finished list continues with the decision ledger (STATE and registry), the task register (BOLO), the portfolio board (PROJECTS). It also holds backlog discipline (oscar-mike), session handoff (Ready Rack), stage gates (lab venture). It then adds the document container (SSOT template) and Command style (Marine standard and SOP §7). It ends with 11 MCDP summaries (numbering drift on 4 and 8).
-- **Missing:** one document that says how a project runs here. It also lacks blank charter, gate, and close-out templates (the charter is an instance). It lacks a project lifecycle in the repo proper, and a sprint/cadence layer beyond the CDPR paragraph. It lacks the DOCTRINE-0 ratification (the promotion mechanic).
+- **Missing (as of 2026-10-05):** the list now reads as follows. Closed 2026-09-03: ~~one document that says how a project runs here~~ (the project flow); ~~a project lifecycle in the repo proper~~ (the flow's P0 to P6); ~~a sprint/cadence layer beyond the CDPR paragraph~~ (the flow's section F); ~~the DOCTRINE-0 ratification~~ (ratified). Blank charter and gate templates also closed 2026-09-03 (the flow's blank brief and gate checklist). The blank close-out template stays open.
 - **Known gaps already flagged:** the Pyramid Principle source text (BVX.1107 reserved); 7 of 11 MCDP PDFs (BOLO 1). Summaries exist for all 11, and the PDFs feed the catalog, not the method. DOCTRINE-0 is unratified.
-
-> **OPEN:** the "Missing" list is dated 2026-09-03. DOCTRINE-0 was ratified the same day and the project flow was written, so several entries are now closed.
 
 ## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot05operationsprojectflow.md v0.1
 

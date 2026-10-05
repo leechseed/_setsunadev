@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_05_operations_pm_holdings_inventory.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** Chief or an agent hunting for an existing PM instrument or source before building a new one · **What it does:** gives the steps to find a holding, judge its state, and record a new one · **Type:** how-to
