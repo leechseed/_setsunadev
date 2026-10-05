@@ -1,8 +1,8 @@
 {
  "meta": {
   "date": "2026-10-05",
-  "when": "",
-  "trigger": "",
+  "when": "2026-10-05 01:05",
+  "trigger": "run launch sequence",
   "countersign": false,
   "version": "v0.9 · the formation (BOLO 54)",
   "box": [
@@ -26,13 +26,16 @@
   "tree": "1 file(s) uncommitted at open",
   "stack": "empty",
   "agents": [],
-  "stats": [],
-  "main_effort": "",
+  "stats": [
+   "blocked on you: 0",
+   "stations: 9/9 GO",
+   "agents deployed: 6 (3 + 3 reruns)",
+   "commits since last board: 213"
+  ],
+  "main_effort": "BOLO 102 core pass (58 docs · 396 components), after the 10:00 visit",
   "build": {
-   "files": "prep script + 3 fragments + the digest",
-   "read": "531 KB on disk, read by specialists, not the main line",
-   "calls": "",
-   "rounds": ""
+   "calls": "~14",
+   "rounds": "2"
   }
  },
  "blocks": [
@@ -40,9 +43,9 @@
    "id": "0",
    "name": "Last session",
    "kind": "list",
-   "plain": "Five sessions closed the SOP and doc spine (sections 1–4), all storytelling systems (character through style, library 51→165 cites), base schema and Touchstones (all eight batches), ten reference systems documented, and JUDY as an app. Session 5 opened BOLO 102 (core first: 58 docs, 396 components), trimmed face deck to four originals, fixed VS Code crash (937→0 errors), and built PMCS visit prep for Monday 10/5 10:00. Stash identify job running ~4%, PCP follow-ups and four schema fields held through Friday.",
+   "plain": "Five sessions closed the SOP and doc spine (sections 1–4). All storytelling systems closed: character through style (library 51→165 cites). Base schema and Touchstones (all eight batches). Ten reference systems documented. JUDY built as an app. Session 5 opened BOLO 102 (core first: 58 docs, 396 components). Face deck trimmed to four originals. VS Code crash fixed (937→0 errors). PMCS visit prep built for Monday 10/5 10:00. Stash identify job running ~4%, PCP follow-ups and four schema fields held through Friday.",
    "strand": {
-    "last": "Session 5: Chief ordered launch ALL GO (9 stations) and BOLO 102 (one access point, core first); builders counted 58 core docs, 396 components, 470 parts; Chief reset face deck to four originals (15 files removed); uninstalled VS Code icon-theme crash (937→0 errors); Chief built PMCS visit prep Monday 10/5 10:00 (topic bullets, not scripts); pelvic-floor dropped, fitness/diet opened (StrongLifts). Session 4: RANGE published ten review pages (REVIEW 01–09 live, 00 when read-only cleared) · builders locked pattern library 1.0.0 (foundation tier, Patterns 1 & 2) · JUDY runs as Chrome app (manifest · icon-192/512px · service worker) · ppt.py patched for audio recovery (Nahimic crashed ~20 times) · Nahimic disabled (service · tasks · process killed). Session 3: RANGE applied BASE-BATCH-1 (B1–B15 rec: variable registry 1.2.0 +94 fields · module registry 1.1.0 · truth SSOT · character slice 3.3.2 · TEI clamp) · applied TOUCH-BATCH-1 (TS-B1–B12 rec: Touchstones 1.0.0 · renamed 10 files · pushback PB ids · `_tools/review/touchstone_check.py`) · builders built Command Reference (293 pages · 1,581 Mermaid · RANGE 292/292 docs · 0 missing) · upgraded JUDY faces (MP4 · per-state pools · SFW button · 50 MB cap · 8 picks · no back-to-back repeat · 90 frames @ 33 ms). Session 2: RANGE ruled BOLO 100 systems first (pilot gated · method before story · fabula after schema) · closed nine storytelling systems (character 3.3.1 through style 06.2 1.5.0) · swept library (306 distills · character cites 51→165) · built advice voice (`_CANON_NODES/` pilots 01–10 · 60 questions · Arctic Shift pull) · built JUDY face deck · built Character System Review (398 nodes DONE 7/7 · library pass 'Rick') · built Subreddit ballot (166 subs · db collection `keep`). Session 1: RANGE closed DOC-SOP (sections 1–4 · nine teach-back rules · folded into 06.2 1.4.0 · goon protocol to 05_OPERATIONS) · applied SOP to SOI (edition 2026-10-04 · 46 rewrites · 11 stale · Sensei added) · added sit rep auto-rerun · DOPE SHEET header/brief/check · disclaimer to 06.1 · distilled 82 books PASS (five waves: PSY.43–49 · TEC.04–07 · CRE.05–09 · PHI.03–04 · MSX.42–88 · OCR) · closed BOOK HUNT v16 (authors · live held checks · copy buttons) · built ORANGE board (no BREVITY · inventory fixes · transcript filter) · locked story schema 2.5.0 (12 fields · 139 aliases/drops · BVX 1191–1274) · locked worldbuilding (Outliers = Moon descendants · Tori legacy+diver · Randoms prov.).",
+    "last": "Session 5: Chief ordered launch ALL GO (9 stations) and BOLO 102 (one access point, core first). Builders counted 58 core docs, 396 components, 470 parts. Chief reset face deck to four originals (15 files removed). VS Code icon-theme crash uninstalled (937→0 errors). Chief built PMCS visit prep Monday 10/5 10:00 (topic bullets, not scripts). Pelvic-floor dropped, fitness/diet opened (StrongLifts). Session 4: RANGE published ten review pages (REVIEW 01–09 live, 00 when read-only cleared) · builders locked pattern library 1.0.0 (foundation tier, Patterns 1 & 2) · JUDY runs as Chrome app (manifest · icon-192/512px · service worker) · ppt.py patched for audio recovery (Nahimic crashed ~20 times) · Nahimic disabled (service · tasks · process killed). Session 3: RANGE applied BASE-BATCH-1 (B1–B15 rec: variable registry 1.2.0 +94 fields · module registry 1.1.0 · truth SSOT · character slice 3.3.2 · TEI clamp) · applied TOUCH-BATCH-1 (TS-B1–B12 rec: Touchstones 1.0.0 · renamed 10 files · pushback PB ids · `_tools/review/touchstone_check.py`) · builders built Command Reference (293 pages · 1,581 Mermaid · RANGE 292/292 docs · 0 missing) · upgraded JUDY faces (MP4 · per-state pools · SFW button · 50 MB cap · 8 picks · no back-to-back repeat · 90 frames @ 33 ms). Session 2: RANGE ruled BOLO 100 systems first (pilot gated · method before story · fabula after schema) · closed nine storytelling systems (character 3.3.1 through style 06.2 1.5.0) · swept library (306 distills · character cites 51→165) · built advice voice (`_CANON_NODES/` pilots 01–10 · 60 questions · Arctic Shift pull) · built JUDY face deck · built Character System Review (398 nodes DONE 7/7 · library pass 'Rick') · built Subreddit ballot (166 subs · db collection `keep`). Session 1: RANGE closed DOC-SOP (sections 1–4 · nine teach-back rules · folded into 06.2 1.4.0 · goon protocol to 05_OPERATIONS) · applied SOP to SOI (edition 2026-10-04 · 46 rewrites · 11 stale · Sensei added) · added sit rep auto-rerun · DOPE SHEET header/brief/check · disclaimer to 06.1 · distilled 82 books PASS (five waves: PSY.43–49 · TEC.04–07 · CRE.05–09 · PHI.03–04 · MSX.42–88 · OCR) · closed BOOK HUNT v16 (authors · live held checks · copy buttons) · built ORANGE board (no BREVITY · inventory fixes · transcript filter) · locked story schema 2.5.0 (12 fields · 139 aliases/drops · BVX 1191–1274) · locked worldbuilding (Outliers = Moon descendants · Tori legacy+diver · Randoms prov.).",
     "plan": "BOLO 102 stage 1: all four doc types for 396 core components (ETA from count). Stage 2: interface layer (N² diagram, systems-design Zotero sources). Then hand-build fabula phase 2 (eras 1–5, no sim, plain). PCP visit Mon 10/5 10:00 and follow-ups. Stash identify finish (~4% at start, hours est.).",
     "you": "Executed five sessions across 10/3–10/4. Session 5: counted BOLO 102 core (58 docs · 396 components · 470 parts) · reset face deck to four originals (15 files removed) · fixed VS Code crash (937→0 errors) · built PMCS prep (pelvic-floor dropped · fitness opened · topic bullets). Session 4: published ten review pages (REVIEW 01–09 live · 00 when read-only cleared) · locked pattern library 1.0.0 (foundation · two primitives · proof ten-for-ten) · JUDY app (Chrome manifest · icon-192/512px · service worker) · ppt.py audio-recovery patch · disabled Nahimic (service · tasks · process · NAHIMIC station). Session 3: applied BASE-BATCH-1 (variable registry 1.2.0 +94 · module registry 1.1.0 · truth SSOT · character slice 3.3.2 · TEI clamp) · applied TOUCH-BATCH-1 (Touchstones 1.0.0 · 10 files · pushback ids · check.py) · built Command Reference (293 pages · 1,581 Mermaid · RANGE 292/292) · upgraded JUDY faces (MP4 · pools · SFW · 50 MB · 8 picks · no repeat · 90 fps). Session 2: ruled BOLO 100 systems first (pilot gated · method/story/schema) · closed nine systems (3.3.1–1.5.0) · swept library (306 · 51→165) · built advice voice (01–10 · 60 Qs · Arctic Shift) · built JUDY face deck · built Character Review (398 nodes · DONE 7/7) · built Subreddit ballot (166 subs). Session 1: closed DOC-SOP (1–4 · nine rules) · applied SOP (SOI 46 rewrites · sit rep auto-run · DOPE SHEET header) · distilled 82 books PASS (five waves) · closed BOOK HUNT v16 (authors · checks · buttons) · built ORANGE board (no BREVITY) · locked schema 2.5.0 (12 fields · 139 aliases · BVX 1191–1274) · locked worldbuilding (Outliers · Tori · Randoms).",
     "next": "BOLO 102 stage 1 (all four doc types · 396 components · ETA from count) → stage 2 (interface layer · N² · systems-design Zotero) → fabula phase 2 (eras 1–5 · hand-built · plain). PCP visit Mon 10/5 10:00 and follow-ups. Stash identify finish (~4%, hours est.). BOLO 97 hunt (FagMasterPDX other book · three X accounts). BOLO 98 board refinement. Four schema fields held. Tori canon Expressive Range 2→4 (VM fill phase 2). Two stale docs (spine tree line 162 · 06.2 lines 122/130). Reference republish after doc changes. Cold re-check DOC-SOP 4.3 at session open. Read-through Command Reference before fabula."
@@ -228,10 +231,10 @@
    "id": "I",
    "name": "The Fresh Ten",
    "kind": "list",
-   "plain": "These are the ten things touched most recently, newest first. They come from the Moved sections the close-outs wrote. The newest session ran 10/4 17:07 to 23:50. Nine autosave windows date the work. Each window matches an item in Moved, so nothing is unaccounted. There are no named commits.",
+   "plain": "These are the ten things touched most recently, newest first. The close-outs wrote them into the Moved sections. The newest session ran 10/4 17:07 to 23:50. Nine autosave windows date the work. Each window matches an item in Moved. Nothing is unaccounted. There are no named commits.",
    "strand": {
-    "last": "The 10/4 late session opened BOLO 102 and ruled core first. It also ruled the studio name BoldVenture and fixed the VS Code crash. The afternoon session finished the documentation for all ten systems.",
-    "plan": "Finish the documentation for every system before the fabula. Then give it one access point, then read the set through, then write the fabula.",
+    "last": "The 10/4 late session opened BOLO 102 and ruled core first. It also ruled the studio name BoldVenture. It fixed the VS Code crash too. The afternoon session finished the documentation for all ten systems.",
+    "plan": "Finish the documentation for every system before the fabula. Then give it one access point. Then read the set through. Then write the fabula.",
     "you": "You said, \"Let's get all the documentation done for all the systems before Fabula\". You ruled core first for BOLO 102. You ruled the studio is BoldVenture and Ultrasin is its ORANGE arm.",
     "next": "Build stage 2 of BOLO 102, the interface layer. Hand-build the environments. Read the Command Reference through. Then rule the two stale invariant lines."
    },
@@ -270,7 +273,7 @@
     },
     {
      "n": 5,
-     "t": "**BOLO 100: docs before fabula finished, ten for ten ALL PASS.** The script `_tools/review/build.py` learned each system's layout and now guards against hollow passes. REVIEW 00-09 is published.",
+     "t": "**BOLO 100: docs before fabula finished, ten for ten ALL PASS.** The script `_tools/review/build.py` learned each system's layout. It now guards against hollow passes. REVIEW 00-09 is published.",
      "next": "Hand-build the environments, then start the fabula.",
      "trunk": "BLACK",
      "s": "done",
@@ -278,7 +281,7 @@
     },
     {
      "n": 6,
-     "t": "**JUDY became an app, and Nahimic was killed.** The face deck runs in Chrome `--app`. The script logs output to `judy.session.log` and re-scans the mic on device loss. Four Nahimic tasks and the service are disabled.",
+     "t": "**JUDY became an app, and Nahimic was killed.** The face deck runs in Chrome `--app`. The script logs output to `judy.session.log`. It re-scans the mic on device loss. Four Nahimic tasks and the service are disabled.",
      "next": "Say \"go for launch\" and check the new stations come up.",
      "trunk": "OPERATOR",
      "s": "done",
@@ -310,7 +313,7 @@
     },
     {
      "n": 10,
-     "t": "**The systems sweep closed every storytelling system, and the library pass raised the citations.** Character went to 3.3.1 and cites 165 sources, up from 51. BOLO 99 and the 166-sub ballot also sit open from this session.",
+     "t": "**The systems sweep closed every storytelling system.** The library pass raised the citations. Character went to 3.3.1 and cites 165 sources, up from 51. BOLO 99 and the 166-sub ballot also sit open.",
      "next": "Answer the open BOLO 99 calls and cast the ballot picks.",
      "trunk": "BLACK",
      "s": "done",
@@ -855,6 +858,12 @@
      "label": "Open, slow",
      "items": [
       {
+       "t": "**102** ONE ACCESS POINT — all documentation, done and reachable from one place, before fabula. All four doc types (concept · reference · how-to · tutorial) for each system; interface layer next. Recon done, scope recs given. 58 core docs · 396 components · 470 parts.",
+       "trunk": "BLACK",
+       "s": "open",
+       "when": "10/4"
+      },
+      {
        "t": "**3** BBRT profile · **5** Chief↔Claude interface · **8** GitHub purge · **9** Google outdated-content · **14** taxonomy Stage 2/3 · **16** music-video grammar · **18** spine Stage 2 · **41** locus system.",
        "trunk": "BLACK/ORANGE",
        "s": "open"
@@ -940,6 +949,12 @@
      "next": "Referral from the PCP consult"
     },
     {
+     "item": "Fitness + diet",
+     "s": "hot",
+     "status": "opened 10/4",
+     "next": "Health visit referral; join gym; begin training program until plateau"
+    },
+    {
      "item": "Employment",
      "s": "hot",
      "status": "unemployed since 9/3 · BOLO 83 six applications submitted 9/24, two held; Part 107 study queued · Food Safety interview held 9/25; callbacks watched",
@@ -964,10 +979,15 @@
    "id": "VI",
    "name": "The leverage line",
    "kind": "line",
-   "plain": "",
-   "strand": {},
-   "line": "",
-   "why": ""
+   "plain": "Chief fired the launch sequence at 01:03 on 10/5. All nine stations came up GO. BOLO 102 opened last night, and today has one fixed clock at 10:00.",
+   "strand": {
+    "last": "Claude opened BOLO 102 core first: 58 docs and 396 components. Claude built the prep for the 10:00 visit.",
+    "plan": "BOLO 100 says every system is done and the whole fabula is built before any pilot writing.",
+    "you": "You ruled systems first. You opened BOLO 102. You have the 10:00 visit today.",
+    "next": "Keep the 10:00 visit. After it, say go on the BOLO 102 core pass."
+   },
+   "line": "Make the 10:00 visit today, then run the BOLO 102 core pass.",
+   "why": "The visit is the only fixed clock on the board. The prep is already built. BOLO 102 is the newest open front under the systems-first gate."
   },
   {
    "id": "VII",
