@@ -21,7 +21,17 @@ source_version: 1.2.2
 3. Let the AI sanitize the input. Let it map the input to the frame and the body for its page type (07.2).
 4. Let the AI refine for hedging.
 5. Let the AI name the file `📐 ssot_[category]_[name].md`.
-6. Save the file in the folder for its category: epistemology to `00_EPISTEMOLOGY`, narrative_frameworks to `01_NARRATIVE_FRAMEWORKS`, character_systems to `02_CHARACTER_SYSTEMS`, plot_systems to `04_PLOT_SYSTEMS`, operations to `09_OPERATIONS`, style_guides to `07_STYLE_GUIDES`.
+6. Save the file in the folder for its category.
+
+   | Category | Folder |
+   |---|---|
+   | epistemology | `00_EPISTEMOLOGY` |
+   | narrative_frameworks | `01_NARRATIVE_FRAMEWORKS` |
+   | character_systems | `02_CHARACTER_SYSTEMS` |
+   | plot_systems | `04_PLOT_SYSTEMS` |
+   | style_guides | `07_STYLE_GUIDES` |
+   | operations | `09_OPERATIONS` |
+
 7. Ask Chief where content for domains 03, 05, 06 and 08 lands, because no category names them.
 
 ## Check the AI's output

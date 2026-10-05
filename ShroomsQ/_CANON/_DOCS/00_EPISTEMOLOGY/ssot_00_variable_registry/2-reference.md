@@ -120,6 +120,10 @@ Each variable entry has these fields.
 
 The Slice Fields section uses one table row per field. Its columns are Canonical Path, Type, Scale Class, Tag, Source, Consumer, Values and sub-fields. The Behavior of each slice field lives in the slice layer paragraph it cites.
 
+### Retire a variable
+
+Chief rules each retirement. The author keeps the entry and marks it retired, with the date and the BOLO. The author names any replacement and keeps an alias row for the old name. The author removes the variable from every Feeds line. Character records keep their data. The author adds a version-history row.
+
 ## Tier 1 Variables
 
 ### T1.CORE.basevalue
@@ -650,6 +654,6 @@ State diffs use the `STT` prefix. They mirror the variable they modify, with ext
 | `META.version` | str | Record version |
 | `META.storyform_id` | str | Bound storyform |
 
-Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. Until Chief rules, `REL` stays a declared prefix with its one example.
+Chief decides each `REL` variable. The author fills all twelve Registry Format fields for it. The author checks first that no existing relational field already holds it. Three fields hold relations today. They are `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`. Until Chief rules, `REL` stays a declared prefix with its one example.
 
 Related pages: [concept](1-concept.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

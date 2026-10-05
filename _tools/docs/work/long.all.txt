@@ -1,32 +1,17 @@
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/1-concept.md
-- *The mind model: one base record never changes, and every change over the story is a diff that points to an event.*
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_state_architecture/2-reference.md
-- *The structure: an event produces a state diff, the diff plus the base gives the character at a moment, and relationships keep their own record.*
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_character_systems_vertical_slice/1-concept.md
-- *The mind model: one claim, a wound-shaped want revealed under pressure, drives twelve layers, three tiers and one computed data block.*
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_l9_eros_synthesis/1-concept.md
-- *The mind model: one authored instance was too thin, so 25 sources were read as a whole, and ten ruled changes reshaped layer 9.*
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_astrology_ingest/1-concept.md
-- *The mind model: the form turns the astrology method into one fixed record that a checker can read the same way every time.*
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/1-concept.md
-- *The mind model: the form is the first gate of the character pipeline, filled by dependency, traceable by report, and ended by a lock.*
-## ShroomsQ/_CANON/_DOCS/02_CHARACTER_SYSTEMS/ssot_02_template_dramatica_ingest/2-reference.md
-- *The fill order: Section 1 first, then 4, then 3 and 2, then 6, 5 and 7, the log alongside, and Section 10 last before the handoff.*
-## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_state_architecture/1-concept.md
-- *The mind model: one base slice never changes, and every version of a place is a dated diff laid on top of it.*
-## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_synthesis/1-concept.md
-- *The mind model: 42 distills read against a fixed frame produce deeper layers, nine recurring moves and ten ruled changes, with instance work parked.*
-## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/1-concept.md
-- *The mind model: setting is the pressure field, built at character grade, thin by default and bound to the argument at S12.*
-## ShroomsQ/_CANON/_DOCS/03_SETTING_SYSTEMS/ssot_03_setting_system/2-reference.md
-- *The structure: the taxonomy classifies the place, the slice describes it, the cards put it on the page, and DCUS is the worked example.*
-## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/1-concept.md
-- *The mind model: one world timeline sits under every story, made of single-transition events joined by typed edges and dated by movement.*
-## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_fabula/2-reference.md
-- *The structure: the fabula owns the event record, the edges, the clock and the origin moments, and hands events to three neighbors.*
-## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/1-concept.md
-- *The mind model: every trope gets an address among 135 nodes, and a walk moves only along the rail Dramatica locked.*
-## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/2-reference.md
-- *The structure: nodes, tropes and edges feed the walk, and the walk hands a proposal to the fabula, a seat to the plot card and a grid to the workspace view.*
-## ShroomsQ/_CANON/_DOCS/04_PLOT_SYSTEMS/ssot_04_trope_graph/3-how-to.md
-- *The walk in order: pick a throughline, move one signpost at a time, seat one sequenced node, then pull tropes for detail.*
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot epistemology truth verification/3-how-to.md
+- A qualifying id is a BVX number or a subject code (PSY, TEC, MIL, MSX) that names a held library file.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_base_60_number_system/3-how-to.md
+- If two valid values sit equally near, or the nearest breaks a constraint, ask Chief to pick the direction by narrative need.
+## ShroomsQ/_CANON/_DOCS/00_EPISTEMOLOGY/ssot_00_variable_registry/2-reference.md
+- The author checks first that no existing relational field already holds it: `T1.SOCIAL.knowledge_map`, `T3.FUNC.relational_roles` and `T2.WOUND.relational_refs`.
+## ShroomsQ/_CANON/_DOCS/06_THEME_SYSTEMS/ssot_06_theme_system/3-how-to.md
+- Set `keys.theme` to the one rail (R1 to R4) whose debate the trope argues, or to null if it argues none.
+## ShroomsQ/_CANON/_DOCS/07_STYLE_GUIDES/ssot_07_2a_writing_guide/2-reference.md
+- The dependency template (`♨️_template_ssot_09_operations_standard_structure_template`) has eight components in order: YAML frontmatter, H1 title, Table of Contents, Purpose, Core Methodology, Implementation, Examples, Version History.
+- Chief decides whether the five header fields (`reader`, `doc_type`, `owner`, `state`, `reviewed`) join the template now or at the schema pass.
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/how_to_use_goon_room/2-reference.md
+- The writer then moves it to its home: a `#ssot-candidate` goes to an SSOT doc, and an `#auth-candidate` goes to `_AUTHORITATIVE/`.
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_09_operations_pm_holdings_inventory/2-reference.md
+- The Command re-sweeps it when BOLO 25 (the standard PM flow) builds a step, and whenever a listed holding changes state.
+## ShroomsQ/_CANON/_DOCS/09_OPERATIONS/ssot_ai_instruction_protocol/3-how-to.md
+- Save the file in the folder for its category: epistemology to `00_EPISTEMOLOGY`, narrative_frameworks to `01_NARRATIVE_FRAMEWORKS`, character_systems to `02_CHARACTER_SYSTEMS`, plot_systems to `04_PLOT_SYSTEMS`, operations to `09_OPERATIONS`, style_guides to `07_STYLE_GUIDES`.

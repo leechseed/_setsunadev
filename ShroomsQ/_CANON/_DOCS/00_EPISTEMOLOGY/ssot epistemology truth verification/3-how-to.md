@@ -55,7 +55,7 @@ Look up each framework in the [reference](2-reference.md).
 ## Add a Sources line to a framework
 
 1. Find a source that supports the framework. Give the framework one or two library ids at most.
-2. Check that each id qualifies. A qualifying id is a BVX number or a subject code (PSY, TEC, MIL, MSX) that names a held library file.
+2. Check that each id qualifies. A qualifying id names a held library file. It is a BVX number or a subject code: PSY, TEC, MIL or MSX.
 3. Add a line starting `Sources:` under the framework's Limitations.
 4. If no source exists, write `method, no source` with the BOLO and date. The source does this for Frameworks 3 and 4.
 5. Ask Chief to rule in any third source.

@@ -111,3 +111,7 @@ No character is changed by this ruling. It names a pattern, not a fix.
 | 0.3.0 | 2026-09-29 | Low-confidence pass: 952 definitions pulled; character nulls 348 to 94; low confidence 707 to 232 |
 | 0.2.0 | 2026-09-29 | Theme sub-index pass: 1,854 new tropes (4,948 total), 2,012 theme keys on 9 batches |
 | 0.1.0 | 2026-09-29 | BOLO 89: register stood up; 3,094 tropes fetched, keyed on 16 batches |
+
+## Rebuild the register
+
+The author runs `python _tools/tropes/fetch.py --domains` to pull the indexes. The script waits one second per request, skips cached slugs and stores no page bodies. PS batches write the keys to `_tools/bolostatus/work/89/keys.batch*.json`. The author then runs `python _tools/tropes/build_register.py` with no arguments. It writes `register.json` and `LAYERS.md` and prints the counts table.

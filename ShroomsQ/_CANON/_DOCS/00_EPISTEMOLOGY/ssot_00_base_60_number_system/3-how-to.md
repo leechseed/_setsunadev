@@ -61,7 +61,7 @@ Tables and rules live in the [reference](2-reference.md).
 1. Take the old threshold and its percentage of the old scale.
 2. Map it to the same percentage on SC-12.
 3. Round to the nearest valid value on the target scale. Respect any divisibility constraint.
-4. If two valid values sit equally near, or the nearest breaks a constraint, ask Chief to pick the direction by narrative need.
+4. Two valid values may sit equally near, or the nearest may break a constraint. Then ask Chief to pick the direction by narrative need.
 5. Record the old and new threshold, the rounding direction and the reason.
 
 Related pages: [concept](1-concept.md) · [reference](2-reference.md) · [tutorial](4-tutorial.md)

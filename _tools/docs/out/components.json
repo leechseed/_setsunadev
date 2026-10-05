@@ -280,7 +280,9 @@
    },
    {
     "name": "Registry Format",
-    "parts": []
+    "parts": [
+     "Retire a variable"
+    ]
    },
    {
     "name": "Tier 1 Variables",
@@ -813,6 +815,10 @@
    {
     "name": "COMMAND-LOCAL RECORDS (ruled 9/29, BOLO 91)",
     "parts": []
+   },
+   {
+    "name": "Rebuild the register",
+    "parts": []
    }
   ]
  },
@@ -938,6 +944,10 @@
    }
   ],
   "📐 ssot_02_l9_eros_synthesis.md": [
+   {
+    "name": "Method",
+    "parts": []
+   },
    {
     "name": "1. What this is",
     "parts": []

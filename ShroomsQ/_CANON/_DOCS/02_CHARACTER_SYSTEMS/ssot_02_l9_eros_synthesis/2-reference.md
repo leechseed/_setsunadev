@@ -32,6 +32,20 @@ flowchart LR
   TR["Trope side, 430 tropes in eight clusters"] --> M
 ```
 
+## Method
+
+Chief orders the pass and rules each change. The synthesis runs in nine steps, read from its own output:
+
+1. Collect and ID the distills.
+2. Read the whole shelf against L9.
+3. Build the per-distill register.
+4. List patterns that two or more sources reach.
+5. Survey the trope side.
+6. Write proposed changes with cites and a rec.
+7. Treat queer and male-male desire as first-class.
+8. List the open questions still undecided.
+9. Mark every change provisional.
+
 ## 1. What this is
 
 - L9 EROS has one authored instance: Victoria Midnight. The Command built her on 2026-08-15 from PSY.01 Walker, MSX.17 Perel and PSY.04 Rehor & Schiffman.

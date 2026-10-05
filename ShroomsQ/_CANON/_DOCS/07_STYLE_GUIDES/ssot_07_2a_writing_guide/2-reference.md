@@ -70,8 +70,8 @@ All metadata uses flow style for lists, to guarantee Obsidian Property rendering
 
 `status` and `last_updated` stay until the schema pass.
 
-The dependency template (`♨️_template_ssot_09_operations_standard_structure_template`) has eight components in order: YAML frontmatter, H1 title, Table of Contents, Purpose, Core Methodology, Implementation, Examples, Version History.
+The dependency template is `♨️_template_ssot_09_operations_standard_structure_template`. It has eight components, in order. They are YAML frontmatter, H1 title, Table of Contents, Purpose, Core Methodology, Implementation, Examples and Version History.
 
 Its YAML keys are `type`, `category`, `version`, `last_updated`, `applies_to`, `status`, `purpose` and `dependencies`.
 
-Chief decides whether the five header fields (`reader`, `doc_type`, `owner`, `state`, `reviewed`) join the template now or at the schema pass.
+Chief decides when the five header fields join the template: now, or at the schema pass. The fields are `reader`, `doc_type`, `owner`, `state` and `reviewed`.
