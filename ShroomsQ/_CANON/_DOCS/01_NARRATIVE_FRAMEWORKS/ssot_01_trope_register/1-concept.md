@@ -14,6 +14,21 @@ source_version: 1.0.1
 
 # The trope register: one trope layer through every system
 
+*The mind model: one register keys tropes to the layers of each domain, and tropes describe while Touchstones forbid.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The trope register, one trope layer through every system"] --> IX["Indexes pulled, character, setting, genre, sexuality and theme"]
+  R --> KY["A key points a trope at one layer, or null"]
+  R --> DF["One-line definitions only, the repo is public"]
+  R --> CN["Counts show where the index piles up"]
+  R --> CL["The Command keeps its own patterns, command-local"]
+  R --> TG["The plot trope graph is the first consumer"]
+  R --> TS["Tropes describe, Touchstones forbid"]
+  KY --> PL["A pull list for every layer"]
+```
+
 Source: [📐 ssot_01_trope_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). Look things up in the [reference](2-reference.md). Do tasks with the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).
 
 ## A trope is a reusable pattern

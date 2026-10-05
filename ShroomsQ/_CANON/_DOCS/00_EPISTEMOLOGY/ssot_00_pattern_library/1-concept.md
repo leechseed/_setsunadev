@@ -14,6 +14,23 @@ source_version: "1.0.0"
 
 # Pattern library: simple cycles, stacked
 
+*The mind model: the foundation has two halves, Truth and Pattern, and one loop runs under three cycles.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  F["Foundation"] --> T["Truth, what counts as true"]
+  F --> P["Pattern, what shapes repeat"]
+  P --> P1["Pattern 1, the Command loop"]
+  P --> P2["Pattern 2, the change cycle"]
+  F --> FA["Fabula, the world that runs"]
+  FA --> NA["Narratology, the lens, the bard's telling"]
+  NA --> O["Operations, the script that makes narrative products"]
+  T -->|"research cycle"| LP["One loop, try, check, adjust, repeat"]
+  P -->|"design patterns"| LP
+  O -->|"development cycle"| LP
+```
+
 ## A pattern is a cycle that repeats at every scale
 
 A pattern is a simple cycle. Small patterns stack on each other. The stack produces emergent structure. Chief, 10/4: "we'll be using simple patterns over and over again… then they're stacked on top each other to be emergent."

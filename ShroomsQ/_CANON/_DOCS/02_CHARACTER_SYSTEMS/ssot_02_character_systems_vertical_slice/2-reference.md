@@ -32,6 +32,24 @@ The system is the LEECHSEED Character System promoted to a system. It has three 
 
 **Touchstones:** read the [Touchstones register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
 
+*The structure: three tiers hold the twelve layers, the layers feed the computed numbers, and the numbers end in one data block.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  S["Character system, the LEECHSEED vertical slice"]
+  S --> T1["Tier 1 flat, about 75 pts, L1 CORE, L2 VITAL, L3 SOCIAL"]
+  S --> T2["Tier 2 standard, about 140 pts, L4 WILL, L5 WOUND, L6 DRIVE"]
+  S --> T3["Tier 3 deep, uncapped, L7 ORIGIN to L12 FUNCTION"]
+  SF["Storyform, keyed by storyform_id"] --> T3
+  T1 --> DS["Seven derived statistics"]
+  T2 --> DS
+  T3 --> DS
+  DS --> FL["Flag trigger conditions"]
+  FL --> DB["The structured data block"]
+  S -.-> NO["Not owned, structure to Dramatica, events to plot systems, place to the setting slice, the chart feed to character astrology"]
+```
+
 ## MIND MODELS
 
 Three diagrams in the source.

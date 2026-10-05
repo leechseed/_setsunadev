@@ -14,6 +14,22 @@ source_version: 1.1.0
 
 # Dramatica-Astrology Interface: the idea
 
+*The mind model: one interface turns Dramatica output into chart placements, in a fixed order, with the narrative always ruling.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The DAI, the API between Dramatica and Character Astrology"]
+  H --> A["Every rule traces one Dramatica output to one astrological assignment"]
+  H --> B["The order is fixed, Sun to Pluto, angles, aspects, houses, dignities"]
+  H --> C["Tables are a decision space, not a lookup"]
+  H --> D["Narrative comes first, Dramatica tension governs an aspect"]
+  H --> E["Debility is a cost, not a defect"]
+  H --> F["The 12th House holds what the character cannot see"]
+  H --> G["Tier 2 gets a sketch, a Sun, a Moon and one aspect"]
+  C --> C1["MC Domain sets the element, MC Concern sets the modality"]
+```
+
 ## The chart is derived, so it stays traceable
 
 The DAI is the API specification between Dramatica and Character Astrology. Every rule traces one Dramatica output to one astrological assignment. The designer does not pick a Sun sign because it feels right. The designer reads it off the storyform.

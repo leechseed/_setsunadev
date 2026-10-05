@@ -14,6 +14,20 @@ source_version: "1.0.3"
 
 # Markdown marking: one ink per hand
 
+*The mind model: the writer and the reader each have their own ink; a highlight ends as a vocabulary entry or a wikilink.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  M["Markdown marking, one ink per hand"] --> W["Writer"]
+  M --> R["Reader"]
+  W --> B["Bold, structure and first-instance term"]
+  W --> I["Italic, caption or aside"]
+  R --> H["Highlight, load-bearing term"]
+  H -->|"harvest script"| V["Vocabulary page"]
+  H -->|"promoted"| L["Wikilink, term with its own note"]
+```
+
 ## Two people mark one document
 
 A writer and a reader both mark the same document. The writer marks structure and the first instance of each technical term. The reader marks the terms the argument rests on.

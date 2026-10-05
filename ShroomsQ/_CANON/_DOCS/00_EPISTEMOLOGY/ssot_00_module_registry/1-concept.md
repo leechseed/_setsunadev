@@ -14,6 +14,22 @@ source_version: "1.1.1"
 
 # Module registry: one list, four statuses
 
+*The mind model: one registry lists every field module, sorts it by status, and sets build order.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Module registry, one catalog of field modules"] --> N["A module registers before it has variables"]
+  R --> A["Active, works now"]
+  R --> B["Absorbed, closed, the core schema holds the fields"]
+  R --> P["Planned, full declarations, waits for a build"]
+  R --> C["Conceptual, a scope and a reserved ID"]
+  P --> AU["The 2026-10-04 audit dropped none"]
+  P --> DP["Dependencies set the build order"]
+  DP --> D1["Decompensation on Coping"]
+  DP --> D2["LoL taxonomy on Combat"]
+```
+
 ## The registry is the complete catalog
 
 The registry lists every field module that attaches to the LEECHSEED Character System. A field module is a set of variables beneath a layer. The registry lists no doc modules. A doc module is a sibling document in `02_CHARACTER_SYSTEMS`.

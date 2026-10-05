@@ -14,6 +14,22 @@ source_version: 1.2.2
 
 # Dramatica integration protocol: the idea
 
+*The mind model: Dramatica supplies the skeleton, a locked storyform fixes every assignment, and the tiers spend it by weight.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Dramatica supplies the skeleton and nothing else"]
+  H --> A["Deterministic, a revision is a new version"]
+  H --> B["One storyform per story keeps the argument whole"]
+  H --> C["The binding record keeps the character singular"]
+  H --> D["Tiers spend Dramatica by weight, Tier 3 everything, Tier 2 a light fingerprint, Tier 1 nothing"]
+  H --> E["L12 splits into a working core and a reference table"]
+  H --> F["Upstream of everything, feeds the Dramatica Ingest Template"]
+  F --> G["Then Character Astrology and the L12 layer"]
+  A --> R["The chart, the L12 block and the state diffs all hang off one storyform version"]
+```
+
 ## Dramatica supplies the skeleton and nothing else
 
 Dramatica is the narrative structure engine of the Command's character pipeline. It states what the story is about. It assigns each character a mechanical role in that argument. It sets the terms of transformation: resolve, growth, outcome and judgment.

@@ -14,6 +14,18 @@ source_version: 1.2.1
 
 # AI instruction protocol: reference
 
+*The structure: one role, four phases in order, then the output format.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Instructional Role"] --> A["Phase 1, metadata generation"]
+  A --> B["Phase 2, linguistic constraints"]
+  B --> C["Phase 3, structural requirements"]
+  C --> D["Phase 4, execution workflow"]
+  D --> E["Output Format Requirements"]
+```
+
 The source has type `ssot_09_operations`, category operations, status canonical, version 1.2.1, last updated 2026-10-05. It applies to OVEREXITOUT, ASTRO7EX, LAKAD.
 
 ## Instructional Role

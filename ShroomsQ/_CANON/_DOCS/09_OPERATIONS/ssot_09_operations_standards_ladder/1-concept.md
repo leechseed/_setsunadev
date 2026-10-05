@@ -14,6 +14,21 @@ source_version: 0.2.3
 
 # Every document sits on one rung
 
+*The mind model: one question order sorts every document onto one of four rungs; a spec is a tag, not a fifth rung.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  L["Command Ladder, four rungs"] --> A{"Does the document forbid anything?"}
+  A -->|"No"| H["Handbook, guidance with should"]
+  A -->|"Yes"| B{"Does it measure a product?"}
+  B -->|"Yes"| S["Standard, a measurable shall"]
+  B -->|"No"| C{"Does it govern how the Command works?"}
+  C -->|"Yes"| P["Procedure, how, and mandatory"]
+  C -->|"No"| Y["Policy, what the Command is and why"]
+  T["Spec is a tag on nodes and charters, not a fifth rung"] --- L
+```
+
 The **Command Ladder** names the four rungs every Command document sits on. The rung says how binding the document is and what it may contain. Chief ruled it on 2026-09-15: "let's go with the NASA four."
 
 ## Four rungs separate what binds from what only guides

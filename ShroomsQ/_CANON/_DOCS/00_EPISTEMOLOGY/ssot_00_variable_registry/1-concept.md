@@ -14,6 +14,22 @@ source_version: "1.2.1"
 
 # Variable registry: one name, one home
 
+*The mind model: one registry is the single lookup, and its path, tiers and tags decode any variable.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Variable registry, one name, one home"] --> P["A path says what a variable is, domain, layer code, variable name"]
+  H --> NR["Naming rules keep names unique"]
+  H --> OW["Each system owns its own fields, others get one pointer row"]
+  H --> TI["The tier sets the depth"]
+  TI --> T1["Tier 1, three primary attributes"]
+  TI --> T2["Tier 2, three secondary attributes"]
+  TI --> T3["Tier 3, deep stacks for layers 7 to 12"]
+  H --> TG["Every variable carries a tag, static, dynamic or derived"]
+  H --> FM["Formulas read variables, constraints protect them"]
+```
+
 ## Every variable has one lookup
 
 The registry is the single lookup for every variable in the character system. Any document, template, formula, flag or tool that names a variable uses the canonical name defined here. A designer registers a new variable here first.

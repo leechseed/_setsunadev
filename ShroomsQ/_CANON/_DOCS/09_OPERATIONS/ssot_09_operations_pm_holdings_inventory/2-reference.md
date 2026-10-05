@@ -14,6 +14,24 @@ source_version: 1.0.1
 
 # PM Holdings Inventory: reference
 
+*The structure: five sections sort the holdings by source; three more name what is missing, the path taken and the addendum.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["PM Holdings Inventory"] --> H
+  subgraph H["Five kinds of holdings"]
+    A["PMBOK and PMI material"]
+    B["Marine Corps doctrine as PM method"]
+    C["Pyramid Principle and answer-first doctrine"]
+    D["Templates, registries, gates, process docs"]
+    E["The Ultrasin master registry format"]
+  end
+  R --> F["Finished vs missing"]
+  R --> G["Cheapest path to a standard flow, taken 2026-09-03"]
+  R --> J["Addendum 2026-09-09"]
+```
+
 The source has type `register / survey`, version 1.0.0, tier operations, domain 09_OPERATIONS. Status: survey banked 2026-09-03, feeding BOLO 25. Date 2026-09-03. Method: an Explore-agent sweep of the repo and archive at medium breadth, with paths verified where load-bearing. Trunk: BLACK (systems), serving every trunk. Related: BOLO.md #25, SOP.md, STATE.md, PROJECTS.md, DOCTRINE-0-INVARIANTS.md, BVX-ULTRASIN-twin-track.md, oscar-mike/lab-venture.md.
 
 **The finding:** the method is already written; what is missing is assembly.

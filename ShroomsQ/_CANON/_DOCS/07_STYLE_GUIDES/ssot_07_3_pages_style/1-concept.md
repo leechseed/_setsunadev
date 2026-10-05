@@ -14,6 +14,23 @@ source_version: "1.0.1"
 
 # Pages style: two layers, one line between them
 
+*The mind model: a page is brand-facing or a working tool, and the page rulings govern the tool side.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  P["A Command page"] --> F["Brand-facing page"]
+  P --> T["Working tool page"]
+  F --> B["Bold Venture Design System, rose"]
+  T --> U["Page rulings, orange accent"]
+  U --> R1["Thin header"]
+  U --> R2["Hoverable terms"]
+  U --> R3["Static Mermaid"]
+  U --> R4["One standing URL"]
+  U --> R5["Learning ships small"]
+  U --> R6["Dark is the only theme"]
+```
+
 ## Every page answers to two layers
 
 Every artifact and tool page the Command publishes answers to two layers. The foundation is the Bold Venture Design System. It serves DARKROOM and anything public-facing. The page rulings are the internal-tool layer. They serve every sit rep, DOPE SHEET, SOI and TM.

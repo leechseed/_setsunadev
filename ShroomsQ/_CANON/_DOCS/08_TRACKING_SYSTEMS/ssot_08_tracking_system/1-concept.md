@@ -14,6 +14,24 @@ source_version: 1.1.1
 
 # The tracking system: one store, many views
 
+*The mind model: one store of dated records sits under two rulers and feeds the views; the time code addresses every moment.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  T["The tracking system"] --> S["One store of dated records"]
+  S --> R1["Checkpoint, a full state at a fabula event"]
+  S --> R2["Story point, a one-field change"]
+  S --> R3["Cable, setup to payoff"]
+  S --> V1["Character state view"]
+  S --> V2["Setting overlays view"]
+  S --> V3["Scene arrangement view"]
+  T --> W["World clock, when things happened"]
+  T --> G["Grid, when the audience is told"]
+  T --> C["Time code, an address for every moment"]
+  W ---|"two rulers"| G
+```
+
 ## Tracking writes down what is true, then what changed it
 
 Tracking means writing down what's true at one moment, and the event that changed it. A moment can belong to a character, a place, a trope or the story world.

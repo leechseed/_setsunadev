@@ -14,6 +14,23 @@ source_version: 0.1.1
 
 # A project runs on events, a brief, and gates
 
+*The mind model: the flow sizes the work in three levels, ends each phase on an event gate, and exists to end the stall pattern.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  X["The stall pattern"] -->|"the flow ends it"| F["Project Flow"]
+  F --> L["Three levels, project is campaign, session is operation, task is engagement"]
+  F --> D["Declare an end state, an intent and a mode"]
+  F --> P["Six phases ending on events"]
+  P --> G["A gate at each boundary"]
+  G --> A["GO"]
+  G --> B["NO-GO"]
+  G --> H["HOLD, names the blocking decision, the decider and the date"]
+  F --> C["Chief does the thinking that cannot be delegated"]
+  F --> S["Shrinks to fit, brief, gate, sit rep, ENDEX"]
+```
+
 The **Project Flow** states how a project runs in the Command. It assembles instruments that already exist into one flow. They are the six-phase lifecycle of the Bold Venture Development Doctrine and the brief. They also include the gate, the decision ledger, and the session protocol. It governs the **project**. The SOP governs the **session**.
 
 ## The flow ends one failure above all others

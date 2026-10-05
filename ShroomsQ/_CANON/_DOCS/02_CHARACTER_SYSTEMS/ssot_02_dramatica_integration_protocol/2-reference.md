@@ -16,6 +16,23 @@ source_version: 1.2.2
 
 Source: [🔮 ssot_02_dramatica_integration_protocol.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md). Concept: [1-concept.md](1-concept.md).
 
+*The structure: one locked storyform feeds the ingest template, the template feeds two consumers, and a revision restarts the chain.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  SF["Locked storyform"] --> IN["Dramatica Ingest Template"]
+  IN --> CA["Character Astrology derives the natal chart"]
+  IN --> L12["The 12-Layer system fills L12 directly"]
+  CA --> L111["L1 to L11 through the astrology-to-layer mapping"]
+  IN --> G["Step 1 gate confirms both ingest templates are locked"]
+  SF --> T3["Tier 3 full, binding record, L12 core block, extended sub-table"]
+  SF --> T2["Tier 2 partial, element signature, relational role tags"]
+  SF --> T1["Tier 1 none, L1 to L3 only"]
+  RV["Revised storyform, a new version"] -.-> CS["Cascade, regenerate the chart, re-run the L12 block, re-check each state diff"]
+  CS -.-> SF
+```
+
 ## What Dramatica Is in This System
 
 The narrative structure engine. It produces the thematic argument and assigns each character a mechanical role.

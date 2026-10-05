@@ -14,6 +14,22 @@ source_version: 1.0.0
 
 # The texture system: the telling at character grade
 
+*The mind model: the system owns the telling and nothing story-side, and a baseline profile cycles through scene-card overrides.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  T["The texture system, the telling at character grade"] --> OW["Owns the discourse side, the TELLING PROFILE and the telling line"]
+  T --> NO["Owns nothing story-side, structure, events, place, persons"]
+  T --> LW["Who speaks and who sees are two decisions"]
+  T --> DL["Distance is the dial the craft books turn"]
+  T --> BS["Baseline profile"]
+  BS --> OV["A scene card telling line fires an override"]
+  OV --> BS
+  T --> T12["T12 FUNCTION ties the telling to the storyform"]
+  T --> OX["The OXO profile waits, phase 2"]
+```
+
 Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md). Look things up in the [reference](2-reference.md). Do tasks with the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).
 
 ## Texture earned a system

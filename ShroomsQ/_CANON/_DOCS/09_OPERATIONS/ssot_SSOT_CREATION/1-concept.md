@@ -14,6 +14,20 @@ source_version: 1.8.1
 
 # An SSOT is made by a fixed process
 
+*The flow: a sorting question sends methodology down five phases to its file and sends project-specific content elsewhere.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  Q{"Is the content a methodology?"} -->|"No, project-specific"| X["_AUTHORITATIVE/"]
+  Q -->|"Yes"| P1["Classify"]
+  P1 --> P2["Generate content"]
+  P2 --> P3["Initialize YAML"]
+  P3 --> P4["Fix the Properties display if needed"]
+  P4 --> P5["Name and store the file"]
+  P5 --> S["_CANON/_SSOT/"]
+```
+
 The **SSOT creation guide** defines the structural and linguistic requirements for **Single Source of Truth (SSOT)** documentation. Its job is to keep every framework canonical, precise, and integrated into the Obsidian knowledge base.
 
 ## The language carries the authority

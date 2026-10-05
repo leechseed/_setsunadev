@@ -14,6 +14,23 @@ source_version: 1.0.1
 
 # The three-check pass: three questions, never bundled
 
+*The mind model: three principles become three separate sweeps over twelve elements, and every answer is kept.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  MP["Modern Poetics, P8, P9 and P10"] --> P8["Fantasy Drive, TS 2:8"]
+  MP --> P9["Sexy Check, TS 2:9"]
+  MP --> P10["Aesthetic Check, TS 2:10"]
+  P8 --> SW["Three sweeps, never bundled per element"]
+  P9 --> SW
+  P10 --> SW
+  SW --> RO["The flagship canon roster of twelve elements"]
+  RO --> NO["A NO is a correct answer"]
+  RO --> GP["A GAP is a finding"]
+  RO --> KP["Chief kept every line, all 36 stand"]
+```
+
 Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_three_check_pass.md). Look things up in the [reference](2-reference.md). Do tasks with the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).
 
 ## Modern Poetics gives three questions

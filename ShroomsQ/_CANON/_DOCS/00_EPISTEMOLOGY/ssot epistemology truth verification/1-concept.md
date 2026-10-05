@@ -14,6 +14,21 @@ source_version: "1.0.2"
 
 # Truth verification: why ten frameworks
 
+*The mind model: ten frameworks test many kinds of claim, and two rules decide checked or open.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  K["Many kinds of claim, a trait, a place, an event"] --> H["Ten truth frameworks"]
+  H --> L["Each framework lists its limits"]
+  H --> DM["Frameworks fit the domain"]
+  H --> S["Each story system makes one kind of claim"]
+  S --> R1["Rule one, a claim one framework cannot confirm needs a second"]
+  S --> R2["Rule two, Skepticism tests any claim in any system"]
+  R2 --> OK["A claim that survives is checked"]
+  R2 --> OP["A claim that fails stays marked open"]
+```
+
 ## One test cannot prove every claim
 
 The Command makes many kinds of claim. A trait is true to a person. A place exists. An event caused the next one. Each kind needs a different test.

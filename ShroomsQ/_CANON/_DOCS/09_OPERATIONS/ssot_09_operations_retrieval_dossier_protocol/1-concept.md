@@ -14,6 +14,21 @@ source_version: 1.0.0
 
 # The dossier tells the operator what to do
 
+*The mind model: two documents go in, one dossier comes out, and its fixed structure ends in directives for the operator.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  O["Operator"] --> A["Document A, the raw dataset"]
+  O --> B["Document B, the protocol"]
+  A --> G["Agent"]
+  B --> G
+  G --> C["Document C, the dossier"]
+  C --> S["Eight H2 sections in a fixed order"]
+  S --> D["Directives for the operator"]
+  C --> T["Decision-grade test, six conditions"]
+```
+
 A raw retrieval batch is noise: similarity scores, file paths, and excerpts. The **Retrieval Dossier** is the operational analysis that turns the noise into structured signal, explicit risks, and prioritized operator directives.
 
 ## One question governs the whole output

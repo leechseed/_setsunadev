@@ -14,6 +14,22 @@ source_version: 1.0.1
 
 # The scale ladder: containers hold, threads change
 
+*The mind model: containers hold, threads change, and every rung carries a completion test.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The scale ladder, containers hold, threads change"] --> C["Containers, rungs with boundaries"]
+  H --> T["Threads, tracked lines of change at any span"]
+  H --> TS["Touchstones forbid"]
+  C --> R1["Scene, turns a value and carries five commandments"]
+  R1 --> R2["Sequence, answers its question"]
+  R2 --> R3["Story, closes every throughline"]
+  R3 --> R4["Universe, never completes, stays consistent"]
+  TS --> CL["Last clause of every test, no in-scope Touchstone is breached"]
+  H --> SN["A series nests stories four ways"]
+```
+
 ## The spine says what a story is, the ladder says what size it comes in
 
 The spine defines a story. The ladder answers a different question: what size things come in and how they nest. It runs from scene to sequence to arc to story to stories within one large series. Each unit gets a definition, a completion test, a governing system and holdings.

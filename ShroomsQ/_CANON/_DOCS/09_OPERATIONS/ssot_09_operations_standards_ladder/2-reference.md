@@ -14,6 +14,22 @@ source_version: 0.2.3
 
 # Command Ladder: reference
 
+*The structure: six components, with the network split into three tables.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Command Ladder"] --> A["The four rungs"]
+  R --> B["The rule that decides the rung"]
+  R --> C["The tag"]
+  R --> D["The filing table"]
+  R --> E["The network, flat index"]
+  R --> G["Governance"]
+  E --> E1["Table 1, by document"]
+  E --> E2["Table 2, by outside body"]
+  E --> E3["Table 3, by level and world"]
+```
+
 The source has type `ssot_procedure`, category operations, frontmatter version 0.2.3 (the 1.0.0 stamp of 2026-10-04 is withdrawn). Its last update is 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Rung: procedure. Status: ruled 2026-09-15 by Chief ("let's go with the NASA four"); the filing table grows a row per document. BOLO 50. Its purpose line: it "names the four rungs every Command document sits on, the shall/should rule that decides the rung, the frontmatter tag that records it, and the filing table of record." Read the Touchstones register first (the source's front-door line).
 
 ## The four rungs

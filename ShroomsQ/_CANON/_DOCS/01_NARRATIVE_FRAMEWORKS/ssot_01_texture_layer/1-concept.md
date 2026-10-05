@@ -14,6 +14,27 @@ source_version: 1.0.1
 
 # The texture layer: the telling is half of narrative
 
+*The mind model: every narrative has a story side and a discourse side, and texture holds the discourse side.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  N["Every narrative"] --> S["Story, what is told"]
+  N --> D["Discourse, how it is told, the texture layer"]
+  S --> S1["The spine, the scale ladder and the setting system"]
+  D --> TQ["A telling is ten answers, the Ten Questions"]
+  D --> TP["The TELLING PROFILE records the choices"]
+  TP --> OV["A scene card can override with a telling line"]
+  D --> A1
+  subgraph PL["Every telling runs one pipeline, Chatman's six stations"]
+    A1["Real author"] --> A2["Implied author"]
+    A2 --> A3["Narrator"]
+    A3 --> A4["Narratee"]
+    A4 --> A5["Implied reader"]
+    A5 --> A6["Real reader"]
+  end
+```
+
 Source: [📐 ssot_01_texture_layer.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_layer.md). Look things up in the [reference](2-reference.md). Do tasks with the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).
 
 ## Story and discourse are two sides of every narrative

@@ -14,6 +14,25 @@ source_version: 1.3.1
 
 # The theme system: reference
 
+*The structure: the method builds four parts in order, the worked instance fills them for OVEREXITOUT, and the scene tests and the handshake check them.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Theme system"] --> M["The method"]
+  M --> A["The controlling idea"]
+  A --> B["The rails"]
+  B --> C["The value scale"]
+  C --> D["The motifs"]
+  R --> W["The worked instance, OVEREXITOUT"]
+  W --> G["The civilization gauges"]
+  W --> F["How the sentence maps onto the storyform"]
+  A --> S["The scene tests"]
+  B --> H["The handshake with Touchstones"]
+  R --> O["Tropes"]
+  R --> P["Parked, wave 2"]
+```
+
 Front matter facts: trunk BLACK, tier narratology, applies to OVEREXITOUT (EVIL CHECK parked, wave 2, per 80-D). Dependencies: oxo-storyform, ssot_01_story_spine_comparative_tree (L6), ssot_01_touchstones_register. Sources: MSX.36, BVX.0236, BVX.0193, CRE.06, the BOLO 80 DISTILL and RESEARCH-BIOPOWER files.
 
 ## THE METHOD — how any story builds its theme

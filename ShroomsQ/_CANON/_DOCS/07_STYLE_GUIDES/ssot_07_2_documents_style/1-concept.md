@@ -7,12 +7,32 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2_documents_style.md"
-source_version: "1.5.0"
+source_version: "1.6.0"
 ---
 
 **Who it's for:** anyone writing for the Command · **What it does:** explains why documents style 07.2 works as it does · **Type:** concept
 
 # Documents style: why every page has one job
+
+*The mind model: one job per page leads to four types, and the header, the words, the voice, the scan, the review and the replies serve that page.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  D["Documents style 07.2"] --> J["One page, one job"]
+  D --> H["Header answers three questions"]
+  D --> W["Plain words"]
+  D --> V["Voice follows the type"]
+  D --> S["Built for the scan"]
+  D --> R["Review in passes"]
+  D --> N["Replies and names"]
+  P["Prose style 07.1"] ---|"neither rules for the other"| D
+  J --> T["Four types"]
+  T -->|"writing order"| A["Concept"]
+  A --> B["Reference"]
+  B --> C["How-to"]
+  C --> E["Tutorial"]
+```
 
 ## Two things are called style
 
@@ -59,6 +79,10 @@ The reviewer checks facts, then words, then reads aloud. A ruled page is never e
 ## Replies and names follow the same law
 
 The reply format lives in SOP §7. This guide only locates its rules. The naming rulings apply to every document, this one included. They are the plain register, the Command format, clickable file links, Touchstone, and the Command.
+
+## A visual says the same thing a second way
+
+A visual gives the reader the shape of a page before the sentences. Every concept page opens with a mind model, and the job picks the picture: a flow for a process, a tree for a hierarchy. A visual never carries a claim the words lack, because a reviewer checks the picture against the text.
 
 ## The long read
 

@@ -16,6 +16,22 @@ source_version: 3.3.4
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_character_systems_vertical_slice.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md).
 
+*The mind model: one claim, a wound-shaped want revealed under pressure, drives twelve layers, three tiers and one computed data block.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["A character is a wound-shaped want revealed under pressure"]
+  H --> A["The same cycle runs at every level, want, counter-will, pressure, the lie speaks, face it or shield again"]
+  H --> B["Twelve layers split by domain, overlap is an error"]
+  H --> C["Depth follows rank, Tier 1 background, Tier 2 recurring support, Tier 3 protagonists and antagonists"]
+  H --> D["Structure, events and place belong to neighbors"]
+  H --> E["Numbers are computed, seven derived statistics and five flags"]
+  H --> F["One structured data block, machine-readable"]
+  H --> G["Victoria Midnight is the first locked example, gaps stay visible"]
+  H --> T["Every field has a tag, a version and a source"]
+```
+
 ## A character is a wound-shaped want revealed under pressure
 
 The system rests on one claim. A character is not a trait list. A character is a want, shaped by a wound, that shows itself when pressure rises.

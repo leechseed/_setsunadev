@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2_documents_style.md"
-source_version: "1.5.0"
+source_version: "1.6.0"
 ---
 
 **Who it's for:** a writer or reviewer doing one documentation task · **What it does:** gives numbered steps for each recurring 07.2 task · **Type:** how-to
@@ -77,6 +77,16 @@ Rule numbers refer to the [reference](2-reference.md).
 3. Run the plural-noun test on each list.
 4. Open with only what the reader already accepts.
 5. Join sections with a hinge sentence that repeats the last key word (rule 3.6).
+
+## Add a visual to a page
+
+1. Pick one claim the page already makes in words (rule 5.1).
+2. Pick the picture by the job: flow, tree, graph, state diagram, timeline, matrix or mind model (rule 5.2).
+3. Place it by the page type. A concept page opens with a mind model. A reference page adds a structure diagram when its system has more than five components (rule 5.3).
+4. Write the diagram as Mermaid in the Command's colors, in the page's static markup (rule 5.5).
+5. Use the page's own words for the labels. Add no new fact.
+6. Write a one-line caption that tells the reader what to look at (rule 5.4).
+7. Check every box and arrow against the text before you call the page reviewed (rule 5.1).
 
 ## Find the reply rule you need
 

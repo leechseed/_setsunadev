@@ -14,6 +14,26 @@ source_version: "1.0.1"
 
 # Module architecture: reference
 
+*The page as a tree: what a module is, how it attaches, what it may touch, how it lives.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Module architecture"] --> A["The Core Principle"]
+  R --> B["What a Module Is"]
+  R --> C["Module Anatomy"]
+  R --> D["The Attachment Protocol"]
+  D --> D1["Step 1, Declare Attachment Points"]
+  D --> D2["Step 2, Validate Against Layer Domain"]
+  D --> D3["Step 3, Register Variables"]
+  D --> D4["Step 4, Declare Access Pattern"]
+  R --> E["Data Access Rules"]
+  R --> F["Module API Contract"]
+  R --> G["Module Lifecycle"]
+  R --> H["Application Architecture Vision"]
+  R --> I["Module Registry Format"]
+```
+
 Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_architecture.md`, version 1.0.1, status canonical, trunk BLACK, tier foundation, last updated 2026-10-04. Dependencies: `ssot_00_variable_registry`, `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Registry of modules: [ssot_00_module_registry](../ssot_00_module_registry/2-reference.md).
 
 ## The Core Principle

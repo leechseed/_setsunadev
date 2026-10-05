@@ -14,6 +14,25 @@ source_version: 0.1.2
 
 # The loop turns one exchange into a built thing
 
+*The mind model: the loop runs eight stages from capture to resume, and it exists to end two failures.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  F["The stall pattern and work built before the order was confirmed"] -->|"the loop ends these failures"| L
+  subgraph L["The loop, eight stages"]
+    A["Capture a tasking"] --> B["Orient"]
+    B --> C["Check understanding"]
+    C --> D["Confirm the order"]
+    D --> E["Build"]
+    E --> G["Deliver"]
+    G --> H["Close"]
+    H --> I["Resume"]
+  end
+  X["Three correction channels"] -.->|"fire at any stage"| L
+  R["Nine rules"] --> L
+```
+
 The **Development Standard** states how one exchange between Chief and Claude becomes a built thing. It covers everything from a single turn to a project. It governs the **loop**. The project flow governs the project the loop runs inside. The SOP governs the session that contains it.
 
 ## The loop exists to end two failures

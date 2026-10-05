@@ -14,6 +14,23 @@ source_version: 2.0.2
 
 # One design system sets the look of all Bold Venture output
 
+*The mind model: one design system adapted from Astro governs all output; the Roster, the token tiers and the status rule are its main parts.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  B["Bold Venture Design System"] --> A["Adapted from Astro UXDS v7"]
+  B --> R["The Roster, the brand color layer"]
+  R --> I["One identity, rose, flesh, grounds and gold"]
+  R --> G["Four registers, EMBER, PUNCH, DUST and NOIR"]
+  R --> L["The Luminance Law protects skin"]
+  B --> T["Three token tiers"]
+  T --> T1["Reference tokens"]
+  T1 -->|"change cascades down"| T2["System tokens"]
+  T2 --> T3["Component tokens"]
+  B --> S["Status is sacred"]
+```
+
 The **Bold Venture Design System** is the mandatory visual and interaction standard for all digital output under Bold Venture. Every application, dashboard, tool, template renderer, and interactive artifact conforms to it. It is a Command-wide base tool. It is not part of the storytelling stack: it holds no story method, and no story system depends on it.
 
 ## The system is adapted, not invented

@@ -14,6 +14,23 @@ source_version: 1.1.0
 
 # Character Astrology to 12-Layer mapping: the idea
 
+*The mind model: the chart gives the reason behind a number, the layers own the number, and the authoritative document outranks both.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  H["The authoritative document outranks both"]
+  CH["The chart, the reason behind a number"] --> M["The mapping, a formal interface and a check"]
+  M --> LY["The layers own the numbers and all computation"]
+  H -.-> CH
+  H -.-> LY
+  M --> CO["Consistency, not derivation"]
+  M --> NO["Some layers need no chart"]
+  M --> CF["A clash triggers a four-step protocol"]
+  NO --> N1["L12 takes its data from Dramatica"]
+  NO --> N2["Parts of L7 and L9 come from authored narrative"]
+```
+
 ## Two notations describe one character
 
 Character Astrology and the LEECHSEED Character System are parallel datasets. They describe the same character in different notation systems. This document is the formal interface between them.

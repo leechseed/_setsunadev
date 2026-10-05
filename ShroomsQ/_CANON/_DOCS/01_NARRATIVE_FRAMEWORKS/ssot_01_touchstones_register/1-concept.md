@@ -14,6 +14,21 @@ source_version: 1.0.0
 
 # The Touchstones register: the rules a story guides itself by
 
+*The mind model: one register holds the Touchstones, Chief rules them, and it is a front door.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The Touchstones register, a rule the story guides itself by"] --> SF["Soft is the default"]
+  R --> CH["Chief rules, Claude proposes"]
+  CH --> ID["An id mints only on Chief's ruling"]
+  R --> B1["Book 1, Chief's direct rulings"]
+  R --> B2["Book 2, the ten principles of Modern Poetics"]
+  R --> PB["Pushbacks, counter-rules with their own id space"]
+  R --> FD["Built last, read first, a front door into the systems"]
+  R --> TR["Touchstones forbid, tropes describe"]
+```
+
 Source: [📐 ssot_01_touchstones_register.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md). Look things up in the [reference](2-reference.md). Do tasks with the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).
 
 ## A Touchstone guides the story

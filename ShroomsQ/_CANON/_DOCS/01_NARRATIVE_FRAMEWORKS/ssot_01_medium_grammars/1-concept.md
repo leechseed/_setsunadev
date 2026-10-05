@@ -14,6 +14,22 @@ source_version: 1.2.1
 
 # The medium grammars: the medium is a contract
 
+*The mind model: a medium is a contract of four facts, and each medium rebuilds the telling.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  M["A medium is a channel contract"] --> F1["The signal carries the telling"]
+  M --> F2["The time regime says who controls time"]
+  M --> F3["The agency fact says what the audience can do"]
+  M --> F4["The apparatus produces the work"]
+  M --> L["Story is portable, telling is not"]
+  L --> IP["One IP at R7, many instantiations"]
+  M --> AG["Agency changes the author"]
+  M --> TX["The medium picks T3 order, T4 speed and T10 narratee"]
+  M --> MD["Mode is a fence, not a layer"]
+```
+
 ## A medium is a channel contract
 
 The grammars doc defines a medium by four facts. The signal carries the telling. The time regime says who controls time. The agency fact says what the audience can do. The apparatus produces the work. Together they form a contract between the channel and the audience.

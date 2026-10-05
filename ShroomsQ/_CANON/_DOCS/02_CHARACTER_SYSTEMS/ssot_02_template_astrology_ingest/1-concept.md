@@ -16,6 +16,21 @@ source_version: 1.0.1
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md). The method behind it is in [character astrology](../ssot_02_character_astrology/1-concept.md).
 
+*The mind model: the form turns the astrology method into one fixed record that a checker can read the same way every time.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The form turns a method into a record"]
+  H --> A["The section numbers are a contract, the Step 1 checks cite them"]
+  H --> B["Section order follows the DAI order"]
+  H --> C["Every sign carries its reason, an honest gap is allowed, a guess is not"]
+  H --> D["The chart justifies the layers and never sets them"]
+  H --> E["A minimum chart lets work continue, a yellow light at the Step 1 gate"]
+  H --> F["Tier 2 does not use this form"]
+  H --> G["Small by design, the rules live in the DAI doc and the mapping doc"]
+```
+
 ## The form turns a method into a record
 
 The Character Astrology doc says how a chart is derived. This template is the place where one character's chart is written down. It is a blank fill-in form. The writer makes one copy per Tier 3 character. The filled copy holds the natal chart derived from the Dramatica Ingest through the DAI rules.

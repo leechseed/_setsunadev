@@ -16,6 +16,22 @@ source_version: 1.0.2
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_template_dramatica_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_dramatica_ingest.md).
 
+*The mind model: the form is the first gate of the character pipeline, filled by dependency, traceable by report, and ended by a lock.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["The form is the first gate of the character pipeline"]
+  H --> A["The fill order follows what depends on what"]
+  H --> B["Gaps are written down, never filled by guessing"]
+  H --> C["The report log keeps every value traceable"]
+  H --> D["Section 10 is generated, so it cannot drift"]
+  H --> E["Touchstones make the character a load-bearing part of the argument"]
+  H --> F["The form ends in a lock"]
+  F --> G["The astrology form refuses to start until this record reads locked"]
+  H --> I["A pair with the astrology form, Tier 2 does not use it"]
+```
+
 ## The form is the first gate of the character pipeline
 
 Everything in the character system starts from Dramatica. The astrology chart derives from it. Layer 12 of the 12-layer slice is fed by it. This template is the one blank form that holds the locked storyform data for one character. The writer makes one copy per Tier 3 character.

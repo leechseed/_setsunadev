@@ -14,6 +14,23 @@ source_version: 1.0.2
 
 # The story spine: one tree, many lenses
 
+*The mind model: one Grand Argument roots the tree, four seats complete it, and rival models become lenses.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  GA["The spine, a tree, the root claim is a Grand Argument"] --> OS["Overall Story, they"]
+  GA --> MC["Main Character, I"]
+  GA --> IC["Influence Character, you"]
+  GA --> RS["Relationship Story, we"]
+  GA --> LN["Every rival model becomes a lens on one slice"]
+  GA --> FL["The spine stops at the floor of plot"]
+  GA --> SE["Setting is an entity, not a level"]
+  GA --> BR["Branches that outgrow their shelf become domains"]
+  GA --> LT["The lattice grows four limbs from this trunk"]
+  LT --> TS["Touchstones sit across the whole lattice"]
+```
+
 The source doc is [📐 ssot_01_story_spine_comparative_tree.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_spine_comparative_tree.md). Look up facts in the [reference](2-reference.md). Do tasks with the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).
 
 ## A story needs one answer to "what is it made of"

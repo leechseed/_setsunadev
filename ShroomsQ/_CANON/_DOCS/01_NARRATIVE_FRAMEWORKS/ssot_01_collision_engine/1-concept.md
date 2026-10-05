@@ -14,6 +14,20 @@ source_version: 1.0.1
 
 # The collision engine: why friction is the material
 
+*The mind model: two slices meet in the engine, every output carries a time address, baselines never change.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["A character stack"] --> E["The collision engine, any slice against any slice"]
+  B["A setting slice"] --> E
+  E --> FP["Four pairings, character against character, setting, situation and group"]
+  E --> CT["Each row gets a contact, conjunction, trine, square, opposition or void"]
+  E --> TM["Time keys every output to a ladder address or span"]
+  E --> OV["Overlays, friction tables become scene-card material, transit hits become state diffs"]
+  OV --> BL["Baselines never mutate"]
+```
+
 ## Drama lives where two things rub
 
 A character stack alone describes a person. A setting slice alone describes a place. Neither one produces a scene. The collision engine reads one slice against another, and the friction between them becomes the scene. Generalized synastry is the engine's model: any slice against any slice.

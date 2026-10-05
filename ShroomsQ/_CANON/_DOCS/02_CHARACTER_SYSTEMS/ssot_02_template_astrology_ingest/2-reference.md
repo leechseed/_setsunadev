@@ -18,6 +18,26 @@ Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fi
 
 The source names these dependencies: character astrology, the DAI doc and the 12-layer mapping doc. It also names the Dramatica ingest template and the Step 1 source verification protocol. Applies to OVEREXITOUT, ASTRO7EX and LAKAD.
 
+*The form in order: the sections follow the DAI order and end at the lock; the dashed line marks the minimum viable chart.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  H["Header"] --> S1["1 Personal Planets"]
+  S1 --> S2["2 Structural Planets"]
+  S2 --> S3["3 Angles"]
+  S3 --> S4["4 Aspect Map"]
+  S4 --> S5["5 House Placements"]
+  S5 --> S6["6 Dignities"]
+  S6 --> S7["7 12th House"]
+  S7 --> S8["8 Chart Summary"]
+  S8 --> S9["9 LEECHSEED Feed Map"]
+  S9 --> S10["10 Status and Lock"]
+  MV["Minimum viable chart, sections 1 to 5 and 8 to 10"]
+  S5 -.-> MV
+  S10 -.-> MV
+```
+
 ## How to use this form
 
 Five instructions, then a minimum chart rule.

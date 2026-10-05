@@ -14,6 +14,26 @@ source_version: "1.3.2"
 
 # Prose style: reference
 
+*The structure: twelve components in source order, then the ten-question check a reviewer reads against a draft.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Prose style reference"] --> A["Scope"]
+  R --> B["Voice and person"]
+  R --> C["Focalization"]
+  R --> D["Motive on the page"]
+  R --> E["Register and diction"]
+  R --> F["Sentence craft"]
+  R --> G["Description and the sensorium"]
+  R --> H["Dialogue"]
+  R --> I["Pace on the page"]
+  R --> J["Explicit content and paratext"]
+  R --> K["Genre register"]
+  R --> L["Meta-genre, the style bible"]
+  R --> M["The check, ten questions"]
+```
+
 One entry per component of the source, in source order. T1 to T12 are the texture system's discourse layers. A Telling Profile is one IP's answers to them. OXO's is the worked instance. See the [concept](1-concept.md) for the why.
 
 ## Scope

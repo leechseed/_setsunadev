@@ -16,6 +16,23 @@ source_version: 1.1.1
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_character_astrology.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_astrology.md).
 
+*The mind model: Dramatica feeds the chart through the DAI, the chart feeds layers 1 to 11, and the story rules the chart, never the reverse.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  D["Dramatica fixes the narrative truth"] --> I["The DAI translates it"]
+  I --> C["The chart, a second notation"]
+  C --> L["Layers 1 to 11 of the LEECHSEED character system"]
+  D --> L12["Layer 12 comes straight from Dramatica"]
+  ST["The story rules the chart, never the reverse"] --> C
+  T["Tier 3 full chart, Tier 2 partial, Tier 1 none"] --> C
+  C --> N9["Nine character-level categories, the static chart"]
+  C --> N6["Six story-level categories"]
+  N6 --> R["Relationship tables, state overlays, plot systems"]
+  C -.-> X["Refuses three jobs, structure, layer numbers, plot events"]
+```
+
 ## A chart is a second notation for a character Dramatica already settled
 
 Dramatica fixes the narrative truth of a character. Character Astrology writes that same truth in a second vocabulary: planets, signs, houses, aspects and dignities. The result is a **chart**. The chart is not a horoscope. It adds no new fact about the character. It restates locked facts so that depth, contradiction and texture show up that a single number cannot hold.

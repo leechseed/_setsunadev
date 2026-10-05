@@ -14,6 +14,25 @@ source_version: 1.0.1
 
 # The spine house inventory: reference
 
+*The page as a tree: the repo's holdings by spine level, then the unmapped infrastructure, the findings and the addendum.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The spine house inventory"] --> L0["L0 Root theory"]
+  L0 --> L1["L1 Throughlines"]
+  L1 --> L2["L2 Nesting"]
+  L2 --> L3["L3 Dynamics"]
+  L3 --> L4["L4 Plot"]
+  L4 --> L5["L5 Character, the 02 domain"]
+  L5 --> L6["L6 Theme"]
+  L6 --> L7["L7 Genre and audience"]
+  R --> AC["Archived conversations"]
+  R --> KI["Keying infrastructure, unmapped by design"]
+  R --> FN["FINDINGS, what the sweep surfaced"]
+  FN --> AD["Addendum 2026-09-03, the narratology shelf"]
+```
+
 Source: [📐 ssot_01_spine_house_inventory.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_spine_house_inventory.md). Version 1.0.1 (BOLO 100 registers batch 1 stamped `module_of: ssot_01_story_spine_comparative_tree`). BOLO 18 stage 1, agent pass 2026-08-26. Trunk: BLACK. Why: [concept](1-concept.md).
 
 ## L0 · Root theory

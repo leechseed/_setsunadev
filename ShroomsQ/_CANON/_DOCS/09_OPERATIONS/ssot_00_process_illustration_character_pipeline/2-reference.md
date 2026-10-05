@@ -14,6 +14,22 @@ source_version: 1.0.1
 
 # Process Illustration: reference
 
+*The structure: the four flows run in order from A to D, with the overview, the cascade, the module attachment and the appendix beside them.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Process Illustration"] --> F["The Four Flows"]
+  R --> M["Master Pipeline Overview"]
+  R --> X["Cascade, a revised storyform"]
+  R --> Y["Cross-Flow, module attachment"]
+  R --> Z["Appendix, what do I do next"]
+  F --> A["Flow A, Dramatica to ingest template"]
+  A --> B["Flow B, ingest to Character Astrology Ingest"]
+  B --> C["Flow C, both ingests to vertical slice"]
+  C --> D["Flow D, vertical slice to state diffs"]
+```
+
 The source has type `ssot_00_foundations`, category process_illustration, version 1.0.1, and module of `ssot_02_character_systems_vertical_slice`. It has tier operations, trunk BLACK, and last updated 2026-10-04. It applies to OVEREXITOUT, ASTRO7EX, LAKAD. Status: canonical. Its purpose: it "illustrates the complete LEECHSEED character pipeline as four sequential flows with decision points, inputs, outputs, and embedded Mermaid diagrams for Obsidian rendering."
 
 The doc modules per flow:

@@ -14,6 +14,25 @@ source_version: 1.1.1
 
 # The tracking system: reference
 
+*The structure: twelve numbered components under one system, from the two rulers to the version history.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The tracking system"] --> A["What this is"]
+  R --> B["The two rulers"]
+  R --> C["The grid"]
+  R --> D["The time code"]
+  R --> E["The records"]
+  R --> F["Cables"]
+  R --> G["Tempo"]
+  R --> H["The Ableton map"]
+  R --> I["Who consumes this"]
+  R --> J["The reader model"]
+  R --> K["Open"]
+  R --> L["Version history"]
+```
+
 Front matter facts: trunk BLACK, tier fabula, applies to OVEREXITOUT, ASTRO7EX and LAKAD. Dependencies: ssot_01_scale_ladder, ssot_02_character_state_architecture, ssot_03_setting_system, ssot_04_fabula, ssot_04_plot_system, ssot_05_worldbuilding_system, ssot_01_trope_register. Sources: the BOLO 90 DISTILL file and BVX.0236 (Coyne).
 
 ## 1. What This Is

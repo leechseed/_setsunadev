@@ -14,6 +14,21 @@ source_version: 1.3.1
 
 # The theme system: one argument, four parts
 
+*The mind model: four parts build in order from the controlling idea to the motifs, and the live Touchstones check the rails.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  T["Theme, one argument"] --> A["Controlling idea"]
+  A --> B["Rails, four debates"]
+  B --> C["Value scale, four steps"]
+  C --> M["Motifs"]
+  A --> L["Mechanism line"]
+  A --> Q["Latent question"]
+  A --> S["Scene tests"]
+  K["Touchstones"] -->|"handshake"| B
+```
+
 ## Theme picks a fight
 
 The character system (L1 to L12) and the setting system (S1 to S12) hold a record. They store everything true about a person or a place.

@@ -14,6 +14,25 @@ source_version: 1.0.1
 
 # Modern poetics: the constitution of the house stories
 
+*The mind model: Modern Poetics sits above the lattice as a constitution, and each principle rules one part.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  C["Modern Poetics, the constitution above the lattice"] --> A["Entertainment carries the argument"]
+  C --> B["Depth into the specific reaches everyone"]
+  C --> S["Sexuality is the bloodstream"]
+  C --> O["Originality is mastery recombined"]
+  C --> P["Three principles seed the plot system"]
+  P --> P1["The setpiece"]
+  P --> P2["The serial hook"]
+  P --> P3["The narrative dilemma"]
+  C --> T["Three checks run in one breath"]
+  T --> T1["The fantasy drive"]
+  T --> T2["The sexy check"]
+  T --> T3["The aesthetic check"]
+```
+
 ## The lattice describes, the poetics command
 
 The lattice's machinery answers what a story is. Modern Poetics answers what our stories must be. It sits above the lattice as a constitution, not beside it as a lens. Every principle carries a forbid-list. These principles are Touchstone-shaped and candidate Standing Orders.

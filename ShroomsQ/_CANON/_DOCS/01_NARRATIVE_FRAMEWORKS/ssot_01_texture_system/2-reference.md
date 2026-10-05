@@ -14,6 +14,25 @@ source_version: 1.0.0
 
 # The texture system: reference
 
+*The page as a tree: the Ten Questions, the twelve-layer slice and the TELLING PROFILE, then instance and library.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["THE TEXTURE SYSTEM"] --> MM["MIND MODELS"]
+  R --> B["PART B, the Ten Questions restated as axes"]
+  R --> A["PART A, THE TEXTURE SLICE, twelve layers"]
+  A --> A1["T11 medium"]
+  A --> A2["T12 fed from the storyform"]
+  R --> I["THE INSTRUMENT, the TELLING PROFILE and the telling line"]
+  I --> I1["R5 instrument"]
+  I --> I2["Scene card override"]
+  R --> X["THE INSTANCE, worked example, phase 2 fills"]
+  R --> L["TEXTURE × LIBRARY"]
+  L --> L1["BVX.0598 the DNS, 0596 the focalizor, 0273 the distance dial, 0084 the seven functions"]
+  R --> BD["Boundaries, structure is Dramatica, events are plot systems, place is the setting slice, persons are the 12 layer DB"]
+```
+
 Source: [📐 ssot_01_texture_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_texture_system.md), version 1.0.0, trunk BLACK, rung standard. Chief RULED it 2026-10-04 ("REC", BOLO 100 texture batch 1). Why it exists: [concept](1-concept.md).
 
 **Header facts.** Applies to all IPs. Sources: BVX.0598, 0596, 0273, 0084, 0279, 0061, 0175, 0349. Dependencies: `ssot_01_texture_layer`, `ssot_01_story_spine_comparative_tree`, `ssot_01_scale_ladder`, `ssot_01_medium_grammars`, `ssot_03_setting_system`, `ssot_04_plot_system`, `ssot_02_character_systems_vertical_slice`.

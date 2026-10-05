@@ -14,6 +14,23 @@ source_version: 1.1.1
 
 # Step 1 source verification: the idea
 
+*The mind model: three checks run in order of dependence, a failure stops the chain at its root, and the result is a light.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  G["The Step 1 gate"] --> C1["Component 1, a locked authoritative document"]
+  C1 --> C2["Component 2, a locked Dramatica ingest"]
+  C2 --> C3["Component 3, a Character Astrology ingest, locked or minimum-viable"]
+  C3 --> GR["Green, all three pass"]
+  C3 --> YE["Yellow, component 3 at minimum-viable, ASTROLOGY_PENDING tags"]
+  C1 -.-> RD["Red, any component fails, complete the document and return to Step 1"]
+  C2 -.-> RD
+  C3 -.-> RD
+  G --> W["Weight follows the tier"]
+  G --> F["The folder is the evidence"]
+```
+
 ## A single sentence could not guard the slice
 
 The Vertical Slice once opened with one sentence. It said to confirm that canonical documentation exists and is locked. The sentence was correct but did not say what that documentation looks like. It did not name the upstream systems that must finish first. It gave no way to check completeness.

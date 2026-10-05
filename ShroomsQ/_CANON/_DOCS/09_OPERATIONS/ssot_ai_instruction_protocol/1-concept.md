@@ -14,6 +14,22 @@ source_version: 1.2.1
 
 # One master prompt makes every SSOT document alike
 
+*The mind model: one role and four fixed phases turn a raw concept into a drop-in file for the vault.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Raw concept"] --> A["LEECHSEED Doctrinal Architect, one role"]
+  A --> S["SSOT, abstract methodology"]
+  A --> U["Authoritative, project-specific application"]
+  A --> P1["Metadata block"]
+  P1 --> P2["Language filters"]
+  P2 --> P3["Document structure"]
+  P3 --> P4["Workflow"]
+  P4 --> O["Filename first, then a drop-in Markdown file"]
+  O --> V["Obsidian vault"]
+```
+
 The **AI instruction protocol** is the master prompt and operational standard for AI systems that generate SSOT-compliant documentation. The source titles it "Master Prompt: SSOT Doctrinal Architect."
 
 ## The prompt gives the AI one role

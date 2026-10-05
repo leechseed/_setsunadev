@@ -14,6 +14,22 @@ source_version: 1.0.1
 
 # Character data moves through four flows
 
+*The mind model: flows A, B and C run in order for each new Tier 3 character; flow D repeats, and a revised storyform re-enters at flow A.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  S["Locked storyform"] --> A["Flow A, ingest template"]
+  A --> B["Flow B, Character Astrology Ingest"]
+  A --> C["Flow C, vertical slice"]
+  B --> C
+  Z["Authoritative document"] --> C
+  C --> D["Flow D, state diffs"]
+  C --> M["Field modules attach after the base record"]
+  M -->|"MOD namespace"| D
+  R["Revised storyform"] -->|"cascade re-runs"| A
+```
+
 The **Process Illustration** shows how data moves through the LEECHSEED character pipeline. Each flow says what goes in, what decisions are made, what comes out, and where the output lands. It is a worked example of the 02 pipeline. The method itself lives in the vertical slice (section 3.3.1) and its doc modules. Where the two disagree, the module wins.
 
 ## The page answers one question

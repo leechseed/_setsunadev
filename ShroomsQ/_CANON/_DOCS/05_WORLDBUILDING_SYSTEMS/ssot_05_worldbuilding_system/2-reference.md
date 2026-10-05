@@ -14,6 +14,24 @@ source_version: 1.1.1
 
 # The worldbuilding system: reference
 
+*The structure: nine components under one system; the catalog and the coherence tests both feed the world view.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Worldbuilding system"] --> A["The definition"]
+  R --> B["Mind models"]
+  R --> C["The infrastructures"]
+  R --> D["The coherence tests"]
+  R --> E["The boundary"]
+  R --> F["The catalog"]
+  R --> G["The world view"]
+  R --> H["The proof, DCUS"]
+  R --> I["Worldbuilding and Library"]
+  F --> G
+  D --> G
+```
+
 Front matter facts: trunk BLACK, tier fabula, applies to OVEREXITOUT, ASTRO7EX, MOON/SAGA and all future IPs. Dependencies: ssot_03_setting_system (v1.5.0), ssot_02_character_systems, ssot_08_tracking_system (v1.0.0), ssot_04_fabula and ssot_04_plot_system, ssot_01_trope_register. Sources: 27 books (BVX and NEW ids) read through two PS batches.
 
 ## What this is

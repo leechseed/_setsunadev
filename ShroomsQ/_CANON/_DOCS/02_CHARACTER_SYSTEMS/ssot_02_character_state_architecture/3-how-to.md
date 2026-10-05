@@ -25,6 +25,37 @@ Field definitions live in the [reference](2-reference.md).
 
 ## Author a state diff (checkpoint)
 
+*The ten steps of one checkpoint, in order, from the causing event to the optional astrology overlay.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["1 Pick the fabula event_id and set origin_event"] --> B["2 Write the identifying fields"]
+  B --> C["3 Fill told_at"]
+  C --> D["4 Leave narrative_moment and mc_distance_temporal generated"]
+  D --> E["5 Author mc_distance_narrative"]
+  E --> F["6 Write MODIFIED_VALUES, changed values only"]
+  F --> G["7 Recompute MODIFIED_DERIVED"]
+  G --> H["8 Re-evaluate every flag in MODIFIED_FLAGS"]
+  H --> I["9 Write a STATE_NOTE of 2 to 5 sentences"]
+  I --> J["10 Add an ASTROLOGY_OVERLAY only if a progression or transit is active"]
+```
+
+*The ten steps of one checkpoint, in order, from the causing event to the optional astrology overlay.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["1 Pick the fabula event_id and set origin_event"] --> B["2 Write the identifying fields"]
+  B --> C["3 Fill told_at"]
+  C --> D["4 Leave narrative_moment and mc_distance_temporal generated"]
+  D --> E["5 Author mc_distance_narrative"]
+  E --> F["6 Write MODIFIED_VALUES, changed values only"]
+  F --> G["7 Recompute MODIFIED_DERIVED"]
+  G --> H["8 Re-evaluate every flag in MODIFIED_FLAGS"]
+  H --> I["9 Write a STATE_NOTE of 2 to 5 sentences"]
+  I --> J["10 Add an ASTROLOGY_OVERLAY only if a progression or transit is active"]
+```
 1. Pick the fabula `event_id` that causes the state. Set `origin_event` to it.
 2. Write `character_id`, `state_id`, `movement`, `state_version` and `base_record_version`.
 3. Fill `told_at` with the time codes where the audience sees the state. Leave it empty if the state is offstage.

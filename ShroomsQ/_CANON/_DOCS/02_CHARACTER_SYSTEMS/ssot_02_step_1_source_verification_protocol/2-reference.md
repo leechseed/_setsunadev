@@ -16,6 +16,24 @@ source_version: 1.1.1
 
 Source: [🔮ssot_02_step_1_source_verification_protocol.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_step_1_source_verification_protocol.md). Concept: [1-concept.md](1-concept.md).
 
+*The structure: three components checked in order, three lights as the result, and one canonical folder as the proof.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  T["Required documents by tier"] --> G["The source verification gate"]
+  G --> C1["Component 1, checks 1.1 to 1.7, authoritative document"]
+  C1 -->|"Component 1 failing blocks Component 2"| C2["Component 2, checks 2.1 to 2.9, Dramatica ingest"]
+  C2 -->|"Component 2 failing blocks Component 3"| C3["Component 3, checks 3.1 to 3.8, Character Astrology ingest"]
+  C3 --> GR["Green light, full pass"]
+  C3 --> YL["Yellow light, conditional pass"]
+  C1 --> RL["Red light, the slice does not proceed"]
+  C2 --> RL
+  C3 --> RL
+  GR --> F["Canonical folder structure"]
+  YL --> F
+```
+
 ## What This Replaces
 
 This protocol replaces Step 1 of the Vertical Slice protocol only. Steps 2 through 7 are unchanged.

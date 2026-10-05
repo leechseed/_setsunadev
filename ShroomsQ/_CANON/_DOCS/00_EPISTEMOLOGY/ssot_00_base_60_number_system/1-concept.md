@@ -14,6 +14,21 @@ source_version: "1.0.2"
 
 # Base 60: why every number has a reason
 
+*The mind model: base 60 is the hub, and its divisor lattice shapes every number below it.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Base 60, the source of every integer"] --> A["60 divides cleanly, 12 divisors"]
+  H --> B["The lattice is the rulebook"]
+  B --> C["Layer Chain 1, 3, 12, 60"]
+  B --> D["Matrices and tensors give each system a shape"]
+  H --> E["Each variable picks one scale class"]
+  E --> F["Five rules choose the class"]
+  H --> G["Recalibration tested on Victoria Midnight"]
+  H --> I["Future variables follow seven rules"]
+```
+
 ## No number in the character system is arbitrary
 
 Every integer in the character system derives from base 60. Scales, point costs, thresholds and ranges all lock to patterns in the divisor lattice of 60. The doc is the mathematical foundation. Every downstream system that touches a number cites it as the authority on why that number exists.

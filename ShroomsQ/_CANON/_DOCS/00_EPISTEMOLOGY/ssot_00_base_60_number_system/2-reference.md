@@ -14,6 +14,28 @@ source_version: "1.0.2"
 
 # Base 60 number system: reference
 
+*The page in reading order: from why 60 works to the scale classes, recalibrations and design rules.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["Why Base 60"] --> B["The Divisor Lattice of 60"]
+  B --> C1["Pattern Catalog, Divisor Chains"]
+  B --> C2["Pattern Catalog, Matrix Decompositions"]
+  B --> C3["Pattern Catalog, Tensor Decompositions"]
+  C1 --> S["Scale Classes"]
+  C2 --> S
+  C3 --> S
+  S --> T["Scale Assignment Table"]
+  T --> R1["Point Budget Recalibration"]
+  T --> R2["Derived Statistic Recalibration"]
+  T --> R3["Flag Trigger Threshold Recalibration"]
+  R1 --> V["Victoria Midnight Re-Expression"]
+  R2 --> V
+  R3 --> V
+  V --> DR["Design Rules for Future Variables"]
+```
+
 Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.1, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
 
 Notation: SC-N is a scale class with N+1 valid values (0 through N), where N divides 60. Internal means the 0-60 space. `internal = display × step`; `display = internal / step`.

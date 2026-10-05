@@ -16,6 +16,30 @@ source_version: 1.3.0
 
 Source: [🔮ssot_02_character_state_architecture.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md). Concept: [1-concept.md](1-concept.md).
 
+*The structure: an event produces a state diff, the diff plus the base gives the character at a moment, and relationships keep their own record.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  subgraph K["Five kinds of event"]
+    K1["Trauma"]
+    K2["Systemic pressure"]
+    K3["Relational"]
+    K4["Awakening"]
+    K5["Progression overlays"]
+  end
+  K --> EV["Fabula event, origin_event"]
+  EV --> ST["State record, a diff against the base"]
+  ST --> MV["MODIFIED_VALUES"]
+  ST --> MD["MODIFIED_DERIVED"]
+  ST --> MF["MODIFIED_FLAGS"]
+  B["Base record, never changes"] --> Q["The assembled character at one narrative moment"]
+  MV --> Q
+  MD --> Q
+  MF --> Q
+  R["Relationship record, its own timeline, holds synastry data"]
+```
+
 ## The Core Principle
 
 The static character record never changes.

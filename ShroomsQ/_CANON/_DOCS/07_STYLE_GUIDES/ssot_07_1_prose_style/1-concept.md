@@ -14,6 +14,23 @@ source_version: "1.3.2"
 
 # Prose style: why the guide is a floor
 
+*The mind model: the guide is a floor built on five earlier rulings, it sits under each IP's Telling Profile, and it ends in a ten-question check.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  G["Prose style 07.1, a floor not a voice"]
+  S["Five rulings already made"] --> G
+  P["Telling Profile of each IP"] --> G
+  G --> V["Who speaks is not who sees"]
+  G --> M["Narration never states motive"]
+  G --> R["Plain register by default"]
+  G --> D["Description and dialogue earn their place"]
+  G --> C["Pace checked against the plan"]
+  G --> X["Container lives in the front matter"]
+  G --> K["Ten yes-or-no questions"]
+```
+
 ## The guide asks one question
 
 07.1 asks what must be true of a page of prose, in any IP. The answer comes before anyone judges the page on its own merits. It is a floor. It is not a voice.

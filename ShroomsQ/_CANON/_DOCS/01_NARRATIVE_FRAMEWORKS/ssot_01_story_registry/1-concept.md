@@ -14,6 +14,28 @@ source_version: 1.0.0
 
 # The story registry: one list, one row per story
 
+*The mind model: one registry lists every story, the eras run outward, and projects stay outside the count.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The story registry, one row per story"] --> E1
+  R --> S1
+  R --> PV["Projects and vignettes stay outside the story count"]
+  subgraph ER["One universe, five eras"]
+    E1["Era 1 Skeeter Creek"] --> E2["Era 2 DCUS"]
+    E2 --> E3["Era 3 LAKAD"]
+    E3 --> E4["Era 4 ASTRO7EX"]
+    E4 --> E5["Era 5 and eventually, beyond"]
+  end
+  subgraph ST["A story has a status ladder"]
+    S1["Named only"] --> S2["Reports in"]
+    S2 --> S3["Storyform drafted"]
+    S3 --> S4["Active"]
+  end
+  E3 --- HG["The hinge, the Deep Meridian beam"]
+```
+
 ## Nothing else lists stories
 
 The registry is the one place that lists every story in the universe. A story joins the registry before any doc names it in `applies_to`. A story joins before any tracking file starts for it. The workspace's `stories:` filter and every doc's `applies_to` read from here.

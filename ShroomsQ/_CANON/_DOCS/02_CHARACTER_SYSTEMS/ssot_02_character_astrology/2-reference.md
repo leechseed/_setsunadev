@@ -18,6 +18,27 @@ Why the system exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A 
 
 Machine names appear in code font. Each planet or angle lists its function name, then the Dramatica input it derives from.
 
+*The structure: fifteen categories split by one question, who the character is or what is happening to them.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  A["Fifteen categories"] --> B["Character-level, the static chart"]
+  A --> S["Story-level, never in the static record"]
+  B --> B1["1 Systemic Core Philosophy and 2 DAI"]
+  B --> B2["3 Personal Stack, 4 Structural Stack, 5 Angles"]
+  B --> B3["7 Aspects, 8 Houses, 9 Dignities, 14 Void Variable"]
+  B1 --> F["Astrology ingest template, then the 12-layer slice"]
+  B2 --> F
+  B3 --> F
+  S --> S1["6 Network Topology and 11 Synastry"]
+  S --> S2["12 Progressions and 13 Transits"]
+  S --> S3["10 Lifecycle Protocol and 15 Reset Protocol"]
+  S1 --> D1["Relationship tables"]
+  S2 --> D2["Character state diff system"]
+  S3 --> D3["Plot systems"]
+```
+
 ## What Character Astrology Is
 
 A **notation system**. It takes narrative truths set by Dramatica and encodes them as planets, signs, houses, aspects and dignities. The output is a second representation of the same character data.

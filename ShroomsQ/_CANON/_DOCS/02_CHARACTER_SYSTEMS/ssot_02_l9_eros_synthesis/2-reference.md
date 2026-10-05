@@ -18,6 +18,20 @@ Why it exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked t
 
 The shelf: MSX.18 to MSX.36 and PSY.08 to PSY.13, 25 sources. Status: all ten changes RULED 2026-09-29 (Chief: "Rex") and APPLIED in the vertical slice at version 2.2.0.
 
+*The structure: 25 sources become nine shared methods, the methods become ten changes, and five questions stay open.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  V["Victoria Midnight, the one authored L9 instance"] --> W["25 sources, MSX.18 to MSX.36 and PSY.08 to PSY.13"]
+  W --> R["Per-distill register"]
+  R --> M["Nine recurring methods across the shelf"]
+  M --> CH["Ten changes to L9, ruled Rex 2026-09-29"]
+  CH --> AP["Applied in the vertical slice at version 2.2.0"]
+  M --> Q["Five open questions"]
+  TR["Trope side, 430 tropes in eight clusters"] --> M
+```
+
 ## 1. What this is
 
 - L9 EROS has one authored instance: Victoria Midnight. The Command built her on 2026-08-15 from PSY.01 Walker, MSX.17 Perel and PSY.04 Rehor & Schiffman.

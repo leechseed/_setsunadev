@@ -14,6 +14,26 @@ source_version: "1.1.1"
 
 # Module registry: reference
 
+*The page as a tree: the overview, the modules sorted by status, then the dependency map.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Module registry"] --> O["Registry Overview"]
+  R --> A["Active Modules"]
+  R --> B["Absorbed Modules"]
+  R --> P["Planned Modules"]
+  R --> C["Conceptual Modules"]
+  R --> M["Module Dependency Map"]
+  A --> A1["MOD.DUALISM"]
+  B --> B1["MOD.SEXPROF"]
+  B --> B2["MOD.VOICE"]
+  P --> P1["MOD.LOLTAX, MOD.WALK, MOD.COMBAT, MOD.MUSIC, MOD.FASHION, MOD.COPING, MOD.DECOMP, MOD.PHYS"]
+  C --> C1["MOD.CULTURE, MOD.SPIRIT, MOD.DESIGN"]
+  M --> M1["DECOMP depends on COPING"]
+  M --> M2["LOL_TAX depends on COMBAT"]
+```
+
 Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_module_registry.md`, version 1.1.0, status canonical. The source sits on trunk BLACK at tier foundation, with `module_of: ssot_00_module_architecture`. It was last updated 2026-10-04. Dependencies: `ssot_00_module_architecture`, `ssot_00_variable_registry`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md). Rules for modules: [module architecture](../ssot_00_module_architecture/2-reference.md).
 
 All modules use tier 3. All declarations use `tier_min: 3`.

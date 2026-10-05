@@ -14,6 +14,27 @@ source_version: 1.0.2
 
 # The story spine: reference
 
+*The page as a tree: THE TREE runs from L0 to L7, and five more sections sit beside it.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The story spine"] --> T["THE TREE"]
+  T --> L0["L0 What a story is, the root claim"]
+  T --> L1["L1 The four throughlines"]
+  T --> L2["L2 The structural nesting"]
+  T --> L3["L3 The story dynamics"]
+  T --> L4["L4 Plot"]
+  T --> L5["L5 Character"]
+  T --> L6["L6 Theme"]
+  T --> L7["L7 Genre, medium, audience"]
+  R --> SM["THE SETTING TOUCHPOINT MAP"]
+  R --> BR["THE BRANCHES"]
+  R --> RM["THE RIVAL MAP"]
+  R --> HL["THE HOUSE LAYER"]
+  R --> LT["THE LATTICE, the spine's four limbs"]
+```
+
 Source: [📐 ssot_01_story_spine_comparative_tree.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_spine_comparative_tree.md), version 1.0.2, trunk BLACK, status canonical (ruled by Chief 2026-08-25). Why it exists: [concept](1-concept.md).
 
 **Header facts.** Dependencies: `ssot_02_dramatica_integration_protocol`, `oxo-storyform` (populated instance). Applies to: OVEREXITOUT, BVX-LEARN, all future IPs. Tier: narratology.

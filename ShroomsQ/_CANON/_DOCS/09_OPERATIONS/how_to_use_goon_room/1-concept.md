@@ -14,6 +14,19 @@ source_version: 1.0.0
 
 # The Goon Room keeps the mess and tags the signal
 
+*The mind model: the writer keeps the mess in the Goon Room and only tagged signal travels on to canon.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  W["Goon Room, no structure required"] --> D["Dump thoughts, research, drafts and experiments"]
+  D --> T["Tag as the work goes"]
+  T --> R["Weekly review reads the tags"]
+  R -->|"tagged canon-ready"| S["Moved to _STAGED/"]
+  S --> C["Promoted to _CANON/"]
+  R -->|"no tag"| F["Stays in its dated file, searchable"]
+```
+
 The Goon Room is the primary workspace for chaotic research, drafting, and creative flow. The source gives it that one purpose.
 
 ## A workspace that asks for no structure

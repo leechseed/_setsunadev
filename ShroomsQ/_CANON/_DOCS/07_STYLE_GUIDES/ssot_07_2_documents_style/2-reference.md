@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2_documents_style.md"
-source_version: "1.5.0"
+source_version: "1.6.0"
 ---
 
 **Who it's for:** a writer or reviewer looking up one rule · **What it does:** lists every rule and table of 07.2 · **Type:** reference
@@ -57,6 +57,16 @@ One entry per component of the source, in source order. See the [concept](1-conc
 | 4.1 | Troubleshooting: starts from what the reader sees. One entry per problem: symptom, cause, fix. The heading is the symptom in the reader's words. | 2026-10-03 |
 | 4.2 | Glossary: one entry per term, alphabetical. Each entry is the term, a one-line plain meaning, and a link to where it is used. An old name points to the current one. | 2026-10-03 |
 | 4.3 | Decision record: one decision per page, dated, with who ruled it. Three parts: decided, why, gave up. Never edited after ruling; a new decision gets a new record that points back. | 2026-10-03 |
+
+**5 · Visuals**
+
+| # | Rule | Locked |
+|---|---|---|
+| 5.1 | A visual makes the same claim as the words, a second way. It never carries a claim the text lacks. | 2026-10-05 |
+| 5.2 | The job picks the picture. A **flow** shows a process. A **tree** shows a hierarchy. A **graph** shows how parts connect. A **state diagram** shows change over time. A **timeline** shows order. A **matrix** crosses two dimensions. A **mind model** shows a whole system in one view. | 2026-10-05 |
+| 5.3 | Every concept page opens with a mind model. A reference page adds a structure diagram when its system has more than five components. | 2026-10-05 |
+| 5.4 | Every visual carries a one-line caption that tells the reader what to look at. | 2026-10-05 |
+| 5.5 | Diagrams are Mermaid, written into the page's static markup ([07.3](../ssot_07_3_pages_style/2-reference.md)), in the Command's colors. | 2026-10-05 |
 
 ## THE INDEX — 07.2A AND 07.2B
 

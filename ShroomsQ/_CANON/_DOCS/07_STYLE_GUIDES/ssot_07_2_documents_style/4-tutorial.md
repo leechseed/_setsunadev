@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/07_STYLE_GUIDES/📐 ssot_07_2_documents_style.md"
-source_version: "1.5.0"
+source_version: "1.6.0"
 ---
 
 **Who it's for:** a new writer learning the core rules by doing · **What it does:** walks you through writing and reviewing one page · **Type:** tutorial

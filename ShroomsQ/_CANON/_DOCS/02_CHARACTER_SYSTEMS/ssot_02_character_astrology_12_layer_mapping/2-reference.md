@@ -16,6 +16,26 @@ source_version: 1.1.0
 
 Source: [🔮ssot_02_character_astrology_12_layer_mapping.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md). Concept: [1-concept.md](1-concept.md).
 
+*The master feed table as a graph: each layer and the chart elements that feed it; L12 has no chart feed.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  A["Authoritative document governs both"] --> C["The chart"]
+  C --> L1["L1 CORE from Sun, Mercury"]
+  C --> L2["L2 VITAL from Mars, Ascendant"]
+  C --> L3["L3 SOCIAL from Ascendant, Venus, 7th House"]
+  C --> L4["L4 WILL from Saturn, Sun-Saturn aspects"]
+  C --> L5["L5 WOUND from debilitated planets, hard Moon aspects, 8th House"]
+  C --> L6["L6 DRIVE from Mars, Jupiter"]
+  C --> L7["L7 ORIGIN from IC, 4th House, Moon, partial"]
+  C --> L8["L8 IMPRINT from Moon, primary feed"]
+  C --> L9["L9 EROS from Venus, 5th and 8th House, partial"]
+  C --> L10["L10 SHADOW from 12th House, debilitated planets, Pluto"]
+  C --> L11["L11 DESTINY from Jupiter, Uranus, Midheaven"]
+  D["Dramatica Ingest Template"] --> L12["L12 FUNCTION, no astrology feed"]
+```
+
 ## Governing Principles
 
 | # | Principle | Rule |

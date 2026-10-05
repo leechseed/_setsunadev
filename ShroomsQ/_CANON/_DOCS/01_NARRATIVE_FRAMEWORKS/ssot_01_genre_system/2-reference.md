@@ -14,6 +14,25 @@ source_version: 1.0.1
 
 # The genre system: reference
 
+*The page as a tree: the taxonomy, the twelve-layer slice and the instruments, then instance and library.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["THE GENRE SYSTEM"] --> MM["MIND MODELS, three diagrams"]
+  R --> B["PART B, THE TAXONOMY"]
+  B --> B1["The four words, Genre, Medium, Audience, Market"]
+  B --> B2["The four vocabularies, Snyder, Coyne, Selbo, Truby"]
+  R --> A["PART A, THE GENRE SLICE, twelve layers"]
+  A --> A1["G12 fed from the storyform"]
+  R --> I["THE INSTRUMENTS"]
+  I --> I1["The GENRE CARD per genre"]
+  I --> I2["The GENRE CONTRACT per work"]
+  R --> X["THE INSTANCE, OXO, worked example"]
+  R --> L["GENRE × LIBRARY"]
+  R --> T["TROPES"]
+```
+
 Source: [📐 ssot_01_genre_system.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_genre_system.md). Version 1.0.1, ruled 2026-10-04 (Chief: "rec"; BOLO 100). Trunk: BLACK. Applies to all IPs. Why it exists: [concept](1-concept.md).
 
 ## MIND MODELS

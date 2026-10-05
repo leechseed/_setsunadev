@@ -14,6 +14,20 @@ source_version: "1.0.1"
 
 # Module architecture: the layers stay, modules attach
 
+*The mind model: twelve fixed layers stay put, and modules attach beneath them under one contract and one lifecycle.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  L["The 12 layers do not change"] --> M["New dimensions attach as modules"]
+  M --> D["A module declares its layer"]
+  D --> R["It reads any core variable"]
+  D --> W["It writes only its own namespaced variables"]
+  M --> T["Two meanings of module, field module and doc module"]
+  M --> C["A fixed contract lets tools plug in"]
+  C --> LC["Five lifecycle stages, creation, activation, population, deactivation, retirement"]
+```
+
 ## The 12 layers do not change
 
 The LEECHSEED Character System is a fixed schema. It does not grow. The layers are L1 CORE, L2 VITAL, L3 SOCIAL, L4 WILL, L5 WOUND and L6 DRIVE. The rest are L7 ORIGIN, L8 IMPRINT, L9 EROS, L10 SHADOW, L11 DESTINY and L12 FUNCTION. Together they define the complete character.

@@ -14,6 +14,22 @@ source_version: 1.0.1
 
 # The method was already written; assembly was missing
 
+*The mind model: the inventory sorts holdings into five kinds, finds that assembly was missing, and takes the cheapest path to the Project Flow.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  I["PM Holdings Inventory"] --> K["Five kinds of holdings"]
+  K --> K1["PMBOK and PMI material"]
+  K --> K2["Marine Corps doctrine as PM method"]
+  K --> K3["Pyramid Principle and answer-first doctrine"]
+  K --> K4["Templates, registries and gates"]
+  K --> K5["Ultrasin master registry format"]
+  I --> F["Finished and missing"]
+  F -->|"assembly was missing"| C["Cheapest path"]
+  C --> P["Project Flow v0.1"]
+```
+
 The **PM Holdings Inventory** is a survey of everything project-management-shaped that the operation already holds. It was banked on 2026-09-03 and feeds BOLO 25, the standard PM flow.
 
 ## The finding is one line

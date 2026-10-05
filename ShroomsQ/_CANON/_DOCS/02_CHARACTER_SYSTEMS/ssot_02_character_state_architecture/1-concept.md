@@ -14,6 +14,22 @@ source_version: 1.3.0
 
 # Character state architecture: the idea
 
+*The mind model: one base record never changes, and every change over the story is a diff that points to an event.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  B["The base record never changes"]
+  B --> D["A state is a diff, not a copy"]
+  B --> T["One test splits static from dynamic"]
+  B --> I["Independence, each diff against the base, never the previous diff"]
+  B --> E["Events cause states, five kinds of event recur"]
+  B --> R["Relationships and synastry live outside both characters"]
+  B --> O["Time belongs to other systems"]
+  D --> Q["Base plus a diff equals the character at that moment"]
+  O --> O1["The fabula owns events, the tracking system owns time codes"]
+```
+
 ## The base record never changes
 
 A story changes its characters. Layer values shift. Flags fire. Wounds deepen. The LEECHSEED Vertical Slice captures a character only at the point of canonical definition.

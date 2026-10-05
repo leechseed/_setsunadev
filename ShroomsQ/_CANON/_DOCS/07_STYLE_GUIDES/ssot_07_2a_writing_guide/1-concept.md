@@ -14,6 +14,21 @@ source_version: "2.2.1"
 
 # SSOT writing guide: why the standard is rigid
 
+*The mind model: a rigid language and a rigid frame keep an SSOT canonical, and the metadata rules make the header render.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  G["SSOT writing guide 07.2a"] --> L["Language carries authority"]
+  G --> F["The frame is fixed"]
+  G --> M["Metadata must render"]
+  L --> L1["Present tense, active voice, no hedges"]
+  L --> L2["First instance of a term is bold and defined"]
+  F --> F1["YAML, H1, table of contents, purpose, version history"]
+  F --> F2["The body follows the page type"]
+  M --> M1["Flow style lists, quoted wikilinks, space after the colon"]
+```
+
 ## An SSOT stays canonical by being precise
 
 An SSOT is a Single Source of Truth document. The guide sets the standard for all of them. It keeps every framework canonical, precise, and fit for the Obsidian Properties UI.

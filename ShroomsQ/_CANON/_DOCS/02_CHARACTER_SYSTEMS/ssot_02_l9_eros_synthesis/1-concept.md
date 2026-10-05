@@ -16,6 +16,21 @@ source_version: 1.0.0
 
 Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md). The source is [ssot_02_l9_eros_synthesis.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_l9_eros_synthesis.md). The schema it changed is in the [vertical slice](../ssot_02_character_systems_vertical_slice/1-concept.md).
 
+*The mind model: one authored instance was too thin, so 25 sources were read as a whole, and ten ruled changes reshaped layer 9.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["L9 EROS synthesis, the record of why layer 9 changed"]
+  H --> A["One authored instance cannot carry a whole layer, Victoria Midnight"]
+  H --> B["25 new sexuality sources, 19 MSX and 6 PSY"]
+  H --> C["Read as a whole, nine patterns that at least two distills reach independently"]
+  H --> D["Queer and male-male desire is source material, not an exception"]
+  H --> E["A derivation record, ten changes ruled Rex and applied in version 2.2.0"]
+  H --> F["Craft rules stay out of the schema"]
+  H --> G["Open questions, the call stays with Chief"]
+```
+
 ## One authored instance cannot carry a whole layer
 
 Layer 9 EROS had one authored instance: Victoria Midnight, built on 2026-08-15 from three sources. Every later change to L9 was that one instance's logic, copied forward. A layer built on one case inherits that case's blind spots.

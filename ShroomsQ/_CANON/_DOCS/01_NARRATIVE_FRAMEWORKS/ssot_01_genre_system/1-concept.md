@@ -14,6 +14,23 @@ source_version: 1.0.1
 
 # The genre system: genre is a contract
 
+*The mind model: genre is a contract, the genre system names what a work owes, other systems discharge it.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  G["Genre, a contract between a work and its public"] --> V["Four vocabularies, Truby's fourteen as the spine"]
+  G --> LB["Three labels, industry, marketing and critical"]
+  G --> OW["An obligation is owed"]
+  OW --> DS["Discharged on a plot unit"]
+  OW --> WH["Withheld by design"]
+  WH --> BR["A breach reads as design"]
+  G --> MG["Medium grammars own the channel"]
+  G --> P10["The plot card's P10 line discharges owed beats"]
+  G --> SS["The setting slice builds the promised world"]
+  G --> TX["The texture slice sets the telling"]
+```
+
 ## A genre is a promise made to a reader
 
 The genre system treats genre as the contract between a work and its public. The contract names the label a work is sold under and the family it belongs to. It also names the conventions the work owes the reader. The reader holds the work to that promise before the first scene is drafted.

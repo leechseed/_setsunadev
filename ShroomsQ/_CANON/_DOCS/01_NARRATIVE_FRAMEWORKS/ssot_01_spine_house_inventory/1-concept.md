@@ -14,6 +14,20 @@ source_version: 1.0.1
 
 # The spine house inventory: the repo's own shelves
 
+*The mind model: the repo's files are keyed to spine levels, and an addendum corrected the first count.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["The repo's own holdings, canon nodes, protocols, bibles, templates, reference works"] --> K["Keyed to spine levels L0 through L7"]
+  K --> MP["Inventory by level, an also column lists the other levels"]
+  R --> UM["Keying infrastructure, unmapped by design"]
+  SW["The sweep, BOLO 18 stage 1"] --> FN["Findings, a measurement as well as a list"]
+  FN --> W["First count, craft shelf 0.6% distilled"]
+  W --> AD["Addendum 2026-09-03, 109 distills promoted to the narratology shelf"]
+  SW --> S2["Stage 2 keys the external library"]
+```
+
 ## The Command already owns a library
 
 The spine needs sources at every level. The Command did not start empty. The repo holds processed materials of its own: canon nodes, protocols, bibles, templates and reference works. The inventory keys each one to a spine level, L0 through L7. The repo's own holdings become the spine's first shelves.

@@ -14,6 +14,24 @@ source_version: 1.0.0
 
 # Template Prompt for Summarizing Novels and Books: reference
 
+*The structure: seven components; the add-ons split into four.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Template Prompt for Summarizing Novels and Books"] --> A["Purpose and scope"]
+  R --> B["Universal system prompt"]
+  R --> C["Modular add-ons"]
+  C --> C1["3A Narratological deep dive"]
+  C --> C2["3B Dramatica framework extension"]
+  C --> C3["3C Knowledgebase entry formatter"]
+  C --> C4["3D Wicked Figures and key contributions extractor"]
+  R --> D["Output structure specification"]
+  R --> E["Processing pipeline"]
+  R --> F["Reference sources directive"]
+  R --> G["Usage rules"]
+```
+
 The source has type `ssot_09_operations`, version 1.0.0, tier operations, last updated 2026-03-03. Status: canonical (frontmatter stamped 2026-10-04, BOLO 100 D6; the body carried "Version: 1.0"). The body header names it a Single Source of Truth with scope "Novel & Book Summarization — All Formats," derived from batch extraction. The extraction ran across `.ASTRO7EX.SYNC.JOPLIN`, `OVER_EXIT_OUT_OBSIDIAN`, `_wicked_figures_dir`, `_DIRECTORY OF DIR`, Logseq journals, and RC builds.
 
 ## 1. Purpose & Scope

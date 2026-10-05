@@ -14,6 +14,21 @@ source_version: 1.1.1
 
 # The worldbuilding system: a world, defined once, built around a catalog
 
+*The mind model: the catalog, the coherence tests and the world view sit between the systems that already own their data; the boundary keeps all of it thin.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  H["Worldbuilding system"] --> C["Catalog, a system"]
+  H --> I["Ten infrastructures"]
+  H --> T["Coherence tests, a lens"]
+  H --> V["World view, a view"]
+  H --> B["Boundary, thin by default"]
+  O["Systems 02, 03, 04, 07, 08 keep what they own"] --> V
+  C --> V
+  I -->|"tell the compiler what to look for"| T
+```
+
 ## Some world things belong to no system
 
 The Command already has systems for people (02), places (03), plot (04), theme (07) and state over time (08). None owns a clan, a style of building, a way of dressing, or a vehicle. None owns a custom or a school of thought.

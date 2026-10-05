@@ -14,6 +14,26 @@ source_version: 1.0.0
 
 # One template governs every book summary
 
+*The mind model: a fixed prompt, flexible add-ons, one output order and a pass-by-pass pipeline make every book summary alike.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  T["Template Prompt, one canonical template"] --> U["Universal system prompt, fidelity first"]
+  T --> M["Modular add-ons"]
+  M --> M1["Narratology deep dive"]
+  M --> M2["Dramatica extension"]
+  M --> M3["Knowledgebase formatter"]
+  M --> M4["Key-contributions extractor"]
+  T --> O["One canonical output order"]
+  T --> P["Pipeline, one job per pass"]
+  P --> P1["Raw summary"]
+  P1 --> P2["Overlay the template"]
+  P2 --> P3["Merge and deduplicate"]
+  P3 --> P4["Elaborate and split, optional"]
+  T --> W["One document owns the pattern"]
+```
+
 The **Template Prompt for Summarizing Novels and Books** is one canonical template. It consolidates every summarization prompt pattern found across the vault. It replaces the scattered "professional summarizer" prompt, the "Understanding" report template, the wicked_figures process order, and the MCDP doctrinal summary spec. Any future book or novel summary begins here.
 
 ## The prompt is fixed, and the add-ons flex

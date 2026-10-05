@@ -14,6 +14,26 @@ source_version: "1.2.1"
 
 # Variable registry: reference
 
+*The page as a tree: the rules first, then variables by tier, then derived values, flags and metadata.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart TD
+  R["Variable registry"] --> N["Namespace Convention"]
+  R --> OW["Ownership Rule"]
+  R --> RF["Registry Format"]
+  R --> T1["Tier 1 Variables"]
+  R --> T2["Tier 2 Variables"]
+  R --> T3["Tier 3 Variables, L7 ORIGIN to L12 FUNCTION"]
+  R --> EX["L12 DRAMATICA EXTENDED"]
+  R --> SL["Slice Fields, added in 1.2.0"]
+  R --> DS["Derived Statistics"]
+  R --> FL["Status Flags"]
+  R --> AS["Character Astrology Variables"]
+  R --> SD["State Diff Variables"]
+  R --> MD["Character Metadata"]
+```
+
 Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_variable_registry.md`, version 1.2.1, status canonical. The source sits on trunk BLACK at tier foundation, rung "standard · NASA four, ruled 2026-09-15 (BOLO 50)". It was last updated 2026-10-04. Dependencies: `ssot_00_base_60_number_system`, `ssot_02_character_systems_vertical_slice`. Why it exists: see the [concept](1-concept.md).
 
 Entry shorthand: "SC-12" is a scale class from the [base 60 reference](../ssot_00_base_60_number_system/2-reference.md). Tag is Static, Dynamic or Derived. "Contextual" means the field feeds no formula and gives reference for other fields.

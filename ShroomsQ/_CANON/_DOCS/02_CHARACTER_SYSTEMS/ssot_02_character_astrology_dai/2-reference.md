@@ -16,6 +16,23 @@ source_version: 1.1.0
 
 Source: [🔮ssot_02_character_astrology_dai.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md). Concept: [1-concept.md](1-concept.md).
 
+*The derivation sequence in order: the planets first, then aspects, houses and dignities; the dashed line marks the minimum viable chart.*
+
+```mermaid
+%%{init: {"theme": "dark", "themeVariables": {"primaryColor": "#2A1A12", "primaryBorderColor": "#FF5A1F", "primaryTextColor": "#F2EDE6", "lineColor": "#FF8F62", "fontFamily": "Atkinson Hyperlegible, sans-serif"}}}%%
+flowchart LR
+  DI["Locked Dramatica Ingest Template"] --> P1["Steps 1 to 7, Sun, Moon, Ascendant, Mercury, Venus, Mars, Saturn"]
+  P1 --> P2["Steps 8 to 14, Jupiter, Uranus, Neptune, Pluto, Midheaven, Descendant, IC"]
+  P2 --> AS["Step 15 Aspects"]
+  AS --> HO["Step 16 Houses"]
+  HO --> DG["Step 17 Dignities"]
+  DG --> TW["Step 18 12th House"]
+  TW --> TR["Transfer to the Character Astrology Ingest Template"]
+  MV["Minimum viable chart, steps 1 to 7 and 15 to 17"]
+  P1 -.-> MV
+  DG -.-> MV
+```
+
 ## How to Use This Document
 
 Five steps. Do not skip steps. Do not reorder the sequence.
