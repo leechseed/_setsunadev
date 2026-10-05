@@ -34,6 +34,8 @@ The system is the 12-Layer Character Database promoted to a system. It has three
 
 > **OPEN:** the Structured Data Block in the instance gives `expressive_range: 2`. The derived-statistics table gives 4, and the version history says the move from 2 to 4 happened in 3.3.2. The block was not updated.
 
+> **OPEN:** the doc says all fractions round down. Victoria's Collapse Risk is `(8 + 7) / 2`, which rounds down to 7. The doc shows 8.
+
 > **OPEN:** Step 5 says "all six derived statistics". The table lists seven.
 
 > **OPEN:** Step 7 points to "the Examples section". The doc has no section by that name. The block sits under THE INSTANCE.
