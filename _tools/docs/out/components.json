@@ -1,0 +1,2292 @@
+{
+ "00_EPISTEMOLOGY": {
+  "📐 ssot epistemology truth verification.md": [
+   {
+    "name": "Core Concepts",
+    "parts": [
+     "Truth as Foundation",
+     "Framework Integration"
+    ]
+   },
+   {
+    "name": "The 10 Truth Frameworks",
+    "parts": [
+     "Framework 1: Empirical Observation",
+     "Framework 2: Logical Reasoning",
+     "Framework 3: Intuition and A Priori Knowledge",
+     "Framework 4: Consensus",
+     "Framework 5: Coherence Theory",
+     "Framework 6: Correspondence Theory",
+     "Framework 7: Pragmatic Theory",
+     "Framework 8: Skepticism and Critical Thinking",
+     "Framework 9: Revelation or Faith",
+     "Framework 10: Historical Method"
+    ]
+   },
+   {
+    "name": "How the Frameworks Check the Systems",
+    "parts": []
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Research Design Integration",
+     "Truth Framework Selection Guide",
+     "Benefits of Framework Understanding"
+    ]
+   },
+   {
+    "name": "Examples",
+    "parts": [
+     "Example 1: Worldbuilding Truth Verification",
+     "Example 2: Character Motivation Truth Testing"
+    ]
+   }
+  ],
+  "📐 ssot_00_base_60_number_system.md": [
+   {
+    "name": "Why Base 60",
+    "parts": []
+   },
+   {
+    "name": "The Divisor Lattice of 60",
+    "parts": []
+   },
+   {
+    "name": "Pattern Catalog: Divisor Chains",
+    "parts": [
+     "Maximal Chains (1 to 60)",
+     "Architecturally Significant Chains"
+    ]
+   },
+   {
+    "name": "Pattern Catalog: Matrix Decompositions",
+    "parts": [
+     "Architecturally Significant Matrices"
+    ]
+   },
+   {
+    "name": "Pattern Catalog: Tensor Decompositions",
+    "parts": [
+     "Architecturally Significant Tensors"
+    ]
+   },
+   {
+    "name": "Scale Classes",
+    "parts": [
+     "Scale Class Selection Rules"
+    ]
+   },
+   {
+    "name": "Scale Assignment Table",
+    "parts": [
+     "Tier 1: Primary Attributes",
+     "Tier 2: Secondary Attributes",
+     "Tier 3: Sub-Variables (All Layers)",
+     "Dualism Charges (Layer-Locked Module)",
+     "Point Budget Values",
+     "Tier Budget Totals"
+    ]
+   },
+   {
+    "name": "Point Budget Recalibration",
+    "parts": [
+     "Summary: No Structural Changes Required"
+    ]
+   },
+   {
+    "name": "Derived Statistic Recalibration",
+    "parts": [
+     "Cross-Scale Formula Handling",
+     "Recalibrated Formulas",
+     "Derived Stat Divisibility Constraints Summary"
+    ]
+   },
+   {
+    "name": "Flag Trigger Threshold Recalibration",
+    "parts": [
+     "SHADOWDENIAL",
+     "TRUTHVULNERABILITY",
+     "OPTIONLOCKPROGRESSION",
+     "EARNEDJUDGEMENT",
+     "KINSHIPCOLLAPSE"
+    ]
+   },
+   {
+    "name": "Victoria Midnight Re-Expression",
+    "parts": [
+     "Tier 1",
+     "Tier 2",
+     "Tier 3 Sub-Variables",
+     "Recalibrated Derived Statistics"
+    ]
+   },
+   {
+    "name": "Design Rules for Future Variables",
+    "parts": []
+   }
+  ],
+  "📐 ssot_00_module_architecture.md": [
+   {
+    "name": "The Core Principle",
+    "parts": []
+   },
+   {
+    "name": "What a Module Is",
+    "parts": [
+     "Field Modules and Doc Modules"
+    ]
+   },
+   {
+    "name": "Module Anatomy",
+    "parts": [
+     "Minimal Module (Data Only)",
+     "Standard Module (Data + Computation)",
+     "Full Module (Data + Computation + Flag)"
+    ]
+   },
+   {
+    "name": "The Attachment Protocol",
+    "parts": [
+     "Step 1: Declare Attachment Point(s)",
+     "Step 2: Validate Against Layer Domain",
+     "Step 3: Register Variables",
+     "Step 4: Declare Access Pattern"
+    ]
+   },
+   {
+    "name": "Data Access Rules",
+    "parts": [
+     "What Modules CAN Read",
+     "What Modules CANNOT Read",
+     "What Modules CAN Write",
+     "What Modules CANNOT Write",
+     "Cross-Module Dependencies"
+    ]
+   },
+   {
+    "name": "Module API Contract",
+    "parts": [
+     "Module Declaration Block",
+     "Variable Declaration Block",
+     "Read Dependencies Block",
+     "Computation Block (Optional)",
+     "Data Exchange Format"
+    ]
+   },
+   {
+    "name": "Module Lifecycle",
+    "parts": [
+     "Creation",
+     "Activation",
+     "Population",
+     "Deactivation",
+     "Retirement"
+    ]
+   },
+   {
+    "name": "Application Architecture Vision",
+    "parts": [
+     "Workspace Layout",
+     "Key Interactions",
+     "Data Flow in the Application",
+     "File System Integration (Phase 4B+)"
+    ]
+   },
+   {
+    "name": "Module Registry Format",
+    "parts": []
+   }
+  ],
+  "📐 ssot_00_module_registry.md": [
+   {
+    "name": "Registry Overview",
+    "parts": []
+   },
+   {
+    "name": "Active Modules",
+    "parts": [
+     "MOD.DUALISM — Dualism Charge System"
+    ]
+   },
+   {
+    "name": "Absorbed Modules",
+    "parts": [
+     "MOD.SEXPROF — Sexuality Profile (absorbed)",
+     "MOD.VOICE — Vocal Signature (absorbed)"
+    ]
+   },
+   {
+    "name": "Planned Modules",
+    "parts": [
+     "MOD.LOLTAX — LoL Character Taxonomy",
+     "MOD.WALK — Walking Style",
+     "MOD.COMBAT — Combat Archetype",
+     "MOD.MUSIC — Music Interests",
+     "MOD.FASHION — Fashion/Aesthetic Profile",
+     "MOD.COPING — Coping Mechanism Catalog",
+     "MOD.DECOMP — Decompensation Profile",
+     "MOD.PHYS — Physical Detail",
+     "Audit of Planned Modules (2026-10-04)"
+    ]
+   },
+   {
+    "name": "Conceptual Modules",
+    "parts": [
+     "MOD.CULTURE — Cultural Conditioning",
+     "MOD.SPIRIT — Spiritual Framework",
+     "MOD.DESIGN — Design Focus Power Board"
+    ]
+   },
+   {
+    "name": "Module Dependency Map",
+    "parts": []
+   }
+  ],
+  "📐 ssot_00_pattern_library.md": [
+   {
+    "name": "The stack",
+    "parts": []
+   },
+   {
+    "name": "Two halves of the foundation",
+    "parts": []
+   },
+   {
+    "name": "Three kinds of cycle",
+    "parts": []
+   },
+   {
+    "name": "Pattern 1: the Command loop",
+    "parts": []
+   },
+   {
+    "name": "Pattern 2: the change cycle",
+    "parts": []
+   }
+  ],
+  "📐 ssot_00_variable_registry.md": [
+   {
+    "name": "Namespace Convention",
+    "parts": [
+     "Domain Prefixes",
+     "Layer Codes",
+     "Naming Rules"
+    ]
+   },
+   {
+    "name": "Ownership Rule",
+    "parts": []
+   },
+   {
+    "name": "Registry Format",
+    "parts": []
+   },
+   {
+    "name": "Tier 1 Variables",
+    "parts": [
+     "T1.CORE.basevalue",
+     "T1.VITAL.basevalue",
+     "T1.SOCIAL.basevalue"
+    ]
+   },
+   {
+    "name": "Tier 2 Variables",
+    "parts": [
+     "T2.WILL.basevalue",
+     "T2.WOUND.woundscore",
+     "T2.DRIVE.basevalue"
+    ]
+   },
+   {
+    "name": "Tier 3 Variables: L7 ORIGIN",
+    "parts": [
+     "T3.ORIGIN.originclass",
+     "T3.ORIGIN.originstability",
+     "T3.ORIGIN.familycoherence",
+     "T3.ORIGIN.originwoundseed",
+     "T3.ORIGIN.techlevel",
+     "T3.ORIGIN.systemexposure"
+    ]
+   },
+   {
+    "name": "Tier 3 Variables: L8 IMPRINT",
+    "parts": [
+     "T3.IMPRINT.attachmentstyle",
+     "T3.IMPRINT.attachmentstylescore",
+     "T3.IMPRINT.emotionalrange",
+     "T3.IMPRINT.conditionalpatterns",
+     "T3.IMPRINT.imprintflexibility",
+     "T3.IMPRINT.primaryattachmentobject"
+    ]
+   },
+   {
+    "name": "Tier 3 Variables: L9 EROS",
+    "parts": [
+     "T3.EROS.eroticblueprinttype",
+     "T3.EROS.desirevector",
+     "T3.EROS.shameindex",
+     "T3.EROS.armorindex",
+     "T3.EROS.satisfactioncycletruncation",
+     "T3.EROS.eroticsafetyprecondition",
+     "T3.EROS.intimacymode",
+     "T3.EROS.sourceconfidence"
+    ]
+   },
+   {
+    "name": "Tier 3 Variables: L10 SHADOW",
+    "parts": [
+     "T3.SHADOW.shadowdensity",
+     "T3.SHADOW.projectiontendency",
+     "T3.SHADOW.regressionpattern",
+     "T3.SHADOW.shadowcontent"
+    ]
+   },
+   {
+    "name": "Tier 3 Variables: L11 DESTINY",
+    "parts": [
+     "T3.DESTINY.growthaxis",
+     "T3.DESTINY.resistanceindex",
+     "T3.DESTINY.soulevolutionarchetype",
+     "T3.DESTINY.karmicmemory",
+     "T3.DESTINY.growthrequirement"
+    ]
+   },
+   {
+    "name": "Tier 3 Variables: L12 FUNCTION",
+    "parts": [
+     "T3.FUNC.dramaticaarchetype",
+     "T3.FUNC.mcproblemelement",
+     "T3.FUNC.methodologyelement",
+     "T3.FUNC.evaluationelement",
+     "T3.FUNC.purposeelement",
+     "T3.FUNC.touchstone",
+     "T3.FUNC.storyoutcome",
+     "T3.FUNC.storyjudgement",
+     "T3.FUNC.limittype",
+     "T3.FUNC.resolve",
+     "Tier 2 L12 Format",
+     "T3.FUNC.tier",
+     "T3.FUNC.elementsignature",
+     "T3.FUNC.relationalroles"
+    ]
+   },
+   {
+    "name": "L12 DRAMATICA EXTENDED",
+    "parts": []
+   },
+   {
+    "name": "Slice Fields (added in 1.2.0)",
+    "parts": [
+     "Slice fields · L1 CORE",
+     "Slice fields · L2 VITAL",
+     "Slice fields · L3 SOCIAL",
+     "Slice fields · L4 WILL",
+     "Slice fields · L5 WOUND",
+     "Slice fields · L6 DRIVE",
+     "Slice fields · L7 ORIGIN",
+     "Slice fields · L8 IMPRINT",
+     "Slice fields · L9 EROS",
+     "Slice fields · L10 SHADOW",
+     "Slice fields · L11 DESTINY",
+     "Slice fields · L12 FUNCTION",
+     "Slice fields · Shared sub-field"
+    ]
+   },
+   {
+    "name": "Derived Statistics",
+    "parts": [
+     "DRV.basicdamageresistance",
+     "DRV.sociallegibility",
+     "DRV.narrativemomentum",
+     "DRV.stressthreshold",
+     "DRV.collapserisk",
+     "DRV.truthexposureindex",
+     "DRV.expressiverange"
+    ]
+   },
+   {
+    "name": "Status Flags",
+    "parts": [
+     "FLG.shadowdenial",
+     "FLG.truthvulnerability",
+     "FLG.optionlockprogression",
+     "FLG.earnedjudgement",
+     "FLG.kinshipcollapse"
+    ]
+   },
+   {
+    "name": "Character Astrology Variables",
+    "parts": [
+     "Personal Stack",
+     "Structural Stack",
+     "Angles",
+     "Aspects",
+     "Houses",
+     "Dignities"
+    ]
+   },
+   {
+    "name": "State Diff Variables",
+    "parts": []
+   },
+   {
+    "name": "Character Metadata",
+    "parts": []
+   }
+  ]
+ },
+ "01_NARRATIVE_FRAMEWORKS": {
+  "📐 ssot_01_collision_engine.md": [
+   {
+    "name": "THE FOUR CLASSES",
+    "parts": []
+   },
+   {
+    "name": "CONTACT VOCABULARY — how a row classifies (provisional, astrology-native)",
+    "parts": []
+   },
+   {
+    "name": "THE PROOF — Tori Midnight × the DCUS, all twelve rows",
+    "parts": []
+   },
+   {
+    "name": "OUTPUT CONTRACT",
+    "parts": []
+   },
+   {
+    "name": "THREE-CHECK LINES (three-check pass 1.0, kept 2026-09-29)",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_genre_system.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "PART B · THE TAXONOMY, the four words and the four vocabularies",
+    "parts": []
+   },
+   {
+    "name": "PART A · THE GENRE SLICE, twelve layers, mirror of the character, setting, plot and texture stacks",
+    "parts": []
+   },
+   {
+    "name": "THE INSTRUMENTS · the GENRE CARD and the GENRE CONTRACT",
+    "parts": []
+   },
+   {
+    "name": "THE INSTANCE · OXO, worked example (phase 2 fills)",
+    "parts": []
+   },
+   {
+    "name": "GENRE × LIBRARY",
+    "parts": []
+   },
+   {
+    "name": "TROPES",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_medium_grammars.md": [
+   {
+    "name": "THE CONTRACT TABLE — ten mediums at a glance",
+    "parts": []
+   },
+   {
+    "name": "THE GRAMMARS — how each medium re-instruments texture",
+    "parts": [
+     "M1 · PROSE",
+     "M2 · FILM",
+     "M3 · TV / SERIAL",
+     "M4 · GAMES",
+     "M5 · TTRPG",
+     "M6 · MUSIC VIDEO — v1 scaffold (BOLO 16 deepens)",
+     "M7 · SOCIAL / SHORT-FORM — v1 scaffold (BOLO 16 deepens)",
+     "M8 · PMV / HMV — v1 scaffold, ORANGE (BOLO 16 deepens)",
+     "M9 · PORN (live-action) — ORANGE",
+     "M10 · THEATRE"
+    ]
+   },
+   {
+    "name": "TEXTURE BY MEDIUM · T3, T4, T10 per channel",
+    "parts": []
+   },
+   {
+    "name": "MODE · a fence around genre, listed per medium",
+    "parts": []
+   },
+   {
+    "name": "MEDIUM × LIBRARY",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_modern_poetics.md": [
+   {
+    "name": "THE SEVEN CANONIZED PRINCIPLES (May 2025, ratified 2026-08-31)",
+    "parts": [
+     "P1 · ENTERTAINMENT-FIRST — the primacy",
+     "P2 · THE AMERICAN CENTER — the audience contract",
+     "P3 · SATURATION — sexuality as bloodstream",
+     "P4 · ORIGINALITY AS CRAFT — the library charter",
+     "P5 · THE SETPIECE PRINCIPLE — plotsystems seed #1",
+     "P6 · THE SERIAL HOOK — plotsystems seed #2",
+     "P7 · THE NARRATIVE DILEMMA — plotsystems seed #3"
+    ]
+   },
+   {
+    "name": "THE THREE NATIVE CHECKS (coined 2026-08-31 — v0, spoken register preserved by order)",
+    "parts": [
+     "P8 · THE FANTASY DRIVE",
+     "P9 · THE SEXY CHECK",
+     "P10 · THE AESTHETIC CHECK"
+    ]
+   },
+   {
+    "name": "COMPOSITION NOTE — the one tension, resolved",
+    "parts": []
+   },
+   {
+    "name": "DISPOSITION RECORD — ratified 2026-08-31",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_scale_ladder.md": [
+   {
+    "name": "THE RUNGS — bottom-up",
+    "parts": [
+     "R1 · BEAT",
+     "R2 · SCENE",
+     "R3 · SEQUENCE",
+     "R4 · ACT / MOVEMENT",
+     "R5 · STORY (the storyform)",
+     "R6 · NESTED STORYFORM — story within story",
+     "R7 · IP / SERIES — many stories, one container",
+     "R8 · UNIVERSE / CANON"
+    ]
+   },
+   {
+    "name": "THREADS — what runs through the containers",
+    "parts": []
+   },
+   {
+    "name": "THE CONSTRAINT CHECK — Touchstones over the ladder (wired 2026-08-25)",
+    "parts": []
+   },
+   {
+    "name": "THE ADDRESS SCHEME (provisional, rulable)",
+    "parts": []
+   },
+   {
+    "name": "LADDER × LIBRARY",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_spine_house_inventory.md": [
+   {
+    "name": "L0 · Root theory",
+    "parts": []
+   },
+   {
+    "name": "L1 · Throughlines",
+    "parts": []
+   },
+   {
+    "name": "L2 · Nesting",
+    "parts": []
+   },
+   {
+    "name": "L3 · Dynamics",
+    "parts": []
+   },
+   {
+    "name": "L4 · Plot",
+    "parts": []
+   },
+   {
+    "name": "L5 · Character → the 02 domain (its branch-down)",
+    "parts": []
+   },
+   {
+    "name": "L6 · Theme",
+    "parts": []
+   },
+   {
+    "name": "L7 · Genre & audience",
+    "parts": []
+   },
+   {
+    "name": "Archived conversations (story-craft relevant; titles + paths in CLAUDEARCHIVE2026-08-15/INDEX.md)",
+    "parts": []
+   },
+   {
+    "name": "Keying infrastructure (unmapped by design)",
+    "parts": []
+   },
+   {
+    "name": "FINDINGS — what the sweep surfaced",
+    "parts": []
+   },
+   {
+    "name": "Addendum 2026-09-03 — the narratology shelf (correction to the craft-shelf finding)",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_story_registry.md": [
+   {
+    "name": "THE REGISTRY",
+    "parts": []
+   },
+   {
+    "name": "PROJECTS (not stories)",
+    "parts": []
+   },
+   {
+    "name": "VIGNETTES (a kind of story, not a story row)",
+    "parts": []
+   },
+   {
+    "name": "THE ROW",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_story_spine_comparative_tree.md": [
+   {
+    "name": "THE TREE",
+    "parts": [
+     "L0 · What a story is — the root claim",
+     "L1 · The four throughlines — one problem, four perspectives",
+     "L2 · The structural nesting — Domain → Concern → Issue → Problem",
+     "L3 · The story dynamics — the eight switches",
+     "L4 · Plot — the argument dramatized in time",
+     "L5 · Character — functions before persons",
+     "L6 · Theme — the argument's value layer",
+     "L7 · Genre, medium, audience — the outermost ring"
+    ]
+   },
+   {
+    "name": "THE SETTING TOUCHPOINT MAP — RULED 2026-08-26",
+    "parts": []
+   },
+   {
+    "name": "THE BRANCHES — first layer down (breadth pass, RULED + delivered 2026-08-26)",
+    "parts": [
+     "L0 · Root — theories of what story is",
+     "L1 · Throughlines — the four seats, each its own anatomy",
+     "L2 · Nesting — the chart itself",
+     "L3 · Dynamics — the eight switches, one node each",
+     "L4 · Plot — the richest branch; next domain candidate (plotsystems, 04)",
+     "L5 · Character — already a domain",
+     "L6 · Theme — the value layer",
+     "L7 · Genre & Audience — the outer ring"
+    ]
+   },
+   {
+    "name": "THE RIVAL MAP — one row per model",
+    "parts": []
+   },
+   {
+    "name": "THE HOUSE LAYER — how the spine is wired in",
+    "parts": []
+   },
+   {
+    "name": "THE LATTICE — the spine's four limbs (RULED 2026-08-25)",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_texture_layer.md": [
+   {
+    "name": "THE TEN QUESTIONS OF THE TELLING",
+    "parts": [
+     "T1 · WHO SPEAKS — voice / narration",
+     "T2 · WHO SEES — focalization (mood)",
+     "T3 · IN WHAT ORDER — order",
+     "T4 · AT WHAT SPEED — duration (pacing, formalized)",
+     "T5 · HOW OFTEN — frequency",
+     "T6 · IN WHAT WORDS — style / register",
+     "T7 · WITH WHAT FEELING — tone & affect",
+     "T8 · THROUGH WHAT THRESHOLDS — paratext",
+     "T9 · BREAKING WHICH FRAMES — metalepsis & the unnatural",
+     "T10 · TO WHOM — narratee & implied reader"
+    ]
+   },
+   {
+    "name": "THE TRANSLATION GRID — craft vocabulary → texture configuration",
+    "parts": []
+   },
+   {
+    "name": "THE INSTRUMENT — the TELLING PROFILE",
+    "parts": []
+   },
+   {
+    "name": "TEXTURE × LIBRARY",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_texture_system.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "PART B · THE TAXONOMY, the Ten Questions restated as axes",
+    "parts": []
+   },
+   {
+    "name": "PART A · THE TEXTURE SLICE, twelve layers, mirror of the character, setting and plot stacks",
+    "parts": []
+   },
+   {
+    "name": "THE INSTRUMENT · the TELLING PROFILE and the telling line",
+    "parts": []
+   },
+   {
+    "name": "THE INSTANCE · worked example (phase 2 fills)",
+    "parts": []
+   },
+   {
+    "name": "TEXTURE × LIBRARY",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_three_check_pass.md": [
+   {
+    "name": "SWEEP 1 · FANTASY DRIVE (P8) — all",
+    "parts": []
+   },
+   {
+    "name": "SWEEP 2 · SEXY CHECK (P9) — all",
+    "parts": []
+   },
+   {
+    "name": "SWEEP 3 · AESTHETIC CHECK (P10) — all — carrier: COLOR / SHAPE / TEXTURE",
+    "parts": []
+   },
+   {
+    "name": "NEXT",
+    "parts": []
+   },
+   {
+    "name": "WHERE EACH LINE LANDED",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_touchstones_register.md": [
+   {
+    "name": "THE ENTRY",
+    "parts": []
+   },
+   {
+    "name": "THE RULES",
+    "parts": []
+   },
+   {
+    "name": "TOUCHSTONES (live)",
+    "parts": [
+     "Book 1 — Chief's rulings",
+     "Book 2 — Modern Poetics"
+    ]
+   },
+   {
+    "name": "PARKED (phase 2)",
+    "parts": []
+   },
+   {
+    "name": "Where to go next",
+    "parts": []
+   }
+  ],
+  "📐 ssot_01_trope_register.md": [
+   {
+    "name": "THE RECORD (ruled 9/29)",
+    "parts": []
+   },
+   {
+    "name": "THE COUNTS (2026-10-03, v0.5.0)",
+    "parts": []
+   },
+   {
+    "name": "READING THE SKEW",
+    "parts": []
+   },
+   {
+    "name": "COMMAND-LOCAL RECORDS (ruled 9/29, BOLO 91)",
+    "parts": []
+   }
+  ]
+ },
+ "02_CHARACTER_SYSTEMS": {
+  "📐 ssot_02_character_astrology.md": [
+   {
+    "name": "What Character Astrology Is",
+    "parts": []
+   },
+   {
+    "name": "What Character Astrology Is Not",
+    "parts": []
+   },
+   {
+    "name": "The Narrative-First Policy",
+    "parts": []
+   },
+   {
+    "name": "Domain Classification",
+    "parts": [
+     "Character-Level Categories (Static Chart)",
+     "Story-Level Categories (State Overlays / Relationship / Plot)"
+    ]
+   },
+   {
+    "name": "Character-Level Categories",
+    "parts": [
+     "Category 1: Systemic Core Philosophy",
+     "Category 3: Personal Stack (The Hardware)",
+     "Category 4: Structural Stack (The Limit)",
+     "Category 5: Interface Layer (The Angles)",
+     "Category 7: Aspect Logic Gates",
+     "Category 8: House Systems (Environmental Context)",
+     "Category 9: Planetary Dignities (Code Efficiency)",
+     "Category 14: Void Variable (12th House)"
+    ]
+   },
+   {
+    "name": "Story-Level Categories",
+    "parts": [
+     "Category 6: Network Topology (Unicursal Hexagram)",
+     "Category 10: Lifecycle Protocol (The 6 Movements)",
+     "Category 11: Synastry Overlays (Network Mesh)",
+     "Category 12: Progressions (Internal Clock)",
+     "Category 13: Transits (External Execution Commands)",
+     "Category 15: Reset Protocol (Systemic Wipe)"
+    ]
+   },
+   {
+    "name": "The Dramatica-Astrology Interface (DAI)",
+    "parts": [
+     "Where the rules live"
+    ]
+   },
+   {
+    "name": "Pipeline Position",
+    "parts": []
+   },
+   {
+    "name": "Relationship to the 12-Layer Character Database",
+    "parts": []
+   }
+  ],
+  "📐 ssot_02_character_systems_vertical_slice.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "PART A · THE CHARACTER SLICE, twelve layers, the stack the setting and plot slices mirror",
+    "parts": [
+     "Field tags · every field"
+    ]
+   },
+   {
+    "name": "Core Methodology",
+    "parts": [
+     "The Three-Tier Structure",
+     "The Hierarchy Rule",
+     "Erotic Pacing",
+     "Library-pass rules",
+     "The Villain-Arc Fork",
+     "The 12 Layers: Domain Declarations",
+     "Derived Statistics",
+     "Flag Trigger Conditions",
+     "The Structured Data Block"
+    ]
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Step 1 — Source Verification",
+     "Step 2 — Tier 1 Assignment",
+     "Step 3 — Tier 2 Derivation",
+     "Step 4 — Tier 3 Variable Population",
+     "Step 5 — Derived Statistic Computation",
+     "Step 6 — Flag Evaluation",
+     "Step 7 — Structured Data Block Generation"
+    ]
+   },
+   {
+    "name": "THE INSTANCE · Victoria Midnight, the full slice",
+    "parts": [
+     "Tier 1 — Primary Layers",
+     "Tier 2 — Secondary Layers",
+     "Tier 3 — Deep Variable Stacks",
+     "Derived Statistics",
+     "Active Flags",
+     "Structured Data Block"
+    ]
+   },
+   {
+    "name": "THE SCHEMA PASS — aliases and drops (RULED 2026-10-04, BOLO 88, \"all recommendations\")",
+    "parts": []
+   },
+   {
+    "name": "CHARACTER × LIBRARY",
+    "parts": []
+   },
+   {
+    "name": "TROPES",
+    "parts": []
+   }
+  ],
+  "📐 ssot_02_l9_eros_synthesis.md": [
+   {
+    "name": "1. What this is",
+    "parts": []
+   },
+   {
+    "name": "2. The per-distill register",
+    "parts": []
+   },
+   {
+    "name": "3. Recurring methods across the shelf",
+    "parts": []
+   },
+   {
+    "name": "4. The trope side",
+    "parts": []
+   },
+   {
+    "name": "5. PROPOSED CHANGES to L9",
+    "parts": []
+   },
+   {
+    "name": "6. Open questions",
+    "parts": []
+   },
+   {
+    "name": "7. Version history",
+    "parts": []
+   }
+  ],
+  "📐 ssot_02_template_astrology_ingest.md": [
+   {
+    "name": "How to use this form",
+    "parts": []
+   },
+   {
+    "name": "Header",
+    "parts": []
+   },
+   {
+    "name": "1. Personal Planets",
+    "parts": []
+   },
+   {
+    "name": "2. Structural Planets",
+    "parts": []
+   },
+   {
+    "name": "3. Angles",
+    "parts": []
+   },
+   {
+    "name": "4. Aspect Map",
+    "parts": []
+   },
+   {
+    "name": "5. House Placements",
+    "parts": []
+   },
+   {
+    "name": "6. Dignities",
+    "parts": []
+   },
+   {
+    "name": "7. 12th House / Void Contents",
+    "parts": []
+   },
+   {
+    "name": "8. Chart Summary",
+    "parts": []
+   },
+   {
+    "name": "9. 12-Layer Feed Map",
+    "parts": []
+   },
+   {
+    "name": "10. Status and Lock",
+    "parts": []
+   }
+  ],
+  "📐 ssot_02_template_dramatica_ingest.md": [
+   {
+    "name": "How to use this form",
+    "parts": []
+   },
+   {
+    "name": "Header",
+    "parts": []
+   },
+   {
+    "name": "1. Storyform Dynamics",
+    "parts": []
+   },
+   {
+    "name": "2. Structural Role",
+    "parts": []
+   },
+   {
+    "name": "3. Element Quads",
+    "parts": []
+   },
+   {
+    "name": "4. MC Throughline",
+    "parts": []
+   },
+   {
+    "name": "5. IC Throughline",
+    "parts": []
+   },
+   {
+    "name": "6. OS Throughline",
+    "parts": []
+   },
+   {
+    "name": "7. RS Throughline",
+    "parts": []
+   },
+   {
+    "name": "8. Report Source Log",
+    "parts": []
+   },
+   {
+    "name": "9. Touchstones",
+    "parts": []
+   },
+   {
+    "name": "10. L12 Core Block",
+    "parts": []
+   },
+   {
+    "name": "11. Downstream Handoff Checklist",
+    "parts": []
+   }
+  ],
+  "🔮 ssot_02_dramatica_integration_protocol.md": [
+   {
+    "name": "What Dramatica Is in This System",
+    "parts": []
+   },
+   {
+    "name": "What Dramatica Is Not",
+    "parts": []
+   },
+   {
+    "name": "Storyform Architecture",
+    "parts": [
+     "The Primary Unit: One Storyform Per Story",
+     "Nested Storyforms (Pattern 1)",
+     "Storyform Identification",
+     "Future Scaling (Flagged for plotsystems)"
+    ]
+   },
+   {
+    "name": "Character-Storyform Binding",
+    "parts": []
+   },
+   {
+    "name": "Tier Integration Rules",
+    "parts": [
+     "Tier 3 (Deep Characters — Protagonists, Antagonists, Key IC)",
+     "Tier 2 (Standard Characters — Recurring Supporting)",
+     "Tier 1 (Flat Characters — Background, Environmental)"
+    ]
+   },
+   {
+    "name": "L12 FUNCTION Architecture",
+    "parts": [
+     "Design Decision: Option C — Core + Sub-Table",
+     "L12 Core Block (All Tiers That Carry L12)",
+     "L12DRAMATICAEXTENDED Sub-Table (Tier 3 Only)"
+    ]
+   },
+   {
+    "name": "Dramatica Report Manifest",
+    "parts": [
+     "Character-Pipeline Reports (Load-Bearing)",
+     "Story-Level Reports (Reference)",
+     "Informational Reports (Non-Load-Bearing)",
+     "Report Extraction Priority"
+    ]
+   },
+   {
+    "name": "Cascade on a Revised Storyform",
+    "parts": []
+   },
+   {
+    "name": "Pipeline Position",
+    "parts": []
+   }
+  ],
+  "🔮ssot_02_character_astrology_12_layer_mapping.md": [
+   {
+    "name": "Governing Principles",
+    "parts": []
+   },
+   {
+    "name": "The Master Feed Table",
+    "parts": []
+   },
+   {
+    "name": "Layer-by-Layer Feed Specifications",
+    "parts": [
+     "L1 CORE ← Sun, Mercury",
+     "L2 VITAL ← Mars, Ascendant",
+     "L3 SOCIAL ← Ascendant, Venus, 7th House",
+     "L4 WILL ← Saturn, Sun-Saturn Aspects",
+     "L5 WOUND ← Debilitated Planets, Hard Moon Aspects, 8th House",
+     "L6 DRIVE ← Mars, Jupiter",
+     "L7 ORIGIN ← IC, 4th House, Moon",
+     "L8 IMPRINT ← Moon (Primary)",
+     "L9 EROS ← Venus, Mars-Venus, 5th/8th House",
+     "L10 SHADOW ← 12th House, Debilitated Planets, Pluto",
+     "L11 DESTINY ← Jupiter, Uranus, Midheaven",
+     "L12 FUNCTION ← No Astrology Feed"
+    ]
+   },
+   {
+    "name": "Schema-Pass Fields: Feed Notes",
+    "parts": []
+   },
+   {
+    "name": "Tier 2 Charts",
+    "parts": []
+   },
+   {
+    "name": "Independence Boundaries",
+    "parts": []
+   },
+   {
+    "name": "Conflict Resolution Protocol",
+    "parts": []
+   },
+   {
+    "name": "Feed Validation Checklist",
+    "parts": []
+   }
+  ],
+  "🔮ssot_02_character_astrology_dai.md": [
+   {
+    "name": "How to Use This Document",
+    "parts": []
+   },
+   {
+    "name": "The Derivation Sequence",
+    "parts": []
+   },
+   {
+    "name": "Element-to-Sign Mapping Tables",
+    "parts": [
+     "Dramatica Domains to Elemental Mode",
+     "Dramatica Concerns to Modality",
+     "Domain + Modality = Sign Selection Grid",
+     "Dramatica Problem Elements to Planetary Resonance"
+    ]
+   },
+   {
+    "name": "Planetary Derivation Rules",
+    "parts": [
+     "Step 1: Sun Sign (IDENTITYAXIS)",
+     "Step 2: Moon Sign (INTERNALSTATE)",
+     "Step 3: Ascendant (CHARACTERUISKIN)",
+     "Step 4: Mercury (CODEINTERPRETATION)",
+     "Step 5: Venus (VALUEVECTOR)",
+     "Step 6: Mars (ACTIONPROTOCOL)",
+     "Step 7: Saturn (ENTROPYLIMITER)",
+     "Steps 8-11: Outer Planets"
+    ]
+   },
+   {
+    "name": "Angle Derivation Rules",
+    "parts": []
+   },
+   {
+    "name": "Aspect Derivation Rules",
+    "parts": [
+     "Source 1: Dramatica Tension Analysis",
+     "Source 2: Sign Geometry"
+    ]
+   },
+   {
+    "name": "House Assignment Rules",
+    "parts": []
+   },
+   {
+    "name": "Dignity Calculation Rules",
+    "parts": []
+   },
+   {
+    "name": "Void Variable (12th House) Assignment",
+    "parts": []
+   },
+   {
+    "name": "Tier 2 Abbreviated Derivation",
+    "parts": []
+   },
+   {
+    "name": "Worked Example: Victoria Midnight",
+    "parts": []
+   }
+  ],
+  "🔮ssot_02_character_state_architecture.md": [
+   {
+    "name": "The Core Principle",
+    "parts": []
+   },
+   {
+    "name": "What Is Static vs What Is Dynamic",
+    "parts": [
+     "The Decision Test"
+    ]
+   },
+   {
+    "name": "State Record Format",
+    "parts": [
+     "Required Fields",
+     "The State Diffs Parent (v1.1)",
+     "Modified Values Block",
+     "Modified Derived Statistics Block",
+     "Modified Flags Block",
+     "State Narrative Note",
+     "Character Astrology State Overlay (Optional)"
+    ]
+   },
+   {
+    "name": "Checkpoints and Story Points (v1.2)",
+    "parts": []
+   },
+   {
+    "name": "State Diff Rules",
+    "parts": []
+   },
+   {
+    "name": "Querying a Character at a Narrative Moment",
+    "parts": []
+   },
+   {
+    "name": "State Sources",
+    "parts": [
+     "Category 1: Trauma Events",
+     "Category 2: Systemic Pressure Events",
+     "Category 3: Relational Events",
+     "Category 4: Awakening Events",
+     "Category 5: Progression Overlays"
+    ]
+   },
+   {
+    "name": "Relationship Records",
+    "parts": [
+     "Relationship Record Format",
+     "Relationship State Changes",
+     "Synastry Data"
+    ]
+   },
+   {
+    "name": "Boundaries with plotsystems",
+    "parts": []
+   }
+  ],
+  "🔮ssot_02_step_1_source_verification_protocol.md": [
+   {
+    "name": "What This Replaces",
+    "parts": []
+   },
+   {
+    "name": "The Source Verification Gate",
+    "parts": []
+   },
+   {
+    "name": "Required Documents by Tier",
+    "parts": [
+     "Tier 3 (Deep Characters — Full Verification Required)",
+     "Tier 2 (Standard Characters — Partial Verification)",
+     "Tier 1 (Flat Characters — Minimal Verification)"
+    ]
+   },
+   {
+    "name": "Verification Sequence",
+    "parts": [
+     "Component 1: Authoritative Document Verification",
+     "Component 2: Dramatica Ingest Verification",
+     "Component 3: Character Astrology Ingest Verification"
+    ]
+   },
+   {
+    "name": "Pass and Fail Conditions",
+    "parts": [
+     "Full Pass (Green Light)",
+     "Conditional Pass (Yellow Light)",
+     "Fail (Red Light)"
+    ]
+   },
+   {
+    "name": "Canonical Folder Structure",
+    "parts": []
+   }
+  ]
+ },
+ "03_SETTING_SYSTEMS": {
+  "📐 ssot_03_setting_synthesis.md": [
+   {
+    "name": "PART ONE · PER-LAYER REGISTER",
+    "parts": []
+   },
+   {
+    "name": "PART TWO · CROSS-BOOK METHODS",
+    "parts": []
+   },
+   {
+    "name": "PART THREE · CHANGES TO THE SYSTEM (RULED and applied)",
+    "parts": []
+   },
+   {
+    "name": "PART FOUR · DCUS APPLICATION (phase 2)",
+    "parts": []
+   },
+   {
+    "name": "PART FIVE · CONTRADICTIONS",
+    "parts": []
+   }
+  ],
+  "📐 ssot_03_setting_system.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "PART B · THE TAXONOMY — four axes",
+    "parts": [
+     "Axis 1 · SCALE — places nest (rhymes with the ladder's 8 rungs)",
+     "Axis 2 · STRATA — what a place is made of",
+     "Axis 3 · FUNCTION — what setting DOES (Buckham-derived deployment modes)",
+     "Axis 4 · TIME — baseline and states (the setting arc)"
+    ]
+   },
+   {
+    "name": "PART A · THE SETTING SLICE — twelve layers, mirror of the character stack",
+    "parts": [
+     "PART A rules (added 1.9.0, RULED 2026-10-04)"
+    ]
+   },
+   {
+    "name": "THE SCENE CARD — the R2 notation (slot reserved in the ladder, delivered here)",
+    "parts": []
+   },
+   {
+    "name": "THE SEQUENCE CARD — the R3 notation (added 2026-09-29, BOLO 90 step 7 trial)",
+    "parts": []
+   },
+   {
+    "name": "THE FACTION / NATION CARD — companion notation to the SCENE CARD",
+    "parts": []
+   },
+   {
+    "name": "THE POLDER TEST — for an enclosed place (RULED 2026-10-04, BOLO 87, \"all recs\")",
+    "parts": []
+   },
+   {
+    "name": "SETTING FLAGS — starter set (RULED 2026-10-04, Chief \"REC\", BOLO 100)",
+    "parts": []
+   },
+   {
+    "name": "THE FREEDOM-AND-RESTRICTION CLAIM — the dystopia mechanism (ruled 2026-09-16, genre OPEN 11; landed 2026-10-04)",
+    "parts": []
+   },
+   {
+    "name": "THE INSTANCE — DCUS starter slice (proof of rig) — worked example (phase 2 fills)",
+    "parts": []
+   },
+   {
+    "name": "SETTING × LIBRARY",
+    "parts": []
+   },
+   {
+    "name": "TROPES",
+    "parts": []
+   }
+  ],
+  "🔮 ssot_03_setting_state_architecture.md": [
+   {
+    "name": "1. Purpose",
+    "parts": []
+   },
+   {
+    "name": "2. The Core Principle",
+    "parts": []
+   },
+   {
+    "name": "3. What Is Static vs What Is Dynamic",
+    "parts": [
+     "Static (Lives in the Base Slice, Never Changes)",
+     "Dynamic (Lives in State Diffs)",
+     "The Decision Test"
+    ]
+   },
+   {
+    "name": "4. State Record Format",
+    "parts": [
+     "Required Fields",
+     "The State Diffs Parent",
+     "Modified Layers Block",
+     "Modified Header Block (renames)",
+     "Modified Flags Block",
+     "State Narrative Note"
+    ]
+   },
+   {
+    "name": "5. Checkpoints and Story Points",
+    "parts": []
+   },
+   {
+    "name": "6. State Diff Rules",
+    "parts": []
+   },
+   {
+    "name": "7. Querying a Place at a Narrative Moment",
+    "parts": []
+   },
+   {
+    "name": "8. State Sources",
+    "parts": [
+     "Category 1: Construction/Damage Events",
+     "Category 2: Institutional Change Events",
+     "Category 3: Ownership Change Events",
+     "Category 4: Rename/Erasure Events",
+     "Category 5: Seasonal/Cyclic Events (Progression Overlay)"
+    ]
+   },
+   {
+    "name": "9. Faction States",
+    "parts": []
+   },
+   {
+    "name": "10. Boundaries",
+    "parts": []
+   },
+   {
+    "name": "11. THE INSTANCE — the DCUS rename lattice — worked example (phase 2 fills)",
+    "parts": [
+     "Checkpoint 1 — the founding, as Skeeter Creek",
+     "Checkpoint 2 — the first erasure, Skeeter Creek sanded to Red Hills",
+     "Checkpoint 3 — the second erasure, the Bishop acquisition and the DCUS rebrand",
+     "The scrub test (ruled 2026-09-24)"
+    ]
+   },
+   {
+    "name": "12. Version History",
+    "parts": []
+   }
+  ]
+ },
+ "04_PLOT_SYSTEMS": {
+  "📐 ssot_04_fabula.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "THE EVENT RECORD",
+    "parts": []
+   },
+   {
+    "name": "CAUSAL EDGES",
+    "parts": []
+   },
+   {
+    "name": "THE WORLD CLOCK",
+    "parts": []
+   },
+   {
+    "name": "ORIGIN MOMENTS",
+    "parts": []
+   },
+   {
+    "name": "THE HANDSHAKE",
+    "parts": []
+   },
+   {
+    "name": "THE INSTANCE",
+    "parts": []
+   },
+   {
+    "name": "ANNA COLSON'S ORIGIN (BOLO 91, RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "FABULA × LIBRARY",
+    "parts": []
+   }
+  ],
+  "📐 ssot_04_plot_system.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "PART B · THE TAXONOMY, four axes",
+    "parts": [
+     "Axis 1 · SCALE, plot units on the existing ladder",
+     "Axis 2 · THE TURN, what changes inside a unit",
+     "Axis 3 · FUNCTION, what a plot unit does for the argument",
+     "Axis 4 · DRIVE, drivers and act turns"
+    ]
+   },
+   {
+    "name": "PART A · THE PLOT SLICE, twelve layers, mirror of the character and setting stacks",
+    "parts": []
+   },
+   {
+    "name": "THE PLOT CARD, the notation slot for one plot unit",
+    "parts": []
+   },
+   {
+    "name": "THE TOLD ORDER",
+    "parts": []
+   },
+   {
+    "name": "THE INSTANCE, M2 row 9 filled into the plot slice — worked example (phase 2 fills)",
+    "parts": []
+   },
+   {
+    "name": "PLOT × LIBRARY",
+    "parts": []
+   }
+  ],
+  "📐 ssot_04_trope_graph.md": [
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "THE NODES",
+    "parts": []
+   },
+   {
+    "name": "THE TROPES",
+    "parts": []
+   },
+   {
+    "name": "THE EDGES",
+    "parts": []
+   },
+   {
+    "name": "THE RAILS",
+    "parts": [
+     "The movements map (ruled 2026-09-24, BOLO 77 call 77-L) — OXO instance",
+     "The node seating (call 77-I, seated 2026-09-24)"
+    ]
+   },
+   {
+    "name": "THE WALK",
+    "parts": []
+   },
+   {
+    "name": "THE HANDSHAKE",
+    "parts": []
+   },
+   {
+    "name": "TROPE GRAPH × LIBRARY",
+    "parts": []
+   }
+  ]
+ },
+ "05_OPERATIONS": {
+  "how_to_use_goon_room.md": [
+   {
+    "name": "Daily Workflow",
+    "parts": [
+     "1. Start a Session",
+     "2. Work Freely",
+     "3. Tag As You Go",
+     "4. Weekly Review"
+    ]
+   },
+   {
+    "name": "File Naming Convention",
+    "parts": []
+   },
+   {
+    "name": "Don't Worry About",
+    "parts": []
+   },
+   {
+    "name": "Focus On",
+    "parts": []
+   }
+  ],
+  "📐 ssot_00_bold_venture_design_system.md": [
+   {
+    "name": "THE BOLD VENTURE ROSTER — the brand color layer (RULED 2026-09-01)",
+    "parts": [
+     "Layer 0 · THE IDENTITY — present on every surface, every hour",
+     "The four registers",
+     "THE LUMINANCE LAW (panel-derived, measurable — supersedes the vibe-rule)",
+     "The one-red ledger",
+     "Semantic token remap — dark theme (the Noir default)",
+     "The surface map",
+     "Governance"
+    ]
+   },
+   {
+    "name": "Core Methodology",
+    "parts": [
+     "Design System Architecture",
+     "Token Hierarchy",
+     "Color System — Reference Palettes",
+     "Color System — Semantic Tokens Dark Theme",
+     "Color System — Semantic Tokens Light Theme",
+     "Status System",
+     "Classification Markings",
+     "Data Visualization Palette",
+     "Typography System",
+     "Spacing System",
+     "Border Radius and Opacity",
+     "Responsive Grid",
+     "Component Inventory",
+     "Component Token Specifications",
+     "UX Patterns",
+     "Compliance Framework",
+     "Theming Architecture",
+     "Naming Convention — Astro to Bold Venture Translation"
+    ]
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Adopting the Design System for a New Application",
+     "Applying the Status System",
+     "Building a Custom Component",
+     "Extending the Color System"
+    ]
+   },
+   {
+    "name": "Examples",
+    "parts": [
+     "Example 1: System Explorer Application",
+     "Example 2: Character Database Editor Application"
+    ]
+   }
+  ],
+  "📐 ssot_00_process_illustration_character_pipeline.md": [
+   {
+    "name": "The Four Flows",
+    "parts": []
+   },
+   {
+    "name": "Master Pipeline Overview",
+    "parts": []
+   },
+   {
+    "name": "Flow A: Dramatica → Dramatica Ingest Template",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Flow B: Dramatica Ingest → Character Astrology Ingest (via DAI)",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Flow C: Both Ingests → 12-Layer Vertical Slice",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Flow D: Vertical Slice → State Diffs",
+    "parts": [
+     "Overview",
+     "Flow Diagram",
+     "Decision Point Annotations"
+    ]
+   },
+   {
+    "name": "Cascade: A Revised Storyform",
+    "parts": []
+   },
+   {
+    "name": "Cross-Flow: Module Attachment",
+    "parts": [
+     "Module Activation Flow",
+     "Module Data in State Diffs"
+    ]
+   },
+   {
+    "name": "Appendix: Quick Reference — \"What Do I Do Next?\"",
+    "parts": []
+   }
+  ],
+  "📐 ssot_05_operations_development_standard.md": [
+   {
+    "name": "Core Methodology",
+    "parts": [
+     "A · The life-cycle read",
+     "B · The loop, stage by stage",
+     "C · Nesting",
+     "D · Standing rules",
+     "E · Audit hooks",
+     "F · Tailoring",
+     "G · Governance"
+    ]
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Running one increment"
+    ]
+   },
+   {
+    "name": "Examples",
+    "parts": [
+     "Example 1 · the 9/15 sit rep, run as the formation",
+     "Example 2 · DOPE SHEET 53, this document's own first increment"
+    ]
+   }
+  ],
+  "📐 ssot_05_operations_goon_room_protocol.md": [
+   {
+    "name": "Operational Environment",
+    "parts": []
+   },
+   {
+    "name": "Workflow Procedures",
+    "parts": []
+   },
+   {
+    "name": "Data Integrity Standards",
+    "parts": []
+   },
+   {
+    "name": "Implementation",
+    "parts": []
+   },
+   {
+    "name": "Examples",
+    "parts": []
+   }
+  ],
+  "📐 ssot_05_operations_legacy_styleguide_2024.md": [],
+  "📐 ssot_05_operations_markdown_marking.md": [],
+  "📐 ssot_05_operations_pm_holdings_inventory.md": [
+   {
+    "name": "1 · PMBOK / PMI material",
+    "parts": []
+   },
+   {
+    "name": "2 · Marine Corps doctrine as PM method",
+    "parts": []
+   },
+   {
+    "name": "3 · Pyramid Principle / answer-first doctrine",
+    "parts": []
+   },
+   {
+    "name": "4 · Templates, registries, gates, process docs",
+    "parts": []
+   },
+   {
+    "name": "5 · The Ultrasin master registry format",
+    "parts": []
+   },
+   {
+    "name": "6 · Finished vs missing",
+    "parts": []
+   },
+   {
+    "name": "7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot05operationsprojectflow.md v0.1",
+    "parts": []
+   },
+   {
+    "name": "8 · Addendum 2026-09-09 — the Business-ops cluster, closed out (true-ancients R8)",
+    "parts": []
+   }
+  ],
+  "📐 ssot_05_operations_project_flow.md": [
+   {
+    "name": "Core Methodology",
+    "parts": [
+     "A · The shape: campaign, operation, engagement",
+     "B · The six phases",
+     "C · The brief",
+     "D · The gate",
+     "E · The instruments",
+     "F · Cadence and control",
+     "G · Standing principles",
+     "H · Tailoring",
+     "I · Governance"
+    ]
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Starting a project",
+     "The brief — blank",
+     "The gate — checklist",
+     "The assumption — row"
+    ]
+   },
+   {
+    "name": "Examples",
+    "parts": [
+     "Example 1 · BVIPDS, retro-fitted (2026-03-19 charter)",
+     "Example 2 · BOLO 24, the studio launch (2026-09-03, first live instance)",
+     "Example 3 · BOLO 26, the dictation dictionary (S-size)"
+    ]
+   }
+  ],
+  "📐 ssot_05_operations_retrieval_dossier_protocol.md": [
+   {
+    "name": "Core Methodology",
+    "parts": [
+     "Retrieval Dossier",
+     "Doctrinal Constraints",
+     "Input Model",
+     "Output Model",
+     "Mandatory Output Structure",
+     "Operational Definition of “Decision-Grade”"
+    ]
+   },
+   {
+    "name": "Implementation",
+    "parts": [
+     "Operator Procedure",
+     "Agent Execution Procedure",
+     "Output Format Requirements"
+    ]
+   },
+   {
+    "name": "Examples",
+    "parts": [
+     "Example 1: Prompt Template Drift Cleanup",
+     "Example 2: Mixed Workflow and Standards Bundle"
+    ]
+   }
+  ],
+  "📐 ssot_05_operations_standards_ladder.md": [
+   {
+    "name": "The four rungs",
+    "parts": []
+   },
+   {
+    "name": "The rule that decides the rung",
+    "parts": []
+   },
+   {
+    "name": "The tag",
+    "parts": []
+   },
+   {
+    "name": "The filing table · 2026-09-15",
+    "parts": []
+   },
+   {
+    "name": "The network · flat index (phase 6, 2026-09-15)",
+    "parts": [
+     "Table 1 · By document",
+     "Table 2 · By outside body",
+     "Table 3 · By level and world"
+    ]
+   },
+   {
+    "name": "Governance",
+    "parts": []
+   }
+  ],
+  "📐 ssot_ai_instruction_protocol.md": [
+   {
+    "name": "Instructional Role",
+    "parts": []
+   },
+   {
+    "name": "Phase 1: Metadata Generation (YAML)",
+    "parts": []
+   },
+   {
+    "name": "Phase 2: Linguistic Constraints (The Marine Standard)",
+    "parts": []
+   },
+   {
+    "name": "Phase 3: Structural Requirements",
+    "parts": []
+   },
+   {
+    "name": "Phase 4: Execution Workflow",
+    "parts": []
+   },
+   {
+    "name": "Output Format Requirements",
+    "parts": []
+   }
+  ],
+  "📐 ssot_template_prompt_for_summarizing_novels_and_books.md": [
+   {
+    "name": "1. Purpose & Scope",
+    "parts": []
+   },
+   {
+    "name": "2. Universal System Prompt",
+    "parts": []
+   },
+   {
+    "name": "3. Modular Add-Ons",
+    "parts": [
+     "3A. Narratological Deep Dive",
+     "3B. Dramatica Framework Extension",
+     "3C. Knowledgebase Entry Formatter",
+     "3D. Wicked Figures / Key Contributions Extractor"
+    ]
+   },
+   {
+    "name": "4. Output Structure Specification",
+    "parts": []
+   },
+   {
+    "name": "5. Processing Pipeline",
+    "parts": []
+   },
+   {
+    "name": "6. Reference Sources Directive",
+    "parts": []
+   },
+   {
+    "name": "7. Usage Rules",
+    "parts": []
+   }
+  ],
+  "📐 ssot_writing_guide.md": [],
+  "📐ssot_SSOT_CREATION.md": [
+   {
+    "name": "Linguistic Authority Standards",
+    "parts": []
+   },
+   {
+    "name": "The SSOT Creation Process: Step-by-Step",
+    "parts": [
+     "Phase 1: Classification",
+     "Phase 2: Content Generation",
+     "Phase 3: YAML Initialization",
+     "Phase 4: The Manual UI Kickstart",
+     "Phase 5: Naming and Storage"
+    ]
+   },
+   {
+    "name": "The Manual UI Kickstart Protocol",
+    "parts": []
+   },
+   {
+    "name": "File Naming and Metadata",
+    "parts": [
+     "Naming Convention",
+     "Emoji Taxonomy"
+    ]
+   }
+  ]
+ },
+ "06_STYLE_GUIDES": {
+  "📐 ssot_06_1_prose_style.md": [
+   {
+    "name": "Scope",
+    "parts": []
+   },
+   {
+    "name": "Voice & person",
+    "parts": []
+   },
+   {
+    "name": "Focalization",
+    "parts": []
+   },
+   {
+    "name": "Motive on the page",
+    "parts": []
+   },
+   {
+    "name": "Register & diction",
+    "parts": []
+   },
+   {
+    "name": "Sentence craft",
+    "parts": []
+   },
+   {
+    "name": "Description & the sensorium",
+    "parts": []
+   },
+   {
+    "name": "Dialogue",
+    "parts": []
+   },
+   {
+    "name": "Pace on the page",
+    "parts": []
+   },
+   {
+    "name": "Explicit content & paratext",
+    "parts": []
+   },
+   {
+    "name": "Genre register (cultcore)",
+    "parts": []
+   },
+   {
+    "name": "Meta-genre: the style bible",
+    "parts": []
+   },
+   {
+    "name": "The check",
+    "parts": []
+   }
+  ],
+  "📐 ssot_06_2_documents_style.md": [
+   {
+    "name": "THE DOCUMENTATION RULES — THE CORE (BOLO 95)",
+    "parts": []
+   },
+   {
+    "name": "THE INDEX — 06.2a AND 06.2b",
+    "parts": []
+   },
+   {
+    "name": "THE REPLY FORMAT — SOP §7, SUMMARIZED",
+    "parts": []
+   },
+   {
+    "name": "NAMING RULINGS THAT GOVERN EVERY DOCUMENT",
+    "parts": []
+   }
+  ],
+  "📐 ssot_06_2a_writing_guide.md": [
+   {
+    "name": "Linguistic Authority Standards",
+    "parts": []
+   },
+   {
+    "name": "Structural Requirements",
+    "parts": []
+   },
+   {
+    "name": "The Flat-Syntax YAML Standard",
+    "parts": []
+   }
+  ],
+  "📐 ssot_06_2b_markdown_marking.md": [
+   {
+    "name": "CORE METHODOLOGY — the four marks",
+    "parts": []
+   },
+   {
+    "name": "IMPLEMENTATION",
+    "parts": [
+     "Reader protocol",
+     "Harvest",
+     "Writer protocol",
+     "Retro-conversion"
+    ]
+   },
+   {
+    "name": "EXAMPLES",
+    "parts": []
+   }
+  ],
+  "📐 ssot_06_3_pages_style.md": [
+   {
+    "name": "THE FOUNDATION",
+    "parts": []
+   },
+   {
+    "name": "THE PAGE RULINGS",
+    "parts": []
+   }
+  ]
+ },
+ "07_THEME_SYSTEMS": {
+  "📐 ssot_07_theme_system.md": [
+   {
+    "name": "THE METHOD — how any story builds its theme",
+    "parts": []
+   },
+   {
+    "name": "THE WORKED INSTANCE — OVEREXITOUT",
+    "parts": []
+   },
+   {
+    "name": "THE CONTROLLING IDEA — OVEREXITOUT",
+    "parts": [
+     "The mechanism line (how the system does it)"
+    ]
+   },
+   {
+    "name": "HOW THE SENTENCE MAPS ONTO THE LOCKED STORYFORM",
+    "parts": []
+   },
+   {
+    "name": "THE RAILS — four debates (80-B.1, RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "THE VALUE SCALE — the per-scene gauge (80-B.2)",
+    "parts": []
+   },
+   {
+    "name": "THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "THE MOTIFS — three images (80-B.3, RULED 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "PROVENANCE",
+    "parts": []
+   },
+   {
+    "name": "RULED 2026-09-29 (Chief: \"go on all those recs\")",
+    "parts": []
+   },
+   {
+    "name": "THE SCENE TESTS — the controlling idea on the scene card (RULED 2026-10-04, BOLO 80, \"all recs\")",
+    "parts": []
+   },
+   {
+    "name": "TROPES",
+    "parts": []
+   },
+   {
+    "name": "THE HANDSHAKE — theme × Touchstones (BOLO 81)",
+    "parts": []
+   },
+   {
+    "name": "1.0 BAR (RULED 2026-09-29, BOLO 80)",
+    "parts": []
+   },
+   {
+    "name": "PARKED (wave 2)",
+    "parts": []
+   }
+  ]
+ },
+ "08_TRACKING_SYSTEMS": {
+  "📐 ssot_08_tracking_system.md": [
+   {
+    "name": "1. What This Is",
+    "parts": []
+   },
+   {
+    "name": "2. The Two Rulers",
+    "parts": []
+   },
+   {
+    "name": "3. The Grid",
+    "parts": []
+   },
+   {
+    "name": "4. The Time Code",
+    "parts": []
+   },
+   {
+    "name": "5. The Records",
+    "parts": []
+   },
+   {
+    "name": "6. Cables",
+    "parts": []
+   },
+   {
+    "name": "7. Tempo",
+    "parts": []
+   },
+   {
+    "name": "8. The Ableton Map",
+    "parts": []
+   },
+   {
+    "name": "9. Who Consumes This",
+    "parts": []
+   },
+   {
+    "name": "9A. The Reader Model",
+    "parts": []
+   },
+   {
+    "name": "10. Open",
+    "parts": []
+   },
+   {
+    "name": "11. Version History",
+    "parts": []
+   }
+  ]
+ },
+ "09_WORLDBUILDING_SYSTEMS": {
+  "📐 ssot_09_worldbuilding_system.md": [
+   {
+    "name": "What this is",
+    "parts": []
+   },
+   {
+    "name": "THE DEFINITION",
+    "parts": [
+     "What this system owns",
+     "What it does not own",
+     "How it relates to each system",
+     "Vocabulary (ruled 9/29)",
+     "The plain verdict"
+    ]
+   },
+   {
+    "name": "MIND MODELS",
+    "parts": []
+   },
+   {
+    "name": "THE INFRASTRUCTURES",
+    "parts": []
+   },
+   {
+    "name": "THE COHERENCE TESTS",
+    "parts": []
+   },
+   {
+    "name": "THE BOUNDARY",
+    "parts": []
+   },
+   {
+    "name": "THE CATALOG",
+    "parts": [
+     "The entry schema",
+     "The types",
+     "Where the files live",
+     "Seed entries (names only)"
+    ]
+   },
+   {
+    "name": "THE WORLD VIEW",
+    "parts": []
+   },
+   {
+    "name": "THE PROOF — DCUS (1.0, 2026-09-29)",
+    "parts": []
+   },
+   {
+    "name": "WORLDBUILDING × LIBRARY",
+    "parts": []
+   }
+  ]
+ }
+}
