@@ -1,0 +1,911 @@
+[
+ {
+  "n": 1,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot epistemology truth verification",
+  "page": "2-reference.md",
+  "line": 165,
+  "gap": "the source's References section names external sources only as categories (philosophical epistemology, scientific methodology, historical method, logic). It gives no titles.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 2,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot epistemology truth verification",
+  "page": "3-how-to.md",
+  "line": 61,
+  "gap": "the source gives no rule for how many sources a framework may carry or which library ids qualify.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 3,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot epistemology truth verification",
+  "page": "4-tutorial.md",
+  "line": 29,
+  "gap": "the source names no specific studies for this check.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 4,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_base_60_number_system",
+  "page": "2-reference.md",
+  "line": 68,
+  "gap": "C13 repeats C02's sequence. The source lists both without comment.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 5,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_base_60_number_system",
+  "page": "2-reference.md",
+  "line": 234,
+  "gap": "the source's rule says derived stats \"display on SC-12\", but its table assigns SC-30, SC-20 and SC-60 output classes, and the Victoria table shows SC-60. The source does not reconcile them. The source also keeps three abandoned formula attempts in this section.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 6,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_base_60_number_system",
+  "page": "3-how-to.md",
+  "line": 66,
+  "gap": "the source gives no rule for choosing between rounding up and down. Its cases pick by narrative need.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 7,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_module_architecture",
+  "page": "2-reference.md",
+  "line": 226,
+  "gap": "the source's `FLAGS` block lists four states (ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE) but defines none of them here.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 8,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_module_architecture",
+  "page": "3-how-to.md",
+  "line": 73,
+  "gap": "the source gives no rule for when a module moves from `planned` to `draft` to `active`.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 9,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_module_registry",
+  "page": "2-reference.md",
+  "line": 42,
+  "gap": "the overview lists `DESIGN` with 14 variables while its entry says \"14 domains\" and writes no variable list.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 10,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_module_registry",
+  "page": "2-reference.md",
+  "line": 113,
+  "gap": "the source says 14 domains but the mapping table lists 12.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 11,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_module_registry",
+  "page": "3-how-to.md",
+  "line": 64,
+  "gap": "the source names the audit slice (3.3.1) but not who rules a module absorbed or dropped.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 12,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_pattern_library",
+  "page": "2-reference.md",
+  "line": 98,
+  "gap": "the step names of Pattern 2 (Chief has not ruled the words).",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 13,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_pattern_library",
+  "page": "2-reference.md",
+  "line": 100,
+  "gap": "the format a pattern entry takes when the sim (BOLO 101) consumes it.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 14,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_pattern_library",
+  "page": "2-reference.md",
+  "line": 102,
+  "gap": "which existing docs move into the Pattern half beyond the four listed.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 15,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_pattern_library",
+  "page": "3-how-to.md",
+  "line": 64,
+  "gap": "the source gives no step-by-step method for stacking patterns into emergent structure.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 16,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_pattern_library",
+  "page": "4-tutorial.md",
+  "line": 59,
+  "gap": "the source does not give this step-to-SOP mapping. It only says the loop is the SOP's four steps seen as a pattern.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 17,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_variable_registry",
+  "page": "2-reference.md",
+  "line": 523,
+  "gap": "the version history says the `10 - armor_index` constant \"gives a negative value at 11 or 12\", but this entry states the range as 0 to 12. The source does not reconcile them.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 18,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_variable_registry",
+  "page": "2-reference.md",
+  "line": 633,
+  "gap": "the `REL` prefix is declared in Domain Prefixes but the registry defines no `REL` variable beyond the example `REL.relationship_type`.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 19,
+  "system": "00_EPISTEMOLOGY",
+  "doc": "ssot_00_variable_registry",
+  "page": "3-how-to.md",
+  "line": 76,
+  "gap": "the source gives no procedure for retiring a variable.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 20,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_collision_engine",
+  "page": "3-how-to.md",
+  "line": 64,
+  "gap": "the C×C first run (Tori × Anna) needs Anna's chart before this task can run on that pair.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 21,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_genre_system",
+  "page": "2-reference.md",
+  "line": 131,
+  "gap": "the first genre-load trial on OXO is parked as \"genre-load trial (phase 2)\".",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 22,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_genre_system",
+  "page": "2-reference.md",
+  "line": 159,
+  "gap": "every OXO line except G1, and all five cultcore conventions, wait for Chief and the phase 2 genre reading.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 23,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_genre_system",
+  "page": "3-how-to.md",
+  "line": 82,
+  "gap": "the source gives no steps for entering a new OXO line before phase 2. Chief strikes or keeps each parked line.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 24,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_medium_grammars",
+  "page": "3-how-to.md",
+  "line": 62,
+  "gap": "the source names the research queue (Vernallis, short-form sources, PMV/HMV grammar) but gives no procedure for running the pass.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 25,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_modern_poetics",
+  "page": "3-how-to.md",
+  "line": 51,
+  "gap": "the application pass over Tori, DCUS, the Drop, storyform and scene cards is BOLO 21 and fires only on Chief's go.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 26,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_modern_poetics",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source gives no sample answers for P8 to P10. Chief's own spoken lines are the canon form.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 27,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_scale_ladder",
+  "page": "2-reference.md",
+  "line": 51,
+  "gap": "the Movement-to-Signpost mapping table is plot_systems work, flagged and not yet built.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 28,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_scale_ladder",
+  "page": "3-how-to.md",
+  "line": 80,
+  "gap": "the source gives no steps for mapping six OXO movements onto four signposts. That table is plot_systems work and is not yet built.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 29,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_spine_house_inventory",
+  "page": "3-how-to.md",
+  "line": 33,
+  "gap": "the source gives no rule for choosing a home level when two levels tie.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 30,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_story_registry",
+  "page": "3-how-to.md",
+  "line": 75,
+  "gap": "the source gives no procedure for assigning a vignette's next ID number.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 31,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_story_spine_comparative_tree",
+  "page": "3-how-to.md",
+  "line": 69,
+  "gap": "the source gives no procedure for adding a new rival model to the rival map. Chief has not ruled one.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 32,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_story_spine_comparative_tree",
+  "page": "4-tutorial.md",
+  "line": 33,
+  "gap": "the source gives no Domain for the MC, IC or RS seats. Leave those three blank.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 33,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_texture_layer",
+  "page": "4-tutorial.md",
+  "line": 49,
+  "gap": "the texture layer gives no ruled OXO values for T1 to T10. Only the texture system holds proposals.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 34,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_texture_system",
+  "page": "3-how-to.md",
+  "line": 97,
+  "gap": "the source gives no calibrated barrier-word cut points. The first trial passage sets them.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 35,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_texture_system",
+  "page": "4-tutorial.md",
+  "line": 49,
+  "gap": "the source names the emotions for each movement but gives no technique or payoff text for an OXO mood-curve entry.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 36,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_three_check_pass",
+  "page": "3-how-to.md",
+  "line": 68,
+  "gap": "the source gives no row numbering rule for rows added past row 12.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 37,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_touchstones_register",
+  "page": "4-tutorial.md",
+  "line": 52,
+  "gap": "the source gives the script's path but not its command-line form or output format.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 38,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_trope_register",
+  "page": "2-reference.md",
+  "line": 68,
+  "gap": "the source's `purpose` line says \"4,948 TV Tropes tropes,\" while the counts say 8,700. The 4,948 figure is the 0.2.0 total. The doc leaves the purpose line unchanged.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 39,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_trope_register",
+  "page": "2-reference.md",
+  "line": 79,
+  "gap": "the skew figures (508, 291, 276, 797, 1,157, 658) do not match the counts table (485, 316, 385, 1,182, 1,018, 1,024). The skew section appears to hold earlier figures. The source does not say.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 40,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_trope_register",
+  "page": "3-how-to.md",
+  "line": 81,
+  "gap": "the source gives no command-line steps for `fetch.py` or `build_register.py`. It lists them only as sources.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 41,
+  "system": "01_NARRATIVE_FRAMEWORKS",
+  "doc": "ssot_01_trope_register",
+  "page": "4-tutorial.md",
+  "line": 64,
+  "gap": "the source says the cross-check was not done. This tutorial does not report its result.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 42,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology",
+  "page": "2-reference.md",
+  "line": 21,
+  "gap": "the source's Purpose paragraph says the chart feeds \"Layers 7 through 11\". Its Pipeline and Relationship sections say layers 1 through 11. The version history says the 1.1.0 pass corrected this. The Purpose line was not changed.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 43,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology",
+  "page": "2-reference.md",
+  "line": 148,
+  "gap": "the source names Sextile in the assignment rule but defines no Sextile gate. The ingest template's aspect list also omits it.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 44,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology",
+  "page": "3-how-to.md",
+  "line": 19,
+  "gap": "the source gives the rules for each task but not the sign choice. The DAI doc owns the sign tables. These steps stop where the source stops.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 45,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source holds no complete worked chart with signs. This lesson uses the examples it does hold: Equity and Inequity as Problem and Solution, and Mars for a Proaction-driven character. Sign choices stay with the DAI doc.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 46,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology_12_layer_mapping",
+  "page": "4-tutorial.md",
+  "line": 31,
+  "gap": "the source gives no 7th House contents or Venus aspects for Victoria. This check uses the two placements it does give.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 47,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology_12_layer_mapping",
+  "page": "4-tutorial.md",
+  "line": 37,
+  "gap": "the source does not rule whether Aries and Virgo count as harmonious or tense here. It gives its own reading in Step 5.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 48,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology_dai",
+  "page": "2-reference.md",
+  "line": 275,
+  "gap": "the moved chart is partial. The MC Concern is missing, flagged `⏸ VM fill pass (phase 2)`.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 49,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_astrology_dai",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source holds no worked chart in this document, and the moved chart lacks the MC Concern. This lesson uses a training input marked as invented for practice. It is not canon for any character.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 50,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_state_architecture",
+  "page": "4-tutorial.md",
+  "line": 34,
+  "gap": "the source gives no `told_at` value for this state. The example `[\"M2 · Q1 · S04 | 012.3.2\"]` shows the shape only. Fill it from the tracking system.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 51,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_systems_vertical_slice",
+  "page": "2-reference.md",
+  "line": 35,
+  "gap": "the Structured Data Block in the instance gives `expressive_range: 2`. The derived-statistics table gives 4, and the version history says the move from 2 to 4 happened in 3.3.2. The block was not updated.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 52,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_systems_vertical_slice",
+  "page": "2-reference.md",
+  "line": 37,
+  "gap": "the doc says all fractions round down. Victoria's Collapse Risk is `(8 + 7) / 2`, which rounds down to 7. The doc shows 8.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 53,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_systems_vertical_slice",
+  "page": "2-reference.md",
+  "line": 39,
+  "gap": "Step 5 says \"all six derived statistics\". The table lists seven.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 54,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_systems_vertical_slice",
+  "page": "2-reference.md",
+  "line": 41,
+  "gap": "Step 7 points to \"the Examples section\". The doc has no section by that name. The block sits under THE INSTANCE.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 55,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_systems_vertical_slice",
+  "page": "4-tutorial.md",
+  "line": 55,
+  "gap": "the source rule says all fractions round down, but Collapse Risk for Victoria reads 8 where 15 / 2 rounds down to 7. The source does not explain the difference.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 56,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_character_systems_vertical_slice",
+  "page": "4-tutorial.md",
+  "line": 87,
+  "gap": "the block in the source still reads 2 while the derived table reads 4.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 57,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_dramatica_integration_protocol",
+  "page": "4-tutorial.md",
+  "line": 50,
+  "gap": "the source gives no Victoria values for `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement` or `limit_type`. Fill them from her locked ingest.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 58,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_dramatica_integration_protocol",
+  "page": "4-tutorial.md",
+  "line": 75,
+  "gap": "the source gives no Victoria values for the OS, IC and RS fields or for `mc_concern`, `mc_symptom`, `mc_response` and `mc_benchmark`.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 59,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_l9_eros_synthesis",
+  "page": "2-reference.md",
+  "line": 155,
+  "gap": "the version history says the first draft had \"four open questions\". Section 6 now lists five.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 60,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_l9_eros_synthesis",
+  "page": "3-how-to.md",
+  "line": 19,
+  "gap": "the source describes the synthesis method only by showing its output. The pass steps below are read from that output. The source does not state a formal procedure.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 61,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_step_1_source_verification_protocol",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source documents no actual gate run for Victoria. This lesson shows the method on a made-up state of her folder, marked as such, not a recorded result.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 62,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_template_astrology_ingest",
+  "page": "2-reference.md",
+  "line": 103,
+  "gap": "the aspect list omits the Sextile that the astrology doc names as a soft aspect.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 63,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_template_astrology_ingest",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source holds no completed instance of this form. It is blank. Victoria Midnight has Dramatica values in the vertical slice, but her signs are not on record. This lesson fills structure and derivations. Signs come from the DAI doc, and you supply them.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 64,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_template_dramatica_ingest",
+  "page": "2-reference.md",
+  "line": 21,
+  "gap": "field names differ between sections. Section 1 uses `story_limit` and Section 10 uses `limit_type`. Section 4 uses `mc_problem` and Section 10 uses `mc_problem_element`. The form does not state the mapping.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 65,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_template_dramatica_ingest",
+  "page": "2-reference.md",
+  "line": 23,
+  "gap": "Section 9 says the old name of `touchstone` is an alias, but names the same word twice. The source does not give the old name.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 66,
+  "system": "02_CHARACTER_SYSTEMS",
+  "doc": "ssot_02_template_dramatica_ingest",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source form is blank. The only worked values on record sit in the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) instance. That instance holds the L12 fields and the motivation quad, not the full storyform. The lesson fills what it can and marks the rest `⏸`.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 67,
+  "system": "03_SETTING_SYSTEMS",
+  "doc": "ssot_03_setting_state_architecture",
+  "page": "4-tutorial.md",
+  "line": 33,
+  "gap": "the `origin_event` ids stay parked until the fabula registry enters them.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 68,
+  "system": "03_SETTING_SYSTEMS",
+  "doc": "ssot_03_setting_synthesis",
+  "page": "2-reference.md",
+  "line": 92,
+  "gap": "the source gives no field list for the full eight-field faction block beyond the six fields in change 1.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 69,
+  "system": "03_SETTING_SYSTEMS",
+  "doc": "ssot_03_setting_synthesis",
+  "page": "4-tutorial.md",
+  "line": 29,
+  "gap": "the synthesis does not quote the exact wording of the S7 test line. Read it in ssot_03_setting_system, layer S7.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 70,
+  "system": "03_SETTING_SYSTEMS",
+  "doc": "ssot_03_setting_system",
+  "page": "2-reference.md",
+  "line": 191,
+  "gap": "many DCUS instance fields are parked as \"DCUS faction fill pass (phase 2)\", including the Administration's `goal`, `clock` and `fault line`.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 71,
+  "system": "03_SETTING_SYSTEMS",
+  "doc": "ssot_03_setting_system",
+  "page": "4-tutorial.md",
+  "line": 31,
+  "gap": "the instance leaves many fields parked (\"DCUS faction fill pass, phase 2\"), so steps 4 to 6 rely on predicted flags.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 72,
+  "system": "04_PLOT_SYSTEMS",
+  "doc": "ssot_04_fabula",
+  "page": "2-reference.md",
+  "line": 80,
+  "gap": "the Severance's order against the Deep Meridian beam, and whether ASTRO7EX's own \"Moon Severance\" is this event.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 73,
+  "system": "04_PLOT_SYSTEMS",
+  "doc": "ssot_04_fabula",
+  "page": "2-reference.md",
+  "line": 86,
+  "gap": "what the ocean impact wakes, and how both impacts sit against the Deep Meridian beam.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 74,
+  "system": "04_PLOT_SYSTEMS",
+  "doc": "ssot_04_fabula",
+  "page": "4-tutorial.md",
+  "line": 34,
+  "gap": "the canon gives no location for the crash, so `location` reads \"unspecified in canon\".",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 75,
+  "system": "04_PLOT_SYSTEMS",
+  "doc": "ssot_04_plot_system",
+  "page": "4-tutorial.md",
+  "line": 36,
+  "gap": "the source parks several row 9 fields as \"row 9 fill pass (phase 2)\", so the instance is incomplete by design.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 76,
+  "system": "04_PLOT_SYSTEMS",
+  "doc": "ssot_04_trope_graph",
+  "page": "4-tutorial.md",
+  "line": 33,
+  "gap": "the source gives no second worked walk. For the OS, IC and RS throughlines you must read the movements map.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 77,
+  "system": "05_OPERATIONS",
+  "doc": "how_to_use_goon_room",
+  "page": "2-reference.md",
+  "line": 47,
+  "gap": "the source does not say who reviews in `_STAGED/` or what promotion requires.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 78,
+  "system": "05_OPERATIONS",
+  "doc": "how_to_use_goon_room",
+  "page": "3-how-to.md",
+  "line": 35,
+  "gap": "the source gives no promotion criteria and no review owner.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 79,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_00_bold_venture_design_system",
+  "page": "2-reference.md",
+  "line": 236,
+  "gap": "the source allows 11 colors but lists only 8 data-visualization tokens per theme.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 80,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_00_bold_venture_design_system",
+  "page": "4-tutorial.md",
+  "line": 21,
+  "gap": "the source's examples still cite v1 hex values. It does not say whether the Roster remap replaces them in these two examples.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 81,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_00_process_illustration_character_pipeline",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source gives no single character walked through all four flows, so the lesson stitches its separate examples.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 82,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_05_operations_goon_room_protocol",
+  "page": "2-reference.md",
+  "line": 19,
+  "gap": "the source names no successor protocol. For the current workspace guide, see the [Goon Room how-to](../how_to_use_goon_room/2-reference.md).",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 83,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_05_operations_pm_holdings_inventory",
+  "page": "2-reference.md",
+  "line": 103,
+  "gap": "the \"Missing\" list is dated 2026-09-03. DOCTRINE-0 was ratified the same day and the project flow was written, so several entries are now closed.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 84,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_05_operations_pm_holdings_inventory",
+  "page": "3-how-to.md",
+  "line": 53,
+  "gap": "the source does not name who maintains the inventory or when it is re-swept.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 85,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_05_operations_project_flow",
+  "page": "4-tutorial.md",
+  "line": 41,
+  "gap": "the source does not record the conversion date for the BOLO 26 HOLD.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 86,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_05_operations_standards_ladder",
+  "page": "2-reference.md",
+  "line": 19,
+  "gap": "the version history ends at 0.2.2 (2026-10-04), while the frontmatter says 1.0.0.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 87,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_SSOT_CREATION",
+  "page": "2-reference.md",
+  "line": 28,
+  "gap": "the 06.2 style guide's BOLO 92 merge calls allow contractions; the source still bans them.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 88,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_SSOT_CREATION",
+  "page": "3-how-to.md",
+  "line": 39,
+  "gap": "the source does not say which emoji prefixes a file in `_AUTHORITATIVE/` beyond the taxonomy, or what the name rules are for `🎯` files.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 89,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_SSOT_CREATION",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source carries no worked example of a creation run.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 90,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_ai_instruction_protocol",
+  "page": "2-reference.md",
+  "line": 45,
+  "gap": "the 06.2 style guide's BOLO 92 merge calls allow contractions and replace the fixed skeleton; this source still carries the older rules.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 91,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_ai_instruction_protocol",
+  "page": "3-how-to.md",
+  "line": 26,
+  "gap": "the source does not say what the operator pastes to start the run or how the six categories map to folders.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 92,
+  "system": "05_OPERATIONS",
+  "doc": "ssot_ai_instruction_protocol",
+  "page": "4-tutorial.md",
+  "line": 19,
+  "gap": "the source carries no worked example of a run.",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 93,
+  "system": "06_STYLE_GUIDES",
+  "doc": "ssot_06_1_prose_style",
+  "page": "2-reference.md",
+  "line": 142,
+  "gap": "the source's SOURCES table lists Booth, Genette, Rimmon-Kenan, Pinker, Clark and Johnston with no BVX id (\"—\").",
+  "batch": "D accept the gap"
+ },
+ {
+  "n": 94,
+  "system": "06_STYLE_GUIDES",
+  "doc": "ssot_06_2_documents_style",
+  "page": "2-reference.md",
+  "line": 110,
+  "gap": "the source's OPEN section records one pending item: BOLO 6's learning-science distill is to be folded into reply rules 1–7 when it lands.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 95,
+  "system": "06_STYLE_GUIDES",
+  "doc": "ssot_06_2a_writing_guide",
+  "page": "2-reference.md",
+  "line": 73,
+  "gap": "the source names a dependency on a template (`♨️_template_ssot_05_operations_standard_structure_template`) but gives no field list for it.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 96,
+  "system": "06_STYLE_GUIDES",
+  "doc": "ssot_06_2b_markdown_marking",
+  "page": "2-reference.md",
+  "line": 99,
+  "gap": "the source says \"invariant\" in Example 1. The Touchstone rename retired that word in prose; the source has not been updated.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 97,
+  "system": "06_STYLE_GUIDES",
+  "doc": "ssot_06_3_pages_style",
+  "page": "2-reference.md",
+  "line": 45,
+  "gap": "the source's front matter dates the page 2026-09-29 and carries no `owner`, `state` or `reviewed` fields. No ruling distills any held source into a page rule yet.",
+  "batch": "A fix the source"
+ },
+ {
+  "n": 98,
+  "system": "07_THEME_SYSTEMS",
+  "doc": "ssot_07_theme_system",
+  "page": "2-reference.md",
+  "line": 83,
+  "gap": "the `meets` values and the latent-theme line for OVEREXITOUT wait for the phase 2 theme fill pass.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 99,
+  "system": "07_THEME_SYSTEMS",
+  "doc": "ssot_07_theme_system",
+  "page": "3-how-to.md",
+  "line": 84,
+  "gap": "the source gives no field-level steps for keying a trope. It says only that every theme-domain trope is keyed to R1 to R4.",
+  "batch": "C write the missing rule"
+ },
+ {
+  "n": 100,
+  "system": "08_TRACKING_SYSTEMS",
+  "doc": "ssot_08_tracking_system",
+  "page": "2-reference.md",
+  "line": 230,
+  "gap": "setting state full doc and the trope-graph act map are marked phase 2 in the source.",
+  "batch": "B parked, leave"
+ },
+ {
+  "n": 101,
+  "system": "09_WORLDBUILDING_SYSTEMS",
+  "doc": "ssot_09_worldbuilding_system",
+  "page": "2-reference.md",
+  "line": 248,
+  "gap": "the seed entries and the catalog fill wait for phase 2, when Chief orders the catalog built.",
+  "batch": "B parked, leave"
+ }
+]
