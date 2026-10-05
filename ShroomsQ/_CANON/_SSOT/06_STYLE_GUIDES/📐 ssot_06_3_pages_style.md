@@ -1,10 +1,13 @@
 ---
 type: ssot_06_style_guides
 category: style_guide
-version: 1.0.0
+version: 1.0.1
 tier: narratology
 module_of: ssot_06_1_prose_style
-last_updated: 2026-09-29
+last_updated: 2026-10-05
+owner: Chief
+state: draft
+reviewed: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD, BVX-LEARN]
 status: "canonical — 1.0 per BOLO 92's bar; all three OPEN calls ruled"
 purpose: "How artifacts and pages look: the foundation design system, then the page rulings (colorway, chrome, the hover layer, diagram rendering, the dashboard pattern, learning-tool density) gathered from memory for the first time; held-not-distilled sources from the Zotero shelf."
@@ -72,5 +75,6 @@ RULED 2026-09-29 (Chief: "all right" on all recs, BOLO 92): (1) the five id-less
 
 ## VERSION HISTORY
 
+- **1.0.1 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): front matter gains `owner: Chief`, `state: draft`, `reviewed: 2026-10-05`.
 - **1.0.0 · 2026-09-29** — all three OPEN calls RULED as recommended; the typography tokens folded in as a page ruling.
 - **0.1.0 · 2026-09-29** — bootstrap: the foundation link to 00_EPISTEMOLOGY; six page rulings gathered from memory for the first time (colorway/dark-only, thin chrome, CK3 hover layer, Mermaid static DOM, the sit-rep dashboard pattern, minimal learning tools); eleven tier-1 SOURCES from the BOLO 92 shelf (one misfit skipped); three OPEN calls.

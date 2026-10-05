@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: "ShroomsQ/_CANON/_SSOT/06_STYLE_GUIDES/📐 ssot_06_2b_markdown_marking.md"
-source_version: "1.0.2"
+source_version: "1.0.3"
 ---
 
 **Who it's for:** a writer or reader looking up one mark or command · **What it does:** lists every component and part of 06.2b · **Type:** reference
@@ -75,7 +75,7 @@ python _tools/vocab_harvest.py "<path to the one-sheet>" --senses <senses.json>
 
 ## EXAMPLES
 
-**Example 1: a reader mark in an invariant.** Before, writer-side only:
+**Example 1: a reader mark in a Touchstone.** Before, writer-side only:
 
 ```
 1. **Friction is permanent.** Friction resists all action and saps energy.
@@ -95,5 +95,3 @@ The harvest writes to `MIL.01.vocab.md`:
 ```
 
 **Example 2: promotion.** The term `==commander's intent==` appears in MIL.01, MIL.08 and MIL.09. It receives its own note. In all three sheets the highlight becomes `[[commander's intent]]`. The register rows remain, now pointing at a note.
-
-> **OPEN:** the source says "invariant" in Example 1. The Touchstone rename retired that word in prose; the source has not been updated.
