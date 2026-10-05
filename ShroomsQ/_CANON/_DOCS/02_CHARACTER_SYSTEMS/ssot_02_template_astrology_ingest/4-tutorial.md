@@ -20,7 +20,7 @@ You will fill the form as far as `minimum_viable` and read the result. Lookups a
 
 ## Before you start
 
-You need a locked Dramatica Ingest for your character and the DAI doc open. Use Victoria Midnight's L12 values from the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) as the Dramatica input: MC Problem Equity, methodology Proaction, evaluation Result, purpose Actuality, limit Optionlock.
+You need a locked Dramatica Ingest for your character and the DAI doc open. Use Victoria Midnight's L12 values from the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) as the Dramatica input. They are MC Problem Equity, methodology Proaction, evaluation Result, purpose Actuality, limit Optionlock.
 
 ## Step 1. Copy and clean the form
 

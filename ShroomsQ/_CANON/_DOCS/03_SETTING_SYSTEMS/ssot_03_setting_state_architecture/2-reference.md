@@ -67,7 +67,7 @@ Would this value differ if the place were frozen at two points in the narrative?
 
 ## 4. State Record Format
 
-A state record is a data block holding the delta between the base slice and the place at one narrative moment.
+A state record is a data block. It holds the delta between the base slice and the place at one narrative moment.
 
 ### Required Fields
 
@@ -188,7 +188,7 @@ Notes: DCUS's base slice is written at the current era, so the earlier checkpoin
 
 - `state_id: dcus_red_hills_rename`; `told_at: []`; live name Red Hills Academy.
 - S5 gains `skeeter_creek_sanded_to_red_hills`. S6: grandfather-versus-son ownership war, prestige-based, pre-Bishop. S8: the alumni-legacy bloc forms.
-- S9 (old-money prestige draw) and S10 (Skeeter Creek sinks to folk or secret) are parked for the phase 2 pass.
+- S9 (old-money prestige draw) and S10 (Skeeter Creek sinks to folk or secret) are parked. They wait for the phase 2 pass.
 - Aliases: active Red Hills Academy, The Academy; legacy Skeeter Creek.
 
 ### Checkpoint 3 — the second erasure, the Bishop acquisition and the DCUS rebrand

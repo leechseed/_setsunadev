@@ -80,4 +80,4 @@ These are the slice's own values. Section 10 must match Sections 1 to 9. Your fi
 
 The record stays `draft`. Section 3 has gaps, the throughlines are mostly `⏸`, and Section 9 has no written Touchstone statement. The handoff checklist would fail on those items.
 
-You have seen the whole path: fill in extraction order, write `⏸` for honest gaps, generate Section 10 last, and lock only when the checklist passes. The steps are in the [how-to](3-how-to.md).
+You have seen the whole path. Fill in extraction order, write `⏸` for honest gaps, and generate Section 10 last. Lock only when the checklist passes. The steps are in the [how-to](3-how-to.md).

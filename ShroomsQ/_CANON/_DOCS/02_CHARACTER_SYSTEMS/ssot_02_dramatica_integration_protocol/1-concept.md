@@ -24,7 +24,7 @@ Dramatica does not produce plot either. The storyform constrains what the plot m
 
 ## Because the output is deterministic, a revision is a new version
 
-A locked storyform produces a fixed set of character assignments. Those assignments stay put. The only way to change them is to revise the storyform, and a revision counts as a new version, never as an edit.
+A locked storyform produces a fixed set of character assignments. Those assignments stay put. The only way to change them is to revise the storyform. A revision counts as a new version, never as an edit.
 
 This rule explains the whole cascade. The chart, the L12 block and the state diffs all hang off one storyform version. A new version forces each of them to be re-checked.
 

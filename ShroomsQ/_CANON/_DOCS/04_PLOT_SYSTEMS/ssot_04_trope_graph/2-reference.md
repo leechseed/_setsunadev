@@ -16,15 +16,15 @@ source_version: 1.0.0
 
 Frontmatter: category `plot_system`, tier `narratology`, `module_of: ssot_04_plot_system`, trunk BLACK, rung standard, `applies_to: [all IPs]`, last updated 2026-10-04. The graph is the pattern layer. A trope names a recurring pattern. A node is a named unit from one of five structure books. An edge is a measured relationship between two nodes. Sibling docs: [plot system](../ssot_04_plot_system/2-reference.md) and [fabula](../ssot_04_fabula/2-reference.md).
 
-**Owns:** the 135 nodes and their `same_as` clusters; trope keying; node-to-node edges; the rail for the walk; the handshake to the fabula, the plot card and the workspace view.
-**Does not own:** the storyform (Dramatica), world time (fabula), the told order (plot doc P11), psychology, place, and the workspace view's rendering code (BOLO 79).
+**Owns:** the 135 nodes and their `same_as` clusters; trope keying; node-to-node edges; the rail for the walk. It also owns the handshake to the fabula, the plot card and the workspace view.
+**Does not own:** the storyform (Dramatica), world time (fabula), the told order (plot doc P11). It also does not own psychology, place, and the workspace view's rendering code (BOLO 79).
 
-**Root claim:** every trope sits on one of 135 fixed structural units, and every unit sits on a rail Dramatica already locked. TV Tropes supplies volume and cross-reference, never order. A walk moves only along the rail.
+**Root claim:** every trope sits on one of 135 fixed structural units. Every unit sits on a rail Dramatica already locked. TV Tropes supplies volume and cross-reference, never order. A walk moves only along the rail.
 
 ## MIND MODELS
 
-- **Diagram 1.** Root: the trope graph. Branches: The Nodes (135, five families, 31 `same_as` edges), The Tropes (1,678 fetched, 1,034 keyed, 644 unkeyed), The Edges (`trope_link` 2,584; `same_as` 31; busiest node `tob.14` Love with 94 tropes), The Rails (16 signposts across 4 throughlines; P6 is the anchor), The Walk, Boundaries.
-- **Diagram 2, the handshake.** Nodes, tropes and edges feed the walk. The walk feeds the fabula (a walked node proposes an event, never writes canon), the plot card (P6 is the anchor) and the workspace view (BOLO 79).
+- **Diagram 1.** Root: the trope graph. Branches: The Nodes (135, five families, 31 `same_as` edges), The Tropes (1,678 fetched, 1,034 keyed, 644 unkeyed). Then come The Edges (`trope_link` 2,584; `same_as` 31; busiest node `tob.14` Love with 94 tropes). The last branches are The Rails (16 signposts across 4 throughlines; P6 is the anchor), The Walk, Boundaries.
+- **Diagram 2, the handshake.** Nodes, tropes and edges feed the walk. The walk feeds the fabula (a walked node proposes an event, never writes canon). It also feeds the plot card (P6 is the anchor) and the workspace view (BOLO 79).
 
 ## THE NODES
 
@@ -52,7 +52,7 @@ Tobias and Schmidt are `any` phase and can sit at any signpost. The three sequen
 - the second death: `vog.11` = `cam.15`
 - the final state: `vog.12` = `cam.17`
 
-Tobias and Schmidt clusters: `tob.06_revenge` = `sch.05_vengeance_for_a_crime`; `tob.16_sacrifice` = `sch.39_self_sacrifice`; `tob.01_quest` = `sch.17_daring_enterprise`; `tob.03_pursuit` = `sch.09_flight` + `sch.10_pursuit`; `tob.04_rescue` = `sch.52_rescue_of_a_loved_one`.
+Tobias and Schmidt clusters: `tob.06_revenge` = `sch.05_vengeance_for_a_crime`; `tob.16_sacrifice` = `sch.39_self_sacrifice`; `tob.01_quest` = `sch.17_daring_enterprise`. Two more clusters: `tob.03_pursuit` = `sch.09_flight` + `sch.10_pursuit`; `tob.04_rescue` = `sch.52_rescue_of_a_loved_one`.
 
 **Node record fields:** `id`, `family`, `n`, `name`, `def`, `cite`, `bvx`, `phase`, `same_as`. Example id: `prp.11_departure`. Propp nodes once carried `bvx: null`. OPEN call 5 minted Propp as BVX.1136 and patched all 31 nodes.
 
@@ -61,14 +61,14 @@ Tobias and Schmidt clusters: `tob.06_revenge` = `sch.05_vengeance_for_a_crime`; 
 - **Keying.** Eight Payload Specialist batches read 1,678 fetched TV Tropes entries against the 135 nodes. Each trope gets `node`, `alt` and `conf` (`high`, `medium` or `low`). Every batch was checked before the join.
 - **Keyed and unkeyed.** 1,034 keyed. 644 unkeyed. Of the unkeyed, 352 are high-confidence "does not belong" and 292 are low-confidence "might fit a finer node". No unkeyed trope has medium confidence.
 - **Confidence mix (keyed).** High 479, medium 368, low 187.
-- **The `alt` field.** 269 keyed tropes carry a second plausible node: 178 cross to another family, 91 stay in the same family. `alt` flags a contested placement. It is not a second edge.
-- **What unkeyed means.** A production trope, a pure audience-reaction trope, or a pattern the taxonomy is too coarse to place.
+- **The `alt` field.** 269 keyed tropes carry a second plausible node. 178 cross to another family, and 91 stay in the same family. `alt` flags a contested placement. It is not a second edge.
+- **What unkeyed means.** A production trope or a pure audience-reaction trope. It can also be a pattern the taxonomy is too coarse to place.
 
-**Trope record fields:** `slug`, `name`, `def` (the TV Tropes index's one-line definition only, never page body text), `indexes`, `node`, `alt`, `conf`.
+**Trope record fields:** `slug`, `name`, `def` (the TV Tropes index's one-line definition only, never page body text). The rest are `indexes`, `node`, `alt` and `conf`.
 
 ## THE EDGES
 
-- **`trope_link`** (2,584 edges). Each time a trope keyed to node A links to a trope keyed to node B, the A-B weight rises by one.
+- **`trope_link`** (2,584 edges). A trope keyed to node A may link to a trope keyed to node B. Each such link raises the A-B weight by one.
 - **`same_as`** (31 edges). The books' own equivalence. A flag, not a count.
 
 The ten strongest `trope_link` pairs:
@@ -121,10 +121,10 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 ### The node seating (call 77-I, seated 2026-09-24)
 
 - Every node carries an `act` and a `throughline`.
-- Sequenced families (Propp 31, Vogler 12, Campbell 17) sit in Acts 1 to 4 and never run backward within a family. Act 1 holds 14, Act 2 holds 11, Act 3 holds 14, Act 4 holds 21.
+- Sequenced families (Propp 31, Vogler 12, Campbell 17) sit in Acts 1 to 4. They never run backward within a family. Act 1 holds 14, Act 2 holds 11, Act 3 holds 14, Act 4 holds 21.
 - Hero-journey stages sit on MC. Propp's functions sit on OS, except Beginning Counteraction and The Hero's Reaction (MC).
-- Tobias and Schmidt ride any act, with a throughline affinity: RS 31, MC 24, OS 15, IC 4, any 1.
-- One `same_as` pair differs by an act: Campbell's Road of Trials (Act 3) spans Vogler's Tests, Allies, Enemies (Act 2) and Approach to the Inmost Cave (Act 3). It stays a one-to-many match.
+- Tobias and Schmidt ride any act. They have a throughline affinity: RS 31, MC 24, OS 15, IC 4, any 1.
+- One `same_as` pair differs by an act. Campbell's Road of Trials (Act 3) spans Vogler's Tests, Allies, Enemies (Act 2). It also spans Approach to the Inmost Cave (Act 3). It stays a one-to-many match.
 
 ## THE WALK
 
@@ -157,7 +157,7 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 | P10 GENRE OBLIGATION | A Schmidt or Tobias node may itself be the obligatory scene. |
 | P12 FUNCTION | Fed from the storyform. A node never overrides it. |
 
-**To the workspace view (BOLO 79).** From the HOI4 study's H-rules: the 16 signposts are the x-axis and the 4 throughlines are fixed lanes (H1). Only the 135 nodes draw as cells. Tropes live in capped tooltips, six shown plus "× more" (H7, H8, H10). Signpost order is the fixed AND chain (H3, H4). A rail-required cell with no confirmed node renders bypassed-empty (H9). The free trope network is an opt-in "explore" toggle (H11).
+**To the workspace view (BOLO 79).** From the HOI4 study's H-rules: the 16 signposts are the x-axis. The 4 throughlines are fixed lanes (H1). Only the 135 nodes draw as cells. Tropes live in capped tooltips, six shown plus "× more" (H7, H8, H10). Signpost order is the fixed AND chain (H3, H4). A rail-required cell with no confirmed node renders bypassed-empty (H9). The free trope network is an opt-in "explore" toggle (H11).
 
 ## TROPE GRAPH × LIBRARY
 
@@ -174,4 +174,4 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 
 ## Other sections
 
-The source also holds OPEN (six calls, all closed 2026-10-04): seating by method rule, 23 empty nodes bypassed, 352 unkeyed permanent and 292 held for `⏸ trope second keying pass (phase 2)`, the movements map, Propp's id, and the `or:` tooltip verified built at `_tools/workspace/build.py:2576-2585` and `:2445`. It also holds a version history from v0.1.0 (2026-09-24) to v1.0.0 (2026-10-04).
+The source also holds OPEN (six calls, all closed 2026-10-04). The calls cover seating by method rule and 23 empty nodes bypassed. They also cover 352 unkeyed permanent and 292 held for `⏸ trope second keying pass (phase 2)`. They also cover the movements map and Propp's id. The `or:` tooltip is verified built at `_tools/workspace/build.py:2576-2585` and `:2445`. It also holds a version history from v0.1.0 (2026-09-24) to v1.0.0 (2026-10-04).

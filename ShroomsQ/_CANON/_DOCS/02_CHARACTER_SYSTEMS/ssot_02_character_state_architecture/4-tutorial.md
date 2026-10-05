@@ -66,7 +66,7 @@ Use the modified values. List only what changed.
     collapse_risk: 6
 ```
 
-The source shows the arithmetic: 13 - (8/2) for damage resistance, 13 - 8 for stress threshold, (8 + 4) / 2 for collapse risk. `stress_threshold` uses `WILL_EFFECTIVE` here.
+The source shows the arithmetic. It computes damage resistance as 13 - (8/2) and stress threshold as 13 - 8. It computes collapse risk as (8 + 4) / 2. `stress_threshold` uses `WILL_EFFECTIVE` here.
 
 ## Step 5: Re-evaluate the flags
 

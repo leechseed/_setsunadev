@@ -16,7 +16,7 @@ source_version: 1.0.0
 
 Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fill-in lesson: [tutorial](4-tutorial.md). Source: [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md), version 1.0.0, status RULED, BOLO 100 C18.
 
-Dependencies named in the source: character astrology, the DAI doc, the 12-layer mapping doc, the Dramatica ingest template, the Step 1 source verification protocol. Applies to OVEREXITOUT, ASTRO7EX and LAKAD.
+The source names these dependencies: character astrology, the DAI doc and the 12-layer mapping doc. It also names the Dramatica ingest template and the Step 1 source verification protocol. Applies to OVEREXITOUT, ASTRO7EX and LAKAD.
 
 ## How to use this form
 
@@ -28,7 +28,7 @@ Five instructions, then a minimum chart rule.
 4. Give every sign a one or two sentence derivation: the Dramatica input, the rule used, why the sign fits.
 5. Leave a field empty if the storyform does not give it yet. Write `⏸` and the reason. Never guess.
 
-**Minimum viable chart** (status `minimum_viable`): sections 1 to 5 and 8 to 10. It needs Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant signs, at least three aspects, and houses for those seven planets. Sections 6 and 7 can wait.
+**Minimum viable chart** (status `minimum_viable`): sections 1 to 5 and 8 to 10. It needs Sun, Moon, Mercury, Venus, Mars, Saturn and Ascendant signs. It also needs at least three aspects, and houses for those seven planets. Sections 6 and 7 can wait.
 
 A Tier 2 character gets a partial chart (Sun, Moon, one defining aspect) and does not use this form.
 

@@ -14,15 +14,15 @@ source_version: 0.2.0
 
 # The fabula: reference
 
-Frontmatter: category `plot_system`, tier `fabula`, trunk BLACK, rung standard, `applies_to` OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX and all future IPs, last updated 2026-09-29. The fabula is the world-time layer. One timeline sits under OXO and EVIL CHECK. The told order lives in [ssot_04_plot_system](../ssot_04_plot_system/2-reference.md).
+- Frontmatter: category `plot_system`, tier `fabula`, trunk BLACK, rung standard, `applies_to` OVEREXITOUT, EVIL CHECK, LAKAD, ASTRO7EX and all future IPs. It was last updated 2026-09-29. The fabula is the world-time layer. One timeline sits under OXO and EVIL CHECK. The told order lives in [ssot_04_plot_system](../ssot_04_plot_system/2-reference.md).
 
 **Owns:** world time, the EVENT RECORD schema, typed CAUSAL EDGES, THE WORLD CLOCK, the ORIGIN MOMENTS rule.
-**Does not own:** the told order (the plot doc, P11); the pattern layer ([trope graph](../ssot_04_trope_graph/2-reference.md)); place itself (03); the static character layers (02).
+**Does not own:** the told order (the plot doc, P11); the pattern layer ([trope graph](../ssot_04_trope_graph/2-reference.md)). It also does not own place itself (03) or the static character layers (02).
 
 ## MIND MODELS
 
 - **Diagram 1.** Root: the fabula. Branches: World layer (one timeline), the Event Record, Causal Edges, The World Clock, Origin Moments, Boundaries.
-- **Diagram 2, the handshake.** The event record feeds the syuzhet (P2, P3, P4, P5, P6, P7, P9, P11), character state (`origin_event` points back to `event_id`), and the setting (dated states, cross-referenced only).
+- **Diagram 2, the handshake.** The event record feeds the syuzhet (P2, P3, P4, P5, P6, P7, P9, P11). It also feeds character state (`origin_event` points back to `event_id`) and the setting (dated states, cross-referenced only).
 
 ## THE EVENT RECORD
 
@@ -63,7 +63,7 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 
 ## THE WORLD CLOCK
 
-**Eras.** The DCUS naming lattice read as clock eras: Skeeter Creek (founding, buried, no date), Red Hills (first rename, about a century before the Bishop acquisition), DCUS (the current era). No calendar date exists for any transition. The clock cross-references the setting doc and does not re-author the eras (OPEN call 4).
+**Eras.** The DCUS naming lattice read as clock eras. The first is Skeeter Creek (founding, buried, no date). The second is Red Hills (first rename, about a century before the Bishop acquisition). The third is DCUS (the current era). No calendar date exists for any transition. The clock cross-references the setting doc and does not re-author the eras (OPEN call 4).
 
 **Universe eras (ruled 2026-09-29).** Sequential, with overlap allowed at the seams.
 
@@ -85,11 +85,11 @@ Bal's process model has three phases: possibility, event, result. Any phase can 
 
 > **OPEN:** what the ocean impact wakes, and how both impacts sit against the Deep Meridian beam.
 
-**The hinge (ruled 2026-09-29): the Deep Meridian beam.** A geothermal drill front fires a beam that punches a mile-wide hole in the sky. The beam signals the quasar that reaches the time of Vivian (ASTRO7EX). The Moon Severance and the AI Collapse follow from it. Future ids: `deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
+**The hinge (ruled 2026-09-29): the Deep Meridian beam.** A geothermal drill front fires a beam. The beam punches a mile-wide hole in the sky. The beam signals the quasar that reaches the time of Vivian (ASTRO7EX). The Moon Severance and the AI Collapse follow from it. Future ids: `deep_meridian_beam`, `astro7ex_backstory_moon_severance`, `astro7ex_backstory_ai_collapse`.
 
 **Superseded.** The 2026-02-09 ruling that the three stories occur simultaneously is kept as history. The eon stays the umbrella.
 
-**Fuzzy and unknown dates.** The working answer is movement-relative dating (M1, M2, M3), with reach and extent as ranges or marked unknown.
+**Fuzzy and unknown dates.** The working answer is movement-relative dating (M1, M2, M3). Reach and extent take ranges or are marked unknown.
 
 **Iterative events.** The `repeat` flag marks one record standing for a repeated class.
 
@@ -131,7 +131,7 @@ A layer needs an origin moment when its baseline forms from one datable event.
 | P9 `stakes_delta` | The chain of `cause` and `enable` edges back to the prior event. |
 | P11 `order_told`, `order_happened`, `duration_mode` | `order_happened` is the event's `time`. The gap is classed as an anachrony. |
 
-**To the state architecture.** Landed in `ssot_02_character_state_architecture` v1.1.0 on 2026-09-24: an `origin_event` field; `state_diffs` as a parent field; event id standardization (worked pair `m1b_crash_jebb_death` and `vm_m1b_post_crash`).
+**To the state architecture.** Landed in `ssot_02_character_state_architecture` v1.1.0 on 2026-09-24. It added an `origin_event` field and `state_diffs` as a parent field. It also added event id standardization (worked pair `m1b_crash_jebb_death` and `vm_m1b_post_crash`).
 
 **To the setting.** Axis 4 TIME states read the world-clock eras for dating. S7, S11 and S5 stay the authoring surface for what happened. The fabula is the surface for when.
 
@@ -182,4 +182,4 @@ This does not fill L8, L9 or L10 for either Colson, and it does not place post-o
 
 ## Other sections
 
-The source also holds OPEN (six calls, all ruled 2026-09-24: Tori-only instance, EVIL CHECK in wave 2, `<movement>_<slug>` ids, DCUS eras cross-referenced, movement-relative dates, the v1.1 patch) and a version history from 0.1.0 (2026-09-24) to 0.2.0 (2026-10-01).
+The source also holds OPEN (six calls, all ruled 2026-09-24). The calls cover the Tori-only instance, EVIL CHECK in wave 2 and `<movement>_<slug>` ids. They also cover DCUS eras cross-referenced, movement-relative dates and the v1.1 patch. It also holds a version history from 0.1.0 (2026-09-24) to 0.2.0 (2026-10-01).

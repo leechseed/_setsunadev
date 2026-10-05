@@ -20,10 +20,10 @@ The shelf: MSX.18 to MSX.36 and PSY.08 to PSY.13, 25 sources. Status: all ten ch
 
 ## 1. What this is
 
-- L9 EROS has one authored instance: Victoria Midnight, built 2026-08-15 from PSY.01 Walker, MSX.17 Perel and PSY.04 Rehor & Schiffman.
+- L9 EROS has one authored instance: Victoria Midnight. The Command built her on 2026-08-15 from PSY.01 Walker, MSX.17 Perel and PSY.04 Rehor & Schiffman.
 - On 9/29 (BOLO 87/88) the Command distilled 25 sources: 19 MSX and 6 PSY.
 - The wave fills the gap that `victoria-midnight-L9-eros.md` named: orientation and partners.
-- Mix: gay and male sex-work distills, bareback and pig-culture sources (MSX.24, MSX.28, MSX.35), cruising and venue ethnography (MSX.20, MSX.29, PSY.12), chemsex (PSY.08, PSY.11), sex-tourism epidemiology (MSX.34, PSY.09), craft sources (MSX.26, MSX.33), practice manuals (MSX.21, 22, 23, 25, 30, 32), and two theory texts (MSX.36 Foucault, PSY.13 Jung).
+- Mix: gay and male sex-work distills, bareback and pig-culture sources (MSX.24, MSX.28, MSX.35). It also holds cruising and venue ethnography (MSX.20, MSX.29, PSY.12) and chemsex (PSY.08, PSY.11). It holds sex-tourism epidemiology (MSX.34, PSY.09) and craft sources (MSX.26, MSX.33). It holds practice manuals (MSX.21, 22, 23, 25, 30, 32). It also holds two theory texts (MSX.36 Foucault, PSY.13 Jung).
 - This was the first reading of the shelf as a whole against L9's seven fields. It is a synthesis, not an edit.
 - Two findings: queer and male-male desire cannot be bolted onto a hetero-authored schema. Mechanism transfers to two men and ritual script does not (MSX.30, MSX.32).
 

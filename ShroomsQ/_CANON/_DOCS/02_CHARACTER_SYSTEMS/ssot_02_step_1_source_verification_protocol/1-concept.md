@@ -42,7 +42,7 @@ Red means any component fails. The designer completes the failing document and r
 
 ## The folder is the evidence
 
-A passing character has one canonical folder holding the authoritative document, the two ingest templates and, later, the slice and its states. The folder is how a later reader sees at a glance that the gate was passed.
+A passing character has one canonical folder. It holds the authoritative document and the two ingest templates. Later it also holds the slice and its states. The folder is how a later reader sees at a glance that the gate was passed.
 
 ## The long read
 

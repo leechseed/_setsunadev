@@ -58,7 +58,7 @@ Field definitions live in the [reference](2-reference.md).
 ## Give a Tier 2 character a Dramatica fingerprint
 
 1. Choose 2-4 elements from the Motivation, Methodology, Evaluation and Purpose sets. Write them as `element_signature`.
-2. Pick a relational role for each Tier 3 character it touches: mirror, foil, catalyst, threshold_guardian, herald, mentor, trickster, shapeshifter or anchor.
+2. Pick a relational role for each Tier 3 character it touches. The choices are mirror, foil, catalyst, threshold_guardian, herald, mentor, trickster, shapeshifter or anchor.
 3. Write the pairs into `relational_roles`.
 4. Skip the binding record, throughline and sub-table.
 

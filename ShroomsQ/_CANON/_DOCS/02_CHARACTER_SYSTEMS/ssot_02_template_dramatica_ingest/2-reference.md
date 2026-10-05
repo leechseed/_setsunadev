@@ -26,11 +26,11 @@ Dependencies named in the source: the Dramatica integration protocol, the Step 1
 
 1. Copy the file to the character's folder as `[CHARACTER_ID]_dramatica_ingest.md`, as the Step 1 protocol sets out.
 2. Delete this section and the frontmatter. Keep the section numbers. The Step 1 checks cite them.
-3. Fill in the extraction-priority order: Section 1, then 4, then 3 and 2, then 6, 5 and 7, with Section 8 as the log. Report names are in the integration doc.
+3. Fill in the extraction-priority order: Section 1, then 4, then 3 and 2, then 6, 5 and 7. Keep Section 8 as the log. Report names are in the integration doc.
 4. Leave a field empty if the storyform does not give it yet. Write `⏸` and the reason. Never guess.
 5. Section 10 is generated from Sections 1 to 9. Fill it last.
 
-A Tier 2 character gets an element signature and relational roles instead (integration doc, Tier 2 section) and does not use this form.
+A Tier 2 character gets an element signature and relational roles instead (integration doc, Tier 2 section). It does not use this form.
 
 ## Header
 

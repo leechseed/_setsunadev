@@ -20,7 +20,7 @@ Pages in this set: [reference](2-reference.md) · [how-to](3-how-to.md) · [tuto
 
 Layer 9 EROS had one authored instance: Victoria Midnight, built on 2026-08-15 from three sources. Every later change to L9 was that one instance's logic, copied forward. A layer built on one case inherits that case's blind spots.
 
-On 2026-09-29 the Command distilled 25 new sexuality sources in one wave: nineteen in the MSX series and six in the PSY series. The wave was chosen to fill the gap that Victoria's L9 note named as its own open item: orientation and partners.
+On 2026-09-29 the Command distilled 25 new sexuality sources in one wave. Nineteen are in the MSX series and six are in the PSY series. The wave fills the gap that Victoria's L9 note named as its own open item. The gap is orientation and partners.
 
 ## The synthesis reads the shelf as a whole, not source by source
 
@@ -36,15 +36,15 @@ That answer shaped the rule. A mechanism built once and gender-neutral beats a m
 
 ## The doc is a derivation record, not an edit
 
-The synthesis proposed ten changes. Chief ruled all ten on 2026-09-29 with the word "Rex", and the character system applied them in version 2.2.0. This doc now stands as the record of why. It does not edit the schema. A reader who wants to know why `consent_posture` exists reads the synthesis. A reader who wants the current field definition reads the vertical slice.
+The synthesis proposed ten changes. Chief ruled all ten on 2026-09-29 with the word "Rex". The character system applied them in version 2.2.0. This doc now stands as the record of why. It does not edit the schema. A reader who wants to know why `consent_posture` exists reads the synthesis. A reader who wants the current field definition reads the vertical slice.
 
 ## Craft rules stay out of the schema
 
-One of the ten changes is not a field. The pacing toolkit of withhold, fragment, bound and interrupt is scene craft. The synthesis records it as a writing rule under Core Methodology. The line it draws is this: the schema stores what is true of a character, and craft rules govern how prose narrates it.
+One of the ten changes is not a field. The pacing toolkit of withhold, fragment, bound and interrupt is scene craft. The synthesis records it as a writing rule under Core Methodology. The line it draws is this: the schema stores what is true of a character. Craft rules govern how prose narrates it.
 
 ## The long read
 
-The synthesis ends with open questions, and the shape of those questions is instructive. The first concerns where a field belongs when two layers both claim it, as with `polarity_role` and `venue_comfort_and_practice`. The second concerns whether two named fields are really one. The third concerns a source that argues something different in kind: Foucault's claim that naming a practice manufactures a permanent identity.
+The synthesis ends with open questions, and the shape of those questions is instructive. The first concerns where a field belongs when two layers both claim it, as with `polarity_role` and `venue_comfort_and_practice`. The second concerns whether two named fields are really one. The third concerns a source that argues something different in kind. It is Foucault's claim that naming a practice manufactures a permanent identity.
 
 The fourth is a gap in the shelf itself. No source in the wave addresses lesbian or WLW-specific desire architecture, and Victoria is the only authored L9 instance. Chief ruled on 2026-09-29 that this gap goes on the acquisition list. The sweep already running covers it.
 

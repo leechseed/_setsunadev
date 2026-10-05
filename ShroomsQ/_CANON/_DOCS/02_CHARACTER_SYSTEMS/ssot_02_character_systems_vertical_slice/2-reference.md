@@ -54,7 +54,7 @@ Three diagrams in the source.
 
 **Diagram 2, the central mechanism** (flowchart).
 
-- Tier 1 (CORE, VITAL, SOCIAL), Tier 2 (WILL, WOUND, DRIVE) and Tier 3 (six deep stacks) feed the seven derived statistics.
+- Tier 1 (CORE, VITAL, SOCIAL) and Tier 2 (WILL, WOUND, DRIVE) feed the seven derived statistics. Tier 3 (six deep stacks) feeds them too.
 - CORE derives WILL. VITAL derives DRIVE.
 - Character history feeds WOUND ("history, not bought").
 - WOUND feeds the statistics. The statistics feed the flag trigger conditions. The flags feed the structured data block.
@@ -90,7 +90,7 @@ One table, twelve layers. The setting slice and the plot slice mirror this archi
 | **L11** | **DESTINY** | What is the character building toward, not where they stand? | BVX.0045 the two journeys, BVX.0196 growth vs transformation, BVX.0061 the four causes of change | `growth_axis`, `resistance_index`, `soul_evolution_archetype`, `karmic_memory`, `growth_requirement`, `arc_type`, `change_cause`, `catalyst_archetype` | Tier 3 |
 | **L12** | **FUNCTION** | What narrative role and mechanical function does the character discharge? | BVX.0089 the eight archetypes, BVX.0061 the hierarchy, BVX.0064 the cast map, BVX.1123 the pivotal character | `dramatica_archetype`, `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement`, `limit_type`, `resolve`, `convention_role` | Tier 3 |
 
-**Binding rule.** L12 FUNCTION is fed from the storyform, keyed by `storyform_id`. A character with no storyform link may run L1 through L11 only. A filled L12 makes a character load-bearing to the argument. The L12 field list lives in one place only: the [Dramatica integration protocol](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), version 1.2.0. That doc owns the cascade when a storyform is revised. It also defines `convention_role`.
+**Binding rule.** L12 FUNCTION is fed from the storyform, keyed by `storyform_id`. A character with no storyform link may run L1 through L11 only. A filled L12 makes a character load-bearing to the argument. The L12 field list lives in one place only. That place is the [Dramatica integration protocol](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮%20ssot_02_dramatica_integration_protocol.md), version 1.2.0. That doc owns the cascade when a storyform is revised. It also defines `convention_role`.
 
 ### Field tags · every field
 
@@ -103,7 +103,7 @@ Every field in the Structured Data Block carries one of three tags.
 Rules:
 
 - No new field ships without a tag.
-- Static or dynamic follows the state module's Decision Test: would the value differ if the character were frozen at two points in the narrative?
+- Static or dynamic follows the state module's Decision Test. The test asks: would the value differ if the character were frozen at two points in the narrative?
 - The four header lines (`CHARACTER_ID`, `IP`, `STATUS`, `VERSION`) are record metadata. Each is Static.
 - Before 3.3.0, 44 of 103 keys in the block had no tag. All are tagged now (FU-1).
 - The 3.2.0 pass (CL31) tagged `intimacy_mode` Dynamic, `desire_vector` Dynamic, `system_exposure` Static.
@@ -147,7 +147,7 @@ Tier 1 suffices for background characters. Tier 2 suffices for recurring support
 
 ### The Hierarchy Rule
 
-(Call 4, BVX.0061 Card, BVX.0064 McKee. APPLIED 2.1.0.) Characterization effort tracks narrative rank. A character earns deeper tiers and denser Tier 3 population in proportion to the load-bearing weight the story places on them. Filling every field on a background character is a schema error.
+(Call 4, BVX.0061 Card, BVX.0064 McKee. APPLIED 2.1.0.) Characterization effort tracks narrative rank. A character earns deeper tiers and denser Tier 3 population. The writer scales both to the load-bearing weight the story places on the character. Filling every field on a background character is a schema error.
 
 ### Erotic Pacing
 
@@ -184,9 +184,9 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 
 - **Domain:** cognitive and psychological mass. Mental skill defaults, ideological frameworks, problem-solving capacity.
 - **Default 10.** Cost 20 pts per level above 10 (IQ equivalent).
-- `psychology_stack` (call 12, BVX.1123 Egri, 2.1.0): the psychology third of Egri's bone structure as an auditable text checklist: moral standards, ambition, frustrations, temperament, attitude toward life, complexes, extrovert/introvert, abilities, qualities, IQ.
+- `psychology_stack` (call 12, BVX.1123 Egri, 2.1.0): the psychology third of Egri's bone structure. It is an auditable text checklist: moral standards, ambition, frustrations, temperament, attitude toward life, complexes, extrovert/introvert, abilities, qualities, IQ.
 - `identity_frame` (2.5.0): the frame he names himself by. Gender persona, orientation label, era category, and the gender script he plays for each audience.
-- `assigned_labels` (3.2.0, CL5, Dynamic), under `identity_frame`: list of {label: text, by: law | medicine | church | state | buyer | family | peers, year: integer, accepted: bool}.
+- `assigned_labels` (3.2.0, CL5, Dynamic), under `identity_frame`. It is a list of {label: text, by: law | medicine | church | state | buyer | family | peers, year: integer, accepted: bool}.
 - `neurotype` (3.3.0, CH-5): {label: text, known_to_self: bool, masked_by: novelty | effort | none, attention_pattern: hyperfocus | scattered | mixed}. Source PSY.05. Method line: store the condition as one cause among others, never as the explanation.
 
 #### L2 VITAL
@@ -194,7 +194,7 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - **Domain:** physical and energetic presence. Body precision, endurance, reaction capacity, physical expressiveness.
 - **Default 10.** Cost 20 pts per level above 10 (DX equivalent).
 - `physiology_stack` (call 12, 2.1.0): heredity, appearance, defects, posture, health as a text checklist. Heredity itself resolved to L7 `hereditary_predisposition`.
-- `body_capital` (3.0.0, defined 3.2.0, CL14, Dynamic, adults only): {price_factors: list of {factor: masculinity | build | race | role, direction: up | down}, window: {curve, start_age, end_age}, venue_tier: integer, trust_signal: text, working_body_gap: text, embodied_cost: text}.
+- `body_capital` (3.0.0, defined 3.2.0, CL14, Dynamic, adults only). The record holds price_factors: list of {factor: masculinity | build | race | role, direction: up | down}. It holds window: {curve, start_age, end_age}. It also holds venue_tier: integer, trust_signal: text, working_body_gap: text and embodied_cost: text.
 
 #### L3 SOCIAL
 
@@ -202,14 +202,14 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - **Default 10.** Cost 10 pts per level above 10 (HT equivalent).
 - `sociology_stack` (call 12, 2.1.0): class, occupation, education, home life, political affiliation, as text.
 - `circumplex` (3.0.0): optional scored dial {agency, communion}, each -5 to +5. Agency runs yielding to dominant. Communion runs cold to warm. Null by default.
-- `knowledge_map` (2.4.0, Sedgwick, MSX.68): per relationship, what each knows, what each knows the other knows, and who may claim not to know. Shared with L9. It gains `cover` (3.2.0, CL8, Dynamic): list of {kind: overcompensation | double_life | passing | hidden_in_plain_view, sized_to: text, cost: text}. For a double life, the writer picks one home per case, `cover` or `shadow_content`.
-- `community_membership` (2.5.0): the chosen community, its places, press and codes, and the rooms he belongs in with each room's code. Gains `standing` (3.3.0, CH-3, Dynamic): {earned_by: list of dated acts, vouched_by: list of character_ids, cost_to_lose: text}. Keep apart from `civic_standing`.
-- `agreement_style` (2.5.0): relationship agreements, fuzzy or legalistic, open or closed. Gains (3.2.0, CL3) form: spoken | unspoken_pretense; symmetry: symmetric | asymmetric; veto: held | given | none, plus a cost note; reopen_triggers: list of text.
+- `knowledge_map` (2.4.0, Sedgwick, MSX.68): per relationship, it records what each knows. It also records what each knows the other knows, and who may claim not to know. Shared with L9. It gains `cover` (3.2.0, CL8, Dynamic): list of {kind: overcompensation | double_life | passing | hidden_in_plain_view, sized_to: text, cost: text}. For a double life, the writer picks one home per case, `cover` or `shadow_content`.
+- `community_membership` (2.5.0): the chosen community, its places, press and codes. It also holds the rooms he belongs in with each room's code. Gains `standing` (3.3.0, CH-3, Dynamic): {earned_by: list of dated acts, vouched_by: list of character_ids, cost_to_lose: text}. Keep apart from `civic_standing`.
+- `agreement_style` (2.5.0): relationship agreements, fuzzy or legalistic, open or closed. It gains (3.2.0, CL3) form: spoken | unspoken_pretense. It also gains symmetry: symmetric | asymmetric. It gains veto: held | given | none, plus a cost note. It gains reopen_triggers: list of text.
 - `risk_management_practice` (2.5.0): the safety rules he makes and keeps. Shared with L6.
 - `self_presentation` (2.5.0): the desirable self he builds for a public, such as apps, sites, a brand.
-- `pair_register` (3.2.0, CL1, Dynamic): list keyed by character_id, each {attachment_dimensions {anxiety, avoidance}, pacing: slow | goal, rules: list of {rule: text, form: spoken | tacit, status: kept | bent | broken}, rule_gap: text or null}.
-- `civic_standing` (3.2.0, CL6, Dynamic): {category: text, rank_or_score: number or null, rights_held: list, what_can_be_taken: list, by_whom: text, exemptions: list, last_reranked: story_beat}. Class modifies it.
-- `disclosure_posture` (3.2.0, CL7, Dynamic): outness. List of {audience, concealed_trait, strategy: open | selective | covering | double_living | none, stake: text}, plus stages: list of {stage: self_recognition | circle | public, year}, cost_ledger: list of text, hiding_incentive: text or null. It is a view onto `knowledge_map`, not a second store. L9 keeps its own for the sexual-health register.
+- `pair_register` (3.2.0, CL1, Dynamic): list keyed by character_id. Each entry holds attachment_dimensions {anxiety, avoidance} and pacing: slow | goal. It also holds rules: list of {rule: text, form: spoken | tacit, status: kept | bent | broken}. The last field is rule_gap: text or null.
+- `civic_standing` (3.2.0, CL6, Dynamic): the record holds category: text, rank_or_score: number or null and rights_held: list. It also holds what_can_be_taken: list, by_whom: text, exemptions: list and last_reranked: story_beat. Class modifies it.
+- `disclosure_posture` (3.2.0, CL7, Dynamic): outness. It holds a list of {audience, concealed_trait, strategy: open | selective | covering | double_living | none, stake: text}. It also holds stages: list of {stage: self_recognition | circle | public, year}. It also holds cost_ledger: list of text and hiding_incentive: text or null. It is a view onto `knowledge_map`, not a second store. L9 keeps its own for the sexual-health register.
 - `voice_sheet` (3.2.0, CL28, Dynamic): {register: text, dialect: text, native_pace: slow | even | fast, tic_with_reason: text, noticing_filter: list}. Derive `noticing_filter` from `sociology_stack` and L8 `conditional_patterns`. Texture keeps how the voice is narrated.
 
 #### L4 WILL
@@ -235,9 +235,9 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 
 - **Domain:** narrative motivation fuel. Derives from VITAL by default (`DRIVE = VITAL`). Spent on active goal-pursuit, recovered through narrative resolution. Buyable at 3 pts per level.
 - `motivation_stack` (2.5.0): ordered motives, stated versus real. Entries gain `audience` (3.2.0, CL17, Dynamic): list of {who, named: bool}.
-- `drive_texture` (2.5.0): the felt shape of the drive: more, risk, novelty, abundance. Note (3.3.0, CH-5): where the drive is hyperfocus, record when it fades, as a state diff keyed to a checkpoint.
+- `drive_texture` (2.5.0): the felt shape of the drive: more, risk, novelty, abundance. Note (3.3.0, CH-5): where the drive is hyperfocus, record when it fades. Record it as a state diff keyed to a checkpoint.
 - `futurity_stance` (3.0.0): how the character holds the future. Values: planned, hoped, foreclosed, none, and from 3.2.0 (CL27) refused and horizon. Foreclosed means taken. Refused means he turns it down.
-- `want_need` (3.2.0, CL16, Dynamic): {want: text, need: text, false_belief: text, need_kind: psychological | moral, cost: text, fusion_beat: story_beat or null}. `false_belief` links to L5 `wound_belief_set`, so one belief is stored once.
+- `want_need` (3.2.0, CL16, Dynamic): the record holds want: text, need: text and false_belief: text. It also holds need_kind: psychological | moral, cost: text and fusion_beat: story_beat or null. `false_belief` links to L5 `wound_belief_set`, so one belief is stored once.
 
 #### L7 ORIGIN
 
@@ -252,11 +252,11 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 #### L8 IMPRINT
 
 - **Domain:** formative emotional conditioning. Attachment architecture, emotional range, operational belief patterns set before story entry.
-- Field list from BVX.1127 Levine & Heller, *Attached* (call 14, 2.1.0): `attachment_style` (four-way enum: secure, anxious, avoidant, fearful_avoidant), `attachment_dimensions` {anxiety, avoidance} beside the scalar `attachment_style_score`, `protest_behaviors`, `deactivating_strategies`.
+- Field list from BVX.1127 Levine & Heller, *Attached* (call 14, 2.1.0). The list holds `attachment_style` (four-way enum: secure, anxious, avoidant, fearful_avoidant). It also holds `attachment_dimensions` {anxiety, avoidance} beside the scalar `attachment_style_score`, `protest_behaviors` and `deactivating_strategies`.
 - Also: `emotional_range`, `conditional_patterns`, `imprint_flexibility`.
 - `secure_base_object`: renamed from `primary_attachment_object`. The old name stays a read alias. It was the only rename in 2.1.0.
 - `vandalism_event` (2.3.0, Money, PSY.54): the dated early event that bent the lovemap. Paired with L9 `template_origin`. Static sub-fields (3.2.0, CL21): valence: taught | rewired | wounded | mixed; what_it_taught: text; what_it_still_powers: text; place; year. Adult formative scenes live here.
-- `somatic_archive` (2.3.0, Paasonen, MSX.67): what the body has learned to answer, built by habit, with no trauma story required.
+- `somatic_archive` (2.3.0, Paasonen, MSX.67): what the body has learned to answer. Habit builds it, with no trauma story required.
 - `sexual_script_acquisition` (2.5.0): who and what taught him what sex means, and at which level.
 - `appeasement_strategies` (3.2.0, CL23, Dynamic): list of text, beside `protest_behaviors` and `deactivating_strategies`. Covers self-erasure by submission. Cross-reference L9 `polarity_role`, so a chosen submissive role is told apart from a defense.
 
@@ -277,37 +277,37 @@ Each layer governs one and only one domain. Overlap between layers is a schema e
 - **2.3.0 (wave 2):**
   - `orientation_dimensions` (Laumann, PSY.53): behavior, desire and identity as three separate settings. Kinsey's 0-6 rides along as a per-age score (PSY.50).
   - `template_origin` also holds the lovemap design (Money, PSY.54).
-  - `charmed_circle_position` (Rubin, MSX.46): per wanted act, which side of the world's good-sex line it falls on and how the character carries it. Adults only. Reads beside `consent_posture`.
+  - `charmed_circle_position` (Rubin, MSX.46): per wanted act, which side of the world's good-sex line it falls on. It also records how the character carries it. Adults only. Reads beside `consent_posture`.
   - `resonance_profile` (Paasonen, MSX.67): what lands now, how it shifts, how it goes stale.
 - **2.4.0 (wave 3):**
   - `template_origin` gains `core_erotic_theme`: one sentence per lead, worded from its wound (Morin, PSY.63).
   - `arousal_curve` gains an excitation and inhibition setting: SES, SIS1, SIS2 (Bancroft, PSY.58).
   - `consent_posture` gains `negotiation`, `signals`, `debrief`, plus the consent model the character works from (Wiseman, MSX.80; Barker, PSY.65). L9 reads L3 `knowledge_map`.
-- **2.5.0 (schema pass):** `polarity_role` (top, bottom, switch, dom, sub; chosen or assigned) and `love_lust_cleft` (how he settles saintly love against sinful lust).
+- **2.5.0 (schema pass):** `polarity_role` (top, bottom, switch, dom, sub; chosen or assigned). It also adds `love_lust_cleft` (how he settles saintly love against sinful lust).
 - **3.2.0 (library pass):**
   - `intimacy_mode` values (CL2): partnered_merge | parallel_presence | solo_directed | bounded_no_strings. The {ref, value} list replaces separate {mode, context} pairs.
-  - `consent_posture` gains (CL4, all Dynamic): scope: per_act | per_scene | standing; redefended_per_scene: bool; enthusiasm_standard: required | not_required; precommitments: list of text; veto_points: list of named checkpoints; limits: {hard: list, soft: list}; recall: match | diverge. Consent-model values extend to affirmative | SSC | RACK | negotiated_safety | limit | consensual_minimalism.
+  - `consent_posture` gains (CL4, all Dynamic): scope: per_act | per_scene | standing. It gains redefended_per_scene: bool and enthusiasm_standard: required | not_required. It gains precommitments: list of text and veto_points: list of named checkpoints. It gains limits: {hard: list, soft: list} and recall: match | diverge. Consent-model values extend to affirmative | SSC | RACK | negotiated_safety | limit | consensual_minimalism.
   - `compersion` under `desire_vector` (CL3, Dynamic): {level 0-10, kind: erotic | emotional | none, learned: bool}.
   - `exposure_shame` gains direction: self | partner | group | down_hierarchy | none, and coping_style: attack_self | withdrawal | attack_other | avoidance. `role_shame` gains target: erection | orgasm | pretense | receiving | initiative | femininity | other (CL10).
-  - `resonance_profile` holds fantasy and practice as two registers that may differ, plus type_tags: list of text and exceeds_type: bool (CL11).
+  - `resonance_profile` holds fantasy and practice as two registers that may differ. It also holds type_tags: list of text and exceeds_type: bool (CL11).
   - `fantasy_ledger` under `desire_vector` (CL11, Dynamic): list of {theme, told_to: list, acted: yes | no, real_vs_imagined: text}. Theme values (PSY.62): multipartner | power_control | novelty | taboo | partner_sharing | passion_romance | non_conventional. A fantasy that fails the consent or risk test stays fantasy.
   - `pleasure_evidence` (CL12) sits under `desire_vector`: {asks_for: text, accepts: text}. `desire_object`: pleasure | activity | being_wanted | the_others_pleasure. `sex_creed`: reproductive | romantic | pleasure | communication. All Dynamic.
-  - `polarity_role` gains reason: proof | giving | release | rank | market; reversal_wish: text (feeds `shadow_content` as `denied_wish`); history: list of {role, when, taught_by, outcome}; stage: beginner | working | fluent (CL13). `touch_rule` {gives, receives, no_touch: bool} and `dissolution` {depth 0-10, with: text} join it, both Dynamic.
-  - `arousal_curve` stays Static (CL19). Static sub-fields: signature {amplitude 0-10, areas: list, speed: slow | medium | fast, time_to_peak_min: integer, spasm_size 0-10} and climb_rule (a closing signal drops the climb one step). Dynamic sub-fields: concordance: aligned | decoupled | variable; refractory_minutes: integer or null.
+  - `polarity_role` gains reason: proof | giving | release | rank | market. It gains reversal_wish: text (feeds `shadow_content` as `denied_wish`). It gains history: list of {role, when, taught_by, outcome}. It gains stage: beginner | working | fluent (CL13). `touch_rule` {gives, receives, no_touch: bool} and `dissolution` {depth 0-10, with: text} join it, both Dynamic.
+  - `arousal_curve` stays Static (CL19). Static sub-fields: signature {amplitude 0-10, areas: list, speed: slow | medium | fast, time_to_peak_min: integer, spasm_size 0-10}. Static sub-fields also include climb_rule (a closing signal drops the climb one step). Dynamic sub-fields: concordance: aligned | decoupled | variable; refractory_minutes: integer or null.
   - `risk_role` on `erotic_safety_precondition` (CL20, Dynamic): precondition | spark | trust_token. `risk_account` on `risk_management_practice` (CL20, Dynamic): justification | excuse | informed_consent_frame | none.
   - `compartment_practice` (CL24, Dynamic): {technique: schedule | dissociation | ritual_boundary | rule_set, reserved_act: text, leak_point: text}. The leak point feeds SHADOW.
-  - `attraction_channels` under `orientation_dimensions` (CL26, Dynamic): sexual, romantic, sensual, platonic, aesthetic, each integer 0-10 or null, each with its own target gender. A null sexual channel makes `desire_vector` run non-terminating.
+  - `attraction_channels` under `orientation_dimensions` (CL26, Dynamic): sexual, romantic, sensual, platonic, aesthetic. Each is an integer 0-10 or null, each with its own target gender. A null sexual channel makes `desire_vector` run non-terminating.
 - **3.3.0 (follow-up):**
-  - `erotic_craft` (CH-1, Dynamic, `training` Static): {domains: list, level: novice | competent | expert | master, training: self | partner | teacher | tradition, flow_access: reliable | sometimes | blocked}. Read beside `sexual_script_acquisition`.
-  - `power_exchange` (CH-2, Static, `stage` Dynamic): list keyed by `character_id`, each {scope: [physical, mental, financial], protocol: list of named rules, container: {space, ritual, time_bound}, duration: scene_bound | standing, stage: trial | trained | owned, function: free text, role_integrity: the rule against slipping out of role}. Cites [Touchstone 1:1](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md), the bounded container, on `container`. `polarity_role.reason` gains the top's rewards: empathy, creativity, bigness, nurturing, bullying, control, competence. Role bleed keeps its home in `compartment_practice`.
-  - `triangle_position` merge into `desire_vector` is kept (CH-4 narrow fix). Two sub-fields carry the group parts (PSY.02): `group_size` (Dynamic; 3 is a triad) and `group_position` (Dynamic) {structure: couple_plus_third | triad | group, standing: primary | equal | guest | disposable, rule_setter: character_id, motives: list of identity | novelty | partner_wish | relationship_test | power, script_followed: FFM | MMF | other | none}. Pair with `agreement_style` veto and symmetry rules and with `compersion`.
+  - `erotic_craft` (CH-1, Dynamic, `training` Static): the record holds domains: list and level: novice | competent | expert | master. It also holds training: self | partner | teacher | tradition and flow_access: reliable | sometimes | blocked. Read beside `sexual_script_acquisition`.
+  - `power_exchange` (CH-2, Static, `stage` Dynamic): list keyed by `character_id`. Each entry holds scope: [physical, mental, financial] and protocol: list of named rules. It also holds container: {space, ritual, time_bound} and duration: scene_bound | standing. It also holds stage: trial | trained | owned, function: free text and role_integrity: the rule against slipping out of role. Cites [Touchstone 1:1](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md), the bounded container, on `container`. `polarity_role.reason` gains the top's rewards: empathy, creativity, bigness, nurturing, bullying, control, competence. Role bleed keeps its home in `compartment_practice`.
+  - `triangle_position` merge into `desire_vector` is kept (CH-4 narrow fix). Two sub-fields carry the group parts (PSY.02): `group_size` (Dynamic; 3 is a triad) and `group_position` (Dynamic). The `group_position` record holds structure: couple_plus_third | triad | group and standing: primary | equal | guest | disposable. It also holds rule_setter: character_id. It also holds motives: list of identity | novelty | partner_wish | relationship_test | power and script_followed: FFM | MMF | other | none. Pair with `agreement_style` veto and symmetry rules and with `compersion`.
 
 #### L10 SHADOW
 
 - **Domain:** repressed, projected and denied content. High values generate disadvantage clusters and modify stress behavior.
 - Fields: `shadow_density`, `projection_tendency`, `regression_pattern`, `shadow_content`.
 - `dark_triad` (3.0.0): optional dial {narcissism, machiavellianism, psychopathy}, each 0-10. `light_triad`: optional dial {kantianism, humanism, faith_in_humanity}, each 0-10. Both null by default.
-- `moral_incongruence` (2.4.0, Burke, MSX.84): the gap between what a character believes about his desire and what he does.
+- `moral_incongruence` (2.4.0, Burke, MSX.84): the gap between two things. One is what a character believes about his desire. The other is what he does.
 - `shadow_content` entries carry a kind (3.2.0, CL9): denied_wish | assigned_by_world | feared_double | standing_alarm | scrubbed_bond | imposed_self_image. `reversal_wish` feeds `denied_wish`.
 - `disinhibition_context` (3.2.0, CL18, Dynamic): {triggers: list of travel | venue | peers | substance | sanctioned_alter_state, scope: self_permitted | shadow_driven, authentic: bool}. Chemical effects on the body stay in `arousal_curve`.
 
@@ -378,7 +378,7 @@ Assign CORE, VITAL and SOCIAL. Read the Tier 1 values first. They must produce a
 
 ### Step 4 — Tier 3 Variable Population
 
-Populate L7 through L12 from canonical source documentation. Each variable needs a documented source. If none exists, mark it `[INFERRED]` and note the basis. Inferred values need a follow-up extraction query. **Setting rule (CL30, 3.2.0):** where the setting has a matching S4, S6 or S8 entry, cite it through `setting_ref`.
+Populate L7 through L12 from canonical source documentation. Each variable needs a documented source. If none exists, mark it `[INFERRED]` and note the basis. Inferred values need a follow-up extraction query. **Setting rule (CL30, 3.2.0):** the setting may have a matching S4, S6 or S8 entry. Then the writer cites it through `setting_ref`.
 
 ### Step 5 — Derived Statistic Computation
 
@@ -413,7 +413,7 @@ Summary table.
 
 IP: OVEREXITOUT (The Outliers). Character status: Canonical / Locked. Slice version: 1.0.0.
 
-Her blank fields are parked as the VM fill pass, phase 2 of BOLO 100. Each carries the marker `⏸ VM fill pass (phase 2)`. No value is invented. Two 3.2.0 values come from the record: `wound_kind` is error_committed, and `civic_standing` is the Ban plus her Sync-era standing, with numbers ⏸.
+Her blank fields are parked as the VM fill pass, phase 2 of BOLO 100. Each carries the marker `⏸ VM fill pass (phase 2)`. No value is invented. Two 3.2.0 values come from the record. `wound_kind` is error_committed. `civic_standing` is the Ban plus her Sync-era standing, with numbers ⏸.
 
 ### Tier 1 — Primary Layers
 
@@ -560,12 +560,12 @@ A plain-text block with these top-level keys, in order:
 - `civic_standing` holds {category: "the Ban; Sync-era standing", rank_or_score: null}.
 - `source_confidence: canonical` sits in L9.
 - `L12_DRAMATICA_EXTENDED` holds `motivation_quad: [Consider, Pursuit]`.
-- `DERIVED` lists seven values: 10, 8, 16, 6, 8, 18, and `expressive_range: 2` (see the OPEN note at the top).
+- `DERIVED` lists seven values: 10, 8, 16, 6, 8, 18, and `expressive_range: 2`. See the OPEN note at the top.
 - `FLAGS` holds the five flag states above.
 
 ## THE SCHEMA PASS — aliases and drops (RULED 2026-10-04, BOLO 88, "all recommendations")
 
-The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0). Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4), `futurity_stance` (L6) and `minority_stress` as a trigger type under L5 `triggers`. The rest are read aliases: a distill that names one maps to the field shown, so one idea keeps one name (06.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`.
+The three 10/4 waves coined 155 variable names. Twelve became fields (2.5.0). Four were added in 3.0.0: `body_capital` (L2, adults only), `locus_of_control` (L4) and `futurity_stance` (L6). The fourth is `minority_stress`, a trigger type under L5 `triggers`. The rest are read aliases. A distill that names one maps to the field shown. So one idea keeps one name (06.2 rule 3.1). Source: `_tools/bolostatus/work/drop1004/SCHEMA-PASS.md`.
 
 Call values: MERGE INTO a field, or DROP.
 
@@ -713,7 +713,7 @@ Call values: MERGE INTO a field, or DROP.
 
 ## CHARACTER × LIBRARY
 
-`feeds:` for this limb. The first twelve rows were read in full for this document. Rows after BVX.1124 were added in 3.2.0 (BOLO 100 library pass): the books behind CL1-CL31 and the Cite list. The last twelve rows were added in 3.3.0: the books behind CH-1 to CH-5. Each row names the layers it feeds and what it gives.
+`feeds:` for this limb. The first twelve rows were read in full for this document. Rows after BVX.1124 were added in 3.2.0 (BOLO 100 library pass). They are the books behind CL1-CL31 and the Cite list. The last twelve rows were added in 3.3.0: the books behind CH-1 to CH-5. Each row names the layers it feeds and what it gives.
 
 | ID | Book | Feeds hardest | What it gives the stack |
 |---|---|---|---|
@@ -857,13 +857,13 @@ Call values: MERGE INTO a field, or DROP.
 | PHI.01 | Anand, *The Art of Sexual Ecstasy* | L9 | feeds `resolution_type` (additive desire against tension-release) and `erotic_safety_precondition` (sacred space); CH-1 `erotic_craft` |
 | PHI.02 | Blavatsky, *Phallicism and Phallic Worship* | L9 | feeds `love_lust_cleft` (spirit against sex as two readings of one energy) and `template_origin` (a belief system as origin) |
 
-The L5 shelf holds 82 items keyed 9/16 (BOLO 18), twelve distilled to date. The next wave's top candidates: BVX.0202 (Corbett, *The Compass of Character*), BVX.0271 (Weiland, *Archetypal Arcs*), BVX.0135 (Jorstad, *Character Arcs*), BVX.0207 (Dunne, *Dramatic Writer's Companion*), BVX.0229 (Smith, *Psychology Workbook*).
+The L5 shelf holds 82 items keyed 9/16 (BOLO 18), twelve distilled to date. The next wave's top candidates are BVX.0202 (Corbett, *The Compass of Character*) and BVX.0271 (Weiland, *Archetypal Arcs*). They also include BVX.0135 (Jorstad, *Character Arcs*), BVX.0207 (Dunne, *Dramatic Writer's Companion*) and BVX.0229 (Smith, *Psychology Workbook*).
 
 ## TROPES
 
 Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the character domain is keyed to L1-L12 in the [trope register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_trope_register.md). The pull list is [LAYERS.md](../../../../_tools/tropes/data/domains/LAYERS.md) under **character**. A layer that needs a known pattern pulls from its list. The register holds each trope's one-line definition. Sexuality tropes key onto the same layers, mostly L9, and are listed under **sexuality** in the pull list.
 
-**Also in the source: the OPEN calls.** Sixteen numbered calls, RULED 2026-09-16 ("character calls go") and applied at 2.1.0 (2026-09-29, "Rex"). Calls 3, 5, 7, 9 were held, and 3.0.0 closed them.
+**Also in the source: the OPEN calls.** Sixteen numbered calls, RULED 2026-09-16 ("character calls go"). They were applied at 2.1.0 (2026-09-29, "Rex"). Calls 3, 5, 7, 9 were held, and 3.0.0 closed them.
 
 | Call | Subject | Status |
 |---|---|---|

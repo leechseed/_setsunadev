@@ -34,7 +34,7 @@ The form allows a field to stay empty when the storyform does not give it yet. T
 
 ## The report log keeps every value traceable
 
-Section 8 records each Dramatica report the writer consulted, what it was used for, where it lives and when it was read. A value without a source report cannot be checked. The log lets a reviewer trace any field back to the page it came from.
+Section 8 records each Dramatica report the writer consulted. It records what it was used for, where it lives and when it was read. A value without a source report cannot be checked. The log lets a reviewer trace any field back to the page it came from.
 
 ## Section 10 is generated, so it cannot drift
 
@@ -46,6 +46,6 @@ Section 9 records Touchstones, the structural laws the storyform produces. Every
 
 ## The long read
 
-This form and the astrology form are a pair. The Dramatica form says what the storyform decides. The astrology form says what that decision looks like in a second notation. The handoff checklist at the end of this form names the astrology form explicitly: once this record is locked, the astrology ingest can cite it in `dramatica_ingest_ref`.
+This form and the astrology form are a pair. The Dramatica form says what the storyform decides. The astrology form says what that decision looks like in a second notation. The handoff checklist at the end of this form names the astrology form explicitly. Once this record is locked, the astrology ingest can cite it in `dramatica_ingest_ref`.
 
 A Tier 2 character does not use the form. That character gets an element signature and relational roles, set out in the integration doc. The form stays reserved for characters who carry the argument.

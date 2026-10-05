@@ -24,7 +24,7 @@ Tobias gives 20 whole master plots. Schmidt gives 55 whole dramatic situations. 
 
 ## Edges measure how patterns co-occur
 
-An edge between two nodes counts how often real TV Tropes articles link a trope keyed to one into a trope keyed to the other. A second edge type, `same_as`, comes from the books themselves and marks that two nodes name one unit. Love is the busiest node, and every family's strongest content gravitates toward it.
+An edge between two nodes is a count of real TV Tropes article links. Each link runs from a trope keyed to one node into a trope keyed to the other. A second edge type, `same_as`, comes from the books themselves and marks that two nodes name one unit. Love is the busiest node, and every family's strongest content gravitates toward it.
 
 ## The rail is the one thing here that is not a pattern
 
@@ -44,4 +44,4 @@ Two alternate embodiments of one beat do not both fire. A trope's `alt` node fla
 
 ## The long read
 
-The graph also decides what it leaves out. 644 of 1,678 tropes stay unkeyed. The 352 that clearly do not belong are out of scope for good. The 292 that might fit a finer node wait for a second pass. Empty nodes render as bypassed cells, so the walk stays walkable where research has gaps. The workspace view draws the graph as a focus tree on the 16 by 4 rail grid, with tropes inside capped tooltips, and the free network is an opt-in toggle. For OXO, six movements fold into four acts at the Bourne pivot. See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md).
+The graph also decides what it leaves out. 644 of 1,678 tropes stay unkeyed. The 352 that clearly do not belong are out of scope for good. The 292 that might fit a finer node wait for a second pass. Empty nodes render as bypassed cells, so the walk stays walkable where research has gaps. The workspace view draws the graph as a focus tree on the 16 by 4 rail grid. It shows tropes inside capped tooltips. The free network is an opt-in toggle. For OXO, six movements fold into four acts at the Bourne pivot. See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md).

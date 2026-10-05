@@ -14,7 +14,7 @@ source_version: 3.3.3
 
 # Character system (12-layer vertical slice): tutorial
 
-You will take Victoria Midnight's locked layer values, compute her seven statistics, test her five flags and spot one open item. Every number comes from the source. Lookups are in the [reference](2-reference.md).
+You will take Victoria Midnight's locked layer values and compute her seven statistics. You will test her five flags and spot one open item. Every number comes from the source. Lookups are in the [reference](2-reference.md).
 
 ## Step 1. Write down her layer values
 

@@ -22,13 +22,13 @@ One entry per layer. Each entry gives the depth move and what the wave added.
 
 - **S1 BODY:** adequate to deep. Adds draw-the-map-while-drafting, a depth-keyed terrain taxonomy for a non-land medium, a four-ring plane cosmology, and a canon-fiat border mechanic. Roberts' rule stays: nations before coastline.
 - **S2 WEATHER:** thin and flagged, now method adequate, instance still thin. Adds disaster read through architecture, a rain-shadow and axial-tilt worksheet, and weather as villain-law. The DCUS S2 record was unwritten at synthesis time; Part Four item 1 later wrote it.
-- **S3 SENSORIUM:** thin and flagged, now deep. Adds measured physical facts, sensory detail keyed to one character, eight presentation tables, and felt imagery matched to the setting's instruments. Status: fixed.
+- **S3 SENSORIUM:** thin and flagged, now deep. Adds measured physical facts and sensory detail keyed to one character. It also adds eight presentation tables and felt imagery matched to the setting's instruments. Status: fixed.
 - **S4 LAW:** adequate to deep. Adds law as a scoring rule, a graded permeability field, a policing layer, and a nine-article constitution.
-- **S5 SCAR:** adequate to deep. Adds a forward scar ledger, a damage-status field, five stacked precursor falls, a foreknown doom, and a wound-plus-promise fusion with S9.
+- **S5 SCAR:** adequate to deep. Adds a forward scar ledger, a damage-status field and five stacked precursor falls. It also adds a foreknown doom and a wound-plus-promise fusion with S9.
 - **S6 ECONOMY:** adequate to deep. Adds a mechanisms chapter, an eight-tier expense ladder, and one tech premise that reshapes religion, class and war.
 - **S7 FOUNDING:** adequate to deep, the most reinforced layer. Adds creation myth as birth-myth at civilization scale, terrain reliability shaping myth, and the verb-tense test for present-tense bite.
 - **S8 HABIT:** adequate to deep. Adds three independent sliders (tech, divine involvement, magic), life-stage rites, stated neighbor bias, and species decoupled from culture.
-- **S9 ALLURE:** adequate to deep. Adds the "Ah!" of recognized divinity, uncoerced private vision becoming myth, cult-gated options, and a deity compressed to alignment, domain and symbol.
+- **S9 ALLURE:** adequate to deep. Adds the "Ah!" of recognized divinity and uncoerced private vision becoming myth. It also adds cult-gated options and a deity compressed to alignment, domain and symbol.
 - **S10 UNDERSIDE:** adequate to deep. Adds deniable assets, a room as repressed institutional psychology, fairy-tale forensics, and a public, folk, secret three-tier model.
 - **S11 VECTOR:** adequate to deep. Adds an era narrated twice, a place that moves offstage, and consistency traded against completeness.
 - **S12 FUNCTION:** thin (DCUS-only), now adequate. Adds a worked non-DCUS instance (grief as land physics), a write-backward pipeline, and a held-constant premise. It stays the layer with the fewest direct methods.
@@ -87,10 +87,10 @@ Five contradictions, each with a lean.
 - **Completeness versus risk.** Lean: keep thin-by-default as ruled.
 - **Gated history versus printed timelines.** Not truly opposed, since printed timelines keep only entries that still bite. Lean: immersive for DCUS, with one portal-style beat per movement.
 - **Which genre-contract tool is primary.** Lean: Ryan's nine axes, which state they supersede the five-lineage tool.
-- **How much a faction card holds.** Lean: the stub (founding sentence, principle, one secret) for places the story does not center. Use the full eight-field block only for the Administration, the Bishops and the Sync Cult.
+- **How much a faction card holds.** Lean: the stub (founding sentence, principle, one secret). Use it for places the story does not center. Use the full eight-field block only for the Administration, the Bishops and the Sync Cult.
 
 > **OPEN:** the source gives no field list for the full eight-field faction block beyond the six fields in change 1.
 
 ## Version history
 
-Three entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0), 0.2.0 (2026-09-29, ruled "go on all those recs") and 1.0.0 (2026-10-04, ruled "REC", BOLO 100 setting batch 1; stamped `module_of`, scope set to all IPs).
+Three entries: 0.1.0 (2026-09-29, first pass, 42 distills against ssot_03 v1.1.0). The second is 0.2.0 (2026-09-29, ruled "go on all those recs"). The third is 1.0.0 (2026-10-04, ruled "REC", BOLO 100 setting batch 1). It was stamped `module_of`, with scope set to all IPs.

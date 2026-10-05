@@ -18,7 +18,7 @@ source_version: 1.1.0
 
 Character Astrology and the 12-Layer Character Database are parallel datasets. They describe the same character in different notation systems. This document is the formal interface between them.
 
-Without it, the link between chart and layers lives in the designer's intuition. With it, the link is written down. When the designer assigns a value to L8 IMPRINT, the document says which chart elements the value must agree with and how to verify it.
+Without it, the link between chart and layers lives in the designer's intuition. With it, the link is written down. When the designer assigns a value to L8 IMPRINT, the document says which chart elements the value must agree with. It also says how to verify it.
 
 ## Feed, not replace
 
@@ -50,6 +50,6 @@ A chart that clashes with a layer value triggers a four-step protocol. Identify 
 
 ## The long read
 
-The mapping is a translation table between a symbolic language and a numeric one. Neither language is truth. The locked character document is truth, and both languages report on it. Each layer's section reads like a short interpreter's note: what the layer needs, what the chart can offer, and where the interpreter should say nothing. Some of the most important lines are refusals. L12 gets no feed, and the schema-pass fields mostly get none. A mapping that knows where to stop stays trustworthy where it speaks.
+The mapping is a translation table between a symbolic language and a numeric one. Neither language is truth. The locked character document is truth, and both languages report on it. Each layer's section reads like a short interpreter's note. It says what the layer needs and what the chart can offer. It also says where the interpreter should say nothing. Some of the most important lines are refusals. L12 gets no feed, and the schema-pass fields mostly get none. A mapping that knows where to stop stays trustworthy where it speaks.
 
 See also: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md) · source: [🔮ssot_02_character_astrology_12_layer_mapping.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md)

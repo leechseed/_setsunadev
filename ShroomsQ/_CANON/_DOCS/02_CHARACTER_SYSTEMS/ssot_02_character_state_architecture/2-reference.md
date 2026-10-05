@@ -45,7 +45,7 @@ Would this value differ if the character were frozen at two points in the narrat
 
 ## State Record Format
 
-A state record is a structured block describing the delta between the base record and the character at one narrative moment.
+A state record is a structured block. It describes the delta between the base record and the character at one narrative moment.
 
 ### Required Fields
 
@@ -137,7 +137,7 @@ ASTROLOGY_OVERLAY:
 
 ## Checkpoints and Story Points (v1.2)
 
-- A checkpoint is a complete state at a fabula event: a full state record, `state_diffs` and the three MODIFIED blocks. The name is new in v1.2. The format is not.
+- A checkpoint is a complete state at a fabula event. It holds a full state record, `state_diffs` and the three MODIFIED blocks. The name is new in v1.2. The format is not.
 - A checkpoint re-derives every value, statistic and flag. That is too heavy for a single trait tick or flag flip.
 - Lighter single-field changes are story points. They live in [📐 ssot_08_tracking_system.md](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) §5, which defines their shape. A value moves between them by step by default, or `ramp: true` for continuous values.
 - Rule 6 governs checkpoints. A moment may carry many story points.
@@ -240,7 +240,7 @@ Relationships live in a separate structure, so one character's event never force
 This document defines character state tracking. It does not define story structure, scene sequencing or timeline management.
 
 - Since v1.1 the world timeline is [📐 ssot_04_fabula.md](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_fabula.md). It owns every event. A state points to one through `origin_event`.
-- This doc provides to plot_systems: the state diff format, the narrative moment identification scheme, the MC-relative distance fields and the movement tagging.
+- This doc provides to plot_systems the state diff format and the narrative moment identification scheme. It also provides the MC-relative distance fields and the movement tagging.
 - plot_systems will provide: the movement sequence definition and the scene-to-state mapping.
 - v1.1 (2026-09-24): the first structured key landed. One event may produce states in several characters. `narrative_moment` and `movement` stay as readable tags. Calendar coordinates wait on a world calendar (dated by movement until then).
 - v1.2 (2026-09-29): the time code (`M2 · Q1 · S04 | 012.3.2`) comes from ssot_08. It is the key that `told_at` carries. Victoria-as-(0,0) is ruled. `mc_distance_narrative` stays authored.

@@ -20,7 +20,7 @@ Frontmatter: category `setting_system`, tier `[fabula, narratology]`, trunk BLAC
 
 Three diagrams.
 
-- **Diagram 1, the whole system.** Root: the setting system. Branches: Taxonomy (four axes), the Setting Slice (twelve S-layers, one per place, S12 fed from the storyform), the Scene Card (one screen, one scene, paired to the Plot Card), Library, and Boundaries.
+- **Diagram 1, the whole system.** Root: the setting system. Branches: Taxonomy (four axes) and the Setting Slice (twelve S-layers, one per place, S12 fed from the storyform). The rest are the Scene Card (one screen, one scene, paired to the Plot Card), Library, and Boundaries.
 - **Diagram 2, the pressure field.** Layers S1 to S11 deploy six functions: Anchor, Characterize, Pressure, Mood, Argue, Afford. They meet in one scene (a story address), then feed the collision engine (L-layer × S-layer).
 - **Diagram 3, the setting arc.** Baseline, then a dated state overlay, then place changed. The arc recurs one scale class up. It draws Axis 4, not the fill rule.
 
@@ -81,7 +81,7 @@ S12 is fed independently from the storyform, as L12 is fed from the Dramatica in
 | S11 VECTOR | Trajectory: bloom, rot, collapse, redemption. Fields: optional forward-ledger sub-field; `phase` (rising, plateau, declining, past-disintegration); `vacuum` (yes or no); state `tone` (Light or Dark); up to three gauges. | L11 DESTINY |
 | S12 FUNCTION | Storyform binding, independent of S1 to S11. Fields: conflict level (subconscious, personal, institutional, environmental); tone-to-mechanic sub-note; `touchstone` set; `contradiction`; `salient surplus`; `link` (`{character_id, kind: none, political, direct or metonymic}`). | L12 FUNCTION |
 
-**Slice header (machinery, not a layer).** Fields: `place_id`, names and aliases (the rename lattice), scale class, parent and child places, canon node link, state track, `job`, `dramatic role`, `adjacent` (neighbors with travel cost), `canon_tier` per fact (core, semi or fringe), `real_anchor` (dynamic: `{source, as_of date, categories kept}`).
+**Slice header (machinery, not a layer).** Fields: `place_id`, names and aliases (the rename lattice), scale class, parent and child places. It also has canon node link, state track, `job`, `dramatic role` and `adjacent` (neighbors with travel cost). The last fields are `canon_tier` per fact (core, semi or fringe) and `real_anchor` (dynamic: `{source, as_of date, categories kept}`).
 
 **Binding rule.** A place that embodies a throughline Domain gets one S12 record per storyform, keyed by `storyform_id`. S12 empty is legal. S12 filled makes the setting load-bearing.
 
@@ -93,10 +93,10 @@ S12 is fed independently from the storyform, as L12 is fed from the Dramatica in
 
 - **Fill rule, gap status.** Each detail is explicit, implicit or gap. A gap stays a gap until a scene needs it. Then the writer rules a "small miracle" that agrees with everything established. Where the past is unsettled, list two or three candidates and fix none.
 - **Canon tier and continuity.** A contradiction in the main storyline is fatal. A contradiction in background mechanics is logged. One custodian keeps the record. Fringe material is kept.
-- **S4 codex sort.** Tag each S4 rule with a modality (permitted, prohibited, obligatory, valued, known) and a stated-volume (formal, informal, unspoken). Record the deviation outcome: fall, test or predicament.
-- **Gauges.** A place may carry up to three gauges, each with a floor, a ceiling and an effect per rung. A state diff writes the tick. GAUGE_AT_LIMIT watches the ends.
+- **S4 codex sort.** Tag each S4 rule with a modality (permitted, prohibited, obligatory, valued, known). Also tag it with a stated-volume (formal, informal, unspoken). Record the deviation outcome: fall, test or predicament.
+- **Gauges.** A place may carry up to three gauges. Each has a floor, a ceiling and an effect per rung. A state diff writes the tick. GAUGE_AT_LIMIT watches the ends.
 - **Derivation check.** Four checks. Every settlement names its reason. Every S6 resource traces to an S1 feature or S4 rule. Every invented rule has a cost and a limit. One changed variable propagates across layers. Cold-start fill order: S1, S2, S6, S4, S8, S7.
-- **Build order, premise ripple, derivation chain (1.10.0).** Fill S1 first, then S6 and S8, then S4 and S7. Write one line per filled layer for a place resting on one premise. For a culture, write its means of living first.
+- **Build order, premise ripple, derivation chain (1.10.0).** Fill S1 first, then S6 and S8. Then fill S4 and S7. Write one line per filled layer for a place resting on one premise. For a culture, write its means of living first.
 
 ## THE SCENE CARD — the R2 notation (slot reserved in the ladder, delivered here)
 
@@ -133,7 +133,7 @@ One card per R3 sequence, ruled 2026-09-29. It sits beside the SCENE CARD. Seven
 One card per faction, nation or institution. A stub is legal. Fields:
 
 - **Core six (2026-09-29):** name, founding sentence, binding principle, government, economy tier, border/seam rating, one secret.
-- **1.9.0 fields:** `goal` (one line); `clock` (4 to 8 ticks, one tick per state diff); `quotable wound` (linked to an S5 entry); `claimed vs rewarded`; folk tier.
+- **1.9.0 fields:** `goal` (one line); `clock` (4 to 8 ticks, one tick per state diff). It also has `quotable wound` (linked to an S5 entry), `claimed vs rewarded` and folk tier.
 - **1.10.0 fields:** `fault line` (the condition that breaks the binding principle); `drift` (dated change, tagged dynamic).
 
 Fed by S4, S6 and S7. A stub (founding sentence, principle, one secret) serves any place the story does not center. A full card needs both goal and clock.
@@ -169,7 +169,7 @@ Truby's dystopia mechanism is a touchpoint on S12. The world offers apparent cho
 
 ## THE INSTANCE — DCUS starter slice (proof of rig) — worked example (phase 2 fills)
 
-The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School, Red Hills Academy (legacy), Skeeter Creek (founding, buried), Inner Spiral Academy (pre-ruling); scale site (campus); parent the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
+The slice is filled from canon. - Header: `dcus`; names DCUS, the Ultra School and Red Hills Academy (legacy). The names also include Skeeter Creek (founding, buried) and Inner Spiral Academy (pre-ruling). The header also has scale site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
 
 | Layer | DCUS entry |
 |---|---|
@@ -192,7 +192,7 @@ The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School, Re
 
 ## SETTING × LIBRARY
 
-Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. Two rulings: the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)), and Ryan's nine-axis scoring (BVX.0630) as the primary L7 genre-contract tool, with Baur's five lineages as shorthand. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
+Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. - Two rulings: the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the primary L7 genre-contract tool, with Baur's five lineages as shorthand. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
 
 ## TROPES
 
@@ -200,4 +200,4 @@ Added 2026-09-29 (BOLO 89). Every setting-domain TV Tropes trope is keyed to S1 
 
 ## Other sections
 
-The source also holds OPEN (trade-gap note, parked OXO scene-card fill pass) and a version history from 1.0.0 (2026-08-25) to 1.10.2 (2026-10-04).
+The source also holds OPEN (trade-gap note, parked OXO scene-card fill pass). It also holds a version history from 1.0.0 (2026-08-25) to 1.10.2 (2026-10-04).

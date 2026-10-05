@@ -24,7 +24,7 @@ The wave was the largest infusion the slice has had. Ten layers moved from adequ
 
 ## What recurs across books is the real finding
 
-Nine moves recur. The strongest is present-tense history: the writer finds the past only where it bites now. Twelve further sources reach that rule alone. Others turn tone into a rule, repeat a faction card, and keep a forward-dated ledger of what has not happened yet.
+Nine moves recur. The strongest is present-tense history: the writer finds the past only where it bites now. Twelve further sources reach that rule alone. Others turn tone into a rule and repeat a faction card. They also keep a forward-dated ledger of what has not happened yet.
 
 ## Ten changes were proposed and Chief ruled all of them
 
@@ -32,7 +32,7 @@ Chief ruled the changes on 2026-09-29 ("go on all those recs") and again on 2026
 
 ## Thin-by-default stands, and the wave is not a mandate to fill every layer
 
-The system keeps most layers thin until the story visits them. One source shows that completeness trades against consistency. A writer who sees deep layers in this wave must not read that as an order to fill S1 to S11 everywhere.
+The system keeps most layers thin until the story visits them. One source shows that completeness trades against consistency. A writer who sees deep layers in this wave must not read that as an order. The wave never asks for S1 to S11 everywhere.
 
 ## Instance work stays parked, because the method and the DCUS record are different jobs
 
@@ -40,4 +40,4 @@ Part Four lists eight DCUS application items. Items 1, 4 and 7 are done. The res
 
 ## The long read
 
-The wave shows a pattern the older notes only hinted at. A setting survives play when each layer costs the writer something. Dread costs a resource. Honor is a score. History appears only when a scene needs it. The five contradictions in Part Five all resolve the same way: pick a direction, commit, and keep the center dense and the edges vague. See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md).
+The wave shows a pattern the older notes only hinted at. A setting survives play when each layer costs the writer something. Dread costs a resource. Honor is a score. History appears only when a scene needs it. The five contradictions in Part Five all resolve the same way. The writer picks a direction, commits, and keeps the center dense and the edges vague. See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md).

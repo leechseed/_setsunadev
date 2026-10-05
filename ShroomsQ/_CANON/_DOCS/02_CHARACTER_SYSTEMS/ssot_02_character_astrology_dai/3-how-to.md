@@ -63,7 +63,7 @@ Tables and labels live in the [reference](2-reference.md).
 1. List the character's element pairs: Problem/Solution, Focus/Direction, Unique Ability/Critical Flaw, and reinforcing quad elements.
 2. Give Problem/Solution an Opposition.
 3. Give Focus/Direction a Square.
-4. Give Unique Ability/Critical Flaw a Conjunction if the flaw is inside the ability, or a Square if it undermines from outside.
+4. Give Unique Ability/Critical Flaw a Conjunction if the flaw is inside the ability. Give it a Square if it undermines from outside.
 5. Give reinforcing quad elements a Trine.
 6. Check sign geometry. If it contradicts the tension, keep the Dramatica tension.
 

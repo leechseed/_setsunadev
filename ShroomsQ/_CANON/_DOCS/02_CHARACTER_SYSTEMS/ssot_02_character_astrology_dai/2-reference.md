@@ -129,7 +129,7 @@ Machine label `INTERNAL_STATE`. Source: MC Problem + MC Response. The Moon is wh
 1. Identify the MC Problem element. Consult the Problem Elements table for sign affinities.
 2. Identify the MC Response element. Check for compatible or conflicting sign associations.
 3. Select a Moon sign that encodes the stress-collapse pattern.
-4. Place the Moon in a different element than the Sun, unless the stress response mirrors identity (rare, and it produces self-reinforcing loops).
+4. Place the Moon in a different element than the Sun. Break this rule only when the stress response mirrors identity. That case is rare and produces self-reinforcing loops.
 
 Validation: under maximum stress, does the character retreat into this sign's behavior? A Moon that feels too comfortable or too rational is wrong.
 
@@ -243,7 +243,7 @@ After signs and houses, calculate dignity for each planet.
 2. Planet in its detriment or fall sign: Essential Debility.
 3. Neither: Peregrine (neutral efficiency).
 
-- Narrative-first override: a planet in traditional dignity may be overridden to Peregrine or Debility if the Dramatica data shows the character struggles with that function. Document the reason.
+- Narrative-first override: the writer may override a planet in traditional dignity to Peregrine or Debility. Use it if the Dramatica data shows the character struggles with that function. Document the reason.
 - A planet in traditional debility stands as debility if the character excels at the function at internal cost.
 - Dignity-to-layer feed: dignity feeds L1-L3 positive capacity justifications. Debility feeds L5 WOUND, L10 SHADOW and behavioral texture notes.
 - Connects to: [12-layer mapping](../ssot_02_character_astrology_12_layer_mapping/2-reference.md).
@@ -255,7 +255,7 @@ The 12th House receives planets whose Dramatica functions are submerged, operati
 - Primary candidate: the planet tied to the MC Problem element, if the character is a Change character.
 - Secondary candidates: any planet whose function the character denies, represses or projects. Cross-reference L10 SHADOW content in the authoritative documentation.
 - Rule: a 12th House planet is active but inaccessible to Mercury (conscious processing).
-- When Mercury aspects a 12th House planet, the Hauntology Effect fires: recursive awareness, deja vu, or the sense of a pattern the character cannot name.
+- When Mercury aspects a 12th House planet, the Hauntology Effect fires. The character gets recursive awareness, deja vu, or the sense of a pattern the character cannot name.
 
 ## Tier 2 Abbreviated Derivation
 

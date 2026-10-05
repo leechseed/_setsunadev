@@ -24,14 +24,14 @@ Lookup tables: [reference](2-reference.md). Why the rules exist: [concept](1-con
 2. For Tier 3, plan a full chart.
 3. For Tier 2, plan a partial chart: Sun, Moon and one or two defining aspects, from the element signature.
 4. For Tier 1, write no chart.
-5. For a partial chart that must still feed L1-L11, assign the seven core placements: Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant.
+5. For a partial chart that must still feed L1-L11, assign the seven core placements. The seven are Sun, Moon, Mercury, Venus, Mars, Saturn, Ascendant.
 6. Leave Jupiter, Uranus, Neptune, Pluto, progressions and transits for later.
 
 ## Assign a planet or angle
 
 1. Open the locked Dramatica ingest. Do not start without one.
 2. Follow the derivation order in the DAI doc. Skip no step and reorder none.
-3. Find the planet's Dramatica inputs in the [reference](2-reference.md): Category 3 for inner planets, 4 for outer planets, 5 for angles.
+3. Find the planet's Dramatica inputs in the [reference](2-reference.md). Use Category 3 for inner planets, 4 for outer planets and 5 for angles.
 4. Write the sign. Write the Dramatica input and the rule that justified it.
 5. If the source for a planet is missing, leave it empty and mark it. Never guess.
 
@@ -81,13 +81,13 @@ Lookup tables: [reference](2-reference.md). Why the rules exist: [concept](1-con
 1. Ask: does it say who the character IS at canonical definition?
 2. If yes, it is character-level. It goes in the static chart and the ingest template.
 3. If it says what is HAPPENING at one narrative moment, it is story-level.
-4. Route story-level data: network and synastry to relationship tables, progressions and transits to the state overlay system, movements and reset to plot systems.
+4. Route story-level data in three ways. Send network and synastry to relationship tables. Send progressions and transits to the state overlay system. Send movements and reset to plot systems.
 5. Never edit the natal chart for story-level data.
 
 ## Connect a finished chart to the 12 layers
 
 1. Confirm the character has a locked Dramatica ingest and a chart.
 2. Open the 12-layer mapping doc.
-3. Feed each layer from the planets the source names. Sun feeds L1, Mars feeds L2, Saturn feeds L4 and L5, Moon feeds L8, Venus feeds L9, shadow aspects feed L10, and growth axis feeds L11.
+3. Feed each layer from the planets the source names. Sun feeds L1, Mars feeds L2, and Saturn feeds L4 and L5. Moon feeds L8, Venus feeds L9, shadow aspects feed L10, and growth axis feeds L11.
 4. Leave the schema 2.5.0 and 3.0.0 fields unfed. Set them from the authoritative document.
 5. Keep both the chart and the 12-layer slice in the character's canonical folder.

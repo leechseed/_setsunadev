@@ -238,7 +238,7 @@ Pings from the narrative environment to the static chart. Data enters the state 
 
 ### Category 15: Reset Protocol (Systemic Wipe)
 
-At the end of Movement 6 the system executes a terminal reset. The category defines what survives (stored in the 12th House), how the character is re-acquired in Movement 1 of the next cycle, and what share of entropy remains as the ghost signal. It belongs entirely to plot systems. It reads the 12th House contents and does not change the chart.
+At the end of Movement 6 the system executes a terminal reset. The category defines what survives (stored in the 12th House). It also defines how the character is re-acquired in Movement 1 of the next cycle. It also defines what share of entropy remains as the ghost signal. It belongs entirely to plot systems. It reads the 12th House contents and does not change the chart.
 
 ## The Dramatica-Astrology Interface (DAI)
 
@@ -254,7 +254,7 @@ The chain, in order:
 
 1. Dramatica Ingest Template [LOCKED].
 2. Dramatica-Astrology Interface, DAI translation rules (deliverable 2B).
-3. Character Astrology Ingest Template [LOCKED] (deliverable 2C). It holds the five personal planets, the five structural planets, the four angles, aspects, house placements, dignities and 12th House contents.
+3. Character Astrology Ingest Template [LOCKED] (deliverable 2C). It holds the five personal planets, the five structural planets and the four angles. It also holds aspects, house placements, dignities and 12th House contents.
 4. 12-Layer Vertical Slice, which receives L1-L11 through the astrology-to-layer mapping (deliverable 3A).
 
 The chart consumes Dramatica and is consumed by the 12-layer system. It does not work independently of either.
@@ -282,4 +282,4 @@ Specific feeds named in the source:
 
 Not chart-fed: the twelve fields added in schema 2.5.0 and the 3.0.0 additions. Authors set them from the authoritative document. Per-field notes are in the schema-pass table of [ssot_02_character_astrology_12_layer_mapping.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_12_layer_mapping.md).
 
-A complete Tier 3 character holds both a Character Astrology Ingest Template and a 12-Layer Vertical Slice in the canonical folder. Blank form: [astrology ingest template reference](../ssot_02_template_astrology_ingest/2-reference.md).
+A complete Tier 3 character holds two records in the canonical folder. One is a Character Astrology Ingest Template. The other is a 12-Layer Vertical Slice. Blank form: [astrology ingest template reference](../ssot_02_template_astrology_ingest/2-reference.md).

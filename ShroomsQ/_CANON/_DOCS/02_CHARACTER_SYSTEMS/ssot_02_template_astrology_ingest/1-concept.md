@@ -38,7 +38,7 @@ Section 9 maps the chart onto the 12 layers. The form states the direction plain
 
 ## A minimum chart lets work continue
 
-The form defines a minimum viable chart: sections 1 to 5 and 8 to 10, with seven planets and angles placed, at least three aspects, and houses for those seven. Sections 6 and 7 can wait. A minimum viable chart passes the Step 1 gate as a yellow light. The layers it feeds carry `[ASTROLOGY_PENDING]` until the chart is `locked`.
+The form defines a minimum viable chart: sections 1 to 5 and 8 to 10. It needs seven planets and angles placed, at least three aspects, and houses for those seven. Sections 6 and 7 can wait. A minimum viable chart passes the Step 1 gate as a yellow light. The layers it feeds carry `[ASTROLOGY_PENDING]` until the chart is `locked`.
 
 This keeps the pipeline moving without pretending the chart is finished.
 
@@ -48,4 +48,4 @@ The form is small because the real rules live elsewhere. The header points to th
 
 That design means the form can stay stable while the rules around it change. A reader who wants to know why Venus sits where it does reads the DAI doc. A reader who wants to know whether a chart is finished reads section 10.
 
-A Tier 2 character does not use this form. That character gets a partial chart in a lighter record, so the form stays reserved for the characters who carry full weight.
+A Tier 2 character does not use this form. That character gets a partial chart in a lighter record. So the form stays reserved for the characters who carry full weight.

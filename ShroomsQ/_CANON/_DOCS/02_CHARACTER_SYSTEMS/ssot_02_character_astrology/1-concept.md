@@ -52,6 +52,6 @@ The chart and the 12 layers are parallel datasets, not a hierarchy. The chart su
 
 ## The long read
 
-The source works hard to keep this system from swallowing its neighbors. Three guards stand out. First, the DAI table lives in one place only, the DAI doc, so the two documents cannot disagree. Second, twelve schema fields added in later passes have no chart feed at all, and the authors set them from the authoritative document. Third, the story-level categories are written down here only "for completeness" and "to prevent scope creep into the static character record".
+The source works hard to keep this system from swallowing its neighbors. Three guards stand out. First, the DAI table lives in one place only, the DAI doc, so the two documents cannot disagree. Second, twelve schema fields added in later passes have no chart feed at all. The authors set them from the authoritative document. Third, the story-level categories are written down here only "for completeness" and "to prevent scope creep into the static character record".
 
 The pattern is consistent. The system defines its edge, names the neighbor that owns what lies beyond it, and stops. A reader who wants the translation rules goes to the DAI doc. A reader who wants the layer feeds goes to the 12-layer mapping doc. A reader who wants a blank form goes to the astrology ingest template.

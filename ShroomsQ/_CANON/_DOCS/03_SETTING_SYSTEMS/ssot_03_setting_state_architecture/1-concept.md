@@ -16,7 +16,7 @@ source_version: 1.2.0
 
 ## Places change like characters, and the story needs to know each version
 
-A campus is built, damaged, renamed, sold and rebranded. A faction's grip tightens or slips. The story must know what Delta Coast Ultra School (DCUS) is at its founding as Skeeter Creek, at the Red Hills rename, and at the Bishop acquisition. One record per place cannot hold all of those at once.
+A campus is built, damaged, renamed, sold and rebranded. A faction's grip tightens or slips. The story must know what Delta Coast Ultra School (DCUS) is at its founding as Skeeter Creek. It must also know it at the Red Hills rename and at the Bishop acquisition. One record per place cannot hold all of those at once.
 
 ## The base slice never changes, so every version stays checkable
 
@@ -44,4 +44,4 @@ The place architecture copies the character state architecture layer for layer. 
 
 ## The long read
 
-The architecture draws a line between checkpoints and story points. A checkpoint is a full state at a fabula event, and it is heavy. A story point is a single-field tick between events, and it lives in the tracking system. A fading value such as S9 glamour ticks across story points and needs no new checkpoint. The setting doc owns the lattice of names. The fabula only cross-references it. Look up fields in the [reference](2-reference.md), do the tasks in the [how-to](3-how-to.md), and learn by doing in the [tutorial](4-tutorial.md).
+The architecture draws a line between checkpoints and story points. A checkpoint is a full state at a fabula event, and it is heavy. A story point is a single-field tick between events, and it lives in the tracking system. A fading value such as S9 glamour ticks across story points and needs no new checkpoint. The setting doc owns the lattice of names. The fabula only cross-references it. Look up fields in the [reference](2-reference.md). Do the tasks in the [how-to](3-how-to.md). Learn by doing in the [tutorial](4-tutorial.md).

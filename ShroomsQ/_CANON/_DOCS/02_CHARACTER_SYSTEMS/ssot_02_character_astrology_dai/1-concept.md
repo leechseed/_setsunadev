@@ -50,6 +50,6 @@ A Tier 2 chart is a behavioral sketch: a Sun, a Moon and one defining aspect. It
 
 ## The long read
 
-The interface treats a natal chart as a second notation for a character already defined by structure. Dramatica states the argument in its own vocabulary. Astrology restates it in symbols that carry texture: where a character collapses, what mask they wear, what wall they hit. Each translation is a design decision with a stated source. Because every placement cites its origin, the chart can be audited, regenerated when the storyform changes, and fed into the layers without anyone guessing.
+The interface treats a natal chart as a second notation for a character already defined by structure. Dramatica states the argument in its own vocabulary. Astrology restates it in symbols that carry texture: where a character collapses, what mask they wear, what wall they hit. Each translation is a design decision with a stated source. Every placement cites its origin. A reviewer can audit the chart and regenerate it when the storyform changes. A writer feeds it into the layers without guessing.
 
 See also: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md) · source: [🔮ssot_02_character_astrology_dai.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_astrology_dai.md)

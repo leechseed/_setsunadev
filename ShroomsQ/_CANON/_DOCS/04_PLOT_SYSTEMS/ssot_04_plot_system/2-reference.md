@@ -23,8 +23,8 @@ Frontmatter: category `plot_system`, tier `narratology`, trunk BLACK, rung stand
 
 ## MIND MODELS
 
-- **Diagram 1.** Root: the syuzhet. Branches: Taxonomy (four axes), The Told Order, The Plot Slice (twelve P-layers, P12 from the storyform), The Plot Card (paired to the Scene Card), Library (five distills), Boundaries.
-- **Diagram 2, five sources, one engine.** A Dramatica signpost, McKee's Gap, Coyne's Five Commandments, a Truby step and a Snyder beat all feed one engine: value-in, turn, value-out.
+- **Diagram 1.** Root: the syuzhet. Branches: Taxonomy (four axes), The Told Order, The Plot Slice (twelve P-layers, P12 from the storyform). The other branches are The Plot Card (paired to the Scene Card), Library (five distills), Boundaries.
+- **Diagram 2, five sources, one engine.** All five feed one engine. The five are a Dramatica signpost, McKee's Gap, Coyne's Five Commandments, a Truby step and a Snyder beat. The engine runs value-in, turn, value-out.
 - **Diagram 3, the unit up the ladder.** Value-in, turn (driver fires), value-out, which recurs one rung up. The engine runs at R1 BEAT, R2 SCENE, R3 SEQUENCE and R4 ACT.
 
 ## PART B · THE TAXONOMY, four axes
@@ -94,12 +94,12 @@ Layer names are house coinage, ruled 2026-09-16. P12 is fed from the storyform.
 **Folded rules (2026-09-29, 77-AA).**
 
 - **P1 percentage addressing.** `address` may carry a percent-of-manuscript position beside the ladder key.
-- **P6 multi-POV stacking.** Where several heroes' beats stack under one manuscript, record each hero's seat as its own P6 line, keyed to that hero's throughline.
+- **P6 multi-POV stacking.** Several heroes' beats may stack under one manuscript. Record each hero's seat as its own P6 line, keyed to that hero's throughline.
 - **P6 told-unit-to-act map (ruled 2026-10-04).** Each story declares its own map once, in its instance file. The map may hold any count of movements. No story borrows another's map. OXO's table is parked: `⏸ OXO signpost seating (phase 2)`.
 - **P7 `reveal_quality`.** Aristotle's ranked recognitions, from a scar or token (least artful) to discovery from the actions themselves (best).
 - **P1 `paired_unit` (1.3.0).** It pairs an entry unit with its exit unit. The return is the real trial.
 - **P2 `opposition_goal` (1.3.0).** `{standing_goal, fallback_if_this_unit_fails}`, dynamic. A recurring villain keeps a goal that survives defeat. A shared failure is procedural, not one villain's plan.
-- **P7 hook test (1.3.0).** Every logged fabula event names one present consequence and one live hook, or it is cut. Chain: event, present consequence, live hook. The fabula fields are parked: `⏸ fabula placements (phase 2)`.
+- **P7 hook test (1.3.0).** Every logged fabula event names one present consequence and one live hook. The writer cuts any event that does not. Chain: event, present consequence, live hook. The fabula fields are parked: `⏸ fabula placements (phase 2)`.
 - **P7 cascade recipe (1.3.0).** Choose one rule that binds an institution. Show a near-miss. Break it through a personal-scale event. Each step is an existing `cause` or `enable` edge. The collapse has no villain.
 - **P9 repeat-turn exception.** A resurrection beat forces a second full pass, so `stakes_delta` may show a repeated peak.
 - **P9 first-unit baseline (ruled 2026-10-04).** The first unit of a sequence sets `stakes_delta: baseline`. The trend test starts at the second unit.
@@ -140,17 +140,17 @@ P1, P8, P10 and P12 are unchanged by the split.
 
 ## THE TOLD ORDER
 
-The syuzhet's own record: where a fabula event surfaces in the telling, how long the telling dwells, how often it repeats.
+The syuzhet's own record shows where a fabula event surfaces in the telling. It also shows how long the telling dwells and how often it repeats.
 
 - **Pointing at the fabula.** A unit points at one or more fabula `event_id`s and reads their `transition`.
 - **order_told versus order_happened.** `order_happened` is the fabula's `time` block. `order_told` is the unit's position in the telling.
 - **Anachrony.** Analepsis (earlier than the present position): external, internal or mixed. Internal splits into heterodiegetic and homodiegetic; paralipsis is a lateral omission. Prolepsis (later than the present position).
-- **Duration modes.** Scene (about 1:1), summary (compresses), ellipsis (told time zero), pause (told time runs, happened time holds), stretch (told time longer).
-- **Frequency modes.** Singulative (told once, happened once), repetitive (told more than once, happened once), iterative (told once, happened many times).
+- **Duration modes.** Scene (about 1:1), summary (compresses), ellipsis (told time zero). The other two are pause (told time runs, happened time holds) and stretch (told time longer).
+- **Frequency modes.** Singulative (told once, happened once), repetitive (told more than once, happened once). The third is iterative (told once, happened many times).
 - **What P11 measures (ruled 2026-10-04).** `frequency_mode` describes the telling, never the event. The event's repeat lives in the fabula `repeat` flag.
 - **Sternberg's three gap effects.** Curiosity (effect shown, cause withheld). Suspense (suspected future outcome withheld). Surprise (unforeshadowed reordering). All three are queries against the fabula, not stored fields.
 
-Template fields: `plot_unit_id`, `event_id`, `order_told`, `order_happened`, `anachrony` (`type`: none, analepsis_external, analepsis_internal, analepsis_mixed, prolepsis; `reach`; `extent`), `duration_mode`, `frequency_mode`, `gap_effect` (curiosity, suspense, surprise, none).
+Template fields: `plot_unit_id`, `event_id`, `order_told`, `order_happened`. It also has `anachrony` (`type`: none, analepsis_external, analepsis_internal, analepsis_mixed, prolepsis; `reach`; `extent`). The last fields are `duration_mode`, `frequency_mode` and `gap_effect` (curiosity, suspense, surprise, none).
 
 ## THE INSTANCE, M2 row 9 filled into the plot slice — worked example (phase 2 fills)
 
@@ -178,11 +178,11 @@ The fabula holds six Tori events: `m1b_crash_jebb_death`, `m1b_untouchable_resol
 ## PLOT × LIBRARY
 
 - **`test_phase` (1.2.0).** Greimas's test in threes: qualifying, main, glorifying (CRE.07). Fill it only where the unit's role in a test is in doubt. It sits beside Coyne's commandments. Other CRE.07 cites: P2 `driver_type`, P3, P7 `reveal_type`, P9 `stakes_delta`.
-- **Library follow-up (1.3.0).** BVX.1179 (hook test), BVX.1182 (cascade recipe), BVX.0343 (recurring villain goal), CRE.08 (paired entry and exit).
+- **Library follow-up (1.3.0).** BVX.1179 (hook test), BVX.1182 (cascade recipe), BVX.0343 (recurring villain goal). The list also holds CRE.08 (paired entry and exit).
 - **Feeds.** Dramatica BVX.0089: P1, P2, P6, P12. McKee BVX.0175: P3, P4, P5, P9. Coyne BVX.0236: P4, P9, P10. Truby BVX.0193: P4, P7. Snyder BVX.0163: P10, P11. Vogler BVX.1124: P6, P4. Brody BVX.1125: P1, P6, multi-POV. Aristotle BVX.1126: P4, P7.
 - **Templates are instances, not rivals.** Snyder's 15 beats, Truby's 22 steps and Coyne's Foolscap are pre-filled P-layer sequences. None overrides the spine's sixteen signposts.
 - **The shelf.** 162 items keyed 9/16 (BOLO 18); five distilled for the first version.
 
 ## Other sections
 
-The source also holds OPEN (fifteen calls, all closed or moved to phase 2), the 1.0 bar (one filled card per movement, M1 to M6) and a version history from 0.1.0 (2026-09-16) to 1.3.2 (2026-10-04).
+The source also holds OPEN (fifteen calls, all closed or moved to phase 2). It also holds the 1.0 bar (one filled card per movement, M1 to M6). It holds a version history from 0.1.0 (2026-09-16) to 1.3.2 (2026-10-04).

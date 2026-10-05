@@ -138,7 +138,7 @@ Components 1 and 2 pass. Component 3 passes at minimum-viable level. The slice m
 
 - L1-L11 assignments that depend on astrology data carry an `[ASTROLOGY_PENDING]` tag until the full chart is completed.
 - The Feed Validation Checklist (from the [12-layer mapping](../ssot_02_character_astrology_12_layer_mapping/2-reference.md)) cannot run until the full chart is locked.
-- The Vertical Slice structured data block is versioned `draft` until the astrology ingest reaches full status and the Feed Validation Checklist passes.
+- The Vertical Slice structured data block is versioned `draft` until the astrology ingest reaches full status. It also stays `draft` until the Feed Validation Checklist passes.
 
 ### Fail (Red Light)
 

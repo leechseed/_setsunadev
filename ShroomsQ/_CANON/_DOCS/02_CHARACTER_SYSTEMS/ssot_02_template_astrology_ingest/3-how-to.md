@@ -40,7 +40,7 @@ Field lookups: [reference](2-reference.md). Why: [concept](1-concept.md). Prereq
 
 1. Pick pairs of planets whose Dramatica elements are in tension or flow.
 2. Add one row per aspect: Planet A, Planet B, Aspect, Dramatica tension source, Gate, Note.
-3. Use Opposition for Problem and Solution, Square for Focus and Direction, Conjunction or Square for Unique Ability and Critical Flaw, Trine for reinforcing quad elements.
+3. Use Opposition for Problem and Solution, and Square for Focus and Direction. Use Conjunction or Square for Unique Ability and Critical Flaw. Use Trine for reinforcing quad elements.
 4. Write at least three rows for a minimum viable chart.
 5. If sign geometry disagrees with the Dramatica tension, follow the tension.
 
@@ -75,7 +75,7 @@ Field lookups: [reference](2-reference.md). Why: [concept](1-concept.md). Prereq
 
 ## Lock the chart
 
-1. Check the seven items in section 10: locked Dramatica reference, seven planets with derivations, three or more aspects, seven houses, the summary, the feed map, the Feed Validation Checklist.
+1. Check the seven items in section 10. They are locked Dramatica reference, seven planets with derivations and three or more aspects. They also include seven houses, the summary, the feed map and the Feed Validation Checklist.
 2. For `minimum_viable`, skip the Feed Validation Checklist. Set `template_status` to `minimum_viable`.
 3. Expect a yellow light at the Step 1 gate. Layers fed by the chart carry `[ASTROLOGY_PENDING]`.
 4. For `locked`, run the Feed Validation Checklist in the mapping doc. Pass it, or log the exceptions.

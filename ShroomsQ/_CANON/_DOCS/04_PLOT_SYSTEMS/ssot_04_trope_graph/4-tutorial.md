@@ -24,7 +24,7 @@ You will walk the MC throughline, the hero's journey from inside one skin, acros
 6. **Commit.** Choose one node at this signpost. Do not fire both. The tooltip would show `or: Refusal of the Call`.
 7. **Jump ahead? No.** Try to go straight to `vog.08_the_ordeal`. The rail forbids it. Signpost 2 must resolve first.
 8. **Reach the middle.** After signpost 2 resolves, take `vog.08_the_ordeal`. Pull dramatization from `prp.16_struggle`: `BigBadassBattleSequence` and `CataclysmClimax`.
-9. **Reach the end.** Take `vog.12_return_with_the_elixir`. Love and Descension both link heavily into it, so a walk that carried either earlier has real support for resolving it here.
+9. **Reach the end.** Take `vog.12_return_with_the_elixir`. Love and Descension both link heavily into it. So a walk that carried either earlier has real support for resolving it here.
 10. **Hand off.** Each node is a proposal. Send the Call to the fabula's event record. The fabula decides whether it becomes a dated event.
 11. **Check your work.** You walked four real signposts in order. Any-phase content rode inside the rail and replaced nothing.
 

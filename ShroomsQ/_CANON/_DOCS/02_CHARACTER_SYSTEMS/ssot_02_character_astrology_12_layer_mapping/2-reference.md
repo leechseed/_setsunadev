@@ -56,7 +56,7 @@ Feed types:
 
 ### L1 CORE ← Sun, Mercury
 
-L1 needs a numeric value (default 10, GURPS IQ-equivalent) for cognitive and psychological mass, justified by documented mental capacity and ideological framework.
+L1 needs a numeric value (default 10, GURPS IQ-equivalent) for cognitive and psychological mass. The writer justifies it by documented mental capacity and ideological framework.
 
 - Sun sign gives the identity axis. Earth: practical, methodical. Air: abstract, relational. Fire: intuitive, visionary. Water: emotional, empathic.
 - Sun dignity informs the ceiling. Domicile or exaltation: CORE at or above the tier median. Detriment or fall: capacity undermined by the sign's distortion ("intelligence running on misaligned firmware").
@@ -132,7 +132,7 @@ L7 is a stack: origin_class, origin_stability, family_coherence, origin_wound_se
 
 ### L8 IMPRINT ← Moon (Primary)
 
-L8 is a stack: attachment_style (secure, anxious, avoidant, fearful_avoidant), attachment_style_score, attachment_dimensions {anxiety, avoidance}, emotional_range, conditional_patterns, imprint_flexibility, secure_base_object (renamed from `primary_attachment_object` in 2.1.0, old name a read alias), protest_behaviors, deactivating_strategies, vandalism_event, somatic_archive, sexual_script_acquisition.
+L8 is a stack of fields. The attachment fields are attachment_style (secure, anxious, avoidant, fearful_avoidant), attachment_style_score and attachment_dimensions {anxiety, avoidance}. The other fields are emotional_range, conditional_patterns and imprint_flexibility. Next is secure_base_object (renamed from `primary_attachment_object` in 2.1.0, old name a read alias). The last fields are protest_behaviors, deactivating_strategies, vandalism_event, somatic_archive and sexual_script_acquisition.
 
 Moon sign sets the attachment baseline:
 
@@ -157,7 +157,7 @@ Feed scope:
 
 ### L9 EROS ← Venus, Mars-Venus, 5th/8th House
 
-L9 has about twenty variables: erotic_blueprint_type (with arousal_curve), desire_vector (with resolution_type), exposure_shame, role_shame (the split of `shame_index`, old name a read alias for exposure_shame), intimacy_mode, armor_index, satisfaction_cycle_truncation, erotic_safety_precondition (with scope), consent_posture, client_script, signal_fluency, disclosure_posture, template_origin, orientation_dimensions, charmed_circle_position, resonance_profile, polarity_role, love_lust_cleft. Partly authored, partly inferred. The chart feed is supplemental.
+L9 has about twenty variables. They are erotic_blueprint_type (with arousal_curve) and desire_vector (with resolution_type). Next come exposure_shame and role_shame (the split of `shame_index`, old name a read alias for exposure_shame). Then come intimacy_mode, armor_index, satisfaction_cycle_truncation and erotic_safety_precondition (with scope). The rest are consent_posture, client_script, signal_fluency, disclosure_posture, template_origin, orientation_dimensions, charmed_circle_position, resonance_profile, polarity_role and love_lust_cleft. Partly authored, partly inferred. The chart feed is supplemental.
 
 | Mars-Venus aspect | Reading |
 |---|---|
@@ -168,7 +168,7 @@ L9 has about twenty variables: erotic_blueprint_type (with arousal_curve), desir
 
 - Venus sign gives the desire quality.
 - 5th House gives creative and romantic expression. 8th House gives intimate transformation.
-- Feed scope: the chart hints at erotic_blueprint_type and desire_vector (Venus), exposure_shame and role_shame (Mars-Venus aspect), polarity_role and love_lust_cleft (check only). All other L9 variables have no feed.
+- Feed scope: the chart hints at erotic_blueprint_type and desire_vector (Venus). It hints at exposure_shame and role_shame (Mars-Venus aspect). The chart only checks polarity_role and love_lust_cleft. All other L9 variables have no feed.
 - Feed logic: L9 is the most inference-heavy layer. The chart validates authored choices and does not produce them.
 
 ### L10 SHADOW ← 12th House, Debilitated Planets, Pluto
@@ -234,7 +234,7 @@ The main doc added fields after this doc's 1.0.0. The chart justifies a layer va
 | L7 | `hereditary_predisposition` (2.1.0) | No feed. |
 | L1-L3 | `psychology_stack`, `physiology_stack`, `sociology_stack` (2.1.0) | No feed. The L1-L3 feeds justify numbers, not the Egri checklists. |
 
-Fields added in 2.2.0 to 2.4.0 (the L9 synthesis, wave 2 and wave 3 lists) follow the L9 and L8 notes above.
+Fields added in 2.2.0 to 2.4.0 follow the L9 and L8 notes above. They come from the L9 synthesis, wave 2 and wave 3 lists.
 
 ## Tier 2 Charts
 
@@ -282,7 +282,7 @@ When the chart and the layer values are inconsistent:
 
 ## Feed Validation Checklist
 
-Run it after completing both the Character Astrology Ingest Template (blank form: [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md)) and the Vertical Slice. Every item must pass or carry a documented exception.
+Run it after completing both the Character Astrology Ingest Template and the Vertical Slice. The blank form of the template is [ssot_02_template_astrology_ingest.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_template_astrology_ingest.md). Every item must pass or carry a documented exception.
 
 1. Sun sign is consistent with L1 CORE justification prose.
 2. Mars sign + dignity is consistent with L2 VITAL value and justification.

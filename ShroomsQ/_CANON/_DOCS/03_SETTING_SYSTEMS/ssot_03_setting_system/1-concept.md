@@ -16,7 +16,7 @@ source_version: 1.10.2
 
 ## Setting is pressure, and a place that pressures nothing is scenery
 
-The system's root claim is that setting is the pressure field: the total state of the world at a story address. That field presses on every unit of the ladder. In spine terms, setting is where the argument becomes matter, a Domain embodied. A backdrop does none of that work.
+The system's root claim is that setting is the pressure field. It is the total state of the world at a story address. That field presses on every unit of the ladder. In spine terms, setting is where the argument becomes matter, a Domain embodied. A backdrop does none of that work.
 
 ## A place gets the same twelve layers a character gets
 
@@ -44,4 +44,4 @@ Delta Coast Ultra School (DCUS) filled every layer from canon on the first try. 
 
 ## The long read
 
-The setting system sits at a boundary. Structure belongs to Dramatica. Psychology belongs to the character database. Events belong to the plot systems. Setting owns the field in which those three meet. The trade cannot supply what the slice asks for: a professional gazetteer fills BODY, LAW, ECONOMY, FOUNDING, HABIT and VECTOR richly. It leaves WEATHER, SENSORIUM, SCAR, ALLURE and UNDERSIDE thin, and it cannot fill FUNCTION at all. That gap is the differentiation, and it is also the cost. Details are in the [reference](2-reference.md), with tasks in the [how-to](3-how-to.md) and a lesson in the [tutorial](4-tutorial.md).
+The setting system sits at a boundary. Structure belongs to Dramatica. Psychology belongs to the character database. Events belong to the plot systems. Setting owns the field in which those three meet. The trade cannot supply what the slice asks for. A professional gazetteer fills BODY, LAW, ECONOMY, FOUNDING, HABIT and VECTOR richly. It leaves WEATHER, SENSORIUM, SCAR, ALLURE and UNDERSIDE thin, and it cannot fill FUNCTION at all. That gap is the differentiation, and it is also the cost. Details are in the [reference](2-reference.md). Tasks are in the [how-to](3-how-to.md), and a lesson is in the [tutorial](4-tutorial.md).

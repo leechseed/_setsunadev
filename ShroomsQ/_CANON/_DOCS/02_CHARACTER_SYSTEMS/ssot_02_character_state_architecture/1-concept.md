@@ -46,7 +46,7 @@ Every state points to a fabula event through `origin_event`. Five categories of 
 
 ## Relationships and synastry live outside both characters
 
-A relationship changes two characters at once. The architecture stores it in its own record, so an event to Character B never forces an edit to Character A's file. Synastry data, computed once from two static charts, lives there too.
+A relationship changes two characters at once. The architecture stores it in its own record. An event to Character B never forces an edit to Character A's file. Synastry data, computed once from two static charts, lives there too.
 
 ## Time belongs to other systems
 
@@ -54,6 +54,6 @@ This document defines state tracking. It does not define story structure or the 
 
 ## The long read
 
-The design is an audit trail for a person. Ledger accounting never erases an entry. It adds a correcting entry and keeps the first. The base record is the opening balance, and each checkpoint is a dated adjustment. The assembled character at any moment is a derived view. A reader can always trace the view back to the opening balance and the events that moved it. That traceability is what lets a writer, a game designer or an AI system read one assembled record and trust it.
+The design is an audit trail for a person. Ledger accounting never erases an entry. It adds a correcting entry and keeps the first. The base record is the opening balance, and each checkpoint is a dated adjustment. The assembled character at any moment is a derived view. A reader can always trace the view back to the opening balance and the events that moved it. That traceability lets a writer, a game designer or an AI system read one assembled record and trust it.
 
 See also: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md) · source: [🔮ssot_02_character_state_architecture.md](../../../_SSOT/02_CHARACTER_SYSTEMS/🔮ssot_02_character_state_architecture.md)
