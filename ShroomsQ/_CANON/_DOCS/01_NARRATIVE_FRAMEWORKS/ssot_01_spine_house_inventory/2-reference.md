@@ -33,7 +33,7 @@ flowchart TD
   FN --> AD["Addendum 2026-09-03, the narratology shelf"]
 ```
 
-Source: [📐 ssot_01_spine_house_inventory.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_spine_house_inventory.md). Version 1.0.1 (BOLO 100 registers batch 1 stamped `module_of: ssot_01_story_spine_comparative_tree`). BOLO 18 stage 1, agent pass 2026-08-26. Trunk: BLACK. Why: [concept](1-concept.md).
+Source: [📐 ssot_01_spine_house_inventory.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_spine_house_inventory.md). Version 1.0.2 (1.0.1: BOLO 100 registers batch 1 stamped `module_of: ssot_01_story_spine_comparative_tree`). BOLO 18 stage 1, agent pass 2026-08-26. Trunk: BLACK. Why: [concept](1-concept.md).
 
 ## L0 · Root theory
 

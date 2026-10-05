@@ -23,7 +23,7 @@ Tables and rules live in the [reference](2-reference.md).
 3. List every formula that consumes the variable.
 4. For each division by N, confirm N is in the class's "Divisible by" set. If not, change the class or the formula.
 5. If no formula depends on the variable, pick SC-12.
-6. Pick SC-20 only for a primary attribute (L1-L3).
+6. Pick SC-20 for a primary attribute (L1-L3).
 7. Add the variable to the Scale Assignment Table.
 
 ## Set the point cost of a buyable variable

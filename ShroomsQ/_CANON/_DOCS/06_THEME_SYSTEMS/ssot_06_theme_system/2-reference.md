@@ -54,6 +54,9 @@ Four parts, built in this order. Each part has what it is, how to build it, and 
 - Done-test: every scene's value turn (plot card value-in and value-out) names a step. The steps read as a ladder.
 - Add a second gauge only when one point of view runs on a different value.
 
+> **OPEN:** the source says to write the four steps "worst to best" but lists them best to worst (Freedom first, the negation of the negation last).
+
+
 **(d) The motifs.** 2 to 4 recurring images that carry a rail or a scale step.
 - Build: pick images already in the setting or character material. Tie each to one rail or step.
 - Done-test: a reader who never saw the sentence can point at the pattern. No motif floats free.
@@ -182,10 +185,10 @@ Themes argue; Touchstones hold. No scene writes past a live Touchstone. Live one
 
 | Rail | Debate | Live Touchstone | How the rail argues around it |
 |---|---|---|---|
-| R1, the world | *They already know how you'll turn out.* | TS 1:1 (soft) | Stages erotic or ritual power as uncontained, for dread. The container lives outside the book. |
+| R1, the world | *They already know how you'll turn out. Can you prove them wrong?* | TS 1:1 (soft) | Stages erotic or ritual power as uncontained, for dread. The container lives outside the book. |
 | R2, Tori | *Believe the story, or believe your eyes?* | TS 1:1 (soft) | Dramatizes a container failing her. That is the Touchstone working. |
 | R3, Anna | *Don't fight the game. Win it.* | TS 1:1 (soft) | Stages power inside a bounded rite with a clear end. |
-| R4, Tori and Anna | *Whose memory counts?* | TS 1:1 (soft) | Contests whose account of a contained scene is true. |
+| R4, Tori and Anna | *Whose memory of what happened counts?* | TS 1:1 (soft) | Contests whose account of a contained scene is true. |
 
 **The rule:** a new Touchstone gets this row check against R1 to R4 the day it goes live. No carded scene counts as bound by it before then.
 

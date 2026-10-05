@@ -14,7 +14,7 @@ source_version: 1.0.2
 
 # The three-check pass: reference
 
-Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_three_check_pass.md), version 1.0.1, trunk BLACK/ORANGE, RULED by Chief 2026-10-04 ("rec"). A module of `ssot_01_modern_poetics`. Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_three_check_pass.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_three_check_pass.md), version 1.0.2, trunk BLACK/ORANGE, RULED by Chief 2026-10-04 ("rec"). A module of `ssot_01_modern_poetics`. Why it exists: [concept](1-concept.md).
 
 **Roster (12):** Tori · Anna · DCUS · The Drop · the Sync-dive · the Star-Rating · the storyform · the scream etiquette · the Story Lattice · the Collision Engine · DARKROOM · the taxonomy engine.
 
@@ -101,4 +101,4 @@ Field: `aesthetic:`. Each row names one carrier: COLOR, SHAPE or TEXTURE (or GAP
 | DARKROOM | F11 S11 A11 | no sheet; the line lives here (⏸ OXO element sheets (phase 2)) |
 | Taxonomy engine | F12 S12 A12 | no sheet; the line lives here (⏸ OXO element sheets (phase 2)) |
 
-**Version history.** 0.1.0 (2026-08-31): sweep 1 drafted, 12 elements. 1.0.0 (2026-09-29): Chief ruled "keep all"; migrated to six sheets. 1.0.1 (2026-10-04, BOLO 100 registers batch 1): history line reworded, gaps parked by name, `module_of: ssot_01_modern_poetics` stamped.
+**Version history.** 0.1.0 (2026-08-31): sweep 1 drafted, 12 elements. 1.0.0 (2026-09-29): Chief ruled "keep all"; migrated to six sheets. 1.0.1 (2026-10-04, BOLO 100 registers batch 1): history line reworded, gaps parked by name, `module_of: ssot_01_modern_poetics` stamped. 1.0.2 (2026-10-05, BOLO 102 batch C): row numbering rule past row 12 written under NEXT.

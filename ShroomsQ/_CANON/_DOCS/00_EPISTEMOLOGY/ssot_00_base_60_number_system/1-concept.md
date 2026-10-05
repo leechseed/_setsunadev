@@ -45,7 +45,7 @@ The divisors of 60 form a lattice: a divisor sits below every divisor it divides
 
 ## Matrices and tensors give each system a shape
 
-A matrix splits 60 into rows and columns. A tensor splits it into three or more dimensions. The doc names the ones that matter. They are 3 tiers by 20 attribute units, 5 planets by 12 layers, and 12 layers by 5 variables. The last is 3 tiers by 4 throughlines by 5 variables.
+A matrix splits 60 into rows and columns. A tensor splits it into three or more dimensions. The doc names the ones that matter. They are 3 tiers by 20 attribute units, 5 planets by 12 layers, and 12 layers by 5 variables. The tensor is 3 tiers by 4 throughlines by 5 variables.
 
 ## Each variable picks one scale class
 

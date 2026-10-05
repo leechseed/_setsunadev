@@ -40,7 +40,7 @@ Terms are defined in the [reference](2-reference.md).
 2. Set the mix: the overriding genre plus supporting genres, with percentages.
 3. Check that the overriding genre clears its criteria in full.
 4. Check that each supporting genre has substantially met its own criteria.
-5. Set the delivery mode and resolution mode from the card's G5.
+5. Set the delivery mode. Take the resolution mode from the card's G5.
 6. Write the register: the sensorium promise.
 7. List the obligations owed.
 8. Bind the contract to `storyform_id`.

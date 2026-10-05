@@ -22,7 +22,7 @@ Terms are defined in the [reference](2-reference.md).
 2. Find the target medium's row in the contract table.
 3. Rebuild the Telling Profile. Re-answer the Ten Questions with that medium's machinery.
 4. Check T3 order, T4 speed and T10 narratee in the texture-by-medium table.
-5. Check each Touchstone against the medium's rules.
+5. For games, check each Touchstone against the rules.
 
 ## Re-answer focalization and duration for film
 

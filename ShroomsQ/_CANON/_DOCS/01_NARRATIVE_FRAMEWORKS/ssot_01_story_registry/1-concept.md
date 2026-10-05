@@ -33,7 +33,7 @@ flowchart TD
     S2 --> S3["Storyform drafted"]
     S3 --> S4["Active"]
   end
-  E3 --- HG["The hinge, the Deep Meridian beam"]
+  R --- HG["The hinge, the Deep Meridian beam"]
 ```
 
 ## Nothing else lists stories

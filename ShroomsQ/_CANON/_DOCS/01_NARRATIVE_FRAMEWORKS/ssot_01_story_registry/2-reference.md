@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # The story registry: reference
 
-Source: [📐 ssot_01_story_registry.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md). Version 1.0.0, ruled 2026-10-04 (Chief: "rec"; BOLO 100 registers batch 1). Applies to every story in the LEECHSEED universe. Trunk: BLACK. Dependencies: ssot_04_fabula (the world clock, the universe eras), ssot_08_tracking_system (one tracking file per story). Why: [concept](1-concept.md).
+Source: [📐 ssot_01_story_registry.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_registry.md). Version 1.0.1; 1.0.0 ruled 2026-10-04 (Chief: "rec"; BOLO 100 registers batch 1). Applies to every story in the LEECHSEED universe. Trunk: BLACK. Dependencies: ssot_04_fabula (the world clock, the universe eras), ssot_08_tracking_system (one tracking file per story). Why: [concept](1-concept.md).
 
 ## THE REGISTRY
 

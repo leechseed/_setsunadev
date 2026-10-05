@@ -35,7 +35,7 @@ flowchart TD
   R --> LT["THE LATTICE, the spine's four limbs"]
 ```
 
-Source: [📐 ssot_01_story_spine_comparative_tree.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_spine_comparative_tree.md), version 1.0.2, trunk BLACK, status canonical (ruled by Chief 2026-08-25). Why it exists: [concept](1-concept.md).
+Source: [📐 ssot_01_story_spine_comparative_tree.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_story_spine_comparative_tree.md), version 1.0.3, trunk BLACK, status canonical (ruled by Chief 2026-08-25). Why it exists: [concept](1-concept.md).
 
 **Header facts.** Dependencies: `ssot_02_dramatica_integration_protocol`, `oxo-storyform` (populated instance). Applies to: OVEREXITOUT, BVX-LEARN, all future IPs. Tier: narratology.
 
@@ -262,3 +262,4 @@ Standing doctrine (Chief, 2026-08-26): the lattice is IP-agnostic. The Outliers 
 | 1.0.0 | 2026-08-25 | Authored: comparative tree, 14 rival models, library keying proposed |
 | 1.0.1 | 2026-10-04 | BOLO 100 TOUCH BATCH 1: field renamed; constraint-layer prose uses Touchstone |
 | 1.0.2 | 2026-10-04 | BOLO 100 D3: Sources lines added to L0, L3, L4, L6, L7 |
+| 1.0.3 | 2026-10-05 | BOLO 102 batch C: procedure for adding a rival model written |

@@ -75,4 +75,4 @@ The protocol applies when YAML pasted from an external source (AI or clipboard) 
 
 The author prefixes story or project content in `_AUTHORITATIVE/` with 🎯. The author names it `🎯 auth_[ip]_[name].md`, in lowercase with underscores. Chief rules whether the existing ingests and reports that carry 📐 there move to 🎯 or keep 📐.
 
-The source also carries a closing "Pro-Tip" (use the Templater plugin to automate the kickstart). It also carries a three-row version history. The first row is 1.0.0 (initial Marine Corps standard). The next is 1.7.0 (metadata troubleshooting). The last is 1.8.0 (Manual UI Kickstart).
+The source also carries a closing "Pro-Tip" (use the Templater plugin to automate the kickstart). It also carries a five-row version history. Row one is 1.0.0 (initial Marine Corps standard). Row two is 1.7.0 (metadata troubleshooting). Row three is 1.8.0 (Manual UI Kickstart). Row four is 1.8.1 (contractions allowed, citing 07.2). Row five is 1.8.2 (the 🎯 prefix and name rule).

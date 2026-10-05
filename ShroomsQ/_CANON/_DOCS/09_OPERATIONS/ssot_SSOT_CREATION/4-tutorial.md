@@ -24,7 +24,7 @@ Ask whether the note is a methodology. It describes a repeatable method, so it i
 
 ## Step 2. Draft
 
-Write the core method and two examples. Check each sentence: no "might," no "don't," present tense. Bold the first use of each technical term.
+Write the core method and two examples. Check each sentence: no "might," present tense, contractions allowed. Bold the first use of each technical term.
 
 ## Step 3. Initialize the YAML
 

@@ -127,6 +127,8 @@ The ingest holds the complete storyform data for the character. It is extracted 
 
 Result: PASS if all applicable checks hold. FAIL if any required check does not.
 
+> **OPEN:** check 2.3 names `story_limit`, but the Dramatica ingest form renamed that field `limit_type` in version 1.0.2. The source still reads `story_limit`.
+
 ### Component 3: Character Astrology Ingest Verification
 
 The ingest holds the natal chart derived from the Dramatica Ingest by the DAI rules. It may be full or minimum-viable.

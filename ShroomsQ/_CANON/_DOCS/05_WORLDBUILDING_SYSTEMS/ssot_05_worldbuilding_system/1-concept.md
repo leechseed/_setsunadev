@@ -73,7 +73,7 @@ Scripts run the tests that can be mechanical. A person reads the rest. A stub en
 
 ## The books also warn against building too much
 
-Fifteen warnings limit the system. Kennedy's counter-voice leads them: an encyclopaedic inventory rewards the wrong thing. Felt, implied texture makes a place matter.
+Fifteen warnings limit the system. Kennedy's counter-voice is one of them: an encyclopaedic inventory rewards the wrong thing. Felt, implied texture makes a place matter.
 
 The system is thin by default. Every catalog entry starts as a stub of id, type, name and one line. A stub is a complete entry.
 

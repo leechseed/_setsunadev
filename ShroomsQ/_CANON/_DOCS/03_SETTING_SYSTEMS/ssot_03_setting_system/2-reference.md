@@ -141,6 +141,8 @@ One card per scene, one screen. Fields:
 | citation | each actor's rule, who knows better |
 | transcript | public or hidden, and what changes |
 
+> **OPEN:** the source says "Ten fields, one screen" but lists seventeen.
+
 Notes: an enclosure ends on a gate walked through; a modulation ends on a code granted or a rate moved. The SEAM_CROSSING flag fires on a crossing.
 
 ## THE SEQUENCE CARD — the R3 notation (added 2026-09-29, BOLO 90 step 7 trial)
@@ -151,7 +153,7 @@ One card per R3 sequence, ruled 2026-09-29. It sits beside the SCENE CARD. Seven
 
 One card per faction, nation or institution. A stub is legal. Fields:
 
-- **Core six (2026-09-29):** name, founding sentence, binding principle, government, economy tier, border/seam rating, one secret.
+- **Core six (2026-09-29):** founding sentence, binding principle, government, economy tier, border/seam rating, one secret. A `name` line heads the card.
 - **1.9.0 fields:** `goal` (one line); `clock` (4 to 8 ticks, one tick per state diff). It also has `quotable wound` (linked to an S5 entry), `claimed vs rewarded` and folk tier.
 - **1.10.0 fields:** `fault line` (the condition that breaks the binding principle); `drift` (dated change, tagged dynamic).
 
@@ -188,7 +190,7 @@ Truby's dystopia mechanism is a touchpoint on S12. The world offers apparent cho
 
 ## THE INSTANCE — DCUS starter slice (proof of rig) — worked example (phase 2 fills)
 
-The slice is filled from canon. - Header: `dcus`; names DCUS, the Ultra School and Red Hills Academy (legacy). The names also include Skeeter Creek (founding, buried) and Inner Spiral Academy (pre-ruling). The header also has scale site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
+The slice is filled from canon. Header: `dcus`; names DCUS, the Ultra School and Red Hills Academy (legacy). The names also include Skeeter Creek (founding, buried) and Inner Spiral Academy (pre-ruling). The header also has scale site (campus). Its parent is the Middle Bands, Delta Coast, tri-state Spiral (FL/AL/GA).
 
 | Layer | DCUS entry |
 |---|---|
@@ -211,7 +213,7 @@ The slice is filled from canon. - Header: `dcus`; names DCUS, the Ultra School a
 
 ## SETTING × LIBRARY
 
-Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. - Two rulings: the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the primary L7 genre-contract tool, with Baur's five lineages as shorthand. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
+Maps library distills to the system. Buckham 0268, 0269, 0270, 0267 and 0056 feed Axis 3 and S3. Kobold 0458 and 0541, GURPS 0447 and Collaborative Worldbuilding 0067 feed Axis 2. Kennedy 0349 is the counter-argument that worldbuilding serves pressure. Bal and Chatman feed space theory. Once Upon a Pixel 0144 feeds Afford. Two rulings follow. The first is the 42-distill synthesis ([reference](../ssot_03_setting_synthesis/2-reference.md)). The second is Ryan's nine-axis scoring (BVX.0630) as the primary L7 genre-contract tool, with Baur's five lineages as shorthand. Library passes on 2026-10-04 added the 1.9.0 and 1.10.0 citations.
 
 ## TROPES
 

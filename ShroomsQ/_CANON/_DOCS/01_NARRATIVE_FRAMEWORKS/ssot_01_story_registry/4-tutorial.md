@@ -30,7 +30,7 @@ Write `2 · DCUS`. The source says the story sits inside the universe's eras and
 
 ## Step 4: fill where and medium
 
-For where, write "Earth: the front line, Ukraine (board)". For medium, write "standard story size, like a movie almost", and note it is not short-form. Chief ruled both on 2026-09-29.
+For where, write "Earth: the front line, Ukraine (board)". For medium, write "standard story size, like a movie almost", and note it is not short-form. Chief ruled the medium on 2026-09-29.
 
 ## Step 5: set the status
 

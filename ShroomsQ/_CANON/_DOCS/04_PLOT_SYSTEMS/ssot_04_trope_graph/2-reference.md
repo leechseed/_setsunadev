@@ -102,6 +102,8 @@ The ten strongest `trope_link` pairs:
 
 `tob.14_love` is the busiest node: 94 tropes, in seven of the ten pairs.
 
+> **OPEN:** the source says Love sits in seven of the ten pairs, but its own table shows six.
+
 ## THE RAILS
 
 Quoted from PS-R.rails.md. Four throughlines, each with 4 signposts and 3 journeys in a fixed 4-act order. 16 signposts across the form.
@@ -185,6 +187,8 @@ M2 row 9 re-seats to MC signpost 1, The Past. Per-node seating beyond this map i
 | TV Tropes (fetch.py) | 1,678 trope names, one-line definitions and the raw link graph. | external index, names and one-line defs only |
 | PS-R.rails.md | The signpost order, OXO's eight dynamics, the twelve P-layers, six blocking gaps. | quotes the spine, the Dramatica protocol and the plot doc |
 | HOI4-FOCUS-TREE-STUDY.md §6 | The H-rules for the workspace view. | internal study |
+
+> **OPEN:** the source body still says Propp has no BVX id, while its OPEN call 5 mints BVX.1136.
 
 ## Other sections
 

@@ -50,6 +50,6 @@ The keying infrastructure is unmapped by design. It is the instrument that does 
 
 ## The long read
 
-The inventory marks cross-level payload because the spine is a tree. A single file such as the texture layer serves L0, L4 and L7 at once. The inventory also names what the Command lacks. The Movement-to-Signpost table, the pre-reserved empty folders and the thin Quinn Bishop file all show where the house stopped short. The domain numbering collision was ruled 2026-09-16: plot is `04_PLOT_SYSTEMS/` and style guides are `06_`.
+The inventory marks cross-level payload because the spine is a tree. A single file such as the texture layer serves L0, L4 and L7 at once. The inventory also names what the Command lacks. The pre-reserved empty folders and the thin Quinn Bishop file both show where the house stopped short. The domain numbering collision was ruled 2026-09-16: plot is `04_PLOT_SYSTEMS/` and style guides are `06_`.
 
 For the level-by-level holdings, see the [reference](2-reference.md).

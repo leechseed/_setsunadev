@@ -47,7 +47,7 @@ The source gives only some core values for Victoria. Write the two it gives.
 - `resolve`: `Change`
 - `dramatica_archetype`: `Protagonist`
 
-> **OPEN:** the source gives no Victoria values for `mc_problem_element`, `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement` or `limit_type`. Fill them from her locked ingest.
+> **OPEN:** the source gives no Victoria values for `methodology_element`, `evaluation_element`, `purpose_element`, `touchstone`, `story_outcome`, `story_judgement` or `limit_type`. The MC Problem in the sub-table is `Equity`. Fill the rest from her locked ingest.
 
 ## Step 4: Fill the extended sub-table
 

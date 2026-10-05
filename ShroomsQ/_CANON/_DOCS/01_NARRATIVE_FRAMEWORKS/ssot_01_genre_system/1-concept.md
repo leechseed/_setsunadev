@@ -33,7 +33,7 @@ flowchart TD
 
 ## A genre is a promise made to a reader
 
-The genre system treats genre as the contract between a work and its public. The contract names the label a work is sold under and the family it belongs to. It also names the conventions the work owes the reader. The reader holds the work to that promise before the first scene is drafted.
+The genre system treats genre as the contract between a work and its public. The contract names the label a work is sold under and the family it belongs to. It also names the conventions the work owes the reader. The genre builds the reader's model of that promise before a scene is drafted.
 
 ## The contract reading is one tradition of three
 

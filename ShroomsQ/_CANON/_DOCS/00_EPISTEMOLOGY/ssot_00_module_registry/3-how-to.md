@@ -44,7 +44,7 @@ Entries live in the [reference](2-reference.md).
 1. Find where each old variable now lives in the slice.
 2. Write a table of old variable and where it went.
 3. Mark any variable the slice lacks as dropped.
-4. Set the status to `absorbed` and the variable count to 0, with the old count in brackets.
+4. Set the status to `absorbed` and the variable count to 0, with the old count in parentheses.
 5. Update the dependency map and any module that read the absorbed one.
 
 ## Audit the planned modules

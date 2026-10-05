@@ -14,7 +14,7 @@ source_version: 1.0.1
 
 # L9 EROS synthesis: reference
 
-Why it exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked trace: [tutorial](4-tutorial.md). Source: [ssot_02_l9_eros_synthesis.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_l9_eros_synthesis.md), version 1.0.0, RULED, BOLO 100 C20. Trunk: BLACK. Applies to OVEREXITOUT. Dependencies: the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) and `victoria-midnight-L9-eros.md`.
+Why it exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked trace: [tutorial](4-tutorial.md). Source: [ssot_02_l9_eros_synthesis.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_l9_eros_synthesis.md), version 1.0.1, RULED, BOLO 100 C20. Trunk: BLACK. Applies to OVEREXITOUT. Dependencies: the [vertical slice](../ssot_02_character_systems_vertical_slice/2-reference.md) and `victoria-midnight-L9-eros.md`.
 
 The shelf: MSX.18 to MSX.36 and PSY.08 to PSY.13, 25 sources. Status: all ten changes RULED 2026-09-29 (Chief: "Rex") and APPLIED in the vertical slice at version 2.2.0.
 
@@ -72,7 +72,7 @@ Columns in the source: ID, Title, What it says L9 should hold, Field fed or gap 
 | MSX.26 | Pornographic Art, Maes (2013) | Gap: craft-facing pacing/register field |
 | MSX.27 | Routledge Handbook of Sex Industry Research | Confirms `client_script`, `digital_self_presentation` |
 | MSX.28 | Sex Pigs, PLWHA NSW (2007) | Gap: `disclosure_practice` / `disclosure_posture` |
-| MSX.29 | Cruising Guide, Thorne Harbour Health (2018) | Confirms `signal_fluency` / `cruising_signal_literacy` |
+| MSX.29 | Cruising Guide, Thorne Harbour Health (2018) | Confirms `signal_language` / `cruising_signal_literacy` |
 | MSX.30 | Urban Tantra, Carrellas (2017) | Gap: mechanism field for desire-as-current |
 | MSX.31 | Porn: An Oral History, Barton (2023) | `desire_vector` authored from specifics; `intimacy_mode` self-time register |
 | MSX.32 | Art of Sexual Ecstasy, Anand (1989) | Gap: `polarity_role` |

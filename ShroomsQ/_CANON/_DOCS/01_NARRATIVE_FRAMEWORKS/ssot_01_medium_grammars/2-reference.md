@@ -14,7 +14,7 @@ source_version: 1.2.2
 
 # The medium grammars: reference
 
-Source: [📐 ssot_01_medium_grammars.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_medium_grammars.md). Version 1.2.1 (1.2.0 added the texture table; 1.1.0 added mode). Trunk: BLACK; ORANGE rows carry craft grammar only. Why: [concept](1-concept.md).
+Source: [📐 ssot_01_medium_grammars.md](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_medium_grammars.md). Version 1.2.2 (1.2.0 added the texture table; 1.1.0 added mode). Trunk: BLACK; ORANGE rows carry craft grammar only. Why: [concept](1-concept.md).
 
 ## THE CONTRACT TABLE — ten mediums at a glance
 

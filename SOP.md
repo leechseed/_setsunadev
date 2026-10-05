@@ -216,6 +216,8 @@ A session that answers "sit rep" without all five has not answered it. **Under t
 
 20. **The error line beside the step.** In a procedure, an "if you see X, do Y" line sits next to the step that can go wrong. (TEC.05 ch. 2, p. 35: errors found 33% faster, 73% more fixed.)
 
+21. **The model call.** When a tasking matches a row of the MODEL SWITCH table (§5), the readback names the model and gives the `/model` line in its own code block, and the spoken line says it out loud ("this one's a Fable job, switch me"). The call goes the other way too: when a Fable session's design work ends, the reply says to switch back to Opus. Claude makes the call before the work starts, never after. (Chief, 10/5: "I want you to be able to say that to me, JUDY, if we're starting to work on something that we should do this, which models to recommend.")
+
 ---
 
 ## 8 · Dictation codebook — standing garble table

@@ -17,7 +17,7 @@ source_version: 1.0.0
 You will fold one real distill into the register. The example is BVX.1190, the source of the verb-tense test. Change 2 in Part Three came from it.
 
 1. **Read the feeds block.** BVX.1190 feeds S7 FOUNDING. Write down "S7".
-2. **Find the register line.** Open Part One of the [reference](2-reference.md). Read the S7 entry. It names BVX.1190 for a grammar rule: a car racing now versus a car that had already raced.
+2. **Find the register line.** Open Part One of the [reference](2-reference.md). Read the S7 entry. The source credits BVX.1190 with a grammar rule: a car racing now versus a car that had already raced.
 3. **Find the method.** Open Part Two, method 1. It says the writer finds the past only where it bites now. BVX.1190 mechanizes that as a verb-tense test.
 4. **Find the change.** Open Part Three, row 2. The change adds one line to S7: a checkable present-tense-bite test.
 5. **Read the ruling.** Row 2 says Chief ruled it on 2026-09-29 and the system applied it in v1.3.0.

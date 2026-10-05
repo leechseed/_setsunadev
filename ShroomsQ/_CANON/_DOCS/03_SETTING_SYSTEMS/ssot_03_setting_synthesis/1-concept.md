@@ -54,4 +54,4 @@ Part Four lists eight DCUS application items. Items 1, 4 and 7 are done. The res
 
 ## The long read
 
-The wave shows a pattern the older notes only hinted at. A setting survives play when each layer costs the writer something. Dread costs a resource. Honor is a score. History appears only when a scene needs it. The five contradictions in Part Five all resolve the same way. The writer picks a direction, commits, and keeps the center dense and the edges vague. See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md).
+The wave shows a pattern the older notes only hinted at. A setting survives play when each layer costs the writer something. Dread costs a resource. Honor is a score. History appears only when a scene needs it. The five contradictions in Part Five each end in a lean. Most lean toward committing to one direction and keeping layers thin. See the [reference](2-reference.md), the [how-to](3-how-to.md) and the [tutorial](4-tutorial.md).

@@ -44,11 +44,11 @@ This is the transmedia principle from McErlean (0126). The IP sits at R7 of the 
 
 ## Agency changes the author
 
-Four media have no audience agency. Games give the player co-authorship. A TTRPG gives the table collective authorship. Short-form gives only the swipe, and the retention economy turns that swipe into a verdict on every second. Where agency rises, the author's control of discourse falls, and the grammar must say so.
+Six media have no audience agency. Games give the player co-authorship. A TTRPG gives the table collective authorship. Short-form gives only the swipe, and the retention economy turns that swipe into a verdict on every second. In games the contract inverts: the player co-authors.
 
 ## The medium picks which texture answers change
 
-Three texture answers move most per channel: T3 order, T4 speed and T10 narratee. The grammars restate them medium by medium. Film turns focalization into shot selection and duration into editing. Prose keeps both elastic. A game collapses the narratee into the player.
+Three texture answers move most per channel: T3 order, T4 speed and T10 narratee. The grammars restate them medium by medium. Film turns focalization into shot selection and duration into editing. Prose keeps interiority native and duration elastic. A game collapses the narratee into the player.
 
 ## Mode is a fence, not a layer
 

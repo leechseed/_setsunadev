@@ -64,7 +64,7 @@ T12: the MC throughline, `storyform_id: oxo_primary_v1`, discharging DCUS's S12 
 
 ## Step 7: finish with the gap line
 
-Add `t1_t2_gap: none`. Check it against Step 2: the narrator sees through Tori and speaks from outside, and the two readings agree.
+Add `t1_t2_gap: none` as a practice value. The source gives no OXO value for it. Check it against Step 2: the narrator sees through Tori and speaks from outside, and the two readings agree.
 
 ## What you did
 

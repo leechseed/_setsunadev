@@ -14,7 +14,7 @@ source_version: 3.3.4
 
 # Character system (LEECHSEED vertical slice): reference
 
-Why the system exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked slice: [tutorial](4-tutorial.md). Source: [ssot_02_character_systems_vertical_slice.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), version 3.3.3, RULED 2026-10-04. Trunk: BLACK. Applies to OVEREXITOUT, ASTRO7EX, LAKAD. Tier: fabula and narratology.
+Why the system exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked slice: [tutorial](4-tutorial.md). Source: [ssot_02_character_systems_vertical_slice.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md), version 3.3.4, RULED 2026-10-04. Trunk: BLACK. Applies to OVEREXITOUT, ASTRO7EX, LAKAD. Tier: fabula and narratology.
 
 The system is the LEECHSEED Character System promoted to a system. It has three tiers, twelve layers, seven derived statistics, flag trigger conditions and one machine-readable structured data block. It sits beside 03 (setting) and 04 (plot).
 

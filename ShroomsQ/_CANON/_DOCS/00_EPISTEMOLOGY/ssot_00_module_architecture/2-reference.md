@@ -56,6 +56,8 @@ A module has:
 
 A module does not add layers, modify core variables, override core derived stats or flags, or require other modules.
 
+> **OPEN:** the source says a module requires no other module, yet Cross-Module Dependencies lets one module depend on another.
+
 ### Field Modules and Doc Modules
 
 - **Field module:** a Layer-Locked Module. Variables attach beneath a layer under `MOD.<ID>`. This doc and the Module Registry govern it.
@@ -174,6 +176,8 @@ Five stages.
 1. The author writes the module declaration and variable declarations.
 2. The module is registered in the Layer-Locked Module Registry.
 3. Variables are added to the Variable Registry under `MOD.[CODE].*`.
+
+> **OPEN:** the source still calls the registry "next deliverable" in Creation step 2, though its version 1.0.1 note says the registry pointer replaced that phrase.
 
 ### Activation
 

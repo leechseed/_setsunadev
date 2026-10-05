@@ -14,7 +14,7 @@ source_version: 2.0.2
 
 # Bold Venture Design System: reference
 
-The source has type `ssot_00_foundations`, category design_system, version 2.0.1, tier operations, trunk ORANGE, last updated 2026-10-04. It applies to BOLD_VENTURE. Status: canonical. Source system: Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force). Compliance: MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA. Dependencies: none.
+The source has type `ssot_00_foundations`, category design_system, version 2.0.2, tier operations, trunk ORANGE, last updated 2026-10-05. It applies to BOLD_VENTURE. Status: canonical. Source system: Astro UXDS v7 (Rocket Communications Inc. / U.S. Space Force). Compliance: MIL-STD-1472H, MIL-STD-2525D, WCAG 2.1 AA. Dependencies: none.
 
 The purpose line calls it a Command-wide base tool, not part of the storytelling stack. It calls it the mandatory visual and interaction standard for all Bold Venture digital output. The system adapts Astro UXDS v7 wholesale, with Bold Venture naming.
 

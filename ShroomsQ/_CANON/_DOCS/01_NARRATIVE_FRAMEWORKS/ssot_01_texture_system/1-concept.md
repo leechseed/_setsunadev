@@ -72,6 +72,6 @@ The system does not need an example to work. The Outliers has no prose. Its prof
 
 The system gives a writer a precise answer to a question craft books answer by feel. The question: why does this scene sound the way it does? The answer is a set of fields. T1 says who speaks. T2 says whose view the reader gets and what the reader is denied. T6 says how close the words sit.
 
-A writer who fills these fields can audit a scene. The `t1_t2_gap` flag catches a narrator who knows more than the character. The barrier-word count catches a deep-point-of-view passage that drifts. The mood-curve entry names the payoff the scene owes. None of these checks decides what the story should say. They decide how it is told.
+A writer who fills these fields can audit a scene. The `t1_t2_gap` flag catches a gap between who speaks and who sees. The barrier-word count catches a deep-point-of-view passage that drifts. The mood-curve entry names the payoff the scene owes. None of these checks decides what the story should say. They decide how it is told.
 
 The twelfth layer closes the loop. T12 FUNCTION ties the telling to the storyform. A telling with T12 empty is only style, an author's habitual voice. A telling with T12 filled is an instrument of the argument.

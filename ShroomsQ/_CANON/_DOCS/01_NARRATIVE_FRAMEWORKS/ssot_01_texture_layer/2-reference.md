@@ -51,7 +51,7 @@ Every telling is a configuration of ten answers.
 
 | Value | Meaning | Signature |
 |---|---|---|
-| Singulative | tell once what happened once | default |
+| Singulative | tell once what happened once | none named |
 | Repetitive | tell n times what happened once | trauma |
 | Iterative | tell once what happened n times | habit; the S8 HABIT layer renders iteratively |
 

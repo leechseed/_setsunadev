@@ -60,6 +60,6 @@ Derived statistics and flags read named variables. Some variables hold constrain
 
 ## The long read
 
-The registry grew in layers. Version 1.0.0 held 50-plus layer variables, six derived statistics, five flags, 25-plus astrology variables, state-diff fields and metadata. Version 1.1.0 added four fields from the L9 propagation. Version 1.2.0 folded in 94 slice fields, each with a tag, scale class, source and consumer. Version 1.2.1 renamed `narrative_invariant` to `touchstone` and kept one alias row. Some fields have read aliases, such as `primary_attachment_object` for `secure_base_object`. An alias gives an old name a way to stay readable while the canonical name moves. See the [reference](2-reference.md) for every entry.
+The registry grew in layers. Version 1.0.0 held 50-plus layer variables, six derived statistics, five flags, 25-plus astrology variables, state-diff fields and metadata. Version 1.1.0 added four entries from the L9 propagation. Version 1.2.0 folded in 94 slice fields, each with a tag, scale class, source and consumer. Version 1.2.1 renamed `narrative_invariant` to `touchstone` and kept one alias row. Some fields have read aliases, such as `primary_attachment_object` for `secure_base_object`. An alias gives an old name a way to stay readable while the canonical name moves. See the [reference](2-reference.md) for every entry.
 
 Related pages: [reference](2-reference.md) · [how-to](3-how-to.md) · [tutorial](4-tutorial.md)

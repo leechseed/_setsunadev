@@ -540,6 +540,8 @@ All derived stats compute in internal (0-60) space per the Base 60 SSOT. Source 
 
 `DRV.truth_exposure_index`. Internal formula `(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`. Display formula `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)`. Slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC."). No constraints. Output internal, uncapped, may exceed 60. A value over 60 means the character's legibility exceeds the system's containment threshold.
 
+> **OPEN:** the source gives the internal formula with `12 - shame_index` and the display formula with `10 - shame_index`. It does not say why the two differ.
+
 ### DRV.expressiverange
 
 `DRV.expressive_range`. Display formula `12 - T3.EROS.armor_index`, 0 to 12. Slice 3.3.2 ruled the constant (Chief, 10/4: "Rick"). The internal mapping follows `armor_index` at SC-12. It measures what the character can send on purpose. `truth_exposure_index` measures what leaks.

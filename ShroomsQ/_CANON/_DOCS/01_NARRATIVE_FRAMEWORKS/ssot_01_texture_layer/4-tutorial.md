@@ -40,7 +40,7 @@ Write the first line:
 scope:        OXO.primary
 ```
 
-The source holds a proposed T1 for OXO: heterodiegetic, subsequent narration. These values appear in the [texture system](../ssot_01_texture_system/4-tutorial.md) as proposals only. Chief has not ruled them.
+The texture system holds a proposed T1 for OXO: heterodiegetic, subsequent narration. The [texture system](../ssot_01_texture_system/4-tutorial.md) gives these values as proposals only. Chief has not ruled them.
 
 ## Step 4: stop at the gap
 

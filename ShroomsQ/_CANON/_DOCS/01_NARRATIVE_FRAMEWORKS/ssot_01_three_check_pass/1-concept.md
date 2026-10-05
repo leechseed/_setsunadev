@@ -49,7 +49,7 @@ The Fantasy Drive asks what the audience gets to be, feel or do through the elem
 
 ## A NO is a correct answer
 
-The Sexy Check does not push every element toward heat. Four elements answered NO and the pass marked them correct or acceptable. The Drop is dread in a comic register, so heat would blunt the horror. The storyform is chassis, not skin. It protects the heat. The tool elements stay clinical so their output can burn.
+The Sexy Check does not push every element toward heat. Five elements answered NO and the pass marked them correct or acceptable. The Drop is dread in a comic register, so heat would blunt the horror. The storyform is chassis, not skin. It protects the heat. The tool elements stay clinical so their output can burn.
 
 ## A GAP is a finding
 

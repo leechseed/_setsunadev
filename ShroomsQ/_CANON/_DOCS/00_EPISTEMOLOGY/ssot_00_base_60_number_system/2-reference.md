@@ -36,7 +36,7 @@ flowchart TD
   V --> DR["Design Rules for Future Variables"]
 ```
 
-Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.3, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-04. Why it exists: see the [concept](1-concept.md).
+Source: `ShroomsQ/_CANON/_SSOT/00_EPISTEMOLOGY/📐 ssot_00_base_60_number_system.md`, version 1.0.3, status canonical. The source sits on trunk BLACK at tier foundation and has no dependencies. It supersedes ranges in `ssot_02_character_systems_vertical_slice`. Last updated 2026-10-05. Why it exists: see the [concept](1-concept.md).
 
 Notation: SC-N is a scale class with N+1 valid values (0 through N), where N divides 60. Internal means the 0-60 space. `internal = display × step`; `display = internal / step`.
 
@@ -187,7 +187,7 @@ Assigns every numeric variable to a scale class. It replaces all earlier implici
 
 ### Tier 3: Sub-Variables (All Layers)
 
-All sub-variables move from the old 0-10 range to SC-12 (0–12). The categories are attachment scores, emotional range, flexibility, stability, density and tendency. They also include index scores (shame, desire), armor index (L9), resistance index, origin seeds, coherence scores and tech level. The armor index was assigned 2026-10-04 by Selection Rules 1 to 4. Its one formula, `10 - armor_index`, subtracts and never divides, so Rule 3 holds.
+All sub-variables move from the old 0-10 range to SC-12 (0–12). The categories are attachment scores, emotional range, flexibility, stability, density and tendency. They also include index scores (shame, desire), armor index (L9), resistance index, origin seeds, coherence scores and tech level. The armor index was assigned 2026-10-04 by Selection Rules 1 to 4. Its one formula, `12 - armor_index`, subtracts and never divides, so Rule 3 holds.
 
 ### Dualism Charges (Layer-Locked Module)
 
