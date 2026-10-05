@@ -45,6 +45,7 @@ SYSTEM_NAMES = {
     "00": "Base", "01": "Narrative frameworks", "02": "Character", "03": "Setting", "04": "Plot",
     "05": "Worldbuilding", "06": "Theme", "07": "Style", "08": "Tracking", "09": "Operations",
 }
+TYPE_LABEL = {"concept": "Concept", "reference": "Reference", "how-to": "How-to", "tutorial": "Tutorial"}
 SYSTEM_ORDER = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09"]   # the numbers ARE the reading order (BOLO 103, 10/5)
 
 
@@ -196,7 +197,7 @@ def gather():
         group["docs"].append(d)
 
     landing = os.path.join(HERE, "landing.md")
-    start = {"name": "Start here", "key": "start", "docs": [], "open": True}
+    start = {"name": "Start here", "key": "start", "docs": [], "open": True, "top": "start", "toptitle": "Start here"}
     groups.append(start)
     if os.path.exists(landing):
         add(start, landing, "concept")
@@ -208,23 +209,31 @@ def gather():
 
     for nn in SYSTEM_ORDER:
         base = folders[nn]
-        g = {"name": f"{nn} · {SYSTEM_NAMES[nn]}", "key": nn, "docs": [], "open": False}
+        top = {"top": nn, "toptitle": f"{nn} · {SYSTEM_NAMES[nn]}"}
+        dsys = os.path.join(DOCS, os.path.basename(base))
+        if os.path.isdir(dsys):
+            cg = {"name": "The docs", "key": f"{nn}-docs", "docs": [], "open": False, "core": True, "bydoc": [], **top}
+            groups.append(cg)
+            for stem_dir in sorted(os.listdir(dsys), key=str.lower):
+                sd = os.path.join(dsys, stem_dir)
+                if not os.path.isdir(sd):
+                    continue
+                n0 = len(cg["docs"])
+                for f in sorted(x for x in os.listdir(sd) if x.lower().endswith(".md")):
+                    fm, _ = split_front(read(os.path.join(sd, f)))
+                    add(cg, os.path.join(sd, f), str((fm or {}).get("type") or "reference"))
+                pages = cg["docs"][n0:]
+                for d in pages:
+                    d["navlabel"] = TYPE_LABEL.get(d["kind"], d["kind"])
+                if pages:
+                    label = re.sub(r"\s*:\s*(concept|reference|how-to|tutorial)\s*$", "", pages[0]["title"], flags=re.I)
+                    cg["bydoc"].append((label, pages))
+        g = {"name": "Source docs", "key": nn, "docs": [], "open": False, **top}
         groups.append(g)
         for f in sorted(os.listdir(base), key=str.lower):
             p = os.path.join(base, f)
             if f.lower().endswith(".md") and os.path.isfile(p) and os.path.abspath(p) != os.path.abspath(ts):
                 add(g, p, "reference")
-        dsys = os.path.join(DOCS, os.path.basename(base))
-        if os.path.isdir(dsys):
-            cg = {"name": f"{nn} · {SYSTEM_NAMES[nn]} · the docs", "key": f"{nn}-docs", "docs": [], "open": False,
-                  "core": True}
-            groups.append(cg)
-            for stem_dir in sorted(os.listdir(dsys), key=str.lower):
-                sd = os.path.join(dsys, stem_dir)
-                if os.path.isdir(sd):
-                    for f in sorted(x for x in os.listdir(sd) if x.lower().endswith(".md")):
-                        fm, _ = split_front(read(os.path.join(sd, f)))
-                        add(cg, os.path.join(sd, f), str((fm or {}).get("type") or "reference"))
         for dp, dns, fns in sorted(os.walk(base)):
             dns.sort(key=str.lower)
             if dp == base or "_ARCHIVE" in dp:
@@ -233,7 +242,7 @@ def gather():
             if not mds:
                 continue
             sub = os.path.relpath(dp, base).replace("\\", " / ")
-            sg = {"name": f"{nn} shelf · {sub}", "key": f"{nn}-shelf", "docs": [], "open": False, "shelf": True}
+            sg = {"name": f"Shelf · {sub}", "key": f"{nn}-shelf", "docs": [], "open": False, "shelf": True, **top}
             groups.append(sg)
             for f in mds:
                 add(sg, os.path.join(dp, f), "reference")
@@ -241,7 +250,8 @@ def gather():
     for dp, dns, fns in sorted(os.walk(AUTH)):
         mds = sorted(f for f in fns if f.lower().endswith(".md"))
         if mds:
-            g = {"name": "Stories · " + os.path.relpath(dp, AUTH).replace("\\", " / "), "key": "story", "docs": [], "open": False}
+            g = {"name": os.path.relpath(dp, AUTH).replace("\\", " / "), "key": "story", "docs": [], "open": False,
+                 "top": "stories", "toptitle": "Stories"}
             groups.append(g)
             for f in mds:
                 add(g, os.path.join(dp, f), "reference")
@@ -254,12 +264,12 @@ def gather():
     big = {k: v for k, v in buckets.items() if len(v) >= 3}
     misc = sorted(f for k, v in buckets.items() if len(v) < 3 for f in v)
     for k in sorted(big):
-        g = {"name": f"Stories · canon nodes · {k}", "key": "story", "docs": [], "open": False}
+        g = {"name": f"Canon nodes · {k}", "key": "story", "docs": [], "open": False, "top": "stories", "toptitle": "Stories"}
         groups.append(g)
         for f in big[k]:
             add(g, os.path.join(NODES, f), "reference")
     if misc:
-        g = {"name": "Stories · canon nodes · other", "key": "story", "docs": [], "open": False}
+        g = {"name": "Canon nodes · other", "key": "story", "docs": [], "open": False, "top": "stories", "toptitle": "Stories"}
         groups.append(g)
         for f in misc:
             add(g, os.path.join(NODES, f), "reference")
@@ -332,16 +342,34 @@ def main():
                     f'<footer class="df"><button type="button" class="mark" data-mark="{d["id"]}">Mark read</button>'
                     f'<span class="nx"></span></footer></article>')
 
-    nav = []
+    def item(d):
+        return (f'<a class="ni" href="#{d["id"]}" data-id="{d["id"]}"><b class="dot"></b>'
+                f'<span>{html.escape(d.get("navlabel") or d["title"])}</span>'
+                f'<em>{html.escape(str(d["fm"].get("version") or ""))}</em></a>')
+
+    def sub(g):
+        if g.get("bydoc"):   # the docs: one row per doc, its four pages inside
+            body = "".join(f'<details class="grp doc"><summary><span>{html.escape(lbl)}</span><small>{len(ps)}</small></summary>'
+                           f'{"".join(item(d) for d in ps)}</details>' for lbl, ps in g["bydoc"])
+        else:
+            body = "".join(item(d) for d in g["docs"])
+        cls = "grp sub" + (" shelf" if g.get("shelf") else "")
+        return (f'<details class="{cls}" data-key="{g["key"]}"><summary><span>{html.escape(g["name"])}</span>'
+                f'<small>{len(g["docs"])}</small></summary>{body}</details>')
+
+    nav, tops = [], {}
     for g in groups:
-        if not g["docs"]:
+        if g["docs"]:
+            tops.setdefault(g["top"], []).append(g)
+    for key, gs in tops.items():
+        if key == "start":
+            g = gs[0]
+            nav.append(f'<details class="grp sys" data-key="start" open><summary><span>{html.escape(g["name"])}</span>'
+                       f'<small>{len(g["docs"])}</small></summary>{"".join(item(d) for d in g["docs"])}</details>')
             continue
-        items = "".join(
-            f'<a class="ni" href="#{d["id"]}" data-id="{d["id"]}"><b class="dot"></b><span>{html.escape(d["title"])}</span>'
-            f'<em>{html.escape(str(d["fm"].get("version") or ""))}</em></a>' for d in g["docs"])
-        cls = "grp shelf" if g.get("shelf") else "grp"
-        nav.append(f'<details class="{cls}" data-key="{g["key"]}"{" open" if g["open"] else ""}>'
-                   f'<summary><span>{html.escape(g["name"])}</span><small>{len(g["docs"])}</small></summary>{items}</details>')
+        n = sum(len(g["docs"]) for g in gs)
+        nav.append(f'<details class="sys" data-key="{key}"><summary><span>{html.escape(gs[0]["toptitle"])}</span>'
+                   f'<small>{n}</small></summary>{"".join(sub(g) for g in gs)}</details>')
 
     used_terms = set(re.findall(r'data-t="([^"]+)"', "".join(arts)))
     G = {k: TERMS[k] for k in used_terms if k in TERMS}
@@ -415,7 +443,19 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .grp[open] summary::before { content: "▾"; }
 .grp summary span { flex: 1; min-width: 0; }
 .grp summary small { font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-weight: 400; }
-.grp.shelf summary { font-size: 13.5px; color: var(--ink-2); padding-left: 24px; }
+.sys { border-top: 1px solid var(--line); }
+.sys > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 8px; padding: 9px 14px 7px; font-family: var(--display); font-weight: 700; font-size: 15.5px; letter-spacing: .02em; }
+.sys > summary::-webkit-details-marker { display: none; }
+.sys > summary::before { content: "\25B8"; color: var(--ink-3); font-size: 11px; width: 10px; }
+.sys[open] > summary::before { content: "\25BE"; }
+.sys > summary span { flex: 1; min-width: 0; }
+.sys > summary small { font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-weight: 400; }
+.grp.sub, .grp.doc { border-top: 0; }
+.grp.sub > summary { font-size: 13.5px; color: var(--ink-2); padding: 6px 14px 5px 26px; }
+.grp.sub[open] > summary::before, .grp.doc[open] > summary::before { content: "\25BE"; }
+.grp.doc > summary { font-family: inherit; font-weight: 400; font-size: 13px; color: var(--ink-2); padding: 4px 14px 4px 38px; letter-spacing: 0; }
+.grp.sub .ni { padding-left: 40px; }
+.grp.doc .ni { padding-left: 52px; }
 .ni { display: grid; grid-template-columns: 10px minmax(0, 1fr) auto; gap: 8px; align-items: baseline; padding: 4px 14px 4px 26px; text-decoration: none; color: var(--ink-2); font-size: 14px; line-height: 1.35; }
 .ni:hover { background: var(--panel-2); color: var(--ink); }
 .ni.cur { background: var(--accent-soft); color: var(--ink); box-shadow: inset 3px 0 0 var(--accent); }
@@ -549,7 +589,7 @@ function show(id, anchor) {
   const art = $('#' + CSS.escape(id)); art.hidden = false; cur = id;
   $$('.ni.cur').forEach(a => a.classList.remove('cur'));
   const ni = $(`.ni[data-id="${CSS.escape(id)}"]`);
-  if (ni) { ni.classList.add('cur'); const g = ni.closest('details'); if (g) g.open = true; ni.scrollIntoView({ block: 'nearest' }); }
+  if (ni) { ni.classList.add('cur'); let g = ni.closest('details'); while (g) { g.open = true; g = g.parentElement.closest('details'); } ni.scrollIntoView({ block: 'nearest' }); }
   $('#toc').innerHTML = (TOC[id] || []).map(([l, t, h]) => `<a class="l${l}" href="#" data-h="${esc(h)}">${esc(t)}</a>`).join('') || '<span style="color:var(--ink-3)">No sections.</span>';
   const i = ORDER.indexOf(id), nx = ORDER[i + 1];
   $('.nx', art).innerHTML = nx ? `Next: <a href="#${nx}">${esc($('#' + CSS.escape(nx) + ' h1').textContent)}</a>` : 'Last page.';
@@ -576,10 +616,11 @@ function filter() {
     const shelfHide = g.classList.contains('shelf') && $('#fShelf').getAttribute('aria-pressed') === 'true';
     g.hidden = !any || shelfHide; if (q && any) g.open = true;
   });
+  $$('.sys:not(.grp)').forEach(s => { s.hidden = false; const vis = $$('.ni', s).some(a => !a.closest('[hidden]')); s.hidden = !vis; if (q && vis) s.open = true; });
 }
 $('#q').addEventListener('input', filter);
 ['fUnread', 'fShelf'].forEach(id => $('#' + id).addEventListener('click', e => { const b = e.currentTarget; b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); filter(); }));
-$('#fOpen').addEventListener('click', () => $$('.grp').forEach(g => g.open = false));
+$('#fOpen').addEventListener('click', () => $$('.grp, .sys').forEach(g => g.open = false));
 
 /* hover cards: hover opens · 1.5 s or Space locks · nested to depth 3 · Esc closes · click pins */
 let tips = [], openTimer = null, closeTimer = null;
