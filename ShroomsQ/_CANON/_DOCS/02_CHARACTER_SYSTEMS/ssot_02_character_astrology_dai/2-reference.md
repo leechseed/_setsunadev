@@ -128,7 +128,7 @@ These affinities inform sign selection for the Moon and other planets. They are 
 
 ## Planetary Derivation Rules
 
-### Step 1: Sun Sign (IDENTITYAXIS)
+### Step 1: Sun Sign (IDENTITY_AXIS)
 
 Machine label `IDENTITY_AXIS`. Dramatica source: MC Domain + MC Concern. The Sun is what the character believes they are.
 
@@ -139,7 +139,7 @@ Machine label `IDENTITY_AXIS`. Dramatica source: MC Domain + MC Concern. The Sun
 
 Validation: does the sign encode the self-concept the Domain and Concern define? If it feels wrong, re-examine the modality. That mapping has the most interpretive flexibility.
 
-### Step 2: Moon Sign (INTERNALSTATE)
+### Step 2: Moon Sign (INTERNAL_STATE)
 
 Machine label `INTERNAL_STATE`. Source: MC Problem + MC Response. The Moon is where the character collapses under stress.
 
@@ -150,7 +150,7 @@ Machine label `INTERNAL_STATE`. Source: MC Problem + MC Response. The Moon is wh
 
 Validation: under maximum stress, does the character retreat into this sign's behavior? A Moon that feels too comfortable or too rational is wrong.
 
-### Step 3: Ascendant (CHARACTERUISKIN)
+### Step 3: Ascendant (CHARACTER_UI_SKIN)
 
 Machine label `CHARACTER_UI_SKIN`. Source: Approach (Do-er/Be-er) + MC Critical Flaw. The Ascendant is the mask.
 
@@ -160,7 +160,7 @@ Machine label `CHARACTER_UI_SKIN`. Source: Approach (Do-er/Be-er) + MC Critical 
 
 Validation: does the sign describe the first impression? Does the Critical Flaw hide inside it?
 
-### Step 4: Mercury (CODEINTERPRETATION)
+### Step 4: Mercury (CODE_INTERPRETATION)
 
 Machine label `CODE_INTERPRETATION`. Source: Unique Ability + Methodology Quad.
 
@@ -170,7 +170,7 @@ Machine label `CODE_INTERPRETATION`. Source: Unique Ability + Methodology Quad.
 
 Note: the astronomical limit (Mercury within one sign of the Sun) is relaxed. Same or adjacent sign couples thinking and identity tightly. A distant sign makes intelligence independent of self-concept. Both are valid.
 
-### Step 5: Venus (VALUEVECTOR)
+### Step 5: Venus (VALUE_VECTOR)
 
 Machine label `VALUE_VECTOR`. Source: MC Concern + Purpose Quad.
 
@@ -178,7 +178,7 @@ Machine label `VALUE_VECTOR`. Source: MC Concern + Purpose Quad.
 2. Identify the Purpose elements (primary and secondary): the quality of desire (knowledge, experience, control or meaning).
 3. Select a Venus sign for the intersection.
 
-### Step 6: Mars (ACTIONPROTOCOL)
+### Step 6: Mars (ACTION_PROTOCOL)
 
 Machine label `ACTION_PROTOCOL`. Source: Approach + Motivation Quad.
 
@@ -186,7 +186,7 @@ Machine label `ACTION_PROTOCOL`. Source: Approach + Motivation Quad.
 2. Be-er: bias toward Mars in Water or Fixed signs.
 3. Choose the sign from the Motivation elements. Pursuit leans Aries/Scorpio. Consider leans Virgo/Libra. Faith leans Sagittarius/Pisces.
 
-### Step 7: Saturn (ENTROPYLIMITER)
+### Step 7: Saturn (ENTROPY_LIMITER)
 
 Machine label `ENTROPY_LIMITER`. Source: MC Critical Flaw + Inhibitor. Saturn is the wall.
 

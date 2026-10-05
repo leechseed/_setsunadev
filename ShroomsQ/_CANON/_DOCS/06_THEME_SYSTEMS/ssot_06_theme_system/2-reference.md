@@ -126,7 +126,7 @@ Second gauge: Fairness, for world scenes (80-G, ruled 2026-09-29). World scenes 
 
 ## THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)
 
-Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own value on the same four steps. The rule lives here. Each civilization's four steps live on its catalog entry in 09. World scenes may read a civilization's gauge beside Fairness.
+Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own value on the same four steps. The rule lives here. Each civilization's four steps live on its catalog entry in 05. World scenes may read a civilization's gauge beside Fairness.
 
 | Civilization | Catalog entry | Value | Last step (the lie it tells) |
 |---|---|---|---|

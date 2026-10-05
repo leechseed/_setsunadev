@@ -1,5 +1,5 @@
 ---
-type: ssot_06_style_guides
+type: ssot_07_style_guides
 category: style_guide
 version: 2.2.2
 tier: narratology

@@ -48,21 +48,21 @@ Each entry gives the law, what it forbids, its dictum and its address.
 - **Dictum:** "Craft is the mother of originality."
 - **Address:** preamble to the spine's rival map; the distill queue's mandate.
 
-### P5 · THE SETPIECE PRINCIPLE — plotsystems seed #1
+### P5 · THE SETPIECE PRINCIPLE — plot_systems seed #1
 
 - **Law:** the setpiece is the apex unit of Entertainment-First design: engineered spectacle carrying theme, stakes and arc. Eight archetypes: Action, Emotional, Ideological, Revelation, Atmospheric, Symbolic, Meta, Nested. Anatomy: Setup, Rising Tension, Payoff, Aftermath. Placed at act breaks, never crowded, always followed by reset.
 - **Forbids:** spectacle without substance, saturation of peaks, empty emotional payload, player disempowerment.
 - **Dictum:** "If it doesn't thrill, it kills."
 - **Address:** L4, below the spine's floor. First shelf of the plot_systems domain.
 
-### P6 · THE SERIAL HOOK — plotsystems seed #2
+### P6 · THE SERIAL HOOK — plot_systems seed #2
 
 - **Law:** every container closes on compulsion. Five hook types: Mystery, Consequence, Thematic Echo, Character, Mechanical. Interlocked and leapfrogged across installments; paid off, never just teased. The coupling between the Scale Ladder's containers: the ladder stacks them, the hook welds them.
 - **Forbids:** empty teases, unpaid hooks, uniform intensity.
 - **Dictum:** "A great hook doesn't ask you to keep going — it dares you not to."
 - **Address:** L4 plus the ladder. Feeds the M6 to M8 serialized grammars (BOLO 16).
 
-### P7 · THE NARRATIVE DILEMMA — plotsystems seed #3
+### P7 · THE NARRATIVE DILEMMA — plot_systems seed #3
 
 - **Law:** the highest-efficiency device: mutually exclusive options, real stakes on every path, double fallout for inaction. The choice advances plot and exposes character in one stroke. The folk form of the spine's Problem quad under Optionlock pressure, and its scene-level executable.
 - **Forbids:** painless exits, choices without consequence, stasis-as-option.

@@ -105,11 +105,11 @@
    {
     "name": "Flag Trigger Threshold Recalibration",
     "parts": [
-     "SHADOWDENIAL",
-     "TRUTHVULNERABILITY",
-     "OPTIONLOCKPROGRESSION",
-     "EARNEDJUDGEMENT",
-     "KINSHIPCOLLAPSE"
+     "SHADOW_DENIAL",
+     "TRUTH_VULNERABILITY",
+     "OPTIONLOCK_PROGRESSION",
+     "EARNED_JUDGEMENT",
+     "KINSHIP_COLLAPSE"
     ]
    },
    {
@@ -212,14 +212,14 @@
    {
     "name": "Absorbed Modules",
     "parts": [
-     "MOD.SEXPROF — Sexuality Profile (absorbed)",
+     "MOD.SEX_PROF — Sexuality Profile (absorbed)",
      "MOD.VOICE — Vocal Signature (absorbed)"
     ]
    },
    {
     "name": "Planned Modules",
     "parts": [
-     "MOD.LOLTAX — LoL Character Taxonomy",
+     "MOD.LOL_TAX — LoL Character Taxonomy",
      "MOD.WALK — Walking Style",
      "MOD.COMBAT — Combat Archetype",
      "MOD.MUSIC — Music Interests",
@@ -287,90 +287,90 @@
    {
     "name": "Tier 1 Variables",
     "parts": [
-     "T1.CORE.basevalue",
-     "T1.VITAL.basevalue",
-     "T1.SOCIAL.basevalue"
+     "T1.CORE.base_value",
+     "T1.VITAL.base_value",
+     "T1.SOCIAL.base_value"
     ]
    },
    {
     "name": "Tier 2 Variables",
     "parts": [
-     "T2.WILL.basevalue",
-     "T2.WOUND.woundscore",
-     "T2.DRIVE.basevalue"
+     "T2.WILL.base_value",
+     "T2.WOUND.wound_score",
+     "T2.DRIVE.base_value"
     ]
    },
    {
     "name": "Tier 3 Variables: L7 ORIGIN",
     "parts": [
-     "T3.ORIGIN.originclass",
-     "T3.ORIGIN.originstability",
-     "T3.ORIGIN.familycoherence",
-     "T3.ORIGIN.originwoundseed",
-     "T3.ORIGIN.techlevel",
-     "T3.ORIGIN.systemexposure"
+     "T3.ORIGIN.origin_class",
+     "T3.ORIGIN.origin_stability",
+     "T3.ORIGIN.family_coherence",
+     "T3.ORIGIN.origin_wound_seed",
+     "T3.ORIGIN.tech_level",
+     "T3.ORIGIN.system_exposure"
     ]
    },
    {
     "name": "Tier 3 Variables: L8 IMPRINT",
     "parts": [
-     "T3.IMPRINT.attachmentstyle",
-     "T3.IMPRINT.attachmentstylescore",
-     "T3.IMPRINT.emotionalrange",
-     "T3.IMPRINT.conditionalpatterns",
-     "T3.IMPRINT.imprintflexibility",
-     "T3.IMPRINT.primaryattachmentobject"
+     "T3.IMPRINT.attachment_style",
+     "T3.IMPRINT.attachment_style_score",
+     "T3.IMPRINT.emotional_range",
+     "T3.IMPRINT.conditional_patterns",
+     "T3.IMPRINT.imprint_flexibility",
+     "T3.IMPRINT.primary_attachment_object"
     ]
    },
    {
     "name": "Tier 3 Variables: L9 EROS",
     "parts": [
-     "T3.EROS.eroticblueprinttype",
-     "T3.EROS.desirevector",
-     "T3.EROS.shameindex",
-     "T3.EROS.armorindex",
-     "T3.EROS.satisfactioncycletruncation",
-     "T3.EROS.eroticsafetyprecondition",
-     "T3.EROS.intimacymode",
-     "T3.EROS.sourceconfidence"
+     "T3.EROS.erotic_blueprint_type",
+     "T3.EROS.desire_vector",
+     "T3.EROS.shame_index",
+     "T3.EROS.armor_index",
+     "T3.EROS.satisfaction_cycle_truncation",
+     "T3.EROS.erotic_safety_precondition",
+     "T3.EROS.intimacy_mode",
+     "T3.EROS.source_confidence"
     ]
    },
    {
     "name": "Tier 3 Variables: L10 SHADOW",
     "parts": [
-     "T3.SHADOW.shadowdensity",
-     "T3.SHADOW.projectiontendency",
-     "T3.SHADOW.regressionpattern",
-     "T3.SHADOW.shadowcontent"
+     "T3.SHADOW.shadow_density",
+     "T3.SHADOW.projection_tendency",
+     "T3.SHADOW.regression_pattern",
+     "T3.SHADOW.shadow_content"
     ]
    },
    {
     "name": "Tier 3 Variables: L11 DESTINY",
     "parts": [
-     "T3.DESTINY.growthaxis",
-     "T3.DESTINY.resistanceindex",
-     "T3.DESTINY.soulevolutionarchetype",
-     "T3.DESTINY.karmicmemory",
-     "T3.DESTINY.growthrequirement"
+     "T3.DESTINY.growth_axis",
+     "T3.DESTINY.resistance_index",
+     "T3.DESTINY.soul_evolution_archetype",
+     "T3.DESTINY.karmic_memory",
+     "T3.DESTINY.growth_requirement"
     ]
    },
    {
     "name": "Tier 3 Variables: L12 FUNCTION",
     "parts": [
-     "T3.FUNC.dramaticaarchetype",
-     "T3.FUNC.mcproblemelement",
-     "T3.FUNC.methodologyelement",
-     "T3.FUNC.evaluationelement",
-     "T3.FUNC.purposeelement",
+     "T3.FUNC.dramatica_archetype",
+     "T3.FUNC.mc_problem_element",
+     "T3.FUNC.methodology_element",
+     "T3.FUNC.evaluation_element",
+     "T3.FUNC.purpose_element",
      "T3.FUNC.touchstone",
-     "T3.FUNC.storyoutcome",
-     "T3.FUNC.storyjudgement",
-     "T3.FUNC.limittype",
+     "T3.FUNC.story_outcome",
+     "T3.FUNC.story_judgement",
+     "T3.FUNC.limit_type",
      "T3.FUNC.resolve",
      "Tier 2 L12 Format",
      "T3.FUNC.tier",
-     "T3.FUNC.elementsignature",
-     "T3.FUNC.relationalroles"
+     "T3.FUNC.element_signature",
+     "T3.FUNC.relational_roles"
     ]
    },
    {
@@ -398,23 +398,23 @@
    {
     "name": "Derived Statistics",
     "parts": [
-     "DRV.basicdamageresistance",
-     "DRV.sociallegibility",
-     "DRV.narrativemomentum",
-     "DRV.stressthreshold",
-     "DRV.collapserisk",
-     "DRV.truthexposureindex",
-     "DRV.expressiverange"
+     "DRV.basic_damage_resistance",
+     "DRV.social_legibility",
+     "DRV.narrative_momentum",
+     "DRV.stress_threshold",
+     "DRV.collapse_risk",
+     "DRV.truth_exposure_index",
+     "DRV.expressive_range"
     ]
    },
    {
     "name": "Status Flags",
     "parts": [
-     "FLG.shadowdenial",
-     "FLG.truthvulnerability",
-     "FLG.optionlockprogression",
-     "FLG.earnedjudgement",
-     "FLG.kinshipcollapse"
+     "FLG.shadow_denial",
+     "FLG.truth_vulnerability",
+     "FLG.optionlock_progression",
+     "FLG.earned_judgement",
+     "FLG.kinship_collapse"
     ]
    },
    {
@@ -532,9 +532,9 @@
      "P2 · THE AMERICAN CENTER — the audience contract",
      "P3 · SATURATION — sexuality as bloodstream",
      "P4 · ORIGINALITY AS CRAFT — the library charter",
-     "P5 · THE SETPIECE PRINCIPLE — plotsystems seed #1",
-     "P6 · THE SERIAL HOOK — plotsystems seed #2",
-     "P7 · THE NARRATIVE DILEMMA — plotsystems seed #3"
+     "P5 · THE SETPIECE PRINCIPLE — plot_systems seed #1",
+     "P6 · THE SERIAL HOOK — plot_systems seed #2",
+     "P7 · THE NARRATIVE DILEMMA — plot_systems seed #3"
     ]
    },
    {
@@ -619,7 +619,7 @@
     "parts": []
    },
    {
-    "name": "Archived conversations (story-craft relevant; titles + paths in CLAUDEARCHIVE2026-08-15/INDEX.md)",
+    "name": "Archived conversations (story-craft relevant; titles + paths in CLAUDE_ARCHIVE_2026-08-15/INDEX.md)",
     "parts": []
    },
    {
@@ -678,7 +678,7 @@
      "L1 · Throughlines — the four seats, each its own anatomy",
      "L2 · Nesting — the chart itself",
      "L3 · Dynamics — the eight switches, one node each",
-     "L4 · Plot — the richest branch; next domain candidate (plotsystems, 04)",
+     "L4 · Plot — the richest branch; next domain candidate (plot_systems, 04)",
      "L5 · Character — already a domain",
      "L6 · Theme — the value layer",
      "L7 · Genre & Audience — the outer ring"
@@ -1096,7 +1096,7 @@
      "The Primary Unit: One Storyform Per Story",
      "Nested Storyforms (Pattern 1)",
      "Storyform Identification",
-     "Future Scaling (Flagged for plotsystems)"
+     "Future Scaling (Flagged for plot_systems)"
     ]
    },
    {
@@ -1116,7 +1116,7 @@
     "parts": [
      "Design Decision: Option C — Core + Sub-Table",
      "L12 Core Block (All Tiers That Carry L12)",
-     "L12DRAMATICAEXTENDED Sub-Table (Tier 3 Only)"
+     "L12_DRAMATICA_EXTENDED Sub-Table (Tier 3 Only)"
     ]
    },
    {
@@ -1205,13 +1205,13 @@
    {
     "name": "Planetary Derivation Rules",
     "parts": [
-     "Step 1: Sun Sign (IDENTITYAXIS)",
-     "Step 2: Moon Sign (INTERNALSTATE)",
-     "Step 3: Ascendant (CHARACTERUISKIN)",
-     "Step 4: Mercury (CODEINTERPRETATION)",
-     "Step 5: Venus (VALUEVECTOR)",
-     "Step 6: Mars (ACTIONPROTOCOL)",
-     "Step 7: Saturn (ENTROPYLIMITER)",
+     "Step 1: Sun Sign (IDENTITY_AXIS)",
+     "Step 2: Moon Sign (INTERNAL_STATE)",
+     "Step 3: Ascendant (CHARACTER_UI_SKIN)",
+     "Step 4: Mercury (CODE_INTERPRETATION)",
+     "Step 5: Venus (VALUE_VECTOR)",
+     "Step 6: Mars (ACTION_PROTOCOL)",
+     "Step 7: Saturn (ENTROPY_LIMITER)",
      "Steps 8-11: Outer Planets"
     ]
    },
@@ -1301,7 +1301,7 @@
     ]
    },
    {
-    "name": "Boundaries with plotsystems",
+    "name": "Boundaries with plot_systems",
     "parts": []
    }
   ],
@@ -2110,7 +2110,7 @@
     "parts": []
    },
    {
-    "name": "7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot09operationsprojectflow.md v0.1",
+    "name": "7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot_09_operations_project_flow.md v0.1",
     "parts": []
    },
    {

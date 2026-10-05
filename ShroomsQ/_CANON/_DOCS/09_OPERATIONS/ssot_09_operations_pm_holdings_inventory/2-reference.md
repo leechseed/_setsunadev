@@ -120,7 +120,7 @@ The registry is `files/2026-08-05_ultrasin-master-registrymd.md` (v0.1, living).
 - **Missing (as of 2026-10-05):** the list now reads as follows. Closed 2026-09-03: ~~one document that says how a project runs here~~ (the project flow). Also closed: ~~a project lifecycle in the repo proper~~ (the flow's P0 to P6). Also closed: ~~a sprint/cadence layer beyond the CDPR paragraph~~ (the flow's section F). Also closed: ~~the DOCTRINE-0 ratification~~ (ratified). Blank charter and gate templates also closed 2026-09-03 (the flow's blank brief and gate checklist). The blank close-out template stays open.
 - **Known gaps already flagged:** the Pyramid Principle source text (BVX.1107 reserved); 7 of 11 MCDP PDFs (BOLO 1). Summaries exist for all 11, and the PDFs feed the catalog, not the method. DOCTRINE-0 was ratified 2026-09-03, and that gap closed 2026-10-05 (BOLO 102 batch A).
 
-## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot09operationsprojectflow.md v0.1
+## 7 · Cheapest path to a standard flow — TAKEN 2026-09-03 → 📐 ssot_09_operations_project_flow.md v0.1
 
 The path: promote the four-domains six-phase lifecycle into a `09_OPERATIONS` SSOT; strip the BVIPDS charter and assumption log into blanks. Generalise the G1/G2/G3 gate pattern. Adopt the registry's five-flag status and `# | Decision | Blocking?` ledger as the schema. Every input is a finished artifact today. The successor is the [Project Flow](../ssot_09_operations_project_flow/2-reference.md).
 

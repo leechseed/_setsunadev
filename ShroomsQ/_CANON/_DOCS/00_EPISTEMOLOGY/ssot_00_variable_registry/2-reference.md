@@ -93,9 +93,9 @@ Each system owns its fields in its own doc. The registry holds the character fie
 |---|---|---|
 | Setting (03) | `ShroomsQ/_CANON/_SSOT/03_SETTING_SYSTEMS/📐 ssot_03_setting_system.md` | S1 to S12 layer fields, including S12 FUNCTION |
 | Plot (04) | `04_PLOT_SYSTEMS/📐 ssot_04_plot_system.md` and `📐 ssot_04_fabula.md` | P1 to P12 layer fields, including P12 FUNCTION. The fabula owns event ids. |
-| Theme (07) | `06_THEME_SYSTEMS/📐 ssot_06_theme_system.md` | Theme fields and the argument record |
+| Theme (06) | `06_THEME_SYSTEMS/📐 ssot_06_theme_system.md` | Theme fields and the argument record |
 | Tracking (08) | `08_TRACKING_SYSTEMS/📐 ssot_08_tracking_system.md` | Time codes and story points |
-| Worldbuilding (09) | `05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md` | Worldbuilding fields |
+| Worldbuilding (05) | `05_WORLDBUILDING_SYSTEMS/📐 ssot_05_worldbuilding_system.md` | Worldbuilding fields |
 
 L12 FUNCTION is fed from the storyform. Its field list lives in `02_CHARACTER_SYSTEMS/🔮 ssot_02_dramatica_integration_protocol.md`. This registry mirrors it.
 
@@ -126,29 +126,29 @@ Chief rules each retirement. The author keeps the entry and marks it retired, wi
 
 ## Tier 1 Variables
 
-### T1.CORE.basevalue
+### T1.CORE.base_value
 
 `T1.CORE.base_value`, CORE. int, SC-20, 0–20, default 10, source authored, tier min 1, tag Dynamic. Feeds `DRV.basic_damage_resistance` (via WILL) and `T2.WILL.base_value`. Behavior: governs mental skill defaults. High CORE thinks in frameworks; low CORE processes in fragments.
 
-### T1.VITAL.basevalue
+### T1.VITAL.base_value
 
 `T1.VITAL.base_value`, VITAL. int, SC-20, 0–20, default 10, authored, tier 1, Dynamic. Feeds `T2.DRIVE.base_value` and `DRV.narrative_momentum` (via DRIVE). Behavior: governs body precision. Above 12 the body is a primary instrument; below 8 physicality is a liability.
 
-### T1.SOCIAL.basevalue
+### T1.SOCIAL.base_value
 
 `T1.SOCIAL.base_value`, SOCIAL. int, SC-20, 0–20, default 10, authored, tier 1, Dynamic. Feeds `DRV.social_legibility` and `DRV.truth_exposure_index`. Behavior: governs how the world reads the character. Above 14 the character controls their signal; below 8 it leaks.
 
 ## Tier 2 Variables
 
-### T2.WILL.basevalue
+### T2.WILL.base_value
 
 `T2.WILL.base_value`, WILL. int, SC-20, 0–20, default `= T1.CORE.base_value`, source derived from CORE (buyable ±1-3 at 5 pts per level). Tier min 2, Dynamic. Feeds `DRV.basic_damage_resistance`, `DRV.stress_threshold`, `FLG.earned_judgement`, `FLG.optionlock_progression`. Behavior: WILL above CORE is more stubborn than smart; below CORE the character understands but cannot sustain resistance.
 
-### T2.WOUND.woundscore
+### T2.WOUND.wound_score
 
 `T2.WOUND.wound_score`, WOUND. int, SC-12, 0–12, constraint even values only {0, 2, 4, 6, 8, 10, 12}, default 0. It is authored from history (not purchased), tier 2, Dynamic. Feeds `DRV.basic_damage_resistance`, `DRV.stress_threshold`, `DRV.collapse_risk`, `FLG.shadow_denial`, `FLG.optionlock_progression`, `FLG.kinship_collapse`. Behavior: records damage that failed to resolve. At 12 the character reaches the functional collapse threshold.
 
-### T2.DRIVE.basevalue
+### T2.DRIVE.base_value
 
 `T2.DRIVE.base_value`, DRIVE. int, SC-20, 0–20, default `= T1.VITAL.base_value`, derived from VITAL (buyable at 3 pts per level), tier 2, Dynamic. Feeds `DRV.narrative_momentum`. Behavior: DRIVE equal to VITAL is ambition-driven; below VITAL is meaning-driven.
 
@@ -156,27 +156,27 @@ Chief rules each retirement. The author keeps the entry and marks it retired, wi
 
 All L7 entries: source authored, tier min 3, tag Static, default none.
 
-### T3.ORIGIN.originclass
+### T3.ORIGIN.origin_class
 
 `T3.ORIGIN.origin_class`. enum `{institutional, professional, working, working_criminal_adjacent, criminal, subsistence, unknown}`. Feeds L8, L9, L10 as context. Behavior: the socioeconomic stratum the character came from.
 
-### T3.ORIGIN.originstability
+### T3.ORIGIN.origin_stability
 
 `T3.ORIGIN.origin_stability`. int, SC-12, 0–12. Context for `T2.WOUND.wound_score` baseline. 0 is chaos; 12 is complete stability.
 
-### T3.ORIGIN.familycoherence
+### T3.ORIGIN.family_coherence
 
 `T3.ORIGIN.family_coherence`. int, SC-12, 0–12. Context for `T3.IMPRINT.attachment_style_score`. 0 is a fragmented or absent family; 12 a unified family with clear roles.
 
-### T3.ORIGIN.originwoundseed
+### T3.ORIGIN.origin_wound_seed
 
 `T3.ORIGIN.origin_wound_seed`. int, SC-12, 0–12. Baseline input for `T2.WOUND.wound_score`. 0 is a protective origin; 12 an origin that is itself the primary wound.
 
-### T3.ORIGIN.techlevel
+### T3.ORIGIN.tech_level
 
 `T3.ORIGIN.tech_level`. int, SC-12, 0–12. Contextual. The technological sophistication of the formative environment.
 
-### T3.ORIGIN.systemexposure
+### T3.ORIGIN.system_exposure
 
 `T3.ORIGIN.system_exposure`. enum `{none, early_pre_awareness, early_aware, mid_integration, late_integration, institutional_native}`. Context for L11 DESTINY and Movement assignment. Defines when the character first met systemic forces.
 
@@ -184,27 +184,27 @@ All L7 entries: source authored, tier min 3, tag Static, default none.
 
 All L8 entries: tier min 3, default none unless stated.
 
-### T3.IMPRINT.attachmentstyle
+### T3.IMPRINT.attachment_style
 
 `T3.IMPRINT.attachment_style`. enum `{secure, anxious, avoidant, fearful_avoidant}` (four-way, slice 2.1.0). Legacy values `secure_anxious`, `secure_avoidant`, `disorganized` stay readable. A locked record keeps its value. Source authored, informed by `AST.PERSONAL.moon_sign`. Feeds `FLG.kinship_collapse`. Tag Static. The default relational wiring.
 
-### T3.IMPRINT.attachmentstylescore
+### T3.IMPRINT.attachment_style_score
 
 `T3.IMPRINT.attachment_style_score`, Attachment Intensity. int, SC-12, 0–12, authored, Static. Feeds `FLG.kinship_collapse`. 0 is relationally flat; 12 bonds at maximum intensity.
 
-### T3.IMPRINT.emotionalrange
+### T3.IMPRINT.emotional_range
 
 `T3.IMPRINT.emotional_range`. int, SC-12, 0–12, authored, Static. Context for behavioral texture. 0 is emotionally flat; 12 spans euphoria to devastation.
 
-### T3.IMPRINT.conditionalpatterns
+### T3.IMPRINT.conditional_patterns
 
 `T3.IMPRINT.conditional_patterns`. array_str, freeform (e.g. `merit_earns_freedom`, `loyalty_to_kinship`), default `[]`, authored, Static. Feeds `FLG.shadow_denial`. The if/then rules the character runs on.
 
-### T3.IMPRINT.imprintflexibility
+### T3.IMPRINT.imprint_flexibility
 
 `T3.IMPRINT.imprint_flexibility`. int, SC-12, 0–12, authored, Static. Context for arc resistance. 0 is immovable conditioning; 12 rewires easily.
 
-### T3.IMPRINT.primaryattachmentobject
+### T3.IMPRINT.primary_attachment_object
 
 `T3.IMPRINT.primary_attachment_object`, a read alias of `secure_base_object` (slice 2.1.0). str: a character ID, `deceased`, `absent` or `none`. Default `none`. Authored. Feeds `FLG.kinship_collapse` and relational tracking. Tag Dynamic. The person the character orients their relational system around.
 
@@ -212,35 +212,35 @@ All L8 entries: tier min 3, default none unless stated.
 
 All L9 entries: tier min 3, default none unless stated.
 
-### T3.EROS.eroticblueprinttype
+### T3.EROS.erotic_blueprint_type
 
 `T3.EROS.erotic_blueprint_type`. enum `{kinesthetic, sensual, energetic, sexual, shapeshifter}`. Authored, informed by `AST.PERSONAL.venus_sign`. Context for intimacy behavior. Static. The primary channel of erotic connection.
 
-### T3.EROS.desirevector
+### T3.EROS.desire_vector
 
 `T3.EROS.desire_vector`. int, SC-12, 0–12, authored, Dynamic. Contextual. 0 is absent or suppressed desire; 12 is desire as the dominant driver.
 
-### T3.EROS.shameindex
+### T3.EROS.shame_index
 
 `T3.EROS.shame_index`, a read alias of `exposure_shame` (slice 2.2.0). int, SC-12, 0–12, authored, Dynamic. Feeds `DRV.truth_exposure_index`. 0 is no shame; 12 is shame as the dominant filter on intimate expression.
 
-### T3.EROS.armorindex
+### T3.EROS.armor_index
 
 `T3.EROS.armor_index`. int, SC-12, 0–12, authored (adopted 2026-08-15, L9 v2 ingest, Walker PSY.01; propagated 2026-08-24). Feeds `DRV.expressive_range`. Dynamic. Chronic protective constriction. Independent of shame: low shame with high armor is the armored-but-readable paradox.
 
-### T3.EROS.satisfactioncycletruncation
+### T3.EROS.satisfaction_cycle_truncation
 
 `T3.EROS.satisfaction_cycle_truncation`. enum `{none, yield, push, reach, grasp, pull}`, default `none`. Authored (adopted 2026-08-15, Walker and Bainbridge-Cohen). Contextual: the somatic mechanism for `T2.WOUND.wound_score`. Static. Names the phase of the yield, push, reach, grasp, pull cycle where engagement breaks.
 
-### T3.EROS.eroticsafetyprecondition
+### T3.EROS.erotic_safety_precondition
 
 `T3.EROS.erotic_safety_precondition`. str, freeform (e.g. `control`, `privacy`, `trust`, `ritual`). Authored (introduced 2026-08-15, Walker Invariant 4). Context for intimacy behavior and arc design. Dynamic. What the nervous system must register before pleasure is accessible.
 
-### T3.EROS.intimacymode
+### T3.EROS.intimacy_mode
 
 `T3.EROS.intimacy_mode`. enum `{partnered_merge, parallel_presence, solo_directed, bounded_no_strings}` (slice 3.2.0, CL2). Legacy values `face_to_face`, `performance`, `pursuit`, `dissolution`, `withholding` stay readable. A list of `{ref, value}` scopes it per partner or audience. Authored, Dynamic. How the character structures closeness.
 
-### T3.EROS.sourceconfidence
+### T3.EROS.source_confidence
 
 `T3.EROS.source_confidence`. enum `{canonical, inferred, speculative}`, default `inferred`, authored, Static. A validation flag: `inferred` values need follow-up extraction.
 
@@ -248,19 +248,19 @@ All L9 entries: tier min 3, default none unless stated.
 
 All L10 entries: tier min 3, default none unless stated, authored.
 
-### T3.SHADOW.shadowdensity
+### T3.SHADOW.shadow_density
 
 `T3.SHADOW.shadow_density`. int, SC-12, 0–12, constraint even only (must match WOUND parity). Informed by `AST` debilitated planets and 12th House contents. Feeds `DRV.collapse_risk` and `DRV.social_legibility` (via projection_tendency). Dynamic.
 
-### T3.SHADOW.projectiontendency
+### T3.SHADOW.projection_tendency
 
 `T3.SHADOW.projection_tendency`. int, SC-12, 0–12, constraint multiples of 3 only {0, 3, 6, 9, 12}. Feeds `DRV.social_legibility` and `FLG.shadow_denial`. Dynamic. At 12 the character cannot tell self-generated distress from external harm.
 
-### T3.SHADOW.regressionpattern
+### T3.SHADOW.regression_pattern
 
 `T3.SHADOW.regression_pattern`. enum `{control_escalation, withdrawal, dissociation, aggression, performance, people_pleasing, intellectualization, substance_seeking}`. Feeds behavior under stress. Static. What the character does when shadow content activates.
 
-### T3.SHADOW.shadowcontent
+### T3.SHADOW.shadow_content
 
 `T3.SHADOW.shadow_content`. array_str, freeform, default `[]`. Informed by `AST` 12th House and Pluto aspects. Contextual for flag triggers. Dynamic. Each entry is one thing the character cannot face about themselves.
 
@@ -268,23 +268,23 @@ All L10 entries: tier min 3, default none unless stated, authored.
 
 All L11 entries: tier min 3, authored, default none.
 
-### T3.DESTINY.growthaxis
+### T3.DESTINY.growth_axis
 
 `T3.DESTINY.growth_axis`. str. Informed by `AST.STRUCTURAL.uranus_sign`. Context for arc design. Static. The direction the arc demands.
 
-### T3.DESTINY.resistanceindex
+### T3.DESTINY.resistance_index
 
 `T3.DESTINY.resistance_index`. int, SC-12, 0–12, constraint even only. Informed by `AST` Jupiter-Saturn aspects. Feeds `DRV.narrative_momentum`, `FLG.optionlock_progression`. Dynamic. At 12 the character opposes their own solution.
 
-### T3.DESTINY.soulevolutionarchetype
+### T3.DESTINY.soul_evolution_archetype
 
 `T3.DESTINY.soul_evolution_archetype`. str. Contextual. Static. Names the kind of transformation (tactical_disruptor, wounded_healer, fallen_idealist).
 
-### T3.DESTINY.karmicmemory
+### T3.DESTINY.karmic_memory
 
 `T3.DESTINY.karmic_memory`. str. Contextual. Static. The deep-pattern belief the arc will challenge or destroy.
 
-### T3.DESTINY.growthrequirement
+### T3.DESTINY.growth_requirement
 
 `T3.DESTINY.growth_requirement`. str. Informed by Dramatica MC Solution. Feeds arc design and `FLG.earned_judgement`. Static. Stated as an action ("accept_asymmetry", "release_control", "trust_without_proof").
 
@@ -292,23 +292,23 @@ All L11 entries: tier min 3, authored, default none.
 
 L12 entries: tier min 3 unless stated, tag Static.
 
-### T3.FUNC.dramaticaarchetype
+### T3.FUNC.dramatica_archetype
 
 `T3.FUNC.dramatica_archetype`. enum `{Protagonist, Antagonist, Guardian, Contagonist, Reason, Emotion, Sidekick, Skeptic, Complex}`. Source dramatica. Feeds `FLG.earned_judgement`.
 
-### T3.FUNC.mcproblemelement
+### T3.FUNC.mc_problem_element
 
 `T3.FUNC.mc_problem_element`. str, dramatica. Feeds `FLG.truth_vulnerability` and Character Astrology Moon derivation. The core narrative friction. Renamed from `motivation_element` (Phase 4 schema clarification).
 
-### T3.FUNC.methodologyelement
+### T3.FUNC.methodology_element
 
 `T3.FUNC.methodology_element`. str, dramatica. Feeds Character Astrology Mercury derivation.
 
-### T3.FUNC.evaluationelement
+### T3.FUNC.evaluation_element
 
 `T3.FUNC.evaluation_element`. str, dramatica. Contextual.
 
-### T3.FUNC.purposeelement
+### T3.FUNC.purpose_element
 
 `T3.FUNC.purpose_element`. str, dramatica. Feeds Character Astrology Venus derivation.
 
@@ -316,15 +316,15 @@ L12 entries: tier min 3 unless stated, tag Static.
 
 `T3.FUNC.touchstone`. str, authored. Alias `narrative_invariant` (old name, read alias for old ingests, renamed BOLO 100). Feeds as a structural constraint on all downstream story development.
 
-### T3.FUNC.storyoutcome
+### T3.FUNC.story_outcome
 
 `T3.FUNC.story_outcome`. enum `{Success, Failure}`, dramatica. Feeds `FLG.earned_judgement` and Character Astrology Pluto derivation.
 
-### T3.FUNC.storyjudgement
+### T3.FUNC.story_judgement
 
 `T3.FUNC.story_judgement`. enum `{Good, Bad}`, dramatica. Feeds `FLG.earned_judgement` and Character Astrology Pluto derivation.
 
-### T3.FUNC.limittype
+### T3.FUNC.limit_type
 
 `T3.FUNC.limit_type`. enum `{Timelock, Optionlock}`, dramatica. Feeds `FLG.optionlock_progression`.
 
@@ -340,11 +340,11 @@ A Tier 2 character's L12 uses a different variable set: the next three entries.
 
 `T3.FUNC.tier`. int `{1, 2, 3}`. Static.
 
-### T3.FUNC.elementsignature
+### T3.FUNC.element_signature
 
 `T3.FUNC.element_signature`. array_str of 2-4 Dramatica element names. Authored from the Dramatica element vocabulary. Tier min 2. Static.
 
-### T3.FUNC.relationalroles
+### T3.FUNC.relational_roles
 
 `T3.FUNC.relational_roles`. array of `{target: str, role: enum}`. Roles `{mirror, foil, catalyst, threshold_guardian, herald, mentor, trickster, shapeshifter, anchor}`. Authored. Tier min 2. Static.
 
@@ -516,33 +516,33 @@ The field list lives in the Dramatica integration protocol.
 
 All derived stats compute in internal (0-60) space per the Base 60 SSOT. Source `computed`, tag Derived.
 
-### DRV.basicdamageresistance
+### DRV.basic_damage_resistance
 
 `DRV.basic_damage_resistance`. Formula `(T2.WILL × 3) - ((T2.WOUND × 5) / 2)`. WOUND must be even. Output internal 0-60, may go negative.
 
-### DRV.sociallegibility
+### DRV.social_legibility
 
 `DRV.social_legibility`. Formula `(T1.SOCIAL × 3) - ((T3.SHADOW.projection_tendency × 5) / 3)`. projection_tendency must be a multiple of 3. Output internal 0-60.
 
-### DRV.narrativemomentum
+### DRV.narrative_momentum
 
 `DRV.narrative_momentum`. Formula `(T2.DRIVE × 3) + ((T3.DESTINY.resistance_index × 5) / 2)`. resistance_index must be even. Output internal 0-60.
 
-### DRV.stressthreshold
+### DRV.stress_threshold
 
 `DRV.stress_threshold`. Formula `(T2.WILL × 3) - (T2.WOUND × 5)`. No constraints. Output internal, may go negative. When negative, the character works past the structural limit, held up by stubbornness, not margin.
 
-### DRV.collapserisk
+### DRV.collapse_risk
 
 `DRV.collapse_risk`. Formula `((T2.WOUND × 5) + (T3.SHADOW.shadow_density × 5)) / 2`. WOUND plus shadow_density must be even, which both constraints enforce. Output internal 0-60.
 
-### DRV.truthexposureindex
+### DRV.truth_exposure_index
 
 `DRV.truth_exposure_index`. Internal formula `(T1.SOCIAL × 3) + ((12 - T3.EROS.shame_index) × 5)`. Display formula `T1.SOCIAL + max(0, 10 - T3.EROS.shame_index)`. Slice 3.3.2 clamps the shame term at 0 on SC-12 (Chief, 10/4: "REC."). No constraints. Output internal, uncapped, may exceed 60. A value over 60 means the character's legibility exceeds the system's containment threshold.
 
 > **OPEN:** the source gives the internal formula with `12 - shame_index` and the display formula with `10 - shame_index`. It does not say why the two differ.
 
-### DRV.expressiverange
+### DRV.expressive_range
 
 `DRV.expressive_range`. Display formula `12 - T3.EROS.armor_index`, 0 to 12. Slice 3.3.2 ruled the constant (Chief, 10/4: "Rick"). The internal mapping follows `armor_index` at SC-12. It measures what the character can send on purpose. `truth_exposure_index` measures what leaks.
 
@@ -552,23 +552,23 @@ The version history records an earlier constant, `10 - armor_index`. Chief repla
 
 Every flag has source `computed`, tag Derived, and states `{ACTIVE, PENDING, FIRED_PRE_STORY, INACTIVE}`.
 
-### FLG.shadowdenial
+### FLG.shadow_denial
 
 `FLG.shadow_denial`. Trigger: `T2.WOUND > 6 AND T3.SHADOW.projection_tendency >= 6 AND T3.IMPRINT.conditional_patterns contains "merit_earns_freedom"`.
 
-### FLG.truthvulnerability
+### FLG.truth_vulnerability
 
 `FLG.truth_vulnerability`. Trigger: `T1.SOCIAL < 12 AND T3.FUNC.mc_problem_element = "Equity" AND T3.SHADOW.shadow_density > 6`.
 
-### FLG.optionlockprogression
+### FLG.optionlock_progression
 
 `FLG.optionlock_progression`. Trigger: `T2.WOUND > 8 AND T3.DESTINY.resistance_index > 8 AND T3.FUNC.limit_type = "Optionlock"`.
 
-### FLG.earnedjudgement
+### FLG.earned_judgement
 
 `FLG.earned_judgement`. Trigger: `T3.FUNC.dramatica_archetype = "Protagonist" AND T3.FUNC.story_outcome = "Failure" AND T2.WILL > 10`.
 
-### FLG.kinshipcollapse
+### FLG.kinship_collapse
 
 `FLG.kinship_collapse`. Trigger: `T3.IMPRINT.attachment_style_score > 6 AND T3.IMPRINT.primary_attachment_object = "deceased" AND T2.WOUND > 8`.
 

@@ -57,7 +57,7 @@ Look up terms in the [reference](2-reference.md). Read the [concept](1-concept.m
 
 1. Pick the civilization's value. Use the four steps: positive, contrary, contradictory, negation of the negation.
 2. Write the last step as the lie the civilization tells about itself.
-3. Put the four steps on the civilization's catalog entry in 09. The rule stays in the theme doc.
+3. Put the four steps on the civilization's catalog entry in 05. The rule stays in the theme doc.
 4. Tag world scenes set in that civilization to read its gauge beside Fairness.
 
 ## Run the scene tests on a scene card

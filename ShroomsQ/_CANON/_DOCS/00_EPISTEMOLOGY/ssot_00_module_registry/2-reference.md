@@ -83,7 +83,7 @@ Audit 2026-10-04 (slice 3.3.1): 1 active, 2 absorbed, 8 planned, 3 conceptual. N
 
 An absorbed module is closed. The core schema holds its fields, so it never builds. The slice is `ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md`, section 3.3.1.
 
-### MOD.SEXPROF — Sexuality Profile (absorbed)
+### MOD.SEX_PROF — Sexuality Profile (absorbed)
 
 | Old variable | Where it went |
 |---|---|
@@ -105,7 +105,7 @@ An absorbed module is closed. The core schema holds its fields, so it never buil
 
 ## Planned Modules
 
-### MOD.LOLTAX — LoL Character Taxonomy
+### MOD.LOL_TAX — LoL Character Taxonomy
 
 - **Declaration:** `LOL_TAX`, "League of Legends Character Taxonomy", version 0.1.0, author LEECHSEED, attachments VITAL, SOCIAL, WILL, IMPRINT, EROS, SHADOW, `depends_on: [COMBAT]`.
 - **Description:** the 12-domain character taxonomy from the LoL analysis project, consolidated under existing layers with foreign key references.

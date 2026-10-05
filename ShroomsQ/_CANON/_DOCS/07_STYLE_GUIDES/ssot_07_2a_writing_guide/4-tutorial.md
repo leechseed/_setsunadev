@@ -25,7 +25,7 @@ Put three dashes alone on line 1. The guide requires the YAML boundary there.
 Add these lines, then close the block with three dashes:
 
 ```
-type: ssot_06_style_guides
+type: ssot_07_style_guides
 version: 0.1.0
 reader: "a writer learning the frame"
 doc_type: reference

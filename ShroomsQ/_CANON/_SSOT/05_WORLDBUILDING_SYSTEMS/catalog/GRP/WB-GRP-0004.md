@@ -26,7 +26,7 @@ Its three names are its three stages (RULED 9/29, "all rec"): **Cartel Federal**
 **Place:** no 03 place exists for it yet; the four regions are not places in 03.
 - Sources: the 2025 Apple Notes digest (private) · the 6/20/2025 world dump (read in the 5/16/2026 conversation) · [ASTRO7EX Backdrop & Context](<../../../../../../OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/ASTROSE7X/DRAFT 1. __Backdrop & Context__.md>) · [flag of REAL FEDERAL](<../../../../../../OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/!!AWSUMANIA - THE DOPE SHIT/flag of REAL FEDERAL.md>)
 
-**The gauge: Belonging** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 07, the steps live here; plain words are Chief's to re-pick)
+**The gauge: Belonging** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 06, the steps live here; plain words are Chief's to re-pick)
 
 | Step | Name | Plain words |
 |---|---|---|

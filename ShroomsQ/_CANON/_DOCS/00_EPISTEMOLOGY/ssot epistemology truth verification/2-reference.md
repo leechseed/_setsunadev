@@ -121,9 +121,9 @@ A table of system, claim and checking framework. Two rules apply to every row.
 | Character (02) | A trait or change is true to the person. | Coherence; Logical Reasoning; Empirical Observation |
 | Setting (03) | A canon fact: a place, rule or custom exists. | Coherence; Correspondence |
 | Plot (04) | An event happened and caused the next one. | Logical Reasoning; Historical Method |
-| Theme (07) | The story proves its premise. | Logical Reasoning; Pragmatic Theory |
+| Theme (06) | The story proves its premise. | Logical Reasoning; Pragmatic Theory |
 | Tracking (08) | A record matches the story. | Correspondence; Coherence |
-| Worldbuilding (09) | A world claim fits the world's own rules. | Coherence; Correspondence |
+| Worldbuilding (05) | A world claim fits the world's own rules. | Coherence; Correspondence |
 
 1. A claim one framework cannot confirm needs a second framework.
 2. Skepticism (Framework 8) tests any claim in any row. A claim that survives is checked. A claim that fails stays marked open.

@@ -18,7 +18,7 @@ Look up each framework in the [reference](2-reference.md).
 
 ## Check a claim in a story system
 
-1. Name the system the claim belongs to: Character (02), Setting (03), Plot (04), Theme (07), Tracking (08) or Worldbuilding (09).
+1. Name the system the claim belongs to: Character (02), Setting (03), Plot (04), Theme (06), Tracking (08) or Worldbuilding (05).
 2. Find the system's row in "How the Frameworks Check the Systems".
 3. Apply each framework named in that row to the claim.
 4. If one framework cannot confirm the claim, add a second framework.

@@ -62,7 +62,7 @@ Worldbuilding is the work of defining the shared things of a story's world (grou
 | Individual people, their outfit and habits | 02 Character |
 | Anything that changes over time | 08 Tracking; the catalog points to it, never copies |
 | Event order and telling order | 04 Plot; an entry's `origin` points to a fabula event |
-| The story's argument | 07 Theme |
+| The story's argument | 06 Theme |
 | The list of stories | 01 registry (v0.1.7) |
 | Tropes | The trope layer (BOLO 89); entries carry a `tropes` field |
 
@@ -74,9 +74,9 @@ Worldbuilding is the work of defining the shared things of a story's world (grou
 | 02 Character | A person belongs to a catalog group; outfit and habits stay in 02 | catalog is pointed at by 02 |
 | 03 Setting | Places name styles and groups; faction card notation stays in 03 | two-way pointers |
 | 04 Plot | Entry `origin` names a fabula event | catalog points to 04 |
-| 05 Operations | No world-fact type; runs the compiler as a procedure | none |
-| 06 Style | No world-fact type; write-up follows 07.1 | none |
-| 07 Theme | The coherence lens asks 07 whether mechanics, environment and narrative reinforce one theme (BVX.0144) | lens asks 07 |
+| 09 Operations | No world-fact type; runs the compiler as a procedure | none |
+| 07 Style | No world-fact type; write-up follows 07.1 | none |
+| 06 Theme | The coherence lens asks 07 whether mechanics, environment and narrative reinforce one theme (BVX.0144) | lens asks 07 |
 | 08 Tracking | Every change is a 08 record; entries hold a `state` pointer; the reader track is in 08 §9A | catalog points to 08 |
 | Trope layer | Every entry carries `tropes` | catalog points to layer |
 
@@ -97,13 +97,13 @@ Ruled 2026-09-29 (OPEN 1, "Adopt"); recorded in SOP §5.
 2. The coherence tests are a lens: every test asks across parts and stores nothing.
 3. The compiled page is a view.
 
-System 09 is a system because of the catalog. Without it, 09 would be a lens only.
+System 05 is a system because of the catalog. Without it, 05 would be a lens only.
 
 ## MIND MODELS
 
 Three Mermaid diagrams in the source.
 
-- **Diagram 1, the whole system on one screen:** a mindmap with root 09 WORLDBUILDING. Branches: Definition (infrastructures), Catalog (twelve type families), Lens (coherence tests). Next comes View (the world view; filters era, place, group, type). Last comes Boundary (thin by default, Kennedy counter-voice).
+- **Diagram 1, the whole system on one screen:** a mindmap with root 05 WORLDBUILDING. Branches: Definition (infrastructures), Catalog (twelve type families), Lens (coherence tests). Next comes View (the world view; filters era, place, group, type). Last comes Boundary (thin by default, Kennedy counter-voice).
 - **Diagram 2, the owner map:** a flowchart that routes a world fact. About one place goes to 03. One person goes to 02. A change over time goes to 08 (story points and checkpoints). An event or its telling goes to 04. The story's argument goes to 07. Anything else goes to the 09 catalog.
 - **Diagram 3, the compile flow:** 02, 03, 04, 08, the catalog and the trope layer feed a read-only compiler. The compiler runs the coherence tests, then writes the world view. Edits happen at the owning file, not in the view.
 
@@ -146,7 +146,7 @@ A coherence test is a named, checkable pass-or-fail check. "Runs as": S is scrip
 | CT8 | Distinctiveness | An entry used in a scene exerts pressure or is marked scenery | R |
 | CT9 | Onstage canon | A fact enters canon only when a scene narrates it | S |
 | CT10 | Compossibility and retcon cost | A new entry is checked against existing entries; a change to a narrated entry is logged as a retcon with its cost | R |
-| CT11 | Reinforcement | Mechanics, environment and narrative point at the same theme; the answer lives in 07 | R |
+| CT11 | Reinforcement | Mechanics, environment and narrative point at the same theme; the answer lives in 06 | R |
 | CT12 | Honest consequence | Consequences run as stated, not bent to convenience | R |
 | CT13 | Scale source | Every pressure names its starting rung | S |
 | CT14 | Referential density | Dense at the story's center, fuzzy at the edge | R |

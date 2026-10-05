@@ -111,7 +111,7 @@ Latent-theme line for the controlling idea: `⏸ OXO theme fill pass (phase 2)`.
 
 ## THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)
 
-**RULED 2026-09-29** (Chief, BOLO 93: "all rec", calls 2 Keep and 3 Split). Every civilization in the world runs its own value on the same four steps (positive · contrary · contradictory · negation of the negation). Each one is a face of the controlling idea: a system where ordinary people doing their jobs adds up to evil, and each one's −−− step is the lie it tells about itself. **The rule lives here; each civilization's four steps live on its catalog entry** (09), and the world view shows them. World scenes set in a civilization may read its gauge beside FAIRNESS.
+**RULED 2026-09-29** (Chief, BOLO 93: "all rec", calls 2 Keep and 3 Split). Every civilization in the world runs its own value on the same four steps (positive · contrary · contradictory · negation of the negation). Each one is a face of the controlling idea: a system where ordinary people doing their jobs adds up to evil, and each one's −−− step is the lie it tells about itself. **The rule lives here; each civilization's four steps live on its catalog entry** (05), and the world view shows them. World scenes set in a civilization may read its gauge beside FAIRNESS.
 
 | Civilization | Catalog entry | Value | −−− (the lie it tells) |
 |---|---|---|---|

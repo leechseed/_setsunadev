@@ -22,7 +22,7 @@ Look up fields in the [reference](2-reference.md). Read the [concept](1-concept.
 2. If not, ask: is it about one person? If yes, it goes to 02 Character.
 3. If not, ask: is it a change over time? If yes, the change goes to 08 Tracking.
 4. If the thing itself is an event or its telling, it goes to 04 Plot.
-5. If it is the story's argument, it goes to 07 Theme.
+5. If it is the story's argument, it goes to 06 Theme.
 6. Otherwise it is a shared thing. Make a catalog entry.
 
 ## Add a catalog stub

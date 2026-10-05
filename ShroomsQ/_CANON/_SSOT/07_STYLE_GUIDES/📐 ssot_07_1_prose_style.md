@@ -1,5 +1,5 @@
 ---
-type: ssot_06_style_guides
+type: ssot_07_style_guides
 category: prose_style
 version: 1.3.2
 tier: narratology

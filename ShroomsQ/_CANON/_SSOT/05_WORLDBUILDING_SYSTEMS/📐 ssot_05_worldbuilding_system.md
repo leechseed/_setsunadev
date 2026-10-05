@@ -45,7 +45,7 @@ The books agree on this shape. They define it as building "a representation of a
 | Individual people; a person's own outfit and habits | 02 Character (12-layer table) | A person's outfit is that person's record. |
 | Anything that changes over time | 08 Tracking: "one store, many views" | Change is a record in 08. The catalog points to it and never copies it. |
 | The order events happened and the order they are told | 04 Plot (fabula and told order) | The catalog entry's `origin` points to a fabula event. |
-| The argument the story makes | 07 Theme | Theme is one argument, not a record of the world. |
+| The argument the story makes | 06 Theme | Theme is one argument, not a record of the world. |
 | The list of stories | 01 registry (v0.1.7) | It lists stories, not things. It is not the catalog. |
 | Tropes | The trope layer (BOLO 89) | A layer across every system. Catalog entries carry a `tropes` field that points at it. |
 
@@ -57,9 +57,9 @@ The books agree on this shape. They define it as building "a representation of a
 | 02 Character | A person belongs to a group in the catalog; the person's outfit and habits stay in 02. A group's style and customs live here. | catalog is pointed at by 02 |
 | 03 Setting | Places name the styles and groups found there; the faction card notation stays in 03 (see OPEN 3). The catalog never restates a place's slice. | two-way pointers |
 | 04 Plot | Each entry's `origin` names a fabula event. | catalog points to 04 |
-| 05 Operations | Checked 9/29 by the CDR: owns procedures and registries, no world-fact type. It runs the compiler as a procedure. | none |
-| 06 Style | Checked 9/29 by the CDR: 07.1 prose · 07.2 documents · 07.3 pages; no world-fact type. How a world thing is written up follows 07.1. | none |
-| 07 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the answer. | lens asks 07 |
+| 09 Operations | Checked 9/29 by the CDR: owns procedures and registries, no world-fact type. It runs the compiler as a procedure. | none |
+| 07 Style | Checked 9/29 by the CDR: 07.1 prose · 07.2 documents · 07.3 pages; no world-fact type. How a world thing is written up follows 07.1. | none |
+| 06 Theme | The coherence lens asks whether mechanics, environment, and narrative reinforce the same theme [BVX.0144]. Theme owns the answer. | lens asks 07 |
 | 08 Tracking | Every change over time is a 08 record. Entries hold a pointer, `state`. 08 holds a reader track per character in §9A; the catalog does not copy it. | catalog points to 08 |
 | Trope layer | Every entry carries `tropes`; the register owns the trope. | catalog points to layer |
 
@@ -80,7 +80,7 @@ The books do not support calling all of worldbuilding one thing. Tested against 
 2. **The coherence tests are a lens.** Every test in the books is a question asked across parts: "Do all four pillars work together?" [BVX.0067], "Would settlements arise where they do for logical reasons?" [NEW-anderson]. None stores anything. Answers belong to 02, 03, 08, and the catalog.
 3. **The compiled page is a view.** It arranges records that live elsewhere.
 
-So system 09 is a system because of the catalog. The lens and the view ride on it. If the catalog were dropped, 09 would be a lens and nothing else.
+So system 05 is a system because of the catalog. The lens and the view ride on it. If the catalog were dropped, 09 would be a lens and nothing else.
 
 ---
 
@@ -90,7 +90,7 @@ So system 09 is a system because of the catalog. The lens and the view ride on i
 
 ```mermaid
 mindmap
-  root((09 WORLDBUILDING))
+  root((05 WORLDBUILDING))
     Definition
       infrastructures
       what a world must answer for
@@ -132,7 +132,7 @@ flowchart LR
   Q3 -- the thing itself --> Q4{An event or its telling?}
   Q4 -- yes --> S04[04 PLOT: fabula and told order]
   Q4 -- no --> Q5{The story's argument?}
-  Q5 -- yes --> S07[07 THEME]
+  Q5 -- yes --> S07[06 THEME]
   Q5 -- no --> S09[09 CATALOG: shared thing, by type]
 ```
 
@@ -205,7 +205,7 @@ A **coherence test** is a named check stated so a reader or script can pass or f
 | CT8 | **Distinctiveness** | An entry used in a scene either exerts pressure there or is marked scenery. Quality is distinctiveness, not volume. | R | BVX.0349; NEW-tremblay |
 | CT9 | **Onstage canon** | A fact enters canon for a story's binding clause only when a scene narrates it. | S | BVX.0538 |
 | CT10 | **Compossibility and retcon cost** | A new entry is checked against existing entries for whether both can hold; a change to a narrated entry is logged as a retcon with its cost. | R | BVX.0630 |
-| CT11 | **Reinforcement** | Mechanics, environment, and narrative point at the same theme and tone. Answer lives in 07. | R | BVX.0144; BVX.0349 |
+| CT11 | **Reinforcement** | Mechanics, environment, and narrative point at the same theme and tone. Answer lives in 06. | R | BVX.0144; BVX.0349 |
 | CT12 | **Honest consequence** | When a rule or entry is in play, its consequences run as stated, not bent to convenience. | R | BVX.0530 |
 | CT13 | **Scale source** | Every pressure names the rung it starts at: world-economy, nation-state, locality. | S | BVX.1161 |
 | CT14 | **Referential density** | The world is dense at the center of the story and fuzzy at the edge; it feels whole without being complete. | R | BVX.0100 |

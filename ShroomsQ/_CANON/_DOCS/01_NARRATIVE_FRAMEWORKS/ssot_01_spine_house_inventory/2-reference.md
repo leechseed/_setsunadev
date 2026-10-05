@@ -110,7 +110,7 @@ Everything in `02_CHARACTER_SYSTEMS/`, plus:
 - The bibles' genre registers.
 - The Phase-2 movement-to-genre heat map.
 
-## Archived conversations (story-craft relevant; titles + paths in CLAUDEARCHIVE2026-08-15/INDEX.md)
+## Archived conversations (story-craft relevant; titles + paths in CLAUDE_ARCHIVE_2026-08-15/INDEX.md)
 
 Index path in the source: `_CLAUDE_ARCHIVE_2026-08-15/INDEX.md`. Listed conversations: character DB architecture with Dramatica plus astrology (259k, 2/25); desires taxonomy. Also listed: replicating Dramatica in a local client (3/27); integrating TV Tropes data (3/29, feeds BOLO 15). Also listed: chess as narrative structure (6/10); MC doctrine × narrative production (6/8). Also listed: emotional systems for character design (8/5); misfit-group naming; 28 female body archetypes; shooting vs reading script. Also listed: novel-summarization template; BVX-LEARN taxonomy org (66k); LoL character DB schema.
 

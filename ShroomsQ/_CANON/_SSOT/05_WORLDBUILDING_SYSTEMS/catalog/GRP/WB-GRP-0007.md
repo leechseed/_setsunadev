@@ -25,7 +25,7 @@ Chief's 2026 notes: "america as bioshock infinite", so the North plays Columbia:
 Linked to [Providence](WB-GRP-0006.md), the techno-corpo state that breaks away from it (RULED 9/29, "all rec").
 - Sources: [5 OS Problem 3](<../../../../../../OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/ASTROSE7X/3. Illustrating/PLOT ILLUSTRATING/5 OS Problem 3.md>) · [25 John Smith the Eternal Introduction](<../../../../../../OVER_EXIT_OUT_OBSIDIAN/OVEREXITOUT/00_IMPORTED_JOPLIN/ASTROSE7X/4. STORYWEAVING/1 CHARACTER STORYWEAVING/25 John Smith the Eternal Introduction.md>) · the 6/20/2025 dump (read in the 5/16/2026 conversation) · the 2026 Apple Notes (raw, private)
 
-**The gauge: Liberty** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 07, the steps live here; plain words are Chief's to re-pick)
+**The gauge: Liberty** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 06, the steps live here; plain words are Chief's to re-pick)
 
 | Step | Name | Plain words |
 |---|---|---|

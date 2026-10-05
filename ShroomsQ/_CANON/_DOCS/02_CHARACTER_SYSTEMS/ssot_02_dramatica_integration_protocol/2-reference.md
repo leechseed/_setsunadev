@@ -77,7 +77,7 @@ Each nested storyform is a complete argument inside a parent storyform.
 | `status` | Lock state | `locked` / `draft` |
 | `version` | Storyform version | `1.0` |
 
-### Future Scaling (Flagged for plotsystems)
+### Future Scaling (Flagged for plot_systems)
 
 Act-level mini-forms and IP-level meta-forms are possible but not built.
 
@@ -186,7 +186,7 @@ Convention role (1.2.1, RULED 2026-10-04, CL15):
 - The main doc cites it from the L12 row.
 - Same call: L5 `relational_refs` kinds gain helper, opponent, sender, receiver, rival and beloved. `mentor_state` (present | absent | flawed, Dynamic) is added. The main doc defines both.
 
-### L12DRAMATICAEXTENDED Sub-Table (Tier 3 Only)
+### L12_DRAMATICA_EXTENDED Sub-Table (Tier 3 Only)
 
 Attaches to L12 for Tier 3. It does not feed derived stats or flag triggers. It serves reference, cross-character queries and Character Astrology.
 

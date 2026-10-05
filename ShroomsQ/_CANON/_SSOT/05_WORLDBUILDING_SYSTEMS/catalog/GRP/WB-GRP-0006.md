@@ -23,7 +23,7 @@ It breaks away from [the America it leaves behind](WB-GRP-0007.md) ⧗. If any p
 **When:** a power of era 2 (DCUS) ⧗; the moment of the breakaway has no event yet.
 **Not the same as** the AI rulers elsewhere in the notes: China's Grand Committee of the People's Spirits (the East), the W&W AI-led trade union, the MODS of ASTRO7EX, the DCUS Administration's "depersonalized OS".
 
-**The gauge: Safety** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 07, the steps live here; plain words are Chief's to re-pick)
+**The gauge: Safety** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 06, the steps live here; plain words are Chief's to re-pick)
 
 | Step | Name | Plain words |
 |---|---|---|

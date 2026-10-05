@@ -268,30 +268,30 @@ All other SC-12 variables take any value 0-12. All SC-20 variables (CORE, VITAL,
 
 The logic stays. Only the thresholds move to the new scales.
 
-### SHADOWDENIAL
+### SHADOW_DENIAL
 
 - Old: `WOUND > 6 AND SHADOW.projection_tendency >= 5 AND IMPRINT.conditional_patterns contains "merit_earns_freedom"`
 - New: same with `projection_tendency >= 6`.
 - Why: 5/10 = 50% maps to 6/12 = 50%.
 
-### TRUTHVULNERABILITY
+### TRUTH_VULNERABILITY
 
 - Old: `SOCIAL < 12 AND FUNCTION.motivation_element = "Equity" AND SHADOW.shadow_density > 6`
 - New: `SOCIAL < 12 AND FUNCTION.mc_problem_element = "Equity" AND SHADOW.shadow_density > 6`
 - Why: the threshold stays 6 on SC-12. It fires slightly more easily, which suits the narrative. The field `motivation_element` is renamed `mc_problem_element`.
 
-### OPTIONLOCKPROGRESSION
+### OPTIONLOCK_PROGRESSION
 
 - Old: `WOUND > 7 AND DESTINY.resistance_index > 7 AND FUNCTION.limit_type = "Optionlock"`
 - New: `WOUND > 8 AND DESTINY.resistance_index > 8 AND FUNCTION.limit_type = "Optionlock"`
 - Why: 7/10 maps to the next valid even value, 8.
 
-### EARNEDJUDGEMENT
+### EARNED_JUDGEMENT
 
 - Old and new: `FUNCTION.dramatica_archetype = "Protagonist" AND FUNCTION.story_outcome = "Failure" AND WILL > 10`
 - Why: no change. WILL is SC-20 and 10 is the midpoint.
 
-### KINSHIPCOLLAPSE
+### KINSHIP_COLLAPSE
 
 - Old: `IMPRINT.attachment_style_score > 5 AND primary_attachment_object = "deceased" AND WOUND > 7`
 - New: `IMPRINT.attachment_style_score > 6 AND primary_attachment_object = "deceased" AND WOUND > 8`

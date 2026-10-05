@@ -25,7 +25,7 @@ The gap it fills: the sale of Red Hills to the Bishops (backstory_dcus_rebrand).
 Presses on the story: it is the OS Domain made a place (Situation / The Past); the cost is Memories.
 - Named in: [delta-coast-ultra-school.md](../../../../../../_CANON_NODES/delta-coast-ultra-school.md)
 
-**The gauge: Worth** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 07, the steps live here; plain words are Chief's to re-pick)
+**The gauge: Worth** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 06, the steps live here; plain words are Chief's to re-pick)
 
 | Step | Name | Plain words |
 |---|---|---|

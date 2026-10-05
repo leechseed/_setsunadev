@@ -295,9 +295,9 @@ The ten frameworks are the validity layer under the grand argument. Each storyte
 | Character (02) | A trait or a change is true to the person. | Coherence (fits the rest of the character), Logical Reasoning (the change follows from its cause), Empirical Observation (the psychology holds up). |
 | Setting (03) | A canon fact: a place, rule or custom exists. | Coherence (no other fact contradicts it), Correspondence (the people act as the fact says). |
 | Plot (04) | An event happened and caused the next one. | Logical Reasoning (the cause chain holds), Historical Method (each event has a source in canon). |
-| Theme (07) | The argument: the story proves its premise. | Logical Reasoning (the conclusion follows from the premises), Pragmatic Theory (the premise produces the drama it claims). |
+| Theme (06) | The argument: the story proves its premise. | Logical Reasoning (the conclusion follows from the premises), Pragmatic Theory (the premise produces the drama it claims). |
 | Tracking (08) | A record: a state, time code or story point matches the story. | Correspondence (the record matches the text), Coherence (no record contradicts another). |
-| Worldbuilding (09) | A world claim fits the rules the world sets for itself. | Coherence, Correspondence. |
+| Worldbuilding (05) | A world claim fits the rules the world sets for itself. | Coherence, Correspondence. |
 
 Two rules apply to every row.
 

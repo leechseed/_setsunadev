@@ -1,6 +1,6 @@
 ---
 rung: procedure · NASA four, ruled 2026-09-15 (BOLO 50)
-type: ssot_06_style_guides
+type: ssot_07_style_guides
 category: style_guide
 version: 1.0.3
 tier: narratology

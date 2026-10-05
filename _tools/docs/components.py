@@ -39,7 +39,7 @@ def headings(text):
         m = re.match(r"^(##|###)\s+(.+?)\s*#*\s*$", line)
         if not m:
             continue
-        name = re.sub(r"[*_`]", "", m.group(2)).strip()
+        name = re.sub(r"\*+|`|(?<!\w)_+|_+(?!\w)", "", m.group(2)).strip()   # markdown marks only; keeps SHADOW_DENIAL whole
         if m.group(1) == "##":
             cur = None if SKIP.match(name) else {"name": name, "parts": []}
             if cur:

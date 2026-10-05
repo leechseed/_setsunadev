@@ -98,14 +98,13 @@ The ten systems, one line each.
 | 02 Character | [character system](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) | carries a Touchstone at L12 |
 | 03 Setting | [setting system](../../../_SSOT/03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) | carries Touchstones on the scene card |
 | 04 Plot | [plot system](../../../_SSOT/04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) | tells the argument in time |
-| 05 Operations | [standards ladder](../../../_SSOT/09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) | sets the rung of every document |
-| 06 Style guides | [prose style guide](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) | cites TS 1:1 |
-| 07 Theme | [theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) | argues; Touchstones hold |
+| 09 Operations | [standards ladder](../../../_SSOT/09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) | sets the rung of every document |
+| 07 Style guides | [prose style guide](../../../_SSOT/07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) | cites TS 1:1 |
+| 06 Theme | [theme system](../../../_SSOT/06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) | argues; Touchstones hold |
 | 08 Tracking | [tracking system](../../../_SSOT/08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) | tracks state |
-| 09 Worldbuilding | [worldbuilding system](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) | holds the shared world |
+| 05 Worldbuilding | [worldbuilding system](../../../_SSOT/05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) | holds the shared world |
 
-> **OPEN:** the source labels these systems with the old numbers (05 Operations, 06 Style guides, 07 Theme, 09 Worldbuilding) but links to the new folders (09_OPERATIONS, 07_STYLE_GUIDES, 06_THEME_SYSTEMS, 05_WORLDBUILDING_SYSTEMS). Systems were renumbered 10/5. The source contradicts itself here.
 
 **Sources and shelf.** Nothing in the register is new canon. The rules about rules: [DOCTRINE 0](../../../../../DOCTRINE-0-INVARIANTS.md), ratified 2026-09-03, seven rules; the file keeps its name. The 9/24 distill: [DISTILL.md](../../../../../_tools/bolostatus/work/81/DISTILL.md) (22 invariants in canon, 5 contradictions). The old reference shelf: [NNI-INDEX.md](../../../../../_tools/bolostatus/work/81/NNI-INDEX.md). It holds 47 works, 188 invariants, and three pushbacks quoted in full. Live wires: the scale ladder's completion tests, the collision engine's L12 × S12 row, character L12 `touchstone`. Also setting S12 and the scene cards' `touchstones:` field.
 
-**Version history.** 1.0.1 (2026-10-05, BOLO 102 batch C): command-line form and output of the check script written into rule 3. 1.0.0 (2026-10-04, BOLO 100 TOUCH BATCH 1): schema, rules, field rename, front-door links. TS 2:1 to TS 2:10 ruled in; vetoes and instance rules parked. 0.9.0 (2026-10-04, registers batch 1): frontmatter normalized; P1 to P10 listed as candidates. 0.1.0 (2026-09-29): TS 1:1 landed by direct ruling (BOLO 91); bootstrap stood up 2026-09-24.
+**Version history.** 1.0.1 (2026-10-05, BOLO 102 batch C). Batch C wrote the check script's command and output into rule 3. 1.0.0 (2026-10-04, BOLO 100 TOUCH BATCH 1): schema, rules, field rename, front-door links. TS 2:1 to TS 2:10 ruled in; vetoes and instance rules parked. 0.9.0 (2026-10-04, registers batch 1): frontmatter normalized; P1 to P10 listed as candidates. 0.1.0 (2026-09-29): TS 1:1 landed by direct ruling (BOLO 91); bootstrap stood up 2026-09-24.

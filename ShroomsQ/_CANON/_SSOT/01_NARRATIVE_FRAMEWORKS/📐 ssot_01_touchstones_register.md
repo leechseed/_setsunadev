@@ -166,11 +166,11 @@ The ten systems, one line each.
 - **02 Character:** [the character system](../02_CHARACTER_SYSTEMS/📐%20ssot_02_character_systems_vertical_slice.md) carries a Touchstone at L12.
 - **03 Setting:** [the setting system](../03_SETTING_SYSTEMS/📐%20ssot_03_setting_system.md) carries Touchstones on the scene card.
 - **04 Plot:** [the plot system](../04_PLOT_SYSTEMS/📐%20ssot_04_plot_system.md) tells the argument in time.
-- **05 Operations:** [the standards ladder](../09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) sets the rung of every document.
-- **06 Style guides:** [the prose style guide](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) cites TS 1:1.
-- **07 Theme:** [the theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) argues; Touchstones hold.
+- **09 Operations:** [the standards ladder](../09_OPERATIONS/📐%20ssot_09_operations_standards_ladder.md) sets the rung of every document.
+- **07 Style guides:** [the prose style guide](../07_STYLE_GUIDES/📐%20ssot_07_1_prose_style.md) cites TS 1:1.
+- **06 Theme:** [the theme system](../06_THEME_SYSTEMS/📐%20ssot_06_theme_system.md) argues; Touchstones hold.
 - **08 Tracking:** [the tracking system](../08_TRACKING_SYSTEMS/📐%20ssot_08_tracking_system.md) tracks state.
-- **09 Worldbuilding:** [the worldbuilding system](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) holds the shared world.
+- **05 Worldbuilding:** [the worldbuilding system](../05_WORLDBUILDING_SYSTEMS/📐%20ssot_05_worldbuilding_system.md) holds the shared world.
 
 ## Version history
 

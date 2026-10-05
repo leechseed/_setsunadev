@@ -25,7 +25,7 @@ Whether it has members, a will, or only a direction of growth is open ⧗.
 Not the 2024 **City Kudzu** of the State of Leonola (RULED 9/29: kept separate, Leonola lineage).
 - **The paired impact (RULED 9/29, "all rec"):** the "ocean 3rd impact" in the 2026 notes is a second impact, the Atlantic nexus (`backstory_ocean_third_impact`), paired with the south-pole one. What it wakes is not yet in the notes ⧗.
 
-**The gauge: Life** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 07, the steps live here; plain words are Chief's to re-pick)
+**The gauge: Life** (RULED 2026-09-29, "all rec": Keep · Split; the rule lives in 06, the steps live here; plain words are Chief's to re-pick)
 
 | Step | Name | Plain words |
 |---|---|---|

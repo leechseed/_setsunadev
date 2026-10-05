@@ -259,7 +259,7 @@ Relationships live in a separate structure, so one character's event never force
 - Computed once from the two natal charts. It does not change.
 - Synastry belongs in the relationship record, not in either character's record.
 
-## Boundaries with plotsystems
+## Boundaries with plot_systems
 
 This document defines character state tracking. It does not define story structure, scene sequencing or timeline management.
 
