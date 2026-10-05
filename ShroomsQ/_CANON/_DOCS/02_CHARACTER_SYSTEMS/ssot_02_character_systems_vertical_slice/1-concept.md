@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md
-source_version: 3.3.3
+source_version: 3.3.4
 ---
 
 **Who it's for:** a writer or builder asking why the character system is built this way · **What it does:** explains the idea behind twelve layers, three tiers and one data block · **Type:** concept

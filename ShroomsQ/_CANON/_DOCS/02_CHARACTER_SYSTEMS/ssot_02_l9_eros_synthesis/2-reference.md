@@ -152,7 +152,7 @@ Five questions.
 4. **No source addresses lesbian or WLW-specific desire architecture.** RULED 2026-09-29: logged to the acquisition list. The whole-spectrum sexuality library sweep already running covers it.
 5. **`venue_comfort_and_practice` sits between L7 and L9.** The synthesis followed the majority keying (L9 primary). The schema owner should confirm. It was not among the ten applied changes.
 
-> **OPEN:** the version history says the first draft had "four open questions". Section 6 now lists five.
+The history records the open-question count at the time of each version.
 
 ## 7. Version history
 

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_astrology_ingest.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a newcomer filling the form for the first time · **What it does:** one guided pass to a minimum viable chart · **Type:** tutorial

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_astrology_ingest.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer filling an astrology ingest for a Tier 3 character · **What it does:** numbered steps for each fill, feed and lock task · **Type:** how-to
@@ -40,7 +40,7 @@ Field lookups: [reference](2-reference.md). Why: [concept](1-concept.md). Prereq
 
 1. Pick pairs of planets whose Dramatica elements are in tension or flow.
 2. Add one row per aspect: Planet A, Planet B, Aspect, Dramatica tension source, Gate, Note.
-3. Use Opposition for Problem and Solution, and Square for Focus and Direction. Use Conjunction or Square for Unique Ability and Critical Flaw. Use Trine for reinforcing quad elements.
+3. Use Opposition for Problem and Solution, and Square for Focus and Direction. Use Conjunction or Square for Unique Ability and Critical Flaw. Use Trine for reinforcing quad elements. Use Sextile for quad elements that flow without conflict.
 4. Write at least three rows for a minimum viable chart.
 5. If sign geometry disagrees with the Dramatica tension, follow the tension.
 

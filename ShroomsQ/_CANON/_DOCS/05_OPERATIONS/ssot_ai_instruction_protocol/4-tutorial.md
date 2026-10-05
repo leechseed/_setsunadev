@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐 ssot_ai_instruction_protocol.md
-source_version: 1.2.0
+source_version: 1.2.1
 ---
 
 **Who it's for:** a first-time operator running the SSOT master prompt · **What it does:** walks one raw concept through the four phases to a finished file header · **Type:** tutorial
@@ -28,11 +28,11 @@ Strip informal words from the note. Replace "don't forget to" with an imperative
 
 ## Step 3. Structure
 
-Map the note to the skeleton: Purpose, Core Methodology, Implementation, Examples, Version History. Write two examples.
+Map the note to the frame (Purpose, Version History) and a body for its page type (06.2). A concept page carries two examples.
 
 ## Step 4. Refine
 
-Search for contractions and hedges ("might," "basically") and remove them.
+Search for hedges ("might," "basically") and remove them.
 
 ## Step 5. Name the file
 

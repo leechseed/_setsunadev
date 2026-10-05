@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_astrology_ingest.md
-source_version: 1.0.0
+source_version: 1.0.1
 ---
 
 **Who it's for:** a writer filling the blank astrology ingest form · **What it does:** lists every section of the form with its fields, sources and rules · **Type:** reference
@@ -97,10 +97,9 @@ Aspect types and their Dramatica sources:
 | Square | Focus / Direction |
 | Conjunction or Square | Unique Ability / Critical Flaw |
 | Trine | Reinforcing elements in a quad |
+| Sextile | Flowing elements in a quad that do not conflict |
 
 Rule: where sign geometry disagrees with the Dramatica tension, the Dramatica tension governs.
-
-> **OPEN:** the aspect list omits the Sextile that the astrology doc names as a soft aspect.
 
 ## 5. House Placements
 

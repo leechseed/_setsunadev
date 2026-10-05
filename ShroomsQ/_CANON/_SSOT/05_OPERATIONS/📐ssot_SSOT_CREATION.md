@@ -1,9 +1,9 @@
 ---
 type: ssot_methodology
 category: operations
-version: 1.8.0
+version: 1.8.1
 tier: operations
-last_updated: 2026-02-12
+last_updated: 2026-10-05
 applies_to:
   - OVEREXITOUT
   - ASTRO7EX
@@ -33,7 +33,7 @@ This document defines the structural and linguistic requirements for **Single So
 
 ## Linguistic Authority Standards
 
-- **No Contractions:** "Do not" / "It is" / "Cannot."
+- **Contractions Allowed:** "Do not" and "don't" both stand. The 06.2 style guide rules this (BOLO 92 merge call 1).
 - **No Hedging:** Eliminate "basically," "might," or "likely."
 - **Present Tense:** All systems are described in their current operational state.
 - **Bold Definitions:** **Bold** the first instance of technical terminology.
@@ -99,6 +99,7 @@ When pasting YAML from an external source (AI or Clipboard), Obsidian may fail t
 | 1.0.0   | 2026-02-10 | Initial Marine Corps standard.                                   |
 | 1.7.0   | 2026-02-12 | Added metadata troubleshooting.                                  |
 | 1.8.0   | 2026-02-12 | Integrated Manual UI Kickstart Protocol for Obsidian compliance. |
+| 1.8.1   | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): contractions are allowed, citing 06.2. |
 
 ---
 

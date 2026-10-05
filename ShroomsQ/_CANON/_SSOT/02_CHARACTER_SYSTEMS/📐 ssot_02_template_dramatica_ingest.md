@@ -2,9 +2,9 @@
 type: ssot_02_character_systems
 category: template_dramatica_ingest
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.0.1
+version: 1.0.2
 tier: narratology
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.0.0 2026-10-04: RULED — BOLO 100 C18"
 purpose: "Blank fill-in form for the Dramatica Ingest Template. One copy per Tier 3 character. It holds the locked storyform data that feeds the L12 block and the Character Astrology derivation."
@@ -49,7 +49,7 @@ Source: Story Dynamics Report. Lock these first.
 |`story_outcome`|____ (Success / Failure)|
 |`story_judgement`|____ (Good / Bad)|
 |`story_driver`|____ (Action / Decision)|
-|`story_limit`|____ (Timelock / Optionlock)|
+|`limit_type`|____ (Timelock / Optionlock)|
 
 ---
 
@@ -94,7 +94,7 @@ Source: Theme Report, MC throughline. Required if the character is the MC.
 |`mc_domain`|____|
 |`mc_concern`|____|
 |`mc_issue`|____|
-|`mc_problem`|____|
+|`mc_problem_element`|____|
 |`mc_solution`|____|
 |`mc_symptom`|____|
 |`mc_response`|____|
@@ -162,7 +162,7 @@ One line per report consulted, in extraction order.
 
 ## 9. Touchstones
 
-A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`; the old name `touchstone` is an alias in the variable registry.
+A Touchstone is a structural law derived from the storyform. Every Tier 3 character has at least one. The machine field is `touchstone`; the old name `narrative_invariant` is an alias in the variable registry.
 
 |Touchstone|Statement (one sentence)|Storyform source|What it costs the character|
 |---|---|---|---|
@@ -209,3 +209,4 @@ L12_FUNCTION:
 |---|---|---|
 |1.0.0|2026-10-04|v1.0.0 2026-10-04: RULED — BOLO 100 C18. First blank form, built from the integration doc and the Step 1 checks (2.1 to 2.9).|
 |1.0.1|2026-10-04|BOLO 100 TOUCH BATCH 1, Chief "REC.": field renamed, schema-pass wording closed (TS-B3).|
+|1.0.2|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): Section 1 `story_limit` renamed `limit_type`; Section 4 `mc_problem` renamed `mc_problem_element`, matching Section 10; Section 9's `touchstone` alias corrected to its old name, `narrative_invariant`, as the variable registry records it.|

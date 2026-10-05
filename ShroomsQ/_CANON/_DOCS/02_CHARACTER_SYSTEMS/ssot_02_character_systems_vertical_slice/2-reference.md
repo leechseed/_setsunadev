@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md
-source_version: 3.3.3
+source_version: 3.3.4
 ---
 
 **Who it's for:** a writer or builder looking up a layer, field, formula, flag or alias · **What it does:** lists every component of the character system doc · **Type:** reference
@@ -31,14 +31,6 @@ The system is the 12-Layer Character Database promoted to a system. It has three
 **Root claim:** a character is a wound-shaped want revealed under pressure. WOUND, DRIVE, WILL and SHADOW acting on CORE, VITAL and SOCIAL are the one engine the stack implements.
 
 **Touchstones:** read the [Touchstones register](../../../_SSOT/01_NARRATIVE_FRAMEWORKS/📐%20ssot_01_touchstones_register.md) first.
-
-> **OPEN:** the Structured Data Block in the instance gives `expressive_range: 2`. The derived-statistics table gives 4, and the version history says the move from 2 to 4 happened in 3.3.2. The block was not updated.
-
-> **OPEN:** the doc says all fractions round down. Victoria's Collapse Risk is `(8 + 7) / 2`, which rounds down to 7. The doc shows 8.
-
-> **OPEN:** Step 5 says "all six derived statistics". The table lists seven.
-
-> **OPEN:** Step 7 points to "the Examples section". The doc has no section by that name. The block sits under THE INSTANCE.
 
 ## MIND MODELS
 
@@ -528,7 +520,7 @@ Renamed 2026-08-24 (STATE #4): `motivation_element` became `mc_problem_element`.
 | Social Legibility | `10 - (6 / 3)` | 8 |
 | Narrative Momentum | `12 + (8 / 2)` | 16 |
 | Stress Threshold | `14 - 8` | 6 |
-| Collapse Risk | `(8 + 7) / 2` | 8 |
+| Collapse Risk | `(8 + 7) / 2` | 7 |
 | Truth Exposure Index | `10 + max(0, 10 - 2)` | 18 |
 | Expressive Range | `12 - 8` | 4 |
 
@@ -560,7 +552,7 @@ A plain-text block with these top-level keys, in order:
 - `civic_standing` holds {category: "the Ban; Sync-era standing", rank_or_score: null}.
 - `source_confidence: canonical` sits in L9.
 - `L12_DRAMATICA_EXTENDED` holds `motivation_quad: [Consider, Pursuit]`.
-- `DERIVED` lists seven values: 10, 8, 16, 6, 8, 18, and `expressive_range: 2`. See the OPEN note at the top.
+- `DERIVED` lists seven values: 10, 8, 16, 6, 7, 18, and `expressive_range: 4`.
 - `FLAGS` holds the five flag states above.
 
 ## THE SCHEMA PASS — aliases and drops (RULED 2026-10-04, BOLO 88, "all recommendations")
@@ -905,3 +897,4 @@ Added 2026-09-29 (BOLO 89). Every TV Tropes trope in the character domain is key
 | 3.3.1 | 2026-10-04 | Nine untagged sub-fields tagged. |
 | 3.3.2 | 2026-10-04 | Three scale fixes: Expressive Range `12 - armor_index`; shame fields on SC-12; TEI clamp. Victoria's Expressive Range 2 to 4. |
 | 3.3.3 | 2026-10-04 | Field `narrative_invariant` renamed `touchstone`. Front-door line added. |
+| 3.3.4 | 2026-10-05 | Block fixed: `expressive_range: 4`, `collapse_risk: 7`. Step 5 says seven statistics. Step 7 points to THE INSTANCE. |

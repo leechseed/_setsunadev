@@ -2,9 +2,9 @@
 type: ssot_02_character_systems
 category: character_astrology
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.1.0
+version: 1.1.1
 tier: fabula
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Before: canonical"
 purpose: "Defines the Character Astrology system as a deterministic character rendering engine within the LEECHSEED pipeline. Establishes narrative-first derivation policy, separates 15 framework categories into character-level and story-level domains, and specifies the system's relationship to Dramatica and the 12-Layer Character Database."
@@ -31,7 +31,7 @@ supersedes: ["ssot_narrative_astrology_framework", "ssot_narrative_astrology_mod
 
 ## Purpose
 
-This document defines **Character Astrology** — a deterministic character rendering engine that translates Dramatica storyform outputs into astrological notation, producing a secondary symbolic dataset for each character. Character Astrology sits between Dramatica and the 12-Layer Character Database in the pipeline. It consumes locked Dramatica data and produces astrological variables that feed Layers 7 through 11 of the Vertical Slice.
+This document defines **Character Astrology** — a deterministic character rendering engine that translates Dramatica storyform outputs into astrological notation, producing a secondary symbolic dataset for each character. Character Astrology sits between Dramatica and the 12-Layer Character Database in the pipeline. It consumes locked Dramatica data and produces astrological variables that feed Layers 1 through 11 of the Vertical Slice.
 
 This SSOT supersedes both prior "Narrative Astrology" documents. The system has been renamed to **Character Astrology** to reflect its function: it operates on characters, not on narratives broadly. It is classified under `02_CHARACTER_SYSTEMS`.
 
@@ -176,6 +176,8 @@ Geometric relationships between planetary variables function as logic gates that
 **OPPOSITION** (XOR Gate): A binary choice. The character cannot execute both variables simultaneously. Produces the either/or dilemmas that define key decisions.
 
 **TRINE** (OR Gate): A passive talent. Data flows freely between variables without friction. Produces natural ability that can lead to stagnation because there is no internal pressure to grow.
+
+**SEXTILE** (OR Gate): A soft opportunity. Data flows between variables when the character acts on it. Produces a talent that takes effort to use, so it does not stagnate.
 
 **Aspect assignment rule:** Aspects are not randomly assigned. They are derived from the tension relationships within the Dramatica element quads. When two Dramatica elements in a character's assignment are in natural tension (e.g., Equity and Inequity as Problem/Solution), the corresponding planets receive a hard aspect (Square or Opposition). When two elements flow naturally (e.g., elements within the same quad that do not conflict), the corresponding planets receive a soft aspect (Trine or Sextile). Conjunctions are reserved for cases where two Dramatica functions fuse in the character (e.g., when the MC Problem and the Motivation element point to the same behavioral output).
 
@@ -377,3 +379,4 @@ The two systems coexist. A complete Tier 3 character has both a Character Astrol
 |---|---|---|
 |1.0.0|2026-03-03|Initial SSOT. Renamed from Narrative Astrology to Character Astrology. Relocated to 02_CHARACTER_SYSTEMS. Separated 15 categories into character-level (9 categories) and story-level (6 categories). Established narrative-first policy. Defined pipeline position and relationship to 12-Layer system. Supersedes both prior Narrative Astrology documents.|
 |1.1.0|2026-10-04|RULED, Chief — BOLO 100 character batch 2: module stamp + schema catch-up. Stamped as a module of the character system. DAI summary table replaced by a pointer to the DAI doc. L7-L11 corrected to L1-L11. Dependency names fixed. Added: the 2.5.0 schema fields are not chart-fed. Frontmatter repaired and table of contents links made in-page. Blank template: ssot_02_template_astrology_ingest.md.|
+|1.1.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): Purpose now says Layers 1 through 11, matching Pipeline and Relationship. Added the Sextile gate (OR, a soft aspect).|

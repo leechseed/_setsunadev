@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.0
+source_version: 1.8.1
 ---
 
 **Who it's for:** a writer or Chief creating or checking an SSOT document · **What it does:** explains why SSOT creation follows one fixed process and a manual Obsidian fix · **Type:** concept
@@ -18,7 +18,7 @@ The **SSOT creation guide** defines the structural and linguistic requirements f
 
 ## The language carries the authority
 
-An SSOT states how a system works as a fact. The guide therefore bans contractions and hedges, requires present tense, and bolds the first use of each technical term. The reader meets a rule, not an opinion.
+An SSOT states how a system works as a fact. The guide therefore bans hedges, allows contractions, requires present tense, and bolds the first use of each technical term. The reader meets a rule, not an opinion.
 
 ## The process starts with a sorting question
 

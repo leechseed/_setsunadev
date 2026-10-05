@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.0
+source_version: 1.8.1
 ---
 
 **Who it's for:** a writer producing a new SSOT document · **What it does:** gives the steps to create, fix, and file an SSOT document · **Type:** how-to
@@ -17,7 +17,7 @@ source_version: 1.8.0
 ## Create an SSOT document
 
 1. Decide whether the content is a methodology. If it is project-specific, send it to `_AUTHORITATIVE/` and stop.
-2. Draft the core methodology and examples. Write with no contractions, no hedges, and present tense. Bold each technical term at first use.
+2. Draft the core methodology and examples. Write with no hedges and in present tense. Contractions are allowed. Bold each technical term at first use.
 3. Generate the YAML block from the standardized template. Check that `type`, `category`, and `applies_to` are present.
 4. Check the file in Obsidian. If the YAML shows as a code block, run the next task.
 5. Save the file as `📐 ssot_[category]_[name].md` in `_CANON/_SSOT/`.

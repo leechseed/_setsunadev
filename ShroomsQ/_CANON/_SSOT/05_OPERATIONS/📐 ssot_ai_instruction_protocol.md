@@ -1,9 +1,9 @@
 ---
 type: ssot_05_operations
 category: operations
-version: 1.2.0
+version: 1.2.1
 tier: operations
-last_updated: 2026-02-12
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: canonical
 purpose: This document serves as the master prompt and operational standard for AI systems tasked with generating SSOT-compliant documentation.
@@ -48,7 +48,7 @@ Every output must begin with a YAML block.
 
 You must process all prose through the following filters:
 
-1.  **No Contractions:** "Do not" instead of "don't." "It is" instead of "it's."
+1.  **Contractions Allowed:** "Don't" and "do not" both stand. The 06.2 style guide rules this (BOLO 92 merge call 1).
 2.  **No Hedging:** Remove "possibly," "potentially," "may," "might," or "basically."
 3.  **Active Voice/Present Tense:** Describe the system as it exists now. "The system triggers..." not "The system will trigger..."
 4.  **Technical Definition:** The first use of a complex term must be **Bolded** and defined.
@@ -58,16 +58,10 @@ You must process all prose through the following filters:
 
 ## Phase 3: Structural Requirements
 
-Every document must follow this exact H1-H2 hierarchy:
+The 06.2 style guide ([[📐 ssot_06_2_documents_style]]) replaced the fixed eight-part skeleton (BOLO 92 merge call 2). Follow 06.2.
 
-- **YAML Frontmatter**
-- **# 📐 ssot*[category]*[name]** (Title)
-- **## Table of Contents** (Linked)
-- **## Purpose** (Single paragraph)
-- **## Core Methodology** (The logic/rules)
-- **## Implementation** (Step-by-step use)
-- **## Examples** (Minimum 2 hypothetical scenarios)
-- **## Version History** (Table format)
+- **The frame stays:** YAML frontmatter, title, table of contents, purpose, version history (table format).
+- **The body follows the page's type.** Two examples stay required on concept pages only.
 
 ---
 
@@ -77,8 +71,8 @@ When given a prompt, follow these steps internally:
 
 1.  **Categorize:** Determine which of the 6 SSOT categories the content fits.
 2.  **Sanitize:** Strip away all informal language from the user's input.
-3.  **Structure:** Map the input to the Mandatory Structural Components.
-4.  **Refine:** Review specifically for contractions and hedging.
+3.  **Structure:** Map the input to the frame and the body for its page type (06.2).
+4.  **Refine:** Review specifically for hedging.
 5.  **Naming:** Format the final filename as `📐 ssot_[category]_[name].md`.
 
 ---
@@ -96,3 +90,4 @@ When given a prompt, follow these steps internally:
 | Version | Date       | Changes                                                                       |
 | :------ | :--------- | :---------------------------------------------------------------------------- |
 | 1.2.0   | 2026-02-12 | Consolidated SSOT Template and Writing Guide into a unified AI Master Prompt. |
+| 1.2.1   | 2026-10-05 | BOLO 102 batch A (Chief: "All recs go"): contractions allowed and the fixed skeleton replaced by a pointer to 06.2. |

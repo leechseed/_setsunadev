@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/05_OPERATIONS/📐ssot_SSOT_CREATION.md
-source_version: 1.8.0
+source_version: 1.8.1
 ---
 
 **Who it's for:** a writer looking up an SSOT writing rule, process phase, or naming rule · **What it does:** lists every standard, phase, and naming rule of the SSOT creation guide · **Type:** reference
@@ -20,12 +20,10 @@ The source has type `ssot_methodology`, category operations, status canonical, v
 
 Four rules govern the language:
 
-- **No Contractions:** "Do not" / "It is" / "Cannot."
+- **Contractions Allowed:** "Do not" and "don't" both stand. The 06.2 style guide rules this (BOLO 92 merge call 1).
 - **No Hedging:** eliminate "basically," "might," or "likely."
 - **Present Tense:** all systems are described in their current operational state.
 - **Bold Definitions:** **Bold** the first instance of technical terminology.
-
-> **OPEN:** the 06.2 style guide's BOLO 92 merge calls allow contractions; the source still bans them.
 
 ## The SSOT Creation Process: Step-by-Step
 

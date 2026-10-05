@@ -7,18 +7,16 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or builder looking up a category, planet, angle or rule · **What it does:** lists every component of the Character Astrology doc · **Type:** reference
 
 # Character astrology: reference
 
-Why the system exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked chart: [tutorial](4-tutorial.md). Source: [ssot_02_character_astrology.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_astrology.md), version 1.1.0.
+Why the system exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A worked chart: [tutorial](4-tutorial.md). Source: [ssot_02_character_astrology.md](../../../_SSOT/02_CHARACTER_SYSTEMS/📐%20ssot_02_character_astrology.md), version 1.1.1.
 
 Machine names appear in code font. Each planet or angle lists its function name, then the Dramatica input it derives from.
-
-> **OPEN:** the source's Purpose paragraph says the chart feeds "Layers 7 through 11". Its Pipeline and Relationship sections say layers 1 through 11. The version history says the 1.1.0 pass corrected this. The Purpose line was not changed.
 
 ## What Character Astrology Is
 
@@ -138,14 +136,13 @@ Aspects are logic gates that define internal friction and flow.
 | Square | NOT | Variable A blocks B. Friction forces a state change and drives turning points. |
 | Opposition | XOR | A binary choice. The character cannot run both. Either/or dilemmas. |
 | Trine | OR | Data flows freely. Natural ability that can lead to stagnation. |
+| Sextile | OR | Data flows when the character acts on it. A talent that takes effort, so it does not stagnate. |
 
 Assignment rule: aspects come from tension inside the Dramatica quads.
 
 - Elements in natural tension (e.g. Equity and Inequity as Problem/Solution) give a hard aspect: Square or Opposition.
 - Elements that flow give a soft aspect: Trine or Sextile.
 - Conjunctions are reserved for two Dramatica functions that fuse in the character.
-
-> **OPEN:** the source names Sextile in the assignment rule but defines no Sextile gate. The ingest template's aspect list also omits it.
 
 ### Category 8: House Systems (Environmental Context)
 

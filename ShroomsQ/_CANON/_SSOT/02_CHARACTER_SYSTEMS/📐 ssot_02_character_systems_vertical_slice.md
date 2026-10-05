@@ -1,9 +1,9 @@
 ---
 type: ssot_02_character_systems
 category: character_systems
-version: 3.3.3
+version: 3.3.4
 tier: [fabula, narratology]
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v3.3.2 2026-10-04: RULED, Chief (\"Rick\" = rec, then \"REC.\") — three scale fixes the base batch found: Expressive Range is `12 - armor_index` (was 10 -, negative at 11–12 on SC-12); `exposure_shame` and `role_shame` run SC-12 (0–12), matching their alias `shame_index`; Truth Exposure Index clamps its shame term, `SOCIAL + max(0, 10 - shame_index)`. v3.3.1 2026-10-04: CDR — nine sub-fields tagged (the review check found them untagged). v3.3.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 follow-up: CH-1–CH-5, FU-1 every field tagged. New fields: erotic_craft · power_exchange · standing (on community_membership) · neurotype · group_size · group_position. CH-4 is a narrow fix: the triangle_position merge is kept, and the group parts sit under desire_vector. Every key in the Structured Data Block now carries a tag: static, dynamic or derived. Victoria Midnight: new fields ⏸ VM fill pass (phase 2). v3.2.0 2026-10-04: RULED, Chief (\"rec\") — BOLO 100 library pass: CL1–CL31 applied (31 calls from 85 books), plus the Cite list of 31 more books; the CHARACTER × LIBRARY table now lists them all; 5 reopened calls applied narrowly. v3.1.0 2026-10-04: RULED, Chief — BOLO 100 character batch 2 (main doc): Step 1 points to the gate module · L12 points to the Dramatica integration module · field tags static/dynamic (C17). v3.0.0 2026-10-04: RULED, Chief: \"all rec\" — BOLO 100 character batch 1: Victoria Midnight's blank fields parked as the VM fill pass (phase 2), marker ⏸; held call 3 moved to 06.1 prose; call 5 closed; call 7 applied as the Villain-Arc Fork; call 9 moved to 08 tracking; call 8 promoted to optional scored dials (circumplex on L3, Dark and Light Triad on L10); call 12 `hereditary_predisposition` is a full L7 field; four thin names added (`locus_of_control`, `futurity_stance`, `minority_stress` trigger type, `body_capital`). v2.5.0 2026-10-04: RULED, Chief: \"all recommendations\" — the schema pass: 12 fields (identity_frame · community_membership · agreement_style · risk_management_practice · self_presentation · resistance_mode · motivation_stack · drive_texture · origin_disciplinary_formation · sexual_script_acquisition · polarity_role · love_lust_cleft); 139 coined names mapped as aliases or dropped; 4 held. Victoria Midnight unchanged. v2.4.0 2026-10-04: RULED, Chief: \"all rec\" — wave 3: L3/L9 knowledge_map · L9 template_origin.core_erotic_theme + arousal_curve SES/SIS · L9 consent_posture sub-fields (negotiation · signals · debrief + consent model) · L10 moral_incongruence. Victoria Midnight unchanged; new fields null (blank, then open). v2.3.0 2026-10-04: RULED 2026-10-04, Chief: \"rec\" — four wave-2 additions: L9 orientation_dimensions · L8 vandalism_event + L9 template_origin holds the lovemap · L9 charmed_circle_position (beside consent_posture, adults only) · L9 resonance_profile + L8 somatic_archive. Victoria Midnight instance unchanged; new fields null (blank, then open), no canon invented. About twelve more coined names wait for the schema pass (BOLO 88). v2.2.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" — the L9 EROS synthesis (ssot_02_l9_eros_synthesis.md) applied in full, all ten PROPOSED CHANGES: L9 EROS gains consent_posture, client_script (the scripted↔spontaneous axis), signal_fluency, resolution_type (under desire_vector), exposure_shame/role_shame (splitting shame_index, kept as a read alias), arousal_curve (under erotic_blueprint_type), erotic_safety_precondition_scope (internal/external), disclosure_posture (on L9, cross-linked to L3's), and template_origin (an L9→L8 pointer); erotic_pacing adopted as a Core Methodology writing rule, not a field. Victoria Midnight instance kept valid: exposure_shame, erotic_safety_precondition_scope, and template_origin backfilled from documented text (victoria-midnight-L9-eros.md); consent_posture, client_script, signal_fluency, resolution_type, role_shame, arousal_curve, and disclosure_posture marked null (blank, then open), no canon invented. The shelf's WLW/lesbian desire-architecture gap (synthesis §6 Open questions) logged to the acquisition list — the whole-spectrum library sweep already running covers it. ## TROPES untouched. v2.1.0 2026-09-29: RULED 2026-09-29, Chief: \"Rex\" (recs) — the schema bump the 9/16 calls were held for. Calls 1, 2, 4, 6, 8 (pilot note only), 10, 12, 13, 14, 15 applied; calls 3, 5, 7, 9 held exactly as ruled 9/16; call 11 closed (attachment theory now distilled, BVX.1127). New fields: L1/L2/L3 gain an Egri text stack; L4 gains coping_strategy and is redefined as decision-capacity not toughness; L5 gains severity, triggers, relational_refs; L7 gains provisional hereditary_predisposition; L8 gains attachment_dimensions, protest_behaviors, deactivating_strategies, and the rename primary_attachment_object → secure_base_object (old name kept as a read alias); L11 gains arc_type, change_cause, catalyst_archetype; L12 gains the Protagonist-necessity rule. Victoria Midnight instance kept valid: new fields empty or marked open where undocumented, no canon invented. v2.0.2 2026-09-16: the drop-folder intake folded in (Egri's bone structure, Attached, Vogler's masks), four OPEN calls added, schema unchanged. v2.0.1 2026-09-16: the eleven OPEN calls RULED as recommended, at the next schema bump (Chief: \"character calls go\"). v2.0.0 2026-09-16 (BOLO 18 character wave): the slice table, mind models, the library layer and OPEN added around the v1.1.0 schema; schema, formulas and the Victoria Midnight instance unchanged; provisional a week like every ruling"
 rung: standard
@@ -277,7 +277,7 @@ Populate L7 through L12 variable stacks from canonical source documentation. Eac
 
 ### Step 5 — Derived Statistic Computation
 
-Compute all six derived statistics. Read the Truth Exposure Index and Collapse Risk values first — these two stats most reliably indicate whether the numeric assignments are coherent.
+Compute all seven derived statistics. Read the Truth Exposure Index and Collapse Risk values first — these two stats most reliably indicate whether the numeric assignments are coherent.
 
 ### Step 6 — Flag Evaluation
 
@@ -285,7 +285,7 @@ Evaluate each flag trigger condition against the computed values. Document flag 
 
 ### Step 7 — Structured Data Block Generation
 
-Produce the structured data block in the format defined in the Examples section. This block is the output artifact. All preceding documentation is human-readable justification for the values in this block.
+Produce the structured data block in the format defined in THE INSTANCE. This block is the output artifact. All preceding documentation is human-readable justification for the values in this block.
 
 ---
 
@@ -507,7 +507,7 @@ The Optionlock fires because her wound and resistance index combination systemat
 |Social Legibility|`10 - (6 / 3)`|**8**|
 |Narrative Momentum|`12 + (8 / 2)`|**16**|
 |Stress Threshold|`14 - 8`|**6**|
-|Collapse Risk|`(8 + 7) / 2`|**8**|
+|Collapse Risk|`(8 + 7) / 2`|**7**|
 |Truth Exposure Index|`10 + max(0, 10 - 2)`|**18**|
 |Expressive Range|`12 - 8`|**4**|
 
@@ -700,9 +700,9 @@ DERIVED:
   social_legibility: 8
   narrative_momentum: 16
   stress_threshold: 6
-  collapse_risk: 8
+  collapse_risk: 7
   truth_exposure_index: 18
-  expressive_range: 2
+  expressive_range: 4
 
 FLAGS:
   SHADOW_DENIAL: ACTIVE
@@ -1052,6 +1052,7 @@ Numbered calls surfaced by the five new distills' own "For the character system"
 
 ## Version history
 
+- **3.3.4 · 2026-10-05** — BOLO 102 batch A (Chief: "All recs go"): the Structured Data Block now reads `expressive_range: 4` (the 3.3.2 move) and `collapse_risk: 7` (15 / 2 rounds down); Step 5 says seven derived statistics; Step 7 points to THE INSTANCE.
 - **3.3.3 · 2026-10-04** — BOLO 100 TOUCH BATCH 1, Chief "REC.": field `narrative_invariant` renamed `touchstone` incl. YAML example (TS-B3); front-door line (TS-B10).
 - **3.3.2 · 2026-10-04** — RULED, Chief ("Rick" = rec, BOLO 100 base batch follow-up): Expressive Range is `12 - armor_index`, so it stays 0–12 on SC-12. `exposure_shame` and `role_shame` run SC-12 (0–12), matching their alias `shame_index`. Victoria Midnight's worked Expressive Range moves 2 → 4. Her canon nodes still say 2; they update in the VM fill pass (phase 2). Truth Exposure Index clamps its shame term: `SOCIAL + max(0, 10 - shame_index)` (RULED, Chief: "REC."), so it never goes negative and Victoria Midnight stays 18.
 - **3.3.1 · 2026-10-04** — CDR: nine sub-fields the review page's every-field check found untagged now carry tags (`setting_ref`, `character_id` static; seven dynamic).

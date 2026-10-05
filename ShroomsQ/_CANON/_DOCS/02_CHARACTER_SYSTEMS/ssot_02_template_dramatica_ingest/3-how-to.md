@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_dramatica_ingest.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer filling a Dramatica ingest for a Tier 3 character · **What it does:** numbered steps for each fill, generate and lock task · **Type:** how-to
@@ -41,7 +41,7 @@ Field lookups: [reference](2-reference.md). Why: [concept](1-concept.md). After 
 2. Write `story_outcome` as Success or Failure.
 3. Write `story_judgement` as Good or Bad.
 4. Write `story_driver` as Action or Decision.
-5. Write `story_limit` as Timelock or Optionlock.
+5. Write `limit_type` as Timelock or Optionlock.
 
 ## Fill the structural role and the quads
 

@@ -2,9 +2,9 @@
 type: ssot_02_character_systems
 category: template_astrology_ingest
 module_of: ssot_02_character_systems_vertical_slice
-version: 1.0.0
+version: 1.0.1
 tier: fabula
-last_updated: 2026-10-04
+last_updated: 2026-10-05
 applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]
 status: "v1.0.0 2026-10-04: RULED — BOLO 100 C18"
 purpose: "Blank fill-in form for the Character Astrology Ingest Template. One copy per Tier 3 character. It holds the natal chart derived from the Dramatica Ingest through the DAI rules."
@@ -85,7 +85,7 @@ At least three aspects for the minimum viable chart. Each cites its Dramatica te
 |---|---|---|---|---|---|
 |____|____|____|____|____|____|
 
-Aspect types: Opposition (Problem / Solution) · Square (Focus / Direction) · Conjunction or Square (Unique Ability / Critical Flaw) · Trine (reinforcing elements in a quad). Where sign geometry disagrees with the Dramatica tension, the Dramatica tension governs.
+Aspect types: Opposition (Problem / Solution) · Square (Focus / Direction) · Conjunction or Square (Unique Ability / Critical Flaw) · Trine (reinforcing elements in a quad) · Sextile (flowing elements in a quad that do not conflict). Where sign geometry disagrees with the Dramatica tension, the Dramatica tension governs.
 
 ---
 
@@ -171,3 +171,4 @@ When the authoritative document is ambiguous, log the resolution in the notes co
 |Version|Date|Changes|
 |---|---|---|
 |1.0.0|2026-10-04|v1.0.0 2026-10-04: RULED — BOLO 100 C18. First blank form, built from the DAI doc, the astrology doc and the Step 1 checks (3.1 to 3.8).|
+|1.0.1|2026-10-05|BOLO 102 batch A (Chief: "All recs go"): added Sextile to the aspect list.|

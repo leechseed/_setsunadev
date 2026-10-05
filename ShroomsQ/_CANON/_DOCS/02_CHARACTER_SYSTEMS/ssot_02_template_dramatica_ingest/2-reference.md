@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_template_dramatica_ingest.md
-source_version: 1.0.1
+source_version: 1.0.2
 ---
 
 **Who it's for:** a writer filling the blank Dramatica ingest form · **What it does:** lists every section of the form with its fields, values and rules · **Type:** reference
@@ -18,9 +18,7 @@ Why the form exists: [concept](1-concept.md). Steps: [how-to](3-how-to.md). A fi
 
 Dependencies named in the source: the Dramatica integration protocol, the Step 1 source verification protocol, the DAI doc. Applies to OVEREXITOUT, ASTRO7EX and LAKAD. Tier 3 characters only.
 
-> **OPEN:** field names differ between sections. Section 1 uses `story_limit` and Section 10 uses `limit_type`. Section 4 uses `mc_problem` and Section 10 uses `mc_problem_element`. The form does not state the mapping.
-
-> **OPEN:** Section 9 says the old name of `touchstone` is an alias, but names the same word twice. The source does not give the old name.
+The old name `narrative_invariant` is an alias for `touchstone` in the variable registry.
 
 ## How to use this form
 
@@ -57,7 +55,7 @@ Source: Story Dynamics Report. Lock these first.
 | `story_outcome` | Success / Failure |
 | `story_judgement` | Good / Bad |
 | `story_driver` | Action / Decision |
-| `story_limit` | Timelock / Optionlock |
+| `limit_type` | Timelock / Optionlock |
 
 ## 2. Structural Role
 
@@ -89,7 +87,7 @@ Also required: the **structural meaning statement**. Two or three plain sentence
 
 Source: Theme Report, MC throughline. Required if the character is the MC.
 
-Fields: `mc_domain`, `mc_concern`, `mc_issue`, `mc_problem`, `mc_solution`, `mc_symptom`, `mc_response`, `mc_unique_ability`, `mc_critical_flaw`, `mc_benchmark`, `mc_focus`, `mc_direction`, `mc_inhibitor`.
+Fields: `mc_domain`, `mc_concern`, `mc_issue`, `mc_problem_element`, `mc_solution`, `mc_symptom`, `mc_response`, `mc_unique_ability`, `mc_critical_flaw`, `mc_benchmark`, `mc_focus`, `mc_direction`, `mc_inhibitor`.
 
 `mc_inhibitor` is not in the L12 sub-table. The DAI uses it for Saturn.
 

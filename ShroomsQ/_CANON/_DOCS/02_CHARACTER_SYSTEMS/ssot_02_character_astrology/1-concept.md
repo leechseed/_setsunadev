@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer or builder asking why the character system carries a chart · **What it does:** explains why Character Astrology exists and where it stops · **Type:** concept

@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_systems_vertical_slice.md
-source_version: 3.3.3
+source_version: 3.3.4
 ---
 
 **Who it's for:** a newcomer who has never computed a slice · **What it does:** one guided pass through Victoria Midnight's statistics and flags · **Type:** tutorial
@@ -48,11 +48,9 @@ Do each one yourself before you read the answer. Round fractions down.
 6. Truth Exposure Index is `SOCIAL + max(0, 10 - shame_index)`.
 7. Expressive Range is `12 - armor_index`.
 
-Answers from the source: 10, 8, 16, 6, 8, 18 and 4.
+Answers from the source: 10, 8, 16, 6, 7, 18 and 4.
 
-Check your fifth. 8 plus 7 is 15, and half of 15 rounds down to 7. The source's table writes `(8 + 7) / 2` and shows 8. Your 7 may differ from the source by one.
-
-> **OPEN:** the source rule says all fractions round down, but Collapse Risk for Victoria reads 8 where 15 / 2 rounds down to 7. The source does not explain the difference.
+Check your fifth. 8 plus 7 is 15, and half of 15 rounds down to 7. The source's table writes `(8 + 7) / 2` and shows 7.
 
 ## Step 3. Read the one that matters
 
@@ -80,11 +78,9 @@ Two newer fields do carry values: `wound_kind` is error_committed, and `civic_st
 
 ## Step 6. Spot an open item
 
-Look at the `DERIVED` section of her structured data block. It lists `expressive_range: 2`. You computed 4 in Step 2.
+Look at the `DERIVED` section of her structured data block. It lists `expressive_range: 4`. That matches the 4 you computed in Step 2.
 
 The version history explains the cause. Version 3.3.2 changed the formula to `12 - armor_index`, so her value moved from 2 to 4. Her canon nodes still say 2 and update in the VM fill pass.
-
-> **OPEN:** the block in the source still reads 2 while the derived table reads 4.
 
 ## What you learned
 

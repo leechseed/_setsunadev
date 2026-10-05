@@ -7,7 +7,7 @@ owner: Chief
 state: draft
 reviewed: 2026-10-05
 source: ShroomsQ/_CANON/_SSOT/02_CHARACTER_SYSTEMS/📐 ssot_02_character_astrology.md
-source_version: 1.1.0
+source_version: 1.1.1
 ---
 
 **Who it's for:** a writer building or checking a chart · **What it does:** numbered steps for each chart task · **Type:** how-to
@@ -49,7 +49,7 @@ Lookup tables: [reference](2-reference.md). Why the rules exist: [concept](1-con
 3. If they are, give a hard aspect: Square or Opposition.
 4. If they flow within the same quad, give a soft aspect: Trine or Sextile.
 5. Use a Conjunction only when the two Dramatica functions fuse in this character.
-6. Record the gate: Conjunction is AND, Square is NOT, Opposition is XOR, Trine is OR.
+6. Record the gate: Conjunction is AND, Square is NOT, Opposition is XOR, Trine is OR, Sextile is OR.
 
 ## Assign a house
 
