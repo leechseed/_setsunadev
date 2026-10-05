@@ -73,7 +73,7 @@ One entry per component of the source, in source order. T1 to T12 are the textur
 - **Rule:** narration never states a character's motive outright. The reader infers it from what the character does, says and refuses. A narrator line that says why a character acts fails.
 - **Where motive lives:** the character's L5 WOUND and L6 DRIVE set it. The page shows only the effects.
 - **Source:** Corbett (BVX.0196). Moved here from the character system, OPEN call 3, on 2026-10-04.
-- **Theme tests (call 2, IF-06-07-06, IF-06-07-07):** theme's citation test and knowledge gradient run on the scene plan, not the narrated text. The page shows the answer in speech or action. The tyranny of motive and the test do not clash.
+- **Theme tests (call 2, IF-06-07-06, IF-06-07-07):** theme's citation test and knowledge gradient run on the scene plan. They do not run on the narrated text. The page shows the answer in speech or action. The tyranny of motive and the test do not clash.
 - **Check item:** 10.
 
 ## Register & diction

@@ -136,7 +136,7 @@ An infrastructure is an area a complete world must answer for. Ten merge nine so
 
 - **Sourcing:** Wolf's list (BVX.0562) is not in the shelf extraction. OPEN 8 closed it from BVX.0562's distill. Wolf's eight (maps, timelines, genealogies, nature, culture, language, mythology, philosophy) all land in the spine.
 - **Departure dial:** how far each infrastructure departs from our world: nominal, cultural, natural, ontological (BVX.0562). Scored on nine axes as same, augmented or different (BVX.0630).
-- **The reach:** world-economy, nation-state, locality (BVX.1161). The dial says which tier pressure starts from. "Scale ladder" now means only 01's R1 BEAT to R8 UNIVERSE; the reach is a separate scale (IF-01-05-12; IF catalog call 10, ruled 2026-10-05).
+- **The reach:** world-economy, nation-state, locality (BVX.1161). The dial says which tier pressure starts from. "Scale ladder" now means only 01's R1 BEAT to R8 UNIVERSE. The reach is a separate scale (IF-01-05-12; IF catalog call 10, ruled 2026-10-05).
 - **Not separate infrastructures:** Stars and Planets go to 03 S1. Urban Fantasy and Paranormal Romance is a genre choice, so it goes to the departure dial. Audio-Visual maps to 03 S3 SENSORIUM. Game Mechanics is dropped.
 - **Method:** bricolage (BVX.0141). Two build orders, top-down and bottom-up (NEW-blueprint). Geography comes before culture (BVX.0458).
 
@@ -295,8 +295,8 @@ The compiled, read-only page. A script reads 02, 03, 04, 08, the catalog and the
 - **Test results:** CT1, CT3, CT4, CT5, CT6, CT9, CT13 as pass, fail, or "stub, not yet checkable".
 - **Gap list:** infrastructures I1 to I10 with no entry, shown as gaps, not failures.
 - **Gauges:** each civilization's gauge, its value and four steps.
-- **Page rules:** 07.3 rules the page: dark palette, thin header strip, CK3 hover terms and static Mermaid markup (IF catalog call 7, ruled 2026-10-05).
-- **Filters:** era (the span from `founded:` to `current:`, in the 08 time code), place (03 `place_id`), group (GRP id), type (type code).
+- **Page rules:** 07.3 rules the page (IF catalog call 7, ruled 2026-10-05). The page takes the dark palette, thin header strip, CK3 hover terms and static Mermaid markup.
+- **Filters:** era (the span from `founded:` to `current:`, in the 08 time code). The page also filters by place (03 `place_id`), group (GRP id) and type (type code).
 - **Edits:** happen at the owning file. The view has no input fields.
 
 ## THE PROOF — DCUS (1.0, 2026-09-29)
@@ -314,7 +314,7 @@ DCUS narration is marked phase 2. The catalog proved itself on DCUS: filled from
 | WB-WDR-0001 Feed-linked clothing | WDR | M2 to M4 | none in canon | locality |
 
 - **Findings:** Tremor Cult was misfiled; its entry is retired. Quinn Bishop has no 02 node yet; the link check reports it owed by 02. Every era ends at M4 because canon casts DCUS for Movements 2 to 4.
-- **State ids:** `state:` reads `<kind>:<slug>`, with kind one of `place`, `group`, `belief`, `custom`, `tech`, `wardrobe`, `architecture`, or `world` for a world-level change. 08 `subject.kind` accepts all eight. A subject need not have story points yet.
+- **State ids:** `state:` reads `<kind>:<slug>`. The kind is one of `place`, `group`, `belief`, `custom`, `tech`, `wardrobe`, `architecture`, or `world` for a world-level change. 08 `subject.kind` accepts all eight. A subject need not have story points yet.
 - **The lens, run 9/29:** script tests CT1, CT3, CT5, CT6, CT13 pass on the filled set. CT4 has no ruins yet. CT9 has no canon claims yet. Reader tests CT10, CT11, CT14, CT16 pass. CT2, CT7, CT8, CT12, CT15 stub. No fails.
 - **1.0 bar (SOP §5):** Shape, Shelf (27 books), Proof (DCUS), Ruled (OPEN 1 to 9). Wired (02, 03, 04, 08, tropes) and Store (7 filled) follow. The system meets all of them. The 1.0 bar is SOP §5's six, and no other list counts (IF catalog call 10, ruled 2026-10-05).
 

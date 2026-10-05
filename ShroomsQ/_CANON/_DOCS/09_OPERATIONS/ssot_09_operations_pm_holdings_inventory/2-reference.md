@@ -34,7 +34,7 @@ flowchart TD
 
 The source has type `register / survey`, version 1.1.0, tier operations, domain 09_OPERATIONS. Status: survey banked 2026-09-03, feeding BOLO 25. Date 2026-09-03. Method: an Explore-agent sweep of the repo and archive at medium breadth, with paths verified where load-bearing. Trunk: BLACK (systems), serving every trunk. Related: BOLO.md #25, SOP.md, STATE.md, PROJECTS.md, DOCTRINE-0-INVARIANTS.md, BVX-ULTRASIN-twin-track.md, oscar-mike/lab-venture.md.
 
-**Interfaces.** The 05 compiler `_tools/worldview/build.py` generates `catalog/_INDEX.md` and the world view page from the catalog files (IF-05-09-01).
+**Interfaces.** The 05 compiler `_tools/worldview/build.py` generates `catalog/_INDEX.md` from the catalog files (IF-05-09-01). It also generates the world view page from them.
 
 The Command keeps the inventory, and Chief owns it. The Command re-sweeps it when BOLO 25, the standard PM flow, builds a step. It also re-sweeps whenever a listed holding changes state. Chief decides any other re-sweep. The author verifies each path before listing it.
 

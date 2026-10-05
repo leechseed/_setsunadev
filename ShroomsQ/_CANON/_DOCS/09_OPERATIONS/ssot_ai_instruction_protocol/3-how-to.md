@@ -38,7 +38,7 @@ source_version: 1.3.0
 
 1. Confirm the filename is the first line, above the YAML.
 2. Confirm the file begins with `📐 ssot_`.
-3. Confirm the YAML has `type`, `category`, `applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]`, `status: canonical`, wikilink `dependencies`, a `rung` (policy, procedure, standard or handbook), and a `trunk` (BLACK or ORANGE).
+3. Confirm the YAML has `type`, `category`, `applies_to: [OVEREXITOUT, ASTRO7EX, LAKAD]`, `status: canonical` and wikilink `dependencies`. Confirm it also has a `rung` (policy, procedure, standard or handbook) and a `trunk` (BLACK or ORANGE).
 4. Confirm the frame: YAML, title, Table of Contents, Purpose, Version History. Confirm the body follows the page's type (07.2).
 5. Confirm at least two examples on a concept page.
 6. Scan for hedge words.

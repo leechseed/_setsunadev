@@ -46,7 +46,7 @@ The writer searches for `#canon-ready`, moves those passages to `_STAGED/` for r
 
 Chief reviews everything in `_STAGED/`. The writer does not promote on the writer's own call. Chief rules before anything reaches `_CANON/`.
 
-A passage qualifies for promotion when it carries `#canon-ready` and Chief rules it in. The writer checks it against the live Touchstones first. The writer then moves it to its home. A `#ssot-candidate` goes to an SSOT doc in the folder the AI instruction protocol's category-to-folder table names. Chief decides the folder for domains 03, 05, 06 and 08, so the writer parks those candidates in Chief's queue (IF catalog call 9, ruled 2026-10-05). An `#auth-candidate` goes to `_AUTHORITATIVE/`. The writer adds a version-history row naming the date and the ruling.
+A passage qualifies for promotion when it carries `#canon-ready` and Chief rules it in. The writer checks it against the live Touchstones first. The writer then moves it to its home. A `#ssot-candidate` goes to an SSOT doc in the folder the AI instruction protocol's category-to-folder table names. Chief decides the folder for domains 03, 05, 06 and 08. The writer therefore parks those candidates in Chief's queue (IF catalog call 9, ruled 2026-10-05). An `#auth-candidate` goes to `_AUTHORITATIVE/`. The writer adds a version-history row naming the date and the ruling.
 
 ## File Naming Convention
 

@@ -60,7 +60,7 @@ A document with no frontmatter gets a three-line block holding only the tag. Rea
 
 ## The filing table · 2026-09-15
 
-The table carries one row per core SSOT doc: all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level (IF catalog call 9, ruled 2026-10-05). The writer picks each rung by the rule above. A script then stamps the rung into each doc's front matter. Every row below then reads `stamped`. Two files moved out of 09 under the same ruling. The character pipeline illustration now lives in 02, and the Bold Venture Design System now lives in 00. Their rows below carry the new folders. Read by 07 (IF-07-09-04): 07.3 reads the Bold Venture Design System (ROSE anchor #8A1F44, FLESH ramp, four registers, Luminance Law, one-red ledger), now filed in 00.
+The table carries one row per core SSOT doc (IF catalog call 9, ruled 2026-10-05). It holds all 59 in `ShroomsQ/_CANON/_SSOT/0*/`, top level. The writer picks each rung by the rule above. A script then stamps the rung into each doc's front matter. Every row below then reads `stamped`. Two files moved out of 09 under the same ruling. The character pipeline illustration now lives in 02, and the Bold Venture Design System now lives in 00. Their rows below carry the new folders. Read by 07 (IF-07-09-04): 07.3 reads the Bold Venture Design System, now filed in 00. The system holds the ROSE anchor #8A1F44, FLESH ramp, four registers, Luminance Law and one-red ledger.
 
 | Document | Rung | Status |
 |---|---|---|
@@ -194,4 +194,4 @@ The index links all 26 filed Command documents to the level or project they gove
 
 ## Governance
 
-DOCTRINE 0 governs. The ladder is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth. A document found without one is filed at the next sit rep. A system doc reaches version 1.0.0 only when it clears SOP §5's 1.0 bar: Shape · Shelf · Proof · Ruled · Wired · Store. Chief rules the bar, and no other list of 1.0 criteria stands in the Command (IF catalog call 10, ruled 2026-10-05).
+DOCTRINE 0 governs. The ladder is v0.1, ruled, and promotes to canonical after two filing passes. Phase 4 of BOLO 50 was the first pass. The next document written in the Command carries the tag from birth. A document found without one is filed at the next sit rep. A system doc reaches version 1.0.0 only when it clears SOP §5's 1.0 bar: Shape · Shelf · Proof · Ruled · Wired · Store. Chief rules the bar (IF catalog call 10, ruled 2026-10-05). No other list of 1.0 criteria stands in the Command.

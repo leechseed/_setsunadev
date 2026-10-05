@@ -109,7 +109,7 @@ One debate per point of view. Each is the storyform's locked Issue versus Counte
 
 The four sum to the controlling idea. Every Meets cell and the latent-theme line hold the mark "OXO theme fill pass (phase 2)".
 
-`holders:` lists the 08 track ids of the characters or worlds that carry each rail's debate (IF catalog call 2, ruled 2026-10-05; IF-02-06-04).
+`holders:` lists the 08 track ids (IF catalog call 2, ruled 2026-10-05; IF-02-06-04). The ids name the characters or worlds that carry each rail's debate.
 
 The theme record is 06's output on the scene card (03) and the plot card (04) (IF-04-06-03, IF-04-06-04). It holds:
 - `rail_tested`: the rail, R1 to R4, that the unit tests.
@@ -121,7 +121,7 @@ The theme record is 06's output on the scene card (03) and the plot card (04) (I
 
 Interfaces:
 - Reads from 02 (IF-02-06-02): L11 `growth_axis`, `growth_requirement` and `resistance_index`. L11's `rail_ref` names the rail.
-- Reads from 02 (IF-06-09-01): the Dramatica ingest's Theme Report throughline variable sets feed the rails' pairs (IF catalog call 9).
+- Reads from 02 (IF-06-09-01). The Dramatica ingest's Theme Report throughline variable sets feed the rails' pairs (IF catalog call 9).
 - Writes to 01 (IF-01-06-09): the rails' pairs source the scale ladder's thematic motif thread.
 - Reads from 08 (IF-06-08-05): Anna's reader track lives in 08 §9A. 06 cites it and does not copy it.
 
@@ -147,13 +147,13 @@ Second gauge: Fairness, for world scenes (80-G, ruled 2026-09-29). World scenes 
 | -- Contradictory | Injustice | *They change the rules when you start winning.* |
 | --- Negation of the negation | A rigged game that calls itself fair | *They cheat you and give you a grade for it.* |
 
-The theme record's `gauge` field names one gauge beside the step: Freedom, Fairness or a civilization's value (IF catalog call 2).
+The theme record's `gauge` field names one gauge beside the step (IF catalog call 2). The gauge is Freedom, Fairness or a civilization's value.
 
 08 holds each gauge as a value lane under a character or world track (IF-06-08-03, IF-06-08-06).
 
 ## THE CIVILIZATION GAUGES — one value per power (RULED 2026-09-29)
 
-Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own value on the same four steps. The rule lives here. Each civilization's four steps live on its catalog entry in 05, in the entry's `gauge:` field (IF catalog call 3; IF-05-06-04). World scenes may read a civilization's gauge beside Fairness.
+Ruled in BOLO 93 (calls 2 Keep and 3 Split). Every civilization runs its own value on the same four steps. The rule lives here. Each civilization's catalog entry in 05 holds its four steps (IF catalog call 3; IF-05-06-04). The entry's `gauge:` field carries them. World scenes may read a civilization's gauge beside Fairness.
 
 | Civilization | Catalog entry | Value | Last step (the lie it tells) |
 |---|---|---|---|
@@ -176,7 +176,7 @@ Motifs feed the texture system. Each appearance moves the Freedom scale. The Fee
 | A door she could walk out of | `motif.open_door` | Freedom in reach, never taken until the Stop | Tori's Growth (Stop); + *Your life is yours* | none |
 | The Feed | `motif.the_feed` | The system watching and scoring you, always on | debate 1; -- *You're managed, not free* | WB-TEC-0001 |
 
-Motif ids: 06 mints each `motif.<slug>` id, and 08 uses it as the story point `field: motif.<id>` (IF catalog call 2; IF-06-08-01, IF-06-08-02).
+Motif ids: 06 mints each `motif.<slug>` id (IF catalog call 2; IF-06-08-01, IF-06-08-02). 08 uses it as the story point `field: motif.<id>`.
 
 `motif_ref` links a motif to the catalog id of the setting object behind it (IF catalog call 3; IF-05-06-03, IF-05-06-05). The clothing glow links to WB-WDR-0001 and stays setting.
 
@@ -206,7 +206,7 @@ Three tests carry the idea down to the scene. They ride the scene card in [ssot_
 | Knowledge gradient | Zimbardo, PSY.49 | A field inside the citation test. The card names who knows better. A character who knows better and complies is the hard case. |
 | Two-transcripts test | Scott, PHI.03 | The card says whether the scene plays on the public script or the hidden transcript, and what changes between them. |
 
-Where the tests run (IF catalog call 7, ruled 2026-10-05): the citation test and the knowledge gradient run on the scene plan, not on the narrated text. 07.1's "narration never states motive" does not clash with them. The author shows the rule in speech or action (IF-06-07-06, IF-06-07-07).
+Where the tests run (IF catalog call 7, ruled 2026-10-05). The citation test and the knowledge gradient run on the scene plan, not on the narrated text. 07.1's "narration never states motive" does not clash with them. The author shows the rule in speech or action (IF-06-07-06, IF-06-07-07).
 
 **The rider** (Stangneth, PHI.04): the idea describes what the system allows, never what each person is. Anna stays a question: cog, believer or mask. Her reader track in 08 §9A holds it open (IF-06-08-05).
 
@@ -232,7 +232,7 @@ Themes argue; Touchstones hold. No scene writes past a live Touchstone. Live one
 This doc's own 1.0 list retires (IF catalog call 10, ruled 2026-10-05). The bar is SOP §5's six at equal weight (IF-06-09-03):
 - Shape: cleared. The method, the worked instance and the handshake are written.
 - Shelf: cleared. The method cites Egri, McKee, Coyne, Truby, Dramatica and Foucault (MSX.36).
-- Proof: cleared. OVEREXITOUT carries the instance, and a theme read sits on all 7 cards: M1-skeleton, M2-grief-summary, M2-row9, M3-crash-analepsis, M4-skeleton, M5-skeleton, M6-skeleton, in `_CANON_NODES/` as `oxo-scene-card-*.md`.
+- Proof: cleared. OVEREXITOUT carries the instance. A theme read sits on all 7 cards: M1-skeleton, M2-grief-summary, M2-row9, M3-crash-analepsis, M4-skeleton, M5-skeleton, M6-skeleton, in `_CANON_NODES/` as `oxo-scene-card-*.md`.
 - Ruled: cleared. No OPEN call remains in the source, and EVIL CHECK is parked.
 - Wired: written in 1.4.0. `holders`, the motif ids, `motif_ref`, the theme record and the CT11 verdict name the neighbours.
 - Store: open. The rails' `meets` values and the latent-theme line are stubs until the OXO theme fill pass.

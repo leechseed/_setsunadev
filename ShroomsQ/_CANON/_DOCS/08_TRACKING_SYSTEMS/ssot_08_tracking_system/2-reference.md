@@ -259,7 +259,7 @@ proportion:
 
 Interfaces:
 - Reads from 00 (IF-00-08-01): `T3.IMPRINT.primary_attachment_object` is a field a story point may change.
-- Read by 05 (IF-05-08-02, IF-05-08-03): each catalog entry's `state` is a `<kind>:<slug>` subject; the world-view compiler reads its points and checkpoints.
+- Read by 05 (IF-05-08-02, IF-05-08-03): each catalog entry's `state` is a `<kind>:<slug>` subject. The world-view compiler reads its points and checkpoints.
 - Read by 09 (IF-08-09-01): the character pipeline writes a single-field change as a §5 story point, never a checkpoint.
 - Read by 01 texture (IF-01-08-04): the T7 payoff ledger reads `character_id` and `shifted_at` from §9A.
 - Read by 07.1 (IF-07-08-01): 07.1 reads audience tempo and the planned and measured lanes.
@@ -281,8 +281,8 @@ disclosure: revealed | concealed
 - A `concealed` entry with high `trust` marks a lie the reader still holds. The reveal scene flips it to `revealed` and drops `trust`.
 - A cable can run from the planting scene to the overturning scene.
 - **Anna's reader track:** it lives here. 06 cites it to hold open whether she is a cog, a believer or a mask.
-- **Hook ledger (IF catalog call 6):** sits beside the T7 payoff ledger. Each entry holds `hook_id`, `type` (P6 hook type), `container` (the unit that closes on the hook) and `payoff_at` (a time code; unset while open).
-- **Touchstone breach log (IF catalog call 6):** each entry holds `breach_at` (a time code), `touchstone_id` (a TS id) and `invalidated_units` (downstream time codes that trusted the breached unit).
+- **Hook ledger (IF catalog call 6):** sits beside the T7 payoff ledger. Each entry holds `hook_id`, `type` (P6 hook type) and `container` (the unit that closes on the hook). It also holds `payoff_at` (a time code; unset while open).
+- **Touchstone breach log (IF catalog call 6):** each entry holds `breach_at` (a time code). It also holds `touchstone_id` (a TS id) and `invalidated_units` (downstream time codes that trusted the breached unit).
 - Sources: BVX.0279 (Iglesias), BVX.1147 (Doležel).
 
 ## 10. Open

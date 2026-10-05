@@ -54,7 +54,7 @@ Look up shapes in the [reference](2-reference.md). Read the [concept](1-concept.
 ## Record a story point
 
 1. Name a `story_point_id` slug.
-2. Set `subject.kind` to character, trait, trope, place, relationship, theme, gauge, group, belief, custom, tech, wardrobe, architecture or world, and set `subject.id`.
+2. Set `subject.kind` to character, trait, trope, place, relationship, theme, gauge, group, belief, custom, tech, wardrobe, architecture or world. Then set `subject.id`.
 3. Write the `field` path and the new `value`.
 4. Write `at` as a time code.
 5. Add `origin_event` if the point reads from a dated fabula event.

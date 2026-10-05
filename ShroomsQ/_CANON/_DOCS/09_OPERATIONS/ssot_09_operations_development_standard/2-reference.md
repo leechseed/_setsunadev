@@ -16,7 +16,7 @@ source_version: 0.2.0
 
 The source has type `ssot_standard`, category operations, version 0.2.0, last updated 2026-10-05. It applies to BOLD_VENTURE, ULTRASIN, OPERATOR. Status: working, v0.1; it promotes to canonical after two project uses (DOCTRINE 0, Invariant I). Working title: true. BOLO 53. Rung: procedure, NASA four, ruled 2026-09-15 (BOLO 50).
 
-**Interfaces.** The 00 pattern library reads SOP.md §1's four steps (IF-00-09-01). The pattern library's loop steps 1 to 3 map to RECON, 4 and 5 to ORDER, 6 and 7 to EXECUTE, 8 and 9 to CONSOLIDATE.
+**Interfaces.** The 00 pattern library reads SOP.md §1's four steps (IF-00-09-01). The pattern library's loop steps 1 to 3 map to RECON, and 4 and 5 to ORDER. Steps 6 and 7 map to EXECUTE, and 8 and 9 to CONSOLIDATE.
 
 ## Core Methodology
 

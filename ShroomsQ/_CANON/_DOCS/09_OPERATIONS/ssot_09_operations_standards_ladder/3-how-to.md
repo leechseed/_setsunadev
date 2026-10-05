@@ -35,7 +35,7 @@ source_version: 0.3.0
 
 ## Add a document to the filing table
 
-1. Add one row: document, rung, status. Every core SSOT doc under `_SSOT/0*/` has a row, and a new one gets its row at birth (IF catalog call 9, ruled 2026-10-05).
+1. Add one row: document, rung, status. Every core SSOT doc under `_SSOT/0*/` has a row (IF catalog call 9, ruled 2026-10-05). A new one gets its row at birth.
 2. Add a row to Table 1 with what it governs, its Command parents, and its outside parents.
 3. Add the document to its level or world row in Table 3.
 4. If it cites an outside body, add it to Table 2.
